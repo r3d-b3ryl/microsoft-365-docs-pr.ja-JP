@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化された電子メールを送信する方法について説明します。
-ms.openlocfilehash: 559998326caedaf3352741ad9083940f79b1a614
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080461"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165687"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密メールを暗号化またはラベル付けする
 
@@ -48,7 +48,7 @@ ms.locfileid: "42080461"
 
 ## <a name="set-it-up"></a>設定する
 
-事前に定義されたルールに準拠していないメッセージを暗号化する場合、または管理者がルールを設定していない場合は、メッセージを送信する前にさまざまな暗号化ルールを適用できます。 暗号化されたメッセージを Outlook 2013 または2016、または Outlook 2016 for Mac から送信するには、[**オプション > のアクセス許可**] を選択し、必要な保護オプションを選択します。 また、暗号化されたメッセージを送信するには、Outlook on the web で [**保護**] をクリックします。 詳細については、「 [Outlook FOR PC での暗号化されたメッセージの送信、表示、および返信](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US)」を参照してください。
+事前に定義されたルールに準拠していないメッセージを暗号化する場合、または管理者がルールを設定していない場合は、メッセージを送信する前にさまざまな暗号化ルールを適用できます。 暗号化されたメッセージを Outlook 2013 または2016、または Outlook 2016 for Mac から送信するには、[**オプション > のアクセス許可**] を選択し、必要な保護オプションを選択します。 また、暗号化されたメッセージを送信するには、Outlook on the web で [**保護**] をクリックします。 詳細については、「 [Outlook FOR PC での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)」を参照してください。
 
 ## <a name="admin-settings"></a>管理設定
 

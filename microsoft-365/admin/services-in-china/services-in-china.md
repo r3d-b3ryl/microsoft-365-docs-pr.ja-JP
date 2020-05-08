@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 中国でのセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計された、21Vianet が運用している Office 365 の詳細について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: c473dacee7fe6f2e779960711a87368e261c3448
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360798"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155411"
 ---
-# <a name="office-365-operated-by-21vianet"></a>21 Vianet が運用している Office 365
+# <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
 21Vianet が運用している Office 365 は、中国のセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。
   
@@ -54,12 +54,12 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 
 |||
 |:-----|:-----|
-|カスタム ドメイン  <br/> |管理者は、中国語固有のドメインプロバイダーによって登録されたカスタムドメインを作成または使用することができます。 カスタムドメインを持っていない場合は、ドメイン名レジストラーから[ドメイン名を購入する方法](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx)を指定できます。 既に所有している場合は、[ドメインレジストラーまたは DNS ホスティングプロバイダーを見つけて](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3)ください。  <br/> また、Office 365 SharePoint Online サービスを使用してパブリック web サイトを作成する場合、中国のインターネットコンプライアンスポリシーでは、インターネットコンテンツプロバイダー (ICP) 番号を取得する必要があります。  **注:** ユーザー設定ドメイン名の許可されていない単語の自動検証は使用できません。           |
+|カスタム ドメイン  <br/> |管理者は、中国語固有のドメインプロバイダーによって登録されたカスタムドメインを作成または使用することができます。 カスタムドメインを持っていない場合は、ドメイン名レジストラーから[ドメイン名を購入する方法](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)を指定できます。 既に所有している場合は、[ドメインレジストラーまたは DNS ホスティングプロバイダーを見つけて](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)ください。  <br/> また、Office 365 SharePoint Online サービスを使用してパブリック web サイトを作成する場合、中国のインターネットコンプライアンスポリシーでは、インターネットコンテンツプロバイダー (ICP) 番号を取得する必要があります。  **注:** ユーザー設定ドメイン名の許可されていない単語の自動検証は使用できません。           |
 |サブスクリプション、課金、技術サポート  <br/> |21Vianet によって提供されます。 サポートに連絡する方法については、「 [365 Office 365 for business サポートへのお問い合わせ](../contact-support-for-business-products.md)」を参照してください。  <br/> |
-|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用して[いる Office 365 でパスワードを変更または再設定する](https://support.office.com/article/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
+|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用して[いる Office 365 でパスワードを変更または再設定する](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
 |セキュリティ、プライバシー、コンプライアンス、サポートのレベルに関する詳細情報  <br/> |21Vianet によって提供されます。  <br/> |
 |Office デスクトップのセットアップ  <br/> |Office デスクトップのセットアップは、Office 2010 および Office 2007 では使用できません。 ただし、管理者は、 [office 365 で動作するように現在の office デスクトップアプリケーションを構成](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)できます。  <br/> |
-|モバイルとデバイスのサポート\*  <br/> | 近日中には、次のモバイル機能が提供されます。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイス、または研究インモーション (縁、BlackBerry ワイヤレス電子メールソリューション) のオファーリングを使用して Blackberry Enterprise Server (BE) を実行できます。  <br/>  モバイルサポートの詳細については、「[ユーザー用にモバイルアクセスをセットアップおよび管理](https://support.office.com/article/01fff219-4492-40f2-82d3-fd2ffc0ad802)する」を参照してください。  <br/> |
+|モバイルとデバイスのサポート\*  <br/> | 近日中には、次のモバイル機能が提供されます。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイス、または研究インモーション (縁、BlackBerry ワイヤレス電子メールソリューション) のオファーリングを使用して Blackberry Enterprise Server (BE) を実行できます。  <br/>  モバイルサポートの詳細については、「[ユーザー用にモバイルアクセスをセットアップおよび管理](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802)する」を参照してください。  <br/> |
 |Office Lens  <br/> |使用できません。  <br/> |
 |Microsoft Planner  <br/> |もうすぐです。  <br/> |
 |Microsoft Teams  <br/> |注意事項なし。  <br/> |
@@ -124,12 +124,12 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 |:-----|:-----|:-----|:-----|
 | 2016  <br/> | 該当なし  <br/> | はい  <br/> | すべて  <br/> |
 | 2013 CU5  <br/> | 該当なし  <br/> | はい  <br/> | すべて  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | 必要  <br/> | すべて  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | 必要  <br/> | すべて  <br/> |
-| 混合 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | 必要  <br/> | インプレース電子情報開示/アーカイブを除く、OWA アクセス (以下の表を参照)  <br/> |
-| 混合 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | 必要  <br/> | 手動で構成した空き時間情報のみ  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | はい  <br/> | すべて  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | はい  <br/> | すべて  <br/> |
+| 混合 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | はい  <br/> | インプレース電子情報開示/アーカイブを除く、OWA アクセス (以下の表を参照)  <br/> |
+| 混合 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | はい  <br/> | 手動で構成した空き時間情報のみ  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | いいえ  <br/> | なし  <br/> |
-| 2007  <br/> | 2013 CU5  <br/> | 必要  <br/> | 空き時間情報のみ  <br/> |
+| 2007  <br/> | 2013 CU5  <br/> | はい  <br/> | 空き時間情報のみ  <br/> |
 | 2007  <br/> | 2013 SP1 または 2010 SP3No  <br/> | N/A  <br/> | サポートされていません  <br/> |
 | 2003  <br/> | 2013 SP1/CU5  <br/> | N/A  <br/> | サポートされていません  <br/> |
 | 2003  <br/> | 2010 SP3  <br/> | いいえ  <br/> | なし  <br/> |
@@ -151,9 +151,9 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 
 |**オンプレミスの Exchange バージョン**|**MRM (分割アーカイブ)**|**OWA アクセス (分割アーカイブ)**|**インプレース電子情報開示**|**メールボックスの監査**|**インプレースホールド/アーカイブ**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| すべての 2013 CU5  <br/> | サポートされている <br/>  | サポート対象外 <br/>  | サポートされている <br/>  | サポートされている  <br/> | サポートされている <br/> |
-| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポート<sup>1</sup> <br/> | サポートされている  <br/> | サポートされている <br/>  |
-| 2013前の CU5 サーバーのうち少なくとも1つ  <br/> | サポート<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポートされている  <br/> | サポートされている <br/> |
+| すべての 2013 CU5  <br/> | サポートされている <br/>  | サポート対象外 <br/>  | サポート済み <br/>  | サポート済み  <br/> | サポート済み <br/> |
+| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポート<sup>1</sup> <br/> | サポート済み  <br/> | サポート済み <br/>  |
+| 2013前の CU5 サーバーのうち少なくとも1つ  <br/> | サポート<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート済み  <br/> | サポート済み <br/> |
 |||
 
 <sup>1</sup>社内および Exchange Online のメールボックスでは、個別に検索する必要があります。  <br/> <sup>2</sup> mrm の移動ポリシーは、EXCHANGE 2013 CU5 以上のサーバー上にあるメールボックスで使用できます。 
@@ -210,7 +210,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 
 |||
 |:-----|:-----|
-|Skype for Business をサポートするドメインプロバイダー  <br/> |SRV レコードをサポートする中国固有のドメインプロバイダーを使用して、ドメインを登録する必要があります。 ドメインの登録方法の詳細については、「[ドメインレジストラーまたは DNS ホスティングプロバイダーを検索](https://support.office.com/article/98b6bfa3-1b0b-4484-8a12-02061cc9f9c3)する」を参照してください。  <br/> |
+|Skype for Business をサポートするドメインプロバイダー  <br/> |SRV レコードをサポートする中国固有のドメインプロバイダーを使用して、ドメインを登録する必要があります。 ドメインの登録方法の詳細については、「[ドメインレジストラーまたは DNS ホスティングプロバイダーを検索](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)する」を参照してください。  <br/> |
 |ダイヤルイン会議 (コンピューターにアクセスできないユーザーのために、会議への電話アクセスを追加する機能)  <br/> |ダイヤルイン会議およびプロバイダーの場合、Skype for business と Skype for Business 管理センターのオプションが表示されることがありますが、これらの機能はまだ利用できません。 これらは近日中に公開されます。  <br/> |
 |Skype for Business のデスクトップヘルプ  <br/> |[ここで](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx)は、Skype for business デスクトップのヘルプを参照できます。 ただし、Office クイック実行を使用していない限り、この製品からデスクトップヘルプを利用することはできません。  <br/> |
 |Lync 2010  <br/> |注意事項なし。  <br/> |
@@ -225,7 +225,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
    
 ## <a name="data-subject-requests-for-gdpr"></a>GDPR のデータ主体要求
 
-GDPR は個人データの処理に関連する特定の権限 (またはデータ主体) を付与します。適切でないデータを修正したり、データを消去したり、処理を制限したり、データを受信して送信要求を実行したりする権限を含みます。別のコントローラーへのデータ。 21Vianet が運用している Office 365 のテナント管理者ロールは、次の方法でデータ主体に代わってデータを要求できます。
+GDPR は、個人データの処理に関連する特定の権限 (またはデータ主体) を付与します。適切でないデータを修正したり、データを消去したり、データを受信したり、そのデータを別のコントローラーに送信する要求を処理したりする権限を含みます。 21Vianet が運用している Office 365 のテナント管理者ロールは、次の方法でデータ主体に代わってデータを要求できます。
   
 - Azure Active directory 管理センターを使用すると、テナント管理者は、Azure Active Directory および関連するサービスからデータ主体を完全に削除することができます。
     

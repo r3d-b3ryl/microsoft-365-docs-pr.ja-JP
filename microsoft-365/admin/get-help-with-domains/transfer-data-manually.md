@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: プランまたは会社名を変更したとき、または複数のサブスクリプションを1つに結合したときに、2つの Microsoft 365 アカウント間でデータを手動で転送する方法について説明します。
-ms.openlocfilehash: c0cb6531518c18e8cdc5b5829dc05a5b9b375291
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628377"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44053742"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>2つのアカウント間でデータを手動で転送する
 
@@ -55,7 +55,7 @@ Sleeves をロールアップし、予定表の時間をブロックするよう
 
 各アカウントで次のページに移動し、古いアカウントの設定に基づいて新しいアカウントを設定します。
   
-Microsoft 365 から Microsoft 365 中規模企業または Microsoft 365 Enterprise にデータを転送する場合、管理ページの構造は異なります。 [「Microsoft 365 Enterprise](https://support.office.com/article/11f7b4a0-1294-4e94-9238-beaae26efa9c.aspx)」を参照し、次の場所に移動して、管理設定を確認してください。
+Microsoft 365 から Microsoft 365 中規模企業または Microsoft 365 Enterprise にデータを転送する場合、管理ページの構造は異なります。 [「Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/admin/)」を参照し、次の場所に移動して、管理設定を確認してください。
   
 Microsoft 365 Enterprise および Microsoft 365 中規模企業の場合:
   
@@ -90,9 +90,9 @@ Microsoft 365 でホストされているパブリック web サイトがある�
   
 - 古いサイトをテンプレートとして保存し、新しいサイトにテンプレートをインポートできます。
 
-- ドキュメントを転送するには、最初に新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](https://support.office.com/article/c27bc6f3-7b38-4c29-b947-5d00c7153384.aspx)」を参照してください。
+- ドキュメントを転送するには、最初に新しいサイトで階層を手動で再作成します。 その後は、両方の SharePoint チーム サイトを同時に開き、両方のドキュメント ライブラリをエクスプローラーで開いて、ドキュメントをコピーして貼り付けることができます。 「[ビデオ: [エクスプローラーで開く] を使用してライブラリ ファイルをコピーまたは移動する](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790)」を参照してください。
 
-- リスト データを転送するには、[リスト テンプレート](https://support.office.com/article/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393.aspx)を保存し、保存したテンプレートを使用して新しいサイトにリストを再作成します。
+- リスト データを転送するには、[リスト テンプレート](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)を保存し、保存したテンプレートを使用して新しいサイトにリストを再作成します。
 
 - SharePoint Online 環境 (OneDrive for Business またはチームサイト) からファイル共有またはローカルコンピューターにドキュメントライブラリまたはリストのコンテンツを保存するには、「 [Sharepoint online コンテンツの手動での移行に関する情報](https://support.microsoft.com/kb/2783484)」を参照してください。
 

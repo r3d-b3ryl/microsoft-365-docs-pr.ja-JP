@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6dcdfd7ec2230de3eec7ccc0db08f7f4a637263d
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222072"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066360"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>連邦金融機関調査委員会 (FFIEC)
 
@@ -37,7 +37,7 @@ Microsoft Azure、Microsoft Power BI、Microsoft Office 365 は、金融サー�
 
 金融機関クライアントが Azure との FFIEC のコンプライアンス要件を満たすために、Microsoft では以下を開発しています。
 
-- [クラウドセキュリティ診断ツール * *](https://aka.ms/FFIEC-CSDT)を使用して、Azure サービスのリスク評価を効率的に実施できるようにします。 このツール (Excel スプレッドシート) には、金融サービス規制やその他の関連基準の要件を追跡する19の情報セキュリティドメイン (ネットワークおよびシステムのセキュリティ、情報およびリスク管理など) があり、FFIEC IT試験ハンドブック このツールは、技術サービスプロバイダ (TSPs) に適用される各要件を Azure が準拠する方法について説明します。
+- [クラウドセキュリティ診断ツール * *](https://aka.ms/FFIEC-CSDT)を使用して、Azure サービスのリスク評価を効率的に実施できるようにします。 このツール (Excel スプレッドシート) には、金融サービス規制やその他の関連基準の要件を追跡する19個の情報セキュリティドメイン (ネットワークおよびシステムのセキュリティ、情報およびリスク管理など) があります。また、FFIEC IT の調査ハンドブックもあります。 このツールは、技術サービスプロバイダ (TSPs) に適用される各要件を Azure が準拠する方法について説明します。
 - [FFIEC 規制サービスのワークロードのための Azure セキュリティおよびコンプライアンスブループリント](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)。診断ツールの付属。 このガイドでは、Azure クラウドサービスの使用方法と、FFIEC の要件およびリスク評価ガイドラインに関するお客様のコンプライアンスに関する考慮事項について説明します。
 
 FFIEC の要件に準拠するために、Microsoft クラウドサービスは、独立した CPA 企業によって作成された[SOC 構成証明書](offering-SOC.md)を提供します。 たとえば、認証された SOC の種類2は、AICPA SSAE 18 標準に基づいています (105 セクションを参照)。これは、SAS 70 を交換したものであり、財務報告に関する特定のコントロールのレポートに適しています。 SOC レポートには、指定された監視期間中に関連する制御目標を達成するために、監査者が Microsoft 統制の有効性についての意見が記載されています。 金融機関は、Azure、Power BI、および Office 365 に展開された資産に対して FFIEC 固有のコンプライアンス義務を遵守するときに、この公式監査を使用できます。
@@ -79,7 +79,3 @@ Azure および Office 365 の SOC 構成証明レポート。
 - [Microsoft 法人向けクラウド サービスおよび金融サービス](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [クラウド コンピューティングの共同責任](https://aka.ms/sharedresponsibility)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf) ファイルをダウンロードできます。

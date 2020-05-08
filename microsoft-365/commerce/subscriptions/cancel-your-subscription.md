@@ -21,14 +21,21 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Microsoft 365 for business 試用版または有料版サブスクリプションを解約する方法について説明します。
-ms.openlocfilehash: c12b574d29b50432cdb480dca711588ad1f0df32
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046206"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141171"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 *資格:* ユーザーに割り当てられているライセンス数が25未満の場合は、microsoft 365 for business 試用版または有償版サブスクリプションを Microsoft 365 管理センターでいつでもキャンセルできます。 ユーザーに割り当てられたライセンスが 25 よりも多い場合は、[サポートを呼び出してサブスクリプションをキャンセルします](../../admin/contact-support-for-business-products.md)。
 
@@ -39,7 +46,7 @@ ms.locfileid: "44046206"
 
 ## <a name="steps-to-cancel-your-subscription"></a>サブスクリプションをキャンセルする手順
 
-サブスクリプションで使用するために独自のドメイン名を追加した場合は、サブスクリプションをキャンセルする前にドメインを削除する必要があります。詳細については、「[ドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
+サブスクリプションで使用するために独自のドメイン名を追加した場合は、サブスクリプションをキャンセルする前にドメインを削除する必要があります。 詳細については、「[ドメインを削除する](../../admin/get-help-with-domains/remove-a-domain.md)」を参照してください。
 
 ::: moniker range="o365-worldwide"
 

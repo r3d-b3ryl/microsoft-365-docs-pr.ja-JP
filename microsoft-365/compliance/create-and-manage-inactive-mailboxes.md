@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: メールボックスに保留またはアイテム保持ポリシーを適用し、対応するユーザーアカウントを削除することによって、Microsoft 365 に非アクティブなメールボックスを作成することができます。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
-ms.openlocfilehash: 6265504f12adeadbc51c36c1e97c999e30a0d141
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048016"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166088"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -63,7 +63,7 @@ Microsoft 365 により、削除済みメールボックスの内容を保持す
   
 ### <a name="step-2-delete-the-mailbox"></a>手順 2:メールボックスを削除する
 
-メールボックスが保持された後、またはアイテム保持ポリシーが適用された後、次の手順として、メールボックスを削除します。 メールボックスを削除する最善の方法は、Microsoft 365 管理センターで対応するユーザーアカウントを削除することです。 ユーザーアカウントの削除の詳細については、「[組織からユーザーを削除する](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e)」を参照してください。
+メールボックスが保持された後、またはアイテム保持ポリシーが適用された後、次の手順として、メールボックスを削除します。 メールボックスを削除する最善の方法は、Microsoft 365 管理センターで対応するユーザーアカウントを削除することです。 ユーザーアカウントの削除の詳細については、「[組織からユーザーを削除する](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)」を参照してください。
   
 > [!NOTE]
 > Exchange Online PowerShell で **Remove-Mailbox** コマンドレットを使用してメールボックスを削除することもできます。 詳細については、「 [Exchange Online でユーザーメールボックスを削除または復元](https://go.microsoft.com/fwlink/?linkid=856287)する」を参照してください。 

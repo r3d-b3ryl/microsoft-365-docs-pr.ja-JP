@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Teams のゲストとの共同作業のためにチームをセットアップするために必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: bf074d9115d8e5d9e2c7c265ee96e493ac3d59e3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036009"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160029"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
@@ -128,7 +128,7 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 2. [**ファイルとフォルダーのリンク**] で、使用する既定の共有リンクを選択します。
 3. 変更を加えた場合は、[**保存**] をクリックします。
 
-## <a name="create-a-team"></a>チームを作成する
+## <a name="create-a-team"></a>チームの作成
 
 次の手順では、ゲストとの共同作業に使用する予定のチームを作成します。
 

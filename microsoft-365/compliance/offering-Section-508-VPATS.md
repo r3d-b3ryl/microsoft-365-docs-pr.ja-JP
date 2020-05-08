@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc5e8312f219176dbed7a84072c90e0ca165cd11
-ms.sourcegitcommit: 8876c216954b94adce9cdf493c49bd5a10190a3a
+ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42228523"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066300"
 ---
 # <a name="us-section-508"></a>米国セクション508
 
 ## <a name="about-us-section-508"></a>米国セクション508について
 
-米国 Congress では、Rehabilitation Act を1998および2000に修正し、ソフトウェア、ハードウェア、電子コンテンツ、サポートドキュメントなど、電子情報技術 (およびその製品) を連邦機関が利用できるようにしています。障碍のある方。 508 1973 の米国労働力 Rehabilitation Act のセクション (29 US Code § 194d)。修正されたように、障碍のある従業員が、障碍のある連邦政府の従業員が同等の方法でアクセスし、を使用することを保証する方法で、連邦機関が、データ、およびその他の連邦従業員を基準としたもの。
+米国 Congress では、Rehabilitation Act を1998および2000で修正して、電子情報技術 (ソフトウェア、ハードウェア、電子コンテンツ、サポートドキュメントなど) が、障碍のあるユーザーがアクセスできるようにする必要があります。 508年1973の米国労働力 Rehabilitation Act のセクション (29 US Code § 79 4d)。修正されたように、障碍を持つ連邦機関の従業員が、データのアクセスと使用を同等にし、その他の連邦従業員に対して相対的にデータを使用することを保証する方法については、政府機関によって求められます。
 
 Microsoft は、米国連邦および州政府向けの主要なソフトウェアおよびクラウドサービスプロバイダーです。  政府機関のお客様が調達に関する決定を支援するために、Microsoft は、製品とサービスがセクション508の基準をサポートする範囲を示す、アクセシビリティ準拠レポートを公開しています。  この情報は、Microsoft のお客様が、特定の製品やサービスが特定のニーズに合うかどうかを判断するのに役立ちます。
 
@@ -54,7 +54,3 @@ Microsoft では、製品とサービスの開発における米国のセクシ�
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
 - [DHS 信頼テスタープログラム](https://go.microsoft.com/fwlink/?linkid=2052171): Microsoft が参加する米国国土安全保障 (DHS) 信頼されたテスタープログラムに関する情報を取得します。
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf) ファイルをダウンロードできます。

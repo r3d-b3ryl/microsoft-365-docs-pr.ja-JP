@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 728208960932ea8d642ad1604d45ba321f021735
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 0b0c9089d7a61f328e7942aefc605b49148aa454
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42313762"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066350"
 ---
 # <a name="financial-market-supervisory-authority-finma-switzerland"></a>金融市場監督当局 (FINMA) スイス
 
@@ -69,7 +69,3 @@ Microsoft チェックリストでは、スイスの金融機関による Micros
 - [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/4/6/A/46AE2B08-49ED-478F-8E64-6BDE9B56C5F4/FINMA-Compliance.pdf) ファイルをダウンロードできます。

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: 5d0a006c13d7149afe39466da49e21579b4195f7
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 119329289a9c19c2256cf112e82289b55cf9ce07
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140827"
+ms.locfileid: "44155435"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランをセキュリティで保護するための10位の方法
 
@@ -97,7 +97,7 @@ Harvard ケネディ School [Cybersecurity キャンペーンハンドブック]
     
 また、次の記事で推奨されている操作を実行して、ユーザーが個人のメールアカウントを保護することをお勧めします。
   
-- [Outlook.com メールアカウントを保護する](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Outlook.com メールアカウントを保護する](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [2段階認証を使用して Gmail アカウントを保護する](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -229,7 +229,7 @@ Outlook.com で、[電子メールで**保護**] を選択します。 既定の
   
 受信者が別の電子メールクライアントまたはメールアカウント (Gmail、Yahoo など) を使用している場合は、ユーザーが電子メールメッセージを読むためにサインインするか、ワンタイムパスコードを要求して web ブラウザーでメッセージを表示できるようにするリンクが表示されます。 ユーザーが電子メールを受信していない場合は、スパムや迷惑メールフォルダーを確認してもらいます。 
   
-詳細については、「 [Outlook FOR PC での暗号化されたメッセージの送信、表示、および返信](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)」を参照してください。
+詳細については、「 [Outlook FOR PC での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)」を参照してください。
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. フィッシング攻撃からメールを保護する
 <a name="phishing"> </a>

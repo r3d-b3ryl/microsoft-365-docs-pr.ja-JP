@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: cb65b5a7f0b12ff977c0e8bd92912b8f741a2281
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141549"
+ms.locfileid: "44159409"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Office 365 で自動調査と応答 (AIR) の使用を開始する
 
@@ -99,9 +99,9 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 - 組織のセキュリティ運用チーム (セキュリティ閲覧者と、検索と削除の役割を含む)
 - エンド ユーザー
 
-さらに、 [Office 365 の ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)ポリシーを定義して適用し、保護を適切に行う必要があります。
+さらに、 [Office 365 の ATP ポリシー](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies)を定義して適用し、保護を適切に行う必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [自動化された調査の詳細と結果を参照する](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

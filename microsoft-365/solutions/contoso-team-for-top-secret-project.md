@@ -12,15 +12,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- M365solutions
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社がトップシークレットプロジェクトのセキュリティ分離を備えたチームを使用して、新しいスイートの製品とサービスを開発する方法について説明します。'
-ms.openlocfilehash: 2da51890001a2890b2d65bc6b71537b51c335eb4
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 1083c9d3db3be9ca528b2eee40f072aa17c7431e
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003213"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159457"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation のトップシークレットプロジェクトの分離されたチーム
 

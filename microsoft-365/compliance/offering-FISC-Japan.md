@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 546e4b29f26ffdee8c876032fe83254fb5643fff
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: b6dc80bbacaf8d4bbadb345910b29b8410c13768
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602384"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066572"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>金融情報システム センター (FISC)
 
@@ -84,7 +84,3 @@ Microsoft クラウド サービスの FISC 準拠を評価した第三者のセ
 ## <a name="resources-in-japanese"></a>日本語のリソース
 
 - [FISC](https://www.fisc.or.jp/)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf) ファイルをダウンロードできます。

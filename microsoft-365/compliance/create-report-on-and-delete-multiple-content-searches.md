@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Office 365 のセキュリティ & コンプライアンスセンターで、PowerShell スクリプトを使用して検索を作成したりレポートを実行したりするなど、コンテンツ検索タスクを自動化する方法について説明します。
-ms.openlocfilehash: 4e66013ba34c71fd7e2078691f892c2ae289538b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943498"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166078"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
  検索検索を迅速に作成およびレポートすることは、基礎となるデータについて学習しようとしているときに電子情報開示や調査を行う際に重要な手順です。 これを実現するために、セキュリティ & コンプライアンスセンターの PowerShell は、時間のかかるコンテンツ検索タスクを自動化する一連のコマンドレットを提供します。 これらのスクリプトを使用すると、多数の検索をすばやく簡単に作成し、予想される検索結果のレポートを実行して、問題のデータ量を判断するのに役立つことができます。 また、これらのスクリプトを使用して、それぞれの結果を比較するさまざまなバージョンの検索を作成することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - このトピックで説明するスクリプトを実行するには、セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
     
-- 手順1で CSV ファイルに追加できる、組織内の OneDrive for Business サイトの Url の一覧を収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a)する」を参照してください。 
+- 手順1で CSV ファイルに追加できる、組織内の OneDrive for Business サイトの Url の一覧を収集するには、「[組織内のすべての onedrive の場所の一覧を作成](https://docs.microsoft.com/onedrive/list-onedrive-urls)する」を参照してください。 
     
 - このトピックで作成するすべてのファイルを同じフォルダーに保存するようにしてください。 これにより、スクリプトをより簡単に実行できるようになります。
     

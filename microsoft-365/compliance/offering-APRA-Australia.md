@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 568a078c18ead86ddbf3e92cfec3bfc7367595e2
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: b344f9c4d750c6e6571c0e76be0c9db0c421271b
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662043"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065892"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>オーストラリア Prudential 規制機関 (APRA)
 
@@ -45,7 +45,7 @@ Azure での APRA に準拠した金融サービスの利点については、�
 
 Microsoft の応答は、2つの最も高いリスクカテゴリに重点を置いています。 クラウドサービスはリスクカテゴリによって禁止されていませんが、APRA は commensurately の高いレベルのを受けることが期待されます。また、リスクカテゴリを上に移動したときに、APRA 精査のレベルが高くなることを期待する必要があります。 APRA には、通常、クラウドアウトソーシングの高いまたは極度のリスクを示す一連の要因が記載されています。 Microsoft では、これらの各要素について詳細に説明し、データとワークロードを Azure に移行するリスクを評価および管理するための情報とツールを提供しています。
 
-また、Microsoft は、APRA リスク管理に関する考慮事項についても説明します。戦略、ガバナンス、ソリューションの選択プロセス、APRA アクセスと操作能力、移行アプローチ、リスク評価とセキュリティ、継続的な監視、ビジネスの中断、監査防止. ポイント単位で、Azure を展開するときに各問題に対処するためのアドバイスと提供ツールを提供します。
+また、Microsoft は、APRA リスク管理に関する考慮事項についても説明します。戦略、ガバナンス、ソリューションの選択プロセス、APRA アクセスと操作方法、移行アプローチ、リスク評価とセキュリティ、継続的な監視、ビジネスの中断、監査と保証。 ポイント単位で、Azure を展開するときに各問題に対処するためのアドバイスと提供ツールを提供します。
 
 APRA の規制に準拠して、データとワークロードを Azure に移行するための実用的なサポートを得るために、[クラウドの APRA 情報に関する記事に Microsoft の応答をダウンロード](https://aka.ms/navigatecloudaustralia)してください。
 
@@ -66,7 +66,7 @@ CPS 234 は、主な Microsoft セキュリティフレームワーク (保護�
 
 この Microsoft チェックリストでは、クラウドに移行する際に金融企業が対処する必要のある APRA 規制要件について説明します。 [Prudential 標準の CPS 231 アウトソーシング](https://www.apra.gov.au/sites/default/files/Prudential-Standard-CPS-231-Outsourcing-%28July-2017%29.pdf)だけでなく、ビジネス継続性およびリスク管理などの他の関連する APRA 標準に対して Azure をマップします。 このチェックリストを完了することで、金融サービス機関は、関連する APRA 要件を満たすという自信を持って Azure を導入することができます。
 
-クラウドでのリスク保証に対する総合的なアプローチによって、オーストラリアの金融サービス組織は、APRA のガイダンスと一貫しているだけでなく、お客様にも提供できる方法で Microsoft クラウドサービスに移行できることを確信しています。社内または他のホスト型ソリューションよりも高度なセキュリティリスク管理プロファイル。
+クラウドのリスク保証に対する包括的なアプローチによって、オーストラリアの金融サービス組織は、APRA ガイダンスとは異なる方法で Microsoft クラウドサービスに移行できますが、社内または他のホスト型ソリューションよりも高度なセキュリティリスク管理プロファイルをお客様に提供することができます。
 
 APRA の規制に準拠して、データとワークロードを Azure に移行するための実践的なサポートを得ます。「 [Microsoft cloud services をダウンロードする: オーストラリアの金融機関のコンプライアンスチェックリスト」](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)。
 
@@ -82,7 +82,7 @@ APRA の規制に準拠して、データとワークロードを Azure に移�
 
 いいえ。 ただし、規制されている財務組織のほとんどは、オーストラリア内の重要な業務活動をアウトソーシングするために契約に入る後、APRA に通知する必要があります。
 
-また、クラウドサービスが「高度または極度のリスク」を受けていると判断された場合は、APRA [Information Paper](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)in cloud で説明されているように、金融機関は、オーストラリアの内部と外部のどちらでサービスが提供されていても、APRA を参照することを推奨します (必須ではありません)。
+また、クラウドサービスが「APRA [Information Paper](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)in cloud」で説明されているように、「高度または極端に内在するリスク」を受けていると見なされた場合は、サービスがオーストラリアの内部と外部のどちらで提供されているかにかかわらず、APRA を使用することを推奨します (必須ではありません)
 
 **オーストラリア外のデータの転送は許可されていますか?**
 

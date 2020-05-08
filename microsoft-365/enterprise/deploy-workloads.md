@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性向上ワークロードに参加させます。
-ms.openlocfilehash: 2bb86ec474f93ea9d5f41fb104c6d533b7ec9561
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638166"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066217"
 ---
 # <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードおよびシナリオ
 
@@ -47,7 +47,7 @@ Microsoft 365 Enterprise の創造性およびチームワークに関するメ�
 
 全体的な Microsoft 365 Enterprise 展開ガイドのワークロードおよびシナリオは次のとおりです。
 
-![全体的な Microsoft 365 Enterprise 展開ガイドのワークロードおよびシナリオ](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![全体的な Microsoft 365 Enterprise 展開ガイドのワークロードおよびシナリオ](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)」を参照してください。 
 

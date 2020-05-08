@@ -24,14 +24,21 @@ description: Microsoft 365 for business サブスクリプションの支払い�
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 599eb7eafda81f59b02ab11c822307d0db0c49c2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045838"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140873"
 ---
 # <a name="pay-for-your-subscription"></a>サブスクリプションを支払う
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 サブスクリプションを設定するときに、クレジット カード支払い、銀行口座支払い、小切手または電子決済 (EFT) での請求書支払いを選ぶことができます。 ここで選択した支払い方法は、[支払い方法を変更](change-payment-method.md)しない限り、以降の請求期間に対して支払い方法として使用されます。
 

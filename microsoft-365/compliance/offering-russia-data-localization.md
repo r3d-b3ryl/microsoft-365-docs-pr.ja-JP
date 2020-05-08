@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 989d30a53b767bc8ec757c92e72198e3900bcfeb
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943666"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065772"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>ロシアの個人データローカライズ要件
 
@@ -71,5 +71,5 @@ Microsoft Azure などの Microsoft Online Services の場合、Microsoft 365、
 - **オンラインサポート**:[パワープラットフォームサポート](https://docs.microsoft.com/power-platform/admin/get-help-support)によるクエリの送信
 
 > [!NOTE]
-> <sup>1</sup>連邦法はありません。 242-FZ (edition 12.31.2014) "[日付] の情報と電気通信ネットワークでの個人データの処理手順を明確にするためのロシアの共同作業の特定の法律上の行動について説明します。 <br>
+> <sup>1</sup>連邦法はありません。 242-FZ (edition 12.31.2014) ' は、ロシアのフェデレーションの特定の法律上の行動に対して、個人データの処理手順を明確にするための情報および電気通信ネットワークの07.21.2014 <br>
 > <sup>2</sup>連邦法はありません。 07.27 の場合、個人データの 152-FZ。 2006<br>

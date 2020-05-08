@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 63dcc6351b2ba0074bf71583577a34ddcc33ed94
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 90f8a0f9f6cda7462892dc9d7ebd808e263a9259
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602214"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065742"
 ---
 # <a name="it-grundschutz-compliance-workbook"></a>IT-Grundschutz コンプライアンス ワークブック
 
@@ -68,8 +68,4 @@ Microsoft Cloud Germany は、ドイツに物理的拠点を置き、ドイツ�
 - [BSI 標準](https://www.bsi.bund.de/EN/Publications/BSIStandards/BSIStandards_node.html)
 - [Azure Germany IT-Grundschutz コンプライアンス ワークブック](https://aka.ms/grundschutzworkbook)
 - [ISO/IEC 27001:2013 情報セキュリティ管理システムの背景](offering-iso-27001.md)
-- [Microsoft トラスト センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/B/3/5/B35DE78F-C346-4E31-ABC5-FF87BD1FF97F/ITGrundschutz-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコアを設定および開始する方法について説明します。これにより、リスク評価が簡素化および自動化されます。
-ms.openlocfilehash: 4ccd89647540aeda8ba6253f6e5eefab1dc81791
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7a0030ed417e21484717b6edf12406d2f5e760e5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632392"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140862"
 ---
 # <a name="microsoft-compliance-score-preview-setup"></a>Microsoft コンプライアンススコア (プレビュー) の設定
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 通常、コンプライアンススコアにアクセスする最初のユーザーは、組織の Microsoft 365 グローバル管理者になります。 初めてコンプライアンススコアを参照する場合は、グローバル管理者サインインをお勧めし、以下の説明に従ってユーザー権限を設定することをお勧めします。
 
@@ -40,33 +40,24 @@ Access コンプライアンススコアへの直接リンクは次[https://comp
 
 ### <a name="where-to-set-permissions"></a>アクセス許可を設定する場所
 
-組織のグローバル管理者は、Microsoft 365 コンプライアンスセンターまたは Azure Active Directory (Azure AD) でユーザーのアクセス許可を設定できます。 これらのいずれかの場所で役割が設定されると、ユーザーはコンプライアンスのスコアとコンプライアンスマネージャーにアクセスできるようになります。
-
-既存のコンプライアンスマネージャーの役割は、コンプライアンススコアに移行**されない**ことに注意してください。 コンプライアンスマネージャーでのロールがあり、コンプライアンススコアに新しいものがある場合、コンプライアンスマネージャーの役割はコンプライアンススコアへのアクセスを許可しません。 グローバル管理者は、コンプライアンススコアにアクセスできるように、Microsoft 365 コンプライアンスセンターまたは Azure AD でアクセス許可とロールを設定する必要があります。
+組織のグローバル管理者は、 [Azure Active Directory (AZURE AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)または[コンプライアンスマネージャー](compliance-manager-overview.md#permissions)でユーザー権限を設定できます。 これらのいずれかの場所で役割が設定されると、ユーザーはコンプライアンスのスコアとコンプライアンスマネージャーにアクセスできるようになります。
 
 ### <a name="role-types"></a>役割の種類
 
-次の表は、各 Microsoft 365 コンプライアンスセンターの役割と、各役割によって許可される機能を、既存のコンプライアンスマネージャーの役割にマップする方法を示しています。
+次の表に、各[AZURE AD の役割](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)を既存のコンプライアンスマネージャーの役割にマップする方法と、各役割によって許可される機能を示します。 コンプライアンススコアにアクセスするには、少なくとも Azure AD グローバルリーダーの役割が必要です。
 
 
-| ユーザーは次のことができます。 | Microsoft 365 コンプライアンスセンターの役割 | コンプライアンスマネージャーの役割 | 
+| ユーザーは次のことができます。 | Azure AD の役割 | コンプライアンスマネージャーの役割 | 
 | :------------- | :-------------: | :------------: |
 | **データを読み取りますが、編集することはできません**| Azure AD グローバルリーダー  | Azure AD グローバルリーダー | 
 | **データを読み取りますが、編集することはできません**| セキュリティ閲覧者 | コンプライアンスマネージャーリーダー  | 
 | **データを編集する**| コンプライアンス管理者 | コンプライアンスマネージャー共同作成者 | 
 | **テスト結果を編集する**| コンプライアンス管理者 | コンプライアンスマネージャーの査定者 | 
 | **評価、およびテンプレートとテナントデータを管理する**| コンプライアンス管理者<br>コンプライアンス データ管理者<br>セキュリティ管理者 | コンプライアンスマネージャー管理者 | 
-| **ユーザーを割り当てる**| グローバル管理者 | ポータル管理者 | 
+| **ユーザーを割り当てる**| 全体管理者 | ポータル管理者 | 
 
 > [!NOTE]
 > コンプライアンススコアからコンプライアンスマネージャーに移行してタスクを完了すると (たとえば、評価を管理する場合)、ブラウザーで新しいタブが開き、ダイアログボックスが表示されます。 上部のセクションに、「既に Microsoft cloud services のお客様である」というヘッダーがあります。 アカウントにサインインし、[コンプライアンスマネージャーにアクセスするには**サインイン**] を選択します。資格情報を再入力する必要はありません。
-
-### <a name="how-to-set-permissions-and-roles-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターでアクセス許可と役割を設定する方法
-
-Microsoft 365 コンプライアンスセンターでアクセス許可を設定するには、次のようにします。
-
-1. [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com)に移動し、グローバル管理者アカウントでサインインします。
-2. 左側のナビゲーションウィンドウで [**アクセス許可**] を選択します。 ここから、役割を表示し、アクセス許可を割り当てることができます。
 
 ## <a name="configure-automatic-secure-score-updates"></a>セキュリティで保護されたスコアの自動更新を構成する
 

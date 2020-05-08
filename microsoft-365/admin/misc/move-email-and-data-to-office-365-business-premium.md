@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 新しいビジネス id にデータを移動する方法について説明します。
-ms.openlocfilehash: 674b5e1fc8128656733b9586d9bab607df621954
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627838"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155365"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>メールとデータを Microsoft 365 Business Standard に移行する
 
@@ -61,14 +61,14 @@ Microsoft 365 Business Standard にアップグレードすると、新しい*�
 ## <a name="outlookemail"></a>[Outlook/メール](#tab/Outlook)
   
  **Outlook 2013 の情報を Outlook データ ファイルにエクスポートする**
-1. Outlook データ ファイル (.pst) を作成する前に、Outlook の情報をエクスポートするアカウントが、デスクトップ バージョンの Outlook に既に追加されている必要があります。Outlook 2013 以上にアカウントを追加する方法については、「[Outlook 2010 または 2013 で Office 365 のメールを設定する](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)」または「[Outlook for Mac 2011 で電子メールを設定する](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx)」を参照してください。
+1. Outlook データ ファイル (.pst) を作成する前に、Outlook の情報をエクスポートするアカウントが、デスクトップ バージョンの Outlook に既に追加されている必要があります。Outlook 2013 以上にアカウントを追加する方法については、「[Outlook 2010 または 2013 で Office 365 のメールを設定する](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)」または「[Outlook for Mac 2011 で電子メールを設定する](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)」を参照してください。
     
 2. 各ユーザーは、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)」の手順を実行する必要があります。
     
  **Outlook で新しいメール アカウントをセットアップする**
 1. 各ユーザーは、Microsoft 365 for business サブスクリプションに付属していた新しいメールアカウントをセットアップする必要があります。 これを行うには、新しいメール アカウントのアドレスが必要です。 各ユーザーの電子メールアカウントは、Microsoft 365 for business にサインインするために使用するユーザー名と同じです。 Sue@contoso.onmicrosoft.com や david@contoso.com のようなものになります。
     
-2. 各ユーザーに、メール アカウントを Outlook に追加するように求めます。この方法については、「[Outlook 2010 または 2013 で Office 365 のメールを設定する](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)」または「[Outlook for Mac 2011 で電子メールを設定する](https://support.office.com/article/d7b404a0-6e18-4d95-bed8-2de7661563ca.aspx)」を参照してください。
+2. 各ユーザーに、メール アカウントを Outlook に追加するように求めます。この方法については、「[Outlook 2010 または 2013 で Office 365 のメールを設定する](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)」または「[Outlook for Mac 2011 で電子メールを設定する](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)」を参照してください。
     
  **Outlook データ ファイルから情報をインポートする**
 1. これにより、PST ファイルに格納されている電子メール、予定表、タスク、連絡先が Microsoft 365 for business の電子メールアカウントに結合されます。

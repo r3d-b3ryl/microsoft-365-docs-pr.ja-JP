@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3c7d3c6a710141972c1e54a7c67bfccd59c378d6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e2324cdbb4c47cff3b5e315b4c6b294258b11e24
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602014"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066290"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>信頼された情報セキュリティ アセスメント交換 (TISAX) ドイツ
 
@@ -29,7 +29,7 @@ ms.locfileid: "41602014"
 
 VDA のメンバー企業は内部のセキュリティ評価、およびサプライヤー、サービス プロバイダー、および代わりに機密情報を処理するその他のパートナーの評価の両方にこのツールを使用しました。 ただし、これらの評価は各企業が個別に処理したため、パートナーに負担がかかり、VDA メンバー側で作業が重複していました。
 
-評価を効率化するために、VDA は共通の評価および交換メカニズムである[信頼された情報セキュリティ アセスメント交換](https://www.enx.com/tisax/) (TISAX) をセットアップしました。 基礎となる TISAX 要件の目録である、情報セキュリティ評価および情報セキュリティ管理をチェックするためのアンケート Vers. 4 ([ドイツ語](https://www.vda.de/de/services/Publikationen.html)および[英語](https://www.vda.de/en/services/Publications.html)) は、IT セキュリティ対策の共通基準を提供し、TISAX に登録された企業が評価結果を共有できるようにします。 VDA は、中立的な第三者である [ENX Association](https://portal.enx.com/en-US/en-en/TISAX/tisaxassessmentresults/) に TISAX の実装を委託しました。 そのキャパシティの中で、監査プロバイダー (監査役) を認定し、認定基準および評価要件を維持し、実装の品質および評価結果を監視します。
+評価を効率化するために、VDA は共通の評価および交換メカニズムである[信頼された情報セキュリティ アセスメント交換](https://www.enx.com/tisax/) (TISAX) をセットアップしました。 基礎となる TISAX 要件の目録である、情報セキュリティ評価および情報セキュリティ管理をチェックするためのアンケート Vers. 4 ([ドイツ語](https://www.vda.de/de/services/Publikationen.html)および[英語](https://www.vda.de/en/services/Publications.html)) は、IT セキュリティ対策の共通基準を提供し、TISAX に登録された企業が評価結果を共有できるようにします。 VDA は、中立的な第三者である [ENX Association](https://portal.enx.com/ja-JP/en-en/TISAX/tisaxassessmentresults/) に TISAX の実装を委託しました。 そのキャパシティの中で、監査プロバイダー (監査役) を認定し、認定基準および評価要件を維持し、実装の品質および評価結果を監視します。
 
 ## <a name="microsoft-and-tisax"></a>Microsoft と TISAX
 
@@ -53,7 +53,7 @@ TISAX アセスメントは、以下の Microsoft サービスに焦点を当て
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-ENX に登録されている業界の代表者は、[ENX ポータル](https://portal.enx.com/en-US/)で対象となる Microsoft クラウド サービスの TISAX アセスメントに関する詳細情報を見つけることができます。 Microsoft の評価結果を検索するには、既存の TISAX アカウントにサインインし、Microsoft を検索します。 または、以下の情報を使用して検索を絞り込むことができます。
+ENX に登録されている業界の代表者は、[ENX ポータル](https://portal.enx.com/ja-JP/)で対象となる Microsoft クラウド サービスの TISAX アセスメントに関する詳細情報を見つけることができます。 Microsoft の評価結果を検索するには、既存の TISAX アカウントにサインインし、Microsoft を検索します。 または、以下の情報を使用して検索を絞り込むことができます。
 
 - Microsoft 参加者 ID: PGKYK0
 - Microsoft Corp. EU 評価レベル (AL) 3 スコープ ID: SY869K
@@ -75,14 +75,10 @@ ENX は、ENX ポータルを通じて登録された業界の代表者にのみ
 
 ## <a name="resources"></a>リソース
 
-- [TISAX に関してよく寄せられる質問](https://portal.enx.com/en-US/TISAX/faqs/)
+- [TISAX に関してよく寄せられる質問](https://portal.enx.com/ja-JP/TISAX/faqs/)
 - [Volkswagen と Microsoft が戦略的パートナーシップを発表](https://www.volkswagen-newsroom.com/en/press-releases/volkswagen-and-microsoft-announce-strategic-partnership-4234)
 - [車の内がオフィスに: BMW が Skype for Business を提供](https://news.microsoft.com/de-de/skype-business-ab-sofort-fahrzeugen-von-bmw-verfugbar/) (ドイツ語)
 - [長距離輸送向けのインターネット接続可能車両: Daimler](https://customers.microsoft.com/story/daimlertrucks)
 - [Continental は、生産性を高めるために Microsoft Office 365 を採用しています](https://www.avanade.com/en/clients/continental)
 - [Microsoft と ISO/IEC 27001:2013](offering-iso-27001.md)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: 以前のバージョンの Office 365 メッセージの暗号化は、Microsoft Azure Rights Management (旧称 Windows Azure Active Directory Rights Management) に依存します。
-ms.openlocfilehash: 234115a76116fe9033e8da7868f846658d0d3eee
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 879f4ec1db8a8cfe1fe3c8d3b1dd9e1fc68dd687
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943266"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165918"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>以前のバージョンのメッセージ暗号化用に Azure Rights Management をセットアップする
 
@@ -116,7 +116,7 @@ Active Directory Rights Management で既存の Office 365 メッセージ暗号
 ## <a name="next-steps"></a>次の手順
 <a name="importTPDs"> </a>
 
-Azure Rights Management のセットアップを完了した後、新しい OME 機能を有効にする場合は、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)」を参照してください。
+Azure Rights Management のセットアップを完了した後、新しい OME 機能を有効にする場合は、「 [Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)」を参照してください。
   
 新しい OME 機能を使用するように組織を設定した後、[メールフロールールを定義して、新しい OME 機能で電子メールメッセージを保護](define-mail-flow-rules-to-encrypt-email.md)することができます。
   

@@ -18,21 +18,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 990e39484b7f3f5b26b39e52f9344da0a3ffa290
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 35eb63fd5b472f4b58c5f2fb5285ffff012277dd
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919684"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065902"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
->[!IMPORTANT]
->このトピックは、Microsoft 365 サブスクリプションで通信のコンプライアンスを構成する場合に適用されます。 Microsoft 365 サブスクリプションの監督ポリシーを構成する場合は、「 [microsoft 365 の監督の構成](supervision-policies.md)」を参照してください。
-
 コミュニケーションコンプライアンスポリシーを使用して、内部または外部のレビューアーによる調査のために従業員の通信をキャプチャします。 通信コンプライアンスポリシーが組織内の通信の監視にどのように役立つかについては、「 [Microsoft 365 の通信コンプライアンスポリシー](communication-compliance.md)」を参照してください。 Microsoft Teams、Exchange Online、Yammer の通信で不快な言葉を監視するために、Contoso 社がどのようにコミュニケーションコンプライアンスポリシーを構成したかを確認したい場合は、この[ケーススタディー](communication-compliance-case-study.md)をご覧ください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 コミュニケーションの法令遵守を開始する前に、 [Microsoft 365 のサブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 通信コンプライアンスにアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 

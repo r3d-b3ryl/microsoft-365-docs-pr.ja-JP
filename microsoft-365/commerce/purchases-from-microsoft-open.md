@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Microsoft 365 for business サブスクリプションのライセンス認証、更新、または追加を行う方法について説明します。
-ms.openlocfilehash: da4e42ae2dadec8d376b9ef8d12c6d4cb4fe7af5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0f8233613f7929dad37167e7237be335d4e8f567
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636454"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165133"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Microsoft Open から購入したプロダクトキーを入力する
 
@@ -48,14 +48,14 @@ Microsoft Open License プログラムから Microsoft 365 を購入した場合
 1. Microsoft 365 パートナーからキーを購入した後、ライセンス認証リンクを含む Microsoft からの電子メールを受信トレイで確認します。
     
     > [!TIP]
-    >  このメールは、ボリューム ライセンス契約にオンライン管理者として記載された人に送信されます。 オンライン管理者として指定されているユーザーがわからない場合は、Microsoft 365 パートナーにお問い合わせください。 
+    >  このメールは、ボリューム ライセンス契約にオンライン管理者として記載された人に送信されます。 誰がオンライン管理者として指定されているかわからない場合は、Microsoft 365 パートナーにお問い合わせください。 
   
 2. メールのリンクに従って、職場または学校のアカウントでサインインし、使用許諾契約書に同意して、サブスクリプションを更新します。 ステップごとのチュートリアルについては、PDF ガイドをダウンロードし、「オンラインサービスをアクティブにする」を参照してください。これは、新しいサブスクリプションをアクティブにする方法、既存のサブスクリプションを更新する方法、既存のサブスクリプションにライセンスを追加する方法について説明する[Microsoft 365 サブスクリプション](https://go.microsoft.com/fwlink/p/?LinkId=618100)です。
     
 > [!NOTE]
 > ボリュームライセンスのお客様は、[ボリュームライセンスサービスセンター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でサブスクリプションをアクティブ化するかどうかを選択することもできます。 アクティブ化の方法については、PDF ガイド『[ボリューム ライセンス サービス センターで Online Service をアクティブ化する](https://go.microsoft.com/fwlink/p/?LinkId=618096)』をダウンロードして参照してください。 
   
-## <a name="whats-next"></a>次の作業
+## <a name="whats-next"></a>次の手順
 
 Microsoft 365 for business を初めて使用する場合は、[組織に microsoft 365](../admin/setup/setup.md)をセットアップする方法について説明します。
   
@@ -63,7 +63,7 @@ Microsoft 365 for business を初めて使用する場合は、[組織に micros
 
 一般的なエラーと解決策の一覧[については、「プロダクトキーの問題](product-key-errors-and-solutions.md)」をご覧ください。
   
-パートナーの場合は、「[パートナー: プロダクト キーを使用して顧客のサブスクリプションをセットアップする](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx)」を参照してください。
+パートナーの場合は、「[パートナー: プロダクト キーを使用して顧客のサブスクリプションをセットアップする](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40)」を参照してください。
   
 ボリューム ライセンスのお客様は、「[Microsoft ボリューム ライセンス サービス センターのトレーニングおよびリソース](https://go.microsoft.com/fwlink/p/?LinkId=618103)」を参照してください。
   

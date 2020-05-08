@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: OneDrive とチームサイトを使用してファイルの保存と共有を行う方法について説明します。
-ms.openlocfilehash: 56057bc33adaf92a415c443bfb7bf89c10f8d646
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627560"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165219"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>ファイル ストレージと共有をセットアップする
 
@@ -63,7 +63,7 @@ OneDrive とチームサイトを一緒に使用するときに、各場所に�
 |**SharePoint チーム サイト** <br/> |一歩. Microsoft 365 グループを作成すると (たとえば、Microsoft 365 管理センター、Outlook、または Microsoft Teams でチームを作成することによって)、そのグループに対して SharePoint チームサイトが作成されます。 同様に、SharePoint ホームページまたは新しい SharePoint 管理センターから新しい SharePoint チームサイトを作成すると、Microsoft 365 グループも作成されます。 詳細については、「 [sharepoint チームサイト](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)について」および「 [sharepoint Online でチームサイトを作成](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx)する」を参照してください。  <br/> |共有の所有権を持つファイル。 組織内の作業単位ごとに個別のチームサイトを作成することをお勧めします。 たとえば、個人や財務文書を小規模なチームに対してプライベートに保つには、別のチームサイトを作成します。  <br/> |
 
 > [!NOTE]
-> SharePoint には、ビジネスで使用できるその他の種類のサイトもあります。 イントラネットで[通信サイト](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx)を使用して、幅広い対象ユーザーに関する情報を公開することができます。 また、[ハブサイト](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx)を使用してイントラネット内のサイトを接続することもできます。
+> SharePoint には、ビジネスで使用できるその他の種類のサイトもあります。 イントラネットで[通信サイト](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)を使用して、幅広い対象ユーザーに関する情報を公開することができます。 また、[ハブサイト](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx)を使用してイントラネット内のサイトを接続することもできます。
   
 ## <a name="start-using-onedrive-and-your-team-site"></a>OneDrive とチームサイトの使用を開始する
 
@@ -201,4 +201,4 @@ Microsoft 365 では、ユーザーがサードパーティ製のストレージ
 
   - [Microsoft 365 を使用して Office を iPhone または iPad にインストールしてセットアップする](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Microsoft 365 を使用して Windows Phone で Office をセットアップする](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Microsoft 365 を使用して Windows Phone で Office をセットアップする](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)

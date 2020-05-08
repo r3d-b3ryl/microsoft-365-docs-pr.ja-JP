@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da137e3333164970729d0c737f7077c3c96ee634
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602544"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066430"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>英国サイバーの Essentials PLUS
 
@@ -50,8 +50,4 @@ Azure のグローバルな操作に適用される[Azure サイバー ESSENTIAL
 ## <a name="resources"></a>リソース
 
 - [サイバー Essentials スキーム: 保証フレームワーク](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

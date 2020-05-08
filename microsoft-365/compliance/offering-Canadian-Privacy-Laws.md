@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a2957ed5782c9449a1715669a7e220940572a66
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 68dfc85b2f7ba4025393c82fa7ca5c67575ca0d2
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602574"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066250"
 ---
 # <a name="canadian-privacy-laws"></a>カナダのプライバシー関連法
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602574"
 
 カナダのプライバシー関連法は、個人のプライバシーを保護し、個人に関して集められた情報へアクセスする権利を個人に付与するために制定されました。 これらの法律への準拠は、[カナダ プライバシー委員会 (Office of the Privacy Commissioner of Canada: OPCC)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/02_05_d_15/) により監督されます。
 
-[プライバシー法 (Privacy Act)](https://privacy.microsoft.com/en-US/#heading-0-0-2-1) は、連邦政府機関の職員の情報を含む、個人を特定可能な情報の収集、使用、および公開を規定しています。 [個人情報保護および電子文書法 (Personal Information Protection and Electronic Documents Act: PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) は、営利団体の商業活動および銀行、航空会社、電気通信会社などの連邦規制の対象事業の従業員に対する同様の規定です。
+[プライバシー法 (Privacy Act)](https://privacy.microsoft.com/ja-JP/#heading-0-0-2-1) は、連邦政府機関の職員の情報を含む、個人を特定可能な情報の収集、使用、および公開を規定しています。 [個人情報保護および電子文書法 (Personal Information Protection and Electronic Documents Act: PIPEDA)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/) は、営利団体の商業活動および銀行、航空会社、電気通信会社などの連邦規制の対象事業の従業員に対する同様の規定です。
 
 PIPEDA は、PIPEDA への準拠を目指す事業が従う必要のある、10 の[公正情報原則](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/)に基づいています。 たとえば、個人情報を収集または使用するためには組織は個人の許可を得る必要があるという PIPEDA 要件は、同意の基本原則を拠り所としています。 個人は、個人情報にアクセスする権利および個人情報の正確さに異議を唱える権利の両方を持っています (「個人によるアクセス」の原則に基づくものです)。 「目的の特定」の原則は、個人情報は同意された目的のみに使用できるという規則の基になっています。
 
@@ -78,8 +78,4 @@ PIPEDA では、カナダの企業が個人情報をカナダ内に保存する�
 - [Microsoft におけるプライバシー](https://privacy.microsoft.com)
 - [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)
 - [クラウドでのプライバシーに関する考慮事項](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
