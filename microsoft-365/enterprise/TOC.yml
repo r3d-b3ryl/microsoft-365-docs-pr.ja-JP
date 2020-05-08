@@ -103,8 +103,6 @@
           href: migration-microsoft-365-enterprise-workload.md
         - name: リモート ワーカーを支援する
           href: empower-people-to-work-remotely.md
-        - name: 厳しく規制されたデータ用の Teams
-          href: secure-teams-highly-regulated-data-scenario.md
         - name: 厳しく規制されたデータ用の SharePoint サイト
           href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: テスト ラボ ガイド

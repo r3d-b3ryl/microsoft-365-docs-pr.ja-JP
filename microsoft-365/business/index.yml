@@ -4,34 +4,34 @@ summary: Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、�
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium のリソース
-  description: description
+  description: 説明
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 520a89860d5dcac103493037fc4a52b8e60073ea
-  ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+  ms.openlocfilehash: 5f146e4d0ab5a86a3891e2313b93ad307f838ae1
+  ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "44002182"
+  ms.lasthandoff: 05/07/2020
+  ms.locfileid: "44159945"
 productDirectory:
   title: Microsoft 365 Business Premium を使用したリモート作業のセキュリティ保護
   items:
+  - title: Read
+    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+    summary: Microsoft 365 Business Premium を使用して安全なリモート作業を可能にするための最適な方法。
+    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+  - title: 無料のパートナーキットを取得する
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: パートナーにとって、セキュリティで保護されたリモート作業を可能にするための実践的なガイダンスとマーケットリソースに移動します。
+    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
   - title: 新機能
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Azure AD Premium P1 は Microsoft 365 Business Premium に送られます。
     url: https://aka.ms/aadp1smbblog
-  - title: パートナーウェビナーを見る
-    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: 中小企業のお客様のCOVID-19(新型コロナウイルス感染症) の対応をセキュリティ保護します。
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
-  - title: 読み取り
-    imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: Microsoft 365 Business Premium を使用して安全なリモート作業を可能にするための最適な方法。
-    url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
 conceptualContent:
   items:
   - title: Microsoft 365 Business Premium とは
@@ -76,7 +76,7 @@ conceptualContent:
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
       text: 提案資料 (パートナー向け)
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+    - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: 技術の基礎
     - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
