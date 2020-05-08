@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f80e9ab25fda70ae723b844691dc129d0b604921
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: d4d794c05498cd40d1a844d1cb402a52f23ad0c6
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42313782"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065782"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>個人データ保護法 (PDPA) アルゼンチン
 
@@ -61,8 +61,4 @@ Microsoft のデータ移転契約は、オンライン サービス条件のデ
 - [Microsoft におけるプライバシー](https://privacy.microsoft.com)
 - [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)
 - [クラウドでのプライバシーに関する考慮事項](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/7/0/1/7018F836-AE7C-4E98-8159-C6AA04D803CB/PDPA-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

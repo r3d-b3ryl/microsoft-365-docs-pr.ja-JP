@@ -9,17 +9,17 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: パートナー組織から管理されたゲストユーザーを使用して、B2B エクストラネットのサイトまたはチームを作成する方法について説明します。
-ms.openlocfilehash: 3a1faab90907daf9c48ec02c51eb272187fb0fde
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44001705"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166151"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 
@@ -33,7 +33,7 @@ Azure active [Directory 受給管理](https://docs.microsoft.com/azure/active-di
 
 ## <a name="connect-the-partner-organization"></a>パートナー組織を接続する
 
-パートナー組織からゲストを招待するには、パートナーのドメインを、接続された組織として Azure Active Directory に追加する必要があります。
+パートナー組織からゲストを招待するには、パートナーのドメインを Azure Active Directory に接続された組織として追加する必要があります。
 
 接続された組織を追加するには
 1. [Azure Active Directory](https://aad.portal.azure.com)で、[ **id ガバナンス**] をクリックします。

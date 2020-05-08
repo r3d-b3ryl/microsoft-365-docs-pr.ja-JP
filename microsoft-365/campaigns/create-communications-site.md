@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: キャンペーン用のコミュニケーションサイトを作成します。
-ms.openlocfilehash: 5c6590ae8e8fbe0dd1cc024c53f3a2a109aa918c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3435ede554c16bb787b87a6ea76e0c41f62b8fe5
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42056380"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165723"
 ---
 # <a name="create-a-communications-site-for-your-campaign"></a>キャンペーン用のコミュニケーションサイトを作成する
 
@@ -60,7 +60,7 @@ PowerPoint と PDF の次のリンクは、タブロイド形式 (台帳、11 x 
 2. ページの左上隅で、アプリ起動ツールのアイコンを選択し、 **SharePoint**タイルを選択します。 **Sharepoint**タイルが表示されていない場合は、[**サイト**] タイルをクリックするか、sharepoint が表示されていない場合は**すべて**をクリックします。
 3. SharePoint ホームページの上部で、[ **+ サイトの作成**] をクリックし、[**コミュニケーションサイト**] オプションを選択します。
 
-[コミュニケーションサイトの概要](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)と、 [SharePoint Online でコミュニケーションサイトを作成](https://support.office.com/article/Create-a-communication-site-in-SharePoint-Online-7FB44B20-A72F-4D2C-9173-FC8F59BA50EB)する方法について説明します。
+[コミュニケーションサイトの概要](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732)と、 [SharePoint Online でコミュニケーションサイトを作成](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)する方法について説明します。
 
 
 ## <a name="admin-settings"></a>管理設定

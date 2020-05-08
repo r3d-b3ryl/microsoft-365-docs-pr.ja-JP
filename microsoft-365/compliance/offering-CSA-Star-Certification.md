@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a13274aea83bf26eca8ecde524eafa14d27b4fca
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 37c460732704da4c5904005cf8ebaabf36b92c49
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602564"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066108"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Cloud Security Alliance (CSA) STAR Certification
 
@@ -36,8 +36,6 @@ Cloud Security Alliance (CSA) は、Security, Trust & Assurance Registry (STAR) 
 Microsoft Azure、Microsoft Intune、Microsoft Power BI では、STAR 認証を取得しています。STAR 認証を取得するには、クラウド プロバイダーのセキュリティ態勢について、独立した第三者による厳格な評価が実施されます。 この STAR 認証は、ISO/IEC 27001 認証の取得およびCCM に規定されている基準への適合に基づきます。 同認証は、クラウド サービス プロバイダーが、該当する ISO/IEC 27001 の要件に準拠していること、CCM で概説されているクラウド セキュリティに関する重要な問題を解決していること、および、CCM の制御領域におけるアクティビティの管理について STAR Capability Maturity Model (STAR 能力成熟度モデル) を基に評価されていることを示します。  
   
 評価の実施中、16 ある CCM の制御領域のそれぞれに対し、CSA 認定公認監査員が Maturity Capability (能力成熟度) スコアを割り当てます。 その後、スコアの平均を基に、全体的な成熟度レベルを割り当て、「ブロンズ」、「シルバー」、「ゴールド」のうち対応するアワードが授与されます。 Azure、Intune、Power BI、Microsoft Cloud App Security には、ゴールド レベルの Cloud Security Alliance (CSA) STAR 認証が付与されています。  
-  
-Microsoft Cloud における CSA STAR 認証の利点については、[CSA STAR 認証の背景解説をダウンロード](https://aka.ms/csastar-certification-backgrounder)してください。
 
 「Azure のセキュリティとコンプライアンスのブループリント」を使用して CSA STAR 認証の展開を加速させる方法については、『[Microsoft Azure Responses to CSA Consensus Assessments Initiative Questionnaire』(CSA コンセンサス評価イニシアチブのアンケートへの Microsoft Azure の回答) をダウンロード](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)してください。
 
@@ -91,8 +89,4 @@ Azure、Cloud App Security、Intune、Power BI では、Maturity Capability (能
 - [Cloud Controls Matrix (CCM)](https://cloudsecurityalliance.org/group/cloud-controls-matrix/)
 - [ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

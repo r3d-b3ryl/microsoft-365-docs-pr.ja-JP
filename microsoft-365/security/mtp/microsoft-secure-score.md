@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56c3187999d34ac6d84c1b3857053f82bb40b2a9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804760"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141509"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -52,7 +52,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ### <a name="products-included-in-secure-score"></a>セキュア スコアに含まれる製品
 
-現時点では、SharePoint Online、Exchange Online、OneDrive for Business、Microsoft Information Protection など)、Azure AD、Cloud App Security を含めるための推奨事項があります。 その他のセキュリティ製品 (Azure ATP、Microsoft Defender ATP など) に関する推奨事項は、近日中に公開されます。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅するわけではありませんが、適切な基準になります。 また、改善のための処置をサードパーティによるカバー対象としてマークすることもできます。
+現時点では、Microsoft 365 (Exchange Online を含む)、Azure AD、Microsoft Defender ATP、Azure ATP、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日中に公開されます。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅するわけではありませんが、適切な基準になります。 また、改善のための処置をサードパーティによるカバー対象としてマークすることもできます。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
@@ -110,8 +110,6 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 ### <a name="actions"></a>アクション
 
-Microsoft セキュア スコアでは、[スコアなし] と表示されたアクションは追跡しません。 アクションを実行することはできますが、完了してもスコアには影響しません。 将来、Microsoft セキュア スコアによってアクションが追跡されるようになったときに既にそれを完了していた場合、その変更は自動的にセキュア スコアに反映されます。
-
 特定の改善アクションを選択すると、ポップアップが表示されます。 この操作を完了するには、いくつかの選択肢があります。
 
 1. **[ビューの設定]** を選択して構成画面に移動し、変更を加えます。 アクションに応じたポイントが獲得され、ポップアップの上部に表示されます。ポイントの更新には最大 24 時間かかる場合があります。
@@ -122,7 +120,7 @@ Microsoft セキュア スコアでは、[スコアなし] と表示されたア
 
 ![セキュア スコア改善アクションの例](../../media/secure-score/secure-score1x450.png)
 
-*図 2 & 3: 改善アクションのポップアップ*
+*図 2: 改善アクションのポップアップ*
 
 ## <a name="monitor-improvements-over-time"></a>時間の経過に伴う改善のモニタリング
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: この記事では、ファイルの保存と共有に関してチームサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155283"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165109"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有についてチームサイトをカスタマイズする
 
@@ -77,7 +77,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 リストに大量のデータを格納している場合は、「 [SharePoint での大規模なリストとライブラリの管理](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)」を参照してください。
   
-サイトへの予定表の追加に関するビデオを表示するには、「[共有の予定表を作成する](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx)」を参照してください。
+サイトへの予定表の追加に関するビデオを表示するには、「[共有の予定表を作成する](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798)」を参照してください。
 
 ## <a name="organize-sites-into-hubs"></a>サイトをハブに編成する
 
@@ -87,7 +87,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 ハブサイトを構築する準備ができたら、「 [SharePoint Online でハブサイトを作成](/sharepoint/create-hub-site)する」を参照してください。
   
-ハブサイトにサイトを追加する方法については、「 [SharePoint サイトをハブサイトに関連付ける](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx)」を参照してください。
+ハブサイトにサイトを追加する方法については、「 [SharePoint サイトをハブサイトに関連付ける](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05)」を参照してください。
   
 ## <a name="sharing-files-with-the-team"></a>チームでファイルを共有する
 
@@ -115,7 +115,7 @@ Microsoft 365 グループにユーザーを追加するには、「ユーザー
     
   - [Microsoft 365 を使用して Office を iPhone または iPad にインストールしてセットアップする](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Microsoft 365 を使用して Windows Phone で Office をセットアップする](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Microsoft 365 を使用して Windows Phone で Office をセットアップする](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [作業ファイルの保存、同期、共有を行う (OneDrive for Business)](https://go.microsoft.com/fwlink/?LinkID=511458)
     

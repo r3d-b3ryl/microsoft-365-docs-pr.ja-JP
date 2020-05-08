@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '個人用メールボックスを、複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 7e652dc77218be44caa56515e4b21efb692cbaa3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628893"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162700"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -48,7 +48,7 @@ ms.locfileid: "43628893"
 
 3. ユーザー メールボックスを選択します。 **[共有メールボックスに変換]** で **[変換]** を選択します。
 
-4. メールボックスが 50 GB 未満の場合は、[ユーザーからライセンス](../manage/remove-licenses-from-users.md)を削除し、その支払いを停止できます。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「 [Microsoft 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
+4. メールボックスが 50 GB 未満の場合は、[ユーザーからライセンス](../manage/remove-licenses-from-users.md)を削除し、その支払いを停止できます。 ユーザーのアカウントは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「 [Microsoft 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
     
 5. 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 

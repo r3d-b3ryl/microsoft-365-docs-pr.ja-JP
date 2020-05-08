@@ -11,15 +11,16 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: 認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 31df8820346d14fc945c68f0d295fc1dcaa585d9
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
+ms.openlocfilehash: 10de9c43497bd8e07071235868414e91c20aadb5
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44001712"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141385"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -39,7 +40,7 @@ ms.locfileid: "44001712"
 [すべてのユーザー] リンクの有効期限を設定するには
 1. SharePoint Online 管理センターを開きます。
 2. 左側のナビゲーションで **[共有]** をクリックします。
-3. **[[すべてのユーザー] リンクの詳細設定]** で、**[これらのリンクは、次の日数以内に期限切れにする必要があります]** チェック ボックスをオンにします。</br>
+3. **[[すべてのユーザー] リンクの有効期限とアクセス許可のオプションを選択する]** で、**[これらのリンクは、次の日数以内に期限切れにする必要があります]** チェック ボックスをオンにします。</br>
    ![SharePoint における組織レベルの [すべてのユーザー] リンクの有効期限設定のスクリーンショット](../media/sharepoint-organization-anyone-link-expiration.png)
 4. このボックスに日数を入力し、**[保存]** をクリックします。
 

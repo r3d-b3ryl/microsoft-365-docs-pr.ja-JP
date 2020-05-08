@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: da23c71947e668ac3a401d68a35963fbc94a9afc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602274"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065922"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 IT サービス マネジメント
 
@@ -79,7 +79,3 @@ Service Trust Portal では、中立的な監査によるコンプライアン�
 - [ISO 20000-1:2011 - サービス管理](https://www.iso.org/standard/51986.html) (購入の要件)
 - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/4/E/5/4E58193E-F4D8-4A98-A39E-27F604BD8292/ISO-IEC-20000-Compliance.pdf) ファイルをダウンロードできます。

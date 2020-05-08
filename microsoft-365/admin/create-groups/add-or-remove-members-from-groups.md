@@ -20,14 +20,21 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Microsoft 365 管理センターで、グループにメンバーを追加したり、グループからメンバーを削除したり、グループ所有者の状態を管理したりする方法について説明します。
-ms.openlocfilehash: 8b4df54e3dc54baf2f9e770f42333b95af391e90
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 96d9485821c27f2e9a4696401938da35a9996996
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049401"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140557"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 Microsoft 365 では、グループメンバーは通常、自分のグループを作成し、参加するグループに自らを追加するか、グループ所有者に招待します。 グループの所有権が変更された場合、またはメンバーを追加または削除することを決定した場合は、管理者としてその変更を行うこともできます。 これらの変更を行うことができるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Microsoft 365 グループとは](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 

@@ -23,14 +23,21 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Microsoft 365 for business の請求先住所を更新する方法について説明します。請求通知の受信に使用される電子メールアドレスを更新することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: 7edef65eb1cf45192188316b13acfd87eac5a490
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 09f4ef95c9f8ab3dcce3b3a2511c5e407539020e
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048027"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140925"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 課金内容や請求書には次の 3 つの住所が含まれています。
   
@@ -179,7 +186,7 @@ ms.locfileid: "44048027"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
 
 ::: moniker-end
 

@@ -42,6 +42,8 @@
       items:
         - name: 通信コンプライアンスの詳細
           href: communication-compliance.md
+        - name: 通信コンプライアンスの計画
+          href: communication-compliance-plan.md
         - name: 通信コンプライアンスを使用して開始する
           href: communication-compliance-configure.md
         - name: 通信コンプライアンスのアラートを調査して修復する
@@ -1054,8 +1056,6 @@
               href: offering-mars-e.md
             - name: NEN-7510 (オランダ)
               href: offering-nen-7510-netherlands.md
-            - name: NHS IG ツールキット (英国)
-              href: offering-nhs-ig-toolkit-uk.md
         - name: 製造
           items:
             - name: FDA CFR Title 21 Part 11
@@ -1132,8 +1132,6 @@
               href: offering-mpaa.md
             - name: NBB + FSMA (ベルギー)
               href: offering-nbb-fsma-belgium.md
-            - name: NHS IG ツールキット (英国)
-              href: offering-nhs-ig-toolkit-uk.md
             - name: NIST CSF
               href: offering-nist-csf.md
             - name: PCI DSS

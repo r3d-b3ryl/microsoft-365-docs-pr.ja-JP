@@ -1,5 +1,5 @@
 ---
-title: 3. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
+title: 手順 3. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,18 +17,20 @@ ms.collection:
 ms.custom:
 - M365solutions
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 76e18d65865f4ec2bbc8a8d1554bb4cad6fee553
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4bc467b3da76a846d6d86e8812c542aa33f5e8b1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011605"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141457"
 ---
-# <a name="3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>3. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
+# <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 3. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
 リモート ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドおよびオンプレミスでデータを安全に保つための最新の作業環境と管理機能を提供します。 
 
 エンドポイント マネージャーは、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
+
+![エンドポイント管理のコンポーネント](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
