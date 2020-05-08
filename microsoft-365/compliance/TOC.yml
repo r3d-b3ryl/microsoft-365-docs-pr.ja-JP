@@ -22,6 +22,8 @@
       items:
         - name: インサイダー リスク管理の詳細
           href: insider-risk-management.md
+        - name: インサイダー リスク管理のための計画
+          href: insider-risk-management-plan.md
         - name: インサイダー リスクの管理の概要
           href: insider-risk-management-configure.md
         - name: インサイダー リスク ポリシーを作成して管理する
