@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e135ceec2ac4abcd0bfd5183fb19089a97dc4bb4
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 4f52cb4ff6809bee7582e2c030fb782f6ac35fd8
+ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043298"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44162689"
 ---
 # <a name="insider-risk-management-policies"></a>Insider リスク管理ポリシー
 
@@ -52,7 +52,9 @@ Insider リスク管理テンプレートは、ポリシーによって監視さ
 多くの組織でデータを保護し、データリークを防止することは、特に従業員、デバイス、およびサービスによって作成された新しいデータの急激な増大において、常に課題となります。 従業員は、サービスとデバイス間で情報を作成、保存、および共有することができ、データの漏洩をより複雑で困難にしています。 データリークが発生すると、組織外の情報を偶発的に共有したり、悪意のある目的でデータが盗まれたりする可能性があります。 このテンプレートは、不審な SharePoint Online データのダウンロード、ファイルとフォルダーの共有、USB ドライブなどのポータブルデバイスへのファイルのコピー、ファイルの印刷、個人のクラウドメッセージングおよびストレージサービスへのデータのコピーに関して、リアルタイムでの検出に優先します。
 
 >[!IMPORTANT]
->このテンプレートを使用する場合は、組織内の機密情報を定義するために少なくとも1つのデータ損失防止 (DLP) ポリシーを構成する必要があります。 組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。
+>このテンプレートを使用する場合は、組織内の機密情報を定義するために少なくとも1つのデータ損失防止 (DLP) ポリシーを構成する必要があります。 このテンプレートで使用されている insider リスク管理の DLP ポリシーの [**インシデントレポート**] 設定が、重要度の*高い*通知に対して構成されていることを確認します。 Insider リスク管理警告は、[**インシデントレポート**] フィールドが*低*または*中*に設定されている DLP ポリシーから生成されません。
+>
+>組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。
 
 ### <a name="offensive-language-in-email"></a>電子メールの不快な言葉
 

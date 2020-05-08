@@ -19,14 +19,21 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 30f2c08aa895f63ed529b4390d208e3daa9d6d7b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011713"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139711"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでのアドインの展開を管理する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 Office アドインは、ドキュメントをカスタマイズしたり、Web 上の情報にアクセスする方法を効率化したりする際に役立ちます (「[Office アドインの使用を開始する](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)」を参照)。 管理者は、組織内のユーザーに対して Office アドインを展開することができます。 この操作は、Microsoft 365 管理センターの一元展開機能を使用して行うことができます。
   
@@ -216,7 +223,7 @@ GDPR を未成年者に準拠させるには、次のいずれかの Office ビ�
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Web 用 Office  <br/> |N/A  <br/> |
+|Web 用 Office  <br/> |該当なし  <br/> |
    
  **Outlook の場合**: 
   
@@ -228,13 +235,13 @@ GDPR を未成年者に準拠させるには、次のいずれかの Office ビ�
 |Office 2016 for Mac  <br/> |16.0.9318.1000  <br/> |
 |IOS 用の Outlook mobile  <br/> |2.75.0  <br/> |
 |Outlook mobile for Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |N/A  <br/> |
+|Outlook.com  <br/> |該当なし  <br/> |
    
  **Office 2013 の要件**
   
 Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライブラリ (ADAL) が有効になっている場合と同じマイナーチェックをサポートします。 次に説明するように、2つのコンプライアンスオプションがあります。
   
-- **ADAL を有効に**します。 この記事では、office[クライアントでの Microsoft 365 モダン認証](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)2013 の使用方法について説明します。<br/>「 [Windows デバイスで Office 2013 の先進認証を有効](../security-and-compliance/enable-modern-authentication.md)にする」で説明されているように、レジストリキーを設定して ADAL を有効にする必要もあります。<br/>さらに、Office 2013 用の次の4月の更新プログラムをインストールする必要があります。
+- **ADAL を有効に**します。 この記事では、office[クライアントでの Microsoft 365 モダン認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)2013 の使用方法について説明します。<br/>「 [Windows デバイスで Office 2013 の先進認証を有効](../security-and-compliance/enable-modern-authentication.md)にする」で説明されているように、レジストリキーを設定して ADAL を有効にする必要もあります。<br/>さらに、Office 2013 用の次の4月の更新プログラムをインストールする必要があります。
     
   - [Office 2013 のセキュリティ更新プログラムの説明: 2018 年4月10日](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -281,6 +288,6 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
 
 [Office アドイン](https://go.microsoft.com/fwlink/p/?linkid=846362)の作成と構築の詳細情報を表示します。
   
-[一元展開 PowerShell コマンドレットを使用してアドインを管理](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9)します。
+[一元展開 PowerShell コマンドレットを使用してアドインを管理](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)します。
   
 [トラブルシューティング: ユーザーがアドインを表示していない](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

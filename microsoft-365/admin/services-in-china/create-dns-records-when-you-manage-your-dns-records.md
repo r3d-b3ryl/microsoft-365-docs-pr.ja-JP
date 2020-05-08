@@ -20,12 +20,12 @@ ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
 description: 'DNS レコードを管理するときに21Vianet が運用する Office 365 の DNS レコードを作成する方法について説明します。 '
 monikerRange: o365-21vianet
-ms.openlocfilehash: b81ab3442e7087c4b7ee9bb3b5e5c2160d724986
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: f6ba0f891bbc207bf7d56c4527760a5c8caf90b0
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43211999"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155399"
 ---
 # <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>DNS レコードを管理するときに Office 365 の DNS レコードを作成する
 
@@ -36,8 +36,8 @@ ms.locfileid: "43211999"
       
 -  ドメインの DNS ホスティング プロバイダーまたはドメイン レジストラーがわからない場合は、「[ドメイン レジストラーまたは DNS ホスティング プロバイダーを探す](../get-help-with-domains/find-your-domain-registrar.md)」を参照してください。 DNS レコードの機能の詳細については、「 [dns の基礎](../get-help-with-domains/dns-basics.md)」を参照してください。
     
--  DNS ホスティングプロバイダーによっては、必要なすべてのレコードの種類を作成できない場合があります。これにより、[ホスティングプロバイダーが SRV、CNAME、TXT、またはリダイレクトをサポートしていない場合にサービスの制限](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)が発生します。 プロバイダーが SRV、TXT、CNAME のレコードをサポートしていない場合は、[必要なすべてのレコードの種類をサポートするプロバイダー](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)に[ドメインを転送](https://support.office.com/article/a6689b24-eeca-41f1-afe6-19917936b73c.aspx)することをお勧めします。 
+-  DNS ホスティングプロバイダーによっては、必要なすべてのレコードの種類を作成できない場合があります。これにより、[ホスティングプロバイダーが SRV、CNAME、TXT、またはリダイレクトをサポートしていない場合にサービスの制限](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)が発生します。 プロバイダーが SRV、TXT、CNAME のレコードをサポートしていない場合は、[必要なすべてのレコードの種類をサポートするプロバイダー](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)に[ドメインを転送](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)することをお勧めします。 
     
-- 必要な DNS レコードを確認し、各レコードに対して使用する値 (電子メールの MX レコードなど) を検索するには、「 [Office 365 の dns レコードの作成に必要な情報を収集](https://support.office.com/article/ffcc06d2-b50d-4072-95bb-f59013770e0e)する」を参照してください。 DNS レコードの機能の詳細については、「 [dns の基礎](../get-help-with-domains/dns-basics.md)」を参照してください。
+- 必要な DNS レコードを確認し、各レコードに対して使用する値 (電子メールの MX レコードなど) を検索するには、「 [Office 365 の dns レコードの作成に必要な情報を収集](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)する」を参照してください。 DNS レコードの機能の詳細については、「 [dns の基礎](../get-help-with-domains/dns-basics.md)」を参照してください。
     
 

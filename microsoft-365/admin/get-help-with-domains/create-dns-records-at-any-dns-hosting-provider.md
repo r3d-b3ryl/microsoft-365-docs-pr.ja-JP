@@ -23,25 +23,25 @@ search.appverid:
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: 任意の DNS ホスティング プロバイダーで Microsoft 365 用のドメインを確認し、DNS レコードを作成する方法について説明します。
 ms.custom: okr_smb
-ms.openlocfilehash: a2d9b57f0230aa736944727e39845f3a0a533426
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2cf28cdd3cc2f85e448d512e72f5b022177e8f1e
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048785"
+ms.locfileid: "44053726"
 ---
 # <a name="create-dns-records-at-any-dns-hosting-provider"></a>任意の DNS ホスティング プロバイダーで DNS レコードを作成する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-[ホスト固有の命令](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580)の一覧からお使いのホストを見つけ、手順に従って必要なすべてのレコードを追加します。 
+[ホスト固有の命令](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)の一覧からお使いのホストを見つけ、手順に従って必要なすべてのレコードを追加します。 
   
 ドメインの DNS ホスティング プロバイダーまたはドメイン レジストラーがわからない場合は、「[ドメイン レジストラーまたは DNS ホスティング プロバイダーを探す](../get-help-with-domains/find-your-domain-registrar.md)」を参照してください。
   
 レコードを各自でセットアップする場合は、以下のレコードを追加します。検証レコードと MX レコードはドメインに固有です。それらをセットアップするには、ドメインに固有な "トークン" 値を取得して使用する必要があります。この手順については以下で説明します。
   
 > [!IMPORTANT]
-> 各 DNS レコード タイプを作るための情報を入力したり貼り付けたりするボックスまたは "*フィールド*" の正確な名前は、DNS ホストによって異なります。ここに記載されている手順が実際の Web サイトのどのフィールドに該当するのかについては、DNS ホストの Web サイトのヘルプを参照してください。使用している DNS ホストの手順が「[Microsoft 365 の DNS レコードを作成する](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx)」に記載されているかどうかをご確認ください。 > DNS ホストによっては、必要なレコード タイプの一部を作成できないため、Microsoft 365 の[サービスが制限される](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)場合があります。ドメインのホストが SRV、TXT、CNAME などのレコードをサポートしていない場合は、必要なすべてのレコードをサポートする DNS ホストに[ドメインを移行する](../get-help-with-domains/buy-a-domain-name.md)ことをお勧めします。高速の自動プロセスで Microsoft 365 をセットアップする場合は、ドメインを GoDaddy に移行することをお勧めします。 
+> 各 DNS レコード タイプを作るための情報を入力したり貼り付けたりするボックスまたは "*フィールド*" の正確な名前は、DNS ホストによって異なります。ここに記載されている手順が実際の Web サイトのどのフィールドに該当するのかについては、DNS ホストの Web サイトのヘルプを参照してください。使用している DNS ホストの手順が「[Microsoft 365 の DNS レコードを作成する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」に記載されているかどうかをご確認ください。 > DNS ホストによっては、必要なレコード タイプの一部を作成できないため、Microsoft 365 の[サービスが制限される](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)場合があります。ドメインのホストが SRV、TXT、CNAME などのレコードをサポートしていない場合は、必要なすべてのレコードをサポートする DNS ホストに[ドメインを移行する](../get-help-with-domains/buy-a-domain-name.md)ことをお勧めします。高速の自動プロセスで Microsoft 365 をセットアップする場合は、ドメインを GoDaddy に移行することをお勧めします。 
   
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間はわずか数分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[Office 365 でドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
@@ -432,6 +432,6 @@ DNS ホストの Web サイトで、2 つの新しい SRV レコードを、一�
   
  **必要な DNS レコードの追加方法がわからない場合は**、[「ドメインを設定する (ホストに固有の手順)」](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide)を参照して、まず [Microsoft 365 の DNS レコードの作成に必要な情報を収集します](../get-help-with-domains/information-for-dns-records.md)。 次に、このトピックの一般的な手順に従ってドメインの DNS レコードをセットアップして、メールなど、Microsoft 365 サービスでドメインを使用できるようにします。
   
- **カスタム ドメインで使用する Web サイトがない場合は**、セットアップをすべて自分で行う代わりに、Microsoft 365 でドメインの DNS レコードをセットアップして管理できます。Microsoft 365 で [カスタム ドメインの DNS レコードをセットアップして管理する 2 つのオプションについては、こちらを参照してください](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx)。 
+ **カスタム ドメインで使用する Web サイトがない場合は**、セットアップをすべて自分で行う代わりに、Microsoft 365 でドメインの DNS レコードをセットアップして管理できます。Microsoft 365 で [カスタム ドメインの DNS レコードをセットアップして管理する 2 つのオプションについては、こちらを参照してください](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 
   
 

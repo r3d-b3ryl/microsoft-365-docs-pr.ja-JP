@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン管理に役立つドメインとそれに関連する DNS レコードについて説明します。
-ms.openlocfilehash: bd011add44ea462dacab41fde1ef0ebe4a6b4aa8
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: feef7de31f1576173f7377afe3eac8a6f6aaacb1
+ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048187"
+ms.locfileid: "44053754"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -151,14 +151,14 @@ contoso.com の NS レコードに「hichina.com」と記載するとします�
 ## <a name="why-add-a-domain-in-office-365"></a>Office 365 でドメインを追加するのはなぜですか?
 
 
-Office 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Office 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Office 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
+Office 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Office 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Office 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
   
 > [!NOTE]
 > Outlook や Word などの Microsoft アプリをダウンロードして使うだけであれば、ドメインを追加する必要はありません。その場合は、[PC または Mac に Office をインストールしてください](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
   
 Office 365 では、ドメイン名をメール、一般向け Web サイト、インスタント メッセージング アドレスに使うことができます。
   
-- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Office 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
+- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Office 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
     
 - **Web サイト:** Microsoft 365 サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
     
@@ -170,14 +170,14 @@ Office 365 では、ドメイン名をメール、一般向け Web サイト、�
 ## <a name="why-add-a-domain-in-office-365"></a>Office 365 でドメインを追加するのはなぜですか?
 
 
-Office 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Office 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Office 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
+Office 365 に fourthcoffee.com などのカスタム ドメインを追加すると、短くて親しみやすいメール アドレスやユーザー ID をサービスで使えるようになります。 Office 365 アカウントにサインアップすると、[使用するドメインが割り当てられます](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)が、ドメイン名には "onmicrosoft.com" が含まれています。ユーザーの多くは、Office 365 のメールを使う予定がある場合、組織やビジネスのドメインを追加することを選びます。 
   
 > [!NOTE]
 > Outlook や Word などの Office 365 アプリをダウンロードして使うだけであれば、ドメインを追加する必要はありません。その場合は、[PC または Mac に Office をインストールしてください](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
   
 Office 365 では、ドメイン名をメール、一般向け Web サイト、インスタント メッセージング アドレスに使うことができます。
   
-- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Office 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
+- **メール:** 自分のドメイン名を使ってメールをカスタマイズできるため、アカウントに割り当てられた [初期設定の onmicrosoft.com メール アドレス](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)よりも短くて覚えやすいアドレスを使うことができます。したがって、(Office 365 にサインインするための 職場のアカウント でもある) メール アドレスを、joe@contoso.onmicrosoft.com から、たとえば joe@contoso.com に変更できます。 
     
 - **Web サイト:** サブスクリプションに SharePoint Online Public Web サイト (現在では非売品) が含まれる場合は、一般向け Web サイトには contoso-public.sharepoint.com のような初期アドレスが割り当てられます。 会社の Web サイトを設定する場合は、 カスタム ドメイン名を使用して Web サイトのアドレスを変更して、www.contoso.com などにできます。 
     

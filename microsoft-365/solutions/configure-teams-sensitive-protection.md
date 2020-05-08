@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 6c3d79e212a1a0333a7262b72ae0f1db8597096f
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 6ad5de355055ac193979db9154d54ab9974fcde0
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002979"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159923"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 
@@ -75,7 +76,7 @@ Teams の秘密度ラベルを有効にしたら、次の手順ではラベル�
 機密のシナリオの詳細な構成は、チームに関連付けられている SharePoint サイトで行います。次の手順では、チームを作成します。
 
 機密情報のチームを作成するには
-1. Teams で、アプリの左側にある **[Teams]**  をクリックして、チーム リストの下部にある **[チームに参加またはチームの作成]** をクリックします。
+1. Teams で、アプリの左側にある **[Teams]** をクリックして、チーム リストの下部にある **[チームに参加またはチームの作成]** をクリックします。
 2. **[チームの作成]** (最初のカード、左上隅) をクリックします。
 3. **[初めからチームを作成する]** を選びます。
 4. **[秘密度]** リストで、作成した**秘密度**ラベルを選びます。

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 では、使用可能な暗号化、プロトコル、およびテクノロジが最強の状態で、コンテンツが保存され、転送中に暗号化されます。 Office 365 の暗号化の概要について説明します。
-ms.openlocfilehash: fdd1c50c7fde1892b5bab4ad83cddf8e032f4d61
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16b7786097690af6a2dbb558582a7cf88e605bec
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631682"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166008"
 ---
 # <a name="encryption"></a>暗号化
 
@@ -63,11 +63,11 @@ Microsoft 365 では、Office 365 でのボリューム暗号化、ファイル�
   
 - [Azure Active Directory Rights Management の概要](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [管理センターで Rights Management をアクティブ化する](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
+- [管理センターで Rights Management をアクティブ化する](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 
-- [Office 365 の顧客キーによるサービスの暗号化](customer-key-overview.md)
+- [Office 365 のカスタマー キーによるサービスの暗号化](customer-key-overview.md)
 
 ## <a name="how-do-i"></a>方法
 
@@ -75,7 +75,7 @@ Microsoft 365 では、Office 365 でのボリューム暗号化、ファイル�
 |:-----|:-----|
 |組織の暗号化の設定  <br/> |[Office 365 Enterprise で暗号化を設定する](set-up-encryption.md) <br/> |
 |証明書、テクノロジ、TLS 暗号スイートに関する詳細を表示する <br/> |[暗号化に関する技術的な詳細](technical-reference-details-about-encryption.md) <br/> |
-|モバイルデバイスで暗号化されたメッセージを操作する  <br/> |[暗号化されたメッセージを Android デバイスで表示する](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [iPhone または iPad で暗号化されたメッセージを表示する](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
+|モバイルデバイスで暗号化されたメッセージを操作する  <br/> |[暗号化されたメッセージを Android デバイスで表示する](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [iPhone または iPad で暗号化されたメッセージを表示する](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |パスワード保護を使用してドキュメントを暗号化する  <br/><br/>  ブラウザーでは、パスワード保護はサポートされていません。 デスクトップ版の Word、Excel、および PowerPoint をパスワード保護に使用します。 |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> [**保護の追加**] セクションを選択し、[**パスワードで暗号化**する] をクリックします。  |
 |文書から暗号化を削除する  <br/> |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> [**保護の削除**] セクションを選択し、[**パスワード暗号化の解除**] をクリックします。  |
 

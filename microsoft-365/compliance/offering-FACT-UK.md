@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2aa68d75f795e670390c913c999c154a0164c18c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602464"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066400"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>著作権詐取に対するフェデレーション (ファクト)
 
@@ -29,11 +29,9 @@ ms.locfileid: "41602464"
 
 ## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>Microsoft と著作権の盗難に対するフェデレーション (事実)
 
-このような資産をパブリッククラウドに entrust する際にお客様を保護するための Microsoft のコミットメントを強化するために、Microsoft Azure は英国の著作権詐取 (事実) に対するフェデレーションによって認定されています。 ファクト認定は ISO 27001 に基づいており、物理的およびデジタルのセキュリティ、スタッフの審査とトレーニング、アクセス制御を重視しています。 ファクトコンテンツ保護およびセキュリティプログラムは、法律執行、技術パートナー、および業界との関係に関する専門知識に基づいて、ピアツーピア共有、不正なディスクの複製、信号などの、著作権侵害とコンテンツの盗難に関する専門知識を中心にしています。セーフティ.
+このような資産をパブリッククラウドに entrust する際にお客様を保護するための Microsoft のコミットメントを強化するために、Microsoft Azure は英国の著作権詐取 (事実) に対するフェデレーションによって認定されています。 ファクト認定は ISO 27001 に基づいており、物理的およびデジタルのセキュリティ、スタッフの審査とトレーニング、アクセス制御を重視しています。 ファクトコンテンツ保護およびセキュリティプログラムは、法的執行機関、技術パートナー、および業界との関係において、著作権の侵害や、ピアツーピアの共有、不正なディスクの複製、および信号の盗難などのコンテンツの盗難に関する専門知識を中心にしています。
 
 Microsoft による、ファクト監査に対する自発的な提出に基づいて、ファクト監査認定 Azure。 Azure は、実際の証明書を得るために最初のマルチテナントのパブリッククラウドサービスで、CDSA 認定書、および MPAA による正式な評価を含む、メディア関連認定のポートフォリオに追加されました。
-
-Microsoft クラウドでの事実の利点について説明します。[ファクト backgrounder をダウンロードする](https://aka.ms/fact-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -62,7 +60,3 @@ Microsoft では、実際には、Microsoft は、独立した評価を実施す
 - [MPAA 評価](offering-mpaa.md)
 - [CSA CAIQ v3.0.1 への Azure の対応](https://aka.ms/csacaiqresponses)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf) ファイルをダウンロードできます。

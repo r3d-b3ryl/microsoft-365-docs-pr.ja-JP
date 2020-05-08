@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: c1e04e5ca0d36c32a55a9819140356db5093e3a1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 980efbf09349cc0203ac50ae5e028c008d5694ca
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627456"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165903"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
 
@@ -41,7 +41,7 @@ Azure Active Directory に参加している Windows 10 デバイスはすべて
 
 次の手順を実行して、組織の Azure AD に参加しているデバイスがオンプレミスのリソースにアクセスできるようにします。
   
-1. ユーザー、グループ、および連絡先をローカルの Active Directory から Azure Active Directory に同期するには、「 [Set up Directory synchronization For Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846)」の説明に従って、ディレクトリ同期ウィザードと Azure AD Connect を実行します。
+1. ユーザー、グループ、および連絡先をローカルの Active Directory から Azure Active Directory に同期するには、「 [Set up Directory synchronization For Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)」の説明に従って、ディレクトリ同期ウィザードと Azure AD Connect を実行します。
     
 2. ディレクトリ同期が完了したら、組織の Windows 10 デバイスが Azure AD に参加していることを確認します。 この手順は、各 Windows 10 デバイスで個別に実行します。 詳細については、「 [Microsoft 365 Business Premium ユーザーの Windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。 
     

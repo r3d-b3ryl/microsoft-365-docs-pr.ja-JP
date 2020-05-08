@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Office 365 メッセージの暗号化を使用して、組織の機密情報の種類のポリシーを作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a6baf20d755ed30ce962d7cc6b03f6c9734e4a4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7ba94923c1f8c6ade6b7bf494636c562b4cc4102
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031412"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165958"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージの暗号化を使用して組織の機密情報の種類のポリシーを作成する
 
@@ -64,7 +64,7 @@ Microsoft がメッセージを暗号化すると、受信者は暗号化され�
 
 この変更に関して組織内のユーザーを準備するために、適用可能なエンドユーザードキュメントおよびトレーニング資料を更新することが必要な場合があります。 必要に応じて、これらの Office 365 メッセージ暗号化リソースをユーザーと共有します。
 
-- [Outlook for PC で暗号化されたメッセージを送信、表示、および返信する](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Outlook for PC で暗号化されたメッセージを送信、表示、および返信する](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
 - [Microsoft 365 Essentials Video: Office メッセージの暗号化](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>監査ログでのこれらの変更の表示

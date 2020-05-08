@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0c3898fd808a588578cba29f7f40b8d5be183e1c
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602264"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065912"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 ビジネス継続性管理標準
 
@@ -32,8 +32,6 @@ ms.locfileid: "41602264"
 ## <a name="microsoft-and-iso-22301"></a>Microsoft と ISO 22301
 
 Microsoft は、ビジネス継続性に関する ISO 22301 認証を取得した最初の超大規模クラウド サービス プロバイダーです。 独立した認証機関による、事業継続性のプロセスに関するすべての要素を対象とした厳格な監査を経て、Microsoft Azure、Microsoft Azure Government、Microsoft Office 365 (Commercial、Government、Education 製品など)、Microsoft Cloud App Security、Microsoft Intune、Microsoft Power BI が同認証を取得しました。 この監査では、下記の対象サービス、Azure 管理機能、Azure Portal、対象サービスの監視、操作、更新に使用するシステムが審査されました。
-
-Microsoft Cloud における ISO/IEC 22301 のメリットをご覧ください: [ISO/IEC 22301 の背景解説をダウンロードする](https://aka.ms/iso22301-backgrounder)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -79,7 +77,3 @@ ISO 22301 は、企業や政府組織が使用する認証であり、ビジネ�
 - [Microsoft Enterprise ビジネス継続性管理プログラムの説明](https://go.microsoft.com/fwlink/p/?linkid=2092212)
 - [コンプライアンス スコア](compliance-score.md)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ) ファイルをダウンロードできます。

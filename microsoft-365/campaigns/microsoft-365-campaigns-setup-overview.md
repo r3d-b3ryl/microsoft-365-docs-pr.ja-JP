@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 キャンペーンのセットアップの概要
-ms.openlocfilehash: 0fa804c46ac3545a7f2d30ffe80b148262cc23cc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 463d7cebf88ea830048c25e2781eac4aa379e30a
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632757"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165699"
 ---
 # <a name="set-up-microsoft-365-for-campaigns"></a>Microsoft 365 for キャンペーンのセットアップ
 
@@ -58,10 +58,10 @@ ms.locfileid: "43632757"
 2. 管理されていないデバイスの場合、ユーザーは[pc と mac](m365-campaigns-protect-pcs-macs.md)をセットアップします。 重要なスタッフの場合は、管理された[デバイス](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)を使用してさらに保護を強化することをお勧めします。 すべてのデバイスに対して、[多要素認証](m365-campaigns-multifactor-authenication.md)を設定する必要があります。 
 3. すべてのユーザーは、[フィッシングやその他の攻撃](m365-campaigns-phishing-and-attacks.md)について学習することで、自分自身とキャンペーンを保護する方法について学習する必要があります。 この[インフォグラフィック](m365-campaigns-protect-campaign-infographic.md)は、ユーザーがオンラインの脅威からキャンペーンを保護する方法についても理解するのに役立ちます。
 
-## <a name="contact-support"></a>サポートに連絡する
+## <a name="contact-support"></a>サポートに連絡
 
  **サポートに連絡する場合:**
   
-Microsoft 365 管理者として、カスタマーサポートチームにアクセスして、 **[ビジネス製品に関するサポートに連絡する-管理者ヘルプ](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+Microsoft 365 管理者として、カスタマーサポートチームにアクセスして、 **[ビジネス製品に関するサポートに連絡する-管理者ヘルプ](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 

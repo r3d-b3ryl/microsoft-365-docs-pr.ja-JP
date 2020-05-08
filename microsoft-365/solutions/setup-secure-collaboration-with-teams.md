@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom:
 - M365solutions
+ms.custom: ''
 f1.keywords: NOCSH
 description: 機密に基づいてデータを保護するために Teams をセットアップする方法について説明します。
-ms.openlocfilehash: 77493398b11109a51c4e60599561fd8cd4f6c3ac
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002955"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44159469"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とのセキュリティで保護されたコラボレーションをセットアップする
 
@@ -86,7 +86,7 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 ベースライン層から始め、必要に応じて*機密*および*機密性の高い*階層を使用する teams を追加して、組織内の情報を保護します。 開始するには、次のリソースを参照してください。
 
 - [ベースライン保護を使用して teams を構成する](configure-teams-baseline-protection.md)
-- [機密データの保護で teams を構成する](configure-teams-sensitive-protection.md)
+- [機密データに対する保護機能を使用してチームを構成する](configure-teams-sensitive-protection.md)
 - [非常に機密性の高いデータの保護を使用して teams を構成する](configure-teams-highly-sensitive-protection.md)
 
 組織内でも、共有に対する追加の保護を必要とする非常に機密性の高いプロジェクトがある場合は、チームのメンバーだけがファイルを読むことができるように、独自の機密ラベルを使用してファイルを暗号化するようにチームを構成できます。 詳細について[は、「セキュリティの分離を使用してチームを構成](secure-teams-security-isolation.md)する」をご覧ください。

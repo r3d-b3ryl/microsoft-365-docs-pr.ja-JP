@@ -14,14 +14,21 @@ ms.collection:
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーによって作成されたセルフサービスの購入を管理する方法について説明します。
-ms.openlocfilehash: 7074a829bed3e65a160a9a33afb4f2b130f6c8d1
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046182"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141152"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 管理者は、組織内のユーザーによって作成されたセルフサービスの購入を表示できます。 セルフサービスの各購入について、製品、購入者名、購入したサブスクリプション、有効期限、購入価格、割り当てられたユーザーを確認できます。 組織に必要な場合は、PowerShell を使用して製品ごとにセルフサービス購入を無効にすることができます。 セルフサービス購入または一元的に購入した製品に対して、同じデータ管理とアクセスポリシーを使用できます。
 

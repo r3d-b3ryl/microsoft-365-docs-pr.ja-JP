@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1ed1703ac30a9c7c8392ad61ec0d126d1e17c17e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f58baecce1d1972c7aee1fdb7121375d5ddd111c
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602474"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066410"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>EU - 米国間プライバシー シールド フレームワークおよびスイス - 米国間プライバシー シールド フレームワーク
 
@@ -82,7 +82,7 @@ EU から米国に個人データを転送する場合:
 
 **Microsoft は、EU - 米国間プライバシー シールド フレームワークおよびスイス - 米国間プライバシー シールドに基づいて、どのような処理を行っていますか?**
 
-プライバシー シールドに関連する苦情がある場合は、『[Microsoft プライバシー ステートメント](https://privacy.microsoft.com/privacystatement)』の[問い合わせ方法](https://privacy.microsoft.com/PrivacyStatement#mainhowtocontactusmodule)を参照してください。 Microsoft が直接解決できない苦情については、EU DPA に協力し、EU の DPA が提供するアドバイスに従います。 関連する DPA の連絡先に連絡するようにお問い合わせください。 [プライバシー シールドの原則](https://www.privacyshield.gov/article?id=Requirements-of-Participation)で詳細に説明されているように、
+プライバシー シールドに関連する苦情がある場合は、『[Microsoft プライバシー ステートメント](https://privacy.microsoft.com/privacystatement)』の[問い合わせ方法](https://privacy.microsoft.com/privacystatement#mainhowtocontactusmodule)を参照してください。 Microsoft が直接解決できない苦情については、EU DPA に協力し、EU の DPA が提供するアドバイスに従います。 関連する DPA の連絡先に連絡するようにお問い合わせください。 [プライバシー シールドの原則](https://www.privacyshield.gov/article?id=Requirements-of-Participation)で詳細に説明されているように、
 拘束力のある仲裁オプションを利用して、他の方法では解決できない苦情に対処できます。
 
 ## <a name="resources"></a>リソース
@@ -92,8 +92,4 @@ EU から米国に個人データを転送する場合:
 - [Microsoft と EU モデル契約条項](offering-eu-model-clauses.md)
 - [Microsoft におけるプライバシー](https://privacy.microsoft.com)
 - [クラウドでのプライバシーに関する考慮事項](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

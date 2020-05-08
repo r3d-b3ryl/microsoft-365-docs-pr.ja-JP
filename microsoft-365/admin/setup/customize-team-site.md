@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: この記事では、ファイルの保存と共有に関してチームサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: 49bacdd193277e88eb076baeb90380c8f696d27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1830cd3df75ee80f25ff0ca3147d4491103102e4
+ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033788"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44155283"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有についてチームサイトをカスタマイズする
 
@@ -51,7 +51,7 @@ ms.locfileid: "44033788"
   
 サイトの探索性を向上させるには、SharePoint のスタートページに特集リンクとして追加します。 詳細については、「[おすすめのリンクを SharePoint のスタートページに追加する」を](/sharepoint/change-links-list-on-sharepoint-home-page)参照してください。
   
-チームサイトの開始ページに画像を追加するには、「 [SharePoint ページに画像または画像ファイルを追加](https://support.office.com/article/4A9B0E98-C89A-4A41-8ADB-B7750DCCCA16.aspx#ID0EAACAAA=SharePoint_Online)する」を参照してください。
+チームサイトの開始ページに画像を追加するには、「 [SharePoint ページに画像または画像ファイルを追加](https://support.microsoft.com/en-us/office/add-a-picture-or-image-file-to-a-sharepoint-page-4a9b0e98-c89a-4a41-8adb-b7750dccca16)する」を参照してください。
   
 サイトにページを追加するには、「[サイトにページを追加](https://support.office.com/article/b3d46deb-27a6-4b1e-87b8-df851e503dec.aspx)する」を参照してください。
   
@@ -65,7 +65,7 @@ ms.locfileid: "44033788"
    
 ファイルを編集、削除、チェックアウトする方法について説明します。 詳細については、「[ドキュメントライブラリ内のファイルを操作する](https://support.office.com/article/a9d89171-1673-4892-9dd2-1ca52037dea2.aspx)」を参照してください。
   
-特定のデータを表示するライブラリのビューを作成する方法の詳細については、「 [Create a custom view of a document library](https://support.office.com/article/8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7.aspx)」を参照してください。
+特定のデータを表示するライブラリのビューを作成する方法の詳細については、「 [Create a custom view of a document library](https://support.microsoft.com/en-us/office/create-a-custom-view-of-a-document-library-8f6b08e0-a9a0-4232-9b9b-b374a2ad3da7)」を参照してください。
   
 ## <a name="work-with-lists-to-organize-data"></a>リストを操作してデータを整理する
 
@@ -73,7 +73,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 [SharePoint でリストを作成](https://support.office.com/article/0D397414-D95F-41EB-ADDD-5E6EFF41B083.aspx#ID0EAAGAAA=Online)する方法について説明します。
   
-列数の多いリストを拡張する方法については、「 [SharePoint リストまたはライブラリで列を作成](https://support.office.com/article/2b0361ae-1bd3-41a3-8329-269e5f81cfa2.aspx#ID0EAADAAA=Online)する」を参照してください。
+列数の多いリストを拡張する方法については、「 [SharePoint リストまたはライブラリで列を作成](https://support.microsoft.com/en-us/office/create-a-column-in-a-sharepoint-list-or-library-2b0361ae-1bd3-41a3-8329-269e5f81cfa2)する」を参照してください。
   
 リストに大量のデータを格納している場合は、「 [SharePoint での大規模なリストとライブラリの管理](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx)」を参照してください。
   

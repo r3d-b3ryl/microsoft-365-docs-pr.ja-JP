@@ -21,14 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てます。 '
-ms.openlocfilehash: 02c98570a1742d710373c6711d2621a0a9ebe818
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43210530"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140431"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 メールボックスが 50 GB を超えるデータを保持していない限り、共有メールボックスにはライセンスは必要ありません。 共有メールボックスからライセンスを削除するには、次の手順に従って、ユーザーにライセンスを割り当てたり、不要なライセンスに対して支払いが行われないようにライセンスを戻したりすることができます。
   
@@ -67,7 +74,7 @@ ms.locfileid: "43210530"
 
 3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
 
@@ -86,7 +93,7 @@ ms.locfileid: "43210530"
 
 3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
 

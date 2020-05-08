@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 31c67d9beb0a99019ceb204293de50c194a3d2a6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: f80167a45379a143d7a96e568aedbc27484090a4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602494"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064716"
 ---
 # <a name="spain-esquema-nacional-de-seguridad-ens-high-level-security-measures"></a>スペインの Esquema Nacional de Seguridad (ENS) のハイ レベルなセキュリティ対策
 
@@ -39,9 +39,7 @@ ms.locfileid: "41602494"
 
 Microsoft Azure と Microsoft Office 365 は、独立監査人である BDO の厳しい審査を経て、正式な認定証を取得しました。 BDO は、両方のサービスにおけるセキュリティ対策、情報システムとデータ処理に関する機能が RD 3/2010 に高水準に準拠しており、是正措置が不要であると報告しています。 マイクロソフトは、この認定をスペインで取得した最初の超大規模クラウド サービス プロバイダーになりました。
 
-Microsoft Cloud における ENS (スペイン) のハイ レベルなセキュリティ対策についてのメリットを確認してください。[スペインの ENS バックグラウンダーをダウンロードする](https://aka.ms/spainens-backgrounder)
-
-## <a name="microsoft-in-scope-cloud-services"></a>対象となるマイクロソフトのクラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
@@ -79,7 +77,3 @@ Microsoft Cloud における ENS (スペイン) のハイ レベルなセキュ�
 - スペインの Esquema Nacional de Seguridad ([スペイン語](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8)と[英語](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
 - [マイクロソフト オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf) ファイルをダウンロードできます。

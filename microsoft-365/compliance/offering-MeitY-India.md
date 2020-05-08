@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3b1f93b301ba4db44b7260ae588688acf648e345
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602144"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066098"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>エレクトロニクスおよび情報技術の官庁 (MeitY)
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602144"
 
 インド連邦政府機関のエレクトロニクスおよび情報技術 (MeitY は、政府機関と公的機関のすべての組織にポリシーガイドラインを提供しています。 また、金融サービスや通信などの規制された業界の民間機関によっても、そのガイドラインが採用されています。
 
-Meity、クラウドサービスプロバイダーの認定 (「empanelment」と呼ばれます) を提供します。これには、事前定義された標準セットとセキュリティ、相互運用性、データの移植性に関するガイドラインに準拠した、クラウドサービスを認定する必要があります。サービスレベル契約、契約上の諸条件。 監査者による認定は、クラウドサービスプロバイダーの監査を実施して、コンプライアンスを確認します。
+「MeitY」では、クラウドサービスプロバイダーの認定 (「empanelment」と呼ばれます) を提供しています。これには、事前定義された一連の標準とセキュリティ、相互運用性、データの移植性、サービスレベル契約、契約上の諸条件に対する準拠として、クラウドサービスを認定する必要があります。 監査者による認定は、クラウドサービスプロバイダーの監査を実施して、コンプライアンスを確認します。
 
 認定を受けた後、クラウドサービスプロバイダーは、公的機関の組織が認定されたクラウドサービスを比較して調達できる、行政機関のクラウドサービスディレクトリに一覧表示されます。 このディレクトリは、 [Meghraj Cloud イニシアチブ](https://meity.gov.in/content/gi-cloud-meghraj)(または、「GI \[government of インド\] cloud」) のサービスで、官公庁でのクラウドコンピューティングの使用を促進し、公的機関の IT サービスの実装を管理します。
 
@@ -39,7 +39,7 @@ Meity、クラウドサービスプロバイダーの認定 (「empanelment」�
 - 官公庁仮想プライベートクラウド。これは、クラウドサービスプロバイダーのパブリックおよびその他のサービスとは論理的に分離する必要があります。
 - 行政機関のコミュニティで、クラウドサービスプロバイダーの一般およびその他のサービスとは物理的に分離されている、政府機関向けのクラウドサービスの場合は、政府機関向けコミュニティクラウド
 
-Microsoft の MeitY 認定は、評価フレームワークを使用して品質保証サービスを提供する政府機関である、標準化テストおよび Quality サーティフィケーション (STQC) の Directorate によって行われた厳格な監査の結果でした。MeghRaj Cloud イニシアチブの作業に基づいています。 Microsoft Azure を使用すると、公的機関の組織は、サービスとしてのインフラストラクチャ (IaaS)、サービスとしてのプラットフォーム (PaaS)、障害復旧、DevOps、管理されたバックアップなど、幅広い展開モデルとサービスの提供を行うことができます。
+Microsoft の MeitY は、品質保証サービスを提供する政府機関である、MeghRaj Cloud イニシアチブの作業に基づく評価フレームワークを使用して、標準化テストおよび Quality サーティフィケーション (STQC) の Directorate によって行われた厳格な監査の結果でした。 Microsoft Azure を使用すると、公的機関の組織は、サービスとしてのインフラストラクチャ (IaaS)、サービスとしてのプラットフォーム (PaaS)、障害復旧、DevOps、管理されたバックアップなど、幅広い展開モデルとサービスの提供を行うことができます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -55,15 +55,11 @@ Microsoft の MeitY 認定は、評価フレームワークを使用して品質
 
 **なぜその理由が重要ですか。**
 
-市民オンラインで行政機関サービスを利用できるようにすることは、デジタルインドプログラムの重要な部分です。これは、「インドをデジタル化された社会および知識経済に変換する」ということを目的としています。 MeitY は、行政機関のクラウドサービスディレクトリにある認定済みのクラウドサービスプロバイダーを一覧表示しています。これにより、公的機関の組織がこれらのサービスを比較し、調達することができます。
+市民オンラインで行政機関サービスを利用できるようにすることは、デジタルインドプログラムの重要な部分です。これにより、「インドをデジタル化された社会および知識経済に変換する」ということを目的としています。 MeitY は、行政機関のクラウドサービスディレクトリにある認定済みのクラウドサービスプロバイダーを一覧表示しています。これにより、公的機関の組織がこれらのサービスを比較し、調達することができます。
 
 ## <a name="resources"></a>リソース
 
 - [エレクトロニクスおよび情報技術の官庁](https://meity.gov.in/)
 - [MeghRaj Cloud イニシアチブ](https://meity.gov.in/content/gi-cloud-meghraj)
 - [認定クラウドサービスプロバイダー](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/E/8/B/E8B5BC95-2B66-4759-8BBE-31D2F641B3FD/MeitY-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

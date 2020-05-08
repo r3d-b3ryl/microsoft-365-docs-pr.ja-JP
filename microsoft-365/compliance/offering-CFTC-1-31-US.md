@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 448dbcf250a34d7c7d7acb2d3f3acc4c8de4d14b
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602644"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065852"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品計画取引委員会 (CFTC) ルール 1.31 (c-d) 米国
 
@@ -27,7 +27,7 @@ ms.locfileid: "41602644"
 
 独立した米国連邦政府機関である[商品計画取引委員会](https://www.cftc.gov/)(cftc) は、商品計画とオプションマーケット、および最近のスワップ市場を規制します。  
   
-長期的な CFTC ルール1.31 は、SEC Rule 17a-4 (f) によって確立されたレコード保持要件を定義します。 さらに、電子記録を5年間保持する必要があり、最初の2年間に元の情報を「すぐにアクセス可能」にしておき、コミッションまたは米国防省の中での調査で利用できるようにすることを指定しています。保持期間。  
+長期的な CFTC ルール1.31 は、SEC Rule 17a-4 (f) によって確立されたレコード保持要件を定義します。 さらに、電子記録を5年間保持する必要があり、最初の2年間に元の情報を「すぐにアクセス可能」にして、保有期間全体においてコミッションまたは米国防省の調査で利用できるようにすることを指定しています。  
   
 2017では、 [Cftc がルールを改訂](https://www.cftc.gov/sites/default/files/idc/groups/public/@lrfederalregister/documents/file/2017-11014a.pdf)し、修正とモダン化を管理しています。これにより、規範のない原則に基づく標準が採用され、レコードをより柔軟に管理することができます。 これにより、ルールがより適切に機能するようになり、規制対象エンティティは、"記録管理プロセスの信頼性を確保する" 保護を維持しながら、ビジネスに最も適したテクノロジを選択することができます。 変更されたルールは、組織が2年間、元のレコードを保持するという要件を削除しますが、5年間の保守期間を保持します。これは、CFTC と SEC の両方によって規制される企業の harmonizes プラクティスです。
 
@@ -71,7 +71,3 @@ Office 365 のアーカイブは、電子メール、ボイスメール、共有
 - [Microsoft Office 365 のアイテム保持ポリシー](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融サービスのブログ](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/9/A/9/9A9847FE-164A-4321-8112-50719D9EA877/CFTC1.31-Compliance.pdf) ファイルをダウンロードできます。

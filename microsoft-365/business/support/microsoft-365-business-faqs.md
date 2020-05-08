@@ -12,12 +12,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: 2ace43e0a3bab466d102740434b2a126fb8e099d
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: 68e085313b0344f9e48ddfa9124c1d2d7297ae45
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900692"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065837"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 Business Premium に関するよく寄せられる質問
 
@@ -130,7 +130,7 @@ Microsoft 365 Business Premium のすべての機能を利用する場合は、�
 ## <a name="deployment"></a>展開
 
 ### <a name="what-should-customers-consider-when-planning-a-microsoft-365-business-premium-deployment"></a>Microsoft 365 Business Premium の展開を計画する際に何を検討する必要がありますか。 
-Microsoft 365 Business Premium の展開を成功させる一番の近道は、Microsoft パートナーと連携することです。 パートナーは幅広いトレーニングを受け、さまざまな顧客のシナリオに対応した経験があり、お客様の環境とニーズを把握するのに最適な知識を持っています。 お客様の組織に経験が豊富な IT 担当者がいる場合は、「<a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 Business Premium を使い始める</a>」を使用して Microsoft 365 Business Premium の展開を支援できます。 
+Microsoft 365 Business Premium の展開を成功させる一番の近道は、Microsoft パートナーと連携することです。 パートナーは幅広いトレーニングを受け、さまざまな顧客のシナリオに対応した経験があり、お客様の環境とニーズを把握するのに最適な知識を持っています。 お客様の組織に経験が豊富な IT 担当者がいる場合は、「<a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Microsoft 365 Business Premium を使い始める</a>」を使用して Microsoft 365 Business Premium の展開を支援できます。 
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 Business Premium には、Microsoft Intune のすべての機能が含まれていますか。 
 はい。Microsoft 365 Business Premium のサブスクライバーは、iOS、Android、MacOS、およびその他のクロス プラットフォームのデバイス管理にIntune の全機能を使用するためのライセンスを持っています。 サードパーティ製のアプリの管理や WiFi プロファイルの構成、VPN 証明書など、Microsoft 365 Business Premium で簡易管理コンソールでは利用できない機能は、完全なIntune コンソールで管理できます。 

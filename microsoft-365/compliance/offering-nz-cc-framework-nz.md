@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3142ce35cdc55e32cf5f40042967ba60de789dcc
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: cbf118d918dd5c3bc922fbea157fb56a709fad66
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601884"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44065802"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>ニュージーランド政府機関向けクラウドコンピューティングのセキュリティとプライバシーに関する考慮事項
 
@@ -33,9 +33,7 @@ ms.locfileid: "41601884"
 
 Microsoft およびニュージーランド政府機関向けのクラウドコンピューティングのセキュリティとプライバシーに関する考慮事項
 
-エージェンシーが Microsoft enterprise cloud services の分析と評価を行うのに役立つように、Microsoft ニュージーランドでは、エンタープライズクラウドサービスが「クラウドコンピューティング ISPC」で設定した質問をどのように解決するかを示す一連のドキュメントが作成されています。Microsoft cloud services が認定されている基準にそれらをリンクします。 これらの認定資格は、Microsoft がクラウドサービスを設計、構築、運用することによって、プライバシーおよびセキュリティリスクを効果的に軽減し、データ主権の懸念事項を解決できるようにすることを中心としています。
-
-Microsoft Cloud での NZ CC フレームワークの利点について説明します。 [NZ cc framework backgrounder をダウンロードし](https://aka.ms/nzcc-framework-backgrounder)てください。
+エージェンシーが Microsoft enterprise cloud services の分析と評価を行うのに役立つように、microsoft ニュージーランドでは、microsoft cloud services が認定されている標準にリンクすることによって、"クラウドコンピューティング ISPC" で設定された問題について、企業クラウドサービスがどのように対応するかを示す一連のドキュメントを作成しています。 これらの認定資格は、Microsoft がクラウドサービスを設計、構築、運用することによって、プライバシーおよびセキュリティリスクを効果的に軽減し、データ主権の懸念事項を解決できるようにすることを中心としています。
 
 Azure セキュリティおよびコンプライアンスブループリントを使用して、NZ による [CC] フレームワークの展開を促進する方法について説明します。 [azure からの応答を nz にダウンロード](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)します。
 
@@ -65,18 +63,14 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - [NZ 政府 ICT 戦略2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [クラウドコンピューティングのための NZ 政府の要件](https://aka.ms/NZ-Cloud-Requirements)
 - [クラウドコンピューティング: 情報のセキュリティとプライバシーに関する考慮事項 (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
-- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft  オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail 統合と参照アーキテクチャ](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf)(クラウドサービス導入に関する Microsoft NZ の追加ガイダンス)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>「クラウドコンピューティング IPSC」への Microsoft の応答
+## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>' クラウドコンピューティング IPSC ' への Microsoft の応答
 
 - [Azure](https://aka.ms/Azure-NZ-response)
 - [Dynamics 365](https://aka.ms/d365-nz-response)
 - [Intune](https://aka.ms/Intune-NZ-response)
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

@@ -1,5 +1,7 @@
 ---
-title: 課金プロファイルを管理する
+title: 課金プロフィールを管理する
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -16,14 +18,22 @@ search.appverid:
 - MET150
 description: 請求プロファイルが請求書をサポートする方法について説明します。
 keywords: 課金プロファイル、請求書、料金、管理された費用
-ms.openlocfilehash: 3dbdbb57b46b915891640483bde56ebc8ad1cff6
-ms.sourcegitcommit: 95a07b328166f637a481c8b5c53669eaf8ff0db8
+ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "39837391"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44140892"
 ---
-# <a name="manage-billing-profiles"></a>課金プロファイルを管理する
+# <a name="manage-billing-profiles"></a>課金プロフィールを管理する
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
+
 Microsoft の製品やサービスを購入している商用のお客様の場合、課金プロファイルを使用して、請求書に含めるアイテムをカスタマイズしたり、請求書に支払いを行ったりすることができます。
 
 請求プロファイルには、次の情報が含まれます。
@@ -51,7 +61,7 @@ Microsoft の製品やサービスを購入している商用のお客様の場�
 
 ## <a name="view-billing-profiles"></a>課金プロファイルを表示する
 
-1. 管理センターで、[**課金請求書** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">請求と支払い</a>] ページの順に移動します。
 
 2. [**課金プロファイル**] を選択し、リストから請求プロファイルを選択します。
 

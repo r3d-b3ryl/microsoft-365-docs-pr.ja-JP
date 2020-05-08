@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: ドメインを確認し、電子メール、Skype for Business Online、および Register365 のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 29aaa225a291880f0fb6b5cd039903d74e3f32a2
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 056d4dbf923c49b0586ed556f1844cd3b29abe75
+ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43938854"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44048893"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Microsoft の Register365 で DNS レコードを作成する
 
@@ -82,7 +82,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
    
     ![[DNS ゾーンの追加/変更] ページで値を入力する](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -130,11 +130,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**ホスト名**|**Priority**|**結果**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)     |
+    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![[DNS ゾーンの追加/変更] ページで値を入力する](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -144,7 +144,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Deleting records in the Mail exchange records section](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -181,7 +181,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[DNS ゾーンの追加/変更] ページで値を入力する](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     ![[保存] を選択します。](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
@@ -215,7 +215,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[DNS ゾーンの追加/変更] ページで値を入力する](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     (You may have to scroll down.)
     
@@ -245,7 +245,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[サービスレコード] セクションに値を入力する](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     (You may have to scroll down.)
     

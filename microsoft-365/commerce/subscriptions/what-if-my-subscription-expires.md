@@ -22,14 +22,14 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Microsoft 365 for business サブスクリプションの有効期限が切れたとき、または無効にされたとき、またはキャンセルしたときに、データがどうなるかについて説明します。
-ms.openlocfilehash: cd90b0b5825b2888b1194998c25a2ce9c7c28718
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707609"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165125"
 ---
-# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business サブスクリプションが終了したときに、データとアクセスはどうなりますか?
+# <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
 サブスクリプションの有効期限が切れた場合、または解約を決定した場合は、Microsoft 365 サービス、アプリケーション、および顧客データへのアクセスは、サブスクリプションが完全に無効になる前に、または*停止*される前に、複数の状態を通過します。 このような状況を認識している場合は、サブスクリプションを以前の状態に戻すことができます。または、Microsoft 365 を使用している場合は、最終的にデータが削除される前に、データをバックアップします。
   
@@ -50,7 +50,7 @@ ms.locfileid: "43707609"
 *ほとんどの国と地域で、ほとんどのオファーについて。
   
 > [!NOTE]
-> **"顧客データ" とは何ですか?** [Microsoft Online Service](https://go.microsoft.com/fwlink/p/?LinkId=613649)の使用条件で定義されている顧客データとは、お客様が microsoft 365 サービスを使用して、microsoft によって提供された、またはお客様の代わりに提供されるすべてのテキスト、サウンド、画像ファイルを含むすべてのデータを指します。 顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662)」を参照してください。
+> **"顧客データ" とは何ですか?** [Microsoft Online Service](https://go.microsoft.com/fwlink/p/?LinkId=613649)の使用条件で定義されている顧客データとは、お客様が microsoft 365 サービスを使用して、microsoft によって提供された、またはお客様の代わりに提供されるすべてのテキスト、サウンド、画像ファイルを含むすべてのデータを指します。 顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)」を参照してください。
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>サブスクリプションの有効期限切れが近い場合
 

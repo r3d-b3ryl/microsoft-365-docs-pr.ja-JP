@@ -23,15 +23,21 @@ search.appverid:
 - BEA160
 - GEA150
 description: 新しいサブスクリプションにアップグレードする方法について説明します。
-monikerRange: o365-worldwide
-ms.openlocfilehash: 7739da2d56fa0d37dd64b22b2959ad6dca198e75
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046218"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141068"
 ---
-# <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする 
+# <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+
+::: moniker-end
 
 ビジネスが変更された場合や、より多くの機能が必要な場合は、プランをアップグレードできます。 これを行う最も簡単な方法は、管理センターの [**アップグレード**] タブを使用する方法です。 ただし、[**アップグレード**] タブの使用は、すべての状況でサポートされているわけではありません。 場合によっては、プランを手動で変更できる場合があります。
 
