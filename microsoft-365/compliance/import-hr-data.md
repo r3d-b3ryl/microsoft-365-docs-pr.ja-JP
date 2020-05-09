@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織の人事 (HR) システムから Microsoft 365 に従業員データをインポートするためのデータコネクタをセットアップすることができます。 これにより、社内リスク管理ポリシーの人事データを使用して、組織に内部の脅威をもたらす可能性がある特定のユーザーによるアクティビティを検出することができます。
-ms.openlocfilehash: 0850e3fbbccb7653ddb9c56c07deaad9ed13f84a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943366"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173487"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>コネクタをセットアップして人事データをインポートする
 
 Microsoft 365 コンプライアンスセンターでデータコネクタをセットアップして、従業員が resignation を提出した日付、従業員の最終日の日付などの人事データをインポートすることができます。 この人事データは、新しい[insider リスク管理ソリューション](insider-risk-management.md)などの Microsoft 情報保護ソリューションによって使用され、組織内の悪意のあるアクティビティやデータの盗難から組織を保護するのに役立ちます。 HR コネクタの設定では、コネクタによる認証に使用される Azure Active Directory でアプリを作成し、人事データを含む CSV マッピングファイルを作成し、コンプライアンスセンターでデータコネクタを作成して、CSV ファイル内の人事データを Microsoft クラウドに ingests するためのスクリプトを実行します (スケジュールに従って)。 その後、データコネクタは microsoft のコンプライアンスソリューション (insider リスク管理など) を使用して、Microsoft 365 組織にインポートされた人事データにアクセスします。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - 組織は、Office 365 インポートサービスが組織内のデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3で HR コネクタを正常に作成するには、この手順を完了する必要があります。
 
@@ -68,7 +68,7 @@ CSV ファイルの最初の行、つまりヘッダー行には、必要な列�
 |**LastWorkingDate**|退職した従業員の最終作業日を指定します。 [ISO 8601 の日付と時刻](https://www.iso.org/iso-8601-date-and-time-format.html)の形式`yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`は、次の日付形式を使用する必要があります。|
 |||
 
-必要な人事データを使用して CSV ファイルを作成したら、手順4で、スクリプトを実行するローカルコンピューターに保存します。 また、スクリプトを実行するたびに、最新の従業員の終了データが Microsoft クラウドにアップロードされるように、CSV ファイルに常に最新の情報が含まれていることを確認するには、更新戦略を実装する必要があります。
+必要な人事データを使用して CSV ファイルを作成した後、手順4で実行したスクリプトと同じシステムに保存します。 また、スクリプトを実行するたびに、最新の従業員の終了データが Microsoft クラウドにアップロードされるように、CSV ファイルに常に最新の情報が含まれていることを確認するには、更新戦略を実装する必要があります。
 
 ## <a name="step-3-create-the-hr-connector"></a>手順 3: HR コネクタを作成する
 
@@ -136,7 +136,7 @@ HR コネクタを設定する最後の手順は、Microsoft クラウドに、C
    |`appId` |これは、手順1で Azure AD で作成したアプリの AAD アプリケーション Id です。 これは、スクリプトが Microsoft 365 組織にアクセスしようとするときに、Azure AD によって認証に使用されます。 | 
    |`appSecret`|これは、手順1で Azure AD で作成したアプリの AAD アプリケーションシークレットです。 これは認証にも使用されます。|
    |`jobId`|これは、手順3で作成した HR コネクタのジョブ Id です。 これは、HR コネクタを使用して、Microsoft クラウドにアップロードされる人事データを関連付けるために使用されます。|
-   |`csvFilePath`|これは、手順2で作成した CSV ファイルのローカルコンピューター (スクリプトを実行するために使用している) のファイルパスです。 ファイルパスにスペースを含めないでください。それ以外の場合は、単一引用符を使用します。|
+   |`csvFilePath`|これは、手順2で作成した CSV ファイル (スクリプトと同じシステムに格納されている) のファイルパスです。 ファイルパスにスペースを含めないでください。それ以外の場合は、単一引用符を使用します。|
    |||
    
    次の例では、各パラメーターに実際の値を使用して、HR コネクタスクリプトの構文を示します。
@@ -177,7 +177,7 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
 3. [**アクション**] セクションで、[**タスクの作成**] をクリックします。
 
-4. [**全般**] タブで、スケジュールされたタスクのわかりやすい名前を入力します。たとえば、 **HR Connector スクリプト**を使用します。 また、オプションの説明を追加することもできます。 
+4. [**全般**] タブで、スケジュールされたタスクのわかりやすい名前を入力します。たとえば、 **HR Connector スクリプト**を使用します。 また、オプションの説明を追加することもできます。
 
 5. [**セキュリティオプション**] で、次の操作を行います。
 
@@ -191,7 +191,7 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
    
    b. [**詳細設定**] で、[**有効**] チェックボックスがオンになっていることを確認します。
    
-   c. [**OK**] をクリックします。
+   c.  [**OK**] をクリックします。
 
 7. [ **Actions** ] タブを選択し、[**新規**] をクリックして、次の操作を行います。
 
@@ -201,9 +201,9 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
    b. [**プログラム/スクリプト**] ボックスで [**参照**] をクリックし、次の場所に移動して、ボックス`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`にパスが表示されるようにします。
 
-   c. [**引数を追加する (省略可能)** ] ボックスに、手順4で実行したのと同じスクリプトコマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` などです。
+   c.  [**引数を追加する (省略可能)** ] ボックスに、手順4で実行したのと同じスクリプトコマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
 
-   d. [**開始 (省略可能)** ] ボックスに、手順4で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、`C:\Users\contosoadmin\Desktop\Scripts` のようにします。
+   d.  [**開始 (省略可能)** ] ボックスに、手順4で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、`C:\Users\contosoadmin\Desktop\Scripts` などです。
 
    e.  [ **Ok]** をクリックして、新しいアクションの設定を保存します。
 

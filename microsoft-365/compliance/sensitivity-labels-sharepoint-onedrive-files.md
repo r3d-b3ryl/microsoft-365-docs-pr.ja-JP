@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: bdf66e4160e324fa3b83cc58214b16fbacf5c233
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
+ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957287"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170916"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -56,9 +56,9 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にし
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
-いつでも、SharePoint および OneDrive で Office ファイルの機密ラベルを無効にするかどうかを選択できます。
+SharePoint および OneDrive では、Office ファイルの機密ラベルを無効にするかどうかをいつでも選択できます ([オプトアウト)](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) 。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 これらの新機能は、[機密ラベル](sensitivity-labels.md)に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -66,21 +66,13 @@ OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョ
 
 ## <a name="limitations"></a>制限事項
 
-- SharePoint および OneDrive で Office ファイルの機密ラベルを有効にした場合、OneDrive Sync フォルダー内のファイルのラベルを変更したユーザーが、ファイルに加えた変更を保存できないことがあります。 このシナリオは、暗号化のラベルが付けられたファイルに適用されます。また、暗号化を適用したラベルに暗号化が適用されなかったラベルからラベルが変更された場合にも適用されます。 [白い十字アイコンのエラー](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)が表示された赤い円が表示され、新しい変更内容を別のコピーとして保存するように求められます。  
-    
-    ユーザーによって開始されたラベルの変更に加えて、管理者が、既にユーザーの同期クライアントにダウンロードしたファイルに適用されている発行済みラベルの設定を変更した場合にも、同じ現象が発生することがあります。
-    
-    これらのシナリオの作業を失わないようにするには、次のいずれかの操作を行います。
-    - ラベルを適用するには、Office アプリの web 版を使用します。
-    - ラベルを適用した後、ファイルを閉じてから、他の変更を行うためにファイルを開きます。
-
 - SharePoint では、Azure Information Protection ラベルを使用して既に暗号化されている既存のファイルに機密ラベルが自動的に適用されることはありません。 代わりに、SharePoint および OneDrive で Office ファイルの機密ラベルを有効にした後に機能を使用できるようにするには、次のタスクを完了します。
     
-    1. Azure Information Protection ラベルを機密ラベルに移行し、Microsoft 365 コンプライアンスセンター (または同等のラベル付き管理センター) から公開していることを確認してください。
+    1. [Azure Information Protection ラベル](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)を機密ラベルに移行し、Microsoft 365 コンプライアンスセンター (または同等のラベル付き管理センター) から[公開](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)していることを確認してください。
     
     2. ファイルをダウンロードしてから、それらを SharePoint にアップロードします。
 
-- 暗号化を適用したラベルが暗号化に使用する次のいずれかの構成を持っている場合、SharePoint は暗号化されたファイルを処理できません。
+- 暗号化を適用したラベルが[暗号化に使用](encryption-sensitivity-labels.md#configure-encryption-settings)する次のいずれかの構成を持っている場合、SharePoint は暗号化されたファイルを処理できません。
     - ユーザーがラベルと Word、PowerPoint、Excel のチェックボックスを**適用するときにアクセス許可を割り当てること**ができるようにし **、[アクセス許可を指定するようユーザーに要求する]** を選択します。 この設定は、"ユーザー定義の権限" と呼ばれることがあります。
     - **コンテンツへのユーザーアクセスの有効期限**が、 **Never**以外の値に設定されています。
     
@@ -91,6 +83,8 @@ OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョ
 - Azure Information Protection ドキュメント追跡サイトはサポートされていません。
 
 - Office デスクトップアプリとモバイルアプリは、暗号化によってラベルが付けられたファイルの共同編集をサポートしていません。 これらのアプリは、ラベル付きで暗号化されたファイルを排他編集モードで引き続き開きます。
+
+- ユーザーの同期クライアントにダウンロードしたファイルに既に適用されている発行済みのラベルの設定が管理者によって変更された場合、ユーザーが OneDrive Sync フォルダーのファイルに加えた変更を保存できないことがあります。 このシナリオは、暗号化のラベルが付けられたファイルに適用されます。また、暗号化を適用したラベルに暗号化が適用されなかったラベルからラベルが変更された場合にも適用されます。 [白い十字アイコンのエラー](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)が表示された赤い円が表示され、新しい変更内容を別のコピーとして保存するように求められます。 代わりに、ファイルを閉じて開き直すことができます。また、web 上の Office を使用することもできます。
 
 - ラベル付きのドキュメントが SharePoint にアップロードされ、そのラベルがサービスプリンシパル名のアカウントを使用して暗号化されている場合、そのドキュメントを web 上の Office で開くことはできません。 シナリオの例としては、Microsoft Cloud App Security と、電子メールで Teams に送信されるファイルがあります。
 

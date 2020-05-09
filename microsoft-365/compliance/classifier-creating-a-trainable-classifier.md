@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組み込みの分類子のいずれかがニーズに合わない場合は、trainable 分類子を使用します。 Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 このトピックでは、カスタム分類子を作成する方法について説明します。
-ms.openlocfilehash: 31fb4374290bcf92a5c68bc4e7531e9472622b0b
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.openlocfilehash: 6358f333b274c4a1ce618d87598e7ea5340b77c9
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266896"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173509"
 ---
 # <a name="creating-a-trainable-classifier-preview"></a>Trainable 分類子を作成する (プレビュー)
 
@@ -118,7 +118,7 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 
 21. 分類子を発行します。
 
-22. 発行された分類子は、条件および[通信のコンプライアンス](communication-compliance.md)に基づいて、[自動適用の保持ラベルポリシー](labels.md#applying-a-retention-label-automatically-based-on-conditions)の条件として使用できます。
+22. 公開されると、分類子は、条件および[通信のコンプライアンス](communication-compliance.md)に基づいて、autolabeling の条件として、[機密ラベルを使用](apply-sensitivity-label-automatically.md)して、[自動適用の保持ラベルポリシー](labels.md#applying-a-retention-label-automatically-based-on-conditions)を使用できるようになります。
 
 > [!CAUTION]
 > 分類子が公開されると、追加のトレーニングを受けることはできません。そのため、できるだけ多くのアイテムをテストして確認し、その精度が可能な限り高くなることを確認してください。
