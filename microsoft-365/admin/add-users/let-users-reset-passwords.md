@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービスのパスワードリセットツールを使用してパスワードをリセットする方法について説明します。
-ms.openlocfilehash: 9d9a1f97f9f6fc59b54f2f9bdce9c337c7d57b13
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919437"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173532"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
@@ -53,7 +53,7 @@ ms.locfileid: "43919437"
 次の手順を行うと、社内のすべてのユーザーに対してセルフサービスによるパスワードのリセットがオンになります。
   
 ::: moniker range="o365-worldwide"
-1.  管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページの順に移動します。
+1. 管理センターで、[**設定** \>の<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">設定</a>] ページに移動します。
 
 ::: moniker-end
 
@@ -70,13 +70,13 @@ ms.locfileid: "43919437"
 ::: moniker-end
 
    
-2. [**セルフサービスのパスワードのリセット**] を選択し、[ **Azure portal に移動**] のリンクを選択して、セルフサービスのパスワードのリセットを有効にします。 無料で Azure を取得できます。
+2. [設定] ページの上部で、[**セキュリティ & プライバシー**] を選択します。
   
-3. 左側のナビゲーションで [**ユーザー** ] を選択し、[**パスワードのリセット**] を選択します。
+3. [**セルフサービスのパスワードのリセット**] を選択します。
   
 4. [プロパティ] ページで、[**すべて**] を選択して、会社のすべてのユーザーに対して有効にし、[**保存**] を選択します。
   
-5. Office 365 にサインインするユーザーは、将来自分のパスワードを再設定する場合に役立つ追加の連絡先情報を入力するように求められます。
+5. ユーザーがサインインすると、今後、パスワードを再設定するのに役立つ追加の連絡先情報を入力するように求めるメッセージが表示されます。
 
 ## <a name="related-articles"></a>関連記事
 

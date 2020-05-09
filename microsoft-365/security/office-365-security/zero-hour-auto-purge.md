@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Exchange Online に既に配信されているスパム、マルウェア、またはフィッシングメッセージを検出する、Microsoft 365 の電子メール保護機能であるゼロ時間の自動削除 (ZAP) について説明します。
-ms.openlocfilehash: a6f21147e7beaadb3aa6430b299dea8b248561c1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034928"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173300"
 ---
 # <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>ゼロ時間自動削除 (ZAP)-Microsoft 365 でのスパムおよびマルウェアからの保護
 
@@ -42,7 +42,7 @@ Microsoft 365 は、毎日リアルタイムでスパムおよびマルウェア
 
 ZAP アクションはユーザーにとってシームレスです。メッセージが検出され、移動された場合は通知されません。
 
-[信頼できる差出人のリスト](create-safe-sender-lists-in-office-365.md)、メールフロールール (トランスポートルールとも呼ばれる)、受信トレイルール、または追加フィルターは、ZAP より優先されます。
+[信頼できる差出人のリスト](create-safe-sender-lists-in-office-365.md)、メールフロールール (トランスポートルールとも呼ばれる)、受信トレイルール、または追加フィルターは、ZAP より優先されます。 メールフローの場合と同様に、配信されたメッセージが ZAP する必要があると判断された場合でも、安全な送信者の構成が原因でメッセージが処理されないことを意味します。 これは、フィルター処理をバイパスするようにメッセージを構成するためのもう1つの理由です。
 
 ### <a name="malware-zap"></a>マルウェアの ZAP
 
@@ -88,28 +88,28 @@ ZAP がメッセージを移動したかどうかを確認するには、[脅威
 
 ## <a name="zap-faq"></a>ZAP FAQ
 
-### <a name="q-what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>Q: 正当なメッセージが迷惑メールフォルダーに移動された場合はどうなりますか。
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-email-folder"></a>正当なメッセージが迷惑メールフォルダーに移動された場合はどうなりますか。
 
-A: 誤[検知](report-junk-email-messages-to-microsoft.md)に対して通常のレポートプロセスに従う必要があります。 メッセージが [受信トレイ] から [迷惑メール] フォルダーに移動されるのは、サービスがスパムまたは悪意のあるメッセージであると判断した場合のみです。
+誤[検知](report-junk-email-messages-to-microsoft.md)には通常のレポートプロセスに従う必要があります。 メッセージが [受信トレイ] から [迷惑メール] フォルダーに移動されるのは、サービスがスパムまたは悪意のあるメッセージであると判断した場合のみです。
 
-### <a name="q-what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>Q: 迷惑メールフォルダーではなく、検疫フォルダーを使用している場合はどうすればよいですか。
+### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>迷惑メールフォルダーではなく、検疫フォルダーを使用している場合はどうなりますか?
 
-A: ZAP は、このトピックで前述したように、スパム対策ポリシーの構成に基づいてメッセージに対してアクションを実行します。
+ZAP は、このトピックの前半で説明したように、スパム対策ポリシーの構成に基づいてメッセージに対してアクションを実行します。
 
-### <a name="q-what-if-im-using-mail-flow-rules-or-allowedblocked-sender-lists"></a>Q: メールフロールールまたは許可/ブロックされた送信者の一覧を使用している場合はどうすればよいですか。
+### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>差出人セーフリスト、メールフロールール、許可/ブロックされる送信者リストを使用している場合は、どうすればよいですか?
 
-A: メールフロールールまたは [組織設定の禁止] と [許可] が優先されます。 これらのメッセージは ZAP から除外されます。
+信頼できる差出人、メールフロールール、またはブロックと許可の組織設定が優先されます。 これらのメッセージは、サービスが設定した内容を実行しているため、ZAP から除外されます。 これは、フィルター処理をバイパスするようにメッセージを構成するためのもう1つの理由です。
 
-### <a name="q-what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Q: メッセージが別のフォルダー (たとえば、受信トレイルールなど) に移動した場合はどうなりますか?
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>メッセージが別のフォルダー (たとえば、受信トレイルールなど) に移動した場合はどうなりますか。
 
-A: 問題なく、メッセージが削除されていない場合、または同じまたはより強力なアクションがまだ適用されていない場合に限り、このまま動作します。 たとえば、フィッシングポリシーが [検疫] に設定されており、ユーザーまたは管理者が既に電子メールを junked している場合、検疫はファイルを検疫する処理を実行します。
+ZAP は、メッセージが削除されていない場合、または同じまたはより強力なアクションがまだ適用されていない限り、引き続き機能します。 たとえば、フィッシングポリシーが [検疫] に設定されており、ユーザーまたは管理者が既に電子メールを junked している場合、検疫はファイルを検疫する処理を実行します。
 
-### <a name="q-does-zap-change-the-message-header"></a>Q: メッセージヘッダーは ZAP によって変更されますか?
+### <a name="does-zap-change-the-message-header"></a>メッセージヘッダーを ZAP に変更しますか?
 
-A: ZAP アクションは、メッセージヘッダーに変更を加えません。
+ZAP アクションでは、メッセージヘッダーに対して変更は行われません。
 
-### <a name="q-how-does-zap-affect-mailboxes-on-hold"></a>Q: どのようにして、ZAP がメールボックスを保留にするのですか?
+### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP がメールボックスを保留にする方法
 
-A: ZAP は、保留中のメールボックスからメッセージを検疫しません。 ZAP は、スパム対策ポリシーでスパムまたはフィッシング verdict に対して構成されたアクションに基づいて、メッセージを [迷惑メール] フォルダーに移動できます。
+ZAP は、保留中のメールボックスからのメッセージを検疫しません。 ZAP は、スパム対策ポリシーでスパムまたはフィッシング verdict に対して構成されたアクションに基づいて、メッセージを [迷惑メール] フォルダーに移動できます。
 
 Exchange Online のホールドの詳細については、「[インプレース保持と訴訟ホールド (Exchange online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds))」を参照してください。

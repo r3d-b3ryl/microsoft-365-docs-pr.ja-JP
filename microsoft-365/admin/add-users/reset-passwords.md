@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
-ms.openlocfilehash: 14226927680c70035a01d9390f114cb0bfddbf38
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064811"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173520"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -79,11 +79,11 @@ ms.locfileid: "44064811"
 
 パスワードを忘れた場合に、次の手順を使用します。たとえば、パスワードがブラウザーに保存されているために、Microsoft 365 にサインインできます。 
     
-1. Microsoft 365 で、[**設定** \> ] **Office 365** \> [**個人情報**] を選択します。 
+1. 右上隅の **[My Account** > **Personal Info**] > 名前 (アイコン) を選択します。 
           
-2. [**連絡先の詳細**] と [**連絡用電子メール アドレス**] が正しいことを再確認します。  正しくない場合は、この場で変更します。 
+2. [**連絡先の詳細**] で、連絡用**メール**が正確であること、および携帯電話番号が入力されていることを再確認します。 正しくない場合は、この場で変更します。 
         
-3. Office 365 からサインアウトします: 右上隅にある自分の名前 (上の画像では **Diane** と表示されています) \> [**サインアウト**] の順に選択します。 
+3. [サインアウト]: 右上隅にある自分の名前を選択します (上記の画像では、 **Diane**として表示\> **されます)。** 
         
 4. もう一度サインインします: ユーザー名を入力し \> [**次へ**] \> [**パスワードを忘れた場合**] の順に選択します。 
     
@@ -92,6 +92,8 @@ ms.locfileid: "44064811"
 パスワードを忘れ、サインインできない場合: 
     
 - 社内の別のグローバル管理者にパスワードのリセットを依頼します。
+
+- 携帯電話番号などの別の連絡先情報を提供していることを確認してください。 
     
 - または、[Microsoft サポートにお電話ください](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。 
     

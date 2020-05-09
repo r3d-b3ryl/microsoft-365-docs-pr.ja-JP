@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 受信メッセージでスパムフィルターをスキップできるようにするために、管理者が Microsoft 365 と EOP で信頼できる差出人のリストを作成する方法について説明します。
-ms.openlocfilehash: e09d607f6b5203bdc3ab23ad5bd6e8f85782605a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 300ecf8cfdb7436b8eda306a28c237ed8bf19760
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036345"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173418"
 ---
 # <a name="create-safe-sender-lists"></a>信頼できる差出人リストの作成
 
@@ -73,7 +73,7 @@ Exchange Online およびスタンドアロン EOP のメールフロールー�
 
 4. **アクション**: ルール内の次の両方のアクションを構成します。
 
-   a.  \> **[メッセージのプロパティを変更する**] \> **スパム信頼レベル (SCL) を設定**し、**スパムフィルターをバイパス**します。
+   a. \> **[メッセージのプロパティを変更する**] \> **スパム信頼レベル (SCL) を設定**し、**スパムフィルターをバイパス**します。
 
    b. **メッセージヘッダー** \>には、**次のいずれかの単語** \> **ヘッダー名**が含まれます。 \<customヘッドレス ername\> **ヘッダー値**: \<customheadername\>。
 
@@ -85,7 +85,7 @@ Exchange Online およびスタンドアロン EOP のメールフロールー�
 
 ## <a name="use-outlook-safe-senders"></a>Outlook の差出人セーフリストを使用する
 
-ユーザーまたは管理者は、組織の設定の代わりに、送信者の電子メールアドレスをメールボックス内の差出人セーフリストに追加することができます。 手順については、「 [Office 365 の Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+ユーザーまたは管理者は、組織の設定の代わりに、送信者の電子メールアドレスをメールボックス内の差出人セーフリストに追加することができます。 手順については、「 [Office 365 の Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。 これは、送信者がフィルター処理スタックの一部をバイパスするため、ほとんどの状況では望ましくありません。 送信者を信頼していても、送信者は危険にさらされ、悪意のあるコンテンツの送信が終了する可能性があります。 フィルターを使用してすべてのメッセージをチェックし、フィルターに誤りがある場合は[、誤検知を Microsoft に報告](report-junk-email-messages-to-microsoft.md)することをお勧めします。 これにより、メッセージに対して行われる処理についても、 [Zap](zero-hour-auto-purge.md)が妨げられます。
 
 ユーザーの信頼できる差出人のリストによってスパムフィルター処理をスキップするメッセージの場合、**スパム対策**ヘッダーフィールドには、スパム、 `SFV:SFE`スプーフィング、フィッシングフィルターがバイパスされたことを示す値が含まれます。
 

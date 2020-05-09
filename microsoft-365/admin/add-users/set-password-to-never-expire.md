@@ -21,20 +21,21 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Windows PowerShell を使用して、一部のユーザーパスワードを期限切れにしないように設定する方法について説明します。
-ms.openlocfilehash: 66c4901d171f5ed2e07d7a9f5cccbf141dc3d04d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43624036"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173498"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
-1. 管理センターで、[**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページの順に移動します。
-2. [**パスワードポリシー** ] の横にある [**編集**] を選択します。 
-3. パスワードが期限切れにならないように設定されている場合は、[**オフ**] に切り替えます。 パスワードが期限切れになるまでの日数を指定するオプションが表示されます。
+1. 管理センターで、[**設定** \>の<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">設定</a>] ページに移動します。
+2. [設定] ページの上部で、[**セキュリティ & プライバシー**] を選択します。
+3. [**パスワードの有効期限ポリシー**] を選択します。 
+4. パスワードが期限切れにならないように設定されている場合は、[**ユーザーのパスワードの有効期限を何日後に設定**する] の横にあるチェックボックスをオンにします。 パスワードが期限切れになるまでの日数を指定するオプションが表示されます。
 
 ## <a name="set-the-password-expiration-policy-for-individual-users"></a>個々のユーザーのパスワードの有効期限ポリシーを設定する
 

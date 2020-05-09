@@ -1,5 +1,5 @@
 ---
-title: Microsoft セキュリティスコア (プレビュー)
+title: Microsoft セキュリティスコアの新規作成
 description: Microsoft 365 セキュリティセンターの Microsoft セキュリティスコア、詳細の計算方法、およびセキュリティ管理者がどのようなものを使用できるかについて説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善のための処置
 ms.prod: w10
@@ -17,17 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0a721311706faccbd7563520183c7f198298dddc
+ms.openlocfilehash: 965b4cf872129dc7bc9b439c1c15025acceb44c6
 ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173464"
+ms.locfileid: "44173553"
 ---
-# <a name="microsoft-secure-score-preview"></a>Microsoft セキュリティスコア (プレビュー)
+# <a name="microsoft-secure-score-new"></a>Microsoft セキュリティスコア (新)
 
 >[!IMPORTANT]
->一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>Microsoft のセキュリティで保護されたスコアの新しいイテレーションは、前のイテレーションを今後数か月の間に新しいデザイン要素および新機能に置き換えることです。
+>
+>**指標 & [傾向**] タブが表示されない場合は、以前のイテレーションになっています。 [Microsoft Secure Score (以前のイテレーション) に移動します。](microsoft-secure-score.md)
 
 Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点https://security.microsoft.com/securescoreについては、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
 
@@ -103,8 +105,8 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 [Microsoft セキュア スコアの概要] ページでは、これらのグループ間でポイントがどのように分割され、どのポイントが利用可能であるかを確認できます。 また、[概要] ページでは、合計スコアの全表示ビュー、ベンチマーク比較によるセキュア スコア履歴の傾向、スコアを上げるために優先して実装できる改善のための処置を確認することができます。
 
-![セキュア スコア ホームページ](../../media/secure-score/secure-score-homepage.png)
-*図 1: Microsoft セキュア スコアの概要ページ*
+![セキュリティで保護されたスコアホームページ](../../media/secure-score/secure-score-homepage-new.png)
+
 
 ## <a name="take-action-to-improve-your-score"></a>スコアを上げるための対策
 
@@ -176,32 +178,12 @@ Microsoft Secure Score は、システム構成、ユーザーの行動、およ
 
 Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-### <a name="april-2020"></a>2020 年 4 月
+- Azure Active Directory の改善アクションを追加しました
+- Azure Advanced Threat Protection の向上アクションを追加しました
+- Microsoft Defender ATP の[脅威 & 脆弱性管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)のセキュリティに関する推奨事項のサポート
+    - リリースされた TVM で提供されるすべてのセキュリティの推奨事項を使用できるようになりました。
 
-#### <a name="added-azure-active-directory-improvement-action"></a>Azure Active Directory の改善アクションを追加しました
-
-- ユーザーが管理されていないアプリケーションに同意を付与できないようにする (現時点でリリースされているバージョンで利用可能)
-
-#### <a name="added-azure-advanced-threat-protection-improvement-actions"></a>Azure Advanced Threat Protection の向上アクションを追加しました
-
-- ドメインコントローラーで印刷スプーラーサービスを無効にする
-- セキュリティで保護されていない Kerberos 委任を変更して偽装を防止する
-- Microsoft LAPS を使用してローカル管理者パスワードを保護および管理する
-- 機密性の高いエンティティに対して、重要な移動パスリスクを軽減する
-- 機密グループからの休止アカウントの削除
-- セキュリティ保護のない SID 履歴属性をエンティティから削除する
-- 安全でないアカウントの属性を解決する
-- クリアテキストの資格情報の公開を停止する
-- 従来のプロトコル通信を停止する
-- 暗号使用率の低い停止
-
-#### <a name="support-for-microsoft-defender-atp-threat--vulnerability-management-tvm-security-recommendations"></a>Microsoft Defender ATP & 脆弱性管理 (TVM) のセキュリティに関する推奨事項のサポート
-
-リリースされた TVM で提供されるすべてのセキュリティの推奨事項を使用できるようになりました。
-
-### <a name="january---march-2020"></a>2020年1月
-
-#### <a name="updated-interface-and-functionality"></a>更新されたインターフェイスと機能
+### <a name="updated-interface-and-functionality"></a>更新されたインターフェイスと機能
 
 * CISO およびリード レベルのディスカッションのすべての新しい指標と傾向の表示
 * スコアを追跡して評価するための新しい方法
@@ -209,16 +191,6 @@ Microsoft のセキュリティの評価をより良いものにするには、�
 * 改善のための処置のフィルタリング、タグ付け、検索、グループ化
 * スコア予測と計画されているアクションを使用して、将来の目標に向けて管理する
 * その他多数。
-
-#### <a name="removed-not-scored-and-review-improvement-actions"></a>[スコアを表示しない] および [レビュー] の強化アクションを削除しました
-
-セキュア スコアの原則の 1 つは、スコアが標準化され、関連付けが容易でなければならないということです。 測定できない、または実用的ではない改善のための処置は、混乱を引き起こしてきました。 1 つの Microsoft セキュア スコアが意味を成すのは、すべての推奨事項が明確にスコア化できる場合のみです。 スコアの改善アクションは測定できません。また、改善アクションのレビューは、他の改善アクションと同じ基準ではありません。
-
-このような理由により、スコアリングされていない、またはレビューのリズムを必要としたすべての改善アクションが一時的に削除されています。 お客様は、何もする必要はありません。
-
-#### <a name="simplification-of-the-point-system"></a>ポイントシステムの簡略化
-
-複数のエクスペリエンスにわたるポイントを標準化するために、各セキュリティで保護されたスコア向上のアクションポイント合計が10ポイント以下に更新されました。 現在、または将来的に追加する予定のセキュリティ制御の幅広い breather で、より一貫したものにする必要があります。 これは非常に大きな変更になっていますが、総ポイント合計が表示されますが、セキュリティに関する姿勢に変化はありません。
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、組織内の特定のユーザー、グループ、またはドメインに適用する送信スパムポリシーを構成する方法について説明します。
-ms.openlocfilehash: 644ffb51c92f4d71d3ae2cde1eba408289573f48
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036790"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173442"
 ---
 # <a name="configure-outbound-spam-filtering"></a>送信スパム フィルターの構成
 
@@ -53,7 +53,7 @@ EOP の送信スパムポリシーの基本的な要素は次のとおりです�
 
 - 送信スパムポリシーをセキュリティ & コンプライアンスセンターから削除すると、送信スパムフィルタールールとそれに関連付けられた送信スパムフィルターポリシーが削除されます。
 
-Exchange Online PowerShell またはスタンドアロンの Exchange Online Protection の PowerShell では、送信スパムフィルターポリシーと送信スパムフィルタールールの違いが明らかです。 送信スパムフィルターポリシーを管理するには、 ** \*-set-hostedcontentfilterpolicy**コマンドレットを使用して、 ** \*-disable-hostedcontentfilterrule**コマンドレットを使用して送信スパムフィルタールールを管理します。
+Exchange Online PowerShell またはスタンドアロンの Exchange Online Protection の PowerShell では、送信スパムフィルターポリシーと送信スパムフィルタールールの違いが明らかです。 送信スパムフィルターポリシーを管理するには、 ** \*-HostedOutboundSpamFilterPolicy**コマンドレットを使用して、 ** \*-HostedOutboundSpamFilterRule**コマンドレットを使用して送信スパムフィルタールールを管理します。
 
 - PowerShell では、送信スパムフィルターポリシーを最初に作成してから、ルールが適用されるポリシーを識別する送信スパムフィルタールールを作成します。
 
@@ -103,11 +103,11 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
    - **疑わしい送信電子メールメッセージのコピーを特定のユーザーに送信**する: この設定を行うと、指定されたユーザーが Bcc 受信者として疑わしい送信メッセージに追加されます。 この設定を有効にするには:
 
-     a.  チェックボックスをオンにして、設定を有効にします。
+     a. チェックボックスをオンにして、設定を有効にします。
 
      b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
 
-     c. 送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
+     c.  送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
 
      d.  Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
 
@@ -126,11 +126,11 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
      この設定を有効にするには:
 
-     a.  チェックボックスをオンにして、設定を有効にします。
+     a. チェックボックスをオンにして、設定を有効にします。
 
      b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
 
-     c. 送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
+     c.  送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
 
      d.  Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
 

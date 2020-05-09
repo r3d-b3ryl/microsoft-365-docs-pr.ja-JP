@@ -1,6 +1,6 @@
 ---
-title: Microsoft セキュア スコア
-description: Microsoft 365 セキュリティ センターの Microsoft セキュア スコアについて、詳細をどのように計算するか、セキュリティ管理者がどんなことを期待できるかについて説明します。
+title: Microsoft セキュリティスコア (以前のイテレーション)
+description: Microsoft 365 セキュリティセンターの Microsoft セキュリティスコア、セキュリティを向上させる方法、およびセキュリティ管理者が予想できることについて説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善のための処置
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -17,14 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9f39878ca56aef3ec8c9d89805a87196c19eb5b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
+ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141509"
+ms.lasthandoff: 05/09/2020
+ms.locfileid: "44173394"
 ---
-# <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft セキュリティスコア (以前のイテレーション)
+
+>[!IMPORTANT]
+>Microsoft Secure Score のこのイテレーションは、今後数か月の間に新しいデザイン要素と機能に置き換えられています。 最新のイテレーションがまだ表示されていない場合は、近日中にお待ちください。
+>
+>**指標 & [傾向**] の隣に表示されている場合は、新しいイテレーションになっています。 [Microsoft セキュリティスコアに移動する (新)](microsoft-secure-score-new.md)
 
 Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 Microsoft 365 セキュリティ センターの集中管理されたダッシュボードから、組織の Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視し、操作することができます。
 
