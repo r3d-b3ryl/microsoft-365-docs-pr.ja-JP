@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Office 365 のセキュリティ/コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にします。
-ms.openlocfilehash: 6ff4e0eda616e9bdd5fe10832ae334c9337272f0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631742"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166018"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする
   
@@ -132,7 +132,7 @@ Exchange Online に接続したら、次のセクションのコマンドを実�
   
 - アーカイブ メールボックスが有効になっている場合、ユーザーはメッセージをアーカイブ メールボックスに保存できます。 ユーザーは、Microsoft Outlook と Outlook on the web を使用してアーカイブ メールボックスにアクセスできます。 これらのクライアント アプリケーションのいずれかを使用して、ユーザーは自分のアーカイブ メールボックスでメッセージを表示したり、プライマリ メールボックスとアーカイブ メールボックス間でメッセージを移動またはコピーできます。 また、ユーザーは削除済みアイテム復元ツール使用して、アーカイブ メールボックスの [回復可能なアイテム] フォルダーから削除済みのアイテムを復元できます。
 
-   インプレース アーカイブをサポートしている Outlook のライセンスの一覧については、「[Outlook の Exchange 機能に関するライセンス要件](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)」を参照してください。
+   インプレース アーカイブをサポートしている Outlook のライセンスの一覧については、「[Outlook の Exchange 機能に関するライセンス要件](https://support.microsoft.com/ja-JP/office/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99)」を参照してください。
 
 - インプレース アーカイブは、組織のアイテム保持、電子情報開示、および保留に関する要件を管理者やユーザーが満たすためのサポートをします。 たとえば、組織の Exchange アイテム保持ポリシーを使用して、メールボックスの内容をユーザーのアーカイブ メールボックスに移動することができます。 セキュリティ/コンプライアンス センターでコンテンツ検索ツールを使用してユーザーのメールボックスで特定のコンテンツを検索するすると、ユーザーのアーカイブ メールボックスも検索されます。 また、ユーザーのメールボックスに訴訟ホールドを配置したりアイテム保持ポリシーを適用したりすると、アーカイブ メールボックス内のアイテムも保持されます。
   

@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
 description: 機密データに対する保護機能を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: f044dd672d52db4100fcb4cfec2519a8605c7be8
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: f60c46c3b596c131bb04a49f0293c6dd8bbbea2b
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003243"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44166175"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>機密データに対する保護機能を使用してチームを構成する
 

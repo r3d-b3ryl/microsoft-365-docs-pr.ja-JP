@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Microsoft 365 Business Standard、Microsoft 365 Business Basic、Microsoft 365 Apps for business、または Office 365 Education サブスクリプションをセットアップする方法について説明します。
-ms.openlocfilehash: 812d1a65986f53e53a02d4c1b70c823dffa98786
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053862"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165085"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>一般法人向け Microsoft 365 をセットアップする
 
@@ -285,7 +285,7 @@ Office 365 Germany を使用している場合は、[https://portal.office.de/OL
 
 モバイル デバイスに Office をインストールし、新しい Microsoft メールボックスを使用するための Outlook のセットアップを行います。 チーム全員がそれぞれ次の手順を実行する必要があります。 各ユーザーは、最大 5 台のスマートフォンと 5 台のタブレットに、Office モバイル アプリをインストールできます。
   
-お使いのデバイスの手順が表示されます。[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+お使いのデバイスの手順が表示されます。[Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/ja-JP/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### <a name="4-store-files-online"></a>4. ファイルをオンラインで保存する
 
@@ -313,7 +313,7 @@ Microsoft 365 のツアーを見たり、すべての Office モバイル アプ
 
 - **ヘルプが必要な場合** さらに高度な展開についてヘルプが必要な場合は、まず **[FastTrack](https://www.microsoft.com/ja-JP/fasttrack/microsoft-365/office-365)** にアクセスしてください。展開を支援する [パートナーを見つける](https://go.microsoft.com/fwlink/p/?linkid=391089)こともできます。
 
-- **計画** 次のツールおよびリソースを使用すると、Office 365 を使用するためのネットワーク、ディレクトリ、エンド ユーザーの準備を行うことができます。[組織で Office 365 Enterprise を使用するための準備を行います](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc)。
+- **計画** 次のツールおよびリソースを使用すると、Office 365 を使用するためのネットワーク、ディレクトリ、エンド ユーザーの準備を行うことができます。[組織で Office 365 Enterprise を使用するための準備を行います](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365)。
 
 ### <a name="1-add-your-school-domain-or-connect-your-directory"></a>1. 学校のドメインを追加、またはディレクトリを接続する
 
@@ -339,25 +339,25 @@ Office 365 Germany を使用している場合は、[この管理センター](h
 
 ウィザードを開始するには、[**セットアップに移動**] を選択します。
 
-ウィザードを実行するときのチュートリアルについては、「[一般法人向け Microsoft 365 のセットアップを計画する](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx)」を参照してください。
+ウィザードを実行するときのチュートリアルについては、「[一般法人向け Microsoft 365 のセットアップを計画する](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup)」を参照してください。
   
-オンプレミス ディレクトリからユーザーを同期する必要があるか、シングル サインオンを利用する必要がある場合は、 **セットアップ ウィザードを使用してユーザーを追加しないでください** 。代わりに、このガイドを読んでオプションを理解してください。 [ディレクトリを Office 365 に接続します](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9)。いずれかをセットアップします。
+オンプレミス ディレクトリからユーザーを同期する必要があるか、シングル サインオンを利用する必要がある場合は、 **セットアップ ウィザードを使用してユーザーを追加しないでください** 。代わりに、このガイドを読んでオプションを理解してください。 [ディレクトリを Office 365 に接続します](https://docs.microsoft.com/office365/enterprise/about-office-365-identity)。いずれかをセットアップします。
   
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync): オンプレミス ディレクトリ と同期し、ユーザーをオンプレミスで管理します。また、ユーザーがオンプレミスとクラウドで同じパスワードを使用できるように、パスワードを同期させることもできます。ただし、Office 365 を使用するには、もう一度サインインする必要があります。
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync): オンプレミス ディレクトリ と同期し、ユーザーをオンプレミスで管理します。また、ユーザーがオンプレミスとクラウドで同じパスワードを使用できるように、パスワードを同期させることもできます。ただし、Office 365 を使用するには、もう一度サインインする必要があります。
 
-- [](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated): オンプレミス ディレクトリと同期し、ユーザーをオンプレミスで管理します。ユーザーは、オンプレミスとクラウドで同じパスワードを使用でき、Office 365 を使用するために、もう一度サインインする必要はありません。これは、よくシングル サインオンとも呼ばれます。
+- [](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated): オンプレミス ディレクトリと同期し、ユーザーをオンプレミスで管理します。ユーザーは、オンプレミスとクラウドで同じパスワードを使用でき、Office 365 を使用するために、もう一度サインインする必要はありません。これは、よくシングル サインオンとも呼ばれます。
 
 ### <a name="2-set-up-services"></a>2. サービスをセットアップする
 
-メール、ファイル共有、インスタント メッセージ、他の Office 365 サービスおよびアプリケーションをセットアップします。[Office 365 Enterprise のサービスおよびアプリケーションを構成する](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30)。
+メール、ファイル共有、インスタント メッセージ、他の Office 365 サービスおよびアプリケーションをセットアップします。[Office 365 Enterprise のサービスおよびアプリケーションを構成する](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications)。
   
 この手順で、ユーザー 1 人につき最大 5 台の PC またはノート PC に Office 365 をインストールできます。
   
 ### <a name="3-migrate-data"></a>3. データを移行する
 
-サービスを構成したら、メールやファイルなどのデータの移行を開始することができます。[組織のデータを Office 365 Enterprise に移行する](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46)。
+サービスを構成したら、メールやファイルなどのデータの移行を開始することができます。[組織のデータを Office 365 Enterprise に移行する](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365)。
   
-学生や教職員に Student Information System (SIS) を使う場合は、[SIS 統合のセットアップ](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx)について理解してください。
+学生や教職員に Student Information System (SIS) を使う場合は、[SIS 統合のセットアップ](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync)について理解してください。
   
 ### <a name="train-your-users"></a>ユーザーをトレーニングする
 
