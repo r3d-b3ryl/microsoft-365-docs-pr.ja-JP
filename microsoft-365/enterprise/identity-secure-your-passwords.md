@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体でパスワードを強力かつ管理しやすいものにする必要があります。
-ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5c2567ee2027be2a84121fdad10ba873ec1c43
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637050"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214652"
 ---
 # <a name="step-2-secure-your-passwords"></a>手順 2: パスワードをセキュリティで保護する
 
@@ -31,7 +31,7 @@ ms.locfileid: "43637050"
 
 *この手順はオプションであり、Microsoft 365 のバージョン E3 および E5 の両方に適用されます。*
 
-すべてのユーザーが [Microsoft のパスワードのガイダンス](https://www.microsoft.com/research/publication/password-guidance/)を使用してユーザー アカウントのパスワードを作成する必要があります。
+すべてのユーザーが [Microsoft のパスワードのガイダンス](https://www.microsoft.com/research/publication/password-guidance)を使用してユーザー アカウントのパスワードを作成する必要があります。
 
 ユーザーがパスワードを容易に作成するのを防ぐため、Azure AD のパスワード保護を使用します。この機能では、グローバル禁止パスワード リストと指定したカスタムの禁止パスワード リスト (省略可能) の両方を使用します。 たとえば、次のような組織固有の用語を指定できます。
 
