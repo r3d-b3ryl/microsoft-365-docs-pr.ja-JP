@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Facebook データを Microsoft 365 にインポートするためのコネクタを設定し、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できるようにします。
-ms.openlocfilehash: a1a45b3558e8c5fb77fb1d04a1a38402000bbd1b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035159"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210541"
 ---
-# <a name="set-up-a-connector-to-archive-facebook-data"></a>コネクタをセットアップしてFacebook のデータをアーカイブする
+# <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook データをアーカイブするコネクタを設定する (プレビュー)
 
 Microsoft 365 コンプライアンスセンターのコネクタを使用して、Facebook のビジネスページから Microsoft 365 にデータをインポートし、アーカイブします。 コネクタをセットアップして構成すると、そのコネクタは Facebook のビジネスページに接続し (スケジュールに従って)、Facebook のアイテムのコンテンツを電子メールメッセージの形式に変換し、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
@@ -74,7 +74,7 @@ Microsoft 365 コンプライアンスセンターでコネクタを設定およ
 
 - TenantId: 手順1で Azure Active Directory で Facebook connector アプリを作成した後にコピーした Microsoft 365 組織のテナント ID。
 
-この手順を完了したら、Azure app service の URL (たとえば、) https://fbconnector.azurewebsites.net)を必ずコピーしてください。 手順3、手順4、および手順5を完了するには、この URL を使用する必要があります。
+この手順を完了したら、Azure app service の URL (たとえば、) を必ずコピーしてください https://fbconnector.azurewebsites.net) 。 手順3、手順4、および手順5を完了するには、この URL を使用する必要があります。
 
 ## <a name="step-3-register-the-web-app-on-facebook"></a>手順 3: Facebook で web アプリを登録する
 

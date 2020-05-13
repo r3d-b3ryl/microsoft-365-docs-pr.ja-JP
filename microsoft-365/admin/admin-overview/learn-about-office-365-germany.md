@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,17 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Office 365 ドイツについて説明します。
-ms.openlocfilehash: d992d437e40baaa105ca407d40bb81ff84d9e3f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623908"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208356"
 ---
-> [!NOTE]
-> Office 365 ドイツでは、新しい顧客を受け入れたり、新しいサービスを展開したりすることはなくなりました。 2020年の Microsoft 365 および Office 365 の第1四半期に提供されるドイツの新しいクラウド地域は、ドイツの主要な顧客データ常駐サービスと Microsoft グローバルクラウドネットワークへの完全な接続の両方を提供します。 
->
-
 # <a name="learn-about-office-365-germany"></a>Office 365 Germany の詳細
+
+> [!NOTE]
+> Office 365 ドイツでは、新しい顧客を受け入れたり、新しいサービスを展開したりすることはなくなりました。 2020年の Microsoft 365 および Office 365 の第1四半期に提供されるドイツの新しいクラウド地域は、ドイツの主要な顧客データ常駐サービスと Microsoft グローバルクラウドネットワークへの完全な接続の両方を提供します。
 
 Office 365 ドイツは、ヨーロッパ全域で利用可能な Office 365 サービスの差別化オプションです。 この記事では、ドイツの法律に準拠した、ドイツ語のデータセンターから、デジタル作業のための業界トップの生産性サービスを提供し、ドイツの法律で規定された固有のデータによって管理することによって、ドイツ、欧州連合 (EU)、および欧州自由貿易協会 (EFTA) のニーズを解決しました
   

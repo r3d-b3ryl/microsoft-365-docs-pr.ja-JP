@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
-ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ef6bacbce6f46a17abcceb98e40d20ed3ad5363
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638048"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209201"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
-ここに記載されているテクニカル サポートのリソースは、Microsoft Exchange Online Protection (EOP) で問題が生じた場合の解決策を見つけるうえで役に立ちます。Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
+メールボックスが Exchange online またはスタンドアロンの exchange online Protection (EOP) 組織内の exchange online メールボックスを使用していない Microsoft 365 組織では、このトピックに記載されているテクニカルサポートリソースが、EOP の使用に問題がある場合の回答を見つけるのに役立ちます。 Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
 
 ## <a name="self-support-options"></a>サポート サービス オプション
 

@@ -19,21 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d11fdc58f44c9e4bacb708fb246fdea40eb75cff
-ms.sourcegitcommit: 997f6227f33c3683ade9672e881d09216df22ee9
+ms.openlocfilehash: 9d2c5ba495d6250ffb20f695edd515c63b123c30
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016064"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209261"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft Threat Protection データのセキュリティとプライバシー
 
 **適用対象:**
 - Microsoft Threat Protection
 
-Microsoft の脅威保護を使用して、次の条項に同意します。
-
-*Microsoft の脅威保護 (MTP) を有効にすると、次の条件に同意したことになります。オンラインサービス利用規約 (OST) で定義されている該当する顧客データは、他の Microsoft サービスから MTP に転送されます。MTP で顧客データを使用することにより、Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) のデータ処理の標準とコミットメントが適用されます。このようなコミットメントは、顧客データが転送されるサービスとは異なる可能性があることを認識します。さらに、MTP に格納された顧客データは、MDATP 顧客データのストレージとして選択した Geo に保存されます。これは、他のサービスとの接続で選択した Geo とは異なる場合があります。Microsoft は、 [Microsoft Trust Center](https://www.microsoft.com/trust-center)の [データの場所] セクションに記載されているように、このような地域外のお客様のデータを転送することはありません。*
+Microsoft の脅威保護は、Microsoft Azure データセンター (欧州連合、英国、および米国) で運用されます。 サービスによって収集された顧客データは、プロビジョニング時に識別されたテナントの地理的な場所 (a) と、そのようなデータを処理するために別の Microsoft online services を使用している場合は (b) 他のオンラインサービスのデータストレージルールによって定義された位置情報に格納されます。
 
 特定の製品のデータ ストレージとプライバシーの詳細については、以下を参照してください。
 - [Microsoft Defender ATP のデーター ストレージとプライバシー](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

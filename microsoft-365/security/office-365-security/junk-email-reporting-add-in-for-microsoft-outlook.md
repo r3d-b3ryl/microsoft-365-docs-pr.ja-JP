@@ -14,23 +14,23 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Microsoft 迷惑メール報告アドインをインストールおよび使用して、スパム、非スパム、フィッシングメッセージを Microsoft に報告する方法について説明します。
-ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638502"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208829"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>Office 365 で Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する
 
 > [!NOTE]
-> 現在迷惑メール報告アドインを使用していない場合は、代わりに[レポートメッセージアドイン](enable-the-report-message-add-in.md)を使用することをお勧めします。
+> 現在迷惑メール報告アドインを使用していない場合は、代わりに[レポートメッセージアドイン](enable-the-report-message-add-in.md)を使用することをお勧めします。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユーザーは誤検知 (スパムとしてマークされた良好な電子メール)、誤検知 (無効な電子メールが許可されている)、および Exchange Online Protection (EOP) へのフィッシングメッセージを送信することができます。 組織で EOP を使用していない場合、迷惑メールレポートの送信はスパムフィルタリングに影響しません。
+Microsoft Outlook 用迷惑メール報告アドインを使用すると、誤検知 (スパムとしてマークされた良好な電子メール)、誤検知 (無効な電子メールが許可されている)、およびフィッシングメッセージを Microsoft に送信できます。 組織が Exchange Online Protection (たとえば、オンプレミスの Exchange や Exchange Online 以外の電子メールサービスなど) を使用していない場合、迷惑メールレポートの送信はスパムフィルターに影響しません。
 
 このトピックでは、迷惑メール報告アドインをインストールして使用する方法について説明します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - 迷惑メール報告アドインをインストールするには、このトピックで後述する「[迷惑メール報告アドインをインストール](#install-the-junk-email-reporting-add-in)する」セクションを参照してください。
 
@@ -39,7 +39,7 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユ�
   - Outlook 2013 以降
   - Outlook は、Microsoft 365 Apps for enterprise に含まれています。
 
-- Microsoft へのメッセージの報告の詳細については、「 [Office 365 でメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+- Microsoft へのメッセージの報告の詳細については、「 [microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>迷惑メール報告アドインを使用してスパムおよびフィッシングメッセージを報告する
 
@@ -93,7 +93,7 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、ユ�
 
 - アドインをインストールするコンピューターで管理者特権を持っている必要があります。
 
-- に<https://www.microsoft.com/download/details.aspx?id=18275>移動して、お使いの Office のバージョンに対応する .msi ファイルを、見つけやすい場所にダウンロードします。
+- に移動 <https://www.microsoft.com/download/details.aspx?id=18275> して、お使いの Office のバージョンに対応する .msi ファイルを、見つけやすい場所にダウンロードします。
 
   - **32 ビット**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
@@ -197,7 +197,7 @@ Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷
 
 Outlook を閉じた後、次のいずれかの手順を使用して、迷惑メール報告アドインをアンインストールします。
 
-- **コントロールパネル**: Windows キー + R を押します。開いた [**実行**] ダイアログで、 `control appwiz.cpl` enter と入力し、[ **OK**] をクリックします。
+- **コントロールパネル**: Windows キー + R を押します。開いた [**実行**] ダイアログで、enter と入力し、 `control appwiz.cpl` [ **OK**] をクリックします。
 
   一覧で**Microsoft 迷惑メール報告アドイン**を見つけて選択し、[**アンインストール**] をクリックします。
 
@@ -209,7 +209,7 @@ Outlook を閉じた後、次のいずれかの手順を使用して、迷惑メ
 
   表示されるダイアログで、[ **Outlook 用 Microsoft 迷惑メール報告アドインを削除**する] を選択し、[**次へ**] をクリックします。
 
-- **サイレントモード**: 適切な .msi ファイルを検索またはダウンロードします。 コマンドプロンプトウィンドウで、PathToFile \<\>を .msi ファイルの場所に置き換えて、次のいずれかのコマンドを実行します。
+- **サイレントモード**: 適切な .msi ファイルを検索またはダウンロードします。 コマンドプロンプトウィンドウで、PathToFile を \< \> .msi ファイルの場所に置き換えて、次のいずれかのコマンドを実行します。
 
   - **32 ビット**:
 
@@ -249,7 +249,7 @@ Microsoft にメッセージを送信するために使用できるその他の�
 
 #### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>問題: ユーザーにシステム管理者に問い合わせるように求めるエラーメッセージが継続的に表示される
 
-1. レジストリキーの`LoggingLevel`値を "Verbose" に設定していることを確認または設定します。
+1. `LoggingLevel`レジストリキーの値を "Verbose" に設定していることを確認または設定します。
 
    - **32 ビット版32の Windows 上の Outlook**:
 
@@ -288,7 +288,7 @@ Microsoft にメッセージを送信するために使用できるその他の�
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>問題: ユーザーがメッセージを報告するときに確認のメッセージを表示しないように選択したときに、プロンプトが戻る
 
-1. レジストリキー `ConfirmReportJunk`wih を作成します。値は "True" です。
+1. `ConfirmReportJunk`レジストリキー wih を作成します。値は "True" です。
 
    ```text
    Windows Registry Editor Version 5.00

@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 高リスク配信プールを使用して、Microsoft 365 データセンター内の電子メールサーバーの評価を保護する方法について説明します。
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638036"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209189"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>送信メッセージにおける危険度の高い配信プール
 
@@ -45,11 +45,8 @@ Microsoft 365 データセンター内の電子メールサーバーは、一時
 Ndr のサージには、次のような原因が考えられます。
 
 - サービスを使用しているお客様の1人に影響を与えるスプーフィングキャンペーン。
-
 - ディレクトリハーベスト攻撃。
-
 - スパム攻撃。
-
 - 不正な電子メールサーバー。
 
 これらのすべての問題により、サービスによって処理されている Ndr の数が急激に増加する可能性があります。 多くの場合、これらの ndr は他の電子メールサーバーおよびサービス (_[バックスキャター](backscatter-messages-and-eop.md)_ とも呼ばれます) に対してスパムに見えます。

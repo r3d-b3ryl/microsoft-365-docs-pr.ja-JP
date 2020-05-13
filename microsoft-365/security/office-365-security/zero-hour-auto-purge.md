@@ -1,5 +1,5 @@
 ---
-title: ゼロ時間自動削除 (ZAP)-電子メール保護機能
+title: ゼロ時間自動削除 (ZAP)
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,25 +20,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Exchange Online に既に配信されているスパム、マルウェア、またはフィッシングメッセージを検出する、Microsoft 365 の電子メール保護機能であるゼロ時間の自動削除 (ZAP) について説明します。
-ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: 管理者は、ゼロ時間自動削除 (ZAP) を使用して、Exchange Online メールボックス内の配信されたメッセージを迷惑メールフォルダーに移動する方法、またはスパムまたはフィッシングとして検出された検疫について調べることができます。
+ms.openlocfilehash: 643063139f5d65b0271fd14ee5a2d1ca1f42ad1a
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173300"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208442"
 ---
-# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>ゼロ時間自動削除 (ZAP)-Microsoft 365 でのスパムおよびマルウェアからの保護
+# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online でのゼロ時間自動削除 (ZAP)
 
 ## <a name="overview"></a>概要
 
-ゼロ時間自動削除 (ZAP) は、Microsoft 365 の電子メール保護機能で、Exchange Online メールボックスに既に配信されている悪意のあるフィッシング、スパム、またはマルウェアメッセージをさかのぼって検出し、neutralizes します。
+Exchange Online のメールボックスを使用する Microsoft 365 組織では、ゼロ時間自動削除 (ZAP) は電子メール保護機能の1つであり、Exchange Online メールボックスに既に配信されている悪意のあるフィッシング、スパム、またはマルウェアメッセージを neutralizes が検出し、それを検出します。
 
-ZAP は、Exchange Online メールボックスを含む Microsoft 365 サブスクリプションに含まれている既定の Exchange Online Protection (EOP) で使用できます。 ZAP は、オンプレミスの Exchange メールボックスを保護するスタンドアロンの EOP 環境では機能しません。
+オンプレミスの Exchange メールボックスを保護するスタンドアロンの Exchange Online Protection (EOP) 環境では、ZAP は機能しません。
 
 ## <a name="how-zap-works"></a>ZAP のしくみ
 
-Microsoft 365 は、毎日リアルタイムでスパムおよびマルウェアの署名を更新します。 ただし、ユーザーが配信された後にコンテンツが weaponized されているかどうかなど、さまざまな理由で、ユーザーが悪意のあるメッセージを引き続き受信できます。 ZAP は、Microsoft 365 スパムおよびマルウェア署名の更新を継続的に監視することによって、この問題に対処します。 ZAP は、ユーザーのメールボックスに既に存在するメッセージを見つけて削除することができます。
+スパムとマルウェアの署名は、日単位でサービスのリアルタイムで更新されます。 ただし、ユーザーが配信された後にコンテンツが weaponized されているかどうかなど、さまざまな理由で、ユーザーが悪意のあるメッセージを引き続き受信できます。 ZAP は、スパムおよびマルウェア署名の更新を継続的に監視することによって、この問題に対処します。 ZAP は、ユーザーのメールボックスに既に存在するメッセージを見つけて削除することができます。
 
 ZAP アクションはユーザーにとってシームレスです。メッセージが検出され、移動された場合は通知されません。
 
@@ -48,7 +48,7 @@ ZAP アクションはユーザーにとってシームレスです。メッセ�
 
 配信後にマルウェアが含まれていることが検出された**開封済みメッセージまたは未読メッセージ**の場合、ZAP 検疫は、マルウェアの添付ファイルを含むメッセージを検出します。 管理者のみが、検疫からマルウェアメッセージを表示および管理できます。
 
-マルウェア対策ポリシーでは、既定でマルウェアの ZAP が有効になっています。 詳細については、「 [Microsoft 365 でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」を参照してください。
+マルウェア対策ポリシーでは、既定でマルウェアの ZAP が有効になっています。 詳細については、「 [EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」を参照してください。
 
 ### <a name="phish-zap"></a>フィッシング ZAP
 
@@ -58,7 +58,7 @@ ZAP アクションはユーザーにとってシームレスです。メッセ�
 
 - **迷惑メールにメッセージを移動する**: 迷惑メールルールがメールボックスで有効になっていれば (既定で有効になっている場合)、メッセージは迷惑メールフォルダーに移動されます。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
-- メッセージ**を電子メールアドレス**、**削除メッセージ**、**検疫メッセージ**: ZAP 検疫メッセージにリダイレクトします。 管理者のみが、フィッシング検疫済みメッセージを表示および管理できます。
+- メッセージ**を電子メールアドレス**、**削除メッセージ**、**検疫メッセージ**: ZAP 検疫メッセージにリダイレクトします。
 
 既定では、スパム対策ポリシーではフィッシング ZAP が有効になっており、**フィッシング電子メール**フィルター verdict の既定のアクションは**検疫メッセージ**で、既定ではフィッシング ZAP 検疫メッセージを示します。
 
@@ -78,7 +78,7 @@ ZAP アクションはユーザーにとってシームレスです。メッセ�
 
 スパムフィルター verdicts の構成の詳細については、「 [Microsoft 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
-### <a name="zap-considerations-for-office-365-advanced-threat-protection-atp"></a>Office 365 Advanced Threat Protection (ATP) に関する ZAP に関する考慮事項
+### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Office 365 Advanced Threat Protection の ZAP に関する考慮事項 (Office 365 ATP)
 
 ZAP は、[動的配信](dynamic-delivery-and-previewing.md)スキャンのプロセス内のメッセージを検疫しません。または、マルウェアフィルターによって添付ファイルが既に**マルウェアアラートテキスト .txt**ファイルに置き換えられています。 これらの種類のメッセージに対してフィッシングまたはスパムのシグナルを受信し、スパム対策ポリシーのフィルター verdict がメッセージに対して何らかのアクションを実行するように設定されている場合 ([迷惑メールに移動] に移動します)、ZAP は既定で [迷惑メールに移行] アクションになります。
 

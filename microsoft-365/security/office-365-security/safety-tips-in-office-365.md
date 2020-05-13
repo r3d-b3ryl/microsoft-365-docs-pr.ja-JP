@@ -2,10 +2,10 @@
 title: メール メッセージの安全性に関するヒント
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/6/2016
+ms.date: ''
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: EOP と Office 365 が、電子メールの上部に安全なヒントを追加することによって、スパム、フィッシング、およびマルウェアの防止をどのように保護するかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 77722b564dc73829947593405b04a2086fb800bf
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6fb461619aaacafad86bb3c53731526fd00047a4
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035944"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209153"
 ---
 # <a name="safety-tips-in-email-messages"></a>メール メッセージの安全性に関するヒント
 

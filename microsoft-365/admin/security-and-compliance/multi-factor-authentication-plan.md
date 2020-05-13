@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 での多要素認証について、および設定するために従う必要のある手順について説明します。
-ms.openlocfilehash: 035a79c9db44990dbce09de540e3e483b3cea8df
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 6d28e9e7db825aa9030196396ad420028dc1c881
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665670"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213130"
 ---
 # <a name="plan-for-multi-factor-authentication-for-microsoft-365-deployments"></a>Microsoft 365 の展開で多要素認証を計画する
 
@@ -131,10 +131,10 @@ MSI ベースのインストールの場合、次のソフトウェアがイン�
     
 2. [Microsoft 365 の MFA を設定](set-up-multi-factor-authentication.md)します。
     
-3. 個人ユーザーに、MFA によるサインイン方法を指示します。 「 [Microsoft 365 での MFA へのサインイン」を](https://support.office.com/en-us/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)参照してください。
+3. 個人ユーザーに、MFA によるサインイン方法を指示します。 「 [Microsoft 365 での MFA へのサインイン」を](https://support.office.com/article/sign-in-to-microsoft-365-with-2-step-verification-2b856342-170a-438e-9a4f-3c092394d3cb)参照してください。
 
 > [!IMPORTANT]
-> ユーザーが Azure 多要素認証を有効にしていて、モダン認証が有効になっていない Office 2013 を実行しているデバイスがある場合は、それらのデバイスで AppPasswords を使用する必要があります。 AppPasswords の詳細、およびその使用方法/場所については、「 [Azure 多要素認証を](https://go.microsoft.com/fwlink/p/?LinkId=528178)使用したアプリパスワード」を参照してください。
+> ユーザーが Azure 多要素認証を有効にしており、モダン認証が有効になっていない Office 2013 を実行しているデバイスがある場合は、それらのデバイスでアプリパスワードを使用する必要があります。 詳細については、[この記事](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords)を参照してください。
   
 ## <a name="faq"></a>FAQ
 

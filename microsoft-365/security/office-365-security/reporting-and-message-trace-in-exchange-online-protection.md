@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection でのレポート作成とメッセージ追跡
+title: レポート作成とメッセージ追跡
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,16 +14,16 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Microsoft Exchange Online Protection (EOP) 管理者が利用できるレポートとトラブルシューティングツールについて説明します。
-ms.openlocfilehash: 44b4223b4310a2de1d90f99f8a7af23cc6054f94
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034382"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206444"
 ---
-# <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection でのレポート作成とメッセージ追跡
+# <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポート作成とメッセージ追跡
 
-Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態と正常性を判断するのに役立つさまざまなレポートが用意されています。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。
+Exchange online メールボックスを使用しない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、EOP によって、組織の全体的な状態と正常性を特定するのに役立つさまざまなレポートが提供されます。 特定イベント (目的の受信者に届かなかったメッセージなど) のトラブルシューティングを支援するツール、さらに法令遵守の要件のための監査レポートもあります。
 
 ## <a name="usage-reports"></a>利用状況レポート
 
@@ -57,11 +57,7 @@ Microsoft Exchange Online Protection (EOP) には、組織の全体的な状態�
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
 
-Microsoft Graph を使用して、Microsoft 365 管理センターで利用可能なレポートをプログラムで作成します。 「 [Microsoft Graph で Office 365 の使用状況レポートを](https://docs.microsoft.com/graph/api/resources/report)使用する」のサブトピックを参照してください。
-
-## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
-
-プログラムでレポートを作成します。 [Microsoft Graph の概要を](https://docs.microsoft.com/graph/overview)参照してください。
+Microsoft Graph を使用して、管理センターで利用可能なレポートをプログラムで作成します。 詳細については、「microsoft [graph の概要](https://docs.microsoft.com/graph/overview)」および「 [Microsoft graph で Office 365 の使用状況レポート](https://docs.microsoft.com/graph/api/resources/report)を使用する」を参照してください。
 
 ## <a name="message-trace"></a>メッセージの追跡
 
@@ -69,7 +65,7 @@ EOP を通過する電子メール メッセージを追跡します。電子メ
 
 この情報を使用して、効率良くユーザーの質問に回答したり、メール フローの問題をトラブルシューティングしたり、ポリシーの変更を検証したり、テクニカル サポートに支援を求める必要性を減らしたりできます。
 
-「 [Trace an email message」を](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)参照してください。
+[セキュリティ & コンプライアンスセンターのメッセージ追跡を](message-trace-scc.md)参照してください。
 
 ## <a name="audit-logging"></a>監査ログ
 
@@ -85,6 +81,7 @@ EOP のレポート機能とメッセージ トレース データが使用可�
 |メール保護概要レポート|90 日間|メッセージ データの集計は 24 ～ 48 時間以内にほぼ完了します。最大 5 日間のマイナーな増分集計変更が実施される場合があります。|
 |メール保護詳細レポート|90 日|生成後 7 日未満の詳細データに関しては、24 時間以内に表示されるはずですが、48 時間まで完成しない場合があります。最大 5 日分のマイナーな増分変更が実施される場合があります。 <br/><br/> 7 日以上前のメッセージに関する詳細レポートを表示するには、結果が出るまでに最大で数時間かかる場合があります。|
 |メッセージ追跡データ|90 日|生成後 7 日未満のメッセージのメッセージ追跡を実施した場合は、メッセージが 5 ～ 30 分で表示されるはずです。<br/><br/> 7 日以上前のメッセージのメッセージ追跡を実施した場合は、結果が出るまでに最大で数時間かかる場合があります。|
+|
 
 > [!NOTE]
-> データの可用性と待機時間は、Microsoft 365 管理センターまたはリモート PowerShell を介して要求された場合と同じです。
+> データの可用性と待機時間は、管理センターとリモート PowerShell のどちらで要求されても同じです。

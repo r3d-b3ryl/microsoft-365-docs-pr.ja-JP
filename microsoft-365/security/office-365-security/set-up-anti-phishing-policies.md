@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、Microsoft 365 でフィッシング対策保護をセットアップする方法について説明します。これにより、悪意のあるフィッシング攻撃から組織を保護することができます。
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035334"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209813"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
-フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (ATP) 組織で使用できます。
+フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 
 ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 例:
 
@@ -185,7 +185,7 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの高度なフィッシングしきい値
 
-次の高度なフィッシングしきい値は、検出されたフィッシングメッセージを処理する方法を指定するために、ATP のフィッシング対策ポリシーでのみ使用できます。
+次の詳細なフィッシングしきい値は、ATP のフィッシング対策ポリシーでのみ使用可能で、フィッシング verdict を決定するためのコンピューター学習モデルをメッセージに適用する際の感度を制御します。
 
 - **1-標準**: これが既定値です。 メッセージに対して実行されるアクションの重要度は、メッセージがフィッシングであること (低、中、高、または非常に高い信頼度) によって異なります。 たとえば、非常に高い確実性を持つフィッシングとして識別されたメッセージには、最も重大なアクションが適用されますが、信頼度が低いと判断されたメッセージには、非常に厳しいアクションが適用されます。
 

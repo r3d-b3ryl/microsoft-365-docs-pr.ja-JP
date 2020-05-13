@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 がフィッシングを防ぐために差出人アドレスを検証する方法
+title: EOP がフィッシングを防ぐために From アドレスを検証する方法
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 'フィッシングを防止するために、Microsoft 365 と Outlook.com では、From: アドレスの RFC 準拠が必要になりました。'
+description: 管理者は、Exchange Online Protection (EOP) および Outlook.com によって承諾または拒否される電子メールアドレスの種類について学び、フィッシングを防ぐことができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034084"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209453"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Microsoft 365 がフィッシングを防ぐために差出人アドレスを検証する方法
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP がフィッシングを防ぐために From アドレスを検証する方法
 
-Microsoft 365 の電子メールアカウントには、次第に大量のフィッシング攻撃があります。 [スプーフィング (偽造) された送信者電子メールアドレス](anti-spoofing-protection.md)を使用することに加えて、多くの場合、攻撃者は、インターネット標準に違反した From アドレスの値を使用します。 この種のフィッシングを防止するために、Microsoft 365 と Outlook.com では、このトピックで説明するように、受信メッセージに RFC 準拠の差出人のアドレスを含めるように要求されています。 この強制は、2017年11月に有効になっています。
+フィッシング攻撃は、電子メール組織にとって常に脅威となります。 [スプーフィング (偽造) された送信者電子メールアドレス](anti-spoofing-protection.md)を使用することに加えて、多くの場合、攻撃者は、インターネット標準に違反した From アドレスの値を使用します。 この種のフィッシングを防ぐために、Exchange Online Protection (EOP) と Outlook.com では、このトピックで説明するように、受信メッセージに RFC 準拠の差出人のアドレスを含めるように要求されています。 この強制は、2017年11月に有効になっています。
 
 **注**:
 
@@ -41,7 +41,7 @@ Microsoft 365 の電子メールアカウントには、次第に大量のフィ
 
 - `5321.MailFrom`アドレス ( **MAIL FROM** address、P1 sender、または envelope sender とも呼ばれます) は、メッセージの SMTP 送信で使用される電子メールアドレスです。 通常、この電子メールアドレスは、メッセージヘッダーの**リターンパス**ヘッダーフィールドに記録されます (ただし、送信者は別の**リターンパス**電子メールアドレスを指定することもできます)。
 
-- `5322.From` (From アドレスまたは P2 送信者とも呼ばれる) は、[送信**元**アドレス] フィールドの電子メールアドレスであり、電子メールクライアントに表示される送信者の電子メールアドレスです。 From アドレスは、このトピックに記載されている要件の焦点です。
+- `5322.From`(From アドレスまたは P2 送信者とも呼ばれる) は、[送信**元**アドレス] フィールドの電子メールアドレスであり、電子メールクライアントに表示される送信者の電子メールアドレスです。 From アドレスは、このトピックに記載されている要件の焦点です。
 
 From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクション3.2.3、3.4、3.4.1、 [rfc 3696](https://tools.ietf.org/html/rfc3696)) にわたって詳細に定義されています。 アドレス指定には多くのバリエーションがあり、どのような意味があるかは無効です。 簡単にするために、次の形式と定義をお勧めします。
 
@@ -53,7 +53,7 @@ From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクショ
   - [差出人] アドレスに表示名を指定する場合は、EmailAddress の値を山かっこ (< >) で囲む必要があります。
   - Microsoft では、表示名と電子メールアドレスの間にスペースを挿入することを強くお勧めします。
 
-- **EmailAddress**: 電子メールアドレスの形式`local-part@domain`は次のとおりです。
+- **EmailAddress**: 電子メールアドレスの形式は `local-part@domain` 次のとおりです。
 
   - **ローカルパート**: アドレスに関連付けられているメールボックスを識別する文字列。 この値は、ドメイン内で一意です。 多くの場合、メールボックスの所有者のユーザー名または GUID が使用されます。
   - **ドメイン**: 電子メールアドレスのローカル部分で識別されたメールボックスをホストする電子メールサーバーの完全修飾ドメイン名 (FQDN)。
@@ -104,7 +104,7 @@ From アドレスは、いくつかの Rfc (たとえば、RFC 5322 セクショ
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>カスタムドメインへの自動返信を抑制する
 
-この値`From: <>`を使用して自動応答を抑制することはできません。 代わりに、カスタムドメインの null MX レコードを設定する必要があります。 応答サーバーがメッセージを送信できる公開アドレスがないため、自動応答 (およびすべての返信) は自然に抑制されます。
+この値を使用して `From: <>` 自動応答を抑制することはできません。 代わりに、カスタムドメインの null MX レコードを設定する必要があります。 応答サーバーがメッセージを送信できる公開アドレスがないため、自動応答 (およびすべての返信) は自然に抑制されます。
 
 - 電子メールを受信できない電子メールドメインを選択します。 たとえば、プライマリドメインが contoso.com の場合は、noreply.contoso.com を選択することができます。
 
