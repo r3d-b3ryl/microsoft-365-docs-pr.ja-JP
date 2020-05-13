@@ -13,23 +13,21 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、Exchange Online Protection (EOP) のお客様が、ビジネス要件に準拠している可能性のあるカスタムメールルーティングを構成する方法について説明します。
-ms.openlocfilehash: cdc919c628f2254ffc971678f7887c37786d2528
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、Exchange Online Protection (EOP) でメールフローとルーティングを構成するためのオプションについて説明します。
+ms.openlocfilehash: cb2ae7370d50fe32802ad5c279cc2170eb35f581
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034234"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208332"
 ---
 # <a name="mail-flow-in-eop"></a>EOP のメール フロー
 
-Exchange Online Protection (EOP) のお客様の場合、組織に送信されたすべてのメッセージは EOP を通って従業員に配信されます。クラウド内のすべてのメールボックスを Exchange Online を使用してホストしているか、既存のインフラストラクチャの利用を継続するためなどの理由で、メールボックスを社内でホストしている (いわゆるスタンドアロン シナリオ) かに関係なく、処理のために EOP を通過してから従業員の受信トレイに配信されるメッセージのルーティング方法に関するオプションがあります。
-
-メッセージングをビジネス要件に適合させるためにカスタム メール ルーティングを構成したい場合があります。たとえば、すべての送信メールをポリシー フィルタリング アプライアンスを通過させるようにすることができます。
+Exchange Online メールボックスを使用する Microsoft 365 組織、または Exchange Online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織では、組織に送信されるすべてのメッセージが EOP を経由してワーカーに表示されます。 EOP を経由して処理するメッセージを、ワーカーの受信トレイにルーティングする前にルーティングする方法についてのオプションが用意されています。
 
 ## <a name="working-with-messages-and-message-access-options"></a>メッセージとメッセージ アクセス オプションの操作
 
-EOP はメッセージのルーティング方法の柔軟性を高めます。以下のトピックで、メール フロー プロセスの手順について説明します。
+EOP は、メッセージのルーティング方法に柔軟性を提供します。 以下のトピックで、メール フロー プロセスの手順について説明します。
 
 [ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)サービスネットワーク境界で無効な受信者宛てのメッセージを拒否できるようにする、ディレクトリベースのエッジブロック機能について説明します。
 
@@ -37,9 +35,11 @@ EOP はメッセージのルーティング方法の柔軟性を高めます。�
 
 組織にサブドメインを追加する場合にも、それらの管理に EOP サービスを活用できます。 サブドメインの詳細については[、「Exchange Online でサブドメインのメールフローを有効にする」](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)を参照してください。
 
-「[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」では、コネクタについて概説し、それを使ってメール ルーティングをカスタマイズする方法を示します。シナリオには、パートナー組織との安全な通信の保証とスマート ホストのセットアップが含まれます。
+[コネクタを使用してメールフローを構成](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)するコネクタを導入し、それらを使用してメールルーティングをカスタマイズする方法を示します。 シナリオには、パートナー組織との安全な通信の保証とスマート ホストのセットアップが含まれます。
 
-迷惑メールがそれぞれのユーザーの迷惑メール フォルダーに正しくルーティングされることを保証するには、一組の構成手順を実行する必要があります。 これらの詳細につい[ては、「Configure STANDALONE EOP to The 迷惑メールフォルダーにハイブリッド環境でスパムを配信する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参考にしてください。 メッセージをそれぞれのユーザーの迷惑メール フォルダーに移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集することによって別のアクションを選択できます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+[コネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)EOP の前に、メールがサービスまたはデバイスにルーティングされる場合にコネクタを構成する方法について説明します。
+
+スタンドアロンの EOP 組織では、いくつかの構成手順を実行して、迷惑メールがそれぞれのユーザーの迷惑メールフォルダーに正しくルーティングされるようにする必要があります。 これらの詳細につい[ては、「Configure STANDALONE EOP to The 迷惑メールフォルダーにハイブリッド環境でスパムを配信する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参考にしてください。 メッセージを各ユーザーの [迷惑メール] フォルダーに移動しない場合は、スパム対策ポリシー (コンテンツフィルターポリシーとも呼ばれる) を編集して別のアクションを選択することができます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="verify-mail-flow"></a>メール フローを確認する
 

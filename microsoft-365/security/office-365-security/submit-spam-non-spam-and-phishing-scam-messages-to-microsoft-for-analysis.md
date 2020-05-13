@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 'ユーザーは、誤検出および誤検知のスパムメッセージを分析のために Microsoft に送信することができます。 '
+description: 管理者および en-us ユーザーは、分析のために Microsoft に電子メールメッセージ (不良または無効なメールが許可されたメール) を送信する方法を学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7fc26e1cba976e68b8dcfee5ec8b4fe366b8c47
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035238"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208611"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のためにメッセージを手動で Microsoft に送信する
 
 > [!NOTE]
-> Microsoft 365 組織の Exchange Online メールボックスを使用している管理者の場合は、セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「[管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
+> Exchange Online メールボックスを使用している組織内の管理者である場合は、セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「[管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
 
 組織内のユーザーが迷惑メール (スパム) またはフィッシングメッセージを受信トレイで受信する場合や、迷惑メールとしてマークされているために正当な電子メールメッセージを受信しない場合は、ストレスがかかることがあります。 より正確になるように、スパムフィルターを常に微調整しています。
 
@@ -57,7 +57,7 @@ ms.locfileid: "44035238"
 3. 完了したら、[**送信**] をクリックします。
 
 > [!TIP]
-> 管理者は、スパムとして misidentified されている特定のメッセージをブロックするいくつかの方法を用意しています。 詳細については、「 [Office 365 でブロックされる送信者のリストを作成する](create-block-sender-lists-in-office-365.md)」を参照してください。
+> 管理者は、スパムとして misidentified されている特定のメッセージをブロックするいくつかの方法を用意しています。 詳細については、「 [EOP でブロックされる送信者のリストを作成する](create-block-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="submit-false-positives-to-microsoft"></a>誤検知を Microsoft に送信する
 
@@ -66,7 +66,7 @@ ms.locfileid: "44035238"
 
 メッセージが誤ってスパムとして識別された場合は、メッセージを Microsoft スパム分析チームに送信できます。 アナリストはメッセージを評価し、(分析の結果に応じて) サービス全体のフィルターを調整して、メッセージを通過できるようにすることができます。
 
-1. 受信者としての`not_junk@office365.microsoft.com`新しい空の電子メールメッセージを作成します。
+1. 受信者としての新しい空の電子メールメッセージを作成し `not_junk@office365.microsoft.com` ます。
 
 2. Misidentified メッセージを新しいメッセージにドラッグアンドドロップします。 これにより、misidentified メッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
 
@@ -76,7 +76,7 @@ ms.locfileid: "44035238"
 3. 完了したら、[**送信**] をクリックします。
 
 > [!TIP]
-> 管理者は、特定のメッセージがスパムフィルタリングをスキップできるようにするいくつかの方法があります。 詳細については、「 [Office の信頼できる差出人のリストを作成する 365](create-safe-sender-lists-in-office-365.md)」を参照してください。
+> 管理者は、特定のメッセージがスパムフィルタリングをスキップできるようにするいくつかの方法があります。 詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Microsoft に報告されたメッセージのコピーを受信するためのメールフロールールを作成する
 

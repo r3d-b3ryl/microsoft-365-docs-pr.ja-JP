@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、オンプレミスの電子予防アプライアンスまたはクラウドベースの保護サービスから Exchange Online Protection (EOP) に切り替える方法について説明します。
-ms.openlocfilehash: 4bbd0b60d42b52d5c9343126f12059fcf1fc3d62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d7b2cfbe84d1e03bcd549c5220f6063592962792
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035226"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209273"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Google Postini、Barracuda Spam、 Virus Firewall、または Cisco IronPort から EOP に切り替える
 
@@ -55,7 +55,7 @@ Microsoft 365 セットアッププロセスでは、クラウドベースのメ
 
 EOP への切り替えを決定したら、特に次の分野について考慮する必要があります。
 
-- **カスタムフィルター規則**: 特定のスパムをキャッチするためのカスタムフィルターまたはビジネスポリシールールがある場合は、ルールを移行する前に、EOP では、期間の既定の設定を使用して実行することをお勧めします。 EOP は既定の設定でエンタープライズ レベルのスパム対策を提供しているため、一部のルールを EOP に移行する必要がない場合があります。 当然、特定のカスタム ビジネス ポリシーを適用するルールがある場合には、それらを作成できます。 [「Exchange Online Protection のメールフロールール (トランスポートルール)](mail-flow-rules-transport-rules-0.md) 」では、EOP でメールフロールールを作成するための詳細な手順を説明します。
+- **カスタムフィルター規則**: 特定のスパムをキャッチするためのカスタムフィルターまたはビジネスポリシールールがある場合は、ルールを移行する前に、一定期間、EOP の既定の設定を使用して実行することをお勧めします。 EOP は既定の設定でエンタープライズ レベルのスパム対策を提供しているため、一部のルールを EOP に移行する必要がない場合があります。 当然、特定のカスタム ビジネス ポリシーを適用するルールがある場合には、それらを作成できます。 [「Exchange Online Protection のメールフロールール (トランスポートルール)](mail-flow-rules-transport-rules-0.md) 」では、EOP でメールフロールールを作成するための詳細な手順を説明します。
 
 - **Ip 許可一覧と ip 禁止一覧**: ユーザー単位の許可リストとブロックリストがある場合は、セットアッププロセスの一環として、EOP へのリストのコピーをしばらく許可します。 IP 許可一覧と IP 禁止一覧の詳細については、「 [Configure the connection filter policy](configure-the-connection-filter-policy.md)」を参照してください。
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Microsoft business 製品の請求書を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: dad635df97e9cdf490118adc3a041c876878521b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141330"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211406"
 ---
 # <a name="understand-your-invoice"></a>請求書の内容を理解する
 
@@ -46,7 +46,7 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 | --- | --- |
 | 販売先 |支払いを担当する法人の名前と住所を識別する請求先アカウント。 この情報は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">課金アカウント</a>] ページで管理できます。ここで、アカウントの使用規約を確認し、役割とアクセス許可を管理できます。 |
 | 請求先 |請求書を受信するユーザーを識別します。 この情報は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">課金プロファイル</a>] ページで管理できます。 請求プロファイルは、[**請求書の概要**] セクションの [オンライン請求書] ページにも表示されます。 請求プロファイルの詳細と、それらを使用して組織にとってより柔軟な請求オプションを構築する方法については、「[課金プロファイルを管理](manage-billing-profiles.md)する」を参照してください。 |
-| 課金プロファイル |Bill to、PO 番号、支払い条件などの請求書プロパティを定義するために使用される請求プロファイルの名前。 この情報は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">課金プロファイル</a>] ページで管理できます。 請求プロファイルの詳細と、それらを使用して組織にとってより柔軟な請求オプションを作成する方法については、「[課金プロファイルを管理](manage-billing-profiles.md)する」を参照してください。 |
+| 課金プロファイル |**Bill to**、 **PO 番号**、支払い条件などの請求書プロパティを定義するために使用される請求プロファイルの名前。 この情報は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">課金プロファイル</a>] ページで管理できます。 請求プロファイルの詳細と、それらを使用して組織にとってより柔軟な請求オプションを作成する方法については、「[課金プロファイルを管理](manage-billing-profiles.md)する」を参照してください。 |
 | 請求書番号 |追跡目的で使用される、Microsoft で生成された一意の請求番号。 |
 | 請求日 |請求書が生成される日付 (通常は、請求サイクルの終了後の 5 ~ 12 日)。 請求書の日付は、請求プロファイルの詳細ページで確認できます。 請求期間の終了と請求日の間に発生する諸費用は、次の請求期間に含まれているため、来月の請求書に含まれています。 各請求書の請求期間の開始日と終了日は、請求書の**上の**請求書 PDF に一覧表示されています。|
 | 支払条件 |Microsoft bill の支払い方法。 *30 日*は、請求日から30日以内に、請求書に関する指示に従って支払いを行うことを意味します。 |
@@ -77,13 +77,13 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 | 課税金額 | 税率に基づいて、購入に適用される税の金額 |
 | 合計 | 購入による合計金額 |
 
-行アイテムの詳細は、請求する製品の種類によって異なります。 たとえば、Azure 製品の場合は、適用された Azure クレジットの量が表示されます。 座席表の製品には、単価と数量が表示されます。 請求書の詳細には、購入した製品、適用された割引またはクレジット、税率と金額、および品目の合計の概要が表示されます。
+行アイテムの詳細は、請求する製品の種類によって異なります。 たとえば、Azure 製品の場合は、適用された Azure クレジットの量が表示されます。 座席表の製品には、単価と数量が表示されます。 請求書の詳細には、購入した製品、適用された割引またはクレジット、税率と金額、および品目の合計が表示されます。
 
-`Total = Charges - Azure Credit + Tax`
+    `Total = Charges - Azure Credit + Tax`
 
 各サービスファミリの合計金額は、Azure クレジットをクレジットまたは料金から差し引くことによって算出され、税を追加します。
 
-`Total = Charges/Credits - Azure Credit + Tax`
+    `Total = Charges/Credits - Azure Credit + Tax`
 
 請求書に詳細情報を必要とする Azure の請求書がある場合は、「 [Microsoft カスタマーアグリーメントの請求書を確認](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)する」を参照してください。
 
@@ -105,7 +105,7 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 
 - **オンライン支払** &mdash;請求書からオンラインで支払いを行うことを選択できます。
 
-- Azure の**コスト管理** &mdash; azure のお客様向けのオンライン請求書には、azure コスト管理へのリンクが含まれています。
+- **Azure コスト管理** &mdash;Azure のお客様の場合、オンライン請求書には Azure コスト管理へのリンクが含まれています。
 
 ### <a name="to-view-your-online-invoice"></a>オンライン請求書を表示するには
 
@@ -115,7 +115,43 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 
 3. オンライン請求書を表示するには、リストから請求書を選択します。 [請求書の詳細] ページから .pdf をダウンロードすることもできます。
 
-## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合わせください。
+## <a name="invoice-faq"></a>請求書に関する FAQ
+
+### <a name="when-is-my-invoice-available"></a>請求書がいつ使用可能になりますか?
+
+一部の請求書は、購入から24時間以内に生成されます。 その他の請求書は、請求期間の終わりに生成され、その期間のすべてのアイテムが含まれます。
+
+### <a name="how-do-i-pay-the-amount-due-on-my-invoice"></a>請求書による金額の支払い方法
+
+支払い方法は支払い方法によって異なり、請求書 PDF の下部に表示されます。 支払い方法がクレジットカードの場合は、請求日から10日以内に自動的に請求されます。 支払い方法が小切手または電信送金の場合は、PDF の**支払い手順**の下にある情報を参照してください。
+
+### <a name="whats-the-difference-between-sold-to-and-bill-to-addresses"></a>"販売先" と "請求先" 住所の違いを教えてください。
+
+- **販売先:** 支払いを担当し、請求書で識別される法人。 ここで指定した住所は、購入時に代替配送先住所を提供することを選択しない限り、税率を決定するために使用されます。 詳細については、「[税務情報](tax-information.md)」を参照してください。
+- **請求先:** 現物請求書が送信されるアドレス (該当する場合)。 法人ごとに複数の請求**書**を含めることができますが、請求プロファイルごとに1つの請求書**を送付する**必要があります。
+
+### <a name="what-are-billed-amount-and-amount-due"></a>"請求金額" と "金額の支払額" とは何ですか。
+
+- **請求金額:** 購入した金額の合計。
+- **金額の期限:** 未払いの残高。
+
+### <a name="what-is-the-difference-between-service-period-and-billing-period"></a>"サービス期間" と "請求期間" の違いは何ですか。
+
+- **サービス期間:** サービスを使用するために課金されている期間。
+- **請求期間:** 最後の請求日からの期間。
+
+### <a name="how-do-i-view-and-print-my-bill"></a>請求書はどのように表示または印刷するのですか?
+
+1. [**請求**  >  書<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>] ページで、請求日の範囲を選択します。
+2. 請求書の PDF コピーを印刷または保存するには、[**請求書の pdf をダウンロード**] を選択して、pdf を印刷します。
+
+詳細については、「 [bill または請求書を表示](view-your-bill-or-invoice.md)する」を参照してください。
+
+### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Azure の前払が支払い方法として表示されないのはなぜですか?
+
+Azure 前払は、対象となる Azure 製品およびサービスに対してのみ支払い方法として使用できます。
+
+## <a name="need-help-contact-support"></a>ヘルプが必要な場合 サポートにお問い合わせください。
 
 ご質問がある場合や Azure クレジットについてサポートが必要な場合は、 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">azure サポートを使用してサポートリクエストを作成</a>してください。
 

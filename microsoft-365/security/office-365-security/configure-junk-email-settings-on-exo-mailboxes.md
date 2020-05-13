@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online メールボックスの迷惑メール設定を構成する方法について説明します。 これらの設定の多くは、Outlook または web 上の Outlook でユーザーが使用できます。
-ms.openlocfilehash: 20112e23ff8bb62b96bdba4e86725c8566af3444
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066195"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206630"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online のメールボックスで迷惑メール設定を構成する
 
-Exchange Online の組織のスパム対策設定は、Exchange Online Protection (EOP) によって制御されます。 詳細については、「[Office 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。
+Exchange Online にメールボックスを持つ Microsoft 365 組織では、組織のスパム対策の設定は Exchange Online Protection (EOP) によって制御されます。 詳細については、「 [EOP のスパム対策保護](anti-spam-protection.md)」を参照してください。
 
 ただし、管理者が Exchange Online の個々のメールボックスで構成できる特定のスパム対策設定もあります。
 
 - **迷惑メールルールを有効または無効**にする: 迷惑メールルールは、すべてのメールボックスで既定で有効になっている迷惑メールルールという名前の非表示の受信トレイルールです。 迷惑メールルールは、次の機能を制御します。
 
-  - スパム**対策ポリシーに基づいて、メッセージを [迷惑メール] フォルダーに移動する**: スパムフィルター verdict の [**メッセージを迷惑メールフォルダーに移動する**] アクションを使用してスパム対策ポリシーを構成した場合、迷惑メールフィルタールールは、メッセージがメールボックスに配信された後に、そのメッセージを迷惑メールフォルダーに移動します。 スパム対策ポリシーの verdicts の詳細については、「 [Office 365 でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。 同様に、自動削除 (ZAP) によって、既に配信されたメッセージのスパムまたはフィッシングが検出されると、迷惑メールフィルタールールはメッセージを迷惑メールフォルダースパムフィルター verdict アクション**に移動する**ための迷惑メールフォルダーに移動します。 ZAP の詳細については、「[ゼロ時間自動削除 (ZAP)-Office 365 のスパムおよびマルウェアに対する保護](zero-hour-auto-purge.md)」を参照してください。
+  - スパム**対策ポリシーに基づいて、メッセージを [迷惑メール] フォルダーに移動する**: スパムフィルター verdict の [**メッセージを迷惑メールフォルダーに移動する**] アクションを使用してスパム対策ポリシーを構成した場合、迷惑メールフィルタールールは、メッセージがメールボックスに配信された後に、そのメッセージを迷惑メールフォルダーに移動します。 スパムフィルター処理の詳細については、「verdicts」の「スパム[対策ポリシーの構成 EOP](configure-your-spam-filter-policies.md)」を参照してください。 同様に、0時間の自動削除 (ZAP) によって配信されたメッセージがスパムまたはフィッシングであると判断された場合、迷惑メールフィルタールールはメッセージを迷惑メールフォルダースパムフィルター verdict アクション**に移動**するための迷惑メールフォルダーに移動します。 ZAP の詳細については、「 [Exchange Online のゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)」を参照してください。
   
   - **ユーザーが outlook または web 上の outlook で自分自身に対して構成する迷惑メール設定**: セーフリスト_コレクション_は、各メールボックスの差出人セーフリスト、宛先セーフリスト、および受信拒否リストです。 これらのリストのエントリは、迷惑メールルールがメッセージを受信トレイまたは迷惑メールフォルダーに移動するかどうかを決定します。 ユーザーは、Outlook または web 上の Outlook (旧称 Outlook Web App) で自分のメールボックスのセーフリストコレクションを構成できます。 管理者は、任意のユーザーのメールボックスでセーフリストコレクションを構成できます。
 
@@ -54,7 +54,7 @@ Exchange Online の組織のスパム対策設定は、Exchange Online Protectio
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>Exchange Online の PowerShell を使用してメールボックス内の迷惑メールルールを有効または無効にする
 
 > [!NOTE]
-> Outlook (Exchange キャッシュ モードで) または Web 上の Outlook で開かれているメールボックスで迷惑メール ルールを無効にするには、 **Set-MailboxJunkEmailConfiguration** コマンドレットのみを使用できます。 メールボックスが開かれていない場合は、次の`The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.`エラーが表示されます。このエラーを一括操作で抑制`-ErrorAction SlientlyContinue`する場合は、 **set-mailboxjunkemailconfiguration**コマンドに追加できます。
+> Outlook (Exchange キャッシュ モードで) または Web 上の Outlook で開かれているメールボックスで迷惑メール ルールを無効にするには、 **Set-MailboxJunkEmailConfiguration** コマンドレットのみを使用できます。 メールボックスが開かれていない場合は、次のエラーが表示されます。 `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` このエラーを一括操作で抑制する場合は、 `-ErrorAction SlientlyContinue` **set-mailboxjunkemailconfiguration**コマンドに追加できます。
 
 メールボックスで迷惑メール ルールを有効または無効にするには、次の構文を使用します。
 
@@ -78,7 +78,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 > [!NOTE]
 > 
-> - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するに`-ErrorAction SlientlyContinue`は、 **set-mailboxjunkemailconfiguration**コマンドにを追加します。
+> - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するには、 `-ErrorAction SlientlyContinue` **set-mailboxjunkemailconfiguration**コマンドにを追加します。
 > 
 > - 迷惑メールルールを無効にしても、Outlook の迷惑メールフィルター (構成方法によって異なります) では、メッセージがスパムであるかどうかを判断し、メッセージを自分のスパム verdict およびメールボックスのセーフリストコレクションに基づいて受信トレイまたは迷惑メールフォルダーに移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
 
@@ -86,7 +86,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 メールボックスで迷惑メール ルールを正常に有効または無効にしたことを確認するには、次のいずれかの手順を使用します。
 
-- _ \<MailboxIdentity\> _をメールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して**Enabled**プロパティの値を確認します。
+- _ \< MailboxIdentity \> _をメールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して**Enabled**プロパティの値を確認します。
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -117,7 +117,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-複数の値を入力して、 _BlockedSendersAndDomains_パラメーターと_TrustedSendersAndDomains_パラメーターの既存のエントリを上書きするに`"<Value1>","<Value2>"...`は、次の構文を使用します。 他の既存のエントリに影響を与えずに、1つまたは複数の値を追加または削除するには、次の構文を使用します。`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+複数の値を入力して、 _BlockedSendersAndDomains_パラメーターと_TrustedSendersAndDomains_パラメーターの既存のエントリを上書きするには、次の構文を使用し `"<Value1>","<Value2>"...` ます。 他の既存のエントリに影響を与えずに、1つまたは複数の値を追加または削除するには、次の構文を使用します。`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 以下の例では、Ori Epstein のメールボックスのセーフリスト コレクションの次の設定を構成します。
 
@@ -141,7 +141,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 > [!NOTE]
 > 
-> - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するに`-ErrorAction SlientlyContinue`は、 **set-mailboxjunkemailconfiguration**コマンドにを追加します。
+> - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するには、 `-ErrorAction SlientlyContinue` **set-mailboxjunkemailconfiguration**コマンドにを追加します。
 > 
 > - 迷惑メールルールがメールボックスで無効になっている場合でも、セーフリストコレクションを構成することができます。また、Outlook の迷惑メールフィルターは、受信トレイまたは迷惑メールフォルダーにメッセージを移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
 > 
@@ -151,7 +151,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 メールボックスにセーフリスト コレクションを正常に構成したことを確認するには、次のいずれかの手順を使用します。
 
-- _ \<MailboxIdentity\> _をメールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行してプロパティの値を確認します。
+- _ \< MailboxIdentity \> _をメールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行してプロパティの値を確認します。
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*
@@ -167,7 +167,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 Outlook で使用できる、クライアント側の迷惑メール フィルター設定を有効にしたり、無効ににしたり、構成したりするには、グループ ポリシーを使用します。 詳細については、「 [Microsoft 365 Apps for enterprise、office 2019、および office 2016 用の管理用テンプレートファイル (ADMX/ADML) と Office カスタマイズツール](https://www.microsoft.com/download/details.aspx?id=49030)」を参照してください。
 
-Outlook の迷惑メールフィルターで、[**ホーム** \> **迷惑** \> **メール] オプション** \>の [オート**フィルターなし** **] オプションが**既定値に設定されている場合、outlook は massages をスパムとして分類しませんが、セーフリストコレクション (差出人セーフリスト、宛先セーフリスト、受信拒否リスト) を使用して、メッセージを配信後に迷惑メールフォルダーに移動します。 これらの設定の詳細については、「[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。
+Outlook の迷惑メールフィルターで、[**ホーム**迷惑メール] オプションの [オート**フィルターなし**] オプションが既定値に設定されている場合 \> **Junk** \> **Junk E-Mail Options** \> **Options**、outlook は massages をスパムとして分類しませんが、セーフリストコレクション (差出人セーフリスト、宛先セーフリスト、受信拒否リスト) を使用して、メッセージを配信後に迷惑メールフォルダーに移動します。 これらの設定の詳細については、「[迷惑メールフィルターの概要](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。
 
 Outlook の迷惑メール フィルターが **[低]** または **[高]** に設定されている場合、Outlook の迷惑メール フィルターでは、独自の SmartScreen フィルター テクノロジを使用して、迷惑メールを識別し、[迷惑メール] フォルダーに移動します。 このスパム分類は、EOP によって決定されるスパム信頼レベル (SCL) とは別のものです。 実際には、Outlook は EOP の SCL を無視します (スパムフィルターをスキップするようにメッセージにマークされている場合を除きます)。また、そのメッセージがスパムであるかどうかを判断するために、独自の条件を使用します。 当然のことですが、スパム verdict から EOP と Outlook を同じにすることもできます。 これらの設定の詳細については、「[迷惑メールフィルターの保護レベルを変更](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b)する」を参照してください。
 

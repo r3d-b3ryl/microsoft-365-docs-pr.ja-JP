@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Twitter データを Microsoft 365 にインポートするためのコネクタを設定し、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用できるようにします。
-ms.openlocfilehash: 5fb13b3a5eb79c09c2947292b793fe607dae247f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efc02dcf7b9c40fafedf230e4786f6f6494c27d6
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035129"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210583"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data"></a>コネクタセットアップしてTwitter のデータをアーカイブする
+# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>コネクタをアーカイブ Twitter データに設定する (プレビュー)
 
 Microsoft 365 コンプライアンスセンターのコネクタを使用して、Twitter から Microsoft 365 にデータをインポートおよびアーカイブします。 コネクタをセットアップして構成すると、組織の Twitter アカウントに (スケジュールに従って) 接続され、アイテムのコンテンツが電子メールメッセージの形式に変換されてから、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
@@ -82,7 +82,7 @@ Twitter connector アプリのソースコードを展開するには、次の�
 
 - tenantId: 手順1で作成した、Azure Active Directory で Twitter アプリを作成した後にコピーした Microsoft 365 組織のテナント ID。
 
-この手順を完了したら、必ず app Service の URL (例: `https://twitterconnector.azurewebsites.net`) をコピーしてください。 手順3、手順4、および手順5を完了するには、この URL を使用する必要があります。
+この手順を完了したら、必ず app Service の URL (例:) をコピーしてください `https://twitterconnector.azurewebsites.net` 。 手順3、手順4、および手順5を完了するには、この URL を使用する必要があります。
 
 ## <a name="step-3-create-developer-app-on-twitter"></a>手順 3: Twitter で開発者用アプリを作成する
 
@@ -128,6 +128,6 @@ Twitter connector アプリのソースコードを展開するには、次の�
 
 この手順が完了すると (手順に従って)、次の情報が提供されます (手順を完了したら、テキストファイルにコピーしたことになります)。
 
-- Azure app service の URL (手順2で取得`https://twitterconnector.azurewebsites.net`) (例:)
+- Azure app service の URL (手順2で取得) (例: `https://twitterconnector.azurewebsites.net` )
 
 - APISecretKey (手順2で作成したもの)

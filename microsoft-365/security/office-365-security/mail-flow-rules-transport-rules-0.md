@@ -1,5 +1,5 @@
 ---
-title: メールフロールール (トランスポートルール)-Exchange Online Protection
+title: EOP のメールフロールール
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: メールフロールール (トランスポートルール) を使用して、組織を通過するメッセージを識別し、処理を行うことができます。
-ms.openlocfilehash: 8cb28a1f198d0717d2373de8f2b9cb048b6ff7df
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036187"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209693"
 ---
-# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection のメール フロー ルール (トランスポート ルール)
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>スタンドアロン EOP のメールフロールール (トランスポートルール)
 
-メールフロールール (トランスポートルールとも呼ばれます) を使用して、組織を通過するメッセージを識別し、処理を行うことができます。 メール フロー ルールは、Outlook および Web 上の Outlook で使用できる受信トレイ ルールに似ています。 最大の違いは、メール フロー ルールがメールボックスにメッセージが届いた後ではなく、配送中のメッセージに対しアクションを実行するということです。 メール フロー ルールにはより多くの条件、例外、アクションが含まれるため、多種多様なメッセージング ポリシーを柔軟に実装することができます。
+Exchange Online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織では、メールフロールール (トランスポートルールとも呼ばれます) を使用して、組織を通過するメッセージを識別し、処理を行うことができます。
 
-この記事では、メール フロー ルールのコンポーネントとその機能について説明します。
+このトピックでは、メールフロールールのコンポーネントとその機能について説明します。
 
 メールフロールールを作成、コピー、管理する手順については、「 [Exchange Online でメールフロールールを管理](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)する」を参照してください。 ルールごとに、ルールを適用、ルールをテスト、ルールをテストして送信者に通知するという、いずれかのオプションを選択できます。 テストオプションの詳細については、「 [Exchange Online の](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)[メールフロールール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)とポリシーヒントをテストする」を参照してください。
 
@@ -39,13 +39,13 @@ ms.locfileid: "44036187"
 
 - [メール フロー ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- [Office 365 で受信拒否リストを作成する](create-block-sender-lists-in-office-365.md)
+- [EOP で受信拒否リストを作成する](create-block-sender-lists-in-office-365.md)
 
 - [Exchange Online Protection でファイルの添付のブロックを通じてマルウェアの脅威を削減する](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
 - [Office 365 で電子メールメッセージを暗号化または暗号化解除するルールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
-次のビデオは、Exchange Online Protection でのメールフロールールの設定のデモを示しています。
+次のビデオは、スタンドアロン EOP でのメールフロールールの設定のデモを示しています。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -55,13 +55,13 @@ ms.locfileid: "44036187"
 
 - **条件**: アクションを適用するメッセージを識別します。 一部の条件は、メッセージ ヘッダー フィールド (例、宛先、差出人、または CC フィールド) を確認します。 その他の条件はメッセージ プロパティ (例、メッセージの件名、本文、添付ファイル、メッセージ サイズ、またはメッセージ分類) を確認します。 ほとんどの条件は、比較演算子 (例、次と一致する、次と一致しない、または次が含まれる) と一致する値を指定する必要があります。 条件または例外が 1 つもない場合、ルールはすべてのメッセージに適用されます。
 
-Exchange Online Protection におけるメールフロールールの条件の詳細については、「 [Exchange online でのメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
+スタンドアロン EOP のメールフロールール条件の詳細については、「 [Exchange Online でのメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
 
 - **例外**: アクションが適用されないメッセージを指定します (オプション)。 条件で使用可能なメッセージ識別子と同じものが、例外でも使用可能です。 例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメッセージにルール アクションが適用されないようにします。
 
 - **Actions**: ルールの条件に一致するメッセージに対して行う操作を指定し、いずれの例外にも一致しないようにします。 例外は条件より優先され、メッセージが構成されているすべての条件に一致していても、そのメール メッセージにアクションが適用されないようにします。
 
-Exchange Online Protection で使用可能なメールフロールールの処理の詳細については、「 [Exchange online のメールフロールールのアクション](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」を参照してください。
+スタンドアロン EOP で使用できるメールフロールールの処理の詳細については、「 [Exchange Online のメールフロールールのアクション](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」を参照してください。
 
 - **プロパティ**: 条件、例外、またはアクションではない他のルール設定を指定します。 たとえば、いつルールを適用するか、ルールを強制するか、あるいはテストするかどうか、およびルールを有効化する期間などです。
 
@@ -84,7 +84,7 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 
 |**EAC におけるプロパティ名**|**PowerShell におけるパラメーター名**|**説明**|
 |:-----|:-----|:-----|
-|**[優先度]**|_Priority_|メッセージにルールを適用する順番を示します。優先度の既定値はルールの作成時期に基づいています (古いルールのほうが新しいルールより優先度が高く、優先度の高いルールが優先度の低いルールよりも先に処理されます)。   <br/><br/> EAC 内でのルールの優先度は、ルール一覧内でそのルールを上下に移動させることで変更します。PowerShell では、優先度番号を設定します (0 が最高優先度)。   <br/><br/> たとえば、クレジット カード番号が含まれるメッセージを拒否するルールと、承認を必要とする別のルールがある場合、拒否のルールを最初に適用して、他のルールの適用を停止する必要があります。  |
+|**[優先度]**|_Priority_|メッセージにルールを適用する順番を示します。優先度の既定値はルールの作成時期に基づいています (古いルールのほうが新しいルールより優先度が高く、優先度の高いルールが優先度の低いルールよりも先に処理されます)。   <br/><br/> EAC 内でのルールの優先度は、ルール一覧内でそのルールを上下に移動させることで変更します。 PowerShell では、優先度番号を設定します (0 が最高優先度)。 <br/><br/> たとえば、クレジット カード番号が含まれるメッセージを拒否するルールと、承認を必要とする別のルールがある場合、拒否のルールを最初に適用して、他のルールの適用を停止する必要があります。  |
 |**[モード]**|_Mode_|ルールにすぐにメッセージの処理を開始させるか、あるいはメッセージの配信に影響を与えずにルールをテストするかどうかを指定することができます (データ紛失防止、DLP ポリシー ヒントの有無を問わず)。 <br/><br/> ポリシー ヒントは、メッセージを作成しているユーザーにそれがポリシー違反の可能性があることを通知する短いメモを、Outlook または Web 上の Outlook で提示します。詳細については、「 **Policy Tips** 」を参照してください。  <br/><br/> モードの詳細については、「 **Test a mail flow rule** 」を参照してください。|
 |**次の日付でこのルールを有効にする** <br/><br/> **次の日付に、このルールを無効にする**|_ActivationDate_ <br/> _ExpiryDate_|ルールが有効化される日付の範囲を指定します。|
 |選択されているかどうかに関わらず、チェック ボックスを **オン** にします。|新しいルール: **new-transportrule**コマンドレットの_Enabled_パラメーター。 <br/><br/> 既存のルール: **Enable-TransportRule** または **Disable-TransportRule** コマンドレットを使用します。 <br/><br/> 値はルールの **State** プロパティに表示されます。|無効なルールを作成して、それをテストする準備ができたときに有効にすることができます。または、設定を保持するために削除することなくルールを無効にすることができます|
@@ -95,15 +95,13 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>メッセージへのメール フロー ルールの適用方法
 
-組織を通過するすべてのメッセージが、組織内の有効にされているメール フロー ルールについて評価されます。 ルールは、EAC の [**メールフロー** \> **ルール**] ページに示されている順序で処理されるか、または PowerShell 内の対応する_Priority_パラメーターの値に基づいて処理されます。
+組織を通過するすべてのメッセージが、組織内の有効にされているメール フロー ルールについて評価されます。 ルールは、EAC の [**メールフロー**ルール] ページに示されている順序で処理される \> **Rules**か、または PowerShell 内の対応する_Priority_パラメーターの値に基づいて処理されます。
 
 各ルールでは、そのルールが一致した場合に、以降のルールの処理を停止するオプションを選択できます。この設定は、メッセージが複数のメール フロー ルールの条件に一致する場合に重要です (メッセージにどのルールを適用しますか?すべてですか?1 つだけですか?)。
 
 ### <a name="differences-in-processing-based-on-message-type"></a>メッセージの種類による処理の違い
 
 組織を通過するメッセージにはいくつかの種類があります。次の表に、メール フロー ルールで処理できるメッセージの種類を示します。
-
-****
 
 |**メッセージの種類**|**ルールを適用可能か**|
 |:-----|:-----|
@@ -114,7 +112,7 @@ Exchange Online Protection で使用可能なメールフロールールの処�
 |**クリア署名付きメッセージ**: 署名されているが、暗号化されていないメッセージ。|はい|
 |**UM メッセージ**: ボイスメール、fax、不在着信通知などのユニファイドメッセージングサービスによって作成または処理されたメッセージ、および Microsoft Outlook voice Access を使用して作成または転送されたメッセージ。|はい|
 |**匿名メッセージ**: 匿名送信者によって送信されたメッセージ。|はい|
-|**閲覧レポート**: 送信者からの開封確認要求に対する応答として生成されるレポート。 閲覧レポートには、または`IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead`のメッセージクラスがあります。|はい|
+|**閲覧レポート**: 送信者からの開封確認要求に対する応答として生成されるレポート。 閲覧レポートには、またはのメッセージクラスがあり `IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead` ます。|はい|
 
 ## <a name="what-else-should-i-know"></a>その他の注意事項
 

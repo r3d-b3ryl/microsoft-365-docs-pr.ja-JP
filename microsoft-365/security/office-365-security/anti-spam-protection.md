@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Exchange Online および Microsoft 365 でスパムを防止するのに役立つスパム対策設定とフィルターについて説明します。
-ms.openlocfilehash: 96132bf66438861eb117aedd841f7912de1258cc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、Exchange Online Protection (EOP) でスパムを防止するのに役立つスパム対策設定とフィルターについて学ぶことができます。
+ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034060"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211418"
 ---
-# <a name="anti-spam-protection-in-microsoft-365"></a>Microsoft 365 でのスパム対策保護
+# <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
 > [!NOTE]
-> このトピックは、Microsoft 365 管理者を対象としています。 エンドユーザーのトピックについては、「[迷惑メールフィルターの概要](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」と「[迷惑メールおよびフィッシングについ](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)て」を参照してください。
+> このトピックは、管理者を対象としています。 エンドユーザーのトピックについては、「[迷惑メールフィルターの概要](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」と「[迷惑メールおよびフィッシングについ](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)て」を参照してください。
 
-Exchange Online または exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) のお客様のために、メールボックスが含まれる Microsoft 365 顧客は、電子メールメッセージが EOP によってスパム (迷惑メール) から自動的に保護されます。
+Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、電子メールメッセージは EOP によってスパム (迷惑メール) から自動的に保護されます。
 
 Microsoft のメールの安全性ロードマップには、他に例を見ない製品間のアプローチが含まれます。 EOP のスパム対策およびフィッシング対策テクノロジは、電子メールプラットフォーム全体に適用され、ユーザーに最新のスパム対策およびフィッシング対策ツールと、ネットワーク全体での技術革新を提供します。 EOP の目標は、包括的で使用可能なメール サービスを提供し、迷惑メール、詐欺目的のメールの脅威 (フィッシング)、マルウェアを検出し、それらからユーザーを保護することです。
 
@@ -43,7 +43,7 @@ Microsoft のメールの安全性ロードマップには、他に例を見な�
 
 EOP のスパム対策設定は、次のテクノロジで構成されています。
 
-- **接続フィルター**: 受信電子メールの送信元サーバーを、Ip 許可一覧、Ip 禁止一覧、および*セーフリスト*(Microsoft が管理する信頼できる差出人の動的で、編集不能な一覧) を介して早い段階で特定します。 これらの設定は、接続フィルターポリシーで構成します。 詳細について[は、「Configure connection filtering In Microsoft 365」を](configure-the-connection-filter-policy.md)参照してください。
+- **接続フィルター**: 受信電子メールの送信元サーバーを、Ip 許可一覧、Ip 禁止一覧、および*セーフリスト*(Microsoft が管理する信頼できる差出人の動的で、編集不能な一覧) を介して早い段階で特定します。 これらの設定は、接続フィルターポリシーで構成します。 詳細については、「 [Configure connection filtering](configure-the-connection-filter-policy.md)」を参照してください。
 
   > [!NOTE]
   > スプーフィングインテリジェンスは、接続フィルターを使用して、電子メールドメインをスプーフィングしている送信者の許可とブロックの一覧を作成します。 詳細については、「 [Microsoft 365 のスプーフィングインテリジェンスの詳細](learn-about-spoof-intelligence.md)」を参照してください。
@@ -105,7 +105,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
   これらの設定の詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
-- **利用可能な差出人セーフリストを使用**します。詳細については、「365.md」を参照してください。詳細については、「作成-安全な送信者リスト」 (を参照してください。
+- **利用可能な差出人セーフリストを使用**します。詳細については、「[差出人セーフリストを作成](create-safe-sender-lists-in-office-365.md)する」を参照してください。
 
 - 「Exchange Online サービスの説明」の「[受信および送信の制限](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits)」で説明されているように **、ユーザーが送信と受信の制限内にあることを確認**します。
 

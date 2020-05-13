@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: db450bae565151fd3f3472217cbd5a0f03a3ab79
-ms.sourcegitcommit: 5b7630b8692c692aef3eefc8857f46a7ee172dfd
+ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174061"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208071"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -56,7 +56,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 |[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [月次チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps)(2003 以降) へのロールアウト | [月次チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps)へのロールアウト (16.35 +)   | レビュー   | レビュー         | レビュー                                                        |
+|[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [月次チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps)(2003 以降) | [月次チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps)(16.35 +)   | レビュー   | レビュー         | レビュー                                                        |
 |[ラベル分析を使用](label-analytics.md)してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
 |[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [Office Insider](https://office.com/insider)                                  | レビュー | レビュー | レビュー | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -119,10 +119,10 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 暗号化を適用するように構成した機密ラベルユーザーが独自の暗号化設定を指定するために、複雑さを排除します。 多くの Office アプリでは、Information Rights Management (IRM) のオプションを使用して、ユーザーがこれらの個々の暗号化設定を手動で構成することができます。 たとえば、Windows アプリの場合は次のようになります。
 
-- ドキュメントの場合:**ファイル** > **情報** > **保護ドキュメント** > に**よるアクセスの制限**
+- ドキュメントの場合:**ファイル**  >  **情報**  >  **保護ドキュメント**に  >  **よるアクセスの制限**
 - 電子メールの場合: [**オプション**] タブから [**暗号化**] を > 
   
-ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 次に例を示します。
+ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 例:
 
 - ユーザーが**機密 \ All Employees**ラベルをドキュメントに適用します。このラベルは、組織内のすべてのユーザーの暗号化設定を適用するように構成されています。 このユーザーは、組織外のユーザーへのアクセスを制限するように IRM 設定を手動で構成します。 最終的には、"**社外秘**" というラベルが付けられた文書が作成されますが、組織内のユーザーは意図したとおりに開くことができません。
 
@@ -132,7 +132,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ドキュメントまたは電子メールに既にラベルが付けられている場合、ユーザーはこれらの操作を実行できます。コンテンツが暗号化されていない場合、または[利用状況](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)のエクスポートまたはフルコントロールがある場合です。 
 
-有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 次に例を示します。
+有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 例:
 
 - ユーザーが自分のアクセス許可を割り当てる必要がある例外の場合は、[ユーザーが自分のアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)ためのラベルを提供します。 
 

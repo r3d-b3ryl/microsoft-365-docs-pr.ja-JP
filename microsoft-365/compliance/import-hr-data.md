@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織の人事 (HR) システムから Microsoft 365 に従業員データをインポートするためのデータコネクタをセットアップすることができます。 これにより、社内リスク管理ポリシーの人事データを使用して、組織に内部の脅威をもたらす可能性がある特定のユーザーによるアクティビティを検出することができます。
-ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173487"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210573"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>コネクタをセットアップして人事データをインポートする
+# <a name="set-up-a-connector-to-import-hr-data-preview"></a>HR データをインポートするためのコネクタを設定する (プレビュー)
 
 Microsoft 365 コンプライアンスセンターでデータコネクタをセットアップして、従業員が resignation を提出した日付、従業員の最終日の日付などの人事データをインポートすることができます。 この人事データは、新しい[insider リスク管理ソリューション](insider-risk-management.md)などの Microsoft 情報保護ソリューションによって使用され、組織内の悪意のあるアクティビティやデータの盗難から組織を保護するのに役立ちます。 HR コネクタの設定では、コネクタによる認証に使用される Azure Active Directory でアプリを作成し、人事データを含む CSV マッピングファイルを作成し、コンプライアンスセンターでデータコネクタを作成して、CSV ファイル内の人事データを Microsoft クラウドに ingests するためのスクリプトを実行します (スケジュールに従って)。 その後、データコネクタは microsoft のコンプライアンスソリューション (insider リスク管理など) を使用して、Microsoft 365 組織にインポートされた人事データにアクセスします。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - 組織は、Office 365 インポートサービスが組織内のデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3で HR コネクタを正常に作成するには、この手順を完了する必要があります。
 
@@ -64,8 +64,8 @@ CSV ファイルの最初の行、つまりヘッダー行には、必要な列�
 |**列名**|**説明**|
 |:-----|:-----|
 | **EmailAddress** <br/> |退職した従業員の電子メールアドレスを指定します。|
-| **終了した日付** <br/> |組織で個人の雇用が正式に終了した日付を指定します。 たとえば、従業員が組織を離れたことについての通知を受け取った日付になることがあります。 この日付は、ユーザーの最終作業日の日付と異なる場合があります。 [ISO 8601 の日付と時刻](https://www.iso.org/iso-8601-date-and-time-format.html)の形式`yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`は、次の日付形式を使用する必要があります。|
-|**LastWorkingDate**|退職した従業員の最終作業日を指定します。 [ISO 8601 の日付と時刻](https://www.iso.org/iso-8601-date-and-time-format.html)の形式`yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`は、次の日付形式を使用する必要があります。|
+| **終了した日付** <br/> |組織で個人の雇用が正式に終了した日付を指定します。 たとえば、従業員が組織を離れたことについての通知を受け取った日付になることがあります。 この日付は、ユーザーの最終作業日の日付と異なる場合があります。 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 の日付と時刻の形式](https://www.iso.org/iso-8601-date-and-time-format.html)は、次の日付形式を使用する必要があります。|
+|**LastWorkingDate**|退職した従業員の最終作業日を指定します。 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 の日付と時刻の形式](https://www.iso.org/iso-8601-date-and-time-format.html)は、次の日付形式を使用する必要があります。|
 |||
 
 必要な人事データを使用して CSV ファイルを作成した後、手順4で実行したスクリプトと同じシステムに保存します。 また、スクリプトを実行するたびに、最新の従業員の終了データが Microsoft クラウドにアップロードされるように、CSV ファイルに常に最新の情報が含まれていることを確認するには、更新戦略を実装する必要があります。
@@ -74,7 +74,7 @@ CSV ファイルの最初の行、つまりヘッダー行には、必要な列�
 
 次の手順では、Microsoft 365 コンプライアンスセンターで人事コネクタを作成します。 手順4でスクリプトを実行すると、作成した HR コネクタが、CSV ファイルの人事データを Microsoft 365 組織に取り込みます。 この手順では、コネクタの作成時に生成された JobId をコピーしてください。 スクリプトを実行するときは、JobId を使用します。
 
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動し、左側のナビゲーションで [**データコネクタ**] をクリックします。
+1. に移動し [https://compliance.microsoft.com](https://compliance.microsoft.com) 、左側のナビゲーションで [**データコネクタ**] をクリックします。
 
 2. [**データコネクタ] (プレビュー)** ページで、[**人事**] の下にある [**表示**] をクリックします。
 
@@ -94,7 +94,7 @@ CSV ファイルの最初の行、つまりヘッダー行には、必要な列�
 
    コネクタが作成されたことを確認する [状態] ページが表示されます。 このページには、ジョブ ID も含まれます。 このジョブ ID は、次の手順でスクリプトを実行するために必要になります。 このページから、またはコネクタのポップアップページからコピーすることができます。
 
-7. [ **完了**] をクリックします。
+7. **[完了]** をクリックします。
    
    新しいコネクタが [**コネクタ**] タブの一覧に表示されます。 
 
@@ -118,7 +118,7 @@ HR コネクタを設定する最後の手順は、Microsoft クラウドに、C
 
 4. 必要に応じて、組織のサンプルスクリプトを変更します。
 
-5. ファイル名サフィックスを使用して、Windows PowerShell スクリプトファイルとしてテキスト`.ps1`ファイルを保存します。たとえば、 `HRConnector.ps1`のようになります。
+5. ファイル名のサフィックスを使用して、テキストファイルを Windows PowerShell スクリプトファイルとして保存し `.ps1` ます (例:) `HRConnector.ps1` 。
 
 6. ローカルコンピューターでコマンドプロンプトを開き、スクリプトを保存したディレクトリに移動します。
 
@@ -151,7 +151,7 @@ HR コネクタを設定する最後の手順は、Microsoft クラウドに、C
 
 HR コネクタを作成し、人事データをアップロードするスクリプトを実行した後、Microsoft 365 コンプライアンスセンターでコネクタとアップロードの状態を表示できます。 定期的にスクリプトを自動的に実行するようにスケジュールする場合は、最後にスクリプトを実行した後に現在の状態を表示することもできます。
 
-1. 左側の[https://compliance.microsoft.com](https://compliance.microsoft.com)ナビゲーションに移動し、[**データコネクタ**] をクリックします。
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com)左側のナビゲーションに移動し、[**データコネクタ**] をクリックします。
 
 2. [**コネクタ**] タブをクリックし、[HR] コネクタを選択して、コネクタに関するプロパティと情報を含むフライアウトページを表示します。
 
@@ -199,7 +199,7 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
    a. [**アクション**] ドロップダウンリストで、[**プログラムの開始**] が選択されていることを確認してください。
 
-   b. [**プログラム/スクリプト**] ボックスで [**参照**] をクリックし、次の場所に移動して、ボックス`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`にパスが表示されるようにします。
+   b. [**プログラム/スクリプト**] ボックスで [**参照**] をクリックし、次の場所に移動して、ボックスにパスが表示されるように `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` します。
 
    c.  [**引数を追加する (省略可能)** ] ボックスに、手順4で実行したのと同じスクリプトコマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
 

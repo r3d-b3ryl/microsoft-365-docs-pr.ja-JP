@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632519"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208038"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -35,7 +35,7 @@ ms.locfileid: "43632519"
 
 組織のサブスクリプションに含まれるものに応じて、セキュリティダッシュボードには、次のセクションで説明するように、脅威管理の概要、脅威の保護の状態、グローバルな週次の脅威の検出、マルウェアなど、いくつかのウィジェットが含まれています。
 
-セキュリティダッシュボードを表示するには、[セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)で、[**脅威管理** \> ]**ダッシュボード**に移動します。
+セキュリティダッシュボードを表示するには、[セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)で、[**脅威管理**] ダッシュボードに移動し \> **Dashboard**ます。
 
 > [!NOTE]
 > セキュリティダッシュボードを表示するには、全体管理者、セキュリティ管理者、またはセキュリティリーダーである必要があります。 一部のウィジェットには、表示するための追加のアクセス許可が必要です。 詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
@@ -61,7 +61,7 @@ ms.locfileid: "43632519"
 
 ![脅威保護状態ウィジェット](../../media/tpswidget.png)
 
-詳細は、Microsoft 365 サブスクリプションに[Office 365 Advanced Threat protection](office-365-atp.md) (ATP) を含むかどうかに関する[Exchange Online Protection](exchange-online-protection-eop.md) (EOP) が含まれているかどうかによって異なります。
+詳細は、Microsoft 365 サブスクリプションに[Office 365 Advanced Threat protection](office-365-atp.md) (ATP) を含むかどうかに関する[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) が含まれているかどうかによって異なります。
 
 |||
 |---|---|

@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Office 365 のセキュリティ & コンプライアンスセンターで、PowerShell スクリプトを使用して検索を作成したりレポートを実行したりするなど、コンテンツ検索タスクを自動化する方法について説明します。
-ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166078"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208141"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
  検索検索を迅速に作成およびレポートすることは、基礎となるデータについて学習しようとしているときに電子情報開示や調査を行う際に重要な手順です。 これを実現するために、セキュリティ & コンプライアンスセンターの PowerShell は、時間のかかるコンテンツ検索タスクを自動化する一連のコマンドレットを提供します。 これらのスクリプトを使用すると、多数の検索をすばやく簡単に作成し、予想される検索結果のレポートを実行して、問題のデータ量を判断するのに役立つことができます。 また、これらのスクリプトを使用して、それぞれの結果を比較するさまざまなバージョンの検索を作成することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - このトピックで説明するスクリプトを実行するには、セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
     
@@ -64,7 +64,7 @@ ms.locfileid: "44166078"
     |**パラメーター**|**説明**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |ユーザーのメールボックスの SMTP アドレス。  <br/> |
-    | `SharePointLocation` <br/> |ユーザーの OneDrive for Business サイトの URL、または組織内のサイトの URL。 OneDrive for Business サイトの URL の場合は、次` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `の形式を使用します。 例: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
+    | `SharePointLocation` <br/> |ユーザーの OneDrive for Business サイトの URL、または組織内のサイトの URL。 OneDrive for Business サイトの URL の場合は、次の形式を使用します ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` 。 例: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
     | `ContentMatchQuery` <br/> |検索の検索クエリ。 検索クエリの作成の詳細については、「[コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。  <br/> |
     | `StartDate` <br/> |電子メールの場合、メッセージが受信者によって受信された日付または送信者によって送信された日付。 SharePoint または OneDrive for Business サイトのドキュメントの場合は、ドキュメントが最後に変更された日付またはそれ以降の日付を指定します。  <br/> |
     | `EndDate` <br/> |電子メールの場合、ユーザーによって送信されたメッセージが送信された日付またはそれ以前の日付。 SharePoint または OneDrive for Business サイトのドキュメントの場合、ドキュメントが最後に変更された日付またはそれ以前の日付。  <br/> |
@@ -72,24 +72,10 @@ ms.locfileid: "44166078"
 3. Excel ファイルを CSV ファイルとして、ローカルコンピューター上のフォルダーに保存します。 手順3で作成したスクリプトでは、この CSV ファイルの情報を使用して検索を作成します。 
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: セキュリティ/コンプライアンス センターの PowerShell に接続する
-
-次の手順では、組織のセキュリティ & コンプライアンスセンターの PowerShell に接続します。
   
-1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `ConnectSCC.ps1`のようになります。 手順1で CSV ファイルを保存したのと同じフォルダーにファイルを保存します。
-    
-    ```powershell
-    # Get login credentials 
-    $UserCredential = Get-Credential 
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-    Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. ローカル コンピューター上で、Windows PowerShell を開き、前の手順で作成したスクリプトが配置されているフォルダーに移動し、スクリプトを実行します。例:
-    
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
+次に、組織のセキュリティ/コンプライアンス センターの PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
+  
+Microsoft 365 アカウントで多要素認証 (MFA) やフェデレーション認証を使用する場合、次のトピックの手順ではセキュリティ/コンプライアンス センターの PowerShell に接続できません。 代わりに、「[多要素認証を使用してセキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)」の手順を参照してください。
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>手順 3: スクリプトを実行して検索を作成および開始する
 
@@ -97,11 +83,11 @@ ms.locfileid: "44166078"
   
 - **検索グループ ID** -この名前は、CSV ファイルから作成された検索を簡単に整理する方法を提供します。 作成された各検索には、検索グループ ID が付けられ、検索名に数字が追加されます。 たとえば、検索グループ ID に「 **ContosoCase** 」と入力した場合、検索には**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**などの名前が付けられます。 入力する名前は大文字と小文字が区別されることに注意してください。 手順4と手順5で検索グループ ID を使用する場合は、作成時と同じケースを使用する必要があります。 
     
-- **Csv ファイル**-手順1で作成した csv ファイルの名前。 必ず完全なファイル名を指定してください。ファイル拡張子は .csv にします。たとえば、 `ContosoCase.csv`のようになります。
+- **Csv ファイル**-手順1で作成した csv ファイルの名前。 必ず完全なファイル名を指定してください。ファイル拡張子は .csv にします。たとえば、のように `ContosoCase.csv` なります。
     
 このスクリプトを実行するには、以下の手順を実行します。
 
-1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `CreateSearches.ps1`のようになります。 他のファイルを保存したのと同じフォルダーにファイルを保存します。
+1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、のように `CreateSearches.ps1` なります。 他のファイルを保存したのと同じフォルダーにファイルを保存します。
     
   ```Powershell
   # Get the Search Group ID and the location of the CSV input file
@@ -184,9 +170,9 @@ ms.locfileid: "44166078"
     .\CreateSearches.ps1
     ```
 
-3. [**検索グループ ID** ] プロンプトで、検索グループ名**を入力し、enter キーを**押します。たとえば、 `ContosoCase`のようになります。 この名前は大文字と小文字が区別されるので、以降の手順と同じ方法で入力する必要があることに注意してください。
+3. [**検索グループ ID** ] プロンプトで、検索グループ名**を入力し、enter キーを**押します。たとえば、のように `ContosoCase` なります。 この名前は大文字と小文字が区別されるので、以降の手順と同じ方法で入力する必要があることに注意してください。
     
-4. [**ソース csv ファイル**] プロンプトで、csv ファイル拡張子を含む csv ファイルの名前を入力します。たとえば、 `ContosoCase.csv`のようになります。
+4. [**ソース csv ファイル**] プロンプトで、csv ファイル拡張子を含む csv ファイルの名前を入力します。たとえば、のように `ContosoCase.csv` なります。
     
 5. **Enter**キーを押して、スクリプトの実行を続行します。 
     
@@ -198,7 +184,7 @@ ms.locfileid: "44166078"
 
 検索を作成した後、手順3で作成した各検索の検索ヒット数の簡単なレポートを表示するスクリプトを実行します。 レポートには、各検索の結果のサイズと、ヒットの合計数とすべての検索の合計サイズも含まれます。 レポートスクリプトを実行すると、検索グループ ID の入力を求められます。また、レポートを CSV ファイルに保存する場合は、CSV ファイル名を指定する必要があります。
   
-1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `SearchReport.ps1`のようになります。 他のファイルを保存したのと同じフォルダーにファイルを保存します。
+1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、のように `SearchReport.ps1` なります。 他のファイルを保存したのと同じフォルダーにファイルを保存します。
     
   ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
@@ -259,9 +245,9 @@ ms.locfileid: "44166078"
     .\SearchReport.ps1
     ```
 
-3. [**検索グループ ID** ] プロンプトで、検索グループ名**を入力し、enter キーを**押します。例`ContosoCase`を示します。 この名前は大文字と小文字が区別されるので、手順3でスクリプトを実行したときと同じ方法で入力する必要があります。
+3. [**検索グループ ID** ] プロンプトで、検索グループ名**を入力し、enter キーを**押します。例を示し `ContosoCase` ます。 この名前は大文字と小文字が区別されるので、手順3でスクリプトを実行したときと同じ方法で入力する必要があります。
     
-4. レポートを csv ファイルに保存するための**ファイルパス (空白のままに**してレポートを表示します) を入力します。レポートを csv ファイルに保存する場合は、完全なファイル名パス (.csv ファイル拡張子を含む) のファイル名を入力します。 csv ファイル拡張子を含む CSV ファイルの名前。 たとえば、現在のディレクトリに`ContosoCaseReport.csv`保存するか、別のフォルダーに保存`C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv`するように入力することができます。 また、メッセージを空白のままにしてレポートを表示することもできますが、ファイルに保存することはできません。 
+4. レポートを csv ファイルに保存するための**ファイルパス (空白のままに**してレポートを表示します) を入力します。レポートを csv ファイルに保存する場合は、完全なファイル名パス (.csv ファイル拡張子を含む) のファイル名を入力します。 csv ファイル拡張子を含む CSV ファイルの名前。 たとえば、 `ContosoCaseReport.csv` 現在のディレクトリに保存するか、 `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` 別のフォルダーに保存するように入力することができます。 また、メッセージを空白のままにしてレポートを表示することもできますが、ファイルに保存することはできません。 
     
 5. **[Enter]** キーを押します。
     
@@ -276,7 +262,7 @@ ms.locfileid: "44166078"
 
 多数の検索を作成している可能性があるため、この最後のスクリプトにより、手順3で作成した検索を簡単に削除できるようになります。 他のスクリプトと同様に、この1つは検索グループ ID の入力も求められます。 このスクリプトを実行すると、検索グループ ID が指定されている検索はすべて削除されます。 
   
-1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `DeleteSearches.ps1`のようになります。 他のファイルを保存したのと同じフォルダーにファイルを保存します。
+1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、のように `DeleteSearches.ps1` なります。 他のファイルを保存したのと同じフォルダーにファイルを保存します。
     
   ```Powershell
   # Delete all searches in a search group
@@ -298,7 +284,7 @@ ms.locfileid: "44166078"
     .\DeleteSearches.ps1
     ```
 
-3. [**検索グループ ID** ] プロンプトで、削除する検索の検索グループ名**を入力し、enter キーを**押します。たとえば、 `ContosoCase`のようになります。 この名前は大文字と小文字が区別されるので、手順3でスクリプトを実行したときと同じ方法で入力する必要があります。
+3. [**検索グループ ID** ] プロンプトで、削除する検索の検索グループ名**を入力し、enter キーを**押します。たとえば、のように `ContosoCase` なります。 この名前は大文字と小文字が区別されるので、手順3でスクリプトを実行したときと同じ方法で入力する必要があります。
     
     スクリプトは、削除された各検索の名前を表示します。
     

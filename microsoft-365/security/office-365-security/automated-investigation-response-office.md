@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035618"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208913"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Microsoft 365 の自動調査と応答 (AIR) の概要
 
@@ -68,6 +68,7 @@ ms.locfileid: "44035618"
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>セキュリティ プレイブックは段階的に展開されています
 
 セキュリティ プレイブックは AIR の一環として段階的に展開されています。 フェーズ 1 は現在一般公開されており、セキュリティ管理者が確認して承認できる処理に関する推奨事項を提供する、いくつかのプレイブックが含まれています。
+
 - ユーザーから報告されたフィッシング メッセージ
 - URL クリック判定の変更
 - 配信後のマルウェア検出 (マルウェア ZAP)
@@ -76,6 +77,7 @@ ms.locfileid: "44035618"
 フェーズ1には、管理者によってトリガーされた電子メール調査のサポート ([脅威エクスプローラー](threat-explorer.md)を使用) も含まれています。
 
 現在進行中のフェーズ 2 では、次のプレイブックが **パブリック プレビュー**中です。処理に関する推奨事項が提供され、セキュリティ管理者が問題を調査するのに役立っています。　
+
 - ユーザーから報告された侵害の発生 (パブリック プレビュー)
 
 追加のプレイブックは、出来上がり次第公開されます。 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap) にアクセスすると、準備中および近日公開予定のプレイブックを確認できます。
@@ -83,6 +85,7 @@ ms.locfileid: "44035618"
 ### <a name="playbooks-include-investigation-and-recommendations"></a>プレイブックには調査と推奨事項が含まれます
 
 AIR では、各セキュリティ プレイブックに含まれるものは次のとおりです。 
+
 - 電子メールのエンティティ (ファイル、Url、受信者、IP アドレスなど) のルート調査
 - 組織で受信した類似メールをさらに探す 
 - 他の潜在的な脅威を特定し、相関関係を特定するための手順 
@@ -95,6 +98,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 組織内のユーザーが、フィッシング詐欺であると思われる電子メールを受信したとします。 このようなメッセージを報告するようにトレーニングされたユーザーは、[レポートメッセージアドイン](enable-the-report-message-add-in.md)を使用して、分析のために Microsoft に送信します。 送信は、システムにも送信さ**れ、[送信] ビューの**エクスプローラーに表示されます (以前はユーザーによって**報告**されたビューと呼ばれています)。 さらに、ユーザーによって報告されたメッセージがシステムベースの情報通知をトリガーするようになります。これにより、調査のプレイブックが自動的に起動します。
 
 ルート調査フィーズでは、メールのさまざまな側面が評価されます。 これらには以下が含まれます。
+
 - 可能性のある脅威の種類の特定
 - 誰が送信したか
 - メールはどこから送信されたか (送信元のインフラストラクチャ)
@@ -110,8 +114,8 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 - 同様の電子メールメッセージは、電子メールクラスター検索によって識別されます。
 - シグナルが [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) などの他のプラットフォームと共有されます。
 - 不審なメール メッセージ内の悪意のあるリンクをユーザーがクリックしたかどうかが判断されます。
-- チェックは、Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) および Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) に対して実行され、ユーザーによって報告された他の類似メッセージがあるかどうかを確認します。
-- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックは、Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)、および[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)の間の信号を活用して、関連するすべてのユーザーアクティビティの異常を関連付けます。 
+- チェックは、Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) および Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) に対して実行され、ユーザーによって報告された他の類似メッセージがあるかどうかを確認します。
+- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックは、Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)、および[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)の間の信号を活用して、関連するすべてのユーザーアクティビティの異常を関連付けます。
 
 捜索フェーズでは、リスクと脅威がさまざまな捜索手順に割り当てられます。 
 
@@ -136,4 +140,3 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 - [空気の使用を開始する](office-365-air.md)
 
 - [Microsoft 365 ロードマップにアクセスして、近日公開予定の機能を確認する](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

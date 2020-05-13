@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、組織内の特定のユーザー、グループ、またはドメインに適用する送信スパムポリシーを構成する方法について説明します。
-ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: 管理者は、Exchange Online Protection (EOP) の送信スパムポリシーを表示、作成、変更、および削除する方法を学習できます。
+ms.openlocfilehash: 9970956c2d05a47032cd47b867b8b4e9e92abc29
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173442"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209573"
 ---
-# <a name="configure-outbound-spam-filtering"></a>送信スパム フィルターの構成
+# <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパムフィルターを構成する
 
-Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 顧客の場合、EOP を介して送信される送信電子メールメッセージは、スパムや通常の送信アクティビティに対して自動的にチェックされます。
+Exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange Online メールボックスを使用していない場合、EOP を介して送信される送信電子メールメッセージは、スパムや通常の送信アクティビティに対して自動的にチェックされます。365
 
 組織内のユーザーからの送信スパムは、通常、侵害されたアカウントを示しています。 疑わしい送信メッセージは、スパムの信頼レベルまたは SCL に関係なく、スパムとしてマークされ、[高リスクの配信プール](high-risk-delivery-pool-for-outbound-messages.md)を介してルーティングされます。これは、サービスの評価を保護するため (つまり、Microsoft 365 ソースの電子メールサーバーを IP 禁止一覧に保持する) します。 管理者は、疑わしい送信電子メールアクティビティとブロックされたユーザーに対して通知[ポリシー](../../compliance/alert-policies.md)を使用して自動的に通知を受け取ります。
 
@@ -35,7 +35,7 @@ EOP では、スパムに対する組織の全体的な防衛の一環として�
 
 管理者は、既定の送信スパムポリシーを表示、編集、および構成することはできますが、削除することはできません。 よりきめ細かく制御する場合は、組織内の特定のユーザー、グループ、またはドメインに適用するカスタムの送信スパムポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-送信スパムポリシーは、セキュリティ & コンプライアンスセンターまたは PowerShell (Microsoft 365 お客様の場合は Exchange Online PowerShell) で構成できます。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
+送信スパムポリシーは、セキュリティ & コンプライアンスセンターまたは PowerShell (exchange online のメールボックスを使用する Microsoft 365 組織の場合は exchange online PowerShell、exchange Online メールボックスがない組織の場合はスタンドアロン EOP PowerShell) で構成できます。
 
 ## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>セキュリティ & コンプライアンスセンター vs Exchange online PowerShell または Exchange Online Protection PowerShell の送信スパムポリシー
 
@@ -53,7 +53,7 @@ EOP の送信スパムポリシーの基本的な要素は次のとおりです�
 
 - 送信スパムポリシーをセキュリティ & コンプライアンスセンターから削除すると、送信スパムフィルタールールとそれに関連付けられた送信スパムフィルターポリシーが削除されます。
 
-Exchange Online PowerShell またはスタンドアロンの Exchange Online Protection の PowerShell では、送信スパムフィルターポリシーと送信スパムフィルタールールの違いが明らかです。 送信スパムフィルターポリシーを管理するには、 ** \*-HostedOutboundSpamFilterPolicy**コマンドレットを使用して、 ** \*-HostedOutboundSpamFilterRule**コマンドレットを使用して送信スパムフィルタールールを管理します。
+Exchange Online PowerShell またはスタンドアロンの Exchange Online Protection の PowerShell では、送信スパムフィルターポリシーと送信スパムフィルタールールの違いが明らかです。 送信スパムフィルターポリシーを管理するには、 ** \* -HostedOutboundSpamFilterPolicy**コマンドレットを使用して、 ** \* -HostedOutboundSpamFilterRule**コマンドレットを使用して送信スパムフィルタールールを管理します。
 
 - PowerShell では、送信スパムフィルターポリシーを最初に作成してから、ルールが適用されるポリシーを識別する送信スパムフィルタールールを作成します。
 
@@ -113,7 +113,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
         必要な回数だけこれらの手順を繰り返します。
 
-        追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するに![は、](../../media/scc-remove-icon.png)[削除] ボタンをクリックします。
+        追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するには、[ ![ 削除] ボタンをクリックし ](../../media/scc-remove-icon.png) ます。
 
      e.  完了したら、**[保存]** をクリックします。
 
@@ -136,7 +136,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
         必要な回数だけこれらの手順を繰り返します。
 
-        追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するに![は、](../../media/scc-remove-icon.png)[削除] ボタンをクリックします。
+        追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するには、[ ![ 削除] ボタンをクリックし ](../../media/scc-remove-icon.png) ます。
 
      e.  完了したら、**[保存]** をクリックします。
 
@@ -167,17 +167,17 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
        - このユーザーは、UTC 時間に基づいて、次の日まで、それ以上のメッセージを送信できなくなります。 管理者がこのブロックを上書きする方法はありません。
 
-     - **ユーザーがメールを送信する**のを制限する: 電子メール通知が送信され、ユーザーはセキュリティ & コンプライアンスセンターの**<https://sip.protection.office.com/restrictedusers> [制限付きユーザー]** ポータルに追加され、ユーザーは管理者によって**制限付きユーザー**ポータルから削除されるまで電子メールを送信できません。管理者がリストからユーザーを削除した後は、その日に対してユーザーが再度制限されることはありません。 手順については、「[迷惑メールの送信後に制限付きユーザーポータルからユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)」を参照してください。
+     - **ユーザーがメールを送信する**のを制限する: 電子メール通知が送信され、ユーザーはセキュリティ & コンプライアンスセンターの** <https://sip.protection.office.com/restrictedusers> [制限付きユーザー]** ポータルに追加され、ユーザーは管理者によって**制限付きユーザー**ポータルから削除されるまで電子メールを送信できません。管理者がリストからユーザーを削除した後は、その日に対してユーザーが再度制限されることはありません。 手順については、「[迷惑メールの送信後に制限付きユーザーポータルからユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)」を参照してください。
 
      - **アクションなし、通知のみ**: 電子メール通知が送信されます。
 
 6. 要する[**適用先**] セクションを展開して、ポリシーが適用される内部送信者を特定します。
 
-    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件または例外の複数の値を使用するか、ロジック (たとえば、 _ \<sender1\> _または_ \<sender2\>_) を使用します。 さまざまな条件や例外、およびロジック ( _ \<sender1\> _ 、 _ \<グループ\>1 のメンバー_など) を使用します。
+    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件または例外の複数の値を使用するか、ロジック (たとえば、 _ \< sender1 \> _または_ \< sender2 \> _) を使用します。 さまざまな条件や例外、およびロジック ( _ \< sender1 \> _ 、 _ \< グループ \> 1 のメンバー_など) を使用します。
 
     使用可能なすべての条件を表示するには、**[条件の追加]** を 3 回クリックするのが最も簡単です。 構成しない条件を削除するには、![[削除] ボタン](../../media/scc-remove-icon.png)をクリックします。
 
-    - **送信者ドメイン**: 構成された1つ以上の承認済みドメインで Office 365 に送信者を指定します。 **[タグの追加]** ボックスをクリックして、ドメインを表示および選択します。 複数のドメインが利用可能な場合は、**[タグの追加]** ボックスをもう一度クリックして、追加のドメインを選択します。
+    - **送信者ドメイン**: 構成されている1つ以上の承認済みドメインのうち、組織内の送信者を指定します。 **[タグの追加]** ボックスをクリックして、ドメインを表示および選択します。 複数のドメインが利用可能な場合は、**[タグの追加]** ボックスをもう一度クリックして、追加のドメインを選択します。
 
     - **Sender is**: 組織内の1人または複数のユーザーを指定します。 **[タグの追加]** をクリックして、リストをフィルター処理するための入力を始めます。 [**タグの追加**] ボックスをもう一度クリックして、追加の送信者を選択します。
 
@@ -191,7 +191,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
-2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、送信スパムポリシーを展開します。
+2. [**スパム対策設定**] ページで、[ ![ 展開] アイコンをクリックして、 ](../../media/scc-expand-icon.png) 送信スパムポリシーを展開します。
 
    - **送信スパムフィルターポリシー**という名前の既定のポリシー。
 
@@ -203,7 +203,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
-2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、送信スパムポリシーを展開します。
+2. [**スパム対策設定**] ページで、[ ![ 展開] アイコンをクリックして、 ](../../media/scc-expand-icon.png) 送信スパムポリシーを展開します。
 
    - **送信スパムフィルターポリシー**という名前の既定のポリシー。
 
@@ -221,7 +221,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
-2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、作成したカスタムポリシーを展開します ([**種類**] 列の値は、**カスタムの送信スパムポリシー**です)。
+2. [**スパム対策設定**] ページで、[ ![ 展開] アイコンをクリックして、作成した ](../../media/scc-expand-icon.png) カスタムポリシーを展開します ([**種類**] 列の値は、**カスタムの送信スパムポリシー**です)。
 
 3. 展開して表示されたポリシー詳細で、**[On]** 列の値をメモします。
 
@@ -243,11 +243,11 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 2. [**スパム対策設定**] ページで、[**種類**] 列の値が**カスタム送信スパムポリシー**であるポリシーを探します。 **[優先度]** 列の値に注目します。
 
-   - 優先度が最も高いカスタムの送信スパムポリシーには![、値の](../../media/ITPro-EAC-DownArrowIcon.png)下矢印アイコン**0**があります。
+   - 優先度が最も高いカスタムの送信スパムポリシーには、値の ![ 下矢印アイコン ](../../media/ITPro-EAC-DownArrowIcon.png) **0**があります。
 
-   - 最も低い優先度を持つカスタムの送信スパムポリシーに![は、上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) **n** ( ![上矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) **3**) の値が設定されています。
+   - 最も低い優先度を持つカスタムの送信スパムポリシーには、上矢印アイコン ![ ](../../media/ITPro-EAC-UpArrowIcon.png) **n** ( ![ 上矢印アイコン ](../../media/ITPro-EAC-UpArrowIcon.png) **3**) の値が設定されています。
 
-   - ユーザー設定の送信スパムポリシーが3つ以上ある場合、最高の優先度と最も低い優先![順位の間](../../media/ITPro-EAC-UpArrowIcon.png)![のポリシーは](../../media/ITPro-EAC-DownArrowIcon.png) 、上矢印アイコンの![下矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png)![ **n** (たとえば](../../media/ITPro-EAC-DownArrowIcon.png) 、上矢印アイコンを下矢印アイコン**2**) に設定します。
+   - ユーザー設定の送信スパムポリシーが3つ以上ある場合、最高の優先度と最も低い優先順位の間のポリシーは、上矢印アイコンの ![ ](../../media/ITPro-EAC-UpArrowIcon.png)![ 下矢印アイコン ](../../media/ITPro-EAC-DownArrowIcon.png) **n** (たとえば、 ![ 上矢印アイコンを下矢印アイコン 2) に設定し ](../../media/ITPro-EAC-UpArrowIcon.png)![ ](../../media/ITPro-EAC-DownArrowIcon.png) **2**ます。
 
 3. 上 ![矢印アイコン](../../media/ITPro-EAC-UpArrowIcon.png) または ![下矢印アイコンをクリックして](../../media/ITPro-EAC-DownArrowIcon.png) を押して、カスタムの送信スパムポリシーを優先順位一覧で上または下に移動します。
 
@@ -255,7 +255,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
-2. [**スパム対策設定**] ページで、[ ![展開]](../../media/scc-expand-icon.png)アイコンをクリックして、削除するカスタムポリシーを展開します ( **Type**列は**カスタム送信スパムポリシー**です)。
+2. [**スパム対策設定**] ページで、[ ![ 展開] アイコンをクリックして、 ](../../media/scc-expand-icon.png) 削除するカスタムポリシーを展開します ( **Type**列は**カスタム送信スパムポリシー**です)。
 
 3. 展開されたポリシー詳細で、**[ポリシーの削除]** をクリックします。
 
@@ -279,9 +279,9 @@ PowerShell で送信スパムポリシーを作成するには、2つの手順�
 
 - ポリシーを作成するまでは、セキュリティ & コンプライアンスセンターでは使用できない PowerShell の新しい送信スパムフィルターポリシーに対して、次の設定を構成できます。
 
-  - 新しいポリシーを無効として作成します ( **HostedOutboundSpamFilterRule**コマンドレットでは_有効_ `$false` )。
+  - 新しいポリシーを無効として_Enabled_作成し `$false` ます ( **HostedOutboundSpamFilterRule**コマンドレットでは有効)。
 
-  - **HostedOutboundSpamFilterRule**コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _ \<番号\>_)。
+  - **HostedOutboundSpamFilterRule**コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _ \< 番号 \> _)。
 
 - PowerShell で作成した新しい送信スパムフィルターポリシーは、そのポリシーをスパムフィルタールールに割り当てるまで、セキュリティ & コンプライアンスセンターに表示されません。
 

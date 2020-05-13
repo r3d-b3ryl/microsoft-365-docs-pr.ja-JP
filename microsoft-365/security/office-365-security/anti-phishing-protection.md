@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でのフィッシング対策保護
+title: フィッシング対策保護
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,13 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: この記事では、Microsoft 365 でのフィッシング対策のオプションと戦略について学習し、実装するために利用できるオンラインリソースについて説明します。
-ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) のフィッシング対策保護機能について学ぶことができます。
+ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033764"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208973"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 でのフィッシング対策保護
 
@@ -38,13 +38,13 @@ ms.locfileid: "44033764"
 
 - データを暗号化し、暗号化を解除するために支払いを要求する**ランサムウェア**は、常にフィッシングメッセージで開始します。 フィッシング対策保護は暗号化されたファイルの解読には役立ちませんが、ランサムウェアキャンペーンに関連付けられている最初のフィッシングメッセージを検出するのに役立ちます。 ランサムウェア攻撃からの回復の詳細については、「 [Microsoft 365 のランサムウェアからの回復](recover-from-ransomware.md)」を参照してください。
 
-攻撃の複雑さが増すにつれて、熟練したユーザーが高度なフィッシングメッセージを識別することが困難になります。 幸いなことに、Exchange Online Protection (EOP) と、Microsoft 365 Advanced Threat Protection (ATP) の追加機能が役立ちます。
+攻撃の複雑さが増すにつれて、熟練したユーザーが高度なフィッシングメッセージを識別することが困難になります。 幸いなことに、Exchange Online Protection (EOP) と Office 365 のその他の機能については、「Advanced Threat Protection (Office 365 ATP)」を参照してください。
 
 ## <a name="anti-phishing-protection-in-eop"></a>EOP でのフィッシング対策保護
 
 EOP (つまり、ATP を使用しない Microsoft 365 組織) には、組織をフィッシング脅威から保護するのに役立つ機能が含まれています。
 
-- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「[Microsoft 365 でのスプーフィング インテリジェンスを設定する](learn-about-spoof-intelligence.md)」を参照してください。
+- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「 [Configure スプーフ知能 IN EOP」](learn-about-spoof-intelligence.md)を参照してください。
 
 - **EOP のフィッシング対策ポリシー**: スプーフィングインテリジェンスを有効または無効にしたり、Outlook で認証されていない送信者の識別を有効または無効にしたり、ブロックされた送信者に対するアクションを指定したりします ([迷惑メール] フォルダーまたは検疫に移動)。 詳細については、「 [CONFIGURE EOP」の「フィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
 

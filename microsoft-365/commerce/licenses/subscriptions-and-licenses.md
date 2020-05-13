@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: 'Microsoft 365 for business のサブスクリプションとライセンスについて説明し、ライセンスを割り当てることができるユーザーと、ユーザーにライセンスを割り当てるときの動作を確認します。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635438"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211440"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Microsoft 365 for business のサブスクリプションとライセンスについて
 
@@ -58,10 +58,10 @@ Microsoft 365 for business のサブスクリプションを購入する際に�
   
 |**サブスクリプションにこのサービスがある場合**|**自動的に行われます**|
 |:-----|:-----|
-|Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。  <br/> |
+|Exchange Online  <br/> |そのユーザーのメールボックスが作成されます。  <br/> このタスクを完了するための SLA については、 [「セットアップ...」を参照してください。Microsoft 365 管理センターのメッセージ](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |既定の SharePoint Online チーム サイトの編集権限がそのユーザーに割り当てられます。  <br/> |
 |Skype for Business Online  <br/> |ライセンスに関連付けられた機能へのアクセス権がユーザーに割り当てられます。  <br/> |
-|エンタープライズ向け Microsoft 365 アプリ  <br/> |ユーザーは、最大 5 台の Mac または PC、5 台のタブレット、および 5 台のスマートフォンに Microsoft Office をダウンロードできます。  <br/> |
+|Microsoft 365 Apps for enterprise  <br/> |ユーザーは、最大 5 台の Mac または PC、5 台のタブレット、および 5 台のスマートフォンに Microsoft Office をダウンロードできます。  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>ユーザーが Office をインストールできるデバイスは何台ですか?
 
@@ -71,7 +71,7 @@ Microsoft 365 for business のサブスクリプションを購入する際に�
     
 - Microsoft 365 Business Standard
     
-- エンタープライズ向け Microsoft 365 アプリ
+- Microsoft 365 Apps for enterprise
     
 - Office 365 Enterprise E3
     

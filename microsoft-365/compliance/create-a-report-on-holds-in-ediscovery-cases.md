@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: この記事のスクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
-ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942900"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208379"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースの保留リストのレポートを作成する
   
@@ -41,27 +41,9 @@ ms.locfileid: "43942900"
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>手順 1: セキュリティ & コンプライアンスセンター PowerShell に接続する
 
-最初の手順として、組織のセキュリティ & コンプライアンスセンターに接続します。
+最初の手順として、組織のセキュリティ & コンプライアンスセンターの PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
   
-1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `ConnectSCC.ps1`のようになります。 
-    
-      ```powershell
-      # Get login credentials 
-      $UserCredential = Get-Credential 
-      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-      Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. ローカルコンピューターで、Windows PowerShell を開き、スクリプトを保存したフォルダーに移動します。 
-    
-3. スクリプトを実行します。例えば：
-
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
-
-4. 資格情報の入力を求められたら、電子メールアドレスとパスワードを入力し、[ **OK]** をクリックします。 
+Microsoft 365 アカウントで多要素認証 (MFA) やフェデレーション認証を使用する場合、次のトピックの手順ではセキュリティ/コンプライアンス センターの PowerShell に接続できません。 代わりに、「[多要素認証を使用してセキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell)」の手順を参照してください。
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>手順 2: 電子情報開示ケースに関連付けられている保留リストをレポートするスクリプトを実行する
 
@@ -172,15 +154,15 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     > [!TIP]
     > スクリプトが配置されているのと同じフォルダーにレポートを保存するには、ターゲットフォルダーの入力を求めるメッセージが表示されたら、ピリオド (".") を入力します。 スクリプトが配置されているフォルダー内のサブフォルダーにレポートを保存するには、サブフォルダーの名前を入力するだけです。 
   
-    このスクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。 スクリプトの実行中はレポートファイルにアクセスしないでください。 スクリプトが完了すると、Windows PowerShell セッションに確認メッセージが表示されます。 このメッセージが表示された後、手順4で指定したフォルダー内のレポートにアクセスできます。 レポートのファイル名は`CaseHoldsReport<DateTimeStamp>.csv`です。
+    このスクリプトは、組織内のすべての電子情報開示ケースに関する情報の収集を開始します。 スクリプトの実行中はレポートファイルにアクセスしないでください。 スクリプトが完了すると、Windows PowerShell セッションに確認メッセージが表示されます。 このメッセージが表示された後、手順4で指定したフォルダー内のレポートにアクセスできます。 レポートのファイル名は `CaseHoldsReport<DateTimeStamp>.csv` です。
 
-    さらでは、このスクリプトは、保留がないケースの一覧を含むレポートも作成します。 このレポートのファイル名は`CaseswithNoHolds<DateTimeStamp>.csv`です。
+    さらでは、このスクリプトは、保留がないケースの一覧を含むレポートも作成します。 このレポートのファイル名は `CaseswithNoHolds<DateTimeStamp>.csv` です。
     
     CaseHoldsReport スクリプトを実行する例を次に示します。 
     
     ![CaseHoldsReport スクリプトを実行した後の出力](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>More information
 
 この記事のスクリプトを実行したときに作成されるケース保持レポートには、各ホールドに関する以下の情報が含まれています。 前述のように、組織内のすべての保留リストに関する情報を返すには、電子情報開示管理者でなければなりません。 ケース保持の詳細については、「[電子情報開示ケース](ediscovery-cases.md)」を参照してください。
   

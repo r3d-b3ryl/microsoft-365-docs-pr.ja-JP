@@ -14,12 +14,12 @@ ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、PowerShell を使用して Microsoft Exchange Online Protection (EOP) のテナントに構成設定を適用する方法について説明します。
-ms.openlocfilehash: b875a6c7ba53f459a73699b250ee5ed4a206f1b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c25bafe9ece71264931d8f059dd726147a6d28a4
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035932"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209141"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>EOP 設定を複数のテナントに適用するスクリプトのサンプル
 
@@ -33,25 +33,25 @@ ms.locfileid: "44035932"
 
 3. .csv ファイルの各行で、テナントの管理者名を UserName 列に追加し、そのテナントのために実行するコマンドレットを Cmdlet 列に追加します。例えば、admin@contoso.com と Get-AcceptedDomain を使用します。
 
-4. [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) スクリプトをメモ帳などのエディターにコピーしてから, .psl ファイルを容易に見つけられる場所 (c:\scripts など) にファイルを保存します。
+4. スクリプトをメモ帳にコピーし、簡単に見つけられる場所 (c:\scripts など) にファイルを保存[します (](#runcmdletonmultipletenantsps1)例: c:\scripts)。
 
 5. 次の構文を使用して、スクリプトを実行します。
 
-   ```Powershell
+   ```powershell
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
    次に例を示します:
 
-   ```Powershell
+   ```powershell
    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. 各テナントへのログオンが行われて、コマンドレットが実行されます。
+6. 各テナントはにログオンされ、スクリプトが実行されます。
 
 ## <a name="runcmdletonmultipletenantsps1"></a>Runコマンドレット。 ps1
 
-```Powershell
+```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #

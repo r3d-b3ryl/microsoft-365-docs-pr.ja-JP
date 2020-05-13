@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630407"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208344"
 ---
 # <a name="manage-who-can-create-groups"></a>グループを作成できるユーザーを管理する
 
@@ -173,6 +173,8 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 グループ作成の制限をオフにして、もう一度すべてのユーザーがグループを作成できるようにするには、$GroupName を "" に、$AllowGroupCreation を "True" に設定して、スクリプトを再実行します。
     
 ## <a name="step-4-verify-that-it-works"></a>手順 4: 動作することを確認する
+
+変更が有効になるまでに30分以上かかる場合があります。 新しい設定を確認するには、次の手順を実行します。
 
 1. グループを作成する権限を持たないユーザーのユーザーアカウントでサインインします。 作成したセキュリティ グループのメンバーまたは管理者ではないユーザーのアカウントを使用します。
     

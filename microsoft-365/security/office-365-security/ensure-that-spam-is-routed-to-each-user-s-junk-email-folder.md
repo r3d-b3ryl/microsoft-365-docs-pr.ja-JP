@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection ハイブリッド環境でスパムをユーザーの迷惑メールフォルダーにルーティングする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036574"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209477"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>ハイブリッド環境で迷惑メールフォルダーにスパムを配信するようにスタンドアロン EOP を構成する
 
@@ -44,9 +44,9 @@ ms.locfileid: "44036574"
 このトピックでは、Exchange 管理センター (EAC) および社内 Exchange 組織の Exchange 管理シェル (Exchange PowerShell) で、これらのメールフロールールを作成する方法について説明します。
 
 > [!TIP]
-> オンプレミスのユーザーの迷惑メールフォルダーにメッセージを配信する代わりに、EOP でスパム対策ポリシーを構成して、EOP でスパムメッセージを検疫することができます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+> オンプレミスのユーザーの迷惑メールフォルダーにメッセージを配信する代わりに、EOP でスパム対策ポリシーを構成して、EOP でスパムメッセージを検疫することができます。 詳細については、「 [EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - これらの手順を実行する前に、オンプレミスの Exchange 環境でアクセス許可を割り当てる必要があります。 具体的には、既定では、**組織の管理**、**コンプライアンス管理**、および**レコード管理**の役割に割り当てられている**トランスポートルール**の役割が割り当てられている必要があります。 詳細については、「[役割グループにメンバーを追加する](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group)」を参照してください。
 
@@ -60,7 +60,7 @@ ms.locfileid: "44036574"
 
   - メールボックスで迷惑メールルールが有効になっているかどうか ( _enabled_パラメーターの値は、Exchange 管理シェルの[set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration)コマンドレットでは $true。 これは、配信後にメッセージを [迷惑メール] フォルダーに実際に移動する迷惑メールルールです。 既定では、メールボックスで迷惑メールルールが有効になっています。 詳細については、「[Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)」を参照してください。
   
-- Exchange サーバー上の EAC を開くには、「exchange [server の exchange 管理センター](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)」を参照してください。 Exchange 管理シェルを開くには、 [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell)「」を参照してください。
+- Exchange サーバー上の EAC を開くには、「exchange [server の exchange 管理センター](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)」を参照してください。 Exchange 管理シェルを開くには、「」を参照してください [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) 。
 
 - オンプレミスの Exchange のメールフロールールの詳細については、以下のトピックを参照してください。
 
@@ -74,7 +74,7 @@ ms.locfileid: "44036574"
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-2. [追加] アイコン](../../media/ITPro-EAC-AddIcon.png) **をクリックし**、表示されるドロップダウンで [**新しいルールの作成**] を選択します。 ![
+2. [追加] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-AddIcon.png) 、表示されるドロップダウンで [**新しいルールの作成**] を選択します。
 
 3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
@@ -88,15 +88,15 @@ ms.locfileid: "44036574"
 
    - [**その他のオプション**] をクリックします。
 
-   - [次の**場合、このルールを適用**する]:**メッセージヘッダー** \>を選択すると、**これらの単語のいずれかが含まれ**ます。
+   - [次の**場合、このルールを適用**する]:**メッセージヘッダーを選択すると**、 \> **これらの単語のいずれかが含まれ**ます。
 
      [**テキストのヘッダーに語句を入力**してください] が表示されている場合は、次の手順を実行します。
 
      - [**テキストの入力] を**クリックします。 表示される [**ヘッダー名の指定**] ダイアログで、「 **X-スパム対策-Report** 」と入力し、[ **OK**] をクリックします。
 
-     - [**単語の入力] を**クリックします。 表示された [**単語または語句の指定**] ダイアログボックスで、EOP スパムヘッダー値 (**sfv: SPM**、 **sfv: sfv**、または**sfv: SKB**) ![のいずれ](../../media/ITPro-EAC-AddIcon.png)かを入力し、 **[追加]** アイコンをクリックして、[ **OK]** をクリックします。
+     - [**単語の入力] を**クリックします。 表示された [**単語または語句の指定**] ダイアログボックスで、EOP スパムヘッダー値 (**SFV: SPM**、 **sfv: Sfv**、または**sfv: SKB**) のいずれかを入力し、 **[追加**] アイコンをクリックして、[ ![ ](../../media/ITPro-EAC-AddIcon.png) **OK]** をクリックします。
 
-   - **次の操作を行い**ます。 [ \> **メッセージのプロパティを変更する**] [**スパム信頼レベル (SCL) を設定**する] を選択します。
+   - **次の操作を行い**ます。 [**メッセージのプロパティを変更する**] [ \> **スパム信頼レベル (SCL) を設定**する] を選択します。
 
      表示される [ **SCL の指定**] ダイアログで、[ **6** ] (既定値は**5**) を選択します。
 
@@ -132,9 +132,9 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
 
 ハイブリッド環境で迷惑メールフォルダーにスパムを配信するようにスタンドアロン EOP が正常に構成されたことを確認するには、次のいずれかの手順を実行します。
 
-- EAC で、[**メールフロー** \> **ルール**] に移動し、ルールを選択してから、 **[edit** ![edit] アイコン](../../media/ITPro-EAC-EditIcon.png)をクリックして設定を確認します。
+- EAC で、[**メールフロー**ルール] に移動し、 \> **Rules**ルールを選択して**Edit**から、[edit ![ edit] アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) て設定を確認します。
 
-- Exchange 管理シェルで、RuleName \<\>をメールフロールールの名前に置き換え、次のコマンドを使用して設定を確認します。
+- Exchange 管理シェルで、RuleName を \< \> メールフロールールの名前に置き換え、次のコマンドを使用して設定を確認します。
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

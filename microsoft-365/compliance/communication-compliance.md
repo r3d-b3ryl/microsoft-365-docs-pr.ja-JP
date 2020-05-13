@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066240"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208389"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 
@@ -97,7 +97,7 @@ Microsoft 365 の通信コンプライアンスは、いくつかの新しい機
 
 通信コンプライアンスポリシーにより、複数の通信チャネル間でメッセージをスキャンおよびキャプチャし、コンプライアンスの問題をすばやく確認して修復することができます。
 
-- **Microsoft teams**: パブリックおよびプライベートの[microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)チャネルおよび個人チャットのチャット通信は、スタンドアロンチャネルソースとして、または他の microsoft 365 サービスとの通信コンプライアンスでサポートされています。 ポリシーで定義された特定のユーザーについてすべての Microsoft Teams チャネルと teams が自動的にスキャンされるようになったため、Microsoft Teams 割り当てに対して個別のマッピングリストを保持する必要がなくなりました。
+- **Microsoft teams**: パブリックおよびプライベートの[microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)チャネルおよび個人チャットのチャット通信は、スタンドアロンチャネルソースとして、または他の microsoft 365 サービスとの通信コンプライアンスでサポートされています。 通信コンプライアンスポリシーで監督するユーザーとグループを選択するときには、個別のユーザー、配布グループ、または特定の Microsoft Teams チャネルを手動で追加する必要があります。
 - **Exchange online**: Microsoft 365 組織の[exchange online](https://docs.microsoft.com/Exchange/exchange-online)でホストされているすべてのメールボックスは、スキャン対象となります。 通信コンプライアンスポリシーの条件に一致する電子メールと添付ファイルは、監視とコンプライアンスレポートですぐに使用できます。 Exchange Online はオプションのソースチャネルとなり、通信コンプライアンスポリシーでは不要になりました。
 - **Yammer**: [yammer](https://docs.microsoft.com/yammer/yammer-landing-page)でのプライベートメッセージとパブリックコミュニティの会話は、通信コンプライアンスポリシーでサポートされています。 Yammer はオプションのチャネルで、メッセージと添付ファイルのスキャンをサポートする[ネイティブモード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)である必要があります。
 - **Skype For Business online**: 通信コンプライアンスポリシーでは、 [Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)でのチャット通信と関連付けられた添付ファイルのスキャンをサポートしています。

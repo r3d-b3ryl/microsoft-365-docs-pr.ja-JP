@@ -15,26 +15,26 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 管理者は、メールフロールール (トランスポートルールとも呼ばれます) を使用して、ユーザーが Microsoft に報告するメッセージのコピーを受信する方法を学習できます。
-ms.openlocfilehash: 2b1e82ece936551c48e5617955f546cf851a8913
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: faafd8fb750259c192807349b63eee14279179de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939501"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208575"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
 
-「[レポートメッセージとファイル](report-junk-email-messages-to-microsoft.md)」で説明されているように、ユーザーが microsoft にメッセージを分析のために報告する方法は複数あります。
+Exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内のメールボックスを持つ Microsoft 365 組織では、「[レポートメッセージとファイル](report-junk-email-messages-to-microsoft.md)」で説明されているように、ユーザーが分析のために microsoft にメッセージを報告する方法が複数あります。
 
 ユーザーが Microsoft に報告するメッセージを検索するメールフロールール (トランスポートルールとも呼ばれます) を作成し、これらのレポートされたメッセージのコピーを受信するように Bcc 受信者を構成することができます。
 
-メールフロールールは、Exchange 管理センター (EAC) および PowerShell (Microsoft 365 お客様の場合は Exchange Online PowerShell) で作成できます。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
+Exchange 管理センター (EAC) および PowerShell (exchange online のメールボックスを使用する Microsoft 365 組織の場合は exchange Online PowerShell、exchange Online メールボックスを使用していない組織の場合はスタンドアロン EOP PowerShell) でメールフロールールを作成できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - これらの手順を実行する前に、Exchange Online または EOP でアクセス許可を割り当てる必要があります。 具体的には、既定では、**組織の管理**、**コンプライアンス管理**、および**レコード管理**の役割に割り当てられている**トランスポートルール**の役割が割り当てられている必要があります。 詳細については、「[Exchange Online で役割グループを管理する](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
 
-- EAC を開くには、「exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center) 」または「exchange [Admin Center In exchange online Protection](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
+- EAC を開くには、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center) 」または「exchange [admin CENTER in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -50,7 +50,7 @@ ms.locfileid: "43939501"
 
 1. EAC で、 **[メール フロー]** \> **[ルール]** に移動します。
 
-2. [追加] アイコン](../../media/ITPro-EAC-AddIcon.png) **をクリックし**、[**新しいルールの作成**] を選択します。 ![
+2. [追加] アイコン**をクリックし**、[ ![ ](../../media/ITPro-EAC-AddIcon.png) **新しいルールの作成**] を選択します。
 
 3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
@@ -58,14 +58,14 @@ ms.locfileid: "43939501"
 
    - [**その他のオプション**] をクリックします。
 
-   - [次の**場合にこのルールを適用**する]:**受信者** \> **のアドレスに次のいずれかの単語が含まれ**ます。表示される [**単語または語句の指定**] ダイアログで、次のいずれかの値を入力し、[ ![追加] アイコン](../../media/ITPro-EAC-AddIcon.png)をクリックして、すべての値を入力するまで繰り返します。 **Add**
+   - [次の**場合にこのルールを適用**する]:**受信者** \> **のアドレスに次のいずれかの単語が含まれ**ます。表示される [**単語または語句の指定**] ダイアログで、次のいずれかの値を入力し、[追加] アイコンをクリックして、 **Add** ![ ](../../media/ITPro-EAC-AddIcon.png) すべての値を入力するまで繰り返します。
 
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
      - `false_positive@messaging.microsoft.com`
 
-     エントリを編集するには、エントリを選択し、 **[編集]** ![[編集] アイコン](../../media/ITPro-EAC-EditIcon.png)をクリックします。 エントリを削除するには、エントリを選択し、 **[削除]** ![[削除] アイコン](../../media/ITPro-EAC-DeleteIcon.png)をクリックします。
+     エントリを編集するには、エントリを選択し、[編集] [編集] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-EditIcon.png) ます。 エントリを削除するには、エントリを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-DeleteIcon.png) ます。
 
      完了したら、 **[OK]** をクリックします。
 
@@ -89,7 +89,7 @@ New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressCo
 
 レポートされたメッセージのコピーを受信するメールフロールールが構成されていることを確認するには、次のいずれかの手順を実行します。
 
-- EAC で、 \> [**メールフロー** \> **ルール** \> ] に移動し、[**編集]** ![編集](../../media/ITPro-EAC-EditIcon.png)アイコンをクリックして設定を確認します。
+- EAC で、[**メールフロー** \> **ルール**] に移動し \> 、 \> [**編集** ![ ] 編集アイコンをクリックして ](../../media/ITPro-EAC-EditIcon.png) 設定を確認します。
 
 - PowerShell で、次のコマンドを実行して設定を確認します。
 

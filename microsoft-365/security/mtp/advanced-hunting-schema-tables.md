@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 93da55287c3b7d7498a9c25f4deeb2615da81675
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2b87ba629d956b904db6598186a2f2b95012a9ee
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633497"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209765"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
 **適用対象:**
 - Microsoft Threat Protection
-
-
 
 [高度な捜索](advanced-hunting-overview.md)スキーマは、イベント情報またはマシンとエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的に構築するには、高度な捜索スキーマのテーブルと列を理解する必要があります。
 
@@ -39,29 +37,31 @@ ms.locfileid: "43633497"
 
 | テーブル名 | 説明 |
 |------------|-------------|
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 重要な情報や脅威の分類など、Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からの通知  |
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | アラートに関連付けられているファイル、IP アドレス、Url、ユーザー、またはデバイス |
-| **[AccountInfo](advanced-hunting-accountinfo-table.md)** | Azure Active Directory を含む、さまざまなソースからのアカウント情報 |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 の電子メールイベント (電子メール配信およびブロックイベントを含む) |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 電子メールに添付されたファイルに関する情報 |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Microsoft 365 メールの Url に関する情報 |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 重要な情報や脅威の分類など、Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からの通知  |
+| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | クラウドアプリとサービスのファイル関連アクティビティ |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント  |
+| **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | エンドポイントの証明書検証イベントから取得された署名済みファイルの証明書情報 |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | ファイルの作成、変更、およびその他のファイル システム イベント |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL の読み込みイベント |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | OS 情報を含むマシン情報 |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | サインインとその他の認証イベント |
+| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | ネットワーク接続と関連イベント |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | アダプタ、IP アドレス、MAC アドレス、および接続されたネットワークとドメインを含むマシンのネットワーク プロパティ |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | プロセスの作成と関連イベント |
-| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | ネットワーク接続と関連イベント |
-| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | ファイルの作成、変更、およびその他のファイル システム イベント |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | レジストリ エントリの作成と変更 |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | サインインとその他の認証イベント |
-| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL の読み込みイベント |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント  |
-| **[DeviceFileCertificateInfoBeta](advanced-hunting-devicefilecertificateinfobeta-table.md)** | エンドポイントの証明書検証イベントから取得された署名済みファイルの証明書情報 |
-| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | デバイス上のソフトウェアのインベントリ、およびこれらのソフトウェア製品の既知の脆弱性 |
-| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-tvm-softwarevulnerability-table.md)** | 悪用コードが公開されているかどうかなど、公開されている脆弱性のサポート技術情報 |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-tvm-configassessment-table.md)** | デバイス上のさまざまなセキュリティ構成の状態を示す脅威および脆弱性管理の評価イベント |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-tvm-secureconfigkb-table.md)** | 脅威および脆弱性管理によってデバイスを評価するために使用されるさまざまなセキュリティ構成に関するサポート技術情報 (さまざまな標準およびベンチマークへのマッピングを含む)　  |
-| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | クラウドアプリとサービスのファイル関連アクティビティ |
+| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-tvm-softwareinventory-table.md)** | デバイス上のソフトウェアのインベントリ、およびこれらのソフトウェア製品の既知の脆弱性 |
+| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-tvm-softwarevulnerability-table.md)** | 悪用コードが公開されているかどうかなど、公開されている脆弱性のサポート技術情報 |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 電子メールに添付されたファイルに関する情報 |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 の電子メールイベント (電子メール配信およびブロックイベントを含む) |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Microsoft 365 メールの Url に関する情報 |
+| **[Id 情報](advanced-hunting-identityinfo-table.md)** | Azure Active Directory を含む、さまざまなソースからのアカウント情報 |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory およびその他の Microsoft online services によって記録された認証イベント |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Active Directory オブジェクト (ユーザー、グループ、デバイス、ドメインなど) に対して実行されるクエリアクティビティ |
+
+
 
 
 ## <a name="related-topics"></a>関連項目

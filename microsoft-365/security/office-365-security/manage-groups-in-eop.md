@@ -13,124 +13,178 @@ localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、exchange Online Protection (EOP) で Exchange 組織のメールが有効なグループを作成および管理する方法について説明します。
-ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Standalone Exchange Online Protection (EOP) 組織内の管理者は、Exchange 管理センター (EAC) とスタンドアロン Exchange Online Protection (EOP) PowerShell で、配布グループとメールが有効なセキュリティグループを作成、変更、および削除する方法を学習できます。
+ms.openlocfilehash: fc3f3807216b269a9868e87c5ec784d75385f878
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034404"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209021"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
- Exchange Online Protection (EOP) を使用すれば、Exchange 組織のメールが有効なグループを作成できます。また、EOP を使用してメンバーシップ、電子メール アドレス、グループのその他の側面を指定するグループのプロパティを定義または更新することもできます。必要に応じて配布グループとセキュリティ グループを作成できます。これらのグループは、Exchange 管理センター (EAC) を使用するか、リモートの Windows PowerShell を介して作成できます。
+Exchange Online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織では、次の種類のグループを作成、変更、および削除できます。
 
-## <a name="types-of-mail-enabled-groups"></a>メールが有効なグループの種類
+- **配布グループ**: メールユーザーまたは他の配布グループのコレクション。 たとえば、関係する共通領域で電子メールを送受信する必要がある teams やその他の臨時グループがあります。 配布グループは、電子メールメッセージの配布専用であり、セキュリティプリンシパルではありません (アクセス許可を割り当てることはできません)。
 
-Exchange 組織では、2 種類のグループを作成できます。
-
-- 配布グループは、チームやその他の臨時のグループなど、一般的な興味分野に関するメールを受信または送信する必要がある電子メールユーザーのコレクションです。 配布グループは電子メール メッセージの配布専用です。 EOP では、配布グループは、セキュリティに関連するかどうかにかかわらず、すべてのメールが有効なグループを意味します。
-
-- セキュリティグループは、管理者ロールのアクセス許可を必要とする電子メールユーザーのコレクションです。 たとえば、特定のユーザー グループに管理者役割アクセス許可を付与して、スパム対策設定とマルウェア対策設定を構成できるようにする場合があります。
+- **メールが有効なセキュリティグループ**: 管理者の役割に対するアクセス許可を必要とする、メールユーザーおよびその他のセキュリティグループのコレクション。 たとえば、特定のユーザーグループに管理者アクセス許可を付与して、スパム対策とマルウェア対策設定を構成できるようにする場合があります。
 
     > [!NOTE]
-    > 既定では、メールが有効なすべての新しいセキュリティ グループで、すべての送信者を認証する必要があります。これにより、外部の送信者はメールが有効なセキュリティ グループに対してメッセージを送信できなくなります。
+    > <ul><li>既定では、新しいメールが有効なセキュリティグループは、外部 (認証されていない) 送信者からのメッセージを拒否します。</li><li>メールが有効なセキュリティグループに配布グループを追加しないでください。</li></ul>.
 
-## <a name="before-you-begin"></a>開始する前に
+グループを管理するには、Exchange 管理センター (EAC) とスタンドアロン EOP PowerShell を使用します。
 
-- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[EOP の機能アクセス許可](feature-permissions-in-eop.md)」の「配布グループとセキュリティ グループ」。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Exchange 管理センターを開くには、「exchange [Online Protection の exchange 管理センター](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
+- Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- Exchange Online Protection の PowerShell コマンドレットを使用してグループを作成および管理する場合は、調整が発生する可能性があることに注意してください。
+- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- このトピックの PowerShell の手順では、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。
+- スタンドアロンの EOP PowerShell でグループを管理する場合、調整が発生する可能性があります。 このトピックの PowerShell の手順では、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。
 
-- Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、既定では、組織の管理 (グローバル管理者) および受信者管理役割グループに割り当てられている配布グループの役割が必要です。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、[役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
 
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 
 > [!TIP]
 > 問題がある場合は、 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラムでヘルプを要求します。
 
-## <a name="create-a-group-in-the-eac"></a>EAC でグループを作成する
+## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Exchange 管理センターを使用して配布グループを管理する
+
+### <a name="use-the-eac-to-create-groups"></a>EAC を使用してグループを作成する
 
 1. EAC で、 **[受信者]** \> **[グループ]** に移動します。
 
-2. 必要**New** ![に応じて](../../media/ITPro-EAC-AddIcon.gif)、[新規追加] アイコンをクリックし、[**配布グループ**] または [**セキュリティグループ**] をクリックします。
+2. [**新しい** ![ 新規作成] アイコンをクリックし、 ](../../media/ITPro-EAC-AddIcon.png) 次のいずれかのオプションを選択します。
 
-3. [**新しい配布グループ**] ページまたは [**新しいセキュリティグループ**] ページで、次の設定を構成します。
+   - **配布グループ**
 
-   - [**表示名**]: 組織に固有で、EOP ユーザーにとって意味のある表示名を入力します。 表示名は必須です。
+   - **メールが有効なセキュリティ グループ**
 
-   - **エイリアス**: 組織に固有の最大64文字のグループエイリアスを入力します。 EOP ユーザーが電子メール メッセージの宛先行にエイリアスを入力すると、グループの表示名に解読されます。 エイリアスを変更すると、グループのプライマリ SMTP アドレスも変更され、新しいエイリアスが追加されます。 エイリアスは必須です。
+3. 開いた [新しいグループ] ページで、次の設定を構成します。 でマークされた設定 <sup>\*</sup> は必須です。
 
-   - [**説明**]: グループの説明を入力します。これにより、ユーザーはグループの目的を知ることができます。
+   - <sup>\*</sup>[**表示名**]: この名前は、組織のアドレス帳、このグループに電子メールが送信されるときの宛先行、EAC の [**グループ**] リストに表示されます。 表示名は必須であり、一意である必要があります。わかりやすい名前にする必要があります。ユーザーがわかるようにします。
 
-   - **所有者**: 既定では、グループを作成したユーザーが所有者になります。 所有者を追加するには、[追加]](../../media/ITPro-EAC-AddIcon.gif) **[追加] アイコンを選択** ![します。 グループには、最低 1 人の所有者が必要です。
+   - <sup>\*</sup>**エイリアス**: このボックスを使用して、グループのエイリアス名を入力します。 エイリアスは64文字を超えることはできず、一意である必要があります。 ユーザーが電子メールメッセージの [宛先] 行にエイリアスを入力すると、グループの表示名に解決されます。
 
-     > [!NOTE]
-     > 所有者はグループのメンバーである必要はありません。
+   - <sup>\*</sup>**メールアドレス**: メールアドレスは、アットマーク記号 (@) の左側にあるエイリアスと、右側のドメインで構成されます。 既定では、エイリアスの値がエイリアスの値に使用**されます**が、これは変更できます。 [ドメイン] の値に対して、ドロップダウンをクリックして、組織内のドメインを選択して承認します。
 
-   - **メンバー**: グループメンバーを追加し、グループに参加または脱退するために承認が必要かどうかを指定するには、このセクションを使用します。 グループにメンバーを追加するには、[追加](../../media/ITPro-EAC-AddIcon.gif)] アイコン**をクリックし** ![ます。
+   - **説明**: この説明は、アドレス帳と EAC の詳細ウィンドウに表示されます。
 
-4. **[OK]** をクリックして元のページに戻ります。
+   - <sup>\*</sup>**所有者**: グループの所有者は、グループのメンバーシップを管理できます。 既定では、グループを作成するユーザーがグループの所有者になります。 グループには、最低 1 人の所有者が必要です。
 
-5. 完了したら、 **[保存]** をクリックしてグループを作成します。新しいグループがグループの一覧に表示されます。
+     所有者を追加するには **、[追加** ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。 表示されるダイアログで、受信者またはグループを見つけて選択し、[ **>**] をクリックします。 必要な回数だけこの手順を繰り返します。 完了したら、 **[OK]** をクリックします。
 
-## <a name="edit-or-remove-a-group-in-the-eac"></a>EAC でグループを編集または削除する
+     所有者を削除するには、所有者を選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
+
+   - **Members**: グループメンバーを追加および削除します。
+
+     メンバーを追加するには **、[追加** ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。 表示されるダイアログで、受信者またはグループを見つけて選択し、[ **>**] をクリックします。 必要な回数だけこの手順を繰り返します。 完了したら、 **[OK]** をクリックします。
+
+     メンバーを削除するには、メンバーを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
+
+4. 完了したら、[**保存**] をクリックして配布グループを作成します。
+
+### <a name="use-the-eac-to-modify-distribution-groups"></a>EAC を使用して配布グループを変更する
 
 1. EAC で、 **[受信者]** \> **[グループ]** に移動します。
 
-2. 次のいずれかの手順を実行します。
+2. グループの一覧で、変更する配布グループまたはメールが有効なセキュリティグループを選択し、[編集] 編集アイコン**をクリックし** ![ ](../../media/ITPro-EAC-AddIcon.png) ます。
 
-   - グループを編集するには、グループの一覧で、表示または変更するグループをクリックし、[編集アイコン**Edit** ![](../../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。 全般設定の更新、グループの所有者の追加または削除、および必要に応じてグループメンバーの追加または削除を行うことができます。
+3. 開いた配布グループのプロパティページで、次のタブのいずれかをクリックして、プロパティを表示または変更します。
 
-   - グループを削除するには、グループを選択し、[](../../media/ITPro-EAC-RemoveIcon.gif)削除 **] [** ![削除] アイコンをクリックします。
+   完了したら、**[保存]** をクリックします。
 
-3. 変更が完了したら、 **[保存]** をクリックします。
+#### <a name="general"></a>全般
 
-## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a>リモートの Windows PowerShell を使用してグループを作成、編集、または削除する
+このタブを使用して、グループに関する基本情報を表示または変更します。
 
-このセクションでは、グループを作成し、Exchange Online Protection の PowerShell でそのプロパティを変更する方法について説明します。 また、既存のグループを削除する方法も説明します。
+- [**表示名**]: この名前はアドレス帳、このグループに電子メールを送信するときの [宛先] 行、および [**グループ] リスト**に表示されます。 表示名は必須であり、ユーザーが内容を認識できるようにわかりやすい名前にする必要があります。 また、表示名は、ドメイン内で一意である必要があります。
 
-### <a name="create-a-group-using-remote-windows-powershell"></a>リモートの Windows PowerShell を使用してグループを作成する
+  グループの名前付けポリシーを実装している場合、表示名は、ポリシーで定義されている名前付け形式に従う必要があります。
 
-この例では、コマンドレット [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) を使用して、エイリアスが「itadmin」、名前が「IT Administrators」の配布グループを作成します。また、ユーザーをグループのメンバーとして追加します。
+- **エイリアス**: これは、電子メールアドレスの @ 記号の左に表示される部分です。 エイリアスを変更すると、グループのプライマリ SMTP アドレスも変更され、新しいエイリアスが含まれます。 また、以前のエイリアスが含まれている電子メール アドレスは、グループのプロキシ アドレスとして保持されます。
 
-```PowerShell
-New-EOPDistributionGroup -Type Distribution -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy Member1
+- **メールアドレス**: メールアドレスは、アットマーク記号 (@) の左側にあるエイリアスと、右側のドメインで構成されます。 既定では、エイリアスの値がエイリアスの値に使用**されます**が、これは変更できます。 [ドメイン] の値に対して、ドロップダウンをクリックして、組織内のドメインを選択して承認します。
+
+- **説明**: この説明は、アドレス帳と EAC の詳細ウィンドウに表示されます。
+
+#### <a name="ownership"></a>Ownership
+
+このタブを使用して、グループの所有者を割り当てます。 グループの所有者は、グループのメンバーシップを管理できます。 既定では、グループを作成するユーザーがグループの所有者になります。 グループには、最低 1 人の所有者が必要です。
+
+所有者を追加するには **、[追加** ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。 表示されるダイアログで、受信者を検索して選択し、[追加] をクリックし **>** します。 必要な回数だけこの手順を繰り返します。 完了したら、 **[OK]** をクリックします。
+
+所有者を削除するには、所有者を選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
+
+#### <a name="membership"></a>メンバーシップ
+
+グループ メンバーを追加または削除するには、このタブを使用します。 グループの所有者は、グループのメンバーである必要はありません。
+
+メンバーを追加するには **、[追加** ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。 表示されるダイアログで、受信者またはグループを見つけて選択し、[ **>**] をクリックします。 必要な回数だけこの手順を繰り返します。 完了したら、 **[OK]** をクリックします。
+
+メンバーを削除するには、メンバーを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
+
+### <a name="use-the-eac-to-remove-groups"></a>EAC を使用してグループを削除する
+
+1. EAC で、 **[受信者]** \> **[グループ]** に移動します。
+
+2. グループの一覧で、削除する配布グループを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
+
+## <a name="use-powershell-to-manage-groups"></a>PowerShell を使用してグループを管理する
+
+### <a name="use-standalone-eop-powershell-to-view-groups"></a>スタンドアロンの EOP PowerShell を使用してグループを表示する
+
+スタンドアロン EOP PowerShell のすべての配布グループとメールが有効なセキュリティグループの要約リストを返すには、次のコマンドを実行します。
+
+```powershell
+Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-**注**: 配布グループではなくセキュリティグループを作成するには、 `Security` *Type*パラメーターの値を使用します。
+グループメンバーの一覧を取得するには、 \< groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。
 
-IT 管理者グループが正常に作成されたことを確認するには、次のコマンドを実行して、新しいグループに関する情報を表示します。
-
-```PowerShell
-Get-Recipient "IT Administrators" | Format-List
+```powershell
+Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-構文およびパラメーターの詳細については、「 [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient)」を参照してください。
+構文およびパラメーターの詳細については、「 [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember) [」を参照して](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)ください。
 
-グループ内のメンバーの一覧を取得するには、次のコマンドを実行します。
+### <a name="use-standalone-eop-powershell-to-create-groups"></a>スタンドアロンの EOP PowerShell を使用してグループを作成する
 
-```PowerShell
-Get-DistributionGroupMember "IT Administrators"
-```
-
-構文およびパラメーターの詳細については、「 [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember)」を参照してください。
-
-すべてのグループの完全な一覧を取得するには、次のコマンドを実行します。
+スタンドアロン EOP PowerShell で配布グループまたはメールが有効なセキュリティグループを作成するには、次の構文を使用します。
 
 ```PowerShell
-Get-Recipient -RecipientType "MailUniversalDistributionGroup" | Format-Table | more
+New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">) [-Alias <text>] [-DisplayName "<Descriptive Name>"] [-Members @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">)] [-Notes "<Optional Text>"] [-PrimarySmtpAddress <SmtpAddress>] [-Type <Distribution | Security>]
 ```
 
-### <a name="change-the-properties-of-a-group-using-remote-windows-powershell"></a>リモート Windows PowerShell を使用してグループのプロパティを変更する
+**注**:
 
-EAC の代わりに PowerShell を使用する利点は、複数のグループのプロパティを変更できることです。
+- _Name_パラメーターは必須で、最大長は64文字で、一意である必要があります。 _DisplayName_パラメーターを使用しない場合、 _name_パラメーターの値が表示名として使用されます。
 
-Exchange Online Protection PowerShell を使用してグループのプロパティを変更する例を次に示します。
+- _Alias_パラメーターを使用しない場合、 _Name_パラメーターはエイリアスの値として使用されます。 スペースは削除されます。サポートされていない文字は疑問符 (?) に変換されます。
+
+- _Primarysmtpaddress_パラメーターを使用しない場合、エイリアスの値は_primarysmtpaddress_パラメーターで使用されます。
+
+- _Type_パラメーターを使用しない場合、既定値は Distribution になります。
+
+この例では、指定されたプロパティを使用して、IT 管理者という名前の配布グループを作成します。
+
+```PowerShell
+New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
+```
+
+構文およびパラメーターの詳細については、「 [New-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup)」を参照してください。
+
+### <a name="use-standalone-eop-powershell-to-modify-groups"></a>スタンドアロンの EOP PowerShell を使用してグループを変更する
+
+スタンドアロン EOP PowerShell でグループを変更するには、次の構文を使用します。
+
+```powershell
+Set-EOPDistributionGroup -Identity <GroupIdentity> [-Alias <Text>] [-DisplayName <Text>] [-ManagedBy @("User1","User2",..."UserN")] [-PrimarySmtpAddress <SmtpAddress>]
+
+```powershell
+Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","User2",..."UserN")
+```
 
 この例では、シアトルの従業員グループのプライマリ SMTP アドレス (返信アドレスとも呼ばれます) を sea.employees@contoso.com に変更します。
 
@@ -138,27 +192,22 @@ Exchange Online Protection PowerShell を使用してグループのプロパテ
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 ```
 
-構文およびパラメーターの詳細については、「 [Set-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)」を参照してください。
+この例では、セキュリティチームグループの現在のメンバーを、キティー Petersen Tyson Fawcett と置き換えます。
 
-グループのプロパティが正常に変更されたことを確認するには、次のコマンドを実行して新しい値を確認します。
-
-```PowerShell
-Get-Recipient "Seattle Employees" | Format-List "PrimarySmtpAddress"
+```powershell
+Update-EOPDistributionGroupMember -Identity "Security Team" -Members @("Kitty Petersen","Tyson Fawcett")
 ```
 
-この例では、シアトルの従業員グループのすべてのメンバーを更新します。 全メンバーをコンマを使用して区切ります。
+この例では、グループの現在のメンバーを保持しながら、Tyson Fawcett という名前の新しいユーザーをセキュリティチームという名前のグループに追加します。
 
-```PowerShell
-Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
+```powershell
+$CurrentMemberObjects = Get-DistributionGroupMember "Security Team"
+$CurrentMemberNames = $CurrentMemberObjects | % {$_.name}
+$CurrentMemberNames += "Tyson Fawcett"
+Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-構文およびパラメーターの詳細については、「 [update-eopdistributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)」を参照してください。
-
-シアトルの従業員グループのすべてのメンバーの一覧を取得するには、次のコマンドを実行します。
-
-```PowerShell
-Get-DistributionGroupMember "Seattle Employees"
-```
+構文およびパラメーターの詳細については、「 [update-eopdistributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)」[を参照してください](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)。
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>リモートの Windows PowerShell を使用してグループを削除する
 
@@ -170,8 +219,26 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
 
 構文およびパラメーターの詳細については、「[削除-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup)」を参照してください。
 
-グループが削除されたことを確認するには、次のコマンドを実行し、グループ (この場合は「It Administrators」) が削除されたことを確認します。
+## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
-```PowerShell
-Get-Recipient -RecipientType "MailUniversalDistributionGroup"
-```
+配布グループまたはメールが有効なセキュリティグループの作成、変更、または削除が正常に行われたことを確認するには、次のいずれかの手順を実行します。
+
+- EAC で、 **[受信者]** \> **[グループ]** に移動します。 グループが表示されている (またはリストされていない) ことを確認し、**グループの種類**の値を確認します。 グループを選択して、詳細ウィンドウに情報を表示するか、[編集アイコンの**編集**] をクリックして ![ 設定を表示し ](../../media/ITPro-EAC-AddIcon.png) ます。
+
+- スタンドアロン EOP PowerShell で次のコマンドを実行して、グループが一覧に表示されている (または一覧に表示されていない) ことを確認します。
+
+  ```PowerShell
+  Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
+  ```
+
+- \<Groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して設定を確認します。
+
+  ```PowerShell
+  Get-Recipient -Identity <GroupIdentity> | Format-List
+  ```
+
+- グループメンバーを表示するには、 \< groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。
+
+  ```PowerShell
+  Get-DistributionGroupMember -Identity "<GroupIdentity>"
+  ```

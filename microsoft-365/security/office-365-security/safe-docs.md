@@ -15,32 +15,37 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Office 365 ATP の安全なドキュメントについて説明します。
-ms.openlocfilehash: b70c7013ce038a3934b7ea5e62d1d0530f12e4e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b9e5a42b3d6be987170049ad5f0f451f8280fbff
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634318"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209165"
 ---
-# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office の安全なドキュメント 365 Advanced Threat Protection
+# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection の安全なドキュメント
 
-「安全なドキュメント」は、 [Microsoft Defender Advanced threat](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) protection (ATP) を使用して、[保護さ](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)れたビューで開かれたドキュメントやファイルをスキャンする Office 365 advanced threat protection (ATP) の機能です。
+「安全なドキュメント」は、 [Microsoft Defender Advanced threat](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) protection を使用して、[保護さ](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)れたビューで開かれたドキュメントやファイルをスキャンする、Office 365 Advanced threat PROTECTION (office 365 ATP) の機能です。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - この機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティライセンスを持つユーザーのみが使用できます。
 
 - 現在、安全なドキュメントはパブリックプレビューで利用できます。 office [Insider program](https://insider.office.com/en-us/join)の一部であるユーザーが office バージョン 2002 (12527.20092) 以上の ' 月次 Channel (対象指定) ' を使用することができます。 この機能は既定でオフになっており、セキュリティ管理者が有効にする必要があります。
 
-- 現時点では、US 地域のみが準拠しているファイル処理をサポートしています (すべてのファイルは、お客様がスキャンの対象地域に送られます)。 英国/EU 地域のサポートは、今後の更新プログラムで計画されます。
-
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 Exchange Online Protection PowerShell に接続するには、「 [Exchange Online protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- このトピックの手順を実行するには、あらかじめアクセス許可を割り当てる必要があります。 安全なドキュメントを有効にして構成するには、組織の**管理**役割グループまたは**セキュリティ管理者**役割グループのメンバーである必要があります。 セキュリティ & コンプライアンスセンターの役割グループの詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- このトピックの手順を実行するには、あらかじめアクセス許可を割り当てる必要があります。 安全なドキュメントを有効にして構成するには、組織の**管理**役割グループまたは**セキュリティ管理者**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+
+## <a name="how-does-microsoft-handle-your-data"></a>Microsoft はどのようにデータを処理していますか?
+
+保護された状態を維持するために、安全なドキュメントは、分析のために[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)クラウドにファイルを送信します。
+
+- Microsoft Defender Advanced Thread Protection がデータを処理する方法の詳細については、[こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)を参照してください。
+- 上記のガイドラインに加えて、安全なドキュメントによって送信されたファイルは、分析に必要な時間を超えて (通常は24時間未満)、Defender に保持されません。
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>セキュリティ & コンプライアンスセンターを使用して安全なドキュメントを構成する
 
-1. のセキュリティ & コンプライアンスセンター] を<https://protection.office.com>開きます。
+1. のセキュリティ & コンプライアンスセンター] を開き <https://protection.office.com> ます。
 
 2. [**脅威管理** \> **ポリシー** \> **ATP 安全な添付ファイル**] に移動します。
 

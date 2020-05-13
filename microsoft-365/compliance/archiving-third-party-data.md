@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 メールボックスにサードパーティのデータをインポートする方法について説明します。
-ms.openlocfilehash: 0db7019b607388b7c62fe19210b85b8410083f32
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2d011fcb63e0ec9804ade62f9fdcd1dd95fbf798
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035485"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210540"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
@@ -47,14 +47,14 @@ Microsoft 365 でサードパーティのデータをインポートしてアー
 
 - **セキュリティ & コンプライアンスセンターで、サードパーティのデータコネクタを使用します。** Microsoft 365 コンプライアンスセンターで利用可能なカスタムデータコネクタを使用します。 コネクタをセットアップして構成すると、サードパーティのデータソースに接続され、アイテムのコンテンツが電子メールメッセージの形式に変換されてから、Microsoft 365 のメールボックスにアイテムがインポートされます。 現時点では、Facebook ビジネスページ、企業 Twitter アカウント、LinkedIn、Instant Bloomberg、組織の人事 (HR) データのデータをインポートおよびアーカイブするためのコネクタを実装できます。 これらのコネクタの1つを設定するための詳しい手順については、以下を参照してください。
 
-   - **Facebook:** [コネクタを使用して Facebook データをアーカイブする](archive-facebook-data-with-sample-connector.md)
+   - **Facebook:** [コネクタを使用して facebook データをアーカイブする (プレビュー)](archive-facebook-data-with-sample-connector.md)
 
-   - **Twitter:** [コネクタを使用して twitter データをアーカイブする](archive-twitter-data-with-sample-connector.md)
+   - **Twitter:** [コネクタを使用して twitter データをアーカイブする (プレビュー)](archive-twitter-data-with-sample-connector.md)
 
    - **Linkedin:** [linkedin データをアーカイブするためのコネクタを設定する](archive-linkedin-data.md)
 
    - **インスタント Bloomberg:** [インスタント Bloomberg データをアーカイブするためのコネクタの設定](archive-instant-bloomberg-data.md)
 
-   - **人事データ:** [hr データをインポートするためのコネクタを設定する](import-hr-data.md)
+   - **人事データ:** [hr データをインポートするためのコネクタを設定する (プレビュー)](import-hr-data.md)
 
 - **Microsoft パートナーと連携する:** 組織は、サードパーティのデータソースからアイテムを定期的に抽出するように構成されるカスタムコネクタを提供する Microsoft パートナーと連携して、サードパーティの API によって Microsoft クラウドに接続し、それらのアイテムを Microsoft 365 にインポートします。 また、パートナーコネクタは、アイテムのコンテンツをサードパーティのデータソースから電子メールメッセージに変換し、それを Microsoft 365 のメールボックスにインポートします。 この方法で操作できるパートナーの一覧と、この方法のステップバイステップのプロセスについては、「 [Microsoft 365 でサードパーティのデータをアーカイブするためにパートナーと連携する](work-with-partner-to-archive-third-party-data.md)」を参照してください。

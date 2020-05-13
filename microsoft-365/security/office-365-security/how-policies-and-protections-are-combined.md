@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Office 365 の保護の適用順序、および保護ポリシーの優先度の値によってどのポリシーが適用されるかを決定する方法について説明します。
-ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、Exchange Online Protection (EOP) での保護の順序、および保護ポリシーの優先度の値によってどのようなポリシーが適用されるかを調べることができます。
+ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036718"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209441"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
-Microsoft 365 ユーザーとして、受信メールに複数の形式の保護によるフラグが設定されている場合があります。 たとえば、Microsoft 365 のすべてのお客様が利用できる組み込みの EOP フィッシング対策ポリシー、および Office 365 Advanced Threat Protection のお客様が利用できる、より堅牢な ATP のフィッシング対策ポリシーがあります。 メッセージも、マルウェア、スパム、フィッシングなどの複数の検出スキャンを通過します。このアクティビティがすべて与えられた場合、どのポリシーが適用されるかについて混乱が生じることがあります。
+Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange online メールボックスを使用していない場合、受信電子メールに複数の形式の保護によるフラグが設定されることがあります。365 たとえば、Microsoft 365 のすべてのユーザーが使用できる組み込みの EOP フィッシング対策ポリシー、および Office 365 Advanced Threat Protection (Office 365 ATP) のお客様が利用できる、より堅牢な ATP のフィッシング対策ポリシーがあります。 メッセージも、マルウェア、スパム、フィッシングなどの複数の検出スキャンを通過します。このアクティビティがすべて与えられた場合、どのポリシーが適用されるかについて混乱が生じることがあります。
 
 一般に、メッセージに適用されるポリシーは、 **CAT (Category)** プロパティの**スパム対策**ヘッダー内で識別されます。 詳細については、「[スパム対策メッセージ ヘッダー](anti-spam-message-headers.md)」を参照してください。
 
@@ -36,19 +36,19 @@ Microsoft 365 ユーザーとして、受信メールに複数の形式の保護
   |||||
   |---|---|---|---|
   |**[優先度]**|**電子メール保護**|**カテゴリ**|**管理対象**|
-  |1-d|マルウェア|CAT: 男性 W|[Office 365 でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
-  |pbm-2|フィッシング|CAT: PHSH|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |1/3|高確度スパム|CAT: HSPM|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |4 |スプーフィング|CAT: スプーフィング|[Office 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)|
-  |5 |スパム|CAT: SPM|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |6 |バルク|CAT: BULK|[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |7<sup>\*</sup>|ドメイン偽装 (保護されたユーザー)|DIMP|[Office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
-  |~<sup>\*</sup>|ユーザー偽装 (保護されたドメイン)|UIMP|[Office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
+  |1-d|マルウェア|CAT: 男性 W|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
+  |pbm-2|フィッシング|CAT: PHSH|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
+  |1/3|高確度スパム|CAT: HSPM|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
+  |4 |スプーフィング|CAT: スプーフィング|[EOP でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)|
+  |5 |スパム|CAT: SPM|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
+  |6 |バルク|CAT: BULK|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
+  |7<sup>\*</sup>|ドメイン偽装 (保護されたユーザー)|DIMP|[ATP フィッシング詐欺対策ポリシーを設定する](configure-atp-anti-phishing-policies.md)|
+  |~<sup>\*</sup>|ユーザー偽装 (保護されたドメイン)|UIMP|[ATP フィッシング詐欺対策ポリシーを設定する](configure-atp-anti-phishing-policies.md)|
   |
 
   <sup>\*</sup>これらの機能は、ATP のフィッシング対策ポリシーでのみ利用可能です。
 
-- **ポリシーの優先度**: 各保護の種類 (スパム対策、マルウェア対策、フィッシング詐欺対策など) について、すべてのユーザーに適用される既定のポリシーがありますが、多くの場合、特定のユーザーに適用するカスタムポリシーを作成することができます。 各カスタムポリシーには、ポリシーが適用される順序を決定する優先順位の値があります。 既定のポリシーは常に最後に適用されます。
+- **ポリシーの優先度**: 各保護の種類 (スパム対策、マルウェア対策、フィッシング詐欺対策など) について、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用するカスタムポリシーを作成することもできます。 各カスタムポリシーには、ポリシーが適用される順序を決定する優先順位の値があります。 既定のポリシーは常に最後に適用されます。
 
   ユーザーが同じ種類の複数のポリシーで定義されている場合、優先度の高いポリシーのみが適用されます。 その種類の残りのポリシーは、ユーザーに対して評価されません (既定のポリシーを含む)。
 

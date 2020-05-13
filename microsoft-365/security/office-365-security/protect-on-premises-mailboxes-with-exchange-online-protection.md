@@ -1,11 +1,11 @@
 ---
-title: オンプレミスのメールボックスを保護する-Exchange Online Protection
+title: スタンドアロン EOP を使用して中国の社内メールボックスを保護する
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/1/2017
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,15 +20,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、Exchange Online Protection (EOP) を使用してオンプレミスのメールボックスを保護する方法について説明します。
-ms.openlocfilehash: bdfebf16d77f26f3e3bb2890bd4aa8ccfa12f27b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 21Vianet が運営する Office 365 を使用した中国の管理者は、スタンドアロンの Exchange Online Protection (EOP) を使用してオンプレミスのメールボックスを保護する方法について説明します。
+ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033880"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208296"
 ---
-# <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Exchange Online Protection を使用して社内のメールボックスを保護する
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>スタンドアロン EOP を使用して中国の社内メールボックスを保護する
 
 > [!NOTE]
 > この記事は、中国で21Vianet が運営する Office 365 にのみ適用されます。
@@ -65,7 +65,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 ## <a name="step-5-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>手順 5: スパムが各ユーザーの迷惑メールフォルダーにルーティングされるようにする
 
-スパム (迷惑) メールがそれぞれのユーザーの迷惑メール フォルダーに正しくルーティングされることを保証するには、一組の構成手順を実行する必要があります。 この手順は、[ハイブリッド環境の迷惑メールフォルダーにスパムを配信するように、[スタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)] で提供されています。 メッセージをそれぞれのユーザーの迷惑メール フォルダーに移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集すると別のアクションを選択できます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+スパム (迷惑) メールがそれぞれのユーザーの迷惑メール フォルダーに正しくルーティングされることを保証するには、一組の構成手順を実行する必要があります。 この手順は、[ハイブリッド環境の迷惑メールフォルダーにスパムを配信するように、[スタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)] で提供されています。 メッセージを各ユーザーの迷惑メールフォルダーに移動しない場合は、スパム対策ポリシー (コンテンツフィルターポリシーとも呼ばれる) を編集して別のアクションを選択することができます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 

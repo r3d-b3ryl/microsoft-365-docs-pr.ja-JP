@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: 認証されていない電子メールを正規に送信している送信者をすばやく判断する方法など、新しいスプーフィングインテリジェンスの洞察がどのように機能するかについて説明します。
+description: 管理者は、どの送信者が認証されていない電子メールを正規に送信しているかをすばやく判断する方法を含め、スプーフィングインテリジェンスの理解のしくみを理解できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033646"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208466"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>チュートリアル-Microsoft 365 での ATP のスプーフに関する知識の理解
 
@@ -35,7 +35,7 @@ Advanced Threat Protection (ATP) を使用した Microsoft 365 の組織では�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ **Security dashboard** ] ページに直接移動するに<https://protection.office.com/searchandinvestigation/dashboard>は、を使用します。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ **Security dashboard** ] ページに直接移動するには、を使用 <https://protection.office.com/searchandinvestigation/dashboard> します。
 
   セキュリティ & コンプライアンスセンターでは、複数のダッシュボードからスプーフィングインテリジェンスの洞察を確認できます。 どのダッシュボードを使用しているかに関係なく、洞察は同じ情報を提供し、同じタスクをすばやく実行することができます。
 
@@ -47,7 +47,7 @@ Advanced Threat Protection (ATP) を使用した Microsoft 365 の組織では�
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでのスプーフィングインテリジェンスに関する洞察を開く
 
-1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> ] ダッシュボードに移動し**ます。**
+1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理**] ダッシュボードに移動し \> **ます。**
 
 2. [ **Insights** ] 行で、次のいずれかのアイテムを探します。
 
@@ -69,7 +69,7 @@ Advanced Threat Protection (ATP) を使用した Microsoft 365 の組織では�
 
    **ドメインペア**は、From アドレスと送信元インフラストラクチャの組み合わせです。
 
-   - From アドレスは、電子メールクライアントに表示される送信者の電子メールアドレスです。 このアドレスにより、電子メールの作成者を識別します。 つまり、メッセージを書いた個人またはシステムのメールボックスになります。 このアドレスは、 `5322.From`アドレスとも呼ばれます。
+   - From アドレスは、電子メールクライアントに表示される送信者の電子メールアドレスです。 このアドレスにより、電子メールの作成者を識別します。 つまり、メッセージを書いた個人またはシステムのメールボックスになります。 このアドレスは、アドレスとも呼ばれ `5322.From` ます。
 
    - 送信元のインフラストラクチャまたは送信者は、送信元 IP アドレスの逆引き DNS 参照 (PTR レコード) の組織ドメインです。 送信元の IP アドレスに PTR レコードがない場合、送信元の IP アドレスは、CIDR 表記法 (/24) で255.255.255.0 サブネットマスクを使用して識別されます。 たとえば、IP アドレスが192.168.100.100 の場合、送信者の完全な IP アドレスは 192.168.100.100/24 です。
 

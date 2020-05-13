@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、管理者が Office 365 でユーザーの検疫済みメッセージやファイルを管理する方法について説明します。
-ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Office 365 Advanced Threat Protection (Office 365 ATP) を使用している組織内の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを管理することもできます。
+ms.openlocfilehash: 0f0dd7ee14aeb4558674a6e2240e022df3c489fc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036175"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209009"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>管理者として検疫済みメッセージとファイルを管理する
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP で管理者として検疫済みメッセージおよびファイルを管理する
 
-検疫を実行すると、Exchange Online メールボックスを使用している Microsoft 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織の危険性の高いメッセージや不要なメッセージが保留にされます。 詳細については、「[Office 365 での検疫](quarantine-email-messages.md)」を参照してください。
+Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange online メールボックスがない場合、検疫は潜在的に危険または不要なメッセージを保持します。365 詳細については、「EOP での検疫された[電子メールメッセージ](quarantine-email-messages.md)」を参照してください。
 
 管理者は、すべてのユーザーのすべての種類の検疫済みメッセージを表示、リリース、および削除できます。 マルウェア、精度の高いフィッシング、またはメールフロールール (トランスポートルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは、管理者だけです。 管理者は、誤検知を Microsoft に報告することもできます。
 
-Office 365 の管理者は、事前脅威保護 (ATP) を使用して、SharePoint Online、OneDrive for Business、Microsoft Teams の検疫されたファイルを表示、ダウンロード、および削除することもできます。
+Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織での管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを表示、ダウンロード、および削除することもできます。
 
-検疫済みメッセージを表示して管理するには、セキュリティ & コンプライアンスセンターまたは PowerShell (Microsoft 365 お客様の場合は Exchange Online PowerShell) を使用します。Exchange Online Protection PowerShell (スタンドアロン EOP のお客様向け)。
+検疫されたメッセージを表示して管理するには、セキュリティ & コンプライアンスセンターまたは PowerShell (exchange online にメールボックスを持つ Microsoft 365 組織の場合は exchange Online PowerShell、Exchange Online メールボックスを使用していない組織の場合はスタンドアロン EOP PowerShell) を使用します。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
@@ -46,8 +46,6 @@ Office 365 の管理者は、事前脅威保護 (ATP) を使用して、SharePoi
 - 検疫済みメッセージは、自動的に削除されるまで既定の期間保持されます。
 
   - スパム対策ポリシー (スパム、フィッシング、およびバルクメール) によって検疫されたメッセージ:30 日。 これは既定値で、最大値です。 この値を構成するには、「[スパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
-
-1. 組織内のグローバル管理者特権 (または適切なセキュリティ & コンプライアンスセンターの役割) を持つ職場または学校のアカウントを使用して、サインインし、[セキュリティ & コンプライアンスセンターに移動](../../compliance/go-to-the-securitycompliance-center.md)します。
 
   - マルウェアを含むメッセージ:15 日。
 
@@ -74,8 +72,6 @@ Office 365 の管理者は、事前脅威保護 (ATP) を使用して、SharePoi
    - **[解放済み?]**<sup>\*</sup>
 
    - **[ポリシーの種類]**<sup>\*</sup>
-
-1. 組織内のグローバル管理者特権 (または適切なセキュリティ & コンプライアンスセンターの役割) を持つ職場または学校のアカウントを使用して、サインインし、[セキュリティ & コンプライアンスセンターに移動](../../compliance/go-to-the-securitycompliance-center.md)します。
 
    - **[受信者]**
 
@@ -125,7 +121,7 @@ Office 365 の管理者は、事前脅威保護 (ATP) を使用して、SharePoi
 
    - **[メッセージ ID]**: メッセージのグローバル一意識別子。
 
-        たとえば、[メッセージ追跡](message-trace-scc.md)を使用して、組織内のユーザーに送信されたメッセージを検索したときに、メッセージが配信される代わりに検疫されたことを判断したとします。 山かっこ (\<\>) が含まれる可能性がある完全なメッセージ ID 値を含めるようにしてください。 例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
+     たとえば、[メッセージ追跡](message-trace-scc.md)を使用して、組織内のユーザーに送信されたメッセージを検索したときに、メッセージが配信される代わりに検疫されたことを判断したとします。 山かっこ () が含まれる可能性がある完全なメッセージ ID 値を含めるようにしてください \< \> 。 例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **[送信者のメール アドレス]**: 単一の送信者のメール アドレス。
 
@@ -240,7 +236,7 @@ ATP を使用している組織では、管理者は SharePoint Online、OneDriv
 
 2. 検疫された**ビュー**を既定値**ファイル**に変更します。 利用可能な列見出しをクリックすることで、フィールドに対して並べ替えを行うことができます。
 
-3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 **[列の変更]** をクリックして、最大で 7 列まで表示できます。 既定の列には、アスタリスク (<sup>\*</sup>) のマークが付いています。
+3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 **[列の変更]** をクリックして、最大で 7 列まで表示できます。 既定の列には、アスタリスク () のマークが付いてい <sup>\*</sup> ます。
 
    - [**User**<sup>\*</sup>]
 
