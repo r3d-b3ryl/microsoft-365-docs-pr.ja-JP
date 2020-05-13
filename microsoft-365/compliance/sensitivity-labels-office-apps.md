@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: 5a5b793358364efdd725de5478318a8237d78ca8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39ab61a13af311339174c0e37a10f4637f51ba84
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208071"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213307"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -169,9 +169,9 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 OneDrive for business または SharePoint Online のドキュメントに対して web 上の office に office の組み込みラベルクライアントを使用するには、[プレビュー] をオンにして、 [sharepoint および onedrive で office ファイルの機密ラベルを有効](sensitivity-labels-sharepoint-onedrive-files.md)にしていることを確認してください。
 
-## <a name="when-office-365-applies-content-marking-and-encryption"></a>Office 365 がコンテンツマーキングと暗号化を適用する場合
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office アプリがコンテンツのマーキングと暗号化を適用するとき
 
-Office 365 では、使用しているアプリによって、機密ラベル付きのコンテンツマーキングと暗号化が異なる方法で適用されます。
+Office アプリは、使用するアプリによっては、機密ラベル付きのコンテンツマーキングと暗号化を異なる方法で適用します。
 
 | アプリ | コンテンツのマーケティング | 暗号化 |
 | --- | --- | --- |
@@ -179,6 +179,22 @@ Office 365 では、使用しているアプリによって、機密ラベル付
 | Outlook for PC と Outlook for Mac | Exchange Online が電子メールを送信した後 | 直ちに |
 | Outlook on the web、iOS、および Android | Exchange Online が電子メールを送信した後 | Exchange Online が電子メールを送信した後 |
 |
+
+Office アプリの外部のファイルに機密ラベルを適用するソリューションは、ファイルにラベル付きメタデータを適用します。 このシナリオでは、ラベルの構成からのコンテンツマークはファイルに挿入されませんが、暗号化が適用されます。 
+
+これらのファイルが Office デスクトップアプリで開かれると、コンテンツマーキングは Azure Information Protection のユニファイドラベルクライアントによって自動的に適用されます。 デスクトップ、モバイル、または web アプリに組み込みのラベル付けを使用しても、コンテンツマーキングは自動的には適用されません。
+
+Office アプリの外部に機密ラベルを適用する方法には、次のようなシナリオがあります。
+
+- Azure Information Protection の統一されたラベル付けクライアントからのスキャナー、ファイルエクスプローラー、および PowerShell 
+
+- SharePoint および OneDrive の自動ラベル付けポリシー
+
+- Power BI からラベル付きで暗号化されたデータのエクスポート
+
+- Microsoft Cloud App Security
+
+これらのシナリオでは、Office アプリを使用することにより、組み込みのラベルを持つユーザーは、一時的に現在のラベルを削除または置換してから、元のラベルを再適用することで、ラベルのコンテンツマーキングを適用できます。
 
 ## <a name="end-user-documentation"></a>エンドユーザードキュメント
 

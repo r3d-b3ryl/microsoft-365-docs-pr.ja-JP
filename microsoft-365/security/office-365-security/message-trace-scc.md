@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209429"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44212988"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -27,7 +27,7 @@ ms.locfileid: "44209429"
 セキュリティ & コンプライアンスセンターのメッセージ追跡は、Exchange 管理センター (EAC) で使用可能だった元のメッセージ追跡によって改善されています。 メッセージ追跡からの情報を使用して、メッセージへの対処、メールフローの問題のトラブルシューティング、およびポリシーの変更の検証について、ユーザーからの質問に効率よく答えられるようにすることができます。
 
 > [!NOTE]
-> •メッセージ追跡を行うには、組織の管理、コンプライアンス管理、またはヘルプデスクの役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 <br/><br/>•結果に表示されるメッセージの最大数は、選択したレポートの種類によって異なります (詳細については、「[レポートの種類を選択](#choose-report-type)する」セクションを参照してください)。 Exchange Online PowerShell または Exchange Online Protection PowerShell の[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch)コマンドレットは、結果のすべてのメッセージを返します。
+> •メッセージ追跡を行うには、組織の管理、コンプライアンス管理、またはヘルプデスクの役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 <br/><br/>•結果に表示されるメッセージの最大数は、選択したレポートの種類によって異なります (詳細については、「[レポートの種類を選択](#choose-report-type)する」セクションを参照してください)。 Exchange Online PowerShell またはスタンドアロン EOP PowerShell の[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch)コマンドレットは、結果のすべてのメッセージを返します。
 
 ## <a name="open-message-trace"></a>メッセージ追跡を開く
 
