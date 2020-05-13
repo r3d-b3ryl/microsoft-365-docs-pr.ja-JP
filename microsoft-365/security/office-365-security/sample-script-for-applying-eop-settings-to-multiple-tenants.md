@@ -14,44 +14,44 @@ ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、PowerShell を使用して Microsoft Exchange Online Protection (EOP) のテナントに構成設定を適用する方法について説明します。
-ms.openlocfilehash: b875a6c7ba53f459a73699b250ee5ed4a206f1b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c25bafe9ece71264931d8f059dd726147a6d28a4
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035932"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209141"
 ---
-# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="40a96-103">EOP 設定を複数のテナントに適用するスクリプトのサンプル</span><span class="sxs-lookup"><span data-stu-id="40a96-103">Sample script for applying EOP settings to multiple tenants</span></span>
+# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="fb9ca-103">EOP 設定を複数のテナントに適用するスクリプトのサンプル</span><span class="sxs-lookup"><span data-stu-id="fb9ca-103">Sample script for applying EOP settings to multiple tenants</span></span>
 
-<span data-ttu-id="40a96-104">以下のサンプル スクリプトにより、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Windows PowerShell を使用して構成設定をテナントに適用できます。</span><span class="sxs-lookup"><span data-stu-id="40a96-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.</span></span>
+<span data-ttu-id="fb9ca-104">以下のサンプル スクリプトにより、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Windows PowerShell を使用して構成設定をテナントに適用できます。</span><span class="sxs-lookup"><span data-stu-id="fb9ca-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.</span></span>
 
-## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="40a96-105">複数のテナントでスクリプトまたはコマンドレットを実行するには</span><span class="sxs-lookup"><span data-stu-id="40a96-105">To run a script or cmdlet on multiple tenants</span></span>
+## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="fb9ca-105">複数のテナントでスクリプトまたはコマンドレットを実行するには</span><span class="sxs-lookup"><span data-stu-id="fb9ca-105">To run a script or cmdlet on multiple tenants</span></span>
 
-1. <span data-ttu-id="40a96-106">Excel などのアプリケーションを使用して, .csv ファイル (c:\scripts\inputfile.csv など) を作成します。</span><span class="sxs-lookup"><span data-stu-id="40a96-106">Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):</span></span>
+1. <span data-ttu-id="fb9ca-106">Excel などのアプリケーションを使用して, .csv ファイル (c:\scripts\inputfile.csv など) を作成します。</span><span class="sxs-lookup"><span data-stu-id="fb9ca-106">Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):</span></span>
 
-2. <span data-ttu-id="40a96-107">.csv ファイルで、次の 2 つの列名を指定します。「UserName」および「Cmdlet」。</span><span class="sxs-lookup"><span data-stu-id="40a96-107">In the .csv file, specify two column names: UserName and Cmdlet.</span></span>
+2. <span data-ttu-id="fb9ca-107">.csv ファイルで、次の 2 つの列名を指定します。「UserName」および「Cmdlet」。</span><span class="sxs-lookup"><span data-stu-id="fb9ca-107">In the .csv file, specify two column names: UserName and Cmdlet.</span></span>
 
-3. <span data-ttu-id="40a96-p101">.csv ファイルの各行で、テナントの管理者名を UserName 列に追加し、そのテナントのために実行するコマンドレットを Cmdlet 列に追加します。例えば、admin@contoso.com と Get-AcceptedDomain を使用します。</span><span class="sxs-lookup"><span data-stu-id="40a96-p101">For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.</span></span>
+3. <span data-ttu-id="fb9ca-p101">.csv ファイルの各行で、テナントの管理者名を UserName 列に追加し、そのテナントのために実行するコマンドレットを Cmdlet 列に追加します。例えば、admin@contoso.com と Get-AcceptedDomain を使用します。</span><span class="sxs-lookup"><span data-stu-id="fb9ca-p101">For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.</span></span>
 
-4. <span data-ttu-id="40a96-110">[RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) スクリプトをメモ帳などのエディターにコピーしてから, .psl ファイルを容易に見つけられる場所 (c:\scripts など) にファイルを保存します。</span><span class="sxs-lookup"><span data-stu-id="40a96-110">Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script to an editor like Notepad, and then save the file to a location (like c:\scripts) that makes .ps1 files easy to find.</span></span>
+4. <span data-ttu-id="fb9ca-110">スクリプトをメモ帳にコピーし、簡単に見つけられる場所 (c:\scripts など) にファイルを保存[します (](#runcmdletonmultipletenantsps1)例: c:\scripts)。</span><span class="sxs-lookup"><span data-stu-id="fb9ca-110">Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script into Notepad, and then save the file to a location that's easy to find  (for example, c:\scripts).</span></span>
 
-5. <span data-ttu-id="40a96-111">次の構文を使用して、スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="40a96-111">Run the script by using the following syntax:</span></span>
+5. <span data-ttu-id="fb9ca-111">次の構文を使用して、スクリプトを実行します。</span><span class="sxs-lookup"><span data-stu-id="fb9ca-111">Run the script by using the following syntax:</span></span>
 
-   ```Powershell
+   ```powershell
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
-   <span data-ttu-id="40a96-112">次に例を示します:</span><span class="sxs-lookup"><span data-stu-id="40a96-112">Here's an example:</span></span>
+   <span data-ttu-id="fb9ca-112">次に例を示します:</span><span class="sxs-lookup"><span data-stu-id="fb9ca-112">Here's an example:</span></span>
 
-   ```Powershell
+   ```powershell
    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. <span data-ttu-id="40a96-113">各テナントへのログオンが行われて、コマンドレットが実行されます。</span><span class="sxs-lookup"><span data-stu-id="40a96-113">Each tenant will be logged on to, and the cmdlet will be run.</span></span>
+6. <span data-ttu-id="fb9ca-113">各テナントはにログオンされ、スクリプトが実行されます。</span><span class="sxs-lookup"><span data-stu-id="fb9ca-113">Each tenant will be logged on to, and the script will be run.</span></span>
 
-## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="40a96-114">Runコマンドレット。 ps1</span><span class="sxs-lookup"><span data-stu-id="40a96-114">RunCmdletOnMultipleTenants.ps1</span></span>
+## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="fb9ca-114">Runコマンドレット。 ps1</span><span class="sxs-lookup"><span data-stu-id="fb9ca-114">RunCmdletOnMultipleTenants.ps1</span></span>
 
-```Powershell
+```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #

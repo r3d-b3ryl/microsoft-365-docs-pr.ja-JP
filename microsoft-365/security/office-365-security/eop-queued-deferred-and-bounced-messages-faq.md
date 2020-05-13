@@ -2,10 +2,10 @@
 title: EOP のキューイング、保留、返送されるメッセージに関する FAQ
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,30 +13,30 @@ localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft Exchange Online Protection (EOP) のフィルター処理中にキュー、延期、または返送されたメッセージに関する Faq への回答を検索します。
-ms.openlocfilehash: f7a7c8b5466e02353ca114d6c7ed44f37bed5592
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Exchange Online Protection (EOP) のフィルター処理中にキューに入れられたメッセージ、延期、または返送されたメッセージに関してよく寄せられる質問に対する回答を示します。
+ms.openlocfilehash: 38e72a04e855862c621bd2b170c11407e0d22af3
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036550"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206594"
 ---
-# <a name="eop-queued-deferred-and-bounced-messages-faq"></a><span data-ttu-id="f20d3-103">EOP のキューイング、保留、返送されるメッセージに関する FAQ</span><span class="sxs-lookup"><span data-stu-id="f20d3-103">EOP queued, deferred, and bounced messages FAQ</span></span>
+# <a name="eop-queued-deferred-and-bounced-messages-faq"></a><span data-ttu-id="54a28-103">EOP のキューイング、保留、返送されるメッセージに関する FAQ</span><span class="sxs-lookup"><span data-stu-id="54a28-103">EOP queued, deferred, and bounced messages FAQ</span></span>
 
-<span data-ttu-id="f20d3-104">ここでは、Microsoft Exchange Online Protection (EOP) のフィルター処理中にキューイング、保留、または返送されるメッセージに関してよく寄せられる質問の回答を提供します。</span><span class="sxs-lookup"><span data-stu-id="f20d3-104">This topic provides answers to frequently asked questions about messages that have been queued, deferred, or bounced during the Microsoft Exchange Online Protection (EOP) filtering process.</span></span>
+<span data-ttu-id="54a28-104">このトピックでは、Exchange Online Protection (EOP) のフィルター処理中にキュー、延期、または返送されたメッセージに関してよく寄せられる質問への回答を提供します。</span><span class="sxs-lookup"><span data-stu-id="54a28-104">This topic provides answers to frequently asked questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.</span></span>
 
-<span data-ttu-id="f20d3-105">**Q. なぜメールはキューイングされるのですか?**</span><span class="sxs-lookup"><span data-stu-id="f20d3-105">**Q. Why is mail queuing?**</span></span>
+## <a name="why-is-mail-queuing"></a><span data-ttu-id="54a28-105">なぜメールはキューイングされるのですか?</span><span class="sxs-lookup"><span data-stu-id="54a28-105">Why is mail queuing?</span></span>
 
-<span data-ttu-id="f20d3-p101">A. メール配信時に受信者のサーバーに接続できない場合、メッセージはキューイングされるか保留されます。ただし、受信者のネットワークから 500 番台のエラーが返された場合、メッセージは保留されません。</span><span class="sxs-lookup"><span data-stu-id="f20d3-p101">A. Messages are queued or deferred if the service is unable to make a connection to the recipient server for delivery. It will not defer messages if a 500-series error is returned from the recipient network.</span></span>
+<span data-ttu-id="54a28-106">メール配信時に受信者のサーバーに接続できない場合、メッセージはキューイングされるか保留されます。</span><span class="sxs-lookup"><span data-stu-id="54a28-106">Messages are queued or deferred if the service is unable to make a connection to the recipient server for delivery.</span></span> <span data-ttu-id="54a28-107">ただし、受信者のネットワークから 500 番台のエラーが返された場合、メッセージは保留されません。</span><span class="sxs-lookup"><span data-stu-id="54a28-107">It will not defer messages if a 500-series error is returned from the recipient network.</span></span>
 
-<span data-ttu-id="f20d3-109">**Q. メッセージはどのようなときに保留状態になるのですか?**</span><span class="sxs-lookup"><span data-stu-id="f20d3-109">**Q. How does a message become deferred?**</span></span>
+## <a name="how-does-a-message-become-deferred"></a><span data-ttu-id="54a28-108">メッセージはどのようなときに保留状態になるのですか?</span><span class="sxs-lookup"><span data-stu-id="54a28-108">How does a message become deferred?</span></span>
 
-<span data-ttu-id="f20d3-p102">A. 受信者のサーバーに接続できず、受信者のサーバーから接続タイムアウトや接続拒否、400 番台のエラーなどの "一時的なエラー" が返された場合、メッセージは保留されます。500 番台のエラーなどの永続的なエラーが返された場合、メッセージは送信者に戻されます。</span><span class="sxs-lookup"><span data-stu-id="f20d3-p102">A. Messages will be held when a connection to the recipient server cannot be made and the recipient's server is returning a "temporary failure" such as a connection time-out, connection refused, or a 400-series error. If there is a permanent failure, such as a 500-series error, then the message will be returned to the sender.</span></span>
+<span data-ttu-id="54a28-109">受信者のサーバーに接続できず、受信者のサーバーから接続タイムアウトや接続拒否、400 番台のエラーなどの "一時的なエラー" が返された場合、メッセージは保留されます。</span><span class="sxs-lookup"><span data-stu-id="54a28-109">Messages will be held when a connection to the recipient server cannot be made and the recipient's server is returning a "temporary failure" such as a connection time-out, connection refused, or a 400-series error.</span></span> <span data-ttu-id="54a28-110">500 番台のエラーなどの永続的なエラーが返された場合、メッセージは送信者に戻されます。</span><span class="sxs-lookup"><span data-stu-id="54a28-110">If there is a permanent failure, such as a 500-series error, then the message will be returned to the sender.</span></span>
 
-<span data-ttu-id="f20d3-113">**Q. メッセージが保留される期間と再試行の間隔はどのくらいですか?**</span><span class="sxs-lookup"><span data-stu-id="f20d3-113">**Q. How long does a message remain in deferral and what is the retry interval?**</span></span>
+## <a name="how-long-does-a-message-remain-in-deferral-and-what-is-the-retry-interval"></a><span data-ttu-id="54a28-111">メッセージが保留される期間と再試行の間隔はどのくらいですか?</span><span class="sxs-lookup"><span data-stu-id="54a28-111">How long does a message remain in deferral and what is the retry interval?</span></span>
 
-<span data-ttu-id="f20d3-114">A.</span><span class="sxs-lookup"><span data-stu-id="f20d3-114">A.</span></span> <span data-ttu-id="f20d3-115">延期されたメッセージは、1日の間、キューに残ります。</span><span class="sxs-lookup"><span data-stu-id="f20d3-115">Messages in deferral will remain in our queues for 1 day.</span></span> <span data-ttu-id="f20d3-116">メッセージの再試行は、受信者のメールシステムから返されたエラーに基づいて行われます。</span><span class="sxs-lookup"><span data-stu-id="f20d3-116">Message retry attempts are based on the error we get back from the recipient's mail system.</span></span> <span data-ttu-id="f20d3-117">最初のいくつかの deferrals は15分以内で、以降の再試行 (次の半周期以上) では、複数回の再試行の間隔が最大60分に増加します。</span><span class="sxs-lookup"><span data-stu-id="f20d3-117">The first few deferrals are 15 minutes or less, with subsequent retries (over the next half dozen or so) increasing the interval over multiple retries to a max of 60 minutes.</span></span> <span data-ttu-id="f20d3-118">間隔の期間の展開は動的であり、キューのサイズや内部メッセージの優先度などの複数の変数を考慮します。</span><span class="sxs-lookup"><span data-stu-id="f20d3-118">The interval duration expansion is dynamic, taking into consideration multiple variables like queue sizes and internal message priority.</span></span> <span data-ttu-id="f20d3-119">基本的には、15分 (またはそれ以下) から開始します。その後、次の数時間で最大60分に拡張できます。</span><span class="sxs-lookup"><span data-stu-id="f20d3-119">In basic, it's 15 minutes (or less) to start, then expanding from there over the next few hours to 60 mins max.</span></span>
+<span data-ttu-id="54a28-112">延期されたメッセージは、1日の間、キューに残ります。</span><span class="sxs-lookup"><span data-stu-id="54a28-112">Messages in deferral will remain in our queues for 1 day.</span></span> <span data-ttu-id="54a28-113">メッセージの再試行は、受信者のメールシステムから返されたエラーに基づいて行われます。</span><span class="sxs-lookup"><span data-stu-id="54a28-113">Message retry attempts are based on the error we get back from the recipient's mail system.</span></span> <span data-ttu-id="54a28-114">最初のいくつかの deferrals は15分以内で、以降の再試行 (次の半周期以上) では、複数回の再試行の間隔が最大60分に増加します。</span><span class="sxs-lookup"><span data-stu-id="54a28-114">The first few deferrals are 15 minutes or less, with subsequent retries (over the next half dozen or so) increasing the interval over multiple retries to a max of 60 minutes.</span></span> <span data-ttu-id="54a28-115">間隔の期間の展開は動的であり、キューのサイズや内部メッセージの優先度などの複数の変数を考慮します。</span><span class="sxs-lookup"><span data-stu-id="54a28-115">The interval duration expansion is dynamic, taking into consideration multiple variables like queue sizes and internal message priority.</span></span> <span data-ttu-id="54a28-116">基本的には、15分 (またはそれ以下) から開始します。その後、次の数時間で最大60分に拡張できます。</span><span class="sxs-lookup"><span data-stu-id="54a28-116">In basic, it's 15 minutes (or less) to start, then expanding from there over the next few hours to 60 mins max.</span></span>
 
-<span data-ttu-id="f20d3-120">**Q. メール サーバーが復元された後、キューイングされたメッセージはどのように配信されますか?**</span><span class="sxs-lookup"><span data-stu-id="f20d3-120">**Q. After your email server is restored, how are queued messages distributed?**</span></span>
+## <a name="after-your-email-server-is-restored-how-are-queued-messages-distributed"></a><span data-ttu-id="54a28-117">メール サーバーが復元された後、キューイングされたメッセージはどのように配信されますか?</span><span class="sxs-lookup"><span data-stu-id="54a28-117">After your email server is restored, how are queued messages distributed?</span></span>
 
-<span data-ttu-id="f20d3-p104">A. メール サーバーが復元した後、キューに格納されたすべてのメッセージは、サーバーを利用できなくなったときに受信およびキューに格納された順序で自動的に処理されます。</span><span class="sxs-lookup"><span data-stu-id="f20d3-p104">A. After your email server is restored, all queued messages are automatically processed in the order in which they were received and queued when the server became unavailable.</span></span>
+<span data-ttu-id="54a28-118">メール サーバーが復元した後、キューに格納されたすべてのメッセージは、サーバーを利用できなくなったときに受信およびキューに格納された順序で自動的に処理されます。</span><span class="sxs-lookup"><span data-stu-id="54a28-118">After your email server is restored, all queued messages are automatically processed in the order in which they were received and queued when the server became unavailable.</span></span>

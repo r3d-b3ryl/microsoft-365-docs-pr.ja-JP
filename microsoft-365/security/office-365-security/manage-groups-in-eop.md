@@ -13,165 +13,232 @@ localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、exchange Online Protection (EOP) で Exchange 組織のメールが有効なグループを作成および管理する方法について説明します。
-ms.openlocfilehash: 37825175e3332e975065a3807c6ed9d5096b1a7f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: Standalone Exchange Online Protection (EOP) 組織内の管理者は、Exchange 管理センター (EAC) とスタンドアロン Exchange Online Protection (EOP) PowerShell で、配布グループとメールが有効なセキュリティグループを作成、変更、および削除する方法を学習できます。
+ms.openlocfilehash: fc3f3807216b269a9868e87c5ec784d75385f878
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034404"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209021"
 ---
-# <a name="manage-groups-in-eop"></a><span data-ttu-id="5a0c5-103">EOP でグループを管理する</span><span class="sxs-lookup"><span data-stu-id="5a0c5-103">Manage groups in EOP</span></span>
+# <a name="manage-groups-in-eop"></a><span data-ttu-id="7b6e2-103">EOP でグループを管理する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-103">Manage groups in EOP</span></span>
 
- <span data-ttu-id="5a0c5-p101">Exchange Online Protection (EOP) を使用すれば、Exchange 組織のメールが有効なグループを作成できます。また、EOP を使用してメンバーシップ、電子メール アドレス、グループのその他の側面を指定するグループのプロパティを定義または更新することもできます。必要に応じて配布グループとセキュリティ グループを作成できます。これらのグループは、Exchange 管理センター (EAC) を使用するか、リモートの Windows PowerShell を介して作成できます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-p101">You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups. You can create distribution groups and security groups, depending on your needs. These groups can be created by using the Exchange admin center (EAC) or via remote Windows PowerShell.</span></span>
+<span data-ttu-id="7b6e2-104">Exchange Online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織では、次の種類のグループを作成、変更、および削除できます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-104">In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can create, modify, and remove the following types of groups:</span></span>
 
-## <a name="types-of-mail-enabled-groups"></a><span data-ttu-id="5a0c5-108">メールが有効なグループの種類</span><span class="sxs-lookup"><span data-stu-id="5a0c5-108">Types of mail-enabled groups</span></span>
+- <span data-ttu-id="7b6e2-105">**配布グループ**: メールユーザーまたは他の配布グループのコレクション。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-105">**Distribution groups**: A collection of mail users or other distribution groups.</span></span> <span data-ttu-id="7b6e2-106">たとえば、関係する共通領域で電子メールを送受信する必要がある teams やその他の臨時グループがあります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-106">For example, teams or other ad hoc groups who need to receive or send email in a common area of interest.</span></span> <span data-ttu-id="7b6e2-107">配布グループは、電子メールメッセージの配布専用であり、セキュリティプリンシパルではありません (アクセス許可を割り当てることはできません)。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-107">Distribution groups are exclusively for distributing email messages, and are not security principals (they can't have permissions assigned to them).</span></span>
 
-<span data-ttu-id="5a0c5-109">Exchange 組織では、2 種類のグループを作成できます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-109">You can create two types of groups for your Exchange organization:</span></span>
-
-- <span data-ttu-id="5a0c5-110">配布グループは、チームやその他の臨時のグループなど、一般的な興味分野に関するメールを受信または送信する必要がある電子メールユーザーのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-110">Distribution groups are collections of email users, such as a team or other ad hoc group, who need to receive or send email regarding a common area of interest.</span></span> <span data-ttu-id="5a0c5-111">配布グループは電子メール メッセージの配布専用です。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-111">Distribution groups are exclusively for distributing email messages.</span></span> <span data-ttu-id="5a0c5-112">EOP では、配布グループは、セキュリティに関連するかどうかにかかわらず、すべてのメールが有効なグループを意味します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-112">In EOP, a distribution group refers to any mail-enabled group, whether or not it has a security context.</span></span>
-
-- <span data-ttu-id="5a0c5-113">セキュリティグループは、管理者ロールのアクセス許可を必要とする電子メールユーザーのコレクションです。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-113">Security groups are collections of email users who need access permissions for Admin roles.</span></span> <span data-ttu-id="5a0c5-114">たとえば、特定のユーザー グループに管理者役割アクセス許可を付与して、スパム対策設定とマルウェア対策設定を構成できるようにする場合があります。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-114">For example, you might want to give specific group of users admin role permissions so they can configure anti-spam and anti-malware settings.</span></span>
+- <span data-ttu-id="7b6e2-108">**メールが有効なセキュリティグループ**: 管理者の役割に対するアクセス許可を必要とする、メールユーザーおよびその他のセキュリティグループのコレクション。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-108">**Mail-enabled security groups**: A collection of mail users and other security groups who need access permissions for admin roles.</span></span> <span data-ttu-id="7b6e2-109">たとえば、特定のユーザーグループに管理者アクセス許可を付与して、スパム対策とマルウェア対策設定を構成できるようにする場合があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-109">For example, you might want to give specific group of users admin permissions so they can configure anti-spam and anti-malware settings.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="5a0c5-p104">既定では、メールが有効なすべての新しいセキュリティ グループで、すべての送信者を認証する必要があります。これにより、外部の送信者はメールが有効なセキュリティ グループに対してメッセージを送信できなくなります。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-p104">By default, all new mail-enabled security groups require that all senders be authenticated. This prevents external senders from sending messages to mail-enabled security groups.</span></span>
+    > <ul><li><span data-ttu-id="7b6e2-110">既定では、新しいメールが有効なセキュリティグループは、外部 (認証されていない) 送信者からのメッセージを拒否します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-110">By default, new mail-enabled security groups reject messages from external (unauthenticated) senders.</span></span></li><li><span data-ttu-id="7b6e2-111">メールが有効なセキュリティグループに配布グループを追加しないでください。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-111">Don't add distribution groups to mail-enabled security groups.</span></span></li></ul><span data-ttu-id="7b6e2-112">.</span><span class="sxs-lookup"><span data-stu-id="7b6e2-112">.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="5a0c5-117">開始する前に</span><span class="sxs-lookup"><span data-stu-id="5a0c5-117">Before you begin</span></span>
+<span data-ttu-id="7b6e2-113">グループを管理するには、Exchange 管理センター (EAC) とスタンドアロン EOP PowerShell を使用します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-113">You can manage groups in the Exchange admin center (EAC) and in standalone EOP PowerShell.</span></span>
 
-- <span data-ttu-id="5a0c5-p105">この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[EOP の機能アクセス許可](feature-permissions-in-eop.md)」の「配布グループとセキュリティ グループ」。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-p105">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Distribution Groups and Security Groups" entry in the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="7b6e2-114">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="7b6e2-114">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="5a0c5-120">Exchange 管理センターを開くには、「exchange [Online Protection の exchange 管理センター](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-120">To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
+- <span data-ttu-id="7b6e2-115">Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-115">To open the Exchange admin center, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
 
-- <span data-ttu-id="5a0c5-121">Exchange Online Protection の PowerShell コマンドレットを使用してグループを作成および管理する場合は、調整が発生する可能性があることに注意してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-121">Be aware that when creating and managing groups by using Exchange Online Protection PowerShell cmdlets, you may encounter throttling.</span></span>
+- <span data-ttu-id="7b6e2-116">スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-116">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-- <span data-ttu-id="5a0c5-122">このトピックの PowerShell の手順では、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-122">The PowerShell procedures in this topic use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.</span></span>
+- <span data-ttu-id="7b6e2-117">スタンドアロンの EOP PowerShell でグループを管理する場合、調整が発生する可能性があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-117">When you manage groups in standalone EOP PowerShell, you might encounter throttling.</span></span> <span data-ttu-id="7b6e2-118">このトピックの PowerShell の手順では、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-118">The PowerShell procedures in this topic use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.</span></span>
 
-- <span data-ttu-id="5a0c5-123">Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-123">To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
+- <span data-ttu-id="7b6e2-119">これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-119">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="7b6e2-120">具体的には、既定では、組織の管理 (グローバル管理者) および受信者管理役割グループに割り当てられている配布グループの役割が必要です。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-120">Specifically, you need the Distribution Groups role, which is assigned to the OrganizationManagement (global admins) and RecipientManagement role groups by default.</span></span> <span data-ttu-id="7b6e2-121">詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、[役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-121">For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).</span></span>
 
-- <span data-ttu-id="5a0c5-124">このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-124">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
+- <span data-ttu-id="7b6e2-122">このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-122">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="5a0c5-125">問題がある場合は、</span><span class="sxs-lookup"><span data-stu-id="5a0c5-125">Having problems?</span></span> <span data-ttu-id="5a0c5-126">[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラムでヘルプを要求します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-126">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
+> <span data-ttu-id="7b6e2-123">問題がある場合は、</span><span class="sxs-lookup"><span data-stu-id="7b6e2-123">Having problems?</span></span> <span data-ttu-id="7b6e2-124">[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラムでヘルプを要求します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-124">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
 
-## <a name="create-a-group-in-the-eac"></a><span data-ttu-id="5a0c5-127">EAC でグループを作成する</span><span class="sxs-lookup"><span data-stu-id="5a0c5-127">Create a group in the EAC</span></span>
+## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a><span data-ttu-id="7b6e2-125">Exchange 管理センターを使用して配布グループを管理する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-125">Use the Exchange admin center to manage distribution groups</span></span>
 
-1. <span data-ttu-id="5a0c5-128">EAC で、 **[受信者]** \> **[グループ]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-128">In the EAC, go to **Recipients** \> **Groups**.</span></span>
+### <a name="use-the-eac-to-create-groups"></a><span data-ttu-id="7b6e2-126">EAC を使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-126">Use the EAC to create groups</span></span>
 
-2. <span data-ttu-id="5a0c5-129">必要**New** ![に応じて](../../media/ITPro-EAC-AddIcon.gif)、[新規追加] アイコンをクリックし、[**配布グループ**] または [**セキュリティグループ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-129">Click **New** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif), and then click **Distribution group** or **Security group**, depending on your needs.</span></span>
+1. <span data-ttu-id="7b6e2-127">EAC で、 **[受信者]** \> **[グループ]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-127">In the EAC, go to **Recipients** \> **Groups**.</span></span>
 
-3. <span data-ttu-id="5a0c5-130">[**新しい配布グループ**] ページまたは [**新しいセキュリティグループ**] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-130">On the **New distribution group** or **New security group** page, configure the following settings:</span></span>
+2. <span data-ttu-id="7b6e2-128">[**新しい** ![ 新規作成] アイコンをクリックし、 ](../../media/ITPro-EAC-AddIcon.png) 次のいずれかのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-128">Click **New** ![New icon](../../media/ITPro-EAC-AddIcon.png), and then select one of the following options:</span></span>
 
-   - <span data-ttu-id="5a0c5-131">[**表示名**]: 組織に固有で、EOP ユーザーにとって意味のある表示名を入力します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-131">**Display name**: Type a display name that's unique to your organization and meaningful to EOP users.</span></span> <span data-ttu-id="5a0c5-132">表示名は必須です。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-132">The display name is required.</span></span>
+   - <span data-ttu-id="7b6e2-129">**配布グループ**</span><span class="sxs-lookup"><span data-stu-id="7b6e2-129">**Distribution group**</span></span>
 
-   - <span data-ttu-id="5a0c5-133">**エイリアス**: 組織に固有の最大64文字のグループエイリアスを入力します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-133">**Alias**: Type a group alias of up to 64 characters that's unique to your organization.</span></span> <span data-ttu-id="5a0c5-134">EOP ユーザーが電子メール メッセージの宛先行にエイリアスを入力すると、グループの表示名に解読されます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-134">EOP users type the alias in the To: line of email messages and the alias resolves to the group's display name.</span></span> <span data-ttu-id="5a0c5-135">エイリアスを変更すると、グループのプライマリ SMTP アドレスも変更され、新しいエイリアスが追加されます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-135">If you change the alias, the primary SMTP address for the group also changes and will contain the new alias.</span></span> <span data-ttu-id="5a0c5-136">エイリアスは必須です。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-136">The alias is required.</span></span>
+   - <span data-ttu-id="7b6e2-130">**メールが有効なセキュリティ グループ**</span><span class="sxs-lookup"><span data-stu-id="7b6e2-130">**Mail-enabled security group**</span></span>
 
-   - <span data-ttu-id="5a0c5-137">[**説明**]: グループの説明を入力します。これにより、ユーザーはグループの目的を知ることができます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-137">**Description**: Type a description of the group so that people will know the purpose of the group.</span></span>
+3. <span data-ttu-id="7b6e2-131">開いた [新しいグループ] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-131">In the new group page that opens, configure the following settings.</span></span> <span data-ttu-id="7b6e2-132">でマークされた設定 <sup>\*</sup> は必須です。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-132">Settings marked with an <sup>\*</sup> are required.</span></span>
 
-   - <span data-ttu-id="5a0c5-138">**所有者**: 既定では、グループを作成したユーザーが所有者になります。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-138">**Owners**: By default, the person who creates the group is the owner.</span></span> <span data-ttu-id="5a0c5-139">所有者を追加するには、[追加]](../../media/ITPro-EAC-AddIcon.gif) **[追加] アイコンを選択** ![します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-139">You can add an owner by choosing **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif).</span></span> <span data-ttu-id="5a0c5-140">グループには、最低 1 人の所有者が必要です。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-140">All groups must have at least one owner.</span></span>
+   - <span data-ttu-id="7b6e2-133"><sup>\*</sup>[**表示名**]: この名前は、組織のアドレス帳、このグループに電子メールが送信されるときの宛先行、EAC の [**グループ**] リストに表示されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-133"><sup>\*</sup>**Display name**: This name appears in your organization's address book, on the To: line when email is sent to this group, and in the **Groups** list in the EAC.</span></span> <span data-ttu-id="7b6e2-134">表示名は必須であり、一意である必要があります。わかりやすい名前にする必要があります。ユーザーがわかるようにします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-134">The display name is required, must be unique, and should be user-friendly so people recognize what it is.</span></span>
 
-     > [!NOTE]
-     > <span data-ttu-id="5a0c5-141">所有者はグループのメンバーである必要はありません。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-141">Owners don't have to be members of the group.</span></span>
+   - <span data-ttu-id="7b6e2-135"><sup>\*</sup>**エイリアス**: このボックスを使用して、グループのエイリアス名を入力します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-135"><sup>\*</sup>**Alias**: Use this box to type the name of the alias for the group.</span></span> <span data-ttu-id="7b6e2-136">エイリアスは64文字を超えることはできず、一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-136">The alias can't exceed 64 characters and must be unique.</span></span> <span data-ttu-id="7b6e2-137">ユーザーが電子メールメッセージの [宛先] 行にエイリアスを入力すると、グループの表示名に解決されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-137">When a user types the alias in the To line of an email message, it resolves to the group's display name.</span></span>
 
-   - <span data-ttu-id="5a0c5-142">**メンバー**: グループメンバーを追加し、グループに参加または脱退するために承認が必要かどうかを指定するには、このセクションを使用します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-142">**Members**: Use this section to add group members and to specify whether approval is required for people to join or leave the group.</span></span> <span data-ttu-id="5a0c5-143">グループにメンバーを追加するには、[追加](../../media/ITPro-EAC-AddIcon.gif)] アイコン**をクリックし** ![ます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-143">To add members to the group, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif).</span></span>
+   - <span data-ttu-id="7b6e2-138"><sup>\*</sup>**メールアドレス**: メールアドレスは、アットマーク記号 (@) の左側にあるエイリアスと、右側のドメインで構成されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-138"><sup>\*</sup>**Email address**: The email address consists of the alias on the left side of the at (@) symbol, and a domain on the right side.</span></span> <span data-ttu-id="7b6e2-139">既定では、エイリアスの値がエイリアスの値に使用**されます**が、これは変更できます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-139">By default, the value of **Alias** is used for the alias value, but you can change it.</span></span> <span data-ttu-id="7b6e2-140">[ドメイン] の値に対して、ドロップダウンをクリックして、組織内のドメインを選択して承認します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-140">For the domain value, click the drop down and select and accepted domain in your organization.</span></span>
 
-4. <span data-ttu-id="5a0c5-144">**[OK]** をクリックして元のページに戻ります。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-144">Click **OK** to return to the original page.</span></span>
+   - <span data-ttu-id="7b6e2-141">**説明**: この説明は、アドレス帳と EAC の詳細ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-141">**Description**: This description appears in the address book and in the Details pane in the EAC.</span></span>
 
-5. <span data-ttu-id="5a0c5-p111">完了したら、 **[保存]** をクリックしてグループを作成します。新しいグループがグループの一覧に表示されます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-p111">When you've finished, click **Save** to create the group. The new group should appear in the list of groups.</span></span>
+   - <span data-ttu-id="7b6e2-142"><sup>\*</sup>**所有者**: グループの所有者は、グループのメンバーシップを管理できます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-142"><sup>\*</sup>**Owners**: A group owner can manage group membership.</span></span> <span data-ttu-id="7b6e2-143">既定では、グループを作成するユーザーがグループの所有者になります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-143">By default, the person who creates a group is the owner.</span></span> <span data-ttu-id="7b6e2-144">グループには、最低 1 人の所有者が必要です。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-144">All groups must have at least one owner.</span></span>
 
-## <a name="edit-or-remove-a-group-in-the-eac"></a><span data-ttu-id="5a0c5-147">EAC でグループを編集または削除する</span><span class="sxs-lookup"><span data-stu-id="5a0c5-147">Edit or remove a group in the EAC</span></span>
+     <span data-ttu-id="7b6e2-145">所有者を追加するには \*\*、[追加\*\* ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-145">To add owners, click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png).</span></span> <span data-ttu-id="7b6e2-146">表示されるダイアログで、受信者またはグループを見つけて選択し、[ **>**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-146">In the dialog that appears, find and select a recipient or group, and then click **add ->**.</span></span> <span data-ttu-id="7b6e2-147">必要な回数だけこの手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-147">Repeat this step as many times as necessary.</span></span> <span data-ttu-id="7b6e2-148">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-148">When you're finished, click **OK**.</span></span>
 
-1. <span data-ttu-id="5a0c5-148">EAC で、 **[受信者]** \> **[グループ]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-148">In the EAC, navigate to **Recipients** \> **Groups**.</span></span>
+     <span data-ttu-id="7b6e2-149">所有者を削除するには、所有者を選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-149">To remove an owner, select the owner, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
 
-2. <span data-ttu-id="5a0c5-149">次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-149">Do one of the following steps:</span></span>
+   - <span data-ttu-id="7b6e2-150">**Members**: グループメンバーを追加および削除します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-150">**Members**: Add and remove group members.</span></span>
 
-   - <span data-ttu-id="5a0c5-150">グループを編集するには、グループの一覧で、表示または変更するグループをクリックし、[編集アイコン**Edit** ![](../../media/ITPro-EAC-EditIcon.gif)の編集] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-150">To edit a group: In the list of groups, click the group that you want to view or change, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.gif).</span></span> <span data-ttu-id="5a0c5-151">全般設定の更新、グループの所有者の追加または削除、および必要に応じてグループメンバーの追加または削除を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-151">You can update general settings, add or remove group owners, and add or remove group members as needed.</span></span>
+     <span data-ttu-id="7b6e2-151">メンバーを追加するには \*\*、[追加\*\* ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-151">To add members, click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png).</span></span> <span data-ttu-id="7b6e2-152">表示されるダイアログで、受信者またはグループを見つけて選択し、[ **>**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-152">In the dialog that appears, find and select a recipient or group, and then click **add ->**.</span></span> <span data-ttu-id="7b6e2-153">必要な回数だけこの手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-153">Repeat this step as many times as necessary.</span></span> <span data-ttu-id="7b6e2-154">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-154">When you're finished, click **OK**.</span></span>
 
-   - <span data-ttu-id="5a0c5-152">グループを削除するには、グループを選択し、[](../../media/ITPro-EAC-RemoveIcon.gif)削除 **] [** ![削除] アイコンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-152">To remove a group: Select the group and click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
+     <span data-ttu-id="7b6e2-155">メンバーを削除するには、メンバーを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-155">To remove a member, select the member, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
 
-3. <span data-ttu-id="5a0c5-153">変更が完了したら、 **[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-153">When you're finished making your changes, click **Save**.</span></span>
+4. <span data-ttu-id="7b6e2-156">完了したら、[**保存**] をクリックして配布グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-156">When you're finished, click **Save** to create the distribution group.</span></span>
 
-## <a name="create-edit-or-remove-a-group-using-remote-windows-powershell"></a><span data-ttu-id="5a0c5-154">リモートの Windows PowerShell を使用してグループを作成、編集、または削除する</span><span class="sxs-lookup"><span data-stu-id="5a0c5-154">Create, edit, or remove a group using remote Windows PowerShell</span></span>
+### <a name="use-the-eac-to-modify-distribution-groups"></a><span data-ttu-id="7b6e2-157">EAC を使用して配布グループを変更する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-157">Use the EAC to modify distribution groups</span></span>
 
-<span data-ttu-id="5a0c5-155">このセクションでは、グループを作成し、Exchange Online Protection の PowerShell でそのプロパティを変更する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-155">This section provides information about creating groups and changing their properties in Exchange Online Protection PowerShell.</span></span> <span data-ttu-id="5a0c5-156">また、既存のグループを削除する方法も説明します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-156">It also shows how to remove an existing group.</span></span>
+1. <span data-ttu-id="7b6e2-158">EAC で、 **[受信者]** \> **[グループ]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-158">In the EAC, go to **Recipients** \> **Groups**.</span></span>
 
-### <a name="create-a-group-using-remote-windows-powershell"></a><span data-ttu-id="5a0c5-157">リモートの Windows PowerShell を使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="5a0c5-157">Create a group using remote Windows PowerShell</span></span>
+2. <span data-ttu-id="7b6e2-159">グループの一覧で、変更する配布グループまたはメールが有効なセキュリティグループを選択し、[編集] 編集アイコン**をクリックし** ![ ](../../media/ITPro-EAC-AddIcon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-159">In the list of groups, select the distribution group or mail-enabled security group that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-AddIcon.png).</span></span>
 
-<span data-ttu-id="5a0c5-p114">この例では、コマンドレット [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) を使用して、エイリアスが「itadmin」、名前が「IT Administrators」の配布グループを作成します。また、ユーザーをグループのメンバーとして追加します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-p114">This example uses the [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup) cmdlet to create a distribution group with an alias of itadmin and the name IT Administrators. It also adds users as members of the group.</span></span>
+3. <span data-ttu-id="7b6e2-160">開いた配布グループのプロパティページで、次のタブのいずれかをクリックして、プロパティを表示または変更します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-160">On the distribution group properties page that opens, click one of the following tabs to view or change properties.</span></span>
 
-```PowerShell
-New-EOPDistributionGroup -Type Distribution -Name "IT Administrators" -Alias itadmin -Members @("Member1","Member2","Member3") -ManagedBy Member1
+   <span data-ttu-id="7b6e2-161">完了したら、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-161">When you're finished, click **Save**.</span></span>
+
+#### <a name="general"></a><span data-ttu-id="7b6e2-162">全般</span><span class="sxs-lookup"><span data-stu-id="7b6e2-162">General</span></span>
+
+<span data-ttu-id="7b6e2-163">このタブを使用して、グループに関する基本情報を表示または変更します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-163">Use this tab to view or change basic information about the group.</span></span>
+
+- <span data-ttu-id="7b6e2-164">[**表示名**]: この名前はアドレス帳、このグループに電子メールを送信するときの [宛先] 行、および [**グループ] リスト**に表示されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-164">**Display name**: This name appears in the address book, on the To line when email is sent to this group, and in the **Groups list**.</span></span> <span data-ttu-id="7b6e2-165">表示名は必須であり、ユーザーが内容を認識できるようにわかりやすい名前にする必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-165">The display name is required and should be user-friendly so people recognize what it is.</span></span> <span data-ttu-id="7b6e2-166">また、表示名は、ドメイン内で一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-166">It also has to be unique in your domain.</span></span>
+
+  <span data-ttu-id="7b6e2-167">グループの名前付けポリシーを実装している場合、表示名は、ポリシーで定義されている名前付け形式に従う必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-167">If you've implemented a group naming policy, the display name has to conform to the naming format defined by the policy.</span></span>
+
+- <span data-ttu-id="7b6e2-168">**エイリアス**: これは、電子メールアドレスの @ 記号の左に表示される部分です。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-168">**Alias**: This is the portion of the email address that appears to the left of the at (@) symbol.</span></span> <span data-ttu-id="7b6e2-169">エイリアスを変更すると、グループのプライマリ SMTP アドレスも変更され、新しいエイリアスが含まれます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-169">If you change the alias, the primary SMTP address for the group will also be changed, and contain the new alias.</span></span> <span data-ttu-id="7b6e2-170">また、以前のエイリアスが含まれている電子メール アドレスは、グループのプロキシ アドレスとして保持されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-170">Also, the email address with the previous alias will be kept as a proxy address for the group.</span></span>
+
+- <span data-ttu-id="7b6e2-171">**メールアドレス**: メールアドレスは、アットマーク記号 (@) の左側にあるエイリアスと、右側のドメインで構成されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-171">**Email address**: The email address consists of the alias on the left side of the at (@) symbol, and a domain on the right side.</span></span> <span data-ttu-id="7b6e2-172">既定では、エイリアスの値がエイリアスの値に使用**されます**が、これは変更できます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-172">By default, the value of **Alias** is used for the alias value, but you can change it.</span></span> <span data-ttu-id="7b6e2-173">[ドメイン] の値に対して、ドロップダウンをクリックして、組織内のドメインを選択して承認します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-173">For the domain value, click the drop down and select and accepted domain in your organization.</span></span>
+
+- <span data-ttu-id="7b6e2-174">**説明**: この説明は、アドレス帳と EAC の詳細ウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-174">**Description**: This description appears in the address book and in the Details pane in the EAC.</span></span>
+
+#### <a name="ownership"></a><span data-ttu-id="7b6e2-175">Ownership</span><span class="sxs-lookup"><span data-stu-id="7b6e2-175">Ownership</span></span>
+
+<span data-ttu-id="7b6e2-176">このタブを使用して、グループの所有者を割り当てます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-176">Use this tab to assign group owners.</span></span> <span data-ttu-id="7b6e2-177">グループの所有者は、グループのメンバーシップを管理できます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-177">A group owner can manage group membership.</span></span> <span data-ttu-id="7b6e2-178">既定では、グループを作成するユーザーがグループの所有者になります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-178">By default, the person who creates a group is the owner.</span></span> <span data-ttu-id="7b6e2-179">グループには、最低 1 人の所有者が必要です。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-179">All groups must have at least one owner.</span></span>
+
+<span data-ttu-id="7b6e2-180">所有者を追加するには \*\*、[追加\*\* ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-180">To add owners, click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png).</span></span> <span data-ttu-id="7b6e2-181">表示されるダイアログで、受信者を検索して選択し、[追加] をクリックし **>** します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-181">In the dialog that appears, find and select a recipient, and then click **add ->**.</span></span> <span data-ttu-id="7b6e2-182">必要な回数だけこの手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-182">Repeat this step as many times as necessary.</span></span> <span data-ttu-id="7b6e2-183">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-183">When you're finished, click **OK**.</span></span>
+
+<span data-ttu-id="7b6e2-184">所有者を削除するには、所有者を選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-184">To remove an owner, select the owner, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
+
+#### <a name="membership"></a><span data-ttu-id="7b6e2-185">メンバーシップ</span><span class="sxs-lookup"><span data-stu-id="7b6e2-185">Membership</span></span>
+
+<span data-ttu-id="7b6e2-186">グループ メンバーを追加または削除するには、このタブを使用します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-186">Use this tab to add or remove group members.</span></span> <span data-ttu-id="7b6e2-187">グループの所有者は、グループのメンバーである必要はありません。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-187">Group owners don't need to be members of the group.</span></span>
+
+<span data-ttu-id="7b6e2-188">メンバーを追加するには \*\*、[追加\*\* ![ ] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-188">To add members, click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png).</span></span> <span data-ttu-id="7b6e2-189">表示されるダイアログで、受信者またはグループを見つけて選択し、[ **>**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-189">In the dialog that appears, find and select a recipient or group, and then click **add ->**.</span></span> <span data-ttu-id="7b6e2-190">必要な回数だけこの手順を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-190">Repeat this step as many times as necessary.</span></span> <span data-ttu-id="7b6e2-191">完了したら、 **[OK]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-191">When you're finished, click **OK**.</span></span>
+
+<span data-ttu-id="7b6e2-192">メンバーを削除するには、メンバーを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-192">To remove a member, select the member, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
+
+### <a name="use-the-eac-to-remove-groups"></a><span data-ttu-id="7b6e2-193">EAC を使用してグループを削除する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-193">Use the EAC to remove groups</span></span>
+
+1. <span data-ttu-id="7b6e2-194">EAC で、 **[受信者]** \> **[グループ]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-194">In the EAC, go to **Recipients** \> **Groups**.</span></span>
+
+2. <span data-ttu-id="7b6e2-195">グループの一覧で、削除する配布グループを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-195">In the list of groups, select the distribution group that you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
+
+## <a name="use-powershell-to-manage-groups"></a><span data-ttu-id="7b6e2-196">PowerShell を使用してグループを管理する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-196">Use PowerShell to manage groups</span></span>
+
+### <a name="use-standalone-eop-powershell-to-view-groups"></a><span data-ttu-id="7b6e2-197">スタンドアロンの EOP PowerShell を使用してグループを表示する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-197">Use standalone EOP PowerShell to view groups</span></span>
+
+<span data-ttu-id="7b6e2-198">スタンドアロン EOP PowerShell のすべての配布グループとメールが有効なセキュリティグループの要約リストを返すには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-198">To return a summary list of all distribution groups and mail-enabled security groups in standalone EOP PowerShell, run the following command:</span></span>
+
+```powershell
+Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-<span data-ttu-id="5a0c5-160">**注**: 配布グループではなくセキュリティグループを作成するには、 `Security` *Type*パラメーターの値を使用します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-160">**Note**: To create a security group instead of a distribution group, use the value `Security` for the *Type* parameter.</span></span>
+<span data-ttu-id="7b6e2-199">グループメンバーの一覧を取得するには、 \< groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-199">To return the list of group members, replace \<GroupIdentity\> with the name, alias, or email address of the group, and run the following command:</span></span>
 
-<span data-ttu-id="5a0c5-161">IT 管理者グループが正常に作成されたことを確認するには、次のコマンドを実行して、新しいグループに関する情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-161">To verify that you've successfully created the IT Administrators group, run the following command to display information about the new group:</span></span>
-
-```PowerShell
-Get-Recipient "IT Administrators" | Format-List
+```powershell
+Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-<span data-ttu-id="5a0c5-162">構文およびパラメーターの詳細については、「 [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-162">For detailed syntax and parameter information, see [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient).</span></span>
+<span data-ttu-id="7b6e2-200">構文およびパラメーターの詳細については、「 [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember) [」を参照して](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)ください。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-200">For detailed syntax and parameter information, see [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) and [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).</span></span>
 
-<span data-ttu-id="5a0c5-163">グループ内のメンバーの一覧を取得するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-163">To get a list of members in the group, run the following command:</span></span>
+### <a name="use-standalone-eop-powershell-to-create-groups"></a><span data-ttu-id="7b6e2-201">スタンドアロンの EOP PowerShell を使用してグループを作成する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-201">Use standalone EOP PowerShell to create groups</span></span>
 
-```PowerShell
-Get-DistributionGroupMember "IT Administrators"
-```
-
-<span data-ttu-id="5a0c5-164">構文およびパラメーターの詳細については、「 [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-164">For detailed syntax and parameter information, see [Get-DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember).</span></span>
-
-<span data-ttu-id="5a0c5-165">すべてのグループの完全な一覧を取得するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-165">To get a full list of all your groups, run the following command:</span></span>
+<span data-ttu-id="7b6e2-202">スタンドアロン EOP PowerShell で配布グループまたはメールが有効なセキュリティグループを作成するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-202">To create distribution groups or mail-enabled security groups in standalone EOP PowerShell, use the following syntax:</span></span>
 
 ```PowerShell
-Get-Recipient -RecipientType "MailUniversalDistributionGroup" | Format-Table | more
+New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">) [-Alias <text>] [-DisplayName "<Descriptive Name>"] [-Members @("UserOrGroup1","UserOrGroup2",..."UserOrGroupN">)] [-Notes "<Optional Text>"] [-PrimarySmtpAddress <SmtpAddress>] [-Type <Distribution | Security>]
 ```
 
-### <a name="change-the-properties-of-a-group-using-remote-windows-powershell"></a><span data-ttu-id="5a0c5-166">リモート Windows PowerShell を使用してグループのプロパティを変更する</span><span class="sxs-lookup"><span data-stu-id="5a0c5-166">Change the properties of a group using remote Windows PowerShell</span></span>
+<span data-ttu-id="7b6e2-203">**注**:</span><span class="sxs-lookup"><span data-stu-id="7b6e2-203">**Notes**:</span></span>
 
-<span data-ttu-id="5a0c5-167">EAC の代わりに PowerShell を使用する利点は、複数のグループのプロパティを変更できることです。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-167">An advantage of using PowerShell instead of the EAC is the ability to change properties for multiple groups.</span></span>
+- <span data-ttu-id="7b6e2-204">_Name_パラメーターは必須で、最大長は64文字で、一意である必要があります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-204">The _Name_ parameter is required, has a maximum length of 64 characters, and must be unique.</span></span> <span data-ttu-id="7b6e2-205">_DisplayName_パラメーターを使用しない場合、 _name_パラメーターの値が表示名として使用されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-205">If you don't use the _DisplayName_ parameter, the value of the _Name_ parameter is used for the display name.</span></span>
 
-<span data-ttu-id="5a0c5-168">Exchange Online Protection PowerShell を使用してグループのプロパティを変更する例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-168">Here are some examples of using Exchange Online Protection PowerShell to change group properties.</span></span>
+- <span data-ttu-id="7b6e2-206">_Alias_パラメーターを使用しない場合、 _Name_パラメーターはエイリアスの値として使用されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-206">If you don't use the _Alias_ parameter, the _Name_ parameter is used for the alias value.</span></span> <span data-ttu-id="7b6e2-207">スペースは削除されます。サポートされていない文字は疑問符 (?) に変換されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-207">Spaces are removed and unsupported characters are converted to question marks (?).</span></span>
 
-<span data-ttu-id="5a0c5-169">この例では、シアトルの従業員グループのプライマリ SMTP アドレス (返信アドレスとも呼ばれます) を sea.employees@contoso.com に変更します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-169">This example uses changes the primary SMTP address (also called the reply address) for the Seattle Employees group to sea.employees@contoso.com.</span></span>
+- <span data-ttu-id="7b6e2-208">_Primarysmtpaddress_パラメーターを使用しない場合、エイリアスの値は_primarysmtpaddress_パラメーターで使用されます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-208">If you don't use the _PrimarySmtpAddress_ parameter, the alias value is used in the _PrimarySmtpAddress_ parameter.</span></span>
+
+- <span data-ttu-id="7b6e2-209">_Type_パラメーターを使用しない場合、既定値は Distribution になります。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-209">If you don't use the _Type_ parameter, the default value is Distribution.</span></span>
+
+<span data-ttu-id="7b6e2-210">この例では、指定されたプロパティを使用して、IT 管理者という名前の配布グループを作成します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-210">This example creates a distribution group named IT Administrators with the specified properties.</span></span>
+
+```PowerShell
+New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
+```
+
+<span data-ttu-id="7b6e2-211">構文およびパラメーターの詳細については、「 [New-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-211">For detailed syntax and parameter information, see [New-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup).</span></span>
+
+### <a name="use-standalone-eop-powershell-to-modify-groups"></a><span data-ttu-id="7b6e2-212">スタンドアロンの EOP PowerShell を使用してグループを変更する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-212">Use standalone EOP PowerShell to modify groups</span></span>
+
+<span data-ttu-id="7b6e2-213">スタンドアロン EOP PowerShell でグループを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-213">To modify groups in standalone EOP PowerShell, use the following syntax:</span></span>
+
+```powershell
+Set-EOPDistributionGroup -Identity <GroupIdentity> [-Alias <Text>] [-DisplayName <Text>] [-ManagedBy @("User1","User2",..."UserN")] [-PrimarySmtpAddress <SmtpAddress>]
+
+```powershell
+Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","User2",..."UserN")
+```
+
+<span data-ttu-id="7b6e2-214">この例では、シアトルの従業員グループのプライマリ SMTP アドレス (返信アドレスとも呼ばれます) を sea.employees@contoso.com に変更します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-214">This example uses changes the primary SMTP address (also called the reply address) for the Seattle Employees group to sea.employees@contoso.com.</span></span>
 
 ```PowerShell
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
 ```
 
-<span data-ttu-id="5a0c5-170">構文およびパラメーターの詳細については、「 [Set-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-170">For detailed syntax and parameter information, see [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup).</span></span>
+<span data-ttu-id="7b6e2-215">この例では、セキュリティチームグループの現在のメンバーを、キティー Petersen Tyson Fawcett と置き換えます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-215">This example replaces the current members of the Security Team group with Kitty Petersen and Tyson Fawcett.</span></span>
 
-<span data-ttu-id="5a0c5-171">グループのプロパティが正常に変更されたことを確認するには、次のコマンドを実行して新しい値を確認します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-171">To verify that you've successfully changed the properties for the group, run the following command to verify the new value:</span></span>
-
-```PowerShell
-Get-Recipient "Seattle Employees" | Format-List "PrimarySmtpAddress"
+```powershell
+Update-EOPDistributionGroupMember -Identity "Security Team" -Members @("Kitty Petersen","Tyson Fawcett")
 ```
 
-<span data-ttu-id="5a0c5-172">この例では、シアトルの従業員グループのすべてのメンバーを更新します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-172">This example updates all the members of the Seattle Employees group.</span></span> <span data-ttu-id="5a0c5-173">全メンバーをコンマを使用して区切ります。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-173">Use a comma to separate all members.</span></span>
+<span data-ttu-id="7b6e2-216">この例では、グループの現在のメンバーを保持しながら、Tyson Fawcett という名前の新しいユーザーをセキュリティチームという名前のグループに追加します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-216">This example adds a new user named Tyson Fawcett to the group named Security Team while preserving the current members of the group.</span></span>
 
-```PowerShell
-Update-EOPDistributionGroupMember -Identity "Seattle Employees" -Members @("Member1","Member2","Member3","Member4","Member5")
+```powershell
+$CurrentMemberObjects = Get-DistributionGroupMember "Security Team"
+$CurrentMemberNames = $CurrentMemberObjects | % {$_.name}
+$CurrentMemberNames += "Tyson Fawcett"
+Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-<span data-ttu-id="5a0c5-174">構文およびパラメーターの詳細については、「 [update-eopdistributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-174">For detailed syntax and parameter information, see [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember).</span></span>
+<span data-ttu-id="7b6e2-217">構文およびパラメーターの詳細については、「 [update-eopdistributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)」[を参照してください](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-217">For detailed syntax and parameter information, see [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup) and [Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember).</span></span>
 
-<span data-ttu-id="5a0c5-175">シアトルの従業員グループのすべてのメンバーの一覧を取得するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-175">To get the list of all the members in the group Seattle Employees, run the following command:</span></span>
+### <a name="remove-a-group-using-remote-windows-powershell"></a><span data-ttu-id="7b6e2-218">リモートの Windows PowerShell を使用してグループを削除する</span><span class="sxs-lookup"><span data-stu-id="7b6e2-218">Remove a group using remote Windows PowerShell</span></span>
 
-```PowerShell
-Get-DistributionGroupMember "Seattle Employees"
-```
-
-### <a name="remove-a-group-using-remote-windows-powershell"></a><span data-ttu-id="5a0c5-176">リモートの Windows PowerShell を使用してグループを削除する</span><span class="sxs-lookup"><span data-stu-id="5a0c5-176">Remove a group using remote Windows PowerShell</span></span>
-
-<span data-ttu-id="5a0c5-177">この例では、IT 管理者という名前の配布グループを削除します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-177">This example uses removes the distribution group named IT Administrators.</span></span>
+<span data-ttu-id="7b6e2-219">この例では、IT 管理者という名前の配布グループを削除します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-219">This example uses removes the distribution group named IT Administrators.</span></span>
 
 ```PowerShell
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-<span data-ttu-id="5a0c5-178">構文およびパラメーターの詳細については、「[削除-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-178">For detailed syntax and parameter information, see [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup).</span></span>
+<span data-ttu-id="7b6e2-220">構文およびパラメーターの詳細については、「[削除-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-220">For detailed syntax and parameter information, see [Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup).</span></span>
 
-<span data-ttu-id="5a0c5-179">グループが削除されたことを確認するには、次のコマンドを実行し、グループ (この場合は「It Administrators」) が削除されたことを確認します。</span><span class="sxs-lookup"><span data-stu-id="5a0c5-179">To verify that the group was removed, run the following command, and confirm that the group (in this case "It Administrators") was deleted.</span></span>
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="7b6e2-221">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="7b6e2-221">How do you know these procedures worked?</span></span>
 
-```PowerShell
-Get-Recipient -RecipientType "MailUniversalDistributionGroup"
-```
+<span data-ttu-id="7b6e2-222">配布グループまたはメールが有効なセキュリティグループの作成、変更、または削除が正常に行われたことを確認するには、次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-222">To verify that you've successfully created, modified, or removed a distribution group or a mail-enabled security group, do any of the following steps:</span></span>
+
+- <span data-ttu-id="7b6e2-223">EAC で、 **[受信者]** \> **[グループ]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-223">In the EAC, go to **Recipients** \> **Groups**.</span></span> <span data-ttu-id="7b6e2-224">グループが表示されている (またはリストされていない) ことを確認し、**グループの種類**の値を確認します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-224">Verify that the group is listed (or not listed), and verify the **Group Type** value.</span></span> <span data-ttu-id="7b6e2-225">グループを選択して、詳細ウィンドウに情報を表示するか、[編集アイコンの**編集**] をクリックして ![ 設定を表示し ](../../media/ITPro-EAC-AddIcon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-225">Select the group and view the information in the Details pane, or click **Edit** ![Edit icon](../../media/ITPro-EAC-AddIcon.png) to view the settings.</span></span>
+
+- <span data-ttu-id="7b6e2-226">スタンドアロン EOP PowerShell で次のコマンドを実行して、グループが一覧に表示されている (または一覧に表示されていない) ことを確認します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-226">In standalone EOP PowerShell, run the following command to verify the group is listed (or isn't listed):</span></span>
+
+  ```PowerShell
+  Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
+  ```
+
+- <span data-ttu-id="7b6e2-227">\<Groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-227">Replace \<GroupIdentity\> with the name, alias, or email address of the group and run the following command to verify the settings:</span></span>
+
+  ```PowerShell
+  Get-Recipient -Identity <GroupIdentity> | Format-List
+  ```
+
+- <span data-ttu-id="7b6e2-228">グループメンバーを表示するには、 \< groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="7b6e2-228">To view the group members, replace \<GroupIdentity\> with the name, alias, or email address of the group and run the following command:</span></span>
+
+  ```PowerShell
+  Get-DistributionGroupMember -Identity "<GroupIdentity>"
+  ```
