@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ee36f1fb1b44d2643aeb73f35ae9eb571dd0aa35
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8a988cb053a5869c9cb57306fc0c78cdd7ba5ccc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633312"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208818"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-365"></a>Microsoft 365 に関するアカウンタビリティ対応準備チェックリスト
 
@@ -104,10 +104,10 @@ ms.locfileid: "43633312"
 |***情報の分類 (6.5.1)***|お客様は、個人データをデータ分類方式の一部として明確に考慮する必要があります。|個人データの分類をサポートするための Office 365 の機能に関する説明。<br>- *Office 365 GDPR のための情報保護* [[5](gdpr-arc-Office365.md#5)]「個人データの分類スキーマの設計」を参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.5.1 情報の分類|(39)(1)(b)|
 |***リムーバブル メディアの管理 (6.5.2)***|お客様は、個人データの保護 (暗号化デバイスなど) に関連して、リムーバブル メディアの使用に関する内部ポリシーを決定する必要があります。|Microsoft サービスがリムーバブル メディア上で個人情報のセキュリティを保護する方法。<br>- *FedRAMP Moderate FedRAMP システム セキュリティ プラン* [[3](gdpr-arc-Office365.md#3)]「13.10 メディア保護 (MP)」を参照<br>- [コンプライアンス スコア](compliance-score.md)のリムーバブル メディアの管理|(32)(1)(a)、(5)(1)(f)|
 |***物理メディア転送 (6.5.3)***|お客様は、物理メディアを移動する際に個人データを保護するための内部ポリシーを決定する必要があります (暗号化など)。| Microsoft サービスで、物理メディアの移動中に個人データを保護する方法。<br>- FedRAMP Moderate FedRAMP システム セキュリティ プラン [[3](gdpr-arc-Office365.md#3)]「13.10 メディア保護 (MP)」参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.5.3 物理メディア転送|(32)(1)(a)、(5)(1)(f)|
-|***ユーザー アクセスの管理 (6.6.1)***|お客様は、使用するサービス内でアクセスを制御する責任について認識し、利用可能なツールを使用してそれらの責任を適切に管理する必要があります。|アクセス制御を実施するための Microsoft サービスによって提供されるツール。<br>- Office 365 セキュリティ ドキュメンテーション [[2](gdpr-arc-Office365.md#2)]「[Office 365 におけるデータとサービスへのアクセスの保護](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」を参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.6.1|(5)(1)(f)|
-|***ユーザー登録と登録解除 (6.6.2)***|お客様は、利用可能なツールを使用して、利用するサービス内でのユーザー登録および登録解除を管理する必要があります。|アクセス制御を実施するための Microsoft サービスによって提供されるツール。<br>- Office 365 セキュリティ ドキュメンテーション [[2](gdpr-arc-Office365.md#2)]「[Office 365 におけるデータとサービスへのアクセスの保護](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」を参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.6.2 ユーザー登録と登録解除|(5)(1)(f)|
-|***ユーザー アクセスのプロビジョニング (6.6.3)***|お客様は、利用可能なツールを使用して、利用するサービス内での特に個人データへの許可されたアクセスに関するユーザー プロファイルを管理する必要があります。|Microsoft サービスで個人データへの正式なアクセス制御をサポートする方法。これには、ユーザー ID、役割、アプリケーションへのアクセス、ユーザーの登録と登録解除などが含まれます。<br>- Office 365 セキュリティ ドキュメンテーション [[2](gdpr-arc-Office365.md#2)]「[Office 365 におけるデータとサービスへのアクセスの保護](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」を参照<br>- テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理 [[15](gdpr-arc-Office365.md#15)]<br>- [コンプライアンス スコア](compliance-score.md)のユーザー アクセスのプロビジョニング|(5)(1)(f)|
-|***特権アクセスの管理 (6.6.4)***|お客様は、利用可能なツールを使用して、利用するサービス内での (特に個人データへの) アクセスの追跡を容易にするユーザー ID を管理する必要があります。|Microsoft サービスで個人データへの正式なアクセス制御をサポートする方法。これには、ユーザー ID、役割、ユーザーの登録と登録解除などが含まれます。<br>- Office 365 セキュリティ ドキュメンテーション 2「[Office 365 におけるデータとサービスへのアクセスの保護](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)」を参照<br>- テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理 [15]<br>- [コンプライアンス スコア](compliance-score.md)の 6.6.4 特権アクセスの管理|(5)(1)(f)|
+|***ユーザー アクセスの管理 (6.6.1)***|お客様は、使用するサービス内でアクセスを制御する責任について認識し、利用可能なツールを使用してそれらの責任を適切に管理する必要があります。|アクセス制御を実施するための Microsoft サービスによって提供されるツール。<br>- Office 365 セキュリティ ドキュメンテーション [[2](gdpr-arc-Office365.md#2)]「[Office 365 におけるデータとサービスへのアクセスの保護](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」を参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.6.1|(5)(1)(f)|
+|***ユーザー登録と登録解除 (6.6.2)***|お客様は、利用可能なツールを使用して、利用するサービス内でのユーザー登録および登録解除を管理する必要があります。|アクセス制御を実施するための Microsoft サービスによって提供されるツール。<br>- Office 365 セキュリティ ドキュメンテーション [[2](gdpr-arc-Office365.md#2)]「[Office 365 におけるデータとサービスへのアクセスの保護](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」を参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.6.2 ユーザー登録と登録解除|(5)(1)(f)|
+|***ユーザー アクセスのプロビジョニング (6.6.3)***|お客様は、利用可能なツールを使用して、利用するサービス内での特に個人データへの許可されたアクセスに関するユーザー プロファイルを管理する必要があります。|Microsoft サービスで個人データへの正式なアクセス制御をサポートする方法。これには、ユーザー ID、役割、アプリケーションへのアクセス、ユーザーの登録と登録解除などが含まれます。<br>- Office 365 セキュリティ ドキュメンテーション [[2](gdpr-arc-Office365.md#2)]「[Office 365 におけるデータとサービスへのアクセスの保護](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」を参照<br>- テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理 [[15](gdpr-arc-Office365.md#15)]<br>- [コンプライアンス スコア](compliance-score.md)のユーザー アクセスのプロビジョニング|(5)(1)(f)|
+|***特権アクセスの管理 (6.6.4)***|お客様は、利用可能なツールを使用して、利用するサービス内での (特に個人データへの) アクセスの追跡を容易にするユーザー ID を管理する必要があります。|Microsoft サービスで個人データへの正式なアクセス制御をサポートする方法。これには、ユーザー ID、役割、ユーザーの登録と登録解除などが含まれます。<br>- Office 365 セキュリティ ドキュメンテーション 2「[Office 365 におけるデータとサービスへのアクセスの保護](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)」を参照<br>- テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理 [15]<br>- [コンプライアンス スコア](compliance-score.md)の 6.6.4 特権アクセスの管理|(5)(1)(f)|
 |***安全なログオン手順 (6.6.5)***|お客様は、サービス内で提供されるメカニズムを使用して、必要に応じてユーザーが安全なログオン機能を利用できるようにする必要があります。|Microsoft サービスで個人データに関連する内部アクセス制御ポリシーをサポートする方法。<br>- 誰がどのような条件でデータにアクセスできるか [[6](gdpr-arc-Office365.md#6)]<br>- [コンプライアンス スコア](compliance-score.md)の 6.6.5 ログオン手順のセキュリティ保護|(5)(1)(f)|
 |***暗号化 (6.7)***|お客様は、どのデータを暗号化する必要があるか、利用しているサービスがこの機能を提供しているかどうかを判断する必要があります。お客様は、利用可能なツールを使用して、必要に応じて暗号化を使用する必要があります。|個人データの取り扱いに関するリスクを低減するために Microsoft サービスが暗号化および仮名化をサポートする方法。<br>- FedRAMP Moderate FedRAMP システム セキュリティ プラン (SSP)「*Cosmos*」pp29 を参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.7 暗号化|(32)(1)(a)|
 |***備品の安全な廃棄または再利用 (6.8.1)***|お客様がクラウド コンピューティング サービス (PaaS、SaaS、IaaS) 使用している場合、クラウド プロバイダーが、お客様が利用していた記憶領域を別の顧客に割り当てる前に、その記憶領域から個人データをどのように削除するかについて理解しておく必要があります。|Microsoft サービスで、記憶装置が移動または再利用される前に、その装置から確実に個人データが消去されるようにする方法。<br>- FedRAMP Moderate FedRAMP システム セキュリティ プラン [[3](gdpr-arc-Office365.md#3)]「13.10 メディア保護 (MP)」参照<br>- [コンプライアンス スコア](compliance-score.md)の 6.8.1 備品の安全な廃棄または再利用|(5)(1)(f)|
@@ -134,7 +134,7 @@ ms.locfileid: "43633312"
 |:-----|:-----|
 |**ID**|**説明/リンク**|
 | 1 <a name="1"> </a> | [オンライン サービスの使用条件](https://aka.ms/ost) |
-| 2 <a name="2"> </a> | [Office 365 のセキュリティに関するドキュメント](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
+| 2 <a name="2"> </a> | [Office 365 のセキュリティに関するドキュメント](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services) |
 | 3 <a name="3"> </a> | [FedRAMP Moderate FedRAMP システム セキュリティ プラン (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft Cloud のセキュリティ ポリシー](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 5 <a name="5"> </a> | [GDPR のための Office 365 の情報保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
@@ -148,7 +148,7 @@ ms.locfileid: "43633312"
 | 13 <a name="13"> </a> | [Microsoft Trust Center コンプライアンスの提供](offering-home.md) |
 | 14 <a name="14"> </a> | [Office 365 ISMS マニュアル](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [テナント制限使用による SaaS クラウド アプリケーションへのアクセスの管理](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
-| 16 <a name="16"> </a> | [Office 365 セキュリティおよびコンプライアンス センターでの監査ログを検索する](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) |
+| 16 <a name="16"> </a> | [Office 365 セキュリティおよびコンプライアンス センターでの監査ログを検索する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) |
 | 17 <a name="17"> </a> | [Microsoft Cloud での暗号化](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=ec66d938-6eb4-4d7d-b8c3-2168573bb534&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 18 <a name="18"> </a> | [Microsoft のデータ保護責任者](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |
 

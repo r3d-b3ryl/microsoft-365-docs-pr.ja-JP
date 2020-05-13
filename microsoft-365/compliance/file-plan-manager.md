@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 78a012b4ecc3401a664fba5e270e7cd67a5dce49
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708442"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208121"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
@@ -37,9 +37,9 @@ ms.locfileid: "43708442"
 
 ファイル計画マネージャーにアクセスするには、次のいずれかの管理者役割が必要です。
     
-    - 保持マネージャー
-    
-    - 閲覧限定保持マネージャー
+- 保持マネージャー
+
+- 閲覧限定保持マネージャー
 
 ## <a name="default-retention-labels-and-label-policy"></a>デフォルトの保持ラベルとラベルポリシー
 

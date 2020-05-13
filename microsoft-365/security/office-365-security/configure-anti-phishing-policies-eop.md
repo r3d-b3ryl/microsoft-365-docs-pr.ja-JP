@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、exchange online Protection (EOP) 組織で使用可能なフィッシング対策ポリシーを作成、変更、および削除する方法について説明します。 Exchange Online のメールボックスは使用できません。
-ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5c2e036c075072056e7783ca4dc5aeb1289d827a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208901"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213390"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でフィッシング対策ポリシーを構成する
 
@@ -31,7 +31,7 @@ Exchange Online メールボックスを使用する組織は、セキュリテ�
 
 Office 365 Advanced Threat Protection (Office 365 ATP) で利用可能な、より高度な ATP のフィッシング対策ポリシーの作成と変更の詳細については、「ATP の事前[フィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>セキュリティ & コンプライアンスセンター vs Exchange Online PowerShell のフィッシング対策ポリシー
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>セキュリティ & コンプライアンスセンター vs PowerShell のフィッシング対策ポリシー
 
 フィッシング対策ポリシーの基本的な要素は次のとおりです。
 
