@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 組織名、住所、電話、技術連絡先、電子メールなど、組織のプロファイルを変更する方法について説明します。
-ms.openlocfilehash: a1b792dd74c38e93489bccc49e3a034e1da889e4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139675"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208176"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
 
@@ -47,7 +47,7 @@ ms.locfileid: "44139675"
 
 会社のプロファイルページのその他の情報を変更するには、次のようにします。
   
-1. 管理センターで、[**設定** \>の<a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">設定</a>] ページに移動します。
+1. 管理センターで、[設定] [ **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**組織の設定**</a>] ページに移動します。
 
 2. [**組織プロファイル**] タブで、[**組織情報**] を選択します。
 

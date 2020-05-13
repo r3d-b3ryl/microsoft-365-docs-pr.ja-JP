@@ -1,5 +1,5 @@
 ---
-title: EOP サービスを設定する
+title: スタンドアロンの EOP サービスをセットアップする
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,17 +13,17 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: この記事では、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。
-ms.openlocfilehash: c00d39cae440bc95e26c853e107d8d7a8f4c50d8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) をセットアップしてオンプレミスの電子メール環境を保護する方法について説明します。
+ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035286"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209801"
 ---
-# <a name="set-up-your-eop-service"></a>EOP サービスを設定する
+# <a name="set-up-your-standalone-eop-service"></a>スタンドアロンの EOP サービスをセットアップする
 
-このトピックでは、Microsoft Exchange Online Protection (EOP) のセットアップ方法について説明します。Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。コネクタの構成方法の詳細については、「[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」をご覧ください。
+このトピックでは、スタンドアロンの Exchange Online Protection (EOP) を設定する方法について説明します。 Office 365 ドメイン ウィザードからここに移動してきた場合、Exchange Online Protection を使用する必要がなければ Office 365 ドメイン ウィザードに戻ってください。 コネクタの構成方法の詳細については、「[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)」をご覧ください。
 
 > [!NOTE]
 > このトピックは、対象とする社内メールボックスがあり、それらをスタンドアロン シナリオとして知られている EOP で保護する場合を前提としています。 Exchange Online によりクラウド上のすべてのメールボックスをホストする場合、このトピックに記載されているすべての作業を行う必要はありません。 「 [Exchange Online プランの比較](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)」に移動して、クラウドメールボックスをサインアップして購入します。 社内メールボックスの一部をホストし、一部をクラウド上に置く場合は、ハイブリッド シナリオと呼びます。 この場合、より高度なメール フローの設定が必要です。 「 [Exchange Server のハイブリッド展開](https://docs.microsoft.com/exchange/exchange-hybrid)」には、ハイブリッドメールフローについての説明と、設定方法を示すリソースへのリンクがあります。
@@ -32,7 +32,7 @@ ms.locfileid: "44035286"
 
 - このタスクの予想所要時間:1 時間
 
-- コネクタを構成するには、アカウントがグローバル管理者であるか、または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 詳細については、「 [Feature permissions IN EOP](feature-permissions-in-eop.md)」を参照してください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、既定では、[リモートドメインと承認済みドメイン] の役割が必要です。これは、既定では、MailFlowAdministrator および組織の管理 (グローバル管理者) の役割グループに割り当てられます。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、[役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
 
 - EOP に登録にしていない場合は、「[Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)」にアクセスして、サービスを購入するか、試用してみてください。
 
@@ -56,7 +56,7 @@ EOP サービスとの間のメール フローを設定する前に、受信者
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>手順 3:EAC を使用してメール フローをセットアップする
 
-Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプレミスのメール サーバー間のメール フローを有効にします。 詳細な手順については、「 [Microsft 365 と独自の電子メールサーバーの間でメールをルーティングするようにコネクタを設定する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)」を参照してください。
+Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプレミスのメール サーバー間のメール フローを有効にします。 詳細な手順については、「 [Microsoft 365 と独自の電子メールサーバーの間でメールをルーティングするようにコネクタを設定する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)」を参照してください。
 
 ### <a name="how-do-you-know-this-task-worked"></a>このタスクの検証方法
 
@@ -64,7 +64,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>手順 4: 受信ポート 25 SMTP アクセスを許可する
 
-コネクタを構成した後、DNS レコードの更新が伝達されるよう 72 時間待ちます。この後、ファイアウォールまたはメール サーバーで、EOP データセンターからの (具体的には [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) に一覧表示されている IP アドレスからの) メールだけを受信するように、受信用ポート 25 の SMTP トラフィックを制限します。これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
+コネクタを構成したら、72時間待機して、DNS レコードの更新を反映できるようにします。 この後、ファイアウォールまたはメール サーバーで、EOP データセンターからの (具体的には [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) に一覧表示されている IP アドレスからの) メールだけを受信するように、受信用ポート 25 の SMTP トラフィックを制限します。 これにより、受信可能な受信メッセージの範囲が制限され、社内環境が保護されます。 また、メール リレーへの接続が許可される IP アドレスを制御するようにメール サーバーを設定している場合は、その設定も更新します。
 
 > [!TIP]
 > SMTP サーバーの設定を、60 秒で接続タイムアウトが発生するように構成します。 この設定は、大規模な添付ファイルで送信されたメッセージの場合など、遅延が発生する場合がほとんどの場合に使用できます。
@@ -73,11 +73,14 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 スパム (迷惑) メールがそれぞれのユーザーの迷惑メール フォルダーに正しくルーティングされることを保証するには、一組の構成手順を実行する必要があります。 この手順は、[ハイブリッド環境の迷惑メールフォルダーにスパムを配信するように、[スタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)] で提供されています。
 
-メッセージをそれぞれのユーザーの迷惑メール フォルダーに移動しない場合は、Exchange 管理センターでコンテンツ フィルター ポリシーを編集すると別のアクションを選択できます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
+各ユーザーの迷惑メールフォルダーにメッセージを移動しない場合は、スパム対策ポリシーを編集して別のアクションを選択することができます。 詳細については、「[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 
 ドメイン構成手順に従って、受信メールが EOP を通過するように、ドメインの MX レコードを更新します。 サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。 詳細については、「[Office 365 の DNS レコードを作成する ](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」を参照してください。
+
+> [!NOTE]
+> MX レコードが EOP の前にある別のサーバーまたはサービスを指している必要がある場合は、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
 ### <a name="how-do-you-know-this-task-worked"></a>このタスクの検証方法
 
@@ -90,4 +93,4 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 - 送信電子メールのテストを実行する場合は、組織内のユーザーから Web ベースの電子メール アカウントに電子メールを送信し、メッセージが受信されたかを確認できます。
 
 > [!TIP]
-> セットアップが完了したら、EOP を使用してスパムやマルウェアを削除するために、特別な手順を実行する必要はありません。 EOP はスパムやマルウェアを自動的に削除します。 ただしビジネス要件に基づいて、EAC の設定を微調整することも可能です。 詳細については、「 [Office のスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md)」を参照してください365。 <br/><br/> サービスが実行されたので、 [EOP を構成するためのベストプラクティス](best-practices-for-configuring-eop.md)を読み取ることをお勧めします。これは、EOP のセットアップ後に推奨される設定と考慮事項について説明します。
+> セットアップが完了したら、EOP を使用してスパムやマルウェアを削除するために、特別な手順を実行する必要はありません。 EOP はスパムやマルウェアを自動的に削除します。 ただし、ビジネス要件に基づいて設定を微調整することができます。 詳細については、「 [Office 365 のスパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md)」および「 [Configure スプーフ知能](learn-about-spoof-intelligence.md)」を参照してください。 <br/><br/> サービスが実行されたので、 [EOP を構成するためのベストプラクティス](best-practices-for-configuring-eop.md)を読み取ることをお勧めします。これは、EOP のセットアップ後に推奨される設定と考慮事項について説明します。

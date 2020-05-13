@@ -1,11 +1,11 @@
 ---
-title: Office 365 にメールを送信するユーザー以外に対するサービス
+title: Microsoft 365 にメールを送信するユーザー以外のサービス
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,16 +16,16 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
-ms.openlocfilehash: 2d8de601fd24f30c342768b8b27e44248f05b5fe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638394"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208236"
 ---
-# <a name="services-for-non-customers-sending-mail-to-office-365"></a>Office 365 にメールを送信するユーザー以外に対するサービス
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Microsoft 365 にメールを送信するユーザー以外のサービス
 
-電子メールの不正使用、迷惑メール、詐欺メール (フィッシング詐欺) は、引き続き電子メール エコシステム全体にとって負担となっています。 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。 ただし、正当な電子メールが不利を被らないようにするべきであることも理解しています。 そのため、送信者が送信評価をプロアクティブに管理することで、Microsoft 365 ユーザーに電子メールを配信する機能を向上させる一連のサービスを確立しています。
+電子メールの不正使用、迷惑メール、詐欺メール (フィッシング詐欺) は、引き続き電子メール エコシステム全体にとって負担となっています。 電子メールの使用においてユーザーの信頼を維持するために、Microsoft はさまざまなポリシーとテクノロジを用意して、ユーザーを保護しています。 ただし、正当な電子メールが不利を被らないようにするべきであることも理解しています。 そのため、送信者が送信評価をプロアクティブに管理することで、Microsoft 365 ユーザーに電子メールを配信する機能を向上させる一連のサービスを確立しています。
 
 この概要では、お客様でない場合でも、組織に提供するメリットについて説明します。
 
@@ -33,14 +33,14 @@ ms.locfileid: "43638394"
 
 |**サービス**|**利点**|
 |:-----|:-----|
-|このオンライン ヘルプ コンテンツ| 提供内容：  <br/>  EOP ユーザーへの通信の配信に関する質問の起点  <br/>  Microsoft のポリシーと要件が記載された簡単なオンライン ガイドが含まれる  <br/>  Microsoft によって導入されている迷惑メール フィルターと認証テクノロジの概要|
+|このオンライン ヘルプ コンテンツ|提供内容： <br/> EOP ユーザーへの通信の配信に関連する質問の開始点。 <br/><br/> には、ポリシーと要件に関する簡単なオンラインガイドが含まれています。 <br/><br/> Microsoft によって使用されている迷惑メールフィルターと認証テクノロジの概要について説明します。|
 |[Microsoft サポート](#microsoft-support)|配信の問題に対するセルフヘルプと充実したサポートを提供します。|
 |[スパム対策 IP リストから除外ポータル](#anti-spam-ip-delist-portal)|IP リストからの除外要求を送信するためのツール。この要求を送信する前に、送信者は、疑わしい IP から不正なメールや悪意のあるメールが送信されないことを確認する責任があります。|
-|[Exchange Online からの迷惑メールの不正使用とスパムの報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|スパムや他の望ましくないメールが Exchange Online から送信されたり、インターネットや電子メール システムが混乱したりしないようにします。|
+|[Exchange Online からの迷惑メールの不正使用とスパムの報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|スパムやその他の不要なメールが Exchange Online から送信されないようにして、インターネットやメールシステムを雑然としないようにします。|
 
 ## <a name="microsoft-support"></a>Microsoft サポート
 
-Microsoft では、Microsoft 365 受信トレイにメールを送信する際に問題が発生しているユーザーに対して、いくつかのサポートオプションを提供 次のことをお勧めします。
+Microsoft は、Microsoft 365 の受信者にメールを送信する際に問題が発生しているユーザーに対して、いくつかのサポートオプションを提供 次のことをお勧めします。
 
 - 受信するあらゆる配信不能レポートの指示に従ってください。
 

@@ -1,9 +1,9 @@
 ---
-title: EOP でメール ユーザーを管理する
+title: メールユーザーをスタンドアロン EOP で管理する
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -13,139 +13,184 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: ディレクトリ同期、EAC、PowerShell を使用してユーザーを管理するなど、Exchange Online Protection (EOP) でメールユーザーを管理する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a4555bf4b6a716839c327c692f0e44b590f8175
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035558"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208647"
 ---
-# <a name="manage-mail-users-in-eop"></a>EOP でメール ユーザーを管理する
+# <a name="manage-mail-users-in-standalone-eop"></a>メールユーザーをスタンドアロン EOP で管理する
 
-メール ユーザーの定義は、Exchange Online Protection (EOP) サービスを管理する上で重要な部分です。EOP でユーザーを管理するには、いくつかの方法があります。
-
-- **ディレクトリ同期を使用してメール ユーザーを管理する**: 会社のオンプレミス Active Directory 環境に既存のユーザー アカウントが存在する場合、これらのアカウントを Azure Active Directory (AD) に同期することができます。アカウントのコピーはクラウドに格納されます。既存のユーザー アカウントを Azure Active Directory に同期するときに、Exchange 管理センター (EAC) の **[受信者]** ウィンドウに該当するユーザーを表示できます。ディレクトリ同期の使用をお勧めします。
-
-- **EAC を使用してメール ユーザーを管理する**: EAC で直接メール ユーザーを追加して管理します。これは、メール ユーザーを追加する最も簡単な方法で、一度に 1 ユーザーを追加する場合に役立ちます。
-
-- **Powershell を使用してメールユーザーを管理する**: Exchange Online Protection PowerShell でメールユーザーを追加および管理します。 このメソッドは、複数のレコードの追加およびスクリプトの作成に役立ちます。
+Exchange Online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織では、メールユーザーは基本的な種類のユーザーアカウントです。 メールユーザーは、スタンドアロンの EOP 組織内にアカウントの資格情報を持ち、リソースにアクセスできます (アクセス許可が割り当てられている)。 メールユーザーの電子メールアドレスが外部にある (たとえば、オンプレミスの電子メール環境で)。
 
 > [!NOTE]
-> Microsoft 365 管理センターでユーザーを追加することはできますが、これらのユーザーをメール受信者として使用することはできません。
+> メールユーザーを作成すると、対応するユーザーアカウントが Microsoft 365 管理センターで利用可能になります。 Microsoft 365 管理センターでユーザーアカウントを作成する場合、そのアカウントを使用してメールユーザーを作成することはできません。
 
-## <a name="before-you-begin"></a>はじめに
+スタンドアロン EOP でメールユーザーを作成および管理するために推奨される方法は、このトピックで後述する「[ディレクトリ同期を使用してメールユーザーを管理する](#use-directory-synchronization-to-manage-mail-users)」の説明に従ってディレクトリ同期を使用することです。
 
-- Exchange 管理センターを開くには、「exchange [Online Protection の exchange 管理センター](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
+ユーザー数が少ないスタンドアロンの EOP 組織では、このトピックで説明されているように、Exchange 管理センター (EAC) またはスタンドアロン EOP PowerShell でメールユーザーを追加および管理できます。
 
-- この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可の一覧については、以下を参照してください。「[EOP の機能アクセス許可](feature-permissions-in-eop.md)」の「ユーザー、連絡先、および役割グループ」。
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Exchange Online Protection の PowerShell コマンドレットを使用してメールユーザーを作成する場合、調整が発生する可能性があることに注意してください。
+- Exchange 管理センター (EAC) を開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- このトピックの PowerShell コマンドでは、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。
+- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- Windows PowerShell を使用して Exchange Online Protection に接続する方法については、「[Exchange Online Protection の PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- EOP PowerShell でメールユーザーを作成するときに、調整が発生することがあります。 また、EOP PowerShell コマンドレットはバッチ処理方法を使用して、コマンドの結果が表示されるまでに数分の伝達遅延が発生するようになります。
+
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、既定では、組織の管理 (グローバル管理者) および受信者管理役割グループに割り当てられているメール受信者作成 (作成) とメール受信者 (変更) の役割が必要です。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、[役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
 
 - このトピックの手順に適用されるキーボードショートカットについては、「exchange [Online の exchange 管理センターのキーボードショートカット](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 
 > [!TIP]
-> 問題がある場合は、 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラムでヘルプを要求します。
+> 問題がある場合は、 Exchange のフォーラムで質問してください。 「 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)フォーラム」を参照してください。
 
-## <a name="use-directory-synchronization-to-manage-mail-users"></a>ディレクトリ同期を使用してメール ユーザーを管理する
+## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Exchange 管理センターを使用してメールユーザーを管理する
 
-このセクションでは、ディレクトリ同期を使用して電子メール ユーザーを管理する方法について説明します。
+### <a name="use-the-eac-to-create-mail-users"></a>EAC を使用してメールユーザーを作成する
+
+1. EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。
+
+2. [**新しい** ![ 新規作成] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。 [**新しいメールユーザー** ] ページが開いたら、次の設定を構成します。 でマークされた設定 <sup>\*</sup> は必須です。
+
+   - **名**
+
+   - **イニシャル**: ユーザーのミドルネームのイニシャル。
+
+   - **姓**
+
+   - <sup>\*</sup>[**表示名**]: 既定では、このボックスには、[**名**]、[**イニシャル**]、[**姓**] ボックスの値が表示されます。 この値を受け入れるか、または変更することができます。 この値は一意である必要があり、最大長は64文字です。
+
+   - <sup>\*</sup>**エイリアス**: ユーザーに対して、最大64文字の一意のエイリアスを入力します。
+
+   - **外部電子メールアドレス**: ユーザーの電子メールアドレスを入力します。 ドメインは、クラウドベースの組織の外部にある必要があります。
+
+   - <sup>\*</sup>**ユーザー ID**: ユーザーがサービスにサインインするために使用するアカウントを入力します。 ユーザー ID は、アットマーク記号 (@) の左側のユーザー名と右側のドメインで構成されます。
+
+   - <sup>\*</sup>[**新しいパスワード**] と [ <sup>\*</sup> **パスワードの確認**]: アカウントのパスワードを入力して再入力します。 パスワードが組織のパスワードの長さ、複雑さ、および履歴に関する要件を満たしていることを確認します。
+
+3. 完了したら、 **[保存]** をクリックしてメール ユーザーを作成します。
+
+### <a name="use-the-eac-to-modify-mail-users"></a>EAC を使用してメールユーザーを変更する
+
+1. EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。
+
+2. 変更するメールユーザーを選択し、[編集アイコンの**編集**] をクリックし ![ ](../../media/ITPro-EAC-AddIcon.png) ます。
+
+3. 開いたメールユーザーのプロパティページで、次のタブのいずれかをクリックして、プロパティを表示または変更します。
+
+   完了したら、**[保存]** をクリックします。
+
+#### <a name="general"></a>全般
+
+**[全般**] タブを使用して、メールユーザーの基本情報を表示または変更します。
+
+- **名**
+
+- **頭文字**
+
+- **姓**
+
+- [**表示名**]: この名前は、組織のアドレス帳、電子メールの宛先行と差出人行、および EAC 内の連絡先の一覧に表示されます。 この名前は、表示名の前または後に空のスペースを含めることはできません。
+
+- **ユーザー ID**: これは、Microsoft 365 のユーザーアカウントです。 ここでは、この値を変更できません。
+
+#### <a name="contact-information"></a>連絡先情報
+
+[**連絡先の情報**] タブを使用して、ユーザーの連絡先情報を表示または変更します。 このページの情報がアドレス帳に表示されます。
+
+- **所在**
+- **市区町村**
+- **都道府県**
+- **郵便番号**
+- **国/地域設定**
+- **勤務先の電話番号**
+- **携帯電話**
+- **Fax**
+- **[その他のオプション]**
+
+  - **Office**
+  - **自宅電話**
+  - **Web ページ**
+  - **メモ**
+
+#### <a name="organization"></a>組織
+
+[**組織**] タブを使用して、組織内のユーザーの役割に関する詳細情報を記録します。
+
+- **役職**
+- **部署**
+- **Company**
+
+### <a name="use-the-eac-to-remove-mail-users"></a>EAC を使用してメールユーザーを削除する
+
+1. EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。
+
+2. 削除するメールユーザーを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
+
+## <a name="use-powershell-to-manage-mail-users"></a>PowerShell を使用してメールユーザーを管理する
+
+### <a name="use-standalone-eop-powershell-to-view-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを表示する
+
+スタンドアロン EOP PowerShell のすべてのメールユーザーの要約リストを返すには、次のコマンドを実行します。
+
+```powershell
+Get-Recipient -RecipientType MailUser -ResultSize unlimited
+```
+
+特定のメールユーザーについての詳細情報を表示するには、 \< mailuseridentity を \> メールユーザーの名前、エイリアス、またはアカウント名に置き換えて、次のコマンドを実行します。
+
+```powershell
+Get-Recipient -Identity <MailUserIdentity> | Format-List
+```
+
+```powershell
+Get-User -Identity <MailUserIdentity> | Format-List
+```
+
+構文およびパラメーターの詳細については、「[取得-受信者](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)と[取得ユーザー](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)」を参照してください。
+
+### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを作成する
+
+スタンドアロン EOP PowerShell でメールユーザーを作成するには、次の構文を使用します。
+
+```powershell
+New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Password (ConvertTo-SecureString -String '<password>' -AsPlainText -Force) [-Alias <AliasValue>] [-DisplayName "<Display Name>"] [-ExternalEmailAddress <ExternalEmailAddress>] [-FirstName <Text>] [-Initials <Text>] [-LastName <Text>]
+```
 
 **注**:
 
-- ディレクトリ同期を使用して受信者を管理している場合でも、Microsoft 365 管理センターでユーザーを追加および管理することはできますが、オンプレミスの Active Directory と同期されることはありません。 これは、ディレクトリ同期では、オンプレミスの Active Directory からクラウドへの受信者のみ**を同期する****から**です。
+- _Name_パラメーターは必須で、最大長は64文字で、一意である必要があります。 _DisplayName_パラメーターを使用しない場合、 _name_パラメーターの値が表示名として使用されます。
+- _Alias_パラメーターを使用しない場合、 _MicrosoftOnlneServicesID_パラメーターの左側がエイリアスに使用されます。
+- _ExternalEmailAddress_パラメーターを使用しない場合、 _MicrosoftOnlineServicesID_の値が外部の電子メールアドレスに使用されます。
 
-- ディレクトリ同期は、次の機能を使用する場合にお勧めします。
+この例では、次の設定を使用してメールユーザーを作成します。
 
-  - **Outlook の差出人セーフリストと受信拒否リスト**: サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。 これにより、ユーザーは独自の差出人セーフ リストとブロックする差出人リストをユーザー単位またはドメイン単位で管理できます。
-
-  - **ディレクトリベースのエッジブロック (dbeb)**: DBEB の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。
-
-  - **エンドユーザーのスパム検疫**: エンドユーザーのスパム検疫にアクセスするには、エンドユーザーが有効なユーザー ID とパスワードを持っている必要があります。 社内のメールボックスを保護している EOP のお客様は、有効な電子メール ユーザーである必要があります。
-
-  - **メールフロールール**: ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループが自動的にクラウドにアップロードされ、EAC または Exchange Online Protection の PowerShell を使用して手動で追加することなく、特定のユーザーやグループを対象とするメールフロールール (トランスポートルールとも呼ばれる) を作成できます。 [動的配布グループ](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)はディレクトリ同期を使用して同期できないことに注意してください。
-
-必要なアクセス許可を取得し、ディレクトリ同期を準備します (「 [Azure Active directory でのハイブリッド id とは](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)」を参照)。
-
-### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a>ユーザーディレクトリを Azure Active Directory Connect (AAD Connect) と同期するには
-
-Azure Active Directory (AAD) に対してユーザーを同期するには、まず、「 [AZURE AD Connect sync: 同期の理解とカスタマイズ](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)」の説明に従って、**ディレクトリ同期をアクティブ化**する必要があります。
-
-次に、AAD Connect を実行するためのオンプレミスのコンピューターのインストールと構成を行います (時間の前に確認する必要があるものがまだない場合)。 [Aad connect を設定](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)すると、このトピックでは、社内のアカウントを aad 接続を使用して Azure AD にセットアップし、同期する方法について説明します。
-
-この作業を行う前に、[前提条件を満たし](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)ていることを確認し、[インストールの種類を選択](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)してください。 以前のリンクは、高速インストールに関する短い記事を対象としています。 [カスタムインストール](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)の記事や、必要に応じ[て認証をパススルー](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)することもできます。
-
-> [!IMPORTANT]
-> Azure Active Directory 同期ツール構成ウィザードを終了すると、Active Directory フォレストに **MSOL_AD_SYNC** アカウントが作成されます。このアカウントは、社内 Active Directory 情報の読み取りと同期に使われます。ディレクトリ同期が正しく行われるように、ローカル ディレクトリ同期サーバー上の TCP 443 が開いていることを確認してください。
-
-同期を構成した後、EOP が正しく同期されていることを確認してください。 EAC で、 **[受信者]** \> **[連絡先]** に移動し、ユーザーの一覧が社内環境から同期されていることを確認します。
-
-## <a name="use-the-eac-to-manage-mail-users"></a>EAC を使用してメール ユーザーを管理する
-
-ここでは、EAC で直接電子メール ユーザーを追加し管理する方法について説明します。
-
-### <a name="use-the-eac-to-add-a-mail-user"></a>EAC を使用してメールユーザーを追加する
-
-1. 電子メール ユーザーを作成するために、EAC で **[受信者]** \> **[連絡先]** に移動し、 **[新規 +]** をクリックします。
-
-2. **[メール ユーザーの新規作成]** ページで、以下を含むユーザー情報を入力します。
-
-   ****
-
-   |**メール ユーザーのプロパティ**|**説明**|
-   |:-----|:-----|
-   |**[名]**、 **[イニシャル]**、 **[姓]**|該当するボックスに、ユーザーの氏名を入力します。|
-   |**表示名**|名前を入力します (最大 64 文字)。既定では、このボックスには **[名]**、 **[イニシャル]**、 **[姓]** ボックスに入力した名前が表示されます。表示名は必須です。  |
-   |**エイリアス**|ユーザーのエイリアスを入力します (最大 64 文字)。エイリアスは必須です。|
-   |**外部電子メール アドレス**|ユーザーの外部電子メール アドレスを入力します。|
-   |**ユーザー ID**|メール ユーザーがサービスにサインインするときに使用する名前を入力します。ユーザー サインイン名は、アットマーク記号 (@) の左側のユーザー名と右側のサフィックスで構成されます。一般的にサフィックスは、ユーザー アカウントが存在するドメイン名です。|
-   |**新しいパスワード**|メール ユーザーがサービスにサインインするときに使用するパスワードを入力します。作成するユーザー アカウントが属するドメインでのパスワードの長さ、複雑さ、および履歴に関する要件を満たすパスワードを指定してください。|
-   |**パスワードの確認入力**|確認のためのパスワードを再入力します。|
-
-3. **[保存]** をクリックして新しい電子メール ユーザーを作成します。ユーザーの一覧に、新規ユーザーが表示されます。
-
-### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a>EAC を使用してメールユーザーを編集または削除する
-
-- EAC で、[**受信者** \>の**連絡先**] に移動します。 ユーザーの一覧で、表示または変更するユーザーをクリックし、 **[編集]** ![編集アイコン](../../media/ITPro-EAC-EditIcon.gif)を選択して、必要に応じてユーザーの設定を更新します。 ユーザーの名前、エイリアス、または連絡先情報を変更したり、組織内のユーザーの役割に関する詳細情報を記録したりすることができます。 ユーザーを選択し、[削除] [**削除]** ![アイコン](../../media/ITPro-EAC-RemoveIcon.gif)を選択して削除することもできます。
-
-## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a>Exchange Online Protection PowerShell を使用してメールユーザーを管理する
-
-このセクションでは、リモートの Windows PowerShell を使用してメール ユーザーを追加し、管理する方法について説明します。
-
-### <a name="use-eop-powershell-to-add-a-mail-user"></a>EOP PowerShell を使用してメールユーザーを追加する
-
-この例では、コマンドレット [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser) を使用して、以下の情報を基に、EOP で Jeffrey Zeng に対してメールが有効なユーザー アカウントを作成します。
-
+- 名前は JeffreyZeng で、表示名は Jeffrey Zeng です。
 - 名は Jeffrey で、姓は Zeng です。
-
-- 名前は Jeffrey で、表示名は Jeffrey Zeng です。
-
 - エイリアスは jeffreyz です。
-
 - 外部の電子メール アドレスは jzeng@tailspintoys.com です。
-
-- Microsoft 365 サインイン名は jeffreyz@contoso.onmicrosoft.com です。
-
+- アカウント名は jeffreyz@contoso.onmicrosoft.com です。
 - パスワードは Pa$$word1 です。
 
 ```PowerShell
-New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-これが正常に動作することを確認するには、次のコマンドを実行して、新しいメールユーザー Jeffrey Zeng に関する情報を表示します。
+構文およびパラメーターの詳細については、「 [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)」を参照してください。
 
-```PowerShell
-Get-User -Identity "Jeffrey Zeng"
+### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを変更する
+
+スタンドアロン EOP PowerShell で既存のメールユーザーを変更するには、次の構文を使用します。
+
+```powershell
+Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Textg>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
 ```
 
-構文およびパラメーターの詳細については、「[取得-ユーザー](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)」を参照してください。
-
-### <a name="use-eop-powershell-to-edit-the-properties-of-a-mail-user"></a>EOP PowerShell を使用してメールユーザーのプロパティを編集する
-
-コマンドレット [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) および [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser) を使用して、メール ユーザーのプロパティを表示または変更します。
+```powershell
+Set-EOPUser -Identity <MailUserIdentity> [-City <Text>] [-Company <Text>] [-CountryOrRegion <CountryInfo>] [-Department <Text>] [-Fax <PhoneNumber>] [-FirstName <Text>] [-HomePhone <PhoneNumber>] [-Initials <Text>] [-LastName <Text>] [-MobilePhone <PhoneNumber>] [-Notes <Text>] [-Office <Text>] [-Phone <PhoneNumber>] [-PostalCode <String>] [-StateOrProvince <String>] [-StreetAddress <Tet>] [-Title <Text>] [-WebPage <Text>]
+```
 
 この例では、Pilar Pinilla の外部電子メール アドレスを設定します。
 
@@ -156,34 +201,85 @@ Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.co
 この例では、すべてのメール ユーザーの [会社] プロパティを Contoso に設定します。
 
 ```PowerShell
-$Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
+$Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-これが正常に動作することを確認するには、次[のコマンドレットを使用して](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)変更を確認します。 (複数のメール連絡先に対して複数のプロパティが表示されることに注意してください)。
+構文およびパラメーターの詳細については、「 [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser)」を参照してください。
+
+### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを削除する
+
+スタンドアロン EOP PowerShell でメールユーザーを削除するには、 \< mailuseridentity を \> メールユーザーの名前、エイリアス、またはアカウント名に置き換えて、次のコマンドを実行します。
 
 ```PowerShell
-Get-Recipient -Identity "Pilar Pinilla" | Format-List
+Remove-EOPMailUser -Identity <MailUserIdentity\>
 ```
 
-前にすべてのメール ユーザーの ［会社］ プロパティを Contoso に設定した例で、次のコマンドを実行して変更を確認します。
+この例では、Jeffrey Zeng のメールユーザーを削除します。
 
 ```PowerShell
-Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
+Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
+
+構文およびパラメーターの詳細については、「 [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser)」を参照してください。
+
+## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
+
+メールユーザーの作成、変更、または削除が正常に完了したことを確認するには、次のいずれかの手順を使用します。
+
+- EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。 メールユーザーが一覧に表示されている (または一覧に表示されていない) ことを確認します。 メールユーザーを選択して、詳細ウィンドウに情報を表示するか、[編集アイコンの**編集**] をクリックして ![ 設定を表示し ](../../media/ITPro-EAC-AddIcon.png) ます。
+
+- スタンドアロン EOP PowerShell で、次のコマンドを実行して、メールユーザーが一覧に表示されている (または一覧に表示されていない) ことを確認します。
+
+  ```powershell
+  Get-Recipient -RecipientType MailUser -ResultSize unlimited
+  ```
+
+- \<Mailuseridentity を \> メールユーザーの名前、エイリアス、またはアカウント名に置き換え、次のコマンドを実行して設定を確認します。
+
+  ```powershell
+  Get-Recipient -Identity <MailUserIdentity> | Format-List
+  ```
+
+  ```powershell
+  Get-User -Identity <MailUserIdentity> | Format-List
+  ```
+
+## <a name="use-directory-synchronization-to-manage-mail-users"></a>ディレクトリ同期を使用してメール ユーザーを管理する
+
+スタンドアロン EOP では、オンプレミスの Active Directory を使用しているお客様はディレクトリ同期を利用できます。 これらのアカウントを Azure Active Directory (Azure AD) と同期することができます。これにより、アカウントのコピーがクラウドに保存されます。 既存のユーザーアカウントを Azure Active Directory と同期する場合は、Exchange 管理センター (EAC) またはスタンドアロン EOP PowerShell の [**受信者**] ウィンドウで、これらのユーザーを表示できます。
+
+**注**:
+
+- ディレクトリ同期を使用して受信者を管理している場合でも、Microsoft 365 管理センターでユーザーを追加および管理することはできますが、オンプレミスの Active Directory と同期されることはありません。 これは、ディレクトリ同期では社内 Active Directory からクラウドへの受信者の同期だけが実行されるためです。
+
+- 次の機能によるディレクトリ同期の使用をお勧めします。
+
+  - **Outlook の差出人セーフリストと受信拒否リスト**: サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。 これにより、ユーザーは、個々の送信者およびドメインエントリを使用して、自分の差出人セーフリストと受信拒否リストを管理できます。 詳細については、「 [Exchange Online メールボックスで迷惑メールの設定を構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)」を参照してください。
+
+  - **ディレクトリベースのエッジブロック (dbeb)**: DBEB の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。
+
+  - **エンドユーザーによる検疫へのアクセス**: 検疫されたメッセージにアクセスするには、受信者がサービスに有効なユーザー ID とパスワードを持っている必要があります。 検疫の詳細については、「[ユーザーとして検疫済みメッセージを検索して解放する](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user)」を参照してください。
+
+  - **メールフロールール (トランスポートルールとも呼ばれる)**: ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループがクラウドに自動的にアップロードされます。その後、特定のユーザーやグループを対象とするメールフロールールを作成して、それらをサービスに手動で追加する必要はありません。 [動的配布グループ](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)はディレクトリ同期を使用して同期できないことに注意してください。
+
+必要なアクセス許可を取得し、ディレクトリ同期を準備します (「 [Azure Active directory でのハイブリッド id とは](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)」を参照)。
+
+### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>ディレクトリを Azure Active Directory Connect (AAD Connect) と同期する
+
+1. 「 [AZURE AD Connect 同期: 同期の理解とカスタマイズ](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)」の説明に従って、ディレクトリ同期をアクティブ化します。
+
+2. [AZURE AD Connect の前提条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)に従って、AAD Connect を実行するようにオンプレミスのコンピューターをインストールして構成します。
+
+3. [AZURE AD Connect に使用するインストールの種類を選択し](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)ます。
+
+   - [ニュース](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+
+   - [Custom](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+
+   - [パススルー認証](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
-> このコマンドレットはバッチ処理方法を使用しており、コマンドレットの結果が表示されるまで数分の送信遅延が生じます。
+> Azure Active Directory 同期ツール構成ウィザードを終了すると、Active Directory フォレストに **MSOL_AD_SYNC** アカウントが作成されます。このアカウントは、社内 Active Directory 情報の読み取りと同期に使われます。ディレクトリ同期が正しく行われるように、ローカル ディレクトリ同期サーバー上の TCP 443 が開いていることを確認してください。
 
-### <a name="use-eop-powershell-to-remove-a-mail-user"></a>EOP PowerShell を使用してメールユーザーを削除する
-
-この例では、コマンドレット [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser) を使用してユーザー Jeffrey Zeng を削除します。
-
-```PowerShell
-Remove-EOPMailUser -Identity Jeffrey
-```
-これが正常に動作することを確認するには、 [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)コマンドレットを実行して、メールユーザーが存在しないことを確認します。
-
-```PowerShell
-Get-Recipient Jeffrey | Format-List
-```
+同期を構成した後、AAD Connect が正しく同期されていることを確認してください。 EAC で、 **[受信者]** \> **[連絡先]** に移動し、ユーザーの一覧が社内環境から同期されていることを確認します。

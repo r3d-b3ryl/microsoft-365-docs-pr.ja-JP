@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 管理者は、ランサムウェア攻撃から回復する方法について学ぶことができます。
-ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634402"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208260"
 ---
-# <a name="recover-from-a-ransomware-attack-in-office-365"></a>Office 365 でランサムウェア攻撃から回復する
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365 のランサムウェア攻撃からの回復
 
 組織を保護するためにすべての予防措置を講じたとしても、[ランサムウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻撃に被害を与えることができます。 ランサムウェアは大規模なものであり、攻撃は高度なものとなっています。
 
@@ -42,7 +42,7 @@ ms.locfileid: "43634402"
 
 メールが対象になると考えられる場合は、メールボックスへのユーザーアクセスを一時的に無効にする必要があります。 Exchange ActiveSync は、モバイルデバイスがデバイスと Exchange Online メールボックスの間でデータを同期するために使用されます。
 
-メールボックスの ActiveSync を無効にするには、「 [How to Disable Exchange activesync In Office 365](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)」を参照してください。
+メールボックスの ActiveSync を無効にする方法については、「 [Exchange Online でユーザーの Exchange activesync を無効にする方法](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)」を参照してください。
 
 メールボックスへの他の種類のアクセスを無効にするには、以下を参照してください。
 

@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: このトピックでは、スパム対策保護に関する Faq & 回答を示します。 回答は Microsoft Exchange Online & Exchange Online Protection (EOP) のお客様に適用されます。
-ms.openlocfilehash: 33fb1fb5d73f0d686a72e89d460c0973d2bbdabe
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理者は、Exchange Online Protection (EOP) で、スパム対策保護についてよく寄せられる質問と回答を参照できます。
+ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033740"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209645"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護に関するよく寄せられる質問
 
-このトピックでは、exchange online またはスタンドアロンの exchange online Protection (EOP) のお客様が Exchange online メールボックスを使用していない場合に、メールボックスを持つ Microsoft 365 ユーザーのスパム対策保護に関してよく寄せられる質問と回答を提供します。
+このトピックでは、exchange Online のメールボックスを使用する Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織に対するマルウェア対策保護に関するよく寄せられる質問と回答について説明します。
 
 検疫に関する質問と回答については、「[検疫に関する FAQ](quarantine-faq.md)」を参照してください。
 
@@ -34,88 +34,88 @@ ms.locfileid: "44033740"
 
 スプーフィング対策保護に関する質問と回答については、「[スプーフィング対策保護](anti-spoofing-protection-faq.md)に関する FAQ」を参照してください。
 
-## <a name="q-by-default-what-happens-to-a-spam-detected-message"></a>Q. 既定では、スパム検出メッセージはどのように処理されますか?
+## <a name="by-default-what-happens-to-a-spam-detected-message"></a>既定では、スパム検出メッセージはどのように処理されますか?
 
-A. **受信メッセージの場合:** スパムの大部分は、送信元の電子メールサーバーの IP アドレスに基づいて、接続フィルターによって削除されます。 スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) は、メッセージを検査し、スパム、一括、またはフィッシングとして分類します。 既定では、スパムまたは一括として分類されるメッセージは、受信者の迷惑メールフォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されます) を変更することも、特定のユーザーグループに対して厳密な設定を使用してカスタムのスパム対策ポリシーを作成することもできます (たとえば、エグゼクティブに送信されるスパムを検疫できます)。 詳細については、「[スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」および「[推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
+**受信メッセージの場合:** スパムの大部分は、送信元の電子メールサーバーの IP アドレスに基づいて、接続フィルターによって削除されます。 スパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) は、メッセージを検査し、スパム、一括、またはフィッシングとして分類します。 既定では、スパムまたは一括として分類されるメッセージは、受信者の迷惑メールフォルダーに配信され、フィッシングとして分類されたメッセージは検疫されます。 既定のスパム対策ポリシー (すべての受信者に適用されます) を変更することも、特定のユーザーグループに対して厳密な設定を使用してカスタムのスパム対策ポリシーを作成することもできます (たとえば、エグゼクティブに送信されるスパムを検疫できます)。 詳細については、「[スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」および「[推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
 
 > [!IMPORTANT]
 > EOP が社内メールボックスを保護するハイブリッド展開では、オンプレミスの Exchange 組織内の2つの Exchange メールフロールール (トランスポートルールとも呼ばれます) を構成して、メッセージに追加される EOP スパムフィルタリングヘッダーを検出する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
 
  **送信メッセージの場合:** メッセージは、[危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)を経由してルーティングされるか、配信不能レポート (NDR またはバウンスメッセージとも呼ばれる) で送信者に返されます。 送信スパム保護の詳細については、「[送信スパム制御](outbound-spam-controls.md)」を参照してください。
 
-## <a name="q-whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Q. ゼロ日のスパムバリアントとは何ですか。サービスによってどのように処理されますか。
+## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>ゼロ日のスパムバリアントとは何ですか。サービスによってどのように処理されますか。
 
-A. ゼロ日のスパムの亜種は、まだ取得または分析されていない最初世代のスパムのバリアントです。そのため、スパム対策フィルターは、それを検出するために利用できる情報をまだ持っていません。 スパムの分類の基準を満たしている場合、スパムの1日のサンプルを取得して分析した後、スパムの分類の条件を満たす場合は、スパム対策フィルターを検出し、"0 日" とは見なされなくなりました。
+ゼロ日のスパムの亜種は、まだ取得または分析されていない最初世代のスパムのバリアントです。そのため、スパム対策フィルターは、それを検出するために利用できる情報をまだ持っていません。 スパムの分類の基準を満たしている場合、スパムの1日のサンプルを取得して分析した後、スパムの分類の条件を満たす場合は、スパム対策フィルターを検出し、"0 日" とは見なされなくなりました。
 
 **注:** スパムの送信がゼロであるというメッセージが表示される場合は、サービスの品質向上のために、「[レポートメッセージとファイル](report-junk-email-messages-to-microsoft.md)」に記載されているいずれかの方法を使用して、メッセージを microsoft に送信してください。
 
-## <a name="q-do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>Q. スパム対策保護を提供するサービスを構成する必要はありますか?
+## <a name="do-i-need-to-configure-the-service-to-provide-anti-spam-protection"></a>スパム対策保護を提供するサービスを構成する必要はありますか?
 
-A. サービスにサインアップしてドメインを追加すると、スパムフィルターが自動的に有効になります。 既定では、スパムフィルターは、追加の構成を必要とせずに (ハイブリッド環境におけるスタンドアロン EOP スタンドアロンのお客様に対して) 保護するように調整されています。 管理者は、組織のニーズに合わせて、既定のスパムフィルター設定を編集できます。 さらにきめ細かく設定すると、組織内の特定のユーザー、グループ、またはドメインに適用されるスパム対策ポリシーと送信スパム対策ポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。
+サービスにサインアップしてドメインを追加すると、スパムフィルターが自動的に有効になります。 既定では、スパムフィルターは、追加の構成を必要とせずに (ハイブリッド環境におけるスタンドアロン EOP スタンドアロンのお客様に対して) 保護するように調整されています。 管理者は、組織のニーズに合わせて、既定のスパムフィルター設定を編集できます。 さらにきめ細かく設定すると、組織内の特定のユーザー、グループ、またはドメインに適用されるスパム対策ポリシーと送信スパム対策ポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。
 
 詳細については、次のトピックをご覧ください。
 
 [EOP および Office 365 の ATP セキュリティに関する推奨設定](recommended-settings-for-eop-and-office365-atp.md)
 
-[マルウェア対策ポリシーを構成する](configure-the-connection-filter-policy.md)
+[EOP で接続フィルターを構成する](configure-the-connection-filter-policy.md)
 
-[Office 365 でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)
+[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)
 
 [送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)
 
-## <a name="q-if-i-make-a-change-to-an-anti-spam-policy-how-long-does-it-take-after-i-save-my-changes-for-them-to-take-effect"></a>Q. スパム対策ポリシーを変更した場合、変更を保存してからその変更が反映されるまで、どれ位かかりますか?
+## <a name="if-i-make-a-change-to-an-anti-spam-policy-how-long-does-it-take-after-i-save-my-changes-for-them-to-take-effect"></a>スパム対策ポリシーを変更した場合、変更を保存してからその変更が反映されるまで、どれ位かかりますか?
 
-A. 変更が有効になるまで最大 1 時間かかります。
+変更が有効になるまで最大 1 時間かかります。
 
-## <a name="q-is-bulk-email-filtering-automatically-enabled"></a>Q. バルク メールのフィルタリングは自動的に有効になりますか?
+## <a name="is-bulk-email-filtering-automatically-enabled"></a>バルク メールのフィルタリングは自動的に有効になりますか?
 
-A. はい。 バルクメールの詳細については、「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
+はい。 バルクメールの詳細については、「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
 
-## <a name="q-does-the-service-provide-url-filtering"></a>Q. このサービスでは URL フィルター機能が提供されますか?
+## <a name="does-the-service-provide-url-filtering"></a>このサービスでは URL フィルター機能が提供されますか?
 
-A. はい。このサービスには、メッセージ内の Url を確認する URL フィルターがあります。 既知のスパムまたは悪意のあるコンテンツに関連付けられた Url が検出されると、そのメッセージはスパムとしてマークされます。
+はい。このサービスには、メッセージ内の Url を確認する URL フィルターがあります。 既知のスパムまたは悪意のあるコンテンツに関連付けられた Url が検出されると、そのメッセージはスパムとしてマークされます。
 
-## <a name="q-how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>Q. サービス使用中の顧客が Microsoft へ偽陰性 (スパム) メッセージおよび偽陽性 (スパムでない) メッセージを送信するにはどうしますか。
+## <a name="how-can-customers-using-the-service-send-false-negative-spam-and-false-positive-non-spam-messages-to-microsoft"></a>サービス使用中の顧客が Microsoft へ偽陰性 (スパム) メッセージおよび偽陽性 (スパムでない) メッセージを送信するにはどうしますか。
 
-A. スパムとスパムではないメッセージを分析のために Microsoft に送信するには、いくつかの方法があります。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+スパムとスパムではないメッセージを分析のために Microsoft に送信するには、いくつかの方法があります。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-## <a name="q-can-i-get-spam-reports"></a>Q. スパム報告を取得できますか?
+## <a name="can-i-get-spam-reports"></a>スパム報告を取得できますか?
 
-A. はい。たとえば、Microsoft 365 管理センターでスパム検出レポートを取得できます。 このレポートでは、スパムボリュームが一意のメッセージ数として表示されます。 レポートの詳細については、次のリンクを参照してください。
+はい。たとえば、Microsoft 365 管理センターでスパム検出レポートを取得できます。 このレポートでは、スパムボリュームが一意のメッセージ数として表示されます。 レポートの詳細については、次のリンクを参照してください。
 
 Exchange Online のお客様: [Exchange online での監視、レポート、メッセージ追跡](https://docs.microsoft.com/exchange/monitoring/monitoring)
 
 スタンドアロン EOP のお客様: [Exchange Online Protection でのレポート作成とメッセージ追跡](reporting-and-message-trace-in-exchange-online-protection.md)
 
-## <a name="q-someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>Q. 誰かがメッセージを送信しましたが、見つかりませんでした。 スパムとして検出された可能性があります。 調べるためのツールはありますか?
+## <a name="someone-sent-me-a-message-and-i-cant-find-it-i-suspect-that-it-may-have-been-detected-as-spam-is-there-a-tool-that-i-can-use-to-find-out"></a>誰かがメッセージを送信しましたが、見つかりませんでした。 スパムとして検出された可能性があります。 調べるためのツールはありますか?
 
-A. はい、メッセージ追跡ツールを使用すると、電子メールメッセージがサービスを通過するときに追跡して、どのような問題が発生しているかを確認することができます。 メッセージ追跡ツールを使用して、メッセージがスパムとしてマークされた理由を確認する方法の詳細については、「[メッセージがスパムとしてマークされましたか?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam) 」を参照してください。
+はい、メッセージ追跡ツールを使用すると、電子メールメッセージがサービスを通過するときに追跡して、どのような問題が発生しているかを確認することができます。 メッセージ追跡ツールを使用して、メッセージがスパムとしてマークされた理由を確認する方法の詳細については、「[メッセージがスパムとしてマークされましたか?](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam) 」を参照してください。
 
-## <a name="q-will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>Q. ユーザーがスパムを送信した場合、サービスはメールを調整 (速度制限) しますか?
+## <a name="will-the-service-throttle-rate-limit-my-mail-if-my-users-send-outbound-spam"></a>ユーザーがスパムを送信した場合、サービスはメールを調整 (速度制限) しますか?
 
-A.特定の時間枠 (たとえば、1 時間ごと) 内でサービスを使用してユーザーから送信されたメールの半数以上が、Office 365 によってスパムと判断された場合、ユーザーはメッセージを送信できなくなります。ほとんどの場合、送信メッセージがスパムと判断された場合、そのメッセージは高リスク配信プールを通じてルーティングされます。この結果、通常の送信 IP プールが禁止リストに追加される可能性は減少します。
+ユーザーから特定の時間枠 (たとえば1時間) 以内にサービスを通じて送信されたメールが EOP によってスパムと判断された場合、そのユーザーはメッセージの送信をブロックされます。 この結果、通常の送信 IP プールが禁止リストに追加される可能性は減少します。
 
 送信者が送信スパムの送信をブロックされている場合、指定したメール アドレスに通知を送信できます。 この設定の詳細については、「[送信スパム ポリシーを構成する](configure-the-outbound-spam-policy.md)」を参照してください。
 
-## <a name="q-can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>Q. サードパーティのスパム対策およびマルウェア対策プロバイダーを Exchange Online と併用できますか。
+## <a name="can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>サードパーティのスパム対策およびマルウェア対策プロバイダーを Exchange Online と併用できますか。
 
-A. はい。 MX レコードを Microsoft に指定することをお勧めしますが、Microsoft 以外の場所に電子メールをルーティングする正当な業務上の理由があることを認識しています。
+はい。 MX レコードを Microsoft に指定することをお勧めしますが、Microsoft 以外の場所に電子メールをルーティングする正当な業務上の理由があることを認識しています。
 
 - **Inbound**: サードパーティプロバイダーをポイントするように MX レコードを変更し、追加の処理のためにメッセージを EOP にリダイレクトします。 詳細については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
 - **送信**: Microsoft 365 から送信先のサードパーティプロバイダーにスマートホストルーティングを構成します。
 
-## <a name="q-does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Q. マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。
+## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。
 
-A. はい。 詳細については、「[インターネット上のプライバシーを保護](https://support.microsoft.com/help/4091455)する」を参照してください。
+はい。 詳細については、「[インターネット上のプライバシーを保護](https://support.microsoft.com/help/4091455)する」を参照してください。
 
-## <a name="q-are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>Q. スパム メッセージおよびマルウェア メッセージの送信元に関する調査や、法執行機関への転送は行っていますか?
+## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>スパム メッセージおよびマルウェア メッセージの送信元に関する調査や、法執行機関への転送は行っていますか?
 
-A. サービスの中心はスパムやマルウェアの検出と除去ですが、特に危険で破壊力が大きい一連のスパムまたは攻撃については、加害者を調査および追跡する場合があります。 たとえば、Microsoft の法律部門やデジタル犯罪対策部門と連携して悪意のあるボットネットを削除したり、加害者がサービスを使用できないようにしたり (そのサービスが外部への電子メール送信に使用されている場合)、刑事告発のために法執行機関に情報を提供したりします。
+サービスの中心はスパムやマルウェアの検出と除去ですが、特に危険で破壊力が大きい一連のスパムまたは攻撃については、加害者を調査および追跡する場合があります。 たとえば、Microsoft の法律部門やデジタル犯罪対策部門と連携して悪意のあるボットネットを削除したり、加害者がサービスを使用できないようにしたり (そのサービスが外部への電子メール送信に使用されている場合)、刑事告発のために法執行機関に情報を提供したりします。
 
-## <a name="q-what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>Q. メールが確実に配信されるようにするための、送信メールに関するベスト プラクティスは?
+## <a name="what-are-a-set-of-best-outbound-mailing-practices-that-will-ensure-that-my-mail-is-delivered"></a>メールが確実に配信されるようにするための、送信メールに関するベスト プラクティスは?
 
-A. 以下に示すガイドラインは、送信メール メッセージを送信するためのベスト プラクティスです。
+以下に示すガイドラインは、送信メール メッセージを送信するためのベスト プラクティスです。
 
 - **ソースメールドメインが DNS で解決される必要があります。**
 
@@ -125,7 +125,7 @@ A. 以下に示すガイドラインは、送信メール メッセージを送�
 
 - **送信メールの eserver には、逆引き DNS (PTR) エントリが必要です。**
 
-  たとえば、電子メールの送信元 IP アドレスが192.0.43.10 の場合、逆引き DNS エントリは`43-10.any.icann.org`になります。
+  たとえば、電子メールの送信元 IP アドレスが192.0.43.10 の場合、逆引き DNS エントリはになり `43-10.any.icann.org` ます。
 
 - **HELO/EHLO および MAIL FROM コマンドに整合性があり、IP アドレスではなくドメイン名の形式で表現される必要があります。**
 
@@ -161,7 +161,7 @@ A. 以下に示すガイドラインは、送信メール メッセージを送�
 
   登録解除オプションは次のように表示されるはずです:
 
-  > このメッセージは、sender@fabrikam.com から example@contoso.com に送信されました。 プロファイルの更新/メールアドレス |**Safeunsubscribe** &trade;を使用した即時削除 |プライバシーポリシー
+  > このメッセージは、sender@fabrikam.com から example@contoso.com に送信されました。 プロファイルの更新/メールアドレス |**Safeunsubscribe**を使用した即時削除 &trade; |プライバシーポリシー
 
 - **バルク メールを送信する場合、ダブル オプトインを使用してリスト取得を実行する必要があります。バルク メールの送信者にとって、ダブル オプトインは業界のベスト プラクティスです。**
 

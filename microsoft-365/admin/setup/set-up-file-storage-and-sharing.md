@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: OneDrive とチームサイトを使用してファイルの保存と共有を行う方法について説明します。
-ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165219"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208188"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>ファイル ストレージと共有をセットアップする
 
@@ -144,7 +144,7 @@ Microsoft 365 ライセンスが割り当てられている (および SharePoin
 
     ![この画面でローカルフォルダーを変更する](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. チームサイト内のファイルは、組織の名前の下にあるエクスプローラーの左側のウィンドウに表示されます。 OneDrive のファイルが "OneDrive- \<組織\>の名前" の下に表示されます。
+6. チームサイト内のファイルは、組織の名前の下にあるエクスプローラーの左側のウィンドウに表示されます。 OneDrive のファイルが "OneDrive- \< 組織の名前" の下に表示されます。 \>
 
     ![「ローカルフォルダーの同期の内容」を参照してください。](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
@@ -185,7 +185,7 @@ Microsoft 365 では、ユーザーがサードパーティ製のストレージ
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にサインインします。
 
-2. [**設定** \>の<a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">設定</a>] ページに移動します。
+2. [**設定** \> ] [<a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**組織設定**</a>] ページに移動します。
 
 3. [**サービス**] タブで、[ **Office on the web**] を選択します。
 

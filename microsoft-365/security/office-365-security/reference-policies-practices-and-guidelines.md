@@ -2,10 +2,10 @@
 title: リファレンスポリシー、プラクティス、ガイドライン
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft は、さまざまなポリシー、手順を開発し、業界のベストプラクティスをいくつか採用して、ユーザーを不適切な迷惑メールや悪意のあるメールから保護しています。
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634390"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208212"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
 
@@ -31,9 +31,9 @@ Microsoft は、Web 上におけるユーザー エクスペリエンスの信�
 
 ## <a name="general-microsoft-policies"></a>一般的な Microsoft ポリシー
 
-Microsoft 365 ユーザーに送信される電子メールは、電子メール転送および Office 365 の使用を制御するすべての Microsoft ポリシーに準拠している必要があります。
+Microsoft 365 ユーザーに送信される電子メールは、電子メール転送および Microsoft 365 の使用を制御するすべての Microsoft ポリシーに準拠している必要があります。
 
-- Office 365 に適用可能なサービス条件。特に、スパムやマルウェアの配布を禁止するサービス条件。
+- Microsoft 365 に適用されるサービスの条件具体的には、禁止は、サービスを使用してスパムまたはマルウェアを配布することについてのものではありません。
 
 - [Microsoft サービス規約](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft は、インターネットと電子メールのエコシステムを�
 
 - [オンラインの信頼アライアンス](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
+- [電子メールの送信者 & プロバイダーの協力体制](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>迷惑行為とスパムの報告
 

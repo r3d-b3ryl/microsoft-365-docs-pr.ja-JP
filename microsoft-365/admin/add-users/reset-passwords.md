@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173520"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208200"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -79,11 +79,11 @@ ms.locfileid: "44173520"
 
 パスワードを忘れた場合に、次の手順を使用します。たとえば、パスワードがブラウザーに保存されているために、Microsoft 365 にサインインできます。 
     
-1. 右上隅の **[My Account** > **Personal Info**] > 名前 (アイコン) を選択します。 
+1. 右上隅の **[My Account**  >  **Personal Info**] > 名前 (アイコン) を選択します。 
           
 2. [**連絡先の詳細**] で、連絡用**メール**が正確であること、および携帯電話番号が入力されていることを再確認します。 正しくない場合は、この場で変更します。 
         
-3. [サインアウト]: 右上隅にある自分の名前を選択します (上記の画像では、 **Diane**として表示\> **されます)。** 
+3. [サインアウト]: 右上隅にある自分の名前を選択します (上記の画像では、 **Diane**として表示され \> **Sign out**ます)。 
         
 4. もう一度サインインします: ユーザー名を入力し \> [**次へ**] \> [**パスワードを忘れた場合**] の順に選択します。 
     
@@ -100,7 +100,7 @@ ms.locfileid: "44173520"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべてのユーザーのビジネスパスワードを同時にリセットする
 <a name="bkmk_forgot"> </a>
 
-次の手順は、数十のユーザーを抱える会社を対象にしています。数百～数千のユーザーを抱えている場合は、一括でパスワードをリセットする方法について説明する次のセクションを参照してください。
+次の手順は、数十のユーザーを抱える会社を対象にしています。 ユーザー数が数百または数千の場合は、パスワードを一括でリセットする (一度に最大40ユーザー) の次のセクションを参照してください。
   
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
     

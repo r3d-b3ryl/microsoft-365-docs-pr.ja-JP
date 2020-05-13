@@ -17,16 +17,16 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
-ms.openlocfilehash: b65dd6479262b97f08e34420d9a88ee2a327a73b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ca23f7ba0ce7bc43f8808e213dc79d066316a9ec
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631087"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208515"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
-[セキュリティ & コンプライアンスセンター](https://protection.office.com)では、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メールセキュリティ機能が組織を保護していることを確認するのに役立つさまざまなレポートが提供されています。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、**レポート** \> **ダッシュボード**にアクセスすることによって、セキュリティ & コンプライアンスセンターでこれらのレポートを表示できます。
+[セキュリティ & コンプライアンスセンター](https://protection.office.com)では、Microsoft 365 のスパム対策、マルウェア対策、暗号化機能などの電子メールセキュリティ機能が組織を保護していることを確認するのに役立つさまざまなレポートが提供されています。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、**レポート**ダッシュボードにアクセスすることによって、セキュリティ & コンプライアンスセンターでこれらのレポートを表示でき \> **Dashboard**ます。
 
 ![セキュリティ & コンプライアンスセンターのレポートダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -75,7 +75,7 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 **暗号化レポート**には、組織のポリシーによって、またはエンドユーザーの制御によって暗号化された電子メールメッセージに関する情報が表示されます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。
 
-このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[**レポート** \> **ダッシュボード** \>の**暗号化レポート**] に移動します。
+このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[**レポート** \> **ダッシュボード**の \> **暗号化レポート**] に移動します。
 
 ![暗号化レポート](../../media/encryptionreport-defaultview.png)
 
@@ -100,9 +100,9 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 **脅威保護の状態**レポートは、Exchange Online Protection によって検出およびブロックされた悪意のある電子メールを示すスマートレポートです。 このレポートは、マルウェアまたはフィッシング詐欺として特定された電子メールを時間の経過とともに (最大90日間) 表示し、セキュリティ管理者が傾向を特定したり、ポリシーが調整を必要とするかどうかを判断したりするのに役立ちます。
 
 > [!NOTE]
-> 脅威保護の状態レポートは、 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)または[Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)に関する情報は、ATP 固有の機能です。 ([ATP レポートの詳細について](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)は、を参照してください)。
+> 脅威保護の状態レポートは、 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)または[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) のいずれかを使用しているお客様が利用できます。ただし、ATP のお客様の脅威保護状態レポートに表示される情報には、EOP のお客様に表示されるものとは異なるデータが含まれている可能性があります。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)に関する情報は、ATP 固有の機能です。 ([ATP レポートの詳細について](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)は、を参照してください)。
 
-このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \>の**脅威保護の状態**] に移動します。
+このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード**の \> **脅威保護の状態**] に移動します。
 
 ![脅威保護の状態レポート](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
 
@@ -146,15 +146,15 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 [**上位の送信者と受信者**] レポートは、上位の電子メール送信者を示す円グラフです。
 
-このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \>の**上位送信者および受信者**] に移動します。
+このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード**の \> **上位送信者および受信者**] に移動します。
 
-![このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[ \>レポート\>ダッシュボードのトップ送信者と受信者] に移動します。](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+![このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[レポート \> ダッシュボードの \> トップ送信者と受信者] に移動します。](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
 
 円グラフのくさび形の上にポインターを移動すると、送信または受信したメッセージの数が表示されます。
 
 レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。
 
-[**データの表示**] リストを使用して、上位の送信者、受信者、スパム受信者、およびマルウェア受信者のデータを表示するかどうかを選択します。 また、 [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/what-is-eop)によって検出されたマルウェアの受信者を確認することもできます。
+[**データの表示**] リストを使用して、上位の送信者、受信者、スパム受信者、およびマルウェア受信者のデータを表示するかどうかを選択します。 また、 [Exchange Online Protection](exchange-online-protection-overview.md)によって検出されたマルウェアの受信者を確認することもできます。
 
 ![特定の情報を表示するには、[データの表示] リストを使用します。](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
@@ -166,7 +166,7 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \> **スプーフィングメール**] に移動します。
 
-![セキュリティ & コンプライアンスセンターで、[レポート\>ダッシュボード\>のスプーフィングメール] に移動します。](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+![セキュリティ & コンプライアンスセンターで、[レポートダッシュボードの \> スプーフィングメール] に移動します。 \>](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
 
 グラフの1日をポイントすると、受信したスプーフィングメールメッセージの数を確認できます。
 
@@ -176,9 +176,9 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 **スパム検出**レポートには、Exchange Online によってブロックされているすべてのスパムコンテンツが表示されます。 メッセージは、受信者ごとではなく、メッセージごとにカウントされます。 たとえば、電子メールメッセージが組織内の100の受信者に送信された場合は、1つのメッセージとして数えられます。
 
-このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> ]**ダッシュボード** \>の [**スパム検出**] に移動します。
+このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート**] ダッシュボードの [ \> **Dashboard** \> **スパム検出**] に移動します。
 
-![このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[ \>レポート\>ダッシュボード EOP スパム検出] に移動します。](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+![このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[レポート \> ダッシュボード \> EOP スパム検出] に移動します。](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
 
 グラフの1日の上にカーソルを置くと、その日にブロックされたアイテムの数と、それらのアイテムがどのように分類されているかを確認できます。 たとえば、フィルター処理されたスパムメッセージの数と、ブロックされたインターネットプロトコル (IP) アドレスからのアイテムの数を確認できます。
 
@@ -194,7 +194,7 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[**レポート** \> **ダッシュボード** \> **送受信された電子メール**] に移動します。
 
-![このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[ \>レポート\>ダッシュボード送受信メール] に移動します。](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
+![このレポートを表示するには、セキュリティ & コンプライアンスセンターで、[レポート \> ダッシュボード送受信メール] に移動します。 \>](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
 
 グラフの1日の上にカーソルを置くと、受信したメッセージの数と、それらのメッセージがどのように分類されるかを確認できます。 たとえば、マルウェアが含まれているとして検出されたメッセージの数と、スパムとして識別されたメッセージの数を確認できます。
 
@@ -220,11 +220,11 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 このレポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、次のいずれかの手順を実行します。
 
-- [**脅威管理** \> ]**ダッシュボード** \>の**ユーザーによって報告**されたメッセージに移動します。
+- [**脅威管理**] ダッシュボードのユーザーによって報告されたメッセージに移動 \> **Dashboard** \> **User-reported messages**します。
 
-- [**脅威の管理** \> ] に移動して **、ユーザーから報告**されたメッセージを**確認** \>します。
+- [**脅威の管理**] に移動して \> **Review** \> **、ユーザーから報告**されたメッセージを確認します。
 
-![セキュリティ & コンプライアンスセンターで、[脅威管理\> ] [ \>ユーザーが報告するメッセージを確認する] を選択します。](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
+![セキュリティ & コンプライアンスセンターで、[脅威管理] [ \> ユーザーが報告するメッセージを確認する] を選択します。 \>](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
 > ユーザーによって報告されたメッセージレポートが正常に機能するためには、Office 365 環境の**監査ログを有効にする必要があり**ます。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「 [Microsoft 365 監査ログ検索を有効または無効にする](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)」を参照してください。
@@ -235,9 +235,9 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 
 - セキュリティ & コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
 
-  -組織の管理-セキュリティ管理者 (これは Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com)) で割り当てることができます-セキュリティリーダ
+  -組織の管理-セキュリティ管理者 (これは Azure Active Directory 管理センター () で割り当てることができます [https://aad.portal.azure.com](https://aad.portal.azure.com) -セキュリティリーダ
 
-- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+- Exchange Online の場合は、Exchange 管理センター ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) または PowerShell コマンドレット (「 [Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
 
   -組織の管理-表示のみの組織の管理-表示のみの受信者ロールコンプライアンス管理
 
