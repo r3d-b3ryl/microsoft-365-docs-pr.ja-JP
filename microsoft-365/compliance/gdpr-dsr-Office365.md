@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 33723d5de94279e53a77434679c5406575dff3be
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e77fe9c8340608afae3a308ee399809144f6308f
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632508"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211463"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のためのデータ主体の要求
 
@@ -63,7 +63,7 @@ EU [一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protec
 
 ### <a name="office-365-national-clouds"></a>Office 365 国別クラウド
 
-Microsoft Office 365 のサービスは、国別クラウド環境である [Office 365 Germany](https://support.office.com/article/learn-about-office-365-germany-8a5a4bbc-667a-4cac-8769-d8ac9015db4c)、[21Vianet が運営する Office 365 (中国)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE)、および [Office 365 US Government](https://technet.microsoft.com/library/mt774581.aspx) でも利用可能です。このドキュメントで説明するデータ主体の要求の管理に関するガイダンスのほとんどは、これらの国別クラウド環境に適用されますが、これらの環境は孤立しているので、いくつかの例外があります。特定のサブセクションで特に注意すべき場合には、対応する注に、例外に関する説明を記載しています。
+Microsoft Office 365 のサービスは、国別クラウド環境である [Office 365 Germany](https://docs.microsoft.com/microsoft-365/admin/admin-overview/learn-about-office-365-germany)、[21Vianet が運営する Office 365 (中国)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china)、および [Office 365 US Government](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans) でも利用可能です。このドキュメントで説明するデータ主体の要求の管理に関するガイダンスのほとんどは、これらの国別クラウド環境に適用されますが、これらの環境は孤立しているので、いくつかの例外があります。特定のサブセクションで特に注意すべき場合には、対応する注に、例外に関する説明を記載しています。
 
 ### <a name="hybrid-deployments"></a>ハイブリッド展開
 
@@ -111,7 +111,7 @@ DSR 要求への対応時には、DSR 要求の対象であるデータが Micro
 ||
 
 >[!NOTE]
->コンテンツ検索の電子情報開示ツールは、[21Vianet が運営する Office 365 (中国)](https://support.office.com/article/Learn-about-Office-365-operated-by-21Vianet-A8AB5061-3346-4DA0-BB7C-5260822B53AE) では使用できません。つまり、表 1 に示す Office 365 アプリケーションでの顧客データの検出とエクスポートに、このツールを使用できません。ただし、Exchange Online のインプレース電子情報開示ツールを使用して、ユーザーのメールボックスの内容を検索できます。また、SharePoint Online の電子情報開示センターを使用して、SharePoint サイトと OneDrive アカウントのコンテンツを検索できます。あるいは、ドキュメントの所有者に対し、コンテンツの検索、コンテンツの変更または削除、あるいはコンテンツのエクスポート (必要な場合) に関する支援を依頼できます。</br><br> * [インプレース電子情報開示検索を作成する](https://technet.microsoft.com/library/dd353189(v=exchg.150).aspx)<br> * [SharePoint Online の電子情報開示センターをセットアップする](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
+>コンテンツ検索の電子情報開示ツールは、[21Vianet が運営する Office 365 (中国)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china) では使用できません。つまり、表 1 に示す Office 365 アプリケーションでの顧客データの検出とエクスポートに、このツールを使用できません。ただし、Exchange Online のインプレース電子情報開示ツールを使用して、ユーザーのメールボックスの内容を検索できます。また、SharePoint Online の電子情報開示センターを使用して、SharePoint サイトと OneDrive アカウントのコンテンツを検索できます。あるいは、ドキュメントの所有者に対し、コンテンツの検索、コンテンツの変更または削除、あるいはコンテンツのエクスポート (必要な場合) に関する支援を依頼できます。</br><br> * [インプレース電子情報開示検索を作成する](https://docs.microsoft.com/exchange/create-in-place-ediscovery-search-exchange-2013-help)<br> * [SharePoint Online の電子情報開示センターをセットアップする](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
 
 ### <a name="using-content-search-to-find-personal-data"></a>コンテンツ検索を使用した個人データの検索
 
@@ -119,7 +119,7 @@ DSR に対応するための最初のステップは、DSR の対象となる個
 
 前述したように、Microsoft では組織のデータの 90% 以上が Word や Excel などの Office アプリケーションで作成されていると推定しています。これは、ほとんどの DSR 関連データをセキュリティ/コンプライアンス センターのコンテンツ検索を使用して検索できることを意味します。
 
-このガイドは、DSR 要求に対応する可能性がある個人データを検索するユーザーがセキュリティ/コンプライアンス センターのコンテンツ検索ツールに精通していることを前提としています。コンテンツ検索の使用に関する一般的なガイダンスについては、「[Office 365 でのコンテンツの検索](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)」を参照してください。検索を実行しているユーザーにセキュリティ/コンプライアンス センターで必要なアクセス許可が割り当てられていることを確認してください。このユーザーは、セキュリティ/コンプライアンス センターで電子情報開示マネージャー役割グループのメンバーとして追加する必要があります。「[セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7)」を参照してください。DSR の調査に携わっている組織内の他のユーザーを、電子情報開示マネージャー役割グループに追加することを検討してください。そうすることにより、検索結果のプレビューやエクスポートなど、コンテンツ検索ツールで必要な操作を実行できます。ただし、コンプライアンスの境界 ([こちら](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)を参照) を設定しない限り、電子情報開示マネージャーは組織内のすべてのコンテンツの場所を検索できます。これには DSR の調査に関連しない可能性があるコンテンツも含まれます。
+このガイドは、DSR 要求に対応する可能性がある個人データを検索するユーザーがセキュリティ/コンプライアンス センターのコンテンツ検索ツールに精通していることを前提としています。コンテンツ検索の使用に関する一般的なガイダンスについては、「[Office 365 でのコンテンツの検索](https://docs.microsoft.com/microsoft-365/compliance/content-search)」を参照してください。検索を実行しているユーザーにセキュリティ/コンプライアンス センターで必要なアクセス許可が割り当てられていることを確認してください。このユーザーは、セキュリティ/コンプライアンス センターで電子情報開示マネージャー役割グループのメンバーとして追加する必要があります。「[セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。DSR の調査に携わっている組織内の他のユーザーを、電子情報開示マネージャー役割グループに追加することを検討してください。そうすることにより、検索結果のプレビューやエクスポートなど、コンテンツ検索ツールで必要な操作を実行できます。ただし、コンプライアンスの境界 ([こちら](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)を参照) を設定しない限り、電子情報開示マネージャーは組織内のすべてのコンテンツの場所を検索できます。これには DSR の調査に関連しない可能性があるコンテンツも含まれます。
 
 データが見つかったら、データ主体の要求に対応するために特定の操作を実行できます。
 
@@ -141,8 +141,8 @@ DSR に対応するための最初のステップは、DSR の対象となる個
 #### <a name="tips-for-searching-content-locations"></a>コンテンツの場所を検索するためのヒント
 
 - まず、組織内のすべてのコンテンツの場所 (1 回の検索で検索できる場所) を検索して、検索クエリと一致する項目が含まれているコンテンツの場所を素早く特定します。 その後、関連項目を含む特定の場所に検索範囲を絞り込んで検索を再実行できます。
-- 検索の統計を使用して、検索クエリに一致する項目が含まれる最上位の場所を特定します。「[コンテンツ検索結果のキーワード統計の表示](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)」を参照してください。
-- DSR の対象ユーザーが最近行ったファイルとフォルダーのアクティビティについて、監査ログを検索します。 監査ログの検索を実行すると、ユーザーが最近操作したリソースの名前と場所を含む監査レコードの一覧が返されます。 この情報を使用してコンテンツ検索クエリを作成できる場合があります。 「[セキュリティ/コンプライアンス センターで監査ログを検索する](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)」を参照してください。
+- 検索の統計を使用して、検索クエリに一致する項目が含まれる最上位の場所を特定します。「[コンテンツ検索結果のキーワード統計の表示](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search)」を参照してください。
+- DSR の対象ユーザーが最近行ったファイルとフォルダーのアクティビティについて、監査ログを検索します。 監査ログの検索を実行すると、ユーザーが最近操作したリソースの名前と場所を含む監査レコードの一覧が返されます。 この情報を使用してコンテンツ検索クエリを作成できる場合があります。 「[セキュリティ/コンプライアンス センターで監査ログを検索する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)」を参照してください。
 
 #### <a name="building-search-queries-to-find-personal-data"></a>検索クエリを作成し個人データを見つける
 
@@ -167,14 +167,14 @@ DSR に対応するための最初のステップは、DSR の対象となる個
 |**条件**|**説明** |**条件値の例**|
 | ファイルの種類 | ドキュメントまたはファイルの拡張子。 Office 365 アプリケーションで作成された Office ドキュメントとファイルを検索する場合は、この条件を使用します。 この条件は、SharePoint Online サイトと OneDrive for Business アカウントにあるドキュメントを検索する場合にも使用します。<br/>対応するドキュメントのプロパティはファイルの種類です。 <br/>検索可能なファイル拡張子の完全なリストについては、「SharePoint での既定のクロール対象ファイル名拡張子および解析対象ファイルの種類」(https://technet.microsoft.com/library/jj219530.aspx)) を参照してください。|&nbsp;&bull;&nbsp;&nbsp;csv – コンマ区切り値 (CSV) ファイルを検索。Excel ファイルは CSV 形式で保存できます。CSV ファイルは簡単に Excel にインポートできます<br><br>&bull;&nbsp;&nbsp;docx – Word ファイルを検索 <br><br>&bull;&nbsp;&nbsp;mpp – Project ファイルを検索<br/><br>&bull;&nbsp;&nbsp;one – OneNote ファイルを検索 <br><br>&bull;&nbsp;&nbsp;pdf – PDF 形式で保存されたファイルを検索 <br><br>&bull;&nbsp;&nbsp;pptx – PowerPoint ファイルを検索 <br><br>&bull;&nbsp;&nbsp;xlxs – Excel ファイルを検索 <br><br>&bull;&nbsp;&nbsp;vsd – Visio ファイルを検索 <br><br>&bull;&nbsp;&nbsp;wmv – Windows Media ビデオ ファイルを検索 <br>|
 | メッセージの種類 | 検索するメール メッセージの種類。 検索する電子メールメッセージの種類。連絡先 (People)、会議 (予定表) タスク、または Skype for Business の会話をメールボックスで検索するには、この条件を使用します。 対応する電子メールのプロパティは "*種類*" です。|&bull;&nbsp;&nbsp;*contacts – メールボックスの [個人用の連絡先] リスト (People) を検索 <br><br>&bull;&nbsp;&nbsp;* email - メール メッセージを検索 <br><br>&bull;&nbsp;&nbsp;*im - Skype for Business の会話を検索 <br><br>&bull;&nbsp;&nbsp;* meetings - 予定や会議出席依頼 (予定表) を検索 <br><br>&bull;&nbsp;&nbsp;*tasks – [マイ タスク] リスト (タスク) を検索。この値を使用すると、Microsoft To Do で作成されたタスクも返されます。<br>|
-| コンプライアンス タグ |電子メール メッセージまたはドキュメントに割り当てられたラベル。ラベルは、データ ガバナンスのために電子メールとドキュメントを分類し、ラベルで定義された分類に基づいて保持ルールを適用するために使用されます。この条件を使用して、自動または手動でラベルが割り当てられた項目を検索します。<br/>これは DSR 調査に役立つ条件です。組織がラベルを使用してデータのプライバシーに関連するコンテンツを分類したり、そのコンテンツに個人データや機密情報が含まれていたりする場合があるからです。「[ラベルの概要](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)」の「[コンテンツ検索] を使用して、特定のラベルが適用されているすべてのコンテンツを検索する」を参照してください。|compliancetag="personal data"|
+| コンプライアンス タグ |電子メール メッセージまたはドキュメントに割り当てられたラベル。ラベルは、データ ガバナンスのために電子メールとドキュメントを分類し、ラベルで定義された分類に基づいて保持ルールを適用するために使用されます。この条件を使用して、自動または手動でラベルが割り当てられた項目を検索します。<br/>これは DSR 調査に役立つ条件です。組織がラベルを使用してデータのプライバシーに関連するコンテンツを分類したり、そのコンテンツに個人データや機密情報が含まれていたりする場合があるからです。「[ラベルの概要](https://docs.microsoft.com/microsoft-365/compliance/labels)」の「[コンテンツ検索] を使用して、特定のラベルが適用されているすべてのコンテンツを検索する」を参照してください。|compliancetag="personal data"|
 ||||
 
-より複雑な検索クエリの作成に使用できる、電子メールおよびドキュメントのプロパティと検索条件は、他にもあります。詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)」ヘルプ トピックの次のセクションを参照してください。
+より複雑な検索クエリの作成に使用できる、電子メールおよびドキュメントのプロパティと検索条件は、他にもあります。詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)」ヘルプ トピックの次のセクションを参照してください。
 
-- [検索可能なメール プロパティ](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
-- [検索可能なサイト (ドキュメント) のプロパティ](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
-- [検索条件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)
+- [検索可能なメール プロパティ](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
+- [検索可能なサイト (ドキュメント) のプロパティ](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
+- [検索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
 
 #### <a name="searching-for-personal-data-in-sharepoint-lists-discussions-and-forms"></a>SharePoint リスト、ディスカッション、およびフォーム内の個人データを検索する
 
@@ -222,23 +222,23 @@ pilar@contoso.com AND filetype="xlxs"
 
 #### <a name="working-with-partially-indexed-items-in-content-search"></a>部分的にインデックスが作成されたアイテムをコンテンツ検索で使用する
 
-部分的にインデックスが作成されたアイテム (*インデックス未作成のアイテム*とも呼ばれます) とは、なんらかの理由で検索用にインデックスが作成されなかった Exchange Online メールボックスのアイテムと SharePoint Online および OneDrive for Business サイトのドキュメントのことです。コンテンツ検索を使用して検索できないコンテンツであることを意味します。 ほとんどの電子メール メッセージとサイト ドキュメントは [Office 365 のインデックス作成の制限](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d?)の範囲内に収まるため、正常にインデックスが作成されます。 電子メール メッセージやファイルが検索用にインデックス作成されない理由には、次が含まれます。
+部分的にインデックスが作成されたアイテム (*インデックス未作成のアイテム*とも呼ばれます) とは、なんらかの理由で検索用にインデックスが作成されなかった Exchange Online メールボックスのアイテムと SharePoint Online および OneDrive for Business サイトのドキュメントのことです。コンテンツ検索を使用して検索できないコンテンツであることを意味します。 ほとんどの電子メール メッセージとサイト ドキュメントは [Office 365 のインデックス作成の制限](https://docs.microsoft.com/microsoft-365/compliance/limits-for-content-search)の範囲内に収まるため、正常にインデックスが作成されます。 電子メール メッセージやファイルが検索用にインデックス作成されない理由には、次が含まれます。
 
-- ファイルの種類が[認識できないか、インデックス作成でサポートされていない](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)。 ファイルの種類がインデックス作成でサポートされている場合でも、特定のファイルでインデックス作成のエラーが発生することがあります
+- ファイルの種類が[認識できないか、インデックス作成でサポートされていない](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)。 ファイルの種類がインデックス作成でサポートされている場合でも、特定のファイルでインデックス作成のエラーが発生することがあります
 - 電子メール メッセージに画像ファイルなど、有効なハンドラがない添付ファイルがある (これは電子メール アイテムのインデックス作成が部分的になる最も一般的な原因です)
 - 電子メール メッセージに添付されたファイルが大きすぎるか、添付ファイルが多すぎる
 
 DSR 要求に対応する際に部分的にインデックスが作成されたアイテムを使用するために、これらについて詳細を確認することをお勧めします。詳細については、次の項目を参照してください。
 
-- [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)
-- [Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
-- [インデックス未作成のアイテムをエクスポートする](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278#unidexeditems)
+- [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)
+- [Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する](https://docs.microsoft.com/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery)
+- [インデックス未作成のアイテムをエクスポートする](https://docs.microsoft.com/microsoft-365/compliance/export-search-results#unidexeditems)
 
 #### <a name="tips-for-working-with-partially-indexed-items"></a>部分的にインデックスが作成されたアイテムの使用のヒント
 
 部分的にインデックスが作成されたアイテムに、DSR 調査に対応するデータが存在する可能性があります。次に、部分的にインデックスが作成されたアイテムを使用するためのヒントをいくつか示します。
 
-- 検索を実行すると、推定される部分的にインデックスが作成されたアイテムの数が検索の統計に表示されます。 この推定には、SharePoint Online と OneDrive for Business の部分的にインデックスが作成されたアイテムは含まれていません。 コンテンツ検索のレポートをエクスポートして、部分的にインデックスが作成されたアイテムに関する情報を取得します。 **Unindexed Items.csv** レポートには、インデックス未作成のアイテムに関する情報が含まれます。これには、アイテムの場所、アイテムが SharePoint Online または OneDrive for Business にある場合の URL、件名 (メッセージの場合) またはドキュメントの名前などが含まれます。 詳細については、「[コンテンツ検索レポートのエクスポート](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9)」を参照してください。
+- 検索を実行すると、推定される部分的にインデックスが作成されたアイテムの数が検索の統計に表示されます。 この推定には、SharePoint Online と OneDrive for Business の部分的にインデックスが作成されたアイテムは含まれていません。 コンテンツ検索のレポートをエクスポートして、部分的にインデックスが作成されたアイテムに関する情報を取得します。 **Unindexed Items.csv** レポートには、インデックス未作成のアイテムに関する情報が含まれます。これには、アイテムの場所、アイテムが SharePoint Online または OneDrive for Business にある場合の URL、件名 (メッセージの場合) またはドキュメントの名前などが含まれます。 詳細については、「[コンテンツ検索レポートのエクスポート](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report)」を参照してください。
 
 - コンテンツ検索の結果で返される、部分的にインデックスが作成されたアイテムの統計とリストは、すべて、検索されたコンテンツの場所の部分的なアイテムです。
 
@@ -246,11 +246,11 @@ DSR 要求に対応する際に部分的にインデックスが作成された�
 
 ##### <a name="export-all-partially-indexed-items"></a>部分的にインデックスが作成されたアイテムをすべてエクスポートする
 
-コンテンツ検索の結果と部分的にインデックスが作成されたアイテムの両方を、検索したコンテンツの場所からエクスポートします。 部分的にインデックスが作成されたアイテムのみをエクスポートすることもできます。 それらをネイティブのアプリケーションで開いて、コンテンツを確認します。 このオプションは、SharePoint Online および OneDrive for Business からアイテムをエクスポートする場合に使用する必要があります。 「[セキュリティ/コンプライアンス センターからコンテンツ検索の結果をエクスポートする方法](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278)」を参照してください。
+コンテンツ検索の結果と部分的にインデックスが作成されたアイテムの両方を、検索したコンテンツの場所からエクスポートします。 部分的にインデックスが作成されたアイテムのみをエクスポートすることもできます。 それらをネイティブのアプリケーションで開いて、コンテンツを確認します。 このオプションは、SharePoint Online および OneDrive for Business からアイテムをエクスポートする場合に使用する必要があります。 「[セキュリティ/コンプライアンス センターからコンテンツ検索の結果をエクスポートする方法](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)」を参照してください。
 
 ##### <a name="export-a-specific-set-of-partially-indexed-items-from-mailboxes"></a>部分的にインデックスが作成されたアイテムの特定のセットをメールボックスからエクスポートする
 
-部分的にインデックスが作成されたメールボックス アイテムを検索からすべてエクスポートする代わりに、コンテンツ検索を再実行し、部分的にインデックスが作成されたアイテムの特定のリストを検索して、そのアイテムをエクスポートします。 この操作は、メールボックスのアイテムに対してのみ行うことができます。 詳細については、「[Office 365 の対象指定コンテンツ検索のための CSV ファイルを準備する](https://support.office.com/article/prepare-a-csv-file-for-a-targeted-content-search-in-office-365-82c97bb4-2b64-4edc-804d-cedbda525d22)」を参照してください。
+部分的にインデックスが作成されたメールボックス アイテムを検索からすべてエクスポートする代わりに、コンテンツ検索を再実行し、部分的にインデックスが作成されたアイテムの特定のリストを検索して、そのアイテムをエクスポートします。 この操作は、メールボックスのアイテムに対してのみ行うことができます。 詳細については、「[Office 365 の対象指定コンテンツ検索のための CSV ファイルを準備する](https://docs.microsoft.com/microsoft-365/compliance/csv-file-for-an-id-list-content-search)」を参照してください。
 
 ### <a name="next-steps"></a>次の手順
 
@@ -270,9 +270,9 @@ DSR に関連する個人データを見つけたら、そのデータを見つ�
 
 Office Lens (iOS、Android、および Windows を実行しているデバイスでサポートされるカメラ アプリ) を使用すると、ホワイトボード、紙の書類、名刺など、テキストが含まれているものの写真を撮影できます。 Office Lens では、光学式文字認識テクノロジを使用して画像内のテキストを抽出し、そのテキストを Office ドキュメント (Word、PowerPoint、OneNote など) や PDF ファイルに保存します。 ユーザーは、画像から抽出したテキストが含まれているファイルを Office 365 の自分の OneDrive for Business アカウントにアップロードできます。 つまり、Office Lens の画像から作成されたファイル内のデータは、コンテンツ検索ツールを使用して検索、アクセス、削除、およびエクスポートできるということです。 Office Lens の詳細については、以下をご覧ください。
 
-- [Office Lens for iOS](https://support.office.com/article/Office-Lens-for-iOS-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
+- [Office Lens for iOS](https://support.microsoft.com/ja-JP/office/microsoft-office-lens-for-ios-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
 - [Office Lens for Android](https://support.office.com/article/Office-Lens-for-Android-ec124207-0049-4201-afaf-b5874a8e6f2b)
-- [Office Lens for Windows](https://support.office.com/article/Office-Lens-for-Windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
+- [Office Lens for Windows](https://support.microsoft.com/ja-JP/office/office-lens-for-windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
 
 #### <a name="onedrive-for-business-and-sharepoint-online-experience-settings"></a>OneDrive for Business および SharePoint エクスペリエンスの設定
 
@@ -306,7 +306,7 @@ Azure Active Directory から取得されるプロパティは、SharePoint Onli
 
 管理者は、SharePoint Online PowerShell の **Export-SPOUserProfile** コマンドレットを使用してユーザーのユーザー プロファイルのすべてのプロパティをエクスポートできます。「[Export-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserprofile?view=sharepoint-ps)」を参照してください。
 
-ユーザー プロファイルの詳細については、「[SharePoint Online 管理センターでユーザー プロファイルを管理する](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723)」を参照してください。
+ユーザー プロファイルの詳細については、「[SharePoint Online 管理センターでユーザー プロファイルを管理する](https://docs.microsoft.com/sharepoint/manage-user-profiles)」を参照してください。
 
 ##### <a name="user-information-list-on-sharepoint-online-sites"></a>SharePoint Online サイトのユーザー情報リスト
 
@@ -373,13 +373,13 @@ OneNote Class Notebook は、クラス チームの SharePoint Online サイト�
 
 #### <a name="microsoft-to-do"></a>Microsoft To Do
 
-Microsoft To Do のタスク (別名 *To Do*、*やるべきことリスト*に保存) は、ユーザーの Exchange Online メールボックスにタスクとして保存されます。 つまり、コンテンツ検索ツールを使用して、To Do を検索、アクセス、削除、およびエクスポートできます。 詳細については「[Microsoft To Do のセットアップ](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620)」を参照してください。
+Microsoft To Do のタスク (別名 *To Do*、*やるべきことリスト*に保存) は、ユーザーの Exchange Online メールボックスにタスクとして保存されます。 つまり、コンテンツ検索ツールを使用して、To Do を検索、アクセス、削除、およびエクスポートできます。 詳細については「[Microsoft To Do のセットアップ](https://support.microsoft.com/ja-JP/office/set-up-microsoft-to-do-490c1a8c-2333-4952-8125-841afadb9620)」を参照してください。
 
 #### <a name="skype-for-business"></a>Skype for Business
 
 ここでは、Skype for Business の個人データへのアクセス方法、表示方法、およびエクスポート方法に関する追加情報を示します。
 
-- 会議に添付されたファイルは、実際の会議に 180 日間保持され、その後でアクセスできなくなります。こうしたファイルは、会議の参加者が会議出席依頼から会議に参加して、添付されたファイルを表示またはダウンロードすることでアクセスできます。「[Skype for Business 会議で使用する添付ファイルのプリロード](https://support.office.com/article/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251)」のセクション「添付ファイルを会議で使用する」を参照してください。
+- 会議に添付されたファイルは、実際の会議に 180 日間保持され、その後でアクセスできなくなります。こうしたファイルは、会議の参加者が会議出席依頼から会議に参加して、添付されたファイルを表示またはダウンロードすることでアクセスできます。「[Skype for Business 会議で使用する添付ファイルのプリロード](https://support.microsoft.com/ja-JP/office/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251)」のセクション「添付ファイルを会議で使用する」を参照してください。
 - Skype for Business の会話は、ユーザーのメールボックス内の [会話履歴] フォルダーに維持されます。コンテンツ検索を使用すると、Skype の会話に含まれるデータについてメールボックスを検索できます。
 - データ主体は、Skype for Business 内の自分の連絡先をエクスポートできます。これを実行するには、Skype for Business の連絡先グループを右クリックして、**[コピー]** をクリックします。これにより、電子メール アドレスのリストが、テキストや Word ドキュメントに貼り付けできるようになります。
 - 会議参加者の Exchange Online メールボックスに訴訟ホールドが実施されている場合や、Office 365 保持ポリシーが割り当てられている場合、会議に添付されたファイルは参加者のメールボックス内に維持されます。参加者のメールボックス内の該当するファイルは、そのファイルの保持期間が経過していない場合、コンテンツ検索を使用して検索できます。ファイルの保持の詳細については、「[Skype for Business の会議に添付された大きなファイルを保持する](https://docs.microsoft.com/skypeforbusiness/set-up-policies-in-your-organization/retaining-large-files-attached-to-a-meeting)」を参照してください。
@@ -395,13 +395,13 @@ DSR への対応の対象になる可能性のある個人データを見つけ�
 コンテンツ検索ツールを使用して、検索の実行後に見つかったドキュメントまたはメールボックス アイテムのコピーを取得する方法は 2 つあります。
 
 - 検索結果をプレビューして、ドキュメントまたはアイテムのコピーをダウンロードする。これは、少数のアイテムやファイルをダウンロードする場合に適しています。
-- 検索結果をエクスポートして、検索で返されたすべてのアイテムのコピーをダウンロードする。 この方法は複雑になりますが、DSR に対応する多数のアイテムをダウンロードする場合に適しています。 また、検索結果のエクスポートには役立つレポートも含まれています。 こうしたレポートは、各アイテムに関する追加情報を取得するために使用できます。 **Results.csv** レポートは、エクスポートしたアイテムに関する多数の情報を含んでいるため役立ちます (たとえば、電子メール メッセージのメールボックスや、SharePoint Online および OneDrive for Business のサイトにあるドキュメントまたはリストの URL など)。 この情報は、DSR 調査プロセスでアイテムの所有者と連絡を取る必要がある場合、その所有者の特定に役立ちます。 検索結果のエクスポート時に含まれるレポートの詳細については、「[コンテンツ検索レポートのエクスポート](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9)」を参照してください。
+- 検索結果をエクスポートして、検索で返されたすべてのアイテムのコピーをダウンロードする。 この方法は複雑になりますが、DSR に対応する多数のアイテムをダウンロードする場合に適しています。 また、検索結果のエクスポートには役立つレポートも含まれています。 こうしたレポートは、各アイテムに関する追加情報を取得するために使用できます。 **Results.csv** レポートは、エクスポートしたアイテムに関する多数の情報を含んでいるため役立ちます (たとえば、電子メール メッセージのメールボックスや、SharePoint Online および OneDrive for Business のサイトにあるドキュメントまたはリストの URL など)。 この情報は、DSR 調査プロセスでアイテムの所有者と連絡を取る必要がある場合、その所有者の特定に役立ちます。 検索結果のエクスポート時に含まれるレポートの詳細については、「[コンテンツ検索レポートのエクスポート](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report)」を参照してください。
 
 #### <a name="preview-and-download-items"></a>アイテムのプレビューとダウンロード
 
 新しい検索を実行した後または既存の検索を開いた後で、検索クエリと一致した各アイテムをプレビューして、調査中の DSR に関連しているかどうかを確認できます。 プレビューには、検索結果で返された SharePoint リストや Web ページも含まれます。 さらに、データ主体に元のファイルを提供する必要がある場合は、そのファイルをダウンロードすることもできます。 どちらの場合も、データ主体の要求に応えるスクリーンショットを作成して情報を取得できます。
 
-一部の種類のアイテムはプレビューできません。 プレビューがサポートされていないアイテムまたはファイルの種類の場合は、個別のアイテムをローカル コンピューターやマップ済みのネットワーク ドライブなどのネットワークの場所にダウンロードするという方法があります。 プレビューを行えるのは、[サポート対象のファイルの種類](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)のみです。
+一部の種類のアイテムはプレビューできません。 プレビューがサポートされていないアイテムまたはファイルの種類の場合は、個別のアイテムをローカル コンピューターやマップ済みのネットワーク ドライブなどのネットワークの場所にダウンロードするという方法があります。 プレビューを行えるのは、[サポート対象のファイルの種類](https://docs.microsoft.com/microsoft-365/compliance/content-search)のみです。
 
 アイテムをプレビューしてダウンロードするには:
 
@@ -410,7 +410,7 @@ DSR への対応の対象になる可能性のある個人データを見つけ�
 3. アイテムをクリックして表示します。
 4. **[元のファイルのダウンロード]** をクリックして、ローカル コンピューターにアイテムをダウロードします。また、プレビューできないアイテムのダウンロードも必要になります。
 
-検索結果のプレビューの詳細については、「[検索結果のプレビュー](https://support.office.com/article/content-search-in-office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)」を参照してください。
+検索結果のプレビューの詳細については、「[検索結果のプレビュー](https://docs.microsoft.com/microsoft-365/compliance/content-search)」を参照してください。
 
 #### <a name="export-and-download-items"></a>アイテムのエクスポートとダウンロード
 
@@ -449,7 +449,7 @@ DSR エクスポート要求を満たすために、ネイティブのファイ�
 
 エクスポート処理が完了すると、ダウンロード先のローカル コンピューターの場所にあるファイルにアクセスできます。コンテンツ検索の結果は、そのコンテンツ検索に関連する名前のフォルダーにダウンロードされます。サイトからのドキュメントは、**[SharePoint]** という名前のサブフォルダーにコピーされます。メールボックス アイテムは、**[Exchange]** という名前のサブフォルダーにコピーされます。
 
-手順ごとの詳細な説明については、「[セキュリティ/コンプライアンス センターの検索結果をエクスポートする](https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278)」を参照してください。
+手順ごとの詳細な説明については、「[セキュリティ/コンプライアンス センターの検索結果をエクスポートする](https://docs.microsoft.com/microsoft-365/compliance/export-search-results)」を参照してください。
 
 ### <a name="downloading-documents-and-lists-from-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online および OneDrive for Business からドキュメントとリストをダウンロードする
 
@@ -460,7 +460,7 @@ SharePoint Online および OneDrive for Business からデータをエクスポ
 
 一部の DSR エクスポート要求に対して、データ主体がコンテンツをダウンロードできるようにすることが必要になる場合があります。これは、データ主体が SharePoint Online サイトまたは共有フォルダーに移動して **[同期]** をクリックし、ドキュメント ライブラリ内のすべてのコンテンツまたは選択したフォルダーを同期することで可能になります。次の項目を参照してください。
 
-- [次世代の OneDrive 同期クライアントを使用して SharePoint ファイルを同期する](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614)
+- [次世代の OneDrive 同期クライアントを使用して SharePoint ファイルを同期する](https://docs.microsoft.com/sharepoint/let-users-use-new-onedrive-sync-client)
 - [次世代の OneDrive 同期クライアントを使用して SharePoint ファイルを同期する](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-client-6de9ede8-5b6e-4503-80b2-6190f3354a88)
 
 ## <a name="deleting-personal-data"></a>個人データの削除
@@ -496,12 +496,12 @@ SharePoint Online サイトまたは OneDrive for Business アカウントにあ
 
 詳細な手順については、次のトピックを参照してください。
 
-- [SharePoint ドキュメント ライブラリからファイル、フォルダー、またはリンクを削除する](https://support.office.com/article/Delete-a-file-folder-or-link-from-a-SharePoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52#ID0EAADAAA=Online)
-- [SharePoint サイトのごみ箱のアイテムを削除または空にする](https://support.office.com/article/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e#ID0EAADAAA=Online)
-- [サイト コレクションのごみ箱からアイテムを削除する](https://support.office.com/article/Delete-items-from-the-site-collection-Recycle-Bin-dd5c00c2-aef6-4458-9d04-80b185077653#ID0EAADAAA=Online)
-- [元のユーザーのデータにアクセスしてバックアップを作成する](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604) (「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」のセクション)
+- [SharePoint ドキュメント ライブラリからファイル、フォルダー、またはリンクを削除する](https://support.microsoft.com/ja-JP/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)
+- [SharePoint サイトのごみ箱のアイテムを削除または空にする](https://support.microsoft.com/ja-JP/office/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e)
+- [サイト コレクションのごみ箱からアイテムを削除する](https://support.microsoft.com/ja-JP/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653)
+- [元のユーザーのデータにアクセスしてバックアップを作成する](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data) (「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」のセクション)
 - [OneDrive for Business のファイルまたはフォルダーを削除する](https://support.office.com/article/Delete-files-or-folders-in-OneDrive-21fe345a-e488-4fa7-932b-f053c1bebe8a)
-- [SharePoint のリストを削除する](https://support.office.com/article/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d#ID0EAADAAA=Online)
+- [SharePoint のリストを削除する](https://support.microsoft.com/ja-JP/office/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d)
 - [SharePoint Online のリスト アイテムを削除する](https://support.office.com/article/delete-list-items-in-sharepoint-online-db722233-4a38-4889-a6cf-4b33fe5c60c0)
 
 ### <a name="deleting-a-sharepoint-site"></a>SharePoint サイトの削除
@@ -556,7 +556,7 @@ DSR 削除要求に応えるために、Exchange Online メールボックス内
 1. ユーザーのメールボックスから削除するアイテムを検索するには、コンテンツ検索を作成して実行します。 削除するアイテムのみを検索結果で取得するには、検索を再実行して検索結果を絞り込む必要がある場合があります。
 2. Office 365 PowerShell で **New-ComplianceSearchAction** **-Purge** コマンドを使用して、前の手順で作成したコンテンツ検索によって返されたアイテムを論理的に削除します。
 
-詳細な手順については、「[組織でのメール メッセージの検索と削除](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a)」を参照してください。
+詳細な手順については、「[組織でのメール メッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」を参照してください。
 
 #### <a name="hard-delete-mailbox-items"></a>メールボックス アイテムの物理的な削除
 
@@ -568,7 +568,7 @@ DSR 削除要求への対応で、メールボックス アイテムの物理的
 
 前述したように、ホールド状態のメールボックス内のアイテムを物理的に削除しても、アイテムはメールボックスから削除されません。そうしたアイテムは、[回復可能なアイテム] フォルダー内の非表示フォルダー (**[Purges]** フォルダー) に移動され、そのアイテムのホールド期間が経過するか、メールボックスからホールドが削除されるまで、そのフォルダーに残されます。そのどちらかが発生すると、アイテムはメールボックスの次回処理時に Office 365 から消去されます。
 
-ホールド期間が経過したときにアイテムが完全に削除されることで、DSR 削除要求の要件が満たされると組織が判断することもあります。ただし、すぐに Office 365 からアイテムを消去する必要があると判断した場合は、メールボックスからホールドを削除してから、そのメールボックスからアイテムを物理的に削除する必要があります。詳細な手順については、「[クラウドベースの保留中のメールボックスの回復可能なアイテム フォルダーのアイテムを削除する - 管理者向けヘルプ](https://support.office.com/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0)」を参照してください。
+ホールド期間が経過したときにアイテムが完全に削除されることで、DSR 削除要求の要件が満たされると組織が判断することもあります。ただし、すぐに Office 365 からアイテムを消去する必要があると判断した場合は、メールボックスからホールドを削除してから、そのメールボックスからアイテムを物理的に削除する必要があります。詳細な手順については、「[クラウドベースの保留中のメールボックスの回復可能なアイテム フォルダーのアイテムを削除する - 管理者向けヘルプ](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold)」を参照してください。
 
 >[!NOTE]
 >DSR 削除要求に応えるために、前のトピックの手順に従ってメールボックス アイテムを物理的に削除する場合は、メールボックスがホールド状態にある間に該当するアイテムを論理的に削除して、そのアイテムを回復可能なアイテム フォルダーに移動しておく必要があります。
@@ -586,7 +586,7 @@ DSR 削除要求への対応で個人データを削除することに加えて�
 - ユーザーは Office 365 にサインインできなくなるか、組織の Microsoft リソース (OneDrive for Business アカウント、SharePoint Online サイト、Exchange Online メールボックスなど) のいずれにもアクセスできなくなります。
 - ユーザー アカウントに関連付けられた個人データ (電子メール アドレス、エイリアス、電話番号、郵送先住所など) が削除されます
 - 一部の Office 365 アプリでは、ユーザーに関する情報が削除されます。 たとえば、Microsoft Flow では、削除されたユーザーは共有フローの所有者の一覧から削除されます。
-- データ主体に関するシステム生成ログは、ユーザー アカウントの削除後 30 日で削除されます。詳細については、「[システム生成ログの削除](#deleting-system-generated-logs)」というセクションを参照してください。
+- データ主体に関するシステム生成ログは、サービスのセキュリティや安定性を損なう可能性のあるデータを除き、ユーザー アカウントが削除されてから 30 日後に削除されます。 詳細については、「[システム生成ログの削除](#deleting-system-generated-logs)」セクションを参照してください。
 
 >[!IMPORTANT]
 >ユーザー アカウントを削除すると、その個人は Office 365 にサインインできなくなり、その個人が学校または職場アカウントに依存していた製品やサービスにサインインできなくなります。さらに、その人物は Microsoft がデータ管理者に該当する DSR 要求を直接 Microsoft を通じて開始することもできなくなります。詳細については、このガイドの「パート 4」のセクション「[Microsoft がデータ管理者である Org ID で認証された製品とサービス](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller)」を参照してください。
@@ -597,13 +597,13 @@ DSR 削除要求への対応で個人データを削除することに加えて�
 個人データの削除に関する前述のセクションでは、データの論理的な削除と物理的な削除について説明しましたが、ユーザー アカウントを削除する場合にも、論理的な削除と物理的な削除の状態が存在します。
 
 - (管理センターまたは Azure portal でユーザーを削除することにより) ユーザー アカウントが最初に削除されたときは、そのユーザー アカウントは論理的に削除され、Azure のごみ箱に 30 日間移動されます。 この時点では、ユーザー アカウントの復元が可能です。
-- ユーザー アカウントを完全に削除すると、そのユーザー アカウントは物理的に削除され、Azure のごみ箱からも削除されます。この時点で、ユーザー アカウントは復元できなくなり、そのユーザー アカウントに関連付けられていたデータは Microsoft のクラウドから完全に削除されます。データ主体に関するシステム生成ログは、ユーザー アカウントの物理的な削除後に削除されます。
+- ユーザー アカウントを完全に削除すると、そのユーザー アカウントは物理的に削除され、Azure のごみ箱からも削除されます。この時点で、ユーザー アカウントは復元できなくなり、そのユーザー アカウントに関連付けられていたデータは Microsoft のクラウドから完全に削除されます。アカウントが物理的に削除されると、データ主体に関するシステム生成ログが削除されます。ただし、サービスのセキュリティや安定性を損なう可能性のあるデータは削除されません。
 
 ここでは、組織からユーザーを削除する場合の手順の概要を示します。
 
 1. 管理センターまたは Azure portal に移動して、ユーザーを見つけます。
 
-2. ユーザーを削除します。最初にユーザーを削除したときには、ユーザーのアカウントがごみ箱に送られます。この時点で、ユーザーは論理的に削除されます。アカウントは論理的な削除の状態で 30 日間維持されます。この間は、アカウントの復元が可能です。30 日経過後、アカウントは自動的に物理的に削除されます。具体的な手順については、「[Azure AD からユーザーを削除する](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)」を参照してください。<br><br> ユーザーア カウントは管理センターでも削除できます。 詳細については、「[組織からユーザーを削除する](https://support.office.com/article/Delete-a-user-from-your-organization-D5155593-3BAC-4D8D-9D8B-F4513A81479E)」を参照してください。
+2. ユーザーを削除します。最初にユーザーを削除したときには、ユーザーのアカウントがごみ箱に送られます。この時点で、ユーザーは論理的に削除されます。アカウントは論理的な削除の状態で 30 日間維持されます。この間は、アカウントの復元が可能です。30 日経過後、アカウントは自動的に物理的に削除されます。具体的な手順については、「[Azure AD からユーザーを削除する](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)」を参照してください。<br><br> ユーザーア カウントは管理センターでも削除できます。 詳細については、「[組織からユーザーを削除する](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)」を参照してください。
 
 3. ユーザー アカウントが物理的に削除されるまで 30 日間待機できない場合は、手動による物理的な削除が可能です。 この操作を Azure portal で実行する場合は、最近削除されたユーザーのリストに移動して、そのユーザーを完全に削除します。 ユーザーはこの時点で物理的に削除されます。 手順については、「[最近削除されたユーザーを完全に削除する方法](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore)」を参照してください。
 
@@ -645,7 +645,7 @@ Office 365 管理ポータルでは、ユーザーの物理的な削除は実行
 
 Access データベース内で DSR 要求の対象の可能性があるレコードを検索する方法は複数あります。DSR 調査の場合、データ主体に関連するレコード、または特定のデータが含まれているレコードを検索できます。たとえば、データ主体に対応するレコードを検索するか、またはそのレコードに移動することができます。あるいは、データ主体に関する個人データなどの特定のデータを含むレコードを検索できます。詳細については、以下の情報を参照してください。
 
-- [Access データベース内でレコードを検索する](https://support.office.com/article/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
+- [Access データベース内でレコードを検索する](https://support.microsoft.com/ja-JP/office/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
 - [単純な選択クエリを作成する](https://support.office.com/article/create-a-simple-select-query-de8b1c8d-14e9-4b25-8e22-70888d54de59)
 
 ##### <a name="access"></a>Access
@@ -654,18 +654,18 @@ DSR 要求に関連するレコードまたはフィールドが見つかった�
 
 - [Access のレポートの概要](https://support.office.com/article/introduction-to-reports-in-access-e0869f59-7536-4d19-8e05-7158dcd3681c)
 - [Excel にデータをエクスポートする](https://support.office.com/article/export-data-to-excel-64e974e6-ae43-4301-a53e-20463655b1a9)
-- [Word 文書にデータをエクスポートする](https://support.office.com/article/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
-- [テキスト ファイルにデータをエクスポートする](https://support.office.com/article/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
+- [Word 文書にデータをエクスポートする](https://support.microsoft.com/ja-JP/office/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
+- [テキスト ファイルにデータをエクスポートする](https://support.microsoft.com/ja-JP/office/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
 
 ##### <a name="export"></a>エクスポート
 
-前述のとおり、Access データベースからデータはさまざまなファイル形式でエクスポートできます。 選択するエクスポート ファイル形式は、データ主体からの特定の DSR エクスポート要求に基づいて決定されることがあります。 Access データを異なるファイル形式でエクスポートする方法を説明するトピックの一覧については、「[インポートおよびエクスポート](https://support.office.com/article/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f)」を参照してください。
+前述のとおり、Access データベースからデータはさまざまなファイル形式でエクスポートできます。 選択するエクスポート ファイル形式は、データ主体からの特定の DSR エクスポート要求に基づいて決定されることがあります。 Access データを異なるファイル形式でエクスポートする方法を説明するトピックの一覧については、「[インポートおよびエクスポート](https://support.microsoft.com/ja-JP/office/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f)」を参照してください。
 
 ##### <a name="delete"></a>削除
 
 レコード全体または 1 つのフィールドだけを Access データベースから削除できます。 Access データベースからレコードを削除する最も簡単な方法は、データシート ビューでテーブルを開き、削除するレコード (行) またはフィールドのデータだけを選択して、[削除] をクリックする方法です。 また、データ検索用に作成した選択クエリを、削除クエリに変換することもできます。 以下の情報を参照してください。
 
-- [データベースから 1 つまたは複数のレコードを削除する](https://support.office.com/article/delete-one-or-more-records-from-a-database-002b850d-1efa-473d-9297-0994ce46c66a)
+- [データベースから 1 つまたは複数のレコードを削除する](https://support.office.com/article/ways-to-add-edit-and-delete-records-5e90a80c-106d-4c55-996e-07d7200980ce)
 - [削除クエリ作成し、実行する](https://support.office.com/article/create-and-run-a-delete-query-6da65fe1-0fc7-4a64-8ef0-c052cd4c3ec5)
 
 ### <a name="business-apps-for-office-365"></a>Office 365 のビジネス アプリ
@@ -914,7 +914,7 @@ Flow を使用すると、アプリケーション間でファイルを同期す
 
 - Flow/PowerApps プラン 2 ライセンス (有料版または試用版)
 
-- [全体管理者\](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+- [全体管理者\](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
 
     または
 
@@ -974,11 +974,11 @@ Forms のユーザーは、<https://forms.office.com> に移動して **[マイ 
 
 #### <a name="access"></a>Access
 
-関連するフォームが見つかると、[**回答**] タブをクリックしてフォームへの応答にアクセスできます。[クイズの結果の確認方法](https://support.office.com/article/c4a9b45c-d62f-4eb7-b5db-ad81892c7c07)や[フォームの結果の確認方法](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)をご覧ください。 Excel で回答結果を確認するには、[**回答**] タブを選択して、[**Excel で開く**] をクリックします。 データ主体にフォームのコピーを送信する場合は、アプリケーション内でリッチ テキスト形式で表示される関連する質問と回答のスクリーンショットを作成することも、結果の Excel コピーをデータ主体に送信することもできます。 Excel を使用しているときに、アンケート結果の一部のみをデータ主体と共有する場合は、結果を共有する前に、特定の行や列を削除したり残りのセクションを編集したりできます。 また、**[共有] \> [複製のためのリンクを取得]** ([テンプレートとして共有] の下) に移動して、データ主体にフォーム全体の複製を提供することもできます。
+関連するフォームが見つかると、[**回答**] タブをクリックしてフォームへの応答にアクセスできます。[クイズの結果の確認方法](https://support.microsoft.com/ja-JP/office/check-and-share-your-quiz-results-c4a9b45c-d62f-4eb7-b5db-ad81892c7c07)や[フォームの結果の確認方法](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af)をご覧ください。 Excel で回答結果を確認するには、[**回答**] タブを選択して、[**Excel で開く**] をクリックします。 データ主体にフォームのコピーを送信する場合は、アプリケーション内でリッチ テキスト形式で表示される関連する質問と回答のスクリーンショットを作成することも、結果の Excel コピーをデータ主体に送信することもできます。 Excel を使用しているときに、アンケート結果の一部のみをデータ主体と共有する場合は、結果を共有する前に、特定の行や列を削除したり残りのセクションを編集したりできます。 また、**[共有] \> [複製のためのリンクを取得]** ([テンプレートとして共有] の下) に移動して、データ主体にフォーム全体の複製を提供することもできます。
 
 #### <a name="delete"></a>削除
 
-アンケート、クイズ、調査または投票は、その所有者が完全に削除できます。DSR の「忘れられる権利」を尊重してフォーム全体を削除する場合は、フォームのリストからフォームを見つけて、フォームのプレビュー ウィンドウの右上にある連続するドット (省略記号) を選択して **[削除]** をクリックします。フォームが削除されると、そのフォームは取得できなくなります。詳細については、「[フォームを削除する](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0)」を参照してください。
+アンケート、クイズ、調査または投票は、その所有者が完全に削除できます。DSR の「忘れられる権利」を尊重してフォーム全体を削除する場合は、フォームのリストからフォームを見つけて、フォームのプレビュー ウィンドウの右上にある連続するドット (省略記号) を選択して **[削除]** をクリックします。フォームが削除されると、そのフォームは取得できなくなります。詳細については、「[フォームを削除する](https://support.microsoft.com/ja-JP/office/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0)」を参照してください。
 
 #### <a name="export"></a>エクスポート
 
@@ -1017,8 +1017,8 @@ Kaizala ユーザーはモバイル デバイスに移動して、デバイス�
 
 組織内のユーザーが Kaizala を使用すると、コンシューマー データが生成されます。ユーザーが組織グループに所属している場合は組織データが生成されます。管理者は Kaizala 管理ポータルからユーザーの組織データをエクスポートできます。Kaizala コンシューマー ユーザーは、Kaizala モバイル アプリから自分のプライベート データをエクスポートできます。いずれの場合でも、管理者またはユーザーが Kaizala データをエクスポートすると、製品とサービスの利用状況データもエクスポートされることに注意してください。詳細については、以下の情報を参照してください。
 
-- [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
-- [Kaizala モバイル アプリでデータをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
+- [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
+- [Kaizala モバイル アプリでデータをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-your-data)
 
 #### <a name="delete"></a>削除
 
@@ -1028,8 +1028,8 @@ Kaizala 管理者は、Kaizala 管理ポータルで Kaizala ユーザーのア�
 
 詳細については、以下を参照してください。
 
-- [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
-- [Kaizala モバイル アプリでデータをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
+- [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
+- [Kaizala モバイル アプリでデータをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-your-data)
 
 ### <a name="planner"></a>Planner
 
@@ -1037,7 +1037,7 @@ Kaizala 管理者は、Kaizala 管理ポータルで Kaizala ユーザーのア�
 
 #### <a name="discover"></a>検索
 
-Planner の計画は、Microsoft 365 グループに関連付けられ、Microsoft 365 グループのファイルはグループに関連付けられた SharePoint Online サイトに保存されます。 そのため、Planner のファイルはコンテンツ検索を使用して、Microsoft 365 グループのサイトを検索することで見つけることができます。 これを実行するには、Microsoft 365 グループの URL が必要になります。 Microsoft 365 グループに関する情報の取得に関するヒントについては、ヘルプ トピック「Office 365 のコンテンツ検索」の「[Microsoft Teams および Microsoft 365 グループの検索](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4)」を参照してください。これは、対応する SharePoint Online サイト内の Planner ファイルを検索する際に役立ちます。
+Planner の計画は、Microsoft 365 グループに関連付けられ、Microsoft 365 グループのファイルはグループに関連付けられた SharePoint Online サイトに保存されます。 そのため、Planner のファイルはコンテンツ検索を使用して、Microsoft 365 グループのサイトを検索することで見つけることができます。 これを実行するには、Microsoft 365 グループの URL が必要になります。 Microsoft 365 グループに関する情報の取得に関するヒントについては、ヘルプ トピック「Office 365 のコンテンツ検索」の「[Microsoft Teams および Microsoft 365 グループの検索](https://docs.microsoft.com/microsoft-365/compliance/content-search)」を参照してください。これは、対応する SharePoint Online サイト内の Planner ファイルを検索する際に役立ちます。
 
 #### <a name="access"></a>Access
 
@@ -1088,7 +1088,7 @@ PowerApps は、組織内で共有および使用できるアプリを作成す�
 PowerApps に関連する DSR 要求を支援するために、[PowerApps 管理センター](https://admin.powerapps.com/)および[PowerApps 管理 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)で公開されている管理操作を利用できます。 こうしたツールにアクセスするには、次のアクセス許可があるアカウントが必要になります。
 
 - 有料版の PowerApps プラン 2 ライセンスまたは PowerApps プラン 2 試用版ライセンス。 30 日間の試用版ライセンスは、[ここから](https://web.powerapps.com/trial)サインアップできます。
-- [全体管理者](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)または
+- [全体管理者](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)または
 - [Azure Active Directory 全体管理者](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
 個人データの検索の詳細については、「[データ主体の権利 (DSR) による PowerApps 顧客データに対する要求への対応](https://go.microsoft.com/fwlink/?linkid=871880)」を参照してください。
@@ -1152,15 +1152,15 @@ Project Online 環境から特定のユーザーのコンテンツをエクス�
 
 データを見つけたら、スクリーン ショットを撮るか、または Word やテキストファイルへコピーペーストし、ユーザーに提供します。 Word、PDF または XPS ファイルとしてテキストを保存することもできます。 参照:
 
-  - [Word 文書として保存する ](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [名前を付けて保存するか、Publisher を使用して .pdf か .xps に変換する ](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [Word 文書として保存する ](https://support.microsoft.com/ja-JP/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [名前を付けて保存するか、Publisher を使用して .pdf か .xps に変換する ](https://support.microsoft.com/ja-JP/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### <a name="export"></a>エクスポート
 
 実際の Publisher ファイルをユーザーに提供するか、または前述のように、Word、PDF、XPS ファイルとして保存もできます。 参照:
 
-  - [Word 文書として保存する ](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [名前を付けて保存するか、Publisher を使用して .pdf か .xps に変換する ](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [Word 文書として保存する ](https://support.microsoft.com/ja-JP/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [名前を付けて保存するか、Publisher を使用して .pdf か .xps に変換する ](https://support.microsoft.com/ja-JP/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### <a name="delete"></a>削除
 
@@ -1223,7 +1223,7 @@ Whiteboard ファイル (.wbx ファイル) は、ユーザーの OneDrive for B
 
 ホワイトボードにアクセスして転送するには、以下の操作を実行します。 
 
-1. ユーザーの OneDrive for Business アカウントへのアクセスを自分自身に許可します。「[元のユーザーのデータにアクセスしてバックアップを作成する](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)」の「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」セクションを参照してください。
+1. ユーザーの OneDrive for Business アカウントへのアクセスを自分自身に許可します。「[元のユーザーのデータにアクセスしてバックアップを作成する](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)」の「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」セクションを参照してください。
 2. ユーザーの OneDrive for Business アカウントで Whiteboard App Data フォルダーに移動し、転送するホワイトボードの .wbx ファイルをコピーします。
 3. データ主体の OneDrive for Business アカウントへのアクセスを自分自身に許可し、Whiteboard App Data フォルダーに移動します。
 4. 前の手順でコピーした .wbx ファイルを貼り付けます。
@@ -1247,7 +1247,7 @@ Whiteboard ファイル (.wbx ファイル) は、ユーザーの OneDrive for B
 
 ユーザーの OneDrive for Business アカウントへのアクセスを自分自身に許可し、ホワイトボードを削除します。
 
-1. データ主体の OneDrive for Business アカウントへのアクセスを自分自身に許可します。「[元のユーザーのデータにアクセスしてバックアップを作成する](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)」の「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」セクションを参照してください。
+1. データ主体の OneDrive for Business アカウントへのアクセスを自分自身に許可します。「[元のユーザーのデータにアクセスしてバックアップを作成する](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)」の「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」セクションを参照してください。
 2. Whiteboard App Data フォルダーに移動し、このフォルダーの内容を削除します。
 
 #### <a name="whiteboard-for-pc-surface-hub-and-other-platforms"></a>PC、Surface Hub、およびその他のプラットフォーム用の Whiteboard
@@ -1421,7 +1421,7 @@ Power BI は、ダッシュボードとレポートで使用される基礎と�
 
 ### <a name="preventing-users-from-accessing-their-onedrive-for-business-account"></a>ユーザーが自分の OneDrive for Business アカウントにアクセスできないようにする
 
-ユーザーの SharePoint Online ライセンスを削除しても、OneDrive for Business アカウントがある場合、そのユーザーは OneDrive for Business アカウントにアクセスできてしまいます。 OneDrive for Business アカウントへのユーザーの権限を削除する必要があります。 これは、ユーザーが持つ、OneDrive for Business アカウントのサイト コレクション所有者の権限を削除することで実行できます。 具体的には、ユーザーのユーザー プロファイルで、サイト コレクション管理者 (プライマリ) およびサイト コレクション管理者のグループからユーザーを削除する必要があります。 詳細については、「[SharePoint Online 管理センターでユーザー プロファイルを管理する](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723)」の「OneDrive for Business アカウントに対する管理者の追加および削除」セクションを参照してください。
+ユーザーの SharePoint Online ライセンスを削除しても、OneDrive for Business アカウントがある場合、そのユーザーは OneDrive for Business アカウントにアクセスできてしまいます。 OneDrive for Business アカウントへのユーザーの権限を削除する必要があります。 これは、ユーザーが持つ、OneDrive for Business アカウントのサイト コレクション所有者の権限を削除することで実行できます。 具体的には、ユーザーのユーザー プロファイルで、サイト コレクション管理者 (プライマリ) およびサイト コレクション管理者のグループからユーザーを削除する必要があります。 詳細については、「[SharePoint Online 管理センターでユーザー プロファイルを管理する](https://docs.microsoft.com/sharepoint/manage-user-profiles)」の「OneDrive for Business アカウントに対する管理者の追加および削除」セクションを参照してください。
 
 ### <a name="turning-off-an-office-365-service"></a>Office 365 サービスをオフにする
 
@@ -1598,7 +1598,7 @@ Microsoft は、GDPR における「個人データ」の広範な定義の下�
 
 アクセス要求によって取得したシステム生成ログを削除するには、サービスからユーザーを削除して、そのユーザーの Azure Active Directory アカウントを完全に削除する必要があります。ユーザーの完全な削除の手順については、このガイドのセクション「[ユーザーの削除](#deleting-a-user)」を参照してください。ユーザー アカウントの完全な削除は、開始後に取り消すことができなくなる点に注してください。
 
-ユーザーのアカウントを完全に削除すると、ユーザーのデータはほぼすべての Office 365 サービスのシステム生成ログから 30 日以内に削除されます。 これには 1 つ例外があり、Exchange Online ではユーザー アカウントを完全に削除するのに 30 日以上かかります。 Exchange Online コンテンツの重要性と不慮のデータ損失を防止するために、 このシステムは、ユーザー アカウントの完全な削除から最大 60 日間、意図的にデータを保持状態にするように設計されています。 ユーザーの Exchange Online データを 30 日の期間中に完全に削除するには、そのユーザー アカウントを Azure Active Directory で完全に削除し、その後[Microsoft サポート](https://support.microsoft.com/)に連絡して、ユーザーの Exchange Online データをスケジュールされた削除プロセスとは別に手動で削除するように依頼してください。 詳細については、このガイドで前述した「[Exchange Online データの削除](#removing-exchange-online-data)」を参照してください。
+ユーザーのアカウントを完全に削除すると、ユーザーのデータは、ほぼすべての Office 365 サービスのシステム生成ログから 30 日以内に削除されます。ただし、サービスのセキュリティや安定性を損なう可能性のあるデータは削除されません。 これには 1 つ例外があり、Exchange Online ではユーザー アカウントを完全に削除するのに 30 日以上かかります。 Exchange Online コンテンツの重要性と不慮のデータ損失を防止するために、 このシステムは、ユーザー アカウントの完全な削除から最大 60 日間、意図的にデータを保持状態にするように設計されています。 ユーザーの Exchange Online データを 30 日の期間中に完全に削除するには、そのユーザー アカウントを Azure Active Directory で完全に削除し、その後[Microsoft サポート](https://support.microsoft.com/)に連絡して、ユーザーの Exchange Online データをスケジュールされた削除プロセスとは別に手動で削除するように依頼してください。 詳細については、このガイドで前述した「[Exchange Online データの削除](#removing-exchange-online-data)」を参照してください。
 
 ユーザー アカウントを削除した場合、Yammer と Kaizala でシステム生成されたログは削除されません。これらのアプリケーションからデータを削除するには、次のいずれかを参照してください。
 
