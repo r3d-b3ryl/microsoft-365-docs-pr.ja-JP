@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 24cf0f9b4965b20f3a03dd64795985a082fdc847
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e469f0d1c0be85aeb5f98a4f2e6e2758cddd8450
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631407"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222699"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -39,7 +39,7 @@ ms.locfileid: "43631407"
 
 ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ルールは、[一般的な id およびデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクします。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|More information|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
 |        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに Exchange Online を含める|
@@ -61,7 +61,7 @@ ms.locfileid: "43631407"
 
 新しい Office 365 Message Encryption (OME) 機能を使用すると、Azure Information Protection の保護機能を活用できるため、組織は、保護された電子メールを任意のデバイス上のすべてのユーザーと簡単に共有できます。 ユーザーは、保護されたメッセージを他の Microsoft 365 組織や、Outlook.com、Gmail、その他の電子メールサービスを使用しないお客様との間で送受信することができます。
 
-詳細については、「 [Office の新しい365メッセージ暗号化機能をセットアップ](https://support.office.com/article/set-up-new-office-365-message-encryption-capabilities-7ff0c040-b25c-4378-9904-b1b50210d00e)する」を参照してください。
+詳細については、「 [Office の新しい365メッセージ暗号化機能をセットアップ](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)する」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -19,16 +19,16 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) のフィッシング対策保護機能について学ぶことができます。
-ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3c15c67f059793c904641a70c12cd072bb69e2aa
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208973"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222731"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 でのフィッシング対策保護
 
-*フィッシング*正規または信頼された送信者からのメッセージの機密情報を盗もうとする電子メール攻撃。 フィッシングには特定のカテゴリがあります。 例:
+*フィッシング*正規または信頼された送信者からのメッセージの機密情報を盗もうとする電子メール攻撃。 フィッシングには特定のカテゴリがあります。 次に例を示します。
 
 - **スピアーフィッシング**は、目的の受信者に特化した、非常に集中的でカスタマイズされたコンテンツを使用します (通常は、攻撃者による受信者の偵察後)。
 
@@ -62,6 +62,6 @@ Office 365 ATP には、追加の高度なフィッシング対策機能が含�
 
 ## <a name="other-anti-phishing-resources"></a>その他のフィッシング対策リソース
 
-- エンドユーザーの場合:[フィッシング対策やその他の形式のオンライン詐欺から保護](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)します。
+- エンドユーザーの場合:[フィッシング対策やその他の形式のオンライン詐欺から保護](https://support.office.com/article/protect-yourself-from-phishing-schemes-and-other-forms-of-online-fraud-be0de46a-29cd-4c59-aaaf-136cf177d593)します。
 
 - [Microsoft 365 がフィッシングを防ぐために差出人アドレスを検証する方法](how-office-365-validates-the-from-address.md)。

@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Microsoft 365 で、ユーザーのアーカイブメールボックスにアイテムを自動的に移動するアーカイブと削除のポリシーを作成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208061"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222528"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
@@ -286,7 +286,7 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     
 - 次の表では、このトピックの手順に従って作成されたカスタムアイテム保持ポリシーに追加される各保持タグの詳細について説明します。
     
-    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**Type**|
+    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**種類**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 年間のアーカイブへの移動  <br/> |過去1095日 (3 年) のアイテムをアーカイブメールボックスに移動します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (アーカイブ)、このタグは、メールボックス全体に自動的に適用されます。  <br/> |
     |Alpine House 7 年間完全に削除  <br/> |7年前の時点でプライマリメールボックスまたはアーカイブメールボックスのアイテムを完全に削除します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (削除)。このタグは、メールボックス全体に自動的に適用されます。  <br/> |
@@ -298,6 +298,6 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     |削除しない  <br/> |このタグは、アイテム保持ポリシーによってアイテムが削除されないようにします。  <br/> |組み込み  <br/> |作成者このタグは、ユーザーが適用することができます。  <br/> |
     |個人 - 1 年でアーカイブへ移動  <br/> |1年後にアイテムをアーカイブメールボックスに移動します。  <br/> |組み込み  <br/> |作成者このタグは、ユーザーが適用することができます。  <br/> |
    
-    > <sup>\*</sup>ユーザーは、Outlook および web 上の Outlook (旧称 Outlook Web App) で削除済みアイテムを復元するツールを使用して、削除済みアイテムの保存期間 (既定では、Exchange Online では14日) 内の削除済みアイテムを復元できます。 管理者は、Windows PowerShell を使用して、削除済みアイテムの保存期間を最大で30日に増やすことができます。 詳細については、「 [Windows 版 Outlook で削除済みアイテムを復元](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)する」および「 [Exchange Online のメールボックスの削除済みアイテムの保存期間を変更](https://go.microsoft.com/fwlink/p/?LinkId=286940)する」を参照してください。
+    > <sup>\*</sup>ユーザーは、Outlook および web 上の Outlook (旧称 Outlook Web App) で削除済みアイテムを復元するツールを使用して、削除済みアイテムの保存期間 (既定では、Exchange Online では14日) 内の削除済みアイテムを復元できます。 管理者は、Windows PowerShell を使用して、削除済みアイテムの保存期間を最大で30日に増やすことができます。 詳細については、「 [Windows 版 Outlook で削除済みアイテムを復元](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)する」および「 [Exchange Online のメールボックスの削除済みアイテムの保存期間を変更](https://www.microsoft.com/?ref=go)する」を参照してください。
   
 - 回復可能なアイテムを使用して、 **14 日後にアーカイブ保持タグに移動する**と、ユーザーのプライマリメールボックス内の回復可能なアイテムフォルダーの記憶域を解放することができます。 これは、ユーザーのメールボックスが保持されている場合に便利です。つまり、ユーザーのメールボックスが完全に削除されることはありません。 アイテムをアーカイブメールボックスに移動せずに、プライマリメールボックスの [回復可能なアイテム] フォルダーの記憶域のクォータに到達できるようになります。 詳細については、「[ホールド状態のメールボックスの回復可能なアイテムのクォータを増やす](https://go.microsoft.com/fwlink/p/?LinkId=786479)」を参照してください。

@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: cb138d14a35324840d78000b55a2f4376c3869b5
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: 99ae4fda67de060a5c4dd7c9cd0550f751706e86
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400874"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222397"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft マネージドデスクトップデバイスサービス
 
@@ -33,9 +33,9 @@ Microsoft は、Microsoft マネージドデスクトップデバイスにこれ
 デバイスの交換、アップグレード、サポートの条項の詳細については、ご使用のデバイスプロバイダーと保証条件についてご許諾ください。
 
 Surface の保証と修理については、以下を参照してください。
+- [ビジネスヘルプセンターの Surface](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [お客様のデバイスの保証、拡張サービスプラン、諸条件](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
-- [表面標準保証](https://support.microsoft.com/help/4036296)
-- [デバイスサービスと修復](https://support.microsoft.com/devices)
+
 
 ## <a name="device-service-limitations"></a>デバイスサービスの制限
 

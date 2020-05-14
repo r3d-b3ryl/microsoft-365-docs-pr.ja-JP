@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: 39ab61a13af311339174c0e37a10f4637f51ba84
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 2cff14f2de60136b35399225da7cb04bbf9e880c
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213307"
+ms.locfileid: "44222506"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -50,7 +50,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 
 |機能                                                                                                        |Windows デスクトップ |Mac デスクトップ |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[ラベルを手動で適用、変更、または削除する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | レビュー                                                        |
 |[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -67,7 +67,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 
 |機能                                                                                                        |Windows デスクトップ上の Outlook |Outlook on Mac デスクトップ  |Outlook on iOS |Outlook on Android |Outlook on the web |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[ラベルを手動で適用、変更、または削除する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
+|[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
 |[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
 |[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
 |[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
@@ -122,7 +122,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 - ドキュメントの場合:**ファイル**  >  **情報**  >  **保護ドキュメント**に  >  **よるアクセスの制限**
 - 電子メールの場合: [**オプション**] タブから [**暗号化**] を > 
   
-ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 例:
+ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 次に例を示します。
 
 - ユーザーが**機密 \ All Employees**ラベルをドキュメントに適用します。このラベルは、組織内のすべてのユーザーの暗号化設定を適用するように構成されています。 このユーザーは、組織外のユーザーへのアクセスを制限するように IRM 設定を手動で構成します。 最終的には、"**社外秘**" というラベルが付けられた文書が作成されますが、組織内のユーザーは意図したとおりに開くことができません。
 
@@ -132,7 +132,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ドキュメントまたは電子メールに既にラベルが付けられている場合、ユーザーはこれらの操作を実行できます。コンテンツが暗号化されていない場合、または[利用状況](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)のエクスポートまたはフルコントロールがある場合です。 
 
-有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 例:
+有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 次に例を示します。
 
 - ユーザーが自分のアクセス許可を割り当てる必要がある例外の場合は、[ユーザーが自分のアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)ためのラベルを提供します。 
 
@@ -167,7 +167,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>機密ラベルで保護された SharePoint および OneDrive ファイルのサポート
 
-OneDrive for business または SharePoint Online のドキュメントに対して web 上の office に office の組み込みラベルクライアントを使用するには、[プレビュー] をオンにして、 [sharepoint および onedrive で office ファイルの機密ラベルを有効](sensitivity-labels-sharepoint-onedrive-files.md)にしていることを確認してください。
+SharePoint または OneDrive のドキュメントに対して web 上の office に office の組み込みラベルクライアントを使用するには、 [sharepoint および onedrive で office ファイルの機密ラベルを有効に](sensitivity-labels-sharepoint-onedrive-files.md)していることを確認してください。
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office アプリがコンテンツのマーキングと暗号化を適用するとき
 
@@ -198,6 +198,6 @@ Office アプリの外部に機密ラベルを適用する方法には、次の�
 
 ## <a name="end-user-documentation"></a>エンドユーザードキュメント
 
-- [Office 内の文書やメールに機密ラベルを適用する](https://support.office.com/article/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [Office 内の文書やメールに機密ラベルを適用する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 
-- [Office ファイルに機密ラベルを適用した場合の既知の問題](https://support.office.com/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Office ファイルに機密ラベルを適用した場合の既知の問題](https://support.microsoft.com/en-us/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034818"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224591"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
@@ -137,7 +137,7 @@ ms.locfileid: "44034818"
 
 3. 管理者として PowerShell インスタンスを開き、スクリプトを保存したフォルダーを開きます。
 
-4. 次`.\Get-AllTenantRulesAndForms.ps1`のように、この PowerShell コマンドラインを実行します。 .\Get-AllTenantRulesAndForms.ps1
+4. 次のように、この PowerShell コマンドラインを実行します。 `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>出力の解釈
 
@@ -159,7 +159,7 @@ ms.locfileid: "44034818"
 
 1. ユーザーが Outlook で使用したすべてのデバイスを特定します。 これらはすべて、潜在的なマルウェアを駆除する必要があります。 すべてのデバイスがクリーニングされるまで、ユーザーはサインオンして電子メールを使用できません。
 
-2. 「各デバイスの[ルールを削除する](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)」の手順に従います。
+2. 「各デバイスの[ルールを削除する](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f)」の手順に従います。
 
 3. 他のマルウェアが存在することが不明な場合は、デバイス上のすべてのソフトウェアを書式設定して再インストールすることができます。 モバイルデバイスでは、製造元の手順に従って、デバイスを出荷時イメージにリセットできます。
 

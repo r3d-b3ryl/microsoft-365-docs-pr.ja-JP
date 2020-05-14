@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: この記事では、Microsoft cloud で顧客データを安全に保つために使用されるさまざまな形式の暗号化の概要について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e48cc4fc54f0bc4553bab655611900523e11bd4d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031387"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214275"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft Cloud における暗号化
 
@@ -30,7 +30,7 @@ Microsoft のエンタープライズクラウドサービス内の顧客デー�
 
 お客様の構成に関係なく、Microsoft のエンタープライズクラウドサービス内に格納されているお客様のデータは、1つ以上の形式の暗号化を使用して保護されます。 (暗号化ポリシーとその強制の検証は、複数のサードパーティの監査者によって個別に確認され、それらの監査のレポートは[サービス信頼ポータル](https://aka.ms/stp)で利用できます)。
 
-Microsoft は、お客様のデータを保存中および転送中に暗号化するサービス側テクノロジを提供しています。 たとえば、お客様のデータが保存されている場合、Microsoft Azure は[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)と[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)を使用し、microsoft 365 は Bitlocker、 [Azure Storage Service 暗号化](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、 [Distributed Key Manager](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376) (DKM)、および microsoft 365 Service 暗号化を使用します。 転送中の顧客データの場合、Azure、Office 365、Microsoft コマーシャルサポート、Microsoft Dynamics 365、Microsoft Power BI、Visual Studio Team Services は、Microsoft データセンター間、およびユーザーデバイスと Microsoft データセンター間で、業界標準のセキュリティで保護されたトランスポートプロトコル (インターネットプロトコルセキュリティ (IPsec)、トランスポート層セキュリティ (TLS) など) を使用します。
+Microsoft は、お客様のデータを保存中および転送中に暗号化するサービス側テクノロジを提供しています。 たとえば、お客様のデータが保存されている場合、Microsoft Azure は[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)と[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)を使用し、microsoft 365 は Bitlocker、 [Azure Storage Service 暗号化](https://docs.microsoft.com/azure/)、 [Distributed Key Manager](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets) (DKM)、および microsoft 365 Service 暗号化を使用します。 転送中の顧客データの場合、Azure、Office 365、Microsoft コマーシャルサポート、Microsoft Dynamics 365、Microsoft Power BI、Visual Studio Team Services は、Microsoft データセンター間、およびユーザーデバイスと Microsoft データセンター間で、業界標準のセキュリティで保護されたトランスポートプロトコル (インターネットプロトコルセキュリティ (IPsec)、トランスポート層セキュリティ (TLS) など) を使用します。
 
 Microsoft によって提供される暗号化セキュリティのベースラインレベルに加えて、クラウドサービスには、管理可能な追加の暗号化オプションも含まれています。 たとえば、Azure 仮想マシン (Vm) とユーザーの間のトラフィックに対して暗号化を有効にすることができます。 [Azure 仮想ネットワーク](https://azure.microsoft.com/services/virtual-network/)では、業界標準の IPsec プロトコルを使用して、企業の VPN ゲートウェイと Azure の間、および仮想ネットワーク上に配置された vm 間のトラフィックを暗号化することができます。 さらに、[新しい Office 365 メッセージの暗号化機能](set-up-new-message-encryption-capabilities.md)を使用すると、暗号化されたメールをだれにでも送信できます。
 
@@ -46,7 +46,7 @@ Microsoft は、Windows オペレーティングシステムの新しいリリ�
 - Dynamics 365、Dynamics 365 米国政府
 - Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense
 
-保存されている顧客データの暗号化は、BitLocker、DKM、Azure Storage Service の暗号化、Exchange Online、Skype for business、OneDrive for Business、および SharePoint Online のサービス暗号化など、複数のサービス側テクノロジによって提供されます。 Office 365 service encryption には、Azure Key Vault に格納されている、顧客が管理する暗号化キーを使用するオプションが含まれています。 Customer[キー](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)と呼ばれるこの顧客管理キーオプションは、Exchange Online、SharePoint Online、Skype for business、および OneDrive for business で使用できます。
+保存されている顧客データの暗号化は、BitLocker、DKM、Azure Storage Service の暗号化、Exchange Online、Skype for business、OneDrive for Business、および SharePoint Online のサービス暗号化など、複数のサービス側テクノロジによって提供されます。 Office 365 service encryption には、Azure Key Vault に格納されている、顧客が管理する暗号化キーを使用するオプションが含まれています。 Customer[キー](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview)と呼ばれるこの顧客管理キーオプションは、Exchange Online、SharePoint Online、Skype for business、および OneDrive for business で使用できます。
 
 送信中の顧客データの場合、すべての Office 365 サーバーは、既定で TLS を使用してセキュリティで保護されたセッションを、顧客データをセキュリティで保護するクライアントコンピューターを使用してネゴシエートします  これは、Skype for Business、Outlook、web 上の Outlook、モバイルクライアント、web ブラウザーなど、クライアントによって使用されるすべてのデバイスのプロトコルに適用されます。
 

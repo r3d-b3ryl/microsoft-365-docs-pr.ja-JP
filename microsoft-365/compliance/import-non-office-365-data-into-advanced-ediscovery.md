@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Microsoft 365 に保存されていないコンテンツを Azure blob にインポートして、AeD で分析できるようにする手順
-ms.openlocfilehash: daafcf003ded35868413d99c11ec1bf3941dca9f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be49e7d44c56988baa3cdc718498a03ee4acd50b
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634159"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214541"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>Microsoft 以外の365コンテンツをインポートして高度な電子情報開示 (クラシック) 分析を行う
 
@@ -30,7 +30,7 @@ ms.locfileid: "43634159"
 > Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
 > [!NOTE]
-> Microsoft 以外の365コンテンツについては、高度な電子情報開示データ記憶域アドオンサブスクリプションを購入できます。 これは、Advanced eDiscovery で分析するコンテンツにのみ使用できます。 「 [Microsoft 365 for business のアドオンを購入または編集する](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6)」の手順に従って、Advanced eDiscovery storage アドオンを購入します。 
+> Microsoft 以外の365コンテンツについては、高度な電子情報開示データ記憶域アドオンサブスクリプションを購入できます。 これは、Advanced eDiscovery で分析するコンテンツにのみ使用できます。 「 [Microsoft 365 for business のアドオンを購入または編集する](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on)」の手順に従って、Advanced eDiscovery storage アドオンを購入します。 
   
 ## <a name="before-you-begin"></a>始める前に
 
@@ -51,7 +51,7 @@ ms.locfileid: "43634159"
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Office 以外の365コンテンツを上級電子情報開示にアップロードする
 
 
-1. 電子情報開示マネージャーまたは電子情報開示管理者として、**電子情報開示**を開いて、Office 以外の365データがアップロードされるケースを開きます。 ケースを作成する必要がある場合は、「 [ &amp; Security コンプライアンスセンターで電子情報開示ケースを管理](ediscovery-cases.md)する」を参照してください。
+1. 電子情報開示マネージャーまたは電子情報開示管理者として、**電子情報開示**を開いて、Office 以外の365データがアップロードされるケースを開きます。 ケースを作成する必要がある場合は、「 [Security &amp; コンプライアンスセンターで電子情報開示ケースを管理](ediscovery-cases.md)する」を参照してください。
     
 2. [**高度な電子情報開示に切り替え] を**クリックします。
     
@@ -71,7 +71,7 @@ ms.locfileid: "43634159"
     
   - ルートフォルダー-c/一度収集したデータ 
     
-  - コンテナーの url https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp-; sr =&amp;c Si = NonOfficeData15%&amp;7C0 sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
+  - コンテナーの url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp ; sr = c &amp; Si = NonOfficeData15% 7C0 &amp; sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
     
     AzCopy コマンドライン構文は次のようになります。
     

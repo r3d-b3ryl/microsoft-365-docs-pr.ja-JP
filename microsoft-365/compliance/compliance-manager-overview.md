@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーについて説明します。これには、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールがあります。
-ms.openlocfilehash: cc62e989a3ef0a40a05c5f2e34e6e15dc6e7f399
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 84f076a45a3944d1d711a8e04199b357aa52791d
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046285"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224644"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
@@ -84,7 +84,7 @@ Microsoft[コンプライアンスマネージャー (プレビュー)](https://
 - **顧客管理コントロール**: これらのコントロールは、各コントロールに対してアクションを実行すると、組織によって実装されます。
 - **評価スコア**: 評価での顧客管理コントロールの可能なスコアの合計の割合です。 これにより、各コントロールに割り当てられたアクションの実装を追跡できます。
 
-## <a name="controls"></a>Controls
+## <a name="controls"></a>コントロール
 
 [統制](working-with-compliance-manager.md#controls-and-actions)はコンプライアンスマネージャーのコンプライアンスプロセスコンテナーで、コンプライアンスアクティビティを管理する方法を定義します。 これらのコントロールは、対応する認定資格または規制の評価構造と一致するように、コントロールファミリ内に整理されています。
 
@@ -150,22 +150,25 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 
 コンプライアンスマネージャーには、評価用に事前に構成された[テンプレート](working-with-compliance-manager.md#templates)が用意されており、コンプライアンスのニーズに合わせて顧客管理のコントロール用のカスタマイズされたテンプレートを作成できます。 新しいテンプレートは、Excel ファイルからコントロールの情報をインポートして作成するか、既存のテンプレートのコピーからテンプレートを作成することができます。
 
-コンプライアンスマネージャーに含まれる事前構成済みテンプレートは次のとおりです。
+事前に構成されたテンプレートは次のとおりです。
 
-1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-4. [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075)
-5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-7. [Cloud Security アライアンス (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-8. [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://go.microsoft.com/fwlink/?linkid=2109077) 
-9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / の[ヒット](https://go.microsoft.com/fwlink/?linkid=2109079)
-10. [FedRAMP モデレート](https://go.microsoft.com/fwlink/?linkid=2108869)
-11. [欧州連合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-12. [カリフォルニアコンシューマ Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (プレビュー)
-13. [Irap](https://go.microsoft.com/fwlink/?linkid=2113709) / [オーストラリア自治体 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (プレビュー)
-14. [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+1. [ブラジルの一般データ保護法 (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
+2. [カリフォルニアコンシューマ Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (プレビュー)
+3. [Cloud Security アライアンス (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+4. [欧州連合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+5. [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://go.microsoft.com/fwlink/?linkid=2109077)
+6. [FedRAMP モデレート](https://go.microsoft.com/fwlink/?linkid=2108869)
+7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / [エコー](https://go.microsoft.com/fwlink/?linkid=2109079)
+8. [Irap](https://go.microsoft.com/fwlink/?linkid=2113709)  / [オーストラリア自治体 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (プレビュー)
+9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+12. [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+13. [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075)
+14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+15. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## <a name="secure-score-integration"></a>セキュリティで保護されたスコアの統合
 
@@ -177,7 +180,7 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 
 [コンプライアンスマネージャーの作業](working-with-compliance-manager.md)を開始して、組織の法令遵守活動を管理します。
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [対話型ガイド: コンプライアンスマネージャーを使用してデータ保護コントロールを評価し、強化します。](https://content.cloudguides.com/guides/Compliance%20Manager)
 - [Microsoft Security、プライバシー、コンプライアンスの技術コミュニティ](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/ct-p/SecurityPrivacyCompliance)

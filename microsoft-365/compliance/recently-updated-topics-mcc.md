@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b7edcf8c4c530c926d323fddbf795cd930efd649
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036020"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221421"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -32,7 +32,122 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 > [!TIP]
 > Microsoft 365 コンプライアンスセンターで最新の機能の更新プログラムを最新の状態に保つには、「 [microsoft 365 コンプライアンスセンターの新](whats-new.md)機能」をご覧ください。
 
+## <a name="march-2020"></a>2020 年 3 月
+
+### <a name="auditing"></a>監査
+
+[詳細な監査を使用して、侵害されたアカウントを調査する](mailitemsaccessed-forensics-investigations.md)(新)<br>フォレンジック調査のための新しい*Mailitemsaccessed* auditing アクションの使用に関する新しいガイダンスです。
+
+次のような複数の更新が[監査ログを検索](search-the-audit-log-in-security-and-compliance.md)します。
+- 「監査レコード」に一覧表示されている「app@sharepoint」ユーザーの詳細を含む[新しいセクション](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。
+- 検疫アクティビティの[新しい説明](search-the-audit-log-in-security-and-compliance.md#quarantine-activities)。
+- [[ユーザー管理アクティビティ](search-the-audit-log-in-security-and-compliance.md#user-administration-activities)] セクションで、[ユーザーが自分のパスワードを変更したときにユーザーパスワードの変更イベントがトリガーされました (セルフサービスのパスワードのリセットを介して)、管理者がユーザーのパスワードをリセットしたときにユーザーパスワードのリセット] イベントが発生することを明示しています。
+
+### <a name="auto-expanding-archive"></a>自動拡張アーカイブ
+
+[無制限アーカイブの概要](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(更新)<br>メールボックスで自動拡張アーカイブが有効になっている場合、メインアーカイブ内の任意のフォルダーまたは補助アーカイブを削除できないことを示す説明を追加しました。
+
+### <a name="compliance-scorecompliance-manager"></a>コンプライアンススコア/コンプライアンスマネージャー
+
+すべての[コンプライアンススコア](compliance-score.md)と[コンプライアンスマネージャー](compliance-manager-overview.md)のトピックには、これらの製品に対する更新プログラムが含まれています (どちらもまだパブリックプレビューにあります)。 主な更新内容は次のとおりです。
+- テンプレートを作成および変更するための簡略化されたプロセス
+- テンプレートとアクションのバージョン管理通知とコントロール
+- グループ間で共通のアクションを同期する
+- 言語サポートは、簡体字中国語 (簡体字)、中国語 (繁体字)、フランス語、ドイツ語、イタリア語、日本語、韓国語、ポルトガル語 (ブラジル)、ロシア語、スペイン語に拡張されました。
+
+### <a name="communication-compliance"></a>通信コンプライアンス
+
+[ケーススタディ-Contoso 社は、Microsoft Teams、Exchange、Yammer の通信に対して、不快な言語のポリシーを迅速に構成し](communication-compliance-case-study.md)ます (新)<br>教育機関および小規模企業組織が、不快な言語ポリシーをすばやく構成できるようにするためのステップバイステップのケーススタディ。 COVID19 の応答のために組織が上昇するにつれて、顧客からの要求が増加しました。
+
+[コミュニケーションのコンプライアンス](communication-compliance-configure.md)(更新) の概要<br>ライセンスおよびアクセス許可の要件を更新しました。
+
+### <a name="customer-key"></a>顧客キー
+
+[顧客キーまたは可用性キーをロールまたは回転する](customer-key-availability-key-roll.md)(更新)<br>ロールが可能で、ロールできないキーを明確にするために役立つ組織の更新。
+
+[顧客キーの可用性キーについて](customer-key-availability-key-understand.md)(更新)<br>顧客キーの Exchange Online アーキテクチャに関する説明を追加しました。
+
+### <a name="data-loss-prevention"></a>データ損失防止
+
+[データ損失防止](data-loss-prevention-policies.md)(更新) の概要<br>保持ラベルが有効になるまでの時間と、通知が構成されていない既定の動作ポリシーを更新しました。
+
+### <a name="ediscovery"></a>電子情報開示
+
+[高度な電子情報開示の概要](get-started-with-advanced-ediscovery.md)(新規)<br>ライセンスとアクセス許可の要件に関する情報、グローバル設定を構成し、新しいケースを作成する手順、および高度な電子情報開示ワークフローのチュートリアルについて説明します。
+
+[従来の電子情報開示ツール](legacy-ediscovery-retirement.md)(更新) の廃止<br>一般に衛生状況が発生したため、退職日は3か月に移行されました。 記事 cites 更新されました。新しい退職日。
+
+### <a name="insider-risk-management"></a>インサイダー リスクの管理
+
+[Insider リスク管理](insider-risk-management-configure.md)(更新) の概要<br>ライセンスおよびアクセス許可の要件を更新しました。
+
+[情報バリアポリシーを定義](information-barriers-policies.md)する (更新)<br>適用に必要な処理速度と時間を明確化しました。 アドレス帳ポリシーをどのように配置する必要がないかについての詳細を追加しました。 また、フィルター処理用の新しいコードなど、さまざまな PowerShell コードを更新します。
+
+[情報障壁](information-barriers.md)(更新)<br>壊れたリンクを修正し、PDF のリンクとタイトルを更新しました。 お客様からのフィードバックごとに、情報の障壁のみが双方向の制限をサポートすることを明確にしました。 一通行の制限 (マーケティングなど) は、営業には連絡できますが、営業担当はマーケティングと通信できません) はサポートされていません。
+
+[情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)(更新)<br>新しいトラブルシューティングのシナリオセクションを追加しました。 情報の障壁を再適用する手順へのリンクを追加しました。
+
+### <a name="office-365-message-encryption"></a>Office 365 Message Encryption
+
+[Office 365 の管理メッセージの暗号化](manage-office-365-message-encryption.md)(更新)<br>強制ラッパー関数が、高度な OME 機能ではなく、標準の機能であることを反映して更新されました。 Rewrote PowerShell の例では、Advanced OME 機能の失効と有効期限へのすべての参照を除外します。
+
+[メッセージ暗号化](ome-faq.md)に関する FAQ (更新)<br>Web 用の Outlook のみがアドホック暗号化を適用できることを明示しました。 同様に、すべての Outlook クライアントで、メッセージと保護されていない PDF 添付ファイルは、Exchange Online のデータ損失防止 (DLP) ポリシーまたはメールフロールールの OME 保護を継承します。
+
+### <a name="privileged-access-management"></a>特権アクセス管理
+
+[特権アクセス管理](privileged-access-management-configuration.md)(更新) の概要<br>ライセンスおよびアクセス許可の要件を更新しました。
+
+### <a name="pst-import"></a>PST インポート
+
+[PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md) (更新)<br>PST インポートプロセスが重複した電子メールアイテムを処理する方法に関する FAQ を追加しました。
+
+### <a name="retention"></a>保持
+
+[アイテム保持ポリシーの概要](retention-policies.md)(更新)<br>変更内容には、次のものが含まれます。
+
+- 保持ポリシーと削除のみのアイテム保持ポリシーのコンテンツパスを追加しました (以前は保持した後に削除されたコンテンツパスのみを保持し、削除します)。
+- SharePoint の場所については、サイトを選択するのではなく、URL を指定するようになったことを説明する[セクションを更新](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)しました。 つまり、アイテム保持ポリシーに含めるために、サイトにアクセスするためのアクセス許可は必要ありません。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+[機密ラベルについて](sensitivity-labels.md)(更新)<br>Azure portal でのラベル管理に関する廃止の詳細を追加しました。[公式通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)へのリンクも含まれています。
+
+[機密ラベルを使用して作業を開始](get-started-with-sensitivity-labels.md)する (更新)<br>新しい機密ラベルリーダー役割に関する情報を追加しました。これは、最初は PowerShell コマンドレットのラベル付けに対してのみサポートされています。
+
+[機密ラベルとそのポリシーを作成および構成する](create-sensitivity-labels.md#removing-and-deleting-labels)(更新)<br>新しいセクションを追加しました。ラベルの削除と削除の結果について説明します。
+
+[機密ラベルを使用して Microsoft Teams のコンテンツを保護する、microsoft 365 グループ、SharePoint サイト (パブリックプレビュー)](sensitivity-labels-teams-groups-sites.md) (更新)<br>変更内容には、次のものが含まれます。
+
+- Azure ad の手順を削除し、代わりに[AZURE ad の権限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)のある情報にリンクしました。
+- **Office 365 グループに接続されたチームサイトの**設定 (新しい **[なし**] オプションを含む) のプライバシーに関する情報を使用して、[[機密ラベルの作成または編集時にサイトとグループの設定を構成する方法](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels)」を更新しました。
+- ユーザーがチーム、グループ、およびサイトを作成するときに選択できるように、サイトとグループの設定が含まれるラベルのみを使用する方法を説明するメモを追加しました。 この機能は、組織に段階的にロールアウトされています。
+
+[暗号化を適用するために機密ラベルを使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)(更新)<br>ドキュメントとメールを保護するためによく使用されるいくつかの構成の暗号化設定の例を含む[新しいセクション](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings)。
+
+[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)(更新)<br>組み込みのラベル付けと Azure Information Protection の統合ラベルクライアントの動作の違いについて説明します。
+
+[SharePoint および OneDrive で Office ファイルの機密ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)(更新)<br>変更内容には、次のものが含まれます。
+
+- このプレビューを有効にすると、ラベル付きで暗号化されたサポートドキュメントに加えて、web 用 Office のラベルの [**秘密度**] ボタンがリボンに表示されます。
+- Office 365 複数地域の手順を更新しました。
+- 制限の一覧には、コンピューターがオフラインまたはスリープ状態になったときや、ラベルが削除されたときに行われる処理を含む新しいエントリが含まれています。
+
+[Office アプリで機密ラベルを使用する](sensitivity-labels-office-apps.md)(更新)<br>変更内容には、次のものが含まれます。
+
+- ライセンス情報をに移動し[て、機密ラベルを使い始める](get-started-with-sensitivity-labels.md)。
+- [新しいセクション](sensitivity-labels-office-apps.md#labeling-client-for-desktop-apps)office デスクトップアプリに組み込まれているラベルを使用する方法について説明するために、スタンドアロンエディションではなく、サブスクリプション版の office を使用する必要があります。
+- サポートされているアプリの表には、iOS および Android 用の Office アプリと、ユーザーが Word、Excel、および PowerPoint のアクセス許可を割り当てるための構成が更新され、Windows と Mac の月次チャネルにロールアウトされるようになりました。  
+- グループポリシー設定を使用して、Windows コンピューターで引き続き使用している他のラベル付けソリューションを現在使用している場合に、組み込みのラベル付けを無効にする方法を説明する[新しいセクション](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)。 
+- IRM オプションではなく、暗号化を適用するラベルを使用することを推奨する[Information Rights Management (irm) のオプションと機密ラベル](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)のセクションを更新し、2つの保護ソリューションが混在している場合に発生する可能性のある結果を説明します。
+
+### <a name="trainable-classifiers"></a>Trainable 分類子
+
+[Trainable 分類子 (プレビュー) の](classifier-getting-started-with.md)概要 (更新)<br>不快な言語テンプレートが廃止される方法についての情報を追加しました。 また、ソースコードの組み込み分類子で使用されている上位25個のコード言語の一覧を示す表も追加しました。
+
 ## <a name="february-2020"></a>2020 年 2 月
+
+> [!NOTE]
+> 前月に表示されていた記事は、更新、移動、または削除されている場合があります。 そのため、以下の詳細情報の一部が古くなっている可能性があり、リンクが壊れている可能性があります。
 
 ### <a name="auditing"></a>監査
 
@@ -96,7 +211,7 @@ Insider リスク管理の公式リリースをサポートするために、以
 
 [保持ラベルの概要](labels.md)(更新)<br>条件に基づいて保持ラベルを適用するためのセクションには、trainable 分類子を使用するためのオプションが含まれるようになりました。
 
-### <a name="sensitivity-labels"></a>機密ラベル
+### <a name="sensitivity-labels"></a>秘密度ラベル
 
 [機密ラベルを使用して作業を開始](get-started-with-sensitivity-labels.md)する (新)<br>Azure Information Protection のお客様向けのガイダンス、プロセスの概要概要、ラベルを作成および管理するためのアクセス許可、ラベルをサポートする一般的なシナリオの一覧、および使用可能なエンドユーザードキュメントの一覧が含まれています。
 

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625208"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222591"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -42,7 +42,7 @@ ms.locfileid: "43625208"
 | **サポート チームを用意します**。 MFA を完了できないユーザーのための計画を立てます。 これにより、それらをポリシー除外グループに追加したり、新しい MFA 情報を登録したりすることができます。 これらのセキュリティで保護された変更を行う前に、実際のユーザーが要求を行っていることを確認する必要があります。 同意を支援するようにユーザーの上司に依頼する方法も効果的です。 | はい | はい | はい | はい |  
 | [オンプレミス AD へのパスワード ライトバックを構成します](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 パスワードの書き戻しを使用すると、高リスクなアカウントの侵害が検出されたときに、ユーザーがオンプレミスのパスワードを変更するよう要求することができます。 この機能を有効にするには、次の2つの方法のいずれかを使用します。 Azure AD Connect セットアップウィザードの [オプション機能] 画面で**パスワードの書き戻し**を有効にするか、Windows PowerShell で有効にすることができます。 |   | はい | はい | はい |
 | [Azure Active Directory Id 保護を有効に](https://docs.microsoft.com/azure/active-directory/identity-protection/enable)します。 Azure AD Id 保護を使用すると、組織の id に影響を及ぼす可能性のある脆弱性を検出し、自動修復ポリシーを低、中、高のサインインリスクとユーザーのリスクに構成できます。  | はい | はい | はい | はい |
-| [Exchange online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662)と[Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)の**先進認証を有効に**します。 モダン認証は、多要素認証 (MFA) を使用するための前提条件です。 モダン認証は、Office 2016 クライアント、SharePoint Online、および OneDrive for business では既定で有効になっています。 | はい | はい | はい | はい |
+| [Exchange online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)と[Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)の**先進認証を有効に**します。 モダン認証は、多要素認証 (MFA) を使用するための前提条件です。 モダン認証は、Office 2016 クライアント、SharePoint Online、および OneDrive for business では既定で有効になっています。 | はい | はい | はい | はい |
 ||||||
 
 
@@ -69,11 +69,11 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 
 |プラットフォーム|クライアント|バージョン/注|
 |:-------|:-----|:------------|
-|**Windows**|Outlook|2016、2013[モダン認証を有効にする](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)、[必要な更新プログラム](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2016、2013[モダン認証を有効にする](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)、[必要な更新プログラム](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook for iOS|[最新](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[最新](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
-|**Linux**|サポート対象外||
+|**Linux**|非サポート||
 |||
 
 
@@ -82,16 +82,16 @@ BYOD Windows デバイスでは、ユーザーは**職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|OneDrive 同期クライアント|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 8.1|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 10|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows Phone 10|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
-|Android|サポート|サポート|サポート|サポート|N/A|
-|iOS|サポート|サポート|サポート|サポート|N/A|
+|Windows 7|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 8.1|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 10|サポートされている|サポートされている|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows Phone 10|非サポート|非サポート|サポート対象外|サポート対象外|サポート対象外|
+|Android|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
+|iOS|サポートされている|サポートされている|サポートされている|サポートされている|N/A|
 |macOS|パブリック プレビュー|パブリック プレビュー|該当なし|該当なし|サポートされていません|
-|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
+|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 
-<sup>*</sup>[OneDrive 同期クライアント](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e)での条件付きアクセスの使用方法について説明します。
+<sup>*</sup>[OneDrive 同期クライアント](https://docs.microsoft.com/onedrive/enable-conditional-access)での条件付きアクセスの使用方法について説明します。
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 クライアントサポート
 クライアントサポートの詳細については、次の記事を参照してください。
@@ -114,7 +114,7 @@ Azure AD では、事前に構成された条件付きアクセスポリシー�
 その他の推奨事項を以下に示します。
 - Azure AD Privileged Identity Management を利用し、永続的管理者アカウントの数を減らします。 「 [PIM の使用を開始する」を](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)参照してください。 
 - [Office 365 で特権アクセス管理を使用](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)して、既存の特権のある管理者アカウントを使用して機密性の高いデータにアクセスしたり、重要な構成設定にアクセスしたりすることができる侵害から組織を保護します。 
-- 管理者アカウントを使用するのは管理者のみです。 管理者は、管理者が通常使用しないユーザーアカウントを持っていて、自分のジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 [Microsoft 365 の管理者](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)の役割には、microsoft 365 サービスよりもはるかに多くの特権があります。
+- 管理者アカウントを使用するのは管理者のみです。 管理者は、管理者が通常使用しないユーザーアカウントを持っていて、自分のジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 [Microsoft 365 の管理者](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)の役割には、microsoft 365 サービスよりもはるかに多くの特権があります。
 - この[記事](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)で説明されているように、Azure AD で特権アカウントを保護するためのベストプラクティスに従います。
 
 ## <a name="next-steps"></a>次の手順

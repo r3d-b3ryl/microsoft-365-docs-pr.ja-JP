@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: 'セキュリティコンプライアンスセンターを使用して、 &amp; 高度な電子情報開示を使用して分析のためにデータを準備する方法について説明します。 '
-ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 31bf002c275b228de12b7ff9e39fabf7c72be74d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208101"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214285"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>高度な電子情報開示用のデータを準備する (クラシック)
 
@@ -37,7 +37,7 @@ ms.locfileid: "44208101"
 高度な電子情報開示で分析のために検索結果を準備する詳細な手順については、「 [Advanced ediscovery の検索結果を準備](prepare-search-results-for-advanced-ediscovery.md)する」を参照してください。
   
 > [!NOTE]
-> Microsoft 365 の外部にデータがあり、それを Microsoft 365 にインポートして、高度な電子情報開示で準備および分析できるようにする場合は、「 [microsoft 365 への PST ファイルのインポート](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)と[サードパーティデータのアーカイブ](https://go.microsoft.com/fwlink/p/?linkid=716918)の概要」を参照してください。 
+> Microsoft 365 の外部にデータがあり、それを Microsoft 365 にインポートして、高度な電子情報開示で準備および分析できるようにする場合は、「 [microsoft 365 への PST ファイルのインポート](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)と[サードパーティデータのアーカイブ](https://www.microsoft.com/?ref=go)の概要」を参照してください。 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>手順 2: 高度な電子情報開示のケースに検索結果データを読み込む
 

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Microsoft Azure Active Directory Rights Management Services (RMS) を使用して SharePoint Online IRM を使用して SharePoint リストとドキュメントライブラリを保護する方法について説明します。
-ms.openlocfilehash: c981ceefde2cedb5f6c8731fd9a5ad9318174120
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab045c2319897a98bffd14f898dd254b06890bee
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634779"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222374"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>SharePoint 管理センターで Information Rights Management (IRM) を設定する
 
-## <a name="introduction"></a>はじめに
+## <a name="introduction"></a>概要
 
 SharePoint Online では、リストおよびライブラリのレベルでファイルに IRM 保護が適用されます。 組織で IRM 保護を使用するには、まず、Rights Management をセットアップしておく必要があります。 IRM は Azure Information Protection の Azure Rights Management サービスを利用して、暗号化と使用制限の割り当てを実施します。 一部の Microsoft 365 プランには、Azure Rights Management は含まれていますが、すべてではありません。 詳細については、「 [Office アプリケーションとサービスが Azure Rights Management をサポートする方法](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)」を参照してください。
   
@@ -77,6 +77,6 @@ SharePoint Online では、次の種類のファイルの暗号化がサポー�
 
 SharePoint Online の IRM を有効にしたら、[リストとライブラリへの rights management の適用] を開始できます。 詳細については、「[リストまたはライブラリに Information Rights Management を適用する](apply-irm-to-a-list-or-library.md)」を参照してください。
   
-SharePoint 用の新しい OneDrive 同期クライアントでは、IRM で保護された SharePoint ドキュメントライブラリと OneDrive の場所の同期がサポートされるようになりました (ライブラリの IRM 設定でドキュメントアクセス権の有効期限が設定されていない場合)。 詳細については、または新しい同期クライアントの展開を開始するには、「 [Windows 用の新しい OneDrive 同期クライアントを展開](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668)する」を参照してください。
+SharePoint 用の新しい OneDrive 同期クライアントでは、IRM で保護された SharePoint ドキュメントライブラリと OneDrive の場所の同期がサポートされるようになりました (ライブラリの IRM 設定でドキュメントアクセス権の有効期限が設定されていない場合)。 詳細については、または新しい同期クライアントの展開を開始するには、「 [Windows 用の新しい OneDrive 同期クライアントを展開](https://docs.microsoft.com/onedrive/deploy-on-windows)する」を参照してください。
   
 [ページのトップへ](#introduction)  

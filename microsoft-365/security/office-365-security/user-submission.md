@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、ユーザーによって報告されたスパムやフィッシング電子メールを収集するようにメールボックスを構成する方法について説明します。
-ms.openlocfilehash: 2931171d8e2dcd26593904385aec872c8967abf4
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 38fa16b5270273813b4549b0c3c9baaa1b05b098
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213354"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224555"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Exchange Online でスパムおよびフィッシングメッセージをユーザーが送信するためのメールボックスを指定する
 
@@ -29,6 +29,9 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 - [レポートメッセージアドイン](enable-the-report-message-add-in.md)
 
 - [Web 上の outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (旧称 Outlook web App) での組み込みレポート
+
+  > [!NOTE]
+  > [Web 上の outlook で](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)レポートが無効になっている場合、ここでユーザーによる送信を有効にすると、その設定が無効になり、ユーザーは web 上の outlook でメッセージを再度レポートすることができます。
 
 また、指定したメールボックスにメッセージを転送するように、サードパーティ製のメッセージレポートツールを構成することもできます。
 

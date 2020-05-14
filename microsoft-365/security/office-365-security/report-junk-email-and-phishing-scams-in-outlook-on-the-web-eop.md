@@ -1,5 +1,5 @@
 ---
-title: Web 上の Outlook で迷惑メールとフィッシング詐欺メールを報告する
+title: Outlook on the web で迷惑メールとフィッシング詐欺メールを報告する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online の Outlook on the web (Outlook Web App) に組み込まれている迷惑メール報告オプションとフィッシング電子メールレポートオプション、およびこれらのレポートオプションをユーザーに対して無効にする方法について説明しています。
-ms.openlocfilehash: 1ec226259ccb3dac9a01ee8d4c5fc635c0fc5702
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: dd4b23efa9e12a02ce69167712bc0466b3445c44
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206480"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224699"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Outlook on the web on the Exchange Online で迷惑メールとフィッシング詐欺メールを報告する
 

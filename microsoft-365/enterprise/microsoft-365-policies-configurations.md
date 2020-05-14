@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214664"
+ms.locfileid: "44222329"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -120,7 +120,7 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 
 このガイダンスでは、Exchange Online、SharePoint Online、OneDrive for business などの Office 365 へのアクセスを保護する一連のポリシーを実装する方法について説明します。 これらのポリシーを実装するだけでなく、次のリソースを使用してテナントの保護レベルも上げることをお勧めします。
 
-- [セキュリティ強化のためにテナントを構成](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)します。これらの推奨事項は、テナントのベースラインセキュリティに適用されます。
+- [セキュリティ強化のためにテナントを構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security)します。これらの推奨事項は、テナントのベースラインセキュリティに適用されます。
 - [Microsoft 365 セキュリティロードマップ: 最初の30日間、90日以降の優先順位](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): これらの推奨事項には、ログ、データガバナンス、管理アクセス、および脅威保護があります。
 
 

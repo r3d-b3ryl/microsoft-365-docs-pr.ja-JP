@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035125"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222687"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -43,7 +43,7 @@ ms.locfileid: "43035125"
 
 次の表に、SharePoint Online の新しい内容を確認し、更新または作成する必要があるポリシーを示します。 共通のポリシーは、[一般的な id とデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクしています。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|More information|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 |        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに SharePoint Online を含める|
@@ -60,7 +60,7 @@ ms.locfileid: "43035125"
 
 SharePoint Online でアクセス制御を実装する場合は、azure ad でこの条件付きアクセスポリシーを作成して、SharePoint Online で構成したポリシーを適用するように Azure AD に指示する必要があります。 このルールはすべてのユーザーに適用されますが、SharePoint Online でアクセス制御を作成するときに PowerShell を使用して指定したサイトへのアクセスにのみ影響します。
 
-このポリシーを構成するには、この記事の「管理されていない[デバイスからのアクセスを制御](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)する」の「特定の SharePoint サイトコレクションまたは OneDrive アカウントへのアクセスを禁止または制限する」を参照してください。
+このポリシーを構成するには、この記事の「管理されていない[デバイスからのアクセスを制御](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)する」の「特定の SharePoint サイトコレクションまたは OneDrive アカウントへのアクセスを禁止または制限する」を参照してください。
 
 ## <a name="sharepoint-online-access-control-policies"></a>SharePoint Online のアクセス制御ポリシー
 
@@ -69,7 +69,7 @@ Microsoft では、デバイスアクセス制御を使用して、機密およ�
 - 機密サイト: ブラウザーのみのアクセスを許可します。 これにより、ユーザーはファイルを編集してダウンロードすることができなくなります。
 - 高度な規制サイト: 非管理対象デバイスからのアクセスをブロックします。
 
-この記事の「管理されていない[デバイスからのアクセスを制御](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)する」の「特定の SharePoint サイトコレクションまたは OneDrive アカウントへのアクセスをブロックまたは制限する」を参照してください。
+この記事の「管理されていない[デバイスからのアクセスを制御](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)する」の「特定の SharePoint サイトコレクションまたは OneDrive アカウントへのアクセスをブロックまたは制限する」を参照してください。
 
 ## <a name="how-these-policies-work-together"></a>これらのポリシーがどのように連携するか
 

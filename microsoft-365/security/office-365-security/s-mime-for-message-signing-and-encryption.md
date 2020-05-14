@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理者は、Exchange Online の S/MIME (セキュリティ保護されたインターネットメール内線番号) を使用して電子メールを暗号化し、デジタル署名する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c45df36535e7b5af2648b82f83159315b94bec8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: cf9859240914e078eb62b0e914f8de79cf647f2d
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036622"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224675"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online でのメッセージの署名と暗号化の S/MIME
 
@@ -51,7 +51,7 @@ Exchange Online 管理者は、組織内のメールボックスに対して S/M
 5. S/MIME を使用する Outlook エンド ポイントまたは EAS エンド ポイントを設定します。
 
 > [!NOTE]
-> Mac、iOS、Android、その他の非 Windows デバイスでは、Outlook on the web に S/MIME コントロールをインストールすることはできません。 詳細については、「 [web 上の Outlook で S/MIME を使用してメッセージを暗号化する](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)」を参照してください。
+> Mac、iOS、Android、その他の非 Windows デバイスでは、Outlook on the web に S/MIME コントロールをインストールすることはできません。 詳細については、「 [web 上の Outlook で S/MIME を使用してメッセージを暗号化する](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480)」を参照してください。
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>Outlook on the web で S/MIME をセットアップする
 
@@ -77,7 +77,7 @@ Outlook on the web を使用して Exchange Online の S/MIME をセットアッ
 
 S/MIME には B2B (企業間取引) および B2C (企業-消費者間取引) の状況でよく使用される証明書および公開のインフラストラクチャが必要です。 ユーザーは、S/MIME で暗号化キーを制御し、送信する各メッセージにキーを使用するかどうかを選択できます。 Outlook などの電子メール プログラムはデジタル署名と署名の検証を実行するために、信頼できるルート証明機関の場所を検索します。 Office 365 のメッセージの暗号化は、組織内外の任意の受信者に送信されるメールを暗号化するための、管理者が構成できる (個々のユーザーは構成できない) ポリシー ベースの暗号化サービスです。 Azure Rights Management (RMS) 上に構築されているオンラインサービスであり、公開キー基盤に依存していません。 Office 365 メッセージの暗号化では、組織のブランドを使用してメールをカスタマイズする機能など、追加機能も提供されます。 Office 365 メッセージの暗号化の詳細については、「 [office 365 の暗号化](https://docs.microsoft.com/microsoft-365/compliance/encryption)」を参照してください。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>More information
 
 [Outlook on the web](https://docs.microsoft.com/exchange/exchange-admin-center)
 
