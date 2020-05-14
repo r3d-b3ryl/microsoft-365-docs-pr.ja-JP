@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ご自身の環境でWindowsおよびOfficeのサービスを準備する方法を学びます。
-ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011617"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222675"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>ステップ7： WindowsとOfficeのサービス
 
@@ -95,7 +95,7 @@ Windows 10は3つのサービスチャンネルを提供します。
 
 Microsoft 365 は 4 つのサービスチャンネルを提供します。
 
-- [**Office Insiderプログラム**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)、開発中の最新のOffice性能および機能についてテストし、フィードバックを行えるようにする
+- [**Office Insiderプログラム**](https://products.office.com/office-insider)、開発中の最新のOffice性能および機能についてテストし、フィードバックを行えるようにする
 - **マンスリーチャンネル**、利用可能になり次第、ユーザーに最新のOffice機能を提供する
 - **Semi-Annualチャンネル**、年2回限定で、新しい機能の実装を提供
 - **Semi-Annualチャンネル（特定）**、パイロットユーザーとアプリケーション互換性テスト担当者が次回のSemi-Annualチャンネルをテスト、検証できる、完全にサポートされたOfficeビルド

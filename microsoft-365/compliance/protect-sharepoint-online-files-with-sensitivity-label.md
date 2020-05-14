@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: '概要: Azure Information Protection を適用して、機密性の高い SharePoint Online チーム サイト内のファイルを保護します。'
-ms.openlocfilehash: 7d98ed6813e1c52ef2646cdbe402ab0bb3a50e3c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8d802d8c2b5202e51089659264b2e2c14f14ad3d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632182"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214631"
 ---
 # <a name="protect-sharepoint-online-files-with-a-sensitivity-label"></a>機密度ラベルで SharePoint Online ファイルを保護する
 
@@ -38,7 +38,7 @@ SharePoint Online 内のファイルに機密度ラベルを使用すること�
 このソリューションに関する重要な注意点がいくつかあります:
 - 組織が[ SharePoint および OneDrive の Office ファイルに対する機密ラベルを有効にしていない場合 (パブリック プレビュー)](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files): 暗号化が Office 365 に保存されているファイルに適用されている場合、このサービスはこれらのファイルのコンテンツを処理することはできません。 共同編集、電子情報開示、検索、Delve、その他の共同作業機能は機能しません。 データ損失防止 (DLP) ポリシーはメタデータ (ラベルを含む) でのみ機能し、これらのファイルのコンテンツ (ファイル内のクレジットカード番号など) には機能しません。
 
-- このソリューションでは、ユーザーは保護を適用するラベルを選択する必要があります。 自動暗号化と SharePoint がファイルにインデックスを付け検査する機能を要求するには、SharePoint Online で Information Rights Management (IRM) を使用することを検討してください。 IRM の SharePoint ライブラリを構成する場合、ファイルが編集のためにダウンロードされるときに、自動的に暗号化されます。  SharePoint IRM には、決定に影響を与える可能性のある制限が含まれます。 詳細については、「[SharePoint 管理センターにおける Information Rights Management (IRM) の設定](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)」を参照してください。
+- このソリューションでは、ユーザーは保護を適用するラベルを選択する必要があります。 自動暗号化と SharePoint がファイルにインデックスを付け検査する機能を要求するには、SharePoint Online で Information Rights Management (IRM) を使用することを検討してください。 IRM の SharePoint ライブラリを構成する場合、ファイルが編集のためにダウンロードされるときに、自動的に暗号化されます。  SharePoint IRM には、決定に影響を与える可能性のある制限が含まれます。 詳細については、「[SharePoint 管理センターにおける Information Rights Management (IRM) の設定](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center)」を参照してください。
 
 ## <a name="admin-setup"></a>管理者セットアップ
 

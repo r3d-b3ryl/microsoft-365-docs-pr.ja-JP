@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 279ecf60b0d9c023449031a3c5f086f15b18049f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065752"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214305"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 品質管理システム標準
 
@@ -57,15 +57,15 @@ ISO 9001:2015 により確立された品質管理原則を忠実に守るため
 
 **Microsoft サービスの ISO 9001:2015 監査レポートおよび対象範囲を記述した文書はどこで入手できますか?**
 
-[Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) では、中立的な監査によるコンプライアンス レポートを提供しています。 貴社の監査人が Microsoft のクラウド サービスの監査結果と貴社の法的および規制要件を比較できるようにするために、ポータルでレポートをリクエストすることができます。 [FY17 Microsoft Azure ISO 9001 評価レポート](https://aka.ms/Azure9001Report)と[FY17 Microsoft Azure ISO 9001 証明書](https://aka.ms/Azure9001Cert)の両方を入手できます。
+[Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) では、中立的な監査によるコンプライアンス レポートを提供しています。 貴社の監査人が Microsoft のクラウド サービスの監査結果と貴社の法的および規制要件を比較できるようにするために、ポータルでレポートをリクエストすることができます。 [FY17 Microsoft Azure ISO 9001 評価レポート](https://www.microsoft.com/?ref=aka)と[FY17 Microsoft Azure ISO 9001 証明書](https://www.microsoft.com/?ref=aka)の両方を入手できます。
 
 **Microsoft はインフラ障害のテストを毎年実施していますか?**
 
-はい。 ISO 9001:2015 の年次審査には、根本的な物理インフラ データセンターが含まれています。 [証明書を確認](https://aka.ms/Azure9001Cert)して、対象範囲の詳細をご覧ください。
+はい。 ISO 9001:2015 の年次審査には、根本的な物理インフラ データセンターが含まれています。 [証明書を確認](https://www.microsoft.com/?ref=aka)して、対象範囲の詳細をご覧ください。
 
 **Microsoft の ISO 9001:2015 コンプライアンス情報はどこで確認できますか?**
 
-この審査の対象範囲に含まれる Azure およびその他のサービスに対する、[ISO 9001:2015 証明書](https://aka.ms/Azure9001Cert)をダウンロードできます。
+この審査の対象範囲に含まれる Azure およびその他のサービスに対する、[ISO 9001:2015 証明書](https://www.microsoft.com/?ref=aka)をダウンロードできます。
 
 ## <a name="resources"></a>リソース
 
