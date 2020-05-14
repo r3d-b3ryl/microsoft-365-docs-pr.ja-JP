@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Microsoft 365 管理センターで Office 365 にドメインを追加するには、 DNS ホストで DNS レコードを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140777"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222341"
 ---
-# <a name="add-a-domain-to-office-365"></a>Office 365 にドメインを追加する
+# <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
 ::: moniker range="o365-21vianet"
 
@@ -74,7 +74,7 @@ ms.locfileid: "44140777"
 
 ::: moniker-end
     
-2. [**セットアップ** > **ドメイン**] ページに移動します。 
+2. [**セットアップ**  >  **ドメイン**] ページに移動します。 
 
 3. [**ドメインの追加**] を選択します。
     
@@ -82,7 +82,7 @@ ms.locfileid: "44140777"
     
 5. ドメインの所有を確認する方法を選択します。
     
-    1. ドメインが GoDaddy または 1&amp;1 で登録されている場合は、[**次へ**] を選択**Sign in** > すると、Microsoft に[よってレコードが自動的に設定され](../get-help-with-domains/domain-connect.md)ます。
+    1. ドメインが GoDaddy または 1 1 で登録されている場合は &amp; 、[ **Sign in**  >  **次へ**] を選択すると、Microsoft に[よってレコードが自動的に設定され](../get-help-with-domains/domain-connect.md)ます。
     
     2. ドメインに登録している連絡先に、検証コードを含むメールを送信できます。 レコードのメールに見覚えがない、またはメールにアクセスできない場合、3 番目のオプションを利用できます。
     
@@ -113,7 +113,7 @@ ms.locfileid: "44140777"
 
 Web サイトまたはサードパーティサービスのカスタムレコードを追加するには、以下の手順を実行します。
 
-1. Microsoft 管理センターにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>します。
+1. Microsoft 管理センターにサインイン <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> します。
 
 2. [**設定**]   >  [**ドメイン**] ページの順に移動します。
 
@@ -123,7 +123,7 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 
 5. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
     
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 ## <a name="registrars-with-domain-connect"></a>レジストラーとドメイン接続
 
@@ -136,7 +136,7 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Microsoft 365 と統合するドメイン接続レジストラー
 
-- [1&amp;IONOS](https://www.1and1.com/)
+- [1 &amp; IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)

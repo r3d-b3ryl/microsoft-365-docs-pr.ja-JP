@@ -247,15 +247,15 @@
       items:
         - name: サード パーティのデータのアーカイブの概要
           href: archiving-third-party-data.md
-        - name: コネクタをセットアップしてFacebook のデータをアーカイブする
+        - name: Facebook データのアーカイブ (プレビュー)
           href: archive-facebook-data-with-sample-connector.md
-        - name: コネクタセットアップしてTwitter のデータをアーカイブする
+        - name: Twitter データのアーカイブ (プレビュー)
           href: archive-twitter-data-with-sample-connector.md
-        - name: コネクタをセットアップして LinkedIn データをアーカイブする
+        - name: LinkedIn データのアーカイブ
           href: archive-linkedin-data.md
-        - name: コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
+        - name: Instant Bloomberg データのアーカイブ
           href: archive-instant-bloomberg-data.md
-        - name: コネクタをセットアップして人事データをインポートする
+        - name: 人事データのインポート (プレビュー)
           href: import-hr-data.md
         - name: パートナーと共同作業でサード パーティのデータをアーカイブする
           href: work-with-partner-to-archive-third-party-data.md

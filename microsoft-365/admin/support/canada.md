@@ -13,10 +13,10 @@ localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: ea41326680ef5f8a8bf7eedddd18ccac5a97d80f
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 05/13/2020
 ms.locfileid: "42359538"
 ---
 # <a name="contact-support-for-canada"></a>カナダのサポートへのお問い合わせ
