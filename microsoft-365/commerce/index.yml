@@ -12,22 +12,22 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: 7d7fb563862ba7a76e0af0b00238917ce4eb7167
-  ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+  ms.openlocfilehash: 99667701543ef02cb2f3ea8efb17ae30af2e72e3
+  ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/08/2020
-  ms.locfileid: "44165675"
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "44232771"
 landingContent:
 - title: 請求と支払いを管理する
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 課金内容を表示する
+    - text: 課金内容または請求書を表示する
       url: billing-and-payments/view-your-bill-or-invoice.md
     - text: 支払方法を管理する
       url: billing-and-payments/manage-payment-methods.md
-    - text: 請求書の内容を理解する
+    - text: 請求書または請求書を理解する
       url: billing-and-payments/understand-your-invoice.md
     - text: 課金プロフィールを管理する
       url: billing-and-payments/manage-billing-profiles.md

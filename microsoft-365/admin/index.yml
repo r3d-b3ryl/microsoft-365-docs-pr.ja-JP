@@ -12,22 +12,22 @@ metadata:
   ms.author: sirkkuw
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 4fbcbcf3b1d9f0e83c2077317cb0388a7acf14cc
-  ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+  ms.openlocfilehash: fd945d744870dd0c72cc91b727b47b3d2e1210f2
+  ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/13/2020
-  ms.locfileid: "44222517"
+  ms.lasthandoff: 05/14/2020
+  ms.locfileid: "44232133"
 highlightedContent:
   items:
   - title: Office 365 は現在、Microsoft 365!
     itemType: whats-new
     url: new-subscription-names.md
 productDirectory:
-  title: 概要
+  title: はじめに
   summary: サブスクリプションとメールの設定、ユーザーの追加、アプリのインストールを行います。
   items:
-  - title: 概要
+  - title: はじめに
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: Microsoft 365 にサインアップしてセットアップします。
     url: setup/index.yml
@@ -37,7 +37,7 @@ productDirectory:
     url: setup/migrate-email-and-contacts-admin.md
   - title: アプリをインストールする
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: 組織内のユーザーに Office およびその他の Microsoft アプリをインストールします。
+    summary: Office およびその他の Microsoft アプリをインストールします。
     url: setup/install-applications.md
   - title: ユーザーをトレーニングする
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -45,7 +45,7 @@ productDirectory:
     url: https://support.office.com/office-training-center
 additionalContent:
   sections:
-  - title: 管理
+  - title: Manage
     summary: サブスクリプション、サービス、ユーザーを管理し、ビジネスをセキュリティで保護し、ヘルプのトラブルシューティングを取得します。
     items:
     - title: Microsoft 365 管理センターの概要
@@ -67,7 +67,7 @@ additionalContent:
       summary: 課金、サブスクリプション、製品ライセンスの管理、支払い方法の更新、および追加のサービスとストレージの購入を行います。
       url: ../commerce/index.yml
     - title: 組織をセキュリティで保護する
-      summary: データ損失防止 (DLP) ポリシーを作成し、多要素認証 (MFA) を設定し、Microsoft Secure Score および GDPR について説明します。
+      summary: 多元的な認証 (MFA) の設定や Microsoft Secure Score および GDPR について説明するように、組織をセキュリティで保護するための最適な方法について説明します。
       url: security-and-compliance/secure-your-business-data.md
     - title: 顧客と連携する
       summary: ドキュメントを共有し、Teams を使用して共同作業し、会議に参加します。
