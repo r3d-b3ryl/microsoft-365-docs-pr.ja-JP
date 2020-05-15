@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品および機能の更新プログラムのリリースオプションをセットアップする方法について説明します。
-ms.openlocfilehash: fc931893e95ff053cd251b6c1b12bfdbaadf49ae
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139651"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249886"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準または対象指定リリースオプションを設定する
 
@@ -48,7 +48,7 @@ Microsoft 365 では、数年ごとに費用のかかる更新プログラムを
   
 ![Microsoft 365 のリリース検証リング](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-重要な更新プログラムについては、Office のお客様には、 [Microsoft 365 ロードマップ](https://products.office.com/business/office-365-roadmap)による通知が最初に行われます。 更新プログラムのロールアウトが近づくにつれて、 [Microsoft 365 メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)を経由して通知されます。
+重要な更新プログラムについては、お客様には[Microsoft 365 ロードマップ](https://products.office.com/business/office-365-roadmap)による通知が最初に行われます。 更新プログラムのロールアウトが近づくにつれて、 [Microsoft 365 メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)を経由して通知されます。
 
 > [!NOTE]
 > [管理センター](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)を使用してメッセージセンターにアクセスするには、Microsoft 365 または Azure AD アカウントが必要です。 Microsoft 365 home プランユーザーには管理センターがありません。
@@ -99,7 +99,7 @@ Microsoft 365 では、数年ごとに費用のかかる更新プログラムを
 > [!IMPORTANT]
 > 以下の変更が Microsoft 365 で有効になるまで、最大24時間かかる場合があります。 対象指定リリースをいったん有効にした後に無効にすると、予定された標準リリースにまだ到達していない機能にアクセスできなくなる可能性があります。 
   
-1. 管理センターで、[**設定** > ]**設定**に移動し、[**組織プロファイル**] タブの [**リリース環境設定**] を選択します。
+1. 管理センターで、[**設定**]  >  **設定**に移動し、[**組織プロファイル**] タブの [**リリース環境設定**] を選択します。
 
 5. 対象指定リリースを無効にするには、[ **Standard release**] を選択し、[**変更の保存**] を選択します。 
     
@@ -112,10 +112,6 @@ Microsoft 365 では、数年ごとに費用のかかる更新プログラムを
 9. ユーザーの追加が完了したら、[**変更の保存**] を選択します。
 
 
-
-## <a name="get-the-targeted-release-version-of-office"></a>対象となるリリース版の Office を取得する
-
-Office の対象指定リリース ビルドをインストールするには、[次の手順に従います](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead)。これにより、Windows デスクトップ用の Office 2016 の新機能をいち早く利用できます。
   
 ## <a name="learn-more"></a>詳細情報
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: 'ユーザーが会議や予定の外部ユーザーと予定表を共有する方法について説明します。 '
-ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628042"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249874"
 ---
 # <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
 
@@ -39,10 +39,9 @@ ms.locfileid: "43628042"
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用して予定表の共有を有効にする
 
-1. 管理センターで、 [**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービスとアドイン</a>] ページの順に移動します。 
+1. 管理センターで、[設定の**Settings** \> **設定**] に移動します。 
     
-  
-2. [**サービス&amp;アドイン**] ページで、[**予定表**] を選択します。
+2. [**サービス**] タブで、[**カレンダー**] を選択します。
   
 3. 開いた [**予定表**] ページで、Microsoft 365 または Exchange を使用している組織外のユーザーと予定表を共有するかどうかを選択します。
     
@@ -55,4 +54,3 @@ ms.locfileid: "43628042"
 
 テナントで共有が有効になると、予定表の所有者は特定のユーザーを招待できます。手順については、「[予定表を共有する](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx)」を参照してください。 
   
-
