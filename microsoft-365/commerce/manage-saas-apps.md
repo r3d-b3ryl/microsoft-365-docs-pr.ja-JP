@@ -13,12 +13,12 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: Microsoft 365 管理センターでサードパーティ製アプリをアクティブ化および管理する方法について説明します。
-ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141190"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232747"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサードパーティ製アプリのサブスクリプションを管理する
 
@@ -67,7 +67,7 @@ ms.locfileid: "44141190"
 
 管理者は、ユーザーに割り当てる前にサードパーティ製アプリをアクティブ化する必要があります。 これらのアプリは、サードパーティの発行元のポータルでアクティブ化されます。
 
-1. 管理センターで、[**製品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">アプリ</a>の**課金** > ] ページに移動します。
+1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
 3. [**設定 & アクション**] で、[**パブリッシャーのポータルで管理**] を選択します。
 
@@ -89,7 +89,7 @@ ms.locfileid: "44141190"
 
 管理者は、ユーザーに割り当てる前に、サードパーティ製のアプリをアクティブ化する必要があります。 これらは、サードパーティの発行元のポータルでアクティブ化されています。 [アプリ] ページの [**設定 & アクション**] で、ライセンスを割り当てるリンクを選択します。
 
-1. 管理センターで、[**製品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">アプリ</a>の**課金** > ] ページに移動します。
+1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
 3. **[設定とアクション]** で、**[発行元のポータルで管理する]** へのリンクを選択します。
 
@@ -97,7 +97,7 @@ ms.locfileid: "44141190"
 
 管理者は、組織によって所有されているライセンスの数を変更できます。 これは、座席ベースの価格設定を使用して購入したアプリにのみ適用されます。
 
-1. 管理センターで、[**製品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">アプリ</a>の**課金** > ] ページに移動します。
+1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
 3. [**ライセンス数量の変更**] を選択します。
 
@@ -113,16 +113,16 @@ ms.locfileid: "44141190"
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>サービスとしてのソフトウェアアプリサブスクリプションの課金プロファイルを変更する
 
-1. 管理センターで、[**製品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">アプリ</a>の**課金** > ] ページに移動します。
+1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
 3. [**課金プロファイル**] の横にある [**編集**] を選択します。
 
-請求書の詳細については、「[請求書を理解する](billing-and-payments/understand-your-invoice.md)」を参照してください。
+請求書の詳細について[は、「bill または請求書](billing-and-payments/understand-your-invoice.md)について」を参照してください。
 
 ## <a name="cancel-a-software-as-a-service-app-subscription"></a>サービスとしてのソフトウェアアプリのサブスクリプションをキャンセルする
 
 アプリページから、サービスとしてのソフトウェアアプリを取り消すことができます。
 
-1. 管理センターで、[**製品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">アプリ</a>の**課金** > ] ページに移動します。
+1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
 3. [**設定とアクション**] の下で、[**サブスクリプションのキャンセル**] を選択します。

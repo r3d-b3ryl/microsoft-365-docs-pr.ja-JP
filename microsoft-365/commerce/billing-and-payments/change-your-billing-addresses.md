@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Microsoft 365 for business の請求先住所を更新する方法について説明します。請求通知の受信に使用される電子メールアドレスを更新することもできます。
 ms.custom: okr_SMB
-ms.openlocfilehash: 09f4ef95c9f8ab3dcce3b3a2511c5e407539020e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140925"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232889"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -51,13 +51,13 @@ ms.locfileid: "44140925"
   
 ::: moniker range="o365-worldwide"
 
-課金内容や請求書の詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」および「[一般法人向け Office 365 の請求書について](understand-your-invoice2.md)」を参照してください。
+請求書または請求書の詳細については、「 [bill または請求書を表示](view-your-bill-or-invoice.md)する」と「請求書[または請求](understand-your-invoice2.md)書について」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-課金内容や請求書の詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」および「[一般法人向け Office 365 の請求書について](understand-your-invoice2.md)」を参照してください。
+請求書または請求書の詳細については、「 [bill または請求書を表示](view-your-bill-or-invoice.md)する」と「bill または[請求](understand-your-invoice2.md)書について」を参照してください。
 
 ::: moniker-end
 
@@ -128,7 +128,7 @@ ms.locfileid: "44140925"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
+1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
 
 2. 変更するサブスクリプションを検索します。 [**設定とアクション**] セクションで、[**サービスの利用先住所の編集**] を選択します。
 
@@ -204,7 +204,7 @@ ms.locfileid: "44140925"
 
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md)
 
-[請求書を把握する](understand-your-invoice2.md)
+[請求書または請求書を理解する](understand-your-invoice2.md)
 
 [サブスクリプションの代金を支払う](pay-for-your-subscription.md)
 

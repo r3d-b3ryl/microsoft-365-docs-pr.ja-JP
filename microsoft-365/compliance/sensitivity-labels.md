@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 情報保護フレームワークの秘密度ラベルを使用して、組織のデータを分類して保護し、ユーザーの生産性とコラボレーション機能を損なわないようにします。 これらのラベルは、フッターや透かしなどの暗号化の視覚的マーキングを含む保護設定を適用できます。
-ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022155"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213285"
 ---
 # <a name="learn-about-sensitivity-labels"></a>機密度ラベルの詳細
 
@@ -89,7 +89,7 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
     
     ![ドキュメントに適用されたヘッダーと透かし](../media/Sensitivity-label-watermark-header.png)
     
-    コンテンツ マーキングがいつ適用されるかを確認する必要がありますか？ 「[Microsoft 365 がコンテンツ マーキングと暗号化を適用する場合](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)」を参照してください。
+    コンテンツ マーキングがいつ適用されるかを確認する必要がありますか？ 「[Office アプリがコンテンツ マーキングと暗号化を適用した場合](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)」を参照してください。
     
     文字数の長さ: 透かしで使用できる文字数は、255 文字に制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。
 

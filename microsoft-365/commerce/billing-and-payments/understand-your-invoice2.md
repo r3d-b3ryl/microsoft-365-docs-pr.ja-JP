@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for business の請求書について
+title: Microsoft 365 for business の課金または請求書を理解する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: Microsoft 365 for business 請求書の料金、請求、および支払いに関する情報を解釈する方法と、発注書番号を変更する方法について説明します。
-ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: Microsoft 365 の請求書、請求書、および支払いに関する情報を解釈する方法、およびお客様の注文番号を変更する方法について説明します。
+ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045814"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232795"
 ---
-# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for business の請求書について
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for business の課金または請求書を理解する
 
 毎月、新しい請求明細書が管理センターで利用可能であることを知らせる電子メールを受け取ります。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
   
@@ -104,7 +104,7 @@ ms.locfileid: "44045814"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
+1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
 
 2. **表**形式のビューの場合は、[**カード**] を選択してビューを切り替えます。
 

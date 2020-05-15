@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 組織名、住所、電話、技術連絡先、電子メールなど、組織のプロファイルを変更する方法について説明します。
-ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cae24ebb6ad317767c7798b808f166024cd9d73a
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208176"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232901"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
 
@@ -60,7 +60,7 @@ ms.locfileid: "44208176"
 |**Field**  |**説明**  |
 |---------|---------|
 |名前  <br/>   | ここで入力する名前は、次に示すページでユーザーに表示されます。  <br/>  サインイン ページ: ユーザーが勤務先または学校のメール アドレスでその他の Microsoft アカウントを設定した場合、サインイン ページに組織名が表示される可能性があります。これによって、ユーザーは 職場や学校のアカウント とその他のアカウントを区別できるようになるため、サインインするときにどちらのアカウントを使用するか識別できます。  <br/>  組織プロファイルのリンクとページ: 組織のプロファイルへのリンクには組織名が表示されます。  <br/>  Yammer ナビゲーション: Yammer では、左側のナビゲーションは、組織名をホーム Yammer ネットワークの名前として使用します。  <br/> OneDrive 同期クライアント: 組織名は、Windows のエクスプローラーと、[ファイル]、[OneDrive アクティビティセンター]、[onedrive cloud] アイコンのツールヒント、[OneDrive の設定] ウィンドウに表示されます。 現時点では、組織名を更新しても、構成されているクライアントに対しては更新されません。 <br/> MS Teams: Teams での組織の切り替え組織名を表示します。 <br/>  |
-|住所、市区町村、都道府県、郵便番号  <br/>     | ここで入力した住所は、請求書に表示されるものです。 [購入先: 請求書の販売先住所] は、自分のプロファイルページの [お客様の請求書について理解してください。 [Microsoft 365 for business の請求書について理解](../../commerce/billing-and-payments/understand-your-invoice2.md)してください。」を参照してください。  <br/>        |
+|住所、市区町村、都道府県、郵便番号  <br/>     | ここで入力した住所は、請求書に表示されるものです。 [購入先: 請求書の販売先住所] は、自分のプロファイルページの組織の住所と同じです (「Microsoft の請求[書または請求書](../../commerce/billing-and-payments/understand-your-invoice2.md)については、Microsoft 365 for business」を参照してください)。  <br/>        |
 |国または地域  <br/>    | これは、会社の本社が置かれている国または地域です。国または地域を選択すると、利用できるサービス、国または地域での税と請求通貨、および最寄りのデータ センターの場所が特定されます (「[ライセンスによる使用制限について](https://office.microsoft.com/redir/FX103037529)」を参照してください)。  <br/>注: 選択すると、国または地域を変更できなくなります。 選択を変更する場合は、サブスクリプションをキャンセルして、もう一度サインアップする必要があります。 このプロセスのヘルプについては、[サポートにお問い合わせ](../contact-support-for-business-products.md)ください。        |
 |電話  <br/>     | 会社の代表番号です。通常は、会社の本社の番号です。  <br/>        |
 |技術担当者の連絡先  <br/> |これは、Microsoft 365 サブスクリプションを管理する主要な技術担当者の電子メールアドレスです。 これは、Microsoft 365 サービスの状態に関する情報を受信するユーザーです。  <br/> |

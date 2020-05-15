@@ -1,5 +1,5 @@
 ---
-title: 請求書の内容を理解する
+title: 請求書または請求書を理解する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: Microsoft business 製品の請求書を読んで理解する方法について説明します。
+description: Microsoft business 製品の請求書または請求書を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211406"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232819"
 ---
-# <a name="understand-your-invoice"></a>請求書の内容を理解する
+# <a name="understand-your-bill-or-invoice"></a>請求書または請求書を理解する
 
 ::: moniker range="o365-21vianet"
 
@@ -36,7 +36,7 @@ ms.locfileid: "44211406"
 
 請求書には、お客様の請求書の概要と支払い方法が記載されています。 [オンライン請求書](#view-your-online-invoice)は、Microsoft 365 管理センターで確認できます。 また、電子メールで送信するために、ポータブルドキュメント形式 (.pdf) でダウンロードすることもできます。
 
-Microsoft 365 サブスクリプションのみを使用している場合は、「 [365 microsoft の請求書](understand-your-invoice2.md)について」を参照してください。
+Microsoft 365 サブスクリプションのみを使用している場合は、「 [microsoft の課金または請求書](understand-your-invoice2.md)について」を参照してください。 microsoft 365 for business。
 
 ## <a name="understand-the-invoice-header"></a>請求書ヘッダーについて
 

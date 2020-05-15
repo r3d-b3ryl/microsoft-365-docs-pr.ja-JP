@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221421"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231900"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -38,7 +38,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 
 [詳細な監査を使用して、侵害されたアカウントを調査する](mailitemsaccessed-forensics-investigations.md)(新)<br>フォレンジック調査のための新しい*Mailitemsaccessed* auditing アクションの使用に関する新しいガイダンスです。
 
-次のような複数の更新が[監査ログを検索](search-the-audit-log-in-security-and-compliance.md)します。
+[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)(更新)<br>変更内容には、次のものが含まれます。
 - 「監査レコード」に一覧表示されている「app@sharepoint」ユーザーの詳細を含む[新しいセクション](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。
 - 検疫アクティビティの[新しい説明](search-the-audit-log-in-security-and-compliance.md#quarantine-activities)。
 - [[ユーザー管理アクティビティ](search-the-audit-log-in-security-and-compliance.md#user-administration-activities)] セクションで、[ユーザーが自分のパスワードを変更したときにユーザーパスワードの変更イベントがトリガーされました (セルフサービスのパスワードのリセットを介して)、管理者がユーザーのパスワードをリセットしたときにユーザーパスワードのリセット] イベントが発生することを明示しています。
@@ -147,7 +147,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 ## <a name="february-2020"></a>2020 年 2 月
 
 > [!NOTE]
-> 前月に表示されていた記事は、更新、移動、または削除されている場合があります。 そのため、以下の詳細情報の一部が古くなっている可能性があり、リンクが壊れている可能性があります。
+> 前月に表示されていた記事が更新、移動、または削除された可能性があります。 そのため、以下の詳細情報の一部が古くなっている可能性があり、リンクが壊れている可能性があります。
 
 ### <a name="auditing"></a>監査
 

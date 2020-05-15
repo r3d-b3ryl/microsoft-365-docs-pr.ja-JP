@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Microsoft 365 メールボックスに配置できるさまざまな種類の保留リストを識別する方法について説明します。 これらの種類には、訴訟ホールド、電子情報開示の保留、Microsoft 365 のアイテム保持ポリシーなどがあります。 ユーザーが組織全体のアイテム保持ポリシーから除外されているかどうかを確認することもできます。
-ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 12d91d987af2ba11b2d9aa417dff92adb745fb03
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208668"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232072"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -41,7 +41,8 @@ Microsoft 365 は、組織がメールボックスの内容が完全に削除さ
     - **特定の場所保持ポリシー:** これらは、特定のユーザーのコンテンツの場所に割り当てられるポリシーです。 Exchange Online の PowerShell で、**メールボックスの取得**コマンドレットを使用して、特定のメールボックスに割り当てられているアイテム保持ポリシーに関する情報を取得します。
 
     - **組織全体のアイテム保持ポリシー:** これらは、組織内のすべてのコンテンツの場所に割り当てられるポリシーです。 組織全体のアイテム保持ポリシーについての情報を取得するには、Exchange Online の PowerShell で、" **get-help/** 組織全体の構成" コマンドレットを使用します。
-  詳細については、「 [Microsoft 365 の保持ポリシーの概要](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)」の「組織全体または特定の場所にアイテム保持ポリシーを適用する」を参照してください。
+    
+  詳細については、「[アイテム保持ポリシーを組織全体または特定の場所に適用する](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)」セクションを参照してください。
 
 - **[Microsoft 365 の保持ラベル](labels.md):** ユーザーが microsoft 365 の保持ラベル (コンテンツを保持するように構成されているか、コンテンツを保持した後にコンテンツを削除するように構成されている) をメールボックス内の*任意*のフォルダーまたはアイテムに適用すると、メールボックスが訴訟ホールドの対象となっているか、microsoft 365 アイテム保持ポリシー 詳細については、この記事の「[フォルダーまたはアイテムに保持ラベルが適用されているため、保留中のメールボックスを識別](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)する」を参照してください。
 
@@ -97,7 +98,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |Exchange メールボックス、Exchange パブリックフォルダー、およびチームチャットに適用される Microsoft 365 保持ポリシー    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Exchange メールボックス、Exchange パブリックフォルダー、および Microsoft Teams の1xN チャットに適用される組織全体のアイテム保持ポリシーは、プレフィックスで始まる Guid によって識別され `mbx` ます。 注: 1xN チャットは、個々のチャット参加者のメールボックスに格納されます。      |
 |Microsoft 365 のアイテム保持ポリシーを Microsoft 365 グループおよび Teams チャネルメッセージに適用する     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Microsoft 365 グループおよび Microsoft Teams のチャネルメッセージに適用される組織全体のアイテム保持ポリシーは、プレフィックスで始まる Guid によって識別され `grp` ます。 注チャネルメッセージは、Microsoft teams に関連付けられているグループメールボックスに格納されます。     |
 
-Microsoft Teams に適用される詳細なアイテム保持ポリシーについては、「[アイテム保持ポリシーの概要](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)」の「teams の場所」セクションを参照してください。
+Microsoft Teams に適用される詳細なアイテム保持ポリシーについては、「[アイテム保持ポリシーの概要](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)」の「teams の場所」セクションを参照してください。
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>保持ポリシーの InPlaceHolds 値の形式について
 
@@ -117,7 +118,7 @@ Microsoft 365 アイテム保持ポリシーとして InPlaceHolds プロパテ�
 |**2**    |    アイテム保持ポリシーがアイテムを保持するように構成されていることを示します。 保持期間が経過すると、ポリシーによってアイテムが削除されることはありません。     |
 |**3**     |   アイテム保持ポリシーがアイテムを保持するように構成されていて、保存期間が経過した後にアイテムを削除することを示します。      |
 
-保持アクションの詳細については、「[アイテム保持ポリシーの概要](retention-policies.md#retaining-content-for-a-specific-period-of-time)」の「特定の期間だけコンテンツを保持する」を参照してください。
+保持アクションの詳細については、「[アイテム保持ポリシーの概要](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)」の「特定の期間だけコンテンツを保持する」を参照してください。
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>手順 2: GUID を使用して保留リストを識別する
 

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Microsoft 365 for business のサブスクリプションについて、請求に関する主な質問に対する回答を確認できます。 '
-ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d5b705c8c283103c09dc13dd13b853ffb3b270b
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634994"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232807"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Microsoft 365 for business の請求に関する主な質問
 
@@ -40,13 +40,13 @@ ms.locfileid: "43634994"
   
 ::: moniker range="o365-worldwide"
 
-請求書に表示される請求金額を解釈するための支援が必要な場合、または使用する用語を理解するには、「[請求書を理解](understand-your-invoice2.md)する」を参照してください。
+請求書に表示される請求金額の解釈、または使用される用語についての理解が必要な場合は、「請求[書を理解](understand-your-invoice2.md)する」を参照してください。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-請求書に表示される請求金額を解釈するための支援が必要な場合、または使用する用語を理解するには、「[請求書を理解](understand-your-invoice2.md)する」を参照してください。
+請求書に表示される請求金額の解釈、または使用される用語についての理解が必要な場合は、「請求[書を理解](understand-your-invoice2.md)する」を参照してください。
 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ ms.locfileid: "43634994"
 
 はい。 請求明細書を電子メールの添付ファイルとして取得するには、次の手順を使用します。
   
-1. Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">課金通知</a>] ページに移動するか、 **[課金** \>の請求書の**通知**] を選択します。
+1. Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">課金通知</a>] ページに移動するか、 **[課金**の請求書の通知] を選択し \> **Billing notifications**ます。
 
 2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 
@@ -133,7 +133,7 @@ ms.locfileid: "43634994"
 
 はい。 請求明細書を電子メールの添付ファイルとして取得するには、次の手順を使用します。
   
-1. 管理センターで、**[課金情報]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。
 
 2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 

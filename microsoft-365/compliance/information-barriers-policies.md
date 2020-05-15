@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035043"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232055"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -72,7 +72,7 @@ ms.locfileid: "44035043"
 
 - アドレス帳ポリシーなし-情報バリアポリシーを定義して適用する前に、Exchange アドレス帳ポリシーが設定されていないことを確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2種類のポリシーは互換性がありません。 このようなポリシーがある場合は、最初に[アドレス帳ポリシーを削除](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)するようにしてください。 情報バリアポリシーが有効になっていて、階層型アドレス帳が有効になっている場合、情報バリアセグメントに含まれて***いない***すべてのユーザーに、Exchange online の[階層型アドレス帳](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)が表示されます。
 
-- PowerShell-現在、情報バリアポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ & コンプライアンスセンターで定義および管理されます。 この記事ではいくつかの例が示されていますが、PowerShell のコマンドレットとパラメーターについて理解しておく必要があります。 また、AzureRM モジュールも必要になります。
+- PowerShell-現在、情報バリアポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ & コンプライアンスセンターで定義および管理されます。 この記事ではいくつかの例が示されていますが、PowerShell のコマンドレットとパラメーターについて理解しておく必要があります。 Azure PowerShell モジュールも必要になります。
     - [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Azure PowerShell モジュールをインストールする](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -81,10 +81,10 @@ ms.locfileid: "44035043"
    1. 次の PowerShell コマンドレットを実行します。
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -213,13 +213,13 @@ ms.locfileid: "44035043"
 
     |構文  |例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    この例では、*製造*と呼ばれるセグメントに対して、*工場*という名前のポリシーを定義しています。 このポリシーを有効にして適用すると、*製造*者は*HR*というセグメントにあるユーザーとのみ通信できるようになります。 (この場合、*製造*は*人事*の一部ではないユーザーと通信できません)。         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    この例では、*製造*と呼ばれるセグメントに対して、*工場*という名前のポリシーを定義しています。 このポリシーを有効にして適用すると、*製造*者は*HR*というセグメントにあるユーザーとのみ通信できるようになります。 (この場合、*製造*は*人事*の一部ではないユーザーと通信できません)。         |
 
     **必要に応じて、次の例に示すように、このコマンドレットで複数のセグメントを指定できます。**
 
     |構文  |例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>この例では、*リサーチ*セグメントが*HR*と*製造*のみと通信できるようにするポリシーを定義しました。        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p>この例では、*リサーチ*セグメントが*HR*と*製造*のみと通信できるようにするポリシーを定義しました。        |
 
     特定のセグメントのみが特定の特定のセグメントと通信できるようにするために定義するポリシーごとに、この手順を繰り返します。
 
@@ -248,7 +248,7 @@ ms.locfileid: "44035043"
 
     文`Start-InformationBarrierPoliciesApplication`
 
-    システムがポリシー `Start-InformationBarrierPoliciesApplication`の適用を開始できるように、30分間実行した後。 システムは、ユーザーごとにポリシーユーザーを適用します。 一般に、システムでは、1時間あたり5000のユーザーアカウントに関する情報を処理します。
+    `Start-InformationBarrierPoliciesApplication`システムがポリシーの適用を開始できるように、30分間実行した後。 システムは、ユーザーごとにポリシーユーザーを適用します。 一般に、システムでは、1時間あたり5000のユーザーアカウントに関する情報を処理します。
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>ユーザーアカウント、セグメント、ポリシー、またはポリシーアプリケーションの状態を表示する
 
@@ -256,7 +256,7 @@ PowerShell を使用すると、次の表に示すように、ユーザーアカ
 
 |これを表示するには  |操作  |
 |---------|---------|
-|ユーザー アカウント     |Identity パラメーターを使用して**InformationBarrierRecipientStatus**コマンドレットを使用します。 <p>文`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p>例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。 <p>(1 人のユーザーに対してこのコマンドレットを`Get-InformationBarrierRecipientStatus -Identity <value>`使用することもできます。) <p>このコマンドレットは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。|
+|ユーザー アカウント     |Identity パラメーターを使用して**InformationBarrierRecipientStatus**コマンドレットを使用します。 <p>文`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>名前、エイリアス、識別名、標準ドメイン名、電子メールアドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p>例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>この例では、Office 365 の2つのユーザーアカウント ( *Megan*の場合は*Meガント b* 、 *Alex*の場合は*alexw* ) を参照しています。 <p>(1 人のユーザーに対してこのコマンドレットを使用することもできます。 `Get-InformationBarrierRecipientStatus -Identity <value>` ) <p>このコマンドレットは、属性値、適用されている情報バリアポリシーなど、ユーザーに関する情報を返します。|
 |多角形     |**コマンドレットを使用**します。<p>文`Get-OrganizationSegment` <p>これにより、組織に定義されているすべてのセグメントの一覧が表示されます。         |
 |情報バリアポリシー     |**InformationBarrierPolicy**コマンドレットを使用します。 <p> 文`Get-InformationBarrierPolicy` <p>これにより、定義された情報バリアポリシーの一覧とその状態が表示されます。       |
 |最新情報バリアポリシーアプリケーション     | **InformationBarrierPoliciesApplicationStatus**コマンドレットを使用します。 <p>文`Get-InformationBarrierPoliciesApplicationStatus`<p>    これにより、ポリシーの適用が完了したか、失敗したか、または進行中であるかに関する情報が表示されます。       |
@@ -321,7 +321,7 @@ Contoso 社では、次の表に示す3つのポリシーを定義していま�
 |---------|---------|
 |ポリシー 1: Sales がリサーチと通信できないようにする     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーを*Sales Research*と呼びます。 このポリシーがアクティブで適用されている場合は、営業部門のユーザーが Research セグメントのユーザーと通信できないようにするのに役立ちます。 これは一ウェイのポリシーです。研究からセールスへのコミュニケーションが妨げられることはありません。 そのためには、ポリシー2が必要です。      |
 |ポリシー 2: リサーチがセールスと通信できないようにする     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、情報バリアポリシーを*Research Sales*と呼びます。 このポリシーがアクティブで適用されている場合は、リサーチセグメントにあるユーザーが営業セグメント内のユーザーと通信できないようにするのに役立ちます。       |
-|ポリシー 3: 製造に HR と Marketing のみが通信できるようにする     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>この例では、情報バリアポリシーを*製造-HRMarketing*と呼びます。 このポリシーがアクティブで適用されている場合、製造は人事およびマーケティングとのみ通信できます。 人事およびマーケティングは、他のセグメントとの通信に制限されていないことに注意してください。 |
+|ポリシー 3: 製造に HR と Marketing のみが通信できるようにする     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>この例では、情報バリアポリシーを*製造-HRMarketing*と呼びます。 このポリシーがアクティブで適用されている場合、製造は人事およびマーケティングとのみ通信できます。 人事およびマーケティングは、他のセグメントとの通信に制限されていないことに注意してください。 |
 
 セグメントとポリシーが定義されているので、Contoso は**InformationBarrierPoliciesApplication**コマンドレットを実行してポリシーを適用します。 
 
