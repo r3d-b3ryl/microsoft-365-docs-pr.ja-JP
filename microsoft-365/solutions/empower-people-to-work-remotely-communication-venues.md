@@ -1,5 +1,5 @@
 ---
-title: '# 手順 5: 新型コロナ ウイルス感染症の危機の中、コミュニケーションの場を作る'
+title: '手順 5: 新型コロナ ウイルス感染症の危機の中、コミュニケーションの場を作る'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom: ''
 description: Microsoft 365 を使用して、新型コロナ ウイルス感染症に関する社内ニュースと公開ニュースについてコミュニケーションをとるさまざまな方法を作ります。
-ms.openlocfilehash: 189e0bde959ee8ad245b03cb5aca42ab6b19a0b3
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 686cfa12d76bf4122ebe4ae22a49da938322fee9
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003068"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160812"
 ---
 # <a name="step-5-create-covid-19-crisis-communication-venues"></a>手順 5: 新型コロナ ウイルス感染症の危機の中、コミュニケーションの場を作る
 
@@ -31,6 +32,8 @@ ms.locfileid: "44003068"
 - 公衆衛生とニュースを単一のポータルに統合
 - SharePoint Online のコミュニケーション サイト
 - Yammer コミュニティ
+
+![新型コロナ ウイルス感染症の危機に対応するためのコミュニケーションの場](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## <a name="employee-surveys"></a>従業員調査
 

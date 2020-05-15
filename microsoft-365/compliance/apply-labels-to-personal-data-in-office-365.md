@@ -16,13 +16,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: Office のラベルを GDPR 保護計画の一部として使用する方法について説明します。
-ms.openlocfilehash: 5ffcddaa183e64fe53c14d740025b7df30e9687a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Office のラベルを一般データ保護規則 (GDPR) 保護計画の一部として使用する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636285"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165260"
 ---
 # <a name="apply-labels-to-personal-data"></a>個人データにラベルを適用する
 
@@ -181,7 +182,7 @@ GDPR の対象となる個人データについては、環境に合わせて設
 <tr class="odd">
 <td align="left"><p>コンプライアンス チームのメンバーにアクセス許可を与えます。</p></td>
 <td align="left"><p>ラベルを作成するコンプライアンス チームのメンバーには、セキュリティ センターやコンプライアンス センターを使用するためのアクセス許可が必要です。セキュリティ センターまたはコンプライアンス センターの [アクセス許可] に移動し、コンプライアンス管理者グループのメンバーを変更します。</p>
-<p>「<a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">ユーザーにセキュリティ センターやコンプライアンス センターへのアクセス権を付与する</a>」を参照してください。</p></td>
+<p>「<a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">ユーザーにセキュリティ センターやコンプライアンス センターへのアクセス権を付与する</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>保持ラベルを作成します。</p></td>

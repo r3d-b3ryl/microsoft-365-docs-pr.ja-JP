@@ -18,13 +18,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: データ損失防止 (DLP) ポリシーを使用して、Microsoft 365 の個人データを保護する方法について説明します。
-ms.openlocfilehash: 54bfdd27f5c18d6c145b1e9f13c5e92c1b322048
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: コンプライアンス センターでデータ損失防止 (DLP) ポリシーを使用して、Office 365 の個人データを保護する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: eb6ae528e54f93fea26a20be35a6f5bfb33337d2
+ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634275"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44165230"
 ---
 # <a name="apply-protection-to-personal-data"></a>個人データに保護を適用する
 
@@ -44,7 +45,7 @@ DLP では、次のことができます。
 
 -   組織の DLP ポリシーと一致するコンテンツを示す DLP レポートを表示します。
 
-詳しくは、「[データ損失防止ポリシーの概要](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e)」を参照してください。
+詳しくは、「[データ損失防止ポリシーの概要](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)」を参照してください。
 
 ![データ損失防止ポリシーを作成するためのオプション](../media/Apply-protection-to-personal-data-in-Office-365-image1.png)
 
@@ -145,7 +146,7 @@ Microsoft 365 DLP を使用した情報の保護レベルの 1 つは、環境�
 <tr class="odd">
 <td align="left">コンテンツがポリシーの設定に一致する場合にユーザーに通知する</td>
 <td align="left"><p>このボックスをチェックします ([ユーザーにポリシー ヒントを表示して電子メール通知を送信する])。</p>
-<p>[ヒントとメールをカスタマイズする] をクリックし、環境に合わせてこれらを更新します。この記事の既定の通知 [<a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">メール通知を送信し、DLP ポリシーのポリシー ヒントを表示する</a>] を参照してください。</p></td>
+<p>[ヒントとメールをカスタマイズする] をクリックし、環境に合わせてこれらを更新します。この記事の既定の通知 [<a href="https://docs.microsoft.com/microsoft-365/compliance/use-notifications-and-policy-tips">メール通知を送信し、DLP ポリシーのポリシー ヒントを表示する</a>] を参照してください。</p></td>
 </tr>
 <tr class="even">
 <td align="left">特定の量の機密情報が同時に共有されている場合に検出します。</td>
@@ -251,9 +252,9 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 詳しくは、以下の資料を参照してください。
 
--   [SharePoint でのアクセス許可レベルについて](https://support.office.com/en-US/article/Understanding-permission-levels-in-SharePoint-87ecbb0e-6550-491a-8826-c075e4859848)
+-   [SharePoint でのアクセス許可レベルについて](https://docs.microsoft.com/sharepoint/understanding-permission-levels)
 
--   [SharePoint グループについて](https://support.office.com/en-US/article/Understanding-SharePoint-groups-94d9b261-161e-4ace-829e-eca1c8cd2eb8)
+-   [SharePoint グループについて](https://docs.microsoft.com/sharepoint/default-sharepoint-groups)
 
 ### <a name="external-sharing-policies-for-sharepoint-and-onedrive-for-business-libraries"></a>SharePoint と OneDrive for Business ライブラリに関する外部共有ポリシー
 
@@ -303,9 +304,9 @@ SharePoint のアクセス許可を使用して、サイトまたはそのコン
 
 詳しくは、以下の資料を参照してください。
 
--   [SharePoint Online 環境の外部共有を管理する](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)
+-   [SharePoint Online 環境の外部共有を管理する](https://docs.microsoft.com/sharepoint/external-sharing-overview)
 
--   [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/en-US/article/Share-sites-or-documents-with-people-outside-your-organization-80e49744-e30f-44db-8d51-16661b1d4232)
+-   [組織外部のユーザーとのサイトまたはドキュメントの共有](https://support.office.com/article/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c)
 
 ### <a name="site-level-device-access-policies"></a>サイトレベルのデバイス アクセス ポリシー
 
@@ -354,7 +355,7 @@ SharePoint と OneDrive for Business のデバイス アクセス ポリシー�
 </tbody>
 </table>
 
-詳細: [SharePoint Online 管理センター: 非管理対象デバイスからのアクセスをコントロールします](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&rs=en-US&ad=US)。
+詳細: [SharePoint Online 管理センター: 非管理対象デバイスからのアクセスをコントロールします](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="service-access-protection-for-identities-and-devices"></a>ID とデバイスのサービス アクセスの保護
 

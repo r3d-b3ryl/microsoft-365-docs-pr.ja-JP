@@ -1,5 +1,5 @@
 ---
-title: 4. リモートワーカーの生産性向上アプリとサービスを展開する
+title: 手順 4. リモートワーカー向けの生産性向上アプリとサービスを展開する
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,72 +14,74 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
-description: Teams、Exchange、SharePoint、その他の Microsoft 365 のサービスでユーザーの生産性を向上します。
-ms.openlocfilehash: dddc3cac8a6cb955e8a337eed07279ba75c029aa
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: ''
+description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
+ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003198"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160740"
 ---
-# <a name="4-deploy-remote-worker-productivity-apps-and-services"></a>4. リモートワーカーの生産性向上アプリとサービスを展開する
+# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>手順 4. リモートワーカー向けの生産性向上アプリとサービスを展開する
 
-生産性を高めるには、コミュニケーションとコラボレーションが大切です。 会議、音声、テキストでのチャット、新しいコンテンツの作成、情報やファイルの共有、メールのやりとり、予定表とタスクの管理を行う必要があります。 Microsoft 365では、次のような主要な機能のすべてにクラウドベースのサービスが用意されています。
+生産性を高めるには、リモートワーカー間のコミュニケーションとコラボレーションが重要です。 会議、音声やテキストでのチャット、新しいコンテンツの作成と情報やファイルの共有、メールのやりとり、予定表やタスクの管理を行う必要があります。 Microsoft 365 は、次の主要な機能すべてをクラウドベースのサービスで実現します。
 
-- 離れて仕事をしていてもつながりを持つためには、Microsoft Teams を使用します。Microsoft Teams は、組織、部署、および小規模なチームや個人のために、会議、チャット、ファイルストレージの共通のコミュニケーション ハブを提供します。 
-- メールのやりとり、予定表、連絡先、タスクを管理したりするには、Exchange Online と Outlook クライアントを使用します。
-- ファイルの保存や共同作業には、SharePoint とOneDrive を使用します。 これらはWeb ブラウザーや Teams内で使用できます。
-- 新しいコンテンツを作成したり、既存のコンテンツに対して共同作業を行うために、Microsoft 365 アプリは、ローカル コンピューターにインストールされているバージョンの Word、PowerPoint、Excel、Outlook で、継続的な機能とセキュリティ更新プログラムを受け取ります。
+- 離れて作業をしながら密接な連携を維持するには、Microsoft Teams を使用します。Microsoft Teams は、組織、部署、小規模なチームや個人のユーザーに対して、会議、チャット、ファイル ストレージに必要なコミュニケーションの共通のハブを提供します。 
+- メールのやりとりや、予定表、連絡先、タスクの管理には、Exchange Online と Outlook クライアントを使用します。
+- ファイルを保存し、共同で作業するには、SharePoint とOneDrive を使用します。 これらは Web ブラウザーや Teams 内で使用できます。
+- 新しいコンテンツの作成や、既存のコンテンツに対する共同作業を行うため、Microsoft 365 アプリは、ローカル コンピューターにインストールされているバージョンの Word、PowerPoint、Excel、Outlook で、機能とセキュリティに関する更新プログラムを継続的に受け取ります。
 
-## <a name="keep-people-connected-with-microsoft-teams"></a>Microsoft Teams を使用してつながり続ける
+![Teams、Outlook、SharePoint、OneDrive、Microsoft 365 アプリを使用して生産性を維持する](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 
-Teams を使うことで、チャット、会議、通話、共同作業をすべて1つの場所で行えます。 チームワークのリモートワークに必要なものがすべてまとまったハブとなっているため、何百万人ものユーザーが毎日 Teams で仕事をこなしています。 
+## <a name="keep-people-connected-with-microsoft-teams"></a>Microsoft Teams を使用して密接な連携を維持する
 
-Teamsを使用してリモートワーカーをサポートする方法については、[この記事](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) を参照ください。 
+Teams を使うことで、チャット、会議、通話、共同作業をすべて 1 つの場所で行えます。 何百万人ものユーザーが毎日 Teams で仕事をこなしています。Teams には、リモート ワークに必要なすべてのものが、チームワーク用のハブにまとめられているのです。 
+
+Teams を使用してリモート ワーカーをサポートする方法については、[こちらの記事](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)をご覧ください。 
 
 ### <a name="chat-and-conversations"></a>チャットと会話
 
-チャットとスレッド会話は、Teams の中核的な役割で、1 対 1 のチャットとグループのチャットや会話をサポートしています。 リモート ワーカーは、グループのチャットや 1 対 1 のメッセージで、GIF、ステッカー、絵文字を使用して情報、意見、自分らしさを共有できます。
+チャットとスレッド形式の会話は、Teams の中核的な機能で、1 対 1 のチャットに加え、グループでのチャットや会話もサポートしています。 リモート ワーカーは、グループ チャットや 1 対 1 のメッセージで、GIF、ステッカー、絵文字を使用して情報、意見、自分らしさを共有できます。
 
 ### <a name="meetings-and-conferencing"></a>ミーティングと会議 
 
-Teams は、リモートワーカーとコミュニケーションと情報共有を確実に維持できるようになります。特に、Teams では最大250人が参加できる会議を開催することもできます。 Teams 会議を使用すると、組織の内外の人との対話的な共同会議を行うことができます。 リモートワーカーは、定期的なプロジェクトのチェックポイント、同僚との意見交換、ブレーンストーミング セッション、顧客との会話のファシリテートなど、日常業務のためのTeams 会議を利用できます。 
+Teams は、リモート ワーカーとのコミュニケーションや情報共有に非常に役立ちます。特に、Teams では最大 250 人が参加できる会議を開催することもできます。 Teams 会議を使用すると、組織の内外の人との対話的な共同会議を行うことができます。 リモート ワーカーは、プロジェクトの定期チェックポイント、同僚との意見交換、ブレーンストーミング セッション、顧客との会話促進など、さまざまな日常業務で Teams 会議を利用できます。 
 
 ### <a name="calling"></a>通話
 
-Teamsは、フェデレーションを使用して、ユーザーと他の組織との間の直接の VoIP 通話をサポートします。 この機能では、会議と同じコーデックが使用されます。また、PSTN 課金なしで、世界中に素晴らしいオーディオを提供します。 ただし、リモートで作業している場合、外線通話を受けるために一部のユーザーは専用の電話番号が必要になることがあります。 Teams は、外線通話が必要なユーザーが電話をかけたり受けたりするためのクラウド電話サービスを迅速に提供できます。
+Teams では、フェデレーションを使用して、ユーザー間だけでなく、他の組織との間の直接の VoIP 通話もサポートします。 この機能では、会議と同じコーデックが使用されます。また、PSTN 課金なしで、世界中に高品質の音声を提供します。 ただし、リモートで作業している場合、ユーザーによっては外線通話を受けるために専用の電話番号が必要になる場合があります。 Teams は、外線通話が必要なユーザーが電話をかけたり受けたりするためのクラウド電話サービスを迅速に提供できます。
 
 ### <a name="apps-and-workflows"></a>アプリとワークフロー
 
-デスクトップ、Web、モバイルバージョンのTeams からアクセスできるアプリやワークフローのプラットフォームを提供しています。 Teams には、Microsoft とサード パーティが公開する数百のアプリがあり、ユーザー参加の促進、生産性のサポート、および一般に使用されるビジネス サービスの Teams への統合のために使用できます。 ユーザーと管理者は、低コードの Power App および Power online の開発ツールを使用して、 Teams にカスタムアプリや自動ワークフローを作成することもできます。
+Teams は、デスクトップ、Web、モバイル バージョンの Teams からアクセスできるアプリやワークフローのプラットフォームを提供します。 Teams には、Microsoft やサード パーティが公開しているアプリが何百個も用意されており、ユーザー参加の促進、生産性のサポート、よく使用されるビジネス サービスの Teams への統合に使用できます。 ユーザーと管理者は、ローコードの Power Apps および Power Automate 開発ツールを使用して、Teams 用のカスタム アプリや自動ワークフローを作成することもできます。
 
-アプリやワークフローを使用すると、重要な情報を収集して共有、反復するタスクを自動化、対話型の bot とのチャットを行うことができるので、Teams はリモートワーカーの生産性を高めることができます。 アプリをチャネルまたはTeams アプリバーに固定することは、ユーザーがこれらのアプリを関連性のある領域で簡単にアクセスできるようにするための優れた方法です。管理者はアプリを固定して、すべてのユーザーが使用するべきアプリの認知と採用を促進します。
+アプリやワークフローを使用すると、重要な情報の収集と共有、繰り返し実行するタスクの自動化、対話型ボットとのチャットが可能になるため、リモート ワーカーの Teams での生産性をさらに高めることができます。 アプリをチャネルまたは Teams アプリ バーにピン留めすることは、ユーザーがこれらのアプリを関連性のある領域で簡単にアクセスできるようにするための優れた方法です。また、管理者はアプリをピン留めすることにより、すべてのユーザーが使用する必要のあるアプリの認知と採用を促進することができます。
 
-## <a name="exchange-email-and-manage-calendars-contacts-and-tasks-with-exchange-online-and-outlook"></a>メールをやりとりして、Exchange Online と Outlook で、予定表、連絡先、タスクを管理する
+## <a name="exchange-email-and-manage-calendars-contacts-and-tasks-with-exchange-online-and-outlook"></a>Exchange Online と Outlook を使用した、メール交換、および予定表、連絡先、タスクの管理
 
-Outlook では、リモートワーカーは、メール、予定表、連絡先、タスクなどを1つの場所で一元的に管理ができるので、組織のつながりを保つことができます。 Outlook では、ユーザーに関連する内容に基づいて、その日の進捗状況を把握して優先順位を付けます。 Outlook では、添付ファイルを OneDrive から直接共有したり、Teams会議を計画して参加したり、予定表を表示して共有したり、他のユーザーに代理人アクセス許可を提供したりできます。 仕事と個人的なコミットメントの両方で、次に何が起こるのか、何に注意が必要なのかを知っておくと、リモートワーカーが重要な作業に集中できるようになります。 Outlook では、リモートワーカーが時間を管理し、ファイル、組織内のユーザーなど、簡単に必要な情報を見つけるための便利な方法が用意されています。 
+リモート ワーカーは、Outlook を使用することにより、メール、予定表、連絡先、タスクなどにいつでもアクセスでき、自分の予定を一元的に管理することができます。 Outlook は、ユーザーが自分に関連する内容を基に、予定どおり作業を遂行したり、1 日の作業に優先順位を付けたりするのに役立ちます。 Outlook を使用すると、添付ファイルを OneDrive から直接共有したり、Teams 会議を計画して参加したり、予定表を表示して共有したり、他のユーザーに代理アクセス権を提供したりできます。 リモート ワーカーは、仕事上の責任と個人的な責任の両方について、次の予定を知り、何に注意が必要かを把握することにより、重要な問題に注意を集中できるようになります。 Outlook は、リモート ワーカーが自分の時間を管理をしたり、ファイルや組織内の人物など、必要な情報を簡単に見つけたりするのに役立ちます。 
 
-## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>SharePoint Online および OneDrive でファイルを保存して共同作業する
+## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>SharePoint Online と OneDrive を使用した、ファイルの保存と共同作業
 
-リモートワーカーは、コンテンツの共同作業のために SharePoint Online と OneDrive フォルダーをクラウド内の中心的な場所として使用して、ファイルの保存と共有、共同編集、コミュニケーション、共同作業を行うことができます。 リモートワーカーは、Web ブラウザー、Teams、Office アプリからでもどこからでも安全に作業を行うことができます。
+リモート ワーカーは、コンテンツの共同作業のために SharePoint Online と OneDrive フォルダーをクラウド内の中心的な場所として使用して、ファイルの保存と共有、共同編集、コミュニケーション、共同作業を行うことができます。 リモート ワーカーは、Web ブラウザー、Teams、Office アプリのどこからでも安全に作業を行うことができます。
 
-## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Microsoft 365 アプリを使ってコンテンツを作成して共同作業する
+## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Microsoft 365 アプリを使用した、コンテンツの作成と共同作業
 
-Microsoft 365 アプリは、従業員がいつでもどこからでもシームレスに共同作業できる、エンタープライズ向けの最も生産的かつ安全な Office の環境です。 リモートワーカーは、同時に複数のユーザーがいるドキュメントで共同作業を行ったり、リアルタイムでの編集や変更を確認したり、ノート PC、PC、モバイルデバイスで他のユーザーと共有編集したりできます。
+Microsoft 365 アプリは、従業員がいつでもどこからでもシームレスに共同作業できる、エンタープライズ向けの最も生産的かつ安全な Office 環境です。 リモート ワーカーは、1 つのドキュメントに対して複数のユーザーと同時に共同作業したり、リアル タイムで編集や変更を確認したり、ノート PC、PC、モバイル デバイスで他のユーザーと共有編集したりできます。
 
-## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>生産性向上のためのアプリとサービス向けの管理者技術リソース
+## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>生産性向上アプリとサービスに関する管理技術リソース
 
 - [Microsoft Teams を使用してリモート ワーカーをサポートする](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
 - [Teams Customer Success Kit のダウンロード](https://www.microsoft.com/download/details.aspx?id=54244)
-- [Teamsを推進するためのツール](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
+- [導入を推進するためのツール](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Microsoft Teams の変更管理戦略を作成する](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
-- [3 層の保護を使ったチーム](configure-teams-three-tiers-protection.md)
+- [3 層の保護を使ってチームを構成する](configure-teams-three-tiers-protection.md)
 
 - [Office と Office 365 についてユーザーをトレーニングする](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
-- [Web 用 Officeを使用](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
+- [Web 用 Office を使用](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>次の手順
 
-[手順 5](empower-people-to-work-remotely-communication-venues.md)を続行して、新型コロナ ウイルス感染症の危機の中、固有の要件に対応できる追加のコミュニケーションの場を作成します。
+[手順 5](empower-people-to-work-remotely-communication-venues.md) を続行して、新型コロナ ウイルス感染症の危機の中、固有の要件に対応できる追加のコミュニケーションの場を作成します。
