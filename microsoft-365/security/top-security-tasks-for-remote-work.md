@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。
-ms.openlocfilehash: abc75a7c7a8b771e5b15fb3c4f0aeb2125be4684
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 1b21c59e95eccced66a7b64ec7c67354de53e59d
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155423"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267181"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -37,11 +37,11 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
   
 ||**タスク**| すべての Office 365 Enterprise プラン|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
-|1-d      |[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|pbm-2     | [脅威からの保護](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
-|1/3      |  [Office 365 Advanced Threat Protection を構成する](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
+|1       |[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|2      | [脅威からの保護](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|3       |  [Office 365 Advanced Threat Protection を構成する](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4       | [Azure Advanced Threat Protection (ATP) を構成する](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
-|5      |   [Microsoft Advanced Threat Protection を有効にする](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
+|5      |   [Microsoft Threat Protection を有効にする](#5-turn-on-microsoft-threat-protection)  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |6       | [電話とタブレットの Intune モバイルアプリ保護を構成する](#6-configure-intune-mobile-app-protection-for-phones-and-tablets) |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |7      | [Intune アプリ保護を含むゲストの MFA および条件付きアクセスを構成する](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)  |    |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
 |8       |  [Pc をデバイス管理に登録し、準拠している Pc を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)   |  | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)        | 
@@ -65,11 +65,11 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 これらのポリシーを適用すると、数分で完了しますが、今後数日間にわたってユーザーをサポートする準備ができます。  
 
 
-|計画  |推奨事項  |
+|プラン  |推奨事項  |
 |---------|---------|
-|Microsoft 365 プラン (Azure AD P1 または P2 なし)     |[AZURE AD でセキュリティの既定値を有効に](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)します。 Azure AD のセキュリティの既定では、ユーザーと管理者に MFA が含まれています。   |
-|Microsoft 365 E3 (Azure AD P1 を使用)     | [一般的な条件付きアクセスポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を必須にする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (Azure AD P2 を使用)     | Azure AD Id 保護の利点を活用して、次の2つのポリシーを作成して、Microsoft の[推奨される条件付きアクセスポリシーと関連するポリシーセットの](../enterprise/identity-access-policies.md)実装を開始します。<br> - [サインインリスクが中または高の場合は MFA を必須にする](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [モダン認証をサポートしていないクライアントをブロックする](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [リスクの高いユーザーがパスワードを変更する必要がある](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 プラン (Azure AD P1 または P2 なし)     |[Azure AD でセキュリティの既定値を有効にします](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。   |
+|Microsoft 365 E3 (Azure AD P1 を使用)     | [一般的な条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (Azure AD P2 を使用)     | Azure AD Identity Protection を利用して、次の 2 つのポリシーを作成して、Microsoft の[条件付きアクセスと関連ポリシーの推奨されるセット](../enterprise/identity-access-policies.md)の実装を開始します。<br> - [サインインのリスクが中、または高のときに MFA を要求する](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [先進認証をサポートしないクライアントはブロックする](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高リスク ユーザーはパスワードを変更する必要がある](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
@@ -114,7 +114,7 @@ Office 365 ATP:
 - [ビデオを見る: AZURE ATP の概要](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - [AZURE ATP 展開の3つのフェーズ](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)を確認する
 
-## <a name="5-turn-on-microsoft-advanced-threat-protection"></a>5: Microsoft Advanced Threat Protection を有効にする
+## <a name="5-turn-on-microsoft-threat-protection"></a>5: Microsoft の脅威保護を有効にする
 
 Office 365 ATP と Azure ATP が構成されたので、これらの機能の組み合わせた信号を1つのダッシュボードで表示できます。 [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) により、アラート、インシデント、自動化された調査と応答、およびワークロード全体にわたる高度な検索が実現されます (Azure ATP、OFFICE 365 Atp、MICROSOFT Defender ATP、および Microsoft Cloud App Security) は、 [security.microsoft.com](https://security.microsoft.com)の単一のウィンドウに表示されます。 
 <br>
@@ -236,13 +236,13 @@ Microsoft 365 には、組織内のユーザーに通知するための以下の
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: 脅威を監視し、処理を実行する
 
-Microsoft 365 には、状態を監視し、適切な操作を実行するいくつかの方法が含まれています。 最善の出発点は、Microsoft 365 セキュリティセンター ([https://security.microsoft.com](https://security.microsoft.com)) です。ここでは、組織の[microsoft セキュリティスコア](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)と、注意を要するアラートまたはエンティティを表示することができます。
+Microsoft 365 には、状態を監視し、適切な操作を実行するいくつかの方法が含まれています。 最善の出発点は、Microsoft 365 セキュリティセンター ( [https://security.microsoft.com](https://security.microsoft.com) ) です。ここでは、組織の[Microsoft セキュリティスコア](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score?view=o365-worldwide)と、注意を要するアラートまたはエンティティを表示することができます。
 
 - [Microsoft 365 セキュリティセンターの使用を開始する](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center?view=o365-worldwide)
 - [レポートを監視し、表示する](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting?view=o365-worldwide)
 - [Microsoft 365 のセキュリティポータルを参照してください。](https://docs.microsoft.com/microsoft-365/security/mtp/portals)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 おめでとうございます! 最も重要なセキュリティ保護の一部を迅速に実装し、組織のセキュリティをさらに強化しています。 これで、脅威保護機能 (Microsoft Defender Advanced Threat Protection を含む)、データ分類と保護機能、および管理アカウントの保護をさらに進める準備ができました。 Microsoft 365 のセキュリティに関する推奨事項の詳細については、「 [microsoft 365 security For Business 意思決定者 (bdm)](Microsoft-365-security-for-bdm.md)」を参照してください。 
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: 管理センターでカスタムのヘルプデスクカードを作成し、カスタマイズされたサポート連絡先情報を [ヘルプ] ウィンドウに追加します。
-ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627898"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262273"
 ---
 # <a name="add-customized-help-desk-info-to-the-help-pane"></a>カスタマイズしたヘルプデスク情報を [ヘルプ] ウィンドウに追加する
 
@@ -40,7 +40,7 @@ ms.locfileid: "43627898"
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>管理センターでカスタムのヘルプデスクカードを作成する
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. 管理センターで、**設定** > の**設定**に移動して、[**ヘルプデスク情報**] タブを選択します。
+1. 管理センターで、[設定] [ **Settings**  >  **組織設定**] に移動し、[**ヘルプデスク情報**] タブを選択します。
     
 2. [**組織プロファイル**] タブで、[**カスタムアプリ起動ツールタイル**] を選択します。
   

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Microsoft 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
-ms.openlocfilehash: cfde26e2b7f6d74a59b7431091fbc3c2f6049ec6
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022122"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262331"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織の Microsoft 365 テーマをカスタマイズする
 
@@ -34,7 +34,7 @@ Microsoft 365 管理センターでテーマをカスタマイズする方法に
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>管理センターでテーマをカスタマイズする
 
-1. 管理センターで、[**設定** \> ]**設定**に移動し、[**組織プロファイル**] タブを選択します。
+1. 管理センターで、[**設定**] [組織設定] に移動し、 \> **Org Settings**[**組織プロファイル**] タブを選択します。
 
 2. [**組織プロファイル**] タブで、[**カスタムテーマ**] を選択します。
 

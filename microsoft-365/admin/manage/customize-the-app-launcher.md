@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'カスタムタイルをアプリ起動ツールに追加することによって、電子メール、ドキュメント、アプリ、SharePoint サイト、外部サイト、その他のリソースへのクイックリンクを作成します。 '
-ms.openlocfilehash: 2c0a1cbd2f7c605bc03a55787266c7a627f8e329
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f099eabef7a22e9ebd8f20b23ccd3d8da142f07f
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139723"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262365"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
@@ -44,7 +44,7 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
-1. 管理センターで、[**設定** > ] の**設定**に移動し、[**組織プロファイル**] タブを選択します。
+1. 管理センターで、[設定] [ **Settings**  >  **組織設定**] の順に移動し、[**組織プロファイル**] タブを選択します。
     
 2. [**組織プロファイル**] タブで、[**カスタムアプリ起動ツールタイル**] を選択します。
   
@@ -76,15 +76,15 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. 管理センターで、[**設定** > の**設定** > ] [<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">組織プロファイル</a>] タブに移動します。
+1. 管理センターで、[**設定**  >  **Org Settings**  >  ] [組織設定] [**組織プロファイル** </a> ] タブに移動します。
     
 2. [**組織プロファイル**] ページで、[**組織のカスタムタイルの追加**] の横にある [**編集**] を選択します。
 
 3. カスタム タイルの **タイル名**、 **URL**、 **説明**、 **画像 URL** を更新します。( [カスタム タイルをアプリ起動ツールに追加する](#add-a-custom-tile-to-the-app-launcher)参照)。
     
-4. [**更新プログラム** \>の**クローズ**] を選択します。 
+4. [**更新プログラム**のクローズ] を選択し \> **Close**ます。 
     
-カスタムタイルを削除するには、**カスタム**タイルウィンドウでタイルを選択し、[**タイル** > の**削除**を削除] を選択します。 
+カスタムタイルを削除するには、**カスタム**タイルウィンドウでタイルを選択し、[**タイル**の削除を削除] を選択し  >  **Delete**ます。 
   
 ## <a name="whats-next"></a>次の手順
 

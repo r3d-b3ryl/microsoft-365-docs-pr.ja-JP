@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036586"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267169"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -35,6 +35,10 @@ ms.locfileid: "44036586"
 > [!TIP]
 > Office 365 ATP をまだ持っていませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
 
+## <a name="marchapril-2020"></a>2020年3月/4 月
+
+- [自動調査と応答を使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。
+
 ## <a name="januaryfebruary-2020"></a>2020年1月/年2月
 
 - [Office 365 ATP のキャンペーンビューの一般的な利用可能性](campaigns.md)
@@ -46,7 +50,7 @@ ms.locfileid: "44036586"
     - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
     - 詳細な時間フィルター (日、時間、半時間) 
 
-- **インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威管理** > の**レビュー**] に移動します。)
+- **インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威の管理**  >  ] に移動します。**レビュー**)
 
 - [Microsoft 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(プレビュー)**
 

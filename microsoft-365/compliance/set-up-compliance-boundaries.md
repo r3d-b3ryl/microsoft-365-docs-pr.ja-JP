@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する、組織内の論理的な境界を作成します。 コンプライアンス境界では、検索アクセス許可フィルター (コンプライアンスセキュリティフィルターとも呼ばれます) を使用して、特定のユーザーが検索できるメールボックス、SharePoint サイト、および OneDrive アカウントを制御します。
-ms.openlocfilehash: 6bad8aaba9b9905966797c21abe211850bf805a3
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231850"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262570"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -75,19 +75,20 @@ ms.locfileid: "44231850"
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>手順 2: Microsoft サポートによる要求をファイル化して、ユーザー属性を OneDrive アカウントに同期させる
 
-次の手順では、Microsoft サポートに要求をファイルして、手順1で選択した Azure Active Directory 属性と組織内のすべての OneDrive アカウントを同期させます。 この同期が行われると、手順1で選択した属性 (およびその値) は、SharePoint の非表示の管理プロパティにマップされ `ComplianceAttribute` ます。 この属性を使用して、手順4で OneDrive の検索アクセス許可フィルターを作成します。
+次の手順では、Microsoft サポートに要求をファイルして、手順1で選択した Azure Active Directory 属性と組織内のすべての OneDrive アカウントを同期させます。 この同期が行われると、手順1で選択した属性 (およびその値) がという名前の非表示の管理プロパティにマップされ `ComplianceAttribute` ます。 この属性を使用して、手順4で OneDrive の検索アクセス許可フィルターを作成します。
   
 Microsoft サポートに要求を送信するときに、次の情報を含めます。
   
 - 組織の既定のドメイン名
-    
+
 - Azure Active Directory 属性の名前 (手順1から)
-    
+
 - サポート要求の目的に関する次のタイトルまたは説明: "コンプライアンスセキュリティフィルターのために Azure Active Directory との OneDrive for Business の同期を有効にする"。 これにより、要求を実装する電子情報開示エンジニアリングチームに、要求をルーティングすることができます。
-    
+
 エンジニアリングの変更が行われ、属性が OneDrive に同期されると、Microsoft Support は変更が行われたビルド番号と推定展開日を送信します。 通常、展開プロセスには、サポート要求を送信した後、4 ~ 6 週間かかります。
   
- **重要:** 変更を展開する前に、手順3から手順5までを完了できます。 ただし、コンテンツ検索を実行しても、検索アクセス許可フィルターで指定された OneDrive サイトからのドキュメントは、変更が展開されるまで返されません。 
+> [!IMPORTANT]
+> この属性の変更を展開する前に、手順3から手順5までを完了できます。 ただし、コンテンツ検索を実行しても、検索アクセス許可フィルターで指定された OneDrive サイトからのドキュメントは、変更が展開されるまで返されません。
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>手順 3: 各エージェンシーの役割グループを作成する
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214501"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254180"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-クラウド (G-クラウド)
 
@@ -44,13 +44,13 @@ Azure セキュリティおよびコンプライアンスブループリント�
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power オートメーション (旧称 Microsoft Flow) クラウドサービスをスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
 - Office 365: Exchange Online、SharePoint Online、Skype for Business Online
-- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -107,11 +107,11 @@ UK データセンターに加えて、Microsoft クラウドサービスには�
 
 [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) では、中立的な監査によるコンプライアンス レポートを提供しています。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft の結果と法的および規制要件を比較できるようにすることができます。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - [Microsoft Azure を使用する英国政府共通の14のクラウドセキュリティ原則に対処するための効果的なコンプライアンス統制](https://aka.ms/complianceuk)
 - [英国政府機関向けクラウド戦略](https://aka.ms/UK_govt_cloud_strategy)
 - [G-クラウドセキュリティの原則](https://aka.ms/UK-G-Cloud)
 - [デジタルマーケットプレース](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

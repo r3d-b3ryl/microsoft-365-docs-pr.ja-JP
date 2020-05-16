@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品および機能の更新プログラムのリリースオプションをセットアップする方法について説明します。
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249886"
+ms.locfileid: "44262319"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準または対象指定リリースオプションを設定する
 
@@ -99,7 +99,7 @@ Microsoft 365 では、数年ごとに費用のかかる更新プログラムを
 > [!IMPORTANT]
 > 以下の変更が Microsoft 365 で有効になるまで、最大24時間かかる場合があります。 対象指定リリースをいったん有効にした後に無効にすると、予定された標準リリースにまだ到達していない機能にアクセスできなくなる可能性があります。 
   
-1. 管理センターで、[**設定**]  >  **設定**に移動し、[**組織プロファイル**] タブの [**リリース環境設定**] を選択します。
+1. 管理センターで、[**設定**] [組織  >  **設定**] に移動し、[**組織プロファイル**] タブの [**リリース環境設定**] を選択します。
 
 5. 対象指定リリースを無効にするには、[ **Standard release**] を選択し、[**変更の保存**] を選択します。 
     
