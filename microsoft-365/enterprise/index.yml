@@ -13,12 +13,12 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: f954a03e23d354eb52e5dc112f1ebc1d804ca350
-  ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+  ms.openlocfilehash: 31685a610f6560296dc72b7624f81a5927d56ec2
+  ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/04/2020
-  ms.locfileid: "44011175"
+  ms.lasthandoff: 05/16/2020
+  ms.locfileid: "44268259"
 highlightedContent:
   items:
   - title: Microsoft 365 for enterprise の詳細
@@ -44,7 +44,7 @@ conceptualContent:
       text: 基盤インフラストラクチャ
     - url: deploy-workloads.md
       itemType: how-to-guide
-      text: ワークロードとシナリオ
+      text: ワークロード
     - url: desktop-deployment-center-home.md
       itemType: get-started
       text: 最新デスクトップ展開センター
@@ -62,20 +62,6 @@ conceptualContent:
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: 主要なシナリオを展開
-    links:
-    - url: secure-teams-highly-regulated-data-scenario.md
-      itemType: how-to-guide
-      text: 厳しく規制されたデータに対応した Microsoft Teams
-    - url: teams-sharepoint-online-sites-highly-regulated-data.md
-      itemType: how-to-guide
-      text: 厳しく規制されたデータ用の SharePoint サイト
-    - url: empower-people-to-work-remotely.md
-      itemType: how-to-guide
-      text: リモート ワーカー
-    - url: migration-microsoft-365-enterprise-workload.md
-      itemType: deploy
-      text: Office クライアントとサーバー、および Windows の移行
   - title: Microsoft 365 for enterprise を管理する
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
