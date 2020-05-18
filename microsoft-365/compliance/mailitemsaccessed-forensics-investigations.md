@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: MailItemsAccessed メールボックス監査アクションを使用して、侵害されたユーザー アカウントのフォレンシック調査を実行します。
-ms.openlocfilehash: 1fdedb983715ca9037a072a224abfae03cab3157
-ms.sourcegitcommit: 9d6f9fd271e83c00e92a5e0247fcc51fc2070c3c
+ms.openlocfilehash: 20c57f1d11af8fded15cc2fdf280414f7172ffd7
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42370772"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262580"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>高度な監査を使用して、侵害されたアカウントを調査する
 
@@ -95,7 +95,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    **統合監査ログ**
  
    ```powershell
-   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '\*"IsThrottled","Value":"True"\*'} | FL
+   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"IsThrottled","Value":"True"*'} | FL
    ```
 
    **メールボックス監査ログ**
@@ -111,7 +111,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    **統合監査ログ**
 
    ```powershell
-   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '\*"MailAccessType","Value":"Sync"\*'} | FL
+   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 02/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Sync"*'} | FL
    ```
 
    **メールボックス監査ログ**
@@ -139,7 +139,7 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
    **統合監査ログ**
 
    ```powershell
-   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '\*"MailAccessType","Value":"Bind"\*'} | FL
+   Search-UnifiedAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -UserIds <user1,user2> -Operations MailItemsAccessed -ResultSize 1000 | Where {$_.AuditData -like '*"MailAccessType","Value":"Bind"*'} | FL
    ```
  
    **メールボックス監査ログ**

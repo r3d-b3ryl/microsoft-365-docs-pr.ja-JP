@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の情報保護インフラストラクチャの展開手順。
-ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d6e3501e8262a0c3245c6e13da6633ac465276fb
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631623"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268305"
 ---
 # <a name="phase-6-information-protection"></a>フェーズ 6: 情報保護
 
 ![フェーズ 6: 情報保護](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-情報保護は、機密情報を送信、保存、処理する方法を定義するポリシーとテクノロジの集合です。フェーズ 6 では、クラウドベースのワークロードとシナリオのデータの保護に役立つ Microsoft 365 Enterprise の情報保護の設定と機能について、順を追って説明します。
+情報保護は、機密情報を送信、保存、処理する方法を定義するポリシーとテクノロジの集合です。フェーズ 6 では、クラウドベースのワークロードのデータの保護に役立つ Microsoft 365 Enterprise の情報保護の設定と機能について、順を追って説明します。
 
 >[!Note]
 >既に情報保護を展開している場合は、このフェーズの[終了条件](infoprotect-exit-criteria.md)を参照し、Microsoft 365 Enterprise の必須条件とオプションの条件を満たしていることを確認してください。

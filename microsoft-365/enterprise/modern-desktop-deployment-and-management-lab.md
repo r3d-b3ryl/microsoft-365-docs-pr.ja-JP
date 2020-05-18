@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 48d8cf5bc618f4f1e840872c4369bc5cdda19727
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011961"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262559"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -113,7 +113,7 @@ ms.locfileid: "44011961"
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 4 月 18 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
+*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 7 月 5 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

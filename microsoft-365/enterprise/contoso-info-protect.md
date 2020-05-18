@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise の情報保護機能を使用して、クラウドのデジタル資産をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 137e6ff499ba8fb119c696dba9337307876ee0c2
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625304"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268412"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -65,15 +65,11 @@ Contoso 社は、次の手順を使用して、自社の情報保護の要件に
 
    Contoso 社では、データのレベルに応じた機密ラベルを作成しました。「厳しく規制」のラベルで、暗号化、アクセス許可、透かしなどが含まれます。
 
-4. アクセスをロックするアクセス許可を使用して機密データと厳しく規制されたデータに対応する保護された SharePoint サイトを作成した
-
-   機密性の高いサイトと厳しく規制されたサイトの両方が、追加のアクセス許可の制限のあるプライベート チーム サイトとして構成されました。 「機密」および「厳しく規制」の SharePoint サイトは、対応する保持ラベルを使用して構成されています。 「厳しく規制」の SharePoint サイトに保存されているファイルは、「厳しく規制」のラベルの「機密」サブラベルで保護されています。 詳細については、「[厳しく規制されたデータに適した SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md)」のシナリオを参照してください。
-
-5.  オンプレミスの SharePoint サイトとファイル共有のデータを新しい SharePoint サイトに移動した
+4.  オンプレミスの SharePoint サイトとファイル共有のデータを新しい SharePoint サイトに移動した
 
     新しい SharePoint サイトに移行したファイルには、そのサイトに割り当てられた既定の保持ラベルを継承させました。
 
-6.  新しいドキュメントに機密ラベルを使用する方法、新しい SharePoint サイトの作成時に Contoso 社の IT 部門と応対する方法、およびデジタル資産は必ず SharePoint サイトに保管することについて従業員を教育しました
+5.  新しいドキュメントに機密ラベルを使用する方法、新しい SharePoint サイトの作成時に Contoso 社の IT 部門と応対する方法、およびデジタル資産は必ず SharePoint サイトに保管することについて従業員を教育しました
 
     クラウドに向けた情報保護の変化で最も難しい部分であると考えられることから、Contoso 社の IT 部門と経営陣は、クラウド上のデジタル資産には必ずラベルを付けて保存し、オンプレミスのファイル共有を控え、サード パーティのクラウド ストレージ サービスや USB ドライブは決して使用しないように、組織の従業員の情報保管に関する悪習慣を改めることが必要でした。
 

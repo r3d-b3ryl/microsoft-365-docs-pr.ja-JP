@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: '概要: 情報保護のレベルが多様な SharePoint Online チーム サイトには、保持ラベルとデータ損失防止 (DLP) ポリシーを適用してください。'
-ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b924b0d62d7c66a008739dfa12c0d1dd00deac9b
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081756"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262398"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>保持ラベルと DLP による SharePoint Online ファイルの保護
 
@@ -216,6 +216,10 @@ ms.locfileid: "42081756"
 非常に機密性の高い社外秘 SharePoint Online チーム サイトの最終的な構成をここに示します。
   
 ![「高機密」保持ラベルを使用して分離されている SharePoint Online チーム サイトの DLP ポリシー。](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>機密ラベルのサポートを受ける
+
+現在は、[機密ラベル](sensitivity-labels.md)でなく、保持ラベルのみを条件として使用できます。 現在、この条件において機密ラベルの使用をサポートしています。
   
 ## <a name="next-step"></a>次の手順
 

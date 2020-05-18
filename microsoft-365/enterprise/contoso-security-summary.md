@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: f8a16b07c6d4cb9a62e0131a1f667b675d5eaf66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636488"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268400"
 ---
 # <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
 
@@ -134,9 +134,4 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 - Windows Defender セキュリティ センターを使用したユーザー向けの中心となるセキュリティ ダッシュボード
 
   Contoso 社では [Windows セキュリティ アプリ](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)を、Windows 10 Enterprise を実行する自社の PC およびデバイスに展開しました。これにより、ユーザーはセキュリティの状況を一目で把握し、対応策を講じることができます。
-
-
-## <a name="next-step"></a>次の手順
-
-Cotoso 社が社内の研究チーム間で共同作業を行えるようにするために、厳しく規制されたデータに対応した SharePoint サイトを作成した方法について[学習](contoso-sharepoint-online-site-for-highly-confidential-assets.md)します。
 

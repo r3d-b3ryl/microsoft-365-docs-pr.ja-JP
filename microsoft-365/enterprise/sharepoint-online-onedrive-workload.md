@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 組織全体で SharePoint を計画、ロールアウトするプロセス、および SharePoint Online の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636918"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268211"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>SharePoint と OneDrive を Microsoft 365 Enterprise 向けに展開する
 
@@ -67,10 +67,6 @@ SharePoint はさまざまな目的で使用できます。どの目的がビジ
 各自のニーズに合わせて SharePoint を構成する方法に関するリソースについては、「[SharePoint の管理](https://docs.microsoft.com/sharepoint/sharepoint-online)」を参照してください。
 
 SharePoint の利点を調べる 1 つの方法は、個人、チーム、部門、または組織全体が現在、どのようにやり取りしているかを調べたうえで、ファイルの保存と共有をより簡単に行う適切なシナリオを探すことです。シナリオによっては、[Microsoft Teams](teams-workload.md) がより良い選択になり得ることを念頭においてください。
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>厳しく規制されたデータ用の SharePoint サイト
-
-厳しく規制されたデータは地域の規制対象であるか、企業秘密、財務情報、人事情報、組織戦略など、組織にとって最も重要なデータです。 このようなデータに対して、アクセスの制限、データの分類、データ損失の防止、暗号化を行うための SharePoint サイトを構成できます。 詳細については、「[Microsoft Teams および SharePoint サイトで高度な規制データを扱うには](teams-sharepoint-online-sites-highly-regulated-data.md)」を参照してください。
 
 #### <a name="result"></a>結果
 ドキュメントの保存と共有、コンテンツ管理、コラボレーション、セキュリティに関する組織のニーズに対応する SharePoint のシナリオのリスト。
