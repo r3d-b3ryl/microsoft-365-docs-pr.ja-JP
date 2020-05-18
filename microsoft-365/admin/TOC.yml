@@ -73,6 +73,8 @@
               href: manage/assign-licenses-to-users.md
             - name: 管理者ロールを割り当てる
               href: add-users/assign-admin-roles.md
+            - name: Microsoft 365 グループにゲストユーザーを追加する
+              href: create-groups/manage-guest-access-in-groups.md
             - name: ユーザーからライセンスを削除する
               href: manage/remove-licenses-from-users.md
             - name: ライセンスの競合を解決する
