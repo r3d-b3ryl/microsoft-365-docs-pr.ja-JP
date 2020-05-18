@@ -90,7 +90,7 @@
           href: deploy-with-existing-infrastructure.md
         - name: 非エンタープライズ向けに展開する
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: ワークロードとシナリオを展開する
+    - name: ワークロードを展開する
       href: deploy-workloads.md
       items:
         - name: Microsoft Teams
@@ -101,10 +101,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: 移行
           href: migration-microsoft-365-enterprise-workload.md
-        - name: リモート ワーカーを支援する
-          href: empower-people-to-work-remotely.md
-        - name: 厳しく規制されたデータ用の SharePoint サイト
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: テスト ラボ ガイド
       href: m365-enterprise-test-lab-guides.md
       items:
@@ -180,12 +176,6 @@
           href: contoso-info-protect.md
         - name: セキュリティの概要
           href: contoso-security-summary.md
-        - name: 極秘プロジェクトのチーム
-          href: contoso-team-for-top-secret-project.md
-        - name: 厳しく規制されたデータ用の SharePoint サイト
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Microsoft 365 Enterprise 展開コンテンツの変更
-      href: microsoft-365-deploment-guide-changes.md
     - name: Microsoft 365 サービス正常性の状態
       href: microsoft-365-service-health.md
 - name: 最新デスクトップ展開センター
