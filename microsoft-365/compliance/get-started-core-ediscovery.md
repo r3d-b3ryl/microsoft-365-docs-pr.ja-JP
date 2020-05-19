@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、Microsoft 365 でコア電子情報開示の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示の保留リストを作成して、調査に関連するデータを検索してエクスポートできます。
-ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943386"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280547"
 ---
 # <a name="get-started-with-core-ediscovery"></a>コア電子情報開示を開始する
 
@@ -40,13 +40,13 @@ Microsoft 365 のコア電子情報開示ツールには、組織が Microsoft 3
 
   - Microsoft 365 E3 または Office 365 E3 ライセンス以降
 
-   OR
+   または
 
-  - Exchange Online プラン2または Exchange Online アーカイブアドオンライセンスを使用した Microsoft 365 E1 または Office 365 E1 ライセンス
+  - Exchange Online プラン2または Exchange Online アーカイブアドオンライセンスを使用した Office 365 E1 ライセンス
 
   AND
 
-  - SharePoint Online プラン2または OneDrive for Business プラン2アドオンライセンスを使用した Microsoft 365 E1 または Office 365 E1 ライセンス
+  - SharePoint Online プラン2または OneDrive for Business プラン2アドオンライセンスを使用した Office 365 E1 ライセンス
   
   ライセンスを割り当てる方法については、「[ユーザーへのライセンスの割り当て](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)」を参照してください。
 
@@ -62,7 +62,7 @@ Microsoft 365 のコア電子情報開示ツールには、組織が Microsoft 3
 
 電子情報開示マネージャーの役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. に[https://protection.office.com/permissions](https://protection.office.com/permissions)移動し、Microsoft 365 または Office 365 組織の管理者アカウントの資格情報を使用してサインインします。
+1. に移動 [https://protection.office.com/permissions](https://protection.office.com/permissions) し、Microsoft 365 または Office 365 組織の管理者アカウントの資格情報を使用してサインインします。
 
 2. [**権限**] ページで、**電子情報開示マネージャー**の役割グループを選択します。
 
@@ -98,7 +98,7 @@ Microsoft 365 のコア電子情報開示ツールには、組織が Microsoft 3
 
 次の手順では、ケースを作成し、コア電子情報開示を使用して作業を開始します。 ケースを作成してメンバーを追加するには、次の手順を実行します。 ケースを作成したユーザーは、自動的にメンバーとして追加されます。
 
-1. に[https://compliance.microsoft.com](https://compliance.microsoft.com)移動し、適切な電子情報開示のアクセス許可が割り当てられているユーザーアカウントの資格情報を使用してサインインします。 組織の管理役割グループのメンバーは、コア電子情報開示ケースを作成することもできます。
+1. に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) し、適切な電子情報開示のアクセス許可が割り当てられているユーザーアカウントの資格情報を使用してサインインします。 組織の管理役割グループのメンバーは、コア電子情報開示ケースを作成することもできます。
 
 2. Microsoft 365 コンプライアンスセンターの左側のナビゲーションウィンドウで、[**すべて表示**] をクリックし、[**電子情報開示 > Core**] をクリックします。
 
@@ -134,7 +134,7 @@ Microsoft 365 のコア電子情報開示ツールには、組織が Microsoft 3
 
 1. **[電子情報開示ホールドを作成](create-ediscovery-holds.md)** します。 ケースを作成した後の最初の手順は、調査対象のユーザーのコンテンツの場所に保留 (*電子情報開示ホールド*とも呼ばれます) を置くことです。 コンテンツの場所には、Exchange メールボックス、SharePoint サイト、OneDrive アカウントに加えて、Microsoft Teams および Office 365 グループに関連付けられているメールボックスやサイトが含まれます。 この手順はオプションですが、電子情報開示保持を作成すると、調査中にそのケースに関連する可能性があるコンテンツが保持されます。 電子情報開示の保持を作成すると、特定のコンテンツの場所にあるすべてのコンテンツを保持できます。または、クエリベースの保持を作成して保留クエリに一致するコンテンツのみを保持することができます。 コンテンツの保持に加えて、電子情報開示の保持を作成するもう1つの理由として、次の手順で検索を作成して実行するときに、コンテンツの場所をすばやく検索することができます (検索する場所を選択するのではなく)。 調査を完了したら、作成した保留を解除できます。
 
-2. **[コンテンツを検索](search-for-content-in-core-ediscovery.md)** します。 電子情報開示の保留リストを作成したら、組み込みの検索ツールを使用して、保留中のコンテンツの場所を検索します。 ケースに関連する可能性があるデータについて、他のコンテンツの場所を検索することもできます。 ケースに関連付けられている異なる検索を作成して実行できます。 キーワード、プロパティ、および条件を使用して、検索結果を返す[検索クエリを作成](keyword-queries-and-search-conditions.md)し、ケースに最も関連があると考えられるデータを検索します。 次のようにすることもできます。
+2. **[コンテンツを検索](search-for-content-in-core-ediscovery.md)** します。 電子情報開示の保留リストを作成したら、組み込みの検索ツールを使用して、保留中のコンテンツの場所を検索します。 ケースに関連する可能性があるデータについて、他のコンテンツの場所を検索することもできます。 ケースに関連付けられている異なる検索を作成して実行できます。 キーワード、プロパティ、および条件を使用して、検索結果を返す[検索クエリを作成](keyword-queries-and-search-conditions.md)し、ケースに最も関連があると考えられるデータを検索します。 以下のことも実行できます。
 
    - 検索クエリを絞り込んで結果を絞り込むために役立つ検索統計を表示します。
 

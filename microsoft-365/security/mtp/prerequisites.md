@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209237"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280536"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -79,8 +79,12 @@ Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.
 ## <a name="browser-requirements"></a>ブラウザー要件
 Microsoft Edge、Internet Explorer 11、または任意の HTML 5 準拠の web ブラウザーを使用して、microsoft 365 セキュリティセンターの Microsoft 脅威保護にアクセスします。
 
-## <a name="us-gcc-and-gcc-high-availability"></a>US GCC および GCC 高可用性
-現時点では、Microsoft の脅威保護は米国政府機関向けの Community Cloud (GCC) および Government Community Cloud High (GCC High) のお客様にはご利用いただけません。 
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国 GCC、GCC 高、その他の米国政府機関向けの可用性
+現時点では、Microsoft の脅威保護は次の場合には使用でき*ません*。
+- 米国政府機関向けコミュニティクラウド (GCC)
+- 米国政府機関向けコミュニティクラウド高 (GCC 高)
+- 米国国防総省
+- 市販のライセンスを持つ米国の全行政機関
 
 ## <a name="related-topics"></a>関連項目
 - [Microsoft Threat Protection の概要](microsoft-threat-protection.md)
