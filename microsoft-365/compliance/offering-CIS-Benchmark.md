@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a83c744bc9f1335e0ce2993801475fdf16164766
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8e147e26072609a43d962b1d9fc7e71925510da4
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627069"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064696"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Center for Internet Security (CIS) ベンチマーク
 
@@ -46,9 +46,9 @@ CIS ベンチマークは、IT システムおよびデータをサイバー攻�
   
 すべての CIS ベンチマークと同様に Microsoft ベンチマークは、ソフトウェア開発、監査とコンプライアンス、セキュリティ研究、運用、政府、法律に及ぶさまざまなバックグラウンドを持つ内容領域専門家からの情報提供に基づくコンセンサス レビュー プロセスを使用して作成されました。 Microsoft は、これらの CIS の取り組みにおいて不可欠なパートナーでした。 たとえば、リストされたサービスに対して Office 365 がテストされ、その結果となる Microsoft 365 基礎ベンチマークは、アカウントと認証、データ管理、アプリケーションのアクセス許可、ストレージ、およびその他のセキュリティ ポリシー領域を対象とした適切なセキュリティ ポリシーを設定するための幅広い推奨事項をカバーしています。  
   
-CIS は、Microsoft 製品およびサービスのベンチマークに加えて、CIS ベンチマークを満たすように構成された [Azure 仮想マシンでの使用するための CIS ハードニング済みイメージ](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)も公開しています。 それらには、Azure 上での実行が保証された Microsoft Windows Server 2016 向け CIS ハードニング済みイメージが含まれます。 CIS は次のように述べています。"[Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) で利用可能なすべての CIS ハードニング済みイメージは、Azure 上での実行が保証されています。 Azure パブリック クラウド、クラウド OS ネットワークを介してサービス プロバイダーがホストする Microsoft クラウド プラットフォーム、およびお客様が管理するオンプレミスのプライベート クラウド Windows Server Hyper-V 展開への準備状況および互換性については、事前にテストをしています。"
+CIS は、Microsoft 製品およびサービスのベンチマークに加えて、CIS ベンチマークを満たすように構成された [Azure 仮想マシンでの使用するための CIS ハードニング済みイメージ](https://www.cisecurity.org/blog/cis-hardened-images-now-in-microsoft-azure-marketplace/)も公開しています。 それらには、Azure 上での実行が保証された Microsoft Windows Server 2016 向け CIS ハードニング済みイメージが含まれます。 CIS は、[Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=center%20for%20internet%20security) で利用可能なすべての CIS 強化されたイメージが、Azure で実行されることが認定されていることを示しています。 これらは、クラウド OS ネットワークを介してプロバイダによってホストされている Microsoft Cloud プラットフォーム、およびカスタマーによって管理されているオンプレミスのプライベート クラウド Windows Server Hyper-v 展開を介して、Azure パブリッククラウドとの変換準備と互換性を事前テスト済みです。
 
-## <a name="microsoft-in-scope-cloud-services"></a>対象 Microsoft クラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
 - [Office および Microsoft 365](https://aka.ms/o365-compliance-framework)
@@ -91,8 +91,4 @@ CIS は、"ベンチマークは内容領域専門家、テクノロジ ベン�
 - [Microsoft 365 を安全に使用するための CIS ベスト プラクティス](https://www.microsoft.com/security/blog/2019/01/10/best-practices-for-securely-using-microsoft-365-the-cis-microsoft-365-foundations-benchmark-now-available/)
 - [Windows 10 のセキュリティ ポリシー設定](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/security-policy-settings)
 - [Windows 10 Enterprise のセキュリティ](https://docs.microsoft.com/windows/security/index)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/9/B/7/9B75D846-BDB9-41CB-86FF-F0ADFD15800B/CIS_Benchmarks-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
