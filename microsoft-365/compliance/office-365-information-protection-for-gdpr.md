@@ -16,13 +16,14 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: このソリューションでは、Office 365 サービスに保存されている機密データを保護する方法を示します。
-ms.openlocfilehash: d71f3297fa5f315fe9a66bbc4b4217e58f5328bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: このソリューションでは、一般データ保護規則 (GDPR) を例として使用し、Office 365 サービスに保存されている機密データを保護する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c054042b74896e40369b2415282620f0878cf7b8
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626915"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031439"
 ---
 # <a name="information-protection-for-gdpr"></a>GDPR のための情報保護
 

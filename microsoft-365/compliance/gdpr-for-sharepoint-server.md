@@ -1,6 +1,6 @@
 ---
-title: SharePoint Server での GDPR への対応
-description: オンプレミスの SharePoint Server で GDPR の要件に対応する方法について説明します。
+title: SharePoint Server での GDPR 対応
+description: オンプレミスの SharePoint Server で一般データ保護規則 (GDPR) の要件に対応する方法について説明します。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6cbcb7f0918d472d953cb0f837adcb23b642a3a3
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 58ddbe98ec5ca6b08e6d6be58c4258265c13e3de
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596394"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036230"
 ---
 # <a name="gdpr-for-sharepoint-server"></a>SharePoint Server での GDPR 対応
 

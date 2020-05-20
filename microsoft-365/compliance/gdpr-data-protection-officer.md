@@ -1,6 +1,6 @@
 ---
 title: Microsoft のデータ保護責任者
-description: GDPR の Microsoft の EU データ保護責任者 (DPO) に関する情報
+description: GDPR の Microsoft の EU データ保護責任者 (DPO) の位置付と資格について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,12 +15,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 8e517db11806085339f6f431c9b942b468a211ed
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b09458bfba65a196ff9be4d9bfd7f3fbfda25fda
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558067"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036095"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft のデータ保護責任者
 
@@ -40,7 +41,7 @@ DPO は、個人データの保護に関するすべての主要な問題に適�
 
 EU DPO は、Microsoft の企業行動および法務部門の上級管理職である個人情報保護管理責任者に直接報告します。DPO 役割には、独立した公平な立場で職務を遂行するための自主性が与えられています。個人情報保護管理責任者の組織を通して、DPO はその職務を遂行するために必要なトレーニングと顧客対応リソースにアクセスできます。DPO には、秘密保持契約書の使用を通して、その作業に関する守秘義務が課されます。  
 
-## <a name="contact"></a>連絡先
+## <a name="contact"></a>Contact
 
 データ主体は、[https://aka.ms/privacyresponse](https://aka.ms/privacyresponse) にある Web フォームに記入することにより、データ保護責任者と連絡を取ることができます。DPO は、下記宛ての書簡によっても連絡を取ることができます。
 

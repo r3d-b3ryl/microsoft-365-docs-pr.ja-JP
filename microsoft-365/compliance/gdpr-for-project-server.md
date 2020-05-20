@@ -1,6 +1,6 @@
 ---
-title: Project Server の GDPR
-description: オンプレミスの Project Server で GDPR の要件に対応する方法について説明します。
+title: Project Server での GDPR 対応
+description: オンプレミスの Project Server で一般データ保護規則 (GDPR) の要件に対応する方法について説明します。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,14 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: a9fff9f085fd42f28801a82c3f83d6bdd1f74ff6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 3a7eb291d0da72adf171594aac307ec0ad91829d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596414"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036240"
 ---
-# <a name="gdpr-for-project-server"></a>Project Server の GDPR
+# <a name="gdpr-for-project-server"></a>Project Server での GDPR 対応
 
 Project Server では、Project Web App でユーザー データをエクスポートしたり編集したりするために、カスタム スクリプトが使用されます。基本的な処理は、次のとおりです。
 

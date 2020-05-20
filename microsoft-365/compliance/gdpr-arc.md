@@ -1,6 +1,6 @@
 ---
 title: GDPR に関するアカウンタビリティ対応準備チェックリスト
-description: Microsoft サービスによる個人データ漏洩からの保護と、違反が発生した場合の Microsoft による対応とユーザーへの通知
+description: この記事では、Microsoft の製品とサービスを使用するときに GDPR をサポートするために必要な情報にアクセスできるよう、アカウンタビリティ対応準備チェックリストについて説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -13,14 +13,16 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - GDPR
-- M365-security-compliance
+- M365-security-complianc
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b34221c45acc3d2918ed1a397e9e1ff0e726c152
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 154ba945db3bd5cfab25881bfdbbdc6738a3dfd7
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558127"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036115"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>アカウンタビリティ対応準備チェックリストを使用して GDPR プログラムをサポートする
 

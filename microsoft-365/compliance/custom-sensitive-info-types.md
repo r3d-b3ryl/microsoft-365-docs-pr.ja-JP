@@ -15,13 +15,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: DLP 用のカスタムの機密情報の種類の概要です。
-ms.openlocfilehash: 2e56811cf8e837e698254c0205d5b831f7b1f3b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 主なパターン、英数字、信頼度など、データ損失防止 (DLP) のカスタム機密情報の種類の概要について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 621c7be728f772e113ef5cd65d5b79a2526ec7c5
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43617091"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035749"
 ---
 # <a name="custom-sensitive-information-types"></a>カスタムの機密情報の種類
 

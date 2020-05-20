@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
+title: Microsoft 365 セキュリティ/コンプライアンス センターのアクセス許可
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,12 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
-ms.openlocfilehash: f703a333cf77ebb41f7b72f141cbdc813858ab11
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 74139dfef3e0adfccbf16451d3577a8a916a0f97
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634474"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033904"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 

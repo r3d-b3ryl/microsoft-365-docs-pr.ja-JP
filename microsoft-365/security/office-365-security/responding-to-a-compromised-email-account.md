@@ -10,18 +10,20 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.custom: TopSMBIssues
+ms.custom:
+- TopSMBIssues
+- seo-marvel-apr2020
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: 侵害された Microsoft 365 電子メール アカウントを認識して対処する方法について説明します
-ms.openlocfilehash: 65e3827b578eec2f851c45d9acc69fb7132d01b8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
+ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634342"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44033832"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 

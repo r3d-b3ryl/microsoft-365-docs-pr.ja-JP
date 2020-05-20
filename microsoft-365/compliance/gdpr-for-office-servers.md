@@ -1,6 +1,6 @@
 ---
 title: Office Server の GDPR
-description: オンプレミス サーバー上の Office で GDPR の要件に対応する方法について説明します。
+description: Office オンプレミスのサーバーで一般データ保護規則 (GDPR) の要件に対応する方法について説明します。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: b50722d7f37b54b38bac259b7c42d3bd782dfb3d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4efb3803df2baa1ca37aeda05ae81947c3b65010
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557957"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036262"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>オンプレミス サーバー上の Office の GDPR
 

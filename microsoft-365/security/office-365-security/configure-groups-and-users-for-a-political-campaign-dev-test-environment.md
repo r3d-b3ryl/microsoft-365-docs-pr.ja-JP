@@ -1,5 +1,5 @@
 ---
-title: 選挙運動の開発/テスト環境用にグループとユーザーを構成する
+title: グループとユーザーを作成する - 選挙運動の開発/テスト環境用
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
-ms.openlocfilehash: a61cc21b67cafd213d47076698929d0aa2644d08
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 14722ab96230ecb8acaf4476d6ca70c47de2ffdd
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42083486"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035108"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -36,9 +37,9 @@ ms.locfileid: "42083486"
 
 まず、「[Office 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)」の**フェーズ 2**に記されている手順を実行します
 
-次に、EMS E5 試用版サブスクリプションにサインアップして、Office 365 試用版サブスクリプションと同じ組織に追加します。
+次に、EMS E5 試用版サブスクリプションにサインアップして、試用版サブスクリプションと同じ組織に追加します。
 
-1. 必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. 必要に応じて、試用版サブスクリプション用の全体管理者アカウントの資格情報で管理センターにサインインします。 詳細については、「[サインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
 
 2. **[管理者]** タイルをクリックします。
 
@@ -191,7 +192,7 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
   たとえば、試用版サブスクリプションのドメイン名が contoso.onmicrosoft.com である場合、組織名は「contoso」です。
 
-- Office 365 グローバル管理者名 ![下線](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- グローバル管理者名: ![下線](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   このアカウントのパスワードや、その他のユーザー アカウントの共通のパスワードを安全な場所に記録します。
 

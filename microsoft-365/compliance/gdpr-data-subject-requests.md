@@ -1,6 +1,5 @@
 ---
 title: GDPR および CCPA のためのデータ対象要求
-description: ''
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,18 +14,20 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: fc5f4f8752d17595cfafaa39626f0d36675d7c82
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: Microsoft の製品とサービスを使用して、一般データ保護規則 (GPDR) およびカリフォルニア州消費者プライバシー法 (CCPA) に従って DSR を完了する方法について説明します。
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 7342c0ae4105c05ae2e2956df51581d3afedb286
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558057"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035475"
 ---
 # <a name="data-subject-requests-and-the-gdpr-and-ccpa"></a>データ対象要求と GDPR および CCPA
 
 一般データ保護規則 (GDPR) では、欧州連合 (EU) 内の人々に商品やサービスを提供する、または EU 居住者向けのデータの収集と分析を実行する会社に対して、新しい規則を導入します。GDPR は、個人やその企業がどの場所にあるかに関係なく適用されます。 詳細については、「[GDPR 概要トピック](gdpr.md)」を参照してください。
 
-同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 このドキュメントは、Microsoft の製品とサービスの使用における、GDPR および CCPA に基づくデータ主体の要求 (DSR) の完了に関する情報を提供します。
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、"売上" として分類された特定のデータ転送の "オプトアウト/オプトイン" 要件を規定します。 このドキュメントは、Microsoft の製品とサービスの使用における、GDPR および CCPA に基づくデータ主体の要求 (DSR) の完了に関する情報を提供します。
 
 - [Office 365](gdpr-dsr-Office365.md)
 - [Azure](gdpr-dsr-Azure.md)
@@ -60,7 +61,7 @@ DSR の完了には、組織の GDPR コンプライアンス規則に従って�
 - **修正**。 変更またはその他の要求された個人データの変更を実施します。
 - **制限**。 アクセスを制限する、または Microsoft クラウドからデータを削除することにより、個人データのアクセスまたは処理を変更します。
 - **エクスポート**。 GDPR の「データの移植の権利」で規定されているように、「構造化された一般的に使用されているコンピューターが読み取り可能な形式」の個人データをデータ主体に提供します。
-- **削除**。 Microsoft クラウドから個人データを完全に削除します。
+- **Delete** Microsoft クラウドから個人データを完全に削除します。
 
 ## <a name="specific-dsr-considerations"></a>特定の DSR に関する考慮事項
 
@@ -78,7 +79,7 @@ Microsoft によって生成されたログと関連データには、"個人デ
 
 ### <a name="yammer-and-kaizala"></a>Yammer と Kaizala
 
-ユーザー アカウントを削除した場合、Yammer と Kaizala でシステム生成されたログは削除されません。これらのアプリケーションからデータを削除する場合は、次のいずれかの資料を参照してください。
+ユーザーのアカウントを削除しても、システムで生成された Yammer および Kaizala のログは削除されません。 これらのアプリケーションからデータを削除するには、次のいずれかのリソースを参照してください。
 
 - [Yammer Enterprise で GDPR データ主体の要求を管理する](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)

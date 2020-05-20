@@ -1,6 +1,6 @@
 ---
 title: オンプレミス ファイル共有の GDPR
-description: オンプレミスの Windows Server ファイル共有で GDPR の要件に対応する方法について説明します。
+description: オンプレミスの Windows Server ファイルで共有一般データ保護規則 (GDPR) の要件に対応する方法について説明します。
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,12 +11,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e5431c4f0953a9d65246f65d783bf6753c5f9bef
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e9d45c86b2838acef9966b10806e589d1bb42ff9
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596424"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036250"
 ---
 # <a name="gdpr-for-on-premises-windows-server-file-shares"></a>オンプレミスの Windows Server ファイル共有の GDPR
 

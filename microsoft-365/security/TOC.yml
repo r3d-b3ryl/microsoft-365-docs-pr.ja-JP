@@ -410,6 +410,8 @@
                   href: ./office-365-security/air-view-investigation-results.md
                 - name: 保留中のアクションをレビューして承認 (または拒否) する
                   href: ./office-365-security/air-review-approve-pending-completed-actions.md
+                - name: 誤検知/検出漏れを処理する
+                  href: ./office-365-security/air-report-false-positives-negatives.md
                 - name: AIR をカスタム ソリューションまたはサードパーティのソリューションと統合する
                   href: ./office-365-security/air-custom-reporting.md
             - name: 侵害されたユーザー アカウントをすばやく検出して対処する

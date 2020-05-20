@@ -6,18 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection:
-- Ent_O365
-- Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
+ms.custom:
+- M365solutions
 localization_priority: Priority
 description: 金融サービスがデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がどのように役立つかを説明します
-ms.openlocfilehash: f312c1a44f81dda2cd89937354423f686eb7346b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+f1.keywords: NOCSH
+ms.openlocfilehash: e3ed7d40cf7b4452dd2bc47e870e0a7afe10d629
+ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632609"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "44002369"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 

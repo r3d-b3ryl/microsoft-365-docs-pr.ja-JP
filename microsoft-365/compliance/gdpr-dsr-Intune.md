@@ -1,6 +1,6 @@
 ---
 title: GDPR および CCPA のための Intune データ主体の要求
-description: コントローラーが DSR および CCPA 要求に応じて個人データを検索して操作できるように Microsoft 製品、サービス、管理ツールを使用する方法について説明します。
+description: このガイドでは、コントローラーが個人データを検索して操作する方法、および Microsoft Intune のお客様による DSR および CCPA 要求への対応方法について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -14,14 +14,16 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3d30b2187199b223086d53a144d711537fd7e59d
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 6c39450169f835b3d558f14d248d425cb20f939f
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557997"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44035433"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Intune データ主体の要求
 

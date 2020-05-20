@@ -1,6 +1,6 @@
 ---
 title: 違反の通知
-description: Microsoft サービスによる個人データ漏洩からの保護と、違反が発生した場合の Microsoft による対応とユーザーへの通知
+description: Microsoft サービスによる個人データ漏洩からの保護と、違反が発生した場合の Microsoft による対応とユーザーへの通知について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -14,13 +14,15 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 4cf6bb62034708b6ba21fb060949de6f1ac19066
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 988e5e26f3aa983dec481677fe8d9a3f8d331181
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558087"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036105"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 違反の通知
 

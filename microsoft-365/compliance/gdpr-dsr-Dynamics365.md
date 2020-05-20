@@ -1,6 +1,6 @@
 ---
 title: GDPR および CCPA のための Dynamics 365 データ対象要求
-description: コントローラーが DSR および CCPA 要求に応じて個人データを検索して操作できるように Microsoft 製品、サービス、管理ツールを使用する方法について説明します。
+description: このガイドは、個人データを検索して操作する方法、および Dynamics 365 のお客様による DSR および CCPA 要求への対応方法について理解するのに役立ちます。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -15,13 +15,15 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 hideEdit: true
+ms.custom:
+- seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 38c50703fbc58e85a646720b5bbe8b400477b9d4
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
+ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558007"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44043329"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Dynamics 365 データ対象要求
 
@@ -223,10 +225,10 @@ Microsoft は、GDPR における「個人データ」の広範な定義の下�
 
 新しい要求を作成すると、その要求は **[データ ログのエクスポート]** ページの一覧に表示されます。このページから、要求の現在の状態を追跡できます。要求が完了すると、リンクをクリックしてシステム生成ログにアクセスできるようになります。このログは、要求の作成から 30 日以内に、組織で指定した Azure Storage の場所にエクスポートされます。データは、JSON や XML などの、コンピューターで読み取り可能な一般的なファイル形式で保存されます。Azure アカウントや Azure Storage の場所がない場合、Data Log Export ツールでシステム生成ログをエクスポートできるように、組織の Azure アカウントや Azure Storage の場所を作成する必要があります。
 
-Azure では、ユーザーの組織がネイティブ JSON 形式のデータを指定の Azure Storage コンテナーにエクスポートできるようにすることによってこれをサポートしています。詳細については、「[Azure Storage コンテナーの概要 – BLOB ストレージ](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)」という記事をご覧ください。
+Azure では、ユーザーの組織がネイティブ JSON 形式のデータを指定の Azure Storage コンテナーにエクスポートできるようにすることによってこれをサポートしています。詳細については、「[Azure Storage コンテナーの概要 – BLOB ストレージ](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)」という記事をご覧ください。 取得されるデータにはサービスのセキュリティおよび安定性を損なう可能性があるデータは含まれません。
 
 > [!IMPORTANT]
-> ユーザー データをテナントからエクスポートするには、テナント管理者でなければなりません。
+> ユーザー データをテナントからエクスポートするには、テナント管理者である必要があります。
 
 次の表に、システム生成ログのアクセスとエクスポートについての概要を示します。
 
@@ -245,9 +247,7 @@ Azure では、ユーザーの組織がネイティブ JSON 形式のデータ�
 
 ### <a name="deleting-system-generated-logs"></a>システム生成ログの削除
 
-アクセス要求によって取得したシステム生成ログを削除するには、サービスからユーザーを削除して、そのユーザーの Azure Active Directory アカウントを完全に削除する必要があります。ユーザーの完全な削除の手順については、このガイドのセクション「[ユーザーの削除](https://microsoft-my.sharepoint.com/personal/kated_microsoft_com/Documents/DSR%20Guide%20v4%20-(newly%20created%20for%20O365%20only).docx#_Deleting_a_user)」を参照してください。ユーザー アカウントの完全な削除は、開始後に取り消すことができなくなる点に注してください。
-
-ユーザー アカウントを完全に削除すると、そのユーザーのデータは、ほぼすべての Dynamics 365 サービスのシステム生成ログから 30 日以内に削除されます。
+アクセス要求を通して取得されたシステム生成ログを削除するには、そのユーザーをサービスから削除して、Azure Active Directory アカウントを完全に削除する必要があります。 ユーザー アカウントを完全に削除すると、元に戻すことはできませんのでご注意ください。 ユーザー アカウントを完全に削除すると、そのユーザーのデータは、ほぼすべての Dynamics 365 サービスのシステム生成ログから 30 日以内に削除されます。
 
 ## <a name="learn-more"></a>詳細情報
 

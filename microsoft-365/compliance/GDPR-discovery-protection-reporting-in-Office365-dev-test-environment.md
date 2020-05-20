@@ -1,6 +1,6 @@
 ---
-title: 開発/テスト環境における GDPR の検出、保護、および報告
-description: Microsoft 365 の GDPR 機能をデモします。
+title: Microsoft 365 開発/テスト環境における GDPR の検出、保護、および報告
+description: Microsoft 365 開発/テスト環境の GDPR において、個人を特定できる情報 (PII) を構成して実証する方法について説明します。
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 6a16f48948cd40ea39f8d066471e902d2b5a6bf0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b35db1a7be133e61cbde03f02af83baf9341d32e
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632342"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44034651"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-devtest-environment"></a>開発/テスト環境における GDPR の検出、保護、および報告
 

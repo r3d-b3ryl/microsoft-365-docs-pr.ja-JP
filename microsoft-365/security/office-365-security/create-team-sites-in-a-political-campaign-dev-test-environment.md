@@ -1,5 +1,5 @@
 ---
-title: 選挙運動用の開発/テスト環境でチーム サイトを作成する
+title: チーム サイトを作成する - 選挙運動用の開発環境
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,15 +15,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: '概要: 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。'
-ms.openlocfilehash: 14ba5b00754a9e55c797edd0835658ac81b7e647
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e3223b059273f0955d7fc11f8ca98d529d946210
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637666"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44036477"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>選挙運動用の開発/テスト環境でチーム サイトを作成する
 
