@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化された電子メールを送信する方法について説明します。
-ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165687"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322149"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密メールを暗号化またはラベル付けする
 
@@ -52,7 +52,7 @@ ms.locfileid: "44165687"
 
 ## <a name="admin-settings"></a>管理設定
 
-「 [Office 365 での](https://docs.microsoft.com/office365/securitycompliance/email-encryption)電子メールの暗号化による電子メールの暗号化の設定について」を参照してください。
+「 [Office 365 での](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)電子メールの暗号化による電子メールの暗号化の設定について」を参照してください。
 
 ### <a name="automatically-encrypt-email-messages"></a>電子メールメッセージを自動的に暗号化する
 
@@ -64,9 +64,9 @@ ms.locfileid: "44165687"
 2. [管理] タイルを選択します。 
 3. 管理センターで、[ **Exchange > 管理センター**] を選択します。 
 
-詳細については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)」を参照してください。
+詳細については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)」を参照してください。
 
 ### <a name="brand-your-encryption-messages"></a>暗号化メッセージをブランド化する
 
-また、キャンペーンブランドを適用して、電子メールメッセージの外観やテキストをカスタマイズすることもできます。 詳細については、「[組織のブランドを暗号化されたメッセージに追加する](https://docs.microsoft.com/office365/securitycompliance/email-encryption)」を参照してください。
+また、キャンペーンブランドを適用して、電子メールメッセージの外観やテキストをカスタマイズすることもできます。 詳細については、「[組織のブランドを暗号化されたメッセージに追加する](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)」を参照してください。
 

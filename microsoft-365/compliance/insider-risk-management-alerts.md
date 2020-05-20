@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 74e84fc00e5fe633f0d70315cea9ad1329e2f639
-ms.sourcegitcommit: 9224a7a5886c0c5fa0bc12bd9f7234a0eba90023
+ms.openlocfilehash: 0618eb6b68f5753ea6af2469e3487eabfe566450
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42372015"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292485"
 ---
 # <a name="insider-risk-management-alerts"></a>Insider リスク管理警告
 
-Insider リスク管理の通知は、insider リスク管理ポリシーで定義されたリスク指標によって自動的に生成されます。 これらのアラートは、コンプライアンスアナリストと調査担当に、現在のリスク状態のすべてのビューを提供し、組織が検出されたリスクをトリアージし、アクションを実行できるようにします。
+Insider リスク管理の通知は、insider リスク管理ポリシーで定義されたリスク指標によって自動的に生成されます。 これらのアラートは、コンプライアンスアナリストと調査担当に、現在のリスク状態のすべてのビューを提供し、組織が検出されたリスクをトリアージし、アクションを実行できるようにします。 既定では、ポリシーによって、低、中、および高の重要度のアラートが生成されますが、必要に応じて[通知の音量を増減](insider-risk-management-policies.md#alert-volume)させることができます。
 
 ## <a name="alert-dashboard"></a>通知ダッシュボード
 

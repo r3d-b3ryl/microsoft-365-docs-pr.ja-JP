@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、ユーザーによって報告されたスパムやフィッシング電子メールを収集するようにメールボックスを構成する方法について説明します。
-ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262525"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294195"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Exchange Online でスパムおよびフィッシングメッセージをユーザーが送信するためのメールボックスを指定する
 
@@ -31,7 +31,7 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 - [Web 上の outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (旧称 Outlook web App) での組み込みレポート
 
   > [!NOTE]
-  > [Web 上の outlook で](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)レポートが無効になっている場合、ここでユーザーによる送信を有効にすると、その設定が無効になり、ユーザーは web 上の outlook でメッセージを再度レポートすることができます。
+  > [Web 上の outlook で](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)レポートが無効になっている場合、ここでユーザーによる送信を有効にすると、その設定が無効になり、ユーザーは web 上の outlook でメッセージを再度レポートすることができます。
 
 また、指定したメールボックスにメッセージを転送するように、サードパーティ製のメッセージレポートツールを構成することもできます。
 
@@ -75,8 +75,6 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 
         完了したら、[**確認**] をクリックします。
 
-        ![報告されたメッセージを Microsoft およびカスタムメールボックスに送信する](../../media/user-submission-enable-outlook-report-message.png)
-
      > [!CAUTION]
      > Web 上の outlook on the web メールボックスポリシーを使用して outlook の[迷惑メール報告を無効](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)にしたが、microsoft にメッセージを報告するために以前の設定のいずれかを構成した場合、ユーザーはレポートメッセージアドインを使用して、web 上の outlook でメッセージを microsoft に報告できます。
 
@@ -86,8 +84,6 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 
       完了したら、[**確認**] をクリックします。
 
-      ![サードパーティ製のツールを使用して、レポートされたメッセージをカスタムメールボックスに送信する](../../media/user-submission-disable-outlook-report-message.png)
-     
 ## <a name="message-submission-format"></a>メッセージ送信形式
 
 カスタムメールボックスに送信されるメッセージは、特定の送信メール形式に従う必要があります。 提出物の件名 (封筒のタイトル) は、次の形式である必要があります。

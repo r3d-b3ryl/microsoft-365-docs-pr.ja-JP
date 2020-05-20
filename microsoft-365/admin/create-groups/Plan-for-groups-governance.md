@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Microsoft 365 グループガバナンスを計画する方法について説明します。
-ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: e5e3b640edd15cb46fa3da8b65141fe9f63d6399
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064789"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322101"
 ---
 # <a name="plan-for-governance-in-groups"></a>グループでのガバナンスを計画する
 
@@ -131,7 +131,7 @@ Microsoft 365 グループには、組織で必要となる可能性があるす
 > [!Important]
 > グループとチームの作成を制限すると、多くの Microsoft 365 サービスでは、サービスを機能させるためにグループを作成する必要があるため、ユーザーの生産性が低下する可能性があります。 詳細については、「 [Microsoft 365 グループを作成したユーザーを制御する理由](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)」を参照してください。
 
-#### <a name="resources"></a>*リソース*
+#### <a name="resources"></a>*Resources*
 - [Microsoft 365 グループを作成できるユーザーを管理する](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide)
 - [オブジェクトの属性に基づいて動的にグループを作成する](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-with-advanced-rules)
 - [Outlook 用の Microsoft 365 グループの既定の設定をパブリックまたはプライベートに変更する方法](https://support.office.com/article/office-365-groups-in-outlook-private-by-default-36236e39-26d3-420b-b0ac-8072d2d2bedc)
@@ -153,7 +153,7 @@ Microsoft 365 グループを削除した場合は、既定では30日間保持�
 > [!Important]
 >"論理的な削除" 期間中にユーザーがサイトにアクセスしようとすると、403 アクセス不可メッセージが表示されます。 この期間が経過した後、ユーザーがサイトにアクセスしようとすると、404 見つかりませんのメッセージが表示されます。
 
-#### <a name="resources"></a>*リソース*
+#### <a name="resources"></a>*Resources*
 - [削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Azure Active Directory で削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
@@ -176,7 +176,7 @@ Microsoft 365 グループを削除した場合は、既定では30日間保持�
 > [!Important]
 >名前付けポリシーは、すべてのグループのワークロード (Outlook、Microsoft Teams、SharePoint、Planner、Yammer など) で作成されたグループに適用されます。グループ名とグループのエイリアスのどちらにも適用されます。名前付けポリシーは、ユーザーによるグループの作成時、または既存のグループのグループ名やエイリアスの編集時に適用されます。
 
-#### <a name="resources"></a>*リソース*
+#### <a name="resources"></a>*Resources*
 - [Microsoft 365 グループの名前付けポリシー](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy)
 - [Microsoft 365 グループの名前付けポリシーを Azure Active Directory に適用する](https://go.microsoft.com/fwlink/?linkid=868340)
 - [グループ設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?linkid=868341)
@@ -206,7 +206,7 @@ Microsoft 365 グループを削除した場合は、既定では30日間保持�
 > [!Important]
 >有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
 
-#### <a name="resources"></a>*リソース*
+#### <a name="resources"></a>*Resources*
 - [Microsoft 365 グループの有効期限ポリシー](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 - [Microsoft 365 グループの有効期限ポリシーを構成する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
@@ -249,14 +249,14 @@ Microsoft 365 グループは、Microsoft 365 の高度なセキュリティお�
 - [Microsoft 365 グループの使用ガイドラインへのリンク](https://docs.microsoft.com/office365/enterprise/manage-office-365-groups-with-powershell#link-to-your-office-365-groups-usage-guidelines)
 - [組織の Office グループに対する分類を作成する](https://docs.microsoft.com/office365/enterprise/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
 - [グループ設定を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
-- [アイテム保持ポリシーの概要](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [機密ラベルの概要](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
-- [ラベルの概要](https://docs.microsoft.com/office365/securitycompliance/labels)
-- [監査ログを検索する](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)
+- [アイテム保持ポリシーの概要](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
+- [機密ラベルの概要](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+- [ラベルの概要](https://docs.microsoft.com/microsoft-365/compliance/labels)
+- [監査ログを検索する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 - [インプレース訴訟ホールドを作成または削除する](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)
-- [保持ポリシーを作成する](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [セキュリティ & コンプライアンスセンターでコンテンツ検索を実行する](https://docs.microsoft.com/Office365/SecurityCompliance/content-search)
-- [PowerShell を使用して保持ラベルを一括で作成および発行する](https://docs.microsoft.com/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+- [保持ポリシーを作成する](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
+- [セキュリティ & コンプライアンスセンターでコンテンツ検索を実行する](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+- [PowerShell を使用して保持ラベルを一括で作成および発行する](https://docs.microsoft.com/microsoft-365/compliance/bulk-create-publish-labels-using-powershell)
 
 ### <a name="upgrade-traditional-collaboration-tools"></a><a name="upgrade-traditional-collaboration-tools"></a>従来の共同作業ツールをアップグレードする
 数年の組織は、社内内外のユーザーグループとの通信と共同作業を行うために、配布グループに依存しています。 しかし現時点では、Outlook の Microsoft 365 グループはコラボレーションのためのより強力なソリューションを提供しています。 さらに、そのサイトをモダン化する場合は、Microsoft 365 グループを既存の SharePoint サイトに接続できることが重要です。
@@ -295,7 +295,7 @@ Microsoft 365 Reports dashboard には、組織内の Microsoft 製品全体に�
 |![画像の説明](../../media/next_steps.png)|次のステップ|<ul><li>定期的にグループアクティビティレポートをレビューするための組織の要件を文書化します。</li></ul>|
 
 
-#### <a name="resources"></a>*リソース*
+#### <a name="resources"></a>*Resources*
 - [管理センターの Microsoft 365 レポート](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 - [Office 365 の導入コンテンツ パック](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics)
 - [Azure AD コンテンツ パック](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-power-bi-content-pack-how-to)
@@ -309,11 +309,11 @@ Microsoft 365 Reports dashboard には、組織内の Microsoft 製品全体に�
 Microsoft 365 グループには、組織で必要となる可能性がある、豊富なガバナンス機能のセットが用意されています。 次の組織プロファイルをガイダンスとして検討して、ベストプラクティスを理解し、適切な質問を行ってガバナンスの要件と、それらを満たす方法を決定します。
 
 **次の組織プロファイルについて検討してください。**
-- 小規模企業
+- Small Business
 - 中規模企業
 - 規制またはエンタープライズ
 
-### <a name="small-business"></a>小規模企業
+### <a name="small-business"></a>Small Business
 少なくとも Exchange Online と SharePoint Online のライセンスを使用して Microsoft 365 を展開している組織で、ビジネスエッセンシャルプランとビジネスプレミアムプランが含まれていること、および Azure Active クタプレミアムライセンスを持たないエンタープライズ E1、E3、E5 プランがあることを検討してください。
 
 | ステージ | 説明 |
@@ -334,8 +334,8 @@ Microsoft 365 グループには、組織で必要となる可能性がある、
 
 | ステージ | 説明 |
 | --------------- | ------------------------------------------------------------ |
-| ガイダンス |<ul><li> 分類に基づいたグループに関連付けられている SharePoint サイトのデータ ガバナンスのポリシーを定義します。</li><li>[ラベルと DLP で SharePoint Online のファイルを保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)します。</li><li>[Azure Information Protection を使用して SharePoint Online ファイルを保護します](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)。</li><li> ユーザーの優先するデータの場所 ([複数地域](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)) に関連付けられた、地域でプロビジョニングされたグループサイト。</li><li> 外部メンバーを含むグループのメンバーシップをレビューします ([アクセス レビュー](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview))。</li><li>アクセスする前に、従業員またはゲスト ユーザーは関連する法的要件またはコンプライアンス要件の免責事項を確認している必要があります。([利用規約](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou))。</li><li>[外部ユーザーを](https://techcommunity.microsoft.com/t5/Office-365-Groups/Sample-Powershell-to-identify-groups-with-HBI-classification-and/m-p/215561)含む特定の分類を使用して、Microsoft 365 グループを特定して報告します。</li><li>メンバーシップを非表示にする必要がある秘密のグループは、グループ作成時に [New-UnifiedGroup](https://technet.microsoft.com/library/mt219359(v=exchg.160).aspx) コマンドレット (HiddenGroup-MembershipEnabled スイッチを使用) を使用して作成する必要があります。</li><li>[暗号化を使用してコンテンツへのアクセスを制限](https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels)し、特定の Microsoft 365 グループに発行することによって、組織の[機密ラベル](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)を定義します。</li><li>[Windows 情報保護と機密ラベル](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)を使用して、機密性の高いコンテンツが Windows を実行している組織のデバイス上に放置されないようにします。 |
-| 次のステップ      | <ul><li> サイト デザインとサイト スクリプトを使用して、新しいサイトの作成時に実行される既定の[アクション](https://developer.microsoft.com/office/blogs/site-scripts-site-designs-summer-2018-update/)を定義します。たとえば、ネイティブでサポートされていない構成を適用するために、[外部共有設定を構成](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-apply-external-sharing-setting)したり、[Microsoft Flow を起動して Azure 関数を呼び出す](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-azure-function)ようにします。</li><li> ラベルおよび DLP を使用して、Microsoft 365 グループに関連付けられているサイトに対して[SharePoint Online ファイルを保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)するための要件を文書化します。</li><li>Microsoft 365 グループに接続されている[SharePoint Online サイトとファイルをセキュリティで保護](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files)するための組織の要件を文書化します。 </li><li>コンテンツを保護するために[機密ラベル](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)を特定のユーザーまたはグループに発行するための組織の要件を文書化します。</li></ul> |
+| ガイダンス |<ul><li> 分類に基づいたグループに関連付けられている SharePoint サイトのデータ ガバナンスのポリシーを定義します。</li><li>[ラベルと DLP で SharePoint Online のファイルを保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)します。</li><li>[Azure Information Protection を使用して SharePoint Online ファイルを保護します](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)。</li><li> ユーザーの優先するデータの場所 ([複数地域](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)) に関連付けられた、地域でプロビジョニングされたグループサイト。</li><li> 外部メンバーを含むグループのメンバーシップをレビューします ([アクセス レビュー](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview))。</li><li>アクセスする前に、従業員またはゲスト ユーザーは関連する法的要件またはコンプライアンス要件の免責事項を確認している必要があります。([利用規約](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou))。</li><li>[外部ユーザーを](https://techcommunity.microsoft.com/t5/Office-365-Groups/Sample-Powershell-to-identify-groups-with-HBI-classification-and/m-p/215561)含む特定の分類を使用して、Microsoft 365 グループを特定して報告します。</li><li>メンバーシップを非表示にする必要がある秘密のグループは、グループ作成時に [New-UnifiedGroup](https://technet.microsoft.com/library/mt219359(v=exchg.160).aspx) コマンドレット (HiddenGroup-MembershipEnabled スイッチを使用) を使用して作成する必要があります。</li><li>[暗号化を使用してコンテンツへのアクセスを制限](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)し、特定の Microsoft 365 グループに発行することによって、組織の[機密ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)を定義します。</li><li>[Windows 情報保護と機密ラベル](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)を使用して、機密性の高いコンテンツが Windows を実行している組織のデバイス上に放置されないようにします。 |
+| 次のステップ      | <ul><li> サイト デザインとサイト スクリプトを使用して、新しいサイトの作成時に実行される既定の[アクション](https://developer.microsoft.com/office/blogs/site-scripts-site-designs-summer-2018-update/)を定義します。たとえば、ネイティブでサポートされていない構成を適用するために、[外部共有設定を構成](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-apply-external-sharing-setting)したり、[Microsoft Flow を起動して Azure 関数を呼び出す](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-azure-function)ようにします。</li><li> ラベルおよび DLP を使用して、Microsoft 365 グループに関連付けられているサイトに対して[SharePoint Online ファイルを保護](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)するための要件を文書化します。</li><li>Microsoft 365 グループに接続されている[SharePoint Online サイトとファイルをセキュリティで保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)するための組織の要件を文書化します。 </li><li>コンテンツを保護するために[機密ラベル](hhttps://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)を特定のユーザーまたはグループに発行するための組織の要件を文書化します。</li></ul> |
 
 ## <a name="groups-management-capability-planning-checklist"></a>グループの管理機能の計画チェックリスト
 

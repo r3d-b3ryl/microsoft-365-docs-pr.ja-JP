@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162679"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292475"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -60,9 +60,9 @@ Insider リスク管理ポリシーに含まれるユーザーには、上記の
 
 ユーザーを insider リスク管理役割グループに追加するには、次の手順を実行します。
 
-1. Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions)組織の管理者アカウントの資格情報を使用してサインインします。 "" "" "" "
+1. [https://protection.office.com/permissions](https://protection.office.com/permissions)Microsoft 365 組織の管理者アカウントの資格情報を使用してサインインします。 "" "" "" "
 
-2. セキュリティ&amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
+2. セキュリティ &amp; /コンプライアンスセンターで、[**アクセス許可**] に移動します。 Office 365 で役割を表示および管理するためのリンクを選択します。
 
 3. ユーザーを追加する insider リスク管理役割グループを選択して、[**役割グループの編集**] を選択します。
 
@@ -118,7 +118,7 @@ Insider リスク管理は、不要な関係者への機密情報の意図的ま
     >ポリシーで定義されているリスクの高い活動に関する警告を受信するには、1つ以上のインジケーターを選択する必要があります。
 
 4. [**ポリシー**の期間] ページで、ユーザーが insider のリスクポリシーの一致をトリガーしたときに有効になる[ポリシー](insider-risk-management-policies.md#policy-timeframes)の期間を選択します。
-5. [**インテリジェントな検出**] ページで、insider リスクポリシーに関する[異常および不快な言語の検出](insider-risk-management-policies.md#intelligent-detections)を構成します。
+5. [**インテリジェントな検出**] ページで、[異常検出、不快感の検出、および](insider-risk-management-policies.md#intelligent-detections)insider のリスクポリシーのアラートボリュームレベルを構成します。
 6. [**保存**] を選択して、insider のリスクポリシーについてこれらの設定を有効にします。
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>手順 5 (必須): insider リスク管理ポリシーを作成する
@@ -142,8 +142,8 @@ Insider リスク管理ポリシーには、割り当てられたユーザーが
     - **機密情報の種類**: [**機密性の高い情報**の種類を追加] を選択し、優先度を設定する感度の種類を選択します。 たとえば、 *"米国の銀行口座番号"* や *"クレジットカード番号*" などです。
     - [**秘密度ラベル**]: [**感度ラベルの追加**] を選択し、優先順位を設定するラベルを選択します。 たとえば、 *"Confidential* " や *"Secret"* などです。
 7. [**次**へ] を選択して続行します。
-8. [**通知指標**] ページに、[ **Insider リスク設定** > **指標**] ページに定義したインジケーターが表示されます。 ウィザードの最初に*データリーク*テンプレートを選択した場合は、[ **dlp ポリシー** ] ドロップダウンリストから dlp ポリシーを選択する必要があります。
-9. [**監視ウィンドウの選択**] ページに、[ **Insider リスク設定** > **ポリシー**の期間] ページに表示されるポリシーの[監視ウィンドウの条件](insider-risk-management-policies.md#policy-timeframes)が表示されます。 [*従業員データの盗用を防止*する] ポリシーテンプレートを選択した場合は、[*アクティビティのポストの終了*] チェックボックスをオンにして、Microsoft 365 HR コネクタからインポートされた終了日の後にアクティビティを検出することができます。
+8. [**通知指標**] ページに、[ **Insider リスク設定**  >  **指標**] ページに定義したインジケーターが表示されます。 ウィザードの最初に*データリーク*テンプレートを選択した場合は、[ **dlp ポリシー** ] ドロップダウンリストから dlp ポリシーを選択する必要があります。
+9. [**監視ウィンドウの選択**] ページに、[ **Insider リスク設定**ポリシーの期間] ページに表示されるポリシーの[監視ウィンドウの条件](insider-risk-management-policies.md#policy-timeframes)が表示され  >  **Policy timeframes**ます。 [*従業員データの盗用を防止*する] ポリシーテンプレートを選択した場合は、[*アクティビティのポストの終了*] チェックボックスをオンにして、Microsoft 365 HR コネクタからインポートされた終了日の後にアクティビティを検出することができます。
 10. [**次**へ] を選択して続行します。
 11. [**レビュー** ] ページで、ポリシーに対して選択した設定を確認します。 [**編集**] を選択してポリシー値を変更するか、[ **Submit** ] を選択してポリシーを作成してアクティブ化します。
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: この記事では、Microsoft 365 の高度な電子情報開示の概要について説明します。これは、内部および外部の調査のためのツールです。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034907"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322042"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示ソリューションの概要
 
@@ -106,7 +106,3 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 ## <a name="configuring-case-settings"></a>ケース設定の構成
 
 大文字と小文字を区別して設定を構成するには、[**設定**] タブを使用します。 これには、ケースへのメンバーの追加、ケースのクローズまたは削除、および検索と分析の設定の構成が含まれます。
-
-## <a name="advanced-ediscovery-reports"></a>高度な電子情報開示レポート
-
-ホームページの高度な電子情報開示レポートを使用すると、組織がすべての高度な電子情報開示ケースにわたってアクティビティと状態を追跡するのに役立ちます。 高度な電子情報開示レポート機能は、ケース、保管担当者、データソース、および通信に関する情報を集約します。 さまざまな条件に基づいてレポートデータをフィルター処理し、集計情報を CSV ファイルにエクスポートしてさらに分析することができます。  詳細については、「 [Advanced eDiscovery レポート](advanced-ediscovery-reports.md)」を参照してください。

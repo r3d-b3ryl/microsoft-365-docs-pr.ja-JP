@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: ユーザーアカウントからライセンスを削除する方法について説明します。
-ms.openlocfilehash: 49d3b4b6786bc6ab66bc0416aac847ada592664d
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d4ac823a7345cb4d04f599c5635248d6ce324257
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139639"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322031"
 ---
 # <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 
@@ -115,7 +115,7 @@ ms.locfileid: "44139639"
 
 4. [**製品ライセンスの管理**] ウィンドウで、[**既存の製品ライセンス割り当てを置き換える**] \> [**次へ**] の順に選択します。
 
-5. [既存の製品を**置き換える**] ウィンドウの下部で、[選択した**ユーザーからすべての製品ライセンスを削除**する] チェックボックスをオンにし、[**閉じる**の**置換** \> ] を選択します。
+5. [既存の製品を**置き換える**] ウィンドウの下部で、[選択した**ユーザーからすべての製品ライセンスを削除**する] チェックボックスをオンにし、[閉じるの**置換**] を選択し \> **Close**ます。
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ ms.locfileid: "44139639"
 
 4. In the **Replace existing products** pane, select **Replace existing product license assignments** \> **Next**.
 
-5. [**既存製品の置換**] ウィンドウの下部で、[**選択したユーザーからすべての製品ライセンスを削除**する] チェックボックスをオンにし、[**置換** \> **閉じる** \> ] を選択し**ます。**
+5. [**既存製品の置換**] ウィンドウの下部で、[**選択したユーザーからすべての製品ライセンスを削除**する] チェックボックスをオンにし、[**置換**閉じる] を選択し \> **Close** \> **Close**ます。
 
 ::: moniker-end
 
@@ -143,7 +143,7 @@ ms.locfileid: "44139639"
 
 4. In the **Replace existing products** pane, select **Replace existing product license assignments** \> **Next**.
 
-5. [**既存製品の置換**] ウィンドウの下部で、[**選択したユーザーからすべての製品ライセンスを削除**する] チェックボックスをオンにし、[**置換** \> **閉じる** \> ] を選択し**ます。**
+5. [**既存製品の置換**] ウィンドウの下部で、[**選択したユーザーからすべての製品ライセンスを削除**する] チェックボックスをオンにし、[**置換**閉じる] を選択し \> **Close** \> **Close**ます。
 
 ::: moniker-end
 
@@ -159,9 +159,9 @@ ms.locfileid: "44139639"
 
 - OneDrive for Business に保存されたファイルは、ユーザーが Microsoft 365 管理センターから削除されているか、Active Directory 同期によって削除されていない限り、削除されないことに注意してください。 詳細については、「 [OneDrive の保持と削除](https://docs.microsoft.com/onedrive/retention-and-deletion)」を参照してください。
 
-- また、ユーザーのメールボックスは、コンテンツ検索や、ライセンスの削除時に電子情報開示ツールを使用して検索できなくなりました。 詳細については、「 [Microsoft 365 のコンテンツ検索](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes)」の「切断されたメールボックスまたはライセンスの解除済みメールボックスの検索」を参照してください。
+- また、ユーザーのメールボックスは、コンテンツ検索や、ライセンスの削除時に電子情報開示ツールを使用して検索できなくなりました。 詳細については、「 [Microsoft 365 のコンテンツ検索](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes)」の「切断されたメールボックスまたはライセンスの解除済みメールボックスの検索」を参照してください。
 
-- Office 365 Enterprise E3 などのエンタープライズサブスクリプションを使用している場合、Exchange Online では、[非アクティブなメールボックス](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365)を使用して、削除されたユーザーアカウントのメールボックスデータを保持することができます。 詳細については、「 [Exchange Online の非アクティブなメールボックスの作成と管理](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes)」を参照してください。
+- Office 365 Enterprise E3 などのエンタープライズサブスクリプションを使用している場合、Exchange Online では、[非アクティブなメールボックス](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365)を使用して、削除されたユーザーアカウントのメールボックスデータを保持することができます。 詳細については、「 [Exchange Online の非アクティブなメールボックスの作成と管理](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)」を参照してください。
 
 - ライセンスが削除された後で、ユーザーの Microsoft 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「元[の従業員を削除](../add-users/remove-former-employee.md)する」を参照してください。
 

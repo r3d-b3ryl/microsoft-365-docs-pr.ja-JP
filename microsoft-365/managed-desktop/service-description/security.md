@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 6b18b0c681950c2bce75045aef70dd3d021b0fb9
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 791a69433653de3960af6f8d8e1e9b23067dd6c0
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250437"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322007"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ
 
@@ -25,6 +25,7 @@ Microsoft マネージドデスクトップでは、管理されたデバイス�
 - [ネットワークセキュリティ](#network-security)– VPN 情報と Microsoft Managed Desktop 推奨ソリューションと設定
 - [情報セキュリティ](#information-security)–機密情報をさらに保護するためのオプションの利用可能なサービス 
 
+Microsoft マネージドデスクトップで使用されるデータストレージ、使用方法、およびセキュリティに関する作業の詳細については、ホワイトペーパー「」をダウンロードしてください [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
 
 Microsoft マネージドデスクトップでのセキュリティ運用チームの詳細、およびそれらがデバイスにセキュリティを提供する方法については、「 [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP)」を参照してください。 
 
@@ -48,7 +49,7 @@ Id およびアクセス管理により、企業の資産とビジネス上の�
 
 サービス | 説明
 --- | ---
-バイオメトリクス認証 |  Windows Hello を使用すると、ユーザーが顔または PIN を使用してログインできるようになり、パスワードを忘れることがなくなります。 お客様は、ハイブリッド構成でこのサービスを使用するために、オンプレミスの Active Directory に必要な前提条件を実装する責任があります。 詳細については、「 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 」を参照してください。 
+バイオメトリクス認証 |  Windows Hello を使用すると、ユーザーは顔または PIN を使用してサインインすることができ、パスワードを忘れることがなくなります。 お客様は、ハイブリッド構成でこのサービスを使用するために、オンプレミスの Active Directory に必要な前提条件を実装する責任があります。 詳細については、「 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 」を参照してください。 
 標準ユーザーアクセス許可 |  システムを保護し、より安全なものにするために、ユーザーには標準のユーザーアクセス許可が割り当てられます。 これは、Windows 自動操縦機能の一部として割り当てられます。
 
 
