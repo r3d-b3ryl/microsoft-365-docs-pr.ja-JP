@@ -13,14 +13,14 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: ''
-description: 組織内で Microsoft 365 Enterprise を展開するのに使用できるリソースについて説明します。
-ms.openlocfilehash: b37e7fa844a27596904e5684c5692c0193c35513
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: seo-marvel-apr2020
+description: 組織内で Microsoft 365 Enterprise を展開するのに使用できる各種リソースについて説明します。
+ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
+ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002357"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44031428"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Microsoft 365 Enterprise の展開
 
@@ -117,7 +117,7 @@ TLGs を使用すると、複雑な構成、ワークロード、またはエン
 
 同時に、高度なセキュリティ機能と製品との統合は管理のニーズを効率化し、IT ライフ サイクル全体で総保有コストを最小限に抑えるのに役立ちます。 
 
-Core Services Engineering and Operations (以前の Microsoft IT) で [Microsoft 365 でモダン ワークプレースが構築された方法](https://www.microsoft.com/en-us/itshowcase/microsoft-365)について説明します。
+Core Services Engineering and Operations (以前の Microsoft IT) で [Microsoft 365 でモダン ワークプレースが構築された方法](https://www.microsoft.com/ja-JP/itshowcase/microsoft-365)について説明します。
 
 > [!Note]
 > この web ページは、英語でのみ利用できます。
