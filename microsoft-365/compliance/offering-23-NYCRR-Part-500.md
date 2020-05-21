@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e5d9c847173af4155d6c9eb0f8c59a07053435c2
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602894"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066664"
 ---
 # <a name="title-23-nycrr-part-500"></a>Title 23 NYCRR Part 500
 
@@ -40,7 +40,7 @@ Microsoft では、Title 23 NYCRR Part 500 の規制を受ける金融サービ�
 - **最高情報セキュリティ責任者 (CISO) の任命**: サイバーセキュリティ プログラムの管理およびポリシーの適用における最高責任者です。 CISO を支援するために、Microsoft では Microsoft のクラウド展開に関する詳細なサイバーセキュリティ情報を [Azure Security Center](https://azure.microsoft.com/services/security-center/?v=17.23h)、[Office 365 Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/)、および [Power BI セキュリティ](https://go.microsoft.com/fwlink/?LinkId=829185)を通して提供しています。
 - **サイバーセキュリティ プログラムの有効性の監視とテスト**: Microsoft では、継続的な監視、定期的な侵入テスト、脆弱性評価などを含む、Microsoft によるサイバーセキュリティ活動の監査結果情報を提供しています。 お客様は、Microsoft からの事前の許可なしに独自のテストを実施できます。
 - **監査証跡の管理**:  お客様は、Azure、Office 365、および Power BI の組み込みの監査機能を使用して、財務取引の再現に使用できる情報の生成や監査証跡情報の整備を行えます。
-- **非公開情報が含まれる情報システムへのアクセスの制御**: Azure、Office 365、および Power BI で提供されている対策で、各サービス固有の役割ベースのアクセス制御 (RBAC) プロセス、すべての Microsoft 管理者に対する厳格なセキュリティとアクセス要件、およびすべての昇格されたアクセス権の要求に対する監査が含まれます。
+- **非公開情報が含まれる情報システムへのアクセスの制限**: Azure、Office 365、および Power BI で提供されている対策で、各サービス固有の役割ベースのアクセス制御 (RBAC) プロセス、すべての Microsoft 管理者に対する厳格なセキュリティとアクセス要件、およびすべての昇格されたアクセス権の要求に対する監査が含まれます。
 - **外部で開発されたアプリケーションのセキュリティの評価とテスト**: Visual Studio を使用する開発者の場合、管理コードのための[セキュリティ ルール](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code)を使用すると、コードの展開前にアプリケーションのサイバーセキュリティの脅威を検出し、軽減できます。
 - **定期的なリスク評価を使用した、サイバーセキュリティプログラムの設計と強化**: Microsoft はお客様のために、セキュリティの脅威に関する情報をまとめ、変更管理のロードマップを提供し、委託先会社に関する情報を定期的に更新します。 また、Microsoft では Microsoft 自体のサービスのリスク評価を定期的に実施し、評価結果をお客様に提供します。
 - **有資格担当者によるサイバーセキュリティのリスク管理とサイバーセキュリティ機能の監視**: Microsoft では、Microsoft の従業員による顧客データへのアクセスに対して厳密な手順を適用しています。 Microsoft が下請け業者を使用する場合、サービスの提供に対して Microsoft が責任を持ち、機密情報の取り扱い要件、身辺調査、機密保持契約を含む、Microsoft のプライバシーとセキュリティに関するコミットメントへの完全な準拠を下請け業者に対して要求します。
@@ -76,7 +76,3 @@ Microsoft では、Title 23 NYCRR Part 500 の規制を受ける金融サービ�
 - [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [クラウド コンピューティングの共同責任](https://aka.ms/sharedresponsibility)- 
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景資料をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf) ファイルをダウンロードできます。

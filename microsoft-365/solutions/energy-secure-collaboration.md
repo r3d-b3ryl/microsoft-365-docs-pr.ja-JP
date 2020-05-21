@@ -9,17 +9,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
+- M365solutions
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: エネルギー業界がデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がどのように役立つかを説明します
-ms.custom:
-- M365solutions
-ms.openlocfilehash: b0a791177f201e07d00ecbc4621509c1029c4734
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.custom: ''
+ms.openlocfilehash: 9c934c73ed42c369eadf9c0fa7cad1f0c0606ef1
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002242"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160669"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>エネルギー業界のための、コンプライアンスとセキュリティの重要な検討事項
 :::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="クラウドを使用してさまざまな業界のグローバルビューを表示する図と解説":::
@@ -199,7 +199,7 @@ Microsoft 365 監督ポリシーを使用すると、組織は、人事嫌がら
 
 通信コンプライアンスは、複数の通信チャネルを監視し、機械学習モデルを使用して、Office 365 メール、Microsoft Teams、Skype for Business Online、Facebook、Twitter、Bloomberg のインスタント メッセージを含む、潜在的なポリシー違反を特定できます。 通信コンプライアンスは、コンプライアンス チームが次の違反の可能性がないかメッセージを効果的かつ効率的に確認するのに役立ちます。
 - 許容される使用法、倫理基準、企業固有のポリシーなどの企業ポリシー 
-- 機密情報または機密事業情報の開示 (今後の買収、合併、収益の開示、再編、経営陣の変更などの機密プロジェクトに関する不正な通信)
+- 秘密度情報または機密事業情報の開示 (今後の買収、合併、収益の開示、再編、経営陣の変更などの機密プロジェクトに関する承認されていない通信)
 - 法令遵守要件 (組織がエネルギー市場の FERC 規制の遵守に関連する企業や取引の種類に関する従業員の通信)
 
 通信コンプライアンスには脅威、ハラスメント、冒涜的表現の分類子が組み込まれており、通信をレビューする際の偽陽性を減らすことがでます。 これにより、レビュー担当者の調査と修正プロセスの時間を節約することができます。 レビュー担当者は、ポリシー通知によって強調表示されている長いスレッド内の特定のメッセージに集中できます。 これにより、コンプライアンス チームはより迅速にリスクを特定し、修正することができます。 コンプライアンス チームは、ポリシーを簡単に構成および微調整し、組織の特定のニーズにソリューションを調整して、誤検知を減らすことができます。 通信コンプライアンスは、ユーザーの挙動を経時的に追跡して、危険な挙動やポリシー違反の潜在的なパターンを強調表示することもできます。 最後に、柔軟な組み込みの修復ワークフローが提供されるので、レビュー担当者は迅速にアクションを実行し、定義された企業プロセスに従って法務チームまたは人事チームにエスカレーションできます。

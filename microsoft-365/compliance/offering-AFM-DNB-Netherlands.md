@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d4efa625c4026ce87d0895d03b4a9993bb4bca40
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 09d6514a3b18535820f31b50736591314182d140
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602704"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066654"
 ---
 # <a name="dutch-authority-for-the-financial-markets-and-the-central-bank-of-the-netherlands"></a>オランダ金融市場局およびオランダ中央銀行
 
 ## <a name="about-the-afm-and-dnb"></a>AFM と DNB について
 
-オランダの主な金融規制当局は、[オランダの金融市場当局](https://afm.nl/en) ([ AutoriteitFinanciëleMarkten、AFM ](https://afm.nl/)) および[オランダ中央銀行](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank、DNB ](https://www.dnb.nl/home/)) です。 その役割が米国の SEC に匹敵する AFM は、「貯蓄、融資、投資、および保険市場の独立監督機関」です。 欧州中央銀行システム内の DNB は、金融政策を決定および実施し、オランダの金融機関の慎重な監督を行います。  
+オランダの主な金融規制当局は、[オランダの金融市場当局](https://afm.nl/en) ([ AutoriteitFinanciëleMarkten、AFM ](https://afm.nl/)) および[オランダ中央銀行](https://www.dnb.nl/en/home/index.jsp) ([De Nederlandsche Bank、DNB ](https://www.dnb.nl/home/)) です。 その役割が米国の SEC に匹敵する AFM は、貯蓄、融資、投資、および保険市場の独立監督機関です。" 欧州中央銀行システム内の DNB は、金融政策を決定および実施し、オランダの金融機関の慎重な監督を行います。  
   
 両機関は、欧州銀行監督局 (EBA) と協力して活動しており、「欧州の銀行セクター全体で効果的で一貫性のある健全な規制および監督を確保するために活動する独立機関です。」 そのため、EBA は、EU 圏内の金融機関によるクラウド コンピューティングの使用に対する包括的なアプローチ、[クラウド サービス プロバイダーへのアウトソーシングに関する推奨事項](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf )の概要を示しています。  
   
@@ -81,7 +81,3 @@ Microsoft チェックリストでは、オランダの金融機関による Mic
 - [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/A/E/5/AE505D51-DA54-4B2D-B1BD-C76D9102F36A/AFM-DNB-Compliance.pdf) ファイルをダウンロードできます。

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b4699ca9fda4f8d5364dff0fdabd868b886540b3
-ms.sourcegitcommit: b1ec6ba779a94ddbaab11a272e40abe1d3064532
+ms.openlocfilehash: 7a130275588b765514162cd08e37d9d5e512a409
+ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43165902"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44066162"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 
 ## <a name="about-gxp"></a>GxP について
 
-*GxP* という用語は、「ベスト プラクティス」ガイドラインおよび規定の一般的な略語です。 「x」は、臨床 (GCP)、製造 (GMP)、流通 (GDP)、実験室 (GLP)、農業(GAP) などの特定のフィールドを表します。 単一の規制機関または管理機関はありません。要件は、それぞれの国で類似していますが、各国には独自のガイドラインと規制機関があります。 GxP 規制には、[米国 FDA CFR Title 21 Part 11 ](https://aka.ms/FDA-CFR)および EU における [ EudraLex Volume 4 - GMP ガイドライン、付録 11 ](https://ec.europa.eu/health/documents/eudralex/vol-4_en)で概説されているものが含まれます。
+*GxP* という用語は、「ベスト プラクティス」ガイドラインと規定の一般的な略語です。 "x" は、臨床 (GCP)、製造 (GMP)、流通 (GDP)、実験室 (GLP)、農業(GAP) などの特定のフィールドを表します。 単一の規制機関または管理機関はありません。要件は、それぞれの国で類似していますが、各国には独自のガイドラインと規制機関があります。 GxP 規制には、[米国 FDA CFR Title 21 Part 11 ](https://aka.ms/FDA-CFR)および EU における [ EudraLex Volume 4 - GMP ガイドライン、付録 11 ](https://ec.europa.eu/health/documents/eudralex/vol-4_en)で概説されているものが含まれます。
 
 規制の目標は、規制対象業界の企業が安全に使用できる製品を製造し、製造プロセス中に厳しい品質基準を満たすことを目的としています。 GxP プロセスを使用するコンピューター化されたシステムは、GxP 要件の準拠の検証が必要であり、システムが要件を満たす能力を実証できる場合に適格と見なされます。
 
@@ -40,7 +40,7 @@ Microsoft は、ライフ サイエンス製品およびサービスの研究、
 
 これらの標準とベスト プラクティスは GxP 規制への準拠に特に焦点を合わせていませんが、目的は類似しており、Microsoft クラウド サービスに保存されたデータの機密性、整合性、可用性を保証します。
 
-Microsoft は、ライフ サイエンス業界向けの品質保証および規制GxPコンプライアンスに特化した独立組織である [Montrium](https://www.montrium.com/)を保持し、Microsoft の GxP 資格審査を実施しました。 作成された認定ガイドライン ([ Azure ](https://aka.ms/gxpcompliance)および[ Office 365 ](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)) は、クラウド サービスを使用して GxP 規制のコンピューター システムをホストおよびサポートすることを計画しているライフ サイエンス企業を対象としています。 ガイドラインでは、GxP 要件を満たすために Microsoft と顧客が分担する責任を特定し、範囲内の Microsoft クラウド サービスを利用する顧客が GxP コンピューター システムの制御を維持するために確立できるアクティビティと制御を推奨します。
+Microsoft は、ライフ サイエンス業界向けの品質保証および規制GxPコンプライアンスに特化した独立組織である [Montrium](https://www.montrium.com/)を保持し、Microsoft の GxP 資格審査を実施しました。 作成された認定ガイドライン ([ Azure ](https://aka.ms/gxpcompliance)および[ Office 365 ](https://aka.ms/o365-qualification-guideline)) は、クラウド サービスを使用して GxP 規制のコンピューター システムをホストおよびサポートすることを計画しているライフ サイエンス企業を対象としています。 ガイドラインでは、GxP 要件を満たすために Microsoft と顧客が分担する責任を特定し、範囲内の Microsoft クラウド サービスを利用する顧客が GxP コンピューター システムの制御を維持するために確立できるアクティビティと制御を推奨します。
 
 Azure および Office 365 で GxP ソリューションを構築するライフ サイエンス組織は、クラウドの効率性を活用しながら、患者の安全性、製品品質、データの整合性を保護できます。 また、顧客は、特定のレベルでデータのプライバシーと整合性を強化するセキュリティおよびガバナンス テクノロジー、運用上の慣行、コンプライアンス ポリシーの複数のレイヤーの恩恵を受けます。
 
@@ -53,7 +53,7 @@ Azure および Office 365 で GxP ソリューションを構築するライフ
 
 - [Azure GxP ガイドライン](https://aka.ms/gxpcompliance): GxP のベストプラクティスと規制に準拠した、Azure を使用するための包括的なツールセット。
 - [GxP システムで Azure を使用する](https://aka.ms/GXP-Azure-Strategies): ライフサイエンス企業が GxP アプリケーションを構築するための戦略を確立するのに役立ちます。
-- FDA CFR Title 21 第 11 部のガイド：電子記録の FDA ガイドラインに準拠する[ Azure ](https://aka.ms/Azure-FDA-Guidelines)および[ Office 365 ](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)認定戦略の確立に関するヘルプをご覧ください。
+- FDA CFR Title 21 第 11 部のガイド：電子記録の FDA ガイドラインに準拠する[ Azure ](https://aka.ms/Azure-FDA-Guidelines)および[ Office 365 ](https://aka.ms/o365-qualification-guideline)認定戦略の確立に関するヘルプをご覧ください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -66,8 +66,4 @@ Azure にアプリケーションを展開するお客様は、使用目的に�
 - [Microsoft と FDA CFR Title 21 第 11 部](offering-fda-cfr-title-21-part-11.md)
 - [Microsoft と ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft と ISO 9001](offering-iso-9001.md)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/4/5/B/45B4B144-E0D0-432E-A210-B8AF841F9A0A/GXP-Compliance.pdf) ファイルをダウンロードできます。
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
