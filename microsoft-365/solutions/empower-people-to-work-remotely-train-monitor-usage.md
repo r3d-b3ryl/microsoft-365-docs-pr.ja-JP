@@ -1,5 +1,5 @@
 ---
-title: '手順 6: リモートワーカーをトレーニングし、使用状況のフィードバックに対処する'
+title: 'ステップ 6: リモートワーカーをトレーニングし、使用状況のフィードバックに対処する'
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
 - M365solutions
+ms.custom: ''
 description: ユーザーをトレーニングして、問題にすばやく対処できるようにします。
-ms.openlocfilehash: 93ef4325ef042b33690662767f2484a9cf881475
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
+ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44003809"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44160728"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>手順 6: リモートワーカーをトレーニングし、使用状況のフィードバックに対処する
+# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>ステップ 6: リモートワーカーをトレーニングし、使用状況のフィードバックに対処する
 
 リモート ワーカーを以下の内容についてトレーニングします。
 
@@ -45,7 +45,7 @@ ms.locfileid: "44003809"
 
 必要に応じて、ユーザーの再トレーニングを行います。
 
-## <a name="results-of-step-6"></a>手順 6 の結果
+## <a name="results-of-step-6"></a>ステップ 6 の結果
 
 リモートワーカーはトレーニングを受けており、また、リモートアクセスおよび生産性のアプリやサービスについてフィードバックを提供したり、問題に応答するオープンフォーラムが用意されています。
 
