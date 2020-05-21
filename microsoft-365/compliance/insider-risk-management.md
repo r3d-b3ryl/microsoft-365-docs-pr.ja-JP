@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 8b7d60d8b1a3c7295dbeda93c9f2e017ca6f9282
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043308"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327883"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 での Insider リスク管理
 
@@ -79,7 +79,7 @@ Microsoft 365 での内部リスクアクティビティおよび insider リス
 - 状態
 - 重要度
 - 検出された時間
-- Case
+- ケース
 - ケースの状態
 
 詳細については、「 [Insider リスク管理の警告](insider-risk-management-alerts.md)」を参照してください。

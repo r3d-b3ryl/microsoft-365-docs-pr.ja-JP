@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: ドメインの詳細については、よく寄せられる質問の回答を参照してください。
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140751"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327114"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
@@ -187,7 +187,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**設定** \> ] ページに移動します。
+1. 管理センターで、[ドメインの**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
 
@@ -258,6 +258,8 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 - Skype for Business Online デスクトップ クライアントでは、自動検出を使用して Skype for Business Online サービスが自動的に検出されるため、ユーザーはサーバー名を入力せずにサインインできます。
     
 - Skype for Business Online モバイル クライアントでは、自動検出を使用して Skype for Business Online サービスが自動的に検出されるため、ユーザーはサーバー名を入力せずにサインインできます。
+
+- Microsoft Teams は、オンプレミスまたはオンラインのいずれかの Skype for Business とフェデレーションを行います。 詳細については、「 [Microsoft Teams 用に組織のネットワークを準備](https://docs.microsoft.com/microsoftteams/prepare-network)する」を参照してください。
     
  **SPF/TXT レコードがサポートされない場合** 、他のユーザーがドメインを使用して、スパムまたはその他の悪意のあるメールを送信できる可能性があります。SPF レコードは、ユーザーのドメインからメールを送信することを承認されているサーバーを識別することで動作します。 
   

@@ -11,12 +11,12 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Microsoft 365 コンプライアンスセンター (含まれる内容、その取得方法、および次の手順) について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f87fcbe2cd40b01a42d20da8e36ee4b1d7d3bbb4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2774e9944d01ac244d963e3dd510f82af8164e8e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637959"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327069"
 ---
 # <a name="microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンス センター
 
@@ -62,27 +62,27 @@ Microsoft 365 コンプライアンスセンターに最初にアクセスする
 
 |  |  |
 |---------|---------|
-|![Microsoft 365 コンプライアンスセンターのナビゲーション](../media/m365-compliance-center-leftnav.png)  | [**ホーム**] を選択して、Microsoft 365 コンプライアンスセンターのメインページに戻ります。 <br><br> [Trainable 分類子](classifier-getting-started-with.md)、[機密情報の種類](what-the-sensitive-information-types-look-for.md)、コンテンツおよび[アクティビティ](data-classification-activity-explorer.md)エクスプローラーにアクセスするには、[**データ分類**] セクションを選択します。 <br/><br/> Microsoft 365 サブスクリプションのデータをインポートおよびアーカイブするための[コネクタを構成](archiving-third-party-data.md)するには、[**データコネクタ**] を選択します。 <br><br> 通知に移動して[通知](alert-policies.md)を表示して**解決する** <br/><br/>**レポート**にアクセスして、[ラベルの使用状況と保持期間](sensitivity-labels.md)、 [DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中のサードパーティ製アプリ](https://docs.microsoft.com/cloud-app-security/discovered-apps)などに関するデータを表示します。 <br/><br/> [**ポリシー** ] に移動して、データの管理、デバイスの管理、[通知](../security/office-365-security/alerts.md)の受信を行うポリシーを設定します。 [DLP](data-loss-prevention-policies.md)および[アイテム保持](retention-policies.md)ポリシーにアクセスすることもできます。<br/><br/> [**アクセス許可**] を選択して、組織内の誰が Microsoft 365 コンプライアンスセンターにアクセスし、コンテンツを表示し、タスクを完了するかを管理します。 <br/><br/> 「 **Solutions** 」セクションのリンクを使用して、組織のコンプライアンスソリューションにアクセスします。 これには次のものが含まれます。 <br/><br/> [Catalog](microsoft-365-solution-catalog.md) <br> お客様の組織が利用できるインテリジェントなコンプライアンスおよびリスク管理ソリューションの詳細について説明し、使用を開始します。 <br/><br/> [監査](search-the-audit-log-in-security-and-compliance.md) <br> 監査ログを使用して、サポートとコンプライアンスに関する一般的な問題を調査します。 <br/><br/> [コンテンツ検索](search-for-content.md) <br> コンテンツ検索を使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所にあるドキュメント、Microsoft Teams および Skype for Business でのインスタントメッセージング会話をすばやく検索できます。 <br/><br/> [通信のコンプライアンス](communication-compliance.md) <br> 適切でないメッセージを自動的にキャプチャし、ポリシー違反の調査を行い、修復の手順を実行することによって、コミュニケーションのリスクを最小限に抑えます。 <br/><br/> [データの調査](overview-data-investigations.md) <br/> コンテンツの場所を検索して、Microsoft 365 全体の機密データ、悪意のあるデータ、または誤ったデータを特定します。これにより、データ流出などのインシデントを調査して修復できます。 <br/><br/> [データ損失防止](data-loss-prevention-policies.md) <br> 組織全体、クラウドおよびデバイス上で使用され、共有される機密コンテンツを検出し、偶発的なデータ損失を防ぐことができます。 <br/><br/> [データ サブジェクト要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br> 一般的なデータ保護規則 (GDPR) のデータ主体要求に対応するために、ユーザーの個人データを検索してエクスポートします。 <br/><br/> [電子情報開示](overview-ediscovery-20.md) <br> このセクションを展開すると、コアおよび上級電子情報開示を使用して、組織の内部および外部調査に応答するコンテンツを保持、収集、確認、分析、エクスポートすることができます。 <br/><br/> [情報ガバナンス](manage-information-governance.md) <br> ビジネスに不可欠なデータをインポート、保存、分類する機能を使用してコンテンツライフサイクルを管理し、必要な情報を保持して削除することができます。 <br/><br/> [情報保護](protect-information.md) <br> 組織全体のライフサイクルを通じて、機密情報とビジネスクリティカルなコンテンツを検出、分類、保護します。 <br/><br/> [Insider リスク管理](insider-risk-management.md) <br> 社内のリスクや脅威を迅速に特定し、調査し、アクションを実行できるように、組織全体のリスクのある活動を検出します。 <br/><br/> [レコード管理](records-management.md) <br> 組織内の規制、法的およびビジネスに不可欠なレコードの保持スケジュールを自動化し、簡素化します。
+|![Microsoft 365 コンプライアンスセンターのナビゲーション](../media/m365-compliance-center-leftnav.png)  | [**ホーム**] を選択して、Microsoft 365 コンプライアンスセンターのメインページに戻ります。 <br><br> [Trainable 分類子](classifier-getting-started-with.md)、[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)、コンテンツ、および[アクティビティ](data-classification-activity-explorer.md)エクスプローラーにアクセスするには、[**データ分類**] セクションを選択します。 <br/><br/> Microsoft 365 サブスクリプションのデータをインポートおよびアーカイブするための[コネクタを構成](archiving-third-party-data.md)するには、[**データコネクタ**] を選択します。 <br><br> 通知に移動して[通知](alert-policies.md)を表示して**解決する** <br/><br/>**レポート**にアクセスして、[ラベルの使用状況と保持期間](sensitivity-labels.md)、 [DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](https://docs.microsoft.com/cloud-app-security/file-filters)、[使用中のサードパーティ製アプリ](https://docs.microsoft.com/cloud-app-security/discovered-apps)などに関するデータを表示します。 <br/><br/> [**ポリシー** ] に移動して、データの管理、デバイスの管理、[通知](../security/office-365-security/alerts.md)の受信を行うポリシーを設定します。 [DLP](data-loss-prevention-policies.md)および[アイテム保持](retention-policies.md)ポリシーにアクセスすることもできます。<br/><br/> [**アクセス許可**] を選択して、組織内の誰が Microsoft 365 コンプライアンスセンターにアクセスし、コンテンツを表示し、タスクを完了するかを管理します。 <br/><br/> 「 **Solutions** 」セクションのリンクを使用して、組織のコンプライアンスソリューションにアクセスします。 これには次のものが含まれます。 <br/><br/> [Catalog](microsoft-365-solution-catalog.md) <br> お客様の組織が利用できるインテリジェントなコンプライアンスおよびリスク管理ソリューションの詳細について説明し、使用を開始します。 <br/><br/> [監査](search-the-audit-log-in-security-and-compliance.md) <br> 監査ログを使用して、サポートとコンプライアンスに関する一般的な問題を調査します。 <br/><br/> [コンテンツ検索](search-for-content.md) <br> コンテンツ検索を使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所にあるドキュメント、Microsoft Teams および Skype for Business でのインスタントメッセージング会話をすばやく検索できます。 <br/><br/> [通信のコンプライアンス](communication-compliance.md) <br> 適切でないメッセージを自動的にキャプチャし、ポリシー違反の調査を行い、修復の手順を実行することによって、コミュニケーションのリスクを最小限に抑えます。 <br/><br/> [データの調査](overview-data-investigations.md) <br/> コンテンツの場所を検索して、Microsoft 365 全体の機密データ、悪意のあるデータ、または誤ったデータを特定します。これにより、データ流出などのインシデントを調査して修復できます。 <br/><br/> [データ損失防止](data-loss-prevention-policies.md) <br> 組織全体、クラウドおよびデバイス上で使用され、共有される機密コンテンツを検出し、偶発的なデータ損失を防ぐことができます。 <br/><br/> [データ サブジェクト要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br> 一般的なデータ保護規則 (GDPR) のデータ主体要求に対応するために、ユーザーの個人データを検索してエクスポートします。 <br/><br/> [電子情報開示](overview-ediscovery-20.md) <br> このセクションを展開すると、コアおよび上級電子情報開示を使用して、組織の内部および外部調査に応答するコンテンツを保持、収集、確認、分析、エクスポートすることができます。 <br/><br/> [情報ガバナンス](manage-information-governance.md) <br> ビジネスに不可欠なデータをインポート、保存、分類する機能を使用してコンテンツライフサイクルを管理し、必要な情報を保持して削除することができます。 <br/><br/> [情報保護](protect-information.md) <br> 組織全体のライフサイクルを通じて、機密情報とビジネスクリティカルなコンテンツを検出、分類、保護します。 <br/><br/> [Insider リスク管理](insider-risk-management.md) <br> 社内のリスクや脅威を迅速に特定し、調査し、アクションを実行できるように、組織全体のリスクのある活動を検出します。 <br/><br/> [レコード管理](records-management.md) <br> 組織内の規制、法的およびビジネスに不可欠なレコードの保持スケジュールを自動化し、簡素化します。
 
 ## <a name="how-do-i-get-the-compliance-center"></a>コンプライアンスセンターを入手するにはどうすればよいですか?
 
 - 新しい Microsoft 365 コンプライアンスセンターが既にインストールされていない場合は、近日中に入手できます。 Microsoft 365 コンプライアンスセンターは、通常、Microsoft 365 SKU のお客様が利用できるようになりました。
 
-- Microsoft 365 コンプライアンスセンターにアクセスするには、グローバル管理者、コンプライアンス管理者、またはコンプライアンスデータ[https://compliance.microsoft.com](https://compliance.microsoft.com)管理者として、に移動してサインインします。
+- Microsoft 365 コンプライアンスセンターにアクセスするには、グローバル管理者、コンプライアンス管理者、またはコンプライアンスデータ管理者として、に移動 [https://compliance.microsoft.com](https://compliance.microsoft.com) してサインインします。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 **特定のポリシーの定義などのいくつかのタスクを完了するために、セキュリティ & コンプライアンスセンターに移動する理由は何ですか。**
 
-引き続き Microsoft 365 コンプライアンスセンターを開発しており、今後数か月の間に機能とソリューションを追加しています。 それまでは、セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) で完了する必要があるタスクがいくつかあります。 そのような場合は、監督ポリシーの作成や編集など、手動でタスクを実行できる場所に自動的に転送されます。
+引き続き Microsoft 365 コンプライアンスセンターを開発しており、今後数か月の間に機能とソリューションを追加しています。 それまでは、セキュリティ & コンプライアンスセンター () で完了する必要があるタスクがいくつかあり [https://protection.office.com](https://protection.office.com) ます。 そのような場合は、監督ポリシーの作成や編集など、手動でタスクを実行できる場所に自動的に転送されます。
 
 **新しい Microsoft 365 コンプライアンスセンターがまだ表示されないのはなぜですか?**
 
-最初に、適切なライセンスとアクセス許可を持っていることを確認してください。 その後、にサインイン[https://compliance.microsoft.com](https://compliance.microsoft.com)します。 新しいコンプライアンスセンターがまだ表示されていない場合は、まもなくインストールされます。
+最初に、適切なライセンスとアクセス許可を持っていることを確認してください。 その後、にサインインし [https://compliance.microsoft.com](https://compliance.microsoft.com) ます。 新しいコンプライアンスセンターがまだ表示されていない場合は、まもなくインストールされます。
 
 **コンプライアンス機能の一部は、Microsoft 365 コンプライアンスセンターでは使用できません。どうしようか。**
 
-引き続き Microsoft 365 コンプライアンスセンターに機能を追加しています。 監査ログの検索など、何かが見つからない場合は、セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) を使用します。 構成は、既存のセキュリティ & コンプライアンスセンターと、新しい Microsoft 365 コンプライアンスセンターの両方に、自動的に保存されます。
+引き続き Microsoft 365 コンプライアンスセンターに機能を追加しています。 監査ログの検索など、何かが見つからない場合は、セキュリティ & コンプライアンスセンター () を使用し [https://protection.office.com](https://protection.office.com) ます。 構成は、既存のセキュリティ & コンプライアンスセンターと、新しい Microsoft 365 コンプライアンスセンターの両方に、自動的に保存されます。
 
 そのためには、Microsoft 365 コンプライアンスセンターで、画面の左側のナビゲーションウィンドウで [**その他のリソース**] を選択し、[ **Office 365 セキュリティ & コンプライアンスセンター**] で [**開く**] を選択します。
 

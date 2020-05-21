@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159409"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327832"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Office 365 で自動調査と応答 (AIR) の使用を開始する
 
@@ -31,7 +31,7 @@ ms.locfileid: "44159409"
 
 ## <a name="the-overall-flow-of-air"></a>AIR の全体的な流れ
 
-高いレベルでは、アラートがトリガーされ、セキュリティによるプレイの開始と自動化された調査が行われて、結果と推奨事項が得られます。 エアフローの全体的な流れについては、次の手順を参照してください。
+高いレベルでは、アラートがトリガーされ、セキュリティによるプレイが自動化された調査が開始され、結果と推奨事項が表示されます。 エアフローの全体的な流れについては、次の手順を参照してください。
 
 1. 自動調査は、次のいずれかの方法で開始されます。
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210549"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327611"
 ---
 # <a name="communication-compliance-feature-reference"></a>コミュニケーションコンプライアンス機能のリファレンス
 
@@ -124,7 +124,7 @@ Office 365 の監督に関する定年に関する情報については、 [Micr
 - プライバシー
 - カスタム情報の種類
 
-機密情報の詳細および既定の種類に含まれているパターンの詳細については、「[機密情報の種類](what-the-sensitive-information-types-look-for.md)を確認する」を参照してください。
+機密情報の詳細および既定の種類に含まれているパターンの詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。
 
 ### <a name="custom-keyword-dictionaries"></a>ユーザー設定のキーワード辞書
 
@@ -151,7 +151,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 
 次の表では、各条件の詳細について説明します。
   
-|**Condition**|**この条件の使用方法**|
+|**条件**|**この条件の使用方法**|
 |:-----|:-----|
 | **コンテンツがこれらの分類子のいずれかと一致する** | メッセージに分類子が含まれている場合、または除外される場合にポリシーに適用します。 テナントで事前に定義されている分類子と、この条件に使用できるようにするためにカスタム分類子を個別に構成する必要があります。 ポリシーの条件として定義できる分類子は1つだけです。 分類子の構成の詳細については、「[分類子](classifier-getting-started-with.md)」を参照してください。 |
 | **コンテンツにこれらの機密情報の種類のいずれかが含まれている** | 機密情報の種類をメッセージに含めたり、除外したりするときにポリシーに適用します。 テナントで事前に定義されている分類子と、カスタム分類子は、条件の割り当てプロセスの一部として個別に構成することもできます。 選択した機密情報の種類は個別に適用されます。ポリシーをメッセージに適用するには、これらの機密情報の種類のいずれかを適用する必要があります。 カスタムの機密情報の種類の詳細については、「[カスタムの機密情報の種類](custom-sensitive-info-types.md)」を参照してください。 |

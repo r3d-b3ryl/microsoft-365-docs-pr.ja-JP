@@ -17,19 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0a721311706faccbd7563520183c7f198298dddc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 4305d97d33439383989cf8c300522268727b1ae7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173464"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327662"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft セキュリティスコア (プレビュー)
 
 >[!IMPORTANT]
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点https://security.microsoft.com/securescoreについては、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
+Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点については https://security.microsoft.com/securescore 、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
 
 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 Microsoft 365 セキュリティ センターの集中管理されたダッシュボードから、組織の Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視し、操作することができます。
 
@@ -101,6 +101,9 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 * アプリ (Office 365 や Microsoft Cloud App Security を含む、メール アプリとクラウド アプリ)
 * インフラストラクチャ (現在のところ、改善のための処置はありません)
 
+>[!NOTE]
+>Microsoft Secure Score の最近のリリースでは、Microsoft セキュリティスコアを Id のセキュリティで保護されたスコアと Graph API とは一時的に互換性がない、向上したスコアリングモデルがリリースされました。 [詳細の表示](microsoft-secure-score-preview.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 [Microsoft セキュア スコアの概要] ページでは、これらのグループ間でポイントがどのように分割され、どのポイントが利用可能であるかを確認できます。 また、[概要] ページでは、合計スコアの全表示ビュー、ベンチマーク比較によるセキュア スコア履歴の傾向、スコアを上げるために優先して実装できる改善のための処置を確認することができます。
 
 ![セキュア スコア ホームページ](../../media/secure-score/secure-score-homepage.png)
@@ -118,8 +121,8 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 特定の改善アクションを選択すると、完全なページポップアップが表示されます。  
 
-![改善アクションのポップアップ](../../media/secure-score/secure-score-improvement-action-details.png)
-の例*図 2: 改善アクションのポップアップの例*
+![改善アクションのポップアップの例 ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *図 2: 改善アクションのポップアップの例*
 
 この操作を完了するには、いくつかの選択肢があります。
 
@@ -175,6 +178,12 @@ Microsoft Secure Score は、システム構成、ユーザーの行動、およ
 ## <a name="whats-new"></a>新機能 
 
 Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
+
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Id のセキュリティで保護されたスコアとグラフ API の非互換性
+
+Microsoft Secure Score の最近のリリースでは、向上したスコアリングモデルがリリースされました。 これらの変更により、より柔軟かつ正確にセキュリティ状況を表示することができます。 しかし、これらの更新プログラムにより、Microsoft セキュリティスコアが Id のセキュリティで保護されたスコアと Graph API とは一時的に互換性がなくなりました。
+
+時間では、Id のセキュリティスコアと Graph API が新しいスコアリングモデルを採用します。 その後、Microsoft のセキュリティで保護されたスコア、Id のセキュリティで保護されたスコア、Graph API によって報告されたスコアの違いがわかります。 ご不便をかけて申し訳ございません。今後、このようなエクスペリエンスの互換性を確保するために取り組んでいます。
 
 ### <a name="april-2020"></a>2020 年 4 月
 

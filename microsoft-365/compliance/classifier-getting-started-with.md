@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 トレーニング可能な分類子は、陽性と陰性のサンプルを提供することによって、さまざまなタイプのコンテンツを認識するトレーニング ツールです。 分類子がトレーニングされると、その結果が正しいことを確認します。 次に、それを使用して組織のコンテンツを検索し、分類して保持または秘密度ラベルを適用するか、データ損失防止 (DLP) または保持ポリシーに含めます。
-ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292433"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327759"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -34,7 +34,7 @@ ms.locfileid: "44292433"
 この分類メカニズムのカテゴリには、次によるコンテンツの検索が含まれます。
 
 - キーワードまたはメタデータ値 (キーワード クエリ言語)
-- 社会保障、クレジット カード、銀行口座番号などの以前に特定された機密情報のパターンを使用する [(機密情報の種類)](what-the-sensitive-information-types-look-for.md)
+- ソーシャルセキュリティ、クレジットカード、または銀行口座番号[(機密情報の種類のエンティティ定義)](sensitive-information-type-entity-definitions.md)など、以前に識別された機密情報のパターンを使用する
 - テンプレートのバリエーションであるため、アイテムを認識する [(ドキュメント フィンガー プリント)](document-fingerprinting.md)
 - 正確な文字列の存在を使用する [(完全なデータ一致)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
@@ -117,7 +117,7 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 - [保持ラベル](labels.md)
 - [保持ポリシー](retention-policies.md)
 - [データ損失防止 (DLP)](data-loss-prevention-policies.md)
-- [秘密度ラベル](sensitivity-labels.md)
-- [機密情報の種類](what-the-sensitive-information-types-look-for.md)
-- [ドキュメント フィンガー プリント](document-fingerprinting.md)
-- [完全に一致するデータ](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [機密ラベル](sensitivity-labels.md)
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
+- [ドキュメントのフィンガープリント](document-fingerprinting.md)
+- [正確なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

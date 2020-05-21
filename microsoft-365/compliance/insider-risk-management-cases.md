@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804836"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327863"
 ---
 # <a name="insider-risk-management-cases"></a>Insider リスク管理ケース
 
@@ -101,7 +101,7 @@ Insider リスク管理**ケースダッシュボード**を使用すると、�
 4. **リスクアクティビティ chronology**: 対応する通知のバブルで利用可能なすべての詳細を含む、ケースに関連付けられているすべてのリスクアラートの完全な chronology が一覧表示されます。
 5. ケース**アクション**: ケースを解決するためのオプションは、ケースアクションツールバーにあります。 ケースを解決したり、従業員に電子メール通知を送信したり、データまたは従業員の調査のためにケースをエスカレートしたりすることができます。
 
-### <a name="content-explorer"></a>コンテンツ エクスプローラー
+### <a name="content-explorer"></a>コンテンツエクスプローラー
 
 [**コンテンツエクスプローラー** ] タブでは、リスクの通知に関連付けられている個々のファイルおよび電子メールメッセージのすべてのコピーをリスク分析者と調査担当者が確認できます。 たとえば、従業員が数百のファイルを SharePoint Online から USB デバイスにダウンロードする際に通知が作成され、そのアクティビティがポリシー警告をトリガーすると、その通知に関するすべてのダウンロードファイルが取得され、元のストレージソースから insider リスク管理ケースにコピーされます。
 
@@ -172,7 +172,7 @@ Insider リスク管理**ケースダッシュボード**を使用すると、�
 3. [**調査のためのエスカレーション**] ダイアログで、新入社員の調査の名前を入力します。 必要に応じて、ケースに関するメモを入力し、[**エスカレート**] を選択します。
 5. [**確認**] を選択して従業員の調査ケースを作成するか、[**キャンセル**] を選択して、新しい従業員調査ケースを作成せずにダイアログを閉じます。
 
-Insider リスク管理ケースが新しい従業員の調査ケースにエスカレートされた後、Microsoft 365 コンプライアンスセンターの**電子情報開示** > の**高度な**領域で新しいケースを確認できます。
+Insider リスク管理ケースが新しい従業員の調査ケースにエスカレートされた後、Microsoft 365 コンプライアンスセンターの**電子情報開示**の  >  **高度な**領域で新しいケースを確認できます。
 
 ### <a name="resolve-the-case"></a>ケースを解決する
 

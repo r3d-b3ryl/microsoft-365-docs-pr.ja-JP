@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーについて説明します。これには、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールがあります。
-ms.openlocfilehash: 84f076a45a3944d1d711a8e04199b357aa52791d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224644"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330747"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
@@ -129,7 +129,7 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 
 コンプライアンススコアの**向上アクション**は、コンプライアンスマネージャーの**アクションアイテム**に相当するものであることに注意してください。
 
-## <a name="permissions"></a>アクセス許可
+## <a name="permissions"></a>Permissions
 
 コンプライアンス マネージャーでは、役割に基づくアクセス許可モデルが使用されています。 コンプライアンス マネージャーにはユーザー ロールが割り当てられているユーザーのみがアクセスでき、各ユーザーに許可される操作は役割の種類によって制限されます。 各アクセス許可に対して許可されるアクションを示す[表を表示](working-with-compliance-manager.md#permissions)します。
 
@@ -155,20 +155,21 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 1. [ブラジルの一般データ保護法 (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
 2. [カリフォルニアコンシューマ Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (プレビュー)
 3. [Cloud Security アライアンス (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [欧州連合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-5. [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://go.microsoft.com/fwlink/?linkid=2109077)
-6. [FedRAMP モデレート](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / [エコー](https://go.microsoft.com/fwlink/?linkid=2109079)
-8. [Irap](https://go.microsoft.com/fwlink/?linkid=2113709)  / [オーストラリア自治体 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (プレビュー)
-9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-12. [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-13. [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075)
-14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-15. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+4. [Dubai Information Security Resolution (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193)
+5. [欧州連合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+6. [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](https://go.microsoft.com/fwlink/?linkid=2109077)
+7. [FedRAMP モデレート](https://go.microsoft.com/fwlink/?linkid=2108869)
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / [エコー](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [Irap](https://go.microsoft.com/fwlink/?linkid=2113709)  / [オーストラリア自治体 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (プレビュー)
+10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+13. [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+14. [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075)
+15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+16. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## <a name="secure-score-integration"></a>セキュリティで保護されたスコアの統合
 
@@ -180,7 +181,7 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 
 [コンプライアンスマネージャーの作業](working-with-compliance-manager.md)を開始して、組織の法令遵守活動を管理します。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - [対話型ガイド: コンプライアンスマネージャーを使用してデータ保護コントロールを評価し、強化します。](https://content.cloudguides.com/guides/Compliance%20Manager)
 - [Microsoft Security、プライバシー、コンプライアンスの技術コミュニティ](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/ct-p/SecurityPrivacyCompliance)

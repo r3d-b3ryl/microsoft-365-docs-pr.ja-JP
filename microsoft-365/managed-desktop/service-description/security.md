@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 791a69433653de3960af6f8d8e1e9b23067dd6c0
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 1f86c904d3168eef84b4d48d8d578dd7a935267c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322007"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327728"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ
 
@@ -25,7 +25,7 @@ Microsoft マネージドデスクトップでは、管理されたデバイス�
 - [ネットワークセキュリティ](#network-security)– VPN 情報と Microsoft Managed Desktop 推奨ソリューションと設定
 - [情報セキュリティ](#information-security)–機密情報をさらに保護するためのオプションの利用可能なサービス 
 
-Microsoft マネージドデスクトップで使用されるデータストレージ、使用方法、およびセキュリティに関する作業の詳細については、ホワイトペーパー「」をダウンロードしてください [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
+Microsoft マネージドデスクトップで使用されるデータストレージ、使用方法、セキュリティプラクティスの詳細については、ホワイトペーパー「」をダウンロードしてください [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
 
 Microsoft マネージドデスクトップでのセキュリティ運用チームの詳細、およびそれらがデバイスにセキュリティを提供する方法については、「 [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP)」を参照してください。 
 

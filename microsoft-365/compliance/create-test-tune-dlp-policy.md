@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、および調整する方法について説明します。
-ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035759"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327799"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーを作成、テスト、調整する
 
@@ -51,7 +51,7 @@ DLP は、コンテンツ分析エンジンを使用してメール メッセー
 - "新しいラップトップをご注文いただくことができます。 VISA カード1111-1111-1111-1111、有効期限11/22、および自分が所有しているときに送信する予定の日付を送信する
 - "My ラップトップのシリアル番号は2222-2222-2222-2222 で、11/2010 で購入されました。 ところで、旅行 visa は承認されていますか?
 
-ブックマークされた状態を維持するための適切なリファレンスは、それぞれの情報の種類がどのように検出されるかを説明するこの[機密情報の種類に関するトピック](what-the-sensitive-information-types-look-for.md)です。
+ブックマークを保持するための適切な参照は、[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)で、各情報の種類が検出される方法を説明しています。
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>データ損失防止を開始する場所
 
@@ -95,7 +95,7 @@ Microsoft 365 には、DLP ポリシーの作成に使用できる一連の[dlp 
 
 ## <a name="test-a-dlp-policy"></a>DLP ポリシーをテストする
 
-新しい DLP ポリシーは、約 1 時間以内に有効になります。 通常のユーザー アクティビティによってトリガーされるのを待つことも、試しに自分でトリガーすることもできます。 先ほど、この[機密情報の種類に関するトピック](what-the-sensitive-information-types-look-for.md)にリンクをしました。これは、DLP の一致をトリガーする方法に関する情報を提供します。
+新しい DLP ポリシーは、約 1 時間以内に有効になります。 通常のユーザー アクティビティによってトリガーされるのを待つことも、試しに自分でトリガーすることもできます。 前述の[「機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」にリンクされており、DLP 一致をトリガーする方法に関する情報を提供します。
 
 例として、この記事のために作成した DLP ポリシーはオーストラリアのタックス ファイル ナンバー (TFN) を検出します。 ドキュメントによると、一致は以下の基準に基づいています。
 
@@ -192,7 +192,7 @@ DLP ポリシー テンプレートは、そのままでは完璧ではありま
 
 インスタンス数の変更に加えて、一致の精度 (または信頼レベル) を調整することもできます。 機密情報の種類に複数のパターンがある場合、ルールが特定のパターンのみに一致するように、ルールの一致の精度を調整できます。 たとえば、誤検出を減らすためにルールの一致の精度を設定して、最も高い信頼レベルを持つパターンのみと一致するようにできます。 信頼レベルの計算方法を理解することは少し難しい (そしてこの投稿の範囲を超えている) のですが、ここに[信頼レベルを使用してルールを調整する方法](data-loss-prevention-policies.md#match-accuracy)の良い説明があります。
 
-最後に、さらに高度な情報が必要な場合には、機密情報の種類をカスタマイズできます。たとえば、[オーストラリアの運転免許証](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)のキーワードのリストから "Sydney NSW" を削除して、上記の誤検知を排除できます。 XML および PowerShell を使用してこれを行う方法については、[組み込みの機密情報の種類のカスタマイズ](customize-a-built-in-sensitive-information-type.md)に関するこのトピックを参照してください。
+さらに高度な機能を利用する場合は、機密情報の種類をカスタマイズすることができます。たとえば、[オーストラリアドライバーのライセンス番号](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)のキーワードの一覧から "シドニー NSW" を削除して、上記の誤検知を排除することができます。 XML および PowerShell を使用してこれを行う方法については、[組み込みの機密情報の種類のカスタマイズ](customize-a-built-in-sensitive-information-type.md)に関するこのトピックを参照してください。
 
 ## <a name="turn-on-a-dlp-policy"></a>DLP ポリシーを有効にする
 

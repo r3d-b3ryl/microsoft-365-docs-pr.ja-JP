@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 80b7e209f87d3612e753127f5d1a1b3c36304cc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209420"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330851"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>試用版ラボ環境用に Microsoft Threat Protection の柱を構成する
 
@@ -237,5 +237,14 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 16. 下にスクロールして [**保存の設定**] をクリックし、新しい統合を確認します。
 <br>![クリックする必要があるイメージ of_Save の設定] ボタン](../../media/mtp-eval-72.png) <br>
 
+## <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
+1. [Microsoft 365 セキュリティセンター](https://security.microsoft.com/homepage)に移動します。 [**設定**] に移動し、[ **Microsoft Threat Protection**] を選択します。
+<br>![Microsoft 365 セキュリティセンターの [設定] ページの [イメージ of_Microsoft 脅威保護] オプションのスクリーンショット](../../media/mtp-eval-72b.png) <br>
+
+2. [ **Microsoft Threat Protection を有効にする**] チェックボックスをオンにし、[**保存**] をクリックします。
+<br>![Microsoft 365 セキュリティセンターの [設定] ページの [イメージ of_Microsoft 脅威保護] オプションのスクリーンショット](../../media/mtp-eval-72c.png) <br>
+
+おめでとうございます! Microsoft の脅威保護試用版ラボ環境を作成したばかりです。 これで、攻撃をシミュレートし、製品間の機能を検出して通知を作成し、エンドポイントへの fileless 攻撃に自動的に対応する方法を確認できます。
+
 ## <a name="next-steps"></a>次の手順
-[Microsoft の脅威保護を有効](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service)にしてから、[テストの警告を生成](generate-test-alert.md)します。
+[テスト警告を生成](generate-test-alert.md)します。

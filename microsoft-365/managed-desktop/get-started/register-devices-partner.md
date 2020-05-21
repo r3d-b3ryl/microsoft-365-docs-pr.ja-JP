@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: dc446281e8a791b59a9ac97592ff6a53dcde310c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557565"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327058"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>デバイスを登録するためのパートナー向け手順
 
@@ -22,69 +22,40 @@ ms.locfileid: "42557565"
 
 
 ## <a name="prepare-for-registration"></a>登録の準備 
-お客様の登録を完了する前に、[パートナーセンター](https://partner.microsoft.com/dashboard)で、お客様との関係を確立する必要があります。 [ **Azure Active Directory および Office 365 の委任管理者特権を含める**] チェックボックスをオンにします。 詳細については、[パートナーセンターのヘルプ](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)を参照してください。
-
-お客様のために登録を完了するには、まず CSV ファイルを作成します。
-
->[!NOTE]
->便宜上、この*パートナーバージョン*用の[サンプル CSV ファイル](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)をダウンロードすることができます。
-
-ファイルには、サンプル 1 (製造元、モデルなど) と**まったく同じ列見出し**を含める必要がありますが、その他の行については独自のデータを含める必要があります。 テンプレートを使用している場合は、メモ帳などのテキスト編集ツールでそのテンプレートを開き、行1のみにデータを入力し、2行以下にデータを入力することを検討します。 
-    
-  ```
- Manufacturer,Model,Serial Number
-  SpiralOrbit,ContosoABC,000000000000
-  
-  
-  ```
+お客様の登録を完了する前に、[パートナーセンター](https://partner.microsoft.com/dashboard)で、お客様との関係を確立する必要があります。 そのプロセスの詳細については、[同意書](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization)を参照してください。 すべての CSP パートナーは、お客様が同意する限り、お客様の代わりにデバイスを追加できます。 パートナー関係および自動操縦のアクセス許可の詳細については、[パートナーセンターのヘルプ](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#windows-autopilot)を参照してください。
 
 
+> [!NOTE]
+> このドキュメントは、パートナーと Oem のみを対象としています。 自己登録のプロセスについては、「 [Microsoft マネージドデスクトップの登録デバイス](register-devices-self.md)」に記載されています。
 
 
->[!NOTE]
->この形式は、パートナープロセスにのみ使用できます。 自己登録のプロセスについては、「 [Microsoft マネージドデスクトップの登録デバイス](register-devices-self.md)」に記載されています。
+## <a name="register-devices-by-using-partner-center"></a>パートナーセンターを使用してデバイスを登録する
 
->[!IMPORTANT]
->これらの値は、大文字と小文字を含めて、SMBIOS からの製造元の値と正確に一致する必要があります。 
-
-- デバイスの製造元 (例: SpiralOrbit) 
-- デバイスモデル (例: ContosoABC)
-- デバイスのシリアル番号
-
-## <a name="register-devices-by-using-the-azure-portal"></a>Azure ポータルを使用してデバイスを登録する
-
-Azure Portal を使用して登録することは、セルフサービスの場合と同じですが、ポータルには別の方法でアクセスする点が異なります。 次の手順を実行します。
+お客様との関係を確立したら、次の手順に従って、パートナーセンターを活用して、関係のあるお客様のためにデバイスを自動操縦に追加できます。
 
 1. [パートナーセンター](https://partner.microsoft.com/dashboard)への移動
-2. [**顧客**] を選択します。
-3. 管理する顧客を選択します。
-4. [**サービスの管理**] を選択します。
-5. [ **Intune**] を選択します。
-6. Azure portal の上部の検索ボックスで「mmd」を検索します。
-7. [**デバイス**] を選択します。
-8. [**ファイルのアップロード**] で、以前に作成した CSV ファイルへのパスを指定します。
-9. 必要に応じて、独自の追跡目的のために、**注文 id**または**購買 id**を追加することもできます。 これらの値に書式の要件はありません。
-10. [**デバイスの登録**] を選択します。 システムによってデバイス**ブレード**上のデバイスの一覧にデバイスが追加され、[**登録保留中**] としてマークされます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは**ユーザーのための準備**完了として表示され、エンドユーザーが使用を開始するのを待っています。
+2. パートナーセンターメニューから [**顧客**] を選択し、管理するデバイスのお客様を選択します。
+3. お客様の詳細ページで、[**デバイス**] を選択します。
+4. [デバイスへの**プロファイルの適用**] で、[**デバイスの追加**] を選択します。
+5. グループ名の**Microsoft365Managed_Autopilot**を入力し、[**参照**] を選択して、顧客のリスト (.csv ファイル形式) をパートナーセンターにアップロードします。
 
 
-メインの**Microsoft Managed Desktop-Devices**ページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
+> [!IMPORTANT]
+> グループ名は、大文字と小文字を区別し**Microsoft365Managed_Autopilot**正確に一致する必要があります。 これにより、新しく登録されたデバイスを Microsoft Managed Desktop 自動操縦プロファイルに割り当てることができます。
 
-| State | 説明 |
-|---------------|-------------|
-| 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
-| 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](register-devices-self.md#troubleshooting-device-registration)」を参照してください。 |
-| ユーザーの準備完了 | 登録が成功し、デバイスをエンドユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| Active | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
-| 未使用 | デバイスはエンドユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  |
+>[!NOTE]
+> この .csv ファイルは、デバイスの購入時に入手する必要があります。 .Csv ファイルを受け取っていない場合は、「 [Windows 自動操縦にデバイスを追加する](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)」の手順に従って作成します。 Windows PowerShell スクリプトは、 [Microsoft Managed Desktop 管理ポータル](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash)で使用されているものとは異なります。 パートナーは[、g-et-windowsautopilotinfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)を使用してパートナーセンターの Microsoft マネージドデスクトップデバイスにデバイスを登録する必要があります。
+
+.Csv ファイルのアップロード中にエラーメッセージが表示される場合は、ファイルの形式を確認してください。 ハードウェアハッシュのみ、または OEM 名、シリアル番号、モデル (その列の順序)、または Windows 製品 ID を使用できます。 次のリンクから提供されているサンプル .csv ファイルを使用して、[デバイスの**追加**] リストを作成することもできます。 
+
+パートナーシナリオでの自動操縦の詳細については、「[顧客のアカウントにデバイスを追加する](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account)」を参照してください。
 
 
+## <a name="register-devices-by-using-the-oem-api"></a>OEM API を使用してデバイスを登録する
 
-## <a name="troubleshooting"></a>トラブルシューティング
+顧客の登録を完了する前に、顧客との関係を確立する必要があります。 それぞれの顧客に提供する固有のリンクを用意する必要があります。 「 [OEM の関係を確立する方法」を](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization)参照してください。
 
-| エラー メッセージ | 詳細 |
-|---------------|-------------|
-| デバイスが見つかりません | 提供された製造元、モデル、またはシリアル番号に一致するものが見つからなかったため、このデバイスを登録できませんでした。 これらの値は、デバイスの提供元に確認してください。 |
-| ハードウェアハッシュが無効です | このデバイスに対して提供されたハードウェアハッシュが正しくフォーマットされていませんでした。 ハードウェアハッシュをもう一度確認してから再送信します。 |
-| デバイスは既に登録されています | このデバイスは既に組織に登録されています。 その他のアクションは必要ありません。 |
-| 別の組織によって要求されるデバイス | このデバイスは、既に別の組織によって要求されています。 デバイスサプライヤーに確認します。 |
-| 予期しないエラーです | 要求は自動的に処理されませんでした。 サポート<support link>に連絡して、要求 ID を提供します。<requestId> |
+関係を確立したら、グループタグ**Microsoft365Managed_Autopilot**を使用して、顧客用のデバイスの登録を開始できます。
+
+> [!IMPORTANT]
+> グループ名は、大文字と小文字を区別し**Microsoft365Managed_Autopilot**正確に一致する必要があります。 これにより、新しく登録されたデバイスを Microsoft Managed Desktop 自動操縦プロファイルに割り当てることができます。

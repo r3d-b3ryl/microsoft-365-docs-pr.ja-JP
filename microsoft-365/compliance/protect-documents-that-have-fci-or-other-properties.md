@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 多くの組織では、Windows Server ファイル分類インフラストラクチャ (FCI) の分類プロパティ、SharePoint のドキュメントプロパティ、またはサードパーティシステムによって適用されるドキュメントプロパティを使用して、機密情報を識別して分類するプロセスが既にあります。 これが組織を説明している場合は、Windows Server FCI または他のシステムによってドキュメントに適用されたプロパティを認識する DLP ポリシーを作成して、特定の FCI またはその他のプロパティ値を持つ Office ドキュメントに DLP ポリシーを適用できるようにすることができます。
-ms.openlocfilehash: e2b64412a6f35dc3f29fe538a849f84e764af156
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632202"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327103"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する
 
@@ -54,13 +54,13 @@ DLP は検索クローラーを使用してサイト上の機密情報を識別�
 
 1. Microsoft 365 管理センターにサインインします。
     
-2. 左側のナビゲーションで、[**管理センター** \> **SharePoint**] を選択します。 SharePoint 管理センターが表示されます。
+2. 左側のナビゲーションで、[**管理センター** SharePoint] を選択し \> **SharePoint**ます。 SharePoint 管理センターが表示されます。
     
-3. 左側のナビゲーションで、[検索**管理** \> ] ページ\>の **[検索] を選択し**ます。**検索スキーマを管理**します。
+3. 左側のナビゲーションで、[検索管理] ページの [**検索] を選択し** \> **search administration** \> ます。**検索スキーマを管理**します。
     
     ![SharePoint 管理センターの検索管理ページ](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
-4. [**管理プロパティ**] ページ\>で、**新しい管理プロパティを追加**します。
+4. [**管理プロパティ**] ページで、 \> **新しい管理プロパティを追加**します。
     
     ![[新しい管理プロパティ] ボタンが強調表示されている[プロパティ管理] ページ](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
@@ -70,13 +70,13 @@ DLP は検索クローラーを使用してサイト上の機密情報を識別�
     
 7. [**主な特徴**] では [**クエリ可能**] と [**取得可能**] を選択します。
     
-8. [**クロール** \>されたプロパティへのマッピング] で**マッピングを追加**します。
+8. [クロールされた**プロパティへのマッピング**] で \> **マッピングを追加**します。
     
-9. [クロールされた**プロパティ**の\>選択] ダイアログボックスで、 \> **DLP ポリシーで**使用する Windows Server fci プロパティまたはその他のプロパティに対応するクロールされたプロパティを検索して選択します。
+9. [クロールされた**プロパティの選択**] ダイアログボックスで、 \> DLP ポリシーで使用する Windows Server fci プロパティまたはその他のプロパティに対応するクロールされたプロパティを検索して選択し \> **OK**ます。
     
     ![[クロールされたプロパティの選択] ダイアログ ボックス](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
-10. ページ\>の下部にある **[OK] をクリック**します。
+10. ページの下部にある \> **[OK] をクリック**します。
     
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>FCI プロパティまたは他のプロパティを使用する DLP ポリシーを作成する
 
@@ -92,13 +92,13 @@ DLP は検索クローラーを使用してサイト上の機密情報を識別�
     
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>PowerShell を使用して DLP ポリシーを作成する
 
-Condition**ドキュメントプロパティにこれらの値のいずれかが含ま**れていることに注意してください&amp; 。これらの値は、セキュリティコンプライアンスセンターの UI では一時的に使用できませんが、PowerShell を使用してこの条件を引き続き使用することができます。 コマンドレットを使用して DLP ポリシーを操作`ContentPropertyContainsWords`し、パラメーターを指定`New\Set\Get-DlpComplianceRule`したコマンドレットを使用して、条件**ドキュメントプロパティにこれらの値のいずれかを含める**ことができます。 `New\Set\Get-DlpCompliancePolicy`
+Condition**ドキュメントプロパティにこれらの値のいずれかが含ま**れていることに注意してください。これらの値は、セキュリティコンプライアンスセンターの UI では一時的に使用できません &amp; が、PowerShell を使用してこの条件を引き続き使用することができます。 コマンドレットを使用して `New\Set\Get-DlpCompliancePolicy` DLP ポリシーを操作し、パラメーターを指定したコマンドレットを使用して、 `New\Set\Get-DlpComplianceRule` `ContentPropertyContainsWords` 条件**ドキュメントプロパティにこれらの値のいずれかを含める**ことができます。
   
-これらのコマンドレットの詳細については、「[セキュリティ&amp;コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
+これらのコマンドレットの詳細については、「[セキュリティ &amp; コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)」を参照してください。
   
-1. [リモート PowerShell を使用&amp;してセキュリティコンプライアンスセンターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [&amp;リモート PowerShell を使用してセキュリティコンプライアンスセンターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. を使用`New-DlpCompliancePolicy`してポリシーを作成します。
+2. を使用してポリシーを作成し `New-DlpCompliancePolicy` ます。
 
 すべての場所に適用する DLP ポリシーを作成する PowerShell の例を次に示します。
 
@@ -106,7 +106,7 @@ Condition**ドキュメントプロパティにこれらの値のいずれかが
 New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
 ```
 
-3. 上記の2つのルールを使用`New-DlpComplianceRule`して、1つのルールを**低**値に、もう1つは**高**および中**程度**のルールを作成します。 
+3. 上記の2つのルールを使用して `New-DlpComplianceRule` 、1つのルールを**低**値に、もう1つは**高**および中**程度**のルールを作成します。 
     
     これら2つのルールを作成する PowerShell の例を次に示します。 プロパティ名と値のペアは二重引用符で囲まれており、プロパティ名でコンマで区切って複数の値を指定する場合は、次のようにスペースを含めません。`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
@@ -135,9 +135,9 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
   
 ### <a name="re-index-a-site-optional"></a>サイトを再インデックス付けする (省略可能)
 
-1. サイトで、[**設定**] (右上にある歯車アイコン\> ) [**サイトの設定**] を選択します。
+1. サイトで、[**設定**] (右上にある歯車アイコン) [サイトの設定] を選択し \> **Site Settings**ます。
     
-2. [**検索**] で、[**検索とオフライン可用性** \> **インデックス作成サイト**] を選択します。
+2. [**検索**] で、[**検索とオフライン可用性**インデックス作成サイト] を選択し \> **Reindex site**ます。
     
 ## <a name="more-information"></a>詳細情報
 
@@ -149,4 +149,4 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類インベントリ](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
