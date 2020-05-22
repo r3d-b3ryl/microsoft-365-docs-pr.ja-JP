@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 トレーニング可能な分類子は、陽性と陰性のサンプルを提供することによって、さまざまなタイプのコンテンツを認識するトレーニング ツールです。 分類子がトレーニングされると、その結果が正しいことを確認します。 次に、それを使用して組織のコンテンツを検索し、分類して保持または秘密度ラベルを適用するか、データ損失防止 (DLP) または保持ポリシーに含めます。
-ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327759"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339915"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -33,10 +33,10 @@ ms.locfileid: "44327759"
 
 この分類メカニズムのカテゴリには、次によるコンテンツの検索が含まれます。
 
-- キーワードまたはメタデータ値 (キーワード クエリ言語)
-- ソーシャルセキュリティ、クレジットカード、または銀行口座番号[(機密情報の種類のエンティティ定義)](sensitive-information-type-entity-definitions.md)など、以前に識別された機密情報のパターンを使用する
-- テンプレートのバリエーションであるため、アイテムを認識する [(ドキュメント フィンガー プリント)](document-fingerprinting.md)
-- 正確な文字列の存在を使用する [(完全なデータ一致)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
+- キーワードまたはメタデータ値 (キーワードクエリ言語)。
+- ソーシャルセキュリティ、クレジットカード、または銀行口座番号[(機密情報の種類のエンティティ定義)](sensitive-information-type-entity-definitions.md)など、以前に識別された機密情報のパターンを使用します。
+- テンプレートのバリエーションであるためにアイテムを認識する[(ドキュメントのフィンガープリント)](document-fingerprinting.md)。
+- 正確な文字列の存在[(正確なデータ一致)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)を使用します。
 
 次に、秘密度ラベルと保持ラベルを自動的に適用して、コンテンツを[データ損失防止 (DLP)](data-loss-prevention-policies.md) および[保持ポリシー](retention-policies.md)で使用できるようにします。
 
@@ -44,8 +44,10 @@ ms.locfileid: "44327759"
 
 この分類方法は、手動または自動のパターン マッチング方法では簡単に識別できないコンテンツに特に適しています。 この分類方法は、アイテムに含まれる要素ではなく、アイテムが何であるかに基づいてアイテムを識別するように分類子をトレーニングすることです (パターン マッチング)。 分類子は、分類したいコンテンツの数百の例を見て、コンテンツのタイプを識別する方法を学びます。 それを間違いなくカテゴリーにある例に与えることから始めます。 それらを処理したら、一致する例と一致しない例の両方を組み合わせてテストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 その後、その結果を確認し、陽性、陰性、偽陽性、偽陰性に仕分けし、その予測の正確性を高めます。 トレーニング済みの分類子を公開すると、SharePoint Online、Exchange、OneDrive などの場所にあるアイテムが並べ替えられ、コンテンツが分類されます。
 
-> [!IMPORTANT]
-> 組み込みの分類子とトレーニング可能な分類子の両方が、[条件に基づく保持ラベル ポリシーの自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)と[通信コンプライアンス](communication-compliance.md)の条件として使用できます。 秘密度ラベルは、組み込みの分類子を条件としてのみ使用できます。「[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)」をご覧ください。
+### <a name="where-you-can-use-trainable-classifiers"></a>Trainable 分類子を使用できる場所
+組み込みの分類子とトレーニング可能な分類子の両方が、[条件に基づく保持ラベル ポリシーの自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)と[通信コンプライアンス](communication-compliance-configure.md)の条件として使用できます。 
+
+機密ラベルは、組み込みの分類子を使用して、独自の分類子を条件として使用できます。「[機密ラベルをコンテンツに自動的に適用](apply-sensitivity-label-automatically.md)する」および「 [Office アプリの自動ラベル付け](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)」を参照してください。
 
 > [!IMPORTANT]
 > トレーニング可能な分類子は、暗号化されていない英語のアイテムでのみ機能します。
@@ -53,6 +55,18 @@ ms.locfileid: "44327759"
 ### <a name="licensing-requirements"></a>ライセンスの要件
 
 トレーニング可能な分類子は、Microsoft 365 E5 または E5 コンプライアンス機能です。 それらを使用するには、これらのサブスクリプションのいずれかが必要です。
+
+### <a name="pre-requisites"></a>前提条件
+
+UI の trainable 分類子にアクセスするには、次のようにします。 
+- グローバル管理者がテナントに対してオプトインを選択する必要がある
+- 分類子を教育するには、コンプライアンス管理者ロールまたはコンプライアンスデータ管理者が必要
+
+次のシナリオでは、trainable 分類子を使用するために、これらのアクセス許可を持つアカウントが必要になります。
+
+- 保持ラベルポリシーシナリオ: RecordManagement および Retention Management の役割 
+- 機密ラベルポリシーのシナリオ: セキュリティ管理者、コンプライアンス管理者、コンプライアンスデータ管理者
+- コミュニケーションコンプライアンスポリシーのシナリオ: Insider リスク管理管理者、監督レビュー管理者 
 
 ## <a name="types-of-classifiers"></a>分類子のタイプ
 
@@ -113,6 +127,7 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 ![プロセス フローのトレーニング可能な分類子](../media/classifier-trainable-classifier-flow.png)
 
 ## <a name="see-also"></a>関連項目
+
 
 - [保持ラベル](labels.md)
 - [保持ポリシー](retention-policies.md)

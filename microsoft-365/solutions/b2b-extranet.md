@@ -14,12 +14,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: パートナー組織から管理されたゲストユーザーを使用して、B2B エクストラネットのサイトまたはチームを作成する方法について説明します。
-ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166151"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342518"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>管理されたゲストで B2B エクストラネットを作成する
 
@@ -30,6 +30,12 @@ Azure active [Directory 受給管理](https://docs.microsoft.com/azure/active-di
 この記事では、セルフサービスアクセス登録モデルを使用してパートナー組織と共有できるリソース (この場合は、サイトまたはチーム) のパッケージを作成するための手順を順を追って説明します。 
 
 開始する前に、パートナー組織と共有するサイトまたはチームを作成し、ゲスト共有に対して有効にします。 詳細については[、「サイト内のゲストを使用した共同作業](collaborate-in-site.md)」または「[チーム内のゲストによる共同作業](collaborate-as-team.md)」を参照してください。 また、ゲストを使用して共同作業を行う場合に、ガバナンスポリシーを維持するために使用できるセキュリティとコンプライアンスの機能については、「セキュリティ[保護されたゲスト共有環境を作成](create-secure-guest-sharing-environment.md)する」を参照することをお勧めします。
+
+## <a name="video-demonstration"></a>ビデオ デモンストレーション
+
+このビデオでは、この記事で説明する手順を示します。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>パートナー組織を接続する
 

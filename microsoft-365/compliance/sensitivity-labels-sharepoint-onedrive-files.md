@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
-ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
+ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44170916"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342510"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -58,7 +58,7 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にし
 
 SharePoint および OneDrive では、Office ファイルの機密ラベルを無効にするかどうかをいつでも選択できます ([オプトアウト)](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) 。
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 これらの新機能は、[機密ラベル](sensitivity-labels.md)に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -106,7 +106,7 @@ OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョ
 
 組織のグローバル管理者には、秘密度ラベルのすべての側面を作成および管理するための完全な権限があります。 グローバル管理者としてサインインしていない場合は、「[機密ラベルの作成と管理に必要なアクセス許可](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)」を参照してください。
 
-1. [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com/)にサインインし、[**ソリューション** > **情報保護**] に移動します。
+1. [Microsoft 365 コンプライアンスセンター](https://compliance.microsoft.com/)にサインインし、[**ソリューション**  >  **情報保護**] に移動します。
     
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。 
 
@@ -117,13 +117,13 @@ OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョ
     コマンドはすぐに実行され、ページが次に更新されるときに、メッセージまたはボタンが表示されなくなります。 
 
 > [!NOTE]
-> 複数地域の Office 365 を使用している場合は、PowerShell を使用して、すべての地域の場所に対してこれらの機能を有効にする必要があります。 詳細については、次のセクションを参照してください。
+> Microsoft 365 複数地域を使用している場合は、PowerShell を使用して、すべての地域の場所に対してこれらの機能を有効にする必要があります。 詳細については、次のセクションを参照してください。
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>PowerShell を使用して機密ラベルのサポートを有効にする
 
 コンプライアンスセンターを使用する代わりに、SharePoint Online PowerShell から[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)コマンドレットを使用して、機密ラベルのサポートを有効にすることができます。 
 
-複数地域の Office 365 がある場合は、PowerShell を使用して、すべての地域の場所でこのサポートを有効にする必要があります。
+Microsoft 365 複数地域を使用している場合は、すべての地域の場所でこのサポートを有効にするために PowerShell を使用する必要があります。
 
 #### <a name="prepare-the-sharepoint-online-management-shell"></a>SharePoint Online 管理シェルの準備
 
@@ -149,16 +149,16 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にす
 
 新機能を有効にするには、 [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)コマンドレットを*EnableAIPIntegration*パラメーターと共に使用します。
 
-1. Office 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
+1. Microsoft 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
     
-    注: Office 365 複数地域を使用している場合は、-Url パラメーターと[connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)を使用して、地理的な場所の1つに対して SharePoint Online 管理センターサイトの Url を指定します。
+    注: Microsoft 365 複数地域を使用している場合は、-Url パラメーターと[connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)を使用して、地理的な場所の1つに対して SharePoint Online 管理センターサイトの Url を指定します。
 
 2. 次のコマンドを実行し、 **Y**キーを押して確認します。
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
-3. Office 365 の複数地域: 残りの各地域の場所について、手順1と2を繰り返します。
+3. Microsoft 365 複数地域の場合: 残りの geo の場所ごとに手順1と2を繰り返します。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>機密ラベルを作成または変更した後のロールアウトをスケジュールする
 
@@ -182,7 +182,7 @@ Microsoft 365 コンプライアンスセンターで機密ラベルを作成ま
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-複数地域の Office 365 を使用している場合は、各地域の場所に対してこのコマンドを実行する必要があります。
+Microsoft 365 複数地域を使用している場合は、各地域の場所に対してこのコマンドを実行する必要があります。
 
 ## <a name="next-steps"></a>次の手順
 
