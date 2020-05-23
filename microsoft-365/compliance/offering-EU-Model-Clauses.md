@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c792653cf8434a14bc89776a4ec870bc0d9a67ca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637981"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254320"
 ---
 # <a name="european-union-model-clauses"></a>欧州連合モデル条項
 
@@ -39,18 +39,14 @@ Microsoft は、監査と承認のために標準契約条項を EU の第 29 �
 
 同作業部会によって、Microsoft の契約条項を組み込むことで、EU の厳しい要件に適合すると判定されました  この承認は、モデル契約条項 2010/87/EU の契約書 (付属書類ではない) を対象としています。これは、データの転送と、データを取り込む側で実装するセキュリティ対策について規定しています。 この付録は、DPA 別に分析することができます。
 
-Microsoft クラウドにおける欧州連合モデル条項のメリットをご確認ください。
-
-[欧州連合モデル条項の背景解説をダウンロード](https://aka.ms/eu-model-backgrounder)
-
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure および Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - Microsoft Professional Services: Azure、Dynamics 365、Intune と、Microsoft 365 for business の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune: Intune アドオン製品のクラウド サービス、Mobile Device Management for Office 365
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power Automate (以前の Microsoft Flow) クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
@@ -94,7 +90,3 @@ Microsoft は EU 規格を継続的に調べ、必要に応じてサービスを
 - [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft  オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## <a name="download-the-offering-backgrounder"></a>サービスの背景解説をダウンロードする
-
-このサービスに関する背景解説をご覧になりたい場合は、 [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf) ファイルをダウンロードできます。

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3e8f83b943e83c37ecf13af1221c043d413bd6b5
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033976"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347833"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -51,10 +51,18 @@ Microsoft 365 セキュリティセンターでは、高度な検索はさまざ
 | **クエリを最適化する** | 効率的なクエリおよびメールとデバイスからのデータを結合するクエリを作成する方法を理解します。 | - [クエリのベストプラクティス](advanced-hunting-shared-queries.md) <br>- [複数のデバイスとメールを探します。](advanced-hunting-best-practices.md) |
 | **カスタム検出ルールを作成する** | 高度な検索クエリを使用して、通知をトリガーし、応答アクションを自動的に適用する方法について説明します。 | - [ユーザー設定の検出の概要](custom-detections-overview.md)<br>- [カスタム検出ルール](custom-detection-rules.md) |
 
+## <a name="get-access"></a>アクセス権を取得する
+高度な検索やその他の[Microsoft の脅威保護](microsoft-threat-protection.md)機能を使用するには、Azure AD で適切なロールが割り当てられている必要があります。 エンドポイントデータへのアクセスは、Microsoft Defender ATP のロールベースのアクセス制御の設定の影響を受けます。 [Microsoft の脅威保護へのアクセスの管理について確認する](mtp-permissions.md)
+
+## <a name="get-help-as-you-write-queries"></a>クエリを記述するときにヘルプを参照する
+次の機能を利用して、クエリをより速く記述します。
+- **Autosuggest** : クエリを作成すると、高度な検索によって IntelliSense から候補が表示されます。 
+- **スキーマ リファレンス** — テーブルとその列のリストを含むスキーマ リファレンスが作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
+
 ## <a name="related-topics"></a>関連項目
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
-- [共有クエリを使う](advanced-hunting-shared-queries.md)
+- [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

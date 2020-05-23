@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 から Windows 10 に大規模な組織向けの自動アップグレード
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011553"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221400"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>Windows 7 から Windows 10 に大規模な組織向けの自動インプレース アップグレード
 
@@ -90,7 +90,7 @@ Configuration Manager 展開タスク シーケンス用の [キャッシュ前�
 
 キャッシュ前のタスク シーケンスと互換性スキャン
 
-パッケージのダウンロード時間を節約するだけでなく、アップグレード パッケージを事前にキャッシュしておくことができます。また、Windows セットアップを使用して、実際の Windows アップグレードを実行する前にインプレース アップグレードが成功するかどうかを評価できます。 次のコマンドライン構文を使用して、非表示の互換性スキャンを実行することができます。また、Windows セットアップがアップグレード準備完了としてデバイスを評価しているかどうかを確認できます。
+パッケージのダウンロード時間を節約するだけでなく、アップグレード パッケージを事前にキャッシュしておくことができます。また、Windows セットアップを使用して、実際の Windows アップグレードを実行する前にインプレース アップグレードが成功するかどうかを評価できます。 次のコマンドライン構文を使用して、非表示の互換性スキャンを実行することができます。また、Windows セットアップがアップグレード準備完了としてデバイスを評価しているかどうかを確認できます。**Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 定義されたサーバーのパスにログが送信され、Windows セットアップがユーザーに表示されなくなり、ユーザーの操作を必要とせず閉じます。
 

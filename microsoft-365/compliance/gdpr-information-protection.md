@@ -1,6 +1,6 @@
 ---
 title: 情報保護
-description: 一般データ保護規則 (GDPR) のための情報保護
+description: EU 一般データ保護規則 (GDPR) 向けの Microsoft 365 の情報保護機能について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -16,12 +16,13 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2b8bfa67a8af8686627e239b06c1025c3e8f3137
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557947"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214571"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>GDPR のための情報保護と Microsoft 365 の機能
 
@@ -55,8 +56,8 @@ Microsoft は、開始点として使用できる推奨設定を提供してい�
 
 Microsoft 365 サービス間での脅威保護を確立します。作業を開始するための、いくつかのリソースを紹介します。
 
-- [Office 365 のセキュリティ ロードマップ: 最初の 30 日間、90 日間、およびそれ以後の優先事項](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)。このロードマップには、機能を実装するための推奨事項を記載します。 
-- [Office 365 で脅威から保護します](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)。 Microsoft 365 セキュリティ センターで実行できる保護のためのアクションについて説明します。
+- [Office 365 のセキュリティ ロードマップ: 最初の 30 日間、90 日間、およびそれ以後の優先事項](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)。このロードマップには、機能を実装するための推奨事項を記載します。 
+- [Office 365 で脅威から保護します](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。 Microsoft 365 セキュリティ センターで実行できる保護のためのアクションについて説明します。
 - [Windows の脅威保護](https://docs.microsoft.com/windows/security/threat-protection/)。Windows Defender Advanced Threat Protection とその他の Windows 10 の機能の詳細について説明します。
 
 ## <a name="learn-more"></a>詳細情報

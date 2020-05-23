@@ -57,6 +57,8 @@
               href: mtp/portals.md
             - name: 問題のトラブルシューティング
               href: ./mtp/troubleshoot.md
+            - name: 業界のテスト
+              href: ./mtp/top-scoring-industry-tests.md
         - name: 機能を評価する
           items:
             - name: 試用版ラボの概要
@@ -67,6 +69,10 @@
               href: mtp/setup-mtpeval.md
             - name: 構成およびオンボードのエンドポイント
               href: mtp/config-mtpeval.md
+            - name: Microsoft Threat Protection を有効にする
+              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
+            - name: テストの警告を生成する
+              href: mtp/generate-test-alert.md
         - name: 使い方ガイド
           items:
             - name: 試用版ラボの環境を作る
@@ -78,6 +84,10 @@
                   href: mtp/setup-mtpeval.md
                 - name: 構成およびオンボードのエンドポイント
                   href: mtp/config-mtpeval.md
+                - name: Microsoft Threat Protection を有効にする
+                  href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
+                - name: テストの警告を生成する
+                  href: mtp/generate-test-alert.md
             - name: サポートされるサービスを展開する
               href: mtp/deploy-supported-services.md
             - name: Microsoft Threat Protection を有効にする
@@ -151,13 +161,13 @@
                     - name: DeviceRegistryEvents
                       href: mtp/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
-                      href: mtp/advanced-hunting-tvm-configassessment-table.md
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
-                      href: mtp/advanced-hunting-tvm-secureconfigkb-table.md
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
                     - name: DeviceTvmSoftwareInventoryVulnerabilities
-                      href: mtp/advanced-hunting-tvm-softwareinventory-table.md
+                      href: mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
+                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
                       href: mtp/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
@@ -282,6 +292,8 @@
                   items:
                     - name: 管理者の送信を使用する
                       href: ./office-365-security/admin-submission.md
+                    - name: ユーザー送信用のメールボックスを指定する
+                      href: ./office-365-security/user-submission.md
                     - name: レポート メッセージ アドインを有効にする
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: 迷惑メール報告アドインのインストールと使用

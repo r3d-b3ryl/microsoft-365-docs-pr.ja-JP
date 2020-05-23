@@ -2,8 +2,8 @@
 title: スパム対策メッセージ ヘッダー
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,18 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: Exchange Online Protection によってメッセージに追加されるヘッダー フィールドと値について学習します。
-ms.openlocfilehash: 8b034da9e6c4ac138e804e07e4654c1e269aeda1
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+description: 管理者は、メッセージに関する情報とメッセージが処理された方法に関する情報を提供する目的で Exchange Online Protection (EOP) によってメッセージに追加されるヘッダー フィールドについて学ぶことができます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805211"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208224"
 ---
-# <a name="anti-spam-message-headers"></a>スパム対策メッセージ ヘッダー
+# <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
-Exchange Online Protection (EOP) では、受信メール メッセージをスキャンするときに、**X-Forefront-Antispam-Report** ヘッダーをそれぞれのメッセージに挿入します。このヘッダー内のフィールドは、そのメッセージに関する情報やそれがどのように処理されたかに関する情報を管理者に提供できます。**X-Microsoft-Antispam** ヘッダー内のフィールドは、バルク メールやフィッシングについての追加情報を提供します。これら 2 つのヘッダーのほかに、Exchange Online Protection もメール認証の結果を **Authentication-results** ヘッダーで処理する各メッセージに挿入します。
+Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、EOP によって各受信メールがスキャンされ、**X-Forefront-Antispam-Report** ヘッダーが各受信メッセージに挿入されます。このヘッダー内のフィールドは、そのメッセージに関する情報およびメッセージが処理された方法に関する情報を管理者に提供します。**X-Microsoft-Antispam** ヘッダー内のフィールドは、バルク メールおよびフィッシングについての追加情報を提供します。Exchange Online Protection は、これら 2 つのヘッダーに加え、EOP が処理を行った各メッセージについて、メール認証の結果を **Authentication-results** ヘッダーに挿入します。
 
 さまざまなメール クライアントでメール メッセージ ヘッダーを表示する方法については、「[Outlook のインターネット メッセージ ヘッダーの表示](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)」を参照してください。
 
@@ -48,7 +49,7 @@ Exchange Online Protection (EOP) では、受信メール メッセージをス�
 |LANG|メッセージが作成された言語であり、国番号 (たとえば、ロシア語は ru_RU) で指定されます。|
 |PTR:\[ReverseDNS\]|逆引き DNS 参照とも呼ばれる、送信元の IP アドレスの PTR レコード。|
 |SCL|メッセージの SCL (Spam Confidence Level) です。 値が高いほど、メッセージがスパムである可能性が高くなります。 詳細については、「[Spam Confidence Level (SCL)](spam-confidence-levels.md)」を参照してください。|
-|SFTY|メッセージはフィッシングとして識別され、次のいずれかの値が付けられます。 <ul><li>9.1: 既定値。 メッセージにフィッシングの URL が含まれているか、他のフィッシングコンテンツが含まれている可能性があります。あるいは、Microsoft 365 への送信前に別のメール フィルター (オンプレミスの Exchange など) によってフィッシングとしてマークされていた可能性があります。</li><li>9.11: [組織内または自己完結型のスプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 差出人ヘッダー内の送信者のメール ドメインが、受信ドメインと同じ組織であるか、または同じ組織の一部であるため、メッセージがスプーフィング対策チェックにパスしませんでした。 組織内スプーフィングの安全性に関するヒントがメッセージに追加されます。</li><li>9.19: ドメインの偽装。 送信側ドメインが、ATP フィッシング詐欺対策ポリシーで指定されている保護ドメイン (受信者の組織が所有するドメインまたはカスタム ドメイン) を偽装している可能性があります。 ドメインの偽装の安全性に関するヒントがメッセージに追加されます (安全性に関するヒントが ATP フィッシング詐欺対策ポリシーで有効になっている場合)。</li><li>9.20: ユーザーの偽装。 送信ユーザーが、受信者の組織内のユーザー、または ATP フィッシング詐欺対策ポリシーで指定されている保護ユーザーを偽装しようとしています。 ユーザーの偽装の安全性に関するヒントがメッセージに追加されます (安全性に関するヒントが ATP フィッシング詐欺対策ポリシーで有効になっている場合)。</li><li>9.21: [クロスドメイン スプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 差出人ヘッダー内の送信者のメール ドメインが外部ドメインであり、認証されないため、メッセージがスプーフィング対策チェックにパスしませんでした。 [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication) と組み合わせて使用されます。</li><li>9.22: ユーザーが、オーバーライドされた差出人セーフ リストを持っている点を除き、9.21 と同じです。 </li><li>9.23: ただし、組織が、オーバーライドされた許可された送信者またはドメインを持っている点を除き、9.22 と同じです。</li><li>9.24: ユーザーが、オーバーライドされた Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) を持っている点を除き、9.23 と同じです。</li></ul>|
+|SFTY|メッセージはフィッシングとして識別され、次のいずれかの値が付けられます。 <ul><li>9.1: 既定値。 メッセージにフィッシングの URL が含まれているか、他のフィッシング コンテンツが含まれている可能性があります。あるいは、Microsoft 365 への送信前に別のメール フィルター (オンプレミスの Exchange など) によってフィッシングとしてマークされていた可能性があります。</li><li>9.11: [組織内または自己完結型のスプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 差出人ヘッダー内の送信者のメール ドメインが、受信ドメインと同じ組織であるか、または同じ組織の一部であるため、メッセージがスプーフィング対策チェックにパスしませんでした。 組織内スプーフィングの安全性に関するヒントがメッセージに追加されます。</li><li>9.19: ドメインの偽装。 送信側ドメインが、ATP フィッシング詐欺対策ポリシーで指定されている保護ドメイン (受信者の組織が所有するドメインまたはカスタム ドメイン) を偽装している可能性があります。 ドメインの偽装の安全性に関するヒントがメッセージに追加されます (安全性に関するヒントが ATP フィッシング詐欺対策ポリシーで有効になっている場合)。</li><li>9.20: ユーザーの偽装。 送信ユーザーが、受信者の組織内のユーザー、または ATP フィッシング詐欺対策ポリシーで指定されている保護ユーザーを偽装しようとしています。 ユーザーの偽装の安全性に関するヒントがメッセージに追加されます (安全性に関するヒントが ATP フィッシング詐欺対策ポリシーで有効になっている場合)。</li><li>9.21: [クロスドメイン スプーフィング](anti-spoofing-protection.md#different-types-of-spoofing)。 差出人ヘッダー内の送信者のメール ドメインが外部ドメインであり、認証されないため、メッセージがスプーフィング対策チェックにパスしませんでした。 [CompAuth](#authentication-results-message-header-fields-used-by-microsoft-email-authentication) と組み合わせて使用されます。</li><li>9.22: ユーザーが、オーバーライドされた差出人セーフ リストを持っている点を除き、9.21 と同じです。 </li><li>9.23: ただし、組織が、オーバーライドされた許可された送信者またはドメインを持っている点を除き、9.22 と同じです。</li><li>9.24: ユーザーが、オーバーライドされた Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) を持っている点を除き、9.23 と同じです。</li></ul>|
 |SFV:BLK|メッセージがユーザーの Outlook 受信拒否アドレス (ユーザーの受信拒否リスト) から送信されているため、フィルター処理が省略され、メッセージはブロックされました。<br/></br> 管理者がユーザーの受信拒否リストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
 |SFV:NSPM|スパム フィルタリングによって、メッセージがスパムではないとしてマークされ、意図された受信者に送信されました。|
 |SFV:SFE|メッセージがユーザーの Outlook 上の信頼できる差出人のアドレス (ユーザーの信頼できる差出人のリスト) から送信されているため、フィルター処理が省略され、メッセージはそのまま配信されました。<br/></br> 管理者がユーザーの信頼できる差出人のリストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
@@ -75,7 +76,7 @@ Exchange Online Protection (EOP) では、受信メール メッセージをス�
 
 ## <a name="authentication-results-message-header"></a>Authentication-results メッセージ ヘッダー
 
-メール サーバーが電子メール メッセージを受信すると、SPF、DKIM、および DMARC に対するチェックの結果が Microsoft 365 によって、**Authentication-results** メッセージ ヘッダーに記録またはスタンプされます。
+メール サーバーが電子メール メッセージを受信すると、SPF、DKIM、および DMARC に対するチェックの結果が Microsoft 365 によって、**Authentication-Results** メッセージ ヘッダーに記録またはスタンプされます。
 
 ### <a name="check-stamp-syntax-and-examples"></a>スタンプの構文と例を確認する
 
@@ -128,17 +129,17 @@ dmarc=fail action=none header.from=contoso.com
 dmarc=fail action=oreject header.from=contoso.com
 ```
 
-### <a name="authentication-results-message-header-fields-used-by-microsoft-email-authentication"></a>Microsoft の電子メールの認証で使用される Authentication-results メッセージ ヘッダー フィールド
+### <a name="authentication-results-message-header-fields-used-by-microsoft-email-authentication"></a>Microsoft の電子メールの認証で使用される Authentication-Results メッセージ ヘッダー フィールド
 
 フィールドと各電子メールの認証チェックに使用できる値を次の表に示します。
 
 |||
 |---|---|
 |**ヘッダー フィールド**|**説明**|
-|action|DMARC チェックの結果に基づいて、スパム フィルターが実行するアクションを示します。例: <ul><li>**oreject** または **o.reject**: 拒否の上書き (override reject) の略語。 この場合、Microsoft 365 は、ポリシーが p=reject に設定されている DMARC TXT レコードを持つドメインからの DMARC チェックに失敗したメッセージを受信したときに、このアクションを使用します。 Microsoft 365 はメッセージを削除または拒否する代わりに、スパムとしてメッセージにマークを付けます。 このように Microsoft 365 が構成されている理由の詳細については、「[Microsoft 365 が DMARC に失敗した受信メールを処理する方法](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)」を参照してください。</li><li>**pct.quarantine**: DMARC をパスしないメッセージのうち、100% 未満のある割合のメッセージはいずれにせよ配信されることを示します。 これは、メッセージが DMARC に失敗してポリシーが検疫に設定されますが、pct フィールドは 100% に設定されず、システムは指定されたドメインのポリシーに従って、DMARC アクションを適用しないことをランダムに判断しているということです。</li><li>**pct.reject**: DMARC をパスしないメッセージのうち、100% 未満のある割合のメッセージはいずれにせよ配信されることを示します。 これは、メッセージが DMARC に失敗してポリシーが拒否に設定されますが、pct フィールドは 100% に設定されず、システムは指定されたドメインのポリシーに従って、DMARC アクションを適用しないことをランダムに判断しているということです。</li><li>**permerror**: DMARC の評価時に永続的なエラーが発生したことを示します (DNS で正しくない形式の DMARC TXT レコードが見つかった場合など)。 このメッセージを再送信しようとしても、結果が異なる可能性はほとんどありません。 その代わりに、ドメインの所有者に問い合わせて問題を解決する必要があります。</li><li>**temperror**: DMARC の評価時に一時的なエラーが発生したことを示します。 メールが正しく処理されるように、少し時間をおいてからメッセージを送信するように、送信者に要求することもできます。</li></ul>|
+|action|DMARC チェックの結果に基づいて、スパム フィルターが実行するアクションを示します。例: <ul><li>**oreject** または **o.reject**: 拒否の上書き (override reject) の略語。 この場合、Microsoft 365 は、ポリシーが p=reject に設定されている DMARC TXT レコードが属するドメインから DMARC チェックに失敗したメッセージを受信すると、このアクションを使用します。 Microsoft 365 はメッセージを削除または拒否する代わりに、スパムとしてメッセージにマークを付けます。 このように Microsoft 365 が構成されている理由の詳細については、「[Microsoft 365 が DMARC に失敗した受信メールを処理する方法](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)」を参照してください。</li><li>**pct.quarantine**: DMARC をパスしないメッセージのうち、100% 未満のある割合のメッセージはいずれにせよ配信されることを示します。 これは、メッセージが DMARC に失敗してポリシーが検疫に設定されますが、pct フィールドは 100% に設定されず、システムは指定されたドメインのポリシーに従って、DMARC アクションを適用しないことをランダムに判断しているということです。</li><li>**pct.reject**: DMARC をパスしないメッセージのうち、100% 未満のある割合のメッセージはいずれにせよ配信されることを示します。 これは、メッセージが DMARC に失敗してポリシーが拒否に設定されますが、pct フィールドは 100% に設定されず、システムは指定されたドメインのポリシーに従って、DMARC アクションを適用しないことをランダムに判断しているということです。</li><li>**permerror**: DMARC の評価時に永続的なエラーが発生したことを示します (DNS で正しくない形式の DMARC TXT レコードが見つかった場合など)。 このメッセージを再送信しようとしても、結果が異なる可能性はほとんどありません。 その代わりに、ドメインの所有者に問い合わせて問題を解決する必要があります。</li><li>**temperror**: DMARC の評価時に一時的なエラーが発生したことを示します。 メールが正しく処理されるように、少し時間をおいてからメッセージを送信するように、送信者に要求することもできます。</li></ul>|
 |compauth|複合認証の結果。 Microsoft 365 が、SPF、DKIM、DMARC などのさまざまな種類の認証を組み合わせて、メッセージが認証されているかどうかを判断するために使用されます。 評価の基準として、差出人: ドメインを使用します。|
 |dkim|メッセージの DKIM チェックの結果についての説明。次の値を指定できます。 <ul><li>**pass**: メッセージの DKIM チェックにパスしたことを示します。</li><li>**fail (理由)**: メッセージの DKIM チェックに失敗したことと、その理由を示します。 たとえば、メッセージが署名されていない場合、署名を認証できない場合などです。</li><li>**none**: メッセージが署名されていないことを示します。 これは、ドメインに DKIM レコードがあるかどうかや、DKIM レコードが結果を評価しない (このメッセージが署名されていない点のみ) ことを示しますが、これらを示さない場合もあります。</li></ul>|
-|dmarc|メッセージの DMARC チェックの結果についての説明。次の値を指定できます。 <ul><li>**pass**: メッセージの DMARC チェックにパスしたことを示します。</li><li>**fail**: メッセージの DMARC チェックに失敗したことを示します。</li><li>**bestguesspass**: ドメインの DMARC TXT レコードが存在しないことを示します。ただし、レコードが存在していた場合、メッセージの DMARC チェックはパスしていたことになります。 これは、`5321.MailFrom` アドレスのドメイン (MAIL FROM アドレス、P1 送信者、またはエンベロープの差出人とも呼ばれます) が `5322.From` アドレスのドメイン (From アドレスまたは P2 送信者とも呼ばれます) と一致するためです。</li><li>**none**: DNS に送信側ドメインの DKIM TXT レコードが存在していないことを示します。|
+|dmarc|メッセージの DMARC チェックの結果についての説明。次の値を指定できます。 <ul><li>**pass**: メッセージの DMARC チェックにパスしたことを示します。</li><li>**fail**: メッセージの DMARC チェックに失敗したことを示します。</li><li>**bestguesspass**: ドメインの DMARC TXT レコードが存在しないことを示します。ただし、レコードが存在していた場合、メッセージの DMARC チェックはパスしていたことになります。 これは、`5321.MailFrom` アドレスのドメイン (MAIL FROM アドレス、P1 送信者、またはエンベロープの差出人とも呼ばれます) が `5322.From` アドレスのドメイン (From アドレスまたは P2 送信者とも呼ばれます) と一致するためです。</li><li>**none**: DNS に送信側ドメインの DMARC TXT レコードが存在していないことを示します。|
 |header.d|DKIM 署名で識別されるドメイン (存在する場合)。 これは、公開キーを照会するドメインです。|
 |header.from|メール メッセージ ヘッダーの `5322.From` アドレスのドメイン (From アドレスまたは P2 送信者とも呼ばれます)。 受信者には、メール クライアントの From アドレスが表示されます。|
 |理由|複合認証にパスした、または失敗した理由。 値は 3 桁のコードです。 以下に例を示します。 <ul><li>**000**: メッセージが明示的な認証をパスしなかったことを意味します (`compauth=fail`)。 たとえば、メッセージが DMARC fail を受け取り、検疫または却下のアクションが適用された場合などです。</li><li>**001** は、メッセージが暗黙的な認証をパスしなかったことを示します (`compauth=fail`)。 これは、送信側ドメインがメール認証レコードを公開していないか、公開していた場合でも弱い失敗ポリシー (SPF soft fail または neutral、`p=none` の DMARC ポリシー) があったことを意味します。</li><li>**002**: 組織に、スプーフィングされたメールの送信を明示的に禁止する送信者/ドメインのペアのポリシーがあることを意味します。 この設定は、管理者が手動で設定します。</li><li>**010**: メッセージが拒否または検疫のアクションによって DMARC をパスせず、送信側ドメインが組織の承認済みドメインに含まれていることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。</li><li>**1xx** または **7xx**: メッセージが認証をパスしたことを意味します (`compauth=pass`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**2xx**: メッセージが暗黙的な認証を soft-pass したことを意味します (`compauth=softpass`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**3xx**: メッセージに対して複合認証のチェックが実行されなかったことを意味します (`compauth=none`)。</li><li>**4xx** または **9xx**: メッセージに対する複合認証が省略されたことを意味します (`compauth=none`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**6xx**: メッセージは暗黙的なメール認証をパスしなかったが、送信側ドメインが組織の承認済みドメインのいずれかであることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。</li></ul>|

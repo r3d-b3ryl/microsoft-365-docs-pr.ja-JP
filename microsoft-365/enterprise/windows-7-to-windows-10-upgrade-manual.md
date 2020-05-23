@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 から Windows 10 への手動アップグレード ガイド。
-ms.openlocfilehash: ea1705a91baf6b0526e87bcf04529ab2668aa439
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3840a57e3672bdbe0f9fc3c785e20350646a0102
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086122"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222317"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Windows 7 から Windows 10 への手動アップグレードの手順ガイド
 
@@ -110,6 +110,6 @@ Windows 7 に戻すプロセスをこの画面から開始できます。 PC は
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>新しい PC での Windows 10 への移行
 
-推奨される別の方法として、新しい PC で Windows 10 に移行する方法があります。 この方法を選択する場合は、古いコンピューターからファイルを移動させるのに、[OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) のバックアップ、[Windows に組み込みのバックアップと復元機能](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、[外部記憶装置](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)を使用した手動による移動、または [Laplink の PCmover Express](https://www.microsoft.com/windows/transfer-your-data) などのツールを使用できます。 これらのいずれのオプションを使用した場合でも、Windows 10 に含まれていない必要なアプリケーションを再インストールする必要があります。 Windows 7 を実行している既存の PC から Windows 10 を実行する新しい PC に手動で移行するためのオプションの詳細については、「[Windows 10 PC への移行](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)」を参照してください。
+推奨される別の方法として、新しい PC で Windows 10 に移行する方法があります。 この方法を選択する場合は、古いコンピューターからファイルを移動させるのに、[OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) のバックアップ、[Windows に組み込みのバックアップ](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)と復元機能、[外部記憶装置](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)を使用した手動による移動、または Laplink の PCmover Express などのツールを使用できます。 これらのいずれのオプションを使用した場合でも、Windows 10 に含まれていない必要なアプリケーションを再インストールする必要があります。 Windows 7 を実行している既存の PC から Windows 10 を実行する新しい PC に手動で移行するためのオプションの詳細については、「[Windows 10 PC への移行](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)」を参照してください。
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[デスクトップ展開センター](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[デスクトップ展開センター](https://aka.ms/howtoshift)

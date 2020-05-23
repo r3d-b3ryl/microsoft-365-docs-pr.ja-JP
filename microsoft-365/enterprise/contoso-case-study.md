@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
-ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625352"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268424"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise
 
@@ -68,14 +68,9 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
   Contoso 社では、ID およびアクセス管理、脅威保護、情報保護、およびセキュリティ管理のための幅広い Microsoft 365 Enterprise のセキュリティ機能を使用しています。
 
-- [極秘プロジェクトのチーム](contoso-team-for-top-secret-project.md)
+- [極秘プロジェクトのチーム](../solutions/contoso-team-for-top-secret-project.md)
 
-  Contoso 社は、極秘プロジェクトの安全なコラボレーション環境を作り出すために、厳しく規制されたデータのチームを運用しました。
-
-- [高機密のデジタル資産向けの SharePoint Online サイト](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
-  知的財産を保護し、研究チーム間で簡単に共同作業できるようにするため、Contoso 社では厳密に規制されたデータ向けの SharePoint Online サイトを使用しています。
-
+  Contoso 社は、極秘プロジェクトの安全なコラボレーション環境を作り出すために、セキュリティを分離したチームを運用しました。
 
 ## <a name="next-step"></a>次の手順
 

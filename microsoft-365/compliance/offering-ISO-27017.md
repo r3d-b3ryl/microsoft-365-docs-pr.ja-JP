@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f44c46046fc107e8059cebda3388fcd775bd31e
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 329bb7c4662d6449d69c6dca9ad489bdd70a0d3f
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065692"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254230"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 情報セキュリティ コントロールの実施基準
 
@@ -44,26 +44,28 @@ ISO/IEC 27017 は、クラウド サービス プロバイダーとクラウド 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- [Dynamics 365](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
+- Microsoft Cloud App Security
+- [Dynamics 365、Dynamics 365、Dynamics 365 ドイツ](https://aka.ms/d365-compliance-list)
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Automate (以前の Microsoft Flow) クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Office 365、Office 365 米国政府、Office 365 米国防総省、Office 365 Germany
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- Power BI Embedded
+- Microsoft Stream
 - Office 365 の対象サービスの[詳細なリスト](https://go.microsoft.com/fwlink/p/?linkid=2077751)をご覧ください
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 Microsoft クラウド サービスは、年 1 回、ISO/IEC 27001:2013 の認定プロセスの一環として、ISO/IEC 27017:2015 実施基準に関する監査を受けています。
 
-- [Azure ISO 27017 証明書](https://go.microsoft.com/fwlink/p/?linkid=2078005)
-- [Azure ISO 27017 評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 適用宣言書](https://aka.ms/azureiso27017StatementofApplicability)
-- [Office 365 ISO 27001、27018、27017 監査評価レポート](https://aka.ms/o365isoreport)
+- [Azure ISO 27017 証明書](https://aka.ms/azureiso27017cert)
+- [Azure ISO 27017 評価レポート](https://aka.ms/azureiso27017report)
+- [Office 365: ISO 27001、27018、27017 監査評価レポート](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633056"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347856"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -31,10 +31,8 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft Teams の DLP の概要
 
-最近では、Microsoft Teams のチャットおよびチャネルメッセージを含むように[データ損失防止](data-loss-prevention-policies.md)(DLP) 機能が拡張されています。
+最近では、[データ損失防止](data-loss-prevention-policies.md)(DLP) 機能が、**プライベートチャネルメッセージを含む**Microsoft Teams のチャットおよびチャネルメッセージを含むように拡張されました。
 
-> [!NOTE]
-> この時点では、DLP はプライベートチャネルメッセージに対してサポートされていません。
 
 組織に DLP がある場合は、Microsoft Teams チャネルまたはチャットセッションで機密情報を共有できないようにするポリシーを定義できるようになりました。 この保護がどのように機能するかについて、いくつかの例を示します。
 
@@ -67,9 +65,9 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
 
-2. [**データ損失防止** > **ポリシー**] を選択します。
+2. [**データ損失防止**ポリシー] を選択し  >  **Policy**ます。
 
 3. ポリシーを選択し、[**ポリシー設定**] の横にある [**編集**] を選択します。
 
@@ -87,9 +85,9 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
 
-2. [**データ損失防止** > **ポリシー**] を選択します。
+2. [**データ損失防止**ポリシー] を選択し  >  **Policy**ます。
 
 3. ポリシーを選択し、[**場所**] で値を確認します。 **Teams のチャットおよびチャネルメッセージ**が表示される場合は、すべて設定されています。 表示しない場合は、[**編集**] をクリックします。<br/>![既存のポリシーの場所](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -105,9 +103,9 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 このタスクを実行するには、DLP ポリシーを編集する権限を持つ役割が割り当てられている必要があります。 詳細については、「[アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に移動し、サインインします。
+1. セキュリティ & コンプライアンスセンター () に移動し、 [https://protection.office.com](https://protection.office.com) サインインします。
 
-2. [**データ損失防止** > **ポリシー** > ] を選択して **、ポリシーを作成**します。
+2. [**データ損失防止**ポリシー] を選択して  >  **Policy**  >  **、ポリシーを作成**します。
 
 3. [テンプレート](data-loss-prevention-policies.md#dlp-policy-templates)を選択し、[**次へ**] を選択します。<br/>この例では、米国の個人を特定できる情報データテンプレートを選択しました。<br/>![DLP ポリシーのプライバシーテンプレート](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

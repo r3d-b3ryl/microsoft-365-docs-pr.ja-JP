@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange Online および セキュリティ/コンプライアンス センターは、推奨通りに構成した場合、米国商品先物取引委員会規則 1.31(c)-(d) (CFTC Rule 1.31(c)-(d) )、米国金融取引業規制機構規則 4511 (FINRA Rule 4511)、および米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) における記憶域に関する該当要件に準拠することが、Cohasset Associates により検証されました。
-ms.openlocfilehash: d2624dbc230bb0fb714ab1a5a66b91e70d301a9c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4d494c519576ed86ed56a331a3440d9237270e33
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626423"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231840"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Exchange Online および セキュリティ/コンプライアンス センターを使用して米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に準拠する
 
@@ -65,7 +65,7 @@ Exchange Online では、ユーザーのメール ボックスに[アイテム�
 
 ## <a name="how-to-set-up-preservation-lock"></a>保持ロックを設定する方法
 
-PowerShell を使用してアイテム保持ポリシーをロックすることができます。詳細については、「[アイテム保持ポリシーをロックする](retention-policies.md#locking-a-retention-policy)」を参照してください。
+アイテム保持ポリシーは、PowerShell を使用してロックできます。 詳細については、「[[保持ロック] を使用して規制要件に準拠する](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)」をご覧ください。
 
 ## <a name="known-limitations"></a>既知の制限
 

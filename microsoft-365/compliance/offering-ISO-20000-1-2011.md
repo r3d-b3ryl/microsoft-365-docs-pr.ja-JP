@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00657f3e1e223305c4e4a4202e8ff6f612b5374e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065922"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254200"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 IT サービス マネジメント
 
@@ -37,24 +37,26 @@ ISO 20000-1:2011 認証を取得することは、Microsoft Azure にとって�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
-- [Azure および Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft PowerApps
-- Microsoft Flow
-- Microsoft Graph
-- Microsoft Genomics
 - 21Vianet が運用している Office 365
+- Microsoft PowerApps
+- Power Automate (以前の Microsoft Flow)
 - Power BI
+- Power BI Embedded
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-Azure、Intune、Microsoft マネージド デスクトップ、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics、Microsoft データセンターの 2017 ISO 20000-1 ドキュメント
+ISO 20000-1 ドキュメントは次のようになります。
 
-- [評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [証明書](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [適用宣言書](https://aka.ms/AzureISO20000StatementofApplicability)
+- [Azure、Dynamics 365、および Online Services: ISO20000-1 の証明書](https://aka.ms/azureiso200001cert)
+- [Azure、Dynamics 365、および Online Services: ISO20000-1 の評価レポート](https://aka.ms/azureiso200001report)
+- [Azure、Dynamics 365、および Online Services: ISO20000-1 の一般提供に関するステートメント (SOA)](https://aka.ms/azureiso200001soa)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -77,5 +79,5 @@ Service Trust Portal では、中立的な監査によるコンプライアン�
 ## <a name="resources"></a>リソース
 
 - [ISO 20000-1:2011 - サービス管理](https://www.iso.org/standard/51986.html) (購入の要件)
-- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
+- [Microsoft  オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できる各種リソースについて説明します。
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031428"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268335"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Microsoft 365 Enterprise の展開
 
@@ -55,7 +55,7 @@ Microsoft 365 Enterprise を自分で展開するには:
 
 - 最初に、管理の簡素化のための組み込みセキュリティと統合に必要な[基礎インフラストラクチャ](deploy-foundation-infrastructure.md)を展開します。これにより、クライアント ソフトウェアが最新の生産性拡張機能とセキュリティ強化機能で更新されます。 
  
-  基盤インフラストラクチャーは互いに番号付けされたフェーズで編成され、Microsoft 365 Enterprise のワークロードおよびシナリオをサポートする環境に向けて作られています。 
+  基盤インフラストラクチャーは互いに番号付けされたフェーズで編成され、Microsoft 365 Enterprise のワークロードをサポートする環境に向けて作られています。 
 
   **小規模または新しい組織の場合**、次のフェーズにそってインフラストラクチャーを構築します。
 
@@ -63,13 +63,13 @@ Microsoft 365 Enterprise を自分で展開するには:
 
   **企業組織の場合**、フェーズをパスではなく IT インフラストラクチャーのレイヤーとして表示し、組織全体のレイヤーに必要な条件に対して最終的に一番いい方法を決定します。
 
-- インフラストラクチャー上に主要な生産性[ワークロードとシナリオ](deploy-workloads.md) を展開します。 これらは、組織内の独創性とチームワークを引き出します。
+- インフラストラクチャー上に主要な生産性[ワークロード](deploy-workloads.md)を展開します。 これらは、組織内の独創性とチームワークを引き出します。
 
-ここに、基礎インフラストラクチャーとワークロードとシナリオの関係性を示します。
+ここに、基礎インフラストラクチャーとワークロードの関係性を示します。
 
-![基礎インフラストラクチャーとワークロードとシナリオの関係性](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![基礎インフラストラクチャーとワークロードの関係性](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-ワークロードとシナリオは、基礎インフラストラクチャー上で運用します。 ただし、生産性と共同作業の向上のためにワークロードを使用するのにすべての基礎インフラストラクチャー フェーズを満たす必要はありません。
+ワークロードは、基礎インフラストラクチャー上で運用します。 ただし、生産性と共同作業の向上のためにワークロードを使用するのにすべての基礎インフラストラクチャー フェーズを満たす必要はありません。
 
 [ここ](deploy-foundation-infrastructure.md)をクリックして、エンド ツー エンドの展開を始めましょう。
 
@@ -125,10 +125,6 @@ Core Services Engineering and Operations (以前の Microsoft IT) で [Microsoft
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Contoso Corporation の Microsoft 365 Enterprise 展開方法
 
 架空の企業、Contoso Corporation は、フランスのパリに本社を置く、代表的な世界規模の製造業の複合企業です。 どのように [Contoso 社が Microsoft 365 Enterprise を展開](contoso-case-study.md)し、ネットワーク、ID、Windows 10 Enterprise、Microsoft 365 Apps for enterprise、モバイル デバイス管理、情報保護およびセキュリティに関する主な設計上の決定および実装の詳細に対処したかをご覧ください。 
-
-## <a name="stay-current-with-deployment-content"></a>展開コンテンツについての最新情報を得る
-
-コンテンツの最新の変更内容については、[この記事](microsoft-365-deploment-guide-changes.md) を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

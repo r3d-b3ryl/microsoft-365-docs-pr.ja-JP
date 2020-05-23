@@ -7,19 +7,19 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557555"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347821"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
 Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Azure Portal で Microsoft Managed Desktop を使用してデバイスを登録できます。
 
 > [!NOTE]
-> パートナーと協力してデバイスを入手する方法 その場合は、ハードウェアハッシュの取得について心配する必要はありません。そのようにします。 パートナーが [パートナーセンター](https://partner.microsoft.com/dashboard)でお客様との関係を確立していること、および Azure Active Directory および Office 365 の委任された管理権限がパートナーに付与されていることを確認します。 パートナーが詳細については、 [パートナーセンターのヘルプ](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)を参照してください。 この関係が確立されると、パートナーは単にデバイスを登録するだけで済みます。これ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「[パートナーがデバイスを登録する手順](register-devices-partner.md)」を参照してください。 デバイスが登録されたら、[画像の確認](#check-the-image)とユーザーへ[のデバイスの配信](#deliver-the-device)を続行できます。
+> パートナーと協力してデバイスを入手する方法 その場合は、ハードウェアハッシュの取得について心配する必要はありません。そのようにします。 パートナーが [パートナーセンター](https://partner.microsoft.com/dashboard)でお客様との関係を確立していることを確認してください。 パートナーが詳細については、 [パートナーセンターのヘルプ](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)を参照してください。 この関係が確立されると、パートナーは単にデバイスを登録するだけで済みます。これ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「[パートナーがデバイスを登録する手順](register-devices-partner.md)」を参照してください。 デバイスが登録されたら、[画像の確認](#check-the-image)とユーザーへ[のデバイスの配信](#deliver-the-device)を続行できます。
 
 ## <a name="prepare-to-register-brand-new-devices"></a>ブランドを登録するために準備する-新しいデバイス
 
@@ -53,7 +53,7 @@ Microsoft マネージドデスクトップは、ハードウェアハッシュ�
 3. `Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>` を実行します。
 4. 登録するデバイスを有効にしますが、*セットアップの操作は開始*しないでください。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
 5. USB ドライブを挿入して、SHIFT + F10 キーを押します。
-6. 管理者権限で PowerShell プロンプトを開き、を実行`cd <pathToUsb>`します。
+6. 管理者権限で PowerShell プロンプトを開き、を実行し `cd <pathToUsb>` ます。
 7. `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` を実行します。
 8. `.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 9. USB ドライブを取り外し、次のようにしてデバイスをシャットダウンします。`shutdown -s -t 0`

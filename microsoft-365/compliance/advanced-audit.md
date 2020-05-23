@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: b1a79598fc49d710c54a23dc9ce92c9f2b7f5805
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6fb42e9df35fe025c5c5f292238217aebb4098c7
+ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632282"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44141045"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -93,7 +93,7 @@ Office 365 管理アクティビティ API を使用して監査ログにアク�
 
 **E5 サブスクリプションがあり、E5 ライセンスが割り当てられているユーザーがいるにもかかわらず、組織に高度な監査が表示されないのはなぜですか ?**
 
-適切なライセンスが設定されていても、組織で高度な監査機能 (監査ログ保持ポリシーの作成機能や MailItemsAccessed 監査レコードのログなど) が利用できない可能性があります。 これが発生しているのは、高度な監査パッケージが組織にまだ展開されていないためです。 これは一時的なライセンス バックフィルの問題であり、影響を受けている組織では今後数週間で解決されるはずです。 この問題を軽減するには、E5 ユーザーごとに次の手順を実行してください。
+適切なライセンスが設定されていても、組織で高度な監査機能 (監査ログ保持ポリシーの作成機能や MailItemsAccessed 監査レコードのログなど) が利用できない可能性があります。 これが発生しているのは、高度な監査パッケージが組織にまだ展開されていないためです。 これは一時的なライセンス バックフィルの問題であり、影響を受けている組織ではすぐに解決されるはずです。 この問題を軽減するには、E5 ユーザーごとに次の手順を実行してください。
 
 1. Microsoft 365 管理センターで、**[ユーザー]、[アクティブなユーザー]** の順に移動し、ユーザーを選択します。
 
@@ -106,6 +106,8 @@ Office 365 管理アクティビティ API を使用して監査ログにアク�
    b. [**Microsoft 365 Advanced Auditing**] チェックボックスが選択されている場合、選択を外して [**変更の保存**] をクリックします。 手順 4 を参照してください。
 
 4. 手順 3 でチェックボックスを外した場合は、60 分待ってから手順 3a を繰り返し、Microsoft 365 Advanced Auditing アプリを有効にします。
+
+グループ ベースのライセンスを使用してユーザーのグループにライセンスを割り当てている組織では、グループに対する Microsoft 365 Advanced Auditing のライセンス割り当てをオフにする必要があります。 変更を保存したら、Microsoft 365 Advanced Auditing がグループに対してオフになっていることを確認します。 その後、グループに対するライセンス割り当てをもう一度オンにします。 グループ ベースのライセンスの手順については、「[Azure Active Directory でのグループ メンバーシップによるユーザーへのライセンスの割り当て](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)」を参照してください。
 
 **組織が監査レコード 1 年間保持のプライベート プレビュー中であった場合はどうなりますか ?**
 

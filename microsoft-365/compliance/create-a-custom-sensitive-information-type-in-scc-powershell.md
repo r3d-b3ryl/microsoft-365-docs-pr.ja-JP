@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティ/コンプライアンス センターの DLP について、カスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: b937cfe1ce4de7b380ef47d14d5fe4c500e173d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632352"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327789"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
 
-Microsoft 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる組み込みの[機密情報の種類](what-the-sensitive-information-types-look-for.md)が多数含まれています。これらの組み込みの種類は、クレジット カード番号、銀行口座番号、パスポート番号などの特定と保護に役立ちます。 
+Microsoft 365 のデータ損失防止 (DLP) には、DLP ポリシーですぐに使用できる組み込みの[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)が多数含まれています。これらの組み込みの種類は、クレジット カード番号、銀行口座番号、パスポート番号などの特定と保護に役立ちます。 
   
 ただし、組織に固有の形式を使用する従業員 ID など、さまざまな種類の機密情報を特定して保護する必要がある場合は、カスタムの機密情報の種類を作成することができます。作成することができる機密情報の種類は、*ルール パッケージ*と呼ばれる XML ファイルで定義されます。
   
@@ -908,6 +908,6 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
 
 - [データ損失防止ポリシーの概要](data-loss-prevention-policies.md)
     
-- [機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
     
-- [DLP 関数で探索する内容](what-the-dlp-functions-look-for.md)
+- [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)

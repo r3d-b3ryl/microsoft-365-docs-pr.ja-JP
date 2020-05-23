@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: 78a012b4ecc3401a664fba5e270e7cd67a5dce49
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b3270538cf2a1454840f6beff4e52fda84fa0afe
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208121"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327685"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
@@ -142,7 +142,7 @@ ms.locfileid: "44208121"
    |RetentionAction|文字列|このプロパティは、RetentionDuration プロパティで指定された値の有効期限が切れた後に実行するアクションを指定します。 有効な値は次のとおりです。</br>**Delete**: RetentionDuration プロパティで指定された値よりも古いアイテムが削除されます。</br>**Keep**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了しても何もしません。 </br>**KeepAndDelete**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了したらそれらを削除します。   |
    |RetentionDuration|文字列|プロパティは、コンテンツを保持する日数を指定します。 有効な値は次のとおりです。</br>**Unlimited**: アイテムは無期限に保持されます。 </br>***n***: 正の整数です。(例: **365**) 
    |RetentionType|文字列|プロパティは、コンテンツ作成日、イベント日、ラベルが付けられた (タグが付けされた) 日、または最終変更日のいずれから保持期間を計算するかを指定します。 有効な値は次のとおりです。</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|このプロパティが入力されている場合、保持期間が終了すると、廃棄のレビューがトリガーされます。 プロパティは、**Delete** および **KeepAndDelete** の保持期間用アクションのレビュー担当者の電子メール アドレスを指定します。 個々のユーザー、配布グループまたはセキュリティ グループのメール アドレスを含めることができます。 複数のメール アドレスをセミコロンで区切って指定できます。|
+   |ReviewerEmail|SmtpAddress|このプロパティが入力されている場合、保持期間が終了すると、廃棄のレビューがトリガーされます。 プロパティは、**KeepAndDelete** の保持期間用アクションのレビュー担当者の電子メール アドレスを指定します。 個々のユーザー、配布グループまたはセキュリティ グループのメール アドレスを含めることができます。 複数のメール アドレスをセミコロンで区切って指定できます。|
    |ReferenceId|文字列|このプロパティは、**参照 ID** ファイル計画記述子に表示される値を指定します。| 
    |DepartmentName|文字列|このプロパティは、**業務/部署**ファイル計画記述子に表示される値を指定します。|
    |カテゴリ|文字列|このプロパティは、**カテゴリ** ファイル計画記述子に表示される値を指定します。|

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 525d58a37fe4bb254d06ce7a4fcb6e2a54344a79
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42adeca60c97fa2a3877f04055725a99a453b032
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035799"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327779"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -494,7 +494,7 @@ DLP for Exchange Online (メール)、OneDrive for Business (ファイル)、Mic
 
 ## <a name="related-articles"></a>関連記事
 
-[組み込みの機密情報の種類とその検索対象](what-the-sensitive-information-types-look-for.md)
+[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 
 [カスタムの機密情報の種類](custom-sensitive-info-types.md)
 

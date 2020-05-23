@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 情報保護ベースのサービスとインフラストラクチャの条件を調べ、構成が Microsoft 365 Enterprise の要件を満たしていることを確認します。
-ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 19f4fc4ae93c00e33a2f58d8c23582e6e49cf887
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631635"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268223"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>情報保護インフラストラクチャの終了条件
 
@@ -116,4 +116,4 @@ ms.locfileid: "43631635"
 
 Microsoft 365 Enterprise の情報保護インフラストラクチャでは、定義されたセキュリティ レベル、Office 365 のセキュリティ強化、機密データの種類とラベルを使用した分類、Windows 情報保護、データ損失防止、電子メールの暗号化、および特権アクセスの管理が使用されます。
 
-Microsoft 365 Enterprise のエンド ツー エンドの展開に従っている場合、[ワークロードとシナリオ](deploy-workloads.md)で基盤インフラストラクチャのすべての機能と構成を活用することができます。
+Microsoft 365 Enterprise のエンド ツー エンドの展開に従っている場合、[ワークロード](deploy-workloads.md)で基盤インフラストラクチャのすべての機能と構成を活用することができます。

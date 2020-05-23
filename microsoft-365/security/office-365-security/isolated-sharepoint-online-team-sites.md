@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
-description: '概要: 分離した SharePoint Online チーム サイトの使用方法について説明します。'
-ms.openlocfilehash: b62223b231c4b6dc0d233d899472800226503323
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 使用、要件、およびそれらで使用できる機能を含む、分離した SharePoint Online チーム サイトについて説明します。
+ms.openlocfilehash: 91d8394c40597dfc66c4df39f49223e472e7c663
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634112"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209045"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>分離した SharePoint Online チーム サイト
 

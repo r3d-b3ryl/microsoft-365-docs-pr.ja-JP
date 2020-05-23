@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065912"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254436"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 ビジネス継続性管理標準
 
 ## <a name="iso-22301-overview"></a>ISO 22301 の概要
 
-国際標準化機構 (ISO) は独立した非政府組織で、世界最大の任意国際規格策定機関です。 ISO は TC 223 Societal Security (社会セキュリティ) 技術委員会を設置し、自然災害、大規模なテロ攻撃、送電網の停止など、社会 (団体を含む) を保護するための基準を策定しています。
+国際標準化機構 (ISO) は中立的な非政府組織で、国際基準を自主的に策定する世界最大の組織です。 ISO は TC 223 Societal Security (社会セキュリティ) 技術委員会を設置し、自然災害、大規模なテロ攻撃、送電網の停止などが発生した場合に社会 (団体を含む) を保護するための基準を策定しています。
 
 同技術委員会により 2012 年に発行された ISO 22301:2012 は、ビジネス継続性の確保をサポートする管理システムにおける初めての国際規格です。 ISO 22301 はビジネス継続性に関する重要規格であり、認証を受けた場合、破壊的な出来事の予防、緩和、対応、回復を図るための厳格な手順への適合性の証となります。
 
@@ -35,21 +35,24 @@ Microsoft は、ビジネス継続性に関する ISO 22301 認証を取得し�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
-- [Azure および Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 Government、Dynamics 365 ドイツ
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Automate (以前の Microsoft Flow) クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - [Office 365 Commercial、Government、Education](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- Power BI Embedded
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-- [Azure および Azure ISO 22301 の登録証明書](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Azure ISO 22301 評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure、Dynamics 365、および Online Services: ISO22301 の証明書](https://aka.ms/azureiso22301cert)
+- [Azure、Dynamics 365、および Online Services: ISO22301 の評価レポート](https://aka.ms/azureiso22301report)
 - [BSI 22301 Microsoft Office 365 証明書](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [BSI 22301 Microsoft Office 365 ステージ 2 付録](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Office 365 ISO 22301 ステージ 2 レポート](https://go.microsoft.com/fwlink/p/?linkid=2092211)

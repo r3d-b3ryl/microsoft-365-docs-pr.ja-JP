@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214305"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254310"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 品質管理システム標準
 
@@ -33,21 +33,25 @@ ISO 9001:2015 により確立された品質管理原則を忠実に守るため
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
-- [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 Government、Dynamics 365 ドイツ
+- Microsoft Graph
 - Intune
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Healthcare Bot
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Automate (以前の Microsoft Flow) クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- Power BI Embedded
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-- [FY19 Microsoft Azure ISO 9001 評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [FY19 Microsoft Azure ISO 9001 証明書](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [その他の監査レポートを見る](https://aka.ms/auditreports)
+- [Azure、Dynamics 365、および Online Services: ISO9001 の証明書](https://aka.ms/azureiso9001cert)
+- [Azure、Dynamics 365、および Online Services: ISO9001 の評価レポート](https://aka.ms/azureiso9001report)
+- [Azure、Dynamics 365、および Online Services: ISO9001 の適用性に関するステートメント (SOA)](https://aka.ms/azureiso9001soa)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -61,7 +65,7 @@ ISO 9001:2015 により確立された品質管理原則を忠実に守るため
 
 **Microsoft はインフラ障害のテストを毎年実施していますか?**
 
-はい。 ISO 9001:2015 の年次審査には、根本的な物理インフラ データセンターが含まれています。 [証明書を確認](https://www.microsoft.com/?ref=aka)して、対象範囲の詳細をご覧ください。
+はい。 ISO 9001:2015 の年次審査には、根本的な物理インフラ データセンターが含まれています。 [証明相を確認](https://www.microsoft.com/?ref=aka)して、対象範囲の詳細をご覧ください。
 
 **Microsoft の ISO 9001:2015 コンプライアンス情報はどこで確認できますか?**
 

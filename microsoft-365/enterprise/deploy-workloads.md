@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 Enterprise のワークロードおよびシナリオ
+title: Microsoft 365 Enterprise のワークロード
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織のユーザーを Microsoft 365 Enterprise の生産性向上ワークロードに参加させます。
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066217"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268287"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 Enterprise のワークロードおよびシナリオ
+# <a name="microsoft-365-for-enterprise-workloads"></a>Microsoft 365 Enterprise のワークロード
 
 Microsoft 365 Enterprise の創造性およびチームワークに関するメリットを得るには、これらのワークロードを基盤インフラストラクチャに展開します。
 
@@ -29,31 +29,13 @@ Microsoft 365 Enterprise の創造性およびチームワークに関するメ�
 
 組織全体を Microsoft 365 Enterprise に移行するための一般的なロードマップについては、[移行](migration-microsoft-365-enterprise-workload.md)に関する記事を参照してください。それには Microsoft Office クライアント製品、オンプレミス Office サーバー製品、および Microsoft Windows ベースのデバイスが含まれます。
 
-シナリオは Microsoft 365 Enterprise の機能およびサービスを統合的に使用し、ビジネス ニーズに対応します。 
+全体的な Microsoft 365 Enterprise 展開ガイドのワークロードは次のとおりです。
 
-こうした必要性の 1 つは、従業員がイントラネットに直接接続していない場合に、従業員が生産的かつ安全に作業できることを保証することです。 インフラストラクチャ要素を展開して、Teams や Exchange Online などの主要なワークロードの導入をリモート ユーザーに促すためのロードマップについては、「[リモート ワーカーの強化](empower-people-to-work-remotely.md)」のシナリオを参照してください。
-
-こうした必要性のもう 1 つは、Microsoft 365 に格納されている規制の厳しいデータを保護することです。 規制の厳しいデータには次に示すデジタル資産が含まれています。
-
-- 地域の規制を遵守しているデータ。
-- 企業秘密、財務情報、人事情報、組織戦略など、組織にとって最も重要なデータ。
-
-このデータを内部および外部の脅威から保護するには、次を参照してください。
-
-- [厳しく規制されたデータ用の Teams](secure-teams-highly-regulated-data-scenario.md)
-- [厳しく規制されたデータ用の SharePoint サイト](teams-sharepoint-online-sites-highly-regulated-data.md) 
-
-これらのシナリオでは、段階を追って Microsoft Teams チームまたは SharePoint サイトを構成して、最も重要なデータを安全に保管します。
-
-全体的な Microsoft 365 Enterprise 展開ガイドのワークロードおよびシナリオは次のとおりです。
-
-![全体的な Microsoft 365 Enterprise 展開ガイドのワークロードおよびシナリオ](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-その他のシナリオについては、「[Microsoft 365 生産性ライブラリ](https://aka.ms/productivitylibrary) (https://aka.ms/productivitylibrary)」を参照してください。 
+![全体的な Microsoft 365 Enterprise 展開ガイドのワークロード](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基盤インフラストラクチャの前提条件
 
-*理想的には*、[基盤インフラストラクチャ](deploy-foundation-infrastructure.md)のすべてのフェーズを設定した後で、ワークロードとシナリオを展開する必要があります。 これにより、基になるすべての基盤レイヤーがユーザーとそのデバイスに対して統合、セキュリティ、および最適な操作性を提供できるようになります。
+*理想的には*、[基盤インフラストラクチャ](deploy-foundation-infrastructure.md)のすべてのフェーズを設定した後で、ワークロードを展開する必要があります。 これにより、基になるすべての基盤レイヤーがユーザーとそのデバイスに対して統合、セキュリティ、および最適な操作性を提供できるようになります。
 
 | フェーズ | 結果 |
 |:-------|:-----|

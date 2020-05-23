@@ -7,18 +7,18 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - M365-security-compliance
-ms.prod: microsoft-365-enterprise
-ms.custom:
 - M365solutions
+ms.prod: microsoft-365-enterprise
+ms.custom: ''
 localization_priority: Priority
 description: 金融サービスがデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がどのように役立つかを説明します
 f1.keywords: NOCSH
-ms.openlocfilehash: e3ed7d40cf7b4452dd2bc47e870e0a7afe10d629
-ms.sourcegitcommit: 101084f9c81616342d78493232d8f13f5ffa4ddf
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "44002369"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214698"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -216,7 +216,7 @@ Microsoft 365 が提供するセキュリティ サービスは、インテリ�
 - 保持期間が終了したらどうするか (ドキュメントを削除する、処理レビューを開始する、何もしない)
 -  保持期間を開始する要因となるもの (作成日、最終更新日、ラベル付けされた日、イベント)、ドキュメントやメールに記録としてのマーク付け (編集や削除ができないことを意味する) をする要因となるものは何か
 
-その後、保持ラベルは SharePoint または OneDrive のサイト、Exchange メールボックス、Microsoft 365 グループに公開されます。 ユーザーは、ドキュメントやメールに保持ラベルを手動で適用できます。 記録管理者は、インテリジェンスを使用してラベルを自動的に適用できます。 インテリジェンス機能は、[90 以上の組み込みの機密情報の種類](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (ABA ルーティング番号、米国の銀行口座番号、米国社会保障番号など) に基づくものにすることができます。 また、ドキュメントやメールに含まれるクレジット カード番号や個人を識別できるその他の情報などのキーワードや機密データに基づいて、あるいは SharePoint のメタデータに基づいて、この機能をカスタマイズすることもできます。 手動または自動のパターン マッチングでは簡単に特定できないデータに関しては、機械学習のテクニックに基づいてトレーニング可能な分類子を使用して、ドキュメントをインテリジェントに分類することもできます。
+その後、保持ラベルは SharePoint または OneDrive のサイト、Exchange メールボックス、Microsoft 365 グループに公開されます。 ユーザーは、ドキュメントやメールに保持ラベルを手動で適用できます。 記録管理者は、インテリジェンスを使用してラベルを自動的に適用できます。 インテリジェンス機能は、[90 以上の組み込みの機密情報の種類](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (ABA ルーティング番号、米国の銀行口座番号、米国社会保障番号など) に基づくものにすることができます。 また、ドキュメントやメールに含まれるクレジット カード番号や個人を識別できるその他の情報などのキーワードや機密データに基づいて、あるいは SharePoint のメタデータに基づいて、この機能をカスタマイズすることもできます。 手動または自動のパターン マッチングでは簡単に特定できないデータに関しては、機械学習のテクニックに基づいてトレーニング可能な分類子を使用して、ドキュメントをインテリジェントに分類することもできます。
  
 **証券取引委員会 (SEC)** は、ブローカー ディーラーと他の規制対象金融機関に対して、すべての業務上の通信を保持することを要求しています。 これらの要件は、メール、ドキュメント、インスタント メッセージ、ファックスなどを含む多くの種類の通信とデータに適用されます。 **SEC Rule 17a-4** は、記録を電子データ ストレージ システムに保存するために組織が満たさなければならない基準を定義しています。 2003 年に、SEC はこれらの要件を明確化したリリースを発表しました。 これには次の基準が含まれていました。
 

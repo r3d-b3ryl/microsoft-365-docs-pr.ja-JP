@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツから機密情報を探すときには、ルールと呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。
-ms.openlocfilehash: 4c61ab1a60b6259509d2928e22d31e447a996ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2aa552fb7a2623aaa7783063e82101a1993b9d1c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595494"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327295"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
 コンテンツから機密情報を探すときには、*ルール*と呼ばれるものの中にその情報を記述する必要があります。データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類を表すルールが含まれています。これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。 
   
-この例は、これ以外の組み込みの機密情報の種類に適用することもできます。機密情報の既定の種類と XML 定義のリストについては、「[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)」のトピックを参照してください。 
+この例は、これ以外の組み込みの機密情報の種類に適用することもできます。機密情報の既定の種類と XML 定義のリストについては、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」のトピックを参照してください。 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>現在のルールの XML ファイルをエクスポートする
 
@@ -232,9 +232,9 @@ Get-DlpSensitiveInformationType
 |patternsProximity|クレジット カード番号パターンらしき情報が見つかった場合、`patternsProximity` はその番号からどの程度近接した範囲内で補強証拠の探索を行うかを指定します。|
 |recommendedConfidence|このルールに対して推奨される信頼レベルです。推奨される信頼性は、エンティティとアフィニティに適用されます。エンティティの場合、この数値がパターンの `confidenceLevel` に対して評価されることはありません。この数値は、必要な場合に信頼レベルを選択するために役立つ提案にすぎません。アフィニティの場合、メール フロー ルール アクションが呼び出されるためには、パターンの `confidenceLevel` が `recommendedConfidence` の数値を上回っている必要があります。`recommendedConfidence` は、アクションを起動するメール フロー ルールで使用される既定の信頼レベルです。必要であれば、この代わりにパターンの信頼レベルに基づいてメール フロー ルールを起動するように手動で変更することもできます。|
    
-## <a name="for-more-information"></a>関連情報
+## <a name="for-more-information"></a>詳細情報
 
-- [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
     
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
     

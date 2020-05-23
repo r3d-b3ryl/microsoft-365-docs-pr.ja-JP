@@ -17,15 +17,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: ''
-description: GDPR のための機密情報の種類を変更または新規作成する方法について説明します。
-ms.openlocfilehash: e29193e3fdb7f4d2cd6a5810137bc120fb1171e5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 一般データ保護規則 (GDPR) のための Office 365 の機密情報の種類を変更または新規作成する方法について説明します。
+ms.openlocfilehash: 70ce61f582cbc952811d01cccc7b958bf1b52dbb
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637779"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224634"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>機密情報の種類をカスタマイズまたは新規作成する
 
@@ -73,7 +73,7 @@ ms.locfileid: "43637779"
 
 7.  新しい機密情報の種類をアップロードします。
 
-8.  機密情報を識別するため、コンテンツを再クロールします。「[サイトのクロールとインデックス再作成を手動で要求する](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E)」を参照してください。
+8.  機密情報を識別するため、コンテンツを再クロールします。「[サイトのクロールとインデックス再作成を手動で要求する](https://docs.microsoft.com/sharepoint/crawl-site-content)」を参照してください。
 
 ## <a name="example-modify-the-eu-debit-card-number-sensitive-information-type"></a>例: "EU のデビット カード番号" の機密情報の種類の変更
 
@@ -147,11 +147,11 @@ KQL を使ったクエリの生成と最適化を行うために使うリソー�
 
 - [コンテンツ検索を実行する](content-search.md)
 
-コンテンツ検索では、KQL クエリと機密情報の種類を開発するのに役立つ他のリソースとしてキーワードを使用できます。キーワードのリストを使用する理由は、各キーワードに一致する項目の数を示す統計を得ることができるからです。これにより、最も効果的 (および不適切) なキーワードをすばやく識別することができます。検索統計の詳細については、「[コンテンツ検索結果のキーワード統計の表示](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04)」を参照してください。
+コンテンツ検索では、KQL クエリと機密情報の種類を開発するのに役立つ他のリソースとしてキーワードを使用できます。キーワードのリストを使用する理由は、各キーワードに一致する項目の数を示す統計を得ることができるからです。これにより、最も効果的 (および不適切) なキーワードをすばやく識別することができます。検索統計の詳細については、「[コンテンツ検索結果のキーワード統計の表示](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search)」を参照してください。
 
 各行のキーワードは、作成された検索クエリの OR 演算子によって結合されます。1 つの行でキーワード フレーズ (かっこで囲まれている) を使用することもできます。
 
-詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3)」を参照してください。
+詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)」を参照してください。
 
 ### <a name="exampleusing-content-search-to-identify-email-addresses"></a>例—コンテンツ検索を使って電子メール アドレスを識別する
 
@@ -165,7 +165,7 @@ KQL とキーワードを組み合わせて使用することはできません�
 
 注:
 
--   近接検索には、NEAR と ONEAR を使うことができます。
+-   近接検索には、NEAR を使うことができます。
 
 -   残念ながら、KQL は Regex クラスのクエリをサポートしていません (例: IdRef="Regex\_email\_address")
 
