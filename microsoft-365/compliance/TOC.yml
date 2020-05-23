@@ -129,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: 機密情報の種類
       items:
-        - name: 機密情報の種類の検索基準
-          href: what-the-sensitive-information-types-look-for.md
+        - name: 機密情報の種類のエンティティ定義
+          href: sensitive-information-type-entity-definitions.md
         - name: DLP 関数の検索対象
           href: what-the-dlp-functions-look-for.md
         - name: DLP のカスタマイズについてもっと詳しく見る
@@ -210,14 +210,14 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: SharePoint 管理センターで IRM を設定する
       href: set-up-irm-in-sp-admin-center.md
-    - name: データの分類を理解する (プレビュー)
+    - name: データの分類を理解する
       href: data-classification-overview.md
       items:
-        - name: コンテンツ エクスプローラーの使用を開始する (プレビュー)
+        - name: コンテンツ エクスプローラーの使用を開始する
           href: data-classification-content-explorer.md
-        - name: アクティビティ エクスプローラーの使用を開始する (プレビュー)
+        - name: アクティビティ エクスプローラーの使用を開始する
           href: data-classification-activity-explorer.md
-        - name: データ分類パブリック プレビューのリリース ノート (プレビュー)
+        - name: データ分類のリリース ノート
           href: data-classification-pub-preview-relnotes.md
         - name: トレーニング可能な分類子の使用を開始する (プレビュー)
           href: classifier-getting-started-with.md
@@ -271,13 +271,23 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: データを保持する
       items:
-        - name: アイテム保持ポリシー
+        - name: アイテム保持ポリシーの詳細
           href: retention-policies.md
+        - name: アイテム保持ポリシーを作成して構成する
+          href: create-retention-policies.md
+        - name: SharePoint と OneDrive の保持
+          href: retention-policies-sharepoint.md
+        - name: Microsoft Teams の保持
+          href: retention-policies-teams.md
+        - name: Exchange の保持
+          href: retention-policies-exchange.md
         - name: ファイル計画マネージャー
           href: file-plan-manager.md
-        - name: 保持ラベル
+        - name: 保持ラベルの詳細
           href: labels.md
-        - name: 'SEC Rule 17a-4 に準拠する '
+        - name: 保持ラベルを作成、発行、および自動適用する
+          href: create-retention-labels.md
+        - name: SEC Rule 17a-4 に準拠する
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: PowerShell を使用して保持ラベルを作成および発行する
           href: bulk-create-publish-labels-using-powershell.md
@@ -325,9 +335,11 @@
           items:
             - name: ファイル計画マネージャー
               href: file-plan-manager.md
-            - name: 保持ラベル
+            - name: 保持ラベルの詳細
               href: labels.md
-            - name: PowerShell を使用して保持ラベルを作成および発行する
+            - name: 保持ラベルを作成および発行する
+              href: create-retention-labels.md
+            - name: PowerShell を使用して大規模に保持ラベルを作成および発行する
               href: bulk-create-publish-labels-using-powershell.md
             - name: ラベル分析によるラベル使用状況の表示
               href: label-analytics.md
