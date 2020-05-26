@@ -1,7 +1,7 @@
 - name: ビジネス サブスクリプションを管理する
   href: index.yml
-- name: Microsoft 365 Admin ヘルプ センター
-  href: ../admin/admin-home.md
+- name: Microsoft 365 管理者 ヘルプ センター
+  href: ../admin/index.yml
 - name: 試用する/購入する
   items:
     - name: Microsoft 365 試用版にサインアップする
@@ -28,7 +28,7 @@
       href: subscriptions/cancel-your-subscription.md
     - name: サブスクリプションの有効期限が切れた場合
       href: subscriptions/what-if-my-subscription-expires.md
-    - name: サードパーティ製のアプリを管理する
+    - name: サードパーティ製アプリのサブスクリプションを管理する
       href: manage-saas-apps.md
     - name: セルフサービスによる購入を管理する (ユーザー)
       href: subscriptions/manage-self-service-purchases-users.md
@@ -46,12 +46,12 @@
       href: licenses/subscriptions-and-licenses.md
 - name: 請求と支払い
   items:
-    - name: 請求書を表示する
+    - name: 課金内容または請求書を表示する
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: 請求書の内容を理解する
+    - name: 課金内容または請求書の内容を理解する
       href: billing-and-payments/understand-your-invoice.md
     - name: 支払方法を管理する
-      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+      href: billing-and-payments/manage-payment-methods.md
     - name: サブスクリプションを支払う
       href: billing-and-payments/pay-for-your-subscription.md
     - name: 支払い方法を変更する
@@ -62,7 +62,7 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: 請求先住所を変更する
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: 支払サービス ディレクティブ 2 および強力な顧客認証
+    - name: 支払サービス ディレクティブ 2 および強力な顧客認証について
       href: billing-and-payments/psd2.md
 - name: 請求アカウント
   items:
@@ -70,7 +70,7 @@
       href: manage-billing-accounts.md
     - name: テナントと自分の請求アカウントを関連付ける
       href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-- name: 自分のパートナーとの関係を管理します。
+- name: パートナーとの関係を管理する
   href: manage-partners.md
 - name: アカウントの使用を停止する
   href: close-your-account.md
