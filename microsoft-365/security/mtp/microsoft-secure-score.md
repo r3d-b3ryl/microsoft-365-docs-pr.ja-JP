@@ -1,6 +1,6 @@
 ---
-title: Microsoft セキュリティスコア (以前のイテレーション)
-description: Microsoft 365 セキュリティセンターの Microsoft セキュリティスコア、セキュリティを向上させる方法、およびセキュリティ管理者が予想できることについて説明します。
+title: Microsoft セキュア スコア (前のイテレーション)
+description: Microsoft 365 セキュリティ センターの Microsoft セキュア スコアについて、どのようにセキュリティ体制を改善するか、セキュリティ管理者がどんなことを期待できるかについて説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善のための処置
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
 ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/09/2020
 ms.locfileid: "44173394"
 ---
-# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft セキュリティスコア (以前のイテレーション)
+# <a name="microsoft-secure-score-previous-iteration"></a>Microsoft セキュア スコア (前のイテレーション)
 
 >[!IMPORTANT]
->Microsoft Secure Score のこのイテレーションは、今後数か月の間に新しいデザイン要素と機能に置き換えられています。 最新のイテレーションがまだ表示されていない場合は、近日中にお待ちください。
+>Microsoft セキュリティ スコアのこのイテレーションは、今後数か月以内に新しい設計要素と機能に置き換えられます。 新しいイテレーションがまだ表示されていない場合は、間もなく表示されます。
 >
->**指標 & [傾向**] の隣に表示されている場合は、新しいイテレーションになっています。 [Microsoft セキュリティスコアに移動する (新)](microsoft-secure-score-new.md)
+>[履歴]の横に、**[指標と傾向]** タブ が表示されている場合、新しいイテレーションを使用しています。 [Microsoft セキュア スコア (新規) に移動する](microsoft-secure-score-new.md)
 
 Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 Microsoft 365 セキュリティ センターの集中管理されたダッシュボードから、組織の Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視し、操作することができます。
 
@@ -57,7 +57,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ### <a name="products-included-in-secure-score"></a>セキュア スコアに含まれる製品
 
-現時点では、Microsoft 365 (Exchange Online を含む)、Azure AD、Microsoft Defender ATP、Azure ATP、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日中に公開されます。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅するわけではありませんが、適切な基準になります。 また、改善のための処置をサードパーティによるカバー対象としてマークすることもできます。
+現在、Microsoft 365 (Exchange Online を含む)、Azure AD、Microsoft Defender ATP、Azure ATP、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日リリース予定です。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅するわけではありませんが、適切な基準になります。 また、改善のための処置をサードパーティによるカバー対象としてマークすることもできます。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
@@ -125,7 +125,7 @@ Graph API にアクセスするには、役割に加えて、次のいずれか�
 
 ![セキュア スコア改善アクションの例](../../media/secure-score/secure-score1x450.png)
 
-*図 2: 改善アクションのポップアップ*
+*図 2 : 改善アクションのポップアップ*
 
 ## <a name="monitor-improvements-over-time"></a>時間の経過に伴う改善のモニタリング
 
@@ -139,16 +139,16 @@ Microsoft セキュア スコアは、システム構成、ユーザーの行動
 
 Microsoft セキュア スコアがお客様のセキュリティ体制をよりよく反映するように、いくつかの変更を加えました。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
 
-### <a name="april-21st-2020"></a>2020年4月21日
+### <a name="april-21st-2020"></a>2020 年 4 月 21 日
 
 #### <a name="removing-improvement-actions-that-dont-meet-expectations-for-reliable-measurement-or-dont-provide-a-useful-representation-of-security-posture"></a>改善アクションのうち、信頼できる測定としての条件を満たさないもの、またはセキュリティ体制の形として有用でないものは、削除しています。
 
-Microsoft セキュリティ スコアが有意義であり、すべての改善アクションが測定可能かつ信頼性の高いものになるよう、次の改善アクションについては削除します。
+Microsoft セキュリティ スコアが有意義であり、すべての改善のための処置が測定可能かつ信頼性の高いものになるよう、次の改善のための処置については削除します。
 
-- ドキュメントへの IRM による保護の適用
-- データ損失防止ポリシーの適用
+- ドキュメントに IRM の保護を適用する
+- データ損失防止ポリシーを適用する
 
-### <a name="january---march-2020"></a>2020年1月
+### <a name="january---march-2020"></a>2020年1月から3 月
 
 #### <a name="supporting-security-defaults-for-azure-ad-improvement-actions"></a>Azure AD の改善のための処置に関するセキュリティの既定群をサポートする
 
@@ -175,8 +175,8 @@ Microsoft セキュリティ スコアが有意義であり、すべての改善
 - 危険な非準拠のシャドウ IT アプリケーションを検出する
 - アクセス許可を確認し、環境に接続されたリスクの高い OAuth アプリの接続をブロックする
 - SharePoint Online ドキュメント ライブラリでバージョン管理を設定する
-- 過去30日間に使用されていないアカウントの削除/ブロック
-- グローバル管理者を5名未満で指定する
+- 過去30日間使用されていないアカウントを削除/ブロックする
+- グローバル管理者は 5 人未満で指定する
 
 #### <a name="removed-not-scored-improvement-actions"></a>[スコア未計算] の改善のための処置を削除済み
 
