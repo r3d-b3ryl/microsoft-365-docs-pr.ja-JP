@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Standalone Exchange Online Protection (EOP) 組織内の管理者は、Exchange 管理センター (EAC) とスタンドアロン Exchange Online Protection (EOP) PowerShell で、配布グループとメールが有効なセキュリティグループを作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: fc3f3807216b269a9868e87c5ec784d75385f878
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209021"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352193"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
@@ -34,7 +34,7 @@ Exchange Online メールボックスを使用しないスタンドアロンの 
 
 グループを管理するには、Exchange 管理センター (EAC) とスタンドアロン EOP PowerShell を使用します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
@@ -147,7 +147,7 @@ Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurit
 Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-構文およびパラメーターの詳細については、「 [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember) [」を参照して](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)ください。
+構文およびパラメーターの詳細については、「 [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember) [」を参照して](https://docs.microsoft.com/powershell/module/exchange/get-recipient)ください。
 
 ### <a name="use-standalone-eop-powershell-to-create-groups"></a>スタンドアロンの EOP PowerShell を使用してグループを作成する
 
@@ -173,7 +173,7 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
 ```
 
-構文およびパラメーターの詳細については、「 [New-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup)」を参照してください。
+構文およびパラメーターの詳細については、「 [New-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/New-EOPDistributionGroup)」を参照してください。
 
 ### <a name="use-standalone-eop-powershell-to-modify-groups"></a>スタンドアロンの EOP PowerShell を使用してグループを変更する
 
@@ -207,7 +207,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-構文およびパラメーターの詳細については、「 [update-eopdistributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)」[を参照してください](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)。
+構文およびパラメーターの詳細については、「 [update-eopdistributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember)」[を参照してください](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup)。
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>リモートの Windows PowerShell を使用してグループを削除する
 
@@ -217,7 +217,7 @@ Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMem
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-構文およびパラメーターの詳細については、「[削除-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup)」を参照してください。
+構文およびパラメーターの詳細については、「[削除-Eop/グループ](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup)」を参照してください。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 

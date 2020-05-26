@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Microsoft 365 メールボックスに配置できるさまざまな種類の保留リストを識別する方法について説明します。 これらの種類には、訴訟ホールド、電子情報開示の保留、Microsoft 365 のアイテム保持ポリシーなどがあります。 ユーザーが組織全体のアイテム保持ポリシーから除外されているかどうかを確認することもできます。
-ms.openlocfilehash: 12d91d987af2ba11b2d9aa417dff92adb745fb03
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 331fd37f48e42666ceb33a2a751b7d7a7a945e4b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232072"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352316"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -224,7 +224,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 > [!TIP]
 > 以前のコマンドで非アクティブなメールボックスを指定するには、その識別名または Exchange GUID 値を使用するのが最善の方法です。 これらの値のいずれかを使用すると、正しくないメールボックスを誤って指定することを避けられます。 
 
-遅延保留を管理するためのこれらのパラメーターの使用の詳細については、「[メールボックスの設定](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)」を参照してください。
+遅延保留を管理するためのこれらのパラメーターの使用の詳細については、「[メールボックスの設定](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)」を参照してください。
 
 遅延ホールド時にメールボックスを管理する場合は、次の点に注意してください。
 
@@ -232,13 +232,13 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 - 前述したように、メールボックスは、DelayHoldApplied または DelayReleaseHoldApplied プロパティが**True**に設定されている場合、保持期間が無制限であると見なされます。 ただし、これはメールボックス内の*すべて*のコンテンツが保持されるという意味ではありません。 各プロパティに設定されている値によって決まります。 たとえば、ホールドがメールボックスから削除されているため、両方のプロパティが**True**に設定されているとします。 その後、( *RemoveDelayReleaseHoldApplied*パラメーターを使用して) Outlook 以外のクラウドデータに適用される遅延ホールドのみを削除します。 管理フォルダーアシスタントが次回メールボックスを処理するときに、削除がマークされた Outlook 以外のアイテムは削除されます。 DelayHoldApplied プロパティが**True**に設定されている場合でも、削除対象としてマークされた Outlook アイテムは削除されません。 反対に、DelayHoldApplied が**False**に設定され、DelayReleaseHoldApplied が**true**に設定されている場合は、削除がマークされた Outlook アイテムのみが削除されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 メールボックスに適用されている保留リストを特定した後は、保留の期間の変更、一時的または完全に保持の削除、または Microsoft 365 のアイテム保持ポリシーから非アクティブなメールボックスを除外するなどのタスクを実行できます。 保留に関連するタスクの実行の詳細については、以下のいずれかのトピックを参照してください。
 
-- セキュリティ & コンプライアンスセンターの PowerShell で[ \<>new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps)コマンドレットを実行して、組織全体の Microsoft 365 アイテム保持ポリシーからメールボックスを除外します。 このコマンドは、 *Exchangelocation*プロパティの値がと等しいアイテム保持ポリシーにのみ使用でき `All` ます。
+- セキュリティ & コンプライアンスセンターの PowerShell で[ \<>new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)コマンドレットを実行して、組織全体の Microsoft 365 アイテム保持ポリシーからメールボックスを除外します。 このコマンドは、 *Exchangelocation*プロパティの値がと等しいアイテム保持ポリシーにのみ使用でき `All` ます。
 
-- Exchange Online PowerShell で、 [ \< プレフィックスまたはサフィックス>コマンドを指定せずに EXCLUDEFROMORGHOLDS hold GUID](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)を実行して、組織全体の Microsoft 365 保持ポリシーから非アクティブなメールボックスを除外します。
+- Exchange Online PowerShell で、 [ \< プレフィックスまたはサフィックス>コマンドを指定せずに EXCLUDEFROMORGHOLDS hold GUID](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps)を実行して、組織全体の Microsoft 365 保持ポリシーから非アクティブなメールボックスを除外します。
 
 - [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
 

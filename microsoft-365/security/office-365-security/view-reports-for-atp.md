@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用し &amp; ます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: af5844cf05d14e34059a26291d2034187439ec56
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208491"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351875"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -136,9 +136,9 @@ ATP レポートの概要とその使用方法については、この記事を�
 |**レポート (s)**|**詳細**|
 |**エクスプローラー**または**リアルタイム検出**: (Office 365 ATP Plan 2 のお客様はエクスプローラーを所有しています。Office 365 ATP Plan 1 お客様はリアルタイムの検出を行っています。|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
 |上位の送信者と受信者のレポート、スプーフィングメールレポート、スパム検出レポートなどの**電子メールセキュリティレポート**。|[セキュリティ/コンプライアンスセンターで電子メールのセキュリティレポートを表示する &amp;](view-email-security-reports.md)|
-|**ATP の安全なリンク URL トレース**: (PowerShell を使用して生成したレポートです。)このレポートには、過去7日間 (7 日間) の ATP の安全なリンクアクションの結果が表示されます。|[取得-UrlTrace コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-urltrace)|
-|**EOP および ATP の結果**: (PowerShell を使用して生成したカスタムレポートです)。 このレポートには、ドメイン、日付、イベントの種類、方向、アクション、メッセージ数などの情報が含まれます。|[Get-mailtrafficatpreport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport)|
-|**EOP および ATP の検出**: (PowerShell を使用して生成したカスタムレポートです)。 このレポートには、悪意のあるファイルまたは Url、フィッシングの試行、偽装、その他の電子メールやファイルの潜在的な脅威に関する詳細が記載されています。|[Get-MailDetailATPReport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport)|
+|**ATP の安全なリンク URL トレース**: (PowerShell を使用して生成したレポートです。)このレポートには、過去7日間 (7 日間) の ATP の安全なリンクアクションの結果が表示されます。|[取得-UrlTrace コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**EOP および ATP の結果**: (PowerShell を使用して生成したカスタムレポートです)。 このレポートには、ドメイン、日付、イベントの種類、方向、アクション、メッセージ数などの情報が含まれます。|[Get-mailtrafficatpreport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
+|**EOP および ATP の検出**: (PowerShell を使用して生成したカスタムレポートです)。 このレポートには、悪意のあるファイルまたは Url、フィッシングの試行、偽装、その他の電子メールやファイルの潜在的な脅威に関する詳細が記載されています。|[Get-MailDetailATPReport コマンドレットリファレンス](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP レポートを表示するには、どのようなアクセス許可が必要ですか。

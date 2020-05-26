@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の送信スパムポリシーを表示、作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 3f34c1ad27af1e0df2d2e2385f095da53e1cc318
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213034"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352001"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパムフィルターを構成する
 
@@ -112,9 +112,9 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
 
-     c.  送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
+     c. 送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
 
-     d.  Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
+     d. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
 
         必要な回数だけこれらの手順を繰り返します。
 
@@ -135,9 +135,9 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
 
-     c.  送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
+     c. 送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
 
-     d.  Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
+     d. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
 
         必要な回数だけこれらの手順を繰り返します。
 
@@ -308,7 +308,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterpolicy)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterpolicy)」を参照してください。
 
 #### <a name="step-2-use-powershell-to-create-an-outbound-spam-filter-rule"></a>手順 2: PowerShell を使用して送信スパムフィルタールールを作成する
 
@@ -328,7 +328,7 @@ New-HostedOutboundSpamFilterRule -Name "<RuleName>" -HostedOutboundSpamFilterPol
 New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedoutboundspamfilterrule)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedoutboundspamfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-policies"></a>PowerShell を使用して送信スパムフィルターポリシーを表示する
 
@@ -350,7 +350,7 @@ Get-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" | Format-List [<Spec
 Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterpolicy)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterpolicy)」を参照してください。
 
 ### <a name="use-powershell-to-view-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを表示する
 
@@ -388,7 +388,7 @@ Get-HostedOutboundSpamFilterRule -Identity "<RuleName>" | Format-List [<Specific
 Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedoutboundspamfilterrule)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedoutboundspamfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-policies"></a>PowerShell を使用して送信スパムフィルターポリシーを変更する
 
@@ -402,7 +402,7 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 Set-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterpolicy)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterpolicy)」を参照してください。
 
 ### <a name="use-powershell-to-modify-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを変更する
 
@@ -416,7 +416,7 @@ PowerShell で送信スパムフィルタールールを変更するときには
 Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedoutboundspamfilterrule)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedoutboundspamfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-enable-or-disable-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを有効または無効にする
 
@@ -440,7 +440,7 @@ Disable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 Enable-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedoutboundspamfilterrule) 」および「 [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedoutboundspamfilterrule)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedoutboundspamfilterrule) 」および「 [Disable-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedoutboundspamfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-set-the-priority-of-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールの優先度を設定する
 
@@ -480,7 +480,7 @@ Remove-HostedOutboundSpamFilterPolicy -Identity "<PolicyName>"
 Remove-HostedOutboundSpamFilterPolicy -Identity "Marketing Department"
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterpolicy)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterpolicy)」を参照してください。
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-rules"></a>PowerShell を使用して送信スパムフィルタールールを削除する
 
@@ -498,7 +498,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "<PolicyName>"
 Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 ```
 
-構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedoutboundspamfilterrule)」を参照してください。
+構文およびパラメーターの詳細については、「 [HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule)」を参照してください。
 
 ## <a name="for-more-information"></a>詳細情報
 

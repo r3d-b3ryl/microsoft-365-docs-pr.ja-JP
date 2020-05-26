@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: セキュリティ/コンプライアンス センターの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3be3b64d7745fe97aae6b2003e0adbcd6aa7d82e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626443"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352100"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -42,14 +42,16 @@ ms.locfileid: "43626443"
 ## <a name="before-you-begin"></a>始める前に
 
 - コンテンツ検索を作成して実行するには、**電子情報開示管理者**役割グループのメンバーであるか、**コンプライアンス検索**の管理役割が割り当てられている必要があります。 メッセージを削除するには、**Organization Management** 役割グループのメンバーであるか、**検索と消去**の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[セキュリティ/コンプライアンス センターの電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」をご覧ください。
-    
+
 - メッセージを削除するには、セキュリティ/コンプライアンス センターの PowerShell を使用する必要があります。 接続方法については、「[手順 2](#step-2-connect-to-security--compliance-center-powershell)」を参照してください。
-    
+
 - メールボックスごとに最大 10 個のアイテムを一度に削除できます。 メッセージを検索し削除するための機能はインシデント対応ツールを意図したものなので、この制限により、メールボックスからすばやくかつ確実にメッセージを削除できます。 これは、ユーザーのメールボックスをクリーンアップするための機能ではありません。
-    
+
 - コンテンツ検索で検索と削除アクションを実行してアイテムを削除できるメールボックスの最大数は 50,000 個です。 コンテンツ検索 ([手順 1](#step-1-create-a-content-search-to-find-the-message-to-delete) で作成) に 50,000 を超えるソース メールボックスが含まれる場合、削除アクション (手順 3 で作成) は失敗します。 50,000 を超えるメールボックスに対して検索と削除の操作を実行するためのヒントについては、「[詳細情報](#more-information)」セクションを参照してください。 
-    
+
 - この記事の手順は、Exchange Online のメールボックスとパブリック フォルダーにあるアイテムを削除する場合にのみ使用できます。 SharePoint や OneDrive for Business のサイトからコンテンツを削除する場合には使用できません。
+
+- Advanced eDiscovery ケースのレビュー セット内のメール アイテムは、この記事の手順で削除することはできません。 これは、レビュー セット内のアイテムはライブ サービスではなく、Azure ストレージの場所に保存されるからです。 これは、手順 1 で作成したコンテンツ検索では返されないことを意味します。 レビュー セット内のアイテムを削除するには、レビュー セットが含まれている Advanced eDiscovery ケースを削除する必要があります。 詳細については、「[Close or delete an Advanced eDiscovery case (Advanced eDiscovery ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>手順 1: コンテンツ検索を作成して、削除するメッセージを探す
 
@@ -59,9 +61,9 @@ ms.locfileid: "43626443"
     
 - [コンテンツ検索のキーワード クエリ](keyword-queries-and-search-conditions.md)
     
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
     
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
     
 > [!NOTE]
 > この手順で作成するコンテンツ検索で検索されるコンテンツの場所に、SharePoint や OneDrive for Business のサイトを含めることはできません。 メール メッセージに使われるコンテンツ検索には、メールボックスとパブリック フォルダーのみを含めることができます。 コンテンツ検索にサイトが含まれる場合、**New-ComplianceSearchAction** コマンドレットを実行すると、手順 3 でエラーが発生します。 
@@ -127,7 +129,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 前のコマンドを実行してメッセージを論理的または物理的に削除する場合、*SearchName* パラメーターで指定される検索は、手順 1 で作成したコンテンツ検索になります。 
   
-詳細については、「[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)」を参照してください。
+詳細については、「[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction)」を参照してください。
 
 ## <a name="more-information"></a>詳細情報
 

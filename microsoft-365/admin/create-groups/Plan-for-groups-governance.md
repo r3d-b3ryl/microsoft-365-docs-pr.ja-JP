@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: Microsoft 365 グループガバナンスを計画する方法について説明します。
-ms.openlocfilehash: e5e3b640edd15cb46fa3da8b65141fe9f63d6399
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: c37f88cbd3f41f22c1effdd7ba482033012aff01
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322101"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351841"
 ---
 # <a name="plan-for-governance-in-groups"></a>グループでのガバナンスを計画する
 
@@ -131,7 +131,7 @@ Microsoft 365 グループには、組織で必要となる可能性があるす
 > [!Important]
 > グループとチームの作成を制限すると、多くの Microsoft 365 サービスでは、サービスを機能させるためにグループを作成する必要があるため、ユーザーの生産性が低下する可能性があります。 詳細については、「 [Microsoft 365 グループを作成したユーザーを制御する理由](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide%23why-control-who-creates-office-365-groups)」を参照してください。
 
-#### <a name="resources"></a>*Resources*
+#### <a name="resources"></a>*リソース*
 - [Microsoft 365 グループを作成できるユーザーを管理する](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide)
 - [オブジェクトの属性に基づいて動的にグループを作成する](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-with-advanced-rules)
 - [Outlook 用の Microsoft 365 グループの既定の設定をパブリックまたはプライベートに変更する方法](https://support.office.com/article/office-365-groups-in-outlook-private-by-default-36236e39-26d3-420b-b0ac-8072d2d2bedc)
@@ -153,7 +153,7 @@ Microsoft 365 グループを削除した場合は、既定では30日間保持�
 > [!Important]
 >"論理的な削除" 期間中にユーザーがサイトにアクセスしようとすると、403 アクセス不可メッセージが表示されます。 この期間が経過した後、ユーザーがサイトにアクセスしようとすると、404 見つかりませんのメッセージが表示されます。
 
-#### <a name="resources"></a>*Resources*
+#### <a name="resources"></a>*リソース*
 - [削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
 - [Azure Active Directory で削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)
 - [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
@@ -176,7 +176,7 @@ Microsoft 365 グループを削除した場合は、既定では30日間保持�
 > [!Important]
 >名前付けポリシーは、すべてのグループのワークロード (Outlook、Microsoft Teams、SharePoint、Planner、Yammer など) で作成されたグループに適用されます。グループ名とグループのエイリアスのどちらにも適用されます。名前付けポリシーは、ユーザーによるグループの作成時、または既存のグループのグループ名やエイリアスの編集時に適用されます。
 
-#### <a name="resources"></a>*Resources*
+#### <a name="resources"></a>*リソース*
 - [Microsoft 365 グループの名前付けポリシー](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy)
 - [Microsoft 365 グループの名前付けポリシーを Azure Active Directory に適用する](https://go.microsoft.com/fwlink/?linkid=868340)
 - [グループ設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?linkid=868341)
@@ -206,7 +206,7 @@ Microsoft 365 グループを削除した場合は、既定では30日間保持�
 > [!Important]
 >有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
 
-#### <a name="resources"></a>*Resources*
+#### <a name="resources"></a>*リソース*
 - [Microsoft 365 グループの有効期限ポリシー](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 - [Microsoft 365 グループの有効期限ポリシーを構成する](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
@@ -295,7 +295,7 @@ Microsoft 365 Reports dashboard には、組織内の Microsoft 製品全体に�
 |![画像の説明](../../media/next_steps.png)|次のステップ|<ul><li>定期的にグループアクティビティレポートをレビューするための組織の要件を文書化します。</li></ul>|
 
 
-#### <a name="resources"></a>*Resources*
+#### <a name="resources"></a>*リソース*
 - [管理センターの Microsoft 365 レポート](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 - [Office 365 の導入コンテンツ パック](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics)
 - [Azure AD コンテンツ パック](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-power-bi-content-pack-how-to)
@@ -327,7 +327,7 @@ Microsoft 365 グループには、組織で必要となる可能性がある、
 | ステージ | 説明 |
 | --------------- | ------------------------------------------------------------ |
 | ガイダンス |<ul><li>Open または IT 主導のプロビジョニング モデルを決定します。</li><li> 部署などの Azure AD 属性に基づいて、[動的メンバーシップの規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)に関連付けられた特定のグループを作成することを検討します</li><li> 高機密、社外秘 (既定)、一般など、組織内の分類を定義します。</li><li>  保持や機密性などの分類に基づいてポリシーを定義します。</li><li> SharePoint は、すべての Microsoft 365 グループのコンテンツサービスです。 3層の保護 (ベースライン、機密、高機密)[に対して SharePoint Online サイトを設計および展開することを](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection)検討してください。 この 3 層の保護の詳細については、「[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)」を参照してください。</li><li> 既定では、パブリック グループとプライベート グループの両方が GAL にリストされます。 GAL に表示するグループ、特に Microsoft Teams の外部で作成されたグループを決定します。  特定のグループを非表示にするには、 [set-unifiedgroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx)コマンドレットの "HiddenFromAddressListsEnabled" または "HidefromExchangeClients" を使用します。</li></ul> |
-| 次のステップ      |<ul><li>[使用方法のガイドライン](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets) を定義して、グループを効果的に維持するために役立つベスト プラクティスや、内部コンテンツのポリシーについてユーザーを教育します。たとえば、分類、ポリシー、手順を理解させることなどです。</li><li>グループのライフサイクル期間 (有効期限ポリシー) を定義します。この期間でグループは更新される必要があり、そうでない場合は削除されます。</li><li>分類に基づいてポリシーを実装するために、次に示すカスタム ジョブの作成を検討します。</li><li>プライバシーをプライベートに設定します。</li><li>外部のメンバーシップ/共有を無効にします。 </li><li>電子メールを送信して、[所有者のいない](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)グループのグループ メンバーに通知します。</li><li>所有権ポリシーを強制します (最低 2 人の所有者)。</li><li> 分類に基づいて、グループのアイテム保持ポリシーを定義します。 </li><li>アイテム保持ポリシーの概要。</li><li>PowerShell を使用して、分類と [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps) でグループを識別します。</li><li>[JSON スキーマ リファレンス](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)で定義されているアクションを使ったコントロールを定義するために、サイト デザインとサイト スクリプトの使用を検討します。</li><li>[サイト デザインと Microsoft Flow を使用して簡単なサイト ディレクトリを作成する](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial)ことを検討してください。 このサイト デザインを使用してサイトが作成されると、サイトの詳細情報が取り込まれ、リストに書き込まれます。 </li></ul>|
+| 次のステップ      |<ul><li>[使用方法のガイドライン](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets) を定義して、グループを効果的に維持するために役立つベスト プラクティスや、内部コンテンツのポリシーについてユーザーを教育します。たとえば、分類、ポリシー、手順を理解させることなどです。</li><li>グループのライフサイクル期間 (有効期限ポリシー) を定義します。この期間でグループは更新される必要があり、そうでない場合は削除されます。</li><li>分類に基づいてポリシーを実装するために、次に示すカスタム ジョブの作成を検討します。</li><li>プライバシーをプライベートに設定します。</li><li>外部のメンバーシップ/共有を無効にします。 </li><li>電子メールを送信して、[所有者のいない](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)グループのグループ メンバーに通知します。</li><li>所有権ポリシーを強制します (最低 2 人の所有者)。</li><li> 分類に基づいて、グループのアイテム保持ポリシーを定義します。 </li><li>アイテム保持ポリシーの概要。</li><li>PowerShell を使用して、分類と [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps) でグループを識別します。</li><li>[JSON スキーマ リファレンス](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)で定義されているアクションを使ったコントロールを定義するために、サイト デザインとサイト スクリプトの使用を検討します。</li><li>[サイト デザインと Microsoft Flow を使用して簡単なサイト ディレクトリを作成する](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial)ことを検討してください。 このサイト デザインを使用してサイトが作成されると、サイトの詳細情報が取り込まれ、リストに書き込まれます。 </li></ul>|
 
 ### <a name="regulated-or-enterprise"></a>規制またはエンタープライズ
 上記の推奨事項に加えて、Azure Active Directory Premium P1/P2 ライセンスを使用して、少なくとも Enterprise E3/E5 を使用して Office 365 を展開した政府機関、金融サービス、医療機関のような、厳しく規制された、または大規模な企業の場合は、次のことを考慮してください。

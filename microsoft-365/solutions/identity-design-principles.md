@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c830e7f7b0366623520d7ba4e5a47a51e73f09ad
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160380"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352548"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Id とそれ以外の場合: 1 つの設計者の視点
 
@@ -183,7 +183,7 @@ Outlook クライアントを見ると、Exchange だけでなく、この機能
 - お客様の環境をシミュレーションします。お客様の本番環境は変更されません。 
 - お客様向けのソフトウェアの開発。
 
-これらのマルチテナントのシナリオでは、多くの場合、テナント間でいくつかの構成を維持するか、構成の変更と drifts を報告します。 これは、多くの場合、手動による変更から、コードとしての構成への移行を意味します。 Microsoft Premiere サポートは、このパブリック IP に基づくこれらの種類の要件につい[https://Microsoft365dsc.com](https://Microsoft365dsc.com)てワークショップを提供します。
+これらのマルチテナントのシナリオでは、多くの場合、テナント間でいくつかの構成を維持するか、構成の変更と drifts を報告します。 これは、多くの場合、手動による変更から、コードとしての構成への移行を意味します。 Microsoft Premiere サポートは、このパブリック IP に基づくこれらの種類の要件についてワークショップを提供 [https://Microsoft365dsc.com](https://Microsoft365dsc.com) します。
 
 
 ### <a name="multi-geo"></a>Multi-Geo 
@@ -209,7 +209,7 @@ Outlook クライアントを見ると、Exchange だけでなく、この機能
 
 すべてを委任することはできません (ただし、ギャップは減少します)。つまり、グローバル管理者の役割を使用する必要がある場合があります。 この役割のメンバーではなく、コードとしての構成と自動化を考慮する必要があります。
 
-**注**: Microsoft 365 管理センターには、ユーザーフレンドリなインターフェイスがありますが、Azure AD 管理者の環境と比較して機能のサブセットがあります。 両方のポータルは同じ Azure AD の役割を使用するので、変更は同じ場所で行われます。 ヒント: Azure の低優先管理 UI をすべて非表示にしたい場合は、を[https://aad.portal.azure.com](https://aad.portal.azure.com)使用します。 
+**注**: Microsoft 365 管理センターには、ユーザーフレンドリなインターフェイスがありますが、Azure AD 管理者の環境と比較して機能のサブセットがあります。 両方のポータルは同じ Azure AD の役割を使用するので、変更は同じ場所で行われます。 ヒント: Azure の低優先管理 UI をすべて非表示にしたい場合は、を使用 [https://aad.portal.azure.com](https://aad.portal.azure.com) します。 
 
 名前の種類 役割の名前から仮定しないでください。 言語は、非常に正確なツールではありません。 目標は、必要な役割を確認する前に委任する必要がある操作を定義することです。 "Security Reader" 役割に他のユーザーを追加しても、すべてのユーザーのセキュリティ設定が表示されることはありません。 
 
@@ -243,29 +243,29 @@ Outlook クライアントを見ると、Exchange だけでなく、この機能
 
 - **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators) 
-- **Microsoft**  -  [ Teamshttps://docs.microsoft.com/microsoftteams/itadmin-readiness](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
+- **Microsoft Teams**  - [https://docs.microsoft.com/microsoftteams/itadmin-readiness ](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
 - **情報** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](https://docs.microsoft.com/microsoft-365/compliance/) 
-  + **アクセス許可のフィルター処理** -  [ https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](https://docs.microsoft.com/microsoft-365/compliance/)
-  + **コンプライアンスの境界** -  [ https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
-  + **高度な電子情報開示** -  [ https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
+  + **アクセス許可のフィルター処理**  - [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search ](https://docs.microsoft.com/microsoft-365/compliance/)
+  + **コンプライアンスの境界**  - [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
+  + **高度な電子情報開示**  - [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
 - **複数地域** - [https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/office365/enterprise/add-a-sharepoint-geo-admin) 
 - **Dynamics 365** -[https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   注: このリンクは、ドキュメントのルートに関連しています。 管理/委任モデルには、さまざまな種類のサービスがあります。
-- **電源** -  [プラットフォームhttps://docs.microsoft.com/power-platform/admin/admin-documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation )
-  + **パワー**  -  [アプリhttps://docs.microsoft.com/power-platform/admin/wp-security](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
+- **電源プラットフォーム**  - [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
+  + **パワーアプリ**  - [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
     注: 管理/委任モデルにはバリエーションがある複数の種類があります。
-  + **電源の自動化** -  [ https://docs.microsoft.com/power-automate/environments-overview-admin](https://docs.microsoft.com/power-automate/environments-overview-admin )
-  + **PowerBI** -  [ PowerBIhttps://docs.microsoft.com/power-bi/service-admin-governance](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
+  + **電源の自動化**  - [https://docs.microsoft.com/power-automate/environments-overview-admin ](https://docs.microsoft.com/power-automate/environments-overview-admin )
+  + **PowerBI**  - [https://docs.microsoft.com/power-bi/service-admin-governance ](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
 メモ: データプラットフォームのセキュリティと委任 (Power BI がコンポーネントである) は、複雑な領域です。
-- **MEM/Intune**  -  [ https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
-- **Microsoft Defender ATP**  -  [ https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
+- **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
+- **Microsoft DEFENDER ATP**  - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
 - **Microsoft の脅威保護** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](https://docs.microsoft.com/cloud-app-security/manage-admins)
-- **Stream** -  [ Streamhttps://docs.microsoft.com/stream/assign-administrator-user-role](https://docs.microsoft.com/stream/assign-administrator-user-role )
-- **情報の障壁** -  [ https://docs.microsoft.com/microsoft-365/compliance/information-barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
+- **Stream**  - [https://docs.microsoft.com/stream/assign-administrator-user-role ](https://docs.microsoft.com/stream/assign-administrator-user-role )
+- **情報の障壁**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
 
-Rest に関しては、ドキュメント内の検索は最近有効[https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)になっています。 
+Rest に関しては、ドキュメント内の検索は最近有効になってい [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) ます。 
 
 
 ### <a name="activity-logs"></a>アクティビティログ
@@ -273,7 +273,7 @@ Office 365 には、[統合監査ログ](https://docs.microsoft.com/microsoft-36
 
 他の API を通じてアクセスされる Microsoft 365 ログの例には、次のようなものがあります。
 - [AZURE AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (Office 365 に関連付けられていないアクティビティ)
-- [Exchange メッセージ追跡](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+- [Exchange メッセージ追跡](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
 - 前述の脅威/UEBA システム (たとえば、Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender ATP など)
 - [Microsoft information protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
@@ -312,7 +312,7 @@ Azure の役割ベースのアクセス制御 (RBAC) により、Azure の詳細
 
 上記の図からわかるように、他の多くのサービスは設計の一部として考慮する必要があります (例: [Azure ポリシー](https://docs.microsoft.com/azure/governance/policy/overview)、 [asure 青写真](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理グループ](https://docs.microsoft.com/azure/governance/management-groups/)など)。
 
-## <a name="conclusion"></a>結論
+## <a name="conclusion"></a>まとめ
 短時間の概要として開始されましたが、予想よりも長くなっています。  これで、組織の委任モデルの作成の詳細を紹介する準備ができました。  この会話は、お客様とよく似ています。 すべてのユーザーに対して動作するモデルは1つありません。 お客様に対して表示される一般的なパターンを文書化する前に、Microsoft エンジニアリングからいくつかの改善された改良を待ってください。 それまでは、Microsoft アカウントチームと協力して、最も近い[Microsoft テクノロジセンター](https://www.microsoft.com/mtc)へのアクセスを手配することができます。  こちらを参照してください。
 
 

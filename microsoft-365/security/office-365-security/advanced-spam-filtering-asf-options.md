@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のスパム対策ポリシーで利用できる高度なスパムフィルター (ASF) 設定について学習できます。
-ms.openlocfilehash: 904513780ca472efb91cfcd914ad6c72d6c720f7
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213414"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352478"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパムフィルター (ASF) 設定
 
@@ -35,7 +35,7 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 > [!NOTE]
 > 1つ以上の ASF 設定を有効にすることは、スパムフィルタリングに対して積極的にアプローチすることです。 ASF によってフィルター処理されたメッセージを誤検知として報告することはできません。 ASF によってフィルター処理されたメッセージを特定するには、次のようにします。 <ul><li>定期的なエンドユーザーのスパム検疫通知。</li><li>フィルター処理されたメッセージが検疫に存在する。</li><li>`X-CustomSpam:`このトピックで説明されているように、メッセージに追加される特定の X-ヘッダーフィールド。</li></ul>
 
-次のセクションでは、セキュリティ & コンプライアンスセンター、および Exchange Online PowerShell またはスタンドアロン EOP PowerShell ([set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy)および[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)) で使用可能な ASF 設定とオプションについて説明します。 詳細については、「 [EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+次のセクションでは、セキュリティ & コンプライアンスセンター、および Exchange Online PowerShell またはスタンドアロン EOP PowerShell ([set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)および[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)) で使用可能な ASF 設定とオプションについて説明します。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>ASF 設定を有効化、無効化、またはテストする
 

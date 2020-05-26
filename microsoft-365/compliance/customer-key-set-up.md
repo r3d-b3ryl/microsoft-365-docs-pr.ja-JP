@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、および Teams の各ファイルに対して Microsoft 365 の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634199"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352274"
 ---
 # <a name="set-up-customer-key"></a>顧客キーを設定する
 
@@ -137,7 +137,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
 
 3. プロセスを完了させるために、Microsoft にお問い合わせください。 SharePoint および OneDrive for Business チームについては、 [spock@microsoft.com](mailto:spock@microsoft.com)にお問い合わせください。 Exchange Online と Skype for Business の場合は、 [exock@microsoft.com](mailto:exock@microsoft.com)にお問い合わせください。 メールに次のものを含めます。
 
-   **件名**: \<*テナントの完全修飾ドメイン名*の顧客キー\>
+   **件名**: \< *テナントの完全修飾ドメイン名*の顧客キー\>
 
    **本文**: 必須の保持期間を最終処理するサブスクリプション id。
    各サブスクリプションのための、-AzProviderFeature の出力。
@@ -209,7 +209,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Office 365 appID>
    ```
 
-   詳細は次のとおりです。
+   ここで、
 
     - [*コンテナー名*は、作成したキーコンテナーの名前です。
 
@@ -262,7 +262,7 @@ Azure Key Vault にキーを追加するには、2つの方法があります。
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
-詳細は次のとおりです。
+ここで、
 
 - "*コンテナー名*" は、キーを作成するキーコンテナーの名前です。
 
@@ -312,7 +312,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 -OutputFile <filename.backup>
 ```
 
-出力ファイルがサフィックス`.backup`を使用していることを確認します。
+出力ファイルがサフィックスを使用していることを確認し `.backup` ます。
   
 このコマンドレットから得られる出力ファイルは暗号化されており、Azure Key Vault の外部では使用できません。 バックアップは、バックアップが実行された Azure サブスクリプションにのみ復元できます。
   
@@ -424,7 +424,7 @@ DEP を作成するには、次の手順を実行します。
    New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
    ```
 
-   詳細は次のとおりです。
+   ここで、
 
    - *PolicyName*は、ポリシーに使用する名前です。 名前にスペースを含めることはできません。 たとえば、USA_mailboxes のようにします。
 
@@ -448,7 +448,7 @@ DEP を作成するには、次の手順を実行します。
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-ここで、 *MailboxIdParameter*はメールボックスを指定します。 メールボックスの設定コマンドレットの詳細については、「[メールボックスの設定](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)」を参照してください。
+ここで、 *MailboxIdParameter*はメールボックスを指定します。 メールボックスの設定コマンドレットの詳細については、「[メールボックスの設定](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps)」を参照してください。
   
 ### <a name="validate-mailbox-encryption"></a>メールボックスの暗号化を検証する
 
@@ -498,7 +498,7 @@ DEP を作成するには、Windows PowerShell を使用して SharePoint Online
 
 - [顧客キーを管理する](customer-key-manage.md)
 
-- [顧客キーまたは可用性キーをローリングまたはローテーションする](customer-key-availability-key-roll.md)
+- [カスタマー キーまたは可用性キーをローリングまたはローテーションする](customer-key-availability-key-roll.md)
 
 - [可用性キーについて](customer-key-availability-key-understand.md)
 

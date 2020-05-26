@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224591"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351977"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
@@ -175,17 +175,17 @@ ms.locfileid: "44224591"
 
 1. リモート PowerShell を使用して Exchange サーバーに接続します。 [「リモート PowerShell を使用して Exchange サーバーに接続する](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)」の手順を実行します。
 
-2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除する場合は、コマンドレットの[削除](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)を使用します。
+2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除する場合は、コマンドレットの[削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)を使用します。
 
-3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx)します。
+3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx)します。
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online のメールボックスの手順
 
 1. [「PowerShell を使用して Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」の手順を実行します。
 
-2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除するには、 [[受信トレイルールの削除](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)] コマンドレットを使用します。
+2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除するには、 [[受信トレイルールの削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)] コマンドレットを使用します。
 
-3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx)します。
+3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx)します。
 
 ## <a name="how-to-minimize-future-attacks"></a>今後の攻撃を最小限に抑える方法
 

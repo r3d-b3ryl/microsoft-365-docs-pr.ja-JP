@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4328855a4a7332c452d7e2832e1b924c16652f8b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630604"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351852"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -289,7 +289,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
   
 ### <a name="match-accuracy"></a>一致精度
 
-前述のように、機密情報の種類の定義と検出には、さまざまな種類の証拠を組み合わせて使用します。 一般的に、機密情報の種類はそのような複数の組み合わせ (パターンと呼ばれます) で定義されます。 必要な証拠が少ないパターンは一致精度 (信頼度) が低く、必要な証拠が多いパターンは一致精度 (信頼度) が高くなります。 各機密情報の種類に使用される実際のパターンと信頼度の詳細については、「[機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)」を参照してください。
+前述のように、機密情報の種類の定義と検出には、さまざまな種類の証拠を組み合わせて使用します。 一般的に、機密情報の種類はそのような複数の組み合わせ (パターンと呼ばれます) で定義されます。 必要な証拠が少ないパターンは一致精度 (信頼度) が低く、必要な証拠が多いパターンは一致精度 (信頼度) が高くなります。 すべての機密情報の種類に使用される実際のパターンと信頼度の詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。
   
 たとえば、クレジット カード番号という機密情報の種類は次の 2 つのパターンで定義されます。
   
@@ -332,7 +332,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 事前に作成および発行された[保持ラベル](labels.md)を DLP ポリシーでの条件として使用する場合、注意すべき点がいくつかあります。
 
 - DLP ポリシーでの条件として保持ラベルを使用するには、保持ラベルを事前に作成、発行、および適用しておく必要があります。
-- 保持ラベルは、作成および発行された後、同期に最大 1 日、自動適用に最大 7 日かかる場合があります。 詳細については、「[保持ラベルが有効になるまでの所要時間](labels.md#how-long-it-takes-for-retention-labels-to-take-effect)」を参照してください。
+- 保持ラベルは、作成および発行された後、同期に最大 1 日、自動適用に最大 7 日かかる場合があります。 詳細については、「[保持ラベルが有効になるまでの所要時間](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)」を参照してください。
 - ポリシーに保持ラベルを使用するのは、***SharePoint Online と OneDrive for Business のアイテムに対してのみサポートされます***。
 
 
@@ -504,9 +504,13 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 1. Microsoft 365 でグループを作成して、コンプライアンス責任者をグループに追加します。
     
 2. セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページで役割グループを作成します。 
+
+3. 役割グループを作成している間に、**役割の選択**セクションを使用して、次の役割を役割グループに追加します: **DLP コンプライアンス管理**。
     
-3. Microsoft 365 のグループを役割グループに追加します。
-    
+4. **メンバーの選択**セクションを使用して、以前に作成した Microsoft 365 グループを役割グループに追加します。
+
+また、**表示のみ DLP コンプライアンス管理** の役割を付与することで、DLP ポリシーと DLP レポートに表示のみの権限を持った役割グループを作成することもできます。
+
 詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
 これらのアクセス許可は、DLP ポリシーを作成して適用するためにのみ必要です。 ポリシーの適用には、コンテンツへのアクセスは不要です。
@@ -517,7 +521,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
   
 1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. これらの[ポリシーおよびコンプライアンスの dlp コマンドレット](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)のいずれかを使用する
+2. これらの[ポリシーおよびコンプライアンスの dlp コマンドレット](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)のいずれかを使用する
     
 ただし、DLP レポートは、Exchange Online を含む Microsoft 365 全体からデータを取り込む必要があります。 このため、**DLP レポート用のコマンドレットは、セキュリティ &amp; コンプライアンス センター Powershell ではなく Exchange Online Powershell で使用できます**。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
   
@@ -525,9 +529,9 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     
 2. DLP レポート用のいずれかのコマンドレットを使用します。
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport?view=exchange-ps)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>詳細情報
 
@@ -539,7 +543,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)
     
-- [機密情報の種類で検索される情報](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
     
 - [DLP 関数の検索対象](what-the-dlp-functions-look-for.md)
     

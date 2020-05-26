@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 0729530537e1d01f2e58633bf67a968a6ae2717b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327255"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352294"
 ---
 # <a name="supervision-policies"></a>監督ポリシー
 
@@ -291,11 +291,11 @@ Office 365 の監督に関する定年に関する情報については、 [Micr
 
 |**アクティビティ**|**関連付けられたコマンド**|
 |:-----|:-----|
-| **ポリシーを作成する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| **ポリシーを編集する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| **ポリシーを削除する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **ポリシーを作成する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
+| **ポリシーを編集する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
+| **ポリシーを削除する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
-監査アクティビティを統合監査ログまたは[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell コマンドレットを使用して表示します。
+監査アクティビティを統合監査ログまたは[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell コマンドレットを使用して表示します。
 
 たとえば、次の例では、すべての監督レビュー活動 (ポリシーとルール) のアクティビティを返し、それぞれの詳細情報を一覧表示します。
 
@@ -309,7 +309,7 @@ Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -Re
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-監督のレポートとログで提供される情報に加えて、 [SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell コマンドレットを使用して、すべての監督ポリシーアクティビティの完全な詳細リストを取得することもできます。
+監督のレポートとログで提供される情報に加えて、 [SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) PowerShell コマンドレットを使用して、すべての監督ポリシーアクティビティの完全な詳細リストを取得することもできます。
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 

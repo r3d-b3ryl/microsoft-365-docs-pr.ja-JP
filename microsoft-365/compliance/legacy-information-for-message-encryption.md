@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: まだ組織を新しい OME 機能に移行していない場合でも、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft は、組織にとって適切であることをすぐに、新しい OME 機能に移行するための計画を立てることを推奨します。 手順については、「Azure Information Protection の上に構築された新しい Office 365 メッセージ暗号化機能のセットアップ」を参照してください。 新しい機能が最初にどのように機能するかについて詳しくは、「Office 365 Message Encryption」を参照してください。 この記事の残りの部分では、新しい OME 機能のリリース前の OME の動作を示します。
-ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00b42dfceaeac5b7e9e28263c56f9f7490644a3b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632686"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351908"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -108,7 +108,7 @@ Exchange Online および Exchange Online Protection 管理者は、暗号化さ
   
 1. 「リモート[Powershell を使用して Exchange online に接続する](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)」の説明に従って、リモート powershell を使用して exchange online に接続します。
 
-2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用し[ます。](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 組織のブランド化されたカスタマイズを DisclaimerText、EmailText、および PortalText の値から削除するには、値を`""`空の文字列に設定します。 ロゴなどのすべてのイメージ値について、値を`"$null"`に設定します。
+2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用し[ます。](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 組織のブランド化されたカスタマイズを DisclaimerText、EmailText、および PortalText の値から削除するには、値を空の文字列に設定し `""` ます。 ロゴなどのすべてのイメージ値について、値をに設定 `"$null"` します。
 
    **暗号化のカスタマイズ オプション**
 
@@ -220,3 +220,9 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
  **Q. OME ポータルと OME Viewer アプリで提供した情報を Microsoft はどのように使用しますか。**
   
 [Office 365 Messaging Encryption ポータルのプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明では、Microsoft が個人情報に対して実行する操作と行わないことについての詳細情報が提供されています。
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>要求した後に1回限りのパスコードを受け取っていない場合はどうすればよいですか。
+
+最初に、電子メールクライアントの迷惑メールまたはスパムフォルダーを確認します。 組織の DKIM および DMARC の設定により、これらの電子メールがスパムとしてフィルター処理されることがあります。
+
+次に、セキュリティ & コンプライアンスセンターで [検疫] をチェックします。 多くの場合、1回限りのパスコードが含まれているメッセージ (特に、組織が受信する最初のコード) によって検疫が終了します。

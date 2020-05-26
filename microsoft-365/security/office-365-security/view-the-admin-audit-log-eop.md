@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 管理者は、管理者監査ログをスタンドアロンの Exchange Online Protection (EOP) で表示および検索する方法を学習できます。
-ms.openlocfilehash: 3aedebc97ccd32c1641510017a276ddbe4770633
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208478"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351863"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>管理者監査ログをスタンドアロン EOP で表示する
 
@@ -28,7 +28,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 > [!NOTE]
 > <ul><li>管理者監査ログは既定で有効になっており、無効にすることはできません。</li><li>管理者監査ログには、 **Get**、 **Search**、または**Test**という動詞で始まるコマンドレットに基づいてアクションが記録されることはありません。</li><li>監査ログのエントリは 90 日間維持されます。 エントリが90日よりも古い場合は、削除されます。</li></ul>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
@@ -73,7 +73,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 - _Parameters_パラメーターは、_コマンドレット_パラメーターと共にのみ使用できます。
 
-- _Objectid_パラメーターは、コマンドレットによって変更されたオブジェクトによって結果をフィルター処理します。 有効な値は、監査ログでのオブジェクトの表現方法によって異なります。 例:
+- _Objectid_パラメーターは、コマンドレットによって変更されたオブジェクトによって結果をフィルター処理します。 有効な値は、監査ログでのオブジェクトの表現方法によって異なります。 以下に例を示します。
 
   - 名前
   - 標準識別名 (たとえば、contoso.com/Users/Akia Al-Al-zuhairi)
@@ -100,7 +100,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04/2019").ToUniversalTime() -EndDate (Get-Date "10/03/2019").ToUniversalTime()
 ```
 
-構文およびパラメーターの詳細については、「[Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)」を参照してください。
+構文およびパラメーターの詳細については、「[Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)」を参照してください。
 
 ### <a name="view-details-of-audit-log-entries"></a>監査ログ エントリの詳細を表示する
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 監査ログの検索結果をエクスポートして CSV ファイルにダウンロードした後、Excel の Power Query エディターの JSON 変換機能を使用して、AuditData 列の JSON オブジェクトの各プロパティをそれぞれの列に分割できます。 これは、探している特定の監査データをすばやく見つけるのに役立ちます。 PowerShell を使用して、監査ログレコードを検索およびエクスポートすることもできます。
-ms.openlocfilehash: c06fbe28a62cf04e1ffdd6ecf173d027e89b5074
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799930"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352387"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>監査ログ レコードをエクスポート、構成、表示する
 
@@ -92,7 +92,7 @@ ms.locfileid: "43799930"
 
     - [**元の列名をプレフィックスとして使用**する] チェックボックスをオンのままにして、auditdata プレフィックスを列名に追加します。たとえば、 **Auditdata**または**auditdata ファイル名**です。
 
-9. **[OK]** をクリックします。
+9. [**OK**] をクリックします。
 
     **Auditdata**列は複数の列に分割されます。 新しい列はそれぞれ、AuditData JSON オブジェクトのプロパティに対応しています。 列の各行には、プロパティの値が含まれています。 プロパティに値が含まれていない場合は、 *null*値が表示されます。 Excel では、null 値を持つセルは空になります。
   
@@ -100,7 +100,7 @@ ms.locfileid: "43799930"
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>PowerShell を使用して監査ログレコードを検索およびエクスポートする
 
-セキュリティ & コンプライアンスセンターで監査ログ検索ツールを使用する代わりに、Exchange Online PowerShell で[search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog)コマンドレットを使用して、監査ログの検索結果を CSV ファイルにエクスポートすることができます。 その後、手順2で説明されているのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する場合の利点の1つは、 *RecordType*パラメーターを使用して特定のサービスからイベントを検索できることです。 ここでは、PowerShell を使用して監査レコードを CSV ファイルにエクスポートする例をいくつか示します。このため、Power Query editor を使用して、「 **Auditdata** 」列の JSON オブジェクトを変換することができます (手順2を参照)。
+セキュリティ & コンプライアンスセンターで監査ログ検索ツールを使用する代わりに、Exchange Online PowerShell で[search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)コマンドレットを使用して、監査ログの検索結果を CSV ファイルにエクスポートすることができます。 その後、手順2で説明されているのと同じ手順に従って、Power Query エディターを使用して監査ログを書式設定できます。 PowerShell コマンドレットを使用する場合の利点の1つは、 *RecordType*パラメーターを使用して特定のサービスからイベントを検索できることです。 ここでは、PowerShell を使用して監査レコードを CSV ファイルにエクスポートする例をいくつか示します。このため、Power Query editor を使用して、「 **Auditdata** 」列の JSON オブジェクトを変換することができます (手順2を参照)。
 
 この例では、次のコマンドを実行して、SharePoint 共有操作に関連するすべてのレコードを返します。
 

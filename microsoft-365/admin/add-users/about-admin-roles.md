@@ -20,19 +20,24 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
 ms.custom: okr_smb
-ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618922"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294217"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
-サブスクリプションには、組織内のユーザーに割り当てることができる管理者ロール セットがあります。 各管理者ロールは、一般的なビジネス機能にマップされ、組織内のユーザーに管理センターで特定のタスクを実行する許可を与えます。 詳細については、「[管理者の役割を割り当てる](assign-admin-roles.md)」を参照してください。
+Microsoft 365 または Office 365 サブスクリプションには、Microsoft 365 管理センターを使用して組織内のユーザーに割り当てることができる管理者ロールセットがあります。 各管理者ロールは、一般的なビジネス機能にマップされ、組織内のユーザーに管理センターで特定のタスクを実行する許可を与えます。
 
-> [!TIP] 
-> 役割の詳細な説明をお探しですか ? 「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を確認してください。
+Microsoft 365 管理センターでは、Azure AD の役割およびMicrosoft Intune の役割を管理できます。 ただし、これらの役割は、Azure ポータルおよびIntune 管理センターで使用可能な役割のサブセットです。
+
+Azure AD の役割の詳細な説明をお探しですか ? 「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を確認してください。
+
+Microsoft Intune の役割の詳細な説明をお探しですか ? 「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)」を確認してください。
+
+Microsoft 365 管理センターでの役割を割り当てる方法の詳細については、「[管理者ロールを割り当てる](assign-admin-roles.md)」を参照してください。
 
 ## <a name="things-to-consider"></a>考慮事項
 
@@ -44,32 +49,21 @@ ms.locfileid: "43618922"
 | *制限が最も多い* 役割を割り当てる    | *制限が最も多い* 役割の割り当ては、仕事を完了するために必要なアクセス権のみを管理者に付与することを意味します。 たとえば、従業員のパスワードを誰かにリセットさせたい場合、無制限のグローバル管理者ロールを割り当てるべきではなく、パスワード管理者やヘルプデスク管理者などの制限付き管理者ロールを割り当ててください。これにより、データを安全に保つことができます。                 |
 | 管理者に多要素認証 (MFA) を要求する                  |    実際にはすべてのユーザーに対して MFA を要求することをお勧めしますが、管理者は間違いなく MFA を使用してサインインする必要があります。 MFA は、ユーザーが自分が宣言したとおりの人物であることを確認するために、ユーザーに 2 番目の識別方法を入力させます。 管理者は多くの顧客および従業員のデータにアクセスできます。MFA が必要な場合、管理者のパスワードが侵害されたとしても、2 番目の形式の ID がなければパスワードは役に立ちません。  <br><br>MFA を有効にすると、ユーザーが次回サインインするときに、アカウントを回復するための代替のメール アドレスおよび電話番号を提供する必要があります。  <br> [多要素認証をセットアップする](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-  
-## <a name="some-roles-are-missing-from-active-users--manage-admin-roles-where-did-they-go"></a>[アクティブなユーザー] > [管理者ロールを管理する] に一部の役割がありません。 どこに行ってしまったのでしょうか ?
-既定では、最初にほとんどの組織が使用する役割が表示されます。 役割が見つからない場合は、一覧の一番下に移動し、[**See more roles (役割をさらに表示する)**] を選択します。
-
-## <a name="how-can-i-tell-which-permissions-are-assigned-to-me"></a>自分に割り当てられているアクセス許可を確認する方法
 管理センターで、設定またはページを編集する許可がないことを通知するメッセージが表示される場合、その許可を持たない役割が割り当てられていることが原因です。
 
-## <a name="what-about-the-azure-active-directory-roles"></a>Azure Active Directory ロールとは 
+## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで利用可能なAzure AD の役割
 
-Azure ポータルには、Microsoft 365 管理センターで使用可能な役割よりも多くの役割があります。 大企業の場合、Azure ポータルに組織のニーズを満たす役割があるかもしれません。
-
-すべての Azure Active Directory ロールの一覧と説明については、「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を参照してください。
+Microsoft 365 管理センターでは、30 を超える Azure AD の役割を管理できます。 ただし、これらの役割は、Azure ポータルで使用可能な役割のサブセットです。 大企業の場合、Azure ポータルに組織のニーズを満たす役割があるかもしれません。
 
 Microsoft 365 管理センターまたは Azure ポータルで役割を割り当てても、Windows PowerShell の Azure AD モジュールを使用してロールを割り当てても関係なく、管理者ロールを割り当てられたユーザーが、組織が登録されているクラウド サービスへの同じアクセス レベルを所有します。
-  
-## <a name="roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで利用可能な役割
-
-Microsoft 365 管理センターでは、30 を超える Azure AD の役割を管理できます。 ただし、これらの役割は、Azure ポータルで使用可能な役割のサブセットです。
 
 ::: moniker range="o365-worldwide"
 
-管理センターで、[**役割**] に移動し、任意の役割を選択して詳細ウィンドウを開きます。 [**アクセス許可**] タブを選択して、実行する許可を持った役割を割り当てられた管理者についての詳細な一覧を表示します。
+Microsoft 365 管理センターで、[**役割**] に移動し、任意の役割を選択して詳細ウィンドウを開きます。 [**アクセス許可**] タブを選択して、実行する許可を持った役割を割り当てられた管理者についての詳細な一覧を表示します。 役割にユーザーを追加するには、**[割り当てられた]** または **[割り当てられた管理者]** タブを選択します。
 
 ::: moniker-end
 
-おそらく、組織内で次の役割を割り当てる必要があるだけです。 (役割に関連付けられたコマンドレットなどの詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を参照してください。)
+おそらく、組織内で次の役割を割り当てる必要があるだけです。 既定では、最初にほとんどの組織が使用する役割が表示されます。 役割が見つからない場合は、一覧の一番下に移動し、[**See more roles (役割をさらに表示する)**] を選択します。 (役割に関連付けられたコマンドレットなどの詳細については、「[Azure Active Directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)」を参照してください。)
 
 |管理者ロール     |誰にこの役割を割り当てるか  |
 |---------|---------|
@@ -84,7 +78,7 @@ Microsoft 365 管理センターでは、30 を超える Azure AD の役割を�
 |Teams のサービス管理者    |   Teams のサービス管理者ロールは、Teams 管理センターにアクセスして管理する必要があるユーザーに割り当てます。 <br><br>Teams のサービス管理者は、以下のことも実行できます。 <br> - 会議を管理する <br> - 会議ブリッジを管理する <br> - フェデレーション、Teams のアップグレード、Teams クライアントの設定を含む組織全体にわたる設定を管理する   |
 |ユーザー管理者     |    ユーザー管理者ロールは、すべてのユーザーに対して以下の操作を行う必要があるユーザーに割り当てます。 <br> - ユーザーおよびグループを追加する <br> - ライセンスを割り当てる <br> - ほとんどのユーザー プロパティを管理する <br> ユーザー ビューを作成および管理する <br> パスワードの有効期限ポリシーを更新する <br> - サービス リクエストを管理する <br> - サービス正常性を監視する <br><br>  ユーザー管理者は、管理者ではないユーザー、およびディレクトリ閲覧者、ゲスト招待者、ヘルプデスク管理者、メッセージ センター閲覧者、レポート閲覧者の役割が割り当てられているユーザーに対して、以下の操作を行うこともできます。 <br> - ユーザー名を管理する<br> - ユーザーを削除および復元する<br> - パスワードをリセットする <br> - ユーザーを強制的にサインアウトさせる <br> - (FIDO) デバイス キーを更新する   |
 
-### <a name="all-roles"></a>すべての役割
+### <a name="all-azure-ad-roles"></a>すべての Azure AD の役割
 
  以下は、Microsoft 365 管理センターで利用可能なすべての管理者ロールの一覧です。
 
@@ -134,6 +128,17 @@ Microsoft 365 管理センターでは、30 を超える Azure AD の役割を�
 |Teams 通信サポート エンジニア     |    すべての通話参加者の通話レコードの詳細情報を読み取り、通信の問題をトラブルシューティングします。     |
 |Teams 通信サポート スペシャリスト     |    特定のユーザーのみのユーザーの通話詳細を読み取り、通信の問題をトラブルシューティングします。|
 |ユーザー管理者     |   ユーザー パスワードのリセット、フィルターを含むユーザーとグループの作成と管理、サービス リクエストの管理、およびサービス正常性の監視を行います。|
+
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで利用可能なMicrosoft Intune の役割
+
+|管理者ロール     |誰にこの役割を割り当てるか  |
+|---------|---------|
+|アプリケーション マネージャー     |   モバイルアプリのアプリケーションライフサイクルを管理し、ポリシーに管理されたアプリとビューのデバイス情報と構成プロファイルを表示するユーザーに、アプリケーション マネージャーの役割を割り当てます。  |
+|ヘルプデスク オペレーター     |   ユーザーとデバイスにアプリとポリシーを割り当てるユーザーに、ヘルプデスク オペレーターの役割を割り当てます。 |
+|Intune の役割の管理者    |   Intune の管理者を他の管理者に割り当てることができるユーザーに、Intune の役割を割り当てることができます。ユーザーは Intune の役割を管理できます。   |
+|ポリシーおよびプロファイル マネージャー     |   ポリシーおよびプロファイル マネージャーの役割をユーザーに割り当て	て、コンプライアンス ポリシーの管理、構成プロファイル、Apple の登録を行います。   |
+|読み取り専用の演算子     |   ユーザー、デバイス、登録の詳細、構成の表示のみ可能なユーザーに読み取り専用オペレーターの役割を割り当てます。   |
+|学校の管理者     |   Intune for Education で Windows 10 と iOS デバイス、アプリ、および構成を管理するためのフルアクセス権をもつユーザーに学校の管理者の役割を割り当てます。   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft パートナーの代理管理
 

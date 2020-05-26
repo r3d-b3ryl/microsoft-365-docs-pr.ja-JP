@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: 管理者は、Exchange Online で S/MIME 証明書の検証に使用する仮想証明書コレクションを作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89061e3c07803d741e25846ffe8a3325a12668a4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5bd453383a263fdb2c0c7e2ce0014ad205e5fdc2
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035298"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352171"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>S/MIME を検証するために Exchange Online で仮想証明書コレクションをセットアップする
 
@@ -42,14 +42,14 @@ Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -E
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 
-構文およびパラメーターの詳細については、「 [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)」を参照してください。
+構文およびパラメーターの詳細については、「 [Set-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/set-smimeconfig)」を参照してください。
 
 ## <a name="ensuring-a-certificate-is-valid"></a>証明書が有効なことを確認する
 
 Exchange Online では、証明書の検証に SST のみが使用されます。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 [S/MIME によるメッセージの署名と暗号化](s-mime-for-message-signing-and-encryption.md)
 
-[Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig)
+[Get-SmimeConfig](https://docs.microsoft.com/powershell/module/exchange/get-smimeconfig)

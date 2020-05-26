@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイル計画マネージャーは、保持ラベルおよび保持ラベル ポリシーのための高度な管理機能を提供します。作成に始まり、コラボレーション、レコード宣言、保持、そして廃棄に至るまでのコンテンツのライフ サイクル全体におけるラベルとコンテンツのラベリングを網羅する統合的な機能を提供します。
-ms.openlocfilehash: b3270538cf2a1454840f6beff4e52fda84fa0afe
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: d47e0df05ec7dacbb2d0eaa9a7593183d5d0c557
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327685"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352140"
 ---
 # <a name="overview-of-file-plan-manager"></a>ファイル計画マネージャーの概要
 
@@ -152,7 +152,7 @@ ms.locfileid: "44327685"
    |CitationUrl|文字列|このプロパティは、**規定/引用** ファイル計画記述子に表示される URL を指定します。|
    |CitationJurisdiction|文字列|このプロパティは、**規定/引用**ファイル計画記述子に表示される管理規則または機関を指定します。(例: 「米国証券取引委員会 (SEC)」)|
    |Regulatory|文字列|空白のままにします。 現時点では、このプロパティは使用されていません。|
-   |EventType|文字列|このプロパティは、ラベルに関連付けられている保持規則を指定します。 ルールを一意に識別する任意の値を使用できます。 次に例を示します。</br>**名前**</br>**識別名 (DN)**</br>**GUID** </br>使用可能な保持規則を確認するには、[Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) コマンドレットを使用します。 1 つの組織からラベルをエクスポートする場合、別の組織にラベルをインポートするときに、その組織の EventType プロパティの値を使用できないことに注意してください。 これは、EventType 値が組織に固有であるためです。 |
+   |EventType|文字列|このプロパティは、ラベルに関連付けられている保持規則を指定します。 ルールを一意に識別する任意の値を使用できます。 次に例を示します。</br>**名前**</br>**識別名 (DN)**</br>**GUID** </br>使用可能な保持規則を確認するには、[Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) コマンドレットを使用します。 1 つの組織からラベルをエクスポートする場合、別の組織にラベルをインポートするときに、その組織の EventType プロパティの値を使用できないことに注意してください。 これは、EventType 値が組織に固有であるためです。 |
    |||
 
    保持ラベルに関する情報を含むテンプレートの例を次に示します。

@@ -16,22 +16,22 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、メールフロールール (トランスポートルール) を使用して、Exchange Online Protection (EOP) で大量メール (灰色のメール) を識別し、フィルター処理する方法を学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a31030ea2f844cdeb4bee68bf748a2ab8ca29dad
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: fa2c13aed1fd7f9c34872d05693f88577bbbc9c5
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213366"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352398"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>メールフロールールを使用して EOP のバルクメールをフィルター処理する
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>メール フロー ルールを使用して EOP でバルク メールをフィルタリングする
 
-Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、EOP はスパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) を使用して、スパムやバルクメール (灰色のメール) の受信メッセージをスキャンします 詳細については、「 [EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、EOP はスパム対策ポリシー (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) を使用して、スパムやバルクメール (灰色のメール) の受信メッセージをスキャンします 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 バルクメールをフィルター処理するためのその他のオプションが必要な場合は、メールフロールール (トランスポートルールとも呼ばれる) を作成して、バルクメールでよく見られるテキストパターンや語句を検索し、それらのメッセージをスパムとしてマークします。 バルクメールの詳細については、EOP の「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」および「[バルク苦情レベル (BCL)](bulk-complaint-level-values.md)」を参照してください。
 
 このトピックでは、exchange 管理センター (EAC) および PowerShell (exchange online のメールボックスを使用する Microsoft 365 組織の場合は exchange Online PowerShell、exchange Online メールボックスを使用しない組織の場合はスタンドアロン EOP PowerShell) でこれらのメールフロールールを作成する方法について説明します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - これらの手順を実行する前に、アクセス許可を割り当てる必要があります。
 
@@ -140,7 +140,7 @@ New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatt
 New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
 ```
 
-詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)」を参照してください。
+詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)」を参照してください。
 
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

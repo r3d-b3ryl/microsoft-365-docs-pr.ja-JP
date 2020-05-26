@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049522"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352085"
 ---
 # <a name="message-encryption-faq"></a>メッセージ暗号化に関する FAQ
 
@@ -28,7 +28,7 @@ ms.locfileid: "44049522"
 ## <a name="what-is-office-365-message-encryption-ome"></a>Office 365 メッセージの暗号化 (OME) とは
 
 OME は、電子メールの暗号化と権限の管理機能を統合します。 権限管理機能は、Azure Information Protection によって処理されます。
-  
+
 ## <a name="who-can-use-ome"></a>OME を使用できるユーザー
 
 OME の新機能は、次の条件下で使用できます。
@@ -137,9 +137,9 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 
 管理者は、メールフロールールを設定して、送信メールの暗号化を削除することができます。 受信メールの暗号化を解除するルールを設定することはできません。
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>セキュリティ&amp; /コンプライアンスセンターを使用して、データ損失防止 (DLP) でポリシーを設定することによって、メッセージを自動的に暗号化できますか?
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>セキュリティ/コンプライアンスセンターを使用して、データ損失防止 (DLP) でポリシーを設定することによって、メッセージを自動的に暗号化でき &amp; ますか?
 
-はい。 Exchange Online またはセキュリティ&amp; /コンプライアンスセンターで DLP を使用して、メールフロールールを設定できます。
+はい。 Exchange Online またはセキュリティ/コンプライアンスセンターで DLP を使用して、メールフロールールを設定でき &amp; ます。
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>企業ブランド化で暗号化されたメッセージをカスタマイズできますか。
 
@@ -185,3 +185,9 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 - 共有メールボックスへの直接ユーザー割り当てによって提供されるアクセスのみをサポートしています。 メールが有効なセキュリティグループを使用した割り当てはサポートされていません。
 
 - Outlook mobile を使用してモバイルデバイスで受信した電子メールの添付ファイルを開くことはできません。
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>要求した後に1回限りのパスコードを受け取っていない場合はどうすればよいですか。
+
+最初に、電子メールクライアントの迷惑メールまたはスパムフォルダーを確認します。 組織の DKIM および DMARC の設定により、これらの電子メールがスパムとしてフィルター処理されることがあります。
+
+次に、セキュリティ & コンプライアンスセンターで [検疫] をチェックします。 多くの場合、1回限りのパスコードが含まれているメッセージ (特に、組織が受信する最初のコード) によって検疫が終了します。

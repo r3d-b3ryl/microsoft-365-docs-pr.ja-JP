@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: この記事では、Microsoft 365 のデータ調査 (プレビュー) ツールの変更点と新機能を含むリリースノートについて説明します。
-ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035729"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352284"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 のデータ調査用リリースノート (プレビュー)
 
@@ -50,4 +50,4 @@ Microsoft 365 の新しいデータ調査 (プレビュー) ツールを使用�
 
 - **ジョブ**–長時間実行されているプロセスの状態を追跡します。
 
-- **ハードディスクを削除するメールボックスアイテム**-緊急事態の場合は、正しく配置されていないアイテムを完全に削除する必要があります。 これを行うには、セキュリティ & コンプライアンスセンターの PowerShell で PurgeType を使用して、メールボックスからアイテムを完全に削除するように、 **new-compliancesearchaction-のハード削除**コマンドを実行します。 詳細については、「[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)」を参照してください。
+- **ハードディスクを削除するメールボックスアイテム**-緊急事態の場合は、正しく配置されていないアイテムを完全に削除する必要があります。 これを行うには、セキュリティ & コンプライアンスセンターの PowerShell で PurgeType を使用して、メールボックスからアイテムを完全に削除するように、 **new-compliancesearchaction-のハード削除**コマンドを実行します。 詳細については、「[New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction)」を参照してください。

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: セキュリティ/コンプライアンス センターの DLP について、カスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 187a95eb460b18fc05b2608f4a3adcfee645c6ab
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327789"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352150"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する
 
@@ -348,7 +348,7 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
 
 以前は、DLP 用にカスタムの機密情報の種類をインポートするために Exchange Online PowerShell を使用することがありました。現在は、カスタムの機密情報の種類を Exchange 管理センターとセキュリティ/コンプライアンス センターの両方で使用できるようになりました。この改善の一環で、カスタムの機密情報の種類をインポートする場合、セキュリティ/コンプライアンス センター PowerShell の使用が必須になりました。Exchange PowerShell からはインポートできません。カスタムの機密情報の種類は以前と同様に使用できますが、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を変更した場合、Exchange 管理センターに表示されるまでに最大 1 時間かかる場合があります。
   
-セキュリティ&amp;コンプライアンス センターでは、**[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** コマンドレットを使用してルール パッケージをアップロードします (これまでは、Exchange 管理センターで **ClassificationRuleCollection**` コマンドレットを使用していました)。 
+セキュリティ&amp;コンプライアンス センターでは、**[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** コマンドレットを使用してルール パッケージをアップロードします (これまでは、Exchange 管理センターで **ClassificationRuleCollection**` コマンドレットを使用していました)。 
   
 ## <a name="upload-your-rule-package"></a>ルール パッケージをアップロードする
 
@@ -372,20 +372,20 @@ New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToU
 New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte) -ReadCount 0
 ```
 
-    For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage).
+    For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
 > [!NOTE]
 > カスタムの機密情報の種類のコレクションの制限は 10 です。
 
 4. 新しい機密情報の種類が正常に作成されたことを確認するには、次に示す手順のいずれかを実行します。
 
-  - [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを実行して、新しいルール パッケージが一覧表示されることを確認します。
+  - [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを実行して、新しいルール パッケージが一覧表示されることを確認します。
 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
 ``` 
 
-  - [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを使用して、機密情報の種類が一覧表示されることを確認します。
+  - [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを使用して、機密情報の種類が一覧表示されることを確認します。
 
 ```powershell
 Get-DlpSensitiveInformationType
@@ -393,7 +393,7 @@ Get-DlpSensitiveInformationType
 
     For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
 
-  - \<Name\> を機密情報の種類の名前値 (たとえば、従業員 ID) に置き換えて、[Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行します。
+  - \<Name\> を機密情報の種類の名前値 (たとえば、従業員 ID) に置き換えて、[Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行します。
 
 ```powershell
 Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -454,7 +454,7 @@ Microsoft 365 でテナント全体の再クロールを手動で要求するこ
 
 1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://go.microsoft.com/fwlink/p/?LinkID=799771)
 
-2. カスタム ルール パッケージを削除する場合、[Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを使用します。
+2. カスタム ルール パッケージを削除する場合、[Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを使用します。
 
 ```powershell
 Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -468,17 +468,17 @@ Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
 Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
 ```
 
-    For detailed syntax and parameter information, see [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage).
+    For detailed syntax and parameter information, see [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage).
 
 3. カスタムの機密情報の種類が正常に削除されたことを確認するには、次に示す手順のいずれかを実行します。
 
-  - [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを実行して、ルール パッケージが一覧表示されないことを確認します。
+  - [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを実行して、ルール パッケージが一覧表示されないことを確認します。
 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
 ``` 
 
-  - [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行し、削除されたルール パッケージで機密情報の種類が一覧表示されなくなったことを確認します。
+  - [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行し、削除されたルール パッケージで機密情報の種類が一覧表示されなくなったことを確認します。
 
 ```powershell
 Get-DlpSensitiveInformationType
@@ -486,7 +486,7 @@ Get-DlpSensitiveInformationType
 
     For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
 
-  - \<Name\> を機密情報の種類の名前値 (たとえば、従業員 ID) に置き換えて、[Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行し、機密情報の種類が一覧表示されなくなったことを確認します。
+  - \<Name\> を機密情報の種類の名前値 (たとえば、従業員 ID) に置き換えて、[Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行し、機密情報の種類が一覧表示されなくなったことを確認します。
 
 ```powershell
 Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -509,7 +509,7 @@ Get-DlpSensitiveInformationType -Identity "<Name>"
 > [!NOTE]
 > XML ファイルのコピーがある場合 (たとえば、先ほど作成してインポートした場合)、次の手順に進んで、XML ファイルを変更することができます。
 
-1. 不明な場合には、[Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行して、カスタム ルール パッケージの名前を確認します。
+1. 不明な場合には、[Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) コマンドレットを実行して、カスタム ルール パッケージの名前を確認します。
 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
@@ -518,7 +518,7 @@ Get-DlpSensitiveInformationTypeRulePackage
 > [!NOTE]
 > 組み込みの機密情報の種類を含む組み込みのルール パッケージは、Microsoft Rule Packageという名前になります。 セキュリティ/コンプライアンス センターの UI で作成したカスタムの機密情報の種類が含まれるルール パッケージは Microsoft.SCCManaged.CustomRulePack と呼ばれます。
 
-2. [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを使用して、カスタム ルール パッケージを変数に格納します。
+2. [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを使用して、カスタム ルール パッケージを変数に格納します。
 
 ```powershell
 $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
@@ -548,13 +548,13 @@ XML ファイル内の機密情報の種類、およびファイル内の他の�
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>手順 3: 更新した XML ファイルを既存のルール パッケージにインポートします
 
-更新された XML を既存のルール パッケージに再びインポートするには、[Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを使用します。
+更新された XML を既存のルール パッケージに再びインポートするには、[Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps) コマンドレットを使用します。
 
 ```powershell
 Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
 ```
 
-構文とパラメーターの詳細情報については、[Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage) をご覧ください。
+構文とパラメーターの詳細情報については、[Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) をご覧ください。
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>リファレンス: ルール パッケージ XML スキーマの定義
 

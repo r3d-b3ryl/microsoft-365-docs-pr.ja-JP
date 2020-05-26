@@ -14,12 +14,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c6cf5aa14c9b38f2d6a4323bd2d424d5abd72140
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9fed882be868670f102c8269ba498a9c40c357fe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036282"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352445"
 ---
 # <a name="gdpr-for-exchange-server"></a>Exchange Server での GDPR 対応
 
@@ -33,10 +33,10 @@ ms.locfileid: "44036282"
 
 ## <a name="identifying-in-scope-content"></a>範囲内コンテンツの特定
 
-Exchange では、エンド ユーザー生成のコンテンツ用に、メールボックスとパブリック フォルダーの 2 種類のプライマリ ストレージ リポジトリが使用されます。個々のユーザーのメールボックスに保存されるコンテンツは、そのユーザーに一意に関連付けられ、Exchange 内での既定のリポジトリを表します。ユーザー メールボックス内に保存されるデータには、Outlook、Outlook on the web (旧称 Outlook Web App)、Exchange ActiveSync、Skype for Business クライアント、および POP、IMAP または Exchange Web Services (EWS) を使用して Exchange サーバーに接続するサードパーティ ツールで作成されるコンテンツが含まれます。これらのアイテムの例としては、メッセージ、予定表アイテム (会議と予定)、連絡先、メモ、タスクなどがあります。個々のユーザーのメールボックスを削除すると、それぞれのメールボックスのコンテキストの中でユーザーが生成した、またはユーザーに直接送信されたコンテンツが削除されます。ユーザー メールボックスは、Exchange 管理センター (EAC) を使用することにより、または Exchange 管理シェルで [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/remove-mailbox?view=exchange-ps) コマンドレットを使用することによって削除できます。\
+Exchange では、エンド ユーザー生成のコンテンツ用に、メールボックスとパブリック フォルダーの 2 種類のプライマリ ストレージ リポジトリが使用されます。個々のユーザーのメールボックスに保存されるコンテンツは、そのユーザーに一意に関連付けられ、Exchange 内での既定のリポジトリを表します。ユーザー メールボックス内に保存されるデータには、Outlook、Outlook on the web (旧称 Outlook Web App)、Exchange ActiveSync、Skype for Business クライアント、および POP、IMAP または Exchange Web Services (EWS) を使用して Exchange サーバーに接続するサードパーティ ツールで作成されるコンテンツが含まれます。これらのアイテムの例としては、メッセージ、予定表アイテム (会議と予定)、連絡先、メモ、タスクなどがあります。個々のユーザーのメールボックスを削除すると、それぞれのメールボックスのコンテキストの中でユーザーが生成した、またはユーザーに直接送信されたコンテンツが削除されます。ユーザー メールボックスは、Exchange 管理センター (EAC) を使用することにより、または Exchange 管理シェルで [Remove-Mailbox](https://docs.microsoft.com/powershell/module/exchange/remove-mailbox?view=exchange-ps) コマンドレットを使用することによって削除できます。\
 注: Remove-Mailbox コマンドレットの Permanent パラメーターは、慎重に使用してください。このオプションを使用すると、データが回復できなくなります。
 
-Exchange には、共有メールボックスも提供されており、それにより 1 人以上のユーザーが、1 つの共通のメールボックス内に保存されているコンテンツにアクセスして送受信することができます。共有メールボックスは、単一アカウントには関連付けられない一意のエンティティです。むしろ、複数のユーザーに、共有メールボックス内のメール コンテンツの送信、受信、確認のためのアクセス権限が付与されます。共有メールボックスは、Exchange 管理センター、および通常のユーザーのメールボックスの管理に使用されるのと同じコマンドレットを使用して管理されます。メールボックスから個々のメッセージを削除することが必要な場合は、Exchange のバージョンに応じていくつかの異なるオプションがあります。Exchange Server 2010 および 2013 では、[Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox?view=exchange-ps) コマンドレットに DeleteContent パラメーターを指定することにより、メールボックスのメッセージを特定し、削除することができます。Exchange Server 2016 以降の場合は、[New-ComplianceSearch](https://technet.microsoft.com/library/ff459253(v=exchg.160).aspx) 機能を使用する必要があります。
+Exchange には、共有メールボックスも提供されており、それにより 1 人以上のユーザーが、1 つの共通のメールボックス内に保存されているコンテンツにアクセスして送受信することができます。共有メールボックスは、単一アカウントには関連付けられない一意のエンティティです。むしろ、複数のユーザーに、共有メールボックス内のメール コンテンツの送信、受信、確認のためのアクセス権限が付与されます。共有メールボックスは、Exchange 管理センター、および通常のユーザーのメールボックスの管理に使用されるのと同じコマンドレットを使用して管理されます。メールボックスから個々のメッセージを削除することが必要な場合は、Exchange のバージョンに応じていくつかの異なるオプションがあります。Exchange Server 2010 および 2013 では、[Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox?view=exchange-ps) コマンドレットに DeleteContent パラメーターを指定することにより、メールボックスのメッセージを特定し、削除することができます。Exchange Server 2016 以降の場合は、[New-ComplianceSearch](https://technet.microsoft.com/library/ff459253(v=exchg.160).aspx) 機能を使用する必要があります。
 
 パブリック フォルダーは、特定のユーザーに関連付けられていない共有ストレージ実装です。ユーザーには、コンテンツを生成するためのパブリック フォルダーへのアクセス権限が付与されます。パブリック フォルダーの実際の実装は、Exchange のバージョンに応じて異なります (Exchange Server 2010 では Exchange Server 2013 以降とは異なる実装が使用されます)。パブリック フォルダー内のコンテンツを管理するためのツールとしては、限られたものが存在しています。クライアント ツール (Outlook など) は、パブリック フォルダー内のコンテンツを管理するための主要なメカニズムです。パブリック フォルダーのオブジェクトを管理するためのコマンドレットがいくつかありますが、パブリック フォルダー内の個々のコンテンツ アイテムを管理するためのものではありません。パブリック フォルダー内の個々のアイテムを管理するには、Exchange Web Services (EWS) またはその他のサード パーティ ツールを利用するカスタム スクリプトが必要になることが少なくありません。
 
@@ -48,7 +48,7 @@ Exchange には、共有メールボックスも提供されており、それ�
 
 ## <a name="removing-soft-deleted-and-disconnected-mailboxes"></a>論理削除されたメールボックスまたは切断されたメールボックスの削除
 
-Exchange メールボックスが無効になっていたり、削除されていたり、データベース間で移動 (負荷分散の一部としてなど) していたりする場合、操作に応じてメールボックスは、無効、論理削除、または切断の状態になります。メールボックスがそれらの状態のうちのいずれかになっている間、Exchange は、メールボックス データベースで指定されている MailboxRetention パラメーターの現行値に基づいてメールボックス (そのコンテンツを含む) を保持します。既定値は 30 日間ですが、この値は Exchange 管理者によって構成可能です。[Remove-StoreMailbox](https://docs.microsoft.com/powershell/module/exchange/mailbox-databases-and-servers/remove-storemailbox?view=exchange-ps) コマンドレットを使用することにより、保持期間が自然に終了する前に、メールボックスの全関連データを Exchange が永久的に削除 (パージ) するように強制することができます。
+Exchange メールボックスが無効になっていたり、削除されていたり、データベース間で移動 (負荷分散の一部としてなど) していたりする場合、操作に応じてメールボックスは、無効、論理削除、または切断の状態になります。メールボックスがそれらの状態のうちのいずれかになっている間、Exchange は、メールボックス データベースで指定されている MailboxRetention パラメーターの現行値に基づいてメールボックス (そのコンテンツを含む) を保持します。既定値は 30 日間ですが、この値は Exchange 管理者によって構成可能です。[Remove-StoreMailbox](https://docs.microsoft.com/powershell/module/exchange/remove-storemailbox?view=exchange-ps) コマンドレットを使用することにより、保持期間が自然に終了する前に、メールボックスの全関連データを Exchange が永久的に削除 (パージ) するように強制することができます。
 
 > [!IMPORTANT]
 > Remove-StoreMailbox コマンドレットは、慎重に使用してください。ターゲット メールボックスのデータが失われ、回復不能な状態になります。 

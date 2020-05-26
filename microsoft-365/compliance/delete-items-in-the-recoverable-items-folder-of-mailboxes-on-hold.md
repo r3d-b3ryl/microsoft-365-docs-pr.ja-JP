@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: '管理者の場合: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除します (法的情報保留に設定されている場合も含む)。 これは、Microsoft 365 に誤ってこぼれたデータを削除する効果的な方法です。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 223c589d191eef14662b7e19aa5ed113db9ff3b2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232062"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352182"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
@@ -272,7 +272,7 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>手順 5: 回復可能なアイテムフォルダーのアイテムを削除する
 
-これで、セキュリティ & コンプライアンスセンターで[new-compliancesearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)および new-compliancesearchaction コマンドレットを使用して、回復可能[な](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)アイテムフォルダーのアイテムを実際に削除する準備ができました。 
+これで、セキュリティ & コンプライアンスセンターで[new-compliancesearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)および new-compliancesearchaction コマンドレットを使用して、回復可能[な](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction)アイテムフォルダーのアイテムを実際に削除する準備ができました。 
 
 これを行うには、「[メールメッセージの検索と削除](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)」を参照してください。
 
@@ -294,7 +294,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>手順 6: メールボックスを以前の状態に戻す
 
-最後の手順では、メールボックスを以前の構成に戻します。 これは、手順2で変更したプロパティをリセットし、手順3で削除した保留リストを再適用することを意味します。 これには以下が含まれます。
+最後の手順では、メールボックスを以前の構成に戻します。 これは、手順2で変更したプロパティをリセットし、手順3で削除した保留リストを再適用することを意味します。 次のようなシナリオが考えられます。
   
 - 削除済みアイテムの保存期間を以前の値に戻します。 または、Exchange Online の最大値の30日間に設定しておくこともできます。
     
@@ -371,7 +371,7 @@ Exchange Online PowerShell で次の手順を実行します (指定された順
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>詳細情報
 
 次の表は、 *InPlaceHolds*プロパティの値に基づいて、**メールボックスの取得**または取得、または**取得-組織の構成**のコマンドレットを実行した場合に、さまざまな種類の保留を識別する方法を示しています。 詳細については、「 [Exchange Online メールボックスに配置されたホールドの種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)」を参照してください。
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327611"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352087"
 ---
 # <a name="communication-compliance-feature-reference"></a>コミュニケーションコンプライアンス機能のリファレンス
 
@@ -170,7 +170,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 入力してコンマで区切る各単語は個別に適用されます (電子メールまたは添付ファイルに適用するポリシー条件には、1つの単語のみを適用する必要があります)。 たとえば、条件を使用して、**メッセージにこれらの単語のいずれかが含まれている**場合は、「銀行型」、「confidential」、「insider 取り引き」をコンマ (銀行、社外秘、「insider 取り引き」) で区切ったものを使用します。 このポリシーは、"銀行"、"confidential"、または "insider トレーディング" という単語を含むメッセージに適用されます。 このポリシー条件を適用するには、これらの単語または語句のいずれか1つのみが必要です。 メッセージまたは添付ファイル内の単語は、入力した内容と正確に一致する必要があります。
 
 >[!IMPORTANT]
->ユーザー辞書ファイルをインポートする場合は、それぞれの単語または語句を復帰と改行で区切る必要があります。 <br> 例: <br><br>
+>ユーザー辞書ファイルをインポートする場合は、それぞれの単語または語句を復帰と改行で区切る必要があります。 <br> 以下に例を示します。 <br><br>
 >*銀行* <br>
 >*機密* <br>
 >*insider トレーディング*
@@ -237,7 +237,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 | **[受信者]** | メッセージが送信されたユーザー。 |
 | **Sender** | メッセージを送信したユーザー。 |
 | **送信者ドメイン** | メッセージを送信したドメイン。 |
-| **Size** | メッセージのサイズ (KB 単位)。 |
+| **[サイズ]** | メッセージのサイズ (KB 単位)。 |
 | **件名/タイトル** | メッセージの件名またはチャットのタイトル。 |
 | **Tags** | メッセージに割り当てられているタグ (*疑わしい*、*準拠*、または*非準拠*)。 |
 | **エスカレート先** | メッセージエスカレーションアクションの一部として含まれるユーザー名。 |
@@ -253,7 +253,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 |:-----|:-----|
 | Aggregation | 単純な集約 |
 | しきい値 | 4アクティビティ |
-| Window | 60分 |
+| Window | 60 分 |
 
 >[!Note]
 >アクティビティに対する [アラートポリシーのしきい値トリガーの設定] は、通信コンプライアンスポリシーに対して3以上の最小値をサポートします。
@@ -294,7 +294,7 @@ Microsoft 365 の分類子の詳細については、「[分類子](classifier-g
 | **Operations** | ポリシーに対して実行された操作。 |
 | **AuditData** | このフィールドは、すべてのポリシーアクティビティのメインデータソースです。 すべてのアクティビティが記録され、コンマ区切り記号で区切られます。 |
 
-また、監査アクティビティは、統合監査ログまたは[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell コマンドレットを使用して表示することもできます。
+また、監査アクティビティは、統合監査ログまたは[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell コマンドレットを使用して表示することもできます。
 
 たとえば、次の例では、すべての監督レビュー活動 (ポリシーとルール) のアクティビティが返されます。
 

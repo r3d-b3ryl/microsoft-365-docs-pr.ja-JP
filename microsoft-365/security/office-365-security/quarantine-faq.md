@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) で、検疫されたメッセージについてよく寄せられる質問と回答を確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2022a43f1dd89d47fdb4f3898f8f481419962c0
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 0a231e363d5764465547ee1e80cc080c3d7c006c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213106"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351097"
 ---
 # <a name="quarantined-messages-faq"></a>検疫済みメッセージに関する FAQ
 
@@ -40,7 +40,7 @@ ms.locfileid: "44213106"
 
 ## <a name="how-do-i-quarantine-spam"></a>スパムを検疫する方法
 
-既定では、スパムフィルターによってスパムまたはバルクメールとして分類されるメッセージは、ユーザーのメールボックスに配信され、[迷惑メール] フォルダーに移動されます。 ただし、スパムまたはバルクメールメッセージを検疫するスパム対策ポリシーを作成して構成することができます。 詳細については、「 [EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」を参照してください。
+既定では、スパムフィルターによってスパムまたはバルクメールとして分類されるメッセージは、ユーザーのメールボックスに配信され、[迷惑メール] フォルダーに移動されます。 ただし、スパムまたはバルクメールメッセージを検疫するスパム対策ポリシーを作成して構成することができます。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>ユーザーに検疫へのアクセスを許可するには、どうすればよいですか?
 
@@ -62,7 +62,7 @@ ms.locfileid: "44213106"
 
 セキュリティ & コンプライアンスセンターでは、一度に最大100のメッセージを選択して解放することができます。
 
-管理者は、Exchange Online PowerShell またはスタンドアロン EOP PowerShell で[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)および[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage)コマンドレットを使用して、検疫済みメッセージを一括で検索して解放し、誤検知を一括で報告することができます。
+管理者は、Exchange Online PowerShell またはスタンドアロン EOP PowerShell で[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)および[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)コマンドレットを使用して、検疫済みメッセージを一括で検索して解放し、誤検知を一括で報告することができます。
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>隔離されたメッセージを検索する場合にワイルドカードはサポートされますか。 特定のドメインの隔離されたメッセージを検索できますか。
 

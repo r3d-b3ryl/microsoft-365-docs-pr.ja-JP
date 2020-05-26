@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 8a4f59a817e8ddd38ee8132e7028a3357d15d578
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222019"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254170"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 プライバシー情報管理システム (PIMS)
 
@@ -51,7 +51,7 @@ ISO/IEC 27701 には、コントローラーおよびプロセッサーに関す
 
 現代の組織は、パートナー組織または共同コントローラー、クラウド プロバイダーなどのプロセッサー、それらの同じプロセッサーをサポートするベンダーなどのサブプロセッサーなどを含むビジネス パートナーの深いネットワークを用いて複雑なデータの転送を行っています。 このネットワークのいずれかの部分でも規制を順守しなければ、サプライ チェーン全体で連鎖的なコンプライアンス問題が発生する可能性があります。 それは、コンプライアンスの検証がこれらの組織間の契約条件によって提供される保証を超える価値がある場合です。 グローバル経済はこれらの組織のほとんどが世界中に広がることを規定しているため、ISO の国際基準を使用してネットワーク全体のコンプライアンスを管理することが実用的です。
 
-こういったコンプライアンスへの依存により、規格に対する認証の重要性が高まります。 すべての企業や組織がそのような認証を取得する必要があるわけではありませんが、特に機密または大量のデータ処理が関係する場合には、ほとんどの企業や組織がそのような処理を行うパートナーおよびベンダーから恩恵を受けます。
+こういったコンプライアンスへの依存により、規格に対する認証の重要性が高まります。 すべての企業や組織がそのような認証を取得する必要があるわけではありませんが、特に機密データまたは大量のデータの処理が関係する場合には、ほとんどの企業や組織がそのような処理を行うパートナーおよびベンダーから恩恵を受けます。
 
 ## <a name="building-blocks-of-the-standard"></a>規格のブロックを積み上げる
 
@@ -67,10 +67,30 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 
 組織の規模やコントローラーであるかプロセッサーであるかに関係なく、あなたの組織のため、またはあなたのビジネス要件に基づいてベンダーまたはサプライヤーにそれを要求するために、組織は認証の追求を検討すべきです。 これは特に、機密性の高いまたは大量の個人データを処理するプロセッサー、サブプロセッサー、および共同コントローラーに適用されます。 いずれの場合でも、組織はビジネス ニーズを評価して自社の製品およびサービスの認証が適切かどうかを判断する必要があります。
 
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
+
+- Azure、Azure Government、Azure ドイツ
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 Government、Dynamics 365 ドイツ
+- Microsoft Graph
+- Microsoft Healthcare Bot
+- Intune
+- Microsoft マネージド デスクトップ
+- Power Automate (旧称 Microsoft Flow) 
+- PowerApps
+- Power BI
+- Power BI Embedded
+- Power Virtual Agents
+- Microsoft Stream
+- Microsoft 脅威エキスパート
+- Windows Defender Advanced Threat Protection
+
+
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-- [Azure ISO/IEC 27701 認定資格](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Azure ISO/IEC 27701 評価レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure、Dynamics 365、Online Services:ISO27701 の証明書](https://aka.ms/azureiso27701cert)
+- [Azure、Dynamics 365、Online Services:ISO27701 の評価レポート](https://aka.ms/azureiso27701report)
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 

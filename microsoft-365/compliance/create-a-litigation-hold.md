@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: 調査中にメールボックスのすべてのコンテンツを保持しながら、メールボックスを訴訟ホールドの対象にする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035819"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351052"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
@@ -44,7 +44,7 @@ ms.locfileid: "44035819"
 
 Exchange 管理センターを使用してメールボックスを訴訟ホールドの対象にするには、次の手順を実行します。
 
-1. に[https://outlook.office.com/ecp](https://outlook.office.com/ecp)移動し、全体管理者アカウントを使用してサインインします。
+1. に移動 [https://outlook.office.com/ecp](https://outlook.office.com/ecp) し、全体管理者アカウントを使用してサインインします。
 
 2. 左側のナビゲーションウィンドウで [**受信者 > メールボックス**] をクリックします。
 
@@ -78,7 +78,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-詳細については、「[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)」を参照してください。
+詳細については、「[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)」を参照してください。
 
 ## <a name="how-does-litigation-hold-work"></a>訴訟ホールドのしくみ
 

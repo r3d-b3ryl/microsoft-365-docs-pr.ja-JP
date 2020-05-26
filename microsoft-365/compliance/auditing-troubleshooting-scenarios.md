@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 監査ログ検索ツールを使用して、電子メールアカウントのサポートに関する一般的な問題のトラブルシューティングに役立つ方法について説明します。
-ms.openlocfilehash: 64ddffab518fdf54dba1ffca87548a65037b8eb7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e370a0220fcc42854d3cc570e175ab96845f7d4b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034213"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351130"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して一般的なサポートの問題を調査する
 
@@ -47,7 +47,7 @@ ms.locfileid: "44034213"
 
 このセクションでは、監査ログの検索を作成して実行するための基本事項について説明します。 この記事のトラブルシューティングの各シナリオでは、これらの手順を出発点として使用します。 詳細な手順については、「[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search)」を参照してください。
 
-1. に[https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog)移動し、職場または学校のアカウントを使用してサインインします。
+1. に移動 [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) し、職場または学校のアカウントを使用してサインインします。
     
     [**監査ログの検索**] ページが表示されます。 
     
@@ -55,7 +55,7 @@ ms.locfileid: "44034213"
   
 4. 次の検索条件を構成できます。 この記事のトラブルシューティングのシナリオでは、これらのフィールドを構成するための具体的なガイダンスを示します。
     
-    a.  **アクティビティ:** ドロップダウンリストを選択して、検索可能なアクティビティを表示します。 検索を実行すると、選択したアクティビティの監査レコードのみが表示されます。 [**すべてのアクティビティの結果を表示]** を選択すると、他の検索条件に一致するすべてのアクティビティの結果が表示されます。 トラブルシューティングのシナリオによっては、このフィールドを空白のままにしておく必要もあります。
+    a. **アクティビティ:** ドロップダウンリストを選択して、検索可能なアクティビティを表示します。 検索を実行すると、選択したアクティビティの監査レコードのみが表示されます。 [**すべてのアクティビティの結果を表示]** を選択すると、他の検索条件に一致するすべてのアクティビティの結果が表示されます。 トラブルシューティングのシナリオによっては、このフィールドを空白のままにしておく必要もあります。
     
     b. **開始日**と**終了日:** その期間内に発生したイベントを表示する日付と時刻の範囲を選択します。 既定では、過去7日間が選択されています。 日付と時間は、協定世界時 (UTC) 形式で指定します。 指定できる日付範囲は最大 90 日です。
 
@@ -120,7 +120,7 @@ b. [**パラメーター** ] フィールドの値*ForwardingSmtpAddress*は、�
 
 c. *DeliverToMailboxAndForward*パラメーターの*True*値は、メッセージのコピーが sarad@alpinehouse.onmicrosoft.com に配信され、 *ForwardingSmtpAddress*パラメーターで指定された電子メールアドレスに*転送される*ことを示します。この例では、mike@contoso.com。 *DeliverToMailboxAndForward*パラメーターの値が*False*に設定されている場合、電子メールは*ForwardingSmtpAddress*パラメーターで指定されたアドレスにのみ転送されます。 **ObjectId**フィールドで指定されたメールボックスに配信されません。
 
-d.  **UserId**フィールドは、 **ObjectId**フィールドで指定されたメールボックスで電子メール転送を設定したユーザーを示します。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。 この例では、メールボックスのメール転送がメールボックスの所有者に設定されているように見えます。
+d. **UserId**フィールドは、 **ObjectId**フィールドで指定されたメールボックスで電子メール転送を設定したユーザーを示します。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。 この例では、メールボックスのメール転送がメールボックスの所有者に設定されているように見えます。
 
 メールボックスのメール転送を設定すべきでないと判断される場合は、Exchange Online PowerShell で次のコマンドを実行して、この設定を削除できます:
 
@@ -128,7 +128,7 @@ d.  **UserId**フィールドは、 **ObjectId**フィールドで指定され�
 Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null 
 ```
 
-メール転送に関連するパラメーターの詳細については、「[メールボックスのメールボックス](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)」の記事を参照してください。
+メール転送に関連するパラメーターの詳細については、「[メールボックスのメールボックス](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)」の記事を参照してください。
 
 ## <a name="determine-if-a-user-deleted-email-items"></a>ユーザーがメールアイテムを削除したかどうかを確認する
 
@@ -192,11 +192,11 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 a. [**ObjectId**] フィールドに受信トレイ ルールの完全な名前が表示されます。この名前には、ユーザーのメールボックスのエイリアス (たとえば SaraD) と受信トレイ ルールの名前 (たとえば「管理者からのメッセージを移動」) が含まれます。
 
-b. [**パラメーター**] フィールドには受信トレイ ルールの条件が表示されます。この例では、[*送信者*] パラメーターによって条件が指定されます。[*送信者*] パラメーターに定義された値は、admin@alpinehouse.onmicrosoft.com から送られた電子メールを受信トレイ ルールで処理することを示しています。受信トレイ ルールの条件の定義に使用できるパラメーターの完全なリストについては、「[New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)」の記事を参照してください。
+b. [**パラメーター**] フィールドには受信トレイ ルールの条件が表示されます。この例では、[*送信者*] パラメーターによって条件が指定されます。[*送信者*] パラメーターに定義された値は、admin@alpinehouse.onmicrosoft.com から送られた電子メールを受信トレイ ルールで処理することを示しています。受信トレイ ルールの条件の定義に使用できるパラメーターの完全なリストについては、「[New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule)」の記事を参照してください。
 
-c. *Movetofolder*パラメーターは、受信トレイルールのアクションを指定します。 この例では、admin@alpinehouse.onmicrosoft.com から受信したメッセージは、 *Adminsearch*という名前のフォルダーに移動されます。 また、受信トレイルールのアクションを定義するために使用できるパラメーターの完全な一覧については、新しい受信トレイ[ルール](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule)の記事も参照してください。
+c. *Movetofolder*パラメーターは、受信トレイルールのアクションを指定します。 この例では、admin@alpinehouse.onmicrosoft.com から受信したメッセージは、 *Adminsearch*という名前のフォルダーに移動されます。 また、受信トレイルールのアクションを定義するために使用できるパラメーターの完全な一覧については、新しい受信トレイ[ルール](https://docs.microsoft.com/powershell/module/exchange/new-inboxrule)の記事も参照してください。
 
-d.  [ **UserId** ] フィールドには、 **ObjectId**フィールドに指定されている受信トレイルールを作成したユーザーが表示されます。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。
+d. [ **UserId** ] フィールドには、 **ObjectId**フィールドに指定されている受信トレイルールを作成したユーザーが表示されます。 このユーザーは、検索結果ページの [**ユーザー** ] 列にも表示されます。
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>組織外のユーザーによるログインが成功した理由を調べる
 
@@ -211,13 +211,13 @@ d.  [ **UserId** ] フィールドには、 **ObjectId**フィールドに指定
 
 ![成功したパススルー認証の監査レコードの例](../media/PassThroughAuth1.png)
 
-   a.  このフィールドは、組織内のリソースにアクセスしようとしたユーザーが組織の Azure AD で見つからなかったことを示します。
+   a. このフィールドは、組織内のリソースにアクセスしようとしたユーザーが組織の Azure AD で見つからなかったことを示します。
 
    b. このフィールドには、組織内のリソースにアクセスしようとした外部ユーザーの UPN が表示されます。 このユーザー ID は、監査レコードの**user**プロパティと**UserId**プロパティでも識別されます。
 
    c. **ApplicationId**プロパティは、ログオン要求をトリガーしたアプリケーションを識別します。 この監査レコードの ApplicationId プロパティに表示される 00000003-0000-0ff1-ce00-000000000000 の値は、SharePoint Online を示しています。 OneDrive for Business にも同じ ApplicationId があります。
 
-   d.  これは、パススルー認証が成功したことを示します。 言い換えると、ユーザーは Azure AD によって正常に認証されています。 
+   d. これは、パススルー認証が成功したことを示します。 言い換えると、ユーザーは Azure AD によって正常に認証されています。 
 
    e.  **RecordType**値が**15**の場合は、監査されたアクティビティ (USERLOGGEDIN) が Azure AD でセキュリティで保護されたトークンサービス (STS) ログオンイベントであることを示します。
 

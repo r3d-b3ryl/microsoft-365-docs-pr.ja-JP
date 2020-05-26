@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理者は、exchange Online Protection の Exchange 管理センター (EAC) でアクセス許可を割り当てる、または削除する方法を学習できます。
-ms.openlocfilehash: 3d7b709304f901c4adc41c67b0d6fe9c6ff382bf
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209685"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352337"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>スタンドアロン EOP で役割グループを管理する
 
@@ -25,7 +25,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 役割と役割グループの詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md)」を参照してください。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange 管理センター (EAC) を開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
@@ -72,7 +72,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、変更する役割グループを選択し**Edit**てから、[編集 ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) ます。
 
-役割グループの作成時に役割グループを変更する場合も、同じオプションを使用できます。 次の操作を実行できます。
+役割グループの作成時に役割グループを変更する場合も、同じオプションを使用できます。 以下のことを実行できます。
 
 - 名前と説明を変更します。
 
@@ -135,7 +135,7 @@ Get-RoleGroup -Identity "Recipient Administrators" | Format-List
 Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Microsoft Exchange Hosted Organizations,DC=NAMPR001,DC=PROD,DC=OUTLOOK,DC=COM'"
 ```
 
-構文およびパラメーターの詳細については、「[Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroup)」を参照してください。
+構文およびパラメーターの詳細については、「[Get-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroup)」を参照してください。
 
 ### <a name="use-standalone-eop-powershell-to-create-role-groups"></a>スタンドアロンの EOP PowerShell を使用して役割グループを作成する
 
@@ -184,7 +184,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
      New-RoleGroup "Limited Organization Management" -Roles $RoleGroup.Roles -Members "Isabelle","Carter","Lukas"
      ```
 
-構文およびパラメーターの詳細については、「[新しい-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/New-RoleGroup)」を参照してください。
+構文およびパラメーターの詳細については、「[新しい-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/New-RoleGroup)」を参照してください。
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>スタンドアロンの EOP PowerShell を使用する役割グループのメンバーの一覧を変更する
 
@@ -214,7 +214,7 @@ Update-RoleGroupMember -Identity "Help Desk" -Members "Gabriela Laureano","Hyun-
 Update-RoleGroupMember -Identity "Help Desk" -Members @{Add="Daigoro Akai"; Remove="Valeria Barrios"}
 ```
 
-構文およびパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Update-RoleGroupMember)」を参照してください。
+構文およびパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Update-RoleGroupMember)」を参照してください。
 
 ### <a name="use-standalone-eop-powershell-to-remove-role-groups"></a>スタンドアロンの EOP PowerShell を使用して役割グループを削除する
 
@@ -232,7 +232,7 @@ Remove-RoleGroup -Identity "<Role Group Name>" [-BypassSecurityGroupManagerCheck
 Remove-RoleGroup -Identity "Training Administrators"
 ```
 
-構文およびパラメーターの詳細については、「[Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Remove-RoleGroup)」を参照してください。
+構文およびパラメーターの詳細については、「[Remove-RoleGroup](https://docs.microsoft.com/powershell/module/exchange/Remove-RoleGroup)」を参照してください。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 

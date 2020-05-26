@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Office 365 ATP の安全なドキュメントについて説明します。
-ms.openlocfilehash: 11c2736edee3dd1fcbc2560d5fa574def05a8f6e
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: f792b1acbdacfd29db5bbbf377f41396c35e3f17
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213118"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350953"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection の安全なドキュメント
 
 「安全なドキュメント」は、 [Microsoft Defender Advanced threat](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) protection を使用して、[保護さ](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)れたビューで開かれたドキュメントやファイルをスキャンする、Office 365 Advanced threat PROTECTION (office 365 ATP) の機能です。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - この機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティライセンスを持つユーザーのみが使用できます。
 
@@ -77,7 +77,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$f
 Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
-構文およびパラメーターの詳細については、「 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-atppolicyforo365)」を参照してください。
+構文およびパラメーターの詳細については、「 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)」を参照してください。
 
 ### <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
 

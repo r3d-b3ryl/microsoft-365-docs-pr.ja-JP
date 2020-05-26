@@ -16,18 +16,18 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online の Outlook on the web (Outlook Web App) に組み込まれている迷惑メール報告オプションとフィッシング電子メールレポートオプション、およびこれらのレポートオプションをユーザーに対して無効にする方法について説明しています。
-ms.openlocfilehash: dd4b23efa9e12a02ce69167712bc0466b3445c44
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 514d84d2eb2ac4361a444a6d249b7679af596c47
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224699"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350985"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Outlook on the web on the Exchange Online で迷惑メールとフィッシング詐欺メールを報告する
 
 Exchange Online にメールボックスを持つ Microsoft 365 の組織では、web 上の Outlook (以前の Outlook Web App) の組み込みのレポート作成オプションを使用して誤検知 (スパムとしてマークされた良好な電子メール)、誤検知 (無効な電子メールが許可されている)、および Exchange Online Protection (EOP) へのフィッシングメッセージを送信
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange Online メールボックスを使用している組織内の管理者である場合は、セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「[管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
 
@@ -77,7 +77,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 の組織では�
 
 既定では、ユーザーは、web 上の Outlook で分析するために、スパム誤検知、誤ネガ、フィッシングメッセージを Microsoft に報告できます。 管理者は、Exchange Online PowerShell で Outlook on the web メールボックスポリシーを構成して、ユーザーがスパム誤検知を報告したり、Microsoft に迷惑メールを誤って報告したりできないようにすることができます。 ユーザーがフィッシングメッセージを Microsoft に報告する機能を無効にすることはできません。
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+### <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -113,7 +113,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 の組織では�
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
    ```
 
-構文およびパラメーターの詳細については、「[収集](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy)」を[参照してください。](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy)
+構文およびパラメーターの詳細については、「[収集](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy)」を[参照してください。](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy)
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 

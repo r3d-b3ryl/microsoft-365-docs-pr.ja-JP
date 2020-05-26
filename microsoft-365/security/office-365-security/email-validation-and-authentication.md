@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: Microsoft 365 の Exchange Online および Exchange Online Protection (EOP) が、どのようにメール認証 (SPF、DKIM、DMARC) を使用して、スプーフィング、フィッシング、スパムを防止するかについて説明します。
-ms.openlocfilehash: f3a3ea902cb0c4fede4fcfd919f0969765bc4a96
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理者は、スプーフィング、フィッシング、およびスパムを防ぐには、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用方法を確認できます。
+ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637558"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209501"
 ---
-# <a name="email-authentication-in-microsoft-365"></a>Microsoft 365 のメール認証
+# <a name="email-authentication-in-eop"></a>EOP のメール認証
 
-メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 Exchange Online メールボックスを使用している Microsoft 365 組織や、Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織では、EOP は標準を使用して受信メールを検証します。
+メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 Exchange online のメールボックスを使用している Microsoft 365 の組織、およびExchange Online のメールボックスを使用していないスタンドアローンの Exchange Online Protection (EOP) 組織内で、EOP は受信メールを確認するために次の基準を使用します。
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 

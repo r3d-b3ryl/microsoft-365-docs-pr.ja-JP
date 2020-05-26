@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Office 365 Advanced Threat Protection (Office 365 ATP) を使用している組織内の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを管理することもできます。
-ms.openlocfilehash: 472a5258c112db7e8b8017e5d2ff19dc4741e93c
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 521268d291c73cc94e8be87f1f2896a17c623678
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213330"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352422"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP で管理者として検疫済みメッセージおよびファイルを管理する
 
-Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange online メールボックスがない場合、検疫は潜在的に危険または不要なメッセージを保持します。365 詳細については、「EOP での検疫された[電子メールメッセージ](quarantine-email-messages.md)」を参照してください。
+Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については、「EOP での検疫された[電子メールメッセージ](quarantine-email-messages.md)」を参照してください。
 
 管理者は、すべてのユーザーのすべての種類の検疫済みメッセージを表示、リリース、および削除できます。 マルウェア、精度の高いフィッシング、またはメールフロールール (トランスポートルールとも呼ばれる) の結果として検疫されたメッセージを管理できるのは、管理者だけです。 管理者は、誤検知を Microsoft に報告することもできます。
 
@@ -103,13 +103,13 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 
      - **ポリシー**: メッセージは、メールフロールール (トランスポートルールとも呼ばれます) の条件に一致しました。
 
-     - **バルク**
+     - **[バルク]**
 
      - **フィッシング**
 
      - **マルウェア**
 
-     - **スパム**
+     - **[スパム]**
 
      - **精度の高いフィッシング**
 
@@ -338,12 +338,12 @@ ATP を使用している組織では、管理者は SharePoint Online、OneDriv
 
 検疫内のメッセージおよびファイルを表示および管理するには、次のコマンドレットを使用します。
 
-- [Get-quarantinemessage を削除します。](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/delete-quarantinemessage)
+- [Get-quarantinemessage を削除します。](https://docs.microsoft.com/powershell/module/exchange/delete-quarantinemessage)
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/export-quarantinemessage)
+- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/export-quarantinemessage)
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)
+- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/preview-quarantinemessage): このコマンドレットは、メッセージのみを対象としています。このコマンドレットは、SharePoint Online、OneDrive for business、または TEAMS の ATP ファイルではなく、メッセージのみを対象としています。
+- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage): このコマンドレットは、メッセージのみを対象としています。このコマンドレットは、SharePoint Online、OneDrive for business、または TEAMS の ATP ファイルではなく、メッセージのみを対象としています。
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage)
+- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)

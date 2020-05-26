@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033657"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352160"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Office 365 で監督ポリシーを構成する
 
@@ -83,7 +83,7 @@ ms.locfileid: "44033657"
 
 大規模な企業組織の監督対象ユーザーを管理するには、大規模なグループ全体のユーザーすべてを監視する必要がある場合があります。 PowerShell を使用して、割り当てられたグループのグローバル監督ポリシーの配布グループを構成できます。 これにより、単一のポリシーで数千人のユーザーを監視し、新しい従業員が組織に加入する際に監督ポリシーを最新の状態に保つことができます。
 
-1. 次のプロパティを使用して、グローバル監督ポリシー専用の[配布グループ](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)を作成します。この配布グループが他の目的または他の Office 365 サービスに使用されていないことを確認します。
+1. 次のプロパティを使用して、グローバル監督ポリシー専用の[配布グループ](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps)を作成します。この配布グループが他の目的または他の Office 365 サービスに使用されていないことを確認します。
 
     - **MemberDepartRestriction = Closed**。 ユーザーが配布グループから自分自身を削除できないようにします。
     - **MemberJoinRestriction = Closed**。 ユーザーが配布グループに自分自身を追加できないようにします。
@@ -124,7 +124,7 @@ ms.locfileid: "44033657"
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>監督レビュー役割グループにメンバーを追加する
 
-1. 組織内[https://protection.office.com](https://protection.office.com)の管理者アカウントの資格情報を使用してサインインします。
+1. [https://protection.office.com](https://protection.office.com)組織内の管理者アカウントの資格情報を使用してサインインします。
 
 2. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動します。
 
@@ -134,9 +134,9 @@ ms.locfileid: "44033657"
 
 ### <a name="create-a-new-role-group"></a>新しい役割グループを作成する
 
-1. 組織内[https://protection.office.com/permissions](https://protection.office.com/permissions)の管理者アカウントの資格情報を使用してサインインします。
+1. [https://protection.office.com/permissions](https://protection.office.com/permissions)組織内の管理者アカウントの資格情報を使用してサインインします。
 
-2. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動し**+**、[追加] () をクリックします。
+2. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動し、[追加] () をクリックし **+** ます。
 
 3. [**役割**] セクションで、[追加] (**+**) をクリックし、[**監督レビュー管理者**] までスクロールします。 この役割を役割グループに追加します。
 
@@ -167,11 +167,11 @@ ms.locfileid: "44033657"
 
     詳細については、「[カスタム機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」および「[キーワード ディクショナリの作成](create-a-keyword-dictionary.md)」を参照してください
 
-    カスタム ディクショナリ/語彙を作成したら、[Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) コマンドレットで構成済みのキーワードを表示したり、[Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) コマンドレットを使用して用語を追加および削除したりできます。
+    カスタム ディクショナリ/語彙を作成したら、[Get-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary) コマンドレットで構成済みのキーワードを表示したり、[Set-DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary) コマンドレットを使用して用語を追加および削除したりできます。
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>手順 4: 監督ポリシーを設定する (必須)
   
-1. 組織内[https://protection.office.com](https://protection.office.com)の管理者アカウントの資格情報を使用してサインインします。
+1. [https://protection.office.com](https://protection.office.com)組織内の管理者アカウントの資格情報を使用してサインインします。
 
 2. [セキュリティ & コンプライアンスセンター] で、[**監督**] を選択します。
   

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: このテストラボガイドを使用して、Microsoft 365 Enterprise テスト環境で特権アクセス管理を有効にします。
-ms.openlocfilehash: 27f63de138f388b0dcbc1bc896bafcb9abc9ed6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1a81c62124177a328209f175262ac13455ca0899
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632865"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352524"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境の特権アクセスの管理
 
@@ -62,9 +62,9 @@ ms.locfileid: "43632865"
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義されていないタスクを実行するためのテスト機能
 
-最初に、テスト環境で全体管理者として構成されているユーザーの資格情報を使用して Exchange 管理 PowerShell に接続し、新しいジャーナルルールを作成します。 [New-journalrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps)タスクは、現在、組織の特権アクセスポリシーでは定義されていません。
+最初に、テスト環境で全体管理者として構成されているユーザーの資格情報を使用して Exchange 管理 PowerShell に接続し、新しいジャーナルルールを作成します。 [New-journalrule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps)タスクは、現在、組織の特権アクセスポリシーでは定義されていません。
 
-1. ローカルコンピューターで、テスト環境のグローバル管理者アカウントを使用して、 **microsoft Corporation** > **microsoft exchange online**リモート powershell モジュールの exchange online リモート powershell モジュールにサインインします。
+1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation**microsoft exchange online**リモート powershell モジュールの exchange online リモート powershell モジュールにサインインします。
 
 2. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
 
@@ -81,7 +81,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 1. 資格情報を使用して[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。テスト環境のグローバル管理者アカウントです。
 
-2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
+2. 管理センターで、[**設定**  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
 3. [**アクセスポリシーと要求の管理**] を選択します。
 
@@ -103,7 +103,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 ### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義された New-journalrule タスクのテスト承認要件
 
-1. ローカルコンピューターで、テスト環境のグローバル管理者アカウントを使用して、 **microsoft Corporation** > **microsoft exchange online リモート**powershell モジュールの exchange online リモート powershell モジュールにサインインします。
+1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation**microsoft exchange online リモート**powershell モジュールの exchange online リモート powershell モジュールにサインインします。
 
 2. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
 
@@ -125,7 +125,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. テスト環境のグローバル管理者アカウントを使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
 
-2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
+2. 管理センターで、[**設定**  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
 3. [**アクセスポリシーと要求の管理**] を選択します。
 
@@ -147,7 +147,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 1. テスト環境のユーザー3の資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします (テスト環境の "特権アクセス承認者" セキュリティグループのメンバー)。
 
-2. 管理センターで、[**設定** > **セキュリティ & プライバシー** > **特権アクセス**] に移動します。
+2. 管理センターで、[**設定**  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
 3. [**アクセスポリシーと要求の管理**] を選択します。
 
@@ -155,7 +155,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 ### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>New-journalrule タスクの特権アクセスが承認された新しいジャーナルルールを作成するテスト
 
-1. ローカルコンピューターで、テスト環境のグローバル管理者アカウントを使用して、 **microsoft Corporation** > **microsoft exchange online**リモート powershell モジュールの exchange online リモート powershell モジュールにサインインします。
+1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation**microsoft exchange online**リモート powershell モジュールの exchange online リモート powershell モジュールにサインインします。
 
 2. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
 

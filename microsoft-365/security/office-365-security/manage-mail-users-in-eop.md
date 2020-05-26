@@ -1,5 +1,5 @@
 ---
-title: メールユーザーをスタンドアロン EOP で管理する
+title: スタンドアロン EOP でメール ユーザーを管理する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: ディレクトリ同期、EAC、PowerShell を使用してユーザーを管理するなど、Exchange Online Protection (EOP) でメールユーザーを管理する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208647"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352434"
 ---
-# <a name="manage-mail-users-in-standalone-eop"></a>メールユーザーをスタンドアロン EOP で管理する
+# <a name="manage-mail-users-in-standalone-eop"></a>スタンドアロン EOP でメール ユーザーを管理する
 
 Exchange Online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織では、メールユーザーは基本的な種類のユーザーアカウントです。 メールユーザーは、スタンドアロンの EOP 組織内にアカウントの資格情報を持ち、リソースにアクセスできます (アクセス許可が割り当てられている)。 メールユーザーの電子メールアドレスが外部にある (たとえば、オンプレミスの電子メール環境で)。
 
@@ -31,7 +31,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 ユーザー数が少ないスタンドアロンの EOP 組織では、このトピックで説明されているように、Exchange 管理センター (EAC) またはスタンドアロン EOP PowerShell でメールユーザーを追加および管理できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange 管理センター (EAC) を開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
@@ -149,7 +149,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-構文およびパラメーターの詳細については、「[取得-受信者](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)と[取得ユーザー](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)」を参照してください。
+構文およびパラメーターの詳細については、「[取得-受信者](https://docs.microsoft.com/powershell/module/exchange/get-recipient)と[取得ユーザー](https://docs.microsoft.com/powershell/module/exchange/get-user)」を参照してください。
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを作成する
 
@@ -178,7 +178,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-構文およびパラメーターの詳細については、「 [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)」を参照してください。
+構文およびパラメーターの詳細については、「 [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser)」を参照してください。
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを変更する
 
@@ -205,7 +205,7 @@ $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-構文およびパラメーターの詳細については、「 [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser)」を参照してください。
+構文およびパラメーターの詳細については、「 [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser)」を参照してください。
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを削除する
 
@@ -221,7 +221,7 @@ Remove-EOPMailUser -Identity <MailUserIdentity\>
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-構文およびパラメーターの詳細については、「 [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser)」を参照してください。
+構文およびパラメーターの詳細については、「 [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser)」を参照してください。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 

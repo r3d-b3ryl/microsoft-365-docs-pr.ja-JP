@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 37c460732704da4c5904005cf8ebaabf36b92c49
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 897fc513d0f129a273f87107dc8e85127890ee6e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066108"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254396"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Cloud Security Alliance (CSA) STAR Certification
 
@@ -42,21 +42,22 @@ Microsoft Azure、Microsoft Intune、Microsoft Power BI では、STAR 認証を�
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Cloud App Security
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Microsoft Defender Advanced Threat Protection
 - OMS Service Map
-- PowerApps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Automate (旧称 Microsoft Flow): スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
+- Power Apps クラウド サービス: スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス
 - Power BI: Power BI の機能のうち、スタンドアロン サービス、または Office 365 ブランド プランまたはスイートに組み込まれているサービスとして提供されているクラウド サービスの部分
-- Stream
+- Power BI Embedded
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-- [Azure、Cloud App Security、Flow, Genomics、Graph、Health Bot、Intune、Microsoft マネージド デスクトップ、OMS Service Map、PowerApps、Power BI、Stream — CSA STAR 認証](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure、Dynamics 365、Online Services – CSA STAR 証明書](https://aka.ms/azurecsastarcert)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -66,16 +67,16 @@ CCM は、ISO 27001、PCI DSS、HIPAA、AICPA SOC 2、NERC CIP、FedRAMP、NIST 
 
 **Microsoft クラウド サービスの CSA STAR 認証はどこで確認できますか?**
 
-CSA レジストリから Azure の [CSA STAR 認証](https://aka.ms/csastar-certification)をダウンロードできます。この認証は、Intune と Power BI も網羅しています。
+CSA レジストリから Azure の [CSA STAR 認証](https://aka.ms/csastar-certification)を表示することができます。この認証は、Dynamics 365、Intune、Power BI も網羅しています。
 
 **Microsoft クラウド サービスの成熟度レベルを教えてください。**
 
-Azure、Cloud App Security、Intune、Power BI では、Maturity Capability (能力成熟度) 評価において最高レベルのゴールド アワードが取得されています。
+Azure、Microsoft Cloud App Security、Intune、Power BI では、Maturity Capability (能力成熟度) 評価において最高レベルのゴールド アワードが取得されています。
 
 **Microsoft のビジネス クラウド サービスは、CSA STAR のどの保証レベルを達成していますか?**
 
 - **レベル 1**: **CSA STAR 自己評価**: Azure、Dynamics 365、Office 365。 [自己評価](offering-csa-star-self-assessment.md)は、クラウド サービス プロバイダーにより提供される無償のサービスで、顧客がサービスのセキュリティを評価できるよう、プロバイダーが自社のセキュリティ制御を文書化したものです。
-- **レベル 2**: **CSA STAR 認証**: Azure、Cloud App Security、Intune、Power BI。 STAR 認証は、ISO/IEC 27001 認証の取得および CCM に規定されている基準への適合に基づきます。 この認証は、クラウド サービス プロバイダーにおけるセキュリティの制御と取り組みについて、第三者による厳格な評価を経て付与されます。
+- **レベル 2**: **CSA STAR 認証**: Azure、Microsoft Cloud App Security、Intune、Power BI。 STAR 認証は、ISO/IEC 27001 認証の取得および CCM に規定されている基準への適合に基づきます。 この認証は、クラウド サービス プロバイダーにおけるセキュリティの制御と取り組みについて、第三者による厳格な評価を経て付与されます。
 - **レベル 2**: **CSA STAR 評価証明**: Azure および Intune。 CSA と AICPA が協力して、CPA が SOC 2 の作成業務を行う際に使用できるガイドラインを提供しています。このガイドラインは、AICPA (Trust Service Principles, AT 101) および CSA CCM の基準に基づいています。 [STAR 評価証明](offering-CSA-STAR-Attestation.md)はこれらのガイドラインに基づくもので、クラウド プロバイダーに対する独立機関による厳格な評価を経て付与されます。
 
 ## <a name="resources"></a>リソース

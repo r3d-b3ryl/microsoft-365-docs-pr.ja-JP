@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Microsoft 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036670"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351953"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
@@ -50,11 +50,11 @@ ms.locfileid: "44036670"
 
 3. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動します。
 
-4. リストからユーザーを追加する役割グループを選択し、 **[編集] [** ![編集] アイコン](../../media/O365-MDM-CreatePolicy-EditIcon.gif)をクリックします。
+4. リストからユーザーを追加する役割グループを選択し、 **[編集** ![ ] [編集] アイコンをクリックし ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) ます。
 
-5. 役割グループのプロパティページの [**メンバー**] で、 **[追加]**![アイコン](../../media/ITPro-EAC-AddIcon.gif)をクリックし、追加するユーザーの名前を選択します。
+5. 役割グループのプロパティページの [**メンバー**] で、 **[追加** ![ ] アイコンをクリックし、 ](../../media/ITPro-EAC-AddIcon.gif) 追加するユーザーの名前を選択します。
 
-6. 役割グループに追加するすべてのユーザーを選択したら、[ **\>追加**] をクリックし、[ **OK]** をクリックします。
+6. 役割グループに追加するすべてのユーザーを選択したら、[ ** \> 追加**] をクリックし、[ **OK]** をクリックします。
 
 7. **[保存]** をクリックして、役割グループに加えた変更を保存します。
 
@@ -82,7 +82,7 @@ ms.locfileid: "44036670"
 
    - _Member_は、役割グループに追加するメールボックス、ユニバーサルセキュリティグループ (USG)、またはコンピューターです。 一度に 1 メンバーしか指定できません。
 
-構文とパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember)」を参照してください。
+構文とパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember)」を参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
@@ -92,4 +92,4 @@ ms.locfileid: "44036670"
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-構文とパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember)」を参照してください。
+構文とパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)」を参照してください。

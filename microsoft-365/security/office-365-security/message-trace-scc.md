@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44212988"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352500"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
@@ -27,7 +27,7 @@ ms.locfileid: "44212988"
 セキュリティ & コンプライアンスセンターのメッセージ追跡は、Exchange 管理センター (EAC) で使用可能だった元のメッセージ追跡によって改善されています。 メッセージ追跡からの情報を使用して、メッセージへの対処、メールフローの問題のトラブルシューティング、およびポリシーの変更の検証について、ユーザーからの質問に効率よく答えられるようにすることができます。
 
 > [!NOTE]
-> •メッセージ追跡を行うには、組織の管理、コンプライアンス管理、またはヘルプデスクの役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 <br/><br/>•結果に表示されるメッセージの最大数は、選択したレポートの種類によって異なります (詳細については、「[レポートの種類を選択](#choose-report-type)する」セクションを参照してください)。 Exchange Online PowerShell またはスタンドアロン EOP PowerShell の[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch)コマンドレットは、結果のすべてのメッセージを返します。
+> •メッセージ追跡を行うには、組織の管理、コンプライアンス管理、またはヘルプデスクの役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。 <br/><br/>•結果に表示されるメッセージの最大数は、選択したレポートの種類によって異なります (詳細については、「[レポートの種類を選択](#choose-report-type)する」セクションを参照してください)。 Exchange Online PowerShell またはスタンドアロン EOP PowerShell の[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch)コマンドレットは、結果のすべてのメッセージを返します。
 
 ## <a name="open-message-trace"></a>メッセージ追跡を開く
 
@@ -230,7 +230,7 @@ ms.locfileid: "44212988"
 
 - **sender_address**: 送信者の電子メールアドレス (*エイリアス* @ *ドメイン*)。
 
-- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、[ \< *電子メールアドレス*の \> ## \< *状態* \> ] の形式で、それぞれの受信者と対応するステータスが表示されます。 例:
+- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、[ \< *電子メールアドレス*の \> ## \< *状態* \> ] の形式で、それぞれの受信者と対応するステータスが表示されます。 以下に例を示します。
 
   - **# #Receive, Send**は、メッセージがサービスによって受信され、意図した宛先に送信されたことを意味します。
 
@@ -268,13 +268,13 @@ ms.locfileid: "44212988"
 
 - **server_hostname**: 宛先サーバーのホスト名または FQDN。
 
-- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 例:
+- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 以下に例を示します。
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **source**: イベントを担当する Exchange Online コンポーネント。 例:
+- **source**: イベントを担当する Exchange Online コンポーネント。 以下に例を示します。
 
   - `AGENT`
 
@@ -292,7 +292,7 @@ ms.locfileid: "44212988"
 
 - **related_recipient_address**: `EXPAND` `REDIRECT` `RESOLVE` メッセージに関連付けられた他の受信者の電子メールアドレスを表示するために、、およびイベントと共に使用します。
 
-- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 例:
+- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 以下に例を示します。
 
   - **Dsn**: このイベントの後に dsn が生成された場合に、関連付けられている配信状態通知 (dsn、配信不能レポート、NDR、またはバウンスメッセージとも呼ばれる) の**message_id**値であるレポートリンクが含まれています。 これが DSN メッセージの場合、このフィールドには、DSN が生成された元のメッセージの**message_id**値が含まれます。
 
@@ -310,7 +310,7 @@ ms.locfileid: "44212988"
 
 - **return_path**: メッセージを送信した**MAIL FROM**コマンドによって指定された返信電子メールアドレス。 このフィールドは空になることはありませんが、null の送信者アドレス値をとして表すことができ `<>` ます。
 
-- **message_info**: メッセージに関する追加情報。 例:
+- **message_info**: メッセージに関する追加情報。 以下に例を示します。
 
   - メッセージの発信元の日付とイベントの UTC の日時 `DELIVER` `SEND` 。 発信日時は、メッセージが最初に Exchange Online 組織に入った時刻です。 UTC の日時は、ISO 8601 の日付と時刻の形式で表されます。ここで、 `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` = year、 `mm` = month、 `dd` = day は、 `T` 時間コンポーネントの開始を示し、 `hh` = hour、 `mm` = minute、= second、= 小数点以下の値を示します `ss` `fff` `Z` `Zulu` 。これは、utc を示すもう1つの方法です。
 

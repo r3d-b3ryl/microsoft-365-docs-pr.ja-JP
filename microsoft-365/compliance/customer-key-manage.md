@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可とデータ暗号化ポリシーを管理することによって、キーを管理する方法について説明します。
-ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635603"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352204"
 ---
 # <a name="manage-customer-key"></a>顧客キーを管理する
 
@@ -88,7 +88,7 @@ Exchange Online と Skype for Business 用に作成したすべての DEPs の�
   Get-DataEncryptionPolicy
   ```
 
-  Get-DataEncryptionPolicy コマンドレットの詳細については、「 [get-dataencryptionpolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps)」を参照してください。
+  Get-DataEncryptionPolicy コマンドレットの詳細については、「 [get-dataencryptionpolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps)」を参照してください。
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>メールボックスをクラウドに移行する前に DEP を割り当てる
 
@@ -104,7 +104,7 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
   ```
 
-  *GeneralMailboxOrMailUserIdParameter*にはメールボックスを指定し、 *Dataencryptionpolicyidparameter*は DEP の ID です。 Set-mailuser コマンドレットの詳細については、「 [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps)」を参照してください。
+  *GeneralMailboxOrMailUserIdParameter*にはメールボックスを指定し、 *Dataencryptionpolicyidparameter*は DEP の ID です。 Set-mailuser コマンドレットの詳細については、「 [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps)」を参照してください。
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>メールボックスに割り当てられた DEP を決定する
 
@@ -116,7 +116,7 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   ここで、 *GeneralMailboxOrMailUserIdParameter*はメールボックスと DataEncryptionPolicyID を指定し、DEP の GUID を返します。 Get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps)」を参照してください。
+   ここで、 *GeneralMailboxOrMailUserIdParameter*はメールボックスと DataEncryptionPolicyID を指定し、DEP の GUID を返します。 Get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps)」を参照してください。
   
 2. Get-DataEncryptionPolicy コマンドレットを実行して、メールボックスが割り当てられている DEP のフレンドリ名を検索します。
   
@@ -148,7 +148,7 @@ IsEncrypted プロパティは、メールボックスが暗号化されてい�
 New-MoveRequest <alias>
 ```
 
-このコマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps)」を参照してください。
+このコマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps)」を参照してください。
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>SharePoint Online、OneDrive for Business、および Teams ファイルの暗号化が完了していることを確認する
 
@@ -201,7 +201,7 @@ Exchange Online と Skype for Business のデータ削除パスを開始する�
 
 2. 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
 
-3. 削除するメールボックスを含む DEP ごとに、次のように[Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy)コマンドレットを実行します。
+3. 削除するメールボックスを含む DEP ごとに、次のように[Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy)コマンドレットを実行します。
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>
@@ -241,7 +241,7 @@ SharePoint Online、OneDrive for Business、および Teams ファイルのデ�
 
 - [顧客キーを設定する](customer-key-set-up.md)
 
-- [顧客キーまたは可用性キーをローリングまたはローテーションする](customer-key-availability-key-roll.md)
+- [カスタマー キーまたは可用性キーをローリングまたはローテーションする](customer-key-availability-key-roll.md)
 
 - [カスタマー ロックボックス](customer-lockbox-requests.md)
 

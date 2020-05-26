@@ -234,9 +234,11 @@
       items:
         - name: データをセキュリティで保護するトップ 10 の方法
           href: security-and-compliance/secure-your-business-data.md
+        - name: Microsoft 365 の多要素認証
+          href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: 多要素認証をセットアップする
           href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: 多要素認証をセットアップする (Office 2013 を使用)
+        - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
         - name: セキュア スコア
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'

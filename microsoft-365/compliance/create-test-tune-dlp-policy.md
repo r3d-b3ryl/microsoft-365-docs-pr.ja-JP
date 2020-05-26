@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、および調整する方法について説明します。
-ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 9f5f1b1f84ba44dbf52366d30b0e26bbf310e9fe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327799"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352224"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーを作成、テスト、調整する
 
@@ -200,7 +200,7 @@ DLP ポリシーが機密情報の種類を正確かつ効果的に検出し、�
 
 ![ポリシーをオンにするオプション](../media/DLP-create-test-tune-turn-on-policy.png)
  
-ポリシーを有効にする時期を待っている場合には、[セキュリティ/コンプライアンス センターの PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)、[Get-DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpcompliancepolicy?view=exchange-ps)を実行して DistributionStatus を確認します。
+ポリシーを有効にする時期を待っている場合には、[セキュリティ/コンプライアンス センターの PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)、[Get-DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps)を実行して DistributionStatus を確認します。
 
 ![PowerShell でコマンドレットを実行する](../media/DLP-create-test-tune-PowerShell.png)
 

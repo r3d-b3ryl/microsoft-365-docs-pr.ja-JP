@@ -12,16 +12,16 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 組織内のインフォメーション ワーカーは、日常的にさまざまな種類の機密情報を処理します。 ドキュメント フィンガープリンティングは、組織全体で使用される標準フォームを特定することによってこの情報の保護を容易にします。 このトピックでは、ドキュメントフィンガープリンティングの背後にある概念と、PowerShell を使用して作成する方法について説明します。
-ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 37b5649e357f24993e41ae93db6737d980ce0c72
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074951"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352024"
 ---
 # <a name="document-fingerprinting"></a>ドキュメント フィンガープリンティング
 
-組織内のインフォメーション ワーカーは、日常的にさまざまな種類の機密情報を処理します。 セキュリティ&amp;コンプライアンスセンターでは、ドキュメントフィンガープリンティングにより、組織全体で使用される標準フォームを識別することにより、この情報をより簡単に保護することができます。 このトピックでは、ドキュメントフィンガープリンティングの背後にある概念と、PowerShell を使用して作成する方法について説明します。
+組織内のインフォメーション ワーカーは、日常的にさまざまな種類の機密情報を処理します。 セキュリティ &amp; コンプライアンスセンターでは、ドキュメントフィンガープリンティングにより、組織全体で使用される標準フォームを識別することにより、この情報をより簡単に保護することができます。 このトピックでは、ドキュメントフィンガープリンティングの背後にある概念と、PowerShell を使用して作成する方法について説明します。
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>ドキュメント フィンガープリンティングに関する基本的なシナリオ
 
@@ -65,7 +65,7 @@ ms.locfileid: "42074951"
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>PowerShell を使用してドキュメントフィンガープリントに基づいて分類ルールパッケージを作成する
 
-現時点では、セキュリティ&amp; /コンプライアンスセンターで PowerShell を使用することによってのみ、ドキュメントフィンガープリントを作成できます。 接続するには、「 [connect To Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
+現時点では、セキュリティ/コンプライアンスセンターで PowerShell を使用することによってのみ、ドキュメントフィンガープリントを作成でき &amp; ます。 接続するには、「 [connect To Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を参照してください。
 
 DLP は、分類ルールパッケージを使用して機密コンテンツを検出します。 ドキュメントのフィンガープリントに基づいて分類ルールパッケージを作成するには、**新しい-DlpFingerprint**および**set-dlpsensitiveinformationtype**コマンドレットを使用します。 **新しい-dlpfingerprint**の結果はデータ分類規則の範囲外に格納されないため、常に、同じ PowerShell セッションで**Set-dlpsensitiveinformationtype**または**set-dlpsensitiveinformationtype** **を実行し**ます。 次の例では、C:\My Documents\Contoso Employee Template.docx ファイルに基づいて新しいドキュメント フィンガープリントを作成します。 同じ PowerShell セッションで **New-DlpSensitiveInformationType** コマンドレットを使用して新しい指紋を使用できるように、新しい指紋を変数として保存します。
   
@@ -84,13 +84,13 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 **Set-dlpsensitiveinformationtype**コマンドレットを使用して、すべての DLP データ分類ルールパッケージを検索できるようになりました。この例では、"Contoso Customer Confidential" はデータ分類規則パッケージリストに含まれています。 
   
-最後に、セキュリティ&amp;コンプライアンスセンターで、"Contoso Customer Confidential" データ分類ルールパッケージを DLP ポリシーに追加します。 この例では、"ConfidentialPolicy" という名前の既存の DLP ポリシーにルールを追加します。
+最後に、セキュリティコンプライアンスセンターで、"Contoso Customer Confidential" データ分類ルールパッケージを DLP ポリシーに追加し &amp; ます。 この例では、"ConfidentialPolicy" という名前の既存の DLP ポリシーにルールを追加します。
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-次の例に示すように、Exchange Online のメールフロールールでデータ分類ルールパッケージを使用することもできます。 このコマンドを実行するには、まず[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)する必要があります。 また、ルールパッケージがセキュリティ&amp;コンプライアンスセンターから Exchange 管理センターに同期されるまでに時間がかかることにも注意してください。
+次の例に示すように、Exchange Online のメールフロールールでデータ分類ルールパッケージを使用することもできます。 このコマンドを実行するには、まず[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)する必要があります。 また、ルールパッケージがセキュリティコンプライアンスセンターから Exchange 管理センターに同期されるまでに時間がかかることにも注意 &amp; してください。
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
@@ -100,8 +100,8 @@ DLP が、コントソ Customer Form .docx ドキュメント指紋に一致す�
   
 構文およびパラメーターの詳細については、以下を参照してください。
 
-- [新-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
-- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
-- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
-- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
-- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)
+- [新-DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/New-DlpFingerprint)
+- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/New-DlpSensitiveInformationType)
+- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/Remove-DlpSensitiveInformationType)
+- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/Set-DlpSensitiveInformationType)
+- [Set-dlpsensitiveinformationtype](https://docs.microsoft.com/powershell/module/exchange/Get-DlpSensitiveInformationType)

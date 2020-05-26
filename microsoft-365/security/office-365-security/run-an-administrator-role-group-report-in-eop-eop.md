@@ -1,5 +1,5 @@
 ---
-title: スタンドアロン EOP で管理者の役割グループレポートを実行する
+title: スタンドアロン EOP で管理者役割グループ レポートを実行する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,20 +14,20 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者の役割グループレポートを実行する方法について説明します。 このレポートは、管理者が管理者の役割グループに対してメンバーを追加または削除したときにログに記録されます。このレポートには、EOP ごとにログが記録
-ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209177"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350941"
 ---
-# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>スタンドアロン EOP で管理者の役割グループレポートを実行する
+# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>スタンドアロン EOP で管理者役割グループ レポートを実行する
 
 Exchange Online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 組織では、管理者が管理役割グループにメンバーを追加したり、管理者の役割グループからメンバーを削除したりすると、サービスによって各発生がログに記録されます。 スタンドアロン EOP の役割グループの詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md)」を参照してください。
 
 Exchange 管理センター (EAC) で管理者の役割グループレポートを実行すると、エントリが検索結果として表示され、影響を受ける役割グループ、役割グループのメンバーシップと日時、および作成されたメンバーシップの更新が含まれます。 このレポートを使用して、組織内のユーザーに割り当てられた管理アクセス許可の変更を監視します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
@@ -115,7 +115,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 検索に多数のログエントリが返される場合は、このトピックで後述する「 **Exchange Online PowerShell を使用して監査ログエントリを検索し、結果を受信者に送信**する」で説明されている手順を使用することをお勧めします。 その手順を実行すると、指定した受信者に XML ファイルが電子メールの添付ファイルとして送信されるため、目的のデータをより簡単に抽出することができます。
 
-構文およびパラメーターの詳細については、「[Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)」を参照してください。
+構文およびパラメーターの詳細については、「[Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)」を参照してください。
 
 ### <a name="view-details-of-audit-log-entries"></a>監査ログ エントリの詳細を表示する
 

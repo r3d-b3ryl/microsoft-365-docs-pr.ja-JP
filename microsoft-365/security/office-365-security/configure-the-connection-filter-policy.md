@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、電子メールサーバーからのメールを許可またはブロックするように接続フィルターを構成する方法について説明します。
-ms.openlocfilehash: b9fd8c1b365f59647618e397a511873aae40146f
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213438"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352013"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターの構成
 
@@ -126,7 +126,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
 ```
 
-構文およびパラメーターの詳細については、「 [remove-hostedconnectionfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy)」を参照してください。
+構文およびパラメーターの詳細については、「 [remove-hostedconnectionfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy)」を参照してください。
 
 ## <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
