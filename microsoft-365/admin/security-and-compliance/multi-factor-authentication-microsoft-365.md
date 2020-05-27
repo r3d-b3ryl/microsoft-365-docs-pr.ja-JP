@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 での多要素認証について説明します。
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: eba9ae38dbc17a22abb5d5ef92b8cd30a827ae11
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340848"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371454"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 の多要素認証
 
@@ -151,17 +151,10 @@ Microsoft 365 管理センターの**アクティブなユーザー**ウィン�
 |:-------|:-----|:-------|:-------|
 | **セキュリティの既定値** | 条件付きアクセス ポリシーを使用できない |   条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
 | **条件付きアクセス ポリシー** |いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべての設定が無効になっている場合は、セキュリティの既定値を有効にできます。 | MFA への登録時にユーザー指定 |
-| **ユーザーごとのアカウントの設定 (推奨されません)** | セキュリティの既定値および MFA を必要とする条件付きアクセスポリシーによって上書きされる | セキュリティの既定値と条件付きアクセスポリシーによって上書きされます。 | MFA への登録時にユーザー指定|
+| **ユーザーごとのアカウントの設定 (推奨されません)** | 各サインインで MFA を必要とするセキュリティの既定値と条件付きアクセスポリシーを上書きします。 | セキュリティの既定値と条件付きアクセスポリシーによって上書きされます。 | MFA への登録時にユーザー指定|
 ||||
 
 セキュリティの既定値が有効になっている場合は、すべての新規ユーザーが MFA 登録を求め、次のサインイン時に Microsoft Authenticator アプリを使用するように求められます。
-
-ただし、テキストメッセージを受信できるが、Microsoft Authenticator アプリを実行できない古い電話機がある場合は、その特定のユーザーアカウントで MFA を有効にして、テキストコードの追加の検証方法を使用して次の手順で登録することができます。
-
-1. Azure portal でセキュリティの既定値を無効にします。
-2. Microsoft 365 管理センターで、ユーザーアカウントに対して MFA を有効にします。
-3. ユーザーにサインインして、MFA およびテキストコード認証方法を登録してもらいます。
-4. 完了したら、Azure portal でセキュリティの既定値を有効にします。
 
 ## <a name="ways-to-manage-mfa-settings"></a>MFA 設定を管理する方法
 

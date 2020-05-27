@@ -18,20 +18,20 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、電子メールサーバーからのメールを許可またはブロックするように接続フィルターを構成する方法について説明します。
-ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6fb1fd95a701802d9373c07b7661196271ac1e2c
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352013"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371476"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターの構成
 
 Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 顧客の場合は、EOP (特に既定の接続フィルターポリシー) で接続フィルターを使用して、適切なまたは不良なソース電子メールサーバーを IP アドレスで識別します。 既定の接続フィルターポリシーの主要なコンポーネントは次のとおりです。
 
-- **Ip 許可一覧**: ip アドレスまたは ip アドレス範囲で指定した送信元電子メールサーバーからのすべての受信メッセージに対して、スパムフィルター処理をスキップします。 このようなソースからのメッセージにスパムフィルター処理が依然として発生する可能性があるシナリオについては、このトピックで後述する「 [IP 許可一覧のソースからのメッセージのフィルター処理](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered)」セクションを参照してください。 IP 許可一覧が安全な送信者戦略全体にどのように適合するかの詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
+- **Ip 許可一覧**: ip アドレスまたは ip アドレス範囲で指定した送信元電子メールサーバーからのすべての受信メッセージに対してスパムフィルター処理をスキップします。 このようなソースからのメッセージにスパムフィルター処理が依然として発生する可能性があるシナリオについては、このトピックで後述する「 [IP 許可一覧のソースからのメッセージのフィルター処理](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered)」セクションを参照してください。 IP 許可一覧が安全な送信者戦略全体にどのように適合するかの詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
-- **Ip 禁止一覧**: ip アドレスまたは ip アドレス範囲で指定した送信元電子メールサーバーからのすべての受信メッセージをブロックします。 受信メッセージは拒否され、スパムとしてマークされないため、追加のフィルター処理は行われません。IP 禁止一覧がブロックされる送信者の全体的な戦略にどのように適合するかの詳細については、「 [Create Block sender lists IN EOP](create-block-sender-lists-in-office-365.md)」を参照してください。
+- **Ip 禁止一覧**: ip アドレスまたは ip アドレス範囲で指定した送信元電子メールサーバーからのすべての受信メッセージをブロックします。 受信メッセージは拒否され、スパムとしてマークされないため、追加のフィルター処理は行われません。 IP 禁止一覧がブロックされる送信者の全体的な戦略にどのように適合するかの詳細については、「 [Create Block sender lists IN EOP](create-block-sender-lists-in-office-365.md)」を参照してください。
 
 - **セーフリスト**:*セーフリスト*は、お客様の構成を必要としない、Microsoft データセンターの動的な許可一覧です。 Microsoft では、これらの信頼できる電子メールソースを、さまざまなサードパーティリストに対するサブスクリプションから識別しています。 セーフリストの使用を有効または無効にします。送信元の電子メールサーバーをセーフリストで構成することはできません。 セーフリスト上の電子メールサーバーからの受信メッセージに対して、スパムフィルター処理がスキップされます。
 

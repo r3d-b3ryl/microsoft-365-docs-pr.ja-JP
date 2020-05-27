@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる組み込みの分類子がいくつか用意されています。 このトピックでは、これらの分類子の使用を準備する方法について説明します。
-ms.openlocfilehash: 485ef8013c5a6656be9d0e025048154ec8b2f250
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292423"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371409"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>保持ラベルを使用した組み込み分類子のテスト (プレビュー)
 
@@ -38,13 +38,13 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 - **履歴書**: 申請者の個人、教育、専門資格、作業経験、その他個人を識別する情報のテキストアカウントであるアイテムを検出します。
 - **ソースコード**: GitHub で使用されている上位25台のコンピュータプログラミング言語で記述された命令およびステートメントのセットを含むアイテムを検出します。
 
-|言語名|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
-|CoffeeScript|CSS     |Go       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Ruby     |
-|Scala    |Shell    |Swift    |Tex      |Vim Script|
+  |言語名|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C#       |C++     |Clojure  |
+  |CoffeeScript|CSS     |Go       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Ruby     |
+  |Scala    |Shell    |Swift    |Tex      |Vim Script|
 
 > [!NOTE]
 > ソースコードは、テキストの大部分がソースコードであるときに検出するためにトレーニングされています。 プレーンテキストが混在しているソースコードテキストは検出されません。
@@ -60,8 +60,8 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 
 1. 組み込みの分類子のカテゴリに属していると考えられる (正の一致)、または、テストするカテゴリに含まれるべきではないものを含む、破棄可能なテストコンテンツ項目を収集します。
 
-> [!IMPORTANT]
-> サンプルアイテムは、暗号化する必要がなく、英語でなければなりません。
+   > [!IMPORTANT]
+   > サンプルアイテムは、暗号化する必要がなく、英語でなければなりません。
 
 2. 専用の SharePoint Online フォルダーを作成します。フォルダーが検索インデックスに追加されるまで、少なくとも1時間待機します。 フォルダーの URL をメモしておきます。
 
@@ -79,7 +79,7 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 
 9. [] を選択 `Apply label to content that matches a trainable classifier` します。
 
-![分類子を条件として選択する](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+   ![分類子を条件として選択する](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 10. この場合は、リストから分類子を選択します。`Source Code`
 
