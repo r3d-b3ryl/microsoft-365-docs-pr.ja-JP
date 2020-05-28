@@ -21,25 +21,26 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
 description: 組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーを構成する方法について説明します。これにより、確実に安全な方法で接続できます。
-ms.openlocfilehash: 1d25e51b1f61f67ca2ebe6180d6c280c23facaa5
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 811e948b33e8d305c88ff3e502c413356178696a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42560642"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401016"
 ---
-# <a name="configure-windows-10-devices"></a><span data-ttu-id="e2b12-103">Windows 10 デバイスを構成する</span><span class="sxs-lookup"><span data-stu-id="e2b12-103">Configure Windows 10 devices</span></span>
+# <a name="configure-windows-10-devices"></a><span data-ttu-id="589f6-103">Windows 10 デバイスを構成する</span><span class="sxs-lookup"><span data-stu-id="589f6-103">Configure Windows 10 devices</span></span>
 
-<span data-ttu-id="e2b12-104">セットアップ時に、組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="e2b12-104">During setup, you create a device policy for Windows 10 that applies to all users in your organization.</span></span> <span data-ttu-id="e2b12-105">ユーザーが職場または学校のアカウントを使用して Windows 10 デバイス上の Office アプリにサインインすると、構成した設定が自動的に適用され、ユーザーが安全な方法で接続されるようになります。</span><span class="sxs-lookup"><span data-stu-id="e2b12-105">When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings you configure are automatically applied to make sure that the user is connecting in a secure way.</span></span>
+<span data-ttu-id="589f6-104">セットアップ時に、組織内のすべてのユーザーに適用される Windows 10 のデバイスポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="589f6-104">During setup, you create a device policy for Windows 10 that applies to all users in your organization.</span></span> <span data-ttu-id="589f6-105">ユーザーが職場または学校のアカウントを使用して Windows 10 デバイス上の Office アプリにサインインすると、構成した設定が自動的に適用され、ユーザーが安全な方法で接続されるようになります。</span><span class="sxs-lookup"><span data-stu-id="589f6-105">When a user signs in to an Office app on their Windows 10 device with their work or school account, the settings you configure are automatically applied to make sure that the user is connecting in a secure way.</span></span>
   
-<span data-ttu-id="e2b12-106">セットアップ時は既定の構成を受け入れることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="e2b12-106">We recommend that you accept the default configuration during setup.</span></span> <span data-ttu-id="e2b12-107">セットアップ後に、追加のポリシーを作成して、特定のユーザーグループに適用することができます。</span><span class="sxs-lookup"><span data-stu-id="e2b12-107">After setup, you can create more policies and target them to specific groups of users.</span></span>
+<span data-ttu-id="589f6-106">セットアップ時は既定の構成を受け入れることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="589f6-106">We recommend that you accept the default configuration during setup.</span></span> <span data-ttu-id="589f6-107">セットアップ後に、追加のポリシーを作成して、特定のユーザーグループに適用することができます。</span><span class="sxs-lookup"><span data-stu-id="589f6-107">After setup, you can create more policies and target them to specific groups of users.</span></span>
   
-<span data-ttu-id="e2b12-108">Windows 10 デバイスの構成を管理するポリシーを追加するには、「[Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)」 (Windows 10 PC にデバイス構成を設定する) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e2b12-108">To add a policy to manage Windows 10 device configurations, see [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).</span></span>
+<span data-ttu-id="589f6-108">Windows 10 デバイスの構成を管理するポリシーを追加するには、「[Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)」 (Windows 10 PC にデバイス構成を設定する) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="589f6-108">To add a policy to manage Windows 10 device configurations, see [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md).</span></span>
   
 

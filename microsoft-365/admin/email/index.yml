@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: 電子メールと予定表を管理する
+title: メールと予定表を管理する
 summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
 metadata:
-  title: 電子メールと予定表を管理する
+  title: メールと予定表を管理する
   description: メール設定、配布グループ、セキュリティ設定、および共有メールボックスの設定を管理する
   ms.service: O365-administration
   ms.topic: landing-page
@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: dd490fa2dd85189931e9917ba5c3ba60a2742b46
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952766"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44400066"
 landingContent:
 - title: メールの管理
   linkLists:
@@ -23,13 +24,13 @@ landingContent:
     links:
     - text: ユーザーのメール設定を管理する
       url: office-365-user-email-settings.md
-    - text: 電子メールのグループ作業について
+    - text: メールによる共同作業について
       url: email-collaboration.md
   - linkListType: how-to-guide
     links:
     - text: 別のメール エイリアスを追加する
       url: add-another-email-alias-for-a-user.md
-    - text: カスタムドメインを使用する
+    - text: カスタム ドメインを使用する
       url: change-email-address.md
     - text: メールの転送をセットアップする
       url: configure-email-forwarding.md
@@ -49,7 +50,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 共有メールボックスを設定する
+    - text: 共有メールボックスをセットアップする
       url: configure-a-shared-mailbox.md
     - text: ユーザー メールボックスを共有メールボックスに変換する
       url: convert-user-mailbox-to-shared-mailbox.md

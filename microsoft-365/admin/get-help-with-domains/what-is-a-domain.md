@@ -19,41 +19,43 @@ search.appverid:
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
 description: ドメインとは何か、ドメインを購入する方法、またはビジネスの既定のドメインを使用する方法を理解します。
-ms.custom: okr_smb
-ms.openlocfilehash: 1e92247deaabf292fa82024d6654aefda7a73f6e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- okr_smb
+- AdminSurgePortfolio
+ms.openlocfilehash: 9104c77218c483b61c57a38e37e8e2661db1aa15
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628258"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399862"
 ---
-# <a name="what-is-a-domain"></a><span data-ttu-id="f739d-103">ドメインとは</span><span class="sxs-lookup"><span data-stu-id="f739d-103">What is a domain?</span></span>
+# <a name="what-is-a-domain"></a><span data-ttu-id="e92e8-103">ドメインとは</span><span class="sxs-lookup"><span data-stu-id="e92e8-103">What is a domain?</span></span>
 
- <span data-ttu-id="f739d-104">探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f739d-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="e92e8-104">探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e92e8-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="f739d-105">ドメインとは、メール アドレスの \*\*@@ 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。</span><span class="sxs-lookup"><span data-stu-id="f739d-105">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="f739d-106">の後に表示される固有の名前です。</span><span class="sxs-lookup"><span data-stu-id="f739d-106">in web addresses.</span></span> <span data-ttu-id="f739d-107">通常は、「*yourbusiness.<span>com*」や「*stateuniversity.<span>edu*」のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。</span><span class="sxs-lookup"><span data-stu-id="f739d-107">It typically takes the form of your organization's name and a standard Internet suffix, such as *yourbusiness.<span>com* or *stateuniversity.<span>edu*.</span></span> 
+<span data-ttu-id="e92e8-105">ドメインとは、メール アドレスの \*\*@@ 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。</span><span class="sxs-lookup"><span data-stu-id="e92e8-105">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="e92e8-106">の後に表示される固有の名前です。</span><span class="sxs-lookup"><span data-stu-id="e92e8-106">in web addresses.</span></span> <span data-ttu-id="e92e8-107">通常は、「*yourbusiness.<span>com*」や「*stateuniversity.<span>edu*」のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。</span><span class="sxs-lookup"><span data-stu-id="e92e8-107">It typically takes the form of your organization's name and a standard Internet suffix, such as *yourbusiness.<span>com* or *stateuniversity.<span>edu*.</span></span> 
   
-<span data-ttu-id="f739d-108">Rob@contoso のようなカスタムドメインを使用する *。<span>* Microsoft 365 を使用している com は、ブランドの信頼度を築き、認識するために役立ちます。</span><span class="sxs-lookup"><span data-stu-id="f739d-108">Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
+<span data-ttu-id="e92e8-108">Rob@contoso のようなカスタムドメインを使用する *。 <span>* Microsoft 365 を使用している com は、ブランドの信頼度を築き、認識するために役立ちます。</span><span class="sxs-lookup"><span data-stu-id="e92e8-108">Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
   
-## <a name="choose-the-experience-thats-best-for-you"></a><span data-ttu-id="f739d-109">最適なエクスペリエンスの選択</span><span class="sxs-lookup"><span data-stu-id="f739d-109">Choose the experience that's best for you:</span></span>
+## <a name="choose-the-experience-thats-best-for-you"></a><span data-ttu-id="e92e8-109">最適なエクスペリエンスの選択</span><span class="sxs-lookup"><span data-stu-id="e92e8-109">Choose the experience that's best for you:</span></span>
 
- <span data-ttu-id="f739d-110">**新しいドメインを購入する:**</span><span class="sxs-lookup"><span data-stu-id="f739d-110">**Buy a new Domain:**</span></span>
+ <span data-ttu-id="e92e8-110">**新しいドメインを購入する:**</span><span class="sxs-lookup"><span data-stu-id="e92e8-110">**Buy a new Domain:**</span></span>
   
-<span data-ttu-id="f739d-111">Microsoft 365 を使用して新しいドメインを購入する-すべてが設定されます。</span><span class="sxs-lookup"><span data-stu-id="f739d-111">Use Microsoft 365 to buy a new domain - we'll set everything up.</span></span> [<span data-ttu-id="f739d-112">詳細情報</span><span class="sxs-lookup"><span data-stu-id="f739d-112">Learn more.</span></span>](buy-a-domain-name.md)
+<span data-ttu-id="e92e8-111">Microsoft 365 を使用して新しいドメインを購入する-すべてが設定されます。</span><span class="sxs-lookup"><span data-stu-id="e92e8-111">Use Microsoft 365 to buy a new domain - we'll set everything up.</span></span> [<span data-ttu-id="e92e8-112">詳細情報</span><span class="sxs-lookup"><span data-stu-id="e92e8-112">Learn more.</span></span>](buy-a-domain-name.md)
   
- <span data-ttu-id="f739d-113">**既に所有しているドメインを使用する:**</span><span class="sxs-lookup"><span data-stu-id="f739d-113">**Use a domain you already own:**</span></span>
+ <span data-ttu-id="e92e8-113">**既に所有しているドメインを使用する:**</span><span class="sxs-lookup"><span data-stu-id="e92e8-113">**Use a domain you already own:**</span></span>
   
-<span data-ttu-id="f739d-114">You@yourcompany のようなドメインを既に所有している場合 *。<span>com*これを追加して OneDrive や Microsoft アプリをすぐに使用することができます。</span><span class="sxs-lookup"><span data-stu-id="f739d-114">If you already own a domain like  *you@yourcompany.<span>com*  you can add it and start using OneDrive and Microsoft apps right away.</span></span> <span data-ttu-id="f739d-115">メールと Skype for Business はわずか数分でセットアップできます。</span><span class="sxs-lookup"><span data-stu-id="f739d-115">You'll need to take a few minutes to setup mail and Skype for Business.</span></span> 
+<span data-ttu-id="e92e8-114">You@yourcompany のようなドメインを既に所有している場合 *。 <span>com*これを追加して OneDrive や Microsoft アプリをすぐに使用することができます。</span><span class="sxs-lookup"><span data-stu-id="e92e8-114">If you already own a domain like  *you@yourcompany.<span>com*  you can add it and start using OneDrive and Microsoft apps right away.</span></span> <span data-ttu-id="e92e8-115">メールと Skype for Business はわずか数分でセットアップできます。</span><span class="sxs-lookup"><span data-stu-id="e92e8-115">You'll need to take a few minutes to setup mail and Skype for Business.</span></span> 
   
 > [!TIP]
-> <span data-ttu-id="f739d-p104">ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="f739d-p104">Not sure where your domain is registered? - [Get help finding your domain registrar](find-your-domain-registrar.md)</span></span>
+> <span data-ttu-id="e92e8-p104">ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="e92e8-p104">Not sure where your domain is registered? - [Get help finding your domain registrar](find-your-domain-registrar.md)</span></span>
   
- <span data-ttu-id="f739d-118">**とりあえず既定のドメインを使用する:**</span><span class="sxs-lookup"><span data-stu-id="f739d-118">**Use a default domain for now:**</span></span>
+ <span data-ttu-id="e92e8-118">**とりあえず既定のドメインを使用する:**</span><span class="sxs-lookup"><span data-stu-id="e92e8-118">**Use a default domain for now:**</span></span>
   
-<span data-ttu-id="f739d-119">「*yourcompany.onmicrosoft.<span>com*」などの既定のドメインを使用してログインし、カスタム ドメインを後で追加することができます。</span><span class="sxs-lookup"><span data-stu-id="f739d-119">You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log in for now and add a custom domain later.</span></span> <span data-ttu-id="f739d-120">既定のドメインやその名前を変更することはできません。そのため、先に進む前に、実行する内容をよくご確認ください。</span><span class="sxs-lookup"><span data-stu-id="f739d-120">You can't change or rename your default domain - so make sure it's what you want before moving on.</span></span> 
+<span data-ttu-id="e92e8-119">「*yourcompany.onmicrosoft.<span>com*」などの既定のドメインを使用してログインし、カスタム ドメインを後で追加することができます。</span><span class="sxs-lookup"><span data-stu-id="e92e8-119">You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log in for now and add a custom domain later.</span></span> <span data-ttu-id="e92e8-120">既定のドメインやその名前を変更することはできません。そのため、先に進む前に、実行する内容をよくご確認ください。</span><span class="sxs-lookup"><span data-stu-id="e92e8-120">You can't change or rename your default domain - so make sure it's what you want before moving on.</span></span> 
   
-## <a name="feeling-stuck"></a><span data-ttu-id="f739d-121">困ったときは</span><span class="sxs-lookup"><span data-stu-id="f739d-121">Feeling stuck?</span></span>
+## <a name="feeling-stuck"></a><span data-ttu-id="e92e8-121">困ったときは</span><span class="sxs-lookup"><span data-stu-id="e92e8-121">Feeling stuck?</span></span>
 
-<span data-ttu-id="f739d-122">Microsoft サポートに連絡[する-ドメインの設定に関するヘルプを取得する](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="f739d-122">Call Microsoft Support - [Get help setting up a domain](../contact-support-for-business-products.md)</span></span>
+<span data-ttu-id="e92e8-122">Microsoft サポートに連絡[する-ドメインの設定に関するヘルプを取得する](../contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="e92e8-122">Call Microsoft Support - [Get help setting up a domain](../contact-support-for-business-products.md)</span></span>
   
 

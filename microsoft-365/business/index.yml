@@ -4,19 +4,20 @@ summary: Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、�
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium のリソース
-  description: 説明
+  description: description
   ms.service: o365-administration
   ms.topic: hub-page
   ms.collection: collection
+  ms.custom: AdminSurgePortfolio
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 05b835c8c7ceb6a472710a9878f356de63c89e5f
-  ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+  ms.openlocfilehash: f3468cd51119a4e0d7ae07c188d2adc1266c2ac4
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/08/2020
-  ms.locfileid: "44165827"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44400856"
 productDirectory:
   title: Microsoft 365 Business Premium を使用したリモート作業のセキュリティ保護
   items:

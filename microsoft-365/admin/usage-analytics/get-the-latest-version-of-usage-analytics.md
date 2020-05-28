@@ -13,21 +13,22 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 6561a052-02bb-479d-93ca-5a0f16faf2ee
 description: Microsoft 365 usage analytics の最新バージョンを取得します。
-ms.openlocfilehash: f18f9c0531dcc04226ec376dc13cdbc5999199f0
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 5fc02fb6688edb2355deed1733d6228fef9bb0c1
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42248195"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401496"
 ---
-# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a><span data-ttu-id="6013f-103">Microsoft 365 usage analytics の最新バージョンを取得する</span><span class="sxs-lookup"><span data-stu-id="6013f-103">Get the latest version of Microsoft 365 usage analytics</span></span>
+# <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a><span data-ttu-id="b6c55-103">Microsoft 365 usage analytics の最新バージョンを取得する</span><span class="sxs-lookup"><span data-stu-id="b6c55-103">Get the latest version of Microsoft 365 usage analytics</span></span>
 
-<span data-ttu-id="6013f-104">テンプレートアプリは、新しいデータまたは新しい視覚エフェクトで年に何度も更新される場合があります。</span><span class="sxs-lookup"><span data-stu-id="6013f-104">The template app may be refreshed with new data or new visualizations several times per year.</span></span> <span data-ttu-id="6013f-105">既存のインスタンスは引き続き動作しますが、最新バージョンを取得する場合は、新しいインスタンスを作成し、カスタマイズを新しいインスタンスに適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6013f-105">Your existing instance will continue to work, but if you would like to get the latest version, a new instance must be created and any customizations must be applied to the new instance.</span></span> <span data-ttu-id="6013f-106">「 [Microsoft 365 usage Analytics を有効にする」を](enable-usage-analytics.md)参照してください。</span><span class="sxs-lookup"><span data-stu-id="6013f-106">See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md).</span></span> 
+<span data-ttu-id="b6c55-104">テンプレートアプリは、新しいデータまたは新しい視覚エフェクトで年に何度も更新される場合があります。</span><span class="sxs-lookup"><span data-stu-id="b6c55-104">The template app may be refreshed with new data or new visualizations several times per year.</span></span> <span data-ttu-id="b6c55-105">既存のインスタンスは引き続き動作しますが、最新バージョンを取得する場合は、新しいインスタンスを作成し、カスタマイズを新しいインスタンスに適用する必要があります。</span><span class="sxs-lookup"><span data-stu-id="b6c55-105">Your existing instance will continue to work, but if you would like to get the latest version, a new instance must be created and any customizations must be applied to the new instance.</span></span> <span data-ttu-id="b6c55-106">「 [Microsoft 365 usage Analytics を有効にする」を](enable-usage-analytics.md)参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6c55-106">See [Enable Microsoft 365 usage analytics](enable-usage-analytics.md).</span></span> 
   
 

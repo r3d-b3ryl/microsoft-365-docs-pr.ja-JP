@@ -14,18 +14,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: Office 365 で独自のドメインを使用して、電子メール、web サイト、アカウントを使い始めることができます。 ドメイン、ドメインの変更、電子メールと web サイトの統合、ツールとヒントの取得などについて説明します。
-ms.openlocfilehash: f1b159f33d60c9a927f495b5bdce8a8eb24e9a44
-ms.sourcegitcommit: fce0d5cad32ea60a08ff001b228223284710e2ed
+ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897046"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399922"
 ---
 # <a name="get-help-with-office-365-domains"></a>Office 365 ドメインのヘルプの表示
 
@@ -152,7 +153,7 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>概要</h3>
+                        <h3>作業の開始</h3>
                             <p><a href="../setup/add-domain.md">ドメインを確認する (自分のドメインを証明する)</a></p>
                             <p><a href="information-for-dns-records.md">DNS レコードの作成に必要な情報を収集する</a></p>
                             <p><a href="find-your-domain-registrar.md">ドメインのレジストラーを検索する</a></p>

@@ -23,37 +23,38 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: 自動操縦プロファイルは、ユーザーデバイスへの Windows のインストール方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなどの、既定の設定とオプションの設定が含まれています。
-ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165843"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401036"
 ---
-# <a name="about-autopilot-profile-settings"></a><span data-ttu-id="3fa44-104">AutoPilot プロファイルの設定について</span><span class="sxs-lookup"><span data-stu-id="3fa44-104">About AutoPilot Profile settings</span></span>
+# <a name="about-autopilot-profile-settings"></a><span data-ttu-id="b37b7-104">AutoPilot プロファイルの設定について</span><span class="sxs-lookup"><span data-stu-id="b37b7-104">About AutoPilot Profile settings</span></span>
 
-## <a name="autopilot-profile-settings"></a><span data-ttu-id="3fa44-105">自動操縦プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="3fa44-105">AutoPilot profile settings</span></span>
+## <a name="autopilot-profile-settings"></a><span data-ttu-id="b37b7-105">自動操縦プロファイルの設定</span><span class="sxs-lookup"><span data-stu-id="b37b7-105">AutoPilot profile settings</span></span>
 
-<span data-ttu-id="3fa44-106">自動操縦プロファイルを使用して、ユーザーデバイスへの Windows のインストール方法を制御できます。</span><span class="sxs-lookup"><span data-stu-id="3fa44-106">You can use AutoPilot profiles to control how Windows is installed on user devices.</span></span> <span data-ttu-id="3fa44-107">プロファイルには、次の設定が含まれています。</span><span class="sxs-lookup"><span data-stu-id="3fa44-107">The profiles contain the following settings.</span></span>
+<span data-ttu-id="b37b7-106">自動操縦プロファイルを使用して、ユーザーデバイスへの Windows のインストール方法を制御できます。</span><span class="sxs-lookup"><span data-stu-id="b37b7-106">You can use AutoPilot profiles to control how Windows is installed on user devices.</span></span> <span data-ttu-id="b37b7-107">プロファイルには、次の設定が含まれています。</span><span class="sxs-lookup"><span data-stu-id="b37b7-107">The profiles contain the following settings.</span></span>
   
- <span data-ttu-id="3fa44-108">**自動操縦既定の機能 (必須) は、自動的に設定されます。**</span><span class="sxs-lookup"><span data-stu-id="3fa44-108">**AutoPilot default features (required) that are set automatically:**</span></span>
+ <span data-ttu-id="b37b7-108">**自動操縦既定の機能 (必須) は、自動的に設定されます。**</span><span class="sxs-lookup"><span data-stu-id="b37b7-108">**AutoPilot default features (required) that are set automatically:**</span></span>
   
-|<span data-ttu-id="3fa44-109">**設定**</span><span class="sxs-lookup"><span data-stu-id="3fa44-109">**Setting**</span></span>|<span data-ttu-id="3fa44-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="3fa44-110">**Description**</span></span>|
+|<span data-ttu-id="b37b7-109">**設定**</span><span class="sxs-lookup"><span data-stu-id="b37b7-109">**Setting**</span></span>|<span data-ttu-id="b37b7-110">**説明**</span><span class="sxs-lookup"><span data-stu-id="b37b7-110">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="3fa44-111">Cortana、OneDrive、OEM 登録をスキップする</span><span class="sxs-lookup"><span data-stu-id="3fa44-111">Skip Cortana, OneDrive, and OEM registration</span></span>  <br/> |<span data-ttu-id="3fa44-112">Cortana や個人用 OneDrive のようなコンシューマーアプリのインストールをスキップします。</span><span class="sxs-lookup"><span data-stu-id="3fa44-112">Skips the installation of consumer apps like Cortana and personal OneDrive.</span></span> <span data-ttu-id="3fa44-113">デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、これらを後でインストールすることができます。</span><span class="sxs-lookup"><span data-stu-id="3fa44-113">The device user can install these later as long as the user is a local admin on the device.</span></span> <span data-ttu-id="3fa44-114">デバイスは Microsoft 365 Business Premium で管理されるため、元の製造元の登録はスキップされます。</span><span class="sxs-lookup"><span data-stu-id="3fa44-114">The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business Premium.</span></span>  <br/> |
-|<span data-ttu-id="3fa44-115">会社のブランドが表示されたサインイン画面</span><span class="sxs-lookup"><span data-stu-id="3fa44-115">Sign in experience with your company brand</span></span>  <br/> |<span data-ttu-id="3fa44-116">会社で[Microsoft 365 サインインページに会社のブランドを追加](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page)すると、デバイスのユーザーはサインインしたときにそのような操作を受けることができます。</span><span class="sxs-lookup"><span data-stu-id="3fa44-116">If your company has a [Add your company branding to Microsoft 365 Sign In page](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page), the device user will get that experience when signing in.</span></span>  <br/> |
-|<span data-ttu-id="3fa44-117">構成済み AAD アカウントを使用した MDM 自動登録</span><span class="sxs-lookup"><span data-stu-id="3fa44-117">MDM auto-enrollment with configured AAD accounts.</span></span>  <br/> |<span data-ttu-id="3fa44-118">ユーザー id は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business Premium 資格情報を使用して Windows と Microsoft 365 にサインインします。</span><span class="sxs-lookup"><span data-stu-id="3fa44-118">The user identity will be managed by Azure Active Directory, and users will sign in to Windows and Microsoft 365 with their Microsoft 365 Business Premium credentials.</span></span>  <br/> |
+|<span data-ttu-id="b37b7-111">Cortana、OneDrive、OEM 登録をスキップする</span><span class="sxs-lookup"><span data-stu-id="b37b7-111">Skip Cortana, OneDrive, and OEM registration</span></span>  <br/> |<span data-ttu-id="b37b7-112">Cortana や個人用 OneDrive のようなコンシューマーアプリのインストールをスキップします。</span><span class="sxs-lookup"><span data-stu-id="b37b7-112">Skips the installation of consumer apps like Cortana and personal OneDrive.</span></span> <span data-ttu-id="b37b7-113">デバイスユーザーは、ユーザーがデバイスのローカル管理者である限り、これらを後でインストールすることができます。</span><span class="sxs-lookup"><span data-stu-id="b37b7-113">The device user can install these later as long as the user is a local admin on the device.</span></span> <span data-ttu-id="b37b7-114">デバイスは Microsoft 365 Business Premium で管理されるため、元の製造元の登録はスキップされます。</span><span class="sxs-lookup"><span data-stu-id="b37b7-114">The original manufacturer registration is skipped because the device will be managed by Microsoft 365 Business Premium.</span></span>  <br/> |
+|<span data-ttu-id="b37b7-115">会社のブランドが表示されたサインイン画面</span><span class="sxs-lookup"><span data-stu-id="b37b7-115">Sign in experience with your company brand</span></span>  <br/> |<span data-ttu-id="b37b7-116">会社で[Microsoft 365 サインインページに会社のブランドを追加](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page)すると、デバイスのユーザーはサインインしたときにそのような操作を受けることができます。</span><span class="sxs-lookup"><span data-stu-id="b37b7-116">If your company has a [Add your company branding to Microsoft 365 Sign In page](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page), the device user will get that experience when signing in.</span></span>  <br/> |
+|<span data-ttu-id="b37b7-117">構成済み AAD アカウントを使用した MDM 自動登録</span><span class="sxs-lookup"><span data-stu-id="b37b7-117">MDM auto-enrollment with configured AAD accounts.</span></span>  <br/> |<span data-ttu-id="b37b7-118">ユーザー id は Azure Active Directory によって管理され、ユーザーは Microsoft 365 Business Premium 資格情報を使用して Windows と Microsoft 365 にサインインします。</span><span class="sxs-lookup"><span data-stu-id="b37b7-118">The user identity will be managed by Azure Active Directory, and users will sign in to Windows and Microsoft 365 with their Microsoft 365 Business Premium credentials.</span></span>  <br/> |
    
- <span data-ttu-id="3fa44-119">**オプションの設定:**</span><span class="sxs-lookup"><span data-stu-id="3fa44-119">**Optional settings:**</span></span>
+ <span data-ttu-id="b37b7-119">**オプションの設定:**</span><span class="sxs-lookup"><span data-stu-id="b37b7-119">**Optional settings:**</span></span>
   
-|<span data-ttu-id="3fa44-120">**設定**</span><span class="sxs-lookup"><span data-stu-id="3fa44-120">**Setting**</span></span>|<span data-ttu-id="3fa44-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="3fa44-121">**Description**</span></span>|
+|<span data-ttu-id="b37b7-120">**設定**</span><span class="sxs-lookup"><span data-stu-id="b37b7-120">**Setting**</span></span>|<span data-ttu-id="b37b7-121">**説明**</span><span class="sxs-lookup"><span data-stu-id="b37b7-121">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="3fa44-122">プライバシーの設定のスキップ (既定ではオフ)</span><span class="sxs-lookup"><span data-stu-id="3fa44-122">Skip privacy settings (Off by default)</span></span>  <br/> |<span data-ttu-id="3fa44-123">このオプションが [ **オン**] に設定されている場合は、デバイス ユーザーが最初にサインインしたときに、デバイスと Windows の使用許諾契約書が表示されません。</span><span class="sxs-lookup"><span data-stu-id="3fa44-123">If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.</span></span>  <br/> |
-|<span data-ttu-id="3fa44-124">ユーザーがローカル管理者になることを許可しない</span><span class="sxs-lookup"><span data-stu-id="3fa44-124">Don't allow the user to become the local admin</span></span>  <br/> |<span data-ttu-id="3fa44-125">このオプションが [ **オン**] に設定されている場合、デバイス ユーザーは Cortana などの個人用アプリをインストールできません。</span><span class="sxs-lookup"><span data-stu-id="3fa44-125">If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.</span></span><br/> |
+|<span data-ttu-id="b37b7-122">プライバシーの設定のスキップ (既定ではオフ)</span><span class="sxs-lookup"><span data-stu-id="b37b7-122">Skip privacy settings (Off by default)</span></span>  <br/> |<span data-ttu-id="b37b7-123">このオプションが [ **オン**] に設定されている場合は、デバイス ユーザーが最初にサインインしたときに、デバイスと Windows の使用許諾契約書が表示されません。</span><span class="sxs-lookup"><span data-stu-id="b37b7-123">If this option is set to **On**, the device user will not see the license agreement for the device and Windows when he or she first signs in.</span></span>  <br/> |
+|<span data-ttu-id="b37b7-124">ユーザーがローカル管理者になることを許可しない</span><span class="sxs-lookup"><span data-stu-id="b37b7-124">Don't allow the user to become the local admin</span></span>  <br/> |<span data-ttu-id="b37b7-125">このオプションが [ **オン**] に設定されている場合、デバイス ユーザーは Cortana などの個人用アプリをインストールできません。</span><span class="sxs-lookup"><span data-stu-id="b37b7-125">If this option is set to **On**, the device user will not be able to install any personal apps, such as Cortana.</span></span><br/> |
    
