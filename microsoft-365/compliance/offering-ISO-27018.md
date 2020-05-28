@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a5e5879bf176c7be72ead3c80c91934d0a1c5a01
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065762"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254416"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>クラウドで個人データを保護するための ISO/IEC 27018 実施基準
 
@@ -33,32 +33,34 @@ Microsoft と ISO/IEC 27018
 
 Microsoft Azure と Azure Germany は、年に 1 回以上、ISO/IEC 27001 および ISO/IEC 27018 への準拠に関して、第三者の公認認定機関の監査を受けています。この機関は、該当するセキュリティ コントロールが導入されていて、効果的に運用されていることを独自に検証します。 このコンプライアンスの検証プロセスの一環として、監査人は、適用宣言書で、対象となる Microsoft クラウド サービスおよび法人向けテクニカル サポート サービスに、Azure で PII を保護するための ISO/IEC 27018 制御が組み込まれていることを確認します。 コンプライアンスを確保し続けるために、Microsoft クラウド サービスは年 1 回第三者による審査を受ける必要があります。
 
-ISO/IEC 27001 基準と ISO/IEC 27018 の実施基準への準拠が、この実施基準を採用した初めての主要クラウド プロバイダーである、Microsoft のプライバシー ポリシーと手順が堅牢で、高い水準が維持されていることの証明になります。
+ISO/IEC 27001 基準と ISO/IEC 27018 の実施基準への準拠が、(この実施基準を採用した初めての主要クラウド プロバイダーである) Microsoft のプライバシー ポリシーと手順が堅牢で、高い水準が維持されていることを証明しています。
 
 - **Microsoft クラウド サービスの顧客がデータの保存場所を把握している。** ISO/IEC 27018 では、認定 CSP が、データの保存先の国を顧客に知らせる必要があります。したがって、Microsoft クラウド サービスの顧客には、適用される情報セキュリティ ルールに従うために必要な可視性が提供されています。
 - **お客様のデータは、明確な同意がない限りマーケティングや広告に使用されない。** CSP によっては、顧客データを自身の商業目的でターゲットを絞った広告などに使用することがあります。 Microsoft では対象となるエンタープライズ クラウド サービスに ISO/IEC 27018 を採用しているため、明確な同意がない限り、お客様のデータがこのような目的で使用されることありません。その点に関しては、お客様は安心して利用できます。また、このような同意が、クラウド サービスの使用条件になることもありません。
 - **Microsoft の顧客は PII の状況を把握できる。** ISO/IEC 27018 には、適正な期間内に個人情報の返却、移行、および安全な破棄を可能にするポリシーが必要です。 顧客データにアクセスする必要がある他の企業と連携する場合、Microsoft ではこうした二次処理者の身元を積極的に開示します。
-- **顧客データの開示に対する要求には法的拘束力がある場合にのみ応じる。** 犯罪捜査の場合のように、Microsoft がこうした要求に応じる必要がある場合は、法律で禁止されていない限り必ずお客様に通知します。
+- **顧客データの開示に対する要求には法的拘束力がある場合にのみ応じる。** Microsoft がこうした要求に応じる必要がある場合 (犯罪捜査の場合など)、法律で禁止されていない限り、必ずお客様に通知します。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365、Dynamics 365 ドイツ
 - Microsoft Professional Services: Azure、Dynamics 365、Intune と、Microsoft 365 for business の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
-- [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Automate (旧称 Microsoft Flow): スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
 - OMS Service Map
-- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Stream
-- Azure DevOps Services
+- PowerApps クラウド サービス: スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス
+- Power BI クラウド サービス: スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス
+- Power BI Embedded
+- Power Virtual Agents
+- Microsoft 脅威エキスパート
+- Microsoft Stream
 - Windows Defender ATP - エンドポイントでの検出と対応、自動の調査と修復、セキュリティ スコア
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
@@ -69,30 +71,18 @@ Microsoft クラウド サービスおよび法人向けテクニカル サポ�
 
 ### <a name="audits-and-reports"></a>監査とレポート
 
-- [Azure、Intune、Microsoft マネージド デスクトップ、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics、Microsoft Datacenters - ISO 27001 および 27018 証明書](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure、Intune、Microsoft マネージド デスクトップ、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics、Microsoft Datacenters - ISO 27001 および 27018 監査評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure、Intune、Microsoft マネージド デスクトップ、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics、Microsoft Datacenters - ISO 27001 および 27018 の適用宣言書 (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
-- [Azure - Germany ISO 27018 - クラウドで個人データを保護するための実施基準 - 証明書](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
+- [Azure、Dynamics 365、および Online Services: ISO27018 の証明書](https://aka.ms/azureiso27018cert)
+- [Azure、Dynamics 365、Online Services: ISO27018 の評価レポート](https://aka.ms/azureiso27001report)
+- [Azure Germany: ISO27018 クラウドで個人データを保護するための実施基準証明書](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 - ISO 27001、ISO 27018、ISO 27017 監査評価レポート](https://aka.ms/o365isoreport)
+- [Office 365: ISO 27001、27018、27017 監査評価レポート](https://aka.ms/o365isoreport)
 - [Yammer ISO 27018 監査評価レポート](https://aka.ms/YammerISO27018Auditreport)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 の ISO 27018 監査評価レポート](https://aka.ms/dynamics365iso27018auditreport)
-- [Dynamics 365 for Marketing の ISO 27018 監査評価レポート](https://aka.ms/dynamics365Marketingiso27018auditreport)
-- [Dynamics 365 Parature の ISO 27018 監査評価レポート](https://aka.ms/dynamics365Paratureiso27018auditreport)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
-- [Azure DevOps Services ISO 27018 証明書 PII 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
-
-### <a name="windows-defender-atp"></a>Windows Defender ATP
-
-- [Windows Defender ATP - エンドポイントでの検出と対応、自動の調査と修復、セキュリティ スコア - ISO 27018 証明書](https://aka.ms/windowsdefenderatpiso27018certificate)
-- [Windows Defender ATP - エンドポイントでの検出と対応、自動の調査と修復、セキュリティ スコア - ISO 27001 および 27018 監査評価レポート](https://aka.ms/WindowsDefenderATPISO27001AuditReport)
+- [Azure DevOps Services: ISO27018 証明書 PII 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -105,7 +95,7 @@ Microsoft クラウド サービスおよび法人向けテクニカル サポ�
 ISO/IEC 27018 のコンテキストでは、次のような違いがあります。
 
 - 「管理者」は、個人情報の収集、保持、処理、または使用を管理します。他の企業に代わって個人情報を管理する管理担当者も含まれます。
-- 「処理者」は、管理者に代わって情報を処理します。情報の使用方法または処理の目的に関する決定を下すことはありません。 ユーザーのベンダーである Microsoft は、エンタープライズ クラウド サービスを提供する際に、情報処理者の役割を果たします。
+- 「処理者」は、管理者に代わって情報を処理します。情報の使用方法または処理の目的に関する決定を下すことはありません。 (ユーザーのベンダーである) Microsoft は、エンタープライズ クラウド サービスを提供する際に、情報処理者の役割を果たします。
 
 **Microsoft の ISO/IEC 27018 コンプライアンス情報はどこで確認できますか?**
 
