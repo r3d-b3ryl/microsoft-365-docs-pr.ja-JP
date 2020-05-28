@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: ドメインを確認し、電子メール、Skype for Business Online、および Register.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 125baf224cc9f3f21746a2f802b17f2572b65316
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 7b2353b4b6832c9316e302ace4db948e2550a28f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048905"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400330"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Microsoft の Register.com で DNS レコードを作成する
 
@@ -123,7 +124,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |高  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/>  <br/>**注:** Microsoft アカウントから自分の\<*ドメイン キー*\>を取得します。 <br> [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/>  <br/>**注:**\<*domain-key*\>Microsoft アカウントからを取得します。 <br> [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![テーブルから値をコピーして貼り付けます。](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -243,8 +244,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![テーブルから値をコピーして貼り付けます。](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   

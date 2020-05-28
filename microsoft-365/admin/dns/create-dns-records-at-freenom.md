@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Freenom の他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049037"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400475"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Microsoft の Freenom で DNS レコードを作成する
 
@@ -139,7 +140,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**Type**|**TTL**|**Target**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(空白のまま)  <br/> |MX (Mail Exchanger)  <br/> |3600 (秒)  <br/> |\<ドメインキー\>. mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |(空白のまま)  <br/> |MX (Mail Exchanger)  <br/> |3600 (秒)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   

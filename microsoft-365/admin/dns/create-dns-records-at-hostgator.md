@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Hostgator にあるその他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: fb510bcdcdefb141535e9a1099e18b63adffd2ab
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8adfc4b6154dad0da7dd2fe037c73fcfc4f84d58
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049001"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400439"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Microsoft の Hostgator で DNS レコードを作成する
 
@@ -77,7 +78,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次のようになり https://YourSiteAddress:secure-port-number ます。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
@@ -91,7 +92,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     |||||
     |:-----|:-----|:-----|:-----|
     |**Name** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **This value MUST end with a period (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. [ **Add Record** ] を選択します。
     
@@ -120,7 +121,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 1. 開始するには、Hostgator で自分の cPanel ページに移動します。 最初にログインするように求められます。
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次のようになり https://YourSiteAddress:secure-port-number ます。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
@@ -136,7 +137,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Priority**|**Destination**|
     |:-----|:-----|
-    |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:**\< Microsoft アカウントから*ドメインキー* \>を取得します。    [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:**\< *domain-key*  \>Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. [ **Add New Record**] を選択します。
    
@@ -152,7 +153,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 1. 開始するには、Hostgator で自分の cPanel ページに移動します。 最初にログインするように求められます。
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次のようになり https://YourSiteAddress:secure-port-number ます。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
@@ -193,7 +194,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 1. 開始するには、Hostgator で自分の cPanel ページに移動します。 最初にログインするように求められます。
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次のようになり https://YourSiteAddress:secure-port-number ます。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
@@ -218,7 +219,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 1. 開始するには、Hostgator で自分の cPanel ページに移動します。 最初にログインするように求められます。
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次https://YourSiteAddress:secure-port-numberのようになります。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. CPanel アドレスは、次のようになり https://YourSiteAddress:secure-port-number ます。 Hostgator から受信したサインアップ電子メールでは、そのアドレスが指定され、**ホスト**ページでも cpanel リンクが利用可能になります。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Microsoft を使用して作業を開始するには、ホストアカウントを Hostgator から購入するか、ネームサーバーを再[委任して microsoft をポイントする](change-nameservers-at-hostgator.md)ことができます。 
@@ -234,8 +235,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls。 *domain_name*します。 (たとえば、_sip. _tls] など)。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp。 *domain_name*します。 (たとえば、_sipfederationtls. _tcp] など)。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _tls。 *domain_name*します。 (たとえば、_sip. _tls] など)。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _tcp。 *domain_name*します。 (たとえば、_sipfederationtls. _tcp] など)。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. [ **Add Record** ] を選択します。

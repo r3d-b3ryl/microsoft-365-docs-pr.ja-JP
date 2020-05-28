@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
-ms.openlocfilehash: ef0209d6ccb7534745172585fe599f627e386cb4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140407"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399898"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
   
@@ -52,7 +53,7 @@ ms.locfileid: "44140407"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>に移動します。
 
-2. [**ユーザー** >の**アクティブなユーザー**] を選択します。
+2. [**ユーザー** > の**アクティブなユーザー**] を選択します。
 
 3. 移動するすべてのユーザーの名前の横にあるチェックボックスをオンにします。
 
@@ -68,11 +69,11 @@ ms.locfileid: "44140407"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>に移動します。  
 
-2. [**ユーザー** >の**アクティブなユーザー**] を選択します。
+2. [**ユーザー** > の**アクティブなユーザー**] を選択します。
 
 3. 移動するすべてのユーザーの名前の横にあるチェックボックスをオンにします。
 
-4. ページの上部で、[**その他** >の**ドメインの編集**] を選択します。
+4. ページの上部で、[**その他**のドメインの編集] を選択し > **Edit domains**ます。
 
 5. [**ドメインの編集**] ウィンドウで、別のドメインを選択します。
   
@@ -84,11 +85,11 @@ ms.locfileid: "44140407"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>に移動します。  
 
-2. [**ユーザー** >の**アクティブなユーザー**] を選択します。
+2. [**ユーザー** > の**アクティブなユーザー**] を選択します。
 
 3. 移動するすべてのユーザーの名前の横にあるチェックボックスをオンにします。
 
-4. ページの上部で、[**その他** >の**ドメインの編集**] を選択します。
+4. ページの上部で、[**その他**のドメインの編集] を選択し > **Edit domains**ます。
 
 5. [**ドメインの編集**] ウィンドウで、別のドメインを選択します。
   
@@ -105,7 +106,7 @@ ms.locfileid: "44140407"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>に移動します。
 
-2. [**ユーザー** \>の**アクティブなユーザー**] に移動し、一覧から自分のアカウントを選択します。
+2. [**ユーザー** \> の**アクティブなユーザー**] に移動し、一覧から自分のアカウントを選択します。
 
 3. [**アカウント**] タブで、[**ユーザー名の管理**] を選択し、別のドメインを選択します。
   
@@ -119,11 +120,11 @@ ms.locfileid: "44140407"
 
 ::: moniker range="o365-germany"
 
-1. [**ユーザー** \>の**アクティブなユーザー**] に移動し、リストで自分の名前を選択します。
+1. [**ユーザー** \> の**アクティブなユーザー**] に移動し、リストで自分の名前を選択します。
 
 2. [**ユーザー名/電子メール**] セクションで、[**編集**] を選択し、別のドメインを選択します。
 
-3. [プライマリ>**保存** > **として設定**] を**選択します**。
+3. [**プライマリの保存として設定**] を選択し > **Save** > **Close**ます。
   
 4. 上部で、自分のアカウント名を選択し、[**サインアウト**] を選択します。
 
@@ -135,11 +136,11 @@ ms.locfileid: "44140407"
 
 ::: moniker range="o365-21vianet"
 
-1. [**ユーザー** \>の**アクティブなユーザー**] に移動し、リストで自分の名前を選択します。
+1. [**ユーザー** \> の**アクティブなユーザー**] に移動し、リストで自分の名前を選択します。
 
 2. [**ユーザー名/電子メール**] セクションで、[**編集**] を選択し、別のドメインを選択します。
 
-3. [プライマリ>**保存** > **として設定**] を**選択します**。
+3. [**プライマリの保存として設定**] を選択し > **Save** > **Close**ます。
   
 4. 上部で、自分のアカウント名を選択し、[**サインアウト**] を選択します。
 
@@ -197,13 +198,13 @@ ms.locfileid: "44140407"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
+1. 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
+1. 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
   
@@ -236,6 +237,6 @@ Microsoft 365 では、セキュリティグループ、配布リスト、ユー
 
 [Office 365 のドメインに関するヘルプ](get-help-with-domains.md)
 
-[別の一般法人向け Microsoft 365 プランに切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[別の Microsoft 365 for business プランに切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [サブスクリプションをキャンセルする](../../commerce/subscriptions/cancel-your-subscription.md)

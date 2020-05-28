@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: ドメインを確認し、電子メール、Skype for Business Online、および Dreamhost のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 756889457e802bdd9ee18b239b6986fb69f6b924
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 4b321138892cb4a7b5f67c37ed66f3baf0f6c45a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939297"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400511"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Microsoft の Dreamhost で DNS レコードを作成する
 
@@ -65,7 +66,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名前**|**Type**|**Value**|**コメント**|
+    |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |(このフィールドは省略可能です。)  <br/> |
    
@@ -126,7 +127,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**MX レコード (必須)**|
     |:-----|
-    |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |*\<domain-key\>* mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Dreamhost-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
@@ -166,7 +167,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名前**|**Type**|**Value**|**コメント**|
+    |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
@@ -209,7 +210,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名前**|**Type**|**Value**|**コメント**|
+    |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |(このフィールドは省略可能です。)  <br/> |
    
@@ -245,7 +246,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**名前**|**Type**|**Value**|**コメント**|
+    |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
     |_sip _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
     |_sipfederationtls _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |

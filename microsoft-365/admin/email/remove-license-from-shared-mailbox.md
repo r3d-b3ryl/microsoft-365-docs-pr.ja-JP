@@ -15,25 +15,26 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てます。 '
-ms.openlocfilehash: 9ba411c614fee93e37ac45e58fd40bf246a9c2ab
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 1f69cd6f0e572da18abf7253832604ad3ac0ab8f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327244"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400030"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -81,7 +82,7 @@ ms.locfileid: "44327244"
 
 3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
 
@@ -100,7 +101,7 @@ ms.locfileid: "44327244"
 
 3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
 
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
 
 5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
 

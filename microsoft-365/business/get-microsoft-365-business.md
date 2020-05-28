@@ -19,19 +19,20 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft パートナーセンターから購入するための Microsoft 365 Business Premium およびステップバイステップの手順を購入するためのオプションについて説明します。
-ms.openlocfilehash: 4247160c87a6a910358d9b740b28dc14747b72a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 550ab62b46ffc09f8c4822a2e1741ee51b4579ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627232"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400940"
 ---
-# <a name="get-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の取得
+# <a name="get-microsoft-365-business-premium"></a>Microsoft 365 Business Premium を取得する
 
 ## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Microsoft 365 Business Premium を Microsoft から入手する
 

@@ -20,12 +20,13 @@ search.appverid:
 description: Microsoft 365 管理センター-今月追加された機能について説明します。
 ms.custom:
 - MACDashWhatsNew
-ms.openlocfilehash: 6514456a16a6ee2079a1b93e053c21863809db24
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+- AdminSurgePortfolio
+ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322137"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401144"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -306,7 +307,7 @@ Microsoft 365 管理センターの [新機能] の Ignite Edition へようこ�
 
 - **お気に入り**-お気に入りまたはよく使用する役割に星を追加して、列を並べ替えたりフィルターを作成したりして簡単に見つけられるようにすることができます。
 - **アクティブユーザー**  > **役割を管理**する-これは、役割の変更に合わせて更新されました。 役割リストと同様に、役割の既定の一覧を最も有用なものにスコープを設定しましたが、すべての役割を表示するには、[**カテゴリ別にすべて表示**] を展開します。
-- **グローバル閲覧**者の役割-要求されたのは! そうです！ [グローバルな閲覧](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center)者の役割
+- **グローバル閲覧**者の役割-要求されたのは! そうです！ [グローバルな閲覧](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center)者の役割
 
 ### <a name="report-an-issue"></a>問題の報告
 

@@ -23,18 +23,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: 自動操縦プロファイルは、ユーザーデバイスへの Windows のインストール方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなどの、既定の設定とオプションの設定が含まれています。
-ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165843"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401036"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 

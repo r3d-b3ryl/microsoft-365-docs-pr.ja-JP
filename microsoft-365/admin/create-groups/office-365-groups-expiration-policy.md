@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064823"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400727"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -57,7 +58,7 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
-前述したように、有効期限は既定でオフになっています。 管理者は有効期限ポリシーを有効にして、そのプロパティを有効にする必要があります。 これを有効にするには、 **Azure Active Directory (AAD)** > **グループ** > の**有効期限が切れる**ようにします。 ここでは、既定のグループの有効期間を設定して、最初と2番目の有効期限の通知がグループの所有者に移動するまでの時間を指定できます。
+前述したように、有効期限は既定でオフになっています。 管理者は有効期限ポリシーを有効にして、そのプロパティを有効にする必要があります。 これを有効にするには、 **Azure Active Directory (AAD)**  >  **グループ**の  >  **有効期限が切れる**ようにします。 ここでは、既定のグループの有効期間を設定して、最初と2番目の有効期限の通知がグループの所有者に移動するまでの時間を指定できます。
 
 グループの有効期間は日単位で指定し、180、365、または指定したカスタム値に設定できます。 カスタム値は、少なくとも30日である必要があります。
 

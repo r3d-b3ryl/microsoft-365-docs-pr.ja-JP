@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Microsoft 365 で管理されていないテナントを電子メールとドメインの所有権を引き継ぐために確認する方法について説明します。
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627946"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399448"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>内部管理者の引き継ぎを実行する
 
@@ -40,9 +41,9 @@ ms.locfileid: "43627946"
 > [!NOTE]
 > テナントでセルフサービスが有効になっている場合、ユーザーは Power BI などの無料のサービスを独自にサブスクライブできます。 次の手順では、セルフサービスのユーザーサブスクリプションが管理者として引き継がれる非管理対象テナントを作成したと仮定します。最初の手順では、管理されていないテナントでユーザーコンテキストを作成し、Power BI を使用して管理者の引き継ぎパスを示します。
 
-1. Power bi にサインアップするには、 [power bi サイト](https://powerbi.com)に移動して、[**無料** > **試用版**の開始] ([power bi Pro と共有] ボックス) を選択します。 
+1. Power bi にサインアップするには、 [power bi サイト](https://powerbi.com)に移動して、[**無料**  >  **試用版**の開始] ([power bi Pro と共有] ボックス) を選択します。 
 
-2. 組織のドメイン名 (など`powerbiadmin@contoso.com`) を使用するユーザーアカウントでサインアップします。 アカウントが既に使用されている場合は、現在のパスワードを使用してサインインします。
+2. 組織のドメイン名 (など) を使用するユーザーアカウントでサインアップ `powerbiadmin@contoso.com` します。 アカウントが既に使用されている場合は、現在のパスワードを使用してサインインします。
 
 3. **確認コード**の電子メールを確認し、電子メールアドレスを検証するコードを入力します。
     

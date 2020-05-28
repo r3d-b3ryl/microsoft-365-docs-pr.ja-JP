@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Windows ベースの DNS で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048845"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400246"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Windows ベースの DNS を使用して Microsoft の DNS レコードを作成する
 
@@ -38,21 +39,21 @@ Windows ベースの DNS を使用して独自の DNS レコードをホスト�
 DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメイン名または dns レコードの変更後の問題に関するトラブルシューティング](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Windows ベース DNS 内の DNS レコードを検索する
-<a name="BKMK_find_your_dns_1"> </a>ドメインの DNS レコードがあるページに移動します。 Windows Server 2008 で作業している**場合は、** > [**実行**] を開きます。 Windows Server 2012 で作業している場合は、Windows キーと**r**キーを押します。 「 **Dnsmgmnt**」と入力し、[ **OK]** を選択します。 Dns マネージャーで、[ ** \<dns サーバー名\> \>前方参照ゾーン  **] を展開します。 ドメインを選択します。 これで、DNS レコードを作成する準備ができました。
+<a name="BKMK_find_your_dns_1"> </a>ドメインの DNS レコードがあるページに移動します。 Windows Server 2008 で作業している場合は、[実行]**を開き**  >  **Run**ます。 Windows Server 2012 で作業している場合は、Windows キーと**r**キーを押します。 「 **Dnsmgmnt**」と入力し、[ **OK]** を選択します。 DNS マネージャーで、[ ** \<DNS server name\> \> 前方参照ゾーン  **] を展開します。 ドメインを選択します。 これで、DNS レコードを作成する準備ができました。
    
 ## <a name="add-mx-record"></a>MX レコードの追加
 <a name="BKMK_add_MX"> </a>
 
 MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにします。
-- 追加する MX レコードには、 **ポイント先のアドレス**を示す値が含まれており、\<MX token\>.mail.protection.outlook.com (\<MX token\> の値は MSxxxxxxx など) のような内容です。   
+- 追加する MX レコードには、次のように表示される値 (**アドレス値へのポイント**) が含まれています。ここで、は、mail.protection.outlook.com のように見えます。ここで、 \<MX token\> \<MX token\> は MSxxxxxxx のような値です。 
 - Microsoft の [DNS レコードの追加] ページの [Exchange Online] セクションの [MX] 行で、[point to アドレス] の下に表示されている値をコピーします。 この値は、このタスクで作成しているレコードで使用します。 
-- ドメインの [DNS マネージャー] ページで、[**アクション** > **メールエクスチェンジャー (MX)**] に移動します。 ドメインのこのページを見つけるには、「 [Windows ベースの dns で dns レコードを検索](#find-your-dns-records-in-windows-based-dns)する」を参照してください。  
+- ドメインの [DNS マネージャー] ページで、[**アクション**  >  **メールエクスチェンジャー (MX)**] に移動します。 ドメインのこのページを見つけるには、「 [Windows ベースの dns で dns レコードを検索](#find-your-dns-records-in-windows-based-dns)する」を参照してください。  
 - [**新しいリソースレコード**] ダイアログボックスで、フィールドに次の値が正確に設定されていることを確認します。 
-    - ホスト名: 
+    - Host Name:  
     - @Address: Microsoft からコピーしたのと同じ値にポイントを貼り付けます。  
     - Pref: 
 - [ **Save Changes**] を選びます。
-- 古い MX レコードをすべて削除します。 他の場所に電子メールをルーティングする、このドメインの古い MX レコードがある場合は、古いレコードの横にあるチェックボックスをオンにして、[**削除** > **OK]** を選択します。 
+- 古い MX レコードをすべて削除します。 他の場所に電子メールをルーティングする、このドメインの古い MX レコードがある場合は、古いレコードの横にあるチェックボックスをオンにして、[**削除**  >  **OK]** を選択します。 
    
 ## <a name="add-cname-records"></a>CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ Microsoft に必要な CNAME レコードを追加します。 追加の CNAME �
 > [!IMPORTANT]
 > Microsoft 用のモバイルデバイス管理 (MDM) を使用している場合は、2つの CNAME レコードを追加作成する必要があります。 Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. (MDM を持っていない場合は、この手順を省略できます)。 
 
-- ドメインの [DNS マネージャー] ページで、[ **Action** > **CNAME (cname)**] に移動します。
+- ドメインの [DNS マネージャー] ページで、[ **Action**  >  **CNAME (cname)**] に移動します。
 - [**新しいリソースレコード**] ダイアログボックスで、フィールドに次の値が正確に設定されていることを確認します。  
     - ホスト名: 自動検出
     - 種類: 
@@ -183,14 +184,14 @@ TXT レコードを追加します。
 - ホスト名:@
 - 型: TXT
 - [住所]: コピー先またはポイントを、Microsoft からコピーしたばかりのアドレス値に貼り付けます。  
-- [ **OK** > **完了**] を選択します。
+- [ **OK 完了]** を選択し  >  **Done**ます。
 
 Microsoft のドメインを確認します。  
 > [!IMPORTANT]
 > この操作を行う前に15分ほど待ってから、作成したレコードがインターネットを介して更新できるようにします。       
 
 - Microsoft に戻って、次の手順に従って確認を要求します。 このチェックボックスでは、前の手順で追加した TXT レコードを探します。 正しい TXT レコードが見つかった場合、ドメインは確認されます。  
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
+1. 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。
 2. [**ドメイン**] ページで、確認するドメインの [**処理**] 列で、[**セットアップの開始**] を選択します。 
 3. [**自分のドメインを所有**していることを確認してください] ページで、[**完了]、[今すぐ確認**] の順に選択し、確認のダイアログボックスで [**完了**] を選択します。 
    

@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,13 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールや Skype for Business Online などのサービスが独自のドメイン名を使用するように、Microsoft 365 にドメインを追加してセットアップする方法について説明します。
-ms.custom: okr_smb
-ms.openlocfilehash: e987d1194d3ee86548a6628310ebdfd14cdbb9ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628508"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399994"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>任意のドメインレジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する
 
@@ -48,7 +50,7 @@ ms.locfileid: "43628508"
 > [!NOTE]
 > これらのレコードのいずれか一方を作成します。推奨されるレコードの種類は TXT ですが、一部の DNS ホスティング プロバイダーではサポートしていないため、代わりに MX レコードを作成してもかまいません。 
   
-Microsoft 365 でドメインを使用する前に、そのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft 365 に証明されます。
+Microsoft 365 のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft 365 に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -71,20 +73,20 @@ TXT レコードと MX レコードのどちらを作成しているかに応じ
 |:-----|:-----|:-----|:-----|
 |**Record Type** <br/> |**Alias** または **Host Name** <br/> |**Value** <br/> |**TTL** <br/> |
 |TXT  <br/> |次のいずれかを実行します。「 **@** 」と入力するか、フィールドを空白のままにするか、ドメイン名を入力します。    <br/> > [!NOTE]> このフィールドの要件は、DNS ホストによって異なります。           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> これは例です。 Microsoft 365 の表に記載されている、特定の**宛先またはポイントを**使用して、ここでのアドレスを指定します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。  <br/> |
+|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。  <br/> |
    
 **MX レコードを作成する場合は、以下の値を使います。**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type**|**Alias** または **Host Name**|**Value**|**Priority**|**TTL**|
-|MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* > [!NOTE]> これは例です。 Microsoft 365 の表に記載されている、特定の**宛先またはポイントを**使用して、ここでのアドレスを指定します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.md#what-is-mx-priority)」を参照してください。 |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
+|MX|**@** か自分のドメインの名前のいずれかを入力します。 |MS=ms *XXXXXXXX* > [!NOTE]> これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |**Priority** には、メール フローに使われる MX レコードとの競合を避けるために、既存の MX レコードよりも低い優先度を指定します。 優先度の詳細については、「[MX 優先度とは何ですか?](../setup/domains-faq.md#what-is-mx-priority)」を参照してください。 |この値は、 **1 hour** 、または 1 時間に相当する分数 ( **60** ) や秒数 ( **3600** ) などに設定します。 |
    
 ### <a name="save-the-record"></a>レコードを保存する
 
-これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft 365 に戻り、Microsoft 365 にレコードを検索するよう要求します。
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft 365 に戻り、Microsoft 365 にレコードの検索をリクエストします。
   
-Microsoft 365 が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft 365 で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。

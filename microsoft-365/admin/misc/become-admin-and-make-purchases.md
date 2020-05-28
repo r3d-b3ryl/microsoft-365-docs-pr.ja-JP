@@ -14,17 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '組織のために管理者になる方法と、Microsoft 365 サブスクリプションを取得する方法について説明します。 '
-ms.openlocfilehash: ac18b40a1160d58e343df8196881769b7200d5a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627958"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399460"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>管理者になり、組織に Microsoft 365 を購入する
 
@@ -62,7 +63,7 @@ Microsoft では、IT 部門による正式な展開を待つことなく、簡�
 |||
 |:-----|:-----|
 |![ピンクの丸の番号 1](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**サインアップする** 管理者になるには、職場のメールアドレスを使用して、事前に Skype 会議 にサインアップしておく必要があります。  <br/> |
-|![ピンクの丸の番号 2](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**ウィザードを実行する** サインアップしたら、次のいずれかの方法で、ウィザードを実行します。  <br/>  アプリ起動ツールで [**管理者**] を選択した後に表示される [**管理者になる**] ウィザードを実行します。  <br/>  OR  <br/>  Skype 会議で**microsoft 365 へのアップグレード**を選択し、アップグレードする microsoft 365 サブスクリプションを選択します。  <br/> |
+|![ピンクの丸の番号 2](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**ウィザードを実行する** サインアップしたら、次のいずれかの方法で、ウィザードを実行します。  <br/>  アプリ起動ツールで [**管理者**] を選択した後に表示される [**管理者になる**] ウィザードを実行します。  <br/>  または  <br/>  Skype 会議で**microsoft 365 へのアップグレード**を選択し、アップグレードする microsoft 365 サブスクリプションを選択します。  <br/> |
 |![ピンクの丸の番号 3](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**ドメインの所有権を確認**する次に、組織の電子メールアドレスに関連付けられているドメイン名 (contoso.com など) を所有または管理することを Microsoft 365 に確認します。 これを行う権限を持っているのは、ドメイン名の所有者だけです。  <br/> |
 |![ピンクの丸の番号 4](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**ライセンスを購入**するウィザードの最後の手順では、職場のメールで Skype 会議にサインアップした組織内の各ユーザーに対して Microsoft 365 ライセンスを購入します。  <br/> たとえば、2 人のユーザーが仕事用のメールを使用して Skype 会議 にサインアップしている場合は、各ユーザーに 1 つずつ、2 つのライセンスを購入する必要があります。  <br/> > [!NOTE]> ライセンスを購入するまで、Microsoft 365 を管理することはできません。           |
 
@@ -78,7 +79,7 @@ Microsoft では、IT 部門による正式な展開を待つことなく、簡�
 |アプリ起動ツールの [管理者] タイルを使用した場合  <br/> |Microsoft 365 Business Basic  <br/> |
 |Skype 会議で**Microsoft 365 for business へのアップグレードを選択する**  <br/> |Microsoft 365 Business Basic または Microsoft 365 Business Standard  <br/> |
    
-## <a name="whats-next"></a>次の作業
+## <a name="whats-next"></a>次の手順
 
 管理者になったので、次の操作を実行することができます。
   

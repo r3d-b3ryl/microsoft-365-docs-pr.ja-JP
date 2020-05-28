@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: 'DNS レコードを管理する場合は、Namecheap を使用して Microsoft カスタムドメインをセットアップする方法について説明します。 '
-ms.openlocfilehash: 6fdec37e837c74666ada82af81d43faaa0a6d589
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55fde3b0db960d78ad77c9f9189c5367de16c73f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629781"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400619"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>Namecheap を使用して Microsoft をセットアップするためにネームサーバーを変更する
 
@@ -69,7 +70,7 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
     
 |**Type**|**Host**|**Value**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注**: これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |30 分  <br/> |
+|TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/> **注**: これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |30 分  <br/> |
    
    ![Namecheap-BP-検証-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
@@ -81,7 +82,7 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
     
 これで、ドメインレジストラーのサイトでレコードが追加されました。 Microsoft に戻って、レコードの検索を要求します。
   
-Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 

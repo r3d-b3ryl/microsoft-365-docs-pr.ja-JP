@@ -10,15 +10,16 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: ''
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリポータルから、組織内のユーザーおよびグループに対して Microsoft および Microsoft パートナーアプリを検索、テスト、および展開します。
-ms.openlocfilehash: bc9ad91a664072f4291f0c95c029fb2ca06530f5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 787c1670cff865e1f207a1554f3fa6a0b1a28f1d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942158"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399520"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Microsoft 365 アプリを Microsoft 365 管理センターでテストおよび展開する
 

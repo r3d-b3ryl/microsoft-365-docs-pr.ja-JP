@@ -17,16 +17,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、フィッシング、マルウェア、およびその他の脅威から機密データを保護します。
-ms.openlocfilehash: 748868b07ac8759a66bac3c6b4165509270426a6
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224473"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400872"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -77,7 +78,7 @@ Office 365 または Microsoft 365 環境には、マルウェアからの保護
     
 5. ルールの次の表の設定を適用します。 その他の設定を変更しない場合は、既定値をそのまま使用します。
     
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
 |**設定**|**Office ファイルの添付ファイルを開く前にユーザーに警告を発する**||
 |:-----|:-----|:-----|
@@ -109,7 +110,7 @@ Office 365 または Microsoft 365 環境には、マルウェアからの保護
     
 5. 次の表の設定を適用します。 その他の設定を変更しない場合は、既定値をそのまま使用します。
     
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
     
 |**設定**|**Office ファイルの添付ファイルを開く前にユーザーに警告を発する**|
 |:-----|:-----|
@@ -207,7 +208,7 @@ ATP の安全なリンクを設定するには、[この短いトレーニング
     
 2. [**電子メール以外のコンテンツに適用する設定**] で、[ **Microsoft 365 Apps for enterprise]、[Office for IOS、および Android**] を選択します。
     
-3. [**保存**] を選択します。 
+3. **[保存]** を選択します。 
     
 ドメイン内のすべての受信者を対象とした新しいポリシーを作成するには、次のようにします。
   
@@ -215,7 +216,7 @@ ATP の安全なリンクを設定するには、[この短いトレーニング
     
 2. 次の表に示す設定を適用します。
     
-3. [**保存**] を選択します。 
+3. **[保存]** を選択します。 
 
 |**設定またはオプション**|**推奨される設定値** <br/>|
 |:-----|:-----|

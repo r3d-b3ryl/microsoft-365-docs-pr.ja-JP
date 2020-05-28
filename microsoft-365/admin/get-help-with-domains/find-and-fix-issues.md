@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタムドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053725"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399946"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
@@ -35,7 +36,7 @@ ms.locfileid: "44053725"
 Microsoft 365 と連携するようにドメインを設定することは、困難な場合があります。 DNS システムは、操作するには細かい設定があり、ドメインに対する DNS のセットアップ内容は、メールなどの重要な業務活動にも影響を与えます。
 
 > [!NOTE]
-> ドメインに問題があるかどうかは、その状態を確認することで確認できます。 [**セットアップ** > **ドメイン**] に移動して、[**状態**] 列に通知を表示します。 問題が発生した場合は、[その他のアクション (3 つのドット)] を選択して、[**状態の確認**] を選択します。 開いているウィンドウには、ドメインで発生している問題が表示されます。
+> ドメインに問題があるかどうかは、その状態を確認することで確認できます。 [**セットアップ**ドメイン] に移動して、[  >  **Domains** **状態**] 列に通知を表示します。 問題が発生した場合は、[その他のアクション (3 つのドット)] を選択して、[**状態の確認**] を選択します。 開いているウィンドウには、ドメインで発生している問題が表示されます。
   
 ## <a name="whats-going-on"></a>何が起こっているのでしょうか?
 

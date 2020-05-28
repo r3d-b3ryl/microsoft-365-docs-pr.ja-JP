@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: ドメインを確認し、電子メール、Skype for Business Online、および web.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: a7567688ad9935b30c0749cb7aeffdbe128506ef
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2a9162c1ca6fc6a00e564e8f004768fac49bd3e3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048881"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400306"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Microsoft の web.com で DNS レコードを作成する
 
@@ -130,7 +131,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Priority**|**TTL**|**メール サーバー**|
     |:-----|:-----|:-----|
-    |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> |*\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |
+    |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> |*\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. **[保存]** を選択します。
@@ -214,8 +215,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
         
     |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1-d |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1-d |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. 表の2行目の値を選択して、他の SRV レコードを追加します。 

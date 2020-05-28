@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '最初の電子メールアドレスを、tom@fourthcoffee.com のようなわかりやすい電子メールアドレスに変更します。 これを行うには、ドメイン名を購入して、Microsoft 365 に追加する必要があります。 '
-ms.openlocfilehash: 50739c01fda9528140870798324dd69a1c68abce
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e1ac40fb38a207cc0f19f48ac4ab7c6f34ffbb35
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140502"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400162"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -80,11 +81,11 @@ Office 365 ドイツの最初の電子メールアドレスには、tom@fourthco
 
 ::: moniker range="o365-21vianet"
 
-1. の管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn</a>に移動します。 
+1. の管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn </a>に移動します。 
 
 ::: moniker-end 
 
-2. [**セットアップ** > **ドメイン**] ページに移動します。 
+2. [**セットアップ**  >  **ドメイン**] ページに移動します。 
 
 3. [**ドメイン**] ページで、[**ドメインの追加**] を選択します。
     

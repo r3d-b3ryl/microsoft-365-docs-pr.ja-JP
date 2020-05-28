@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Microsoft 365 Business Premium で、新しいユーザーの追加、デバイスのセキュリティ保護、および役割の割り当てを簡単に行う手順について説明します。
-ms.openlocfilehash: d57f7470d53a6c80e04872726c634f67f091fb0d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9d2efe62ed1c48df5c10a765b8d3499934e6aebd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627476"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401076"
 ---
 # <a name="add-more-users"></a>ユーザーを追加する
 
@@ -46,7 +47,7 @@ ms.locfileid: "43627476"
 ユーザーを追加するには、次のようにします。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 
-2. 左側のナビゲーションウィンドウで、[**ユーザー** \>の**アクティブなユーザー**] を選択します。
+2. 左側のナビゲーションウィンドウで、[**ユーザー**の \> **アクティブなユーザー**] を選択します。
 3. [**アクティブなユーザー** ] ページで、[**ユーザーの追加**] を選択します。
 4. [**新しいユーザー** ] パネルで、必要な情報を入力します。 
   

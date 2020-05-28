@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用して Office アドインを展開できるようにします。
-ms.openlocfilehash: bd1c9ca0a034494f6556f0badca66284c3d9e1de
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: db5a9669464a9c4cb150dee119d8c0bcc2dc9833
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214254"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399814"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -32,7 +33,7 @@ ms.locfileid: "44214254"
 一元展開は、Windows、Mac、iOS、Android、およびオンラインの Office アプリをサポートします。
 すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大12時間かかる場合があります。
   
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise (組織の ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
 以下の Office および Exchange の特定の要件を確認することも、[集中展開の互換性チェック](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)を使用することもできます。

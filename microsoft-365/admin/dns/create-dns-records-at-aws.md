@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: ドメインを確認し、電子メール、Skype for Business Online、および Amazon Web Services (AWS) for Microsoft のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: d75822feef5848575b8ec7fe09f834f67cdc6c55
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: fcc4da3a5841e9df2f6edabd540363fe70bb73ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049109"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400571"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Microsoft の Amazon Web サービス (AWS) で DNS レコードを作成する
 
@@ -105,7 +106,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |MX - Mail Exchange  <br/> |No  <br/> |300  <br/> |0  *\<ドメイン キー\>*  .mail.protection.outlook.com.  <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:**\<Microsoft 365 アカウントから*ドメインキー* \>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |単純  <br/> |
+    |(このフィールドは空のままにします。)  <br/> |MX - Mail Exchange  <br/> |No  <br/> |300  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:**\<*domain-key*\>Microsoft 365 アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |単純  <br/> |
        
     ![AWS-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   

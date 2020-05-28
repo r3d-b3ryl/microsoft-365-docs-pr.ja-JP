@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: ドメインを確認して、Microsoft の Google ドメインで電子メール、Lync、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 6bfe32ba8f77adec97f4ab5ee40e92126be91f10
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: e6b1dd1eb90957a4e7fe22bd4b66ac87b2a51d09
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049013"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400451"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>Microsoft の Google ドメインで DNS レコードを作成する
 
@@ -119,11 +120,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**Type**|**TTL**|**Data**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **0** は MX 優先度の値です。 MX 値の先頭に追加して、値の残りの部分からスペースで区切ってください。  <br/> **注:** Microsoft アカウントから自分の\<*ドメイン キー*\>を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **0** は MX 優先度の値です。 MX 値の先頭に追加して、値の残りの部分からスペースで区切ってください。  <br/> **注:**\<*domain-key*\>Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
    
     ![[Custom resource records] セクションに値を入力するか貼り付けます。](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
-5. **[追加]** を選択します。
+5. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
@@ -145,7 +146,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な5つの CNAME レコードを追加する
 
-1. 開始するには、[Google Domains]https://domains.google.com/registrar)ページにアクセスして、サインインします。
+1. 開始するには、[Google Domains] ページにアクセスして、 https://domains.google.com/registrar) サインインします。
     
 2. [ドメイン **] ページの**[**ドメイン**] セクションで、編集するドメインの [ **DNS の構成**] を選択します。 
     
@@ -167,7 +168,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[Custom resource records] セクションに値を入力するか貼り付けます。](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
-4. **[追加]** を選択します。
+4. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
@@ -246,7 +247,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[Custom resource records] セクションに値を入力するか貼り付けます。](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   

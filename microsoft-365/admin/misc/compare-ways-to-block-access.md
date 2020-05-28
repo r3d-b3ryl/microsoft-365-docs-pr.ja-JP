@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -19,12 +20,12 @@ search.appverid:
 ms.assetid: 5785d21d-1abd-4571-a04a-8cc5a65ca9b5
 ROBOTS: NOINDEX
 description: 従業員が組織を離れたときに Microsoft 365 へのアクセスをブロックする方法について説明します。
-ms.openlocfilehash: 9383c970ea1c17d9116299d5788c8faf0ed0659f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b913655065d4c57322aee6dc04e53f7a35cf5760
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627934"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399436"
 ---
 # <a name="compare-ways-to-block-access"></a>アクセスをブロックする方法を比較する
 
@@ -43,7 +44,7 @@ ms.locfileid: "43627934"
     
 [Microsoft 365 でユーザーのパスワードをリセットする](../add-users/reset-passwords.md)
     
-[Microsoft 365 for business のユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md)
+[一般法人向け Microsoft 365 ライセンスをユーザーに割り当てる](../manage/assign-licenses-to-users.md)
     
 [Microsoft 365 for business のユーザーからライセンスを削除する](../manage/remove-licenses-from-users.md)
     

@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,20 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365 でドメイン名を購入する方法について説明します。
-ms.custom: okr_smb
-ms.openlocfilehash: e60947b2f0f2591d09add00bd5aeb2ad3a5aa161
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9358df6728e1e29228241887be65fb68a4720281
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140419"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400006"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -42,7 +44,7 @@ ms.locfileid: "44140419"
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして [設定\> ] の\>ドメインでドメインを購入する
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして [設定] のドメイン \> \> でドメインを購入する
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -80,7 +82,7 @@ ms.locfileid: "44140419"
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>別のドメイン レジストラーからドメインを購入する
 [GoDaddy](https://www.godaddy.com)以外のドメインレジストラーからドメインを購入する場合は、自動セットアップ (ドメイン接続) をサポートする以下のいずれかを使用することをお勧めします。 
   
-- [1&amp;IONOS](https://www.1and1.com/)
+- [1 &amp; IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    

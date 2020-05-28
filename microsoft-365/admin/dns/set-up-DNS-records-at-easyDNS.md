@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: ドメインを確認し、電子メール、Skype for Business Online、および easyDNS のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: b7b29900108ab94f0fd99dcf3404cfa137ce92ff
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631359"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400234"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Microsoft の easyDNS で DNS レコードを作成する
 
@@ -36,7 +37,7 @@ ms.locfileid: "43631359"
   
 ## <a name="verify-that-you-own-the-domain-with-a-txt-record"></a>TXT レコードを使用してドメインを所有していることを確認する
 
-1. に[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)移動して、資格情報でログインします。 
+1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
 2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
     
@@ -44,7 +45,7 @@ ms.locfileid: "43631359"
     
 4. 次のレコードをテキストフィールドに入力します。
     
-    |**Host**|**テキスト**|
+    |**Host**|**Text**|
     |:-----|:-----|
     |@  <br/> |MS: msXXXXXXXX (管理センターの [ドメイン] ページでユーザーに提供された値を使用します)  <br/> |
    
@@ -54,7 +55,7 @@ ms.locfileid: "43631359"
     
 7. 数分待ってから続行すると、作成したレコードがインターネット経由で伝達され、Microsoft によって検出されるようになります。
     
-8. これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft に戻ってレコードを要求します。
+8. これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft に戻り、レコードをリクエストします。
     
 9. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -66,7 +67,7 @@ ms.locfileid: "43631359"
     
 ## <a name="add-an-mx-record-to-route-email-to-microsoft"></a>Microsoft に電子メールをルーティングするための MX レコードを追加する
 
-1. に[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)移動して、資格情報でログインします。 
+1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
 2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
     
@@ -76,7 +77,7 @@ ms.locfileid: "43631359"
     
     |**ゾーン用のメール**|**メールサーバー**|**PREF**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<\>mail.protection.outlook.com ([管理センタードメイン] ページ\<からドメインキー\>の値を取得する)  <br/> |.0  <br/> |
+    |@  <br/> |\<domain-key\>. mail.protection.outlook.com ( \<domain-key\> [管理センタードメイン] ページから値を取得する)  <br/> |.0  <br/> |
    
 2. バックアップのために他の MX レコードを保存する場合は、その MX レコードを任意の場所にコピーします。 に進む前に、ここで他のすべての MX レコードを削除します。
     
@@ -86,7 +87,7 @@ ms.locfileid: "43631359"
     
 ## <a name="add-the-required-cname-records"></a>必要な CNAME レコードを追加する
 
-1. に[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)移動して、資格情報でログインします。 
+1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
 2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
     
@@ -109,7 +110,7 @@ ms.locfileid: "43631359"
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 
-1. に[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)移動して、資格情報でログインします。 
+1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
 2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
     
@@ -117,7 +118,7 @@ ms.locfileid: "43631359"
     
 4. 次のレコードをテキストフィールドに入力します。
     
-    |**Host**|**テキスト**|
+    |**Host**|**Text**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
@@ -125,11 +126,11 @@ ms.locfileid: "43631359"
     
 6. レコードが正しいことを確認してから、[**確認**] を選択してください。 
     
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft に必要な2つの SRV レコードを追加する
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 
 注: SRV レコードは現在、easyDNS ' ドメインおよびサービスレベルでは使用できません。 SRV レコードを追加するには、easyDNS を使用して、より高いサービスレベルにアップグレードする必要がある場合があります。 
   
-1. に[https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/)移動して、資格情報でログインします。 
+1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
 2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
     
@@ -139,8 +140,8 @@ ms.locfileid: "43631359"
     
     |**サービス**|**MASK**|**ホスト**|**度**|**WGT**|**ポート**|**TARGET (末尾に "." を指定する必要があります)**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com。  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |
    
 5. [**次へ**] を選択します。 
     

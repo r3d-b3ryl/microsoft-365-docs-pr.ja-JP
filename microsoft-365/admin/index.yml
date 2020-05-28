@@ -12,22 +12,23 @@ metadata:
   ms.author: sirkkuw
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: fd945d744870dd0c72cc91b727b47b3d2e1210f2
-  ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: 56353a336c3f8383b93ab63898e4879276b0108d
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/14/2020
-  ms.locfileid: "44232133"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44399850"
 highlightedContent:
   items:
   - title: Office 365 は現在、Microsoft 365!
     itemType: whats-new
     url: new-subscription-names.md
 productDirectory:
-  title: はじめに
+  title: 作業の開始
   summary: サブスクリプションとメールの設定、ユーザーの追加、アプリのインストールを行います。
   items:
-  - title: はじめに
+  - title: 作業の開始
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: Microsoft 365 にサインアップしてセットアップします。
     url: setup/index.yml

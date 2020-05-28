@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 新しい記事を継続的に作成し、既存の記事を更新し、フィードバックに基づいて変更を加えています。 今月の新機能と更新された機能について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231900"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401201"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -101,13 +101,6 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 
 [PST ファイルのインポートに関する FAQ](faqimporting-pst-files-to-office-365.md) (更新)<br>PST インポートプロセスが重複した電子メールアイテムを処理する方法に関する FAQ を追加しました。
 
-### <a name="retention"></a>保持
-
-[アイテム保持ポリシーの概要](retention-policies.md)(更新)<br>変更内容には、次のものが含まれます。
-
-- 保持ポリシーと削除のみのアイテム保持ポリシーのコンテンツパスを追加しました (以前は保持した後に削除されたコンテンツパスのみを保持し、削除します)。
-- SharePoint の場所については、サイトを選択するのではなく、URL を指定するようになったことを説明する[セクションを更新](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)しました。 つまり、アイテム保持ポリシーに含めるために、サイトにアクセスするためのアクセス許可は必要ありません。
-
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
 [機密ラベルについて](sensitivity-labels.md)(更新)<br>Azure portal でのラベル管理に関する廃止の詳細を追加しました。[公式通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)へのリンクも含まれています。
@@ -140,7 +133,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 - グループポリシー設定を使用して、Windows コンピューターで引き続き使用している他のラベル付けソリューションを現在使用している場合に、組み込みのラベル付けを無効にする方法を説明する[新しいセクション](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)。 
 - IRM オプションではなく、暗号化を適用するラベルを使用することを推奨する[Information Rights Management (irm) のオプションと機密ラベル](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)のセクションを更新し、2つの保護ソリューションが混在している場合に発生する可能性のある結果を説明します。
 
-### <a name="trainable-classifiers"></a>Trainable 分類子
+### <a name="trainable-classifiers"></a>トレーニング可能な分類子
 
 [Trainable 分類子 (プレビュー) の](classifier-getting-started-with.md)概要 (更新)<br>不快な言語テンプレートが廃止される方法についての情報を追加しました。 また、ソースコードの組み込み分類子で使用されている上位25個のコード言語の一覧を示す表も追加しました。
 

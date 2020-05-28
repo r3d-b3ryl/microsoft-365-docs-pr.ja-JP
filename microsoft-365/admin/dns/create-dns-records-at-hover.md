@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: ドメインを確認し、メール、Skype for Business Online、および Microsoft のホバー時に他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 4779b8f6fadcd4b134d3954d2c6c133da40c19e6
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 74662f37c3f72f02767f2434d9b251e3bd37ff1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048989"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400427"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>Microsoft のホバー時に DNS レコードを作成する
 
@@ -127,7 +128,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Hostname**|**レコードの種類**|**優先度**|**ホスト名**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![DNS の値を入力するか、コピーして貼り付けます。](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
@@ -251,8 +252,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**ホスト名**|**レコードの種類**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _tls  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _tcp  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![DNS の値を入力するか、コピーして貼り付けます。](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   

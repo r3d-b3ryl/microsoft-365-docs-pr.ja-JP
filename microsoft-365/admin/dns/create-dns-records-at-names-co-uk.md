@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: ドメインを確認し、電子メール、Skype for Business Online、および Names.co.uk のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048941"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400378"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Microsoft の Names.co.uk で DNS レコードを作成する
 
@@ -120,7 +121,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**ホスト名**|**Priority**|**結果**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>、Microsoft アカウントから* \<ドメイン\>キー*を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |(このフィールドは空のままにします。)  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> > [!NOTE]*\<domain-key\>* Microsoft アカウントから> 取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -234,8 +235,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**Priority**|**Weight**|**Port**|**結果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   

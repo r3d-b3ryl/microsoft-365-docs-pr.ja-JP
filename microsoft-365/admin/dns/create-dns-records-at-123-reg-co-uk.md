@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: ドメインを確認し、電子メール、Skype for Business Online、および123-reg.co.uk のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 0c9a6a144a38398e7664f7f2bb317a96b627b640
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 3c188c7e9f2f9390aa45196d798e04441d33bcb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049133"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400583"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Microsoft の123-reg.co.uk で DNS レコードを作成する
 
@@ -101,11 +102,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **注:** Microsoft アカウントから自分の\<ドメイン キー\>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:**\<domain-key\>Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![テーブルの値をコピーして貼り付ける](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
@@ -140,7 +141,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![テーブルから値をコピーして貼り付けます。](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
@@ -174,7 +175,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![123Reg-BP-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
@@ -203,7 +204,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![テーブルから値をコピーして貼り付けます。](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
-6. **[追加]** を選択します。
+6. [**追加**] を選択します。
     
     ![[追加] を選択します。](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   

@@ -21,17 +21,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: ユーザーが Windows 10 デバイスに Office アプリをインストールして、Microsoft 365 管理センターから Windows 10 Pc に Office を簡単にインストールできるようにします。
-ms.openlocfilehash: a7078ad6d7423900aefba47605cb2b2852856108
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627200"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400908"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
 
@@ -49,7 +50,7 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
 
 ## <a name="manage-office-deployments"></a>Office 展開を管理する
 
-1. の管理センター <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>に移動し、グローバル管理者の資格情報でサインインします。 
+1. の管理センターに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> し、グローバル管理者の資格情報でサインインします。 
 
 2. 左側のナビゲーションウィンドウの [**セットアップ**] に移動し、[**セットアップ**] ページで [**アプリと更新**] までスクロールします。
     > [!NOTE]
@@ -64,4 +65,4 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の設定と使用の詳細については、「」を参照してください。
 
-[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

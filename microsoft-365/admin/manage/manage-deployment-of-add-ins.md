@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139711"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399730"
 ---
-# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでのアドインの展開を管理する
+# <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでアドインのデプロイを管理する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -67,7 +68,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 作業を開始する前に、「[組織でアドインの一元展開が機能するかどうかを判断](centralized-deployment-of-add-ins.md)する」を参照してください。
 
   
-1. 管理センターで、[**設定** \> ] **[アドイン] ページに**移動します。
+1. 管理センターで、[**設定**] [アドイン] ページに移動し \> **Add-ins**ます。
     
 2. ページの上部にある [**アドインの展開**] を選択します。 [概要] ページで、[**次へ**] を選択します。
     
@@ -112,7 +113,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
   
 |**状態**|**状態が発生する原因**|**影響**|
 |:-----|:-----|:-----|
-|**アクティブ**  <br/> |管理者がアドインをアップロードし、ユーザーまたはグループに割り当てました。  <br/> |アドインを割り当てられたユーザーやグループは、関連するクライアントでアドインを表示します。  <br/> |
+|**Active**  <br/> |管理者がアドインをアップロードし、ユーザーまたはグループに割り当てました。  <br/> |アドインを割り当てられたユーザーやグループは、関連するクライアントでアドインを表示します。  <br/> |
 |**オフ**  <br/> |管理者がアドインをオフにした。  <br/> |アドインを割り当てられたユーザーやグループは、そのアドインにアクセスできません。  <br/> アドインの状態が [アクティブ] に変更されると、ユーザーやグループはもう一度アクセスできるようになります。  <br/> |
 |**Deleted**  <br/> |管理者がアドインを削除した。  <br/> |アドインを割り当てられたユーザーやグループは、そのアドインにアクセスできません。  <br/> |
    
@@ -147,7 +148,7 @@ Office アドインの種類と機能の詳細については、「[Office ア�
 
 展開後、管理者はアドインへのユーザーアクセスを変更することもできます。
 
-1. 管理センターで、[**設定** > **サービス & アドイン**] ページに移動します。
+1. 管理センターで、[**設定**  >  **サービス & アドイン**] ページに移動します。
 
 2. 展開されたアドインを選択します。
 
@@ -261,7 +262,7 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>Word 2016、Excel 2016、または PowerPoint 2016
 
-1. [**マイ\>アドインの挿入**] を選択します。 
+1. [ ** \> マイアドインの挿入**] を選択します。 
     
 2. Office アドイン ウィンドウの [ **管理による管理者** ] タブを選択します。 
     
@@ -277,7 +278,7 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
 
 展開されたアドインを削除することもできます。
 
-1. 管理センターで、[**設定** > **サービス & アドイン**] ページに移動します。
+1. 管理センターで、[**設定**  >  **サービス & アドイン**] ページに移動します。
 
 2. 展開されたアドインを選択します。
 

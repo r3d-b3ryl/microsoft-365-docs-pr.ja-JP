@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: ドメインを確認し、電子メール、Skype for Business Online、および name.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: e9133b3701c2b454cad11b9579dc7463f1a74460
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048965"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400402"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Microsoft の name.com で DNS レコードを作成する
 
@@ -65,7 +66,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**型** <br/> |**Host** <br/> |**応答** <br/> |**TTL** <br/> |
+    |**種類** <br/> |**Host** <br/> |**応答** <br/> |**TTL** <br/> |
     |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
    
     ![名前-BP-検証-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
@@ -116,9 +117,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**型**|**Host**|**応答**|**TTL**|**優先度**|
+    |**種類**|**Host**|**応答**|**TTL**|**優先度**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -159,7 +160,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [ **Type**] の値を選びます。) 
     
-    |**型**|**Host**|**応答**|**TTL**|
+    |**種類**|**Host**|**応答**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |既定値 (300) を使用します。  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |既定値 (300) を使用します。  <br/> |
@@ -201,7 +202,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**型**|**Host**|**応答**|**TTL**|
+    |**種類**|**Host**|**応答**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |Use the default value (300).  <br/> |
    
@@ -234,8 +235,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Type**|**サービス**|**加重**|**TTL**|**優先度**|**プロトコル**|**ポート**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1-d|既定値 (300) を使用します。|100|tls|443|sipdir.online.lync.com <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
-    |SRV|sipfederationtls|1-d|既定値 (300) を使用します。|100|tcp|5061|sipfed.online.lync.com <br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |SRV|sip|1 |既定値 (300) を使用します。|100|tls|443|sipdir.online.lync.com <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |SRV|sipfederationtls|1 |既定値 (300) を使用します。|100|tcp|5061|sipfed.online.lync.com <br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

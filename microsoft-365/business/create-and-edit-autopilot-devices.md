@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: Microsoft 365 Business Premium で自動操縦を使用してデバイスをアップロードする方法について説明します。 プロファイルは、デバイスまたはデバイスのグループに割り当てることができます。
-ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 8c3d029d682ae30444bdc7d30a4790a8f982e0e0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165863"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400996"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>AutoPilot デバイスを作成し編集する
 
@@ -46,11 +47,11 @@ ms.locfileid: "44165863"
 
 1. Microsoft 365 管理センターで、[**デバイス** \> **自動操縦**] を選択します。
   
-2. [**自動操縦**] ページで、[**デバイス**] タブの [ \> **デバイスの追加**] を選択します。
+2. [**自動操縦**] ページで、[**デバイス**] タブの [デバイスの追加] を選択し \> **Add devices**ます。
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. [**デバイスの追加**] パネルで、準備\>した[デバイスリストの CSV ファイル](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)を参照して、 **Close**を**保存** \>します。
+3. [**デバイスの追加**] パネルで、準備した[デバイスリストの CSV ファイル](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)を参照して、Close を \> **保存**し \> **Close**ます。
     
     この情報は、ハードウェアベンダーから入手することも、 [G-et-windowsautopilotinfo PowerShell スクリプト](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)を使用して CSV ファイルを生成することもできます。 
     

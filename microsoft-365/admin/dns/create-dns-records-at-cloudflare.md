@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: ドメインを確認し、電子メール、Skype for Business Online、および Cloudflare for Microsoft の他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 9b717ddedaf6435f6599f4f75cc0fa7c4e618d59
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049073"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400547"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Cloudflare で Microsoft 用の DNS レコードを作成する
 
@@ -131,7 +132,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**型**|**名前**|**メール サーバー**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft 365 アカウントから* \<ドメイン\>キー*を取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/>|30 分  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft 365 アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/>|30 分  <br/> |
    
 
   
@@ -218,8 +219,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
         
     |**Type**|**Service**|**Protocol**|**Name**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |*Domain_name*を使用します。たとえば、contoso.com  |30 分 | 100|1-d |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|*Domain_name*を使用します。たとえば、contoso.com   |30 分 |100 |1-d |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |*Domain_name*を使用します。たとえば、contoso.com  |30 分 | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|*Domain_name*を使用します。たとえば、contoso.com   |30 分 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. **[保存]** を選択します。

@@ -18,18 +18,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Windows 自動操縦を使用して、従業員が使用できるように、自社の新しい Windows 10 デバイスをセットアップする方法について説明します。
-ms.openlocfilehash: de14012ebf9e7cdd22e41505f316ab665773c670
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: efcb5442b34d2d42275cedc30e71ac98c7ea1266
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165883"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401096"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
@@ -59,7 +60,7 @@ Windows 自動操縦を使用して、自分の組織のために**新しい**wi
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. [**デバイスの一覧を含む .csv ファイルのアップロード**] ページで、準備した場所を参照します。CSV ファイルを開き、[**次へ**] を**開き** \>ます。 ファイルには3つのヘッダーが必要です。
+3. [**デバイスの一覧を含む .csv ファイルのアップロード**] ページで、準備した場所を参照します。CSV ファイルを**開き**、[ \> **次へ**] を開きます。 ファイルには3つのヘッダーが必要です。
     
     - 列 A:デバイスのシリアル番号
     

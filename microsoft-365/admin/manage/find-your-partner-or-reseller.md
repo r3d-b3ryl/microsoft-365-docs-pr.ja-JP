@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '新しい Microsoft 365 パートナーを検索する方法と、過去に協力してきたパートナーの連絡先情報を取得する方法について説明します。 '
-ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628186"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399766"
 ---
 # <a name="find-your-partner-or-reseller"></a>パートナーまたは販売店を検索する
 
@@ -50,7 +51,7 @@ Open Volume Licensing を使用して Microsoft 365 を購入または更新す�
   
 ## <a name="get-partner-info-in-the-admin-center"></a>管理センターでパートナー情報を取得する
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">パートナー関係</a>の**設定** > ] ページに移動します。
+1. 管理センターで、[ **Settings**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">パートナー関係</a>の設定] ページに移動します。
   
 2. パートナーがいる場合は、パートナーの名前と、組織との関係がここに表示されます。 パートナーの連絡先情報 (電話番号とメールアドレス) を表示するには、パートナー名を選択します。
     

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Namecheap の他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 57ba92f3ad31a54abae6a6a212a84d3b7a665da1
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2aae667428aba5ea22ab210c47aa9c994a9acf14
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048953"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400390"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Microsoft の Namecheap で DNS レコードを作成する
 
@@ -150,7 +151,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Type**|**Host**|**Value**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX レコード  <br/> |@  <br/> |\<*ドメインキー*\>mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |30 分  <br/> |
+    |MX レコード  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |30 分  <br/> |
        
     ![Namecheap-BP-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
@@ -303,8 +304,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Service**|**Protocol**|**Priority**|**Weight**|**Port**|**対象**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
        
     ![Namecheap-BP-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   

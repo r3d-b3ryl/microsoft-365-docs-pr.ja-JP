@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 管理センターからの一元展開についてよく寄せられる質問に対する回答を確認してください。
-ms.openlocfilehash: c389ab07136b8a6e625db9ecfeff514a6899cd7d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011737"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399826"
 ---
 # <a name="centralized-deployment-faq"></a>一元展開に関する FAQ
 
@@ -35,7 +36,7 @@ ms.locfileid: "44011737"
  
 一元展開は、オンラインメールボックスでのみサポートされます。 オンプレミスの Exchange メールボックスへの展開はサポートされていません。
  
-[Office 365 集中展開互換チェック](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) を使用して、サブスクリプションが対象になるかどうかを判断できます。 
+[Office 365 集中展開互換チェック](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   を使用して、サブスクリプションが対象になるかどうかを判断できます。 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>一元展開を使用してアドインユーザーの割り当てをどのように対象にしていますか。  
 
@@ -59,7 +60,7 @@ ms.locfileid: "44011737"
 
 はい。 一元展開を使用すると、管理者はアドインの展開時に Outlook アドインの3つの展開方法のうちの1つを柔軟に選択できます。
 
-**Fixed (既定)**  アドインは、割り当てられたユーザーに自動的に展開され、削除することはできません。  
+**Fixed (既定値)**  アドインは、割り当てられたユーザーに自動的に展開され、削除することはできません。  
  
 **利用可能**ユーザーは、[ホーム] を選択してアドインを Outlook にインストールし、管理者によって管理されたアドイン > > します。   
  

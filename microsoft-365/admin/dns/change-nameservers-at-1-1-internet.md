@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: Dns レコードを管理するために21Vianet が運用している Office 365 をセットアップする方法について説明します。 1&1 インターネットが DNS ホスティングプロバイダーである場合です。
-ms.openlocfilehash: 99ac40472d0afa0cb734b0e86a0f10d7904133e1
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: b63dc0664791eb4941513f701824b813d77e67bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939420"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400703"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>IONOS 1 を&使用するように Microsoft 365 をセットアップするためにネームサーバーを変更
 
@@ -140,7 +141,7 @@ Microsoft 365 がドメインをセットアップできるように、NS レコ
    
 ![名前サーバーの値を入力する](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. [**保存**] を選択します。
+4. **[保存]** を選択します。
     
     ![[名前サーバーの設定] ページの [保存] を選択する](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -171,7 +172,7 @@ Microsoft 365 がドメインをセットアップできるように、NS レコ
    
    ![名前サーバーの値を入力する](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
     
     ![[名前サーバーの設定] ページの [保存] を選択する](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

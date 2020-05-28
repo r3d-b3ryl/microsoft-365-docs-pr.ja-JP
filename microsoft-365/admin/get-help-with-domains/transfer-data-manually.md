@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: プランまたは会社名を変更したとき、または複数のサブスクリプションを1つに結合したときに、2つの Microsoft 365 アカウント間でデータを手動で転送する方法について説明します。
-ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053742"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399874"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>2つのアカウント間でデータを手動で転送する
 
@@ -61,10 +62,10 @@ Microsoft 365 Enterprise および Microsoft 365 中規模企業の場合:
   
 |**場所**|**目的**|
 |:-----|:-----|
-|**Admin** \> **Microsoft 365** \> **サービスの設定** <br/> |メール、サイト、Lync、ユーザーソフトウェア、パスワード、コミュニティ、rights management、およびモバイルの設定については、各タブを選択します。  <br/> |
+|**管理者** \>**Microsoft 365** \>**サービス設定** <br/> |メール、サイト、Lync、ユーザーソフトウェア、パスワード、コミュニティ、rights management、およびモバイルの設定については、各タブを選択します。  <br/> |
 |[ **管理者**] \> [ **Exchange**] <br/> | Exchange Online の設定  <br/> |
 |[ **管理者**] \> [ **SharePoint**] <br/> | SharePoint Online の設定  <br/> |
-|**Admin** \> **Skype for business の**管理 <br/> |その他の Skype for Business の設定  <br/> |
+|**管理者** \>**Skype For business** <br/> |その他の Skype for Business の設定  <br/> |
 
 Microsoft 365 Small Business の場合
   

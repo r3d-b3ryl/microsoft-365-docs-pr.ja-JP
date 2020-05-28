@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 変更管理に役立つメッセージセンターのメッセージを管理する方法について説明します。
-ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628150"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399718"
 ---
 # <a name="manage-messages-in-message-center"></a>メッセージ センターでメッセージを管理する
 
@@ -32,7 +33,7 @@ ms.locfileid: "43628150"
   
 ## <a name="read-a-message"></a>メッセージの閲覧
 
-メッセージセンターに移動するには、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に移動して、[ **Health** > **メッセージセンター**] を選択します。 
+メッセージセンターに移動するには、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に移動して、[ **Health**  >  **メッセージセンター**] を選択します。 
 
 メッセージタイトルを選択し、閲覧ウィンドウで開きます。 すべてのメッセージには、変更の概要、変更がどのように影響するかについての説明、組織の変更についての準備方法に関する情報、さらに詳しく説明できる追加情報リンクが含まれています。 この追加情報は、メッセージの有効期限が切れた後も、引き続き確認することができます。
 
@@ -111,7 +112,7 @@ ms.locfileid: "43628150"
 
 1. メッセージを選択して開きます。
 
-2. [**詳細** \> ] を選択して、アクションバーから**リンクを取得**します。
+2. [**詳細**] を選択し \> て、アクションバーから**リンクを取得**します。
 
 3. Web ページがクリップボードにアクセスできるようにします。 直接リンクがクリップボードにコピーされます。
 
@@ -123,7 +124,7 @@ ms.locfileid: "43628150"
 
 1. メッセージを選択して開きます。
 
-2. [**詳細** \> ] を選択して、アクションバーから**リンクを取得**します。
+2. [**詳細**] を選択し \> て、アクションバーから**リンクを取得**します。
 
 3. Web ページがクリップボードにアクセスできるようにします。 直接リンクがクリップボードにコピーされます。
 

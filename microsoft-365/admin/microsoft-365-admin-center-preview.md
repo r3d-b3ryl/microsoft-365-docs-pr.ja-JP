@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: 新しい Microsoft 365 管理センターについて説明します。
-ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952641"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399484"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>新しい Microsoft 365 管理センターについて
 
@@ -38,7 +39,7 @@ Microsoft 365 管理センターは、すべての Microsoft 365 管理者にお
 
 新しい Microsoft 365 管理センター (現在プレビュー段階) は、IT チームが Microsoft 365 サービスを管理するための簡単な方法として構築されています。 管理センターは、役割や組織の固有のニーズに合わせてカスタマイズされた機能を備えています。日常業務における効率が向上し、ユーザーにとってよりよい操作性を実現するためにデータに基づく判断を行えるよう、実践につなげられる分析情報が提供されます。
 
-Microsoft 365 管理センターは、すべての Microsoft 365 管理者に共通のエントリポイントであり、でログインする[https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)ことによってアクセスできます。 さらに、Azure Active Directory や Exchange などの専門家のワークスペースでは、より詳細な制御が可能です。 Microsoft 365 管理センターのナビゲーションウィンドウから、専門家のワークスペースにアクセスできます。
+Microsoft 365 管理センターは、すべての Microsoft 365 管理者に共通のエントリポイントであり、でログインすることによってアクセスでき [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) ます。 さらに、Azure Active Directory や Exchange などの専門家のワークスペースでは、より詳細な制御が可能です。 Microsoft 365 管理センターのナビゲーションウィンドウから、専門家のワークスペースにアクセスできます。
 
 ::: moniker-end
 
@@ -57,7 +58,7 @@ Microsoft 365 管理センターに新機能が追加された際は、管理者
 
 1. [admin.microsoft.com](https://admin.microsoft.com) にサインインしてナビゲーション ウィンドウに移動し、[**設定**] \> [**組織プロファイルの設定**] の順に選択します。
 
-1. [Portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)でサインインし、ナビゲーションウィンドウに移動して、[**組織プロファイル**の**設定** \> ] を選択します。
+1. [Portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)でサインインし、ナビゲーションウィンドウに移動して、 **Settings** [ \> **組織プロファイル**の設定] を選択します。
 
 2. [**リリースの設定**] カードに移動し、[**編集**] を選択します。 
     

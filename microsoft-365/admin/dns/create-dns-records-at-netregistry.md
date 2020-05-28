@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Netregistry にあるその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: ed3e3bae232dcbb3c8e4eea3d1a3bc4dd0a88799
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939157"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400366"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>Microsoft の Netregistry で DNS レコードを作成する
 
@@ -137,7 +138,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**TTL (秒)**|**Exchange (ポイント先アドレスまたは値)**|**ホストは完全に修飾されていますか?**|**優先順位 (優先度)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(空白のまま)  <br/> |3600 (秒)  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)      |(チェックボックスをオンにします)  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(空白のまま)  <br/> |3600 (秒)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)      |(チェックボックスをオンにします)  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -247,8 +248,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
     |**Type**|**名前**|**TTL (秒)**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (サービス)  <br/> |_sip _tls  <br/> |3600 (秒)  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV (サービス)  <br/> |_sipfederationtls _tcp  <br/> |3600 (秒)  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (サービス)  <br/> |_sip _tls  <br/> |3600 (秒)  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (サービス)  <br/> |_sipfederationtls _tcp  <br/> |3600 (秒)  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

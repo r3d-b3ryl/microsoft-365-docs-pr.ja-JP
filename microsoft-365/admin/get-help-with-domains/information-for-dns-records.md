@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Microsoft 365 の DNS レコードを作成するために必要な値と情報を検索する方法について説明します。 '
-ms.custom: okr_smb
-ms.openlocfilehash: 9cfefa2620b6a46b7488a29c22a58d70f53c6ad2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fddd1180f2dd80ffeec2aeec49ed821055dd5f15
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628448"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399910"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードの作成に必要な情報を収集する
 
@@ -37,19 +39,19 @@ ms.locfileid: "43628448"
 
 ::: moniker range="o365-worldwide"
 
-1. Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
+1. Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">ドメイン</a>の**セットアップ** > ] ページに移動します。
+1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">ドメイン</a>の**セットアップ** > ] ページに移動します。
+1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
     
@@ -69,19 +71,19 @@ ms.locfileid: "43628448"
 
 ::: moniker range="o365-worldwide"
 
-1. Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**セットアップ** \> ] ページに移動します。
+1. Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">ドメイン</a>の**セットアップ** > ] ページに移動します。
+1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">ドメイン</a>の**セットアップ** > ] ページに移動します。
+1. 管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。
 
 ::: moniker-end
     

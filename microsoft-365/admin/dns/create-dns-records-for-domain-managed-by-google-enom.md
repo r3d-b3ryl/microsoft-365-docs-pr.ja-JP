@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: '[Google Domains] ページを使用して、eNom にアクセスし、DNS を作成する方法について説明します。'
-ms.openlocfilehash: 7d79350f163d1b120d3dd45bc7bbb3e57583bf05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c6698f3d11f42cd0298bdb66710ec3c62bac5ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629133"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400258"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Google がドメインを管理している場合に DNS レコードを作成する (eNom)
 
@@ -89,7 +90,7 @@ ms.locfileid: "43629133"
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。 
+    > This is an example. この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 
   
     [確認する方法](../get-help-with-domains/information-for-dns-records.md)
   

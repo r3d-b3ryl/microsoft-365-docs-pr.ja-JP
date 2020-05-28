@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の他のドメインにある他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 05f0f281d97d497fe3a6cf9695e5c458492f95aa
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: af154db43f486f71443497180fe64cff89e11b5f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049085"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400535"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>Microsoft 用の変わったドメインで DNS レコードを作成する
 
@@ -72,7 +73,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![CrazyDomains-検証-1-1](../../media/f0ffdefb-d7a5-47df-bb5e-bf8a3bcc9b01.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-検証-1-2](../../media/b0cd623a-67f7-4bae-a5b5-507f5a106123.png)
   
@@ -139,7 +140,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-2-1](../../media/63f7ab77-e686-4e7b-a3a2-1ac28a02d5f3.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-2-2](../../media/a60680a1-2513-498c-b42f-8ffa575ee48e.png)
   
@@ -149,7 +150,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**メール送信先ゾーン**|**優先度**|**割り当て先サーバー**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |(このフィールドは空のままにします。)  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
    ![CrazyDomains-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
@@ -198,7 +199,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-3-1](../../media/2f02538b-fc79-46d2-a2b7-1022eaf0fb08.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-3-2](../../media/4c5929cf-1c21-4af9-899b-e36091f0f14d.png)
   
@@ -260,7 +261,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-4-1](../../media/7f2461e2-0468-49bd-9eb0-981e9b2f72d6.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-4-2](../../media/64ef9e1f-676d-46e2-9253-a83d9bcd1c4e.png)
   
@@ -303,7 +304,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![CrazyDomains-5-1](../../media/156acebc-7f6d-4b5e-8493-6bc62ca0ee27.png)
   
-7. **[追加]** を選択します。
+7. [**追加**] を選択します。
     
     ![CrazyDomains-5-2](../../media/6a711df7-4215-49b2-b58f-1cf1a242b383.png)
   
@@ -313,8 +314,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**レコードの種類**|**サブドメイン**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV レコード  <br/> |_sip _tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV レコード  <br/> |_sipfederationtls _tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV レコード  <br/> |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV レコード  <br/> |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![CrazyDomains-5-3](../../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
   

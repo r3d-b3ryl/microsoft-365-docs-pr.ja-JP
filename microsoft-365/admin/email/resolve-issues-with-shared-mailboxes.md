@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 共有メールボックスに問題が発生した場合は、これらのソリューションを試してみてください。
-ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628749"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400018"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>共有メールボックスの問題を解決する
 
@@ -34,7 +35,7 @@ ms.locfileid: "43628749"
 ## <a name="error-when-creating-shared-mailboxes"></a>共有メールボックスの作成時のエラー
 <a name="bkmk_Fix"> </a>
 
-エラーメッセージが表示された場合は、**プロキシアドレス "smtp: <共有\>メールボックス名" が、プロキシアドレスまたは "\<名前>" の LegacyExchangeDN によって既に使用されています。別のプロキシアドレスを選択してください**。これは、共有メールボックスに既に使用されている名前を付けようとしていることを意味します。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 これを行うには 2 つの方法があります。
+エラーメッセージが表示された場合は、**プロキシアドレス "smtp: <共有メールボックス名 \> " が、プロキシアドレスまたは LegacyExchangeDN "" によって既に使用されてい \<name> ます。別のプロキシアドレスを選択してください**。これは、共有メールボックスに既に使用されている名前を付けようとしていることを意味します。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 これを行うには 2 つの方法があります。
 
   - Windows PowerShell を使用します。 手順:[異なるドメインで同じエイリアスを使用して共有メールボックスを作成する](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)方法については、次のブログ投稿を参照してください。
     

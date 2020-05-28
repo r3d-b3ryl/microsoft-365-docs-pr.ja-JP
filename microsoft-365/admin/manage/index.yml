@@ -10,18 +10,19 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 7289f6a0b971db0f9b785f35c6bbae839ecae226
-  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: b1a5bd2f50542a9c76c32da7465e80e371238560
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43955327"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44399754"
 landingContent:
 - title: サービスの状態を監視する
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: レポートを使用してユーザーアクティビティを監視する
+    - text: レポートを使用してユーザー アクティビティを監視する
       url: ../activity-reports/activity-reports.md
     - text: 利用状況分析を監視する
       url: ../usage-analytics/usage-analytics.md
@@ -31,13 +32,13 @@ landingContent:
       url: change-address-contact-and-more.md
     - text: 管理者の連絡先情報を更新する
       url: update-phone-number-and-email-address.md
-    - text: リリースオプションを設定する
+    - text: リリース オプションをセットアップする
       url: release-options-in-office-365.md
 - title: ユーザーアクセスを禁止してデータをバックアップする
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 以前のユーザーのデータにアクセスしてバックアップする
+    - text: 元ユーザーのデータにアクセスしてバックアップを作成する
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
     - text: メールの保存期間を設定する (Microsoft 365 Business Premium)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
@@ -51,9 +52,9 @@ landingContent:
       url: ../setup/upgrade-users-to-latest-office-client.md
     - text: アプリ起動ツールをカスタマイズする
       url: customize-the-app-launcher.md
-    - text: アドインを一元展開するための要件
+    - text: アドインの一元展開の要件
       url: centralized-deployment-of-add-ins.md
-    - text: 一元展開を使用してアドインをインストールおよび管理する
+    - text: 一元展開でアドインをインストールして管理する
       url: manage-deployment-of-add-ins.md
 - title: Microsoft Teams
   linkLists:

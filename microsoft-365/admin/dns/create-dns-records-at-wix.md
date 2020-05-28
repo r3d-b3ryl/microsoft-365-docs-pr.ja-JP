@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Wix でその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 6f88cc65ae19f747a9fc3740ea1578f30d18b5e2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b5fe216e65954bbcbdd9a1da223258a8362743ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048857"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400294"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>Microsoft の Wix で DNS レコードを作成する
 
@@ -109,7 +110,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 |**Host Name**|**ポイント先**|**Priority**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|自動入力 <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 | 1 Hour|
+|自動入力 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 | 1 Hour|
    
 6. その他の MX レコードが一覧表示されている場合は、それぞれのレコードを削除します。 
     
@@ -175,8 +176,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 |**Service**|**Protocol**|**Name**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|sip  |tls  |自動入力 |1-d  |443   |sipdir.online.lync.com |100 |1 Hour |
-|sipfed|tcp |自動入力|1-d |5061 |sipfed.online.lync.com|100 | 1 Hour |
+|sip  |tls  |自動入力 |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+|sipfed|tcp |自動入力|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. DNS エディターの上部にある [ **dns の保存**] ボタンをクリックします。 
     

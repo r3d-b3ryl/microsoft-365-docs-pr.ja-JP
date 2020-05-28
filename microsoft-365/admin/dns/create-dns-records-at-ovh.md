@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: ドメインを確認し、電子メール、Skype for Business Online、およびその他の Microsoft 用のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048917"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400342"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Microsoft 用の「Excel で DNS レコードを作成する」
 
@@ -140,9 +141,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     > [!NOTE]
     > 既定では、移動先の相対表記を使用します。これにより、ターゲットレコードの末尾にドメイン名が追加されます。 絶対表記を代わりに使用するには、次の表に示すように、ターゲット レコードにドットを追加します。 
   
-    |**Record type**|**サブドメイン**|**TTL**|**優先度**|**Target**|
+    |**Record type**|**サブドメイン**|**TTL**|**優先度**|**ターゲット**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(空白のまま)  <br/> |3600 (秒)  <br/> |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **注:** Microsoft アカウントから* \<ドメインキー\> *を取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(空白のまま)  <br/> |3600 (秒)  <br/> |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |\<domain-key\>. mail.protection.outlook.com。  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![メールの "差し込み" MX レコード](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -276,8 +277,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Record type**|**サブドメイン**|**Priority**|**Weight**|**Port**|**TTL**|**ターゲット**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip _tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |3600 (秒)  <br/> |sipdir.online.lync.com。  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls _tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |3600 (秒)  <br/> |sipfed.online.lync.com。  <br/> |
+    |SRV (Service)  <br/> |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (秒)  <br/> |sipdir.online.lync.com。  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (秒)  <br/> |sipfed.online.lync.com。  <br/> |
        
     !["はい" SRV レコード](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   

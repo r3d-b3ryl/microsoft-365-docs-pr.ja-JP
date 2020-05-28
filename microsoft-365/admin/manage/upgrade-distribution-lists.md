@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Outlook で1つまたは複数の配布リストを Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065671"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399496"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
@@ -89,7 +90,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-たとえば、SMTP `dl1@contoso.com`アドレス`dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com`と、、を使用して5つの dl をアップグレードする場合は、次のコマンドを実行します。
+たとえば、SMTP アドレスと、、を使用して5つの dl をアップグレードする場合は、 `dl1@contoso.com` `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` 次のコマンドを実行します。
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -98,7 +99,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 対象となるすべての DL をアップグレードするには、2 つの方法があります。
 
 > [!NOTE]
-> このため、このコマンドレットはパイプラインからのデータを受信しません。このため、"foreach-オブジェクト{}" 演算子を使用して正常に実行する必要があります。
+> このため、このコマンドレットはパイプラインからのデータを受信しません。このため、"foreach-オブジェクト" 演算子を使用して正常に実行する必要が {} あります。
 
 1. テナント内の対象となる Dl を取得し、次のアップグレードコマンドを使用してアップグレードします。
 

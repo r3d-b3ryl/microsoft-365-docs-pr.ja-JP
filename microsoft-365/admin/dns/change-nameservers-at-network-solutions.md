@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'DNS レコードを管理する場合は、microsoft カスタムドメインとネットワークソリューションをセットアップする方法について説明します。 '
-ms.openlocfilehash: 2b3b575943ebd95ffcbd34dd4578133fa7dd4f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4a7c1eaab132b0ab41a62ba62d87956ccfafc014
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629757"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400607"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>ネットワークソリューションを使用して Microsoft をセットアップするためにネームサーバーを変更する
 
@@ -36,7 +37,7 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>Network Solutions で TXT レコードを追加して、ドメインを所有していることを確認する
 
-ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
+Microsoft のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -72,7 +73,7 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
     
 |**Host**|**TTL**|**Text**|
 |:-----|:-----|:-----|
-|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **注**: これは例です。 Microsoft 365 の表に記載されている、特定の**宛先またはポイントを**使用して、ここでのアドレスを指定します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **注**: これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)
    
     
    ![新しいレコードのボックスに値を入力するか貼り付けます。](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
@@ -87,11 +88,11 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
   
 9. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
-これで、ドメインレジストラーのサイトでレコードが追加されたので、Microsoft 365 に戻り、Microsoft 365 にレコードを検索するよう要求します。
+これで、ドメイン レジストラーのサイトでレコードが追加されました。Microsoft 365 に戻り、Microsoft 365 にレコードの検索をリクエストします。
   
-Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. Microsoft 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**設定** \> ] ページに移動します。
+1. Microsoft 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
 2. **[ドメイン]** ページで、確認するドメインを選択します。 

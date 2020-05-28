@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: ドメインを確認し、電子メール、Skype for Business Online、および Dnsat の他のサービスの DNS レコードを Microsoft にとって簡単にセットアップする方法について説明します。
-ms.openlocfilehash: d69a497c08ff905c28b923ebdb0e6fba6c5f82fa
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: db28ac0cb95bd86bc13a1a1ce47f273989aa4436
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049061"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400523"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Microsoft にとって簡単に DNS レコードを Dnsで作成する
 
@@ -55,7 +56,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 2. [**管理コンソール**] ページの [**最近更新さ**れたドメイン] 領域で、更新するドメインを選択します。 
     
-3. [管理された**DNS** ] ページの [ **TXT Records** ] 領域で**+**、() コントロール ([**新規追加**]) を選択します。
+3. [管理された**DNS** ] ページの [ **TXT Records** ] 領域で、( **+** ) コントロール ([**新規追加**]) を選択します。
     
     (You may have to scroll down.)
     
@@ -109,7 +110,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**サーバー**|**MX レベル**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> | *\<ドメインキー\>*  .mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **注:** Microsoft アカウントから自分の\<*ドメイン キー*\>を取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1800  <br/> |
+    |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **注:**\<*domain-key*\>Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1800  <br/> |
    
     ![Dnsの簡単な設定-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -213,8 +214,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**Priority**|**Weight**|**Port**|**Host**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
    
     ![Dnsの簡単な設定-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   

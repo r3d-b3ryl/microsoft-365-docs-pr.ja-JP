@@ -19,27 +19,28 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリの管理ポリシーを作成、編集、または削除する方法と、Android または iOS デバイスで作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627436"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401056"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
 
-![をhttps://aka.ms/aboutM365preview指すバナー。](../media/m365admincenterchanging.png)
+![を指すバナー https://aka.ms/aboutM365preview 。](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>アプリの管理ポリシーを作成する
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 
     
-2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
+2. 左側のナビゲーションで、[**デバイス**ポリシーの追加] を選択し \> **Policies** \> **Add**ます。
   
 3. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
     
@@ -51,7 +52,7 @@ ms.locfileid: "43627436"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Next decide **Who will get these settings?** 既定の [**すべてのユーザー** ] セキュリティグループを使用しない場合は、[**変更**] を選択し、これら\> **の設定を**取得するセキュリティグループを選択します。
+6. Next decide **Who will get these settings?** 既定の [**すべてのユーザー** ] セキュリティグループを使用しない場合は、[**変更**] を選択し、これらの設定を取得するセキュリティグループを選択し \> **Select**ます。
     
 7. 最後に、[ **完了**] を選択してポリシーを保存し、それをデバイスに割り当てます。 
     

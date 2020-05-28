@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Google ドメインでカスタムドメインの DNS レコードを管理するように Microsoft をセットアップする方法について説明します。
-ms.openlocfilehash: ac2f98a6ff783917d88a2bd8d28e8242e0ba41a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629901"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400655"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Google ドメインで Microsoft をセットアップするためにネームサーバーを変更する
 
@@ -36,7 +37,7 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
     
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 
-ドメインを Microsoft で使用する前に、必ずそのドメインを所有していることを確認する必要があります。 ドメインレジストラーで自分のアカウントにログインし、DNS レコードを作成することにより、そのドメインを所有していることが Microsoft に証明されます。
+Microsoft のドメインを使うには、ドメインを所有していることを確認する必要があります。自分のドメイン レジストラーで自分のアカウントにログインし、DNS レコードを作成することができれば、Microsoft に対してドメインを所有していることを確認することができます。
   
 > [!NOTE]
 >  このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
@@ -58,7 +59,7 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
 |||||
 |:-----|:-----|:-----|:-----|
 |**名前** <br/> |**Type** <br/> |**TTL** <br/> |**Data** <br/> |
-|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 この表では、特定の**宛先またはポイントを**使用して、ここにアドレスを指定します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
+|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. [**追加**] を選択します。
     
@@ -66,9 +67,9 @@ Microsoft が DNS レコードを管理する場合は、次の手順に従っ�
     
 これで、ドメインレジストラーのサイトでレコードが追加されました。 Microsoft に戻って、レコードの検索を要求します。
   
-Microsoft が正しい TXT レコードを見つけると、ドメインが確認されます。
+Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
   
-1. Microsoft 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>の**設定** \> ] ページに移動します。
+1. Microsoft 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
     
 2. **[ドメイン]** ページで、確認するドメインを選択します。 
@@ -78,7 +79,7 @@ Microsoft が正しい TXT レコードを見つけると、ドメインが確�
 4. **[ドメインの確認]** ページで、**[確認]** を選択します。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. DNS レコードの追加後にメールフローなどに問題が発生した場合は、「[ドメインまたは DNS レコードの追加後に問題を特定して解決](../get-help-with-domains/find-and-fix-issues.md)する」を参照してください。 
+> 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>ドメインのネーム サーバー (NS) レコードを変更する
 
