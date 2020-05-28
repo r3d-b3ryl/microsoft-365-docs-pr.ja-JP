@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f3518dd1e2633b870f8ad97e2a35328cd6f18fe
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: cedd5763f4d563de90b181d9d0340299bed8e528
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356508"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388403"
 ---
-# <a name="contact-support-for-sierra-leone"></a><span data-ttu-id="db668-103">シエラレオネのサポートへのお問い合わせ</span><span class="sxs-lookup"><span data-stu-id="db668-103">Contact support for Sierra Leone</span></span>
+# <a name="contact-support-for-sierra-leone"></a><span data-ttu-id="11e83-103">シエラレオネのサポートへのお問い合わせ</span><span class="sxs-lookup"><span data-stu-id="11e83-103">Contact support for Sierra Leone</span></span>
 
-<span data-ttu-id="db668-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="db668-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="11e83-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="11e83-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="db668-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="db668-105">Phone number</span></span>
-<span data-ttu-id="db668-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="db668-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="11e83-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="11e83-105">Phone number</span></span>
+<span data-ttu-id="11e83-106">+ 1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="11e83-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="db668-107">時間</span><span class="sxs-lookup"><span data-stu-id="db668-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="db668-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="db668-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="11e83-107">時間</span><span class="sxs-lookup"><span data-stu-id="11e83-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="11e83-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="11e83-108">Billing Support:</span></span>
 
-<span data-ttu-id="db668-109">英語: 月曜日から金曜日9時午前5時</span><span class="sxs-lookup"><span data-stu-id="db668-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="11e83-109">英語: 月曜日から金曜日9時午前5時</span><span class="sxs-lookup"><span data-stu-id="11e83-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="db668-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="db668-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="11e83-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="11e83-110">Technical Support:</span></span>
 
-<span data-ttu-id="db668-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="db668-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="11e83-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="11e83-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="db668-112">国際通話料金の適用</span><span class="sxs-lookup"><span data-stu-id="db668-112">International call charges apply</span></span>
+<span data-ttu-id="11e83-112">国際通話料金の適用</span><span class="sxs-lookup"><span data-stu-id="11e83-112">International call charges apply</span></span>
