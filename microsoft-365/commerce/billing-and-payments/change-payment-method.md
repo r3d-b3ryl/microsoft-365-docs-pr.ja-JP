@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 一般法人向けサブスクリプションの支払い方法を更新する方法について説明します。
-ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401812"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407970"
 ---
 # <a name="change-your-payment-method"></a>支払方法を変更する
 
@@ -43,7 +43,7 @@ ms.locfileid: "44401812"
 > [!IMPORTANT]
 > 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
 
- **クレジット カードまたは銀行口座の情報だけを変更する場合** 「[クレジット カードを追加、更新、または削除する](add-update-or-remove-credit-card-or-bank-account.md)」を参照してください。
+ **クレジット カードまたは銀行口座の情報だけを変更する場合** 「[支払い方法の管理](manage-payment-methods.md)」を参照してください。
 
  **課金される頻度だけを変更する場合** 「[支払い頻度を変更する](change-payment-frequency.md)」を参照してください。
   
@@ -67,7 +67,7 @@ ms.locfileid: "44401812"
   
  **支払い頻度を変更する** サブスクリプションの支払い頻度を変更する場合は、年次から月次、または月次から年次に変更する必要があります。そのためには、 [Microsoft サポートに連絡](../../admin/contact-support-for-business-products.md)する必要があります。
   
- **クレジット カードまたは銀行口座の情報だけを変更する場合** 「[クレジット カードを追加、更新、または削除する](add-update-or-remove-credit-card-or-bank-account.md)」を参照してください。
+ **クレジット カードまたは銀行口座の情報だけを変更する場合** 「[支払い方法の管理](manage-payment-methods.md)」を参照してください。
   
  **未払額がある場合、どうなりますか。**
   

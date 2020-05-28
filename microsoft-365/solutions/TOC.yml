@@ -3,7 +3,7 @@
   displayName: Home
 - name: ソリューションとアーキテクチャの図
   items:
-    - name: Microsoft 365 の生産性に関する図
+    - name: Microsoft 365 の生産性図
       href: productivity-illustrations.md
     - name: Microsoft クラウドアーキテクチャモデル
       href: cloud-architecture-models.md
@@ -11,20 +11,20 @@
   items:
     - name: 概要
       href: foundation-solutions-overview.md
-    - name: Microsoft 365 を使用してリモートワーカーを支援する
+    - name: Microsoft 365 でリモート ワーカーを支援する
       href: empower-people-to-work-remotely.md
       items:
-        - name: 手順 1.  MFA を使用してリモートワーカーのサインインセキュリティを強化する
+        - name: 手順 1. サインインのセキュリティを強化する
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 手順 2.  リモートアクセスを提供する
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 手順 3.  デバイス、Pc、およびその他のエンドポイントのエンドポイント管理を展開する
+        - name: 手順 3. エンドポイント管理の展開
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 手順 4.  リモートワーカー生産性アプリおよびサービスを展開する
+        - name: 手順 4. 生産性のアプリとサービスを展開する
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 手順 5.  COVID-19 の危機通信得られを作成する
+        - name: 手順 5.  コミュニケーションの得られを作成する
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: ステップ 6. リモートワーカーと使用状況のフィードバックをトレーニングする
+        - name: ステップ 6. リモートワーカーをトレーニングする
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Microsoft 365 とのセキュリティで保護されたコラボレーションをセットアップする
       href: setup-secure-collaboration-with-teams.md
@@ -113,7 +113,7 @@
               href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Contoso 社のケーススタディ
       items:
-        - name: Contoso Corporation 向けの Microsoft 365 ソリューション
+        - name: Contoso 社向けの Microsoft 365 ソリューション
           href: contoso-case-study-solutions.md
         - name: トップシークレットプロジェクトの分離されたチーム
           href: contoso-team-for-top-secret-project.md

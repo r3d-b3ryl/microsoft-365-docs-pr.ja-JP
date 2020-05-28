@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: Microsoft 365 for business サブスクリプションのライセンスを追加および削除する方法について説明します。
-ms.openlocfilehash: f8ae177052be325673af96d9535f25dfcdc93180
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c4b2b30c9d444aad11ea4cd2faf8b2546e33c39c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141235"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404024"
 ---
 # <a name="manage-subscription-licenses"></a>サブスクリプション ライセンスを管理する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ ms.locfileid: "44141235"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 2. [**お客様の製品**] ページで、ライセンスを追加または削除するサブスクリプションを検索し、[**ライセンスの追加/削除**] を選択します。
 
@@ -63,13 +64,13 @@ ms.locfileid: "44141235"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、ライセンスを追加または削除するサブスクリプションを選択し、[ライセンスの**追加/削除**] を選択します。
 
     [[ライセンスの追加/削除] のリンクが表示されない場合](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. [**ライセンスの総数**] ボックスに、このサブスクリプションに必要なライセンスの合計数を入力し、[ **Submit** \> **閉じる**の送信] を選択します。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 5個を削除する場合は、95と入力します。
+3. [**ライセンスの総数**] ボックスに、このサブスクリプションに必要なライセンスの合計数を入力し、[閉じるの**送信**] を選択し \> **Close**ます。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 5個を削除する場合は、95と入力します。
 
 新しいライセンスを購入したら、必ず[ユーザーにライセンスを割り当て](../../admin/manage/assign-licenses-to-users.md)てください。
 
@@ -77,13 +78,13 @@ ms.locfileid: "44141235"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、ライセンスを追加または削除するサブスクリプションを選択し、[ライセンスの**追加/削除**] を選択します。
 
     [[ライセンスの追加/削除] のリンクが表示されない場合](#what-if-i-dont-see-the-addremove-licenses-link)
 
-3. [**ライセンスの総数**] ボックスに、このサブスクリプションに必要なライセンスの合計数を入力し、[ **Submit** \> **閉じる**の送信] を選択します。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 5個を削除する場合は、95と入力します。
+3. [**ライセンスの総数**] ボックスに、このサブスクリプションに必要なライセンスの合計数を入力し、[閉じるの**送信**] を選択し \> **Close**ます。 たとえば、100 のライセンスがあり、さらに 5 つ追加する必要がある場合は、105 と入力します。 5個を削除する場合は、95と入力します。
 
 新しいライセンスを購入したら、必ず[ユーザーにライセンスを割り当て](../../admin/manage/assign-licenses-to-users.md)てください。
 
@@ -93,7 +94,7 @@ ms.locfileid: "44141235"
 
 次の表に、[**ライセンスの追加/削除**] リンクが使用できない可能性がある理由と、その方法について説明します。 
 
-|理由  |説明  |解決方法  |
+|理由  |説明  |ソリューション  |
 |---------|---------|---------|
 |信用度チェックが保留中です。 |与信審査が保留中の場合、"与信審査待ち" のメッセージが表示され、その与信審査が完了するまで、ライセンスの購入ができません。  | 後で、与信審査が完了しているかどうかを確認します。 通常、与信審査が完了するまで 2 営業日かかります。<br>与信審査が完了したら、[ **ユーザー**] セクションに [ **ライセンスの追加/削除**] のリンクが表示されます。 その場合は、「[サブスクリプションライセンスの管理](#manage-subscription-licenses)」にアクセスしてください。 |
 |プロダクトキーを使用してサブスクリプションをアクティブ化しました。| サブスクリプションを購入し、25 桁のプロダクト キーでライセンス認証を行っていると、"プリペイド" と表示されます。  |[プロダクトキーを使用して有料のサブスクリプションにライセンスを追加する](add-licenses-using-product-key.md)を参照してください。 |

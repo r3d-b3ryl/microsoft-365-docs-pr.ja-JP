@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Windows デバイスを Windows 10 Pro にアップグレードして、より高度なセキュリティおよびビジネスネットワーク機能を利用できるようにする方法を確認します。
-ms.openlocfilehash: f0cedda49dbff2a8c2884bb52e240fabfbeb4537
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632053"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403532"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows デバイスを Windows 10 Pro にアップグレードする
 
@@ -44,11 +45,11 @@ Windows デバイスを Windows 10 Pro にアップグレードする方法に�
   
 Windows 10 Pro にアップグレードするには、いくつかのオプションがあります。 以下のことを実行できます。
     
-- [[マイクロソフトソフトウェアダウンロードサイト](https://go.microsoft.com/fwlink/?LinkID=836951 ) &ndash;からアップグレードをインストールする] このオプションは、ログインしているデバイスが更新するデバイスと同じデバイス上にある場合に選択します。 
+- [[マイクロソフトソフトウェアダウンロードサイト](https://go.microsoft.com/fwlink/?LinkID=836951 )からアップグレードをインストールする] このオプションは、ログインしている &ndash; デバイスが更新するデバイスと同じデバイス上にある場合に選択します。 
 
     - ソフトウェアダウンロードサイトから、[**今すぐ更新**] をクリックして、デバイスを Windows 10 Pro クリエーター用更新プログラムにアップグレードを開始します。 
     
-- [[メディア作成ツール](https://go.microsoft.com/fwlink/?LinkID=836960) &ndash;を使用してインストールメディアを作成する] このオプションを選択すると、windows 10 Pro の更新プログラムのインストールメディア (USB フラッシュドライブまたは ISO ファイル) を作成して、使用しているものとは異なる PC に windows 10 をインストールすることができます。
+- [[メディア作成ツール](https://go.microsoft.com/fwlink/?LinkID=836960)を使用してインストールメディアを作成する &ndash; ] このオプションを選択すると、windows 10 Pro の更新プログラムのインストールメディア (USB フラッシュドライブまたは ISO ファイル) を作成して、使用しているものとは異なる PC に windows 10 をインストールすることができます。
 
     - ツールの使用方法とインストールメディアの作成方法に関する指示を読んでください。 
 
@@ -61,4 +62,4 @@ Android および iOS デバイスの設定を完了するには、「 [Microsof
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップと使用方法の詳細
 
-[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -16,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: 組織の連絡先情報を更新し、受信する Microsoft 365 製品関連のコミュニケーションを選択します。
-ms.openlocfilehash: 4a667757990ec30f4514b094fd1592831601e679
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628210"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407934"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>Microsoft からの連絡を受け取る連絡先の設定を変更する
 
@@ -50,4 +51,4 @@ Office 365 Enterprise、Microsoft 365 Business Standard、および Microsoft 36
   
 - [Microsoft 365 for business の請求先住所を変更する](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Microsoft 365 for business でクレジットカードを追加、更新、または削除する](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [支払方法を管理する](../../commerce/billing-and-payments/manage-payment-methods.md)

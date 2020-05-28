@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 管理センターで管理者の電話番号とメールアドレスを更新します。 自分の管理者パスワードをリセットする場合は、この情報が必要になります。
-ms.openlocfilehash: 6f4303cd637bfb87fc4d35ce49904cedf5bf7f0a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bd8ee28cbc7982ea5b057fecb34d362557a5d5a9
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139591"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407922"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメールアドレスを更新する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 この記事では、管理者が Microsoft 365 の勤務先電話と電子メールアドレスを変更する方法について説明します。
@@ -44,7 +45,7 @@ ms.locfileid: "44139591"
   
 1. Microsoft 365 管理センターに移動します。
 
-2. ヘッダーで、プロファイルアイコン\> **My account** \> **Personal info**を選択します。
+2. ヘッダーで、プロファイルアイコン \> **My account** \> **Personal info**を選択します。
 
 3. [**連絡先の詳細**] セクションで、[編集] を選択します。 携帯電話、電話、および連絡用メールアドレスを更新します。 お客様の連絡用メールアドレスには、Microsoft のメールアドレスとは別のものを使用してください。
 
@@ -57,4 +58,4 @@ ms.locfileid: "44139591"
   
 - [Microsoft 365 for business の請求先住所を変更する](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Microsoft 365 for business でクレジットカードを追加、更新、または削除する](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [支払方法を管理する](../../commerce/billing-and-payments/manage-payment-methods.md)

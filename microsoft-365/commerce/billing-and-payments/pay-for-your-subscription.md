@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401764"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407958"
 ---
 # <a name="pay-for-your-subscription"></a>サブスクリプションを支払う
 
@@ -48,7 +48,7 @@ ms.locfileid: "44401764"
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>クレジット カードまたは銀行口座引き落としで支払う
 
-クレジット カードで支払う場合、請求日の翌日からサブスクリプション有効期限の最終日まで、サブスクリプションの費用が自動請求されます。必要に応じて、[クレジット カードの情報を更新](add-update-or-remove-credit-card-or-bank-account.md)できます。また、[請求明細書のコピーをメールで受け取る](#receive-a-copy-of-your-billing-statement-in-email)ことを選択することもできます。
+クレジット カードまたは銀行口座引き落としで支払う場合、請求日の翌日からサブスクリプション有効期限の最終日まで、サブスクリプションの費用が自動請求されます。 必要に応じて[支払い方法を管理](manage-payment-methods.md)できます。 また、[請求明細書のコピーをメールで受け取る](#receive-a-copy-of-your-billing-statement-in-email)選ぶこともできます。
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>クレジット カードが拒否され、支払い期日を過ぎてしまった場合はどうなりますか?
 
@@ -63,12 +63,12 @@ ms.locfileid: "44401764"
 
 2. 未払い残高のあるサブスクリプションを見つけます。 **[課金]** セクションで、**[サブスクリプションの支払期限が過ぎています]** の横にある **[残高の決済]** をクリックします。
 
-3. クレジット カードの所有者の場合は、カードの有効期限の変更、別のカードの選択、または[新しいカードの追加](add-update-or-remove-credit-card-or-bank-account.md)を行うことができます。
+3. クレジット カードの所有者の場合は、カードの有効期限の変更、別のカードの選択、または[新しいカードの追加](manage-payment-methods.md)を行うことができます。
 
     > [!NOTE]
     > **[残高の決済]** 機能を使用すると、アカウントにおけるすべての未払額が課金されます。金額は他の場所に表示されている請求総額を超える場合があります。
 
-4. クレジット カードの所有者でない場合は、別のクレジット カードを選択するか、[新しいカードを追加](add-update-or-remove-credit-card-or-bank-account.md)できます。
+4. クレジット カードの所有者でない場合は、別のクレジット カードを選択するか、[新しいカードを追加](manage-payment-methods.md)できます。
 
 5. クレジット カード情報を更新するか、サブスクリプションの支払いに使用するクレジット カードを変更した後、**[保存]** を選択します。
 
@@ -80,13 +80,13 @@ ms.locfileid: "44401764"
 
 2. 変更するサブスクリプションを選択します。 **[課金内容]** セクションで、**[今すぐ支払う]** を選択します。
 
-3. クレジット カードの所有者の場合は、カードの有効期限の変更、別のカードの選択、または[新しいカードの追加](add-update-or-remove-credit-card-or-bank-account.md)を行うことができます。
+3. クレジット カードの所有者の場合は、カードの有効期限の変更、別のカードの選択、または[新しいカードの追加](manage-payment-methods.md)を行うことができます。
 
     > [!NOTE]
     > 
             **今すぐ支払う**機能を使用すると、アカウントにおけるすべての未払額が課金されます。金額は他の場所に表示されている請求総額を超える場合があります。
 
-4. クレジット カードの所有者でない場合は、別のクレジット カードを選択するか、[新しいカードを追加](add-update-or-remove-credit-card-or-bank-account.md)できます。
+4. クレジット カードの所有者でない場合は、別のクレジット カードを選択するか、[新しいカードを追加](manage-payment-methods.md)できます。
 
 5. クレジット カード情報を更新するか、サブスクリプションの支払いに使用するクレジット カードを変更した後、**[送信]** を選択します。 「支払い方法が更新され、未払額はすべて処理されました。 ありがとうございました。」という確認メッセージが表示されます。
 
@@ -312,6 +312,6 @@ ms.locfileid: "44401764"
 
 ## <a name="related-articles"></a>関連記事
 
-[クレジット カードまたは銀行口座を追加、更新、または削除する](add-update-or-remove-credit-card-or-bank-account.md)
+[支払方法を管理する](manage-payment-methods.md)
 
 [課金内容または請求書の内容を理解する](understand-your-invoice2.md)

@@ -20,17 +20,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Microsoft 365 for business アプリの保護設定がユーザーの Windows 10 デバイスで有効になっていることを確認する方法について説明します。
-ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635706"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403592"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でデバイス保護設定を検証する
 
@@ -38,11 +39,11 @@ ms.locfileid: "43635706"
 
 [デバイス ポリシーを設定](protection-settings-for-windows-10-pcs.md) した後は、ポリシーがユーザーのデバイスに影響を与えるまで最大で数時間かかる場合があります。 ユーザーのデバイス上でさまざまな Windows の設定画面を表示して、ポリシーが反映されていることを確認できます。 ユーザーは Windows 10 デバイスで windows Update および Windows Defender ウイルス対策の設定を変更できないため、多くのオプションが灰色表示されます。
   
-1. [**設定**\>**更新&amp;セキュリティ** **Windows Update** \> **Restart options** Windows update の再起動オプション] に移動し、すべての設定が淡色表示になっていることを確認します。 \> 
+1. [**設定**の \> **更新 &amp; セキュリティ** \> **Windows update**の \> **再起動オプション]** に移動し、すべての設定が淡色表示になっていることを確認します。 
     
     ![すべての再起動オプションが淡色表示されます。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. [**設定** \> ] [ ** &amp;セキュリティ** \> **Windows update** \>セキュリティ **] [詳細オプション]** の順に移動し、すべての設定が淡色表示になっていることを確認します。 
+2. [**設定** \> ] [ ** &amp; セキュリティ** \> **Windows update**セキュリティ \> **] [詳細オプション]** の順に移動し、すべての設定が淡色表示になっていることを確認します。 
     
     ![Windows Advanced updates のオプションはすべて淡色表示になっています。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
