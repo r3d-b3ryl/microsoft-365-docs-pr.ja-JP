@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,19 +24,19 @@ search.appverid:
 - BEA160
 - GEA150
 description: 新しいサブスクリプションにアップグレードする方法について説明します。
-ms.openlocfilehash: b0f79233e6a05c2838026093bb0027cd4789b01b
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141068"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403176"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -48,7 +49,7 @@ ms.locfileid: "44141068"
 
 [**アップグレード**] タブを使用すると、新しいプランを購入するプロセスが実行されます。 すべてのユーザーに新しいプランのライセンスが自動的に割り当てられ、古いプランがキャンセルされます。
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
+1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
 
 2. アップグレードするサブスクリプションを選択します。
 
@@ -133,7 +134,7 @@ ms.locfileid: "44141068"
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>アップグレード先のプランがサポートされていません
 
-プランをアップグレードすると、現在のプランのサービスに基づいて、アップグレードに使用できるプランが表示されます。 アップグレードできるのは、Exchange Online や SharePoint Online などのデータ関連サービスを持つプランのみです。または、それより上位のバージョンにアップグレードすることもできます。 これにより、ユーザー\'はアップグレード中にこれらのサービスに関連するデータを失うことがなくなります。
+プランをアップグレードすると、現在のプランのサービスに基づいて、アップグレードに使用できるプランが表示されます。 アップグレードできるのは、Exchange Online や SharePoint Online などのデータ関連サービスを持つプランのみです。または、それより上位のバージョンにアップグレードすることもできます。 これにより、ユーザーは \' アップグレード中にこれらのサービスに関連するデータを失うことがなくなります。
 
 プランが自動的にアップグレードされない場合は、代わりにプランを[手動で変更](change-plans-manually.md)することができます。 ヘルプの[サポートを呼び出す](../../admin/contact-support-for-business-products.md)こともできます。
 

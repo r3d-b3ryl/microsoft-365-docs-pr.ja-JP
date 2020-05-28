@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '利用状況分析が API に接続する方法について説明し、さまざまな Microsoft 365 サービスの利用状況の月単位の傾向を示します。  '
-ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011773"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402048"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 usage analytics の表のデータ
 
-Microsoft 365 usage analytics は、多次元データモデルを公開する API に接続します。 API のプレビュー版が公開されており、`https://reports.office.com/pbi/v1.0/\<tenantid\>` でご利用いただけます (\<tenant id\> をご自分の GUID に変更してください)。 
+Microsoft 365 usage analytics は、多次元データモデルを公開する API に接続します。 Api はプレビュー段階にあり、でアクセスでき `https://reports.office.com/pbi/v1.0/\<tenantid\>` ます (は、を \<tenant id\> テナントの GUID に置き換えます)。 
   
 > [!NOTE]
 > 詳細については、microsoft [Graph の「microsoft 365 使用状況レポート](https://go.microsoft.com/fwlink/p/?linkid=864336)を使用する」を参照してください。 

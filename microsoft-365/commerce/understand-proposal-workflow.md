@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
-ms.custom: ''
 ROBOTS: NOINDEX
-ms.openlocfilehash: 18d106894aeebe499cca2254a6e3a534cd255db6
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340126"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403128"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローについて
 
@@ -120,14 +120,14 @@ Microsoft カスタマーアグリーメント (MCA) は、組織が Microsoft �
 
 提案には、次の情報が含まれています。
 
-| Section | Description |
+| Section | 説明 |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 組織名 | 提案が準備された組織の名前。 |
 | 有効期限の日付 | 提案提供の期限が切れる日付。 この有効期限を逃した場合は、Microsoft の担当者に連絡して、まだ提案に関心があることを知らせます。 |
 | 通貨 | 提案のアイテムのコストを計算するために使用される通貨。 |
 | の準備 | 提案を要求したユーザーの請求アカウント名、住所、連絡先の電子メールアドレス、および電話番号。 |
 | 作成者 | 提案を準備した Microsoft の担当者の電子メールアドレス。 |
-| まとめ | 提案に関連付けられている小計を表示します。 必要に応じて、コストの計算に使用される外部 exchange (FX) レートも表示されます。 |
+| 概要 | 提案に関連付けられている小計を表示します。 必要に応じて、コストの計算に使用される外部 exchange (FX) レートも表示されます。 |
 | 提案明細行のアイテム | このセクションには、提案に含まれるすべてのアイテムの数量、単価、および小計が含まれています。 |
 | 次の手順 | このセクションでは、実行する必要のあるアクションを示します。 |
 
@@ -163,7 +163,7 @@ MCA に署名するには、[**次の手順**] の下にあるボタンを選択
 
 - **含まれている**提案パッケージの一部として追加料金なしで含まれるアイテムのリスト。 これらの項目の中には、将来的にコストが関連しているものがあります。
 
-### <a name="summary"></a>まとめ
+### <a name="summary"></a>概要
 
 このセクションでは、支払い対象のアイテムの数、小計、推定税額、および注文の合計金額を示します。
 

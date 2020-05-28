@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: ブラウザーと Power BI デスクトップでレポートをカスタマイズする方法について説明します。
-ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140711"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402932"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Microsoft 365 usage analytics でレポートをカスタマイズする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用し�
   
 1. ライセンス**認証**レポートで、[**アクティブ化**] タブをクリックします。
     
-2. Power BI ![](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)ボタンの [その他のページ] ボタンを**クリックして**、編集モードに入ります。 
+2. **Edit** ![ Power BI ボタンの [その他のページ] ボタンをクリックして、編集モードに入り ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ます。 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -69,7 +70,7 @@ Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用し�
   
 1. 左側のナビゲーションを使用して**製品の使用状況**レポートに移動し、[ **Yammer** ] タブをクリックします。
     
-2. Power BI](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)および**edit**の [その![他のページ] ボタンをクリックして、編集モードに切り替えます。 
+2. ![POWER BI および edit の [その他のページ] ボタンをクリックして、編集モードに切り替え ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ます。 **Edit** 
     
 3. ページの下部にある [ ![Power BI の [ページの追加] ボタン](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 新しいページを作成します。
   
@@ -95,7 +96,7 @@ Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用し�
 
     ![Yammer チェックボックスの選択](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 視覚エフェクトの一覧のすぐ下にある**Format** 、Power ![BI visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)の [書式] アイコンの形式アイコンをクリックします。
+12. 視覚エフェクトの一覧のすぐ下にある**Format** 、 ![ Power BI Visualizaions の [書式] アイコンの形式アイコンをクリックし ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) ます。
 
 13. [タイトル] を展開し、[ **タイトル テキスト**] 値を [ **月別の新規 Yammer ユーザー**] に変更します。
     
@@ -115,7 +116,7 @@ Microsoft 365 usage analytics は、ユーザーが Microsoft 365 を採用し�
   
 1. Go to **get data** \> **Other** \> **ODATA Feed** \> **Connect**.
     
-2. [URL] ウィンドウで、「<i></i>https://\<reports.office.com/pbi/v1.0/\>tenantid」と入力します。
+2. [URL] ウィンドウで、「https:// <i></i> reports.office.com/pbi/v1.0/」と入力します。 \<tenantid\>
     
     **注:** レポート Api はプレビュー段階にあり、運用に入るまで変更される可能性があります。 
   

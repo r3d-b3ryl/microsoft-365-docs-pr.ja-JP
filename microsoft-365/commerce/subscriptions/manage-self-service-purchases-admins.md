@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーによって作成されたセルフサービスの購入を管理する方法について説明します。
-ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141152"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403272"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -36,7 +37,7 @@ ms.locfileid: "44141152"
 
 ## <a name="view-self-service-subscriptions"></a>セルフサービスサブスクリプションを表示する
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
 
 2. [**結果の絞り込み**] の横にある [**アカウントの種類**] ドロップダウンから、[**セルフサービス**] を選択します。
 
@@ -44,7 +45,7 @@ ms.locfileid: "44141152"
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>セルフサービス購入サブスクリプションのライセンスを持っているユーザーを表示する
 
-1. 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 
 2. [フィルター] アイコンを選択し、[**セルフサービス**] を選択します。
 
@@ -63,7 +64,7 @@ ms.locfileid: "44141152"
 
 **MSCommerce** PowerShell モジュールを使用して、次のことを行うことができます。
 
-- **Allowselfservicepurchase**パラメーター値&mdash;の既定の状態を表示する (製品によって有効または無効にする)
+- **Allowselfservicepurchase**パラメーター値の既定の状態を表示する &mdash; (製品によって有効または無効にする)
 - 適用可能な製品の一覧、およびセルフサービス購入が有効か無効かを表示する
 - 特定の製品の現在の設定を表示または変更して、有効にするか無効にするかを指定します。
 
@@ -75,7 +76,7 @@ ms.locfileid: "44141152"
 
 1. グローバル管理者または課金管理者アカウントを使用して、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>にサインインします。
 
-2. [**請求** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">書サービス</a>] ページに移動します。
+2. [**請求**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">書サービス</a>] ページに移動します。
 
 3. 購入する製品を見つけて選択し、[**購入**] を選択します。
 
@@ -87,7 +88,7 @@ ms.locfileid: "44141152"
 
 7. セルフサービス購入サブスクリプションを購入したユーザーに連絡して、それを取り消すように依頼します。
 
-## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
+## <a name="need-help-contact-us"></a>ヘルプが必要な場合 ご連絡ください。
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 

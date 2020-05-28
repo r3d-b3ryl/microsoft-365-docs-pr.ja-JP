@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: 新しい追加機能について説明します。
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942177"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402416"
 ---
 # <a name="allotment-basics"></a>サービス単位の基本
 
@@ -51,4 +49,4 @@ ms.locfileid: "43942177"
 
 ## <a name="getting-started"></a>はじめに
 
-この機能は、個人用のプレビューでは少数のお客様のみが利用できます。 参加に興味がある場合は、次のフォームに[https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)記入してください。
+この機能は、個人用のプレビューでは少数のお客様のみが利用できます。 参加に興味がある場合は、次のフォームに記入 [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) してください。

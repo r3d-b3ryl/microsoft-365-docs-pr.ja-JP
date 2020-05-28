@@ -11,30 +11,30 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Microsoft 認定ソリューションプロバイダ (パートナー) と協力して、組織または学校の製品とサービスを購入して管理する方法について説明します。
 keywords: パートナー、ソリューションプロバイダ
-ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141209"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402596"
 ---
 # <a name="manage-partner-relationships"></a>パートナー関係を管理する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
 Microsoft 認定ソリューションプロバイダー (パートナー) と協力して、組織または学校の製品とサービスを購入して管理することができます。 設定を行うには、いくつかの手順が必要になります。
 
-- 管理者は、で<a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>フォームを使用してパートナーを検索して連絡します。
+- 管理者は、でフォームを使用してパートナーを検索して連絡し <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> ます。
 - パートナーは、パートナー関係を確立するための電子メール要求をお客様に送信します。
 - お客様は、Microsoft 365 管理センターで招待を承諾し、パートナーとの作業を開始します。
 
@@ -90,7 +90,7 @@ Microsoft 認定ソリューションプロバイダー (パートナー) と協
 
 パートナーに管理者権限を委任する場合は、いつでもそれらの権限を削除することができます。 管理者権限を削除しても、パートナー関係は削除されません。 ユーザーは、たとえば販売店として作業することができます。
 
-1. 管理センターで、 **[課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">アカウント</a>] ページに移動します。
+1. 管理センターで、 **[課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">アカウント</a>] ページに移動します。
 2. [**課金アカウント**] ページで、[**パートナー関係**] タブを選択します。
 3. パートナーの名前を含む行を選択します。
 4. [パートナー] ページで、[**管理者ロールの削除**] を選択します。
@@ -99,7 +99,7 @@ Microsoft 認定ソリューションプロバイダー (パートナー) と協
 
 パートナーとの共同作業を行わないと判断した場合は、関係を終了することができます。 ただし、パートナーが委任された管理者またはアドバイザーの場合のみ、リレーションシップを削除できます。 他のすべてのパートナーの種類については、パートナーに連絡してリレーションシップを終了させるようにしてください。
 
-1. 管理センターで、 **[課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">アカウント</a>] ページに移動します。
+1. 管理センターで、 **[課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">アカウント</a>] ページに移動します。
 2. [**課金アカウント**] ページで、[**パートナー関係**] タブを選択します。
 3. パートナーの名前を含む行を選択します。
 4. [パートナーの詳細] ページで、[**パートナーの削除**] を選択します。

@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 2019年9月14日以降に、欧州経済地域の31国の銀行は、支払いを処理する前にオンライン購入を行うユーザーの身元を確認する必要があります。
 keywords: 支払いサービスディレクティブ2、強力な顧客認証、多要素認証
-ms.openlocfilehash: 53de6ce3158760299a3ed2a7bc840919babf20bd
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 571664736ac4c6e825398a076597bf4b69ec31a8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080394"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402216"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>一般法人向けお客様向けのお支払いサービス指令2および強力な顧客認証
 
@@ -46,7 +46,7 @@ ms.locfileid: "42080394"
 
 定期的な支払いに対する請求は失敗する可能性があります。 その場合は、手順に従って電子メールを受信します。 確認要求に応答して、現在の支払いを行うように求めるメッセージが表示されます。
 
-## <a name="need-more-help"></a>サポートが必要な場合
+## <a name="need-more-help"></a>ヘルプを表示
 
 これらのシナリオでは、金融機関が最適な連絡先です。
 - 確認コードを受信していません。  

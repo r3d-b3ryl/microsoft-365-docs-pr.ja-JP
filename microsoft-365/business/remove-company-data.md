@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Microsoft 365 for business を使用して、ユーザーがデバイスまたは Windows Pc に所有している会社のデータを削除する方法について説明します。
-ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784149fcf6b850e7d0483c17dd605e7ecb7cf0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634850"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402788"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 
@@ -40,7 +41,7 @@ Microsoft 365 for business を使用して、ユーザーが Microsoft 365 で�
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
     
-2. 左側のナビゲーションで、[**デバイス**\>の**管理**] を選択します。  
+2. 左側のナビゲーションで、[**デバイス**の管理] を選択し \> **Manage**ます。  
   
 3. [**管理**] ページで、削除するデータのあるユーザーを選択または検索し、その名前を選択します。 
     
@@ -48,7 +49,7 @@ Microsoft 365 for business を使用して、ユーザーが Microsoft 365 で�
     
     ![[会社データの削除] ウィンドウで、データを削除するデバイスを選択します。](../media/resetorremove.png)
   
-5. 確認ウィンドウで、[ \> **閉じる**]**を選択し**ます。
+5. 確認ウィンドウで、[閉じる]**を選択し** \> **Close**ます。
     
 
 

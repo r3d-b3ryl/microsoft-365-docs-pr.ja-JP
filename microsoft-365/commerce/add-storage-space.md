@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: Microsoft 365 サブスクリプションでファイルストレージを追加および削減する方法について説明します。 追加のファイルストレージを使用すると、SharePoint Online および OneDrive により多くのコンテンツを格納できます。
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140968"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402680"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>サブスクリプションのストレージ領域を追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -58,7 +59,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ::: moniker range="o365-germany"
 
-1. グローバルまたはhttps://portal.office.de SharePoint 管理者としてにサインインし、[管理者] タイルを選択して、管理センターを開きます。 (ページへのアクセス許可がないことを示すメッセージが表示される場合、組織で Microsoft 365 管理者のアクセス許可を持っていません)。
+1. https://portal.office.deグローバルまたは SharePoint 管理者としてにサインインし、[管理者] タイルを選択して、管理センターを開きます。 (ページへのアクセス許可がないことを示すメッセージが表示される場合、組織で Microsoft 365 管理者のアクセス許可を持っていません)。
 
 2. 左側のウィンドウの [**管理センター**] で、[ **SharePoint**] を選択します。 従来の SharePoint 管理センターが表示された場合は、ページ上部の [**今すぐ起動する**] を選択します。これにより、新しい SharePoint 管理センターが開きます。
 
@@ -70,7 +71,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ::: moniker range="o365-21vianet"
 
-1. グローバルまたはhttps://login.partner.microsoftonline.cn/ SharePoint 管理者としてにサインインし、[管理者] タイルを選択して、管理センターを開きます。 (ページへのアクセス許可がないことを示すメッセージが表示される場合、組織で Microsoft 365 管理者のアクセス許可を持っていません)。
+1. https://login.partner.microsoftonline.cn/グローバルまたは SharePoint 管理者としてにサインインし、[管理者] タイルを選択して、管理センターを開きます。 (ページへのアクセス許可がないことを示すメッセージが表示される場合、組織で Microsoft 365 管理者のアクセス許可を持っていません)。
 
 2. 左側のウィンドウの [**管理センター**] で、[ **SharePoint**] を選択します。 従来の SharePoint 管理センターが表示された場合は、ページ上部の [**今すぐ起動する**] を選択します。これにより、新しい SharePoint 管理センターが開きます。
 
@@ -107,13 +108,13 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 6. [**どのように表示しますか?** ] ページで、選択した記憶域の gb 数を確認し、価格情報を確認して、[**次へ**] を選択します。
 
-7. [**注文の完了**] ページで、合計値を確認します。 変更を加える必要がある場合は、[**順序の編集**] を選択します。 注文で貸方の確認が必要な場合は、チェックボックスをオンにします。 完了したら、[**注文** \> ] [**管理者のホーム] に移動**します。
+7. [**注文の完了**] ページで、合計値を確認します。 変更を加える必要がある場合は、[**順序の編集**] を選択します。 注文で貸方の確認が必要な場合は、チェックボックスをオンにします。 完了したら、[**注文**] [ \> **管理者のホーム] に移動**します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。  
+1. 管理センターで、[**課金** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。  
 
 2. [**サブスクリプション**] ページで、ストレージスペースを追加するサブスクリプションを選択し、[アドオン]**を選択します。**
 
@@ -138,7 +139,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、ストレージスペースを追加するサブスクリプションを選択し、[アドオン]**を選択します。**
 
@@ -167,7 +168,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 2. **Office 365 追加ファイル記憶域**アドオンを含むサブスクリプションを選択します。
 
@@ -179,7 +180,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、 **[アドオン] を選択し**ます。
 
@@ -202,7 +203,7 @@ SharePoint Online サイト コレクションの容量が不足し始めた場�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. [**サブスクリプション**] ページで、 **[アドオン] を選択し**ます。
 

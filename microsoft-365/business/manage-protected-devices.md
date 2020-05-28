@@ -21,18 +21,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 保護ポリシーを介して管理されるデバイスから会社のデータを削除する方法と、Windows 10 デバイスを出荷時の設定にリセットする方法について説明します。
-ms.openlocfilehash: 180887dca3226512ab558e98d2b5a78da3521e53
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2d725224631901054480d705ab2adc0f8f4f9353
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634290"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403100"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-for-business"></a>Microsoft 365 for business で保護されたデバイスを管理する
 

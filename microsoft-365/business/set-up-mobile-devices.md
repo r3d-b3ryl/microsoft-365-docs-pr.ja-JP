@@ -19,17 +19,18 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: IPhone または Android 電話機に Office をインストールすると、Office アプリの仕事ファイルは Microsoft 365 for business で保護されます。
-ms.openlocfilehash: 1263a922ba41083511fec8030634ed6cfaf70f00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632569"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403000"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>ビジネスユーザー向けの Microsoft 365 用のモバイルデバイスをセットアップする
 
@@ -59,7 +60,7 @@ Microsoft 365 for business を使用して iOS デバイスで Office アプリ�
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-[**電子メールアカウントの追加**] 画面に仕事用\>のメールアドレスを入力し、[**アカウント**の追加] \>をクリックして、Microsoft 365 for business の資格情報**サインインに**入力します。
+[**電子メールアカウントの追加**] 画面に仕事用のメールアドレスを入力し、[アカウントの追加] をクリックして、 \> **Add Account**Microsoft 365 for business の資格情報 \> **サインインに**入力します。
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -87,7 +88,7 @@ Android phone でのセットアップを開始するには、再生ストアに
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-Outlook アプリで、[**スタート**] をタップしてから、Microsoft 365 for business の\>電子**メールアカウントを追加し、組織**の資格情報でサインインします。
+Outlook アプリで、[**スタート**] をタップしてから、Microsoft 365 for business の電子メールアカウントを追加し、 \> **Continue**組織の資格情報でサインインします。
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -105,6 +106,6 @@ Outlook をもう一度開き、PIN を入力して確認します。これで O
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

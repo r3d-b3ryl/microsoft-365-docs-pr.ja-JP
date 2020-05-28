@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Microsoft 365 の請求書、請求書、および支払いに関する情報を解釈する方法、およびお客様の注文番号を変更する方法について説明します。
-ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 13eea485a6d748ce8798ddb5075309bec727c6bb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232795"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402632"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for business の課金または請求書を理解する
 
@@ -104,7 +105,7 @@ ms.locfileid: "44232795"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 2. **表**形式のビューの場合は、[**カード**] を選択してビューを切り替えます。
 
@@ -118,7 +119,7 @@ ms.locfileid: "44232795"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 
@@ -128,7 +129,7 @@ ms.locfileid: "44232795"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 
@@ -138,6 +139,6 @@ ms.locfileid: "44232795"
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 for business サブスクリプションの支払い](pay-for-your-subscription.md)
+[一般法人向け Microsoft 365 サブスクリプションを支払う](pay-for-your-subscription.md)
 
 [Minecraft: Education Edition の支払いオプション](https://go.microsoft.com/fwlink/p/?linkid=838761)

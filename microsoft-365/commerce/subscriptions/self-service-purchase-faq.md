@@ -11,16 +11,18 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom:
+- AdminSurgePortfolio
+- aka.ms/self-service-purchase-faq
 search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
-ms.custom: aka.ms/self-service-purchase-faq
-ms.openlocfilehash: c7f91b8067aac5baa3c792dac10c1fdadae55fa2
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: cc0a059c745c64c9c196deccf771fffa30a5fe63
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046158"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403212"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
@@ -119,7 +121,7 @@ Microsoft は、米国の顧客に対して、電力プラットフォーム (Po
 
 ### <a name="where-does-the-admin-see-self-service-purchases"></a>管理者はどこにセルフサービス購入を表示しますか?
 
-グローバルおよび課金管理者は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で > **製品**を購入して購入したサブスクリプション、または中央の**調達で購入**したその他のすべてのサブスクリプションを確認できます。 このリストは、中央の調達で購入されたサブスクリプションのみにフィルターを適用したり、セルフサービス購入で購入したサブスクリプションを含めることができます。
+グローバルおよび課金管理者は、 **Billing**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で**製品**を購入して購入したサブスクリプション、または中央の調達で購入したその他のすべてのサブスクリプションを確認できます。 このリストは、中央の調達で購入されたサブスクリプションのみにフィルターを適用したり、セルフサービス購入で購入したサブスクリプションを含めることができます。
 
 管理者は、製品、買い手名、購入したサブスクリプション、有効期限、注文履歴、購入価格、割り当てられたユーザーを表示できます。
 

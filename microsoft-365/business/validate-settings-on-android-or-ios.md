@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
 description: Android または iOS デバイスで Microsoft 365 Business Premium app protection の設定を検証する方法について説明します。
-ms.openlocfilehash: d25a23bc8eb56e05bd74f7bf4658ee9e18dc41f8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d4b8ec3ff3a15c25133b20d437249611530977a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635726"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403372"
 ---
 # <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を検証する
 
@@ -41,7 +42,7 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 最初に、検証するアプリケーションにポリシーが適用されていることを確認してください。
   
-1. Microsoft 365 Business Premium[管理センター](https://portal.office.com)で、[ポリシー \> **編集ポリシー** **] に移動**します。
+1. Microsoft 365 Business Premium[管理センター](https://portal.office.com)で、[ポリシー編集**ポリシー] に移動** \> **Edit policy**します。
     
 2. セットアップ時に作成した設定または作成した別のポリシーに対する**Android 用のアプリケーションポリシー**を選択し、それが Outlook に対して適用されることを確認します (例:)。 
     
@@ -130,7 +131,7 @@ Android または iOS デバイスのアプリ保護設定を検証するには�
   
 最初に、検証するアプリケーションにポリシーが適用されていることを確認してください。
   
-1. Microsoft 365 Business Premium[管理センター](https://portal.office.com)で、[ポリシー \> **編集ポリシー** **] に移動**します。
+1. Microsoft 365 Business Premium[管理センター](https://portal.office.com)で、[ポリシー編集**ポリシー] に移動** \> **Edit policy**します。
     
 2. セットアップ時に作成した設定または作成した別のポリシーに対して**iOS 用のアプリケーションポリシー**を選択し、そのポリシーが Outlook 用に適用されているかどうかを確認します。 
     

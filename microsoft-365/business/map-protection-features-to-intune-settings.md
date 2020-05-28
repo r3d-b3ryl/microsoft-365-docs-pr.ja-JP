@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Microsoft 365 Business Premium の保護機能が Intune 設定にマップされる方法について説明します。 サブスクリプションでは、Intune の設定を変更するためのライセンスが提供されます。
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633245"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401580"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 Business Premium の保護機能を Intune の設定にマップする方法
 
@@ -44,7 +45,7 @@ Intune 設定を検索するには、Microsoft 365 Business Premium 管理者の
  > 
  > Microsoft 365 Business Premium サブスクリプションでは、すべての Intune 設定を変更するためのライセンスが提供されます。 [開始するには、「Intune の概要」を参照し](https://docs.microsoft.com/intune/introduction-intune)てください。
   
-必要&mdash;なポリシー名 (Android &mdash;のアプリケーションポリシーなど) を選択してから、[**ポリシー設定**] を選択します。
+必要なポリシー名 &mdash; (Android のアプリケーションポリシーなど) を選択し &mdash; てから、[**ポリシー設定**] を選択します。
   
 [ **デバイスの紛失または盗難時の作業ファイルの保護**] の設定
   
@@ -95,7 +96,7 @@ Intune 設定を検索するには、Microsoft 365 Business Premium 管理者の
 
 次の表では、Windows 10 デバイスの構成の設定と Intune の設定の対応について詳しく説明します。
   
-Intune 設定を検索するには、Microsoft 365 Business Premium 管理者の資格情報を使用してサインインし、 [Azure portal](https://portal.azure.com)に移動して、[**その他のサービス**] を選択し、**フィルター**に intune を入力し、[ **intune** \> **デバイス構成** \> **プロファイル**] を選択します。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
+Intune 設定を検索するには、Microsoft 365 Business Premium 管理者の資格情報を使用してサインインし、 [Azure portal](https://portal.azure.com)に移動して、[**その他のサービス**] を選択し、**フィルター**に intune を入力し、[ **intune** \> **デバイス構成**プロファイル] を選択し \> **Profiles**ます。 Then select **Device policy for Windows 10** \> **Properties** \> **Settings**.
   
 |**Windows 10 のデバイス ポリシーの設定**|**Intune の設定**|
 |:-----|:-----|
@@ -103,9 +104,9 @@ Intune 設定を検索するには、Microsoft 365 Business Premium 管理者の
 |Microsoft Edge で Web ベースの脅威から PC を保護する  <br/> |[ **Microsoft Edge ブラウザーの設定**] の [ **SmartScreen**] が [ **必須**] に設定されます。  <br/> |
 |指定の時間アイドル状態が続いた場合にデバイスの画面をオフにする (分)  <br/> |画面がロックされるまでの非アクティブな最長時間 (分)  <br/> |
 |ユーザーが Microsoft Storeからアプリをダウンロードすることを許可する  <br/> |カスタム URI ポリシー  <br/> |
-|ユーザーが Cortana にアクセスすることを許可する  <br/> |Microsoft 365 Business Premium で**オフ**に設定されている場合、**一般** \>の**Cortana**が Intune で**ブロック**されるように設定されます。  <br/> |
+|ユーザーが Cortana にアクセスすることを許可する  <br/> |**一般的な** \>Microsoft 365 Business Premium で**オフ**に設定すると、 **Cortana**は Intune で**ブロック**するように設定されます。  <br/> |
 |ユーザーが Microsoft から Windows のヒントと広告を受け取ることを許可する  <br/> |Microsoft 365 Business Premium で**オフ**に設定されている場合、 **Windows スポットライト**はすべてブロックされます。  <br/> |
-|Windows 10 デバイスを自動的に最新の状態に維持する  <br/> | この設定は、 **Microsoft Intune** \> **サービスの更新プログラム、windows 10 の更新リング**、[ **windows 10 デバイスの更新ポリシー**]、[**プロパティ** \>の**設定**] の順に選択されます。  <br/>  Microsoft 365 Business Premium 設定が **[オン**] に設定されている場合、以下のすべての設定が設定されます。  <br/> **サービスブランチ**が**CB**に設定されている (Microsoft 365 Business Premium でこの機能がオフになっている場合は cbb)。  <br/> **Microsoft 製品の更新プログラム**: **許可**  <br/> **Windows ドライバー**: **許可**  <br/> **自動更新の動作**: **メンテナンス時に自動的にインストールする**  <br/> **アクティブ時間の開始**: **6 AM**  <br/> **アクティブ時間の終了**: **10 PM**  <br/> **品質更新プログラムの延期期間 (日数)**: **0**  <br/> **機能更新プログラムの延期期間 (日数)**: **0**  <br/> **配信の最適化ダウンロード モード**: **HTTP と同じ NAT でのピアリングの組み合わせ**  <br/> |
+|Windows 10 デバイスを自動的に最新の状態に維持する  <br/> | この設定は、 **Microsoft Intune** \> **サービスの更新プログラム、windows 10 の更新リング**、[ **windows 10 デバイスの更新ポリシー**]、[**プロパティ**の設定] の順に選択され \> **Settings**ます。  <br/>  Microsoft 365 Business Premium 設定が **[オン**] に設定されている場合、以下のすべての設定が設定されます。  <br/> **サービスブランチ**が**CB**に設定されている (Microsoft 365 Business Premium でこの機能がオフになっている場合は cbb)。  <br/> **Microsoft 製品の更新プログラム**: **許可**  <br/> **Windows ドライバー**: **許可**  <br/> **自動更新の動作**: **メンテナンス時に自動的にインストールする**  <br/> **アクティブ時間の開始**: **6 AM**  <br/> **アクティブ時間の終了**: **10 PM**  <br/> **品質更新プログラムの延期期間 (日数)**: **0**  <br/> **機能更新プログラムの延期期間 (日数)**: **0**  <br/> **配信の最適化ダウンロード モード**: **HTTP と同じ NAT でのピアリングの組み合わせ**  <br/> |
 |||
    
 

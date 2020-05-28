@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: スイッチプランを手動で実行するか、サポートに連絡することになる理由について理解します。
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943145"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403152"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランを切り替えることができないのはなぜですか?
 
@@ -41,18 +42,18 @@ ms.locfileid: "43943145"
   
 ::: moniker range="o365-worldwide"
 
- **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md) | の購入サブスクリプション | [サブスクリプションと課金](../index.yml) | [通話のサポート](../../admin/contact-support-for-business-products.md)を[解約する](cancel-your-subscription.md)
+ **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md)  |  を購入するサブスクリプションをキャンセル[する](cancel-your-subscription.md)  | [サブスクリプションと課金](../index.yml)  | [サポート](../../admin/contact-support-for-business-products.md)へのお問い合わせ
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md) | の購入サブスクリプション | [サブスクリプションと課金](../index.yml) | [通話のサポート](../../admin/contact-support-for-business-products.md)を[解約する](cancel-your-subscription.md)
+ **他に何か必要ですか?** [別のサブスクリプション](../buy-another-subscription.md)  |  を購入するサブスクリプションをキャンセル[する](cancel-your-subscription.md)  | [サブスクリプションと課金](../index.yml)  | [サポート](../../admin/contact-support-for-business-products.md)へのお問い合わせ
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **他に何か必要ですか?** [21vianet が運用している Office 365 のサブスクリプションを購入または試用](../../admin/services-in-china/buy-or-try-subscriptions.md) | [するサブスクリプション](cancel-your-subscription.md) | [呼び出しのサポート](../../admin/contact-support-for-business-products.md)を解約する
+ **他に何か必要ですか?** [21vianet が運用している Office 365 のサブスクリプションを購入または試用する](../../admin/services-in-china/buy-or-try-subscriptions.md)  | サブスクリプションをキャンセル[する](cancel-your-subscription.md)  | [サポート](../../admin/contact-support-for-business-products.md)へのお問い合わせ
 
 ::: moniker-end
 

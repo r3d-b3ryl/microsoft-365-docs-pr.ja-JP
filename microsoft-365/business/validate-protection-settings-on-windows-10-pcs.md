@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: Microsoft 365 Business Premium app protection 設定を Windows 10 デバイスで検証し、ユーザーが会社のデータを個人ファイルや非管理アプリにコピーできないことを確認します。
-ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635746"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403392"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>Windows 10 PC でアプリの保護設定を検証する
 
@@ -37,11 +38,11 @@ ms.locfileid: "43635746"
   
  **接続の設定を確認する**
   
-1. Microsoft 365 business premium の資格情報を使用してサインインし、「 [microsoft 365 Business premium ユーザーの windows デバイス](set-up-windows-devices.md)をセットアップする」の説明に従って Azure AD に接続した後、[ **windows の設定** \> ] の [**アカウント** \> **アクセスの職場または学校**] に移動します。 Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
+1. Microsoft 365 business premium の資格情報を使用してサインインし、「 [microsoft 365 Business premium ユーザーの windows デバイス](set-up-windows-devices.md)をセットアップする」の説明に従って Azure AD に接続した後、[ **windows の設定**] の [ \> **アカウント** \> **アクセスの職場または学校**] に移動します。 [ ** \<tenant name\> Azure AD に接続**] を選択してから、[**情報**] を選択します。
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. [ \<テナント\>名**で管理**] ページで、次の図に示すような**管理サーバーのアドレス**を含む**接続情報**を確認できます。 
+2. [**管理者** \<tenant name\> ] ページで、次の図に示すような**管理サーバーのアドレス**を含む**接続情報**が表示されます。 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
@@ -67,7 +68,7 @@ ms.locfileid: "43635746"
     
 2. [ **職場または学校にアクセスする**] の下で [ **接続**] を選びます。
     
-3. Microsoft 365 Business Premium 資格情報を [**職場または学校のアカウントの設定] ダイアログボックス** \>に**入力します。**
+3. Microsoft 365 Business Premium 資格情報を [**職場または学校のアカウントの設定] ダイアログボックス**に入力し \> **Sign in**ます。
     
 4. [ **職場または学校にアクセスする**] ページで、[ **職場または学校アカウント**] を選んで、[ **情報**] を選びます。
     

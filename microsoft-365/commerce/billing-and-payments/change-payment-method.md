@@ -18,6 +18,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 一般法人向けサブスクリプションの支払い方法を更新する方法について説明します。
-ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: babc8911305fe009ad3b9dc49163a0525c6d0666
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045906"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401812"
 ---
 # <a name="change-your-payment-method"></a>支払方法を変更する
 
@@ -88,7 +89,7 @@ ms.locfileid: "44045906"
   
 請求書払いからクレジット カードまたは銀行口座払いに変更すると、自動的に新しいサブスクリプションが作成され、ユーザーが新しいサブスクリプションに移動します。その後、古いサブスクリプションが無効になります。 ユーザーはサービスの中断に気付かないので、心配は無用です。すべての情報は新しいサブスクリプションで利用できます。
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求**\> ] ページに移動します。
+1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
 
 2. [**表**] ビューの場合、[**カード**] を選択します。
 
@@ -139,9 +140,9 @@ ms.locfileid: "44045906"
 
 ## <a name="change-from-credit-card-or-bank-account-to-invoice"></a>クレジット カードまたは銀行口座から請求書に変更する
 
-注文が特定の数量以上であれば、請求書による支払いに変更できます。 要件を満たしていない場合は、「お客様の注文数量が、小切手送金の請求書に必要な大きさではありません」というメッセージが表示されます。
+注文が特定の数量以上であれば、請求書による支払いに変更できます。 要件を満たしていない場合は、「注文数量が、小切手での請求書を受け取るには十分ではありません」というメッセージが表示されます。
 
-注文数量が多すぎる場合は、与信審査が必要になることがあります。 その場合は、"請求書に変更する資格がありません" というメッセージが表示されます。 ご注文はクレジットの確認が必要です。 この場合、請求書の手動での支払いに変更します。 次の手順を使用して、手動の変更を完成させます。
+注文数量が多すぎる場合は、与信審査が必要になることがあります。 この場合、「請求書に変更する対象ではないです。 ご注文には与信審査が必要です」 この場合、請求書の手動での支払いに変更します。 次の手順を使用して、手動の変更を完成させます。
 
 1. <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>に移動し、現在のサブスクリプションと同じサブスクリプションを購入します。 チェックアウト時に、請求書による支払いオプションを選択します。
 
@@ -152,7 +153,7 @@ ms.locfileid: "44045906"
 
 貸方の確認が必要ない場合は、次の手順を使用して、請求書による支払いに変更します。
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求**\> ] ページに移動します。
+1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
 
 2. [**表**] ビューの場合、[**カード**] を選択します。
 
@@ -198,7 +199,7 @@ ms.locfileid: "44045906"
 
 サブスクリプションに構成されている支払い方法を次の手順でいつでも確認できます。
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求**\> ] ページに移動します。
+1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
 
 2. 確認するサブスクリプションを探します。 サブスクリプションに設定されている支払い方法が、**[課金]** セクションに表示されます。
 

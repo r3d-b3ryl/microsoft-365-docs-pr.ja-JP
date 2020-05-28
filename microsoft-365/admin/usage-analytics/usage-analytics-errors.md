@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: Microsoft 365 Usage Analytics テンプレートアプリの問題をトラブルシューティングする方法について説明します。
-ms.openlocfilehash: 7164aa246a79a8d8c5aa50d995b53b6221003c01
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212151"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402036"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Microsoft 365 usage analytics のトラブルシューティング
 
@@ -39,7 +40,7 @@ ms.locfileid: "43212151"
   
  **原因:** アプリに接続するには、Microsoft 365 管理センターからデータを購読する必要があります。 この手順を最初に実行しないと、Microsoft 365 テナント id を提供している場合でも、テンプレートアプリに接続できなくなります。 
   
- **このエラーを解決するには、次のようにします。** データをサブスクライブするには、 \>管理センターの [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">利用状況]</a> **レポート** \>を開き、ダッシュボードのメインページで Microsoft 365 Usage analytics タイルを探します。 [**作業の開始**] ボタンを選択し、開いた [**レポート**] ウィンドウで、[ **Power BI のための Microsoft 365 usage analytics のためにデータを利用できるようにする**] 設定をオンにして、[**保存**] をオンにします。
+ **このエラーを解決するには、次のようにします。** データをサブスクライブするには、管理センターの [ \> **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">利用状況]</a>レポートを開き、ダッシュボードのメインページで Microsoft 365 Usage analytics タイルを探します。 [**作業の開始**] ボタンを選択し、開いた [**レポート**] ウィンドウで、[ **Power BI のための Microsoft 365 usage analytics のためにデータを利用できるようにする**] 設定をオンにして、[**保存**] をオンにします。
   
 ## <a name="we-are-processing-your-data"></a>データを処理しています
 
@@ -67,7 +68,7 @@ ms.locfileid: "43212151"
   
  **原因:** テナント ID は GUID であり、その形式は xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx にする必要があります。テナント入力ボックスに他の文字列を入力すると、このエラーが表示されます。 
   
- **このエラーを解決するには、次のようにします。** 管理センター \>の**レポート** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用法</a>に移動し、ダッシュボードのメインページで Microsoft 365 Usage analytics タイルを探します。 The tenant id is listed on the tile. ここからコピーして、テンプレートアプリに接続するためのダイアログボックスに貼り付けることができます。 
+ **このエラーを解決するには、次のようにします。** 管理センターの \> **レポート** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用法</a>に移動し、ダッシュボードのメインページで Microsoft 365 Usage analytics タイルを探します。 The tenant id is listed on the tile. ここからコピーして、テンプレートアプリに接続するためのダイアログボックスに貼り付けることができます。 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>入力したテナント ID が弊社のシステムで認識されません
 
@@ -77,7 +78,7 @@ ms.locfileid: "43212151"
   
  **原因:** 入力したテナント ID が無効であるか、存在しません。 
   
- **このエラーを解決するには、次のようにします。** 管理センター \>の**レポート** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用法</a>に移動し、ダッシュボードのメインページで Microsoft 365 Usage analytics タイルを探します。 The tenant id is listed on the tile. ここからコピーして、テンプレートアプリに接続するためのダイアログボックスに貼り付けることができます。 
+ **このエラーを解決するには、次のようにします。** 管理センターの \> **レポート** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用法</a>に移動し、ダッシュボードのメインページで Microsoft 365 Usage analytics タイルを探します。 The tenant id is listed on the tile. ここからコピーして、テンプレートアプリに接続するためのダイアログボックスに貼り付けることができます。 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>資格情報を再入力して Power BI にもう一度サインインしてください
 

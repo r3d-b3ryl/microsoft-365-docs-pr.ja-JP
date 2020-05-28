@@ -20,13 +20,15 @@ search.appverid:
 - MOE150
 - BEA160
 description: 'さまざまな地域の Microsoft 365 for business サブスクリプションに対して請求される税の量を確認します。 '
-ms.custom: okr_SMB
-ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232831"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401752"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -114,7 +116,7 @@ Microsoft を介してなされた Microsoft 365 管理センターの購入に�
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>VAT ID を追加する (EU 加盟国のみ)
 
-1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 2. 更新するサブスクリプションのサブスクリプション カードを検索します。
 
@@ -160,7 +162,7 @@ Microsoft Corporation ([請求書を参照](view-your-bill-or-invoice.md)) に�
 
 売上税は、単価に対して計算されてから集計されます。
 
-次に例を示します。
+例:
 
 >*(単価 X 税率)X 数量 = 総売上税*
 
@@ -186,4 +188,4 @@ Microsoft Corporation ([請求書を参照](view-your-bill-or-invoice.md)) に�
   
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md)
   
-[請求書または請求書を理解する](understand-your-invoice.md)
+[課金内容または請求書の内容を理解する](understand-your-invoice.md)

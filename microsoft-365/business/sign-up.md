@@ -21,16 +21,17 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium に含まれる内容について説明し、「Microsoft 365 Business Premium にサインアップする」のステップバイステップのガイダンスを取得します。
-ms.openlocfilehash: 443363fa673a112ae13eb5b63308115724d9bd00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635106"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401560"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium へのサインアップ
 
@@ -88,7 +89,7 @@ Microsoft 365 Business Premium を入手するには、次の3つの方法があ
     3. クレジットカードの詳細を追加します。 会社の住所がクレジットカードの住所と一致しない場合は、会社の住所も必要になります。 会社の住所によって、支払う税金と利用可能なサービスが決まります。 税金の詳細については、「[どの税が課金されるのですか?](https://go.microsoft.com/fwlink/?linkid=2109701)」を参照してください。
     4. [**注文**] を選択します。 Microsoft が新しいプランの設定を完了するには、しばらく時間がかかります。
 
-## <a name="whats-next"></a>次の作業
+## <a name="whats-next"></a>次の手順
 
 [**セットアップに移動**] を選択して、ビジネスを保護するためのセキュリティを追加したり、Word や Excel などの Office アプリをダウンロードしたりするなど、他の手順を実行します。
 
@@ -96,4 +97,4 @@ Microsoft 365 Business Premium を入手するには、次の3つの方法があ
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for business トレーニングビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

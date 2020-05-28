@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141126"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403260"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -37,11 +38,11 @@ ms.locfileid: "44141126"
 
 ## <a name="view-your-subscriptions"></a>サブスクリプションを表示する
 
-購入したすべてのセルフサービス購入されたサブスクリプションの一覧を表示できます。 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
+購入したすべてのセルフサービス購入されたサブスクリプションの一覧を表示できます。 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>ライセンスをさらに購入または減らす方法
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
 
 2. 購入するサブスクリプションを検索するか、ライセンスを減らす必要があります。
 
@@ -54,7 +55,7 @@ ms.locfileid: "44141126"
 
 ### <a name="to-assign-licenses"></a>ライセンスを割り当てるには
 
-1. 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 
 2. ライセンスを割り当てるサブスクリプションを選択します。
 
@@ -69,7 +70,7 @@ ms.locfileid: "44141126"
 
 ### <a name="to-unassign-licenses"></a>ライセンスの割り当てを解除するには
 
-1. 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 
 2. ライセンスの割り当てを解除する製品を選択します。
 
@@ -81,7 +82,7 @@ ms.locfileid: "44141126"
 
 ## <a name="cancel-a-subscription"></a>サブスクリプションをキャンセルする
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
 
 2. キャンセルするサブスクリプションを検索します。
 
@@ -91,7 +92,7 @@ ms.locfileid: "44141126"
 
 ## <a name="manage-your-payment-details"></a>支払いの詳細を管理する
 
-1. 管理センターで、請求**請求書** > **& 支払い** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">請求プロファイル</a>ページに移動します。
+1. 管理センターで、請求**請求書**  >  **& 支払い**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">請求プロファイル</a>ページに移動します。
 
 2. リストから請求プロファイルを選択します。
 
@@ -104,7 +105,7 @@ ms.locfileid: "44141126"
 
 ### <a name="update-an-existing-payment-method"></a>既存の支払い方法を更新する
 
-1. 管理センターで、[**課金請求書** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[**課金請求書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
 
 2. 既存の支払い方法を編集するには、一覧から選択します。
 
@@ -114,7 +115,7 @@ ms.locfileid: "44141126"
 
 ### <a name="add-a-new-payment-method"></a>新しい支払い方法を追加する
 
-1. 管理センターで、[**課金請求書** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[**課金請求書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
 
 2. [**支払い方法の追加**] を選択します。
 
@@ -122,11 +123,11 @@ ms.locfileid: "44141126"
 
 ## <a name="view-your-invoices"></a>請求書を表示する
 
-1. 管理センターで、[課金請求**書** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[課金請求**書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
 
 2. [**請求書**] で、表示する請求書を選択します。
 
-## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
+## <a name="need-help-contact-us"></a>ヘルプが必要な場合 ご連絡ください。
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 

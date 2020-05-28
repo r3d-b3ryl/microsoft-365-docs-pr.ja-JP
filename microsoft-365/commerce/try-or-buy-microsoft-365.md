@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 サブスクリプションを試用または購入する
+title: Microsoft 365 サブスクリプションを試用する/購入する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 無料試用版を入手する方法、または Microsoft 365 のサブスクリプションを購入する方法について説明します。
-ms.openlocfilehash: 19529192e2fa48ac081a84e9ad54669c3ef16791
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141056"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403140"
 ---
-# <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用または購入する
+# <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用する/購入する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -45,12 +46,12 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 
 管理センターでサブスクリプションを追加すると、新しいサブスクリプションは既存のサブスクリプションと同じ組織 (ドメイン名前空間) に関連付けられます。 これにより、サブスクリプション間で組織内のユーザーを簡単に移動したり、必要な追加のサブスクリプションのライセンスを割り当てたりすることが容易になります。
   
-## <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用または購入する
+## <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用する/購入する
 
 ::: moniker range="o365-worldwide"
 
 
-1. 管理センターにサインインし[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)て、**請求** \> **書購入サービス**に移動します。
+1. 管理センターにサインインし [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) て、**請求** \> **書購入サービス**に移動します。
 
 2. [**サービスを購入**する] ページには、組織で使用可能なサブスクリプションが一覧表示されます。 試用または購入する Microsoft 365 プランを選択します。
 
@@ -79,7 +80,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 管理センターにサインインし[https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686)て、**請求** \> **書購入サービス**に移動します。
+1. 管理センターにサインインし [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686) て、**請求** \> **書購入サービス**に移動します。
 
 2. [**サービスを購入**する] ページには、組織で使用可能なサブスクリプションが一覧表示されます。 
 
@@ -107,7 +108,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 管理センターにサインインし[https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628)て、**請求** \> **書購入サービス**に移動します。
+1. 管理センターにサインインし [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628) て、**請求** \> **書購入サービス**に移動します。
 
 2. [**サービスを購入**する] ページには、組織で使用可能なサブスクリプションが一覧表示されます。 
 
@@ -135,7 +136,7 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
 ::: moniker-end
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 新しいサブスクリプションを取得したら、そのサブスクリプションを使用するユーザーにライセンスを割り当てる必要があります。 その方法については、「[ユーザーへのライセンスの割り当て](../admin/manage/assign-licenses-to-users.md)」を参照してください。
 

@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: Pc、電話、タブレットでデータを保護するために Microsoft 365 Business Premium に付属するセキュリティ機能について説明します。
-ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 839b5481e27591e1762a0d8eb5623f279d6d22dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165759"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402716"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium のセキュリティとコンプライアンスの機能
 
@@ -105,11 +106,11 @@ Microsoft 365 Business Premium サブスクリプションには、コンプラ�
     
     Exchange Online のアーカイブライセンスでは、継続的なデータバックアップを使用してメッセージを簡単にアーカイブできます。 削除済みアイテムを含むすべてのユーザーのメールを、後で探索または復元する際に必要になる場合に備えて保存します。 また、さまざまなアイテム保持ポリシーを使用して、訴訟ホールド、電子情報開示、またはコンプライアンス要件を満たすために電子メールデータを保持することができます。
     
-- **[秘密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
+- **[機密ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
    Microsoft 365 Business Premium には、 [Azure Information Protection プラン 1](https://go.microsoft.com/fwlink/p/?linkid=871407)のすべての機能が含まれています。 このプランを使用すると、"転送不可" や "コピーしない" などのコントロールを使用して、電子メールやドキュメント内の機密情報へのアクセスを制御できるようにする機密**ラベル**を作成できます。 機密情報を "機密" として分類し、ビジネスの外部および内部で分類情報を共有する方法を指定することもできます。 エンタープライズレベルの暗号化は、情報の機密を保持するために電子メールやドキュメントに簡単に適用できます。 Office アプリ用の Azure Information Protection クライアントアドインをインストールすることもできます。 詳細については、「 [Azure Information Protection の統一されたラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)」を参照してください。 機密ラベルについては、 **AzInfoProtection_UL**をインストールします。
 
-これらの機能は、セキュリティ&amp;コンプライアンスセンターおよび Intune 管理センターで管理できます。 時間の経過とともに、簡略化された統制は Microsoft 365 管理センターに追加されます。
+これらの機能は、セキュリティ &amp; コンプライアンスセンターおよび Intune 管理センターで管理できます。 時間の経過とともに、簡略化された統制は Microsoft 365 管理センターに追加されます。
   
     
 ## <a name="faq"></a>FAQ
@@ -118,7 +119,7 @@ Microsoft 365 Business Premium サブスクリプションには、コンプラ�
   
 はい。これらの機能は、Microsoft 365 Business Premium が販売されているすべての市場で利用できます。
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>セキュリティ&amp;コンプライアンスセンターを見つけるには、どうすればよいですか。
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>セキュリティコンプライアンスセンターを見つけるには、どうすればよい &amp; ですか。
   
 1. 管理者の資格情報を使用して、 [Microsoft 365 Business Premium にサインイン](https://portal.microsoft.com/)します。 
     
@@ -126,4 +127,4 @@ Microsoft 365 Business Premium サブスクリプションには、コンプラ�
     
     ![Microsoft 365 管理センターの左側のナビゲーションで、[管理センター] を選択します。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. [**セキュリティ&amp;コンプライアンス**] を選択し&amp;て、セキュリティ/コンプライアンスセンターに移動します。
+3. [**セキュリティ &amp; コンプライアンス**] を選択して、セキュリティ/コンプライアンスセンターに移動し &amp; ます。

@@ -15,15 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: デバイスで使用するためにライセンスをグループに割り当てる方法について説明します。
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ce3c8f7d669f2fe5d19c48d7a1fb1f224aaec7f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011187"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402872"
 ---
 # <a name="manage-licenses-for-devices"></a>デバイスのライセンスを管理する
 
@@ -41,7 +43,7 @@ Microsoft 365 for enterprise (デバイス) または Microsoft 365 Apps for エ
 
 グループにライセンスを割り当てるときは、グループ内のすべてのデバイスにライセンスを割り当てます。 1つのグループに割り当てることができるサブスクリプションは1つだけです。
 
-1. Microsoft 365 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+1. Microsoft 365 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 2. [**ライセンス**] ページで、[ **microsoft 365 apps for エデュケーション (デバイス)** ] または [ **microsoft 365 apps for enterprise (デバイス)**] を選択します。
 3. 次のページでサブスクリプションを選択し、[**ライセンスの割り当て**] を選択します。
 4. [**グループへのライセンスの割り当て**] ウィンドウで、グループ名の入力を開始し、結果からそれを選択して一覧に追加します。
@@ -51,7 +53,7 @@ Microsoft 365 for enterprise (デバイス) または Microsoft 365 Apps for エ
 
 グループからライセンスを割り当てを解除するときは、グループ内のすべてのデバイスからライセンスを削除します。 すべてのアプリとそれに関連付けられたデータは、読み取り専用になります。
 
-1. 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
+1. 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 2. [**ライセンス**] ページで、[ **microsoft 365 apps for エデュケーション (デバイス)** ] または [ **microsoft 365 apps for enterprise (デバイス)**] を選択します。
 3. 次のページで、サブスクリプションを選択し、[**その他のアクション**] を選択して、[**ライセンスの割り当て解除**] を選択します。
 4. [**ライセンスの割り当ての解除**] ダイアログボックスで、[**割り当て**の解除] を選択します。

@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,20 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Microsoft 365 for business の請求先住所を更新する方法について説明します。請求通知の受信に使用される電子メールアドレスを更新することもできます。
-ms.custom: okr_SMB
-ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232889"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401800"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -128,7 +130,7 @@ ms.locfileid: "44232889"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 2. 変更するサブスクリプションを検索します。 [**設定とアクション**] セクションで、[**サービスの利用先住所の編集**] を選択します。
 
@@ -204,7 +206,7 @@ ms.locfileid: "44232889"
 
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md)
 
-[請求書または請求書を理解する](understand-your-invoice2.md)
+[課金内容または請求書の内容を理解する](understand-your-invoice2.md)
 
 [サブスクリプションの代金を支払う](pay-for-your-subscription.md)
 

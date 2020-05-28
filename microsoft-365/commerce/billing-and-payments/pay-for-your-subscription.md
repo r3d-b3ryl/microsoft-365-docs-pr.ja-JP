@@ -24,19 +24,20 @@ description: Microsoft 365 for business サブスクリプションの支払い�
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: 387cc4af038bea572a60176b2c2b400f410aa6ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232877"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401764"
 ---
 # <a name="pay-for-your-subscription"></a>サブスクリプションを支払う
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -58,7 +59,7 @@ ms.locfileid: "44232877"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 2. 未払い残高のあるサブスクリプションを見つけます。 **[課金]** セクションで、**[サブスクリプションの支払期限が過ぎています]** の横にある **[残高の決済]** をクリックします。
 
@@ -313,4 +314,4 @@ ms.locfileid: "44232877"
 
 [クレジット カードまたは銀行口座を追加、更新、または削除する](add-update-or-remove-credit-card-or-bank-account.md)
 
-[請求書または請求書を理解する](understand-your-invoice2.md)
+[課金内容または請求書の内容を理解する](understand-your-invoice2.md)

@@ -14,15 +14,16 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 組織の無料セルフサービスサインアップサブスクリプションを管理する方法について説明します。
-ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045263"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403248"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>セルフサービスのサインアップサブスクリプションを管理する
 
@@ -43,7 +44,7 @@ ms.locfileid: "44045263"
 > [!IMPORTANT]
 > セルフサービスのサインアップサブスクリプションを削除すると、すべてのユーザーが自分のデータや電子メールにアクセスしたり、すべてのデータとメールを削除したりするのをブロックします。
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** > ] ページに移動します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
 2. 削除するセルフサービスのサインアップサブスクリプションを検索します。 [**設定 &** の [アクション] セクションで、[**サブスクリプションの削除**] を選択します。
 3. [**サブスクリプションの削除**] ウィンドウで、チェックボックスをオンにして、[**サブスクリプションの削除**] を選択します。
 

@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: Office 365 E3 から Microsoft 365 Business Premium にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633189"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402240"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Office 365 E3 から Microsoft 365 Business Premium への移行 
 
@@ -41,7 +42,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 | 機能    | Microsoft 365 Business Premium でのサポート    | Office 365 E3 のサポート | 
 |:-------|:-----|:-----|
 | **社内**        | | | 
-| Office アプリ<sup>1</sup>    | Microsoft 365 Apps for business    | エンタープライズ向け Microsoft 365 アプリ | 
+| Office アプリ<sup>1</sup>    | Microsoft 365 Apps for business    | Microsoft 365 Apps for enterprise | 
 | **クラウド生産性アプリ**        | | | 
 | Exchange Online および Outlook    | メールボックスごとに 50 GB の格納域の制限と無制限の Exchange Online アーカイブ    | メールボックスごとに 100 GB の格納域の制限と無制限の Exchange Online アーカイブ | 
 | Teams    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Office 365 E3 に含まれている](../media/check-mark.png) | 
