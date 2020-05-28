@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dfbb5ed43c5256109ccc0a137a3d144d084e573e
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: c02e27ccf6b4c1a1c03849d1f599acef43385668
+ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214243"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278460"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 情報セキュリティ管理基準
 
@@ -35,46 +35,42 @@ ISO/IEC 27001 は情報セキュリティ管理システム (ISMS) を正式に�
 
 ISO/IEC 27001 は国際的に受け入れられ、広く適用されています。この基準の認定が情報セキュリティの実施と管理に対する Microsoft アプローチの中心になっている大きな理由はここにあります。 Microsoft が ISO/IEC 27001 認定を達成していることは、ビジネス、セキュリティ、およびコンプライアンスの観点から顧客との約束を果たすために Microsoft が尽力していることをはっきり示しています。 現在、Azure Public と Azure Germany は、毎年、ISO/IEC 27001 コンプライアンスに関して、第三者の公認認定機関の監査を受けています。この機関は、セキュリティ コントロールが導入されていて、効果的に運用されていることを独自に検証します。
 
-Microsoft Cloud における ISO-Iec-27001 のメリットを確認してください: [ISO/IEC 27001:2013 をダウンロードする](https://go.microsoft.com/fwlink/p/?linkid=2100068)
+Microsoft Cloud における ISO/IEC 27001 のメリットをご確認ください: [ISO/IEC 27001:2013 をダウンロードする](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Microsoft Defender Advanced Threat Protection
+- [Dynamics 365、Dynamics 365 Government、Dynamics 365 ドイツ](https://aka.ms/d365-compliance-list)
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
 - OMS Service Map
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- Power BI Embedded
+- Power Virtual Agents
 - [Microsoft Professional Services](https://go.microsoft.com/fwlink/p/?linkid=2100022)
-- Stream
-- Azure DevOps Services
-- Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア
+- Microsoft Stream
+- Microsoft Threat Expert
 
-## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 監査サイクル: Microsoft のクラウド サービスでは、少なくとも年に 1 回、ISO 27001:2013 標準に照らした監査が実施されます。
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft マネージド デスクトップ、OMS Service Map、PowerApps、Power BI、Stream、Microsoft データセンター - ISO 27001 証明書](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure、Dynamics 365、および Online Services: ISO27001 の証明書](https://aka.ms/azureiso27001cert)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 - Global および Germany ISO 27001 - 情報セキュリティ管理基準 - 証明書](https://aka.ms/o365iso27001cert)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 - (以前の Dynamics CRM) ISO 27001 - 情報セキュリティ管理基準 - 証明書](https://aka.ms/D365ISO27001Cert)
-- [Dynamics 365 - Microsoft Dynamics Marketing Service (MDM) ISO 27001 - 情報セキュリティ管理基準 - 証明書](https://aka.ms/d365mdm27001cert)
-- [Dynamics 365 - Microsoft Social Engagement Service ISO 27001 - 情報セキュリティ管理基準 - 証明書](https://aka.ms/d365siso27001cert)
+- [Office 365—Global および Germany ISO 27001: 情報セキュリティ管理基準証明書](https://aka.ms/o365iso27001cert)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
@@ -84,36 +80,23 @@ Microsoft Cloud における ISO-Iec-27001 のメリットを確認してくだ�
 
 - [Microsoft Professional Services](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
-### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
-
-- [Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア - ISO 27001 証明書](https://aka.ms/windowsdefenderatpiso27001certificate)
-
 ## <a name="assessments-and-reports"></a>評価とレポート
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft マネージド デスクトップ、OMS Service Map、PowerApps、Power BI、Stream、Microsoft データセンター - ISO 27001 および 27018 監査評価レポート](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS Service Map、PowerApps、Power BI、Stream、Microsoft Datacenter - ISO 27001 および 27018 適用宣言書 (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure、Dynamics 365、Online Services: ISO27001、27018、27701 の監査評価レポート](https://aka.ms/azureiso27001report)
+- [Azure、Dynamics 365、および Online Services: 27001、27018、27701 の適用性に関するステートメント (SOA)](https://aka.ms/Azureiso27001soa)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 - ISO 27001、ISO 27018、ISO 27017 監査評価レポート](https://aka.ms/o365isoreport)
-- [Office 365 情報セキュリティ管理システム (ISMS) - セキュリティおよびプライバシーに関する適用宣言書](https://aka.ms/o365isosoa)
-- [Office 365 - Germany ISO 27001、ISO 27018、ISO 27017 監査評価レポート](https://aka.ms/o365gerisoaudit)
-- [Yammer ISO 27001 監査評価レポート](https://aka.ms/yammeriso)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 - ISO27001 の適用宣言書 (SOA)](https://aka.ms/d365isosoa)
+- [Office 365: ISO 27001、27018、27017 監査評価レポート](https://aka.ms/o365isoreport)
+- [Office 365 情報セキュリティ管理システム (ISMS)—セキュリティおよびプライバシーに関する適用宣言書](https://aka.ms/o365isosoa)
+- [Office 365 ドイツ: ISO 27001、27017、27018 監査評価レポート](https://aka.ms/o365gerisoaudit)
+- [Yammer: ISO27001 監査評価レポート](https://aka.ms/yammeriso)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
 - [Azure DevOps Services ISO 27001 証明書 IS 619017](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dVisual%2bStudio%2bTeam%2bServices&licencenumber=IS%20619017)
-
-### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
-
-- [Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア - ISO 27001 監査評価レポート](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [Microsoft Defender ATP - エンドポイントの検出と応答、自動の調査と修復、セキュリティ スコア - ISO 27001 および 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 [その他の監査レポートを見る](https://aka.ms/auditreports)
 
@@ -148,7 +131,7 @@ ISO/IEC 27001 を適用することは戦略的なコミットです。 まず�
 
 ## <a name="resources"></a>リソース
 
-- [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity (CSF),CIS Controls and ISO27001:2013 Frameworks](https://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
+- [Microsoft サイバー サービスのマッピング: NIST サイバーセキュリティ: (CSF)、CIS コントロール、ISO27001:2013 フレームワーク](https://download.microsoft.com/download/B/1/8/B18F4C7D-5CBA-4E68-A437-31F1E908ACBA/Microsoft_Cyber_Offerings_Mapped_to_Security_Frameworks_EN_US.pdf)
 - [ISO/IEC 27000 ディレクトリ](https://www.27000.org/index.htm)
 - [ISO/IEC 27001: 2013 基準](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=54534) (購入用)
 - [Microsoft による情報セキュリティのハードルの引き上げ](https://pages.bsigroup.com/l/73472/2015-07-24/v9btr) (BSI の事例)
