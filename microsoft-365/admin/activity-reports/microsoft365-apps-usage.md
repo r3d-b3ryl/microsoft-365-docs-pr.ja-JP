@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: Microsoft 365 管理センターの Microsoft 365 レポートダッシュボードを使用して、Microsoft 365 アプリの利用状況レポートを取得する方法について説明します。
-ms.openlocfilehash: eb8978c878b2356c8fe73cb0f9f0021b65fcc333
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: bdf6863b47739e77355137f0bb559e7cc425d055
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781441"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387659"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>管理センターの microsoft 365 レポート-Microsoft 365 アプリの使用状況
 
@@ -38,7 +39,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 
- 2. **[レポートの選択**] ドロップダウンから、[ **Office 365** \> **Microsoft 365 アプリの使用状況**] を選択します。
+ 2. **[レポートの選択**] ドロップダウンから、[ **Office 365**   \>  **Microsoft 365 アプリの使用状況**] を選択します。
 
 ## <a name="interpret-the-microsoft-365-apps-usage-report"></a>Microsoft 365 アプリの使用状況レポートを解釈する
 
@@ -52,7 +53,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
  |2. <br/> |各レポートのデータは、通常、過去 24 - 48 時間まで表示されます。 <br/> |
  |3. <br/> |**ユーザー**ビュー iew には、各アプリ (Outlook、Word、Excel、PowerPoint、OneNote、Teams) のアクティブユーザー数の傾向が表示されます。 "アクティブユーザー" とは、これらのアプリ内で意図的なアクションを実行するユーザーのことです。 <br/> |
  |4. <br/> |[**プラットフォーム**] ビューには、各プラットフォーム (Windows、Mac、Web、モバイル) について、すべてのアプリにわたってアクティブなユーザーの傾向が表示されます。 <br/> |
- |5.<br/>|[**ユーザー** ] グラフの Y 軸は、それぞれのアプリに対してアクティブな一意のユーザーの数です。 [ **プラットフォーム** ] グラフの Y 軸は、それぞれのプラットフォームの一意のユーザー数です。 両方のグラフの X 軸は、特定のプラットフォームでアプリが使用された日付です。<br/>|
+ |5.<br/>|[**ユーザー** ] グラフの Y 軸は、それぞれのアプリに対してアクティブな一意のユーザーの数です。 [ **プラットフォーム**   ] グラフの Y 軸は、それぞれのプラットフォームの一意のユーザー数です。 両方のグラフの X 軸は、特定のプラットフォームでアプリが使用された日付です。<br/>|
  6.<br/>|凡例の項目を選択して、グラフに表示する系列をフィルター処理できます。 たとえば、[**ユーザー** ] グラフでは、Outlook、Word、Excel、PowerPoint、OneDrive、または Teams を選択すると、それぞれに関連する情報のみが表示されます。 この選択を変更しても、その下のグリッドテーブルの情報は変更されません。|
  |7.<br/>|テーブルには、ユーザー レベルでのデータの内訳が表示されます。 テーブルの列は追加または削除できます。 <br/><br/>**Username**は、Microsoft アプリのアクティビティを実行したユーザーの電子メールアドレスです。<br><br/>[**最終アクティブ化日 (UTC)** ] は、ユーザーが Microsoft 365 アプリのサブスクリプションをアクティブ化した最新の日付です。<br/><br/>[**最後のアクティビティの日付 (UTC)** ] は、ユーザーによって意図的なアクティビティが実行された最新の日付です。 特定の日付に発生したアクティビティを表示するには、直接グラフ内の日付を選択します。<br/><br/>選択した期間内にユーザーがそのアプリでアクティブだったかどうかを識別する各アプリに対応する次の列。<br> <br>**Outlook** <br>**Word** <br>**Excel**<br>**PowerPoint** <br>**OneNote**<br><br> 選択した期間内にユーザーがそのプラットフォームでアクティブであったかどうかを特定する各プラットフォームに対応する次の列。 (Microsoft 365 アプリ内)<br><br>**Outlook (Windows)**<br>**Outlook (Mac)**<br>**Outlook (Web)** <br>**Outlook (モバイル)**<br> **Word (Windows)**<br> **Word (Mac)**<br> **Word (Web)**<br> **Word (Mobile)**<br> **Excel (Windows)**<br> **Excel (Mac)**<br> **Excel (Web)**<br> **Excel (Mobile)**<br> **PowerPoint (Windows)**<br> **PowerPoint (Mac)**<br>**PowerPoint (Web)**<br> **PowerPoint (Mobile)**<br> **OneNote (Windows)**<br> **OneNote (Mac)**<br> **OneNote (Web)**<br>**OneNote (モバイル)**<br> **Teams (Windows)**<br> **Teams (Mac)**<br> **Teams (Web)**<br>**Teams (モバイル)** |
  |8.<br/>|レポートの列を追加または削除するには、[**列の管理**] アイコンを選択します。|

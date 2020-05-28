@@ -18,25 +18,26 @@ ms.custom:
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'このチェックリストに従って、Microsoft 365 およびセキュリティで保護されたデータから従業員を削除します。 '
-ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322089"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387047"
 ---
 # <a name="remove-a-former-employee"></a>元従業員を削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
   
@@ -166,7 +167,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
   
-5. [**保存**] を選択します。 
+5. **[保存]** を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
  
@@ -182,7 +183,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
   
-5. [**保存**] を選択します。 
+5. **[保存]** を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -198,7 +199,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
   
-5. [**保存**] を選択します。 
+5. **[保存]** を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -220,7 +221,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
     
 5. [**モバイルデバイスの詳細**] ページの [**モバイルデバイス**] で、モバイルデバイスを選択し、[データワイプデバイスの**ワイプ**] を選択して、[ ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **ブロック**] を選択します。 
     
-6. [**保存**] を選択します。 
+6. **[保存]** を選択します。 
     
     **ヒント**: オンプレミスの Blackberry Enterprise Service からも、そのユーザーを削除するか無効にするかします。さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。 
     
@@ -325,20 +326,20 @@ Microsoft 365 サブスクリプションの一部として電子メールを所
 
 
 
-1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 ::: moniker-end
     

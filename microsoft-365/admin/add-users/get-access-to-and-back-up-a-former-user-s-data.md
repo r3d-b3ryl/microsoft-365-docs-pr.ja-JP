@@ -16,25 +16,26 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 従業員が辞職したときに、そのファイルやメールを保存する方法について説明します。
-ms.openlocfilehash: f7132b927c05b8339f20b268b48847291e9c710e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140635"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387203"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>元ユーザーのデータにアクセスしてバックアップを作成する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'PowerShell を使用して電子メールアドレスポリシーを構成することによって、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。 '
-ms.openlocfilehash: 1bc8a160ffc368bc4c66a5ac17ffcb203dc678f5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5569f42f15835be02a20166e64ce09a08b146dd7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630625"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388211"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Microsoft 365 グループを作成するときに使用するドメインを選択する
 

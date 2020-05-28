@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 電子メール、Skype、Office アプリ用の Microsoft 365 for business に新しい従業員を追加します。
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049499"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387311"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Microsoft 365 に新しい従業員を追加する
 
@@ -63,7 +64,7 @@ ms.locfileid: "44049499"
 
 Facebook、Amazon、Gmail と同様に、従業員は Microsoft 365 を使用するためにサインインします。 ユーザーに次のサインイン情報を提供します。
   
-- にサインイン[https://www.office.com](https://www.office.com)します。
+- にサインイン [https://www.office.com](https://www.office.com) します。
     
 - [**サインイン**] を選択し、ユーザー ID とパスワードを入力します。
     
@@ -74,9 +75,9 @@ Facebook、Amazon、Gmail と同様に、従業員は Microsoft 365 を使用す
   
 次に、これらを開始するためのクイックリファレンスを示します。
   
-|**タスク**|**詳細を検索する**|
+|**Task**|**詳細を検索する**|
 |:-----|:-----|
-|Office へのサインイン  <br/> |に[https://www.office.com](https://www.office.com)移動し、[**サインイン**] を選択して、ユーザー ID とパスワードを入力します。  <br/> |
+|Office へのサインイン  <br/> |に移動し、[ [https://www.office.com](https://www.office.com) **サインイン**] を選択して、ユーザー ID とパスワードを入力します。  <br/> |
 |Office アプリをコンピューターにインストールします。  <br/><br/> |サインインすると、ホームページに Word や Outlook などのアプリをダウンロードしてインストールするためのリンクが表示されます。  [**Office のインストール**] を選択します。         手順については、「 [Office をインストールする方法](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)」を参照してください。  <br/> |
 |Outlook 2016 で電子メールをセットアップします。  <br/> |Office アプリをコンピューターにインストールしたら、電子メールをセットアップします。 手順については、「 [Outlook をセットアップする方法](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)」を参照してください。  <br/> |
 |Skype for Business をセットアップして、会社や世界中の同僚やビジネスパートナーと接続できるようにします。 IM、音声、またはビデオ通話で会話を開始できます。  <br/> |[コンピューターに Skype For business をインストール](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx)します。  <br/> <br/>Skype for Business の使用方法について[は、ビデオをご覧ください。](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>Skype for business をセットアップして、従業員が無料の Skype アプリを使用している会社の外部のユーザーに連絡できるようにしますか。 そうでない場合は、Skype for Business を使用するときに予想されることがわかるように、新しい従業員に通知します。  <br/> |

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: Microsoft 365 管理センターについて説明します。サインインする方法、管理者、およびビデオの紹介をご覧ください。
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623966"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386939"
 ---
 # <a name="admin-center-overview"></a>管理センターの概要 
 
@@ -35,19 +36,19 @@ ms.locfileid: "43623966"
   
 ::: moniker range="o365-worldwide"
 
- **管理者アカウントでにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>します。**
+ **管理者アカウントでにサインイン <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> します。**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**管理者アカウントを使用して、Office 365 ドイツ<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>でサインインします。**
+**管理者アカウントを使用して、Office 365 ドイツでサインイン <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> します。**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**管理者アカウントを使用して、21Vianet が運用<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>している Office 365 にサインインします。**
+**管理者アカウントを使用して、21Vianet が運用している Office 365 にサインイン <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> します。**
 
 ::: moniker-end
 

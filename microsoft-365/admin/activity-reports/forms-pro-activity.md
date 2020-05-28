@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: Microsoft 365 管理センターの Microsoft 365 レポートダッシュボードを使用して Microsoft Forms Pro アクティビティレポートを取得する方法について説明します。
-ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: df03f3f0300dcd923f43987ee786981b1653b1ce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804811"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387707"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>管理センターフォーム Pro アクティビティの Microsoft 365 レポート
 
@@ -38,7 +39,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 
     
-2. **[レポートの選択**] ドロップダウンから、[**フォーム Pro** \> **アクティビティ**] を選択します。
+2. **[レポートの選択**] ドロップダウンから、[**フォーム Pro**アクティビティ] を選択し \> **activity**ます。
 
 ## <a name="interpret-the-forms-activity-report"></a>フォームアクティビティレポートを解釈する
 

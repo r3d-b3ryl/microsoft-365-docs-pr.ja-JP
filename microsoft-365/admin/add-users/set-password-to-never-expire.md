@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Windows PowerShell を使用して、一部のユーザーパスワードを期限切れにしないように設定する方法について説明します。
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173498"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387007"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
-1. 管理センターで、[**設定** \>の<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">設定</a>] ページに移動します。
+1. 管理センターで、[**設定**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">設定</a>] ページに移動します。
 2. [設定] ページの上部で、[**セキュリティ & プライバシー**] を選択します。
 3. [**パスワードの有効期限ポリシー**] を選択します。 
 4. パスワードが期限切れにならないように設定されている場合は、[**ユーザーのパスワードの有効期限を何日後に設定**する] の横にあるチェックボックスをオンにします。 パスワードが期限切れになるまでの日数を指定するオプションが表示されます。
@@ -127,4 +128,4 @@ AzureAD モジュールの Set-azureaduser コマンドの詳細については�
     ```
 
 > [!WARNING]
-> パスワードは`pwdLastSet`属性`-PasswordPolicies DisablePasswordExpiration`に基づいてエージングが設定されています。 ユーザーのパスワードの有効期限が切れないように設定してから90日後に移行すると、パスワードの有効期限が切れます。 `pwdLastSet`属性に基づいて、有効期限を`-PasswordPolicies None`変更した場合、90日より`pwdLastSet`前のパスワードについては、次にサインインするときにユーザーを変更する必要があります。 この変更によって、多数のユーザーに影響を与える可能性があります。
+> パスワード `-PasswordPolicies DisablePasswordExpiration` は属性に基づいてエージングが設定さ `pwdLastSet` れています。 ユーザーのパスワードの有効期限が切れないように設定してから90日後に移行すると、パスワードの有効期限が切れます。 属性に基づいて、 `pwdLastSet` 有効期限を変更した場合、90日より前のパスワードについては、 `-PasswordPolicies None` 次に `pwdLastSet` サインインするときにユーザーを変更する必要があります。 この変更によって、多数のユーザーに影響を与える可能性があります。

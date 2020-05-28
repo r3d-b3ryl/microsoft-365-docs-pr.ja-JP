@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: Microsoft 365 グループの名前付けポリシーを作成する方法について説明します。
-ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630445"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388007"
 ---
 # <a name="groups-naming-policy"></a>グループの名前付けポリシー
 
@@ -38,11 +39,11 @@ ms.locfileid: "43630445"
 
 グループの名前付けポリシーは、次の機能で構成されています。
 
-- **プレフィックス/サフィックスの名前付けポリシー**: グループの名前付け規則を定義するには、プレフィックスまたはサフィックスを使用\_できます\_(例: "US My Group Engineering")。 プレフィックス/サフィックスは、固定文字列、またはグループを作成しているユーザーに基づいて置換される [Department] などのユーザー属性のいずれかにすることができます。
+- **プレフィックス/サフィックスの名前付けポリシー**: グループの名前付け規則を定義するには、プレフィックスまたはサフィックスを使用できます (例: "US \_ My Group \_ Engineering")。 プレフィックス/サフィックスは、固定文字列、またはグループを作成しているユーザーに基づいて置換される [Department] などのユーザー属性のいずれかにすることができます。
 
 - ユーザー**設定のブロック**された単語: 組織に固有で、ユーザーが作成したグループでブロックされるブロックされる単語のセットをアップロードできます。 (例: "CEO, Payroll, HR")。
 
-## <a name="licensing-requirements"></a>ライセンス要件
+## <a name="licensing-requirements"></a>ライセンスの要件
 
 Microsoft 365 グループの Azure AD 名前付けポリシーを使用するには、1つ以上の Microsoft 365 グループのメンバーである一意のユーザー (ゲストを含む) ごとに、Azure Active Directory Premium P1 ライセンスまたは Azure AD Basic EDU ライセンスを所有している必要がありますが、必ずしも割り当てることはできません。
 
@@ -54,7 +55,7 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 
 ### <a name="fixed-strings"></a>固定文字列
 
-短い文字列を使用して、GAL とグループワークロードの左側のナビゲーションでグループを区別するのに役立つ場合があります。 一般的なプレフィックスのサフィックスには、' Grp\_Name '、'\#name '、'\_name ' などのキーワードがあります。
+短い文字列を使用して、GAL とグループワークロードの左側のナビゲーションでグループを区別するのに役立つ場合があります。 一般的なプレフィックスのサフィックスには、' Grp \_ Name '、' \# name '、' \_ name ' などのキーワードがあります。
 
 ### <a name="attributes"></a>属性
 
@@ -80,7 +81,7 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 
 - プレフィックスとサフィックスには、グループ名とグループのエイリアスでサポートされている特殊文字を含めることができます。 プレフィックスとサフィックスに、グループエイリアスで許可されていない特殊文字が含まれている場合、それらはグループ名にのみ適用されます。 そのため、この場合は、グループ名に適用されているプレフィックスとサフィックスは、グループのエイリアスに適用されているものとは異なります。
 
-- Yammer の Microsoft 365 に接続されているグループを使用している場合は、名前付けポリシー \#に\[次\]の\<文字を\>使用しないでください。 @、、、、、、。 これらの文字が名前付けポリシーに含まれている場合、正規の Yammer ユーザーはグループを作成できません。
+- Yammer の Microsoft 365 に接続されたグループを使用している場合は、名前付けポリシーで次の文字を使用しないでください。 @、 \# 、 \[ 、、 \] \<, and \> 。 これらの文字が名前付けポリシーに含まれている場合、正規の Yammer ユーザーはグループを作成できません。
 
 ## <a name="custom-blocked-words"></a>ユーザー設定のブロックされた単語
 

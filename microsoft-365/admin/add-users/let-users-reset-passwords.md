@@ -17,18 +17,19 @@ ms.custom:
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービスのパスワードリセットツールを使用してパスワードをリセットする方法について説明します。
-ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173532"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387035"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
@@ -53,19 +54,19 @@ ms.locfileid: "44173532"
 次の手順を行うと、社内のすべてのユーザーに対してセルフサービスによるパスワードのリセットがオンになります。
   
 ::: moniker range="o365-worldwide"
-1. 管理センターで、[**設定** \>の<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">設定</a>] ページに移動します。
+1. 管理センターで、[**設定**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">設定</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**設定** \> **セキュリティ&amp;プライバシー** ] ページに移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**設定** \> **セキュリティ &amp; プライバシー** ] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**設定** \>の**設定** \> ] [**セキュリティ&amp;プライバシー** ] ページに移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**設定**の設定] [ \> **Settings** \> **セキュリティ &amp; プライバシー** ] ページに移動します。
 
 ::: moniker-end
 

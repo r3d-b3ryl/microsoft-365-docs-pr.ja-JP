@@ -22,18 +22,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: アプリの管理ポリシーを作成し、ユーザーの個人用 Windows 10 デバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: bbfb07302f2d77f7e66301723d176cf053f79cc1
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: c3e003205da30fa79069946960ef00e4195f0cbc
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561342"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386539"
 ---
 # <a name="set-application-protection-settings-for-windows-10-devices"></a>Windows 10 デバイスのアプリケーション保護設定を設定する
 
@@ -41,9 +42,9 @@ ms.locfileid: "42561342"
 
 ユーザーが作業タスクを実行する個人の Windows 10 デバイスを持っている場合、それらのデバイスでもデータを保護することができます。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 
     
-2. 左側のナビゲーションで、[**デバイス** \> **ポリシー** \>の**追加**] を選択します。
+2. 左側のナビゲーションで、[**デバイス**ポリシーの追加] を選択し \> **Policies** \> **Add**ます。
 
 3. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
     

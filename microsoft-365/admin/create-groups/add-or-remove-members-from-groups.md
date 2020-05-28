@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,19 +21,19 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Microsoft 365 管理センターで、グループにメンバーを追加したり、グループからメンバーを削除したり、グループ所有者の状態を管理したりする方法について説明します。
-ms.openlocfilehash: 96d9485821c27f2e9a4696401938da35a9996996
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 99f764c3fc0022a570af6f3dc232725025b4d32f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140557"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388151"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターが変更されています。 ここに示されている詳細情報とは異なる場合は、「[新しい Microsoft 365 管理センターについ](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)て」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 

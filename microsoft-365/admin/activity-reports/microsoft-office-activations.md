@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: Office ライセンス認証レポートを取得して、Office サブスクリプションをアクティブ化したユーザーを確認し、追加のヘルプが必要になる可能性のあるユーザーを特定する方法について説明します。
-ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621224"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387743"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>管理センターの microsoft 365 レポート-Microsoft Office のライセンス認証
 
@@ -39,7 +40,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 
     
-2. **[レポートの選択**] ドロップダウンから、[ **Office 365** \>の**ライセンス認証**] を選択します。 
+2. **[レポートの選択**] ドロップダウンから、[ **Office 365**の \> **ライセンス認証**] を選択します。 
   
 ## <a name="interpret-the-office-activations-report"></a>Office ライセンス認証レポートを解釈する
 
@@ -49,7 +50,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
   
 |||
 |:-----|:-----|
-|1-d  <br/> |Office のライセンス認証状況のレポートには、Office ライセンス認証データの現在の状態が表示されます [グラフ右上に表示されたレポートの日付以降]。  <br/> |
+|1   <br/> |Office のライセンス認証状況のレポートには、Office ライセンス認証データの現在の状態が表示されます [グラフ右上に表示されたレポートの日付以降]。  <br/> |
 |pbm-2  <br/> |各レポートのデータは、通常、過去 24 - 48 時間まで表示されます。  <br/> |
 |1/3  <br/> |[ **ライセンス認証**] グラフには、デスクトップとデバイスの Office ライセンスの認証数が表示されます。  <br/> |
 |4   <br/> |[ **ユーザー**] グラフには、有効なユーザー数と、デスクトップまたはデバイスで Office サブスクリプションのライセンス認証を行ったユーザー数が表示されます。  <br/> |

@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: ユーザー アカウントを削除する方法を説明します。 ユーザーのメールと OneDrive のコンテンツの処置方法に関する決定や、製品ライセンスを保持するのか支払いを停止するのかに関する決定を行います。
-ms.openlocfilehash: a179915ae92def2a967dc86378346bb905c923e4
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 4102fe4ac297a1f426b3bf575e748a72b323ebb6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049461"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387191"
 ---
 # <a name="delete-a-user-from-your-organization"></a>組織からユーザーを削除する
   
@@ -138,7 +139,7 @@ ms.locfileid: "44049461"
   
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の**請求** \> ] ページに移動します。 このオプションが表示されない場合は、グローバル管理者または請求管理者ではないことを意味します。この場合、この手順を実行することはできません。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。 このオプションが表示されない場合は、グローバル管理者または請求管理者ではないことを意味します。この場合、この手順を実行することはできません。
 
 2. (サブスクリプションが複数ある場合は) サブスクリプションを選択し、[**ライセンスの追加/削除**] を選択してライセンスを削除します。こうすることで、新しい従業員を採用するまでライセンスの支払いを停止できます。  
 

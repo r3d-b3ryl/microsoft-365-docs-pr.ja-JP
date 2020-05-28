@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: メンバーが Microsoft 365 グループとしてメールを送信できるようにする方法、または Microsoft 365 グループの代理としてメールを送信できるようにする方法について説明します。
-ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049389"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388139"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループに代わって送信または送信できるようにする
 
@@ -46,11 +47,11 @@ ms.locfileid: "44049389"
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2. ユーザーが送信者とし](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)て送信できるようにするグループの [編集グループの編集] アイコンを選択します。 **Edit**![   
+2. **Edit** ![ ユーザーが ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 送信者として送信できるようにするグループの [編集グループの編集] アイコンを選択します。   
     
 3. [ **グループ委任**] を選びます。
     
-4. [**送信**] セクションで、グループと**+** して送信するユーザーを追加するための署名を選択します。 
+4. [**送信**] セクションで、 **+** グループとして送信するユーザーを追加するための署名を選択します。 
     
     ![プラス記号を選択して、Microsoft 365 グループとして送信するユーザーを追加します。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
@@ -64,11 +65,11 @@ ms.locfileid: "44049389"
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> で、[**受信者**]、[**グループ**] の順に移動します。
     
-2. ユーザーが送信者とし](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)て送信できるようにするグループの [編集グループ**の編集] アイコンを選択し**ます。 ![ 
+2. **Edit** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ユーザーが送信者として送信できるようにするグループの [編集グループの編集] アイコンを選択します。 
     
 3. [ **グループ委任**] を選びます。
     
-4. [代理人として送信する] **+** セクションで、グループとして送信するユーザーを追加するための署名を選択します。 
+4. [代理人として送信する] セクションで、 **+** グループとして送信するユーザーを追加するための署名を選択します。 
     
     ![プラス記号を選択して、Microsoft 365 グループとして送信するユーザーを追加します。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
