@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 98f84d40b475c3b07ce618dcc207005fce47e83f
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: c696c7b8b19b5c19ff3fcaf30029001604f791bf
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957297"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327135"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -40,7 +40,7 @@ ms.locfileid: "43957297"
     
     分類法を定義するためのより広範なガイダンスについては、[Service Trust Portal](https://aka.ms/DataClassificationWhitepaper) のホワイト ペーパー「データ分類と秘密度ラベルの分類」をダウンロードしてください。
 
-2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、「一般」ラベルなどの秘密度の低いコンテンツには単にヘッダーやフッターを適用し、「社外秘」ラベルなど秘密度のより高いコンテンツには透かし、暗号化、およびエンドポイント保護を適用する、といったことができます。
+2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、"一般" ラベルなどの秘密度の低いコンテンツには単にヘッダーやフッターを適用し、"社外秘" ラベルなどの秘密度のより高いコンテンツには透かしや暗号化を適用する、といったことができます。
 
 3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用できます。一度定義したラベルは、異なるユーザーに割り当てる複数のラベル ポリシーに含めることができます。 たとえば、ラベル ポリシーをごく少数のユーザーに対して適用して、秘密度ラベルを試験運用することができます。 組織全体に対してラベルを展開する準備ができたら、ラベルの新しいラベル ポリシーを作成し、今回はすべてのユーザーを指定することができます。
 
@@ -75,21 +75,22 @@ ms.locfileid: "43957297"
 |----------------|---------------|
 |組織のデータを保護できるように、秘密度ラベルを作成して公開する|[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)|
 |秘密度ラベルを使用してドキュメントやメールを暗号化し、そのコンテンツにアクセスできるユーザーとその使用方法を制限する |[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)|
-|SharePoint (および OneDrive) で、暗号化のラベルが付いたドキュメントのコラボレーション機能を有効にする | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
+|ドキュメントが暗号化されている場合でも、共同編集、電子情報開示、データ損失防止、検索をサポートし、Office on the web の秘密度ラベルを有効にします。 | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
 |Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付ける |[Office アプリで秘密度ラベルを使用する](sensitivity-labels-office-apps.md)|
 |秘密度ラベルをドキュメントとメールに自動的に適用する | [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)|
 |秘密度ラベルを使用して、Teams や SharePoint のコンテンツを保護する |[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する (パブリック プレビュー)](sensitivity-labels-teams-groups-sites.md)|
 |オンプレミスのデータ ストアに保存されているファイルを検出、ラベル付け、保護する |[ファイルを自動的に分類および保護するための Azure Information Protection スキャナーを展開する](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |クラウドのデータ ストアに保存されているファイルを検出、ラベル付け、保護する|[クラウドに保存されている規制対象および機密データを検出、分類、ラベル付け、保護する](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|秘密度ラベルを使用して展開ステータスをレポートし、ラベル構成を微調整する方法を可視化する|[ラベル分析によるラベル使用状況を表示する](label-analytics.md)|
+|Power BI で秘密度ラベルを適用して表示し、ダウンロードしたレポートを保護します。|[Power BI でのデータ保護 (プレビュー)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|組織で秘密度ラベルがどのように使用されているかを監視し、理解する|[データを把握する - データ分類の概要](data-classification-overview.md) <br /><br /> [ラベル分析によるラベル使用状況を表示する](label-analytics.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>機密度ラベルのエンド ユーザー向けのドキュメント
 
 最も効果的なエンド ユーザー向けのドキュメントは、選択したラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ただし、基本的な手順については次のリソースを使用できます。   
 
-- [Office 内のファイルやメールに機密ラベルを適用する](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Office の秘密度ラベルに関する既知の問題](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Office 内のファイルやメールに機密ラベルを適用する](https://support.microsoft.com/ja-JP/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Office の秘密度ラベルに関する既知の問題](https://support.microsoft.com/ja-JP/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [機密度ラベルの自動適用または推奨に関する既知の問題](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
