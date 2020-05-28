@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3758167723594916661ef4ffd14bf62e768c0c19
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: fe5faab86c48f465bd48c97476e3970eef6db60b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42357438"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44395524"
 ---
-# <a name="contact-support-for-nauru"></a><span data-ttu-id="f1f49-103">Nauru のサポートに問い合わせる</span><span class="sxs-lookup"><span data-stu-id="f1f49-103">Contact support for Nauru</span></span>
+# <a name="contact-support-for-nauru"></a><span data-ttu-id="c4983-103">Nauru のサポートに問い合わせる</span><span class="sxs-lookup"><span data-stu-id="c4983-103">Contact support for Nauru</span></span>
 
-<span data-ttu-id="f1f49-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="f1f49-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c4983-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="c4983-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f1f49-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="f1f49-105">Phone number</span></span>
-<span data-ttu-id="f1f49-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="f1f49-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c4983-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="c4983-105">Phone number</span></span>
+<span data-ttu-id="c4983-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="c4983-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f1f49-107">時間</span><span class="sxs-lookup"><span data-stu-id="f1f49-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f1f49-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="f1f49-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c4983-107">時間</span><span class="sxs-lookup"><span data-stu-id="c4983-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c4983-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="c4983-108">Billing Support:</span></span>
 
-<span data-ttu-id="f1f49-109">英語: 月曜日から金曜日9時午前5時</span><span class="sxs-lookup"><span data-stu-id="f1f49-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c4983-109">英語: 月曜日から金曜日9時午前5時</span><span class="sxs-lookup"><span data-stu-id="c4983-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f1f49-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="f1f49-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c4983-110">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="c4983-110">Technical Support:</span></span>
 
-<span data-ttu-id="f1f49-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="f1f49-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c4983-111">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="c4983-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f1f49-112">国際通話料金の適用</span><span class="sxs-lookup"><span data-stu-id="f1f49-112">International call charges apply</span></span>
+<span data-ttu-id="c4983-112">国際通話料金の適用</span><span class="sxs-lookup"><span data-stu-id="c4983-112">International call charges apply</span></span>
