@@ -17,14 +17,15 @@ search.appverid:
 - MOE150
 ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
+- AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: ユーザーを最新の Office クライアントにアップグレードする方法について説明します。
-ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 22fe8e12e4aff4f9afe52e913ad57d37866dbb95
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011276"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398812"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Microsoft 365 for business ユーザーを最新の Office クライアントにアップグレードする
 
@@ -89,7 +90,7 @@ Office を含むサブスクリプションに切り替えてください。 「
 
  - Office の個別の1回の購入を購入します。 「 [Office Home &amp; Business](https://products.office.com/home-and-business)または[office Professional](https://products.office.com/professional) 」を参照してください。
 
-     OR
+     または
 
  - ボリュームライセンスを使用して、Office の複数のコピーを購入します。 「[ボリューム ライセンスで提供されるスイート製品の比較](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)」をご覧ください。
 

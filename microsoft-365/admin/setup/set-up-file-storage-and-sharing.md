@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: OneDrive とチームサイトを使用してファイルの保存と共有を行う方法について説明します。
-ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e41e180417cb8543a73b08668d18ef9d2998c782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208188"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398836"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>ファイル ストレージと共有をセットアップする
 
@@ -144,7 +145,7 @@ Microsoft 365 ライセンスが割り当てられている (および SharePoin
 
     ![この画面でローカルフォルダーを変更する](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. チームサイト内のファイルは、組織の名前の下にあるエクスプローラーの左側のウィンドウに表示されます。 OneDrive のファイルが "OneDrive- \< 組織の名前" の下に表示されます。 \>
+6. チームサイト内のファイルは、組織の名前の下にあるエクスプローラーの左側のウィンドウに表示されます。 OneDrive のファイルが "OneDrive-" に表示されます。 \<Name of Organization\>
 
     ![「ローカルフォルダーの同期の内容」を参照してください。](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   

@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織に対して送受信されるすべての電子メールメッセージに電子メール署名、法的免責事項、または開示ステートメントを追加する方法について説明します。
-ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631979"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398956"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
@@ -62,7 +63,7 @@ ms.locfileid: "43631979"
 
 ::: moniker-end
 
-1. アプリ起動![ツールのアプリ起動ツールの](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)アイコンを選択し、[**管理者**] を選択します。
+1. アプリ起動ツールのアプリ起動ツールのアイコンを選択し、[ ![ ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) **管理者**] を選択します。
    
     探しているアプリが見つかりませんか? アプリ起動ツールで [**すべてのアプリ**] を選択すると、利用可能なアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
     
@@ -70,7 +71,7 @@ ms.locfileid: "43631979"
     
 3. [メールフロー] で、[**ルール**] を選択します。
     
-4. [ **+** (追加)] アイコンを選択し、[免責事項の**適用**] を選択します。
+4. [ **+** (追加)] アイコンを選択し、[**免責**事項の適用] を選択します。
     
 5. ルールに名前を付けます。
     

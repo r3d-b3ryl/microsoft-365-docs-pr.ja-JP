@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 新しいビジネス id にデータを移動する方法について説明します。
-ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 03a8ff6b3cfab43d80401a10825a1c274e278ed9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155365"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399328"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>メールとデータを Microsoft 365 Business Standard に移行する
 
@@ -39,7 +40,7 @@ Microsoft 365 Business Standard にアップグレードすると、新しい*�
  **OneDrive データをコピーする**
 1. Microsoft 365 for business に移行するファイルを一時的に保存するために、ハードドライブに一時フォルダーを作成します。
     
-2. に[https://onedrive.live.com/](https://onedrive.live.com/)移動し、Microsoft 365 ファミリのサブスクリプションにアクセスするのに使用する microsoft アカウントを使用してサインインします。 
+2. に移動 [https://onedrive.live.com/](https://onedrive.live.com/) し、microsoft 365 ファミリのサブスクリプションにアクセスするのに使用する microsoft アカウントを使用してサインインします。 
     
 3. Microsoft 365 for business で使用するファイルを、手順1で作成したローカルフォルダーにコピーします。
     
@@ -51,7 +52,7 @@ Microsoft 365 Business Standard にアップグレードすると、新しい*�
     > [!TIP]
     > OneDrive for Business を初めて開いたときに、OneDrive をセットアップする必要があります。 このような状況が発生した場合は、[ **OneDrive for business へようこそ**] ページで、[**次へ**] を選択します。 OneDrive をセットアップしたら、 **onedrive の準備ができ**ました。 
   
-3. You'll be taken to an empty OneDrive folder. サブフォルダーを作成する場合は、[**新しい** \> **フォルダー**] を選択します。
+3. You'll be taken to an empty OneDrive folder. サブフォルダーを作成する場合は、[**新しい**フォルダー] を選択し \> **Folder**ます。
 
 4. [**アップロード**] を選択して、OneDrive ファイルをコピーしたハードドライブからファイルをコピーします。 
   

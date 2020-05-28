@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Microsoft 365 for business をセットアップするために必要な作業について説明します。
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794041"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398848"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画する
 
@@ -49,7 +50,7 @@ ms.locfileid: "43794041"
 > [!NOTE]
 > Microsoft 365 で、ウィザードで追加するユーザーに[管理者ロールを割り当てる](../add-users/assign-admin-roles.md)必要がある場合は、後で [**ユーザー** ] ページでこれを行うことができます。 
   
-セットアップウィザードを完了していない場合は、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **セットアップ**からいつでもセットアップタスクを完了できます。 このページから、別の電子メールサービスからメールと連絡先を移行したり、管理者アカウントのドメインを変更したり、ユーザーを追加または削除したり、パスワードをリセットしたり、その他のビジネス機能を実行したりすることができます。 セットアップウィザードと**セットアップ**ページの相違点の詳細については、「 [Microsoft 365 セットアップウィザードとセットアップページの相違点](o365-setup-wizard-and-setup-page.md)」を参照してください。
+セットアップウィザードを完了していない場合は、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)セットアップからいつでもセットアップタスクを完了でき  >  **Setup**ます。 このページから、別の電子メールサービスからメールと連絡先を移行したり、管理者アカウントのドメインを変更したり、ユーザーを追加または削除したり、パスワードをリセットしたり、その他のビジネス機能を実行したりすることができます。 セットアップウィザードと**セットアップ**ページの相違点の詳細については、「 [Microsoft 365 セットアップウィザードとセットアップページの相違点](o365-setup-wizard-and-setup-page.md)」を参照してください。
 
 任意の時点で行き詰まった場合は、にお問い合わせください。 [ご参考になります。](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ ms.locfileid: "43794041"
   
 メールに Microsoft 365 を使用する場合は、次のようにします。
   
-- 会社の電子メールアドレス (*渡\@contoso.com*など) を別の電子メールサービスから microsoft 365 に移行するには、メールを新しい microsoft 365 メールボックスに配信するように指示する必要があります。 これを行うには、**セットアップ**ページで [**ユーザーのデータを移行**する] を選択します。ここでは、ドメインホストで行う必要のある更新プログラムについて手順を追って説明します。
+- 会社の電子メールアドレス (*渡 \@ contoso.com*など) を別の電子メールサービスから microsoft 365 に移行するには、メールを新しい microsoft 365 メールボックスに配信するように指示する必要があります。 これを行うには、**セットアップ**ページで [**ユーザーのデータを移行**する] を選択します。ここでは、ドメインホストで行う必要のある更新プログラムについて手順を追って説明します。
 
 - ドメイン ホストの更新後、変更は通常 1、2 時間で有効になります。 ただし、インターネット経由で変更が更新されるまでに最大72時間かかる場合があることに注意してください。
 

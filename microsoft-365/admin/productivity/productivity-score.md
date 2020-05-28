@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: ae2d6188af6a0964dc7670adf0777c0bb3d77a77
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942239"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399184"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -82,7 +83,7 @@ ms.locfileid: "43942239"
 - グローバル閲覧者 
 - レポート閲覧者 
 
-Microsoft 365 管理ホームから、[**レポート** > の**生産性スコア**] の下にある [experience] にアクセスできます。
+Microsoft 365 管理ホームから、[**レポート**の  >  **生産性スコア**] の下にある [experience] にアクセスできます。
 
 ## <a name="interpreting-productivity-score"></a>生産性スコアを解釈する 
 

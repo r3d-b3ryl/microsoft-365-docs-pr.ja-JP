@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: ユーザーの Microsoft 365 アカウントを削除または復元する方法について説明します。
-ms.openlocfilehash: 7c6ab070db2821d914a26277b7f5c19043abe39b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7e71aa11c153372c9b38c54e45397c5f840c2e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627886"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399388"
 ---
 # <a name="quick-help-deleted-user"></a>クイック ヘルプ:削除済みのユーザー
 
@@ -38,7 +39,7 @@ ms.locfileid: "43627886"
 > [!NOTE]
 > 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
   
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. ユーザーを選択し、ユーザーの一覧の上にある [**その他のオプション**(**...**)] を選択し、[**ユーザーの削除**] を選択します。
   
@@ -48,9 +49,9 @@ ms.locfileid: "43627886"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。  
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。  
 
-2. ユーザーを選択し、ユーザーの一覧の上にある [**その他** >の**ユーザーを削除する**] を選択します。
+2. ユーザーを選択し、ユーザーの一覧の上にある [**その他**の > **ユーザーを削除する**] を選択します。
   
 3. [削除の確認] ウィンドウで、[**ユーザーの削除**] を選択します。 <br/>[記事全体を参照してください。](../add-users/delete-a-user.md)
 
@@ -58,9 +59,9 @@ ms.locfileid: "43627886"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。 
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。 
 
-2. ユーザーを選択し、ユーザーの一覧の上にある [**その他** >の**ユーザーを削除する**] を選択します。
+2. ユーザーを選択し、ユーザーの一覧の上にある [**その他**の > **ユーザーを削除する**] を選択します。
   
 3. [削除の確認] ウィンドウで、[**ユーザーの削除**] を選択します。 <br/>[記事全体を参照してください。](../add-users/delete-a-user.md)
 

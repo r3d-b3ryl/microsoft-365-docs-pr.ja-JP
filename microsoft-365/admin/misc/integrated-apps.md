@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 統合アプリについて、およびサードパーティ製アプリがユーザーの Microsoft 365 情報にアクセスできるようにする方法について説明します。
-ms.openlocfilehash: 2e292afc4ab33eef1ace91808f93588b9cec4702
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022110"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399340"
 ---
 # <a name="turning-integrated-apps-on-or-off"></a>統合アプリをオンまたはオフにする
 
@@ -35,7 +36,7 @@ ms.locfileid: "44022110"
 
 ここでは、統合アプリをオンまたはオフにする方法について説明します。
 
-1. Microsoft 365 管理センターで、[**設定** \>の**設定**] \>ページの [**サービス**] タブに移動し、[**統合アプリ**] を選択します。
+1. Microsoft 365 管理センターで、[**設定**の \> **設定**] ページの [ \> **サービス**] タブに移動し、[**統合アプリ**] を選択します。
 
 2. [**統合アプリ**] ページで、[統合アプリをオンまたはオフにする] オプションを選択します。
 

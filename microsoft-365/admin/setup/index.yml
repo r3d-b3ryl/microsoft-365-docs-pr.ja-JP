@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: はじめに
+title: 作業の開始
 summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
 metadata:
-  title: はじめに
+  title: 作業の開始
   description: サブスクリプションとメールを設定します。 ユーザーを追加し、アプリをインストールする
   ms.service: O365-administration
   ms.topic: landing-page
@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 0396ea8146e3e0d0419f6f1d9caeee9df7b86d59
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: 82575756389813a3ddec91fa2b278acee0d9eef1
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952739"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44398896"
 landingContent:
 - title: サインアップ
   linkLists:

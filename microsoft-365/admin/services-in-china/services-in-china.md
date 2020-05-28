@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 中国でのセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計された、21Vianet が運用している Office 365 の詳細について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155411"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399016"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
@@ -151,9 +152,9 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 
 |**オンプレミスの Exchange バージョン**|**MRM (分割アーカイブ)**|**OWA アクセス (分割アーカイブ)**|**インプレース電子情報開示**|**メールボックスの監査**|**インプレースホールド/アーカイブ**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-| すべての 2013 CU5  <br/> | サポートされている <br/>  | サポート対象外 <br/>  | サポート済み <br/>  | サポート済み  <br/> | サポート済み <br/> |
-| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポート<sup>1</sup> <br/> | サポート済み  <br/> | サポート済み <br/>  |
-| 2013前の CU5 サーバーのうち少なくとも1つ  <br/> | サポート<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート済み  <br/> | サポート済み <br/> |
+| すべての 2013 CU5  <br/> | サポートされている <br/>  | サポート対象外 <br/>  | サポート <br/>  | サポート  <br/> | サポート <br/> |
+| すべての 2010 SP3 <br/>  | 非サポート <br/>  | 非サポート <br/>  | サポート<sup>1</sup> <br/> | サポート  <br/> | サポート <br/>  |
+| 2013前の CU5 サーバーのうち少なくとも1つ  <br/> | サポート<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート  <br/> | サポート <br/> |
 |||
 
 <sup>1</sup>社内および Exchange Online のメールボックスでは、個別に検索する必要があります。  <br/> <sup>2</sup> mrm の移動ポリシーは、EXCHANGE 2013 CU5 以上のサーバー上にあるメールボックスで使用できます。 
@@ -178,7 +179,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 
 |||
 |:-----|:-----|
-|**ファイル** \>から Office アプリケーションを開く**方法..**. button  <br/> |できる. ローミングは近日中に行われますが、これを行うことはできません。  <br/> |
+|**ファイル**から Office アプリケーションを開く方法.. \> **Open in**. button  <br/> |できる. ローミングは近日中に行われますが、これを行うことはできません。  <br/> |
 |Microsoft アカウントでサインインしているときに OneDrive for Business に保存する  <br/> |国内にデータを保持するために、Microsoft アカウントを使用して Office にサインインしている場合は、組織のサイト (OneDrive for Business) にドキュメントを保存することはできません。  <br/> |
 |テキストまたはページを翻訳する機能  <br/> |この機能は使用できますが、既定ではオフになっています。 管理者はこれをオンにすることはできますが、国外でもデータにアクセスできることを示す警告メッセージが表示されます。  <br/> |
    
@@ -186,7 +187,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 
 |||
 |:-----|:-----|
-|アカウントを管理する (Office クライアント内から)  <br/> |この機能と、Office 365 ポータルにアクセスしようとしている他のユーザーは、現在、ワールドワイドの Office 365 ポータルをポイントしており、21Vianet が運用している Office 365 を使用してサインインすることはできません。 これは既知の問題であり、修正されています。 その間、URL https://portal.partner.microsoftonline.cn/を使用してアカウントにサインインし、そこから設定を管理することができます。 詳細については、「 [Manage Your office 365 Pro Plus account For office 365 For 21vianet](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)」を参照してください。  <br/> |
+|アカウントを管理する (Office クライアント内から)  <br/> |この機能と、Office 365 ポータルにアクセスしようとしている他のユーザーは、現在、ワールドワイドの Office 365 ポータルをポイントしており、21Vianet が運用している Office 365 を使用してサインインすることはできません。 これは既知の問題であり、修正されています。 その間、URL を使用し https://portal.partner.microsoftonline.cn/ てアカウントにサインインし、そこから設定を管理することができます。 詳細については、「 [Manage Your office 365 Pro Plus account For office 365 For 21vianet](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)」を参照してください。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 

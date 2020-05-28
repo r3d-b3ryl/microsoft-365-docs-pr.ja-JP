@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f5c61790d74e6b9d4c40a3058500e729d628195
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5b9130399d358b2a5a849a95b1bc38d062c1748e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359748"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398428"
 ---
 # <a name="contact-support-for-british-virgin-islands"></a>英国 Virgin 諸島のサポートに問い合わせる
 

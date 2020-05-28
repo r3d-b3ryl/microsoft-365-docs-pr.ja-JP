@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
 - GEA150
 description: 21Vianet が運用している Office 365 の Azure Information Protection と、中国のお客様に対して構成する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3d24b450cc9ba9a6427732d408e35af1394b4a34
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 1f5d73f5c421a545ea0085f018a2c2a703b0b374
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627656"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399040"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet が運用している Office 365 の Azure Information Protection 間のパリティ
 
@@ -54,35 +55,35 @@ ms.locfileid: "43627656"
 
 - RMS が有効になっているかどうかを確認します。
   1. PowerShell を管理者として起動します。
-  2. AIPService モジュールがインストールされていない `Install-Module AipService`場合は、を実行します。
-  3. を使用して`Import-Module AipService`モジュールをインポートします。
-  4. を使用して `Connect-AipService -environmentname azurechinacloud`サービスに接続します。
-  5. を `(Get-AipServiceConfiguration).FunctionalState` 実行し、状態が `Enabled`であるかどうかを確認します。
+  2. AIPService モジュールがインストールされていない場合は、を実行  `Install-Module AipService` します。
+  3. を使用してモジュールをインポートし `Import-Module AipService` ます。
+  4. を使用してサービスに接続し  `Connect-AipService -environmentname azurechinacloud` ます。
+  5. を実行  `(Get-AipServiceConfiguration).FunctionalState`   し、状態がであるかどうかを確認し  `Enabled` ます。
 
-- 機能状態がの場合 `Disabled`は、 `Enable-AipService`を実行します。
+- 機能状態がの場合は  `Disabled` 、を実行  `Enable-AipService` します。
 
 ### <a name="dns-configuration-for-encryption-windows"></a>暗号化の DNS 構成 (Windows)
 
 暗号化が正常に機能するためには、Office クライアントアプリケーションは、サービスの中国のインスタンスと、そこからブートストラップに接続する必要があります。 クライアントアプリケーションを適切なサービスインスタンスにリダイレクトするには、テナント管理者が Azure RMS URL に関する情報を使用して DNS SRV レコードを構成する必要があります。 DNS SRV レコードがない場合、クライアントアプリケーションは既定でパブリッククラウドインスタンスへの接続を試行しますが、失敗します。
 
-また、ユーザーはテナント所有のドメイン (たとえば、 `joe@contoso.cn`) ではなく`onmschina` 、ユーザー名を使用してログインすることを前提としています (例`joe@contoso.onmschina.cn`:)。 Username のドメイン名は、適切なサービスインスタンスへの DNS リダイレクトに使用されます。
+また、ユーザーはテナント所有のドメイン (たとえば、) ではなく、ユーザー名を使用してログインすることを前提としています (例:) `joe@contoso.cn` `onmschina` `joe@contoso.onmschina.cn` 。 Username のドメイン名は、適切なサービスインスタンスへの DNS リダイレクトに使用されます。
 
 - RMS ID を取得します。
   1. PowerShell を管理者として起動します。
-  2. AIPService モジュールがインストールされていない `Install-Module AipService`場合は、を実行します。
-  3. を使用して `Connect-AipService -environmentname azurechinacloud`サービスに接続します。
-  4. を `(Get-AipServiceConfiguration).RightsManagementServiceId` 実行して RMS ID を取得します。
+  2. AIPService モジュールがインストールされていない場合は、を実行  `Install-Module AipService` します。
+  3. を使用してサービスに接続し  `Connect-AipService -environmentname azurechinacloud` ます。
+  4. を実行し  `(Get-AipServiceConfiguration).RightsManagementServiceId`   て RMS ID を取得します。
 
 - DNS プロバイダーにログインし、ドメインの DNS 設定に移動して、新しい SRV レコードを追加します。
   - サービス = `_rmsredir`
   - Protocol = `_http`
   - Name = `_tcp`
-  - Target = `[GUID].rms.aadrm.cn` (GUID は RMS ID です)
+  - Target =  `[GUID].rms.aadrm.cn`   (GUID は RMS ID です)
   - Priority、Weight、Seconds、TTL = 既定値
 
 -  [Azure portal](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)のテナントにカスタムドメインを関連付けます。 DNS にエントリが追加されます。これにより、DNS 設定に値を追加した後に、確認に数分かかる場合があります。
 
-- 対応するグローバル管理者の資格情報を使用して Microsoft 365 管理センターにログインし、ドメインを`contoso.cn`追加します (例:)。 検証プロセスでは、追加の DNS 変更が必要になることがあります。 確認が完了したら、ユーザーを作成できます。
+- 対応するグローバル管理者の資格情報を使用して Microsoft 365 管理センターにログインし、ドメインを追加します (例: `contoso.cn` )。 検証プロセスでは、追加の DNS 変更が必要になることがあります。 確認が完了したら、ユーザーを作成できます。
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a>暗号化の DNS 構成 (Mac、iOS、Android)
 

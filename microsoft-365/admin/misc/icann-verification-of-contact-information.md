@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: お客様の連絡先情報を検証して、ICANN 規制に準拠する方法について説明します。
-ms.openlocfilehash: c9a663a5795a542dfac01f7d4d29e7a3e76d16c9
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: e96ae69af282af84595283a431ccb73f869f1454
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212235"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399352"
 ---
 # <a name="icann-verification-of-contact-information"></a>連絡先情報の ICANN 検証
 

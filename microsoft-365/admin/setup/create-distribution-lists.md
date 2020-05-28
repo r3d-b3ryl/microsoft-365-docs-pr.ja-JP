@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: 配布 (リスト) を作成して、個々の受信者の名前を入力せずに、ユーザーのグループに電子メールを送信します。
-ms.openlocfilehash: a845055acbc5428e0e261997f946f75dc4701d57
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627644"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398968"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで配布グループを作成する
   
@@ -58,7 +59,7 @@ ms.locfileid: "43627644"
     
     探しているアプリが見つかりませんか? アプリ起動ツールで [**すべてのアプリ**] を選択すると、利用可能なアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
     
-2. 左側のナビゲーションウィンドウで [**グループ** \> **グループ**] を選択し、[**グループの追加**] を選択します。 
+2. **Groups** \> 左側のナビゲーションウィンドウで [グループ**グループ**] を選択し、[**グループの追加**] を選択します。 
       
 3. [**グループの種類を選択**] フィールドで [**分布**] を選択し、[**次へ**] をクリックします。
   

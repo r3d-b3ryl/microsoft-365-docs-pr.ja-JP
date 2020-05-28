@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
 description: 'カスタムドメインを追加したくない場合は、個人の電子メールアドレスで Office 365 にサインアップする方法について説明します。 '
-ms.openlocfilehash: c49da60af4d369ea2529ddaf5e9b9f0c44251319
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 0b188754b169f6f0f0fb807a8ba236497a7439ff
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42257257"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399256"
 ---
 # <a name="signing-up-for-office-365-with-a-personal-email-address"></a>個人用メールアドレスを使用した Office 365 へのサインアップ
 
@@ -52,7 +53,7 @@ ms.locfileid: "42257257"
   
 ## <a name="how-to-add-a-domain"></a>ドメインを追加する方法
 
-管理センターで、[**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a> > の**追加**] の順に移動します。
+管理センターで、[**セットアップ**ドメインの追加] の順に移動し  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a>  >  **Add domain**ます。
   
 
 

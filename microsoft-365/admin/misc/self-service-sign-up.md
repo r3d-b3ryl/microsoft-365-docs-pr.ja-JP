@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -20,13 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Microsoft 365 セルフサービスのサインアップと、Microsoft パワーアプリ、Microsoft Flow、および財務の Dynamics 365 などの利用可能なセルフサービスプログラムについて説明します。
-ms.custom: okr_SMB
-ms.openlocfilehash: 02d318fbafb6e062f9c3d1592cd6adc7f764fd56
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045275"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399292"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
@@ -65,4 +67,4 @@ ms.locfileid: "44045275"
 |**Minecraft Education Edition** <br/> |学習目的のプラットフォームとして Minecraft を使用することで、教師は各学生のモチベーションやインスピレーションを奮起させ、学習意欲を高めることができます。教師コミュニティに参加して、Minecraft の使用方法を学び、学生の潜在能力を開花させてください。  <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft Education Edition](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |組織全体でビデオをアップロードおよび共有して、コミュニケーション力、共同作業、学習の向上を実現します。  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power オートメーションは、ファイルを同期したり、通知を取得したり、データを収集したりするための、お気に入りのアプリとサービス間の自動化されたワークフローを設定するのに役立つ製品です。  <br/> |[電源自動化のためのサインアップとサインイン](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
-|**パワー仮想エージェント** <br/> |パワー仮想エージェントは、データ科学者や開発者を必要とせずに、ガイド付きのコーディングされていないグラフィカルインターフェイスを使用して、チームが強力なボットを簡単に作成できるようにします。 パワー仮想エージェントは、現在業界での bot が構築する主な問題の多くを解決します。 該当分野の専門家と bot を構築する開発チームのギャップを排除し、teams を認識し、チーム間で問題を認識して、それに対処するために bot の待機時間を長くします。  <br/> |[ライセンスとアクセスの詳細](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[パワー仮想エージェントにサインアップする](https://aka.ms/TryPVA) <br/> |
+|**Power Virtual Agents** <br/> |パワー仮想エージェントは、データ科学者や開発者を必要とせずに、ガイド付きのコーディングされていないグラフィカルインターフェイスを使用して、チームが強力なボットを簡単に作成できるようにします。 パワー仮想エージェントは、現在業界での bot が構築する主な問題の多くを解決します。 該当分野の専門家と bot を構築する開発チームのギャップを排除し、teams を認識し、チーム間で問題を認識して、それに対処するために bot の待機時間を長くします。  <br/> |[ライセンスとアクセスの詳細](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[パワー仮想エージェントにサインアップする](https://aka.ms/TryPVA) <br/> |
