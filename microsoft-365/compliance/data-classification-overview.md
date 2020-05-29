@@ -1,5 +1,5 @@
 ---
-title: データ分類の使用を開始する (プレビュー)
+title: データ分類の使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957277"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327873"
 ---
-# <a name="know-your-data---data-classification-overview-preview"></a>データを把握する - データ分類の概要 (プレビュー)
+# <a name="know-your-data---data-classification-overview"></a>データを把握する - データ分類の概要
 
-Microsoft 365 の管理者またはコンプライアンス管理者は、組織内のコンテンツを評価してタグ付けすることにより、コンテンツの保存場所を制御し、保存場所に関わらずコンテンツを保護でき、また、組織のニーズに合わせてコンテンツを保持および削除できるようになります。 これらは、[秘密ラベル](sensitivity-labels.md)、[保持ラベル](labels.md)、および機密情報の種類の分類を適用することにより行います。 検出、評価、タグ付けを行うにはさまざまな方法がありますが、最終的には、これらのラベルの一方または両方を使用してタグ付けおよび分類された大量のドキュメントとメールが生み出される可能性があります。 保持ラベルと機密ラベルを適用した後は、テナント全体でラベルがどのように使用されているか、これらのアイテムに対してどのような操作が行われているかを確認する必要があります。 こうした内容は、データ分類のページで確認できます。具体的には次の内容を確認できます。
+Microsoft 365 の管理者またはコンプライアンス管理者は、組織内のコンテンツを評価してタグ付けすることにより、コンテンツの保存場所を制御し、保存場所に関わらずコンテンツを保護でき、また、組織のニーズに合わせてコンテンツを保持および削除できるようになります。 これらは、[秘密ラベル](sensitivity-labels.md)、[保持ラベル](labels.md)、および機密情報の種類の分類を適用することにより行います。 検出、評価、タグ付けを行うにはさまざまな方法がありますが、最終的には、これらのラベルの一方または両方を使用してタグ付けおよび分類された大量のドキュメントとメールが生み出される可能性があります。 保持ラベルと機密ラベルを適用した後は、テナント全体でラベルがどのように使用されているか、これらのアイテムを使用してどのような操作が行われているかを確認する必要があります。 こうした内容は、データ分類のページで確認できます。具体的には次の内容を確認できます。
 
 - 機密情報の種類として分類されたアイテムの数およびこれらの分類の種類
 - Microsoft 365 および Azure Information Protection の両方で最も多く適用されている機密ラベル
@@ -33,11 +33,41 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 - 機密コンテンツに対してユーザーが行っているアクティビティの概要
 - 機密データおよび保持されたデータの保存場所
 
-データ分類は、**Microsoft 365 コンプライアンス センター**または **Microsoft 365 セキュリティ センター**  >  [**分類**]  >  [**データ分類**] で確認できます。
+これらの機能は、データ分類のページでも管理することができます。
+- [トレーニング可能な分類子](classifier-getting-started-with.md)
+- [機密情報の種類](what-the-sensitive-information-types-look-for.md)
+
+データ分類は、**Microsoft 365 コンプライアンス センター**または **Microsoft 365 セキュリティ センター**  >  [**分類**]  >  [**データ分類**] で確認することができます。
+
+データ分類機能についてのビデオ ツアーを開始します。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+データ分類は、ポリシーを作成する前に、機密コンテンツとラベル付きコンテンツをスキャンします。 これは **ゼロ変更管理** と呼ばれます。 これにより、すべての保持ラベルおよび機密ラベルが環境に与える影響を確認でき、保護ポリシーおよびガバナンス ポリシーのニーズの評価を開始できます。
+
+## <a name="prerequisites"></a>前提条件
+
+データ分類にアクセスし、データ分類を使用するすべてのアカウントには、以下のサブスクリプションのいずれかからライセンスが割り当てられている必要があります。
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- 高度なコンプライアンス (E5) アドオン
+- 高度な脅威インテリジェンス (E5) アドオン
+
+### <a name="permissions"></a>アクセス許可
+
+ データ分類のページにアクセスするには、アカウントはこれらの役割または役割グループに割り当てられたメンバーシップであることが必要です。
+
+**Microsoft 365 の役割グループ**
+
+- 全体管理者
+- コンプライアンス管理者
+- セキュリティ管理者
+- コンプライアンス データ管理者
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>コンテンツで最も多く使用されている機密情報の種類
 
-Microsoft 365 では、社会保障番号を含むアイテムやクレジットカード番号を含むアイテムなど、機密情報の種類の定義が多数提供されています。 機密情報の種類の詳細については、「[機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)」を参照してください。
+Microsoft 365 では、社会保障番号を含むアイテムやクレジットカード番号を含むアイテムなど、機密情報の種類の定義が多数提供されています。 機密情報の種類の詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。
 
 機密情報の種類カードには、組織全体で検出されたラベル付けされている機密情報の種類のうち上位のものが示されます。
 
@@ -51,7 +81,7 @@ Microsoft 365 では、社会保障番号を含むアイテムやクレジット
 > "No data found with sensitive information" (機密情報が含まれるデータが見つかりませんでした) というメッセージがカードに表示される場合、 機密情報の種類として分類されているアイテムが組織に存在しないか、クロールされたアイテムが存在しないことを意味します。 ラベルの使用を開始するには、次を参照してください。
 >- [機密ラベル](sensitivity-labels.md)
 >- [保持ラベル](labels.md)
->- [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
+>- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>コンテンツに適用されている上位の機密ラベル
 
@@ -106,5 +136,6 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 - [ラベル付きコンテンツの表示 (プレビュー)](data-classification-content-explorer.md)
 - [機密ラベル](sensitivity-labels.md)
 - [保持ラベル](labels.md)
-- [機密情報の種類の検索基準](what-the-sensitive-information-types-look-for.md)
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [アイテム保持ポリシーの概要](retention-policies.md)
+- [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)

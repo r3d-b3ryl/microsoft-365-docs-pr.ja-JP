@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 548b331a8ee26434f53b9960fd355feacd45dfde
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066320"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254300"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -48,48 +48,42 @@ Microsoft では、SOC 1 Type 2、SOC 2 Type 2、および SOC 3 報告書を取
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>SOC 1 および SOC 2 の対象サービス
 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Graph
+- Microsoft Graph
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
+- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
-- Stream
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- Microsoft Stream
 - Azure DevOps Services
 
 ### <a name="covered-services-for-soc-3"></a>SOC 3 の対象サービス
 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Graph
+- Microsoft Cloud App Security
+- Microsoft Graph
 - Intune
 - Microsoft マネージド デスクトップ
-- Microsoft Flow クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランまたはスイートに搭載されているサービス)
-- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
-- Stream
+- Microsoft Stream
 
-## <a name="audits-reports-and-certificates"></a>監査、報告書、証明書
+## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 ### <a name="audit-cycle"></a>監査サイクル
 
-Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 (SSAE18、ISAE 3402) および SOC 2 (AT Section 101) 基準に照らした監査が実施されます。
+Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 (SSAE18、ISAE 3402)、SOC 2 (AT Section 101)、SOC 3 基準に照らした監査が実施されます。
 
-#### <a name="azure-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure、Cloud App Security、Flow、Graph、Intune、Power BI、Power Apps、Stream、Microsoft データセンター
+#### <a name="azure-dynamics-365-microsoft-cloud-app-security-flow-microsoft-graph-intune-power-bi-powerapps-microsoft-stream-and-microsoft-datacenters"></a>Azure、Dynamics 365、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、Power Apps、Microsoft Stream、Microsoft データセンター
 
-- [Azure および Azure Government の SOC 1 Type 2 報告書](https://go.microsoft.com/fwlink/p/?linkid=2099601)
-- [Azure および Azure Government の SOC 2 Type 2 報告書](https://aka.ms/azuresoc2auditreport)
-- [Azure および Azure Government の SOC 3 報告書](https://aka.ms/azuresoc3auditreport)
-
-#### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 SOC 1 Type 2 報告書](https://aka.ms/Dynamics365SOC1AuditReport)
-- [Dynamics 365 SOC 2 AT 101 Type II 監査報告書](https://aka.ms/Dynamics365SOC2AuditReport)
-- [ブリッジ レターおよびその他の監査報告書を参照する](https://aka.ms/auditreports)
+- [Azure + Dynamics 365 と Azure + Dynamics 365 Government SOC 1 タイプ 2 レポート](https://aka.ms/azuresoc1auditreport)
+- [Azure + Dynamics 365 と Azure + Dynamics 365 Government SOC 2 タイプ 2 レポート](https://aka.ms/azuresoc2auditreport)
+- [Azure + Dynamics 365 と Azure + Dynamics 365 Government SOC 3 レポート](https://aka.ms/azuresoc3auditreport)
 
 #### <a name="office-365"></a>Office 365
 
@@ -113,7 +107,7 @@ Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 
 
 **Azure SOC 報告書が発行される頻度はどれくらいですか?**
 
-Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、半年ごとに新たな報告書が発行されます (期間は 3 月 31 日と 9 月 30 日に終了)。 ブリッジ レターは、1 月に発行されて 10/1- 12/31 の期間をカバーし、7 月に発行されて 4/1 - 6/30の期間をカバーします。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
+Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、PowerApps、Microsoft Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、半年ごとに新たな報告書が発行されます (期間は 3 月 31 日と 9 月 30 日に終了)。 ブリッジ レターは、1 月に発行されて 10/1- 12/31 の期間をカバーし、7 月に発行されて 4/1 - 6/30の期間をカバーします。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
 
 **Microsoft データセンターの監査は、自分自身で実施する必要がありますか?**
 
