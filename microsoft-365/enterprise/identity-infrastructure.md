@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 Enterprise の ID インフラストラクチャを展開する手順。
-ms.openlocfilehash: 0189da0814d1d526d9e07ad35dbbabcbfe82a4cd
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 6f237f779df16f2a2a03eab29af78a89c5f7a5ae
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42952032"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371420"
 ---
 # <a name="phase-2-identity"></a>フェーズ 2: ID
 
@@ -70,7 +70,11 @@ Microsoft では、セキュアで生産性の高い要員を確保するため�
 
 ## <a name="how-microsoft-does-microsoft-365-enterprise"></a>Microsoft での Microsoft 365 Enterprise の活用方法
 
-Microsoft の IT エキスパートが [ID を管理し、アクセスをセキュリティで保護](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5)する方法について説明します。
+Microsoft の IT エキスパートが [ID を管理し、アクセスをセキュリティで保護](https://www.microsoft.com/ja-JP/itshowcase/managing-user-identities-and-secure-access-at-microsoft)する方法について説明します。
+
+>[!Note]
+>この IT Showcase のリソースは英語でのみご利用いただけます。
+>
 
 ## <a name="how-contoso-did-microsoft-365-enterprise"></a>Contoso 社での Microsoft 365 Enterprise の活用方法
 
