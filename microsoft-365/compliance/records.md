@@ -1,5 +1,5 @@
 ---
-title: レコードの概要
+title: レコードについての詳細
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,15 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 または Microsoft 組織でレコード管理戦略を実装するには、コンテンツをレコードとして宣言する保持ラベルを使用します。 次に、保持レコードラベルを公開または自動適用します。
-ms.openlocfilehash: cfd9bbc30313a53c197476ab6b7345fdff1c0c35
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+description: レコードについての詳細 Office 365 または Microsoft 組織でレコード管理戦略を実装するには、コンテンツをレコードとして宣言する保持ラベルを使用します。 次に、保持レコードラベルを公開または自動適用します。
+ms.openlocfilehash: 8dcb3b03dcd908da2a3133d52c1a70ae197eee99
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949284"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231910"
 ---
-# <a name="overview-of-records"></a>レコードの概要
+# <a name="learn-about-records"></a>レコードについての詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
@@ -38,7 +38,9 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
 - レコードは、指定された保存期間が過ぎた後に廃棄されます
 
-コンテンツをレコードとして分類するには [保持ラベル](labels.md) を使用します。 レコードを宣言する保持ラベルを作成した後、それらのラベルを[公開](labels.md#how-retention-labels-work-with-retention-label-policies) (それによりユーザーがそれらを使用してコンテンツをレコードとして分類できるようになる)、またはレコードとして分類するコンテンツに[それらのラベルを自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)できます。 保持ラベルを使用してレコードを宣言することにより、Office 365 全体で単一の一貫したレコード管理戦略を実装できますが、レコード センターなどの他のレコード管理機能は SharePoint Online のコンテンツにのみ適用されます。
+[保持ラベル](labels.md)を使用して、コンテンツをレコードとして分類します。 レコードを宣言する保持ラベルを作成すると、それらのラベルを発行してユーザーがコンテンツに適用できるようにするか、レコードとして分類するコンテンツにそれらのラベルを自動的に適用することができます。 手順については、「[保持ラベルを作成、発行、および自動適用する](create-retention-labels.md)」を参照してください。
+
+保持ラベルを使用してレコードを宣言することで、Microsoft 365 環境全体で単一の、一貫したレコード管理戦略を実装することができます。
 
 レコードについては、以下の点に注意してください。
 
@@ -60,27 +62,28 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
     SharePoint および OneDrive フォルダーへの保持ラベルの適用の詳細については、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定の保持ラベルの適用](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)」を参照してください。
 
-  - **レコードは削除できません**。 「[アイテム保持ポリシーは保持されたコンテンツに対してどのように作用するのか](retention-policies.md#content-in-mailboxes-and-public-folders)」で説明されているように、ユーザーが Exchange でレコードを削除しようとすると、アイテムは [回復可能なアイテム] フォルダーに移動されます。
+  - **レコードは削除できません**。 「[アイテム保持ポリシーは Exchange に対してどのように作用するか](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations)」で説明されているように、ユーザーが Exchange でレコードを削除しようとすると、アイテムは [回復可能なアイテム] フォルダーに移動されます。
 
     ユーザーが SharePoint のレコードを削除しようとすると、「アイテムが削除されませんでした」というエラーが表示され、ライブラリに残ります。
 
     ![SharePoint の「アイテムが削除されませんでした」というメッセージ](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    「[アイテム保持ポリシーは所定の場所にあるコンテンツに対してどのように作用するか](retention-policies.md#content-in-onedrive-accounts-and-sharepoint-sites)」で説明されているように、ユーザーが OneDrive でレコードを削除しようとすると、アイテムはアイテム保管ライブラリに移動されます。
+    「[SharePoint および OneDrive でのアイテム保持ポリシーの仕組み](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive)」で説明されているように、ユーザーが OneDrive でレコードを削除しようとすると、アイテムはアイテム保管ライブラリに移動されます。
 
   - **レコード ラベルは削除できません。** レコードラベルがアイテムに適用されると、その場所の管理者 (SharePoint サイトのサイト コレクション管理者など) のみがそのレコード ラベルを削除できます。
 
 ## <a name="using-retention-labels-to-declare-records"></a>保持ラベルを使用してレコードを宣言する
 
-保持ラベルを作成する際に、保持ラベルを使用してコンテンツをレコードとして分類するオプションがあります。 コンテンツをレコードとして宣言するには、次の手順を実行します。
+保持ラベルを作成するときに、保持ラベルを使用してコンテンツをレコードとして分類するオプションがあります。
 
-1. 保持ラベルを作成します。 Microsoft 365 コンプライアンス センターで、[**レコードの管理**] [\>ファイル プラン**] に移動します。 [**ファイルプラン**] ページで、[**ラベルの作成**] を選びます。
+1. Microsoft 365 コンプライアンス センターで、[**レコードの管理**] [\>ファイル プラン**] に移動します。 [**ファイルプラン**] ページで、[**ラベルの作成**] を選びます。
 
 2. ウィザードの [**ラベルの設定**] ページで、保持ラベルを設定してコンテンツをレコードとして宣言するオプションを選択します。
     
    ![[このラベルを使用して、コンテンツをレコードに分類する] チェックボックスをクリックします](../media/recordversioning6.png)
 
 3. 保持ラベルを SharePoint サイトおよび/または OneDrive アカウントに[公開](labels.md#how-retention-labels-work-with-retention-label-policies)または[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
+
 
 ### <a name="applying-a-retention-label-to-content"></a>コンテンツに保持ラベルを適用する
 

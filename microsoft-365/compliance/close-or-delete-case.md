@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 高度な電子情報開示ケースでサポートされている調査または訴訟のケースがクローズまたは削除されたときに行われる処理について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e64f5cc0483129396a28cbf657778001e5d372a7
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292413"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412786"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースをクローズまたは削除する
 
@@ -32,7 +32,7 @@ ms.locfileid: "44292413"
 
 高度な電子情報開示ケースをクローズすると、次のような結果になります。
 
-- ケースに保留中の任意のコンテンツの場所が含まれている場合、これらの保留が無効になります。この結果、ユーザーまたは自動プロセス (削除ポリシーなど) によってコンテンツが完全に削除または消去される場合があります。  
+- ケースに、保留中のコンテンツの場所が含まれている場合は、それらの保持がオフになります。 保留がオフになると、保留中のコンテンツの場所に対して30日間の猶予期間 (*遅延ホールド*と呼ばれます) が適用されます。 これにより、コンテンツがすぐに削除されないようにすることができ、遅延保持期間が経過した後に完全に削除されるコンテンツを検索したり、復元したりする機会を管理者に与えることができます。 詳細については、「[電子情報開示の保留リストからコンテンツの場所を削除する](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)」を参照してください。
 
 - ケースを閉じるだけで、そのケースに関連付けられている保留がオフになります。 他のホールドがコンテンツの場所 (訴訟ホールド、コア電子情報開示の保持、または別の高度な電子情報開示ケースからの保留など) に設定されている場合でも、その保持は保持されます。
 

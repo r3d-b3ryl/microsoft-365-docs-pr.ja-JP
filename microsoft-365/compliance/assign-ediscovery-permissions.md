@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: 4c39dc3cd0d3c5d13d33330eca930e07227c38d3
-ms.sourcegitcommit: 17a45261926dde1a7cd24e0ac516cfc49e453806
+ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374406"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411034"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -43,7 +43,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
   組織に電子情報開示管理者が必要な理由については、「[詳細情報](#more-information)」のセクションを参照してください。
 
 > [!NOTE]
-> Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office 365 E5 または Microsoft E5 ライセンスが割り当てられている必要があります。または、E1 または E3 ライセンスを持つユーザーには、E5 アドオンライセンスを割り当てることができます。メンバーとしてケースに割り当てられている管理者、コンプライアンス責任者、または法的責任者が、データの収集、表示、および分析に上級電子情報開示を使用する場合は、E5 ライセンスは必要ありません。ライセンスの詳細については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://aka.ms/complianceSD)」を参照してください。
+> Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office 365 E5 または Microsoft 365 E5 ライセンスが割り当てられている必要があります。 または、Office 365 E1 または Office 365 または Microsoft 365 E3 ライセンスを持つユーザーは、Microsoft 365 E5 コンプライアンスまたは Microsoft 365 電子情報開示と監査アドオンライセンスを割り当てることができます。 メンバーとしてケースに割り当てられている管理者、コンプライアンス責任者、または法的責任者が、データの収集、表示、および分析に上級電子情報開示を使用する場合は、E5 ライセンスは必要ありません。 高度な電子情報開示ライセンスの詳細については、「 [Advanced ediscovery の概要](get-started-with-advanced-ediscovery.md)」を参照してください。
   
 ## <a name="before-you-begin"></a>始める前に
 

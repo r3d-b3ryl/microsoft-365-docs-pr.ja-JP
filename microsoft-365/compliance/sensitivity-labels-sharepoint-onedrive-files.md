@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342510"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411014"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -57,6 +57,8 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にし
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 SharePoint および OneDrive では、Office ファイルの機密ラベルを無効にするかどうかをいつでも選択できます ([オプトアウト)](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) 。
+
+Sharepoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの「 [Sharepoint Information Rights management (irm) と [秘密度ラベル](#sharepoint-information-rights-management-irm-and-sensitivity-labels)] セクションを確認してください。 
 
 ## <a name="requirements"></a>Requirements
 
@@ -171,6 +173,26 @@ Microsoft 365 コンプライアンスセンターで機密ラベルを作成ま
 2. 最初の発行の後、少なくとも24時間待機します。 ラベルが完全に同期していることを確認します。
 
 3. ラベルを広く公開します。
+
+## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) と機密ラベル
+
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md)は、ファイルをダウンロードするときに暗号化と制限を適用することによって、リストおよびライブラリレベルでファイルを保護する古いテクノロジです。 この古い保護テクノロジは、権限のないユーザーが SharePoint の外部でファイルを開くことを防止するように設計されています。
+
+一方、機密ラベルは、暗号化に加えて、視覚的なマーキング (ヘッダー、フッター、ウォーターマーク) の保護設定を提供します。 暗号化設定では、ユーザーがコンテンツに対して実行できる操作を制限する[使用権限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights)の範囲全体がサポートされており、[多くのシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)で同じ機密ラベルがサポートされています。 同じ保護方法をワークロードおよびアプリ間で一貫した設定で使用すると、一貫性のある保護戦略が得られます。
+
+ただし、両方の保護ソリューションを一緒に使用することができ、その動作は次のようになります。 
+
+- 暗号化を適用する機密ラベル付きのファイルをアップロードする場合、これらのファイル、共同編集、電子情報開示、DLP、検索はサポートされていないため、暗号化は削除されません。
+
+- Web 上の Office を使用してファイルにラベルを付けると、そのラベルの暗号化設定が適用されます。 これらのファイルでは、共同編集、電子情報開示、DLP、検索がサポートされています。
+
+- Web 上の Office を使用してラベル付けされたファイルをダウンロードすると、ラベルは保持され、IRM 制限の設定ではなく、ラベルの暗号化設定が適用されます。
+
+- 機密ラベルを使用して暗号化されていない Office ファイルまたは PDF ファイルをダウンロードすると、IRM 設定が適用されます。
+
+- Irm をサポートしていないドキュメントをユーザーがアップロードできないようにする追加の IRM ライブラリ設定を有効にしている場合は、これらの設定が適用されます。
+
+この動作を使用すると、すべての Office および PDF ファイルがダウンロードされた場合でも、ラベル付けされていない場合でも、そのアクセスが許可されないことが保証されます。 ただし、アップロードされたファイルには、新しい機能のメリットはありません。
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>SharePoint と OneDrive の機密ラベルを無効にする方法 (オプトアウト)
 

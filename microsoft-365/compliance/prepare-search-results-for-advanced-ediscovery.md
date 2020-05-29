@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 上級電子情報開示ツールを使用して詳細な分析を行うために、セキュリティ & コンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 4d1b406503ff758fb9287cc40d8a323ae23bc3f1
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 14bc98dc9cca656e23fc76f00c6adc975bb61c5e
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943296"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412846"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Advanced eDiscovery(クラシック) 用に検索結果を準備する
 
@@ -98,7 +98,7 @@ ms.locfileid: "43943296"
     
 2. 高度な電子情報開示でにデータを読み込むケースの横にある [**開く**] をクリックします。 
     
-3. ケースの **[ホーム]** ページで、**[Advanced eDiscovery]** をクリックします。 
+3. ケースの [**ホーム**] ページで、[**Advanced eDiscovery に切り替え**] をクリックします。 
     
     ![[高度な電子情報開示に切り替え] をクリックして、高度な電子情報開示でケースを開きます。](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
