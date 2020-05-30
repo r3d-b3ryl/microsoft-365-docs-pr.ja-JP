@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループについて説明します。
-ms.openlocfilehash: 5260d811f23dd07e096e02214eafcf7f0a757ffd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400715"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419138"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -84,12 +84,27 @@ Microsoft 365 グループには、次の制限が適用されます。
 
 グループの使用に関する操作可能な情報を持っている場合は、Microsoft 365 グループを管理する方が効率的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については[、「管理センターの Microsoft 365 レポート](../activity-reports/office-365-groups.md)」を参照してください。
 
+## <a name="sensitivity-labels"></a>秘密度ラベル
+
+組織内のユーザーが Microsoft 365 グループを作成するときに設定できる機密ラベルを作成できます。 機密ラベルを使用すると、次のものを構成できます。 
+
+- プライバシー (パブリックまたはプライベート)
+- 外部ユーザーのアクセス
+- 非管理対象デバイスアクセス
+
+たとえば、*高機密*という名前のラベルを作成し、このラベルを使用して作成されたグループがプライベートで、外部ユーザーを許可していないことを指定できます。 グループの作成時に組織内のユーザーがこのラベルを選択すると、グループは [プライベート] に設定され、グループメンバーが外部ユーザーをグループに追加することは許可されません。
+
+> [!IMPORTANT]
+> 現在、分類ラベルを使用している場合、グループを作成するユーザーは、機密ラベルが有効になっていても使用できなくなります。 
+
+機密ラベルの作成、管理、および使用の詳細については、「[機密情報を使用して Microsoft Teams のコンテンツを保護する」、「microsoft 365 グループ」、および「SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」を参照してください。
+
 ## <a name="which-microsoft-365-plans-include-groups"></a>どの Microsoft 365 プランにグループが含まれていますか?
 
 Exchange Online および SharePoint Online を備えた Microsoft 365 サブスクリプションは、グループをサポートします。 このサブスクリプションには、Business Essentials プランと Business Premium プラン、Enterprise E1、E3、E5 プランが含まれます。 グループは、グループ (グループの "開催者" とも呼ばれます) を作成したユーザーのライセンスを受け取ります。 グループに含める任意の機能について、開催者が適切なライセンスを持っている限り、そのライセンスはグループに伝達されます。
 
 > [!NOTE]
-> Microsoft 365 サービスファミリおよびプランの詳細については、「 [microsoft 365 プランオプション](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)」を参照してください。
+> Microsoft 365 サービスファミリおよびプランの詳細については、「 [microsoft 365 プランのオプション](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)」を参照してください。
 
 Exchange のみのプランを使用している場合でも、Outlook で共有の受信トレイと共有の予定表機能を取得することはできますが、ドキュメントライブラリ、Planner、その他の機能は取得できません。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
-ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403128"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419114"
 ---
 # <a name="understand-the-proposal-workflow"></a>提案ワークフローについて
 
@@ -31,7 +31,7 @@ Microsoft の代表者は、お客様と担当者が議論したアイテムを�
 
 通知メールを受信したら、提案サイトへのリンクに従ってください。 サイトにサインインした後、提案レビュープロセスを開始できます。
 
-## <a name="what-are-the-organization-prerequisites-to-buy-items-with-a-proposal"></a>提案書を使用してアイテムを購入するための組織の前提条件について
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>提案を含むアイテムを購入するための前提条件
 
 提案のアイテムを購入するには、事前に Microsoft との課金アカウントと契約を用意しておく必要があります。
 
@@ -49,7 +49,7 @@ Microsoft の代表者は、お客様と担当者が議論したアイテムを�
 
 Microsoft カスタマーアグリーメント (MCA) は、組織が Microsoft の製品とサービスを購入できるようにします。 詳細については、「 [Microsoft カスタマーアグリーメント](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)」を参照してください。
 
-## <a name="what-permissions-do-i-need-to-sign-an-agreement-or-pay-for-items"></a>契約に署名またはアイテムに対して支払いを行うには、どのようなアクセス許可が必要ですか。
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>契約への署名またはアイテムの支払いに必要なアクセス許可
 
 請求アカウントに割り当てられた役割がない場合は、提案を表示するときに、基本的な閲覧者の役割が割り当てられます。 この役割を使用すると、提案を表示することはできますが、アクションを実行することはできません。 契約に署名するか、製品とサービスを購入する前に、課金アカウントの所有者または課金アカウントの共同作成者の役割が割り当てられている必要があります。 課金アカウントの所有者は、この役割を自分に割り当てることができます。
 
@@ -59,7 +59,7 @@ Microsoft カスタマーアグリーメント (MCA) は、組織が Microsoft �
 
 - は、提案書で指定された人物である
     または
-- 組織のために Azure Active Directory のグローバル管理者であること
+- 組織のために[Azure Active Directory のグローバル管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)であること
 
 ## <a name="what-is-the-overall-workflow"></a>全体的なワークフローとは
 
@@ -86,7 +86,6 @@ Microsoft カスタマーアグリーメント (MCA) は、組織が Microsoft �
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 課金アカウント | アカウントの設定、請求書、支払い方法、および製品を管理するために使用されるアカウント。 |
 | 課金プロファイル | 請求書に含めるアイテムと請求書の支払い方法をカスタマイズできる、組織に関する情報。 課金プロファイルには、請求先のアカウント名、特定の課金プロファイルに使用される支払い方法、連絡先情報、請求書の設定、および請求書の変更、請求書の支払い、製品およびサービスの購入を行うためのアクセス許可が含まれています。 |
-| 顧客関連購入条件 (CAPT) | 別の MCA に署名せずに、組織の関連会社が製品やサービスを購入できるようにするための追加の用語のセット。 |
 | 既存の契約 | お客様の組織が既に Microsoft に実装している契約。 これには、エンタープライズアグリーメント、Microsoft 製品 & サービス契約、または Microsoft カスタマーアグリーメントを含めることができますが、制限はありません。 |
 | Microsoft カスタマーアグリーメント (MCA) | 組織によって保持されている Microsoft とのアカウントの使用条件を概説する契約。 |
 | Microsoft の代表者 | お客様の組織のために提案を準備する、承認された Microsoft の担当者。 |

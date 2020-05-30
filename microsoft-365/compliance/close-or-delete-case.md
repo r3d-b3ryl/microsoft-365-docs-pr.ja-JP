@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 高度な電子情報開示ケースでサポートされている調査または訴訟のケースがクローズまたは削除されたときに行われる処理について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412786"
+ms.locfileid: "44419063"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースをクローズまたは削除する
 
@@ -56,7 +56,7 @@ ms.locfileid: "44412786"
 
 クローズしたケースを再度開くには:
 
-1. [**高度な電子情報開示**] ページで、削除するケースを選択します。
+1. [**高度な電子情報開示**] ページで、再開するケースを選択します。
 
 2. [**設定**] タブの [**ケース情報**] で、[**選択**] をクリックします。
 

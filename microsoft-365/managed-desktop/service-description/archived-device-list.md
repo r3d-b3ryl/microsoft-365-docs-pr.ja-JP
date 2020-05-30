@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 788021d9bcd531cbd9210299cb90f1cce49db1c7
-ms.sourcegitcommit: 213b33cbf14e35e6dc563e0b700a4eed5e42e91d
+ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42284368"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44418880"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
@@ -41,7 +41,8 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 |HP エリート x2 1013 G3| 256 GB/Intel i5/8 GB RAM | 5VS03AV、IR カメラが必要な SKU |**2023年5月14日** |
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU |**2023年5月14日** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | **2023年10月23日** |
-|Surface Book 2| 256 GB/Intel i5/8 GB RAM | なし | **2022年11月16日** |
+|Surface Book 2| 256 GB/Intel i5/8 GB RAM | なし | **2022年11月16時** |
+|Surface Go| 128 GB/Intel 44 15Y/8GB RAM | なし | **2023年8月2時** |
 |Surface のノートブック| 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |
 |Surface Pro| 256 GB/Intel i5/8 GB RAM | なし | **2022年6月15日** |
 

@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 description: リスクに対処し、コンプライアンスの姿勢を改善するために行われた処置に基づいて、Microsoft コンプライアンススコアが個人のスコアを計算する方法について理解します。
-ms.openlocfilehash: 10e75be9541c4bd2b5a62d8bea46c45d213655e2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141585"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429192"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft コンプライアンススコア (プレビュー) の計算
 
 > [!IMPORTANT]
-> コンプライアンススコアは、特定の標準または規制に対する組織のコンプライアンスの絶対的な測定基準を表しているわけではありません。 このことは、個人データや個人のプライバシーに対するリスクを軽減するために、制御を採用した範囲を表しています。 コンプライアンススコアとコンプライアンスマネージャーからの推奨事項は、コンプライアンスの保証として解釈されないようにする必要があります。 このサービスは現在プレビュー段階であり、[オンラインサービス](https://go.microsoft.com/fwlink/?linkid=2108910)の使用条件の条件に従います。
+> コンプライアンス スコアおよびコンプライアンス マネージャーからの推奨事項は、コンプライアンスの保証として解釈してはいけません。 お客様は、お客様の規制環境に応じて、カスタマーコントロールの有効性を評価および検証することができます。 これらのサービスは現在プレビュー段階であり、[オンラインサービス](https://go.microsoft.com/fwlink/?linkid=2108910)の使用条件に従っています。 [セキュリティとコンプライアンスのための Microsoft 365 ライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)も参照してください。
 
 ## <a name="overview"></a>概要
 
@@ -83,8 +83,8 @@ ms.locfileid: "43141585"
 | 予防必須 | 27 |
 | 予防的裁量 | 9  |
 | 検出必須 | 1/3 |
-| 検出随意 | 1-d |
+| 検出随意 | 1  |
 | 修正必須 | 1/3 |
-| 随意随意 | 1-d |
+| 随意随意 | 1  |
   
 ![コンプライアンススコアコントロールのポイント値](../media/compliance-score-controls-scoring.png "コンプライアンススコアコントロールのポイント値")
