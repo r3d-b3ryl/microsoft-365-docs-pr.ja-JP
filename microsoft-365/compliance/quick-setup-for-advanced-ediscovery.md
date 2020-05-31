@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'セキュリティ &amp; コンプライアンス センターから Advanced eDiscovery にアクセスする方法を説明し、Advanced eDiscovery を使用するための一般的なワークフローを確認します。  '
-ms.openlocfilehash: 62c2ef316daafebeba6f91483277ea344039a271
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b824183c88e4bbf300c2e07c9e8802dfb704aadf
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632172"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412836"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>Advanced eDiscovery (クラシック) のクイック セットアップ
 
@@ -32,7 +32,6 @@ ms.locfileid: "43632172"
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Advanced eDiscovery のケースへのアクセス
 
-
 セキュリティ&amp;コンプライアンス センターから Advanced eDiscovery にアクセスします。Advanced eDiscovery のケースにアクセスするには、セキュリティ&amp;コンプライアンス センターの電子情報開示ケースのメンバーである必要があります。電子情報開示ケースのアクセス許可の割り当て方法、電子情報開示ケースへのユーザーの追加方法については、「[Office 365 で電子情報開示ケースを管理する](ediscovery-cases.md)」を参照してください。 
   
 Advanced eDiscovery のケースに移動するには、以下を実施します: 
@@ -41,15 +40,15 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
     
 2. セキュリティ&amp;コンプライアンス センターで、**[検索&amp;調査]** \> **[電子情報開示]** の順にクリックし、組織内のケースの一覧を表示します。 
     
-3. **[電子情報開示]** ページで、Advanced eDiscovery で移動するケースの横にある **[開く]** をクリックします。 
+3. **[電子情報開示]** ページで、Advanced eDiscovery で移動するケースの横にある **[開く]** をクリックします。
     
-4. ケースの **[ホーム]** ページで、**[Advanced eDiscovery]** をクリックします。
+4. ケースの [**ホーム**] ページで、[**Advanced eDiscovery に切り替え**] をクリックします。
     
     **[Advanced eDiscovery へ接続しています]** の進行状況バーが表示されます。接続されると、Advanced eDiscovery のケースが開きます。 
     
 ## <a name="workflow"></a>ワークフロー
 
-次の図は、セキュリティ&amp;コンプライアンス センターおよび Advanced eDiscovery において、電子情報開示ケースを管理および使用する一般的なワークフローを表したものです。 
+次の図は、セキュリティ&amp;コンプライアンス センターおよび Advanced eDiscovery において、電子情報開示ケースを管理および使用する一般的なワークフローを表したものです。
   
 ![図は、Advanced eDiscovery のワークフローを示しています。セットアップには、ユーザー&amp;ケースのセットアップ、ケース データの特定、エクスポート、処理の 4 つのフェーズがあり、その後に分析とローカル コンピューターへのエクスポートのフェーズがあります。](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   

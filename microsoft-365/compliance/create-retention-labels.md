@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除し、Office 365 環境でアイテムをレコードとして宣言するための、保持ラベルの作成、発行、および自動適用の手順。
-ms.openlocfilehash: 4a9343ddfe07bbc4bf535759a39268915fd83ca1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352244"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408469"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>保持ラベルを作成、発行、および自動適用する
 
@@ -80,7 +80,7 @@ ms.locfileid: "44352244"
 
 2. ウィザードでプロンプトに従います。
     
-    場所の構成については、このページの「[保持ラベルと場所](#retention-labels-and-locations)」のセクションをご覧ください。 
+    保持ラベルでサポートされている場所については、「[保持ラベルと場所](labels.md#retention-label-policies-and-locations)」のセクションをご覧ください。 
 
 ## <a name="auto-apply-a-retention-label"></a>自動適用の保持ラベル
 
@@ -100,21 +100,7 @@ ms.locfileid: "44352244"
     
     保持ラベルを自動的に適用する条件の構成については、このページの「[自動適用の保持ラベルの条件の構成](#configuring-conditions-for-auto-apply-retention-labels)」セクションをご覧ください。
     
-    場所の構成については、このページの次のセクション、「[保持ラベルと場所](#retention-labels-and-locations)」をご覧ください。
-
-## <a name="retention-labels-and-locations"></a>保持ラベルと場所
-
-保持ラベルの内容に応じて、多様な種類の保持ラベルをさまざまな場所に発行できます。
-  
-|**保持ラベルの種類**|**ラベル ポリシーの適用先**|
-|:-----|:-----|
-|エンド ユーザーに発行されたラベル  <br/> |Exchange、SharePoint、OneDrive、Office 365 グループ  <br/> |
-|機密情報の種類に基づいて自動適用されたラベル  <br/> |Exchange (すべてのメールボックスのみ)、SharePoint、OneDrive  <br/> |
-|クエリに基づいて自動適用されたラベル  <br/> |Exchange、SharePoint、OneDrive、Office 365 グループ  <br/> |
-   
-Exchange の自動適用保持ラベル (クエリと機密情報の両方の種類) は、新しく送信されたメッセージ (送信中のデータ) のみに適用され、現在メールボックスにあるすべてのアイテム (保存中のデータ) には適用されません。 また、機密情報の種類の自動適用保持ラベルはすべてのメールボックスのみに適用でき、特定のメールボックスを選択することはできません。
-  
-Exchange パブリック フォルダーと Skype では保持ラベルはサポートされていません。
+    保持ラベルでサポートされている場所については、「[保持ラベルと場所](labels.md#retention-label-policies-and-locations)」のセクションをご覧ください。
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>自動適用の保持ラベルの条件の構成
@@ -206,7 +192,7 @@ SharePoint または OneDrive に保持ラベルを発行する場合、保持�
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Exchange に発行された保持ラベルの状態を確認する方法
 
-Exchange Online では、7 日ごとに実行されるプロセスによってエンド ユーザーが保持ラベルを利用できるようになります。Powershell を使用することで、このプロセスが最後に実行された日時を確認できるため、次に実行される日時を判断できます。
+Exchange Online では、7 日ごとにプロセスが実行され、保持ラベルがエンド ユーザーに表示されます。 PowerShell を使用することで、このプロセスが最後に実行された日時を確認できるため、いつ実行されるかを特定できます。
   
 1. [Exchange Online PowerShell に接続します](https://go.microsoft.com/fwlink/?linkid=799773)。
     

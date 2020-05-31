@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用すると、特定の種類のイベントが発生したときの保持期間を設定できます。イベントによって保持期間の開始がトリガーされ、その種類のイベントに保持ラベルが適用されているすべてのコンテンツに、ラベルの保持アクションが適用されます。イベント ベースの保持は、通常、記録管理プロセスの一部として使用されます。
-ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 100381d87c51a8ef403a88f19159235081c2a8df
+ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053885"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44385011"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -108,13 +108,16 @@ Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリ
   
 ![イベントの種類を作成または選択するオプション](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-the-event-based-retention-labels"></a>手順 3: イベント ベースの保持ラベルを発行する
+### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>手順 3: イベント ベースの保持ラベルを発行または自動適用する
 
-イベント ベースの保持ラベルを発行し、コンテンツに手動で適用できるようにします。 自動適用ポリシーには、イベント ベースの保持ラベルを選択することはできません。 
+他の保持ラベルと同じように、イベント ベースのラベルを[発行または自動適用](create-retention-labels.md)する必要があります。したがって、このラベルはコンテンツに手動または自動で適用されます。
 
-イベントベースの保持ラベルを発行するには、**分類** > **保持ラベル** ページの順に移動します。
-  
-![保持ラベルの発行または自動適用のオプション](../media/options-to-publish-auto-apply-retention-label.png)
+> [!NOTE]
+> [**レコード管理**] > [**ファイル計画**] タブまたは [**データ ガバナンス**] > [**ラベル**] タブからイベント駆動型の保持ラベルを選択した場合、[**ラベルの自動適用**] ボタンは使用できません。
+> 
+> このボタンの代わりに、次のいずれかの場所からのラベルまたはポリシーのリストの上にある [**ラベルを自動適用**] オプションを使用します。
+> - [**レコード管理**] > [**ラベル ポリシー**] タブ
+> - [**データ ガバナンス**] > [**ラベル**] タブまたは [**ラベル ポリシー**] タブ
 
 ### <a name="step-4-enter-an-asset-id"></a>手順 4: アセット ID を入力する
 
@@ -144,7 +147,7 @@ Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリ
 
 ここで、SharePoint および OneDrive コンテンツのアセット ID または Exchange コンテンツのキーワードを指定して、コンテンツの範囲を絞り込みます。アセット ID の保持は、指定された property:value のペアを持つコンテンツにのみ適用されます。アセット ID が入力されていない場合は、そのイベントの種類のラベルが割り当てられている**すべてのコンテンツ**に、ラベルに適用されているのと同じ保持期限が適用されます。 
   
-なお、アセット ID は、SharePoint と OneDrive for Business では、別のドキュメント プロパティにあります。アセット ID プロパティを使用している場合は、以下に示すアセット ID のボックスに ComplianceAssetID:\<値\> を入力します。
+資産 ID は、SharePoint と OneDrive for Business の単なる別のドキュメント プロパティであることをご理解ください。 資産 ID プロパティを使用する場合は、下に示される資産 ID のボックスに「ComplianceAssetID:\<value\>」と入力します。
   
 組織がこのイベントの種類に関連するドキュメントに、他のプロパティと ID を適用している可能性があります。たとえば、特定の製品のレコードを検出する必要がある場合、ID はカスタム プロパティ ProductID と値 "XYZ" の組み合わせになります。この場合、以下に示すアセット ID のボックスには、ProductID:XYZ と入力します。
   
@@ -162,7 +165,7 @@ Exchange アイテムの場合は、キーワードを使用できます。AND�
   
 - 特定の保持ラベルを持つすべてのコンテンツを検索するには、**[コンプライアンス タグ]** の条件を選択した後、完全なラベル名を入力するか、ラベル名の一部を入力してワイルドカードを使用します。 
     
-- 特定のアセット ID を持つすべてのコンテンツを検索するには、**ComplianceAssetID** プロパティと値 (例: ComplianceAssetID:\<値\>) を入力します。 
+- 特定のアセット ID を持つすべてのコンテンツを検索するには、**ComplianceAssetID** プロパティと値 (例: ComplianceAssetID:\<value\>) を入力します。 
     
 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
   
