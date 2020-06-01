@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Power BI と、組織内のユーザーがこのビジネス分析サービスをどのように使用できるかについて説明します。
-ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399304"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432173"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -171,9 +171,6 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 あるユーザーが Power BI にサインアップしているが、そのユーザーが今後は Power BI にアクセスできないようにする場合は、そのユーザーの Power BI ライセンスを削除する方法があります。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
   
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
     
@@ -210,7 +207,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
     
 4. [ **Microsoft POWER BI** ] オプションをオフにします。
     
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
 ::: moniker-end 
 

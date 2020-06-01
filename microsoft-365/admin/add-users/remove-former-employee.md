@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'このチェックリストに従って、Microsoft 365 およびセキュリティで保護されたデータから従業員を削除します。 '
-ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387047"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431655"
 ---
 # <a name="remove-a-former-employee"></a>元従業員を削除する
 
@@ -45,14 +45,11 @@ ms.locfileid: "44387047"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
 従業員の削除に関する短いビデオを見ることができます。 <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 従業員を削除するには、次のようにします。
 
@@ -156,9 +153,6 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 ::: moniker range="o365-worldwide"  
 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. 禁止する従業員の名前を選択し、[**メール**] タブを選択します。
@@ -167,7 +161,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
   
-5. **[保存]** を選択します。 
+5. [**保存**] を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
  
@@ -183,7 +177,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
   
-5. **[保存]** を選択します。 
+5. [**保存**] を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -199,7 +193,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
   
-5. **[保存]** を選択します。 
+5. [**保存**] を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -221,7 +215,7 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
     
 5. [**モバイルデバイスの詳細**] ページの [**モバイルデバイス**] で、モバイルデバイスを選択し、[データワイプデバイスの**ワイプ**] を選択して、[ ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **ブロック**] を選択します。 
     
-6. **[保存]** を選択します。 
+6. [**保存**] を選択します。 
     
     **ヒント**: オンプレミスの Blackberry Enterprise Service からも、そのユーザーを削除するか無効にするかします。さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。 
     
@@ -233,9 +227,6 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
@@ -288,9 +279,6 @@ Microsoft 365 サブスクリプションの一部として電子メールを所
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. 禁止する従業員の名前を選択し、[**ライセンスとアプリ**] タブを選択します。
@@ -333,13 +321,13 @@ Microsoft 365 サブスクリプションの一部として電子メールを所
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
     
@@ -364,9 +352,6 @@ Office 365 からユーザーのライセンスを削除すると、ユーザー
 メールの転送を設定した場合や、アカウントを共有メールボックスに変換した場合、アカウントを削除しないでください。いずれの場合も、メール転送および共有メールボックスを固定するには、アカウントが必要です。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 

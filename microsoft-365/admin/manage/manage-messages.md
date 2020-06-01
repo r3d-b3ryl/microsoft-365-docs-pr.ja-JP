@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 変更管理に役立つメッセージセンターのメッセージを管理する方法について説明します。
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399718"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432267"
 ---
 # <a name="manage-messages-in-message-center"></a>メッセージ センターでメッセージを管理する
 
@@ -36,13 +36,6 @@ ms.locfileid: "44399718"
 メッセージセンターに移動するには、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に移動して、[ **Health**  >  **メッセージセンター**] を選択します。 
 
 メッセージタイトルを選択し、閲覧ウィンドウで開きます。 すべてのメッセージには、変更の概要、変更がどのように影響するかについての説明、組織の変更についての準備方法に関する情報、さらに詳しく説明できる追加情報リンクが含まれています。 この追加情報は、メッセージの有効期限が切れた後も、引き続き確認することができます。
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>フィルターと並べ替え
 

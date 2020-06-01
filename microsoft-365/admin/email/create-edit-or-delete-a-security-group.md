@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: セキュリティ グループの作成、編集、削除について説明します。
-ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400090"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432279"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでセキュリティ グループを作成、編集、削除する
 
@@ -58,9 +58,6 @@ ms.locfileid: "44400090"
 ### <a name="add-members-to-a-security-group"></a>メンバーをセキュリティ グループに追加する
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
     
 1. [**グループ**] ページでセキュリティ グループ名を選択し、[**メンバー**] タブで [**すべてのメンバーの表示と管理**] を選択します。 
     
@@ -95,9 +92,6 @@ ms.locfileid: "44400090"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
 1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
   
 2. [**グループ**] ページで、グループ名を選択します。 
@@ -108,7 +102,7 @@ ms.locfileid: "44400090"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**グループ** \> **グループ**] ページに移動します。  
   
 2. [**グループ**] ページで、グループ名を選択します。 
     
@@ -120,7 +114,7 @@ ms.locfileid: "44400090"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**グループ**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">グループ</a>] ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**グループ** \> **グループ**] ページに移動します。
   
 2. [**グループ**] ページで、グループ名を選択します。 
     

@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 複数のユーザーを追加するときに、テンプレートを作成して使用し、時間を節約し、設定を標準化することができます。
-ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387227"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431811"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>テンプレートを作成して使用し、ユーザーを追加する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
-
-::: moniker-end
 
 テンプレートを作成して使用し、複数のユーザーを追加するときに時間を節約し、設定を標準化することができます。 テンプレートが特に役立つのは、同じ役割を持つユーザーと同じ場所で作業し、同じソフトウェアを必要とするユーザーなど、多くの共通プロパティを共有しているユーザーがいる場合です。 たとえば、同じオフィスで働いているサポートエンジニアのチームがいるとします。  
 

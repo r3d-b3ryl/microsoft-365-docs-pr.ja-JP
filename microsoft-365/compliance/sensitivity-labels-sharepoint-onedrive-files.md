@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411014"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432606"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -39,6 +39,8 @@ SharePoint および OneDrive で Office ファイルの機密ラベルを有効
 - アップロード時に SharePoint がファイルから暗号化を削除するには、ラベル付きおよび暗号化されたファイルをアップロードするユーザーは、少なくともファイルを表示するための使用権限を持っている必要があります。 ユーザーが SharePoint の外部でファイルを開くことができない場合、SharePoint はファイルから暗号化を削除しません。
 
 - Web 上の Office (Word、Excel、PowerPoint) を使用して、暗号化を適用する機密ラベルが設定された Office ファイルを開いて編集します。 暗号化によって割り当てられたアクセス許可が適用されます。 Word on the web では、これらの文書を編集するときに自動ラベルを使用することもできます。
+
+- 外部ユーザーは、ゲストアカウントを使用して、暗号化のラベルが付けられたドキュメントにアクセスできます。 詳細については、「[サポートの外部ユーザーとラベル付きコンテンツ](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)」を参照してください。 
 
 - Office 365 電子情報開示では、これらのファイルのフルテキスト検索がサポートされています。 データ損失防止 (DLP) ポリシーは、これらのファイルの内容を対象としています。
 

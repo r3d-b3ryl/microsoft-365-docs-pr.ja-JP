@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てます。 '
-ms.openlocfilehash: 1f69cd6f0e572da18abf7253832604ad3ac0ab8f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400030"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432221"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 
@@ -50,9 +50,6 @@ ms.locfileid: "44400030"
 ## <a name="remove-the-license"></a>ライセンスを削除する
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
 
 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
@@ -82,7 +79,7 @@ ms.locfileid: "44400030"
 
 3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
 
@@ -101,7 +98,7 @@ ms.locfileid: "44400030"
 
 3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
 

@@ -20,23 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: フィルターを使用して、Microsoft 365 でカスタムユーザービューを作成、編集、または削除する方法について説明します。
-ms.openlocfilehash: faea21f0e5142d197cc2b90d6ade99490f9f88e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387215"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431643"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>Office 365 でカスタム ユーザー ビューを作成、編集、削除する
 
 Office 365 の全体管理者またはユーザー管理の管理者は、一部の特定のユーザーを表示するためのカスタム ユーザー ビューを作成できます。カスタム ユーザー ビューは、Office 365 に付属している標準ビューのセット以外の追加ビューです。カスタム ユーザー ビューは作成、編集、削除でき、ある管理者が作成したカスタム ビューはすべての管理者が使用できます。
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
-::: moniker-end
   
 ## <a name="custom-user-views-in-the-admin-center"></a>管理センターのカスタムユーザービュー
 

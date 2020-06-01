@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 一般法人向けサブスクリプションの支払い方法を更新する方法について説明します。
-ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407970"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432417"
 ---
 # <a name="change-your-payment-method"></a>支払方法を変更する
 
@@ -202,12 +202,6 @@ ms.locfileid: "44407970"
 1. 管理センターで、[製品の**請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> ] ページに移動します。
 
 2. 確認するサブスクリプションを探します。 サブスクリプションに設定されている支払い方法が、**[課金]** セクションに表示されます。
-
-### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>従来の管理センターを使用して、構成されている支払い方法を確認する
-
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
-
-2. 確認するサブスクリプションを探します。 サブスクリプションに設定されている支払い方法が、**[支払い方法]** セクションに表示されます。
 
 ::: moniker-end
 

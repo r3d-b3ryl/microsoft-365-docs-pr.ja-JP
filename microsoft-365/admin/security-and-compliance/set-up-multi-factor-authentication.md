@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織で多要素認証をセットアップする方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 2b4ac2b5950d2641254742e03f054f3e4c886833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399124"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432381"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
@@ -42,7 +42,8 @@ ms.locfileid: "44399124"
 
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>手順 1: ユーザーに MFA の使用を要求する方法を決定する
 
-ユーザーがサインインに MFA を使用するよう要求するには、次の3つの方法があります。詳細については、「 [Microsoft 365 の MFA サポート](multi-factor-authentication-microsoft-365.md)」を参照してください。
+> [!NOTE]
+> MFA を設定または変更するには、グローバル管理者である必要があります。 ユーザーがサインインに MFA を使用するよう要求するには、次の3つの方法があります。詳細については、「 [Microsoft 365 の MFA サポート](multi-factor-authentication-microsoft-365.md)」を参照してください。
 
 - セキュリティの既定値 (小規模企業に推奨)
 

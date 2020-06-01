@@ -27,18 +27,18 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理者の役割をユーザーまたは複数のユーザーに割り当てて、管理センターで特定のタスクを実行できるようにする方法について説明します。
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387239"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432101"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
 Microsoft business サブスクリプションを購入したユーザーである場合は、グローバル管理者になります。これは、サブスクリプション内の製品を無制限に制御でき、ほとんどのデータにアクセスできることを意味します。
 
-詳細については、「[管理者の役割につい](about-admin-roles.md)て」を参照してください。
+詳細については、「[管理者ロールについて](about-admin-roles.md)」を参照してください。
 
 新しいユーザーを追加した場合、管理者の役割を割り当てていないと、それらは*ユーザーの役割*にあり、Microsoft 管理センターのいずれかに対する管理者特権を持ちません。 しかし、操作の実行についてサポートが必要な場合は、管理者の役割をユーザーに割り当てることができます。 たとえば、パスワードのリセットを支援するユーザーが必要な場合は、グローバル管理者の役割を割り当てないでください。パスワード管理者の役割を割り当てる必要があります。 データおよびオンラインビジネスへのアクセスを無制限にして、グローバル管理者が多すぎて、セキュリティ上のリスクがあります。
 
@@ -46,14 +46,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 新しい Microsoft 365 管理センターを利用していない場合、[ホーム] ページの上部にある [**新しい管理センターをお試しください**] の切り替えを選択して有効にすることができます。
-
-::: moniker-end
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="assign-admin-roles"></a>管理者ロールを割り当てる 
 
@@ -99,7 +92,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
-2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。 
+2. [**アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[**役割**] の横にある [**編集**] を選択します。
 
     [**編集**] オプションが表示されない場合は、編集する権限がなく、他のユーザーに管理者ロールを割り当てることはできません。 会社のグローバル管理者に、役割の割り当てを依頼します。 小規模な企業では、ビジネスの所有者 (サブスクリプションを購入した人物) はグローバル管理者です。大規模な企業では、IT 部門の主要な担当者はグローバル管理者です。
 
@@ -125,9 +118,10 @@ PowerShell がわかっている場合は、「PowerShell を使用して[ユー
 
 ## <a name="related-articles"></a>関連記事
 
+[Microsoft 365 管理者ロールについて](about-admin-roles.md)
+
 [PowerShell を使用してユーザーアカウントに役割を割り当てる](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [パートナー関係を承認または削除する](../misc/add-partner.md)
 
 [Exchange 管理センターを使用して、別の電子メールアドレスを追加する](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

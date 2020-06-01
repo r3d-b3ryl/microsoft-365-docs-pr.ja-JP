@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 1dde487ef9dc99b45263a21ce62d556249ada927
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387275"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432113"
 ---
 # <a name="get-started-with-the-roles-page"></a>[ロール] ページで作業を開始する
 
@@ -99,3 +99,9 @@ Teams & Skype admin center にアクセスして管理するユーザーに Team
 :::image type="content" source="../../media/compare-roles-list.png" alt-text="管理者の役割の比較を示す図":::
 
 ::: moniker-end
+
+## <a name="related-topics"></a>関連項目
+
+[Microsoft 365 管理者ロールについて](about-admin-roles.md)
+
+[管理者の役割を割り当てる](assign-admin-roles.md)

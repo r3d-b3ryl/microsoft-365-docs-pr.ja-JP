@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理者は、組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みのアイテムを復元します。 '
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387427"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432137"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
@@ -56,9 +56,10 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
   
  たとえば、証拠開示管理という役割グループに割り当てられたユーザーは、メールボックスの検索を実行して条件に一致するデータを得ることができます。詳細については、「 [Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)」と「[役割グループの管理](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)」を参照してください。
   
-## <a name="learn-about-other-admin-roles"></a>その他の管理者の役割について説明します。
-    
+## <a name="learn-about-other-admin-role"></a>その他の管理者の役割について説明します。
+
+- [Microsoft 365 管理者ロールについて](about-admin-roles.md)
+
 - [SharePoint Online 管理者の役割について](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [Skype for Business 管理者の役割について](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    
