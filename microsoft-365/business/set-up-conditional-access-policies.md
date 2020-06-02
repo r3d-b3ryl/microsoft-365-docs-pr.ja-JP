@@ -25,14 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: セキュリティを強化するために、Microsoft 365 キャンペーンの条件付きアクセスポリシーをセットアップする方法について説明します。
-ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58ee760877ee2fd7e53ef9463242657ab66a2b6e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403020"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470649"
 ---
 # <a name="set-up-conditional-access-policies"></a>条件付きアクセス ポリシーのセットアップ
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 [条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)ポリシーによって追加のセキュリティが大幅に強化します。 Microsoft は、すべてのお客様に推奨される基準条件付きアクセスポリシーのセットを提供しています。 ベースラインポリシーは、多くの一般的な攻撃から組織を保護するのに役立つ、定義済みのポリシーのセットです。 これらの一般的な攻撃には、パスワードのスプレー、リプレイ、フィッシングを含めることができます。
 

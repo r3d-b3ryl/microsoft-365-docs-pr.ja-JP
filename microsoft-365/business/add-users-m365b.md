@@ -27,14 +27,16 @@ search.appverid:
 - MET150
 ms.assetid: 96153102-1db1-4df8-bca5-38cea80b65ce
 description: Microsoft 365 Business Premium で、新しいユーザーの追加、デバイスのセキュリティ保護、および役割の割り当てを簡単に行う手順について説明します。
-ms.openlocfilehash: 9d2efe62ed1c48df5c10a765b8d3499934e6aebd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bb5c3ffe29448437b6c369fc770281aca3355ee7
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401076"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471221"
 ---
 # <a name="add-more-users"></a>ユーザーを追加する
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 ## <a name="add-new-users"></a>新しいユーザーを追加する
 
@@ -42,7 +44,7 @@ ms.locfileid: "44401076"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ユーザーを追加するには、次のようにします。
 

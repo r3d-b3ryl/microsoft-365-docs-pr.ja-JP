@@ -22,22 +22,24 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Microsoft 365 for business のセットアップ後に Windows 10 Pc をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 88fb149e521848d6a7daa9498cd7d6240169c9fa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 Business Premium のセットアップ後に Windows 10 Pc をセキュリティで保護する方法について説明します。
+ms.openlocfilehash: 5d5dda9c1faa7d50063c9b2b05bd938c67b54a76
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402752"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470613"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
 
-Microsoft 365 for business を[セットアップ](set-up.md)した後は、組織内の Windows 10 コンピューターを盗難から保護し、ウイルスやマルウェアのような悪意のある脅威から保護することができます。
+この記事は、Microsoft 365 Business Premium に適用されます。
+
+Microsoft 365 Business Premium を[セットアップ](set-up.md)した後は、組織内の Windows 10 コンピューターを盗難から保護し、ウイルスやマルウェアのような悪意のある脅威から保護することができます。
 このビデオで、Windows 10 コンピューターをセキュリティで保護するためのポリシーを設定する方法の概要をご覧ください。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="to-secure-your-windows-10-pcs"></a>Windows 10 Pc をセキュリティで保護するには
 

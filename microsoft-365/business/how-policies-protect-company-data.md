@@ -27,14 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: ユーザーの個人用デバイスで会社のデータを保護するには、特定のデバイスおよびセキュリティグループを対象としたポリシーを使用します。
-ms.openlocfilehash: 2407db3309ed0967daa6eef9da14a702079d0487
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18bf29d82b8020d31fec681b2114af86f52cad9c
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400892"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471161"
 ---
 # <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Microsoft 365 for business のポリシーが会社のデータを保護する方法
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 作成するポリシーはデバイスの種類に固有のものであり、特定のユーザーのグループに適用できます。つまり、エグゼクティブに適用されるポリシーと、他の全員に適用される別のポリシーを作成できるということです。
   

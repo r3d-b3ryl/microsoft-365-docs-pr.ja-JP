@@ -27,14 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: Windows 10 デバイスが職場または学校のアカウントにサインインしたときに受信する既定のデバイスポリシーの設定を構成する方法について説明します。
-ms.openlocfilehash: 7714a6e47de8a254d836ca2e158b92907b87f8c3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 03ae86861ddb0cb83cd39b7834f19e01bf3e99e2
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402736"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470629"
 ---
 # <a name="secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 ここで構成する設定は、Windows 10 の既定のデバイス ポリシーの一部です。 Windows 10 デバイス (モバイルデバイスや Pc を含む) に接続するすべてのユーザーは、職場アカウントを使用してサインインすることで、これらの設定を自動的に受け取ります。 セットアップ時は既定のポリシーを受け入れて、ユーザーの特定のグループを対象にするポリシーは後で追加することをお勧めします。
   

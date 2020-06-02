@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: da5fab99cf00a65986fb5e555cc19e432fe0fe8d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9615ecc9469992d3e5a7479f4799c610db11fb41
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401116"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471253"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 Azure Active Directory に参加している Windows 10 デバイスはすべて、Microsoft 365 アプリなどのクラウドベースのすべてのリソースにアクセスでき、Microsoft 365 Business Premium で保護することができます。 基幹業務 (LOB) アプリ、ファイル共有、プリンターなどの社内リソースへのアクセスを許可することもできます。 アクセスを許可するには、 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)を使用してオンプレミスの active Directory を Azure active directory と同期します。 
 

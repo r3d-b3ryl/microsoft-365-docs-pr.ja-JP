@@ -27,16 +27,18 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: ユーザーがモバイルデバイスから Office アプリや作業ファイルにアクセスする方法を管理できる保護ポリシーについて説明します。
-ms.openlocfilehash: f613e518c3607010cae55443456be9d3ddc3d689
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2b828cf2e201360f12b8fadcb395e72958230f6
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403080"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471069"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>ユーザーによるモバイル デバイスの Office ドキュメントのアクセス方法を管理する
 
- ユーザーがモバイル デバイスから Office ファイルにアクセスする方法を制御するポリシーの設定は、既定では **オフ**になっています。 すべてのユーザーに適用される Android、iOS、Windows 10 のアプリケーションポリシーを作成するには、セットアップ時に既定値を受け入れることをお勧めします。 セットアップが完了したら、追加のポリシーを作成できます。 
+この記事は、Microsoft 365 Business Premium に適用されます。
+
+ユーザーがモバイル デバイスから Office ファイルにアクセスする方法を制御するポリシーの設定は、既定では **オフ**になっています。 すべてのユーザーに適用される Android、iOS、Windows 10 のアプリケーションポリシーを作成するには、セットアップ時に既定値を受け入れることをお勧めします。 セットアップが完了したら、追加のポリシーを作成できます。 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>ユーザーがモバイル デバイスで Office ファイルにアクセスする方法を制御する設定
 

@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business Premium のセットアップ手順、サブスクライブ、ドメインおよびユーザーの追加、セキュリティポリシーの設定などについて説明します。
-ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402980"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470527"
 ---
 # <a name="overview-of-setup"></a>セットアップの概要
 
@@ -40,7 +40,7 @@ Microsoft 365 Business Premium セットアップに関する短いビデオを�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 セットアップの手順のほとんどはセットアップウィザードで行うことができますが、その他のオプションも表示されます。
 
@@ -48,7 +48,7 @@ Microsoft 365 Business Premium セットアップに関する短いビデオを�
 
    - **[ドメインを追加](set-up.md#add-your-domain-to-personalize-sign-in)** します ([サインアップ](sign-up.md)中にドメインを購入した場合、この手順は既に完了しています)。
 
-    - **ユーザーを追加**します。 次の3つの方法のいずれかでユーザーを追加できます。
+   - **ユーザーを追加**します。 次の3つの方法のいずれかでユーザーを追加できます。
         - [ウィザード](set-up.md#add-users-in-the-wizard)で。
         - オンプレミスの Active directory を使用している場合は、ディレクトリ同期を使用して、 [AZURE AD Connect を使用してユーザーを追加](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)します。
         - 後で管理センターで[ユーザーを追加](add-users-m365b.md)することもできます。

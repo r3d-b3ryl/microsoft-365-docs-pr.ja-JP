@@ -23,16 +23,16 @@ search.appverid:
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
 description: グローバル管理者の資格情報を使用して Microsoft 365 for business にサインインして、デバイスのポリシーとアクションを表示します。
-ms.openlocfilehash: f65365584d8b05f4df012d9f5727a74c33c06ae8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 49e878ae6d4e1a6c55dbd7bc65532f94295412a8
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403572"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470597"
 ---
 # <a name="view-and-manage-policies-and-devices"></a>ポリシーとデバイスの表示と管理
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 ## <a name="view-and-edit-device-policies"></a>デバイスポリシーを表示および編集する
 

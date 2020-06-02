@@ -22,18 +22,20 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 32ビット版の Office アプリを Windows 10 コンピューターに自動的にインストールして、更新したままにする方法について説明します。
-ms.openlocfilehash: 6f3a80be9729a3818607c0f42e2cc7ece66a07ee
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2de492914edbde2afe593aac290c4a634b801443
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401324"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470949"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Microsoft 365 for business による Office クライアントの展開を準備する
 
+この記事は、Microsoft 365 Business Premium に適用されます。
+
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Office アプリをクライアント コンピューターに自動的にインストールするための準備
 
-Microsoft 365 for business を使用して、Windows 10 コンピューターに32ビットの Office アプリを自動的にインストールし、更新プログラムを最新の状態に保つことができます。
+Microsoft 365 Business Premium を使用して、Windows 10 コンピューターに32ビットの Office アプリを自動的にインストールし、更新プログラムを最新の状態に保つことができます。
   
 自動インストールは、エンドユーザーのコンピューターが Windows 10 Business 上にあり、次の場合に最適に機能します。
   

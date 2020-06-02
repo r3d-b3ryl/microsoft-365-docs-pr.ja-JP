@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: いくつかの手順で、Microsoft 365 を有効にして、ローカルの Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: e7f83e620fbb43a478dba98f78d5f471a541aea7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7bfe5da8701a17712fa249eac99a22b8d5a1b2d1
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403060"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471049"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>Microsoft 365 for business で管理されるドメインに参加している Windows 10 デバイスを有効にする
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Microsoft 365 Business Premium によって管理されるドメインに参加している Windows 10 デバイスを有効にする
 
-組織がオンプレミスの Windows Server Active Directory を使用している場合は、ローカル認証を必要とするオンプレミスのリソースへのアクセスを維持しながら、Microsoft 365 for business をセットアップして、Windows 10 デバイスを保護することができます。
+組織でオンプレミスの Windows Server Active Directory を使用している場合は、Microsoft 365 Business Premium をセットアップして Windows 10 デバイスを保護することができます。ただし、ローカル認証を必要とするオンプレミスのリソースへのアクセスは維持されます。
 この保護をセットアップするには、**ハイブリッド AZURE AD に参加**しているデバイスを実装します。 これらのデバイスは、オンプレミスの Active Directory と Azure Active Directory の両方に参加します。
 
 このビデオでは、最も一般的なシナリオに対してこれを設定する手順について説明します。これについては、以下の手順でも詳細に説明します。

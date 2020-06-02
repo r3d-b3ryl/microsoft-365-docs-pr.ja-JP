@@ -22,14 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: Microsoft 365 for business を使用して組織を設定し、ユーザーのデバイスで作業データを保護するための要件について説明します。
-ms.openlocfilehash: e170f7ca4fb8373c9070bcbfc1783138c20422c1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1bfa2b2d2ceba68d39da9c65560e67a6602e6cfa
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401344"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470969"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>Microsoft 365 for business を使用してデバイス上のデータを保護するための前提条件
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 Microsoft 365 for business を使用して組織をセットアップする最初の手順は、前提条件を満たすことができるようにすることです。
   

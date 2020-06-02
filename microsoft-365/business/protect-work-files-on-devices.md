@@ -28,14 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: '既定の構成とアプリケーション管理ポリシーを追加して、ユーザーの個人用モバイルデバイス上の会社のデータを保護する方法について説明します。 '
-ms.openlocfilehash: 1d76b8fde6db4cf99d29fcfff000c20f0e7c18fe
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401284"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470909"
 ---
 # <a name="protect-work-files-on-devices"></a>デバイス上の作業ファイルを保護する
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 今日の世界では、ユーザーは自分のデバイスに結び付けられており、個人や作業のライフサイクルの衝突により、会社のデータが従業員の個人のデバイスで終了する可能性があります。 ここで構成する設定は、ユーザーの個人の設定またはデータに影響を与えることなく、作業ファイルの制御を取り戻したり、保護を提供するのに役立ちます。
   

@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Windows 10 デバイスをセキュリティで保護するために Microsoft 365 for business で利用可能な既定の設定とその他の設定について説明します。
-ms.openlocfilehash: 0403ea2c30221dd5693b7f3e9b4921ad175399a1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af3f58ba13a1011e65be45337c63ff714bfdaf0c
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402808"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470849"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>Windows 10 の PC のデバイス保護設定を設定する
+
+この記事は、Microsoft 365 Business Premium に適用されます。
 
 ## <a name="secure-windows-10-devices"></a>Windows 10 デバイスをセキュリティで保護する
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 保管担当者およびそのデータソースに保持を配置して、高度な電子情報開示ケースに関連するコンテンツを保持する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034126"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477163"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Advanced eDiscovery の保留を管理する
 
@@ -40,7 +40,7 @@ ms.locfileid: "44034126"
    
 2. ケース内に保管担当者を追加するには、[**保管担当者**] タブに移動します。 高度な電子情報開示ケース内に保管担当者を追加して保存する方法については、「 [Add 保管担当者 to a Advanced Ediscovery case」を](add-custodians-to-case.md)参照してください。 保管担当者を既に追加していて、保留リストに配置している場合は、手順3に進みます。
    
-3. [**保留**] タブに移動し、[ **\<custodianhold HoldId>**] をクリックします。
+3. [**保留**] タブに移動し、[ **Custodianhold \<HoldId> **] をクリックします。
    
 4. フライアウトページには、ポリシーの [ホールド] の統計が表示されます。 また、保管担当者ベースのホールドにクエリを適用するなどの操作を実行することもできます。 保留クエリの作成と条件の使用の詳細については、「[コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
  
@@ -70,7 +70,7 @@ ms.locfileid: "44034126"
   
 8. 保留にするコンテンツの場所を選択します。メールボックス、サイト、パブリック フォルダーを保留にできます。
 
-   a.  **Exchange 電子メール**-[**ユーザー、グループ、またはチームの選択**] をクリックし、[**ユーザー、グループ、または teams**を再度選択する] をもう一度クリックして、保持するメールボックスを指定します。 検索ボックスを使用して、ユーザーのメールボックスと配布グループを検索します (グループメンバーのメールボックスを保留にする場合)。 また、Microsoft 365 グループまたは Microsoft チームに対して、関連付けられたメールボックスにホールドを配置することもできます。 [ユーザー、グループ、チーム] チェックボックスをオンにし、[**選択**] をクリックし、[**完了**] をクリックします。
+   a. **Exchange 電子メール**-[**ユーザー、グループ、またはチームの選択**] をクリックし、[**ユーザー、グループ、または teams**を再度選択する] をもう一度クリックして、保持するメールボックスを指定します。 検索ボックスを使用して、ユーザーのメールボックスと配布グループを検索します (グループメンバーのメールボックスを保留にする場合)。 また、Microsoft 365 グループまたは Microsoft チームに対して、関連付けられたメールボックスにホールドを配置することもできます。 [ユーザー、グループ、チーム] チェックボックスをオンにし、[**選択**] をクリックし、[**完了**] をクリックします。
  
     > [!NOTE]
     > [**ユーザー、グループ、またはチームの選択**] をクリックして保留にするメールボックスを指定するときに、表示されるメールボックス ピッカーは空の状態です。これは、パフォーマンスを向上させるための仕様です。このリストにユーザーを追加するには、検索ボックスに名前 (3 文字以上) を入力します。
@@ -80,7 +80,7 @@ ms.locfileid: "44034126"
      Microsoft 365 グループと Microsoft Teams を保持する方法に関するヒントについては、 **FAQ**のセクションを参照してください。
 
     > [!NOTE]
-    > ユーザーの OneDrive アカウントの URL には、ユーザープリンシパル名 (UPN) が含まれてい`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`ます (例:)。 まれに、ユーザーの UPN が変更された場合、その OneDrive の URL も新しい UPN を組み込むように変更されます。 ユーザーの OneDrive アカウントが非 wi-fi ダイヤルホールドの一部であり、その UPN が変更されている場合は、保留リストを更新して新しい OneDrive URL を指定する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](https://docs.microsoft.com/onedrive/upn-changes)」をご覧ください。
+    > ユーザーの OneDrive アカウントの URL には、ユーザープリンシパル名 (UPN) が含まれています (例: `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` )。 まれに、ユーザーの UPN が変更された場合、その OneDrive の URL も新しい UPN を組み込むように変更されます。 ユーザーの OneDrive アカウントが非 wi-fi ダイヤルホールドの一部であり、その UPN が変更されている場合は、保留リストを更新して新しい OneDrive URL を指定する必要があります。 詳細については、「[UPN の変更による OneDrive URL への影響](https://docs.microsoft.com/onedrive/upn-changes)」をご覧ください。
 
      c. **Exchange パブリックフォルダー** -切り替えスイッチをすべての位置に移動して、Exchange Online 組織内のすべてのパブリックフォルダーを保持します。 特定のパブリックフォルダーを保持の対象にすることはできないことに注意してください。 パブリックフォルダーを保持しない場合は、トグルスイッチを **[なし**] のままにします。
 
