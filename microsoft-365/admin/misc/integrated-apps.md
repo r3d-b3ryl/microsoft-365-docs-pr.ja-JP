@@ -1,5 +1,5 @@
 ---
-title: 統合アプリをオンまたはオフにする
+title: Microsoft 365 でのアプリへのユーザーの同意の管理
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,42 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: 統合アプリについて、およびサードパーティ製アプリがユーザーの Microsoft 365 情報にアクセスできるようにする方法について説明します。
-ms.openlocfilehash: 070150662daeefb2a4d02c7e0940dfd242bd4b5f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: アプリに対するユーザーの同意と、サードパーティ製アプリがユーザーの Microsoft 365 情報にアクセスできるようにする方法について説明します。
+ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399340"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477174"
 ---
-# <a name="turning-integrated-apps-on-or-off"></a><span data-ttu-id="6998c-103">統合アプリをオンまたはオフにする</span><span class="sxs-lookup"><span data-stu-id="6998c-103">Turning Integrated Apps on or off</span></span>
+# <a name="managing-user-consent-to-apps-in-microsoft-365"></a><span data-ttu-id="52fbf-103">Microsoft 365 でのアプリへのユーザーの同意の管理</span><span class="sxs-lookup"><span data-stu-id="52fbf-103">Managing user consent to apps in Microsoft 365</span></span>
 
-<span data-ttu-id="6998c-104">統合アプリが有効になっている場合、組織内のユーザーは、サードパーティ製アプリで Microsoft 365 の情報にアクセスできるようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="6998c-104">When Integrated Apps is turned on, users in your organization can allow third-party apps to access their Microsoft 365 information.</span></span> <span data-ttu-id="6998c-105">たとえば、サードパーティ アプリを使用している場合、そのアプリが予定表へのアクセスと OneDrive フォルダーにあるファイルの編集のために権限を与えるように求めてくることがあります。</span><span class="sxs-lookup"><span data-stu-id="6998c-105">For example, when someone uses a third-party app, that app might ask for permission to access their calendar and to edit files that are in a OneDrive folder.</span></span>
+<span data-ttu-id="52fbf-104">この設定では、サインインおよびデータアクセスの要求に対して、OpenID Connect と OAuth 2.0 を使用するアプリに対してユーザーが同意を得ることができるかどうかを制御します。</span><span class="sxs-lookup"><span data-stu-id="52fbf-104">This setting controls whether users can give that consent to apps that use OpenID Connect and OAuth 2.0 for sign-in and requests to access data.</span></span> <span data-ttu-id="52fbf-105">アプリは、自分の組織内から作成することも、別の Office 365 組織またはサードパーティから入手することもできます。</span><span class="sxs-lookup"><span data-stu-id="52fbf-105">An app can be created from within your own organization, or it can come from another Office 365 organization or a third-party.</span></span>
 
-## <a name="turning-integrated-apps-on-or-off"></a><span data-ttu-id="6998c-106">統合アプリをオンまたはオフにする</span><span class="sxs-lookup"><span data-stu-id="6998c-106">Turning Integrated Apps on or off</span></span>
-<span data-ttu-id="6998c-107"><a name="__toc379982114"> </a></span><span class="sxs-lookup"><span data-stu-id="6998c-107"><a name="__toc379982114"> </a></span></span>
+<span data-ttu-id="52fbf-106">この設定をオンにすると、これらのアプリは組織のデータへのアクセス許可をユーザーに要求し、許可するかどうかをユーザーが選択できるようにします。</span><span class="sxs-lookup"><span data-stu-id="52fbf-106">If you turn this setting on, those apps will ask users for permission to access your organization’s data, and users can choose whether to allow it.</span></span> <span data-ttu-id="52fbf-107">この設定をオフにすると、管理者は、ユーザーが使用できるようにする前に、これらのアプリに同意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="52fbf-107">If you turn this setting off, then admins must consent to those apps before users may use them.</span></span> <span data-ttu-id="52fbf-108">この場合は、Azure ポータルで管理者の同意ワークフローを設定し、ブロックされたアプリを使用するためにユーザーが管理者の承認要求を送信できるようにすることを検討してください。</span><span class="sxs-lookup"><span data-stu-id="52fbf-108">In this case, consider setting up an admin consent workflow in the Azure portal so users can send a request for admin approval to use any blocked app.</span></span>
 
-<span data-ttu-id="6998c-108">ここでは、統合アプリをオンまたはオフにする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="6998c-108">Here's how to turn Integrated Apps on or off.</span></span>
+<span data-ttu-id="52fbf-109">ユーザーは、Office 365 情報に対して自分自身が持っているアクセス権のみをアプリに与えることができます。</span><span class="sxs-lookup"><span data-stu-id="52fbf-109">A user can give access only to apps they own that access their Office 365 information.</span></span> <span data-ttu-id="52fbf-110">他のユーザーの情報に対して、アプリにアクセス権を与えることはできません。</span><span class="sxs-lookup"><span data-stu-id="52fbf-110">They can't give an app access to any other user's information.</span></span>
 
-1. <span data-ttu-id="6998c-109">Microsoft 365 管理センターで、[**設定**の \> **設定**] ページの [ \> **サービス**] タブに移動し、[**統合アプリ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="6998c-109">In the Microsoft 365 admin center, go to the **Settings** \> **Settings** page, \> **Services** tab, and then select **Integrated apps**.</span></span>
+## <a name="turning-user-consent-on-or-off"></a><span data-ttu-id="52fbf-111">ユーザーの同意を有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="52fbf-111">Turning user consent on or off</span></span>
+<span data-ttu-id="52fbf-112"><a name="__toc379982114"> </a></span><span class="sxs-lookup"><span data-stu-id="52fbf-112"><a name="__toc379982114"> </a></span></span>
 
-2. <span data-ttu-id="6998c-110">[**統合アプリ**] ページで、[統合アプリをオンまたはオフにする] オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="6998c-110">On the **Integrated Apps** page, select the option to turn Integrated Apps on or off.</span></span>
+<span data-ttu-id="52fbf-113">アプリに対するユーザーの同意を有効または無効にする方法は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="52fbf-113">Here's how to turn User consent to apps on or off.</span></span>
 
-## <a name="more-info-on-integrated-apps"></a><span data-ttu-id="6998c-111">統合アプリの詳細情報</span><span class="sxs-lookup"><span data-stu-id="6998c-111">More info on Integrated Apps</span></span>
-<span data-ttu-id="6998c-112"><a name="__toc379982114"> </a></span><span class="sxs-lookup"><span data-stu-id="6998c-112"><a name="__toc379982114"> </a></span></span>
+1. <span data-ttu-id="52fbf-114">管理センターで、[設定] [ **Settings** \> **組織設定**  >  [サービス](https://go.microsoft.com/fwlink/p/?linkid=2053743)] ページに移動し、[**アプリへのユーザーの同意**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="52fbf-114">In the admin center, go to the **Settings** \> **Org settings** > [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **User consent to apps**.</span></span>
 
-<span data-ttu-id="6998c-113">統合アプリは、自分の組織内から作成することも、別の組織またはサードパーティから入手することもできます。</span><span class="sxs-lookup"><span data-stu-id="6998c-113">An integrated app can be created from within your own organization, or it can come from another organization or a third-party.</span></span>
+2. <span data-ttu-id="52fbf-115">[**アプリへのユーザーの同意**] ページで、[統合アプリをオンまたはオフにする] オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="52fbf-115">On the **User consent to apps** page, select the option to turn Integrated Apps on or off.</span></span>
 
-<span data-ttu-id="6998c-114">統合アプリをオンにしている場合、統合されるアプリをユーザーが使おうとすると、ユーザー情報へのアクセスに必要なアクセス レベルを設定できるように、そのアプリが権限を求めてきます。</span><span class="sxs-lookup"><span data-stu-id="6998c-114">When Integrated Apps is turned on and an app is used, the app asks for permission to set the level of access it needs when it accesses the user's information.</span></span> <span data-ttu-id="6998c-115">ユーザーは、Microsoft 365 の情報にアクセスする、自分が所有しているアプリにのみアクセス権を与えることができます。</span><span class="sxs-lookup"><span data-stu-id="6998c-115">A user can give access only to apps they own that access their Microsoft 365 information.</span></span> <span data-ttu-id="6998c-116">他のユーザーの情報に対して、アプリにアクセス権を与えることはできません。</span><span class="sxs-lookup"><span data-stu-id="6998c-116">They can't give an app access to any other user's information.</span></span>
+## <a name="more-info"></a><span data-ttu-id="52fbf-116">詳細情報</span><span class="sxs-lookup"><span data-stu-id="52fbf-116">More info</span></span>
+<span data-ttu-id="52fbf-117"><a name="__toc379982114"> </a></span><span class="sxs-lookup"><span data-stu-id="52fbf-117"><a name="__toc379982114"> </a></span></span>
 
-<span data-ttu-id="6998c-117">Microsoft 365 で統合アプリを使用するときに使用されるアクセス許可には、ユーザー権限と管理者権限の2種類があります。</span><span class="sxs-lookup"><span data-stu-id="6998c-117">There are two kinds of permissions that are used when using Integrated Apps in Microsoft 365: user permissions and admin permissions.</span></span> <span data-ttu-id="6998c-118">たとえば、統合アプリに対して組織を有効にしており、ユーザーがサードパーティ アプリを使用する場合、ユーザー プロファイルの詳細の読み取り、ファイルの編集または削除、サイト コレクションに含まれているアイテムの読み取り、そのユーザーとしてのメール送信などのために、アプリがユーザーの権限を求めてくることがあります。</span><span class="sxs-lookup"><span data-stu-id="6998c-118">For example, when your organization is enabled for Integrated Apps and a user uses a third-party app, the app might ask for the user's permission to read their user profile details, edit or delete their files, read items contained in site collections, and send email as that user.</span></span>
+<span data-ttu-id="52fbf-118">Azure active directory で同意設定を構成する方法については、「[管理者の同意ワークフローを構成](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="52fbf-118">To learn about how to configure your consent settings in Azure active directory, read [Configure the admin consent workflow](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow).</span></span>
 
-![統合アプリのユーザーの権限](../../media/bb9a6cf8-da39-4ac0-9e40-cde03a81c121.gif)
-
-<span data-ttu-id="6998c-120">管理者が組織内のすべてのユーザーに対してアプリを登録すると、そのアプリが組織内の情報とリソースにアクセスできるようにするためのアクセス許可を求められます。</span><span class="sxs-lookup"><span data-stu-id="6998c-120">If an admin registers an app for all users in an organization, he or she is asked for permission to let that app access information and resources in the organization.</span></span> <span data-ttu-id="6998c-121">管理者がアプリにアクセス権を与えたら、それ以降、組織内の他のユーザーがそのアプリを使用するときに、アクセス権を求められることはありません。</span><span class="sxs-lookup"><span data-stu-id="6998c-121">After this, when other users in the organization use that app, they won't be asked for permission.</span></span> <span data-ttu-id="6998c-122">管理者がアプリを登録する場合、その管理者はアプリの開発者が信頼できる相手であることを確認する必要があります。</span><span class="sxs-lookup"><span data-stu-id="6998c-122">When an admin registers an app, that admin must make sure that they trust that app's publisher.</span></span> <span data-ttu-id="6998c-123">アプリの登録の詳細については、「[アプリケーションの追加、更新、および削除](https://go.microsoft.com/fwlink/p/?LinkID=518600)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6998c-123">For details on registering an app, see [Adding, Updating and Removing an Application](https://go.microsoft.com/fwlink/p/?LinkID=518600).</span></span>
-
-![統合アプリの管理者権限](../../media/e24aa504-bf10-446c-a9d5-45a6f2655187.gif)
-
-<span data-ttu-id="6998c-p105">統合アプリがオフになった場合でも、既にインストールされており、情報へのアクセス権が与えられたアプリはアンインストールされません。アクセス権も削除されません。 統合アプリがオフになっていても、管理者はまだ、ユーザーが使用できるようにアプリを登録して、これらのアプリにユーザー情報へのアクセスを許可することができます。 登録済みアプリを削除する方法とその権限の詳細については、「[アプリケーションの追加、更新、および削除](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6998c-p105">If Integrated Apps is turned off, apps that have already been installed and have permission to access information won't be uninstalled, and the permissions won't be removed. Even though Integrated Apps is turned off, admins can still register apps to make them available to their users and allow those apps access to the users' information. For details on removing a registered application and it's permissions, see [Adding, Updating and Removing an Application](https://go.microsoft.com/fwlink/?LinkID=518600&amp;clcid=0x409).</span></span>
-
-
+<span data-ttu-id="52fbf-119">ユーザーの同意をアプリに対して管理する方法については、「[アプリケーションの同意を管理する」および「同意要求を評価](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="52fbf-119">To learn about managing user consent to apps, read [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-consent-requests).</span></span>
