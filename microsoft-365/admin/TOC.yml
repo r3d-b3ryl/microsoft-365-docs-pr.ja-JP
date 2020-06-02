@@ -11,7 +11,15 @@
         - name: セットアップを計画する
           href: setup/plan-your-setup.md
         - name: ガイド付きのセットアップを使用して組織をセットアップする
-          href: setup/setup.md
+          items:
+            - name: Microsoft 365 Business Basic
+              href: setup/setup-business-basic.md
+            - name: Microsoft 365 Business Standard
+              href: setup/setup-business-standard.md
+            - name: Microsoft Business Premium
+              href: ../business/set-up.md
+            - name: Microsoft 365 Apps for business
+              href: setup/setup-apps-for-business.md
         - name: セットアップのページとウィザードについて
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: データの移行
@@ -21,7 +29,7 @@
         - name: Teams をロールアウトする
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: すべてのユーザーを対象とするアプリのトレーニング
-          href: 'https://support.office.com/en-us/office-training-center'
+          href: 'https://support.office.com/office-training-center'
         - name: 取得しているサブスクリプションが不明な場合
           href: admin-overview/what-subscription-do-i-have.md
         - name: サインイン ページをカスタマイズする
@@ -240,10 +248,42 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Microsoft Business Premium をセキュリティで保護する
+          items:
+            - name: データ保護のための前提条件
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: セキュリティ機能
+              href: ../business/security-features.md
+            - name: 驚異の保護を強化する
+              href: ../business/increase-threat-protection.md
+            - name: コンプライアンス機能をセットアップする
+              href: ../business/set-up-compliance.md
         - name: セキュア スコア
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: GDPR コンプライアンスのガイド
           href: security-and-compliance/gdpr-compliance.md
+    - name: デバイスを管理する
+      items:
+        - name: ポリシーとデバイスを表示し編集する
+          href: ../business/view-policies-and-devices.md
+        - name: 会社データを削除する
+          href: ../business/remove-company-data.md
+        - name: デバイスを工場出荷時の設定にリセットする
+          href: ../business/reset-devices-to-factory-settings.md
+        - name: 保護機能を Intune の設定にマップする
+          href: ../business/map-protection-features-to-intune-settings.md
+        - name: Android および iOS のアプリ保護の設定
+          href: ../business/app-protection-settings-for-android-and-ios.md
+          items:
+            - name: Android または iOS の設定を検証する
+              href: ../business/validate-settings-on-android-or-ios.md
+        - name: Windows 10 PC のデバイス保護設定
+          href: ../business/protection-settings-for-windows-10-pcs.md
+          items:
+            - name: Windows 10 PC の設定を検証する
+              href: ../business/validate-settings-on-windows-10-pcs.md
+        - name: Windows 10 PC のアプリの保護設定
+          href: ../business/protection-settings-for-windows-10-devices.md
     - name: 顧客と連携する
       href: work-with-customers/index.yml
       items:
