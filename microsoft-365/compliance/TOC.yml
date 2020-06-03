@@ -281,7 +281,7 @@
           href: retention-policies-teams.md
         - name: Exchange の保持
           href: retention-policies-exchange.md
-        - name: ファイル計画マネージャー
+        - name: ファイル計画
           href: file-plan-manager.md
         - name: 保持ラベルの詳細
           href: labels.md
@@ -333,7 +333,7 @@
           href: records.md
         - name: ファイル計画
           items:
-            - name: ファイル計画マネージャー
+            - name: 保持ラベルを管理する
               href: file-plan-manager.md
             - name: 保持ラベルの詳細
               href: labels.md
