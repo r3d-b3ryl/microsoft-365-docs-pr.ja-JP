@@ -25,10 +25,10 @@ search.appverid:
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 for キャンペーン
 ms.openlocfilehash: 167b265676d3c3bc9025a0c0e998379f72bb9e52
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "43632037"
 ---
 <a name="microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns
@@ -57,7 +57,7 @@ ms.locfileid: "43632037"
 含まれるものの詳細については、「 [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business)」を参照してください。 
 
 
-<a name="get-started"></a>概要
+<a name="get-started"></a>作業の開始
 --------------------------
 
 <ul class="panelContent cardsJ">

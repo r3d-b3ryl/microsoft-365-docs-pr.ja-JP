@@ -17,28 +17,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a9ba61650b69e3c42506735c90ae05b917a53209
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931734"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498353"
 ---
-# <a name="custom-detections-overview"></a><span data-ttu-id="f5521-104">ユーザー設定の検出の概要</span><span class="sxs-lookup"><span data-stu-id="f5521-104">Custom detections overview</span></span>
+# <a name="custom-detections-overview"></a><span data-ttu-id="bc513-104">カスタム検出の概要</span><span class="sxs-lookup"><span data-stu-id="bc513-104">Custom detections overview</span></span>
 
-<span data-ttu-id="f5521-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="f5521-105">**Applies to:**</span></span>
-- <span data-ttu-id="f5521-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="f5521-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="bc513-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="bc513-105">**Applies to:**</span></span>
+- <span data-ttu-id="bc513-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="bc513-106">Microsoft Threat Protection</span></span>
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+<span data-ttu-id="bc513-107">カスタム検出を使用すると、疑いのある違反のアクティビティや不適切なエンドポイントを含む、さまざまなイベントやシステム状態を事前に監視して応答することができます。</span><span class="sxs-lookup"><span data-stu-id="bc513-107">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="bc513-108">これは、通知を自動的にトリガーするカスタマイズ可能な検出ルール、および応答アクションによって可能になります。</span><span class="sxs-lookup"><span data-stu-id="bc513-108">This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.</span></span>
 
-<span data-ttu-id="f5521-107">カスタム検出を使用すると、疑いのある違反のアクティビティや不適切なエンドポイントを含む、さまざまなイベントやシステム状態を事前に監視して応答することができます。</span><span class="sxs-lookup"><span data-stu-id="f5521-107">With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="f5521-108">これは、通知を自動的にトリガーするカスタマイズ可能な検出ルール、および応答アクションによって可能になります。</span><span class="sxs-lookup"><span data-stu-id="f5521-108">This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.</span></span>
+<span data-ttu-id="bc513-109">カスタム検出は[高度な](advanced-hunting-overview.md)検索を使用して動作します。これにより、さまざまなイベントおよびシステム情報をネットワークからカバーする強力で柔軟なクエリ言語が提供されます。</span><span class="sxs-lookup"><span data-stu-id="bc513-109">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="bc513-110">それらを定期的に実行するように設定して、一致するものがある場合は警告を生成し、応答アクションを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="bc513-110">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
 
-<span data-ttu-id="f5521-109">カスタム検出は[高度な](advanced-hunting-overview.md)検索を使用して動作します。これにより、さまざまなイベントおよびシステム情報をネットワークからカバーする強力で柔軟なクエリ言語が提供されます。</span><span class="sxs-lookup"><span data-stu-id="f5521-109">Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network.</span></span> <span data-ttu-id="f5521-110">それらを定期的に実行するように設定して、一致するものがある場合は警告を生成し、応答アクションを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="f5521-110">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
+<span data-ttu-id="bc513-111">カスタム検出の提供:</span><span class="sxs-lookup"><span data-stu-id="bc513-111">Custom detections provide:</span></span>
+- <span data-ttu-id="bc513-112">高度な検索クエリから構築されたルールベースの検出に関する警告</span><span class="sxs-lookup"><span data-stu-id="bc513-112">Alerts for rule-based detections built from advanced hunting queries</span></span>
+- <span data-ttu-id="bc513-113">自動応答アクション</span><span class="sxs-lookup"><span data-stu-id="bc513-113">Automatic response actions</span></span>
 
-<span data-ttu-id="f5521-111">カスタム検出の提供:</span><span class="sxs-lookup"><span data-stu-id="f5521-111">Custom detections provide:</span></span>
-- <span data-ttu-id="f5521-112">高度な検索クエリから構築されたルールベースの検出に関する警告</span><span class="sxs-lookup"><span data-stu-id="f5521-112">Alerts for rule-based detections built from advanced hunting queries</span></span>
-- <span data-ttu-id="f5521-113">自動応答アクション</span><span class="sxs-lookup"><span data-stu-id="f5521-113">Automatic response actions</span></span>
-
-## <a name="related-topic"></a><span data-ttu-id="f5521-114">関連トピック</span><span class="sxs-lookup"><span data-stu-id="f5521-114">Related topic</span></span>
-- [<span data-ttu-id="f5521-115">カスタム検出ルールを作成および管理する</span><span class="sxs-lookup"><span data-stu-id="f5521-115">Create and manage custom detection rules</span></span>](custom-detection-rules.md)
-- [<span data-ttu-id="f5521-116">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="f5521-116">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+## <a name="related-topic"></a><span data-ttu-id="bc513-114">関連トピック</span><span class="sxs-lookup"><span data-stu-id="bc513-114">Related topic</span></span>
+- [<span data-ttu-id="bc513-115">カスタム検出ルールを作成および管理する</span><span class="sxs-lookup"><span data-stu-id="bc513-115">Create and manage custom detection rules</span></span>](custom-detection-rules.md)
+- [<span data-ttu-id="bc513-116">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="bc513-116">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
