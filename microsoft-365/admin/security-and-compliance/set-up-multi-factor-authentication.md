@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織で多要素認証をセットアップする方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 9218e81aaf016c379c6ba8c7ae846a2a2132cf35
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432381"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515809"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
@@ -40,6 +40,10 @@ ms.locfileid: "44432381"
 
 - Active Directory フェデレーションサービス (AD FS) を備えたサードパーティ製のディレクトリサービスがある場合は、Azure MFA サーバーをセットアップします。 詳細については[、「Azure 多要素認証とサードパーティ製 VPN ソリューションを使用した高度なシナリオ](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)」を参照してください。
 
+
+他のすべてのユーザーは、必要に応じて追加認証を求められます。 詳細については、「 [2 要素の検証方法と設定](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device)」を参照してください。
+
+=======
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>手順 1: ユーザーに MFA の使用を要求する方法を決定する
 
 > [!NOTE]

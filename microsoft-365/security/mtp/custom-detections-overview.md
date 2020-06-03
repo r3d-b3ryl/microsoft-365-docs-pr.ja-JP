@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a9ba61650b69e3c42506735c90ae05b917a53209
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931734"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498353"
 ---
-# <a name="custom-detections-overview"></a>ユーザー設定の検出の概要
+# <a name="custom-detections-overview"></a>カスタム検出の概要
 
 **適用対象:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 カスタム検出を使用すると、疑いのある違反のアクティビティや不適切なエンドポイントを含む、さまざまなイベントやシステム状態を事前に監視して応答することができます。 これは、通知を自動的にトリガーするカスタマイズ可能な検出ルール、および応答アクションによって可能になります。
 

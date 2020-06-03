@@ -1,6 +1,6 @@
 ---
 title: 高度な検索スキーマの EmailEvents テーブル
-description: 高度な検索スキーマの EmailEvents テーブルで Microsoft メールに関連付けられているイベントについて説明します。
+description: 高度な検索スキーマの EmailEvents テーブルにある Microsoft 365 メールに関連付けられているイベントについて説明します。
 keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、EmailEvents、network message id、sender、recipient、attachment id、attachment name、マルウェア verdict、フィッシング verdict、attachment count、link count、url 数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633533"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515857"
 ---
 # <a name="emailevents"></a>EmailEvents
 

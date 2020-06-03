@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 46849aa81da5a615a5dff7c5e2ac28566443d3ee
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 47486f34f9926d83e52ba206f63d3e85286527dc
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633521"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515821"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
 **適用対象:**
 - Microsoft Threat Protection
-
-
 
 [高度な捜索](advanced-hunting-overview.md)スキーマの `EmailUrlInfo` テーブルには、Office 365 ATP によって処理されるメールおよび添付ファイルの URL に関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 

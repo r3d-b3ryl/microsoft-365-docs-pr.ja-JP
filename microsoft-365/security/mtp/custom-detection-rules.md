@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034866"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498365"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタムの検出ルールを作成および管理する
 
 **適用対象:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高度な](advanced-hunting-overview.md)検索クエリから構築されたカスタム検出ルールを使用すると、疑いのある違反のアクティビティや不適切なエンドポイントを含む、さまざまなイベントやシステム状態を事前に監視できます。 それらを定期的に実行するように設定して、一致するものがある場合は警告を生成し、応答アクションを実行することができます。
 
@@ -43,8 +41,8 @@ ms.locfileid: "44034866"
 
 必要なアクセス許可を管理するために、**全体管理者**は次の操作を行うことができます。
 
-- 「 **Roles**Roles > **security admin**」の下にある[Microsoft 365 管理センター](https://admin.microsoft.com/)で、**セキュリティ管理者**または**セキュリティオペレーター**の役割を割り当てます。
-- [ > **アクセス**許可 > の**役割**の**設定**] の下の microsoft defender の[セキュリティセンター](https://securitycenter.windows.com/)で、microsoft defender ATP の RBAC 設定を確認します。 対応する役割を選択して、[**セキュリティ設定の管理**] アクセス許可を割り当てます。
+- 「 **Roles**security admin」の下にある[Microsoft 365 管理センター](https://admin.microsoft.com/)で、**セキュリティ管理者**または**セキュリティオペレーター**の役割を割り当て  >  **Security admin**ます。
+- [アクセス許可の役割の**設定**] の下の microsoft defender の[セキュリティセンター](https://securitycenter.windows.com/)で、microsoft defender ATP の RBAC 設定を確認  >  **Permissions**  >  **Roles**します。 対応する役割を選択して、[**セキュリティ設定の管理**] アクセス許可を割り当てます。
 
 > [!NOTE]
 > ユーザー設定の検出を管理するために、**セキュリティオペレーター**は、RBAC が有効になっている場合、MICROSOFT Defender ATP の**セキュリティ設定の管理**権限を必要とします。
@@ -66,24 +64,25 @@ Microsoft 365 セキュリティセンターで、 **[高度な**検索] に移�
     - `SenderFromAddress`(エンベロープ送信者またはリターンパスアドレス)
     - `SenderMailFromAddress`(電子メールクライアントによって表示される sender アドレス)
     - `RecipientObjectId`
+    - `AccountObjectId`
     - `AccountSid`
+    - `AccountUpn`
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
 >[!NOTE]
 >[高度な検索スキーマ](advanced-hunting-schema-tables.md)に新しいテーブルが追加されると、追加のエンティティのサポートが追加されます。
 
-検索結果をカスタマイズまたは集計するために`project` or `summarize`演算子を使用しないような単純なクエリでは、通常、これらの共通の列が返されます。
+検索結果をカスタマイズまたは集計するために or 演算子を使用しないような単純なクエリでは、 `project` `summarize` 通常、これらの共通の列が返されます。
 
-より複雑なクエリでこれらの列が返されるようにするには、さまざまな方法があります。 たとえば`DeviceId`、などの列の下にあるエンティティで集計およびカウントを行う場合は、それぞれの一意`Timestamp` `DeviceId`に関係する最新のイベントから取得することによって返すことができます。
+より複雑なクエリでこれらの列が返されるようにするには、さまざまな方法があります。 たとえば、などの列の下にあるエンティティで集計およびカウントを行う場合は、 `DeviceId` `Timestamp` それぞれの一意に関係する最新のイベントから取得することによって返すことができ `DeviceId` ます。
 
-以下のサンプルクエリは、ウイルス検出を使用し`DeviceId`て一意のコンピューターの数 () をカウントし、この数を使用して、5個を超える検出があるコンピューターのみを検出します。 最新`Timestamp`のを返すには、 `summarize`演算子を`arg_max`関数で使用します。
+以下のサンプルクエリは、ウイルス検出を使用して一意のデバイス () の数をカウント `DeviceId` し、この数を使用して、検出されたデバイスのみを検出します。 最新のを返すには `Timestamp` 、 `summarize` 演算子を関数で使用し `arg_max` ます。
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"
-| summarize Timestamp = max(Timestamp), count() by DeviceId
+| summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. 新しいルールを作成し、通知の詳細を提供します。
@@ -95,7 +94,7 @@ DeviceEvents
 - **アラートタイトル**-ルールによってトリガーされたアラートと共に表示されるタイトル
 - **重要度**—ルールによって識別されるコンポーネントまたはアクティビティの潜在的なリスク
 - **カテゴリ**—ルールによって識別される脅威コンポーネントまたはアクティビティ
-- **MITRE att&** の小は、 [MITRE at&t&](https://attack.mitre.org/)の「」フレームワークで文書化されているように、ルールによって識別される1つまたは複数の攻撃手法です。
+- **MITRE att&** の「」: [MITRE ATT&](https://attack.mitre.org/)の「」フレームワークに記載されているように、ルールによって識別される1つまたは複数の攻撃手法。 このセクションは適用されず、マルウェア、ランサムウェア、不審なアクティビティ、不要なソフトウェアなど、特定の通知カテゴリに対して非表示になります。
 - **Description** —ルールによって識別されたコンポーネントまたはアクティビティに関する詳細情報 
 - **推奨**されるアクション-通知に応答する可能性があるその他のアクション。
 
@@ -110,22 +109,26 @@ DeviceEvents
 検出を監視する頻度と一致する頻度を選択し、通知に応答するために組織の能力を考慮します。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 影響を受けるエンティティを選択します。
-影響を受ける主なエンティティまたは影響を受けるエンティティがあることが予想されるクエリ結果内の列を特定します。 たとえば、クエリは送信者 (`SenderFromAddress`または`SenderMailFromAddress`) と受信者 (`RecipientEmailAddress`) のアドレスを返す場合があります。 これらの列のうち、主な影響を受けるエンティティを識別することにより、サービスは関連するアラートの集約、インシデントの関連付け、およびターゲットの応答アクションの実行に役立てることができます。
+影響を受ける主なエンティティまたは影響を受けるエンティティがあることが予想されるクエリ結果内の列を特定します。 たとえば、クエリは送信者 ( `SenderFromAddress` または `SenderMailFromAddress` ) と受信者 () のアドレスを返す場合があり `RecipientEmailAddress` ます。 これらの列のうち、主な影響を受けるエンティティを識別することにより、サービスは関連するアラートの集約、インシデントの関連付け、およびターゲットの応答アクションの実行に役立てることができます。
 
 エンティティの種類 (メールボックス、ユーザー、またはデバイス) ごとに1つの列のみを選択できます。 クエリで返されない列は選択できません。
 
-### <a name="4-specify-actions-on-files-or-machines"></a>4. ファイルまたはコンピューターに対するアクションを指定します。
-カスタム検出ルールは、クエリによって返されるファイルまたはコンピューターに対して、自動的にアクションを実行できます。
+### <a name="4-specify-actions"></a>4. アクションを指定します。
+カスタム検出ルールは、クエリによって返されるデバイス、ファイル、またはユーザーに対して、自動的にアクションを実行できます。
 
-#### <a name="actions-on-machines"></a>コンピューター上のアクション
-これらのアクションは、クエリ結果の`DeviceId`列にあるマシンに適用されます。
-- **分離マシン**— MICROSOFT Defender ATP を使用して完全なネットワークの分離を適用し、コンピューターがアプリケーションやサービスに接続できないようにします。 [Microsoft Defender ATP コンピューターの分離の詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **収集調査パッケージ**—コンピューター情報を ZIP ファイルで収集します。 [Microsoft Defender ATP 調査パッケージの詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
-- **ウイルス対策スキャンを実行**する—コンピューター上で Windows Defender ウイルス対策スキャンを完全に実行します。
-- **調査の開始**—コンピューターの[自動調査](mtp-autoir.md)を開始します。
+#### <a name="actions-on-devices"></a>デバイスに対するアクション
+これらのアクションは `DeviceId` 、クエリ結果の列にあるデバイスに適用されます。
+- **分離デバイス**— MICROSOFT Defender ATP を使用して完全なネットワークの分離を適用し、デバイスがアプリケーションやサービスに接続できないようにします。 [Microsoft Defender ATP コンピューターの分離の詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
+- **収集調査パッケージ**— ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender ATP 調査パッケージの詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **ウイルス対策スキャンを実行**する—デバイス上で Windows Defender ウイルス対策スキャンを完全に実行します。
+- **開始調査**: デバイスの[自動調査](mtp-autoir.md)を開始します。
+- **アプリの実行を制限**する-デバイスに制限を設定して、Microsoft が発行した証明書で署名されたファイルのみを実行できるようにします。 [Microsoft Defender ATP を使用したアプリの制限について](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>ファイルに対するアクション
-選択すると、[**ファイルの検疫**] アクションは、クエリ`SHA1`結果`InitiatingProcessSHA1`の`SHA256`、、 `InitiatingProcessSHA256` 、または列のファイルに対して実行されます。 この操作は、現在の場所からファイルを削除し、そのコピーを検疫に配置します。
+このオプションを選択すると、 **Quarantine file** `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` クエリ結果の、、、または列のファイルに [ファイルの検疫] アクションを適用することができます。 この操作は、現在の場所からファイルを削除し、そのコピーを検疫に配置します。
+
+#### <a name="actions-on-users"></a>ユーザーに対するアクション
+このチェックボックスをオンにすると、クエリ結果の、、または列にあるユーザーに対して [侵害済みの**ユーザーとしてマーク**] の操作が実行され `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` ます。 この操作によって、Azure Active Directory でユーザーのリスクレベルが "高" に設定され、対応する[id 保護ポリシー](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)がトリガーされます。
 
 > [!NOTE]
 > カスタム検出ルールのアクションの許可またはブロックは、現在、Microsoft の脅威保護ではサポートされていません。
@@ -148,7 +151,7 @@ DeviceEvents
 
 ### <a name="view-existing-rules"></a>既存のルールを表示する
 
-既存のカスタム検出ルールをすべて表示**するには** > 、[**カスタム**検出の検索] に移動します。 ページには、次の実行情報を含むすべてのルールの一覧が表示されます。
+既存のカスタム検出ルールをすべて表示**するには**、[カスタム検出の検索] に移動し  >  **Custom detections**ます。 ページには、次の実行情報を含むすべてのルールの一覧が表示されます。
 
 - [**前回の実行**]-ルールが最後に実行されたときに、クエリの一致をチェックし、通知を生成する
 - **最終実行状態**—ルールが正常に実行されたかどうか
@@ -157,7 +160,7 @@ DeviceEvents
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>ルールの詳細、変更ルール、および実行ルールを表示する
 
-カスタム検出ルールについての包括的な情報を表示するには、[**カスタム**検出を**探す** > ] のルールの名前を選択します。 これにより、カスタム検出ルールに関するページが、アラート、実行状態、およびスコープの詳細を含む、ルールに関する一般的な情報を使用して開きます。 また、トリガーされた通知とトリガーされたアクションのリストも表示します。
+カスタム検出ルールについての包括的な情報を表示するには、[カスタム検出を**探す**] のルールの名前を選択し  >  **Custom detections**ます。 これにより、カスタム検出ルールに関するページが、アラート、実行状態、およびスコープの詳細を含む、ルールに関する一般的な情報を使用して開きます。 また、トリガーされた通知とトリガーされたアクションのリストも表示します。
 
 ![カスタム検出ルールの詳細ページ](../../media/custom-detection-details.png)<br>
 *カスタム検出ルールの詳細*
@@ -167,19 +170,19 @@ DeviceEvents
 - **Run** -ルールを直ちに実行します。 これにより、次の実行の間隔もリセットされます。
 - **編集**—クエリを変更せずにルールを変更する
 - **クエリの変更**-高度な検索でクエリを編集する
-- **[オフ] をオンに** / **Turn off**して、ルールを有効にするか、実行を停止します。
+- **オン**  / **オフ**—ルールを有効にするか、または実行を停止します。
 - **削除**—ルールをオフにして削除する
 
 ### <a name="view-and-manage-triggered-alerts"></a>トリガーされた通知の表示と管理
 
-[仕分けルールの詳細] 画面 (**ユーザー設定の検出** > を**探し** > ている場合) で、[トリガーされた**通知****]** に移動して、ルールに一致することによって生成された通知の一覧を表示します。 そのアラートに関する詳細情報を表示するアラートを選択し、そのアラートに対して次の処理を実行します。
+[仕分けルールの詳細]**Hunting**画面 (  >  **ユーザー設定の検出**を探し  >  ている場合) で、[トリガーされた**通知****]** に移動して、ルールに一致することによって生成された通知の一覧を表示します。 そのアラートに関する詳細情報を表示するアラートを選択し、そのアラートに対して次の処理を実行します。
 
 - 状態と分類 (true または false のアラート) を設定してアラートを管理する
 - 警告をインシデントにリンクする
 - 高度な検索で警告をトリガーしたクエリを実行する
 
 ### <a name="review-actions"></a>アクションを確認する
-[ルールの詳細] 画面 ([**ユーザー設定の検出** > を**探し** > ています **]**) で、[トリガーされた**アクション**] に移動して、ルールへの一致に基づいて実行されたアクションのリストを表示します。
+[ルールの詳細] 画面**Hunting**(  >  [**ユーザー設定の検出**を探して  >  います **]**) で、[トリガーされた**アクション**] に移動して、ルールへの一致に基づいて実行されたアクションのリストを表示します。
 
 >[!TIP]
 >テーブル内のアイテムに関する情報をすばやく表示し、アクションを実行するには、表の左側にある選択列 [&#10003;] を使用します。

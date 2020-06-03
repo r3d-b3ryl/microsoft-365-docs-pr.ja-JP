@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292475"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515764"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "44292475"
 
 組織内でのリスク管理に関して insider リスクポリシーがどのように役立つかの詳細については、「 [Microsoft 365 の「insider リスク管理](insider-risk-management.md)」を参照してください。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Insider リスク管理を開始する前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 Insider リスク管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 
@@ -95,14 +95,17 @@ Insider リスク管理は、サードパーティのリスク管理および人
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>データ損失防止 (DLP) ポリシーを構成する
 
-Insider リスク管理は、不要な関係者への機密情報の意図的または偶発的な公開を特定するのに役立つ DLP ポリシーの使用をサポートしています。 *データリーク*テンプレートで insider リスク管理ポリシーを構成する場合は、ポリシーに特定の DLP ポリシーを割り当てる必要があります。
+Insider リスク管理では、重要度レベルの DLP 通知に関して、不必要な関係者に機密情報を意図的または偶発的に公開することを支援する DLP ポリシーの使用をサポートしています。 **データリーク**テンプレートで insider リスク管理ポリシーを構成する場合は、ポリシーに特定の DLP ポリシーを割り当てる必要があります。
 
-このポリシーにより、機密情報に関する重要度の高い DLP アラートに関する insider リスク管理指標が、組織内のリスク管理の範囲全体を構成するうえで重要な要素となります。 組織に複数の DLP ポリシーを構成する場合は、DLP ポリシーごとに内部者のリスク管理ポリシーを割り当てる必要があります。
-
-組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。 DLP ポリシーを構成した後、これらの構成手順に戻ります。
+このポリシーにより、機密情報に関する重要度の高い DLP アラートに関する insider リスク管理指標が、組織内のリスク管理の範囲全体を構成するうえで重要な要素となります。 Insider リスク管理および DLP ポリシーの統合と計画の考慮事項の詳細については、「 [insider リスク管理ポリシー](insider-risk-management-policies.md#data-leaks)」を参照してください。
 
 >[!IMPORTANT]
->このテンプレートで使用されている insider リスク管理の DLP ポリシーの [**インシデントレポート**] 設定が、重要度の*高い*通知に対して構成されていることを確認します。 Insider リスク管理警告は、[**インシデントレポート**] フィールドが*低*または*中*に設定されている DLP ポリシーから生成されません。
+>次のことを確認してください。
+>
+>- DLP および insider リスク管理ポリシーの両方でスコープ内ユーザーを理解し、適切に構成することにより、予想されるポリシーの適用範囲を生成します。
+>- このテンプレートで使用されている insider リスク管理の DLP ポリシーの [**インシデントレポート**] 設定が、重要度の*高い*通知に対して構成されていることを確認します。 Insider リスク管理警告は、[**インシデントレポート**] フィールドが*低*または*中*に設定されている DLP ポリシーから生成されません。
+
+組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。 DLP ポリシーを構成した後、これらの構成手順に戻ります。
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>手順 4 (必須): insider のリスク設定を構成する
 

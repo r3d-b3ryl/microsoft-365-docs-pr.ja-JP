@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330851"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498461"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>試用版ラボ環境用に Microsoft Threat Protection の柱を構成する
 
@@ -96,17 +96,17 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 5. [ **Atp の安全な添付ファイル**] を選択し、[ **SharePoint、OneDrive、MICROSOFT Teams で atp を有効にする**] オプションを選択します。  
 ![Image of_Office 365 Security & SharePoint、OneDrive、Microsoft Teams の ATP を有効にするためのコンプライアンスセンターページ](../../media/mtp-eval-36.png) <br>
 
-6. [+] アイコンをクリックして、新しい安全な添付ファイルポリシーを作成し、ドメインに受信者ドメインとして適用します。 [**保存**] をクリックします。
+6. [+] アイコンをクリックして、新しい安全な添付ファイルポリシーを作成し、ドメインに受信者ドメインとして適用します。 **[保存]** をクリックします。
 ![Image of_Office 365 Security & コンプライアンスセンターページ新しい安全な添付ファイルポリシーを作成する](../../media/mtp-eval-37.png) <br>
  
 7. 次に、 **ATP の安全なリンク**ポリシーを選択し、鉛筆アイコンをクリックして既定のポリシーを編集します。
 
-8. **[ユーザーが安全なリンクをクリックしたときに追跡**しない] オプションが選択されていない状態で、残りのオプションがオンになっていることを確認します。 詳細については、「[安全なリンク設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide)」を参照してください。 [**保存**] をクリックします。 
+8. **[ユーザーが安全なリンクをクリックしたときに追跡**しない] オプションが選択されていない状態で、残りのオプションがオンになっていることを確認します。 詳細については、「[安全なリンク設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide)」を参照してください。 **[保存]** をクリックします。 
 ![Image of_Office 365 Security & コンプライアンスセンター] ページで、ユーザーが [セーフ] が選択されていないときに、オプションが追跡されないことを示します。](../../media/mtp-eval-38.png) <br>
 
 9. 次に、**マルウェア対策**ポリシーを選択し、既定値を選択して、鉛筆アイコンを選択します。
 
-10. [**設定**] をクリックし、[はい] を選択して、**既定の通知テキストを使用**して**マルウェア検出応答**を有効にします。 **一般的な添付ファイルの種類のフィルター**を有効にします。 [**保存**] をクリックします。
+10. [**設定**] をクリックし、[はい] を選択して、**既定の通知テキストを使用**して**マルウェア検出応答**を有効にします。 **一般的な添付ファイルの種類のフィルター**を有効にします。 **[保存]** をクリックします。
 <br>![イメージ of_Office 365 セキュリティ & コンプライアンスセンターで、マルウェア検出応答が既定の通知で有効になっており、一般的な添付ファイルの種類フィルターが有効になっていることを示します。](../../media/mtp-eval-39.png) <br>
   
 11. [ [Office 365 Security & コンプライアンスセンター](https://protection.office.com/homepage)]  >  **Search**  >  [**監査ログの検索**] の順に移動し、監査をオンにします。  
@@ -150,7 +150,7 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 10. ご使用のドメインコントローラーに Azure Advanced Threat Protection が正常に構成されました。
 ![Image of_Azure Advanced Threat Protection Azure ATP センサーウィザードインストールの完了 [完了] ボタンをクリックする必要があります。](../../media/mtp-eval-51.png) <br>
  
-11. [ [Azure AZURE atp](https://go.microsoft.com/fwlink/?linkid=2040449)の設定] セクションで、[ **Windows Defender atp**] を選択し、切り替えをオンにします。 [**保存**] をクリックします。 
+11. [ [Azure AZURE atp](https://go.microsoft.com/fwlink/?linkid=2040449)の設定] セクションで、[ **Windows Defender atp**] を選択し、切り替えをオンにします。 **[保存]** をクリックします。 
 ![Image of_the [Azure Azure ATP 設定] ページで、Windows Defender ATP のオン/オフを切り替える必要があります。](../../media/mtp-eval-52.png) <br>
 
 >[!NOTE]
@@ -175,7 +175,7 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 >[!NOTE]
 >新しい Azure ATP インスタンスの場合、この統合トグルは自動的にオンになります。 次の手順に進む前に、Azure ATP 統合が有効になっていることを確認します。
  
-4. [クラウド検出の設定] で、[ **Microsoft DEFENDER ATP 統合**] を選択し、統合を有効にします。 [**保存**] をクリックします。
+4. [クラウド検出の設定] で、[ **Microsoft DEFENDER ATP 統合**] を選択し、統合を有効にします。 **[保存]** をクリックします。
 ![Image of_the Microsoft defender atp 統合の [承認されていないアプリをブロックする] チェックボックスがオンになっている Microsoft Defender ATP ページ。 [保存] をクリックします。](../../media/mtp-eval-56.png) <br>
 
 5. [クラウド検出の設定] で、[**ユーザーエンリッチメント**] を選択して、Azure Active Directory との統合を有効にします。
@@ -238,6 +238,9 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 <br>![クリックする必要があるイメージ of_Save の設定] ボタン](../../media/mtp-eval-72.png) <br>
 
 ## <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
+>[!NOTE]
+>2020年6月1日以降、対象のすべてのテナントに対して Microsoft の脅威保護機能が自動的に有効になります。 詳細については、 [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426)の次の記事を参照してください。 
+<br>
 1. [Microsoft 365 セキュリティセンター](https://security.microsoft.com/homepage)に移動します。 [**設定**] に移動し、[ **Microsoft Threat Protection**] を選択します。
 <br>![Microsoft 365 セキュリティセンターの [設定] ページの [イメージ of_Microsoft 脅威保護] オプションのスクリーンショット](../../media/mtp-eval-72b.png) <br>
 

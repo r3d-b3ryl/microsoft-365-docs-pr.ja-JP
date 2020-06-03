@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 E3 から Microsoft 365 Business Premium にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402240"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515901"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Office 365 E3 から Microsoft 365 Business Premium への移行 
 
@@ -78,6 +78,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 - DNS レコードやドメイン名などのサブスクリプションの構成。
 - ユーザーおよびグループのアカウントと、複数要素の認証や条件付きアクセスポリシーなどの認証設定。
 - プロダクティビティサービスの構成とそのデータ (Teams、Exchange Online メールボックス、SharePoint Online サイト、OneDrive for Business フォルダー、OneNote ノートブックなど)。
+- Office アプリケーションは自動的に拡大または縮小されます。 Office 365 のモダンライセンスでは、ユーザーのライセンスの割り当てが72時間ごとに確認され、Office アプリケーションはユーザーサブスクリプションに一致するバージョンに変換されます。
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -118,6 +119,6 @@ Microsoft 365 Business Premium にライセンスを割り当てたら、ユー�
 
 Microsoft 365 Business Premium に移行した後、Office 365 ATP がインストールされています。 概要については、「 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 」を参照してください。 セットアップするには、「 [atp の安全なリンクを設定](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)する」、「atp の安全な[添付ファイルを設定](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)する」、および「 [atp のフィッシング対策を設定](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)する」を参照してください。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 機密ラベルの使用を開始するには、機密ラベル[の概要](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)と、[機密ラベルの作成と管理](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)に関するビデオを参照してください。

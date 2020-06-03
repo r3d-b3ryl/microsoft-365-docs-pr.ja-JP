@@ -17,17 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3509bc5031ed83785c2b0de4c0711d04f5d5ac56
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 2ed89a676525b91f6b0923cf39be5b014638e93e
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327022"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515845"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
 **適用対象:**
 - Microsoft Threat Protection
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 [高度な捜索](advanced-hunting-overview.md)スキーマは、イベント情報またはマシンとエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的に構築するには、高度な捜索スキーマのテーブルと列を理解する必要があります。
 
@@ -56,7 +58,8 @@ ms.locfileid: "44327022"
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | 悪用コードが公開されているかどうかなど、公開されている脆弱性のサポート技術情報 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 電子メールに添付されたファイルに関する情報 |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 の電子メールイベント (電子メール配信およびブロックイベントを含む) |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Microsoft 365 メールの Url に関する情報 |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 がメールを受信者のメールボックスに配信した後の、配信後に発生するセキュリティイベント |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | メールの Url に関する情報 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Azure Active Directory を含む、さまざまなソースからのアカウント情報 |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory およびその他の Microsoft online services によって記録された認証イベント |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Active Directory オブジェクト (ユーザー、グループ、デバイス、ドメインなど) に対して実行されるクエリアクティビティ |

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online メールボックスの迷惑メール設定を構成する方法について説明します。 これらの設定の多くは、Outlook または web 上の Outlook でユーザーが使用できます。
-ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352512"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498665"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online のメールボックスで迷惑メール設定を構成する
 
@@ -42,7 +42,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織では、�
 管理者は、Exchange Online PowerShell を使用して、メールボックスの迷惑メールルールの状態を無効、有効にし、表示することができます。 管理者は、Exchange Online PowerShell を使用して、メールボックス (差出人セーフリスト、宛先セーフリスト、および受信拒否リスト) のセーフリストコレクションのエントリを構成することもできます。
 
 > [!NOTE]
-> ユーザーが自分の信頼できる差出人のリストに追加した送信者からのメッセージは、EOP フィルター処理をスキップします (SCL は-1 です)。 ユーザーが Outlook の差出人セーフリストにエントリを追加できないようにするには、このトピックで後述する「 [outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」のセクションに記載されているように、グループポリシーを使用します。
+> ユーザーが自分の信頼できる差出人のリストに追加した送信者からのメッセージは、EOP の一部として接続フィルター処理をスキップします (SCL は-1 です)。 ユーザーが Outlook の差出人セーフリストにエントリを追加できないようにするには、このトピックで後述する「 [outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」のセクションに記載されているように、グループポリシーを使用します。 ポリシーフィルター、コンテンツフィルター、および Advanced Threat Protection (ATP) のチェックは、引き続きメッセージに適用されます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
@@ -89,7 +89,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 メールボックスで迷惑メール ルールを正常に有効または無効にしたことを確認するには、次のいずれかの手順を使用します。
 
-- _ \< MailboxIdentity \> _をメールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して**Enabled**プロパティの値を確認します。
+- を _\<MailboxIdentity\>_ メールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して**Enabled**プロパティの値を確認します。
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -154,7 +154,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 メールボックスにセーフリスト コレクションを正常に構成したことを確認するには、次のいずれかの手順を使用します。
 
-- _ \< MailboxIdentity \> _をメールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行してプロパティの値を確認します。
+- を _\<MailboxIdentity\>_ メールボックスの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行してプロパティの値を確認します。
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*

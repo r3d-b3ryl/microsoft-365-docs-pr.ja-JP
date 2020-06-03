@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dd67af62a400f3e217f146e6d0ee213d74ad99a
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262416"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520160"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "44262416"
 [Office 365 ミスの自動化された調査と応答 (AIR) 機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 以下のことを実行できます。
 - [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
 - [通知を調整し](#adjust-an-alert-to-prevent-false-positives-from-recurring)ます (必要な場合)。そして 
-- [デバイスに対して実行された修復操作を元に戻し](#undo-a-remediation-action)ます。 
+- [実行された修復操作を元に戻し](#undo-a-remediation-action)ます。 
 
 この記事をガイドとして使用します。 
 
