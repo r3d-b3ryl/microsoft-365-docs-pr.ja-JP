@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 681fb02e504c590610a0ed040756fd418f4221fd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bf4abfd6f5ab19c3bc89673b0cc2255e026d1f7a
+ms.sourcegitcommit: 9d7a14bf4c26bda18561fa45885225d95855fb5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352264"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44474538"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -47,7 +47,7 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 この記事で説明されているタスクを実行するには、全体管理者、コンプライアンス管理者、または Exchange Online の管理者である必要があります。 DLP アクセス許可の詳細については、「 [アクセス許可](data-loss-prevention-policies.md#permissions)」を参照してください。
 
-一般公開されると、EDM ベースの分類は次のサブスクリプションに含まれます。
+これらのサブスクリプションには、EDM ベースの分類が含まれています
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -447,11 +447,16 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>パート 3: Microsoft クラウド サービスで EDM ベースの分類を使用する
 
-DLP for Exchange Online (メール)、OneDrive for Business (ファイル)、Microsoft Teams (会話)、Microsoft Cloud App Security DLP ポリシーは、EDM の機密情報の種類をサポートします。
+これらの場所が、EDM の機密情報の種類をサポートしています:
+
+- DLP for Exchange Online (メール)
+- OneDrive for Business (ファイル)
+- Microsoft Teams (会話)
+- DLP for SharePoint (ファイル)
+- Microsoft Cloud App Security DLP ポリシー
 
 次のシナリオでは、EDM の機密情報の種類は現在開発中で、まだご利用いただけません。
 
-- DLP for SharePoint (ファイル)
 - 機密度ラベルと保持ラベルの自動分類
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>EDM を使用して DLP ポリシーを作成する

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルがガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制する方法を説明します。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411044"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432244"
 ---
 # <a name="learn-about-retention-labels"></a>保持ラベルの詳細
 
@@ -362,4 +362,6 @@ Microsoft 365 内のコンテンツを保持または削除、または Microsof
     
 - [情報管理ポリシー](intro-to-info-mgmt-policies.md) (削除のみ) 
     
+## <a name="next-steps"></a>次の手順
 
+保持ラベルを作成して発行する準備ができている場合は、「[保持ラベルを作成、発行、および自動適用する](create-retention-labels.md)」を参照してください。
