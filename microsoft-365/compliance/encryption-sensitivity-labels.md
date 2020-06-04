@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。機密ラベルでは、コンテンツの保護のために暗号化を使用できます。
+description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551223196e5870034cf7c3f69145a7b622932a99
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166038"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470674"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -38,7 +38,7 @@ ms.locfileid: "44166038"
 
 - 暗号化の解除は、ラベルの暗号化設定で許可されているユーザーのみが可能です。
 - 暗号化は、ファイルの場所 (組織内外) を問わず、ファイル名が変更されていても維持されます。
-- 保存中 (OneDrive アカウントなど) と転送中 (送信中の電子メールなど) の両方で暗号化されています。
+- 保存中 (OneDrive アカウントなど) と転送中 (インターネットを行き来するメールなど) の両方で暗号化されています。
 
 最後に、管理者は、暗号化に適用する秘密度ラベルを構成するときに、次のいずれかを選択できます。
 
@@ -359,7 +359,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 重要なドキュメントやメールを暗号化することにより、許可されたユーザーのみがそのデータにアクセスできるようになります。 ただし、考慮すべき点がいつくかあります。
 
-- [SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする機能 (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md) が組織でまだ有効になっていない場合:
+- [SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md) 機能が組織でまだ有効になっていない場合:
     
     - 暗号化されたファイルに対して、検索、電子情報開示、Delve は動作しません。 
     - DLP ポリシーは、これらの暗号化されたファイルのメタデータ (保持ラベルの情報など) に対しては機能しますが、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) に対しては機能しません。

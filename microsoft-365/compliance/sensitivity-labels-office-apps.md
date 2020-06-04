@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ユーザーがデスクトップ用の Office アプリ、モバイル用 Office アプリ、web 用 Office アプリの機密ラベルを操作する方法について説明します。 機密ラベルをサポートしているアプリを確認します。
-ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 9fca3af2c53c57bbc010c5e95976cbde9ddcbbdc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432596"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545914"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -185,7 +185,7 @@ SharePoint または OneDrive のドキュメントに対して web 上の offic
 
 外部ユーザーが Azure Active Directory にアカウントを持っていない場合は、テナントでそれらのユーザーのゲストアカウントを作成できます。 電子メールアドレスの場合は、既に使用されている電子メールアドレスを指定できます。 たとえば、Gmail のアドレスです。 [Sharepoint および onedrive で Office ファイルの機密ラベルを有効](sensitivity-labels-sharepoint-onedrive-files.md)にしている場合は、このゲストアカウントを使用して、sharepoint または onedrive で共有ドキュメントにアクセスすることもできます。
 
-外部ユーザーは、Windows で Microsoft 365 アプリを使用する場合に、暗号化されたドキュメントの Microsoft アカウントを使用して作成することもできます。 この機能は、MacOS、Android、iOS ではまだサポートされていません。 たとえば、あるユーザーが暗号化されたドキュメントを共有し、暗号化設定でその Gmail 電子メールアドレスを指定したとします。 このユーザーは、自分の Gmail 電子メールアドレスを使用する独自の Microsoft アカウントを作成できます。 その後、このアカウントを使用してサインインすると、そのユーザーに指定されている使用制限に従って、ドキュメントを開いて編集できるようになります。 このシナリオのチュートリアルの例については、「[保護されたドキュメントを開いて編集する](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)」を参照してください。
+外部ユーザーは、Windows で Microsoft 365 アプリ ([以前の Office 365 アプリ](https://docs.microsoft.com/deployoffice/name-change)) を使用している場合に、暗号化されたドキュメントの microsoft アカウントを使用して作成することもできます。 この機能は、MacOS、Android、iOS ではまだサポートされていません。 たとえば、あるユーザーが暗号化されたドキュメントを共有し、暗号化設定でその Gmail 電子メールアドレスを指定したとします。 このユーザーは、自分の Gmail 電子メールアドレスを使用する独自の Microsoft アカウントを作成できます。 その後、このアカウントを使用してサインインすると、そのユーザーに指定されている使用制限に従って、ドキュメントを開いて編集できるようになります。 このシナリオのチュートリアルの例については、「[保護されたドキュメントを開いて編集する](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)」を参照してください。
 
 > [!NOTE]
 > Microsoft アカウントの電子メールアドレスは、暗号化設定のアクセスを制限するために指定された電子メールアドレスと一致している必要があります。

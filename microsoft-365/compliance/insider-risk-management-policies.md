@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515882"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534929"
 ---
 # <a name="insider-risk-management-policies"></a>Insider リスク管理ポリシー
 
@@ -67,7 +67,7 @@ Insider リスク管理ポリシーで使用する DLP ポリシーを作成ま�
      >[!NOTE]
      >組み込みのテンプレートを使用して新しい DLP ポリシーを作成する場合は、[**高度な dlp ルールを作成またはカスタマイズ**する] オプションを選択して、*高*重要度レベルの**インシデントレポート**の設定を構成する必要があります。
 
-**データリーク**テンプレートから作成された各 insider リスク管理ポリシーには、1つの DLP ポリシーしか割り当てることができません。 Insider リスク管理ポリシーによって処理される重要度の高い警告を持つ複数の DLP ポリシーがある場合は、DLP ポリシーごとに個別の内部リスク管理ポリシーを作成する必要があります。
+**データリーク**テンプレートから作成された各 insider リスク管理ポリシーには、1つの DLP ポリシーしか割り当てることができません。 検出するさまざまなアクティビティを組み合わせた専用の DLP ポリシーを作成し、**データリーク**テンプレートを使用する insider リスクポリシーのトリガーとして機能するようにすることを検討してください。
 
 組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。
 

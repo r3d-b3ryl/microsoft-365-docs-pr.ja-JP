@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 723b2584846b9d6ec01e7d4286a63d2dce0757ac
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322173"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545936"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft セキュア スコアの新機能
 
@@ -30,6 +30,26 @@ Microsoft のセキュリティ[スコア](microsoft-secure-score-new.md)をよ�
 
 最近の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-new.md#whats-new)」を参照してください。
 
-## <a name="may-2020"></a>2020 年 5 月
+## <a name="june-2020"></a>2020年6月
 
-現在計画されている変更はありません
+### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションを削除する
+
+* Attack Surface Reduction ルールを有効にする
+
+### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションを追加する
+
+* Adobe Reader が子プロセスを作成するのをブロックする
+* ランサムウェアに対する高度な保護の使用
+* すべての Office アプリケーションで子プロセスを作成することを禁止する
+* Office アプリケーションで実行可能なコンテンツを作成することを禁止する
+* JavaScript または VBScript がダウンロードされた実行可能コンテンツを起動するのをブロックする
+* 難読化する可能性のあるスクリプトの実行をブロックする
+* 電子メールクライアントおよび webmail からの実行可能ファイルのコンテンツをブロックする
+* Office コミュニケーションアプリケーションによる子プロセスの作成を禁止する
+* USB から実行される信頼できないおよび署名されていないプロセスをブロックする
+* WMI イベントサブスクリプション経由の永続化をブロックする
+* Office アプリケーションが他のプロセスにコードを挿入するのをブロックする
+* 実行可能ファイルが、流行、年齢、または信頼できるリストの条件を満たしていない限り、実行を禁止する
+* PSExec および WMI コマンドからのプロセス作成をブロックする
+* Windows ローカルセキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする
+* Office マクロからの Win32 API 呼び出しをブロックする
