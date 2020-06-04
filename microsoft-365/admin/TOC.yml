@@ -218,6 +218,8 @@
           href: manage/manage-messages.md
         - name: リリース オプションをセットアップする
           href: manage/release-options-in-office-365.md
+        - name: 新機能の表示と非表示を切り替える
+          href: manage/show-hide-new-features.md
         - name: Power BI の利用状況分析
           items:
             - name: 利用状況分析について
