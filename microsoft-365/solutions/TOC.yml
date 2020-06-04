@@ -12,8 +12,9 @@
     - name: 概要
       href: foundation-solutions-overview.md
     - name: Microsoft 365 でリモート ワーカーを支援する
-      href: empower-people-to-work-remotely.md
       items:
+        - name: 概要
+          href: empower-people-to-work-remotely.md
         - name: 手順 1. サインインのセキュリティを強化する
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 手順 2.  リモートアクセスを提供する
