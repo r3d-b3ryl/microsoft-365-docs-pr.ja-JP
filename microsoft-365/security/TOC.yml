@@ -373,26 +373,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: セキュリティ/コンプライアンス センターのスマート レポートとインサイト
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items:
-                - name: セキュリティ ダッシュボードの概要
-                  href: ./office-365-security/security-dashboard.md
-                  items:
-                    - name: ウォークスルー - 詳細レポートからインサイトへの移動
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: ウォークスルー - インサイトから詳細レポートへの移動
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: ウォークスルー - ダッシュボードからインサイトへの移動
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: レポートのスケジュールを作成する
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: 複数のレポートのスケジュールを管理する
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: カスタム レポートの設定とダウンロードをする
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: 既存のレポートをダウンロードする
-                      href: ./office-365-security/download-existing-reports.md
-                - name: 悪意のあるファイルの情報を表示する
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: セキュリティ ダッシュボードの概要
+              href: ./office-365-security/security-dashboard.md
+            - name: 悪意のあるファイルの情報を表示する
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
