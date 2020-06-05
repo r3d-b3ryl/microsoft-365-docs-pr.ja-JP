@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルがガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制する方法を説明します。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432244"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545969"
 ---
 # <a name="learn-about-retention-labels"></a>保持ラベルの詳細
 
@@ -129,7 +129,9 @@ Exchange パブリック フォルダー、Skype、および Teams チャネル�
   
 - 保持期間の終了時に処理の確認をトリガーすることができます。SharePoint および OneDrive のドキュメントは削除する前に、確認する必要があるからです。 詳細については、「[廃棄確認](disposition.md#disposition-reviews)」を参照してください。
     
-- コンテンツの作成日または最終変更日時ではなく、コンテンツがラベル付けされた時点から保持期間を開始できます。 このオプションは、SharePoint サイトおよび OneDrive アカウントのコンテンツにのみ適用されます。 Exchange メールの場合、オプションのどれを選んだかを問わず、保持期間は常にメッセージが送受信された日付に基づきます。
+- コンテンツの作成日または最終変更日時ではなく、コンテンツがラベル付けされた時点から保持期間を開始できます。 このオプションを使用する場合:
+    - これは、SharePoint サイトおよび OneDrive アカウントのコンテンツにのみ適用されます。 Exchange メールの場合、保持期間は常にメッセージが送受信された日付に基づきます。
+    - ラベルを保存した後、保持期間を変更することはできません。
     
 ![ラベル固有のオプションによる保持設定](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 
