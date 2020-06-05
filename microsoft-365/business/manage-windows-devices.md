@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 for business で管理されるドメインに参加している Windows 10 デバイスを有効にする
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -23,14 +23,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: いくつかの手順で、Microsoft 365 を有効にして、ローカルの Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: 7bfe5da8701a17712fa249eac99a22b8d5a1b2d1
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 857651081fb10856d28dd419333ebef655388407
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471049"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564950"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Microsoft 365 Business Premium によって管理されるドメインに参加している Windows 10 デバイスを有効にする
 
@@ -42,48 +41,92 @@ ms.locfileid: "44471049"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3C9hO]
   
 
-## <a name="1-prepare-for-directory-synchronization"></a>1. ディレクトリ同期の準備 
+## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>作業を開始する前に、以下の手順を完了していることを確認してください。
+- Azure AD Connect を使用してユーザーを Azure AD に同期します。
+- 完全な Azure AD Connect 組織単位 (OU) 同期。
+- 同期するすべてのドメインユーザーが Microsoft 365 Business Premium のライセンスを持っていることを確認してください。
 
-ローカル Active Directory ドメインからユーザーとコンピューターを同期する前に、「 [Office 365 へのディレクトリ同期の準備](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)」を参照してください。 特に次のようになります。
+手順については、「[ドメインユーザーを Microsoft に同期させる](manage-domain-users.md)」を参照してください。
 
-   - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail**、 **ProxyAddresses**、および**userPrincipalName**。 これらの値は一意である必要があり、重複して削除する必要があります。
-   
-   - 各ローカルユーザーアカウントの**userPrincipalName** (UPN) 属性を、ライセンスされた Microsoft 365 ユーザーに対応するプライマリ電子メールアドレスと一致するように構成することをお勧めします。 例: mary.shelley@contoso.com ではなく*mary@contoso* 、 *mary.shelley@contoso.com*
-   
-   - Active Directory ドメインが、 *.com*または *.org*などのインターネットでルーティング可能なサフィックスの代わりに、*ローカル*ユーザーアカウントの UPN サフィックスではなく、ルーティング可能*ではない*サフィックスで終わっている場合は、「[ディレクトリ同期のために非ルーティングドメインを準備する](https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization)」で説明されているように、まずローカルユーザーアカウントの UPN サフィックスを調整します。 
+## <a name="1-verify-mdm-authority-in-intune"></a>1. Intune で MDM 機関を確認する
 
-## <a name="2-install-and-configure-azure-ad-connect"></a>2. Azure AD Connect をインストールして構成します。
+Portal.azure.com に移動し、Intune のページ検索の上部に移動します。
+[Microsoft Intune] ページで、[**デバイスの登録**] を選択し、[**概要**] ページで**MDM authority**が**Intune**であることを確認します。
 
-ユーザー、グループ、および連絡先をローカルの Active directory から Azure Active Directory に同期するには、Azure Active Directory Connect をインストールし、ディレクトリ同期をセットアップします。 詳細については、「 [Office 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)する」を参照してください。
+- **Mdm 機関**が**なし**の場合は、 **mdm 機関**をクリックして**Intune**に設定します。
+- **MDM 機関**が**Microsoft office 365**の場合は、[**デバイス**を  >  **登録**する] を選択し、 **Intune mdm**機関を追加する権限の [ **mdm 機関の追加**] ダイアログを使用します (mdm 機関を追加するに**は、mdm**機関が microsoft Office 365 に設定**され**ている場合にのみ使用できます)。
 
-> [!NOTE]
-> この手順は、Microsoft 365 for business の場合とまったく同じです。 
+## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Azure AD が参加しているコンピューターに対して有効になっていることを確認する
 
-Azure AD Connect のオプションを構成する際には、**パスワード同期**、**シームレスなシングルサインオン**、**パスワード書き戻し**機能を有効にすることをお勧めします。これは、Microsoft 365 for business でもサポートされています。
+- 管理センターに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> して、[**管理**センター] の一覧にある [azure **active** directory が表示されていない場合はすべて表示] を選択します。 
+- **Azure Active directory 管理センター**で、[ **azure active directory** ] に移動し、[**デバイス**]、[**デバイスの設定**] の順に選択します。
+- **ユーザーがデバイスを AZURE AD に参加させる**ことが可能であることを確認する 
+    1. すべてのユーザーを有効にするには、 **all**に設定します。
+    2. 特定のユーザーを有効にするには、[**オン**] に設定して特定のユーザーグループを有効にします。
+        - Azure AD で同期されている目的のドメインユーザーを[セキュリティグループ](../admin/create-groups/create-groups.md)に追加します。
+        - **[グループの選択**] を選択して、そのセキュリティグループの MDM ユーザースコープを有効にします。
 
-> [!NOTE]
-> Azure AD Connect のチェックボックスを超えてパスワードを書き戻しするには、いくつかの追加の手順があります。 詳細については、「[方法: パスワードの書き戻しを構成](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)する」を参照してください。 
+## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. MDM に対して Azure AD が有効になっていることを確認する
 
-## <a name="3-configure-hybrid-azure-ad-join"></a>3. ハイブリッド Azure AD Join を構成する
+- 管理センターに移動し、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> **エンドポイント Managemen**の選択] を選択します (**エンドポイントマネージャー**が表示されない場合は [**すべて表示**] を選択します)
+- **Microsoft エンドポイントマネージャー管理センター**で、[**デバイス**  >  **windows**  >  **windows 登録**の  >  **自動登録**] に移動します。
+- MDM ユーザースコープが有効になっていることを確認します。
 
-ハイブリッド Azure AD に参加するように Windows 10 デバイスを有効にする前に、次の前提条件を満たしていることを確認してください。
+    1. すべてのコンピューターを登録するには、[**すべて**] に設定して、ユーザーが Windows に作業アカウントを追加するときに、Azure AD と新しいコンピューターに参加するすべてのユーザーコンピューターを自動的に登録します。
+    2. 特定のユーザーグループのコンピューターを登録するには、[**一部**] に設定します。
+        -  Azure AD で同期されている目的のドメインユーザーを[セキュリティグループ](../admin/create-groups/create-groups.md)に追加します。
+        -  **[グループの選択**] を選択して、そのセキュリティグループの MDM ユーザースコープを有効にします。
 
-   - Azure AD Connect の最新バージョンを実行していること。
+## <a name="4-set-up-service-connection-point-scp"></a>4. サービス接続ポイント (SCP) を設定する
 
-   - Azure AD connect は、ハイブリッド Azure AD に参加させるデバイスのすべてのコンピューターオブジェクトを同期しています。 コンピューターオブジェクトが特定の組織単位 (OU) に属している場合は、それらの Ou が Azure AD connect の同期にも設定されていることを確認してください。
+これらの手順は、[ハイブリッド AZURE AD join の構成](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)によって簡略化されています。 Azure AD Connect と Microsoft 365 Business Premium のグローバル管理者および Active Directory 管理者パスワードを使用するために必要な手順を完了するには、以下の手順を実行します。
 
-ハイブリッド Azure AD に参加している既存のドメインに参加している Windows 10 デバイスを登録するには、[チュートリアル「管理ドメインのハイブリッド Azure Active Directory の参加を構成](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)する」の手順を実行します。 このハイブリッドにより、既存のオンプレミスの Active Directory が Windows 10 台のコンピューターに参加し、クラウドを準備できるようになります。
-    
-## <a name="4-enable-automatic-enrollment-for-windows-10"></a>4. Windows 10 の自動登録を有効にする
+1.  Azure AD Connect を起動し、[**構成**] を選択します。
+2.  [**追加のタスク**] ページで、[**デバイスオプションの構成**] を選択し、[**次へ**] を選択します。
+3.  [**概要**] ページで、[**次へ**] を選択します。
+4.  [ **AZURE AD に接続**] ページで、Microsoft 365 Business Premium のグローバル管理者の資格情報を入力します。
+5.  [**デバイスオプション**] ページで、[**ハイブリッド Azure AD join の構成**] を選択し、[**次へ**] を選択します。
+6.  **Scp**ページで、Azure AD CONNECT が scp を構成する各フォレストに対して、以下の手順を完了し、[**次へ**] を選択します。
+    - フォレスト名の横にあるチェックボックスをオンにします。 フォレストは、AD ドメイン名である必要があります。
+    - [**認証サービス**] 列で、ドロップダウンを開き、[一致するドメイン名] を選択します (1 つのみを指定する必要があります)。
+    - [**追加**] を選択して、ドメイン管理者の資格情報を入力します。  
+7.  [**デバイスオペレーティングシステム**] ページで、[Windows 10 以降のドメイン参加デバイスのみ] を選択します。
+8.  [**構成の準備完了**] ページで、[**構成**] を選択します。
+9.  [**構成の完了**] ページで、[**終了**] を選択します。
 
- Intune でモバイルデバイス管理用に Windows 10 デバイスを自動的に登録するには、「[グループポリシーを使用して windows 10 デバイスを自動的に登録](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)する」を参照してください。 グループポリシーをローカルコンピューターレベルで設定することも、一括操作の場合は、グループポリシー管理コンソールおよび ADMX テンプレートを使用して、ドメインコントローラーにこのグループポリシー設定を作成することもできます。
 
-## <a name="5-configure-seamless-single-sign-on"></a>5. シームレスなシングルサインオンを構成する
+## <a name="5-create-a-gpo-for-intune-enrollment--admx-method"></a>5. Intune 登録の GPO を作成する-ADMX メソッド
 
-  シームレスな SSO は、企業のコンピューターを使用している場合に、ユーザーの Microsoft 365 クラウドリソースに自動的に署名します。 「 [Azure Active Directory シームレスシングルサインオン: クイックスタート](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature)」に記載されている2つのグループポリシーオプションのいずれかを展開するだけです。 [**グループポリシー] オプション**では、ユーザーが設定を変更することはできませんが、**グループポリシーの優先順位**オプションで値が設定されていて、ユーザーが構成可能なままになります。
+使え.ADMX テンプレートファイル。
 
-## <a name="6-set-up-windows-hello-for-business"></a>6. Windows Hello for Business のセットアップ
+1.  AD サーバーにログオンし、[**サーバーマネージャー**ツールを検索して開く  >  **Tools**  >  **] グループポリシーの管理**を開きます。
+2.  [ **Domains** ] の下にあるドメイン名を選択し、[**グループポリシーオブジェクト**] を右クリックして [**新規**] を選択します。
+3.  新しい GPO に名前 ("*Cloud_Enrollment*" など) を指定し、[ **OK]** を選択します。
+4.  [**グループポリシーオブジェクト**] の下で新しい GPO を右クリックし、[**編集**] を選択します。
+5.  **グループポリシー管理エディター**で、[**コンピューター構成**ポリシー] の [  >  **Policies**  >  **管理用テンプレート**  >  **Windows コンポーネント**  >  **MDM**] に移動します。
+6. [既定の**Azure AD 資格情報を使用して MDM の自動登録を有効にする**] を右クリックし、[**有効に**する] を選択し  >  **OK**ます。 エディターウィンドウを閉じます。
 
- Windows Hello for Business では、ローカルコンピューターにサインインするための強力な2要素認証 (2FA) を使用してパスワードを置き換えています。 1つの要素は非対称キーの組で、もう1つの要素は、デバイスでサポートされている場合は、指紋または顔認識などの PIN またはその他のローカルジェスチャです。 可能な場合は、パスワードを2FA および Windows Hello for Business に置き換えることをお勧めします。
+> [!IMPORTANT]
+> **既定の AZURE AD 資格情報を使用した自動 MDM 登録を有効に**するポリシーが表示されない場合は、「[最新の管理用テンプレートを取得](#get-the-latest-administrative-templates)する」を参照してください。
 
-ハイブリッド Windows Hello for Business を構成するには、「[ハイブリッドキー信頼 Windows hello For business の前提条件](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs)」を確認してください。 その後、「 [Configure Hybrid Windows Hello For Business key trust settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings)」の手順に従います。 
+## <a name="6-deploy-the-group-policy"></a>6. グループポリシーを展開します。
+
+1.  サーバーマネージャーの [**ドメイン**> グループポリシーオブジェクト] で、上記の手順3の GPO (例: "Cloud_Enrollment") を選択します。
+2.  GPO の [**スコープ**] タブを選択します。
+3.  GPO の [スコープ] タブで、[ **Links**] の下にあるドメインへのリンクを右クリックします。
+4.  [**強制**] を選択して GPO を展開し、確認画面で [ **OK]** をクリックします。
+
+## <a name="get-the-latest-administrative-templates"></a>最新の管理用テンプレートを取得する
+
+**既定の AZURE AD 資格情報を使用した自動 MDM 登録を有効に**するポリシーが表示されない場合は、Windows 10、バージョン1803、バージョン1809、またはバージョン1903用の ADMX がインストールされていない可能性があります。 この問題を解決するには、次の手順を実行します (注: 最新の MDM は下位互換性があります)。
+
+1.  ダウンロード: [Windows 10 の管理用テンプレート (admx) は2019更新プログラム (1903) の場合があり](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all)ます。
+2.  プライマリドメインコントローラー (PDC) にパッケージをインストールします。
+3.  フォルダーのバージョンに応じて、次の操作を行います。 **C:\Program files (x86) \Microsoft Group Policy\Windows 10 5 月 2019 Update (1903) v3**。
+4.  上記のパスの**ポリシー定義**フォルダーの名前を**policydefinitions**に変更します。
+5.  **Policydefinitions**フォルダーを**C:\Windows\SYSVOL\domain\Policies**にコピーします。 
+    -   ドメイン全体に対して中央ポリシーストアを使用することを計画している場合は、そこに PolicyDefinitions の内容を追加します。
+6.  ポリシーを使用可能にするには、プライマリドメインコントローラーを再起動します。 この手順は、将来のバージョンでも同様に機能します。
+
+この時点で、[**既定の AZURE AD 資格情報を使用して MDM の自動登録を有効に**する] ポリシーが表示されます。
+

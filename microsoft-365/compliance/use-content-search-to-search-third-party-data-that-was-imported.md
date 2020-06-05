@@ -16,22 +16,25 @@ search.appverid:
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: コンテンツ検索電子情報開示ツールを使用して、Microsoft 365 でサードパーティのデータソースからメールボックスにインポートされたアイテムを検索します。 クエリを作成して、インポートされたすべてのアイテムを検索したり、特定のサードパーティのデータ型を検索するクエリを作成したりすることができます。 この記事では、Microsoft 365 にインポートできるサードパーティのデータ型を検索するために、キーワードクエリで使用できる値の一覧を示します。
-ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: ab693ff8e2283e201b9d573e68f4bdfb9f859749
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942970"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564970"
 ---
-# <a name="use-content-search-to-search-third-party-imported-data"></a>コンテンツ検索を使用してサードパーティのインポートされたデータを検索する
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタムパートナーコネクタによってインポートされたサードパーティデータを検索する
 
-セキュリティ & コンプライアンスセンターの[コンテンツ検索電子情報開示ツール](content-search.md)を使用して、サードパーティのデータソースから Microsoft 365 のメールボックスにインポートされたアイテムを検索することができます。 インポートされたサードパーティのすべてのデータアイテムを検索するクエリを作成するか、特定のサードパーティデータアイテムを検索するためのクエリを作成することができます。 また、サードパーティのデータを保持するために、クエリベースのアイテム保持ポリシーまたはクエリベースの電子情報開示の保持を作成することもできます。 
+セキュリティ & コンプライアンスセンターの[コンテンツ検索電子情報開示ツール](content-search.md)を使用して、サードパーティのデータソースから Microsoft 365 のメールボックスにインポートされたアイテムを検索することができます。 インポートされたサードパーティのすべてのデータアイテムを検索するクエリを作成するか、特定のサードパーティデータアイテムを検索するためのクエリを作成することができます。 また、サードパーティのデータを保持するために、クエリベースのアイテム保持ポリシーまたはクエリベースの電子情報開示の保持を作成することもできます。
   
-サードパーティのデータのインポート、および Microsoft 365 にインポートできるサードパーティのデータ型のリストの詳細については、「 [Office を使用してサードパーティのデータをアーカイブする (Office 365](work-with-partner-to-archive-third-party-data.md))」を参照してください。 
+サードパーティのデータをインポートするパートナーとの作業の詳細と、Microsoft 365 にインポートできるサードパーティのデータ型の一覧については、「365 Office を使用してサードパーティのデータ[をアーカイブする](work-with-partner-to-archive-third-party-data.md)」を参照してください。
+
+> [!IMPORTANT]
+> この記事のガイダンスは、カスタムパートナーコネクタによってインポートされたサードパーティデータにのみ適用されます。 この記事は、Microsoft コンプライアンスセンターで[サードパーティのデータコネクタ](archiving-third-party-data.md#third-party-data-connectors)を使用してインポートされたサードパーティのデータには適用されません。
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>すべてのサードパーティデータを検索するクエリを作成する
 
-Office 365 にインポートしたすべての種類のサードパーティデータを検索 (または保留) するには、[キーワード] `kind:externaldata`ボックスで [メッセージのプロパティと値のペア] を使用して、コンテンツ検索を実行するか、クエリベースのホールドを作成します。 たとえば、インポートされたアイテムの Subject プロパティに "contoso" という単語を含む、サードパーティのデータソースからインポートされたアイテムを検索するには、次のクエリを使用します。 
+Office 365 にインポートしたすべての種類のサードパーティデータを検索 (または保留) するには、[ `kind:externaldata` キーワード] ボックスで [メッセージのプロパティと値のペア] を使用して、コンテンツ検索を実行するか、クエリベースのホールドを作成します。 たとえば、インポートされたアイテムの Subject プロパティに "contoso" という単語を含む、サードパーティのデータソースからインポートされたアイテムを検索するには、次のクエリを使用します。 
   
 ```powershell
 kind:externaldata AND subject:contoso
@@ -55,9 +58,9 @@ itemclass:ipm.externaldata.<third-party data type>*
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-次の表に、検索可能なサードパーティのデータ型と、そのサードパーティデータの種類を`itemclass:`特定するためにメッセージプロパティに対して使用する値を示します。 クエリ構文では大文字と小文字が区別されません。 
+次の表に、検索可能なサードパーティのデータ型と、 `itemclass:` そのサードパーティデータの種類を特定するためにメッセージプロパティに対して使用する値を示します。 クエリ構文では大文字と小文字が区別されません。 
   
-|**サードパーティのデータ型**|**プロパティの`itemclass:`値**|
+|**サードパーティのデータ型**|**プロパティの値 `itemclass:`**|
 |:-----|:-----|
 |目的  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -81,7 +84,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Bloomberg メール  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |検索ボックス  <br/> | `ipm.externaldata.Box*` <br/> |
-|Cisco IM &amp;プレゼンスサーバー  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Cisco IM &amp; プレゼンスサーバー  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Direct Connect  <br/> | `ipm.externaldata.DirectConnect*` <br/> |

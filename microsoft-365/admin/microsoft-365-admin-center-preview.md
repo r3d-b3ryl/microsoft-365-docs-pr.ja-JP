@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Microsoft 365 管理センターについて説明します。
-ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432209"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560425"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -54,8 +54,6 @@ Microsoft 365 管理センターで新機能が利用できるようになると
 ### <a name="turn-on-targeted-release"></a>対象指定リリースを有効にする
 
 1. [admin.microsoft.com](https://admin.microsoft.com) にサインインしてナビゲーション ウィンドウに移動し、[**設定**] \> [**組織プロファイルの設定**] の順に選択します。
-
-1. [Portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)でサインインし、ナビゲーションウィンドウに移動して、 **Settings** [ \> **組織プロファイル**の設定] を選択します。
 
 2. [**リリースの設定**] カードに移動し、[**編集**] を選択します。 
     
