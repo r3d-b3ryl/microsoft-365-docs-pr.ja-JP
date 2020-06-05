@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用し &amp; ます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351875"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566730"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -173,8 +173,4 @@ ATP レポートにデータが表示されない場合は、ポリシーが正�
 
 [セキュリティ/コンプライアンスセンターのレポートと分析 &amp;](reports-and-insights-in-security-and-compliance.md)
   
-[セキュリティ/コンプライアンスセンターでレポートのスケジュールを作成する &amp;](create-a-schedule-for-a-report.md)
-
-[セキュリティ/コンプライアンスセンターでカスタムレポートを設定およびダウンロードする &amp;](set-up-and-download-a-custom-report.md)
-
 [役割のアクセス許可 (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

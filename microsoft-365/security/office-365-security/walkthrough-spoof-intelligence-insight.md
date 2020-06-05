@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、どの送信者が認証されていない電子メールを正規に送信しているかをすばやく判断する方法を含め、スプーフィングインテリジェンスの理解のしくみを理解できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208466"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566706"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>チュートリアル-Microsoft 365 での ATP のスプーフに関する知識の理解
 
@@ -43,7 +43,7 @@ Advanced Threat Protection (ATP) を使用した Microsoft 365 の組織では�
 
 - ATP のフィッシング対策ポリシーのスプーフィングインテリジェンスを有効または無効にします。 詳細については、「 [Microsoft 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。
 
-- Exchange Online メールボックスを使用する Microsoft 365 組織と、Exchange Online メールボックスを含まないスタンドアロンの Exchange Online Protection (EOP) では、スプーフィングインテリジェンスを使用して、認証されていないメッセージを送信している送信者を監視および管理できます。 詳細については、「[Microsoft 365 でのスプーフィング インテリジェンスを設定する](learn-about-spoof-intelligence.md)」を参照してください。
+- Exchange Online メールボックスを使用する Microsoft 365 組織と、Exchange Online メールボックスを含まないスタンドアロンの Exchange Online Protection (EOP) では、スプーフィングインテリジェンスを使用して、認証されていないメッセージを送信している送信者を監視および管理できます。 詳細については、「[Microsoft 365 でのスプーフィング インテリジェンスの構成](learn-about-spoof-intelligence.md)」を参照してください。
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでのスプーフィングインテリジェンスに関する洞察を開く
 
@@ -102,9 +102,3 @@ Advanced Threat Protection (ATP) を使用した Microsoft 365 の組織では�
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 でのスプーフィング対策保護](anti-spoofing-protection.md)
-
-[チュートリアル - ダッシュボードからインサイトへの移動](from-a-dashboard-to-an-insight.md)
-
-[チュートリアル - 詳細レポートからインサイトへの移動](from-a-detailed-report-to-an-insight.md)
-
-[チュートリアル - インサイトから詳細レポートへの移動](from-an-insight-to-a-detailed-report.md)

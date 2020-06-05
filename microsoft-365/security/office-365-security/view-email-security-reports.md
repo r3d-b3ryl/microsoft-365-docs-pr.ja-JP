@@ -17,12 +17,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
-ms.openlocfilehash: ca23f7ba0ce7bc43f8808e213dc79d066316a9ec
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e62d64ec062653c5292f98c2456cd26275916dca
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208515"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566742"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -256,7 +256,3 @@ URL の脅威保護レポートの詳細表には、テナント内で発生す�
 [Microsoft 365 メールのスパム対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
 [セキュリティ & コンプライアンスセンターのレポートと分析情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
-
-[セキュリティ & コンプライアンスセンターでレポートのスケジュールを作成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
-
-[セキュリティ & コンプライアンスセンターでカスタムレポートを設定およびダウンロードする](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)

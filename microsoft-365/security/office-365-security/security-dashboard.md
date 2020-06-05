@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208038"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566718"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -47,11 +47,12 @@ ms.locfileid: "44208038"
 ![セキュリティダッシュボード-脅威管理の概要ウィジェット](../../media/SecDash-ThreatMgmtSummary.png)
 
 脅威管理の概要に表示される情報は、サブスクリプションの内容によって異なります。 次の表では、Office 365 E3 および Office 365 E5 に含まれる情報について説明します。
-|||
+
+
+|Office 365 E3 |Office 365 E5 |
 |---|---|
-|**Office 365 E3**|**Office 365 E5**|
 |ブロックされるマルウェアメッセージ<br/>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br>|ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある Url|
-|
+
 
 脅威管理の概要ウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するためのアクセス許可を持っている必要があります。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。
 
@@ -63,12 +64,10 @@ ms.locfileid: "44208038"
 
 詳細は、Microsoft 365 サブスクリプションに[Office 365 Advanced Threat protection](office-365-atp.md) (ATP) を含むかどうかに関する[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) が含まれているかどうかによって異なります。
 
-|||
+|サブスクリプションに含まれるもの|これらの詳細が表示できます。|
 |---|---|
-|**サブスクリプションに含まれるもの**|**これらの詳細が表示できます。**|
 |EOP ではないが、Office 365 ATP|EOP によって検出およびブロックされた悪意のある電子メール。<br><br> 「[脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。|
 |Office 365 ATP|EOP および Office 365 ATP により、悪意のあるコンテンツや悪意のある電子メールが検出されブロックされる<br><br>マルウェア対策エンジン、[ゼロ時間自動削除](zero-hour-auto-purge.md)、atp 機能 ([安全なリンク](atp-safe-links.md)、[安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)など) によってブロックされた一意の電子メールメッセージの集計数。<br><br>「[脅威保護の状態レポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。|
-|
 
 脅威保護状態ウィジェットを表示またはアクセスするには、Advanced Threat Protection レポートを表示する権限が必要です。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。
 
@@ -80,14 +79,13 @@ ms.locfileid: "44208038"
 
 メトリックは、次の表に示すように計算されます。
 
-|||
+|測定基準|計算方法 |
 |---|---|
-|**測定基準**|**計算方法**|
 |スキャンされたメッセージ|スキャンされた電子メールメッセージの数を受信者の数で乗算した数|
 |停止した脅威|マルウェアが含まれていると識別された電子メールメッセージの数が受信者数を乗算した回数|
 |[ATP](office-365-atp.md)によるブロック|ATP によってブロックされた電子メールメッセージの数が受信者数に乗じる|
 |配信後に削除|[0 時間の自動削除](zero-hour-auto-purge.md)によって削除されたメッセージの数が、受信者の数で乗算された数|
-|
+
 
 ## <a name="malware"></a>マルウェア
 
@@ -105,9 +103,9 @@ ms.locfileid: "44208038"
 
 ## <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
-組織のサブスクリプションに[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度な脅威調査および応答ツールを含むセクションがあります。 組織のセキュリティチームは、このセクションの情報を使用して、新しいキャンペーンの理解、脅威の調査、インシデントの管理を行うことができます。
+組織のサブスクリプションに[Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度な脅威調査および応答ツールを含むセクションがあります。 これらのツールには[、自動調査と応答機能](automated-investigation-response-office.md)が含まれます。 自動調査と応答は、侵害された[ユーザーアカウントを迅速に解決](address-compromised-users-quickly.md)するなどのシナリオで役立ちます。
 
-![脅威インテリジェンスは、組織を対象とした攻撃を理解するのに役立つ](../../media/threatintelwidget.png)
+詳細については、「 [Office 365 の自動調査と応答 (AIR) の使用を開始](office-365-air.md)する」を参照してください。
 
 ## <a name="trends"></a>傾向
 
