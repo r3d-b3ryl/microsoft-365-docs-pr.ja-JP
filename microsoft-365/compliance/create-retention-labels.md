@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除し、Office 365 環境でアイテムをレコードとして宣言するための、保持ラベルの作成、発行、および自動適用の手順。
-ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
-ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
+ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408469"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545959"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>保持ラベルを作成、発行、および自動適用する
 
@@ -56,13 +56,13 @@ ms.locfileid: "44408469"
 
 2. ウィザードでプロンプトに従います。 レコード管理を使用している場合:
     
-    - ファイル計画記述子については、「[ファイル計画マネージャーの概要](file-plan-manager.md)」をご覧ください。
+    - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
     
     - 保持ラベルを使用してコンテンツをレコードとして宣言するには、[**このラベルを使用して、コンテンツを「レコード」に分類する**] チェックボックスをオンにします。
 
 3. さらにラベルを作成するには、これらの手順を繰り返します。
 
-既存のラベルを編集するには、目的のラベルを選択し、[**ラベルの編集**] を選択します。 これにより同じウィザードが起動し、手順 2 でラベルの説明と設定を変更できます。
+既存のラベルを編集するには、そのラベルを選択してから [**ラベルの編集**] を選択し、手順 2 からラベルの説明や[有効な設定](#updating-retention-labels-and-their-policies)を変更するための同じウィザードを開始します。 または、利用可能な**編集**オプションを選択して、関連するページに直接アクセスして更新を行うこともできます。
 
 ## <a name="publish-retention-labels-by-creating-a-retention-label-policy"></a>保持ラベル ポリシーを作成して保持ラベルを発行する
 
@@ -81,6 +81,8 @@ ms.locfileid: "44408469"
 2. ウィザードでプロンプトに従います。
     
     保持ラベルでサポートされている場所については、「[保持ラベルと場所](labels.md#retention-label-policies-and-locations)」のセクションをご覧ください。 
+
+既存の保持ラベル ポリシーを編集するには、そのラベルを選択してから [**ポリシーの編集**] を選択し、手順 2 からポリシーの説明や[有効な設定](#updating-retention-labels-and-their-policies)を変更するための同じウィザードを開始します。 または、利用可能な**編集**オプションを選択して、関連するページに直接アクセスして更新を行うこともできます。
 
 ## <a name="auto-apply-a-retention-label"></a>自動適用の保持ラベル
 
@@ -101,6 +103,8 @@ ms.locfileid: "44408469"
     保持ラベルを自動的に適用する条件の構成については、このページの「[自動適用の保持ラベルの条件の構成](#configuring-conditions-for-auto-apply-retention-labels)」セクションをご覧ください。
     
     保持ラベルでサポートされている場所については、「[保持ラベルと場所](labels.md#retention-label-policies-and-locations)」のセクションをご覧ください。
+
+既存の自動適用ラベル ポリシーを編集するには、そのラベルを選択してから [**ポリシーの編集**] を選択し、手順 2 からポリシーの説明や[有効な設定](#updating-retention-labels-and-their-policies)を変更するための同じウィザードを開始します。 または、利用可能な**編集**オプションを選択して、関連するページに直接アクセスして更新を行うこともできます。
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>自動適用の保持ラベルの条件の構成
@@ -217,7 +221,11 @@ Outlook on the web にラベルが表示されると思われるにもかかわ�
 
 ## <a name="updating-retention-labels-and-their-policies"></a>保持ラベルとそのポリシーの更新
 
-保持ラベル、保持ラベル ポリシー、または自動適用ポリシーを編集し、保持ラベルが既にコンテンツに適用されている場合、更新された設定は、新しくラベル付けされたコンテンツに加えて、このコンテンツに自動的に適用されます。
+保持ラベル、保持ラベル ポリシー、または自動適用ポリシーを編集し、保持ラベルまたはポリシーが既にコンテンツに適用されているとき、更新された設定は、新しく識別されたコンテンツに加えて、このコンテンツに自動的に適用されます。
+
+ラベルやポリシーを作成して保存した後には変更できない設定があり、それらは以下のものを含みます。
+- 作成日時に基づいてコンテンツを保持または削除するようにラベルを構成していない場合を除いた、保持期間以外の保持設定。
+- レコードとして分類するオプション。
 
 ## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>保持ラベルの PowerShell コマンドレットを検索する
 
