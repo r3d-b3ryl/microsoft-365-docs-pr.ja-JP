@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351977"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588266"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
@@ -165,7 +165,7 @@ ms.locfileid: "44351977"
 
 4. 最新バージョンの Outlook をインストールします。 Outlook の現在のバージョンでは、この両方の種類の攻撃が既定でブロックされることに注意してください。
 
-5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) して、MFA がまだ有効になっていない場合[のユーザーのセットアップ多要素認証](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
+5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) して、MFA がまだ有効になっていない場合[のユーザーのセットアップ多要素認証](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
 
 ### <a name="using-powershell"></a>PowerShell の使用
 
@@ -193,7 +193,7 @@ ms.locfileid: "44351977"
 
 ルールとフォームのエクスプロイトは、攻撃者がユーザーのアカウントのいずれかを盗んだ後、または侵害した後にのみ使用されます。 そのため、これらの悪用を組織に対して使用できないようにするための最初の手順として、ユーザーアカウントを積極的に保護することが挙げられます。 アカウントが侵害される最も一般的な方法には、フィッシングまたは[パスワード spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻撃があります。
 
-ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、[ユーザーに多要素認証を設定](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)することです。 次のことも実行する必要があります。
+ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、[ユーザーに多要素認証を設定](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)することです。 次のことも実行する必要があります。
 
 - ユーザーアカウントがどのようにアクセスされ、[使用されるかを](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)監視します。 最初の違反を防ぐことはできませんが、期間を短縮して、違反が早く検出された場合の影響を短縮することができます。 これらの[Office 365 Cloud App Security ポリシー](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)を使用して、アカウントを監視し、異常なアクティビティに関する警告を表示することができます。
 

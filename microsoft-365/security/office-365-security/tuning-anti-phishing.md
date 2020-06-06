@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージが Microsoft 365 でどのように表示されるのか、および今後のフィッシングメッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: a9b7a58f32fd14c157d72e8f91a1f1b8bfe3aedc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208587"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588442"
 ---
 # <a name="tune-anti-phishing-protection"></a>フィッシング対策保護の調整
 
@@ -75,4 +75,4 @@ Microsoft 365 には、既定で有効になっているさまざまなフィッ
 
 - 侵害されたアカウントを防止するには、多要素認証 (MFA) をお勧めします。 すべてのユーザーに対して MFA を有効にすることを強くお勧めします。 段階的なアプローチの場合は、すべてのユーザーに対して MFA を有効にする前に、最も機密性の高いユーザー (管理者、役員など) に対して MFA を有効にすることから始めます。 手順については、「[多要素認証をセットアップ](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)する」を参照してください。
 
-- 外部の受信者へのルールの転送は、多くの場合、攻撃者がデータを抽出するために使用します。 「 [Microsoft セキュリティスコア](../mtp/microsoft-secure-score.md)」の「**メールボックス転送ルールを確認**する」を使用して、外部の受信者に対する転送ルールを見つけて、それを防止します。 詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)する」を参照してください。
+- 外部の受信者へのルールの転送は、多くの場合、攻撃者がデータを抽出するために使用します。 「 [Microsoft セキュリティスコア](../mtp/microsoft-secure-score.md)」の「**メールボックス転送ルールを確認**する」を使用して、外部の受信者に対する転送ルールを見つけて、それを防止します。 詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)する」を参照してください。

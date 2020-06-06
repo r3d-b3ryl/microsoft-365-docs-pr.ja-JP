@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Office 365 のサインアッププロセスを開始する前に把握しておくべき情報について説明します。 '
-ms.openlocfilehash: 2778dda03c517e176fbab044243306fb51355396
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386759"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579171"
 ---
 # <a name="how-to-sign-up---admin-help"></a>管理者向けのサインアップヘルプ
 
@@ -40,21 +40,11 @@ ms.locfileid: "44386759"
 
 Microsoft 365 for business にサインアップすることで、チームは、お客様のビジネスで最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができます。
   
-3つの Microsoft 365 for business プランの概要を簡単に確認するか、下にスクロールして詳細情報を参照してください。
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 Microsoft 365 for business にサインアップすることで、チームは、お客様のビジネスで最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムを使い始めることができます。
-  
-お客様のビジネスに最適な3つのプランの概要を簡単にご覧ください。 または下にスクロールして詳細を確認してください。
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 
@@ -80,7 +70,7 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての[製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。
   

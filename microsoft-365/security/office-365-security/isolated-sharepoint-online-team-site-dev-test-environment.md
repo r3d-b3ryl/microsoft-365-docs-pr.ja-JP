@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Microsoft 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チームサイトを構成します。'
-ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634124"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588030"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>分離した SharePoint Online チーム サイト開発/テスト環境
 
@@ -57,9 +57,9 @@ Microsoft 365 開発/テスト環境で分離した SharePoint Online チーム�
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>フェーズ 1: 軽量またはシミュレートされたエンタープライズ Microsoft 365 開発/テスト環境を構築する
 
-最小要件での軽量な方法で分離した SharePoint Online チームサイトを作成する場合は、 [Microsoft 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)のフェーズ2とフェーズ3の手順に従ってください。
+最小要件での軽量な方法で分離した SharePoint Online チームサイトを作成する場合は、[軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)のフェーズ2とフェーズ3の手順に従ってください。
 
-シミュレートされたエンタープライズ構成で分離した SharePoint Online チームサイトを作成する場合は、「 [Microsoft 365 開発/テスト環境の DirSync の](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment)手順」に従ってください。
+シミュレートされたエンタープライズ構成で分離した SharePoint Online チームサイトを作成する場合は、「 [Microsoft 365 テスト環境のパスワードハッシュ同期](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)」の手順に従ってください。
 
 > [!NOTE]
 > 分離した SharePoint Online サイトを作成する場合は、シミュレートされたエンタープライズ開発/テスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと Active Directory ドメインサービス (AD DS) フォレストのディレクトリ同期が含まれます。 この記事は、分離した SharePoint Online サイトをテストして、一般的な組織を表す環境で試してみることができるオプションとして提供されています。
@@ -149,7 +149,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 ProjectX 用の SharePoint Online チーム サイトを作成するには、次の操作を行います。
 
-1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、全体管理者[https://admin.microsoft.com](https://admin.microsoft.com)アカウントを使用して Microsoft 365 管理センター () にサインインします。
+1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、 [https://admin.microsoft.com](https://admin.microsoft.com) 全体管理者アカウントを使用して Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、**[SharePoint]** をクリックします。
 
@@ -217,7 +217,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 2. 全体管理者の名前をクリックし、 **[サインアウト]** をクリックします。
 
-3. デザイナーのリーダーのアカウント名とパスワードを[https://admin.microsoft.com](https://admin.microsoft.com)使用して、Microsoft 365 管理センター () にサインインします。
+3. [https://admin.microsoft.com](https://admin.microsoft.com)デザイナーのリーダーのアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
 4. タイルのリストで、**[SharePoint]** をクリックします。
 
@@ -247,7 +247,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 開発 VP のユーザー アカウントを使用したアクセスをデモンストレーションします。
 
-1. 開発 VP のアカウント名とパスワードを使用[https://admin.microsoft.com](https://admin.microsoft.com)して、Microsoft 365 管理センター () にサインインします。
+1. [https://admin.microsoft.com](https://admin.microsoft.com)開発 VP のアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、**[SharePoint]** をクリックします。
 
@@ -263,7 +263,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 権限を持たないユーザー アカウントでのアクセスをデモンストレーションします。
 
-1. User 3 のアカウント名とパスワードを使用[https://admin.microsoft.com](https://admin.microsoft.com)して、Microsoft 365 管理センター () にサインインします。
+1. [https://admin.microsoft.com](https://admin.microsoft.com)User 3 のアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
 2. タイルのリストで、 **[SharePoint]** をクリックします。
 
@@ -289,12 +289,8 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 [クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[基本構成開発/テスト環境](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
+[シミュレートされたエンタープライズ基本構成](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
-[Microsoft 365 開発/テスト環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 電子メールで悪意のあるファイルから組織を保護する安全な添付ファイルポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035322"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588122"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 の ATP の安全な添付ファイルのポリシーを設定する
 
 > [!IMPORTANT]
-> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook での安全な添付ファイルに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook での安全な添付ファイルに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを日常的に送信、受信、共有します。 電子メールメッセージを見るだけで、添付ファイルが安全か悪意かを知ることは常に容易ではありません。 最後に必要なのは、組織にとって wreaking 危害を受ける、悪意のある添付ファイルです。 さいわい、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) は役立ちます。 組織が安全でない電子メールの添付ファイルによる攻撃から保護されるようにするために、 [ATP の安全な添付ファイル](atp-safe-attachments.md)ポリシーを設定できます。
 
@@ -48,12 +48,12 @@ ms.locfileid: "44035322"
 
   |役割|参照先/割り当て方法|
   |---------|---------|
-  |グローバル管理者 |Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)てを参照してください)。|
+  |グローバル管理者 |Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
   |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online 組織の管理、Exchange Online の検疫管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください)|
   |
 
-  役割とアクセス許可の詳細については、「[セキュリティ&amp; /コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+  役割とアクセス許可の詳細については、「[セキュリティ/ &amp; コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 - [ATP の安全な添付ファイルのポリシーオプション (この記事) について説明](#step-3-learn-about-atp-safe-attachments-policy-options)します。 モニターまたは置換オプションなどの一部のオプションでは、添付ファイルがスキャンされている間、電子メールの多少の遅延が生じることがあります。 メッセージの遅延を回避するには、[動的配信とプレビュー](dynamic-delivery-and-previewing.md)を使用することを検討してください。
 
@@ -63,11 +63,11 @@ ms.locfileid: "44035322"
 
 1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。
 
-2. セキュリティ&amp; /コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー** \>の**安全な添付ファイル**] を選択します。
+2. セキュリティ &amp; /コンプライアンスセンターの左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー**の \> **安全な添付ファイル**] を選択します。
 
 3. **[SharePoint、OneDrive、Microsoft Teams に対して ATP を有効**にする] が表示されている場合は、このオプションを選択することをお勧めします。 これにより、Microsoft 365 環境の[SharePoint、OneDrive、Microsoft Teams で Office 365 Advanced Threat Protection](atp-for-spo-odb-and-teams.md)が有効になります。
 
-4. [**新規**] を選択します (新しいボタンは**+** プラス記号 () に似ています)。ポリシーの作成を開始します。
+4. [**新規**] を選択します (新しいボタンはプラス記号 () に似て **+** います)。ポリシーの作成を開始します。
 
 5. ポリシーの名前、説明、および設定を指定します。<br/><br/>**例:** すべてのユーザーのメッセージを直ちに配信する "遅延なし" というポリシーを設定し、スキャン後に添付ファイルを再び添付するには、次の設定を指定できます。
 

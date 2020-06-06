@@ -19,17 +19,17 @@ ms.collection:
 - SPO_Content
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4dfe56b635714cedf033f2d4f14cd6bc0286650
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 41cb5a5e5af6247331765bcfd0a78c50f89775ae
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224613"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588350"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
 > [!IMPORTANT]
-> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 [Office 365 ATP For SharePoint、OneDrive、Microsoft Teams では](atp-for-spo-odb-and-teams.md)、組織が悪意のあるファイルを誤って共有することを防止します。 悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。 この記事では、SharePoint、OneDrive、Teams の ATP を有効にし、検出されたファイルについて通知する通知を設定し、次の手順を実行します。
 
@@ -37,7 +37,7 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
 
 |役割|参照先/割り当て方法|
 |---------|---------|
-|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)てを参照してください)。|
+|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください)|
 
@@ -55,7 +55,7 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
 
    ![SharePoint Online、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にします。](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 5. 組織の[安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md)と[安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認し、必要に応じて編集します。
 
@@ -93,7 +93,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 6. [**この通知を送信する**ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。
 
-7. [**保存**] をクリックします。
+7. **[保存]** をクリックします。
 
 通知の詳細については、「[セキュリティ & コンプライアンスセンターでアクティビティ警告を作成](../../compliance/create-activity-alerts.md)する」を参照してください。
 

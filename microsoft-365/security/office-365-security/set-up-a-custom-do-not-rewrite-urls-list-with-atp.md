@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の ATP の安全なリンクポリシーでユーザーのブロックされたユーザーの Url を設定する方法と、ユーザーのグループの Url のリストを書き換えない方法について説明します。
-ms.openlocfilehash: d7bd6c7d4c3dccfb4a16b2b2f172f8f75123692e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: c75f468aa98c8fa9e45cd596c62a7509310fdca5
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046306"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588134"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、リライトしないカスタムの Url リストを設定する
 
 > [!IMPORTANT]
-> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用すると、組織に[カスタムのブロック](set-up-a-custom-blocked-urls-list-atp.md)された url を設定できます。これにより、ユーザーが電子メールメッセージや特定の Office ドキュメント内の web アドレス (url) をクリックしたときに、それらの url にアクセスできなくなります。 組織では、組織内の特定のグループに対してカスタムの "書き換え不可" リストを作成することもできます。 [書き換えない] リストを使用すると、一部のユーザーは、 [Office 365 で ATP の安全なリンク](atp-safe-links.md)によってブロックされている url にアクセスすることができます。
 
@@ -43,7 +43,7 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 
 |役割  |参照先/割り当て方法  |
 |---------|---------|
-|グローバル管理者 |Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)てを参照してください)。         |
+|グローバル管理者 |Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。         |
 |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください) |
 
@@ -56,7 +56,7 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 
 2. 左側のナビゲーションで、[**脅威管理** \> **ポリシー** \> **セーフリンク**] の下にあります。
 
-3. [**特定の受信者に適用するポリシー** ] セクションで、[**新規**作成] (新しいボタンは**+** プラス記号 () に似ています) を選択して、新しいポリシーを作成します。 (または、既存のポリシーを編集することもできます)。<br/>![[新規] を選択して、特定の電子メール受信者の安全なリンクポリシーを追加します。](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. [**特定の受信者に適用するポリシー** ] セクションで、[**新規**作成] (新しいボタンはプラス記号 () に似ています) を選択して、 **+** 新しいポリシーを作成します。 (または、既存のポリシーを編集することもできます)。<br/>![[新規] を選択して、特定の電子メール受信者の安全なリンクポリシーを追加します。](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. ポリシーの名前と説明を指定します。
 
@@ -73,15 +73,15 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 
 - [書き換えない] ボックスの一覧で指定したすべての Url は、指定した受信者の ATP の安全なリンクスキャンから除外されます。
 
-- 「書き換えない」リスト内に既に Url のリストがある場合は、そのリストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、既存のリストにそのよう`https://contoso.com/a`なエントリがあり、ポリシーにそのような`https://contoso.com/a/b`サブパスを含める場合は、エントリにワイルドカードを追加`https://contoso.com/a/*`して、次のようにします。
+- 「書き換えない」リスト内に既に Url のリストがある場合は、そのリストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、既存のリストにそのようなエントリがあり、 `https://contoso.com/a` ポリシーにそのようなサブパスを含める場合は、 `https://contoso.com/a/b` エントリにワイルドカードを追加して、次のように `https://contoso.com/a/*` します。
 
-- ATP の安全なリンクポリシーの "書き込み不可" リストを指定する場合は、最大3つのワイルドカードのアスタリスク\*() を含めることができます。 ワイルドカード\*() は、プレフィックスまたはサブドメインを明示的に含めるために使用されます。 指定し`contoso.com`たドメインのサブドメイン`*.contoso.com/*`とパス`*.contoso.com/*`にアクセスできるようにするので、このエントリはと同じではありません。
+- ATP の安全なリンクポリシーの "書き込み不可" リストを指定する場合は、最大3つのワイルドカードのアスタリスク () を含めることができ \* ます。 ワイルドカード ( \* ) は、プレフィックスまたはサブドメインを明示的に含めるために使用されます。 指定し `contoso.com` `*.contoso.com/*` `*.contoso.com/*` たドメインのサブドメインとパスにアクセスできるようにするので、このエントリはと同じではありません。
 
 次の表に、入力できる内容と、それらのエントリの影響についての例を示します。
 
 |**エントリの例**|**機能**|
 |:-----|:-----|
-|`contoso.com`|受信者がサブドメインやパス`https://contoso.com`ではなく、サイトにアクセスできるようにします。|
-|`*.contoso.com/*`|`https://www.contoso.com`受信者が`https://www.contoso.com`、 `https://maps.contoso.com`、、または`https://www.contoso.com/a`などのドメイン、サブドメイン、およびパスにアクセスできるようにします。 <br/><br/> このエントリには`*contoso.com*`、次のように、偽装している可能性の`https://www.falsecontoso.com`あるサイトが含まれていないため、またはのようになります。`https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|特定の受信者が、次`https://contoso.com/a`のようなサブパスではなく、サイトにアクセスできるようにします。`https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|特定の受信者が、次`https://contoso.com/a`のようなサブパスでサイトにアクセスできるようにします。`https://contoso.com/a/b`|
+|`contoso.com`|受信者がサブドメインやパスではなく、サイトにアクセスできるように `https://contoso.com` します。|
+|`*.contoso.com/*`|受信者が、、、またはなどのドメイン、サブドメイン、およびパスにアクセスできるようにし `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` `https://www.contoso.com/a` ます。 <br/><br/> このエントリには、次のように、 `*contoso.com*` 偽装している可能性のあるサイトが含まれていないため、 `https://www.falsecontoso.com` またはのようになります。`https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|特定の受信者が、次のようなサブパスではなく、サイトにアクセスできるようにし `https://contoso.com/a` ます。`https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|特定の受信者が、次のようなサブパスでサイトにアクセスできるようにします。 `https://contoso.com/a``https://contoso.com/a/b`|

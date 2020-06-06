@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターで利用できるスマートレポートと洞察、およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a033231b808964829ced0b9520515c426f5b81f
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566694"
+ms.locfileid: "44588158"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>セキュリティ/コンプライアンスセンターのスマートレポートと洞察 &amp;
 
@@ -50,7 +50,7 @@ ms.locfileid: "44566694"
 |**脅威エクスプローラー** (エクスプローラーとも呼ばれます) または**リアルタイム検出** <br/> Microsoft 365 の電子メールとファイルで検出された疑いのあるマルウェア  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[**脅威管理** \> **エクスプローラー** ] または [**リアルタイム検出**] に移動します。<br/> |[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md) <br/> |
 |**Advanced Threat Protection および電子メールセキュリティレポート** <br/> 電子メールセキュリティおよび脅威保護レポート (マルウェア、スパム、フィッシング、スプーフィングレポートを含む)  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[**レポート**] \> **ダッシュボード**に移動します。 <br/> |[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md) <br/><br/> [セキュリティ/コンプライアンスセンターで電子メールのセキュリティレポートを表示する &amp;](view-email-security-reports.md) <br/> |
 |**メール フロー** <br/> 送受信したメール メッセージ、最新の警告、上位の送信者と受信者、メール転送レポートなどに関する情報  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[**メールフロー** \> **ダッシュボード**] に移動します。 <br/> |[セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](mail-flow-insights-v2.md)<br/> |
-|**GDPR 準拠** <br/> データ主体、ラベルの傾向、アクティブなクローズケースへのリンクなど、GDPR のコンプライアンスに関する情報 &amp;  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[ **Data privacy** \> **GDPR dashboard** ] に移動します。 <br/> |[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
+|**GDPR 準拠** <br/> データ主体、ラベルの傾向、アクティブなクローズケースへのリンクなど、GDPR のコンプライアンスに関する情報 &amp;  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[ **Data privacy** \> **GDPR dashboard** ] に移動します。 <br/> |[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) <br/> |
 |**監査ログ** <br/> Microsoft 365 のアクティビティ、ユーザー、ファイルまたはフォルダーなどに関する情報  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[**検索 &amp; 調査**] [ \> **監査ログの検索**] に移動します。 <br/> |[セキュリティ/コンプライアンスセンターで監査ログを検索する &amp;](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**コンプライアンスレポート** <br/> FedRAMP のレポート、ガバナンス、リスクとコンプライアンス レポート、ISO 情報セキュリティ管理レポート、Service Organization Controls の監査レポートと評価レポート  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[**サービスアシュアランス** \> **コンプライアンスレポート**] に移動します。 <br/> |[Office 365 のセキュリティコンプライアンスを計画する &amp;](../../compliance/plan-for-security-and-compliance.md) <br/> |
   

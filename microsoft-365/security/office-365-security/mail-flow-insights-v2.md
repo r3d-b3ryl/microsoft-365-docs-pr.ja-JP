@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、insights、レポート、ウィジェットなど、セキュリティ & コンプライアンスセンターのメールフローダッシュボードについて学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034148"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588018"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
@@ -57,19 +57,19 @@ ms.locfileid: "44034148"
 
 - セキュリティ & コンプライアンスセンターの**メールフロー管理者ロール**のメンバー。 この役割が、グローバル管理者または Exchange 管理者の役割のメンバーではないユーザーに明示的に割り当てられている場合:
 
-  - ユーザーは、セキュリティ & コンプライアンスセンターに直接ログインする必要が[https://protection.office.com](https://protection.office.com)あります。
+  - ユーザーは、セキュリティ & コンプライアンスセンターに直接ログインする必要があり [https://protection.office.com](https://protection.office.com) ます。
 
   - ユーザーには、メールフローダッシュボードに対する読み取り専用アクセス許可のみが付与されます。
 
   - ユーザーは、Microsoft 365 管理センターへのアクセス権を持ちません。
 
-グローバル管理者ロールの詳細については、「 [Microsoft 365 管理者ロールについ](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)て」を参照してください。
+グローバル管理者ロールの詳細については、「 [Microsoft 365 管理者ロールについ](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)て」を参照してください。
 
 セキュリティ & コンプライアンスセンターの役割をユーザーに割り当てる方法については、「[ユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>メールフローダッシュボードの検索先
 
-1. のセキュリティ & コンプライアンスセンターに移動[https://protection.office.com](https://protection.office.com)します。
+1. のセキュリティ & コンプライアンスセンターに移動 [https://protection.office.com](https://protection.office.com) します。
 
 2. [**メールフロー** ] を展開し、[**ダッシュボード**] を選択します。
 

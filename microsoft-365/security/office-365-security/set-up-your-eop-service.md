@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) をセットアップしてオンプレミスの電子メール環境を保護する方法について説明します。
-ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b50ec7e2bca3765bb81e165b74596155da1f7940
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209801"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588066"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>スタンドアロンの EOP サービスをセットアップする
 
@@ -43,12 +43,12 @@ ms.locfileid: "44209801"
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Microsoft 365 管理センターを使用してドメインを追加して確認する
 
-1. [Microsoft 365 管理センター](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)で、[**セットアップ**] を使用して、ドメインをサービスに追加します。
+1. [Microsoft 365 管理センター](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)で、[**セットアップ**] を使用して、ドメインをサービスに追加します。
 
 2. ドメインの所有権を確認するため、以下の手順に従って、適用可能な DNS レコードを DNS ホスティング プロバイダーに追加します。
 
 > [!TIP]
-> Office [365 にドメインを追加](https://docs.microsoft.com/office365/admin/setup/add-domain)して、[任意の dns ホスティングプロバイダーで office 365 用の Dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)することは、ドメインをサービスに追加して dns を構成する際に参照するのに便利なリソースです。
+> Office [365 にドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)して、[任意の dns ホスティングプロバイダーで office 365 用の Dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)することは、ドメインをサービスに追加して dns を構成する際に参照するのに便利なリソースです。
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>手順 2:受信者を追加し、オプションとして DBEB を有効化する
 
@@ -77,7 +77,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 
-ドメイン構成手順に従って、受信メールが EOP を通過するように、ドメインの MX レコードを更新します。 サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。 詳細については、「[Office 365 の DNS レコードを作成する ](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」を参照してください。
+ドメイン構成手順に従って、受信メールが EOP を通過するように、ドメインの MX レコードを更新します。 サード パーティのフィルタリング サービスを通して電子メールを EOP に送るのではなく、MX レコードが直接 EOP をポイントするようにします。 詳細については、「[Office 365 の DNS レコードを作成する ](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」を参照してください。
 
 > [!NOTE]
 > MX レコードが EOP の前にある別のサーバーまたはサービスを指している必要がある場合は、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。

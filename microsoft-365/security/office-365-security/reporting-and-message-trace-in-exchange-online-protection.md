@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Microsoft Exchange Online Protection (EOP) 管理者が利用できるレポートとトラブルシューティングツールについて説明します。
-ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206444"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588170"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポート作成とメッセージ追跡
 
@@ -37,13 +37,13 @@ Exchange online メールボックスを使用しない Exchange Online また�
 
 詳細については、以下のリソースを参照してください。
 
-- [管理センターの microsoft 365 レポート-Microsoft 365 グループ](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [管理センターの microsoft 365 レポート-Microsoft 365 グループ](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [管理センターの Microsoft 365 レポート-電子メールアクティビティ](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [管理センターの Microsoft 365 レポート-電子メールアクティビティ](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [管理センターの Microsoft 365 レポート-電子メールアプリの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [管理センターの Microsoft 365 レポート-電子メールアプリの使用状況](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [管理センターでの Microsoft 365 レポート-メールボックスの使用状況](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [管理センターでの Microsoft 365 レポート-メールボックスの使用状況](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのセキュリティ & コンプライアンスレポート
 

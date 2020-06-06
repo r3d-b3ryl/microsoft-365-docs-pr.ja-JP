@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、Outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: 67fe2112e5d507ac1f0dc78ffa3534ebc9874916
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0b900fe00dc590b69755b54f8103688042026df0
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209489"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588230"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -38,9 +38,9 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
 個人ユーザーの場合は、[レポートメッセージアドインを自分自身に対して有効に](#get-the-report-message-add-in-for-yourself)することができます。
 
-グローバル管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。 これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。
+グローバル管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。 これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - レポートメッセージアドインは、ほとんどの Microsoft 365 サブスクリプションと、次の製品で機能します。
 
@@ -84,7 +84,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
   ![Outlook on the web レポートメッセージアドインアイコン](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-アドインの使用方法については、「[レポートメッセージアドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)する」を参照してください。
+アドインの使用方法については、「[レポートメッセージアドインを使用](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)する」を参照してください。
 
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>組織のレポートメッセージアドインを取得して有効にする
 
@@ -145,7 +145,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
   ![Outlook on the Web レポートメッセージアドインアイコン](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-レポートメッセージアドインについてユーザーに通知する場合は、[レポートメッセージアドインを使用](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)するためのリンクを含めます。
+レポートメッセージアドインについてユーザーに通知する場合は、[レポートメッセージアドインを使用](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)するためのリンクを含めます。
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>レポートメッセージアドインの設定を確認または編集する
 

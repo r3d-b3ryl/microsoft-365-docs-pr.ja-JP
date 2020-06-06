@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: この記事では、Office 365 用の ATP の安全な添付ファイル機能と、サブスクリプションの機能を取得する方法について説明します。
-ms.openlocfilehash: e6cbd5cb494e765bdb849da93114ea4168ab3c93
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 75b047c1761a936f1fb0e08c65d9c270a136a953
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034854"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588302"
 ---
 # <a name="atp-safe-attachments"></a>ATP の安全な添付ファイル機能
 
@@ -47,7 +47,7 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
 
 |役割|参照先/割り当て方法|
 |---------|---------|
-|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)てを参照してください)。|
+|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください)|
 

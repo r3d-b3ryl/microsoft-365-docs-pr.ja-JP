@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: スタンドアロンの Exchange Online Protection のタスクに必要なアクセス許可について説明します。
-ms.openlocfilehash: 0138bd4716d831a33fa4b5a0fbdce0f154d62776
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208881"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588254"
 ---
 # <a name="permissions-in-standalone-eop"></a>スタンドアロン EOP のアクセス許可
 
@@ -134,7 +134,7 @@ Microsoft 365 管理センターでユーザーを作成する場合、グロー
 |セキュリティ閲覧者|SecurityReader|
 |
 
-その他の Microsoft 365 の役割は、対応する EOP 役割グループを持たず、EOP で管理アクセス許可を付与しません。 Microsoft 365 の役割をユーザーに割り当てる方法については、「[管理者の役割を割り当てる](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles)」を参照してください。
+その他の Microsoft 365 の役割は、対応する EOP 役割グループを持たず、EOP で管理アクセス許可を付与しません。 Microsoft 365 の役割をユーザーに割り当てる方法については、「[管理者の役割を割り当てる](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)」を参照してください。
 
 EOP では、ユーザーに Microsoft 365 の役割を追加することなく、管理者権限を与えることができます。 これを行うには、ユーザーを EOP 役割グループのメンバーとして追加します。 ユーザーは EOP でアクセス許可を取得しますが、他の Microsoft 365 ワークロードでアクセス許可を取得することはありません。
 
@@ -144,7 +144,7 @@ EOP では、ユーザーに Microsoft 365 の役割を追加することなく�
 
 - EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、役割グループが表示されている (または一覧に表示されていない) ことを確認します。 役割グループを選択して、詳細ウィンドウで設定を確認するか **、[編集** ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) て設定を確認します。
 
-- Exchange Online PowerShell で、役割 \< グループ名を \> 役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) ことを確認し、設定を確認します。
+- Exchange Online PowerShell で、を \<Role Group Name\> 役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) ことを確認し、設定を確認します。
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

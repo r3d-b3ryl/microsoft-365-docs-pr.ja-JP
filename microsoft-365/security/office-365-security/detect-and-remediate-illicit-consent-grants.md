@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Microsoft Office 365 で不法な同意を与える攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034830"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587498"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不法な同意の付与を検出して修復する
 
@@ -90,7 +90,7 @@ ms.locfileid: "44034830"
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>ユーザーがアプリケーションアクセスを列挙する手順
 
-ユーザーが自分のアプリケーションhttps://myapps.microsoft.comへのアクセスを確認してもらいます。 これらのユーザーは、アクセス可能なすべてのアプリを表示したり、それらに関する詳細を表示したり (アクセスの範囲を含む)、疑わしいまたは不法なアプリに対して権限を取り消すことができます。
+ユーザーが https://myapps.microsoft.com 自分のアプリケーションへのアクセスを確認してもらいます。 これらのユーザーは、アクセス可能なすべてのアプリを表示したり、それらに関する詳細を表示したり (アクセスの範囲を含む)、疑わしいまたは不法なアプリに対して権限を取り消すことができます。
 
 ### <a name="steps-for-doing-this-with-powershell"></a>PowerShell を使用してこれを行うための手順
 
@@ -158,7 +158,7 @@ ms.locfileid: "44034830"
 
 - 影響を受けるアカウントのサインインを完全に無効にすることもできます。これにより、そのアカウントのデータに対するアプリのアクセスが無効になります。 これは、エンドユーザーの生産性を向上させるのには理想的ではありませんが、影響をすばやく抑えるために作業する場合は、実用的な短期的な修復になります。
 
-- テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。 これを行うには、[統合アプリをオンまたはオフ](https://docs.microsoft.com/office365/admin/misc/integrated-apps)にする手順に従ってください。
+- テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。 これを行うには、[統合アプリをオンまたはオフ](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)にする手順に従ってください。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
 

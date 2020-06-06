@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベストプラクティス推奨事項に従って、成功を設定し、一般的な構成エラーを回避します。
-ms.openlocfilehash: ade41b5343e19f75658f01e6c395c470e230b315
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351929"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587535"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>スタンドアロン EOP を構成するためのベストプラクティス
 
@@ -56,7 +56,7 @@ Exchange Online Protection (EOP) のベストプラクティス推奨事項に�
 |[PowerShell 接続](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|無効|無効|メールボックスユーザーまたはメールユーザー ([取得ユーザー](https://docs.microsoft.com/powershell/module/exchange/get-user)のコマンドレットによって返されるユーザーオブジェクト) に対して使用できます。|
 |[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、可能な場合には送信者をホワイトリストする|はい|はい||
 |[ディレクトリベースのエッジブロック (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|有効|有効|ドメインの種類 = 権限あり|
-|[すべての管理者アカウントに対して多要素認証をセットアップする](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|有効|有効||
+|[すべての管理者アカウントに対して多要素認証をセットアップする](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|有効|有効||
 |
 
 ## <a name="troubleshooting"></a>トラブルシューティング

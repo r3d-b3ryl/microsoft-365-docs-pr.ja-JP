@@ -14,14 +14,14 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、ドメインと設定を1つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) から別の組織に移動する方法について説明します。
-ms.openlocfilehash: e9e0bd0d18ad73c08f0bc5b487a46289f67e40ba
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213450"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588194"
 ---
-# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>ドメインと設定を1つの EOP 組織から別の組織に移動する
+# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>ドメインと設定を EOP 組織から別の EOP 組織に移動する
 
 ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。1 つの EOP 組織から別の EOP 組織へ移動するのは難しい作業ですが、いくつかの基本的なリモート Windows PowerShell スクリプトを用意し、少しの準備作業を行えば、比較的短いメンテナンス期間で完了できます。
 
@@ -191,7 +191,7 @@ Foreach ($domain in $Domains) {
 
 5. ドメインの検証に使用する MX レコードまたは TXT レコードを記録し、セットアップ ウィザードを終了します。
 
-6. 検証 TXT レコードを DNS レコードに追加します。 これにより、移動元の組織からドメインを削除した後、移動先の組織でドメインを迅速に検証できます。 DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
+6. 検証 TXT レコードを DNS レコードに追加します。 これにより、移動元の組織からドメインを削除した後、移動先の組織でドメインを迅速に検証できます。 DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>手順 3: 送信者がメールをキューに格納するように強制する
 
@@ -201,7 +201,7 @@ Foreach ($domain in $Domains) {
 
 別の方法として、自分のドメインに対する DNS レコードが保持されている各ドメイン (DNS ホスティング サービスとも呼ばれる) に無効な MX レコード置く方法もあります。このようにすると、送信元ではメールをキューに格納し、再試行します (通常は 48 時間にわたって再試行しますが、プロバイダーによって異なります)。無効な MX 宛先としては、invalid.outlook.com を使用できます。MX レコードの有効時間 (TTL) 値を 5 分に短縮すれば、変更が各 DNS プロバイダーに伝達されるまでの時間を短縮できます。
 
-DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
+DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
 
 > [!IMPORTANT]
 > メールをキューに保持する時間はプロバイダーごとに異なります。キューに格納する時間が満了して送信者に配信不能レポート (NDR) が送信されるのを避けるため、新しいテナントを迅速に設定し、DNS 設定を元に戻す必要があります。
@@ -931,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>手順 8: DNS 設定を元に戻し、メールをキューに格納する処置を停止する
 
-送信中に送信者がメールをキューに入れられるように MX レコードを無効なアドレスに設定することを選択した場合は、[管理センター](https://admin.microsoft.com)で指定されているとおりに正しい値に設定する必要があります。 DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
+送信中に送信者がメールをキューに入れられるように MX レコードを無効なアドレスに設定することを選択した場合は、[管理センター](https://admin.microsoft.com)で指定されているとおりに正しい値に設定する必要があります。 DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。

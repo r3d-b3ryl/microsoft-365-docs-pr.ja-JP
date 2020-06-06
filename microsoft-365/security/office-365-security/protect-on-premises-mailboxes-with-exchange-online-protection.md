@@ -1,5 +1,5 @@
 ---
-title: スタンドアロン EOP を使用して中国の社内メールボックスを保護する
+title: スタンドアロン EOP を使用して、中国のオンプレミスのメールボックスを保護する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 21Vianet が運営する Office 365 を使用した中国の管理者は、スタンドアロンの Exchange Online Protection (EOP) を使用してオンプレミスのメールボックスを保護する方法について説明します。
-ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3e9ba8400ce9c545dd26f2dadce70595f5c5695e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208296"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587982"
 ---
-# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>スタンドアロン EOP を使用して中国の社内メールボックスを保護する
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>スタンドアロン EOP を使用して、中国のオンプレミスのメールボックスを保護する
 
 > [!NOTE]
 > この記事は、中国で21Vianet が運営する Office 365 にのみ適用されます。
 
-一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントがグローバル管理者であるか、または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「 [365 office 2013 で運用されている管理者ロールの割り当て](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet)」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。
+一部またはすべてのメールボックスを社内でホストすることを計画している場合でも、Exchange Online Protection (EOP) を使用してメールボックスを保護することができます。 コネクタを構成するには、アカウントがグローバル管理者であるか、または Exchange 会社の管理者 (Organization Management 役割グループ) である必要があります。 Office 365 のアクセス許可と Exchange のアクセス許可との関係の詳細については、「 [365 office 2013 で運用されている管理者ロールの割り当て](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet)」を参照してください。 すべての Exchange メールボックスがオンプレミスである場合は、次の手順に従って EOP サービスを設定します。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>手順 1: Microsoft 365 管理センターを使用してドメインを追加して確認する
 
@@ -42,7 +42,7 @@ ms.locfileid: "44208296"
 2. ポータルの手順に従って、ドメインの所有権を確認するために、該当する dns レコードを DNS ホストプロバイダーに追加します。
 
 > [!TIP]
-> 「 [21vianet が運用する office 365 にドメインとユーザーを追加](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet)する」と「 [365 office の Dns レコードを作成](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet)する」を参照してください。 dns レコードを管理するときは、ドメインをサービスに追加して dns を構成する際に参照するのに役立つリソースです。
+> 「 [21vianet が運用する office 365 にドメインとユーザーを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet)する」と「 [365 office の Dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet)する」を参照してください。 dns レコードを管理するときは、ドメインをサービスに追加して dns を構成する際に参照するのに役立つリソースです。
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>手順 2: 受信者を追加してドメインの種類を構成する
 
@@ -69,7 +69,7 @@ Exchange 管理センター (EAC) でコネクタを作成し、EOP とオンプ
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>手順 6: Microsoft 365 管理センターを使用して MX レコードを EOP にポイントする
 
-Office 365 ドメイン構成手順に従って、ドメインの MX レコードを更新し、受信メールが EOP 経由で流れるようにします。 詳細については、「DNS レコードを[管理するときに、Office 365 の dns レコードを作成](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
+Office 365 ドメイン構成手順に従って、ドメインの MX レコードを更新し、受信メールが EOP 経由で流れるようにします。 詳細については、「DNS レコードを[管理するときに、Office 365 の dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
 
 このタスクの検証方法
 

@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: クリックしたときに Teams が安全なリンクにアクセスできるようになります。 1対1のチャット、グループ間、またはチャネル内のチャットを使用しているかどうか、および Office 365 ATP へのサブスクリプションがある場合は、このセーフティ機能を有効にして使用することができます。
-ms.openlocfilehash: 07f20f0adf503e4592d2bd3f3bc9857d08a1e433
-ms.sourcegitcommit: 481fb95d8b80cf2102a9c73b21e7effa79e594e7
+ms.openlocfilehash: d7586dba86c7ec9f43457b5510a1255e06bb6bf9
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43808995"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588278"
 ---
 <!--06/21/2019-->
 
@@ -28,17 +28,17 @@ ms.locfileid: "43808995"
 > [!IMPORTANT]
 > この機能は、2020年2月28日の Microsoft Teams テクノロジ導入プログラム (タップ) にあるお客様向けの**パブリックプレビュー**です。 このメモは、Teams の安全なリンクがより幅広く利用できる場合に記事から削除されます。
 
-Microsoft Teams は、Microsoft のクラウドベースのアプリケーションである仕事を管理するために、既に安全な添付ファイル (Office 365) を使用していますが、これでクリック時に安全なリンクにアクセスできるようになります。 Office 365 ATP へのサブスクリプションがある場合、チャット、グループチャット、チャネル、またはタブを使用しているかどうかにかかわらず、この安全手段を有効にして使用することができます。 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)」を参照してください。
+Microsoft Teams は、Microsoft のクラウドベースのアプリケーションである仕事を管理するために、既に安全な添付ファイル (Office 365) を使用していますが、これでクリック時に安全なリンクにアクセスできるようになります。 Office 365 ATP へのサブスクリプションがある場合、チャット、グループチャット、チャネル、またはタブを使用しているかどうかにかかわらず、この安全手段を有効にして使用することができます。 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
 
-次に、動作のしくみを示します。 
+次に、動作のしくみを示します。
 
 1. Teams アプリケーションを起動すると、Microsoft 365 は、ユーザーが Office 365 ATP を使用している組織に所属しており、ユーザーが Microsoft Teams の保護が有効になっているアクティブな安全リンクポリシーの一部であることを確認します。
 
 2. 上記の条件に該当する場合、Url は、チャット、グループチャット、チャネル、およびそのユーザーのタブでクリックしたときに検証されます。
- 
-## <a name="what-will-users-experience"></a>ユーザーにはどのような状況がありますか? 
 
-保護されたすべてのユーザーには、次のような危険な Url があります。 
+## <a name="what-will-users-experience"></a>ユーザーにはどのような状況がありますか?
+
+保護されたすべてのユーザーには、次のような危険な Url があります。
 
 - リンクが Teams 会話、グループチャット、またはチャネルからクリックされた場合は、既定のブラウザーでページが表示されます。 固定されたタブからリンクがクリックされた場合は、そのページがそのタブ内の Teams GUI に表示され、セキュリティ上の理由から、ブラウザーで開くオプションは無効になります。
 
@@ -51,4 +51,4 @@ Microsoft Teams は、Microsoft のクラウドベースのアプリケーショ
 Teams で、このページの [*戻る*] ボタンをクリックすると、そのページが閉じます (または、ユーザーが空白のページが閉じられる可能性があります)。 ただし、リンクをもう一度クリックすると、このページが表示されるように、サイトの評価が reassessment されます。
 
 > [!NOTE]
-> 一部の Microsoft 365 管理者は、[ブロック] ページで**続行**するかどうかのメッセージを有効にします。 ただし、安全なリンクによってサイトの評価が測定され、不足している場合は、これ以上のクリックスルーを行う必要はありません。 ユーザーが安全対策を省略することはお勧めしません。 続行する前に、この点を考慮に入れてください。 
+> 一部の Microsoft 365 管理者は、[ブロック] ページで**続行**するかどうかのメッセージを有効にします。 ただし、安全なリンクによってサイトの評価が測定され、不足している場合は、これ以上のクリックスルーを行う必要はありません。 ユーザーが安全対策を省略することはお勧めしません。 続行する前に、この点を考慮に入れてください。

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、スパム対策保護についてよく寄せられる質問と回答を参照できます。
-ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c80a4cb93cf0c37ffbdf917e238960dd8fea80
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209645"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588042"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護に関するよく寄せられる質問
 
@@ -137,7 +137,7 @@ Exchange Online のお客様: [Exchange online での監視、レポート、メ
 
   [SPF を設定して、スプーフィングを防止する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [ドメイン FAQ](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [ドメイン FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 - **DKIM で電子メールを署名する場合、relaxed 正規化で署名します。**
 

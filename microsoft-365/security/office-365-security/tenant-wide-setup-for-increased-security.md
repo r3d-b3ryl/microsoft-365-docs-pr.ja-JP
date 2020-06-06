@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: このトピックでは、Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について手順を追って説明します。
-ms.openlocfilehash: 25338e95a638173abeebd3477955ad16c9116712
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043359"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588054"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために Microsoft 365 テナントを構成する
 
@@ -73,7 +73,7 @@ Microsoft 365 セキュリティセンターには、環境を保護する機能
 ||||
 |---|---|---|
 |**領域**|**既定のポリシーが含まれています**|**推奨事項**|
-|**メールフロー** (メールフロールール (トランスポートルールとも呼ばれる)|いいえ|メールフロールールを追加して、ランサムウェアからの保護を促進します。マクロを含む実行可能ファイルの種類と Office ファイルの種類をブロックします。 詳細については、「[メールフロールールを使用して Exchange Online のメッセージの添付ファイルを検査する](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)」を参照してください。 <br/><br/> その他のトピックを参照してください。 <br/>* [ランサムウェアから保護する](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>* [Office 365 でのマルウェアとランサムウェアの保護](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Office 365 でランサムウェア攻撃から回復する](recover-from-ransomware.md) <br/><br/> メールフロールールを作成して、外部ドメインに電子メールを自動的に転送できないようにします。 詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)する」を参照してください。 <br/><br/> 詳細情報: [Exchange Online のメールフロールール (トランスポートルール)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**メールフロー** (メールフロールール (トランスポートルールとも呼ばれる)|いいえ|メールフロールールを追加して、ランサムウェアからの保護を促進します。マクロを含む実行可能ファイルの種類と Office ファイルの種類をブロックします。 詳細については、「[メールフロールールを使用して Exchange Online のメッセージの添付ファイルを検査する](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)」を参照してください。 <br/><br/> その他のトピックを参照してください。 <br/>* [ランサムウェアから保護する](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Office 365 でのマルウェアとランサムウェアの保護](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [Office 365 でランサムウェア攻撃から回復する](recover-from-ransomware.md) <br/><br/> メールフロールールを作成して、外部ドメインに電子メールを自動的に転送できないようにします。 詳細については、「[セキュリティで保護されたスコアでクライアントの外部転送ルールを軽減](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)する」を参照してください。 <br/><br/> 詳細情報: [Exchange Online のメールフロールール (トランスポートルール)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
 |**モダン認証を有効にする**|いいえ|モダン認証は、多要素認証 (MFA) を使用するための前提条件です。 メールを含むクラウドリソースへのアクセスを保護するために、MFA が推奨されています。 <br/><br/> 次のトピックを参照してください。 <br/>* [Exchange Online で先進認証を有効または無効にする](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [Skype for Business Online: 最新認証のためにテナントを有効にする](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> モダン認証は、Office 2016 クライアント、SharePoint Online、および OneDrive for business では既定で有効になっています。 <br/><br/> 詳細情報: [office 2013 および office 2016 クライアントアプリでの先進認証のしくみ](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
@@ -133,7 +133,7 @@ Office 365 Cloud App Security を使用して、リスクを評価し、疑わ�
 
 ![Cloud App Security ダッシュボード](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
-## <a name="additional-resources"></a>追加リソース
+## <a name="additional-resources"></a>その他の技術情報
 
 これらの記事およびガイドは、Microsoft 365 環境をセキュリティ保護するための追加の規範的な情報を提供します。
 

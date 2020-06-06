@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、スタンドアロンの Exchange Online Protection (EOP) で管理者の役割グループレポートを実行する方法について説明します。 このレポートは、管理者が管理者の役割グループに対してメンバーを追加または削除したときにログに記録されます。このレポートには、EOP ごとにログが記録
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350941"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587366"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>スタンドアロン EOP で管理者役割グループ レポートを実行する
 
@@ -74,7 +74,7 @@ Exchange 管理センター (EAC) で管理者の役割グループレポート�
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>スタンドアロンの Exchange Online PowerShell を使用して監査ログエントリを検索する
 
-Exchange Online の PowerShell を使用して、指定した条件に一致する監査ログエントリを検索できます。 検索条件の一覧については、「[管理者監査ログ](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)」を参照してください。 この手順では、**検索-AdminAuditLog**コマンドレットを使用して、Exchange Online PowerShell で検索結果を表示します。 このコマンドレットは、 **New-AdminAuditLogSearch** コマンドレットまたは EAC 監査レポートのレポートで定義されている制限値を超える結果セットを返す必要がある場合に使用できます。
+Exchange Online の PowerShell を使用して、指定した条件に一致する監査ログエントリを検索できます。 検索条件の一覧については、「[検索-AdminAuditLog ログの検索条件](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)」を参照してください。 この手順では、**検索-AdminAuditLog**コマンドレットを使用して、Exchange Online PowerShell で検索結果を表示します。 このコマンドレットは、 **New-AdminAuditLogSearch** コマンドレットまたは EAC 監査レポートのレポートで定義されている制限値を超える結果セットを返す必要がある場合に使用できます。
 
 指定した条件で監査ログを検索するには、次の構文を使用します。
 
@@ -119,7 +119,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 ### <a name="view-details-of-audit-log-entries"></a>監査ログ エントリの詳細を表示する
 
-**Search-AdminAuditLog** コマンドレットを実行すると、「 [管理者監査ログ](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)」の「監査ログの内容」で説明されているフィールドが返されます。コマンドレットによって返されるフィールドのうち、 **CmdletParameters** と **ModifiedProperties** の 2 つのフィールドには、既定では表示できない追加情報が含まれます。
+**検索-Adminauditlog**コマンドレットは、「[監査ログの内容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)」に記載されているフィールドを返します。 コマンドレットによって返されるフィールドのうち、 **CmdletParameters** と **ModifiedProperties** の 2 つのフィールドには、既定では表示できない追加情報が含まれます。
 
 **CmdletParameters** フィールドと **ModifiedProperties** フィールドの内容を表示するには、次の手順を実行します。 または、「 **Exchange Online PowerShell を使用して監査ログエントリを検索し、結果を受信者に送信**する」の手順を使用して、XML ファイルを作成することもできます。
 

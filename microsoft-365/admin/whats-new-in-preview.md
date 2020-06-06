@@ -2,8 +2,8 @@
 title: Microsoft 365 管理センターの新機能
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター-今月追加された機能につ�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401144"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587582"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -43,18 +43,62 @@ ms.locfileid: "44401144"
 > **3月以降の "クラシック" 管理センターの退職**<br><br>
 Microsoft 365 管理センターにサインインすると、毎回新しい管理センターに移動することになります。 そして3月に、従来の管理センターに切り替える機能を無効にし始めました。 現時点では、引き続き切り替えることはできますが、新しい管理センターにはパリティが設定され、それを超えると、すべての組織のスイッチがオフになります。 <br><br> *最終更新日: 2020 年5月11日*
 
-他の Microsoft クラウドサービスの新機能に興味がある場合は、次のことをご検討ください。
+その他の Microsoft クラウドサービスの新機能について知りたい場合は、次のようにします。
 
-- [Exchange Online の新機能](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Microsoft Intune の新機能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Microsoft 365 コンプライアンスセンターの新機能](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Azure Active Directory の新機能](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [Exchange 管理センターの新機能](https://docs.microsoft.com/Exchange/whats-new)
+- [Microsoft Intune の新機能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [Microsoft 365 コンプライアンスセンターの新機能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Microsoft Threat Protection の新機能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office 更新プログラム](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="may-2020"></a>2020 年 5 月
+
+### <a name="new-update-channel-for-office"></a>Office 用の新しい更新プログラムチャネル
+
+5月12時に、Office 用の新しい更新プログラムチャネル (月次エンタープライズチャネル) の可用性が発表されました。 この更新チャネルを使用すると、月の第2火曜日に、毎月1回、新しい Office 機能をユーザーに提供できます。
+
+ユーザーがポータルから Office を自己インストールできるようにする場合は、[毎月エンタープライズチャネル] を選択できます。 これを行うには、Microsoft 365 管理センターにサインインして、[すべての設定を**表示する]**[  > **Settings**  >  **組織設定**  >  **サービス**の  >  **Office ソフトウェアのダウンロード設定**] に移動します。 **月 (月次エンタープライズチャネル)** を選択した場合、Office の新しい自己インストールは毎月エンタープライズチャネルを使用するように構成されます。
+
+月間エンタープライズチャネルのリリースと共に、既存の更新プログラムチャネルの名前も変更しています。 たとえば、月次チャネルは、現在のチャネルに名前が変更されています。 新しい名前は2020年6月9日に有効になります。
+
+詳細については、「 [Microsoft 365 アプリの更新プログラムチャネルの変更点](https://docs.microsoft.com/DeployOffice/update-channels-changes)」を参照してください。
+
+### <a name="new-admin-roles"></a>新しい管理者の役割
+
+Microsoft 365 管理センターに新しい Azure Active Directory 管理者の役割を追加しました。
+
+- ハイブリッド id 管理者の役割は、クラウドのプロビジョニングと認証サービスを管理するためのアクセス許可をユーザーに提供します。
+- ネットワーク管理者の役割によって、ユーザーはネットワークの場所を管理し、Microsoft 365 ソフトウェアのネットワーク insights をサービスアプリとして確認できます。
+- Printer admin 役割は、プリンターとプリンター接続のすべての側面を管理するためのアクセス許可を付与します。
+- プリンター技術者は、これらのユーザーがプリンターを登録および登録解除したり、プリンターの状態を更新したりできるプリンター管理者の役割のサブセットです。
+これらの役割の詳細については、「[管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)て」を参照してください。
+
+### <a name="export-groups-list"></a>グループのエクスポートリスト
+
+管理センターへのアクセス権を持たないユーザーに、グループとその利用状況に関する情報を共有する必要がある、多くの管理者から聞きました。 監査を目的として、グループの一覧を CSV ファイルにエクスポートすることができます。これは、古い PowerShell スクリプトを破棄できることを意味します。 そのためには、[**グループ**] グループに移動して、  >  **Groups**コマンドバーから [**グループのエクスポート**] を選択します。
+
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャセンター
+
+今月は、「 [https://docs.microsoft.com](https://docs.microsoft.com) [microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)」と呼ばれる新しいサイトをリリースしました。これにより、統合された microsoft 365 ソリューションを理解、計画、および実装するために必要な技術ガイダンスがまとめられています。これにより、安全かつ準拠したコラボレーションが実現します。 このセンターでは、次の内容を確認できます。
+
+- 基本的なソリューションガイダンス
+- ワークロードソリューションとシナリオガイダンス
+- ソリューションとアーキテクチャの図 (ポスター!!!)
+- 業界固有のガイダンス
+- エンタープライズアーキテクチャ設計のプリンシパル
+
+### <a name="docs-training-and-videos"></a>ドキュメント、トレーニング、ビデオ
+
+- **Microsoft 365 ビデオシリーズの新機能**: 今月は、teams 管理者とセキュリティ/コンプライアンスセンター、Planner 統合とメッセージセンターとの統合、および Microsoft teams での新しい3x3 ビデオレイアウトの新しいサポート経験について説明します。 [Microsoft 365 の新機能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- [Microsoft 365 管理センターヘルプ](https://docs.microsoft.com/microsoft-365/admin/)ハブページは、必要な情報をすばやく見つけるために更新されました。 また、このページですぐに確認した場合は、重要な更新や変更を通知するカードが追加されています。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
 ### <a name="intune-roles-management"></a>Intune の役割管理
+
+[2020 年 4 月](#april-2020)
 
 ご存知ですが、! 統合された役割の経験に対して2番目の手順を実行し、Microsoft 365 管理センターで Intune の役割を管理できるようになりました。 また、役割を検索したり、役割のアクセス許可を表示したりする機能を利用することもできます。 つまり、Microsoft 365 と Intune の役割を管理するために2つの別個のツールは必要ありません。 Microsoft 365 管理センターにサインインすると、[役割] ページには、Azure AD 用と Intune 用の2つのピボットがあることがわかります。
 
@@ -103,7 +147,7 @@ Teams の使用率が向上したため、管理に役立ついくつかの機�
 - Office 365 グループ (Outlook のグループとも呼ばれます) の電子メールアドレスを編集し、すぐに Microsoft 365 グループとして知らせることができるようになりました。
 - フィードバックを聞き、グループを Microsoft チームに変換できない理由については、より明確なエラーメッセージを追加しています。
 
-### <a name="docs-videos-and-training"></a>ドキュメント、ビデオ、トレーニング
+### <a name="docs-videos-and-training-april"></a>ドキュメント、ビデオ、トレーニング (4 月)
 
 **Microsoft 365 ビデオシリーズの新機能**: 今月の記事では、microsoft Teams のロールアウト方法や、クライアントとパートナーとの接続を維持するためのリモート作業トレーニングリソース、新しい Microsoft 365 Business Voice plan など、リモート作業への小規模なビジネスへの移行を支援するためのヒントとリソースを紹介します。 [Microsoft 365 の新機能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -118,7 +162,7 @@ Teams の使用率が向上したため、管理に役立ついくつかの機�
 
 #### <a name="for-admins-and-business-owners"></a>管理者およびビジネスオーナー向け
 
-- [リモート作業でスモールビジネスを支援する](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [リモート作業でスモールビジネスを支援する](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [リモート小規模ビジネスを実行する](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Microsoft Business Basic にサインアップする](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [2要素サインインの設定](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -143,8 +187,6 @@ Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モ�
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="管理センターの設定をモバイルアプリにマッピングする図。":::
 
-:::image-end:::
-
 ### <a name="improvements-to-the-add-a-group-wizard"></a>グループの追加ウィザードの機能強化
 
 管理者が新しいグループを作成し、それを同時にチームにした場合、Teams を含むライセンスを持たない所有者を割り当てることができます。 そして、いくつかの頭痛がありました。 所有者が Teams のライセンスを持っていることを確認するためにウィザードフローを更新しましたが、グループをチームに切り替えられないようにするオプションが無効になっている場合。
@@ -162,7 +204,7 @@ Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モ�
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       | 
+|Office 365 Business     |    Microsoft 365 Apps for business       |
 |Office 365 ProPlus    |   エンタープライズ向け Microsoft 365 アプリ      |
 
 ### <a name="videos-training-and-docs"></a>ビデオ、トレーニング、ドキュメント
@@ -192,7 +234,7 @@ Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モ�
 - **グループ名で並べ替え**: [**グループ名**] 列を選択することにより、グループの一覧をアルファベット順に並べ替えることができます。
 - **削除された microsoft 365 グループを復元**する: 削除された microsoft 365 グループを復元するために、Exchange 管理センターに移動する必要はありません。 **Microsoft 365 管理センター** \> **グループ**の \> **削除された**グループに移動 \> します (リストからグループを選択) \> **復元グループ**。 グループを [**グループ**] ボックスの一覧に戻し、グループのメール、会話、ノートブック、ファイル、予定表を復元します。
 
-### <a name="videos-training-and-docs"></a>ビデオ、トレーニング、ドキュメント
+### <a name="videos-training-and-docs-february"></a>ビデオ、トレーニング、ドキュメント (2 月)
 
 - **Microsoft 365 ビデオシリーズの新**機能: 今月は、SharePoint Online のカスタム検索機能に重点を置いています。 Office の [新機能] 管理機能により、エンドユーザーは、アプリ内のヘルプウィンドウで特定の機能を表示または非表示にすることができます。また、Yammer の最新のセキュリティとコンプライアンスの更新プログラムを使用できます。 最新のエピソード: [Microsoft 365 の新機能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 

@@ -81,7 +81,7 @@
         - name: テレフォニーソリューション
           items:
             - name: ソリューションを選択する
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 多国籍企業のケーススタディ
               href: null
         - name: Microsoft 365 による SharePoint のファイルの共同作業
@@ -89,7 +89,7 @@
         - name: インテリジェントな SharePoint イントラネットを計画する
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: エンタープライズ向けの OneDrive ガイド
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: セキュリティ
       items:
         - name: 自宅での作業をサポートするためのセキュリティチームの主なタスク
@@ -158,6 +158,8 @@
       href: identity-design-principles.md
     - name: Sail することができるセキュリティの課題
       href: security-design-principles.md
+    - name: ネットワーク上 (クラウドへ)
+      href: networking-design-principles.md
 - name: Microsoft 365 の展開に関するリソース
   items:
     - name: Microsoft 365 を展開する
