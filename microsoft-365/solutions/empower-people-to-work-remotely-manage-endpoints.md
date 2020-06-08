@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160800"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560495"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 3. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
-リモート ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドおよびオンプレミスでデータを安全に保つための最新の作業環境と管理機能を提供します。 
+リモート ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドやオンプレミスでデータを安全に保つための最新の管理機能を提供します。 
 
 エンドポイント マネージャーは、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
 
@@ -34,7 +34,7 @@ ms.locfileid: "44160800"
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune は、組織のデータへのアクセスに使用されるデバイスを管理していない場合にデータを保護できるように設計されています。 Azure AD 条件付きアクセスと組み合わせた Intune アプリ保護ポリシーにより、モバイル デバイス上のデータをきめ細かく制御できます。 Intune では、適切な条件下で適切な人だけが会社のデータにアクセスできるようにする包括的なポリシーを定義し、Office、Outlook、およびその他のモバイル アプリ内でデータを使用する方法を制御することでデータを保護し続けます。
+Intune は、組織のデータへのアクセスに使用されるデバイスを管理していない場合にデータを保護できるように設計されています。 Azure Active Directory (Azure AD) 条件付きアクセスと組み合わせた Intune アプリ保護ポリシーにより、モバイル デバイス上のデータをきめ細かく制御できます。 Intune では、適切な条件下で適切な人だけが会社のデータにアクセスできるようにする包括的なポリシーを定義し、Office、Outlook、およびその他のモバイル アプリ内でデータを使用する方法を制御することでデータを保護し続けます。
 
 詳細については、「[Microsoft Intune の概要](https://docs.microsoft.com/intune/fundamentals/what-is-intune)」をご覧ください。
 
@@ -66,8 +66,10 @@ Windows Autopilot は、ゼロタッチでセルフサービスの Windows 展�
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>エンドポイント管理のための管理技術リソース
 
-- [セキュリティのために管理対象デバイスを登録し、非管理対象デバイスのアプリ設定を活用し、デバイスとアプリのポリシーを使用する](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
-- [モバイル デバイス管理 (MDM) のためにさまざまな種類のデバイスを登録する方法](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+- [リモート ワーカー向けの Windows 10 デバイスの管理についてのビデオ パート 3](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [リモート ワーカー向けの ユーザーのデスクトップとブラウザーの管理についてのビデオ パート 5](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [Microsoft 365 のモビリティ インフラストラクチャを展開する](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [モバイル デバイス管理のためにさまざまな種類のデバイスを登録する方法](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Microsoft Intune についてエンド ユーザーを教育する方法](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-3"></a>手順 3 の結果
