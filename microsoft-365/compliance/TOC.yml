@@ -885,8 +885,6 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: 情報保護
-          href: gdpr-information-protection.md
         - name: データ主体要求
           items:
             - name: データ主体要求
@@ -927,8 +925,12 @@
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
+        - name: 情報保護
+          href: gdpr-information-protection.md
         - name: Microsoft のデータ保護責任者
           href: gdpr-data-protection-officer.md
+        - name: システム生成ログ データをエクスポートする追加の手順
+          href: gdpr-system-generated-log-data.md
 - name: ハイブリッド コンプライアンス機能
   items:
     - name: AD RMS による Exchange Online のメールの暗号化
