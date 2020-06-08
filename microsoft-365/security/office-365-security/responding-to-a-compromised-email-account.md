@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
-ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033832"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588218"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
@@ -86,7 +86,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 > [!WARNING]
 > この時点ではまだ攻撃者がメールボックスへのアクセス権を握っている可能性があるため、意図したユーザーに新しいパスワードを電子メールで送信しないでください。
 
-1. 「[Microsoft 365 Apps for business のパスワードをリセットする](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)」にある、他のユーザーの Microsoft 365 Apps for business パスワードをリセットする手順に従います。
+1. 「[Microsoft 365 Apps for business のパスワードをリセットする](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)」にある、他のユーザーの Microsoft 365 Apps for business パスワードをリセットする手順に従います。
 
 **注**:
 
@@ -97,7 +97,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 - オンプレミス ID が Microsoft 365 とフェデレーションされている場合は、パスワードをオンプレミスで変更してから、侵害を管理者に報告する必要があります。
 
 > [!TIP]
-> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。  MFA の詳細については、[こちら](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)で確認できます。
+> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。  MFA の詳細については、[こちら](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)で確認できます。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>ステップ 2 不審な電子メール転送アドレスを削除する
 
@@ -201,4 +201,4 @@ Microsoft 365 サブスクリプションには、データとユーザーを保
 
 - [米国証券取引委員会 - "フィッシング" 詐欺](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- 迷惑メールを Microsoft および管理者に直接報告する場合に[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- 迷惑メールを Microsoft および管理者に直接報告する場合に[迷惑メール報告アドインを使用する](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
