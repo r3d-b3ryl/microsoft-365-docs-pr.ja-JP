@@ -249,17 +249,19 @@
           href: archiving-third-party-data.md
         - name: Facebook データのアーカイブ (プレビュー)
           href: archive-facebook-data-with-sample-connector.md
-        - name: Twitter データのアーカイブ (プレビュー)
-          href: archive-twitter-data-with-sample-connector.md
-        - name: LinkedIn データのアーカイブ
-          href: archive-linkedin-data.md
-        - name: Instant Bloomberg データのアーカイブ
-          href: archive-instant-bloomberg-data.md
         - name: 人事データのインポート (プレビュー)
           href: import-hr-data.md
-        - name: パートナーと共同作業でサード パーティのデータをアーカイブする
+        - name: Instant Bloomberg データのアーカイブ
+          href: archive-instant-bloomberg-data.md
+        - name: LinkedIn データのアーカイブ
+          href: archive-linkedin-data.md
+        - name: Twitter データのアーカイブ (プレビュー)
+          href: archive-twitter-data-with-sample-connector.md
+        - name: パートナーと共同作業して、サード パーティのデータをアーカイブする
           href: work-with-partner-to-archive-third-party-data.md
-    - name: データを格納する
+        - name: サード パーティ データを検索する
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: メールボックス データの保存
       items:
         - name: アーカイブ メールボックスの有効化
           href: enable-archive-mailboxes.md
@@ -388,8 +390,6 @@
               href: bulk-edit-content-searches.md
             - name: ID リストの検索用の CSV ファイルを準備する
               href: csv-file-for-an-id-list-content-search.md
-            - name: サード パーティのデータを検索する
-              href: use-content-search-to-search-third-party-data-that-was-imported.md
             - name: 検索クエリでエラーを確認する
               href: check-your-content-search-query-for-errors.md
             - name: 電子情報開示に関する一般的な問題のトラブルシューティング
