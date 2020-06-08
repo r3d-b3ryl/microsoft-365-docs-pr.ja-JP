@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160740"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560449"
 ---
 # <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>手順 4. リモートワーカー向けの生産性向上アプリとサービスを展開する
 
@@ -40,6 +40,8 @@ ms.locfileid: "44160740"
 Teams を使うことで、チャット、会議、通話、共同作業をすべて 1 つの場所で行えます。 何百万人ものユーザーが毎日 Teams で仕事をこなしています。Teams には、リモート ワークに必要なすべてのものが、チームワーク用のハブにまとめられているのです。 
 
 Teams を使用してリモート ワーカーをサポートする方法については、[こちらの記事](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)をご覧ください。 
+
+リモート ワークでの Teams の使い方に関するガイダンスとデモについては、[Part 1 のビデオ](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)をご覧ください。
 
 ### <a name="chat-and-conversations"></a>チャットと会話
 
@@ -63,25 +65,34 @@ Teams は、デスクトップ、Web、モバイル バージョンの Teams か
 
 リモート ワーカーは、Outlook を使用することにより、メール、予定表、連絡先、タスクなどにいつでもアクセスでき、自分の予定を一元的に管理することができます。 Outlook は、ユーザーが自分に関連する内容を基に、予定どおり作業を遂行したり、1 日の作業に優先順位を付けたりするのに役立ちます。 Outlook を使用すると、添付ファイルを OneDrive から直接共有したり、Teams 会議を計画して参加したり、予定表を表示して共有したり、他のユーザーに代理アクセス権を提供したりできます。 リモート ワーカーは、仕事上の責任と個人的な責任の両方について、次の予定を知り、何に注意が必要かを把握することにより、重要な問題に注意を集中できるようになります。 Outlook は、リモート ワーカーが自分の時間を管理をしたり、ファイルや組織内の人物など、必要な情報を簡単に見つけたりするのに役立ちます。 
 
+組織のメールと、先進認証と条件付きアクセスをサポートするメール クライアントを保護する、推奨される ID とデバイス アクセス ポリシーについては、[こちらの記事](../enterprise/secure-email-recommended-policies.md)を参照してください。
+
 ## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>SharePoint Online と OneDrive を使用した、ファイルの保存と共同作業
 
 リモート ワーカーは、コンテンツの共同作業のために SharePoint Online と OneDrive フォルダーをクラウド内の中心的な場所として使用して、ファイルの保存と共有、共同編集、コミュニケーション、共同作業を行うことができます。 リモート ワーカーは、Web ブラウザー、Teams、Office アプリのどこからでも安全に作業を行うことができます。
+
+SharePoint Online と OneDrive for Business の保護に推奨される ID とデバイス アクセス ポリシーについては、[こちらの記事](../enterprise/sharepoint-file-access-policies.md)を参照してください。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Microsoft 365 アプリを使用した、コンテンツの作成と共同作業
 
 Microsoft 365 アプリは、従業員がいつでもどこからでもシームレスに共同作業できる、エンタープライズ向けの最も生産的かつ安全な Office 環境です。 リモート ワーカーは、1 つのドキュメントに対して複数のユーザーと同時に共同作業したり、リアル タイムで編集や変更を確認したり、ノート PC、PC、モバイル デバイスで他のユーザーと共有編集したりできます。
 
+社内環境で Microsoft 365 Apps の計画、展開、管理を行うには、[こちらの記事](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)を参照してください。
+
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>生産性向上アプリとサービスに関する管理技術リソース
 
 - [Microsoft Teams を使用してリモート ワーカーをサポートする](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [リモートワーカー向けの Teams についてのパート 1 ビデオ](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
 - [Teams Customer Success Kit のダウンロード](https://www.microsoft.com/download/details.aspx?id=54244)
 - [導入を推進するためのツール](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Microsoft Teams の変更管理戦略を作成する](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
 - [3 層の保護を使ってチームを構成する](configure-teams-three-tiers-protection.md)
 
+## <a name="user-training-resources-for-productivity-apps-and-services"></a>生産性向上アプリとサービスに関するユーザー トレーニング リソース
+
 - [Office と Office 365 についてユーザーをトレーニングする](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
 - [Web 用 Office を使用](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-[手順 5](empower-people-to-work-remotely-communication-venues.md) を続行して、新型コロナ ウイルス感染症の危機の中、固有の要件に対応できる追加のコミュニケーションの場を作成します。
+[手順 5](empower-people-to-work-remotely-communication-venues.md) を続行して、リモート ワーカーの役に立つ追加のコミュニケーションの場を作成します。
