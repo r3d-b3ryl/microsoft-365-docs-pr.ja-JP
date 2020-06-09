@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceFileEvents テーブル
 description: 高度な検索スキーマの DeviceFileEvents テーブルにあるファイル関連イベントについて説明します。
-keywords: 高度な検索、脅威の探し、サイバーの脅威の検出、microsoft の脅威の防止、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、filecreationevents、DeviceFileEvents、files、path、hash、sha1、sha256、md5
+keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、filecreationevents、DeviceFileEvents、files、path、hash、sha1、sha256、md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,21 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07569b93244bd420fe5961e20e6951ea84ae47d7
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 4b815afbe8e3ca1f7967d13f6482b90f7c64e362
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235036"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617164"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
 **適用対象:**
 - Microsoft Threat Protection
 
-
-
-`DeviceFileEvents` [高度な](advanced-hunting-overview.md)検索スキーマの表には、ファイルの作成、変更、およびその他のファイルシステムイベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+`DeviceFileEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、ファイルの作成、変更、およびその他のファイルシステムイベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -42,10 +40,10 @@ ms.locfileid: "42235036"
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
 | `FileName` | string | 記録されたアクションが適用されたファイルの名前 |
-| `FolderPath` | 文字列型 | 記録されたアクションが適用されたファイルを含むフォルダ |
+| `FolderPath` | string | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 通常、このフィールドは入力されません。使用可能な場合は SHA1 列を使用します。 |
-| `MD5` | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
+| `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
 | `FileOriginUrl` | string | ファイルのダウンロード元の URL |
 | `FileOriginReferrerUrl` | string | ダウンロードしたファイルにリンクする web ページの URL |
 | `FileOriginIP` | string | ファイルのダウンロード元の IP アドレス |
@@ -54,7 +52,8 @@ ms.locfileid: "42235036"
 | `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
 | `InitiatingProcessMD5` | string | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
 | `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
-| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
+| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージファイル) の256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `InitiatingProcessFolderPath` | 文字列型 | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
 | `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスを実行するために使用されるコマンドライン |
@@ -64,6 +63,13 @@ ms.locfileid: "42235036"
 | `InitiatingProcessParentId` | int | イベントを担当するプロセスを発生させる親プロセスのプロセス ID (PID) |
 | `InitiatingProcessParentFileName` | string | イベントを処理するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
+| `RequestProtocol` | string | ネットワークプロトコル (該当する場合) は、アクティビティの開始に使用されます。 Unknown、Local、SMB、または NFS |
+| `ShareName` | string | ファイルを含む共有フォルダの名前 |
+| `RequestSourceIP` | string | アクティビティを開始したリモートデバイスの IPv4 または IPv6 アドレス |
+| `RequestSourcePort` | string | アクティビティを開始したリモートデバイスの送信元ポート |
+| `RequestAccountName` | string | アクティビティをリモートで開始するために使用されるアカウントのユーザー名 |
+| `RequestAccountDomain` | string | アクティビティをリモートで開始するために使用されるアカウントのドメイン |
+| `RequestAccountSid` | string | アクティビティをリモートで開始するために使用されるアカウントのセキュリティ識別子 (SID) |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
 | `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
 | `SensitivityLabel` | string | 情報保護のためにメール、ファイル、その他のコンテンツに適用されるラベル |

@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、安全なリンクを使用して組織をフィッシングやその他の攻撃から保護する方法について説明します。
-ms.openlocfilehash: f71ff8d625c6c365f39fd581f3483c8a0384d817
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587546"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616768"
 ---
 # <a name="atp-safe-links"></a>ATP の安全なリンク機能
 
@@ -69,7 +69,7 @@ ATP の安全なリンクポリシーが確立されると、全体管理者、�
 |---------|---------|
 |グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター (<https://aad.portal.azure.com>)|
-|Exchange Online 組織の管理|Exchange 管理センター (<https://outlook.office365.com/ecp>) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照してください)|
+|Exchange Online 組織の管理|Exchange 管理センター (<https://outlook.office365.com/ecp>) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
 
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>ATP の安全なリンク保護が適切であることを確認する方法
 

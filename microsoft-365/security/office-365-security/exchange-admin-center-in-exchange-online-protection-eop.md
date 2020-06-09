@@ -1,5 +1,5 @@
 ---
-title: スタンドアロン EOP の Exchange 管理センター
+title: スタンドアロン EOP の Exchange 管理者センター
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,14 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: スタンドアロン Exchange Online Protection (EOP) の web 管理インターフェイスについて説明します。
-ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209729"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617000"
 ---
-# <a name="exchange-admin-center-in-standalone-eop"></a>スタンドアロン EOP の Exchange 管理センター
+# <a name="exchange-admin-center-in-standalone-eop"></a>スタンドアロン EOP の Exchange 管理者センター
 
 Exchange 管理センター (EAC) は、スタンドアロンの Exchange Online Protection (EOP) 用の web ベースの管理コンソールです。
 
@@ -70,7 +70,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 - **メールフロー**: メールフロールール (トランスポートルールとも呼ばれます)、承認済みドメイン、コネクタ、および [メッセージ追跡の実行] に移動できる場所を管理します。
 
-- **ハイブリッド**:[ハイブリッド構成ウィザード](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)を実行して、 [Exchange Online の PowerShell モジュール](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)をインストールすることができます。
+- **ハイブリッド**:[ハイブリッド構成ウィザード](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)を実行して、 [Exchange Online の PowerShell モジュール](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)をインストールすることができます。
 
 ### <a name="tabs"></a>タブ
 

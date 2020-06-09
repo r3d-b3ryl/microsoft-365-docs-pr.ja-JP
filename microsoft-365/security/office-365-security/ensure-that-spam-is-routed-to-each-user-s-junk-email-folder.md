@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection ハイブリッド環境でスパムをユーザーの迷惑メールフォルダーにルーティングする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351965"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617056"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>ハイブリッド環境で迷惑メールフォルダーにスパムを配信するようにスタンドアロン EOP を構成する
 
@@ -60,7 +60,7 @@ ms.locfileid: "44351965"
 
   - メールボックスで迷惑メールルールが有効になっているかどうか ( _enabled_パラメーターの値は、Exchange 管理シェルの[set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)コマンドレットでは $true。 これは、配信後にメッセージを [迷惑メール] フォルダーに実際に移動する迷惑メールルールです。 既定では、メールボックスで迷惑メールルールが有効になっています。 詳細については、「[Configure Exchange antispam settings on mailboxes](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)」を参照してください。
   
-- Exchange サーバー上の EAC を開くには、「exchange [server の exchange 管理センター](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)」を参照してください。 Exchange 管理シェルを開くには、「」を参照してください [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) 。
+- Exchange サーバー上の EAC を開くには、「exchange [server の exchange 管理センター](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)」を参照してください。 Exchange 管理シェルを開くには、「」を参照してください [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) 。
 
 - オンプレミスの Exchange のメールフロールールの詳細については、以下のトピックを参照してください。
 
@@ -78,7 +78,7 @@ ms.locfileid: "44351965"
 
 3. **[新しいルール]** のページが開いたら、以下の設定を行ってください:
 
-   - [**名前**]: わかりやすい一意のルールの名前を入力します。 以下に例を示します。
+   - [**名前**]: わかりやすい一意のルールの名前を入力します。 例:
 
      - EOP SFV: SPM から SCL 6
 
@@ -112,7 +112,7 @@ ms.locfileid: "44351965"
 New-TransportRule -Name "<RuleName>" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "<EOPSpamFilteringVerdict>" -SetSCL 6
 ```
 
-以下に例を示します。
+例:
 
 ```Powershell
 New-TransportRule -Name "EOP SFV:SPM to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
@@ -134,7 +134,7 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
 
 - EAC で、[**メールフロー**ルール] に移動し、 \> **Rules**ルールを選択して**Edit**から、[edit ![ edit] アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) て設定を確認します。
 
-- Exchange 管理シェルで、RuleName を \< \> メールフロールールの名前に置き換え、次のコマンドを使用して設定を確認します。
+- Exchange 管理シェルで、を \<RuleName\> メールフロールールの名前に置き換え、次のコマンドを使用して設定を確認します。
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

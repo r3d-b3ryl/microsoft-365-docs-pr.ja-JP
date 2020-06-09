@@ -14,12 +14,12 @@ ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 ms.custom:
 - seo-marvel-apr2020
 description: Exchange Online Protection (EOP) のクラウドホスト型電子メールフィルターサービスに関してよく寄せられる質問への回答を取得します。
-ms.openlocfilehash: 02aa7175e95cf706ed13268035953400af2485a7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0908fd5cf3a799f5a253122efac2b4d56d80ee76
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206664"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617032"
 ---
 # <a name="eop-general-faq"></a>EOP の一般的な FAQ
 
@@ -89,4 +89,4 @@ EOP を構成するには、グローバル管理者、または Exchange 会社
 
 ## <a name="does-eop-support-powershell"></a>EOP は PowerShell をサポートしていますか?
 
-はい、完全な EOP 機能は PowerShell で利用できます。 Exchange online のメールボックスを使用する組織の Exchange Online PowerShell。スタンドアロンの EOP 組織のスタンドアロン EOP PowerShell。 詳細については、「 [Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)および[Exchange online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)」を参照してください。
+はい、完全な EOP 機能は PowerShell で利用できます。 Exchange online のメールボックスを使用する組織の Exchange Online PowerShell。スタンドアロンの EOP 組織のスタンドアロン EOP PowerShell。 詳細については、「 [Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)および[Exchange online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)」を参照してください。

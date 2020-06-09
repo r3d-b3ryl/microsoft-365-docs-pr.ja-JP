@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの AlertEvidence テーブル
 description: 高度な検索スキーマの AlertEvidence テーブルで生成される警告に関連付けられているファイル、ネットワークアドレス、ユーザー、またはデバイスの情報について説明します。
-keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、alert、entities、エビデンス、file、IP address、デバイス、コンピューター、ユーザー、アカウント
+keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AlertInfo、alert、entities、エビデンス、file、IP address、device、machine、user、account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a58d1e5db2ea8689d4909e6e9c47b08a6e94d34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929241"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617088"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
 **適用対象:**
 - Microsoft Threat Protection
 
-`AlertEvidence` [高度な](advanced-hunting-overview.md)検索スキーマの表には、さまざまなエンティティ (ファイル、IP アドレス、url、ユーザー、またはデバイス) に関する情報が含まれています。この情報には、Microsoft Defender ATP、Office 365 ATP、microsoft Cloud App SECURITY、および Azure ATP からのアラートに関連付けられています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+`AlertEvidence`[高度な](advanced-hunting-overview.md)検索スキーマの表には、さまざまなエンティティ (ファイル、IP アドレス、url、ユーザー、またはデバイス) に関する情報が含まれています。この情報には、microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からのアラートに関連付けられています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -40,7 +40,7 @@ ms.locfileid: "42929241"
 | `EntityType` | string | オブジェクトの種類 (ファイル、プロセス、デバイス、ユーザーなど) |
 | `EvidenceRole` | string | エンティティが通知に関与する方法。そのエンティティが影響を受けているか、または単に関連しているかを示します。 |
 | `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
-| `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドには通常、値が設定されていません。使用可能な場合は SHA1 列を使用します。 |
+| `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemoteUrl` | string | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `AccountName` | 文字列 | アカウントのユーザー名 |

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、exchange online Protection (EOP) 組織で使用可能なフィッシング対策ポリシーを作成、変更、および削除する方法について説明します。 Exchange Online のメールボックスは使用できません。
-ms.openlocfilehash: b5ec72365c9b7446f4b6a4c32d96a89ca57efbe4
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352059"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616700"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でフィッシング対策ポリシーを構成する
 
@@ -69,7 +69,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **フィッシング対策**ページに直接移動するには、を使用 <https://protection.office.com/antiphishing> します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
   スタンドアロン EOP PowerShell では、フィッシング対策ポリシーを管理することはできません。
 
@@ -103,7 +103,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
 4. 表示される [**適用先**] ページで、ポリシーが適用される内部の受信者を特定します。
 
-   各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合は、OR ロジック (たとえば、_\<recipient1\>_ or _\<recipient2\>_) を使用します。 別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ and _\<member of group 1\>_) を使用します。
+   各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件または例外の複数の値を使用するか、ロジック (たとえば、 _\<recipient1\>_ または) を使用 _\<recipient2\>_ します。 さまざまな条件や例外、およびロジック (およびなど) を使用し _\<recipient1\>_ _\<member of group 1\>_ ます。
 
    [**条件の追加] を**クリックします。 表示されるドロップダウンで、[適用済みの**場合**] の条件を選択します。
 
@@ -141,11 +141,11 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
 2. 変更するカスタムのフィッシング対策ポリシーを選択します。 既に選択されている場合は、選択を解除してもう一度選択します。
 
-3. [**ポリシー \< 名 \> の編集**フライアウトが表示されます。 いずれかのセクションで [**編集**] をクリックすると、そのセクションの設定にアクセスできます。
+3. [**ポリシー \<name\> の編集**のポップアップを表示します。 いずれかのセクションで [**編集**] をクリックすると、そのセクションの設定にアクセスできます。
 
    - 次の手順は、セクションが表示される順序で示されていますが、連続していません (任意の順序でセクションを選択して変更することができます)。
 
-   - セクションで [**編集**] をクリックすると、使用可能な設定がウィザード形式で表示されますが、ページ内を任意の順序で移動できます。または、[任意の**Close**ページに**保存** **] を**クリックして ![ 、[ ](../../media/scc-remove-icon.png) **ポリシー \< 名 \> の編集**] ページに戻ることができます。
+   - セクションで [**編集**] をクリックすると、使用可能な設定がウィザード形式で表示されますが、ページ内を任意の順序で移動できます。または、[すべての**Close**ページに**保存** **] を**クリックして ![ 、[ ](../../media/scc-remove-icon.png) **ポリシー \<name\> の編集**] ページに戻ることができます。
 
 4. **ポリシー設定**: [**編集**] をクリックして、前のセクションで[ポリシーを作成](#use-the-security--compliance-center-to-create-anti-phishing-policies)したときに使用したものと同じ設定を変更します。
 
@@ -184,7 +184,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
    完了したら、[任意のページに**保存**] をクリックします。
 
-6. [**ポリシー \< 名 \> の編集**] ページに戻り、設定を確認してから、[**閉じる**] をクリックします。
+6. [**ポリシー \<Name\> の編集**] ページに戻り、設定を確認してから、[**閉じる**] をクリックします。
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>セキュリティ & コンプライアンスセンターを使用して既定のフィッシング対策ポリシーを変更する
 
@@ -234,7 +234,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
 2. 変更するポリシーを選択します。 既に選択されている場合は、選択を解除してもう一度選択します。
 
-3. [**ポリシー \< 名 \> の編集**フライアウトが表示されます。
+3. [**ポリシー \<name\> の編集**のポップアップを表示します。
 
    - **優先度**の値が**0**のカスタムのフィッシング対策ポリシーでは、[**優先度を下げる**] ボタンのみ使用できます。
 
@@ -256,7 +256,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
    - [**既定のポリシー** ] をクリックして、既定のフィッシング対策ポリシーを表示します。
 
-3. [**ポリシー \< 名 \> の編集**] ポップアップが表示され、設定と値を確認できます。
+3. [**ポリシー \<name\> の編集**] ポップアップが表示され、設定と値を表示できます。
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>セキュリティ & コンプライアンスセンターを使用して、フィッシング対策ポリシーを削除する
 
@@ -264,7 +264,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
 2. 削除するポリシーを選択します。 既に選択されている場合は、選択を解除してもう一度選択します。
 
-3. 表示される [**ポリシー \< 名 \> の編集**] ポップアップで、[**ポリシーの削除**] をクリックし、表示される警告ダイアログボックスで [**はい**] をクリックします。
+3. 表示される [**ポリシー \<name\> の編集**] ポップアップで、[**ポリシーの削除**] をクリックし、表示される警告ダイアログボックスで [**はい**] をクリックします。
 
 既定のポリシーは削除できません。
 
@@ -288,7 +288,7 @@ PowerShell でのフィッシング対策ポリシーの作成は、次の2つ�
 
   - 新しいポリシーを無効として_Enabled_作成し `$false` ます ( **new-antiphishrule**コマンドレットでは有効)。
 
-  - **New-antiphishrule**コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _ \< 番号 \> _)。
+  - New-antiphishrule コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _\<Number\>_ )。 **New-AntiPhishRule**
 
 - PowerShell で作成した新しいフィッシングポリシーは、ポリシーをフィッシングルールに割り当てるまで、セキュリティ & コンプライアンスセンターに表示されません。
 
@@ -507,7 +507,7 @@ ATP のフィッシング対策ポリシーが正常に構成されたことを�
   - リストからポリシーを選択し、フライアウトの詳細を表示します。
   - [**既定のポリシー** ] をクリックして、フライアウトの詳細を表示します。
 
-- Exchange Online PowerShell で、 \< name を \> ポリシーまたはルールの名前に置き換えて、次のコマンドを実行し、設定を確認します。
+- Exchange Online PowerShell で、を \<Name\> ポリシーまたはルールの名前に置き換えて、次のコマンドを実行し、設定を確認します。
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

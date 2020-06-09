@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Office 365 ATP の安全なドキュメントについて説明します。
-ms.openlocfilehash: f792b1acbdacfd29db5bbbf377f41396c35e3f17
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40554365cf41ac37b9f9b8399b10dc8f6ab81f42
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350953"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617288"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection の安全なドキュメント
 
@@ -32,7 +32,7 @@ ms.locfileid: "44350953"
 
 - 現在、安全なドキュメントはパブリックプレビューで利用できます。 office [Insider program](https://insider.office.com/en-us/join)の一部であるユーザーが office バージョン 2002 (12527.20092) 以上の ' 月次 Channel (対象指定) ' を使用することができます。 この機能は既定でオフになっており、セキュリティ管理者が有効にする必要があります。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - このトピックの手順を実行するには、あらかじめアクセス許可を割り当てる必要があります。 安全なドキュメントを有効にして構成するには、組織の**管理**役割グループまたは**セキュリティ管理者**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 

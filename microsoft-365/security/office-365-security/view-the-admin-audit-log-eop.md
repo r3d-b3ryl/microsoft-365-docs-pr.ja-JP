@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 管理者は、管理者監査ログをスタンドアロンの Exchange Online Protection (EOP) で表示および検索する方法を学習できます。
-ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351863"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613326"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>管理者監査ログをスタンドアロン EOP で表示する
 
@@ -32,7 +32,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 - Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、ComplianceManagement、組織の管理 (グローバル管理者)、および SecurityAdministrator の役割グループに既定で割り当てられている監査ログまたは表示専用の監査ログの役割が必要です。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、[役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
 
@@ -73,7 +73,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 - _Parameters_パラメーターは、_コマンドレット_パラメーターと共にのみ使用できます。
 
-- _Objectid_パラメーターは、コマンドレットによって変更されたオブジェクトによって結果をフィルター処理します。 有効な値は、監査ログでのオブジェクトの表現方法によって異なります。 以下に例を示します。
+- _Objectid_パラメーターは、コマンドレットによって変更されたオブジェクトによって結果をフィルター処理します。 有効な値は、監査ログでのオブジェクトの表現方法によって異なります。 例:
 
   - 名前
   - 標準識別名 (たとえば、contoso.com/Users/Akia Al-Al-zuhairi)
@@ -86,7 +86,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
   - UTC の日付/時刻値を指定する場合の例: 2016-05-06 14:30:00z
 
-  - 日付/時刻値を、ローカルタイムゾーンの日付/時刻を UTC に変換する数式として指定します (例:) `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` 。 詳細については、「[Get-Date](https://go.microsoft.com/fwlink/p/?LinkID=113313)」を参照してください。
+  - 日付/時刻値を、ローカルタイムゾーンの日付/時刻を UTC に変換する数式として指定します (例:) `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` 。 詳細については、「[Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date)」を参照してください。
 
 - コマンドレットは、既定で最大1000個のログエントリを返します。 _Resultsize_パラメーターを使用して、最大25万のログエントリを指定します。 または、値を使用して `Unlimited` すべてのエントリを返します。
 

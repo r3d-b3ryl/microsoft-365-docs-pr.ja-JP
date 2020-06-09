@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Azure Information Protection の保護機能に展開される変更点について説明します。
-ms.openlocfilehash: 0f08163602ae34689c8e68bbc0c02e072ce89696
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c2f386e17d3c0da74f360a7b1262a2f32dbf92cc
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035606"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616736"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>既存のテナントにロールアウトする Azure Information Protection の保護機能
 
@@ -75,7 +75,7 @@ ADSI Edit を使用して、Active Directory で発行された SCP があるか
 
 今後の変更を中止するには、次の手順を実行します。
 
-1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. 次の構文を使用して、Set-IRMConfiguration コマンドレットを実行します。
 

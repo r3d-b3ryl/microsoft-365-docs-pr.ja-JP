@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
-ms.openlocfilehash: fc9a13ce7a2fc8782ed260ce0ce64aec456a4d51
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 820f635e679be9d579ba94fc3288830dc6996a0e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213426"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617044"
 ---
 # <a name="eop-features"></a>EOP の機能
 
@@ -78,7 +78,7 @@ ms.locfileid: "44213426"
 |Web ベースの管理|管理者は、60言語でサポートされている Exchange 管理センター (EAC) でサービスを管理できます。 詳細については、「 [Exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。|
 |ディレクトリ同期|ディレクトリ同期は、Azure Active Directory 同期ツール から利用できます。詳細については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」セクションを参照してください。  |
 |ディレクトリ ベースのエッジ ブロック (DBEB)|DBEB 機能では、サービス ネットワーク境界で無効な受信者宛てのメッセージを拒否することができます。 DBEB を使用すると、管理者はメールが有効な受信者を Microsoft 365 に追加し、Microsoft 365 に存在しない電子メールアドレスに送信されたすべてのメッセージをブロックすることができます。 DBEB の構成の詳細については、「[ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。|
-|PowerShell|完全な EOP 機能は、スタンドアロンの EOP PowerShell で利用できます。 詳細については、「 [Exchange Online Protection の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)」を参照してください。|
+|PowerShell|完全な EOP 機能は、スタンドアロンの EOP PowerShell で利用できます。 詳細については、「 [Exchange Online Protection の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)」を参照してください。|
 |**レポート作成とログ記録**||
 |メッセージ追跡|管理者は、サービスを通過するときに電子メールメッセージをフォローできます。 対象の電子メールメッセージがサービスによって受信、拒否、延期、または配信されたかどうかを判断できます。 したがって、効率良くユーザーの質問に回答したり、メール フローの問題をトラブルシューティングしたり、ポリシーの変更を検証したり、テクニカル サポートに支援を求める必要性を減らしたりできます。 詳細については、「[セキュリティ/コンプライアンス センターでのメッセージ追跡](message-trace-scc.md)」 を参照してください。|
 |Web ベースのレポート|セキュリティ & コンプライアンスセンターのメール保護レポートは、メッセージングデータを提供します。 たとえば、検出されたスパムとマルウェアの量や、メールフロールールが一致した頻度を監視できます。 これらの対話式レポートを使用すると、概要データに関する視覚的なレポートを素早く取得し、過去 90 日間の各メッセージの詳細を確認できます。 詳細については、「[メール保護レポートを使用してマルウェア、スパム、ルールの検出に関するデータを表示する](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)」を参照してください。|

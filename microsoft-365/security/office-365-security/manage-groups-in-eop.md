@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Standalone Exchange Online Protection (EOP) 組織内の管理者は、Exchange 管理センター (EAC) とスタンドアロン Exchange Online Protection (EOP) PowerShell で、配布グループとメールが有効なセキュリティグループを作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352193"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616504"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
@@ -38,7 +38,7 @@ Exchange Online メールボックスを使用しないスタンドアロンの 
 
 - Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - スタンドアロンの EOP PowerShell でグループを管理する場合、調整が発生する可能性があります。 このトピックの PowerShell の手順では、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。
 
@@ -141,7 +141,7 @@ Exchange Online メールボックスを使用しないスタンドアロンの 
 Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-グループメンバーの一覧を取得するには、 \< groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。
+グループメンバーの一覧を取得するには、を \<GroupIdentity\> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。
 
 ```powershell
 Get-DistributionGroupMember -Identity <GroupIdentity>
@@ -231,13 +231,13 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- \<Groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して設定を確認します。
+- を \<GroupIdentity\> グループの名前、エイリアス、または電子メールアドレスに置き換え、次のコマンドを実行して設定を確認します。
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- グループメンバーを表示するには、 \< groupidentity を \> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。
+- グループメンバーを表示するには、を \<GroupIdentity\> グループの名前、エイリアス、または電子メールアドレスに置き換えて、次のコマンドを実行します。
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

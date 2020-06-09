@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベストプラクティス推奨事項に従って、成功を設定し、一般的な構成エラーを回避します。
-ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587535"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616724"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>スタンドアロン EOP を構成するためのベストプラクティス
 
@@ -53,7 +53,7 @@ Exchange Online Protection (EOP) のベストプラクティス推奨事項に�
 |[メールボックスへの POP 接続](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|無効|無効||
 |認証済みの SMTP 送信|無効|無効|POP3 および IMAP4 クライアントが電子メールを送信するには、認証済みのクライアント SMTP 送信 (クライアント SMTP 発信または SMTP 認証とも呼ばれます) が必要です。|
 |メールボックスへの EWS 接続|無効|無効||
-|[PowerShell 接続](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|無効|無効|メールボックスユーザーまたはメールユーザー ([取得ユーザー](https://docs.microsoft.com/powershell/module/exchange/get-user)のコマンドレットによって返されるユーザーオブジェクト) に対して使用できます。|
+|[PowerShell 接続](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|無効|無効|メールボックスユーザーまたはメールユーザー ([取得ユーザー](https://docs.microsoft.com/powershell/module/exchange/get-user)のコマンドレットによって返されるユーザーオブジェクト) に対して使用できます。|
 |[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、可能な場合には送信者をホワイトリストする|はい|はい||
 |[ディレクトリベースのエッジブロック (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|有効|有効|ドメインの種類 = 権限あり|
 |[すべての管理者アカウントに対して多要素認証をセットアップする](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|有効|有効||

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターで利用できるスマートレポートと洞察、およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588158"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617310"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>セキュリティ/コンプライアンスセンターのスマートレポートと洞察 &amp;
 
@@ -54,11 +54,6 @@ ms.locfileid: "44588158"
 |**監査ログ** <br/> Microsoft 365 のアクティビティ、ユーザー、ファイルまたはフォルダーなどに関する情報  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[**検索 &amp; 調査**] [ \> **監査ログの検索**] に移動します。 <br/> |[セキュリティ/コンプライアンスセンターで監査ログを検索する &amp;](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**コンプライアンスレポート** <br/> FedRAMP のレポート、ガバナンス、リスクとコンプライアンス レポート、ISO 情報セキュリティ管理レポート、Service Organization Controls の監査レポートと評価レポート  <br/> |セキュリティ &amp; /コンプライアンスセンターで、[**サービスアシュアランス** \> **コンプライアンスレポート**] に移動します。 <br/> |[Office 365 のセキュリティコンプライアンスを計画する &amp;](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>次の手順
-
-レポートと分析の概要を理解できたので、次の手順では、レポートをカスタマイズ、管理、およびダウンロードする方法について説明します。 次の記事をご覧ください。
-  
-
     
 ## <a name="related-topics"></a>関連項目
 

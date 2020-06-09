@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588266"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613386"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
@@ -173,7 +173,7 @@ ms.locfileid: "44588266"
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange サーバー上のメールボックスの手順
 
-1. リモート PowerShell を使用して Exchange サーバーに接続します。 [「リモート PowerShell を使用して Exchange サーバーに接続する](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)」の手順を実行します。
+1. リモート PowerShell を使用して Exchange サーバーに接続します。 [「リモート PowerShell を使用して Exchange サーバーに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)」の手順を実行します。
 
 2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除する場合は、コマンドレットの[削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)を使用します。
 
@@ -181,7 +181,7 @@ ms.locfileid: "44588266"
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online のメールボックスの手順
 
-1. [「PowerShell を使用して Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」の手順を実行します。
+1. [「PowerShell を使用して Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」の手順を実行します。
 
 2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除するには、 [[受信トレイルールの削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)] コマンドレットを使用します。
 

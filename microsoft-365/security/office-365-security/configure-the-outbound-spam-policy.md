@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の送信スパムポリシーを表示、作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352001"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616580"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパムフィルターを構成する
 
@@ -77,7 +77,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 送信スパムポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 送信スパムポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
@@ -178,7 +178,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 6. 要する[**適用先**] セクションを展開して、ポリシーが適用される内部送信者を特定します。
 
-    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件または例外の複数の値を使用するか、ロジック (たとえば、 _ \< sender1 \> _または_ \< sender2 \> _) を使用します。 さまざまな条件や例外、およびロジック ( _ \< sender1 \> _ 、 _ \< グループ \> 1 のメンバー_など) を使用します。
+    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件または例外の複数の値を使用するか、ロジック (たとえば、 _\<sender1\>_ または) を使用 _\<sender2\>_ します。 さまざまな条件や例外、およびロジック (およびなど) を使用し _\<sender1\>_ _\<member of group 1\>_ ます。
 
     使用可能なすべての条件を表示するには、**[条件の追加]** を 3 回クリックするのが最も簡単です。 構成しない条件を削除するには、![[削除] ボタン](../../media/scc-remove-icon.png)をクリックします。
 
@@ -286,7 +286,7 @@ PowerShell で送信スパムポリシーを作成するには、2つの手順�
 
   - 新しいポリシーを無効として_Enabled_作成し `$false` ます ( **HostedOutboundSpamFilterRule**コマンドレットでは有効)。
 
-  - **HostedOutboundSpamFilterRule**コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _ \< 番号 \> _)。
+  - HostedOutboundSpamFilterRule コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _\<Number\>_ )。 **New-HostedOutboundSpamFilterRule**
 
 - PowerShell で作成した新しい送信スパムフィルターポリシーは、そのポリシーをスパムフィルタールールに割り当てるまで、セキュリティ & コンプライアンスセンターに表示されません。
 

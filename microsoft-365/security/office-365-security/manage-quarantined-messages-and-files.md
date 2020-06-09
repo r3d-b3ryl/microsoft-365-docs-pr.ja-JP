@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Office 365 Advanced Threat Protection (Office 365 ATP) を使用している組織内の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを管理することもできます。
-ms.openlocfilehash: 521268d291c73cc94e8be87f1f2896a17c623678
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bf5b532b3830333fb42e2371d48e37991385e5f4
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352422"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616824"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP で管理者として検疫済みメッセージおよびファイルを管理する
 
@@ -39,7 +39,7 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 
 - セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com> へ移動します。 検疫ページを直接開くには、<https://protection.office.com/quarantine> にアクセスします。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - 管理者として検疫を管理するには、事前にアクセス許可を割り当てる必要があります。アクセス許可は、セキュリティ & コンプライアンスセンターの**検疫**役割によって制御されます。 既定では、この役割はセキュリティ & コンプライアンスセンターの [**組織の管理**(グローバル管理者)]、[**検疫管理**者]、および [**セキュリティ管理者**] 役割グループに割り当てられます。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
@@ -121,7 +121,7 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 
    - **[メッセージ ID]**: メッセージのグローバル一意識別子。
 
-     たとえば、[メッセージ追跡](message-trace-scc.md)を使用して、組織内のユーザーに送信されたメッセージを検索したときに、メッセージが配信される代わりに検疫されたことを判断したとします。 山かっこ () が含まれる可能性がある完全なメッセージ ID 値を含めるようにしてください \< \> 。 例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
+     たとえば、[メッセージ追跡](message-trace-scc.md)を使用して、組織内のユーザーに送信されたメッセージを検索したときに、メッセージが配信される代わりに検疫されたことを判断したとします。 山かっこ () が含まれる可能性がある完全なメッセージ ID 値を含めるようにしてください \<\> 。 例: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **[送信者のメール アドレス]**: 単一の送信者のメール アドレス。
 

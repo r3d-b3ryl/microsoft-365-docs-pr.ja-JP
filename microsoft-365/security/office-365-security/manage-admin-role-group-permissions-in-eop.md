@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 管理者は、exchange Online Protection の Exchange 管理センター (EAC) でアクセス許可を割り当てる、または削除する方法を学習できます。
-ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352337"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616516"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>スタンドアロン EOP で役割グループを管理する
 
@@ -29,7 +29,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 - Exchange 管理センター (EAC) を開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- スタンドアロン EOP PowerShell を開くには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- スタンドアロン EOP PowerShell を開くには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、役割管理役割が必要です。これは、既定では、組織の管理 (グローバル管理者) 役割グループに割り当てられています。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、[役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
 
@@ -240,7 +240,7 @@ Remove-RoleGroup -Identity "Training Administrators"
 
 - EAC で、[**アクセス許可** \> **管理者の役割**] に移動し、役割グループが表示されている (または一覧に表示されていない) ことを確認します。 役割グループを選択して、詳細ウィンドウで設定を確認するか **、[編集** ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) て設定を確認します。
 
-- Exchange Online PowerShell で、役割 \< グループ名を \> 役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) ことを確認し、設定を確認します。
+- Exchange Online PowerShell で、を \<Role Group Name\> 役割グループの名前に置き換え、次のコマンドを実行して役割グループが存在する (または存在しない) ことを確認し、設定を確認します。
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

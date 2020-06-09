@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、メールフロールール (トランスポートルール) を使用して、Exchange Online Protection (EOP) で大量メール (灰色のメール) を識別し、フィルター処理する方法を学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa2c13aed1fd7f9c34872d05693f88577bbbc9c5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 860c9a1af2cb560c4fd966b303501686a1cbfea7
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352398"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613314"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>メール フロー ルールを使用して EOP でバルク メールをフィルタリングする
 
@@ -41,7 +41,7 @@ Exchange online または exchange online メールボックスを使用しな�
 
 - Exchange Online で EAC を開くには、「exchange [online の exchange 管理センター](https://docs.microsoft.com/Exchange/exchange-admin-center)」を参照してください。 スタンドアロン EOP で EAC を開くには、「 [Exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - Exchange Online およびスタンドアロン EOP のメールフロールールの詳細については、以下のトピックを参照してください。
 
@@ -148,7 +148,7 @@ New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWor
 
 - EAC で、[**メールフロー** \> **ルール**] に移動し \> 、 \> [**編集** ![ ] 編集アイコンをクリックして ](../../media/ITPro-EAC-EditIcon.png) 設定を確認します。
 
-- PowerShell で、 \< Rule name を \> ルールの名前に置き換え、次のコマンドを実行して設定を確認します。
+- PowerShell で、を \<Rule Name\> ルールの名前に置き換え、次のコマンドを実行して設定を確認します。
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List

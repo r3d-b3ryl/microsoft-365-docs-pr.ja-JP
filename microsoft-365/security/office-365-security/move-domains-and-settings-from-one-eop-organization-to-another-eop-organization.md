@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、ドメインと設定を1つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) から別の組織に移動する方法について説明します。
-ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588194"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617452"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>ドメインと設定を EOP 組織から別の EOP 組織に移動する
 
@@ -59,7 +59,7 @@ ms.locfileid: "44588194"
   > [!NOTE]
   > メールフロールールコレクションのエクスポートとインポートに対するコマンドレットのサポートは、現時点では EOP Premium サブスクリプションプランではサポートされていません。
 
-すべての設定を収集する最も簡単な方法は、PowerShell を使用することです。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+すべての設定を収集する最も簡単な方法は、PowerShell を使用することです。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 次に、すべての設定を収集し、それらを .xml ファイルにエクスポートし、そのファイルを移動先のテナントにインポートします。一般に、各設定の **Get** コマンドレットの出力を **Export-Clixml** コマンドレットにパイプ処理することにより、設定を .xml ファイルに保存できます。この後のコード例に示すとおりです。
 

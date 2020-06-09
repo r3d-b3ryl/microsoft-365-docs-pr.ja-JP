@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235046"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617176"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235046"
 
 
 
-[高度な](advanced-hunting-overview.md)検索スキーマの`DeviceEvents`その他のデバイスイベントまたはテーブルには、さまざまなイベントの種類に関する情報が含まれています。これには、Windows Defender ウイルス対策や exploit protection などのセキュリティコントロールによってトリガーされるイベントが含まれます。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+高度な検索スキーマのその他のデバイスイベントまたはテーブルには `DeviceEvents` 、さまざまなイベントの種類に関する情報が含まれています。これには、Windows Defender ウイルス対策や exploit protection などのセキュリティコントロールによってトリガーされるイベントが含まれます。 [advanced hunting](advanced-hunting-overview.md) このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -43,10 +43,10 @@ ms.locfileid: "42235046"
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
 | `FileName` | string | 記録されたアクションが適用されたファイルの名前 |
-| `FolderPath` | 文字列型 | 記録されたアクションが適用されたファイルを含むフォルダ |
+| `FolderPath` | string | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
-| `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 通常、このフィールドは入力されません。使用可能な場合は SHA1 列を使用します。 |
-| `MD5` | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
+| `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
@@ -68,8 +68,8 @@ ms.locfileid: "42235046"
 | `FileOriginIP` | string | ファイルのダウンロード元の IP アドレス |
 | `AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
 | `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
-| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージファイル) の256。 通常、このフィールドは入力されません。使用可能な場合は SHA1 列を使用します。 |
-| `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
+| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージファイル) の256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `InitiatingProcessFileName` | 文字列型 | イベントを開始したプロセスの名前 |
 | `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
 | `InitiatingProcessCommandLine` | string | イベントを開始したプロセスを実行するために使用されるコマンドライン |

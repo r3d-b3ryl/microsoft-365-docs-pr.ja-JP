@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: ディレクトリ同期、EAC、PowerShell を使用してユーザーを管理するなど、Exchange Online Protection (EOP) でメールユーザーを管理する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352434"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616836"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>スタンドアロン EOP でメール ユーザーを管理する
 
@@ -35,7 +35,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 - Exchange 管理センター (EAC) を開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - EOP PowerShell でメールユーザーを作成するときに、調整が発生することがあります。 また、EOP PowerShell コマンドレットはバッチ処理方法を使用して、コマンドの結果が表示されるまでに数分の伝達遅延が発生するようになります。
 
@@ -100,7 +100,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 [**連絡先の情報**] タブを使用して、ユーザーの連絡先情報を表示または変更します。 このページの情報がアドレス帳に表示されます。
 
-- **所在**
+- **Street**
 - **市区町村**
 - **都道府県**
 - **郵便番号**
@@ -139,7 +139,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-特定のメールユーザーについての詳細情報を表示するには、 \< mailuseridentity を \> メールユーザーの名前、エイリアス、またはアカウント名に置き換えて、次のコマンドを実行します。
+特定のメールユーザーについての詳細情報を表示するには、を \<MailUserIdentity\> メールユーザーの名前、エイリアス、またはアカウント名に置き換えて、次のコマンドを実行します。
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -209,7 +209,7 @@ $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>スタンドアロンの EOP PowerShell を使用してメールユーザーを削除する
 
-スタンドアロン EOP PowerShell でメールユーザーを削除するには、 \< mailuseridentity を \> メールユーザーの名前、エイリアス、またはアカウント名に置き換えて、次のコマンドを実行します。
+スタンドアロン EOP PowerShell でメールユーザーを削除するには、 \<MailUserIdentity\> メールユーザーの名前、エイリアス、またはアカウント名に置き換えて、次のコマンドを実行します。
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
@@ -235,7 +235,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- \<Mailuseridentity を \> メールユーザーの名前、エイリアス、またはアカウント名に置き換え、次のコマンドを実行して設定を確認します。
+- を \<MailUserIdentity\> メールユーザーの名前、エイリアス、またはアカウント名に置き換え、次のコマンドを実行して設定を確認します。
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List

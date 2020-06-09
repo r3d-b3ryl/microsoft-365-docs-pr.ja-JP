@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
+ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432606"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604312"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -195,6 +195,35 @@ Microsoft 365 コンプライアンスセンターで機密ラベルを作成ま
 - Irm をサポートしていないドキュメントをユーザーがアップロードできないようにする追加の IRM ライブラリ設定を有効にしている場合は、これらの設定が適用されます。
 
 この動作を使用すると、すべての Office および PDF ファイルがダウンロードされた場合でも、ラベル付けされていない場合でも、そのアクセスが許可されないことが保証されます。 ただし、アップロードされたファイルには、新しい機能のメリットはありません。
+
+## <a name="search-for-documents-by-sensitivity-label"></a>ドキュメントを機密ラベルで検索する
+
+管理プロパティの情報保護**ラボ**を使用して、特定の機密ラベルが設定されている SharePoint または OneDrive 内のすべてのドキュメントを検索します。 次の構文を使用します。`InformationProtectionLabelId:<GUID>`
+
+たとえば、"Confidential" というラベルが付けられていて、そのラベルの GUID が "8faca7b8-8d20-48a3-8ea2-0f96310a848e" のすべてのドキュメントを検索するには、検索ボックスに次のように入力します。
+
+`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
+
+機密ラベルの Guid を取得するには、次[のコマンドレットを使用します](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps)。
+    
+1. まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
+    
+    たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. その後、次のコマンドを実行します。
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
+
+管理プロパティの使用の詳細については、「 [SharePoint で検索スキーマを管理](https://docs.microsoft.com/sharepoint/manage-search-schema)する」を参照してください。
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>SharePoint と OneDrive の機密ラベルを無効にする方法 (オプトアウト)
 

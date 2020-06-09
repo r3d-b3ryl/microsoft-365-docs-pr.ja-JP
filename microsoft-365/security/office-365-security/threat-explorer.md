@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: セキュリティ&amp;コンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、効果的かつ効率的に脅威を調査して対応する方法について説明します。
+description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036754"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613446"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -36,7 +36,7 @@ ms.locfileid: "44036754"
 
 エクスプローラー (リアルタイム検出) を使用すると、強力なレポートが得られます。これにより、セキュリティ運用チームは脅威を調査して効果的かつ効率的に対処することができます。 このレポートは次のようになります。
 
-![[脅威管理\>エクスプローラー] に移動します。](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![[脅威管理エクスプローラー] に移動します。 \>](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 このレポートでは、次のことができます。
 
@@ -103,13 +103,13 @@ ms.locfileid: "44036754"
 
 また、ネットワークメッセージ ID とそのクリック Verdict の両方を表示するために、URL クリックのレポートを Microsoft Excel にエクスポートできるようになりました。これにより、URL のクリック時のトラフィックが簡単になることを理解することができます。 そのしくみは次のとおりです。 Office 365 のクイック起動での脅威管理の開始で、次のチェーンをクリックします。
 
-**エクスプローラー** \> **ビュー** \>フィッシング\> [**トップの url または url** \> **] をクリックします。いずれかのレコードをクリックして url のポップアップを開く** **Clicks**
+**エクスプローラー** \>**フィッシング** \> の表示**クリック** \>**上位の url または url の先頭クリック** \>**任意のレコードをクリックして URL フライアウトを開く**
 
 一覧の URL をクリックすると、フライアウトパネルに新しい [エクスポート] ボタンが表示されます。 このボタンを使用して、レポートを容易にするために、データを Excel スプレッドシートに移動します。
 
 リアルタイムの検出レポートでは、次のように同じ場所にアクセスできます。
 
-**エクスプローラー** \> **のリアルタイム検出** \> **ビューフィッシング** \> **URLs** \>のトップの url**または上部** \> **のクリック [url] ポップアップ** \>を開くには、[**クリック] タブに移動します。**
+**エクスプローラー** \>**リアルタイムの検出** \>**フィッシング** \> の表示**Url** \>**トップの url またはクリック** \>**任意のレコードをクリックして URL フライアウト** \> を開く[**クリック] タブに移動します。**
 
 > [!TIP]
 > ネットワークメッセージ ID エクスプローラーまたは関連するサードパーティ製のツールでネットワークメッセージ ID を使用して検索したときに、[クリック戻る] を特定のメールにマップします。 ネットワークのメッセージ ID を検索すると、クリックの結果に関連付けられた特定の電子メールが管理者に付与されます。 エクスポートが行われると、ネットワークメッセージ ID の相関 id があるため、より迅速かつ強力な分析が可能になります。
@@ -120,13 +120,13 @@ ms.locfileid: "44036754"
 
 Microsoft 365 テクノロジを使用して、電子メールで検出されたマルウェアを確認するとします。 これを行うには、エクスプローラーの [[電子メール > マルウェア](threat-explorer-views.md#email--malware)] ビュー (またはリアルタイムの検出) を使用します。
 
-1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
+1. セキュリティ & コンプライアンスセンター () で [https://protection.office.com](https://protection.office.com) 、[**脅威管理**  >  **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューで、[**電子メール** > **マルウェア**] を選択します。
+2. [**表示**] メニューで、[**電子メール**  >  **マルウェア**] を選択します。
 
    ![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. [**送信者**] をクリックし、[**基本** > **検出テクノロジ**] を選択します。
+3. [**送信者**] をクリックし、[**基本**  >  **検出テクノロジ**] を選択します。
 
    これで、検出テクノロジがレポートのフィルターとして使用できるようになります。
 
@@ -144,13 +144,13 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 メッセージ内のフィッシング Url を確認し、フィッシングメッセージで Url をクリックするには、Explorer の[電子メール > フィッシング](threat-explorer-views.md#email--phish)ビュー (またはリアルタイムの検出) を使用します。
 
-1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
+1. セキュリティ & コンプライアンスセンター () で [https://protection.office.com](https://protection.office.com) 、[**脅威管理**  >  **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** > **フィッシング**] をクリックします。
+2. [**表示**] メニューの [**電子メール**フィッシング] をクリックし  >  **Phish**ます。
 
    ![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. [**送信者**] をクリックし、[ **url** > ] を選択して、**[verdict] をクリック**します。
+3. [**送信者**] をクリックし、[ **url**] を選択して、  >  **[verdict] をクリック**します。
 
 4. 1つまたは複数のオプション ([**ブロック**されて**ブロック**する] など) を選択し、[**更新**] ボタンをクリックして、そのフィルターを適用するオプションと同じ行にあるものをクリックします。 (ブラウザーウィンドウを更新しないでください)。
 
@@ -175,13 +175,13 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 組織内のユーザーが、 [outlook 用のレポートメッセージアドインと web 上の outlook](enable-the-report-message-add-in.md)を使用して、迷惑メールではなく迷惑メールとして報告した電子メールメッセージを表示したいとします。 これを行うには、エクスプローラー (またはリアルタイムの検出) の[電子メール > 提出](threat-explorer-views.md#email--submissions)の表示] を使用します。
 
-1. セキュリティ & コンプライアンス[https://protection.office.com](https://protection.office.com)センター () で、[**脅威管理** > **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
+1. セキュリティ & コンプライアンスセンター () で [https://protection.office.com](https://protection.office.com) 、[**脅威管理**  >  **エクスプローラー** (または**リアルタイムの検出**)] を選択します。 (この例ではエクスプローラーを使用しています)。
 
-2. [**表示**] メニューの [**電子メール** > の**送信**] を選択します。
+2. [**表示**] メニューの [**電子メール**の送信] を選択し  >  **Submissions**ます。
 
    ![エクスプローラーの [表示] メニュー](../../media/explorer-view-menu-email-user-reported.png)
 
-3. [**送信者**] をクリックし、[**基本** > **レポートの種類**] を選択します。
+3. [**送信者**] をクリックし、[**基本**レポートの種類] を選択し  >  **Report type**ます。
 
 4. オプション (**フィッシング**など) を選択し、[**更新**] ボタンをクリックします。
 
@@ -216,13 +216,13 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 エクスプローラーまたはリアルタイム検出を表示して使用するには、セキュリティ管理者やセキュリティリーダーに付与されている権限など、適切なアクセス許可を持っている必要があります。
 
-- セキュリティ&amp; /コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
+- セキュリティ &amp; /コンプライアンスセンターでは、次の役割のいずれかが割り当てられている必要があります。
 
   - 組織の管理
-  - セキュリティ管理者 (Azure Active Directory 管理センター[https://aad.portal.azure.com](https://aad.portal.azure.com)で割り当て可能)
+  - セキュリティ管理者 (Azure Active Directory 管理センターで割り当て [https://aad.portal.azure.com](https://aad.portal.azure.com) 可能)
   - セキュリティ閲覧者
 
-- Exchange Online の場合は、Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) または PowerShell コマンドレット (「 [Exchange online Powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
+- Exchange Online の場合は、Exchange 管理センター ( [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ) または PowerShell コマンドレット (「 [Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照) のいずれかで、次のいずれかの役割が割り当てられている必要があります。
 
   - 組織の管理
   - 表示限定の組織管理
@@ -231,7 +231,7 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 役割とアクセス許可の詳細については、以下のリソースを参照してください。
 
-- [セキュリティ&amp; /コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
+- [セキュリティ/コンプライアンスセンターのアクセス許可 &amp;](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online の機能アクセス許可](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の相違点

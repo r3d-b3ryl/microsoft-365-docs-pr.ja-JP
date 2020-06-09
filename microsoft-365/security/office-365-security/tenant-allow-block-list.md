@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、セキュリティ & コンプライアンスセンターのテナントの許可/ブロックリストで URL とファイルエントリを構成する方法について説明します。
-ms.openlocfilehash: b3a25458bbde2b3a78cfecc60ccb75fe298013f7
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 0143ee2601a4cb9593c79f8c6c62d1f06914088f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419270"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613422"
 ---
 # <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>テナントの許可/ブロックリストで Url とファイルを管理する
 
@@ -56,7 +56,7 @@ Exchange online または exchange online メールボックスを使用しな�
 
 - 既定では、テナントの許可/ブロックリストのエントリは30日後に期限切れになります。 日付を指定するか、期限切れにならないように設定できます。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 テナントの許可/禁止リストに値を追加したり、削除したりするには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 テナントの許可/禁止リストに対する読み取り専用アクセスの場合は、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
