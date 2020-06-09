@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 の制限されたユーザー ポータルからユーザーを削除する方法についての管理者向けの説明です。 アカウントを侵害していると見なされたユーザーは通常、スパム送信者として、制限されたユーザー ポータルに追加されます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351009"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617364"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Office 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -40,7 +40,7 @@ ms.locfileid: "44351009"
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **制限されたユーザー**のページに直接移動するには <https://protection.office.com/restrictedusers> を使用します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 - これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 制限されたユーザー ポータルからユーザーを削除するには、**組織の管理**または**セキュリティ管理者**役割グループのメンバーである必要があります。 制限されたユーザー ポータルに読み取り専用でアクセスするには、**セキュリティ リーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
 
@@ -96,7 +96,7 @@ ms.locfileid: "44351009"
 Get-BlockedSenderAddress
 ```
 
-特定のユーザーの詳細を表示するには、\<emailaddress\> をユーザーのメール アドレスに置き換えて、次のコマンドを実行します。
+特定のユーザーの詳細を表示するには、\<emailaddress\>をユーザーのメール アドレスに置き換えて、次のコマンドを実行します。
 
 ```powershell
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
