@@ -24,64 +24,69 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービスのパスワードリセットツールを使用してパスワードをリセットする方法について説明します。
-ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431703"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678684"
 ---
-# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="77525-103">ユーザーが自分でパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="77525-103">Let users reset their own passwords</span></span>
+# <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="95d68-103">ユーザーが自分でパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="95d68-103">Let users reset their own passwords</span></span>
 
-<span data-ttu-id="77525-104">パスワードのリセットを求められるユーザーとの間でクラッシュしますか?</span><span class="sxs-lookup"><span data-stu-id="77525-104">Getting crushed with people asking you to reset their passwords?</span></span> <span data-ttu-id="77525-105">Microsoft 365 管理者は、[セルフサービスのパスワードリセットツール](https://go.microsoft.com/fwlink/p/?LinkId=522677)を使用して、ユーザーのパスワードをリセットする必要がないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="77525-105">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="77525-106">作業が少なくてすみます。</span><span class="sxs-lookup"><span data-stu-id="77525-106">Less work for you!</span></span> 
+<span data-ttu-id="95d68-104">パスワードのリセットを求められるユーザーとの間でクラッシュしますか?</span><span class="sxs-lookup"><span data-stu-id="95d68-104">Getting crushed with people asking you to reset their passwords?</span></span> <span data-ttu-id="95d68-105">Microsoft 365 管理者は、[セルフサービスのパスワードリセットツール](https://go.microsoft.com/fwlink/p/?LinkId=522677)を使用して、ユーザーのパスワードをリセットする必要がないようにすることができます。</span><span class="sxs-lookup"><span data-stu-id="95d68-105">As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them.</span></span> <span data-ttu-id="95d68-106">作業が少なくてすみます。</span><span class="sxs-lookup"><span data-stu-id="95d68-106">Less work for you!</span></span> 
   
-<span data-ttu-id="77525-107">以下の点を知っておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="77525-107">Here are a few things you need to know:</span></span>
+<span data-ttu-id="95d68-107">以下の点を知っておく必要があります。</span><span class="sxs-lookup"><span data-stu-id="95d68-107">Here are a few things you need to know:</span></span>
   
-- <span data-ttu-id="77525-108">Microsoft 365 business、エデュケーション、または非営利**団体の有料プランを使用し**て、クラウドユーザーのセルフサービスのパスワードリセットを利用できます。</span><span class="sxs-lookup"><span data-stu-id="77525-108">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="77525-109">Microsoft 365 の試用版では動作しません。</span><span class="sxs-lookup"><span data-stu-id="77525-109">It doesn't work with Microsoft 365 trial.</span></span>
+- <span data-ttu-id="95d68-108">Microsoft 365 business、エデュケーション、または非営利**団体の有料プランを使用し**て、クラウドユーザーのセルフサービスのパスワードリセットを利用できます。</span><span class="sxs-lookup"><span data-stu-id="95d68-108">You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan.</span></span> <span data-ttu-id="95d68-109">Microsoft 365 の試用版では動作しません。</span><span class="sxs-lookup"><span data-stu-id="95d68-109">It doesn't work with Microsoft 365 trial.</span></span>
 
-- <span data-ttu-id="77525-p103">この操作には Azure を使用します。これらの手順を行うときに、自動的に **無料** で Azure にあるこの機能を取得できます。その他の Azure 機能を使用しない場合は、セルフサービスによるパスワード リセットをオンにするために費用はかかりません。</span><span class="sxs-lookup"><span data-stu-id="77525-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span>
+- <span data-ttu-id="95d68-p103">この操作には Azure を使用します。これらの手順を行うときに、自動的に **無料** で Azure にあるこの機能を取得できます。その他の Azure 機能を使用しない場合は、セルフサービスによるパスワード リセットをオンにするために費用はかかりません。</span><span class="sxs-lookup"><span data-stu-id="95d68-p103">It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.</span></span>
 
-- <span data-ttu-id="77525-113">**オンプレミスの Active Directory を使用している場合**は、上の2つのポイントは適用されません。</span><span class="sxs-lookup"><span data-stu-id="77525-113">**If you're using an on-premises Active Directory**, the above two points don't apply.</span></span> <span data-ttu-id="77525-114">代わりに、これを設定できますが、 **AZURE AD Premium への有料サブスクリプションが必要**です。</span><span class="sxs-lookup"><span data-stu-id="77525-114">Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span>
+- <span data-ttu-id="95d68-113">**オンプレミスの Active Directory を使用している場合**は、上の2つのポイントは適用されません。</span><span class="sxs-lookup"><span data-stu-id="95d68-113">**If you're using an on-premises Active Directory**, the above two points don't apply.</span></span> <span data-ttu-id="95d68-114">代わりに、これを設定できますが、 **AZURE AD Premium への有料サブスクリプションが必要**です。</span><span class="sxs-lookup"><span data-stu-id="95d68-114">Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.</span></span>
 
-<span data-ttu-id="77525-115">ユーザーが自分のパスワードをリセットできるようにするための短いビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="77525-115">Watch a short video about letting users reset their own passwords.</span></span> <br><br>
+<span data-ttu-id="95d68-115">ユーザーが自分のパスワードをリセットできるようにするための短いビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95d68-115">Watch a short video about letting users reset their own passwords.</span></span> <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-<span data-ttu-id="77525-116">このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="77525-116">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="95d68-116">このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="95d68-116">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
-## <a name="let-people-reset-their-own-passwords"></a><span data-ttu-id="77525-117">ユーザーが自分のパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="77525-117">Let people reset their own passwords</span></span>
+## <a name="let-people-reset-their-own-passwords"></a><span data-ttu-id="95d68-117">ユーザーが自分のパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="95d68-117">Let people reset their own passwords</span></span>
 
-<span data-ttu-id="77525-118">次の手順を行うと、社内のすべてのユーザーに対してセルフサービスによるパスワードのリセットがオンになります。</span><span class="sxs-lookup"><span data-stu-id="77525-118">These steps turn on self-service password reset for everyone in your business.</span></span>
+<span data-ttu-id="95d68-118">次の手順を行うと、社内のすべてのユーザーに対してセルフサービスによるパスワードのリセットがオンになります。</span><span class="sxs-lookup"><span data-stu-id="95d68-118">These steps turn on self-service password reset for everyone in your business.</span></span>
   
 ::: moniker range="o365-worldwide"
-1. <span data-ttu-id="77525-119">管理センターで、[**設定**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">設定</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="77525-119">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> page.</span></span>
+
+1. <span data-ttu-id="95d68-119"><a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>で、[設定] [ **Settings** > **組織の設定**] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="95d68-119">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="77525-120"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**設定** \> **セキュリティ &amp; プライバシー** ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="77525-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="95d68-120"><a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**設定** \> **セキュリティ &amp; プライバシー** ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="95d68-120">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="77525-121"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**設定**の設定] [ \> **Settings** \> **セキュリティ &amp; プライバシー** ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="77525-121">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
+1. <span data-ttu-id="95d68-121"><a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**設定**の設定] [ \> **Settings** \> **セキュリティ &amp; プライバシー** ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="95d68-121">In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="77525-122">[設定] ページの上部で、[**セキュリティ & プライバシー**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="77525-122">At the top of the Settings page select **Security & Privacy**.</span></span>
+2. <span data-ttu-id="95d68-122">[**組織の設定**] ページの上部で、[**セキュリティ & プライバシー** ] タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="95d68-122">At the top of the **Org settings** page, select the **Security & Privacy** tab.</span></span>
   
-3. <span data-ttu-id="77525-123">[**セルフサービスのパスワードのリセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="77525-123">Select **Self Service Password Reset**.</span></span>
-  
-4. <span data-ttu-id="77525-124">[プロパティ] ページで、[**すべて**] を選択して、会社のすべてのユーザーに対して有効にし、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="77525-124">On the Properties page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
-  
-5. <span data-ttu-id="77525-125">ユーザーがサインインすると、今後、パスワードを再設定するのに役立つ追加の連絡先情報を入力するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="77525-125">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
+3. <span data-ttu-id="95d68-123">[**セルフサービスのパスワードのリセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="95d68-123">Select **Self-service Password Reset**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="77525-126">関連記事</span><span class="sxs-lookup"><span data-stu-id="77525-126">Related articles</span></span>
+4. <span data-ttu-id="95d68-124">[**セルフサービスのパスワードのリセット**] で、[ **Azure portal に移動] を選択して、セルフサービスのパスワードのリセットを有効**にします。</span><span class="sxs-lookup"><span data-stu-id="95d68-124">Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.</span></span>
 
-[<span data-ttu-id="77525-127">組織のパスワード有効期限ポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="77525-127">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
+5. <span data-ttu-id="95d68-125">左側のナビゲーションウィンドウで [**ユーザー**] を選択し、[**ユーザー |[すべてのユーザー** ] ページで、[**パスワードのリセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="95d68-125">In the left navigation pane, select **Users**, and then, on the **Users | All users** page, select **Password reset**.</span></span>
   
-[<span data-ttu-id="77525-128">有効期限が切れないように個別のユーザーのパスワードを設定する</span><span class="sxs-lookup"><span data-stu-id="77525-128">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
+6. <span data-ttu-id="95d68-126">[**プロパティ**] ページで、[**すべて**] を選択して、会社のすべてのユーザーに対して有効にし、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="95d68-126">On the **Properties** page, select **All** to enable it for everyone in your business, and then select **Save**.</span></span>
+  
+7. <span data-ttu-id="95d68-127">ユーザーがサインインすると、今後、パスワードを再設定するのに役立つ追加の連絡先情報を入力するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="95d68-127">When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.</span></span>
 
-[<span data-ttu-id="77525-129">Microsoft 365 Business のトレーニング ビデオ</span><span class="sxs-lookup"><span data-stu-id="77525-129">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+## <a name="related-articles"></a><span data-ttu-id="95d68-128">関連記事</span><span class="sxs-lookup"><span data-stu-id="95d68-128">Related articles</span></span>
+
+[<span data-ttu-id="95d68-129">組織のパスワード有効期限ポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="95d68-129">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
+  
+[<span data-ttu-id="95d68-130">有効期限が切れないように個別のユーザーのパスワードを設定する</span><span class="sxs-lookup"><span data-stu-id="95d68-130">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
+
+[<span data-ttu-id="95d68-131">Microsoft 365 Business のトレーニング ビデオ</span><span class="sxs-lookup"><span data-stu-id="95d68-131">Microsoft 365 Business training videos</span></span>](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
