@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566718"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679134"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -48,11 +48,9 @@ ms.locfileid: "44566718"
 
 脅威管理の概要に表示される情報は、サブスクリプションの内容によって異なります。 次の表では、Office 365 E3 および Office 365 E5 に含まれる情報について説明します。
 
-
-|Office 365 E3 |Office 365 E5 |
+|Office 365 E3|Office 365 E5|
 |---|---|
 |ブロックされるマルウェアメッセージ<br/>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br>|ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある Url|
-
 
 脅威管理の概要ウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するためのアクセス許可を持っている必要があります。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。
 
@@ -79,13 +77,12 @@ ms.locfileid: "44566718"
 
 メトリックは、次の表に示すように計算されます。
 
-|測定基準|計算方法 |
+|測定基準|計算方法|
 |---|---|
 |スキャンされたメッセージ|スキャンされた電子メールメッセージの数を受信者の数で乗算した数|
 |停止した脅威|マルウェアが含まれていると識別された電子メールメッセージの数が受信者数を乗算した回数|
 |[ATP](office-365-atp.md)によるブロック|ATP によってブロックされた電子メールメッセージの数が受信者数に乗じる|
 |配信後に削除|[0 時間の自動削除](zero-hour-auto-purge.md)によって削除されたメッセージの数が、受信者の数で乗算された数|
-
 
 ## <a name="malware"></a>マルウェア
 

@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、Intune デバイスコンプライアンスポリシーを Microsoft 365 Enterprise テスト環境に追加します。
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631587"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679028"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデバイスコンプライアンスポリシー
 
@@ -46,9 +46,9 @@ ms.locfileid: "43631587"
 
 このフェーズでは、Windows 10 デバイスのデバイスコンプライアンスポリシーを作成します。
   
-1. Office 365 ポータル ([https://portal.office.com](https://portal.office.com)) に移動し、全体管理者アカウントを使用して office 365 テストラボサブスクリプションにサインインします。
+1. Office 365 ポータル () に移動 [https://portal.office.com](https://portal.office.com) し、全体管理者アカウントを使用して office 365 テストラボサブスクリプションにサインインします。
     
-2. ブラウザーの新しいタブで、Azure portal を開き[https://portal.azure.com](https://portal.azure.com)ます。
+2. ブラウザーの新しいタブで、Azure portal を開き [https://portal.azure.com](https://portal.azure.com) ます。
 
 3. ブラウザーの [Azure ポータル] タブで、検索ボックスに「 **intune** 」と入力し、[ **intune**] をクリックします。
     
@@ -87,13 +87,13 @@ ms.locfileid: "43631587"
 
 20. [**アプリの追加**] ウィンドウで、[**アプリスイートの設定**] を選択します。
 
-21. [**チャネルの更新**] で、[**半期**] を選択し、[ **OK**] をクリックします。
+21. [**チャネルの更新**] で [**半期エンタープライズ**] を選択し、[ **OK**] をクリックします。
 
 22. [**アプリの追加**] ウィンドウで、[**追加**] をクリックします。
 
 これで、選択したアプリを**windows 10**デバイスコンプライアンスポリシーと、管理された**windows 10 デバイスユーザー**グループのメンバーに対してテストするためのデバイスコンプライアンスポリシーが作成されました。 グループの種類として Office 365 を選択すると、追加のリソースが作成されることに注意してください。 
   
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 テスト環境での[モバイルデバイス管理](m365-enterprise-test-lab-guides.md#mobile-device-management)機能とその他の機能について説明します。
 

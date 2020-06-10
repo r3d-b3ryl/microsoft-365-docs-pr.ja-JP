@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386963"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678650"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
 **Microsoft 365 for business プランを購入し、管理者権限を持っている場合は、管理センターにアクセスでき**ます。 この記事は、お客様を対象としています。
 
-**ユーザーまたは Microsoft 365 ファミリプランを所有している場合は、管理センターはありません。** Microsoft 365 をセットアップするには、「 [microsoft 365 または Office 2019 を PC または Mac にダウンロードしてインストールまたは再](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)インストールする」に移動します。
+**ユーザーの場合、または Microsoft 365 ファミリプランをお持ちの場合は、管理センターがありません。** Microsoft 365 をセットアップするには、「 [microsoft 365 または Office 2019 を PC または Mac にダウンロードしてインストールまたは再](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)インストールする」に移動します。
 
 管理センターを使用して、クラウドでの組織の設定、ユーザーの管理、サブスクリプションの管理などを行います。 この記事では、管理センターへのアクセス方法と使用可能な機能や設定について説明します。
 
@@ -75,7 +75,7 @@ ms.locfileid: "44386963"
   
 |**メニュー**|**目的**|
 |-----|-----|
-|**ホーム** <br/> |これは、新しい管理センターのランディング ページです。 ユーザー、課金、サービスの正常性、およびレポートを管理する場所が表示されます。  <br/> |
+|**ホーム** <br/> |これは、管理センターのランディングページです。 ユーザー、課金、サービスの正常性、およびレポートを管理する場所が表示されます。  <br/> |
 |**Users** <br/> |従業員や学生など、組織内のユーザーを作成して管理します。 アクセス許可レベルを設定することも、そのパスワードをリセットすることもできます。  <br/> |
 |**Groups** <br/> |Microsoft 365 グループ、配布グループ、セキュリティグループ、共有メールボックスなど、組織内のグループを作成して管理します。 グループを[作成](../create-groups/create-groups.md)して[管理](../create-groups/manage-groups.md)する方法については、こちらを参照してください。  <br/> |
 |**リソース** <br/> |SharePoint サイト コレクションなどのリソースを作成して管理します。 サイト コレクションを作成する方法については、[こちら](https://docs.microsoft.com/sharepoint/create-site-collection)を参照してください。  <br/> |

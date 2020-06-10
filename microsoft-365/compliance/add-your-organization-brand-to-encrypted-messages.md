@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織の暗号化された電子メールメッセージおよび暗号化ポータルの内容に、組織のブランド化を適用します。
-ms.openlocfilehash: 8d8e0a75a88cfe5dbcd5b1e6ed2c276e2edef904
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 86636b319151a96e9ec827f85cc943282c30f63c
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351738"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679111"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>暗号化されたメッセージに組織のブランドを追加する
 
@@ -79,16 +79,16 @@ Windows PowerShell を使用して、一度に1つのブランド化テンプレ
 
 |**カスタマイズする暗号化エクスペリエンスの特性**|**使用するコマンド**|
 |:-----|:-----|
-|背景色|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|ロゴ|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> サポートされているファイル形式: .png、.jpg、.bmp、.tiff  <br/> ロゴ ファイルの最適なサイズ:40 KB 未満  <br/> ロゴイメージの最適なサイズ: 170x70 ピクセル。 画像がこれらのサイズを超える場合、ポータルに表示されるように、サービスによってロゴのサイズが変更されます。 サービスによってグラフィックファイル自体が変更されることはありません。 最適な結果を得るには、最適なサイズを使用します。|
-|送信者の名前と電子メールアドレスの横のテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|[メッセージの読み取り] ボタンに表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|[メッセージの読み取り] ボタンの下に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|プライバシーに関する声明のリンクの URL|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PrivacyStatementURL "<URL>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
-|暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
-|このカスタムテンプレートのワンタイムパスコードで認証を有効または無効にするには|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **例:** <br/>このカスタムテンプレートで1回限りのパスコードを有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> このカスタムテンプレートで1回限りのパスコードを無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
-|このカスタムテンプレートの Microsoft、Google、または Yahoo の id による認証を有効または無効にするには|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **例:** <br/>このカスタムテンプレートのソーシャル Id を有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> このカスタムテンプレートのソーシャル Id を無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
+|背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <br/> 背景色の詳細については、このトピックで後述する「[背景色](#background-color-reference)」を参照してください。|
+|ロゴ|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> サポートされているファイル形式: .png、.jpg、.bmp、.tiff  <br/> ロゴ ファイルの最適なサイズ:40 KB 未満  <br/> ロゴイメージの最適なサイズ: 170x70 ピクセル。 画像がこれらのサイズを超える場合、ポータルに表示されるように、サービスによってロゴのサイズが変更されます。 サービスによってグラフィックファイル自体が変更されることはありません。 最適な結果を得るには、最適なサイズを使用します。|
+|送信者の名前と電子メールアドレスの横のテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|[メッセージの読み取り] ボタンに表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|[メッセージの読み取り] ボタンの下に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|プライバシーに関する声明のリンクの URL|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|このカスタムテンプレートのワンタイムパスコードで認証を有効または無効にするには|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **例:** <br/>このカスタムテンプレートで1回限りのパスコードを有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> このカスタムテンプレートで1回限りのパスコードを無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
+|このカスタムテンプレートの Microsoft、Google、または Yahoo の id による認証を有効または無効にするには|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **例:** <br/>このカスタムテンプレートのソーシャル Id を有効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> このカスタムテンプレートのソーシャル Id を無効にするには <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>OME ブランド化テンプレートを作成する (高度なメッセージ暗号化)
 
@@ -101,7 +101,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 2. 新しいテンプレートを作成するには、[新しい-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration)コマンドレットを使用します。
 
    ```powershell
-   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
+   New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
    以下に例を示します。
@@ -122,11 +122,11 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 
    **この暗号化の機能を既定のテキストと画像に戻すには**|**使用するコマンド**|
    |:-----|:-----|
-   |暗号化された電子メール メッセージに付けられる既定のテキスト  <br/> 暗号化メッセージの表示手順の上に表示される既定のテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-   |暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **既定値に戻す例:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-   |ロゴ|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **既定値に戻す例:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-   |背景色|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **既定値に戻す例:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |暗号化された電子メール メッセージに付けられる既定のテキスト  <br/> 暗号化メッセージの表示手順の上に表示される既定のテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **例:**  <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **既定値に戻す例:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+   |ロゴ|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **既定値に戻す例:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+   |背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **既定値に戻す例:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
    |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>カスタムブランド設定テンプレートを削除する (高度なメッセージ暗号化)
@@ -140,7 +140,7 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
 2. 次のように、**削除**コマンドレットを使用します。
 
    ```powershell
-   Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
+   Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
    以下に例を示します。
@@ -184,3 +184,154 @@ Office 365 の高度なメッセージ暗号化を使用している場合は、
    テンプレートの一覧には、既定のテンプレートとオプションのすべてに加えて、Office 365 で使用するために作成したカスタムテンプレートがすべて含まれています。 リストが空の場合は、「office の[365 新しいメッセージの暗号化機能をセットアップ](set-up-new-message-encryption-capabilities.md)する」の説明に従って、Office 365 メッセージの暗号化を新しい機能で設定していることを確認してください。 既定のテンプレートの詳細については、「 [Azure Information Protection 用のテンプレートを構成および管理](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)する」を参照してください。 [**転送**しない] オプションの詳細については、「[メールの転送オプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)を送信しない」を参照してください。 [**暗号化のみ**] オプションの詳細については、「[電子メールの暗号化のみオプション](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)」を参照してください。
 
    別のアクションを指定する場合は、[**アクションの追加**] を選択します。
+
+## <a name="background-color-reference"></a>背景色の参照
+
+背景色に使用できる色の名前は制限されています。 色の名前ではなく、16進コード値 (#RRGGBB) を使用できます。 色の名前に対応する16進コード値を使用することも、カスタムの16進コード値を使用することもできます。 16進コード値は二重引用符で囲んでください (例: `"#f0f8ff"` )。
+
+次の表では、使用可能な背景色の名前と、それに対応する16進コードの値について説明します。
+
+|||
+|---|---|
+|**色の名前**|**色コード**|
+|aliceblue|#f0f8ff|
+|antiquewhite|#faebd7|
+|明るい|#00ffff|
+|アクアマリン|#7fffd4|
+|azure|#f0ffff|
+|ベージュ|#f5f5dc|
+|bisque|#ffe4c4|
+|black|#000000|
+|blanchedalmond|#ffebcd|
+|青|#0000ff|
+|blueviolet|#8a2be2|
+|灰色|#a52a2a|
+|burlywood|#deb887|
+|cadetblue|#5f9ea0|
+|chartreuse|#7fff00|
+|チョコ|#d2691e|
+|coral|#ff7f50|
+|cornflowerblue|#6495ed|
+|cornsilk|#fff8dc|
+|クリムゾン|#dc143c|
+|シアン|#00ffff|
+|darkblue|#00008b|
+|darkcyan|#008b8b|
+|darkgoldenrod|#b8860b|
+|darkgray|#a9a9a9|
+|darkgreen|#006400|
+|darkkhaki|#bdb76b|
+|darkmagenta|#8b008b|
+|darkolivegreen|#556b2f|
+|darkorange|#ff8c00|
+|darkorchid|#9932cc|
+|darkred|#8b0000|
+|darksalmon|#e9967a|
+|darkseagreen|#8fbc8f|
+|darkslateblue|#483d8b|
+|darkslategray|#2f4f4f|
+|darkturquoise|#00ced1|
+|darkviolet|#9400d3|
+|deeppink|#ff1493|
+|deepskyblue|#00bfff|
+|dimgray|#696969|
+|dodgerblue|#1e90ff|
+|焼討ブリック|#b22222|
+|floralwhite|#fffaf0|
+|forestgreen|#228b22|
+|紫色|#ff00ff|
+|gainsboro|#dcdcdc|
+|ghostwhite|#f8f8ff|
+|(金)|#ffd700|
+|ゴールデンロッド|#daa520|
+|灰色|#808080|
+|green|#008000|
+|greenyellow|#adff2f|
+|honeydew|#f0fff0|
+|ホットピンク|#ff69b4|
+|indianred|#cd5c5c|
+|indigo|#4b0082|
+|ivory|#fffff0|
+|カーキ|#f0e68c|
+|ラベンダー|#e6e6fa|
+|lavenderblush|#fff0f5|
+|lawngreen|#7cfc00|
+|lemonchiffon|#fffacd|
+|lightblue|#add8e6|
+|lightcoral|#f08080|
+|ライト水色|#e0ffff|
+|lightgoldenrodyellow|#fafad2|
+|ライトグレー|#d3d3d3|
+|ライトグレー|#d3d3d3|
+|lightgreen|#90ee90|
+|ライトピンク|#ffb6c1|
+|ライトサーモンピンク|#ffa07a|
+|lightseagreen|#20b2aa|
+|lightskyblue|#87cefa|
+|ライト slategray|#778899|
+|ライト・ステップブルー|#b0c4de|
+|ライト黄|#ffffe0|
+|黄緑|#00ff00|
+|limegreen|#32cd32|
+|linen|#faf0e6|
+|赤|#ff00ff|
+|紫|#800000|
+|mediumaquamarine|#66cdaa|
+|mediumblue|#0000cd|
+|mediumorchid|#ba55d3|
+|mediumpurple|#9370db|
+|mediumseagreen|#3cb371|
+|mediumslateblue|#7b68ee|
+|mediumspringgreen|#00fa9a|
+|mediumturquoise|#48d1cc|
+|mediumvioletred|#c71585|
+|midnightblue|#191970|
+|mintcream|#f5fffa|
+|mistyrose|#ffe4e1|
+|cascasin|#ffe4b5|
+|ナビゲーション a・ホワイト|#ffdead|
+|海軍|#000080|
+|oldlace|#fdf5e6|
+|オリーブ|#808000|
+|olivedrab|#6b8e23|
+|orange|#ffa500|
+|orang|#ff4500|
+|オーキッド|#da70d6|
+|中|#eee8aa|
+|男性|#98fb98|
+|(男性) 水色|#afeeee|
+|中|#db7093|
+|papayawhip|#ffefd5|
+|peachpuff|#ffdab9|
+|ペルー|#cd853f|
+|pink|#ffc0cb|
+|プラム|#dda0dd|
+|powderblue|#b0e0e6|
+|purple|#800080|
+|red|#ff0000|
+|rosybrown|#bc8f8f|
+|royalblue|#4169e1|
+|saddlebrown|#8b4513|
+|サーモンピンク|#fa8072|
+|sandybrown|#f4a460|
+|seagreen|
+|seashell|#fff5ee|
+|sienna|#a0522d|
+|シルバー|#c0c0c0|
+|skyblue|#87ceeb|
+|slateblue|#6a5acd|
+|slategray|#708090|
+|溜り|#fffafa|
+|springgreen|#00ff7f|
+|steelblue|#4682b4|
+|tan|#d2b48c|
+|teal|#008080|
+|thistle|#d8bfd8|
+|tomato|#ff6347|
+|水色|#40e0d0|
+|バイオレット|#ee82ee|
+|小麦|#f5deb3|
+|white|#ffffff|
+|ホワイトリスト|#f5f5f5|
+|yellow|#ffff00|
+|yellowgreen|#9acd32|
