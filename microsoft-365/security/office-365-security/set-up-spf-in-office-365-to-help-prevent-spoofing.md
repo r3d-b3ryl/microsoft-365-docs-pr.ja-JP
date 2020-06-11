@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
-ms.openlocfilehash: 9d5d300b7397d719d9ab85139cd27d912627a3ff
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6061cd9ea52f4ed4073f510dcba60fba9b4fd23c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035310"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588078"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -49,7 +49,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
 次の情報を収集します。
 
-- カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records)」をご覧ください。
+- カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)」をご覧ください。
 
 - すべてのオンプレミス メッセージ サーバーの外部 IP アドレス。たとえば、**131.107.2.200** などです。
 
@@ -67,8 +67,8 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
    |2|Exchange Online|共通|include:spf.protection.outlook.com|
    |3|Exchange Online 専用のみ|共通ではない|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
    |4|Office 365 Germany、Microsoft Cloud Germany のみ|共通ではない|include:spf.protection.outlook.de|
-   |5|サード パーティ製の電子メール システム|共通ではない|include:\<domain name\>  <br/> domain name は、サード パーティ製の電子メール システムのドメイン名です。|
-   |6|オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム|共通ではない| 各追加メール システムで次のいずれかを使用します。 <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include:\<_domain name_\>  <br/>  \<_IP address_\> の値は他のメール システムの IP アドレスで、\<_domain name_\> はユーザーのドメインのためにメールを送信する他のメール システムのドメイン名です。|
+   |5|サード パーティ製の電子メール システム|共通ではない|\<domain name\> の内容を含めます。  <br/> domain name は、サード パーティ製の電子メール システムのドメイン名です。|
+   |6|オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム|共通ではない| 各追加メール システムで次のいずれかを使用します。 <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  \<_domain name_\> の内容を含めます。  <br/>  \<_IP address_\> の値は他のメール システムの IP アドレスで、\<_domain name_\> はユーザーのドメインのためにメールを送信する他のメール システムのドメイン名です。|
    |7|いずれかの電子メール システム (必須)|共通。この値で終わるすべての SPF レコード|\<_enforcement rule_\>  <br/> 可能な値はいくつかあります。**-all** を使用することをお勧めします。|
 
 2. まだ行っていない場合は、表の構文を使用して SPF TXT レコードを作成します。
@@ -85,7 +85,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
    Office 365 で既に展開し、カスタム ドメインの SPF TXT レコードをセットアップしている状態で Office 365 Germany に移行する場合は、SPF TXT レコードを更新する必要があります。 これを行うには、**include:spf.protection.outlook.com** を **include.spf.protection.outlook.de** に変更します。
 
-3. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。 ドメインに配置できる SPF TXT レコードは 1 つのみです。 SPF TXT レコードが存在する場合、新しいレコードを追加するのではなく、既存のレコードを更新しなければなりません。 「[Office 365 の DNS レコードを作成する](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」に移動し、DNS ホストのリンクをクリックします。
+3. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。 ドメインに配置できる SPF TXT レコードは 1 つのみです。 SPF TXT レコードが存在する場合、新しいレコードを追加するのではなく、既存のレコードを更新しなければなりません。 「[Office 365 の DNS レコードを作成する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」に移動し、DNS ホストのリンクをクリックします。
 
 4. SPF TXT レコードをテストします。
 

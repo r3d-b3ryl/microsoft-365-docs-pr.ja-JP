@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043329"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579192"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Dynamics 365 データ対象要求
 
@@ -242,12 +242,9 @@ Azure では、ユーザーの組織がネイティブ JSON 形式のデータ�
 |**データは、どのようにしてユーザーに返されますか?**| データは、ユーザー組織の Azure ストレージの場所にエクスポートされます。このデータをユーザーに示す方法または返す方法を決定するのは、ユーザー組織の管理者の役割です。 |
 |**システム生成ログ内のデータはどのように表示されますか?**| JSON 形式のシステム生成ログ レコードの例を次に示します。 <br><br> "DateTime": "2017-04-28T12:09:29-07:00"、 <br> "AppName": "SharePoint"、 <br> "Action": "OpenFile"、 <br> "IP": "154.192.13.131"、 <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> 一部の機能では、セキュリティおよび監査上の理由により、そのような情報の整合性を維持するために、個人情報を含むシステム生成ログのエクスポートや削除ができなくなります。
-
 ### <a name="deleting-system-generated-logs"></a>システム生成ログの削除
 
-アクセス要求を通して取得されたシステム生成ログを削除するには、そのユーザーをサービスから削除して、Azure Active Directory アカウントを完全に削除する必要があります。 ユーザー アカウントを完全に削除すると、元に戻すことはできませんのでご注意ください。 ユーザー アカウントを完全に削除すると、そのユーザーのデータは、ほぼすべての Dynamics 365 サービスのシステム生成ログから 30 日以内に削除されます。
+アクセス要求を通して取得されたシステム生成ログを削除するには、そのユーザーをサービスから削除して、Azure Active Directory アカウントを完全に削除する必要があります。 ユーザーを完全に削除する方法については、Azure データ主体の要求のトピックの「[手順 5: 削除](gdpr-dsr-azure.md#step-5-delete)」セクションを参照してください。 ユーザー アカウントを完全に削除すると、元に戻すことはできませんのでご注意ください。 ユーザーのアカウントを完全に削除すると、ユーザーのデータは、ほぼすべての Dynamics 365 サービスのシステム生成ログから 30 日以内に削除されます。ただし、サービスのセキュリティや安定性を損なう可能性のあるデータは削除されません。
 
 ## <a name="learn-more"></a>詳細情報
 

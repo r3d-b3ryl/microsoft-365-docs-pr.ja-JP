@@ -1,5 +1,5 @@
 ---
-title: GDPR および CCPA に基づくデータ主体の要求
+title: GDPR および CCPA に基づく Office 365 データ対象要求
 description: GDPR および CCPA に基づくユーザーの権利と、DSR への対応で企業が Office 365 を使用してデータを検索および処理する方法について説明します。
 keywords: Office 365、DSR、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: bedce9c71e18749d6a394af17788e07ce79c2820
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221431"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579272"
 ---
-# <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のためのデータ主体の要求
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Office 365 データ対象要求
 
 ## <a name="introduction-to-dsrs"></a>DSR について
 
@@ -1130,7 +1130,7 @@ PowerApps を使用すると、ユーザーは組織の日常業務にとって�
 コンテンツ検索を使用して、Project に関連付けられている SharePoint Online サイトを検索できます (Project の最初の作成時に、関連付ける SharePoint Online サイトを作成するオプションがあります)。コンテンツ検索では、Project Online の実際のプロジェクトに含まれるデータは検索されず、関連付けられたサイトのみが検索されます。 コンテンツ検索により、プロジェクトに関するメタデータ (件名でメンションされたユーザーなど) が検索されますが、これは、DSR に関連するデータが含まれる Project を見つける (およびアクセスする) 際に役立つことがあります。
 
 >[!TIP]
->サイトが Project に関連付けられている組織のサイト コレクションの URL は、**https://\<<ユーザーの組織>\>.sharepoint.com/sites/pwa** です (例: **https://contoso.sharepoint.com/pwa**)。この特定のサイト コレクションは、コンテンツ検索の場所として使用して、検索クエリで Project の名前として使用できます。さらに、IT 管理者は、SharePoint Online 管理センターの [サイト コレクション] ページを使用して、組織の PWA サイト コレクションのリストを取得できます。
+>サイトが Project に関連付けられている組織のサイト コレクションの URL は、**https://\<your org\>.sharepoint.com/sites/pwa** です (例: **https://contoso.sharepoint.com/pwa**)。この特定のサイト コレクションは、コンテンツ検索の場所として使用して、検索クエリで Project の名前として使用できます。さらに、IT 管理者は、SharePoint Online 管理センターの [サイト コレクション] ページを使用して、組織の PWA サイト コレクションのリストを取得できます。
 
 #### <a name="delete"></a>削除
 
@@ -1581,24 +1581,62 @@ Microsoft は、GDPR における「個人データ」の広範な定義の下�
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>システム生成ログのアクセスとエクスポート
 
-「データ移植性の権利」により、データ主体は、別のデータ コントローラーに送信できる電子的な形式 (つまり構造化され、一般使用される、マシン読み取り可能かつ相互運用可能な形式) の個人データのコピーを要求できます。 Azure では、ユーザーの組織がネイティブ JSON 形式のデータを指定の Azure Storage コンテナーにエクスポートできるようにすることでこれをサポートしています。
+テナント管理者は、組織内で、特定のユーザーの Office 365 のサービスとアプリケーションの使用に関連付けられたシステム生成ログにアクセスできる唯一のユーザーです。 エクスポート要求に対して取得されるデータは、コンピューターが読み取り可能な形式で提供され、ユーザーがデータに関連付けられているサービスを認識できるファイルで提供されます。 上記で説明したように、取得されるデータにはサービスのセキュリティまたは安定性を損なう可能性があるデータは含まれません。
+
+システム生成ログにアクセスしてエクスポートするには:
+
+1. Azure ポータルにサインインし、[**すべてのサービス**] を選択します。
+2. フィルターにポリシーを入力し、[**ポリシー**] を選択します。
+3. **[ポリシー]** ブレードで **[ユーザー プライバシー]** を選択し、**[ユーザー要求の管理]** を選択して、**[エクスポート要求の追加]** を選択します。
+4. **[データ エクスポート要求]** に次のように入力します。
+
+    - **ユーザー**。 エクスポートを要求した Azure Active Directory ユーザーの電子メール アドレスを入力します。
+    - **サブスクリプション**。 リソースの使用状況の報告とサービスの請求に使用するアカウントを選択します。 これは、Azure Storage アカウントの場所でもあります。
+    - **ストレージ アカウント**。 Azure Storage (Blob) の場所を選択します。 詳細については、「Microsoft Azure Storage の概要 – Blob ストレージ」の記事を参照してください。
+    - **コンテナー**。 エクスポートされたユーザー プライバシー データの保存場所として新しいコンテナーを作成するか、既存のものを選択します。
+
+5. **[作成]** を選択します。
+
+エクスポート要求は [**保留中**] 状態になります。 レポートの状況は [**ユーザー プライバシー**] > [**概要ブレード**] で確認できます。
 
 >[!IMPORTANT]
->ユーザー データをテナントからエクスポートするには、テナント管理者である必要があります。
+>個人データは複数のシステムから取得される可能性があるので、エクスポート プロセスが完了するまでに 1 か月かかる場合があります。
 
-#### <a name="azure-active-directory"></a>Azure Active Directory
+### <a name="notify-about-exporting-or-deleting-issues"></a>エクスポートまたは削除に関する問題を通知する
 
-顧客データに関して、お客様企業のテナント管理者はポータルと製品エクスペリエンスの両方を利用して、エンド ユーザーに関する特定可能な情報のエクスポート要求を管理することができます。
+Azure portal でデータをエクスポートまたは削除中に問題が発生した場合は、Azure ポータルの [**ヘルプとサポート**] ブレードに移動し、[**サブスクリプションの管理**] > [**他のセキュリティとコンプライアンスの要求**] > [**プライバシー ブレードと GDPR 要求**] の順に新しいチケットを送信します。
 
-#### <a name="service-specific-interfaces"></a>サービス固有のインターフェイス
+>[!NOTE]
+ >Azure ポータルからデータをエクスポートする場合、いくつかのアプリケーションのシステム生成データはエクスポートされません。 これらのアプリケーションのデータをエクスポートするには、「[システム生成ログ データをエクスポートする追加の手順](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data)」をご覧ください。
 
-特定のサービス用の既存のアプリケーション プログラミング インターフェイス (API) またはユーザー インターフェイス (UI) を介して顧客データを直接検出できます。各サービスの参照ドキュメントに詳細が記載され、該当する CRUD (作成、読み取り、更新、削除) 操作について記述しています。
+次に、システム生成ログのアクセスとエクスポートについての概要を示します。
+
+- **Azure ポータルを使用したエクスポートの要求は、要求を完了するまでにどのくらいの時間がかかりますか?**: これにはいくつかの要素が影響します。 多くの場合、1 日か 2 日で完了しますが、最大 30 日間かかる場合があります。
+- **出力はどの形式ですか?**: 出力はコンピューターが読み取り可能なファイル構造 (XML、CSV、JSON など) になります。
+- **Azure ポータルには、誰がアクセスしてシステム生成データに対するアクセス要求を送信できますか?:** Azure ポータルには Office 365 全体管理者がアクセスできます。
+- **エクスポート結果で返されるデータは?**: 結果には、Microsoft が保存するシステム生成ログが含まれます。 エクスポートされたデータは、各種 Microsoft サービス (Office 365、Azure、Dynamics など) 全体にわたります。 結果には、サービスのセキュリティまたは安定性を損なう可能性があるデータは含まれません。
+- **データは、どのようにしてユーザーに返されますか?:** データは、ユーザー組織の Azure Storage の場所にエクスポートされます。このデータをユーザーに表示する方法または返す方法は、ユーザーの組織の管理者が決めます。
+- **システム生成ログ データはどのようになりますか?**: 以下は例です。データは JSON 形式です:
+
+    ```JSON
+    [{
+    "DateTime": "2017-04-28T12:09:29-07:00",
+    "AppName": "SharePoint",
+    "Action": "OpenFile",
+    "IP": "154.192.13.131",
+    "DevicePlatform": "Windows 1.0.1607"
+    }]
+    ```
+
+Microsoft の最も頻繁に使用されるサービスの一部 (Exchange Online、SharePoint Online、Skype for Business、Yammer、Office 365 グループなど) の製品およびサービスの利用状況データは、セキュリティ/コンプライアンス センターで Office 365 監査ログを検索することで取得することもできます。 詳細については、付録 A の「[DSR 調査で Office 365 監査ログの検索ツールを使用する](#use-the-audit-log-search-tool-in-dsr-investigations)」を参照してください。このデータにアクセスするために監査ログを検索するアクセス許可を組織内の別の担当者 (法令遵守責任者など) に割り当てることができるため、監査ログの使用は重要になります。
 
 ### <a name="deleting-system-generated-logs"></a>システム生成ログの削除
 
 アクセス要求によって取得したシステム生成ログを削除するには、サービスからユーザーを削除して、そのユーザーの Azure Active Directory アカウントを完全に削除する必要があります。ユーザーの完全な削除の手順については、このガイドのセクション「[ユーザーの削除](#deleting-a-user)」を参照してください。ユーザー アカウントの完全な削除は、開始後に取り消すことができなくなる点に注してください。
 
-ユーザーのアカウントを完全に削除すると、ユーザーのデータは、ほぼすべての Office 365 サービスのシステム生成ログから 30 日以内に削除されます。ただし、サービスのセキュリティや安定性を損なう可能性のあるデータは削除されません。 これには 1 つ例外があり、Exchange Online ではユーザー アカウントを完全に削除するのに 30 日以上かかります。 Exchange Online コンテンツの重要性と不慮のデータ損失を防止するために、 このシステムは、ユーザー アカウントの完全な削除から最大 60 日間、意図的にデータを保持状態にするように設計されています。 ユーザーの Exchange Online データを 30 日の期間中に完全に削除するには、そのユーザー アカウントを Azure Active Directory で完全に削除し、その後[Microsoft サポート](https://support.microsoft.com/)に連絡して、ユーザーの Exchange Online データをスケジュールされた削除プロセスとは別に手動で削除するように依頼してください。 詳細については、このガイドで前述した「[Exchange Online データの削除](#removing-exchange-online-data)」を参照してください。
+ユーザーのアカウントを完全に削除すると、ユーザーのデータは、ほぼすべての Office 365 サービスのシステム生成ログから 30 日以内に削除されます。ただし、サービスのセキュリティや安定性を損なう可能性のあるデータは削除されません。 
+
+この 30 日間の例外の 1 つは、Exchange Online でのユーザー アカウントの完全な削除に 30 日以上かかることです。 これは、Exchange Online コンテンツの重要性と不慮のデータ損失を防止するためです。 Exchange Online は、ユーザー アカウントの完全な削除から最大 60 日間、意図的にデータを保持状態にするように設計されています。 ユーザーの Exchange Online データを 30 日の期間中に完全に削除するには、そのユーザー アカウントを Azure Active Directory で完全に削除し、その後[Microsoft サポート](https://support.microsoft.com/)に連絡して、ユーザーの Exchange Online データをスケジュールされた削除プロセスとは別に手動で削除するように依頼してください。 詳細については、このガイドで前述した「[Exchange Online データの削除](#removing-exchange-online-data)」を参照してください。
 
 ユーザー アカウントを削除した場合、Yammer と Kaizala でシステム生成されたログは削除されません。これらのアプリケーションからデータを削除するには、次のいずれかを参照してください。
 
@@ -1607,11 +1645,11 @@ Microsoft は、GDPR における「個人データ」の広範な定義の下�
 
 #### <a name="national-clouds"></a>国別クラウド
 
-次に示す国別クラウドでシステム生成ログを削除するには、グローバル IT 管理者が次の操作を実行する必要があります。
+次に示す国別クラウドでシステム生成ログ データをエクスポートするには、グローバル IT 管理者は次の操作を実行する必要があります。
 
-- Office 365 Germany - ユーザー アカウントが完全に削除される場合、システム生成ログも削除されます。 
-- Office 365 US Government - [Office 365 管理ポータル](https://portal.office365.us)から Microsoft サポートにリクエストを送信します。
-- 21Vianet が運営する Office 365 (中国) - Office 365 管理ポータル ([URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage)) から Microsoft サポートにリクエストを送信します。**[Commerce]** に移動し、**[Subscription]** -> **[Privacy]** -> **[GDPR]** を選択し、必要な情報を入力します。
+- **Office 365 ドイツ**: 上記の手順に従ってください。
+- **Office 365 US Government**: [Office 365 管理ポータルに移動](https://portal.office365.us)し、Microsoft サポートにリクエストを送信します。
+- **21Vianet が運営する Office 365 (中国)**: [21Vianet が運営する Office 365 管理ポータルに移動](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage)し、[**商業**] > [**サブスクリプション**] > [**プライバシー**] > [**GDPR**] の順に移動して、必要な情報を入力します。
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>パート 4: DSR に役立つその他のリソース
 
