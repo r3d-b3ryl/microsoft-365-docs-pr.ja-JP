@@ -1,11 +1,11 @@
-- name: Microsoft 365 ソリューションおよびアーキテクチャセンター
+- name: Microsoft 365 ソリューションおよびアーキテクチャ センター
   href: solution-architecture-center.md
   displayName: Home
 - name: ソリューションとアーキテクチャの図
   items:
     - name: Microsoft 365 の生産性図
       href: productivity-illustrations.md
-    - name: Microsoft クラウドアーキテクチャモデル
+    - name: Microsoft クラウド アーキテクチャ モデル
       href: cloud-architecture-models.md
 - name: Microsoft 365 foundation ソリューション
   items:
@@ -15,24 +15,24 @@
       items:
         - name: 概要
           href: empower-people-to-work-remotely.md
-        - name: 手順 1. サインインのセキュリティを強化する
+        - name: 手順 1. サインイン セキュリティを強化する
           href: empower-people-to-work-remotely-secure-sign-in.md
-        - name: 手順 2.  リモートアクセスを提供する
+        - name: 手順 2.  リモート アクセスの提供
           href: empower-people-to-work-remotely-remote-access.md
         - name: 手順 3. エンドポイント管理の展開
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 手順 4. 生産性のアプリとサービスを展開する
+        - name: 手順 4. 生産性アプリとサービスを展開する
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 手順 5.  コミュニケーションの得られを作成する
+        - name: 手順 5.  コミュニケーション会場を作成する
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: ステップ 6. リモートワーカーをトレーニングする
+        - name: '手順 6: リモートワーカーをトレーニングする'
           href: empower-people-to-work-remotely-train-monitor-usage.md
-    - name: Microsoft 365 とのセキュリティで保護されたコラボレーションをセットアップする
+    - name: Microsoft 365 とセキュリティで保護された共同作業を設定する
       href: setup-secure-collaboration-with-teams.md
       items:
-        - name: Microsoft Teams による3層の保護
+        - name: Microsoft Teams の 3 層の保護
           items:
-            - name: 3層の保護の概要
+            - name: 3 層の保護の概要
               href: configure-teams-three-tiers-protection.md
             - name: ベースライン保護を構成する
               href: configure-teams-baseline-protection.md
@@ -50,41 +50,41 @@
               items:
                 - name: ドキュメントでの共同作業
                   href: collaborate-on-documents.md
-                - name: サイトで共同作業をする
+                - name: サイトで共同作業する
                   href: collaborate-in-site.md
-                - name: チームで共同作業をする
+                - name: チームで共同作業を行う
                   href: collaborate-as-team.md
                 - name: B2B エクストラネットを作成する
                   href: b2b-extranet.md
                 - name: 共有を制限する
                   href: microsoft-365-limit-sharing.md
-            - name: セキュリティシナリオ
+            - name: セキュリティ シナリオ
               items:
                 - name: 認証されていない共有
                   href: best-practices-anonymous-sharing.md
                 - name: 偶発的な公開を制限する
                   href: share-limit-accidental-exposure.md
-                - name: ゲスト共有の環境を保護する
+                - name: セキュリティで保護されたゲスト共有環境
                   href: create-secure-guest-sharing-environment.md
             - name: 外部共有リファレンス
               href: microsoft-365-guest-settings.md
-    - name: Microsoft 365 で脅威保護を展開する
+    - name: Microsoft 365 での脅威の保護
       href: deploy-threat-protection.md
-- name: ワークロードのソリューションとシナリオ
+- name: 作業負荷のソリューションとシナリオ
   items:
     - name: 概要
       href: workload-solutions-scenarios-overview.md
-    - name: チームワークとコラボレーション
+    - name: チームワークと共同作業
       items:
         - name: Teams アーキテクチャのポスター
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: テレフォニーソリューション
+        - name: テレフォニー ソリューション
           items:
-            - name: ソリューションを選択する
+            - name: ソリューションの選択
               href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 多国籍企業のケーススタディ
               href: null
-        - name: Microsoft 365 による SharePoint のファイルの共同作業
+        - name: Microsoft 365 での SharePoint のファイルの共同作業
           href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: インテリジェントな SharePoint イントラネットを計画する
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
@@ -92,11 +92,11 @@
           href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: セキュリティ
       items:
-        - name: 自宅での作業をサポートするためのセキュリティチームの主なタスク
+        - name: 自宅での作業をサポートするセキュリティ チームの主なタスク
           href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Microsoft 365 セキュリティ (ビジネス意思決定者向け) (Bdm)
+        - name: Microsoft 365 security for Business 意思決定者 (BDMs)
           href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Microsoft Defender Advanced Threat Protection の展開
+        - name: Microsoft Defender Advanced Threat Protection を展開する
           href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: コンプライアンス
       items:
@@ -110,57 +110,57 @@
               href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: CCPA - その他のよく寄せられる質問
               href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-            - name: GDPR-推奨されるアクションプラン
+            - name: GDPR - 推奨する対策計画
               href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-    - name: Contoso 社のケーススタディ
+    - name: Contoso の事例
       items:
         - name: Contoso 社向けの Microsoft 365 ソリューション
           href: contoso-case-study-solutions.md
-        - name: トップシークレットプロジェクトの分離されたチーム
+        - name: 極秘プロジェクト向けの独立したチーム
           href: contoso-team-for-top-secret-project.md
     - name: テスト ラボ ガイド
       items:
-        - name: ソリューションとシナリオのテストラボガイド
+        - name: ソリューションとシナリオのテスト ラボ ガイド
           href: test-lab-guides-overview-solutions.md
-        - name: セキュリティを分離したチーム
+        - name: セキュリティが分離したチーム
           href: team-security-isolation-dev-test.md
 - name: 業界固有のガイダンス
   items:
     - name: 概要
       href: industry-specific-guidance-overview.md
-    - name: Finance
+    - name: 財務
       items:
         - name: 金融サービスのセキュリティとコンプライアンス
           href: financial-services-secure-collaboration.md
-    - name: エネルギーおよびユーティリティサービス
+    - name: エネルギーおよび公益サービス
       items:
         - name: エネルギーおよび公益サービスのセキュリティとコンプライアンス
           href: energy-secure-collaboration.md
-    - name: 関係
+    - name: 医療
       items:
-        - name: 医療関係向けのTeams
+        - name: 医療関係向けの Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 教育
       items:
-        - name: '教育機関向けの Teams '
+        - name: 教育機関用 Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 政府機関
       items:
-        - name: '政府機関用の Teams '
+        - name: 政府機関用 Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: Teams を使用したリモート自治体ワーカーのサポート
+        - name: Teams を使用して政府機関のリモート ワーカーをサポートする
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-- name: エンタープライズアーキテクチャ設計の原則
+- name: エンタープライズ アーキテクチャの設計原則
   items:
     - name: 概要
       href: design-principles.md
-    - name: Id 以降
+    - name: 識別のその先へ
       href: identity-design-principles.md
-    - name: Sail することができるセキュリティの課題
+    - name: 超えていけるセキュリティの課題
       href: security-design-principles.md
-    - name: ネットワーク上 (クラウドへ)
+    - name: (クラウドへの) ネットワーキング
       href: networking-design-principles.md
-- name: Microsoft 365 の展開に関するリソース
+- name: Microsoft 365 の展開リソース
   items:
-    - name: Microsoft 365 を展開する
+    - name: Microsoft 365 の展開
       href: 'https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise'
