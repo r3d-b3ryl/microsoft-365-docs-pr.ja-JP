@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470674"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678983"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -349,7 +349,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 5. **[現在またはカスタムからアクセス許可を選択]** を選択します。
 
-6. **[現在またはカスタムからアクセス許可を選択]** ウィンドウで、ドロップダウン ボックスを選択し、必要な **[ビューアー]** のアクセス許可を選択し、**[保存]** を選択します。
+6. [**現在またはカスタムからアクセス許可を選択**] ウィンドウで、ドロップダウン ボックスを選択し、必要なアクセス許可を選択して [**保存**] を選択します。
 
 7. **[アクセス許可の割り当て]** ウィンドウに戻り、**[保存]** を選択します。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
+ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952630"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44658351"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -45,10 +45,7 @@ ms.locfileid: "43952630"
     
     構成手順については、このページの「[Office アプリの自動ラベル付けを構成する方法](#how-to-configure-auto-labeling-for-office-apps)」を参照してください。
 
-- **コンテンツが既に保存されている (SharePoint Online または OneDrive for Business で) またはメールで送信された (Exchange Online によって処理される) サービス側のラベル付け**: 自動ラベル付けポリシーを使用します (現在プレビュー中)。 
-    
-    > [!NOTE]
-    > プレビューのお知らせ、「[Microsoft 365 サービスの機密ラベルを使用した自動分類のパブリック プレビューの発表](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961)」を参照してください。
+- **コンテンツが既に保存されている (SharePoint または OneDrive で) またはメールで送信された (Exchange Online によって処理される) サービス側のラベル付け**: 自動ラベル付けポリシーを使用します。 
     
     この方法は、機密ラベルを使用した自動分類と呼ばれます。 また、保存データ (SharePoint および OneDrive のドキュメント) や転送中のデータ (Exchange によって送信または受信されたメール) の自動ラベル付けと呼ばれることもあります。 Exchange の場合、保存されているメール (メールボックス) は含まれません。 
     
@@ -60,6 +57,7 @@ ms.locfileid: "43952630"
     - テナント内で 1 日あたり最大 25,000 個の自動的にラベル付けされたファイル (Word、PowerPoint、または Excel)
     - すべてのポリシー全体で最大 10 のサイト コレクション
     - テナント全体で最大 10 のポリシー
+    - シミュレーション モードの場合、およびラベルが適用される場合、自動ラベル付けポリシーの結果として変更日は変更されません。
 
     Exchange の自動ラベル付けに固有:
     - 手動でのラベル付けや Office アプリを使用した自動ラベル付けとは異なり、Office の添付ファイルも自動ラベル付けポリシーで指定した条件に合わせてスキャンされます。 一致がある場合、メールにはラベルが付けられますが、添付ファイルにはラベルが付けられません。
@@ -76,7 +74,7 @@ ms.locfileid: "43952630"
 |:-----|:-----|:-----|:-----|
 |アプリの依存関係|[はい](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |いいえ |
 |場所による制限|いいえ |はい |
-|条件: トレーニング可能な分類子|はい (制限付きプレビュー) |いいえ |
+|条件: トレーニング可能な分類子|はい |いいえ |
 |条件: メールの共有オプションと追加オプション|いいえ |はい |
 |推奨事項、ポリシーのヒント、ユーザー上書き|はい |いいえ |
 |シミュレーション モード|いいえ |はい |
@@ -104,16 +102,9 @@ ms.locfileid: "43952630"
 
 Windows 用 Office アプリの自動ラベル付けは、Azure Information Protection 統合ラベル付けクライアントでサポートされています。 Office アプリ組み込みのラベル付けでは、この機能が[一部のアプリでプレビュー](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)されています。
 
-Office アプリの自動ラベル付け設定は、[機密ラベルを作成または編集する](create-sensitivity-labels.md)ときに使用できます。
-
-![機密ラベルの自動ラベル付けオプション](../media/sensitivity-labels-auto-labeling-options.png)
-
-コンテンツに特定の種類の機密情報が含まれている場合、機密ラベルをコンテンツに自動的に適用することを選択できます。 機密情報の種類または分類子のリストから選択します。
+Office アプリの自動ラベル付け設定は、[機密ラベルを作成または編集する](create-sensitivity-labels.md)ときに使用できます。 機密情報が検出されるとき、機密ラベルをコンテンツに自動的に適用することを選択できます。 機密情報の種類またはトレーニング可能な分類子のリストから選択します。
 
 ![Office アプリの自動ラベル付けのラベル条件](../media/sensitivity-labels-conditions.png)
-
-> [!NOTE]
-> 現在、**分類子** のオプションは制限付きプレビュー中であり、テナントでこの機能を有効にするには Microsoft にフォームを送信する必要があります。 詳細については、「[Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview (組み込みの分類子を使用した Office アプリの自動ラベル付けの発表 - 制限付きプレビュー)](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)」のブログ投稿を参照してください。
 
 この機密ラベルが自動的に適用されると、ユーザーの Office アプリに通知が表示されます。 例:
 
@@ -131,17 +122,20 @@ Office アプリの自動ラベル付け設定は、[機密ラベルを作成ま
 
 ![インスタンス数と一致精度のオプション](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifiers-for-a-label"></a>ラベルの分類子の構成
+### <a name="configuring-trainable-classifiers-for-a-label"></a>ラベルのトレーニング可能な分類子を構成する
 
-**分類子**のオプションを選択する場合、1 つ以上の組み込み分類子を選択します。
+**トレーニング可能な分類子**のオプションを選択する場合、Microsoft から 1 つ以上のトレーニング可能な組み込み分類子を選択します。 独自のトレーニング可能なカスタム分類子を作成している場合は、以下を選択できます。
 
-![分類子と秘密度ラベルのオプション](../media/sensitivity-labels-classifers.png)
+![トレーニング可能な分類子と秘密度ラベルのオプション](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> 組み込みの [**不快な言葉**] は、誤検知の数が多いため、廃止予定です。 この組み込み分類子を使用しないでください。現在使用している場合は、ビジネス プロセスを移動する必要があります。 代わりに、[**個人を標的にしたハラスメント**]、[**冒涜的表現**]、および [**脅威**] の組み込み分類子を使用することをお勧めします。
 
 これらの分類子の詳細については、「[トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)」を参照してください。
 
-プレビュー期間中は、次のアプリが秘密度ラベルの分類子をサポートします。
+プレビュー期間中は、次のアプリが秘密度ラベルのトレーニング可能な分類子をサポートします。
 
-- [Office Insider](https://office.com/insider) の Windows 用 Microsoft 365 Apps for enterprise デスクトップ アプリ:
+- [Beta チャネル](https://office.com/insider) ([以前の Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)) からの Microsoft 365 Apps for enterprise ([以前の Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows:
     - Word
     - Excel
     - PowerPoint
@@ -176,7 +170,7 @@ Office アプリでの自動ラベル付けと推奨ラベル付けの実装は�
 
 - Word のデスクトップ バージョンにおける推奨ラベルでは、推奨をトリガーした機密コンテンツにフラグが付けられるので、ユーザーが確認して、推奨されている秘密度ラベルを適用しないで機密コンテンツを削除できます。
 
-- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
+- こうしたラベルが Office アプリで適用される方法、スクリーンショット例、機密情報の検出方法について詳しくは、「[Office のファイルとメールに秘密度ラベルを自動的に適用、または推奨する](https://support.office.com/ja-JP/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)」を参照してください。
 
 Azure Information Protection 統合ラベル付けクライアントに関してのみ以下の点が当てはまります。
 
@@ -187,15 +181,17 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 - ドキュメントやメール内の本文、およびヘッダーとフッターに含まれる機密情報が検出されますが、件名やメールの添付ファイルのものは検知されません。
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>SharePoint、OneDrive、Exchange の自動ラベル付けポリシーを構成する方法
-> [!NOTE]
-> 自動ラベル付けポリシーはパブリック プレビュー中であり、変更される可能性があります。
+
+自動ラベル付けポリシーを構成する前に、前提条件を必ずご確認ください。 
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自動ラベル付けポリシーの前提条件
 
-- シミュレーション モードでは、Microsoft 365 の監査を有効にする必要があります。 監査を有効にする必要がある場合、または監査が既に有効になっているかどうかが不明の場合は、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」を参照してください。
+- シミュレーション モード:
+    - Microsoft 365 の監査を有効にする必要があります。 監査を有効にする必要がある場合、または監査が既に有効になっているかどうかが不明の場合は、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」を参照してください。
+    - ソース ビューでファイルの内容を表示する (メールではサポートされていない) 場合は、グローバル管理者でない場合、**コンテンツ エクスプローラーのコンテンツ閲覧者**の役割が必要です。このアクセス許可が与えられていない場合は、**[一致したアイテム]** タブからアイテムを選んだときに、[プレビューアー] ウィンドウが表示されません。
 
 - SharePoint と OneDrive でファイルに自動でラベルを付けるには:
-    - [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする (パブリック プレビュー)](sensitivity-labels-sharepoint-onedrive-files.md) を有効にしています。
+    - [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にしています](sensitivity-labels-sharepoint-onedrive-files.md)。
     - 自動ラベル付けポリシーの実行時に、別のプロセスまたはユーザーがファイルを開いておくことはできません。
 
 - 組み込みの機密度の種類ではなく、[カスタムの機密情報の種類](custom-sensitive-info-types.md)を使用する場合は、次の操作を行います。 
@@ -237,9 +233,9 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
 
-2. [**自動ラベル付 (プレビュー)**] タブを選択します。
+2. [**自動ラベル付け**] タブを選択します。
     
-    ![自動ラベル付け (プレビュー) タブ](../media/auto-labeling-tab.png)
+    ![自動ラベル付け](../media/auto-labeling-tab.png)
     
 
 3. [**+ ポリシーの作成**] を選択します。
@@ -249,6 +245,12 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 5. [**自動ラベル ポリシーに名前を付ける**] ページの場合: 一意の名前を入力し、必要に応じて説明を入力して、自動的に適用されるラベル、場所、ラベル付けするコンテンツを識別する条件を識別します。
 
 6. [**ラベルを適用する場所を選択する**] ページの場合: Exchange、SharePoint サイト、OneDrive の場所を選択して指定します。 [**次へ**] を選択します。
+    
+    OneDrive の場合、個々のアカウントを指定する必要があります。 ユーザーの OneDrive の URL は次の形式になります。 `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    
+    たとえば、「rsimone」のユーザー名を持つ contoso テナント内のユーザーの場合: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    
+    テナントの構文を確認し、ユーザーの URL を特定するには、「[組織内のすべてのユーザーの OneDrive URL のリストを取得する](https://docs.microsoft.com/onedrive/list-onedrive-urls)」を参照してください。
 
 7. [**ポリシーの設定を定義する**] ページの場合: 既定の**次を含むコンテンツを検索**のままにして、選択したすべての場所でラベル付けするコンテンツを識別するルールを定義します。 場所ごとに異なるルールが必要な場合は、[**詳細設定**] を選択します。 [**次へ**] を選択します。
     
@@ -281,7 +283,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
     
     Office アプリの自動ラベル付けとは異なり、個別の公開オプションはありません。 ただし、ラベルの公開と同様に、自動ラベル付けポリシーが組織全体に複製されるまでに最大 24 時間かかります。
 
-**[情報保護]** ページの **[自動ラベル付け (プレビュー)]** タブでは、自動ラベル付けポリシーを **[シミュレーション]** または **[オフ]** セクションのどちらかで確認できます。これは、シミュレーション モードで実行することを選択したかどうかによって決まります。 ポリシーを選択して、構成と状態の詳細 (**[ポリシー シミュレーションの実行中]** など) を確認します。 シミュレーション モードのポリシーの場合は、**[一致したアイテム]** タブを選択して、指定したルールに一致した電子メールまたはドキュメントを確認します。
+**[情報保護]** ページの **[自動ラベル付け]** タブでは、自動ラベル付けポリシーを **[シミュレーション]** または **[オフ]** セクションのどちらかで確認できます。これは、シミュレーション モードで実行することを選択したかどうかによって決まります。 ポリシーを選択して、構成と状態の詳細 (**[ポリシー シミュレーションの実行中]** など) を確認します。 シミュレーション モードのポリシーの場合は、**[一致したアイテム]** タブを選択して、指定したルールに一致した電子メールまたはドキュメントを確認します。
 
 このインターフェイスからは、次のようにポリシーを直接変更できます。
 

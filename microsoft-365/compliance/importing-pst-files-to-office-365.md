@@ -18,17 +18,17 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: '管理者向け: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PST ファイル) をユーザーの Exchange Online のメールボックスに一括でインポートする方法について説明します。 このトピックでは、よくあるご質問と PST インポート プロセスのしくみを説明します。'
-ms.openlocfilehash: baf8fc0dbfb464dcf6b8054a9d91aacda00e3da6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71125a087925e369dd7bb7d61096964bc1abdc63
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636630"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679061"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
 > [!NOTE]
-> この記事は管理者向けです。 自分のメールボックスに PST ファイルをインポートしようとしていますか? 「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
+> この記事は管理者向けです。 自分のメールボックスに PST ファイルをインポートしようとしていますか? 「[Outlook.pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
 
 セキュリティ/コンプライアンス センターのインポート サービスを使用して、PST ファイルを組織の Exchange Online メールボックスにすばやく一括でインポートできます。 PST ファイルを Office 365 にインポートするには、次の 2 つの方法があります。
 
@@ -145,7 +145,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
   
  **ネットワーク アップロードはどこで利用できますか?**
   
-現在のところ、ネットワーク アップロードは米国、カナダ、ブラジル、英国、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリアでご利用いただけます。ネットワーク アップロードはその他の地域でも間もなく利用可能になります。
+現在のところ、ネットワーク アップロードは米国、カナダ、ブラジル、英国、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリア、アラブ首長国連邦 (UAE) でご利用いただけます。ネットワーク アップロードはその他の地域でも間もなく利用可能になります。
 
 > [!NOTE]
 > 現時点では、PST ファイルのネットワーク アップロードはドイツとスイスでは利用できません。 この FAQ は、これらの国でネットワーク アップロードが利用可能になると更新されます。

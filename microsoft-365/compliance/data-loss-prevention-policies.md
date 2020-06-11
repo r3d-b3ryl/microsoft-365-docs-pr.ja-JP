@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: セキュリティ &amp; コンプライアンス センターのデータ損失防止 (DLP) ポリシーでは、Office 365 全体の機密情報を識別、監視、または自動的に保護できます。
-ms.openlocfilehash: 4328855a4a7332c452d7e2832e1b924c16652f8b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351852"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679071"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -116,8 +116,8 @@ DLP ポリシーは、Microsoft 365 全体で機密情報を検出して保護�
     
 - コンテンツが組織の内または外のユーザーと共有されている。
 
-> [!NOTE]
-> ホストの組織の Active Directory または Azure Active Directory のテナントにゲスト以外のアカウントを持っているユーザーは、組織内のユーザーと見なされます。
+  > [!NOTE]
+  > ホストの組織の Active Directory または Azure Active Directory のテナントにゲスト以外のアカウントを持っているユーザーは、組織内のユーザーと見なされます。
     
 #### <a name="types-of-sensitive-information"></a>機密情報の種類
 
@@ -127,13 +127,13 @@ DLP ポリシーは、**機密情報の種類**として定義されている機
   
 DLP ポリシーによってクレジット カード番号などの機密情報の種類を検索する場合、単に 16 桁の数字を検索するわけではありません。 機密情報のそれぞれの種類が定義され、以下の組み合わせを使用して検出されます。
   
-- キーワード
+- キーワード。
     
-- チェックサムや構成を検証するための内部関数
+- チェックサムや構成を検証するための内部関数。
     
-- パターンの一致を検出するための正規表現の評価
+- パターンの一致を検出するための正規表現の評価。
     
-- その他のコンテンツの検査
+- その他のコンテンツの検査。
     
 これにより、DLP 検出処理において、作業の中断原因となる誤検知の数を減らし、正確性を高めることができます。
   
@@ -145,13 +145,19 @@ DLP ポリシーによってクレジット カード番号などの機密情報
   
 現在は次のような操作を使用できます。
   
-- **コンテンツへのアクセスを制限する** サイトのコンテンツの場合、これは、プライマリ サイト コレクション管理者、ドキュメントの所有者、ドキュメントを最後に変更したユーザーを除くすべてのユーザーについて、ドキュメントへのアクセス許可が制限されることを意味します。 これらのユーザーは、ドキュメントの機密情報の削除や、他の修正操作を実行できます。 ドキュメントがコンプライアンスを遵守した状態になった場合、元のアクセス許可が自動的に復元されます。 ドキュメントへのアクセスがブロックされているときは、サイトのライブラリでドキュメントに特別なポリシー ヒントのアイコンが表示されます。 
+- **コンテンツへのアクセスを制限する** ニーズに応じて、次の 3 つの方法でコンテンツへのアクセスを制限できます。
+
+  1. すべてのユーザーに対してコンテンツへのアクセスを制限する。
+  2. 組織外のユーザーに対してコンテンツへのアクセスを制限する。
+  3. "リンクを知っているすべてのユーザー" に対してコンテンツへのアクセスを制限する。
+
+  サイト コンテンツの場合、これは、プライマリ サイト コレクション管理者、ドキュメントの所有者、ドキュメントを最後に変更したユーザーを除くすべてのユーザーについて、ドキュメントへのアクセス許可が制限されることを意味します。 これらのユーザーは、ドキュメントの機密情報の削除や、他の修正操作を実行できます。 ドキュメントがコンプライアンスを遵守した状態になった場合、元のアクセス許可が自動的に復元されます。 ドキュメントへのアクセスがブロックされているときは、サイトのライブラリでドキュメントに特別なポリシー ヒントのアイコンが表示されます。 
     
-    ![ドキュメントへのアクセスがブロックされていることを示すポリシー ヒント](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![ドキュメントへのアクセスがブロックされていることを示すポリシー ヒント](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    メール コンテンツの場合は、この操作によりメッセージの送信がブロックされます。 DLP ルールの構成方法によっては、NDR または (ルールで通知が使用されている場合) ポリシー ヒントやメール通知が送信者に表示されます。
+  メール コンテンツの場合は、この操作によりメッセージの送信がブロックされます。 DLP ルールの構成方法によっては、NDR または (ルールで通知が使用されている場合) ポリシー ヒントやメール通知が送信者に表示されます。
     
-    ![メッセージから権限のない受信者を削除する必要があることを示す警告](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![メッセージから権限のない受信者を削除する必要があることを示す警告](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>ユーザー通知とユーザーによる上書き
 
@@ -335,15 +341,14 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 - 保持ラベルは、作成および発行された後、同期に最大 1 日、自動適用に最大 7 日かかる場合があります。 詳細については、「[保持ラベルが有効になるまでの所要時間](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)」を参照してください。
 - ポリシーに保持ラベルを使用するのは、***SharePoint Online と OneDrive for Business のアイテムに対してのみサポートされます***。
 
+  ![条件としてのラベル](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![条件としてのラベル](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  保持と廃棄の対象になっているアイテムがあり、そのアイテムに他のコントロールを適用する場合は、DLP ポリシーで保持ラベルを使用できます。例: 
 
-保持と廃棄の対象になっているアイテムがあり、そのアイテムに他のコントロールを適用する場合は、DLP ポリシーで保持ラベルを使用できます。例: 
+  - **課税年度 2018** という名前の保持ラベルを発行し、SharePoint に格納されている 2018 年の税務書類に適用すると、10 年間保持され、その後破棄されます。 また、DLP ポリシーを使用して、これらのアイテムが組織外に共有されないようにすることもできます。
 
-- **課税年度 2018** という名前の保持ラベルを発行し、SharePoint に格納されている 2018 年の税務書類に適用すると、10 年間保持され、その後破棄されます。 また、DLP ポリシーを使用して、これらのアイテムが組織外に共有されないようにすることもできます。
-
-> [!IMPORTANT]
-> 保持ラベルを DLP ポリシーの条件として指定し、Exchange および/または Teams を場所として含めると、次のエラーが表示されます: 「**メールおよびチーム メッセージのラベル付きコンテンツの保護はサポートされていません。下のラベルを削除するか、Exchange と Teams の場所指定をオフにしてください。**」 これは、Exchange トランスポートがメッセージの送信や配信中にラベルのメタデータを評価しないためです。 
+  > [!IMPORTANT]
+  > 保持ラベルを DLP ポリシーの条件として指定し、Exchange および/または Teams を場所として含めると、次のエラーが表示されます: 「**メールおよびチーム メッセージのラベル付きコンテンツの保護はサポートされていません。下のラベルを削除するか、Exchange と Teams の場所指定をオフにしてください。**」 これは、Exchange トランスポートがメッセージの送信や配信中にラベルのメタデータを評価しないためです。 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>機密ラベルのサポートを受ける
 
@@ -449,15 +454,15 @@ DLP は、(単純なテキスト スキャンだけでなく) 詳細なコンテ
 
 セキュリティ &amp; コンプライアンス センターで DLP ポリシーを作成すると、集中管理ポリシー ストアに格納され、以下を含む各種コンテンツ ソースと同期されます。
   
-- Exchange Online、そこから Outlook on the web、Outlook
+- Exchange Online、そこから Outlook on the web、Outlook。
     
-- OneDrive for Business サイト
+- OneDrive for Business サイト。
     
-- SharePoint Online サイト
+- SharePoint Online サイト。
     
-- Office デスクトップ プログラム (Excel、PowerPoint、Word)
+- Office デスクトップ プログラム (Excel、PowerPoint、Word)。
 
-- Microsoft Teams チャネルおよびチャット メッセージ
+- Microsoft Teams チャネルおよびチャット メッセージ。
     
 ポリシーが適切な場所に同期されると、コンテンツの評価とアクションの適用が開始されます。
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -519,13 +524,13 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [リモート PowerShell を使用して Office 365 セキュリティ &amp; コンプライアンス センターに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
     
-2. これらの[ポリシーおよびコンプライアンスの dlp コマンドレット](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)のいずれかを使用する
+2. これらの[ポリシーおよびコンプライアンスの dlp コマンドレット](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)のいずれかを使用する。
     
 ただし、DLP レポートは、Exchange Online を含む Microsoft 365 全体からデータを取り込む必要があります。 このため、**DLP レポート用のコマンドレットは、セキュリティ &amp; コンプライアンス センター Powershell ではなく Exchange Online Powershell で使用できます**。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
   
-1. [リモート PowerShell で Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [リモート PowerShell で Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
     
 2. DLP レポート用のいずれかのコマンドレットを使用します。
     
