@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432338"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695140"
 ---
 # <a name="learn-about-retention-policies"></a>アイテム保持ポリシーの詳細
 
@@ -141,18 +141,17 @@ ms.locfileid: "44432338"
   
 **Exchange Online の古い機能:**
 
-- [Office 365 のセキュリティ センター/コンプライアンス センターでの電子情報開示のケースの管理](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (電子情報開示の保留リスト) 
-    
 - [インプレース ホールドと訴訟ホールド](https://go.microsoft.com/fwlink/?linkid=846124) (電子情報開示の保留リスト) 
 
 - [Exchange Online メールボックスに適用されている保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)
     
 - [メッセージング レコード管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) とも呼ばれる、[保持タグおよびアイテム保持ポリシー](https://go.microsoft.com/fwlink/?linkid=846125) (削除のみ)
     
+「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」も参照してください。
+
+
 **SharePoint と OneDrive の古い機能:**
 
-- [Office 365 のセキュリティ センター/コンプライアンス センターでの電子情報開示のケースの管理](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (電子情報開示の保留リスト) 
-    
 - [電子情報開示センターでのコンテンツのケースへの追加とソースの保留リストへの配置](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (電子情報開示の保留リスト) 
     
 - [ドキュメント削除ポリシーの概要](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (削除のみ)
