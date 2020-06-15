@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208399"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717318"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>通信コンプライアンスのアラートを調査して修復する
 
@@ -70,7 +70,7 @@ ms.locfileid: "44208399"
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>ほぼ同一の重複分析の使用
 
-通信コンプライアンスポリシーでは、追加の構成手順を行わずに、メッセージの重複を自動的にスキャンしてグループ化します。 このビューでは、類似したメッセージを1つずつまたはグループとして修復できるため、レビューアーのメッセージ調査の負荷が軽減されます。 重複が検出されると、[修復] アクションツールバーに [**重複した**場合]、または正確に**重複**したコントロールが表示されます。
+通信コンプライアンスポリシーでは、追加の構成手順を行わずに、メッセージの重複を自動的にスキャンしてグループ化します。 このビューでは、類似したメッセージを1つずつまたはグループとして修復できるため、レビューアーのメッセージ調査の負荷が軽減されます。 重複が検出されると、[修復] アクションツールバーに [**重複した**場合]、または正確に**重複**したコントロールが表示されます。 このビューは、near または exact の重複が見つからない場合は使用できません。
 
 #### <a name="to-remediate-duplicates"></a>重複を修復するには
 

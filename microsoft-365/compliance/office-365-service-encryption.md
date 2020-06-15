@@ -14,20 +14,22 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Microsoft Office 365 のデータ復元性について理解します。'
-ms.openlocfilehash: 1c31c0d5524370fd417460fbacf3695df4fa0102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632242"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717348"
 ---
 # <a name="service-encryption"></a>サービス暗号化
 
 ボリュームレベルの暗号化に加えて、Exchange Online、Skype for Business、SharePoint Online、および OneDrive for business では、顧客データを暗号化するためにサービス暗号化も使用されます。 サービス暗号化では、2つの主要な管理オプションを使用できます。
 
-- Microsoft は、すべての暗号化キーを管理します。 (現在、このオプションは SharePoint Online、OneDrive for Business、Skype for business で利用できます)。
+## <a name="microsoft-managed-keys"></a>Microsoft の管理キー: 
+Microsoft は、サービス暗号化のルートキーを含む、すべての暗号化キーを管理します。 このオプションは現在、SharePoint Online と OneDrive for business で使用できます。 現在、このオプションは Exchange Online に対してロールアウトされています。 Microsoft の管理キーでは、顧客キーを使用してオンにしない限り、既定のサービス暗号化が提供されます。 後日、データの削除パスを入力せずに、顧客キーの使用を停止することを決定した場合は、Microsoft のマネージキーを使用してデータが暗号化されたままになります。 データは常にこの既定レベルで暗号化されています。 
 
-- 組織がルートキーを提供します。 これらのキーは、Azure Key Vault を使用して管理します。 このオプションは、顧客キーと呼ばれます。 顧客キーは現在、Exchange Online、SharePoint Online、OneDrive for business、Skype for Business、および Teams ファイルで使用できます。 顧客キーを使用する場合、これらのキーは Microsoft が管理するキーを置き換えてデータを暗号化します。
+## <a name="customer-key"></a>顧客キー: 
+サービス暗号化で使用するルートキーを指定し、Azure Key Vault を使用してこれらのキーを管理します。 Microsoft は、その他のすべてのキーを管理します。 このオプションは顧客キーと呼ばれ、現在、Exchange Online、SharePoint Online、OneDrive for business で使用できます。 (以前は BYOK で高度な暗号化と呼ばれています)。 元のアナウンスについては、「 [Office 365 のお客様の透明性と統制の強化](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)」を参照してください)。
 
 サービス暗号化には複数の利点があります。 たとえば、顧客キーは次のようになります。
 
@@ -38,8 +40,6 @@ ms.locfileid: "43632242"
 - Windows オペレーティングシステム管理者と、オペレーティングシステムによって保存または処理される顧客データへのアクセスを分離します。
 
 - は、暗号化に関するコンプライアンス要件を持つお客様の要求を満たす Microsoft 365 の能力を向上させます。
-
-## <a name="customer-key"></a>カスタマー キー
 
 Customer キーを使用すると、社内ハードウェアサービスモジュール (HSM) または Azure Key Vault (AKV) のどちらかを使用して、独自の暗号化キーを生成できます。 キーの生成方法に関係なく、Office 365 で使用される暗号化キーを制御および管理するのには、AKV を使用します。 AKV にキーを格納すると、メールボックスのデータまたはファイルを暗号化する keychains のルートとして使用できるようになります。
 
@@ -56,4 +56,4 @@ Exchange Online、Skype for Business、SharePoint Online、チームサイト、
 - [顧客キーまたは可用性キーをロールまたは回転する](customer-key-availability-key-roll.md)
 
 - [可用性キーについて理解する](customer-key-availability-key-understand.md)
- 
+

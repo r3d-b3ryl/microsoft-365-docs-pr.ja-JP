@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352085"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717156"
 ---
 # <a name="message-encryption-faq"></a>メッセージ暗号化に関する FAQ
 
@@ -120,6 +120,11 @@ PDF 添付ファイルの暗号化を有効にするには、 [Exchange Online P
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
+
+PDF 暗号化を使用すると、セキュリティで保護された通信やセキュリティで保護されたコラボレーションを通じて、機密の PDF ドキュメントを保護でき すべての Outlook クライアントで、メッセージと保護されていない PDF 添付ファイルは、Exchange Online のデータ損失防止 (DLP) ポリシーまたはメールフロールールの OME 保護を継承します。 また、web 上の Outlook ユーザーが保護されていない PDF ドキュメントを添付してメッセージに保護を適用すると、メッセージはメッセージの保護を継承します。 ユーザーが暗号化された添付ファイルを開くことができるのは、保護された Pdf をサポートするアプリケーション (OME ポータルや Azure Information Protection ビューアーなど) だけです。
+
+> [!IMPORTANT]
+> Outlook デスクトップクライアントは、PDF 暗号化をサポートしていません。
 
 ## <a name="are-onedrive-for-business-attachments-supported"></a>OneDrive for Business の添付ファイルはサポートされていますか?
 

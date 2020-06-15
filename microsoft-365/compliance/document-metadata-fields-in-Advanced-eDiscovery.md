@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の Advanced eDiscovery のケースで、レビューセット内のドキュメントのメタデータフィールドを定義します。
-ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941239"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726453"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高度な電子情報開示のドキュメントメタデータフィールド
 
@@ -44,8 +44,8 @@ ms.locfileid: "42941239"
 |添付ファイル名|AttachmentNames|Attachment_Names|添付ファイルの名前の一覧。|
 |弁護士クライアント特権スコア|AttorneyClientPrivilegeScore||委任状-クライアント特権モデルのコンテンツスコア。|
 |設定元|設定元|Doc_authors|ドキュメントのメタデータから作成します。|
-|BCC|BCC|Email_bcc|メッセージの種類の Bcc フィールド。 Format は**DisplayName \<[smtpaddress>**] です。|
-|CC|CC|Email_cc|メッセージの種類の Cc フィールド。 Format は**DisplayName \<[smtpaddress>**] です。|
+|BCC|Bcc|Email_bcc|メッセージの種類の Bcc フィールド。 表示形式**は \<SMTPAddress> DisplayName**です。|
+|CC|Cc|Email_cc|メッセージの種類の Cc フィールド。 表示形式**は \<SMTPAddress> DisplayName**です。|
 |コンプライアンスラベル|ComplianceLabels|Compliance_labels|Office 365 のコンテンツに適用される[保持ラベル](labels.md)。|
 |複合パス|CompoundPath|Compound_path|アイテムのソースを記述する、人間が判読できるパス。|
 |内容|コンテンツ||アイテムの抽出されたテキスト。|
@@ -103,17 +103,18 @@ ms.locfileid: "42941239"
 |アイテム クラス|ItemClass|Item_class|Exchange server によって提供される Item クラス。たとえば、 **IPM.メモ**|
 |Last modified date|LastModifiedDate|Doc_date_modified|ドキュメントメタデータからの最終変更日。|
 |ロード ID|LoadId|Load_ID|アイテムがレビューセットに追加された荷重セットの Id。|
-|場所|場所|場所|ドキュメントのソースとなる場所の種類を示す文字列。<br /><br />**インポート**されたデータ-Office 以外の365データ<br />**Teams** -Microsoft teams<br />**Exchange** -exchange メールボックス<br />**Sharepoint** -sharepoint サイト<br />**Onedrive** -onedrive アカウント|
+|Location|Location|Location|ドキュメントのソースとなる場所の種類を示す文字列。<br /><br />**インポート**されたデータ-Office 以外の365データ<br />**Teams** -Microsoft teams<br />**Exchange** -exchange メールボックス<br />**Sharepoint** -sharepoint サイト<br />**Onedrive** -onedrive アカウント|
 |場所の名前|Msrtcsip-locationname|Location_name|アイテムのソースを識別する文字列。 Exchange の場合、これはメールボックスの SMTP アドレスになります。SharePoint および OneDrive の場合、サイトコレクションの URL。|
 |担当者としてマーク|MarkAsRepresentative||正確な重複のセットごとに1つのドキュメントが担当者としてマークされます。|
 |プリタグ付きケースの問題としてマークされました。 1 *||Marked_as_pre_tagged_Case_issue_1|関連性のない、タグ付きケースの問題1としてマークされました。|
 |シードケース問題 1 * としてマークされている||Marked_as_seed_Case_issue_1|シードケース問題1と関連性があるとマークされています。|
 |会議の終了日|会議の終了日|Meeting_end_date|会議の会議の終了日。|
 |会議の開始日|会議の開始日|Meeting_start_date|会議の会議の開始日。|
-|メッセージの種類|MessageKind|Message_kind|検索するメッセージの種類を示します。 可能な値** <br /> <br />: <br />連絡先<br />ドキュメント<br />メール<br />externaldata <br />fax <br />im <br />ジャーナル<br />会議**(Microsoft teams でのチャット、会議、通話のアイテムを返す) ** <br />メモ<br />投稿<br />rssfeeds <br />tasks <br />ボイスメール**| 
+|メッセージの種類|MessageKind|Message_kind|検索するメッセージの種類を示します。 可能な値: ** <br /> <br /> 連絡先 <br /> ドキュメント <br /> メール <br /> externaldata <br /> fax <br /> im <br /> ジャーナル <br /> 会議 <br /> ** (Microsoft teams でのチャット、会議、通話のアイテムを返す) ** <br /> メモ <br /> 投稿 <br /> rssfeeds <br /> tasks <br /> ボイスメール**| 
 |ネイティブ拡張機能|/モジュール|Native_extension|アイテムのネイティブな内線番号。|
 |ネイティブファイル名|ファイル名|Native_file_name|アイテムのネイティブファイル名。|
-|NativeMD5||Native_MD5|ファイルストリームの MD5 ハッシュ。|
+|NativeMD5||Native_MD5|ファイルストリームの MD5 ハッシュ (128 ビットのハッシュ値)。|
+|NativeSHA256||Native_SHA_256|ファイルストリームの SHA256 ハッシュ (256 ビットハッシュ値)。|
 |ND/ET 並べ替え: 添付ファイルを除外する|NdEtSortExclAttach|ND_ET_sort_excl_attach|電子メールスレッド (ET) セットと、同一に近い (ND) セットの連結。 このフィールドは、レビュー時に効率的に並べ替えるために使用されます。 **D**は ND セットにプレフィックスが付けられ、 **E**は ET セットにプレフィックスとして付けられます。|
 |ND/ET ソート: 添付ファイルを含む|NdEtSortInclAttach|ND_ET_sort_incl_attach|電子メールスレッド (ET) セットと、同一に近い (ND) セットの連結。 このフィールドは、レビュー時に効率的に並べ替えるために使用されます。 **D**は ND セットにプレフィックスが付けられ、 **E**は ET セットにプレフィックスとして付けられます。 ET セット内の各電子メールアイテムの後に、適切な添付ファイルが続きます。|
 |正規化関連性スコアケース問題1||Normalized_relevance_score_case_issue_1|関連性から正規化された関連性スコアケースの問題1。|
@@ -142,20 +143,20 @@ ms.locfileid: "42941239"
 |関連性スコア|RelevanceScore||関連性に基づいたドキュメントの関連性スコア。|
 |関連性タグ|RelevanceTag||関連性に基づいたドキュメントの関連性スコア。|
 |代表 ID|RepresentativeId||正確な重複の各セットの数値識別子。|
-|Sender|Sender|Email_sender|メッセージの種類の Sender (差出人) フィールド。 Format は**DisplayName \<[smtpaddress>**] です。|
+|Sender|Sender|Email_sender|メッセージの種類の Sender (差出人) フィールド。 表示形式**は \<SmtpAddress> DisplayName**です。|
 |送信者/作成者|SenderAuthor||アイテムの送信者または作成者から構成される集計フィールド。|
 |送信者ドメイン|SenderDomain|Email_sender_domain|送信者のドメイン。|
 |送信日時|送信日時|Email_date_sent|メッセージの送信日。|
 |順序の設定: 最初を含む|SetOrderInclusivesFirst|Set_order_inclusives_first|並べ替えフィールド-電子メールと添付ファイル: カウンター-時系列;ドキュメント: 最初にピボットしてから、類似性スコアを降順にします。|
 |SimilarityPercent||Similarity_percent|オブジェクトがほぼ重複している場合のピボットの類似点を示します。|
-|ネイティブファイルサイズ|サイズ|Native_size|ネイティブアイテムのバイト数。|
-|件名|件名|Email_subject|メッセージの件名。|
+|ネイティブファイルサイズ|Size|Native_size|ネイティブアイテムのバイト数。|
+|Subject|Subject|Email_subject|メッセージの件名。|
 |件名/タイトル|SubjectTitle||アイテムの件名またはタイトルから構成される集計フィールド。|
 |ケースの問題1のタグ付き||Tagged_by_Case_issue_1|このドキュメントに関連するケースの問題1に対してタグ付けされたユーザー。|
 |タグ|タグ|タグ|レビューセットで適用されるタグ。|
 |テーマリスト|テーマ一覧|Themes_list|分析に対して計算されたテーマのリスト。|
-|タイトル|タイトル|Doc_title|ドキュメントのメタデータからのタイトル。|
-|宛先|宛先|Email_to|メッセージの種類の "宛先" フィールド 形式は、[ **\<smtpaddress>**|
+|Title|Title|Doc_title|ドキュメントのメタデータからのタイトル。|
+|To|To|Email_to|メッセージの種類の "宛先" フィールド 表示形式**は \<SmtpAddress> DisplayName**です|
 |メールセット内で一意|UniqueInEmailSet||電子メールセットに添付ファイルが重複している場合は**False** 。|
 |修復されました|(修復)|Was_Remediated|アイテムが修復された場合は**True** 、それ以外の場合は**False**。|
 |文字カウント|WordCount|Word_count|アイテム内の単語数。|

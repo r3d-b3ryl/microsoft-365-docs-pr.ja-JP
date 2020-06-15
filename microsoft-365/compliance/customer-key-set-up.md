@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、および Teams の各ファイルに対して Microsoft 365 の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352274"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717264"
 ---
 # <a name="set-up-customer-key"></a>顧客キーを設定する
 
@@ -108,15 +108,15 @@ Azure の手順を完了したら、 [Microsoft FastTrack ポータル](https://
 
 2. ログインしたら、**ダッシュボード**を参照します。
 
-3. [**提供**] を選択し、現在のサービスの一覧を確認します。
+3. ナビゲーションバーから [**展開**] を選択する**か、また**は**展開**情報カードの [**すべての展開リソースを表示**する] を選択して、現在のサービスの一覧を確認します。
 
-4. 適用するオファーの詳細については、「**詳細情報**」を選択します。
+4. 適用するオファーの情報カードを選択します。
 
-   - **Exchange Online と Skype For business:**「 **Exchange サービスの顧客キー** 」で、[**詳細情報**] を選択します。
+   - **Exchange Online と Skype For business:****Exchange online オファーの要求暗号化キーのヘルプ**を選択します。
 
-   - **SharePoint Online、OneDrive For business、Teams の各ファイル:****SharePoint および OneDrive For business の顧客キー**については、「**詳細情報**」を選択します。
+   - **SharePoint Online、OneDrive、Teams の各ファイル:**[ **Sharepoint および OneDrive オファーの要求の暗号化キーのヘルプ**] を選択します。
 
-5. [**提供の詳細**] ページで、[**要求の作成**] を選択します。
+5. オファーの詳細を確認したら、**手順2に進み**ます。
 
 6. 提供フォームで該当するすべての詳細と要求された情報を記入します。 暗号化キーとデータを永続的に、元に戻れないように承認する組織の責任者に対して、特定の選択について特に注目してください。 フォームが完成したら、[**送信**] を選択します。
 
@@ -137,7 +137,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
 
 3. プロセスを完了させるために、Microsoft にお問い合わせください。 SharePoint および OneDrive for Business チームについては、 [spock@microsoft.com](mailto:spock@microsoft.com)にお問い合わせください。 Exchange Online と Skype for Business の場合は、 [exock@microsoft.com](mailto:exock@microsoft.com)にお問い合わせください。 メールに次のものを含めます。
 
-   **件名**: \< *テナントの完全修飾ドメイン名*の顧客キー\>
+   **件名**: の顧客キー\<*Your tenant's fully-qualified domain name*\>
 
    **本文**: 必須の保持期間を最終処理するサブスクリプション id。
    各サブスクリプションのための、-AzProviderFeature の出力。
@@ -195,7 +195,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   以下に例を示します。
+   例:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
@@ -319,7 +319,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 > [!TIP]
 > 出力ファイルに対して、コンテナー名とキー名の組み合わせを選択します。 これにより、ファイル名が自己記述されます。 バックアップファイルの名前が競合しないようにすることもできます。
   
-以下に例を示します。
+例:
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup

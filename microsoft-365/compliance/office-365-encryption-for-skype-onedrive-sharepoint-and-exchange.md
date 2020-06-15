@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: この記事では、Skype、OneDrive、SharePoint、および Exchange Online の Office 365 暗号化について説明します。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: '概要: Skype、OneDrive、SharePoint、Microsoft Teams、および Exchange Online の暗号化について説明します。'
+ms.openlocfilehash: fc369d167d5aa35507f9509fc1b92294e16f75d9
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031397"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717338"
 ---
-# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for Business、OneDrive for Business、SharePoint Online、Exchange Online の暗号化
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-microsoft-teams-and-exchange-online"></a>Skype for business、OneDrive for Business、SharePoint Online、Microsoft Teams、Exchange Online の暗号化
 
 Microsoft 365 は、高度なセキュリティで保護された環境で、物理データセンターのセキュリティ、ネットワークセキュリティ、アクセスセキュリティ、アプリケーションセキュリティ、およびデータセキュリティがあります。
 
@@ -87,3 +86,32 @@ Exchange Online では、すべてのメールボックスデータに BitLocker
 サービス暗号化に加えて、Microsoft 365 は顧客キーをサポートしています。これは、サービス暗号化の上に構築されています。 顧客キーは、Microsoft のロードマップにもある Exchange Online サービス暗号化の Microsoft が管理するキーオプションです。 この暗号化方法では、サーバー管理者とデータの復号化に必要な暗号化キーが分離されているため、また、暗号化がデータに直接適用されるため (BitLocker の場合は、論理ディスクボリュームで暗号化が適用されるため)、Exchange サーバーからコピーした顧客データは暗号化されたままとなります。
 
 Exchange Online サービス暗号化のスコープは、Exchange Online 内の rest に格納されている顧客データです。 (Skype for Business では、ユーザーによって生成されたすべてのコンテンツがユーザーの Exchange Online メールボックス内に保存されるため、Exchange Online のサービス暗号化機能を継承します。)
+
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+Teams は TLS と MTLS を使用してインスタントメッセージを暗号化します。 すべてのサーバー間トラフィックは、トラフィックが内部ネットワークに限定されているか、または内部ネットワーク境界を越えているかに関係なく、MTLS を必要とします。
+
+次の表は、Teams で使用されるプロトコルの概要を示しています。
+
+***トラフィックの暗号化***
+
+|||
+|:-----|:-----|
+|**トラフィックの種類**|**によって暗号化**|
+|サーバー間|MTLS|
+|クライアントとサーバー (例 インスタントメッセージングとプレゼンス)|TLS|
+|メディアフロー (例) メディアの音声およびビデオ共有)|TLS|
+|メディアの音声およびビデオ共有|SRTP/TLS|
+|通知|TLS|
+|||
+
+#### <a name="media-encryption"></a>メディアの暗号化
+
+メディアトラフィックは、セキュリティで保護された RTP (SRTP) を使用して暗号化されます。リアルタイム転送プロトコル (RTP) のプロファイルは、機密性、認証、および再生攻撃保護を RTP トラフィックに提供します。 SRTP は、セキュリティで保護された乱数ジェネレーターを使用して生成されたセッションキーを使用し、シグナリング TLS チャネルを使用して交換されます。 クライアント間のメディアトラフィックは、クライアントとサーバー間の接続信号を通じてネゴシエートされますが、クライアントからクライアントへの直接アクセス時には SRTP を使用して暗号化されます。
+
+Teams は、資格情報ベースのトークンを使用して、メディアリレーへの安全なアクセスを可能にします。 メディアリレーは、TLS で保護されたチャネルを介してトークンを交換します。
+
+#### <a name="fips"></a>使う
+
+Teams は、暗号化キー交換に FIPS (連邦情報処理規格) 準拠アルゴリズムを使用します。 FIPS の実装の詳細については、「[連邦情報処理規格 (fips) 文書 140-2](https://docs.microsoft.com/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide)」を参照してください。
