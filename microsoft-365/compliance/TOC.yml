@@ -472,6 +472,8 @@
               href: retry-failed-content-search.md
             - name: Microsoft Edge を使用して検索結果をダウンロードする
               href: configure-edge-to-export-search-results.md
+            - name: 監査ログで電子情報開示アクティビティを検索する
+              href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
         - name: Advanced eDiscoveryの概要
@@ -587,6 +589,8 @@
               href: permissions-filtering-for-content-search.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
+            - name: 監査ログで電子情報開示アクティビティを検索する
+              href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: AzCopy のトラブルシューティング
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (クラシック)
