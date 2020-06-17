@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 03/29/2019
+ms.date: 06/15/2020
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 で暗号化に使用されるさまざまな証明書、テクノロジ、および TLS 暗号スイートについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f15f55c4a66d579d547a164633613175f254640b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 298d73551b5eb3d7ad7121075b086ee4630562f4
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034531"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739105"
 ---
 # <a name="technical-reference-details-about-encryption"></a>暗号化に関するテクニカルリファレンスの詳細
 
@@ -31,7 +31,7 @@ ms.locfileid: "44034531"
 - 概要情報を探している場合は、「 [Encryption In Office 365](encryption.md)」を参照してください。
 - セットアップ情報を探している場合は、「 [Office 365 Enterprise で暗号化を設定](set-up-encryption.md)する」を参照してください。
 - 特定のバージョンの Windows でサポートされている暗号スイートの詳細については、「 [TLS/SSL (SCHANNEL SSP)」の「Cipher suite](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)」を参照してください。
-    
+
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 証明書の所有権と管理
 
 Microsoft は独自の証明書を使用するため、お客様が Office 365 用の証明書を購入したり保持したりする必要はありません。
@@ -41,55 +41,42 @@ Microsoft は独自の証明書を使用するため、お客様が Office 365 �
 Office 365 のクラス最高の暗号化を引き続き提供するために、Microsoft は、サポートされている暗号化基準を定期的にレビューします。 古い標準は古くなっており、セキュリティが低いため、廃止する必要があります。 このトピックでは、現在サポートされている暗号スイートとその他の標準、および計画した deprecations に関する詳細について説明します。 
 
 ## <a name="fips-compliance-for-office-365"></a>Office 365 の FIPS コンプライアンス
+
 Office 365 でサポートされているすべての暗号スイートは、FIPS 140-2 で使用可能なアルゴリズムを使用します。 Office 365 は、Windows (Schannel 経由) から FIPS 検証を継承します。 Schannel の詳細については、「 [TLS/SSL (SCHANNEL SSP)」の「Cipher suite](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)」を参照してください。
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 でサポートされる TLS のバージョン
 
-トランスポート層セキュリティ (TLS) と、TLS に先立つ SSL は、セキュリティ証明書を使用してコンピューター間の接続を暗号化することによって、ネットワークを介した通信のセキュリティを確保する暗号化プロトコルです。Office 365 は、以下の TLS バージョンをサポートしています。
+トランスポート層セキュリティ (TLS) と、TLS に先立つ SSL は、セキュリティ証明書を使用してコンピューター間の接続を暗号化することによって、ネットワークを介した通信のセキュリティを確保する暗号化プロトコルです。 Office 365 は TLS バージョン 1.2 (TLS 1.2) をサポートしています。
+
+TLS バージョン 1.3 (TLS 1.3) は現在サポートされていません。
   
-- TLS バージョン 1.2 (TLS 1.2)
-    
-- TLS バージョン 1.1 (TLS 1.1)
-    
-- TLS バージョン 1.0 (TLS 1.0)
-    
- TLS 1.0 および TLS 1.1 のサポートは、2018年10月31日に廃止されます。 詳細については、「[廃止 support FOR TLS 1.0」と「1.1](technical-reference-details-about-encryption.md#TLS11and12deprecation) 」を参照してください。 
- 
- TLS バージョン 1.3 (TLS 1.3) は現在サポートされていません。
-  
-## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>廃止での TLS 1.0 および1.1 のサポートとその意味
-<a name="TLS11and12deprecation"> </a>
+## <a name="support-for-tls-10-and-11-deprecation-and-what-this-means-for-you"></a>TLS 1.0 および1.1 のサポートが廃止され、これが何を意味するのかを説明します。
 
 2018年10月31日以降、Office 365 は TLS 1.0 および1.1 をサポートしなくなりました。 これは、Microsoft が、TLS 1.0 および1.1 を使用して Office 365 に接続するクライアント、デバイス、またはサービスに関する新しい問題を修正しないことを意味します。
 
-メモこれは、Office 365 が TLS 1.0 および1.1 の接続をブロックすることを意味するわけではありません。 
+これは、Office 365 が TLS 1.0 および1.1 の接続をブロックすることを意味するわけではありません。
 
-TLS 1.0 と TLS 1.1 は、次の日付では非推奨となります。
-- 全世界および GCC 環境のお客様の場合、2020年6月1日。
-- 2020年1月15日、GCC High および DoD 独立環境のお客様向けです。 
+TLS 1.0 および TLS 1.1 は、これらの日付に正式に廃止されました。
 
-すべてのクライアントサーバーとブラウザーのサーバーの組み合わせで TLS 1.2 と最新の暗号の適合を使用して、Office 365 サービスへのセキュリティで保護された接続を維持できるようにする必要があります。 特定のクライアントサーバーとブラウザーサーバーの組み合わせを更新する必要がある場合があります。 この影響の詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
+- 世界規模および GCC 環境では2020年6月1日
+- GCC High および DoD 環境では、2020年1月15日。
 
-Office 365 サービスへの接続を維持するために、すべてのクライアントサーバーとブラウザーサーバーの組み合わせが TLS 1.2 (またはそれ以降のバージョン) を使用していることを確認する必要があります。 特定のクライアントサーバーとブラウザーサーバーの組み合わせを更新する必要がある場合があります。 この影響の詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
-
+すべてのクライアントサーバーとブラウザーのサーバーの組み合わせが TLS 1.2 と最新の暗号スイートを使用して、Office 365 および Microsoft 365 サービスへのセキュリティで保護された接続を維持するようにする必要があります。 クライアントとサーバー間、ブラウザーとサーバー間の特定の組み合わせについては、更新が必要になる場合があります。 この影響の詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
   
 ## <a name="deprecating-support-for-3des"></a>3DES の廃止サポート
-<a name="TLS11and12deprecation"> </a>
 
-2018年10月31日以降、Office 365 は office 365 への通信に3DES 暗号化スイートの使用をサポートしなくなりました。 具体的には、Office 365 は TLS_RSA_WITH_3DES_EDE_CBC_SHA 暗号スイートをサポートしなくなりました。 2019年2月28日以降、この暗号スイートは Office 365 で無効になっています。 この日付の後に O365 と通信するクライアントおよびサーバーは、このトピックに記載されている、より安全な暗号の少なくとも1つをサポートする必要があります (「 [Office 365 でサポートされている TLS 暗号スイート](technical-reference-details-about-encryption.md#TLSCipherSuites)」を参照してください)。
+2018年10月31日以降、Office 365 は office 365 への通信に3DES 暗号化スイートの使用をサポートしなくなりました。 具体的には、Office 365 は TLS_RSA_WITH_3DES_EDE_CBC_SHA 暗号スイートをサポートしなくなりました。 2019年2月28日以降、この暗号スイートは Office 365 で無効になっています。 この日付の後に Office 365 と通信するクライアントおよびサーバーは、このトピックに記載されている、より安全な暗号の少なくとも1つをサポートする必要があります (「 [Office 365 でサポートされている TLS 暗号スイート](#tls-cipher-suites-supported-by-office-365)」を参照してください)。
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Office 365 における SHA-1 証明書サポートの廃止
-<a name="TLS11and12deprecation"> </a>
 
 2016年6月の時点で、Office 365 は、送信接続または受信接続に対して SHA-1 証明書を受け入れなくなりました。 現在、証明書チェーンの SHA-1 で証明書を使用している場合は、SHA-1 (Secure Hash Algorithm 2) またはより強力なハッシュアルゴリズムを使用するようにチェーンを更新する必要があります。
   
 ## <a name="tls-cipher-suites-supported-by-office-365"></a>Office 365 でサポートされている TLS 暗号スイート
-<a name="TLSCipherSuites"> </a>
 
-Cipher suite は、セキュリティで保護された接続を確立するために TLS が使用する暗号化アルゴリズムの集合です。 Office 365 でサポートされている暗号スイートについては、次の表に、最強の暗号スイートが最初に表示された場合の強度を示します。 Office 365 が接続要求を受信すると、Office 365 は最初に最上位の暗号スイートを使用して接続しようとします。失敗した場合は、リスト内の2番目の暗号スイートを一覧の下まで試します。 Office 365 が別のサーバーまたはクライアントに接続要求を送信する場合は、受信側のサーバーまたはクライアントが暗号スイートを選択するか、TLS を使用するかを選択します。
+Cipher suite は、セキュリティで保護された接続を確立するために TLS が使用する暗号化アルゴリズムの集合です。 Office 365 でサポートされている暗号スイートについては、次の表に、最強の暗号スイートを最初に示しています。 Office 365 が接続要求を受信すると、Office 365 は最初に最上位の暗号スイートを使用して接続しようとします。 成功しなかった場合、Office 365 は、リスト内の2番目の暗号スイートを、リストの下に試行します。 Office 365 が別のサーバーまたはクライアントに接続要求を送信する場合は、受信側のサーバーまたはクライアントが暗号スイートを選択するか、TLS を使用するかを選択します。
 
 > [!IMPORTANT]
-> TLS のバージョンが廃止され、使用され*なく*なったバージョンを使用して新しいバージョンを入手できないことに注意してください。 つまり、TLS 1.0、1.1、および1.2 が表示されている任意の場所で、サポートされている*最新*のバージョン (tls 1.2) を選択します。 TLS は現在サポートされていません。 従来のサービスが TLS 1.0 または1.1 を必要としない場合は、それらを無効にすることを検討する必要があります。 
+> TLS のバージョンが廃止され、使用され*なく*なったバージョンを使用して新しいバージョンを入手できないことに注意してください。 TLS 1.3 は現在サポートされていません。 従来のサービスが TLS 1.0 または1.1 を必要としない場合は、それらを無効にする必要があります。
   
 |**プロトコル**|**暗号スイート名**|**キー交換アルゴリズム/強度**|**完全なフォワード機密サポート**|**認証アルゴリズム/強度**|**暗号/強度**|
 |:-----|:-----|:-----|:-----|:-----|:-----|

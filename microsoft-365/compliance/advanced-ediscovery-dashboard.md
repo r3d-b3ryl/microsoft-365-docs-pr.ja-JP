@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: レビューセットの高度な電子情報開示ダッシュボードを使用して、コーパスをすばやく分析し、レビュー戦略の開発に役立つ傾向または主要な統計情報を特定します。
+ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080106"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741699"
 ---
-# <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>レビューセットの高度な電子情報開示ダッシュボード (プレビュー)
+# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>レビューセットの高度な電子情報開示ダッシュボード
 
 高度な電子情報開示では、確認が必要な大量のドキュメントや電子メールメッセージがある場合があります。 レビュープロセスを開始する前に、レビュー戦略の開発に役立つ傾向または主要な統計情報を特定するために、コーパスをすばやく分析することをお勧めします。 これを行うには、詳細な電子情報開示ダッシュボードをレビューセットに使用して、コーパスを迅速に分析できます。
 
@@ -55,9 +55,9 @@ ms.locfileid: "42080106"
 
    ![ウィジェットの作成](../media/addwidget.png)
 
-    a.  ウィジェットの名前を入力します。ウィジェットのタイトルバーに表示されます。 ウィジェットの名前付けは必須ですが、ウィジェットのデータを特定するのに役立ちます。
+    a. ウィジェットの名前を入力します。ウィジェットのタイトルバーに表示されます。 ウィジェットの名前付けは必須ですが、ウィジェットのデータを特定するのに役立ちます。
 
-    b.  [選択した**ピボット**ドロップダウンリストで、ウィジェットデータに使用されるプロパティを選択します。 このリストのアイテムは、レビューセット内のアイテムの検索可能なプロパティです。 これらのプロパティの詳細については、「 [Advanced eDiscovery のドキュメントメタデータフィールド](document-metadata-fields-in-Advanced-eDiscovery.md)」を参照してください。 このウィジェットのピボットオプションは、このトピックの「検索可能な**フィールド名**」列に記載されています。
+    b. [選択した**ピボット**ドロップダウンリストで、ウィジェットデータに使用されるプロパティを選択します。 このリストのアイテムは、レビューセット内のアイテムの検索可能なプロパティです。 これらのプロパティの詳細については、「 [Advanced eDiscovery のドキュメントメタデータフィールド](document-metadata-fields-in-Advanced-eDiscovery.md)」を参照してください。 このウィジェットのピボットオプションは、このトピックの「検索可能な**フィールド名**」列に記載されています。
 
     c. グラフの種類を選択して、選択したピボットプロパティのデータを表示します。
 

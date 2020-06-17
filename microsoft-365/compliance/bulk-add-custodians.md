@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9331e45619f549ea31adcfdd9316eea20e43efef
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: 一括追加ツールを使用すると、高度な電子情報開示のケースに複数の保管担当者とそれに関連付けられたデータソースをすばやく追加できます。
+ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432440"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741641"
 ---
-# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case-preview"></a>高度な電子情報開示ケースへの一括追加保管担当者 (プレビュー)
+# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースへの保管担当者の一括追加
 
 保管担当者の高度な電子情報開示ケースでは、複数の保管担当者をケースに追加するために必要なすべての情報を含む CSV ファイルによって一度にインポートできます。
 
