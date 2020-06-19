@@ -22,14 +22,14 @@
               href: setup/setup-apps-for-business.md
         - name: セットアップのページとウィザードについて
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: データの移行
-          href: setup/migrate-email-and-contacts-admin.md
         - name: Office アプリのインストール
           href: setup/install-applications.md
         - name: Windows デバイスをセットアップする
           href: ../business/set-up-windows-devices.md
         - name: モバイル デバイスをセットアップする
           href: ../business/set-up-mobile-devices.md
+        - name: Microsoft 365 へのデータの移行
+          href: setup/migrate-email-and-contacts-admin.md
         - name: Teams をロールアウトする
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: すべてのユーザーを対象とするアプリのトレーニング
@@ -117,6 +117,8 @@
               href: add-users/resend-user-password.md
             - name: テンプレートを作成してユーザーを追加する
               href: add-users/create-and-use-a-template-to-add-users.md
+            - name: 最新のアプリにユーザーをアップグレードする
+              href: setup/upgrade-users-to-latest-office-client.md
         - name: グループ
           items:
             - name: グループの概要
@@ -154,6 +156,8 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: カスタム ドメインを使用する
           href: email/change-email-address.md
+        - name: Microsoft 365 へのメールと連絡先の移行
+          href: setup/migrate-email-and-contacts-admin.md
         - name: 署名と免責事項を作成する
           href: setup/create-signatures-and-disclaimers.md
         - name: セキュリティ グループを作成、編集、削除する
@@ -204,8 +208,6 @@
     - name: データとサービスを管理する
       href: manage/index.yml
       items:
-        - name: 組織を最新のアプリにアップグレードする
-          href: setup/upgrade-users-to-latest-office-client.md
         - name: レポートを使用してユーザー アクティビティを監視する
           href: activity-reports/activity-reports.md
         - name: 組織の連絡先情報を変更する
@@ -313,15 +315,15 @@
     - name: 顧客と連携する
       href: work-with-customers/index.yml
       items:
-        - name: サイトとファイルを外部で共有する
+        - name: サイトとファイルをゲスト ユーザーと共有する
           href: manage/share-sites-with-external-users.md
         - name: 予定表をゲスト ユーザーと共有する
           href: manage/share-calendars-with-external-users.md
-        - name: チームを作成してゲストを追加する
+        - name: ゲスト ユーザーとのチームを作成する
           href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: ゲストとの Teams の会議のスケジュールを設定する
+        - name: ゲストとの Teams 会議のスケジュールを設定する
           href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
-        - name: ゲストとの Teams の会議に参加する
+        - name: ゲスト ユーザーとの Teams 会議に参加する
           href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
     - name: トラブルシューティング
       href: 'https://docs.microsoft.com/office/troubleshoot/'
