@@ -28,9 +28,10 @@
         - name: '手順 6: リモートワーカーをトレーニングする'
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Microsoft 365 とセキュリティで保護された共同作業を設定する
-      href: setup-secure-collaboration-with-teams.md
       items:
-        - name: Microsoft Teams の 3 層の保護
+        - name: 概要
+          href: setup-secure-collaboration-with-teams.md
+        - name: 手順 1. Microsoft Teamsと３つのレベル保護の構成
           items:
             - name: 3 層の保護の概要
               href: configure-teams-three-tiers-protection.md
@@ -42,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: セキュリティの分離を使用してチームを構成する
               href: secure-teams-security-isolation.md
-        - name: 外部共有を構成する
+        - name: 手順 2。 外部共有を構成する
           items:
             - name: 外部共有の概要
               href: collaborate-with-people-outside-your-organization.md
@@ -69,7 +70,27 @@
             - name: 外部共有リファレンス
               href: microsoft-365-guest-settings.md
     - name: Microsoft 365 での脅威の保護
-      href: deploy-threat-protection.md
+      items:
+        - name: 概要
+          href: deploy-threat-protection.md
+        - name: 展開に対する脅威からの保護手順
+          href: deploy-threat-protection-configure.md
+    - name: データプライバシー規制のための情報の展開保護
+      items:
+        - name: 概要
+          href: information-protection-deploy.md
+        - name: 計画
+          href: information-protection-deploy-assess.md
+        - name: トラック
+          href: information-protection-deploy-compliance.md
+        - name: 防止
+          href: information-protection-deploy-identity-device-threat.md
+        - name: 保護
+          href: information-protection-deploy-protect-information.md
+        - name: 保持
+          href: information-protection-deploy-govern.md
+        - name: 調査
+          href: information-protection-deploy-monitor-respond.md
 - name: 作業負荷のソリューションとシナリオ
   items:
     - name: 概要

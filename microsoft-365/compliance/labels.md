@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 保持ラベルがガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制する方法を説明します。保持ラベルを使用して、Microsoft 365 のレコード管理ソリューションを実装することもできます。
-ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+description: Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365.
+ms.openlocfilehash: 90039930d94de238a784cc4f8cea6463ff4e49b3
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545969"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761697"
 ---
 # <a name="learn-about-retention-labels"></a>保持ラベルの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-おそらく、組織全体では、業界の規制や社内のポリシーを遵守するためにさまざまアクションを実行する必要のある、多様な種類のコンテンツがあります。たとえば、次のようなものがあります。
+Across your organization, you probably have different types of content that require different actions taken on them in order to comply with industry regulations and internal policies. For example, you might have:
   
 - 最小限の期間、**保持する**必要のある税フォーム。 
     
@@ -38,11 +38,11 @@ ms.locfileid: "44545969"
     
 - 編集も削除もできないように、**レコードとしてマーク**する必要のある就労ビザ。 
     
-これらのすべてのケースにおいて、保持ラベルは適切なコンテンツで適切な操作を実行するために役立ちます。保持ラベルを使用すると、ガバナンス用に組織全体のデータを分類し、その分類に基づいて保持ルールを強制できます。
+In all of these cases, retention labels can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
   
 保持ラベルを使用すると、次のことができます。
   
-- Outlook on the web、Outlook 2010 以降、OneDrive、SharePoint、Microsoft 365 グループのコンテンツに、**組織内のユーザーが保持ラベルを手動で適用**できるようにします。多くの場合、コンテンツの種類を最も良く理解しているのはそれを扱っているユーザーです。そこでユーザーにコンテンツを分類し、適切なポリシーを適用してもらいます。 
+- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
     
 - コンテンツに次のものが含まれている場合など、特定の条件に一致するときには、**保持ラベルをコンテンツに自動的に適用**できます。 
     
@@ -62,7 +62,9 @@ ms.locfileid: "44545969"
 
 - SharePoint の**ドキュメント ライブラリ、フォルダー、またはドキュメント セットに既定の保持ラベルを適用**することにより、この場所に保存するすべてのドキュメントに既定の保持ラベルが継承されるようになります。
 
-さらに、保持ラベルは、Microsoft 365 アプリとサービス全体でのメールとドキュメントの[レコード管理](records-management.md)をサポートします。 保持ラベルを使用して、コンテンツをレコードとして分類できます。 この操作を行うと、ラベルを変更または削除することはできません。また、コンテンツを編集または削除することはできません。 
+さらに、保持ラベルは、Microsoft 365 アプリとサービス全体でのメールとドキュメントの[レコード管理](records-management.md)をサポートします。 保持ラベルを使用して、コンテンツをレコードとして分類できます。 この操作を行い、コンテンツがMicrosoft 365 に残っている場合、ラベルを変更または削除することはできません。また、コンテンツを編集または削除することはできません。 
+
+保持ラベルは、[秘密度ラベル](sensitivity-labels.md)とは異なり、コンテンツが Microsoft 365 以外の場所に移動した場合は保持されません。
 
 テナントでサポートされる保持ラベルの数に制限はありません。 ただし、10,000 はテナントでサポートされるポリシーの最大数であり、これらには、ラベルを適用するポリシー (保持ラベル ポリシーと自動適用アイテム保持ポリシー) とアイテム保持ポリシーが含まれます。
 
@@ -125,7 +127,7 @@ Exchange パブリック フォルダー、Skype、および Teams チャネル�
 
 保持ラベルは、保持ポリシーと同じ保持操作 (保持してから削除する、保持のみ、または削除のみ) を実施できます。 保持ラベルを使用して、さまざまな保持設定の特定のファイルを識別する高度なファイル プランを実装できます。 保持の仕組みに関する詳細情報は、「[アイテム保持ポリシーの詳細](retention-policies.md)」をご覧ください。
 
-さらに、保持ラベルには 2 つの保持オプションがあります。これらのオプションは保持ラベルでのみ使用でき、アイテム保持ポリシーでは使用できません。保持ラベルを使用すると、次のことができます。
+In addition, a retention label has two retention options that are available only in a retention label and not in a retention policy. With a retention label, you can:
   
 - 保持期間の終了時に処理の確認をトリガーすることができます。SharePoint および OneDrive のドキュメントは削除する前に、確認する必要があるからです。 詳細については、「[廃棄確認](disposition.md#disposition-reviews)」を参照してください。
     
@@ -178,7 +180,7 @@ Outlook on the web でアイテムにラベルを付けるには、アイテム 
   
 ![Outlook on the web の [ポリシーの割り当て] メニュー](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
-保持ラベルが適用されると、アイテムの上部にその保持ラベルとラベルが実行するアクションが表示されます。メールが分類され、保持期間が関連付けられている場合、メールの有効期限が一目でわかります。
+After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email is classified and has an associated retention period, you can know at a glance when the email will expire.
   
 ![メールに割り当てられたラベル (Outlook on the web)](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
@@ -285,30 +287,30 @@ Outlook では、保持ラベルまたはアイテム保持ポリシーを適用
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーでの条件としての保持ラベルの使用
 
-保持ラベルはコンテンツに対して保持アクションを強制できます。また、保持ラベルをデータ損失防止 (DLP) ポリシーで条件として使用できます。DLP ポリシーは特定のラベルを含むコンテンツに対して、アクセスを制限するなどの他のアクションを強制できます。 
+A retention label can enforce retention actions on content. In addition, you can use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
   
 詳細については、「[DLP ポリシーにおける条件としての保持ラベルの使用](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)」を参照してください。
   
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>保持の原則、すなわち優先順位について
 
-コンテンツには複数のアイテム保持ポリシーが適用され、各ポリシーに異なるアクション (保持または削除、あるいはその両方) と保持期間が設定されている場合が多くあります。どれが優先されるのでしょうか? 概ね、あるポリシーで保持されているコンテンツを別のポリシーで完全に削除することはできないので、ご安心ください。
+It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
   
 ![保持の原則の図](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 保持アクションが設定されたさまざまなラベルがコンテンツにどのように適用されているかを理解するには、次の保持の原則に注意してください。
   
-1. **保持の削除が優先されます。** あるアイテム保持ポリシーで 3 年後に Exchange メールを削除するように設定され、別のアイテム保持ポリシーでは Exchange メールを 5 年間保持してから削除するように設定されているとします。この場合、3 年を経過したコンテンツはすべて削除され、ユーザーには表示されなくなりますが、コンテンツは完全に削除される 5 年を経過するまで、回復可能なアイテム フォルダーに保持されます。 
+1. **Retention wins over deletion.** Suppose that one retention policy says to delete Exchange email after three years, but another retention policy says to retain Exchange email for five years and then delete it. Any content that reaches three years old will be deleted and hidden from the users' view, but still retained in the Recoverable Items folder until the content reaches five years old, when it will be permanently deleted. 
     
-2. **最長の保持期間が優先されます。** コンテンツを保持する複数のポリシーの対象となるコンテンツは、最長の保持期間が終了するまで保持されます。 
+2. **The longest retention period wins.** If content's subject to multiple policies that retain content, it will be retained until the end of the longest retention period. 
     
-3. **明示的な包含は暗黙的な包含に優先します。** これは次を意味します。 
+3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
     1. Exchange メールや OneDrive ドキュメントなど、ユーザーが保持設定の保持ラベルを手動でアイテムに割り当てた場合、サイトまたはメールボックス レベルで割り当てたポリシーや、ドキュメント ライブラリで割り当てた既定の保持ラベルよりも、手動で割り当てたラベルが優先されます。 たとえば、明示的な保持ラベルでは 10 年間保持し、サイトに割り当てたアイテム保持ポリシーでは 5 年間のみ保持する場合、明示的な保持ラベルが優先されます。 自動適用の保持ラベルは、Microsoft 365 によって自動的に適用されるため、明示的ではなく、暗黙的とされます。
     
     2. アイテム保持ポリシーに特定のユーザーのメールボックスまたは OneDrive のアカウントなどの特定の場所が含まれている場合、そのポリシーは、すべてのユーザーのメールボックスまたは OneDrive のアカウントに適用されるが、そのユーザーのメールボックスを特に含まない別の保持ポリシーよりも優先されます。
     
-4. **最短の削除期間が優先されます。** 同様に、コンテンツを削除する複数のポリシー (保持なし) の対象となるコンテンツは、最短保持期間の終了時に削除されます。 
+4. **The shortest deletion period wins.** Similarly, if content's subject to multiple policies that delete content (with no retention), it will be deleted at the end of the shortest retention period. 
     
 保持の原則は上位から下位のタイブレーク フローとして機能することを理解します。すべてのポリシーまたはラベルによって適用された複数のルールがあるレベルで同じ場合、フローは次の下位レベルに移動し、ルールが適用される優先順位を決定します。
   

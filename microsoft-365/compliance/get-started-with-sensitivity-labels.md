@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 47122e4ec6f902e0c84bd223ff771dc5db6fdfa5
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 2fbb54cadaa1681ace4e04dade4fd5a0784360eb
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560484"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739053"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -42,7 +42,7 @@ ms.locfileid: "44560484"
 
 2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、"一般" ラベルなどの秘密度の低いコンテンツには単にヘッダーやフッターを適用し、"社外秘" ラベルなどの秘密度のより高いコンテンツには透かしや暗号化を適用する、といったことができます。
 
-3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用できます。一度定義したラベルは、異なるユーザーに割り当てる複数のラベル ポリシーに含めることができます。 たとえば、ラベル ポリシーをごく少数のユーザーに対して適用して、秘密度ラベルを試験運用することができます。 組織全体に対してラベルを展開する準備ができたら、ラベルの新しいラベル ポリシーを作成し、今回はすべてのユーザーを指定することができます。
+3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1 つのラベルは再利用できます。 一度定義したラベルは、異なるユーザーに割り当てる複数のラベル ポリシーに含めることができます。 たとえば、ラベル ポリシーをごく少数のユーザーに対して適用して、秘密度ラベルを試験運用することができます。 組織全体に対してラベルを展開する準備ができたら、ラベルの新しいラベル ポリシーを作成し、今回はすべてのユーザーを指定することができます。
 
 秘密度ラベルを展開して適用するための基本的な流れ:
 
@@ -64,16 +64,24 @@ ms.locfileid: "44560484"
 
 これらのアクセス許可は、機密ラベルとそのラベル ポリシーの作成と構成を行う場合にのみ必要です。 アプリまたはサービスでラベルを適用するためには必要はありません。 秘密度ラベルに関連する特定の構成に追加のアクセス許可が必要な場合、それらのアクセス許可はそれぞれのドキュメントの説明に記載されています。
 
+## <a name="deployment-strategy-for-sensitivity-labels"></a>秘密度ラベルの展開戦略
+
+組織の秘密度ラベルの展開戦略を成功させるには、ビジネス要件と技術要件、概念実証テスト、内部チェックポイントと承認、運用環境の最終的な展開を特定し管理する作業仮想チームを作成します。
+
+次のセクションの表を使用して、最も影響力のあるビジネス要件にマッピングされる上位 1 つまたは 2 つのシナリオを特定することをお勧めします。 これらのシナリオが展開されたら、リストに戻り、次に展開する優先順位の 1 つまたは 2 つを特定します。
+
+追加の一般的なガイダンスは、ダウンロード可能な「Microsoft 365 Information Protection & コンプライアンス展開促進ガイド」を参照してください。 詳細については、「[Microsoft の情報保護とコンプライアンス展開の促進ガイド](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493)」ブログ投稿を参照してください。
+
 ## <a name="common-scenarios-for-sensitivity-labels"></a>秘密度ラベルの一般的なシナリオ
 
-秘密度ラベル付けの展開をサポートするには、次のドキュメントを使用してください。
+すべてのシナリオで、[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)必要があります。
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|
-|組織のデータを保護できるように、秘密度ラベルを作成して公開する|[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md)|
-|秘密度ラベルを使用してドキュメントやメールを暗号化し、そのコンテンツにアクセスできるユーザーとその使用方法を制限する |[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)|
-|ドキュメントが暗号化されている場合でも、共同編集、電子情報開示、データ損失防止、検索をサポートし、Office on the web の秘密度ラベルを有効にします。 | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
 |Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付ける |[Office アプリで秘密度ラベルを使用する](sensitivity-labels-office-apps.md)|
+|ユーザーが Office アプリ、エクスプローラー、および PowerShell を使用して、Windows コンピューターからファイルにラベルを付けて保護できるようにする|[Windows 用のAzure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
+|秘密度ラベルを使用してドキュメントやメールを暗号化し、そのコンテンツにアクセスできるユーザーとその使用方法を制限する |[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)|
+|ドキュメントが暗号化されている場合でも、共同編集、電子情報開示、データ損失防止、検索をサポートし、Office on the web の秘密度ラベルを有効にする | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
 |秘密度ラベルをドキュメントとメールに自動的に適用する | [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)|
 |秘密度ラベルを使用して、Teams や SharePoint のコンテンツを保護する |[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する (パブリック プレビュー)](sensitivity-labels-teams-groups-sites.md)|
 |オンプレミスのデータ ストアに保存されているファイルを検出、ラベル付け、保護する |[ファイルを自動的に分類および保護するための Azure Information Protection スキャナーを展開する](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|

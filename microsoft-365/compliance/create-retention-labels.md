@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除し、Office 365 環境でアイテムをレコードとして宣言するための、保持ラベルの作成、発行、および自動適用の手順。
-ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 035038c90179354e0497813326b1fdad01693bec
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545959"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761653"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>保持ラベルを作成、発行、および自動適用する
 
@@ -40,7 +40,7 @@ ms.locfileid: "44545959"
   
 詳細については、「[ユーザーに Office 365 セキュリティ センター/コンプライアンス センターへのアクセス権を付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
   
-これらのアクセス許可は、保持ラベルとラベル ポリシーを作成して適用するときにのみ必要になります。ポリシーを適用する場合に、コンテンツへのアクセスは必要ありません。
+These permissions are required only to create and apply retention labels and a label policy. Policy enforcement does not require access to the content.
 
 ## <a name="create-and-configure-retention-labels"></a>保持ラベルを作成して構成する
 
@@ -127,11 +127,11 @@ ms.locfileid: "44545959"
   
 ![機密情報の種類によるポリシー テンプレート](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
-ポリシー テンプレートを選択すると、すべての種類の機密情報を追加または削除したり、インスタンス数と一致精度を変更したりできます。ここに示す例では、保持ラベルは次の場合にのみ自動的に適用されます。
+After you select a policy template, you can add or remove any types of sensitive information, and you can change the instance count and match accuracy. In the example shown here, a retention label will be auto-applied only when:
   
-- コンテンツに、次の 3 種類の機密情報のいずれかに 1 から 9 個のインスタンスが含まれる場合。**最大** 値を削除して、**任意** の値に変更できます。
+- The content contains between 1 and 9 instances of any of these three sensitive information types. You can delete the **max** value so that it changes to **any**.
     
-- 検出された機密情報の種類は、一致精度 (または信頼レベル) が少なくとも 75 に設定されています。多くの機密情報の種類は複数のパターンで定義されています。一致精度の高いパターンでは、より多くの証拠 (キーワード、日付、アドレスなど) が検索される必要がありますが、一致精度の低いパターンでは必要な証拠は少なくなります。簡単に言えば、一致精度の **最小** 値が低いほど、コンテンツは条件に一致しやすくなります。 
+- The type of sensitive information that's detected has a match accuracy (or confidence level) of at least 75. Many sensitive information types are defined with multiple patterns, where a pattern with a higher match accuracy requires more evidence to be found (such as keywords, dates, or addresses), while a pattern with a lower match accuracy requires less evidence. Simply put, the lower the **min** match accuracy, the easier it is for content to match the condition. 
     
 これらのオプションの詳細については、「[一致の難易度を設定するためのルールの調整](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)」をご覧ください。
     
@@ -139,13 +139,13 @@ ms.locfileid: "44545959"
   
 ### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>キーワードまたは検索可能なプロパティによるコンテンツへの自動適用ラベル
 
-特定の条件を満たすコンテンツにラベルを自動的に適用できます。現在利用可能な条件では、特定の単語、フレーズ、または検索可能なプロパティの値を含むコンテンツへのラベルの適用がサポートされています。AND、OR、NOT などの検索演算子を使用してクエリを絞り込むことができます。
+You can auto-apply labels to content that satisfies certain conditions. The conditions now available support applying a label to content that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators like AND, OR, and NOT.
 
 クエリ構文の詳細については、次を参照してください。
 
 - [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-クエリ ベースのラベルは検索インデックスを使用してコンテンツを特定します。有効な検索可能なプロパティの詳細については、以下を参照してください。
+Query-based labels use the search index to identify content. For more information on valid searchable properties, see:
 
 - [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
 - [クロールされたプロパティと管理プロパティの概要 (SharePoint Server)](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
@@ -184,13 +184,15 @@ ms.locfileid: "44545959"
     
 ### <a name="published-retention-labels"></a>発行された保持ラベル
 
-SharePoint または OneDrive に保持ラベルを発行する場合、保持ラベルがエンド ユーザーに表示されるまでに 1 日かかる場合があります。また、Exchange に保持ラベルを発行する場合は、保持ラベルがエンド ユーザーに表示するまでに 7 日間かかる場合があり、さらにメールボックスには少なくとも 10 MB のデータが含まれている必要があります。
+If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to seven days. If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.
+
+例:
   
 ![手動ラベルが有効になるタイミングの図](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 ### <a name="auto-apply-retention-labels"></a>自動適用の保持ラベル
 
-特定の条件に一致するコンテンツに保持ラベルを自動適用する場合、条件に一致するすべての既存コンテンツに保持ラベルが適用されるまでに 7 日間かかります。
+特定の条件に一致するコンテンツに保持ラベルを自動適用する場合、条件に一致するすべての既存コンテンツに保持ラベルが適用されるまでに最大 7 日間かかります。
   
 ![自動適用ラベルが有効になるタイミングの図](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -211,29 +213,28 @@ Exchange Online では、7 日ごとにプロセスが実行され、保持ラ�
    ```
 
    ```powershell
-   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
-   ```
+   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}   ```
 
-結果の中で、`ELCLastSuccessTimeStamp` (UTC) プロパティは、システムがメールボックスを最後に処理した日時を示しています。 ポリシーの作成後に処理がまだ行われていない場合は、ラベルは表示されません。 処理を強制的に行うには、`Start-ManagedFolderAssistant -Identity <user>` を実行します。
+In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the system last processed your mailbox. If it has not happened since the time you created the policy, the labels are not going to appear. To force processing, run  `Start-ManagedFolderAssistant -Identity <user>`.
     
-Outlook on the web にラベルが表示されると思われるにもかかわらず、ラベルが表示されない場合は、ブラウザーのキャッシュを必ず消去してください (CTRL + F5)。
+If labels aren't appearing in Outlook on the web and you think they should be, make sure to clear the cache in your browser (CTRL+F5).
     
 
-## <a name="updating-retention-labels-and-their-policies"></a>保持ラベルとそのポリシーの更新
+## Updating retention labels and their policies
 
-保持ラベル、保持ラベル ポリシー、または自動適用ポリシーを編集し、保持ラベルまたはポリシーが既にコンテンツに適用されているとき、更新された設定は、新しく識別されたコンテンツに加えて、このコンテンツに自動的に適用されます。
+When you edit a retention label, retention label policy, or auto-apply policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
-ラベルやポリシーを作成して保存した後には変更できない設定があり、それらは以下のものを含みます。
-- 作成日時に基づいてコンテンツを保持または削除するようにラベルを構成していない場合を除いた、保持期間以外の保持設定。
-- レコードとして分類するオプション。
+Some settings can't be changed after the label or policy is created and saved, which include:
+- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The option to classify as a record.
 
-## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>保持ラベルの PowerShell コマンドレットを検索する
+## Find the PowerShell cmdlets for retention labels
 
-保持ラベルのコマンドレットを使用するには:
+To use the retention label cmdlets:
   
-1. [Office 365 セキュリティ センターとコンプライアンス センターの PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. 以下の Office 365 セキュリティ センターとコンプライアンス センターのコマンドレットの使用
+2. Use these Office 365 Security & Compliance Center cmdlets:
     
     - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
     
