@@ -1,5 +1,5 @@
 ---
-title: 保持されているクラウドメールボックス内のアイテムを削除する回復可能なアイテムフォルダー-管理者ヘルプ
+title: クラウドメールボックス内のアイテムを削除する [回復可能なアイテムを保持する] フォルダー
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: '管理者の場合: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除します (法的情報保留に設定されている場合も含む)。 これは、Microsoft 365 に誤ってこぼれたデータを削除する効果的な方法です。'
+description: Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを削除する方法について説明します。そのメールボックスが法的情報保持に配置されている場合でも削除できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352182"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817876"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>クラウドベースのメールボックスの [回復可能なアイテム] フォルダー内のアイテムを削除する-管理者向けヘルプ
 
@@ -46,7 +46,7 @@ Exchange Online メールボックスの回復可能なアイテムフォルダ�
 > [!CAUTION]
 > この記事に記載されている手順により、Exchange Online メールボックスからデータが完全に削除 (パージ) されます。 これは、回復可能なアイテムフォルダーから削除されたメッセージを回復できず、法的証拠開示やその他の法令遵守のために利用できないことを意味します。 セキュリティ/コンプライアンスセンターで作成された訴訟ホールド、インプレースホールド、電子情報開示の保持、またはアイテム保持ポリシーの一部として保留になっているメールボックスからメッセージを削除する場合は、保留リストを削除する前に、レコード管理または法務部門に確認してください。 組織には、保留中のメールボックスとデータ流出インシデントのどちらを優先するかを定義するポリシーがあります。 
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-delete-items"></a>アイテムを削除する前に
 
 - コンテンツ検索を作成して実行するには、電子情報開示管理者役割グループのメンバーであるか、コンプライアンス検索の管理役割が割り当てられている必要があります。 メッセージを削除するには、Organization Management 役割グループのメンバーであるか、検索と消去の管理役割が割り当てられている必要があります。 ユーザーを役割グループに追加する方法の詳細については、「[セキュリティ/コンプライアンス センターの電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」をご覧ください。
 

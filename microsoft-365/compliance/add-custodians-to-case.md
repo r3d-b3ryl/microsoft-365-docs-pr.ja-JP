@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 高度な電子情報開示の組み込みの保管担当者管理ツールを使用してワークフローを調整し、ケースに関連するデータソースを特定する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034691"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818614"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースに保管担当者を追加する
 
@@ -32,7 +32,7 @@ Advanced 電子情報開示の組み込みの保管担当者管理ツールを�
 
 ![[保管担当者の管理] タブ](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="make-sure-you-have-the-necessary-permissions"></a>必要なアクセス許可を持っていることを確認する
 
 ケースに保管担当者を追加するには、電子情報開示マネージャーの役割グループのメンバーである必要があります。 これにより、ケースに保管担当者を追加し、custodial データソースにホールドを配置するために必要なアクセス許可が提供されます。
 

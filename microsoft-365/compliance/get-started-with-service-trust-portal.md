@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 mscollection: M365-security-compliance
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: Microsoft 365、Azure、および Dynamics 365 Online の法令遵守レポートでは、サードパーティの監査を確認するために、Microsoft が顧客データを安全に保持する方法と、これらのオンラインサービスを使用する場合に ISO、HIPAA、NIST、FINRA、GDPR、および FedRAMP に準拠する方法について説明します。
-ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft Service Trust Portal にアクセスして使用する方法について説明します。セキュリティ、プライバシー、およびコンプライアンスのプラクティスに役立てることができます。
+ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632448"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817626"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft Service Trust Portal を使い始める
 
@@ -29,7 +31,7 @@ Microsoft Service Trust Portal は、Microsoft のセキュリティ、プライ
 
 Service Trust Portal には、クラウドサービスおよびお客様のデータを保護する Microsoft の制御とプロセスの実装に関する詳細が含まれています。 サービス信頼ポータルの一部のリソースにアクセスするには、Microsoft クラウドサービスアカウント (Azure Active Directory 組織アカウントまたは Microsoft アカウント) を使用して認証済みユーザーとしてログインし、法令遵守のための Microsoft の機密保持契約書を確認して同意する必要があります。
   
-**既存のお客様**は、次の[https://aka.ms/STP](https://aka.ms/STP)オンラインサブスクリプション (試用版または有料版) のいずれかでサービス信頼ポータルにアクセスできます。 
+**既存のお客様**は、 [https://aka.ms/STP](https://aka.ms/STP) 次のオンラインサブスクリプション (試用版または有料版) のいずれかでサービス信頼ポータルにアクセスできます。 
   
 - Microsoft 365
 
@@ -122,7 +124,7 @@ Microsoft セキュリティ[センター](https://www.microsoft.com/trust-cente
 
 - **ユーザーのプライバシー設定:** このページでは、特定のユーザーのコンプライアンスマネージャーで、アクションアイテムの割り当てを含むレポートをエクスポートできます。 また、すべてのアクションアイテムを別のユーザーに再割り当てし、指定されたユーザーから割り当てられたアクションアイテムを削除することもできます。 詳細については、「[ユーザーのプライバシー設定](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)」を参照してください。
 
-### <a name="search"></a>検索
+### <a name="search"></a>Search
 
 [サービス信頼ポータル] ページの右上隅にある虫眼鏡をクリックして、ボックスを展開し、検索語句を入力**して enter キーを**押します。 検索**ページが**表示されます。検索語が検索ボックスに表示され、下に表示されている検索結果が表示されます。
   

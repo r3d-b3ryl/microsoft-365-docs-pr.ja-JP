@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: この記事に記載されている Windows PowerShell スクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで既存のコンテンツ検索をすばやく複製します。
-ms.openlocfilehash: 013a3cd04b665e1da800638a2335adb034878a4a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 28f1264736f158fd686174813b9cefdd087c274c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035649"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818086"
 ---
 # <a name="clone-a-content-search"></a>コンテンツ検索をコピーする
 
@@ -37,7 +37,7 @@ Office 365 または Microsoft 365 のコンプライアンスセンターで、
     
 - 検索結果のサイズを小さくします。 たとえば、エクスポートする結果が多すぎる場合は、検索結果の複製を作成し、日付範囲に基づく検索条件を追加して、検索結果の数を減らすことができます。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="script-information"></a>スクリプト情報
 
 - このトピックで説明するスクリプトを実行するには、セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。
     
@@ -61,7 +61,7 @@ Office 365 または Microsoft 365 のコンプライアンスセンターで、
     
 検索をクローンするには、次のようにします。
   
-1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、 `CloneSearch.ps1`のようになります。
+1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、のように `CloneSearch.ps1` なります。
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.

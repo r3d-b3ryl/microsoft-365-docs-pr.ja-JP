@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724787"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780720"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -184,7 +184,7 @@ Microsoft 365 コンプライアンスセンターで機密ラベルを作成ま
 
 ただし、両方の保護ソリューションを一緒に使用することができ、その動作は次のようになります。 
 
-- 暗号化を適用する機密ラベル付きのファイルをアップロードする場合、これらのファイル、共同編集、電子情報開示、DLP、検索はサポートされていないため、暗号化は削除されません。
+- 暗号化を適用する機密ラベルを含むファイルをアップロードすると、SharePoint はこのファイルを処理できないため、このファイルに対して共同編集、電子情報開示、DLP、検索が機能しなくなります。
 
 - Web 上の Office を使用してファイルにラベルを付けると、そのラベルの暗号化設定が適用されます。 これらのファイルでは、共同編集、電子情報開示、DLP、検索がサポートされています。
 

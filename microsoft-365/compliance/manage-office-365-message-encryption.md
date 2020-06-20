@@ -16,13 +16,15 @@ ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web に [保護] ボタンを表示したり、その他の設定を行ったりすることができます。 この記事のタスクでは、その方法について説明します。
-ms.openlocfilehash: 25cb5cebda48432afdc670a6dab0a5229167df15
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 Message Encryption (OME) の設定を終了したら、いくつかの方法で展開をカスタマイズする方法について説明します。
+ms.openlocfilehash: 83fa620852ea9b2e0cd50d50b6715742658b7239
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165978"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815434"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption
 
@@ -191,9 +193,9 @@ Microsoft 365 で、[暗号化のみ] オプションを使用して電子メー
 
    - `mail flow rule name`は、新しいメールフロールールに使用する名前です。
 
-   - `option name`は、 `Encrypt`また`Do Not Forward`はのいずれかです。
+   - `option name`は、またはのいずれか `Encrypt` `Do Not Forward` です。
 
-   - `template name`は、カスタムブランド化テンプレートに指定した名前です`OME Configuration`(例:)。
+   - `template name`は、カスタムブランド化テンプレートに指定した名前です (例 `OME Configuration` :)。
 
    "OME Configuration" テンプレートを使用してすべての外部電子メールを暗号化し、暗号化のみのオプションを適用するには、次のようにします。
 

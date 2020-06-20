@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3169a1e9e7cb8b269e74463adaee017b8f48e4ad
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 89456de1ec4ef170d85d7bd9c6b210d8bdb39f28
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065942"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773728"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>米国証券取引委員会 (SEC) ルール 17a-4-4 (f) 米国
 
@@ -40,7 +40,7 @@ SEC は、電子記憶メディアに書籍や記録を保持することを選�
 SEC Rule 17a-4 (f) に準拠するように Azure と Office 365 のコンプライアンスを評価するために、Microsoft は、レコード管理と情報ガバナンスに特化した独立した評価会社を保有しています。 Cohasset が関連しています。 生成されるレポートの対象:
 
 - **Azure**: [SEC 17a-4-4 (f) コンプライアンス評価: Microsoft azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset は、ポリシーロックオプションを使用して、時間ベースの blob[ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage)を消去できないようにすることを検証しています。このオプションを使用すると、消去不能かつ書き換え不可 (WORM) 形式で時間ベースの blob を保持することができます。 各 Blob (レコード) は、必要な保存期間が期限切れになり、関連付けられた法的保持が解放されるまで、変更、上書き、または削除されないように保護されます。 機密性の高いワークロードを持つソフトウェアプロバイダーとパートナーは、レコード保持と不変のストレージのための onestop ショップクラウドソリューションとして、Azure 不変 Blob ストレージを利用できるようになりました。 金融機関は、これらの機能を利用して、準拠したまま、自分のアプリケーションを構築できるようになりました。
-- **Office 365**: [Exchange Online を使用して SEC 17a-4 に準拠](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)します。 Cohasset では、 [office 365 に保持ロック](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy)が設定されていると、ブローカーディーラーを含む規制対象の顧客が、レコード保持の SEC 要件に準拠するために役立つ方法でデータを保存できるようにするアーカイブ機能があります。 Office 365 のアイテム保持ポリシーでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。
+- **Office 365**: [Exchange Online を使用して SEC 17a-4 に準拠](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)します。 Cohasset では、 [office 365 に保持ロック](retention-policies.md)が設定されていると、ブローカーディーラーを含む規制対象の顧客が、レコード保持の SEC 要件に準拠するために役立つ方法でデータを保存できるようにするアーカイブ機能があります。 Office 365 のアイテム保持ポリシーでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 

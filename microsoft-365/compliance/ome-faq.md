@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
-ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717156"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818680"
 ---
 # <a name="message-encryption-faq"></a>メッセージ暗号化に関する FAQ
 
@@ -103,7 +104,7 @@ Microsoft 365 のユーザーは、Outlook for Windows および Mac (2013 お�
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>保護された電子メールの添付ファイルとしてサポートされているファイルの種類は何ですか。 添付ファイルは、保護された電子メールに関連付けられている保護ポリシーを継承しますか?
 
-保護されたメールには任意のファイルの種類を添付できますが、保護ポリシーは、[ここ](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)に記載されているファイル形式でのみ適用されます。
+保護されたメールには任意のファイルの種類を添付できますが、保護ポリシーは、 [Azure Information protection クライアントでサポートされているファイルの種類](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)で記述されているファイル形式でのみ適用されます。
   
 ファイル形式がサポートされている場合 (Word、Excel、PowerPoint ファイルなど)、受信者によって添付ファイルがダウンロードされた後も、ファイルは常に保護されます。 たとえば、添付ファイルが [転送不可] で保護され、元の受信者がその添付ファイルを新しい受信者にダウンロードして転送する場合、新しい受信者は保護されたファイルを開くことができません。
   

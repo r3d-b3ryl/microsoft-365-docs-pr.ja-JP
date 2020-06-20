@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Advanced eDiscovery での処理には、保管担当者データのインデックス再作成、埋め込まれたドキュメントと添付ファイルの拡張、および OCR が含まれます。 また、処理にはインデックス作成エラーの修復も含まれます。
-ms.openlocfilehash: ab0b9d3a92590812531be04f193ef51afa70a1cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 の高度な電子情報開示ツールで各種のデータを処理する方法の概要を確認します。
+ms.openlocfilehash: ec39df5ba8f8ad4ce979b2cd110e14f29f7838b4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632222"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818786"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>高度な電子情報開示で処理エラーを処理する
 

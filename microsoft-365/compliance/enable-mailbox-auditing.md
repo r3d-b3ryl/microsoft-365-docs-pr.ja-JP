@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: 既定では、メールボックス監査ログは既定で有効になっています (既定では、既定のメールボックスの監査またはメールボックスの監査とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録されることを意味します。このログでは、メールボックスに対して実行されたアクティビティを検索できます。
-ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.custom: seo-marvel-apr2020
+description: メールボックス監査ログは、Microsoft 365 では既定で有効になっています (既定では、既定のメールボックスの監査またはメールボックスの監査とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録されることを意味します。このログでは、メールボックスに対して実行されたアクティビティを検索できます。
+ms.openlocfilehash: 5b1aaab6db56d989c36cd977122d4e5843587aac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371431"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817836"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -110,7 +111,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**コピーする**|メッセージが別のフォルダーにコピーされました。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|メールボックス内の予定表、連絡先、メモ、または仕事フォルダーにアイテムが作成されました (たとえば、新しい会議出席依頼が作成された場合)。 メッセージの作成、送信、または受信は監査されません。 また、メールボックス フォルダーの作成も監査されません。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Default**||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**FolderBind**|メールボックス フォルダーがアクセスされました。この操作は、管理者または委任されたユーザーがメールボックスを開いたときにも記録されます。<br/><br/> **注**: 代理人によって実行されたフォルダーバインド操作の監査レコードは統合されます。 1つの監査レコードは、24時間内に個々のフォルダーへのアクセスに対して生成されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **注**: 代理人によって実行されたフォルダーバインド操作の監査レコードは統合されます。 1つの監査レコードは、24時間内に個々のフォルダーへのアクセスに対して生成されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|メッセージが [回復可能なアイテム] フォルダーから削除されました。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|メールデータは、メールプロトコルおよびクライアントによってアクセスされます。 この値は、E5 または E5 コンプライアンスアドオンのサブスクリプションユーザーに対してのみ使用できます。 詳細については、「[調査のための重要なイベントへのアクセス](advanced-audit.md#access-to-crucial-events-for-investigations)」を参照してください。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailboxLogin**|ユーザーが自分のメールボックスにサインインしている。 |||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -120,11 +121,11 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**MoveToDeletedItems**|メッセージが削除され、[削除済みアイテム] フォルダーに移動されました。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**RecordDelete**|レコードとしてラベル付けされたアイテムは、回復可能な削除 (回復可能なアイテムフォルダーに移動) されました。 レコードとしてラベル付けされたアイテムを完全に削除することはできません (回復可能なアイテムフォルダーから削除されます)。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**RemoveFolderPermissions**|**注**: この値はメールボックスアクションとして受け入れられますが、既に**updatefolderpermissions**アクションに含まれており、個別に監査されていません。 言い換えると、この値は使用しないでください。||||
-|**SendAs**|SendAs アクセス許可を使用してメッセージが送信されました (他のユーザーがこのメールボックスの所有者を装ってメッセージを送信しました)。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SendOnBehalf**|SendOnBehalf アクセス許可を使用してメッセージが送信されました (他のユーザーがこのメールボックスの所有者の代理人としてメッセージを送信しました)。この場合は、メッセージの名目上の送信者と実際の送信者が受信者に示されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|メッセージが完全に削除された、つまり [削除済みアイテム] フォルダーから削除されました。削除済み (回復可能) アイテムは、回復可能なアイテム フォルダーに移動されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Update**|メッセージまたはそのプロパティが変更されました。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-|**UpdateCalendarDelegation**|メールボックスに予定表の委任が割り当てられました。予定表の委任により、同じ組織の他のユーザーに、メールボックス所有者の予定表を管理する権限が付与されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateCalendarDelegation**|A calendar delegation was assigned to a mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateComplianceTag**|メールアイテムに別の保持ラベルが適用されます (アイテムには、1つの保持ラベルが割り当てられている場合があります)。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**UpdateFolderPermissions**|フォルダーのアクセス許可が変更されました。 フォルダーのアクセス許可では、メールボックス内のフォルダーとそれらのフォルダーに格納されているメッセージにアクセスできる組織内のユーザーを制限します。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**UpdateInboxRules**|受信トレイルールが追加、削除、または変更されました。 受信トレイルールは、指定された条件に基づいてユーザーの受信トレイ内のメッセージを処理し、指定されたフォルダーにメッセージを移動したり、メッセージを削除したりするなど、ルールの条件が満たされたときにアクションを実行するために使用されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -147,20 +148,20 @@ Microsoft 365 グループメールボックスに対するフルアクセスの
 |**MoveToDeletedItems**|メッセージが削除され、[削除済みアイテム] フォルダーに移動されました。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**SendAs**|SendAs アクセス許可を使用してメッセージが送信されました。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
 |**SendOnBehalf**|SendOnBehalf アクセス許可を使用してメッセージが送信されました。 |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
-|**SoftDelete**|メッセージが完全に削除された、つまり [削除済みアイテム] フォルダーから削除されました。削除済み (回復可能) アイテムは、回復可能なアイテム フォルダーに移動されます。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**Update**|メッセージまたはそのプロパティが変更されました。|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>ログオンの種類ごとに既定のメールボックスアクションがログに記録されていることを確認する
 
 既定でのメールボックスの監査すべてのメールボックスに新しい*Defaultauditset*プロパティを追加します。 このプロパティの値は、メールボックスの既定のメールボックスの操作 (Microsoft が管理する) が監査されているかどうかを示します。
 
-ユーザーメールボックスまたは共有メールボックスに値を表示するには、 \< MailboxIdentity を \> メールボックスの名前、エイリアス、電子メールアドレス、またはユーザープリンシパル名 (ユーザー名) に置き換えて、Exchange Online PowerShell で次のコマンドを実行します。
+ユーザーメールボックスまたは共有メールボックスに値を表示するには、 \<MailboxIdentity\> メールボックスの名前、エイリアス、電子メールアドレス、またはユーザープリンシパル名 (username) に置き換えて、Exchange Online PowerShell で次のコマンドを実行します。
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Microsoft 365 グループメールボックスに値を表示するには、 \< MailboxIdentity を \> 共有メールボックスの名前、エイリアス、または電子メールアドレスに置き換え、Exchange Online PowerShell で次のコマンドを実行します。
+Microsoft 365 グループメールボックスの値を表示するには、を \<MailboxIdentity\> 共有メールボックスの名前、エイリアス、または電子メールアドレスに置き換えて、Exchange Online PowerShell で次のコマンドを実行します。
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -186,7 +187,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>メールボックスにログオンしているメールボックスのアクションを表示する
 
-ユーザーのメールボックスまたは共有メールボックスに現在ログオンしているメールボックスの操作を表示するには、 \< MailboxIdentity を \> メールボックスの名前、エイリアス、電子メールアドレス、またはユーザープリンシパル名 (ユーザー名) に置き換えて、Exchange Online PowerShell で次のコマンドを1つ以上実行します。
+ユーザーのメールボックスまたは共有メールボックスに現在ログオンしているメールボックスの操作を表示するには、 \<MailboxIdentity\> メールボックスの名前、エイリアス、電子メールアドレス、またはユーザープリンシパル名 (ユーザー名) に置き換えて、Exchange Online PowerShell で次のコマンドを1つ以上実行します。
 
 > [!NOTE]
 > `-GroupMailbox`Microsoft 365 グループメールボックスの次の**取得メールボックス**コマンドにスイッチを追加することはできますが、返される値は信じられません。 Microsoft 365 グループメールボックスに関して監査される既定および静的メールボックスのアクションについては、このトピックで前述した「 [microsoft 365 グループメールボックスのメールボックスアクション](#mailbox-actions-for-microsoft-365-group-mailboxes)」セクションを参照してください。
@@ -316,7 +317,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 現在、組織内のメールボックスの監査が既定でオンになっている場合、特定のメールボックスのメールボックス監査を無効にすることはできません。 たとえば、 *Auditenabled* mailbox プロパティを**False**に設定することは無視されます。
 
-ただし、Exchange Online PowerShell で**set-mailboxauditbypassassociation**コマンドレットを使用して、アクションが発生した場所に関係なく、指定されたユーザーによる*すべて*のメールボックスの操作をログに記録しないようにすることができます。 例:
+ただし、Exchange Online PowerShell で**set-mailboxauditbypassassociation**コマンドレットを使用して、アクションが発生した場所に関係なく、指定されたユーザーによる*すべて*のメールボックスの操作をログに記録しないようにすることができます。 たとえば、次のようにします。
 
 - バイパスユーザーが実行したメールボックスの所有者のアクションは記録されません。
 
@@ -324,7 +325,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 - バイパスユーザーによって実行された管理操作は記録されません。
 
-特定のユーザーのメールボックス監査ログをバイパスするには、 \< MailboxIdentity を \> ユーザーの名前、電子メールアドレス、エイリアス、またはユーザープリンシパル名 (ユーザー名) に置き換えて、次のコマンドを実行します。
+特定のユーザーのメールボックス監査ログをバイパスするには、を \<MailboxIdentity\> ユーザーの名前、メールアドレス、エイリアス、またはユーザープリンシパル名 (username) に置き換えて、次のコマンドを実行します。
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
@@ -359,7 +360,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
     - [メールボックス監査ログのエクスポート](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
-    - [所有者以外のメールボックス アクセスのレポートの実行](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
+    - [所有者以外のメールボックス アクセスのレポートを実行する](https://docs.microsoft.com/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
 - 既定では、メールボックス監査ログレコードは、削除されるまでは90日間保持されます。 監査ログレコードの有効期限を変更するには、Exchange Online PowerShell の**メールボックスの設定**コマンドレットで、 *auditlogagelimit*パラメーターを使用します。 ただし、この値を大きくすると、監査ログで90日より前のイベントを検索することはできません。
 

@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
-description: 2018年8月15日には、Office 365 Message Encryption (OME) Viewer モバイルアプリを Android および Apple ストアから削除します。 以前のバージョンの OME で Apple と Android の電話機で暗号化された電子メールメッセージと添付ファイルを読み取るには、Office 365 Message Encryption Viewer モバイルアプリが必要でした。 OME Viewer アプリの削除とは別に、以前のバージョンの OME には他の変更は加えていません。
-ms.openlocfilehash: 37a10942e49ca0e6249b2b6a0737411a0d6de1c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 Message Encryption (OME) Viewer アプリが Android および Apple ストアから2018に削除されました。
+ms.openlocfilehash: 9aca6fa2c0e9b276b666ffa187e3d18f061e7224
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636115"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817866"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>廃止メッセージ暗号化ビューアアプリ
 

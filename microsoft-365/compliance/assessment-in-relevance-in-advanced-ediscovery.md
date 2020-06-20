@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: 詳細な電子情報開示で関連性のトレーニングを実施して、さまざまな問題があるかどうかを判断するための評価段階の概要とその役割について説明します。
-ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Microsoft 365 Advanced eDiscovery の関連トレーニングにおいて、さまざまな問題を特定するための評価ステージとその役割についての概要を説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636155"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818416"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>高度な電子情報開示で関連性のある評価を理解する (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 上級電子情報開示では、たとえば定義済みの問題とケースに対してインポートされたデータについて、早期に評価することができます。 上級電子情報開示を使用すると、エキスパートは採用されたアプローチを決定し、ドキュメントレビュープロジェクトにこれらの決定を適用することができます。
   
@@ -51,9 +52,9 @@ ms.locfileid: "43636155"
 必要に応じて、関連性に関する推奨事項を受け入れるか、または現在の誤差の余白を調整することができます。 既定のエラーの現在のマージンは、「呼び戻し」では、75% 以上であることが確認されます。
   
 > [!NOTE]
-> 問題が発生した場合は、展開されたビューの [ ** \>関連性の追跡**] タブで、問題ごとに [**評価**] チェックボックスをオフにし、次に [すべての問題] を選択して、評価ステージをバイパスできます。 そのため、この問題に関する統計情報はありません。 [**評価**] チェックボックスをオフにする > は、評価が実行される前にのみ実行できます。 複数の問題が存在する場合は、各問題のチェックボックスがオフになっている場合にのみ評価が省略されます。 
+> 問題が発生した場合は、展開されたビューの [**関連性の \> 追跡**] タブで、問題ごとに [**評価**] チェックボックスをオフにし、次に [すべての問題] を選択して、評価ステージをバイパスできます。 そのため、この問題に関する統計情報はありません。 [**評価**] チェックボックスをオフにする > は、評価が実行される前にのみ実行できます。 複数の問題が存在する場合は、各問題のチェックボックスがオフになっている場合にのみ評価が省略されます。 
   
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

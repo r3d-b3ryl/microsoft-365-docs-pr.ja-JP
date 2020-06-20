@@ -14,20 +14,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: '分析プロセスの概要を説明します。これにより、高度な電子情報開示でパラメーター、実行オプション、および結果の表示を設定できます。 '
-ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '分析プロセスの概要を説明します。これにより、Microsoft 365 Advanced eDiscovery でパラメーター、実行オプション、および結果の表示を設定できます。 '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a5a3dc8d9bb6568545bbe0868a673fd0090f12e8
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637061"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818486"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>上級電子情報開示を使用してケースデータを分析する (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-高度な電子情報開示の**準備** \> **分析**プロセスは、次の機能を添付ファイルに適用します。 
+**Prepare** \> 高度な電子情報開示の準備**分析**プロセスは、次の機能を添付ファイルに適用します。 
   
 - 読み込まれたファイルを識別し、一意のファイル、重複、およびほぼ重複したグループに整理します。
     
@@ -43,7 +44,7 @@ ms.locfileid: "43637061"
     
 Analyze を実行する前に、どのロードされたファイルを分析するか、それぞれの種類のファイルを送信する分析の種類など、ファイルを選択して処理するための基準を定義します。 
   
-## <a name="see-also"></a>関連項目
+## <a name="additional-resources-for-advanced-ediscovery-classic-analysis"></a>高度な電子情報開示 (クラシック) 分析のためのその他のリソース
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

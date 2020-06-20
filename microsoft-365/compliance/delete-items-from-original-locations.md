@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、セキュリティ & コンプライアンスセンターで新しいデータ調査 (プレビュー) ツールを使用して、アイテムを元の場所から削除する方法について説明します。
-ms.openlocfilehash: 4ad450fbbfac838ba536b19ec54eb83a4fb5d597
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630524"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817886"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>元の場所からアイテムを削除する (プレビュー)
 
@@ -31,7 +32,7 @@ ms.locfileid: "43630524"
 
 データ調査を使用して、アイテムを元の場所から削除することができます。 これは、組織全体の Exchange メールボックス、SharePoint サイト、および OneDrive アカウントからアイテムを削除できることを意味します。 証拠としてアイテムを収集したので、さらに調査するために証拠セットに保持されているアイテムのコピー、または参照として保持することができます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-delete-items"></a>アイテムを削除する前に
 
 - アイテムを削除するには、セキュリティ & コンプライアンスセンターで**検索と削除**の役割が割り当てられている必要があります。 この役割は、既定で、組み込みデータ調査役割グループに割り当てられます。
 

@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: セキュリティ/コンプライアンス センターを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
-ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b5c2cf20d3f417429c6e3793c23c299b860b28fa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411034"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818436"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる
 
@@ -45,7 +46,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 > [!NOTE]
 > Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office 365 E5 または Microsoft 365 E5 ライセンスが割り当てられている必要があります。 または、Office 365 E1 または Office 365 または Microsoft 365 E3 ライセンスを持つユーザーは、Microsoft 365 E5 コンプライアンスまたは Microsoft 365 電子情報開示と監査アドオンライセンスを割り当てることができます。 メンバーとしてケースに割り当てられている管理者、コンプライアンス責任者、または法的責任者が、データの収集、表示、および分析に上級電子情報開示を使用する場合は、E5 ライセンスは必要ありません。 高度な電子情報開示ライセンスの詳細については、「 [Advanced ediscovery の概要](get-started-with-advanced-ediscovery.md)」を参照してください。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="confirm-your-roles"></a>自分の役割を確認する
 
 - セキュリティ & コンプライアンスセンターで電子情報開示のアクセス許可を割り当てるには、組織の管理役割グループのメンバーであるか、または役割管理役割が割り当てられている必要があります。
     
@@ -98,7 +99,7 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 
 - [コア電子情報開示を開始する](get-started-core-ediscovery.md)
 
-- [Advanced eDiscoveryを開始する](get-started-with-advanced-ediscovery.md)
+- [Advanced eDiscovery を開始する](get-started-with-advanced-ediscovery.md)
 
 ### <a name="communication"></a>コミュニケーション
 
@@ -159,9 +160,9 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 
 ## <a name="more-information"></a>詳細情報
 
-- **電子情報開示管理者を作成する理由。** 前述のとおり、電子情報開示管理者は、組織内のすべての電子情報開示ケースを表示したり、これらのケースにアクセスしたりできる、電子情報開示マネージャー役割グループのメンバーです。すべての電子情報開示ケースにアクセスする能力には、2 つの重要な目的があります。 
+- **Why create an eDiscovery Administrator?** As previously explained, an eDiscovery Administrator is member of the eDiscovery Manager role group who can view and access all eDiscovery cases in your organization. This ability to access all the eDiscovery cases has two important purposes: 
 
-  - 電子情報開示のケースの唯一のメンバーが組織を退職すると、どのユーザー (組織管理役割グループのメンバー、または電子情報開示マネージャー役割グループの他のメンバーなど) も、ケースのメンバーではないため、その電子情報開示のケースにアクセスできなくなります。この状況では、ケースのデータにアクセスする方法はありません。しかし、電子情報開示管理者は、組織内のすべての電子情報開示のケースにアクセスできるため、ケースを表示して、自分自身や別の電子情報開示マネージャーをケースのメンバーとして追加することができます。
+  - If a person who is the only member of an eDiscovery case leaves your organization, no one (including members of the Organization Management role group or another member of the eDiscovery Manager role group) can access that eDiscovery case because they aren't a member of a case. In this situation, there would be no way to access the data in the case. But because an eDiscovery Administrator can access all eDiscovery cases in the organization, they can view the case and add themselves or another eDiscovery manager as a member of the case.
 
   - 電子情報開示管理者は、すべての主要な電子情報開示および上級電子情報開示のケースを表示してアクセスできるため、すべてのケースと関連するコンプライアンス検索を監査して監視することができます。 これは、コンプライアンス検索または電子情報開示ケースの誤った使い方の防止に役立ちます。 電子情報開示管理者はコンプライアンス検索の結果に含まれる潜在的な機密情報にアクセスできるため、電子情報開示管理者となるユーザーの数を制限する必要があります。
 

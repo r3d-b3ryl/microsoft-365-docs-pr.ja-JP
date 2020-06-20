@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧。 これには、高度な電子情報開示の OCR 機能でサポートされているイメージファイルの種類の一覧が含まれています。
-ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧。これには、高度な電子情報開示の OCR 機能でサポートされている画像ファイルの種類が含まれます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634635"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819157"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高度な電子情報開示でサポートされているファイルの種類
 
@@ -56,7 +57,7 @@ ms.locfileid: "42634635"
 | アプリケーション/x-msaccess.exe | はい | はい | はい | 不要 | いいえ | .mdb |
 ||||||||
 
-## <a name="email"></a>電子メール
+## <a name="email"></a>Email
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
@@ -113,7 +114,7 @@ ms.locfileid: "42634635"
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| アプリケーション/onenote | はい | はい | はい | はい | いいえ | ます。1つ |
+| アプリケーション/onenote | はい | はい | はい | はい | いいえ | .one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
@@ -154,7 +155,7 @@ ms.locfileid: "42634635"
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/msword | はい | はい | はい | はい | はい | .dat; .doc |
 | アプリケーション/rtf | はい | はい | はい | はい | はい | .doc; .rtf |
-| アプリケーション/vnd を有効にします。12 | はい | はい | はい | はい | はい | .docm |
+| application/vnd.ms-word.document を有効にします。 | はい | はい | はい | はい | はい | .docm |
 | アプリケーション/が application を有効にします。12 | はい | はい | はい | はい | はい | normal.dotm |
 | application/vnd.openxmlformats-officedocument.wordprocessingml.document | はい | はい | はい | はい | はい | .docx |
 | application/vnd. openxmlformats-officedocument | はい | はい | はい | はい | はい | .dotx |

@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Advanced 電子情報開示の保管担当者管理ツールを使用すると、法的訴訟で関心のある人物に関連付けられているデータを識別、保持、および収集することに関するワークフローを管理できます。
-ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.custom:
+- seo-marvel-apr2020
+description: Advanced eDiscovery で保管担当者管理ツールを使用して、法的なケースのデータを管理する方法について説明します。
+ms.openlocfilehash: 400793a6779cef5b1e823f40fa08cc1e05f93f15
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551244"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815494"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>Advanced eDiscovery で保管担当者を操作する
 

@@ -18,13 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: セキュリティ & コンプライアンスセンターでは、監査ログ検索機能を有効にすることができます。 変更した場合は、いつでもオフにすることができます。 監査ログの検索がオフになっている場合、管理者は、組織内のユーザーおよび管理者のアクティビティについて Microsoft 365 の監査ログを検索することはできません。
-ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.custom: seo-marvel-apr2020
+description: セキュリティ & コンプライアンスセンターで監査ログ検索機能をオンまたはオフにして、管理者が監査ログを検索する機能を有効または無効にします。
+ms.openlocfilehash: 4571c90c4fa680acd8925e83e32ffcf07de7d626
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330791"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819137"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>監査ログ検索を有効または無効にする
 
@@ -33,7 +34,7 @@ ms.locfileid: "44330791"
 > [!IMPORTANT]
 > Microsoft 365 で監査ログの検索を無効にした場合、Office 365 Management Activity API または Azure Sentinel を使用して組織の監査データにアクセスすることはできません。 この記事の手順に従って監査ログの検索を無効にすると、セキュリティ & コンプライアンスセンターを使用して監査ログを検索したとき、または Exchange Online PowerShell で**search-unifiedauditlog**コマンドレットを実行したときに結果が返されないことを意味します。 これは、Office 365 Management Activity API または Azure Sentinel を介して監査ログを利用できないことも意味します。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-turn-audit-log-search-on-or-off"></a>監査ログ検索をオンまたはオフにする前に
 
 - Microsoft 365 組織で監査ログの検索をオンまたはオフにするには、Exchange Online の Audit Logs 役割が割り当てられている必要があります。 既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで、コンプライアンス管理および組織の管理役割グループに割り当てられます。 Microsoft 365 のグローバル管理者は、Exchange Online の Organization Management 役割グループのメンバーです。 
     

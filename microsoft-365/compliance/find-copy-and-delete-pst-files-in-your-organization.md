@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
-description: Microsoft PST コレクションツールを使用して、組織のネットワークを検索し、組織全体に散在している PST ファイルのインベントリを取得します。 PST ファイルを検索したら、pst コレクションツールを使用して、それらを Office 365 にインポートできるように、1つの場所にコピーすることができます。
+description: Microsoft PST コレクションツールを使用して、組織のネットワークを検索し、組織全体に散在している PST ファイルのインベントリを取得します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d388eb9cfe0a894e5ae5eed89e5d4ed35a79a1fc
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 4f1ac7b0bfe30ec2d8a11b4882a29c064d22ef78
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224488"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817716"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>PST コレクションツールを使用して、組織内の PST ファイルを検索、コピー、および削除する
 
@@ -48,15 +48,15 @@ PST コレクションツールを使用して、組織内の PST ファイル�
     
 5. **[手順 5: ネットワーク上の pst ファイルを削除](#step-5-delete-the-pst-files-found-on-your-network)** する-見つけて収集した pst ファイルを Office 365 の Exchange Online メールボックスにインポートした後、pst コレクションツールを使用して、手順1で見つかった pst ファイルを元の場所から削除できます。 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 - PST コレクションツールをローカルコンピューターにダウンロードするには、次の手順を実行します。 
     
     1. [PST コレクションツールをダウンロード](https://aka.ms/pstcollectiontool)します。
     
-    2. ポップアップウィンドウで **、[名前**を付けて保存] をクリックして、 \> **Save as** PSTCollectionTool ファイルをローカルコンピューター上のフォルダーに保存します。 
+    2. ポップアップウィンドウで **、[名前**を付けて保存] をクリックして、 \> **Save as** PSTCollectionTool.zip ファイルをローカルコンピューター上のフォルダーに保存します。 
     
-    3. PSTCollectionTool ファイルをローカルコンピューター上のフォルダーに抽出します。既定のフォルダー名は PSTCollectionTool です。
+    3. PSTCollectionTool.zip ファイルをローカルコンピューター上のフォルダーに抽出します。既定のフォルダー名は PSTCollectionTool です。
     
 - PST コレクションツールを任意のモード (検索、ブロック、コピー、または削除) で実行するには、Active Directory ドメインのドメイン管理者グループのメンバーである必要があります。 
 
@@ -77,7 +77,7 @@ PST コレクションツールを使用して、組織内の PST ファイル�
   
 1. ローカルコンピューターでコマンドプロンプトを開きます (管理者として実行します)。
     
-2. PSTCollectionTool フォルダー (または、PSTCollectionTool ファイルを抽出したフォルダー) に移動します。
+2. PSTCollectionTool フォルダー (または PSTCollectionTool.zip ファイルを抽出したフォルダー) に移動します。
     
 3. DataCollectorMaster ディレクトリに移動します。
     
@@ -87,7 +87,7 @@ PST コレクションツールを使用して、組織内の PST ファイル�
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName <Name> -Locations <Locations to search for PSTs> -LogLocation <Location to store log files> -ConfigurationLocation <Location to store configuration files>
     ```
 
-    次の表では、DataCollectorMaster コマンドを実行して PST ファイルを検索するときのパラメーターとその必須値について説明します。 
+    次の表では、DataCollectorMaster.exe コマンドを実行して PST ファイルを検索するときのパラメーターとその必須値について説明します。 
     
     |パラメーター * * * *|****説明****|例 * * * *|
     |:-----|:-----|:-----|
@@ -100,7 +100,7 @@ PST コレクションツールを使用して、組織内の PST ファイル�
     | `ExcludedLocations` <br/> |このオプションパラメーターは、検索操作中にスキップする場所を指定します。 特定の Ou、コンピューター、およびネットワークファイル共有を除外することができます。 たとえば、ユーザーがアクセス権を持っていない SQL server (または他の種類のアプリケーションサーバー) などのマシンを除外することができます。 除外する場所を複数指定する場合は、セミコロン (;) を使用します。個別の場所を区切ります。 このパラメーターの個々の値は二重引用符 ("") で囲むようにしてください。  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |
     | `ForceRestart` <br/> |このオプションスイッチを使用すると、既存の PST コレクションジョブの検索モードでツールを実行できます。 スイッチを使用すると `ForceRestart` 、ジョブの前の検索操作からの結果が破棄され、ツールによって指定された場所が再スキャンされ、新しいログおよび構成ファイルが作成されます。  <br/> | `-ForceRestart` <br/> |
    
-    各パラメーターに実際の値を使用して、DataCollectorMaster コマンドの構文の例を次に示します。
+    各パラメーターに実際の値を使用して DataCollectorMaster.exe コマンドの構文の例を次に示します。
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -LogLocation "c:\users\admin\desktop\PSTCollection" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"
@@ -108,18 +108,18 @@ PST コレクションツールを使用して、組織内の PST ファイル�
 
     コマンドを実行すると、指定した場所に PST ファイルを検索する処理の進行状況を示す詳細な状態メッセージが表示されます。 しばらくすると、最後の状態メッセージに、見つかった PST ファイルの合計数、ジョブが完了したかどうか、およびエラーがあったかどうかが表示されます。 同じ状態メッセージが .log ファイルにコピーされます。
     
-### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>検索モードで DataCollectorMaster を実行した結果
+### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>検索モードで DataCollectorMaster.exe を実行した結果
 
 PST コレクションツールを検索モードで正常に実行した後、次のファイルが作成され、and パラメーターで指定されたフォルダーに格納され `LogLocation` `ConfigurationLocation` ます。 
   
-- ** \< JobName \> _Find_ \< datetimestamp \> .log** -ログファイルには、表示された状態メッセージが含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
+- [ ** \<JobName\> _Find_ \<DateTimeStamp\> .Log** -ログファイルには、表示された状態メッセージが含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
     
-- ** \< JobName \> _Find_ \< datetimestamp \> ** .csv-csv ファイルには、検出された各 PST ファイルの行が含まれています。 各 PST の情報には、pst ファイルが検出されたコンピューター、pst ファイルの完全なファイルパスの場所、pst ファイルの所有者、PST ファイルのサイズ (キロバイト、kb 単位) が含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
+- .Csv-csv ファイルには、検出された各 PST ファイルの行が含まれてい** \<JobName\> _Find_ \<DateTimeStamp\> **ます。 各 PST の情報には、pst ファイルが検出されたコンピューター、pst ファイルの完全なファイルパスの場所、pst ファイルの所有者、PST ファイルのサイズ (キロバイト、kb 単位) が含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
     
     > [!TIP]
     > Excel の [オート Sum] ツールを使用して、CSV ファイルに記載されているすべての PST ファイルの合計サイズ (KB 単位) を計算します。 その後、変換ツールを使用して合計サイズをメガバイト (MB) またはギガバイト (GB) に変換できます。 
   
-- ** \< JobName \> _find_ \< datetimestamp \> xml** -xml ファイルには、ツールを検索モードで実行したときに使用されたパラメーター値に関する情報が含まれています。 このファイルには、検出されたすべての PST ファイルに関する情報も含まれています。 このファイル内のデータは、同じジョブに対してツールを再実行して、見つかった PST ファイルをブロック、収集、または削除するときに使用されます。 このファイルは、パラメーターで指定されたフォルダー内に作成され `ConfigurationLocation` ます。 
+- ** \<JobName\> _検索_ \<DateTimeStamp\> xml** -xml ファイルには、ツールを検索モードで実行したときに使用されたパラメーター値に関する情報が含まれています。 このファイルには、検出されたすべての PST ファイルに関する情報も含まれています。 このファイル内のデータは、同じジョブに対してツールを再実行して、見つかった PST ファイルをブロック、収集、または削除するときに使用されます。 このファイルは、パラメーターで指定されたフォルダー内に作成され `ConfigurationLocation` ます。 
     
     > [!IMPORTANT]
     > このファイルの名前を変更、変更、または移動しないでください。 このツールは、同じジョブのブロック、コピー、または削除モードでツールを再実行するときに PST コレクションツールによって使用されます。 
@@ -147,7 +147,7 @@ PST ファイルへのアクセスをブロックするには、次のように�
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -BlockChangesToFiles -BlockNewFiles
     ```
 
-    次の表では、DataCollectorMaster コマンドを実行して PST ファイルの作成と変更をブロックする際のパラメーターとその必須値について説明します。 
+    次の表では、DataCollectorMaster.exe コマンドを実行して PST ファイルの作成と変更をブロックする場合のパラメーターとその必須値について説明します。 
     
     |パラメーター * * * *|****説明****|例 * * * *|
     |:-----|:-----|:-----|
@@ -159,7 +159,7 @@ PST ファイルへのアクセスをブロックするには、次のように�
     | `BlockChangesToFiles` <br/> |ユーザーが PST ファイルを変更できないようにするには、このスイッチを使用します。 このスイッチを使用すると、次のレジストリエントリが作成され、 `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow` データ値は1に設定されます。 このレジストリ設定は、ブロックモードで PST コレクションツールを実行するときに作成される GPO によって、組織内のコンピューターに作成されます。  <br/> | `-BlockChangesToFiles` <br/> |
     | `BlockNewFiles` <br/> |このスイッチを使用すると、ユーザーは新しい PST ファイルを作成したり、PST ファイルを Outlook にインポートしたり、Outlook から PST ファイルをエクスポートしたりすることができなくなります。 このスイッチを使用すると、次のレジストリエントリが作成され、 `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst` データ値は1に設定されます。 このレジストリ設定は、ブロックモードで PST コレクションツールを実行するときに作成される GPO によって、組織内のコンピューターに作成されます。  <br/> | `-BlockNewFiles` <br/> |
    
-    各パラメーターに実際の値を使用して、DataCollectorMaster コマンドの構文の例を次に示します。
+    各パラメーターに実際の値を使用して DataCollectorMaster.exe コマンドの構文の例を次に示します。
 
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection" -BlockChangesToFiles -BlockNewFiles
@@ -184,7 +184,7 @@ PST ファイルへのアクセスをブロックするには、次のように�
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName <Name of job from Step 1> -Locations <same locations from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    次の表では、DataCollectorMaster コマンドを実行して PST ファイルをコピーするときのパラメーターとその必須値について説明します。 
+    次の表では、DataCollectorMaster.exe コマンドを実行して PST ファイルをコピーするときのパラメーターとその必須値について説明します。 
     
     |パラメーター * * * *|****説明****|例 * * * *|
     |:-----|:-----|:-----|
@@ -197,7 +197,7 @@ PST ファイルへのアクセスをブロックするには、次のように�
     | `LogLocation` <br/> |収集モードのログファイルがコピーされるフォルダーを指定します。 このパラメーターは省略可能です。 このファイルを含めない場合、ログファイルは PST コレクションツールをダウンロードしたフォルダーにコピーされます。 手順1の検索モードでツールを実行したときに使用したのと同じログの場所を使用して、すべてのログファイルが同じフォルダーに保存されるようにしてください。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |このオプションのスイッチを使用すると、既存の PST コレクションジョブのコレクションモードでツールを再実行できます。 以前に Collect モードでツールを実行していて、PST ファイルの場所を再スキャンするスイッチを使用して、このツールを検索モードで再度実行した場合 `ForceRestart` は、このスイッチを使用して、コレクションモードでツールを再実行し、場所を再スキャンしたときに見つかった PST ファイルを再コピーできます。 `ForceRestart`コレクションモードでスイッチを使用する場合、このツールは以前のすべてのコレクション操作を無視し、PST ファイルを最初からコピーしようとします。  <br/> | `-ForceRestart` <br/> |
    
-    各パラメーターに実際の値を使用して、DataCollectorMaster ツールの構文の例を次に示します。
+    各パラメーターに実際の値を使用して、DataCollectorMaster.exe ツールの構文の例を次に示します。
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -CopyLocation "\\FILESERVER03\PSTs" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -205,18 +205,18 @@ PST ファイルへのアクセスをブロックするには、次のように�
 
     コマンドを実行すると、手順1で見つかった PST ファイルの収集の進行状況を示す詳細な状態メッセージが表示されます。 しばらくすると、最後の状態メッセージにエラーがあるかどうかと、ログのコピー先が表示されます。 同じ状態メッセージが .log ファイルにコピーされます。
     
-### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>収集モードで DataCollectorMaster を実行した結果
+### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>収集モードで DataCollectorMaster.exe を実行した結果
 
-DataCollectorMaster を Collect モードで正常に実行した後、次のファイルが作成され、and パラメーターで指定されたフォルダーに格納され `LogLocation` `ConfigurationLocation` ます。 
+Collect モードで DataCollectorMaster.exe を正常に実行すると、次のファイルが作成され、and パラメーターで指定されたフォルダーに格納され `LogLocation` `ConfigurationLocation` ます。 
   
-- JobName は、 ** \< 日付を \> _収集_ \< \> します。** ログファイルには、表示された状態メッセージが含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
+- [ ** \<JobName\> _Collect_ \<DateTimeStamp\> ログの収集**-ログファイルには、表示された状態メッセージが含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
     
-- ** \< JobName の \> _Collect_ \< 日付を \> 収集**する-xml ファイルには、収集モードでツールが実行されたパラメーター値に関する情報のみが含まれます。 このファイル内のデータは、DataCollectorMaster ツールを再実行して PST ファイルを削除するときに使用されます。[手順 5](#step-5-delete-the-pst-files-found-on-your-network)を参照してください。
+- ** \<JobName\> _Collect_ \<DateTimeStamp\> ** -xml ファイルには、ツールで使用されたものが収集モードで実行されたパラメーター値に関する情報のみが含まれています。 このファイル内のデータは、DataCollectorMaster.exe ツールを再実行して PST ファイルを削除するときに使用されます。[手順 5](#step-5-delete-the-pst-files-found-on-your-network)を参照してください。
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>手順 4: Office 365 に PST ファイルをインポートする
 
-手順1で見つかった PST ファイルを収集した後、次の手順では、それらを Office 365 のメールボックスにインポートします。 一部またはインポートプロセスでは、インポートする各 PST ファイルの行を含む CSV マッピングファイルを作成する必要があります。 各行の情報 PST ファイルの名前、ユーザーの電子メールアドレス、および PST ファイルをユーザーのプライマリメールボックスまたはアーカイブメールボックスにインポートするかどうかを指定します。 CSV マッピングファイルを作成するには、手順1で作成した**JobName \> _Find_ \< datetimestamp の .csv**ファイルの情報を使用します。 
+手順1で見つかった PST ファイルを収集した後、次の手順では、それらを Office 365 のメールボックスにインポートします。 一部またはインポートプロセスでは、インポートする各 PST ファイルの行を含む CSV マッピングファイルを作成する必要があります。 各行の情報 PST ファイルの名前、ユーザーの電子メールアドレス、および PST ファイルをユーザーのプライマリメールボックスまたはアーカイブメールボックスにインポートするかどうかを指定します。 CSV マッピングファイルを作成するために、 **JobName \> _Find_ \<DateTimeStamp.csv**ファイル (手順1で作成) の情報を使用します。 
   
 PST ファイルを Office 365 にインポートするための詳細な手順については、以下のいずれかのトピックを参照してください。
   
@@ -239,7 +239,7 @@ PST ファイルを Office 365 にインポートするための詳細な手順�
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    次の表では、DataCollectorMaster コマンドを実行して PST ファイルを削除するときのパラメーターとその必須値について説明します。 
+    次の表では、DataCollectorMaster.exe コマンドを実行して PST ファイルを削除するときのパラメーターとその必須値について説明します。 
     
     |パラメーター * * * *|****説明****|例 * * * *|
     |:-----|:-----|:-----|
@@ -250,7 +250,7 @@ PST ファイルを Office 365 にインポートするための詳細な手順�
     | `LogLocation` <br/> |削除モードのログファイルがコピーされるフォルダーを指定します。 このパラメーターは省略可能です。 このファイルを含めない場合、ログファイルは PST コレクションツールをダウンロードしたフォルダーにコピーされます。 手順1と手順3でツールを実行したときと同じログの場所を使用して、すべてのログファイルが同じフォルダーに保存されるようにしてください。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |このオプションスイッチを使用すると、既存の PST コレクションジョブの削除モードでツールを再実行できます。 以前に削除モードでツールを実行していて、PST ファイルの場所を再スキャンするためにスイッチを使用してツールを再度検索モードで実行した場合 `ForceRestart` は、このスイッチを使用して削除モードでツールを再実行し、場所を再スキャンしたときに検出された PST ファイルを削除できます。 スイッチを削除モードで使用すると、 `ForceRestart` 以前の削除操作は無視され、PST ファイルの削除が再試行されます。  <br/> | `-ForceRestart` <br/> 
 
-    各パラメーターに実際の値を使用して、DataCollectorMaster ツールの構文の例を次に示します。
+    各パラメーターに実際の値を使用して、DataCollectorMaster.exe ツールの構文の例を次に示します。
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -258,10 +258,10 @@ PST ファイルを Office 365 にインポートするための詳細な手順�
 
     コマンドを実行すると、手順1で検出され、手順3で収集された PST ファイルの削除の進行状況を示す詳細な状態メッセージが表示されます。 しばらくすると、最後の状態メッセージにエラーがあるかどうかと、ログのコピー先が表示されます。 同じ状態メッセージが .log ファイルにコピーされます。
     
-### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>削除モードで DataCollectorMaster を実行した結果
+### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>削除モードで DataCollectorMaster.exe を実行した結果
 
-DataCollectorMaster を削除モードで正常に実行した後、次のファイルが作成され、and パラメーターで指定されたフォルダーに格納され `LogLocation` `ConfigurationLocation` ます。 
+削除モードで DataCollectorMaster.exe を正常に実行すると、次のファイルが作成され、and パラメーターで指定されたフォルダーに格納され `LogLocation` `ConfigurationLocation` ます。 
   
-- ** \< JobName \> _Delete_ \< datetimestamp \> 。** ログファイルには、表示された状態メッセージが含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
+- ** \<JobName\> _Delete_ \<DateTimeStamp\> .Log** -ログファイルには、表示された状態メッセージが含まれています。 このファイルは、パラメーターで指定されたフォルダー内に作成され `LogLocation` ます。 
     
-- ** \< JobName \> _delete_ \< datetimestamp \> xml** -xml ファイルには、ツールで使用された場所が削除モードで実行されたパラメーター値に関する情報のみが含まれています。 また、削除された各 PST ファイルの名前とファイルパスも一覧表示します。 このファイルは、パラメーターで指定されたフォルダー内に作成され `ConfigurationLocation` ます。 
+- ** \<JobName\> _削除_ \<DateTimeStamp\> ** -xml ファイルには、ツールが削除モードで実行されたパラメーター値に関する情報のみが含まれています。 また、削除された各 PST ファイルの名前とファイルパスも一覧表示します。 このファイルは、パラメーターで指定されたフォルダー内に作成され `ConfigurationLocation` ます。 

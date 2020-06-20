@@ -15,17 +15,18 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: Office 365 の DLP レポートを使用すると、DLP ポリシーの一致、オーバーライド、誤検知の数をすばやく表示できます。時間の経過と共に、傾向の上下が変化するかどうかを確認します。レポートをさまざまな方法でフィルター処理します。そして、グラフ上の線上の点を選択して詳細を表示します。
-ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: Office 365 の DLP レポートを使用して、DLP ポリシーの一致、上書き、または誤検知の数を表示し、時間の経過と共に傾向があるかどうかを確認します。
+ms.openlocfilehash: 1ddcd60dc9314779ade2f7ceae02d336f902e483
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626293"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818997"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
-データ損失防止 (DLP) ポリシーを作成したら、意図したとおりに動作していることを確認し、準拠を維持するための支援を求めることができます。 セキュリティ&amp; /コンプライアンスセンターの DLP レポートを使用すると、次のものをすばやく表示できます。
+データ損失防止 (DLP) ポリシーを作成したら、意図したとおりに動作していることを確認し、準拠を維持するための支援を求めることができます。 セキュリティ/コンプライアンスセンターの DLP レポートを使用すると、 &amp; 次のものをすばやく表示できます。
   
 - **DLP ポリシーの一致**このレポートには、長期間の DLP ポリシーの一致数が表示されます。 レポートは、日付、場所、ポリシー、またはアクションによってフィルター処理できます。 このレポートを使用して、次のことができます。 
     
@@ -57,7 +58,7 @@ ms.locfileid: "43626293"
     
 すべての DLP レポートでは、過去4か月の期間のデータを表示できます。 最新のデータは、レポートに表示されるまでに最大24時間かかることがあります。
   
-これらのレポートは、セキュリティ&amp;コンプライアンスセンター \>の**レポート** \> **ダッシュボード**で見つけることができます。
+これらのレポートは、セキュリティ &amp; コンプライアンスセンターの \> **レポート** \> **ダッシュボード**で見つけることができます。
   
 ![DLP ポリシーがレポートに一致する](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -87,11 +88,11 @@ DLP ポリシーでユーザーによる上書きを許可する場合は、誤�
 
 セキュリティ &amp; コンプライアンス センターのほとんどのコマンドレットを使用するには、次のようにする必要があります。
   
-1. [リモート PowerShell を使用&amp;してセキュリティコンプライアンスセンターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [&amp;リモート PowerShell を使用してセキュリティコンプライアンスセンターに接続する](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. これらの[セキュリティ&amp;コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)のいずれかを使用する
+2. これらの[セキュリティ &amp; コンプライアンスセンターのコマンドレット](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)のいずれかを使用する
     
-ただし、DLP レポートは、Exchange Online を含む Office 365 全体からデータを取り込む必要があります。 このため、DLP レポートのコマンドレットは、セキュリティ&amp;コンプライアンスセンターの powershell ではなく、Exchange Online の powershell で利用できます。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
+ただし、DLP レポートは、Exchange Online を含む Office 365 全体からデータを取り込む必要があります。 このため、DLP レポートのコマンドレットは、セキュリティコンプライアンスセンターの Powershell ではなく、Exchange Online の Powershell で利用でき &amp; ます。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
   
 1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     

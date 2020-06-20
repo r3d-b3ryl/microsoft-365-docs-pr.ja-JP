@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 1つの校閲セットからドキュメントを選択し、それらを別のセットで個別に操作する方法について説明します。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034681"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818604"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>別のレビューセットからのレビューセットへのデータの追加
 
@@ -30,9 +32,9 @@ ms.locfileid: "44034681"
 
 この記事のワークフローに従って、ある校閲セットから別のレビューセットにコンテンツを追加します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="create-a-review-set"></a>レビューセットを作成する
 
-開始する前に、データを追加するための新しいレビューセットを作成する必要があります。  ケースの [**レビューセット**] タブに新しいレビューセットを追加できます。 詳細については、「[レビューセットを作成する](managing-review-sets.md#create-a-review-set)」を参照してください。
+開始する前に、データを追加するためのレビューセットを作成する必要があります。  ケースの [**レビューセット**] タブに新しいレビューセットを追加できます。 詳細については、「[レビューセットを作成する](managing-review-sets.md#create-a-review-set)」を参照してください。
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>手順 1: 別のレビューセットに追加するコンテンツを識別する
 

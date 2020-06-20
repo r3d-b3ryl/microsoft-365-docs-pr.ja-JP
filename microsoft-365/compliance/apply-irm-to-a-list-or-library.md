@@ -20,18 +20,19 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされたファイルを制御し、保護することができます。
-ms.openlocfilehash: 4366a9fa5c42a8f4505163e0987da1decf727564
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 11d12eda6f2cb8de5c94b6952a8a194b06471473
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079906"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818476"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>リストまたはライブラリに Information Rights Management (IRM) を適用する
 
 Information Rights Management (IRM) を使用すると、リストまたはライブラリからダウンロードされたファイルを制御し、保護することができます。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="administrator-preparations-before-applying-irm"></a>IRM を適用する前の管理者の準備
 
 - Azure Information Protection からの azure Rights Management サービス (Azure RMS) と、オンプレミスの Active Directory Rights Management サービス (AD RMS) は、サイトの Information Rights Management をサポートしています。 個別または追加のインストールは必要ありません。
     

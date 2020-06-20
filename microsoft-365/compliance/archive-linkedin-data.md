@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: LinkedIn データを Microsoft 365 にインポートするためのコネクタを設定して、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンスツールを使用できるようにします。
-ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.custom: seo-marvel-apr2020
+description: ネイティブコネクタを使用して、LinkedIn Company ページから Microsoft 365 にデータをインポート &、管理者が設定を行う方法について説明します。
+ms.openlocfilehash: c7801dc7ab00f1193b05a50ae10ee67d78e11065
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043348"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818446"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>コネクタをセットアップして LinkedIn データをアーカイブする
 
@@ -29,7 +28,7 @@ Microsoft 365 コンプライアンスセンターのコネクタを使用して
 
 LinkedIn 会社のページデータをメールボックスに格納した後、Microsoft 365 のコンプライアンス機能 (訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、Microsoft 365 アイテム保持ポリシーなど) を LinkedIn データに適用することができます。 たとえば、コンテンツ検索を使用してこれらのアイテムを検索したり、高度な電子情報開示ケースの保管担当者にストレージメールボックスを関連付けたりすることができます。 Microsoft 365 で LinkedIn データをインポートおよびアーカイブするためのコネクタを作成することで、組織は政府および規制ポリシーに準拠し続けることができます。
 
-## <a name="before-you--begin"></a>はじめに
+## <a name="give-consent-assign-roles-and-verify-credentials"></a>同意を得る、役割を割り当て、資格情報を確認する
 
 - 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。
 
@@ -39,7 +38,7 @@ LinkedIn 会社のページデータをメールボックスに格納した後�
 
 ## <a name="create-a-linkedin-connector"></a>LinkedIn コネクタを作成する
 
-1. に移動<https://compliance.microsoft.com>して、[**データコネクタ** > **LinkedIn の会社のページ**] をクリックします。
+1. に移動 <https://compliance.microsoft.com> して、[**データコネクタ**  >  **LinkedIn の会社のページ**] をクリックします。
 
 2. [ **LinkedIn company pages** product] ページで、[**コネクタの追加**] をクリックします。
 

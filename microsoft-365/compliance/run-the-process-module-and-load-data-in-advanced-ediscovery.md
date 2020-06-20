@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'セキュリティ&amp;コンプライアンスセンターを使用して高度な電子情報開示にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
-ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 'セキュリティ &amp; コンプライアンスセンターを使用して高度な電子情報開示にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626473"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818906"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Process モジュールを実行し、Advanced eDiscovery でデータを読み込む (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 このセクションでは、Advanced eDiscovery プロセスモジュールの機能について説明します。 
   
@@ -41,13 +42,13 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
   
 プロセスを実行するには、次の手順を実行します。
   
-1. [セキュリティ&amp; /コンプライアンスセンターを開き](go-to-the-securitycompliance-center.md)ます。 
+1. [セキュリティ &amp; を開くコンプライアンスセンター](go-to-the-securitycompliance-center.md) 
     
-2. [**検索&amp;調査** \> ]**電子情報開示**に移動し、[ **Advanced ediscovery に移動**] をクリックします。
+2. [**検索 &amp; 調査** \> ]**電子情報開示**に移動し、[ **Advanced ediscovery に移動**] をクリックします。
     
 3. [高度な電子情報開示] で、[表示される**ケース**] ページで適切なケースを選択し、[**ケースに移動] を**クリックします。
     
-4. [ **Prepare** \> **Process**プロセス\> **セットアップ**の準備] で、使用可能なコンテナーの一覧からコンテナーを選択します。
+4. [ **Prepare** \> **プロセス** \> **セットアップ**の準備] で、使用可能なコンテナーの一覧からコンテナーを選択します。
     
     ![検索結果をケースに追加するには、[処理] をクリックします。](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
@@ -77,11 +78,11 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
     
 6. 開始するには、[**処理**] をクリックします。 完了すると、プロセスの結果が表示されます。
     
-7. オプション特定の保管担当者にデータソースを割り当てる必要がある場合は、**保管担当者** \>で保管担当者名を追加および編集し、**保管担当者** \> **assign**で保管担当者を**管理**して割り当てることができます。 
+7. オプション特定の保管担当者にデータソースを割り当てる必要がある場合は、**保管担当者**で保管担当者名を追加および編集し、 \> **保管担当者**assign で保管担当者を**管理**して割り当てることができ \> **Assign**ます。 
     
 ケースにを追加した場合は、もう一度処理することができます。
   
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

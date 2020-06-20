@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Microsoft 365 コンプライアンスセンターの電子情報開示ケースを使用して、組織の法的調査を管理します。 E5 サブスクリプションを持っている場合は、高度な電子情報開示のテキスト分析、machine learning、および予測コーディング機能を使用して、ケースデータをさらに分析できます。
-ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 のセキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、組織の法的調査を管理します。
+ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799908"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815504"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 

@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Office 365 のセキュリティ & コンプライアンスセンターで、PowerShell スクリプトを使用して検索を作成したりレポートを実行したりするなど、コンテンツ検索タスクを自動化する方法について説明します。
-ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 389cc9e15bc661e967f7af769ac48c4ae6e27228
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208141"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817986"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
  検索検索を迅速に作成およびレポートすることは、基礎となるデータについて学習しようとしているときに電子情報開示や調査を行う際に重要な手順です。 これを実現するために、セキュリティ & コンプライアンスセンターの PowerShell は、時間のかかるコンテンツ検索タスクを自動化する一連のコマンドレットを提供します。 これらのスクリプトを使用すると、多数の検索をすばやく簡単に作成し、予想される検索結果のレポートを実行して、問題のデータ量を判断するのに役立つことができます。 また、これらのスクリプトを使用して、それぞれの結果を比較するさまざまなバージョンの検索を作成することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-create-a-content-search"></a>コンテンツ検索を作成する前に
 
 - このトピックで説明するスクリプトを実行するには、セキュリティ & コンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 
     
@@ -39,7 +40,7 @@ ms.locfileid: "44208141"
     
 - スクリプトには、最小限のエラー処理が含まれています。 その主な目的は、複数のコンテンツ検索をすばやく作成、レポート作成、および削除することです。
     
-- このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>手順 1: 実行する検索に関する情報を含む CSV ファイルを作成する
 

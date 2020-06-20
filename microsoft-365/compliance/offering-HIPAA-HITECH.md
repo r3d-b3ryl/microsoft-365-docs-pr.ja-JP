@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254210"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773718"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>医療保険の携行性と責任に関する法律と HITECH 法 (Health Insurance Portability and Accountability (HIPAA) & HITECH Acts)
 
@@ -59,7 +59,7 @@ Microsoft クラウドがお客様の HIPAA および HITECH 要件への準拠�
 - Microsoft Stream
 - Microsoft Professional Services: Azure、Dynamics 365、Intune と、Microsoft 365 for business の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
 - [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Power オートメーション (旧称 Microsoft Flow) クラウドサービスをスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
+- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - Intune
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
@@ -113,5 +113,5 @@ Microsoft のサービスはすべての顧客に対して一貫しているた�
 - [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Azure の HIPAA コンプライアンスについて](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0) (2016 年 5 月 19 日)
-- [Azure HIPAA 実装ガイダンス](https://aka.ms/azure-hipaa-guide)
+- [Azure HIPAA HITRUST ブループリントのサンプル](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

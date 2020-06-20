@@ -14,19 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: リスクに対処し、コンプライアンスの姿勢を改善するために行われた処置に基づいて、Microsoft コンプライアンススコアが個人のスコアを計算する方法について理解します。
-ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cf8a691b558614896cc17207e761035e1f360280
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429192"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818076"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft コンプライアンススコア (プレビュー) の計算
 
 > [!IMPORTANT]
 > コンプライアンス スコアおよびコンプライアンス マネージャーからの推奨事項は、コンプライアンスの保証として解釈してはいけません。 お客様は、お客様の規制環境に応じて、カスタマーコントロールの有効性を評価および検証することができます。 これらのサービスは現在プレビュー段階であり、[オンラインサービス](https://go.microsoft.com/fwlink/?linkid=2108910)の使用条件に従っています。 [セキュリティとコンプライアンスのための Microsoft 365 ライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)も参照してください。
 
-## <a name="overview"></a>概要
+## <a name="how-compliance-score-works"></a>コンプライアンススコアのしくみ
 
 コンプライアンススコアダッシュボードには、コントロール内の改善アクションを完了するための進行状況を測定するスコアが表示されます。 操作が完了すると、ポイントが計上します。
 
@@ -78,7 +79,7 @@ ms.locfileid: "44429192"
   
 各コントロールには、次のリスクに基づいてコンプライアンススコアの値が割り当てられます。
 
-|**種類**|**割り当てられたスコア**|
+|**型**|**割り当てられたスコア**|
 |:-----|:-----|
 | 予防必須 | 27 |
 | 予防的裁量 | 9  |

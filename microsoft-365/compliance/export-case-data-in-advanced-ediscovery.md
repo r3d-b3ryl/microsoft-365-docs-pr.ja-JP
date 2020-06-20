@@ -15,17 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: '高度な電子情報開示のエクスポートプロセスを使用して、電子情報開示ケースのデータおよびレビューの結果をエクスポートするためのガイドラインについて説明します。  '
-ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 88be4a96720aee2392b6e0972919997f8634054b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615941"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817766"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>高度な電子情報開示でケースデータをエクスポートする (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 上級電子情報開示のエクスポートプロセスでは、高度な電子情報開示のコンテンツと外部レビューの結果をエクスポートできます。 
   
@@ -37,7 +38,7 @@ ms.locfileid: "43615941"
     
 - データベースに大量のデータをエクスポートすると、必要なデータベースのサイズや、高度な電子情報開示データベースの必要な構成に大きな影響を与える可能性があります。
     
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

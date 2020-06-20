@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: メールボックスに保留またはアイテム保持ポリシーを適用し、対応するユーザーアカウントを削除することによって、Microsoft 365 に非アクティブなメールボックスを作成することができます。 非アクティブなメールボックス内のアイテムは、非アクティブになる前に適用されていた保留またはアイテム保持ポリシーの期間中保持されます。 非アクティブなメールボックスを完全に削除するには、保持ポリシーまたはアイテム保持ポリシーを削除するだけです。
-ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 の非アクティブなメールボックス機能を使用して、削除されたメールボックスの内容を保持する方法について説明します。
+ms.openlocfilehash: d479f6661c4d6e87263488ac75682683b4779380
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679101"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818016"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -32,7 +34,7 @@ Microsoft 365 により、削除済みメールボックスの内容を保持す
 > [!IMPORTANT]
 > メールボックスのコンテンツを保持するためのさまざまな方法に投資し続けるので、Exchange 管理センターでのインプレースホールドの廃止を発表しています。 つまり、非アクティブなメールボックスを作成するには、訴訟ホールドとアイテム保持ポリシーを使用する必要があります。 2020年7月1日以降、Exchange Online に新しいインプレースホールドを作成することはできません。 ただし、非アクティブなメールボックスに設定されたインプレースホールドの保持期間を変更することはできます。 ただし、2020年10月1日以降、保持期間を変更することはできません。 インプレースホールドを削除しても、非アクティブなメールボックスを削除することはできません。 インプレース保持されている既存の非アクティブなメールボックスは、保留が解除されるまで保持されます。 インプレースホールドが廃止された場合の詳細については、「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」を参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="preparations-before-creating-an-inactive-mailbox"></a>非アクティブなメールボックスを作成する前の準備
 
 - メールボックスを非アクティブにするには、メールボックスを削除する前に、訴訟ホールドまたはアイテム保持ポリシーをメールボックスに適用できるように、Exchange Online プラン2のライセンスを割り当てる必要があります。 Exchange Online プラン2のライセンスは、Office 365 Enterprise E3 および E5 サブスクリプションの一部です。 メールボックスに Exchange online プラン1または Exchange Online キオスクライセンスが割り当てられている場合 (それぞれが Office 365 E1 および F1 サブスクリプションの一部である場合) は、削除する前にメールボックスに保持を適用できるように、別の Exchange Online アーカイブライセンスを割り当てる必要があります。 詳細については、「[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153)」をご覧ください。
 
@@ -114,7 +116,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 - コンテンツ検索にユーザーのメールボックスが含まれていて、そのメールボックスが非アクティブになっている場合、コンテンツ検索は、非アクティブになった後に検索を再実行すると、非アクティブなメールボックスの検索を続行します。
     
-- 場合によっては、ユーザーは同じ SMTP アドレスを持つアクティブなメールボックスおよび非アクティブなメールボックスを所有している可能性があります。この場合、コンテンツ検索の場所として選択した特定のメールボックスのみが検索されます。つまり、検索にユーザーのメールボックスを追加する場合に、アクティブなメールボックスと非アクティブなメールボックスの両方が検索されることは想定できません。検索に明示的に追加したメールボックスのみが検索されます。
+- In some cases, a user may have an active mailbox and an inactive mailbox that have the same SMTP address. In this case, only the specific mailbox that you select as a location for a content search will be searched. In other words, if you add a user's mailbox to a search, you can't assume that both their active and inactive mailboxes will be searched; only the mailbox that you explicitly add to the search will be searched.
     
 - 同じ SMTP アドレスを持つアクティブなメールボックスと非アクティブなメールボックスを所有しないようにすることを強くお勧めします。 非アクティブなメールボックスに現在割り当てられている SMTP アドレスを再利用する必要がある場合は、非アクティブなメールボックスを回復するか、非アクティブなメールボックスのコンテンツをアクティブなメールボックス (またはアクティブなメールボックスのアーカイブ) に復元して、非アクティブなメールボックスを削除することをお勧めします。
     

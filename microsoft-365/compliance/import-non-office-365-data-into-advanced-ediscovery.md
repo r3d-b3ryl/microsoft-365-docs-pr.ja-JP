@@ -15,24 +15,25 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Microsoft 365 に保存されていないコンテンツを Azure blob にインポートして、AeD で分析できるようにする手順
-ms.openlocfilehash: be49e7d44c56988baa3cdc718498a03ee4acd50b
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fbb21f6bc3fdfd2a5251a9ec773a22351db5749e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214541"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817596"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>Microsoft 以外の365コンテンツをインポートして高度な電子情報開示 (クラシック) 分析を行う
 
 上級電子情報開示を使用して分析する必要があるすべてのドキュメントが Microsoft 365 に存在するわけではありません。 Advanced 電子情報開示の Microsoft 以外の365コンテンツインポート機能を使用すると、Microsoft 365 (PST ファイルを除く) に存在しないドキュメントを、ケースにリンクされた Azure ストレージ blob にアップロードし、アドバンスト eDiscovery で分析することができます。 この手順では、Microsoft 以外の365ドキュメントを分析のために上級電子情報開示に移行する方法を示します。
   
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 > [!NOTE]
 > Microsoft 以外の365コンテンツについては、高度な電子情報開示データ記憶域アドオンサブスクリプションを購入できます。 これは、Advanced eDiscovery で分析するコンテンツにのみ使用できます。 「 [Microsoft 365 for business のアドオンを購入または編集する](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on)」の手順に従って、Advanced eDiscovery storage アドオンを購入します。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="requirements-to-upload-non-office-365-content"></a>Office 以外の365コンテンツをアップロードするための要件
 
 この手順の説明に従って Office 365 以外のアップロード機能を使用するには、次の条件を持っている必要があります。
   

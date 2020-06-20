@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: Microsoft 365 で、ユーザーのアーカイブメールボックスにアイテムを自動的に移動するアーカイブと削除のポリシーを作成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+description: ユーザーのアーカイブメールボックスにアイテムを自動的に移動するためのアーカイブおよび削除ポリシーを Microsoft 365 で作成する方法について説明します。
+ms.openlocfilehash: e5f35938241608a247c625e8411821572d75b18e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222528"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819217"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織のメールボックスについて、アーカイブ削除ポリシーを設定する
 
@@ -48,7 +48,7 @@ ms.locfileid: "44222528"
     
 この記事の手順の一部またはすべてを実行して、組織内のメールボックスのアーカイブおよび削除ポリシーを設定できます。 このプロセスは、組織内のすべてのメールボックスに実装する前に、少数のメールボックスに対してテストすることをお勧めします。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-set-up-an-archive-and-deletion-policy"></a>アーカイブと削除のポリシーを設定する前に
 
 - このトピックの手順を実行するには、組織の全体管理者である必要があります。 
     
@@ -280,13 +280,13 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
 
 4. 手順2のコマンドを再実行して、既定のメールボックス計画に割り当てられているアイテム保持ポリシーが変更されたことを確認できます。
 
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>詳細情報
 
 - 保存期間はどのように計算されますか? メールボックスアイテムの保持期間は、配信日または作成日 (送信されないが、ユーザーによって作成された下書きメッセージなど) から計算されます。 管理フォルダー アシスタントがメールボックス内のアイテムを処理する際、 [削除して回復を許可する] または [完全に削除する] の保存期間用アクション付き保持タグの付いたすべてのアイテムに開始日と有効期限をスタンプします。 アーカイブタグがあるアイテムには、移動日がスタンプされます。 
     
 - 次の表では、このトピックの手順に従って作成されたカスタムアイテム保持ポリシーに追加される各保持タグの詳細について説明します。
     
-    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**種類**|
+    |**保持タグ**|**このタグの内容**|**組み込みまたはユーザー設定の場合**|**型**|
     |:-----|:-----|:-----|:-----|
     |Alpine House 3 年間のアーカイブへの移動  <br/> |過去1095日 (3 年) のアイテムをアーカイブメールボックスに移動します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (アーカイブ)、このタグは、メールボックス全体に自動的に適用されます。  <br/> |
     |Alpine House 7 年間完全に削除  <br/> |7年前の時点でプライマリメールボックスまたはアーカイブメールボックスのアイテムを完全に削除します。  <br/> |Custom (「[手順 2: アーカイブポリシーと削除ポリシーの新しい保持タグを作成](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)する」を参照)  <br/> |既定のポリシータグ (削除)。このタグは、メールボックス全体に自動的に適用されます。  <br/> |

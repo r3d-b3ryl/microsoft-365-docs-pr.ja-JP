@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、および Teams の各ファイルに対して Microsoft 365 の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 158096216974691bf0caff93a1c95db54b92f6b1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717264"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44810993"
 ---
 # <a name="set-up-customer-key"></a>顧客キーを設定する
 
@@ -195,7 +195,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   例:
+   たとえば、次のようにします。
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
@@ -319,7 +319,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 > [!TIP]
 > 出力ファイルに対して、コンテナー名とキー名の組み合わせを選択します。 これにより、ファイル名が自己記述されます。 バックアップファイルの名前が競合しないようにすることもできます。
   
-例:
+たとえば、次のようにします。
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -448,7 +448,15 @@ DEP を作成するには、次の手順を実行します。
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-ここで、 *MailboxIdParameter*はメールボックスを指定します。 メールボックスの設定コマンドレットの詳細については、「[メールボックスの設定](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps)」を参照してください。
+ここで、 *MailboxIdParameter*はメールボックスを指定します。 メールボックスの設定コマンドレットの詳細については、「[メールボックスの設定](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)」を参照してください。
+
+[ハイブリッド先進認証を使用する iOS および Android 用の Outlook を使用しているオンプレミスのメールボックス](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)の場合、Exchange Online テナントに同期される社内メールボックスのデータは、Set-mailuser コマンドレットを使用して DEP に割り当てることができます。 
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+ここで、 *Mailuseridparameter*はメールユーザー (メールが有効なユーザーとも呼ばれます) を指定します。 Set-mailuser コマンドレットの詳細については、「 [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)」を参照してください。
   
 ### <a name="validate-mailbox-encryption"></a>メールボックスの暗号化を検証する
 

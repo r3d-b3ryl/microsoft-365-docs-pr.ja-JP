@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: エラー修復を使用して、コンテンツの適切な処理を妨げる可能性があるデータ調査 (プレビュー) のデータ問題を修正する方法について説明します。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c833ce9ae93f5395e06ee3dbde54ff4a8d5d4a00
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035119"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817816"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>調査のためにデータを処理するときのエラー修復
 
@@ -57,7 +59,7 @@ ms.locfileid: "44035119"
     >最適なパフォーマンスを得るには、リモートネットワークパスの代わりにローカルファイルパスを使用することをお勧めします。
 
     > [!NOTE]
-    > AzCopy をインストールしていない場合は、ここからインストールできます。https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+    > AzCopy をインストールしていない場合は、「 [azcopy の使用を開始](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)する」に移動してインストールします。
 
 6. [**クリップボードにコピー] を**クリックして、定義済みのコマンドをコピーします。 Windows コマンドプロンプトを起動し、コマンドを貼り付けて、 **enter**キーを押します。  
 
@@ -71,7 +73,7 @@ ms.locfileid: "44035119"
 7. ファイルをダウンロードした後、適切なツールを使用して修復できます。 パスワードで保護されたファイルでは、いくつかのパスワードクラッキングツールを使用できます。 ファイルのパスワードがわかっている場合は、それらを開いてパスワード保護を解除することができます。
     
    > [!NOTE]
-    > 修復されたファイルのディレクトリ構造とファイル名を保持することが重要です。 ダウンロードしたファイルとフォルダーのパス名によって、修復済みのファイルを元のファイルに関連付けることができます。  ディレクトリ構造またはファイル名が変更されると、次のエラーが表示`Cannot apply Error Remediation to the current Evidenceset`されます。
+    > 修復されたファイルのディレクトリ構造とファイル名を保持することが重要です。 ダウンロードしたファイルとフォルダーのパス名によって、修復済みのファイルを元のファイルに関連付けることができます。  ディレクトリ構造またはファイル名が変更されると、次のエラーが表示されます `Cannot apply Error Remediation to the current Evidenceset` 。
 
 8. データの調査 (プレビュー) に戻り、[**次へ: ファイルのアップロード**] をクリックします。  これにより、次の手順に進み、ファイルをアップロードできるようになります。
 
@@ -81,7 +83,7 @@ ms.locfileid: "44035119"
 
 10. コマンドを Windows コマンドプロンプトに貼り付け、 **enter**キーを押してファイルをアップロードします。
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. 最後に、データ調査 (プレビュー) に戻り、[**次へ: プロセスファイル**] をクリックします。
 

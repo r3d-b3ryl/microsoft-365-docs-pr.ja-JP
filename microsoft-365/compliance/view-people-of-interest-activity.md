@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ms.custom: seo-marvel-mar2020
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 description: 対象ユーザーのアクティビティにアクセスして検索することにより、調査でデータ調査 (プレビュー) ユーザーの管理ツールを使用します。
-ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37a8d6bae02f1e18bdd5599d7c5472b8d42e145f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034279"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819017"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>関心のあるユーザーの監査アクティビティを表示する
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 データ調査 (プレビュー) は、セキュリティ & コンプライアンスセンターの既存の監査ログ検索ツールと統合されました。 この組み込みの操作を使用すると、関心のあるデータ調査 (プレビュー) ユーザーの管理ツールを使用して、調査中に関心のある人のためのアクティビティを簡単にアクセスおよび検索できるので、調査が容易になります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="get-permissions"></a>アクセス許可の取得
 
 監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらの役割は Exchange 管理センターの [アクセス許可] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 ユーザーがデータ調査 (プレビュー) の監査ログを最低限の特権レベルで検索できるようにするには、Exchange Online でカスタム役割グループを作成し、表示のみの監査ログまたは監査ログの役割を追加し、そのユーザーを新しい役割グループのメンバーとして追加することができます。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
 
@@ -82,13 +84,13 @@ ms.locfileid: "44034279"
  
 3. 各列見出しの下にキーワード ボックスが表示されます。
   
-4. フィルター処理の対象となる列の列見出しの下に表示されたボックスのいずれかをクリックして語句を入力します。検索結果が動的に調整され、フィルターに一致するイベントが表示されます。
+4. Click one of the boxes under a column header and type a word or phrase, depending on the column you're filtering on. The results will dynamically readjust to display the events that match your filter.
   
 5. フィルターをクリアするには、フィルター ボックスの [**X**] をクリックするか、[**フィルターの非表示**] をクリックします。
 
 ## <a name="export-the-search-results-to-a-file"></a>検索結果をファイルにエクスポートする
 
-監査ログの検索結果をローカル コンピューター上のコンマ区切り値 (CSV) ファイルにエクスポートできます。このファイルを Microsoft Excel で開いて、検索、並べ替え、フィルター処理、複数値セルを含む単一列の複数列への分割などの機能を使用することもできます。
+You can export the results of an audit log search to a comma separated value (CSV) file on your local computer. You can open this file in Microsoft Excel and use features such as search, sorting, filtering, and splitting a single column (that contains multi-value cells) into multiple columns.
 
 1. 監査ログの検索を実行して、目的の結果が得られるまで検索条件を変更します。
   
@@ -99,7 +101,7 @@ ms.locfileid: "44034279"
     - **すべての結果をダウンロードします。** このオプションを選択すると、検索条件に一致するすべてのエントリが監査ログからエクスポートされます。 検索結果が大きい場合は、このオプションを選択すると、[**関心のある監査ログの**検索] ページに表示される5000結果に加えて、監査ログからすべてのエントリをダウンロードできます。 このオプションでは、監査ログから CSV ファイルに生データをダウンロードし、AuditData という名前の列に監査ログエントリからの追加情報が含まれています。 このエクスポート オプションを選択した場合、ファイルが他のオプションを選択した場合にダウンロードされるファイルよりはるかに大きくなる可能性があるため、ファイルのダウンロードには時間がかかることがあります。
     
       > [!IMPORTANT]
-      > 1 回の監査ログの検索で、最大 50,000 件のエントリを CSV ファイルにダウンロードできます。50,000 件のエントリが CSV ファイルにダウンロードされた場合、検索条件に一致したエントリが 50,000 件を超える可能性があります。この制限を超えてエクスポートするには、日付範囲を使用して監査ログ エントリの件数を削減してみてください。50,000 件を超えるエントリをエクスポートするには、日付範囲を狭めて検索を複数回実行することが必要な場合があります。
+      > You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If 50,000 entries are downloaded to the CSV file, you can probably assume there are more than 50,000 events that met the search criteria. To export more than this limit, try using a date range to reduce the number of audit log entries. You might have to run multiple searches with smaller date ranges to export more than 50,000 entries.
         
 
 3. エクスポートオプションを選択すると、CSV ファイルを開くか、[ダウンロード] フォルダーに保存するか、または特定のフォルダーに保存するかを確認するメッセージがウィンドウの下部に表示されます。

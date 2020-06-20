@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: '共有は、SharePoint Online と OneDrive for business の主要なアクティビティです。 管理者は、監査ログで共有監査を使用して、組織外のユーザーと共有しているリソースを識別できるようになりました。 '
-ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理者は、Microsoft 365 監査ログで共有監査を使用して、組織外のユーザーと共有されているリソースを識別する方法を学習できます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626383"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819297"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>監査ログで共有監査を使用する
 
@@ -89,7 +90,7 @@ ms.locfileid: "43626383"
 
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>外部ユーザーと共有されるリソースを特定する方法
 
-管理者にとって一般的な要件は、組織外のユーザーと共有されているすべてのリソースの一覧を作成することです。 Office 365 で共有監査を使用すると、管理者はこの一覧を生成できます。 ここでは、使用方法について説明します。
+管理者にとって一般的な要件は、組織外のユーザーと共有されているすべてのリソースの一覧を作成することです。 Office 365 で共有監査を使用すると、管理者はこの一覧を生成できます。 これを行うには、次の操作を実行します。
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>手順 1: 共有イベントを検索し、結果を CSV ファイルにエクスポートする
 
@@ -111,11 +112,11 @@ ms.locfileid: "43626383"
     
 6. [**検索**] をクリックして検索を実行します。 
     
-7. 検索の実行が完了し、結果が表示されたら、[**結果** \>のエクスポート] をクリックして**すべての結果をダウンロード**します。
+7. 検索の実行が完了し、結果が表示されたら、[**結果のエクスポート**] をクリックしてすべての \> **結果をダウンロード**します。
     
     [エクスポート] オプションを選択すると、ウィンドウの下部にメッセージが表示され、CSV ファイルを開いたり保存したりするように求められます。
     
-8. [名前を付け**て**保存] をクリックし、CSV ファイルをローカルコンピューター上のフォルダーに保存します。 **Save** \> 
+8. [名前を付けて保存] を**クリックし** \> **Save as** 、CSV ファイルをローカルコンピューター上のフォルダーに保存します。 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>手順 2: PowerQuery Editor を使用して、エクスポートされた監査ログを書式設定する
 
@@ -152,4 +153,4 @@ ms.locfileid: "43626383"
     ここでは、外部ユーザーは**TargetUserOrGroupType: GUEST**という値で識別されるため、共有イベントの行と、対象ユーザーが組織外にある場所が表示されます。 
   
 > [!TIP]
-> 表示されている監査レコードについては、 **ObjectId**列に、ターゲットユーザーと共有されているリソースが示されます。例`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`を示します。
+> 表示されている監査レコードについては、 **ObjectId**列に、ターゲットユーザーと共有されているリソースが示されます。例を示し `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` ます。

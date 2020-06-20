@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066360"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800098"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>連邦金融機関調査委員会 (FFIEC)
 
@@ -33,7 +33,7 @@ ms.locfileid: "44066360"
 
 Microsoft Azure、Microsoft Power BI、Microsoft Office 365 は、金融サービス機関にクラウドサービスを提供するための厳しい要件を満たすように構築されています。 サポートの一環として、microsoft は、FFIEC の情報技術の監査要件を満たすためのガイダンスを提供します。また、FFIEC のコンプライアンス義務を採用する際に Azure SOC attestations を使用することもできます。
 
-金融サービスの展開を促進する: [Azure Security And コンプライアンス FFIEC 金融サービスブループリントをダウンロードする](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
+金融サービスの展開を促進する: [Azure Security And コンプライアンス FFIEC 金融サービスブループリントをダウンロードする](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 金融機関クライアントが Azure との FFIEC のコンプライアンス要件を満たすために、Microsoft では以下を開発しています。
 
@@ -72,7 +72,7 @@ Azure および Office 365 の SOC 構成証明レポート。
 - [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Azure のセキュリティとコンプライアンス FFIEC 金融サービスブループリント](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
 
-## <a name="other-microsoft-resources-for-financial-services"></a>金融サービス業向けのその他の Microsoft リソース
+## <a name="other-microsoft-resources-for-financial-services"></a>金融サービス向けのその他の Microsoft リソース
 
 - [Microsoft 金融サービス コンプライアンス プログラム](https://www.microsoft.com/download/details.aspx?id=55332)
 - [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)

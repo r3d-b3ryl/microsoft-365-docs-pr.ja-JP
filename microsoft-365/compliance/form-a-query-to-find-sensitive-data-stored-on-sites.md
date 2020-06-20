@@ -16,13 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: SharePoint Online でデータ損失防止 (DLP) を使用すると、テナント全体の機密データを含むドキュメントを検出できます。 そのドキュメントが見つかったら、ドキュメントの所有者と連携してデータを保護できます。 このトピックは、機密データを検索するクエリを形成するために役立ちます。
-ms.openlocfilehash: 78f7f07bf6b2fbb0781f4bda8716b84399eef561
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+description: SharePoint Online でデータ損失防止 (DLP) を使用して、テナント全体の機密データを含むドキュメントを検出します。
+ms.openlocfilehash: b6a0943aa4e71b61c5f430034d9e445462eebde7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327915"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817706"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>サイトに保存された機密データを検索するクエリの形成
 
@@ -33,7 +33,7 @@ ms.locfileid: "44327915"
   
 ## <a name="forming-a-basic-dlp-query"></a>基本的な DLP クエリの形成
 
-基本的な DLP クエリは、SensitiveType、count range、および confidence range の 3 つの部分で構成されています。 次の図に示されているように、 **SensitiveType: " \< type \> "** は必須であり、** | \< カウントの範囲 \> **と** | \< 信頼範囲 \> **の両方が省略可能です。 
+基本的な DLP クエリは、SensitiveType、count range、および confidence range の 3 つの部分で構成されています。 次の図に示すように、 **SensitiveType: " \<type\> "** は必須で、両方とも **|\<count range\>** **|\<confidence range\>** 省略可能です。 
   
 ![必須とオプションに分割されるクエリの例](../media/DLP-query-example-text.png)
   

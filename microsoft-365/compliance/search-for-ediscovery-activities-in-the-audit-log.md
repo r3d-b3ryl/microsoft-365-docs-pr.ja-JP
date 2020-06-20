@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: 監査ログを検索して、コンプライアンス管理者がセキュリティ/コンプライアンス センターでコンテンツ検索タスクや電子情報開示ケース タスクを実行したときに記録されたイベントを見つける方法を説明します。
-ms.openlocfilehash: e7ed3ddf16d22750449d3211d96800334676e519
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+description: 電子情報開示のアクセス許可を割り当てられたユーザーが、セキュリティ & コンプライアンスセンターでコンテンツ検索とコア電子情報開示タスクを実行するときに記録されるイベントについて説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 671fdebd75dfdaaf09deebf320b9fe4cfab0ca1c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726522"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818876"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
@@ -201,7 +202,7 @@ ms.locfileid: "44726522"
 |:-----|:-----|
 |ケース  <br/> |作成、変更、または削除された電子情報開示ケースの ID (GUID)。  <br/> |
 |ClientApplication  <br/> |電子情報開示アクティビティ コマンドレッドは、このプロパティの値が **EMC** です。 これは、アクティビティが、セキュリティ/コンプライアンス センターの GUI を使用して実行されたか、PowerShell のコマンドレットを実行して実行されたことを示します。  <br/> |
-|ClientIP  <br/> |アクティビティがログ記録されたときに使用されたデバイスの IP アドレス。IP アドレスは IPv4 または IPv6 のアドレス形式で表示されます。  <br/> |
+|ClientIP  <br/> |The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.  <br/> |
 |ClientRequestId  <br/> | 電子情報開示アクティビティの場合、このプロパティは通常空白です。  <br/> |
 |CmdletVersion  <br/> |組織で実行している セキュリティ/コンプライアンス センターのバージョンのビルド番号。  <br/> |
 |CreationTime  <br/> |電子情報開示アクティビティが実行されたときの協定世界時 (UTC) の日付と時刻。  <br/> |
@@ -226,6 +227,6 @@ ms.locfileid: "44726522"
 |UserId  <br/> |結果としてログ記録されているレコードが生成されたアクティビティ (Operation プロパティで指定された) を実行したユーザー。 システム アカウント (NT AUTHORITY\SYSTEM など) によって実行された電子情報開示アクティビティのレコードも監査ログに含まれます。  <br/> |
 |UserKey  <br/> |UserId プロパティで識別されるユーザーの別の ID。 電子情報開示アクティビティの場合、このプロパティの値は通常、UserId プロパティと同じです。  <br/> |
 |UserServicePlan  <br/> |組織で使用されているサブスクリプション。 電子情報開示アクティビティの場合、このプロパティは通常空白です。  <br/> |
-|UserType  <br/> |操作を実行したユーザーの種類。次の値は、ユーザーの種類を指定します。  <br/> 0   正規ユーザー。 2   組織の管理者。 3   Microsoft データセンター管理者またはデータセンターのシステム アカウント。 4   システム アカウント。 5   アプリケーション。 6   サービス プリンシパル。 |
+|UserType  <br/> |The type of user that performed the operation. The following values indicate the user type.  <br/> 0   正規ユーザー。 2   組織の管理者。 3   Microsoft データセンター管理者またはデータセンターのシステム アカウント。 4   システム アカウント。 5   アプリケーション。 6   サービス プリンシパル。 |
 |バージョン  <br/> |ログに記録されるアクティビティ (Operation プロパティで識別) のバージョン番号を示します。  <br/> |
 |Workload  <br/> |アクティビティが発生したサービス。 電子情報開示アクティビティの場合、この値は、**SecurityComplianceCenter** です。  <br/> |

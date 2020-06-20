@@ -16,21 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '詳細な電子情報開示の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマを含む高度な設定を構成する方法について説明します。 '
-ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631274"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819237"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>高度な電子情報開示の高度な設定を分析する設定を行う
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery は、モジュール設定を分析するための既定の高度なパラメーターを提供します。 次の手順では、指定可能な設定について説明します。
   
-1. [ ** \> Analyze \> **の設定の準備] タブで、[**詳細設定**] (ページの下部) をクリックします。 次のパネルが表示されます。 
+1. [Analyze の設定の準備] タブで、[**詳細設定**] (ページの下部) をクリックします。 ** \> \> ** 次のパネルが表示されます。 
     
     ![分析設定の拡張設定](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
@@ -46,7 +47,7 @@ Advanced eDiscovery は、モジュール設定を分析するための既定の
     
 4. **[保存]** をクリックします。 
     
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

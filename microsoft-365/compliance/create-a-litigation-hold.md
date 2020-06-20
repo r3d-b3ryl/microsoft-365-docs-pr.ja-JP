@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: 調査中にメールボックスのすべてのコンテンツを保持しながら、メールボックスを訴訟ホールドの対象にする方法について説明します。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351052"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818046"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
@@ -35,7 +37,7 @@ ms.locfileid: "44351052"
     
 - ユーザーのプライマリおよびアーカイブメールボックスのアイテムは保持されます。
     
-## <a name="before-you-begin"></a>はじめに
+## <a name="assign-an-exchange-online-plan-2-license"></a>Exchange Online プラン2ライセンスを割り当てる
 
 - Exchange Online メールボックスを訴訟ホールドの対象にするには、Exchange online プラン2ライセンスが割り当てられている必要があります。 メールボックスに Exchange Online プラン1ライセンスが割り当てられている場合は、それを保持するために別の Exchange Online アーカイブライセンスを割り当てる必要があります。
     
@@ -84,7 +86,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 通常、削除済みアイテムワークフローでは、ユーザーが完全に削除 (Shift + Delete) したり、[削除済みアイテム] フォルダーから削除したりすると、メールボックスアイテムは回復可能なアイテムフォルダーの削除サブフォルダーに移動されます。 削除ポリシー (削除保持アクションで構成された保持タグ) も、保持期間が経過すると、アイテムを削除サブフォルダーに移動します。 ユーザーが [回復可能なアイテム] フォルダー内のアイテムを削除したとき、またはアイテムの削除済みアイテムの保存期間が経過すると、アイテムは [回復可能なアイテム] フォルダー内の [消去] サブフォルダーに移動され、永続的な削除のマークが付けられます。 このメールボックスは、次に管理フォルダーアシスタント (MFA) によって処理されたときに Exchange から削除されます。
 
-メールボックスが訴訟ホールドの対象になっている場合、Purges サブフォルダーのアイテムは、訴訟ホールドで指定された保持期間中は保持されます。保持期間は、アイテムが受信または作成された日付から計算され、Purges サブフォルダーでのアイテムの保持期間を定義します。Purges サブフォルダーでのアイテムの保持期間を過ぎると、アイテムには完全削除のマークが付けられ、次回そのメールボックスが、MFA で処理されるときに、Exchange から消去されます。メールボックスが無期限の保持の対象になっている場合、そのアイテムは Purges サブフォルダーから消去されることはありません。
+When a mailbox is placed on Litigation Hold, items in the Purges subfolder are preserved for the hold duration specified by the Litigation Hold. The hold duration is calculated from the original date an item was received or created, and defines how long items in the Purges subfolder are held. When the hold duration expires for an item in the Purges subfolder, the item is marked for permanent deletion and will be purged from Exchange the next time the mailbox is processed by the MFA. If an indefinite hold is placed on a mailbox, items will never be purged from the Purges subfolder.
 
 次の図は、[回復可能なアイテム] フォルダー内のサブフォルダーと保持のワークフロー プロセスを示しています。
 

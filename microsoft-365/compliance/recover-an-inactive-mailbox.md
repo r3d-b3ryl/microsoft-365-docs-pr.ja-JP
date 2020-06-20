@@ -15,17 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: '元従業員が組織に戻った場合、または新しい従業員が退職した従業員の職務を受けた場合は、Office 365 の非アクティブなメールボックスの内容を復元できます。 非アクティブなメールボックスを復元すると、非アクティブなメールボックスのコンテンツが含まれる新しいメールボックスに変換されます。 '
-ms.openlocfilehash: 63d71d2f6e23af55d94f006e772f35747c83d59c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+description: Office 365 の非アクティブなメールボックスのコンテンツを、非アクティブなメールボックスのコンテンツを含む新しいメールボックスに変換することによって復元する方法について説明します。
+ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678973"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818947"
 ---
 # <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
 
-非アクティブなメールボックス (回復可能な削除によって削除されたメールボックスの一種) は、元従業員が組織を離れた後に、その電子メールを保持するために使用されます。その従業員が組織に復帰する場合、または別の従業員が元従業員の職責を引き継ぐ場合には、非アクティブなメールボックスのコンテンツをユーザーが使用できるようにする 2 つの方法があります。 
+An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserve a former employee's email after he or she leaves your organization. If that employee returns to your organization or if another employee takes on the job responsibilities of the former employee, there are two ways that you can make the contents of the inactive mailbox available to a user: 
   
 - **非アクティブなメールボックスを回復します。** 元従業員が組織に戻った場合、または新しい従業員が元従業員の職務を引き継ぐために採用された場合は、非アクティブなメールボックスの内容を復元できます。 この方法では、非アクティブなメールボックスを、その非アクティブなメールボックスのコンテンツが含まれる新しいアクティブなメールボックスに変換します。 回復された後、非アクティブなメールボックスは存在しなくなります。 このトピックの手順では、この方法について説明します。 
     
@@ -33,7 +34,7 @@ ms.locfileid: "44678973"
 
 非アクティブなメールボックスを復元することと回復することの違いについて、および非アクティブなメールボックスを回復する際になされる処理について詳しくは、「[詳細情報](#more-information)」セクションを参照してください。
   
-## <a name="before-you-begin"></a>はじめに
+## <a name="requirements-to-recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復するための要件
 
 - 非アクティブなメールボックスを回復するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳細な手順については、「 [Exchange Online PowerShell への接続](https://go.microsoft.com/fwlink/?linkid=396554)」を参照してください。
     
@@ -56,7 +57,7 @@ ms.locfileid: "44678973"
     ```
 
     > [!IMPORTANT]
-    > 上記のコマンドでは、 **DistinguishedName** または **ExchangeGUID** プロパティの値を使用して非アクティブなメールボックスを識別します。これらのプロパティは組織内の各メールボックスに対して一意ですが、アクティブなメールボックスと非アクティブなメールボックスとでプライマリ SMTP アドレスが等しい可能性があります。 
+    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
   
 2. 次の例では、上記のコマンドで取得したプロパティを使用して、ユーザー Ann Beebe のために非アクティブなメールボックスをアクティブなメールボックスに回復します。 *Name*および*MicrosoftOnlineServicesID*パラメーターに指定する値が組織内で一意であることを確認してください。 
 
@@ -84,7 +85,7 @@ ms.locfileid: "44678973"
   
      - **ロックを保持しない Microsoft 365 アイテム保持ポリシー。** 非アクティブなメールボックスは、そのメールボックスに適用されていた、ロックされていない Microsoft 365 保持ポリシーから削除されます。 ただし、回復されたメールボックスで訴訟ホールドが有効になっている場合は、特定の保存期間よりも古いコンテンツを削除する組織全体のアイテム保持ポリシーに基づいてメールボックスのコンテンツが削除されないようにします。 訴訟ホールドを保持するか、削除することができます。 詳細については、「[訴訟ホールドを作成する](create-a-litigation-hold.md)」を参照してください。
 
-  - 単一アイテムの回復期間 ( **RetainDeletedItemsFor** メールボックス プロパティで定義されている) は 30 日に設定されます。通常は、新しいメールボックスが Exchange Online に作成されるとき、この保存期間は 14 日に設定されます。この期間を最大値の 30 日間に設定すると、非アクティブなメールボックスから完全に削除 (またはパージ) されたデータを回復するための時間が拡大します。また、単一アイテムの回復を無効にすることや、単一アイテムの回復期間を既定の 14 日間に戻すこともできます。詳細については、「 [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769)」を参照してください。
+  - The single item recovery period (which is defined by the **RetainDeletedItemsFor** mailbox property) is set to 30 days. Typically, when a new mailbox is created in Exchange Online, this retention period is set to 14 days. Setting this to the maximum value of 30 days gives you more time to recover any data that's been permanently deleted (or purged) from the inactive mailbox. You can also disable single item recovery or set the single item recovery period back to the default of 14 days. For more information, see [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
   
   - アイテム保持ホールドが有効になり、アイテム保持ホールド期間が 30 日に設定されます。 これは、新しいメールボックスに割り当てられた既定の Exchange アイテム保持ポリシーと、組織全体または Exchange 全体の Microsoft 365 保持ポリシーが30日間処理されないことを意味します。 これにより、復帰した従業員や回復された非アクティブなメールボックスの新しい所有者は、古いメッセージを処理するための時間を持つことができます。 それ以外の場合、Exchange または Microsoft 365 の保持ポリシーは、Exchange または Microsoft 365 の保持ポリシーに対して構成された設定に基づいて期限切れになった古いメールボックスアイテムを削除する (または、有効になっている場合はアーカイブメールボックスにアイテムを移動する) 可能性があります。 30 日後に保存機能が期限切れになると、 **RetentionHoldEnabled** メールボックスのプロパティが **False** に設定されて、管理フォルダー アシスタントがメールボックスに割り当てられたポリシーの処理を開始します。 この追加の時間を必要としない場合は、単にアイテム保持ホールドを除去できます。 または、 **Set-Mailbox -EndDateForRetentionHold** コマンドを使用してアイテム保持ホールドの期間を拡大することもできます。 詳細については、「 [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300)」を参照してください。
 

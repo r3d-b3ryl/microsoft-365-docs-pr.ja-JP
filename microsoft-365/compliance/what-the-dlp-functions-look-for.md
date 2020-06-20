@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムの適用を確認し、関連するキーワードやその他の情報を検索することによって、corroborate を行います。 この機能の一部は、内部機能によって実行されます。 このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。
-ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: 定義済みの機密情報の種類がどのように機能するかを理解するために、データ損失防止 (DLP) 関数がどのような意味を持つかを説明します。
+ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327749"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819277"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 関数の検索対象
 
@@ -51,7 +53,7 @@ ms.locfileid: "44327749"
     
 受諾された月の名前:
   
-- 英語
+- English
     
   - 1月、2月、3月、4月、5月、6月、7月、5月、7月、7月、11月、10月、11月、12月
     
@@ -79,7 +81,7 @@ ms.locfileid: "44327749"
     
 受諾された月の名前:
   
-- 英語
+- English
     
   - 1月、2月、3月、4月、5月、6月、7月、5月、7月、7月、11月、10月、11月、12月
     
@@ -209,7 +211,7 @@ ms.locfileid: "44327749"
     
 受諾された月の名前:
   
-- 英語
+- English
     
   - 1月、2月、3月、4月、5月、6月、7月、5月、7月、7月、11月、10月、11月、12月
     

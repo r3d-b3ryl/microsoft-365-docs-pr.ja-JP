@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: インスタント Bloomberg から Microsoft 365 にデータをインポートするためのコネクタを設定して、さまざまなコンプライアンスツールを使用できるようにします。
-ms.openlocfilehash: 49fdef36e6ae2b425878641c1a368e982e391eeb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: ネイティブコネクタを使用して Bloomberg を & セットアップし、インスタントチャットツールから Microsoft 365 にデータをインポートする方法について説明します。
+ms.openlocfilehash: 02f197ba61f422852db6d4bc4c045ced0bf3d13e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035149"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818456"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
@@ -75,7 +74,7 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
 
 最初の手順として、Secure Shell (SSH) およびかなり良好なプライバシー (PGP) のための公開キーのコピーを取得します。 手順2でこれらのキーを使用して、Bloomberg SFTP サイトを構成して、コネクタ (手順3で作成したもの) が SFTP サイトに接続し、インスタント Bloomberg チャットデータを Microsoft 365 メールボックスに転送できるようにします。 また、この手順では IP アドレスも取得します。これは、Bloomberg SFTP サイトを構成するときに使用します。
 
-1. に移動<https://compliance.microsoft.com>して、[**データコネクタ** > **インスタント Bloomberg**] をクリックします。
+1. に移動 <https://compliance.microsoft.com> して、[**データコネクタ**  >  **インスタント Bloomberg**] をクリックします。
 
 2. [**インスタント Bloomberg**製品の説明] ページで、[**コネクタの追加**] をクリックします。
 
@@ -102,7 +101,7 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
 
 最後の手順では、Microsoft 365 コンプライアンスセンターでインスタント Bloomberg コネクタを作成します。 コネクタは、提供された情報を使用して、Bloomberg SFTP サイトに接続し、チャットメッセージを Microsoft 365 の対応するユーザーメールボックスに転送します。 
 
-1. に移動<https://compliance.microsoft.com>して、[**データコネクタ** > **インスタント Bloomberg**] をクリックします。
+1. に移動 <https://compliance.microsoft.com> して、[**データコネクタ**  >  **インスタント Bloomberg**] をクリックします。
 
 2. [**インスタント Bloomberg**製品の説明] ページで、[**コネクタの追加**] をクリックします。
 

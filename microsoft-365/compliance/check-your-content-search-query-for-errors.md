@@ -14,15 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-ms.custom:
-- seo-marvel-apr2020
-description: サポートされていない文字や小文字のブール演算子などのエラーや入力ミスについて、コンテンツ検索のキーワードクエリをチェックする方法について説明します。
-ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: 検索を実行する前に、キーワードクエリのコンテンツ検索のエラーと入力ミスを検出する方法について説明します。
+ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035629"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818096"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>コンテンツ検索クエリでエラーを確認する
 
@@ -38,7 +37,7 @@ ms.locfileid: "44035629"
     
 - **左から右のマークと右から左のマーク**-これらは、左から右の言語 (英語やスペイン語など) と右から左の言語 (アラビア語やヘブライ語など) のテキストの方向を示すために使用される制御文字です。
     
-- **小文字のブール演算子**- **AND**、 **OR**、 **NOT**などのブール演算子を検索クエリで使用する場合は、大文字である必要があります。 クエリで誤字をチェックしている場合、クエリ構文は、小文字の演算子が使用されているにもかかわらずブール演算子が使用されていることを示すことがよくあります。たとえば、 `(WordA or WordB) and (WordC or WordD)`のようになります。
+- **小文字のブール演算子**- **AND**、 **OR**、 **NOT**などのブール演算子を検索クエリで使用する場合は、大文字である必要があります。 クエリで誤字をチェックしている場合、クエリ構文は、小文字の演算子が使用されているにもかかわらずブール演算子が使用されていることを示すことがよくあります。たとえば、のように `(WordA or WordB) and (WordC or WordD)` なります。
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>クエリにサポートされていない文字が含まれている場合はどうなりますか?
 

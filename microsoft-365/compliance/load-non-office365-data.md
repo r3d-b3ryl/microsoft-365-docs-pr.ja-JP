@@ -16,19 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Office 365 以外のコンテンツのインポート機能を使用して、Office 以外の365ドキュメントをデータ調査の証拠にアップロードする方法について説明します。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034415"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815484"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>Microsoft 以外の365データを証拠に読み込む
 
 データ調査で分析する必要があるすべてのドキュメントが Microsoft 365 にあるわけではありません。 Microsoft 以外の365コンテンツインポート機能を使用すると、Microsoft 365 に存在しないドキュメントをデータ調査で分析できるように、証拠としてアップロードすることができます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="requirements-to-upload-non-office-365-content"></a>Office 以外の365コンテンツをアップロードするための要件
 
 この手順の説明に従って Microsoft 以外の365機能をアップロードするには、次の条件を持っている必要があります。
 
@@ -42,7 +44,7 @@ ms.locfileid: "44034415"
 
 - 電子情報開示の管理者または電子情報開示管理者のいずれかであるアカウントで、Microsoft 以外の365のコンテンツフォルダー構造にアクセスできるコンピューターにインストールされている。
 
-- AzCopy をインストールします。これは、ここから行うことができます。https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- AzCopy をインストールします。これは、 [AzCopy を使用して作業を開始](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)することで実現できます。
 
 ## <a name="upload-non-microsoft-365-content-in-to-a-data-investigation"></a>Microsoft 以外の365コンテンツをデータ調査にアップロードする
 

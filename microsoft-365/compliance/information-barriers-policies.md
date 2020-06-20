@@ -14,16 +14,14 @@ ms.collection:
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232055"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817546"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
-
-## <a name="overview"></a>概要
 
 情報の障壁を使用すると、特定のユーザーセグメントが相互に通信するのを防ぐように設計されたポリシーを定義したり、特定のセグメントのみが特定のセグメントと通信できるようにすることができます。 情報バリアポリシーは、組織が関連する業界標準および規制に準拠し、潜在的な競合を回避するのに役立ちます。 詳細については、「[情報の障壁](information-barriers.md)」を参照してください。 
 
@@ -32,19 +30,19 @@ ms.locfileid: "44232055"
 > [!TIP]
 > この記事には、情報バリアポリシーを計画して定義するのに役立つ、[シナリオの例](#example-contosos-departments-segments-and-policies)とダウンロード可能な[Excel ブック](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)が含まれています。
 
-## <a name="concepts-of-information-barrier-policies"></a>情報バリアポリシーの概念
+## <a name="concepts-of-information-barrier-policies"></a>情報バリア ポリシーの概念
 
 情報の障壁に関するポリシーを定義するときには、ユーザーアカウントの属性、セグメント、"ブロック" ポリシー、または "許可" ポリシー、およびポリシーアプリケーションを使用して操作します。
 
-- ユーザーアカウントの属性は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、その他のジョブプロファイルの詳細を含めることができます。 
+- ユーザー アカウント属性は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、およびその他のジョブ プロファイルの詳細を含めることができます。 
 
-- セグメントとは、セキュリティ & コンプライアンスセンターで、選択した**ユーザーアカウント属性**を使用して定義された一連のユーザーのことです。 ([サポートされている属性の一覧](information-barriers-attributes.md)を参照してください)。 
+- セグメントとは、セキュリティ & コンプライアンスセンターで、選択した**ユーザーアカウント属性**を使用して定義された一連のユーザーのことです。 ([サポートされる属性の一覧](information-barriers-attributes.md)を参照してください。) 
 
-- 情報バリアポリシーでは、通信制限または制限を決定します。 情報バリアポリシーを定義するときは、次の2種類のポリシーから選択します。
+- 情報バリア ポリシーは、通信の制限値または制限を決定します。 情報バリア ポリシーを定義する際は、次の 2 種類のポリシーから選択します。
     - "Block" ポリシーは、あるセグメントが別のセグメントと通信できないようにします。
     - [許可] ポリシーでは、1つのセグメントが特定の他のセグメントのみと通信できるようにします。
 
-- ポリシーアプリケーションは、すべての情報バリアポリシーが定義された後に実行され、組織に適用する準備が整っています。
+- ポリシーの適用は、すべての情報バリア ポリシーが定義された後に実行され、組織に適用する準備が整います。
 
 ## <a name="the-work-flow-at-a-glance"></a>ワークフローの概要
 
@@ -70,7 +68,7 @@ ms.locfileid: "44232055"
 
 - 監査ログ-ポリシーアプリケーションの状態を参照するには、監査ログを有効にする必要があります。 セグメントまたはポリシーの定義を開始する前に、この手順を実行することをお勧めします。 詳細については、「[監査ログの検索を有効または無効](turn-audit-log-search-on-or-off.md)にする」を参照してください。
 
-- アドレス帳ポリシーなし-情報バリアポリシーを定義して適用する前に、Exchange アドレス帳ポリシーが設定されていないことを確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2種類のポリシーは互換性がありません。 このようなポリシーがある場合は、最初に[アドレス帳ポリシーを削除](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)するようにしてください。 情報バリアポリシーが有効になっていて、階層型アドレス帳が有効になっている場合、情報バリアセグメントに含まれて***いない***すべてのユーザーに、Exchange online の[階層型アドレス帳](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)が表示されます。
+- アドレス帳ポリシーなし-情報バリアポリシーを定義して適用する前に、Exchange アドレス帳ポリシーが設定されていないことを確認してください。 情報バリアはアドレス帳ポリシーに基づいていますが、2 種類のポリシーには互換性がありません。 このようなポリシーがある場合は、最初に[アドレス帳ポリシーを削除](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)するようにしてください。 情報バリアポリシーが有効になっていて、階層型アドレス帳が有効になっている場合、情報バリアセグメントに含まれて***いない***すべてのユーザーに、Exchange online の[階層型アドレス帳](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)が表示されます。
 
 - PowerShell-現在、情報バリアポリシーは、PowerShell コマンドレットを使用して Office 365 セキュリティ & コンプライアンスセンターで定義および管理されます。 この記事ではいくつかの例が示されていますが、PowerShell のコマンドレットとパラメーターについて理解しておく必要があります。 Azure PowerShell モジュールも必要になります。
     - [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
@@ -177,7 +175,7 @@ ms.locfileid: "44232055"
 定義するユーザーセグメントと情報バリアポリシーの一覧を使用して、シナリオを選択し、手順を実行します。 
 
 - [シナリオ 1: セグメント間の通信をブロックする](#scenario-1-block-communications-between-segments)
-- [シナリオ 2: セグメントが他の1つのセグメントとのみ通信できるようにする](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
+- [シナリオ 2: セグメントが別のセグメント 1 つとだけ通信できるようにする](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
 > **ポリシーを定義するときは、1つのセグメントに複数のポリシーを割り当てない**ようにしてください。 たとえば、 *sales*というセグメントに対して1つのポリシーを定義する場合は、 *sales*に対して追加のポリシーを定義しないでください。<p>また、情報バリアポリシーを定義するときには、これらのポリシーを適用する準備ができるまで、非アクティブ状態に設定してください。 ポリシーを定義 (または編集) すると、それらのポリシーがアクティブな状態に設定された後、ユーザーに影響を与えることはありません。
@@ -207,7 +205,7 @@ ms.locfileid: "44232055"
    - (必要な場合)[セグメントが1つの他のセグメントとのみ通信できるようにするポリシーを定義する](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
    - (すべてのポリシーが定義された後)[情報バリアポリシーの適用](#part-3-apply-information-barrier-policies)
 
-### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>シナリオ 2: セグメントが他の1つのセグメントとのみ通信できるようにする
+### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>シナリオ 2: セグメントが別のセグメント 1 つとだけ通信できるようにする
 
 1. 1つのセグメントが他の1つのセグメントとのみ通信できるようにするには、 **InformationBarrierPolicy**コマンドレットを**SegmentsAllowed**パラメーターと共に使用します。 
 
@@ -278,50 +276,50 @@ PowerShell を使用すると、次の表に示すように、ユーザーアカ
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>例: Contoso 社の部署、セグメント、ポリシー
 
-組織がセグメントとポリシーを定義する方法を確認するには、次の例を参照してください。
+組織がセグメントおよびポリシーを定義する方法については、次の例を参照してください。
 
-### <a name="contosos-departments-and-plan"></a>Contoso 社の部門と計画
+### <a name="contosos-departments-and-plan"></a>Contoso の部門とプラン
 
-Contoso には、人事、営業、マーケティング、研究、製造の5つの部門があります。 業界の規制に準拠するために、一部の部署のユーザーは、次の表に示すように、他の部署とは通信することは想定されていません。
+Contoso には、人事、営業、マーケティング、リサーチ、製造の5つの部門があります。 業界の規制に準拠するために、一部の部署のユーザーは、次の表に示すように、他の部署とは通信することは想定されていません。
 
-|化  |会話可能  |会話できません  |
+|セグメント  |に連絡できます  |に連絡できません  |
 |---------|---------|---------|
-|HR     |すべてのユーザー         |(制限なし)         |
+|人事     |すべてのユーザー         |(制限なし)         |
 |営業     |人事、マーケティング、製造         |リサーチ         |
 |マーケティング     |すべてのユーザー         |(制限なし)         |
 |リサーチ     |人事、マーケティング、製造        |営業     |
 |製造 |人事、マーケティング |人事またはマーケティング以外のすべてのユーザー |
 
-この点を考慮して、Contoso 社の計画には3つの情報バリアポリシーが含まれています。
+これを念頭に置いて、Contoso の計画には3つの情報バリアポリシーが盛り込まれています。
 
-1. セールスが研究との通信を禁止するように設計されたポリシー (および研究からのセールスとの通信を禁止する別のポリシー)
-2. 製造に HR および Marketing のみと通信できるように設計されたポリシー 
+1. 営業部門がリサーチ部門と通信するのを防ぐために設計されたポリシー (およびリサーチ部門が営業部門と通信するのを防ぐための別のポリシー)
+2. 製造部門が人事部門およびマーケティング部門とだけ通信できるように設計されたポリシー 
 
 人事またはマーケティングのポリシーを定義する必要はありません。
 
-### <a name="contosos-defined-segments"></a>Contoso 社が定義したセグメント
+### <a name="contosos-defined-segments"></a>Contoso の定義済みセグメント
 
 Contoso 社は、次のように、Azure Active Directory の Department 属性を使用してセグメントを定義します。
 
-|部署  |セグメント定義  |
+|部門  |セグメント定義  |
 |---------|---------|
-|HR     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
+|人事     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
 |営業     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
 |マーケティング     | `New-OrganizationSegment -Name "Marketing" -UserGroupFilter "Department -eq 'Marketing'"`        |
 |リサーチ     | `New-OrganizationSegment -Name "Research" -UserGroupFilter "Department -eq 'Research'"`        |
 |製造     | `New-OrganizationSegment -Name "Manufacturing" -UserGroupFilter "Department -eq 'Manufacturing'"`        |
 
-セグメントが定義されていると、Contoso はポリシーの定義に進みます。 
+定義されたセグメントを使用して、Contoso がポリシーを定義します。 
 
-### <a name="contosos-information-barrier-policies"></a>Contoso 社の情報バリアポリシー
+### <a name="contosos-information-barrier-policies"></a>Contoso の情報バリアポリシー
 
-Contoso 社では、次の表に示す3つのポリシーを定義しています。
+Contoso は3つのポリシーを定義します。次の表で説明します。
 
 |ポリシー  |ポリシー定義  |
 |---------|---------|
-|ポリシー 1: Sales がリサーチと通信できないようにする     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーを*Sales Research*と呼びます。 このポリシーがアクティブで適用されている場合は、営業部門のユーザーが Research セグメントのユーザーと通信できないようにするのに役立ちます。 これは一ウェイのポリシーです。研究からセールスへのコミュニケーションが妨げられることはありません。 そのためには、ポリシー2が必要です。      |
-|ポリシー 2: リサーチがセールスと通信できないようにする     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、情報バリアポリシーを*Research Sales*と呼びます。 このポリシーがアクティブで適用されている場合は、リサーチセグメントにあるユーザーが営業セグメント内のユーザーと通信できないようにするのに役立ちます。       |
-|ポリシー 3: 製造に HR と Marketing のみが通信できるようにする     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>この例では、情報バリアポリシーを*製造-HRMarketing*と呼びます。 このポリシーがアクティブで適用されている場合、製造は人事およびマーケティングとのみ通信できます。 人事およびマーケティングは、他のセグメントとの通信に制限されていないことに注意してください。 |
+|ポリシー 1: 営業部門がリサーチ部門と通信できないようにする     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーは、*営業-リサーチ*と呼ばれています。 このポリシーが適応されると、営業セグメント内のユーザーがリサーチセグメント内のユーザーと通信できなくなります。 これは一方向ポリシーで、リサーチ担当者からは営業担当社に通信できます。 そのため、ポリシー2が必要です。      |
+|ポリシー 2: リサーチ部門が営業部門と通信できないようにする     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、情報バリアポリシーは、*リサーチ-営業*と呼ばれています。 このポリシーが適応されると、リサーチセグメント内のユーザーが、営業セグメント内のユーザーと通信できなくなります。       |
+|ポリシー 3: 製造に HR と Marketing のみが通信できるようにする     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>この場合、情報バリアポリシーは、*製造-人事マーケティング*と呼ばれています。 このポリシーが適応されると、製造部門は人事およびマーケティング部門とだけ通信を行えます。 人事およびマーケティング部門では、他のセグメントとの通信に制限はありません。ご注意ください。 |
 
 セグメントとポリシーが定義されているので、Contoso は**InformationBarrierPoliciesApplication**コマンドレットを実行してポリシーを適用します。 
 

@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: この記事のスクリプトを使用して、Office 365 または Microsoft 365 のコンプライアンスセンターで電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成します。
-ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom:
+- seo-marvel-apr2020
+description: 電子情報開示ケースに関連付けられているすべての保留リストに関する情報を含むレポートを生成する方法について説明します。
+ms.openlocfilehash: b4387434d57373f9569b6472786e8ad40de85b21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208379"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818036"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースの保留リストのレポートを作成する
   
@@ -31,13 +33,13 @@ ms.locfileid: "44208379"
 
 レポートに含まれる情報の詳細については、「 [More information](#more-information) 」セクションを参照してください。
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="admin-requirements-and-script-information"></a>管理者の要件とスクリプト情報
 
 - 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織の電子情報開示管理者である必要があります。 電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。 EDiscovery アクセス許可の詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
     
 - この記事のスクリプトには、最小限のエラー処理が含まれています。 主な目的は、組織内の電子情報開示ケースに関連付けられている保留リストに関するレポートをすばやく作成することです。
     
-- このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>手順 1: セキュリティ & コンプライアンスセンター PowerShell に接続する
 
@@ -49,7 +51,7 @@ Microsoft 365 アカウントで多要素認証 (MFA) やフェデレーショ�
 
 セキュリティ & コンプライアンスセンター PowerShell に接続した後、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。 
   
-1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、CaseHoldsReport のようにします。 
+1. ファイル名サフィックス. ps1 を使用して、次のテキストを Windows PowerShell スクリプトファイルに保存します。たとえば、CaseHoldsReport.ps1 のようにします。 
     
   ```powershell
 #script begin
@@ -158,11 +160,11 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 
     さらでは、このスクリプトは、保留がないケースの一覧を含むレポートも作成します。 このレポートのファイル名は `CaseswithNoHolds<DateTimeStamp>.csv` です。
     
-    CaseHoldsReport スクリプトを実行する例を次に示します。 
+    CaseHoldsReport.ps1 スクリプトを実行する例を次に示します。 
     
-    ![CaseHoldsReport スクリプトを実行した後の出力](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![CaseHoldsReport.ps1 スクリプトを実行した後の出力](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>詳細情報
 
 この記事のスクリプトを実行したときに作成されるケース保持レポートには、各ホールドに関する以下の情報が含まれています。 前述のように、組織内のすべての保留リストに関する情報を返すには、電子情報開示管理者でなければなりません。 ケース保持の詳細については、「[電子情報開示ケース](ediscovery-cases.md)」を参照してください。
   

@@ -19,12 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 上級電子情報開示ツールを使用して詳細な分析を行うために、セキュリティ & コンプライアンスセンターでコンテンツ検索の結果を準備する方法について説明します。
-ms.openlocfilehash: 14bc98dc9cca656e23fc76f00c6adc975bb61c5e
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c0f1540e9745351269e019ea95399ce5c636d8b3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412846"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818766"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>Advanced eDiscovery(クラシック) 用に検索結果を準備する
 
@@ -51,9 +52,9 @@ ms.locfileid: "44412846"
     
 - **レビューアプリケーション用のデータのエクスポート**-分析を完了し、データセットを縮小した後で、高度な電子情報開示と Microsoft 365 のデータをエクスポートできます。 エクスポートパッケージには、エクスポートされたコンテンツと分析メタデータのプロパティを含む CSV ファイルが含まれています。 このエクスポートパッケージは、電子情報開示レビューアプリケーションにインポートできます。 
     
-## <a name="before-you-begin"></a>始める前に
+## <a name="get-licenses-and-permissions"></a>ライセンスとアクセス許可を取得する
 
-- Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office365 E5 ライセンスが割り当てられている必要があります。または、Office365 E1 または E3 ライセンスを持つユーザーに Advanced eDiscovery 単体のライセンスを割り当てることもできます。ケースに割り当てられ、Advanced eDiscovery を使用してデータを分析する管理者および法令遵守責任者には E5 ライセンスは不要です。 
+- To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced eDiscovery standalone license. Administrators and compliance officers who are assigned to cases and use Advanced eDiscovery to analyze data don't need an E5 license. 
     
 - 高度な電子情報開示の検索結果を準備するには、電子情報開示マネージャーまたはセキュリティ & コンプライアンスセンターの電子情報開示管理者である必要があります。 電子情報開示マネージャーは、電子情報開示マネージャー役割グループのメンバーです。 また、電子情報開示管理者は、電子情報開示マネージャー役割グループのメンバーですが、さらに電子情報開示特権が割り当てられています。 電子情報開示管理者のアクセス許可を割り当てる手順については、「[電子情報開示のケース](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)」のステップ1を参照してください。
     

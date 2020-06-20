@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254180"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773768"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-クラウド (G-クラウド)
 
@@ -37,8 +37,6 @@ ms.locfileid: "44254180"
 
 デジタルマーケットプレースへの Microsoft サービスの予定は、英国の政府機関およびパートナーが、英国の公式データである米国政府のデータを保存および処理できることを意味します。 さらに、Microsoft クラウドサービスの販売店である G-クラウドに含まれている、450を超える Microsoft パートナーが提供されるようになりました。 これらのユーザーは、独自のアプリケーションで14原則を使用して、スコープ内サービスのコンプライアンスを直接アサートすることができます。 ただし、お客様とパートナーは、Microsoft クラウドサービスのコンプライアンスの構成証明と決定に含まれていないすべてのコンポーネントについて、独自のコンプライアンスを達成する必要があります。
 
-Microsoft クラウドの英国 G-クラウド v6 の利点の詳細については、「英国[g-クラウド v6 の背景ドキュメントをダウンロードする](https://aka.ms/uk-g-cloud_backgrounder)」を参照してください。
-
 Azure セキュリティおよびコンプライアンスブループリントを使用して、英国 G-クラウド v6 の展開を促進する方法について説明します。 [Azure ブループリントの UK g-クラウドプリンシパル実装ガイダンスをダウンロード](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)する
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
@@ -47,9 +45,9 @@ Azure セキュリティおよびコンプライアンスブループリント�
 - Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Power オートメーション (旧称 Microsoft Flow) クラウドサービスをスタンドアロンサービスとして、または Office 365 または Dynamics 365 ブランドプランまたはスイートに含める
+- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - Office 365: Exchange Online、SharePoint Online、Skype for Business Online
-- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書

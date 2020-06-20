@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '「ドキュメントの類似性」の値を確認します。2つのファイルの resemblance の最小レベルは、詳細な電子情報開示で機能します。 '
-ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83c68eca8fba1ee8672f02f315585161c9abf2e3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633412"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819127"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>Advanced eDiscovery でのドキュメントの類似性 (クラシック) について
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 詳細な電子情報開示では、ドキュメントの類似性は、2つのドキュメントがほぼ重複していると見なされるために必要な resemblance の最小レベルです。
   
@@ -55,7 +56,7 @@ Resemblance のレベルは次のように示されています。
   
 設定が結合されると、新しい文書がセットに追加されたときにピボットドキュメントが変更されることがあります。 
   
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

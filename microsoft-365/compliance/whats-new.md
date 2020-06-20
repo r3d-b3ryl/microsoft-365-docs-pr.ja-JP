@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 コンプライアンスセンターに新機能を継続的に追加し、学習した問題を修正し、フィードバックに基づいて変更を加えています。 今月の内容を確認してください。
+description: Microsoft 365 コンプライアンスセンターに継続的に新機能を追加しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418901"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817062"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの新機能
 
@@ -162,7 +162,7 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 |**機能**|**Office 365 セキュリティ/コンプライアンス センター**|**Microsoft 365 コンプライアンス センター**|**詳細情報**|
 |:-----|:-----|:-----|:-----|
 |Advanced eDiscovery|電子情報開示 > の高度な電子情報開示 <br/> https://protection.office.com/advancedediscoverycases |電子情報開示 > の詳細 <br/> https://compliance.microsoft.com/advancedediscovery | [Microsoft 365 の高度な電子情報開示ソリューションの概要](overview-ediscovery-20.md) |
-|ポリシーを通知する|通知 > 警告ポリシー <br/> https://protection.office.com/alertpolicies |現時点では、アラートポリシーは Office 365 セキュリティ & コンプライアンスセンターでのみ管理されます。 |[セキュリティ/コンプライアンス センターのアラート ポリシー](alert-policies.md) |
+|アラート ポリシー|通知 > 警告ポリシー <br/> https://protection.office.com/alertpolicies |現時点では、アラートポリシーは Office 365 セキュリティ & コンプライアンスセンターでのみ管理されます。 |[セキュリティ/コンプライアンス センターのアラート ポリシー](alert-policies.md) |
 |アラート|通知 > 表示する通知 <br/> https://protection.office.com/viewalerts |アラート <br/> https://compliance.microsoft.com/compliancealerts |[通知の表示](alert-policies.md#viewing-alerts)|
 |アーカイブ|情報ガバナンス > アーカイブ <br/> https://protection.office.com/archiving |情報ガバナンス > [アーカイブ] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)|
 |監査ログ検索|検索 > 監査ログの検索 <br/> https://protection.office.com/unifiedauditlog |監査 <br/> https://compliance.microsoft.com/auditlogsearch | [セキュリティ & コンプライアンスセンターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)|
@@ -175,7 +175,7 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 |ファイル計画|レコード管理 > ファイル計画 <br/> https://protection.office.com/fileplan |レコード管理 > ファイル計画] タブ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[ファイル計画を使用して保持ラベルを管理する](file-plan-manager.md)|
 |PST ファイルのインポート|情報ガバナンス > PST ファイルのインポート <br/> https://protection.office.com/importV2 |情報ガバナンス > インポート] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[組織の PST ファイルのインポートの概要](importing-pst-files-to-office-365.md)|
 |ラベルアクティビティエクスプローラー|情報ガバナンス > ラベルアクティビティエクスプローラー <br/> https://protection.office.com/labelexplorer |データ分類 > アクティビティエクスプローラータブ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[ラベル付きコンテンツのアクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)|
-|保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | 「[保持ラベルの概要](labels.md)」を参照してください。|
+|保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保持ラベルの概要](labels.md)|
 |アイテム保持ポリシー|情報ガバナンス > の保持 <br/> https://protection.office.com/retention |情報ガバナンス > [保持] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[アイテム保持ポリシーの概要](retention-policies.md)|
 |機密情報の種類|機密情報の種類 > 分類 <br/> https://protection.office.com/sensitivetypes |データ分類 > 機密情報の種類] タブ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)|
 |機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[秘密度ラベルの詳細](sensitivity-labels.md) |
@@ -192,13 +192,13 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 - **Outlook 電子メール**にラベルを適用する場合、ユーザーは [転送不可] オプションに相当する制限を適用できます。 受信者は、メッセージを読み取ることはできますが、コンテンツを転送、印刷、またはコピーすることはできません。
 - **Word、PowerPoint、Excel**の各ファイルにラベルを適用すると、ユーザーは特定のユーザーやグループにアクセス許可を割り当てるように求められます。
 
-[詳細情報](encryption-sensitivity-labels.md#let-users-assign-permissions)
+詳細については、「[機密ラベルを使用してコンテンツへのアクセスを制限](encryption-sensitivity-labels.md#let-users-assign-permissions)する」を参照し、暗号化を適用してください。
 
 ## <a name="august-2019"></a>2019 年 8 月
 
 ### <a name="update-to-data-investigations"></a>データ調査への更新
 
-データの調査を実行すると、元の場所からアイテムを削除できるようになります。 これは、組織全体の Exchange メールボックス、SharePoint サイト、および OneDrive アカウントからアイテムを削除できることを意味します。 アイテムを証拠として収集したため、証拠セットに保存されたアイテムのコピーが、さらに参考になるか、参照として保持することができます。 [詳細情報](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+データの調査を実行すると、元の場所からアイテムを削除できるようになります。 これは、組織全体の Exchange メールボックス、SharePoint サイト、および OneDrive アカウントからアイテムを削除できることを意味します。 アイテムを証拠として収集したため、証拠セットに保存されたアイテムのコピーが、さらに参考になるか、参照として保持することができます。 詳細について[は、「Microsoft 365 のデータ流出インシデントの管理」](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data)を参照してください。 
 
 ## <a name="july-2019"></a>2019 年 7 月
 

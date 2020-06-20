@@ -16,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '詳細な電子情報開示の分析プロセスのオプションを設定する手順を確認します。これには、ほぼ重複、電子メールのスレッド、およびテーマを含めることができます。  '
-ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 091eb75bea0312e5a06cc60ca915612efc820e6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631264"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819227"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>Advanced eDiscovery で分析オプションを設定する (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery で、analyze を実行する前に Analyze オプションを設定します。
   
 ## <a name="set-analyze-options"></a>分析オプションを設定する
 
-\> [ **Analyze \>の準備**]**セットアップ**を開きます。 次のウィンドウが表示されます。
+[ ** \> Analyze の準備**] \> **セットアップ**を開きます。 次のウィンドウが表示されます。
   
 ![[分析設定] のオプション](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
@@ -55,7 +56,7 @@ Advanced eDiscovery で、analyze を実行する前に Analyze オプション�
   
 1. 提案されたテーマを表示、追加、または編集するには、[**変更**] をクリックします。
     
-2. [推奨された**テーマ**] パネルで、[](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)追加] アイコンアイコンをクリック**して** ![テーマを追加します。 [**推奨テーマの追加**] パネルで、単語をコンマで区切って追加します。 
+2. [**推奨**されたテーマ] パネルで、 **[追加** ![ ] アイコンアイコンをクリックして ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) テーマを追加します。 [**推奨テーマの追加**] パネルで、単語をコンマで区切って追加します。 
     
 3. [**テーマの数**] で、詳細電子情報開示によって生成されるテーマの数を決定する値を選択します (既定では1テーマ)。
     
@@ -76,7 +77,7 @@ Advanced eDiscovery で、analyze を実行する前に Analyze オプション�
   
 これらのオプションを設定した後、[ **Analyze** ] をクリックして実行します。 [分析結果の表示](view-analyze-results-in-advanced-ediscovery.md)が表示されます。 
   
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

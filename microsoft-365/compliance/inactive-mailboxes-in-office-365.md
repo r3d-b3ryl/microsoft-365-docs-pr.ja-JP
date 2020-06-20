@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: メールボックスを非アクティブなメールボックスに変換することにより、元従業員のメールボックスの内容を保持する方法について説明します。 メールボックスを訴訟ホールドの対象にするか、Microsoft 365 アイテム保持ポリシーをメールボックスに適用してから、対応する Microsoft 365 アカウントを削除することによって、これを行うことができます。
-ms.openlocfilehash: ab89f8a7262dcd4197c52275558d95f8053d2c9b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: メールボックスを非アクティブなメールボックスに変換することにより、元従業員のメールボックスの内容を保持する方法について説明します。
+ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679051"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817576"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非アクティブなメールボックスの概要
 

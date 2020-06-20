@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: コンテンツ検索電子情報開示ツールを使用して、Microsoft 365 でサードパーティのデータソースからメールボックスにインポートされたアイテムを検索します。 クエリを作成して、インポートされたすべてのアイテムを検索したり、特定のサードパーティのデータ型を検索するクエリを作成したりすることができます。 この記事では、Microsoft 365 にインポートできるサードパーティのデータ型を検索するために、キーワードクエリで使用できる値の一覧を示します。
-ms.openlocfilehash: c494f4bbb13919f9a980f227093d291c148e9afe
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+description: コンテンツ検索電子情報開示ツールを使用して、Microsoft 365 のメールボックスにインポートされたアイテムを、サードパーティのデータソースからクエリを作成して検索します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 916a780bccc3f24d509991e8ac72f31b374757d4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566671"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819097"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタムパートナーコネクタによってインポートされたサードパーティデータを検索する
 

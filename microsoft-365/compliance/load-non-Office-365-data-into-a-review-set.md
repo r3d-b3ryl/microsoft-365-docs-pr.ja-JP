@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: 高度な電子情報開示ケースで分析のために Microsoft 以外の365データをレビューセットにインポートする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9b506edc55da1916ae908eaa7ca619ba7300f87
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034425"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815464"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>Microsoft 以外の365データをレビューセットに読み込む
 
 Advanced eDiscovery で分析する必要があるすべてのドキュメントが Microsoft 365 にあるわけではありません。 Advanced eDiscovery の Microsoft 以外の365データインポート機能を使用すると、Microsoft 365 に含まれていないドキュメントをレビューセットにアップロードできます。 この記事では、Microsoft 以外の365ドキュメントを分析のために上級電子情報開示に移行する方法について説明します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="requirements-to-upload-non-office-365-content"></a>Office 以外の365コンテンツをアップロードするための要件
 
 この記事に記載されている 365 Microsoft 以外のアップロードをアップロードする機能を使用するには、次のものが必要です。
 
@@ -79,7 +79,7 @@ Advanced eDiscovery で分析する必要があるすべてのドキュメント
 
    ![Microsoft 以外の365インポート: ファイルのアップロード](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
-   a.  [**ファイルの場所のパス**] ボックスに、アップロードする Microsoft 以外の365データを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
+   a. [**ファイルの場所のパス**] ボックスに、アップロードする Microsoft 以外の365データを格納したルートフォルダーの場所を確認するか、または入力します。 たとえば、[**開始する前に] セクション**に表示されるサンプルファイルの場所については、「 **%USERPROFILE\Downloads\nonO365**」と入力します。 正しい場所を指定すると、パスの下のボックスに表示される AzCopy コマンドが適切に更新されるようになります。
 
    b. [**クリップボードにコピー** ] をクリックして、ボックスに表示されているコマンドをコピーします。
 
