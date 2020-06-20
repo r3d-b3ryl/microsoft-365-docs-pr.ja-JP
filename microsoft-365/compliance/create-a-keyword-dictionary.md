@@ -15,23 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 機密情報を識別する際、特に汎用コンテンツ (医療関連のコミュニケーションなど) や不適切または露骨な言語を識別するのに、キーワードの検索が必要になることがあります。機密情報の種類でもキーワード リストを作成できますが、キーワード リストにはサイズ制限があり、作成や編集のためには XML を変更する必要があります。キーワード ディクショナリでは、よりシンプルかつより大規模にキーワードを管理することができます。ディクショナリあたり最大 100,000 語をサポートします。
-ms.openlocfilehash: 67263c854f764be42d97061632567ec1b25214b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 セキュリティ & コンプライアンスセンターでキーワードディクショナリを作成するための基本的な手順について説明します。
+ms.openlocfilehash: 38a92aaf7e72ab79243c547ff48fa156e26b6ee6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636465"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818056"
 ---
-# <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
+# <a name="create-a-keyword-dictionary"></a>キーワード 辞書を作成する
 
-データ損失防止 (DLP) は、機密情報を識別、監視、保護することができます。機密情報を特定するには、特に、一般的なコンテンツ (医療関連の通信など) や不適切または明示的な言語を特定するときにキーワードの検索が必要になることがあります。キーワードリストは機密情報の種類に作成できますが、キーワードリストのサイズは制限されており、作成または編集するには XML を変更する必要があります。キーワード辞書を使用すると、キーワードを簡単に管理でき、より大きなスケールで、1つの辞書に最大10万用語をサポートします。
+データ損失防止 (DLP) は、機密情報を識別、監視、保護することができます。 機密情報を特定するには、特に、一般的なコンテンツ (医療関連の通信など) や不適切または明示的な言語を特定するときにキーワードの検索が必要になることがあります。 キーワードリストは機密情報の種類に作成できますが、キーワードリストのサイズは制限されており、作成または編集するには XML を変更する必要があります。 キーワード辞書を使用すると、キーワードを簡単に管理でき、より大きなスケールで、1つの辞書に最大10万用語をサポートします。
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>キーワード ディクショナリを作成する基本的な手順
 
-ディクショナリのキーワードを、さまざまなソースから作成することができます。一般的な例として、サービスにインポートされたファイルや PowerShell コマンドレットでインポートされたファイル (.csv または .txt リストなど)、PowerShell コマンドレットで直接入力するリスト、または既存のディクショナリなどがあります。キーワード ディクショナリを作成するときには、次の同じ基本手順に従います。
+The keywords for your dictionary could come from a variety of sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
   
-1. **セキュリティ & コンプライアンスセンター** ([https://protection.office.com](https://protection.office.com)) を使用するか、**セキュリティ&amp;コンプライアンスセンターの PowerShell**に接続します。
+1. **セキュリティ & コンプライアンスセンター** ( [https://protection.office.com](https://protection.office.com) ) を使用するか、**セキュリティ &amp; コンプライアンスセンターの PowerShell**に接続します。
     
 2. **目的のソースからキーワードを定義または読み込み**ます。 ウィザードとコマンドレットはどちらも、ユーザー設定のキーワード辞書を作成するためのキーワードのコンマ区切りのリストを受け入れます。この手順は、キーワードの取得元に応じて若干異なります。 いったん読み込まれたキーワードは、インポートされる前にエンコードされてバイト配列に変換されます。
     
@@ -41,7 +43,7 @@ ms.locfileid: "43636465"
 
 ユーザー辞書のキーワードを作成してインポートするには、次の手順を実行します。
 
-1. セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) に接続します。
+1. セキュリティ & コンプライアンスセンター () に接続し [https://protection.office.com](https://protection.office.com) ます。
 
 2. **[分類] > [機密情報の種類]** の順に移動します。
 
@@ -67,11 +69,11 @@ ms.locfileid: "43636465"
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>PowerShell を使用してファイルからキーワード ディクショナリを作成する
 
-多くの場合、大きい辞書を作成する必要がある場合は、ファイルまたは他のソースからエクスポートされたリストのキーワードを使用することをお勧めします。 この例では、外部電子メールで画面に表示するのに適していない言語のリストを含むキーワードディクショナリを作成します。 最初に、[セキュリティ&amp;コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)する必要があります。
+Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [connect to Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. キーワードをテキスト ファイルにコピーし、各キーワードが別個の行にあるかどうかを確認します。
     
-2. テキスト ファイルを、Unicode エンコードで、メモ帳 \> **名前を付けて保存** \> **エンコード** \> **Unicode** に保存します。
+2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
     
 3. このコマンドレットを実行して、ファイルを変数として読み取ります。
     
@@ -97,19 +99,19 @@ ms.locfileid: "43636465"
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-印刷`$dict`にはさまざまな変数が表示されます。 キーワード自体はバックエンドのオブジェクトに格納されますが`$dict.KeywordDictionary` 、辞書を変更するために使用する文字列表現が含まれています。 
+印刷 `$dict` にはさまざまな変数が表示されます。 キーワード自体はバックエンドのオブジェクトに格納されますが、 `$dict.KeywordDictionary` 辞書を変更するために使用する文字列表現が含まれています。 
 
-辞書を変更する前に、 `.split(',')`メソッドを使用して用語の文字列を配列に戻す必要があります。 その後、 `.trim()`メソッドを使用してキーワード間の不要なスペースをクリーンアップし、操作するキーワードだけを残します。 
+辞書を変更する前に、メソッドを使用して用語の文字列を配列に戻す必要があり `.split(',')` ます。 その後、メソッドを使用してキーワード間の不要なスペースをクリーンアップし `.trim()` 、操作するキーワードだけを残します。 
   
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
-ここでは、ディクショナリから一部の用語を削除します。例のディクショナリには少しのキーワードしかないので、ディクショナリのエクスポートとノートパッドでの編集に簡単にスキップすることができますが、通常、ディクショナリには大量のテキストが含まれているので PowerShell で簡単に編集を行うこの方法をまず確認しておいてください。
+Now you'll remove some terms from the dictionary. Because the example dictionary has only a few keywords, you could just as easily skip to exporting the dictionary and editing it in Notepad, but dictionaries generally contain a large amount of text, so you'll first learn this way to edit them easily in PowerShell.
   
-最後の手順で、キーワードを配列に保存しました。[配列から項目を削除する](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10))にはいくつか方法がありますが、簡単なのは、ディクショナリから削除する用語の配列を作成して、削除する用語のリストには含まれないディクショナリの用語だけをそこにコピーする方法です。
+In the last step, you saved the keywords to an array. There are several ways to [remove items from an array](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), but as a straightforward approach, you'll create an array of the terms you want to remove from the dictionary, and then copy only the dictionary terms to it that aren't in the list of terms to remove.
   
-コマンド `$terms` を実行して、現在の用語のリストを表示します。コマンドの出力は次のようになります。 
+Run the command  `$terms` to show the current list of terms. The output of the command looks like this: 
   
 `aarskog's syndrome`
 `abandonment`
@@ -142,7 +144,7 @@ $termsToRemove = @('abandonment', 'ablatio')
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
-コマンド `$updatedTerms` を実行して、更新された用語のリストを表示します。コマンドの出力は次のようになります (指定した用語は削除されています)。 
+Run the command  `$updatedTerms` to show the updated list of terms. The output of the command looks like this (the specified terms have been removed): 
   
 `aarskog's syndrome`
 `abasia`
@@ -170,13 +172,13 @@ Save the dictionary locally by running the following:
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
-次にファイルを開いて、補足する用語を追加し、Unicode エンコード (UTF-16) で保存します。それから更新した用語をアップロードして、ディクショナリを所定の場所で更新します。
+Now simply open the file, add your additional terms, and save with Unicode encoding (UTF-16). Now you'll upload the updated terms and update the dictionary in place.
   
 ```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
-これでディクショナリが、所定の場所で更新されました。`Identity` フィールドは、ディクショナリの名前になります。`set-` コマンドレットを使ってディクショナリの名前を変更したい場合は、`-Name` パラメーターを新しいディクショナリの名前と合わせて上記に追加します。 
+Now the dictionary has been updated in place. Note that the  `Identity` field takes the name of the dictionary. If you wanted to also change the name of your dictionary using the  `set-` cmdlet, you would just need to add the  `-Name` parameter to what's above with your new dictionary name. 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>カスタムの機密情報の種類と DLP ポリシーでキーワード ディクショナリを使う
 
@@ -208,7 +210,7 @@ Get-DlpKeywordDictionary -Name "Diseases"
 `ObjectState       : Unchanged`
 
 
-カスタムの機密情報の種類の XML に ID を貼り付けて、アップロードします。これで、ディクショナリは機密情報の種類のリストに表示され、それをポリシーで使用して、一致するキーワードがいくつ必要かを指定することができます。
+Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
   
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">
