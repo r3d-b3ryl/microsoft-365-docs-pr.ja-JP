@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の ATP の安全なリンクポリシーでユーザーのブロックされたユーザーの Url を設定する方法と、ユーザーのグループの Url のリストを書き換えない方法について説明します。
-ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617244"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702538"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、リライトしないカスタムの Url リストを設定する
 
@@ -73,13 +73,15 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 
 - [書き換えない] ボックスの一覧で指定したすべての Url は、指定した受信者の ATP の安全なリンクスキャンから除外されます。
 
+- ユーザーの操作を改善するために、よく使用される内部 Url を "リライトしない" リストに追加することを検討してください。 たとえば、Skype for Business や Sharepoint などのオンプレミスのサービスがある場合は、それらの Url をリストに追加してスキャンから除外することができます。
+
 - 「書き換えない」リスト内に既に Url のリストがある場合は、そのリストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、既存のリストにそのようなエントリがあり、 `https://contoso.com/a` ポリシーにそのようなサブパスを含める場合は、 `https://contoso.com/a/b` エントリにワイルドカードを追加して、次のように `https://contoso.com/a/*` します。
 
-- ATP の安全なリンクポリシーの "書き込み不可" リストを指定する場合は、最大3つのワイルドカードのアスタリスク () を含めることができ \* ます。 ワイルドカード ( \* ) は、プレフィックスまたはサブドメインを明示的に含めるために使用されます。 指定し `contoso.com` `*.contoso.com/*` `*.contoso.com/*` たドメインのサブドメインとパスにアクセスできるようにするので、このエントリはと同じではありません。
+- ATP の安全なリンクポリシーの "書き込み不可" リストを指定する場合は、最大3つのワイルドカード () を含めることができ \* ます。 ワイルドカードには、プレフィックスまたはサブドメインが明示的に含まれます。 たとえば、エントリ `contoso.com` はと同じではありません `*.contoso.com/*` 。これに `*.contoso.com/*` より、ユーザーは指定したドメインのサブドメインとパスにアクセスできるようになります。
 
 次の表に、入力できる内容と、それらのエントリの影響についての例を示します。
 
-|**エントリの例**|**機能**|
+|エントリの例|機能|
 |:-----|:-----|
 |`contoso.com`|受信者がサブドメインやパスではなく、サイトにアクセスできるように `https://contoso.com` します。|
 |`*.contoso.com/*`|受信者が、、、またはなどのドメイン、サブドメイン、およびパスにアクセスできるようにし `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` `https://www.contoso.com/a` ます。 <br/><br/> このエントリには、次のように、 `*contoso.com*` 偽装している可能性のあるサイトが含まれていないため、 `https://www.falsecontoso.com` またはのようになります。`https://www.false.contoso.completelyfalse.com`|

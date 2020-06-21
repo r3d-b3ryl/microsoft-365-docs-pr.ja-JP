@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートについて学習できます。
-ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082687"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819511"
 ---
 # <a name="non-delivery-report"></a>配信不能レポート
 
@@ -32,6 +34,6 @@ ms.locfileid: "42082687"
 
 ![配信不能レポートの詳細表で行を選択する](../../media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

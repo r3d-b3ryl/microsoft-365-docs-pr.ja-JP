@@ -24,13 +24,13 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
-description: Microsoft 365 for business の請求先住所を更新する方法について説明します。請求通知の受信に使用される電子メールアドレスを更新することもできます。
-ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications.
+ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401800"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817031"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
@@ -47,9 +47,9 @@ ms.locfileid: "44401800"
 
 - **請求先住所** これは請求部門の住所で、通常は **販売先**の住所と同じです。
 
-- **サービスの利用先住所** サービスが使用される住所です。通常、これは **販売先**住所と同じです。組織にリモート ユーザーまたは複数のオフィスが存在する場合は、ユーザーの大多数が存在する住所を使用します。
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
-ほとんどの場合、これらの住所は同じです。必要があれば、これらの住所のうち 1 つ以上を変更することができます。また、課金通知を受信するために、別のメール アドレスを指定し、他の管理者の連絡用メール アドレスを変更することもできます。
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ ms.locfileid: "44401800"
 
 既定では、組織の請求通知は、組織内のすべてのグローバルおよび課金管理者の Microsoft 電子メールアドレスおよび連絡用電子メールアドレスに送信されます。 各管理者は、自身のプロファイル情報を更新することによって、連絡用メール アドレスを変更できます。
   
-1. グローバル管理者として、職場または学校のアカウントを使用して Microsoft 365 にサインインします。[サインインする方法について説明](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)します。
+1. グローバル管理者として、職場または学校のアカウントを使用して Microsoft 365 にサインインします。[サインインする方法について説明](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)します。
 
 2. [**ユーザー アイコン**] を選択し、[**マイ アカウント**] を選択します。
   
