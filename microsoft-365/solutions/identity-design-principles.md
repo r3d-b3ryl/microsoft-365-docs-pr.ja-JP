@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 99112b70715770b24c1454fbd9442d2b5b6f08ea
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352548"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800133"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Id とそれ以外の場合: 1 つの設計者の視点
 
@@ -134,7 +134,7 @@ Azure AD のポリシーエンジンは、[条件付きアクセスポリシー]
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/) (azure ATP)
 - [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (MICROSOFT defender ATP)
-- [Microsoft 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (MICROSOFT 365 ATP)
+- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (OFFICE 365 ATP)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) (mcas)
 - [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -310,7 +310,7 @@ Azure の役割ベースのアクセス制御 (RBAC) により、Azure の詳細
 
 :::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="委任された管理のための Azure コンポーネントの高レベルのビュー":::
 
-上記の図からわかるように、他の多くのサービスは設計の一部として考慮する必要があります (例: [Azure ポリシー](https://docs.microsoft.com/azure/governance/policy/overview)、 [asure 青写真](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理グループ](https://docs.microsoft.com/azure/governance/management-groups/)など)。
+上記の図からわかるように、他の多くのサービスは設計の一部として考慮する必要があります (例: [Azure ポリシー](https://docs.microsoft.com/azure/governance/policy/overview)、 [azure 青写真](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理グループ](https://docs.microsoft.com/azure/governance/management-groups/)など)。
 
 ## <a name="conclusion"></a>まとめ
 短時間の概要として開始されましたが、予想よりも長くなっています。  これで、組織の委任モデルの作成の詳細を紹介する準備ができました。  この会話は、お客様とよく似ています。 すべてのユーザーに対して動作するモデルは1つありません。 お客様に対して表示される一般的なパターンを文書化する前に、Microsoft エンジニアリングからいくつかの改善された改良を待ってください。 それまでは、Microsoft アカウントチームと協力して、最も近い[Microsoft テクノロジセンター](https://www.microsoft.com/mtc)へのアクセスを手配することができます。  こちらを参照してください。

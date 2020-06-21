@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップレポートの詳細を確認できます。
-ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635294"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818845"
 ---
 # <a name="mail-flow-map-report"></a>メール フローのマップ レポート
 
@@ -30,7 +32,7 @@ ms.locfileid: "43635294"
 
 ![メールフローマップウィジェットの左および右の矢印](../../media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>概要
+## <a name="mail-flow-map-basics"></a>メールフローマップの基礎
 
 **メールフローマップ**ウィジェットをクリックすると、**メールフローマップ**レポートが表示されます。 詳細なレポートを表示するには、[詳細データの表示] をクリックします。 [要求レポート] をクリックして詳細レポートをダウンロードすることもできます。
 

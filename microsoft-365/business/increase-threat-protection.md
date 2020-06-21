@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 Advanced Threat Protection を設定し、フィッシング、マルウェア、およびその他の脅威から機密データを保護します。
-ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400872"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786208"
 ---
 # <a name="increase-threat-protection"></a>驚異の保護を強化する
 
@@ -92,13 +92,13 @@ Office 365 または Microsoft 365 環境には、マルウェアからの保護
   
 - [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501)
     
-- [OneDrive を復元する](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [OneDrive を復元する](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## <a name="stop-auto-forwarding-for-email"></a>電子メールの自動転送を停止する
 
 ユーザーのメールボックスにアクセスできるハッカーは、メールボックスを自動的に転送するようにメールボックスを設定することにより、メールを盗むことができます。 これは、ユーザーの認識なしでも発生する可能性があります。 この問題が発生しないようにするには、メールフロールールを構成します。 
   
-メールトランスポートルールを作成するには、[この短いビデオ](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7)を見るか、次の手順を実行します。
+メールトランスポートルールを作成するには、[この短いビデオ](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7)を見るか、次の手順を実行します。
   
 1. Microsoft 365 管理センターで、[**管理センター** Exchange] を選択し \> **Exchange**ます。
     
@@ -127,7 +127,7 @@ Office 365 または Microsoft 365 環境用に1つ以上のカスタムドメ�
   
 最も重要なユーザーとカスタムドメインを保護するためのポリシーを作成して、この保護を開始することをお勧めします。 
 
-ATP のフィッシング対策ポリシーを作成するには、[この短いトレーニングビデオ](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)をご覧ください。または、次の手順を実行します。
+ATP のフィッシング対策ポリシーを作成するには、[この短いトレーニングビデオ](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)をご覧ください。または、次の手順を実行します。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。 
     
@@ -157,7 +157,7 @@ ATP のフィッシング対策ポリシーを作成するには、[この短い
 
 ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを日常的に送信、受信、共有します。 電子メールメッセージを見るだけで、添付ファイルが安全か悪意かを知ることは常に容易ではありません。 Office 365 Advanced Threat Protection には、ATP の安全な添付ファイルの保護が含まれていますが、既定ではこの保護は有効になっていません。 この保護の使用を開始するには、新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、Microsoft Teams のファイルにまで及びます。
   
-ATP の安全な添付ファイルポリシーを作成するには、[この短いビデオ](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)を見るか、次の手順を実行します。
+ATP の安全な添付ファイルポリシーを作成するには、[この短いビデオ](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)を見るか、次の手順を実行します。
   
 1. に移動 [https://protection.office.com](https://protection.office.com) し、管理者アカウントでサインインします。 
     
@@ -194,7 +194,7 @@ ATP の安全な添付ファイルポリシーを作成するには、[この短
     
 - ドメイン内のすべての受信者を対象とした新しいポリシーを追加します。
     
-ATP の安全なリンクを設定するには、[この短いトレーニングビデオ](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)を見るか、次の手順を実行します。
+ATP の安全なリンクを設定するには、[この短いトレーニングビデオ](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)を見るか、次の手順を実行します。
   
 1. に移動 [https://protection.office.com](https://protection.office.com) し、管理者アカウントでサインインします。 
     

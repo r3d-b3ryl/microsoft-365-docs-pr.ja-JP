@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: Microsoft 365 for business サブスクリプションのライセンス認証、更新、または追加を行う方法について説明します。
-ms.openlocfilehash: 83b4ba3338db4351ef50af687d3632da83f45648
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0e8de1546c5efdde907209e98f9ee5d710ab2c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404684"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818557"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Microsoft Open から購入したプロダクトキーを入力する
 
@@ -38,7 +38,7 @@ Microsoft [Open License プログラム](https://go.microsoft.com/fwlink/p/?Link
   
  **他のヘルプが必要な場合**
  
- **Microsoft 365 Home または Personal のヘルプについては**、「 [Office でプロダクトキーを使用する](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。
+ **Microsoft 365 Home または Personal のヘルプについては**、「 [Office でプロダクトキーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。
   
  **小売店から購入した Microsoft 365 Business Standard のヘルプについ**ては、「[小売店から購入したプロダクトキーを入力](enter-your-product-key.md)する」を参照してください。 
   
@@ -64,7 +64,7 @@ Microsoft 365 for business を初めて使用する場合は、[組織に micros
 
 一般的なエラーと解決策の一覧[については、「プロダクトキーの問題](product-key-errors-and-solutions.md)」をご覧ください。
   
-パートナーの場合は、「[パートナー: プロダクト キーを使用して顧客のサブスクリプションをセットアップする](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40)」を参照してください。
+パートナーの場合は、「[パートナー: プロダクト キーを使用して顧客のサブスクリプションをセットアップする](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40)」を参照してください。
   
 ボリューム ライセンスのお客様は、「[Microsoft ボリューム ライセンス サービス センターのトレーニングおよびリソース](https://go.microsoft.com/fwlink/p/?LinkId=618103)」を参照してください。
   

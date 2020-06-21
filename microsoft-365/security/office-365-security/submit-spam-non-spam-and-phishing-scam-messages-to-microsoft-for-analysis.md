@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 管理者および en-us ユーザーは、分析のために Microsoft に電子メールメッセージ (不良または無効なメールが許可されたメール) を送信する方法を学習できます。
+description: 管理者とエンドユーザーは、分析用に Microsoft に電子メールメッセージ (不良または無効なメールが許可されたメール) を送信する方法を学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208611"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811040"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のためにメッセージを手動で Microsoft に送信する
 

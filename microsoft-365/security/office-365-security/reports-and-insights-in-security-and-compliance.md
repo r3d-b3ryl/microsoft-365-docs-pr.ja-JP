@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
-description: セキュリティ/コンプライアンスセンターで利用できるスマートレポートと洞察、およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
+description: セキュリティコンプライアンスセンターで利用可能なスマートレポートと洞察、 &amp; およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c5d159371ba7cd2f43cf0782ba66e71b51ca2ad1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617310"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819499"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>セキュリティ/コンプライアンスセンターのスマートレポートと洞察 &amp;
 

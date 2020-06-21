@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービスのパスワードリセットツールを使用してパスワードをリセットする方法について説明します。
-ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 288613023ee61626bf12f7090ad0ff73139ef06d
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678684"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780591"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
@@ -39,7 +39,7 @@ ms.locfileid: "44678684"
   
 - Microsoft 365 business、エデュケーション、または非営利**団体の有料プランを使用し**て、クラウドユーザーのセルフサービスのパスワードリセットを利用できます。 Microsoft 365 の試用版では動作しません。
 
-- この操作には Azure を使用します。これらの手順を行うときに、自動的に **無料** で Azure にあるこの機能を取得できます。その他の Azure 機能を使用しない場合は、セルフサービスによるパスワード リセットをオンにするために費用はかかりません。
+- It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.
 
 - **オンプレミスの Active Directory を使用している場合**は、上の2つのポイントは適用されません。 代わりに、これを設定できますが、 **AZURE AD Premium への有料サブスクリプションが必要**です。
 
@@ -47,7 +47,7 @@ ms.locfileid: "44678684"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="let-people-reset-their-own-passwords"></a>ユーザーが自分のパスワードをリセットできるようにする
 
@@ -89,4 +89,4 @@ ms.locfileid: "44678684"
   
 [有効期限が切れないように個別のユーザーのパスワードを設定する](set-password-to-never-expire.md)
 
-[Microsoft 365 Business のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

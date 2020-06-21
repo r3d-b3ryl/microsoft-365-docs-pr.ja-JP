@@ -13,14 +13,14 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: 脅威エクスプローラおよびリアルタイム検出レポートを使用して、セキュリティ & コンプライアンスセンターで脅威を調査して対処する方法について説明します。
+description: 脅威エクスプローラおよびリアルタイム検出レポートを使用して、セキュリティコンプライアンスセンターで脅威を調査し、対応する方法について説明し &amp; ます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 824fde8d6f6a03dd61a46d1f0ccc08c93b85adf8
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: ae063cdcbd3d9b5d371e64513c90ff46503ec982
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267193"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819475"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイムの検出
 

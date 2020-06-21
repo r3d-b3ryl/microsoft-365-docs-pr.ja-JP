@@ -1,5 +1,5 @@
 ---
-title: トップドメインのメール フローの状態洞察　
+title: トップ ドメインのメール フローの状態洞察
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,15 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインのメールフローの状態に関する洞察を得ることができます。
-ms.openlocfilehash: 42ce0545dad2804829d15572ce6e1f5a0ca6b49f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082848"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818593"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>トップドメインのメール フローの状態洞察　
+# <a name="top-domain-mail-flow-status-insight"></a>トップ ドメインのメール フローの状態洞察
 
 **上位ドメインのメールフローの状態**に関する情報は、メールフローの観点から、組織のドメインの現在の状態を示します。 この洞察は、***メールフローに影響を与える***(たとえば、外部電子メールを受信できない) 問題が発生しているドメインを特定してトラブルシューティングするのに役立ちます。特に、ドメインの有効期限、または間違った MX レコードがあるドメイン。
 
@@ -32,6 +34,6 @@ ms.locfileid: "42082848"
 
 ![トップドメインフローの状態に関する詳細ポップアップ](../../media/domain-mail-flow-status-flyout.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

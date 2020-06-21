@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise テスト環境用の多要素認証
+title: Microsoft 365 エンタープライズテスト環境多要素認証
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,13 +14,14 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: Microsoft 365 エンタープライズテスト環境でスマートフォンに送信されるテキストメッセージを使用して、多要素認証を構成します。
-ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e26fb7470e01397266f5f424ee45941a79a2940c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213142"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819378"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境用の多要素認証
 
@@ -43,7 +44,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> Microsoft 365 Enterprise のテストラボガイドスタックにあるすべての記事へのビジュアルマップの[テストラボガイドスタック](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)に移動します。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
@@ -82,7 +83,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     
 2. Office 365 ポータル () に移動 [https://portal.office.com](https://portal.office.com) し、User 2 のアカウント名とパスワードを使用してサインインします。
     
-3. サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。 [**次へ**] をクリックします。
+3. サインインした後、詳細についてはアカウントをセットアップするように求めるメッセージが表示されます。 **[次へ]** をクリックします。
     
 4. **[追加のセキュリティ確認]** ページで、次の手順を実行します。 
     
@@ -92,13 +93,13 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     
    - [**メソッド**] の [**テキストメッセージでコードを送信する**] をクリックします。
     
-5. [**次へ**] をクリックします。
+5. **[次へ]** をクリックします。
     
 6. スマート フォンで受信したテキスト メッセージに記載されている確認コードを入力して、**[確認]** をクリックします。
     
 7. [**手順 3: 既存のアプリケーションを使用**したままにする] ページで、[**完了**] をクリックします。
     
-8. User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。元のパスワードと、新しいパスワードを 2 回入力して、**[パスワードを更新してサインイン]** をクリックします。新しいパスワードを安全な場所に記録します。
+8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     
     ブラウザーの [ **Microsoft Office Home** ] タブに、ユーザー2の office ポータルが表示されます。
 

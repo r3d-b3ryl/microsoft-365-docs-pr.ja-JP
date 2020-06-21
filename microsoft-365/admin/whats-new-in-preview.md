@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター-今月追加された機能につ�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587582"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780709"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -79,7 +79,7 @@ Microsoft 365 管理センターに新しい Azure Active Directory 管理者の
 
 管理センターへのアクセス権を持たないユーザーに、グループとその利用状況に関する情報を共有する必要がある、多くの管理者から聞きました。 監査を目的として、グループの一覧を CSV ファイルにエクスポートすることができます。これは、古い PowerShell スクリプトを破棄できることを意味します。 そのためには、[**グループ**] グループに移動して、  >  **Groups**コマンドバーから [**グループのエクスポート**] を選択します。
 
-### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャセンター
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャ センター
 
 今月は、「 [https://docs.microsoft.com](https://docs.microsoft.com) [microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)」と呼ばれる新しいサイトをリリースしました。これにより、統合された microsoft 365 ソリューションを理解、計画、および実装するために必要な技術ガイダンスがまとめられています。これにより、安全かつ準拠したコラボレーションが実現します。 このセンターでは、次の内容を確認できます。
 
@@ -153,19 +153,19 @@ Teams の使用率が向上したため、管理に役立ついくつかの機�
 
 #### <a name="for-your-users"></a>ユーザーの場合
 
-- [会議のスケジュールを設定する](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
-- [Teams 会議に参加する](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [組織全体のチームを作成する](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [チームを作成してゲストを追加する](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [ゲストとしてチームに参加する](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [グループ電子メールアドレスを作成する](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [会議のスケジュールを設定する](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Teams 会議に参加する](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [組織全体のチームを作成する](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [チームを作成してゲストを追加する](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [ゲストとしてチームに参加する](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [グループ電子メールアドレスを作成する](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
 #### <a name="for-admins-and-business-owners"></a>管理者およびビジネスオーナー向け
 
-- [リモート作業でスモールビジネスを支援する](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [リモート小規模ビジネスを実行する](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Microsoft Business Basic にサインアップする](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [2要素サインインの設定](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [リモート作業でスモールビジネスを支援する](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [リモート小規模ビジネスを実行する](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Microsoft Business Basic にサインアップする](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [2要素サインインの設定](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## <a name="march-2020"></a>2020 年 3 月
 
@@ -276,12 +276,12 @@ Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モ�
 
 1月にリリースされた small business 管理者トレーニングを確認します。
 
-- [ビジネス web サイトを作成する](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [回答とヘルプを検索する](https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [ヘルプまたはサポートを取得する](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [ユーザーを削除する](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Microsoft サブスクリプションを選択する](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Microsoft 365 for business のセキュリティの概要](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [ビジネス web サイトを作成する](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
+- [回答とヘルプを検索する](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [ヘルプまたはサポートを取得する](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [ユーザーを削除する](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
+- [Microsoft サブスクリプションを選択する](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
+- [Microsoft 365 for business のセキュリティの概要](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>2019年11月と12月
 

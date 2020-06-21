@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: ドメインとユーザーの追加、セキュリティポリシーの設定など、Microsoft 365 Business Premium のセットアップ手順について説明します。
-ms.openlocfilehash: 58dc5eb71b41f5b9316e8d68cc3fc3c8c91748b3
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 89186fbd00e47385f0320c45f7fc44c258742aa3
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564909"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785702"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>セットアップウィザードで Microsoft 365 Business Premium をセットアップする
 
@@ -43,7 +43,7 @@ Microsoft 365 Business Premium のセットアップの概要については、�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>ドメイン、ユーザーを追加し、ポリシーをセットアップする
 
@@ -131,8 +131,8 @@ Microsoft 365 Business Premium を購入する場合は、所有しているド�
 
 モバイル iOS または Android デバイスに Office をインストールするには、「 [Microsoft 365 Business Premium ユーザーのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。
 
-Office を個別にインストールすることもできます。 手順について[は、「PC または Mac に Office をインストールする](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)」を参照してください。
+Office を個別にインストールすることもできます。 手順について[は、「PC または Mac に Office をインストールする](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

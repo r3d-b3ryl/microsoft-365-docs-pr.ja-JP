@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Microsoft 365 Business Premium ユーザー用に Windows 10 Pro を実行している Windows デバイスをセットアップする方法について説明します。これにより、集中管理およびセキュリティ制御が可能になります。
-ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 85ac3c964792a132d5699703e543289020e38f57
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402960"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785854"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザーの Windows デバイスをセットアップする
 
@@ -49,7 +49,7 @@ Microsoft 365 への Windows の接続に関する短いビデオをご覧くだ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Windows 10 デバイスを組織の Azure AD に参加させる
 
@@ -67,7 +67,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
     
 3. Windows 10 デバイスのセットアップを完了します。
     
-   完了すると、組織の Azure AD に接続されます。「[デバイスが Azure AD に接続されていることを確認する](#verify-the-device-is-connected-to-azure-ad)」を参照して確認します。 
+   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>既にセットアップして、Windows 10 Pro を実行しているデバイスの場合
 
@@ -97,7 +97,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
 6. [**組織が組織**であることを確認してください] ページで、情報が正しいことを確認し、[**参加**] をクリックします。
   
-   [ **すべて完了しました。**] ページで、[ **完了**] をクリックします。
+   On the **You're all set!** page, click **Done**.
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
@@ -129,4 +129,4 @@ Microsoft 365 Business Premium サブスクリプションの一部として、A
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の設定と使用の詳細については、「」を参照してください。
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

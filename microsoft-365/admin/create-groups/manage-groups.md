@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループメンバーの追加、電子メールアドレス、グループ名、説明の編集、グループの動作のカスタマイズなど、Microsoft 365 グループを管理する方法について説明します。
-ms.openlocfilehash: 332d0dce46b94a3b69169183afb0c75ec537af8c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ba88e35713e889ca85a264b1da1d34d9e1e30671
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049205"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780651"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを管理する
 
@@ -194,7 +194,7 @@ ms.locfileid: "44049205"
 
 [Microsoft 365 グループを作成する](create-groups.md)
 
-[Microsoft 365 グループへのゲストアクセスを管理する](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Microsoft 365 グループへのゲストアクセスを管理する](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Microsoft 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
 

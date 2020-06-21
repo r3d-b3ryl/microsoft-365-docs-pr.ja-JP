@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1276faf9883fda9bb73674b27f3e5fb1a648d5d3
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 976911abe047be350ae6c64409cd6607ea75de7a
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613398"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811076"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -71,7 +71,7 @@ ATP ポリシーを定義 (または編集) するには、適切な役割が割
 
 Microsoft 365 での PowerShell の使用の詳細については、「 [Manage microsoft 365 With powershell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)」を参照してください。
 
-ファイルが悪意のあるものとして検出された場合のユーザーの操作の詳細については、「 [SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合の対処](https://support.microsoft.com/en-us/office/what-to-do-when-a-malicious-file-is-found-in-sharepoint-online-onedrive-or-microsoft-teams-01e902ad-a903-4e0f-b093-1e1ac0c37ad2)方法」を参照してください。
+ファイルが悪意のあるものとして検出された場合のユーザーの操作の詳細については、「 [SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合の対処](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)方法」を参照してください。
 
 ## <a name="set-up-alerts-for-detected-files"></a>検出されたファイルの通知を設定する
 

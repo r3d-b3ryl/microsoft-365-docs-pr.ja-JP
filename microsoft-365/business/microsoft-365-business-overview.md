@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Office の生産性向上アプリと、サイバーの脅威に対応をするビジネスの高度な保護を含むサブスクリプション サービスの、Microsoft 365 Business Premium について説明します。
-ms.openlocfilehash: 61f4c34ade180717486ce889162947afe9be7ba6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6cff2fe62111e0d3ee99f406d0be83db0a119b09
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402256"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786176"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の概要
 
@@ -46,7 +46,7 @@ Microsoft 365 Business Premium (旧称 Microsoft 365 Business) は、従業員�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。 
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。 
 
 Microsoft 365 Business Premium は、最大300ライセンスを対象としています。 ライセンスの追加が必要な場合は、[Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) のドキュメントで詳細を参照してください。
 
@@ -111,11 +111,11 @@ Microsoft 365 Business Premium を使用すると、次のような** 脅威か�
 
 - パートナーはいないが、Microsoft 365 Business Premium を取得したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business) をし、[サインイン](sign-up.md) の指示に従ってください。
 
-- また、[Microsoft ストア](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer)にアクセスして、Microsoft 365 Business Premium を購入し、セットアップのヘルプを受けることもできます。
+- また、[Microsoft ストア](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer)にアクセスして、Microsoft 365 Business Premium を購入し、セットアップのヘルプを受けることもできます。
 
     > [!NOTE]
     > このリンクは、米国ストア向けにのみが対象です。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Business Premium のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premium のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

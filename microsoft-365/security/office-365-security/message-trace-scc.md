@@ -10,17 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメッセージ追跡を使用して、メッセージに何が起こったかを確認できます。
-ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352500"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819342"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメッセージ追跡
 
-## <a name="overview"></a>概要
+## <a name="message-trace-features"></a>メッセージ追跡機能
 
 セキュリティ & コンプライアンスセンターのメッセージ追跡は、Exchange Online 組織を通過する電子メールメッセージに従います。 メッセージがサービスによって受信、拒否、延期、または配信されたかどうかを判断できます。 メッセージが最終的な状態になる前に、メッセージに行われた処理も表示します。
 
@@ -230,7 +232,7 @@ ms.locfileid: "44352500"
 
 - **sender_address**: 送信者の電子メールアドレス (*エイリアス* @ *ドメイン*)。
 
-- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、[ \< *電子メールアドレス*の \> ## \< *状態* \> ] の形式で、それぞれの受信者と対応するステータスが表示されます。 以下に例を示します。
+- **Recipient_status**: 受信者へのメッセージの配信状態。 メッセージが複数の受信者に送信された場合は、次の形式で、それぞれの受信者と対応する状態が表示されます \<*email address*\> ## \<*status*\> 。 たとえば、次のようにします。
 
   - **# #Receive, Send**は、メッセージがサービスによって受信され、意図した宛先に送信されたことを意味します。
 
@@ -268,13 +270,13 @@ ms.locfileid: "44352500"
 
 - **server_hostname**: 宛先サーバーのホスト名または FQDN。
 
-- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 以下に例を示します。
+- **source_context**:**ソース**フィールドに関連付けられているその他の情報。 たとえば、次のようにします。
 
   - `Protocol Filter Agent`
 
   - `3489061114359050000`
 
-- **source**: イベントを担当する Exchange Online コンポーネント。 以下に例を示します。
+- **source**: イベントを担当する Exchange Online コンポーネント。 たとえば、次のようにします。
 
   - `AGENT`
 
@@ -292,7 +294,7 @@ ms.locfileid: "44352500"
 
 - **related_recipient_address**: `EXPAND` `REDIRECT` `RESOLVE` メッセージに関連付けられた他の受信者の電子メールアドレスを表示するために、、およびイベントと共に使用します。
 
-- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 以下に例を示します。
+- **参照**: このフィールドには、特定の種類のイベントに関する追加情報が含まれています。 たとえば、次のようにします。
 
   - **Dsn**: このイベントの後に dsn が生成された場合に、関連付けられている配信状態通知 (dsn、配信不能レポート、NDR、またはバウンスメッセージとも呼ばれる) の**message_id**値であるレポートリンクが含まれています。 これが DSN メッセージの場合、このフィールドには、DSN が生成された元のメッセージの**message_id**値が含まれます。
 
@@ -310,7 +312,7 @@ ms.locfileid: "44352500"
 
 - **return_path**: メッセージを送信した**MAIL FROM**コマンドによって指定された返信電子メールアドレス。 このフィールドは空になることはありませんが、null の送信者アドレス値をとして表すことができ `<>` ます。
 
-- **message_info**: メッセージに関する追加情報。 以下に例を示します。
+- **message_info**: メッセージに関する追加情報。 たとえば、次のようにします。
 
   - メッセージの発信元の日付とイベントの UTC の日時 `DELIVER` `SEND` 。 発信日時は、メッセージが最初に Exchange Online 組織に入った時刻です。 UTC の日時は、ISO 8601 の日付と時刻の形式で表されます。ここで、 `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` = year、 `mm` = month、 `dd` = day は、 `T` 時間コンポーネントの開始を示し、 `hh` = hour、 `mm` = minute、= second、= 小数点以下の値を示します `ss` `fff` `Z` `Zulu` 。これは、utc を示すもう1つの方法です。
 
@@ -337,7 +339,7 @@ ms.locfileid: "44352500"
 |`SFV=BLK`|ブロックする差出人から発信されたメッセージであるため、フィルター処理が省略され、メッセージはブロックされました。|
 |`SFV=SKS`|スパム対策フィルターによって処理される前に、メッセージがスパムとしてマークされました。 これには、メッセージを自動的にスパムメールとしてマークし、他のすべてのフィルター処理を省略するトランスポート ルールに一致するメッセージが含まれます。|
 |`SCL=<number>`|さまざまな SCL の値とその意味の詳細については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。|
-|`PCL=<number>`|メッセージの Phishing Confidence Level (PCL) 値。これらの値は、「[Spam Confidence Level](spam-confidence-levels.md)」に記載されている SCL 値と同様に解釈できます。  |
+|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|メッセージの送信者はブロックされました。|
 |`DI=SQ`|メッセージは検疫されました。|
 |`DI=SD`|メッセージは削除されました。|

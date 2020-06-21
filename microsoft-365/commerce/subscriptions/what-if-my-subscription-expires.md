@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Microsoft 365 for business サブスクリプションの有効期限が切れたとき、または無効にされたとき、またはキャンセルしたときに、データがどうなるかについて説明します。
-ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403164"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818625"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -67,7 +67,7 @@ ms.locfileid: "44403164"
 
   - プリペイドカードを使用して Microsoft 365 アプリを購入した場合は、サブスクリプションの[定期請求を有効](renew-your-subscription.md)にすることができます。
 
-  - プリペイド版の1年間のサブスクリプションを備えた Open Volume ライセンスをお持ちの場合は、パートナーに連絡して新しいプロダクトキーを購入してください。[ボリュームライセンスサービスセンター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でキーをライセンス認証するために、電子メールで指示を受信します。新しいパートナー、または過去に作業したパートナーを検索する方法については、「[パートナーまたは販売店を検索](../../admin/manage/find-your-partner-or-reseller.md)する」を参照してください。
+  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
 
   - Microsoft 365 アプリを使用している場合は、「[サブスクリプションの定期的な課金を管理](renew-your-subscription.md)する」を参照してください。
 
@@ -91,7 +91,7 @@ ms.locfileid: "44403164"
 
   - プリペイドカードを使用して Microsoft 365 アプリを購入した場合は、サブスクリプションの[定期請求を有効](renew-your-subscription.md)にすることができます。
 
-  - プリペイド版の1年間のサブスクリプションを備えた Open Volume ライセンスをお持ちの場合は、パートナーに連絡して新しいプロダクトキーを購入してください。[ボリュームライセンスサービスセンター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でキーをライセンス認証するために、電子メールで指示を受信します。新しいパートナー、または過去に作業したパートナーを検索する方法については、「[パートナーまたは販売店を検索](../../admin/manage/find-your-partner-or-reseller.md)する」を参照してください。
+  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
 
   - Microsoft 365 アプリを使用している場合は、「[サブスクリプションの更新](renew-your-subscription.md)」を参照してください。
 
@@ -126,13 +126,13 @@ ms.locfileid: "44403164"
   
 ::: moniker range="o365-worldwide"
 
- **想定される動作:** 期限切れの状態は、 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 経由で購入したサブスクリプションを含む、ほとんどのサブスクリプションおよびほとんどの国と地域で 30 日間です。ボリューム ライセンス製品の場合、Microsoft Open を除いて、期限切れの状態は 90 日間です。
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **想定される動作:** 期限切れの状態は、 [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298) 経由で購入したサブスクリプションを含む、ほとんどのサブスクリプションおよびほとんどの国と地域で 30 日間です。ボリューム ライセンス製品の場合、Microsoft Open を除いて、期限切れの状態は 90 日間です。
+ **What to expect:** The expired state lasts for 30 days for most subscriptions, including subscriptions purchased through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the expired state lasts 90 days.
 
 ::: moniker-end
 
@@ -150,13 +150,13 @@ ms.locfileid: "44403164"
   
 ::: moniker range="o365-worldwide"
 
- **想定される動作:** 期限切れ状態のときにサブスクリプションを再アクティブ化しなければ、無効状態に移行します。この期間は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。ボリューム ライセンス製品の場合、無効状態の期間は 30 日間です。
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **想定される動作:** 期限切れ状態のときにサブスクリプションを再アクティブ化しなければ、無効状態に移行します。この期間は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。ボリューム ライセンス製品の場合、無効状態の期間は 30 日間です。
+ **What to expect:** If you don't reactivate your subscription while it is in the expired state, it moves into a disabled state, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the disabled state lasts 30 days.
 
 ::: moniker-end
 
@@ -168,17 +168,17 @@ ms.locfileid: "44403164"
 
 ::: moniker range="o365-worldwide"
 
-この状態では、アクセス権が大幅に減少します。 ユーザーはサインインすることも、メールや SharePoint Online などのサービスにアクセスすることもできません。 Office アプリケーションは最終的に読み取り専用の機能制限モードに移り、[ライセンスのない製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。 サインインして管理センターにアクセスすることはできますが、ユーザーにライセンスを割り当てることはできません。 すべてのユーザー データ、メール、チーム サイト上のファイルを含む顧客データは、あなたと他の管理者のみが利用できます。
+この状態では、アクセス権が大幅に減少します。 ユーザーはサインインすることも、メールや SharePoint Online などのサービスにアクセスすることもできません。 Office アプリケーションは最終的に読み取り専用の機能制限モードに移り、[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。 サインインして管理センターにアクセスすることはできますが、ユーザーにライセンスを割り当てることはできません。 すべてのユーザー データ、メール、チーム サイト上のファイルを含む顧客データは、あなたと他の管理者のみが利用できます。
 
 ::: moniker-end
 
-グローバルまたは課金管理者は、[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)し、すべての顧客データをそのまま使用して Microsoft 365 を引き続き使用することができます。再アクティブ化しない場合は、必ず[データをバックアップ](back-up-data-before-switching-plans.md)してください。
+As a global or billing admin, you can [reactivate the subscription](reactivate-your-subscription.md) and continue using Microsoft 365 with all of your customer data intact. If you choose not to reactivate, be sure to [back up your data](back-up-data-before-switching-plans.md).
 
 ### <a name="state-deprovisioned"></a>状態: プロビジョニング解除
   
  **想定される動作:** 猶予状態または無効状態でサブスクリプションを再アクティブ化しない場合は、サブスクリプションのサービス提供が停止されます。
   
-管理者とユーザーは、サブスクリプションに付属するサービスや Office アプリケーションへアクセスすることができなくなります。すべての顧客データ (ユーザー データ、ドキュメント、メールなど) は完全に削除され、いかなる方法でも復元することはできません。
+Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and unable to be recovered in any way.
   
 この時点では、サブスクリプションを再アクティブ化することはできません。 しかし、全体管理者または課金管理者は、引き続き管理センター にアクセスして、他のサブスクリプションの管理や、ビジネス ニーズに合わせた新しいサブスクリプションの購入を行うことができます。
   
@@ -204,9 +204,9 @@ ms.locfileid: "44403164"
 
 ::: moniker-end
 
-- **試用期間を延長します。** Microsoft 365 の評価により多くの時間が必要ですか?場合によっては、[試用期間を延長](../extend-your-trial.md)できることがあります。
+- **Extend your trial.** Need more time to evaluate Microsoft 365? In certain cases, you may be able to [extend your trial](../extend-your-trial.md).
 
-- **試用版を取り消すか、期限切れにします。** Microsoft 365 を購入しない場合は、試用期間を満了または[解約](cancel-your-subscription.md)することができます。保持する必要のあるデータを必ずバックアップしてください。30日の猶予期間が過ぎると、試用版のアカウント情報とデータが完全に消去されます。
+- **Cancel the trial or let it expire.** If you decide not to buy Microsoft 365, you can let your trial expire or [cancel it](cancel-your-subscription.md). Be sure to back up any data you want to keep. Soon after the 30 day grace period, your trial account information and data is permanently erased.
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 
@@ -216,7 +216,7 @@ ms.locfileid: "44403164"
   
 - **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。
 
-- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
+- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
 
 キャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
   

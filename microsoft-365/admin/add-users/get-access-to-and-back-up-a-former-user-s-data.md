@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 従業員が辞職したときに、そのファイルやメールを保存する方法について説明します。
-ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 32f64efb30acb5438e5add8bcb897200951e6362
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431715"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780615"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>元ユーザーのデータにアクセスしてバックアップを作成する
 
@@ -141,7 +141,7 @@ ms.locfileid: "44431715"
 
 元従業員のメール メッセージ、予定表、タスク、連絡先を保存するには、情報を Outlook データ ファイル (.pst) にエクスポートします。
   
-1. Outlook に [元従業員のメールを追加](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)します ([ユーザーのパスワードの再設定](reset-passwords.md)を行えば、自分しか知らないパスワードに設定し直すことができます)。
+1. Outlook に [元従業員のメールを追加](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)します ([ユーザーのパスワードの再設定](reset-passwords.md)を行えば、自分しか知らないパスワードに設定し直すことができます)。
     
 2. Outlook で、[**ファイル**] を選択します。
     
@@ -160,11 +160,11 @@ ms.locfileid: "44431715"
 6. Mailbox-Anne Weiler または anne@contoso.com などの名前またはメール アドレスを選択して、エクスポートするアカウントを選択します。 アカウントのすべての内容 (メール、予定表、連絡先、タスク、メモなど) をエクスポートする場合、[ **サブフォルダーを含む**] チェック ボックスがオンになっていることを確認します。 
     
     > [!NOTE]
-    > 一度にエクスポートできるアカウントは 1 つだけです。複数のアカウントをエクスポートする場合は、アカウントがエクスポートされるたびに、上の手順を繰り返します。 
+    > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps. 
   
     ![一番上のフォルダーが選択され、[サブフォルダーを含む] がオンになっている [Outlook データ ファイルのエクスポート] ダイアログ ボックス](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
-7. [**次へ**] を選択します。
+7. **[次へ]** を選択します。
     
 8. [**参照**] を選択して、Outlook データ ファイル (.pst) の保存場所を選択します。 *ファイル名*を入力して [**OK**] を選択し、続行します。 
     
@@ -181,7 +181,7 @@ Outlook により、エクスポートがすぐに開始されます。ただし
     
   - パスワードで保護された既存の Outlook データ ファイル (.pst) にエクスポートする場合は、[**Outlook データ ファイルのパスワード**] ダイアログボックスで、*パスワード*を入力して [**OK**] を選択します。
     
-Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)」方法を参照してください。 
+Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)」方法を参照してください。 
   
   
   > [!NOTE]

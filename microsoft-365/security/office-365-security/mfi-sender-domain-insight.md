@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの送信者ドメインの洞察を修正する方法について説明します。
-ms.openlocfilehash: a416b4d15ff52a611f00a88de8440c749ff08ad3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c4cf4a87ad770325ca6ad2f0b87ac8ce52c345c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635174"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818833"
 ---
 # <a name="fix-sender-domain-insight"></a>送信者ドメインの洞察を修正する
 
@@ -28,7 +30,7 @@ Microsoft 365 では、内部のオンプレミスの電子メール環境から
 
 - 構成では、次のいずれかのステートメントが true になります。
 
-  - 送信者の電子メールドメインが組織に登録されている。 詳細については、「Office のドメインを追加する365」を参照してください。
+  - 送信者の電子メールドメインが組織に登録されている。 詳細については、「Office 365 でドメインを追加する」を参照してください。
 
   - オンプレミスの電子メールサーバーが、証明書を使用して Microsoft 365 に電子メールを送信するように構成されています。証明書は、microsoft 365 に登録したドメイン名と完全に一致しており、そのドメインを使用して Microsoft 365 に証明書ベースのコネクタが作成されています。 
 
@@ -46,6 +48,6 @@ Office 365 にメッセージを配信するために使用された受信コネ
 
 ![「Fix sender domain insights」のサンプルメッセージ id を表示する](../../media/sender-domain-view-sample-message-ids.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

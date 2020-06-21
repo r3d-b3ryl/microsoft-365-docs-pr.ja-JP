@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: コンプライアンス機能を設定して、データの損失を防ぎ、顧客の機密情報を安全に保つことができます。
-ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402696"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785834"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 
@@ -61,7 +61,7 @@ DLP には、さまざまなロケールに対して、多くの使用可能な�
 
 機密ラベルには、Azure Information Protection (AIP) プラン1が付属しており、ラベルを適用することによってドキュメントや電子メールを分類し、必要に応じて保護することができます。 ラベルは、ルールと条件を定義する管理者、またはユーザーによって手動で、またはユーザーに推奨事項を与える組み合わせを使用して、自動的に適用できます。
 
-機密ラベルを設定するには、「[感度ラベルを作成して管理](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)する」のビデオを参照してください。
+機密ラベルを設定するには、「[感度ラベルを作成して管理](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)する」のビデオを参照してください。
 
 
 
@@ -69,7 +69,7 @@ DLP には、さまざまなロケールに対して、多くの使用可能な�
 
 AIP クライアントを手動でインストールするには、次のようにします。
 
-1. [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=53018)から**AzinfoProtection_UL .exe**をダウンロードします。
+1. [Microsoft ダウンロードセンター](https://www.microsoft.com/download/details.aspx?id=53018)から**AzinfoProtection_UL.exe**をダウンロードします。
  
 2. Word 文書を表示し、[**ホーム**] タブで [**秘密度**] オプションが有効になっていることを確認することで、インストールが正常に行われたことを確認できます。
 <br/>![Word 文書内の [保護] タブのドロップダウン](../media/word-sensitivity.png)

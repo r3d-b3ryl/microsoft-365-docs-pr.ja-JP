@@ -19,13 +19,14 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 description: SharePoint Online、OneDrive for Business、Microsoft Teams のファイルの Office 365 Advanced Threat Protection について説明します。
-ms.openlocfilehash: 90e84f0a4393e5097fb59b93693862a21d6d9f2f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031450"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815411"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP
 
@@ -33,7 +34,7 @@ ms.locfileid: "44031450"
 
 ユーザーは、SharePoint、OneDrive、Microsoft Teams を使用して、ファイルを定期的に共有し、共同作業を行うことができます。 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用すると、組織は安全な方法で共同作業を行うことができます。 ATP は、チームサイトおよびドキュメントライブラリで悪意のあるものとして識別されたファイルを検出およびブロックするのに便利です。
 
-## <a name="how-it-works"></a>しくみ
+## <a name="how-office-365-atp-operates"></a>Office 365 ATP の動作方法
 
 SharePoint Online、OneDrive for Business、および Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルをロックするために、ATP はファイルストアと直接統合されます。 次の図は、ライブラリ内で検出された悪意のあるファイルの例を示しています。
 
@@ -63,11 +64,11 @@ Microsoft 365 の構成方法によっては、ユーザーはブロックされ
 
 ## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>SharePoint Online、OneDrive for Business、Microsoft Teams 用の ATP での検疫
 
- 2018年5月の初期[quarantine](quarantine-email-messages.md)段階では、セキュリティ&amp; /コンプライアンスセンターの検疫機能が、SharePoint Online、OneDrive For business、MICROSOFT Teams 用の ATP に拡張されています。
+ 2018年5月の初期段階では、セキュリティ/コンプライアンスセンターの[検疫](quarantine-email-messages.md)機能 &amp; が、SharePoint Online、OneDrive For Business、Microsoft TEAMS 用の ATP に拡張されています。
 
-SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルは、検疫されたアイテムの一覧に含まれています。 ( &amp;セキュリティコンプライアンスセンターで、[脅威の**管理** \> ] [**検疫**の**レビュー** \>と**ファイル**のフィルター] に移動します。)
+SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルは、検疫されたアイテムの一覧に含まれています。 (セキュリティ &amp;コンプライアンスセンターで、[**脅威管理** \> の**レビュー** ] [ \> **検疫**と**ファイル**のフィルター] に移動します。)
 
-組織の Microsoft 365 for business security team の一部であり、[セキュリティ&amp; /コンプライアンスセンターで必要なアクセス許可が割り当てら](permissions-in-the-security-and-compliance-center.md)れている場合は、検疫からの ATP によって悪意があると検出されたファイルをダウンロード、リリース、レポート、および削除できます。
+組織の Microsoft 365 for business security team の一部であり、[セキュリティ/ &amp; コンプライアンスセンターで必要なアクセス許可が割り当てら](permissions-in-the-security-and-compliance-center.md)れている場合は、検疫からの ATP によって悪意があると検出されたファイルをダウンロード、リリース、レポート、および削除できます。
 
 - ファイルを**リリースおよびレポートすると**、SharePoint、OneDrive、Microsoft Teams の各チームサイトまたはドキュメントライブラリにあるファイルの ATP ブロックが削除されます。 その後、ユーザーはファイルを開いて、共有し、ダウンロードすることができます。 そして、[ **microsoft にレポートを送信**] オプションが選択されている場合、ファイルは誤検知として microsoft に報告されます。
 

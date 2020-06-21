@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 for business サブスクリプションの試用版にサインアップする方法について説明します。
-ms.openlocfilehash: 968ab3c8bf7b377eba1aafb3fbc710eb4d36dad7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b14cf3ede622d54a95eb5cec3b67eec230ea8793
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402836"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818545"
 ---
 # <a name="sign-up-for-a-trial-subscription"></a>試用版サブスクリプションにサインアップする
 
@@ -53,4 +53,4 @@ ms.locfileid: "44402836"
 
 ## <a name="see-also"></a>関連項目
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

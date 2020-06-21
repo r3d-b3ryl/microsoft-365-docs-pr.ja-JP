@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678650"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780555"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
 **Microsoft 365 for business プランを購入し、管理者権限を持っている場合は、管理センターにアクセスでき**ます。 この記事は、お客様を対象としています。
 
-**ユーザーの場合、または Microsoft 365 ファミリプランをお持ちの場合は、管理センターがありません。** Microsoft 365 をセットアップするには、「 [microsoft 365 または Office 2019 を PC または Mac にダウンロードしてインストールまたは再](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)インストールする」に移動します。
+**If you are a user or have a Microsoft 365 Family plan, you do not have an admin center.** To set up Microsoft 365, go to [Download and install or reinstall Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
 管理センターを使用して、クラウドでの組織の設定、ユーザーの管理、サブスクリプションの管理などを行います。 この記事では、管理センターへのアクセス方法と使用可能な機能や設定について説明します。
 
@@ -43,7 +43,7 @@ ms.locfileid: "44678650"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="how-to-get-to-the-admin-center"></a>管理センターにアクセスする方法
 
@@ -67,7 +67,7 @@ ms.locfileid: "44678650"
 
 2. 左上にあるアプリ起動ツールのアイコンを選択して、**[管理]** をクリックします。
 
-    [**管理**] タイルは、Microsoft 365[管理者権限](../add-users/about-admin-roles.md)を持つユーザーに対してのみ表示されます。タイルが表示されない場合は、組織の管理センターにアクセスする権限がありません。
+    The **Admin** tile appears only to people who have Microsoft 365 [admin permissions](../add-users/about-admin-roles.md). If you don't see the tile, then you don't have permissions to access the admin center for your organization.
 
 ## <a name="admin-center-features-and-settings"></a>管理センターの機能と設定
 
@@ -83,9 +83,9 @@ ms.locfileid: "44678650"
 |**サポート** <br/> | 既存のサービス リクエストを表示するか、新しく作成します。 詳細については、「[ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ](../contact-support-for-business-products.md)」を参照してください。 |
 |[**設定**] <br/> |メール、サイト、および Office スイートなどのアプリのグローバル設定を管理します。 パスワード ポリシーと有効期限を変更します。 contoso.com などのドメイン名を追加して更新します。 組織プロファイルとリリース設定を変更します。 また、パートナーが管理センターにアクセスできるかどうかを選択します。  <br/> |
 |**セットアップ** <br/> |既存のドメインの管理、多要素認証の有効化と管理、管理者のアクセス権の管理、Office 365 へのユーザー メールボックスの移行、機能の更新プログラムの管理を行ったり、ユーザーによる Office アプリのインストールを支援したりします。 |
-|**レポート** <br/> |電子メールの使用、Office ライセンス認証などの詳細なレポートと共に、組織が Microsoft 365 をどのように使用しているかをひとめで確認できます。新しい[アクティビティレポート](../activity-reports/activity-reports.md)を使用する方法について説明します。<br/> |
+|**レポート** <br/> |See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).  <br/> |
 |**正常性** <br/> |サービスの正常性がひとめでわかるように表示されます。 また、詳細やサービスの正常性の履歴を確認することもできます。 「[サービスの正常性の確認方法](https://docs.microsoft.com/office365/enterprise/view-service-health)」を参照してください。  <br/> 機能やサービスの今後の変更を確認するには、メッセージ センターを使用します。 そこには、変更の予定とその変更がユーザーにどのような影響を与えるかを理解するための情報を含む、お知らせが投稿されます。 詳細については、「[Office 365 のメッセージ センター](../manage/message-center.md)」を参照してください。  <br/> |
-|**管理センター** <br/> |Exchange、Skype for Business、SharePoint、Yammer、Azure AD の管理センターを個別に開きます。 各管理センターには、そのサービスで利用可能なすべての設定が含まれます。  <br/> たとえば、Exchange 管理センターでは、メール、予定表、配布グループなどのセットアップと管理を行います。SharePoint 管理センターでは、サイト コレクション、サイト設定、OneDrive for Business の作成と管理を行います。Skype for Business 管理センターでは、インスタント メッセージ通知、ダイヤルイン会議、オンライン プレゼンスのセットアップを行います。  <br/> [Exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkID=271807)および [SharePoint 管理センター](https://docs.microsoft.com/sharepoint/sharepoint-online)について学びましょう。<br/> **注:** 利用できる管理センターは、プランと地域によって異なります。           |
+|**管理センター** <br/> |Exchange、Skype for Business、SharePoint、Yammer、Azure AD の管理センターを個別に開きます。 各管理センターには、そのサービスで利用可能なすべての設定が含まれます。  <br/> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <br/> [Exchange 管理センター](https://go.microsoft.com/fwlink/p/?LinkID=271807)および [SharePoint 管理センター](https://docs.microsoft.com/sharepoint/sharepoint-online)について学びましょう。<br/> **注:** 利用できる管理センターは、プランと地域によって異なります。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理センターの一般的なタスク
 
@@ -101,4 +101,4 @@ ms.locfileid: "44678650"
 
 ## <a name="see-also"></a>関連項目
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -1,5 +1,5 @@
 ---
-title: 迷惑メールとバルク メールの違い
+title: '&apos;迷惑メールとバルクメールの違いは何ですか。'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) における迷惑メール (スパム) とバルクメール (グレーのメール) の違いについて学習できます。
-ms.openlocfilehash: 6936028aa7bda538f0e49429d22f28c7a78cdb36
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c1f5ca724f7a41d9fc11ed0c93f52a79a6ecc8e5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208454"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819438"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP の迷惑メールとバルクメールの違いは何ですか。
 

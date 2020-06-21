@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) でスパムを防止するのに役立つスパム対策設定とフィルターについて学ぶことができます。
-ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211418"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800109"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
 > [!NOTE]
-> このトピックは、管理者を対象としています。 エンドユーザーのトピックについては、「[迷惑メールフィルターの概要](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」と「[迷惑メールおよびフィッシングについ](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)て」を参照してください。
+> このトピックは、管理者を対象としています。 エンドユーザーのトピックについては、「[迷惑メールフィルターの概要](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」と「[迷惑メールおよびフィッシングについ](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31)て」を参照してください。
 
 Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、電子メールメッセージは EOP によってスパム (迷惑メール) から自動的に保護されます。
 
@@ -83,7 +83,7 @@ EOP のスパム対策設定は、次のテクノロジで構成されていま�
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>受信トレイへのスパムの配信を禁止する
 
-- **組織の設定を確認**します。メッセージがスパムフィルターをスキップできるようにする設定 (たとえば、スパム対策ポリシーの [許可されたドメイン] の一覧に独自のドメインを追加する場合など) に注目してください。 推奨される設定については、「 [EOP And Microsoft 365 ATP security](recommended-settings-for-eop-and-office365-atp.md) 」および「 [safe Sender リストを作成](create-safe-sender-lists-in-office-365.md)する」の推奨設定を参照してください。
+- **組織の設定を確認**します。メッセージがスパムフィルターをスキップできるようにする設定 (たとえば、スパム対策ポリシーの [許可されたドメイン] の一覧に独自のドメインを追加する場合など) に注目してください。 推奨される設定については、「 [EOP And Office 365 ATP security の推奨設定](recommended-settings-for-eop-and-office365-atp.md)」および「[安全な送信者リストを作成](create-safe-sender-lists-in-office-365.md)する」を参照してください。
 
 - **ユーザーのメールボックスで迷惑メールルールが有効になっていることを確認**します。既定で有効になっていますが、無効にすると、迷惑メールとしてマークされたメッセージを [迷惑メール] フォルダーに移動することはできません。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 

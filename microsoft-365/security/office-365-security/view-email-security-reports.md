@@ -1,5 +1,5 @@
 ---
-title: 電子メールセキュリティレポートの表示セキュリティ & コンプライアンスセンター、侵害されたユーザー、暗号化、脅威保護の状態、マルウェア検出、上位マルウェア、スパム検出、送受信された電子メール、ユーザーが報告したメッセージ、閲覧レポート、検出、セキュリティデータ、セキュリティ情報
+title: セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
-ms.openlocfilehash: 6fc77696625fb11d4ebfc6f339939c751c7a45f2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dfee1fa2c6e515bfc10ed7a633584c54763fdec4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613458"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819463"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 

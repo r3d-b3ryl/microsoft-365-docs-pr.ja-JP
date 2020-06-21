@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除された Microsoft 365 グループを復元する方法について説明します。
-ms.openlocfilehash: 24e5159dd85ab6ede324b3981e3e592f1c2ead70
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400691"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818509"
 ---
 # <a name="restore-a-deleted-group"></a>削除されたグループを復元する
 
@@ -56,9 +56,9 @@ ms.locfileid: "44400691"
 
 - Yammer グループとグループのコンテンツ (Yammer から Microsoft 365 グループが作成されている場合)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook"></a>Outlook を使用して自分が所有するグループを復元する
+## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Outlook on the web を使用して自分が所有するグループを復元する
 
-Microsoft 365 グループの所有者である場合は、次の手順に従ってグループを自分の Outlook で復元できます。
+Microsoft 365 グループの所有者である場合は、次の手順に従って、そのグループを web 上の Outlook で自分で復元することができます。
 
 1. [[削除さ](https://outlook.office.com/people/group/deleted)れたグループ] ページで、[**グループ**] ノードの下の [**グループの管理**] オプションを選択し、[**削除済み**] を選択します。
 
@@ -96,7 +96,7 @@ Get-AzureADMSDeletedGroup
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-グループが正常に削除されたことを確認するには、 *Get AzureADMSDeletedGroup*  コマンドレットをもう一度実行して、グループが論理的に削除されたグループの一覧に表示されなくなったことを確認します。グループとそのすべてのデータが完全に削除されるまで 24 時間ほどかかる場合があります。 
+To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>Microsoft 365 グループに関する質問
 
@@ -108,6 +108,6 @@ Microsoft[技術コミュニティ](https://techcommunity.microsoft.com/t5/Offic
   
 [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
-[グループに接続されたチーム サイトの設定を管理する](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx)
+[グループに接続されたチーム サイトの設定を管理する](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   
-[Outlook でグループを削除する](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx)
+[Outlook でグループを削除する](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)

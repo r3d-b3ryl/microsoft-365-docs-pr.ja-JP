@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: Windows デバイスを Windows 10 Pro にアップグレードして、より高度なセキュリティおよびビジネスネットワーク機能を利用できるようにする方法を確認します。
-ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 24ef1f1547ed8873ed1fa18120eef6275f53c7dc
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403532"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785532"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows デバイスを Windows 10 Pro にアップグレードする
 
@@ -39,7 +39,7 @@ Windows デバイスを Windows 10 Pro にアップグレードする方法に�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="upgrade-to-windows-10-pro"></a>Windows 10 Pro へのアップグレード
   
@@ -62,4 +62,4 @@ Android および iOS デバイスの設定を完了するには、「 [Microsof
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップと使用方法の詳細
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

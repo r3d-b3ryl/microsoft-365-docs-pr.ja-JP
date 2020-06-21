@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Microsoft 365 プランを変更する前に、Outlook、OneDrive、Yammer、および SharePoint のコンテンツをバックアップします。
-ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403620"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818533"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランを切り替える前にデータをバックアップする
 
@@ -35,13 +35,13 @@ ms.locfileid: "44403620"
   
 ## <a name="save-a-copy-of-outlook-information"></a>Outlook 情報のコピーを保存する
 
-ユーザーが Outlook を使用している場合は、プランを切り替える前に、[電子メール、連絡先、予定表を outlook の .pst ファイルにエクスポートまたはバックアップ](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)することができます。
+ユーザーが Outlook を使用している場合は、プランを切り替える前に、[電子メール、連絡先、予定表を outlook の .pst ファイルにエクスポートまたはバックアップ](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)することができます。
   
-新しいプランへの切り替えが完了すると、ユーザーは[Outlook .pst ファイルからメール、連絡先、予定表をインポート](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)できます。
+新しいプランへの切り替えが完了すると、ユーザーは[Outlook .pst ファイルからメール、連絡先、予定表をインポート](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)できます。
   
 ## <a name="save-files-stored-in-onedrive-for-business"></a>OneDrive for business に保存されているファイルを保存する
 
-別のサブスクリプションに切り替える前に、ユーザーは[OneDrive または SharePoint からファイルやフォルダー](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05)を別の場所 (コンピューターのハードドライブ上のフォルダー、または組織のネットワーク上のファイル共有) にダウンロードできます。
+別のサブスクリプションに切り替える前に、ユーザーは[OneDrive または SharePoint からファイルやフォルダー](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05)を別の場所 (コンピューターのハードドライブ上のフォルダー、または組織のネットワーク上のファイル共有) にダウンロードできます。
   
 ## <a name="save-yammer-information"></a>Yammer 情報の保存
 
@@ -51,7 +51,7 @@ ms.locfileid: "44403620"
 
 ユーザーが SharePoint Online を持つサブスクリプションから、それを持たないサブスクリプションに切り替えられた場合、 **sharepoint**タイルは Microsoft 365 メニューに表示されなくなります。
   
-ただし、切り替える前と同じ組織で新しいサブスクリプションを使う場合、ユーザーは SharePoint チーム サイトに引き続きアクセスできます。チーム サイトへの直接 URL を使って、ノートブック、ドキュメント、タスク、予定表の表示や更新ができます。
+However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
   
 > [!TIP]
 > ユーザーはサブスクリプションが切り替わる前にチーム サイトにアクセスして、ブラウザーで URL をお気に入りまたはブックマークに保存しておくことをお勧めします。

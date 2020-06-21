@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 組織外のユーザーとのグループ作業用に Microsoft 365 を構成する方法について説明します。
-ms.openlocfilehash: 5d85b164133d235dce410cd6cbda778588fd093a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 4d5be2d560017978d08bf9f5b06c9e2011606c6d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160017"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819414"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -57,7 +57,7 @@ Microsoft 365 で使用可能なゲスト共有設定の包括的な説明につ
 
 Microsoft 365 の共有機能の一部がガバナンスポリシーと競合している場合は、「 [365 microsoft の](microsoft-365-limit-sharing.md)共有を制限する」を参照して、共有の制限のオプションについて確認してください。
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 でのファイルの共同作業の概要](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

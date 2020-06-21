@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'このチェックリストに従って、Microsoft 365 およびセキュリティで保護されたデータから従業員を削除します。 '
-ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: adf5c683828b30a978199145fa2c54f17d1b6b37
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431655"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780579"
 ---
 # <a name="remove-a-former-employee"></a>元従業員を削除する
 
@@ -49,7 +49,7 @@ ms.locfileid: "44431655"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 従業員を削除するには、次のようにします。
 
@@ -104,18 +104,18 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 > [!NOTE]
 > グローバル管理者の場合は、従業員を削除し、電子メールを転送して、新しいガイド付きの操作を使用して OneDrive コンテンツに対する処理を選択することができます。 詳細については、「[グローバル管理者: ユーザーを削除する](remove-former-employee.md)」を参照してください。 ただし、従業員が会社のデータにアクセスできないようにするには、ここに記載されている追加の手順をすべて完了することをお勧めします。 
   
-簡単な概要を示します。各手順については、この記事で詳しく説明します。
+Here's a quick overview. Each step is explained in detail in this article.
   
 |||
 |:-----|:-----|
 |**手順** <br/> |**理由** <br/> |
 |1. [元従業員のメールボックスの内容を保存する](#save-the-contents-of-a-former-employees-mailbox) <br/> |これは、従業員の仕事を引き継ぐユーザー、または訴訟が発生した場合に便利です。  <br/> |
-|2. [元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |この操作を行うと、元従業員のメール アドレスはアクティブなままとなります。顧客やパートナーが元従業員のアドレスにメールを引き続き送信する場合は、この手順を行うと、仕事を引き継ぐユーザーに転送されます。  <br/> |
+|2. [元従業員のメールを別の従業員に転送するか、または元従業員のメールボックスを共有メールボックスに変換する](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
 |3. [元従業員のモバイル デバイスをワイプし、ブロックする](#wipe-and-block-a-former-employees-mobile-device) <br/> |携帯電話またはタブレットからビジネス データを削除します。  <br/> |
 |4.[以前の従業員の Microsoft 365 データへのアクセスをブロックする](#block-a-former-employees-access-to-microsoft-365-data)<br/> |これにより、ユーザーは古い Microsoft 365 メールボックスおよびデータにアクセスできなくなります。  <br/><br/> **ヒント**: ユーザーのアクセスをブロックすると、ライセンスの支払いが続行されます。 支払いを停止するには、サブスクリプションからそのライセンスを削除する必要があります (手順 5)。           |
-|5. [従業員の OneDrive のコンテンツを移動する](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |ユーザーのライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。  <br/><br/> アカウントを削除する前に、OneDrive のコンテンツをアクセスしやすい別の場所に移動する必要があります。従業員のアカウントを削除すると、OneDrive のコンテンツは **30** 日間保持されます。その 30 日間であれば、ユーザーのアカウントを復元し、OneDrive のコンテンツにアクセスすることができます。ユーザーのアカウントを復元した場合、30 日後でも OneDrive のコンテンツにアクセスできます。  <br/> |
-|5a. ユーザーが個人のコンピューターを使用して OneDrive や SharePoint にアクセスした場合はどうなりますか?  <br/> |ユーザーが、会社が発行したコンピューターではなく、個人のコンピューターを使用して OneDrive や SharePoint からファイルをダウンロードした場合は、保存されたそれらのファイルを削除する方法はありません。  <br/><br/> ユーザーは自分のコンピューターに同期されたファイルに引き続きアクセスできます。  <br/> |
-|6.[以前の従業員から Microsoft 365 ライセンスを削除して削除し](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)ます。<br/> |ライセンスを削除すると、別のユーザーに割り当てることができます。または、他のユーザーを採用するまで支払うことがないように、ライセンスを削除することもできます。  <br/><br/> ライセンスを削除すると、ユーザーの古いメール、連絡先、および予定表は **30 日間** 保持され、その後、完全に削除されます。 ライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。  <br/> |
+|5. [従業員の OneDrive のコンテンツを移動する](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |ユーザーのライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。  <br/><br/> Before you delete the account, you should move the content of their OneDrive to another location that's easy for you to access. After you delete an employee's account, the content in their OneDrive is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their OneDrive content. If you restore the user's account, the OneDrive content will remain accessible to you even after 30 days.  <br/> |
+|5a. What if the person used their personal computer to access OneDrive and SharePoint?  <br/> |ユーザーが、会社が発行したコンピューターではなく、個人のコンピューターを使用して OneDrive や SharePoint からファイルをダウンロードした場合は、保存されたそれらのファイルを削除する方法はありません。  <br/><br/> ユーザーは自分のコンピューターに同期されたファイルに引き続きアクセスできます。  <br/> |
+|6.[以前の従業員から Microsoft 365 ライセンスを削除して削除し](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)ます。<br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person.  <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
 |7. [元従業員のユーザー アカウントを削除する](#delete-a-former-employees-user-account)<br/> |これにより、管理センターからアカウントが削除されます。 これできれいになります。  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>元従業員のメールボックスの内容を保存する
@@ -123,11 +123,11 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 元従業員のメールボックスの内容を保存するには、2 つの方法があります。
   
-1. 使用しているバージョンの Outlook 2013 または 2016 に元従業員のメール アドレスを追加し, .pst ファイルにデータをエクスポートします。必要に応じて、別のメール アカウントにデータをインポートすることができます。方法については、「[元ユーザーのデータにアクセスしてバックアップを作成する](get-access-to-and-back-up-a-former-user-s-data.md)」を参照してください。
+1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
     
     または
     
-2. ユーザー アカウントを削除する前に、メールボックスに訴訟ホールドまたはインプレース ホールドを配置します。これは 1 つ目のオプションよりも複雑ですが、企業計画にアーカイブと訴訟ホールドが含まれている場合、訴訟の可能性がある場合、および技術力の高い IT 部門がある場合は、行う価値があります。
+2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
     
     メールボックスを "非アクティブのメールボックス" に変えると、管理者、法令遵守責任者、またはレコード マネージャーは、Exchange Online のインプレース電子情報開示を使用して、コンテンツにアクセスし、検索できます。
     
@@ -140,9 +140,9 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 この手順で、他の従業員に元従業員のメール アドレスを割り当てるか、または作成した[共有メールボックスにユーザーのメールボックスを変換します](../email/convert-user-mailbox-to-shared-mailbox.md)。 
   
-- 共有メールボックスを作成すると、コストを低く抑えることができます。これは、 **メールボックスのサイズが 50 GB より小さい限り** 、ライセンスの料金を支払う必要がないからです。50 GB を超えると、メールボックスにライセンスを割り当てる必要があります。 
+- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it. 
     
-- メールボックスを共有メールボックスに変換すると、以前のすべてのメールを入手できるようになります。この処理を行うと、占有する領域が大きくなる可能性があります。
+- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
     
 - メールの転送を設定した場合、元従業員宛の *新しい*  メールのみが、現在の従業員に送信されるようになります。 
     
@@ -159,9 +159,9 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 3. [**電子メールの転送**] で、[**メール転送の管理**] を選択します。
 
-4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. [**保存**] を選択します。 
+5. **[保存]** を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
  
@@ -175,9 +175,9 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 3. [**電子メール転送**] の横にある [**編集**] を選択します。
 
-4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. [**保存**] を選択します。 
+5. **[保存]** を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -191,9 +191,9 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
 
 3. [**電子メール転送**] の横にある [**編集**] を選択します。
 
-4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。[ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員 (または共有メールボックス) のメール アドレスを入力します。 
+4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
   
-5. [**保存**] を選択します。 
+5. **[保存]** を選択します。 
     
 6. 元従業員のアカウントを削除しないよう注意してください。
 
@@ -215,9 +215,9 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
     
 5. [**モバイルデバイスの詳細**] ページの [**モバイルデバイス**] で、モバイルデバイスを選択し、[データワイプデバイスの**ワイプ**] を選択して、[ ![ ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **ブロック**] を選択します。 
     
-6. [**保存**] を選択します。 
+6. **[保存]** を選択します。 
     
-    **ヒント**: オンプレミスの Blackberry Enterprise Service からも、そのユーザーを削除するか無効にするかします。さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。 
+    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>以前の従業員の Microsoft 365 データへのアクセスをブロックする
 <a name="bkmk_block"> </a>
@@ -340,16 +340,16 @@ Microsoft 365 for business のユーザーライセンスの管理の詳細に�
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>削除した従業員のアカウントが Skype for Business に与える影響
 <a name="bkmk_remove"> </a>
 
-Office 365 からユーザーのライセンスを削除すると、ユーザーに関連付けられている PSTN 通話番号が解放されます。この番号を別のユーザーに割り当てることができます。
+When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
-ユーザーがキュー グループに属している場合、ユーザーは呼び出しキューのエージェントの実行可能な対象にならなくなります。そのため、呼び出しキューに関連付けられているグループからもユーザーを削除することをお勧めします。 
+If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
   
 ## <a name="delete-a-former-employees-user-account"></a>元従業員のユーザー アカウントを削除する
 <a name="bkmk_delete"> </a>
 
 元従業員のすべてのユーザー データにアクセスして保存したら、元従業員のアカウントを削除できます。
   
-メールの転送を設定した場合や、アカウントを共有メールボックスに変換した場合、アカウントを削除しないでください。いずれの場合も、メール転送および共有メールボックスを固定するには、アカウントが必要です。
+Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
 
 ::: moniker range="o365-worldwide"
 
@@ -381,7 +381,7 @@ Office 365 からユーザーのライセンスを削除すると、ユーザー
 
 ::: moniker-end
 
-ユーザーを削除するとき、約 30 日間アカウントが無効になります。30 日後に永久に削除されるまではアカウントを復元できます。
+When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
   
 ### <a name="does-your-organization-use-active-directory"></a>組織では Active Directory を使用していますか。
 
@@ -400,8 +400,8 @@ Azure Active Directory を使用している場合は、[Remove-MsolUser](https:
 |:-----|:-----|
 |**可能な操作** <br/> |**方法** <br/> |
 |セッション (Outlook on the web、Outlook、Exchange Active Sync など) を終了し、新しいセッションを強制的に開く  <br/> |パスワードを再設定する  <br/> |
-|(すべてのプロトコルの) セッションを終了し、今後のセッションに対するアクセスをブロックする  <br/> |アカウントを無効にする。例 (Exchange 管理センターまたは PowerShell を使用する場合):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|特定のプロトコル (ActiveSync など) のセッションを終了する  <br/> |プロトコルを無効にする。例 (Exchange 管理センターまたは PowerShell を使用する場合):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|(すべてのプロトコルの) セッションを終了し、今後のセッションに対するアクセスをブロックする  <br/> |Disable the account. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|特定のプロトコル (ActiveSync など) のセッションを終了する  <br/> |Disable the protocol. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
    
 上記の操作は、次の 3 か所で実行できます。
   
@@ -414,9 +414,9 @@ Azure Active Directory を使用している場合は、[Remove-MsolUser](https:
    
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>アカウントの終了に対して最も迅速な応答を取得する方法
 
- **最も迅速な応答**: Exchange 管理センターを使用 (PowerShell を使用) するか、または Azure Active Directory 管理センターを使用します。オンプレミスの環境では、DirSync を介して変更を同期するのに数時間かかる場合があります。 
+ **Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync. 
   
- **オンプレミスおよび Exchange データ センターにプレゼンスがあるユーザーの場合、迅速な応答**: Azure Active Directory 管理センター/Exchange 管理センターを使用してセッションを終了し、オンプレミスの環境でも変更を加えます。そうしないと、Azure Active Directory 管理センター/Exchange 管理センターでの変更は、DirSync によって上書きされます。 
+ **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync. 
   
 ## <a name="related-articles"></a>関連記事
 

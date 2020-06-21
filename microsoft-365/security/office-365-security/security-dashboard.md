@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679134"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819450"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
-## <a name="overview"></a>概要
+## <a name="basic-functions-and-how-to-open-security-dashboard"></a>基本的な機能とセキュリティダッシュボードを開く方法
 
 [セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)を使用すると、組織でデータの保護とコンプライアンスを管理することができます。 必要なアクセス許可を持っていれば、セキュリティダッシュボードを使用して、脅威保護の状態を確認したり、セキュリティの警告を表示および操作したりできます。
 

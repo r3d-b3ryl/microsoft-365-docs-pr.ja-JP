@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: ユーザーが Windows 10 デバイスに Office アプリをインストールして、Microsoft 365 管理センターから Windows 10 Pc に Office を簡単にインストールできるようにします。
-ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400908"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786236"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
 
@@ -46,7 +46,7 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="manage-office-deployments"></a>Office 展開を管理する
 
@@ -65,4 +65,4 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の設定と使用の詳細については、「」を参照してください。
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

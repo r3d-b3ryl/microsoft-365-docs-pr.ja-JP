@@ -14,23 +14,23 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Office 365 ATP の安全なドキュメントについて説明します。
-ms.openlocfilehash: e9b1fadd3e9e6dab337a0c3ded380c5c49f53bab
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+description: Microsoft 365 E5 または Microsoft 365 E5 セキュリティの安全なドキュメントについて説明します。
+ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678672"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811064"
 ---
-# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection の安全なドキュメント
+# <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
-「安全なドキュメント」は、 [Microsoft Defender Advanced threat](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) protection を使用して、[保護さ](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)れたビューで開かれたドキュメントやファイルをスキャンする、Office 365 Advanced threat PROTECTION (office 365 ATP) の機能です。
+「安全なドキュメント」は、microsoft [Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)を使用して、[保護ビュー](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)で開かれたドキュメントやファイルをスキャンする、microsoft 365 e5 または microsoft 365 E5 セキュリティの機能です。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - この機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティライセンスを持つユーザーのみが使用できます。
 
-- 現在、安全なドキュメントはパブリックプレビューで利用できます。これは、office [Insider program](https://insider.office.com/en-us/join)の一部である (プレビュー) office バージョン 2002 (12527.20092) 以上のユーザーが利用できます。 この機能は既定でオフになっており、セキュリティ管理者が有効にする必要があります。
+- 現在、安全なドキュメントはパブリックプレビューで利用できます。これは、office [Insider program](https://insider.office.com/join)の一部である (プレビュー) office バージョン 2002 (12527.20092) 以上のユーザーが利用できます。 この機能は既定でオフになっており、セキュリティ管理者が有効にする必要があります。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 

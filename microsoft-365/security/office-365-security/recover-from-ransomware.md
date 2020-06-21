@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 管理者は、ランサムウェア攻撃から回復する方法について学ぶことができます。
-ms.openlocfilehash: 29afb66dd90be3917d576a7533900e21a91966c0
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 1471b7b0cacbabaf086e0759e21a46b9cb9929ab
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224711"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811028"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365 のランサムウェア攻撃からの回復
 
@@ -42,7 +42,7 @@ ms.locfileid: "44224711"
 
 メールが対象になると考えられる場合は、メールボックスへのユーザーアクセスを一時的に無効にする必要があります。 Exchange ActiveSync は、モバイルデバイスがデバイスと Exchange Online メールボックスの間でデータを同期するために使用されます。
 
-メールボックスの ActiveSync を無効にする方法については、「 [Exchange Online でユーザーの Exchange activesync を無効にする方法](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)」を参照してください。
+メールボックスの ActiveSync を無効にする方法については、「 [Exchange Online でユーザーの Exchange activesync を無効にする方法](https://support.microsoft.com/help/2795303)」を参照してください。
 
 メールボックスへの他の種類のアクセスを無効にするには、以下を参照してください。
 
@@ -50,7 +50,7 @@ ms.locfileid: "44224711"
 
 - [ユーザーの POP3 または IMAP4 アクセスを有効または無効にする](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-OneDrive 同期を一時停止すると、潜在的に感染しているデバイスによるクラウドデータの更新を防ぐことができます。 詳細については、「 [OneDrive で同期を一時停止および再開する方法](https://support.office.com/article/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)」を参照してください。
+OneDrive 同期を一時停止すると、潜在的に感染しているデバイスによるクラウドデータの更新を防ぐことができます。 詳細については、「 [OneDrive で同期を一時停止および再開する方法](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)」を参照してください。
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>手順 3: 影響を受けたデバイスからマルウェアを削除する
 
@@ -60,11 +60,11 @@ OneDrive 同期を一時停止すると、潜在的に感染しているデバ�
 
 また、ランサムウェアまたはマルウェアを削除するための代替手段として、悪意のある[ソフトウェアの削除ツール (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905)もあります。
 
-これらのオプションが機能しない場合は、[マルウェアの検出と削除に関する問題のトラブルシューティング](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)を[Windows Defender オフライン](https://support.microsoft.com/help/17466/windows-defender-offline-help-protect-my-pc)で試みることができます。
+これらのオプションが機能しない場合は、[マルウェアの検出と削除に関する問題のトラブルシューティング](https://support.microsoft.com/help/4466982)を[Windows Defender オフライン](https://support.microsoft.com/help/17466)で試みることができます。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>手順 4: クリーニングされたコンピューターまたはデバイス上のファイルを復元する
 
-前の手順を完了して、使用している環境からランサムウェアのペイロードを削除します (これにより、ランサムウェアによるファイルの暗号化や削除ができなくなります)。 windows 7 では、windows 8.1 10 の[ファイル履歴](https://support.microsoft.com/help/17128/windows-8-file-history)を使用して、ローカルのファイルとフォルダーの回復を試みることができます。
+前の手順を完了して、使用している環境からランサムウェアのペイロードを削除します (これにより、ランサムウェアによるファイルの暗号化や削除ができなくなります)。 windows 7 では、windows 8.1 10 の[ファイル履歴](https://support.microsoft.com/help/17128)を使用して、ローカルのファイルとフォルダーの回復を試みることができます。
 
 **注**:
 
@@ -74,7 +74,7 @@ OneDrive 同期を一時停止すると、潜在的に感染しているデバ�
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>手順 5: OneDrive for Business のファイルを復元する
 
-OneDrive for business のファイルの復元を使用すると、OneDrive 全体を過去30日以内に過去の時点に復元することができます。 詳細については、「 [OneDrive を復元する](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15)」を参照してください。
+OneDrive for business のファイルの復元を使用すると、OneDrive 全体を過去30日以内に過去の時点に復元することができます。 詳細については、「 [OneDrive を復元する](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)」を参照してください。
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除済みメールを復元する
 
@@ -82,7 +82,7 @@ OneDrive for business のファイルの復元を使用すると、OneDrive 全�
 
 - [ユーザーのメールボックス内の削除済みメッセージを復元する](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Windows 版 Outlook で削除済みのアイテムを復元する](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
+- [Windows 版 Outlook で削除済みのアイテムを復元する](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>手順 7: Exchange ActiveSync と OneDrive の同期を再度有効にする
 
@@ -132,11 +132,11 @@ OneDrive for business のファイルの復元を使用すると、OneDrive 全�
 
 - [Norsk Hydro は、透過可能なランサム攻撃に応答します。](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [OneDrive でのファイルのランサムウェア検出と復元](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [OneDrive でのファイルのランサムウェア検出と復元](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Microsoft セキュリティインテリジェンスレポート](https://www.microsoft.com/securityinsights/)
 
-- [Office ファイルのマクロを有効または無効にする](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [Office ファイルのマクロを有効または無効にする](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
 - [EOP および Office 365 の ATP セキュリティに関する推奨設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
 

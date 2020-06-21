@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Office 365 のサインアッププロセスを開始する前に把握しておくべき情報について説明します。 '
-ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579171"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780519"
 ---
 # <a name="how-to-sign-up---admin-help"></a>管理者向けのサインアップヘルプ
 
@@ -70,7 +70,7 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての[製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。
   
@@ -115,9 +115,9 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 - **サブスクリプションの住所と連絡先の情報:**
 
-  - サービスを利用する **国**。この情報は、サインアップ手続き中であっても後で変更することは **できません** 。変更する場合は、サインアップ ウィザードを再起動してください。
+  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > ここで入力する電子メールアドレスは、Microsoft 365 のメールアドレス (下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
@@ -137,4 +137,4 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 ## <a name="see-also"></a>関連項目
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

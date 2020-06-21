@@ -17,16 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の ATP の安全な添付ファイルを使用して、組織を悪意のあるファイルから保護する方法について説明します。
-ms.openlocfilehash: a0d5923ccac525b23aa2ef6b45936524f0a7b483
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f4f355d4def1f108a72854c3796e0e9373cb5ef1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036658"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819402"
 ---
 # <a name="how-atp-safe-attachments-works"></a>ATP の安全な添付ファイル機能のしくみ
-
-## <a name="how-it-works"></a>しくみ
 
 ATP の安全な添付ファイル機能は、組織内のユーザーの電子メールの添付ファイルを確認します。 ATP の安全な添付ファイルポリシーが設定されている場合に、そのポリシーの対象となるユーザーが Office 365 で電子メールを表示すると、そのメール添付ファイルがチェックされ、ATP の安全な添付ファイルのポリシーに基づいて適切な操作が実行されます。 ポリシーの定義によっては、悪意のあるファイルが送信されたことを知らなくても、ユーザーは作業を続けることができます。
   

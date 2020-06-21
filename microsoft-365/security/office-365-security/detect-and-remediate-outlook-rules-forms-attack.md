@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613386"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811052"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
@@ -95,13 +95,13 @@ ms.locfileid: "44613386"
 
 - Outlook クライアントを使用して、各メールボックスのルールとフォームを手動でチェックします。 この方法は完全ですが、多くのユーザーが確認できるようにする場合には、メールボックスユーザーを一度にチェックするだけで十分に時間がかかる場合があります。 また、チェックを実行しているコンピューターが侵害されてしまう可能性があります。
 
-- [Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell スクリプトを使用して、テナント内のすべてのユーザーのメール転送ルールおよびカスタムフォームを自動的にダンプします。 これは、最もオーバーヘッドが少ない最も高速で最も安全な方法です。
+- [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell スクリプトを使用して、テナント内のすべてのユーザーのメール転送ルールおよびカスタムフォームを自動的にダンプします。 これは、最もオーバーヘッドが少ない最も高速で最も安全な方法です。
 
 ### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>Outlook クライアントを使用してルールが攻撃されたことを確認する
 
 1. ユーザーとしてユーザーの Outlook クライアントを開きます。 ユーザーは、自分のメールボックスのルールを調べるためにヘルプを必要とする場合があります。
 
-2. Outlook でルールインターフェイスを開く方法の手順については、「[ルールを使用してメールメッセージを管理](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)する」の記事を参照してください。
+2. Outlook でルールインターフェイスを開く方法の手順については、「[ルールを使用してメールメッセージを管理](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)する」の記事を参照してください。
 
 3. ユーザーが作成しなかったルール、または不審な名前のルールがないかどうかを確認します。
 
@@ -113,7 +113,7 @@ ms.locfileid: "44613386"
 
 1. ユーザーとしてユーザーの Outlook クライアントを開きます。
 
-2. の手順に従い、ユーザーのバージョンの Outlook の [[開発] タブを表示](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)します。
+2. の手順に従い、ユーザーのバージョンの Outlook の [[開発] タブを表示](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45)します。
 
 3. Outlook で [現在表示されている開発] タブを開き、[**フォームのデザイン**] をクリックします。
 
@@ -125,7 +125,7 @@ ms.locfileid: "44613386"
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>PowerShell を使用してルールとフォームの攻撃を確認する手順
 
-ルールまたはユーザー設定フォームの攻撃を確認する最も簡単な方法は、 [Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell スクリプトを実行することです。 このスクリプトは、テナント内のすべてのメールボックスに接続し、すべてのルールとフォームを2つの .csv ファイルにダンプします。
+ルールまたはユーザー設定フォームの攻撃を確認する最も簡単な方法は、 [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell スクリプトを実行することです。 このスクリプトは、テナント内のすべてのメールボックスに接続し、すべてのルールとフォームを2つの .csv ファイルにダンプします。
 
 #### <a name="pre-requisites"></a>前提条件
 
@@ -133,11 +133,11 @@ ms.locfileid: "44613386"
 
 1. スクリプトを実行するコンピューターに、ローカル管理者権限を使用してサインインします。
 
-2. Get-AllTenantRulesAndForms スクリプトを GitHub から、実行するフォルダーにダウンロードまたはコピーします。 このスクリプトは、2つの日付のスタンプ付きファイルをこのフォルダー、MailboxFormsExport-yyyy-mm-dd、および MailboxRulesExport-yyyy-mm-dd に作成します。
+2. Get-AllTenantRulesAndForms.ps1 スクリプトを GitHub から、実行するフォルダーにダウンロードするか、またはコピーします。 このスクリプトは、2つの日付のスタンプ付きファイルをこのフォルダー、MailboxFormsExport-yyyy-mm-dd.csv、MailboxRulesExport-yyyy-mm-dd.csv に作成します。
 
 3. 管理者として PowerShell インスタンスを開き、スクリプトを保存したフォルダーを開きます。
 
-4. 次のように、この PowerShell コマンドラインを実行します。 `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
+4. 次のように、この PowerShell コマンドラインを実行 `.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>出力の解釈
 
@@ -159,7 +159,7 @@ ms.locfileid: "44613386"
 
 1. ユーザーが Outlook で使用したすべてのデバイスを特定します。 これらはすべて、潜在的なマルウェアを駆除する必要があります。 すべてのデバイスがクリーニングされるまで、ユーザーはサインオンして電子メールを使用できません。
 
-2. 「各デバイスの[ルールを削除する](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f)」の手順に従います。
+2. 「各デバイスの[ルールを削除する](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f)」の手順に従います。
 
 3. 他のマルウェアが存在することが不明な場合は、デバイス上のすべてのソフトウェアを書式設定して再インストールすることができます。 モバイルデバイスでは、製造元の手順に従って、デバイスを出荷時イメージにリセットできます。
 
@@ -177,7 +177,7 @@ ms.locfileid: "44613386"
 
 2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除する場合は、コマンドレットの[削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)を使用します。
 
-3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx)します。
+3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)します。
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online のメールボックスの手順
 
@@ -185,7 +185,7 @@ ms.locfileid: "44613386"
 
 2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除するには、 [[受信トレイルールの削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)] コマンドレットを使用します。
 
-3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx)します。
+3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)します。
 
 ## <a name="how-to-minimize-future-attacks"></a>今後の攻撃を最小限に抑える方法
 
@@ -207,7 +207,7 @@ ms.locfileid: "44613386"
 
 ### <a name="second-keep-your-outlook-clients-current"></a>2番目: Outlook クライアントを最新の状態に保ちます
 
-Outlook 2013 の完全に更新されたバージョンとパッチが適用されたバージョン、および2016は、既定で [アプリケーションを開始する] ルール/フォームアクションを無効にします。 これにより、攻撃者がアカウントに違反したとしても、ルールおよびフォームのアクションはブロックされます。 最新の更新プログラムおよびセキュリティ更新プログラムは、「 [Office の更新プログラムをインストール](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)する」の手順に従ってインストールできます。
+Outlook 2013 の完全に更新されたバージョンとパッチが適用されたバージョン、および2016は、既定で [アプリケーションを開始する] ルール/フォームアクションを無効にします。 これにより、攻撃者がアカウントに違反したとしても、ルールおよびフォームのアクションはブロックされます。 最新の更新プログラムおよびセキュリティ更新プログラムは、「 [Office の更新プログラムをインストール](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)する」の手順に従ってインストールできます。
 
 Outlook 2013 および2016クライアントのパッチバージョンは次のとおりです。
 
@@ -225,7 +225,7 @@ Outlook 2013 および2016クライアントのパッチバージョンは次の
 
 なお、パッチと更新プログラムがインストールされている場合でも、攻撃者がローカルコンピューターの構成を変更して "アプリケーションを起動する" 動作を再度有効にすることができます。 [高度なグループポリシー管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)を使用して、クライアントのローカルコンピューターポリシーを監視し、適用することができます。
 
-[64 ビットバージョンの Windows を使用してシステムレジストリを表示する方法](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)についての情報を使用して、"Start Application" がレジストリ内の上書きによって再度有効になっているかどうかを確認できます。 次のサブキーをチェックします。
+[64 ビットバージョンの Windows を使用してシステムレジストリを表示する方法](https://support.microsoft.com/help/305097)についての情報を使用して、"Start Application" がレジストリ内の上書きによって再度有効になっているかどうかを確認できます。 次のサブキーをチェックします。
 
 - **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
@@ -241,9 +241,9 @@ Microsoft 365 サブスクリプションには、データとユーザーを保
 
 - 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 
-- 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
+- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
 
-- 90 日以降。最初の 90 日間の作業で保護が強化されます。
+- Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## <a name="see-also"></a>関連項目:
 

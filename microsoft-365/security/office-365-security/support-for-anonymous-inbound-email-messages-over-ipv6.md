@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 管理者は、Exchange Online および Exchange Online Protection の IPv6 ソースからの匿名受信電子メールのサポートを構成する方法について説明します。
-ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631219"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818711"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Microsoft 365 での IPv6 を経由した匿名受信電子メールのサポートの追加
 
@@ -48,6 +50,6 @@ Exchange online メールボックスを使用しない exchange online メー�
 
   > 550 5.2.1 サービスを使用できません。 [contoso.com] は IPv6 経由の電子メールを受け入れません。
 
-## <a name="for-more-information"></a>関連情報
+## <a name="related-topics"></a>関連項目
 
 [DKIM 署名付きメッセージの検証をサポートする](support-for-validation-of-dkim-signed-messages.md)

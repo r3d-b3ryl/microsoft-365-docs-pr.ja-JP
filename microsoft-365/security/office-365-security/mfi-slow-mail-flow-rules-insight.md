@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
+ms.custom:
+- seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについて理解できます。
-ms.openlocfilehash: d5317f2d45aacb91e51131bc5b8aa6e67d3ae4c7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088360"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819366"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>低速メール フローのルールのインサイト
 
@@ -37,6 +39,6 @@ ms.locfileid: "42088360"
 
 ![メールフローダッシュボードの [低速メールフロールールの詳細を表示する] をクリックした後のフライアウトウィンドウ](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="related-topics"></a>関連項目
 
 メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

@@ -17,12 +17,15 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
-ms.translationtype: HT
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173394"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818569"
 ---
 # <a name="microsoft-secure-score-previous-iteration"></a>Microsoft セキュア スコア (前のイテレーション)
 
@@ -43,7 +46,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 さらに、[Microsoft Graph API](https://www.microsoft.com/security/partnerships/graph-security-api) を介して、推奨事項やスコアにアクセスできます。 「[Secure Score リソースの種類](https://go.microsoft.com/fwlink/?linkid=2092996)」を参照してください。
 
-## <a name="how-it-works"></a>動作のしくみ
+## <a name="how-your-secure-score-is-calculated"></a>セキュリティで保護されたスコアの計算方法
 
 推奨されるセキュリティ機能を構成したり、セキュリティ関連のタスク (レポートの表示など) を実行したり、サードパーティ製のアプリケーションやソフトウェアを使用して改善のための処置に対応したりすると、ポイントが与えられます。 改善のための処置の中には、完全に完了したときにのみポイントが与えられるものがあります。また、一部のデバイスやユーザーにより完了された場合に、ポイントの一部が加えられるものもあります。
 

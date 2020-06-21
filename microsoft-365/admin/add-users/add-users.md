@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: ユーザーを Microsoft 365 に一度に1つずつ、または複数のユーザーを CSV ファイルから同時に追加する方法について説明します。
-ms.openlocfilehash: af4fead3112a678b1ee7eacb087dddc40ed43d36
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: af160b78317171bec98dcfa3d5877b53560f75a2
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432125"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780663"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>ユーザーを個別にまたは一括して追加する
 
@@ -80,11 +80,11 @@ ms.locfileid: "44432125"
     
 - [**パスワード**] 自動生成されたパスワードを使用するか、展開してユーザーに強力なパスワードを指定します。 
     
-    ユーザーは、90 日後にパスワードを変更する必要があります。または、[**ユーザーが初回サインイン時にパスワードを変更する**] を選ぶこともできます。
+    They'll need to change their password after 90 days. Or you can choose to **Make this user change their password when they first sign in**.
     
 - [**役割**] このユーザーに管理者権限を割り当てる場合に展開します。 
     
-- [**製品ライセンス**] このセクションを展開し、適切なライセンスを選択します。利用可能なライセンスを持っていない場合でも、ユーザーを追加したり、追加のライセンスを購入したりすることができます。 
+- **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses. 
 
 ::: moniker-end
 
@@ -105,11 +105,11 @@ ms.locfileid: "44432125"
     
 - [**パスワード**] 自動生成されたパスワードを使用するか、展開してユーザーに強力なパスワードを指定します。 
     
-    ユーザーは、90 日後にパスワードを変更する必要があります。または、[**ユーザーが初回サインイン時にパスワードを変更する**] を選ぶこともできます。
+    They'll need to change their password after 90 days. Or you can choose to **Make this user change their password when they first sign in**.
     
 - [**役割**] このユーザーに管理者権限を割り当てる場合に展開します。 
     
-- [**製品ライセンス**] このセクションを展開し、適切なライセンスを選択します。利用可能なライセンスを持っていない場合でも、ユーザーを追加したり、追加のライセンスを購入したりすることができます。 
+- **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses. 
 
 ::: moniker-end 
   
@@ -125,7 +125,7 @@ ms.locfileid: "44432125"
 ## <a name="next-steps"></a>次の手順
 
 
-            [PC や Mac への Office のインストール](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)および[モバイルへの Office アプリのインストール](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)を行う新しいユーザーと[Office 365 向け従業員のクイック スタート](https://support.office.com/article/b9700090-ce64-4046-ab92-ce8488a7bc0f.aspx)を共有してください。
+            [PC や Mac への Office のインストール](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)および[モバイルへの Office アプリのインストール](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)を行う新しいユーザーと[Office 365 向け従業員のクイック スタート](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)を共有してください。
   
 ## <a name="need-help"></a>ヘルプが必要な場合
 
@@ -145,6 +145,8 @@ ms.locfileid: "44432125"
 - **Exchange Server から移行する場合** [複数のメール アカウントを Office 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)。 カットオーバー、ステージング、またはハイブリッド Exchange のいずれかの方法を使用して、複数のメールボックスを Microsoft 365 に移行する場合は、移行の一部としてユーザーを自動的に追加します。 移行では、ユーザー アカウントのみが追加されます。 ユーザーがメールとその他の Office アプリを使用するには、そのユーザーにライセンスを割り当てる必要があります。
 
 ## <a name="related-articles"></a>関連記事
+
+[ユーザーにライセンスを割り当てる](../manage/assign-licenses-to-users.md)
 
 [Microsoft 365 に新しい従業員を追加する](add-new-employee.md)
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Microsoft 365 Admin アプリを入手して、携帯電話またはタブレットからオンライン組織を管理する方法について説明します。
-ms.openlocfilehash: e0aa16bd01e81e89e80db51c6569009e177ed687
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386951"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780543"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 admin モバイルアプリについて
 
@@ -58,7 +58,7 @@ ms.locfileid: "44386951"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
  
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
@@ -105,4 +105,4 @@ ms.locfileid: "44386951"
   
 ## <a name="see-also"></a>関連項目
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

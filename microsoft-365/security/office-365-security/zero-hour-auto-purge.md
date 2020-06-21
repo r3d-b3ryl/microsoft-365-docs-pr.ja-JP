@@ -21,16 +21,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、ゼロ時間自動削除 (ZAP) を使用して、Exchange Online メールボックス内の配信されたメッセージを迷惑メールフォルダーに移動する方法、またはスパムまたはフィッシングとして検出された検疫について調べることができます。
-ms.openlocfilehash: 643063139f5d65b0271fd14ee5a2d1ca1f42ad1a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 612ef45194fbf70ef89eee0f455b2d4d8781247f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208442"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819426"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online でのゼロ時間自動削除 (ZAP)
 
-## <a name="overview"></a>概要
+## <a name="basic-features-of-zap"></a>ZAP の基本的な機能
 
 Exchange Online のメールボックスを使用する Microsoft 365 組織では、ゼロ時間自動削除 (ZAP) は電子メール保護機能の1つであり、Exchange Online メールボックスに既に配信されている悪意のあるフィッシング、スパム、またはマルウェアメッセージを neutralizes が検出し、それを検出します。
 
@@ -80,7 +80,7 @@ ZAP アクションはユーザーにとってシームレスです。メッセ�
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Office 365 Advanced Threat Protection の ZAP に関する考慮事項 (Office 365 ATP)
 
-ZAP は、[動的配信](dynamic-delivery-and-previewing.md)スキャンのプロセス内のメッセージを検疫しません。または、マルウェアフィルターによって添付ファイルが既に**マルウェアアラートテキスト .txt**ファイルに置き換えられています。 これらの種類のメッセージに対してフィッシングまたはスパムのシグナルを受信し、スパム対策ポリシーのフィルター verdict がメッセージに対して何らかのアクションを実行するように設定されている場合 ([迷惑メールに移動] に移動します)、ZAP は既定で [迷惑メールに移行] アクションになります。
+ZAP は、[動的配信](dynamic-delivery-and-previewing.md)スキャンのプロセス内のメッセージを検疫しません。または、マルウェアフィルターによって添付ファイルが**マルウェアアラート Text.txt**ファイルに置き換えられています。 これらの種類のメッセージに対してフィッシングまたはスパムのシグナルを受信し、スパム対策ポリシーのフィルター verdict がメッセージに対して何らかのアクションを実行するように設定されている場合 ([迷惑メールに移動] に移動します)、ZAP は既定で [迷惑メールに移行] アクションになります。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動したかどうかを確認する方法
 
@@ -103,10 +103,6 @@ ZAP は、このトピックの前半で説明したように、スパム対策�
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>メッセージが別のフォルダー (たとえば、受信トレイルールなど) に移動した場合はどうなりますか。
 
 ZAP は、メッセージが削除されていない場合、または同じまたはより強力なアクションがまだ適用されていない限り、引き続き機能します。 たとえば、フィッシングポリシーが [検疫] に設定されており、ユーザーまたは管理者が既に電子メールを junked している場合、検疫はファイルを検疫する処理を実行します。
-
-### <a name="does-zap-change-the-message-header"></a>メッセージヘッダーを ZAP に変更しますか?
-
-ZAP アクションでは、メッセージヘッダーに対して変更は行われません。
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP がメールボックスを保留にする方法
 

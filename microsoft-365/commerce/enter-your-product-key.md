@@ -25,19 +25,19 @@ description: 小売店で購入した Microsoft 365 Business Standard プロダ�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de0a45fe35a53d166eb8d587a6410f91b69e3288
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402168"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818581"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクトキーを入力する
 
 小売り店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証に役立てることができます。 
   
  **他に何か必要ですか?**
- **Microsoft 365 ファミリまたは microsoft 365 Personal のヘルプについては**、「 [Office でプロダクトキーを使用する](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
+ **Microsoft 365 ファミリまたは microsoft 365 Personal のヘルプについては**、「 [Office でプロダクトキーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
  **ボリュームライセンスのお客様の場合** Microsoft [Open License プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を使用して microsoft 365 for business を購入した場合は、「 [microsoft open から購入したプロダクトキーを入力](purchases-from-microsoft-open.md)してください」という記事を参照してください。
   
 ## <a name="activate-a-new-subscription"></a>新しいサブスクリプションのライセンス認証

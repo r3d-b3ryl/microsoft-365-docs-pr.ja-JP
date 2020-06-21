@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: ATP の安全な添付ファイルのポリシーを設定する場合は、[動的配信] を選択してメッセージの遅延を回避し、スキャンされた添付ファイルをプレビューできるようにします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034794"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819354"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>ATP の安全な添付ファイルを使用した動的配信とプレビュー
 
-## <a name="overview"></a>概要
+## <a name="basic-features-of-dynamic-delivery"></a>動的配信の基本的な機能
 
 動的配信は、 [ATP の安全な添付ファイル](atp-safe-attachments.md)に対して選択可能なオプションです。 この記事では、 [Office 365 の ATP の安全な添付ファイル](atp-safe-attachments.md)の動的配信および添付ファイルのプレビュー機能について説明します。
 
@@ -80,7 +80,7 @@ ATP の安全な添付ファイルのスキャンは、Microsoft 365 データ�
 
 - エラー状態にあるユーザーのメールボックス検索フォルダー
 
-- Exchange Online 管理者が Exclaimer を有効にしている環境。 この解決方法については、「 [ATP Dynamic Delivery And Exclaimer の使用時に添付ファイル付きメッセージが配信されない](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)」を参照してください。
+- Exchange Online 管理者が Exclaimer を有効にしている環境。 この解決方法については、「 [ATP Dynamic Delivery And Exclaimer の使用時に添付ファイル付きメッセージが配信されない](https://support.microsoft.com/help/4014438)」を参照してください。
 
 - [セキュリティで保護された、または汎用インターネットメール内線 (S/MIME)](s-mime-for-message-signing-and-encryption.md)で暗号化されたメッセージ
 

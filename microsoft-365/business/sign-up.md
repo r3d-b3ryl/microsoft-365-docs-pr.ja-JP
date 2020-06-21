@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium に含まれる内容について説明し、「Microsoft 365 Business Premium にサインアップする」のステップバイステップのガイダンスを取得します。
-ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401560"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785674"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium へのサインアップ
 
@@ -54,7 +54,7 @@ Microsoft 365 Business Premium を入手するには、次の3つの方法があ
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 お客様のビジネス向けに Microsoft 365 にサインアップして購入するには、次の手順を実行します。
 
@@ -62,7 +62,7 @@ Microsoft 365 Business Premium を入手するには、次の3つの方法があ
 2. 次のページで、月間費用を調べ、ページを下にスクロールして、Microsoft 365 に含まれているものに関する情報を確認します。 [Microsoft 365 Business Premium] の下で、[**今すぐ購入**] を選択します。
 3. [ **Microsoft 365 Business Premium をご利用いただきありがとうござい**ます] ページで、開始するための情報を入力します。
 4. **手順 1**で、既に使用している電子メールアドレスを入力します。 これは、現在の勤務先の電子メールアドレス、またはセットアップ中に Microsoft が通信するために使用するすべてのアドレスになることができます。 また、請求書と更新に関する情報を送信する住所でもあります。 次に、[**アカウントの設定**] を選択します。
-5. **手順 2**で、名前、勤務先電話番号、会社名、場所を入力します。 お客様の国または地域では、Microsoft から受け取るサービスを正確に決定しており、この手順を完了した後に変更することはできません。 [**次へ**] を選択します。
+5. **手順 2**で、名前、勤務先電話番号、会社名、場所を入力します。 お客様の国または地域では、Microsoft から受け取るサービスを正確に決定しており、この手順を完了した後に変更することはできません。 **[次へ]** を選択します。
     > [!NOTE]
     > 会社名は管理センターに表示されます。ここでは、Microsoft 365 ユーザー、ライセンスなどを管理します。 また、すべての内部 (SharePoint) サイトの Url にも含めることができます。
 6. **手順 3**:
@@ -97,4 +97,4 @@ Microsoft 365 Business Premium を入手するには、次の3つの方法があ
 
 ## <a name="see-also"></a>関連項目
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
