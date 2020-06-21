@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、安全なリンクを使用して組織をフィッシングやその他の攻撃から保護する方法について説明します。
-ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616768"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754750"
 ---
 # <a name="atp-safe-links"></a>ATP の安全なリンク機能
 
@@ -47,7 +47,7 @@ ATP の安全なリンクポリシーが確立されると、全体管理者、�
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>ATP の安全なリンク保護を取得する方法
 
-**最初に、サブスクリプションに[Office 365 Advanced Threat Protection](office-365-atp.md)が含まれていることを確認し**てください。プラン1またはプラン2。 Office 365 ATP は、サブスクリプションに含まれています ( [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 教育 A5 など)。Office 365 ATP を含まない Microsoft 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、以下を参照してください。
+**最初に、サブスクリプションに[Office 365 Advanced Threat Protection](office-365-atp.md)が含まれていることを確認し**てください。プラン1またはプラン2。 Office 365 ATP は、サブスクリプションに含まれています ( [microsoft 365 Enterprise e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 教育 A5 など)。Office 365 ATP を含まない Microsoft 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、以下を参照してください。 
 
 - [Office 365 Advanced Threat Protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)
 
@@ -59,7 +59,7 @@ ATP の安全なリンクポリシーが確立されると、全体管理者、�
 
 - Microsoft 365 クライアントアプリは先進認証を使用するように構成されています (これは、Office ドキュメントでの ATP の安全なリンク保護のためです)。 (「 [Office 2016 のモダン認証」を](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)参照してください)。
 
-- ユーザーが職場または学校のアカウントを使用してサインインしている。 (「 [Office または office 365 へのサインイン」を](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)参照してください)。
+- ユーザーが職場または学校のアカウントを使用してサインインしている。 (「 [Office へのサインイン」を](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)参照してください)。
 
 - 組織の電子メールは、Exchange Online Protection を通過します。
 
@@ -81,7 +81,7 @@ ATP 安全なリンクポリシーが確立されると、組織のセキュリ�
 
 次の表では、ATP の安全なリンク保護が適用される可能性がある、または導入されていない可能性があるシナリオの例を示します。 (これらすべての場合において、組織に Office 365 Enterprise E5 があると想定しています)。
 
-|**シナリオ例**|**この場合、ATP の安全なリンク保護が適用されますか。**|
+|シナリオ例|この場合、ATP の安全なリンク保護が適用されますか。|
 |:-----|:-----|
 |田中は、電子メールおよび Office ドキュメント内の Url を対象とする、ATP の安全なリンクポリシーを持つグループのメンバーです。 田中は、他のユーザーが送信した PowerPoint プレゼンテーションを開き、プレゼンテーション内の URL をクリックします。|はい。 定義されている ATP の安全なリンクポリシーは、田中のグループ、田中の電子メール、および Word、Excel、PowerPoint、または Visio ドキュメントに適用されるため、田中がサインインしており、Microsoft 365 Apps for enterprise for Windows、iOS、Android デバイスで使用している場合に限ります。|
 |Chris の組織では、グローバルまたはセキュリティ管理者がまだ ATP の安全なリンクポリシーを定義していません。 Chris は、悪意のある web サイトへの URL を含む電子メールを受信します。 Chris は、URL が悪意があることを認識しないので、リンクをクリックします。|いいえ。 組織内のすべてのユーザーの Url を対象とする既定のポリシーは、保護を確立するために定義する必要があります。|

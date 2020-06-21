@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Microsoft 365 メッセージセンターの概要と、変更管理におけるその役割について説明します。
-ms.openlocfilehash: c243bb551d98cb0ea3c177cf098cccd035243a06
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44694961"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780087"
 ---
 # <a name="message-center"></a>メッセージ センター
 
@@ -161,10 +161,10 @@ ms.locfileid: "44694961"
 
 #### <a name="display-messages-in-your-preferred-language"></a>任意の言語でメッセージを表示する
   
-機械翻訳を利用し、ユーザーの優先言語でメッセージを自動表示しています。言語の設定方法については、「[メッセージ センターの投稿の言語の翻訳](language-translation-for-message-center-posts.md)」を参照してください。
+We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more information on how to set your language.
   
 > [!NOTE]
-> 週刊ダイジェストやメールで送信されるその他の投稿は英語でのみ提供されます。受信後、[Outlook 用翻訳ツール](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx)を利用してメッセージを自分の優先言語で読むことができます。 
+> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language. 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>メッセージセンターにアクセスできない管理者の役割
 

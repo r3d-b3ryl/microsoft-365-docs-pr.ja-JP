@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: 'Microsoft 365 for business のサブスクリプションについて、請求に関する主な質問に対する回答を確認できます。 '
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400763"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741691"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>Microsoft 365 for business の請求に関する主な質問
 
@@ -121,7 +121,7 @@ ms.locfileid: "44400763"
 
 はい。 請求明細書を電子メールの添付ファイルとして取得するには、次の手順を使用します。
   
-1. Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">課金通知</a>] ページに移動するか、 **[課金**の請求書の通知] を選択し \> **Billing notifications**ます。
+1. Microsoft 365 管理センターで **、課金の** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">請求の通知</a>ページに移動します。
 
 2. **[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。
 
@@ -200,9 +200,10 @@ ms.locfileid: "44400763"
 
 ::: moniker range="o365-worldwide"
 
-1. [請求<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">書] ページで</a>、請求日の範囲を選択します。
-  
-2. 請求書の PDF コピーを印刷または保存するには、[**請求書の pdf をダウンロード**] を選択して、pdf を印刷します。
+1. 管理センターで、**請求書** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 支払いページ</a>ページに移動します。
+2. [**請求書**] タブで、請求日の範囲を選択します。
+3. 表示する請求書を選択します。
+4. 請求書の PDF コピーを印刷または保存するには、[ **pdf のダウンロード**] を選択し、pdf を印刷します。
 
 詳細については、「 [bill または請求書を表示](view-your-bill-or-invoice.md)する」を参照してください。
 

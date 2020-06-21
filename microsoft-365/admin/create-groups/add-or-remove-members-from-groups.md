@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Microsoft 365 管理センターで、グループにメンバーを追加したり、グループからメンバーを削除したり、グループ所有者の状態を管理したりする方法について説明します。
-ms.openlocfilehash: 7a223d6387ca7d261d959c6803a484bc29cdd4b1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431595"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780483"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する
 
@@ -37,10 +37,10 @@ ms.locfileid: "44431595"
 
 ::: moniker-end
 
-Microsoft 365 では、グループメンバーは通常、自分のグループを作成し、参加するグループに自らを追加するか、グループ所有者に招待します。 グループの所有権が変更された場合、またはメンバーを追加または削除することを決定した場合は、管理者としてその変更を行うこともできます。 これらの変更を行うことができるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Microsoft 365 グループとは](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+Microsoft 365 では、グループメンバーは通常、自分のグループを作成し、参加するグループに自らを追加するか、グループ所有者に招待します。 グループの所有権が変更された場合、またはメンバーを追加または削除することを決定した場合は、管理者としてその変更を行うこともできます。 これらの変更を行うことができるのは、グローバル管理者、Exchange 管理者、グループ管理者、またはユーザー管理者のみです。 [Microsoft 365 グループとは](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> 管理者でない場合は、 [Outlook を使用してメンバーを追加または削除](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)できます。
+> 管理者でない場合は、 [Outlook を使用してメンバーを追加または削除](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)できます。
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>管理センターでグループにメンバーを追加する
 
@@ -54,7 +54,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 4. 追加するメンバーの名前を検索するか選択します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 4. 追加するメンバーの名前を検索するか選択します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -82,7 +82,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 4. 追加するメンバーの名前を検索するか選択します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 4. 追加するグループの名前を検索または選択します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -179,7 +179,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 ## <a name="manage-group-owner-status"></a>グループの所有者の状態を管理する
 
-既定では、グループを作成したユーザーが、グループの所有者になります。多くの場合、グループには、バックアップ サポートやその他の理由のために複数の所有者がいます。メンバーを所有者ステータスに昇格させたり、所有者をメンバー ステータスに降格させたりすることができます。
+By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>管理センターでメンバーを所有者の状態に昇格させる
 
@@ -243,7 +243,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 4. 所有者の名前の横にある [X] を選択します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -257,7 +257,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 4. 所有者の名前の横にある [X] を選択します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -271,7 +271,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 4. 所有者の名前の横にある [X] を選択します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end
 
@@ -281,13 +281,13 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 - 数百から数千のユーザーをグループに追加するには、 [UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191)を使用します。
 
-- [孤立グループに新しい所有者を割り当てる](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+- [孤立グループに新しい所有者を割り当てる](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 ## <a name="articles-about-managing-groups"></a>グループの管理に関する記事
 
 - [Outlook で配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-- [Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+- [Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Microsoft 365 グループでゲストアクセスを管理する](manage-guest-access-in-groups.md)
 

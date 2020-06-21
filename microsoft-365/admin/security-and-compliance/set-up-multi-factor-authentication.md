@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織で多要素認証をセットアップする方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 9218e81aaf016c379c6ba8c7ae846a2a2132cf35
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515809"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779943"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
@@ -65,7 +65,7 @@ ms.locfileid: "44515809"
 
   ユーザーは、MFA 登録時に追加の確認方法を選択します。
 
-## <a name="step-2-test-mfa-on-your-pilot-users"></a>手順 2.  パイロットユーザーの MFA をテストする
+## <a name="step-2-test-mfa-on-your-pilot-users"></a>手順 2。 パイロットユーザーの MFA をテストする
 
 条件付きアクセスポリシーまたはユーザーごとの MFA (推奨されません) を使用している場合は、「ビジネスまたは組織のパイロットユーザー」を選択して、MFA の登録とサインインをテストします。例えば：
 
@@ -80,10 +80,10 @@ ms.locfileid: "44515809"
 従業員が理解していることを確認するために、電子メール通知、hallway ポスター、チーム会議、または公式トレーニングを使用します。
 
 - サインインに MFA が必要な理由
-- [追加の確認方法を登録する方法](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
-- [登録後のサインイン方法](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
-- [その他の検証方法を変更する方法](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
-- [新しいスマートフォンなどの状況を処理する方法](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+- [追加の確認方法を登録する方法](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [登録後のサインイン方法](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [その他の検証方法を変更する方法](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [新しいスマートフォンなどの状況を処理する方法](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
 
 最も重要なのは、従業員が驚いていないように、 ***MFA 要件***を設定する時期を理解しておくことです。
 
@@ -120,6 +120,6 @@ Azure portal で Azure Active Directory (Azure AD) の [**プロパティ**] ウ
 
 従業員が MFA を登録してサインインを開始する際には、IT 専門家、IT 部門、またはヘルプデスクが質問に答えて、問題を迅速に解決できるようにしてください。
 
-MFA のサインインの[トラブルシューティングに](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)ついては、この記事を参照してください。 
+MFA のサインインの[トラブルシューティングに](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)ついては、この記事を参照してください。 
 
 

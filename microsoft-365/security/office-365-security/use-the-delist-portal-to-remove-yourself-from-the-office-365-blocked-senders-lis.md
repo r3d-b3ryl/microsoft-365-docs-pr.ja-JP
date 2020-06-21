@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、リストから除外ポータルを使用して、Microsoft 365 の受信拒否リストから自分自身を削除する方法について説明します。
-ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208539"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739237"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>無効化ポータルを使って、受信拒否リストから自分自身を削除する
 
@@ -43,7 +43,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 1. Web ブラウザーで、[https://sender.office.com](https://sender.office.com) に移動します。
 
-2. ページ上の指示に従います。エラー メッセージを受信したメール アドレス、エラー メッセージで特定されている IP アドレスを使っていることを確認してください。1 回のアクセスにつき、1 つのメール アドレス、1 つの IP アドレスのみ入力できます。
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. [ **保存**] をクリックします。
 
@@ -60,4 +60,4 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
     > [!NOTE]
     > 最大24時間かかる場合があります。制限が削除されるまでに、結果が大幅に異なる場合があります。
 
-IP が blacklisted されないようにするには、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」および「 [EOP での送信スパム保護](outbound-spam-controls.md)」を参照してください。
+IP がブロックされないようにするには、「 [Create safe sender lists IN EOP](create-safe-sender-lists-in-office-365.md) and [Outbound SPAM protection in EOP](outbound-spam-controls.md) 」を参照してください。

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400727"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780423"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -42,7 +42,7 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 - Teams チャネルを訪れます。
 
 > [!IMPORTANT]
-> 有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
+> When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
 
 既定では、有効期限はオフになっていることに注意してください。 管理者は、組織で使用する必要がある場合に、そのユーザーを有効にする必要があります。
 
@@ -51,10 +51,10 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシーを構成および使用できるユーザー
 
-|Role|できること|
+|ロール|できること|
 |---------|---------|
 |グローバル管理者 (Azure、会社の管理者)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシーの設定を作成、読み取り、更新、または削除します。|
-|User|自分が所有する Microsoft 365 グループを更新または[復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
+|ユーザー|自分が所有する Microsoft 365 グループを更新または[復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
@@ -84,6 +84,6 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 
 [アイテム保持ポリシーの概要](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-[孤立グループに新しい所有者を割り当てる](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+[孤立グループに新しい所有者を割り当てる](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [Microsoft 365 グループの有効期限を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

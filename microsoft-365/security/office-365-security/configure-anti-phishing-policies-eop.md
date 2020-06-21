@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、exchange online Protection (EOP) 組織で使用可能なフィッシング対策ポリシーを作成、変更、および削除する方法について説明します。 Exchange Online のメールボックスは使用できません。
-ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b6b95515ad44a65dbdd8a7516d8e6c8b2a386450
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616700"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726777"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でフィッシング対策ポリシーを構成する
 
@@ -73,9 +73,19 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
 
   スタンドアロン EOP PowerShell では、フィッシング対策ポリシーを管理することはできません。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 フィッシング対策ポリシーを追加、変更、および削除するには、**組織の管理**または**セキュリティ管理者**の役割グループのメンバーである必要があります。 フィッシング対策ポリシーに対する読み取り専用アクセスでは、**セキュリティリーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- このトピックの手順を実行する前に、アクセス許可を割り当てる必要があります。
 
-- スタンドアロン EOP でスパム対策ポリシーを作成および変更できるようにするには、テナントに対して_ハイドロ_を必要とするものを実行する必要があります。 たとえば、EAC では、[**アクセス許可**] タブに移動し、既存の役割グループを選択し、 **[編集** ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) て、役割を削除します (最終的に追加します)。 テナントが hydrated されていない場合は、「**組織の設定を更新**する」という名前のダイアログが表示され、進行状況バーが正常に完了する必要があります。 ハイドロの詳細については、「[組織をカスタマイズ](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization)する」を参照してください。このコマンドレットは、スタンドアロンの EOP PowerShell またはセキュリティ & コンプライアンスセンターでは使用できません)。
+  - フィッシング対策ポリシーを追加、変更、および削除するには、次のいずれかの役割グループのメンバーである必要があります。
+
+    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**組織管理**または**セキュリティ管理者**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**組織の管理**または**検疫の管理**。
+
+  - フィッシング対策ポリシーに対する読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
+
+    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**セキュリティリーダ**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**表示のみの組織の管理**。
+
+- スタンドアロン EOP でスパム対策ポリシーを作成および変更できるようにするには、テナントに対して_ハイドロ_を必要とするものを実行する必要があります。 たとえば、Exchange 管理センター (EAC) では、[**アクセス許可**] タブに移動して、既存の役割グループを選択し、 **[編集** ![ ] 編集アイコンをクリックし ](../../media/ITPro-EAC-EditIcon.png) て、役割を削除します (最終的には、追加し直します)。 テナントが hydrated されていない場合は、「**組織の設定を更新**する」という名前のダイアログが表示され、進行状況バーが正常に完了する必要があります。 ハイドロの詳細については、「[組織をカスタマイズ](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization)する」を参照してください。このコマンドレットは、スタンドアロンの EOP PowerShell またはセキュリティ & コンプライアンスセンターでは使用できません)。
 
 - フィッシング対策ポリシーの推奨設定については、「 [EOP default フィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)」を参照してください。
 
@@ -152,7 +162,7 @@ Exchange Online PowerShell では、フィッシングポリシーとフィッ�
    - **名前**
    - **説明**
    - **適用先**
-   - **設定を確認する**
+   - **設定の確認**
 
    完了したら、[任意のページに**保存**] をクリックします。
 
@@ -450,7 +460,7 @@ PowerShell でフィッシングルールの優先度を設定するには、次
 Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-この例では、Marketing Department というルールの優先度を 2 に設定しています。優先度が 2 以下のすべての既存のルールは、優先度が 1 ずつ下がります (優先度番号が 1 ずつ増加します)。
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2

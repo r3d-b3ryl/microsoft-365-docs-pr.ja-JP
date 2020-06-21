@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 管理センターで連絡先を作成し、グローバルアドレス一覧を管理する方法について説明します。
-ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399424"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780015"
 ---
 # <a name="quick-help-contacts"></a>クイック ヘルプ:連絡先
 
@@ -42,7 +42,7 @@ ms.locfileid: "44399424"
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>この連絡先は個人用の連絡先とどのように違いますか?
 
-自分の連絡先は自分で作成した連絡先で、ユーザーは自分で作成し、他の人は表示できません。 管理センターで作成した連絡先は組織で使用する連絡先であるため、個人の連絡先に加えて全員が参照できます。 詳細については、「 [People の概要-Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf)」を参照してください。
+自分の連絡先は自分で作成した連絡先で、ユーザーは自分で作成し、他の人は表示できません。 管理センターで作成した連絡先は組織で使用する連絡先であるため、個人の連絡先に加えて全員が参照できます。 詳細については、「 [People の概要-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf)」を参照してください。
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>管理センターで自分が作成した連絡先に他のユーザーがアクセスするにはどうすればよいですか?
 

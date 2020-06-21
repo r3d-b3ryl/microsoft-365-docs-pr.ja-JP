@@ -1,5 +1,5 @@
 ---
-title: サイトとファイルを外部で共有する
+title: サイトとファイルをゲスト ユーザーと共有する
 f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '組織外のユーザーとサイトやファイルを共有する方法を説明します。 '
-ms.openlocfilehash: 6990b4ffe45af1a591c72e36c1348d1e804e829b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399556"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780051"
 ---
-# <a name="share-sites-and-files-externally"></a>サイトとファイルを外部で共有する
+# <a name="share-sites-and-files-with-guest-users"></a>サイトとファイルをゲスト ユーザーと共有する
 
 ::: moniker range="o365-21vianet"
 
@@ -62,7 +62,7 @@ ms.locfileid: "44399556"
 |ドキュメントを共有するが、認証を要求しない。  <br/> |機密でも極秘でもないドキュメントへのリンクを組織外の人々と共有し、これを表示したり、フィードバックで更新したりできるようにする。 これらのユーザーは、サイト上のコンテンツへのアクセスを必要としない。  <br/> |
    
 > [!IMPORTANT]
-> 外部共有を無効にすると、現在アクセスできる組織外のユーザーはアクセスできなくなります。 後で外部共有を再び有効にすると、これらのユーザーがアクセスできるようになります。 ユーザーが共有コンテンツにアクセスできないようにするには、そのユーザーを[Microsoft 365 グループから削除](/office365/admin/create-groups/add-or-remove-members-from-groups)するか、サイトからアクセス許可を削除するか、または[ファイルまたはフォルダーの共有を停止](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)します。 
+> 外部共有を無効にすると、現在アクセスできる組織外のユーザーはアクセスできなくなります。 後で外部共有を再び有効にすると、これらのユーザーがアクセスできるようになります。 ユーザーが共有コンテンツにアクセスできないようにするには、そのユーザーを[Microsoft 365 グループから削除](/office365/admin/create-groups/add-or-remove-members-from-groups)するか、サイトからアクセス許可を削除するか、または[ファイルまたはフォルダーの共有を停止](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)します。 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>組織レベルで外部共有を有効にする
 

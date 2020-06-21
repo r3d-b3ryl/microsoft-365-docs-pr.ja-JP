@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: メンバーが Microsoft 365 グループとしてメールを送信できるようにする方法、または Microsoft 365 グループの代理としてメールを送信できるようにする方法について説明します。
-ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388139"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780471"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループに代わって送信または送信できるようにする
 
@@ -39,7 +39,7 @@ ms.locfileid: "44388139"
 > 特定のユーザーに対し**て [送信**] または **[代理送信**] を構成できますが、両方を構成することはできません。 両方を構成した場合、既定では**として送信**されます。
 
 > [!TIP]
-> Outlook および Outlook on the Web を使用してグループから電子メールを送信する方法について[は、「Microsoft 365 グループの代理](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)としてメールを送信する」を参照してください。
+> Outlook および Outlook on the Web を使用してグループから電子メールを送信する方法について[は、「Microsoft 365 グループの代理](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)としてメールを送信する」を参照してください。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>メンバーがグループとしてメールを送信できるようにする
 
@@ -79,7 +79,7 @@ ms.locfileid: "44388139"
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 グループの詳細情報](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Microsoft 365 グループの詳細情報](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [[受信者の追加] アクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

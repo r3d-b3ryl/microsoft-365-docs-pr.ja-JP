@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft の cybersecurity チームからの、Microsoft 365 環境を保護するためのセキュリティ機能の実装に関する主な推奨事項。 '
-ms.openlocfilehash: 39d6bc975ecd4b49ae29705c0b52ab154801a8e6
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 968d2c5a2e8954df97fb884da6fab967b7cc806b
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588206"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726457"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ-最初の30日間、90日以降の優先度
 
@@ -64,7 +64,7 @@ ms.locfileid: "44588206"
 |セキュリティ管理|* [セキュリティで保護されたスコア] を確認し、現在のスコアをメモし [https://securescore.office.com](https://securescore.office.com) ます ()。  <br/>  * Office 365 の監査ログをオンにします。 「[監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。  <br/> * [セキュリティを強化するために、Microsoft 365 を構成](tenant-wide-setup-for-increased-security.md)します。  <br/>  * Microsoft 365 セキュリティセンターおよび Cloud App Security のダッシュボードとレポートを定期的に確認します。|
 |脅威保護|[Microsoft 365 を Microsoft Cloud App Security に接続](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)して、異常な動作に関する既定の脅威検出ポリシーを使用した監視を開始します。 異常検出のベースラインを構築するには、7日間かかります。  <br><br/>  管理者アカウントの保護を実装します。  <br/> * 管理者アクティビティに専用の管理者アカウントを使用します。  <br/>  * 管理者アカウントに対して多要素認証 (MFA) を強制します。  <br/>  * 管理者アクティビティには、[高度にセキュリティで保護された Windows 10 デバイス](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure)を使用します。|
 |ID およびアクセス管理|* [Azure Active Directory Id 保護を有効に](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)します。  <br/> * フェデレーション id 環境の場合は、アカウントセキュリティ (パスワードの長さ、年齢、複雑さなど) を適用します。|
-|情報保護| 情報保護に関する推奨事項の例を確認します。 情報保護には、組織全体にわたる調整が必要です。 次のリソースの使用を開始する:  <br/> * [GDPR の Office 365 情報保護](https://aka.ms/o365gdpr) <br/> * [SharePoint Online のサイトとファイルをセキュリティで保護](secure-sharepoint-online-sites-and-files.md)する (共有、分類、データ損失防止、および Azure Information Protection を含む)|
+|情報保護| 情報保護に関する推奨事項の例を確認します。 情報保護には、組織全体にわたる調整が必要です。 次のリソースの使用を開始する:  <br/> * [GDPR の Office 365 情報保護](https://aka.ms/o365gdpr) <br/> * [3 層の保護](../../solutions/configure-teams-three-tiers-protection.md)(共有、分類、データ損失防止、および Azure Information protection を含む) を使用して Teams を構成する|
 
 ## <a name="90-days--enhanced-protections"></a>90日—保護の強化
 <a name="Ninetydays"> </a>
@@ -77,7 +77,7 @@ ms.locfileid: "44588206"
 |セキュリティ管理|* お使いの環境で推奨されるアクションについては、「Secure Score」を確認 [https://securescore.office.com](https://securescore.office.com) してください ()。  <br/>  * Microsoft 365 セキュリティセンター、Cloud App Security、および SIEM ツールで定期的にダッシュボードとレポートを確認してください。 <br/> * ソフトウェア更新プログラムを検索して実装します。 <br/> *[アタックシミュレータ](attack-simulator.md)を使用して、スピアーフィッシング、パスワードスプレー、ブルートフォースパスワード攻撃に対する攻撃のシミュレーションを行います ( [Office 365 の脅威インテリジェンス](office-365-ti.md)に含まれています)。  <br/> * Cloud App Security ([調査] タブ) の組み込みレポートを確認して、共有のリスクを探します。 <br/> *[コンプライアンススコア](https://docs.microsoft.com/microsoft-365/compliance/compliance-score)をチェックして、組織に適用される規制のステータスを確認します (GDPR、NIST 800-171 など)。|
 |脅威保護| 管理者アカウントの強化された保護を実装します。 <br/> * 管理者アクティビティ用に[特権アクセスワークステーション](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)(PAWs) を構成します。 <br/> * [AZURE AD 特権 Id 管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)を構成します。 <br/> * セキュリティ情報およびイベント管理 (SIEM) ツールを構成して、Office 365、Cloud App Security、およびその他のサービス (AD FS を含む) からログデータを収集します。 監査ログには、90日のみのデータが格納されます。 このデータを SIEM ツールで取得すると、長期間にデータを格納することができます。|
 |ID およびアクセス管理|* すべてのユーザーに対して MFA を有効にし、適用します。 <br/> *[条件付きアクセスと関連ポリシー](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)のセットを実装します。 |
-|情報保護| 情報保護ポリシーを調整して実装します。 これらのリソースには例があります。 <br/> * [GDPR の Office 365 情報保護](https://aka.ms/o365gdpr) <br/> * [SharePoint Online のサイトとファイルをセキュリティで保護する](secure-sharepoint-online-sites-and-files.md) <br/> <br> Microsoft 365 のデータ損失防止ポリシーおよび監視ツールを使用して、Microsoft 365 に保存されたデータ (Cloud App Security ではない) を使用します。 <br><br>高度な警告機能 (データ損失防止) については、Microsoft 365 で Cloud App Security を使用します。|
+|情報保護| 情報保護ポリシーを調整して実装します。 これらのリソースには例があります。 <br/> * [GDPR の Office 365 情報保護](https://aka.ms/o365gdpr) <br/> * [3層の保護を使用して Teams を構成する](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> Microsoft 365 のデータ損失防止ポリシーおよび監視ツールを使用して、Microsoft 365 に保存されたデータ (Cloud App Security ではない) を使用します。 <br><br>高度な警告機能 (データ損失防止) については、Microsoft 365 で Cloud App Security を使用します。|
 
 ## <a name="beyond"></a>超え
 <a name="Beyond"> </a>

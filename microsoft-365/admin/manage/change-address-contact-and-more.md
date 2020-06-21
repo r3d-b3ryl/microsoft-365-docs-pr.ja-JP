@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 組織名、住所、電話、技術連絡先、電子メールなど、組織のプロファイルを変更する方法について説明します。
-ms.openlocfilehash: 117344b2fee9198c6c7de2b26f02fcb647c10ec6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7df4c95bde187dc4922bea3da908b9cd82c5f775
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399802"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780147"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>組織の住所およびその他のプロファイル情報を変更する
 
@@ -48,7 +48,7 @@ ms.locfileid: "44399802"
 
 会社のプロファイルページのその他の情報を変更するには、次のようにします。
   
-1. 管理センターで、[設定] [ **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**組織の設定**</a>] ページに移動します。
+1. 管理センターで、[設定] [ **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**組織の設定**</a>] ページに移動します。
 
 2. [**組織プロファイル**] タブで、[**組織情報**] を選択します。
 
@@ -60,12 +60,12 @@ ms.locfileid: "44399802"
 
 |**Field**  |**説明**  |
 |---------|---------|
-|名前  <br/>   | ここで入力する名前は、次に示すページでユーザーに表示されます。  <br/>  サインイン ページ: ユーザーが勤務先または学校のメール アドレスでその他の Microsoft アカウントを設定した場合、サインイン ページに組織名が表示される可能性があります。これによって、ユーザーは 職場や学校のアカウント とその他のアカウントを区別できるようになるため、サインインするときにどちらのアカウントを使用するか識別できます。  <br/>  組織プロファイルのリンクとページ: 組織のプロファイルへのリンクには組織名が表示されます。  <br/>  Yammer ナビゲーション: Yammer では、左側のナビゲーションは、組織名をホーム Yammer ネットワークの名前として使用します。  <br/> OneDrive 同期クライアント: 組織名は、Windows のエクスプローラーと、[ファイル]、[OneDrive アクティビティセンター]、[onedrive cloud] アイコンのツールヒント、[OneDrive の設定] ウィンドウに表示されます。 現時点では、組織名を更新しても、構成されているクライアントに対しては更新されません。 <br/> MS Teams: Teams での組織の切り替え組織名を表示します。 <br/>  |
+|名前  <br/>   | ここで入力する名前は、次に示すページでユーザーに表示されます。  <br/>  Sign-in page: If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.  <br/>  組織プロファイルのリンクとページ: 組織のプロファイルへのリンクには組織名が表示されます。  <br/>  Yammer ナビゲーション: Yammer では、左側のナビゲーションは、組織名をホーム Yammer ネットワークの名前として使用します。  <br/> OneDrive 同期クライアント: 組織名は、Windows のエクスプローラーと、[ファイル]、[OneDrive アクティビティセンター]、[onedrive cloud] アイコンのツールヒント、[OneDrive の設定] ウィンドウに表示されます。 現時点では、組織名を更新しても、構成されているクライアントに対しては更新されません。 <br/> MS Teams: Teams での組織の切り替え組織名を表示します。 <br/>  |
 |住所、市区町村、都道府県、郵便番号  <br/>     | ここで入力した住所は、請求書に表示されるものです。 [購入先: 請求書の販売先住所] は、自分のプロファイルページの組織の住所と同じです (「Microsoft の請求[書または請求書](../../commerce/billing-and-payments/understand-your-invoice2.md)については、Microsoft 365 for business」を参照してください)。  <br/>        |
-|国または地域  <br/>    | これは、会社の本社が置かれている国または地域です。国または地域を選択すると、利用できるサービス、国または地域での税と請求通貨、および最寄りのデータ センターの場所が特定されます (「[ライセンスによる使用制限について](https://office.microsoft.com/redir/FX103037529)」を参照してください)。  <br/>注: 選択すると、国または地域を変更できなくなります。 選択を変更する場合は、サブスクリプションをキャンセルして、もう一度サインアップする必要があります。 このプロセスのヘルプについては、[サポートにお問い合わせ](../contact-support-for-business-products.md)ください。        |
-|電話  <br/>     | 会社の代表番号です。通常は、会社の本社の番号です。  <br/>        |
+|国または地域  <br/>    | This is the country or region where the company is headquartered. The selected country or region determines which services are available to you, the taxes and billing currency for your country or region, and the location of the data center closest to you (see [Microsoft Office license restrictions](https://office.microsoft.com/redir/FX103037529)).<br/>注: 選択すると、国または地域を変更できなくなります。 選択を変更する場合は、サブスクリプションをキャンセルして、もう一度サインアップする必要があります。 このプロセスのヘルプについては、[サポートにお問い合わせ](../contact-support-for-business-products.md)ください。        |
+|電話  <br/>     | This is the primary number for your company. It's usually the number of your company headquarters.  <br/>        |
 |技術担当者の連絡先  <br/> |これは、Microsoft 365 サブスクリプションを管理する主要な技術担当者の電子メールアドレスです。 これは、Microsoft 365 サービスの状態に関する情報を受信するユーザーです。  <br/> |
-|優先する言語  <br/> |優先する言語によって、Microsoft からユーザー組織に送信されるすべての通信の言語が決まります。サインアップすると、この設定によって、SharePoint Online で使用される言語 (チーム サイトでユーザーに表示される) が決まります。サインアップ後に言語の優先順位設定を変更した場合、その後の通信はすべて、最後に選択した言語によって送信されます。    <br/> 注: SharePoint Online で使用されている言語を変更することはできません。           |
+|優先する言語  <br/> |The preferred language determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, which your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.  <br/> 注: SharePoint Online で使用されている言語を変更することはできません。           |
 
 ## <a name="change-your-alternate-email-address"></a>連絡用メールアドレスを変更する
 
@@ -82,8 +82,8 @@ ms.locfileid: "44399802"
 
 5. [**連絡用メール**] ボックスのアドレスを編集し、[**保存**] を選択します。
 
-他のプロファイル情報を変更する方法については、「[連絡先の設定を変更](change-contact-preferences.md)する」または「[表示言語を変更](https://support.office.com/article/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)する」を参照してください。
+他のプロファイル情報を変更する方法については、「[連絡先の設定を変更](change-contact-preferences.md)する」または「[表示言語を変更](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)する」を参照してください。
   
 ### <a name="email-signatures"></a>メールの署名
   
-メールの署名は、Outlook Web App で変更できます。 詳細については、「[メールの設定](https://support.office.com/article/30c69a79-efc6-42d2-b740-4bf1c1f8a01c.aspx)」を参照してください。
+メールの署名は、Outlook Web App で変更できます。 詳細については、「[メールの設定](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c)」を参照してください。

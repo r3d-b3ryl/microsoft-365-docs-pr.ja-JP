@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターの送信ポータルを使用して、疑わしいメール、疑わしいフィッシングメール、スパム、その他の潜在的な有害なメッセージ、Url、およびその他の潜在的な問題を報告する方法について説明します。
-ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209753"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726850"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -36,7 +36,17 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **送信**ページに直接移動するには、を使用 <https://protection.office.com/reportsubmission> します。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スパム対策ポリシーを追加、変更、および削除するには、**組織の管理**、**セキュリティ管理者**、または**セキュリティリーダー**の役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- このトピックの手順を実行する前に、アクセス許可を割り当てる必要があります。
+
+  - メッセージとファイルを Microsoft に送信するには、次のいずれかの役割グループのメンバーである必要があります。
+
+    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**組織管理**または**セキュリティ管理者**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**組織の管理**または**検疫の管理**。
+
+  - 送信ポータルへの読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
+
+    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**セキュリティリーダ**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**表示のみの組織の管理**。
 
 - ユーザーがメッセージやファイルを Microsoft に送信する方法の詳細については、「 [microsoft へのメッセージとファイルの報告](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
@@ -197,8 +207,8 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 フィルター条件を変更するには、[**送信者**] ボタンをクリックし、次のいずれかの値を選択します。
 
-- **送信者ドメイン**
-- **Subject**
+- **送信元ドメイン**
+- **件名**
 - **提出者**
 - **送信の種類**
 - [**Sender IP (送信者の IP)**]

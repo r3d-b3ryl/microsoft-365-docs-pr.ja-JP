@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 分離した SharePoint Online チームサイトを管理し、新しいユーザーとグループを追加し、ユーザーとグループを削除し、カスタムアクセス許可を持つドキュメントサブフォルダーを作成します。
-ms.openlocfilehash: 05e3cf742482d34c158e14253eed9d1b99c82995
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036634"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755380"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの管理
 
@@ -146,11 +146,11 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ## <a name="create-a-documents-subfolder-with-custom-permissions"></a>カスタムのアクセス許可を持つドキュメントのサブフォルダーを作成します。
 
-分離したサイト内で作業している人々のサブセットでは、コラボレーションするためにプライバシー性の高い場所が必要になることがあります。SharePoint Online サイトでは、サイトの [ドキュメント] フォルダーにサブフォルダーを作成し、カスタムのアクセス許可を割り当てることがことができます。アクセス許可を持たないユーザーはサブフォルダーを表示できません。
+In some cases, a subset of the people working within the isolated site need a more private place to collaborate. For SharePoint Online sites, you can create a subfolder in the Documents folder of the site and assign custom permissions. Those without permissions will not see the subfolder.
   
 カスタムのアクセス許可を持つドキュメントのサブフォルダーを作成するには、以下のことを行います。
   
-1. サイトの管理者アクセスグループのメンバーであるアカウントにサインインします。 詳細については、「[一般法人向け Microsoft 365 にサインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. サイトの管理者アクセスグループのメンバーであるアカウントにサインインします。 詳細については、「[一般法人向け Microsoft 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
     
 2. 分離したチーム サイトに移動し、 **[ドキュメント]** をクリックします。
     
@@ -166,21 +166,21 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 8. **[共有相手] > [詳細]** をクリックします。
     
-9. **[アクセス許可の付与] > [共有相手] > [詳細]** をクリックします。
+9. **[アクセス許可を付与する] > [共有相手] > [詳細]** をクリックします。
     
-10. [アクセス権] ページで、リスト内の **[\<サイト名> のメンバー]** をクリックします。
+10. On the permissions page, click **\<site name> Members in the list**.
     
-11. **[\<サイト名> のメンバー]** ページで、サイト メンバーのアクセス グループの横にあるチェック ボックスを選択し、**[アクション]** をクリックし、**[グループからユーザーを削除する]** をクリックし、**[OK]** をクリックします。
+11. On the **\<site name> Members** page, select the checkmark next to the site members access group, click **Actions**, click **Remove users from group**, and then click **OK**.
     
-12. 特定のメンバーをこのサブフォルダーに追加するには、**[新規] > [ユーザーの追加]** をクリックします。
+12. 特定のメンバーをこのサブフォルダーに追加するには、 **[新規] > [ユーザーの追加]** をクリックします。
     
 13. **[共有]** ダイアログ ボックスで、サブフォルダー内のファイルでコラボレーションできるユーザー アカウントの名前を入力してから、 **[共有]** をクリックします。
     
 14. Web ページを更新して新しい結果を表示します。
     
-15. 左側のナビゲーションの **[グループ]** で、**[\<サイト名> の閲覧者]** グループをクリックし、(必要に応じて) 手順 11 から 14 を使用して、サブフォルダーでファイルを表示できるユーザー アカウントのセットを指定します。
+15. Under **Groups** in the left navigation, click the **\<site name> Visitors** group and use steps 11-14 to specify the set of user accounts that can view the files in the subfolder (as needed).
     
-16. 左側のナビゲーションの **[グループ]** で、**[\<サイト名> の所有者]** グループをクリックし、(必要に応じて) 手順 11 から 14 を使用して、サブフォルダーでファイルを表示できるユーザー アカウントのセットを指定します。
+16. Under **Groups** in the left navigation, click the **\<site name> Owners** group and use steps 11-14 to specify the set of user accounts that can administer the permissions in the subfolder (as needed).
     
 17. ブラウザーで **[ユーザーとグループ]** タブを閉じます。
     

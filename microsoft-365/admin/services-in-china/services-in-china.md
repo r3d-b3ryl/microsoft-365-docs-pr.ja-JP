@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 中国でのセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計された、21Vianet が運用している Office 365 の詳細について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399016"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779919"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
@@ -57,10 +57,10 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 |:-----|:-----|
 |カスタム ドメイン  <br/> |管理者は、中国語固有のドメインプロバイダーによって登録されたカスタムドメインを作成または使用することができます。 カスタムドメインを持っていない場合は、ドメイン名レジストラーから[ドメイン名を購入する方法](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)を指定できます。 既に所有している場合は、[ドメインレジストラーまたは DNS ホスティングプロバイダーを見つけて](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)ください。  <br/> また、Office 365 SharePoint Online サービスを使用してパブリック web サイトを作成する場合、中国のインターネットコンプライアンスポリシーでは、インターネットコンテンツプロバイダー (ICP) 番号を取得する必要があります。  **注:** ユーザー設定ドメイン名の許可されていない単語の自動検証は使用できません。           |
 |サブスクリプション、課金、技術サポート  <br/> |21Vianet によって提供されます。 サポートに連絡する方法については、「 [365 Office 365 for business サポートへのお問い合わせ](../contact-support-for-business-products.md)」を参照してください。  <br/> |
-|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用して[いる Office 365 でパスワードを変更または再設定する](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
+|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用している[Microsoft 365 でパスワードを変更または再設定する](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
 |セキュリティ、プライバシー、コンプライアンス、サポートのレベルに関する詳細情報  <br/> |21Vianet によって提供されます。  <br/> |
-|Office デスクトップのセットアップ  <br/> |Office デスクトップのセットアップは、Office 2010 および Office 2007 では使用できません。 ただし、管理者は、 [office 365 で動作するように現在の office デスクトップアプリケーションを構成](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)できます。  <br/> |
-|モバイルとデバイスのサポート\*  <br/> | 近日中には、次のモバイル機能が提供されます。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイス、または研究インモーション (縁、BlackBerry ワイヤレス電子メールソリューション) のオファーリングを使用して Blackberry Enterprise Server (BE) を実行できます。  <br/>  モバイルサポートの詳細については、「[ユーザー用にモバイルアクセスをセットアップおよび管理](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802)する」を参照してください。  <br/> |
+|Office デスクトップのセットアップ  <br/> |Office デスクトップのセットアップは、Office 2010 および Office 2007 では使用できません。 ただし、管理者は、 [office 365 で動作するように現在の office デスクトップアプリケーションを構成](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)できます。  <br/> |
+|モバイルとデバイスのサポート\*  <br/> | 近日中には、次のモバイル機能が提供されます。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイス、または研究インモーション (縁、BlackBerry ワイヤレス電子メールソリューション) のオファーリングを使用して Blackberry Enterprise Server (BE) を実行できます。  <br/>  モバイルサポートの詳細については、「[ユーザー用にモバイルアクセスをセットアップおよび管理](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)する」を参照してください。  <br/> |
 |Office Lens  <br/> |使用できません。  <br/> |
 |Microsoft Planner  <br/> |もうすぐです。  <br/> |
 |Microsoft Teams  <br/> |注意事項なし。  <br/> |
@@ -74,7 +74,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 
 |||
 |:-----|:-----|
-|組織外のユーザーと電子メールでドキュメント、ライブラリ、またはサイトを共有する  <br/> |この機能は使用できますが、既定では無効になっています。これを使用すると、国内外でもファイルを共有できるようになります。 Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. 組織外のユーザーと共有しようとするユーザーにも、警告が表示されます。 詳細については、「 [Office 365 で SharePoint ファイルまたはフォルダーを共有](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)する」を参照してください。  <br/> |
+|組織外のユーザーと電子メールでドキュメント、ライブラリ、またはサイトを共有する  <br/> |この機能は使用できますが、既定では無効になっています。これを使用すると、国内外でもファイルを共有できるようになります。 Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. 組織外のユーザーと共有しようとするユーザーにも、警告が表示されます。 詳細については、「 [Office 365 で SharePoint ファイルまたはフォルダーを共有](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)する」を参照してください。  <br/> |
 |Access Services  <br/> |Access 2013 はサポートされていますが、この機能は Office 365 および SharePoint Online から廃止されるため、新しい Access アプリを追加することはできません。 Office 365 と SharePoint Online での新しいアクセスベースの web アプリと Access web データベースの作成は、6月2018日に、2017年6月から開始され、残りの web アプリと web データベースが停止します。 また、access 2010 の機能はサポートされておらず、Access 2010 データベースを使用しようとすると、エラーが発生し、データが失われる可能性があります。  <br/> |
 |Microsoft PowerApps  <br/> |もうすぐです。  <br/> |
 |Information Rights Management (IRM)  <br/> |組織の IRM 機能を SharePoint に設定する機能は近日中に公開されています。  <br/> |
@@ -99,7 +99,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 |予定表の共有  <br/> |社内メールボックスと Exchange Online メールボックス間での予定表の共有が可能です。  <br/> |
 |連絡先の共有  <br/> |もうすぐです。  <br/> |
 |メッセージ追跡  <br/> |もうすぐです。  <br/> |
-|アプリ  <br/> |もうすぐです。  <br/> |
+|Apps  <br/> |もうすぐです。  <br/> |
 |プレース機能  <br/> |この機能は、電子メール内の住所のマップを表示します。国外のデータが許可されている可能性があるため、使用できません。  <br/> |
 |接続されているアカウント  <br/> |Hotmail (Outlook.com) などの他のアカウントへの接続は、近日中に公開されます。  <br/> |
    
@@ -108,12 +108,12 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
  Exchange 2013 の新しい更新プログラム 5 (CU5)、社内 Exchange 2013 組織と Office 365 サービス間の完全な機能を備えたハイブリッド展開がサポートされるようになりました。 ハイブリッド構成ウィザードでの新しい改善点の活用 Exchange 2013 CU5 は、社内組織と Exchange Online 組織間で次のようなハイブリッド機能をサポートしています。  
 
 - 社内組織および Exchange Online 組織間の安全なメール ルーティング。 
-- 共有ドメイン名前空間によるメール ルーティング。たとえば、社内組織と Exchange Online 組織の両方で、SMTP ドメインとして @contoso.com を使用できます。 
+- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
 - 統一されたグローバル アドレス一覧 (GAL)。"共有アドレス帳" とも呼ばれます。  
 - 社内組織と Exchange Online 組織間での空き時間情報や予定表の共有。  
-- 受信および送信メール フロー制御の集中管理。すべての受信および送信 Exchange Online メッセージを、社内 Exchange 組織経由でルーティングされるように構成できます。 
+- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
 - オンプレミス組織と Exchange Online 組織の両方の単一の Office Outlook Web App URL。  
-- 既存の社内メールボックスを Exchange Online 組織に移動する機能。必要な場合に、Exchange Online メールボックスを移動して社内組織に戻すこともできます。  
+- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
 - 社内 Exchange 管理センター (EAC) を使用した、メールボックスの集中管理。  
 - メールヒント、Outlook 連絡先の HD 写真サポート、社内組織と Exchange Online 組織間での複数のメールボックス検索。 
 - クラウドベースでの社内 Exchange メールボックスのメッセージ アーカイブ。 
@@ -165,7 +165,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 - [ハイブリッド構成ウィザードを使用してハイブリッド展開を作成する](https://go.microsoft.com/fwlink/?LinkId=506767)
 
 > [!IMPORTANT]
->  [Exchange Server 展開アシスタント](https://go.microsoft.com/fwlink/?LinkId=506768)は、社内組織と office 365 間のハイブリッド展開を構成したり、完全に office 365 に移行したりするのに役立つ無料の web ベースのツールです。 このツールによる簡単な一連の質問に回答すると、その答えに基づき、ハイブリッド展開を構成する指示が記された専用のチェックリストが作成されます。 展開アシスタントを使用してハイブリッド展開を構成することを強くお勧めします。 Exchange 2013 CU5 サーバーへのアップグレードまたは追加を希望しない組織では、Exchange 2013 SP1 の組織は、社内組織と Exchange Online 組織間で共有予定表の空き時間情報の共有を構成できます。 > このハイブリッド展開機能を構成するには、「 [21vianet が運用している Office 365 を使用して Exchange ハイブリッド展開機能を構成](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d)する」を参照してください。 
+>  [Exchange Server 展開アシスタント](https://go.microsoft.com/fwlink/?LinkId=506768)は、社内組織と office 365 間のハイブリッド展開を構成したり、完全に office 365 に移行したりするのに役立つ無料の web ベースのツールです。 このツールによる簡単な一連の質問に回答すると、その答えに基づき、ハイブリッド展開を構成する指示が記された専用のチェックリストが作成されます。 展開アシスタントを使用してハイブリッド展開を構成することを強くお勧めします。 Exchange 2013 CU5 サーバーへのアップグレードまたは追加を希望しない組織では、Exchange 2013 SP1 の組織は、社内組織と Exchange Online 組織間で共有予定表の空き時間情報の共有を構成できます。 > このハイブリッド展開機能を構成するには、「 [21vianet が運用している Office 365 を使用して Exchange ハイブリッド展開機能を構成](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)する」を参照してください。 
 
 |||  
 |---|---|
@@ -187,7 +187,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 
 |||
 |:-----|:-----|
-|アカウントを管理する (Office クライアント内から)  <br/> |この機能と、Office 365 ポータルにアクセスしようとしている他のユーザーは、現在、ワールドワイドの Office 365 ポータルをポイントしており、21Vianet が運用している Office 365 を使用してサインインすることはできません。 これは既知の問題であり、修正されています。 その間、URL を使用し https://portal.partner.microsoftonline.cn/ てアカウントにサインインし、そこから設定を管理することができます。 詳細については、「 [Manage Your office 365 Pro Plus account For office 365 For 21vianet](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)」を参照してください。  <br/> |
+|アカウントを管理する (Office クライアント内から)  <br/> |この機能と、Office 365 ポータルにアクセスしようとしている他のユーザーは、現在、ワールドワイドの Office 365 ポータルをポイントしており、21Vianet が運用している Office 365 を使用してサインインすることはできません。 これは既知の問題であり、修正されています。 その間、URL を使用し https://portal.partner.microsoftonline.cn/ てアカウントにサインインし、そこから設定を管理することができます。 詳細については、21Vianet が運用して[いる 365 Office のエンタープライズアカウント用に Microsoft 365 アプリを管理](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)する」を参照してください。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
@@ -197,7 +197,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 |Bing サービスへのリサーチウィンドウの統合  <br/> |注意事項なし。  <br/> |
 |アクセシビリティチェック  <br/> |注意事項なし。  <br/> |
 |クラス ノートブック  <br/> |注意事項なし。  <br/> |
-|Forms  <br/> |注意事項なし。  <br/> |
+|フォーム  <br/> |注意事項なし。  <br/> |
 |イマーシブリーダー  <br/> |注意事項なし。  <br/> |
 |オンライン画像の挿入  <br/> |注意事項なし。  <br/> |
 |会議の詳細  <br/> |注意事項なし。  <br/> |
@@ -213,7 +213,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 |:-----|:-----|
 |Skype for Business をサポートするドメインプロバイダー  <br/> |SRV レコードをサポートする中国固有のドメインプロバイダーを使用して、ドメインを登録する必要があります。 ドメインの登録方法の詳細については、「[ドメインレジストラーまたは DNS ホスティングプロバイダーを検索](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)する」を参照してください。  <br/> |
 |ダイヤルイン会議 (コンピューターにアクセスできないユーザーのために、会議への電話アクセスを追加する機能)  <br/> |ダイヤルイン会議およびプロバイダーの場合、Skype for business と Skype for Business 管理センターのオプションが表示されることがありますが、これらの機能はまだ利用できません。 これらは近日中に公開されます。  <br/> |
-|Skype for Business のデスクトップヘルプ  <br/> |[ここで](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx)は、Skype for business デスクトップのヘルプを参照できます。 ただし、Office クイック実行を使用していない限り、この製品からデスクトップヘルプを利用することはできません。  <br/> |
+|Skype for Business のデスクトップヘルプ  <br/> |[ここで](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)は、Skype for business デスクトップのヘルプを参照できます。 ただし、Office クイック実行を使用していない限り、この製品からデスクトップヘルプを利用することはできません。  <br/> |
 |Lync 2010  <br/> |注意事項なし。  <br/> |
 |Google Chrome での Samsung ベースのデバイスを使用しているときに予定表から会議に参加する機能  <br/> |もうすぐです。 その間に、Skype for Business を開いて、会議ビューに移動し、そこから会議に参加することができます。  <br/> |
 |Polycom、アレス、Tanjay などの卓上電話デバイス  <br/> |注意事項なし。  <br/> |

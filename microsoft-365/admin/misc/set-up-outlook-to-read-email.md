@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: Windows と Mac の両方に対して Outlook で電子メールアカウントをセットアップする方法と、Office アプリのインストールおよびオンラインでのメールへのアクセスについて説明します。
-ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399280"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779991"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Outlook でメールの閲覧を設定する
 
@@ -33,13 +33,13 @@ Microsoft 365 サブスクリプションには web ベースの Outlook が付�
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Outlook でメール アカウントを設定する
 
-初めて Outlook を開くと、自動アカウント ウィザードが開きます。開かない場合、[ **ファイル**] を選択し、[ **アカウントの追加**] を選択します。
+The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.
   
 1. On the **E-mail Accounts** page, choose **Next** \> **Add Account**.
     
 2. On the **Auto Account Setup** page, enter your name, email address, and password, and then choose **Next** \> **Finish**.
     
-記事の全文については、[こちら](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)を参照してください。
+記事の全文については、[こちら](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)を参照してください。
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>Outlook を含む、Office アプリをインストールするにはどうすればよいですか。
 

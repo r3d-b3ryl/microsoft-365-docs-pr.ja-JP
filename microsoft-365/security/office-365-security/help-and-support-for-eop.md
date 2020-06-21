@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
-ms.openlocfilehash: 277c48a8ac9503681eb695fba3697ddd16e49b88
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 7d1c62bd6ddef44e86e47b894e2d386dd8c0bd55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588242"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755190"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -33,7 +33,7 @@ ms.locfileid: "44588242"
 
 [Microsoft 365 コミュニティ](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft サポート/回復アシスタント (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft サポート/回復アシスタント (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [メールフローのトラブルシューティングツール](https://aka.ms/FixEmail)
 
@@ -43,7 +43,7 @@ Microsoft からサポートを受けられるようにするには、Microsoft 
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft プレミア サポート サブスクライバーのサポート
 
-EOP のユーザーで、Microsoft プレミア サポート契約もしている場合は、通常の Microsoft プレミア サポート チャネルでサポートを受けられます。このため、プレミアのテクニカル アカウント マネージャー (TAM) やケースの送信など、プレミア サポートのお客様に提供されているすべてのプロセスとリソースをご利用いただけます。Microsoft Online Services のプレミア サポートは、プレミア サポートの枠組みを社内向け製品からオンライン サービスにまで拡大し、すべての製品とサービスで一貫性のあるサポート環境を提供しています。このサービスによって、お客様が問題を速やかに解決できるようにするとともに、IT インフラストラクチャのさまざまなコンポーネントに対するサポートの管理作業を簡略化します。
+If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
 
 プレミアサポートが IT 投資からの価値を最大化するためにどのように役立つかについて詳しくは、「[プレミアサポート (パートナー向け](https://partner.microsoft.com/support/microsoft-services-premier-support))」を参照してください。
 

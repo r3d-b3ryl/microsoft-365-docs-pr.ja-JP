@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 25a4cd4147f6388cdbd8982eb10624e7b7e8f6cb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678638"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780123"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでアドインのデプロイを管理する
 
@@ -36,7 +36,7 @@ ms.locfileid: "44678638"
 
 ::: moniker-end
 
-Office アドインは、ドキュメントをカスタマイズしたり、Web 上の情報にアクセスする方法を効率化したりする際に役立ちます (「[Office アドインの使用を開始する](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)」を参照)。 管理者は、組織内のユーザーに対して Office アドインを展開することができます。 この操作は、Microsoft 365 管理センターの一元展開機能を使用して行うことができます。
+Office アドインは、ドキュメントをカスタマイズしたり、Web 上の情報にアクセスする方法を効率化したりする際に役立ちます (「[Office アドインの使用を開始する](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)」を参照)。 管理者は、組織内のユーザーに対して Office アドインを展開することができます。 この操作は、Microsoft 365 管理センターの一元展開機能を使用して行うことができます。
   
 一元展開は、ほとんどの管理者が組織内のユーザーやグループにアドインを展開するために推奨される最も豊富な方法です。 組織が集中展開をサポートできるかどうかを判断する方法の詳細については、「[組織でアドインの一元展開が機能](centralized-deployment-of-add-ins.md)するかどうかを判断する」を参照してください。
   
@@ -44,20 +44,20 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
   
 - グローバル管理者は、ユーザー、グループ、またはテナント内のすべてのユーザーに対して、アドインを直接ユーザーに割り当てることができます。
     
-- 関連する Office アプリケーションを起動すると、ユーザーのアドインが自動的にダウンロードされます。アドインがアドイン コマンドをサポートしている場合、アドインは、Office アプリケーション内のリボンに自動的に表示されます。
+- When the relevant Office application starts, the add-in automatically downloads for the user. If the add-in supports add-in commands, the add-in automatically appears in the Ribbon within the Office application.
     
 - 管理者がアドインをオフまたは削除した場合、またはユーザーが Azure Active Directory またはアドインが割り当てられているグループから削除された場合、アドインはユーザーに対して表示されなくなります。
     
 > [!NOTE]
 >  Word の場合、Excel および PowerPoint では、 [Sharepoint アプリカタログ](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)を使用して、Microsoft 365 に接続していないオンプレミス環境のユーザーにアドインを展開し、必要な sharepoint アドインをサポートします。 Outlook の > は、Exchange コントロールパネルを使用して、Microsoft 365 への接続なしでオンプレミス環境に展開します。 > 
   
-## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office アドインを展開するための推奨される方法
+## <a name="recommended-approach-for-deploying-office-add-ins"></a>Office アドインを展開する際に推奨される方法
 
-アドインがスムーズに展開されるように、段階的なアプローチで、アドインをロールアウトすることをご検討ください。Microsoft では、次の方法をお勧めします。
+Consider rolling out add-ins in a phased approach to help ensure your add-in deployment goes smoothly. We recommend the following plan:
   
-1. ビジネス内での利害関係者の小グループや IT 部門のメンバーを対象に、アドインをロールアウトします。展開が正常に行われたかどうかを評価して、正常に行われた場合は手順 2 に進みます。
+1. Roll-out the add-in to a small set of business stakeholders and members of the IT department. Evaluate if the deployment was successful, and if so, move on to step 2.
     
-2. アドインを使用することになる組織内の個別ユーザーに対象を広げて、アドインをロールアウトします。ここでも結果を評価して、すべて順調な場合は、次の手順に進み、完全に展開します。
+2. Roll-out to a larger set of individuals within the business who will be using the add-in. Again, evaluate results and, if all went well, go to the next step of a full deployment.
     
 3. 対象ユーザーにアドインを完全にロールアウトします。
     
@@ -70,7 +70,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
   
 1. 管理センターで、[**設定**] [アドイン] ページに移動し \> **Add-ins**ます。
     
-2. ページの上部にある [**アドインの展開**] を選択します。 [概要] ページで、[**次へ**] を選択します。
+2. ページの上部にある **[アドインの展開]** を選択します。 [概要] ページで、**[次へ]** を選択します。
     
 3. オプションを選択し、指示に従います。
   
@@ -80,28 +80,28 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
   
 6. **[展開]** を選択します。
   
-7. アドインが展開されると、緑色の目盛りが表示されます。 ページ上の指示に従って、アドインが正常に展開されたことをテストできます。
+7. アドインが展開されると、緑色の目盛りが表示されます。 ページの指示に従って、アドインの展開が正常に行われたことをテストできます。
 
 > [!NOTE]
-> アプリのリボンにアドインアイコンが表示されるように、ユーザーが Office を再起動する必要がある場合があります。 Outlook アドインは、ユーザーのリボンに表示されるまでに最大12時間かかることがあります。
+> アプリのリボンにアドインアイコンが表示されるように、ユーザーが Office を再起動する必要がある場合があります。 Outlook アドインは、ユーザーのリボンに表示されるまでに最大24時間かかる場合があります。
     
 8. 完了したら、[**次へ**] を選択します。 自分だけに展開した場合は、他のユーザーに展開するために、[**アドインにアクセスできるユーザーを変更**する] を選択できます。
 
 
 
-アドインを自分以外の組織のメンバーに展開した場合は、「アドインの展開を効果的に通知するために表示される指示に従ってください。 <br/>これで、Microsoft 365 の他のアプリと一緒にアドインが表示されます。
+アドインを自分以外の組織のメンバーに展開した場合は、「アドインの展開を効果的に通知するために表示される指示に従ってください。 <br/>アドインが Microsoft 365 のその他のアプリと共に表示されるようになります。
   
 アドインが使用できるようになったことを知ってもらうため、アドインを展開したことをユーザーとグループに伝えることをお勧めします。 アドインの利用できる時期やその利用方法、アドインの使用により、業務がよりはかどることをメールに記載して、ユーザーに送信することを検討してください。 ユーザーがアドインに問題が発生した場合に役立つ可能性がある関連するヘルプコンテンツや Faq を含めるか、リンクします。
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>ユーザーやグループにアドインを割り当てる時期を検討する
 
-管理者は、すべてのユーザー、または特定のユーザーやグループにアドインを割り当てることができます。各オプションには、次のような意味があります。
+Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
-- **すべてのユーザー**: 名前が示すように、このオプションでは、テナント内のすべてのユーザーにアドインが割り当てられます。対象のアドインが組織全体で汎用な場合にのみ、このオプションを慎重に使用します。 
+- **Everyone**: As the name implies, this option assigns the add-in to every user in the tenant. Use this option sparingly and only for add-ins that are truly universal to your organization. 
     
-- **ユーザー**: 管理者が個別ユーザーにアドインを割り当て、新しいユーザーにそのアドインを展開する場合、最初に新しいユーザーを追加する必要があります。ユーザーを削除する場合も同じです。 
+- **Users**: If you assign an add-in to an individual user, then to deploy the add-in to a new user, you will need to first add that user. The same goes for removing users. 
     
-- **グループ**: グループにアドインを割り当てる場合、グループに追加されたユーザーには、自動的にアドインが割り当てられます。また、ユーザーがグループから削除されると、そのユーザーはアドインへのアクセス権を失います。どちらの場合でも、管理者には追加の操作は必要ありません。 
+- **Groups**: If you assign an add-in to a group, users who are added to the group will automatically be assigned the add-in. And, when a user is removed from a group, the user loses access to the add-in. In either case, no additional action is required from you as the admin. 
 
 - [**自分**のみ]: 自分だけにアドインを割り当てると、そのアドインは自分のアカウントにのみ割り当てられます。 これは、最初にアドインをテストする場合に適しています。
     
@@ -121,7 +121,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
   
 ### <a name="security-of-office-add-ins"></a>Office アドインのセキュリティ
 
-Office アドインに結合されている XML マニフェスト ファイルは、アドインに関する一部のメタデータを含んでいますが、最も重要なのは、すべてのコードとロジックを含む Web アプリケーションを参照していることです。アドインにはさまざまな機能があります。たとえば、アドインでは次のことができます。
+Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
   
 - データを表示する。
     
@@ -131,18 +131,18 @@ Office アドインに結合されている XML マニフェスト ファイル�
     
 Office アドインの種類と機能の詳細については、「[Office アドイン プラットフォームの概要](https://go.microsoft.com/fwlink/p/?linkid=846362)」をご覧ください (特に「Office アドインの構造」セクション)。
   
-ユーザーのドキュメントを操作するため、アドインはマニフェストで必要なアクセス許可を宣言する必要があります。5 レベルの JavaScript API アクセス許可モデルが、タスク ウィンドウ アドインのユーザーにプライバシーとセキュリティの基礎を提供します。Office ストア 内のアドインの多くは ReadWriteDocument レベルで、ほとんどすべてのアドインは少なくとも ReadDocument レベルをサポートします。アクセス許可レベルの詳細については、「[コンテンツとタスク ウィンドウ アドインでの API 使用のアクセス許可の要求](https://go.microsoft.com/fwlink/p/?linkid=848863)」をご覧ください。
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
   
-マニフェストを更新するとき、一般的に変更されるのはアドインのアイコンとテキストです。場合によっては、アドイン コマンドが変更されます。ただし、アドインのアクセス許可は変更されません。アドインのすべてのコードとロジックが実行される Web アプリケーションは、Web アプリケーションの性質上、いつでも変更される可能性があります。
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 アドインの更新は次のように発生します。
   
-- **基幹業務アドイン:** この場合は、管理者が明示的にマニフェストをアップロードすると、アドインは管理者がメタデータの変更をサポートする新しいマニフェスト ファイルをアップロードすることを要求します。次に関連する Office アプリケーションが起動すると、アドインが更新されます。Web アプリケーションはいつでも変更できます。 
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
     > [!NOTE]
     > 管理者は更新を実行するために LOB アドインを削除する必要はありません。   [アドイン] セクションで、管理者は LOB アドインをクリックするだけで、右下隅の [**更新] ボタン**を選択できます。 更新プログラムは、新しいアドインのバージョンが既存のアドインのバージョンよりも大きい場合にのみ機能します。   
     
-- **Office ストア アドイン:** 管理者が Office ストア からアドインを選択した場合、アドインが Office ストア で更新されると、そのアドインは後で一元展開で更新されます。次に関連する Office アプリケーションが起動すると、アドインが更新されます。Web アプリケーションはいつでも変更できます。 
+- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
 ### <a name="edit-add-in-access"></a>アドインへのアクセスを編集する
 
@@ -162,13 +162,13 @@ Office アドインの種類と機能の詳細については、「[Office ア�
 
 組織の場合は、Office ストアから新しい Office アドインをダウンロードできないようにする必要があります。 これを一元展開と組み合わせて使用することにより、組織内のユーザーが組織内の承認済みアドインのみを展開するようにすることができます。
   
-アドインの取得を無効にするには:
+アドインの取得を無効にするには、以下の操作を行います。
   
 1. 管理センターで、 [**設定**] \> [[サービス&amp;アドイン](https://go.microsoft.com/fwlink/p/?linkid=2053743)] ページの順に移動します。
     
-3. **ユーザーが所有しているアプリとサービス**を選択します。
+3. **[ユーザー所有のアプリとサービス]** を選びます。
     
-4. ユーザーが Office ストアにアクセスできるようにするには、このオプションをオフにします。
+4. ユーザーが Office ストアにアクセスできるようにするオプションをオフにします。
 
 これにより、すべてのユーザーがストアから次のアドインを取得するのを防ぐことができます。
   
@@ -252,9 +252,9 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
     
 ## <a name="end-user-experience-with-add-ins"></a>アドインのエンド ユーザー エクスペリエンス
 
-アドインの展開が完了すると、エンド ユーザーは Office アプリケーションでアドインを使い始めることができます (「[Office アドインの使用を開始する](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)」を参照)。アドインは、アドインをサポートしているすべてのプラットフォームで表示されます。
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
-アドインがアドイン コマンドをサポートする場合、そのコマンドは Office のリボンに表示されます。次の例では、[ **引用の検索** ] コマンドが [ **引用** ] アドインで表示されています。 
+If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
 ![検索引用を含む Office リボン](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
@@ -272,7 +272,7 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
 
 1. [**ホーム**] リボンで、[アドインの**取得**] を選択します。<br/>![Outlook の [格納] ボタン](../../media/getaddinsicon.png)
   
-2. 左側のナビゲーションで、[**管理者管理**] を選択します。
+2. 左側のナビゲーションで、**[管理者が管理]** を選びます。
 
 ## <a name="delete-the-add-in"></a>アドインを削除する
 
@@ -282,8 +282,8 @@ Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライ�
 
 2. 展開されたアドインを選択します。
 
-3. [**アドインの削除**] をクリックします。 右下隅にあるアドインボタンを削除します。
-4. 選択内容を確認し、[**アドインの削除**] を選択します。
+3. [**アドインの削除**] をクリックします。 右下隅にある [アドイン] ボタンを削除します。
+4. 選択内容を確認し、[**アドインの削除]** を選びます。
   
 ## <a name="learn-more"></a>詳細情報
 

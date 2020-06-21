@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: ユーザーアカウントからライセンスを削除する方法について説明します。
-ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 2918d8263318e9b6ce14076fb121e898249b5c48
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432233"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780075"
 ---
 # <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 
@@ -145,7 +145,7 @@ ms.locfileid: "44432233"
 
 - [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](https://go.microsoft.com/fwlink/p/?linkid=848428)ことができます。
 
-- 他のユーザーがライセンスを使用できるようにするために、ライセンスが割り当てられている[ユーザー アカウントを削除](../add-users/delete-a-user.md)することもできます。ユーザー アカウントを削除すると、そのライセンスはすぐに他のユーザーに割り当てることができます。
+- You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
 - ライセンスがユーザーから削除されると、そのアカウントに関連付けられているデータは30日間保持されます。 30日の猶予期間が過ぎると、データは削除され、回復することはできません。
 
@@ -157,7 +157,7 @@ ms.locfileid: "44432233"
 
 - ライセンスが削除された後で、ユーザーの Microsoft 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「元[の従業員を削除](../add-users/remove-former-employee.md)する」を参照してください。
 
-- ユーザーのライセンスを削除しても、まだ Office がインストールされている場合は、Office の使用時にライセンスのない[製品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
+- ユーザーのライセンスを削除しても、まだ Office がインストールされている場合は、Office の使用時にライセンスのない[製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。
 
 ## <a name="related-articles"></a>関連記事
 

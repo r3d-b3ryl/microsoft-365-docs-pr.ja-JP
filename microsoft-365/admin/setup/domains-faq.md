@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: ドメインの詳細については、よく寄せられる質問の回答を参照してください。
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398908"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739154"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
@@ -74,7 +74,7 @@ Office 365 での DNS 管理には 2 つのオプションがあります。
   
 1. ネームサーバー (NS) レコードを変更すると、メール用の MX レコードを設定するのと同様に、Microsoft はすべてのサービス固有のレコードを処理できるようになります。 **(推奨)**
     
-2. DNS ホストで、メールやその他の Office 365 サービスに DNS レコードを自分で追加します。** (上級ユーザーのみ)**
+2. You add DNS records for email and other Office 365 services at your DNS host yourself. **(Experts only)**
     
 ### <a name="office-365-creates-and-hosts-the-dns-records"></a>Office 365 で DNS レコードが作成され、ホストされます。 
 **メリット** 
@@ -86,7 +86,7 @@ Office 365 での DNS 管理には 2 つのオプションがあります。
 #### <a name="disadvantages"></a>デメリット 
 - Office 365 の外部では、DNS レコードを変更してメールをホストすることができません。 
 - 一般向け Web サイトのアドレス (例: www.fourthcoffee.com) としてドメインをすでに使用している場合、ユーザーを Office 365 からそのアドレスにリダイレクトする必要があります。 
-- リダイレクトを設定するには静的 IP アドレスが必要ですが、一般向け WEB サイトのために常時利用できるとは限りません。ドメインのネーム サーバーの変更が現在のドメイン レジストラーで許可されない場合、この　DNS 管理オプションを使用するには別のレジストラーに切り替える必要があります。  
+- Setting up redirection requires a static IP address, which is not always easily available for public websites. - If your current domain registrar doesn't allow you to change your domain's nameserver records, you have to switch to a different registrar to use this DNS management option.  
 
  ### <a name="you-manage-the-dns-records-yourself"></a>DNS レコードを自分で管理する 
  #### <a name="advantages"></a>メリット
@@ -102,7 +102,7 @@ Office 365 の DNS レコードを自分で設定する必要があります (Go
 ## <a name="what-is-a-domain-name"></a>ドメイン名とは何ですか?
 
 
-ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。通常は、  *yourbusiness.com*  や  *stateuniversity.edu*  のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。 
+A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
   
 Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを使用すると、ブランドの信頼性や認知度を高めることができます。 
   
@@ -154,7 +154,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
    
 1. 自分のドメインのドメイン レジストラーにサインインします。
     
-2. レジストラーの Web サイトで、ネームサーバー レコードの更新を行うエリアを見つけ、ネームサーバーのポイント先をドメインの DNS ホストに更新します (DNS ホストがドメイン レジストラーであることもよくあります)。
+2. Find the area on the registrar's website where you update nameserver records, and update the nameservers to point to your domain's DNS host. (The DNS host is often the domain registrar.)
     
 3. リンクにアクセスし、ドメインのセットアップ ウィザードに移動します。
 
@@ -211,13 +211,13 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
     
 4. ドメインの確認をまだ行っていない場合は、手順に従って最初にそれを行います。
     
-5. [ **DNS 設定の更新** ] ページに Office 365 のネームサーバーが一覧表示されます。自分のドメインのドメイン レジストラーに移動して、ネームサーバーを Office 365 ネームサーバーに更新します。 
+5. On the **Update DNS settings** page, we list the nameservers for Office 365. Go to the domain registrar for your domain, and update the nameservers to the Office 365 nameservers. 
     
 4. ネームサーバーを更新したら、**1 時間以上待ちます**。 その後、Office 365 のウィザードに戻り、[**確認**] を選択します。
     
 ## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a>DNS プロバイダーで特定のレコードの種類がサポートされない場合はどうなりますか?
 
-独自の DNS レコードを管理している場合、DNS ホストが Office 365 に必要な DNS レコードの一部しかサポートしていないと、Office 365 の一部の機能は動作しません。必要な DNS レコードをすべてサポートしているレジストラーにドメインを移行することをお勧めします。
+If you manage your own DNS records and your DNS host does not support all the DNS records that Office 365 needs, some Office 365 features won't work. We recommend that you transfer your domain to a registrar that supports all required DNS records.
   
 すべての必須の DNS レコードをサポートするプロバイダー。
   
@@ -263,7 +263,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 - Microsoft Teams は、オンプレミスまたはオンラインのいずれかの Skype for Business とフェデレーションを行います。 詳細については、「 [Microsoft Teams 用に組織のネットワークを準備](https://docs.microsoft.com/microsoftteams/prepare-network)する」を参照してください。
     
- **SPF/TXT レコードがサポートされない場合** 、他のユーザーがドメインを使用して、スパムまたはその他の悪意のあるメールを送信できる可能性があります。SPF レコードは、ユーザーのドメインからメールを送信することを承認されているサーバーを識別することで動作します。 
+ **If SPF/TXT records are not supported**, other people may be able to use your domain to send spam or other malicious email. SPF records work by identifying the servers that are authorized to send email from your domain. 
   
 ## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a>Office 365 の既定のドメインを設定または変更する方法
 
@@ -313,19 +313,19 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 ::: moniker range="o365-worldwide"
 
-はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を Microsoft が行っている場合または Microsoft からドメインを購入した場合は、サブドメインを追加できません。
+Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を Microsoft が行っている場合または Microsoft からドメインを購入した場合は、サブドメインを追加できません。
+Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を 21Vianet が行っている場合は、サブドメインを追加できません。
+Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.
 
 ::: moniker-end
 
@@ -335,7 +335,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
   
 サブドメインを追加すると、確認が行われる親ドメインでの確認に基づき、自動的に確認されます。
   
-複数のドメインを Office 365 に追加すると、追加した任意のドメインで任意のサービス (メールなど) をホストできます。 *ドメインの MX レコードを更新することでメールを Office 365 に変更すると、そのドメインに送信されたすべてのメールが Office 365 に届くようになります。* 
+When you add multiple domains to Office 365, you can host any of the services (like email) on any of the domains you've added.  *When you change your email to Office 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Office 365.* 
  
 ::: moniker range="o365-worldwide"
 
@@ -344,34 +344,34 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>"onmicrosoft.com" ドメインがあるのはなぜですか?
 
-サービスにサインアップすると、Office 365 では、*contoso.onmicrosoft.com* のようなドメインが作成されます。サインアップ時に作成するユーザー ID には、*alan@contoso.onmicrosoft.com* のようなドメインが含まれています。 
+Office 365 creates a domain for you, like *contoso.onmicrosoft.com*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.com*. 
   
  ***alan\@contoso.com* のように表示されるメール アドレスを希望する場合は、**[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
   
-- **サインアップ後に onmicrosoft ドメインの名前は変更できません** 。たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.com の場合、fabrikam.onmicrosoft.com に変更することはできません。別の onmicrosoft.com ドメインを使うには、Office 365 で新しいサブスクリプションを開始する必要があります。 
+- **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com. To use a different onmicrosoft.com domain, you'd have to start a new subscription with Office 365. 
     
-- **チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.com ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。 
+- **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.com domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
     
-- **onmicrosoft ドメインは、削除できません。** Office 365 では、サブスクリプションの処理に初期ドメインが必要なため、保持しておく必要があります。カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
-ドメインを追加した後でも、初期の onmicrosoft.com ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。
+You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>"onmicrosoft.de" ドメインがあるのはなぜですか?
 
-サービスにサインアップすると、Office 365 では、*contoso.onmicrosoft.de* のようなドメインが作成されます。サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de* のようなドメインが含まれています。 
+Office 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*. 
   
  ***alan@contoso.de* のように表示されるメール アドレスを希望する場合は、**[ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、または「[Office 365 にユーザーとドメインを追加する](add-domain.md)」の手順に従って操作します (既にドメインを所有している場合)。 
   
-- **サインアップ後に onmicrosoft ドメインの名前は変更できません**。たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.de の場合、fabrikam.onmicrosoft.de に変更することはできません。別の onmicrosoft.de ドメインを使うには、Office 365 で新しいサブスクリプションを開始する必要があります。 
+- **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de. To use a different onmicrosoft.de domain, you'd have to start a new subscription with Office 365. 
     
-- **チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.de ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。 
+- **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
     
-- **onmicrosoft ドメインは、削除できません。** Office 365 では、サブスクリプションの処理に初期ドメインが必要なため、保持しておく必要があります。カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。 
+- **You can't remove your onmicrosoft domain.** Office 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
     
-ドメインを追加した後でも、初期の onmicrosoft.de ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。
+You can keep using the initial onmicrosoft.de domain even after you add your domain. It still works for email and other services, so it's your choice.
   
 ::: moniker-end
 
@@ -381,11 +381,11 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
     
 2. 学校の管理者になるには、Office 365 で [**管理者になる**] オプションを選択します。 
     
-3. TXT DNS レコードをドメインの DNS ホスト Web サイトで追加するようメッセージが表示されます。この理由は、DNS ホストへサインインしてドメイン用のレコードを追加することにより、ユーザーがドメイン名の所有者だということが Office 365 で証明されるからです。
+3. You'll be prompted to add a TXT DNS record at the DNS host website for your domain. Why? Because by signing in at the DNS host and adding a record for your domain, you prove to Office 365 that you own the domain name.
     
 4. レコードを追加したら Office 365 ポータルに戻り、レコードを追加したことを確認します。そうすると、Office 365 で確認が行われます。
     
-非営利団体で Office 365 の購入を検討している場合。[お客様の組織に資格があることを確認してから、](https://www.microsoft.com/en-us/nonprofits/eligibility)サービスにサインアップしてください。 
+Have a nonprofit and want to get Office 365? [Make sure your organization qualifies](https://www.microsoft.com/en-us/nonprofits/eligibility) and then sign up for the service. 
   
 学校の管理者になる方法の詳細については、 [こちらのヘルプ記事をご覧ください](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
 )。
@@ -396,7 +396,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
   
 - 現在のメール プロバイダーで、メール転送のサービスが提供されている必要があります。
     
-- Office 365 関連の DNS レコードの管理を Office 365 に任せるのではなく、DNS ホスティング プロバイダーで自分で行う必要があります。DNS レコードを自分で管理する場合は、「Office 365 にドメインを追加する」を参照して手順を確認してください。
+- You need to manage your Office 365-related DNS records at your DNS hosting provider, rather than having Office 365 manage these records for you. To learn what this entails, see Add your domain to Office 365 when you want to manage your own DNS records.
     
 - 一部の Office 365 の機能は利用できません。
 - ユーザーは、もう 1 つのメール プロバイダーを利用するユーザーの空き時間情報を表示できません。
@@ -439,7 +439,7 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
     
 4. オプションで、既存のメール サーバーのブロックを解除します。
     
-    1. Office 365 は Exchange Online Protection (EOP) を使用してスパム対策を行っています。EOP は、ユーザーの現在のメール サーバーから大量のスパムが転送されていることを検出するとそれをブロックし、そのため転送が機能しなくなる場合があります。もう 1 つのメール プロバイダーのスパム対策を信用することができる場合、Office 365 でそのサーバーをホワイトリストすることができます。ただしこの場合、元のサーバーを通して送信されるスパムは Office 365 のメールボックスに到達し、Office 365 のスパム対策の効果を評価することはできなくなります。
+    1. Office 365 は、Exchange Online Protection (EOP) を使用してスパム保護を行います。 EOP が現在のメールサーバーによって転送された大量のスパムを検出した場合は、それをブロックすることで、転送が動作しないようにすることができます。 他の電子メールプロバイダーが使用するスパム保護に自信がある場合は、そのサーバーを Office 365 の許可一覧に追加することができます。 ただし、これにより、元のサーバー経由で受信したすべてのスパムが Office 365 メールボックスに届くようにすることもできます。これにより、Office 365 がスパムを阻止しているかどうかを評価することはできません。
     
     2. Exchange 管理センター (EAC)に移動します。
         
@@ -465,13 +465,13 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
         
 6. DNS ホスティング プロバイダーで DNS レコードを更新する
     
-    1. DNS ホスティング プロバイダーの Web サイトにサインインし、「[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成する](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)」の手順に沿って操作します。**以下の例外を設定します。**
+    1. Sign in to your DNS hosting provider's website, and follow the [Create DNS records at any DNS hosting provider for Office 365 steps](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). **Make the following exceptions:**
     
         1. 新しい MX レコードは作成せず、既存の MX レコードの変更も行いません。
             
-        2. 以前のメール プロバイダー用の Sender Policy Framework (SPF) が既にある場合、Exchange Online 用に新しい SPF (TXT) レコードを作成する代わりに、現在の TXT レコードに "include:spf.protection.outlook.com" を追加します。例: "v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all"。
+        2. If you already have a Sender Policy Framework (SPF) record for your previous email provider, instead of creating a new SPF (TXT) record for Exchange Online, just add "include:spf.protection.outlook.com" to the current TXT record. For example, "v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all".
             
-        3. SPF レコードがまだない場合は、Office 365 が推奨するレコードに変更を加えて現在のメール プロバイダー用のドメインを含め、spf.protection.outlook.com も含めます。両方のメール システムからの送信メッセージが承認されます。
+        3. If you don't have an SPF record yet, modify the one recommended by Office 365 to include the domain for your current email provider, plus spf.protection.outlook.com. This authorizes outgoing messages from both email systems.
             
 7. 現在のプロバイダーでのメール転送を設定する
     
@@ -501,13 +501,13 @@ Office 365 で「**rob\@contoso.com**」のようなカスタム ドメインを
         
     3. ローカル Microsoft メールをテストします。 たとえば、ユーザー B に電子メールを送信します。この電子メールはすぐに配信されます。 このシナリオでは、Office 365 はメールボックスをローカルとして認識するため、メッセージは元のサーバー上のユーザー B のメールボックスにルーティングされません。
         
-    4. もう 1 つのメール システム上のユーザーへのメール送信をテストします。例えば、ユーザー C にメールを送信します。このメールは、元のサーバーにあるユーザー C のメールボックスに送信されるはずです。
+    4. Test email to someone who's on the other email system. For example, send an email to User C. This email should be delivered to User C's mailbox on your original mail server.
         
     5. 外部アカウントから、または他の電子メールシステムの従業員の電子メールアカウントから、他のメールシステムで転送が正しく設定されていることを確認します。 たとえば、User C の元のサーバーアカウントまたは Hotmail アカウントから、ユーザー A に電子メールを送信して、そのメールがユーザー A の Office 365 メールボックスに届くことを確認します。
         
 9. メールボックスのコンテンツの移動
     
-    1. 移動するユーザーが 2 人しかいなく、ユーザー A とユーザー B は既に 2 人とも Outlook を使用しているため、新しい Outlook プロファイルで古い .PST ファイルを開き、Outlook アイテムのインポートに表示されるメッセージ、予定表アイテム、連絡先などを Outlook データ ファイル (.pst) からコピーしてメールを移動させられます。 Office 365 メールボックスの正しい場所に一旦配置されると、アイテムはすべてのデバイスからどこからでもアクセスすることができます。
+    1. Since there are only two users to move, and since User A and User B are both using Outlook already, the email can be moved by opening the old .PST file in the new Outlook profile and copying the messages, calendar items, contacts, etc. as shown in Import Outlook items from an Outlook Data File (.pst). Once organized in the proper locations in the Office 365 mailbox, the items can all be accessed from any device, anywhere.
         
-    2. より多数のメールボックスが関与する場合、または従業員がまだ Outlook を使用していない場合、Exchange 管理センターで提供される移行ツールを使用できます。開始するには、Exchange 管理センターへ移動し、「電子メールを IMAP サーバーから Exchange Online メールボックスに移行する」の手順に従います。
+    2. When more mailboxes are involved, or if the employees are not already using Outlook, you can use the migration tools available in the Exchange admin center. To get started, go to Exchange admin center and follow the directions in Migrate Email from an IMAP Server to Exchange Online Mailboxes.
     

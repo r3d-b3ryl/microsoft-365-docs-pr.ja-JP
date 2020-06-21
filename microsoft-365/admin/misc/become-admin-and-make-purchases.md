@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '組織のために管理者になる方法と、Microsoft 365 サブスクリプションを取得する方法について説明します。 '
-ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5ecfde457cc04e28ef544701fe623a53a8e610b1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399460"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780039"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>管理者になり、組織に Microsoft 365 を購入する
 
 Microsoft では、IT 部門による正式な展開を待つことなく、簡単に組織内のユーザーがサインアップして生産性ツールやサービスを使えるようにしています。
   
-組織はユーザーにこれらのサービスを "現状のままで" 引き続き使用できるようにすることができます。しかし、これらのサービスの一部としてユーザーが Skype 会議 にサインアップした場合、Skype for Business と Office アプリケーション、ファイルのストレージと共有などを使って、会議ソリューションをアップグレードしてより完全なものにするために、管理者を割り当てることができます。
+Your organization can let people continue to use these services "as is." But if people signed up for Skype Meetings as one of those services, you can assign an admin to upgrade and get a more complete meeting solution with Skype for Business and Office applications, file storage and sharing, and more.
   
 ## <a name="why-become-the-admin-and-buy-microsoft-365-for-your-organization"></a>管理者になって組織の Microsoft 365 を購入する理由は何ですか。
 
-従業員が自分の職場のアカウントを使用して Skype 会議 にサインアップした場合、自分でサービスを管理することはできません。また、これらのユーザーが得られるのは、最も基本的な機能だけです。会議の数に制限はありませんが、参加者は 10 人以内に制限されます (60 日後には、参加者の最大数は 3 人になります)。 
+When an employee signs up for Skype Meetings with their work account, they can't manage the service. And they get only the most basic features: they can have unlimited meetings but only with 10 or fewer participants (after 60 days, the maximum participants is three people). 
   
 サービスの管理者をセットアップし、ユーザーに対して Microsoft 365 を購入すると、より高度な機能を利用できるようになります。 また、サービスを管理する機能が得られるため、ポリシーを適用して、新しいユーザーを追加できます。
   
@@ -63,7 +63,7 @@ Microsoft では、IT 部門による正式な展開を待つことなく、簡�
 |||
 |:-----|:-----|
 |![ピンクの丸の番号 1](../../media/a4da261d-2516-48c5-b58a-9c452b9086b8.png)|**サインアップする** 管理者になるには、職場のメールアドレスを使用して、事前に Skype 会議 にサインアップしておく必要があります。  <br/> |
-|![ピンクの丸の番号 2](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**ウィザードを実行する** サインアップしたら、次のいずれかの方法で、ウィザードを実行します。  <br/>  アプリ起動ツールで [**管理者**] を選択した後に表示される [**管理者になる**] ウィザードを実行します。  <br/>  または  <br/>  Skype 会議で**microsoft 365 へのアップグレード**を選択し、アップグレードする microsoft 365 サブスクリプションを選択します。  <br/> |
+|![ピンクの丸の番号 2](../../media/de3c1ab4-4f01-4026-b1ba-3265bdb32a89.png)|**ウィザードを実行する** サインアップしたら、次のいずれかの方法で、ウィザードを実行します。  <br/>  アプリ起動ツールで [**管理者**] を選択した後に表示される [**管理者になる**] ウィザードを実行します。  <br/>  OR  <br/>  Skype 会議で**microsoft 365 へのアップグレード**を選択し、アップグレードする microsoft 365 サブスクリプションを選択します。  <br/> |
 |![ピンクの丸の番号 3](../../media/60fa378c-6ac1-4cbd-a782-2fa7ca619dc6.png)|**ドメインの所有権を確認**する次に、組織の電子メールアドレスに関連付けられているドメイン名 (contoso.com など) を所有または管理することを Microsoft 365 に確認します。 これを行う権限を持っているのは、ドメイン名の所有者だけです。  <br/> |
 |![ピンクの丸の番号 4](../../media/1a0ff2ce-0942-405a-94e3-9bfeb1e5059e.png)|**ライセンスを購入**するウィザードの最後の手順では、職場のメールで Skype 会議にサインアップした組織内の各ユーザーに対して Microsoft 365 ライセンスを購入します。  <br/> たとえば、2 人のユーザーが仕事用のメールを使用して Skype 会議 にサインアップしている場合は、各ユーザーに 1 つずつ、2 つのライセンスを購入する必要があります。  <br/> > [!NOTE]> ライセンスを購入するまで、Microsoft 365 を管理することはできません。           |
 
@@ -87,9 +87,9 @@ Microsoft では、IT 部門による正式な展開を待つことなく、簡�
 |:-----|:-----|
 |ライセンスの追加または削除  <br/> |Microsoft 365 を使用していないユーザーの[ライセンスを追加](../../commerce/licenses/buy-licenses.md)したり、組織の microsoft 365 for business サブスクリプションを使用しないユーザーの[ライセンスを削除](../manage/remove-licenses-from-users.md)したりすることができます。  <br/> |
 |既にサインアップしている他のユーザーに連絡する  <br/> |他のユーザーに連絡して、Microsoft 365 サブスクリプションを管理していることと、アップグレードされたことを知らせます。 **アクティブなユーザー**とその電子メールアドレスの一覧を表示するには、次の[手順を実行](../add-users/add-users.md)します。  <br/> |
-|Microsoft 365 の使用を開始する  <br/> |[Office 365 ラーニング センター](https://support.office.com/learn/office365-for-business) にアクセスして、サインイン、メールのチェック、ドキュメントの共有などの方法を確認してください。 ユーザーがこのサイトを使用して、Microsoft 365 を開始することができます。  <br/> |
+|Microsoft 365 の使用を開始する  <br/> |[Office 365 ラーニング センター](https://support.microsoft.com/training) にアクセスして、サインイン、メールのチェック、ドキュメントの共有などの方法を確認してください。 ユーザーがこのサイトを使用して、Microsoft 365 を開始することができます。  <br/> |
 |Microsoft 365 サブスクリプションの管理  <br/> |[Microsoft 365 Admin ヘルプセンター](../admin-home.md)にアクセスして、ユーザーの追加と削除、パスワードのリセット、モバイルデバイスの設定などの一般的な管理タスクについて説明します。  <br/> |
 
-## <a name="still-need-help"></a>さらにサポートが必要な場合
+## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 [Microsoft サポートに連絡する](../contact-support-for-business-products.md)

@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029830"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773789"
 ---
 # <a name="device-configuration"></a>デバイス構成
 
@@ -33,7 +33,7 @@ Microsoft マネージドデスクトップの新しいデバイスがセット�
 
 ポリシー | 説明
 --- | ---
-セキュリティベースライン | MDM の[microsoft セキュリティベースライン](https://docs.microsoft.com/windows/device-security/windows-security-baselines)は、Microsoft マネージドデスクトップデバイスすべてに対して構成されています。 この基準は、業界標準の構成です。 これは一般にリリースされ、十分にテストされており、microsoft のセキュリティ担当者によって、モダンワークプレースで Microsoft の管理されたデスクトップデバイスとアプリが安全に保たれるようになっています。 <br><br>常に進化しているセキュリティ脅威の状況において脅威を軽減するために、Microsoft セキュリティベースラインが更新され、Windows 10 機能更新プログラムごとに Microsoft マネージドデスクトップデバイスに展開されます。<br><br>詳細については、「 [Windows 10 のセキュリティベースライン](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/)」を参照してください。
+セキュリティベースライン | MDM の[microsoft セキュリティベースライン](https://docs.microsoft.com/windows/device-security/windows-security-baselines)は、Microsoft マネージドデスクトップデバイスすべてに対して構成されています。 この基準は、業界標準の構成です。 これは一般にリリースされ、十分にテストされており、microsoft のセキュリティ担当者によって、モダンワークプレースで Microsoft の管理されたデスクトップデバイスとアプリが安全に保たれるようになっています。 <br><br>常に進化しているセキュリティ脅威の状況において脅威を軽減するために、Microsoft セキュリティベースラインが更新され、Windows 10 機能更新プログラムごとに Microsoft マネージドデスクトップデバイスに展開されます。<br><br>詳細については、「 [Windows セキュリティベースライン](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)」を参照してください。
 Microsoft Managed デスクトップ推奨セキュリティテンプレート | ユーザーの利便性を最適化する、セキュリティベースラインに対する推奨される変更のセット。  これらの変更点につい[ては、「セキュリティ補遺](#security-addendum)」に記載されています。 補遺のポリシーへの更新は、必要に応じて実行されます。  
 更新プログラムの展開 | Windows Update for Business を使用して、ソフトウェア更新プログラムの段階的な展開を行います。 IT 管理者は、展開グループポリシーの設定を変更することはできません。 グループベースの展開の詳細については、「 [Microsoft マネージドデスクトップでの更新プログラムの処理方法](updates.md)」を参照してください。
 従量制課金接続 | 既定では、従量制課金接続 (LTE ネットワークなど) での更新はオフになっていますが、各ユーザーは **[設定 > 更新 > プログラム] の [詳細オプション]** でこの機能を個別に有効にすることができます。 すべてのユーザーが従量制課金接続での更新を有効にできるようにするには、[変更要求を送信](../working-with-managed-desktop/admin-support.md)します。これにより、すべてのデバイスに対してこの設定が有効になります。

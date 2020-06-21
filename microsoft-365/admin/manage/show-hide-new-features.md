@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Office デスクトップアプリの新機能である office デスクトップアプリのエンドユーザーに対して、どの機能とその新しいコンテンツを表示するか、または非表示にするかを決定します。
-ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678604"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717177"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>新機能管理を使用して新機能を表示または非表示にする
 
@@ -60,7 +60,8 @@ Office には、このスケジュールに基づいて新しい機能が追加�
 |:-----|:-----|:-----|
 |**チャネル** <br/> |**管理プレビュー** <br/> |**アクションを実行する** <br/> |
 |**Current** <br/> |月の15日  <br/> |毎月のリリースの 1-3 週間 <br/> |
-|**半期エンタープライズ (プレビュー)** <br/> |9月1日と3月1日 <br/> | 新機能をもたらすメジャーリリースの2週間前
+|**月次 Enterprise** <br/> |月の1日  <br/> |新機能をもたらすメジャーリリースの2週間前 |
+|**半期エンタープライズ (プレビュー)** <br/> |9月1日と3月1日 <br/> | 新機能をもたらすメジャーリリースの2週間前|
 |**半期エンタープライズ** <br/> |1月1日と7月1日 <br/> | 新機能をもたらすメジャーリリースの2週間前<br/> |
 
 チャネル更新スケジュールの詳細については、「 [Microsoft 365 アプリの更新履歴 (日付別の一覧)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)」を参照してください。

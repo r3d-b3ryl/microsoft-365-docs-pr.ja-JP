@@ -27,12 +27,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: 'Gmail または別のメールプロバイダーからの連絡先、予定表、メールを Microsoft 365 にインポートする方法について説明します。 '
-ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4cc7a68929bdcc4cb79f3c7b78e07023a8952f81
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398872"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779011"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
@@ -46,11 +46,11 @@ Gmail または別の電子メールプロバイダーからのメールを、Mi
 
 Gmail からメール、連絡先、予定表を Microsoft 365 を使用して Outlook にインポートするには、次の手順を実行します。
   
-- [Gmail を Outlook にインポートする](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
+- [Gmail を Outlook にインポートする](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
-- [Outlook に連絡先をインポートする](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [Outlook に連絡先をインポートする](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-- [Google カレンダーをインポートする](https://support.office.com/article/098ed60c-936b-41fb-83d6-7e3786437330)
+- [Google カレンダーをインポートする](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -58,15 +58,15 @@ Gmail からメール、連絡先、予定表を Microsoft 365 を使用して O
 
 メール、連絡先、予定表を Outlook から .pst ファイルにエクスポートし、そのファイルを Microsoft 365 を使用して Outlook にインポートするには、次の手順を実行します。
   
-1. [メール、連絡先、予定表をエクスポートする](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
+1. [メール、連絡先、予定表をエクスポートする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
-2. [メール、連絡先、予定表をインポートする](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
+2. [メール、連絡先、予定表をインポートする](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
     
 連絡先のみが必要な場合は、次の手順を実行します。
   
-1. [Outlook から連絡先をエクスポートする](https://support.office.com/article/10f09abd-643c-4495-bb80-543714eca73f.aspx)
+1. [Outlook から連絡先をエクスポートする](https://support.microsoft.com/office/10f09abd-643c-4495-bb80-543714eca73f)
     
-2. [Outlook に連絡先をインポートする](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+2. [Outlook に連絡先をインポートする](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
@@ -82,9 +82,9 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
   
 - Open Outlook, then go to **File** \> **Add account**.
     
-詳細な手順が必要な場合は、「[アカウントの追加](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)」を参照してください。
+Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
-[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>複数のメールボックス: 管理者は、電子メール、連絡先、予定表を Microsoft 365 に一括インポートできます。
 

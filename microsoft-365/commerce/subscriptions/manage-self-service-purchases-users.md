@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7513fc67ab80bcffe6e6159bb13db207be16d0e9
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403260"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741664"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -105,9 +105,9 @@ ms.locfileid: "44403260"
 
 ### <a name="update-an-existing-payment-method"></a>既存の支払い方法を更新する
 
-1. 管理センターで、[**課金請求書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[**課金請求書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>] ページに移動します。
 
-2. 既存の支払い方法を編集するには、一覧から選択します。
+2. [**支払い方法**] タブで、リストから既存の支払い方法を選択します。
 
 3. 右側のウィンドウで、[**編集**] を選択します。 セキュリティコード、有効期限、カードの名前、および住所を変更することができます。
 
@@ -115,20 +115,20 @@ ms.locfileid: "44403260"
 
 ### <a name="add-a-new-payment-method"></a>新しい支払い方法を追加する
 
-1. 管理センターで、[**課金請求書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[**課金請求書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>] ページに移動します。
 
-2. [**支払い方法の追加**] を選択します。
+2. [**支払い方法**] タブで、[**支払い方法の追加**] を選択します。
 
 3. [**支払い方法の追加**] ウィンドウで、新しい支払い方法の情報を入力し、[**追加**] を選択します。
 
 ## <a name="view-your-invoices"></a>請求書を表示する
 
-1. 管理センターで、[課金請求**書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& の支払い</a>] ページに移動します。
+1. 管理センターで、[課金請求**書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>] ページに移動します。
 
-2. [**請求書**] で、表示する請求書を選択します。
+2. [**請求書**] タブで、表示する請求書を選択します。 請求書が表示されない場合は、過去**6 か月**の**間に変更**するか、**日付範囲を指定**します。
 
-## <a name="need-help-contact-us"></a>ヘルプが必要な場合 ご連絡ください。
+## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
 
 セルフサービス購入に関してよく寄せられる質問については、「[セルフサービス購入](self-service-purchase-faq.md)に関する FAQ」を参照してください。
 
-ご質問がある場合やセルフサービス購入に関するヘルプが必要な場合は、[サポートにお問い合わせください](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+ご質問がある場合やセルフサービス購入に関するヘルプが必要な場合は、[サポートにお問い合わせください](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。

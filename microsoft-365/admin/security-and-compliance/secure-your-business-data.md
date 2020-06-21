@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: 9a9b6c01d979f4a5bb055f907dc0292a33f40993
-ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
+ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44405181"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779955"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランをセキュリティで保護するための10位の方法
 
@@ -64,7 +64,7 @@ Microsoft では、サービスプランに適用される次の表のタスク�
 多要素認証を使用することは、組織のセキュリティを向上させる最も簡単で効果的な方法の1つです。 ログイン時には、多要素認証とは、電話からコードを入力して Microsoft 365 にアクセスするということよりも簡単です。 これにより、ハッカーがパスワードを知っている場合に、ハッカーが侵入するのを防ぐことができます。 多要素認証は、2ステップ認証とも呼ばれます。 各ユーザーは、たとえば Google や Microsoft のアカウントなど、ほとんどのアカウントに2段階の認証を簡単に追加できます。 [2 段階認証を個人の Microsoft アカウントに追加](https://go.microsoft.com/fwlink/?linkid=2016403&amp;clcid=0x409)する方法は次のとおりです。
   
 Microsoft 365 を使用している企業の場合は、ユーザーが多要素認証を使用してログインすることを要求する設定を追加します。 この変更を行うと、ユーザーが次回ログインするときに2要素認証を使用するように電話を設定するように求めるメッセージが表示されます。
-MFA をセットアップする方法と、ユーザーが設定を完了する方法についてのトレーニングビデオを参照するには、「 [set UP MFA](https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787) and [user set](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)up」を参照してください。
+MFA をセットアップする方法と、ユーザーが設定を完了する方法についてのトレーニングビデオを参照するには、「 [set UP MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) and [user set](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)up」を参照してください。
   
 多要素認証をセットアップするには、次のようにします。
 
@@ -79,7 +79,7 @@ MFA をセットアップする方法と、ユーザーが設定を完了する�
 5. ポップアップウィンドウで、[**多要素認証を有効にする**] を選択します。
 
 
-組織に多要素認証を設定した後、ユーザーはデバイスに 2 段階認証を設定する必要があります。 詳細については、「 [Microsoft 365 の2段階認証をセットアップする](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)」を参照してください。
+組織に多要素認証を設定した後、ユーザーはデバイスに 2 段階認証を設定する必要があります。 詳細については、「 [Microsoft 365 の2段階認証をセットアップする](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)」を参照してください。
   
 完全な詳細および推奨事項については、「[ユーザー用に多要素認証をセットアップする](set-up-multi-factor-authentication.md)」を参照してください。
   
@@ -88,7 +88,7 @@ MFA をセットアップする方法と、ユーザーが設定を完了する�
 
 Harvard ケネディ School [Cybersecurity キャンペーンハンドブック](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)は、フィッシング攻撃を識別するユーザーのトレーニングを含む、組織内でのセキュリティの認知度の強力な文化を確立するための優れたガイダンスを提供します。 
   
-このガイダンスに加えて、次の操作を実行することをお勧めします。この記事では、[ハッカーやマルウェアからのアカウントとデバイスの保護](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)について説明します。 それらの操作を次に示します。
+このガイダンスに加えて、次の操作を実行することをお勧めします。この記事では、[ハッカーやマルウェアからのアカウントとデバイスの保護](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)について説明します。 それらの操作を次に示します。
   
 - 強力なパスワードの使用
     
@@ -98,7 +98,7 @@ Harvard ケネディ School [Cybersecurity キャンペーンハンドブック]
     
 また、次の記事で推奨されている操作を実行して、ユーザーが個人のメールアカウントを保護することをお勧めします。
   
-- [Outlook.com メールアカウントを保護する](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Outlook.com メールアカウントを保護する](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [2段階認証を使用して Gmail アカウントを保護する](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -116,7 +116,7 @@ Microsoft 365 環境を管理するために使用する管理アカウントに
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: メールのマルウェアに対する保護レベルを上げる
 <a name="malware"> </a>
 
-Microsoft 365 環境では、マルウェアからの保護が行われていますが、マルウェアによく使用されるファイルの種類の添付ファイルをブロックすることによって、この保護を向上させることができます。 電子メールでマルウェア保護を強化するには、[簡単なトレーニングビデオ](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0)を表示するか、次の手順を実行します。
+Microsoft 365 環境では、マルウェアからの保護が行われていますが、マルウェアによく使用されるファイルの種類の添付ファイルをブロックすることによって、この保護を向上させることができます。 電子メールでマルウェア保護を強化するには、[簡単なトレーニングビデオ](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)を表示するか、次の手順を実行します。
   
 1. に移動 [https://protection.office.com](https://protection.office.com) し、管理者アカウントの資格情報でサインインします。 
     
@@ -143,7 +143,7 @@ Microsoft 365 環境では、マルウェアからの保護が行われていま
     
 - ランサムウェアまたはその他の悪意のあるコードを含む可能性があるファイルの種類をブロックします。 まず、実行可能ファイルの一般的な一覧を示します (次の表を参照)。 これらの実行可能ファイルの種類のいずれかを使用していて、それらが電子メールで送信されることが組織で想定されている場合は、これらを前のルールに追加します (ユーザーに警告します)。
     
-メールトランスポートルールを作成するには、[簡単なトレーニングビデオ](https://support.office.com/article/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)を表示するか、次の手順を実行します。
+メールトランスポートルールを作成するには、[簡単なトレーニングビデオ](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)を表示するか、次の手順を実行します。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
 
@@ -172,7 +172,7 @@ Microsoft 365 環境では、マルウェアからの保護が行われていま
   
 - [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
-- [OneDrive を復元する](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [OneDrive を復元する](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
     
 ## <a name="6-stop-auto-forwarding-for-email"></a>6: メールの自動転送を停止する
 <a name="forwarding"> </a>
@@ -231,7 +231,7 @@ Outlook.com で、[電子メールで**保護**] を選択します。 既定の
   
 受信者が別の電子メールクライアントまたはメールアカウント (Gmail、Yahoo など) を使用している場合は、ユーザーが電子メールメッセージを読むためにサインインするか、ワンタイムパスコードを要求して web ブラウザーでメッセージを表示できるようにするリンクが表示されます。 ユーザーが電子メールを受信していない場合は、スパムや迷惑メールフォルダーを確認してもらいます。 
   
-詳細については、「 [Outlook FOR PC での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)」を参照してください。
+詳細については、「 [Outlook FOR PC での暗号化されたメッセージの送信、表示、および返信](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)」を参照してください。
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. フィッシング攻撃からメールを保護する
 <a name="phishing"> </a>
@@ -242,7 +242,7 @@ Microsoft 365 環境用に1つ以上のカスタムドメインを構成した�
   
 ![ATP のフィッシング対策ポリシーを作成する](../../media/security-and-compliance-center.png)
   
-ATP のフィッシング対策ポリシーを作成するには、[簡単なトレーニングビデオ](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)を参照するか、次の手順を実行します。
+ATP のフィッシング対策ポリシーを作成するには、[簡単なトレーニングビデオ](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)を参照するか、次の手順を実行します。
   
 1. [https://protection.office.com](https://protection.office.com) に移動します。 
     
@@ -276,7 +276,7 @@ ATP のフィッシング対策ポリシーを作成するには、[簡単なト
 
 ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを日常的に送信、受信、共有します。 電子メールメッセージを見るだけで、添付ファイルが安全か悪意かを知ることは常に容易ではありません。 Office 365 Advanced Threat Protection には、ATP の安全な添付ファイルの保護が含まれていますが、既定ではこの保護は有効になっていません。 この保護の使用を開始するには、新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、Microsoft Teams のファイルにまで及びます。
   
-ATP の安全な添付ファイルポリシーを作成するには、[簡単なトレーニングビデオ](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)を表示するか、次の手順を実行します。
+ATP の安全な添付ファイルポリシーを作成するには、[簡単なトレーニングビデオ](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)を表示するか、次の手順を実行します。
   
 1. に移動 [https://protection.office.com](https://protection.office.com) し、管理者アカウントでサインインします。 
     
@@ -315,7 +315,7 @@ ATP の安全な添付ファイルポリシーを作成するには、[簡単な
     
 - ドメイン内のすべての受信者を対象とした新しいポリシーを追加します。
     
-ATP の安全なリンクを取得するには、[短いトレーニングビデオ](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)を表示するか、次の手順を実行します。
+ATP の安全なリンクを取得するには、[短いトレーニングビデオ](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)を表示するか、次の手順を実行します。
   
 1. に移動 [https://protection.office.com](https://protection.office.com) し、管理者アカウントでサインインします。 
     

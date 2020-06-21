@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632841"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735516"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのネットワーク構成
 
@@ -53,7 +53,7 @@ Microsoft マネージドデスクトップデバイスが microsoft サービ�
 
 Microsoft サービス | ドキュメントソース-許可リストに必要な Url
 --- | ---
-Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョン1803の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Windows 10 バージョン1809の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Windows 10 バージョン1903の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
+Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョン1803の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Windows 10 バージョン1809の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Windows 10 バージョン1903の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Windows 10 バージョン2004の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
 配信の最適化 | [Windows 10 更新プログラムの配信最適化を構成する](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、 [Active directory および Active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 

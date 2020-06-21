@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Microsoft 365 の既定のテーマを変更し、会社のロゴや色と一致するようにカスタマイズする方法について説明します。 '
-ms.openlocfilehash: 034e5cff726ea97397d5eee1592265ae3452209b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: f3ba6021205289426ee78f16c7d0678e4b81ef75
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678616"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779859"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>組織の Microsoft 365 テーマをカスタマイズする
 
@@ -67,7 +67,7 @@ Microsoft 365 for business サブスクリプションの管理者は、組織�
     
 4. [**変更の保存**] を選択します。
     
-管理センターでは、すぐに新しいテーマを表示することができます。 少し時間が経過すると、Outlook のページ、SharePoint、 [iOS 用の sharepoint モバイルアプリ](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)、および[Android 用の sharepoint モバイルアプリ](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)を含む、Microsoft 365 全体でそのことがわかります。
+管理センターでは、すぐに新しいテーマを表示することができます。 少し時間が経過すると、Outlook のページ、SharePoint、 [iOS 用の sharepoint モバイルアプリ](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)、および[Android 用の sharepoint モバイルアプリ](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284)を含む、Microsoft 365 全体でそのことがわかります。
 
 カスタム アイコンまたはカスタム カラーはいつでも削除できます。 [テーマ] ページに戻り、[**カスタムテーマの削除**] を選択します。
   

@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: ユーザーを最新の Office クライアントにアップグレードする方法について説明します。
-ms.openlocfilehash: 22fe8e12e4aff4f9afe52e913ad57d37866dbb95
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb2513b2112dd8427222d43d14184895df3b594b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398812"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778879"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Microsoft 365 for business ユーザーを最新の Office クライアントにアップグレードする
 
@@ -45,7 +45,7 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
   
  お客様が組織の Microsoft 365 for business サブスクリプションを担当する管理者である場合は、適切な場所に配置されています。 通常、管理者は、ユーザーの管理、パスワードのリセット、Office のインストールの管理、ライセンスの追加または削除などのタスクを担当します。
 
- 管理者ではなく、 [Microsoft 365 ファミリ](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)製品を使用している場合は、「office をアップグレードする方法について」を参照してください。以前のバージョンの office をアップグレードする方法については、「office の[アップグレード方法](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)」を参照してください。
+ 管理者ではなく、 [Microsoft 365 ファミリ](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans)製品を使用している場合は、「office をアップグレードする方法について」を参照してください。以前のバージョンの office をアップグレードする方法については、「office の[アップグレード方法](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350)」を参照してください。
 
 ## <a name="get-ready-to-upgrade"></a>アップグレードの準備をする
 
@@ -53,7 +53,7 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
 
 ## <a name="upgrade-steps"></a>アップグレード手順
 
-以下は、ユーザーが最新の Office デスクトップ クライアントにアップグレードするときのプロセスできます。アップグレード プロセスを開始する前に一読することをお勧めします。
+The steps below will guide you through the process of upgrading your users to the latest Office desktop client. We recommend you read through these steps before beginning the upgrade process.
   
 ## <a name="step-1---check-system-requirements"></a>手順 1 - システム要件の確認
 
@@ -90,7 +90,7 @@ Office を含むサブスクリプションに切り替えてください。 「
 
  - Office の個別の1回の購入を購入します。 「 [Office Home &amp; Business](https://products.office.com/home-and-business)または[office Professional](https://products.office.com/professional) 」を参照してください。
 
-     または
+     OR
 
  - ボリュームライセンスを使用して、Office の複数のコピーを購入します。 「[ボリューム ライセンスで提供されるスイート製品の比較](https://products.office.com/business/microsoft-office-volume-licensing-suites-comparison)」をご覧ください。
 
@@ -102,9 +102,9 @@ Office の最新バージョンをインストールする前に、以前のバ�
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>アンインストールするバージョンの Office を選択します
 
-- [PC から](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)
+- [PC から](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
 
-- [Mac から](https://support.office.com/article/eefa1199-5b58-43af-8a3d-b73dc1a8cae3.aspx)
+- [Mac から](https://support.microsoft.com/office/eefa1199-5b58-43af-8a3d-b73dc1a8cae3)
   
 ### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>以前のバージョンの Office をアンインストール後に再インストールできない既知の問題
 
@@ -114,7 +114,7 @@ Office の最新バージョンをインストールする前に、以前のバ�
 
  **サポートされていないサブスクリプション**Office のコピーが、Office 365 Small Business Premium または Office 365 の中規模企業など、廃止されたサブスクリプションを通じて取得した場合、サブスクリプションに付属のプロダクトキーを使用していない限り、以前のバージョンの Office をインストールすることはできません。
 
-以前のバージョンの Office と最新版を共存させる場合、「[異なるバージョンの Office を同じ PC にインストールして使う](https://support.office.com/article/6ebb44ce-18a3-43f9-a187-b78c513788bf.aspx)」で、共存が可能なバージョンの一覧をご確認いただけます。たとえば、サードパーティ アドインをインストールして以前のバージョンの Office で使用しているとき、アドインと最新版の Office の間に互換性があるかどうかがわからない場合は、共存インストールが正しい選択となることがあります。
+If you'd prefer to install your older version of Office side-by-side with the latest version, you can see a list of versions where this is supported in, [Install and use different versions of Office on the same PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). A side-by-side installation might be the right choice for you, if for example, you've installed third-party add-ins you're using with your older version of Office and you're not yet sure they're compatible with the latest version.
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>手順 4 - Office ライセンスをユーザーに割り当てる
 
@@ -122,7 +122,7 @@ Office の最新バージョンをインストールする前に、以前のバ�
   
 ## <a name="step-5---install-office"></a>手順 5 - Office をインストールする
 
-アップグレードするユーザーにライセンスがあることを確認したら、最後に Office をインストールするには、「 [PC または Mac に office をダウンロードしてインストールまたは再](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)インストールする」を参照してください。
+アップグレードするユーザーにライセンスがあることを確認したら、最後に Office をインストールするには、「 [PC または Mac に office をダウンロードしてインストールまたは再](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)インストールする」を参照してください。
   
 > [!TIP]
 > ユーザーに Office をインストールさせたくない場合は、「 [Manage software download settings In office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)」を参照してください。 Office[展開ツール](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool)を使用して office ソフトウェアをローカルネットワークにダウンロードし、通常使用するソフトウェア展開方法を使用して office を展開することができます。

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: 配布 (リスト) を作成して、個々の受信者の名前を入力せずに、ユーザーのグループに電子メールを送信します。
-ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eaa1051c83f64a6a20d3f27eb17f2a0fef5f2b12
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398968"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779895"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで配布グループを作成する
   
@@ -69,7 +69,7 @@ ms.locfileid: "44398968"
     
 6. 配布グループにユーザーを追加するには、「[ユーザーまたは連絡先を配布グループに追加](../email/add-user-or-contact-to-distribution-list.md)する」を参照してください。
     
-「Outlook 2016 でグループを使用する方法」および「outlook on the web on the [use contact groups (以前の配布リスト)](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx) 」のトピックを参照してください。 
+「Outlook 2016 でグループを使用する方法」および「outlook on the web on the [use contact groups (以前の配布リスト)](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 」のトピックを参照してください。 
   
 配布グループの問題を解決するには、[配布グループの問題](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues)を確認してください。 
   

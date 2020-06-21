@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'カスタムタイルをアプリ起動ツールに追加することによって、電子メール、ドキュメント、アプリ、SharePoint サイト、外部サイト、その他のリソースへのクイックリンクを作成します。 '
-ms.openlocfilehash: cad78207c5d4025d385a7452fbe86df79a694067
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399778"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780135"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
@@ -37,9 +37,9 @@ ms.locfileid: "44399778"
 
 ::: moniker-end
 
-Microsoft 365 では、アプリ起動ツールを使用して、電子メール、予定表、ドキュメント、アプリをすばやく簡単に入手できます ([詳細につい](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)ては、こちらを参照してください)。 これらは、Microsoft 365 で入手できるアプリ、および[SharePoint ストア](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx)または[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)から追加するカスタムアプリです。
+Microsoft 365 では、アプリ起動ツールを使用して、電子メール、予定表、ドキュメント、アプリをすばやく簡単に入手できます ([詳細につい](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)ては、こちらを参照してください)。 これらは、Microsoft 365 で入手できるアプリ、および[SharePoint ストア](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)または[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)から追加するカスタムアプリです。
   
-SharePoint サイト、外部サイト、レガシー アプリなどをポイントするカスタム タイルをアプリ起動ツールに追加できます。カスタム タイルは、アプリ起動ツールの [ **すべて**] のアプリの下に表示されますが、[ **ホーム**] アプリにピン留めしたり、同じ操作を行うようにユーザーに指示したりできます。この操作により、関連サイト、アプリ、仕事に必要なリソースへのアクセスが容易になります。以下の例では、"Contoso Portal" と呼ばれるカスタム タイルを使って、組織の SharePoint イントラネット サイトにアクセスします。 
+You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the app launcher's **All** apps, but you can pin it to the **Home** apps and instruct your users to do the same. This makes it easy to find the relevant sites, apps, and resources to do your job. In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site. 
   
 ![アプリ起動ツール](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
@@ -89,6 +89,6 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
   
 ## <a name="whats-next"></a>次の手順
 
-アプリ起動ツールにタイルを追加するだけでなく、アプリ起動ツールタイルをナビゲーションバーに追加することもできます ([詳細につい](https://support.office.com/article/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985)ては、こちらを参照してください)。 組織のブランドに合わせて Microsoft 365 のルックアンドフィールをカスタマイズするには、「 [microsoft 365 テーマをカスタマイズ](../setup/customize-your-organization-theme.md)する」を参照してください。
+アプリ起動ツールにタイルを追加するだけでなく、アプリ起動ツールタイルをナビゲーションバーに追加することもできます ([詳細につい](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)ては、こちらを参照してください)。 組織のブランドに合わせて Microsoft 365 のルックアンドフィールをカスタマイズするには、「 [microsoft 365 テーマをカスタマイズ](../setup/customize-your-organization-theme.md)する」を参照してください。
   
 

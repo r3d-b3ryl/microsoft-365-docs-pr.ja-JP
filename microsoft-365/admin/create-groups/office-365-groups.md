@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループについて説明します。
-ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 14bc1211aaa65fb2daeebdb22729fce10154f204
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419138"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780411"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -80,7 +80,7 @@ Microsoft 365 グループには、次の制限が適用されます。
 |ファイルの記憶域|各サブスクライブ ユーザーに 1 TB + 10 GB と、購入した追加記憶域。 追加の記憶域は無制限で購入できます。|
 |グループ メールボックスのサイズ|50 GB|
 
-組織に割り当てることができる Microsoft 365 グループの既定の最大数は50万ですが、要求によって増やすことができます。 Microsoft 365 Groups の制限の詳細については、「 [microsoft 365 のグループ-管理者向けヘルプ](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
+組織に割り当てることができる Microsoft 365 グループの既定の最大数は50万ですが、要求によって増やすことができます。 Microsoft 365 Groups の制限の詳細については、「 [microsoft 365 のグループ-管理者向けヘルプ](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
 
 グループの使用に関する操作可能な情報を持っている場合は、Microsoft 365 グループを管理する方が効率的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については[、「管理センターの Microsoft 365 レポート](../activity-reports/office-365-groups.md)」を参照してください。
 
@@ -116,7 +116,7 @@ Microsoft 365 グループは、Azure Active Directory (AAD) で動作します�
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 グループについて](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Microsoft 365 グループについて](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 

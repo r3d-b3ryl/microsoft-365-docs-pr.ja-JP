@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Exchange PowerShell を使用して、組織内のすべてまたは特定のユーザーの低優先メール機能を有効または無効にする方法について説明します。 '
-ms.openlocfilehash: 069cf7569ebb3654e979100291f6754693b24def
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400138"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780279"
 ---
 # <a name="configure-clutter-for-your-organization"></a>組織での低優先メールの構成
 
 > [!TIP]
 > [優先受信トレイ](../setup/configure-focused-inbox.md) が低優先メールに置き換わります。 詳細については[、「優先受信トレイに関する更新」および「低優先メール](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)機能」を参照してください。
   
-管理者は、Microsoft 365 の低優先メール機能を管理する必要がある場合があります。 組織内のユーザーに低優先メール機能を有効/無効にするには、Exchange PowerShell を使用する必要があります。 (以下の手順を使用して、この機能をオン/オフにすることができます。 [Outlook での低優先/低優先メール機能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)) 
+管理者は、Microsoft 365 の低優先メール機能を管理する必要がある場合があります。 組織内のユーザーに低優先メール機能を有効/無効にするには、Exchange PowerShell を使用する必要があります。 (次の手順を使用して、この機能をオン/オフにすることができます。 [Outlook のオフ/低優先メール機能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c))。
   
 Exchange PowerShell の使用の詳細については、 [「Powershell を使用](https://go.microsoft.com/fwlink/?LinkID=402831)して exchange online と Exchange [Online powershell に接続する](https://go.microsoft.com/fwlink/?LinkID=722415)」をご覧ください。 少なくとも Exchange サービス管理者の役割を持ち、PowerShell を使用して Exchange Online に接続できるアカウントを持っている必要があります。 
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Exchange PowerShell を使用して低優先メール機能を有効にする
 
-[Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) コマンドレットを実行することで、メールボックスの低優先メールを手動で有効にできます。組織のメールボックスの低優先メール設定を表示することもできます。 [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) コマンドレットを実行します。 
+You can enable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view Clutter settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
   
 アリー ベリューという名前のユーザーの低優先メールをオンにする
     
@@ -47,7 +47,7 @@ Exchange PowerShell の使用の詳細については、 [「Powershell を使�
 
 ## <a name="turn-clutter-off-using-exchange-powershell"></a>Exchange PowerShell を使用して低優先メールをオフにする
 
-[Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) コマンドレットを実行することで、メールボックスの低優先メールを手動で無効にできます。組織のメールボックスの **低優先メール**設定を表示することもできます。[Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) コマンドレットを実行します。 
+You can disable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view **Clutter** settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
   
 アリー ベリューという名前のユーザーの低優先メールをオフにする
     
@@ -99,10 +99,10 @@ PowerShell を使用してユーザーを一括作成する場合、各ユーザ
 ## <a name="related-articles"></a>関連記事
 <a name="bkmk_onoff"> </a>
 
-[Outlook で低優先メール機能を使って優先度の低いメッセージを並べ替える](https://support.office.com/article/use-clutter-to-sort-low-priority-messages-in-outlook-7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[Outlook で低優先メール機能を使って優先度の低いメッセージを並べ替える](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[低優先メール機能を使用して OWA で優先度の低いメッセージを並べ替える](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
+[低優先メール機能を使用して OWA で優先度の低いメッセージを並べ替える](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[Outlook の低優先メール機能をオフにする](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
+[Outlook の低優先メール機能をオフにする](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
     
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 新しいビジネス id にデータを移動する方法について説明します。
-ms.openlocfilehash: 03a8ff6b3cfab43d80401a10825a1c274e278ed9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ebbb680baf36386d7f2dafae61fb262bf0220e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399328"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780003"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>メールとデータを Microsoft 365 Business Standard に移行する
 
@@ -57,24 +57,24 @@ Microsoft 365 Business Standard にアップグレードすると、新しい*�
 4. [**アップロード**] を選択して、OneDrive ファイルをコピーしたハードドライブからファイルをコピーします。 
   
     > [!NOTE]
-    >  個々のファイルとファイルのグループ (特定のフォルダー内のすべてのファイルなど) を同時にアップロードできますが、OneDrive for Business にフォルダーをコピーすることはできません。代わりに、OneDrive for Business に必要なフォルダー構造を作成する必要があります。 >  手順 4 で作成したフォルダーにファイルをコピーする場合は、ファイルをアップロードする前に、そのフォルダーを開きます。そうしないと、ファイルはルート フォルダーにアップロードされます。ファイルのアップロード後、OneDrive for Business のフォルダー間でファイルを移動することもできます。 
+    >  You can upload individual files and groups of files (such as all files in a particular folder) at one time but you cannot copy a folder to OneDrive for Business. Instead, you'll need to create the folder structure you want on OneDrive for business. >  If you want to copy files to a folder that you created in step 4, open that folder before you upload the files. Otherwise, the files will be uploaded to the root folder. You can also move your files between folders in OneDrive for Business after you've uploaded them. 
   
 ## <a name="outlookemail"></a>[Outlook/メール](#tab/Outlook)
   
  **Outlook 2013 の情報を Outlook データ ファイルにエクスポートする**
-1. Outlook データ ファイル (.pst) を作成する前に、Outlook の情報をエクスポートするアカウントが、デスクトップ バージョンの Outlook に既に追加されている必要があります。Outlook 2013 以上にアカウントを追加する方法については、「[Outlook 2010 または 2013 で Office 365 のメールを設定する](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)」または「[Outlook for Mac 2011 で電子メールを設定する](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)」を参照してください。
+1. Before you can create your Outlook data file (.pst), the account that you want to export Outlook information from must already be added to the desktop version of Outlook. For information about how to add an account to Outlook 2013 or higher, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
-2. 各ユーザーは、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)」の手順を実行する必要があります。
+2. 各ユーザーは、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)」の手順を実行する必要があります。
     
  **Outlook で新しいメール アカウントをセットアップする**
 1. 各ユーザーは、Microsoft 365 for business サブスクリプションに付属していた新しいメールアカウントをセットアップする必要があります。 これを行うには、新しいメール アカウントのアドレスが必要です。 各ユーザーの電子メールアカウントは、Microsoft 365 for business にサインインするために使用するユーザー名と同じです。 Sue@contoso.onmicrosoft.com や david@contoso.com のようなものになります。
     
-2. 各ユーザーに、メール アカウントを Outlook に追加するように求めます。この方法については、「[Outlook 2010 または 2013 で Office 365 のメールを設定する](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)」または「[Outlook for Mac 2011 で電子メールを設定する](https://support.microsoft.com/en-us/office/set-up-email-in-mac-os-x-mail-de372dc4-9648-4044-a76c-e8a60e178d54)」を参照してください。
+2. Ask each user to add their email account to Outlook. To learn how, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
     
  **Outlook データ ファイルから情報をインポートする**
 1. これにより、PST ファイルに格納されている電子メール、予定表、タスク、連絡先が Microsoft 365 for business の電子メールアカウントに結合されます。
     
-2. PST ファイルに格納されている情報を Microsoft 365 for business の電子メールアカウントにインポートするには、各ユーザーが「 [Outlook .pst ファイルからメール、連絡先、予定表をインポート](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac.aspx)する」の手順を完了している必要があります。
+2. PST ファイルに格納されている情報を Microsoft 365 for business の電子メールアカウントにインポートするには、各ユーザーが「 [Outlook .pst ファイルからメール、連絡先、予定表をインポート](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)する」の手順を完了している必要があります。
     
 ---
 

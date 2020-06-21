@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399184"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754798"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -135,6 +135,22 @@ Office ファイルを1人のユーザーが作成して共有した後、少な
 
 デスクトップ、モバイル、web を含む2つ以上のプラットフォームで少なくとも1つの Microsoft 365 生産性アプリを使用したユーザーの割合と絶対量を測定します。 It が測定する生産性アプリは、Outlook、Teams、Word、Excel、PowerPoint、OneNote、Yammer、Skype です。 ユーザーは、エンタープライズ、Exchange、Yammer、Skype、または Teams のライセンス用の Microsoft 365 アプリを測定する必要があります。 
 
-## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください
+## <a name="business-continuity-special-report"></a>ビジネス継続性の特別なレポート
+
+ビジネス継続性レポートは、Microsoft 365 のすべてのお客様が、このような問題が発生している間に組織をガイドするのに役立つ、限られたタイムワークプレースインテリジェンスレポートです。  
+
+このレポートは、ビジネスリーダーが理解しやすくなります。 
+
+- Shift キーを押したときのリモート処理によるコラボレーションと通信への影響 
+
+- ユーザーが自宅から作業するために調整したときのワークライフバランスへの影響。 
+
+- ユーザーが会議を効果的に使用しているかどうか、およびその方法 
+
+[ビジネス継続性レポートの詳細情報](https://aka.ms/bcrps)
+
+[Microsoft Graph の詳細情報](https://docs.microsoft.com/graph/)
+
+## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
 生産性スコアに関する考えと、改善方法に関するアイデアを共有してください。 製品内の**フィードバック**セクションを使用して、ProductivityScorePreview@service.microsoft.com の生産性スコアチームに連絡します。

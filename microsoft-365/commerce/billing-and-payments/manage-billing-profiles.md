@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 請求プロファイルが請求書をサポートする方法について説明します。
 keywords: 課金プロファイル、請求書、料金、管理された費用
-ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2979909e3b916cc4bc8704f32a821b13fa6090e0
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401776"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741714"
 ---
 # <a name="manage-billing-profiles"></a>課金プロフィールを管理する
 
@@ -61,7 +61,7 @@ Microsoft の製品やサービスを購入している商用のお客様の場�
 
 ## <a name="view-billing-profiles"></a>課金プロファイルを表示する
 
-1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">請求と支払い</a>] ページの順に移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。
 
 2. [**課金プロファイル**] を選択し、リストから請求プロファイルを選択します。
 
@@ -76,7 +76,7 @@ Microsoft の製品やサービスを購入している商用のお客様の場�
     > [!NOTE]
     > Azure クレジットをお持ちでない場合、[ **azure クレジットバランス**] タブまたは [ **azure**クレジット] タブは表示されません。
 
-## <a name="need-help-contact-support"></a>ヘルプが必要な場合 サポートにお問い合わせください。
+## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合わせください。
 
 ご質問がある場合や Azure の料金についてサポートが必要な場合は、 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">azure サポートを使用してサポート要求を作成して</a>ください。
 

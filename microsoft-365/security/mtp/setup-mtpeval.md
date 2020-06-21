@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 117681bd4722615e870594e46d6896e9128d0d0c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209225"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717297"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Microsoft の脅威保護のテスト環境をセットアップする 
 
@@ -94,7 +94,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 7. [**セットアップに移動**] をクリックして、Office 365 E5 試用版テナントのプロビジョニングを完了します。
 <br>![Office のイメージ 365 E5 試用版の登録のセットアップページ [セットアップの開始] ボタンをクリックするように求める](../../media/mtp-eval-15.png) <br>
 
-8. 会社のドメインを Office 365 テナントに接続します。 オプション[**既に所有**しているドメインを接続する] を選択し、ドメイン名を入力します。 [**次へ**] をクリックします。
+8. 会社のドメインを Office 365 テナントに接続します。 オプション[**既に所有**しているドメインを接続する] を選択し、ドメイン名を入力します。 **[次へ]** をクリックします。
 <br>![画像 of_Office 365 E5 セットアップページで、サインインとメールをカスタマイズする必要があります。](../../media/mtp-eval-16.png) <br>
  
 9. ドメインの所有権を検証するには、TXT または MX レコードを追加する必要があります。 ドメインに TXT または MX レコードを追加したら、[**検証**] を選択します。
@@ -110,7 +110,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 <br>![画像 of_Office 365 E5 電子メールメッセージを移行するかどうかを設定するには](../../media/mtp-eval-20.png) <br>
  
 13. [オンラインサービス] を選択します。 [ **Exchange** ] を選択し、[**次へ**] をクリックします。 
-<br>![画像 of_Office 365 E5 Exchangem Skype for Business または Mibile の Office 365 のようなオンラインサービスを選択できます。](../../media/mtp-eval-21.png) <br>
+<br>![画像 of_Office 365 E5 オンラインサービスを選択できます。](../../media/mtp-eval-21.png) <br>
 
 14. MX、CNAME、および TXT レコードをドメインに追加します。 完了したら、[**検証**] を選択します。
 <br>![Image of_Office 365 E5 ここに DNS レコードを追加できます。](../../media/mtp-eval-22.png) <br>
@@ -137,7 +137,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 5. [**今すぐ試行**] をクリックして、Microsoft 365 E5 試用版を確認します。
 <br>![Image of_Microsoft 365 E5 [無料試用版の開始] ページで、[今すぐ試行] ボタンを開始する必要があります。](../../media/mtp-eval-27.png) <br>
  
-6. **Microsoft 365 管理センター**  >  **ユーザー**の  >  **アクティブユーザー**に移動します。 ユーザーアカウントを選択し、[**製品ライセンスの管理**] を選択してから、ライセンスを Office 365 E5 から**Microsoft 365 e5**にスワップします。 [**保存**] をクリックします。
+6. **Microsoft 365 管理センター**  >  **ユーザー**の  >  **アクティブユーザー**に移動します。 ユーザーアカウントを選択し、[**製品ライセンスの管理**] を選択してから、ライセンスを Office 365 E5 から**Microsoft 365 e5**にスワップします。 **[保存]** をクリックします。
 ![Image of_Microsoft 365 管理センター] ページで、Microsoft 365 E5 ライセンスを選択できます。](../../media/mtp-eval-28.png) <br>
  
 7. グローバル管理者アカウントをもう一度選択し、[**ユーザー名の管理**] をクリックします。
@@ -149,4 +149,6 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 
 
 ## <a name="next-step"></a>次の手順
-||||:-------|:-----|: config-onboard) <br>[フェーズ 3: 構成 & オンボード](config-mtpeval.md)|Microsoft の脅威保護の試用ラボ環境とエンドポイントをオンボードにするために、microsoft の各脅威保護の柱を構成します。
+|||
+|:-------|:-----|
+|![フェーズ 3: 構成 & オンボード](../../media/config-onboard.png) <br>[フェーズ 3: 構成 & オンボード](config-mtpeval.md) | Microsoft の脅威保護評価ラボとエンドポイントをオンボードにするために、Microsoft の各脅威保護の柱を構成します。

@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Outlook で1つまたは複数の配布リストを Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399496"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780027"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
-Outlook を使用して、配布リストを Microsoft 365 グループにアップグレードできます。 これは、組織の配布リストに Microsoft 365 グループのすべての機能を提供するのに便利な方法です。 [Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+Outlook を使用して、配布リストを Microsoft 365 グループにアップグレードできます。 これは、組織の配布リストに Microsoft 365 グループのすべての機能を提供するのに便利な方法です。 [Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 配布リストは 1 つずつ、または複数を同時にアップグレードできます。
 
@@ -47,25 +47,25 @@ Outlook を使用して、配布リストを Microsoft 365 グループにアッ
 
 5. [情報] ダイアログで、[**はい**] を選択してアップグレードを確認します。 プロセスがすぐに開始されます。 アップグレードする配布リストのサイズや数に応じて、処理には数分または数時間かかることがあります。<br/>配布リストをアップグレードできない場合は、それを示すダイアログが表示されます。 [アップグレードできない配布リストがあるかどうかを](#which-distribution-lists-cannot-be-upgraded)確認します。
 
-6. 複数の配布リストをアップグレードする場合は、ドロップダウンリストを使用して、アップグレードされた配布リストをフィルター処理します。 リストが完成していない場合は、しばらく待ってから [**更新**] を選択して、正常にアップグレードされた内容を確認します。<br/>選択した配布リストのすべてのアップグレード プロセスが完了しても、通知は表示されません。[ **アップグレード可能** ] または [ **アップグレードされた配布リスト** ] に一覧された内容を確認して、これを把握することができます。
+6. 複数の配布リストをアップグレードする場合は、ドロップダウンリストを使用して、アップグレードされた配布リストをフィルター処理します。 リストが完成していない場合は、しばらく待ってから [**更新**] を選択して、正常にアップグレードされた内容を確認します。<br/>There's no notice that tells you when the upgrade process has completed for all DLs you selected. You can figure this out by looking to see what's listed under **Available for upgrade** or **Upgraded DLs**.
 
-7. アップグレードする配布リストを選択しても、ページ上に [アップグレード可能] と表示され続ける場合は、アップグレードに失敗しています。「[アップグレードが機能しない場合の対処方法](#what-to-do-if-the-upgrade-doesnt-work)」を参照してください。
+7. If you selected a DL for upgrade, but it's still appears on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
-> グループのダイジェスト メールを受け取っている場合は、下部に通知が表示され、所有者になっている対象の配布リストをアップグレードできるように示されることがあります。ダイジェスト メールの詳細については、「[Have a group conversation in Outlook](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)」 (Outlook でグループ会話を使用する) を参照してください。
+> If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
 
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>アップグレードが機能しない場合の対処方法
 
 アップグレードに失敗した配布リストは、変更されないまま保持されます。
 
-1 つ以上の **対象** の配布リストがアップグレードに失敗した場合は、 [サポート チケット](../contact-support-for-business-products.md)を開きます。問題を解決するために、この問題をグループ エンジニアリング チームにエスカレーションする必要があります。
+If one or more **eligible** distribution lists fail to be upgraded, open a [Support ticket](../contact-support-for-business-products.md). The issue will need to be escalated to the Groups Engineering team for them to figure out the problem.
 
-サービスが停止しているため、配布リストがアップグレードされなかった可能性もありますが、この可能性は低いです。必要な場合は、しばらく待ってから、もう一度配布リストをアップグレードします。
+It's possible that the distribution list didn't get upgraded because of a service outage, but pretty unlikely. If you want, wait a while and then try to upgrade the DL again.
 
 ## <a name="how-to-use-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>PowerShell を使用して複数の配布リストを同時にアップグレードする方法
 
-PowerShell の使用経験がある場合は、UI ではなく、この手順を使用することをお勧めします。配布リストのアップグレードに役立つ一連のコマンドレットが用意されています。以下を参照してください。
+If you're experienced at using PowerShell, you might want to go this route instead of using the UI. We have a set of cmdlets that will help you upgrade distribution lists. See below.
 
 ### <a name="upgrade-a-single-dl"></a>1 つの DL をアップグレードする
 
@@ -126,7 +126,7 @@ Get-DistributionGroup| Foreach-Object{
 |**プロパティ**|**対象**|
 |:-----|:-----|
 |オンプレミスで管理される配布リスト  <br/> |いいえ  <br/> |
-|入れ子になった配布リスト子グループがあるか、または別のグループのメンバーである配布リスト  <br/> |いいえ  <br/> |
+|Nested distribution lists. Distribution list either has child groups or is a member of another group.  <br/> |いいえ  <br/> |
 |メンバー受信者を含む配布リスト**Usermailbox**、 **sharedmailbox**、 **teammailbox**、 **mailuser**以外の種類の**詳細**  <br/> |いいえ  <br/> |
 |100 人を超える所有者を含む配布リスト  <br/> |いいえ  <br/> |
 |メンバーのみで、所有者を含まない配布リスト  <br/> |いいえ  <br/> |
@@ -156,11 +156,11 @@ Get-DistributionGroup| Foreach-Object{
 
 - Outlook の場合: 移行後に Microsoft 365 グループ名を入力して Outlook でメールを送信しようとすると、受信者がグループではなく配布リストとして解決されます。 受信者の連絡先カードは配布リストの連絡先カードとなります。 これは Outlook の受信者キャッシュまたはニックネーム キャッシュに起因します。 電子メールはグループに正常に送信されますが、送信者に混乱を招く可能性があります。<br/>「[Outlook のオートコンプリートの一覧についての情報](https://go.microsoft.com/fwlink/?LinkID=798736)」というトピックにある手順を実行してキャッシュをリセットすると、この問題は解消されます。
 
-- Web 上の Outlook の場合: web 上の Outlook の場合、配布リストの受信者はキャッシュに残ります。 [オートコンプリートリストから [候補の名前または電子メールアドレスを削除](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx)する] の手順に従って、キャッシュを更新し、グループの連絡先カードを表示することができます。
+- Web 上の Outlook の場合: web 上の Outlook の場合、配布リストの受信者はキャッシュに残ります。 [オートコンプリートリストから [候補の名前または電子メールアドレスを削除](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)する] の手順に従って、キャッシュを更新し、グループの連絡先カードを表示することができます。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新しいグループのメンバーは、受信トレイでウェルカム メッセージを受け取りますか?
 
-いいえ。ウェルカム メッセージを有効にする設定は、既定で false に設定されています。この設定は、既存のグループ メンバーにも、移行が完了した後に参加する可能性がある新しいグループ メンバーにも影響します。グループの所有者が後でゲスト ユーザーを許可した場合、ゲスト ユーザーは受信トレイでウェルカム メールを受け取ることはありません。ゲスト メンバーはグループで継続して作業を行うことができます。
+No. The setting to enable welcome messages is set to false by default. This setting affects both existing and new group members who may join after the migration is complete. If the group owner later allows guest users, guest users won't receive a welcome email in their inbox. Guest members can continue working with the group.
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>1つまたは一部の Dl がアップグレードされていない場合はどうなりますか?
 
@@ -172,6 +172,6 @@ DL が対象になるが、アップグレードできない場合もありま�
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>EAC からのアップグレードに失敗した場合、配布リストはどうなりますか?
 
-呼び出しがサーバーに送信された場合にのみ、アップグレードが発生します。アップグレードが失敗した場合、配布リストはそのまま保持されます。配布リストは、以前のように動作します。
+The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
 
 

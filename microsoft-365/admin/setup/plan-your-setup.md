@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Microsoft 365 for business をセットアップするために必要な作業について説明します。
-ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398848"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778951"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画する
 
@@ -72,7 +72,7 @@ ms.locfileid: "44398848"
 
     1. Office アプリをダウンロードしてインストールできるように、[従業員を Microsoft 365 に追加](../add-users/add-users.md)します。
 
-    2. コンピューターやデバイスで Word、Excel、および PowerPoint を使用するために、[Office アプリをダウンロードして、インストール](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)します。
+    2. コンピューターやデバイスで Word、Excel、および PowerPoint を使用するために、[Office アプリをダウンロードして、インストール](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)します。
 
     3. 会議に使用する[Microsoft Teams](#plan-for-teams)をセットアップします。
 
@@ -111,9 +111,9 @@ ms.locfileid: "44398848"
 
 ## <a name="plan-for-file-storage-and-migration"></a>ファイル ストレージと移行の計画
 
-Microsoft 365 は、個人、小規模な組織、および企業向けにクラウドストレージを提供しています。 どこに保存するかについてのガイダンスについては、「 [Microsoft 365 でドキュメントを保存する場所](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)」を参照してください。
+Microsoft 365 は、個人、小規模な組織、および企業向けにクラウドストレージを提供しています。 どこに保存するかについてのガイダンスについては、「 [Microsoft 365 でドキュメントを保存する場所](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)」を参照してください。
   
-- [OneDrive](https://support.office.com/article/45114744-6D42-45CD-8975-F9617819BDEB.aspx)または[SharePoint チームサイト](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242)に、**数百のファイルを移動することができ**ます。 一度に 100 個のファイルをアップロードできます。 ただし、ファイルの既定の最大サイズである 2 GB を超えるファイルはアップロードしないでください。
+- [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)または[SharePoint チームサイト](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)に、**数百のファイルを移動することができ**ます。 一度に 100 個のファイルをアップロードできます。 ただし、ファイルの既定の最大サイズである 2 GB を超えるファイルはアップロードしないでください。
   
 - **数千のファイル**を Microsoft 365 ストレージに移動する場合は、 [SharePoint Online の制限](https://go.microsoft.com/fwlink/p/?LinkID=856113)を確認してください。 移行ツールを使用するか、または移行を支援する[パートナー](https://go.microsoft.com/fwlink/?linkid=391089)の採用を検討することをお勧めします。 大量のファイルを移行する方法については、「[SharePoint Online および OneDrive 移行ユーザー ガイド](https://go.microsoft.com/fwlink/?LinkId=723574)」を参照してください。
   

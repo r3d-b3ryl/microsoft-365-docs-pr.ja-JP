@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 とのセキュリティで保護されたコラボレーションをセットアップする
+title: Microsoft 365 とセキュリティで保護された共同作業を設定する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: 機密に基づいてデータを保護するために Teams をセットアップする方法について説明します。
-ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159469"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724804"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とのセキュリティで保護されたコラボレーションをセットアップする
+# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とセキュリティで保護された共同作業を設定する
 
 情報を適切な人と簡単に共有できるようにする一方で、過剰な共有が組織の成功にとって重要であることを防ぎます。 これには、機密データをアクセスする必要があるユーザーに対してのみ安全に共有できることが含まれます。 プロジェクトによっては、機密データを組織外のユーザーと共有する場合があります。
 
@@ -57,7 +57,16 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 上記のすべてのシナリオでは、Microsoft Teams の teams を使用して、情報を格納、共有、および共同作業することができます。 
 
-## <a name="using-teams-for-all-kinds-of-data"></a>すべての種類のデータに Teams を使用する
+セキュリティで保護された設定を構成するには、次の Microsoft 365 の機能と機能を使用します。
+
+| 製品またはコンポーネント | 機能 | ライセンス |
+|:-------|:-----|:-------|
+| Office 365 Advanced Threat Protection | SPO、OneDrive、Teams のための ATP の安全な添付ファイル。ATP の安全なドキュメントTeams の ATP の安全なリンク    | Microsoft 365 E1、E3、E5 |
+| SharePoint    | サイトとファイルの共有のポリシー、サイトの共有のアクセス許可、共有リンク、アクセスの要求、サイトのゲスト共有設定 | Microsoft 365 E1、E3、E5 |
+| Microsoft Teams   | ゲストアクセス、プライベートチーム、プライベートチャネル | Microsoft 365 E1、E3、E5 |
+| Microsoft 365 コンプライアンス  | 秘密度ラベル    | Microsoft 365 E3、E5 |
+
+### <a name="using-teams-for-all-kinds-of-data"></a>すべての種類のデータに Teams を使用する
 
 さまざまな反応を持つ情報へのアクセスを管理するために、 [Teams に対して3つの異なる保護レベル](configure-teams-three-tiers-protection.md)を開発しました。 これらの層のいずれかをカスタマイズして、ニーズやビジネスに適したものにすることができます。 
 
@@ -68,7 +77,7 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 ||**ベースライン層**|**機密層**|**非常に機密性の高い層**|
 |:--|:-----------|:------------|:-------------------|
-|パブリックまたはプライベートチーム|[Either/リンク/埋め込み]|プライベート|プライベート|
+|パブリックまたはプライベートチーム|[Either/リンク/埋め込み]|Kirkland|Kirkland|
 |認証されていない共有|Blocked|Blocked|Blocked|
 |ファイル共有|可|可|チーム所有者のみが共有できます。|
 |チームメンバーシップ|すべてのユーザーがパブリックチームに参加できます。<br>チーム所有者の承認は、プライベートチームに参加するために必要です。|参加するには、チーム所有者の承認が必要です。|参加するには、チーム所有者の承認が必要です。|
@@ -85,13 +94,13 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 ベースライン層から始め、必要に応じて*機密*および*機密性の高い*階層を使用する teams を追加して、組織内の情報を保護します。 開始するには、次のリソースを参照してください。
 
-- [ベースライン保護を使用して teams を構成する](configure-teams-baseline-protection.md)
+- [ベースライン保護を使用してチームを構成する](configure-teams-baseline-protection.md)
 - [機密データに対する保護機能を使用してチームを構成する](configure-teams-sensitive-protection.md)
-- [非常に機密性の高いデータの保護を使用して teams を構成する](configure-teams-highly-sensitive-protection.md)
+- [機密データに対する保護機能を使用してチームを構成する](configure-teams-highly-sensitive-protection.md)
 
 組織内でも、共有に対する追加の保護を必要とする非常に機密性の高いプロジェクトがある場合は、チームのメンバーだけがファイルを読むことができるように、独自の機密ラベルを使用してファイルを暗号化するようにチームを構成できます。 詳細について[は、「セキュリティの分離を使用してチームを構成](secure-teams-security-isolation.md)する」をご覧ください。
 
-## <a name="sharing-with-people-outside-your-organization"></a>組織外のユーザーとの共有
+### <a name="sharing-with-people-outside-your-organization"></a>組織外のユーザーとの共有
 
 [組織外のユーザーとの秘密度の情報を共有](collaborate-with-people-outside-your-organization.md)する必要がある場合があります。 これは、単一のドキュメントを1人のユーザーと共有することから、世界中の大規模なパートナー組織またはフリーランサーを持つ主要なプロジェクトで共同作業を行うことまで多岐に沿っています。 Microsoft 365 では、機密情報を保護するための適切な保護対策を使用して、この範囲の外部共有を簡単に行うことができます。
 
@@ -108,6 +117,12 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 - [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
 パートナー組織との主要なプロジェクトがある場合は、プロジェクトに対して設定したチームで、Azure の資格管理を使用してその組織からゲストを管理できます。 詳細について[は、「管理されたゲストでの B2B エクストラネットの作成](b2b-extranet.md)」を参照してください。
+
+## <a name="deploy-the-secure-collaboration-solution"></a>セキュリティで保護されたコラボレーションソリューションを展開する
+
+このソリューションを展開する準備ができたら、次の手順を続行します。
+1. [Teams の3つの異なる保護層](configure-teams-three-tiers-protection.md)を構成します。
+2. [組織外の人との秘密度の情報を共有](collaborate-with-people-outside-your-organization.md)するための設定を構成します。
 
 ## <a name="see-also"></a>関連項目
 

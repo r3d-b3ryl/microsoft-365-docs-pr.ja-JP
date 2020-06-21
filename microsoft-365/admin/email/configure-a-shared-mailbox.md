@@ -1,5 +1,5 @@
 ---
-title: 共有メールボックスを構成する
+title: 共有メールボックスの設定を構成する
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを作成したら、電子メールの転送や自動応答など、ユーザーの設定を構成することができます。 後で、メールボックス名やメンバーなどのその他の設定を変更する必要がある場合があります。
-ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3bde856f4db80192f5ed058a18c7942aa6a724b2
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400150"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739203"
 ---
-# <a name="configure-a-shared-mailbox"></a>共有メールボックスを構成する
+# <a name="configure-shared-mailbox-settings"></a>共有メールボックスの設定を構成する
 
 [共有メールボックスを作成](create-a-shared-mailbox.md)した後で、メールの転送や自動応答などのメールボックスユーザーの設定を構成する必要があります。 後で、メールボックス名、メンバー、またはメンバのアクセス許可などのその他の設定を変更する必要がある場合があります。 
 
@@ -118,7 +118,7 @@ ms.locfileid: "44400150"
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>送信済みメール (返信) の表示を全員に許可する
 
-既定では、共有メールボックスから送信されたメッセージは、共有メールボックスの [送信済みアイテム] フォルダーには保存されません。代わりに、メッセージを送信したユーザーの [送信済みアイテム] フォルダーに保存されます。
+By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
 
 すべてのユーザーに送信済みメールの表示を許可する場合は、管理センターで、共有メールボックスの設定を編集して、[**送信済みアイテム**の編集] を選択し \> **Edit**ます。
 

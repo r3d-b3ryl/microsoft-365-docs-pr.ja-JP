@@ -16,25 +16,25 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: このステップごとの展開ガイドを使用して、Microsoft Office 365 で分離した SharePoint Online チームサイトを作成して構成します。
-ms.openlocfilehash: 772a9e5ea08871857a70cc840e377046d459a314
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036453"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755226"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
  **概要:** ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。
   
-この記事は、分離した SharePoint Online チーム サイトを Microsoft Office 365 で作成および構成するためのステップごとの展開ガイドです。これらの手順は、アクセス レベルごとに 1 つの Azure Active Directory (AD) ベースのアクセス グループが含まれる、3 つの既定の SharePoint グループとそれに対応するアクセス許可レベルの使用を前提としています。
+This article is a step-by-step deployment guide for creating and configuring an isolated SharePoint Online team site in Microsoft Office 365. These steps assume the use of the three default SharePoint groups and corresponding permission levels, with a single Azure Active Directory (AD)-based access group for each level of access.
   
 ## <a name="phase-1-create-and-populate-the-team-site-access-groups"></a>フェーズ 1:チーム サイト アクセス グループの作成と設定
 
 このフェーズでは、3 つの既定の SharePoint グループに対して 3 つの Azure AD ベースのアクセス グループを作成し、それらに適切なユーザー アカウントを設定します。
   
 > [!NOTE]
-> 次の手順は、すべての必要なユーザー アカウントが既に存在し、適切なライセンスが割り当てられていることを前提としています。そうでない場合は、それらを追加して、手順 1 に進む前にライセンスを割り当てます。 
+> The following steps assume that all necessary user accounts already exist and are assigned the appropriate licenses. If not, please add them and assign licenses before proceeding to step 1. 
   
 ### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>手順 1:サイトの SharePoint Online 管理者を一覧表示する
 
@@ -93,7 +93,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
   
 ![独立した SharePoint Online サイトの展開用の 3 つのアクセス グループ。](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
-### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>手順 5:アクセス グループにユーザー アカウントを追加する
+### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Step 5. Add the user accounts to the access groups
 
 この手順では、次の操作を行います。
   
@@ -161,7 +161,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 最初に、次の手順で SharePoint Online チーム サイトを作成します。
   
-1. SharePoint Online チームサイト (SharePoint Online 管理者) を管理するために使用されるアカウントを使用して、Microsoft 365 管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
+1. SharePoint Online チームサイト (SharePoint Online 管理者) を管理するために使用されるアカウントを使用して、Microsoft 365 管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
 
 2. Microsoft 365 管理センターの [**管理センター**] で、[ **SharePoint**] をクリックします。
 
@@ -187,11 +187,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 4. **アクセス許可の要求**を**オフ**に設定します。
 
-5. [**保存**] をクリックします。
+5. **[保存]** をクリックします。
     
 6. [**権限**] ウィンドウで、[**高度な権限の設定**] をクリックします。
     
-7. ブラウザーの **[アクセス権]** タブで、リスト内の **[\<サイト名> のメンバー]** をクリックします。
+7. On the **Permissions** tab of your browser, click **\<site name> Members** in the list.
     
 8. **[ユーザーとグループ]** で、**[新規]** をクリックします。
     
@@ -199,7 +199,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 10. ブラウザーの戻るボタンをクリックします。
     
-11. リスト内の **[\<サイト名> の所有者]** をクリックします。
+11. Click **\<site name> Owners** in the list.
     
 12. **[ユーザーとグループ]** で、**[新規]** をクリックします。
     
@@ -207,7 +207,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 14. ブラウザーの戻るボタンをクリックします。
     
-15. リスト内の **[\<サイト名> の閲覧者]** をクリックします。
+15. Click **\<site name> Visitors** in the list.
     
 16. **[ユーザーとグループ]** で、 **[新規]** をクリックします。
     
@@ -217,11 +217,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 これらのアクセス権の設定の結果は次のとおりです。
   
-- **[\<サイト名> の所有者]** の SharePoint グループには、サイト管理者のアクセス グループが含まれます。このグループではすべてのメンバーに**フル コントロール** アクセス許可レベルが付与されています。
+- The **\<site name> Owners** SharePoint group contains the site admins access group, in which all the members have the **Full control** permission level.
     
-- **[\<サイト名> のメンバー**]の SharePoint グループには、サイト メンバーのアクセス グループが含まれます。このグループではすべてのメンバーに**編集**アクセス許可レベルが付与されています。
+- The **\<site name> Members** SharePoint group contains the site members access group, in which all the members have the **Edit** permission level.
     
-- **[\<サイト名> の閲覧者]** の SharePoint グループには、サイト ビューアーのアクセス グループが含まれます。このグループではすべてのメンバーに**読み取り**アクセス許可レベルが付与されています。
+- The **\<site name> Visitors** SharePoint group contains the site viewers access group, in which all the members have the **Read** permission level.
     
 - メンバーが他のメンバーを招待したり、メンバー以外のユーザーがアクセス権を要求したりする機能は無効です。
     

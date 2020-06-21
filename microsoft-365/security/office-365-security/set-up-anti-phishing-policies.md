@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
-ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689280"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754666"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 
-ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 以下に例を示します。
+ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 たとえば、次のようにします。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -95,7 +95,7 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
     - 送信者の写真の疑問符の場合は、SPF または DKIM が最も重要です。
     - Via タグの場合は、d KIM 署名のドメイン、または From アドレスのドメインの**メール**アドレスが一致する (またはサブドメインである) ことを確認します。
 
-  詳細については、「 [Outlook.com および Outlook on the web」の「疑わしいメッセージを特定](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)する」を参照してください。
+  詳細については、「 [Outlook.com および Outlook on the web」の「疑わしいメッセージを特定](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)する」を参照してください。
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの排他的な設定
 

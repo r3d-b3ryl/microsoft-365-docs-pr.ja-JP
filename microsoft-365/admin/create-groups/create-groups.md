@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Microsoft 365 グループを作成および削除する方法、グループメンバーを追加および削除する方法、およびグループの動作をカスタマイズする方法について説明します。
-ms.openlocfilehash: 5e89c89c6b50e58f235877a61eaceaefe2bf6ee8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f6023188df1ae796badbf05b85ebaa1afdd914e5
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388019"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780447"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを作成する
   
@@ -42,11 +42,11 @@ ms.locfileid: "44388019"
   
 3. [**グループの種類の選択**] ページで、[ **Office 365**] を選択し、[**次へ**] を選択します。
 
-4. [**基本**] ページで、グループの名前を入力し、必要に応じて説明を入力します。 [**次へ**] を選択します。
+4. [**基本**] ページで、グループの名前を入力し、必要に応じて説明を入力します。 **[次へ]** を選択します。
     
 5. [**設定の編集**] ページで、グループの一意の電子メールアドレスを入力し、プライバシーオプションを選択し、Microsoft Teams を追加するかどうかを選択して、[**次へ**] を選択します。
     
-6. [**所有者**] グループを管理するように指定された1人以上のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 [**次へ**] を選択します。
+6. [**所有者**] グループを管理するように指定された1人以上のユーザーの名前を選択します。 グループの所有者のみが、グループの受信トレイからメールを削除できます。 他のメンバーはグループの受信トレイからメールを削除することはできません。 **[次へ]** を選択します。
     
 7. 設定を確認して変更を加えると、[**グループの作成**] を選択します。
 
@@ -58,7 +58,7 @@ ms.locfileid: "44388019"
 
 ::: moniker range="o365-worldwide"
 
-ユーザーは[自分で自分を追加](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
+ユーザーは[自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
 
 1. 管理センターで、新しいグループが表示されるようにページを更新し、メンバーを追加するグループの名前を選択します。
     
@@ -76,7 +76,7 @@ ms.locfileid: "44388019"
 
 ::: moniker range="o365-germany"
 
-ユーザーは[自分で自分を追加](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
+ユーザーは[自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
 1. 管理センターで、新しいグループが表示されるようにページを更新し、[**グループ**グループ] を選択して、 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>メンバーを追加するグループを選択します。
     
 2. [**メンバー**] の横にある [**編集**] を選択します。
@@ -92,7 +92,7 @@ ms.locfileid: "44388019"
 
 ::: moniker range="o365-21vianet"
 
-ユーザーは[自分で自分を追加](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
+ユーザーは[自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。
 1. 管理センターで、新しいグループが表示されるようにページを更新し、[**グループ**グループ] を選択して、 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>メンバーを追加するグループを選択します。
     
 2. [**メンバー**] の横にある [**編集**] を選択します。
@@ -120,7 +120,7 @@ ms.locfileid: "44388019"
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 グループへのゲストアクセスを管理する](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Microsoft 365 グループへのゲストアクセスを管理する](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Microsoft 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
 

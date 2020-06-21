@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスは、複数のユーザーが同じメールボックスにアクセスする必要がある場合に使用されます。 共有メールボックスを作成する前に知っておく必要のある情報について説明します。
-ms.openlocfilehash: 6d9b7f59840b8eb4ce38822945066e14d9a86a4d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ca942d35d54fc8cc635e401c250ce409b9af0dd
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400210"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780315"
 ---
 # <a name="about-shared-mailboxes"></a>共有メールボックスについて
 
@@ -42,7 +42,7 @@ ms.locfileid: "44400210"
 
 - **外部ユーザー:** 会社外のユーザー (Gmail アカウントを持つユーザーなど) に共有メールボックスへのアクセス権を付与することはできません。 この操作を行う必要がある場合は、代わりに Outlook 用グループを作成することを検討してください。 詳細については、「[管理センターで Microsoft 365 グループを作成](../create-groups/create-groups.md)する」を参照してください。
 
--  **Outlook で使用:** ブラウザーから web 上の Outlook を使用して共有メールボックスにアクセスするだけでなく、Outlook for iOS アプリまたは Outlook for Android アプリを使用することもできます。 詳細については、「<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">共有メールボックスを Outlook mobile に追加</a>する」を参照してください。 別の方法として、共有メールボックスのグループを作成することもできます。 詳細については、「[グループを比較](../create-groups/compare-groups.md)する」を参照してください。  
+-  **Outlook で使用:** ブラウザーから web 上の Outlook を使用して共有メールボックスにアクセスするだけでなく、Outlook for iOS アプリまたは Outlook for Android アプリを使用することもできます。 詳細については、「<a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">共有メールボックスを Outlook mobile に追加</a>する」を参照してください。 別の方法として、共有メールボックスのグループを作成することもできます。 詳細については、「[グループを比較](../create-groups/compare-groups.md)する」を参照してください。  
 
 - **暗号化:** 共有メールボックスから送信された電子メールを暗号化することはできません。 これは、共有メールボックスには独自のセキュリティコンテキスト (username/password) が含まれていないため、キーを割り当てることができないためです。 複数のユーザーがメンバーであり、自分のキーで暗号化された電子メールを送信または受信した場合、他のメンバーが電子メールの暗号化に使用された公開キーによっては電子メールを読むことができますが、そうでない場合があります。
 
@@ -56,7 +56,7 @@ ms.locfileid: "44400210"
 
 - **ユーザーが多すぎます:** 共有メールボックスに同時にアクセスする指定ユーザーの数が多すぎると、断続的にこのメールボックスへの接続に失敗する可能性があります。 この場合は、ユーザーの数を減らすか、Microsoft 365 グループまたはパブリックフォルダーなどの異なるワークロードを使用することを検討できます。
 
-- **メッセージの削除:** 残念ながら、ユーザーが共有メールボックス内のメッセージを削除するのを防ぐことはできません。 これを回避する唯一の方法は、共有メールボックスではなく、Microsoft 365 グループを作成することです。 Outlook のグループは、共有メールボックスに似ています。 両者の比較については、「[グループの比較](../create-groups/compare-groups.md)」を参照してください。 グループの詳細については、「[詳細](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)情報」を参照してください。
+- **メッセージの削除:** 残念ながら、ユーザーが共有メールボックス内のメッセージを削除するのを防ぐことはできません。 これを回避する唯一の方法は、共有メールボックスではなく、Microsoft 365 グループを作成することです。 Outlook のグループは、共有メールボックスに似ています。 両者の比較については、「[グループの比較](../create-groups/compare-groups.md)」を参照してください。 グループの詳細については、「[詳細](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)情報」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 

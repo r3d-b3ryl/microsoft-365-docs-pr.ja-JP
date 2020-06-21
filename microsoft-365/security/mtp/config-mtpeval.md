@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: ba603f3703a7d4b6df567f8299af9f1804e42b96
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498461"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702572"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>試用版ラボ環境用に Microsoft Threat Protection の柱を構成する
 
@@ -80,14 +80,14 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 1. [Office 365 セキュリティ & コンプライアンスセンター](https://protection.office.com/homepage)の  >  **脅威管理**  >  **ポリシー**に移動します。
 ![Image of_Office 365 Security & コンプライアンスセンターの脅威管理ポリシーページ](../../media/mtp-eval-32.png) <br>
  
-2. [ **ATP のフィッシング対策**] をクリックし、[ポリシーの名前と説明を**作成**して入力] を選択します。 [**次へ**] をクリックします。
+2. [ **ATP のフィッシング対策**] をクリックし、[ポリシーの名前と説明を**作成**して入力] を選択します。 **[次へ]** をクリックします。
 ![Image of_Office 365 Security & コンプライアンスセンターのフィッシング対策ポリシーのページに名前をつけることができます。](../../media/mtp-eval-33.png) <br>
 
 >[!NOTE]
 >詳細な ATP のフィッシング対策ポリシーを編集します。 **Advanced フィッシングしきい値**を**2-アグレッシブ**に変更します。
 <br>
 
-3. [**条件の追加**] ドロップダウンメニューをクリックして、ドメインを受信者のドメインとして選択します。 [**次へ**] をクリックします。
+3. [**条件の追加**] ドロップダウンメニューをクリックして、ドメインを受信者のドメインとして選択します。 **[次へ]** をクリックします。
 ![Image of_Office 365 Security & コンプライアンスセンターのフィッシング対策ポリシーページで、アプリケーションの条件を追加することができます。](../../media/mtp-eval-34.png) <br>
  
 4. 設定を確認します。 [**このポリシーを作成**する] をクリックして確認します。 
@@ -188,7 +188,7 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 1. [Microsoft 365 security center](https://security.microsoft.com/info)  >  **More Resources**  >  **microsoft Defender セキュリティセンター**に移動します。 [ **開く**] をクリックします。
 <br>![Microsoft 365 セキュリティセンターページの [イメージ of_Microsoft Defender セキュリティセンター] オプション](../../media/mtp-eval-58.png) <br>
  
-2. Microsoft Defender Advanced Threat Protection ウィザードに従います。 [**次へ**] をクリックします。 
+2. Microsoft Defender Advanced Threat Protection ウィザードに従います。 **[次へ]** をクリックします。 
 <br>![Microsoft Defender セキュリティセンターのウェルカムウィザードページ of_the の画像](../../media/mtp-eval-59.png) <br>
 
 3. 推奨されるデータストレージの場所、データ保持ポリシー、組織のサイズ、およびプレビュー機能のオプトインに基づいて選択します。 
@@ -197,7 +197,7 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 >その後、データ保存場所など、一部の設定を変更することはできません。 
 <br>
 
-[**次へ**] をクリックします。 
+**[次へ]** をクリックします。 
 
 4. [**続行**] をクリックすると、MICROSOFT Defender ATP テナントがプロビジョニングされます。
 <br>![画像 of_the ページの表示 [続行] ボタンをクリックすると、クラウドインスタンスが作成されます。](../../media/mtp-eval-61.png) <br>
@@ -241,11 +241,9 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 >[!NOTE]
 >2020年6月1日以降、対象のすべてのテナントに対して Microsoft の脅威保護機能が自動的に有効になります。 詳細については、 [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426)の次の記事を参照してください。 
 <br>
-1. [Microsoft 365 セキュリティセンター](https://security.microsoft.com/homepage)に移動します。 [**設定**] に移動し、[ **Microsoft Threat Protection**] を選択します。
-<br>![Microsoft 365 セキュリティセンターの [設定] ページの [イメージ of_Microsoft 脅威保護] オプションのスクリーンショット](../../media/mtp-eval-72b.png) <br>
 
-2. [ **Microsoft Threat Protection を有効にする**] チェックボックスをオンにし、[**保存**] をクリックします。
-<br>![Microsoft 365 セキュリティセンターの [設定] ページの [イメージ of_Microsoft 脅威保護] オプションのスクリーンショット](../../media/mtp-eval-72c.png) <br>
+[Microsoft 365 セキュリティセンター](https://security.microsoft.com/homepage)に移動します。 [**設定**] に移動し、[ **Microsoft Threat Protection**] を選択します。
+<br>![Microsoft 365 セキュリティセンターの [設定] ページの [イメージ of_Microsoft 脅威保護] オプションのスクリーンショット](../../media/mtp-eval-72b.png) <br>
 
 おめでとうございます! Microsoft の脅威保護試用版ラボ環境を作成したばかりです。 これで、攻撃をシミュレートし、製品間の機能を検出して通知を作成し、エンドポイントへの fileless 攻撃に自動的に対応する方法を確認できます。
 
