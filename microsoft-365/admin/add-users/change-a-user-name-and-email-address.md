@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'グローバル管理者によって行われる、ユーザーのメール アドレスと表示名の変更方法について説明します。 '
-ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 76a2124c7fc73e40650a18985a5aa10acf57737a
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432089"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780627"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -38,7 +38,7 @@ ms.locfileid: "44432089"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="change-a-users-email-address"></a>ユーザーの電子メール アドレスを変更する
 
@@ -93,7 +93,7 @@ ms.locfileid: "44432089"
 
 3. そのユーザーのプライマリ メール アドレスとして設定するメール アドレスで [**プライマリとして設定**] を選択します。 
     
-    **重要**: 管理コンソールを提供する、GoDaddy または別のパートナー サービスから Office 365 を購入した場合は、プライマリとして設定するこのオプションは表示されません。代わりに、GoDaddy またはパートナーの管理コンソールにサインインして、プライマリ エイリアスを設定します。 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     また、グローバル管理者である場合にのみ、このオプションが表示されます。このオプションが表示されない場合は、ユーザーの名前とプライマリ メール アドレスを変更するアクセス許可がありません。
   
@@ -103,7 +103,7 @@ ms.locfileid: "44432089"
  
   - この変更が反映されるまで、しばらくお待ちいただく場合があります。
   
-  - 新しいユーザー名。Office 365 にサインインするには、このユーザー名が必要になります。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - ユーザーが Skype for Business Online を使っている場合は、ユーザーが計画している Skype for Business Online 会議のスケジュールを変更する必要があることと、外部の取引先担当者に古い連絡先情報の更新を依頼する必要があることを伝えます。
 
@@ -121,7 +121,7 @@ ms.locfileid: "44432089"
 
 3. そのユーザーのプライマリ メール アドレスとして設定するメール アドレスで [**プライマリとして設定**] を選択します。 
     
-    **重要**: 管理コンソールを提供する、GoDaddy または別のパートナー サービスから Office 365 を購入した場合は、プライマリとして設定するこのオプションは表示されません。代わりに、GoDaddy またはパートナーの管理コンソールにサインインして、プライマリ エイリアスを設定します。 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     また、グローバル管理者である場合にのみ、このオプションが表示されます。このオプションが表示されない場合は、ユーザーの名前とプライマリ メール アドレスを変更するアクセス許可がありません。
   
@@ -131,7 +131,7 @@ ms.locfileid: "44432089"
  
   - この変更が反映されるまで、しばらくお待ちいただく場合があります。
   
-  - 新しいユーザー名。Office 365 にサインインするには、このユーザー名が必要になります。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - ユーザーが Skype for Business Online を使っている場合は、ユーザーが計画している Skype for Business Online 会議のスケジュールを変更する必要があることと、外部の取引先担当者に古い連絡先情報の更新を依頼する必要があることを伝えます。
 
@@ -149,7 +149,7 @@ ms.locfileid: "44432089"
 
 3. そのユーザーのプライマリ メール アドレスとして設定するメール アドレスで [**プライマリとして設定**] を選択します。 
     
-    **重要**: 管理コンソールを提供する、GoDaddy または別のパートナー サービスから Office 365 を購入した場合は、プライマリとして設定するこのオプションは表示されません。代わりに、GoDaddy またはパートナーの管理コンソールにサインインして、プライマリ エイリアスを設定します。 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     また、グローバル管理者である場合にのみ、このオプションが表示されます。このオプションが表示されない場合は、ユーザーの名前とプライマリ メール アドレスを変更するアクセス許可がありません。
   
@@ -159,7 +159,7 @@ ms.locfileid: "44432089"
  
   - この変更が反映されるまで、しばらくお待ちいただく場合があります。
   
-  - 新しいユーザー名。Office 365 にサインインするには、このユーザー名が必要になります。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - ユーザーが Skype for Business Online を使っている場合は、ユーザーが計画している Skype for Business Online 会議のスケジュールを変更する必要があることと、外部の取引先担当者に古い連絡先情報の更新を依頼する必要があることを伝えます。
 
@@ -181,7 +181,7 @@ ms.locfileid: "44432089"
 
     「**申し訳ございません。ユーザーを編集できませんでした。情報を確認して、もう一度やり直してください。**」というエラー メッセージが表示された場合、「[エラー メッセージを解決する](#resolve-error-messages)」を参照してください。
 
-すべてのサービスでこの変更が有効になるまで、最大で 24 時間かかる場合があります。変更が有効になると、更新されたユーザー名を使って Outlook、Skype for Business、SharePoint にサインインする必要があるため、この変更について必ずユーザーに知らせてください。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ ms.locfileid: "44432089"
 
     「**申し訳ございません。ユーザーを編集できませんでした。情報を確認して、もう一度やり直してください。**」というエラー メッセージが表示された場合、「[エラー メッセージを解決する](#resolve-error-messages)」を参照してください。
 
-すべてのサービスでこの変更が有効になるまで、最大で 24 時間かかる場合があります。変更が有効になると、更新されたユーザー名を使って Outlook、Skype for Business、SharePoint にサインインする必要があるため、この変更について必ずユーザーに知らせてください。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ ms.locfileid: "44432089"
 
     「**申し訳ございません。ユーザーを編集できませんでした。情報を確認して、もう一度やり直してください。**」というエラー メッセージが表示された場合、「[エラー メッセージを解決する](#resolve-error-messages)」を参照してください。
 
-すべてのサービスでこの変更が有効になるまで、最大で 24 時間かかる場合があります。変更が有効になると、更新されたユーザー名を使って Outlook、Skype for Business、SharePoint にサインインする必要があるため、この変更について必ずユーザーに知らせてください。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ ms.locfileid: "44432089"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>「パラメーター名 'EmailAddresses' に一致するパラメーターが見つかりません」
 
-"**パラメーター名 'EmailAddresses' に一致するパラメーターが見つかりません**" というエラー メッセージが表示される場合、これは、最近追加したテナントまたはカスタム ドメインのセットアップに少し時間がかかっていることを意味します。セットアップ プロセスが完了するには、最大 4 時間かかります。しばらくすると、セットアップ プロセスが完了します。その後、やり直してください。問題が解決しない場合は、サポートにご連絡ください。サポートでは完全な同期を行います。
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>「申し訳ございません。ユーザーを編集できませんでした。 ユーザー情報を確認して、もう一度やり直してください」
 
@@ -226,15 +226,15 @@ ms.locfileid: "44432089"
 
 ## <a name="what-to-do-with-old-email-addresses"></a>古いメール アドレスの使用方法
 
-ユーザーの以前のプライマリ メール アドレスは、予備のメール アドレスとして保持されます。**古いメール アドレスは削除しないことを強くお勧めします。**
+A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
   
-一部のユーザーは引き続き、古いメール アドレス宛てにメールを送信する可能性があり、古いアドレスを削除すると、NDR 障害が発生することがあります。この場合、Microsoft は自動的に新しいメール アドレスに送信します。また、古い SMTP メール アドレスを再利用したり、新しいアカウントに適用したりしないでください。その場合も、NDR 障害が発生したり、または意図しないメールボックスに配信されたりする可能性があります。
+Some people will likely continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft will automatically route it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>ユーザーのオフライン アドレス帳がグローバル アドレス一覧と同期しない
 
-Exchange Online を使用している場合、またはアカウントが組織のオンプレミスの Exchange 環境とリンクされている場合は、ユーザー名とメール アドレスを変更するときに、次のようなエラー メッセージが表示されることがあります。"このユーザーは、ローカルの Active Directory と同期されています。詳細を編集できるのは、ローカルの Active Directory のみです。"
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you may see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-このエラーは、Microsoft Online 電子メール ルーティング アドレス (MOERA) が原因です。MOERA は、Active Directory のユーザーの  _userPrincipalName_ 属性から構成されており、初期同期中、自動的にクラウド アカウントに割り当てられます。一度作成されると、Office 365 で変更や削除を行うことができません。その後、Active Directory でユーザー名を変更できますが、MOERA は変更されず、グローバル アドレス一覧には新規に変更された名前が表示される問題が生じることがあります。 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it will not change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 この問題を解決するには、Microsoft 365 管理者の認証情報を使って [PowerShell 用 Azure Active Directory モジュール]( https://go.microsoft.com/fwlink/?LinkId=823193)にログインし、 次の構文を使用します。 
   
@@ -243,7 +243,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 ```
 
 > [!TIP]
-> これで、ユーザーの **userPrincipalName** 属性が変更され、ユーザーの Microsoft Online 電子メール ルーティング アドレス (MOERA) のメール アドレスにも影響を及ぼしません。ただし、最適な結果を得るには、ユーザーのログオン UPN をプライマリ SMTP アドレスと一致させてください。 
+> This changes the person's **userPrincipalName** attribute and has no bearing on their Microsoft Online Email Routing Address (MOERA) email address. It is best practice, however, to have the person's logon UPN match their primary SMTP address. 
   
 Windows Server 2003 以前のバージョンで Active Directory を使用して他のユーザーのユーザー名を変更する方法については、[ユーザー アカウントの名前の変更](https://go.microsoft.com/fwlink/?LinkId=809091)に関するページを参照してください。
   

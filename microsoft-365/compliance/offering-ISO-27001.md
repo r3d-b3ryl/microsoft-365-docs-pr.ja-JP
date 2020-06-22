@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c02e27ccf6b4c1a1c03849d1f599acef43385668
-ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
+ms.openlocfilehash: da379da565f853561141888c4f275852f0044103
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278460"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800002"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 情報セキュリティ管理基準
 
@@ -59,6 +59,7 @@ Microsoft Cloud における ISO/IEC 27001 のメリットをご確認くださ�
 - [Microsoft Professional Services](https://go.microsoft.com/fwlink/p/?linkid=2100022)
 - Microsoft Stream
 - Microsoft Threat Expert
+- Microsoft Translator
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 

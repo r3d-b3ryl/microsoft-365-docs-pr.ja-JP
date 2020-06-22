@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 9d678ca5ee9b8a8ebf4feadfb27826caa533967e
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254320"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773864"
 ---
 # <a name="european-union-model-clauses"></a>欧州連合モデル条項
 
@@ -86,7 +86,7 @@ Microsoft は EU 規格を継続的に調べ、必要に応じてサービスを
 - [EU データ保護条令](https://aka.ms/EU-DPD)
 - [欧州データ保護ボード](https://edpb.europa.eu/)
 - [Dynamics 365 および Office 365 の EU モデル条項に関する FAQ](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
-- [Microsoft と EU-米国 プライバシー シールド](https://go.microsoft.com/fwlink/p/?linkid=2099701)
+- [Microsoft と EU-米国 プライバシー シールド](offering-eu-us-privacy-shield.md)
 - [Microsoft Common Controls Hub コンプライアンス フレームワーク](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft  オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
