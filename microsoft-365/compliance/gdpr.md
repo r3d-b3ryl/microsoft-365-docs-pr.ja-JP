@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036210"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800022"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 
@@ -125,7 +125,7 @@ GDPR では、DPIA に次の事項を含めるよう規定されています。
 GDPR における管理者は、個人の権利と自由に対して高いリスクをもたらす可能性のあるデータ処理 (特に新しいテクノロジを使用した処理) を実行する前に、DPIA を実施する必要があります。 GDPR には、どのような場合に DPIA を実行する必要があるかに関してて、その一部を示した次のリストが用意されています。
 
 - データ主体への大きな影響 (法的な影響など) があるプロファイリングなどのアクティビティのために実行される自動化処理。  
-- 特殊なカテゴリの個人データ (人種や民族、政治的見解などが明らかになるデータ) や有罪判決や違反に関するデータを対象とした大規模な処理。  
+- 特殊なカテゴリの個人データ (人種や民族、政治的見解などを明らかするデータ) や有罪判決や違反に関するデータを対象とした大規模な処理。  
 - 公開アクセス可能な地域での体系的な大規模監視。  
 
 GDPR は、データ主体に対する高いリスクを最低限にするための十分な処理を特定できない場合は、何らかの処理を開始する前に、データ保護機関 (DPA) に相談することも求めています。
@@ -294,7 +294,6 @@ GDPR は、「個人データ」の収集、保管、使用、共有を規制し
 - 納税者番号
 - 勤務先の住所
 - クレジット カード/デビット カードの番号
-- ソーシャル メディアの投稿
 - ソーシャル メディアの投稿
 - IP アドレス (EU 地域)
 - 位置/GPS データ

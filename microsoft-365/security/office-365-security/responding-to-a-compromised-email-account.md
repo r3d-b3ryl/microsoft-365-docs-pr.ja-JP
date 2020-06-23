@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
-ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 8a7bb98432529bfca70764314d251810d3cdb2a4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588218"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819487"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
@@ -31,17 +31,18 @@ ms.locfileid: "44588218"
 
 ## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a>侵害された Microsoft 365 電子メール アカウントとは何か?
 
-Microsoft 365 のメールボックス、データ、およびその他のサービスへのアクセスは、ユーザー名とパスワードや暗証番号 (PIN) などの資格情報を使用して制御されます。意図したユーザー以外の何者かがこれらの資格情報を盗んだ場合、盗まれた資格情報は侵害されたと見なされます。攻撃者は盗んだ資格情報を使用して、正規のユーザーとしてサインインし、不正な操作を行うことができます。また、攻撃者は盗んだ資格情報を使用して、ユーザーの Microsoft 365 メールボックス、SharePoint フォルダー、または OneDrive 内のファイルにアクセスできます。よく見られるのは、組織の内外の受信者に正規のユーザーとして電子メールを送り付ける攻撃者です。データが攻撃者によって外部の受信者に電子メールで送信される事象をデータ流出と言います。
+Access to Microsoft 365 mailboxes, data and other services, is controlled through the use of credentials, for example a user name and password or PIN. When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised. With them the attacker can sign in as the original user and perform illicit actions.
+Using the stolen credentials, the attacker can access the user's Microsoft 365 mailbox, SharePoint folders, or files in the user's OneDrive. One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization. When the attacker emails data to external recipients, this is called data exfiltration.
 
 ## <a name="symptoms-of-a-compromised-microsoft-email-account"></a>侵害された Microsoft メール アカウントの兆候
 
-ユーザーが自分の Microsoft 365 メールボックスでの異常な活動に気付いて報告してくる場合があります。よく見られる兆候を以下に示します。
+Users might notice and report unusual activity in their Microsoft 365 mailboxes. Here are some common symptoms:
 
 - 電子メールの消失や削除などの不審な活動。
 
 - 侵害されたアカウントから電子メールを受信したが、その送信者の**送信済みアイテム** フォルダーに対応する電子メールが存在しない。
 
-- 意図したユーザーまたは管理者が作成していない受信トレイ ルールの存在。このようなルールによって、自動的に不明なアドレスに電子メールが転送されたり、**メモ** フォルダー、**迷惑メール** フォルダー、または **RSS 購読**フォルダーに移動されたりする場合があります。
+- The presence of inbox rules that weren't created by the intended user or the administrator. These rules may automatically forward emails to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.
 
 - グローバル アドレス一覧内のユーザーの表示名が変更される。
 
@@ -59,7 +60,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 ユーザーが上記の兆候のいずれかを報告してきた場合は、詳しい調査を実施する必要があります。 Microsoft 365 セキュリティ/コンプライアンス センターと Azure ポータルには、侵害が疑われるユーザー アカウントの活動を調査するためのツールが用意されています。
 
-- **セキュリティ/コンプライアンス センターの統合監査ログ**: 不審な活動が発生する直前から現在の日付までの範囲で結果をフィルター処理することにより、疑わしいアカウントのすべての活動を確認します。 検索中に活動をフィルタリングしないでください。
+- **Unified Audit Logs in the Security & Compliance Center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
 
 - **EAC の管理監査ログ**: Exchange Online では、Exchange 管理センター (EAC) を使用して管理者監査ログ内のエントリを検索および表示できます。 管理者監査ログには、管理者や管理者特権を割り当てられたユーザーが実行する、Exchange Online PowerShell コマンドレットに基づく特定の操作が記録されます。 管理者監査ログのエントリは、実行されたコマンドレット、使われたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトに関する情報を提供します。
 
@@ -79,7 +80,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 アカウントへのアクセスが回復されても、攻撃者がアカウントの制御を再開できるようなバック ドア エントリを追加している場合があります。
 
-次の手順を最後まで実行して、できるだけ早くアカウントへのアクセスを回復し、乗っ取り犯がアカウントの制御を再開できないことを確認する必要があります。次の手順は、乗っ取り犯がアカウントに追加したかもしれないバック ドア エントリを削除できるように支援します。この手順を完了したら、ウイルス スキャンを実行してコンピューターが侵害されていないことを確認することをお勧めします。
+You must perform all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account. These steps help you remove any back-door entries that the hijacker may have added to your account. After you perform these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.
 
 ### <a name="step-1-reset-the-users-password"></a>ステップ 1 ユーザーのパスワードをリセットする
 
@@ -92,12 +93,12 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 - パスワードは、強力で、大文字と小文字、少なくとも 1 つの数字、および少なくとも 1 つの特殊文字が含まれていることを確認してください。
 
-- 直近の 5 つのパスワードのいずれかを再利用しないでください。パスワードの履歴要件によって最近のパスワードを再利用できる場合でも、攻撃者が推測できないパスワードを選択する必要があります。
+- Don't reuse any of your last five passwords. Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.
 
 - オンプレミス ID が Microsoft 365 とフェデレーションされている場合は、パスワードをオンプレミスで変更してから、侵害を管理者に報告する必要があります。
 
 > [!TIP]
-> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。  MFA の詳細については、[こちら](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)で確認できます。
+> 特に、管理者特権を持っているアカウントの侵害を避けるために、多要素認証 (MFA) を有効にすることを強くお勧めします。  MFAの詳細については、[多要素認証をセットアップする]を参照してくださいhttps://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>ステップ 2 不審な電子メール転送アドレスを削除する
 
@@ -159,7 +160,7 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 4. **[アクセス許可]** をクリックします。
 
-5. 役割グループを手動で確認して、侵害された疑いのあるアカウントがいずれかのメンバーであるかどうかを確認します。もしそれが:
+5. Manually review the role groups to see if the suspected compromised account is a member of any of them.  If it is:
 
    a. 役割グループをクリックし、[**役割グループの編集**] をクリックします。
 
@@ -177,9 +178,9 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>ステップ 7 オプション: その他の予防手順
 
-1. 送信済みアイテムを確認します。連絡先リストに掲載されている人にアカウントが侵害されたことを通知する必要があります。攻撃者は、彼らにお金を要求したり、あなたが外国で足留めされ、お金が必要だなどと偽ったり、彼らにウイルスを送り付けて彼らのコンピューターも乗っ取ろうとしたりする可能性があります。
+1. Make sure that you verify your sent items. You may have to inform people on your contacts list that your account was compromised. The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.
 
-2. この Exchange アカウントを代替電子メール アカウントとして使用していた他のサービスが侵害されている場合があります。まず、Microsoft 365 サブスクリプションに対してこれらの手順を実行してから、その他のアカウントに対してこれらの手順を実行します。
+2. Any other service that used this Exchange account as its alternative email account may have been compromised. First, perform these steps for your Microsoft 365 subscription, and then perform these steps for your other accounts.
 
 3. 電話番号や住所などの連絡先情報が正しいことを確認します。
 
@@ -187,11 +188,11 @@ Microsoft 365 のメールボックス、データ、およびその他のサー
 
 Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。  [Microsoft 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Microsoft 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
 
-- 最初の 30 日間で完了すべき作業。すぐにユーザーに影響しますが、それほど大きな影響ではありません。
+- Tasks to accomplish in the first 30 days.  These have immediate affect and are low-impact to your users.
 
-- 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
+- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
 
-- 90 日以降。最初の 90 日間の作業で保護が強化されます。
+- Beyond 90 days. These enhancements build in your first 90 days work.
 
 ## <a name="see-also"></a>関連項目
 

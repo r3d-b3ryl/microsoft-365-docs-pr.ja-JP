@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
-ms.openlocfilehash: 330195cd9362722fccd5a8f7445abaee8a725857
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678751"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819067"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -46,7 +47,7 @@ ms.locfileid: "44678751"
 
 手順 1 は、PST ファイルを Microsoft 365 メールボックスにインポートするために、1 回だけ実行する必要があります。 これらの手順を実行した後、 PST ファイルのバッチのアップロードとインポートを行うたびに、手順 2 から手順 6 を実行します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-import-pst-files"></a>PST ファイルをインポートする前に
   
 - PST ファイルを Microsoft 365 メールボックスにインポートするには、Exchange Online で Mailbox Import Export の役割が割り当てられている必要があります。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Mailbox Import Export の役割は組織の管理の役割グループに追加できます。 または、役割グループを作成し、Mailbox Import Export の役割を割り当て、ユーザー自身をメンバーとして追加できます。 詳細については、「[役割グループを管理する](https://go.microsoft.com/fwlink/p/?LinkId=730688)」で「役割グループに役割を追加する」または「役割グループを作成する」のセクションを参照してください。
     
@@ -205,7 +206,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
   
 1. [PST インポート マッピング ファイルのコピーをダウンロードします](https://go.microsoft.com/fwlink/p/?LinkId=544717)。
 
-2. CSV ファイルを開くか、ローカル コンピューターに保存します。次の例は、完了した PST インポートのマッピング ファイル (メモ帳で開いた) を示しています。Microsoft Excel を使って CSV ファイルを編集するほうが、はるかに簡単です。
+2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
 
     ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl

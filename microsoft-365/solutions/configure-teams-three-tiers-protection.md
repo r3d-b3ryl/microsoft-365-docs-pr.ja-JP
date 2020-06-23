@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Microsoft Teams 内のファイルを保護するために推奨されている構成を取り上げます。
-ms.openlocfilehash: 129baed3286e445b9e0e440d4ec7f7a3402d3305
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 643ca5d5c340dc72cb375c114c2c7edaecf3dd46
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159433"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702514"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>3 層の保護を使ってチームを構成する
 
@@ -50,7 +50,7 @@ ms.locfileid: "44159433"
 
 次の表は、各層の構成の要約を示しています。 この構成を出発点として利用し、組織のニーズに合わせて構成を調整してください。 すべての層を必要としない場合があります。
 
-||**基準 (パブリック)**|**基準 (プライベート)**|**機密**|**高機密**|
+||ベースライン (パブリック)|ベースライン (プライベート)|機密|高機密|
 |:-----|:-----|:-----|:-----|:-----|
 |プライベート チームまたはパブリック チーム|パブリック|プライベート|プライベート|プライベート|
 |誰にアクセス権が与えられるか|B2B のユーザーを含む組織の全員。|チームのメンバーのみ。 他のユーザーが関連するサイトに対するアクセスを要求できる。|チームのメンバーのみ。|チームのメンバーのみ。|

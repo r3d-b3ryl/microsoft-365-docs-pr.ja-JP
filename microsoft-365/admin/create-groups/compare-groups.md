@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 使用可能なグループの種類について説明します。
-ms.openlocfilehash: b81bb09efedc503b49d2ed4aa10b1e7153116f14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388031"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780459"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
 Microsoft 365 管理センターの [ **グループ**] セクションでは、次の種類のグループを作成および管理できます。 
 
-- **Microsoft 365 グループ**は、社内外のユーザー間での共同作業に使用されます。
+- **Microsoft 365 グループ** (旧称 Office 365 グループ) は、会社の内外のユーザー間での共同作業に使用されます。
 - **配布グループ**は、ユーザーのグループに通知を送信するのに使用されます。
 - **セキュリティ グループ**は、SharePoint サイトなどのリソースへのアクセスを許可するために使用されます。
 - **メールが有効なセキュリティ グループ**は、SharePoint などのリソースへのアクセスを許可し、それらのユーザーにメールで通知を送信するために使用されます。
@@ -81,4 +81,4 @@ Microsoft 365 グループには、Outlook for iOS や Outlook for Android な�
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 グループについて](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Microsoft 365 グループについて](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
