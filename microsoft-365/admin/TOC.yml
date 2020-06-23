@@ -33,7 +33,7 @@
         - name: Teams をロールアウトする
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: すべてのユーザーを対象とするアプリのトレーニング
-          href: 'https://support.office.com/office-training-center'
+          href: 'https://support.microsoft.com/training'
         - name: 取得しているサブスクリプションが不明な場合
           href: admin-overview/what-subscription-do-i-have.md
         - name: サインイン ページをカスタマイズする
@@ -93,6 +93,8 @@
               href: manage/assign-licenses-to-users.md
             - name: 管理者ロールを割り当てる
               href: add-users/assign-admin-roles.md
+            - name: ゲスト ユーザー
+              href: add-users/about-guest-users.md
             - name: Microsoft 365 グループにゲストユーザーを追加する
               href: create-groups/manage-guest-access-in-groups.md
             - name: ユーザーからライセンスを削除する
@@ -170,7 +172,7 @@
               href: email/about-shared-mailboxes.md
             - name: 共有メールボックスを作成する
               href: email/create-a-shared-mailbox.md
-            - name: 共有メールボックスをセットアップする
+            - name: 共有メールボックスの設定を構成する
               href: email/configure-a-shared-mailbox.md
             - name: ユーザー メールボックスを共有メールボックスに変換する
               href: email/convert-user-mailbox-to-shared-mailbox.md
@@ -218,6 +220,8 @@
           href: manage/set-password-expiration-policy.md
         - name: アプリ起動ツールをカスタマイズする
           href: manage/customize-the-app-launcher.md
+        - name: 最新のアプリへとユーザーをアップグレードする
+          href: setup/upgrade-users-to-latest-office-client.md
         - name: アドインの一元展開の要件
           href: manage/centralized-deployment-of-add-ins.md
         - name: 一元展開でアドインをインストールして管理する
@@ -320,11 +324,11 @@
         - name: 予定表をゲスト ユーザーと共有する
           href: manage/share-calendars-with-external-users.md
         - name: ゲスト ユーザーとのチームを作成する
-          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: ゲストとの Teams 会議のスケジュールを設定する
-          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7'
+        - name: ゲスト ユーザーとの Teams 会議のスケジュールを設定する
+          href: 'https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a'
         - name: ゲスト ユーザーとの Teams 会議に参加する
-          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: トラブルシューティング
       href: 'https://docs.microsoft.com/office/troubleshoot/'
     - name: サポートに連絡
