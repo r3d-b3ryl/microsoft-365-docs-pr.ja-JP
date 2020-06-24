@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange メールと Exchange パブリック フォルダーに特に適用される保持動作について説明します。
-ms.openlocfilehash: db39ab0f1eca1cc03dd0bbb5ffb500658695247a
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 1455071bb8e7739b5d809af7d806d11e5c0e4a71
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292535"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800012"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Exchange のアイテム保持ポリシーの詳細
 
@@ -77,7 +77,7 @@ PowerShell を使用して、アイテム保持ポリシーから特定の種類
 
 ### <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
-ユーザーが組織を離れるときに、ユーザーのメールボックスがアイテム保持ポリシーに含まれていると、ユーザーの Office 365 アカウントが削除されるときにメールボックスは非アクティブなメールボックスになります。 非アクティブなメールボックスのコンテンツは、メールボックスが非アクティブになる前に配置されたアイテム保持ポリシーがあれば、引き続きその適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
+ユーザーが組織を離れるときに、ユーザーのメールボックスがアイテム保持ポリシーに含まれていると、ユーザーの Microsoft 365 アカウントが削除されるときにメールボックスは非アクティブなメールボックスになります。 非アクティブなメールボックスのコンテンツは、メールボックスが非アクティブになる前に配置されたアイテム保持ポリシーがあれば、引き続きその適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
 
 ## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Exchange のアイテム保持ポリシーを構成する方法
 
@@ -87,5 +87,6 @@ PowerShell を使用して、アイテム保持ポリシーから特定の種類
 
 - **Exchange メール、パブリック フォルダー、Office 365 グループ、OneDrive および SharePoint ドキュメントのコンテンツにのみポリシーを適用する**
 
-- [**特定の場所を選択する**] > [**Exchange メール**] と [**Exchange パブリック フォルダー**]
+- [**特定の場所を選択する**] > [**Exchange メール**]、[**Exchange パブリック フォルダー**] と ［**Office 365 グループ**］。
 
+Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール**の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 これらのメールボックスのコンテンツを保持するには、**Office 365 グループ**の場所を選択します。

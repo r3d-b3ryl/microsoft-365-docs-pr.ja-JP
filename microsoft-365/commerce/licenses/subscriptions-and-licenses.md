@@ -24,18 +24,20 @@ description: 'Microsoft 365 for business のサブスクリプションとライ
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402404"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844682"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Microsoft 365 for business のサブスクリプションとライセンスについて
 
 この記事では、サブスクリプションとライセンスの間の関係を説明し、[ライセンスを割り当てることができるユーザー](#find-out-who-can-assign-licenses)、[ライセンスを割り当てたときに発生すること](#understand-what-happens-when-you-assign-a-license-to-someone)、および[ユーザーが Office をインストールできるデバイスの数](#how-many-devices-can-people-install-office-on)についての追加情報を提供します。 また、[ユーザー以外のメールボックスのライセンスについて](#understand-licenses-for-non-user-mailboxes)へのリンクや、[ライセンス管理に関する記事](#articles-about-managing-licenses)へのリンクも含まれます。
   
 Microsoft 365 for business のサブスクリプションを購入する際には、月単位または年単位で支払いを行う一連のアプリケーションとサービスにサインアップします。 サブスクリプションの一部として受信するアプリケーションとサービスは、Microsoft 365 for business または Microsoft 365 Business Standard など、購入した製品によって異なります。 各製品の内容を確認するには、「 [Microsoft 365 を購入](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)する」ページを参照してください。 
+
+[小規模および中規模企業向けに Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)で利用可能なさまざまなライセンスオプションを確認できます。
 
 サブスクリプションを購入する場合、組織の人数に基づいて、必要なライセンス数を指定します。 購入の完了後、ユーザーのアカウントを作成し、各ユーザーにライセンスを割り当てます。 組織のニーズの変化に応じて、新しいユーザーに対応するためにライセンスを追加購入したり、組織を離れるユーザーのライセンスを他のユーザーに再割り当てしたりできます。 
 
@@ -44,14 +46,14 @@ Microsoft 365 for business のサブスクリプションを購入する際に�
   
 ## <a name="find-out-who-can-assign-licenses"></a>ライセンスを割り当てることができるユーザーを見つける
 
-個々の管理者が実行できるライセンスに関する作業は、その役割によって異なります。以下の表は、最も一般的なオプションをまとめたものです。管理者の役割と権限の詳細については、「[Office 365 の管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**管理者ロール**|**ライセンスを割り当てる**|**ライセンスの削除**|**追加ライセンスの購入**|**アカウントの削除**|
 |:-----|:-----|:-----|:-----|:-----|
 |グローバル管理者  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
 |課金管理者  <br/> |いいえ  <br/> |いいえ  <br/> |はい  <br/> |いいえ  <br/> |
-|ユーザー管理者  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |はい  <br/> |
-|サービス管理者  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |
+|ユーザー管理者  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |○  <br/> |
+|サービス管理者  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |×  <br/> |
 |パスワード管理者  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |
    
 ## <a name="understand-what-happens-when-you-assign-a-license-to-someone"></a>ユーザーにライセンスを割り当てたときに行われることを理解する
@@ -81,7 +83,7 @@ Microsoft 365 for business のサブスクリプションを購入する際に�
     
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>ユーザー以外のメールボックスのライセンスについて
 
-リソース メールボックス、会議室メールボックス、共有メールボックスにライセンスを割り当てる必要はありません。ただし、記憶域のクォータが 50 ギガバイト (GB) を超えた場合は、ライセンスの割り当てが必要になります。ユーザー以外のメールボックスの詳細については、以下の記事を参照してください。
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [共有メールボックスを作成する](../../admin/email/create-a-shared-mailbox.md)
     

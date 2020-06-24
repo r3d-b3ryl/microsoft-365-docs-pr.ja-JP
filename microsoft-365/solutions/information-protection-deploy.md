@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,24 +16,41 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 情報を保護し、データのプライバシー規制に準拠するように、セキュリティとサービスインフラストラクチャを構成します。
-ms.openlocfilehash: 35ccfb21accd969c2a2cbdddde9a4ec1c7eeed64
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695112"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854337"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Microsoft 365 を使用して、データプライバシー規制の情報保護を展開する
 
-このソリューションでは、Microsoft 365 services に格納されている個人データを計画および保護する方法についてのガイダンスを提供します。また、欧州連合の一般的なデータ保護規則 (GDPR) などのデータプライバシー規制に従う可能性があります。 このソリューションでは、Microsoft の該当する情報保護とコンプライアンスの機能、Microsoft コンプライアンススコア、および評価ツールに焦点を当てて、データをご理解いただくことができます。 
- 
-データのプライバシー要件やデータインシデント検出および応答ツールに対して Microsoft の id、デバイス、および脅威保護の各制御を使用する場合にも、追加情報が提供されます。 
+組織は、オンプレミスとクラウドの両方を含む、IT インフラストラクチャに格納されている個人情報に関する権限と制御を保護、管理、提供する必要がある地域データのプライバシー規制の対象となる場合があります。 データプライバシー規制の最も良い例は、欧州連合の一般的なデータ保護規則 (GDPR) です。 データプライバシー規制への準拠に失敗すると、膨大な罰金を得られることがあります。
 
-## <a name="organization-of-this-guidance-material"></a>このガイダンス資料の構成
+Microsoft 365 のデータの種類の例には、Microsoft Teams のチャットセッション、Exchange の電子メール、および SharePoint および OneDrive のファイルが含まれています。 このソリューションでは、データプライバシーの規制の対象となる Microsoft 365 services に格納されている個人データについて、データのプライバシーインシデントを特定、特定、保護、制御、および対応する方法についてのガイダンスを提供します。
+
+![データプライバシー規制のための情報の展開保護](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+
+また、データのプライバシーのニーズに合わせて Microsoft 365 の id、デバイス、および脅威保護の制御を使用する場合にも、追加情報が提供されます。 
+
+データのプライバシー規制に準拠するために情報を保護するための基準を満たすには、次の Microsoft 365 の機能と機能を使用します。
+
+| 機能 | 説明 | ライセンス |
+|:-------|:-----|:-------|
+| コンプライアンス マネージャー | Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを、Microsoft Service Trust Portal のこのワークフローベースのリスク評価ツールを使用して管理します。 | Microsoft 365 E3、E5 |
+| コンプライアンス スコア (プレビュー) | Microsoft 365 コンプライアンスセンターでの改善に関する、現在のコンプライアンス構成と推奨事項の全体的なスコアを参照してください。 | Microsoft 365 E3、E5 |
+| Office Advanced Threat Protection (ATP) | Microsoft 365 のアプリとデータ (電子メールメッセージ、Office ドキュメント、コラボレーションツールなど) を攻撃から保護します。 | Microsoft 365 E3、E5 | 
+| 秘密度ラベル | ユーザーの生産性を低下させることなく、組織のデータを分類して保護することができます。また、電子メール、ファイル、またはサイトにさまざまなレベルの保護を使用してラベルを作成することによって、共同作業が妨げられます。 | Microsoft 365 E3、E5 |
+| データ損失防止 (DLP) | 内部と外部の両方で個人情報を含むデータの共有など、危険、偶発的、または不適切な共有の検出、警告、ブロックを行います。 | Microsoft 365 E3、E5 | 
+| データ保持ラベルとポリシー | お客様の組織のポリシーやデータの規制に準拠するために、お客様の個人データの保存に関するデータと要件を維持する時間など、情報ガバナンス統制を実装します。 | Microsoft 365 E3、E5 |
+| メールの暗号化 | 顧客の個人データなどの規制データを含む、組織内外のユーザー間で暗号化された電子メールメッセージの送受信を行います。 | Microsoft 365 E3、E5 |
+||||
+
+## <a name="organization-of-the-guidance-in-this-solution"></a>このソリューションのガイダンスの編成
 
 1つまたは複数のプライバシー関連の規制の対象となる個人データの識別、管理、制御、監視に使用できる Microsoft 365 ツールの理解を助けるために、このガイダンスはセクションで構成されています。
  
-![情報保護を展開し、データのプライバシー規制を遵守する](../media/information-protection-deploy/information-protection-deploy-grid.png)
+![データプライバシー規制のための情報の展開保護](../media/information-protection-deploy/information-protection-deploy-grid.png)
 
 これらの各セクションは、このソリューションの個別の記事に対応しています。
 

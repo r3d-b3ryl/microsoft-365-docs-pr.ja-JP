@@ -17,20 +17,20 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545936"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844884"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft セキュア スコアの新機能
 
-Microsoft のセキュリティ[スコア](microsoft-secure-score-new.md)をより良いものにして、セキュリティの状況をより良くし、利便性を向上させるために、近い将来にいくつかの変更を加えています。 お客様のスコアと最大可能スコアが新しくなります。 ただし、これによりセキュリティ体制が変わるわけではありません。
+Microsoft のセキュリティ[スコア](microsoft-secure-score.md)をより良いものにして、セキュリティの状況をより良くし、利便性を向上させるために、近い将来にいくつかの変更を加えています。 お客様のスコアと最大可能スコアが新しくなります。 ただし、これによりセキュリティ体制が変わるわけではありません。
 
-最近の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-new.md#whats-new)」を参照してください。
+最近の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score.md#whats-new)」を参照してください。
 
-## <a name="june-2020"></a>2020年6月
+## <a name="june-2020"></a>2020 年 6 月
 
 ### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションを削除する
 
@@ -51,5 +51,5 @@ Microsoft のセキュリティ[スコア](microsoft-secure-score-new.md)をよ�
 * Office アプリケーションが他のプロセスにコードを挿入するのをブロックする
 * 実行可能ファイルが、流行、年齢、または信頼できるリストの条件を満たしていない限り、実行を禁止する
 * PSExec および WMI コマンドからのプロセス作成をブロックする
-* Windows ローカルセキュリティ機関サブシステム (lsass.exe) からの資格情報の盗用をブロックする
+* Windows ローカルセキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)
 * Office マクロからの Win32 API 呼び出しをブロックする

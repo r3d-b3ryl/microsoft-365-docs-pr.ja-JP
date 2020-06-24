@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Office デスクトップアプリの新機能である office デスクトップアプリのエンドユーザーに対して、どの機能とその新しいコンテンツを表示するか、または非表示にするかを決定します。
-ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 9f63da1870253c9023fa1e2e169bae22435807e4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717177"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844730"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>新機能管理を使用して新機能を表示または非表示にする
 
@@ -42,13 +42,9 @@ Office の新機能 Microsoft 365 管理センターと[クライアント構成
 管理者は、チャネルの最新情報をプレビューしたり、Office の新機能を使用してコンテンツのリリースを管理したりできます。
 
 1. Microsoft 365 管理センターの [**設定**] で、[**組織の設定**] を選択します。
-
 2. [**サービス**] タブで、[ **Office の新機能**] [管理] を選択します。
-
 3. 機能名、短い説明、アプリケーション、および各機能のリリースバージョンを、フライアウトパネルに表示するには、1つまたは複数の機能を選択します。
-
 4. [**ユーザーに表示**しない] または [**ユーザーに表示] を**選択します。  
-
     既定で**表示**される状態は、管理者が機能の状態を**非表示**または**表示**に設定するまで、ユーザーに既定で機能の情報が表示されることを示します。  
 
     > [!NOTE]
@@ -65,6 +61,13 @@ Office には、このスケジュールに基づいて新しい機能が追加�
 |**半期エンタープライズ** <br/> |1月1日と7月1日 <br/> | 新機能をもたらすメジャーリリースの2週間前<br/> |
 
 チャネル更新スケジュールの詳細については、「 [Microsoft 365 アプリの更新履歴 (日付別の一覧)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)」を参照してください。
+
+## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>Office の新しい管理カードを管理センターのホームページに追加する
+
+1. [Microsoft 365 admin] ページで、ページの上部にある [カードの追加] を選択します。
+2. [ **Office アプリの新機能**] を一覧で見つけ、それを選択します。
+3. カードがホームページに表示されたら、[**管理**] を選択して、yor 組織の[機能を表示または非表示](#show-or-hide-new-features)にすることができます。 
+
 
 ## <a name="related-articles"></a>関連記事
 

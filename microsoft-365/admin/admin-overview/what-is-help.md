@@ -3,11 +3,10 @@ title: Microsoft 365 管理センターでヘルプを表示する方法
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: Microsoft 365 管理センターを使用してヘルプを取得する方法について説明します。
-ms.openlocfilehash: eea5e58ba571cebd7d73202fa8f6c01ba06b8e44
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b10eb75e1a7d02c384c915ad814dddc9f3c6954f
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386771"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844718"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -35,66 +34,11 @@ ms.locfileid: "44386771"
 
 管理者であれば、 [admin.microsoft.com](https://admin.microsoft.com)を使用して、microsoft 365 サブスクリプションを管理し、最大限に活用することができます。 場合によっては、タスクフローで着手前にコンテキストを増やす必要があるかもしれません。また、管理者としてのアクションの範囲や影響がわからないこともあります。これらの状況に対応するために、Microsoft 365 管理センター全体で次のような方法で最新のヘルプとインテリジェントな支援を提供しています。
 
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>統合ヘルプ</h3>
-                            <p>管理センターのヘルプ</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>インテリジェントなアシスタント</h3>
-                            <p>AI によるセルフヘルプ</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>ガイドと記事</h3>
-                            <p>Web 上の包括的なコンテンツ</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
- 
+* **統合ヘルプ**-管理センターのヘルプ
+
+* **インテリジェントな支援**-AI が提供するセルフヘルプ
+
+* **ガイドと記事**-web 上の包括的なコンテンツ
 
 ## <a name="integrated-help"></a>統合ヘルプ
 

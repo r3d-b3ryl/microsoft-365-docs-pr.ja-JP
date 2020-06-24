@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: ゲストアクセスを制御するために、Microsoft 365 グループにゲストを追加し、ゲストユーザーを表示し、PowerShell を使用する方法について説明します。
-ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761664"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854248"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Microsoft 365 グループでゲストアクセスを管理する
 
@@ -47,7 +47,7 @@ ms.locfileid: "44761664"
 
 グループのゲスト アクセスを有効または無効にするには、Microsoft 365 管理センターで行うことができます。
 
-1. 管理センターで、[設定] [ **Settings** \> **組織設定**] に移動し、[**サービス**] タブの [ **Microsoft 365 グループ**] を選択します。
+1. 管理センターで、[すべての設定の表示] [組織設定 **]** の順に移動し、[ \> **Settings** \> **Org settings** **サービス**] タブの [ **Microsoft 365 グループ**] を選択します。
   
 2. [ **Microsoft 365 Groups** ] ページで、組織外のユーザーにグループリソースへのアクセスを許可するか、グループ所有者に組織外のユーザーをグループに追加させるかを選択します。
 

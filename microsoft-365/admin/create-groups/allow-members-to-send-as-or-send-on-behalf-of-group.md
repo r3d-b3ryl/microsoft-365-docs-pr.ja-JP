@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: メンバーが Microsoft 365 グループとしてメールを送信できるようにする方法、または Microsoft 365 グループの代理としてメールを送信できるようにする方法について説明します。
-ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 090a5e177ed843c035155cd735e0b7b9560e5631
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780471"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844670"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループに代わって送信または送信できるようにする
 
@@ -76,6 +76,9 @@ ms.locfileid: "44780471"
 5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 [ **OK]** を選択して、**保存**します。
     
     ![リストからユーザーを検索または選択するには、「」と入力します。](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+> [!NOTE]
+> 変更が反映されるまでに最大2時間かかる場合があります。
 
 ## <a name="related-articles"></a>関連記事
 

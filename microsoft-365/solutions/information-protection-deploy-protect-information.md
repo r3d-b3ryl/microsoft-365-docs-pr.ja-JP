@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスの機能を展開し、個人情報を保護します。
-ms.openlocfilehash: 5a6cc6645be6cad4d901922c0a257d2175c85341
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695151"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844694"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>情報をデータプライバシーの規則に従って保護する
 
@@ -82,7 +82,7 @@ Microsoft 365 以外の情報保護機能の詳細については、以下を参
 - [Microsoft エンドポイントマネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
-## <a name="sensitivity-labels"></a>秘密度ラベル
+## <a name="sensitivity-labels"></a>機密ラベル
 
 Microsoft Information Protection フレームワークからの機密ラベルを使用すると、ユーザーの生産性やコラボレーション機能が妨げられることなく、組織のデータを分類して保護することができます。
 
@@ -283,11 +283,8 @@ DLP ポリシーの作成と適用の詳細については、[この記事](../c
 
 ![DLP を使用した機密ラベルの例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-<!--
+[この画像のより大きいバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
-
--->
 この図に示されているように、DLP および機密ラベルを使用したデータ保護シナリオをいくつか示します。
 
 | シナリオ | プロセス |

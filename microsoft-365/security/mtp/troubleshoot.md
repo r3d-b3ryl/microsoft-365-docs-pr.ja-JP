@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bbc7d5d434765b94b0b2707605be2edfbbc8e423
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661983"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844920"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Microsoft Threat Protection サービスに関する問題のトラブルシューティング
 
@@ -44,12 +44,7 @@ ms.locfileid: "41661983"
 
 詳細については、「[Azure ATP 統合](https://docs.microsoft.com/cloud-app-security/aatp-integration)」を参照してください。
 
-## <a name="is-microsoft-threat-protection-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Microsoft Threat Protection は、米国政府機関向けコミュニティ クラウド (GCC) または GCC High で使用できますか?
-現時点では、使用できません。
-
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>サービスをオンにするための設定ページはどこにありますか。
 Microsoft の脅威保護を有効にするには、Microsoft 365 セキュリティセンターのナビゲーションウィンドウの**設定**にアクセスします。 このナビゲーション項目は、[必要なアクセス許可とライセンス](mtp-enable.md#check-license-eligibility-and-required-permissions)がある場合にのみ表示されます。
-
-## <a name="can-i-use-an-add-on-instead-of-the-required-e5-licenses"></a>必要な E5 ライセンスではなくアドオンを使用できますか?
-現在、Microsoft の脅威保護に対するアドオンはありません。 [ライセンス要件を参照してください。](prerequisites.md) 
+ 
 

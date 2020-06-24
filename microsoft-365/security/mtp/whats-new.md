@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
-ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
+ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44820550"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854296"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft Threat Protection の新機能
 
@@ -30,6 +30,9 @@ RSS フィード: このページが更新されたときに通知を取得す�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="june-2020"></a>2020 年 6 月
+- Twitter フィード <br> 最新のセキュリティ研究、脅威インテリジェンス、製品ニュース、およびダッシュボード内部の詳細を取得します。
+
 ## <a name="february-2020"></a>2020 年 2 月
 - [インシデント](incidents-overview.md) <br> 攻撃が開始された場所とその他の詳細を正確に把握して、攻撃の範囲を確認します。
 - [自動調査および対応](mtp-autoir.md) <br> セキュリティ運用チームは AIR を使用することで、セキュリティの警告やインシデントへの組織の対応能力を大幅に向上させることが可能です。

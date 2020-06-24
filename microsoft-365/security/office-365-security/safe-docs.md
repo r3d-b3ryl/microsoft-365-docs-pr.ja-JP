@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 E5 または Microsoft 365 E5 セキュリティの安全なドキュメントについて説明します。
-ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
+ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811064"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44835353"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
@@ -28,9 +28,9 @@ ms.locfileid: "44811064"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- この機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティライセンスを持つユーザーのみが使用できます。
+- Office バージョン 2004 (12730) を使用しているユーザーが、安全なドキュメントを使用できるようになりました。 この機能は既定でオフになっており、セキュリティ管理者が有効にする必要があります。
 
-- 現在、安全なドキュメントはパブリックプレビューで利用できます。これは、office [Insider program](https://insider.office.com/join)の一部である (プレビュー) office バージョン 2002 (12527.20092) 以上のユーザーが利用できます。 この機能は既定でオフになっており、セキュリティ管理者が有効にする必要があります。
+- この機能は、 *microsoft 365 E5*または*Microsoft 365 E5 セキュリティ*ライセンスを持つユーザーのみが使用できます (Office 365 ATP プランには含まれていません)。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -40,7 +40,7 @@ ms.locfileid: "44811064"
 
 保護された状態を維持するために、安全なドキュメントは、分析のために[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)クラウドにファイルを送信します。
 
-- Microsoft Defender Advanced Thread Protection がデータを処理する方法の詳細については、[こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)を参照してください。
+- Microsoft Defender Advanced Threat Protection がデータをどのように処理するかの詳細については、[こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)を参照してください。
 - 上記のガイドラインに加えて、安全なドキュメントによって送信されたファイルは、分析に必要な時間を超えて (通常は24時間未満)、Defender に保持されません。
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>セキュリティ & コンプライアンスセンターを使用して安全なドキュメントを構成する
@@ -51,7 +51,7 @@ ms.locfileid: "44811064"
 
 3. [ **Office アプリケーションで保護されたビューの外部で開くファイルを信頼する**] セクションで、次のどちらかの設定を構成します。
 
-   - **Office クライアントに対して安全なドキュメントを有効にする (詳細な分析のためにファイルは Microsoft Cloud にも送信されます)**
+   - **Office クライアントの安全なドキュメントを有効にする**
 
    - **安全なドキュメントが悪意のあるファイルを識別している場合でも、保護されたビューのクリックをユーザーに許可**します。このオプションは有効にしないことをお勧めします。
 
@@ -64,7 +64,7 @@ ms.locfileid: "44811064"
 次の構文を使用してください。
 
 ```powershell
-Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$false>
+Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
 - _Enablesafedocs_パラメーターは、組織全体に対して安全なドキュメントを有効または無効にします。

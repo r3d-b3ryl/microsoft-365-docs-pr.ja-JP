@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773853"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844908"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
 
@@ -60,7 +60,7 @@ Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.
 > ライセンス情報を表示するには、 [AZURE AD の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)**課金管理者**または**グローバル閲覧**者の役割のいずれかが割り当てられている必要があります。 アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-必要な役割の一覧と、データへのアクセスを規制する方法については、「 [Microsoft の脅威保護へのアクセスの管理](mtp-permissions.md)について」を参照してください。
+Microsoft の脅威保護を有効にするには、Azure Active Directory の**グローバル管理者**または**セキュリティ管理者**である必要があります。 Microsoft の脅威保護を使用するために必要な役割の一覧と、データへのアクセスを規制する方法については、「 [microsoft の脅威保護へのアクセスの管理](mtp-permissions.md)」を参照してください。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 Microsoft Edge、Internet Explorer 11、または任意の HTML 5 準拠の web ブラウザーを使用して、microsoft 365 セキュリティセンターの Microsoft 脅威保護にアクセスします。

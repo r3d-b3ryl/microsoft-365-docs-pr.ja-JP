@@ -18,16 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 '
-ms.openlocfilehash: 7602042c0bd8fb46b497bdf0fc16bb6b02809074
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726534"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818987"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
-
-## <a name="introduction"></a>概要
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 その場合は、セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 なぜ統合監査ログが必要なのでしょうか。 Office 365 で以下の種類の[ユーザーおよび管理アクティビティ](#audited-activities)を検索できるためです:
 
@@ -65,7 +64,7 @@ ms.locfileid: "44726534"
 
 - SharePoint Online または Microsoft Teams を使用するサイトの機密ラベルのユーザーおよび管理アクティビティ
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="requirements-to-search-the-audit-log"></a>監査ログを検索するための要件
 
 監査ログの検索を開始する前に、次の項目を必ず確認してください。
 
@@ -916,7 +915,7 @@ Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Direc
 
 **イベント発生後、監査レコードが使用できるようになるまでどのくらいの時間がかかりますか? **
 
-ほとんどの監査データは 30 分以内に利用可能になりますが、イベントが発生してから対応する監査ログ エントリが検索結果に表示されるまでに最大 24 時間かかる場合があります。 この記事の「[始める前に](#before-you-begin)」セクションの表に、さまざまなサービスのイベントが利用可能になるまでの時間を示します。
+ほとんどの監査データは 30 分以内に利用可能になりますが、イベントが発生してから対応する監査ログ エントリが検索結果に表示されるまでに最大 24 時間かかる場合があります。 この記事の「[監査ログを検索するための要件](#requirements-to-search-the-audit-log)」セクションの表に、さまざまなサービスのイベントが利用可能になるまでの時間を示します。
 
 **監査レコードの保持期間はどのくらいですか? **
 
@@ -932,7 +931,7 @@ Yes. The Office 365 Management Activity API is used to fetch the audit logs prog
 
 **監査ログを取得したい各サービスで監査を個別に有効にする必要がありますか? **
 
-ほとんどのサービスでは、最初に組織の監査を有効にした後で、既定で監査が有効になります (この記事の「[始める前に](#before-you-begin)」セクションを参照してください)。
+ほとんどのサービスでは、最初に組織の監査を有効にした後で、既定で監査が有効になります (この記事の「[監査ログを検索するための要件](#requirements-to-search-the-audit-log)」セクションを参照してください)。
 
 **監査サービスは、レコードの重複除去をサポートしますか?**
 
