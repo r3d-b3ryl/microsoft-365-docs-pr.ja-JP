@@ -16,13 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange ハイブリッド展開のオンプレミス ユーザーが使用している Microsoft Teams チャット データ (1xN チャットと呼ばれます) を検索してエクスポートします。
-ms.openlocfilehash: ab523c0d2d334d3d2366711e241b3bafa2e0002f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: Exchange ハイブリッド展開のオンプレミス　ユーザーの Teams チャットデータを検索してエクスポートするには、セキュリティ / コンプライアンス センターのコンテンツ検索ツールを使用します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 159c9c674feca4b01618289b194dd162c9020d59
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352120"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818886"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>オンプレミス ユーザーのクラウドベース メールボックスの検索
 

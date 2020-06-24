@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: Microsoft Service Trust Portal のコンプライアンス マネージャーでは、コントロールの追跡、実装、管理を行えるツールが用意されています。それらのツールは、Office 365 や Microsoft Azure などの Microsoft クラウド サービスを扱う際に、組織がセキュリティおよびデータ保護に関する業界標準 (GDPR、ISO 27001 および 27018、HIPAA など) に準拠するのに役立ちます。コンプライアンス マネージャーは、組織のデータ保護とプライバシー対策を講じる担当者が、コンプライアンスとリスク評価のプロセスを管理するのに役立ちます。
+description: データ保護と規制の要件を満たすために、Microsoft Service Trust Portal のコンプライアンス マネージャーの使用方法をご説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165968"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815598"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft コンプライアンス マネージャー (クラシック)
 
@@ -48,16 +48,16 @@ ms.locfileid: "44165968"
 
     
 > [!IMPORTANT]
-> コンプライアンス マネージャーは、データ保護とコンプライアンスの現状の要約と、データ保護とコンプライアンスを改善するための推奨事項を提供するダッシュボードです。コンプライアンス マネージャーに表示される顧客アクションは推奨事項です。実装前に、各組織がそれぞれの規制環境でこれらの推奨事項が有効かどうかを評価する必要があります。コンプライアンス マネージャーでの推奨事項はコンプライアンスを保証するものではありませんので、ご注意ください。
+> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
     
 ## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは?
 
-コンプライアンス マネージャーは、クラウドの共有責任モデル内でコンプライアンスを管理するために設計されたワークフロー ベースのリスク評価ツールです。コンプライアンス マネージャーが提供するダッシュボード ビューには、標準と規則、および Microsoft のコントロール実装の詳細、テスト結果、顧客コントロール実装ガイダンス、組織が入力する進捗管理などの評価が表示されます。コンプライアンス マネージャーは、証明書評価コントロールの定義、コントロールの実装とテストに関するガイダンス、コントロールでの危険度に重点を置いたスコア、ロールベースのアクセス管理、およびインプレース コントロール アクション割り当てのワークフローを提供して、コントロールの実装、テストの状態、証拠の管理を追跡できるようにします。コンプライアンス マネージャーは、ユーザーが論理的に評価をグループ化し、同じコントロールまたは関連するコントロールに評価コントロール テストを適用できるようにして、コンプライアンスの作業負荷を最適化し、作業の重複を削減します。コンプライアンス マネージャーを使用しないと、異なる証明書間の同じコントロールの要件を満たすための作業が重複してしまう可能性があります。
+Compliance Manager is a workflow-based risk assessment tool designed to help you manage regulatory compliance within the shared responsibility model of the cloud. Compliance Manager provides you with a dashboard view of standards and regulations and assessments that contain Microsoft's control implementation details and test results and customer control implementation guidance and tracking for your organization to enter. Compliance Manager provides certification assessment control definitions, guidance on implementation and testing of controls, risk-weighted scoring of controls, role-based access management, and an in-place control action assignment workflow to track control implementation, testing status and evidence management. Compliance Manager optimizes compliance workload by enabling customers to logically group assessments together and apply assessment control testing to identical or related controls, reducing the duplication of effort that might otherwise be required to satisfy identical control requirements across different certifications.
 
 ## <a name="assessments-in-compliance-manager"></a>コンプライアンス マネージャーでの Assessment
 
-コンプライアンス マネージャーのコア コンポーネントは *Assessment* (評価) と呼ばれます。これは、証明書基準やデータ保護規則 (ISO 27001:2013、GDPR など) についての Microsoft サービスに対する評価を指します。Assessment により、組織のデータ保護およびコンプライアンスへの取り組みが、選択された Microsoft クラウド サービスの業界標準に準じているかどうかを確認することができます。評価対象の証明書標準にマップされるコントロールを実装すると、Assessment は完了します。 
+The core component of Compliance Manager is called an *Assessment*. An Assessment is an assessment of a Microsoft service against a certification standard or data protection regulation (such as ISO 27001:2013, and the GDPR). Assessments help you to discern your organization's data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of the controls that map to the certification standard being assessed. 
   
 Assessment の構造は、マイクロソフトとお客様の組織の間で共有される責任に基づいています。クラウド内のセキュリティとコンプライアンス リスクを評価し、コンプライアンス標準、データ保護標準、規制、また法律によって指定されたデータ保護のセーフガードを実装する仕組みになっています。
   
@@ -65,13 +65,13 @@ Assessment は、以下の複数のコンポーネントで構成されていま
   
 - **In-Scope Services** - 各評価は Microsoft サービスの特定のセットに適用されます。評価が適用されるサービスは [In-Scope Services] セクションに記載されています。 
     
-- **マイクロソフト管理のコントロール** - マイクロソフトは、さまざまな標準および規制遵守の一環として、クラウド サービスごとに一連の*コントロール*の実装と管理を行っています。これらのコントロールは、Assessment が適用されている証明書または規制の構造に沿った形で、*コントロール ファミリー*に編成されています。マイクロソフトがコントロールをどのように実装し、また、独立したサード パーティの監査担当者によって実装がいつどのようにテストおよび検証されたかについての詳細情報を、コンプライアンス マネージャーで、マイクロソフト管理のコントロールごとに確認できます。 
+- **Microsoft-Managed Controls** - For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft-managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
     
     ここでは、Office 365 と GDPR の Assessment からの **[セキュリティ]** コントロール ファミリーにおける 3 つのマイクロソフト管理のコントロールの例を紹介します。 
 
     ![コンプライアンス マネージャーにおけるマイクロソフト管理のコントロールの詳細](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
-  a. マイクロソフト管理のコントロールにマップされる証明書または規制からの次の情報を指定します。
+  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
   - **コントロール ID** - コントロールのマップ先の証明書または規制のセクションまたは記事番号。
     
@@ -81,15 +81,15 @@ Assessment は、以下の複数のコンポーネントで構成されていま
     
   - **説明** - 選択したマイクロソフト管理のコントロールにマップされる標準または規制の本文。
 
-  b. コントロールのコンプライアンス スコアで、マイクロソフト管理の各コントロールに関連付けられる (非準拠またはコントロールの失敗による) リスクのレベルを示します。詳細については、「[コンプライアンス スコアについて](#understanding-the-compliance-score)」を参照してください。なお、コンプライアンス スコアは 1 から 10 段階で評価され、色分けされています。黄色はリスクの低いコントロール、オレンジは中程度のリスクのコントロール、赤は高いリスクのコントロールを示します。 
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-  c. コントロールの実装状態、コントロールがテストされた日付、テストを実施した担当者、およびテスト結果に関する情報。
+  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
     
-  d. **[詳細]** をクリックすると、マイクロソフトのコントロールの実装や、独立したサード パーティの監査人によるコントロールのテストおよび検証方法などの詳細情報を、コントロールごとに確認できます。 
+  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
     
-- **顧客管理のコントロール** - お客様の組織が管理するコントロールのコレクションです。組織には、所定の標準や規則へのコンプライアンスのプロセスの一環として、これらのコントロールを実装する責任があります。顧客管理のコントロールも、対応する証明書または規制のコントロール ファミリーに編成されます。コンプライアンス活動の一環として、マイクロソフトが提案する推奨アクションを実装するには、顧客管理のコントロールを使用します。組織は、それぞれの顧客管理のコントロールにおける規範的なガイダンスと推奨される顧客アクションを使用して、そのコントロールの実装と評価のプロセスを管理できます。
+- **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
     
-    Assessment における顧客管理のコントロールには、Assessment 完了までの組織の手順の管理および追跡ができる、組み込みのワークフロー管理機能もあります。たとえば、組織のコンプライアンス責任者は、実施項目を IT 管理者に割り当てることができます。IT 管理者は、コントロールに関する推奨アクションを実施する責任者でもあり、アクション実施に必要な権限を持ちます。割り当てが完了すると、IT 管理者は実装タスク (構成またはポリシー設定のスクリーンショットなど) の証拠をアップロードできます。それから、実施項目をコンプライアンス責任者に再度割り当てて、収集した証拠の評価、コントロール実装のテスト、実装日とテスト結果の記録を、コンプライアンス マネージャーで実施できます。詳細については、記事の「[評価プロセスの管理](#managing-the-assessment-process)」セクションを参照してください。 
+    Customer-managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screenshots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](#managing-the-assessment-process) section in the article. 
   
 ## <a name="permissions-and-role-based-access-control"></a>アクセス許可とロールベースのアクセス制御
 
@@ -97,7 +97,7 @@ Assessment は、以下の複数のコンポーネントで構成されていま
   
 なお、既定の**ゲスト アクセス** ロールはなくなりました。 コンプライアン スマネージャーにアクセスして操作するには、各ユーザーは役割を割り当てられている必要があります。
   
-以下の表では、各コンプライアンス マネージャーのアクセス許可と、ユーザーに許可されている操作について説明しています。また、この表は、各アクセス許可が割り当てられるロールも示しています。
+The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned to.
   
 ||**コンプライアンス マネージャー リーダー**|**コンプライアンス マネージャー投稿者**|**コンプライアンス マネージャー評価者**|**コンプライアンス マネージャー管理者**|**ポータル管理者**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -105,7 +105,7 @@ Assessment は、以下の複数のコンポーネントで構成されていま
 |**データの編集** - ユーザーは [テスト結果] および [テスト日] フィールドを除くすべてのフィールドを編集できます。  <br/> ||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**テスト結果の編集** - ユーザーは [テスト結果] および [テスト日] フィールドを編集できます。  <br/> ||<br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**評価の管理** - ユーザーは、Assessment の作成、アーカイブ、削除ができます。  <br/> |||<br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**ユーザーの管理** - ユーザーは、組織内の他のユーザーをリーダー、投稿者、評価者、管理者のロールに追加できます。組織内でグローバル管理者ロールを持つユーザーのみが、ユーザーをポータル管理者ロールに追加したり、ポータル管理者ロールからユーザーを削除したりすることができます。<br/> ||||<br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Manage users** - Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br/> ||||<br/> |![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>コンプライアンス スコアについて
 
@@ -125,17 +125,17 @@ Assessment は、以下の複数のコンポーネントで構成されていま
   
 ![コンプライアンス マネージャー - 重大度が低い Assessment コントロール - スコア 3](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
-コンプライアンス マネージャーでは、各コントロールに既定の重大度ランキングが割り当てられます。リスクのランキングは、以下の基準に基づいて算出されます。
+The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
   
 - コントロールがインシデントの発生を阻止するのか (最も高いランク)、発生したインシデントを検出するか、あるいはインシデントの影響を修正するか (最も低いランク)。 重大度ランキングでは、脅威防止の必須のコントロールには、最も高いポイント数が割り当てられます。(必須か任意かに関わらず) 検出または修正のコントロールには最も低いポイント数が割り当てられます。
     
 - (実装後) これらのコントロールが必須で、ユーザーがバイパスできない (たとえば、ユーザーがパスワードをリセットし、パスワードの長さと文字の要件を満たす必要があるなど)、それとも任意でユーザーがバイパスできるか (たとえば、ユーザーがコンピューターから離れるときに画面をロックすることを求める業務ルールなど)。
     
-- データの機密性、整合性、可用性のリスクに関するコントロールの場合は、これらのリスクが内部と外部のどちらの脅威から生じるのか、またその脅威が悪意のあるものか偶発的なものなのかに基づいて算出します (たとえば、外部の攻撃者がネットワークに侵入し、個人を特定できる情報にアクセスするのを阻止するコントロールには、従業員がネットワーク ルーターの設定を誤って構成してネットワークを停止させる問題を防ぐコントロールよりも多くのポイントが割り当てられます)。
+- Controls related to risks to data confidentiality, integrity, and availability, whether these risks come from internal or external threats, and whether the threat is malicious or accidental. For example, controls that would help prevent an external attacker from breaching that network and gaining access to personally identifiable information would be assigned more points than a control related to preventing an employee from accidentally mis-configuring a network router setting that results in a network outage).
     
 - 各コントロールの契約、規制、公約などの法的および外的要因に関連するリスク。
     
-コントロールに表示されているコンプライアンス スコアの値は、合格/不合格 (コントロールが実装され、その後の評価テストに合格したかどうか) に基づいて、*合計値*としてコンプライアンス スコアの合計に適用されます。一部の実装へのクレジットは値には反映されません。コントロールの**実装状態**が **[実装済み]** または **[別の実装]** に設定され、**テスト結果**が **[合格]** に設定されている場合にのみ、割り当て済みのポイントがコンプライアンス スコアの合計に追加されます。 
+The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it does not; there is no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score. 
   
 最も重要な点は、コンプライアンス スコアを使用すると、コントロールに関連する障害が発生した場合にリスクがより高くなる可能性があるコントロールがわかるので、実装に際して重点を置くコントロールの優先順位を付けやすくなることです。 リスクベースの優先順位付けだけでなく、評価コントロールが他のコントロール (同じ評価内または同じ評価グループの別の評価内のいずれか) に関連する場合、1 つのコントロールを正常に完了すると、コントロールのテスト結果が同期して、作業が大幅に削減される可能性があります。
   
@@ -145,7 +145,7 @@ Assessment は、以下の複数のコンポーネントで構成されていま
   
 評価内で、GDPR コントロール 7.5.5 は他の 5 つのコントロール (7.4.1、7.4.3、7.4.4、7.4.8、および 7.4.9) に関連しており、それぞれが中から高のリスク ランク スコアである 6 または 8 が設定されています)。 評価のフィルターを使用して、これらのコントロールのすべてを選択し、評価ビューに表示したため、次の図でいずれも評価されていないことがわかります。 
   
-![コンプライアンス マネージャー - Assessment ビュー - フィルター コントロール、評価なし](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) これら 6 つのコントロールは関連しているので、いずれか 1 つのテストが完了すると、この評価内の関連するコントロールの間でテスト結果が同期されます (同じ評価グループ内の評価での関連するコントロールの場合も同様です)。GDPR コントロール 7.5.5 の実装とテストが完了すると、コントロールの詳細領域が更新されて、6 つのコントロールすべてが評価されたことが表示されます。対応する数値が加算され、評価されたコントロールの数が 57 で、評価済みが 51% となっています。コンプライアンス スコアの合計も 40 増えています。 
+![コンプライアンス マネージャー - Assessment ビュー - フィルター コントロール、評価なし](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40. 
   
 ![コンプライアンス マネージャーの Assessment ビュー - コントロールの結果 (同期済み)](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
@@ -154,16 +154,16 @@ Assessment は、以下の複数のコンポーネントで構成されていま
 ![コンプライアンス マネージャーの Assessment - 関連するコントロールの更新確認ダイアログ ボックス](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
-> 現時点では、Office 365 クラウド サービスの Assessment にのみ、コンプライアンス スコアが含まれています。Azure と Dynamics の Assessment の場合は、評価の状態が表示されます。 
+> Currently, only Assessments for Office 365 cloud services include a Compliance Score. Assessments for Azure and Dynamics show an assessment status. 
 
 ## <a name="compliance-score-methodology"></a>コンプライアンス スコアの手法
 
 コンプライアンス スコア (Microsoft Secure Score など) は、他の動作ベースのスコア システムと似ています。組織は、データ保護、プライバシー、セキュリティに関連するアクティビティを実行することで、組織のコンプライアンス スコアを上げることができます。
   
 > [!NOTE]
-> 組織が特定の標準や規制を遵守しているかの絶対的測定値は、コンプライアンス スコアでは表せません。ユーザーが設定した、個人のデータやプライバシーに関するリスクを軽減できるコントロールをどの程度採用したかがコンプライアンス スコアによって表されます。標準や規制に準じていることを保証するサービスは提供されておらず、コンプライアンス スコアも何かを保証するものではありませんので、ご注意ください。 
+> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way. 
   
-コンプライアンス マネージャーでの Assessment は、クラウド コンピューティングの共有責任モデルに基づいています。共有責任モデルでは、クラウドに保存されているお客様のデータの保護に対する責任は、マイクロソフトと各お客様の間で共有されます。
+Assessments in Compliance Manager are based on the shared responsibility model for cloud computing. In the shared responsibility model, Microsoft and each customer share responsibility for the protection of the customer's data when that data is stored in our cloud.
   
 以下の Office 365 GDPR の評価に示すように、Microsoft と顧客はそれぞれ、評価されている標準または規制の要件を満たすように設計されるさまざまなアクションを実行する責任があります。 さまざまな標準と規制に必要なアクションを合理化および把握するために、 コンプライアンス マネージャーでは、すべての標準と規制はコントロール フレームワークと同様に処理されます。 そのため、各評価について Microsoft および顧客によって実行されるアクションには、さまざまなコントロールの実装と検証が含まれます。
   
@@ -171,7 +171,7 @@ Assessment は、以下の複数のコンポーネントで構成されていま
   
 一般的なアクションの基本ワークフローは次のとおりです。
   
-1. 組織のコンプライアンス、リスク、プライバシーやデータ保護の責任者は、コントロール実装のタスクを組織内の次のようなユーザーに割り当てます。
+1. The Compliance, Risk, Privacy, and/or Data Protection Officer of an organization assigns the task to someone in the organization to implement a control. That person could be:
 
     - ビジネス ポリシーの所有者
     
@@ -179,7 +179,7 @@ Assessment は、以下の複数のコンポーネントで構成されていま
     
     - 組織内の別の個人ユーザーで、タスク実行の責任者
     
-2. 上記ユーザーは、コントロールを実装するために必要なタスクを実行し、実装の証拠をコンプライアンス マネージャーにアップロードし、アクションに関連付けられているコントロールを実装済みとして記録します。これらのタスクが完了したら、検証の評価者にアクションを割り当てます。次のようなユーザーが評価者となります。
+2. That individual performs the tasks necessary to implement the control, uploads evidence of implementation into Compliance Manager, and marks the control(s) tied to the Action as implemented. Once these tasks are completed, they assign the Action to an Assessor for validation. Assessors can be:
     
     - 組織内のコントロールを検証する内部評価者
     
@@ -189,13 +189,13 @@ Assessment は、以下の複数のコンポーネントで構成されていま
     
 Assessment に関連付けられたコントロールをすべて評価すると、Assessment は完了したものと見なされます。
   
-マイクロソフトが責任を持つコントロールの要件を満たすために、コンプライアンス マネージャーのすべての Assessment は、マイクロソフトが実施するアクションの詳細情報と共にプリロードされます。この情報には、マイクロソフトが各コントロールを実装した方法、Microsoft の実装を評価した方法とタイミング、サード パーティの監査人による検証方法とタイミングに関する詳細が含まれます。そのため、各 Assessment のマイクロソフト管理のコントロールは評価済みとして記録され、Assessment のコンプライアンス スコアに反映されます。
+Every Assessment in Compliance Manager comes pre-loaded with information that provides details about the Actions taken by Microsoft to satisfy the requirements of the controls for which Microsoft is responsible. This information includes details about how Microsoft has implemented each control and how and when Microsoft's implementation was assessed and verified by a third-party auditor. For this reason, the Microsoft Managed Controls for each Assessment are marked as Assessed, and the Compliance Score for the Assessment reflects this.
   
-各 Assessment には、共有責任モデルに基づくコンプライアンス スコアの合計が含まれます。Office 365 のコントロールに関するマイクロソフトの実装とテストは、GDPR 評価関連の取得可能な合計ポイントの一部に該当します。ユーザーが、各顧客アクションの実装とテストを完了すると、その Assessment のコンプライアンス スコアにはコントロールに割り当てられた値が追加されます。 
+Each Assessment includes a total Compliance Score based on the shared responsibility model. Microsoft's implementation and testing of controls for Office 365 contributes a portion of the total possible points associated with a GDPR assessment. As the customer implements and tests each of the customer Actions, the Compliance Score for the Assessment will increase by the value assigned to the control. 
   
  ### <a name="risk-based-scoring-methodology"></a>リスクベースのスコアリングの手法
   
-コンプライアンス マネージャーでは、1 から 10 の範囲によるリスクベースのスコアリングの手法を使用します。コントロールが失敗したイベントまたは非準拠のイベントにおいて、高いリスクが示されているコントロールには、高い値が割り当てられます。コンプライアンス スコアに適用されるスコアリング システムは、次のような重要な要因に基づいています。
+Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 that assigns a higher value to controls that represent a higher risk in the event the control fails or is non-compliant. The scoring system used by Compliance Score is based on several key factors, such as:
   
 - コントロールの本質
     
@@ -211,17 +211,17 @@ Assessment に関連付けられたコントロールをすべて評価すると
   
  ### <a name="mandatory-or-discretionary"></a>必須または任意
   
- *必須のコントロール*は、意図的にも偶発的にもバイパスできないコントロールです。一般的な必須のコントロールの例は、パスワードの長さ、複雑さ、有効期限の要件を設定する一元管理されたパスワード ポリシーです。システムにアクセスするためには、ユーザーはこれらの要件に準拠する必要があります。 
+ *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system. 
   
- *任意のコントロール*は、ユーザーがポリシーを理解し、状況に応じて実行するものです。たとえば、退席するときにコンピューターのロックをユーザーに要求するポリシーは、ユーザーに依存するものであるため、任意のコントロールになります。 
+ *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user. 
   
  ### <a name="preventative-detective-or-corrective"></a>予防、検出、または修正
   
- *予防のコントロール*は、特定のリスクを防ぐものです。たとえば、暗号化による保存情報の保護は、攻撃や漏洩などに対する予防のコントロールです。また、職務権限の分離は、利益を公正に分かち合い、不正行為を防ぐための予防のコントロールになります。 
+ *Preventative controls*  are those that prevent specific risks. For example, protecting information at rest using encryption is a preventative control against attacks, breaches, etc. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud. 
   
- *検出のコントロール*は、リスクにつながる不規則な状態や行動を検出するために、システムをアクティブに監視するもので、侵入の検出や違反の発生の判別に使用できます。システム アクセスの監査や、特権のある管理操作の監査は、検出のコントロールで監視の部類に該当します。規制のコンプライアンスの監査は、プロセスの問題を見つけるために使用する、検出のコントロールになります。 
+ *Detective controls*  are those that actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach has occurred. System access auditing and privileged administrative actions auditing are types of detective monitoring controls; regulatory compliance audits are a type of detective control used to find process issues. 
   
- *修正のコントロール*は、セキュリティに関するインシデントの影響を最小限に抑えるものです。直後の影響を少なくするための是正措置を取り、可能であればダメージの修復を行います。プライバシーに関するインシデントへの対応は、ダメージを抑え、違反発生後にシステムを通常の稼働状態に復元する修正のコントロールになります。 
+ *Corrective controls*  are those that try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage, if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach. 
   
 これらの要因を使用して各コントロールを評価することで、コントロールの本質を判断します。そして、コントロールの本質に、その本質が表すリスクに相当する値を割り当てます。
   
@@ -242,7 +242,7 @@ Assessment に関連付けられたコントロールをすべて評価すると
     
 - 可用性は、高いレベルのサービスの品質で情報にアクセスする用意ができていることを意味します。
     
-これらの特性に欠けていることはすべて、システム全体の侵害と見なされます。脅威の原因は内部ソースと外部ソースの両方が考えられ、脅威を行った者の目的に関しては、偶発的である場合と悪意がある場合があります。これらの要因は、脅威マトリックスで予測され、シナリオの各組み合わせに、高、中、低のいずれかの脅威レベルが割り当てられます。
+A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
 ||**内部**<br/>||**外部**<br/>||||
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -274,13 +274,13 @@ CIA/脅威および法的/外的要因で示された、可能性のある 15 �
   
 ### <a name="summary-of-scoring-methodology"></a>スコアリングの手法の要約
   
-コンプライアンス スコアはコンプライアンス マネージャーのコア コンポーネントで、組織がコンプライアンスを理解し管理するのに役立ちます。評価のためのコンプライアンス スコアは、所定の標準や規制に対する組織のコンプライアンス状況を数値で表したもので、高いスコアは (Assessment に割り当てられた最大ポイントを上限として) 組織のコンプライアンスへの取り組みがより適切であることを意味します。評価コントロールをリスクの重大度により 1 - 10 (低 - 高) で行うコンプライアンス スコアリングの手法と、完了したコントロールの評価がどのようにコンプライアンス スコアの合計に加点されるかを理解することは、組織がアクションの優先順位を決めるうえで重要になります。
+The Compliance Score is a core component of the way that Compliance Manager helps organizations understand and manage their compliance. The Compliance Score for an assessment is an expression of the company's compliance with a given standard or regulation as a number, where the higher the score (up to the maximum number of points allocated for the Assessment), the better the company's compliance posture. Understanding the compliance scoring methodology in which assessment controls are assigned risk severity values between 1- 10 (low to high), and how completed control assessments add to the total compliance score is crucial to organizations for prioritizing their actions.
 
 ## <a name="grouping-assessments"></a>Assessment のグループ化
 
 新しい Assessment を作成すると、グループを作成して Assessment を割り当てるか、既存のグループに Assessment を割り当てるかの選択が求められます。 グループを使用すると、Assessment を論理的に整理し、同じまたは関連する顧客管理のコントロールを持つ Assessment 間で共通の情報やワークフロー タスクを共有できます。
   
-たとえば、年ごとや、組織内のチーム/部門/機関ごとに Assessment をグループ化することができます。さらに、そのグループ化した Assessment を年ごとにグループにまとめることもできます。グループとその中に含まれる可能性のある Assessment の例を次に示します。
+For example, you could group Assessments by year or teams, departments, or agencies within your organization or group them by year. Here are some examples of groups and the Assessments they might contain.
   
 - GDPR Assessment - 2018
     
@@ -315,7 +315,7 @@ Assessment のグループ化の要件は以下のとおりです。
   
 - グループ名 (* グループ ID とも呼ばれます) は組織内で一意にする必要があります。 
     
-- グループには同じ証明書/規制の Assessment を含めることができますが、各グループには、特定のクラウド サービス/証明書ペアの Assessment を 1 つしか含めることができません。たとえば、1 つのグループに Office 365 と GDPR の 2 つの Assessment を含めることはできません。各クラウド サービスの対応する証明書/規制が異なっていれば、1 つのグループに同じクラウド サービスに対する複数の Assessment を含めることができます。
+- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and GDPR. Similarly, a group can contain multiple Assessments for the same cloud service as long as the corresponding certification/regulation for each one is different.
     
 評価グループに評価を追加すると、そのグループを変更することはできません。 評価グループの名前は変更できます。これにより、そのグループに関連付けられているすべての評価の評価グループ名が変更されます。 評価と新しい評価グループを作成し、既存の評価から情報をコピーできます。これにより、その評価の複製が別の評価グループに効率よく作成されます。 評価をアーカイブすると、評価と評価グループの関係が壊れます。 他の関連する評価に対する更新プログラムは、アーカイブされた評価に反映されなくなります。
   
@@ -346,11 +346,11 @@ Assessment のグループ化の要件は以下のとおりです。
 テナント管理者アカウントでのみ使用できる特定の管理機能があり、グローバル管理者としてログインした場合にのみ表示されます。
   
 > [!NOTE]
-> 管理者はドロップダウン リストの [制限付きドキュメントへのアクセス] アクセス許可を使用して、マイクロソフトが Service Trust Portal で共有する制限付きドキュメントへのアクセスをユーザーに許可できます。制限付きドキュメントの機能は現在使用できませんが、近日中にリリースされる予定です。 
+> The Access to Restricted Documents permission in the drop-down list will allow administrators to give users access to restricted documents that Microsoft shares on the Service Trust Portal. The Restricted Documents feature isn't available, but is coming soon. 
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>コンプライアンス マネージャーのロールをユーザーに割り当てる
 
-コンプライアンス マネージャーの各ロールのアクセス許可は、少し異なります。Service Trust Portal を使用すると、各ロールに割り当てられているアクセス許可を表示したり、どのユーザーがどのロールに属しているかを確認したりすることができます。ロールへのユーザーの追加、あるいはロールからのユーザーの削除も行えます。これを実行するには、**[管理]** メニュー項目を選択し、**[設定]** を設定します。 
+Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal by selecting the **Admin** menu item, and then choosing **Settings**. 
   
 ![STP 管理者メニュー - [設定] を選択済み](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
@@ -366,7 +366,7 @@ Assessment のグループ化の要件は以下のとおりです。
     
 5. 各ロールに追加されたユーザーは、**[ロールの選択]** ページに一覧表示されます。 
     
-6. このロールにユーザーを追加するには、**[追加]** をクリックします。**[ユーザーの追加]** ダイアログ ボックスで [ユーザー] フィールドをクリックします。使用可能なユーザーの一覧をスクロールしたり、ユーザー名を入力して検索語句に基づいて一覧をフィルター処理したりすることができます。そのロールでプロビジョニングするには、ユーザー名をクリックして、**[ユーザーの追加]** 一覧にそのアカウントを追加します。複数のユーザーを同時に追加する場合は、ユーザー名を入力して一覧をフィルター処理します。その後、ユーザーをクリックして一覧にユーザーを追加します。追加したユーザーに対して選択したロールのプロビジョニングを行うには、**[保存]** をクリックします。 
+6. To add users to this role, click **Add**. In the **Add Users** dialog, click the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Click the user to add that account to the **Add Users** list to be provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then click the user to add to the list. Click **Save** to provision the selected role to these users. 
     
     ![コンプライアンス マネージャー - ロールのプロビジョニング - ユーザーの追加](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
@@ -376,7 +376,7 @@ Assessment のグループ化の要件は以下のとおりです。
  
 ## <a name="user-privacy-settings"></a>ユーザー プライバシーの設定
 
-一部の規制に関しては、組織がユーザーの履歴データを削除できるようにする必要があります。これを有効にするために、コンプライアンス マネージャーでは**ユーザー プライバシーの設定**機能が用意されており、管理者は次の操作を行うことができます。 
+Certain regulations require that an organization must be able to delete user history data. To enable this, Compliance Manager provides the **User Privacy Settings** functions, that allow administrators to: 
   
 - [ユーザーの検索](#search-for-a-user)
 
@@ -396,7 +396,7 @@ Assessment のグループ化の要件は以下のとおりです。
     
 2. ユーザー名を正しく入力したら、**[検索]** をクリックします。 
     
-3. ユーザー アカウントが見つからない場合は、'ユーザーが見つかりませんでした' というエラー メッセージがページ上に表示されます。もう一度試すには、ユーザーのメール アドレス情報を確認して、必要に応じて修正を行い、**[検索]** をクリックします。 
+3. If the user account is not found, the error message 'User not found' will be displayed on the page. Check the user's email address information, make corrections as necessary and click **Search** to try again. 
     
 4. ユーザー アカウントが見つかった場合、ボタンのテキストは **[検索]** から **[クリア]** に変更されます。これは、返されたユーザー アカウントは以下に示される追加機能の操作のコンテキストであり、この追加機能を実行すると、このユーザー アカウントに適用されることを示します。 
     
@@ -415,11 +415,11 @@ Assessment のグループ化の要件は以下のとおりです。
 3. ドキュメントを開いてレポート データを確認します。
     
 > [!NOTE]
-> このデータは、実施項目の割り当て履歴の変更状態を保持および表示する、履歴のレポートではありません。生成されたレポートは、レポート実行時 (レポートに書き込まれた日付と時刻のタイムスタンプ) に割り当てられたコントロールの実施項目のスナップショットです。たとえば、後で実施項目の再割り当てをすると、同じユーザー用にこのレポートが再度生成される場合は、スナップショット レポート データが異なります。 
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user. 
   
 ### <a name="reassign-action-items"></a>実施項目の再割り当て
 
-この機能で、組織はユーザー アカウントのアクティブまたは未処理の依存関係を削除することができます。すべての実施項目の所有権 (アクティブと完了済みの実施項目の両方が含まれます) を、返されたユーザー アカウントから、以下で選択した新しいユーザーに再割り当てすると削除できるようになります。この操作では、返されたユーザー アカウントのドキュメントのアップロード履歴は変更されません。 
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account. 
   
  他のユーザーに実施項目を再割り当てするには、次のようにします。
   
@@ -432,9 +432,9 @@ Assessment のグループ化の要件は以下のとおりです。
 4. 続行するには **[OK]** をクリックします。続行しない場合は **[キャンセル]** をクリックします。 
     
 > [!NOTE]
-> すべての実施項目 (アクティブと完了済みの両方) が新しく選択したユーザーに割り当てられますが、この操作はドキュメントのアップロード履歴には反映されません。前に割り当てられたユーザーによってアップロードされたドキュメントには、前に割り当てられたユーザーの日時と名前が引き続き表示されます。 
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
   
-前に割り当てられたユーザーを削除するためにドキュメントのアップロード履歴を変更するには、手動でプロセスを実行する必要があります。その場合、管理者は次のようにする必要があります。
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
   
 1. 以前にダウンロードしたエクスポート レポートを開きます。
   
@@ -446,17 +446,17 @@ Assessment のグループ化の要件は以下のとおりです。
   
 5. 証拠のリポジトリでドキュメントを削除します。
   
-6. ドキュメントを再度アップロードします。ドキュメントには、新しいアップロードの日付、時刻、アップロードしたユーザー名が反映されるようになります。 
+6. Re-upload the document. The document will now have a new upload date, time and Uploaded By username. 
   
 ### <a name="delete-user-data-history"></a>ユーザー データの履歴の削除
 
-この操作を行うと、返されたユーザーに割り当てられたすべての実施項目におけるコントロールの実施項目は '割り当てなし' の設定になります。また、返されたユーザーによってアップロードされたドキュメントに関する場合で、値によってアップロードされたものは '削除されたユーザー' として設定されます。
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
   
  ユーザー アカウントの実施項目とドキュメントのアップロード履歴を削除するには、次のようにします。
   
 1. **[削除]** をクリックします。 
 
-    "これによりコントロールの実施項目すべての割り当てと、選択したユーザーのドキュメントのアップロード履歴が削除されます。この操作は元に戻すことができません。続行しますか?" というメッセージが確認ダイアログ ボックスに表示されます。
+    A confirmation dialog will be displayed, stating "This will remove all control action item assignments and the document upload history for the selected user. This action cannot be undone. Are you sure you want to continue?"
     
 3. 続行するには **[OK]** をクリックします。続行しない場合は **[キャンセル]** をクリックします。 
   
@@ -468,7 +468,7 @@ Assessment のグループ化の要件は以下のとおりです。
 
 ## <a name="accessing-compliance-manager"></a>コンプライアンス マネージャーへのアクセス
 
-コンプライアンス マネージャーには Service Trust Portal からアクセスします。Microsoft アカウントまたは Azure Active Directory の組織アカウントを持つすべてのユーザーがコンプライアンス マネージャーにアクセスできます。
+You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
   
 ![コンプライアンス マネージャー - STP メニューからコンプライアンス マネージャーへのアクセス](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
@@ -478,7 +478,7 @@ Assessment のグループ化の要件は以下のとおりです。
     
 3. Service Trust Portal で、**[コンプライアンス マネージャー]** をクリックします。 
     
-4. 秘密保持契約書が表示されたら、内容を確認し、**[同意する]** をクリックして続行します。これを実行するのは 1 回のみです。クリックすると、コンプライアンス マネージャーのダッシュボードが表示されます。 
+4. When the Non-Disclosure Agreement is displayed, read it, and then click **Agree** to continue. You'll only have to do this once, and then the Compliance Manager dashboard is displayed. 
 
     作業を開始するために、既定で以下の Assessment を追加してあります。
     
@@ -498,7 +498,7 @@ Assessment のグループ化の要件は以下のとおりです。
     
 2. **[実施項目]** リンクをクリックすると、ページが更新され、自分に割り当てられている実施項目が表示されます。 
     
-    既定では、すべての実施項目が表示されます。複数の証明書に実施項目がある場合は、評価コントロールの上のタブに証明書の名前が表示されます。特定の証明書の実施項目を表示するには、そのタブをクリックします。
+    By default, all action items are shown. If you have action items across multiple certifications, the names of the certifications will be listed in tabs across the top of the assessment control. To see the action items for a specific certification, click that tab.
 
 ## <a name="adding-an-assessment"></a>Assessment の追加
 
@@ -506,7 +506,7 @@ Assessment のグループ化の要件は以下のとおりです。
   
 1. コンプライアンス マネージャーのダッシュボードで、![[追加] アイコン](../media/ITPro-EAC-AddIcon.gif) **[Assessment の追加]** をクリックします。 
     
-2. **[Assessment の追加]** ウィンドウでは、新しいグループを作成して Assessment を追加したり、既存のグループに追加したりすることができます (組み込みのグループ名は "初期グループ" です)。選択したオプションに応じて、新しいグループの名前を入力するか、ドロップダウン リストから既存のグループを選択します。詳細については、「[Assessment のグループ化](#grouping-assessments)」を参照してください。
+2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](#grouping-assessments).
     
     グループを作成する場合、既存のグループの情報を新しい Assessment にコピーすることもできます。 つまり、コピー元のグループの Assessment の [実装の詳細] フィールドと [テスト計画と管理の反応] フィールドに追加されたすべての情報が、新しい Assessment の同じ (または関連する) 顧客管理のコントロールにコピーされます。 既存のグループに新しい Assessment を追加する場合、そのグループの Assessment の共通する情報が新しい Assessment にコピーされます。 詳細については、「[既存の Assessment から情報をコピーする](#copying-information-from-existing-assessments)」を参照してください。
     
@@ -532,7 +532,7 @@ Assessment のグループ化の要件は以下のとおりです。
   
 お客様から新しい Assessment に次の情報をコピーすることができます。
   
-- Assessment ユーザー。Assessment ユーザーは、コントロールが割り当てられているユーザーです。
+- Assessment Users. An Assessment user is a user who the control is assigned to.
     
 - 状態、テスト日、テスト結果。
     
@@ -548,7 +548,7 @@ Assessment のグループ化の要件は以下のとおりです。
   
 1. このセクションには、Assessment グループの名前、製品、Assessment 名、評価コントロールの数など、Assessment の要約情報が表示されます。
     
-2. このセクションには、Assessment フィルター コントロールが表示されます。Assessment フィルター コントロールの使用方法の詳細については、「[評価プロセスの管理](#managing-the-assessment-process)」セクションを参照してください。 
+2. This section shows the Assessment Filter controls. For a more detailed explanation of how to use the Assessment Filter controls see the [Managing the assessment process](#managing-the-assessment-process) section. 
     
 3. このセクションには、評価の範囲内のそれぞれのクラウド サービスが表示されます。
     
@@ -584,19 +584,19 @@ Assessment のグループ化の要件は以下のとおりです。
     
     - **テスト結果** - 選択したテスト結果を持つコントロールの一覧を返します。 
     
-    フィルター条件を適用すると、フィルター条件に応じて、該当するコントロールの表示が変更されます。コントロール ファミリーのセクションを展開すると、コントロールの詳細が下に表示されます。 
+    As you apply filter conditions, the view of applicable controls will change to correspond to your filter conditions. Expand the control family sections to show the control details below. 
     
     ![コンプライアンス マネージャー Assessment ビュー - 記事名によるフィルター処理の結果](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
-2. 目的のフィルターを選択しても、結果が表示されない場合は、指定したフィルター条件に該当するコントロールがないことを意味します。たとえば、**[割り当て済みのユーザー]** で特定のユーザーを選択して、**[コントロール]** でそのユーザーに割り当てられていないコントロール名を選択すると、下のページには評価が表示されません。 
+2. If after selecting the desired filters no results are shown, that means there are no controls that correspond to the specified filter conditions. For instance, if you select a particular **Assigned User** and then choose a **Control** name that does correspond to the control assigned to that user, no assessments will be shown in the page below. 
     
-3. **ユーザーへの実施項目の割り当て** - 実施項目を担当者に割り当てて、証明書/規則の要件の実装や、組織の実装要件のテスト、検証、文書化などができます。実施項目を割り当てると、推奨される顧客アクションと実施項目の優先度などの詳細が記載されたメールをその担当者に送信できるようになります。実施項目の割り当てを解除したり、別の担当者に再割り当てしたりすることもできます。 
+3. **Assign an Action Item to a user** - You can assign an Action Item to a person to implement the requirements of a certification/regulation, or to test, verify, and document your organization's implementation requirements. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. You can also unassign or reassign an Action Item to a different person. 
     
 4. **ドキュメントの管理** - 顧客管理のコントロールには、タスクの実装、タスクのテストおよび検証に関連するドキュメントを管理する場所もあります。 コンプライアンス マネージャーでデータを編集する権限を持つすべてのユーザーは、**[ドキュメントの管理]** をクリックすることでドキュメントをアップロードできます。 ドキュメントのアップロード後、**[ドキュメントの管理]** をクリックしてファイルを表示およびダウンロードできます。 
     
 5. **実装およびテスト詳細の入力** - すべての顧客管理のコントロールには編集可能なフィールドがあります。ユーザーはそのフィールドに実装の詳細を入力して、証明書や規則の要件を満たすために組織が行った手順を文書化したり、組織がどのように要件を満たしているかを検証したりできます。
     
-6. **状態の設定** - 評価プロセスの一環として、各項目の状態を設定します。使用できるステータスの値は、**実装済み**、**別の実装**、**計画済み**、**範囲外** です。 
+6. **Set Status** - Set the Status for each item as part of the assessment process. Available status values are **Implemented**, **Alternative Implementation**, **Planned**, and **Not in Scope**. 
     
 7. **テスト日とテスト結果の入力** - コンプライアンス マネージャー評価者ロールのユーザーは、適切なテストが実施されたことを検証し、実装の詳細、テスト計画、テスト結果、およびアップロードされたエビデンスをレビューし、[テスト日] および [テスト結果] を設定します。 使用可能なテスト結果の値は、**[成功]**、**[失敗 - リスク低]**、**[失敗 - リスク中]**、および **[失敗 - リスク高]** です。 
 
@@ -604,7 +604,7 @@ Assessment のグループ化の要件は以下のとおりです。
 
 組織内で評価プロセスに関与しているユーザーは、コンプライアンス マネージャーを使用して、使用するすべての Assessment からユーザー管理のコントロールをレビューできます。 ユーザーがコンプライアンス マネージャーにサインインし、**[アクション アイテム]** ダッシュボードを開くと、割り当てられているアクション アイテムのリストが表示されます。 ユーザーに割り当てられているコンプライアンス マネージャー ロールによっては、実装またはテストの詳細の入力、ステータスの更新、アクション アイテムの割り当てを行うことができます。 
   
-証明書のコントロールの実装とテストは通常、それぞれ異なる担当者によって行われるため、初めは実装を行う人にコントロールの実施項目を割り当てることができます。実装が完了すると、その人は、コントロールのテストと、証拠のアップロードを行う次の担当者にコントロールの実施項目を再割り当てすることができます。このコントロール操作の割り当て/再割り当ては、多くのアクセス許可を持つ、コンプライアンス マネージャーの役割を持つユーザーが実行できます。これにより、コントロール割り当ての集中管理や、実装者からテスト担当者への、コントロール実施項目の適切な分散ルーティングが可能になります。
+As certification controls are generally implemented by one person and tested by another, the control action item can be initially assigned to one person for implementation, and once that is complete, that person can reassign the control action item to the next person for control testing and uploading of evidence. This assignment/reassignment of control actions can be performed by any users who have a Compliance Manager role with sufficient permissions, allowing for central management of control assignments, or decentralized routing of control action items, from implementer to tester as appropriate.
   
 実施項目を割り当てるには、次のようにします。
   
@@ -616,7 +616,7 @@ Assessment のグループ化の要件は以下のとおりです。
     
 4. **[割り当て済みのユーザー]** の列で、**[割り当て]** をクリックします。 
     
-5. **[実施項目の割り当て]** ダイアログ ボックスで、[割り当て先] フィールドをクリックして、操作を割り当てることができるユーザーのリストを設定します。リストをスクロールして対象のユーザーを見つけるか、フィールドへの入力を行ってユーザー名を検索します。 
+5. In the Assign Action Item dialog box, click the **Assign To** field to populate the list of users to whom the action can be assigned. You can scroll through the list to find the target user or start typing in the field to search for the username. 
     
 6. この実施項目を割り当てるユーザーをクリックします。
     
@@ -626,7 +626,7 @@ Assessment のグループ化の要件は以下のとおりです。
  
     割り当てられたユーザーは、実施項目の割り当てに関する通知と、前の操作で入力したメモを受け取ります。
     
-実施項目に関連するメモは、[メモ] セクションに保存されるため、次に実施項目を割り当てるときに使用できます。これらのメモは読み取り専用ではないため、実施項目を割り当てる人は、編集、置換、削除の操作を行えます。
+The notes that are associated with the action item are persisted in the notes section, available for the next time the action item is assigned. These notes are not read-only, can be edited, replaced or removed by the person assigning the action item.
 
 ## <a name="exporting-information-from-an-assessment"></a>Assessment から情報をエクスポートする
 
@@ -640,14 +640,14 @@ Assessment レポートをエクスポートするには、次のようにしま
     
 - Assessment の詳細ページを表示している場合は、**[Excel にエクスポート]** ボタンをクリックします。ボタンは、評価のコンプライアンス スコアの上のページの右上隅にあります。
     
-評価レポートは、ブラウザー セッションでダウンロードされます。ダウンロードを通知するポップアップが表示されない場合は、ブラウザーのダウンロード フォルダーを確認する必要があります。
+The assessment report will be downloaded in your browser session. If you don't see a popup informing you of this, you may wish to check your browser's downloads folder.
 
 ## <a name="archiving-an-assessment"></a>Assessment のアーカイブ
 
-Assessment が完了し、コンプライアンスに使用する必要がない場合は、アーカイブできます。Assessment をアーカイブすると、Assessment ダッシュボードから削除されます。
+When you have completed an Assessment and no longer need it for compliance purposes, you can archive it. When an Assessment is archived, it is removed from Assessments dashboard.
   
 > [!NOTE]
-> Assessment のアーカイブ後は、'アーカイブされていない状態' にしたり、読み取り/書き込みの進行中の状態に戻したりすることはできません。アーカイブされた Assessment には、アップロードされた証拠のドキュメントへのリンクが反映されませんので、アーカイブ前に Assessment のエクスポートを実行することを強くお勧めします。エクスポートした評価レポートには、証拠のドキュメントへのリンクが記載されているため、レポートからドキュメントにアクセスすることができます。 
+> When an Assessment is Archived, it cannot be 'unarchived' or restored to a read-write in progress state. Please note that Archived Assessments do not retain their links to uploaded evidence documents, so it is highly recommended that you perform an Export of the Assessment before archiving it, as the exported assessment report will contain links to the evidence documents, enabling you to continue to access them. 
   
 評価のアーカイブを行うには、次のようにします。
   
@@ -673,9 +673,9 @@ Assessment が完了し、コンプライアンスに使用する必要がない
 
 ![Service Trust Portal - 検索入力フィールド](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-ページの右上隅の虫眼鏡をクリックして検索入力フィールドを拡大し、検索用語を入力した後に Enter キーを押します。検索ウィンドウの入力フィールドに検索用語が入力された状態で、検索コントロールが表示され、その下に検索結果が表示されます。
+Click the magnifying glass in the upper right-hand corner of the page by to expand the Search input field, enter your search terms and press Enter. The Search control will appear, with the search term in the search pane input field, and search results will appear beneath.
   
-既定では、検索はドキュメントの検索結果を返します。表示されるドキュメント一覧を絞り込むには、[フィルター] ドロップダウン リストを使用します。検索結果をビューに追加したり、ビューから削除したりすることができます。同時に複数のフィルター属性を使用すると、返されるドキュメントを、特定のクラウド サービス、コンプライアンスやセキュリティ プラクティスのカテゴリ、全世界の地域、業種などに絞り込むことができます。ドキュメントをダウンロードするには、ドキュメント名のリンクをクリックします。
+By default, Search returns Document results, and you can use the Filter By dropdown lists to refine the list of documents displayed, to add or remove search results from view. You can use multiple filter attributes at the same time to narrow the returned documents to specific cloud services, categories of compliance or security practices, regions of the world, or industries. Click the document name link to download the document.
   
 ![Service Trust Portal - フィルターを適用したドキュメントでの検索](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
@@ -688,7 +688,7 @@ Assessment が完了し、コンプライアンスに使用する必要がない
  
 ## <a name="localization-support"></a>ローカライズのサポート
 
-Service Trust Portal では、ページ コンテンツをさまざまな言語で表示できます。ページの言語を変更するには、ページ左下隅の地球のアイコンをクリックし、変更したい言語を選択します。 
+Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
 ![Service Trust Portal - ローカライズされたコンテンツのオプション](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
@@ -697,9 +697,9 @@ Service Trust Portal では、ページ コンテンツをさまざまな言語�
 
 コンプライアンス マネージャーは定期更新されるよう設計されており、規制に関する要件の変更内容、および当社のクラウド サービスの変更内容が常に反映されます。 これらの更新プログラムには、顧客管理のコントロールに対する変更が含まれています。 追加または変更されているコンテンツの詳細や、変更が既存の Assessment に及ぼす影響に関するガイダンスなど、そのような変更が及ぼす影響を理解するのに役立つ変更ログが用意されています。 通常、変更には次の 2 種類があります。
   
-- **メジャー**変更とは、顧客アクションへの重要な変更を指します。コントロールや特定の番号付き手順の追加や削除、あるいは、責任、推奨事項、証拠などに関するガイダンスの変更などが該当します。メジャー変更については、影響を受ける統制の実装や評価を再評価することをお勧めします。
+- A **Major** change is a significant change to a Customer Action, such as the addition or removal of a control or specific numbered steps, or a change in the guidance around responsibilities, recommendations, or evidence. For Major changes, we recommend that you re-evaluate your implementation and/or assessment of the affected control.
     
-- **マイナー**変更は、顧客アクションへの小規模な変更を指します。入力ミスの修正や書式設定の問題、ハイパーリンクの更新や修正などが該当します。マイナー変更では通常、コントロールの再評価は必要ありませんが、更新された顧客アクションを確認することをお勧めします。
+- A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
 ### <a name="customer-managed-controls---change-log-for-july-2018"></a>顧客管理のコントロール - 2018 年 7 月の変更ログ
 

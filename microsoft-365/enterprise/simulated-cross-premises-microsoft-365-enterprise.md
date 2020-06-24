@@ -15,19 +15,20 @@ search.appverid:
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
+ms.custom: seo-marvel-apr2020
 description: '概要: Microsoft 365 テスト環境として、シミュレートされたクロスプレミスの仮想ネットワークを Microsoft Azure に作成します。'
-ms.openlocfilehash: 52ba80d8613f44b252389da87891359eadae752a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 6a9eb7377ff7ce3aa5b251d345e57ae2a25ba926
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084175"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817073"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 テスト環境でのシミュレートされたクロスプレミスの仮想ネットワーク
 
 *このテストラボ ガイドは、Microsoft 365 Enterprise および Office 365 Enterprise テスト環境に使用できます。*
 
-この記事では、2 つの Azure 仮想ネットワークを使用した、Microsoft Azure でのシミュレートされたハイブリッド クラウド環境の作成について順を追って説明します。最終的な構成は、次のようになります。 
+This article steps you through creating a simulated hybrid cloud environment with Microsoft Azure using two Azure virtual networks. Here is the resulting configuration. 
   
 ![XPrem VNet の DC2 仮想マシンを使用した、シミュレートされたクロスプレミス仮想ネットワーク テスト環境のフェーズ 3](../media/simulated-cross-premises-microsoft-365-enterprise/df458c56-022b-4688-ab18-056c3fd776b4.png)
   
@@ -63,7 +64,7 @@ ms.locfileid: "42084175"
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> Microsoft 365 Enterprise テスト ラボガイド内のすべての記事への視覚的なマップについては、[Microsoft 365 Enterprise テスト ラボガイド スタック](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)に移動して探します。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>フェーズ 1: TestLab 仮想ネットワークを構成する
 
@@ -80,7 +81,7 @@ ms.locfileid: "42084175"
 最初に、ローカル コンピューターで Azure PowerShell プロンプトを起動します。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。「[Azure の PowerShell コマンドレットを使う](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/)」を参照してください。 
+> The following command sets use the latest version of Azure PowerShell. See [Get started with Azure PowerShell cmdlets](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
   
 このコマンドを使用して Azure アカウントにサインインします。
   
@@ -94,7 +95,7 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Azure サブスクリプションを設定します。二重引用符内のすべて (「\<」と「>」の文字を含む) を正しい名前に置き換えます。
+Set your Azure subscription. Replace everything within the quotes, including the \< and > characters, with the correct names.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -134,7 +135,7 @@ Add-AzVirtualNetworkPeering -Name XPrem2TestLab -VirtualNetwork $vnet2 -RemoteVi
 
 このフェーズでは、XPrem 仮想ネットワークにおいて DC2 仮想マシンを作成し、それをレプリカ ドメイン コントローラーとして構成します。
   
-まず、DC2 用の仮想マシンを作成します。自分のローカル コンピューターの Azure PowerShell コマンド プロンプトで、これらのコマンドを実行します。
+First, create a virtual machine for DC2. Run these commands at the Azure PowerShell command prompt on your local computer.
   
 ```powershell
 $rgName="<your resource group name>"
@@ -156,14 +157,14 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 次に、ローカル管理者のアカウント名とパスワードを使用して、[Azure portal](https://portal.azure.com) から新しい DC2 仮想マシンに接続します。
   
-次に、Windows ファイアウォール ルールを構成して、基本的な接続テストのトラフィックを許可します。DC2 の管理者レベルの Windows PowerShell コマンド プロンプトから、これらのコマンドを実行します。 
+Next, configure a Windows Firewall rule to allow traffic for basic connectivity testing. From an administrator-level Windows PowerShell command prompt on DC2, run these commands. 
   
 ```powershell
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ping dc1.corp.contoso.com
 ```
 
-ping コマンドを実行すると、IP アドレス 10.0.0.4 から 4 つの正常な応答があります。これは、VNet ピアリング関係間のトラフィックのテストです。 
+The ping command should result in four successful replies from IP address 10.0.0.4. This is a test of traffic across the VNet peering relationship. 
   
 次に、DC2 の Windows PowerShell コマンド プロンプトから次のコマンドを使用して、新しいボリュームとして別のデータ ディスクをドライブ文字 F: で追加します。
   
@@ -171,7 +172,7 @@ ping コマンドを実行すると、IP アドレス 10.0.0.4 から 4 つの�
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-次に corp.contoso.com ドメインのレプリカ ドメイン コントローラーとして DC2 を構成します。DC2 の Windows PowerShell コマンド プロンプトから次のコマンドを実行します。
+Next, configure DC2 as a replica domain controller for the corp.contoso.com domain. Run these commands from the Windows PowerShell command prompt on DC2.
   
 ```powershell
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
@@ -180,7 +181,7 @@ Install-ADDSDomainController -Credential (Get-Credential CORP\User1) -DomainName
 
 CORP\\User1 パスワードおよびディレクトリ サービス復元モード (DSRM) パスワードの両方の入力、ならびに DC2 の再起動が必要となる点に注意してください。 
   
-XPrem 仮想ネットワーク独自の DNS サーバー (DC2) の準備が整ったので、この DNS サーバーを使用するよう XPrem 仮想ネットワークを構成する必要があります。自分のローカル コンピューターの Azure PowerShell コマンド プロンプトから、これらのコマンドを実行します。
+Now that the XPrem virtual network has its own DNS server (DC2), you must configure the XPrem virtual network to use this DNS server. Run these commands from the Azure PowerShell command prompt on your local computer.
   
 ```powershell
 $vnet=Get-AzVirtualNetwork -ResourceGroupName $rgName -name "XPrem"
@@ -189,7 +190,7 @@ Set-AzVirtualNetwork -VirtualNetwork $vnet
 Restart-AzVM -ResourceGroupName $rgName -Name "DC2"
 ```
 
-ローカル コンピューター上の Azure portal から、CORP\\User1 の資格情報を使用して DC1 に接続します。コンピューターおよびユーザーがローカルのドメイン コントローラーを使用して認証を行うように CORP ドメインを構成するには、DC1 の管理者レベルの Windows PowerShell コマンド プロンプトから次のコマンドを実行します。
+From the Azure portal on your local computer, connect to DC1 with the CORP\\User1 credentials. To configure the CORP domain so that computers and users use their local domain controller for authentication, run these commands from an administrator-level Windows PowerShell command prompt on DC1.
   
 ```powershell
 New-ADReplicationSite -Name "TestLab" 
