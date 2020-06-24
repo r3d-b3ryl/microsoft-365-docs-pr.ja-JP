@@ -17,13 +17,15 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
-description: '管理者向け: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PST ファイル) をユーザーの Exchange Online のメールボックスに一括でインポートする方法について説明します。 このトピックでは、よくあるご質問と PST インポート プロセスのしくみを説明します。'
-ms.openlocfilehash: 71125a087925e369dd7bb7d61096964bc1abdc63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
+ms.openlocfilehash: 8c80f42261ab008d2c3d0957661d5b295695ef6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679061"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817586"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
@@ -145,7 +147,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
   
  **ネットワーク アップロードはどこで利用できますか?**
   
-現在のところ、ネットワーク アップロードは米国、カナダ、ブラジル、英国、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリア、アラブ首長国連邦 (UAE) でご利用いただけます。ネットワーク アップロードはその他の地域でも間もなく利用可能になります。
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
 
 > [!NOTE]
 > 現時点では、PST ファイルのネットワーク アップロードはドイツとスイスでは利用できません。 この FAQ は、これらの国でネットワーク アップロードが利用可能になると更新されます。
@@ -188,7 +190,7 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
  **メールボックスにインポートする PST ファイルのフォルダー階層のレベルの数に制限はありますか?**
   
-はい。300 以上のネストされたフォルダーのレベルを持つ PST ファイルをインポートすることはできません。
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **ネットワーク アップロードを使用して PST ファイルを Office 365 の非アクティブなメールボックスにインポートすることはできますか?**
   
@@ -247,7 +249,7 @@ Office 365 インポート サービスでは、2.5 インチのソリッドス�
   
  **ハードドライブを送付した後、Microsoft データセンターに到着するまでどのくらいの時間がかかりますか?**
   
-いくつかの要因によって決まります。Microsoft データ センターからの距離や、ハード ディスク ドライブを発送するために使用した発送オプションの種類 (翌日到、着翌々日到着、数日後到着) などです。ほとんどの運送会社で追跡番号を利用し、発送状況を追跡できます。
+That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
   
  **Microsoft データセンターにハード ドライブが到着してから PST ファイルが Azure にアップロードされるまで、どれくらいかかりますか?**
   
@@ -285,7 +287,7 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
  **メールボックスにインポートする PST ファイルのフォルダー階層のレベルの数に制限はありますか?**
   
-はい。300 以上のネストされたフォルダーのレベルを持つ PST ファイルをインポートすることはできません。
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **ドライブ発送を使用して PST ファイルを Microsoft 365 の非アクティブなメールボックスにインポートすることはできますか?**
   
@@ -301,19 +303,19 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
  **Microsoft からハード ディスク ドライブが返送される前に、Microsoft はハード ディスク ドライブのデータを消去できますか?**
   
-いいえ、Microsoft がお客様にハード ディスク ドライブを返送する前にデータを消去することはできません。ハード ディスク ドライブは、Microsoft が受け取ったときと同じ状態で返送されます。
+No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **Microsoft がハード ディスクを返送せずに処分してもかまいませんか?**
   
-いいえ、Microsoft はお客様のハード ディスク ドライブを破壊することはできません。ハード ディスク ドライブは、Microsoft が受け取ったときと同じ状態で返送されます。
+No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **返送時はどの宅配会社を利用できますか?**
   
-米国またはヨーロッパのお客様には FedEx を使ってハード ディスク ドライブを送り返します。その他すべての地域向けには、DHL を使用します。
+If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
   
  **返送の料金はいくらですか?**
   
-返送料金は、ハード ディスク ドライブ送付先の Microsoft データ センターからの距離によって決まります。ハード ドライブの返送料は、お客様の FedEx または DHL アカウントに請求されます。返送料はお客様のご負担となります。
+Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
   
  **Microsoft にハード ディスクを送付するとき、FedEx カスタム送付などの宅配会社のカスタム出荷サービスを使用できますか?**
   
@@ -321,4 +323,4 @@ PST　インポート プロセスによってアイテムの重複がチェッ�
   
  **ハード ドライブを別の国に送付しなければならない場合、何か必要な手続きはありますか? **
   
-Microsoft 宛てに発送するハード ディスク ドライブは、国境を越える場合があります。この場合、ハード ディスク ドライブとドライブに含まれているデータが、輸出入に関して適用される法律に違反しないことを保証するのはお客様の責任になります。ハード ディスク ドライブを発送する前に、指定した Microsoft データ センターへのディスクとデータの送付について、法律違反事項がないことを助言者に確認してください。こうすることで、ドライブが Microsoft に適時に到着します。
+The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

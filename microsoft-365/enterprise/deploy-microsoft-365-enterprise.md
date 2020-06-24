@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 組織内で Microsoft 365 Enterprise を展開するのに使用できる各種リソースについて説明します。
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268335"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819330"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>Microsoft 365 Enterprise の展開
 
@@ -59,7 +59,7 @@ Microsoft 365 Enterprise を自分で展開するには:
 
   **小規模または新しい組織の場合**、次のフェーズにそってインフラストラクチャーを構築します。
 
-  必要に応じて、任意の順番でインフラストラクチャーのフェーズまたはフェーズの一部を展開することができます[交互または同時](deployment-strategies-microsoft-365-enterprise.md)。現在のインフラストラクチャーと統合するには、IT プランおよびリソースが適切で、ビジネスニーズを満たさなければなりません。 非エンタープライズの簡略化された展開については、[ここ](deploy-foundation-infrastructure-non-enterprises.md) をクリックしてください。
+  必要に応じて、任意の順番でインフラストラクチャーのフェーズまたはフェーズの一部を展開することができます[交互または同時](deployment-strategies-microsoft-365-enterprise.md)。現在のインフラストラクチャーと統合するには、IT プランおよびリソースが適切で、ビジネスニーズを満たさなければなりません。 非エンタープライズの展開をシンプルにするには、[非エンタープライズの基盤インフラストラクチャ](deploy-foundation-infrastructure-non-enterprises.md) に移動します。
 
   **企業組織の場合**、フェーズをパスではなく IT インフラストラクチャーのレイヤーとして表示し、組織全体のレイヤーに必要な条件に対して最終的に一番いい方法を決定します。
 
@@ -71,7 +71,7 @@ Microsoft 365 Enterprise を自分で展開するには:
 
 ワークロードは、基礎インフラストラクチャー上で運用します。 ただし、生産性と共同作業の向上のためにワークロードを使用するのにすべての基礎インフラストラクチャー フェーズを満たす必要はありません。
 
-[ここ](deploy-foundation-infrastructure.md)をクリックして、エンド ツー エンドの展開を始めましょう。
+[Microsoft 365 Enterprise 基盤インフラストラクチャ](deploy-foundation-infrastructure.md)で、エンドツーエンドの展開についての旅が始まります。
 
 ## <a name="take-a-test-drive"></a>体験版の使用
 

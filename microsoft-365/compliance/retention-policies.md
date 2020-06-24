@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: アイテム保持ポリシーを使用してコンテンツを保持または削除する方法と、単一のポリシーを組織全体、または特定の場所やユーザーに適用する方法について説明します。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695140"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818927"
 ---
 # <a name="learn-about-retention-policies"></a>アイテム保持ポリシーの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-ほとんどの組織では、電子メール、ドキュメント、インスタント メッセージなどのデータの量と複雑さが日々増しています。次の必要性から、これらの情報を効果的に管理することが重要です。
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **最小限の期間コンテンツを保持することを要求する業界の規制や内部ポリシーを積極的に遵守する**: たとえば、米国企業改革法により、特定の種類のコンテンツを 7 年間保持することが求められる場合があります。 
     
@@ -36,7 +37,7 @@ ms.locfileid: "44695140"
     
 - **組織内での効率的な知識の共有と迅速な対応に役立てる**: このために、ユーザーは現時点で関連性のあるコンテンツのみを対象に作業するようにします。 
     
-アイテム保持ポリシーは、これらすべての目標の達成に役立ちます。一般に、コンテンツの管理に求められる操作は次の 2 つです。
+A retention policy can help you achieve all of these goals. Managing content commonly requires two actions:
   
 - **コンテンツの保持**: 保持期間が満了するまではコンテンツの完全な削除ができないようにします。 
     
@@ -50,7 +51,7 @@ ms.locfileid: "44695140"
     
 - キーワードまたは[種類の機密情報](what-the-sensitive-information-types-look-for.md)を含むコンテンツなど、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用します。
     
-コンテンツがアイテム保持ポリシーの対象になったときに、ユーザーは何も変更されていないかのようにコンテンツの編集と操作を続行できます。コンテンツは元の場所に保持されます。ただし、アイテム保持ポリシーの対象となるコンテンツを他のユーザーが編集または削除した場合、元のコンテンツのコピーは安全な場所に保存され、そのコンテンツのアイテム保持ポリシーが有効である間は保持されます。詳細については、このページの「[アイテム保持ポリシーは所定の場所にあるコンテンツに対してどのように作用するか](#how-a-retention-policy-works-with-content-in-place)」セクションをご覧ください。
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
 さらに、一部の組織は、米国証券取引委員会 (SEC) 規則 17a-4 などの規制に準拠する必要があります。 この規制では、アイテム保持ポリシーを有効にした後、無効にしたり制限を緩和したりすることはできません。 この要件を満たすために、[**保持ロック**] を使用できます。 アイテム保持ポリシーがロックされた後、管理者を含め誰もアイテム保持ポリシーをオフにしたり、制限を緩和したりすることはできなくなります。 詳細については、このページの「[[保持ロック] を使用して規制要件に準拠する](#use-preservation-lock-to-comply-with-regulatory-requirements)」セクションを参照してください。
 

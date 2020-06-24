@@ -16,13 +16,16 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365.
-ms.openlocfilehash: 90039930d94de238a784cc4f8cea6463ff4e49b3
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: 必要なデータを維持し、不要なデータを削除し、コンテンツをレコードとしてマークすることで、データを管理する保持ラベルについて説明します。
+ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761697"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817442"
 ---
 # <a name="learn-about-retention-labels"></a>保持ラベルの詳細
 

@@ -18,13 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: Office 365 のセキュリティ/コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にします。
-ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom: seo-marvel-apr2020
+description: Office 365 のセキュリティ/コンプライアンス センターを使用して、組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効にする方法を説明します。
+ms.openlocfilehash: d3f8cc292419cce258b750b77c1f1802accd5f21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166018"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817846"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする
   
@@ -33,7 +34,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
 > [!NOTE]
 > Office 365 の自動拡張アーカイブ機能は、アーカイブ メールボックスに追加のストレージを提供します。 自動拡張アーカイブが有効な状態で、ユーザーのアーカイブメールボックスの記憶域クォータの初期値に達すると、Office 365 は追加の記憶域を自動的に追加します。 つまり、管理者が最初にアーカイブ メールボックスを有効にし、自動拡張アーカイブを組織で有効にしておくと、ユーザーのメールボックスの記憶域が足りなくなることも、管理者による管理の必要もなくなります。 詳細については、「[Office 365 での無制限アーカイブの概要](unlimited-archiving.md)」を参照してください。 
   
-## <a name="before-you-begin"></a>始める前に
+## <a name="get-the-necessary-permissions"></a>必要なアクセス許可を取得する
 
 アーカイブ メールボックスを有効または無効にするには、Exchange Online でメール受信者役割が自分に割り当てられている必要があります。 既定では、この役割は、Exchange 管理センターの [**アクセス許可**] ページで受信者管理役割グループまたは組織管理役割グループに割り当てられています。 セキュリティ/コンプライアンス センターの [**アーカイブ**] ページが表示されない場合、必要なアクセス許可を自分に割り当ててもらうよう管理者に依頼します。 
   
@@ -45,7 +46,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     
 3. セキュリティ/コンプライアンス センターの左のウィンドウで、[**情報ガバナンス**] \> [**アーカイブ**] の順にクリックします。
     
-    **[アーカイブ]** ページが表示されます。**[アーカイブ メールボックス]** 列は、各ユーザーに対してアーカイブ メールボックスが有効か無効かを示します。 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. メールボックスの一覧で、アーカイブ メールボックスを有効にする対象のユーザーを選択します。
     
@@ -60,7 +61,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     アーカイブ メールボックスの作成にはしばらくかかる場合があります。 作成されると、選択したユーザーの詳細ウィンドウに [**アーカイブ メールボックス: 有効**] と表示されます。 詳細ウィンドウの情報を更新するには、[**更新**] ![更新アイコン](../media/O365-MDM-Policy-RefreshIcon.gif) をクリックする必要がある場合があります。 
     
 > [!TIP]
-> Shift キーまたは Ctrl キーを使用して、アーカイブ メールボックスが無効になっている複数のユーザーを選択して、アーカイブ メールボックスを一括して有効にすることもできます。複数のメールボックスを選択した後に、詳細ウィンドウで **[有効にする]** をクリックします。 
+> You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
   
 ## <a name="disable-an-archive-mailbox"></a>アーカイブ メールボックスを無効にする
   
@@ -76,7 +77,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     
 3. セキュリティ/コンプライアンス センターの左のウィンドウで、[**情報ガバナンス**] \> [**アーカイブ**] の順にクリックします。
     
-    **[アーカイブ]** ページが表示されます。**[アーカイブ メールボックス]** 列は、各ユーザーに対してアーカイブ メールボックスが有効か無効かを示します。 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. メールボックスの一覧で、アーカイブ メールボックスを無効にする対象のユーザーを選択します。
     
@@ -90,7 +91,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     アーカイブ メールボックスの無効化にはしばらくかかる場合があります。 無効になると、選択したユーザーの詳細ウィンドウに [**アーカイブ メールボックス: 無効]** が表示されます。 詳細ウィンドウの情報を更新するには、[**更新**] ![更新アイコン](../media/O365-MDM-Policy-RefreshIcon.gif) をクリックする必要がある場合があります。 
     
 > [!TIP]
-> Shift キーまたは Ctrl キーを使用して、アーカイブ メールボックスが有効になっている複数のユーザーを選択して、アーカイブ メールボックスを一括して無効にすることもできます。複数のメールボックスを選択した後に、詳細ウィンドウで **[無効にする]** をクリックします。 
+> You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Exchange Online PowerShell を使用してアーカイブ メールボックスを有効または無効にする
 
