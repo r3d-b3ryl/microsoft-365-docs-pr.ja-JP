@@ -16,13 +16,14 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: Azure Information Protection をベースに構築された、Office 365 Message Encryption (OME) の新機能を使用すると、自分の組織で組織内および組織外のユーザーと保護されたメール通信を使用することができます。 新しい OME 機能は、他の組織、Outlook.com、Gmail、その他のメール サービスなどと連携します。
-ms.openlocfilehash: 95ac1528c59dc3f59e0d0e923d78ffb7138456d5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 組織の内外のユーザーと保護されたメールでのコミュニケーションを可能にする新しい Office 365 Message Encryption 機能についてご確認ください。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6d6e37da7456cfbb0b7cbf8d986b54615aca60f0
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635469"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819187"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>新しい Message Encryption 機能を設定する
 
