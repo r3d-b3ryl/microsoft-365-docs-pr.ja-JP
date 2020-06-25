@@ -1,6 +1,6 @@
 ---
 title: GDPR および CCPA のための Dynamics 365 データ対象要求
-description: このガイドは、個人データを検索して操作する方法、および Dynamics 365 のお客様による DSR および CCPA 要求への対応方法について理解するのに役立ちます。
+description: このガイドは、個人データを検索して操作する方法、および Dynamics 365 のお客様による DSR および CCPA 要求への対応方法について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -18,18 +18,18 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: 04ecbd6e52a56ea83f3b2e2eaebd02de20cfbe52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579192"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817666"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Dynamics 365 データ対象要求
 
-EU [一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) では、ユーザー (規則では*データ主体*と呼ばれる) に対して、雇用主やその他の会社または組織 (*データ管理者*または単に*管理者*と呼ばれる) が収集した個人データを管理する権利を与えます。GDPR では、個人データとは、識別された、または識別可能な自然人と関連するあらゆるデータとして広範に定義されています。GDPR は個人データに対する固有の権利をデータ主体に与えます。この権利には、個人データのコピーの取得、変更の要求、処理の制限、削除、または、別の管理者に移動できるようにするための電子形式での受信が含まれます。データ主体から管理者に個人データへの操作実行を求める正式な要求は、*データ主体の権利要求*または DSR と呼ばれます。
+The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* or DSR request.
 
-同様に、カリフォルニア州消費者プライバシー法 (CCPA) は、カリフォルニア州の消費者に対し、GDPR のデータ主体の権利と同様に、個人情報に関する新しい権利を提供し、カリフォルニア州でビジネスを行う特定の事業者に対するデータ保護責任を課します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
+同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、"売上" として分類された特定のデータ転送の "オプトアウト/オプトイン" 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
 
 このガイドは、コントローラーが DSR 要求に応じて個人データを検索して操作できるように Microsoft 製品、サービス、管理ツールを使用する方法について説明します。 具体的には、Microsoft のクラウドに保存されている個人データや個人情報の検索、アクセス、および操作方法について説明します。 このガイドに記載されているプロセスの概要を次に示します。
 
@@ -47,7 +47,7 @@ EU [一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protec
 このガイドに関連する用語を以下に定義します。
 
 - **管理者:** 単独または他者と共同で、個人データの処理に関する目的と手段を決定する自然人や法人、公的機関、団体、その他の組織。そのような処理の目的と手段が EU 法もしくは加盟国の法律によって決定される場合、コントローラーまたはその指名に関する具体的な基準が EU 法または加盟国の法律によって提供される場合があります。
-- **個人データおよびデータ主体:** 特定されたまたは特定可能な自然人 (「データ主体」) に関するあらゆる情報。特定可能な自然人とは、その者の名前、ID 番号、位置データ、オンライン ID、または当該自然人に固有の 1 つ以上の特に身体的、生理学的、遺伝的、心理的、経済的、文化的、社会的な識別情報などの要素を参照することにより、直接または間接的に特定することができる者のことです。
+- **個人データおよびデータ主体:** 特定されたまたは特定可能な自然人 ('データ主体') に関するあらゆる情報。特定可能な自然人とは、その者の名前、ID 番号、位置データ、オンライン ID、または当該自然人に固有の 1 つ以上の特に身体的、生理学的、遺伝的、心理的、経済的、文化的、社会的な識別情報などの要素を参照することにより、直接または間接的に特定することができる者のことです。
 - **処理者:** 管理者に代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。
 - **顧客データ:** これは、顧客または顧客の代理が エンタープライズ サービスの使用を通じて Microsoft に提供する、テキスト、音声、ビデオ、画像ファイル、およびソフトウェアを含むすべてのデータのことです。 顧客データには次の両方が含まれます: (1) 特定を可能にするエンド ユーザーの情報 (例: Azure Active Directory でのユーザー名と連絡先情報)、および (2) 特定のサービスでお客様がアップロードまたは作成する顧客コンテンツ (例: Azure Storage アカウント内の顧客コンテンツ、Azure SQL データベースの顧客コンテンツ、Azure Virtual Machines でのお客様の仮想マシン イメージ)。
 - **システム生成ログ:** Microsoft がエンタープライズ サービスをユーザーに提供するうえで役立つ、Microsoft により生成されるログおよび関連データ。 システム生成ログには主に固有 ID などの仮名化データが含まれています。固有 ID とは一般的に、それ自体は特定の個人を識別しないものの、エンタープライズ サービスをユーザーに提供するために使われるシステム生成番号です。 また、ユーザー名などの、特定を可能にするエンド ユーザーの情報がシステム生成ログに含まれることもあります。
@@ -64,15 +64,15 @@ EU [一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protec
 データ主体が当人の権限を行使して要求を行う場合は、次の点を考慮してください。
 
 - 要求の一部としてデータ主体から提供された情報を基に、その人物と役割 (従業員、顧客、仕入先など) を正確に特定します。 この種の情報には、名前、従業員 ID、顧客番号、その他の ID などが考えられます。
-- 要求のデータと日時を記録します (要求の完了期限は 30 日です)。
-- その要求が、データ対象からの要求が承諾または拒否に関する組織の要件を満たしているかどうかを確認します。たとえば、その要求を実行することにより、組織のその他の法律上、財務上、規制上の義務に抵触しないか、および、他者の権利や自由を侵害しないかを確認する必要があります。
+- Record the data and time of the request. (You have 30 days to complete the request.)
+- Affirm that the request meets your organization's requirements for honoring or declining a data subject's request. For example, you must make sure that executing the request doesn't conflict with any other legal, financial, or regulatory obligations that you have, or infringe on the rights and freedoms of others.
 - 要求に関連する情報があることを確認します。
 
 ## <a name="part-1-responding-to-data-subject-rights-requests-for-personal-data-included-in-customer-data"></a>第 1 部: 顧客データに含まれる個人データに関するデータ主体権限要求に対する対応
 
-次の記事では、Dynamics 365 で処理される顧客データに含まれる個人データに関する DSR 要求に備えて対応するのに役立つ情報を説明します。重要な点として、個人データは、オンライン サービス サブスクリプションの一連のサービスに際して Microsoft によって処理される別のカテゴリのデータ (管理者データや「Microsoft のプライバシーに関する声明」で定義されているサポート データなど) に含まれている場合があります。このドキュメントでは、ユーザーが Dynamics 365 に提供した顧客データ内に存在する個人データに影響する DSR 要求の検出と管理処理に絞って説明します。
+In the articles below, you'll find information to help you prepare for and respond to DSR requests for personal data included in customer data processed in Dynamics 365. It is important to note that personal data could be present in other categories of data processed by Microsoft during the course of the service of an online services subscription, such as administrator data or support data defined in the Microsoft Privacy Statement. This document is limited to assist you in the process of discovery and management of DSR requests affecting personal data present in the customer data that you have provided to Dynamics 365.
 
-Dynamics 365 は、サービスとしてのソフトウェア (SaaS) として複数のデータ処理機能を提供するオンライン サービスです。このため、Dynamics 365 には、性質や目的などの特性が異なる、売上データ、トランザクション、財務、人事情報などの多様なデータの処理を目的としたさまざまな機能が用意されています。これらの多様性を考慮して、Dynamics 365 では、顧客データを処理するのに必要となる複数のフォーム、フィールド、スキーマ、エンド ポイント、ロジックを提供しています。各アプリケーションで DSR 要求を処理できる複数の方法にも、この多様性が反映されています。Dynamics 365 アプリケーションで、特定の DSR 要求を処理する方法が複数用意されている場合、各アプリケーションによって提供されている技術的な説明の参照先がこのガイドに記載されています。
+Dynamics 365 is an online service that offers multiple data processing capabilities as a software-as-a-service (SaaS). As such, Dynamics 365 offers a broad array of functionality intended to process a diverse collection of data, which could vary by nature, purpose or other specific attributes, such as sales data, transactions, financials, HR information, etc. In light of this diversity, Dynamics 365 offers multiple forms, fields, schemas, end points, and logic to process customer data, which is also reflected in the multiple ways in which DSR requests could be addressed in each application. When Dynamics 365 applications offer several ways to address specific DSR requests, we will note those in this guide by pointing to the technical descriptions offered by each application.
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
@@ -80,9 +80,9 @@ Dynamics 365 は、サービスとしてのソフトウェア (SaaS) として�
 
 データ主体の権利要求に対する対応の最初の段階として、要求の対象となっている顧客データを検索して特定します。
 
-顧客データの適切な分類は、Dynamics 365 Customer Engagement ビジネス アプリケーションの個人データを処理する際の基盤になります。Dynamics 365 for Customer Engagement では、データ分類を基にしたアプリケーションの拡張機能を柔軟に構築できます。適切な情報分類により、情報を個人データとして特定でき、データ主体の要求に対応する際にその情報を検索して取得することが可能になります。適切な情報分類は、個人データの収集と管理に関する法律や規制の要件を遵守する上でも役立ちます。
+Classifying customer data appropriately is the cornerstone of working with personal data in Dynamics 365 Customer Engagement business applications. Dynamics 365 for Customer Engagement offers flexibility to build out an application extension around data classification. Proper classification enables you to identify information as personal data, thereby making it possible to locate and retrieve it when responding to requests from a data subject. It can also help enable compliance with legislative and regulatory requirements for collecting and managing personal data.
 
-Microsoft は、データ主体の権利要求への対応とそれに伴う顧客データへのアクセスに関して、ユーザーを支援する機能を提供します。ただし、個人データが適切に保存および分類されるようにするのは、お客様の責任です。
+Microsoft provides capabilities that assist you in responding to data subject rights requests, and thereby accessing customer data. However, it is your responsibility to ensure that personal data is located and classified appropriately.
 
 ***Dynamics 365 for Customer Engagement*** には、高度な検索、レコード検索など、レコード内の個人データをユーザーが検索するための機能が複数用意されています。 いずれの機能でも、個人データを特定または検索できます。
 
@@ -116,7 +116,7 @@ Dynamics 365 for Marketing には、次の追加機能が用意されていま�
 
 ***Dynamics 365 for Customer Engagement*** の顧客データは、包括的なエンティティ エクスポート機能を使用してエクスポートできます。 顧客データを静的な Excel ファイルにエクスポートして、データ移植性要求を容易にすることができます。 Excel を使用して、移植性要求に含める個人データを編集し、.csv や .xml などのコンピューターで読み取り可能な一般的に使用されるファイル形式で保存できます。 また、Dynamics 365 for Customer Engagement のレコードは、[Common Data Service Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview)を介してエクスポートすることもできます。
 
-さらに、Dynamics 365 for Marketing には[専用 API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) が用意されており、キャプチャされた顧客とのやり取りに関するその他のレコード (個人データを含む可能性がある) を取得する拡張機能を顧客が構築できます。この API は、関連するすべての情報をバックエンド システムから読み込み、その情報を単一のポータブル ドキュメントに組み立てます。
+Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
 ***Dynamics 365 Customer Service Insights*** では、データ エクスポートを使用して、[顧客データのコピーを提供](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export)することができます。
 
@@ -138,7 +138,7 @@ Dynamics 365 for Marketing には、次の追加機能が用意されていま�
 さらに、Dynamics 365 for Marketing では次の機能も実行できます。
 
 - 1 行または複数の行を直接編集することにより、マイ データのランディング ページを更新します。
-- ページに含めることができるの最大数の編集可能な連絡先フィールドが設定された[サブスクリプション センター](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) ページを準備します。これにより、エンドユーザーは、自分の情報を最大限に更新できます。
+- Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This enables an end user to update their own information as much as possible.
 
 ***Dynamics 365 Customer Service Insights*** では、組織が[顧客データを修正または変更する](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary)機能も用意されています。
 
@@ -146,21 +146,21 @@ Dynamics 365 for Marketing には、次の追加機能が用意されていま�
 
 ***Dynamics 365 Business Central*** では、不正確または不完全な顧客データを修正する方法が 2 つ用意されています。
 
-Business Central の複数のレコードをすばやく一括編集する場合、[Business Central Excel アドイン](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)を使用して Excel にリストをエクスポートし、複数のレコードを修正してから、修正したデータを Excel から Business Central に発行することができます。詳細については、「[ビジネス データを Excel にエクスポートする](https://docs.microsoft.com/dynamics365/business-central/about-export-data)」をご覧ください。
+To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
 対象となる個人データを含むデータ要素を手動で編集することにより、顧客カードにある顧客情報など、任意のフィールドに格納された顧客データを変更できます。 詳細については、「[データの入力](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)」を参照してください。
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>ビジネス トランザクションでのエントリの変更について
 
-全般エントリ、顧客エントリ、税元帳エントリなどのトランザクション レコードは、エンタープライズ リソース プランニング システムの整合性に不可欠です。財務その他のトランザクションの一部をなす個人データは、財務法の遵守 (税法など)、不正行為防止 (セキュリティ監査証跡)、業界の認定資格の遵守を目的として、その状態のままで保持されます。このため、Dynamics 365 for Finance and Operations および Dynamics 365 Business Central では、このようなレコードのデータ変更を制限しています。
+Transactional records, such as general, customer, and tax ledger entries, are essential to the integrity of an enterprise resource planning system. Personal data that is part of a financial or other transaction is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications. Therefore, Dynamics 365 for Finance and Operations and Dynamics 365 Business Central restrict modifying data in such records.
 
-ビジネス トランザクション レコードに個人データを保存している場合、データ対象の要求を承諾して個人データの修正、削除、処理の制限などを実行するには、Dynamics 365 Business Central の[カスタマイズ機能](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index)を使用する以外に方法はありません。[](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)データ対象からの主性要求を承諾して、修正を実行するのはお客様の責任です。
+If you store personal data in business transaction records, the only way to correct, delete, or restrict processing of personal data to honor a data subject's request is to use the Dynamics 365 Business Central [customization capabilities](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index). Th[](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)e decision to honor a modification data subject request and implementation thereof is your responsibility.
 
 ### <a name="restricting-the-processing-of-customer-data"></a>顧客データの処理の制限
 
 データ主体から、顧客データの処理を制限する要求を受けた場合、影響を受ける顧客データをオンライン サービスから簡単に抽出し、クラウド アプリケーションによって提供される処理機能から完全に分離されている別個のコンテナー (オンプレミスのストレージ、またはデータ分離機能を備えた独立した Web サービス) に保存できます。
 
-データ処理のブロックなどの代替メカニズムが ***Dynamics 365 Business Central*** によって提供されており、ユーザーはデータ主体の特定のレコードをブロックできます。 詳細については、「[データ主体のデータ処理を制限する](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject)」を参照してください。 レコードがブロック済みとしてマークされている場合、Dynamics 365 Business Central はそのデータ主体の顧客データの処理を中断します。 ブロックされたレコードを使用するトランザクションを新たに作成することはできません。たとえば、顧客か店員がブロックされている場合、その顧客に新しい請求書を作成することはできません。
+データ処理のブロックなどの代替メカニズムが ***Dynamics 365 Business Central*** によって提供されており、ユーザーはデータ主体の特定のレコードをブロックすることができます。 詳細については、「[データ主体のデータ処理を制限する](https://docs.microsoft.com/dynamics365/business-central/admin-responding-to-requests-about-personal-data#restrict-data-processing-for-a-data-subject)」を参照してください。 レコードがブロック済みとしてマークされている場合、Dynamics 365 Business Central はそのデータ主体の顧客データの処理を中断します。 ブロックされたレコードを使用するトランザクションを新たに作成することはできません。たとえば、顧客か店員がブロックされている場合、その顧客に新しい請求書を作成することはできません。
 
 ### <a name="deleting-customer-data"></a>顧客データの削除
 
@@ -177,18 +177,18 @@ Business Central の複数のレコードをすばやく一括編集する場合
 
 ***Dynamics 365 Business Central*** では、データ主体から顧客データに含まれている当人の個人データを削除するように要求された場合、この要求に対応する方法がいくつかあります。
 
-- Business Central の複数のレコードをすばやく一括編集する場合、[Business Central Excel アドイン](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)を使用して Excel にデータをエクスポートし、複数のレコードを削除してから、その変更を Excel から Business Central に発行し直すことができます。詳細については、「[ビジネス データを Excel にエクスポートする](https://docs.microsoft.com/dynamics365/business-central/about-export-data)」をご覧ください。
+- To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - 対象の顧客データを含むデータ要素を手動で削除することにより、任意のフィールドに保存されている顧客データを削除できます。 詳細については、「[データの入力](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)」を参照してください。
 - 連絡先を削除し、Delete Canceled Interaction Log Entries バッチ ジョブを実行して、その連絡先に関するやり取りを削除するなどの方法で、顧客データを直接削除できます。
 - メモ、転記済売上、仕入請求書などの顧客データを含む[ドキュメントを削除](https://docs.microsoft.com/dynamics365/business-central/admin-manage-documents)できます。
 
-個別レコードの一括削除または個別削除のほかに、***Dynamics 365 for Talent*** から完全に削除できるのは契約関係が終了した従業員のみであることにご注意ください。[契約関係が終了した従業員の削除についてはこの手順に従います](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/respond-dsr-request-talent#additional-notes-that-apply-to-requests-for-personal-data)。
+Besides bulk or individual deletion of discrete records, please note that only terminated workers can be fully deleted from ***Dynamics 365 for Talent***. [Follow these steps to delete terminated workers](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/respond-dsr-request-talent#additional-notes-that-apply-to-requests-for-personal-data).
 
 ### <a name="exporting-customer-data"></a>顧客データのエクスポート
 
 データの移植性要求に対応するため、***Dynamics 365 for Customer Engagement*** の顧客データは、包括的なエンティティ エクスポート機能を使用してエクスポートできます。 顧客データを静的な Excel ファイルにエクスポートして、データ移植性要求を容易にすることができます。 Excel を使用して、移植性要求に含める個人データを編集し、.csv や .xml などのコンピューターで読み取り可能な一般的に使用されるファイル形式で保存できます。
 
-さらに、Dynamics 365 for Marketing には[専用 API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) が用意されており、キャプチャされた顧客とのやり取りに関するその他のレコード (個人データを含む可能性がある) を取得する拡張機能を顧客が構築できます。この API は、関連するすべての情報をバックエンド システムから読み込み、その情報を単一のポータブル ドキュメントに組み立てます。
+Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
 ***Dynamics 365 Customer Service Insights*** では、Azure の管理ポータルを使用して[顧客データをエクスポート](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export)します。
 
@@ -204,26 +204,26 @@ Dynamics 365 for Finance and Operations と ***Dynamics 365 for Talent*** のど
 
 ## <a name="part-2-responding-to-dsrs-for-system-generated-logs"></a>第 2 部: システム生成ログに関する DSR に対する対応
 
-Microsoft は、GDPR における「個人データ」の広範な定義の下では個人のものとみなされるシステム生成ログに対して、アクセス、エクスポート、および削除するための機能も提供しています。次に、GDPR の下で個人のものとみなされるシステム生成のログの例を示します。
+Microsoft also provides you with the ability to access, export, and delete system-generated logs that may be deemed personal under the GDPR's broad definition of "personal data." Examples of system-generated logs that may be deemed personal under GDPR include:
 
 - 製品およびサービスの利用状況データ (ユーザー アクティビティ ログなど)
 - ユーザー検索要求およびクエリ データ
 - ユーザーまたはその他のシステムによるシステム機能および相互作用の結果として製品およびサービスによって生成されたデータ
 
-システム生成ログのデータを制限または修正する機能はサポートされていない点に注意してください。システム生成ログのデータは、Microsoft のクラウド内で実行された実際のアクションと診断データであると見なされ、そのようなデータの変更はアクションの履歴記録が損なわれ詐欺やセキュリティのリスクが増大します。
+Note that the ability to restrict or rectify data in system-generated logs is not supported. Data in system-generated logs constitutes factual actions conducted within the Microsoft cloud and diagnostic data, and modifications to such data would compromise the historical record of actions and increase fraud and security risks.
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>システム生成ログのアクセスとエクスポート
 
-管理者は、特定のユーザーの Dynamics 365 サービスおよびアプリケーションの使用に関連付けられたシステム生成ログにアクセスできます。システム生成ログにアクセスしてエクスポートするには、次の操作を実行します。
+Admins can access system-generated logs associated with a particular user's use of Dynamics 365 services and applications. To access and export system-generated logs:
 
 1. [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/) に移動し、Dynamics 365 全体管理者の資格情報を使用してサインインします。
 2. ページ上部にある **[プライバシー]** ドロップダウン リストから、**[データ対象要求]** をクリックします。
 3. [**データ主体要求**] ページの [**システム生成ログ**] から、[**データ ログのエクスポート**] をクリックします。
     > [!NOTE]
-    > **[データ ログのエクスポート]** が表示されます。所属する組織によって送信されたエクスポート データ要求の一覧が表示されます。
+    > The **Data Log Export** is displayed. Note that a list of export data requests submitted by your organization is displayed.
 4. あるユーザーに関して新しい要求を作成するには、**[エクスポート データ要求を作成する]** をクリックします。
 
-新しい要求を作成すると、その要求は **[データ ログのエクスポート]** ページの一覧に表示されます。このページから、要求の現在の状態を追跡できます。要求が完了すると、リンクをクリックしてシステム生成ログにアクセスできるようになります。このログは、要求の作成から 30 日以内に、組織で指定した Azure Storage の場所にエクスポートされます。データは、JSON や XML などの、コンピューターで読み取り可能な一般的なファイル形式で保存されます。Azure アカウントや Azure Storage の場所がない場合、Data Log Export ツールでシステム生成ログをエクスポートできるように、組織の Azure アカウントや Azure Storage の場所を作成する必要があります。
+After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs.
 
 Azure では、ユーザーの組織がネイティブ JSON 形式のデータを指定の Azure Storage コンテナーにエクスポートできるようにすることによってこれをサポートしています。詳細については、「[Azure Storage コンテナーの概要 – BLOB ストレージ](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)」という記事をご覧ください。 取得されるデータにはサービスのセキュリティおよび安定性を損なう可能性があるデータは含まれません。
 
@@ -235,7 +235,7 @@ Azure では、ユーザーの組織がネイティブ JSON 形式のデータ�
 | | |
 |:----|:---|
 | | |
-|**Microsoft データ ログのエクスポート ツールが要求の処理を完了するのにはどのくらいの時間がかかりますか?**| これは、いくつかの要因によって異なる場合があります。ほとんどの場合、1 ～ 2 日で完了しますが、最長で 30 日間かかる場合があります。 |
+|**Microsoft データ ログのエクスポート ツールが要求の処理を完了するのにはどのくらいの時間がかかりますか?**| This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days. |
 |**出力はどんな形式ですか?**| 出力は、XML、CSV、または JSON など、コンピューターで読み取り可能な構造化されたファイルになります。 |
 |**データ ログのエクスポート ツールはどのようなデータを返しますか?**| データ ログのエクスポート ツールは、Microsoft が保存しているシステム生成ログを返します。 エクスポートされたデータは、各種 Microsoft サービス (Office 365、Azure、Dynamics など) 全体にわたります。 |
 |***データ ログのエクスポート ツールには、誰がアクセスしてシステム生成ログに対するアクセス要求を送信できますか?**| Dynamics 365 の全体管理者は、GDPR ログ マネージャー ユーティリティにアクセスできます。 |
