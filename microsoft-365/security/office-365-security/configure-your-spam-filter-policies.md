@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: 基本のスパム フィルター設定には、スパムとして識別されたメッセージに対して実行されるアクションの選択が含まれます。
-ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
+ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637714"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726824"
 ---
-# <a name="configure-anti-spam-policies"></a>スパム対策ポリシーの構成
+# <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
-Exchange Online のメールボックスを使用している Micrsoft 365 のお客様、または Exchange Online のメールボックスを使用していないもののスタンドアロンの Exchange Online Protection (EOP) をお使いのお客様の場合、受信メール メッセージは EOP によってスパムから自動的に保護されます。 EOP では、スパムに対する組織の全体的防御の一環として、スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれます) を使用します。 詳細については、「[スパム対策保護](anti-spam-protection.md)」を参照してください。
+Exchange Online のメールボックスを使用している Microsoft 365 の組織、または Exchange Online のメールボックスを使用していないもののスタンドアロンの Exchange Online Protection (EOP) をお使いの組織の場合、受信メール メッセージは EOP によってスパムから自動的に保護されます。 EOP では、スパムに対する組織の全体的防御の一環として、スパム対策ポリシー (スパム フィルター ポリシーまたはコンテンツ フィルター ポリシーとも呼ばれます) を使用します。 詳細については、「[スパム対策保護](anti-spam-protection.md)」を参照してください。
 
 管理者は、既定のスパム対策ポリシーの表示、編集、構成を行うことができます (削除はできません)。 より細かく設定できるように、カスタムのスパム対策保護ポリシーを作成し、組織内の指定したユーザー、グループ、またはドメインに適用することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-スパム対策ポリシーの構成は、セキュリティ/コンプライアンス センターで、または PowerShell (Microsoft 365 のお客様の場合は Exchange Online PowerShell、スタンドアロンの EOP お客様の場合は Exchange Online Protection PowerShell) で行います。
+スパム対策ポリシーの構成は、セキュリティ/コンプライアンス センターで、または PowerShell (Exchange Online にメールボックスを持つ Microsoft 365 の組織向け Exchange Online PowerShell、Exchange Online メールボックスを持たない組織向けのスタンドアロン EOP PowerShell) で行います。
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>セキュリティ/コンプライアンス センターと Exchange Online PowerShell または Exchange Online Protection PowerShell のスパム対策ポリシーの比較
+## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>セキュリティ & コンプライアンスセンターと  PowerShell のスパム対策ポリシー
 
 EOP のスパム対策ポリシーの基本的な要素は次のとおりです。
 
@@ -47,7 +47,7 @@ EOP のスパム対策ポリシーの基本的な要素は次のとおりです�
 
 - セキュリティ/コンプライアンス センターからスパム対策ポリシーを削除すると、スパム フィルター ルールおよび関連付けられたスパム フィルター ポリシーが削除されます。
 
-Exchange Online PowerShell またはスタンドアロンの Exchange Online Protection PowerShell では、スパム フィルター ポリシーとスパム フィルター ルールの違いは明白です。 スパム フィルター ポリシーは **\*-HostedContentFilterPolicy** コマンドレットを使用して管理し、スパム フィルター ルールは **\*-HostedContentFilterRule** コマンドレットを使用して管理します。
+Exchange Online PowerShell またはスタンドアロンの EOP PowerShell では、スパム フィルター ポリシーとスパム フィルター ルールの違いは明白です。 スパム フィルター ポリシーは **\*-HostedContentFilterPolicy** コマンドレットを使用して管理し、スパム フィルター ルールは **\*-HostedContentFilterRule** コマンドレットを使用して管理します。
 
 - PowerShell では、最初にスパム フィルター ポリシーを作成し、それからルールが適用されるポリシーを特定するスパム フィルター ルールを作成します。
 
@@ -71,9 +71,19 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの Exchange Online Protection PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 スパム対策ポリシーを追加、変更、削除するには、「**組織の管理**」または「**セキュリティ管理者**」役割グループのメンバーである必要があります。 スパム対策ポリシーに読み取り専用でアクセスするには、「**セキュリティ閲覧者**」役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
+
+  - 迷惑メール対策ポリシーを追加、変更、削除するには、次のいずれかの役割グループのメンバーである必要があります。
+
+    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
+    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
+
+  - 迷惑メール対策ポリシーに読み取り専用でアクセスするには、次のいずれかの役割グループのメンバーである必要があります。
+
+    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
 - マルウェア対策ポリシーに推奨される設定については、「[EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。
 
@@ -120,9 +130,9 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
     |**アクションなし**|||||![チェック マーク](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup> Exchange Online では、受信トレイで迷惑メール ルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定では有効)。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。<br/>EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。<br/><br/><sup>2</sup> この値を、メール フロー ルール (トランスポート ルールとも言う) の条件として、メッセージのフィルター処理やルーティングに使用することができます。
+    > <sup>1</sup> Exchange Online では、受信トレイで迷惑メール ルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定では有効)。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。<br/>EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。<br/><br/><sup>2</sup> この値を、メール フロー ルール (トランスポート ルールとも言う) の条件として、メッセージのフィルター処理やルーティングに使用することができます。
 
-   - **しきい値を選択**: **[バルク メール]** スパム対策フィルター判定に指定されたアクションをトリガーするメッセージの Bulk Complaint Level (BCL) を指定します (アクションは、指定された値以上ではなく、指定された値より大きい場合にトリガーされます)。 値が大きければ大きいほど、そのメッセージの信頼度は低い (迷惑メールである可能性が高い) ことを示します。 既定の値は 7 です。 詳細については、「[Office 365 の Bulk Complaint Level (BCL)](bulk-complaint-level-values.md)」および「[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
+   - **しきい値を選択**: **[バルク メール]** スパム対策フィルター判定に指定されたアクションをトリガーするメッセージの Bulk Complaint Level (BCL) を指定します (アクションは、指定された値以上ではなく、指定された値より大きい場合にトリガーされます)。 値が大きければ大きいほど、そのメッセージの信頼度は低い (迷惑メールである可能性が高い) ことを示します。 既定の値は 7 です。 詳細については、「[EOP の Bulk Complaint Level (BCL)](bulk-complaint-level-values.md)」および「[迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
 
      既定では、スパム対策ポリシーでの PowerShell のみの設定である _MarkAsSpamBulkMail_ は、`On` です。 この設定は、**バルク メール** フィルター判定の結果に大きく影響します。
 
@@ -132,9 +142,9 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
    - **検疫**: スパム対策フィルター判定のアクションとして **[メッセージを検疫]** を選択した場合に、メッセージを検疫に保持する期間を指定します。 期間が終了すると、メッセージは削除されます。 既定値は 30 日です。 有効な値は 1 日から 30 日です。 検疫の詳細については、以下のトピックを参照してください。
 
-     - [Office 365 の検疫](quarantine-email-messages.md)
-     - [Office 365 の管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md)
-     - [Office 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
+     - [EOP で隔離されたメッセージ](quarantine-email-messages.md)
+     - [EOP の管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md)
+     - [EOP のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
    - **この X-ヘッダー テキストを追加する**: このボックスは、**[X-ヘッダーの追加]** を、スパム対策フィルター判定のアクションとして選択した場合にのみ必要で、選択可能になります。 指定する値は、メッセージ ヘッダーに追加されるヘッダー フィールドの*名前*です。 ヘッダー フィールドの*値*は常に `This message appears to be spam` です。
 
@@ -148,7 +158,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
    - **このメール アドレスにリダイレクトする**: このボックスは、**[メール アドレスにリダイレクトする]** を、スパム対策フィルター判定のアクションとして選択した場合にのみ必要で、選択可能になります。 メッセージの配信先のメール アドレスを入力します。 複数の値をセミコロン (;) で区切って入力できます。
 
-   - **安全性のヒント**: 既定で [安全性のヒント] は有効になっていますが、これらは **オン**になっているチェックボックスをオフにすることで無効にできます。 安全性のヒントの詳細については、「[Office 365 でのメール メッセージの安全性のヒント](safety-tips-in-office-365.md)」を参照してください。
+   - **安全性のヒント**: 既定で [安全性のヒント] は有効になっていますが、これらは **オン**になっているチェックボックスをオフにすることで無効にできます。 安全性のヒントの詳細については、「[メール メッセージの安全性のヒント](safety-tips-in-office-365.md)」を参照してください。
 
    **[ゼロアワー自動消去]** 設定: Exchange Online のメールボックスに既に配信されたメッセージを ZAP が検出し、アクションを実行します。 ZAP の詳細については、「[ゼロアワー自動消去 - スパムまたはマルウェアからの保護](zero-hour-auto-purge.md)」を参照してください。
 
@@ -159,7 +169,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 5. (オプション) **[受信許可一覧]** セクションを展開すると、スパム対策フィルター処理をスキップできるメッセージ送信者を、メール アドレスごと、またはメール ドメインごとに構成できます。
 
    > [!CAUTION]
-   > <ul><li>その場合、ドメインを追加する前に慎重に検討してください。 詳細については、「[Office 365 での信頼できる差出人リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。</li><li>承認済みドメイン (自分が所有しているドメイン) や一般的なドメイン (microsoft.com や office.com など) は、決して、許可するドメインのリストに追加しないでください。 そのようにすると、攻撃者は組織にスパム フィルターをバイパスするメールを送信できるようになります。</li></ul>
+   > • その場合、ドメインを追加する前に慎重に検討してください。 詳細については、「[EOP での信頼できる差出人リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。 <br/><br/> • 承認済みドメイン (自分が所有しているドメイン) や一般的なドメイン (microsoft.com や office.com など) は、決して、許可するドメインのリストに追加しないでください。 そのようにすると、攻撃者は組織にスパム フィルターをバイパスするメールを送信できるようになります。
 
    - **受信許可**: **[編集]** をクリックします。 表示される **[許可された送信者一覧]** ポップアップで、以下の手順を実行します。
 
@@ -188,7 +198,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 6. (オプション) **[受信拒否一覧]** セクションを展開すると、常に高確度迷惑メールとマークされるメッセージ送信者をメール アドレスごと、またはメール ドメインごとに構成できます。
 
    > [!NOTE]
-   > 手動でのドメインの受信拒否は危険ではありませんが、管理作業の負荷が増大する可能性があります。 詳細については、「[Office 365 での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
+   > 手動でのドメインの受信拒否は危険ではありませんが、管理作業の負荷が増大する可能性があります。 詳細については、「[EOP での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
 
    - **受信拒否**: **[編集]** をクリックします。 表示される **[受信拒否リスト一覧]** で、以下の手順を実行します。
 
@@ -238,15 +248,15 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 8. オプションの **[迷惑メールのプロパティ]** セクションには、既定では無効になっている高度なスパム フィルター (ASF) 設定が含まれます。 ASF の設定は廃止の処理中です。この機能はフィルター処理スタックの別の部分に組み込まれます。 これらの ASF 設定はすべて、スパム対策ポリシーでオフにしておくことをお勧めします。
 
-   これらの設定の詳細については、「[Office 365 での高度なスパム フィルターの設定](advanced-spam-filtering-asf-options.md)」を参照してください。
+   これらの設定の詳細については、「[EOP での高度なスパム フィルターの設定](advanced-spam-filtering-asf-options.md)」を参照してください。
 
 9. (必須) **[適用先]** セクションを展開して、ポリシーの適用先にする内部受信者を特定します。
 
-    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合は、OR ロジック (たとえば、_\<recipient1\>_ or _\<recipient2\>_) を使用します。 別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ and _\<member of group 1\>_) を使用します。
+    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
 
     使用可能なすべての条件を表示するには、**[条件の追加]** を 3 回クリックするのが最も簡単です。 構成しない条件を削除するには、![[削除] ボタン](../../media/scc-remove-icon.png)をクリックします。
 
-    - **受信者のドメインが次の場合**: Office 365 で構成済みの 1 つ以上の承認済みドメイン内の受信者を指定します。 **[タグの追加]** ボックスをクリックして、ドメインを表示および選択します。 複数のドメインが利用可能な場合は、**[タグの追加]** ボックスをもう一度クリックして、追加のドメインを選択します。
+    - **[受信者のドメインが次の値である]**: 組織内で構成済みの 1 つ以上の承認済みドメイン内の受信者を指定します。 **[タグの追加]** ボックスをクリックして、ドメインを表示および選択します。 複数のドメインが利用可能な場合は、**[タグの追加]** ボックスをもう一度クリックして、追加のドメインを選択します。
 
     - **受信者が次の場合**: 組織内の 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先を指定します。 **[タグの追加]** をクリックして、リストをフィルター処理するための入力を始めます。 **[タグの追加]** ボックスをもう一度クリックして、追加の受信者を選択します。
 
@@ -324,7 +334,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 ### <a name="configure-end-user-spam-notifications"></a>エンドユーザーの迷惑メール通知の構成
 
-スパム対策フィルター判定によりメッセージが検疫された場合に、受信者に送信されたメッセージに対する処理を知らせるために、エンドユーザーの迷惑メール通知を構成できます。 これらの通知の詳細については、「[Office 365 でのエンドユーザーの迷惑メール通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。
+スパム対策フィルター判定によりメッセージが検疫された場合に、受信者に送信されたメッセージに対する処理を知らせるために、エンドユーザーの迷惑メール通知を構成できます。 これらの通知の詳細については、「[EOP でのエンドユーザーの迷惑メール通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)」を参照してください。
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
@@ -336,14 +346,14 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 3. 展開して表示されたポリシー詳細で、**[エンドユーザーのスパム通知を構成する]** をクリックします。
 
-4. **\<[ポリシー名]\>** ダイアログが開いたら、以下の設定を行います。
+4. **\<Policy Name\>** ダイアログが開いたら、以下の設定を行います。
 
    - **エンドユーザーのスパム通知を有効にする**: 通知を有効にするには、このチェックボックスをオンにします。 通知を無効にするには、チェックボックスをオフにします。
 
    - **エンドユーザーの迷惑メール通知の送信間隔 (日)**: 通知が送信される頻度を選択します。 既定値は 3 日です。 1 日から 15 日まで入力できます。
-   
+
      エンドユーザーのスパム通知は、24時間以内に 3 サイクルあります。これは、次の時間に始まります: 01:00 UTC、08:00 UTC、および 16:00 UTC。 
-    
+
      > [!NOTE]
      > 前回のサイクルで通知を受信できなかった場合は、後続のサイクルが通知をプッシュします。 これにより、同じ日に複数の通知が表示される場合があります。
 
@@ -363,7 +373,7 @@ Exchange Online PowerShell またはスタンドアロンの Exchange Online Pro
 
 既定のポリシーは削除できません。
 
-## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-anti-spam-policies"></a>Exchange Online PowerShell または Exchange Online Protection PowerShell を使用して迷惑メール対策ポリシーを構成する
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Exchange Online PowerShell または スタンドアロン EOP PowerShell を使用して迷惑メール対策ポリシーを構成する
 
 次の迷惑メール対策ポリシー設定は、PowerShell でのみ使用できます。
 
@@ -416,7 +426,7 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 > [!NOTE]
 > **New-HostedContentFilterPolicy** と **Set-HostedContentFilterPolicy** には古い _ZapEnabled_ パラメーターと、新しい _PhishZapEnabled_ および _SpamZapEnabled_ パラメーターが含まれています。 _ZapEnabled_ パラメーターは 2020 年 2 月に廃止されました。 _PhishZapEnabled_ および _SpamZapEnabled_ パラメーターでは、値を _ZapEnabled_ パラメーターから継承して使っていました。 ただし、コマンドで _PhishZapEnabled_ や _SpamZapEnabled_ パラメーターを使用する場合や、セキュリティ/コンプライアンス センターで **[Spam ZAP]** (迷惑メールに対する ZAP) 設定や **[フィッシング詐欺に対する ZAP]** 設定を使用する場合、_ZapEnabled_ パラメーターの値は無視されます。 つまり、_ZapEnabled_ パラメーターは使用せず、代わりに _PhishZapEnabled_ および _SpamZapEnabled_ パラメーターを使用します。
 
-構文とパラメーターの詳細については、「[New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy)」を参照してください。
+構文とパラメーターの詳細については、「[New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)」を参照してください。
 
 #### <a name="step-2-use-powershell-to-create-a-spam-filter-rule"></a>手順 2: PowerShell を使用してスパム フィルター ルールを作成する
 
@@ -436,7 +446,7 @@ New-HostedContentFilterRule -Name "<RuleName>" -HostedContentFilterPolicy "<Poli
 New-HostedContentFilterRule -Name "Contoso Executives" -HostedContentFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-構文とパラメーターの詳細については、「[New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterrule)」を参照してください。
+構文とパラメーターの詳細については、「[New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-view-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを表示する
 
@@ -458,7 +468,7 @@ Get-HostedContentFilterPolicy -Identity "<PolicyName>" | Format-List [<Specific 
 Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 ```
 
-構文とパラメーターの詳細については、「[Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterpolicy)」を参照してください。
+構文とパラメーターの詳細については、「[Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy)」を参照してください。
 
 ### <a name="use-powershell-to-view-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールを表示する
 
@@ -496,7 +506,7 @@ Get-HostedContentFilterRule -Identity "<RuleName>" | Format-List [<Specific prop
 Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-構文とパラメーターの詳細については、「[Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterrule)」を参照してください。
+構文とパラメーターの詳細については、「[Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>PowerShell を使用してスパム フィルター ポリシーを変更する
 
@@ -512,7 +522,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-構文とパラメーターの詳細については、「[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)」を参照してください。
+構文とパラメーターの詳細については、「[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)」を参照してください。
 
 ### <a name="use-powershell-to-modify-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールを変更する
 
@@ -532,7 +542,7 @@ Set-HostedContentFilterRule -Identity "<RuleName>" <Settings>
 Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
 ```
 
-構文とパラメーターの詳細については、「[Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule)」を参照してください。
+構文とパラメーターの詳細については、「[Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-enable-or-disable-spam-filter-rules"></a>PowerShell を使ってスパム フィルター ルールを有効または無効にする
 
@@ -556,7 +566,7 @@ Disable-HostedContentFilterRule -Identity "Marketing Department"
 Enable-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-構文とパラメーターの詳細については、「[Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedcontentfilterrule)」と「[Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedcontentfilterrule)」を参照してください。
+構文とパラメーターの詳細については、「[Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedcontentfilterrule)」と「[Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedcontentfilterrule)」を参照してください。
 
 ### <a name="use-powershell-to-set-the-priority-of-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールの優先度を設定する
 
@@ -568,7 +578,7 @@ PowerShell でスパム フィルター ルールの優先度を設定するに�
 Set-HostedContentFilterRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-この例では、Marketing Department というルールの優先度を 2 に設定しています。優先度が 2 以下のすべての既存のルールは、優先度が 1 ずつ下がります (優先度番号が 1 ずつ増加します)。
+This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
 
 ```PowerShell
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
@@ -596,7 +606,7 @@ Remove-HostedContentFilterPolicy -Identity "<PolicyName>"
 Remove-HostedContentFilterPolicy -Identity "Marketing Department"
 ```
 
-構文とパラメーターの詳細については、「[Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterpolicy)」を参照してください。
+構文とパラメーターの詳細については、「[Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterpolicy)」を参照してください。
 
 ### <a name="use-powershell-to-remove-spam-filter-rules"></a>PowerShell を使用してスパム フィルター ルールを削除する
 
@@ -614,7 +624,7 @@ Remove-HostedContentFilterRule -Identity "<PolicyName>"
 Remove-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-構文とパラメーターの詳細については、「[Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterrule)」を参照してください。
+構文とパラメーターの詳細については、「[Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterrule)」を参照してください。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
