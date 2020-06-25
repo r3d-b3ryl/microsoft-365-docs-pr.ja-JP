@@ -19,12 +19,12 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 手順 2.  リモート アクセスの提供
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 手順 3. エンドポイント管理の展開
+        - name: 手順 3. セキュリティおよびコンプライアンスの展開
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: 手順 4. エンドポイント管理の展開
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 手順 4. 生産性アプリとサービスを展開する
+        - name: 手順 5.  生産性アプリおよびサービスの展開
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 手順 5.  コミュニケーション会場を作成する
-          href: empower-people-to-work-remotely-communication-venues.md
         - name: '手順 6: リモートワーカーをトレーニングする'
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Microsoft 365 とセキュリティで保護された共同作業を設定する
@@ -139,6 +139,8 @@
           href: contoso-case-study-solutions.md
         - name: 極秘プロジェクト向けの独立したチーム
           href: contoso-team-for-top-secret-project.md
+        - name: Teams の音声移行
+          href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: テスト ラボ ガイド
       items:
         - name: ソリューションとシナリオのテスト ラボ ガイド
