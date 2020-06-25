@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange メールと Exchange パブリック フォルダーに特に適用される保持動作について説明します。
-ms.openlocfilehash: 1455071bb8e7739b5d809af7d806d11e5c0e4a71
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 0357e647883fe681010425d7dd8599101ab559c7
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800012"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861174"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Exchange のアイテム保持ポリシーの詳細
 
@@ -72,8 +72,9 @@ ms.locfileid: "44800012"
 
 PowerShell を使用して、アイテム保持ポリシーから特定の種類の Exchange アイテムを除外することができます。 たとえば、メールボックスでボイスメール メッセージ、IM 会話、その他の Skype for Business Online のコンテンツを除外できます。 予定表、メモ、タスク アイテムを除外することもできます。 この機能は、PowerShell を使用した場合にのみ使用できます。Microsoft 365 コンプライアンス センターのウィザードを使用してアイテム保持ポリシーを作成する場合は使用できません。
   
-アイテム保持ポリシーで Exchange アイテムに対して選択した種類を除外するには、`New-RetentionComplianceRule` および `Set-RetentionComplianceRule` コマンドレットで `ExcludedItemClasses` パラメーターを使用します。
+アイテム保持ポリシーで選択した Exchange アイテムの種類を除外するには、`ExcludedItemClasses` パラメーターを [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) および [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) コマンドレットで使用します。
 
+アイテム保持ポリシーのコマンドレットを使用するには、最初に[セキュリティ/コンプライアンス センターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)する必要があります。
 
 ### <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
@@ -81,9 +82,7 @@ PowerShell を使用して、アイテム保持ポリシーから特定の種類
 
 ## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Exchange のアイテム保持ポリシーを構成する方法
 
-「[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)」を参照してください。
-
-ウィザードの [**場所の選択**] ページで、次のいずれかのオプションを選択します。
+「[アイテム保持ポリシーの作成と構成](create-retention-policies.md)」の手順に従い、ウィザードの [**場所の選択**] ページで、次のオプションのいずれかを選択します。
 
 - **Exchange メール、パブリック フォルダー、Office 365 グループ、OneDrive および SharePoint ドキュメントのコンテンツにのみポリシーを適用する**
 

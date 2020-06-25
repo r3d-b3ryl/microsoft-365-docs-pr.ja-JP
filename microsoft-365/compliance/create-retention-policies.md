@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 35c93ed6ee942f9553e196d3f15634e53c0bf25d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352234"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844753"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -34,7 +34,7 @@ ms.locfileid: "44352234"
 
 ## <a name="before-you-begin"></a>はじめに
 
-アイテム保持ポリシーを作成して管理するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。これを行うには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)の [**権限**] ページに移動し、[**コンプライアンス管理者**] の管理者役割を編集して、その役割グループにメンバーを追加することをお勧めします。 
+アイテム保持ポリシーを作成して管理するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。この制限された管理に権限を付与するには、ユーザーを [**コンプライアンス管理者**] の管理者役割グループに追加することをお勧めします。 手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。
 
 これらのアクセス許可は、アイテム保持ポリシーを作成して適用するためにのみ必要です。 アイテム保持ポリシーを構成するユーザーは、コンテンツへのアクセスを必要としません。
 
@@ -78,7 +78,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
   
 ![Skype ユーザーの選択ページ](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブには作用しない機能です。**[会話履歴]** はエンド ユーザーが無効にできますが、Skype のアーカイブの場合はユーザーがアクセスできない (電子情報開示には使用できる) 非表示フォルダーに Skype の会話のコピーが保存されます。
+Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>コンテンツを保持および削除するための設定
@@ -113,7 +113,7 @@ Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブに�
   
 たとえば、保持して 3 年間を過ぎたコンテンツを削除するアイテム保持ポリシーを作成し、それをすべての OneDrive アカウントに割り当てるとします。アカウントには、4 から 5 年前に作成されたコンテンツが数多く含まれています。 このような場合、最初にアイテム保持ポリシーが割り当てられてすぐに、コンテンツの多くが削除されます。 このような理由から、コンテンツを削除するアイテム保持ポリシーは、コンテンツにかなりの影響を与える可能性があることを理解することが重要です。 
   
-そのため、サイト コレクションに初めてポリシーを割り当てるときには、その前に、既存のコンテンツの経過時間と、そのコンテンツにポリシーが及ぼす影響について考慮する必要があります。また、新しいポリシーを割り当てる前に、サイト所有者に連絡して、発生する可能性のある影響について評価するための時間を与えるようにしてください。アイテム保持ポリシーの作成前に設定を確認すると、この警告が表示されます。
+Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
   
 ![コンテンツの削除に関する警告](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -135,7 +135,7 @@ Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブに�
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>機密情報が含まれているコンテンツを特定する
 
-アイテム保持ポリシーは、[特定の種類の機密情報](what-the-sensitive-information-types-look-for.md)が含まれているコンテンツにのみ適用できます。たとえば、納税者番号、社会保障番号、パスポート番号などの個人を特定できる情報 (PII) が含まれているコンテンツにのみ固有の保持要件を適用することができます。
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![機密情報の種類のページ](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
