@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 の制限されたユーザー ポータルからユーザーを削除する方法についての管理者向けの説明です。 アカウントを侵害していると見なされたユーザーは通常、スパム送信者として、制限されたユーザー ポータルに追加されます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 43312ee6eff9b56ac4faf8173666a1ba79b9e067
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617364"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726733"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Office 365 の制限されたユーザー ポータルから、ブロックされたユーザーを削除する
 
@@ -42,7 +42,17 @@ ms.locfileid: "44617364"
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 制限されたユーザー ポータルからユーザーを削除するには、**組織の管理**または**セキュリティ管理者**役割グループのメンバーである必要があります。 制限されたユーザー ポータルに読み取り専用でアクセスするには、**セキュリティ リーダー**役割グループのメンバーである必要があります。 セキュリティ/コンプライアンス センターの役割グループの詳細については、「[セキュリティ/コンプライアンス センターでのアクセス許可](permissions-in-the-security-and-compliance-center.md)」をご覧ください。
+- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
+
+  - 制限されたユーザー ポータルからユーザーを削除するには、次の役割グループのメンバーである必要があります。
+
+    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
+    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
+
+  - 制限されたユーザー ポータルに読み取り専用でアクセスするには、次の役割グループのメンバーである必要があります。
+
+    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
 - 送信メールの制限を超える送信者は、アカウントが侵害されていることを示しています。 制限されたユーザー ポータルからユーザーを削除する前に、必要な手順に従ってアカウントの制御を再度行ってください。 詳細については、「[侵害された Office 365 電子メール アカウントへの対応](responding-to-a-compromised-email-account.md)」を参照してください。
 

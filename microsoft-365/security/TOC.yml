@@ -69,29 +69,20 @@
               href: mtp/setup-mtpeval.md
             - name: 構成およびオンボード
               href: mtp/config-mtpeval.md
-            - name: Microsoft Threat Protection を有効にする
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
+            - name: Microsoft Threat Protection を開始する
+              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: テストの警告を生成する
               href: mtp/generate-test-alert.md
         - name: 使い方ガイド
           items:
             - name: 試用版ラボの環境を作る
               href: mtp/mtp-evaluation.md
-              items:
-                - name: 準備
-                  href: mtp/prepare-mtpeval.md
-                - name: セットアップ
-                  href: mtp/setup-mtpeval.md
-                - name: 構成およびオンボード
-                  href: mtp/config-mtpeval.md
-                - name: Microsoft Threat Protection を有効にする
-                  href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
-                - name: テストの警告を生成する
-                  href: mtp/generate-test-alert.md
             - name: サポートされるサービスを展開する
               href: mtp/deploy-supported-services.md
             - name: Microsoft Threat Protection を有効にする
               href: mtp/mtp-enable.md
+            - name: よくあるご質問をオンにする
+              href: mtp/mtp-enable-faq.md
             - name: インシデント
               items:
                 - name: 概要
@@ -196,14 +187,10 @@
                       href: mtp/custom-detections-overview.md
                     - name: 検出ルールの作成と管理
                       href: mtp/custom-detection-rules.md
-            - name: セキュア スコア
+            - name: Microsoft セキュア スコア
               items:
-                - name: セキュア スコア (新規)
-                  href: mtp/microsoft-secure-score-new.md
-                - name: セキュア スコア (前のイテレーション)
+                - name: セキュア スコアの概要
                   href: mtp/microsoft-secure-score.md
-                - name: セキュア スコア (プレビュー)
-                  href: mtp/microsoft-secure-score-preview.md
                 - name: 今後の予定
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: レポート
@@ -324,6 +311,8 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 無効化ポータルを使って、受信拒否リストから自分自身を削除する
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: テナントの許可/禁止リストの URL とファイルを管理する
+                  href: ./office-365-security/tenant-allow-block-list.md
             - name: フィッシング対策保護
               href: ./office-365-security/anti-phishing-protection.md
               items:

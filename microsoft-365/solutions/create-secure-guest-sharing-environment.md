@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: この記事では、Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成するために使用できるオプションについて説明します。
-ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159481"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874896"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -40,7 +40,7 @@ ms.locfileid: "44159481"
 
 この記事で説明するオプションの一部には、ゲストが Azure Active Directory のアカウントを持っている必要があります。 ファイルやフォルダーをゲストと共有する際、ゲストがそのディレクトリに含まれていることを確認するには、[SharePoint および OneDrive の Azure AD B2B (プレビュー) との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を使用します。
 
-この記事ではゲスト共有設定を有効化する方法については扱いません。 さまざまなシナリオでゲスト共有を有効化する方法の詳細については、「[組織外のユーザーとの共同作業](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization)」を参照してください。
+この記事ではゲスト共有設定を有効化する方法については扱いません。 さまざまなシナリオでゲスト共有を有効化する方法の詳細については、「[組織外のユーザーとの共同作業](collaborate-with-people-outside-your-organization.md)」を参照してください。
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>ゲスト用の多要素認証を設定する
 

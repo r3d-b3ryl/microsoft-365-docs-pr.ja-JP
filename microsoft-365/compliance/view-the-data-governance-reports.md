@@ -14,19 +14,20 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
-ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: セキュリティ/コンプライアンス センターのデータ ガバナンス レポートを使用すると、意図したとおりにラベルがコンテンツに適用されているかどうかを簡単に確認できます。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a4d0fb70774dfb03dc0bc674edf09c092d8b498f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626303"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819007"
 ---
 # <a name="view-the-data-governance-reports"></a>データ ガバナンスのレポートを表示する
 
-ラベルを作成したら、意図したとおりにコンテンツに適用されていることを確認する必要があります。セキュリティ&amp;コンプライアンス センターのデータ ガバナンス レポートを使用すると、以下の項目を簡単に表示できます。
+After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
   
-- **上位 5 つのラベル**: このレポートには、コンテンツに適用された上位 5 つのラベルの数が表示されます。このレポートをクリックして、最近コンテンツに適用されたすべてのラベルのリストを表示します。各ラベルの数、位置、適用方法、保存アクション、レコードであるかどうか、処分タイプを確認できます。 
+- **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
     
 - **手動適用と自動適用**: このレポートには、手動または自動でラベル付けされたすべてのコンテンツの数と、手動でラベル付けされたコンテンツと自動でラベル付けされたコンテンツの割合が表示されます。 
     
@@ -40,7 +41,7 @@ ms.locfileid: "43626303"
   
 ![過去 90 日間のラベルの傾向を示すグラフ](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
-データ ガバナンス レポートは、日付 (最長 90 日間) と場所 (Exchange、SharePoint、OneDrive for Business) でフィルタリングできます。最新のデータは、レポートに表示されるまでに最長 24 時間かかることがあります。
+You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
   
 ![データ ガバナンス レポートのフィルター](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   
