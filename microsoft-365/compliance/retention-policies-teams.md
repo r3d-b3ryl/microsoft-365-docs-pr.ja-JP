@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 709d4414ebb01081172aff932899146c06d05a19
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268280"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861164"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>Microsoft Teams のアイテム保持ポリシーの詳細
 
@@ -77,7 +77,7 @@ Skype for Business と Teams の相互運用チャットでも、処理のフロ
 
 ## <a name="files-in-teams"></a>Teams のファイル
 
-Teams では、チャット内で共有されるファイルは、ファイルを共有したユーザーの OneDrive アカウントに保存されます。 チャネルにアップロードされたファイルは、チームの SharePoint 内に保存されます。 つまり、Teams でファイルを保持または削除するには、Teams 用に構成したアイテム保持ポリシーに加えて、**OneDrive アカウント**と **SharePoint サイト**に適用される 1 つ以上のアイテム保持ポリシーを構成する必要があります。 これらの場所でのアイテム保持ポリシーの機能の詳細については、「[SharePoint と OneDrive のアイテム保持ポリシーの詳細](retention-policies-sharepoint.md)」をご覧ください。
+Teams では、チャット内で共有されるファイルは、ファイルを共有したユーザーの OneDrive アカウントに保存されます。 チャネルにアップロードされたファイルは、チームの SharePoint 内に保存されます。 つまり、Teams でファイルを保持または削除するには、Teams 用に構成したアイテム保持ポリシーに加えて、OneDrive と SharePoint に適用する 1 つ以上のアイテム保持ポリシーを構成する必要があります。 これらの場所でのアイテム保持ポリシーの機能の詳細については、「[SharePoint と OneDrive のアイテム保持ポリシーの詳細](retention-policies-sharepoint.md)」をご覧ください。
 
 > [!NOTE]
 > Teams のチャネル メッセージまたは Teams のチャットを含むアイテム保持ポリシーには、Teams の場所のみを含めることができます。 したがって、Teams でこれらのファイルを保持または削除するには、個別のアイテム保持ポリシーを作成する必要があります。
@@ -98,6 +98,12 @@ SharePoint や OneDrive に適用されているアイテム保持ポリシー�
 
 - 外部ユーザーが別の Microsoft 365 組織のアカウントを使用して参加した場合、そのユーザーのメッセージは別のテナントのメールボックスに保存されるため、削除できません。 ただし、同じ会議の場合、アイテム保持ポリシーによりユーザーのメッセージが削除される可能性があります。
 
+
+## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
+
+ユーザーが組織を離れ、そのユーザーの Office 365 アカウントが削除された場合、保持の対象となるチャット メッセージは、非アクティブなメールボックスに保存されます。 チャット メッセージは、引き続きメールボックスが非アクティブになる前にユーザーに配置されたアイテム保持ポリシーの適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
+
+ユーザーが Teams にファイルを保存している場合は、SharePoint と OneDrive の[同等のセクション](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)を参照してください。
 
 ## <a name="limitations"></a>制限事項
 
@@ -123,12 +129,9 @@ Teams の保持機能の最適化に継続的に取り組んでいます。 そ�
     
     - **[Teams のチャット]** の場所にある **[ユーザーの選択]** を選択した場合、ゲストや、メールボックスのユーザーではないユーザーが表示される場合があります。 アイテム保持ポリシーはこれらのユーザー向けに設計されていないため、選択しないでください。
 
-
 ## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Microsoft Teams のアイテム保持ポリシーを構成する方法
 
-「[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)」を参照してください。
-
-ウィザードの [**場所の選択**] ページで、次のオプションを選択します。
+「[アイテム保持ポリシーの作成と構成](create-retention-policies.md)」の手順に従い、ウィザードの [**場所の選択**] ページで、次のオプションを選択します。
 
 - [**特定の場所を選択**] > [**Teams のチャネル メッセージ**] と [**Teams のチャット**]
 
