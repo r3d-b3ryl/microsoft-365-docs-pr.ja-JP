@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617088"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899353"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -53,7 +53,7 @@ ms.locfileid: "44617088"
 | `AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
 
 ## <a name="related-topics"></a>関連項目
-- [積極的に脅威を捜索する](advanced-hunting-overview.md)
+- [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)

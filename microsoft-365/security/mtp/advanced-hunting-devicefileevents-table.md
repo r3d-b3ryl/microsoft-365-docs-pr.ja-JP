@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4b815afbe8e3ca1f7967d13f6482b90f7c64e362
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 67749125d2f62f2774c36e6970cf8901b1fd5784
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617164"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899305"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -77,7 +77,7 @@ ms.locfileid: "44617164"
 | `IsAzureInfoProtectionApplied` | boolean | ファイルが Azure Information Protection によって暗号化されているかどうかを示します |
 
 ## <a name="related-topics"></a>関連項目
-- [積極的に脅威を捜索する](advanced-hunting-overview.md)
+- [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)

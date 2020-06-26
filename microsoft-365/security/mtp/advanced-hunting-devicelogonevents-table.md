@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceLogonEvents テーブル
 description: 高度な検索スキーマの DeviceLogonEvents テーブルの認証またはサインインイベントについて説明します。
-keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、logonevents、DeviceLogonEvents、authentication、ログオン、サインイン
+keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、logonevents、DeviceLogonEvents、authentication、logon、サインイン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c7f1bba23379b25ccecc427b2aa866a1105396d
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235016"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899269"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235016"
 
 
 
-`DeviceLogonEvents` [高度な](advanced-hunting-overview.md)検索スキーマの表には、ユーザーログオンとその他の認証イベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+`DeviceLogonEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、ユーザーログオンとその他の認証イベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -72,7 +72,7 @@ ms.locfileid: "42235016"
 | `IsLocalAdmin` | boolean | ユーザーがコンピューターのローカル管理者であるかどうかを示すブールインジケーター |
 
 ## <a name="related-topics"></a>関連項目
-- [積極的に脅威を捜索する](advanced-hunting-overview.md)
+- [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
