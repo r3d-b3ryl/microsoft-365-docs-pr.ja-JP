@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 48d8cf5bc618f4f1e840872c4369bc5cdda19727
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
+ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262559"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44869858"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -34,9 +34,9 @@ ms.locfileid: "44262559"
 
 このラボでは、自動的にプロビジョニングされた仮想ラボ環境が提供されます。これには、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、および完全に構成された Configuration Manager インスタンスが含まれます。 ラボには次の製品の最新の評価版が含まれています。
 
-  - Windows 10 Enterprise
+  - 新機能! Windows 10 Enterprise バージョン 2004
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager
+  - 新機能! Microsoft Endpoint Configuration Manager、バージョン 2002
   - Windows 10 用 Windows アセスメント & デプロイメント キット
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -113,7 +113,7 @@ ms.locfileid: "44262559"
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご使用ください。また、自動プロビジョニングには 30 から 45 分を見てください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 7 月 5 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
+*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご利用ください。また、自動プロビジョニングには 30 分から 45 分程度をお見積もりください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 9 月 12 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
