@@ -25,18 +25,18 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Microsoft 365 の請求書、請求書、および支払いに関する情報を解釈する方法、およびお客様の注文番号を変更する方法について説明します。
-ms.openlocfilehash: 13eea485a6d748ce8798ddb5075309bec727c6bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a46f108766ccfec4f7f6abaa2d48d38137311707
+ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402632"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909266"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for business の課金または請求書を理解する
 
-毎月、新しい請求明細書が管理センターで利用可能であることを知らせる電子メールを受け取ります。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
+毎月または毎年 (サブスクリプションを購入したときに選択したオプションによって異なります)、新しい請求明細書が管理センターで利用可能であることを知らせる電子メールが送信されます。 「[一般法人向け Office 365 の課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
   
-請求書は、2 ページあります。1 ページ目は請求書の要約で、請求書に関する一般的な情報、注文、請求額、支払い方法、サポートへの連絡方法について記載されています。
+Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
   
 ![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
@@ -62,38 +62,38 @@ ms.locfileid: "44402632"
   
 ## <a name="invoice-field-glossary"></a>請求書のフィールドの用語集
 
-次の表は、請求書に表示されるフィールドについて説明しています。請求書で支払うか、クレジット カードで支払うかに応じて、請求書に表示されないフィールドもあります。
+The following table describes the fields you might see on your invoice. Some fields listed here might not appear in your invoice, depending on whether you pay by invoice or by credit card or bank account.
   
 > [!NOTE]
 > 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
   
-|**名前**|**説明**|
+|**[名前]**|**説明**|
 |:-----|:-----|
 |年間価格|サブスクリプションは、月次または年次で課金されます。 サブスクリプションの購入時に年次請求書を選択した場合は、請求書に年間ライセンス料金が反映されます。 請求頻度を変更する場合は、サブスクリプションをキャンセルして、新しい請求頻度で再度購入する必要があります。|
-|課金期間|課金期間は、前回の請求日を起点とする期間です。サービス期間は、サービスの利用について請求される期間です。|
+|課金期間|Billing Period is the time period since the last invoice date. Service Period is the time period during which you are charged to use the service.|
 |請求先|これは請求部門の住所で、通常は販売先の住所と同じです。 請求先住所を更新するには、「[請求先](change-your-billing-addresses.md)住所を変更する」を参照してください。|
-|料金|請求書の 1 ページ目には、請求書の課金期間のすべての料金がまとめられています。2 ページ目には、各サブスクリプションの料金の明細が表示されます。|
-|小切手|支払いを請求書で行い、小切手支払いがお住まいの国で提供されている場合は、1 ページ目の末尾に支払い先に関する情報が含まれています。小切手には請求書番号を記載してください。|
-|クレジット|請求書の 1 ページ目には、請求書の課金期間のすべてのクレジットがまとめられています。2 ページ目には、各サブスクリプションのクレジットの明細が表示されます。|
-|お客様の PO 番号|お客様の発注書 (PO) 番号です。PO 番号を更新すると、以後の請求書にその番号が含まれます。[発注書番号を変更する](#change-your-purchase-order-number)。  <br/> **メモ**既存の請求書に PO 番号を追加することはできません。           |
-|日数|各請求トランザクションは、サービス期間に関連付けられます。日数の列は、そのサービス期間の日数を示します。|
-|割引|請求書の 1 ページ目には、請求書の課金期間のすべての割引がまとめられています。2 ページ目には、各サブスクリプションの割引の明細が表示されます。|
-|期限|請求書の支払い期限の日付です。サブスクリプションの支払いをクレジット カードで行う場合は、請求日の翌日にクレジット カードに請求されます。<br/> **メモ**銀行口座による支払いは、一部の国や地域では使用できません。           |
+|料金|Page 1 of your invoice summarizes all charges for the invoice Billing Period. Page 2 shows the detailed charges for each subscription.|
+|小切手|If you pay by invoice and check payment is offered in your country, the bottom of page 1 includes information about where to send your payment. Please reference the invoice number on your check.|
+|クレジット|Page 1 of your invoice summarizes all credits for the invoice Billing Period. Page 2 shows the detailed credits for each subscription.|
+|お客様の PO 番号|Your Purchase Order (PO) number. If you update the PO number, future invoices will include it. [Change your purchase order number](#change-your-purchase-order-number). <br/> **メモ**既存の請求書に PO 番号を追加することはできません。           |
+|日数|Each billing transaction is associated with a Service Period. The Days column indicates the number of days in that service period.|
+|割引|Page 1 of your invoice summarizes all discounts for the invoice Billing Period. Page 2 shows the detailed discounts for each subscription.|
+|期限|The date when payment is due for the invoice. If your subscription is paid with a credit card or bank account, we will charge your credit card or banking account the day after the Invoice Date. <br/> **メモ**銀行口座による支払いは、一部の国や地域では使用できません。           |
 |電子資金移動|サブスクリプションの支払い方法として [請求書] を選択した場合、ページ1には、電子情報 (有線、その他、SEPA など) の支払いに関する Microsoft 銀行口座の情報が含まれています。 通常、銀行は支払いの送信時に入力される参照フィールドを受け取ることになります。 このフィールドに表示される請求書番号を記載してください。|
 |総計|この行には、請求書に記載されているすべてのサブスクリプションのすべての料金、割引、クレジット、小計、税、合計列の合計が含まれています。|
-|請求日|請求書が作成された日付です。請求日は、課金期間の終了日の翌日です。たとえば、課金期間が 1 月 15 日から 2 月 14 日の場合、請求日は 2 月 15 日です。|
-|請求書番号|請求書に割り当てられている一意の番号です。支払い時には請求書番号を記載してください。|
+|請求日|The date the invoice was created. The invoice date is the day after the end of your Billing Period. For example, if your Billing Period is Jan 15 - Feb 14, your Invoice Date is Feb 15.|
+|請求書番号|The unique number assigned to your invoice. Please reference the Invoice Number with your payment.|
 |月額|サブスクリプションは、月次または年次で課金されます。 サブスクリプションの購入時に月次課金を選択した場合は、請求書に月次ライセンス料金が反映されます。 請求頻度を変更する場合は、サブスクリプションをキャンセルして、新しい請求頻度で再度購入する必要があります。|
-|注文番号|新しいサブスクリプションを購入するたびに、注文が作成されます。毎月、注文ごとの請求書が届きます。|
-|支払い手順|クレジット カードで支払っている場合は、「お振り込み不要 - 登録されているクレジット カードに請求いたします」と表示されます。請求書で支払う場合は、電子資金移動 (EFT) による支払い方法が表示されるため、必要に応じて確認してください。|
-|支払条件|支払い期限である請求日からの日数です。標準は 30 日間です。|
-|製品|請求書の 1 ページ目の "Online Services" はサブスクリプションの説明に使用する一般的な用語です。2 ページ目には、個々のサブスクリプション名が表示されます。|
+|注文番号|Every time you buy a new subscription, an order is created. Every month, you'll receive an invoice for each order.|
+|支払い手順|If you pay by credit card, you'll see "Do not pay - charged to credit card on file." If you pay by invoice, you'll see instructions for paying by Electronic Funds Transfer (EFT) and check (if applicable).|
+|支払条件|The number of days from the Invoice Date when payment is due. The standard is 30 days.|
+|製品|On page 1 of your invoice, "Online Services" is the generic term used to describe your subscriptions. On page 2 , you'll see the individual subscription names.|
 |数量|サービス期間中に購入したライセンスの数です。|
-|サービス期間|サービス期間は、サービスの利用について請求される期間です。課金期間は、前回の請求日を起点とする期間です。|
+|サービス期間|Service Period is the time period during which you are charged to use the service. A Billing Period is the time period since the last invoice date.|
 |サービスの利用先住所|サービスが使用されているアドレス。通常は、販売先の住所と同じです。 サービス利用状況の住所を更新するには、「[請求先住所を変更](change-your-billing-addresses.md)する」を参照してください。|
-|販売先|自分の会社名と住所です。この情報を更新する場合は、「[組織の住所およびその他のプロファイル情報を変更する](../../admin/manage/change-address-contact-and-more.md)」を参照してください。  |
+|販売先|Your company name and address. To update this information, see [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md).|
 |代金|請求書に記載されている各サブスクリプションには、そのサブスクリプションのすべての料金、割引、クレジット、小計、税、合計列の個別の小計行があります。|
-|税|請求書の 1 ページ目には、税の合計が表示されます。2 ページ目には、適用される税率と、各明細の合計税額が表示されます。請求書に税金が含まれているが、会社が免税である場合は[サポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。  |
+|税|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../admin/contact-support-for-business-products.md).|
 |合計|請求書の課金期間の請求額です。|
 
 ## <a name="change-your-purchase-order-number"></a>発注書番号を変更する
@@ -101,7 +101,7 @@ ms.locfileid: "44402632"
 請求書による支払いの場合は、サブスクリプションの発注書 (PO) 番号の追加または変更が可能です。
   
 > [!NOTE]
-> 既存の請求書に発注書番号を追加することはできません。今後すべての請求書に PO 番号が表示されます。
+> You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
 ::: moniker range="o365-worldwide"
 
@@ -119,7 +119,7 @@ ms.locfileid: "44402632"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 
@@ -129,7 +129,7 @@ ms.locfileid: "44402632"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 2. 変更するサブスクリプションを選択し、[**支払い方法**] セクションで [**支払いの詳細の変更**] を選択します。
 
