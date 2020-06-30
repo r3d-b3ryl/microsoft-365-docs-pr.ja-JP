@@ -3,7 +3,7 @@ title: Microsoft 365 コンプライアンスのドキュメント
 summary: お客様の組織で、法律や規制の基準に準拠する必要がある場合は、こちらから Microsoft 365 のコンプライアンスについてご確認ください。
 metadata:
   title: Microsoft 365 コンプライアンスのドキュメント
-  description: このページには、Microsoft 365 コンプライアンス機能に関連するいくつかの重要なトピックへのリンクが含まれています。 Microsoft 365 のコンプライアンスに関する詳細については、ここから開始してください。
+  description: このページには、Microsoft 365 のコンプライアンス機能に関するいくつかの重要なトピックへのリンクが含まれています。 Microsoft 365 のコンプライアンスについては、こちらを参照してください。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 7346a0d1abf0f8b643716d138efaaa269f35a2c5
   ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 06/19/2020
   ms.locfileid: "44817556"
