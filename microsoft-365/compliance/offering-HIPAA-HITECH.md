@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773718"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936352"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>医療保険の携行性と責任に関する法律と HITECH 法 (Health Insurance Portability and Accountability (HIPAA) & HITECH Acts)
 
@@ -98,7 +98,7 @@ Microsoft のサービスはすべての顧客に対して一貫しているた�
 
 このタスクをサポートするために、Microsoft は次のガイドを公開しています。
 
-- [Azure](https://aka.ms/azurehipaaguidance) 向けおよび [Dynamics 365 および Office 365](https://go.microsoft.com/fwlink/?LinkID=257510) 向けの *HIPAA/HITECH 法実装ガイダンス*。 プライバシー、セキュリティ、コンプライアンス責任者、および HIPAA および HITECH 法の実装を担当するその他の担当者向けに作成され、コンプライアンスを維持するために組織が実行できる具体的な手順について説明しています。
+- [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/) 向けおよび [Dynamics 365 および Office 365](https://go.microsoft.com/fwlink/?LinkID=257510) 向けの *HIPAA/HITECH 法実装ガイダンス*。 プライバシー、セキュリティ、コンプライアンス責任者、および HIPAA および HITECH 法の実装を担当するその他の担当者向けに作成され、コンプライアンスを維持するために組織が実行できる具体的な手順について説明しています。
 - 「[Practical guide to designing secure health solutions using Microsoft Azure (Microsoft Azure を使用して安全な健康ソリューションを設計するための実践ガイド)](https://aka.ms/azureindustrysecurity)」は、クラウド サービスを安全な方法で適切に導入するために必要なことをよりよく理解するために役立ちます。
 - 「[Microsoft クラウドでの HIPAA セキュリティおよびプライバシー要件への対応](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)」では、規制要件の概要を説明しています。 また、これらの要件に対応する方法論を使用して Microsoft のクラウドサービスがどのように構築されたかについての詳細な分析と、コンプライアンス対応のソリューションを構築する方法のガイダンスを提供します。
 

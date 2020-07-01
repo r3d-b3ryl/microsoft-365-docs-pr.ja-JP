@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: 'ユーザー定義のキーワードを関連性に追加して、上級電子情報開示でのタグ付けの際に関連ファイルを特定し、コストパラメータを指定する方法について説明します。  '
-ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: ユーザー定義のキーワードを関連性に追加して、上級電子情報開示でのタグ付けの際に関連ファイルを特定し、コストパラメータを指定する方法について説明します。
+ms.openlocfilehash: 61ec74109f13d8056047e0aaf14aaa87c846e17f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630554"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936456"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>高度な電子情報開示で強調表示されたキーワードと詳細オプションを定義する (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-詳細な電子情報開示では、ユーザー定義のキーワードを関連性に追加して、タグ付けの際に関連ファイルを識別するのに役立てることができます。 キーワードは、**関連性\>タグ**の指定した色で表示されます。 
+詳細な電子情報開示では、ユーザー定義のキーワードを関連性に追加して、タグ付けの際に関連ファイルを識別するのに役立てることができます。 キーワードは、**関連性 \> タグ**の指定した色で表示されます。 
   
 以下に示すように、キーワードリストを追加したり、キーワードリストに割り当てられている色や関連する問題を追加したりできます。 ヒントには、キーワードの説明 (存在する場合) が、二重下線で示されます。
   
@@ -36,9 +36,9 @@ ms.locfileid: "43630554"
   
 ## <a name="adding-highlighted-keywords"></a>強調表示されたキーワードの追加
 
-1. [**関連性\>の関連性の設定**] タブで、[**強調表示**されたキーワード] を選択します。
+1. [**関連性の \> 関連性の設定**] タブで、[**強調表示**されたキーワード] を選択します。
     
-2. アイコンを**+** クリックしてキーワードを追加します。 [**新しいキーワードの追加**] ダイアログが表示されます。 
+2. アイコンをクリックして **+** キーワードを追加します。 [**新しいキーワードの追加**] ダイアログが表示されます。 
     
 3. [**キーワード**] にキーワードリストを入力します。キーワードはコンマで区切ります。 
     
@@ -54,13 +54,13 @@ ms.locfileid: "43630554"
     
     ![関連性の設定のキーワードの一覧](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
-ユーザー定義のキーワードが、[関連性\> ] タグの指定した色で表示されます。 
+ユーザー定義のキーワードが、[関連性] タグの指定した色で表示され \> ます。 
   
 ## <a name="specifying-relevance-setup-advanced-settings"></a>関連性セットアップの詳細設定の指定
 
 これらの設定は、関連性のあるトラックと判断グラフに影響します。
   
-1. [**関連性\>の関連性の設定**] タブで、[**詳細設定**] を選択します。
+1. [**関連性の \> 関連性の設定**] タブで、[**詳細設定**] を選択します。
     
 2. [**コストパラメーター** ] ダイアログで、次のように選択します。 
     

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用して Office アドインを展開できるようにします。
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717275"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936445"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -33,23 +33,19 @@ ms.locfileid: "44717275"
 一元展開は、3つのデスクトッププラットフォーム Windows、Mac、およびオンライン Office アプリをサポートします。 一元展開では、iOS および Android もサポートされています (Outlook モバイルアドインのみ)。
 すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大24時間かかる場合があります。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise (組織の ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
 以下の Office および Exchange の特定の要件を確認することも、[集中展開の互換性チェック](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)を使用することもできます。
 
 一元展開は、次の機能をサポートしていません。
   
-- Office 2013 の Word、Excel、または PowerPoint を対象とするアドイン
-    
+- Office 2013 の Word、Excel、または PowerPoint を対象とするアドイン 
 - オンプレミスのディレクトリ サービス
-    
+- Exchange オンプレミスメールボックスへのアドインの展開
 - SharePoint に展開するアドイン  
-
 - Teams アプリ
-   
 - コンポーネント オブジェクト モデル (COM) アドインまたは Visual Studio Tools for Office (VSTO) アドインの展開
-    
 - Microsoft 365 の展開には、Microsoft 365 Apps for business などの Exchange は含まれていません。
 
 ### <a name="office-requirements"></a>Office の要件

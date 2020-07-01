@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Advanced eDiscovery で分析および処理モジュールを使用するときに特定のテキストを無視するルールを定義する方法について説明します。  '
-ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: Advanced eDiscovery で分析および処理モジュールを使用するときに特定のテキストを無視するルールを定義する方法について説明します。
+ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631254"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936894"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>Advanced eDiscovery で分析するための [テキストを無視] オプションを設定する (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 [テキストを無視] 機能は、次の高度な電子情報開示モジュールのすべてまたはいずれかに適用できます: Analyze (重複、電子メールスレッド、テーマ) および関連性。 無視されたテキストは、関連性に表示されているファイルには表示されず、解析/計算では無視されたテキストが破棄されます。
   
@@ -62,7 +62,7 @@ ms.locfileid: "43631254"
     
     **これは2番目の文と2行目です。**
     
-    正規表現の最初 (.\*)$ は次のようになります。
+    正規表現の最初 (. \* )$ は次のようになります。
     
     **"これは**
     
@@ -76,7 +76,7 @@ ms.locfileid: "43631254"
     
     たとえば、次の正規表現は、電子メールスレッドの Begin および End 文字列間の免責事項および法的なステートメントを削除します。
     
-    **このメッセージには機密情報が含まれています (. |\s)\*確認が必要な場合は、ハードコピーバージョンを要求してください。**
+    **このメッセージには機密情報が含まれています (. |\s) \* 確認が必要な場合は、ハードコピーバージョンを要求してください。**
     
 - 免責事項 (特殊文字を含む) を削除するには、次のようにします。 
     
@@ -90,11 +90,11 @@ ms.locfileid: "43631254"
     
     上記の免責事項を削除する正規表現は、次のようになります。 
     
-    **\/\\*\\このメッセージには機密\.情報が含まれています (. |\s)\*確認が必要な場合は、ハードコピーバージョン\.を要求してください。\/\\*\\**
+    **\/\\*\\このメッセージには機密情報が含まれてい \. ます (. |\s) \* 確認が必要な場合は、ハードコピーバージョン \. を要求してください。\/\\*\\**
     
 - 正規表現ルール:
     
-  - アルファベットの一部ではない文字 (スペースを除く)、"_"、および "-" は "" の前にする\"必要があります。
+  - アルファベットの一部ではない文字 (スペースを除く)、"_"、および "-" は "" の前にする必要があり \" ます。
     
   - 通常の eExpression フィールドの長さに制限はありません。
     
@@ -103,7 +103,7 @@ ms.locfileid: "43631254"
   
 ## <a name="define-ignore-text-rule"></a>無視するテキストルールを定義する
 
-1. [ ** \>分析分析\>オプションの管理**] タブの [**無視するテキスト**] セクションで**+** 、アイコンをクリックしてルールを追加します。 
+1. [**分析分析 \> \> オプションの管理**] タブの [**無視するテキスト**] セクションで、アイコンをクリックしてルールを追加し **+** ます。 
     
 2. [**無視するテキストを追加**] ダイアログの [**名前**] フィールドに、ignore テキストルールの名前を入力します。 
     

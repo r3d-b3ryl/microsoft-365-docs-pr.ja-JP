@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: '高度な電子情報開示を使用して、分析用のデータのケースファイルを準備するためのガイドラインについて説明します。  '
-ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 高度な電子情報開示を使用して、分析用のデータのケースファイルを準備するためのガイドラインについて説明します。
+ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626463"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936200"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>Advanced eDiscovery でプロセスモジュールを実行する (クラシック)
 
-ケースファイルは、**準備** \> **プロセス**中に Advanced eDiscovery にロードされます。 
+ケースファイルは、**準備**プロセス中に Advanced eDiscovery にロードされ \> **Process**ます。 
   
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>ガイドライン: 高度な電子情報開示用のデータを準備する
 
@@ -42,7 +42,7 @@ ms.locfileid: "43626463"
     
 - **ファイルの種類と名前**:
     
-  - 高度な電子情報開示では、さまざまな形式のファイルを処理し、に読み込ま\*れたネイティブファイルを、などの標準形式で抽出できます。TXT、HTML、またはです。XML-RPC. テキストファイルの処理は、ネイティブファイルよりも高速です。 抽出したテキストファイルは、case フォルダーに保存されます。
+  - 高度な電子情報開示では、さまざまな形式のファイルを処理し、に読み込まれたネイティブファイルを、などの標準形式で抽出でき \* ます。TXT、HTML、またはです。XML-RPC. テキストファイルの処理は、ネイティブファイルよりも高速です。 抽出したテキストファイルは、case フォルダーに保存されます。
     
   - 抽出できないファイル (システムファイルやグラフィックスイメージなど) を読み込まないようにします。 これらのファイルは処理を遅らせている場合があります。
     

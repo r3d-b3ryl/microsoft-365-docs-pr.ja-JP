@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: '詳細な電子情報開示の関連性トレーニング段階で、40ファイルのトレーニングサンプルをタグ付けして操作する手順について説明します。  '
-ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 詳細な電子情報開示の関連性トレーニング段階で、40ファイルのトレーニングサンプルをタグ付けして操作する手順について説明します。
+ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636265"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936673"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Advanced eDiscovery でのタグ付けと関連性トレーニング (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 このトピックでは、高度な電子情報開示関連トレーニングモジュールを操作する手順について説明します。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "43636265"
   
 ## <a name="performing-relevance-training"></a>関連性トレーニングの実行
 
-1. [**関連性\>タグ**] タブの左側のウィンドウには、既定で [タグ] ウィンドウが表示され、サンプルファイルが一度に1つずつタグ付けされます。 
+1. [**関連性 \> タグ**] タブの左側のウィンドウには、既定で [タグ] ウィンドウが表示され、サンプルファイルが一度に1つずつタグ付けされます。 
     
     ![関連性タグ パネル](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
@@ -50,11 +50,11 @@ ms.locfileid: "43636265"
 |-----|-----|-----|-----|
 |R  <br/> |対応  <br/> |Z  <br/> |Shift + Z  <br/> |
 |NR  <br/> |該当なし  <br/> |X  <br/> |Shift + X  <br/> |
-|スキップ  <br/> |スキップ  <br/> |C  <br/> |Shift + A  <br/> |
+|Skip  <br/> |Skip  <br/> |C  <br/> |Shift + A  <br/> |
    
   - ファイルに複数の問題が存在する場合、1つの問題にタグ付けすると、選択範囲は次の問題に移動します (存在する場合)。 
     
-  - キーワードを強調表示するときに、管理者またはケースマネージャーによっ\>て定義されたキーワード (関連性の設定の強調表示キーワード) は、タグ付け中に関連ファイルを識別するのに役立つように、指定された色で表示されます。 キーワードに二重下線がある場合は、それをクリックして、キーワードの説明を含むツールヒントを表示することができます。 
+  - キーワードを強調表示するときに、管理者またはケースマネージャーによって定義されたキーワード (関連性 \> の設定の強調表示キーワード) は、タグ付け中に関連ファイルを識別するのに役立つように、指定された色で表示されます。 キーワードに二重下線がある場合は、それをクリックして、キーワードの説明を含むツールヒントを表示することができます。 
     
     必要に応じて、[**タグ**] タブの [**タグ設定**] をクリックして、次のオプションを設定します。 
     
@@ -78,7 +78,7 @@ ms.locfileid: "43636265"
 
 サンプルファイルリストを使用すると、トレーニングサンプル内のファイルの一覧を表示し、1つ以上のファイルに対してさまざまなアクションを実行できます。 [**関連性** \> **タグ**] タブには、評価、トレーニング、キャッチアップ、および不整合のプロセスで処理するためのサンプルファイルの一覧が [**サンプルファイル**] 左ウィンドウに表示されます。 
   
-1. [**関連性\>タグ**] タブで、左側のウィンドウのドロップダウンリストでサンプルファイルを選択します。 左側のウィンドウにサンプルファイルが表示されます。 
+1. [**関連性 \> タグ**] タブで、左側のウィンドウのドロップダウンリストでサンプルファイルを選択します。 左側のウィンドウにサンプルファイルが表示されます。 
     
     ![関連性タグのサンプル ファイル一覧](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   

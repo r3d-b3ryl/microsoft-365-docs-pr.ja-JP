@@ -18,13 +18,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
-description: 'Office 365 で電子情報開示ツールを使用して検索を実行すると、予想および実際の検索結果が異なる理由を理解します。 '
-ms.openlocfilehash: 29e0a09046e3be756cc363243dede08d2aa5c310
-ms.sourcegitcommit: 5b7630b8692c692aef3eefc8857f46a7ee172dfd
+description: Office 365 で電子情報開示ツールを使用して検索を実行すると、予想および実際の検索結果が異なる理由を理解します。
+ms.openlocfilehash: e3dcda1de920dc8266a93a890742f53f409357dc
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174051"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936434"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>予測電子情報開示の検索結果の相違点
 

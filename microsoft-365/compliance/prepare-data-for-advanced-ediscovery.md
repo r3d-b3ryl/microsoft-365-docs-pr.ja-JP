@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'セキュリティコンプライアンスセンターを使用して、 &amp; 高度な電子情報開示を使用して分析のためにデータを準備する方法について説明します。 '
-ms.openlocfilehash: cf6ace4f88aa18790495b79ed3aa22ebeda75545
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: セキュリティコンプライアンスセンターを使用して、 &amp; 高度な電子情報開示を使用して分析のためにデータを準備する方法について説明します。
+ms.openlocfilehash: 3c9d237a3a9c04a443730143998324a7831f2998
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412826"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936332"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>高度な電子情報開示用のデータを準備する (クラシック)
 

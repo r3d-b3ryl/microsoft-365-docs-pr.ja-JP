@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'タスクの状態とプロセスの概要を含む、アドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。  '
-ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: タスクの状態とプロセスの概要を含む、アドバンスト eDiscovery でのプロセスモジュールの実行結果を確認する方法について説明します。
+ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626313"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936170"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>アドバンスド電子情報開示でのプロセスモジュールの結果の表示 (クラシック)
 
 **準備** \> **プロセス**が開始されると、進行状況と結果を表示できるようになります。 
   
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>タスクの進捗状況を処理する
 
-[ **Prepare** \> **Process**処理\>の準備] で、次の例に示すよう**に、ページ**に現在の状態 (プロセスが実行中の場合) または最後のプロセスの状態タスクの状態が表示されます。
+[処理の**準備** \> **Process** \> ] で、次の例に示すよう**に、** ページに現在の状態 (プロセスが実行中の場合) または最後のプロセスの状態タスクの状態が表示されます。
   
 ![プロセス モジュールのタスクの進捗状況](../media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
@@ -64,7 +64,7 @@ ms.locfileid: "43626313"
   
 ## <a name="process-summary"></a>プロセスの概要
 
-[ \>プロセス\>結果\>の処理の概要] で、読み込まれたファイルの結果の内訳が、正常なファイル処理とエラー結果に従って表示されます。
+[ \> プロセス \> 結果の処理 \> の概要] で、読み込まれたファイルの結果の内訳が、正常なファイル処理とエラー結果に従って表示されます。
   
 ペインは、次のように、インポートされたファイル統計をグラフィカルに表示します。
   
@@ -104,7 +104,7 @@ ms.locfileid: "43626313"
     
 ## <a name="last-process-errors"></a>最後の処理エラー
 
-[ \>処理\>結果\>の最終処理] エラーでは、最後に実行されたセッションまたはアクションのエラーの詳細が表示されます。
+[ \> 処理 \> 結果の \> 最終処理] エラーでは、最後に実行されたセッションまたはアクションのエラーの詳細が表示されます。
   
 ![プロセス モジュールのエラー](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   

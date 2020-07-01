@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: '詳細な電子情報開示の関連性モジュールについて説明します。これには、ワークフロー、ガイドライン、トレーニングとファイルレビューの手順が含まれます。  '
-ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 詳細な電子情報開示の関連性モジュールについて説明します。これには、ワークフロー、ガイドライン、トレーニングとファイルレビューの手順が含まれます。
+ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626393"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936610"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>詳細な電子情報開示で関連性モジュールを使用する (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 詳細な電子情報開示では、関連性に関するトレーニングと、ケースに関連するファイルのレビューが関連モジュールに含まれています。 関連性ワークフローが表示され、次のように説明されています。
   
@@ -90,7 +90,7 @@ ms.locfileid: "43626393"
     
 ## <a name="steps-in-relevance-training"></a>関連性トレーニングの手順
 
-[**関連性\>の追跡**] タブで、Advanced eDiscovery は処理を進める方法に関する推奨事項を提供し、次の手順を実行します。 関連トレーニングプロセスで以下の各手順を実行する場合は、次に示す影響について説明します。 
+[**関連性の \> 追跡**] タブで、Advanced eDiscovery は処理を進める方法に関する推奨事項を提供し、次の手順を実行します。 関連トレーニングプロセスで以下の各手順を実行する場合は、次に示す影響について説明します。 
   
 - タグ付け/続行のタグ付け: サンプル内のファイルと問題について、エキスパートによってファイルのレビューと関連性のタグ付けが実行されます。
     

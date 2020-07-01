@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 今月の新機能と更新された機能について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818967"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936150"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -112,7 +112,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 [機密ラベルを使用して Microsoft Teams のコンテンツを保護する、microsoft 365 グループ、SharePoint サイト (パブリックプレビュー)](sensitivity-labels-teams-groups-sites.md) (更新)<br>変更内容には、次のものが含まれます。
 
 - Azure ad の手順を削除し、代わりに[AZURE ad の権限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)のある情報にリンクしました。
-- **Office 365 グループに接続されたチームサイトの**設定 (新しい **[なし**] オプションを含む) のプライバシーに関する情報を使用して、[[機密ラベルの作成または編集時にサイトとグループの設定を構成する方法](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels)」を更新しました。
+- 「[[サイトとグループ設定を構成する方法](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings)] セクションを更新しました。 **Office 365 グループに接続されたチームサイト設定のプライバシー**に関する情報が含まれています。これには新しい **[なし**] オプションが含まれています。
 - ユーザーがチーム、グループ、およびサイトを作成するときに選択できるように、サイトとグループの設定が含まれるラベルのみを使用する方法を説明するメモを追加しました。 この機能は、組織に段階的にロールアウトされています。
 
 [暗号化を適用するために機密ラベルを使用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)(更新)<br>ドキュメントとメールを保護するためによく使用されるいくつかの構成の暗号化設定の例を含む[新しいセクション](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings)。

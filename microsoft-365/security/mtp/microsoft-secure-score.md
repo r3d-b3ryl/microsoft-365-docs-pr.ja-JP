@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844626"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936631"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -56,6 +56,19 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 ### <a name="products-included-in-secure-score"></a>セキュア スコアに含まれる製品
 
 現在、Microsoft 365 (Exchange Online を含む)、Azure AD、Microsoft Defender ATP、Azure ATP、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日リリース予定です。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅するわけではありませんが、適切な基準になります。 また、強化された機能をサードパーティの対象としてマークしたり、別の軽減対策にマークしたりすることもできます。
+
+### <a name="security-defaults"></a>セキュリティの既定値
+
+Microsoft のセキュリティで保護されたスコア[では、Azure Active Directory のセキュリティの既定](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)をサポートするように改善アクションが更新されているため、一般的な攻撃に対して構成済みのセキュリティ設定を使用して組織を保護することが容易になります
+
+[セキュリティの既定] をオンにすると、次の強化されたアクションについて完全なポイントが付与されます。
+
+- すべてのユーザーが、セキュリティで保護されたアクセスに対して多要素認証を完了できるようにする (9 ポイント)
+- 管理役割に MFA を必要とする (10 ポイント)
+- 従来の認証をブロックするポリシーを有効にする (7 ポイント)
+
+>[!IMPORTANT]
+>セキュリティの既定値には、「サインインリスクポリシー」と「ユーザーリスクポリシー」の強化アクションに似たセキュリティを提供するセキュリティ機能が含まれます。 これらのポリシーをセキュリティの既定の設定の上で設定する代わりに、それぞれの状態を "代替対策によって解決されました" に更新することをお勧めします。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 

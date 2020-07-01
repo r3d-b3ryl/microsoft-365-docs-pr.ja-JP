@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: '詳細な電子情報開示の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマを含む高度な設定を構成する方法について説明します。 '
+description: 詳細な電子情報開示の分析プロセスについて、ほぼ重複、電子メールスレッド、テーマを含む高度な設定を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 39d99609cfff92dcd6e6d2f4483076b8bfe808be
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819237"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936754"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>高度な電子情報開示の高度な設定を分析する設定を行う
 
@@ -45,9 +45,9 @@ Advanced eDiscovery は、モジュール設定を分析するための既定の
     
 3. [テーマの**パラメーター**] で、[**テーマの分析に数字を含める**] チェックボックスをオンにして、分析中のテーマの処理に番号を含めます。 
     
-4. **[保存]** をクリックします。 
+4. [**保存**] をクリックします。 
     
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

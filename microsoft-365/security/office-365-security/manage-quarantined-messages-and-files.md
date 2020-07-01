@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Office 365 Advanced Threat Protection (Office 365 ATP) を使用している組織内の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを管理することもできます。
-ms.openlocfilehash: bf5b532b3830333fb42e2371d48e37991385e5f4
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d3dadeb4035d55fa60785c7a752737cc83038730
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616824"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936973"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP で管理者として検疫済みメッセージおよびファイルを管理する
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
 Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については、「EOP での検疫された[電子メールメッセージ](quarantine-email-messages.md)」を参照してください。
 
@@ -39,7 +39,7 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 
 - セキュリティ/コンプライアンス センターを開くには、<https://protection.office.com> へ移動します。 検疫ページを直接開くには、<https://protection.office.com/quarantine> にアクセスします。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - 管理者として検疫を管理するには、事前にアクセス許可を割り当てる必要があります。アクセス許可は、セキュリティ & コンプライアンスセンターの**検疫**役割によって制御されます。 既定では、この役割はセキュリティ & コンプライアンスセンターの [**組織の管理**(グローバル管理者)]、[**検疫管理**者]、および [**セキュリティ管理者**] 役割グループに割り当てられます。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
@@ -57,7 +57,7 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 
 1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[レビュー]** \> **[検疫]** の順に移動します。
 
-2. 検疫済み**ビュー**が既定値の**電子メール**に設定されていることを確認します。
+2. [**検疫済みを表示**] が既定値の [**メール**] に設定されていることを確認します。
 
 3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 **[列の変更]** をクリックして、最大で 7 列まで表示できます。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
 
@@ -109,7 +109,7 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 
      - **マルウェア**
 
-     - **[スパム]**
+     - **スパム**
 
      - **精度の高いフィッシング**
 
@@ -336,14 +336,14 @@ ATP を使用している組織では、管理者は SharePoint Online、OneDriv
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Exchange Online PowerShell またはスタンドアロンの EOP PowerShell を使用して、検疫済みメッセージおよびファイルを表示および管理する
 
-検疫内のメッセージおよびファイルを表示および管理するには、次のコマンドレットを使用します。
+検疫内のメッセージとファイルを表示および管理するコマンドレットは、次のとおりです。
 
-- [Get-quarantinemessage を削除します。](https://docs.microsoft.com/powershell/module/exchange/delete-quarantinemessage)
+- [Delete-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/delete-quarantinemessage)
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/export-quarantinemessage)
+- [Export-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/export-quarantinemessage)
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
+- [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage): このコマンドレットは、メッセージのみを対象としています。このコマンドレットは、SharePoint Online、OneDrive for business、または TEAMS の ATP ファイルではなく、メッセージのみを対象としています。
+- [Preview-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage): このコマンドレットはメッセージ専用であり、SharePoint Online、OneDrive for Business、または Teams の ATP からのマルウェアファイルではないことに注意してください。
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)
+- [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)

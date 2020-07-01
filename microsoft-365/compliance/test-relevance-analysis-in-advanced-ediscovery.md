@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: '高度な電子情報開示のバッチ計算の後に [テスト] タブを使用して、全体的な処理の品質をテスト、比較、検証する方法について説明します。  '
-ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 高度な電子情報開示のバッチ計算の後に [テスト] タブを使用して、全体的な処理の品質をテスト、比較、検証する方法について説明します。
+ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637201"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936210"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>高度な電子情報開示での関連性分析のテスト (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 上級電子情報開示の [テスト] タブを使用すると、処理の全体的な品質をテスト、比較、および検証できます。 これらのテストは、バッチ計算の後に実行されます。 コレクション内のファイルにタグ付けすることで、エキスパートは各タグ付きファイルが実際にケースに関連しているかどうかを決定します。 
   
@@ -42,7 +42,7 @@ ms.locfileid: "43637201"
     
 - 校閲セットの母集団パラメーターと残りの部分の表形式の比較。たとえば、ファイルの数、関連ファイルの推定数、高い多様性、および追加の関連ファイルを検索する平均コストなどです。 コストパラメーターの設定は、管理者が設定できます。
     
-1. [**関連性\>テスト**] タブを開きます。 
+1. [**関連性 \> テスト**] タブを開きます。 
     
 2. [**テスト**] タブで、[**新しいテスト**] をクリックします。 次の例に示すように、[**テストの作成**] ダイアログが表示されます。 
     
@@ -62,7 +62,7 @@ ms.locfileid: "43637201"
     
 9. [**タグ付けの開始**] をクリックします。 テストサンプルが生成されます。
     
-10. [ ** \>関連性タグ**] タブで各ファイルを確認し、タグを付けます。完了したら、[**計算**] をクリックします。
+10. [**関連性 \> タグ**] タブで各ファイルを確認し、タグを付けます。完了したら、[**計算**] をクリックします。
     
 11. [テスト] タブで [結果の**表示**] をクリックすると、テスト結果が表示されます。 次の図に例を示します。 
     
@@ -86,7 +86,7 @@ ms.locfileid: "43637201"
 
 "スライスをテストする" テストは、"Rest をテストする" テストに似たテストを実行しますが、関連性読み取り% で指定されたファイルセットのセグメントに対して行います。
   
-1. [**関連性\>テスト**] タブを開きます。 
+1. [**関連性 \> テスト**] タブを開きます。 
     
 2. [**テスト**] タブで、[**新しいテスト**] をクリックします。 [**テストの作成**] ダイアログが表示されます。 
     
@@ -106,7 +106,7 @@ ms.locfileid: "43637201"
     
 9. [**タグ付けの開始**] をクリックします。 テストサンプルが生成されます。
     
-10. [ ** \>関連性タグ**] タブで各ファイルを確認し、タグを付けます。完了したら、[**計算**] をクリックします。 
+10. [**関連性 \> タグ**] タブで各ファイルを確認し、タグを付けます。完了したら、[**計算**] をクリックします。 
     
 11. [テスト] タブで [結果の**表示**] をクリックすると、テスト結果が表示されます。 
     

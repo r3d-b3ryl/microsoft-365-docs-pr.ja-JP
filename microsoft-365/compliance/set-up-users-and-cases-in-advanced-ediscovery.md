@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: '高度な電子情報開示でユーザーの役割を構成し、ケースを作成し、ユーザーをケースに割り当てる方法について説明します。  '
+description: 高度な電子情報開示でユーザーの役割を構成し、ケースを作成し、ユーザーをケースに割り当てる方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8e24354960b517815bef3cf498822d6ce9fd9dbe
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819177"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936744"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>上級電子情報開示でユーザーおよびケースをセットアップする (クラシック)
 
@@ -36,7 +36,7 @@ Advanced eDiscovery でケースとユーザーを設定する前に、次のも
   
 - To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced eDiscovery standalone license. Administrators and compliance officers who are assigned to cases and use Advanced eDiscovery to analyze data don't need an E5 license. 
     
-- &amp;電子情報開示ケースを作成してメンバーを追加するには、セキュリティコンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 セキュリティ/コンプライアンスセンターの電子情報開示マネージャーの役割グループに自分を追加するには &amp; 、組織の全体管理者である必要があります。 全体管理者ではない場合は、電子情報開示マネージャーの役割グループに追加するように全体管理者に依頼する必要があります。 詳細については、以下を参照してください。
+- &amp;電子情報開示ケースを作成してメンバーを追加するには、セキュリティコンプライアンスセンターの電子情報開示マネージャーの役割グループのメンバーである必要があります。 セキュリティ/コンプライアンスセンターの電子情報開示マネージャーの役割グループに自分を追加するには &amp; 、組織の全体管理者である必要があります。 全体管理者ではない場合は、電子情報開示マネージャーの役割グループに追加するように全体管理者に依頼する必要があります。 詳しくは、次のトピックを参照してください。
     
   - [Microsoft 365 セキュリティコンプライアンスセンターのアクセス許可 &amp;](~/security/office-365-security/protect-against-threats.md)
     

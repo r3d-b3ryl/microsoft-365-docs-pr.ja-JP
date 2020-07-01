@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'セキュリティ &amp; コンプライアンスセンターを使用して高度な電子情報開示にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。  '
+description: セキュリティ &amp; コンプライアンスセンターを使用して高度な電子情報開示にアクセスし、ケースに対して Process モジュールを実行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 011a8448c36ac9f4726f13471c548b7bb2427000
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818906"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936160"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>Process モジュールを実行し、Advanced eDiscovery でデータを読み込む (クラシック)
 
@@ -82,7 +82,7 @@ Advanced eDiscovery は、重複したグループや関連性のスコアなど
     
 ケースにを追加した場合は、もう一度処理することができます。
   
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Advanced eDiscovery (クラシック)](office-365-advanced-ediscovery.md)
   

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa4ff0d41a61be0bf75c7943082a6ed75e3ded37
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 8ec31bb08933ba9c1f0cc264bafc8d39bf64a003
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689291"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936852"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -81,9 +81,9 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 
 ## <a name="step-2-required-enable-the-audit-log"></a>手順 2 (必須): 監査ログを有効にする
 
-通信のコンプライアンスでは、監査ログを使用して通知を表示し、レビュー担当者が行った修復アクションを追跡する必要があります。 監査ログは、定義済みの組織ポリシーに関連付けられているすべてのアクティビティ、または通信コンプライアンスポリシーが変更されるたびに、その概要を示します。
+通信コンプライアンスには、警告を表示し、レビュー担当者が行った修復処置を追跡するための監査ログが必要です。 監査ログは、定義済みの組織ポリシーに関連付けられているすべてのアクティビティ、または通信コンプライアンスポリシーが変更されるたびに、その概要を示します。
 
-監査を有効にするための詳細な手順について[は、「監査ログの検索を有効または無効](turn-audit-log-search-on-or-off.md)にする」を参照してください。 監査を有効にすると、監査ログが準備されていて、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+監査を有効にするための詳細な手順について[は、「監査ログの検索を有効または無効](turn-audit-log-search-on-or-off.md)にする」を参照してください。 監査を有効にすると、監査ログの準備中で、準備が完了してから数時間で検索を実行できるというメッセージが表示されます。 この操作は1回だけ実行する必要があります。 監査ログの使用の詳細については、「 [Search the audit log](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>手順 3 (省略可能): 通信コンプライアンス用にグループをセットアップする
 
@@ -97,6 +97,11 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 | レビュー担当者 | なし | 配布グループ <br> 動的配布グループ <br> メールが有効なセキュリティ グループ |
   
 ポリシーで配布グループを割り当てると、ポリシーは配布グループ内の各ユーザーからのすべての電子メールを監視します。 ポリシーに Microsoft 365 グループを割り当てると、そのグループに送信されるすべてのメールが、各グループメンバーが受信する個々の電子メールではなく、このポリシーによって監視されます。
+
+Exchange オンプレミス展開または外部電子メールプロバイダーを使用している組織で、ユーザーのチームのチャットを監視する場合は、オンプレミスまたは外部のメールボックスを監視するユーザー用に配布グループを作成する必要があります。 この手順の後半では、ポリシーウィザードで [**ユーザーとグループの監視**] を選択して、この配布グループを割り当てます。
+
+>[!IMPORTANT]
+>組織がセキュリティ & コンプライアンスセンターでグラフィカルユーザーインターフェイスを使用してオンプレミスユーザーの Teams チャットデータを検索できるようにするには、Microsoft サポートを使用して要求をファイルにする必要があります。 詳細については、「[オンプレミスユーザーのクラウドベースのメールボックスの検索](search-cloud-based-mailboxes-for-on-premises-users.md)」を参照してください。
 
 グループの設定の詳細については、次の記事を参照してください。
 
@@ -115,7 +120,7 @@ Microsoft 365 コンプライアンスセンターのメニューオプション
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>手順 5 (必須): 通信コンプライアンスポリシーを作成する
   
 >[!Important]
->PowerShell を使用して通信コンプライアンスポリシーを作成および管理することはサポートされていません。 これらのポリシーを作成および管理するには、 [Microsoft 365 コミュニケーションコンプライアンスソリューション](https://compliance.microsoft.com/supervisoryreview)のポリシー管理コントロールを使用する必要があります。
+>PowerShell を使用して通信コンプライアンスポリシーを作成し、管理することはできません。 これらのポリシーを作成および管理するには、 [Microsoft 365 コミュニケーションコンプライアンスソリューション](https://compliance.microsoft.com/supervisoryreview)のポリシー管理コントロールを使用する必要があります。
 
 1. [https://compliance.microsoft.com](https://compliance.microsoft.com)Microsoft 365 組織の管理者アカウントの資格情報を使用してサインインします。
 

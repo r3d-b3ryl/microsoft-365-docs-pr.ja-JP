@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: '高度な電子情報開示のユーティリティ (ケースログ、クリアデータ、プロセスエラー、関連性の変更、透過性の分析など) について説明します。  '
-ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 高度な電子情報開示のユーティリティ (ケースログ、クリアデータ、プロセスエラー、関連性の変更、透過性の分析など) について説明します。
+ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633392"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936620"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>Advanced eDiscovery (クラシック) ユーティリティを使用する
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 アドバンスト eDiscovery で表示および使用できるユーティリティは、コンテキストおよびユーザーの役割によって異なります。
   
@@ -38,7 +38,7 @@ ms.locfileid: "43633392"
   
 1. メニューバーで、[ **Cogwheel** ] アイコンをクリックします。 
     
-2. [**設定およびユーティリティ\>ユーティリティ**] タブで、[**ケース\>ログのセットアップ**] を選択します。
+2. [**設定およびユーティリティ \> ユーティリティ**] タブで、[**ケースログの \> セットアップ**] を選択します。
     
 3. **ログレベル**を次のように選択します。 
     
@@ -57,7 +57,7 @@ ms.locfileid: "43633392"
   
 1. メニューバーで、[ **Cogwheel** ] アイコンをクリックします。 
     
-2. [**設定およびユーティリティ\>ユーティリティ**] タブで、[**データ\>セットアップのクリア**] を選択します。
+2. [**設定およびユーティリティ \> ユーティリティ**] タブで、[**データ \> セットアップのクリア**] を選択します。
     
 3. 初期化する情報のオプションを選択します。
     
@@ -77,7 +77,7 @@ ms.locfileid: "43633392"
   
 1. メニューバーで、[ **Cogwheel** ] アイコンをクリックします。 
     
-2. [**設定およびユーティリティ\>ユーティリティ**] タブで、[**関連性の変更**] を選択します。
+2. [**設定およびユーティリティ \> ユーティリティ**] タブで、[**関連性の変更**] を選択します。
     
 3. 次のオプションから選択します。 
     
@@ -99,7 +99,7 @@ ms.locfileid: "43633392"
   
 1. メニューバーで、[ **Cogwheel** ] アイコンをクリックします。 
     
-2. [**設定およびユーティリティ\>ユーティリティ**] タブで、[**透過\>分析の設定**] を選択します。
+2. [**設定およびユーティリティ \> ユーティリティ**] タブで、[**透過分析の \> 設定**] を選択します。
     
 3. * * ファイル ID * * で、処理するファイルのファイル ID を入力します。
     

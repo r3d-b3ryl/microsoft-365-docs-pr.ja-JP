@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: '表示されるタスクオプションの定義を含む、高度な電子情報開示での分析プロセスの結果を表示する場所について説明します。  '
-ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 表示されるタスクオプションの定義を含む、高度な電子情報開示での分析プロセスの結果を表示する場所について説明します。
+ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626363"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936950"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>高度な電子情報開示での分析結果の表示 (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 詳細な電子情報開示では、以下に示すように、分析プロセスの進行状況と結果をさまざまな方法で表示できます。
   
 ## <a name="view-analyze-task-status"></a>タスクの進捗状況を表示する
 
-[**結果\> \>の\>分析タスクの状態の準備**] では、プロセスの実行中および分析後に状態が表示されます。 
+[ ** \> 結果の分析 \> タスクの \> 状態の準備**] では、プロセスの実行中および分析後に状態が表示されます。 
   
 ![タスクの進捗状況の分析](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   
