@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織内のデータを分類するさまざまな方法について理解し、構成します。
-ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 57d4c692630826f371ea825d86fc64b959b71df2
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633475"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005812"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>手順 2: 環境の分類を構成する
 
@@ -92,7 +92,7 @@ Azure Information Protection のラベルと保護を計画および展開する
 
 既存の Azure Information Protection ラベルは機密ラベルとシームレスに連動します。 たとえば、既存の Azure Information Protection ラベルとドキュメントとメールに適用されるラベルを保持できます。
 
-機密ラベルと Azure Information Protection ラベルの両方がある場合、[Azure Information Protection ラベルを機密ラベルに移行する](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels)必要があります。
+機密ラベルと Azure Information Protection ラベルの両方がある場合、[Azure Information Protection ラベルを機密ラベルに移行する](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#sensitivity-labels-and-azure-information-protection)必要があります。
 
 ## <a name="example-classification-for-gdpr"></a>例: GDPR の分類
 

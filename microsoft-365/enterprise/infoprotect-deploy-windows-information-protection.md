@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 の Windows Information Protection について理解し、展開します。
-ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7b76ef28d41810d6e9e45e98adb7a94cf8ae2f4
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631647"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005724"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>手順 4: Windows Information Protection の構成する
 
@@ -37,11 +37,14 @@ Microsoft 365 Enterprise では、WIP は Windows 10 Enterprise と Microsoft In
 Microsoft 365 Enterprise を使用して組織に WIP を展開するには、次の手順に従ってください。
 
 1. Windows デバイスを Intune に登録します。 これは、[フェーズ 5: モバイル デバイス管理](mobility-infrastructure.md)で実行する必要があります。
-2. [WIP 用の Intune ポリシー](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)を作成します。
-  - 保護アプリのリストに記入してください。
-  - WIP の保護レベルを選択します。
 
-[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm) で WIPを使用することもできます。 
+2. [WIP 用の Intune ポリシー](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)を作成します。
+
+   -    保護アプリのリストに記入してください。
+  
+   - WIP の保護レベルを選択します。
+
+[Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr) で WIPを使用することもできます。 
 
 詳細については、「[WIP のベスト プラクティス]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)」を参照してください。
 

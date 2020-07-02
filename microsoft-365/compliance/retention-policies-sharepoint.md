@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: cae0016f705757341934d1ad7e6eec331e81642c
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: e7a265d39b3cca2ffb9c403cf2c87f287a9325b2
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869869"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016248"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive のアイテム保持ポリシーの詳細
 
@@ -82,7 +82,7 @@ ms.locfileid: "44869869"
 > [!NOTE]
 > 保存されたバージョンの SharePoint および OneDrive ドキュメントは、eDiscovery ツールで検索できません。
 
-### <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
+## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
 **SharePoint**:
 
