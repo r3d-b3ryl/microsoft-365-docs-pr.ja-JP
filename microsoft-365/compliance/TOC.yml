@@ -159,6 +159,8 @@
       href: office-365-service-encryption.md
     - name: Office 365 の暗号化についてのテクニカル リファレンスの詳細
       href: technical-reference-details-about-encryption.md
+    - name: Office 365 の TLS 1.0 および1.1の 廃止
+      href: tls-1.0-and-1.1-deprecation-for-office-365.md
     - name: 顧客キー
       items:
         - name: Office 365 のカスタマー キーによるサービスの暗号化
@@ -249,10 +251,14 @@
       items:
         - name: サード パーティのデータのアーカイブの概要
           href: archiving-third-party-data.md
+        - name: Bloomberg メッセージデータのアーカイブ(プレビュー)
+          href: archive-bloomberg-message-data.md
         - name: Facebook データのアーカイブ (プレビュー)
           href: archive-facebook-data-with-sample-connector.md
         - name: 人事データのインポート (プレビュー)
           href: import-hr-data.md
+        - name: ICE チャットデータのアーカイブ (プレビュー)
+          href: archive-icechat-data.md
         - name: Instant Bloomberg データのアーカイブ
           href: archive-instant-bloomberg-data.md
         - name: LinkedIn データのアーカイブ

@@ -464,6 +464,8 @@
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
               href: ./office-365-security/view-email-security-reports.md
+            - name: セキュリティ/コンプライアンス センターのメールフローレポートを表示
+              href: ./office-365-security/view-mail-flow-reports.md
             - name: セキュリティ/コンプライアンス センター のメール フロー インサイト
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
