@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779955"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005632"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランをセキュリティで保護するための10位の方法
 
@@ -41,18 +41,18 @@ ms.locfileid: "44779955"
   
 Microsoft では、サービスプランに適用される次の表のタスクを完了することをお勧めします。 
   
-||**Task**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
+||**タスク**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
 |1   <br/> |[多要素認証をセットアップする](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|pbm-2  <br/> |[ユーザーをトレーニングする](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|1/3  <br/> |[専用の管理者アカウントを使用する](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|2   <br/> |[ユーザーをトレーニングする](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|3   <br/> |[専用の管理者アカウントを使用する](secure-your-business-data.md#admin) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[メールのマルウェアに対する保護レベルを上げる](secure-your-business-data.md#malware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |5   <br/> |[ランサムウェアから保護する](secure-your-business-data.md#ransomware) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[電子メールの自動転送を停止する](secure-your-business-data.md#forwarding) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |7   <br/> |[Office メッセージの暗号化を使用する](secure-your-business-data.md#encryption) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |8   <br/> |[フィッシング攻撃からメールを保護する](secure-your-business-data.md#phishing) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |9   <br/> |[ATP の安全な添付ファイルを使用して悪意のある添付ファイルやファイルを保護する](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|10    <br/> |[ATP の安全なリンクによるフィッシング攻撃から保護する](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|10   <br/> |[ATP の安全なリンクによるフィッシング攻撃から保護する](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
 開始する前に、Microsoft 365 セキュリティセンターの[microsoft 365 のセキュリティスコア](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)を確認してください。 一元管理されたダッシュボードから、Microsoft 365 の id、データ、アプリ、デバイス、およびインフラストラクチャのセキュリティを監視し、強化することができます。 推奨されるセキュリティ機能を構成し、セキュリティ関連のタスク (レポートの表示など) を実行する、またはサードパーティのアプリケーションまたはソフトウェアで推奨事項に対処するためのポイントが用意されています。 より広範な一連の Microsoft 製品とサービスを使用することで、さらに洞察を得て、組織のセキュリティの状態についてのレポートを得ることができます。
   
@@ -155,7 +155,7 @@ Microsoft 365 環境では、マルウェアからの保護が行われていま
     
 5. 各ルールについて、次の表の設定を適用します。 これらの設定を変更しない場合は、既定の設定のままにしておきます。
     
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
     
 |**設定**|**Office ファイルの添付ファイルを開く前にユーザーに警告を発する**|**ランサムウェアまたはその他の悪意のあるコードを含む可能性があるファイルの種類をブロックする**|
 |:-----|:-----|:-----|
@@ -168,7 +168,7 @@ Microsoft 365 環境では、マルウェアからの保護が行われていま
 > [!TIP]
 > また、[手順 4](#4-raise-the-level-of-protection-against-malware-in-mail)で、ブロックするファイルをマルウェア対策リストに追加することもできます。
 
-詳細については、以下を参照してください。
+詳しくは、次のトピックを参照してください。
   
 - [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -191,7 +191,7 @@ Microsoft 365 環境では、マルウェアからの保護が行われていま
     
 5. 次の表の設定を適用します。 これらの設定を変更しない場合は、既定の設定のままにしておきます。
     
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
     
 |**設定**|**外部ドメインへの自動転送メールを拒否する**|
 |:-----|:-----|
@@ -325,25 +325,27 @@ ATP の安全なリンクを取得するには、[短いトレーニングビデ
     
 既定のポリシーを変更するには、次のようにします。
   
-1. [安全なリンク] ページの [**組織全体に適用されるポリシー**] で、[**既定**のポリシー] を選択します。 
+1. [安全なリンク] ページの [**組織全体に適用されるポリシー**] で、[**既定**のポリシー] をダブルクリックします。 
     
-2. [**電子メール以外のコンテンツに適用する設定**] で、[ **Microsoft 365 Apps for enterprise]、[Office for IOS、および Android**] を選択します。
+2. [ **Office 365 のコンテンツに適用する設定**] で、ブロックする URL ( _example.com_など) を入力し、[] を選択し **+** ます。
+
+3. [**電子メール以外のコンテンツに適用する設定**] で、[ **Office 365 アプリケーション**] を選択し、**ユーザーが [安全なリンク] をクリックしたときにトラッキング**を行わないでください。また、**ユーザーは [安全なリンク] をクリックして元の URL に移動できません**
     
-3. **[保存]** を選択します。 
+4. [**保存**] を選択します。 
     
 ドメイン内のすべての受信者を対象とした新しいポリシーを作成するには、次のようにします。
   
-1. [安全なリンク] ページの [**組織全体に適用されるポリシー**] で、[ **+** 新しいポリシーの作成] を選択します。 
+1. [安全なリンク] ページの [**特定の受信者に適用するポリシー**] で、 **+** 新しいポリシーを作成する場合に選択します。 
     
 2. 次の表に示す設定を適用します。
     
-3. **[保存]** を選択します。 
+3. [**保存**] を選択します。 
     
 |**設定またはオプション**|**推奨される設定値** <br/>|
 |:-----|:-----|
 |名前  <br/> |ドメイン内のすべての受信者に対する安全なリンクポリシー  <br/> |
 |メッセージ内の不明な潜在的な悪意のある Url に対するアクションを選択する  <br/> |[オン] を選択すると **、ユーザーがリンクをクリックしたときに、既知の悪意のあるリンクの一覧に対して、url が書き換えられ、チェックされ**ます。  <br/> |
-|安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする  <br/> |このボックスを選択します。  <br/> |
+|疑わしいリンクおよびファイルを指すリンクのリアルタイム URL スキャンを適用する  <br/> |このボックスを選択します。  <br/> |
 |適用先  <br/> |受信者のドメインはです。 . . ドメインを選びます。  <br/> |
 |
    

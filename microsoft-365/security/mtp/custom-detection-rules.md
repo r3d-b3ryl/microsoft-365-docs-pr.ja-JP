@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498365"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005712"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタムの検出ルールを作成および管理する
 
@@ -118,8 +118,8 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>デバイスに対するアクション
 これらのアクションは `DeviceId` 、クエリ結果の列にあるデバイスに適用されます。
-- **分離デバイス**— MICROSOFT Defender ATP を使用して完全なネットワークの分離を適用し、デバイスがアプリケーションやサービスに接続できないようにします。 [Microsoft Defender ATP コンピューターの分離の詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **収集調査パッケージ**— ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender ATP 調査パッケージの詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **分離デバイス**— MICROSOFT Defender ATP を使用して完全なネットワークの分離を適用し、デバイスがアプリケーションやサービスに接続できないようにします。 [Microsoft Defender ATP コンピューターの分離の詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **収集調査パッケージ**— ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender ATP 調査パッケージの詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **ウイルス対策スキャンを実行**する—デバイス上で Windows Defender ウイルス対策スキャンを完全に実行します。
 - **開始調査**: デバイスの[自動調査](mtp-autoir.md)を開始します。
 - **アプリの実行を制限**する-デバイスに制限を設定して、Microsoft が発行した証明書で署名されたファイルのみを実行できるようにします。 [Microsoft Defender ATP を使用したアプリの制限について](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)

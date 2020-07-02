@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーについて説明します。これには、Microsoft Service Trust Portal の無料のワークフローベースのリスク評価ツールがあります。
-ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 514ee0e032e378c407713254d5d11fcd41a8d91c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330747"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016130"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft コンプライアンスマネージャー (プレビュー)
 
@@ -31,7 +31,7 @@ ms.locfileid: "44330747"
 
 **この記事の**内容: この記事では、コンプライアンスマネージャーの概要と主要コンポーネントについて説明します。
 
-**更新プログラムについて説明**します。2020年4月のパブリックプレビューリリースでは、いくつかの更新プログラムが公開されました。 [コンプライアンスマネージャーのリリースノート](compliance-manager-release-notes.md)を参照して、新着情報および既知の問題を確認してください。
+**更新プログラムについて説明**:[コンプライアンスマネージャーのリリースノート](compliance-manager-release-notes.md)を参照して、新着情報および既知の問題を確認してください。
 
 ## <a name="what-is-compliance-manager"></a>コンプライアンスマネージャーとは
 
@@ -53,7 +53,7 @@ Microsoft[コンプライアンスマネージャー (プレビュー)](https://
 
 [Microsoft コンプライアンススコア (プレビュー)](compliance-score.md)は、microsoft 365 コンプライアンスセンターの機能の1つで、組織の法令遵守状況についての最上位レベルのビューを提供します。 データ保護および規制標準に関するリスクを軽減するために、進行状況を測定するリスクベースのスコアを計算します。 総合的なコンプライアンススコアを把握することで、組織はコンプライアンスを理解し管理することができます。 [コンプライアンススコアの計算方法](compliance-score-methodology.md)について理解します。
 
-コンプライアンスマネージャーは、コンプライアンススコアと同じバックエンドを共有します。 両方のツールのパブリックプレビューフェーズで、コンプライアンスマネージャーは、評価とカスタムコントロールの実装を管理します。 [コンプライアンススコアとコンプライアンスマネージャーの関係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)の詳細については、「」を参照してください。
+コンプライアンスマネージャーは、コンプライアンススコアと同じバックエンドを共有します。 両方のツールのパブリックプレビューフェーズでは、コンプライアンスマネージャーがカスタムコントロールの実装を管理します。 [コンプライアンススコアとコンプライアンスマネージャーの関係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)の詳細については、「」を参照してください。
 
 ## <a name="compliance-manager-components"></a>コンプライアンスマネージャーのコンポーネント
 
@@ -129,7 +129,7 @@ Microsoft は、各クラウドサービスについて、さまざまな標準�
 
 コンプライアンススコアの**向上アクション**は、コンプライアンスマネージャーの**アクションアイテム**に相当するものであることに注意してください。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>アクセス許可
 
 コンプライアンス マネージャーでは、役割に基づくアクセス許可モデルが使用されています。 コンプライアンス マネージャーにはユーザー ロールが割り当てられているユーザーのみがアクセスでき、各ユーザーに許可される操作は役割の種類によって制限されます。 各アクセス許可に対して許可されるアクションを示す[表を表示](working-with-compliance-manager.md#permissions)します。
 

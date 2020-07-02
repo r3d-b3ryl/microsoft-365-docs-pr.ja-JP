@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: Microsoft 365 for business 試用版または有料版サブスクリプションを解約する方法について説明します。
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818521"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023371"
 ---
 # <a name="cancel-your-subscription"></a>サブスクリプションをキャンセルする
 
@@ -144,10 +144,12 @@ ms.locfileid: "44818521"
 
 ### <a name="uninstall-office-optional"></a>Office をアンインストールする (省略可能)
 
-サブスクリプションをキャンセルし、Microsoft 365 を含む別のサブスクリプションにユーザーを移動しなかった場合、Microsoft 365 は機能制限モードで実行されます。 このような場合、ユーザーはドキュメントの読み取りおよび印刷のみを行うことができ、Microsoft 365 アプリケーションではライセンスのない[製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。 混乱を避けるために、ユーザーのコンピューターから [Office をアンインストール](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)させます。
+サブスクリプションをキャンセルし、Microsoft 365 を含む[別のサブスクリプションにユーザーを移動](move-users-different-subscription.md)しなかった場合、microsoft 365 は機能制限モードで実行されます。 このような場合、ユーザーはドキュメントの読み取りおよび印刷のみを行うことができ、Microsoft 365 アプリケーションではライセンスのない[製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。 混乱を避けるために、ユーザーのコンピューターから [Office をアンインストール](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)させます。
 
 ## <a name="related-articles"></a>関連記事
 
 [サブスクリプションを更新する](renew-your-subscription.md)
 
 [サブスクリプションを再度有効にする](reactivate-your-subscription.md)
+
+[ユーザーを別のサブスクリプションに移動する](move-users-different-subscription.md)

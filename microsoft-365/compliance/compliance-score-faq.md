@@ -1,5 +1,5 @@
 ---
-title: Microsoft コンプライアンススコア FAQ
+title: Microsoft コンプライアンススコア (プレビュー) の FAQ
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,18 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft のコンプライアンススコアに関してよく寄せられる質問への回答を検索します。これにより、組織はリスク評価を簡素化および自動化できます。
-ms.openlocfilehash: 942de8f8cc9eeb958cb7f8e96c9e7038447ce3f1
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 6ba71620d689e6d028b61ff24f7c837337ef60c6
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141562"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016202"
 ---
-# <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft コンプライアンススコア (プレビュー) についてよく寄せられる質問
+# <a name="compliance-score-preview-frequently-asked-questions"></a>コンプライアンススコア (プレビュー) についてよく寄せられる質問
 
 ## <a name="what-is-compliance-score"></a>コンプライアンススコアとは
 
-Microsoft コンプライアンススコアは、組織の法令遵守状況を理解するのに役立つ[microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能です。 データ保護および規制標準に関するリスクを軽減するために、進行状況を測定するリスクベースのスコアを計算します。 コンプライアンススコアは、主な規制と標準に共通のコントロールを接続するのに役立つ組み込みのコントロールマッピングを提供します。そのため、1つのアクションを実行して、複数の要件を同時に満たすことができ、コンプライアンスプログラムをより適切に拡張することができます。
+Microsoft コンプライアンススコアは、組織の法令遵守状況を理解するのに役立つ[microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)のプレビュー機能です。 データ保護および規制標準に関するリスクを軽減するために、進行状況を測定するリスクベースのスコアを計算します。 コンプライアンススコアには、主要な規制や基準間で共通のコントロールを接続するために役立つ組み込みのコントロールマッピングが用意されています。 このマッピングにより、複数の要件を満たすために1つのアクションを同時に実行して、コンプライアンスプログラムを拡張することができます。
+
+## <a name="whats-new-in-the-preview-version-of-compliance-score"></a>コンプライアンススコアのプレビューバージョンの新機能
+
+機能の更新および既知の問題については、[コンプライアンススコアのリリースノート](compliance-score-release-notes.md)を参照してください。
 
 ## <a name="how-do-i-access-compliance-score"></a>コンプライアンススコアにアクセスするにはどうすればよいですか?
 
@@ -33,17 +37,21 @@ Microsoft コンプライアンススコアは、組織の法令遵守状況を�
 
 ## <a name="what-roles-or-permissions-are-needed-to-use-compliance-score"></a>コンプライアンススコアを使用するには、どのような役割またはアクセス許可が必要ですか。
 
-コンプライアンススコアは、役割ベースのアクセス制御 (RBAC) アクセス許可モデルを使用し、実行できるアクションは、割り当てられている役割の種類によって異なります。 組織の Microsoft 365 グローバル管理者は、セットアップ機能を実行し、コンプライアンススコアで役割を管理できるユーザーです。 少なくとも、ユーザーは、コンプライアンススコアでデータを読み取るために**AZURE AD グローバルリーダー**の役割を必要とします。 アクセス許可、役割、およびセットアップ手順の詳細については、「[コンプライアンススコアの設定](compliance-score-setup.md)」を参照してください。
+コンプライアンススコアは、役割ベースのアクセス制御 (RBAC) アクセス許可モデルを使用します。 実行できるアクションは、割り当てられている役割の種類によって異なります。 組織の Microsoft 365 グローバル管理者は、セットアップ機能を実行し、コンプライアンススコアで役割を管理できるユーザーです。 少なくとも、ユーザーは、コンプライアンススコアでデータを読み取るために**AZURE AD グローバルリーダー**の役割を必要とします。 アクセス許可、役割、およびセットアップ手順の詳細については、「[コンプライアンススコアの設定](compliance-score-setup.md)」を参照してください。
 
 ## <a name="what-is-the-difference-between-compliance-score-and-compliance-manager"></a>コンプライアンススコアとコンプライアンスマネージャーの違いは何ですか。
 
-コンプライアンススコアとコンプライアンスマネージャーは同じバックエンドを共有していますが、2つの異なる場所 (コンプライアンススコアは Microsoft 365 コンプライアンスセンターで、コンプライアンスマネージャーは Microsoft Service Trust Portal にあります)。 コンプライアンスのスコアは、コンプライアンスマネージャーの簡易版と考えてください。これにより、組織の現在の法令遵守状況と、それを改善するための手順がより完全に表示されます。 コンプライアンススコアの範囲内で多くのアクションを直接実行できますが、一部の機能は現在、コンプライアンスマネージャーにも存在します。 [コンプライアンススコアとコンプライアンスマネージャーの関係](compliance-score.md#relationship-to-compliance-manager)の詳細を参照してください。
+コンプライアンススコアとコンプライアンスマネージャーは同じバックエンドを共有します。 1つのツールで行う操作は、他のツールにも表示されます。 これらは、2つの異なる場所に存在します。コンプライアンススコアは Microsoft 365 コンプライアンスセンターで、コンプライアンスマネージャーは Microsoft Service Trust Portal にあります。 コンプライアンスのスコアは、コンプライアンスマネージャーの簡易版と考えてください。これにより、組織の現在の法令遵守状況と、それを改善するための手順がより完全に表示されます。
 
-## <a name="who-should-use-compliance-score-and-who-should-use-compliance-manager"></a>どのユーザーがコンプライアンススコアを使用し、コンプライアンスマネージャーを使用する必要があるか。
+コンプライアンススコアの範囲内で多くのアクションを直接実行できますが、パブリックプレビュー中には、一部の機能がコンプライアンスマネージャーに存在します。 [コンプライアンススコアとコンプライアンスマネージャーの関係](compliance-score.md#relationship-to-compliance-manager)の詳細を参照してください。
 
-コンプライアンススコアは、コンプライアンスの監視の役割を果たし、規制基準に準拠するためのアクションを実行する組織内のすべてのユーザーに役立ちます。 コンプライアンススコアでは、組織のデータ保護を向上させるために、規制や基準を熟知している必要はありません。 コンプライアンススコアは、すべてのユーザーにとって最適な開始位置です。 ここから、コンプライアンススコアを確認し、推奨されるアクションを使用してリスクを最小限に抑えることができます。多くの場合、これらのアクションを実行するためにソリューションを適切に起動します。
+[Microsoft Service Trust Portal でコンプライアンスマネージャーに](https://servicetrust.microsoft.com/ComplianceManager/V3)アクセスします。 トップナビゲーションドロップダウンメニューから **[コンプライアンスマネージャー** ] を選択してください。これには、最新の機能があり、事前にリリースされた機能を含む*コンプライアンスマネージャー (クラシック) ではありません*。
 
-コンプライアンスマネージャーとは、評価を構築するために、ユーザーが評価を管理し、カスタムテンプレートを作成できるようにするための場所です。 パブリックプレビュー中に[コンプライアンスマネージャーのみがサポートするアクション](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)について説明します。
+## <a name="should-i-use-compliance-score-or-compliance-manager"></a>コンプライアンススコアまたはコンプライアンスマネージャーを使用する必要がありますか?
+
+コンプライアンススコアは、組織内のすべてのユーザーが、法令遵守で役割を演じる際に役立ちます。 コンプライアンススコアでは、組織のデータ保護を向上させるために、規制や基準を熟知している必要はありません。 コンプライアンススコアは、すべてのユーザーにとって最適な開始位置です。 ここから、コンプライアンススコアを確認して、リスクを最小限に抑えるために推奨されるアクションと、評価を管理する方法を理解できます。
+
+ここで、コンプライアンスマネージャーは、評価を構築するためのカスタムテンプレートを作成できる場所です。 パブリックプレビュー中に[コンプライアンスマネージャーのみがサポートするアクション](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)について説明します。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>スコアが高い場合は、完全に準拠していることを意味します。
 
@@ -53,15 +61,17 @@ Microsoft コンプライアンススコアは、組織の法令遵守状況を�
 
 コンプライアンススコアでは、Microsoft 365 データ保護基準に基づく初期スコアが得られます。これは、一般的な業界の規制と標準を含む一連のコントロールです。 この基準は、主に NIST CSF (米国国立標準およびテクノロジ Cybersecurity フレームワーク) および ISO (国際標準化機構)、および、FedRAMP (連邦リスクおよび承認管理プログラム) および GDPR (欧州連合の一般的なデータ保護規則) からの要素を描画します。
 
-組織は、組織にとってより関連性の高いカスタム評価を作成し、追加することができます。 コンプライアンススコアの[事前構成済みテンプレート](compliance-score.md#templates)の1つを使用して、独自のコントロールやアクションを使用して Microsoft テンプレートをカスタマイズしたり、独自のテンプレートを作成したりします。 [テンプレートを操作](working-with-compliance-manager.md#templates)する方法については、「詳細」を参照してください。
+組織は、組織にとってより関連性の高いカスタム評価を作成し、追加することができます。 コンプライアンススコアのいずれかを使用して、[テンプレート](compliance-score-templates.md)を使用したり、独自のコントロールやアクションを使用して Microsoft テンプレートをカスタマイズしたり、独自のテンプレートを作成したりすることができます。 [評価とテンプレートの](compliance-score-assessments.md)使用に関する詳細をお読みください。
 
-[コンプライアンススコアがスコアを計算](compliance-score-methodology.md)する方法について説明します。
+## <a name="how-does-compliance-score-continuously-assess-my-environment"></a>コンプライアンススコアはどのようにして環境を継続的に評価しますか?
+
+コンプライアンススコアは、環境を自動的にスキャンし、セキュリティで保護されたスコアを使用してシステム設定を検出します。 [継続的な評価](compliance-score-methodology.md#how-compliance-score-continuously-assesses-controls)の詳細について説明します。
 
 ## <a name="what-is-the-difference-between-compliance-score-and-secure-score"></a>コンプライアンススコアとセキュリティスコアの違いは何ですか。
 
 コンプライアンススコアは、組織のデータ保護とコンプライアンスの状況を幅広く表示します。 コンプライアンススコアには、組み込みのワークフローツールも用意されています。これにより、組織は仕事をユーザーに割り当て、コントロールの実装とテストの状態を追跡したり、証拠をアップロードしたり、監査レポートを作成したりできます。
 
-Microsoft Secure Score は、セキュリティに関する姿勢を理解するためのセキュリティ分析ツールです。 [セキュリティで保護されたスコアとそのしくみについて説明](../security/mtp/microsoft-secure-score.md)します。
+Microsoft Secure Score は、セキュリティに関する姿勢を理解するためのセキュリティ分析ツールです。 [セキュリティで保護されたスコアとそのしくみについて説明](../security/mtp/microsoft-secure-score-new.md)します。
 
 ## <a name="which-cloud-services-are-covered-by-compliance-score"></a>コンプライアンススコアの対象となるクラウドサービス
 
@@ -71,11 +81,11 @@ Microsoft Secure Score は、セキュリティに関する姿勢を理解する
 
 コンプライアンススコアは継続的な監視と推奨されるアクションを Microsoft クラウドサービスに対してのみ提供しますが、社内のサードパーティサービスのコンプライアンスマネージャーでカスタム評価を追加することができます。 このようにして、Microsoft のコンプライアンススコアを SaaS コンプライアンス管理ツールとして使用し、デジタル資産全体のすべてのコントロールを管理することができます。
 
-コンプライアンススコアの[事前構成済みテンプレート](compliance-score.md#templates)の1つを使用して、特定の標準の評価を作成したり、[独自のテンプレートを作成](working-with-compliance-manager.md#create-a-template)したりできます。
+コンプライアンススコアのいずれかを使用して、特定の標準の[評価を作成](compliance-score-templates.md)したり、[独自のテンプレートを作成](working-with-compliance-manager.md#create-a-template)したりすることができます。これは、コンプライアンスマネージャーで行う必要があります。
 
 ## <a name="how-do-i-delete-a-template-or-assessment-i-no-longer-need"></a>不要になったテンプレートまたは評価を削除するにはどうすればよいですか?
 
-評価またはテンプレートを削除することはできませんが、ビューから非表示にすることはできます。 [評価を非表示にするための手順を](working-with-compliance-manager.md#hide-a-template-or-an-assessment)確認します。
+評価を削除するには、削除する評価を開いて、[**評価の削除**] を選択します。 評価の削除は永続的なものであることに注意してください。 [評価の削除](compliance-score-assessments.md#delete-an-assessment)に関するその他の詳細を表示します。 評価を削除しても、そのテンプレートは削除されません。 テンプレートを削除することはできませんが、ビューでは非表示にすることができます。 [テンプレートを非表示にする手順を](working-with-compliance-manager.md#hide-a-template-or-an-assessment)確認します。
 
 ## <a name="what-test-procedures-does-microsoft-follow-for-controls"></a>コントロールに対して Microsoft が実行するテスト手順
 

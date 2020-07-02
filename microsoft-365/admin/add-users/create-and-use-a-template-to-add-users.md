@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 複数のユーザーを追加するときに、テンプレートを作成して使用し、時間を節約し、設定を標準化することができます。
-ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431811"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022147"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>テンプレートを作成して使用し、ユーザーを追加する
 
@@ -43,7 +43,7 @@ ms.locfileid: "44431811"
 - ライセンスの場所
 - ライセンスの選択肢
 - アプリケーションの選択
-- Role
+- ロール
 - **ジョブプロファイル**、**部署**、**オフィス**、事務所の**電話番号** **、住所など**、ほとんどのプロファイル情報 
 
 次の情報はユーザー固有であり、テンプレートには保存されません。
@@ -89,7 +89,7 @@ ms.locfileid: "44431811"
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft 365 にユーザーを個別にまたは一括して追加する](add-users.md)
+[ユーザーを追加して、ライセンスを同時に割り当てる](add-users.md)
 
 [以前の従業員を Microsoft 365 から削除する](remove-former-employee.md)
   

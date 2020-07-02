@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 のクラウドベースのアプリによって生成されたデータは、ユーザーの Exchange Online メールボックスに格納されるか、関連付けられます。
-ms.openlocfilehash: 946ad069a57e411c20d9b0a723d28dc03a4b094f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626283"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016300"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>Exchange Online メールボックスに格納されているコンテンツ
 
@@ -32,7 +32,7 @@ Exchange Online のメールボックスは、主に、メッセージ、予定�
 
 |Microsoft 365 アプリ|説明|
 |:---------|:---------|
-|Forms|フォーム (PDF ファイルとして保存される) とフォーム (CSV ファイルに格納されている) への返信は、電子メールメッセージに添付され、フォームを作成したユーザーのメールボックス内の隠しフォルダーに格納されます。 PST ファイルのフォームからコンテンツをエクスポートする場合、このデータは、次のグローバルに一意に識別された (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**という名前のサブフォルダーにある**applicationdataroot**フォルダーに格納されます。|
+|フォーム|フォームとフォームへの返信は、電子メールメッセージに添付され、フォームを作成したユーザーのメールボックス内の隠しフォルダーに格納されるファイルに格納されます。 2020年4月以前に作成されたフォームは、PDF ファイルとして保存されます。 2020以降に作成されたフォームは、JSON ファイルとして格納されます。  フォームへの返信は、CSV ファイルに格納されます。 PST ファイルのフォームからコンテンツをエクスポートする場合、このデータは、次のグローバルに一意に識別された (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**という名前のサブフォルダーにある**applicationdataroot**フォルダーに格納されます。|
 |Microsoft 365 グループ|電子メールメッセージ、予定表アイテム、連絡先 (人)、メモ、およびタスクは、Microsoft 365 グループに関連付けられているメールボックスに格納されます。|
 |Outlook/Exchange Online|電子メールメッセージ、予定表アイテム、連絡先 (人)、メモ、およびタスクは、ユーザーのメールボックスに格納されます。|
 |ユーザー|People アプリ (Outlook でアクセス可能な連絡先と同じ連絡先) 内の連絡先は、ユーザーのメールボックスに保存されます。|

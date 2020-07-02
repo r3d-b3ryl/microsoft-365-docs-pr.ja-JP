@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Microsoft 365 で管理されていないテナントを電子メールとドメインの所有権を引き継ぐために確認する方法について説明します。
-ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399448"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022159"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>内部管理者の引き継ぎを実行する
 
@@ -64,7 +64,7 @@ ms.locfileid: "44399448"
 4. レジストラーサイトに TXT レコードを追加したら、ウィザードに戻り、[Ok] を選択して、**レコードを追加**しました。
     
 > [!NOTE]
-> シャドウテナントを引き継ぐことは、既存の情報やサービスに影響を与えることはありません。 ただし、ドメイン内のユーザーがライセンスを必要とするサービスにサインアップしている場合は、管理者の役割を引き継ぐ際にライセンスを購入するように求められます。 管理者セットアッププロセスが完了すると、ライセンスを追加または削除することができます。 
+> シャドウテナントを引き継ぐことは、既存の情報やサービスに影響を与えることはありません。 ただし、ドメイン内のユーザーがライセンスを必要とするサービスにサインアップしている場合は、管理者の役割を引き継ぐ際にライセンスを購入するように求められます。 管理者セットアッププロセスが完了すると、ライセンスを購入または削除することができます。
   
 ## <a name="related-articles"></a>関連記事
 

@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Microsoft 365 for business サブスクリプションのライセンスの競合を解決する方法について説明します。
-ms.openlocfilehash: 05efe9e75b051ece900ba9defe047f1244b713a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2270fd3ad831ec0ad92ac4eddec5f08a1d07f8be
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399670"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015973"
 ---
 # <a name="resolve-license-conflicts"></a>ライセンスの競合を解決する
 
@@ -59,7 +59,6 @@ ms.locfileid: "44399670"
 
 ::: moniker-end
 
-
 2. 競合に関する情報については、[**状態**] 列を確認してください。 競合がある場合は、1人以上のユーザーが有効なライセンスを必要としているという警告メッセージが表示されます。
 
     > [!NOTE]
@@ -69,7 +68,7 @@ ms.locfileid: "44399670"
 
 ライセンスの競合を解決するには、[より多くのライセンスを購入](../../commerce/licenses/buy-licenses.md)するか、不要に[なったユーザーからライセンスを削除](remove-licenses-from-users.md)します。 任意で、[ユーザー アカウントを削除してライセンスを解放する](../add-users/delete-a-user.md)こともできます。
   
-## <a name="related-articles"></a>関連記事 
+## <a name="related-articles"></a>関連記事
 
 [ユーザーにライセンスを割り当てる](assign-licenses-to-users.md)
   

@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための使用可能なオプションと優先するオプションについて学ぶことができます。
-ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545948"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005860"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP での差出人セーフリストの作成
 
@@ -39,7 +39,7 @@ Exchange Online または exchange online メールボックスを持たない�
 > [!IMPORTANT]
 > •「差出人セーフリスト」を使用して、スパムフィルター処理*する例外を*注意深く監視します。 <br/><br/> • [信頼できる差出人のリスト] を使用して誤検知 (スパムとしてマークされたメール) を行うことができますが、可能であれば回避する必要がある一時的なソリューションとして、安全な送信者リストを使用することをお勧めします。 スパムフィルター処理によって組織がスプーフィングやその他の攻撃を仕掛けることができるので、[差出人セーフリスト] を使用して誤検知を管理することはお勧めしません。 [差出人セーフリスト] を使用して誤検知を管理することを求めている場合は、注意を怠らないで、トピック[レポートのメッセージとファイルを](report-junk-email-messages-to-microsoft.md)準備する必要があります。 <br/><br/> •ドメインで認証されていない電子メールを送信できるようにする (スプーフィング防止保護をバイパスします) が、スパム対策およびマルウェア対策のチェックをバイパスしないようにするには、それを[Allowedtospoof safe 送信者リスト](walkthrough-spoof-intelligence-insight.md)に追加します。 <br/><br/> • EOP および Outlook は、メッセージの送信者を特定するために、さまざまなメッセージプロパティを検査します。 詳細については、このトピックで後述する「[バルクメールに関する考慮事項](#considerations-for-bulk-email)」セクションを参照してください。
 
-一方、ブロックされた_送信者リスト_を使用して特定のソースからの電子メールをブロックするには、いくつかのオプションもあります。 詳細については、「 [Create block sender lists IN EOP](create-block-sender-lists-in-office-365.md)」を参照してください。
+一方、ブロックされた_送信者リスト_を使用して特定のソースからの電子メールをブロックするには、いくつかのオプションもあります。 詳細については、「[EOP での受信拒否リストの作成](create-block-sender-lists-in-office-365.md)」を参照してください。
 
 ## <a name="recommended-use-mail-flow-rules"></a>勧めメールフロールールを使用する
 
@@ -126,7 +126,7 @@ Exchange Online およびスタンドアロン EOP のメールフロールー�
 
 - `5322.From`アドレスは blueyonder@news.blueyonderairlines.com で、Outlook に表示されます。
 
-EOP のスパム対策ポリシーでの [信頼できる差出人のリスト] と [セーフドメイン] の一覧は、とアドレスの両方を検査し `5321.MailFrom` `5322.From` ます。 Outlook の信頼できる差出人は、アドレスのみを使用 `5322.From` します。
+EOP のスパム対策ポリシーでの [信頼できる差出人リスト] および [安全なドメイン] の一覧アドレスのみ `5322.From` を検査する。これは、アドレスを使用する Outlook の安全な送信者に似てい `5322.From` ます。
 
 このメッセージがフィルター処理されないようにするには、次の手順を実行します。
 

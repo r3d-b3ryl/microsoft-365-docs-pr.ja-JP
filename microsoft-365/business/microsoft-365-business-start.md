@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 for business、セットアップ方法、およびユーザーのデバイスと Pc を準備して Microsoft 365 for business で保護されていることを確認する方法について説明します。
-ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786156"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022119"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 for business の使用を開始する
 
@@ -65,7 +65,7 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Microsoft 365 for business のセットアップ (管理者向け)
@@ -84,7 +84,7 @@ Microsoft 365 for business は、最大300のライセンスを想定してい�
     
     - ディレクトリ同期ウィザードを使用して、ユーザーをクラウドに同期させます。 このプロセスを完了するには、「 [Microsoft 365 のディレクトリ同期のセットアップ](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)」の手順を実行します。 ユーザーをクラウドに同期させた後、 [Office 365 のディレクトリ同期を無効](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)にする必要があります。
     
-    また、このように追加された各ユーザーに、Microsoft 365 for business のライセンスを付与する必要があります。 この操作は、[セットアップウィザード](set-up.md)で行うことができます。または、 [Microsoft 365 for business のユーザーにライセンスを割り当てる](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)ことができます。
+    また、このように追加された各ユーザーに、Microsoft 365 for business のライセンスを付与する必要があります。 この操作は、[セットアップウィザード](set-up.md)で行うか、[ユーザーにライセンスを割り当てる](../admin/manage/assign-licenses-to-users.md)ことができます。
     
 ### <a name="2-prepare-mobile-devices"></a>2: モバイルデバイスの準備
 

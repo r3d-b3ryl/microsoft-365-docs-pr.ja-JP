@@ -23,21 +23,24 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Microsoft 365 for business サブスクリプションの有効期限が切れたとき、または無効にされたとき、またはキャンセルしたときに、データがどうなるかについて説明します。
-ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 2852d2fc301d71131a0adb1c277974e2303dd395
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818625"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016079"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
 サブスクリプションの有効期限が切れた場合、または解約を決定した場合は、Microsoft 365 サービス、アプリケーション、および顧客データへのアクセスは、サブスクリプションが完全に無効になる前に、または*停止*される前に、複数の状態を通過します。 このような状況を認識している場合は、サブスクリプションを以前の状態に戻すことができます。または、Microsoft 365 を使用している場合は、最終的にデータが削除される前に、データをバックアップします。
+
+[Microsoft 365 サポート](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)にお問い合わせいただく前に、この重要な情報を参照してください。
   
-## <a name="microsoft-365-for-business-subscription-lifecycle"></a>Microsoft 365 for business: サブスクリプションのライフサイクル
+## <a name="what-happens-to-data-when-a-subscription-expires"></a>サブスクリプションの有効期限が切れた場合のデータの処理 
+
 - サブスクリプションの有効期限が切れると、次の段階を経ます: 期限切れ/無効/プロビジョニング解除。 期限切れステージは、サブスクリプションが終了日に達するとすぐに始まります。
 - 年間サブスクリプションで継続請求をオフにすると、有効期限が切れたサブスクリプションと同じステージを経ます。 最初のステージの開始は、年次サブスクリプションの記念日からであり、サブスクリプションの継続請求設定をオフにした日付からではありません。
-- 月次サブスクリプションをキャンセルすると、すぐに (キャンセルの日付で) 無効になります。 これは、ユーザーが Microsoft 365 アセットに直ちにアクセスできなくなり、管理者のみが次の90日間データにアクセスできることを意味します。
+- 毎月のサブスクリプションをキャンセルすると、そのサブスクリプションはすぐに無効になります (キャンセル日になります)。 これは、ユーザーが Microsoft 365 アセットに直ちにアクセスできなくなり、管理者のみが次の90日間データにアクセスできることを意味します。
 
 次の表では、有料の Microsoft 365 for business サブスクリプションの有効期限が切れたときに予想できることについて説明します。
 
@@ -52,6 +55,21 @@ ms.locfileid: "44818625"
   
 > [!NOTE]
 > **"顧客データ" とは何ですか?** [Microsoft Online Service](https://go.microsoft.com/fwlink/p/?LinkId=613649)の使用条件で定義されている顧客データとは、お客様が microsoft 365 サービスを使用して、microsoft によって提供された、またはお客様の代わりに提供されるすべてのテキスト、サウンド、画像ファイルを含むすべてのデータを指します。 顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)」を参照してください。
+
+## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
+
+期間の終了日より前にサブスクリプションをキャンセルすると、サブスクリプションは期限切れ状態をスキップし、ほとんどの国と地域で無効状態 (ほとんどのサブスクリプションにおいて 90 日間) に直接移行します。 キャンセルする前に[データをバックアップする](back-up-data-before-switching-plans.md)ことをお勧めしますが、管理者として、無効状態にあっても組織のデータに引き続きアクセスしてバックアップすることができます。 残された顧客データは 90 日後に削除され、キャンセル後、180 日以内に削除されます。
+  
+サブスクリプションをキャンセルした場合に想定される動作を説明します。
+  
+- **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。
+
+- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
+
+キャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
+  
+> [!IMPORTANT]
+> 一般的な無効期間が終了する前にサブスクリプションデータを削除する場合は、アカウントを[閉じる](../close-your-account.md)ことができます。
   
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>サブスクリプションの有効期限切れが近い場合
 
@@ -63,17 +81,17 @@ ms.locfileid: "44818625"
   
 - **サブスクリプションの継続請求を有効にします。**
 
-  - **継続請求**が既に有効になっている場合は、何もする必要はありません。 サブスクリプションは自動的に請求され、現在の支払回数に応じて、追加された年分または月分の料金が課せられます。 何らかの理由で**継続請求**を有効にした場合は、いつでも[継続請求を無効に戻す](renew-your-subscription.md)ことができます。
+  - **継続請求**が既に有効になっている場合は、何もする必要はありません。 サブスクリプションは自動的に請求されます。現在の支払い頻度に応じて、追加の年または月に請求されます。 何らかの理由で**継続請求**を有効にした場合は、いつでも[継続請求を無効に戻す](renew-your-subscription.md)ことができます。
 
   - プリペイドカードを使用して Microsoft 365 アプリを購入した場合は、サブスクリプションの[定期請求を有効](renew-your-subscription.md)にすることができます。
 
-  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
+  - プリペイド版の1年間のサブスクリプションを備えた Open Volume ライセンスをお持ちの場合は、パートナーに連絡して新しいプロダクトキーを購入してください。 [ボリュームライセンスサービスセンター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でキーをライセンス認証するために、電子メールで指示を受信します。 新しいパートナー、または過去に作業したパートナーを検索する方法については、「[パートナーまたは販売店を検索](../../admin/manage/find-your-partner-or-reseller.md)する」を参照してください。
 
   - Microsoft 365 アプリを使用している場合は、「[サブスクリプションの定期的な課金を管理](renew-your-subscription.md)する」を参照してください。
 
 - **そのままサブスクリプションを期限切れにします。**
 
-  - クレジット カードまたは請求書を使って支払っており、サブスクリプションを継続しない場合は、[継続請求を無効にします](renew-your-subscription.md)。 サブスクリプションは期限日で期限切れとなり、関連するすべてのメール通知は無視して構いません。
+  - クレジット カードまたは請求書を使って支払っており、サブスクリプションを継続しない場合は、[継続請求を無効にします](renew-your-subscription.md)。 サブスクリプションの有効期限が終了し、関連するすべての電子メール通知を無視することができます。
 
   - パートナーと連携しているオープン ボリューム ライセンス ユーザーの場合は、手続きを取らなければ、サブスクリプションを期限切れにすることができます。
 
@@ -91,11 +109,11 @@ ms.locfileid: "44818625"
 
   - プリペイドカードを使用して Microsoft 365 アプリを購入した場合は、サブスクリプションの[定期請求を有効](renew-your-subscription.md)にすることができます。
 
-  - If you're an Open Volume Licensing customer with a prepaid, one-year subscription, contact your partner to purchase a new product key. You'll receive instructions via email to activate your key in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016). To learn how to find a new partner, or the partner you've worked with in the past, see [Find your partner or reseller](../../admin/manage/find-your-partner-or-reseller.md).
+  - プリペイド版の1年間のサブスクリプションを備えた Open Volume ライセンスをお持ちの場合は、パートナーに連絡して新しいプロダクトキーを購入してください。 [ボリュームライセンスサービスセンター](https://go.microsoft.com/fwlink/p/?LinkID=282016)でキーをライセンス認証するために、電子メールで指示を受信します。 新しいパートナー、または過去に作業したパートナーを検索する方法については、「[パートナーまたは販売店を検索](../../admin/manage/find-your-partner-or-reseller.md)する」を参照してください。
 
   - Microsoft 365 アプリを使用している場合は、「[サブスクリプションの更新](renew-your-subscription.md)」を参照してください。
 
-- **そのままサブスクリプションを期限切れにする**
+- **そのままサブスクリプションを期限切れにします。**
 
   - クレジット カードまたは請求書を使って支払っており、サブスクリプションを継続しない場合は、[継続請求を無効にします](renew-your-subscription.md)。 サブスクリプションは期限日で期限切れとなり、関連するすべてのメール通知は無視して構いません。
 
@@ -144,7 +162,7 @@ ms.locfileid: "44818625"
 
 この状態では、ユーザーは Microsoft 365 ポータル、Office アプリケーション、および電子メールや SharePoint Online などのサービスへの通常のアクセス権を持っています。
   
-管理者は、引き続き管理センターにアクセスできます。 グローバルまたは課金管理者が[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)して、Microsoft 365 を引き続き使用できることを心配しないでください。 再アクティブ化しない場合は、必ず[データをバックアップ](back-up-data-before-switching-plans.md)してください。
+管理者は、引き続き管理センターにアクセスできます。 グローバルまたは課金管理者が[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)して、Microsoft 365 を引き続き使用できることを心配しないでください。 再アクティブ化しない場合は、[データをバックアップ](back-up-data-before-switching-plans.md)します。
   
 ### <a name="state-disabled"></a>状態: 無効
   
@@ -172,13 +190,13 @@ ms.locfileid: "44818625"
 
 ::: moniker-end
 
-As a global or billing admin, you can [reactivate the subscription](reactivate-your-subscription.md) and continue using Microsoft 365 with all of your customer data intact. If you choose not to reactivate, be sure to [back up your data](back-up-data-before-switching-plans.md).
+グローバルまたは課金管理者は、[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)し、すべての顧客データをそのまま使用して Microsoft 365 を引き続き使用することができます。 再アクティブ化しない場合は、[データをバックアップ](back-up-data-before-switching-plans.md)します。
 
 ### <a name="state-deprovisioned"></a>状態: プロビジョニング解除
   
  **想定される動作:** 猶予状態または無効状態でサブスクリプションを再アクティブ化しない場合は、サブスクリプションのサービス提供が停止されます。
   
-Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and unable to be recovered in any way.
+管理者とユーザーは、サブスクリプションに付属するサービスや Office アプリケーションへアクセスすることができなくなります。 すべての顧客データ (ユーザーデータからドキュメントや電子メール) は完全に削除され、回復不能になります。
   
 この時点では、サブスクリプションを再アクティブ化することはできません。 しかし、全体管理者または課金管理者は、引き続き管理センター にアクセスして、他のサブスクリプションの管理や、ビジネス ニーズに合わせた新しいサブスクリプションの購入を行うことができます。
   
@@ -204,24 +222,17 @@ Admins and users no longer have access to the services or Office applications th
 
 ::: moniker-end
 
-- **Extend your trial.** Need more time to evaluate Microsoft 365? In certain cases, you may be able to [extend your trial](../extend-your-trial.md).
+- **試用期間を延長します。** Microsoft 365 の評価にもっと時間が必要ですか? 場合によっては、[試用期間を延長](../extend-your-trial.md)することができます。
 
-- **Cancel the trial or let it expire.** If you decide not to buy Microsoft 365, you can let your trial expire or [cancel it](cancel-your-subscription.md). Be sure to back up any data you want to keep. Soon after the 30 day grace period, your trial account information and data is permanently erased.
-
-## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
-
-期間の終了日より前にサブスクリプションをキャンセルすると、サブスクリプションは期限切れ状態をスキップし、ほとんどの国と地域で無効状態 (ほとんどのサブスクリプションにおいて 90 日間) に直接移行します。 キャンセルする前に[データをバックアップする](back-up-data-before-switching-plans.md)ことをお勧めしますが、管理者として、無効状態にあっても組織のデータに引き続きアクセスしてバックアップすることができます。 残された顧客データは 90 日後に削除され、キャンセル後、180 日以内に削除されます。
-  
-サブスクリプションをキャンセルした場合に想定される動作を説明します。
-  
-- **管理者アクセス** 管理者は、サインインして管理センターにアクセスでき、必要に応じて、他のサブスクリプションを購入できます。 全体管理者または課金管理者の場合は、すべてのデータを維持したまま[サブスクリプションを再アクティブ化する](reactivate-your-subscription.md)ことができる期間が 90 日間あります。
-
-- **ユーザー アクセス** ユーザーは、OneDrive for Business などのサービスの使用や、顧客データ (チーム サイトのメール、ドキュメントなど) へのアクセスができなくなります。 Word、Excel などの Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、 [ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)が表示されます。
-
-キャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
-  
-> [!IMPORTANT]
-> 一般的な無効期間が終了する前にサブスクリプションデータを削除する場合は、アカウントを[閉じる](../close-your-account.md)ことができます。
+- **試用版を取り消すか、期限切れにします。** Microsoft 365 を購入しない場合は、試用期間を満了または[解約](cancel-your-subscription.md)することができます。 保持するデータをバックアップします。 30日の猶予期間が過ぎると、試用版のアカウント情報とデータが完全に消去されます。
 
 > [!NOTE]
 > このページに記載された情報には、「[Microsoft ポリシーの免責事項および変更に関する通知 (英語)](https://go.microsoft.com/fwlink/p/?LinkId=613651)」が適用されます。 このサイトに定期的にアクセスして、変更がないか確認してください。
+
+## <a name="related-articles"></a>関連記事 
+
+[サブスクリプションをキャンセルする](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription)
+
+[Microsoft 365 for business の更新](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription)
+
+[サブスクリプションを再度有効にする](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription)

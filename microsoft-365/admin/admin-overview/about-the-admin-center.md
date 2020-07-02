@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 管理センターを使用して、クラウドでの組織の設定、ユーザーおよびサブスクリプションの管理を行います。 管理者アクセス許可によるアカウントへのサインインから始めます。
-ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e4b1570afd8572df31af970fb168b6d22deee979
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780555"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022183"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターについて
 
@@ -89,7 +89,7 @@ ms.locfileid: "44780555"
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理センターの一般的なタスク
 
-- ユーザーの管理:[ユーザーを個別に追加する](../add-users/add-users.md)、[ユーザーを削除または復元する](../add-users/delete-a-user.md)、または [ユーザーのパスワードをリセットする](../add-users/reset-passwords.md)。
+- ユーザーの管理:[ユーザーを追加してライセンスを同時に割り当てる](../add-users/add-users.md)か、[ユーザーを削除または復元](../add-users/delete-a-user.md)するか、[ユーザーのパスワードをリセット](../add-users/reset-passwords.md)します。
 
 - 請求書に関するヘルプ: [課金](../../commerce/index.yml)
 

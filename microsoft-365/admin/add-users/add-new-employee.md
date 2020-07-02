@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 電子メール、Skype、Office アプリ用の Microsoft 365 for business に新しい従業員を追加します。
-ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: de647b926a3e1a82aaed4928b96101bd59df07ff
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780675"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022135"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Microsoft 365 に新しい従業員を追加する
 
@@ -50,7 +50,7 @@ ms.locfileid: "44780675"
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>手順 1: 従業員に対して Microsoft 365 アカウントを作成する
 
 
-手順について[は、「Microsoft 365 に個別に、または一括してユーザーを追加する-管理者向けヘルプ」を](add-users.md)参照してください。 新しい従業員を設定するときは、従業員の個人アカウントにログインの詳細を送信することを選択できます。 このようにすると、microsoft Online Service チームから、Microsoft 365 へのログイン方法を伝える電子メールが送信されます。
+手順については、「[ユーザーを追加してライセンスを同時に割り当てる](add-users.md)」を参照してください。 新しい従業員を設定するときは、従業員の個人アカウントにログインの詳細を送信することを選択できます。 このようにすると、microsoft Online Service チームから、Microsoft 365 へのログイン方法を伝える電子メールが送信されます。
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>手順 2: 従業員にユーザー ID とパスワードを付与する
 
@@ -75,7 +75,7 @@ Facebook、Amazon、Gmail と同様に、従業員は Microsoft 365 を使用す
   
 次に、これらを開始するためのクイックリファレンスを示します。
   
-|**Task**|**詳細を検索する**|
+|**タスク**|**詳細を検索する**|
 |:-----|:-----|
 |Office へのサインイン  <br/> |に移動し、[ [https://www.office.com](https://www.office.com) **サインイン**] を選択して、ユーザー ID とパスワードを入力します。  <br/> |
 |Office アプリをコンピューターにインストールします。  <br/><br/> |サインインすると、ホームページに Word や Outlook などのアプリをダウンロードしてインストールするためのリンクが表示されます。  [**Office のインストール**] を選択します。         手順については、「 [Office をインストールする方法](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)」を参照してください。  <br/> |
@@ -85,12 +85,8 @@ Facebook、Amazon、Gmail と同様に、従業員は Microsoft 365 を使用す
 |OneDrive for Business のトレーニングを完了すると、ドキュメント、プレゼンテーション、およびスプレッドシートをクラウドに保存して整理する方法を理解するのに役立ちます。  <br/> |OneDrive for Business を使用して、クラウド内のビジネス関連ドキュメントを保持します。 別のコンピューターで Microsoft 365 にサインインしている場合でも、常にコンテンツにアクセスすることができます。 [OneDrive for business の使用方法についてのビデオを見る](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **トレーニング:** [onedrive for business のトレーニング](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132)(onedrive for business の選択)。  <br/> |
 |SharePoint Online トレーニングを完了して、同僚との共同作業やコンテンツの共有に役立てることができます。  <br/> |同僚がアクセスするドキュメントを SharePoint Online に保持するための最善の場所です。  <br/> <br/>**トレーニング:** [ビデオ: SharePoint Online を使用してチームコンテンツを共同作業する](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **以下を参照してください。** 組織は SharePoint Online をどのように使用していますか。どのような種類のドキュメントがそこに保存されますか。 また、OneDrive for Business に保存されているドキュメントもあります。  <br/> |
 
-   
 ## <a name="related-articles"></a>関連記事
-
 
 [以前の従業員を Microsoft 365 から削除する](remove-former-employee.md)
   
-[Microsoft 365 にユーザーを個別にまたは一括して追加する](add-users.md)
-  
-
+[同じ time65 でユーザーを追加してライセンスを割り当てる](add-users.md)

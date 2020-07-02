@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: この記事では、ファイルの保存と共有に関してチームサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: 5eb95ffc1ec687920b4499a9876ce3186e678062
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e7c3364332a127b5a398d3b08843ea7dd04679b5
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779871"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022171"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有についてチームサイトをカスタマイズする
 
@@ -104,7 +104,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 [グループについて理解し、管理](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)するためのビデオを表示します。 
   
-Microsoft 365 グループにユーザーを追加するには、「ユーザーを個別に追加する」[または「一括で microsoft 365-管理者向けヘルプ」を](../add-users/add-users.md)参照してください。
+Microsoft 365 グループにユーザーを追加するには、「[ユーザーを追加してライセンスを同時に割り当てる](../add-users/add-users.md)」を参照してください。
   
 [アクセス要求のセットアップと管理](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)を使用してアクセス要求を処理する方法について説明します。
   

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844599"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016345"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>Microsoft Threat Protection を有効にする
 
@@ -61,10 +61,12 @@ Microsoft の脅威保護を有効にするには、[ **microsoft の脅威保�
 >ナビゲーションウィンドウに**設定**が表示されない場合や、ページにアクセスできなかった場合は、アクセス許可とライセンスを確認してください。
 
 ### <a name="data-center-location"></a>データセンターの場所
-Microsoft の脅威保護は、 [Microsoft DEFENDER ATP で使用されて](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)いるのと同じ場所にデータを保存して処理します。 Microsoft Defender ATP を使用していない場合は、アクティブな Microsoft 365 セキュリティサービスの場所に基づいて、新しいデータセンターの場所が自動的に選択されます。 選択したデータセンターの場所が画面に表示されます。
+Microsoft の脅威保護は、 [Microsoft DEFENDER ATP で使用されて](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)いるのと同じ場所にデータを保存して処理します。 Microsoft Defender ATP を使用していない場合は、アクティブな Microsoft 365 セキュリティサービスの場所に基づいて、新しいデータセンターの場所が自動的に選択されます。 選択したデータセンターの場所が画面に表示されます。 
+
+Microsoft 365 セキュリティセンターの microsoft サポートに連絡して、別のデータセンターの場所に Microsoft の脅威保護をプロビジョニングする方法については、[**ヘルプが必要ですか?** ] を選択します。 
 
 >[!NOTE]
->Microsoft 365 セキュリティセンターの microsoft サポートに連絡して、別のデータセンターの場所に Microsoft の脅威保護をプロビジョニングする方法については、[**ヘルプが必要ですか?** ] を選択します。 
+>Microsoft Defender ATP は、Azure セキュリティセンターを使用してオンにした場合に、欧州連合 (EU) のデータセンターで自動的にプロビジョニングされます。 Microsoft の脅威保護は、Microsoft Defender ATP をこの方法でプロビジョニングしたお客様に対して、同じ EU データセンターで自動的にプロビジョニングされます。 
 
 ### <a name="confirm-that-the-service-is-on"></a>サービスが有効になっていることを確認する
 サービスがプロビジョニングされると、次の機能が追加されます。
@@ -91,7 +93,7 @@ Microsoft の脅威保護を有効にすることに関してよく寄せられ�
 
 Microsoft サポートスタッフは、テナントのサービスおよび関連するリソースのプロビジョニングまたはプロビジョニング解除に役立ちます。 詳細については、「Microsoft 365 セキュリティセンターで**ヘルプが必要ですか?** 」を参照してください。 サポートに連絡するときは、「Microsoft Threat Protection」をお伝えください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [よく寄せられる質問](mtp-enable-faq.md)
 - [ライセンス要件およびその他の前提条件](prerequisites.md)
