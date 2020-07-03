@@ -93,14 +93,12 @@
               href: manage/assign-licenses-to-users.md
             - name: 管理者ロールを割り当てる
               href: add-users/assign-admin-roles.md
+            - name: ユーザーからライセンスの割り当てを解除する
+              href: manage/remove-licenses-from-users.md
             - name: ゲスト ユーザー
               href: add-users/about-guest-users.md
             - name: Microsoft 365 グループにゲストユーザーを追加する
               href: create-groups/manage-guest-access-in-groups.md
-            - name: ユーザーからライセンスを削除する
-              href: manage/remove-licenses-from-users.md
-            - name: ライセンスの競合を解決する
-              href: manage/resolve-license-conflicts.md
             - name: ユーザー名とメール アドレスを変更する
               href: add-users/change-a-user-name-and-email-address.md
             - name: 元従業員を削除する
