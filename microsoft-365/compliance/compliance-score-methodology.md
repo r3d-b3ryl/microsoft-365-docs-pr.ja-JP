@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: リスクに対処し、コンプライアンスの姿勢を改善するために行われた処置に基づいて、Microsoft コンプライアンススコアが個人のスコアを計算する方法について理解します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552f2f85c4659ec24bc717d41c71733764d898ed
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 69b631dc355ff497d0f6042e0cce6aff3d70e557
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023248"
+ms.locfileid: "45024677"
 ---
 # <a name="compliance-score-preview-calculation"></a>コンプライアンススコア (プレビュー) の計算
 
@@ -74,7 +74,7 @@ ms.locfileid: "45023248"
 
  - **強制アクション**は、意図的でも誤っても、省略することはできません。 例としては、パスワードの長さ、複雑さ、および有効期限の要件を設定する、集中管理されたパスワードポリシーがあります。 ユーザーは、システムにアクセスするためにこれらの要件に従う必要があります。
   
- - **随意アクション**は、ポリシーを理解し、それに応じて行動することに依存します。 たとえば、ユーザーが自分のコンピューターを離れるときにロックすることを要求するポリシーは、ユーザーに依存しているため、随意制御です。
+ - **随意アクション**は、ポリシーを理解し、それに応じて行動することに依存します。 たとえば、ユーザーが自分のコンピューターを離れるときにロックすることを要求するポリシーは、ユーザーに依存しているため、随意操作です。
   
 ### <a name="preventative-detective-and-corrective-actions"></a>予防的、検出、および是正処置
   

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 226f147dec7795ce6f8314a04218eab84e609218
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937051"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035794"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -32,6 +32,9 @@ ms.locfileid: "44937051"
 ![セキュリティ & コンプライアンスセンターのレポートダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>侵害されたユーザーレポート
+
+> [!NOTE]
+> このレポートは、Microsoft 365 組織の Exchange Online メールボックスを使用して利用できます。 これは、Exchange Online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織では使用できません。
 
 侵害された**ユーザー**のレポートには、過去7日間以内に**疑わしい**または**制限**されたユーザーアカウントの数が表示されます。 これらの状態のいずれかのアカウントは、問題が発生しているか、侵害されています。 よく使用されるので、レポートを使用して、不審なアカウントや制限付きのアカウントでスパイクや傾向を見つけることができます。 侵害されたユーザーの詳細については、「[危害を受けた電子メールアカウントへの対応](responding-to-a-compromised-email-account.md)」を参照してください。
 
@@ -59,7 +62,7 @@ ms.locfileid: "44937051"
 
 ## <a name="encryption-report"></a>暗号化レポート
 
-**暗号化レポート**は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 以下に例を示します。
+**暗号化レポート**は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 例:
 
 - ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。 詳細については、「 [Microsoft 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
@@ -114,7 +117,7 @@ ms.locfileid: "44937051"
   - **暗号化テンプレート**
   - **暗号化方法**
   - **受信者のアドレス**
-  - **件名**
+  - **[件名]**
 
 - **データの表示方法: 上位5受信者ドメイン**:
 
@@ -158,7 +161,7 @@ ms.locfileid: "44937051"
 - **[送信者のアドレス]**
 - **受信者のアドレス**
 - **[メッセージ ID]**
-- **件名**
+- **[件名]**
 - **Filename**
 - **マルウェアの名前**
 
@@ -176,7 +179,7 @@ ms.locfileid: "44937051"
 
 レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] ダッシュボードに移動し \> **Dashboard**て、[**スパム検出**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=SpamDetections> ます。
 
-![レポートダッシュボードのスパム検出ウィジェット](../../media/spam-detections-widget.png)
+![レポートダッシュボードのスパム検出ウィジェット](../../media/spam-detections-report-widget.png)
 
 スパム対策保護の詳細については、「 [EOP のスパム対策保護](anti-spam-protection.md)」を参照してください。
 
@@ -193,12 +196,14 @@ ms.locfileid: "44937051"
 
   グラフの1日 (データポイント) にカーソルを置くと、その日にブロックされたアイテムの数と、それらのアイテムがどのように分類されているかを確認できます。
 
-  ![スパム検出レポートのレポートビューでのアクションビュー](../../media/spam-detections-report-action-view.png)
+  ![スパム検出レポートのアクションビュー](../../media/spam-detections-report-action-view.png)
 
 - 次のよう**に分割します。方向**: 次の方向が表示されます。
 
   - **受信**
   - **向き**
+
+  ![スパム検出レポートでの方向ビュー](../../media/spam-detections-report-direction-view.png)
 
 レポートビューで [**フィルター** ] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -215,7 +220,7 @@ ms.locfileid: "44937051"
 - **受信者のアドレス**
 - **イベントの種類**
 - **Action**
-- **件名**
+- **[件名]**
 
 詳細テーブルで [**フィルター** ] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -266,7 +271,7 @@ ms.locfileid: "44937051"
 
 レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] ダッシュボードに移動し \> **Dashboard**て、[**脅威保護の状態**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=ATPV2AggregateReport> ます。
 
-![脅威保護の状態レポート](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![レポートダッシュボードの脅威保護状態ウィジェット](../../media/threat-protection-status-report-widget.png)
 
 既定では、グラフに過去7日間のデータが表示されます。 [**フィルター**] をクリックした場合は、90日の日付の範囲を選択できます (試用版のサブスクリプションは30日間に制限される場合があります)。 詳細テーブルビューでは、30日間のフィルター処理を実行できます。
 
@@ -280,45 +285,55 @@ ms.locfileid: "44937051"
   - **電子メールフィッシング**
   - **コンテンツマルウェア**
 
-- **データの表示方法: コンテンツ \>マルウェア**: 次の情報が表示されます。
+  ![脅威保護状態レポートの概要ビュー](../../media/threat-protection-status-report-overview-view.png)
+
+- **データの表示方法: コンテンツ \>マルウェア**<sup>1</sup>: 次の情報は、Office 365 ATP 組織で表示されます。
 
   - **マルウェア対策エンジン**
   - **ファイル分析**
 
+  ![脅威保護状態レポートのコンテンツマルウェアビュー](../../media/threat-protection-status-report-content-malware-view.png)
+
 - **下に移動: 検出テクノロジ**と**View data: Email \> フィッシング**: 次の情報が表示されます。
 
-  - **ATP で生成された URL の評価**<sup>\*</sup>
-  - **高度なフィッシングフィルター**<sup>\*</sup>
+  - **ATP で生成された URL 評価**<sup>1</sup>
+  - **高度なフィッシングフィルター**
   - **スプーフィング防止: DMARC エラー**
   - **スプーフィング対策: 組織内**
   - **スプーフィング防止: 外部ドメイン**
-  - **ブランド偽装**<sup>\*</sup>
-  - **ドメイン偽装**<sup>\*</sup>
+  - **ブランド偽装**
+  - **ドメイン偽装**<sup>1</sup>
   - **EOP URL 評価**
   - **一般的なフィッシングフィルター**
   - **Others**
-  - **フィッシング ZAP**<sup>\*\*</sup>
-  - **URL 分析**<sup>\*\*</sup>
-  - **ユーザー偽装**<sup>\*</sup>
+  - **フィッシング ZAP**<sup>2</sup>
+  - **URL 分析**<sup>1</sup>
+  - **ユーザー偽装**<sup>1</sup>
+
+  ![脅威保護状態レポートのフィッシング電子メールの検出テクノロジビュー](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **分割ダウン: 検出テクノロジ**と**データの表示者: 電子メール \> マルウェア**: 次の情報が表示されます。
 
-  - **ATP で生成されたファイルの評価**<sup>\*\*</sup>
-  - **マルウェア対策エンジン**
+  - **ATP で生成されたファイル評価**<sup>1</sup>
+  - **マルウェア対策エンジン**<sup>1</sup>
   - **マルウェア対策ポリシーファイルの種類ブロック**
-  - **ファイル分析**<sup>\*\*</sup>
+  - **ファイル分析**<sup>1</sup>
   - **悪意のあるファイルの評価**
-  - * * マルウェアの ZAP * * * *<sup>\*\*</sup>
+  - **マルウェアの ZAP**<sup>2</sup>
   - **Others**
+
+  ![脅威保護状態レポートでのマルウェアの検出テクノロジビュー](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 - **分割ダウン: Policy type** and **view Data by: Email \> フィッシング**Or **view data by: email \> マル**: 次の情報が表示されます。
 
-  - **マルウェア対策**<sup>\*\*</sup>
-  - **安全な添付ファイル**<sup>\*\*</sup>
+  - **マルウェア対策**
+  - **安全な添付ファイル**<sup>1</sup>
   - **フィッシング**
   - **スパム対策**
   - **メールフロールール**(トランスポートルールとも呼ばれる)
   - **Others**
+
+  ![脅威保護の状態レポートに表示されるフィッシング電子メールのポリシーの種類](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 - **分割ダウン: 配信状態**および**表示データ: 電子メールの \> フィッシング**または**view by: email \> マルウェア**: 次の情報が表示されます。
 
@@ -332,9 +347,11 @@ ms.locfileid: "44937051"
   - **オンプレミスサーバー: 配信済み**
   - **検疫**
 
-<sup>\*</sup>Office 365 ATP のみ
+  ![脅威保護状態レポートのフィッシング電子メールの配信状態ビュー](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>\*\*</sup>ゼロ時間自動削除 (ZAP) は、スタンドアロン EOP では使用できません (Exchange Online メールボックスでのみ動作します)。
+<sup>1</sup> OFFICE 365 ATP のみ
+
+<sup>2</sup>ゼロ時間自動削除 (ZAP) は、スタンドアロン EOP では使用できません (Exchange Online メールボックスでのみ動作します)。
 
 [**フィルター**] をクリックすると、次のフィルターを使用してレポートを変更できます。
 
@@ -348,20 +365,20 @@ ms.locfileid: "44937051"
 
 - **データの表示方法: コンテンツ \>マルウェア**:
 
-- **Date**
-- **Location**
-- **転送者**
-- **マルウェアの名前**
+  - **Date**
+  - **Location**
+  - **転送者**
+  - **マルウェアの名前**
 
 - **データの表示: 概要**: [**表示の詳細] テーブル**ボタンは使用できません。
 
 - その他のすべてのグラフ:
 
   - **Date**
-  - **件名**
+  - **[件名]**
   - **送信者**
   - **受信者**
-  - **転送者**
+  - **検出者**
   - **配信状態**
   - **侵害のソース**
 
@@ -373,33 +390,31 @@ ms.locfileid: "44937051"
 
 ## <a name="top-malware-report"></a>上位マルウェアレポート
 
-**上位マルウェア**レポートには、 [EOP](eop-features.md)によって検出されたさまざまな種類のマルウェアが表示されます。
+**上位マルウェア**レポートには、 [EOP でマルウェア対策保護](anti-malware-protection.md)によって検出されたさまざまな種類のマルウェアが表示されます。
 
-レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] \> **ダッシュボード**に移動して [**上位マルウェア**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=TopMalwaret> ます。
+レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] \> **ダッシュボード**に移動して [**上位マルウェア**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=TopMalware> ます。
 
-![SCC-EOP Top マルウェア](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![レポートダッシュボードのトップマルウェアウィジェット](../../media/top-malware-report-widget.png)
 
 円グラフのくさび形の上にポインターを移動すると、マルウェアの種類の名前と、マルウェアを持っていることが検出されたメッセージの数を確認できます。
 
-レポートをクリック (またはタップ) して、新しいブラウザーウィンドウでレポートを開きます。これにより、レポートの詳細が表示されます。
+![トップマルウェアレポートビュー](../../media/top-malware-report-view.png)
 
-![このレポートには、組織で検出された上位のマルウェアが表示されます。](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+[**詳細テーブルの表示**] をクリックすると、次の詳細情報が表示されます。
 
-グラフの下に、検出されたマルウェアの一覧と、マルウェアを持っていることが検出されたメッセージの数が表示されます。 この集計ビューでは、90日のフィルター処理のみが許可されることに注意してください。
+- **上位マルウェア**
+- **Count**
+
+レポートビューまたは詳細テーブルビューで [**フィルター** ] をクリックすると、**開始**日と**終了日**を含む日付範囲を指定できます。
 
 ## <a name="url-threat-protection-report"></a>URL の脅威保護レポート
 
-このレポートのウィジェットは、レポートダッシュボードの [ **URL 保護レポート**] という名前です。 Office 365 Advanced Threat PROTECTION (ATP) でのみ使用できます。 具体的には次のとおりです。
-
-- Microsoft 365 E5 サブスクリプション。
-- Advanced Threat Protection アドオン (プラン 1*または*プラン 2) は、Exchange Online PROTECTION (EOP) を含む他のすべてのサブスクリプションに対して行います。
-
-**URL の脅威保護**レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=URLProtectionActionReport> ます。
-
 > [!NOTE]
-> このレポートには、安全なリンクポリシーが適用されているユーザーのクリックデータがありません。 [ユーザーのクリックを**追跡**しない] オプションが選択されています。
+> このレポートは、Office 365 Advanced Threat Protection (ATP) でのみ使用できます。 たとえば、Microsoft 365 E5 サブスクリプション、または ATP プラン1または ATP Plan 2 アドオンがあります。
 
-![アクションの URL の脅威保護レポートの図。](../../media/tp-URLThreatProRpt1.PNG)
+**Url 脅威保護レポート**には、検出された脅威と、 [ATP の安全なリンク](atp-safe-links.md)の一部として、URL クリックに対して行われた操作の概要と傾向のビューが表示されます。 このレポートには、安全なリンクポリシーが適用されているユーザーのクリックデータがありません。 [ユーザーのクリックを**追跡**しない] オプションが選択されています。
+
+レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート** \> **ダッシュボード**] に移動して、[ **URL の保護**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=URLProtectionActionReport> ます。
 
 ### <a name="report-view-for-the-url-threat-protection-report"></a>URL 脅威保護レポートのレポートビュー
 
@@ -417,6 +432,8 @@ ms.locfileid: "44937051"
 
   - **開始日**と**終了日**
   - 使用可能なクリック保護アクションと、すべての URL クリック (ブロックされたクリックのみではない) の情報を表示**できる値を**加えたもの。
+
+  ![URL URL の脅威保護レポートにある [保護アクション表示] をクリックします。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 - **Url [アプリケーションごと]**: OFFICE 365 ATP の安全なリンクをサポートしているアプリケーションによる url クリックの数を表示します。
 

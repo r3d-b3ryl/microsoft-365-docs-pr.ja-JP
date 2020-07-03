@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の送信スパムポリシーを表示、作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 12f2936530a300cf79556ebf02533c187caa23d5
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761720"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024584"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパムフィルターを構成する
 
@@ -77,19 +77,19 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- このトピックの手順を実行する前に、アクセス許可を割り当てる必要があります。
+- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
 
   - 送信スパムポリシーを追加、変更、および削除するには、次のいずれかの役割グループのメンバーである必要があります。
 
-    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**組織管理**または**セキュリティ管理者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**組織の管理**または**検疫の管理**。
+    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
+    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
 
   - 送信スパムポリシーに対する読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
 
-    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**セキュリティリーダ**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**表示のみの組織の管理**。
+    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
 - 送信スパムポリシーの推奨設定については、「 [EOP outbound spam filter policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)」を参照してください。
 
@@ -118,21 +118,21 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
      この設定を有効にするには:
 
-     a. チェックボックスをオンにして、設定を有効にします。
+     1. チェックボックスをオンにして、設定を有効にします。
 
-     b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
+     1. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
 
-     c. 送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
+     1. 送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
 
-     d. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
+     1. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
 
         必要な回数だけこれらの手順を繰り返します。
 
         追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するには、[ ![ 削除] ボタンをクリックし ](../../media/scc-remove-icon.png) ます。
 
-     e. 完了したら、**[保存]** をクリックします。
+     1. 完了したら、**[保存]** をクリックします。
 
-     この設定を無効にするには、このチェックボックスをオフにします。
+        この設定を無効にするには、このチェックボックスをオフにします。
 
    - 送信**スパムの送信によって送信者がブロックされた場合に、特定のユーザーに通知し**ます。
 
@@ -153,7 +153,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
         追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するには、[ ![ 削除] ボタンをクリックし ](../../media/scc-remove-icon.png) ます。
 
-     e. 完了したら、**[保存]** をクリックします。
+     e.  完了したら、**[保存]** をクリックします。
 
      この設定を無効にするには、このチェックボックスをオフにします。
 
@@ -185,10 +185,22 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
      - **ユーザーがメールを送信する**のを制限する: 電子メール通知が送信され、ユーザーはセキュリティ & コンプライアンスセンターの** <https://sip.protection.office.com/restrictedusers> [制限付きユーザー]** ポータルに追加され、ユーザーは管理者によって**制限付きユーザー**ポータルから削除されるまで電子メールを送信できません。管理者がリストからユーザーを削除した後は、その日に対してユーザーが再度制限されることはありません。 手順については、「[迷惑メールの送信後に制限付きユーザーポータルからユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)」を参照してください。
 
      - **アクションなし、通知のみ**: 電子メール通知が送信されます。
+6. オプション[**自動転送**] セクションを展開して、ユーザーによる自動転送の制御方法を構成します。
 
-6. 要する[**適用先**] セクションを展開して、ポリシーが適用される内部送信者を特定します。
+   > [!NOTE]
+   > これらの設定は、クラウドベースのメールボックスにのみ適用されます。
+   
+   - **自動転送**
+  
+      いずれかのオプションを選択して、自動転送の処理方法を制御します。
+    
+      - **Automatic**: 既定では、自動転送を無効にした自動転送をシステムで制御できるようにする既定の設定です。
+      - **オン**: ポリシー内で、制限なしで外部転送が有効になります。
+      - **Off**: 外部転送が無効になり、ブロックされます
 
-    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件または例外の複数の値を使用するか、ロジック (たとえば、 _\<sender1\>_ または) を使用 _\<sender2\>_ します。 さまざまな条件や例外、およびロジック (およびなど) を使用し _\<sender1\>_ _\<member of group 1\>_ ます。
+7. 要する[**適用先**] セクションを展開して、ポリシーが適用される内部送信者を特定します。
+
+    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<sender1\>_ または _\<sender2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<sender1\>_ かつ _\<member of group 1\>_) が適用されます。
 
     使用可能なすべての条件を表示するには、**[条件の追加]** を 3 回クリックするのが最も簡単です。 構成しない条件を削除するには、![[削除] ボタン](../../media/scc-remove-icon.png)をクリックします。
 
@@ -200,7 +212,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
     - **次の場合を除く**: ルールの例外を追加するには、**[条件の追加]** を 3 回クリックして、使用可能なすべての例外を表示します。 設定と動作は、条件とまったく同じです。
 
-7. 完了したら、**[保存]** をクリックします。
+8. 完了したら、**[保存]** をクリックします。
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>セキュリティ & コンプライアンスセンターを使用して、送信スパムポリシーを表示する
 
@@ -404,7 +416,8 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 
 このトピックで前述した「[手順 1: powershell を使用して送信スパムフィルターポリシーを作成](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy)する」の説明に従って、ポリシーの作成時に powershell のマルウェアフィルターポリシーを変更する場合にも、同じ設定を使用できます。
 
-**注**: 送信スパムフィルターポリシーの名前を変更することはできません ( **HostedOutboundSpamFilterPolicy**コマンドレットに_Name_パラメーターがありません)。 セキュリティ & コンプライアンスセンターで送信スパムポリシーの名前を変更する場合は、送信スパムフィルター_ルール_の名前のみを変更しています。
+> [!NOTE]
+> 送信スパムフィルターポリシーの名前を変更することはできません ( **HostedOutboundSpamFilterPolicy**コマンドレットに_Name_パラメーターがありません)。 セキュリティ & コンプライアンスセンターで送信スパムポリシーの名前を変更する場合は、送信スパムフィルター_ルール_の名前のみを変更しています。
 
 送信スパムフィルターポリシーを変更するには、次の構文を使用します。
 
@@ -468,11 +481,11 @@ This example sets the priority of the rule named Marketing Department to 2. All 
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**注**:
-
-- 新しいルールの作成時に優先度を設定するには、代わりに**HostedOutboundSpamFilterRule**コマンドレットで_priority_パラメーターを使用します。
-
-- 既定の送信スパムフィルターポリシーには、対応するスパムフィルタールールがありません。また、常に、未設定の優先度の値が**最低**になっています。
+> [!NOTE]
+> 
+> - 新しいルールの作成時に優先度を設定するには、代わりに**HostedOutboundSpamFilterRule**コマンドレットで_priority_パラメーターを使用します。
+>
+> - 既定の送信スパムフィルターポリシーには、対応するスパムフィルタールールがありません。また、常に、未設定の優先度の値が**最低**になっています。
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>PowerShell を使用して送信スパムフィルターポリシーを削除する
 
@@ -517,3 +530,5 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 [送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)
 
 [スパム対策保護に関してよく寄せられる質問](anti-spam-protection-faq.md)
+
+[自動転送済みメッセージレポート](mfi-auto-forwarded-messages-report.md)

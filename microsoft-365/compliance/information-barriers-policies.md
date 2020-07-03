@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a9f8635f65867eb9d9543cc23b984f181030a7f9
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817546"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024697"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -161,7 +161,7 @@ ms.locfileid: "44817546"
 |---------|---------|
 |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>この例では、ローカルに配置されていて、その位置が*一時*としてリストされていない人物を含む*localfte*というセグメントを定義しました。    |
  |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>この例では、 *Segment1*という名前のセグメントを定義し、group3@contoso.com のメンバーではなく group1@contoso.com のメンバーであるユーザーを含みます。
-|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | この例では、 *Segment2*という名前のセグメントを定義し、group3@contoso.com のメンバーではなく group2@contoso.com のメンバーであるユーザーを含みます。
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | この例では、 *Segment2*という名前のセグメントを定義し、group3@contoso.com のメンバーではなく group2@contoso.com のメンバーであるユーザーを含みます。
 |`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  この例では、group3@contoso.com のメンバーではなく、group1@contoso.com と group2@contoso.com の people メンバーを含む*Segment1and2*というセグメントを定義しました。
 
 

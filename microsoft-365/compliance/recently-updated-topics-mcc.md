@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 今月の新機能と更新された機能について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936150"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035642"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -150,7 +150,7 @@ Microsoft 365 コンプライアンスセンターの機能と同様に、ヘル
 
 [メールボックスの監査を管理](enable-mailbox-auditing.md#logon-types-and-mailbox-actions)する (更新)<br>高度な監査で導入された、新しい MailItemsAccessed アクションに関する情報を追加しました。
 
-[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)(更新)<br>機密ラベルのアクティビティの新しい説明と、監査フォームの[コラボレーションアクティビティ](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders)に関する追加情報を追加しました。
+[監査ログを検索する](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)(更新)<br>機密ラベルのアクティビティの新しい説明と、監査フォームの[コラボレーションアクティビティ](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-coauthors-and-anonymous-responders)に関する追加情報を追加しました。
 
 ### <a name="compliance-offerings"></a>コンプライアンス認証
 

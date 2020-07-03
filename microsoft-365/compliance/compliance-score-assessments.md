@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のコンプライアンスを管理するのに役立つ評価を作成して、Microsoft のコンプライアンススコアを設計します。
-ms.openlocfilehash: 45a5e76aa4f6581146ded510f75d772c202751ee
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 8b27267461e226a6db2173158d2d35238c0d5a5e
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023310"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035632"
 ---
 # <a name="customize-compliance-score-preview-with-assessments"></a>評価によるコンプライアンススコアのカスタマイズ (プレビュー)
 
@@ -46,7 +46,7 @@ ms.locfileid: "45023310"
 評価をセットアップするには、次の3つの方法があります。
 
 1. [使用できる評価] を選択します。
-2. 評価のテンプレートを独自のニーズに合わせて変更します。
+2. [評価のテンプレート](compliance-score-templates.md)を独自のニーズに合わせて変更します。
 3. 独自のカスタム評価を作成します。
 
 ユーザーは、評価を作成または変更するために、グローバル管理者、コンプライアンス管理者、コンプライアンスデータ管理者、またはセキュリティ管理者の役割を持つ必要があります。 [役割とアクセス許可](compliance-score-setup.md#set-user-permissions-and-assign-roles)の詳細について説明します。

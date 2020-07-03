@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: 詳細な電子情報開示ケースに非 custodial データソースを追加して、データソースにホールドを配置することができます。 非 wi-fi ダイヤルデータソースは再インデックス化されるため、部分的にインデックスとして見なされたコンテンツはすべて、完全かつ迅速に検索できるように再処理されます。
-ms.openlocfilehash: 618d39bfb7be6cd260c88cdf4c57501747f440f1
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: 詳細な電子情報開示ケースに非 custodial データソースを追加して、データソースにホールドを配置することができます。 非 custodial データソースは再インデックス化であるため、部分的にインデックスが作成されていると見なされたコンテンツはすべて再処理され、完全かつ迅速に検索できるようになります。
+ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695502"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024747"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>詳細な電子情報開示ケースに非 custodial データソースを追加する
 
@@ -47,7 +46,7 @@ ms.locfileid: "44695502"
 
    追加したそれぞれの非 custodial データソースは、[**データソース**] ページに表示されます。
 
-   また、[再インデックス化] の*非 custodial データ*という名前のジョブが作成され、ケースの [**ジョブ**] タブに表示されます。 ジョブが作成されると、開始された高度なインデックス作成プロセスとデータソースが再インデックス化されます。
+   また、"*非 custodial* " という名前のジョブが作成され、ケースの [**ジョブ**] タブに表示されます。 ジョブが作成されると、開始された高度なインデックス作成プロセスとデータソースは再インデックス化になります。
 
 ## <a name="managing-the-hold-on-non-custodial-data-sources"></a>非 custodial データソースの保持を管理する
 

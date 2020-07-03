@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: これで、DLP ポリシーを Microsoft Teams のチャットおよびチャネルに適用できるようになります。 機能の詳細については、この記事を参照してください。
-ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347856"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024727"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>データ損失防止と Microsoft Teams
 
@@ -113,8 +113,8 @@ Teams チャットで DLP 保護をサポートするには、E5 が必要です
 
 5. [**場所の選択**] タブで、すべての場所の既定の設定をそのまま使用するか、[特定の**場所を選択**する] を選択して、[**次へ**] を選択します。<br/>特定の場所を選択した場合は、DLP ポリシーに対してそれらの場所を選択し、[**次へ**] を選択します。<br/>![DLP ポリシーの場所](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
-    > 機密情報が含まれるドキュメントが不適切に共有されないようにするには、 **SharePoint サイト**と**OneDrive アカウント**が、 **Teams のチャットおよびチャネルメッセージ**と共にオンになっていることを確認してください。
-    > Microsoft Teams のチャネルは、Exchange Online の機能に強く依存しています。 チャネルのコンテンツに適用する必要があるポリシーについても、 **Exchange のメール**の場所が有効になっていることを確認してください。  
+    > 機密情報が含まれるドキュメントが Teams で不適切に共有されないようにするには、 **SharePoint サイト**と**OneDrive アカウント**が有効になっていることを、 **teams のチャットおよびチャネルメッセージ**と一緒に確認します。
+
 <br/>
 
 6. [**ポリシー設定**] タブの [**保護するコンテンツの種類をカスタマイズ**する] で、既定の簡易設定をそのまま使用するか、[**詳細設定**] を選択して [**次へ**] を選択します。 [詳細設定] を選択した場合は、ポリシーのルールを作成または編集することができます。 (詳細については、「 [Simple settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)」と「advanced settings」を参照してください)。

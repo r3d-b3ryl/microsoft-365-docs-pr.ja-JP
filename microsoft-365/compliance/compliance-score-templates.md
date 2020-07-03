@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコア (プレビュー) で評価を設定するために使用できるすべてのテンプレートを確認します。
-ms.openlocfilehash: 4bb4bd95bb9df98f081b2e7a60ae21a86dfdc048
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016591"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035622"
 ---
 # <a name="compliance-score-preview-templates"></a>コンプライアンススコア (プレビュー) テンプレート
 
 ## <a name="templates-overview"></a>テンプレートの概要
 
-コンプライアンススコア**評価を作成するための**包括的なテンプレートのセットを提供します。 これらのテンプレートを使用すると、組織は、データの収集と使用を管理する国内、地域、および業界固有の要件に準拠することができます。 新しいテンプレートは、規制が制定され、更新されると、追加されます。
+[コンプライアンススコア](compliance-score.md)**評価を作成するための**包括的なテンプレートのセットを提供します。 これらのテンプレートを使用すると、組織は、データの収集と使用を管理する国内、地域、および業界固有の要件に準拠することができます。 新しいテンプレートは、規制が制定され、更新されると、追加されます。
 
 組織のニーズに合わせて、以下のいずれかのテンプレートを変更することができます。 独自のテンプレートを作成して、カスタム評価を作成することもできます。 
 

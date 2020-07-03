@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 で暗号化に使用されるさまざまな証明書、テクノロジ、および TLS 暗号スイートについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 298d73551b5eb3d7ad7121075b086ee4630562f4
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 91fa21fff12c429032af6468ff3024acfc6ca2ab
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739105"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024543"
 ---
 # <a name="technical-reference-details-about-encryption"></a>暗号化に関するテクニカルリファレンスの詳細
 
@@ -56,10 +56,9 @@ TLS バージョン 1.3 (TLS 1.3) は現在サポートされていません。
 
 これは、Office 365 が TLS 1.0 および1.1 の接続をブロックすることを意味するわけではありません。
 
-TLS 1.0 および TLS 1.1 は、これらの日付に正式に廃止されました。
+最初は、2020年6月1日の日付を設定していますが、世界規模および GCC 環境ではの TLS 1.0 および TLS 1.1 は廃止されていますが、この日付は無効になりました。 これは COVID-19 のためです。 この廃止予定に新しい日付がある場合は、ここで公開します。 
 
-- 世界規模および GCC 環境では2020年6月1日
-- GCC High および DoD 環境では、2020年1月15日。
+GCC High および DoD 環境では、2020年1月15日に公式の廃止が行われました。
 
 すべてのクライアントサーバーとブラウザーのサーバーの組み合わせが TLS 1.2 と最新の暗号スイートを使用して、Office 365 および Microsoft 365 サービスへのセキュリティで保護された接続を維持するようにする必要があります。 クライアントとサーバー間、ブラウザーとサーバー間の特定の組み合わせについては、更新が必要になる場合があります。 この影響の詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
   
@@ -91,7 +90,7 @@ Cipher suite は、セキュリティで保護された接続を確立するた�
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 [Windows 10 v1903 の TLS 暗号スイート](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Office 365 での暗号化](encryption.md)

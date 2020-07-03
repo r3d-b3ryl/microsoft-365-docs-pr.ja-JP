@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 一括追加ツールを使用すると、高度な電子情報開示のケースに複数の保管担当者とそれに関連付けられたデータソースをすばやく追加できます。
-ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: ab9626be01814fa95a959141433b431df9bf7724
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741641"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024667"
 ---
 # <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>高度な電子情報開示ケースへの保管担当者の一括追加
 
@@ -37,7 +37,8 @@ ms.locfileid: "44741641"
 
 4. この CSV ファイルに custodial 情報を追加して、ローカルコンピューターに保存します。 CSV ファイルのプロパティに関する情報については、次のセクションを参照してください。
 
-5. [**ソース**] タブで、[ **Import 保管担当者**] をもう一度クリックします。 
+5. [**ソース**] タブで、[ **Import 保管担当者**] をもう一度クリックします。
+
 6. [ポップアップ] ページで、[**参照**] をクリックし、CSV ファイルをアップロードします。
 
    CSV ファイルをアップロードすると、BulkAddCustodian ジョブが作成され、[**ジョブ**] タブに表示されます。ジョブは保管担当者とそれに対応するデータソースを検証し、ケースの [**ソース**] ページの [**保管担当者**] タブに追加します。

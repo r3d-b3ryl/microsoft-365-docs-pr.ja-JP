@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: acfec3d92f3f3f3207819a2fe0988e45ae56ae02
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: a91459652d785f6536cb50e381ab139057a3eae8
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327285"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024645"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -29,7 +29,7 @@ ms.locfileid: "44327285"
   
 ## <a name="aba-routing-number"></a>ABA ルーティング番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 書式設定ありまたは書式設定なしの 9 桁の数字
 
@@ -44,7 +44,7 @@ ms.locfileid: "44327285"
 
 書式なし: 0、1、2、3、6、7、または8で始まる9桁の連続した数字 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -89,7 +89,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 id (DNI) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 ピリオドで区切られた 8 桁の数字
 
@@ -102,7 +102,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ピリオド 1 つ 
 - 3 桁の数字 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -138,7 +138,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="australia-bank-account-number"></a>オーストラリアの銀行口座番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 銀行支店識別コード (BSB) を含むまたは含まない 6 ～ 10 桁の数字
 
@@ -150,7 +150,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 
 - 3 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -201,7 +201,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="australia-drivers-license-number"></a>オーストラリアの運転免許証番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の文字と数字
 
@@ -213,16 +213,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 桁の数字 
 - 5 つの数字または文字 (大文字小文字を区別しない)
 
-または
+OR
 
 - 1 ～ 2 桁の省略可能な文字 (大文字小文字の区別なし)  
 - 4 ～ 9 桁の数字
 
-または
+OR
 
 - 9 桁の数字または文字 (大文字小文字の区別なし)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -352,7 +352,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="australia-medical-account-number"></a>オーストラリアの医療口座番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 ～ 11 桁の数字
 
@@ -364,7 +364,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 10 桁目は発行桁
 - 11 桁目 (省略可能) は個人番号
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -414,7 +414,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="australia-passport-number"></a>オーストラリアのパスポート番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1 桁の文字の後に 7 桁の数字
 
@@ -422,7 +422,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1 桁の文字 (大文字小文字の区別なし) の後に 7 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -485,7 +485,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="australia-tax-file-number"></a>オーストラリアの税ファイル番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8 ～ 9 桁の数字
 
@@ -498,7 +498,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 省略可能なスペース 
 - 2 ～ 3 桁の数字。最後の桁はチェック ディジット用です
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -571,7 +571,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="austria-drivers-license-number"></a>オーストリアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -579,7 +579,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -622,7 +622,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="austria-national-identification-number"></a>オーストリア国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 24文字の文字、数字、特殊文字の組み合わせ
   
@@ -634,9 +634,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 - 2つの文字 (大文字小文字を区別しない)、数字、バックスラッシュ、スラッシュ、プラス記号、または等号
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -668,7 +668,7 @@ national id
 ## <a name="austria-passport-number"></a>オーストリアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号 sensitiveinformation タイプでのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1文字の後にオプションのスペースと7桁の数字
   
@@ -682,9 +682,9 @@ national id
     
 - 7 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -716,7 +716,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="austria-social-security-number-or-equivalent-identification"></a>オーストリアの社会保障番号または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定した形式の10桁の数字
   
@@ -728,7 +728,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1つのチェックディジット
 - 誕生日に対応する6桁の数字 (DDMMYY)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -778,7 +778,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="austria-tax-identification-number"></a>オーストリアの税識別番号
 この機密情報の種類エンティティは、EU 税務 ID 番号の機密情報の種類のみ利用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 任意指定のハイフンとスラッシュ (/) を含む9桁の数字
   
@@ -792,7 +792,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スラッシュ (省略可能)
 - 4 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -848,7 +848,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 認証キー
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "DocumentDb" の後に、次のパターンで概説されている文字と文字列が続きます。
 
@@ -860,7 +860,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 86の小文字または小文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
 - 2つの等号 (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -900,7 +900,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS データベースの接続文字列と Azure SQL 接続文字列
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "Server"、"server"、または "data source" の後に、次のパターンで概説されている文字と文字列を指定します (文字列 "cloudapp" を含む)。<!--no-hyperlink-->com または "cloudapp azure。<!--no-hyperlink-->net "または" database "です。<!--no-hyperlink-->net "、および" Password "または" pwd "という文字列を指定します。
 
@@ -920,7 +920,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - セミコロンではない1つ以上の文字 (;)、引用符 (")、またはアポストロフィ (')
 - セミコロン (;)、引用符 (")、またはアポストロフィ (')
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -960,7 +960,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT 接続文字列
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "HostName" の後に、次のパターンで概説されている文字と文字列 ("azure デバイス" を含む)。<!--no-hyperlink-->net "および" SharedAccessKey "。
 
@@ -980,7 +980,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 43の小文字または小文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせ
 - 等号 (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -1020,7 +1020,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-publish-setting-password"></a>Azure 発行設定パスワード
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "userpwd =" に続けて英数字の文字列を指定します。
 
@@ -1030,7 +1030,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 60小文字または数字の任意の組み合わせ
 - 二重引用符 (")
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -1071,7 +1071,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis cache 接続文字列
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "redis...<!--no-hyperlink-->net "の後に、次のパターンで概説されている文字と文字列を指定します。文字列" password "または" pwd "が含まれます。
 
@@ -1086,7 +1086,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 43文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
 - 等号 (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -1126,7 +1126,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-sas"></a>Azure SAS
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "sig" の後に、次のパターンで概説されている文字と文字列が続きます。
 
@@ -1140,7 +1140,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 文字列 "% 3d"
 - 小文字または大文字、数字、パーセント記号 (%) 以外の文字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -1160,7 +1160,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-service-bus-connection-string"></a>Azure Service Bus の接続文字列
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "EndPoint" の後に、次のパターンで概説されている文字と文字列が続きます。<!--no-hyperlink-->net "および" Shared' キー "。
 
@@ -1180,7 +1180,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 43文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
 - 等号 (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -1220,7 +1220,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-storage-account-key"></a>Azure ストレージアカウントキー
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "DefaultEndpointsProtocol" の後に、文字列 "AccountKey" を含む、次のパターンで概説されている文字および文字列が続きます。
 
@@ -1238,7 +1238,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 86文字の任意の組み合わせ (小文字または大文字の文字、数字、スラッシュ (/)、プラス記号 (+))
 - 2つの等号 (=)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -1286,7 +1286,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="azure-storage-account-key-generic"></a>Azure ストレージアカウントキー (汎用)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 86の下または大文字、数字、スラッシュ (/)、またはプラス記号 (+) の任意の組み合わせで、下のパターンで説明されている文字が前または後にある。
 
@@ -1297,7 +1297,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2つの等号 (=)
 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -1317,7 +1317,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="belgium-drivers-license-number"></a>ベルギーの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -1325,7 +1325,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 10 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -1373,7 +1373,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="belgium-national-number"></a>ベルギーの国番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 の数字と区切り文字
 
@@ -1386,7 +1386,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ピリオド 1 つ  
 - チェック ディジットとして機能する 2 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -1474,7 +1474,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="belgium-passport-number"></a>ベルギーのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字の後に6桁の数字 (スペースまたは区切り記号を付けない)
   
@@ -1482,9 +1482,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2つの文字の後に6桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -1517,7 +1517,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="belgium-social-security-number-or-equivalent-identification"></a>ベルギーの社会保障番号または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11桁の数字 (スペースまたは区切り文字なし)
   
@@ -1525,7 +1525,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -1578,7 +1578,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="belgium-tax-identification-number"></a>ベルギーの税識別番号
 この機密情報の種類エンティティは、EU 納税者番号機密情報の種類にのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -1592,9 +1592,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - "0" または "1" または "2" または "3" 
 - 6 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -1680,7 +1680,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="brazil-cpf-number"></a>ブラジルの CPF 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 書式設定ありまたは書式設定なしのチェック ディジットを含む 11 桁の数字
 
@@ -1698,7 +1698,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 なし
 - 11 桁の数字 (最後の 2 桁はチェック ディジット)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -1742,7 +1742,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>ブラジルの法人番号 (CNPJ)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 登録番号、枝番号、チェック ディジット、および区切り文字を含む 14 桁の数字
 
@@ -1758,7 +1758,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 2 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -1812,7 +1812,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="brazil-national-identification-card-rg"></a>ブラジルの国民識別カード (RG)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 Registro Geral (古い形式): 9 桁の数字
 
@@ -1834,7 +1834,7 @@ Registro de 識別子 Dade (RIC) (新しい形式):
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 1 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -1879,7 +1879,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="bulgaria-drivers-license-number"></a>ブルガリアの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -1887,7 +1887,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -1931,7 +1931,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="bulgaria-national-identification-number"></a>ブルガリア国家識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -1944,7 +1944,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 性別に対応する1桁の数字: 男性の偶数桁で、女性に奇数の数字
 - 1つのチェックディジット
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -2024,7 +2024,7 @@ national id
 ## <a name="bulgaria-passport-number"></a>ブルガリアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -2032,7 +2032,7 @@ national id
 
  9 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -2063,7 +2063,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="bulgaria-tax-identification-number"></a>ブルガリア税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -2071,7 +2071,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 10 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -2151,7 +2151,7 @@ national id
 
 ## <a name="canada-bank-account-number"></a>カナダの銀行口座番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7 桁または 12 桁の数字
 
@@ -2166,7 +2166,7 @@ national id
 - 1 桁のゼロ (0)  
 - 8 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -2224,7 +2224,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="canada-drivers-license-number"></a>カナダの運転免許証番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 州によって異なります
 
@@ -2232,7 +2232,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 アルバータ州、ブリティッシュ コロンビア州、マニトバ州、ニュー ブランズウィック州、ニューファンドランド・ラブラドール州、ノバスコシア州、オンタリオ州、プリンス エドワード アイランド州、ケベック州、およびサスカチュワン州の各種パターン
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -2441,7 +2441,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="canada-health-service-number"></a>カナダの正常性サービス番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 桁の数字
 
@@ -2449,7 +2449,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 10 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -2487,7 +2487,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
       
 ## <a name="canada-passport-number"></a>カナダのパスポート番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2 桁の大文字の後に 6 桁の数字
 
@@ -2495,7 +2495,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の大文字の後に 6 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -2554,7 +2554,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="canada-personal-health-identification-number-phin"></a>カナダの個人正常性識別番号 (PHIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の数字
 
@@ -2562,7 +2562,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -2623,14 +2623,14 @@ Keyword_canada_phin または Keyword_canada_provinces から少なくとも2つ
    
 ## <a name="canada-social-insurance-number"></a>カナダの社会保険番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の数字と省略可能なハイフンまたはスペース
 
 ### <a name="pattern"></a>パターン
 
 さ
-- 3 桁の数字  
+- 3 桁の数字 
 - ハイフンまたはスペース 
 - 3 桁の数字 
 - ハイフンまたはスペース 
@@ -2638,7 +2638,7 @@ Keyword_canada_phin または Keyword_canada_provinces から少なくとも2つ
 
 書式なし: 9 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -2706,7 +2706,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="chile-identity-card-number"></a>チリ id カード番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7-8 桁の数字と区切り文字のチェックディジットまたは文字
 
@@ -2715,13 +2715,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 7 ～ 8 桁の数字と区切り文字:
 - 1 ～ 2 桁の数字  
 - ピリオド 1 つ  
-- 3 桁の数字 
+- 3 桁の数字  
 - ピリオド 1 つ  
-- 3 桁の数字 
+- 3 桁の数字  
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 1 桁の数字または文字 (大文字小文字の区別なし)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -2768,7 +2768,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="china-resident-identity-card-prc-number"></a>中国の居住アイデンティティカード (PRC) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 18 桁の数字
 
@@ -2780,7 +2780,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 順序コードを表す 3 桁の数字  
 - チェック ディジットとして機能する 1 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -2823,9 +2823,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 居民 身份證
 - 鑑定 
    
-## <a name="credit-card-number"></a>クレジットカード番号
+## <a name="credit-card-number"></a>クレジット カード番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 書式設定または書式設定なし (dddddddddddddddd) で、Luhn テストに合格する必要がある14から16桁の数字。
 
@@ -2833,7 +2833,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 世界規模の主要ブランドのカード (Visa、MasterCard、Discover Card、JCB、American Express、ギフト カード、Dinars Club Card など) を検出する非常に複雑で信頼性の高いパターンです。
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 あり (Luhn のチェックサム)
 
@@ -3070,7 +3070,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="croatia-drivers-license-number"></a>クロアチアの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -3078,7 +3078,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -3121,7 +3121,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の数字
 
@@ -3129,7 +3129,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -3186,7 +3186,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="croatia-passport-number"></a>クロアチアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -3194,7 +3194,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  9 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -3226,7 +3226,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="croatia-personal-identification-oib-number"></a>クロアチア個人識別 (OIB) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 桁の数字
 
@@ -3236,7 +3236,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 10 桁の数字 
 - 最終桁は、国際的なデータ交換のためのチェックディジットです。 HR は11桁の数字の前に追加されます。
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -3275,7 +3275,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="croatia-social-security-number-or-equivalent-identification"></a>クロアチアの社会保障番号または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -3286,7 +3286,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 10桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -3336,7 +3336,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="croatia-tax-identification-number"></a>クロアチア税識別番号
 この機密情報の種類エンティティは、EU 納税者番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -3347,7 +3347,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ランダムに選択された10桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -3412,7 +3412,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="cyprus-drivers-license-number"></a>キプロス drivers ライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 12桁の数字 (スペースと区切り記号なし)
   
@@ -3420,7 +3420,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 12 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -3461,7 +3461,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="cyprus-national-identification-number"></a>キプロス国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -3469,9 +3469,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  10桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -3503,7 +3503,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="cyprus-passport-number"></a>キプロスパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1文字の後に、スペースまたは区切り記号を含まない6-8 桁の数字
   
@@ -3511,7 +3511,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1文字の後に6桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -3544,7 +3544,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="cyprus-tax-identification-number"></a>キプロス税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの8桁の数字と1文字
   
@@ -3556,9 +3556,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7 桁の数字 
 - 1文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -3619,7 +3619,7 @@ Pattern confidenceLevel="75">
 ## <a name="czech-drivers-license-number"></a>チェコドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字の後に6桁の数字
   
@@ -3631,7 +3631,7 @@ Pattern confidenceLevel="75">
 - スペース 1 つ (省略可能) 
 - 6 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -3675,7 +3675,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="czech-passport-number"></a>チェコのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない8桁の数字
   
@@ -3683,7 +3683,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 スペースまたは区切り文字を含まない8桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -3717,16 +3717,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="czech-personal-identity-number"></a>チェコの個人 id 番号
 この機密情報の種類エンティティは、EU 国立 id 番号バンドルに含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
-省略可能なスラッシュ (古い形式) を含む9桁の数字 (省略可能)。スラッシュ (新しい形式)
+省略可能なスラッシュ (旧形式) を含む 9 桁の数字 省略可能なスラッシュ (新形式) を含む 10 桁の数字
 
 ### <a name="pattern"></a>パターン
 
 9桁の数字 (古い形式):
 - 9 桁の数字
 
-または
+OR
 
 - 生年月日を表す6桁の数字
 - スラッシュ 1 つ 
@@ -3735,13 +3735,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 10桁の数字 (新しい形式):
 - 10 桁の数字
 
-または
+OR
 
 - 生年月日を表す6桁の数字
 - スラッシュ 1 つ  
 - 4桁の数字 (最後の桁はチェックディジット)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -3770,7 +3770,7 @@ Keyword_czech_id_card からのキーワードが見つかりました。
 ## <a name="czech-social-security-number-or-equivalent-identification"></a>チェコ語のソーシャルセキュリティ番号または同等の識別情報
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの10桁の数字と円記号
   
@@ -3786,7 +3786,7 @@ Keyword_czech_id_card からのキーワードが見つかりました。
     
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -3835,7 +3835,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="czech-tax-identification-number"></a>チェコの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9桁または10桁の数字 (省略可能な円記号付き)
   
@@ -3847,9 +3847,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 円記号 (省略可能)
 - 3桁または4桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -3913,7 +3913,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="denmark-drivers-license-number"></a>デンマークの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -3921,7 +3921,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -3965,7 +3965,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="denmark-passport-number"></a>デンマークのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -3973,7 +3973,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  9 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -4007,7 +4007,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="denmark-personal-identification-number"></a>デンマークの個人識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 ハイフンを 1 つ含む 10 桁の数字
 
@@ -4018,7 +4018,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - 4 桁の数字 (最後の桁はチェック ディジット)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -4097,7 +4097,7 @@ Keyword_denmark_id からのキーワードが見つかりました。
 ## <a name="denmark-social-security-number-or-equivalent-identification"></a>デンマークの社会保障番号または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類のみを使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの10桁の数字とハイフン
   
@@ -4109,7 +4109,7 @@ Keyword_denmark_id からのキーワードが見つかりました。
 - ハイフン 1 つ 
 - シーケンス番号に対応する4桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -4156,7 +4156,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="denmark-tax-identification-number"></a>デンマークの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10桁の数字 (ハイフンを含む)
   
@@ -4168,7 +4168,7 @@ Hyphenl を含む10桁の数字:
 - ハイフン 1 つ 
 - 1桁目が誕生日の世紀に対応し、最後の桁は個人の性別に対応する4桁の数字 (男性の場合は奇数、女性の場合もあります)。
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -4255,7 +4255,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="drug-enforcement-agency-dea-number"></a>医薬品執行機関 (DEA) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2 桁の文字の後に 7 桁の数字
 
@@ -4266,7 +4266,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1 文字 (大文字小文字を区別しない)。登録者の姓の最初の文字 
 - 7 桁の数字。最後の桁はチェック ディジット用です
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -4292,7 +4292,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="estonia-drivers-license-number"></a>エストニアの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字の後に6桁の数字
   
@@ -4303,7 +4303,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 -  文字 "ET" (大文字と小文字を区別しない) 
 - 6 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -4345,7 +4345,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="estonia-national-identification-number"></a>エストニア国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -4359,7 +4359,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 同じ日付に出生地を分けるシリアル番号に対応する3桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -4426,7 +4426,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="estonia-passport-number"></a>エストニアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1文字の後に7桁の数字 (スペースまたは区切り記号なし)
   
@@ -4434,7 +4434,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1文字の後に7桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -4467,7 +4467,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="estonia-tax-identification-number"></a>エストニア税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -4481,7 +4481,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 同じ日付に出生地を分けるシリアル番号に対応する3桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -4545,9 +4545,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - tin no
 - は#
 
-## <a name="eu-debit-card-number"></a>EU のデビットカード番号
+## <a name="eu-debit-card-number"></a>EU のデビット カード番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 16 桁の数字
 
@@ -4555,7 +4555,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 非常に複雑で信頼性の高いパターン
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -5045,7 +5045,7 @@ hese エンティティは、EU 税務識別番号の機密情報の種類に含
 ## <a name="finland-drivers-license-number"></a>フィンランドの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 ハイフンを 1 つ含む 10 桁の数字
   
@@ -5057,7 +5057,7 @@ hese エンティティは、EU 税務識別番号の機密情報の種類に含
 - ハイフン 1 つ
 -  4 桁の数字 
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -5100,7 +5100,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="finland-national-identification-number"></a>フィンランドの米国の識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 6 桁の数字、世紀を表す 1 桁の文字、3 桁の数字、1 桁のチェック ディジット
 
@@ -5112,7 +5112,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 3 桁の個人識別番号 
 - チェック ディジットとして機能する 1 桁の数字または文字 (大文字小文字の区別あり)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -5189,13 +5189,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="finland-passport-number"></a>フィンランドのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類で利用でき、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 9 桁の文字と数字の組み合わせ
 
 ### <a name="pattern"></a>パターン
 9桁の文字と数字の組み合わせ: 2 文字 (大文字小文字を区別しない) 7 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 いいえ
 
 ### <a name="definition"></a>定義
@@ -5220,7 +5220,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="finland-social-security-number-or-equivalent-identification"></a>フィンランドの社会保障番号または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定した書式の11文字の組み合わせ
   
@@ -5236,7 +5236,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 3 桁の数字
 - 1文字または1桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -5293,7 +5293,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="finland-tax-identification-number"></a>フィンランドの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 数字、文字、プラス記号とマイナス記号の11文字の組み合わせ
   
@@ -5306,7 +5306,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 3 桁の数字
 - 1つの文字または1つの番号
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -5394,7 +5394,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="france-drivers-license-number"></a>フランスの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類で利用でき、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 12 桁の数字
 
@@ -5402,7 +5402,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 フランスの電話番号などの同様のパターンと区別するための検証付きの 12 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -5444,7 +5444,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="france-national-identification-card-cni"></a>フランスの国民識別カード (CNI)
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 12 桁の数字
 
@@ -5452,7 +5452,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 12 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -5489,7 +5489,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="france-passport-number"></a>フランスのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類で利用でき、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の数字と文字
 
@@ -5500,7 +5500,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 つの文字 (大文字小文字を区別しない) 
 - 5 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -5547,7 +5547,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="france-social-security-number-insee-or-equivalent-identification"></a>フランスの社会保障番号 (INSEE) または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号および同等の ID 機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 15 桁の数字
 
@@ -5558,7 +5558,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 または
 - 15 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -5623,7 +5623,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="france-tax-identification-number"></a>フランスの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 各ユーザーの13桁の数字、およびエンティティの9桁の数字
   
@@ -5636,9 +5636,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 エンティティの9桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -5690,7 +5690,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="germany-drivers-license-number"></a>ドイツの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 桁の数字と文字の組み合わせ
 
@@ -5703,7 +5703,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1 桁の数字 
 - 1 つの数字または文字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -5834,7 +5834,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 - この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類に含まれています。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2010年11月1日以降: 9 桁の文字と数字
 
@@ -5849,7 +5849,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 1987年4月1日から2010年10月31日まで。
 - 10 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -5891,7 +5891,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="germany-passport-number"></a>ドイツのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 桁の数字または文字
 
@@ -5903,7 +5903,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 数字またはこの文字セット (C、H、J から N、P、R、T、V から Z) から 5 個 
 - 1 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -5976,7 +5976,7 @@ bnationalit
 ## <a name="germany-tax-identification-number"></a>ドイツの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -5987,7 +5987,7 @@ bnationalit
 -  10桁の数字 
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -6047,7 +6047,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="greece-drivers-license-number"></a>ギリシャの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -6055,7 +6055,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  9 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -6099,7 +6099,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="greece-national-id-card"></a>ギリシャの国民識別カード
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7 ～ 8 桁の文字と数字の組み合わせとハイフン 1 つ
 
@@ -6115,7 +6115,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - 6 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -6151,7 +6151,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="greece-passport-number"></a>ギリシャのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -6159,7 +6159,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字の後に 7 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -6192,7 +6192,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="greece-tax-identification-number"></a>ギリシャの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -6200,9 +6200,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -6257,7 +6257,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>香港の id カード (HKID) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8 ～ 9 桁の文字と数字の組み合わせ、最後の文字はかっこで囲むことも可能
 
@@ -6268,7 +6268,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6 桁の数字 
 - チェック ディジットとして機能する最後の文字 (任意の数字か文字 A) はかっこで囲むことも可能。
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -6300,6 +6300,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
+- hkid
 - 香港の id カード
 - HKIDC
 - id card
@@ -6340,7 +6341,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="hungary-drivers-license-number"></a>ハンガリードライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字の後に6桁の数字
   
@@ -6351,7 +6352,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2桁の文字 (大文字小文字を区別しない) 
 - 6 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -6392,7 +6393,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="hungary-national-identification-number"></a>ハンガリーの国の識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 桁の数字
   
@@ -6405,7 +6406,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - シリアル番号に対応する3桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -6448,7 +6449,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="hungary-passport-number"></a>ハンガリーのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字の後に、スペースや区切り文字を含まない6桁または7桁の数字
   
@@ -6456,7 +6457,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2つの文字の後に6桁または7桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -6488,7 +6489,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="hungary-social-security-number-or-equivalent-identification"></a>ハンガリーの社会保障番号または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -6496,7 +6497,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -6550,7 +6551,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="hungary-tax-identification-number"></a>ハンガリーの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない10桁の数字
   
@@ -6563,7 +6564,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 同じ日に生まれた個人を区別する機会によって生成された番号に対応する3桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -6622,7 +6623,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="india-permanent-account-number-pan"></a>インドの恒久口座番号 (PAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 桁の文字または数字
 
@@ -6633,7 +6634,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 4 桁の数字 
 - チェック ディジットとして機能する 1 桁のアルファベット文字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -6663,7 +6664,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="india-unique-identification-aadhaar-number"></a>インドの一意識別子 (Aadhaar) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 省略可能なスペースまたはハイフンを含む 12 桁の数字
 
@@ -6676,7 +6677,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペースまたはハイフン 1 つ (省略可能)  
 - 最後の数字はチェック ディジット
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -6709,7 +6710,7 @@ DLP ポリシーは75% です。この種類の機密情報は、近接する300
    
 ## <a name="indonesia-identity-card-ktp-number"></a>インドネシアの id カード (KTP) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 省略可能なピリオドを含む 16 桁の数字
 
@@ -6725,7 +6726,7 @@ DLP ポリシーは75% です。この種類の機密情報は、近接する300
 - ピリオド 1 つ (省略可能)  
 - 4 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -6761,7 +6762,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="international-banking-account-number-iban"></a>国際銀行口座番号 (IBAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 国コード (2 文字)、チェックディジット (2 桁)、および番号を bban 最大30文字)
 
@@ -6778,7 +6779,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、ee、es、fi、fo、fr、gb、ge、gi、gl、gr、hr、hu、ie、[il]、[it]、[]、[(it)]、[(kz)]、[、li、lt、lu、lv、mc]、[]、[いいえ]、[mr]、[]、[]、[、]
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -6805,15 +6806,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Diseases の国際分類 (ICD-10-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 Dictionary
 
 ### <a name="pattern"></a>パターン
 
-キーワード
+Keyword
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -6847,15 +6848,15 @@ Dictionary_icd_10_codes キーワードディクショナリからの任意の�
 
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Diseases の国際分類 (ICD-9-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 Dictionary
 
 ### <a name="pattern"></a>パターン
 
-キーワード
+Keyword
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -6888,7 +6889,7 @@ Dictionary_icd_9_codes キーワードディクショナリの任意の用語。
 
 ## <a name="ip-address"></a>IP アドレス
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 #### <a name="ipv4"></a>IPv4
 書式設定あり (ピリオド付き) または書式設定なし (ピリオドなし) のIPv4 アドレスを表す複雑なパターン
@@ -6898,7 +6899,7 @@ Dictionary_icd_9_codes キーワードディクショナリの任意の用語。
 
 ### <a name="pattern"></a>パターン
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -6953,7 +6954,7 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
 ## <a name="ireland-drivers-license-number"></a>アイルランドの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 6桁の数字の後に4文字
   
@@ -6964,7 +6965,7 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
 - 6 桁の数字
 - 4桁の文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -7006,7 +7007,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="ireland-national-identification-number"></a>アイルランドの国の識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類にのみ含まれています。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの文字、数字、スペースの9文字の組み合わせ
   
@@ -7026,7 +7027,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1つのチェックディジット
 - 1つのスペースまたは大文字 (大文字と小文字を区別)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -7088,7 +7089,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="ireland-passport-number"></a>アイルランドのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字または数字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -7099,7 +7100,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 つの数字または文字 (大文字小文字を区別しない)
 - 7 桁の数字 
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -7134,7 +7135,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="ireland-personal-public-service-pps-number"></a>アイルランドの個人用パブリックサービス (PPS) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 古い形式 (2012 年12月31日まで):
 - 7 桁の数字の後に 1 ～ 2 桁の文字  
@@ -7153,7 +7154,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - チェック ディジットとして機能する 1 桁のアルファベット文字 (大文字小文字の区別なし)  
 - 文字「A」または「H」 (大文字小文字の区別なし)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -7206,7 +7207,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="ireland-tax-identification-number"></a>アイルランドの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7桁の数字の後にスペースまたは区切り文字を含まない文字
   
@@ -7217,9 +7218,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7 桁の数字  
 - 1文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -7279,7 +7280,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="israel-bank-account-number"></a>イスラエルの銀行口座番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 13 桁の数字
 
@@ -7295,7 +7296,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 なし
 - 	13 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -7328,7 +7329,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="israel-national-identification-number"></a>イスラエルの国民識別番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の数字
 
@@ -7336,7 +7337,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -7369,7 +7370,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="italy-drivers-license-number"></a>イタリアの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 桁の文字と数字の組み合わせ
 
@@ -7381,7 +7382,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7 つの文字 (大文字小文字を区別しない)、数字、またはアンダースコア文字 
 - 1 文字 (大文字小文字を区別しない)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -7413,7 +7414,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="italy-national-identification-number"></a>イタリアの米国の識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの文字と数字の16文字の組み合わせ
   
@@ -7429,7 +7430,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 個人が生まれた municipality に固有のエリアコードに対応する4桁の数字 (国全体のコードは外国で使用されます)
 - 1つのパリティ付き数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -7498,7 +7499,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="italy-passport-number"></a>イタリアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字または数字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -7509,9 +7510,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 つの数字または文字 (大文字小文字を区別しない)
 - 7 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -7547,7 +7548,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="italy-tax-identification-number"></a>イタリアの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの16桁の文字と数字
   
@@ -7563,7 +7564,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 個人が生まれた municipality に固有のエリアコードに対応する4桁の数字。国全体のコードが外国の国に使用されます。
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -7632,7 +7633,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="japan-bank-account-number"></a>日本の銀行口座番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7 桁または 8 桁の数字
 
@@ -7645,7 +7646,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペースまたはダッシュ (省略可能) 
 - 3 桁の数字
 
-Checksum
+チェックサム
 
 いいえ
 
@@ -7747,7 +7748,7 @@ Otemachi
 
 ## <a name="japan-drivers-license-number"></a>日本の運転免許証番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 12 桁の数字
 
@@ -7755,7 +7756,7 @@ Otemachi
 
 12 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -7807,7 +7808,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="japan-passport-number"></a>日本のパスポート番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2 桁の文字の後に 7 桁の数字
 
@@ -7815,7 +7816,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字 (大文字小文字の区別なし) の後に 7 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -7846,7 +7847,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="japan-residence-card-number"></a>居住地のカード番号 (日本)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 12桁の文字と数字
 
@@ -7857,7 +7858,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 8 桁の数字 
 - 2 桁の文字 (大文字小文字の区別なし) 
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -7888,7 +7889,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="japan-resident-registration-number"></a>日本の居住登録番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 桁の数字
 
@@ -7896,7 +7897,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -7935,7 +7936,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="japan-social-insurance-number-sin"></a>日本の社会保険番号 (SIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7～ 12 桁の数字
 
@@ -7947,7 +7948,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6桁の数字または
 - 7 ～ 12 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -7988,7 +7989,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="latvia-drivers-license-number"></a>ラトビアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 3つの文字の後に6桁の数字
   
@@ -7999,7 +8000,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 -  3桁の文字 (大文字小文字を区別しない) 
 - 6 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -8041,7 +8042,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="latvia-national-identification-number"></a>ラトビア国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11桁の数字と、指定された形式のハイフン
   
@@ -8054,7 +8055,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 誕生日の世紀に対応する1桁の数字 (「0」、20世紀の場合は「1」、21世紀の場合は「2」)
 - ランダムに生成される4桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -8156,7 +8157,7 @@ registration number
 ## <a name="latvia-passport-number"></a>ラトビアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字または数字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -8167,7 +8168,7 @@ registration number
 - 2 つの数字または文字 (大文字小文字を区別しない)
 - 7 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -8200,7 +8201,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="latvia-tax-identification-number"></a>ラトビアの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -8212,7 +8213,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - "0" が19世紀に対応する1桁の数字、"1" は20世紀に、"2" は21世紀に対応します。
 - 4 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -8314,7 +8315,7 @@ registration number
 ## <a name="lithuania-drivers-license-number"></a>リトアニア運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない8桁の数字
   
@@ -8322,7 +8323,7 @@ registration number
 
  8 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -8364,7 +8365,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="lithuania-national-identification-number"></a>リトアニア国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -8377,7 +8378,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 誕生日のシリアル番号に対応する3桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -8446,7 +8447,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="lithuania-passport-number"></a>リトアニアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8桁の数字または文字、スペースまたは区切り記号なし
   
@@ -8454,9 +8455,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8桁の数字または文字 (大文字小文字を区別しない)
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -8484,7 +8485,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="lithuania-tax-identification-number"></a>リトアニア税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11桁の数字 (スペースまたは区切り文字なし)
   
@@ -8492,9 +8493,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -8560,7 +8561,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="luxemburg-drivers-license-number"></a>ルクセンブルグドライバーのライセンス番号
 この機密情報の種類エンティティは、EU 運転者のライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない6桁の数字
   
@@ -8568,7 +8569,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  6 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -8610,7 +8611,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="luxemburg-national-identification-number"></a>ルクセンブルク国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない11桁の数字
   
@@ -8623,9 +8624,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 誕生日のシリアル番号に対応する3桁の数字
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -8671,7 +8672,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="luxemburg-passport-number"></a>ルクセンブルグパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8桁の数字または文字、スペースまたは区切り記号なし
   
@@ -8679,7 +8680,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8桁の数字または文字 (大文字小文字を区別しない)
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -8709,7 +8710,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="luxemburg-tax-identification-number"></a>ルクセンブルク税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 13桁の数字、スペースまたは区切り記号なし
   
@@ -8720,7 +8721,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 11 桁の数字 
 - 2 桁のチェック ディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -8794,7 +8795,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="malaysia-identification-card-number"></a>マレーシアの識別カード番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 省略可能なハイフンを含む 12 桁の数字
 
@@ -8808,7 +8809,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 3 桁のランダムな数字  
 - 1 桁の性別コード
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -8861,7 +8862,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="malta-drivers-license-number"></a>マルタ運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの2つの文字と6桁の数字の組み合わせ
   
@@ -8875,7 +8876,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペース 1 つ (省略可能) 
 - 3 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -8917,7 +8918,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="malta-national-identification-number"></a>マルタ国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7桁の数字の後に1文字
   
@@ -8928,9 +8929,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 -  7 桁の数字  
 - 1つの大文字 (大文字と小文字を区別)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -8979,7 +8980,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="malta-passport-number"></a>マルタのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない7桁の数字
   
@@ -8987,7 +8988,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
  7 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -9020,7 +9021,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="malta-tax-identification-number"></a>マルタ税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 マルタ nationals の場合: 7 桁の数字と、指定したパターンの1文字
   
@@ -9037,9 +9038,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 -  9 桁の数字 
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -9103,7 +9104,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="netherlands-citizens-service-bsn-number"></a>オランダの市民サービス (BSN) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 省略可能なハイフンを含む 8 ～ 9 桁の数字
 
@@ -9116,7 +9117,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペース 1 つ (省略可能)  
 - 2 ～ 3 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -9168,7 +9169,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="netherlands-drivers-license-number"></a>オランダドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない10桁の数字
   
@@ -9176,7 +9177,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 10 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -9220,7 +9221,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="netherlands-national-identification-number"></a>オランダの国の識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない9桁の数字
   
@@ -9228,7 +9229,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -9285,7 +9286,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="netherlands-passport-number"></a>オランダのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9文字または数字 (スペースまたは区切り記号なし)
   
@@ -9293,9 +9294,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9桁の文字または数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -9329,7 +9330,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="netherlands-tax-identification-number"></a>オランダの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない9桁の数字
   
@@ -9337,7 +9338,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -9408,7 +9409,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="new-zealand-ministry-of-health-number"></a>ニュージーランドの衛生官庁番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 3 桁の文字、スペース 1 つ (省略可能)、4 桁の数字
 
@@ -9416,7 +9417,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 3文字 (大文字小文字を区別しない) スペース (省略可能)、4桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -9450,7 +9451,7 @@ Keyword_nz_terms
    
 ## <a name="norway-identification-number"></a>ノルウェーの識別番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 桁の数字
 
@@ -9461,7 +9462,7 @@ Keyword_nz_terms
 - 3 桁の個人番号  
 - 2 桁のチェック ディジット
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -9502,7 +9503,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="philippines-unified-multi-purpose-identification-number"></a>フィリピン統合多重目的識別番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 ハイフンで区切られた 12 桁の数字
 
@@ -9515,7 +9516,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ  
 - 1 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -9547,7 +9548,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="poland-drivers-license-number"></a>ポーランドの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つのスラッシュを含む14桁の数字
   
@@ -9561,7 +9562,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スラッシュ 1 つ 
 - 7 桁の数字 
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -9602,7 +9603,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="poland-identity-card"></a>ポーランドの id カード
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 3 桁の文字と 6 桁の数字
 
@@ -9610,7 +9611,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 3 桁の文字 (大文字小文字の区別なし) の後に 6 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -9646,7 +9647,7 @@ Keyword_polish_national_id_passport_number のキーワードを検出した。
 ## <a name="poland-national-id-pesel"></a>ポーランドの国民 ID (PESEL)
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 桁の数字
 
@@ -9654,7 +9655,7 @@ Keyword_polish_national_id_passport_number のキーワードを検出した。
 
 11 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -9693,7 +9694,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="poland-passport-number"></a>ポーランドのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2 桁の文字と 7 桁の数字
 
@@ -9701,7 +9702,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字 (大文字小文字の区別なし) の後に 7 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -9734,7 +9735,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="poland-tax-identification-number"></a>ポーランドの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない11桁の数字
   
@@ -9742,7 +9743,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -9809,7 +9810,7 @@ nip#
 - この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類に含まれています。
 
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8 桁の数字
 
@@ -9817,7 +9818,7 @@ nip#
 
 8 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -9864,7 +9865,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="portugal-drivers-license-number"></a>ポルトガルドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの2文字の後に7桁の数字
   
@@ -9878,7 +9879,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペース
 - 1 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -9920,7 +9921,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="portugal-passport-number"></a>ポルトガルのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1文字の後に6桁の数字 (スペースまたは区切り記号を付けない)
   
@@ -9931,7 +9932,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1 文字 (大文字小文字を区別しない)
 - 6 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -9961,7 +9962,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="portugal-tax-identification-number"></a>ポルトガルの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない9桁の数字
   
@@ -9969,7 +9970,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -10029,7 +10030,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="romania-drivers-license-number"></a>ルーマニアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1文字の後に8桁の数字
   
@@ -10040,7 +10041,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1文字 (大文字小文字を区別しない) または数字 
 - 8 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -10082,7 +10083,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="romania-national-identification-number"></a>ルーマニア国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 13桁の数字 (スペースと区切り文字なし)
   
@@ -10090,7 +10091,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 13 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -10176,7 +10177,7 @@ national id
 ## <a name="romania-passport-number"></a>ルーマニアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を除いた8桁または9桁の数字
   
@@ -10184,7 +10185,7 @@ national id
 
 8桁または9桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -10217,7 +10218,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="romania-tax-identification-number"></a>ルーマニアの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 13桁の数字、スペースまたは区切り記号なし
   
@@ -10225,9 +10226,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 13 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -10305,7 +10306,7 @@ national id
 
 ## <a name="saudi-arabia-national-id"></a>サウジアラビアの国民 ID
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 桁の数字
 
@@ -10313,7 +10314,7 @@ national id
 
 10 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -10347,7 +10348,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>シンガポールの米国登録 id カード (NRIC) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の文字と数字
 
@@ -10358,7 +10359,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7 桁の数字  
 - 1 桁のアルファベットのチェック ディジット
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -10402,7 +10403,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="slovakia-drivers-license-number"></a>スロバキアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1文字の後に7桁の数字
   
@@ -10413,7 +10414,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1文字 (大文字小文字を区別しない) または数字
 -  7 桁の数字 
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -10444,7 +10445,7 @@ drivers license drivers ライセンスドライバーのライセンスドラ�
 ## <a name="slovakia-national-identification-number"></a>スロバキア国立識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1つの円記号を含む10桁の数字
   
@@ -10452,7 +10453,7 @@ drivers license drivers ライセンスドライバーのライセンスドラ�
 
 1つの円記号を含む10桁の数字:
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -10535,7 +10536,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="slovakia-passport-number"></a>スロバキアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1つの数字または文字の後に7桁の数字 (スペースまたは区切り記号なし)
   
@@ -10543,7 +10544,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 1桁の数字または文字 (大文字小文字を区別しない) の後に7桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -10576,7 +10577,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="slovakia-tax-identification-number"></a>スロバキアの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない10桁の数字
   
@@ -10584,9 +10585,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 10 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -10661,7 +10662,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="slovenia-drivers-license-number"></a>スロベニアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースと区切り文字を含まない9桁の数字
   
@@ -10669,7 +10670,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -10711,7 +10712,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="slovenia-national-identification-number"></a>スロベニアの国の識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 13桁の数字、スペースまたは区切り記号なし
   
@@ -10724,7 +10725,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 同じ日に生まれた人物の性別とシリアル番号の組み合わせに対応する3つの数字 (女性の場合は男性と500-999 は 000-499)
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -10787,7 +10788,7 @@ national id
 ## <a name="slovenia-passport-number"></a>スロベニアのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2つの文字の後に、スペースや区切り文字を含まない7桁の数字
   
@@ -10799,7 +10800,7 @@ national id
 - 1文字の大文字
 - 7 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -10829,7 +10830,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="slovenia-tax-identification-number"></a>スロベニアの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない8桁の数字
   
@@ -10837,7 +10838,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 桁の数字
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -10896,7 +10897,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="south-africa-identification-number"></a>南アフリカの識別番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 省略可能なスペースを含む 13 桁の数字
 
@@ -10909,7 +10910,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 数字「8」または「9」  
 - チェックサム ディジットとして機能する 1 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -10940,7 +10941,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="south-korea-resident-registration-number"></a>南韓国の常駐登録番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 ハイフンを 1 つ含む 13 桁の数字
 
@@ -10954,7 +10955,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 先頭の番号が同一である人々を区別するための 1 桁の数字  
 - 1 桁のチェック ディジット
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -10995,7 +10996,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="spain-drivers-license-number"></a>スペインの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8桁の数字の後に1つの文字
   
@@ -11006,7 +11007,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 8 桁の数字 
 - 1桁の数字または文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -11069,7 +11070,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="spain-national-identification-number"></a>スペインの米国の識別番号
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7桁の数字の後に1文字
   
@@ -11080,9 +11081,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 7 桁の数字 
 - 1桁の数字または文字 (大文字小文字を区別しない)
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -11131,7 +11132,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="spain-passport-number"></a>スペインのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたは区切り記号を含まない、文字と数字の8文字または9文字の組み合わせ
   
@@ -11143,9 +11144,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 1桁の数字または文字 (省略可能)
 - 6 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
@@ -11182,7 +11183,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="spain-social-security-number-ssn"></a>スペインの社会保障番号 (SSN)
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID 機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 ～ 12 桁の数字
 
@@ -11195,7 +11196,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スラッシュ (省略可能) 
 - 2 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -11221,7 +11222,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="spain-tax-identification-number"></a>スペインの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 7桁または8桁の数字と、指定したパターンの1文字または2文字
   
@@ -11256,7 +11257,7 @@ Foreigner の識別番号のない Foreigners
 - 7 桁の数字 
 - 1つの大文字 (大文字と小文字を区別) 
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -11321,7 +11322,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="sql-server-connection-string"></a>SQL Server の接続文字列
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 文字列 "User Id"、"User ID"、"uid"、または "UserId" の後に、次のパターンで概説されている文字と文字列が続きます。
 
@@ -11335,7 +11336,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - セミコロンではない7-128 文字の任意の組み合わせ (;)、スラッシュ (/)、または引用符 (")
 - セミコロン (;)または二重引用符 (")
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -11398,7 +11399,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="sweden-drivers-license-number"></a>スウェーデンの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10桁の数字 (ハイフンを含む)
   
@@ -11410,7 +11411,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン 1 つ
 - 4 桁の数字
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
   
@@ -11452,7 +11453,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="sweden-national-id"></a>スウェーデンの国民 ID
 この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 桁または 12 桁の数字とオプションの区切り記号 1 つ
 
@@ -11464,7 +11465,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 区切り文字「-」または「+」(省略可能)、および
 - 4 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -11490,7 +11491,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8 桁の数字
 
@@ -11498,7 +11499,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -11561,7 +11562,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="sweden-social-security-number-or-equivalent-identification"></a>スウェーデンの社会保障番号または同等の id
 この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 12桁の数字 (スペースと区切り記号なし)
   
@@ -11575,7 +11576,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   - 1990までの間、シリアル番号の corresponded を郡に割り当てます。これは、年1月 1947 1 日に税務レコードに従って、(通常は7番目の数字) を指定することによって、番号のベアラーが入社したか (1947 以前に作成された場合)、immigrants のための特別なコードになります。 
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -11624,7 +11625,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="sweden-tax-identification-number"></a>スウェーデンの税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定したパターンの10桁の数字と記号
   
@@ -11639,7 +11640,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   - 9桁の数字は、男性に対して、または女性に対して、性別を示します。
 - 1つのチェックディジット
     
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -11700,7 +11701,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="swift-code"></a>SWIFT コード
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 4 桁の文字の後に 5 ～ 31 桁の文字または数字
 
@@ -11713,7 +11714,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 省略可能なスペース 
 - 1 ～ 3 個の文字または数字 (BBAN の残りの部分)
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -11770,18 +11771,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="taiwan-national-identification-number"></a>台湾国立識別番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 1 桁の文字 (アルファベット) の後に 9 桁の数字
 
 ### <a name="pattern"></a>パターン
 
 1 文字 の後に 9 桁の数字:
-- 1 文字 (英語、大文字小文字を区別しません) 
-- 数字の「1」または「2」 
+- 1 桁の文字 (アルファベット、大文字小文字の区別なし) 
+- 数字「1」または「2」 
 - 8 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -11823,7 +11824,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="taiwan-passport-number"></a>台湾のパスポート番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 - バイオメトリックパスポート番号: 9 桁の数字
 - バイオメトリクスでないパスポート番号: 9 桁の数字
@@ -11836,7 +11837,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 バイオメトリクスではないパスポート番号:
 - 9 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -11871,7 +11872,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>台湾の常駐証明書 (ARC/TARC) 番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 10 桁の文字と数字
 
@@ -11881,7 +11882,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 桁の文字 (大文字小文字の区別なし)  
 - 8 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -11919,7 +11920,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="thai-population-identification-code"></a>タイ語の母集団識別コード
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 13 桁の数字
 
@@ -11929,7 +11930,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 最初の桁が0または9ではない 
 - 12 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -11959,7 +11960,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_thai_citizen_id"></a>Keyword_Thai_Citizen_Id
 
-- ID Number
+- ID 番号
 - 識別番号
 - บัตรประชาชน
 - รหัสบัตรประชาชน
@@ -11968,7 +11969,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ## <a name="turkish-national-identification-number"></a>トルコの国の識別番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 11 桁の数字
 
@@ -11976,7 +11977,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -12014,7 +12015,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="uk-drivers-license-number"></a>U.K. 運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 指定の形式で組み合わせた 18 桁の文字と数字
 
@@ -12027,7 +12028,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2 文字 (大文字小文字を区別しない) または数字「9」(1 文字の代わり) 
 - 5 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -12070,7 +12071,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="uk-electoral-roll-number"></a>U.K. electoral ロール番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 2 桁の文字の後に 1 ～ 4 桁の数字
 
@@ -12078,7 +12079,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 2 桁の文字 (大文字小文字の区別なし) の後に 1 ～ 4 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -12112,7 +12113,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 ## <a name="uk-national-health-service-number"></a>U.K. 米国の医療サービス番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースで区切られた 10 ～ 17 桁の数字
 
@@ -12125,7 +12126,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペース 
 - 4 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
 
@@ -12180,7 +12181,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="uk-national-insurance-number-nino"></a>U.K. 国家保険番号 (NINO)
 この機密情報の種類エンティティは、EU 国立識別子の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 スペースまたはダッシュで区切られた7文字または9文字
 
@@ -12192,7 +12193,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6 桁の数字
 - 「A」、「B」、「C」、または「d」 (プレフィックスと同様に、サフィックスには特定の文字のみ指定できます。大文字と小文字は区別されません)
 
-または
+OR
 
 - 2文字
 - スペースまたはダッシュ
@@ -12204,7 +12205,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スペースまたはダッシュ
 - ' A '、' B '、' C '、または ' d ' のどちらか
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -12264,7 +12265,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 Unique 納税リファレンス (UTR): スペースと区切り文字を含まない10桁の数字
  
@@ -12274,7 +12275,7 @@ Unique 納税リファレンス (UTR): スペースと区切り文字を含ま�
 Unique 納税リファレンス (UTR):10 桁の数字
 
   
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 はい
   
@@ -12321,7 +12322,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="us-bank-account-number"></a>米国の銀行口座番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 8 ～ 17 桁の数字
 
@@ -12329,7 +12330,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8 ～ 17 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -12383,7 +12384,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="us-drivers-license-number"></a>米国の運転免許証番号
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 州に応じて異なる
 
@@ -12393,7 +12394,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Ddd ddd ddd のような形式の9桁の数字は一致します。
 - Ddddddddd のように9桁の数字は一致しません。
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -12535,7 +12536,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>米国の個人納税者識別番号 (ITIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 「9」で始まる 9 桁の数字、4 桁目は「7」または「8」、スペースまたはスラッシュによる書式設定は省略可能
 
@@ -12556,7 +12557,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 「7」または「8」 
 - 5 桁の数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -12628,7 +12629,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="us-social-security-number-ssn"></a>米国の社会保障番号 (SSN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 書式設定ありまたは書式設定なしの 9 桁の数字
 
@@ -12643,7 +12644,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Func_randomized_formatted_ssn は、2011 年以降の SSN を検索します。これはダッシュまたはスペース (ddd-dd-dddd または ddd dd dddd) の形式になっています。
 - Func_randomized_unformatted_ssn は、2011 年以降の SSN を検索します。これは 9 桁の連続した数字 (ddddddddd) の形式になっています。
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
@@ -12705,7 +12706,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ## <a name="us--uk-passport-number"></a>米国/英国 passport number
 英国 パスポート番号機密情報の種類エンティティは、EU のパスポート番号機密情報の種類で利用でき、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
-### <a name="format"></a>Format
+### <a name="format"></a>フォーマット
 
 9 桁の数字
 
@@ -12713,7 +12714,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9 桁の連続する数字
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>チェックサム
 
 いいえ
 
