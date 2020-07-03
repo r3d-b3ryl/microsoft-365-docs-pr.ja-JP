@@ -36,12 +36,14 @@
       href: subscriptions/manage-self-service-purchases-admins.md
 - name: ライセンスを管理する
   items:
-    - name: サブスクリプション ライセンスを管理する
+    - name: サブスクリプション ライセンスを購入または削除する
       href: licenses/buy-licenses.md
     - name: ユーザーにライセンスを割り当てる
       href: ../admin/manage/assign-licenses-to-users.md
     - name: ユーザーからライセンスの割り当てを解除する
       href: ../admin/manage/remove-licenses-from-users.md
+    - name: ユーザーを別のサブスクリプションに移動する
+      href: subscriptions/move-users-different-subscription.md
     - name: サブスクリプションとライセンスを理解する
       href: licenses/subscriptions-and-licenses.md
 - name: 請求と支払い

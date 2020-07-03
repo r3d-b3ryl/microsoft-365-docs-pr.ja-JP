@@ -217,9 +217,9 @@
               href: mtp/feedback.md
             - name: ServiceNow を介してチケットを管理する
               href: ./mtp/tickets.md
-    - name: Office 365 Advanced Threat Protection
+    - name: Office 365 セキュリティ
       items:
-        - name: 作業の開始
+        - name: 概要
           items:
             - name: セキュリティのロードマップ
               href: ./office-365-security/security-roadmap.md
@@ -366,10 +366,10 @@
               href: ./office-365-security/security-dashboard.md
             - name: 悪意のあるファイルの情報を表示する
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Advanced Threat Protection
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
-            - name: 新着情報
+            - name: 新着情報を見る
               items:
                 - name: Office 365 ATP の新機能
                   href: office-365-security/whats-new-in-office-365-atp.md
