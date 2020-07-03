@@ -809,26 +809,26 @@
   items:
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: コンプライアンス スコアとコンプライアンス マネージャー
+    - name: コンプライアンス スコアおよびコンプライアンス マネージャー (プレビュー)
       items:
         - name: コンプライアンス スコア (プレビュー)
           href: compliance-score.md
-        - name: コンプライアンス スコアを設定する (プレビュー)
+        - name: コンプライアンス スコアを設定する
           href: compliance-score-setup.md
-        - name: コンプライアンス スコアを使用する (プレビュー)
-          href: working-with-compliance-score.md
-        - name: コンプライアンス スコアの計算 (プレビュー)
+        - name: 評価を使用してコンプライアンス スコアをカスタマイズする
+          href: compliance-score-assessments.md
+        - name: 改善アクションを割り当てて作業を実行する
+          href: compliance-score-improvement-actions.md
+        - name: スコアの計算方法
           href: compliance-score-methodology.md
-        - name: コンプライアンス スコアのリリース ノート (プレビュー)
-          href: compliance-score-release-notes.md
-        - name: コンプライアンス スコアに関する FAQ (プレビュー)
+        - name: よく寄せられる質問 (FAQ)
           href: compliance-score-faq.md
         - name: コンプライアンス マネージャー (プレビュー)
           href: compliance-manager-overview.md
           items:
-            - name: コンプライアンス マネージャー (プレビュー) の新機能
+            - name: コンプライアンス マネージャーの新機能 (プレビュー)
               href: compliance-manager-release-notes.md
-            - name: コンプライアンス マネージャー (プレビュー) と共同作業する
+            - name: コンプライアンス マネージャーと共同作業する (プレビュー)
               href: working-with-compliance-manager.md
             - name: コンプライアンス マネージャー (クラシック)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
