@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818987"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035662"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -335,7 +335,7 @@ The results of an audit log search are displayed under **Results** on the **Audi
 |削除されたレコードのコンプライアンス ポリシー ラベル|ComplianceRecordDelete|レコードとして分類されたドキュメントが削除されました。 ドキュメントがレコードとしてみなされるのは、ドキュメントをレコードとして分類する保持ラベルがドキュメントに適用されている場合です。|
 |検出されたドキュメントの秘密度の不一致|DocumentSensitivityMismatchDetected|ユーザーが、機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも優先度が高くなっています。 たとえば、「社外秘」というラベルの付いたドキュメントが、「一般」というラベルの付いたサイトにアップロードされている場合です。 <br/><br/> ドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも優先度が低い場合、このイベントは発生しません。 たとえば、「一般」というラベルの付いたドキュメントが、「社外秘」というラベルの付いたサイトにアップロードされている場合です。 機密ラベルの優先度の詳細については、「[ラベルの優先度 (順序の問題)](sensitivity-labels.md#label-priority-order-matters)」を参照してください。|
 |ファイルでのマルウェアの検出|FileMalwareDetected|SharePoint ウイルス対策エンジンにより、ファイル内でマルウェアが検出されました。|
-|ファイル チェックアウトの破棄|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
+|ファイル チェックアウトの破棄|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |ファイルのダウンロード|FileDownloaded|ユーザーがサイトからドキュメントをダウンロードしました。|
 |ファイルの変更|FileModified|ユーザーまたはシステム アカウントがサイトにあるドキュメントのコンテンツまたはプロパティを変更します。|
 |(なし)|FileModifiedExtended|これは、"ファイルの変更" (FileModified) アクティビティに関連しています。 同じユーザーが長時間 (最大 3 時間) にわたって、ファイルの変更を継続的に行うと、FileModifiedExtended イベントがログに記録されます。 <br/><br/> FileModifiedExtended イベントをログに記録する目的は、ファイルの変更が継続的に行われたときにログに記録される FileModified イベントの数を減らすことにあります。 これにより、本質的に同じユーザーのアクティビティであるファイル変更に対する無意味な複数の FileModified レコードを減り、初期 (のより重要な) FileModified イベントに注目できます。|
@@ -592,7 +592,7 @@ The results of an audit log search are displayed under **Results** on the **Audi
 |ユーザーの削除|Delete user|ユーザー アカウントが削除されました。|
 |Reset user password|Reset user password|管理者がユーザーのパスワードを再設定します。|
 |ユーザーへパスワードの変更を強制するプロパティの設定|Set force change user password|管理者が、ユーザーが次に Office 365 にサインインしたときにパスワードを強制的に変更させるプロパティを設定しました。|
-|ライセンス プロパティの設定|Set license properties|管理者が、ユーザーに割り当てられたライセンスのプロパティを変更しました。|
+|Set license properties|Set license properties|管理者が、ユーザーに割り当てられたライセンスのプロパティを変更しました。|
 |ユーザーの更新|ユーザーを更新する|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
 ||||
 
@@ -704,34 +704,7 @@ Workplace Analytics は、グループが組織全体でどのように共同作
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams アクティビティ
 
-次の表には、監査ログに記録された Microsoft Teams のユーザー アクティビティおよび管理者アクティビティの一覧が表示されています。 Microsoft Teams は Office 365 のチャット中心のワークスペースです。 これにより、チームの会話、会議、ファイル、およびノートが 1 つの場所に集められます。 詳細およびヘルプ トピックへのリンクについては、以下を参照してください。
-
-- [Microsoft Teams についてよく寄せられる質問 - 管理者向けヘルプ](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Microsoft Teams ヘルプ センター](https://support.office.com/teams)
-
-|**フレンドリ名**|**操作名**|**説明**|
-|:-----|:-----|:-----|
-|チームへのボットの追加|BotAddedToTeam|ユーザーがチームにボットを追加しました。|
-|チャネルの追加|ChannelAdded|ユーザーがチームにチャネルを追加しました。|
-|コネクタの追加|ConnectorAdded|ユーザーがチャネルにコネクタを追加しました。|
-|追加されたメンバー|MemberAdded|チームの所有者が、チーム、チャネル、またはグループ チャットにメンバーを追加しました。|
-|タブの追加|TabAdded|ユーザーがチャネルにタブを追加しました。|
-|チャネルの設定の変更|ChannelSettingChanged|次のアクティビティがチーム メンバーにより実行されると、ChannelSettingChanged 操作が記録されます。 これらの各アクティビティについては、変更された設定 (以下のかっこ内) の説明が、監査ログの検索結果の [**項目**] 列に表示されます。 <br/><br/>• チーム チャネルの名前が変更されます (**チャネル名**)。 <br/><br/>• チーム チャネルの説明が変更されます (**チャネルの説明**)。|
-|組織の設定の変更|TeamsTenantSettingChanged|TeamsTenantSettingChanged は、全体管理者が Microsoft 365 管理センターを使用して次のアクティビティを実行したときに記録されます。これらのアクティビティは組織全体の Microsoft Teams の設定に影響を及ぼすことに注意してください。 詳細については、「[Microsoft Teams の管理者設定](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)」を参照してください。 <br/> これらの各アクティビティについては、変更された設定 (以下のかっこ内) の説明が、監査ログの検索結果の [**項目**] 列に表示されます。 <br/><br/>• 組織に対して Microsoft Teams が有効または無効になります (**Microsoft Teams**)。 <br/><br/>• 組織に対して Microsoft Teams と Skype for Business の相互運用が有効または無効になります (**Skype for Business の相互運用性**)。 <br/><br/>• Microsoft Teams クライアントの組織図ビューを有効または無効にします (組織図ビュー **)。<br/><br/>• チーム メンバーがプライベート会議をスケジュールする機能を有効または無効にします (** プライベート会議のスケジュール **)。<br/><br/>• チーム メンバーがチャネル会議をスケジュールする機能を有効または無効にします (チャネル会議のスケジュール**)。 <br/><br/>• Teams 会議のビデオ通話を有効または無効にします (Skype 会議のビデオ **)。<br/><br/>• 組織に対して Microsoft Teams ミートアップの画面共有を有効または無効にします (** Skype 会議の画面共有 **)。<br/><br/>• (Giphys と呼ばれる) アニメーション画像を Teams の会話 (アニメーション画像**) に追加する機能を有効または無効にします。 <br/><br/>• 組織のコンテンツの評価設定を変更します (**コンテンツの評価**)。 コンテンツの評価により、会話に表示されるアニメーション画像の種類が制限されます。 <br/><br/>• チーム メンバーがカスタマイズ可能な画像 (カスタム ミームと呼ばれる) をインターネットからチームの会話に追加する機能が、有効または無効になります (インターネットからのカスタマイズ可能な画像 **)。 <br/><br/>• チーム メンバーが編集可能な画像 (ステッカーと呼ばれる) をチームの会話に追加する機能が、有効または無効になります (** 編集可能な画像 **)。<br/><br/>• チーム メンバーが Microsoft Teams のチャットおよびチャネルでボットを使用する機能が、有効または無効になります (組織全体にわたるボット)。 <br/><br/>• Microsoft Teams に対して特定のボットが有効になります。これには、組織に対してボットが有効になっている場合に使用可能な Teams ヘルプ ボットである T-ボットは含まれません (** 個別ボット **)。 <br/><br/>• チーム メンバーが拡張機能またはタブを追加する機能を有効または無効にします (** 拡張機能またはタブ **)。 <br/><br/>• Microsoft Teams に対して専用ボットのサイドローディングが有効または無効になります (** ボットのサイドローディング **)。 <br/><br/>• ユーザーがメール メッセージを Microsoft Teams に送信する機能が、有効または無効になります (** チャネルのメール**)。|
-|チーム内のメンバーの役割変更|MemberRoleChanged|チーム所有者がチームのメンバーの役割を変更します。 次の値は、ユーザーに割り当てられる役割の種類を示します。 <br/><br/> **1** - 所有者ロールを示します。<br/>**2** - メンバー ロールを意味します。 <br/>**3** - ゲスト ロールを意味します。 <br/><br/> メンバー プロパティには、組織の名前とメンバーのメール アドレスも含まれます。|
-|チームの設定の変更|TeamSettingChanged|次のアクティビティがチームの所有者により実行されると、TeamSettingChanged 操作が記録されます。 これらの各アクティビティについては、変更された設定 (以下のかっこ内) の説明が、監査ログの検索結果の [**項目**] 列に表示されます。 <br/><br/>• チームのアクセスの種類を変更します。 チームは非公開または公開として設定できます (**チームのアクセスの種類**)。 チームが非公開 (既定の設定) の場合、ユーザーはチームには招待状でのみアクセスでき暗ます。 チームが公開されている場合、誰でもチームにアクセスできます。 <br/><br/>• チームの情報の分類を変更します (**チームの分類**)。 <br/> たとえば、チーム データは、事業影響度高、事業影響度中、事業影響度低として分類できます。<br/><br/>• チームの名前を変更します (**チーム名**)。 <br/><br/>• チームの説明を変更します (チームの説明**)。 <br/><br/>• チームの設定のいずれかが変更されました。 チーム所有者は、チームを右クリックし、[**チームの管理**]、[**設定**] タブの順にクリックして、Teams クライアントのこれらの設定にアクセスできます。これらのアクティビティについては、変更された設定の名前が、監査ログの検索結果の [**項目**] 列に表示されます。|
-|チームの作成|TeamCreated|ユーザーがチームを作成しました。|
-|チャネルの削除|ChannelDeleted|ユーザーがチームからチャネルを削除しました。|
-|チームの削除|TeamDeleted|チーム所有者がチームを削除しました。|
-|チームからのボットの削除|BotRemovedFromTeam|ユーザーがチームからボットを削除しました。|
-|コネクタの削除|ConnectorRemoved|ユーザーがチャネルからコネクタを削除しました。|
-|削除されたメンバー|MemberRemoved|チームの所有者が、チーム、チャネル、またはグループ チャットからメンバーを削除しました。|
-|タブの削除|TabRemoved|ユーザーがチャネルからタブを削除しました。|
-|コネクタの更新|ConnectorUpdated|ユーザーがチャネルのコネクタを変更しました。|
-|タブの更新|TabUpdated|ユーザーがチャネルのタブを変更しました。|
-|Teams へのユーザーのサインイン|TeamsSessionStarted|ユーザーが Microsoft Teams クライアントにサインインしました。 このイベントは、トークン更新アクティビティをキャプチャしません。|
-||||
+監査ログで Microsoft Stream のユーザーおよび管理者のアクティビティを検索できます。 Teams は Office 365 のチャット中心のワークスペースです。 これにより、チームの会話、会議、ファイル、およびノートが 1 つの場所に集められます。 監査されている Teams のアクティビティの説明については、「[Microsoft Teams でイベントの監査ログを検索する](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)」を参照してください。
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 医療活動アクティビティ
 
@@ -813,7 +786,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 下記の説明に別途記載するとおり、一部の操作には追加のアクティビティ パラメーターが含まれます。
 
 > [!NOTE]
-> Forms アクティビティが共同作成者または匿名のレスポンダーによって実行される場合、わずかに異なるログが記録されます。 詳細については、[共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ](#forms-activities-performed-by-co-authors-and-anonymous-responders) セクションを参照してください。
+> Forms アクティビティが共同作成者または匿名のレスポンダーによって実行される場合、わずかに異なるログが記録されます。 詳細については、[共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ](#forms-activities-performed-by-coauthors-and-anonymous-responders) セクションを参照してください。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
@@ -846,7 +819,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 |回答が送信される|SubmitResponse|ユーザーがフォームへの回答を送信する。 <br><br>プロパティ IsInternalForm:boolean は、回答者がフォーム所有者と同じ組織内にいるかどうかを示します。|
 ||||
 
-#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ
+#### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ
 
 Forms は、フォームの設計時および回答の分析時の協同作業をサポートします。 フォームの協力者は、*共同作成者* として知られています。 共同作成者は、フォームの削除または移動を除き、フォームの所有者が実行できるすべての操作を実行できます。 また、Forms を使用すると、匿名で回答できるフォームを作成できます。 これは、フォームに回答するためにレスポンダーが組織にサインインする必要がないことを意味します。 
 
@@ -854,9 +827,9 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 
 |**アクティビティの種類**|**内部または外部ユーザー**|**ログに記録されたユーザー ID**|**ログインしている組織**|**Forms ユーザーの種類**|
 |:-----|:-----|:-----|:-----|:-----|
-|共同編集アクティビティ|内部|UPN|フォームの所有者の組織|共同作成者|
-|共同編集アクティビティ|外部|UPN<br>|共同作成者の組織<br>|共同作成者|
-|共同編集アクティビティ|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織<br>|共同作成者|
+|共同編集のアクティビティ|内部|UPN|フォームの所有者の組織|共同編集者|
+|共同編集のアクティビティ|外部|UPN<br>|共同作成者の組織<br>|共同編集者|
+|共同編集のアクティビティ|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織<br>|共同編集者|
 |回答アクティビティ|外部|UPN<br>|レスポンダーの組織<br>|レスポンダー|
 |回答アクティビティ|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(ユーザー ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織|レスポンダー|
 |回答アクティビティ|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(ユーザー ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織|レスポンダー|
