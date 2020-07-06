@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034258"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039414"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査および修復する
 
@@ -39,7 +39,7 @@ ms.locfileid: "44034258"
     
 - 組織には、スパム対策、マルウェア対策、フィッシング対策などに対して定義されたポリシーがあります。 「 [Office 365 の脅威から保護](protect-against-threats.md)する」を参照してください。
     
-- グローバル管理者であるか、セキュリティ管理者、またはセキュリティ&amp; /コンプライアンスセンターで割り当てられている検索および削除の役割を持っているかどうか。 [ &amp;セキュリティ/コンプライアンスセンターの「アクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。 操作によっては、新しいプレビューの役割が割り当てられている必要もあります。 
+- グローバル管理者であるか、セキュリティ管理者、またはセキュリティ/コンプライアンスセンターで割り当てられている検索および削除の役割を持っているかどうか &amp; 。 [セキュリティ/ &amp; コンプライアンスセンターの「アクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。 操作によっては、新しいプレビューの役割が割り当てられている必要もあります。 
 
 #### <a name="preview-role-permissions"></a>ロールの権限のプレビュー
 
@@ -47,12 +47,12 @@ ms.locfileid: "44034258"
 
 |アクティビティ  |役割グループ |必要なプレビューの役割  |
 |---------|---------|---------|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | いいえ   |
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       いいえ  |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | 不要   |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       不要  |
 |脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview   |   はい      |
 
 > [!NOTE]
-> *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 グローバル管理者の役割には、Microsoft 365 管理センター[https://admin.microsoft.com](https://admin.microsoft.com)() が割り当てられており、セキュリティ管理者およびセキュリティリーダーの役割はセキュリティ[https://protection.office.com](https://protection.office.com)& コンプライアンスセンター () で割り当てられます。 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+> *プレビュー*は役割であり、役割グループではありません。Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 グローバル管理者の役割には、Microsoft 365 管理センター () が割り当てられ [https://admin.microsoft.com](https://admin.microsoft.com) ており、セキュリティ管理者およびセキュリティリーダーの役割はセキュリティ & コンプライアンスセンター () で割り当てられ [https://protection.office.com](https://protection.office.com) ます。 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>配信された疑わしいメールを見つけて削除する
 
@@ -61,9 +61,9 @@ ms.locfileid: "44034258"
 > [!NOTE]
 > 現在、エクスプローラーでの既定の検索には Zapped の項目は含まれていません。  これは、マルウェアまたはフィッシングのようなビューなど、すべてのビューに適用されます。 Zapped アイテムを含めるには、' 配信アクション ' セットを追加して、「削除による ZAP」を含める必要があります。 すべてのオプションを含めると、Zapped アイテムを含むすべての配信アクションの結果が表示できます。
 
-1. [**脅威エクスプローラー] に移動**し[https://protection.office.com](https://protection.office.com)ます。「Office 365 の職場または学校アカウントを使用してサインインする」に移動します。 これにより、セキュリティ&amp;コンプライアンスセンターに移動します。
+1. [**脅威エクスプローラー] に移動**します。「 [https://protection.office.com](https://protection.office.com) Office 365 の職場または学校アカウントを使用してサインインする」に移動します。 これにより、セキュリティコンプライアンスセンターに移動し &amp; ます。
 
-2. 左側のナビゲーションサイドリンクバーで、[**脅威管理** \> **エクスプローラー**] を選択します。
+2. 左側のナビゲーションサイドリンクバーで、[**脅威管理**エクスプローラー] を選択し \> **Explorer**ます。
 
     ![配信アクションと配信場所フィールドを含むエクスプローラ。](../../media/ThreatExFields.PNG)
 
@@ -88,7 +88,7 @@ ms.locfileid: "44034258"
 
 5. **高度なフィルター**: これらのフィルターを使用すると、複雑なクエリを作成し、データセットをフィルター処理できます。 [*高度なフィルター* ] をクリックすると、ポップアップが表示され、オプションが表示されます。
 
-   高度なフィルター処理は、検索機能に優れています。 ブール値フィルターは、*受信者*、*送信者*、および*送信者ドメイン*で導入され、管理者が値を除外して調査できるようにし**ています**。 このオプションは、[選択パラメーター*には含ま*れません] の下に表示されます。 管理者が通知メールボックス、既定の返信メールボックスを調査から除外することはでき**ません**。これは、管理者が特定の件名 (subject = "アテンション") を検索し、受信者が*defaultMail@contoso.com のいずれ*にも設定できない場合に便利です。 これは厳密な値の検索です。
+   高度なフィルター処理は、検索機能に優れています。 ブール値フィルターは、*受信者*、*送信者*、および*送信者ドメイン*で導入され、管理者が値を除外して調査できるようにし**ています**。 このオプションは、[選択パラメーター*には含ま*れません] の下に表示されます。 管理者は、通知メールボックス、既定の返信メールボックスを調査から除外することができ**ない**ため、管理者が特定の件名 (subject = "アテンション") を検索して、その受信者が*defaultmail \@ contoso.com のどれ*にも設定されていない場合に便利です。 これは厳密な値の検索です。
 
    ![受信者-' には、"Advanced filter" が含まれていません。](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
@@ -253,7 +253,7 @@ To access your message header and email download options, follow these steps:
 > This capability doesn't show up for email messages that were never found in a user's mailbox, which can happen if an email was dropped or its delivery failed. In cases where email messages were deleted from users' mailboxes, admins see a "Mail not found" error message.
 -->
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Office 365 Advanced Threat Protection](office-365-ti.md)
   

@@ -17,20 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613446"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039519"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
 組織で[office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) を使用しており、[必要なアクセス許可](#required-licenses-and-permissions)がある場合は、 **Explorer**または**リアルタイムの検出**(以前の*リアルタイムのレポート*-[新機能を参照](#new-features-in-threat-explorer-and-real-time-detections)) があります。 [セキュリティ & コンプライアンスセンター] で、[**脅威の管理**] に移動してから、[**エクスプローラー** ]_または_[**リアルタイムの検出**] を選択します。
 
-|||
+| ATP プラン2を使用すると、次のように表示されることになります。 | ATP プラン1では、次のように表示されることがあります。 |
 |---|---|
-|**ATP プラン2を使用すると、次のように表示されることになります。**|**ATP プラン1では、次のように表示されることがあります。**|
 |![脅威エクスプローラー](../../media/threatmgmt-explorer.png)|![リアルタイムの検出](../../media/threatmgmt-realtimedetections.png)|
 |
 
@@ -44,6 +43,43 @@ ms.locfileid: "44613446"
 - [フィッシング Url に関するデータを表示し、[verdict] をクリックします。](#view-data-about-phishing-urls-and-click-verdict)
 - [エクスプローラーのビューから自動化された調査と応答プロセスを開始](#start-automated-investigation-and-response)する (ATP プラン2のみ)
 - ...[悪意のある電子メールの調査など](#more-ways-to-use-explorer-or-real-time-detections)
+
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーおよびリアルタイム検出の機能が向上しました。
+
+探しているプロセスの改善の一環として、脅威エクスプローラーとリアルタイム検出にいくつかの更新プログラムを適用しました。 これらの機能が向上しており、探し方がより一貫しています。 これらの変更について、以下に説明します。 
+
+- [タイムゾーンの向上](#timezone-improvements)
+- [更新プロセスでの更新](#update-in-the-refresh-process)
+- [フィルターに追加するグラフのドリルダウン](#chart-drilldown-to-add-to-filters)
+- [製品情報の更新](#in-product-information-updates)
+
+### <a name="timezone-improvements"></a>タイムゾーンの向上 
+
+ポータル内の電子メールレコードのタイムゾーンと、エクスポートされたデータについても説明します。 タイムゾーンは、電子メールグリッド、詳細ポップアップ、電子メールのタイムライン、類似の電子メールなどのエクスペリエンス間で表示されるので、結果セットのタイムゾーンはユーザーに対してクリアされます。 
+
+![エクスプローラーでのタイムゾーンの表示](../media/TimezoneImprovements.png)
+
+### <a name="update-in-the-refresh-process"></a>更新プロセスでの更新 
+
+自動更新 (日付の変更、ページの更新)、手動更新 (他のフィルターの場合) との混同に関するフィードバックをお寄せください。 同様に、フィルターを削除すると自動更新になるため、クエリを変更している間に異なるフィルターを変更すると、検索に一貫性がないことがあります。 この問題を解決するには、手動のフィルターメカニズムに移行します。
+経験の観点から見ると、ユーザーはさまざまなフィルター範囲 (フィルタセット、日付) を適用および削除し、[refresh] ボタンを押して、クエリの定義によって結果をフィルター処理できます。 [更新] ボタンも、画面上で明確に呼び出されるように更新されています。 また、この変更に関するツールヒントと製品内のドキュメントも更新しました。 
+
+![[更新] をクリックして結果をフィルター処理する](../media/ManualRefresh.png)
+
+### <a name="chart-drilldown-to-add-to-filters"></a>フィルターに追加するグラフのドリルダウン
+
+グラフの凡例値をクリックして、その値をフィルターとして追加できるようになります。 なお、上記で説明した変更の一部として結果をフィルター処理するには、[更新] ボタンをクリックする必要があります。
+
+![グラフからフィルター処理するドリルダウン](../media/ChartDrilldown.png)
+
+### <a name="in-product-information-updates"></a>製品情報の更新 
+
+また、製品内の追加の詳細も表示する必要があります。 たとえば、グリッド内の検索結果の合計数 (下を参照) に加えて、ラベル、エラーメッセージ、および結果セットについての詳細情報を提供するために、ラベルを中心とした改良が行われました。 
+
+![製品情報の表示](../media/ProductInfo.png)
+
+
+## <a name="new-features-in-real-time-detections"></a>リアルタイム検出の新機能
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラおよびリアルタイム検出の新機能
 
@@ -68,20 +104,22 @@ ms.locfileid: "44613446"
 
 配信アクションは、既存のポリシーまたは検出のために電子メールに対して実行されたアクションです。 電子メールで実行可能なアクションは次のとおりです。
 
-|||||
+|届け  |Junked  |Blocked  |換わり  |
+|---------|---------|---------|---------|
+|電子メールがユーザーの受信トレイまたはフォルダーに配信され、ユーザーが直接アクセスできる。    | 電子メールは、ユーザーの迷惑メールフォルダーまたは削除されたフォルダーに送信され、ユーザーはそのフォルダー内のメールにアクセスできます。       | 検疫済み、失敗した、または削除されたメール。 ユーザーが完全にアクセスすることはできません。     | 悪意のある添付ファイルが存在するという悪意のある添付ファイルが .txt ファイルに置き換えられる電子メール。     |
+    
+
+| 届け | Junked | Blocked | 換わり |
 |---|---|---|---|
-|**届け**|**Junked**|**Blocked**|**換わり**|
 |電子メールがユーザーの受信トレイまたは別のフォルダーに配信され、ユーザーが直接アクセスできる。| 電子メールは、ユーザーの迷惑メールフォルダーまたは削除されたフォルダーに送信され、ユーザーはそのフォルダー内の電子メールメッセージにアクセスできます。| 検疫された、失敗した、または削除された電子メールメッセージで、ユーザーがアクセスできないメッセージ。| 添付ファイルが悪意のある添付ファイルであることを示す、悪意のある添付ファイルが .txt ファイルに置き換えられた電子メールメッセージ。|
 |
 
 次に、ユーザーが表示できる機能と、それができないことを示します。
 
-|||
+| エンドユーザーがアクセス可能 | エンドユーザーがアクセスできない |
 |---|---|
-|**エンドユーザーがアクセス可能**|**エンドユーザーがアクセスできない**|
 |届け|Blocked|
 |Junked|換わり|
-|
 
 [配信場所] には、配信後に実行されるポリシーと検出の結果が表示されます。 配信アクションにリンクされています。 このフィールドは、問題のメールが検出されたときに実行される処理を把握するために追加されました。 配信場所の指定可能な値は次のとおりです。
 
@@ -114,7 +152,7 @@ ms.locfileid: "44613446"
 > [!TIP]
 > ネットワークメッセージ ID エクスプローラーまたは関連するサードパーティ製のツールでネットワークメッセージ ID を使用して検索したときに、[クリック戻る] を特定のメールにマップします。 ネットワークのメッセージ ID を検索すると、クリックの結果に関連付けられた特定の電子メールが管理者に付与されます。 エクスポートが行われると、ネットワークメッセージ ID の相関 id があるため、より迅速かつ強力な分析が可能になります。
 
-![tp_ExportClickResultAndNetworkID .png](../../media/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>テクノロジによる電子メールで検出されたマルウェアを参照
 
@@ -205,6 +243,7 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
 - [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイルを表示する](malicious-files-detected-in-spo-odb-or-teams.md)
 - [脅威エクスプローラーのビューの概要 (およびリアルタイムの検出) を取得する](threat-explorer-views.md)
+- [Microsoft Threat Protection での自動調査および対応](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
@@ -242,3 +281,4 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 - 他のフィルター処理機能および使用可能なアクションは、**脅威エクスプローラー**に含まれています。
 
 詳細については、「 [Office 365 Atp サービスの説明: Advanced Threat Protection (ATP) プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+

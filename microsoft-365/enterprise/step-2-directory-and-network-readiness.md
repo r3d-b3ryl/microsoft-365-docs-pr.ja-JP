@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 環境内のディレクトリとネットワークの準備状況を評価する方法について説明します。
-ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 78087b7e0c1cb7031954d3a9ac4188b59879db20
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011653"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679016"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>手順 2: ディレクトリとネットワークの準備
 
-ディレクトリとネットワークが構成され、Windows 10 と Microsoft 365 Apps for enterprise への移行をサポートする準備ができていることを確認します。そのためには、ユーザーが Azure Active Directory サービスを利用できるようにする必要があります。また、ネットワークには通常のトラフィックに加え、PC のアップグレード時やユーザーのファイル、設定、アプリケーションの復元時に発生する可能性のある大量のデータ移動を処理できる容量が必要です。
+Ensure your directory and the network are configured and ready to support to your shift to Windows 10 and Microsoft 365 Apps for enterprise. This will require Azure Active Directory Services to be in place for users, and your network must have the capacity to handle both its regular traffic and the movement of potentially vast amounts of data as PCs are upgraded, and users’ files, settings and applications are restored.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "44011653"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>手順 2: ディレクトリとネットワークの準備</strong></p>
-<p>Microsoft 365 Apps for enterprise のクラウド接続サービスと Windows Autopilot などの新しい展開オプションには、Azure Active Directory が必要です。ネットワークと接続性も、Windows の画像、アプリ、ドライバー、関連ファイルを PC に移動する場合に、計画すべき重要な分野です。新しいツールと展開オプションによって、ネットワーク トラフィックを削減および合理化する方法について説明します。</p></td>
+<p>Cloud connected services in Microsoft 365 Apps for enterprise and new deployment options like Windows Autopilot require Azure Active Directory. Your network and connectivity are also important areas to plan when moving Windows images, apps, drivers and related files to your PCs. Learn how new tools and deployment options reduce and streamline network traffic.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -41,9 +41,9 @@ ms.locfileid: "44011653"
 >ディレクトリとネットワークの準備は、推奨される展開プロセスの輪における 2 番目の手順であり、Azure Active Directory に焦点を当て、ネットワークを最適化します。 デスクトップ展開プロセス全体を確認するには、[デスクトップ展開センター](https://aka.ms/HowToShift)を参照してください。
 >
 
-ディレクトリとネットワークの準備は、スムーズな OS とデスクトップの展開を実現するために不可欠です。自動化された展開と同様、ファイル共有にアクセスできるようにする必要があります。また、お使いのネットワークで非常に大きなファイルの転送を (おそらく一度に数百または数千台の PC に対して) サポートできるようにする必要があります。
+Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 
-Windows 10 および Microsoft 365 Apps for enterprise への移行に伴い、クラウドベースの ID が Azure Active Directory で設定されていることを確認する必要も生じます。これにより、Microsoft 365 Apps for enterprise のライセンス認証を行うだけでなく、Windows Autopilot のような最新のプロビジョニング ソリューションも利用できるようになります。
+With your shift to Windows 10 and Microsoft 365 Apps for enterprise you also now need to make sure that cloud-based identity is set up with Azure Active Directory. This is key not only to activating Microsoft 365 Apps for enterprise, it also allows you to take advantage of modern provisioning solutions like Windows Autopilot.
 
 この記事では、Windows 10 および Microsoft 365 Apps for enterprise への展開に向けて、ディレクトリ サービスや、ユーザーとデバイスのアクセス許可を準備するためのツールとオプションについて説明します。
 
@@ -69,21 +69,21 @@ Azure Active Directory を配置したら、対象ユーザーは Microsoft 365 
 
 ソフトウェアの更新のためのネットワーク帯域幅を計画する必要があります。 Windows 10 と Microsoft 365 Apps for enterprise では、毎月および半年ごとに更新プログラムを提供する新しいサービス モデルを使用しています。 このモデルを初めて利用する場合は、この機能の詳細を[こちら](https://docs.microsoft.com/windows/deployment/update/waas-overview)でご覧ください。
 
-新しいサービス モデルには、年 2 回の Windows 機能更新プログラム、Office の半期ごとのチャネル更新プログラム、毎月の品質更新プログラムが含まれています。機能更新プログラムのサイズは通常 2 - 4 GB で、Office の半期ごとのチャネル更新プログラムは更新ごとに 300 - 400 MB です。さらに、毎月の品質更新プログラムがあります。これらは数百 MB から 1 GB 以上になることがあります。毎月の更新は累積的で、Windows 10 の各バージョンのサービス有効期間にわたってサイズが増えていくためです。そうは言っても、更新を実装するためにネットワークを通過するデータ量を減らすのに役立つツールがあります。これについては、以下で詳しく説明します。
+The new servicing model includes Feature Updates for Windows twice a year, Office Semi-Annual Enterprise Channel Updates, and monthly Quality Updates. Feature Updates are typically 2 – 4GB in size, and Office Semi-Annual Enterprise Channel updates are 300 – 400 MB per update. Then there are the monthly Quality Updates. These may range from a few hundred megabytes to over a gigabyte. This is because monthly updates are cumulative, so these increase in size over the servicing lifetime for each Windows 10 version. That said, there are tools that can help reduce the amount of data that must pass over the network to implement updates. We will cover this in more detail below.
 
 ### <a name="user-personalization"></a>ユーザーの個人用設定
 
-考慮すべき 3 番目のコンポーネントは、ユーザーの個人用設定です。ここでは、PC のリフレッシュまたは交換プロセスの一部として、ユーザーのファイル、設定、アプリケーションの復元に対応するために、ネットワーク帯域幅を計画する必要があります。これらのアイテムは合計で PC ごとに 20 GB を超えることがよくあります。ユーザーによっては、100 GB を超える場合もあります。
+The third component to consider is user personalization. Here you need to plan network bandwidth to accommodate the restoring of user files, their settings, and their applications as part of the PC refresh or replacement process. Together, these items often exceed 20 GB per PC; for some users these may exceed 100 GB.
 
 ## <a name="limiting-bandwidth"></a>帯域幅の制限
 
-ネットワーク上の展開に関連するトラフィックの影響を制限する 1 つの方法は、クライアント上の BITS (バックグラウンド インテリジェント転送サービス) 設定を使用して調整することです。BITS は、アダプティブ ビット レート (ABR) を使用して、展開のために使用可能な帯域幅を調整します。これは、グループ ポリシーを使用してクライアント上で構成できます。
+One way to limit the impact of deployment-related traffic on the network is to throttle it using the BITS (Background Intelligent Transfer Service) setting on clients. BITS uses an Adaptive Bit Rate (ABR) to adjust bandwidth available for deployment purposes; it can be configured on clients using Group Policy.
 
 [BITS について](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
 Microsoft Endpoint Configuration Manager (Current Branch) を使用している場合は、BITS 対応の配布ポイントを構成することも、WDS でマルチキャストを有効にすることもできます。
 
-特定のトラフィックを調整すると、通常のネットワーク トラフィックは、更新プログラムやアプリケーションをダウンロードしている PC の影響を受けにくくなります。しかし、これらのタスクのために帯域幅の特定の割合を切り分けると、生産性は Windows または Office の展開による影響を受けず、プロセスが必要に応じて実行を続けるようになります。そのため、展開に関連するダウンタイムが悪化し、展開が実行される間、ユーザーが PC からロックアウトされる可能性があります。
+Throttling specific traffic means that normal network traffic is less impacted by PCs downloading updates and applications. But carving out a certain percentage of bandwidth for these tasks helps ensure productivity isn’t impacted by Windows or Office deployment and processes continue to run as needed, it can worsen deployment-related downtime, with users locked out of their PCs while a deployment runs.
 
 幸い、大規模なデスクトップ展開のネットワークへの影響を簡単に管理できる新しいツールが用意されています。これには、利用可能な帯域幅の使用を最適化する LEDBAT、展開トラフィックをネットワークの中心から離して境界に移動させるピアツーピア (P2P) オプションが含まれます。
 
@@ -95,15 +95,15 @@ Windows Server 2019 および Microsoft Endpoint Configuration Manager (Current 
 
 [Windows Server 2019 のネットワーク機能のトップ テン: \#9 LEDBAT – 遅延に最適化されたバックグラウンド トランスポート](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
-従来の調整とは異なり、LEDBAT はバックグラウンド タスクとして利用可能なすべてのネットワーク帯域幅を使用でき、他のトラフィックから要求された場合は即座に帯域幅を明け渡します。BITS とは異なり、遅延はありません。すべて自動化されているため、手動でのチューニングやスケジューリングは必要なく、サーバー側ですべてがセットアップされます。これにより、大幅なパフォーマンスの向上を実現します。
+Unlike traditional throttling, LEDBAT can use all available network bandwidth as a background task, instantly yielding bandwidth when other traffic requests it. Unlike BITS there is no delay; everything is automated – no manual tuning or scheduling required, and everything is setup server side. This affords potentially massive performance gains.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
 ## <a name="peer-to-peer-options"></a>ピアツーピア オプション
 
-Windows 10 の移行では、PC イメージング、ソフトウェアの更新、ユーザーの個人用設定のために、ピアツーピア オプションがますます使用されるようになっています。それは、Windows 10 の初期展開後にビルド間のアップグレードを容易にするうえでも役に立ちます。ここでは、Windows 10 および Office 関連のトラフィックをネットワークの中心から離すためのいくつかの例を取り上げます。従来の調整方法の必要性を低減し、配布ポイントまたはインターネットからダウンロードするのではなく、ローカル ネットワークのピア上で必要な更新ファイルを PC から検索できるようにします。
+Peer-to-Peer options are increasingly being used in Windows 10 migrations, for PC imaging, software updates and user personalization. They are also valuable in facilitating build-to-build upgrades after your initial Windows 10 deployment. Here we will cover several examples to help move Windows 10 and Office-related traffic away from the center of the network, reducing the need for classic throttling approaches, and allowing PCs to find the update files they need on peers in their local network rather than downloading them from a distribution point or the internet.
 
-**BranchCache** を使用すると、ネットワークを飽和させることなく、分散環境でコンテンツをダウンロードできます。これには次の 2 つのオプションがあります。コンテンツをキャッシュするためにローカル サーバーを使用できるホスト型キャッシュ モードと、クライアントが既にダウンロードしたコンテンツを互いに共有できる分散キャッシュ モード (Configuration Manager でサポートされているモード) です。
+**BranchCache** can help you download content in distributed environments without saturating the network. It comes in two options: Hosted Cache Mode, which lets you use local servers to cache content, and Distributed Cache Mode (a mode supported in Configuration Manager), which lets clients share already downloaded content with each other.
 
 Configuration Manager でサポートされている**ピア キャッシュ**クライアントではピア キャッシュも使用できます。 これにより、ネットワーク上で信頼性の高い可用性を備えた PC はコンテンツ配信のソースをホストできます。 これはすべての PC に対して有効にする機能ではありません。ホストとして信頼性の高いネットワーク接続を備えたデバイス (デスクトップ、ミニタワー、タワー PC など) のみを対象にします。 ピア キャッシュは、セットアップ時に Windows PE フェーズで実行される展開タスクの作業にも使用できます。
 
@@ -119,7 +119,7 @@ Configuration Manager でサポートされている**ピア キャッシュ**�
 
 配信の最適化の活用に加え、Microsoft 365 Apps for enterprises の展開によるネットワーク負荷を軽減する 3 つの項目を紹介します。
 
-**バイナリ デルタ圧縮**: Office 365 ProPlus では、バイナリ デルタ圧縮を使用して、Microsoft 365 Apps for enterprise の最新リリースから次のリリースに更新するときにソフトウェアの更新によって消費される帯域幅を削減します。前のリリースからのバイナリ レベルの変更のみを引き出すことで、累積的な更新プログラムによる毎月のサイズ膨張の影響を最小限に抑えることができます。これにより、PC ごとに、毎月数百 MB のデータを節減できる可能性があります。ただし、この機能を使用する場合、リリースをスキップすることはできません。スキップしたい場合は、完全な累積的更新プログラムをダウンロードする必要があります。
+**Binary Delta Compression** Microsoft 365 Apps for enterprise uses Binary Delta Compression to reduce bandwidth consumed by software updates when updating from the most recent release of Microsoft 365 Apps for enterprise to the next release. By only pulling the binary level changes from the previous release, the impact from month-over-month growth of cumulative updates is minimized. This has the potential of saving several hundred megabytes of data, per PC, each month. In order to use this capability though, you cannot skip releases. If you do, then the full cumulative update must be downloaded.
 
 [Microsoft 365 アプリの更新プログラムのダウンロード](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
@@ -147,8 +147,8 @@ OneDrive をまだロールアウトしていない場合は、Windows 7 から 
 
 ## <a name="feedback"></a>フィードバック
 
-お客様のご意見をお寄せください。お寄せいただく内容の種類を選択:
+We'd love to hear your thoughts. Choose the type you'd like to provide:
 
 製品に関するフィードバック: サインインしてドキュメントに関するフィードバックを送る
 
-この新しいフィードバック システムは、GitHub Issues を利用して構築されています。この変更については、こちらのブログ記事をご覧ください。
+Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

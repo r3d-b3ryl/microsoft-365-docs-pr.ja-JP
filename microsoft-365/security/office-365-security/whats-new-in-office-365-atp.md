@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267169"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039402"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -60,6 +60,11 @@ ms.locfileid: "44267169"
 
 - [Office 365 の ATP (**プレビュー**) でキャンペーンビューを使用する](campaigns.md)
 
+## <a name="july-2020"></a>2020年7月 
+ 
+- [探している環境の改善を体感する](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
+
 ## <a name="november-2019"></a>2019 年 11 月
 
 - 侵害された[ユーザーの検出と応答の機能](address-compromised-users-quickly.md)(**プレビュー**) を確認する (Office 365 ATP Plan 2)
@@ -94,4 +99,4 @@ Office 365 ATP は2つのプランで利用できることをご存知ですか�
 
 [Office 365 ATP サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Microsoft Threat Protection での自動調査および対応](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+
