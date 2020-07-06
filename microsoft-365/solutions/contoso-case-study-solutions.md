@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,19 +16,24 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 架空ではあるが代表的なグローバル組織が、Microsoft 365 ソリューションをどのように展開してきたか。
-ms.openlocfilehash: 7d99a936bcfaddb2032b5f077ea95034e275182a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: dc9fcf667b31af0ab3db9006f545b1f33e091639
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159493"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854284"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso 社向けの Microsoft 365 ソリューション
 
-架空の企業、Contoso Corporation は、フランスのパリに本社を置く代表的な世界規模の製造業の複合企業です。Contoso 社は Microsoft 365 Enterprise を展開して、ネットワーク、ID、Windows 10 Enterprise、Microsoft 365 Apps for enterprise、モバイル デバイス管理、情報の保護、セキュリティに関する主な設計上の決定と実装の詳細に対応しました。 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、クラウド サービスを使用することによって従業員、パートナー、データ、プロセスをまとめて管理し、デジタル トランスフォーメーションを促進することです。それにより、顧客にとっての価値を生み出し、デジタル ファーストの時代にあって競争力を維持することを目指しています。
 
 まず [Contoso 社](../enterprise/contoso-overview.md)、その世界各地のオフィス、Microsoft 365 Enterprise を展開するときに扱われた設計に関する考慮事項について説明します。
 
-そして次に、Contoso が極秘プロジェクトのために独立したチームを展開した方法について、[この記事](contoso-team-for-top-secret-project.md)を参照してください。
+次に、Contoso が次のようなソリューションとシナリオに Microsoft 365 を使用している方法について説明します。
+
+- [極秘プロジェクト向けの独立したチーム](contoso-team-for-top-secret-project.md)
+
+- [ユニファイド コミュニケーション、共同作業、音声機能のためオンプレミスのユーザーを Teams に以降](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+

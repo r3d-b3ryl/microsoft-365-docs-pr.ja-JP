@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: リモート ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: 142f4d42715ae53e411f045f4df09471b7ba63da
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560413"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844962"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>手順 1. MFA を使用してリモート ワーカーのサインイン セキュリティを強化する
 
@@ -95,6 +95,10 @@ Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azu
 ## <a name="let-your-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
 セルフサービスによるパスワードのリセット (SSPR) は、IT スタッフに影響を与えることなく、ユーザーが自分のパスワードをリセットできるようにします。 ユーザーは、いつでもどこからでも自分のパスワードをすばやくリセットすることができます。 SSPR のセットアップについては、[このビデオ](https://go.microsoft.com/fwlink/?linkid=2128524)をご覧ください。
+
+## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Azure AD で SaaS アプリにサインインする
+
+クラウド認証をユーザーに提供するだけでなく、Azure AD はすべてのアプリをオンプレミスにしているか、Microsoft のクラウドにあるか、または別のクラウドにあるかどうかに関係なく、全てのアプリを保護する中心的な方法にもなります。 [アプリケーションを Azure AD - Microsoft Azure Actuve Directoryに統合する](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration)と、リモートワーカーが必要なアプリケーションを見つけて安全にサインインするのが簡単になります。
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>MFA と ID のための管理技術リソース
 

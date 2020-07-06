@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 金融サービスがデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がどのように役立つかを説明します
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214698"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432429"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -67,7 +67,7 @@ Teams では、顧客の機密データをセキュリティで保護された�
 
 もう一つの一般的なシナリオは、ドキュメントの共同作業、保存、管理を、安全に行うために 「仮想データ ルーム」 として Teams を利用することです。 投資銀行、資産管理企業、未公開株式投資会社内のチーム メンバーやシンジケートは、取引や投資においてセキュリティで保護された方法で共同作業できます。 部門横断型のチームはそのような取引の計画や実施に関わることが多いため、データの共有や会話をセキュリティで保護された方法で実施できることは欠かせない要件です。 関係するドキュメントを外部の投資家とセキュリティで保護された方法で共有することも重要な要件です。 Teams ではセキュリティで保護され、完全に監査可能な場所が提供され、この場所で投資のためのデータを一元的に保存、保護、共有できます。
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="大画面上で画像について検討する、会議中のオフィス ワーカーのグループ":::
+:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="大画面上で画像について検討する会議中のオフィスワーカーのグループ。":::
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: コラボレーションを改善し、コンプライアンス リスクを軽減する
 
@@ -99,7 +99,7 @@ FINRA が推奨する効果的な慣行には次のものがあります。
 * 許容されるデジタル チャネルを明確に定義し、管理する。 承認されたデジタル チャネルと禁止されたデジタル チャネルの両方を定義する。 禁止されたデジタル チャネルの使用と、記録管理と監督の要件を遵守する組織の能力を妨げるデジタル チャネル内の禁止された機能の使用を、ブロックまたは制限する。
 * デジタル通信のトレーニングを提供する。 登録された代表者に承認されたデジタル チャネルへのアクセス権を付与する前に、必須のトレーニング プログラムを実施する。 トレーニングにより、業務上および個人的なデジタル通信に関する組織の期待が明確になり、スタッフに各チャネルの許可された機能の使い方を、法令を遵守した方法で体験させることができる。
 
-デジタル通信に関する FINRA の調査結果と観察は、すべての業務上の通信の保持に関する [SEC Rule 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4)、通信の監視とレビューに関する FINRA Rule [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) と [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120)、記録保持に関する Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) と直接関連があります。 米商品先物取引委員会 (FTC) は 17 CFR 131 で同様の要件を定めています。 これらの規制については、この記事の後半で掘り下げて検討します。
+デジタル通信に関する FINRA の調査結果と観察は、すべての業務上の通信の保持に関する [SEC Rule 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4)、通信の監視とレビューに関する FINRA Rule [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) と [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120)、記録保持に関する Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) と直接関連があります。 米商品先物取引委員会 (FTC) は 17 CFR 131 で同様の要件を公布します。 これらの規制については、この記事の後半で掘り下げて検討します。
 
 ***Teams は、Microsoft 365 のセキュリティおよびコンプライアンス向けサービスの包括的なスイートと組み合わされ、金融サービス機関が効果的に業務を行い規制を遵守できるようにするために、企業向けのデジタル通信チャネルを提供します。*** この記事の残りの部分では、記録管理、情報保護、情報障壁、監督管理のための Microsoft 365 の組み込み機能により、これらの規制上の義務を果たすのに役立つ強固なツールセットが Teams と組み合わされることについて説明します。
 

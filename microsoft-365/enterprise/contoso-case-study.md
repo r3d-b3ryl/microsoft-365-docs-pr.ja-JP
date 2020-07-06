@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
-ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268424"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854260"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise
 
 Microsoft 365 Enterprise は、Microsoft のプレミア クラウド製品であり、ローカルおよびクラウドベースの生産性アプリとサービスを Windows 10 Enterprise および高度なセキュリティ機能と組み合わせることで、あらゆるユーザーがクリエイティブで安全に共同作業ができるようにする包括的でインテリジェントなソリューションを提供します。 
 
-架空の企業、Contoso Corporation は、フランスのパリに本社を置く代表的な世界規模の製造業の複合企業です。Contoso 社は Microsoft 365 Enterprise を展開して、ネットワーク、ID、Windows 10 Enterprise、Microsoft 365 Apps for enterprise、モバイル デバイス管理、情報の保護、セキュリティに関する主な設計上の決定と実装の詳細に対応しました。 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、クラウド サービスを使用することによって従業員、パートナー、データ、プロセスをまとめて管理し、デジタル トランスフォーメーションを促進することです。それにより、顧客にとっての価値を生み出し、デジタル ファーストの時代にあって競争力を維持することを目指しています。
 
@@ -71,6 +71,10 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 - [極秘プロジェクトのチーム](../solutions/contoso-team-for-top-secret-project.md)
 
   Contoso 社は、極秘プロジェクトの安全なコラボレーション環境を作り出すために、セキュリティを分離したチームを運用しました。
+
+- [Teams の音声移行の概要](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+
+  Contoso がオンプレミスユーザーを統合されたコミュニケーション、共同作業、音声用に Teams に移行した方法について説明します。
 
 ## <a name="next-step"></a>次の手順
 
