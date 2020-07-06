@@ -17,81 +17,86 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267169"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039402"
 ---
-# <a name="whats-new-in-office-365-atp"></a><span data-ttu-id="87c60-104">Office 365 ATP の新機能</span><span class="sxs-lookup"><span data-stu-id="87c60-104">What's new in Office 365 ATP</span></span>
+# <a name="whats-new-in-office-365-atp"></a><span data-ttu-id="53aa6-104">Office 365 ATP の新機能</span><span class="sxs-lookup"><span data-stu-id="53aa6-104">What's new in Office 365 ATP</span></span>
 
-<span data-ttu-id="87c60-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="87c60-105">**Applies to:**</span></span>
+<span data-ttu-id="53aa6-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="53aa6-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="87c60-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span><span class="sxs-lookup"><span data-stu-id="87c60-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span></span>](office-365-atp.md)
+- [<span data-ttu-id="53aa6-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span><span class="sxs-lookup"><span data-stu-id="53aa6-106">Office 365 Advanced Threat Protection (Office 365 ATP)</span></span>](office-365-atp.md)
 
-<span data-ttu-id="87c60-107">この記事では、最新リリースの Office 365 ATP の新機能の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="87c60-107">This article lists new features in the latest release of Office 365 ATP.</span></span> <span data-ttu-id="87c60-108">現在プレビューされている機能は、 **(プレビュー)** で示されています。</span><span class="sxs-lookup"><span data-stu-id="87c60-108">Features that are currently in preview are denoted with **(preview)**.</span></span>
+<span data-ttu-id="53aa6-107">この記事では、最新リリースの Office 365 ATP の新機能の一覧を示します。</span><span class="sxs-lookup"><span data-stu-id="53aa6-107">This article lists new features in the latest release of Office 365 ATP.</span></span> <span data-ttu-id="53aa6-108">現在プレビューされている機能は、 **(プレビュー)** で示されています。</span><span class="sxs-lookup"><span data-stu-id="53aa6-108">Features that are currently in preview are denoted with **(preview)**.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="87c60-109">Office 365 ATP をまだ持っていませんか?</span><span class="sxs-lookup"><span data-stu-id="87c60-109">Don't have Office 365 ATP yet?</span></span> <span data-ttu-id="87c60-110">[営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。</span><span class="sxs-lookup"><span data-stu-id="87c60-110">[Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).</span></span>
+> <span data-ttu-id="53aa6-109">Office 365 ATP をまだ持っていませんか?</span><span class="sxs-lookup"><span data-stu-id="53aa6-109">Don't have Office 365 ATP yet?</span></span> <span data-ttu-id="53aa6-110">[営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。</span><span class="sxs-lookup"><span data-stu-id="53aa6-110">[Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).</span></span>
 
-## <a name="marchapril-2020"></a><span data-ttu-id="87c60-111">2020年3月/4 月</span><span class="sxs-lookup"><span data-stu-id="87c60-111">March/April 2020</span></span>
+## <a name="marchapril-2020"></a><span data-ttu-id="53aa6-111">2020年3月/4 月</span><span class="sxs-lookup"><span data-stu-id="53aa6-111">March/April 2020</span></span>
 
-- <span data-ttu-id="87c60-112">[自動調査と応答を使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="87c60-112">The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.</span></span>
+- <span data-ttu-id="53aa6-112">[自動調査と応答を使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。</span><span class="sxs-lookup"><span data-stu-id="53aa6-112">The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.</span></span>
 
-## <a name="januaryfebruary-2020"></a><span data-ttu-id="87c60-113">2020年1月/年2月</span><span class="sxs-lookup"><span data-stu-id="87c60-113">January/February 2020</span></span>
+## <a name="januaryfebruary-2020"></a><span data-ttu-id="53aa6-113">2020年1月/年2月</span><span class="sxs-lookup"><span data-stu-id="53aa6-113">January/February 2020</span></span>
 
-- [<span data-ttu-id="87c60-114">Office 365 ATP のキャンペーンビューの一般的な利用可能性</span><span class="sxs-lookup"><span data-stu-id="87c60-114">General Availability of Campaign Views in Office 365 ATP</span></span>](campaigns.md)
-- <span data-ttu-id="87c60-115">セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索してフィルター処理できるようにするための[脅威エクスプローラー](threat-explorer.md)の機能拡張。</span><span class="sxs-lookup"><span data-stu-id="87c60-115">Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):</span></span>
-    - <span data-ttu-id="87c60-116">配信場所と特別なアクション</span><span class="sxs-lookup"><span data-stu-id="87c60-116">Delivery location and special actions</span></span>
-    - <span data-ttu-id="87c60-117">方向性 (受信、送信、または組織内)</span><span class="sxs-lookup"><span data-stu-id="87c60-117">Directionality (inbound, outbound, or intra-org)</span></span>
-    - <span data-ttu-id="87c60-118">オーバーライド (ユーザーによるブロックまたは許可)</span><span class="sxs-lookup"><span data-stu-id="87c60-118">Overrides (user blocking or allowing)</span></span>
-    - <span data-ttu-id="87c60-119">URL の脅威 (マルウェア、フィッシング、スパム、または none)</span><span class="sxs-lookup"><span data-stu-id="87c60-119">URL threat (malware, phish, spam, or none)</span></span>
-    - <span data-ttu-id="87c60-120">高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。</span><span class="sxs-lookup"><span data-stu-id="87c60-120">Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)</span></span>
-    - <span data-ttu-id="87c60-121">詳細な時間フィルター (日、時間、半時間)</span><span class="sxs-lookup"><span data-stu-id="87c60-121">Granular time filters (day, hour, half-hour)</span></span> 
+- [<span data-ttu-id="53aa6-114">Office 365 ATP のキャンペーンビューの一般的な利用可能性</span><span class="sxs-lookup"><span data-stu-id="53aa6-114">General Availability of Campaign Views in Office 365 ATP</span></span>](campaigns.md)
+- <span data-ttu-id="53aa6-115">セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索してフィルター処理できるようにするための[脅威エクスプローラー](threat-explorer.md)の機能拡張。</span><span class="sxs-lookup"><span data-stu-id="53aa6-115">Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):</span></span>
+    - <span data-ttu-id="53aa6-116">配信場所と特別なアクション</span><span class="sxs-lookup"><span data-stu-id="53aa6-116">Delivery location and special actions</span></span>
+    - <span data-ttu-id="53aa6-117">方向性 (受信、送信、または組織内)</span><span class="sxs-lookup"><span data-stu-id="53aa6-117">Directionality (inbound, outbound, or intra-org)</span></span>
+    - <span data-ttu-id="53aa6-118">オーバーライド (ユーザーによるブロックまたは許可)</span><span class="sxs-lookup"><span data-stu-id="53aa6-118">Overrides (user blocking or allowing)</span></span>
+    - <span data-ttu-id="53aa6-119">URL の脅威 (マルウェア、フィッシング、スパム、または none)</span><span class="sxs-lookup"><span data-stu-id="53aa6-119">URL threat (malware, phish, spam, or none)</span></span>
+    - <span data-ttu-id="53aa6-120">高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。</span><span class="sxs-lookup"><span data-stu-id="53aa6-120">Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)</span></span>
+    - <span data-ttu-id="53aa6-121">詳細な時間フィルター (日、時間、半時間)</span><span class="sxs-lookup"><span data-stu-id="53aa6-121">Granular time filters (day, hour, half-hour)</span></span> 
 
-- <span data-ttu-id="87c60-122">**インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。</span><span class="sxs-lookup"><span data-stu-id="87c60-122">The **Incidents** widget is now the **Action Center** widget.</span></span> <span data-ttu-id="87c60-123">(セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威の管理**  >  ] に移動します。**レビュー**)</span><span class="sxs-lookup"><span data-stu-id="87c60-123">(To view your security widgets, in the Security & Compliance Center, go to **Threat management** > **Review**.)</span></span>
+- <span data-ttu-id="53aa6-122">**インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。</span><span class="sxs-lookup"><span data-stu-id="53aa6-122">The **Incidents** widget is now the **Action Center** widget.</span></span> <span data-ttu-id="53aa6-123">(セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威の管理**  >  ] に移動します。**レビュー**)</span><span class="sxs-lookup"><span data-stu-id="53aa6-123">(To view your security widgets, in the Security & Compliance Center, go to **Threat management** > **Review**.)</span></span>
 
-- <span data-ttu-id="87c60-124">[Microsoft 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(プレビュー)**</span><span class="sxs-lookup"><span data-stu-id="87c60-124">[Safe Documents in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**</span></span>
+- <span data-ttu-id="53aa6-124">[Microsoft 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(プレビュー)**</span><span class="sxs-lookup"><span data-stu-id="53aa6-124">[Safe Documents in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**</span></span>
 
-## <a name="december-2019"></a><span data-ttu-id="87c60-125">2019 年 12 月</span><span class="sxs-lookup"><span data-stu-id="87c60-125">December 2019</span></span>
+## <a name="december-2019"></a><span data-ttu-id="53aa6-125">2019 年 12 月</span><span class="sxs-lookup"><span data-stu-id="53aa6-125">December 2019</span></span>
 
-- <span data-ttu-id="87c60-126">[エクスポート URL [オフライン分析のデータをクリックして](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)ください (OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-126">[Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="53aa6-126">[エクスポート URL [オフライン分析のデータをクリックして](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)ください (OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-126">[Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-- [<span data-ttu-id="87c60-127">Office 365 の ATP (**プレビュー**) でキャンペーンビューを使用する</span><span class="sxs-lookup"><span data-stu-id="87c60-127">Use Campaign Views in Office 365 ATP (**preview**)</span></span>](campaigns.md)
+- [<span data-ttu-id="53aa6-127">Office 365 の ATP (**プレビュー**) でキャンペーンビューを使用する</span><span class="sxs-lookup"><span data-stu-id="53aa6-127">Use Campaign Views in Office 365 ATP (**preview**)</span></span>](campaigns.md)
 
-## <a name="november-2019"></a><span data-ttu-id="87c60-128">2019 年 11 月</span><span class="sxs-lookup"><span data-stu-id="87c60-128">November 2019</span></span>
+## <a name="july-2020"></a><span data-ttu-id="53aa6-128">2020年7月</span><span class="sxs-lookup"><span data-stu-id="53aa6-128">July 2020</span></span> 
+ 
+- [<span data-ttu-id="53aa6-129">探している環境の改善を体感する</span><span class="sxs-lookup"><span data-stu-id="53aa6-129">Experience Improvements to Hunting Experience</span></span>](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 
-- <span data-ttu-id="87c60-129">侵害された[ユーザーの検出と応答の機能](address-compromised-users-quickly.md)(**プレビュー**) を確認する (Office 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-129">[Check out new compromised user detection and response capabilities](address-compromised-users-quickly.md) (**preview**) (Office 365 ATP Plan 2)</span></span>
 
-## <a name="september-2019"></a><span data-ttu-id="87c60-130">2019 年 9 月</span><span class="sxs-lookup"><span data-stu-id="87c60-130">September 2019</span></span>
+## <a name="november-2019"></a><span data-ttu-id="53aa6-130">2019 年 11 月</span><span class="sxs-lookup"><span data-stu-id="53aa6-130">November 2019</span></span>
 
-- <span data-ttu-id="87c60-131">自動化された[調査および応答機能を](automated-investigation-response-office.md)使用する (OFFICE 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-131">[Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Office 365 ATP Plan 2)</span></span>
+- <span data-ttu-id="53aa6-131">侵害された[ユーザーの検出と応答の機能](address-compromised-users-quickly.md)(**プレビュー**) を確認する (Office 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-131">[Check out new compromised user detection and response capabilities](address-compromised-users-quickly.md) (**preview**) (Office 365 ATP Plan 2)</span></span>
 
-- <span data-ttu-id="87c60-132">Office [365 との統合 office 365 Management ACTIVITY API を使用した office atp 自動調査と応答イベント](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(OFFICE 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-132">[Integrate with Office 365 ATP automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)</span></span>
+## <a name="september-2019"></a><span data-ttu-id="53aa6-132">2019 年 9 月</span><span class="sxs-lookup"><span data-stu-id="53aa6-132">September 2019</span></span>
 
-- <span data-ttu-id="87c60-133">[電子メールのヘッダーを表示し、電子メール本文をダウンロードする](investigate-malicious-email-that-was-delivered.md)(OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-133">[View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="53aa6-133">自動化された[調査および応答機能を](automated-investigation-response-office.md)使用する (OFFICE 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-133">[Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Office 365 ATP Plan 2)</span></span>
 
-## <a name="august-2019"></a><span data-ttu-id="87c60-134">2019 年 8 月</span><span class="sxs-lookup"><span data-stu-id="87c60-134">August 2019</span></span>
+- <span data-ttu-id="53aa6-134">Office [365 との統合 office 365 Management ACTIVITY API を使用した office atp 自動調査と応答イベント](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)(OFFICE 365 ATP Plan 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-134">[Integrate with Office 365 ATP automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)</span></span>
 
-- <span data-ttu-id="87c60-135">[メールのタイムラインを表示する](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email)(OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-135">[View the timeline of email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="53aa6-135">[電子メールのヘッダーを表示し、電子メール本文をダウンロードする](investigate-malicious-email-that-was-delivered.md)(OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-135">[View the email headers and download the email body](investigate-malicious-email-that-was-delivered.md) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-## <a name="july-2019"></a><span data-ttu-id="87c60-136">2019 年 7 月</span><span class="sxs-lookup"><span data-stu-id="87c60-136">July 2019</span></span>
+## <a name="august-2019"></a><span data-ttu-id="53aa6-136">2019 年 8 月</span><span class="sxs-lookup"><span data-stu-id="53aa6-136">August 2019</span></span>
 
-- <span data-ttu-id="87c60-137">[配信アクションと電子メールメッセージの場所を確認する](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location)(OFFICE 365 ATP Plan 1 または 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-137">[Check the delivery action and location of email messages](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP Plan 1 or 2)</span></span>
+- <span data-ttu-id="53aa6-137">[メールのタイムラインを表示する](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email)(OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-137">[View the timeline of email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-## <a name="june-2019"></a><span data-ttu-id="87c60-138">2019 年 6 月</span><span class="sxs-lookup"><span data-stu-id="87c60-138">June 2019</span></span>
+## <a name="july-2019"></a><span data-ttu-id="53aa6-138">2019 年 7 月</span><span class="sxs-lookup"><span data-stu-id="53aa6-138">July 2019</span></span>
 
-- <span data-ttu-id="87c60-139">[フィッシング url に関するデータを表示し、[verdict] をクリックし](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)ます (OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="87c60-139">[View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP Plan 1 or Plan 2)</span></span>
+- <span data-ttu-id="53aa6-139">[配信アクションと電子メールメッセージの場所を確認する](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location)(OFFICE 365 ATP Plan 1 または 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-139">[Check the delivery action and location of email messages](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Office 365 ATP Plan 1 or 2)</span></span>
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a><span data-ttu-id="87c60-140">Office 365 ATP プラン 1 およびプラン 2</span><span class="sxs-lookup"><span data-stu-id="87c60-140">Office 365 ATP Plan 1 and Plan 2</span></span>
+## <a name="june-2019"></a><span data-ttu-id="53aa6-140">2019 年 6 月</span><span class="sxs-lookup"><span data-stu-id="53aa6-140">June 2019</span></span>
 
-<span data-ttu-id="87c60-141">Office 365 ATP は2つのプランで利用できることをご存知ですか。</span><span class="sxs-lookup"><span data-stu-id="87c60-141">Did you know that Office 365 ATP is available in two plans?</span></span> <span data-ttu-id="87c60-142">[各プランに含まれる内容について説明](office-365-atp.md#office-365-atp-plan-1-and-plan-2)します。</span><span class="sxs-lookup"><span data-stu-id="87c60-142">[Learn more about what each plan includes](office-365-atp.md#office-365-atp-plan-1-and-plan-2).</span></span>
+- <span data-ttu-id="53aa6-141">[フィッシング url に関するデータを表示し、[verdict] をクリックし](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)ます (OFFICE 365 ATP Plan 1 または Plan 2)</span><span class="sxs-lookup"><span data-stu-id="53aa6-141">[View data about phishing URLs and click verdict](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Office 365 ATP Plan 1 or Plan 2)</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="87c60-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="87c60-143">See also</span></span>
+## <a name="office-365-atp-plan-1-and-plan-2"></a><span data-ttu-id="53aa6-142">Office 365 ATP プラン 1 およびプラン 2</span><span class="sxs-lookup"><span data-stu-id="53aa6-142">Office 365 ATP Plan 1 and Plan 2</span></span>
 
-[<span data-ttu-id="87c60-144">Microsoft 365 ロードマップ</span><span class="sxs-lookup"><span data-stu-id="87c60-144">Microsoft 365 roadmap</span></span>](https://www.microsoft.com/microsoft-365/roadmap)
+<span data-ttu-id="53aa6-143">Office 365 ATP は2つのプランで利用できることをご存知ですか。</span><span class="sxs-lookup"><span data-stu-id="53aa6-143">Did you know that Office 365 ATP is available in two plans?</span></span> <span data-ttu-id="53aa6-144">[各プランに含まれる内容について説明](office-365-atp.md#office-365-atp-plan-1-and-plan-2)します。</span><span class="sxs-lookup"><span data-stu-id="53aa6-144">[Learn more about what each plan includes](office-365-atp.md#office-365-atp-plan-1-and-plan-2).</span></span>
 
-[<span data-ttu-id="87c60-145">Office 365 ATP サービスの説明</span><span class="sxs-lookup"><span data-stu-id="87c60-145">Office 365 ATP Service Description</span></span>](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+## <a name="see-also"></a><span data-ttu-id="53aa6-145">関連項目</span><span class="sxs-lookup"><span data-stu-id="53aa6-145">See also</span></span>
 
-[<span data-ttu-id="87c60-146">Microsoft Threat Protection での自動調査および対応</span><span class="sxs-lookup"><span data-stu-id="87c60-146">Automated investigation and response in Microsoft Threat Protection</span></span>](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+[<span data-ttu-id="53aa6-146">Microsoft 365 ロードマップ</span><span class="sxs-lookup"><span data-stu-id="53aa6-146">Microsoft 365 roadmap</span></span>](https://www.microsoft.com/microsoft-365/roadmap)
+
+[<span data-ttu-id="53aa6-147">Office 365 ATP サービスの説明</span><span class="sxs-lookup"><span data-stu-id="53aa6-147">Office 365 ATP Service Description</span></span>](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
+
