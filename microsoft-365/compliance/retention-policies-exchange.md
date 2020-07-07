@@ -17,11 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange メールと Exchange パブリック フォルダーに特に適用される保持動作について説明します。
-ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 2ecf709c8b2bdd166cd64024ef332a2e0b26b7be
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049895"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016280"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Exchange のアイテム保持ポリシーの詳細
 
@@ -50,7 +50,7 @@ ms.locfileid: "45049895"
 ![メールおよびパブリック フォルダーの保持フローの図](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **保持期間中、ユーザーがアイテムを変更または完全に削除した場合** (この操作は Shift キーと Delete キーを押すか、[削除済みアイテム] から削除して行います): アイテムは [回復可能なアイテム] フォルダーに移動 (編集する場合はコピー) されます。 ここで、タイマー ジョブが定期的に実行され、アイテム保持ポリシーの有効期間が過ぎたアイテムを特定します。このようなアイテムは、保持期間の最終日から 14 日以内に完全に削除されます。 既定の設定は 14 日間ですが、最長 30 日間まで設定できます。
-
+    
 2. 保存期間中に**アイテムが変更または削除されない場合**: メールボックス内のすべてのフォルダーで同じプロセスが定期的に実行され、保持期間が終了したアイテムを識別します。これらのアイテムは保持期間の終了後 14 日以内に完全に削除されます。 既定の設定は 14 日間ですが、最長 30 日間まで設定できます。 
 
 保持設定が保持のみ、または削除のみの場合、コンテンツ パスは保持か削除かで異なります。
