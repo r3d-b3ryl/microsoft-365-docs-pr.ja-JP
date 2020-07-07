@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,11 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: 363f2a5edb43d294be5a8ecfe0fd02964dd8b945
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-ms.translationtype: HT
+ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160752"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844980"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2.  オンプレミスのアプリとサービスへのリモート アクセスを提供します。
 
@@ -70,7 +69,11 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 
 ![Azure AD アプリケーション プロキシのコンポーネント](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-詳細については、この「[Azure AD アプリケーション プロキシの概要](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)」をご覧ください。
+詳細については、[Azure AD アプリケーションプロキシの概要](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)と[Azure AD アプリケーションプロキシを使用するためのビデオ　パート3](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)を参照してください。
+
+>[!Note]
+>Azure AD アプリケーションプロキシは、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
+>
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>すべてのアプリが Web アプリではない場合にリモート アクセスを展開する
 
@@ -82,13 +85,32 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 
 詳細については、この「[P2S VPN の概要](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about)」をご覧ください。
 
+>[!Note]
+>Azure P2S VPN は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
+>
+
 ## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>リモート ワーカーが個人用デバイスを使用してリモート アクセスできるように、Windows Virtual Desktop を展開する 
 
-個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Azure の Windows Virtual Desktop を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。
+個人用デバイスや管理されていないデバイスのみを使用できるリモート ワーカーをサポートするには、Azure の Windows Virtual Desktop を使用して、ユーザーが自宅から使用する仮想デスクトップを作成して割り当てます。 仮想化された PC は、組織のネットワークに接続されている PC と同じように動作します。
 
-仮想化された PC は、組織のネットワークに接続されている PC と同じように動作します。
+![Azure Windows Virtual Desktop のコンポーネント](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-詳細については、「[Windows Virtual Desktop の概要](https://docs.microsoft.com/azure/virtual-desktop/overview)」をご覧ください。
+詳細については、以下をご参照ください。 
+
+- [Windows Virtual Desktop の概要](https://docs.microsoft.com/azure/virtual-desktop/overview)。
+- [リモートワーカー用の Windows Virtual Desktop を使用しているパート2のビデオ](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)。
+
+>[!Note]
+>Windows Virtual Desktop は、Microsoft 365 のサブスクリプションには含まれていません。 別の Azure サブスクリプションで使用する場合は、支払う必要があります。
+>
+
+## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>リモートデスクトップサービスゲートウェイを使用して、リモートデスクトップサービス接続を保護する
+
+リモートデスクトップサービス (RDS) を使用している場合、従業員がオンプレミスのネットワーク上の Windows ベースのコンピューターに接続できるようにするには、エッジネットワークの Microsoft リモートデスクトップサービスゲートウェイを使用する必要があります。 ゲートウェイは Secure Sockets Layer(SSL) を使用して通信を暗号化し、RDS をホスティングしているシステムがインターネットに直接公開されないようにします。
+
+![リモートデスクトップサービスゲートウェイを使用して、リモートデスクトップサービス接続する。](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+
+詳細については、[こちらの記事](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/)を参照してください。 
 
 ## <a name="admin-technical-resources-for-remote-access"></a>リモート アクセスのための管理技術リソース
 
@@ -105,8 +127,9 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 | リモート アクセス VPN ソリューションはなく、オンプレミスの Web ベースのアプリへのリモート アクセスのみが必要です | Azure アプリケーション プロキシを構成しました。 |
 | リモート アクセス VPN ソリューションはなく、オンプレミス アプリへのアクセスが必要であり、その一部は Web ベースではありません | Azure P2S VPN を構成しました。 |
 | リモート ワーカーは自宅から個人用デバイスを使用しています | Windows Virtual Desktop を構成しました。 |
+| リモートワーカーがオンプレミスシステムへの RDS 接続を使用している | 境界ネットワークにリモートデスクトップサービスゲートウェイを展開しました。 |
 |||
 
 ## <a name="next-step"></a>次の手順
 
-[手順 3](empower-people-to-work-remotely-manage-endpoints.md) に進み、デバイス、PC、およびその他のエンドポイントを管理します。
+Microsoft 365 のセキュリティとコンプライアンスのサービスを展開して、お客様のアプリケーション、データ、およびデバイスを保護するには [手順 3](empower-people-to-work-remotely-security-compliance.md) に進んでください。
