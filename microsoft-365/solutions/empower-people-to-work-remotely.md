@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,51 +17,39 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560464"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844872"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
-組織のオンプレミスおよびクラウドベースの情報、ツール、リソースに、ワーカーが自宅から安全にアクセスできるようにすることが必要になる場合があります。 多くの組織にとって、ワーカーがシームレスかつ安全にオフィスから離れて仕事ができるようにすることは、以下のために重要です。
+組織のオンプレミスおよびクラウドベースの情報、ツール、リソースに、ワーカーが自宅から安全にアクセスできるようにすることが必要になる場合があります。 多くの組織にとって、ワーカーがオフィスから離れて仕事ができるようにすることは、以下のために重要です。
 
 - オフィス スペースの節約。
 - 配置転換を望まないワーカーを雇用し、維持する。
 - ワーカーの通勤時間を減らして、生産的な時間を確保し、仕事以外でのストレス軽減のための時間を確保する。
 
-リモート作業 (テレワーキングとも呼ばれる) は、次のような範囲に及ぶ可能性があります。
+Microsoft 365 には、ワーカーがリモートで作業できるようにするための機能があります。
 
-- 会議やクライアント会議のために時々オフィスを離れるワーカー。
-- リモートでフルタイムで働く一部のワーカー。
-- オフィスがなく、すべてのワーカーがリモートで作業をする完全なリモートの組織。
+![Microsoft 365 でリモート ワーカーを支援する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-世界中のどこからでも、いつでも、リモート ワーカーは以下にアクセスできる必要があります。
 
-- オンプレミスのアプリケーション データセンターで提供されるような組織のリソース。
-- Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ (Teams、Exchange Online、SharePoint、OneDrive など)。
+| | |
+|:-------|:-----|
+| 接続しました | 世界中のどこからでも、いつでも、リモート ワーカーは以下にアクセスできます。 <ul><li>Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。 </li><li>オンプレミスのアプリケーション データセンターで提供されるような組織のリソース。</li></ul> |
+| セキュリティ保護 | サインインは、多要素認証 (MFA) や Microsoft 365 と Windows 10 の組み込みセキュリティ機能により、マルウェア、悪意のある攻撃、データ損失から保護されています。 |
+| 管理対象 | リモート ワーカーのデバイスは、許可されたアプリを介して、セキュリティ設定を備えたクラウドから管理され、システム正常性への準拠を要求します。 |
+| 共同作業と生産性 | リモート ワーカーは、次の高度な共同作業の手法により、オンプレミスと同じように生産性を高めることができます。 <ul><li>Teams を使用したオンライン会議とチャット セッション。 </li><li>SharePoint と OneDrive を使用してグローバルなアクセシビリティとリアルタイムの共同作業を実現する、クラウドベースのファイル ストレージ用の共有ワークスペース。 </li><li>作業を分割して完了するための共有タスクとワークフロー。 </li></ul> |
+|||
 
-シームレスなサインイン エクスペリエンスを実現するには、Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
+シームレスなサインイン エクスペリエンスを実現するには、オンプレミスの Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
 
 ![リモート ワーカー向けの Microsoft 365 の基本インフラストラクチャ](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-
-たとえば COVID-19 危機への対応として、リモート ワーカーをサポートするために、Microsoft 365 Enterprise の機能を組み合わせることで、次のような高度な共同作業が可能になります。
-
-- オンライン会議およびチャット セッション。
-- グローバルなアクセシビリティとリアルタイムのコラボレーションを実現する、クラウドベースのファイル ストレージ用の共有ワークスペース。
-- 作業を分割して完了するための共有タスクとワークフロー。
-
-セキュリティを強化するために、Microsoft 365 には以下が含まれます。
-
-- 認証要件の適用、高リスクのサインインの検出と応答、選択したアプリと非準拠デバイスのブロック。
-- クラウド内の暗号化された接続とデジタル資産。
-- ファイルに対して誰が何を実行できるかを定義する権限。
-- Windows 10 デバイスを保護する包括的なセキュリティ機能。
-
-これらのリモート ワーカーの基準を満たすには、次の Microsoft 365 機能を使用します。
+リモート ワーカーの基準を満たすには、次の Microsoft 365 機能を使用します。
 
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
@@ -85,9 +73,9 @@ ms.locfileid: "44560464"
 
 1. [MFA を使用してリモート ワーカーのサインイン セキュリティを強化する](empower-people-to-work-remotely-secure-sign-in.md)
 2. [オンプレミスのアプリとサービスへのリモート アクセスを提供する](empower-people-to-work-remotely-remote-access.md)
-3. [デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する](empower-people-to-work-remotely-manage-endpoints.md)
-4. [リモート ワーカー向けの生産性向上アプリとサービスを展開する](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [コミュニケーション会場を作成する](empower-people-to-work-remotely-communication-venues.md)
+3. [セキュリティおよびコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)
+4. [デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する](empower-people-to-work-remotely-manage-endpoints.md)
+5. [リモート ワーカー向けの生産性向上アプリとサービスを展開する](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [リモート ワーカーをトレーニングし、使用状況のフィードバックに対処する](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![Microsoft 365 でリモート ワーカーを支援するための手順](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
