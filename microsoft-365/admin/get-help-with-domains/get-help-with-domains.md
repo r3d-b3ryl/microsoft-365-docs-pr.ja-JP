@@ -21,12 +21,11 @@ search.appverid:
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: Office 365 で独自のドメインを使用して、電子メール、web サイト、アカウントを使い始めることができます。 ドメイン、ドメインの変更、電子メールと web サイトの統合、ツールとヒントの取得などについて説明します。
-ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: MT
+ms.openlocfilehash: 5586744707580bee18e179a35a5ffd042ebe7579
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399922"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049680"
 ---
 # <a name="get-help-with-office-365-domains"></a>Office 365 ドメインのヘルプの表示
 
@@ -153,12 +152,11 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>作業の開始</h3>
+                        <h3>概要</h3>
                             <p><a href="../setup/add-domain.md">ドメインを確認する (自分のドメインを証明する)</a></p>
                             <p><a href="information-for-dns-records.md">DNS レコードの作成に必要な情報を収集する</a></p>
                             <p><a href="find-your-domain-registrar.md">ドメインのレジストラーを検索する</a></p>
                             <p><a href="buy-a-domain-name.md">ドメイン名を購入する</a></p>
-                            <p><a href="../setup/domains-faq.md#how-to-set-up-an-office-365-pilot">社内の少数の連絡先のために、カスタム ドメインを使ってパイロット環境を設定する</a></p>
                             <p><a href="domain-connect.md">GoDaddy ドメインを Office 365 にすばやく追加する</a></p>
                             <p><a href="create-dns-records-at-any-dns-hosting-provider.md">Office 365 サービスに必要な DNS レコードを追加</a>する手順を学習する</p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">ディレクトリ同期用に (.local ドメインなどの) 非ルーティング ドメインを準備する方法</a></p>
@@ -208,8 +206,7 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
                         <h3>変更を行う</h3>
                             <p><a href="find-and-fix-issues.md">ドメイン名または DNS レコードの変更後の問題を見つけて修正する</a></p>
                             <p><a href="../dns/add-or-edit-custom-dns-records.md">Office 365 でカスタムの DNS レコードを追加または更新</a></p>
-                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-office-365">Office 365 でカスタム サブドメインまたは複数のドメインを追加する</a></p>
-                            <p><a href="../setup/domains-faq.md#how-do-i-change-how-my-dns-records-are-managed-in-office-365">Office 365 による自分のドメインの DNS の管理方法を変更する</a></p>
+                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">Microsoft 365 でカスタムサブドメインまたは複数のドメインを追加する</a></p>
                             <p><a href="remove-a-domain.md">ドメインを削除する</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">オンプレミスのメール (たとえば、ディレクトリ サービスの使用) を使って統合するためにドメインを使用する</a></p>
                             <p><a href="../contact-support-for-business-products.md">その他の質問ですか。サポートに電話で問い合わせるか、サポート チケットを開く</a></p>

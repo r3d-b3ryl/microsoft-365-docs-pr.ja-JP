@@ -17,12 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: Exchange メールと Exchange パブリック フォルダーに特に適用される保持動作について説明します。
-ms.openlocfilehash: e19e790c23c5e61748f38fb22f96d2347acb144e
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
-ms.translationtype: HT
+ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874885"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049895"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>Exchange のアイテム保持ポリシーの詳細
 
@@ -51,7 +50,7 @@ ms.locfileid: "44874885"
 ![メールおよびパブリック フォルダーの保持フローの図](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **保持期間中、ユーザーがアイテムを変更または完全に削除した場合** (この操作は Shift キーと Delete キーを押すか、[削除済みアイテム] から削除して行います): アイテムは [回復可能なアイテム] フォルダーに移動 (編集する場合はコピー) されます。 ここで、タイマー ジョブが定期的に実行され、アイテム保持ポリシーの有効期間が過ぎたアイテムを特定します。このようなアイテムは、保持期間の最終日から 14 日以内に完全に削除されます。 既定の設定は 14 日間ですが、最長 30 日間まで設定できます。
-    
+
 2. 保存期間中に**アイテムが変更または削除されない場合**: メールボックス内のすべてのフォルダーで同じプロセスが定期的に実行され、保持期間が終了したアイテムを識別します。これらのアイテムは保持期間の終了後 14 日以内に完全に削除されます。 既定の設定は 14 日間ですが、最長 30 日間まで設定できます。 
 
 保持設定が保持のみ、または削除のみの場合、コンテンツ パスは保持か削除かで異なります。
@@ -70,13 +69,13 @@ ms.locfileid: "44874885"
 
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>アイテム保持ポリシーから特定の種類の Exchange アイテムを除外する
 
-PowerShell を使用して、アイテム保持ポリシーから特定の種類の Exchange アイテムを除外することができます。 たとえば、メールボックスでボイスメール メッセージ、IM 会話、その他の Skype for Business Online のコンテンツを除外できます。 予定表、メモ、タスク アイテムを除外することもできます。 この機能は、PowerShell を使用した場合にのみ使用できます。Microsoft 365 コンプライアンス センターのウィザードを使用してアイテム保持ポリシーを作成する場合は使用できません。
+保持設定が保持のみの場合、PowerShell を使用して、アイテム保持ポリシーから特定の種類の Exchange アイテムを除外することができます。 たとえば、メールボックスでボイスメール メッセージ、IM 会話、その他の Skype for Business Online のコンテンツを除外できます。 予定表、メモ、タスク アイテムを除外することもできます。 この機能は、PowerShell を使用した場合にのみ使用できます。Microsoft 365 コンプライアンス センターのウィザードを使用してアイテム保持ポリシーを作成する場合は使用できません。
   
 アイテム保持ポリシーで選択した Exchange アイテムの種類を除外するには、`ExcludedItemClasses` パラメーターを [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) および [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) コマンドレットで使用します。
 
 アイテム保持ポリシーのコマンドレットを使用するには、最初に[セキュリティ/コンプライアンス センターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)する必要があります。
 
-### <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
+## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
 ユーザーが組織を離れるときに、ユーザーのメールボックスがアイテム保持ポリシーに含まれていると、ユーザーの Microsoft 365 アカウントが削除されるときにメールボックスは非アクティブなメールボックスになります。 非アクティブなメールボックスのコンテンツは、メールボックスが非アクティブになる前に配置されたアイテム保持ポリシーがあれば、引き続きその適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
 

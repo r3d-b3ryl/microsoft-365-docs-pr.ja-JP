@@ -22,12 +22,11 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン管理に役立つドメインとそれに関連する DNS レコードについて説明します。
-ms.openlocfilehash: c9fee3488f7de3c0cc4b93be15ff49bd01469495
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
+ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035611"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049656"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -143,10 +142,6 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 ドメインのゾーン ファイルがドメイン レジストラー以外の場所にあるのはなぜですか? HiChina のようなドメイン レジストラーでドメイン名を登録することもできますが、DNS レコードは別の DNS ホスティング会社や Web ホスティング会社で管理されているかもしれません。 ドメインの NS レコードには、その情報が格納されます。これにより、すべての DNS サーバーが検索対象を把握できます。
 
 ::: moniker-end
-
-> [!NOTE]
-> Microsoft 365 でドメインをセットアップし、[Microsoft が DNS レコードをセットアップして管理する](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)ようにして、セットアップの一環として、[DNS 管理を Microsoft 365 に変更](../setup/domains-faq.md#change-dns-management-to-office-365)します。 
- 
 
 ::: moniker range="o365-worldwide"
 ## <a name="why-add-a-domain-in-office-365"></a>Office 365 でドメインを追加するのはなぜですか?

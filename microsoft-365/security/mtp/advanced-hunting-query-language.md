@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005848"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049699"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -151,7 +150,16 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ## <a name="get-help-as-you-write-queries"></a>クエリを記述するときにヘルプを参照する
 次の機能を利用して、クエリをより速く記述します。
 - **Autosuggest** : クエリを作成すると、高度な検索によって IntelliSense から候補が表示されます。 
-- **スキーマ リファレンス** — テーブルとその列のリストを含むスキーマ リファレンスが作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
+- **スキーマツリー** -テーブルとその列のリストを含むスキーマ表現は、作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
+- **[スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: テーブルと列の説明、およびサポートされるイベントの種類 ( `ActionType` 値) とサンプルクエリを含むポータル内のリファレンス
+
+## <a name="work-with-multiple-queries-in-the-editor"></a>エディターで複数のクエリを操作する
+クエリエディターは、複数のクエリを試すために、スクラッチパッドとして機能することができます。 複数のクエリを使用するには
+
+- 各クエリは空の行で区切ります。
+- クエリの任意の部分にカーソルを置き、クエリを実行する前に選択します。 これは、選択したクエリのみを実行します。 別のクエリを実行するには、必要に応じてカーソルを移動して、[**クエリの実行**] を選択します。
+
+![複数のクエリを使用したクエリエディターのイメージ](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>サンプル クエリを使用する
 

@@ -20,12 +20,11 @@ description: Microsoft 情報保護フレームワークの秘密度ラベルを
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e1a9d1144381ecc9c6b46d34f71c7a7741c6832
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819247"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936796"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -79,9 +78,6 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## <a name="what-sensitivity-labels-can-do"></a>機密ラベルでできること
 
-> [!NOTE]
-> メールとドキュメントには感度ラベルを適用するだけでなく、現在のプレビューでは、[Microsoft Teams、Microsoft 365 グループ、および SharePoint サイトで、秘密度のラベルを使用する](sensitivity-labels-teams-groups-sites.md)こともできます。
-
 After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
 - 電子メールのみ、または電子メールとドキュメントの両方の**暗号化**。 どのユーザーまたはグループがどのアクションを実行する権限を持つかを選択でき、権限を持つ期間も選択できます。 たとえば、他の組織の特定のグループのユーザーに対して、コンテンツにラベルが付けられてから 7 日間のみコンテンツを確認する権限を付与することができます。 または、管理者が割り当てるアクセス許可の代わりに、ユーザーがラベルを適用する際に、コンテンツへのアクセス許可の割り当てをユーザーが行えるようにもできます。 
@@ -97,9 +93,9 @@ After a sensitivity label is applied to an email or document, any configured pro
     文字数の長さ: 透かしで使用できる文字数は、255 文字に制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。
 
 
-- [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する (パブリック プレビュー)](sensitivity-labels-teams-groups-sites.md) ためにプレビューを選択している場合に、**サイトやグループなどのコンテナー内のコンテンツを保護します**。
+- [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)機能を有効にすると、**サイトやグループなどのコンテナー内のコンテンツを保護します**。
     
-    [**サイトとグループの設定**] の構成オプションは、プレビューを選択するまで表示されません。 このラベル構成によってドキュメントは自動的にラベルが付けされるのではなく、ラベル設定はドキュメントが格納されているコンテナへのアクセスを制御することによってコンテンツを保護します。 これらの設定には、プライバシー レベル、Microsoft 365 グループ所有者がゲストをグループに追加できるかどうか、およびアンマネージド デバイスに付与されるアクセス レベルが含まれます。
+    [**サイトとグループの設定**] の構成オプションは、この機能を有効にするまで表示されません。 このラベル構成によってドキュメントは自動的にラベルが付けされるのではなく、ラベル設定はドキュメントが格納されているコンテナへのアクセスを制御することによってコンテンツを保護します。 これらの設定には、プライバシー レベル、Microsoft 365 グループ所有者がゲストをグループに追加できるかどうか、およびアンマネージド デバイスに付与されるアクセス レベルが含まれます。
 
 - **Office アプリでラベルを自動的に適用するか、ラベルを推奨します。** ラベルを付ける機密情報のタイプを選択できます。ラベルは自動的に適用されることも、推奨するラベルを適用するようにユーザーに求めることもできます。 ラベルを推奨すると、選択したテキストがプロンプトに表示されます。 次に例を示します。
     

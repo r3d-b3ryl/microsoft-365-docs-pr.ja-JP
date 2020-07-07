@@ -19,18 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化する方法と、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にする理由について説明します。
-ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: HT
+ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399316"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015925"
 ---
 # <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
  
-組織の管理者は、組織内のユーザー向けのパスワード ポリシーを設定する必要があります。パスワード ポリシーの設定は複雑でわかりにくい場合があります。この記事では、パスワード攻撃からの組織の保護を強化するための推奨事項を示します。
+As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
 組織で Microsoft 365 パスワードが期限切れとなる頻度を決める場合は、「[Microsoft 365 のパスワード有効期限ポリシーを設定する](../manage/set-password-expiration-policy.md)」を参照してください。
+
+Microsoft 365 パスワードの詳細については、これらの[関連記事](#related-articles)を参照してください。
   
 ## <a name="understanding-password-recommendations"></a>パスワードの推奨事項について
 
@@ -38,17 +39,17 @@ ms.locfileid: "44399316"
   
 - **一般的な攻撃に対抗する** これは、ユーザーがパスワードを入力する場所 (マルウェアを適切に検出できる既知の信頼できるデバイス、検証済みサイト) の選択、およびパスワード (長さと一意性) の選択に関係します。
 
-- **成功した攻撃を含める** 成功したハッカーの攻撃を含めるのは、特定のサービスへの公開を制限するためです。また、ユーザーのパスワードが盗まれた場合に、その損害を完全に防ぐことにもなります。たとえば、ソーシャル ネットワーク資格情報の侵害により、銀行口座が攻撃を受けやすくならないようにしたり、十分に保護されていないアカウントで重要なアカウントのリセット リンクが受け入れられないようにしたりします。
+- **Containing successful attacks** Containing successful hacker attacks is about limiting exposure to a specific service, or preventing that damage altogether, if a user's password gets stolen. For example, ensuring that a breach of your social networking credentials doesn't make your bank account vulnerable, or not letting a poorly guarded account accept reset links for an important account.
 
-- **人間の性質を理解する** 多くの有効なパスワード手法では、自然な人間の行動には十分対応できません。調査により、ユーザーに適用されるほとんどすべてのルールはパスワードの品質を弱化することがわかっているため、人間の性質を理解することが重要です。長さの要件、特殊文字の要件、パスワード変更の要件はすべて、パスワードを正規化することになるため、攻撃者はパスワードを簡単に推測したり、解読したりすることができるようになります。
+- **Understanding human nature** Many valid password practices fail in the face of natural human behaviors. Understanding human nature is critical because research shows that almost every rule you impose on your users will result in a weakening of password quality. Length requirements, special character requirements, and password change requirements all result in normalization of passwords, which makes it easier for attackers to guess or crack passwords.
 
 ## <a name="password-guidelines-for-administrators"></a>管理者向けのパスワード ガイドライン
 
-より安全なパスワード システムの最大の目的は、パスワードの多様性です。パスワードを推測しにくくするためのパスワード ポリシーが必要です。組織を可能な限り安全な状態に保つための推奨事項をいくつか以下に示します。
+The primary goal of a more secure password system is password diversity. You want your password policy to contain lots of different and hard to guess passwords. Here are a few recommendations for keeping your organization as secure as possible.
   
 - 8 桁の最小長要件を維持する (長ければよいとは限りません)
 
-- 文字構成の要件を求めない。たとえば、\*&amp;(^%$ などです。
+- Don't require character composition requirements. For example, \*&amp;(^%$
 
 - ユーザー アカウントの必須の定期的なパスワード リセットを求めない
 
@@ -63,7 +64,7 @@ ms.locfileid: "44399316"
 
 ### <a name="password-guidance-for-your-users"></a>ユーザー向けパスワード ガイダンス
 
-組織内のユーザー向けパスワード ガイダンスをいくつか以下に示します。ユーザーに以下の推奨事項を認識してもらい、組織レベルで推奨されるパスワード ポリシーを適用するようにしてください。
+Here's some password guidance for users in your organization. Make sure to let your users know about these recommendations and enforce the recommended password policies at the organizational level.
   
 - 他の Web サイトで使用しているものと同じ、または似たようなパスワードは使用しない
 
@@ -77,15 +78,15 @@ ms.locfileid: "44399316"
   
 ### <a name="password-expiration-requirements-for-users"></a>ユーザー向けパスワードの有効期限の要件
 
-パスワードの有効期限の要件にはメリットもありますがデメリットのほうが多くなります。これらの要件に従うと、ユーザーは互いに密接に関係している一連の単語と数字で構成される、予測可能なパスワードを選択することになるためです。このような場合、次のパスワードは前のパスワードに基づいて予測することができます。パスワードの有効期限の要件に抑制効果はありません。サイバー犯罪者は、ほとんどの場合、資格情報を侵害するとすぐに使用するためです。
+Password expiration requirements do more harm than good, because these requirements make users select predictable passwords, composed of sequential words and numbers which are closely related to each other. In these cases, the next password can be predicted based on the previous password. Password expiration requirements offer no containment benefits because cyber criminals almost always use credentials as soon as they compromise them.
   
 ### <a name="requiring-long-passwords"></a>長いパスワードを要求する
 
-パスワードの長さ要件 (約 10 文字を超える) により、ユーザーの行動が予測可能で望ましくないものとなる可能性があります。たとえば、16 文字のパスワードを使用するよう求められたユーザーは、文字の長さ要件を満たすものの、推測しにくいものではない **fourfourfourfour** や **passwordpassword** などの繰り返しパターンを選ぶ可能性があります。さらに、長さ要件は、ユーザーがパスワードを書き留めたり、ドキュメントに暗号化されていないパスワードを保存するなど、他の安全でない手法を採用する機会を増やすことになります。ユーザーが一意のパスワードを考えるように、適切な 8 文字の最小長要件を維持することをお勧めします。 
+Password length requirements (greater than about 10 characters) can result in user behavior that is predictable and undesirable. For example, users who are required to have a 16-character password may choose repeating patterns like **fourfourfourfour** or **passwordpassword** that meet the character length requirement but aren't hard to guess. Additionally, length requirements increase the chances that users will adopt other insecure practices, such as writing their passwords down, re-using them, or storing them unencrypted in their documents. To encourage users to think about a unique password, we recommend keeping a reasonable 8-character minimum length requirement. 
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>複数の文字セットの使用を要求する
 
-パスワードの複雑さ要件により、キー スペースが減り、ユーザーが予測可能な方法で行動することになり、これでは元も子もありません。ほとんどのシステムでは、ある程度のパスワードの複雑さ要件を適用します。たとえば、パスワードには、次のカテゴリの 3 つすべての文字が必要となります。
+Password complexity requirements reduce key space and cause users to act in predictable ways, doing more harm than good. Most systems enforce some level of password complexity requirements. For example, passwords need characters from all three of the following categories:
   
 - 大文字
 
@@ -93,7 +94,7 @@ ms.locfileid: "44399316"
 
 - 英数字以外の文字
 
-ほとんどのユーザーは似たようなパターンを使用します。たとえば、最初の位置が大文字、最後が記号、最後の 2 つが数字などです。サイバー犯罪者はこれを認識しているため、最も一般的な置換文字、つまり、"s" の場合は "$"、"a" の場合は "@"、"l" の場合は "1" を使用して辞書攻撃を実行します。ユーザーに大文字、小文字、数字、特殊文字の組み合わせを選択させるのは逆効果です。複雑さ要件によっては、セキュリティで保護された覚えやすいパスワードをユーザーが使用できないようにするものもあり、ユーザーにセキュリティ レベルの低い覚えにくいパスワードを思い付かせることになります。
+Most people use similar patterns, for example, a capital letter in the first position, a symbol in the last, and a number in the last 2. Cyber criminals know this, so they run their dictionary attacks using the most common substitutions, "$" for "s", "@" for "a," "1" for "l". Forcing your users to choose a combination of upper, lower, digits, special characters has a negative effect. Some complexity requirements even prevent users from using secure and memorable passwords, and force them into coming up with less secure and less memorable passwords.
   
 ## <a name="successful-patterns"></a>成功パターン
 
@@ -101,15 +102,15 @@ ms.locfileid: "44399316"
   
 ### <a name="ban-common-passwords"></a>よく使われるパスワードを禁止する
 
-ユーザーがパスワードを作成するときに認識させる最も重要なパスワード要件は、パスワードの総当たり攻撃に対する組織の脆弱性を減らすためによく使われるパスワードの使用を禁止することです。よく使われるユーザー パスワードには、 **abdcefg**、 **password**、 **monkey** などがあります。
+The most important password requirement you should put on your users when creating passwords is to ban the use of common passwords to reduce your organization's susceptibility to brute force password attacks. Common user passwords include, **abdcefg**, **password**, **monkey**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>組織のパスワードを他の場所で再利用しないようにユーザーを教育する
 
-組織内のユーザーに伝える最も重要なメッセージの 1 つは、組織のパスワードを他の場所で再利用しないということです。外部の Web サイトで組織のパスワードを使用すると、サイバー犯罪者がこれらのパスワードを侵害する可能性が高くなります。
+One of the most important messages to get across to users in your organization is to not re-use their organization password anywhere else. The use of organization passwords in external websites greatly increases the likelihood that cyber criminals will compromise these passwords.
   
 ### <a name="enforce-multi-factor-authentication-registration"></a>多要素認証の登録を適用する
 
-ユーザーが、代替メール アドレス、電話番号、プッシュ通知用に登録されたデバイスなどの連絡先とセキュリティ情報を更新し、セキュリティ チャレンジに応答して、セキュリティ イベントに関する通知を受け取れるようにします。更新された連絡先とセキュリティ情報は、ユーザーが万が一パスワードを忘れてしまった場合、または他のユーザーがアカウントを引き継ごうとした場合の本人確認に役立ちます。また、ログイン試行やパスワード変更など、セキュリティ イベントが発生した場合には、帯域外の通知チャネルが提供されます。 
+Make sure your users update contact and security information, like an alternate email address, phone number, or a device registered for push notifications, so they can respond to security challenges and be notified of security events. Updated contact and security information helps users verify their identity if they ever forget their password, or if someone else tries to take over their account. It also provides an out of band notification channel in the case of security events such as login attempts or changed passwords. 
   
 詳細については、「[Office 365 ユーザー用の多要素認証を設定する](../security-and-compliance/set-up-multi-factor-authentication.md)」を参照してください。
   
@@ -132,3 +133,13 @@ ms.locfileid: "44399316"
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020) (2015 年のワースト パスワード)
 
 - [Web からファイルをダウンロードする](https://go.microsoft.com/fwlink/p/?linkid=861029)
+
+## <a name="related-articles"></a>関連記事
+
+[パスワードをリセットする](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[個別のユーザーのパスワードを無期限に設定する](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[ユーザーが自分でパスワードをリセットできるようにする](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[ユーザーのパスワードを再送信する - 管理者向けヘルプ](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

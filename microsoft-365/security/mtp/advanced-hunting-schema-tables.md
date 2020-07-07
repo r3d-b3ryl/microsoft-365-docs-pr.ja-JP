@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899365"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046049"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -31,10 +30,22 @@ ms.locfileid: "44899365"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[高度な捜索](advanced-hunting-overview.md)スキーマは、イベント情報またはマシンとエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的に構築するには、高度な捜索スキーマのテーブルと列を理解する必要があります。
+[高度な](advanced-hunting-overview.md)検索スキーマは、デバイス、アラート、id、およびその他のエンティティの種類に関するイベント情報または情報を提供する複数のテーブルで構成されています。 複数のテーブルにまたがるクエリを効果的に構築するには、高度な捜索スキーマのテーブルと列を理解する必要があります。
+
+## <a name="get-schema-information-in-the-security-center"></a>セキュリティセンターでスキーマ情報を取得する
+クエリを作成する際には、組み込みスキーマ参照を使用して、スキーマ内の各テーブルに関する以下の情報をすばやく取得します。
+
+- [**テーブルの説明**]: テーブルに格納されているデータの種類と、そのデータのソース。
+- **列**-表のすべての列。
+- **アクションの種類**-列で、 `ActionType` テーブルでサポートされているイベントの種類を表す値を指定できます。 これは、イベント情報を含むテーブルに対してのみ提供されます。
+- **サンプルクエリ**-テーブルを使用する方法を示すクエリの例です。
+
+### <a name="access-the-schema-reference"></a>スキーマリファレンスにアクセスする
+スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [**参照の表示**] アクションを選択します。 [**スキーマ参照**] を選択して、テーブルを検索することもできます。   
+
+![ポータル内スキーマリファレンスへのアクセス方法を示す画像 ](../../media/mtp-ah/ah-reference.png) 
 
 ## <a name="schema-tables"></a>スキーマ テーブル
-
 次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度な捜索画面のスキーマ表現の一部として、セキュリティ センターにも一覧表示されます。
 
 | テーブル名 | 説明 |
@@ -47,7 +58,7 @@ ms.locfileid: "44899365"
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | ファイルの作成、変更、およびその他のファイル システム イベント |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL の読み込みイベント |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | OS 情報を含むマシン情報 |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | サインインとその他の認証イベント |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | デバイス上のサインインとその他の認証イベント |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | ネットワーク接続と関連イベント |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | アダプタ、IP アドレス、MAC アドレス、および接続されたネットワークとドメインを含むマシンのネットワーク プロパティ |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | プロセスの作成と関連イベント |
@@ -61,10 +72,10 @@ ms.locfileid: "44899365"
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 がメールを受信者のメールボックスに配信した後の、配信後に発生するセキュリティイベント |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | メールの Url に関する情報 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Azure Active Directory を含む、さまざまなソースからのアカウント情報 |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory およびその他の Microsoft online services によって記録された認証イベント |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory と Microsoft online services の認証イベント |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Active Directory オブジェクト (ユーザー、グループ、デバイス、ドメインなど) に対して実行されるクエリアクティビティ |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

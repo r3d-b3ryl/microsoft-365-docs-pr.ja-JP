@@ -16,17 +16,16 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: データ保護と規制の要件を満たすために、Microsoft Service Trust Portal のコンプライアンス マネージャーの使用方法をご説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815598"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016258"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft コンプライアンス マネージャー (クラシック)
 
 > [!NOTE]
-> このドキュメントでは、この製品の以前のバージョンついて説明します。 このバージョンのコンプライアンス マネージャーは使用しないことを強くお勧めします。代わりに、新しい [Microsoft コンプライアンス スコア](compliance-score.md)の使用をお勧めします。
+> このドキュメントでは、この製品の以前のバージョンついて説明します。 ユーザーは、*このバージョンのコンプライアンス マネージャーを使用しないことを強くお勧めします*。 **コンプライアンス ネージャーの現在のプレビュー バージョンを使用している場合は、[コンプライアンス マネージャー (プレビュー) のドキュメント](working-with-compliance-manager.md)を参照してください。**
 
  *コンプライアンス マネージャーは、21Vianet が運用している Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High)、Office 365 Department of Defense では使用できません。*
   
@@ -227,7 +226,7 @@ Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 
   
  **脅威**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**必須** <br/> |**任意** <br/> |
 |**予防** <br/> |高リスク  <br/> |中程度のリスク  <br/> |
@@ -244,7 +243,7 @@ Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**内部**<br/>||**外部**<br/>||||
+|<br>|**内部**<br/>|<br>|**外部**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*悪意*<br/>|*偶発的*<br/>|*悪意*<br/>|*偶発的*<br/>|||
 |**機密性**<br/>|(高、中、低)  <br/> |(高、中、低)  <br/> |(高、中、低)  <br/> |(高、中、低)|
