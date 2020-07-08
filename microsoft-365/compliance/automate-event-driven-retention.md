@@ -15,11 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: このトピックでは、Microsoft 365 REST API を使用して、イベントによってビジネス プロセス フローの自動化の保持をセットアップする方法について説明します。
-ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: c97106597733460caeab8d1d398ff81e23dd2727
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046065"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068116"
 ---
 # <a name="automate-event-based-retention"></a>イベント ベースの保持を自動化する
 
@@ -161,7 +162,7 @@ Rest API は一連の HTTP 操作 (メソッド) をサポートするサービ�
 REST API を呼び出すサンプル コード
 
 - **方法**: 投稿
-- **URL**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **ヘッダー**: キー = Content-Type、値 = application/atom+xml
 - **本文**:
     
@@ -297,7 +298,7 @@ REST API を呼び出すサンプル コード
 | 401               | 承認に失敗しました                                 |
 | 403               | 認証に失敗しました                                |
 
-#### <a name="using-powershell-ver6-or-higher-or-any-http-client"></a>PowerShell (ver.6 以降) または任意の HTTP クライアントの使用
+#### <a name="using-powershell-version-6-or-later-or-any-http-client"></a>PowerShell (バージョン6 またはそれ以降) または任意の HTTP クライアントを使用
 
 手順 1: PowerShell に接続します。
 
@@ -451,7 +452,9 @@ A manufacturing company that produces different lines of products creates many m
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>リダイレクト 302 応答結果を使用して REST API を呼び出す
 
-1. REST API URL <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> を使用して、POST 保持イベント呼び出しを実行します (全体管理者のアクセス許可が必要です)。
+1. REST API の URL を使用して、次のように保持後のイベントを呼び出す: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+    
+    全体管理者のアクセス許可が必要です。
 
 2. 応答コードを確認します。 302 の場合、応答ヘッダーの場所プロパティから、リダイレクトされた URL を取得します
 
