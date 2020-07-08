@@ -20,12 +20,11 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: 29cf69930cdd99d3023a65e55e1186990a650e85
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
-ms.translationtype: HT
+ms.openlocfilehash: f2cf60eac1197ed7be3fd8cbbe69e41a37614f86
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900801"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048292"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -165,7 +164,7 @@ For Exchange items, you can include keywords. You can refine your query by using
 > [!NOTE]
 > イベントを作成すると、既にラベル付けされてインデックスが作成されているコンテンツの保持設定が有効になります。 イベントが作成された後に保持ラベルが新しいコンテンツに追加された場合は、同じ詳細を使用して新しいイベントを作成する必要があります。
 
-イベントを削除しても、既にラベル付けされているラベル付きコンテンツに対して現在有効になっている保持設定は取り消されません。 それを行うには、同じ詳細を使用して新しいイベントを作成しますが、日付は空白のままにします。 
+イベントを削除しても、既にラベル付けされているコンテンツに対して現在有効になっている保持設定は取り消されません。 それを行うには、同じ詳細を使用して新しいイベントを作成しますが、日付は空白のままにします。 
 
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>コンテンツ検索を使用して、特定のラベルまたはアセット ID が適用されたすべてのコンテンツを検索する
 

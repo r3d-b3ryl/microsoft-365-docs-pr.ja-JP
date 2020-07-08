@@ -20,12 +20,11 @@ description: 任意の DNS ホスティング プロバイダーで Microsoft 36
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: a9809dda90bc9eb4a8241f94f48f7f7842df9af9
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
-ms.translationtype: HT
+ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419126"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049668"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -127,7 +126,7 @@ SPF はスプーフィングの防止に役立ちますが、SPF では保護で
 
 レコードを保存します。
 
-#### <a name="srv-record-feild-restrictions-and-workarounds"></a>SRV レコードのフィールドの制限と回避策
+#### <a name="srv-record-field-restrictions-and-workarounds"></a>SRV レコードのフィールドの制限と回避策
 一部のホスティング プロバイダーは、SRV レコード内のフィールド値を制限します。 これらの制限の一般的な回避策をいくつか紹介します。
 
 ##### <a name="name"></a>名前

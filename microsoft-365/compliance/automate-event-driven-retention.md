@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 description: このトピックでは、Microsoft 365 REST API を使用して、イベントによってビジネス プロセス フローの自動化の保持をセットアップする方法について説明します。
-ms.openlocfilehash: e3e58aab9bdcb5debcfe805b1ebdfd637c1d3851
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035652"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046065"
 ---
 # <a name="automate-event-based-retention"></a>イベント ベースの保持を自動化する
 
@@ -206,7 +206,7 @@ REST API を呼び出すサンプル コード
 
 |パラメーター|説明|Notes|
 |--- |--- |--- |
-|<d:Name></d:Name>|イベントの一意の名前を入力します。|末尾にスペースおよび以下の文字を含めることはできません: % * \ & < > | # ? , : ;|
+|<d:Name></d:Name>|イベントの一意の名前を入力します。|末尾にスペースおよび以下の文字を含めることはできません: % * \ & < \> \| # ? , : ;|
 |<d:EventType></d:EventType>|イベントの種類の名前 (または GUID) を入力します。|Example: “Employee termination”. Event type has to be associated with a retention label.|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|「ComplianceAssetId:」と従業員 ID を入力します|例: 「ComplianceAssetId: 12345」|
 |<d:EventDateTime></d:EventDateTime>|イベントの日時|形式: yyyy-MM-ddTHH:mm:ssZ、例: 2018-12-01T00:00:00Z
@@ -223,16 +223,18 @@ REST API を呼び出すサンプル コード
 
 ##### <a name="get-events-based-on-time-range"></a>時間範囲に基づいてイベントを取得する
 
+- **メソッド**: GET
 
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
 
-|メソッド|GET||
-|--- |--- |--- |
-|URL|https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16||
-|ヘッダー|Content-Type|application/atom+xml|
-||||
-|認証|基本||
-|ユーザー名|“Complianceuser”||
-|パスワード|“Compliancepassword”||
+- **ヘッダー**: キー = Content-Type、値 = application/atom+xml
+
+- **認証**: 基本
+
+- **ユーザー名**: 「Complianceuser」
+
+- **パスワード**: 「Compliancepassword」
+
 
 ##### <a name="response-codes"></a>応答コード
 
@@ -246,13 +248,19 @@ REST API を呼び出すサンプル コード
 
 ##### <a name="get-an-event-by-id"></a>ID でイベントを取得する
 
-| メソッド         | GET   |                      |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| URL            | [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\)) |                      |
-| ヘッダー         | Content-Type                                                                                                                                                                                                                                                       | application/atom+xml |
-| 認証 | 基本                                                                                                                                                                                                                                                              |                      |
-| ユーザー名       | “Complianceuser”                                                                                                                                                                                                                                                   |                      |
-| パスワード       | “Compliancepassword”                                                                                                                                                                                                                                               |                      |
+- **メソッド**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **ヘッダー**: キー = Content-Type、値 = application/atom+xml
+
+- **認証**: 基本
+
+- **ユーザー名**: 「Complianceuser」
+
+- **パスワード**: 「Compliancepassword」
+
+
 
 ##### <a name="response-codes"></a>応答コード
 
@@ -266,13 +274,18 @@ REST API を呼び出すサンプル コード
 
 ##### <a name="get-an-event-by-name"></a>名前でイベントを取得する
 
-| メソッド         | GET       |                      |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| URL            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
-| ヘッダー        | Content-Type                                                                                                                                 | application/atom+xml |
-| 認証 | 基本                                                                                                                                        |                      |
-| ユーザー名       | “Complianceuser”                                                                                                                             |                      |
-| パスワード       | “Compliancepassword”                                                                                                                         |                      |
+- **メソッド**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **ヘッダー**: キー = Content-Type、値 = application/atom+xml
+
+- **認証**: 基本
+
+- **ユーザー名**: 「Complianceuser」
+
+- **パスワード**: 「Compliancepassword」
+
 
 ##### <a name="response-codes"></a>応答コード
 

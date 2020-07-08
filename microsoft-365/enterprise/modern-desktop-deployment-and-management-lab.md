@@ -15,12 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
-ms.translationtype: HT
+ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869858"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049918"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
@@ -52,12 +51,13 @@ ms.locfileid: "44869858"
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
 
-詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager (バージョン 1910) 用にラボは更新されました。 
+詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager 用にラボは更新されました。 
 
 ### <a name="device-and-app-readiness"></a>デバイスとアプリの準備
 
   - Desktop Analytics
   - 新機能 新しい Microsoft Edge の展開と更新 
+  - 新機能! クラウド管理ゲートウェイ (CMG) のインストールと構成 
   - Internet Explorer モード 
   - Application Guard 
 
@@ -92,6 +92,7 @@ ms.locfileid: "44869858"
   - Windows Defender Exploit Guard
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
+  - 新機能! エンドポイントのセキュリティ 
 
 ### <a name="os-deployment-and-feature-updates"></a>OS の展開と機能の更新プログラム
 
@@ -105,8 +106,10 @@ ms.locfileid: "44869858"
   - グループ ポリシーを使用した Windows Update の管理
   - Configuration Manager と Intune を使用した Windows 10 のサービス
   - Configuration Manager を使用した Microsoft 365 Apps for enterprise のサービス
+  - 新機能! 構成マネージャーと Intune を使用した Office の更新
+  - 新機能! Microsoft Teams をインストールする 
 
-### <a name="new-windows-virtual-desktop"></a>新機能 ! Windows Virtual Desktop
+### <a name="new-windows-virtual-desktop"></a>新機能! Windows Virtual Desktop
   - Windows Virtual Desktop: 準備、展開、最適化 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード

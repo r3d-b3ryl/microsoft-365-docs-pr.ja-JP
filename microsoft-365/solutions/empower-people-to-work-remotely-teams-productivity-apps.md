@@ -1,5 +1,5 @@
 ---
-title: 手順 4. リモートワーカー向けの生産性向上アプリとサービスを展開する
+title: 手順 5.  リモートワーカー向けの生産性向上アプリとサービスを展開する
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,13 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
-ms.translationtype: HT
+ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560449"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005964"
 ---
-# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>手順 4. リモートワーカー向けの生産性向上アプリとサービスを展開する
+# <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>手順 5.  リモートワーカー向けの生産性向上アプリとサービスを展開する
 
 生産性を高めるには、リモートワーカー間のコミュニケーションとコラボレーションが重要です。 会議、音声やテキストでのチャット、新しいコンテンツの作成と情報やファイルの共有、メールのやりとり、予定表やタスクの管理を行う必要があります。 Microsoft 365 は、次の主要な機能すべてをクラウドベースのサービスで実現します。
 
@@ -90,9 +89,9 @@ Microsoft 365 アプリは、従業員がいつでもどこからでもシーム
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>生産性向上アプリとサービスに関するユーザー トレーニング リソース
 
-- [Office と Office 365 についてユーザーをトレーニングする](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
+- [Office と Microsoft 365 についてユーザーをトレーニングする](https://support.microsoft.com/office/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [Web 用 Office を使用](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
-[手順 5](empower-people-to-work-remotely-communication-venues.md) を続行して、リモート ワーカーの役に立つ追加のコミュニケーションの場を作成します。
+[手順 6](empower-people-to-work-remotely-train-monitor-usage.md) に進んで、ユーザーをトレーニングし、その成功を監視します。

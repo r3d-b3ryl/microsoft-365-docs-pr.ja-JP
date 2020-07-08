@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 02/24/2020
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -19,12 +19,11 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: 52cb0d00d0c01adc34ee480f6daca9a6b509c671
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818809"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039380"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -45,9 +44,8 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 
 次の表は、各プランに含まれる機能をまとめたものです。
 
-|||
+| Office 365 ATP プラン 1 | Office 365 ATP プラン 2 |
 |---|---|
-|**Office 365 ATP プラン 1**|**Office 365 ATP プラン 2**|
 |構成、保護、および検出機能:<br/>[安全な添付ファイル](atp-safe-attachments.md)<br/>[安全なリンク](atp-safe-links.md)<br/>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)<br/>[ATPのフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>[リアルタイムの検出](threat-explorer.md)|Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:<br/>[脅威トラッカー](threat-trackers.md)<br/>[脅威エクスプローラー](threat-explorer.md)<br/>[自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻撃シミュレータ](attack-simulator.md)|
 |
 
@@ -56,6 +54,8 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 - Office 365 ATP プラン 1 は、Microsoft 365 Business Premium に含まれています。
 
 - Office 365 ATP プラン 1 および Office 365 ATP プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして使用できます。 詳細については、「[ATP プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+
+- [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Office 365 ATP プランには含まれません) を持つユーザーのみが利用できます。
 
 - 現在のサブスクリプションに Office 365 ATP が含まれていない場合は、[販売員に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、ATP が組織でどのように機能するかを確認してください。
 
