@@ -1,5 +1,5 @@
 ---
-title: Office 365 ドメインのヘルプの表示
+title: Microsoft 365 ドメインのヘルプを表示する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
-description: Office 365 で独自のドメインを使用して、電子メール、web サイト、アカウントを使い始めることができます。 ドメイン、ドメインの変更、電子メールと web サイトの統合、ツールとヒントの取得などについて説明します。
-ms.openlocfilehash: 5586744707580bee18e179a35a5ffd042ebe7579
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+description: Microsoft 365 の電子メール、web サイト、アカウントに独自のドメインを使い始めることができます。 ドメイン、ドメインの変更、電子メールと web サイトの統合、ツールとヒントの取得などについて説明します。
+ms.openlocfilehash: e29afe52d0efa8fbec831ff1ea3459322b2d3a22
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049680"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079751"
 ---
-# <a name="get-help-with-office-365-domains"></a>Office 365 ドメインのヘルプの表示
+# <a name="get-help-with-microsoft-365-domains"></a>Microsoft 365 ドメインのヘルプを表示する
 
-Office 365 のメール、Web サイト、アカウント用に独自のドメインを使い始めるには、以下のリソースを使用します。 
+これらのリソースを使用して、Microsoft 365 の電子メール、web サイト、アカウントに独自のドメインを使い始めることができます。 
  
 <ul class="panelContent cardsFTitle">
     <li>
@@ -43,7 +44,7 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 にユーザーとドメインを追加する</h3>
+                        <h3>Microsoft 365 にユーザーとドメインを追加する</h3>
                     </div>
                 </div>
             </div>
@@ -79,7 +80,7 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>GoDaddy ドメインを Office 365 にすばやく追加する</h3>
+                        <h3>GoDaddy ドメインを Microsoft 365 にすばやく追加する</h3>
                     </div>
                 </div>
             </div>
@@ -140,8 +141,8 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
                             <p><a href="dns-basics.md">ドメインと DNS の概要</a></p>
                             <p><a href="../setup/domains-faq.md?#why-do-i-have-an-onmicrosoftcom-domain">初期 onmicrosoft ドメインについて学習する</a></p>
                             <p><a href="../setup/add-domain.md">ドメインの追加または DNS レコードの変更の現在のメールに対する影響</a></p>
-                            <p><a href="../setup/domains-faq.md">Office 365 での DNS 管理のしくみ</a></p>
-                            <p><a href="https://go.microsoft.com/fwlink/p/?LinkId=402693">ドメインの Office 365 サービスの説明を読む</a></p>
+                            <p><a href="../setup/domains-faq.md">Microsoft 365 での DNS 管理の仕組み</a></p>
+                            <p><a href="https://go.microsoft.com/fwlink/p/?LinkId=402693">ドメインに関する Microsoft 365 サービスの説明を読む</a></p>
                     </div>
                 </div>
             </div>
@@ -152,13 +153,13 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>概要</h3>
+                        <h3>作業の開始</h3>
                             <p><a href="../setup/add-domain.md">ドメインを確認する (自分のドメインを証明する)</a></p>
                             <p><a href="information-for-dns-records.md">DNS レコードの作成に必要な情報を収集する</a></p>
                             <p><a href="find-your-domain-registrar.md">ドメインのレジストラーを検索する</a></p>
                             <p><a href="buy-a-domain-name.md">ドメイン名を購入する</a></p>
-                            <p><a href="domain-connect.md">GoDaddy ドメインを Office 365 にすばやく追加する</a></p>
-                            <p><a href="create-dns-records-at-any-dns-hosting-provider.md">Office 365 サービスに必要な DNS レコードを追加</a>する手順を学習する</p>
+                            <p><a href="domain-connect.md">GoDaddy ドメインを Microsoft 365 にすばやく追加する</a></p>
+                            <p><a href="create-dns-records-at-any-dns-hosting-provider.md">Microsoft 365 サービスに必要な DNS レコードを追加</a>するためのステップバイステップのヘルプを取得する</p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">ディレクトリ同期用に (.local ドメインなどの) 非ルーティング ドメインを準備する方法</a></p>
                             <p><a href="../setup/domains-faq.md">ドメイン FAQ</a></p>
                     </div>
@@ -171,12 +172,12 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Office 365 用の DNS レコードを作成する</h3>
+                        <h3>Microsoft 365 の DNS レコードを作成する</h3>
                             <p><a href="../dns/create-dns-records-at-godaddy.md">GoDaddy で DNS レコードを作成する</a></p>
                             <p><a href="../dns/create-dns-records-at-1-1-internet.md">1&1 IONOS で DNS レコードを作成します。</a></p>
                             <p><a href="../dns/create-dns-records-at-network-solutions.md">ネットワークソリューションで DNS レコードを作成する</a></p>
                             <p><b>多くの一般的なプロバイダーのヘルプ:</b></p> 
-                            <P><a href="create-dns-records-at-any-dns-hosting-provider.md">DNS レコードを管理するときに Office 365 の DNS レコードを作成する</a></p>
+                            <P><a href="create-dns-records-at-any-dns-hosting-provider.md">DNS レコードを管理するときに Microsoft 365 の DNS レコードを作成する</a></p>
                     </div>
                 </div>
             </div>
@@ -187,12 +188,12 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>ネーム サーバーを Office 365 に変更する</h3>
-                            <p><a href="../dns/change-nameservers-at-1-1-internet.md">Office 365 をセットアップするためにネームサーバーを変更する&1 IONOS</a></p>
-                            <p><a href="../dns/change-nameservers-at-network-solutions.md">Network Solutions で Office 365 をセットアップするためにネームサーバーを変更する</a></p>
-                            <p><a href="domain-connect.md">GoDaddy ドメインを Office 365 にすばやく追加する</a></p>
+                        <h3>ネームサーバーを Microsoft 365 に変更する</h3>
+                            <p><a href="../dns/change-nameservers-at-1-1-internet.md">IONOS 1 を&使用するように Microsoft 365 をセットアップするためにネームサーバーを変更</a></p>
+                            <p><a href="../dns/change-nameservers-at-network-solutions.md">ネットワークソリューションを使用して Microsoft 365 をセットアップするためにネームサーバーを変更する</a></p>
+                            <p><a href="domain-connect.md">GoDaddy ドメインを Microsoft 365 にすばやく追加する</a></p>
                             <p><b>よく使用されるドメインレジストラーのヘルプ:</b></P> 
-                            <p><a href="../get-help-with-domains/set-up-your-domain-host-specific-instructions.md">ネームサーバーを Office 365 に変更してレコードを設定します。</a></p>
+                            <p><a href="../get-help-with-domains/set-up-your-domain-host-specific-instructions.md">ネームサーバーを Microsoft 365 に変更して、レコードがセットアップされるようにします。</a></p>
                     </div>
                 </div>
             </div>
@@ -205,10 +206,10 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
                     <div class="cardText">
                         <h3>変更を行う</h3>
                             <p><a href="find-and-fix-issues.md">ドメイン名または DNS レコードの変更後の問題を見つけて修正する</a></p>
-                            <p><a href="../dns/add-or-edit-custom-dns-records.md">Office 365 でカスタムの DNS レコードを追加または更新</a></p>
+                            <p><a href="../dns/add-or-edit-custom-dns-records.md">Microsoft 365 でカスタム DNS レコードを追加または編集する</a></p>
                             <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">Microsoft 365 でカスタムサブドメインまたは複数のドメインを追加する</a></p>
                             <p><a href="remove-a-domain.md">ドメインを削除する</a></p>
-                            <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">オンプレミスのメール (たとえば、ディレクトリ サービスの使用) を使って統合するためにドメインを使用する</a></p>
+                            <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">Microsoft 365 とオンプレミス環境との統合</a></p>
                             <p><a href="../contact-support-for-business-products.md">その他の質問ですか。サポートに電話で問い合わせるか、サポート チケットを開く</a></p>
                     </div>
                 </div>
@@ -221,7 +222,7 @@ Office 365 のメール、Web サイト、アカウント用に独自のドメ�
                 <div class="card">
                     <div class="cardText">
                         <h3>その他のビデオ</h3>
-                            <p><a href="../dns/create-dns-records-at-godaddy.md">Office 365 で GoDaddy ドメインを設定</a></p>
+                            <p><a href="../dns/create-dns-records-at-godaddy.md">Microsoft 365 での GoDaddy ドメインのセットアップ</a></p>
                     </div>
                 </div>
             </div>
