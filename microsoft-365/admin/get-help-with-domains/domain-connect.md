@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: ドメイン接続が有効なレジストラーを使用して、ドメインを Microsoft 365 に追加する方法について説明します。
-ms.openlocfilehash: 70a30201d4b795c7458959b6b2eee14c9b3c7186
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb3f9315ed8ae056cadd2fd6a83f13f6713347f3
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399958"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079981"
 ---
 # <a name="using-domain-connect"></a>ドメイン接続の使用
 
@@ -54,6 +54,6 @@ ms.locfileid: "44399958"
 
 ## <a name="what-happens-to-my-email-and-website"></a>電子メールと web サイトはどうなりますか?
 
-セットアップが完了すると、ドメインの MX レコードが更新され、Microsoft 365 をポイントするようになり、ドメインのすべての電子メールが Microsoft 365 に送られ始めます。 ユーザーのドメインにメールを持つすべてのユーザーが Office 365 に追加され、メールボックスが設定されていることを確認してください。
+セットアップが完了すると、ドメインの MX レコードが更新され、Microsoft 365 をポイントするようになり、ドメインのすべての電子メールが Microsoft 365 に送られ始めます。 自分のドメインで電子メールを取得するすべてのユーザーについて、Microsoft 365 でユーザーを追加し、メールボックスを設定していることを確認してください。
   
 ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続のセットアップ手順は、web サイトには影響しません。

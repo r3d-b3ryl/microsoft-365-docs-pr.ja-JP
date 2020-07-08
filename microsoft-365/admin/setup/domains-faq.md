@@ -24,18 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: ドメインの詳細については、よく寄せられる質問への回答を検索してください。
-ms.openlocfilehash: 093125d1652355fbd9b624e1f15b5858fd586301
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049738"
+ms.locfileid: "45068105"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -45,15 +46,15 @@ ms.locfileid: "45049738"
 
 この記事の内容
 
-[MX 優先度](#what-is-mx-priority) 
- とは[自分のドメインの SPF レコードを検証するにはどうすればよいですか?](#how-can-i-validate-spf-records-for-my-domain) 
-[ドメイン名](#what-is-a-domain-name) 
- とは[DNS プロバイダーが特定のレコードの種類をサポートしていない場合はどうなりますか?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types) 
-[Microsoft 365 で既定のドメインを設定または変更するにはどうすればよいですか?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365) 
-[Microsoft 365 にカスタムサブドメインまたは複数のドメインを追加できますか。](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365) 
-["Onmicrosoft.com" ドメインがあるのはなぜですか?](#why-do-i-have-an-onmicrosoftcom-domain) 
-["Onmicrosoft.de" ドメインがあるのはなぜですか?](#why-do-i-have-an-onmicrosoftde-domain) 
-非[営利団体または教育機関の状態を確認するには](#how-do-i-verify-my-nonprofit-or-education-status)どうすればよいですか?
+- [MX 優先度とは](#what-is-mx-priority)
+- [自分のドメインの SPF レコードを検証するにはどうすればよいですか?](#how-can-i-validate-spf-records-for-my-domain)
+- [ドメイン名とは何ですか?](#what-is-a-domain-name)
+- [自分の DNS プロバイダーが特定のレコードの種類をサポートしていない場合はどうなりますか?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [Microsoft 365 で既定のドメインを設定または変更するにはどうすればよいですか?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [Microsoft 365 にカスタムサブドメインまたは複数のドメインを追加できますか。](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- ["onmicrosoft.com" ドメインがあるのはなぜですか?](#why-do-i-have-an-onmicrosoftcom-domain)
+- ["onmicrosoft.de" ドメインがあるのはなぜですか?](#why-do-i-have-an-onmicrosoftde-domain)
+- [非営利団体または教育機関のステータスを確認するにはどうすればよいですか?](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>MX 優先度とは何ですか?
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化された電子メールを送信する方法について説明します。
-ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322149"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080029"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>機密メールを暗号化またはラベル付けする
 
@@ -52,7 +52,7 @@ ms.locfileid: "44322149"
 
 ## <a name="admin-settings"></a>管理設定
 
-「 [Office 365 での](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)電子メールの暗号化による電子メールの暗号化の設定について」を参照してください。
+電子メールの暗号化の設定については、「 [Microsoft 365 の電子メールの暗号化」](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)を参照してください。
 
 ### <a name="automatically-encrypt-email-messages"></a>電子メールメッセージを自動的に暗号化する
 
@@ -60,11 +60,11 @@ ms.locfileid: "44322149"
 
 メールフロールールを作成して、新しい Office 365 Message Encryption (OME) 機能を使用して電子メールメッセージを暗号化します。 Exchange 管理センター (EAC) を使用して、新しい OME 機能でメッセージの暗号化をトリガーするためのメールフロールールを定義します。 
 
-1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、Office 365 にサインインします。 
+1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用している場合は、サインインします。 
 2. [管理] タイルを選択します。 
 3. 管理センターで、[ **Exchange > 管理センター**] を選択します。 
 
-詳細については、「 [Office 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)」を参照してください。
+詳細については、「メール[フロールールを定義して電子メールメッセージを暗号化する](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)」を参照してください。
 
 ### <a name="brand-your-encryption-messages"></a>暗号化メッセージをブランド化する
 

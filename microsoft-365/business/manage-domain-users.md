@@ -1,5 +1,5 @@
 ---
-title: ドメインユーザーを Microsoft 365 に同期させる
+title: ドメイン ユーザーを Microsoft 365 に同期する
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: ドメイン制御されたユーザーを Microsoft 365 for business と同期します。
-ms.openlocfilehash: a22e567fa99456b35742fcf40c07193c96c83cf0
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: af9cb7c9b2b639edc2375679a73ab41c4cf6de71
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44565689"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080061"
 ---
-# <a name="synchronize-domain-users-to-microsoft-365"></a>ドメインユーザーを Microsoft 365 に同期させる
+# <a name="synchronize-domain-users-to-microsoft-365"></a>ドメイン ユーザーを Microsoft 365 に同期する
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. ディレクトリ同期の準備 
 
-ローカル Active Directory ドメインからユーザーとコンピューターを同期する前に、「 [Office 365 へのディレクトリ同期の準備](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)」を参照してください。 特に次のようになります。
+ローカル Active Directory ドメインからユーザーとコンピューターを同期する前に、「 [Microsoft 365 へのディレクトリ同期の準備](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)」を参照してください。 特に次のようになります。
 
    - 次の属性について、ディレクトリに重複が存在しないことを確認してください。 **mail**、 **ProxyAddresses**、および**userPrincipalName**。 これらの値は一意である必要があり、重複して削除する必要があります。
    
@@ -59,7 +59,7 @@ ms.locfileid: "44565689"
  5. ウィザードの手順に従って、Azure AD Connect をダウンロードし、それを使用して、ドメイン制御されたユーザーを Microsoft 365 に同期させます。
 
 
-詳細については、「 [Office 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)する」を参照してください。
+詳細については、「 [Microsoft 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)する」を参照してください。
 
 Azure AD Connect のオプションを構成する際には、**パスワード同期**、**シームレスなシングルサインオン**、**パスワード書き戻し**機能を有効にすることをお勧めします。これは、Microsoft 365 for business でもサポートされています。
 

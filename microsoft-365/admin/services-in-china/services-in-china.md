@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 中国でのセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計された、21Vianet が運用している Office 365 の詳細について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779919"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079739"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
@@ -57,7 +57,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 |:-----|:-----|
 |カスタム ドメイン  <br/> |管理者は、中国語固有のドメインプロバイダーによって登録されたカスタムドメインを作成または使用することができます。 カスタムドメインを持っていない場合は、ドメイン名レジストラーから[ドメイン名を購入する方法](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)を指定できます。 既に所有している場合は、[ドメインレジストラーまたは DNS ホスティングプロバイダーを見つけて](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)ください。  <br/> また、Office 365 SharePoint Online サービスを使用してパブリック web サイトを作成する場合、中国のインターネットコンプライアンスポリシーでは、インターネットコンテンツプロバイダー (ICP) 番号を取得する必要があります。  **注:** ユーザー設定ドメイン名の許可されていない単語の自動検証は使用できません。           |
 |サブスクリプション、課金、技術サポート  <br/> |21Vianet によって提供されます。 サポートに連絡する方法については、「 [365 Office 365 for business サポートへのお問い合わせ](../contact-support-for-business-products.md)」を参照してください。  <br/> |
-|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用している[Microsoft 365 でパスワードを変更または再設定する](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
+|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用して[いる Office 365 でパスワードを変更または再設定する](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
 |セキュリティ、プライバシー、コンプライアンス、サポートのレベルに関する詳細情報  <br/> |21Vianet によって提供されます。  <br/> |
 |Office デスクトップのセットアップ  <br/> |Office デスクトップのセットアップは、Office 2010 および Office 2007 では使用できません。 ただし、管理者は、 [office 365 で動作するように現在の office デスクトップアプリケーションを構成](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)できます。  <br/> |
 |モバイルとデバイスのサポート\*  <br/> | 近日中には、次のモバイル機能が提供されます。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイス、または研究インモーション (縁、BlackBerry ワイヤレス電子メールソリューション) のオファーリングを使用して Blackberry Enterprise Server (BE) を実行できます。  <br/>  モバイルサポートの詳細については、「[ユーザー用にモバイルアクセスをセットアップおよび管理](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)する」を参照してください。  <br/> |

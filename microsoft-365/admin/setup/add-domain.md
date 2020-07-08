@@ -1,5 +1,5 @@
 ---
-title: Office 365 にドメインを追加する
+title: Microsoft 365 にドメインを追加する
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -25,20 +25,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Microsoft 365 管理センターで Office 365 にドメインを追加するには、 DNS ホストで DNS レコードを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: b5ad21174c0a2ebb3466072ef43fb1ba284d3b59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Dns レコードを DNS ホストに追加して、365 Microsoft 365 の microsoft にドメインを追加します。 これらの手順を案内するウィザードがあります。
+ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398992"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079727"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -94,7 +94,7 @@ ms.locfileid: "44398992"
     1. DNS を Office に自動構成させる場合、**[DNS レコードを追加してもらう]** を選択します。 
     
   
-    2. 特定の Office 365 サービスのみをドメインに追加する場合、またはここではこの手順をスキップして後で行う場合、**[DNS レコードを自分で追加する]** を選択します。 **次のように、操作内容を正確に把握している場合に、このオプションを選択します。**
+    2. 特定の Microsoft 365 サービスのみをドメインに接続する場合、またはこれを今後スキップする場合は **、[自分で DNS レコードを追加**する] を選択します。 **次のように、操作内容を正確に把握している場合に、このオプションを選択します。**
     
 7. *DNS レコードを自分で追加する*を選択した場合、**[次へ]** を選択します。そして、ドメインを設定するために、レジストラー Web サイトに追加する必要があるすべてのレコードが含まれるページが表示されます。 
     
@@ -124,7 +124,7 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 
 5. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
     
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 ## <a name="registrars-with-domain-connect"></a>レジストラーとドメイン接続
 
@@ -149,7 +149,7 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 
 ### <a name="what-happens-to-my-email-and-website"></a>電子メールと web サイトはどうなりますか?
 
-セットアップが完了すると、ドメインの MX レコードが更新され、Microsoft 365 をポイントするようになり、ドメインのすべての電子メールが Microsoft 365 に送られ始めます。 ユーザーのドメインにメールを持つすべてのユーザーが Office 365 に追加され、メールボックスが設定されていることを確認してください。
+セットアップが完了すると、ドメインの MX レコードが更新され、Microsoft 365 をポイントするようになり、ドメインのすべての電子メールが Microsoft 365 に送られ始めます。 自分のドメインで電子メールを取得するすべてのユーザーについて、Microsoft 365 でユーザーを追加し、メールボックスを設定していることを確認してください。
   
 ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続のセットアップ手順は、web サイトには影響しません。
 
@@ -159,8 +159,8 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 
 [ドメインとは](../get-help-with-domains/what-is-a-domain.md)
 
-[Office 365 でドメイン名を購入する](../get-help-with-domains/buy-a-domain-name.md)
+[Microsoft 365 でドメイン名を購入する](../get-help-with-domains/buy-a-domain-name.md)
 
-[ドメインを設定する (ホスト固有の手順)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
+[ドメインを設定する (ホストに固有の手順)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
 [ドメインに関するヘルプを取得する](../get-help-with-domains/get-help-with-domains.md)

@@ -22,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法について説明します。
-ms.openlocfilehash: fdf0b9db2c23632a213e860bd54097c1d453cf55
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 6f5e36a897316c8cdc057a725957c54e7eb53edc
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432393"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079763"
 ---
 # <a name="remove-a-domain"></a>ドメインを削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
   
@@ -58,7 +58,7 @@ ms.locfileid: "44432393"
 
 5. [**ドメインの変更**] ウィンドウで、別のドメインを選択します。
 
-削除するドメインを自分も使っている場合は、自分自身についてもこの操作を行う必要があります。自分のアカウントのドメインを編集する場合は、いったんログアウトし、選んだ新しいドメインでログインし直して、続ける必要があります。
+You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "44432393"
 
 5. [**ドメインの編集**] ウィンドウで、別のドメインを選択します。
   
-削除するドメインを自分も使っている場合は、自分自身についてもこの操作を行う必要があります。自分のアカウントのドメインを編集する場合は、いったんログアウトし、選んだ新しいドメインでログインし直して、続ける必要があります。
+You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ ms.locfileid: "44432393"
 
 5. [**ドメインの編集**] ウィンドウで、別のドメインを選択します。
   
-削除するドメインを自分も使っている場合は、自分自身についてもこの操作を行う必要があります。自分のアカウントのドメインを編集する場合は、いったんログアウトし、選んだ新しいドメインでログインし直して、続ける必要があります。
+You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
 
 ::: moniker-end
 
@@ -212,16 +212,16 @@ ms.locfileid: "44432393"
 
 Microsoft 365 では、セキュリティグループ、配布リスト、ユーザー、Microsoft 365 グループなどの多くの場所で参照されていない場合、ドメインを削除するのには5分ほどかかる場合があります。 ドメインを使用する参照が多い場合、ドメインが削除されるまでに数時間 (1 日) 程度かかることもあります。
   
-数百から数千のユーザーがいる場合は、PowerShell を使用してすべてのユーザーに対するクエリを実行してから、別のドメインに移動してください。これを行わないと、一部のユーザーが UI に表示されない可能性があり、ドメインを削除しようとしてもなぜか失敗します。詳細については、「[Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)」を参照してください。既定のドメインを設定するには、[Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) を使用します。
+If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
-## <a name="still-need-help"></a>さらにサポートが必要な場合
+## <a name="still-need-help"></a>さらにヘルプが必要ですか?
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > アカウントから [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) ドメインを削除することはできません。
   
-それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../contact-support-for-business-products.md)、お手伝いいたします。
+Still not working? Your domain might need to be manually removed. [Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!
   
 ::: moniker-end
 
@@ -229,7 +229,7 @@ Microsoft 365 では、セキュリティグループ、配布リスト、ユー
 
 [ドメイン FAQ](../setup/domains-faq.md)
 
-[Office 365 のドメインに関するヘルプ](get-help-with-domains.md)
+[Microsoft 365 ドメインのヘルプを表示する](get-help-with-domains.md)
 
 [別の Microsoft 365 for business プランに切り替える](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
