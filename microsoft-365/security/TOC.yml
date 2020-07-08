@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: クエリ言語の説明
                   href: mtp/advanced-hunting-query-language.md
+                - name: クエリのベスト プラクティスを適用する
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: クエリ結果を操作する
                   href: mtp/advanced-hunting-query-results.md
                 - name: 共有クエリを使用する
@@ -179,8 +181,6 @@
                   items:
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: クエリのベスト プラクティスを適用する
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: カスタム検出
                   items:
                     - name: カスタム検出の概要
