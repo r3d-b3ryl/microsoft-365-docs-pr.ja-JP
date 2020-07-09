@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: メールと予定表を管理する
-summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
+summary: 管理者が一般的なタスクを行う際に役立つこれらのリソースを参照するか、左側のナビゲーション ウィンドウの完全な一覧を参照してください。
 metadata:
   title: メールと予定表を管理する
-  description: メール設定、配布グループ、セキュリティ設定、および共有メールボックスの設定を管理する
+  description: メール設定、配布グループ、セキュリティ設定、共有メールボックスの設定を管理する
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,12 +13,12 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: c35874ec774b0e8753b0bfacb2dd795a4f000188
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780219"
 landingContent:
-- title: メールの管理
+- title: メールを管理する
   linkLists:
   - linkListType: overview
     links:
@@ -32,11 +32,11 @@ landingContent:
       url: add-another-email-alias-for-a-user.md
     - text: カスタム ドメインを使用する
       url: change-email-address.md
-    - text: メールの転送をセットアップする
+    - text: メールの転送を設定する
       url: configure-email-forwarding.md
-    - text: セキュリティグループを操作する
+    - text: セキュリティ グループを操作する
       url: create-edit-or-delete-a-security-group.md
-    - text: Microsoft 365 へのメールと連絡先の移行
+    - text: Microsoft 365 へメールと連絡先を移行する
       url: ../setup/migrate-email-and-contacts-admin.md
 - title: 共有メールボックスの管理
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Outlook で予定表と連絡先を管理する
+    - text: Outlook の予定表と連絡先を管理する
       url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
   - linkListType: video
     links:
@@ -66,9 +66,9 @@ landingContent:
     links:
     - text: メール配信に関する問題を見つけて修正する
       url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
-    - text: ドメインまたは DNS レコードを追加した後で問題を修正して検索する
+    - text: ドメインまたは DNS レコードを追加後に問題を修正して発見する
       url: ../get-help-with-domains/find-and-fix-issues.md
-    - text: ユーザーメールボックス内の削除済みメールを復元する
+    - text: ユーザーのメールボックスで削除されたメールを復元する
       url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
     - text: Microsoft 365 および Exchange Online における Outlook の接続の問題を修正する
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f
