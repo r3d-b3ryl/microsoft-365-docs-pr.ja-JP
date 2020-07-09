@@ -1,0 +1,83 @@
+---
+title: Microsoft Teams から Microsoft 365 for business へのアップグレードを無料で行う
+f1.keywords:
+- NOCSH
+- fwlink 2135143
+- India-only
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_NonTOC
+- commerce
+ms.custom: ''
+search.appverid: ''
+description: Microsoft Teams から無料の Microsoft 365 for business サブスクリプションへのアップグレード方法について説明します。
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 6bd36987fcad4cebb217bdc89388dfae44ca30b9
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45087924"
+---
+# <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a><span data-ttu-id="ae368-103">Microsoft Teams から Microsoft 365 for business へのアップグレードを無料で行う</span><span class="sxs-lookup"><span data-stu-id="ae368-103">Upgrade from Microsoft Teams Free to Microsoft 365 for business</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="ae368-104">このドキュメントは、インドの Microsoft Teams の無料組織にのみ適用されます。</span><span class="sxs-lookup"><span data-stu-id="ae368-104">This document only applies to Microsoft Teams Free organizations in India.</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="ae368-105">はじめに</span><span class="sxs-lookup"><span data-stu-id="ae368-105">Before you begin</span></span>
+
+<span data-ttu-id="ae368-106">Microsoft teams の無料の組織をアップグレードするには、Microsoft Teams の無料管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae368-106">You must be a Microsoft Teams Free admin to upgrade a Microsoft Teams Free organization.</span></span><span data-ttu-id="ae368-107">Microsoft Teams の無料の組織を作成した場合は、自動的に管理者になります。</span><span class="sxs-lookup"><span data-stu-id="ae368-107"> You're automatically an admin if you created the Microsoft Teams Free organization.</span></span>
+
+## <a name="step-1-get-your-work-or-school-account-id"></a><span data-ttu-id="ae368-108">手順 1: 職場または学校のアカウント ID を取得する</span><span class="sxs-lookup"><span data-stu-id="ae368-108">Step 1: Get your work or school account ID</span></span>
+
+<span data-ttu-id="ae368-109">プロセスを開始するには、基礎となる職場または学校のアカウント ID を取得します。</span><span class="sxs-lookup"><span data-stu-id="ae368-109">To begin the process, get your underlying work or school account ID.</span></span> <span data-ttu-id="ae368-110">このアカウント ID は、Microsoft Teams の無料アクセスに使用する電子メールアドレスとは異なります。</span><span class="sxs-lookup"><span data-stu-id="ae368-110">This account ID is different from the email address that you use to access Microsoft Teams Free.</span></span>
+
+1. <span data-ttu-id="ae368-111">行きます<a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a></span><span class="sxs-lookup"><span data-stu-id="ae368-111">Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a></span></span>
+2. <span data-ttu-id="ae368-112">ヘッダーで、[プロファイル] アイコンを選択します。</span><span class="sxs-lookup"><span data-stu-id="ae368-112">In the header, select the profile icon.</span></span> <span data-ttu-id="ae368-113">自分のアカウント ID が名前の下に表示され、onmicrosoft.com で終了します *。*</span><span class="sxs-lookup"><span data-stu-id="ae368-113">Your account ID is displayed below your name, and ends with *.onmicrosoft.com*.\</span></span>
+    <span data-ttu-id="ae368-114">管理者の電子メールアドレスは、 *admin@yourfreeorgname.onmicrosoft.com*のように表示されます。</span><span class="sxs-lookup"><span data-stu-id="ae368-114">Your admin email address will look like *admin@yourfreeorgname.onmicrosoft.com*.</span></span>
+
+## <a name="step-2-reset-your-password"></a><span data-ttu-id="ae368-115">手順 2: パスワードを再設定する</span><span class="sxs-lookup"><span data-stu-id="ae368-115">Step 2: Reset your password</span></span>
+
+<span data-ttu-id="ae368-116">Microsoft Teams の基礎となる職場または学校のアカウントを無料で使用している場合は、アカウントのパスワードをリセットする必要があります。</span><span class="sxs-lookup"><span data-stu-id="ae368-116">After you have the underlying work or school account for your Microsoft Teams Free org, you must reset the password for the account.</span></span>
+
+1. <span data-ttu-id="ae368-117">
+            <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に戻ります。</span><span class="sxs-lookup"><span data-stu-id="ae368-117">Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.</span></span> <span data-ttu-id="ae368-118">サインインを求めるメッセージが表示されたら、[**パスワードの忘れ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae368-118">When prompted to sign in, choose **Forgot my password**.</span></span>
+2. <span data-ttu-id="ae368-119">基になる職場または学校のアカウント ( *onmicrosoft.com*で終わる) を使用して、パスワードのリセット手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="ae368-119">Complete the password reset procedure using the underlying work or school account (the one ending with *.onmicrosoft.com*).</span></span>
+3. <span data-ttu-id="ae368-120">検証手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="ae368-120">Complete the verification steps.</span></span> <span data-ttu-id="ae368-121">新しいパスワードを設定するために使用するコードを含む電子メールを受信します。</span><span class="sxs-lookup"><span data-stu-id="ae368-121">You will receive an email with a code to use to set a new password.</span></span>
+4. <span data-ttu-id="ae368-122">コードを入力して検証プロセスを完了します。</span><span class="sxs-lookup"><span data-stu-id="ae368-122">Enter the code to complete the verification process.</span></span>
+
+## <a name="step-3-buy-your-new-subscription"></a><span data-ttu-id="ae368-123">手順 3: 新しいサブスクリプションを購入する</span><span class="sxs-lookup"><span data-stu-id="ae368-123">Step 3: Buy your new subscription</span></span>
+
+<span data-ttu-id="ae368-124">回復した基礎となる職場または学校のアカウントと新しい管理者パスワードを使用して、新しい Microsoft 365 for business のサブスクリプションを購入します。</span><span class="sxs-lookup"><span data-stu-id="ae368-124">Use the underlying work or school account that you recovered and your new admin password to buy a new Microsoft 365 for business subscription.</span></span>
+
+1. <span data-ttu-id="ae368-125">Microsoft 365 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">サービスの購入</a>] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae368-125">In the Microsoft 365 admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase Services</a>.</span></span>
+2. <span data-ttu-id="ae368-126">購入する Microsoft 365 for business 製品を検索します。</span><span class="sxs-lookup"><span data-stu-id="ae368-126">Find the Microsoft 365 for business product that you want to buy.</span></span>
+    > [!IMPORTANT]
+    > <span data-ttu-id="ae368-127">Microsoft Teams を含むものを選択してください。</span><span class="sxs-lookup"><span data-stu-id="ae368-127">Be sure to choose one that includes Microsoft Teams.</span></span>
+3. <span data-ttu-id="ae368-128">購入を完了します。</span><span class="sxs-lookup"><span data-stu-id="ae368-128">Complete the purchase.</span></span> <span data-ttu-id="ae368-129">Microsoft Teams のすべてのユーザーに十分なライセンスを購入してください。 Microsoft 365 for business に移行する必要がある組織は無料です。</span><span class="sxs-lookup"><span data-stu-id="ae368-129">Remember to buy enough licenses for all the users in your Microsoft Teams Free org who you want to move to Microsoft 365 for business.</span></span>
+
+## <a name="step-4-assign-new-licenses-to-users"></a><span data-ttu-id="ae368-130">手順 4: ユーザーに新しいライセンスを割り当てる</span><span class="sxs-lookup"><span data-stu-id="ae368-130">Step 4: Assign new licenses to users</span></span>
+
+<span data-ttu-id="ae368-131">新しい Microsoft 365 for business サブスクリプションが完成したので、Microsoft Teams の無料組織の既存のユーザーにライセンスを割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="ae368-131">Now that you have a new Microsoft 365 for business subscription, you can assign licenses to the existing users in your Microsoft Teams Free organization.</span></span>
+
+1. <span data-ttu-id="ae368-132">管理センターで、[**ユーザー**] [  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] に移動します。</span><span class="sxs-lookup"><span data-stu-id="ae368-132">In the admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.</span></span>
+2. <span data-ttu-id="ae368-133">Microsoft 365 for business のライセンスを割り当てるユーザーを選択し、[**製品ライセンスの管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae368-133">Select the users to whom you want to assign Microsoft 365 for business licenses, then select **Manage product licenses**.</span></span>
+3. <span data-ttu-id="ae368-134">[**製品のライセンスの管理**] ウィンドウで、[既存のライセンスの割り当てを**置き換える**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae368-134">In the **Manage product licenses** pane, select **Replace existing license assignments**.</span></span>
+4. <span data-ttu-id="ae368-135">[**既存の製品を置換**] ウィンドウで、購入した Microsoft 365 for business 製品を見つけて、トグルを **[オン**] に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="ae368-135">In the **Replace existing products** pane, find the Microsoft 365 for business product that you bought, and switch the toggle to **On**.</span></span>
+5. <span data-ttu-id="ae368-136">[**置換**] を選択し、[**閉じる**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ae368-136">Select **Replace**, then select **Close**.</span></span>
+
+## <a name="related-content"></a><span data-ttu-id="ae368-137">関連コンテンツ</span><span class="sxs-lookup"><span data-stu-id="ae368-137">Related content</span></span>
+
+<span data-ttu-id="ae368-138">[Microsoft Teams の無料](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)記事 (記事) </span><span class="sxs-lookup"><span data-stu-id="ae368-138">[Welcome to Microsoft Teams free](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (article)</span></span>\
+<span data-ttu-id="ae368-139">[Microsoft Teams を無料でサブスクリプションバージョンにアップグレードする](https://docs.microsoft.com/microsoftteams/upgrade-freemium)(記事) </span><span class="sxs-lookup"><span data-stu-id="ae368-139">[Upgrade Microsoft Teams free to subscription version](https://docs.microsoft.com/microsoftteams/upgrade-freemium) (article)</span></span>\
+<span data-ttu-id="ae368-140">[サブスクリプションライセンスを購入または削除](../licenses/buy-licenses.md)する (記事) </span><span class="sxs-lookup"><span data-stu-id="ae368-140">[Buy or remove subscription licenses](../licenses/buy-licenses.md) (article)</span></span>\
+<span data-ttu-id="ae368-141">[ユーザーへのライセンスの割り当て](../../admin/manage/assign-licenses-to-users.md)(記事) </span><span class="sxs-lookup"><span data-stu-id="ae368-141">[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)</span></span>\
+<span data-ttu-id="ae368-142">[ユーザーからのライセンスの割り当てを解除](../../admin/manage/remove-licenses-from-users.md)する (記事)</span><span class="sxs-lookup"><span data-stu-id="ae368-142">[Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)</span></span>
