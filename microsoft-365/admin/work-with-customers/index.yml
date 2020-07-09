@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 顧客と連携する
-summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
+summary: 管理者が一般的なタスクを行う際に役立つこれらのリソースを参照するか、左側のナビゲーション ウィンドウの完全な一覧を参照してください。
 metadata:
   title: 顧客と連携する
-  description: ドキュメントを共有し、Teams を使用して共同作業し、会議に参加する
+  description: ドキュメントを共有し、Teams を使用して共同作業と打ち合わせを行う
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 80aea7aef92cd584df0c35b0d14ec71e0ad738b7
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785462"
@@ -30,11 +30,11 @@ landingContent:
     links:
     - text: ゲスト ユーザーとのチームを作成する
       url: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
-    - text: ゲストとしてチームに参加する
+    - text: ゲストとしてチームに参加
       url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
-    - text: 従業員とお客様とのチャット
+    - text: 従業員や顧客とチャットする
       url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
-    - text: ゲストユーザーとの Teams 会議をスケジュールする
+    - text: ゲスト ユーザーとの Teams 会議のスケジュールを設定する
       url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
     - text: ゲスト ユーザーとの Teams 会議に参加する
       url: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8

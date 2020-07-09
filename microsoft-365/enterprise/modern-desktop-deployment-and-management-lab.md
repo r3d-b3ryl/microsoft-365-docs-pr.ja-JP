@@ -15,17 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049918"
+ms.locfileid: "45052727"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
 これらのラボは、Windows 10 Enterprise および Microsoft 365 Apps for enterprise を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
 
-このトレーニングは、Windows 7 のサポート終了に備える組織に特に推奨されます。また、現在 Windows 10 と、Office 365 Plus または Office 2019 を使用されているお客様も対象となります。 また、ラボ環境は独立しているため、展開ツールの更新プログラムを調べたり、展開関連の自動化をテストしたりするのに最適です。
+このトレーニングは、Windows 7 のライフ終了を準備をしている組織を強くお勧めします。また、現在 Windows 10、Microsoft 365 for enterprise (以前の Office 365 ProPlus)または Office 2019 のアプリを使用している場合にも適用されます。 また、ラボ環境は独立しているため、展開ツールの更新プログラムを調べたり、展開関連の自動化をテストしたりするのに最適です。
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
@@ -73,6 +74,7 @@ ms.locfileid: "45049918"
   - Configuration Manager と Microsoft Intune を使用したエンタープライズ管理の展開
   - Microsoft Intune を使用したアプリケーションの展開と管理
   - ビジネス向け Microsoft Store を使用したアプリの展開とセルフ サービス インストール
+  - 新機能 Microsoft Teams をインストールする 
 
 ### <a name="user-file-and-settings-migration"></a>ユーザー ファイルと設定の移行
 
@@ -107,9 +109,8 @@ ms.locfileid: "45049918"
   - Configuration Manager と Intune を使用した Windows 10 のサービス
   - Configuration Manager を使用した Microsoft 365 Apps for enterprise のサービス
   - 新機能! 構成マネージャーと Intune を使用した Office の更新
-  - 新機能! Microsoft Teams をインストールする 
-
-### <a name="new-windows-virtual-desktop"></a>新機能! Windows Virtual Desktop
+  
+### <a name="new-windows-virtual-desktop"></a>新機能 Windows Virtual Desktop
   - Windows Virtual Desktop: 準備、展開、最適化 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード

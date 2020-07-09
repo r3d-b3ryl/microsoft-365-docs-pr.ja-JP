@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: データとサービスを管理する
-summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
+summary: 管理者が一般的なタスクを行う際に役立つこれらのリソースを参照するか、左側のナビゲーション ウィンドウの完全なリストを参照する。
 metadata:
   title: データとサービスを管理する
-  description: サービスの状態を監視し、データをバックアップし、アドインをインストールして、最新のアプリにアップグレードします。
+  description: サービスの状態を監視し、データをバックアップし、アドインをインストールして、最新のアプリにアップグレードする
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780099"
@@ -36,13 +36,13 @@ landingContent:
       url: release-options-in-office-365.md
     - text: 新機能の表示と非表示を切り替える
       url: show-hide-new-features.md
-- title: ユーザーアクセスを禁止してデータをバックアップする
+- title: ユーザーアクセスをブロックし、データをバックアップする
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 元ユーザーのデータにアクセスしてバックアップを作成する
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
-    - text: メールの保存期間を設定する (Microsoft 365 Business Premium)
+    - text: メールの保持をセットアップする (Microsoft 365 Business Premium)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
     - text: デバイスから会社のデータを削除する (Microsoft 365 Business Premium)
       url: ../../business/remove-company-data.md
@@ -50,7 +50,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 最新のアプリにユーザーをアップグレードする
+    - text: 最新のアプリへとユーザーをアップグレードする
       url: ../setup/upgrade-users-to-latest-office-client.md
     - text: アプリ起動ツールをカスタマイズする
       url: customize-the-app-launcher.md
@@ -62,9 +62,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft Teams の管理に関するドキュメント
+    - text: Microsoft Teams 管理ドキュメント
       url: https://docs.microsoft.com/en-us/microsoftteams/
-    - text: Outlook と Teams を一緒に使用する
+    - text: Outlook と Teams を同時に使用する
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
@@ -74,9 +74,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: IT 担当者および管理者向けの SharePoint ドキュメント
+    - text: IT 担当者および管理者向け SharePoint ドキュメント
       url: https://docs.microsoft.com/sharepoint/
-    - text: IT 担当者および管理者向けの OneDrive ドキュメント
+    - text: IT 担当者および管理者向け OneDrive ドキュメント
       url: https://docs.microsoft.com/onedrive/
   - linkListType: how-to-guide
     links:

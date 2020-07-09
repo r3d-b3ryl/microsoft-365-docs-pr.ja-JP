@@ -20,11 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: f2cf60eac1197ed7be3fd8cbbe69e41a37614f86
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: a0e0025d23bda36d8b9e6315cb932e58d4237a5c
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048292"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068126"
 ---
 # <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
 
@@ -104,17 +105,19 @@ Event-driven retention is typically used as part of a records-management process
 ラベルの設定で、**イベント**に基づいてラベルを設定するオプションを選ぶと、**[イベントの種類の選択]** というオプションが表示されます。 イベントの種類とは、ラベルを関連付けるイベントの単なる一般的な説明です。
   
 たとえば、Product Lifetime という名前のイベントの種類を作成する場合は、"製品開発ファイル" や "製品の経営的意思決定" など、ラベルを適用するコンテンツの種類が分かるような名前でイベント ベースの保持ラベルを作成する必要があります。
-  
+
+組み込みのイベントタイプのいずれかを選択するか、独自のイベントタイプを作成して選択します。
+
 イベントの種類を選択して保持ラベルを保存すると、イベントの種類の変更はできませんので、ご注意ください。
   
 ![イベントの種類を作成または選択するオプション](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>手順 3: イベント ベースの保持ラベルを発行または自動適用する
 
-他の保持ラベルと同じように、イベント ベースのラベルを[発行または自動適用](create-retention-labels.md)する必要があります。したがって、このラベルはコンテンツに手動または自動で適用されます。
+他の保持ラベルと同じように、イベント ベースのラベルを[発行または自動適用](create-retention-labels.md)する必要があります。したがって、このラベルはドキュメントまたはメールに適用されます。
 
 > [!NOTE]
-> [**レコード管理**] > [**ファイル計画**] タブまたは [**データ ガバナンス**] > [**ラベル**] タブからイベント駆動型の保持ラベルを選択した場合、[**ラベルの自動適用**] ボタンは使用できません。
+> [**レコード管理**] > [**ファイル計画**] タブまたは [**データ ガバナンス**] > [**ラベル**] タブからイベント ベースの保持ラベルを選択した場合、[**ラベルの自動適用**] ボタンは使用できません。
 > 
 > このボタンの代わりに、次のいずれかの場所からのラベルまたはポリシーのリストの上にある [**ラベルを自動適用**] オプションを使用します。
 > - [**レコード管理**] > [**ラベル ポリシー**] タブ
@@ -125,7 +128,7 @@ Event-driven retention is typically used as part of a records-management process
 
 ### <a name="step-4-enter-an-asset-id"></a>手順 4: アセット ID を入力する
 
-After an event-driven label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
+イベント ベースのラベルがコンテンツに適用されたら、アイテムごとに資産 ID を入力できます。 たとえば、組織では以下のものを使用する場合があります。
   
 - 特定の製品のみのコンテンツ保持に使用する製品コード。
     
@@ -133,13 +136,13 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 - 特定の製品のみのコンテンツ保持に使用する従業員 ID。
     
-アセット ID は、SharePoint と OneDrive の別のドキュメント プロパティです。 組織では既に別のドキュメント プロパティや ID を使用してコンテンツを分類している可能性があります。 その場合は、イベントの作成時にそれらのプロパティと値を使用することもできます (後述する手順 6 を参照してください)。 重要な点は、組織はドキュメント プロパティで property:value の組み合わせを使用して、そのアイテムをイベントの種類に関連付ける必要があるということです。
+資産 ID は、SharePoint と OneDrive で利用できる別のドキュメント プロパティです。 組織では既に別のドキュメント プロパティや ID を使用してコンテンツを分類している可能性があります。 その場合は、イベントの作成時にそれらのプロパティと値を使用することもできます (後述する手順 6 を参照してください)。 重要な点は、ドキュメント プロパティで *property:value* の組み合わせを使用して、そのアイテムをイベントの種類に関連付ける必要があるということです。
   
 ![アセット ID を入力するテキスト ボックス](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>手順 5: イベントを作成する
 
-製品の使用を終えるなど、イベントの種類に関する特定のインスタンスが発生するときは、Microsoft 365 コンプライアンス センターで **[レコード管理]** > **[イベント]** ページの順に移動し、イベントを作成します。 イベントを作成し、それを手動でトリガーする必要があります。
+製品の使用を終えるなど、イベントの種類に関する特定のインスタンスが発生するときは、Microsoft 365 コンプライアンス センターで **[レコード管理]** > **[イベント]** ページの順に移動し、イベントを作成します。 イベントを作成し、トリガーします。
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>手順 6: 手順 2 でのラベルを使用したイベントの種類と同じものを選択する
 
@@ -149,20 +152,19 @@ After an event-driven label is applied to content, you can enter an asset ID for
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>手順 7: キーワードまたはアセット ID を入力する
 
-Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified property:value pair. If an asset ID is not entered, **all content** with labels of that event type get the same retention date applied to them. 
+ここで、資産 ID (SharePoint および OneDrive コンテンツの場合) またはキーワード (Exchange コンテンツの場合) を指定して、コンテンツの範囲を絞り込みます。 資産 ID の場合、保持は指定された *property:value* ペアを持つコンテンツにのみ適用されます。 資産 ID が入力されていない場合は、そのイベントの種類のラベルの付いたすべてのコンテンツに同じ保持期限が適用されます。
+
+例えば、資産 ID プロパティを使用する場合は、下に示される資産 ID のボックスに 「`ComplianceAssetID:<value>`」 と入力します。
   
-アセット ID は、SharePoint と OneDrive の別のドキュメント プロパティです。 アセット ID プロパティを使用する場合は、下に示されるアセット ID のボックスに 「`ComplianceAssetID:<value>`」 と入力します。
+組織は、このイベントの種類に関するドキュメントに他のプロパティと ID を適用している場合があります。 たとえば、特定の製品のレコードを検出する必要がある場合、ID はカスタム プロパティ製品 ID とその値 "XYZ" の組み合わせである可能性があります。 この場合は、次の図に示されるアセット ID のボックスに 「`ProductID:XYZ`」 と入力します。
   
-組織は、このイベントの種類に関するドキュメントに他のプロパティと ID を適用している場合があります。 たとえば、特定の製品のレコードを検出する必要がある場合、ID はカスタム プロパティ製品 ID とその値 "XYZ" の組み合わせである可能性があります。 この場合は、下に示されるアセット ID のボックスに 「`ProductID:XYZ`」 と入力します。
-  
-For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+Exchange アイテムの場合、キーワード を使用します。 AND、OR、NOT などの検索演算子を使用して、クエリを使うことができます。 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
   
 最後に、イベントが発生した日付を選択します。この日付が、保持期間の開始日として使用されます。 イベントの作成後、そのイベントの日付は、そのイベントの種類の保持ラベル、資産 ID、キーワードを持つすべてのコンテンツに同期されます。 その他の保持ラベルと同様に、この同期には最大で 7 日間かかる可能性があります。
   
 ![[イベントの設定] ページ](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
-> [!NOTE]
-> イベントを作成すると、既にラベル付けされてインデックスが作成されているコンテンツの保持設定が有効になります。 イベントが作成された後に保持ラベルが新しいコンテンツに追加された場合は、同じ詳細を使用して新しいイベントを作成する必要があります。
+イベントを作成すると、既にラベル付けされてインデックスが作成されているコンテンツの保持設定が有効になります。 イベントが作成された後に保持ラベルが新しいコンテンツに追加された場合は、同じ詳細を使用して新しいイベントを作成する必要があります。
 
 イベントを削除しても、既にラベル付けされているコンテンツに対して現在有効になっている保持設定は取り消されません。 それを行うには、同じ詳細を使用して新しいイベントを作成しますが、日付は空白のままにします。 
 
@@ -186,7 +188,7 @@ To get access to the **Events** page, reviewers must be members of a role group 
 
 Microsoft 365 コンプライアンス センターでは、イベントを手動で作成することができますが、イベントが発生した場合、自動的にトリガーすることをサポートしていません。 ただし、Rest API を使用してイベントを自動的にトリガーすることはできます。 詳細については、「[イベント ベースの保持を自動化する](automate-event-driven-retention.md)」を参照してください。
 
-PowerShellスクリプトを使用して、業務用アプリケーションからのイベント ベースの保持を自動化することもできます。 イベント ドリブンの保持で利用可能な PowerShell コマンドレットは、次のとおりです。
+PowerShellスクリプトを使用して、業務用アプリケーションからのイベント ベースの保持を自動化することもできます。 イベント ベースの保持で利用可能な PowerShell コマンドレットは、次のとおりです。
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
