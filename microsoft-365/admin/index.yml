@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 管理センターのヘルプ
-summary: Microsoft 365 管理センターで作業するためのリソースについて説明します。
+summary: Microsoft 365 管理センターで作業するためのリソースを参照してください。
 brand: m365
 metadata:
   title: Microsoft 365 管理センターのヘルプ
-  description: Microsoft 365 管理センターで Office 365 と Microsoft 365 をセットアップして管理します。
+  description: Microsoft 365 管理センターで Office 365 および Microsoft 365 をセットアップして管理します。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -15,24 +15,24 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 9d8104660c4686b2240c292509a499a25308d9f6
   ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44799961"
 highlightedContent:
   items:
-  - title: Office 365 は現在、Microsoft 365!
+  - title: Office 365 は Microsoft 365 になりました!
     itemType: whats-new
     url: new-subscription-names.md
-  - title: Microsoft 365 管理センターの新機能
+  - title: Microsoft 365 管理センターの新機能!
     itemType: whats-new
     url: whats-new-in-preview.md
-  - title: Microsoft 365 の変更に関する最新情報
+  - title: 常に Microsoft 365 の最新情報を確認する
     itemType: how-to-guide
     url: manage/stay-on-top-of-updates.md
 productDirectory:
   title: 作業の開始
-  summary: サブスクリプションとメールの設定、ユーザーの追加、アプリのインストールを行います。
+  summary: サブスクリプションのセットアップ、ユーザーの追加、およびアプリのインストールを行います。
   items:
   - title: 作業の開始
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
@@ -44,41 +44,41 @@ productDirectory:
     url: setup/migrate-email-and-contacts-admin.md
   - title: アプリをインストールする
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: Office およびその他の Microsoft アプリをインストールします。
+    summary: Office やその他の Microsoft アプリをインストールします。
     url: setup/install-applications.md
-  - title: ユーザーをトレーニングする
+  - title: ユーザーのトレーニング
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: 組織内のユーザーのヘルプファイルを保存および共有し、Office アプリを使用する方法について説明します。
+    summary: 組織のユーザーを支援します。ファイルの保存と共有、および Office アプリの使用方法について説明します。
     url: https://support.microsoft.com/training
 additionalContent:
   sections:
-  - title: Manage
-    summary: サブスクリプション、サービス、ユーザーを管理し、ビジネスをセキュリティで保護し、ヘルプのトラブルシューティングを取得します。
+  - title: 管理
+    summary: サブスクリプション、サービス、およびユーザーの管理、ビジネスのセキュリティの確保、ヘルプのトラブルシューティングを行います。
     items:
     - title: Microsoft 365 管理センターの概要
-      summary: 管理者の役割、変更を上位にする方法、およびサブスクリプションをカスタマイズする方法について説明します。
+      summary: 管理者の役割、変更内容の最新情報を把握する方法、およびサブスクリプションのカスタマイズ方法について説明します。
       url: admin-overview/about-the-admin-center.md
     - title: ユーザーとグループ
-      summary: パスワードの管理、ユーザーの追加と削除、グループの設定と管理、ゲストアクセスの管理、ユーザーライセンスの割り当てを行います。
+      summary: パスワードの管理、ユーザーの追加と削除、グループのセットアップと管理、ゲスト アクセスの管理、およびユーザー ライセンスの割り当てを行います。
       url: add-users/index.yml
-    - title: 電子メールと予定表
-      summary: メール設定、配布グループ、およびセキュリティ設定を管理し、共有メールボックスを設定します。
+    - title: メールと予定表
+      summary: メール設定、配布グループ、セキュリティ設定、および共有メールボックスの設定を管理します。
       url: email/index.yml
     - title: ドメイン
-      summary: ドメイン、ドメインのセットアップと管理、DNS レコードの更新について説明します。
+      summary: ドメインの概要、ドメインのセットアップと管理、DNS レコードの更新について説明します。
       url: setup/add-domain.md
     - title: データとサービス
-      summary: サービスの状態を監視し、データをバックアップし、アドインをインストールして、最新のアプリにアップグレードします。
+      summary: サービスの状態を監視し、データをバックアップし、アドインをインストールして、最新のアプリに更新します。
       url: manage/index.yml
     - title: サブスクリプションと課金
-      summary: 課金、サブスクリプション、製品ライセンスの管理、支払い方法の更新、および追加のサービスとストレージの購入を行います。
+      summary: '[課金]、[サブスクリプション]、[製品のライセンス] を管理し、支払方法を更新し、追加のサービスやストレージを購入します。'
       url: ../commerce/index.yml
     - title: 組織をセキュリティで保護する
-      summary: 多元的な認証 (MFA) の設定や Microsoft Secure Score および GDPR について説明するように、組織をセキュリティで保護するための最適な方法について説明します。
+      summary: 多要素認証 (MFA) の設定などの組織のセキュリティを強化する最適な方法について説明します。また、Microsoft セキュア スコアと GDPR についても説明します。
       url: security-and-compliance/secure-your-business-data.md
     - title: 顧客と連携する
-      summary: ドキュメントを共有し、Teams を使用して共同作業し、会議に参加します。
+      summary: ドキュメントを共有し、Teams を使用して共同作業と打ち合わせを行います。
       url: work-with-customers/index.yml
     - title: トラブルシューティング
-      summary: Office 製品またはサービスの問題のトラブルシューティングと解決に役立つリソースにアクセスします。
+      summary: Office の製品またはサービスに関する問題のトラブルシューティングと修正に役立つリソースにアクセスします。
       url: https://docs.microsoft.com/office/troubleshoot/
