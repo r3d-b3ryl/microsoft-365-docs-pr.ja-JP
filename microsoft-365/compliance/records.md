@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470582"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080104"
 ---
 # <a name="learn-about-records"></a>レコードについての詳細
 
@@ -62,7 +62,7 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
     SharePoint および OneDrive フォルダーへの保持ラベルの適用の詳細については、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定の保持ラベルの適用](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)」を参照してください。
 
-  - **レコードは削除できません**。 「[アイテム保持ポリシーは Exchange に対してどのように作用するか](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations)」で説明されているように、ユーザーが Exchange でレコードを削除しようとすると、アイテムは [回復可能なアイテム] フォルダーに移動されます。
+  - **レコードは削除できません**。 「[Exchange でのアイテム保持ポリシーの適用方法](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange)」で説明されているように、ユーザーが Exchange でレコードを削除しようとすると、アイテムは [回復可能なアイテム] フォルダーに移動されます。
 
     ユーザーが SharePoint のレコードを削除しようとすると、「アイテムが削除されませんでした」というエラーが表示され、ライブラリに残ります。
 
