@@ -1,23 +1,23 @@
 ---
 title: Microsoft マネージド デスクトップの使用を開始する
-description: デバイスをセットアップし、Azure 機能を構成してサービスを操作する手順
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+description: デバイスをセットアップし、サービスと連携するように Azure 機能を構成する手順
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
-ms.translationtype: MT
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "38020400"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの使用を開始する
 
-サービスに登録したので、次の手順に従って、管理者の連絡先を確認し、条件付きアクセスの設定を調整し、ライセンスをユーザーに割り当て、エンタープライズ状態のローミングを有効にし、デバイスを取得して設定し、ユーザーを準備し、デバイスにアプリを展開します。
+サービスに登録したら、次の手順に従って、管理者の連絡先の確認、条件付きアクセス設定の調整、ユーザーへのライセンスの割り当て、Enterprise State Roaming の有効化、デバイスの取得とセットアップ、ユーザーの準備、デバイスへのアプリの展開を行います。
 
 > [!NOTE]
-> この順序に従うことをお勧めしますが、この順序にはいくつかの柔軟性があります。
+> この順番に従うことをお勧めしますが、必須ではありません。
 
 1. [管理ポータルで管理者の連絡先を追加および確認する](add-admin-contacts.md)
 2. [条件付きアクセスを調整する](conditional-access.md)
