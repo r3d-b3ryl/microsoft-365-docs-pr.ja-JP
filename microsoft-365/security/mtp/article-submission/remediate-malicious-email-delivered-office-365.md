@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 脅威の修復
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068221"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086693"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを修復する
 
@@ -77,8 +77,6 @@ ms.locfileid: "45068221"
 各修復項目を開いて、その詳細を表示することができます。 修復項目が開かれると、基本的な修復の詳細、修復名、作成日、説明、脅威の重大度、および状態が表示されます。 また、2つのタブが表示されます。 
 
 1. **[メールの送信] タブ**: これは、脅威エクスプローラまたは自動調査で修復される電子メールの数です。 これらの電子メールは次のようになります。
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="操作可能で、操作可能でない脅威を持つアクションセンター。":::
 
 **操作可能**: 次のクラウドメールボックスの場所の電子メールを処理して移動することができます。また、remediable カテゴリ内の電子メールは、ある場所から別の場所に移動することができます。
   - 受信トレイ 

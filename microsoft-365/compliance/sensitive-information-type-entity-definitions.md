@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: a91459652d785f6536cb50e381ab139057a3eae8
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
+ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024645"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45084136"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -534,6 +534,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - withholding tax
 - individual tax return
 - tax file number
+- tfn
 
 #### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
 

@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: e19a5528a4ccc250c981ab21d7644783ad1b0b8b
+ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854296"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45084157"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft Threat Protection の新機能
 
@@ -32,6 +32,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ```
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter フィード <br> 最新のセキュリティ研究、脅威インテリジェンス、製品ニュース、およびダッシュボード内部の詳細を取得します。
+- [EmailPostDeliveryEvents スキーマテーブル](advanced-hunting-emailpostdeliveryevents-table.md) <br> 高度な検索クエリで電子メールメッセージに対して実行された配信後の処理に関する情報を組み込みます。
+- [高度な検索でレコードを検査する](advanced-hunting-query-results.md#drill-down-from-query-results) <br> 新しい [詳細] パネルを使用して、クエリ結果のレコードをすばやく検査します。
+
+## <a name="may-2020"></a>2020 年 5 月
+- [カスタム検出](custom-detections-overview.md) <br> 高度な検索クエリを使用して、セキュリティイベントやシステム状態を自動的に監視し、応答するカスタムの検出ルールを作成します。
 
 ## <a name="february-2020"></a>2020 年 2 月
 - [インシデント](incidents-overview.md) <br> 攻撃が開始された場所とその他の詳細を正確に把握して、攻撃の範囲を確認します。
@@ -39,7 +44,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [高度な検索機能強化](advanced-hunting-overview.md) <br> Kusto クエリ言語とセキュリティで最適化されたスキーマを使用して、モダンワークスペース全体にわたる脅威を事前に探します。
 
 ## <a name="march-2019"></a>2019 年 3 月
-
 - 高度な検出 <br> 電子メール、データ、デバイス、および id に影響を与える脅威を事前に発見できる、さまざまな検索機能に対するランディングページ。
 - [Microsoft セキュア スコア](microsoft-secure-score.md) <br> 組織のセキュリティ姿勢の測定、向上したアクションが実行されたことを示すより高い数値。 セキュリティ スコアの推奨事項を実行することにより、組織を脅威から保護できます。 
 - [レポート](monitoring-and-reporting.md) <br>  セキュリティアナリストや管理者が日常業務の一部として追跡するさまざまな領域をカバーするカードのホストが機能します。

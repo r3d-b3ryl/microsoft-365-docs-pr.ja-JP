@@ -20,64 +20,64 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft 365 での多要素認証について説明します。
-ms.openlocfilehash: e8ba304d145ca7227eea074556ff6efccd751ecf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 の多要素認証について説明します。
+ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399148"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083588"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 の多要素認証
 
-パスワードは、コンピューターまたはオンラインサービスへのサインインを認証する最も一般的な方法ですが、最も脆弱なものでもあります。 ユーザーは、簡単なパスワードを選択したり、複数のサインインに同じパスワードを使用して異なるコンピュータやサービスに対して使用したりすることができます。
+パスワードは、コンピューターまたはオンライン サービスへのサインインを認証する最も一般的な方法ですが、最も脆弱な方法でもあります。 ユーザーは、簡単なパスワードを選択して、異なるコンピューターやサービスに対して同じパスワードを使用できます。
 
-サインインのセキュリティレベルを追加するには、多要素認証 (MFA) を使用する必要があります。これには、パスワード (強力なものにする必要があります) と、次のものに基づく追加の検証方法を使用する必要があります。
+サインインのセキュリティ レベルを強化するには、強力なパスワードと、追加の確認方法を使用する、多要素認証 (MFA) を採用する必要があります。追加の確認方法では、次のものが使用されます。
 
-- スマートフォンなどの、簡単には再現できないものがあります。
-- 個人で biologically したもの、指紋、顔、その他のバイオメトリクス属性など。
+- 容易に複製できないユーザーの所有物 (スマート フォンなど)。
+- ユーザーに固有の生物学的特徴 (指紋、顔、または他の生体認証属性など)。
 
-追加の認証方法は、ユーザーのパスワードが確認されるまで使用されません。 MFA では、強力なユーザーパスワードが侵害された場合でも、攻撃者はスマートフォンや指紋を持ってサインインを完了できません。
+追加の確認方法は、ユーザーのパスワードが確認されるまで使用されません。 MFA では、強力なユーザー パスワードが侵害された場合でも、攻撃者がスマート フォンや指紋を持っていないため、サインインを完了できません。
 
-## <a name="mfa-support-in-microsoft-365"></a>Microsoft 365 での MFA サポート
-既定では、Microsoft 365 と Office 365 はどちらも、次のものを使用するユーザーアカウントに対して MFA をサポートしています。
+## <a name="mfa-support-in-microsoft-365"></a>Microsoft 365 の MFA サポート
+既定では、Microsoft 365 および Office 365 は、ユーザー アカウントに対する MFA を次の方法でサポートします。
 
-- ユーザーが確認コードを入力する必要がある、電話に送信されるテキストメッセージ。
-- 通話。
-- Microsoft Authenticator スマートフォンアプリ。
+- 電話に送信される、確認コードの入力に必要なテキスト メッセージ。
+- 電話呼び出し。
+- Microsoft Authenticator スマート フォン アプリ。
 
-いずれの場合も、MFA サインインは、追加の確認のための "簡単には複製されていないものがあります" という方法を使用しています。
-Microsoft 365 および Office 365 で MFA を有効にするには、複数の方法があります。
+いずれの場合も、MFA のサインインは、追加の確認で "ユーザーが所有する容易に複製できないもの" を使用する方法を採用しています。
+Microsoft 365 および Office 365 の MFA は、次の複数の方法で有効にできます。
 
-- セキュリティの既定値
-- 条件付きアクセスポリシーを使用する
-- 個別のユーザーアカウントごと (推奨されません)
+- セキュリティの既定値を使用する
+- 条件付きアクセス ポリシーを使用する
+- 個別のユーザー アカウントごとに設定する (推奨されません)
 
-これらの方法は、Microsoft 365 プランに基づいています。
+これらの方法は、ご利用の Microsoft 365 プランに応じて決まります。
     
-|プラン  |推奨事項  | 顧客の種類 |
+|計画  |推奨事項  | お客様の種類 |
 |---------|---------|----------|
-| すべての Microsoft 365 プラン | セキュリティの既定値を使用します。これには、すべてのユーザーアカウントに対して MFA が必要です。 <br> ユーザーごとのアカウントごとに MFA を要求することもできますが、この方法はお勧めしません。 | Small Business |
-| Microsoft 365 Business Premium <br><br> Microsoft 365 E3 <br><br> Azure Active Directory (Azure AD) プレミアム P1 ライセンス | 条件付きアクセスポリシーを使用して、グループメンバーシップ、アプリ、またはその他の条件に基づいてユーザーアカウントに MFA を要求します。 | 小規模企業からエンタープライズへ |
-| Microsoft 365 E5 <br><br> Azure AD Premium P2 ライセンス | Azure AD Identity Protection を使用して、サインインリスク基準に基づいて MFA を要求します。 |  Enterprise |
+| すべての Microsoft 365 プラン | すべてのユーザー アカウントに対して MFA を要求する、セキュリティの既定値を使用します。 <br> ユーザー アカウントごとに MFA を要求することもできますが、この方法はお勧めできません。 | 小規模企業 |
+| Microsoft 365 Business Premium <br><br> Microsoft 365 E3 <br><br> Azure Active Directory (Azure AD) Premium P1 ライセンス | 条件付きアクセス ポリシーを使用して、グループ メンバーシップ、アプリ、その他の条件に基づいてユーザー アカウントに MFA を要求します。 | 小規模企業から大規模企業まで |
+| Microsoft 365 E5 <br><br> Azure AD Premium P2 | Azure AD Identity Protection を使用して、サインイン リスクの条件に基づいて MFA を要求します。 |  大規模企業 |
 ||||
 
 ### <a name="security-defaults"></a>セキュリティの既定値
 
-セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションのセキュリティの既定値は、次のとおりです。
+セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションでは、次のセキュリティの既定値が有効になっています。
 
-- すべてのユーザーに対して、Microsoft Authenticator アプリで MFA を使用することを要求します。
+- すべてのユーザーが Microsoft Authenticator アプリで MFA を使用する必要があります。
 - 従来の認証をブロックします。
 
 ユーザーは、スマートフォンから Microsoft Authenticator アプリを使用して MFA に 14 日間登録できます。これは、セキュリティの既定値が有効になった後、初めてサインインしたときから始まります。 14 日が経過すると、ユーザーは MFA 登録が完了するまでサインインできなくなります。
 
-セキュリティの既定値では、すべての組織が、既定で有効になっているユーザー サインインの基本レベルのセキュリティを確保しています。 セキュリティの既定値を無効にして、条件付きアクセスポリシーを使用して MFA を優先させることができます。
+セキュリティの既定値では、すべての組織が、既定で有効になっているユーザー サインインの基本レベルのセキュリティを確保しています。 条件付きアクセス ポリシーを使用する MFA を優先して、セキュリティの既定値を無効にすることができます。
 
-Azure ポータルの Azure AD の [**プロパティ**] ウィンドウで、セキュリティの既定値を有効または無効にします。
+Azure ポータル内の Azure AD の**プロパティ** ウィンドウで、セキュリティの既定値を有効または無効にします。
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![ディレクトリのプロパティページの画像。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
-Microsoft 365 プランでは、セキュリティの既定値を使用できます。
+すべての Microsoft 365 プランで、セキュリティの既定値を使用できます。
 
 詳細については、こちらの「[セキュリティの既定値の概要](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」をご覧ください。 
 
@@ -85,90 +85,90 @@ Microsoft 365 プランでは、セキュリティの既定値を使用できま
 
 条件付きアクセス ポリシーは、サインインが評価および許可される条件を指定する一連のルールです。 たとえば、次のような条件付きアクセス ポリシーを作成できます。
 
-- ユーザーアカウント名が、Exchange、user、password、security、SharePoint、または全体管理者の役割を割り当てられているユーザーのグループのメンバーである場合は、アクセスを許可する前に MFA を必要とします。
+- ユーザー アカウント名が Exchange、ユーザー、パスワード、セキュリティ、SharePoint、またはグローバル管理者の役割を割り当てられたユーザーのグループのメンバーである場合、アクセスを許可する前に MFA が必要です。
 
-このポリシーを使用すると、これらの管理者の役割に割り当てられるか、または割り当てが解除された場合に、MFA の個々のユーザーアカウントを構成しなくても、グループのメンバーシップに基づいて MFA を要求できます。
+このポリシーを使用すると、これらの管理者の役割から割り当てられたり、または割り当てられなかったりした場合に、個別のユーザー アカウントを MFA 用に構成しようとするのではなく、グループ メンバーシップに基づいて MFA を要求することができるようになります。
 
-また、条件付きアクセスポリシーを使用して、特定のアプリに MFA を要求したり、準拠デバイス (Windows 10 を実行しているラップトップなど) からサインインしたりするなど、より高度な機能を提供することもできます。
+また、条件付きアクセス ポリシーを使用して、特定のアプリに対して MFA を要求する、または Windows 10 を実行しているノート PC などの準拠デバイスからのサインインを要求するなど、より高度な機能を使用することもできます。
 
-Azure portal で Azure AD の [**セキュリティ**] ウィンドウから条件付きアクセスポリシーを構成します。
+Azure ポータル内の Azure AD の**セキュリティ** ウィンドウで、条件付きアクセス ポリシーを構成します。
 
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![条件付きアクセスのメニューオプションの表示](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
-条件付きアクセスポリシーは、次の方法で使用できます。
+条件付きアクセス ポリシーは、次のプランで使用できます。
 
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 および E5
-- Azure AD Premium P1 と Azure AD プレミアム P2 ライセンス 
+- Azure AD Premium P1、Azure AD Premium P2 ライセンス 
 
-Microsoft 365 Business Premium を使用する小規模な企業では、次の手順を使用して、条件付きアクセスポリシーを簡単に使用できます。
+Microsoft 365 Business Premium を使用している小規模企業の場合、次の手順で、条件付きアクセス ポリシーを簡単に使用できます。
 
-1. MFA を必要とするユーザーアカウントを含むグループを作成します。
-2. [**グローバル管理者の MFA を必要と**する] ポリシーを有効にします。
-3. 次の設定を使用して、グループベースの条件付きアクセスポリシーを作成します。
-    - ユーザーおよびグループ > の割り当て: 上記の手順1でグループの名前を指定します。
-    - クラウドアプリまたはアクション > の割り当て: すべてのクラウドアプリ。
-    - アクセス権の付与には、多要素認証を必要と > アクセス許可 > 付与する > を制御します。
+1. MFA を必要とするユーザー アカウントを含むグループを作成します。
+2. **グローバル管理者に対して MFA を要求する** ポリシーを有効にします。
+3. 次の設定を使用して、グループ ベースの条件付きアクセス ポリシーを作成します
+    - 割り当て > ユーザーとグループ: 上記の手順 1 で作成したグループの名前。
+    - 割り当て > クラウド アプリまたは操作: すべてのクラウド アプリ。
+    - アクセス制御 > 許可 > アクセス権の付与 > 多要素認証を要求する。
 4. ポリシーを有効にします。
-5. 上記の手順1で作成したグループにユーザーアカウントを追加してテストします。
-6. 追加のユーザーアカウントに MFA を要求するには、手順1で作成したグループに MFA を追加します。
+5. 上記の手順 1 で作成したグループにユーザー アカウントを追加してテストします。
+6. 追加のユーザー アカウントに MFA を要求するには、手順 1 で作成したグループに追加します。
 
-この条件付きアクセスポリシーを使用すると、ユーザーに対して MFA の要件を自分のペースでロールアウトできます。
+この条件付きアクセス ポリシーを使用すると、お客様のペースでユーザーに MFA の要件を展開できます。
 
-企業では、次のポリシーを構成するために、[一般的な条件付きアクセスポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用する必要があります。
+大規模企業は、[一般的な条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成する必要があります。
 
-- [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
-- [すべてのユーザーに MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [管理者に対して MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [すべてのユーザーに対して MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
 - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
-詳細については、「[条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)」をご覧ください。
+詳細については、こちらの[条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)をご覧ください。
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Azure AD Identity Protection を使用すると、[サインインリスクが中または高の場合に、MFA を必要と](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)する追加の条件付きアクセスポリシーを作成できます。
+Azure AD Identity Protection を使用すると、追加の条件付きアクセス ポリシーを作成して、[サインインのリスクが中以上のとき MFA を要求する](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)ことができます。
 
-Azure AD Id 保護とリスクベースの条件付きアクセスポリシーは、次の方法で使用できます。
+Azure AD Identity Protection とリスク ベースの条件付きアクセス ポリシーは、次のプランで使用できます。
 
 - Microsoft 365 E5
-- Azure AD Premium P2 ライセンス
+- Azure AD Premium P2
 
-詳細については、この「[Azure AD Identity Protection の概要](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)」をご覧ください。
+詳細については、こちらの [Azure AD Identity Protection の概要](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)をご覧ください。
 
-### <a name="mfa-for-an-individual-user-account-not-recommended"></a>個別のユーザーアカウントの MFA (推奨されません)
+### <a name="mfa-for-an-individual-user-account-not-recommended"></a>個別のユーザー アカウントに対する MFA (推奨されません)
 
-ユーザーアカウントのサインインに MFA を必要とするには、セキュリティの既定値または条件付きアクセスポリシーを使用する必要があります。ただし、これらのいずれかを使用できない場合は、管理者の役割、特に全体管理者の役割を持つユーザーアカウントに対して、任意のサイズのサブスクリプションに対して MFA を強くお勧めします。 
+ユーザー アカウントのサインインに MFA を要求するには、セキュリティの既定値または条件付きアクセス ポリシーを使用する必要があります。これらのいずれも使用できない場合は、あらゆるサイズのサブスクリプションについて、管理者ロール、特にグローバル管理者ロールを持つユーザー アカウントに対する MFA を強く推奨します。 
 
-Microsoft 365 管理センターの**アクティブなユーザー**ウィンドウから、個々のユーザーアカウントに対して MFA を有効にします。
+Microsoft 365 管理センターの **アクティブなユーザー** ウィンドウで、各ユーザー アカウントに対して MFA を有効にします。
 
-![](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![[アクティブなユーザー] ページでの多要素認証オプションの画像](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
-有効にすると、ユーザーが次回サインインしたときに、MFA を登録し、追加の検証方法を選択してテストするように求めるメッセージが表示されます。
+有効にすると、ユーザーが次回サインインしたときに、MFA に登録し、追加の確認方法を選択してテストするように求められます。
 
-### <a name="using-these-methods-together"></a>これらの方法を一緒に使用する
+### <a name="using-these-methods-together"></a>これらの方法を組み合わせて使用する
 
 この表は、セキュリティの既定値、条件付きアクセス ポリシー、およびユーザーごとのアカウント設定で MFA を有効にした結果を示しています。
 
 || Enabled | 無効 | 第 2 の認証方法 |
 |:-------|:-----|:-------|:-------|
 | **セキュリティの既定値** | 条件付きアクセス ポリシーを使用できない |   条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
-| **条件付きアクセス ポリシー** |いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべての設定が無効になっている場合は、セキュリティの既定値を有効にできます。 | MFA への登録時にユーザー指定 |
-| **ユーザーごとのアカウントの設定 (推奨されません)** | 各サインインで MFA を必要とするセキュリティの既定値と条件付きアクセスポリシーを上書きします。 | セキュリティの既定値と条件付きアクセスポリシーによって上書きされます。 | MFA への登録時にユーザー指定|
+| **条件付きアクセス ポリシー** |いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます | MFA 登録中にユーザーが指定 |
+| **ユーザー ごとのアカウント設定 (推奨されません)** | 毎回のサインインで MFA を要求して、セキュリティの既定値と条件付きアクセス ポリシーを上書きします | セキュリティの既定値と条件付きアクセス ポリシーによって上書きされます | MFA 登録中にユーザーが指定|
 ||||
 
-セキュリティの既定値が有効になっている場合は、すべての新規ユーザーが MFA 登録を求め、次のサインイン時に Microsoft Authenticator アプリを使用するように求められます。
+セキュリティの既定値が有効になっている場合、すべての新しいユーザーは、次回のサインイン時に MFA 登録と Microsoft Authenticator アプリの使用を求められます。
 
 ## <a name="ways-to-manage-mfa-settings"></a>MFA 設定を管理する方法
 
-MFA の設定を管理する方法は2つあります。
+以下の 2 種類の方法で MFA 設定を管理できます。
 
-Azure portal では、次のことを行うことができます。
+Azure ポータルでは、次のことができます。
 
 - セキュリティの既定値を有効または無効にする
-- 条件付きアクセスポリシーを構成する
+- 条件付きアクセス ポリシーを構成する
 
-Microsoft 365 管理センターでは、ユーザー単位およびサービスの MFA 設定を構成できます。
+Microsoft 365 管理センターでは、ユーザー単位およびサービス用の MFA 設定を構成できます。
 
-## <a name="your-next-step"></a>次の手順
+## <a name="your-next-step"></a>次のステップ
 
-[Microsoft 365 の MFA をセットアップする](set-up-multi-factor-authentication.md)
+[Microsoft 365 の MFA を設定する](set-up-multi-factor-authentication.md)
 

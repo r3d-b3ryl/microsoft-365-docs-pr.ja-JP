@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な職場または学校のアカウントでサインインすると、ユーザーは、Office 365 のエンタープライズレベルのプライバシー、セキュリティ、およびコンプライアンスの約束を満たす Microsoft 365 エクスペリエンスで、クラウドベースのアシスタントサービスを受けることができます。
-ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411003"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083552"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 の Cortana
 
@@ -33,7 +33,7 @@ ms.locfileid: "44411003"
 
 個人の生産性アシスタントとして、Cortana は、電子メール、ファイル、チャットなどの Office 365 データを安全かつ安全に処理および理由を提供するように設計されており、時間を節約し、効率を高め、ユーザーの生産性を向上させることができます。
 
-次に、エンタープライズの生産性に Cortana を注目しています。
+次に、エンタープライズの生産性に Cortana を注目しています。 
 
 - 他の Office 365 サービスとの一貫性のある Cortana エンタープライズサービスは、[オンラインサービスの利用規約 (OST)](https://www.microsoft.com/licensing/product-licensing/products)に反映されているのと同じエンタープライズレベルのプライバシー、セキュリティ、およびコンプライアンスの約束を満たします。
 
@@ -61,7 +61,7 @@ Cortana エンタープライズサービスは、ユーザーからのクエリ
 |**Geo 内に留まります**  <br/> |お客様のデータは、地域内の Office 365 クラウド内の Microsoft サーバーに保存されます。 データはテナントの一部です。  <br/> |
 |**保持**  <br/> |ユーザーデータが削除されるのは、テナント管理者がアカウントを閉じた場合、または GDPR データ主体の権利削除要求が行われた場合です。 <br/> 音声合成オーディオは保持されません。  <br/> |
 |**処理と機密性**  <br/> |顧客データおよび個人データの処理に従事している人員 (i) は、お客様からの指示に対してのみこのようなデータを処理し、(ii) 契約が終了した後でも、そのようなデータの機密性とセキュリティを維持する義務があります。  <br/> |
-|**使用法**  <br/> |Microsoft では、顧客データのみを使用して、同意されたサービスと、それらのサービスとの互換性を確保しています。 モデルを開発および改善するための機械学習は、これらの目的の1つです。 Machine learning は Office 365 cloud 内部で行われます。ユーザーは顧客データの表示、確認、またはラベル付けを行うことがありません。 <br/> 広告の対象となるデータは使用されません。  <br/> |
+|**使用状況**  <br/> |Microsoft では、顧客データのみを使用して、同意されたサービスと、それらのサービスとの互換性を確保しています。 モデルを開発および改善するための機械学習は、これらの目的の1つです。 Machine learning は Office 365 cloud 内部で行われます。ユーザーは顧客データの表示、確認、またはラベル付けを行うことがありません。 <br/> 広告の対象となるデータは使用されません。  <br/> |
 
 ## <a name="cortana-enterprise-services-in-microsoft-365-experiences"></a>Microsoft 365 エクスペリエンスの Cortana enterprise サービス
 
@@ -80,6 +80,26 @@ Windows 10 バージョン2004以降の cortana は、[オンラインサービ�
 Windows 10 以降のバージョン2004では、Cortana は Windows にプレインストールされたユニバーサル Windows プラットフォーム (UWP) アプリであり、Microsoft Store を通じて定期的に更新されています。 Cortana に対する最新の更新プログラムを受信するには、 [Microsoft Store から更新プログラムを有効](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store)にする必要があります。
 
 [Windows 10 の Cortana の詳細情報](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+
+### <a name="cortana-voice-assistance-in-teams"></a>Teams での Cortana 音声支援
+
+Teams モバイルアプリの Cortana 音声アシスタントを使用すると、Microsoft 365 エンタープライズユーザーは、コミュニケーション、コラボレーション、および会議関連のタスクを、読み上げられた自然言語で合理化できます。 ユーザーは、Teams モバイルアプリの右上にある [マイク] ボタンをクリックすると、Cortana に話すことができます。 「Call Megan」や「次の会議にメッセージを送信」のような音声クエリを行うことによって、外出先から連絡を取ることができます。 ユーザーは、「次の会議に参加する」と言って、音声アシスタントを使用してファイルを共有したり、予定表を確認したりすることで、会議に参加することもできます。 これらの音声アシスタントエクスペリエンスは、[オンラインサービスの利用規約 (OST)](https://www.microsoft.com/licensing/product-licensing/products)に反映された、Office 365 のプライバシー、セキュリティ、およびコンプライアンスの約束に完全に準拠する Cortana エンタープライズレベルのサービスを使用して提供されます。
+
+**管理者による制御**
+
+Cortana の音声アシスタントは、テナントに対して既定で有効になります。 管理者は、ポリシーを介して Teams で Cortana 音声アシスタントを使用できるように、テナント内のユーザーを制御できます (TeamsCortanaPolicy)。 このポリシーは、ユーザーアカウントレベルまたはテナントレベルのどちらかで設定できます。 また、管理者は、このポリシー制御内の CortanaVoiceInvocationMode フィールドを使用して、Cortana が無効であるかどうか、プッシュボタン呼び出しのみで有効になっているかどうか、またスリープ解除時の呼び出し (それをサポートするデバイスに適用可能) で有効になっているかどうかを判断できます。 Microsoft 365 Enterprise ユーザーのための最初のリリースの時点では、英語では、Teams モバイルアプリはスリープ解除 word ライセンス認証をサポートしていませんが、今後サポートされる予定です。
+
+**ユーザーコントロール**
+
+個々のユーザーは、[マイク] ボタンをクリックして、Teams mobile アプリで Cortana 音声アシスタントを試すことができます。 Teams のモバイルアプリの設定を使用して、チーム内の Cortana が自分のデバイスに対して有効になっているかどうかを制御することもできます。 
+
+1. Teams モバイルアプリを開きます。
+
+2. [**設定**] に移動します。
+
+3. [ **Cortana**] を選択します。
+
+4. このデバイスで Cortana 音声アシスタントを使用するかどうかに応じて、トグルをオンまたはオフにします。
 
 ### <a name="play-my-emails"></a>自分のメールを再生する
 

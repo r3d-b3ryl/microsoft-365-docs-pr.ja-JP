@@ -1,5 +1,5 @@
 ---
-title: セキュリティ&amp;コンプライアンスを計画する
+title: セキュリティコンプライアンスを計画する &amp;
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: このランディングページには、Office 365 のセキュリティとコンプライアンスのリンクと計画に関する情報が記載されています。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034897"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086658"
 ---
-# <a name="plan-for-security-amp-compliance"></a>セキュリティ&amp;コンプライアンスを計画する
+# <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを計画する &amp;
 
 セキュリティとコンプライアンスの管理は、パートナーシップです。 Microsoft 強力は Microsoft 365 services を保護していますが、お客様はデータ、id、デバイスを保護する責任があります。 Microsoft 365 と Enterprise Mobility + Security (EMS) を一緒に使用して、組織に適したレベルの保護を実現できます。
   
@@ -32,7 +32,7 @@ ms.locfileid: "44034897"
 
 Office 365 の情報保護のポスターの情報保護機能に自分を向けて説明します。 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[Microsoft 365 を使用して、データプライバシー規制の情報保護を展開する](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>手順 2: セキュリティで保護されたスコアを確認する
 
@@ -56,15 +56,15 @@ Microsoft 365 データおよびサービスへのアクセスを保護するこ
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: Microsoft 365 セキュリティ&amp;コンプライアンスセンターを活用する
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: Microsoft 365 セキュリティコンプライアンスセンターを活用する &amp;
 
-セキュリティ&amp;コンプライアンスセンターでは、脅威管理、データガバナンス、検索と調査など、Microsoft 365 セキュリティのさまざまな分野を管理するために使用するコントロールを1つのビューで確認できます。 
+セキュリティコンプライアンスセンターでは、 &amp; 脅威管理、データガバナンス、検索と調査など、Microsoft 365 セキュリティのさまざまな分野を管理するために使用するコントロールを1つのビューで確認できます。 
   
-- [セキュリティ&amp; /コンプライアンスセンターに移動する](go-to-the-securitycompliance-center.md)
+- [セキュリティ/コンプライアンスセンターに移動する &amp;](go-to-the-securitycompliance-center.md)
     
-- [セキュリティ&amp; /コンプライアンスセンターのアクセス許可](~/security/office-365-security/protect-against-threats.md)
+- [セキュリティ/コンプライアンスセンターのアクセス許可 &amp;](~/security/office-365-security/protect-against-threats.md)
     
-- [ユーザーにセキュリティ&amp;コンプライアンスセンターへのアクセス権を付与する](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [ユーザーにセキュリティコンプライアンスセンターへのアクセス権を付与する &amp;](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>手順 6: エンドツーエンドのセキュリティシナリオを出発点として使用する
 

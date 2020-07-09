@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Outlook で1つまたは複数の配布リストを Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: a1fb974be4838ebe98c2c55fe8694e89e27d636e
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780027"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083576"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストを Microsoft 365 グループにアップグレードする
 
@@ -71,11 +71,15 @@ If you're experienced at using PowerShell, you might want to go this route inste
 
 1 つの DL をアップグレードするには、次のコマンドを実行します。
 
-`Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```
 
 たとえば、SMTP アドレスが dl1@contoso.com の DL をアップグレードする場合は、次のコマンドを実行します。
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```
 
 > [!NOTE]
 > [Set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell コマンドレットを使用して、1つの配布リストを Microsoft 365 グループにアップグレードすることもできます。
@@ -84,9 +88,8 @@ If you're experienced at using PowerShell, you might want to go this route inste
 
 複数の DL をバッチとして渡し、まとめてアップグレードすることもできます。
 
-```
+```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
@@ -103,7 +106,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 
 1. テナント内の対象となる Dl を取得し、次のアップグレードコマンドを使用してアップグレードします。
 
-```
+```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -111,7 +114,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 
 2. 2.すべての DL の一覧を取得し、対象となる DL のみをアップグレードします。
 
-```
+```PowerShell
 Get-DistributionGroup| Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }

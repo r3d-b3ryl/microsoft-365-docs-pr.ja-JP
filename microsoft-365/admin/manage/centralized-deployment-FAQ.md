@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターからの一元展開についてよく寄せられる質問に対する回答を確認してください。
-ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399826"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083564"
 ---
 # <a name="centralized-deployment-faq"></a>一元展開に関する FAQ
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399826"
  
 一元展開は、オンラインメールボックスでのみサポートされます。 オンプレミスの Exchange メールボックスへの展開はサポートされていません。
  
-[Office 365 集中展開互換チェック](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   を使用して、サブスクリプションが対象になるかどうかを判断できます。 
+[一元展開の互換性チェック](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   を使用して、サブスクリプションが対象になるかどうかを判断できます。 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>一元展開を使用してアドインユーザーの割り当てをどのように対象にしていますか。  
 

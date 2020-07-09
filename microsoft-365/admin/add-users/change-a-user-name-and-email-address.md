@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'グローバル管理者によって行われる、ユーザーのメール アドレスと表示名の変更方法について説明します。 '
-ms.openlocfilehash: 0c94114a50ce369ffb809e8f41060994f635a36c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fedc1532bfec246392180d386a6960dbb08bd137
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936529"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079715"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -50,7 +50,7 @@ ms.locfileid: "44936529"
     
 2. ユーザー名を選択し、 [**アカウント**] タブで、[**ユーザー名の管理**] を選択します。
     
-3. 最初のボックスに、新しいメールアドレスの最初の部分を入力します。 独自のドメインを Office 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択することができます。 
+3. 最初のボックスに、新しいメールアドレスの最初の部分を入力します。 独自のドメインを Microsoft 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択します。 
 
 4. [**変更の保存**] を選択します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "44936529"
 
 2. ユーザーを選択します。 ポップアップ ウィンドウで、[**ユーザー名 / メール**] の隣にある [**編集**]を選択します。
 
-3. 最初のボックスに、新しいメールアドレスの最初の部分を入力します。 独自のドメインを Office 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択することができます。
+3. 最初のボックスに、新しいメールアドレスの最初の部分を入力します。 独自のドメインを Microsoft 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択することができます。
 
 4. [**保存**] を選択します。
 
@@ -75,7 +75,7 @@ ms.locfileid: "44936529"
 
 2. ユーザーを選択します。 ポップアップ ウィンドウで、[**ユーザー名 / メール**] の隣にある [**編集**]を選択します。
 
-3. 最初のボックスに、新しいメールアドレスの最初の部分を入力します。 独自のドメインを Office 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択することができます。
+3. 最初のボックスに、新しいメールアドレスの最初の部分を入力します。 独自のドメインを Microsoft 365 に追加した場合は、ドロップダウン リストを使って新しいメール エイリアスにそのドメインを選択することができます。
 
 4. [**保存**] を選択します。
 
@@ -93,7 +93,7 @@ ms.locfileid: "44936529"
 
 3. そのユーザーのプライマリ メール アドレスとして設定するメール アドレスで [**プライマリとして設定**] を選択します。 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     また、グローバル管理者である場合にのみ、このオプションが表示されます。このオプションが表示されない場合は、ユーザーの名前とプライマリ メール アドレスを変更するアクセス許可がありません。
   
@@ -121,7 +121,7 @@ ms.locfileid: "44936529"
 
 3. そのユーザーのプライマリ メール アドレスとして設定するメール アドレスで [**プライマリとして設定**] を選択します。 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     また、グローバル管理者である場合にのみ、このオプションが表示されます。このオプションが表示されない場合は、ユーザーの名前とプライマリ メール アドレスを変更するアクセス許可がありません。
   
@@ -131,7 +131,7 @@ ms.locfileid: "44936529"
  
   - この変更が反映されるまで、しばらくお待ちいただく場合があります。
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - ユーザーが Skype for Business Online を使っている場合は、ユーザーが計画している Skype for Business Online 会議のスケジュールを変更する必要があることと、外部の取引先担当者に古い連絡先情報の更新を依頼する必要があることを伝えます。
 
@@ -149,7 +149,7 @@ ms.locfileid: "44936529"
 
 3. そのユーザーのプライマリ メール アドレスとして設定するメール アドレスで [**プライマリとして設定**] を選択します。 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     また、グローバル管理者である場合にのみ、このオプションが表示されます。このオプションが表示されない場合は、ユーザーの名前とプライマリ メール アドレスを変更するアクセス許可がありません。
   
@@ -159,7 +159,7 @@ ms.locfileid: "44936529"
  
   - この変更が反映されるまで、しばらくお待ちいただく場合があります。
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - ユーザーが Skype for Business Online を使っている場合は、ユーザーが計画している Skype for Business Online 会議のスケジュールを変更する必要があることと、外部の取引先担当者に古い連絡先情報の更新を依頼する必要があることを伝えます。
 
@@ -234,7 +234,7 @@ Some people might continue to send email to the person's old email address and d
 
 If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 この問題を解決するには、Microsoft 365 管理者の認証情報を使って [PowerShell 用 Azure Active Directory モジュール]( https://go.microsoft.com/fwlink/?LinkId=823193)にログインし、 次の構文を使用します。 
   
