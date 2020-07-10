@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、および調整する方法について説明します。
-ms.openlocfilehash: 9f5f1b1f84ba44dbf52366d30b0e26bbf310e9fe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352224"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45092007"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーを作成、テスト、調整する
 
-データ損失防止 (DLP) は、組織が不必要な機密情報を意図的または偶発的に危険にさらすことを防止するために設計されたコンプライアンス機能です。 DLP のルーツは Exchange Server および Exchange Online にあり、SharePoint Online および OneDrive for Business にも適用できます。
+データ損失防止 (DLP) は、組織が偶発的または偶発的で不要な機密情報を他者に公開しないようにするために設計されたコンプライアンス機能です。 DLP のルーツは Exchange Server および Exchange Online にあり、SharePoint Online および OneDrive for Business にも適用できます。
 
 DLP は、コンテンツ分析エンジンを使用してメール メッセージおよびファイルのコンテンツを調べ、クレジット カード番号や個人を特定できる情報 (PII) などの機密情報を探します。 通常、機密情報はメール メッセージやファイルの暗号化などの追加の手順を実行せずにメールで送信したり、ドキュメントに含めたりするべきではありません。 DLP を使用することで機密情報を検出し、次のようなアクションを実行できます。
 

@@ -1,11 +1,12 @@
 ---
-title: 悪意のある電子メールの検索と調査
+title: Office 365 で配信された悪意のある電子メールを調査し、悪意のある電子メールを見つけて調査する
 keywords: TIMailData-インライン、セキュリティインシデント、インシデント、ATP PowerShell、電子メールマルウェア、侵害されたユーザー、電子メールフィッシング、電子メールマルウェア、電子メールヘッダーの読み取り、ヘッダーの読み取り、電子メールのヘッダーを開く
 f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
+ms.date: 07/09/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,18 +19,21 @@ ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 747b6b875a3b7ebc8125ac27ed00c9a300845427
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039414"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091963"
 ---
-# <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査および修復する
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査する
 
 [Office 365 Advanced Threat Protection](office-365-atp.md)を使用すると、組織内のユーザーにリスクがあるというアクティビティを調査し、組織を保護するための処置を取ることができます。 たとえば、組織のセキュリティチームに属している場合は、配信された不審な電子メールメッセージを見つけて調査することができます。 これを行うには、[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)を使用します。
+
+> [!NOTE]
+> 修復[の記事に](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258)移動します。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 次の要件が満たされていることを確認してください。
   
@@ -47,8 +51,8 @@ ms.locfileid: "45039414"
 
 |アクティビティ  |役割グループ |必要なプレビューの役割  |
 |---------|---------|---------|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | 不要   |
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       不要  |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する     |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者     | いいえ   |
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする    |グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者   |       いいえ  |
 |脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする     |グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview   |   はい      |
 
 > [!NOTE]
@@ -177,6 +181,9 @@ ms.locfileid: "45039414"
   
      **電子メールタイムライン**は、セキュリティ運用チームにとって使いやすいようにするための脅威エクスプローラーのフィールドです。 電子メールで複数のイベントが同時に発生するか、または同じ時刻に近いときに、これらのイベントがタイムラインビューに表示されます。 電子メールへの配信後に発生する一部のイベントは、[**特殊なアクション**] 列に記録されます。 メールメッセージのタイムラインからの情報と、配信後に実行された特別な操作によって、管理者はポリシーと脅威の処理についての洞察を得ることができます (メールがルーティングされた場所や、場合によっては最終的な評価は何かなど)。
 
+> [!IMPORTANT]
+> [ここ](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)にある修復のトピックに移動します。
+
 <!-- Reference material
 
 1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
@@ -254,6 +261,8 @@ To access your message header and email download options, follow these steps:
 -->
 
 ## <a name="related-topics"></a>関連トピック
+
+[Office 365 で配信される悪意のある電子メールを修復する](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
 
 [Office 365 Advanced Threat Protection](office-365-ti.md)
   

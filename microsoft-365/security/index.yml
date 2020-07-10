@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: f97f9b3eed2ec9eed95b1f4ec57a3b055d8c4925
   ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 05/01/2020
   ms.locfileid: "43997528"
@@ -28,17 +28,17 @@ landingContent:
       url: mtp/microsoft-threat-protection.md
     - text: Microsoft 365 セキュリティ センター
       url: mtp/overview-security-center.md
-- title: 無料試用版で開始する
+- title: 無料試用版の使用を開始する
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft の脅威保護を評価する
+    - text: Microsoft Threat Protection を評価する
       url: mtp/mtp-evaluation.md
-- title: リモートワーカーをセキュリティで保護する
+- title: リモート従業員を保護する
   linkLists:
   - linkListType: get-started
     links:
-    - text: リモートワーカーをセキュリティで保護する
+    - text: リモート従業員を保護する
       url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
 - title: Azure ATP
   linkLists:
@@ -80,7 +80,7 @@ landingContent:
       url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
     - text: Microsoft Cloud App Security の使用を開始する
       url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
-- title: セキュリティの管理
+- title: セキュリティ管理
   linkLists:
   - linkListType: overview
     links:

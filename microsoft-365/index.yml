@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
   ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 06/27/2020
   ms.locfileid: "44909290"
@@ -54,7 +54,7 @@ additionalContent:
       summary: 大規模な組織向けに設計されています。 Office アプリ、Windows 10、および Enterprise Mobility + Security でビジネスを保護し、作業方法を変革します。
       url: ./enterprise/index.yml
     - title: Microsoft 365 ソリューションおよびアーキテクチャ センター
-      summary: 組織に適したソリューションとアーキテクチャを設計する方法について説明します。
+      summary: 組織に適したソリューションとアーキテクチャを設計する方法を理解します。
       url: ./solutions/index.yml
     - title: Microsoft 365 Education
       summary: 手ごろな価格の教育用に構築された単一ソリューションで、教育者が創造力を発揮し、チームワークを促進し、シンプルかつ安全な操作性を実現できるように設計されています。

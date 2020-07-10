@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 48512cf2fff802509ebaa14ca69d3ca02908902e
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087923"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094836"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターで ServiceNow チケットを作成および追跡する
 
@@ -54,9 +54,7 @@ Microsoft 365 セキュリティセンターのホームページに移動して
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>タスクを作成して ServiceNow に共有する
 
-統合がセットアップされたら、特定の Microsoft セキュリティスコア向上アクションに基づいて ServiceNow タスクを作成します。 Microsoft 365 セキュリティセンターポータルで、[セキュリティで保護されたスコア] のすべての改善アクションに移動し、[共有] アイコンを選択します。 ドロップダウンオプションの1つは ServiceNow です。
-
-![セキュリティで保護されたスコアでの ServiceNow 共有](../../media/servicenow-share.png)
+統合がセットアップされたら、特定の[Microsoft セキュリティスコア](microsoft-secure-score.md)向上アクションに基づいて ServiceNow タスクを作成します。 Microsoft 365 セキュリティセンターポータルで、[セキュリティで保護されたスコア] のすべての改善アクションに移動し、[**共有**] を選択します。 ドロップダウンオプションの1つは ServiceNow です。
 
 タスクが生成され、優先度を設定して、名前、説明、または期限を編集できます。 すべての必須フィールドが入力されたら、そのタスクを ServiceNow に送信します。
 
