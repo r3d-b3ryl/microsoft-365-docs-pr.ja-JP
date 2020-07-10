@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: ユーザーとグループを管理する
-summary: これらのリソースをチェックして、管理者が一般的なタスクを実行できるようにするか、左側のナビゲーションウィンドウで完全なリストを参照してください。
+summary: 管理者が一般的なタスクを行う際に役立つこれらのリソースを参照するか、左側のナビゲーション ウィンドウの完全な一覧を参照してください。
 metadata:
   title: ユーザーとグループを管理する
-  description: パスワードの管理、ユーザーの追加と削除、グループの設定、およびライセンスの管理
+  description: パスワードの管理、ユーザーの追加と削除、グループのセットアップ、およびライセンスの管理
   ms.service: O365-administration
   ms.subservice: subservice
   ms.topic: landing-page
@@ -14,22 +14,22 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 25b100e8f685c94d3dccc290e8f80b25e24a6d9b
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: ja-JP
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785474"
 landingContent:
-- title: ユーザーを管理します
+- title: ユーザーの管理
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: ユーザーの追加
       url: add-users.md
-    - text: ユーザーを編集する
+    - text: ユーザーの編集
       url: add-users.md
     - text: Microsoft 365 グループにゲストを追加する
       url: ../create-groups/manage-guest-access-in-groups.md
-    - text: 別のメールアドレスを追加する
+    - text: 別のメール アドレスを追加する
       url: ../email/add-another-email-alias-for-a-user.md
     - text: 共有メールボックスを作成する
       url: ../email/create-a-shared-mailbox.md
@@ -41,7 +41,7 @@ landingContent:
       url: about-guest-users.md
     - text: カスタム ドメインを使用する
       url: ../email/change-email-address.md
-    - text: 最新のアプリにユーザーをアップグレードする
+    - text: 最新のアプリへとユーザーをアップグレードする
       url: ../setup/upgrade-users-to-latest-office-client.md
 - title: グループを管理する
   linkLists:
@@ -51,23 +51,23 @@ landingContent:
       url: ../create-groups/create-groups.md
     - text: メンバーを追加する
       url: ../create-groups/add-or-remove-members-from-groups.md
-    - text: 削除されたグループを復元または復元する
+    - text: 削除したグループを復元または回復する
       url: ../create-groups/restore-deleted-group.md
-    - text: グループ内のゲストアクセスを管理する
+    - text: グループでゲスト アクセスを管理する
       url: ../create-groups/manage-guest-access-in-groups.md
-- title: パスワードの管理
+- title: パスワードを管理する
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: ユーザーのパスワードを再設定する
+    - text: ユーザーのパスワードを再設定します
       url: reset-passwords.md
     - text: パスワードを無期限に設定する
       url: set-password-to-never-expire.md
     - text: ユーザーが自分でパスワードをリセットできるようにする
       url: let-users-reset-passwords.md
-    - text: 組織のパスワードの有効期限ポリシーを設定する
+    - text: 組織のパスワード有効期限ポリシーを設定する
       url: ../manage/set-password-expiration-policy.md
-    - text: 管理者パスワードのリセット
+    - text: 管理者パスワードを再設定する
       url: reset-passwords.md#reset-my-admin-password
 - title: 従業員を削除する
   linkLists:
@@ -77,7 +77,7 @@ landingContent:
       url: delete-a-user.md
     - text: 元ユーザーのデータにアクセスしてバックアップを作成する
       url: get-access-to-and-back-up-a-former-user-s-data.md
-    - text: 別のユーザーにメールを転送する
+    - text: メールを別のユーザーに転送する
       url: ../email/configure-email-forwarding.md
     - text: ライセンスを削除する
       url: ../manage/remove-licenses-from-users.md
