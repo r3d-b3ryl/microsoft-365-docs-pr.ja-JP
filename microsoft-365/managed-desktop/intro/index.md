@@ -1,107 +1,107 @@
 ---
-title: Microsoft Managed Desktop が適切
+title: Microsoft マネージド デスクトップの適性
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "44011913"
 ---
-# <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
+# <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは?
 
 
-Microsoft マネージドデスクトップは、 [microsoft 365 enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) ( [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise と[Office 365 enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)を含む) を統合し、これらの機能を追加するクラウドベースのサービスです。
+Microsoft マネージドデスクトップは、[Microsoft 365 エンタープライズ](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)([Windows 10](https://docs.microsoft.com/windows/windows-10/) エンタープライズと [Office 365 エンタープライズ](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)を含む)を組み合わせたクラウドベースのサービスであり、次の機能を追加します。
 
 - エンドユーザーデバイスの展開
 - IT サービスの管理と運用
-- セキュリティの監視と応答
-- エンドユーザーサポート
+- セキュリティの監視と対応
+- エンドユーザーのサポート
 
-Microsoft マネージドデスクトップは、今日の企業およびそのユーザーが直面しているいくつかの課題に対応するソリューションを提供します。
-- サービスとしてのソフトウェアのアジャイル world への移行は困難です。
-- エンドユーザーには、機能豊富な接続された作業環境が必要です。
-- 最新の IT 管理およびセキュリティプロセスの多くは、古く、時間がかかる、費用がかかります。
-- 企業は、デジタルインフラストラクチャを維持するのではなく、それぞれを一意に成功させることに重点を置いています。
+Microsoft マネージドデスクトップは、今日におけるビジネスおよび従業員が直面しているいくつかの課題に対応するソリューションを提供します。
+- サービスとしてソフトウェアのアジャイル環境への移行は困難です。
+- エンドユーザーは、職歴と関係した権限を与えられたものを求めます。
+- 現在の IT 管理およびセキュリティプロセスは、最新のものではありません。時間がかかり、コストがかかります。
+- 企業は、デジタルインフラストラクチャを維持するのではなく、固有のデータを成功させるための方法に重点を置いています。
 
-エンドユーザーには、最新バージョンの Windows 10 アプリおよび Microsoft 365 Apps for enterprise apps (およびその他) があります。これには、合わせのデバイスとソフトウェアを使用し、最適なパフォーマンスと信頼性を得るために厳格にテストされています。 また、このソフトウェアを常に最新の状態に維持する必要はありません。これは、すべての手順で監視される慎重なロールアウトシーケンスに従って行われます。 また、登録済みデバイスは、技術およびセキュリティ上の問題について24時間365日に監視されるので、問題が発生した場合にヘルプが表示されます。
+エンドユーザーには、最新バージョンの Windows 10 アプリと、エンタープライズアプリ用 (およびその他) のMicrosoft Microsoft 365 が提供され、精選し、そして厳格に評価されたデバイスとソフトウェアを使用して、最高のパフォーマンスと信頼性を実現できます。 また、これらのどのソフトウェアを常に最新の状態に維持することを心配する必要はありません。なぜなら全ての手順を監視している慎重なロールアウトの順番の後で自動的に維持されるからです。 また、登録されているデバイスは、24x7 年中無休で技術的およびセキュリティの問題を監視していて、何か問題が発生した場合は、ヘルプへの第一歩がされるようになります。
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに固有
 
-もちろん、独自のデバイスや Microsoft 365 の展開を自分で取得して管理することもありません。 Microsoft の管理されたデスクトップとは何ですか。
+もちろん、自ら自分のデバイスとMicrosoft 365 の展開を取得したり管理することを止めるものは何もありません。 ではMicrosoft マネージドデスクトップがそれ以上提供するものは何でしょう?
 
-弊社のポリシーとセキュリティベースラインは、エンドユーザーに次の利点を提供します。
+Microsoft のポリシーとセキュリティ基準では、エンドユーザーに次のメリットがあります。
 
-- Microsoft マネージドデスクトップデバイスの起動時間は、その4分の1分間を示します。
-- 少なくともバッテリ寿命の2倍
-- 年間 1 ~ 3 分のデバイスクラッシュ
-- [エンタープライズ状態ローミング](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)を使用したデバイスのモビリティにより、ユーザーはサインインするデバイスにかかわらず、同じ機能を使用できます。
+- Microsoft マネージドデスクトップ デバイスのブート時間は、4分の 1です。
+- 少なくともバッテリ寿命は2倍
+- デバイスクラッシュは年間約3分の1
+- [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)経由のデバイス モビリティは、ユーザーへサインインに使用可能なデバイスにかかわらず、同じ操作を行うことができるようにします。
 
 IT 管理者は、次の機能を利用できます。
 
-- Insights ダッシュボードは、デバイスとユーザーの使用状況、信頼性、デバイスの正常性、およびその他のデータについて常に最新の状態を維持します。
-- デバイスの95% を更新するのに必要な時間の*10 分の 1*について
-- サービスによって提供される[デバイスの管理](#device-management)により、他の IT 管理者アクティビティに集中する時間が増加します。
-- デバイスとアプリのパフォーマンスをより良く認識し、[デバイスの監視](#device-monitoring)からセキュリティの問題を早期に警告できます。
+- Insights のダッシュボードを使用すると、使用状況状、信頼性、デバイスの正常性、およびデバイスとユーザーのその他のデータが常に最新の状態で保たれます。
+- 95%のデバイスを更新するにはおよそ*10分の1* 程の時間を要します。
+- より多くの時間に焦点を置く、その他のIT 管理者のアクティビティとしては, [デバイス管理](#device-management) がサービスによって提供されるおかげという点です。
+- [デバイス モニタリング](#device-monitoring)からの、デバイスとアプリのパフォーマンスの認識とセキュリティ問題の早期警告の向上。
 
-## <a name="device-management"></a>デバイスの管理
-Microsoft マネージドデスクトップでは、登録されたデバイスとそれらが使用する Microsoft ソフトウェアを管理する負荷がかかります。
+## <a name="device-management"></a>デバイス管理
+Microsoft マネージドデスクトップは、登録されているデバイスやユーザーが使用する Microsoft ソフトウェアを管理する負担を引き受けます。
 
-- **ハードウェア:** IT 部門がデバイス (およびそのドライバー) を調査してテストするのではなく、特定のデバイスが Microsoft マネージドデスクトップによって慎重にテストされるので、エンタープライズレベルのパフォーマンス要件を満たす[デバイスの合わせリスト](../service-description/device-list.md)が作成され、サービスで動作することが保証されます。 承認済みリストに含まれている場合は、デバイスを自分で取得する (またはパートナーと連携する) か、または既存のデバイスを再利用することができます。 デバイスの登録は簡単でわかりやすく、展開する前に、エンドユーザーにとってのデバイスの使用状況の一部を[カスタマイズ](../working-with-managed-desktop/config-setting-overview.md)することもできます。
-- **更新プログラム:** Microsoft マネージドデスクトップは、Windows 10 の品質と機能の更新プログラム、ドライバー、ファームウェア、ウイルス対策の定義、および Microsoft 365 アプリ for enterprise の更新プログラムについて、[展開グループ](../service-description/updates.md)のすべての側面を設定して管理します。 これには、すべての更新プログラムのテストと検証が含まれており、登録されたデバイスが常に最新の状態になっていることを保証し、中断を最小限に抑え、継続的なタスクから IT 部門を解放することができます。
-- **アプリ:** Microsoft 365 Enterprise の一部として、microsoft はいくつかの主要な Microsoft アプリを提供 (および管理) します。 しかし、お客様のビジネスに必要なその他のアプリがあるかもしれません。 これらのアプリケーションをテスト、パッケージ化、および展開する必要がある IT 部門ではなく、これらのアプリを展開して、必要に応じて[デスクトップアプリ](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)をサポートするための支援を受けることができます。 詳細について[は、「Microsoft マネージドデスクトップのアプリ」を](../get-ready/apps.md)参照してください。
-
-
-## <a name="device-monitoring"></a>デバイスの監視
-
-お客様のデバイスを監視する専用のセキュリティ運用センターを使用して、デバイスのセキュリティを維持し、Microsoft が毎月分析する独自の脅威からのデータを使用することができます。 これらのセキュリティ機能は、後で追加するのではなく、に組み込まれています。
-
-また、デバイスの正常性を監視し、デバイスのパフォーマンスに関する洞察を提供します。 [Microsoft マネージドデスクトップの操作と監視](../service-description/operations-and-monitoring.md)に関する詳細情報
+- **ハードウェア:** IT 部門がデバイス (およびそのドライバー) を調査およびテストする代わりに、特定のデバイスは、Microsoft マネージドデスクトップによって慎重にテストされ、[デバイス リスト](../service-description/device-list.md) のキュレーションを行う結果、エンタープライズ レベルのパフォーマンス要件を満たし、サービスと連携することが保証されています。 承認済みリストに記載されている場合は、デバイスを自分で入手する (またはパートナーとの共同作業) か、または既にあるデバイスを再利用することができます。 デバイスを登録するのは簡単でわかりやすいだけではなく、展開する前にエンドユーザーにとってデバイスエクスペリエンスの特定の側面を[カスタマイズ](../working-with-managed-desktop/config-setting-overview.md) することも出来ます。
+- **更新:** Microsoft マネージドデスクトップは Windows 10の品質と機能の更新、ドライバー、ファームウェア、ウィルス対策の定義、そしてMicrosoft 365 アプリケーションのエンタープライズ用の更新のための全ての側面の[グループの展開](../service-description/updates.md) をセットアップし管理します。 これには広範なテストとすべての更新プログラムの検証が含まれ、登録されているデバイスは常に最新の状態に維持することを保証し、中断を最小限に抑えることができ、IT 部門をその継続的なタスクから解放します。
+- **アプリ:** Microsoft 365 エンタープライズの一部として、Microsoft はいくつかの重要な Microsoft アプリを提供 (および管理) します。 ただし、ビジネスに必要なその他のアプリがあるかもしれません。 これらのアプリケーションをテスト、パッケージ化、展開する必要がある IT 部門の代わりに、Microsoft がそれらを展開し、そして必要あれば[Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)と共にサポートします。 詳細については、[Microsoft マネージドデスクトップのアプリ](../get-ready/apps.md)を参照してください。
 
 
-## <a name="need-more-details"></a>詳細が必要な場合
-Microsoft マネージドデスクトップの価値 (顧客ストーリーを含む) の詳細については、「 [Microsoft Managed desktop](https://aka.ms/mmd)」を参照してください。 詳細については、「[ロードマップ](https://aka.ms/AA6jiam)」、「 [Forrester Total 経済影響ケーススタディ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)」、および「ダウンロード可能な[1 ページの概要](https://aka.ms/AA6ob3h)」を参照してください。 最新のニュースについては、Microsoft マネージドデスクトップ[ブログ](https://aka.ms/AA6l2dd)を参照してください。
+## <a name="device-monitoring"></a>デバイスモニタリング
 
-Microsoft の管理されたデスクトップが組織に適している場合は、サービスの詳細について説明する追加ドキュメント、登録する組織の準備方法、サービスの開始方法、および必要に応じてエンドユーザーが簡単にヘルプを取得する方法を含む、その後の継続的な操作について詳しく説明します。 すでにオンボードでの準備が整っている場合は、「お客様の[地域のアカウントチーム](https://pages.email.office.com/contactmmd/)に連絡」を開始してください。
+Microsoft が毎月分析する固有の脅威のデータを使用しデバイスの監視をする専用のセキュリティ運用センターと共にお客様のデバイスのセキュリティを維持するサポートをします。 これらのセキュリティ機能は、後から追加するのではなく、組み込まれているものです。
 
-**その他の概要と背景**主に技術担当者とビジネス上の意思決定者にとって、これらのトピックでは、組織と Microsoft の間の役割と責任、Microsoft マネージドデスクトップで使用されているテクノロジ、および ITIL フレームワークの一部として幅広い戦略にサービスを組み込む方法について詳細に説明しています。
+また、デバイスの正常性を監視し、デバイスのパフォーマンスに関する情報を提供します。 詳細については、[Microsoft マネージドデスクトップの操作と管理](../service-description/operations-and-monitoring.md)を参照してください。
+
+
+## <a name="need-more-details"></a>より詳しい情報が必要ですか?
+お客様事例を含むMicrosoft マネージドデスクトップの価値の詳細については、[Microsoft Managed Desktop](https://aka.ms/mmd) を参照してください。 [ロードマップ](https://aka.ms/AA6jiam)についてのより詳しい内容について始めるには[Forrester Total Economic Impact (TEI: 総経済効果) のケーススタディ](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)、そしてダウンロード可能な[ワンページのサマリー](https://aka.ms/AA6ob3h)が最適です。 最新のニュースについては、Microsoft マネージドデスクトップ [ブログ](https://aka.ms/AA6l2dd)をご覧ください。
+
+Microsoft マネージドデスクトップがお客様の組織に適しているようであれば、サービスに関する詳細情報、組織の登録を準備する方法、サービスの使用を開始する方法、およびお客様とエンドユーザーが必要に応じて支援を受けることができるようにするための継続運用機能など、について追加ドキュメントを深く調べることができます。 既に参加開始が可能な場合は、お客様の[ローカルアカウントチーム](https://pages.email.office.com/contactmmd/)にお問合せしていただくことから始めてください。
+
+**概要と背景の詳細** 主に、技術およびビジネスの意思決定者向けに、これらのトピックでは、組織と Microsoft の間での役割と責任の分割について、Microsoft マネージドデスクトップを使用してのより詳しいテクノロジーについてとITIL フレームワークの一部として、サービスがより広範な戦略にどのように適合するかについて詳しく説明します。
 
 - [Microsoft マネージドデスクトップの役割と責任](roles-and-responsibilities.md)
-- [Microsoft マネージドデスクトップテクノロジ](technologies.md)
-- [Microsoft マネージド デスクトップと ITIL (IT インフラストラクチャ ライブラリ)](../MMD-and-ITSM.md)
+- [Microsoft マネージドデスクトップ テクノロジ](technologies.md)
+- [Microsoft マネージドデスクトップと ITIL (IT インフラストラクチャ ライブラリ)](../MMD-and-ITSM.md)
 - [コンプライアンス](compliance.md)
-- [Microsoft マネージド デスクトップ サービスの説明](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Microsoft マネージドデスクトップ サービスの説明](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
-**登録の準備をする**これらのトピックでは、組織での登録の準備に必要な手順について説明します。これには、環境が重要な前提条件を満たしていることの確認、ネットワークの構成、証明書の設定、アプリの準備などが含まれます。
+**登録の準備** これらのトピックでは、環境が主要な前提条件を満たしていることの確認、ネットワークの構成、証明書の設定、アプリをサービスに含める準備を行うことなど、登録準備のために組織内で行う必要がある手順について説明します。
 
 - [Microsoft マネージド デスクトップの前提条件](../get-ready/prerequisites.md)
-- [Microsoft マネージドデスクトップのネットワーク構成](../get-ready/network.md)
+- [Microsoft マネージド デスクトップのネットワーク構成](../get-ready/network.md)
 - [Microsoft マネージド デスクトップ用にオンプレミス リソースアクセスを準備する](../get-ready/authentication.md)
 - [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](../get-ready/mapped-drives.md)
 - [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](../get-ready/certs-wifi-lan.md)
 - [Microsoft マネージドデスクトップのアプリ](../get-ready/apps.md)
 
-**作業の開始**登録の準備が整ったら、このセクションでは、実際にサービスに参加し、デバイスを取得および設定し、エンドユーザーを準備して、アプリを展開するための手順について説明します。
+**はじめに**登録する準備ができたら、ここでは、実際にサービスに参加し、デバイスを入手してセットアップし、エンドユーザーを準備し、アプリを展開する手順についてを含めて説明します。
 
 - [管理ポータルで管理者の連絡先を追加および確認する](../get-started/add-admin-contacts.md)
 - [条件付きアクセスを調整する](../get-started/conditional-access.md)
 - [ライセンスを割り当てる](../get-started/assign-licenses.md)
-- [デバイスに Intune ポータルサイトをインストールする](../get-started/company-portal.md)
+- [Intune Company Portal on devicesのインストール](../get-started/company-portal.md)
 - [Enterprise State Roaming を有効にする](../get-started/enterprise-state-roaming.md)
-- [Microsoft マネージドデスクトップデバイスをセットアップする](../get-started/set-up-devices.md)
+- [Microsoft マネージドデスクトップ デバイスをセットアップする](../get-started/set-up-devices.md)
 - [ユーザーがデバイスを使えるようにする](../get-started/get-started-devices.md)
-- [アプリをデバイスに展開する](../get-started/deploy-apps.md)
+- [アプリをデバイスに展開](../get-started/deploy-apps.md)
 
-**Microsoft マネージドデスクトップの使用**このセクションには、IT 管理者が必要に応じてサポートを受ける方法、エンドユーザーがサポートを受ける方法、展開したアプリを管理する方法、デバイスでカスタマイズ可能な設定を操作する方法など、サービスの日常のライフサイクルに関する情報が記載されています。
+**Working with Microsoft マネージドデスクトップを使用する**このセクションでは、IT 管理者が必要に応じてサポートを受ける方法、エンド ユーザーがサポートを受ける方法、展開した後にアプリを管理する方法、デバイスでカスタマイズ可能な設定を操作する方法など、そのサービスとの日常業務についての情報を含み説明します。
 
 - [Microsoft マネージドデスクトップの管理者サポート](../working-with-managed-desktop/admin-support.md)
-- [エンドユーザーのヘルプを取得する](../working-with-managed-desktop/end-user-support.md)
-- [構成可能な設定-Microsoft マネージドデスクトップ](../working-with-managed-desktop/config-setting-overview.md)
+- [エンド ユーザーのヘルプ](../working-with-managed-desktop/end-user-support.md)
+- [構成可能な設定 - Microsoft マネージドデスクトップ](../working-with-managed-desktop/config-setting-overview.md)
 
 
 
