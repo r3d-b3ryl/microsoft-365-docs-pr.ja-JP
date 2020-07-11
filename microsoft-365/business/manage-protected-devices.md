@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 保護ポリシーを介して管理されるデバイスから会社のデータを削除する方法と、Windows 10 デバイスを出荷時の設定にリセットする方法について説明します。
-ms.openlocfilehash: 1f4b267f5a58429d40c5ece7df42a1bb5727c4e2
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564943"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101623"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium で保護されたデバイスを管理する
 
@@ -44,5 +44,7 @@ ms.locfileid: "44564943"
 [デバイスから会社のデータを削除する](remove-company-data.md)
   
 [Windows 10 デバイスを出荷時の設定にリセットする](reset-devices-to-factory-settings.md)
+
+[管理されたデバイスを追加する](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
   
 

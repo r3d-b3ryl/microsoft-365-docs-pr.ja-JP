@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0200ec0491104222545becb6c42d51b935fd2df1
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 71e0a631afa596e9cedf939cf3dcb13eec599d5d
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936540"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101672"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 での通信コンプライアンス
 
@@ -51,7 +51,7 @@ Microsoft 365 のコミュニケーションコンプライアンスポリシー
 
     組織は、インフラストラクチャと企業ネットワークシステム全体に分散されたすべての通信を担当します。 コミュニケーションコンプライアンスポリシーを使用して法的な危険とリスクを特定して管理することにより、企業の運用に影響を与えるリスクを最小限に抑えることができます。 たとえば、組織内のメッセージをスキャンして、今後の買収、合併、利益開示、再編成、指導チームの変更など、機密プロジェクトに関する承認されていない通信を行うことができます。
 
-- **コンプライアンス**
+- **法令遵守**
 
     ほとんどの組織では、通常の運用手順の一部として、何らかの種類の法令遵守標準に準拠する必要があります。 これらの規則では、多くの場合、組織にとって適切な種類の監督または監視プロセスを実装する必要があります。 金融取引業規制機構 (FINRA) ルール3110は、組織が従業員の通信や関与する事業をスキャンするための監督手続きをとる必要性を示す良い例です。 別の例としては、組織内でブローカーディーラーとの通信を確認する必要がある場合があります。これは、潜在的なマネーロンダリング、インサイダー取引、談合、または違法行為を防ぐためです。 コミュニケーションコンプライアンスポリシーを使用すると、組織は企業の通信をスキャンしてレポートするためのプロセスを提供することで、これらの要件を満たすことができます。 金融機関のサポートの詳細については、「 [US バンキングおよびキャピタルマーケット向けの重要なコンプライアンスとセキュリティに関する考慮事項](../solutions/financial-services-secure-collaboration.md)」を参照してください。
 
@@ -99,9 +99,9 @@ Microsoft 365 の通信コンプライアンスは、いくつかの新しい機
 
 - **Microsoft teams**: パブリックおよびプライベートの[microsoft teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)チャネルおよび個人チャットのチャット通信は、スタンドアロンチャネルソースとして、または他の microsoft 365 サービスとの通信コンプライアンスでサポートされています。 通信コンプライアンスポリシーで監督するユーザーとグループを選択するときには、個別のユーザー、配布グループ、または特定の Microsoft Teams チャネルを手動で追加する必要があります。
 - **Exchange online**: Microsoft 365 組織の[exchange online](https://docs.microsoft.com/Exchange/exchange-online)でホストされているすべてのメールボックスは、スキャン対象となります。 通信コンプライアンスポリシーの条件に一致する電子メールと添付ファイルは、監視とコンプライアンスレポートですぐに使用できます。 Exchange Online はオプションのソースチャネルとなり、通信コンプライアンスポリシーでは不要になりました。
-- **Yammer**: [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) のプライベートメッセージとパブリックコミュニティの会話は、コミュニケーションポリシーでサポートされています。 Yammer はオプションのチャネルであり、メッセージと添付ファイルのスキャンをサポートするためには、「[ネイティブ モード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)」にする必要があります。
+- **Yammer**: [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) のプライベート メッセージとパブリック コミュニティの会話は、コミュニケーション ポリシーでサポートされています。 Yammer はオプションのチャネルであり、メッセージと添付ファイルのスキャンをサポートするためには、[ネイティブ モード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)に設定されている必要があります。
 - **Skype For Business online**: 通信コンプライアンスポリシーでは、 [Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)でのチャット通信と関連付けられた添付ファイルのスキャンをサポートしています。
-- **サードパーティのソース**: Microsoft 365 組織のメールボックスにインポートされたデータについて、[サードパーティ](archiving-third-party-data.md)製のソースからのメッセージをスキャンできます。 通信コンプライアンスは、インスタント Bloomberg、Facebook、Twitter など、いくつかの一般的なプラットフォームへの接続をサポートします。
+- **サードパーティのソース**: Microsoft 365 組織のメールボックスにインポートされたデータについて、[サードパーティ](archiving-third-party-data.md)製のソースからのメッセージをスキャンできます。 コミュニケーションコンプライアンスでは、インスタント Bloomberg など、いくつかの一般的なプラットフォームへの接続がサポートされます。
 
 通信コンプライアンスポリシーのメッセージングチャネルのサポートの詳細については、「[サポートされる通信の種類](communication-compliance-feature-reference.md#supported-communication-types)」を参照してください。
 
@@ -120,7 +120,7 @@ Microsoft 365 での通信コンプライアンスに関するコンプライア
 >[!Important]
 >既定では、全体管理者は通信コンプライアンス機能にアクセスできません。 通信コンプライアンス機能のアクセス許可を有効にするには、「[組織で通信のコンプライアンスを利用できるよう](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)にする」を参照してください。
 
-Microsoft 365 コンプライアンスセンターでは、次のポリシーテンプレートから選ぶことができます。
+Microsoft 365 コンプライアンス センターでは、次のポリシー テンプレートから選ぶことができます。
 
 - **不快な言葉と嫌がらせ対策**: このテンプレートを使用すると、組み込みの分類子を使用するポリシーをすばやく作成し、不適切または不快感を与える可能性があるコンテンツを自動的に検出することができます。
 - **機密情報**: このテンプレートを使用して、定義された機密情報の種類またはキーワードを含む通信をスキャンするポリシーを作成し、重要なデータがアクセスを許可されていない人と共有されないようにします。

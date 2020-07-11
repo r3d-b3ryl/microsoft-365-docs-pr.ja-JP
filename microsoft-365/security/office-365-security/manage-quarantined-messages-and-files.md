@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Office 365 Advanced Threat Protection (Office 365 ATP) を使用している組織内の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを管理することもできます。
-ms.openlocfilehash: d3dadeb4035d55fa60785c7a752737cc83038730
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 5e7c594669cf910404badd85c35671c284d4d91e
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936973"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101683"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -109,7 +109,7 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 
      - **マルウェア**
 
-     - **スパム**
+     - **[スパム]**
 
      - **精度の高いフィッシング**
 
@@ -218,6 +218,9 @@ Office 365 の高度な脅威保護 (Office 365 ATP) を使用している組織
 一覧で複数の検疫済みメッセージを選択すると (最大 100)、**[一括処理]** ポップアップ ウィンドウが表示され、次の操作を実行できます。
 
 - **[メッセージの解放]**: このオプションは、**[特定の受信者にメッセージを解放する]** を選択できない点以外は単一のメッセージを解放する場合と同様です。**[すべての受信者にメッセージを解放する]** か **[他のユーザーにメッセージを解放する]** のみを選択できます。
+
+  > [!NOTE]
+  > 次のシナリオを考えてみます。 john@gmail.com は、faith@contoso.com と john@subsidiary.contoso.com にメッセージを送信します。 Gmail は、Microsoft のフィッシングとして検疫にルーティングされる2つのコピーにこのメッセージをでます。 管理者は、これらのメッセージの両方を admin@contoso.com にリリースします。 管理者メールボックスに到達した最初の解放済みメッセージが配信されます。 2番目にリリースされたメッセージは、重複した配信として識別され、スキップされます。 同じメッセージ ID と受信時刻を持つメッセージは、重複として識別されます。
 
 - **[メッセージの削除]**: 表示される警告で **[はい]** をクリックすると、メッセージは直ちに削除され、元の受信者には送信されません。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754798"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101649"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -145,7 +145,7 @@ Office ファイルを1人のユーザーが作成して共有した後、少な
 
 - ユーザーが自宅から作業するために調整したときのワークライフバランスへの影響。 
 
-- ユーザーが会議を効果的に使用しているかどうか、およびその方法 
+- リモート会議が効果的な意思決定をサポートしている場合。
 
 [ビジネス継続性レポートの詳細情報](https://aka.ms/bcrps)
 

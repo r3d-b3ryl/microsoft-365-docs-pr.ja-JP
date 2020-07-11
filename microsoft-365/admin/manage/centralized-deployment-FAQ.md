@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターからの一元展開についてよく寄せられる質問に対する回答を確認してください。
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083564"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102886"
 ---
 # <a name="centralized-deployment-faq"></a>一元展開に関する FAQ
 
@@ -35,7 +35,7 @@ ms.locfileid: "45083564"
 アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise (組織のログイン資格情報を使用して Office にサインインしている) を使用しており、Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、Azure Active Directory に存在するか、フェデレーションされている必要があります。  
  
 一元展開は、オンラインメールボックスでのみサポートされます。 オンプレミスの Exchange メールボックスへの展開はサポートされていません。
- 
+
 [一元展開の互換性チェック](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   を使用して、サブスクリプションが対象になるかどうかを判断できます。 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>一元展開を使用してアドインユーザーの割り当てをどのように対象にしていますか。  
@@ -54,7 +54,9 @@ ms.locfileid: "45083564"
 
 ユーザー、グループ、または組織全体にアドインを簡単に展開するには、管理者が一元展開を使用することをお勧めします。
 
-ユーザーアクセスの管理の詳細については、「」を参照してください。 </br>[すべてのクライアント (Outlook を除く) に対して Office ストアをオフにして、アドインのダウンロードを禁止する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) </br>[Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN)します。
+ユーザーアクセスの管理の詳細については、以下を参照してください。
+ - [すべてのクライアント (Outlook を除く) で Office ストアをオフにして、アドインのダウンロードを禁止する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Outlook 用のアドインをインストールおよび管理できる管理者とユーザーを指定する](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>一元展開によって、管理者は Outlook アドインの展開方法を柔軟に選択できるようになりますか。  
 
@@ -62,7 +64,7 @@ ms.locfileid: "45083564"
 
 **Fixed (既定値)**  アドインは、割り当てられたユーザーに自動的に展開され、削除することはできません。  
  
-**利用可能**ユーザーは、[ホーム] を選択してアドインを Outlook にインストールし、管理者によって管理されたアドイン > > します。   
+**利用可能**ユーザーは、[ホーム] を選択してアドインを Outlook にインストールし、管理者によって管理されたアドイン **> >** します。
  
 **省略可能**アドインは、割り当てられたユーザーに自動的に展開されますが、削除することもできます。  
     
@@ -70,19 +72,19 @@ ms.locfileid: "45083564"
 
 はい。 管理者が展開した LOB アドインのメタデータ変更をサポートするために、管理者は新しいマニフェストファイルをアップロードできます。アドインは、次に Office アプリケーションが起動したときに更新されます。 Web アプリケーションはいつでも変更できます。  
  
-詳細については、「[基幹業務アドイン](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins)」を参照してください。  
+詳細については、「[基幹業務アドイン](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)」を参照してください。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>管理者がアドインをオフにできるか  
 
 はい。 管理者は、Microsoft 管理センターからすべてのユーザーに対して展開するアドインをオンまたはオフにすることができます。
 
-詳細については、「[アドインの状態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states)」を参照してください。  
+詳細については、「[アドインの状態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)」を参照してください。  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>管理者がアドインを削除または削除できるかどうか。
 
 はい。 管理者は、Microsoft 管理センターからすべてのユーザー向けに展開したアドインを削除できます。
 
-詳細については、「[アドインを削除する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in)」を参照してください。 
+詳細については、「[アドインを削除する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)」を参照してください。 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>管理者は一元展開を使用して、Office ストアから有料のアドインを展開できますか。 
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035794"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102917"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -38,6 +38,8 @@ ms.locfileid: "45035794"
 
 侵害された**ユーザー**のレポートには、過去7日間以内に**疑わしい**または**制限**されたユーザーアカウントの数が表示されます。 これらの状態のいずれかのアカウントは、問題が発生しているか、侵害されています。 よく使用されるので、レポートを使用して、不審なアカウントや制限付きのアカウントでスパイクや傾向を見つけることができます。 侵害されたユーザーの詳細については、「[危害を受けた電子メールアカウントへの対応](responding-to-a-compromised-email-account.md)」を参照してください。
 
+![レポートダッシュボードの侵害されたユーザーウィジェット](../../media/compromised-users-report-widget.png)
+
 集計ビューには過去90日間のデータが表示され、詳細ビューには過去30日間のデータが表示されます。
 
 レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] \> **ダッシュボード**に移動して、[侵害された**ユーザー**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=CompromisedUsers> ます。
@@ -50,7 +52,7 @@ ms.locfileid: "45035794"
 
 - **制限**: 非常に疑わしいパターンがあるため、ユーザーアカウントが電子メールの送信を制限されています。
 
-![侵害されたユーザーが Microsoft 365 に表示されるレポート](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![侵害されたユーザーレポートのレポートビュー](../../media/compromised-users-report-activity-view.png)
 
 [**詳細テーブルの表示**] をクリックすると、次の詳細情報が表示されます。
 

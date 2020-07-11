@@ -20,17 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用して Office アドインを展開できるようにします。
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936445"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102874"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
-一元展開は、ほとんどのお客様が組織内のユーザーやグループに Office アドインを展開するために推奨される最も豊富な方法です。 管理者である場合は、このガイダンスを使用して、一括展開を使用できるようにテナントとユーザーが要件を満たしているかどうかを判断します。
+一元展開は、ほとんどのお客様が組織内のユーザーやグループに Office アドインを展開するために推奨される最も豊富な方法です。 管理者である場合は、このガイダンスを使用して、組織とユーザーが一元展開を使用できるように要件を満たしているかどうかを判断します。
+
+一元展開には、次のような利点があります。
+  
+- グローバル管理者は、ユーザー、グループ、または組織内のすべてのユーザーに対して、アドインを直接ユーザーに割り当てることができます。
+    
+- 関連する Office アプリケーションを起動すると、アドインが自動的にダウンロードされます。 アドインがアドインコマンドをサポートしている場合、アドインは自動的に Office アプリケーション内のリボンに表示されます。
+    
+- 管理者がアドインをオフまたは削除した場合、またはユーザーが Azure Active Directory またはアドインが割り当てられているグループから削除された場合は、アドインがユーザーに表示されなくなります。
+
 一元展開は、3つのデスクトッププラットフォーム Windows、Mac、およびオンライン Office アプリをサポートします。 一元展開では、iOS および Android もサポートされています (Outlook モバイルアドインのみ)。
+
 すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大24時間かかる場合があります。
   
 ## <a name="requirements"></a>要件
@@ -96,19 +106,19 @@ Check with your organization's Exchange admin to find out which configuration is
     
 2. 次のコマンドを実行します。
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. **CompatabilityCheck**コマンドを実行します。
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   これにより、 *_Tenantdomain_* (たとえば、 *TailspinToysIncorporated </span> ) の入力を求められます。com*) と*_TenantAdmin_* の資格情報 (グローバル管理者の資格情報を使用) を使用して、同意を要求します。
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   このコマンドは、 *_Tenantdomain_* (たとえば、 *TailspinToysIncorporated </span> ) の入力を求めます。com*) と*_TenantAdmin_* の資格情報 (グローバル管理者の資格情報を使用) を使用して、同意を要求します。
     
-> [!NOTE]
-> テナントのユーザー数によって、チェックが完了するのに数分または数時間かかる場合があります。 
+   > [!NOTE]
+   > テナントのユーザー数によって、チェックが完了するのに数分または数時間かかる場合があります。 
   
 ツールの実行が完了すると、コンマ区切り (.csv) 形式で出力ファイルが作成されます。 既定では、ファイルは**C:\windows\system32**に保存されます。 出力ファイルには、次の情報が含まれます。
   

@@ -1,5 +1,5 @@
 ---
-title: 既存のデバイスをユーザー自身が登録する
+title: 既存のデバイスをj自分で登録する
 description: 再利用されたデバイスを登録します。これにより、Microsoft マネージドデスクトップで管理できるようになります。
 ms.prod: w10
 author: jaimeo
@@ -7,21 +7,21 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: abe9e63eb4fcd31993bd26822dc445ff0e48e369
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250447"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101487"
 ---
-# <a name="register-existing-devices-yourself"></a>既存のデバイスをユーザー自身が登録する
+# <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
 >[!NOTE]
 >このトピックでは、既に所有しているデバイスを再利用して、Microsoft マネージドデスクトップで登録する手順について説明します。 新しいデバイスを使用している場合は、代わりに「 [Microsoft Managed Desktop で新しいデバイスを登録](register-devices-self.md)する」の手順に従います。
 
 パートナーのプロセスは、パートナーが[デバイスを登録する手順](register-devices-partner.md)に記載されています。
 
-Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Azure Portal で Microsoft Managed Desktop を使用してデバイスを登録できます。
+Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Microsoft Managed Desktop 管理ポータルを使用してデバイスを登録できます。
 
 ## <a name="prepare-to-register-existing-devices"></a>既存のデバイスを登録するための準備
 
@@ -60,7 +60,7 @@ Microsoft エンドポイント構成マネージャーを使用して、Microso
     - **説明:** レポートの説明を指定します。 
     - **サーバー:** このレポートを作成するレポートサーバーの名前を表示します。 
     - **パス:**[**参照**] を選択して、レポートを保存するフォルダーを指定します。 
-5. [**次へ**] を選択します。 
+5. **[次へ]** を選択します。 
 6. [**概要**] ページで、設定を確認します。 [**前**へ] を選択して設定を変更するか、[**次へ**] を選択して、構成マネージャーでレポートを作成します。 
 7. [**完了**] ページで、[**閉じる**] を選択してウィザードを終了し、レポート**ビルダー**を開いてレポート設定を入力します。 メッセージが表示されたら、ユーザーアカウントとパスワードを入力し、[OK] を選択し**ます。** レポートビルダーがデバイスにインストールされていない場合は、インストールするように求めるメッセージが表示されます。 レポートを変更および作成するために必要な**レポートビルダーをインストールするに**は、[実行] を選択します。 
 
@@ -98,7 +98,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
     - モデル 
     - Serial_Number 
     - ハードウェアハッシュ
-7. **[OK]** をクリックします。
+7. [**OK**] を選択します。
 
 **次に、** 次の手順に従ってレポートの表示を定義し、レポートを作成します。
 
@@ -124,12 +124,12 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 > [!IMPORTANT]
 > 構成マネージャーのクエリは、エクスポートされた列名にスペースを使用できません。そのため、手順で「Serial_Number」と「ハードウェアハッシュ」と入力する必要があります。 エクスポートされた CSV ファイルがあるので、デバイスの登録を続行する前に、ここに示すようにレポートヘッダーを編集して*シリアル番号*と*ハードウェアハッシュ*を読み取る必要があります。
 
-[Azure ポータルを使用してデバイスを登録](#register-devices-by-using-the-azure-portal)するには、次の手順を実行します。
+これで[、管理ポータルを使用してデバイスを登録](#register-devices-by-using-the-admin-portal)する手順に進むことができます。
 
 
 #### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell スクリプトメソッド
 
-Active Directory 環境では、 `Get-MMDRegistrationInfo` PowerShell コマンドレットを使用して、WinRM を使用して Active directory グループ内のデバイスから情報をリモートで収集できます。 また、 `Get-AD Computer`このコマンドレットを使用して、カタログに含まれている特定のハードウェアモデル名のフィルター結果を取得することもできます。 これを行うには、まずこれらの前提条件を確認してから、次の手順に進みます。
+Active Directory 環境では、PowerShell コマンドレットを使用して、 `Get-MMDRegistrationInfo` WinRM を使用して Active Directory グループ内のデバイスから情報をリモートで収集できます。 また、この `Get-AD Computer` コマンドレットを使用して、カタログに含まれている特定のハードウェアモデル名のフィルター結果を取得することもできます。 これを行うには、まずこれらの前提条件を確認してから、次の手順に進みます。
 
 - WinRM は有効になっています。
 - 登録するデバイスがネットワーク上でアクティブになっている (つまり、切断されていないかオフになっている)。
@@ -168,7 +168,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 3. `Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>` を実行します。
 4. 登録するデバイスを有効にしますが、*セットアップの操作は開始*しないでください。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
 5. USB ドライブを挿入して、SHIFT + F10 キーを押します。
-6. 管理者権限で PowerShell プロンプトを開き、を実行`cd <pathToUsb>`します。
+6. 管理者権限で PowerShell プロンプトを開き、を実行し `cd <pathToUsb>` ます。
 7. `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` を実行します。
 8. `.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv` を実行します。
 9. USB ドライブを取り外し、次のようにしてデバイスをシャットダウンします。`shutdown -s -t 0`
@@ -206,9 +206,9 @@ CSV ファイルは、登録用に特定の形式である必要があります�
 >[!NOTE]
 >サンプルデータの変更を忘れると、登録は失敗します。
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>Azure ポータルを使用してデバイスを登録する
+#### <a name="register-devices-by-using-the-admin-portal"></a>管理ポータルを使用してデバイスを登録する
 
-Microsoft マネージドデスクトップの[Azure ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
+Microsoft Managed Desktop[管理ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウで [**デバイス**] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
 
 [![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
