@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 サービス インシデント シナリオの軽減のサンプル。
-ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601064"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086635"
 ---
 # <a name="service-incident-mitigation-strategies"></a>サービス インシデントの軽減戦略
 
@@ -36,6 +36,7 @@ ms.locfileid: "41601064"
 |VoIP 電話は、2 番目の通信手段として使用されます。|特にインシデント発生時のネットワークおよびサービス オペレーション センター向けに、PSTN 呼び出しが可能な非 VoIP 電話を実装します。 従業員の携帯電話番号を会社のディレクトリに追加して、携帯電話ネットワーク経由で重要な担当者に連絡できるようにします。|
 |OneDrive for Business は、ファイル ストレージとユーザーの生産性を重視しています。 [ファイルのオンデマンド](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234)は、ローカル ユーザー ドライブの空き領域を増やすように構成されています。|OneDrive 同期は、管理者が特定のコンテンツをローカルで同期することを要求したり、必要に応じて空き領域を増やしたりできるグループ ポリシーを提供します。 ドキュメントにアクセスできなくなるリスクを軽減するには、このポリシーを設定して重要なドキュメントをローカルに同期させます。 重要なドキュメントに [このデバイス上で常に保持する] 設定を手動で適用するようにユーザーをトレーニングします。|
 |顧客とサプライヤへのビジネス中断の連絡は、Exchange Online に依存しています。|パブリックのサードパーティ ソーシャル ネットワークは、マス コミュニケーションの代替手段として使用できます。
+|ADFSやパススルー認証などのハイブリッドオンプレミスアーキテクチャが失敗すると、クラウドサービスに認証するためのユーザーの機能が中断します。|システム停止中のサインインの中断を回避するために、ハイブリッド認証サービスと連携し、[パスワード ハッシュの同期](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls#deploy-password-hash-sync-even-if-you-are-federated-or-use-pass-through-authentication)を2番目のクラウドベースの認証機構として構成 します。 回復可能な認証とアクセス制御アーキテクチャの構築の詳細については、[Azure Active Directoryを使用した回復可能なアクセス制御管理戦略を作成を参照](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls)。|  
 
 ## <a name="leveraging-mobile-app-access"></a>モバイル アプリ アクセスの活用
 
