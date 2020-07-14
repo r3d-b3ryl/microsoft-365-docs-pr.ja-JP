@@ -10,25 +10,51 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9d7d33d3936d6fef21deb67c6b23f95c2f4bf24a
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
+ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43116004"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45107601"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 この記事では、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新された記事の一覧を示します。 「更新された」記事は、マテリアルが追加または修正されたものであり、誤入力、スタイル、書式設定の問題の修正などのマイナー修正がリストされていません。 [GitHub 上のリポジトリ](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)にアクセスすることによって、特定のコミット (変更の詳細を含む) の履歴をいつでも表示できます。
+
+## <a name="june-2020"></a>2020 年 6 月
+新規または変更された記事 | 説明
+--- | ---
+[新しい Microsoft Edge アプリ](get-started/edge-browser-app.md) | 新しい記事
+[デバイス構成](service-description/device-policies.md) | 更新された記事
+
+
+
+## <a name="may-2020"></a>2020 年 5 月
+新規または変更された記事 | 説明
+--- | ---
+[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[デバイスを登録するためのパートナー向け手順](get-started/register-devices-partner.md) | 更新された記事
+[Microsoft マネージドデスクトップデバイス](service-description/device-list.md) | 更新された記事
+[新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
+
+
+
+
+
+## <a name="april-2020"></a>2020 年 4 月
+新規または変更された記事 | 説明
+--- | ---
+[コンプライアンス](intro/compliance.md) | 新しい記事
+[Microsoft Managed Desktop サポートされている地域と言語](service-description/regions-languages.md) | 更新された記事
+
+
 
 ## <a name="march-2020"></a>2020 年 3 月
 新規または変更された記事 | 説明
 --- | ---
 [デバイスを登録するためのパートナー向け手順](get-started/register-devices-partner.md)| 更新された記事
 [新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
-[Microsoft マネージドデスクトップの印刷リソースの準備](get-ready/printing.md) | 新しい記事
-
-
+[Microsoft マネージド デスクトップ用に、印刷リソースを準備する](get-ready/printing.md) | 新しい記事
 
 
 ## <a name="february-2020"></a>2020 年 2 月
@@ -76,7 +102,7 @@ ms.locfileid: "43116004"
 新規または変更された記事 | 説明
 --- | ---
 [サービス プランの例外](service-description/customizing.md) | 新しい記事
-[エンドユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [Microsoft マネージドデスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
 [サービスの変更とコミュニケーション](service-description/servicechanges.md) | 新しい記事
 [新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
@@ -89,13 +115,13 @@ ms.locfileid: "43116004"
 ## <a name="september-2019"></a>2019 年 9 月
 新規または変更された記事 | 説明
 --- | ---
-[Microsoft マネージドデスクトップテクノロジ](intro/technologies.md) | 更新された記事
-[エンドユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[Microsoft マネージドデスクトップ テクノロジ](intro/technologies.md) | 更新された記事
+[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [Microsoft マネージドデスクトップデバイス](service-description/device-list.md) | 更新された記事
 [構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ](working-with-managed-desktop/config-setting-deploy.md) | 更新された記事
 [Microsoft マネージドデスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
 [Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
-[Microsoft マネージドデスクトップデバイスをセットアップする](get-started/set-up-devices.md) | 新しい記事
+[Microsoft マネージドデスクトップ デバイスをセットアップする](get-started/set-up-devices.md) | 新しい記事
 [新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
 [既存のデバイスをユーザー自身が登録する](get-started/register-reused-devices-self.md) | 新しい記事
 [Microsoft マネージドデスクトップでの更新プログラムの処理方法](service-description/updates.md) | 更新された記事
@@ -105,9 +131,9 @@ ms.locfileid: "43116004"
 --- | ---
 [Microsoft コンサルティング サービスを使用する](get-ready/apps-mcs.md) | 更新された記事
 [Microsoft マネージドデスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
-[エンドユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
-[Microsoft マネージドデスクトップテクノロジ](intro/technologies.md) | 更新された記事
+[Microsoft マネージドデスクトップ テクノロジ](intro/technologies.md) | 更新された記事
 
 
 
@@ -115,7 +141,7 @@ ms.locfileid: "43116004"
 新規または変更された記事 | 説明
 --- | ---
 [Microsoft コンサルティング サービスを使用する](get-ready/apps-mcs.md) | 更新された記事
-[Microsoft マネージド デスクトップと ITIL (IT インフラストラクチャ ライブラリ)](MMD-and-ITSM.md) | 新しい記事
+[Microsoft マネージドデスクトップと ITIL (IT インフラストラクチャ ライブラリ)](MMD-and-ITSM.md) | 新しい記事
 [デバイス構成](service-description/device-policies.md) | 更新された記事
 
 
@@ -138,7 +164,7 @@ ms.locfileid: "43116004"
 [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](get-ready/mapped-drives.md) | 新しい記事
 [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](get-ready/certs-wifi-lan.md) | 新しい記事
 [Microsoft マネージドデスクトップデバイスの注文](get-started/devices.md) | 更新された記事
-[エンドユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md)
+[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 新しい記事
 
 ## <a name="april-2019"></a>2019 年 4 月
 新規または変更された記事 | 説明
@@ -169,7 +195,7 @@ ms.locfileid: "43116004"
 新規または変更された記事 | 説明
 --- | ---
 [Microsoft マネージドデスクトップデバイス用のアプリを展開する](get-started/deploy-apps.md) | 新しい記事
-[Microsoft マネージドデスクトップのアプリを管理する](working-with-managed-desktop/manage-apps.md) | Previoius バージョンの基幹業務アプリを更新またはロールバックする方法に関する情報を更新しました。 
+[Microsoft マネージドデスクトップのアプリを管理する](working-with-managed-desktop/manage-apps.md) | 以前のバージョンの基幹業務アプリを更新またはロールバックする方法に関する情報を更新しました。 
 
 ## <a name="december-2018"></a>2018 年 12 月
 新規または変更された記事 | 説明
