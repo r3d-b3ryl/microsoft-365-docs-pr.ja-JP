@@ -222,8 +222,10 @@
           href: setup/upgrade-users-to-latest-office-client.md
         - name: アドインの一元展開の要件
           href: manage/centralized-deployment-of-add-ins.md
-        - name: 一元展開でアドインをインストールして管理する
+        - name: 管理センターでアドインを展開する
           href: manage/manage-deployment-of-add-ins.md
+        - name: 管理センターでアドインを管理する
+          href: manage/manage-addins-in-the-admin-center.md
         - name: 一元展開に関する FAQ
           href: manage/centralized-deployment-faq.md
         - name: パートナーやリセラーを探す
@@ -294,12 +296,12 @@
           href: ../business/device-states.md
         - name: Windows 10 PC のアプリの保護設定
           href: ../business/protection-settings-for-windows-10-devices.md
-        - name: Android および iOS のアプリ保護の設定
+        - name: Android および iOS のアプリ保護を設定する
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
             - name: Android または iOS の設定を検証する
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Windows 10 PC のデバイス保護設定
+        - name: Windows 10 の PC のデバイス保護を設定する
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Windows 10 PC の設定を検証する

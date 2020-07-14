@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド対応のビジネス継続性計画を立てる際の考慮事項。
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601094"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083516"
 ---
 # <a name="developing-your-continuity-plan"></a>継続性計画を立てる
 
@@ -80,6 +80,8 @@ ms.locfileid: "41601094"
 
 ビジネス プロセスのインベントリを作成し、他のプロセスやテクノロジとの関係のマッピングを行ったら、すべてのプロセスについて検証シナリオを作成する必要があります。 ビジネス プロセスの継続性計画を検証する方法を見つけることが中心になります。 おそらく、プロセスにより重要度が異なることが判明します。そのため、プロセスの優先順位付けを行う必要があります。
 計画の策定後は、インシデント対応および持続性対策に関して定期的に従業員のトレーニングを行うことが重要である点を忘れないでください。 各検証またはテストから得た内容を取り込んで復旧計画を強化するために、インシデント後のレビューを活用する必要があります。
+
+![visio の機能の検証](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>インシデントの調整と通信
 
