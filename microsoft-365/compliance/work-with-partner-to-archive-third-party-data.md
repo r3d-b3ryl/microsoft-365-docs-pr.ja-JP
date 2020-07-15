@@ -16,561 +16,561 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: カスタムコネクタをセットアップして、Salesforce チャター、Yahoo Messenger、Yammer などのデータソースからサードパーティのデータをインポートする方法について説明します。
-ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817042"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126656"
 ---
-# <a name="work-with-a-partner-to-archive-third-party-data"></a><span data-ttu-id="4618a-103">パートナーと共同作業して、サード パーティのデータをアーカイブする</span><span class="sxs-lookup"><span data-stu-id="4618a-103">Work with a partner to archive third-party data</span></span>
+# <a name="work-with-a-partner-to-archive-third-party-data"></a><span data-ttu-id="c23cc-103">パートナーと共同作業して、サード パーティのデータをアーカイブする</span><span class="sxs-lookup"><span data-stu-id="c23cc-103">Work with a partner to archive third-party data</span></span>
 
-<span data-ttu-id="4618a-104">Microsoft パートナーと協力して、サードパーティのデータソースから Microsoft 365 にデータをインポートしてアーカイブすることができます。</span><span class="sxs-lookup"><span data-stu-id="4618a-104">You can work with a Microsoft Partner to import and archive data from a third-party data source to Microsoft 365.</span></span> <span data-ttu-id="4618a-105">パートナーは、サードパーティのデータソースからアイテムを抽出するように構成されたカスタムコネクタ (定期的に) を提供して、それらのアイテムをインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="4618a-105">A partner can provide you with a custom connector that is configured to extract items from the third-party data source (on a regular basis) and then import those items.</span></span> <span data-ttu-id="4618a-106">パートナーコネクタは、アイテムのコンテンツをデータソースから電子メールメッセージ形式に変換し、そのアイテムをメールボックスに格納します。</span><span class="sxs-lookup"><span data-stu-id="4618a-106">The partner connector converts the content of an item from the data source to an email message format and then stores the items in mailboxes.</span></span> <span data-ttu-id="4618a-107">サードパーティのデータがインポートされた後、このデータには、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を適用できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-107">After third-party data is imported, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to this data.</span></span>
+<span data-ttu-id="c23cc-104">Microsoft パートナーと協力して、サードパーティのデータソースから Microsoft 365 にデータをインポートしてアーカイブすることができます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-104">You can work with a Microsoft Partner to import and archive data from a third-party data source to Microsoft 365.</span></span> <span data-ttu-id="c23cc-105">パートナーは、サードパーティのデータソースからアイテムを抽出するように構成されたカスタムコネクタ (定期的に) を提供して、それらのアイテムをインポートすることができます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-105">A partner can provide you with a custom connector that is configured to extract items from the third-party data source (on a regular basis) and then import those items.</span></span> <span data-ttu-id="c23cc-106">パートナーコネクタは、アイテムのコンテンツをデータソースから電子メールメッセージ形式に変換し、そのアイテムをメールボックスに格納します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-106">The partner connector converts the content of an item from the data source to an email message format and then stores the items in mailboxes.</span></span> <span data-ttu-id="c23cc-107">サードパーティのデータがインポートされた後、このデータには、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、Microsoft 365 アイテム保持ポリシーなどの Microsoft 365 コンプライアンス機能を適用できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-107">After third-party data is imported, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to this data.</span></span>
   
-<span data-ttu-id="4618a-108">ここでは、サードパーティのデータをインポートするために Microsoft パートナーと連携するために必要なプロセスと手順の概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="4618a-108">Here's an overview of the process and the steps necessary to work with a Microsoft Partner to import third-party data.</span></span>
+<span data-ttu-id="c23cc-108">ここでは、サードパーティのデータをインポートするために Microsoft パートナーと連携するために必要なプロセスと手順の概要について説明します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-108">Here's an overview of the process and the steps necessary to work with a Microsoft Partner to import third-party data.</span></span>
 
-[<span data-ttu-id="4618a-109">Step 1: Find a third-party data partner</span><span class="sxs-lookup"><span data-stu-id="4618a-109">Step 1: Find a third-party data partner</span></span>](#step-1-find-a-third-party-data-partner)
+[<span data-ttu-id="c23cc-109">Step 1: Find a third-party data partner</span><span class="sxs-lookup"><span data-stu-id="c23cc-109">Step 1: Find a third-party data partner</span></span>](#step-1-find-a-third-party-data-partner)
 
-[<span data-ttu-id="4618a-110">手順 2: サードパーティのデータメールボックスを作成して構成する</span><span class="sxs-lookup"><span data-stu-id="4618a-110">Step 2: Create and configure a third-party data mailbox</span></span>](#step-2-create-and-configure-a-third-party-data-mailbox-in-office-365)
+[<span data-ttu-id="c23cc-110">手順 2: サードパーティのデータメールボックスを作成して構成する</span><span class="sxs-lookup"><span data-stu-id="c23cc-110">Step 2: Create and configure a third-party data mailbox</span></span>](#step-2-create-and-configure-a-third-party-data-mailbox-in-office-365)
 
-[<span data-ttu-id="4618a-111">Step 3: Configure user mailboxes for third-party data</span><span class="sxs-lookup"><span data-stu-id="4618a-111">Step 3: Configure user mailboxes for third-party data</span></span>](#step-3-configure-user-mailboxes-for-third-party-data)
+[<span data-ttu-id="c23cc-111">Step 3: Configure user mailboxes for third-party data</span><span class="sxs-lookup"><span data-stu-id="c23cc-111">Step 3: Configure user mailboxes for third-party data</span></span>](#step-3-configure-user-mailboxes-for-third-party-data)
 
-[<span data-ttu-id="4618a-112">手順 4: パートナーに情報を提供する</span><span class="sxs-lookup"><span data-stu-id="4618a-112">Step 4: Provide your partner with information</span></span>](#step-4-provide-your-partner-with-information)
+[<span data-ttu-id="c23cc-112">手順 4: パートナーに情報を提供する</span><span class="sxs-lookup"><span data-stu-id="c23cc-112">Step 4: Provide your partner with information</span></span>](#step-4-provide-your-partner-with-information)
 
-[<span data-ttu-id="4618a-113">手順 5: Azure Active Directory にサードパーティのデータコネクタを登録する</span><span class="sxs-lookup"><span data-stu-id="4618a-113">Step 5: Register the third-party data connector in Azure Active Directory</span></span>](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
+[<span data-ttu-id="c23cc-113">手順 5: Azure Active Directory にサードパーティのデータコネクタを登録する</span><span class="sxs-lookup"><span data-stu-id="c23cc-113">Step 5: Register the third-party data connector in Azure Active Directory</span></span>](#step-5-register-the-third-party-data-connector-in-azure-active-directory)
 
-## <a name="how-the-third-party-data-import-process-works"></a><span data-ttu-id="4618a-114">サードパーティのデータのインポート プロセスが実行される方法</span><span class="sxs-lookup"><span data-stu-id="4618a-114">How the third-party data import process works</span></span>
+## <a name="how-the-third-party-data-import-process-works"></a><span data-ttu-id="c23cc-114">サードパーティのデータのインポート プロセスが実行される方法</span><span class="sxs-lookup"><span data-stu-id="c23cc-114">How the third-party data import process works</span></span>
 
-<span data-ttu-id="4618a-115">次の図と説明は、パートナーと連携している場合にサードパーティのデータインポートプロセスがどのように動作するかを説明します。</span><span class="sxs-lookup"><span data-stu-id="4618a-115">The following illustration and description explain how the third-party data import process works when working with a partner.</span></span>
+<span data-ttu-id="c23cc-115">次の図と説明は、パートナーと連携している場合にサードパーティのデータインポートプロセスがどのように動作するかを説明します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-115">The following illustration and description explain how the third-party data import process works when working with a partner.</span></span>
   
 ![サードパーティのデータのインポート プロセスが実行される方法](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
   
-1. <span data-ttu-id="4618a-117">お客様は、選択したパートナーと連携して、サードパーティのデータソースからアイテムを抽出し、それらのアイテムを Microsoft 365 にインポートするコネクタを構成します。</span><span class="sxs-lookup"><span data-stu-id="4618a-117">Customer works with their partner of choice to configure a connector that will extract items from the third-party data source and then import those items to Microsoft 365.</span></span>
+1. <span data-ttu-id="c23cc-117">お客様は、選択したパートナーと連携して、サードパーティのデータソースからアイテムを抽出し、それらのアイテムを Microsoft 365 にインポートするコネクタを構成します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-117">Customer works with their partner of choice to configure a connector that will extract items from the third-party data source and then import those items to Microsoft 365.</span></span>
     
-2. <span data-ttu-id="4618a-118">パートナーコネクタは、サードパーティの API を使用してサードパーティのデータソースに接続し (スケジュールに従って、または構成されている場合)、データソースからアイテムを抽出します。</span><span class="sxs-lookup"><span data-stu-id="4618a-118">The partner connector connects to third-party data sources via a third-party API (on a scheduled or as-configured basis) and extracts items from the data source.</span></span> <span data-ttu-id="4618a-119">パートナー コネクタは、アイテムのコンテンツを電子メール メッセージの形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="4618a-119">The partner connector converts the content of an item to an email message format.</span></span> <span data-ttu-id="4618a-120">メッセージ形式スキーマの詳細については、「 [More information](#more-information) 」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-120">See the [More information](#more-information) section for a description of the message-format schema.</span></span> 
+2. <span data-ttu-id="c23cc-118">パートナーコネクタは、サードパーティの API を使用してサードパーティのデータソースに接続し (スケジュールに従って、または構成されている場合)、データソースからアイテムを抽出します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-118">The partner connector connects to third-party data sources via a third-party API (on a scheduled or as-configured basis) and extracts items from the data source.</span></span> <span data-ttu-id="c23cc-119">パートナー コネクタは、アイテムのコンテンツを電子メール メッセージの形式に変換します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-119">The partner connector converts the content of an item to an email message format.</span></span> <span data-ttu-id="c23cc-120">メッセージ形式スキーマの詳細については、「 [More information](#more-information) 」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-120">See the [More information](#more-information) section for a description of the message-format schema.</span></span> 
     
-3. <span data-ttu-id="4618a-121">パートナーコネクタは、既知のエンドポイントを介して Exchange Web サービス (EWS) を使用して、Microsoft 365 の Azure サービスに接続します。</span><span class="sxs-lookup"><span data-stu-id="4618a-121">Partner connector connects to the Azure service in Microsoft 365 by using Exchange Web Service (EWS) via a well-known end point.</span></span>
+3. <span data-ttu-id="c23cc-121">パートナーコネクタは、既知のエンドポイントを介して Exchange Web サービス (EWS) を使用して、Microsoft 365 の Azure サービスに接続します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-121">Partner connector connects to the Azure service in Microsoft 365 by using Exchange Web Service (EWS) via a well-known end point.</span></span>
     
-4. <span data-ttu-id="4618a-122">Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox.</span><span class="sxs-lookup"><span data-stu-id="4618a-122">Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox.</span></span> <span data-ttu-id="4618a-123">Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:</span><span class="sxs-lookup"><span data-stu-id="4618a-123">Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:</span></span>
+4. <span data-ttu-id="c23cc-122">Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox.</span><span class="sxs-lookup"><span data-stu-id="c23cc-122">Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox.</span></span> <span data-ttu-id="c23cc-123">Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:</span><span class="sxs-lookup"><span data-stu-id="c23cc-123">Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:</span></span>
     
-   1. <span data-ttu-id="4618a-124">ユーザー**アカウントに対応するユーザー ID を持つアイテム:** パートナーコネクタがサードパーティのデータソース内のアイテムのユーザー ID を Office 365 の特定のユーザー ID にマップできる場合、そのアイテムはユーザーの [回復可能なアイテム] フォルダー**内の [削除] フォルダーに**コピーされます。</span><span class="sxs-lookup"><span data-stu-id="4618a-124">**Items that have a user ID that corresponds to an user account:** If the partner connector can map the user ID of the item in the third-party data source to a specific user ID in Office 365, the item is copied to the **Purges** folder in the user's Recoverable Items folder.</span></span> <span data-ttu-id="4618a-125">ユーザーがパージフォルダー内のアイテムにアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="4618a-125">Users can't access items in the Purges folder.</span></span> <span data-ttu-id="4618a-126">ただし、電子情報開示ツールを使用して、[削除] フォルダー内のアイテムを検索できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-126">However, you can use eDiscovery tools to search for items in the Purges folder.</span></span>
+   1. <span data-ttu-id="c23cc-124">ユーザー**アカウントに対応するユーザー ID を持つアイテム:** パートナーコネクタがサードパーティのデータソース内のアイテムのユーザー ID を Office 365 の特定のユーザー ID にマップできる場合、そのアイテムはユーザーの [回復可能なアイテム] フォルダー**内の [削除] フォルダーに**コピーされます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-124">**Items that have a user ID that corresponds to an user account:** If the partner connector can map the user ID of the item in the third-party data source to a specific user ID in Office 365, the item is copied to the **Purges** folder in the user's Recoverable Items folder.</span></span> <span data-ttu-id="c23cc-125">ユーザーがパージフォルダー内のアイテムにアクセスできません。</span><span class="sxs-lookup"><span data-stu-id="c23cc-125">Users can't access items in the Purges folder.</span></span> <span data-ttu-id="c23cc-126">ただし、電子情報開示ツールを使用して、[削除] フォルダー内のアイテムを検索できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-126">However, you can use eDiscovery tools to search for items in the Purges folder.</span></span>
     
-   1. <span data-ttu-id="4618a-127">ユーザー**アカウントに対応するユーザー ID を持たないアイテム:** パートナーコネクタがアイテムのユーザー ID を特定のユーザー ID にマップできない場合、そのアイテムはサードパーティのデータメールボックスの**受信トレイ**フォルダーにコピーされます。</span><span class="sxs-lookup"><span data-stu-id="4618a-127">**Items that don't have a user ID that corresponds to an user account:** If the partner connector can't map the user ID of an item to a specific user ID, the item is copied to the **Inbox** folder of the third-party data mailbox.</span></span> <span data-ttu-id="4618a-128">受信トレイにアイテムをインポートすると、組織内のユーザーがサードパーティのメールボックスにサインインしてこれらのアイテムを表示および管理できるようになります。また、パートナーコネクタ構成で調整が必要かどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="4618a-128">Importing items to the inbox allows you or someone in your organization to sign in to the third-party mailbox to view and manage these items, and see if any adjustments need to be made in the partner connector configuration.</span></span>
+   1. <span data-ttu-id="c23cc-127">ユーザー**アカウントに対応するユーザー ID を持たないアイテム:** パートナーコネクタがアイテムのユーザー ID を特定のユーザー ID にマップできない場合、そのアイテムはサードパーティのデータメールボックスの**受信トレイ**フォルダーにコピーされます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-127">**Items that don't have a user ID that corresponds to an user account:** If the partner connector can't map the user ID of an item to a specific user ID, the item is copied to the **Inbox** folder of the third-party data mailbox.</span></span> <span data-ttu-id="c23cc-128">受信トレイにアイテムをインポートすると、組織内のユーザーがサードパーティのメールボックスにサインインしてこれらのアイテムを表示および管理できるようになります。また、パートナーコネクタ構成で調整が必要かどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-128">Importing items to the inbox allows you or someone in your organization to sign in to the third-party mailbox to view and manage these items, and see if any adjustments need to be made in the partner connector configuration.</span></span>
  
-## <a name="step-1-find-a-third-party-data-partner"></a><span data-ttu-id="4618a-129">手順 1: サード パーティのデータのパートナーを見つける</span><span class="sxs-lookup"><span data-stu-id="4618a-129">Step 1: Find a third-party data partner</span></span>
+## <a name="step-1-find-a-third-party-data-partner"></a><span data-ttu-id="c23cc-129">手順 1: サード パーティのデータのパートナーを見つける</span><span class="sxs-lookup"><span data-stu-id="c23cc-129">Step 1: Find a third-party data partner</span></span>
 
-<span data-ttu-id="4618a-130">Microsoft 365 でサードパーティのデータをアーカイブするための主要なコンポーネントは、サードパーティのデータソースからデータを取得して Office 365 にインポートすることに特化した Microsoft パートナーを検索して作業することです。</span><span class="sxs-lookup"><span data-stu-id="4618a-130">A key component for archiving third-party data in Microsoft 365 is finding and working with a Microsoft partner that specializes in capturing data from a third-party data source and importing it to Office 365.</span></span> <span data-ttu-id="4618a-131">インポートされたデータは、組織の他の Microsoft データ (Exchange からの電子メールや SharePoint および OneDrive for business からのメールなど) と共にアーカイブおよび保存することができます。</span><span class="sxs-lookup"><span data-stu-id="4618a-131">After the data is imported, it can be archived and preserved along with your organization's other Microsoft data, such as email from Exchange and documents from SharePoint and OneDrive for Business.</span></span> <span data-ttu-id="4618a-132">パートナーは、組織のサードパーティのデータソース (BlackBerry、Facebook、Google +、Thomson Reuters、Twitter、YouTube など) からデータを抽出し、そのデータを電子メールメッセージとして Exchange メールボックスにインポートする Office 365 API に渡すコネクタを作成します。</span><span class="sxs-lookup"><span data-stu-id="4618a-132">A partner creates a connector that extracts data from your organization's third-party data sources (such as BlackBerry, Facebook, Google+, Thomson Reuters, Twitter, and YouTube) and passes that data to an Office 365 API that imports items to Exchange mailboxes as email messages.</span></span> 
+<span data-ttu-id="c23cc-130">Microsoft 365 でサードパーティのデータをアーカイブするための主要なコンポーネントは、サードパーティのデータソースからデータを取得して Office 365 にインポートすることに特化した Microsoft パートナーを検索して作業することです。</span><span class="sxs-lookup"><span data-stu-id="c23cc-130">A key component for archiving third-party data in Microsoft 365 is finding and working with a Microsoft partner that specializes in capturing data from a third-party data source and importing it to Office 365.</span></span> <span data-ttu-id="c23cc-131">インポートされたデータは、組織の他の Microsoft データ (Exchange からの電子メールや SharePoint および OneDrive for business からのメールなど) と共にアーカイブおよび保存することができます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-131">After the data is imported, it can be archived and preserved along with your organization's other Microsoft data, such as email from Exchange and documents from SharePoint and OneDrive for Business.</span></span> <span data-ttu-id="c23cc-132">パートナーは、組織のサードパーティのデータソース (BlackBerry、Facebook、Google +、Thomson Reuters、Twitter、YouTube など) からデータを抽出し、そのデータを電子メールメッセージとして Exchange メールボックスにインポートする Office 365 API に渡すコネクタを作成します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-132">A partner creates a connector that extracts data from your organization's third-party data sources (such as BlackBerry, Facebook, Google+, Thomson Reuters, Twitter, and YouTube) and passes that data to an Office 365 API that imports items to Exchange mailboxes as email messages.</span></span> 
   
-<span data-ttu-id="4618a-133">次のセクションでは、Office 365 でサードパーティのデータをアーカイブするためにプログラムに参加している Microsoft パートナー (およびサポートされているサードパーティのデータソース) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="4618a-133">The following sections list the Microsoft partners (and the third-party data sources they support) that are participating in the program for archiving third-party data in Office 365.</span></span>
+<span data-ttu-id="c23cc-133">次のセクションでは、Office 365 でサードパーティのデータをアーカイブするためにプログラムに参加している Microsoft パートナー (およびサポートされているサードパーティのデータソース) を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-133">The following sections list the Microsoft partners (and the third-party data sources they support) that are participating in the program for archiving third-party data in Office 365.</span></span>
 
-[<span data-ttu-id="4618a-134">17a-4 LLC</span><span class="sxs-lookup"><span data-stu-id="4618a-134">17a-4 LLC</span></span>](#17a-4-llc)
+[<span data-ttu-id="c23cc-134">17a-4 LLC</span><span class="sxs-lookup"><span data-stu-id="c23cc-134">17a-4 LLC</span></span>](#17a-4-llc)
   
-[<span data-ttu-id="4618a-135">ArchiveSocial</span><span class="sxs-lookup"><span data-stu-id="4618a-135">ArchiveSocial</span></span>](#archivesocial)
+[<span data-ttu-id="c23cc-135">ArchiveSocial</span><span class="sxs-lookup"><span data-stu-id="c23cc-135">ArchiveSocial</span></span>](#archivesocial)
   
-[<span data-ttu-id="4618a-136">Globanet</span><span class="sxs-lookup"><span data-stu-id="4618a-136">Globanet</span></span>](#globanet)
+[<span data-ttu-id="c23cc-136">Globanet</span><span class="sxs-lookup"><span data-stu-id="c23cc-136">Globanet</span></span>](#globanet)
   
-[<span data-ttu-id="4618a-137">OpenText</span><span class="sxs-lookup"><span data-stu-id="4618a-137">OpenText</span></span>](#opentext)
+[<span data-ttu-id="c23cc-137">OpenText</span><span class="sxs-lookup"><span data-stu-id="c23cc-137">OpenText</span></span>](#opentext)
   
-[<span data-ttu-id="4618a-138">Smarsh</span><span class="sxs-lookup"><span data-stu-id="4618a-138">Smarsh</span></span>](#smarsh)
+[<span data-ttu-id="c23cc-138">Smarsh</span><span class="sxs-lookup"><span data-stu-id="c23cc-138">Smarsh</span></span>](#smarsh)
 
-[<span data-ttu-id="4618a-139">Verba</span><span class="sxs-lookup"><span data-stu-id="4618a-139">Verba</span></span>](#verba)
+[<span data-ttu-id="c23cc-139">Verba</span><span class="sxs-lookup"><span data-stu-id="c23cc-139">Verba</span></span>](#verba)
   
-### <a name="17a-4-llc"></a><span data-ttu-id="4618a-140">17a-4 LLC</span><span class="sxs-lookup"><span data-stu-id="4618a-140">17a-4 LLC</span></span>
+### <a name="17a-4-llc"></a><span data-ttu-id="c23cc-140">17a-4 LLC</span><span class="sxs-lookup"><span data-stu-id="c23cc-140">17a-4 LLC</span></span>
 
-<span data-ttu-id="4618a-141">[17a-4 で](https://www.17a-4.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4618a-141">[17a-4 LLC](https://www.17a-4.com) supports the following third-party data sources:</span></span>
+<span data-ttu-id="c23cc-141">[17a-4 で](https://www.17a-4.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="c23cc-141">[17a-4 LLC](https://www.17a-4.com) supports the following third-party data sources:</span></span>
   
-- <span data-ttu-id="4618a-142">BlackBerry</span><span class="sxs-lookup"><span data-stu-id="4618a-142">BlackBerry</span></span>
+- <span data-ttu-id="c23cc-142">BlackBerry</span><span class="sxs-lookup"><span data-stu-id="c23cc-142">BlackBerry</span></span>
     
-- <span data-ttu-id="4618a-143">Bloomberg データ ストリーム</span><span class="sxs-lookup"><span data-stu-id="4618a-143">Bloomberg Data Streams</span></span>
+- <span data-ttu-id="c23cc-143">Bloomberg データ ストリーム</span><span class="sxs-lookup"><span data-stu-id="c23cc-143">Bloomberg Data Streams</span></span>
     
-- <span data-ttu-id="4618a-144">Cisco Jabber</span><span class="sxs-lookup"><span data-stu-id="4618a-144">Cisco Jabber</span></span>
+- <span data-ttu-id="c23cc-144">Cisco Jabber</span><span class="sxs-lookup"><span data-stu-id="c23cc-144">Cisco Jabber</span></span>
     
-- <span data-ttu-id="4618a-145">FactSet</span><span class="sxs-lookup"><span data-stu-id="4618a-145">FactSet</span></span>
+- <span data-ttu-id="c23cc-145">FactSet</span><span class="sxs-lookup"><span data-stu-id="c23cc-145">FactSet</span></span>
     
-- <span data-ttu-id="4618a-146">HipChat</span><span class="sxs-lookup"><span data-stu-id="4618a-146">HipChat</span></span>
+- <span data-ttu-id="c23cc-146">HipChat</span><span class="sxs-lookup"><span data-stu-id="c23cc-146">HipChat</span></span>
     
-- <span data-ttu-id="4618a-147">InvestEdge</span><span class="sxs-lookup"><span data-stu-id="4618a-147">InvestEdge</span></span>
+- <span data-ttu-id="c23cc-147">InvestEdge</span><span class="sxs-lookup"><span data-stu-id="c23cc-147">InvestEdge</span></span>
     
-- <span data-ttu-id="4618a-148">LivePerson</span><span class="sxs-lookup"><span data-stu-id="4618a-148">LivePerson</span></span>
+- <span data-ttu-id="c23cc-148">LivePerson</span><span class="sxs-lookup"><span data-stu-id="c23cc-148">LivePerson</span></span>
     
-- <span data-ttu-id="4618a-149">MessageLabs データ ストリーム</span><span class="sxs-lookup"><span data-stu-id="4618a-149">MessageLabs Data Streams</span></span>
+- <span data-ttu-id="c23cc-149">MessageLabs データ ストリーム</span><span class="sxs-lookup"><span data-stu-id="c23cc-149">MessageLabs Data Streams</span></span>
     
-- <span data-ttu-id="4618a-150">OpenText</span><span class="sxs-lookup"><span data-stu-id="4618a-150">OpenText</span></span>
+- <span data-ttu-id="c23cc-150">OpenText</span><span class="sxs-lookup"><span data-stu-id="c23cc-150">OpenText</span></span>
     
-- <span data-ttu-id="4618a-151">Oracle/ATG 'click-to-call' Live ヘルプ</span><span class="sxs-lookup"><span data-stu-id="4618a-151">Oracle/ATG 'click-to-call' Live Help</span></span>
+- <span data-ttu-id="c23cc-151">Oracle/ATG 'click-to-call' Live ヘルプ</span><span class="sxs-lookup"><span data-stu-id="c23cc-151">Oracle/ATG 'click-to-call' Live Help</span></span>
     
-- <span data-ttu-id="4618a-152">Pivot IMTRADER</span><span class="sxs-lookup"><span data-stu-id="4618a-152">Pivot IMTRADER</span></span>
+- <span data-ttu-id="c23cc-152">Pivot IMTRADER</span><span class="sxs-lookup"><span data-stu-id="c23cc-152">Pivot IMTRADER</span></span>
     
-- <span data-ttu-id="4618a-153">Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="4618a-153">Microsoft SharePoint</span></span>
+- <span data-ttu-id="c23cc-153">Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="c23cc-153">Microsoft SharePoint</span></span>
     
-- <span data-ttu-id="4618a-154">MindAlign</span><span class="sxs-lookup"><span data-stu-id="4618a-154">MindAlign</span></span>
+- <span data-ttu-id="c23cc-154">MindAlign</span><span class="sxs-lookup"><span data-stu-id="c23cc-154">MindAlign</span></span>
     
-- <span data-ttu-id="4618a-155">Sitrion One (Newsgator)</span><span class="sxs-lookup"><span data-stu-id="4618a-155">Sitrion One (Newsgator)</span></span>
+- <span data-ttu-id="c23cc-155">Sitrion One (Newsgator)</span><span class="sxs-lookup"><span data-stu-id="c23cc-155">Sitrion One (Newsgator)</span></span>
     
-- <span data-ttu-id="4618a-156">Skype for Business (Lync/OCS)</span><span class="sxs-lookup"><span data-stu-id="4618a-156">Skype for Business (Lync/OCS)</span></span>
+- <span data-ttu-id="c23cc-156">Skype for Business (Lync/OCS)</span><span class="sxs-lookup"><span data-stu-id="c23cc-156">Skype for Business (Lync/OCS)</span></span>
     
-- <span data-ttu-id="4618a-157">Skype for Business Online (Lync Online)</span><span class="sxs-lookup"><span data-stu-id="4618a-157">Skype for Business Online (Lync Online)</span></span>
+- <span data-ttu-id="c23cc-157">Skype for Business Online (Lync Online)</span><span class="sxs-lookup"><span data-stu-id="c23cc-157">Skype for Business Online (Lync Online)</span></span>
     
-- <span data-ttu-id="4618a-158">SQL データベース</span><span class="sxs-lookup"><span data-stu-id="4618a-158">SQL Databases</span></span>
+- <span data-ttu-id="c23cc-158">SQL データベース</span><span class="sxs-lookup"><span data-stu-id="c23cc-158">SQL Databases</span></span>
     
-- <span data-ttu-id="4618a-159">Squawker</span><span class="sxs-lookup"><span data-stu-id="4618a-159">Squawker</span></span>
+- <span data-ttu-id="c23cc-159">Squawker</span><span class="sxs-lookup"><span data-stu-id="c23cc-159">Squawker</span></span>
     
-- <span data-ttu-id="4618a-160">Thomson Reuters Eikon Messenger</span><span class="sxs-lookup"><span data-stu-id="4618a-160">Thomson Reuters Eikon Messenger</span></span>
+- <span data-ttu-id="c23cc-160">Thomson Reuters Eikon Messenger</span><span class="sxs-lookup"><span data-stu-id="c23cc-160">Thomson Reuters Eikon Messenger</span></span>
   
 
   
-### <a name="archivesocial"></a><span data-ttu-id="4618a-161">ArchiveSocial</span><span class="sxs-lookup"><span data-stu-id="4618a-161">ArchiveSocial</span></span>
+### <a name="archivesocial"></a><span data-ttu-id="c23cc-161">ArchiveSocial</span><span class="sxs-lookup"><span data-stu-id="c23cc-161">ArchiveSocial</span></span>
 
-<span data-ttu-id="4618a-162">[ArchiveSocial](https://www.archivesocial.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4618a-162">[ArchiveSocial ](https://www.archivesocial.com) supports the following third-party data sources:</span></span> 
+<span data-ttu-id="c23cc-162">[ArchiveSocial](https://www.archivesocial.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="c23cc-162">[ArchiveSocial ](https://www.archivesocial.com) supports the following third-party data sources:</span></span> 
   
-- <span data-ttu-id="4618a-163">Facebook</span><span class="sxs-lookup"><span data-stu-id="4618a-163">Facebook</span></span>
+- <span data-ttu-id="c23cc-163">Facebook</span><span class="sxs-lookup"><span data-stu-id="c23cc-163">Facebook</span></span>
     
-- <span data-ttu-id="4618a-164">Flickr</span><span class="sxs-lookup"><span data-stu-id="4618a-164">Flickr</span></span>
+- <span data-ttu-id="c23cc-164">Flickr</span><span class="sxs-lookup"><span data-stu-id="c23cc-164">Flickr</span></span>
     
-- <span data-ttu-id="4618a-165">Instagram</span><span class="sxs-lookup"><span data-stu-id="4618a-165">Instagram</span></span>
+- <span data-ttu-id="c23cc-165">Instagram</span><span class="sxs-lookup"><span data-stu-id="c23cc-165">Instagram</span></span>
     
-- <span data-ttu-id="4618a-166">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="4618a-166">LinkedIn</span></span>
+- <span data-ttu-id="c23cc-166">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="c23cc-166">LinkedIn</span></span>
     
-- <span data-ttu-id="4618a-167">Pinterest</span><span class="sxs-lookup"><span data-stu-id="4618a-167">Pinterest</span></span>
+- <span data-ttu-id="c23cc-167">Pinterest</span><span class="sxs-lookup"><span data-stu-id="c23cc-167">Pinterest</span></span>
     
-- <span data-ttu-id="4618a-168">Twitter</span><span class="sxs-lookup"><span data-stu-id="4618a-168">Twitter</span></span>
+- <span data-ttu-id="c23cc-168">Twitter</span><span class="sxs-lookup"><span data-stu-id="c23cc-168">Twitter</span></span>
     
-- <span data-ttu-id="4618a-169">YouTube</span><span class="sxs-lookup"><span data-stu-id="4618a-169">YouTube</span></span>
+- <span data-ttu-id="c23cc-169">YouTube</span><span class="sxs-lookup"><span data-stu-id="c23cc-169">YouTube</span></span>
     
-- <span data-ttu-id="4618a-170">Vimeo</span><span class="sxs-lookup"><span data-stu-id="4618a-170">Vimeo</span></span>
+- <span data-ttu-id="c23cc-170">Vimeo</span><span class="sxs-lookup"><span data-stu-id="c23cc-170">Vimeo</span></span>
   
-### <a name="globanet"></a><span data-ttu-id="4618a-171">Globanet</span><span class="sxs-lookup"><span data-stu-id="4618a-171">Globanet</span></span>
+### <a name="globanet"></a><span data-ttu-id="c23cc-171">Globanet</span><span class="sxs-lookup"><span data-stu-id="c23cc-171">Globanet</span></span>
 
-<span data-ttu-id="4618a-172">[Globanet](https://www.globanet.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4618a-172">[Globanet](https://www.globanet.com) supports the following third-party data sources:</span></span> 
+<span data-ttu-id="c23cc-172">[Globanet](https://www.globanet.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="c23cc-172">[Globanet](https://www.globanet.com) supports the following third-party data sources:</span></span> 
   
-- <span data-ttu-id="4618a-173">AOL with Pivot クライアント</span><span class="sxs-lookup"><span data-stu-id="4618a-173">AOL with Pivot Client</span></span> 
+- <span data-ttu-id="c23cc-173">AOL with Pivot クライアント</span><span class="sxs-lookup"><span data-stu-id="c23cc-173">AOL with Pivot Client</span></span> 
     
-- <span data-ttu-id="4618a-174">BlackBerry 呼び出しログ (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-174">BlackBerry Call Logs (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-174">BlackBerry 呼び出しログ (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-174">BlackBerry Call Logs (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-175">BlackBerry メッセンジャー (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-175">BlackBerry Messenger (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-175">BlackBerry メッセンジャー (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-175">BlackBerry Messenger (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-176">BlackBerry PIN (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-176">BlackBerry PIN (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-176">BlackBerry PIN (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-176">BlackBerry PIN (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-177">BlackBerry SMS (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-177">BlackBerry SMS (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-177">BlackBerry SMS (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-177">BlackBerry SMS (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-178">Bloomberg チャット</span><span class="sxs-lookup"><span data-stu-id="4618a-178">Bloomberg Chat</span></span>
+- <span data-ttu-id="c23cc-178">Bloomberg チャット</span><span class="sxs-lookup"><span data-stu-id="c23cc-178">Bloomberg Chat</span></span>
     
-- <span data-ttu-id="4618a-179">Bloomberg メール</span><span class="sxs-lookup"><span data-stu-id="4618a-179">Bloomberg Mail</span></span>
+- <span data-ttu-id="c23cc-179">Bloomberg メール</span><span class="sxs-lookup"><span data-stu-id="c23cc-179">Bloomberg Mail</span></span>
     
-- <span data-ttu-id="4618a-180">検索ボックス</span><span class="sxs-lookup"><span data-stu-id="4618a-180">Box</span></span>
+- <span data-ttu-id="c23cc-180">検索ボックス</span><span class="sxs-lookup"><span data-stu-id="c23cc-180">Box</span></span>
     
-- <span data-ttu-id="4618a-181">CipherCloud for Salesforce Chatter</span><span class="sxs-lookup"><span data-stu-id="4618a-181">CipherCloud for Salesforce Chatter</span></span>
+- <span data-ttu-id="c23cc-181">CipherCloud for Salesforce Chatter</span><span class="sxs-lookup"><span data-stu-id="c23cc-181">CipherCloud for Salesforce Chatter</span></span>
     
-- <span data-ttu-id="4618a-182">Cisco IM &amp; プレゼンスサーバー (v10、v V10.5.1 SU1、v 11.0、v 11.5 SU2)</span><span class="sxs-lookup"><span data-stu-id="4618a-182">Cisco IM &amp; Presence Server (v10, v10.5.1 SU1, v11.0, v11.5 SU2)</span></span>
+- <span data-ttu-id="c23cc-182">Cisco IM &amp; プレゼンスサーバー (v10、v V10.5.1 SU1、v 11.0、v 11.5 SU2)</span><span class="sxs-lookup"><span data-stu-id="c23cc-182">Cisco IM &amp; Presence Server (v10, v10.5.1 SU1, v11.0, v11.5 SU2)</span></span>
 
-- <span data-ttu-id="4618a-183">Cisco Webex Teams</span><span class="sxs-lookup"><span data-stu-id="4618a-183">Cisco Webex Teams</span></span>
+- <span data-ttu-id="c23cc-183">Cisco Webex Teams</span><span class="sxs-lookup"><span data-stu-id="c23cc-183">Cisco Webex Teams</span></span>
 
-- <span data-ttu-id="4618a-184">Citrix ワークスペースの編集 &amp; ファイル</span><span class="sxs-lookup"><span data-stu-id="4618a-184">Citrix Workspace &amp; ShareFile</span></span>
+- <span data-ttu-id="c23cc-184">Citrix ワークスペースの編集 &amp; ファイル</span><span class="sxs-lookup"><span data-stu-id="c23cc-184">Citrix Workspace &amp; ShareFile</span></span>
 
-- <span data-ttu-id="4618a-185">CrowdCompass</span><span class="sxs-lookup"><span data-stu-id="4618a-185">CrowdCompass</span></span>
+- <span data-ttu-id="c23cc-185">CrowdCompass</span><span class="sxs-lookup"><span data-stu-id="c23cc-185">CrowdCompass</span></span>
 
-- <span data-ttu-id="4618a-186">カスタム区切りのテキストファイル</span><span class="sxs-lookup"><span data-stu-id="4618a-186">Custom-delimited text files</span></span>
+- <span data-ttu-id="c23cc-186">カスタム区切りのテキストファイル</span><span class="sxs-lookup"><span data-stu-id="c23cc-186">Custom-delimited text files</span></span>
     
-- <span data-ttu-id="4618a-187">カスタムの XML ファイル</span><span class="sxs-lookup"><span data-stu-id="4618a-187">Custom XML files</span></span>
+- <span data-ttu-id="c23cc-187">カスタムの XML ファイル</span><span class="sxs-lookup"><span data-stu-id="c23cc-187">Custom XML files</span></span>
     
-- <span data-ttu-id="4618a-188">Facebook (ページ)</span><span class="sxs-lookup"><span data-stu-id="4618a-188">Facebook (Pages)</span></span>
+- <span data-ttu-id="c23cc-188">Facebook (ページ)</span><span class="sxs-lookup"><span data-stu-id="c23cc-188">Facebook (Pages)</span></span>
     
-- <span data-ttu-id="4618a-189">Factset</span><span class="sxs-lookup"><span data-stu-id="4618a-189">Factset</span></span>
+- <span data-ttu-id="c23cc-189">Factset</span><span class="sxs-lookup"><span data-stu-id="c23cc-189">Factset</span></span>
     
-- <span data-ttu-id="4618a-190">FXConnect</span><span class="sxs-lookup"><span data-stu-id="4618a-190">FXConnect</span></span>
+- <span data-ttu-id="c23cc-190">FXConnect</span><span class="sxs-lookup"><span data-stu-id="c23cc-190">FXConnect</span></span>
     
-- <span data-ttu-id="4618a-191">ICE Chat/YellowJacket</span><span class="sxs-lookup"><span data-stu-id="4618a-191">ICE Chat/YellowJacket</span></span>
+- <span data-ttu-id="c23cc-191">ICE Chat/YellowJacket</span><span class="sxs-lookup"><span data-stu-id="c23cc-191">ICE Chat/YellowJacket</span></span>
     
-- <span data-ttu-id="4618a-192">Jive</span><span class="sxs-lookup"><span data-stu-id="4618a-192">Jive</span></span>
+- <span data-ttu-id="c23cc-192">Jive</span><span class="sxs-lookup"><span data-stu-id="c23cc-192">Jive</span></span>
     
-- <span data-ttu-id="4618a-193">Macgregor XIP</span><span class="sxs-lookup"><span data-stu-id="4618a-193">Macgregor XIP</span></span>
+- <span data-ttu-id="c23cc-193">Macgregor XIP</span><span class="sxs-lookup"><span data-stu-id="c23cc-193">Macgregor XIP</span></span>
 
-- <span data-ttu-id="4618a-194">Microsoft Exchange Server</span><span class="sxs-lookup"><span data-stu-id="4618a-194">Microsoft Exchange Server</span></span>
+- <span data-ttu-id="c23cc-194">Microsoft Exchange Server</span><span class="sxs-lookup"><span data-stu-id="c23cc-194">Microsoft Exchange Server</span></span>
     
-- <span data-ttu-id="4618a-195">Microsoft OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="4618a-195">Microsoft OneDrive for Business</span></span>
+- <span data-ttu-id="c23cc-195">Microsoft OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="c23cc-195">Microsoft OneDrive for Business</span></span>
 
-- <span data-ttu-id="4618a-196">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="4618a-196">Microsoft Teams</span></span>
+- <span data-ttu-id="c23cc-196">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="c23cc-196">Microsoft Teams</span></span>
        
-- <span data-ttu-id="4618a-197">Microsoft Yammer</span><span class="sxs-lookup"><span data-stu-id="4618a-197">Microsoft Yammer</span></span>
+- <span data-ttu-id="c23cc-197">Microsoft Yammer</span><span class="sxs-lookup"><span data-stu-id="c23cc-197">Microsoft Yammer</span></span>
     
-- <span data-ttu-id="4618a-198">Mobile Guard</span><span class="sxs-lookup"><span data-stu-id="4618a-198">Mobile Guard</span></span>
+- <span data-ttu-id="c23cc-198">Mobile Guard</span><span class="sxs-lookup"><span data-stu-id="c23cc-198">Mobile Guard</span></span>
     
-- <span data-ttu-id="4618a-199">ピボット</span><span class="sxs-lookup"><span data-stu-id="4618a-199">Pivot</span></span>
+- <span data-ttu-id="c23cc-199">ピボット</span><span class="sxs-lookup"><span data-stu-id="c23cc-199">Pivot</span></span>
     
-- <span data-ttu-id="4618a-200">Salesforce Chatter</span><span class="sxs-lookup"><span data-stu-id="4618a-200">Salesforce Chatter</span></span>
+- <span data-ttu-id="c23cc-200">Salesforce Chatter</span><span class="sxs-lookup"><span data-stu-id="c23cc-200">Salesforce Chatter</span></span>
 
-- <span data-ttu-id="4618a-201">Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="4618a-201">Skype for Business Online</span></span>
+- <span data-ttu-id="c23cc-201">Skype for Business Online</span><span class="sxs-lookup"><span data-stu-id="c23cc-201">Skype for Business Online</span></span>
     
-- <span data-ttu-id="4618a-202">Skype for Business、バージョン 2007 R2 ～ 2016 (オンプレミス)</span><span class="sxs-lookup"><span data-stu-id="4618a-202">Skype for Business, versions 2007 R2 - 2016 (on-premises)</span></span>
+- <span data-ttu-id="c23cc-202">Skype for Business、バージョン 2007 R2 ～ 2016 (オンプレミス)</span><span class="sxs-lookup"><span data-stu-id="c23cc-202">Skype for Business, versions 2007 R2 - 2016 (on-premises)</span></span>
     
-- <span data-ttu-id="4618a-203">Slack Enterprise Grid</span><span class="sxs-lookup"><span data-stu-id="4618a-203">Slack Enterprise Grid</span></span>
+- <span data-ttu-id="c23cc-203">Slack Enterprise Grid</span><span class="sxs-lookup"><span data-stu-id="c23cc-203">Slack Enterprise Grid</span></span>
     
-- <span data-ttu-id="4618a-204">Symphony</span><span class="sxs-lookup"><span data-stu-id="4618a-204">Symphony</span></span>
+- <span data-ttu-id="c23cc-204">Symphony</span><span class="sxs-lookup"><span data-stu-id="c23cc-204">Symphony</span></span>
     
-- <span data-ttu-id="4618a-205">Thomson Reuters Eikon</span><span class="sxs-lookup"><span data-stu-id="4618a-205">Thomson Reuters Eikon</span></span>
+- <span data-ttu-id="c23cc-205">Thomson Reuters Eikon</span><span class="sxs-lookup"><span data-stu-id="c23cc-205">Thomson Reuters Eikon</span></span>
     
-- <span data-ttu-id="4618a-206">Thomson Reuters Messenger</span><span class="sxs-lookup"><span data-stu-id="4618a-206">Thomson Reuters Messenger</span></span>
+- <span data-ttu-id="c23cc-206">Thomson Reuters Messenger</span><span class="sxs-lookup"><span data-stu-id="c23cc-206">Thomson Reuters Messenger</span></span>
     
-- <span data-ttu-id="4618a-207">Thomson Reuters Dealings 3000 / FX トレーディング</span><span class="sxs-lookup"><span data-stu-id="4618a-207">Thomson Reuters Dealings 3000 / FX Trading</span></span>
+- <span data-ttu-id="c23cc-207">Thomson Reuters Dealings 3000 / FX トレーディング</span><span class="sxs-lookup"><span data-stu-id="c23cc-207">Thomson Reuters Dealings 3000 / FX Trading</span></span>
     
-- <span data-ttu-id="4618a-208">Twitter</span><span class="sxs-lookup"><span data-stu-id="4618a-208">Twitter</span></span>
+- <span data-ttu-id="c23cc-208">Twitter</span><span class="sxs-lookup"><span data-stu-id="c23cc-208">Twitter</span></span>
     
-- <span data-ttu-id="4618a-209">UBS チャット</span><span class="sxs-lookup"><span data-stu-id="4618a-209">UBS Chat</span></span>
+- <span data-ttu-id="c23cc-209">UBS チャット</span><span class="sxs-lookup"><span data-stu-id="c23cc-209">UBS Chat</span></span>
     
-- <span data-ttu-id="4618a-210">YouTube</span><span class="sxs-lookup"><span data-stu-id="4618a-210">YouTube</span></span>
+- <span data-ttu-id="c23cc-210">YouTube</span><span class="sxs-lookup"><span data-stu-id="c23cc-210">YouTube</span></span>
   
-### <a name="opentext"></a><span data-ttu-id="4618a-211">OpenText</span><span class="sxs-lookup"><span data-stu-id="4618a-211">OpenText</span></span>
+### <a name="opentext"></a><span data-ttu-id="c23cc-211">OpenText</span><span class="sxs-lookup"><span data-stu-id="c23cc-211">OpenText</span></span>
 
-<span data-ttu-id="4618a-212">[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4618a-212">[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis) supports the following third-party data sources:</span></span> 
+<span data-ttu-id="c23cc-212">[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="c23cc-212">[OpenText](https://www.opentext.com/what-we-do/products/opentext-product-offerings-catalog/rebranded-products/daegis) supports the following third-party data sources:</span></span> 
   
-- <span data-ttu-id="4618a-213">Axs Encrypted</span><span class="sxs-lookup"><span data-stu-id="4618a-213">Axs Encrypted</span></span>
+- <span data-ttu-id="c23cc-213">Axs Encrypted</span><span class="sxs-lookup"><span data-stu-id="c23cc-213">Axs Encrypted</span></span>
     
-- <span data-ttu-id="4618a-214">Axs Exchange</span><span class="sxs-lookup"><span data-stu-id="4618a-214">Axs Exchange</span></span>
+- <span data-ttu-id="c23cc-214">Axs Exchange</span><span class="sxs-lookup"><span data-stu-id="c23cc-214">Axs Exchange</span></span>
     
-- <span data-ttu-id="4618a-215">Axs Local Archive</span><span class="sxs-lookup"><span data-stu-id="4618a-215">Axs Local Archive</span></span>
+- <span data-ttu-id="c23cc-215">Axs Local Archive</span><span class="sxs-lookup"><span data-stu-id="c23cc-215">Axs Local Archive</span></span>
     
-- <span data-ttu-id="4618a-216">Axs PlaceHolder</span><span class="sxs-lookup"><span data-stu-id="4618a-216">Axs PlaceHolder</span></span>
+- <span data-ttu-id="c23cc-216">Axs PlaceHolder</span><span class="sxs-lookup"><span data-stu-id="c23cc-216">Axs PlaceHolder</span></span>
     
-- <span data-ttu-id="4618a-217">Axs Signed</span><span class="sxs-lookup"><span data-stu-id="4618a-217">Axs Signed</span></span>
+- <span data-ttu-id="c23cc-217">Axs Signed</span><span class="sxs-lookup"><span data-stu-id="c23cc-217">Axs Signed</span></span>
     
-- <span data-ttu-id="4618a-218">Bloomberg</span><span class="sxs-lookup"><span data-stu-id="4618a-218">Bloomberg</span></span>
+- <span data-ttu-id="c23cc-218">Bloomberg</span><span class="sxs-lookup"><span data-stu-id="c23cc-218">Bloomberg</span></span>
     
-- <span data-ttu-id="4618a-219">Thomson Reuters</span><span class="sxs-lookup"><span data-stu-id="4618a-219">Thomson Reuters</span></span>
+- <span data-ttu-id="c23cc-219">Thomson Reuters</span><span class="sxs-lookup"><span data-stu-id="c23cc-219">Thomson Reuters</span></span>
   
-### <a name="smarsh"></a><span data-ttu-id="4618a-220">Smarsh</span><span class="sxs-lookup"><span data-stu-id="4618a-220">Smarsh</span></span>
+### <a name="smarsh"></a><span data-ttu-id="c23cc-220">Smarsh</span><span class="sxs-lookup"><span data-stu-id="c23cc-220">Smarsh</span></span>
 
-<span data-ttu-id="4618a-221">[Smarsh](https://www.smarsh.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4618a-221">[Smarsh](https://www.smarsh.com) supports the following third-party data sources:</span></span> 
+<span data-ttu-id="c23cc-221">[Smarsh](https://www.smarsh.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="c23cc-221">[Smarsh](https://www.smarsh.com) supports the following third-party data sources:</span></span> 
   
-- <span data-ttu-id="4618a-222">目的</span><span class="sxs-lookup"><span data-stu-id="4618a-222">AIM</span></span>
+- <span data-ttu-id="c23cc-222">目的</span><span class="sxs-lookup"><span data-stu-id="c23cc-222">AIM</span></span>
     
-- <span data-ttu-id="4618a-223">American Idol</span><span class="sxs-lookup"><span data-stu-id="4618a-223">American Idol</span></span>
+- <span data-ttu-id="c23cc-223">American Idol</span><span class="sxs-lookup"><span data-stu-id="c23cc-223">American Idol</span></span>
     
-- <span data-ttu-id="4618a-224">Apple Juice</span><span class="sxs-lookup"><span data-stu-id="4618a-224">Apple Juice</span></span>
+- <span data-ttu-id="c23cc-224">Apple Juice</span><span class="sxs-lookup"><span data-stu-id="c23cc-224">Apple Juice</span></span>
     
-- <span data-ttu-id="4618a-225">AOL with Pivot クライアント</span><span class="sxs-lookup"><span data-stu-id="4618a-225">AOL with Pivot client</span></span>
+- <span data-ttu-id="c23cc-225">AOL with Pivot クライアント</span><span class="sxs-lookup"><span data-stu-id="c23cc-225">AOL with Pivot client</span></span>
     
-- <span data-ttu-id="4618a-226">アレス</span><span class="sxs-lookup"><span data-stu-id="4618a-226">Ares</span></span>
+- <span data-ttu-id="c23cc-226">アレス</span><span class="sxs-lookup"><span data-stu-id="c23cc-226">Ares</span></span>
     
-- <span data-ttu-id="4618a-227">Bazaarvoice</span><span class="sxs-lookup"><span data-stu-id="4618a-227">Bazaar Voice</span></span>
+- <span data-ttu-id="c23cc-227">Bazaarvoice</span><span class="sxs-lookup"><span data-stu-id="c23cc-227">Bazaar Voice</span></span>
     
-- <span data-ttu-id="4618a-228">Bearshare</span><span class="sxs-lookup"><span data-stu-id="4618a-228">Bear Share</span></span>
+- <span data-ttu-id="c23cc-228">Bearshare</span><span class="sxs-lookup"><span data-stu-id="c23cc-228">Bear Share</span></span>
     
-- <span data-ttu-id="4618a-229">BitTorrent</span><span class="sxs-lookup"><span data-stu-id="4618a-229">Bit Torrent</span></span>
+- <span data-ttu-id="c23cc-229">BitTorrent</span><span class="sxs-lookup"><span data-stu-id="c23cc-229">Bit Torrent</span></span>
     
-- <span data-ttu-id="4618a-230">BlackBerry 呼び出しログ (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-230">BlackBerry Call Logs (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-230">BlackBerry 呼び出しログ (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-230">BlackBerry Call Logs (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-231">BlackBerry メッセンジャー (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-231">BlackBerry Messenger (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-231">BlackBerry メッセンジャー (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-231">BlackBerry Messenger (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-232">BlackBerry PIN (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-232">BlackBerry PIN (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-232">BlackBerry PIN (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-232">BlackBerry PIN (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-233">BlackBerry SMS (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="4618a-233">BlackBerry SMS (v5, v10, v12)</span></span>
+- <span data-ttu-id="c23cc-233">BlackBerry SMS (v5、v10、v12)</span><span class="sxs-lookup"><span data-stu-id="c23cc-233">BlackBerry SMS (v5, v10, v12)</span></span>
     
-- <span data-ttu-id="4618a-234">Bloomberg メール</span><span class="sxs-lookup"><span data-stu-id="4618a-234">Bloomberg Mail</span></span>
+- <span data-ttu-id="c23cc-234">Bloomberg メール</span><span class="sxs-lookup"><span data-stu-id="c23cc-234">Bloomberg Mail</span></span>
     
-- <span data-ttu-id="4618a-235">CellTrust</span><span class="sxs-lookup"><span data-stu-id="4618a-235">CellTrust</span></span>
+- <span data-ttu-id="c23cc-235">CellTrust</span><span class="sxs-lookup"><span data-stu-id="c23cc-235">CellTrust</span></span>
     
-- <span data-ttu-id="4618a-236">チャットのインポート</span><span class="sxs-lookup"><span data-stu-id="4618a-236">Chat Import</span></span>
+- <span data-ttu-id="c23cc-236">チャットのインポート</span><span class="sxs-lookup"><span data-stu-id="c23cc-236">Chat Import</span></span>
     
-- <span data-ttu-id="4618a-237">チャットのリアルタイム ロギングとポリシー</span><span class="sxs-lookup"><span data-stu-id="4618a-237">Chat Real Time Logging and Policy</span></span>
+- <span data-ttu-id="c23cc-237">チャットのリアルタイム ロギングとポリシー</span><span class="sxs-lookup"><span data-stu-id="c23cc-237">Chat Real Time Logging and Policy</span></span>
     
-- <span data-ttu-id="4618a-238">チャター</span><span class="sxs-lookup"><span data-stu-id="4618a-238">Chatter</span></span>
+- <span data-ttu-id="c23cc-238">チャター</span><span class="sxs-lookup"><span data-stu-id="c23cc-238">Chatter</span></span>
     
-- <span data-ttu-id="4618a-239">Cisco IM &amp; プレゼンスサーバー (v 9.0.1、v 9.1、v 9.1.1 SU1、v10、v V10.5.1 SU1)</span><span class="sxs-lookup"><span data-stu-id="4618a-239">Cisco IM &amp; Presence Server (v9.0.1, v9.1, v9.1.1 SU1, v10, v10.5.1 SU1)</span></span>
+- <span data-ttu-id="c23cc-239">Cisco IM &amp; プレゼンスサーバー (v 9.0.1、v 9.1、v 9.1.1 SU1、v10、v V10.5.1 SU1)</span><span class="sxs-lookup"><span data-stu-id="c23cc-239">Cisco IM &amp; Presence Server (v9.0.1, v9.1, v9.1.1 SU1, v10, v10.5.1 SU1)</span></span>
     
-- <span data-ttu-id="4618a-240">Cisco Unified Presence Server (v8.6.3、v8.6.4、v8.6.5)</span><span class="sxs-lookup"><span data-stu-id="4618a-240">Cisco Unified Presence Server (v8.6.3, v8.6.4, v8.6.5)</span></span>
+- <span data-ttu-id="c23cc-240">Cisco Unified Presence Server (v8.6.3、v8.6.4、v8.6.5)</span><span class="sxs-lookup"><span data-stu-id="c23cc-240">Cisco Unified Presence Server (v8.6.3, v8.6.4, v8.6.5)</span></span>
     
-- <span data-ttu-id="4618a-241">共同作業のインポート</span><span class="sxs-lookup"><span data-stu-id="4618a-241">Collaboration Import</span></span>
+- <span data-ttu-id="c23cc-241">共同作業のインポート</span><span class="sxs-lookup"><span data-stu-id="c23cc-241">Collaboration Import</span></span>
     
-- <span data-ttu-id="4618a-242">共同作業のリアルタイム ロギング</span><span class="sxs-lookup"><span data-stu-id="4618a-242">Collaboration Real Time Logging</span></span>
+- <span data-ttu-id="c23cc-242">共同作業のリアルタイム ロギング</span><span class="sxs-lookup"><span data-stu-id="c23cc-242">Collaboration Real Time Logging</span></span>
     
-- <span data-ttu-id="4618a-243">Direct Connect</span><span class="sxs-lookup"><span data-stu-id="4618a-243">Direct Connect</span></span>
+- <span data-ttu-id="c23cc-243">Direct Connect</span><span class="sxs-lookup"><span data-stu-id="c23cc-243">Direct Connect</span></span>
     
-- <span data-ttu-id="4618a-244">Facebook</span><span class="sxs-lookup"><span data-stu-id="4618a-244">Facebook</span></span>
+- <span data-ttu-id="c23cc-244">Facebook</span><span class="sxs-lookup"><span data-stu-id="c23cc-244">Facebook</span></span>
     
-- <span data-ttu-id="4618a-245">FactSet</span><span class="sxs-lookup"><span data-stu-id="4618a-245">FactSet</span></span>
+- <span data-ttu-id="c23cc-245">FactSet</span><span class="sxs-lookup"><span data-stu-id="c23cc-245">FactSet</span></span>
     
-- <span data-ttu-id="4618a-246">FastTrack</span><span class="sxs-lookup"><span data-stu-id="4618a-246">FastTrack</span></span>
+- <span data-ttu-id="c23cc-246">FastTrack</span><span class="sxs-lookup"><span data-stu-id="c23cc-246">FastTrack</span></span>
     
-- <span data-ttu-id="4618a-247">Gnutella</span><span class="sxs-lookup"><span data-stu-id="4618a-247">Gnutella</span></span>
+- <span data-ttu-id="c23cc-247">Gnutella</span><span class="sxs-lookup"><span data-stu-id="c23cc-247">Gnutella</span></span>
     
-- <span data-ttu-id="4618a-248">Google +</span><span class="sxs-lookup"><span data-stu-id="4618a-248">Google+</span></span>
+- <span data-ttu-id="c23cc-248">Google +</span><span class="sxs-lookup"><span data-stu-id="c23cc-248">Google+</span></span>
     
-- <span data-ttu-id="4618a-249">GoToMyPC</span><span class="sxs-lookup"><span data-stu-id="4618a-249">GoToMyPC</span></span>
+- <span data-ttu-id="c23cc-249">GoToMyPC</span><span class="sxs-lookup"><span data-stu-id="c23cc-249">GoToMyPC</span></span>
     
-- <span data-ttu-id="4618a-250">Hopster</span><span class="sxs-lookup"><span data-stu-id="4618a-250">Hopster</span></span>
+- <span data-ttu-id="c23cc-250">Hopster</span><span class="sxs-lookup"><span data-stu-id="c23cc-250">Hopster</span></span>
     
-- <span data-ttu-id="4618a-251">HubConnex</span><span class="sxs-lookup"><span data-stu-id="4618a-251">HubConnex</span></span>
+- <span data-ttu-id="c23cc-251">HubConnex</span><span class="sxs-lookup"><span data-stu-id="c23cc-251">HubConnex</span></span>
     
-- <span data-ttu-id="4618a-252">IBM Connections (v3.0.1、v4.0、v4.5、v4.5 CR3、v5)</span><span class="sxs-lookup"><span data-stu-id="4618a-252">IBM Connections (v3.0.1, v4.0, v4.5, v4.5 CR3, v5)</span></span>
+- <span data-ttu-id="c23cc-252">IBM Connections (v3.0.1、v4.0、v4.5、v4.5 CR3、v5)</span><span class="sxs-lookup"><span data-stu-id="c23cc-252">IBM Connections (v3.0.1, v4.0, v4.5, v4.5 CR3, v5)</span></span>
     
-- <span data-ttu-id="4618a-253">IBM Connections Chat Cloud</span><span class="sxs-lookup"><span data-stu-id="4618a-253">IBM Connections Chat Cloud</span></span>
+- <span data-ttu-id="c23cc-253">IBM Connections Chat Cloud</span><span class="sxs-lookup"><span data-stu-id="c23cc-253">IBM Connections Chat Cloud</span></span>
     
-- <span data-ttu-id="4618a-254">IBM Connections Social Cloud</span><span class="sxs-lookup"><span data-stu-id="4618a-254">IBM Connections Social Cloud</span></span>
+- <span data-ttu-id="c23cc-254">IBM Connections Social Cloud</span><span class="sxs-lookup"><span data-stu-id="c23cc-254">IBM Connections Social Cloud</span></span>
     
-- <span data-ttu-id="4618a-255">IBM SameTime Advanced 8.5.2 IFR1</span><span class="sxs-lookup"><span data-stu-id="4618a-255">IBM SameTime Advanced 8.5.2 IFR1</span></span>
+- <span data-ttu-id="c23cc-255">IBM SameTime Advanced 8.5.2 IFR1</span><span class="sxs-lookup"><span data-stu-id="c23cc-255">IBM SameTime Advanced 8.5.2 IFR1</span></span>
     
-- <span data-ttu-id="4618a-256">IBM SameTime Communicate 9.0</span><span class="sxs-lookup"><span data-stu-id="4618a-256">IBM SameTime Communicate 9.0</span></span>
+- <span data-ttu-id="c23cc-256">IBM SameTime Communicate 9.0</span><span class="sxs-lookup"><span data-stu-id="c23cc-256">IBM SameTime Communicate 9.0</span></span>
     
-- <span data-ttu-id="4618a-257">IBM SameTime Community (v8.0.2、v8.5.1 IFR2、v8.5.2 IFR1、v9.1)</span><span class="sxs-lookup"><span data-stu-id="4618a-257">IBM SameTime Community (v8.0.2, v8.5.1 IFR2, v8.5.2 IFR1, v9.1)</span></span>
+- <span data-ttu-id="c23cc-257">IBM SameTime Community (v8.0.2、v8.5.1 IFR2、v8.5.2 IFR1、v9.1)</span><span class="sxs-lookup"><span data-stu-id="c23cc-257">IBM SameTime Community (v8.0.2, v8.5.1 IFR2, v8.5.2 IFR1, v9.1)</span></span>
     
-- <span data-ttu-id="4618a-258">IBM SameTime Complete 9.0</span><span class="sxs-lookup"><span data-stu-id="4618a-258">IBM SameTime Complete 9.0</span></span>
+- <span data-ttu-id="c23cc-258">IBM SameTime Complete 9.0</span><span class="sxs-lookup"><span data-stu-id="c23cc-258">IBM SameTime Complete 9.0</span></span>
     
-- <span data-ttu-id="4618a-259">IBM SameTime Conference 9.0</span><span class="sxs-lookup"><span data-stu-id="4618a-259">IBM SameTime Conference 9.0</span></span>
+- <span data-ttu-id="c23cc-259">IBM SameTime Conference 9.0</span><span class="sxs-lookup"><span data-stu-id="c23cc-259">IBM SameTime Conference 9.0</span></span>
     
-- <span data-ttu-id="4618a-260">IBM SameTime Meeting 8.5.2 IFR1</span><span class="sxs-lookup"><span data-stu-id="4618a-260">IBM SameTime Meeting 8.5.2 IFR1</span></span>
+- <span data-ttu-id="c23cc-260">IBM SameTime Meeting 8.5.2 IFR1</span><span class="sxs-lookup"><span data-stu-id="c23cc-260">IBM SameTime Meeting 8.5.2 IFR1</span></span>
     
-- <span data-ttu-id="4618a-261">ICE/YellowJacket</span><span class="sxs-lookup"><span data-stu-id="4618a-261">ICE/YellowJacket</span></span>
+- <span data-ttu-id="c23cc-261">ICE/YellowJacket</span><span class="sxs-lookup"><span data-stu-id="c23cc-261">ICE/YellowJacket</span></span>
     
-- <span data-ttu-id="4618a-262">IM のインポート</span><span class="sxs-lookup"><span data-stu-id="4618a-262">IM Import</span></span>
+- <span data-ttu-id="c23cc-262">IM のインポート</span><span class="sxs-lookup"><span data-stu-id="c23cc-262">IM Import</span></span>
     
-- <span data-ttu-id="4618a-263">IM のリアルタイム ロギングとポリシー</span><span class="sxs-lookup"><span data-stu-id="4618a-263">IM Real Time Logging and Policy</span></span>
+- <span data-ttu-id="c23cc-263">IM のリアルタイム ロギングとポリシー</span><span class="sxs-lookup"><span data-stu-id="c23cc-263">IM Real Time Logging and Policy</span></span>
     
-- <span data-ttu-id="4618a-264">Indii Messenger</span><span class="sxs-lookup"><span data-stu-id="4618a-264">Indii Messenger</span></span>
+- <span data-ttu-id="c23cc-264">Indii Messenger</span><span class="sxs-lookup"><span data-stu-id="c23cc-264">Indii Messenger</span></span>
     
-- <span data-ttu-id="4618a-265">Instant Bloomberg</span><span class="sxs-lookup"><span data-stu-id="4618a-265">Instant Bloomberg</span></span>
+- <span data-ttu-id="c23cc-265">Instant Bloomberg</span><span class="sxs-lookup"><span data-stu-id="c23cc-265">Instant Bloomberg</span></span>
     
-- <span data-ttu-id="4618a-266">IRC</span><span class="sxs-lookup"><span data-stu-id="4618a-266">IRC</span></span>
+- <span data-ttu-id="c23cc-266">IRC</span><span class="sxs-lookup"><span data-stu-id="c23cc-266">IRC</span></span>
     
-- <span data-ttu-id="4618a-267">Jive</span><span class="sxs-lookup"><span data-stu-id="4618a-267">Jive</span></span>
+- <span data-ttu-id="c23cc-267">Jive</span><span class="sxs-lookup"><span data-stu-id="c23cc-267">Jive</span></span>
     
-- <span data-ttu-id="4618a-268">Jive 6 Real Time Logging (v6、v7)</span><span class="sxs-lookup"><span data-stu-id="4618a-268">Jive 6 Real Time Logging (v6, v7)</span></span>
+- <span data-ttu-id="c23cc-268">Jive 6 Real Time Logging (v6、v7)</span><span class="sxs-lookup"><span data-stu-id="c23cc-268">Jive 6 Real Time Logging (v6, v7)</span></span>
     
-- <span data-ttu-id="4618a-269">Jive のインポート</span><span class="sxs-lookup"><span data-stu-id="4618a-269">Jive Import</span></span>
+- <span data-ttu-id="c23cc-269">Jive のインポート</span><span class="sxs-lookup"><span data-stu-id="c23cc-269">Jive Import</span></span>
     
-- <span data-ttu-id="4618a-270">JXTA</span><span class="sxs-lookup"><span data-stu-id="4618a-270">JXTA</span></span>
+- <span data-ttu-id="c23cc-270">JXTA</span><span class="sxs-lookup"><span data-stu-id="c23cc-270">JXTA</span></span>
     
-- <span data-ttu-id="4618a-271">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="4618a-271">LinkedIn</span></span>
+- <span data-ttu-id="c23cc-271">LinkedIn</span><span class="sxs-lookup"><span data-stu-id="c23cc-271">LinkedIn</span></span>
     
-- <span data-ttu-id="4618a-272">Microsoft Lync (2010、2013)</span><span class="sxs-lookup"><span data-stu-id="4618a-272">Microsoft Lync (2010, 2013)</span></span>
+- <span data-ttu-id="c23cc-272">Microsoft Lync (2010、2013)</span><span class="sxs-lookup"><span data-stu-id="c23cc-272">Microsoft Lync (2010, 2013)</span></span>
     
-- <span data-ttu-id="4618a-273">MFTP</span><span class="sxs-lookup"><span data-stu-id="4618a-273">MFTP</span></span>
+- <span data-ttu-id="c23cc-273">MFTP</span><span class="sxs-lookup"><span data-stu-id="c23cc-273">MFTP</span></span>
     
-- <span data-ttu-id="4618a-274">Microsoft Lync 2013 Voice</span><span class="sxs-lookup"><span data-stu-id="4618a-274">Microsoft Lync 2013 Voice</span></span>
+- <span data-ttu-id="c23cc-274">Microsoft Lync 2013 Voice</span><span class="sxs-lookup"><span data-stu-id="c23cc-274">Microsoft Lync 2013 Voice</span></span>
     
-- <span data-ttu-id="4618a-275">Microsoft SharePoint (2010、2013)</span><span class="sxs-lookup"><span data-stu-id="4618a-275">Microsoft SharePoint (2010, 2013)</span></span>
+- <span data-ttu-id="c23cc-275">Microsoft SharePoint (2010、2013)</span><span class="sxs-lookup"><span data-stu-id="c23cc-275">Microsoft SharePoint (2010, 2013)</span></span>
     
-- <span data-ttu-id="4618a-276">Microsoft SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="4618a-276">Microsoft SharePoint Online</span></span>
+- <span data-ttu-id="c23cc-276">Microsoft SharePoint Online</span><span class="sxs-lookup"><span data-stu-id="c23cc-276">Microsoft SharePoint Online</span></span>
     
-- <span data-ttu-id="4618a-277">Microsoft UC (Unified Communications)</span><span class="sxs-lookup"><span data-stu-id="4618a-277">Microsoft UC (Unified Communications)</span></span>
+- <span data-ttu-id="c23cc-277">Microsoft UC (Unified Communications)</span><span class="sxs-lookup"><span data-stu-id="c23cc-277">Microsoft UC (Unified Communications)</span></span>
     
-- <span data-ttu-id="4618a-278">MindAlign</span><span class="sxs-lookup"><span data-stu-id="4618a-278">MindAlign</span></span>
+- <span data-ttu-id="c23cc-278">MindAlign</span><span class="sxs-lookup"><span data-stu-id="c23cc-278">MindAlign</span></span>
     
-- <span data-ttu-id="4618a-279">Mobile Guard</span><span class="sxs-lookup"><span data-stu-id="4618a-279">Mobile Guard</span></span>
+- <span data-ttu-id="c23cc-279">Mobile Guard</span><span class="sxs-lookup"><span data-stu-id="c23cc-279">Mobile Guard</span></span>
     
-- <span data-ttu-id="4618a-280">ウェブ</span><span class="sxs-lookup"><span data-stu-id="4618a-280">MSN</span></span>
+- <span data-ttu-id="c23cc-280">ウェブ</span><span class="sxs-lookup"><span data-stu-id="c23cc-280">MSN</span></span>
     
-- <span data-ttu-id="4618a-281">My Space</span><span class="sxs-lookup"><span data-stu-id="4618a-281">My Space</span></span>
+- <span data-ttu-id="c23cc-281">My Space</span><span class="sxs-lookup"><span data-stu-id="c23cc-281">My Space</span></span>
     
-- <span data-ttu-id="4618a-282">NEONetwork</span><span class="sxs-lookup"><span data-stu-id="4618a-282">NEONetwork</span></span>
+- <span data-ttu-id="c23cc-282">NEONetwork</span><span class="sxs-lookup"><span data-stu-id="c23cc-282">NEONetwork</span></span>
     
-- <span data-ttu-id="4618a-283">Office 365 Lync Dedicated</span><span class="sxs-lookup"><span data-stu-id="4618a-283">Office 365 Lync Dedicated</span></span>
+- <span data-ttu-id="c23cc-283">Office 365 Lync Dedicated</span><span class="sxs-lookup"><span data-stu-id="c23cc-283">Office 365 Lync Dedicated</span></span>
     
-- <span data-ttu-id="4618a-284">Office 365 Shared IM</span><span class="sxs-lookup"><span data-stu-id="4618a-284">Office 365 Shared IM</span></span>
+- <span data-ttu-id="c23cc-284">Office 365 Shared IM</span><span class="sxs-lookup"><span data-stu-id="c23cc-284">Office 365 Shared IM</span></span>
     
-- <span data-ttu-id="4618a-285">Pinterest</span><span class="sxs-lookup"><span data-stu-id="4618a-285">Pinterest</span></span>
+- <span data-ttu-id="c23cc-285">Pinterest</span><span class="sxs-lookup"><span data-stu-id="c23cc-285">Pinterest</span></span>
     
-- <span data-ttu-id="4618a-286">ピボット</span><span class="sxs-lookup"><span data-stu-id="4618a-286">Pivot</span></span>
+- <span data-ttu-id="c23cc-286">ピボット</span><span class="sxs-lookup"><span data-stu-id="c23cc-286">Pivot</span></span>
     
-- <span data-ttu-id="4618a-287">QQ</span><span class="sxs-lookup"><span data-stu-id="4618a-287">QQ</span></span>
+- <span data-ttu-id="c23cc-287">QQ</span><span class="sxs-lookup"><span data-stu-id="c23cc-287">QQ</span></span>
     
-- <span data-ttu-id="4618a-288">Skype for Business 2015</span><span class="sxs-lookup"><span data-stu-id="4618a-288">Skype for Business 2015</span></span>
+- <span data-ttu-id="c23cc-288">Skype for Business 2015</span><span class="sxs-lookup"><span data-stu-id="c23cc-288">Skype for Business 2015</span></span>
     
-- <span data-ttu-id="4618a-289">SoftEther</span><span class="sxs-lookup"><span data-stu-id="4618a-289">SoftEther</span></span>
+- <span data-ttu-id="c23cc-289">SoftEther</span><span class="sxs-lookup"><span data-stu-id="c23cc-289">SoftEther</span></span>
     
-- <span data-ttu-id="4618a-290">Symphony</span><span class="sxs-lookup"><span data-stu-id="4618a-290">Symphony</span></span>
+- <span data-ttu-id="c23cc-290">Symphony</span><span class="sxs-lookup"><span data-stu-id="c23cc-290">Symphony</span></span>
     
-- <span data-ttu-id="4618a-291">Thomson Reuters Eikon</span><span class="sxs-lookup"><span data-stu-id="4618a-291">Thomson Reuters Eikon</span></span>
+- <span data-ttu-id="c23cc-291">Thomson Reuters Eikon</span><span class="sxs-lookup"><span data-stu-id="c23cc-291">Thomson Reuters Eikon</span></span>
     
-- <span data-ttu-id="4618a-292">Thomson Reuters Messenger</span><span class="sxs-lookup"><span data-stu-id="4618a-292">Thomson Reuters Messenger</span></span>
+- <span data-ttu-id="c23cc-292">Thomson Reuters Messenger</span><span class="sxs-lookup"><span data-stu-id="c23cc-292">Thomson Reuters Messenger</span></span>
     
-- <span data-ttu-id="4618a-293">終わり</span><span class="sxs-lookup"><span data-stu-id="4618a-293">Tor</span></span>
+- <span data-ttu-id="c23cc-293">終わり</span><span class="sxs-lookup"><span data-stu-id="c23cc-293">Tor</span></span>
     
-- <span data-ttu-id="4618a-294">TTT</span><span class="sxs-lookup"><span data-stu-id="4618a-294">TTT</span></span>
+- <span data-ttu-id="c23cc-294">TTT</span><span class="sxs-lookup"><span data-stu-id="c23cc-294">TTT</span></span>
     
-- <span data-ttu-id="4618a-295">Twitter</span><span class="sxs-lookup"><span data-stu-id="4618a-295">Twitter</span></span>
+- <span data-ttu-id="c23cc-295">Twitter</span><span class="sxs-lookup"><span data-stu-id="c23cc-295">Twitter</span></span>
     
-- <span data-ttu-id="4618a-296">WinMX</span><span class="sxs-lookup"><span data-stu-id="4618a-296">WinMX</span></span>
+- <span data-ttu-id="c23cc-296">WinMX</span><span class="sxs-lookup"><span data-stu-id="c23cc-296">WinMX</span></span>
     
-- <span data-ttu-id="4618a-297">Winny</span><span class="sxs-lookup"><span data-stu-id="4618a-297">Winny</span></span>
+- <span data-ttu-id="c23cc-297">Winny</span><span class="sxs-lookup"><span data-stu-id="c23cc-297">Winny</span></span>
     
-- <span data-ttu-id="4618a-298">Yahoo</span><span class="sxs-lookup"><span data-stu-id="4618a-298">Yahoo</span></span>
+- <span data-ttu-id="c23cc-298">Yahoo</span><span class="sxs-lookup"><span data-stu-id="c23cc-298">Yahoo</span></span>
     
-- <span data-ttu-id="4618a-299">Yammer</span><span class="sxs-lookup"><span data-stu-id="4618a-299">Yammer</span></span>
+- <span data-ttu-id="c23cc-299">Yammer</span><span class="sxs-lookup"><span data-stu-id="c23cc-299">Yammer</span></span>
     
-- <span data-ttu-id="4618a-300">YouTube</span><span class="sxs-lookup"><span data-stu-id="4618a-300">YouTube</span></span>
+- <span data-ttu-id="c23cc-300">YouTube</span><span class="sxs-lookup"><span data-stu-id="c23cc-300">YouTube</span></span>
     
 
-### <a name="verba"></a><span data-ttu-id="4618a-301">Verba</span><span class="sxs-lookup"><span data-stu-id="4618a-301">Verba</span></span>
+### <a name="verba"></a><span data-ttu-id="c23cc-301">Verba</span><span class="sxs-lookup"><span data-stu-id="c23cc-301">Verba</span></span>
 
-<span data-ttu-id="4618a-302">[Verba](https://www.verba.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="4618a-302">[Verba](https://www.verba.com) supports the following third-party data sources:</span></span> 
+<span data-ttu-id="c23cc-302">[Verba](https://www.verba.com)は、次のサードパーティデータソースをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="c23cc-302">[Verba](https://www.verba.com) supports the following third-party data sources:</span></span> 
   
-- <span data-ttu-id="4618a-303">Avaya Aura ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-303">Avaya Aura Video</span></span>
+- <span data-ttu-id="c23cc-303">Avaya Aura ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-303">Avaya Aura Video</span></span>
     
-- <span data-ttu-id="4618a-304">Avaya Aura 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-304">Avaya Aura Voice</span></span>
+- <span data-ttu-id="c23cc-304">Avaya Aura 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-304">Avaya Aura Voice</span></span>
     
-- <span data-ttu-id="4618a-305">Avtec ラジオ</span><span class="sxs-lookup"><span data-stu-id="4618a-305">Avtec Radio</span></span>
+- <span data-ttu-id="c23cc-305">Avtec ラジオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-305">Avtec Radio</span></span>
     
-- <span data-ttu-id="4618a-306">Bosch/Telex ラジオ</span><span class="sxs-lookup"><span data-stu-id="4618a-306">Bosch/Telex Radio</span></span>
+- <span data-ttu-id="c23cc-306">Bosch/Telex ラジオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-306">Bosch/Telex Radio</span></span>
     
-- <span data-ttu-id="4618a-307">BroadSoft ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-307">BroadSoft Video</span></span>
+- <span data-ttu-id="c23cc-307">BroadSoft ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-307">BroadSoft Video</span></span>
     
-- <span data-ttu-id="4618a-308">BroadSoft 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-308">BroadSoft Voice</span></span>
+- <span data-ttu-id="c23cc-308">BroadSoft 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-308">BroadSoft Voice</span></span>
     
-- <span data-ttu-id="4618a-309">Centile 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-309">Centile Voice</span></span>
+- <span data-ttu-id="c23cc-309">Centile 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-309">Centile Voice</span></span>
     
-- <span data-ttu-id="4618a-310">Cisco Jabber IM</span><span class="sxs-lookup"><span data-stu-id="4618a-310">Cisco Jabber IM</span></span>
+- <span data-ttu-id="c23cc-310">Cisco Jabber IM</span><span class="sxs-lookup"><span data-stu-id="c23cc-310">Cisco Jabber IM</span></span>
     
-- <span data-ttu-id="4618a-311">Cisco UC ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-311">Cisco UC Video</span></span>
+- <span data-ttu-id="c23cc-311">Cisco UC ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-311">Cisco UC Video</span></span>
     
-- <span data-ttu-id="4618a-312">Cisco UC 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-312">Cisco UC Voice</span></span>
+- <span data-ttu-id="c23cc-312">Cisco UC 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-312">Cisco UC Voice</span></span>
     
-- <span data-ttu-id="4618a-313">Cisco UCCX/UCCX ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-313">Cisco UCCX/UCCE Video</span></span>
+- <span data-ttu-id="c23cc-313">Cisco UCCX/UCCX ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-313">Cisco UCCX/UCCE Video</span></span>
     
-- <span data-ttu-id="4618a-314">Cisco UCCX/UCCX 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-314">Cisco UCCX/UCCE Voice</span></span>
+- <span data-ttu-id="c23cc-314">Cisco UCCX/UCCX 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-314">Cisco UCCX/UCCE Voice</span></span>
     
-- <span data-ttu-id="4618a-315">ESChat ラジオ</span><span class="sxs-lookup"><span data-stu-id="4618a-315">ESChat Radio</span></span>
+- <span data-ttu-id="c23cc-315">ESChat ラジオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-315">ESChat Radio</span></span>
     
-- <span data-ttu-id="4618a-316">Geoman Contact Expert</span><span class="sxs-lookup"><span data-stu-id="4618a-316">Geoman Contact Expert</span></span>
+- <span data-ttu-id="c23cc-316">Geoman Contact Expert</span><span class="sxs-lookup"><span data-stu-id="c23cc-316">Geoman Contact Expert</span></span>
     
-- <span data-ttu-id="4618a-317">IP Trade 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-317">IP Trade Voice</span></span>
+- <span data-ttu-id="c23cc-317">IP Trade 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-317">IP Trade Voice</span></span>
     
-- <span data-ttu-id="4618a-318">Luware LUCS Contact Center</span><span class="sxs-lookup"><span data-stu-id="4618a-318">Luware LUCS Contact Center</span></span>
+- <span data-ttu-id="c23cc-318">Luware LUCS Contact Center</span><span class="sxs-lookup"><span data-stu-id="c23cc-318">Luware LUCS Contact Center</span></span>
     
-- <span data-ttu-id="4618a-319">Microsoft UC (Unified Communications)</span><span class="sxs-lookup"><span data-stu-id="4618a-319">Microsoft UC (Unified Communications)</span></span>
+- <span data-ttu-id="c23cc-319">Microsoft UC (Unified Communications)</span><span class="sxs-lookup"><span data-stu-id="c23cc-319">Microsoft UC (Unified Communications)</span></span>
     
-- <span data-ttu-id="4618a-320">Mitel MiContact Center for Lync (prairieFyre)</span><span class="sxs-lookup"><span data-stu-id="4618a-320">Mitel MiContact Center for Lync (prairieFyre)</span></span>
+- <span data-ttu-id="c23cc-320">Mitel MiContact Center for Lync (prairieFyre)</span><span class="sxs-lookup"><span data-stu-id="c23cc-320">Mitel MiContact Center for Lync (prairieFyre)</span></span>
     
-- <span data-ttu-id="4618a-321">Oracle / Acme Packet Session Border Controller ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-321">Oracle / Acme Packet Session Border Controller Video</span></span>
+- <span data-ttu-id="c23cc-321">Oracle / Acme Packet Session Border Controller ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-321">Oracle / Acme Packet Session Border Controller Video</span></span>
     
-- <span data-ttu-id="4618a-322">Oracle / Acme Packet Session Border Controller 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-322">Oracle / Acme Packet Session Border Controller Voice</span></span>
+- <span data-ttu-id="c23cc-322">Oracle / Acme Packet Session Border Controller 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-322">Oracle / Acme Packet Session Border Controller Voice</span></span>
     
-- <span data-ttu-id="4618a-323">Singtel モバイル ボイス</span><span class="sxs-lookup"><span data-stu-id="4618a-323">Singtel Mobile Voice</span></span>
+- <span data-ttu-id="c23cc-323">Singtel モバイル ボイス</span><span class="sxs-lookup"><span data-stu-id="c23cc-323">Singtel Mobile Voice</span></span>
     
-- <span data-ttu-id="4618a-324">SIPREC ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-324">SIPREC Video</span></span>
+- <span data-ttu-id="c23cc-324">SIPREC ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-324">SIPREC Video</span></span>
     
--  <span data-ttu-id="4618a-325">SIPREC 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-325">SIPREC Voice</span></span> 
+-  <span data-ttu-id="c23cc-325">SIPREC 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-325">SIPREC Voice</span></span> 
     
-- <span data-ttu-id="4618a-326">Skype for Business / Lync IM</span><span class="sxs-lookup"><span data-stu-id="4618a-326">Skype for Business / Lync IM</span></span>
+- <span data-ttu-id="c23cc-326">Skype for Business / Lync IM</span><span class="sxs-lookup"><span data-stu-id="c23cc-326">Skype for Business / Lync IM</span></span>
     
-- <span data-ttu-id="4618a-327">Skype for Business / Lync ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-327">Skype for Business / Lync Video</span></span>
+- <span data-ttu-id="c23cc-327">Skype for Business / Lync ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-327">Skype for Business / Lync Video</span></span>
     
-- <span data-ttu-id="4618a-328">Skype for Business / Lync 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-328">Skype for Business / Lync Voice</span></span>
+- <span data-ttu-id="c23cc-328">Skype for Business / Lync 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-328">Skype for Business / Lync Voice</span></span>
     
-- <span data-ttu-id="4618a-329">Speakerbus 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-329">Speakerbus Voice</span></span>
+- <span data-ttu-id="c23cc-329">Speakerbus 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-329">Speakerbus Voice</span></span>
     
-- <span data-ttu-id="4618a-330">標準的な SIP/H.323 ビデオ</span><span class="sxs-lookup"><span data-stu-id="4618a-330">Standard SIP/H.323 Video</span></span>
+- <span data-ttu-id="c23cc-330">標準的な SIP/H.323 ビデオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-330">Standard SIP/H.323 Video</span></span>
     
-- <span data-ttu-id="4618a-331">標準的な SIP/H.323 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-331">Standard SIP/H.323 Voice</span></span>
+- <span data-ttu-id="c23cc-331">標準的な SIP/H.323 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-331">Standard SIP/H.323 Voice</span></span>
     
-- <span data-ttu-id="4618a-332">Truphone 音声</span><span class="sxs-lookup"><span data-stu-id="4618a-332">Truphone Voice</span></span>
+- <span data-ttu-id="c23cc-332">Truphone 音声</span><span class="sxs-lookup"><span data-stu-id="c23cc-332">Truphone Voice</span></span>
     
-- <span data-ttu-id="4618a-333">TwistedPair ラジオ</span><span class="sxs-lookup"><span data-stu-id="4618a-333">TwistedPair Radio</span></span>
+- <span data-ttu-id="c23cc-333">TwistedPair ラジオ</span><span class="sxs-lookup"><span data-stu-id="c23cc-333">TwistedPair Radio</span></span>
     
-- <span data-ttu-id="4618a-334">Windows デスクトップ コンピューターの画面</span><span class="sxs-lookup"><span data-stu-id="4618a-334">Windows Desktop Computer Screen</span></span>
+- <span data-ttu-id="c23cc-334">Windows デスクトップ コンピューターの画面</span><span class="sxs-lookup"><span data-stu-id="c23cc-334">Windows Desktop Computer Screen</span></span>
   
-## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-office-365"></a><span data-ttu-id="4618a-335">手順 2: Office 365 でサード パーティ データのメールボックスを作成して構成する</span><span class="sxs-lookup"><span data-stu-id="4618a-335">Step 2: Create and configure a third-party data mailbox in Office 365</span></span>
+## <a name="step-2-create-and-configure-a-third-party-data-mailbox-in-office-365"></a><span data-ttu-id="c23cc-335">手順 2: Office 365 でサード パーティ データのメールボックスを作成して構成する</span><span class="sxs-lookup"><span data-stu-id="c23cc-335">Step 2: Create and configure a third-party data mailbox in Office 365</span></span>
 
-<span data-ttu-id="4618a-336">Office 365 にデータをインポートするためにサードパーティ製のデータメールボックスを作成して構成する手順を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4618a-336">Here are the steps for creating and configuring a third-party data mailbox for importing data to Office 365.</span></span> <span data-ttu-id="4618a-337">前に説明したように、パートナーコネクタがアイテムのユーザー ID をユーザーアカウントにマップできない場合、アイテムはこのメールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="4618a-337">As previous explained, items are imported to this mailbox if the partner connector can't map the user ID of the item to an user account.</span></span>
+<span data-ttu-id="c23cc-336">Office 365 にデータをインポートするためにサードパーティ製のデータメールボックスを作成して構成する手順を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-336">Here are the steps for creating and configuring a third-party data mailbox for importing data to Office 365.</span></span> <span data-ttu-id="c23cc-337">前に説明したように、パートナーコネクタがアイテムのユーザー ID をユーザーアカウントにマップできない場合、アイテムはこのメールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-337">As previous explained, items are imported to this mailbox if the partner connector can't map the user ID of the item to an user account.</span></span>
   
- <span data-ttu-id="4618a-338">**Microsoft 365 管理センターでこれらのタスクを完了する**</span><span class="sxs-lookup"><span data-stu-id="4618a-338">**Complete these tasks in the Microsoft 365 admin center**</span></span>
+ <span data-ttu-id="c23cc-338">**Microsoft 365 管理センターでこれらのタスクを完了する**</span><span class="sxs-lookup"><span data-stu-id="c23cc-338">**Complete these tasks in the Microsoft 365 admin center**</span></span>
   
-1. <span data-ttu-id="4618a-339">ユーザーアカウントを作成し、Exchange Online プラン2ライセンスを割り当てます。「 [Office 365 にユーザーを追加する」を](https://go.microsoft.com/fwlink/p/?LinkId=692098)参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-339">Create a user account and assign it an Exchange Online Plan 2 license; see [Add users to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=692098).</span></span> <span data-ttu-id="4618a-340">プラン2ライセンスは、メールボックスを訴訟ホールドの対象にするため、または記憶域クォータが無制限のアーカイブメールボックスを有効にするために必要です。</span><span class="sxs-lookup"><span data-stu-id="4618a-340">A Plan 2 license is required to place the mailbox on Litigation Hold or enable an archive mailbox that has an unlimited storage quota.</span></span>
+1. <span data-ttu-id="c23cc-339">ユーザーアカウントを作成し、Exchange Online プラン2ライセンスを割り当てます。「 [Office 365 にユーザーを追加する」を](https://go.microsoft.com/fwlink/p/?LinkId=692098)参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-339">Create a user account and assign it an Exchange Online Plan 2 license; see [Add users to Office 365](https://go.microsoft.com/fwlink/p/?LinkId=692098).</span></span> <span data-ttu-id="c23cc-340">プラン2ライセンスは、メールボックスを訴訟ホールドの対象にするため、または記憶域クォータが無制限のアーカイブメールボックスを有効にするために必要です。</span><span class="sxs-lookup"><span data-stu-id="c23cc-340">A Plan 2 license is required to place the mailbox on Litigation Hold or enable an archive mailbox that has an unlimited storage quota.</span></span>
     
-2. <span data-ttu-id="4618a-341">Office 365 で、サードパーティのデータメールボックスのユーザーアカウントを**Exchange 管理**者の役割に追加します。「 [Office 365 で管理者ロールを割り当てる」を](https://go.microsoft.com/fwlink/p/?LinkId=532393)参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-341">Add the user account for the third-party data mailbox to the **Exchange administrator** admin role in Office 365; see [Assign admin roles in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532393).</span></span>
+2. <span data-ttu-id="c23cc-341">Office 365 で、サードパーティのデータメールボックスのユーザーアカウントを**Exchange 管理**者の役割に追加します。「 [Office 365 で管理者ロールを割り当てる」を](https://go.microsoft.com/fwlink/p/?LinkId=532393)参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-341">Add the user account for the third-party data mailbox to the **Exchange administrator** admin role in Office 365; see [Assign admin roles in Office 365](https://go.microsoft.com/fwlink/p/?LinkId=532393).</span></span>
     
     > [!TIP]
-    > <span data-ttu-id="4618a-342">このユーザー アカウントの資格情報を控えておきます。</span><span class="sxs-lookup"><span data-stu-id="4618a-342">Write down the credentials for this user account.</span></span> <span data-ttu-id="4618a-343">手順 4 で説明するように、この情報をパートナーに提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4618a-343">You need to provide them to your partner, as described in Step 4.</span></span> 
+    > <span data-ttu-id="c23cc-342">このユーザー アカウントの資格情報を控えておきます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-342">Write down the credentials for this user account.</span></span> <span data-ttu-id="c23cc-343">手順 4 で説明するように、この情報をパートナーに提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-343">You need to provide them to your partner, as described in Step 4.</span></span> 
   
- <span data-ttu-id="4618a-344">**Exchange 管理センターでこれらのタスクを完了する**</span><span class="sxs-lookup"><span data-stu-id="4618a-344">**Complete these tasks in the Exchange admin center**</span></span>
+ <span data-ttu-id="c23cc-344">**Exchange 管理センターでこれらのタスクを完了する**</span><span class="sxs-lookup"><span data-stu-id="c23cc-344">**Complete these tasks in the Exchange admin center**</span></span>
   
-1. <span data-ttu-id="4618a-345">組織内のアドレス帳およびその他のアドレス一覧から、サードパーティのデータメールボックスを非表示にします。「[ユーザーメールボックスの管理](https://go.microsoft.com/fwlink/p/?LinkId=616058)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-345">Hide the third-party data mailbox from the address book and other address lists in your organization; see [Manage user mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=616058).</span></span> <span data-ttu-id="4618a-346">または、次の PowerShell コマンドを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="4618a-346">Alternatively, you can run the following PowerShell command:</span></span>
+1. <span data-ttu-id="c23cc-345">組織内のアドレス帳およびその他のアドレス一覧から、サードパーティのデータメールボックスを非表示にします。「[ユーザーメールボックスの管理](https://go.microsoft.com/fwlink/p/?LinkId=616058)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-345">Hide the third-party data mailbox from the address book and other address lists in your organization; see [Manage user mailboxes](https://go.microsoft.com/fwlink/p/?LinkId=616058).</span></span> <span data-ttu-id="c23cc-346">または、次の PowerShell コマンドを実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-346">Alternatively, you can run the following PowerShell command:</span></span>
     
     ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
     ```
 
-2. <span data-ttu-id="4618a-347">サードパーティのデータメールボックスに**Fullaccess**のアクセス許可を割り当てて、管理者またはコンプライアンス責任者が Outlook デスクトップクライアントでサードパーティのデータメールボックスを開くことができるようにします。「[管理者のアクセス許可を管理する」を](https://go.microsoft.com/fwlink/p/?LinkId=692104)参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-347">Assign the **FullAccess** permission to the third-party data mailbox so that administrators or compliance officers can open the third-party data mailbox in the Outlook desktop client; see [Manage permissions for recipients](https://go.microsoft.com/fwlink/p/?LinkId=692104).</span></span>
+2. <span data-ttu-id="c23cc-347">サードパーティのデータメールボックスに**Fullaccess**のアクセス許可を割り当てて、管理者またはコンプライアンス責任者が Outlook デスクトップクライアントでサードパーティのデータメールボックスを開くことができるようにします。「[管理者のアクセス許可を管理する」を](https://go.microsoft.com/fwlink/p/?LinkId=692104)参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-347">Assign the **FullAccess** permission to the third-party data mailbox so that administrators or compliance officers can open the third-party data mailbox in the Outlook desktop client; see [Manage permissions for recipients](https://go.microsoft.com/fwlink/p/?LinkId=692104).</span></span>
     
-3. <span data-ttu-id="4618a-348">サードパーティのデータメールボックスに対して、次のコンプライアンス関連の機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="4618a-348">Enable the following compliance-related features for the third-party data mailbox:</span></span>
+3. <span data-ttu-id="c23cc-348">サードパーティのデータメールボックスに対して、次のコンプライアンス関連の機能を有効にします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-348">Enable the following compliance-related features for the third-party data mailbox:</span></span>
     
-    - <span data-ttu-id="4618a-349">アーカイブメールボックスを有効にします。「[アーカイブメールボックスを有効に](enable-archive-mailboxes.md)する」および「[無制限アーカイブを有効にする](enable-unlimited-archiving.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4618a-349">Enable the archive mailbox; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md).</span></span> <span data-ttu-id="4618a-350">これにより、サードパーティのデータアイテムをアーカイブメールボックスに移動するアーカイブポリシーを設定することによって、プライマリメールボックスの記憶域スペースを解放できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-350">This lets you free-up storage space in the primary mailbox by setting up an archive policy that moves third-party data items to the archive mailbox.</span></span> <span data-ttu-id="4618a-351">これにより、サードパーティのデータに対して無制限のストレージが提供されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-351">This provides you with unlimited storage for third-party data.</span></span>
+    - <span data-ttu-id="c23cc-349">アーカイブメールボックスを有効にします。「[アーカイブメールボックスを有効に](enable-archive-mailboxes.md)する」および「[無制限アーカイブを有効にする](enable-unlimited-archiving.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-349">Enable the archive mailbox; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md).</span></span> <span data-ttu-id="c23cc-350">これにより、サードパーティのデータアイテムをアーカイブメールボックスに移動するアーカイブポリシーを設定することによって、プライマリメールボックスの記憶域スペースを解放できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-350">This lets you free-up storage space in the primary mailbox by setting up an archive policy that moves third-party data items to the archive mailbox.</span></span> <span data-ttu-id="c23cc-351">これにより、サードパーティのデータに対して無制限のストレージが提供されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-351">This provides you with unlimited storage for third-party data.</span></span>
     
-    - <span data-ttu-id="4618a-352">サードパーティ データのメールボックスを訴訟ホールドの対象にします。</span><span class="sxs-lookup"><span data-stu-id="4618a-352">Place the third-party data mailbox on Litigation Hold.</span></span> <span data-ttu-id="4618a-353">セキュリティ/コンプライアンスセンターでは、Microsoft 365 のアイテム保持ポリシーを適用することもできます。</span><span class="sxs-lookup"><span data-stu-id="4618a-353">You can also apply a Microsoft 365 retention policy in the security and compliance center.</span></span> <span data-ttu-id="4618a-354">このメールボックスを保留にすると、サードパーティのデータアイテム (無期限または指定した期間中) が保持され、それらがメールボックスから削除されるのを防ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="4618a-354">Placing this mailbox on hold retains third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox.</span></span> <span data-ttu-id="4618a-355">次のいずれかのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-355">See one of the following topics:</span></span>
+    - <span data-ttu-id="c23cc-352">サードパーティ データのメールボックスを訴訟ホールドの対象にします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-352">Place the third-party data mailbox on Litigation Hold.</span></span> <span data-ttu-id="c23cc-353">セキュリティ/コンプライアンスセンターでは、Microsoft 365 のアイテム保持ポリシーを適用することもできます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-353">You can also apply a Microsoft 365 retention policy in the security and compliance center.</span></span> <span data-ttu-id="c23cc-354">このメールボックスを保留にすると、サードパーティのデータアイテム (無期限または指定した期間中) が保持され、それらがメールボックスから削除されるのを防ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-354">Placing this mailbox on hold retains third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox.</span></span> <span data-ttu-id="c23cc-355">次のいずれかのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-355">See one of the following topics:</span></span>
     
-      - [<span data-ttu-id="4618a-356">メールボックスを訴訟ホールドの対象にする</span><span class="sxs-lookup"><span data-stu-id="4618a-356">Place a mailbox on Litigation Hold</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [<span data-ttu-id="c23cc-356">メールボックスを訴訟ホールドの対象にする</span><span class="sxs-lookup"><span data-stu-id="c23cc-356">Place a mailbox on Litigation Hold</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [<span data-ttu-id="4618a-357">アイテム保持ポリシーの概要</span><span class="sxs-lookup"><span data-stu-id="4618a-357">Overview of retention policies</span></span>](retention-policies.md)
+      - [<span data-ttu-id="c23cc-357">アイテム保持ポリシーと保持ラベルについて</span><span class="sxs-lookup"><span data-stu-id="c23cc-357">Learn about retention policies and retention labels</span></span>](retention.md)
     
-    - <span data-ttu-id="4618a-358">サードパーティデータメールボックスへの所有者、代理人、および管理者のアクセスに対してメールボックス監査ログを有効にします。「[メールボックス監査を有効にする」を](enable-mailbox-auditing.md)参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-358">Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](enable-mailbox-auditing.md).</span></span> <span data-ttu-id="4618a-359">これにより、サードパーティのデータメールボックスにアクセスできるすべてのユーザーによって実行されたすべてのアクティビティを監査できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-359">This allows you to audit all activity performed by any user who has access to the third-party data mailbox.</span></span>
+    - <span data-ttu-id="c23cc-358">サードパーティデータメールボックスへの所有者、代理人、および管理者のアクセスに対してメールボックス監査ログを有効にします。「[メールボックス監査を有効にする」を](enable-mailbox-auditing.md)参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-358">Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](enable-mailbox-auditing.md).</span></span> <span data-ttu-id="c23cc-359">これにより、サードパーティのデータメールボックスにアクセスできるすべてのユーザーによって実行されたすべてのアクティビティを監査できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-359">This allows you to audit all activity performed by any user who has access to the third-party data mailbox.</span></span>
 
-## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a><span data-ttu-id="4618a-360">手順 3: サード パーティのデータに対してユーザーのメールボックスを構成する</span><span class="sxs-lookup"><span data-stu-id="4618a-360">Step 3: Configure user mailboxes for third-party data</span></span>
+## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a><span data-ttu-id="c23cc-360">手順 3: サード パーティのデータに対してユーザーのメールボックスを構成する</span><span class="sxs-lookup"><span data-stu-id="c23cc-360">Step 3: Configure user mailboxes for third-party data</span></span>
 
-<span data-ttu-id="4618a-361">次の手順は、サード パーティのデータをサポートするためにユーザーのメールボックスを構成します。</span><span class="sxs-lookup"><span data-stu-id="4618a-361">The next step is to configure user mailboxes to support third-party data.</span></span> <span data-ttu-id="4618a-362">Exchange 管理センターまたは対応する Windows PowerShell コマンドレットを使用して、これらのタスクを完了します。</span><span class="sxs-lookup"><span data-stu-id="4618a-362">Complete these tasks by using the Exchange admin center or by using the corresponding Windows PowerShell cmdlets.</span></span>
+<span data-ttu-id="c23cc-361">次の手順は、サード パーティのデータをサポートするためにユーザーのメールボックスを構成します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-361">The next step is to configure user mailboxes to support third-party data.</span></span> <span data-ttu-id="c23cc-362">Exchange 管理センターまたは対応する Windows PowerShell コマンドレットを使用して、これらのタスクを完了します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-362">Complete these tasks by using the Exchange admin center or by using the corresponding Windows PowerShell cmdlets.</span></span>
   
-1. <span data-ttu-id="4618a-363">各ユーザーのアーカイブメールボックスを有効にします。「[アーカイブメールボックスを有効に](enable-archive-mailboxes.md)する」および「[無制限アーカイブを有効にする](enable-unlimited-archiving.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="4618a-363">Enable the archive mailbox for each user; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md).</span></span>
+1. <span data-ttu-id="c23cc-363">各ユーザーのアーカイブメールボックスを有効にします。「[アーカイブメールボックスを有効に](enable-archive-mailboxes.md)する」および「[無制限アーカイブを有効にする](enable-unlimited-archiving.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-363">Enable the archive mailbox for each user; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md).</span></span>
     
-2. <span data-ttu-id="4618a-364">ユーザーメールボックスを訴訟ホールドの対象にするか、Microsoft 365 アイテム保持ポリシーを適用します。次のいずれかのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-364">Place user mailboxes on Litigation Hold or apply a Microsoft 365 retention policy; see one of the following topics:</span></span> 
+2. <span data-ttu-id="c23cc-364">ユーザーメールボックスを訴訟ホールドの対象にするか、Microsoft 365 アイテム保持ポリシーを適用します。次のいずれかのトピックを参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-364">Place user mailboxes on Litigation Hold or apply a Microsoft 365 retention policy; see one of the following topics:</span></span> 
     
-    - [<span data-ttu-id="4618a-365">メールボックスを訴訟ホールドの対象にする</span><span class="sxs-lookup"><span data-stu-id="4618a-365">Place a mailbox on Litigation Hold</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [<span data-ttu-id="c23cc-365">メールボックスを訴訟ホールドの対象にする</span><span class="sxs-lookup"><span data-stu-id="c23cc-365">Place a mailbox on Litigation Hold</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [<span data-ttu-id="4618a-366">アイテム保持ポリシーの概要</span><span class="sxs-lookup"><span data-stu-id="4618a-366">Overview of retention policies</span></span>](retention-policies.md)
+    - [<span data-ttu-id="c23cc-366">アイテム保持ポリシーと保持ラベルについて</span><span class="sxs-lookup"><span data-stu-id="c23cc-366">Learn about retention policies and retention labels</span></span>](retention.md)
     
-    <span data-ttu-id="4618a-367">前述のように、メールボックスをホールドの対象にすると、サードパーティ データ ソースからのアイテムを保持する期間を設定したり、アイテムを無期限に保持したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="4618a-367">As previously stated, when you place mailboxes on hold, you can set a duration for how long to hold items from the third-party data source or you can choose to hold items indefinitely.</span></span>
+    <span data-ttu-id="c23cc-367">前述のように、メールボックスをホールドの対象にすると、サードパーティ データ ソースからのアイテムを保持する期間を設定したり、アイテムを無期限に保持したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-367">As previously stated, when you place mailboxes on hold, you can set a duration for how long to hold items from the third-party data source or you can choose to hold items indefinitely.</span></span>
 
-## <a name="step-4-provide-your-partner-with-information"></a><span data-ttu-id="4618a-368">手順 4: パートナーに情報を提供する</span><span class="sxs-lookup"><span data-stu-id="4618a-368">Step 4: Provide your partner with information</span></span>
+## <a name="step-4-provide-your-partner-with-information"></a><span data-ttu-id="c23cc-368">手順 4: パートナーに情報を提供する</span><span class="sxs-lookup"><span data-stu-id="c23cc-368">Step 4: Provide your partner with information</span></span>
 
-<span data-ttu-id="4618a-369">最後の手順として、パートナーに次の情報を提供し、ユーザーのメールボックスとサードパーティデータメールボックスにデータをインポートするために組織に接続するためのコネクタを構成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="4618a-369">The final step is to provide your partner with the following information so they can configure the connector to connect to your organization to import data to user mailboxes and to the third-party data mailbox.</span></span> 
+<span data-ttu-id="c23cc-369">最後の手順として、パートナーに次の情報を提供し、ユーザーのメールボックスとサードパーティデータメールボックスにデータをインポートするために組織に接続するためのコネクタを構成できるようにします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-369">The final step is to provide your partner with the following information so they can configure the connector to connect to your organization to import data to user mailboxes and to the third-party data mailbox.</span></span> 
   
-- <span data-ttu-id="4618a-370">Office 365 の Azure サービスに接続するために使用されるエンドポイント:</span><span class="sxs-lookup"><span data-stu-id="4618a-370">The endpoint used to connect to the Azure service in Office 365:</span></span>
+- <span data-ttu-id="c23cc-370">Office 365 の Azure サービスに接続するために使用されるエンドポイント:</span><span class="sxs-lookup"><span data-stu-id="c23cc-370">The endpoint used to connect to the Azure service in Office 365:</span></span>
 
     ```http
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
-- <span data-ttu-id="4618a-371">手順2で作成したサードパーティデータメールボックスのサインイン資格情報 (Microsoft 365 ユーザー ID とパスワード)。</span><span class="sxs-lookup"><span data-stu-id="4618a-371">The sign-in credentials (Microsoft 365 user ID and password) of the third-party data mailbox that you created in Step 2.</span></span> <span data-ttu-id="4618a-372">パートナーのコネクタがアイテムにアクセスして、アイテムをユーザーのメールボックスとサード パーティ データのメールボックスにインポートするには、これらの資格情報が必要です。</span><span class="sxs-lookup"><span data-stu-id="4618a-372">These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.</span></span>
+- <span data-ttu-id="c23cc-371">手順2で作成したサードパーティデータメールボックスのサインイン資格情報 (Microsoft 365 ユーザー ID とパスワード)。</span><span class="sxs-lookup"><span data-stu-id="c23cc-371">The sign-in credentials (Microsoft 365 user ID and password) of the third-party data mailbox that you created in Step 2.</span></span> <span data-ttu-id="c23cc-372">パートナーのコネクタがアイテムにアクセスして、アイテムをユーザーのメールボックスとサード パーティ データのメールボックスにインポートするには、これらの資格情報が必要です。</span><span class="sxs-lookup"><span data-stu-id="c23cc-372">These credentials are required so that the partner connector can access and import items to user mailboxes and to the third-party data mailbox.</span></span>
  
-## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a><span data-ttu-id="4618a-373">手順 5: Azure Active Directory にサードパーティのデータコネクタを登録する</span><span class="sxs-lookup"><span data-stu-id="4618a-373">Step 5: Register the third-party data connector in Azure Active Directory</span></span>
+## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a><span data-ttu-id="c23cc-373">手順 5: Azure Active Directory にサードパーティのデータコネクタを登録する</span><span class="sxs-lookup"><span data-stu-id="c23cc-373">Step 5: Register the third-party data connector in Azure Active Directory</span></span>
 
-<span data-ttu-id="4618a-374">2018年9月30日から、Office 365 の Azure サービスは、Exchange Online での先進認証の使用を開始して、組織に接続してデータをインポートするサードパーティデータコネクタを認証します。</span><span class="sxs-lookup"><span data-stu-id="4618a-374">Starting September 30, 2018, the Azure service in Office 365 will begin using modern authentication in Exchange Online to authenticate third-party data connectors that attempt to connect to your organization to import data.</span></span> <span data-ttu-id="4618a-375">この変更の理由は、モダン認証によって、現在のメソッドよりも高いセキュリティが提供されるためです。これは、以前に説明したエンドポイントを使用して Azure サービスに接続するサードパーティ製コネクタの許可リストに基づいていました。</span><span class="sxs-lookup"><span data-stu-id="4618a-375">The reason for this change is that modern authentication provides more security than the current method, which was based on an allow list for third-party connectors that use the previously described endpoint to connect to the Azure service.</span></span>
+<span data-ttu-id="c23cc-374">2018年9月30日から、Office 365 の Azure サービスは、Exchange Online での先進認証の使用を開始して、組織に接続してデータをインポートするサードパーティデータコネクタを認証します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-374">Starting September 30, 2018, the Azure service in Office 365 will begin using modern authentication in Exchange Online to authenticate third-party data connectors that attempt to connect to your organization to import data.</span></span> <span data-ttu-id="c23cc-375">この変更の理由は、モダン認証によって、現在のメソッドよりも高いセキュリティが提供されるためです。これは、以前に説明したエンドポイントを使用して Azure サービスに接続するサードパーティ製コネクタの許可リストに基づいていました。</span><span class="sxs-lookup"><span data-stu-id="c23cc-375">The reason for this change is that modern authentication provides more security than the current method, which was based on an allow list for third-party connectors that use the previously described endpoint to connect to the Azure service.</span></span>
 
-<span data-ttu-id="4618a-376">新しいモダン認証方法を使用してサードパーティ製データコネクタを Office 365 に接続できるようにするには、組織の管理者が、Azure Active Directory の信頼できるサービスアプリケーションとしてそのコネクタを登録するために同意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="4618a-376">To enable a third-party data connector to connect to Office 365 using the new modern authentication method, an administrator in your organization must consent to register the connector as a trusted service application in Azure Active Directory.</span></span> <span data-ttu-id="4618a-377">これを行うには、アクセス許可要求を受け入れ、コネクタが Azure Active Directory 内の組織のデータにアクセスできるようにします。</span><span class="sxs-lookup"><span data-stu-id="4618a-377">This is done by accepting a permission request to allow the connector to access your organization's data in Azure Active Directory.</span></span> <span data-ttu-id="4618a-378">この要求を承諾すると、サードパーティのデータコネクタがエンタープライズアプリケーションとして Azure Active Directory に追加され、サービスプリンシパルとして表されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-378">After you accept this request, the third-party data connector is added as an enterprise application to Azure Active Directory and represented as a service principal.</span></span> <span data-ttu-id="4618a-379">同意プロセスの詳細については、「[テナント管理者の同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-379">For more information the consent process, see  [Tenant Admin Consent](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent).</span></span>
+<span data-ttu-id="c23cc-376">新しいモダン認証方法を使用してサードパーティ製データコネクタを Office 365 に接続できるようにするには、組織の管理者が、Azure Active Directory の信頼できるサービスアプリケーションとしてそのコネクタを登録するために同意する必要があります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-376">To enable a third-party data connector to connect to Office 365 using the new modern authentication method, an administrator in your organization must consent to register the connector as a trusted service application in Azure Active Directory.</span></span> <span data-ttu-id="c23cc-377">これを行うには、アクセス許可要求を受け入れ、コネクタが Azure Active Directory 内の組織のデータにアクセスできるようにします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-377">This is done by accepting a permission request to allow the connector to access your organization's data in Azure Active Directory.</span></span> <span data-ttu-id="c23cc-378">この要求を承諾すると、サードパーティのデータコネクタがエンタープライズアプリケーションとして Azure Active Directory に追加され、サービスプリンシパルとして表されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-378">After you accept this request, the third-party data connector is added as an enterprise application to Azure Active Directory and represented as a service principal.</span></span> <span data-ttu-id="c23cc-379">同意プロセスの詳細については、「[テナント管理者の同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-379">For more information the consent process, see  [Tenant Admin Consent](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent).</span></span>
 
-<span data-ttu-id="4618a-380">コネクタを登録するための要求をアクセスして受け入れる手順を次に示します。</span><span class="sxs-lookup"><span data-stu-id="4618a-380">Here are the steps to access and accept the request to register the connector:</span></span>
+<span data-ttu-id="c23cc-380">コネクタを登録するための要求をアクセスして受け入れる手順を次に示します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-380">Here are the steps to access and accept the request to register the connector:</span></span>
 
-1. <span data-ttu-id="4618a-381">[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動し、全体管理者の資格情報を使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="4618a-381">Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using the credentials of a global administrator.</span></span>
+1. <span data-ttu-id="c23cc-381">[このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動し、全体管理者の資格情報を使用してサインインします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-381">Go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=8dfbc50b-2111-4d03-9b4d-dd0d00aae7a2&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign in using the credentials of a global administrator.</span></span>
 
-   <span data-ttu-id="4618a-382">次のダイアログボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-382">The following dialog box is displayed.</span></span> <span data-ttu-id="4618a-383">Carets を展開して、コネクタに割り当てられているアクセス許可を確認できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-383">You can expand the carets to review the permissions that will be assigned to the connector.</span></span>
+   <span data-ttu-id="c23cc-382">次のダイアログボックスが表示されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-382">The following dialog box is displayed.</span></span> <span data-ttu-id="c23cc-383">Carets を展開して、コネクタに割り当てられているアクセス許可を確認できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-383">You can expand the carets to review the permissions that will be assigned to the connector.</span></span>
 
    ![[アクセス許可の要求] ダイアログが表示されます。](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
-2. <span data-ttu-id="4618a-385">[**Accept**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4618a-385">Click **Accept**.</span></span>
+2. <span data-ttu-id="c23cc-385">[**Accept**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-385">Click **Accept**.</span></span>
 
-<span data-ttu-id="4618a-386">要求を受け入れると、 [Azure portal](https://portal.azure.com)が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-386">After you accept the request, the [Azure portal](https://portal.azure.com) is displayed.</span></span> <span data-ttu-id="4618a-387">組織のアプリケーションの一覧を表示するには、[ **Azure Active Directory**  >  **エンタープライズアプリケーション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="4618a-387">To view the list of applications for your organization, click **Azure Active Directory** > **Enterprise applications**.</span></span> <span data-ttu-id="4618a-388">Office 365 サードパーティデータコネクタは、**エンタープライズアプリケーション**ブレードに一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="4618a-388">The Office 365 third-party data connector is listed on the **Enterprise applications** blade.</span></span>
+<span data-ttu-id="c23cc-386">要求を受け入れると、 [Azure portal](https://portal.azure.com)が表示されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-386">After you accept the request, the [Azure portal](https://portal.azure.com) is displayed.</span></span> <span data-ttu-id="c23cc-387">組織のアプリケーションの一覧を表示するには、[ **Azure Active Directory**  >  **エンタープライズアプリケーション**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-387">To view the list of applications for your organization, click **Azure Active Directory** > **Enterprise applications**.</span></span> <span data-ttu-id="c23cc-388">Office 365 サードパーティデータコネクタは、**エンタープライズアプリケーション**ブレードに一覧表示されています。</span><span class="sxs-lookup"><span data-stu-id="c23cc-388">The Office 365 third-party data connector is listed on the **Enterprise applications** blade.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="4618a-389">2018年9月30日以降、サードパーティのデータコネクタを Azure Active Directory に登録しない場合、組織内のメールボックスにサードパーティのデータがインポートされなくなります。</span><span class="sxs-lookup"><span data-stu-id="4618a-389">After September 30, 2018, third-party data will no longer be imported into mailboxes in your organization if you don't register a third-party data connector in Azure Active Directory.</span></span> <span data-ttu-id="4618a-390">注: 既存のサードパーティのデータコネクタ (2018 年9月30日より前に作成されたもの) は、手順5の手順に従って Azure Active Directory に登録する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="4618a-390">Note existing third-party data connectors (those created before September 30, 2018) must also be registered in Azure Active Directory by following the procedure in Step 5.</span></span>
+> <span data-ttu-id="c23cc-389">2018年9月30日以降、サードパーティのデータコネクタを Azure Active Directory に登録しない場合、組織内のメールボックスにサードパーティのデータがインポートされなくなります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-389">After September 30, 2018, third-party data will no longer be imported into mailboxes in your organization if you don't register a third-party data connector in Azure Active Directory.</span></span> <span data-ttu-id="c23cc-390">注: 既存のサードパーティのデータコネクタ (2018 年9月30日より前に作成されたもの) は、手順5の手順に従って Azure Active Directory に登録する必要もあります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-390">Note existing third-party data connectors (those created before September 30, 2018) must also be registered in Azure Active Directory by following the procedure in Step 5.</span></span>
 
-### <a name="revoking-consent-for-a-third-party-data-connector"></a><span data-ttu-id="4618a-391">サードパーティのデータコネクタの同意を取り消す</span><span class="sxs-lookup"><span data-stu-id="4618a-391">Revoking consent for a third-party data connector</span></span>
+### <a name="revoking-consent-for-a-third-party-data-connector"></a><span data-ttu-id="c23cc-391">サードパーティのデータコネクタの同意を取り消す</span><span class="sxs-lookup"><span data-stu-id="c23cc-391">Revoking consent for a third-party data connector</span></span>
 
-<span data-ttu-id="4618a-392">組織がアクセス許可要求に同意して、Azure Active Directory にサードパーティデータコネクタを登録すると、組織はいつでもその同意を取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="4618a-392">After your organization consents to the permissions request to register a third-party data connector in Azure Active Directory, your organization can revoke that consent at any time.</span></span> <span data-ttu-id="4618a-393">ただし、コネクタの同意を取り消すということは、サードパーティのデータソースからのデータが Office 365 にインポートされなくなることを意味します。</span><span class="sxs-lookup"><span data-stu-id="4618a-393">However, revoking the consent for a connector means that data from the third-party data source will no longer be imported into Office 365.</span></span>
+<span data-ttu-id="c23cc-392">組織がアクセス許可要求に同意して、Azure Active Directory にサードパーティデータコネクタを登録すると、組織はいつでもその同意を取り消すことができます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-392">After your organization consents to the permissions request to register a third-party data connector in Azure Active Directory, your organization can revoke that consent at any time.</span></span> <span data-ttu-id="c23cc-393">ただし、コネクタの同意を取り消すということは、サードパーティのデータソースからのデータが Office 365 にインポートされなくなることを意味します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-393">However, revoking the consent for a connector means that data from the third-party data source will no longer be imported into Office 365.</span></span>
 
-<span data-ttu-id="4618a-394">サードパーティのデータコネクタの同意を取り消すには、Azure ポータルの [**エンタープライズアプリケーション**] ブレードまたは Office 365 PowerShell で[new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal)を使用して、azure Active Directory からアプリケーションを削除します (対応するサービスプリンシパルを削除する)。</span><span class="sxs-lookup"><span data-stu-id="4618a-394">To revoke consent for a third-party data connector, you can delete the application (by deleting the corresponding service principal) from Azure Active Directory using the **Enterprise applications** blade in the Azure portal, or by using the [Remove-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal) in Office 365 PowerShell.</span></span> <span data-ttu-id="4618a-395">Azure Active Directory PowerShell で[AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal)コマンドレットを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="4618a-395">You can also use the [Remove-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet in Azure Active Directory PowerShell.</span></span>
+<span data-ttu-id="c23cc-394">サードパーティのデータコネクタの同意を取り消すには、Azure ポータルの [**エンタープライズアプリケーション**] ブレードまたは Office 365 PowerShell で[new-msolserviceprincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal)を使用して、azure Active Directory からアプリケーションを削除します (対応するサービスプリンシパルを削除する)。</span><span class="sxs-lookup"><span data-stu-id="c23cc-394">To revoke consent for a third-party data connector, you can delete the application (by deleting the corresponding service principal) from Azure Active Directory using the **Enterprise applications** blade in the Azure portal, or by using the [Remove-MsolServicePrincipal](https://docs.microsoft.com/powershell/module/msonline/remove-msolserviceprincipal) in Office 365 PowerShell.</span></span> <span data-ttu-id="c23cc-395">Azure Active Directory PowerShell で[AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal)コマンドレットを使用することもできます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-395">You can also use the [Remove-AzureADServicePrincipal](https://docs.microsoft.com/powershell/module/azuread/remove-azureadserviceprincipal) cmdlet in Azure Active Directory PowerShell.</span></span>
   
-## <a name="more-information"></a><span data-ttu-id="4618a-396">詳細情報</span><span class="sxs-lookup"><span data-stu-id="4618a-396">More information</span></span>
+## <a name="more-information"></a><span data-ttu-id="c23cc-396">詳細情報</span><span class="sxs-lookup"><span data-stu-id="c23cc-396">More information</span></span>
 
-- <span data-ttu-id="4618a-397">前述のように、サード パーティのデータ ソースのアイテムは、メール メッセージとして Exchange メールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="4618a-397">As previous explained, items from third-party data sources are imported to Exchange mailboxes as email messages.</span></span> <span data-ttu-id="4618a-398">パートナーコネクタは、Office 365 API によって必要とされるスキーマを使用してアイテムをインポートします。</span><span class="sxs-lookup"><span data-stu-id="4618a-398">The partner connector imports the item using a schema required by the Office 365 API.</span></span> <span data-ttu-id="4618a-399">次の表では、メール メッセージとして Exchange メールボックスにインポートされた後の、サード パーティのデータ ソースのアイテムのメッセージのプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="4618a-399">The following table describes the message properties of an item from a third-party data source after it's imported to an Exchange mailbox as an email message.</span></span> <span data-ttu-id="4618a-400">この表では、メッセージのプロパティが必須かどうかも示します。</span><span class="sxs-lookup"><span data-stu-id="4618a-400">The table also indicates if the message property is mandatory.</span></span> <span data-ttu-id="4618a-401">必須プロパティは設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4618a-401">Mandatory properties must be populated.</span></span> <span data-ttu-id="4618a-402">必須のプロパティが設定されていないアイテムは、Office 365 にインポートされません。</span><span class="sxs-lookup"><span data-stu-id="4618a-402">If an item is missing a mandatory property, it won't be imported to Office 365.</span></span> <span data-ttu-id="4618a-403">インポートプロセスでは、アイテムがインポートされなかった理由と、不足しているプロパティがあることを示すエラーメッセージが返されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-403">The import process returns an error message explaining why an item wasn't imported and which property is missing.</span></span><br/><br/>
+- <span data-ttu-id="c23cc-397">前述のように、サード パーティのデータ ソースのアイテムは、メール メッセージとして Exchange メールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-397">As previous explained, items from third-party data sources are imported to Exchange mailboxes as email messages.</span></span> <span data-ttu-id="c23cc-398">パートナーコネクタは、Office 365 API によって必要とされるスキーマを使用してアイテムをインポートします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-398">The partner connector imports the item using a schema required by the Office 365 API.</span></span> <span data-ttu-id="c23cc-399">次の表では、メール メッセージとして Exchange メールボックスにインポートされた後の、サード パーティのデータ ソースのアイテムのメッセージのプロパティについて説明します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-399">The following table describes the message properties of an item from a third-party data source after it's imported to an Exchange mailbox as an email message.</span></span> <span data-ttu-id="c23cc-400">この表では、メッセージのプロパティが必須かどうかも示します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-400">The table also indicates if the message property is mandatory.</span></span> <span data-ttu-id="c23cc-401">必須プロパティは設定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-401">Mandatory properties must be populated.</span></span> <span data-ttu-id="c23cc-402">必須のプロパティが設定されていないアイテムは、Office 365 にインポートされません。</span><span class="sxs-lookup"><span data-stu-id="c23cc-402">If an item is missing a mandatory property, it won't be imported to Office 365.</span></span> <span data-ttu-id="c23cc-403">インポートプロセスでは、アイテムがインポートされなかった理由と、不足しているプロパティがあることを示すエラーメッセージが返されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-403">The import process returns an error message explaining why an item wasn't imported and which property is missing.</span></span><br/><br/>
     
-    |<span data-ttu-id="4618a-404">**メッセージのプロパティ**</span><span class="sxs-lookup"><span data-stu-id="4618a-404">**Message property**</span></span>|<span data-ttu-id="4618a-405">**必須かどうか?**</span><span class="sxs-lookup"><span data-stu-id="4618a-405">**Mandatory?**</span></span>|<span data-ttu-id="4618a-406">**説明**</span><span class="sxs-lookup"><span data-stu-id="4618a-406">**Description**</span></span>|<span data-ttu-id="4618a-407">**値の例**</span><span class="sxs-lookup"><span data-stu-id="4618a-407">**Example value**</span></span>|
+    |<span data-ttu-id="c23cc-404">**メッセージのプロパティ**</span><span class="sxs-lookup"><span data-stu-id="c23cc-404">**Message property**</span></span>|<span data-ttu-id="c23cc-405">**必須かどうか?**</span><span class="sxs-lookup"><span data-stu-id="c23cc-405">**Mandatory?**</span></span>|<span data-ttu-id="c23cc-406">**説明**</span><span class="sxs-lookup"><span data-stu-id="c23cc-406">**Description**</span></span>|<span data-ttu-id="c23cc-407">**値の例**</span><span class="sxs-lookup"><span data-stu-id="c23cc-407">**Example value**</span></span>|
     |:-----|:-----|:-----|:-----|
-    |<span data-ttu-id="4618a-408">**FROM**</span><span class="sxs-lookup"><span data-stu-id="4618a-408">**FROM**</span></span> <br/> |<span data-ttu-id="4618a-409">はい</span><span class="sxs-lookup"><span data-stu-id="4618a-409">Yes</span></span>  <br/> |<span data-ttu-id="4618a-410">最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。</span><span class="sxs-lookup"><span data-stu-id="4618a-410">The user who originally created or sent the item in the third-party data source.</span></span> <span data-ttu-id="4618a-411">パートナーコネクタは、ユーザー ID をソースアイテム (Twitter ハンドルなど) から、すべての参加者 ([差出人] および [宛先] フィールド内のユーザー) のユーザーアカウントにマップしようとします。</span><span class="sxs-lookup"><span data-stu-id="4618a-411">The partner connector attempts to map the user ID from the source item (for example a Twitter handle) to an user account for all participants (users in the FROM and TO fields).</span></span> <span data-ttu-id="4618a-412">メッセージのコピーが、すべての参加者のメールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="4618a-412">A copy of the message will be imported to the mailbox of every participant.</span></span> <span data-ttu-id="4618a-413">アイテムの参加者が1人のユーザーアカウントにマップできない場合、そのアイテムは Office 365 のサードパーティ製のアーカイブメールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="4618a-413">If none of the participants from the item can be mapped to an user account, the item will be imported to the third-party archiving mailbox in Office 365.</span></span>  <br/> <br/> <span data-ttu-id="4618a-414">アイテムの送信者として識別される参加者は、アイテムのインポート先の組織内にアクティブなメールボックスを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="4618a-414">The participant who's identified as the sender of the item must have an active mailbox in the organization that the item is being imported to.</span></span> <span data-ttu-id="4618a-415">送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-415">If the sender doesn't have an active mailbox, the following error is returned:</span></span><br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |<span data-ttu-id="4618a-416">**TO**</span><span class="sxs-lookup"><span data-stu-id="4618a-416">**TO**</span></span> <br/> |<span data-ttu-id="4618a-417">はい</span><span class="sxs-lookup"><span data-stu-id="4618a-417">Yes</span></span>  <br/> |<span data-ttu-id="4618a-418">アイテムを受信したユーザー (データ ソース内のアイテムに該当する場合)。</span><span class="sxs-lookup"><span data-stu-id="4618a-418">The user who received an item, if applicable for an item in the data source.</span></span>  <br/> | `bob@contoso.com` <br/> |
-    |<span data-ttu-id="4618a-419">**件名**</span><span class="sxs-lookup"><span data-stu-id="4618a-419">**SUBJECT**</span></span> <br/> |<span data-ttu-id="4618a-420">いいえ</span><span class="sxs-lookup"><span data-stu-id="4618a-420">No</span></span>  <br/> |<span data-ttu-id="4618a-421">ソース アイテムの件名。</span><span class="sxs-lookup"><span data-stu-id="4618a-421">The subject from the source item.</span></span>  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |<span data-ttu-id="4618a-422">**DATE**</span><span class="sxs-lookup"><span data-stu-id="4618a-422">**DATE**</span></span> <br/> |<span data-ttu-id="4618a-423">はい</span><span class="sxs-lookup"><span data-stu-id="4618a-423">Yes</span></span>  <br/> |<span data-ttu-id="4618a-424">アイテムが最初に作成または顧客データソースに投稿された日付。</span><span class="sxs-lookup"><span data-stu-id="4618a-424">The date the item was originally created or posted in the customer data source.</span></span> <span data-ttu-id="4618a-425">たとえば、Twitter メッセージがツイートされた日時です。</span><span class="sxs-lookup"><span data-stu-id="4618a-425">For example, that date when a Twitter message was tweeted.</span></span>  <br/> | `01 NOV 2015` <br/> |
-    |<span data-ttu-id="4618a-426">**物体**</span><span class="sxs-lookup"><span data-stu-id="4618a-426">**BODY**</span></span> <br/> |<span data-ttu-id="4618a-427">いいえ</span><span class="sxs-lookup"><span data-stu-id="4618a-427">No</span></span>  <br/> |<span data-ttu-id="4618a-428">メッセージまたは投稿のコンテンツ。</span><span class="sxs-lookup"><span data-stu-id="4618a-428">The contents of the message or post.</span></span> <span data-ttu-id="4618a-429">一部のデータ ソースでは、このプロパティのコンテンツは **SUBJECT** プロパティのコンテンツと同じになります。</span><span class="sxs-lookup"><span data-stu-id="4618a-429">For some data sources, the contents of this property could be the same as the content for the **SUBJECT** property.</span></span> <span data-ttu-id="4618a-430">インポート処理中に、パートナーコネクタは、可能な限りコンテンツソースの完全な忠実性を維持しようとします。</span><span class="sxs-lookup"><span data-stu-id="4618a-430">During the import process, the partner connector attempts to maintain full fidelity from the content source as possible.</span></span> <span data-ttu-id="4618a-431">可能な場合には、ソース アイテムの本文からのファイル、グラフィック、またはその他のコンテンツが、このプロパティに含まれます。</span><span class="sxs-lookup"><span data-stu-id="4618a-431">If possible files, graphics, or other content from the body of the source item is included in this property.</span></span> <span data-ttu-id="4618a-432">それ以外の場合、ソース アイテムからのコンテンツは **ATTACHMENT** プロパティに含まれます。</span><span class="sxs-lookup"><span data-stu-id="4618a-432">Otherwise, content from the source item is included in the **ATTACHMENT** property.</span></span> <span data-ttu-id="4618a-433">このプロパティの内容は、パートナーコネクタとソースプラットフォームの機能によって異なります。</span><span class="sxs-lookup"><span data-stu-id="4618a-433">The contents of this property depends on the partner connector and on the capability of the source platform.</span></span>  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |<span data-ttu-id="4618a-434">**資料**</span><span class="sxs-lookup"><span data-stu-id="4618a-434">**ATTACHMENT**</span></span> <br/> |<span data-ttu-id="4618a-435">いいえ</span><span class="sxs-lookup"><span data-stu-id="4618a-435">No</span></span>  <br/> |<span data-ttu-id="4618a-436">データソース内のアイテム (Twitter のツイート、インスタントメッセージングの会話など) に添付ファイルがあり、画像が含まれている場合、パートナー接続は最初に**BODY**プロパティに添付ファイルを含めようとします。</span><span class="sxs-lookup"><span data-stu-id="4618a-436">If an item in the data source (such as a tweet in Twitter or an instant messaging conversation) has an attached file or include images, the partner connect will first attempt to include attachments in the **BODY** property.</span></span> <span data-ttu-id="4618a-437">これができない場合は、\* \* ATTACHMENT \* \* プロパティに追加されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-437">If that isn't possible, then it's added to the \*\* ATTACHMENT \*\* property.</span></span> <span data-ttu-id="4618a-438">添付ファイルの例として、他にも Facebook の「いいね」、コンテンツ ソースからのメタデータ、およびメッセージまたは投稿への返信などがあります。</span><span class="sxs-lookup"><span data-stu-id="4618a-438">Other examples of attachments include Likes in Facebook, metadata from the content source, and responses to a message or post.</span></span>  <br/> | `image.gif` <br/> |
-    |<span data-ttu-id="4618a-439">**MESSAGECLASS**</span><span class="sxs-lookup"><span data-stu-id="4618a-439">**MESSAGECLASS**</span></span> <br/> |<span data-ttu-id="4618a-440">はい</span><span class="sxs-lookup"><span data-stu-id="4618a-440">Yes</span></span>  <br/> | <span data-ttu-id="4618a-441">これは、パートナーコネクタによって作成および設定される複数値プロパティです。</span><span class="sxs-lookup"><span data-stu-id="4618a-441">This is a multi-value property, which is created and populated by partner connector.</span></span> <span data-ttu-id="4618a-442">このプロパティの形式は `IPM.NOTE.Source.Event` です。</span><span class="sxs-lookup"><span data-stu-id="4618a-442">The format of this property is  `IPM.NOTE.Source.Event`.</span></span> <span data-ttu-id="4618a-443">(このプロパティはで始まる必要があり `IPM.NOTE` ます。</span><span class="sxs-lookup"><span data-stu-id="4618a-443">(This property must begin with  `IPM.NOTE`.</span></span> <span data-ttu-id="4618a-444">この形式は、メッセージクラスの形式と似て `IPM.NOTE.X` います)。このプロパティには、次の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="4618a-444">This format is similar to the one for the  `IPM.NOTE.X` message class.) This property includes the following information:</span></span>  <br/><br/><span data-ttu-id="4618a-445">`Source`: サードパーティのデータソースを示します。たとえば、Twitter、Facebook、BlackBerry などです。</span><span class="sxs-lookup"><span data-stu-id="4618a-445">`Source`: Indicates the third-party data source; for example, Twitter, Facebook, or BlackBerry.</span></span>  <br/> <br/>  <span data-ttu-id="4618a-446">`Event`: アイテムを生成したサードパーティのデータソースで実行されたアクティビティの種類を示します。たとえば、Twitter のツイート、または Facebook の投稿。</span><span class="sxs-lookup"><span data-stu-id="4618a-446">`Event`: Indicates the type of activity that was performed in the third-party data source that produced the items; for example, a tweet in Twitter or a post in Facebook.</span></span> <span data-ttu-id="4618a-447">イベントは、データソースに固有のものです。</span><span class="sxs-lookup"><span data-stu-id="4618a-447">Events are specific to the data source.</span></span>  <br/> <br/>  <span data-ttu-id="4618a-448">このプロパティの目的の1つは、アイテムが発生元であるデータソースに基づいて、またはイベントの種類に基づいて、特定のアイテムをフィルター処理することです。</span><span class="sxs-lookup"><span data-stu-id="4618a-448">One purpose of this property is to filter specific items based on the data source where an item originated or based on the type of event.</span></span> <span data-ttu-id="4618a-449">たとえば、電子情報開示検索では、検索クエリを作成して、特定のユーザーによって投稿されたすべてのツイートなど) を検索できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-449">For example, in an eDiscovery search you could create a search query to find all the tweets that were posted by a specific user.</span></span>  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |<span data-ttu-id="c23cc-408">**FROM**</span><span class="sxs-lookup"><span data-stu-id="c23cc-408">**FROM**</span></span> <br/> |<span data-ttu-id="c23cc-409">はい</span><span class="sxs-lookup"><span data-stu-id="c23cc-409">Yes</span></span>  <br/> |<span data-ttu-id="c23cc-410">最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。</span><span class="sxs-lookup"><span data-stu-id="c23cc-410">The user who originally created or sent the item in the third-party data source.</span></span> <span data-ttu-id="c23cc-411">パートナーコネクタは、ユーザー ID をソースアイテム (Twitter ハンドルなど) から、すべての参加者 ([差出人] および [宛先] フィールド内のユーザー) のユーザーアカウントにマップしようとします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-411">The partner connector attempts to map the user ID from the source item (for example a Twitter handle) to an user account for all participants (users in the FROM and TO fields).</span></span> <span data-ttu-id="c23cc-412">メッセージのコピーが、すべての参加者のメールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-412">A copy of the message will be imported to the mailbox of every participant.</span></span> <span data-ttu-id="c23cc-413">アイテムの参加者が1人のユーザーアカウントにマップできない場合、そのアイテムは Office 365 のサードパーティ製のアーカイブメールボックスにインポートされます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-413">If none of the participants from the item can be mapped to an user account, the item will be imported to the third-party archiving mailbox in Office 365.</span></span>  <br/> <br/> <span data-ttu-id="c23cc-414">アイテムの送信者として識別される参加者は、アイテムのインポート先の組織内にアクティブなメールボックスを持っている必要があります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-414">The participant who's identified as the sender of the item must have an active mailbox in the organization that the item is being imported to.</span></span> <span data-ttu-id="c23cc-415">送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-415">If the sender doesn't have an active mailbox, the following error is returned:</span></span><br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |<span data-ttu-id="c23cc-416">**TO**</span><span class="sxs-lookup"><span data-stu-id="c23cc-416">**TO**</span></span> <br/> |<span data-ttu-id="c23cc-417">はい</span><span class="sxs-lookup"><span data-stu-id="c23cc-417">Yes</span></span>  <br/> |<span data-ttu-id="c23cc-418">アイテムを受信したユーザー (データ ソース内のアイテムに該当する場合)。</span><span class="sxs-lookup"><span data-stu-id="c23cc-418">The user who received an item, if applicable for an item in the data source.</span></span>  <br/> | `bob@contoso.com` <br/> |
+    |<span data-ttu-id="c23cc-419">**件名**</span><span class="sxs-lookup"><span data-stu-id="c23cc-419">**SUBJECT**</span></span> <br/> |<span data-ttu-id="c23cc-420">いいえ</span><span class="sxs-lookup"><span data-stu-id="c23cc-420">No</span></span>  <br/> |<span data-ttu-id="c23cc-421">ソース アイテムの件名。</span><span class="sxs-lookup"><span data-stu-id="c23cc-421">The subject from the source item.</span></span>  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
+    |<span data-ttu-id="c23cc-422">**DATE**</span><span class="sxs-lookup"><span data-stu-id="c23cc-422">**DATE**</span></span> <br/> |<span data-ttu-id="c23cc-423">はい</span><span class="sxs-lookup"><span data-stu-id="c23cc-423">Yes</span></span>  <br/> |<span data-ttu-id="c23cc-424">アイテムが最初に作成または顧客データソースに投稿された日付。</span><span class="sxs-lookup"><span data-stu-id="c23cc-424">The date the item was originally created or posted in the customer data source.</span></span> <span data-ttu-id="c23cc-425">たとえば、Twitter メッセージがツイートされた日時です。</span><span class="sxs-lookup"><span data-stu-id="c23cc-425">For example, that date when a Twitter message was tweeted.</span></span>  <br/> | `01 NOV 2015` <br/> |
+    |<span data-ttu-id="c23cc-426">**物体**</span><span class="sxs-lookup"><span data-stu-id="c23cc-426">**BODY**</span></span> <br/> |<span data-ttu-id="c23cc-427">いいえ</span><span class="sxs-lookup"><span data-stu-id="c23cc-427">No</span></span>  <br/> |<span data-ttu-id="c23cc-428">メッセージまたは投稿のコンテンツ。</span><span class="sxs-lookup"><span data-stu-id="c23cc-428">The contents of the message or post.</span></span> <span data-ttu-id="c23cc-429">一部のデータ ソースでは、このプロパティのコンテンツは **SUBJECT** プロパティのコンテンツと同じになります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-429">For some data sources, the contents of this property could be the same as the content for the **SUBJECT** property.</span></span> <span data-ttu-id="c23cc-430">インポート処理中に、パートナーコネクタは、可能な限りコンテンツソースの完全な忠実性を維持しようとします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-430">During the import process, the partner connector attempts to maintain full fidelity from the content source as possible.</span></span> <span data-ttu-id="c23cc-431">可能な場合には、ソース アイテムの本文からのファイル、グラフィック、またはその他のコンテンツが、このプロパティに含まれます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-431">If possible files, graphics, or other content from the body of the source item is included in this property.</span></span> <span data-ttu-id="c23cc-432">それ以外の場合、ソース アイテムからのコンテンツは **ATTACHMENT** プロパティに含まれます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-432">Otherwise, content from the source item is included in the **ATTACHMENT** property.</span></span> <span data-ttu-id="c23cc-433">このプロパティの内容は、パートナーコネクタとソースプラットフォームの機能によって異なります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-433">The contents of this property depends on the partner connector and on the capability of the source platform.</span></span>  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
+    |<span data-ttu-id="c23cc-434">**資料**</span><span class="sxs-lookup"><span data-stu-id="c23cc-434">**ATTACHMENT**</span></span> <br/> |<span data-ttu-id="c23cc-435">いいえ</span><span class="sxs-lookup"><span data-stu-id="c23cc-435">No</span></span>  <br/> |<span data-ttu-id="c23cc-436">データソース内のアイテム (Twitter のツイート、インスタントメッセージングの会話など) に添付ファイルがあり、画像が含まれている場合、パートナー接続は最初に**BODY**プロパティに添付ファイルを含めようとします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-436">If an item in the data source (such as a tweet in Twitter or an instant messaging conversation) has an attached file or include images, the partner connect will first attempt to include attachments in the **BODY** property.</span></span> <span data-ttu-id="c23cc-437">これができない場合は、\* \* ATTACHMENT \* \* プロパティに追加されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-437">If that isn't possible, then it's added to the \*\* ATTACHMENT \*\* property.</span></span> <span data-ttu-id="c23cc-438">添付ファイルの例として、他にも Facebook の「いいね」、コンテンツ ソースからのメタデータ、およびメッセージまたは投稿への返信などがあります。</span><span class="sxs-lookup"><span data-stu-id="c23cc-438">Other examples of attachments include Likes in Facebook, metadata from the content source, and responses to a message or post.</span></span>  <br/> | `image.gif` <br/> |
+    |<span data-ttu-id="c23cc-439">**MESSAGECLASS**</span><span class="sxs-lookup"><span data-stu-id="c23cc-439">**MESSAGECLASS**</span></span> <br/> |<span data-ttu-id="c23cc-440">はい</span><span class="sxs-lookup"><span data-stu-id="c23cc-440">Yes</span></span>  <br/> | <span data-ttu-id="c23cc-441">これは、パートナーコネクタによって作成および設定される複数値プロパティです。</span><span class="sxs-lookup"><span data-stu-id="c23cc-441">This is a multi-value property, which is created and populated by partner connector.</span></span> <span data-ttu-id="c23cc-442">このプロパティの形式は `IPM.NOTE.Source.Event` です。</span><span class="sxs-lookup"><span data-stu-id="c23cc-442">The format of this property is  `IPM.NOTE.Source.Event`.</span></span> <span data-ttu-id="c23cc-443">(このプロパティはで始まる必要があり `IPM.NOTE` ます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-443">(This property must begin with  `IPM.NOTE`.</span></span> <span data-ttu-id="c23cc-444">この形式は、メッセージクラスの形式と似て `IPM.NOTE.X` います)。このプロパティには、次の情報が含まれます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-444">This format is similar to the one for the  `IPM.NOTE.X` message class.) This property includes the following information:</span></span>  <br/><br/><span data-ttu-id="c23cc-445">`Source`: サードパーティのデータソースを示します。たとえば、Twitter、Facebook、BlackBerry などです。</span><span class="sxs-lookup"><span data-stu-id="c23cc-445">`Source`: Indicates the third-party data source; for example, Twitter, Facebook, or BlackBerry.</span></span>  <br/> <br/>  <span data-ttu-id="c23cc-446">`Event`: アイテムを生成したサードパーティのデータソースで実行されたアクティビティの種類を示します。たとえば、Twitter のツイート、または Facebook の投稿。</span><span class="sxs-lookup"><span data-stu-id="c23cc-446">`Event`: Indicates the type of activity that was performed in the third-party data source that produced the items; for example, a tweet in Twitter or a post in Facebook.</span></span> <span data-ttu-id="c23cc-447">イベントは、データソースに固有のものです。</span><span class="sxs-lookup"><span data-stu-id="c23cc-447">Events are specific to the data source.</span></span>  <br/> <br/>  <span data-ttu-id="c23cc-448">このプロパティの目的の1つは、アイテムが発生元であるデータソースに基づいて、またはイベントの種類に基づいて、特定のアイテムをフィルター処理することです。</span><span class="sxs-lookup"><span data-stu-id="c23cc-448">One purpose of this property is to filter specific items based on the data source where an item originated or based on the type of event.</span></span> <span data-ttu-id="c23cc-449">たとえば、電子情報開示検索では、検索クエリを作成して、特定のユーザーによって投稿されたすべてのツイートなど) を検索できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-449">For example, in an eDiscovery search you could create a search query to find all the tweets that were posted by a specific user.</span></span>  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- <span data-ttu-id="4618a-450">アイテムが Office 365 のメールボックスに正常にインポートされると、一意識別子が HTTP 応答の一部として発信者に戻されます。</span><span class="sxs-lookup"><span data-stu-id="4618a-450">When items are successfully imported to mailboxes in Office 365, a unique identifier is returned back to the caller as part of the HTTP response.</span></span> <span data-ttu-id="4618a-451">と呼ばれるこの識別子は `x-IngestionCorrelationID` 、アイテムのエンドツーエンドの追跡のためにパートナーによって、以降のトラブルシューティングのために使用できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-451">This identifier, called  `x-IngestionCorrelationID`, can be used for subsequent troubleshooting purposes by partners for end-to-end tracking of items.</span></span> <span data-ttu-id="4618a-452">パートナーがこの情報をキャプチャし、パートナーの側で記録することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="4618a-452">It's recommended that partners capture this information and log it accordingly at their end.</span></span> <span data-ttu-id="4618a-453">この識別子を示す HTTP 応答の例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="4618a-453">Here's an example of an HTTP response showing this identifier:</span></span>
+- <span data-ttu-id="c23cc-450">アイテムが Office 365 のメールボックスに正常にインポートされると、一意識別子が HTTP 応答の一部として発信者に戻されます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-450">When items are successfully imported to mailboxes in Office 365, a unique identifier is returned back to the caller as part of the HTTP response.</span></span> <span data-ttu-id="c23cc-451">と呼ばれるこの識別子は `x-IngestionCorrelationID` 、アイテムのエンドツーエンドの追跡のためにパートナーによって、以降のトラブルシューティングのために使用できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-451">This identifier, called  `x-IngestionCorrelationID`, can be used for subsequent troubleshooting purposes by partners for end-to-end tracking of items.</span></span> <span data-ttu-id="c23cc-452">パートナーがこの情報をキャプチャし、パートナーの側で記録することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="c23cc-452">It's recommended that partners capture this information and log it accordingly at their end.</span></span> <span data-ttu-id="c23cc-453">この識別子を示す HTTP 応答の例を以下に示します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-453">Here's an example of an HTTP response showing this identifier:</span></span>
 
     ```http
     HTTP/1.1 200 OK
@@ -582,17 +582,17 @@ ms.locfileid: "44817042"
     Date: Tue, 02 Feb 2016 22:55:33 GMT 
     ```
 
-- <span data-ttu-id="4618a-454">セキュリティ/コンプライアンスセンターのコンテンツ検索ツールを使用して、サードパーティのデータソースからメールボックスにインポートされたアイテムを検索できます。</span><span class="sxs-lookup"><span data-stu-id="4618a-454">You can use the Content Search tool in the security and compliance center to search for items that were imported to mailboxes from a third-party data source.</span></span> <span data-ttu-id="4618a-455">これらのインポートされたアイテムを検索するには、次のようなメッセージのプロパティと値のペアをキーワードボックスで使用します。</span><span class="sxs-lookup"><span data-stu-id="4618a-455">To search specifically for these imported items, you can use the following message property-value pairs in the keyword box for a Content Search.</span></span>
+- <span data-ttu-id="c23cc-454">セキュリティ/コンプライアンスセンターのコンテンツ検索ツールを使用して、サードパーティのデータソースからメールボックスにインポートされたアイテムを検索できます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-454">You can use the Content Search tool in the security and compliance center to search for items that were imported to mailboxes from a third-party data source.</span></span> <span data-ttu-id="c23cc-455">これらのインポートされたアイテムを検索するには、次のようなメッセージのプロパティと値のペアをキーワードボックスで使用します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-455">To search specifically for these imported items, you can use the following message property-value pairs in the keyword box for a Content Search.</span></span>
     
-  - <span data-ttu-id="4618a-456">**`kind:externaldata`**: このプロパティと値のペアを使用して、すべてのサードパーティのデータ型を検索します。</span><span class="sxs-lookup"><span data-stu-id="4618a-456">**`kind:externaldata`**: Use this property-value pair to search all third-party data types.</span></span> <span data-ttu-id="4618a-457">たとえば、サードパーティのデータソースからインポートされ、インポートされたアイテムの Subject プロパティに "contoso" という単語が含まれているアイテムを検索するには、キーワードクエリを使用し `kind:externaldata AND subject:contoso` ます。</span><span class="sxs-lookup"><span data-stu-id="4618a-457">For example, to search for items that were imported from a third-party data source and contained the word "contoso" in the Subject property of the imported item, you would use the keyword query  `kind:externaldata AND subject:contoso`.</span></span>
+  - <span data-ttu-id="c23cc-456">**`kind:externaldata`**: このプロパティと値のペアを使用して、すべてのサードパーティのデータ型を検索します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-456">**`kind:externaldata`**: Use this property-value pair to search all third-party data types.</span></span> <span data-ttu-id="c23cc-457">たとえば、サードパーティのデータソースからインポートされ、インポートされたアイテムの Subject プロパティに "contoso" という単語が含まれているアイテムを検索するには、キーワードクエリを使用し `kind:externaldata AND subject:contoso` ます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-457">For example, to search for items that were imported from a third-party data source and contained the word "contoso" in the Subject property of the imported item, you would use the keyword query  `kind:externaldata AND subject:contoso`.</span></span>
     
-  - <span data-ttu-id="4618a-458">**`itemclass:ipm.externaldata.<third-party data type>`**: このプロパティと値のペアを使用して、サードパーティのデータの指定した種類のみを検索します。</span><span class="sxs-lookup"><span data-stu-id="4618a-458">**`itemclass:ipm.externaldata.<third-party data type>`**: Use this property-value pair to only search a specify type of third-party data.</span></span> <span data-ttu-id="4618a-459">たとえば、Subject プロパティに "contoso" という単語が含まれる Facebook データのみを検索するには、キーワードクエリを使用し `itemclass:ipm.externaldata.Facebook* AND subject:contoso` ます。</span><span class="sxs-lookup"><span data-stu-id="4618a-459">For example, to only search Facebook data that contains the word "contoso" in the Subject property, you would use the keyword query  `itemclass:ipm.externaldata.Facebook* AND subject:contoso`.</span></span> 
+  - <span data-ttu-id="c23cc-458">**`itemclass:ipm.externaldata.<third-party data type>`**: このプロパティと値のペアを使用して、サードパーティのデータの指定した種類のみを検索します。</span><span class="sxs-lookup"><span data-stu-id="c23cc-458">**`itemclass:ipm.externaldata.<third-party data type>`**: Use this property-value pair to only search a specify type of third-party data.</span></span> <span data-ttu-id="c23cc-459">たとえば、Subject プロパティに "contoso" という単語が含まれる Facebook データのみを検索するには、キーワードクエリを使用し `itemclass:ipm.externaldata.Facebook* AND subject:contoso` ます。</span><span class="sxs-lookup"><span data-stu-id="c23cc-459">For example, to only search Facebook data that contains the word "contoso" in the Subject property, you would use the keyword query  `itemclass:ipm.externaldata.Facebook* AND subject:contoso`.</span></span> 
 
-  <span data-ttu-id="4618a-460">プロパティのサードパーティデータ型に使用する値の完全な一覧につい `itemclass` ては、「[コンテンツ検索を使用して、Office 365 にインポートされたサードパーティのデータを検索する](use-content-search-to-search-third-party-data-that-was-imported.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-460">For a complete list of values to use for third-party data types for the  `itemclass` property, see [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).</span></span>
+  <span data-ttu-id="c23cc-460">プロパティのサードパーティデータ型に使用する値の完全な一覧につい `itemclass` ては、「[コンテンツ検索を使用して、Office 365 にインポートされたサードパーティのデータを検索する](use-content-search-to-search-third-party-data-that-was-imported.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-460">For a complete list of values to use for third-party data types for the  `itemclass` property, see [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).</span></span>
     
-   <span data-ttu-id="4618a-461">コンテンツ検索の使用方法とキーワード検索クエリの作成方法の詳細については、次を参照してください。</span><span class="sxs-lookup"><span data-stu-id="4618a-461">For more information about using Content Search and creating keyword search queries, see:</span></span>
+   <span data-ttu-id="c23cc-461">コンテンツ検索の使用方法とキーワード検索クエリの作成方法の詳細については、次を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c23cc-461">For more information about using Content Search and creating keyword search queries, see:</span></span>
     
-  - [<span data-ttu-id="4618a-462">Office 365 のコンテンツ検索</span><span class="sxs-lookup"><span data-stu-id="4618a-462">Content Search in Office 365</span></span>](content-search.md)
+  - [<span data-ttu-id="c23cc-462">Office 365 のコンテンツ検索</span><span class="sxs-lookup"><span data-stu-id="c23cc-462">Content Search in Office 365</span></span>](content-search.md)
     
-  - [<span data-ttu-id="4618a-463">コンテンツ検索のキーワード クエリと検索条件</span><span class="sxs-lookup"><span data-stu-id="4618a-463">Keyword queries and search conditions for Content Search</span></span>](keyword-queries-and-search-conditions.md)
+  - [<span data-ttu-id="c23cc-463">コンテンツ検索のキーワード クエリと検索条件</span><span class="sxs-lookup"><span data-stu-id="c23cc-463">Keyword queries and search conditions for Content Search</span></span>](keyword-queries-and-search-conditions.md)
  
