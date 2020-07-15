@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: カスタムコネクタをセットアップして、Salesforce チャター、Yahoo Messenger、Yammer などのデータソースからサードパーティのデータをインポートする方法について説明します。
-ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817042"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126656"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業して、サード パーティのデータをアーカイブする
 
@@ -499,7 +499,7 @@ Office 365 にデータをインポートするためにサードパーティ製
     
       - [メールボックスを訴訟ホールドの対象にする](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [アイテム保持ポリシーの概要](retention-policies.md)
+      - [アイテム保持ポリシーと保持ラベルについて](retention.md)
     
     - サードパーティデータメールボックスへの所有者、代理人、および管理者のアクセスに対してメールボックス監査ログを有効にします。「[メールボックス監査を有効にする」を](enable-mailbox-auditing.md)参照してください。 これにより、サードパーティのデータメールボックスにアクセスできるすべてのユーザーによって実行されたすべてのアクティビティを監査できます。
 
@@ -513,7 +513,7 @@ Office 365 にデータをインポートするためにサードパーティ製
     
     - [メールボックスを訴訟ホールドの対象にする](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [アイテム保持ポリシーの概要](retention-policies.md)
+    - [アイテム保持ポリシーと保持ラベルについて](retention.md)
     
     前述のように、メールボックスをホールドの対象にすると、サードパーティ データ ソースからのアイテムを保持する期間を設定したり、アイテムを無期限に保持したりすることができます。
 

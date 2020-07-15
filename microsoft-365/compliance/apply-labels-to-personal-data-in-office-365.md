@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: Office のラベルを一般データ保護規則 (GDPR) 保護計画の一部として使用する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a7bea2abeaec7a858b3cfc693603c46c0f2a416a
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165260"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126818"
 ---
 # <a name="apply-labels-to-personal-data"></a>個人データにラベルを適用する
 
  GDPR 保護計画の一環として、分類ラベルを使用している場合は、このトピックを使用します。 
 
-Microsoft 365 で個人データを保護するためにラベルを使用している場合は、[保持ラベル](labels.md)を使用することをお勧めします。 保持ラベルを使用すると、次のことができます。
+Microsoft 365 で個人データを保護するためにラベルを使用している場合は、[保持ラベル](retention.md#retention-labels)を使用することをお勧めします。 保持ラベルを使用すると、次のことができます。
 - アドバンスト データ ガバナンスを使用して、機密情報の種類やその他の基準に基づいてラベルを自動的に適用できます。
 - データ損失防止機能を備えた保持ラベルを使用して、保護を適用できます。 
 - 電子情報開示とコンテンツの検索でラベルを使用できます。 
@@ -72,27 +72,27 @@ Microsoft 365 で個人データを保護するためにラベルを使用して
 <tbody>
 <tr class="odd">
 <td align="left">保持ラベル。 例: 個人、公開、顧客のデータ、人事データ、社外秘、非常に機密性の高い社外秘</td>
-<td align="left"><p>このラベルを自動で . . .</p>
+<td align="left"><p>Auto apply this label . . .</p>
 <p>顧客データ</p>
-<p>. . . これらの機密情報の種類に一致する文書に適用します . . .</p>
+<p>. . . to documents that match these sensitive information types . . .</p>
 <p>&lt;機密情報の種類の例の一覧&gt;</p></td>
-<td align="left"><p>この保護を . . .</p>
+<td align="left"><p>Apply this protection . . .</p>
 <p>&lt;保護の定義&gt;</p>
-<p>. . . このラベルを持つドキュメントに適用します . . .</p>
+<p>. . . to documents with this label . . .</p>
 <p>顧客データ</p></td>
-<td align="left"><p>承認された SaaS アプリのこれらの属性を持つファイルが . . .</p>
+<td align="left"><p>Alert when files with these attributes . . .</p>
 <p>1 つまたは複数の属性を選択します: 定義済みの PII 属性、Microsoft 365 の機密情報の種類、秘密度ラベル (AIP)、カスタム式</p>
 <p>。 。 。 組織外で共有された際に警告します</p><p>注: 現在、保持ラベルは Cloud App Security ではサポートされていません。</td>
 </tr>
 <tr class="even">
-<td align="left">機密情報の種類。例: ベルギーの国民番号、クレジット カード番号、クロアチアの身分証明書番号、フィンランドの国民 ID</td>
-<td align="left"><p>これらのラベルを発行して、ユーザーが . . .</p>
+<td align="left">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</td>
+<td align="left"><p>Publish these labels for users to manually apply . . .</p>
 <p>&lt;ラベルの選択&gt;</p>
-<p>. . . これらの場所に手動で適用するようにします . . .</p>
+<p>. . . to these locations . . .</p>
 <p>&lt;すべての場所、あるいは特定の場所を選択&gt;</p></td>
-<td align="left"><p>この保護を . . .</p>
+<td align="left"><p>Apply this protection . . .</p>
 <p>&lt;保護の定義&gt;</p>
-<p>. . . これらの機密情報の種類に一致する文書に適用します&gt;</p></td>
+<p>. . . to documents that match these sensitive information types&gt;</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -100,9 +100,9 @@ Microsoft 365 で個人データを保護するためにラベルを使用して
 
 ## <a name="prioritize-auto-apply-label-policies"></a>自動適用ラベル ポリシーの優先順位付け
 
-GDPR の対象となる個人データについては、環境に合わせて設定した機密情報の種類を使用してラベルを自動適用することをお勧めします。自動適用ラベル ポリシーは、意図した動作が確実に行われるように、適切に設計され、テストされていることが重要です。
+For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
 
-自動適用ポリシーが作成される順序と、ユーザーもこれらのラベルを適用するかどうかによって結果が異なってきます。したがって、ポリシーの作成とラベルの適用を慎重に計画する必要があります。重要なポイントを次に示します。
+The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
 
 ### <a name="one-label-at-a-time"></a>一度に 1 つのラベルを適用する
 
@@ -110,11 +110,11 @@ GDPR の対象となる個人データについては、環境に合わせて設
 
 ### <a name="older-auto-apply-policies-win"></a>優先されるのは古いポリシー
 
-自動適用ラベルを割り当てるルールが複数あり、コンテンツが複数のルールの条件を満たす場合は、最も古いルールのラベルが割り当てられます。このため、ラベル ポリシーを構成する前に注意深く計画することが重要です。組織がラベル ポリシーの優先順位を変更する必要がある場合は、ラベル ポリシーを削除して再度作成する必要があります。
+If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
 
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>自動適用ラベルよりもユーザーが手動で適用したラベルが優先される
 
-ユーザーが手動で適用したラベルは、自動適用ラベルよりも優先されます。自動適用ポリシーでは、ユーザーがすでに適用しているラベルを置き換えることはできませんが、ユーザーは、自動適用されたラベルを置き換えることができます。
+Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>自動的に割り当てられたラベルは更新可能
 
@@ -124,7 +124,7 @@ GDPR の対象となる個人データについては、環境に合わせて設
 
 - 自動適用ポリシーが作成される順序の優先順位付けを行います。
 
-- ユーザーが手動でラベルを適用する前に、ラベルが自動適用されるまで十分な時間の余裕があります。条件に一致するすべてのコンテンツにラベルが適用されるまでに最大 7 日間かかることがあります。
+- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>自動適用ポリシー作成の優先順位の例
 
@@ -181,7 +181,7 @@ GDPR の対象となる個人データについては、環境に合わせて設
 <tbody>
 <tr class="odd">
 <td align="left"><p>コンプライアンス チームのメンバーにアクセス許可を与えます。</p></td>
-<td align="left"><p>ラベルを作成するコンプライアンス チームのメンバーには、セキュリティ センターやコンプライアンス センターを使用するためのアクセス許可が必要です。セキュリティ センターまたはコンプライアンス センターの [アクセス許可] に移動し、コンプライアンス管理者グループのメンバーを変更します。</p>
+<td align="left"><p>Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</p>
 <p>「<a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">ユーザーにセキュリティ センターやコンプライアンス センターへのアクセス権を付与する</a>」を参照してください。</p></td>
 </tr>
 <tr class="even">
@@ -190,7 +190,7 @@ GDPR の対象となる個人データについては、環境に合わせて設
 </tr>
 <tr class="odd">
 <td align="left"><p>ラベルの自動適用ポリシーを作成します。</p></td>
-<td align="left">セキュリティ センターまたはコンプライアンスセンターの [分類] に移動し、[ラベル ポリシー] を選択し、自動適用ラベルのポリシーを作成します。これらのポリシーは、優先順位に従って作成してください。</td>
+<td align="left">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</td>
 </tr>
 </tbody>
 </table>

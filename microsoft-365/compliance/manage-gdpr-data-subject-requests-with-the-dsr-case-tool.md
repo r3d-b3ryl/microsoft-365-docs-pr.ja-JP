@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: DSR ケースツールを使用して、EU General データ保護規則 (GDPR) データ主体要求を管理する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3327618a1a297bb6d4afbbe45baa709f0638ee39
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815454"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126778"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで DSR ケースツールを使用して GDPR データ主体要求を管理する
 
@@ -247,7 +247,7 @@ DSR ケースの組み込み検索クエリに追加できる条件の例を次�
     
 - **Message type ( `kind` )** -検索する電子メールアイテムの種類を指定します。 たとえば、Microsoft Teams では、この構文を使用して、 `kind:email OR kind:im` 電子メールメッセージと Skype For business の会話または1対1のチャットのみを返すことができます。 
     
-- **コンプライアンスタグ ( `compliancetag` )** –電子メールメッセージまたはドキュメントに割り当てられたラベルを指定します。 この条件は、特定のラベルに分類されたアイテムを返します。 ラベルは、データガバナンスのために電子メールとドキュメントを分類し、ラベルで定義された分類に基づいて保持ルールを適用するために使用されます。 これは、組織がデータのプライバシーに関連するコンテンツを分類するためにラベルを使用しているか、個人データや機密情報が含まれている場合があるため、これは DSR 調査にとって便利な条件です。 この条件の値については、完全なラベル名またはラベル名の最初の部分をワイルドカードで使用します。 詳細については、「 [Office 365 のラベルの概要](labels.md)」を参照してください。
+- **コンプライアンスタグ ( `compliancetag` )** –電子メールメッセージまたはドキュメントに割り当てられたラベルを指定します。 この条件は、特定のラベルに分類されたアイテムを返します。 ラベルは、データガバナンスのために電子メールとドキュメントを分類し、ラベルで定義された分類に基づいて保持ルールを適用するために使用されます。 これは、組織がデータのプライバシーに関連するコンテンツを分類するためにラベルを使用しているか、個人データや機密情報が含まれている場合があるため、これは DSR 調査にとって便利な条件です。 この条件の値については、完全なラベル名またはラベル名の最初の部分をワイルドカードで使用します。 詳細については、「 [Office 365 のアイテム保持ポリシーと保持ラベルについて](retention.md)」を参照してください。
     
 DSR ケースツールで使用可能なすべての条件の一覧と説明については、記事「キーワードクエリと検索条件のコンテンツ検索」の「[検索条件](keyword-queries-and-search-conditions.md#search-conditions)」を参照してください。 
   

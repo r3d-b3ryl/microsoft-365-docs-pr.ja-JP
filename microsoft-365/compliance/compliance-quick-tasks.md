@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Microsoft 365 のコンプライアンスをすばやく始めるのに役立つタスクについて説明します。
-ms.openlocfilehash: 87dfa73c52473b0695c496826572ab9b5180dfca
-ms.sourcegitcommit: 92bd1631a2bb6df8683aa6da45a116090b338bb1
+ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44732491"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126616"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの概要を開始するためのクイックタスク
 
@@ -83,7 +83,7 @@ To get their work done, people in your organization collaborate with others both
 
 ## <a name="task-7-configure-a-retention-policy"></a>タスク 7: アイテム保持ポリシーを構成する
 
-[アイテム保持ポリシー](retention-policies.md)を使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方を事前に決定して、指定した保持期間の最後にコンテンツを保持して削除することができます。 これらのアクションは、業界の規制や内部ポリシーに準拠し、訴訟やセキュリティ違反の発生時にリスクを軽減するために必要な場合があります。
+[アイテム保持ポリシー](retention.md)を使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方を事前に決定して、指定した保持期間の最後にコンテンツを保持して削除することができます。 これらのアクションは、業界の規制や内部ポリシーに準拠し、訴訟やセキュリティ違反の発生時にリスクを軽減するために必要な場合があります。
 
 コンテンツがアイテム保持ポリシーの対象となる場合は、何も変更されていない場合と同様に、コンテンツの編集や操作を続けることができます。 コンテンツは、元の場所に保持されます。 ただし、ユーザーがアイテム保持ポリシーの対象となるコンテンツを編集または削除すると、元のコンテンツのコピーが、そのコンテンツのアイテム保持ポリシーが有効になっている間に保持される安全な場所に保存されます。
 
@@ -107,11 +107,15 @@ Microsoft 365 環境の複数の場所 (Exchange メールおよびパブリッ�
 
 ### <a name="configure-retention-labels"></a>保持ラベルを構成する
 
-保持ポリシーは、SharePoint サイトや Exchange メールボックスなどの場所にコンテナーレベルで適用されますが、保持[ラベル](labels.md)を使用すると、保持ポリシーと削除ポリシーにより具体的な対象化を行うことができます。 たとえば、ドキュメントまたは電子メールメッセージレベルでは、エンドユーザーは管理者による自動アプリケーションに加えて手動で適用することができます。 また、SharePoint のドキュメントライブラリ、フォルダー、またはドキュメントセットに保持ラベルを適用して、その場所に格納されているすべてのドキュメントが既定の保持ラベルを継承するようにすることもできます。
+保持ポリシーは、SharePoint サイトや Exchange メールボックスなどの場所にコンテナーレベルで適用されますが、保持[ラベル](retention.md#retention-labels)を使用すると、保持ポリシーと削除ポリシーにより具体的な対象化を行うことができます。 たとえば、ドキュメントまたは電子メールメッセージレベルでは、エンドユーザーは管理者による自動アプリケーションに加えて手動で適用することができます。 また、SharePoint のドキュメントライブラリ、フォルダー、またはドキュメントセットに保持ラベルを適用して、その場所に格納されているすべてのドキュメントが既定の保持ラベルを継承するようにすることもできます。
 
 さらに、保持ラベルは、レコード[管理](records-management.md)をサポートして、コンテンツをレコードとしてマークします。 この操作を行うと、ラベルを変更または削除することはできません。また、コンテンツを編集または削除することはできません。 これらの制限は、組織が規制要件に準拠するために必要になる場合があります。
 
-保持ラベルを作成して発行するための詳細なガイダンスについては、「[作成、公開、および自動適用の保持ラベル](create-retention-labels.md)」を参照してください。 レコード管理のライセンス情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)」を参照してください。
+保持ラベルを作成して発行する詳細な手順については、以下のガイダンスを参照してください。
+- [保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+- [コンテンツへの保持ラベルの自動適用](apply-retention-labels-automatically.md)
+
+レコード管理のライセンス情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)」を参照してください。
 
 ### <a name="identify-and-define-sensitive-information-types"></a>機密情報の種類を識別して定義する
 

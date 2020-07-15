@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: af2e5986530ae6b1eb558ed3389f0927d5f912e9
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 328aa52473fbb8b51ad580379c103e3759c2bff6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773758"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126698"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融業界の法令当局 (FINRA) ルール 4511 (c) 米国
 
@@ -47,7 +47,7 @@ Cohasset では、ポリシーロックオプションを使用して[Azure 不�
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-4511 (c) を使用して Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化し、Covington & の気流を含む、主要な独立した法律事務所を保持しています。 生成されたレポート、Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンスにおいて、 [365](retention-policies.md) Covington は、ブローカーディーラーを含む規制対象の顧客がデータを保存できるようにするアーカイブ機能が含まれています。これらの機能を使用して、レコード保持に関する finra 要件に準拠するために役立つ方法があります。
+4511 (c) を使用して Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化し、Covington & の気流を含む、主要な独立した法律事務所を保持しています。 生成されたレポート、Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンスにおいて、 [365](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) Covington は、ブローカーディーラーを含む規制対象の顧客がデータを保存できるようにするアーカイブ機能が含まれています。これらの機能を使用して、レコード保持に関する finra 要件に準拠するために役立つ方法があります。
 
 Office 365 のアーカイブでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持することができます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Microsoft 365 セキュリティ/コンプライアンス センターのラベル アクティビティ エクスプローラーを使用して、ラベル アクティビティを検索して表示する方法について説明します。
-ms.openlocfilehash: 9cf505575a17c8f6eb4d48e609d358f9c988965f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e21bb867044b2a6644b125aad9983ce3518f70ee
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819027"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127274"
 ---
 # <a name="view-label-activity-for-documents"></a>ドキュメントのラベル アクティビティを表示する
 
@@ -51,7 +51,7 @@ After you create your labels, you'll want to verify that they're being applied t
 
 At the top of the Label Activity Explorer, you can choose whether to view activities for files or folders. Note that folder activity includes only the folder itself, not the files inside the folder.
   
-You might want to see label activity for folders because if you label a folder, all files inside that folder also get that label (except for files that have had a label applied explicitly to them). Therefore, labeling folders might affect a significant number of files. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+You might want to see label activity for folders because if you label a folder, all files inside that folder also get that label (except for files that have had a label applied explicitly to them). Therefore, labeling folders might affect a significant number of files. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
 ![ファイルとフォルダーのラベル アクティビティを表示するドロップダウン メニュー](../media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   

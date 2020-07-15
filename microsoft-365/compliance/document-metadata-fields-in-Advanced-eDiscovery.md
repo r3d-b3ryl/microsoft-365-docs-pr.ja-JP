@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 の Advanced eDiscovery のケースで、レビューセット内のドキュメントのメタデータフィールドを定義します。
-ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726453"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126954"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高度な電子情報開示のドキュメントメタデータフィールド
 
@@ -46,7 +46,7 @@ ms.locfileid: "44726453"
 |設定元|設定元|Doc_authors|ドキュメントのメタデータから作成します。|
 |BCC|Bcc|Email_bcc|メッセージの種類の Bcc フィールド。 表示形式**は \<SMTPAddress> DisplayName**です。|
 |CC|Cc|Email_cc|メッセージの種類の Cc フィールド。 表示形式**は \<SMTPAddress> DisplayName**です。|
-|コンプライアンスラベル|ComplianceLabels|Compliance_labels|Office 365 のコンテンツに適用される[保持ラベル](labels.md)。|
+|コンプライアンスラベル|ComplianceLabels|Compliance_labels|Office 365 のコンテンツに適用される[保持ラベル](retention.md)。|
 |複合パス|CompoundPath|Compound_path|アイテムのソースを記述する、人間が判読できるパス。|
 |内容|コンテンツ||アイテムの抽出されたテキスト。|
 |会話本文|会話本文||アイテムの会話本文。|
@@ -103,7 +103,7 @@ ms.locfileid: "44726453"
 |アイテム クラス|ItemClass|Item_class|Exchange server によって提供される Item クラス。たとえば、 **IPM.メモ**|
 |Last modified date|LastModifiedDate|Doc_date_modified|ドキュメントメタデータからの最終変更日。|
 |ロード ID|LoadId|Load_ID|アイテムがレビューセットに追加された荷重セットの Id。|
-|Location|Location|Location|ドキュメントのソースとなる場所の種類を示す文字列。<br /><br />**インポート**されたデータ-Office 以外の365データ<br />**Teams** -Microsoft teams<br />**Exchange** -exchange メールボックス<br />**Sharepoint** -sharepoint サイト<br />**Onedrive** -onedrive アカウント|
+|場所|場所|場所|ドキュメントのソースとなる場所の種類を示す文字列。<br /><br />**インポート**されたデータ-Office 以外の365データ<br />**Teams** -Microsoft teams<br />**Exchange** -exchange メールボックス<br />**Sharepoint** -sharepoint サイト<br />**Onedrive** -onedrive アカウント|
 |場所の名前|Msrtcsip-locationname|Location_name|アイテムのソースを識別する文字列。 Exchange の場合、これはメールボックスの SMTP アドレスになります。SharePoint および OneDrive の場合、サイトコレクションの URL。|
 |担当者としてマーク|MarkAsRepresentative||正確な重複のセットごとに1つのドキュメントが担当者としてマークされます。|
 |プリタグ付きケースの問題としてマークされました。 1 *||Marked_as_pre_tagged_Case_issue_1|関連性のない、タグ付きケースの問題1としてマークされました。|

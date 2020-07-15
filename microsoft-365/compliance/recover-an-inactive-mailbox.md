@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Office 365 の非アクティブなメールボックスのコンテンツを、非アクティブなメールボックスのコンテンツを含む新しいメールボックスに変換することによって復元する方法について説明します。
-ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 077355d31c3159b4970b00ee9c461d6a77cd3cf7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818947"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127464"
 ---
 # <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
 
@@ -81,7 +81,7 @@ An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserv
   
      - **インプレース保持**インプレース保持は、回復されたメールボックスから削除されます。 これは、回復されたメールボックスが、インプレース保持またはインプレース電子情報開示検索からソースメールボックスとして削除されることを意味します。
      
-     - **保持ロック付きの Microsoft 365 アイテム保持ポリシー。** 非アクティブなメールボックスが保持ポリシー (ロックされた*保持ポリシー*と呼ばれます) に割り当てられている場合、回復したメールボックスは同じロックされた保持ポリシーに割り当てられます。 ロックされた保持ポリシーの詳細については、「[アイテム保持ポリシーについ](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)て」を参照してください。
+     - **保持ロック付きの Microsoft 365 アイテム保持ポリシー。** 非アクティブなメールボックスが保持ポリシー (ロックされた*保持ポリシー*と呼ばれます) に割り当てられている場合、回復したメールボックスは同じロックされた保持ポリシーに割り当てられます。 ロックされた保持ポリシーの詳細については、「[保持ロックを使用して規制要件を遵守する](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)」を参照してください。
   
      - **ロックを保持しない Microsoft 365 アイテム保持ポリシー。** 非アクティブなメールボックスは、そのメールボックスに適用されていた、ロックされていない Microsoft 365 保持ポリシーから削除されます。 ただし、回復されたメールボックスで訴訟ホールドが有効になっている場合は、特定の保存期間よりも古いコンテンツを削除する組織全体のアイテム保持ポリシーに基づいてメールボックスのコンテンツが削除されないようにします。 訴訟ホールドを保持するか、削除することができます。 詳細については、「[訴訟ホールドを作成する](create-a-litigation-hold.md)」を参照してください。
 

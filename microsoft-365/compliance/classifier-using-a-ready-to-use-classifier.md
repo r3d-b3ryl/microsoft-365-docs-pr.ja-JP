@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる組み込みの分類子がいくつか用意されています。 このトピックでは、これらの分類子の使用を準備する方法について説明します。
-ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371409"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126316"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>保持ラベルを使用した組み込み分類子のテスト (プレビュー)
 
@@ -71,9 +71,9 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 
 5. [] を選択 `Choose a label to auto-apply` します。
 
-6. `Create new labels`このテストで使用するラベルを選択して作成します。 その場合は、 `Retention` をに設定 `off` します。 保持またはその他のアクションをオンにしない。 この場合は、アクションを強制しないで、単にテキストラベルとして保持ラベルを使用します。 たとえば、アクションなしで「SourceCode クラシファイア test」という名前の保持ラベルを作成し、その保持ラベルを条件としてソースコード分類子のコンテンツに自動適用することができます。 保持ラベルの作成の詳細については、「[保持ラベルの概要](labels.md)」を参照してください。
+6. `Create new labels`このテストで使用するラベルを選択して作成します。 その場合は、 `Retention` をに設定 `off` します。 保持またはその他のアクションをオンにしない。 この場合は、アクションを強制しないで、単にテキストラベルとして保持ラベルを使用します。 たとえば、アクションなしで「SourceCode クラシファイア test」という名前の保持ラベルを作成し、その保持ラベルを条件としてソースコード分類子のコンテンツに自動適用することができます。 保持ラベルの詳細については、「[アイテム保持ポリシーと保持ラベルについ](retention.md)て」を参照してください。
   
-7. [] を選択し `Auto-apply a label` てから、を選び `Choose a label to auto-apply` ます。 条件に基づいてラベルを自動適用する方法の詳細については、「[条件に基づいて保持ラベルポリシーを自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)する」を参照してください。
+7. [] を選択し `Auto-apply a label` てから、を選び `Choose a label to auto-apply` ます。 条件に基づいてラベルを自動適用する方法の詳細については、「[自動適用保持ラベルの条件を構成](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)する」を参照してください。
 
 8. リストからテストラベルを選択し、を選択し `Next` ます。
 
@@ -106,5 +106,5 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 関連項目:
 
 - [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)
-- 「[保持ラベルの概要](labels.md)」を参照してください。
-- [条件に基づいて保持ラベルポリシーを自動適用する](labels.md#applying-a-retention-label-automatically-based-on-conditions)
+- [アイテム保持ポリシーと保持ラベルについて](retention.md)
+- [保持ラベルを自動的に適用してコンテンツを保持または削除する](apply-retention-labels-automatically.md)

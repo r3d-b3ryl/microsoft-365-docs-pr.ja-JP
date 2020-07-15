@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Office 365 で、非アクティブなメールボックスの内容を既存のメールボックスに復元 (またはマージ) する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ae3927aaaba64711cdcc3362399b109f228cb12
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 34965832c32bfd4139f4b9a54d3999313aace476
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818937"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127454"
 ---
 # <a name="restore-an-inactive-mailbox"></a>非アクティブなメールボックスを復元する
 
@@ -104,7 +104,7 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **訴訟ホールドまたは Microsoft 365 のアイテム保持ポリシーを使用して、非アクティブなメールボックスのコンテンツを保持します。** 復元後に非アクティブなメールボックスの状態を保持する場合は、非アクティブなメールボックスを復元する前に、対象のメールボックスを[訴訟ホールド](https://go.microsoft.com/fwlink/?linkid=856286)の対象にするか、 [Microsoft 365 アイテム保持ポリシー](retention-policies.md)を適用することができます。 これにより、非アクティブなメールボックスのアイテムがターゲット メールボックスに復元された後に、完全に削除されることがなくなります。
+- **訴訟ホールドまたは Microsoft 365 のアイテム保持ポリシーを使用して、非アクティブなメールボックスのコンテンツを保持します。** 復元後に非アクティブなメールボックスの状態を保持する場合は、非アクティブなメールボックスを復元する前に、対象のメールボックスを[訴訟ホールド](https://go.microsoft.com/fwlink/?linkid=856286)の対象にするか、 [Microsoft 365 アイテム保持ポリシー](retention.md)を適用することができます。 これにより、非アクティブなメールボックスのアイテムがターゲット メールボックスに復元された後に、完全に削除されることがなくなります。
 
 - **非アクティブなメールボックスを復元する前に、ターゲット メールボックスでの保存機能を有効にする。** 非アクティブなメールボックスのメールボックス アイテムは古くなっている可能性があるため、非アクティブなメールボックスを復元する前に、ターゲット メールボックスでの保存機能を有効にすることを検討できます。 メールボックスでの保存機能を有効にすると、保存機能が削除されるかまたは保存期間が期限切れになるまで、それに割り当てられた保持ポリシーは処理されなくなります。 これにより、ターゲット メールボックスの所有者が非アクティブなメールボックスからの古いメッセージを処理するための時間ができます。 そうしないと、ターゲット メールボックスに構成された保存期間の設定に基づいて、期限切れになっている古いアイテムが保持ポリシーによって削除される (またはアーカイブ メールボックスが使用可能な場合にはアイテムがそこに移動される) 可能性があります。 詳細については、「 [Exchange Online でメールボックスを保持ホールドの状態にする](https://go.microsoft.com/fwlink/?linkid=856300)」を参照してください。
 

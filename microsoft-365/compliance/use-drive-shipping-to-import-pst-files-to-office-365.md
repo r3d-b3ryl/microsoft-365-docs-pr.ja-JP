@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理者は、pst ファイルをハードドライブにコピーしてから Microsoft に配布することによって PST ファイルを Microsoft 365 メールボックスに一括インポートする方法を学習できます。
-ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e94a59b19271af275f74a08355a017533f8ef45d
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819087"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127344"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>ドライブの送付を使用して組織の PST ファイルをインポートする
 
@@ -460,7 +460,7 @@ Azure Storage Explorer をインストールし、Azure Storage 領域に接続�
     
   - Microsoft[電子情報開示ツール](search-for-content.md)を使用して、データを検索します。 
     
-  - [Microsoft 365 の保持ポリシー](retention-policies.md)を適用して、データの保持期間を制御し、保存期間が経過した後に実行するアクションを制御します。 
+  - [Microsoft 365 の保持ポリシー](retention.md)を適用して、データの保持期間を制御し、保存期間が経過した後に実行するアクションを制御します。 
     
   - このデータに関連するイベントの[監査ログ](search-the-audit-log-in-security-and-compliance.md)を検索します。 
     

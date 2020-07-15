@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: ソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから Microsoft 365 メールボックスにサードパーティのデータをインポートする方法について説明します。
-ms.openlocfilehash: a8dc69e7e4c7061e048fe49d1e51fd8867654454
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101638"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126636"
 ---
 # <a name="archive-third-party-data"></a>サード パーティのデータをアーカイブする
 
@@ -73,7 +73,7 @@ Microsoft 365 の3つの主要な電子情報開示ツールは、コンテン�
 
 ### <a name="retention-policies"></a>アイテム保持ポリシー
 
-保持[ポリシー](retention-policies.md)をユーザーメールボックスに適用して、保存期間の経過後にサードパーティのデータ (およびその他のメールボックスの内容) を削除することができます。 保持ポリシーを使用して、特定の年齢のサードパーティデータを削除したり、保存期間の期限が切れたときに廃棄レビューをトリガーしたりすることもできます。
+保持[ポリシー](retention.md)をユーザーメールボックスに適用して、保存期間の経過後にサードパーティのデータ (およびその他のメールボックスの内容) を削除することができます。 保持ポリシーを使用して、特定の年齢のサードパーティデータを削除したり、保存期間の期限が切れたときに廃棄レビューをトリガーしたりすることもできます。
 
 ### <a name="records-management"></a>レコード管理
 
