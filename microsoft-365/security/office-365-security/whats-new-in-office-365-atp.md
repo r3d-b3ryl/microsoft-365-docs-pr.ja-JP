@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039402"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126411"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -34,6 +34,10 @@ ms.locfileid: "45039402"
 
 > [!TIP]
 > Office 365 ATP をまだ持っていませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
+
+## <a name="julyaugust-2020"></a>2020年7月/8 月 
+
+- [探している環境の改善を体感する](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
@@ -60,7 +64,7 @@ ms.locfileid: "45039402"
 
 - [Office 365 の ATP (**プレビュー**) でキャンペーンビューを使用する](campaigns.md)
 
-## <a name="july-2020"></a>2020年7月 
+## <a name="july-2020"></a>2020 年7 月 
  
 - [探している環境の改善を体感する](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 

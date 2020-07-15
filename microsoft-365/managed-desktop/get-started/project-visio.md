@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 450dbcb08cd0636dae575ecd2d5e9abadc5ceb25
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: c8690db17c71fd5ce604fd9165fee7e54a41c639
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022098"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126829"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Microsoft Project または microsoft Visio を Microsoft マネージドデスクトップデバイスにインストールする
 
@@ -28,26 +28,16 @@ Microsoft Project および Microsoft Visio では、Microsoft マネージド�
 - **ポータルサイト**-ユーザーがこれらのアプリケーションをインストールできるようにするには、テナントで会社のポータルを使用できる必要があります。 テナントに会社のポータルが展開されていない場合は、「 [Company portal](company-portal.md)」を参照してください。
 
 ## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス用に Project および Visio を展開する
-サポート要求を送信した後、Microsoft Managed Desktop は、Microsoft Intune によって3つの Azure AD グループと3つのアプリケーション展開を作成し、アプリをテナントに展開します。  
+Microsoft マネージドデスクトップでは、microsoft Project と Microsoft Visio を2つの Win32 アプリケーションとして Microsoft Intune に追加します。 また、「使用可能」の目的で対応するアプリケーションに割り当てられる、Azure Active Directory で2つのグループを作成します。 
 
-**Project と Visio を展開するには**
-1. **サポート要求のファイル**IT 管理者は、このようなアプリケーションをユーザーが使用できるようにするためにサポート要求をファイルする必要があります。 Microsoft の管理されたデスクトップにアクセスする方法については、「 [Microsoft マネージドデスクトップの管理者サポート](../working-with-managed-desktop/admin-support.md)」を参照してください。
-2. **新しい AZURE AD グループへのユーザーの割り当て**Microsoft マネージドデスクトップは、テナントに3つの Azure AD グループと、それに対応する3つのアプリケーション展開を作成します。 IT 管理者は、ユーザーを適切なグループに割り当てる必要があります。
-
->[!NOTE]
->ユーザーは、これらのいずれかの Azure AD グループにのみ割り当ててください。 
+**Project と Visio を展開するには**ユーザーを適切なグループに追加すると、アプリケーションが会社のポータルで利用できるようになります。 同期には数分かかる場合がありますが、ユーザーは会社のポータルからアプリをインストールできます。 
 
 Azure AD グループ名 | 割り当てるユーザー   
  --- | ---
 モダンワークプレース-Office-Project_Install | プロジェクトを必要とするユーザー
 モダンワークプレース-Office-Visio_Install | Visio を必要とするユーザー
 
-これらのグループに割り当てられると、アプリケーションは会社のポータルで利用できるようになります。 同期には数分かかる場合がありますが、ユーザーは会社のポータルからアプリをインストールできます。 
-
 ## <a name="communicate-changes"></a>変更の伝達
-IT 管理者は、プロジェクトと Visio をインストールする方法をユーザーに知らせることが重要です。 これには以下が含まれます。 
+IT 管理者は、プロジェクトと Visio をインストールする方法をユーザーに知らせることが重要です。 保持されるデータには以下が含まれます。 
 - これらのアプリケーションが利用可能な場合にユーザーに通知します。 
 - これらのアプリケーションをポータルサイトからインストールする方法について説明します。
-
->[!NOTE]
->ユーザーは、Microsoft Project または会社のポータルから Microsoft Visio をインストールする前に、すべての Office アプリケーションを閉じる必要があります。 

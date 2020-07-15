@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。 '
-ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005632"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138292"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランをセキュリティで保護するための10位の方法
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -168,7 +168,7 @@ Microsoft 365 環境では、マルウェアからの保護が行われていま
 > [!TIP]
 > また、[手順 4](#4-raise-the-level-of-protection-against-malware-in-mail)で、ブロックするファイルをマルウェア対策リストに追加することもできます。
 
-詳しくは、次のトピックを参照してください。
+詳細については、以下を参照してください。
   
 - [ランサムウェアの処理方法](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
@@ -252,7 +252,7 @@ ATP のフィッシング対策ポリシーを作成するには、[簡単なト
     
 4. [フィッシング対策] ページで、[ **+ 作成**] を選択します。 ウィザードが起動して、フィッシング対策ポリシーを定義する手順を実行します。
     
-5. 下の表に示す推奨事項に従って、ポリシーの名前、説明、および設定を指定します。 詳細については、「 [ATP のフィッシング対策ポリシーのオプションについ](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)て」を参照してください。 
+5. 下の表に示す推奨事項に従って、ポリシーの名前、説明、および設定を指定します。 詳細については、「 [ATP のフィッシング対策ポリシーのオプションについ](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)て」を参照してください。 
     
 6. 設定を確認したら、必要に応じて [**このポリシーを作成**する] または [**保存**] を選択します。
 
@@ -269,7 +269,7 @@ ATP のフィッシング対策ポリシーを作成するには、[簡単なト
 |適用先  <br/> |**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 一覧のドメイン名の横にあるチェックボックスをオンにして、[**追加**] を選択します (contoso.com など)。 [**完了**] を選択します。  <br/> |
 |
    
-詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)セットアップする」を参照してください。
+詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)セットアップする」を参照してください。
   
 ## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9: ATP の安全な添付ファイルを使用して悪意のある添付ファイルやファイルを保護する
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ ATP の安全な添付ファイルポリシーを作成するには、[簡単な
 |適用先  <br/> |受信者のドメインはです。 . . ドメインを選びます。  <br/> |
 |
    
-詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)セットアップする」を参照してください。
+詳細については、「 [Office 365 ATP のフィッシング対策ポリシーを](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)セットアップする」を参照してください。
   
 ## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10: ATP の安全なリンクによるフィッシング攻撃から保護する
 <a name="phishingatp"> </a>

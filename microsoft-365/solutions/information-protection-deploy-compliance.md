@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: ''
-description: Complance のスコアとコンプライアンスマネージャーを使用して個人データの保護レベルを向上させる方法について説明します。
-ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+description: コンプライアンススコアとコンプライアンスマネージャーを使用して、個人データの保護レベルを向上させる方法について説明します。
+ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016369"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126553"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>コンプライアンススコアとコンプライアンスマネージャーを使用して改善アクションを管理する
 
 Microsoft コンプライアンスのスコアとコンプライアンスマネージャーを一緒に使用して、欧州連合の[一般的なデータ保護規則 (GDPR)](../compliance/gdpr.md)、[カリフォルニア消費者保護法 ccpa](../compliance/ccpa-faq.md)、HIPAA (米国医療保険法)、ブラジルのデータ保護法 (LGPD) などのデータプライバシー規制に関連する改善を管理することができます。 
 
 この記事では、データのプライバシー保護のためにこれらのツールを使用するためのガイダンスを示します。
+
+![改善アクションを管理するためのコンプライアンススコアとコンプライアンスマネージャー](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >コンプライアンスマネージャーで提供されるお客様のアクションは推奨事項です。 実装する前に、これらの推奨事項の有効性を規制環境で評価する必要があります。 コンプライアンスマネージャーの推奨事項は、コンプライアンスの保証として解釈されないようにする必要があります。

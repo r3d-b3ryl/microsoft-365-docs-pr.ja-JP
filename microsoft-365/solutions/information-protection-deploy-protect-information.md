@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスの機能を展開し、個人情報を保護します。
-ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844694"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126456"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>情報をデータプライバシーの規則に従って保護する
 
@@ -33,6 +33,8 @@ ms.locfileid: "44844694"
 - データ損失防止 (DLP)
 - Office メッセージの暗号化 (OME)
 - Teams および sites のアクセス制御
+
+![データプライバシー規制の対象となる個人情報を保護する主なサービス](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
 >このソリューションは、データのプライバシー規制に従って情報を保護するためのセキュリティとコンプライアンスの機能について説明します。 Microsoft 365 のセキュリティ機能の完全な一覧については、「 [microsoft 365 のセキュリティに関するドキュメント](https://docs.microsoft.com/microsoft-365/security/)」を参照してください。 Microsoft 365 のコンプライアンス機能の完全な一覧については、「 [microsoft 365 コンプライアンスのドキュメント](https://docs.microsoft.com/microsoft-365/compliance/)」を参照してください。
@@ -64,7 +66,7 @@ Microsoft 365 で情報保護スキームの使用を開始するには、次の
 
 Microsoft[情報保護ソリューション](../compliance/protect-information.md)には、microsoft 365、microsoft Azure、および microsoft Windows にわたるさまざまな統合機能が含まれています。 Microsoft 365 では、情報保護ソリューションには次のものが含まれています。
 
-- [顧客キーによるサービスの暗号化](../compliance/customer-key-overview.md)
+- [カスタマー キーによるサービスの暗号化](../compliance/customer-key-overview.md)
 - [機密情報の種類](../compliance/what-the-sensitive-information-types-look-for.md)(「[データプライバシーのリスクを評価し機密アイテムを識別](information-protection-deploy-assess.md)する」の記事を参照)
 - [機密ラベル](../compliance/sensitivity-labels.md) 
   - サービス/コンテナーレベル
@@ -82,7 +84,7 @@ Microsoft 365 以外の情報保護機能の詳細については、以下を参
 - [Microsoft エンドポイントマネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows 情報保護](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
-## <a name="sensitivity-labels"></a>機密ラベル
+## <a name="sensitivity-labels"></a>秘密度ラベル
 
 Microsoft Information Protection フレームワークからの機密ラベルを使用すると、ユーザーの生産性やコラボレーション機能が妨げられることなく、組織のデータを分類して保護することができます。
 
@@ -102,11 +104,11 @@ Microsoft Information Protection フレームワークからの機密ラベル�
         - 電子メールは、ドラフトおよび送信されます。
       - Exchange を経由して送信される電子メールに加えて、SharePoint と OneDrive の保存ファイルへの自動アプリケーション用の機密ラベルがあります。 これらは、すべてのサイトまたは特定のサイトを対象としており、これらの環境に保存されているファイルに自動的に適用されます。
 
-2. 過去または代替の方法で、現在の機密ラベルを合理化する
+2. 過去または代替の方法での現在の機密ラベルの合理化
 
    - Azure Information Protection
 
-      現在の機密ラベル付けスキームは、既存の[Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)のラベル実装と調整する必要がある場合があります。
+      現在の秘密度のラベル付けスキームは、既存の[Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)のラベル実装と調整する必要がある場合があります。
    - OME
 
       電子メール保護と、OME のような既存の電子メール暗号化方法に対してモダン感度ラベルを使用することを計画している場合は、それらを共存させることができますが、どちらのシナリオを適用するかを理解しておく必要があります。 「 [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities)」を参照してください。これには、モダン感度ラベルと OME ベースの保護を比較した表が含まれます。
@@ -174,7 +176,7 @@ Microsoft 365 コンプライアンスセンターから機密ラベルを発行
 - ユーザーへの依存は、一部のコンテンツを正しく分類するためにのみ必要。
 - ユーザーはポリシーについて把握する必要がなくなり、自分たちの仕事に集中できる。
 
-自動ラベル付けでは、ユーザーへのラベルの推奨がサポートされます。また、ラベルを自動的に適用することもできます。 ただし、どちらの場合も、ユーザーはラベルを承諾または拒否するかどうかを決定し、コンテンツの正しいラベル付けを行います。
+自動ラベル付けは、ラベルを自動的に適用するだけでなく、ユーザーへのラベルの推奨をサポートします。 ただし、どちらの場合も、ユーザーはラベルを承諾または拒否するかどうかを決定し、コンテンツの正しいラベル付けを行います。
 
 このクライアント側のラベル付けでは、ドキュメントを保存する前であってもラベルを適用できるため、ドキュメントの遅延が最小限に抑えられます。 ただし、すべてのクライアント アプリが自動ラベル付けをサポートしているわけではありません。 この機能は、Azure Information Protection の統一されたラベル付けクライアントと、[いくつかのバージョンの Office アプリ](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)でサポートされています。
 
@@ -235,7 +237,7 @@ DLP は、正常性レコードが含まれるドキュメントまたは電子�
 
 - 継続的な DLP ポリシー管理。組織内のユーザーが機密情報の種類、保持ラベル、規制、コンプライアンスポリシーの変更に関するポリシーを運用および調整する必要があります。
 
-DLP ポリシー条件では機密ラベルを使用できませんが、機密情報の種類に基づいて自動適用される機密ラベルだけで、アクセスを防止するための特定の保護シナリオを実現することが可能です。 堅牢な機密ラベルが設定されている場合は、次の理由から DLP を使用して保護を強化するかどうかを検討してください。
+DLP ポリシー条件では機密ラベルを使用できませんが、機密情報の種類に基づいて自動適用される機密ラベルだけで、アクセスを防止するための特定の保護シナリオを実現することが可能です。 堅牢な機密のラベル付けが行われている場合は、次の理由から DLP を使用して保護を強化するかどうかを検討します。
 
   - DLP を使用すると、ファイルの共有ができなくなります。 機密ラベルは、アクセスを禁止するだけです。
 
@@ -279,7 +281,7 @@ DLP ポリシーの作成と適用の詳細については、[この記事](../c
 3. 要件に対処し、データプライバシーのホットスポットを保護および管理する全体的な戦略。
 4. データプライバシー管理戦略に対処するための段階的なアクションプランは、所定の場所に配置されます。
 
-これらの要素が決定されたら、機密情報の種類、機密ラベル付けの分類、および DLP ポリシーを使用できます。 この図は例を示しています。
+これらの要素を決定したら、機密情報の種類、秘密のラベル付け分類、および DLP ポリシーを使用できます。 この図は例を示しています。
 
 ![DLP を使用した機密ラベルの例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
@@ -319,7 +321,7 @@ DLP ポリシーの作成と適用の詳細については、[この記事](../c
 | 外部関係者 <br> 外部/コンシューマーユーザーと安全に通信および共同作業を行う | あり。ラベルで受信者を事前定義する | 推奨–受信者に基づくジャストインタイム保護 |
 | 有効期限/失効を含む内部 + パートナー <br> 有効期限と失効がある内部ユーザーおよび信頼できるパートナーとメールおよびコンテンツのアクセスを制御する | ユーザーがファイルを手動で追跡および取り消すことができるように、アクセス時間を使用して、ユーザーが完全にカスタマイズされた保護を推奨 | いいえ–内部メールの失効または有効期限がありません |
 | 有効期限/失効を含む外部の関係者 <br> 有効期限と失効を使用して、外部/コンシューマーユーザーのメールおよびコンテンツのアクセスを制御する | はい。ユーザーは手動でファイルを追跡できます。 | 推奨 (E5) –管理者はセキュリティ & コンプライアンスセンターからメールを取り消すことができます。 |
-| オートラベル <br> 組織は、特定の機密コンテンツや特定の受信者によるメール/添付ファイルの自動保護を希望しています。 | 推奨 (E5)-Exchange および Outlook クライアントでの自動ラベル付け、メールフロールールと DLP ポリシーを強化する | あり。暗号化のみを使用したメールフロールールと DLP ポリシー、または保護を転送しない |
+| 自動ラベル付け <br> 組織は、特定の機密コンテンツや特定の受信者によるメール/添付ファイルの自動保護を希望しています。 | 推奨 (E5)-Exchange および Outlook クライアントでの自動ラベル付け、メールフロールールと DLP ポリシーを強化する | あり。暗号化のみを使用したメールフロールールと DLP ポリシー、または保護を転送しない |
 ||||
 
 この2つの方法では、エンドユーザーと管理者のエクスペリエンスにも違いがあります。

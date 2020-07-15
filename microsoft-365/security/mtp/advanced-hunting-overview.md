@@ -18,11 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049634"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138280"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -43,7 +44,7 @@ Microsoft 365 セキュリティセンターでは、高度な検索はさまざ
 
 | 学習目標 | 説明 | リソース |
 |--|--|--|
-| **言語に慣れる** | 高度な捜索は、同じ構文および演算子をサポートする [Kusto クエリ言語](https://docs.microsoft.com/azure/kusto/query/)に基づいています。 最初のクエリを実行して、クエリ言語を学習します。 | [クエリ言語の概要](advanced-hunting-query-language.md) |
+| **言語に慣れる** | 高度な検索は、 [Kusto クエリ言語](https://docs.microsoft.com/azure/kusto/query/)に基づいており、同じ構文および演算子をサポートしています。 最初のクエリを実行して、クエリ言語を学習します。 | [クエリ言語の概要](advanced-hunting-query-language.md) |
 | **クエリ結果の使用方法について説明します。** | グラフと、結果を表示またはエクスポートするさまざまな方法について説明します。 クエリをすばやく微調整して、より豊富な情報を取得する方法について説明します。 | [クエリ結果を操作する](advanced-hunting-query-results.md) |
 | **スキーマを理解する** | スキーマとその列のテーブルについて、高レベルで十分に理解してください。 これにより、データを検索する場所およびクエリの作成方法を決定できます。 | [スキーマ リファレンス](advanced-hunting-schema-tables.md) |
 | **定義済みのクエリを活用する** | さまざまな脅威の捜索シナリオを網羅する定義済みクエリのコレクションを調べます。 | - [共有クエリを使用する](advanced-hunting-shared-queries.md)<br>- [ハントに移動](advanced-hunting-go-hunt.md) |
@@ -53,6 +54,11 @@ Microsoft 365 セキュリティセンターでは、高度な検索はさまざ
 ## <a name="get-access"></a>アクセス権を取得する
 高度な検索やその他の[Microsoft の脅威保護](microsoft-threat-protection.md)機能を使用するには、Azure AD で適切なロールが割り当てられている必要があります。 エンドポイントデータへのアクセスは、Microsoft Defender ATP のロールベースのアクセス制御の設定の影響を受けます。 [Microsoft の脅威保護へのアクセスの管理について確認する](mtp-permissions.md)
 
+## <a name="data-freshness-and-update-frequency"></a>データの鮮度と更新頻度
+高度な検索データは、それぞれ異なる方法で2つの異なる種類に分類できます。
+
+- **イベントまたはアクティビティのデータ**—アラート、セキュリティイベント、システムイベント、および定期的な評価に関する表について説明します。 高度な検索では、このデータを収集するセンサーが、対応するクラウドサービスに正常に送信された直後に受信します。 たとえば、Microsoft Defender ATP および Azure ATP で利用可能になった直後に、ワークステーションまたはドメインコントローラーの正常なセンサーからのイベントデータのクエリを開始することができます。
+- **エンティティデータ**—ユーザーとデバイスに関する統合情報を表に示します。 このデータは、Active Directory エントリなどの比較的静的なデータソースおよびイベントログなどの動的ソースから取得されます。 最新のデータを提供するために、新しい情報で15分ごとにテーブルが更新され、完全には設定されていない行が追加されます。 24時間ごとにデータが統合され、各エンティティについての最新の最も包括的なデータセットを含むレコードが挿入されます。
 
 ## <a name="related-topics"></a>関連項目
 - [クエリ言語の説明](advanced-hunting-query-language.md)
