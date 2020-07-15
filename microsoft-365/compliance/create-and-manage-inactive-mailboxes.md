@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の非アクティブなメールボックス機能を使用して、削除されたメールボックスの内容を保持する方法について説明します。
-ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 286c1b363f7ceae42d7eaef13635ccf037bb4b21
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023360"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127544"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -42,7 +42,7 @@ Microsoft 365 により、削除済みメールボックスの内容を保持す
 
 - メールボックスが削除される前に、訴訟ホールドまたはアイテム保持ポリシー (コンテンツを保持または保持してから削除するように設定されている) が適用されていない場合、メールボックスの内容は保持または検出可能になりません。 なお、削除されたメールボックスは、削除後 30 日以内であれば回復できますが、回復されない場合、メールボックスとその内容は 30 日後に完全に削除されます。
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). アイテム保持ポリシーの詳細については、「 [Microsoft 365 のアイテム保持ポリシーの概要](retention-policies.md)」を参照してください。
+- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). アイテム保持ポリシーの詳細については、「[アイテム保持ポリシーと保持ラベルについ](retention.md)て」を参照してください。
   
 ## <a name="create-an-inactive-mailbox"></a>非アクティブなメールボックスを作成する
 
@@ -56,9 +56,9 @@ Microsoft 365 により、削除済みメールボックスの内容を保持す
   
 メールボックスを訴訟ホールドの対象にする、またはアイテム保持ポリシーを適用するための詳しい手順については、以下を参照してください。
   
-- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
+- [メールボックスを訴訟ホールドの対象にする](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [アイテム保持ポリシーの概要](retention-policies.md)
+- [Office 365 のアイテム保持ポリシーと保持ラベルについて](retention.md)
     
 > [!NOTE]
 > 訴訟ホールドとアイテム保持ポリシーについては、無期限保持または時間ベースの保持を作成できます。 無期限のホールドでは、非アクティブなメールボックスの内容が永久に保持されるか、またはそのホールドが除去されるかホールド期間が変更されるまで保持されます。 ホールドまたはアイテム保持ポリシーを解除すると、非アクティブなメールボックスは完全な削除対象としてマークされ、メールボックスの内容は保持されなくなり、検索もできなくなります (メールボックスは 30 日より前に削除されていることを前提とします)。 時間ベースの保持またはアイテム保持ポリシーでは、保留期間を指定します。 この期間は、アイテム ベースで、メールボックス アイテムが受信または作成された日から計算されます。 メールボックス アイテムのホールド期間が切れると、そのアイテムが非アクティブなメールボックスの [回復可能なアイテム] フォルダーにあるかそこに移動された場合、そのアイテムは削除済みアイテム保持期間が切れた後に非アクティブなメールボックスから完全に削除されます。 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819067"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127334"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -336,7 +336,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
     
   - Microsoft [電子情報開示ツール](search-for-content.md)を使用して、インポートしたデータを検索する。 
     
-  - [Microsoft 365 アイテム保持ポリシー](retention-policies.md)を使用して、インポートしたデータの保持期間、および保持期間の経過後に実行するアクションを制御する。 
+  - [Microsoft 365 アイテム保持ポリシー](retention.md)を使用して、インポートしたデータの保持期間、および保持期間の経過後に実行するアクションを制御する。 
     
   - インポートしたデータに影響を与えるメールボックス関連イベントを、[監査ログ](search-the-audit-log-in-security-and-compliance.md)で検索する。 
     

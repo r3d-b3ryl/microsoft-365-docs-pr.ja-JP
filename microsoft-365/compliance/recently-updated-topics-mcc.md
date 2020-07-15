@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: Microsoft 365 コンプライアンスセンターの機能と同様に、ヘルプコンテンツは常に進化しています。 今月の新機能と更新された機能について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 3060cadb5752d8420667105113e23e235ab6f306
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035642"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127514"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 コンプライアンスコンテンツの最新の更新プログラム
 
@@ -202,7 +202,7 @@ Insider リスク管理の公式リリースをサポートするために、以
 
 ### <a name="records-management"></a>レコード管理
 
-[保持ラベルの概要](labels.md)(更新)<br>条件に基づいて保持ラベルを適用するためのセクションには、trainable 分類子を使用するためのオプションが含まれるようになりました。
+[保持ラベルの概要](retention.md)(更新)<br>条件に基づいて保持ラベルを適用するためのセクションには、trainable 分類子を使用するためのオプションが含まれるようになりました。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
