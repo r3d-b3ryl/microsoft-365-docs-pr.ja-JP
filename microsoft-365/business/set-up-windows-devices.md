@@ -67,7 +67,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
     
 3. Windows 10 デバイスのセットアップを完了します。
     
-   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
+   完了すると、組織の Azure AD に接続されます。「[デバイスが Azure AD に接続されていることを確認する](#verify-the-device-is-connected-to-azure-ad)」を参照して確認します。 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>既にセットアップして、Windows 10 Pro を実行しているデバイスの場合
 
@@ -97,7 +97,7 @@ Windows 10 Pro Creators Update が実行されている新しいデバイス、�
   
 6. [**組織が組織**であることを確認してください] ページで、情報が正しいことを確認し、[**参加**] をクリックします。
   
-   On the **You're all set!** page, click **Done**.
+   [ **すべて完了しました。**] ページで、[ **完了**] をクリックします。
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   

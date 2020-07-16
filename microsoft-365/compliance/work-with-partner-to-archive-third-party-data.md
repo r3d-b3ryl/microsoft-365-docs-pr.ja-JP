@@ -51,7 +51,7 @@ Microsoft パートナーと協力して、サードパーティのデータソ�
     
 3. パートナーコネクタは、既知のエンドポイントを介して Exchange Web サービス (EWS) を使用して、Microsoft 365 の Azure サービスに接続します。
     
-4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
+4. アイテムは特定のユーザーのメールボックスまたは "catch-all" というサードパーティ データのメールボックスにインポートされます。アイテムが特定のユーザーのメールボックスにインポートされるか、またはサードパーティ データのメールボックスにインポートされるかは、以下の条件に基づきます。
     
    1. ユーザー**アカウントに対応するユーザー ID を持つアイテム:** パートナーコネクタがサードパーティのデータソース内のアイテムのユーザー ID を Office 365 の特定のユーザー ID にマップできる場合、そのアイテムはユーザーの [回復可能なアイテム] フォルダー**内の [削除] フォルダーに**コピーされます。 ユーザーがパージフォルダー内のアイテムにアクセスできません。 ただし、電子情報開示ツールを使用して、[削除] フォルダー内のアイテムを検索できます。
     

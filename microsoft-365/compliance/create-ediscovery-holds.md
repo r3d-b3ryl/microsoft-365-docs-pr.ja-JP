@@ -97,7 +97,7 @@ SharePoint サイトにあるドキュメントに対してクエリベースの
   
 電子情報開示の保持の統計情報については、次の点に注意してください。
   
-- The total number of items on hold indicates the number of items from all content sources that are placed on hold. If you've created a query-based hold, this statistic indicates the number of items that match the query.
+- 保留にされているアイテムの合計数は、すべてのコンテンツ ソースのうち、保留にされているアイテム数を示します。クエリベースの保留リストを作成した場合、この統計情報は、クエリに一致するアイテム数を示します。
 
 - 保留中のアイテム数には、コンテンツの場所にあるインデックスがないアイテムも含まれます。 クエリベースの保持を作成すると、コンテンツの場所にあるすべてのインデックスのないアイテムが保持されます。 これには、クエリベースの保持の検索条件に一致しないインデックスのないアイテムと、日付範囲の範囲外にある可能性のあるインデックスを持たないアイテムが含まれます。 これは、検索クエリと一致しない、または日付範囲の条件によって除外されたインデックスのないアイテムが検索結果に含まれていない場合に、検索を実行したときの動作とは異なります。 インデックスのないアイテムの詳細については、「[部分的にインデックス](partially-indexed-items-in-content-search.md)を作成したアイテム」を参照してください。
 

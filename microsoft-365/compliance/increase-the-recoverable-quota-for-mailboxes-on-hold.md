@@ -82,9 +82,9 @@ Exchange Online の新しいメールボックスに自動的に適用される�
   
 ## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>手順 2: 保留中のメールボックスの新しい Exchange アイテム保持ポリシーを作成する
 
-The next step is to create a new retention policy and add retention tags to it, including the Recoverable Items RPT that you created in Step 1. This new policy will be applied to mailboxes on hold in the next step. 
+次の手順では、新しいアイテム保持ポリシーを作成し、そのポリシーに保持タグ (手順 1 で作成した回復可能なアイテムの RPT を含む) を追加します。この新しいポリシーは、次の手順で保持中のメールボックスに適用します。  
   
-Before you create the new retention policy, determine the additional retention tags that you want to add. For a list of the retention tags that are added to the Default MRM Policy and for information about creating new retention tags, see the following:
+新しいアイテム保持ポリシーを作成する前に、追加する保持タグを決定します。Default MRM Policy に追加されている保持タグの一覧、および新しい保持タグを作成する方法については、以下を参照してください。
   
 - [Exchange Online の既定のアイテム保持ポリシー](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
@@ -106,7 +106,7 @@ EAC または Exchange Online の PowerShell を使用して、アイテム保�
     
     ![カスタムの [回復可能なアイテム] 保持タグを選択する](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
   
-5. Select additional retention tags to add to the retention policy. For example, you might want to add the same tags that are included in the Default MRM Policy.
+5. アイテム保持ポリシーに追加する保持タグを選択します。たとえば、Default MRM Policy に含まれているのと同じタグを追加します。
     
 6. 保持タグの追加が完了したら、**[OK]** をクリックします。
     

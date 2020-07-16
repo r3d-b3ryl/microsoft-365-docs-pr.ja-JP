@@ -75,7 +75,7 @@ Microsoft では、管理者アクセス許可の悪用、マルウェアアク�
 
 ## <a name="task-6-classify-and-protect-sensitive-data"></a>作業 6: 機密データを分類して保護する
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+組織の従業員は、業務を行うために組織内外の関係者と共同作業を行います。このためコンテンツはファイアウォールの内側だけでなく、さまざまなデバイス、アプリ、サービスを越えて存在することになります。この場合、組織のビジネス ポリシーとコンプライアンス ポリシーを満たす安全な方法でコンテンツを保護することが必要です。
 
 [機密ラベル](sensitivity-labels.md)を使用すると、組織のデータを分類して保護すると同時に、ユーザーの生産性とその機能の連携が妨げられないようにすることができます。 機密ラベルを使用して暗号化と使用制限を適用する。視覚的マーキングを適用し、プラットフォームとデバイス、社内およびクラウドの間で情報を保護します。
 

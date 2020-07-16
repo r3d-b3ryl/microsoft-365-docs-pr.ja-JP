@@ -1,5 +1,5 @@
 ---
-title: 手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
+title: 手順 3. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 64f9aad04dd562e570d81c3c2993c2641354b95a
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844968"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560495"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
+# <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 3. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
 リモート ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドとオンプレミスでデータを安全に保つための最新の管理機能を提供します。 
 
@@ -34,50 +34,33 @@ ms.locfileid: "44844968"
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Microsoft Intune は、Microsoft 365 に付属しているモバイル デバイス管理 (MDM) およびモバイル アプリケーション管理 (MAM) に重点を置いた、クラウドベースのサービスです。 
-
-- **MDM:** 組織所有のデバイスについては、設定、機能、およびセキュリティを含むフル コントロールを行うことができます。 デバイスは、ルールと設定で Intune ポリシーを受信するようにすることで 「登録」 されます。 たとえば、パスワードや PIN の要件を設定したり、VPN 接続を作成したり、脅威の保護を設定したりできます。
-
-- **MAM:** リモート ワーカーは個人のデバイス、いわゆる、「Bring-Your-Own Device (BYOD)」 にフル コントロールが必要でないかもしれません。 リモート ワーカーに選択肢を提示しながら、組織を保護することができます。 たとえば、リモート ワーカーが組織のリソースにフル アクセスすることを希望する場合、使用するデバイスを登録することができます。 または、これらのユーザーが電子メールや Microsoft Teams にのみアクセスできるようにする場合は、これらのアプリを使用できるように多要素認証 (MFA) を必要とするアプリ保護ポリシーを使用します。
+Intune は、組織のデータへのアクセスに使用されるデバイスを管理していない場合にデータを保護できるように設計されています。 Azure Active Directory (Azure AD) 条件付きアクセスと組み合わせた Intune アプリ保護ポリシーにより、モバイル デバイス上のデータをきめ細かく制御できます。 Intune では、適切な条件下で適切な人だけが会社のデータにアクセスできるようにする包括的なポリシーを定義し、Office、Outlook、およびその他のモバイル アプリ内でデータを使用する方法を制御することでデータを保護し続けます。
 
 詳細については、「[Microsoft Intune の概要](https://docs.microsoft.com/intune/fundamentals/what-is-intune)」をご覧ください。
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
-Configuration Manager は、ネットワークまたはインターネットベースのデスクトップ、サーバー、ノート PC を管理できるオンプレミスの管理ソリューションです。 Configuration Manager を使用して、アプリ、ソフトウェアの更新、およびオペレーティング システムを展開します。 また、コンプライアンスの状況を監視し、リアルタイムでクライアントに対してクエリの実行と操作を行うことができます。 クラウド対応にして、Intune、Azure AD、Microsoft Defender ATP、およびその他のクラウド サービスと統合できます。 
+Configuration Manager は、ネットワークまたはインターネットベースのデスクトップ、サーバー、ノート PC を管理できるオンプレミスの管理ソリューションです。 クラウド対応にして、Intune、Azure AD、Microsoft Defender ATP、およびその他のクラウド サービスと統合できます。 Configuration Manager を使用して、アプリ、ソフトウェアの更新、およびオペレーティング システムを展開します。 また、コンプライアンスの状況を監視し、リアルタイムでクライアントに対してクエリの実行と操作を行うことができます。
 
 詳細については、この「[Configuration Manager の概要](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)」をご覧ください。
 
 ## <a name="co-management"></a>共同管理
 
-共同管理では、Intune などの Microsoft 365 クラウド サービスを使用して、既存のオンプレミスの Configuration Manager とクラウドを組み合わせて投資することができます。 異なるワークロードの管理権限を Configuration Manager または Intune のどちらにするかを選択します。 
+共同管理では、Intune などの Microsoft 365 クラウド サービスを使用して、既存のオンプレミスの Configuration Manager とクラウドを組み合わせて投資することができます。 7 つの異なるワークロード グループの管理権限を Configuration Manager または Intune のどちらにするかを選択します。
 
-共同管理では、条件付きアクセスやデバイス コンプライアンスの強化を含む、Intune ベースのクラウド機能を使用します。 一部のタスクはオンプレミスに保ち、他のタスクはクラウドで実行します。
+エンドポイント マネージャーの一部として、共同管理は条件付きアクセスを含むクラウド機能を使用します。 一部のタスクはオンプレミスに保ち、他のタスクは Intune を使用してクラウドで実行します。
 
 詳細については、「[共同管理の概要](https://docs.microsoft.com/mem/configmgr/comanage/overview)」をご覧ください。
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
-Desktop Analytics は、Configuration Manager と統合し、分析情報とインテリジェンスを提供するクラウドベースのサービスであり、Windows クライアントに関する情報に基づいて意思決定を行うことができます。 組織のデータと、Microsoft クラウド サービスに接続されている数百万のデバイスから収集されたデータを組み合わせます。 
-
-Desktop Analytics では、次のことができます。
-
-- 組織内で実行されているアプリのインベントリを作成します。
-- 最新の Windows 10 機能更新プログラムの互換性を評価します。
-- 互換性の問題を特定し、クラウドに対応したデータ インサイトに基づいて対策の提案を受け取ります。
-- 最小単位のデバイスでアプリケーションとドライバーの全体を表すパイロット グループを作成します。
-- Windows 10 をパイロットおよび運用管理デバイスに展開します。
+Desktop Analytics は、Configuration Manager と統合し、分析情報とインテリジェンスを提供するクラウドベースのサービスであり、Windows クライアントに関する情報に基づいて意思決定を行うことができます。 組織のデータと、Microsoft クラウド サービスに接続されている数百万のデバイスから収集されたデータを組み合わせます。 Desktop Analytics を使用すると、組織内で実行されているアプリのインベントリの作成、最新の Windows 10 機能の更新プログラムとアプリの互換性の評価、互換性の問題の特定、クラウド対応のデータの分析情報に基づく軽減案の提供、アプリケーション全体と最小限のデバイス セットのドライバーの資産を表すパイロット グループの作成、および Windows 10 のパイロットおよび運用管理デバイスへの展開が可能になります。
 
 詳細については、「[Desktop Analytics の概要](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)」をご覧ください。
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
-Windows Autopilot は、ゼロタッチでセルフサービスの Windows 展開プラットフォームです。 これは、新しいデバイスのセットアップと事前構成に使用されるテクノロジのコレクションで、生産性の高い使用ができるようにデバイスを準備するためのものです。 Windows Autopilot を使用してデバイスのリセット、転用、復元を行うこともできます。 
-
-Windows Autopilot で、IT 部門は管理するインフラストラクチャがほとんどないかまったくない状態かつ簡単でシンプルなプロセスでデバイスを事前に構成できます。 
-
-- ユーザーから見ると、デバイスを使用できるようにするための簡単な操作が数ステップあるだけです。 
-- IT の観点からすると、エンド ユーザーに必要な唯一の操作は、ネットワークに接続し、資格情報を確認することです。
+Windows Autopilot は、ゼロタッチでセルフサービスの Windows 展開プラットフォームです。 これは、新しいデバイスのセットアップと事前構成に使用されるテクノロジのコレクションで、生産性の高い使用ができるようにデバイスを準備するためのものです。 Windows Autopilot を使用してデバイスのリセット、転用、復元を行うこともできます。 この解決方法で、IT 部門は管理するインフラストラクチャがほとんどないかまったくない状態かつ簡単でシンプルなプロセスで上記の手順を行うことができます。 ユーザーから見ると、デバイスを使用できるようにするための簡単な操作が数ステップあるだけです。 IT の観点からすると、エンド ユーザーに必要な唯一の操作は、ネットワークに接続し、資格情報を確認することです。
 
 詳細については、「[Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)」をご覧ください。
 
@@ -95,4 +78,4 @@ Windows Autopilot で、IT 部門は管理するインフラストラクチャ�
 
 ## <a name="next-step"></a>次の手順
 
-リモート ワーカーが、Microsoft Teams などの Microsoft 365 の生産性を高めるアプリを使用する方法については [手順 5](empower-people-to-work-remotely-teams-productivity-apps.md) を続けてください。
+[手順 4](empower-people-to-work-remotely-teams-productivity-apps.md) に進み、オンプレミスのアプリとサービスへのリモート アクセスを提供します。

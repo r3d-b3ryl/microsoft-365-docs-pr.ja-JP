@@ -24,18 +24,18 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: '[サブスクリプション] ページにアクセスして、組織のサブスクリプションを確認する方法について説明します。'
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0e2ff42ad75e2006470c441c6c3403fcfd127e93
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780507"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44431607"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
 管理者である場合は、管理センターにアクセスすることによって、組織のサブスクリプションを確認できます。
   
- **管理者ではない場合**: [Microsoft 365 for business 製品またはライセンスの種類を](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)参照してください。
+ **管理者ではない場合**: [Microsoft 365 for business 製品またはライセンスの種類を](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)参照してください。
 
 ::: moniker range="o365-worldwide"
 
@@ -53,7 +53,7 @@ ms.locfileid: "44780507"
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
+3. 複数のサブスクリプションを取得している場合は、サブスクリプションの詳細情報の隣の列に、購入済みのサブスクリプションの一覧と試用版のサブスクリプションが表示されます。既定では、一覧の上部にあるサブスクリプションが自動的に選択され、そのサブスクリプションの詳細情報が表示されます。
 
     複数のサブスクリプションを持っている場合は、詳細情報を表示する1つのサブスクリプションを選択します。 サブスクリプション カードにより、そのサブスクリプションの情報が更新されます。
 
@@ -72,7 +72,7 @@ ms.locfileid: "44780507"
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
+3. 複数のサブスクリプションを取得している場合は、サブスクリプションの詳細情報の隣の列に、購入済みのサブスクリプションの一覧と試用版のサブスクリプションが表示されます。既定では、一覧の上部にあるサブスクリプションが自動的に選択され、そのサブスクリプションの詳細情報が表示されます。
 
     複数のサブスクリプションを持っている場合は、詳細情報を表示する1つのサブスクリプションを選択します。 サブスクリプション カードにより、そのサブスクリプションの情報が更新されます。
 
