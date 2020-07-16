@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: このソリューション シナリオは、保持ラベルを使用して SharePoint Online に保存されている製品関連ドキュメントのライフサイクルを管理する方法を示します。 これは、ドキュメントを使用してコンテンツを分類し、特に保持ラベルを自動適用し、イベント ベースの保持を設定することによって行われます。
-ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419103"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126478"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する
 
@@ -108,11 +108,11 @@ ms.locfileid: "44419103"
 
 - **保持期間:**  5 年 (1825 日)
 
-- **レコード ラベル:** 保持ラベルを構成して、コンテンツを[レコード](labels.md#using-retention-labels-for-records-management)として分類する(レコードとして分類されたドキュメントは、ユーザーが変更または削除することはできません)
+- **レコード ラベル:** 保持ラベルを構成して、コンテンツを[レコード](records.md)として分類する(レコードとして分類されたドキュメントは、ユーザーが変更または削除することはできません)
 
 - **ファイル計画記述子:** (シナリオを簡素化するため、ファイル記述子は提供されません)
 
-次のスクリーンショットは、セキュリティおよびコンプライアンス センターで製品の仕様の[保持ラベル](labels.md)を作成するときの設定を示しています。 保持ラベルを作成するときに、**製品の中止**のイベントの種類を作成できます。 以下の手順を参照してください。
+次のスクリーンショットは、セキュリティおよびコンプライアンス センターで製品の仕様の[保持ラベル](retention.md#retention-labels)を作成するときの設定を示しています。 保持ラベルを作成するときに、**製品の中止**のイベントの種類を作成できます。 以下の手順を参照してください。
 
 ![製品の仕様のラベルの保持設定](../media/SPRetention5.png)
 
@@ -144,7 +144,7 @@ ms.locfileid: "44419103"
 
 ## <a name="classifying-content-by-auto-applying-retention-labels"></a>保持ラベルの自動適用によるコンテンツの分類
 
-キーワード クエリ言語 (KQL) を使用して、このシナリオ用に作成した保持ラベルを[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。 KQL は、検索クエリの作成に使用される言語です。 KQL では、キーワードまたは管理プロパティを使用して検索できます。 KQL の詳細については、<https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference> を参照してください。
+キーワード クエリ言語 (KQL) を使用して、このシナリオ用に作成した保持ラベルを[自動適用](apply-retention-labels-automatically.md)します。 KQL は、検索クエリの作成に使用される言語です。 KQL では、キーワードまたは管理プロパティを使用して検索できます。 KQL の詳細については、<https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference> を参照してください。
 
 大まかに言うと、Microsoft 365 に、「**製品の仕様**の保持ラベルを、**最終版**の**状態**および**製品の仕様**の**ドキュメントの種類**であるすべてのドキュメントに適用する」ように指示します。 **状態**および**ドキュメントの種類**は、以前に「[情報アーキテクチャ](#information-architecture)」セクションで製品のドキュメント コンテンツの種類に対して定義したサイト列であることを思い出してください。 これを実現するには、検索スキーマを構成する必要があります。
 
@@ -268,7 +268,7 @@ KQL クエリが正しく機能していることを確認したので、KQL ク
 
 保持ラベルが自動的に正常に適用されたので、特定の製品の生産終了を示すイベントに注目しましょう。 このイベントが発生すると、ドキュメントに自動適用される保持ラベルで定義された保持期間の開始がトリガーされます。 たとえば、製品の仕様の場合、「生産終了」イベントがトリガーされると、5 年間の保持期間が開始されます。
 
-セキュリティおよびコンプライアンス センターで ([**レコード管理**] > [**イベント**] に移動して) イベントを手動で作成し、イベントの種類を選択し、正しい資産 ID を設定してイベントの日付を入力できます。 詳細については、「[イベント ベースの保持の概要](event-driven-retention.md)」を参照してください。
+セキュリティおよびコンプライアンス センターで ([**レコード管理**] > [**イベント**] に移動して) イベントを手動で作成し、イベントの種類を選択し、正しい資産 ID を設定してイベントの日付を入力できます。 詳細については、[「イベントが発生したときに保持を開始 」](event-driven-retention.md) を参照してください。
 
 このシナリオでは、外部の生産システムからイベントを生成することにより、イベントを自動的に作成します。 この場合、イベントを生成するシステムは、製品が生産中かどうかを示す単純な SharePoint リストと、リストに関連付けられてイベントをトリガーする [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) です。 実際のシナリオでは、HR や CRM システムなど、イベントを生成する任意のシステムを使用できます。 Flow には、Exchange、SharePoint、Teams、Dynamics 365 などの Microsoft 365 ワークロード、および Twitter、Box、Salesforce、Workdays などのサード パーティ アプリ向けのすぐに使用できる多くの操作と文書パーツが含まれています。 これにより、Flow をこれらのシステムに簡単に統合できます。 詳細については、「[イベント ベースの保持を自動化する](automate-event-driven-retention.md)」を参照してください。
 
@@ -333,7 +333,7 @@ KQL クエリが正しく機能していることを確認したので、KQL ク
 
 ### <a name="more-about-asset-ids"></a>資産 ID の詳細
 
-「[イベント ベースの保持の概要](event-driven-retention.md)」で説明したように、イベントの種類、ラベル、イベント、資産 ID の関係を理解することが重要です。 資産 ID は、SharePoint と OneDrive の別のドキュメント プロパティです。 イベントによって保持期間がトリガーされるドキュメントをさらに識別するのに役立ちます。 既定では、SharePoint にはイベント ベースの保持に使用できる資産 ID プロパティがあります。
+[「イベントが発生したときに保持を開始」](event-driven-retention.md) の記事で説明したように、イベントの種類、保持ラベル、イベント、資産 ID の関係を理解することが重要です。 資産 ID は、SharePoint と OneDrive の別のドキュメント プロパティです。 イベントによって保持期間がトリガーされるドキュメントをさらに識別するのに役立ちます。 既定では、SharePoint にはイベント ベースの保持に使用できる資産 ID プロパティがあります。
 
 ![ドキュメント プロパティの詳細ページに表示される資産 ID プロパティ](../media/SPRetention26.png)
 
