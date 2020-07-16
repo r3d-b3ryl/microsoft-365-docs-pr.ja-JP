@@ -1,31 +1,34 @@
 ---
-title: Office 365 の TLS 1.0 および1.1 は廃止された
+title: Office 365 の TLS 1.0 および1.1の 廃止
 description: Office 365 の TLS 1.0 および1.1 が廃止されたことについて説明します。
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Microsoft 365 Apps for enterprise
 - Office 365 Business
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 611b6970c3ecb95f4cdf046b96a5e3aa9155391d
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 270d04974cec9c36fa31a77bda401375fdac0471
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937345"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148149"
 ---
-# <a name="tls-10-and-11-deprecation-for-office-365"></a>Office 365 の TLS 1.0 および1.1 は廃止された
+# <a name="tls-10-and-11-deprecation-for-office-365"></a>Office 365 の TLS 1.0 および1.1の 廃止
+> [!IMPORTANT]
+> 商用のお客様のために TLS 1.0 および1.1 の推奨されていない強制を一時的に停止していますが、サプライチェーンが調整され、特定の国が開いたときに、10月15日の2020を開始するように TLS の強制をリセットしています。 
 
-2018年10月31日の時点で、Office 365 サービスのトランスポート層セキュリティ (TLS) 1.0 および1.1 プロトコルは使用されなくなりました。 エンドユーザーへの影響は最小限に抑える必要があります。 この変更は、約2年間で公表されており、最初の公開アナウンスは2017年12月に行われています。 この記事は、office 365 のローカルクライアントを Office 365 サービスに関連するものだけを対象としていますが、Office および Office Online Server/Office Web Apps のオンプレミスの TLS の問題にも適用できます。
+2018年10月31日の時点で、Office 365 サービスのトランスポート層セキュリティ (TLS) 1.0 および1.1 プロトコルは使用されなくなりました。 エンドユーザーへの影響は最小限に抑える必要があります。 この変更は、2年以上にわたって公表されており、最初のパブリックアナウンスは2017年12月に行われています。 この記事は、office 365 のローカルクライアントを Office 365 サービスに関連するものだけを対象としていますが、Office および Office Online Server/Office Web Apps のオンプレミスの TLS の問題にも適用できます。
 
 ## <a name="office-and-tls-overview"></a>Office と TLS の概要
 
@@ -46,7 +49,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 > [!NOTE]
 > この更新プログラムをインストールしていない Windows 7 ユーザーは、2018年10月31日の時点で影響を受けます。 [KB 3140245](https://support.microsoft.com/help/3140245)は、WINHTTP 設定を変更して TLS プロトコルを有効にする方法についての詳細を示しています。
 
-#### <a name="more-information"></a>詳細
+#### <a name="more-information"></a>詳細情報
 
 KB の記事に記載されている**Defaultsecureprotocols**レジストリキーの値は、どのネットワークプロトコルを使用できるかを決定します。
 

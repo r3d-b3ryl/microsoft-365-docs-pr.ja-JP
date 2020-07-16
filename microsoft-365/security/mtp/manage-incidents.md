@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235086"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148116"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>Microsoft Threat Protection でインシデントを管理する
 
@@ -44,7 +44,16 @@ ms.locfileid: "42235086"
 
 ## <a name="edit-incident-name"></a>インシデント名を編集する
 既定では、インシデントには数値が割り当てられます。 インシデント名は、組織での命名規則に準拠するよう変更できます。
- 
+
+> [!TIP]
+> その概要では、自動インシデントの名前付け (現在パブリックプレビュー) で、インシデント名が、影響を受けるエンドポイント数、影響を受けるユーザー、検出ソースまたはカテゴリなどのアラート属性に基づいて生成されます。 これにより、インシデントの範囲をすばやく理解することができます。
+>
+> 例: 複数の*ソースによって報告された複数のエンドポイントのマルチステージインシデント*。
+>
+> 自動インシデントの名前の公開前に存在していたインシデントは、名前が変更されません。
+>
+> [プレビュー機能を有効](preview.md#turn-on-preview-features)にする方法について説明します。
+
 ## <a name="assign-incidents"></a>インシデントを割り当てる
 インシデントがまだ割り当てられていない場合、[**Assign to me (自分に割り当て)**] を選択してインシデントを自分に割り当てることができます。 これにより、インシデントの所有権だけでなくそのインシデントと関連するすべての警告の所有権が自分に割り当てられます。
 
@@ -68,4 +77,3 @@ ms.locfileid: "42235086"
 
 ## <a name="add-incident-tags"></a>インシデント タグを追加する
 共通した特徴を持つインシデントのグループにフラグを設定するなどの目的に、カスタム タグをインシデントに追加できます。 こうすることで、特定のタグを含むすべてのインシデントのインシデント キューを後からフィルター処理できます。
-

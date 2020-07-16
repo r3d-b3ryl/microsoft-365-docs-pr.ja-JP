@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 には、Exchange メールボックス、SharePoint、OneDrive for business サイト、Microsoft 365 グループ、Skype for Business の会話など、さまざまな場所にあるコンテンツを検索して保持するために使用できる、さまざまな種類の電子情報開示ツールが用意されています。
-ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943432"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148127"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>Microsoft 365のeDiscovery in
 
@@ -72,14 +72,14 @@ Microsoft 365 には、次の電子情報開示ツールが用意されていま
 |[コア電子情報開示のコンプライアンス境界を設定する](set-up-compliance-boundaries.md)|コンプライアンスの境界を使用して、電子情報開示マネージャーが検索できるコンテンツの場所を制御する、組織内で論理的な境界を作成する方法について説明します。|
 |||
   
-## <a name="advanced-ediscovery"></a>Advanced eDiscovery
+## <a name="advanced-ediscovery"></a>高度な電子情報開示
 
 Microsoft 365 の高度な電子情報開示ソリューション (*上級電子情報開示*v2.0 とも呼ばれます) は、Office 365 の既存の電子情報開示および分析機能に基づいて構築されています。 この電子情報開示ソリューションは、組織の内部および外部の調査に応答するコンテンツを保持、収集、確認、分析、およびエクスポートするためのエンドツーエンドのワークフローを提供します。 また、法的チームが保管担当者および法的情報保持通知ワークフロー全体を管理して、ケースに関与する保管担当者と通信することもできます。
 
 |**トピック**|**説明**|
 |:-----|:-----|
 |[Advanced eDiscoveryの概要](overview-ediscovery-20.md)|この記事では、Advanced eDiscovery v2.0 v2.0 を紹介し、高度な電子情報開示の組み込みワークフローの概要と、電子情報開示参照モデルによって規定された電子情報開示プロセスにどのように連携するかを説明します。|.
-|[Advanced eDiscoveryを開始する](get-started-with-advanced-ediscovery.md)|必要なライセンスおよび必要な電子情報開示のアクセス許可を含む、アドバンスト電子情報開示の使用を開始する方法について説明します。 この記事では、高度な電子情報開示のケースを作成し、高度な電子情報開示ワークフローのウォークスルーを提供する方法について説明します。|
+|[Advanced eDiscovery を開始する](get-started-with-advanced-ediscovery.md)|必要なライセンスおよび必要な電子情報開示のアクセス許可を含む、アドバンスト電子情報開示の使用を開始する方法について説明します。 この記事では、高度な電子情報開示のケースを作成し、高度な電子情報開示ワークフローのウォークスルーを提供する方法について説明します。|
 |[カストディアンと共同作業](managing-custodians.md)|高度な電子情報開示での保管担当者の使用について説明します。 このトピックでは、監査ログを検索することによって、保管担当者をケースに追加し、ケースで保管担当者を管理し、Microsoft 365 で保管担当者アクティビティを表示するための詳細な手順について説明します。|
 |[通信の操作](managing-custodian-communications.md)|Advanced eDiscovery での法的情報保留通知プロセスの管理について説明します。 これには、通知ワークフローの作成と自動化、およびユーザーが保留通知を受信確認した方法が含まれます。
 |[処理中のエラーの操作](processing-data-for-case.md)|詳細なインデックス作成について説明し、Exchange メールボックス、SharePoint サイト、OneDrive アカウントなど、custodial および非 custodial のコンテンツの場所からコンテンツのインデックスエラーを修復する方法について説明します。 エラーを一括修復してから、修復されたファイルをレビューセットにアップロードするか、またはレビューセット内の個々の処理エラーを修復することができます。|
@@ -88,3 +88,7 @@ Microsoft 365 の高度な電子情報開示ソリューション (*上級電子
 |[レビューセット内のデータを分析する](analyzing-data-in-review-set.md)|レビューセット内のドキュメントの分析を実行する方法について説明します。 実行中の分析の結果には、ほぼ重複の検出、電子メールスレッド、およびテーマの識別が含まれます。|
 |[ケース データをエクスポートする](exporting-data-ediscover20.md)|外部レビューのケースからデータをエクスポートする方法について説明します。|
 |||
+
+## <a name="roadmap"></a>ロードマップ
+
+どの電子情報開示機能が開始されているか、または開発中であるかを確認するには、 [Microsoft 365 ロードマップ](https://aka.ms/eDiscoRoadMap)にアクセスしてください。

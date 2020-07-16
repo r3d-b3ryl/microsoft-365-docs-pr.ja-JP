@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 には、組織全体でコンテンツを識別してラベルを付けるために使用できる組み込みの分類子がいくつか用意されています。 このトピックでは、これらの分類子の使用を準備する方法について説明します。
-ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1d645cc79075c41ce94b0f9b4fc347450a8df8c6
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126316"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146221"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>保持ラベルを使用した組み込み分類子のテスト (プレビュー)
 
@@ -38,7 +38,7 @@ Microsoft 365 には、推奨される 5 つの組み込み分類子が付属し
 - **履歴書**: 申請者の個人、教育、専門資格、作業経験、その他個人を識別する情報のテキストアカウントであるアイテムを検出します。
 - **ソースコード**: GitHub で使用されている上位25台のコンピュータプログラミング言語で記述された命令およびステートメントのセットを含むアイテムを検出します。
 
-  |言語名|||||
+  |**言語名**|||||
   |---------|---------|---------|---------|---------|
   |ActionScript|C        |C#       |C++     |Clojure  |
   |CoffeeScript|CSS     |Go       |Haskell |HTML     |
