@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類についてのリリース ノート。
-ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327612"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127142"
 ---
 # <a name="data-classification-release-notes"></a>データ分類のリリース ノート
 
@@ -48,6 +48,6 @@ SharePoint検索では、`-` または `_` を含む保持ラベル名はサポ�
 - [データ分類の使用を開始する (プレビュー)](data-classification-overview.md)
 - [ラベル アクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)
 - [ラベル付きコンテンツの表示 (プレビュー)](data-classification-content-explorer.md)
-- [機密ラベル](sensitivity-labels.md)
-- [保持ラベル](labels.md)
+- [機密ラベルについて詳しく見る](sensitivity-labels.md)
+- [保持ポリシーおよび保持ラベルについて詳しく見る](retention.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)

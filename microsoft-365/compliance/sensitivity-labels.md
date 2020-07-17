@@ -20,17 +20,18 @@ description: Microsoft 情報保護フレームワークの秘密度ラベルを
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d5b8e3c540c133ce4e04a434d03ef4bdb16b6f32
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936796"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127364"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+組織の従業員は、業務を行うために組織内外の関係者と共同作業を行います。このためコンテンツはファイアウォールの内側だけでなく、さまざまなデバイス、アプリ、サービスを越えて存在することになります。この場合、組織のビジネス ポリシーとコンプライアンス ポリシーを満たす安全な方法でコンテンツを保護することが必要です。
 
 Microsoft 情報保護フレームワークの秘密度ラベルを使用すると、組織のデータを分類して保護し、ユーザーの生産性とコラボレーション機能を損なわないようにします。
 
@@ -47,7 +48,7 @@ Microsoft 情報保護フレームワークの秘密度ラベルを使用する�
 
 機密ラベルは、次の目的に使用できます。
   
-- **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.
+- **ラベルが付けられたコンテンツに、暗号化や透かしなどの保護設定を強制適用します。** たとえば、ユーザーはドキュメントや電子メールに「社外秘」ラベルを適用できます。そのラベルによって、コンテンツを暗号化して「社外秘」の透かしを適用できます。
 
 - **さまざまなプラットフォームやデバイスで Office アプリのコンテンツを保護する。** サポートされているアプリの一覧については、「[Use sensitivity labels in Office apps (Office アプリの秘密度ラベルを使用する)](sensitivity-labels-office-apps.md)」を参照してください。
 
@@ -63,7 +64,7 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
 
 ドキュメントやメールに割り当てる秘密度ラベルは、次のような特性のコンテンツに適用されるスタンプのような役目を果たします。
 
-- **Customizable.** You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
+- **カスタマイズ可能。** さまざまな機密レベルのコンテンツに対応する組織内での分類項目 (「個人」、「公開」、「一般」、「社外秘」、「極秘」など) を作成できます。
 
 - **クリア テキスト:**  ラベルはコンテンツのメタデータにクリア テキストとして保存されるため、サードパーティのアプリやサービスはラベルを読み取り、必要に応じてそれぞれの保護アクションを適用することができます。
 
@@ -71,14 +72,14 @@ Microsoft 365 の秘密度ラベルを使用することにより、これらす
 
 Office アプリでは、秘密度ラベルはメールやドキュメントのタグのようにユーザーに表示されます。
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+コンテンツの各アイテムには、1 つの機密ラベルを適用できます。ただし、1 つのアイテムに 1 つの機密ラベルと 1 つの[保持ラベル](retention.md#retention-labels)の両方を適用できます。
 
 > [!div class="mx-imgBorder"]
 > ![電子メールに適用された秘密度ラベル](../media/Sensitivity-label-on-email.png)
 
 ## <a name="what-sensitivity-labels-can-do"></a>機密ラベルでできること
 
-After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
+メールやドキュメントに秘密度ラベルが適用されると、そのラベルで構成済みの保護設定がコンテンツに適用されます。秘密度ラベルを使用すると、次のことができます。
 
 - 電子メールのみ、または電子メールとドキュメントの両方の**暗号化**。 どのユーザーまたはグループがどのアクションを実行する権限を持つかを選択でき、権限を持つ期間も選択できます。 たとえば、他の組織の特定のグループのユーザーに対して、コンテンツにラベルが付けられてから 7 日間のみコンテンツを確認する権限を付与することができます。 または、管理者が割り当てるアクセス許可の代わりに、ユーザーがラベルを適用する際に、コンテンツへのアクセス許可の割り当てをユーザーが行えるようにもできます。 
     
@@ -180,7 +181,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
 ![機密ラベル ポリシーのページ上の移動オプション](../media/sensitivity-label-policy-priority.png)
 
-秘密度ラベルに加えて保持レベルも使用している場合、優先度は秘密度ラベルにとっては重要ですが、[保持ラベル ポリシー](labels.md#the-principles-of-retention-or-what-takes-precedence)にとっては重量ではないということを覚えておく必要があります。
+秘密度ラベルに加えて保持レベルも使用している場合、優先度は秘密度ラベルにとっては重要ですが、[保持ラベル](retention.md#the-principles-of-retention-or-what-takes-precedence)にとっては重要ではないということを覚えておく必要があります。
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>秘密度ラベルと Azure Information Protection
 

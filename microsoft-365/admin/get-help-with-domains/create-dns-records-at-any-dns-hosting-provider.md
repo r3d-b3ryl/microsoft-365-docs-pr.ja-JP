@@ -20,11 +20,12 @@ description: 任意の DNS ホスティング プロバイダーで Microsoft 36
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 01bcffe37d9c38d91eff25d9df58f848f4ee1a82
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049668"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138258"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 
@@ -36,7 +37,9 @@ ms.locfileid: "45049668"
 
 探している内容が見つからない場合は、[ドメインに関する FAQ](../setup/domains-faq.md) を確認してください。
 
-## <a name="step-1-add-a-txt-record-to-verify-you-own-the-domain"></a>手順 1: TXT レコードを追加してドメインの所有を確認する 
+## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>手順 1: TXT または MX レコードを追加してドメインの所有を確認する 
+
+### <a name="recommended-verify-with-a-txt-record"></a>推奨: TXT レコードで確認する
 
 まず、Microsoft 365 に追加するドメインを所有していることを証明する必要があります。
 
@@ -55,6 +58,25 @@ ms.locfileid: "45049668"
 
 Microsoft で正しい TXT レコードが見つかった場合、ドメインは確認済みとなります。
 
+### <a name="verify-with-an-mx-record"></a>MX レコードで確認する
+
+レジストラーが TXT レコードの追加をサポートしていない場合は、MX レコードを追加することで確認できます。
+
+1. [Microsoft 365 管理センター](https://admin.microsoft.com/) にサインインし、[**すべて表示**] > [**設定**] > [**ドメイン**] を選択します。
+2. 新しいブラウザー タブまたはウィンドウで、使用している DNS ホスティング プロバイダーにサインインし、DNS 設定を管理している場所を検索します (例: ゾーン ファイルの設定、ドメインの管理、ドメイン マネージャー、DNS マネージャー)。
+3. プロバイダーの DNS マネージャーのページに移動し、管理センターで示された MX レコードをドメインに追加します。
+
+この MX レコードの **優先度** は、ドメインのすべての既存の MX レコードで最高でなくてはなりません。 それ以外の場合、メールの送受信が妨げられます。 ドメイン確認が完了したら、すぐにこのレコードを削除する必要があります。
+
+フィールドが次の値に設定されていることを確認します。
+
+- Record Type: `MX`
+- Priority: 使用可能な最高の値を設定します。通常は `0` です。
+- Host Name: `@`
+- Points to address: 管理センターから値をコピーし、ここに貼り付けます。
+- TTL: `3600‎` (またはプロバイダーの既定値)
+
+Microsoft で正しい MX レコードが見つかった場合、ドメインは確認済みとなります。
 
 ## <a name="step-2-add-dns-records-to-connect-microsoft-services"></a>手順 2: DNS レコードを追加して Microsoft サービスに接続する
 

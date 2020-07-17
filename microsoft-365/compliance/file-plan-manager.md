@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874907"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126880"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>ファイルプランを使用して保持ラベルを管理する
 
@@ -42,7 +42,7 @@ Microsoft 365 コンプライアンスセンターで、保持ラベルの作成
 
 ![[ファイル計画] ページ](../media/compliance-file-plan.png)
 
-保持ラベルについて、そして使用方法の情報については、[保持ラベルの説明](labels.md)をご覧ください。
+保持ラベルについて、そして使用方法の情報については、[保持ポリシーおよび保持ラベルについて詳しく見る](retention.md) をご覧ください。
 
 ## <a name="accessing-file-plan"></a>ファイル計画にアクセスしています
 
@@ -182,4 +182,6 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 
 ## <a name="next-steps"></a>次の手順
 
-保持ラベルの作成と編集、およびそのポリシーの詳細については[作成、発行、そして保持ラベルの自動適用](create-retention-labels.md)を参照してください。
+保持ラベルの作成と編集、およびそのポリシーの詳細については以下のガイダンスを参照してください。
+- [アイテム保持ラベルを作成して、アプリに適用する](create-apply-retention-labels.md)
+- [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
