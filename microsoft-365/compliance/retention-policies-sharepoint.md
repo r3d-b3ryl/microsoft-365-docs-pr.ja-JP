@@ -19,6 +19,7 @@ search.appverid:
 description: SharePoint と OneDrive に適用されるアイテム保持ポリシーについて説明します。
 ms.openlocfilehash: db0dfdbddc620bfc7449397bad02463b02c270bd
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049885"
@@ -74,9 +75,9 @@ ms.locfileid: "45049885"
   
 保持のみポリシーは、SharePoint サイト コレクションまたは OneDrive アカウント内のドキュメントのすべてのバージョンを保持します。 保留または保持のみポリシーの対象となるドキュメントが初めて編集されるとき、オリジナル ドキュメントのバージョンが、アイテム保管ライブラリにコピーされます。 保留または保持のみポリシーの対象となるドキュメントが削除されると、バージョン管理が有効である場合は、すべてのバージョンがアイテム保管ライブラリにコピーされます。 アイテム保管ライブラリ内のドキュメントの各バージョンは、独自の保持期間を持つ個別のアイテムとして存在します。
   
-- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
+- アイテム保持ポリシーがコンテンツの作成日時に基づいている場合、それぞれのバージョンには、元のドキュメントと同じ有効期限日が設定されます。元のドキュメントとそのバージョンは、すべて同時に期限が切れます。
 
-- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
+- アイテム保持ポリシーがコンテンツの最終更新日時に基づいている場合、それぞれのバージョンには、そのバージョンを作成するために元のドキュメントを変更した日時に基づいた独自の有効期限日が設定されます。元のドキュメントとそのバージョンは、個別に期限が切れます。
 
 > [!NOTE]
 > 保存されたバージョンの SharePoint および OneDrive ドキュメントは、eDiscovery ツールで検索できません。

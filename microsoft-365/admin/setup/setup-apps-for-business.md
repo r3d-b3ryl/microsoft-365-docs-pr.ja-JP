@@ -66,7 +66,7 @@ ms.locfileid: "44778891"
 
 ## <a name="install-office"></a>Office をインストールする
 
-Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
+社内のユーザー用のアカウント作成が完了すると、ユーザーが通常のデスクトップ版 Office (Word、Excel、Outlook など) をインストールできるようになります。ユーザー 1 人につき最大 5 台の PC または Mac に Office をインストールできます。
   
 ::: moniker range="o365-worldwide"
 
@@ -100,9 +100,9 @@ Office 365 Germany を使用している場合は、[https://portal.office.de/OL
   
 ## <a name="store-files-online"></a>オンラインでファイルを保存する
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft では、ファイルを簡単にオンラインで保存できます。ビジネスに最適な保存場所については、「[Office 365 でファイルを保存する場所](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)」を参照してください。
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+管理者がユーザーの Microsoft アカウントを作成すると、ユーザーには自動的に **OneDrive** クラウド ストレージの場所が付与されます。OneDrive を使用すると、コンピューター、スマートフォン、タブレットのどのデバイスでもファイルにアクセスすることができます。
   
 1. コンピューター上で、エクスプローラーを使用して OneDrive を開きます。 または、[Office 365](https://www.office.com) からアプリ起動ツールで [**OneDrive**] を開きます。
 

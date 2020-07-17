@@ -82,7 +82,7 @@ ms.locfileid: "45068105"
 
 ## <a name="what-is-a-domain-name"></a>ドメイン名とは何ですか?
 
-A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
+ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。通常は、  *yourbusiness.com*  や  *stateuniversity.edu*  のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。 
   
 Microsoft 365 で "**渡 \@ contoso.com**" のようなカスタムドメインを使用すると、ブランドの信頼性と認識を構築するのに役立ちます。 
   
@@ -172,13 +172,13 @@ Microsoft 365 で "**渡 \@ contoso.com**" のようなカスタムドメイン�
 
 ::: moniker range="o365-germany"
 
-Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.
+はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を Microsoft が行っている場合または Microsoft からドメインを購入した場合は、サブドメインを追加できません。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.
+はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を 21Vianet が行っている場合は、サブドメインを追加できません。
 
 ::: moniker-end
 
@@ -203,11 +203,11 @@ Microsoft 365 は、サービスにサインアップするときに、 *contoso
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません** 。 たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.com の場合、fabrikam.onmicrosoft.com に変更することはできません。 別の onmicrosoft.com ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。 
     
-- **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.com domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
+- **チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.com ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。 
     
 - **onmicrosoft ドメインは、削除できません。** Microsoft 365 は、サブスクリプションの背後で使用されているため、これを維持する必要があります。 カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。 
     
-You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.
+ドメインを追加した後でも、初期の onmicrosoft.com ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。
   
 ::: moniker-end
 
@@ -220,11 +220,11 @@ Microsoft 365 は、サービスにサインアップするときに、 *contoso
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません** 。 たとえば、選択した初期ドメインが fourthcoffee.onmicrosoft.de の場合、fabrikam.onmicrosoft.de に変更することはできません。 別の onmicrosoft.de ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。 
     
-- **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
+- **チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.de ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。 
     
 - **onmicrosoft ドメインは、削除できません。** Microsoft 365 は、サブスクリプションの背後で使用されているため、これを維持する必要があります。 カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。 
     
-You can keep using the initial onmicrosoft.de domain even after you add your domain. It still works for email and other services, so it's your choice.
+ドメインを追加した後でも、初期の onmicrosoft.de ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。
   
 ::: moniker-end
 

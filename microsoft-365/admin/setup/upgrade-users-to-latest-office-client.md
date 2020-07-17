@@ -53,7 +53,7 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
 
 ## <a name="upgrade-steps"></a>アップグレード手順
 
-The steps below will guide you through the process of upgrading your users to the latest Office desktop client. We recommend you read through these steps before beginning the upgrade process.
+以下は、ユーザーが最新の Office デスクトップ クライアントにアップグレードするときのプロセスできます。アップグレード プロセスを開始する前に一読することをお勧めします。
   
 ## <a name="step-1---check-system-requirements"></a>手順 1 - システム要件の確認
 
@@ -114,7 +114,7 @@ Office の最新バージョンをインストールする前に、以前のバ�
 
  **サポートされていないサブスクリプション**Office のコピーが、Office 365 Small Business Premium または Office 365 の中規模企業など、廃止されたサブスクリプションを通じて取得した場合、サブスクリプションに付属のプロダクトキーを使用していない限り、以前のバージョンの Office をインストールすることはできません。
 
-If you'd prefer to install your older version of Office side-by-side with the latest version, you can see a list of versions where this is supported in, [Install and use different versions of Office on the same PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf). A side-by-side installation might be the right choice for you, if for example, you've installed third-party add-ins you're using with your older version of Office and you're not yet sure they're compatible with the latest version.
+以前のバージョンの Office と最新版を共存させる場合、「[異なるバージョンの Office を同じ PC にインストールして使う](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf)」で、共存が可能なバージョンの一覧をご確認いただけます。たとえば、サードパーティ アドインをインストールして以前のバージョンの Office で使用しているとき、アドインと最新版の Office の間に互換性があるかどうかがわからない場合は、共存インストールが正しい選択となることがあります。
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>手順 4 - Office ライセンスをユーザーに割り当てる
 

@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: bfadeae0f4f0b01197f58f0610d1040da3080922
 ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/02/2020
 ms.locfileid: "45023633"
@@ -33,9 +34,9 @@ Windows 版 Microsoft データ プロセッサー サービスは、「プラ�
 |**Stage**|**説明**|
 | ------- | ------------- |
 | ***1 — 検出*** | 潜在的なインシデントの最初の兆候です。 |
-| ***2 — 評価*** | An on-call incident response team member assesses the impact and severity of the event. Based on evidence, the assessment may or may not result in further escalation to the security response team. |
+| ***2 — 評価*** | 待機中のインシデント対応チーム メンバーがイベントの影響度と重大度を評価します。証拠に基づき、この評価をセキュリティ対応チームにエスカレートするかどうか判断されます。 |
 | ***3 — 診断*** | セキュリティ対応チームの専門家がテクニカルまたはフォレンシックな調査を行い、抑制、軽減、回避のストラテジーを特定します。 不正な目的を持つ個人や無許可の個人に顧客データが漏洩した可能性があるとセキュリティ チームが判断した場合には、カスタマー インシデント通知プロセスが並行して開始します。 |
-| ***4 — 安定化と回復*** | The incident response team creates a recovery plan to mitigate the issue. Crisis containment steps such as quarantining impacted systems may occur immediately and in parallel with diagnosis. Longer term mitigations may be planned which occur after the immediate risk has passed. |
+| ***4 — 安定化と回復*** | インシデント対応チームは問題を軽減するための回復計画を作成します。リスク抑制ステップ (影響を受けたシステムの隔離など) が診断と並行してただちに開始する場合があります。当面のリスクが過ぎ去った後の長期的な軽減計画を立てる場合もあります。 |
 | ***5 — クローズと事後分析*** | インシデント対応チームはインシデントの詳細を示す事後分析を作成します。その目的は、ポリシー、手順、プロセスを改訂してイベントの再発を防ぐことです。 |
 
 Windows 版 Microsoft データ プロセッサー サービスで使われる検出プロセスの目的は、Windows 版 Microsoft データ プロセッサー サービスの機密保持性、整合性、可用性にとってリスクとなるイベントを検出することです。次のようなイベントにより、調査が開始する可能性があります。 いくつかのイベントによって、調査が開始されます。 
@@ -65,11 +66,11 @@ Windows 版 Microsoft データ プロセッサー サービスで使われる�
  - **お客様報告対象セキュリティ インシデント (CRSI)**： Microsoft のシステム、機器、または設備に対する不正/無許可アクセスまたは使用の結果として、顧客データの開示、改変、または喪失が発生した。 
  - **プライバシーの侵害**: 個人データに関わるセキュリティ インシデントのサブタイプ。 処理方法は、セキュリティインシデントと同様です。 
 
- For a CRSI to be declared, Microsoft must determine that unauthorized access to customer data has or has very likely occurred and/or that there is a legal or contractual commitment that notification must occur. It is desired, but not required, that specific customer impact, resource access, and repair steps be known. An incident is generally declared a CRSI after the conclusion of the Diagnose stage of a security incident; however, the declaration may happen at any point that all pertinent information is available. The security incident manager must establish evidence beyond reasonable doubt that a reportable event has occurred to begin execution of the Customer Incident Notification Process. 
+ CRSI として宣言するには、顧客データへの無許可アクセスが発生した (またはその可能性が極めて高い) と Microsoft が判断するか、通知を行う法律上または契約上の義務が存在する必要があります。特定のお客様への影響、リソースへのアクセス、修復ステップが具体的に判明することが望ましいものの、必須ではありません。インシデントが CRSI として宣言されるのは通常、セキュリティ インシデントの診断ステージの結論が下された後です。ただし、該当するすべての情報を入手できた任意の時点で宣言される可能性があります。セキュリティ インシデント管理者は、お客様インシデント通知プロセスを開始する前に、報告対象イベントが生じたことに対する合理的な疑念を払拭する証拠を得ておく必要があります。 
 
-Throughout the investigation, the security response team works closely with global legal advisors to help ensure that forensics are performed in accordance with legal obligations and commitments to customers. There are also significant restrictions on system and customer data viewing and handling in various operating environments. Sensitive or confidential data, as well as Customer Data, are not transferred out of the production environment without explicit written approval from the Incident Manager recorded in the corresponding incident ticket. 
+調査期間中、セキュリティ対応チームは全世界の法律顧問と協力し、法的義務およびお客様への責任に基づいて捜査を確実に行います。また、さまざまな運用環境でシステム データや顧客データの閲覧と処理がかなり制限されます。該当するインシデント チケットに記録されたインシデント管理者による明確な書面の同意なしで、機密データおよび顧客データが運用環境から外部に移送されることはありません。 
 
-Microsoft verifies that customer and business risk is successfully contained, and that corrective measures are implemented. If necessary, emergency mitigation steps to resolve immediate security risks associated with the event are taken. 
+Microsoft はお客様にとってのリスクと業務上のリスクが適切に抑止され、是正措置が実施されていることを検証します。必要に応じて、イベントに関連する当座のセキュリティ リスクを解決するための緊急軽減ステップを実施します。 
 
 Microsoft では、データ侵害に関する社内向けの事後分析も行います。 この検証の一環として、対応および運用手順が充分であったかどうかを評価し、セキュリティインシデント対応の SOP または関連するプロセスに必要な更新プログラムを特定し、実装します。 データ漏洩の内部事後分析は、非常に機密性の高い社外秘の記録であり、顧客には公開されません。 ただし、事後分析は要約され、他の顧客のイベント通知に含まれる場合があります。 これらのレポートは、Windows 版 Microsoft データ プロセッサー サービス の監査サイクルの一部として外部監査者に提供されます。 
 
@@ -79,7 +80,7 @@ Microsoft データ プロセッサー サービス は、必要に応じてデ�
 
 CRSPI の宣言後、通知プロセスは、出来るだけ迅速に行われますが、その一方で、リスクに対しても迅速に対応します。 通常、インシデントの調査が行われているときに、通知を作成するプロセスが実行されます。 次の場合を除き、お客様への通知は、漏洩の発生を認識してから 72 時間以内に行われます。 
 
- - Microsoft believes the act of performing a notification will increase the risk to other customers. For example, the act of notifying may tip off an adversary causing an inability to remediate. 
+ - 通知を行うことで他のお客様にとってリスクが増大すると Microsoft が判断した場合。たとえば、通知行為によって敵対者にヒントを与えてしまい、結果として修正不能になることがあります。 
  - Microsoft の法務部である Corporate External and Legal Affairs (CELA) およびエグゼクティブ インシデント マネージャーによって精査される、他の異常な状況または極端な状況。 
 
  Windows 版 Microsoft データ プロセッサー サービス は、内部調査を行ってエンド ユーザーへの責務を果たせるよう、詳細な情報をお客様に提供すると同時に、通知プロセスを不必要に遅らせないようにします。 

@@ -50,7 +50,7 @@ OneDrive for business へのファイルの移動に関する短いビデオを�
     
 3. メニュー バーで [ **アップロード**] ![Upload](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) を選択し、保存するファイルを参照します。 
     
-To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
+ユーザー プロファイルと重要なファイルを転送するには、ForensiT などのサード パーティ製ツールを使用することもできます。OneDrive for Business で作成されたファイルもアップロードする必要があります。
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップと使用方法の詳細
 

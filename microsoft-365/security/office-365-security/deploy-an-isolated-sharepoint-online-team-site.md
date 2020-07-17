@@ -27,14 +27,14 @@ ms.locfileid: "44755226"
 
  **概要:** ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。
   
-This article is a step-by-step deployment guide for creating and configuring an isolated SharePoint Online team site in Microsoft Office 365. These steps assume the use of the three default SharePoint groups and corresponding permission levels, with a single Azure Active Directory (AD)-based access group for each level of access.
+この記事は、分離した SharePoint Online チーム サイトを Microsoft Office 365 で作成および構成するためのステップごとの展開ガイドです。これらの手順は、アクセス レベルごとに 1 つの Azure Active Directory (AD) ベースのアクセス グループが含まれる、3 つの既定の SharePoint グループとそれに対応するアクセス許可レベルの使用を前提としています。
   
 ## <a name="phase-1-create-and-populate-the-team-site-access-groups"></a>フェーズ 1:チーム サイト アクセス グループの作成と設定
 
 このフェーズでは、3 つの既定の SharePoint グループに対して 3 つの Azure AD ベースのアクセス グループを作成し、それらに適切なユーザー アカウントを設定します。
   
 > [!NOTE]
-> The following steps assume that all necessary user accounts already exist and are assigned the appropriate licenses. If not, please add them and assign licenses before proceeding to step 1. 
+> 次の手順は、すべての必要なユーザー アカウントが既に存在し、適切なライセンスが割り当てられていることを前提としています。そうでない場合は、それらを追加して、手順 1 に進む前にライセンスを割り当てます。 
   
 ### <a name="step-1-list-the-sharepoint-online-admins-for-the-site"></a>手順 1:サイトの SharePoint Online 管理者を一覧表示する
 
@@ -93,7 +93,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
   
 ![独立した SharePoint Online サイトの展開用の 3 つのアクセス グループ。](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
-### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Step 5. Add the user accounts to the access groups
+### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>手順 5:アクセス グループにユーザー アカウントを追加する
 
 この手順では、次の操作を行います。
   

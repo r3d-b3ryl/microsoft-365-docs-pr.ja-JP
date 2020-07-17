@@ -27,7 +27,7 @@ ms.locfileid: "44817646"
 
 ## <a name="introduction-to-dsrs"></a>DSR について
 
-The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR. The controller is obligated to promptly consider each DSR and provide a substantive response either by taking the requested action or by providing an explanation for why the DSR cannot be accommodated by the controller. A controller should consult with its own legal or compliance advisers regarding the proper disposition of any given DSR.
+EU [一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) では、ユーザー (規則では*データ主体*と呼ばれる) に対して、雇用主やその他の会社または組織 (*データ管理者*または単に*管理者*と呼ばれる) が収集した個人データを管理する権利を与えます。GDPR では、個人データとは、識別された、または識別可能な自然人と関連するあらゆるデータとして広範に定義されています。GDPR は個人データに対する固有の権利をデータ主体に与えます。この権利には、個人データのコピーの取得、変更の要求、処理の制限、削除、または、別の管理者に移動できるようにするための電子形式での受信が含まれます。データ主体から管理者に個人データへの操作実行を求める正式な要求は、*データ主体の要求*または DSR と呼ばれます。管理者には、各 DSR を迅速に検討し、要求された操作を行うか、管理者が DSR に対応できない理由についての説明を提供するか、どちらかの実質的な応答をする義務があります。管理者は特定の DSR に対する適切な処置に関して自社の法律顧問の助言を求めるべきです。
 
 同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。 また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、"売上" として分類された特定のデータ転送の "オプトアウト/オプトイン" 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
 
@@ -60,21 +60,21 @@ The European Union [General Data Protection Regulation (GDPR)](https://ec.europa
 - **[パート 4: DSR に役立つその他のリソース](#part-4-additional-resources-to-assist-you-with-dsrs):** このガイドのパート 4 では、特定の Office 365 製品とサービスが使用されるときに Microsoft がデータ管理者となる、限定的なシナリオを示します。
 
 >[!NOTE]
->In most cases, when users in your organization use Microsoft Office 365 products and services, you are the data controller and Microsoft is the processor. As a data controller, you are responsible for responding to the data subject directly. To assist you with this, Parts 1-3 of this guide detail the technical capabilities available to your organization to respond to a DSR request. In some limited scenarios, however, Microsoft will be the data controller when people use certain Office 365 products and services. In these cases, the information in Part 4 provides guidance on how data subjects can submit DSR requests to Microsoft.
+>ほとんどの場合、組織内のユーザーが Microsoft Office 365 製品とサービスを使用する際には、ユーザーがデータ管理者、Microsoft が処理者になります。ユーザーはデータ管理者として、データ主体に直接対応する責任があります。これを支援するために、このガイドのパート 1 から 3 では、組織が DSR 要求に対応するために利用できる技術的な機能について詳しく説明します。ただし、一部の限定的なシナリオでは、特定の Office 365 製品とサービスを使用する際に Microsoft がデータ管理者になります。この場合には、パート 4 の情報が、データ主体が Microsoft に DSR 要求を提出する方法についてのガイダンスになります。
 
 ### <a name="office-365-national-clouds"></a>Office 365 国別クラウド
 
-The Microsoft Office 365 services are also available in the following national cloud environments: [Office 365 Germany](https://docs.microsoft.com/microsoft-365/admin/admin-overview/learn-about-office-365-germany), [Office 365 operated by 21Vianet (China)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china), and [Office 365 US Government](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans). Most of the guidance for managing data subject requests described in this document applies to these national cloud environments. However, due to the isolated nature of these environments, there are some exceptions. Where notable for a given subsection, these exceptions are called out in a corresponding note.
+Microsoft Office 365 のサービスは、国別クラウド環境である [Office 365 Germany](https://docs.microsoft.com/microsoft-365/admin/admin-overview/learn-about-office-365-germany)、[21Vianet が運営する Office 365 (中国)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china)、および [Office 365 US Government](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans) でも利用可能です。このドキュメントで説明するデータ主体の要求の管理に関するガイダンスのほとんどは、これらの国別クラウド環境に適用されますが、これらの環境は孤立しているので、いくつかの例外があります。特定のサブセクションで特に注意すべき場合には、対応する注に、例外に関する説明を記載しています。
 
 ### <a name="hybrid-deployments"></a>ハイブリッド展開
 
-Your organization may consist of Microsoft offerings that are a combination of cloud-based services and on-premises server products. In general, a hybrid deployment is typically the sharing of user accounts (identity management) and resources (such as mailboxes, web sites, and data) that exist in the cloud and on-premises. Common hybrid scenarios include:
+組織を構成する Microsoft サービス/製品は、クラウドベースのサービスとオンプレミス サーバー製品の組み合わせです。一般に、ハイブリッド展開では、ユーザー アカウント (ID 管理) と、クラウドとオンプレミスに存在するリソース (メールボックス、Web サイト、データなど) が共有されます。一般的なハイブリッドのシナリオには次のものがあります。
 
 - Exchange ハイブリッド展開。この展開では、オンプレミス メールボックスを使用するユーザーと Excnahge Online メールボックスを使用するユーザーが混在しています。
 - SharePoint ハイブリッド展開。この展開では、サイトおよびファイル サーバーがオンプレミスにあり、OneDrive for Business アカウントが Office 365 にあります。
 - Azure Activity Directory と同期するオンプレミスの ID 管理システム (Active Directory)。これは、Office 365 の基盤となるディレクトリ サービスです。
 
-When responding to a DSR request, you may have to determine if data that's responsive to a DSR request is in the Microsoft cloud or in your on-premise organization, and then take the appropriate steps to respond to that request. The Office 365 Data Subject Request Guide (this guide) provides guidance for responding to cloud-based data. For guidance for data in your on-premises organization, see [GDPR for Office on-premises Servers](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers).
+DSR 要求への対応時には、DSR 要求の対象であるデータが Microsoft クラウドとオンプレミス組織のいずれに存在しているかを判別してから、その要求に対応するための適切な手順を実行する必要があります。「Office 365 データ主体要求ガイド」(このガイド) では、クラウド ベースのデータへの対応に関するガイダンスを提供します。オンプレミス組織のデータに関するガイダンスについては、「[オンプレミス サーバー上の Office の GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers)」を参照してください。
 
 ## <a name="part-1-responding-to-dsrs-for-customer-data"></a>パート 1: 顧客データについての DSR への対応
 
@@ -89,11 +89,11 @@ When responding to a DSR request, you may have to determine if data that's respo
 
 個人情報の検索場所や検索対象を判断するために、組織内のユーザーが Office 365 でのデータ作成や保存に使用できる Office 365 アプリケーションを特定することが役立ちます。 これを知ることで、DSR の範囲内にある Office 365 アプリケーションが絞り込まれ、DSR に関連する個人データの検索方法とアクセス方法の判断に役立ちます。 具体的には、コンテンツ検索ツールを使用できるかどうか、またはデータが作成されたアプリケーションのアプリ内機能を使用する必要があるかどうかということです。
 
-A quick way to identify the Office 365 applications that people in your organization are using to create Customer Data is to determine which applications are included in your organization's Microsoft 365 for business subscription. To do this, you can access user accounts in the Office 365 admin portal and look at the product licensing information. See [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
+組織内のユーザーが顧客データの作成に使用している Office 365 アプリケーションを手早く確認する方法は、組織の Microsoft 365 for business サブスクリプションに含まれるアプリケーションを特定することです。これを行うには、Office 365 管理ポータルでユーザー アカウントにアクセスして、製品のライセンス情報を確認します。「[ライセンスをユーザーに割り当てる](../admin/manage/assign-licenses-to-users.md)」を参照してください。
 
 ## <a name="using-the-content-search-ediscovery-tool-to-respond-to-dsrs"></a>コンテンツ検索の電子情報開示ツールを使用した DSR への対応
 
-When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you're looking for. Microsoft estimates that over 90% of an organization's data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Microsoft 365 Apps for enterprise or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user's OneDrive for Business account, or in a user's Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Microsoft 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
+組織が Office 365 を使用して作成および保存している大規模なデータのセット内にある個人データを検索する際には、検索するデータの作成に使用された可能性が最も高いアプリケーションを考える必要がある場合があります。Microsoft では、Office 365 に保存されている組織のデータの 90% 以上が Word、Excel、PowerPoint、OneNote、Outlook で作成されていると推定しています。これらの Office アプリケーションを Microsoft 365 Apps for enterprise または Office 永続ライセンスで購入した場合でも、これらのアプリケーションで作成されたドキュメントは、SharePoint Online サイト、ユーザーの OneDrive for Business アカウント、またはユーザーの Exchange Online メールボックスに保存されている可能性があります。そのため、コンテンツ検索の電子情報開示ツールを使用して、SharePoint Online サイト、OneDrive for Business アカウント、Exchange Online メールボックス (Microsoft 365 グループ、Microsoft Teams、EDU Assignments に関連付けられたサイトやメールボックスを含む) を検索 (および、その他の DSR 関連アクションを実行) して、調査対象の DSR に関連するドキュメントおよびメールボックス アイテムを検索できます。また、コンテンツ検索ツールを使用して、別の Office 365 アプリケーションで作成された顧客データを検出することもできます。
 
 次の表に、「顧客が作成したコンテンツ」の作成にユーザーが使用する Office 365 アプリケーションのリストを示します。これらのアプリケーションはコンテンツ検索を使用した検出が可能です。 DSR ガイドのこのセクションでは、これらの Office 365 アプリケーションを使用して作成されたデータの検出、アクセス、エクスポート、および削除方法について説明します。
 
@@ -112,15 +112,15 @@ When looking for personal data within the larger set of data your organization c
 ||
 
 >[!NOTE]
->The Content Search eDiscovery tool is not available in [Office 365 operated by 21Vianet (China)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china). This means you won't able to use this tool to search for and export Customer Data in the Office 365 applications shown in Table 1. However, you can use the In-Place eDiscovery tool in Exchange Online to search for content in user mailboxes. You can also use the eDiscovery Center in SharePoint Online to search for content in SharePoint sites and OneDrive accounts. Alternatively, you can ask a document owner to help you find and make changes or deletions to content or export it if necessary. For more information, see:</br><br> * [インプレース電子情報開示検索を作成する](https://docs.microsoft.com/exchange/create-in-place-ediscovery-search-exchange-2013-help)<br> * [SharePoint Online の電子情報開示センターをセットアップする](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
+>コンテンツ検索の電子情報開示ツールは、[21Vianet が運営する Office 365 (中国)](https://docs.microsoft.com/microsoft-365/admin/services-in-china/services-in-china) では使用できません。つまり、表 1 に示す Office 365 アプリケーションでの顧客データの検出とエクスポートに、このツールを使用できません。ただし、Exchange Online のインプレース電子情報開示ツールを使用して、ユーザーのメールボックスの内容を検索できます。また、SharePoint Online の電子情報開示センターを使用して、SharePoint サイトと OneDrive アカウントのコンテンツを検索できます。あるいは、ドキュメントの所有者に対し、コンテンツの検索、コンテンツの変更または削除、あるいはコンテンツのエクスポート (必要な場合) に関する支援を依頼できます。</br><br> * [インプレース電子情報開示検索を作成する](https://docs.microsoft.com/exchange/create-in-place-ediscovery-search-exchange-2013-help)<br> * [SharePoint Online の電子情報開示センターをセットアップする](https://support.office.com/article/Set-up-an-eDiscovery-Center-in-SharePoint-Online-A18F8975-AA7F-43B4-A7D6-001D14744D8E)
 
 ### <a name="using-content-search-to-find-personal-data"></a>コンテンツ検索を使用した個人データの検索
 
 DSR に対応するための最初のステップは、DSR の対象となる個人データを見つけることです。 ここでは、Office 365 の電子情報開示ツールを使用して個人データを検索 (Office 365 内にあるすべての組織データで) するか、データが作成されたネイティブ アプリケーションへ直接移動します。 当該の個人データの検索と確認を行うこの最初のステップは、データ主体の要求を承認または却下するための組織の要件を DSR が満たしているかどうかを判断するために役立ちます。 たとえば、当該の個人データを検索および確認した後に、これを行うことで他人の権利と自由に悪影響を及ぼす可能性があったり、組織が正当な営業上の利益を維持している業務記録に個人データが含まれているために、要求が組織の要件を満たしていないと判断する可能性があったりします。
 
-As previously stated, Microsoft estimates that over 90% of an organization's data is created with Office applications, such as Word and Excel. This means that you can use the Content Search in the Security & Compliance Center to search for most DSR-related data.
+前述したように、Microsoft では組織のデータの 90% 以上が Word や Excel などの Office アプリケーションで作成されていると推定しています。これは、ほとんどの DSR 関連データをセキュリティ/コンプライアンス センターのコンテンツ検索を使用して検索できることを意味します。
 
-This guide assumes that you or the person searching for personal data that may be responsive to a DSR request is familiar with or has experience using the Content Search tool in the Security & Compliance Center. For general guidance on using Content Search, see [Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search). Be sure that the person running the searches has been assigned the necessary permissions in the Security & Compliance Center. This person should be added as a member of the eDiscovery Manager role group in the Security & Compliance Center; see [Assign eDiscovery permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions). Consider adding other people in your organization who are involved in investigating DSRs to the eDiscovery Manager role group, so they can perform the necessary actions in the Content Search tool such as previewing and exporting search results. However, unless you set up compliance boundaries (as described [here](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)) be aware that an eDiscovery Manager can search all content locations in your organization, including ones that may not be related to a DSR investigation.
+このガイドは、DSR 要求に対応する可能性がある個人データを検索するユーザーがセキュリティ/コンプライアンス センターのコンテンツ検索ツールに精通していることを前提としています。コンテンツ検索の使用に関する一般的なガイダンスについては、「[Office 365 でのコンテンツの検索](https://docs.microsoft.com/microsoft-365/compliance/content-search)」を参照してください。検索を実行しているユーザーにセキュリティ/コンプライアンス センターで必要なアクセス許可が割り当てられていることを確認してください。このユーザーは、セキュリティ/コンプライアンス センターで電子情報開示マネージャー役割グループのメンバーとして追加する必要があります。「[セキュリティ/コンプライアンス センターで電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)」を参照してください。DSR の調査に携わっている組織内の他のユーザーを、電子情報開示マネージャー役割グループに追加することを検討してください。そうすることにより、検索結果のプレビューやエクスポートなど、コンテンツ検索ツールで必要な操作を実行できます。ただし、コンプライアンスの境界 ([こちら](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)を参照) を設定しない限り、電子情報開示マネージャーは組織内のすべてのコンテンツの場所を検索できます。これには DSR の調査に関連しない可能性があるコンテンツも含まれます。
 
 データが見つかったら、データ主体の要求に対応するために特定の操作を実行できます。
 
@@ -137,12 +137,12 @@ This guide assumes that you or the person searching for personal data that may b
 - OneDrive for Business アカウント
 
 >[!NOTE]
->This guide assumes that all data that might be relevant to a DSR investigation is stored in Office 365; in other words, stored in the Microsoft cloud. Data stored on a user's local computer or on-premises on your organization's file servers is outside the scope of a DSR investigation for data stored in Office 365. For guidance about responding to DSR requests for data in on-premises organizations, see [GDPR for Office on-premises Servers](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers).
+>このガイドでは、DSR 調査に関連するすべてのデータが Office 365 に保存されている (つまり Microsoft クラウドに保存されている) ことを前提としています。ユーザーのローカル コンピューターや組織のファイル サーバーのオンプレミスに保存されているデータは、Office 365 に保存されているデータの DSR 調査では対象外です。オンプレミス組織のデータに対する DSR 要求への対応に関するガイダンスについては、「[オンプレミス サーバー上の Office の GDPR](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-servers)」を参照してください。
 
 #### <a name="tips-for-searching-content-locations"></a>コンテンツの場所を検索するためのヒント
 
 - まず、組織内のすべてのコンテンツの場所 (1 回の検索で検索できる場所) を検索して、検索クエリと一致する項目が含まれているコンテンツの場所を素早く特定します。 その後、関連項目を含む特定の場所に検索範囲を絞り込んで検索を再実行できます。
-- Use search statistics to identify the top locations that contain items that match your search query. See [View keyword statistics for Content Search results](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
+- 検索の統計を使用して、検索クエリに一致する項目が含まれる最上位の場所を特定します。「[コンテンツ検索結果のキーワード統計の表示](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search)」を参照してください。
 - DSR の対象ユーザーが最近行ったファイルとフォルダーのアクティビティについて、監査ログを検索します。 監査ログの検索を実行すると、ユーザーが最近操作したリソースの名前と場所を含む監査レコードの一覧が返されます。 この情報を使用してコンテンツ検索クエリを作成できる場合があります。 「[セキュリティ/コンプライアンス センターで監査ログを検索する](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)」を参照してください。
 
 #### <a name="building-search-queries-to-find-personal-data"></a>検索クエリを作成し個人データを見つける
@@ -159,7 +159,7 @@ This guide assumes that you or the person searching for personal data that may b
 
 電子メール アドレスや従業員 ID に限定して検索すると、多くの場合で多数の結果が返されます。 DSR に最も関連するコンテンツを返すように検索範囲を絞り込むには、検索クエリに条件を追加します。 条件を追加すると、キーワードと検索条件は **AND** ブール演算子によって論理的に結合されます。 つまり、キーワードと条件の*両方*に一致する項目のみが検索結果として返されます。
 
-The following table lists some conditions you can use to narrow the scope of a search. The table also lists the values that you can use for each condition to search for specific document types and mailbox items.
+次の表に、検索範囲の絞り込みに使用できる条件のリストを示します。また、特定のドキュメントの種類やメールボックス アイテムを検索するために、各条件に使用できる値もリストされています。
 
 ***表 2: 条件を使用した検索範囲の絞り込み***
 
@@ -168,10 +168,10 @@ The following table lists some conditions you can use to narrow the scope of a s
 |**条件**|**説明** |**条件値の例**|
 | ファイルの種類 | ドキュメントまたはファイルの拡張子。 Office 365 アプリケーションで作成された Office ドキュメントとファイルを検索する場合は、この条件を使用します。 この条件は、SharePoint Online サイトと OneDrive for Business アカウントにあるドキュメントを検索する場合にも使用します。<br/>対応するドキュメントのプロパティはファイルの種類です。 <br/>検索可能なファイル拡張子の完全なリストについては、「SharePoint での既定のクロール対象ファイル名拡張子および解析対象ファイルの種類」(https://technet.microsoft.com/library/jj219530.aspx)) を参照してください。|&nbsp;&bull;&nbsp;&nbsp;csv – コンマ区切り値 (CSV) ファイルを検索。Excel ファイルは CSV 形式で保存できます。CSV ファイルは簡単に Excel にインポートできます<br><br>&bull;&nbsp;&nbsp;docx – Word ファイルを検索 <br><br>&bull;&nbsp;&nbsp;mpp – Project ファイルを検索<br/><br>&bull;&nbsp;&nbsp;one – OneNote ファイルを検索 <br><br>&bull;&nbsp;&nbsp;pdf – PDF 形式で保存されたファイルを検索 <br><br>&bull;&nbsp;&nbsp;pptx – PowerPoint ファイルを検索 <br><br>&bull;&nbsp;&nbsp;xlxs – Excel ファイルを検索 <br><br>&bull;&nbsp;&nbsp;vsd – Visio ファイルを検索 <br><br>&bull;&nbsp;&nbsp;wmv – Windows Media ビデオ ファイルを検索 <br>|
 | メッセージの種類 | 検索するメール メッセージの種類。 検索する電子メールメッセージの種類。連絡先 (People)、会議 (予定表) タスク、または Skype for Business の会話をメールボックスで検索するには、この条件を使用します。 対応する電子メールのプロパティは "*種類*" です。|&bull;&nbsp;&nbsp;*contacts – メールボックスの [個人用の連絡先] リスト (People) を検索 <br><br>&bull;&nbsp;&nbsp;* email - メール メッセージを検索 <br><br>&bull;&nbsp;&nbsp;*im - Skype for Business の会話を検索 <br><br>&bull;&nbsp;&nbsp;* meetings - 予定や会議出席依頼 (予定表) を検索 <br><br>&bull;&nbsp;&nbsp;*tasks – [マイ タスク] リスト (タスク) を検索。この値を使用すると、Microsoft To Do で作成されたタスクも返されます。<br>|
-| コンプライアンス タグ |The label assigned to an email message or a document. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. Use this condition to search for items that have been automatically or manually assigned a label.<br/>This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. See the "Using Content Search to find all content with a specific label applied to it" section in [Overview of labels in Office 365.](https://docs.microsoft.com/microsoft-365/compliance/labels)|compliancetag="personal data"|
+| コンプライアンス タグ |電子メール メッセージまたはドキュメントに割り当てられたラベル。ラベルは、データ ガバナンスのために電子メールとドキュメントを分類し、ラベルで定義された分類に基づいて保持ルールを適用するために使用されます。この条件を使用して、自動または手動でラベルが割り当てられた項目を検索します。<br/>これは DSR 調査に役立つ条件です。組織がラベルを使用してデータのプライバシーに関連するコンテンツを分類したり、そのコンテンツに個人データや機密情報が含まれていたりする場合があるからです。「[ラベルの概要](https://docs.microsoft.com/microsoft-365/compliance/labels)」の「[コンテンツ検索] を使用して、特定のラベルが適用されているすべてのコンテンツを検索する」を参照してください。|compliancetag="personal data"|
 ||||
 
-There are many more email and document properties and search conditions that you can use to build more complex search queries. See the following sections in the [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) help topic for more information.
+より複雑な検索クエリの作成に使用できる、電子メールおよびドキュメントのプロパティと検索条件は、他にもあります。詳細については、「[コンテンツ検索のキーワード クエリと検索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)」ヘルプ トピックの次のセクションを参照してください。
 
 - [検索可能なメール プロパティ](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
 - [検索可能なサイト (ドキュメント) のプロパティ](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)
@@ -179,7 +179,7 @@ There are many more email and document properties and search conditions that you
 
 #### <a name="searching-for-personal-data-in-sharepoint-lists-discussions-and-forms"></a>SharePoint リスト、ディスカッション、およびフォーム内の個人データを検索する
 
-In addition to searching for personal data in documents, you can also use Content Search to search for other types of data that's created by using native SharePoint Online apps. This includes data created by using SharePoint lists, discussions, and forms. When you run a Content Search and search SharePoint Online sites (or OneDrive for Business accounts) data from lists, discussions, and forms that match the search criteria will be returned in the search results.
+コンテンツ検索を使用すると、ドキュメント内で個人データを検索するだけでなく、ネイティブの SharePoint Online アプリを使用して作成された別の種類のデータも検索できます。これには、SharePoint リスト、ディスカッション、およびフォームを使用して作成されたデータが含まれます。コンテンツ検索を実行して SharePoint Online サイト (または OneDrive for Business アカウント) を検索すると、検索条件に一致するリスト、ディスカッション、およびフォームのデータが検索結果に返されます。
 
 ##### <a name="examples-of-search-queries"></a>検索クエリの例
 
@@ -229,7 +229,7 @@ pilar@contoso.com AND filetype="xlxs"
 - 電子メール メッセージに画像ファイルなど、有効なハンドラがない添付ファイルがある (これは電子メール アイテムのインデックス作成が部分的になる最も一般的な原因です)
 - 電子メール メッセージに添付されたファイルが大きすぎるか、添付ファイルが多すぎる
 
-We recommend that you learn more about partially indexed items so that you can work with them when responding to DSR requests. For more information, see:
+DSR 要求に対応する際に部分的にインデックスが作成されたアイテムを使用するために、これらについて詳細を確認することをお勧めします。詳細については、次の項目を参照してください。
 
 - [Office 365 のコンテンツ検索で部分的にインデックスが作成されたアイテム](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)
 - [Office 365 の電子情報開示で部分的にインデックスが作成されたアイテムを調査する](https://docs.microsoft.com/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery)
@@ -237,7 +237,7 @@ We recommend that you learn more about partially indexed items so that you can w
 
 #### <a name="tips-for-working-with-partially-indexed-items"></a>部分的にインデックスが作成されたアイテムの使用のヒント
 
-It's possible that data responsive to a DSR investigation may be in a partially indexed item. Here's some suggestions for working with partially indexed items:
+部分的にインデックスが作成されたアイテムに、DSR 調査に対応するデータが存在する可能性があります。次に、部分的にインデックスが作成されたアイテムを使用するためのヒントをいくつか示します。
 
 - 検索を実行すると、推定される部分的にインデックスが作成されたアイテムの数が検索の統計に表示されます。 この推定には、SharePoint Online と OneDrive for Business の部分的にインデックスが作成されたアイテムは含まれていません。 コンテンツ検索のレポートをエクスポートして、部分的にインデックスが作成されたアイテムに関する情報を取得します。 **Unindexed Items.csv** レポートには、インデックス未作成のアイテムに関する情報が含まれます。これには、アイテムの場所、アイテムが SharePoint Online または OneDrive for Business にある場合の URL、件名 (メッセージの場合) またはドキュメントの名前などが含まれます。 詳細については、「[コンテンツ検索レポートのエクスポート](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report)」を参照してください。
 
@@ -277,7 +277,7 @@ Office Lens (iOS、Android、および Windows を実行しているデバイス
 
 #### <a name="onedrive-for-business-and-sharepoint-online-experience-settings"></a>OneDrive for Business および SharePoint エクスペリエンスの設定
 
-In addition to user-created files stored in OneDrive for Business accounts and SharePoint Online sites, these services store information about the user that is used to enable various experiences. Users still in your organization can access much of this information by using in-product functionality. The following information provides guidance on how to access, view, and export OneDrive for Business and SharePoint Online application data.
+OneDrive for Business アカウントおよび SharePoint Online サイトに保存されるユーザー作成のファイルに加えて、これらのサービスは、ユーザーに関する情報を保存します。この情報は、各種エクスペリエンスを有効にするために使用されます。組織内にいるユーザーは、製品内の機能を使用することで、この情報の多くにアクセスできます。次に示す情報では、OneDrive for Business および SharePoint Online のアプリケーション データに対するアクセス方法、表示方法、およびエクスポート方法に関するガイダンスを提供します。
 
 ##### <a name="sharepoint-user-profiles"></a>SharePoint ユーザー プロファイル
 
@@ -285,7 +285,7 @@ In addition to user-created files stored in OneDrive for Business accounts and S
 
 ###### <a name="end-users"></a>エンド ユーザー
 
-End users can discover, access, and rectify SharePoint Online user profile data using the Delve profile experience. See [View and update your profile in Office Delve](https://support.office.com/article/view-and-update-your-profile-in-office-delve-4e84343b-eedf-45a1-aeb9-8627ccca14ba) for more details.
+エンド ユーザーは、Delve プロファイル エクスペリエンスを使用して、SharePoint Online ユーザー プロファイル データの検出、アクセス、および修正を実行できます。詳細については、「[Office Delve でプロファイルを表示して更新する](https://support.office.com/article/view-and-update-your-profile-in-office-delve-4e84343b-eedf-45a1-aeb9-8627ccca14ba)」を参照してください。
 
 ユーザーが別の方法で自分の SharePoint プロファイル データにアクセスするには、自分の OneDrive for Business アカウントの [**プロフィールの編集**] ページに移動します。このページにアクセスするには、OneDrive for Business アカウントの URL で **EditProfile.aspx** パスに移動します。 たとえば、<strong>user1@contoso.com</strong> というユーザーの OneDrive for Business アカウントは次の場所になります。
 
@@ -305,7 +305,7 @@ Azure Active Directory から取得されるプロパティは、SharePoint Onli
 
 管理者は、SharePoint Online 管理センターでプロファイルのプロパティへアクセスして修正できます。 **SharePoint Online 管理センター**で [**ユーザー プロファイル**] タブをクリックします。[**ユーザー プロファイルの管理**] をクリックし、ユーザー名を入力して [**検索**] をクリックします。 管理者は、任意のユーザーを右クリックして、[**個人用プロファイルの編集**] を選択できます。 Azure Active Directory から取得されるプロパティは、SharePoint Online では変更できません。
 
-An admin can export all User Profile properties for a user by using the **Export-SPOUserProfile** cmdlet in SharePoint Online PowerShell. See  [Export-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserprofile?view=sharepoint-ps).
+管理者は、SharePoint Online PowerShell の **Export-SPOUserProfile** コマンドレットを使用してユーザーのユーザー プロファイルのすべてのプロパティをエクスポートできます。「[Export-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserprofile?view=sharepoint-ps)」を参照してください。
 
 ユーザー プロファイルの詳細については、「[SharePoint Online 管理センターでユーザー プロファイルを管理する](https://docs.microsoft.com/sharepoint/manage-user-profiles)」を参照してください。
 
@@ -313,34 +313,34 @@ An admin can export all User Profile properties for a user by using the **Export
 
 ユーザーの SharePoint ユーザー プロファイルの一部は、ユーザーが参照したサイトまたはアクセス許可を持つすべてのサイトの [ユーザー情報] リストに同期されます。 これは、SharePoint Online エクスペリエンス (ドキュメント ライブラリの [ユーザー] 列など) でユーザーの基本情報 (ドキュメントの作成者名など) を表示するために使用されます。 [ユーザー情報] リストのデータは、SharePoint ユーザー プロファイルに保存された情報と一致し、ソースが変更されると自動的に修正されます。 削除されたユーザーの場合、このデータは SharePoint の列フィールドの参照整合性のために、そのユーザーが操作したサイトに残されます。 
 
-Admins can control which properties are replicable inside the SharePoint admin center. To do this:
+管理者は、SharePoint Online 管理センターで、複製可能なプロパティを制御できます。そのためには、次の操作を実行します
 
 1. **SharePoint Online 管理センター**に移動して、**[ユーザー プロファイル]** タブをクリックします。
 2. **[ユーザー プロパティの管理]** をクリックして、プロパティのリストを確認します。
 3. 任意のプロパティを右クリックして **[編集]** を選択し、各種の設定を調整します。
 4. [**ポリシー設定**] の "replicable" プロパティでは、プロパティが [ユーザー情報] リストに表示されるかどうかを制御します。 すべてのプロパティがこの調整をサポートしているわけではありません。
 
-An admin can export all User information properties for a user on a given site by using the **Export-SPOUserInfo** cmdlet in SharePoint Online PowerShell. See [Export-SPOUserInfo](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserinfo?view=sharepoint-ps).
+管理者は、SharePoint Online PowerShell の **Export-SPOUserInfo** コマンドレットを使用して特定のサイトのユーザーのユーザー情報プロパティをすべてエクスポートできます。「[Export-SPOUserInfo](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserinfo?view=sharepoint-ps)」を参照してください。
 
 ##### <a name="onedrive-for-business-experience-settings"></a>OneDrive for Business エクスペリエンスの設定
 
-A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
+ユーザーの OneDrive for Business エクスペリエンスは、ユーザーが興味のあるコンテンツを見つけて移動する際に役立つ情報を保存します。エンド ユーザーは、製品内の機能を使用してこの情報のほとんどにアクセスできます。管理者は、[PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) と [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) のコマンドを使用して情報をエクスポートできます。
 
 設定の詳細、設定の保存方法、設定のエクスポート方法については、「[OneDrive for Business エクスペリエンス設定のエクスポート](https://docs.microsoft.com/sharepoint/export-odfb-lists)」を参照してください。
 
 ##### <a name="onedrive-for-business-and-sharepoint-online-search"></a>OneDrive for Business および SharePoint Online の検索
 
-The in-app search experience in OneDrive for Business and SharePoint Online stores a user's search queries for 30 days to increase relevance of search results. An admin can export search queries for a user by using the **Export-SPOQueryLogs** cmdlet in SharePoint Online PowerShell. See [Export-SPOQueryLogs](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spoquerylogs?view=sharepoint-ps).
+OneDrive for Business と SharePoint Online のアプリ内検索エクスペリエンスは、検索結果の関連性が向上するように、ユーザーの検索クエリを 30 日間保存します。ユーザーの検索クエリをエクスポートする場合、管理者は SharePoint Online PowerShell の **Export-SPOQueryLogs** コマンドレットを使用できます。「[Export-SPOQueryLogs](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spoquerylogs?view=sharepoint-ps)」を参照してください。
 
 #### <a name="microsoft-teams-for-education"></a>Microsoft Teams for Education
 
-Microsoft Teams for Education offers two additional collaboration features that teachers and students can use that creates and stores personal data: Assignments and OneNote Class Notebook. You can use Content Search to discover data in both.
+Microsoft Teams for Education には、教師と学生が個人データの作成と保存に使用できる 2 つの追加のコラボレーション機能 (Assignments および OneNote Class Notebook) が用意されています。どちらのデータもコンテンツ検索を使用して検出できます。
 
 ##### <a name="assignments"></a>Assignments
 
-Students files associated with an Assignment are stored in a document library in the corresponding Teams SharePoint Online site. IT admins can use the Content Search tool to search for student files that are related to assignments. For example, an admin could search all SharePoint Online sites in the organization and use the student's name and class or assignment name in the search query to find data relevant to a DSR.
+[課題] に関連付けられた学生のファイルは、対応するチームの SharePoint Online サイトのドキュメント ライブラリに保存されます。IT 管理者は、コンテンツ検索ツールを使用して、課題に関連する学生のファイルを検索できます。たとえば、管理者は組織内のすべての SharePoint Online サイトを検索し、検索クエリに学生の名前とクラスまたは課題名を使用して DSR に関連するデータを検索できます。
 
-There's other data related to Assignments that isn't stored in the class team SharePoint Online site, which means it's not discoverable with Content Search. This includes:
+クラス チームの SharePoint Online サイトに保存されない、その他の Assignments 関連のデータがあります。そのデータは、コンテンツ検索では検出できないことになります。これには、次のものが含まれます。
 
 - 教師が課題の一部として生徒に割り当てたファイル
 - 学生の成績と教師からのフィードバック
@@ -351,7 +351,7 @@ There's other data related to Assignments that isn't stored in the class team Sh
 
 ##### <a name="onenote-class-notebook"></a>OneNote Class Notebook
 
-The OneNote Class Notebook is stored in the class team SharePoint Online site. Every student in a class has a private notebook that's shared with the teacher. There's also a content library where a teacher can share documents with students, and a collaboration space for all students in the class. Data related to these capabilities is discoverable with Content Search.
+OneNote Class Notebook は、クラス チームの SharePoint Online サイトに保存されます。クラス内の各学生が教師と共有されるプライベート ノートブックを所有しています。また、教師が学生と共有できるコンテンツ ライブラリと、クラス内のすべての学生のための共同作業スペースもあります。このような機能に関連したデータは、コンテンツ検索で検出できます。
 
 ここでは、Class Notebook の検索に固有のガイダンスを示します。
 
@@ -362,8 +362,8 @@ The OneNote Class Notebook is stored in the class team SharePoint Online site. E
    - 検索キーワードとしてクラス チームの名前を含める (例: "9C Biology")
 
 2. 検索結果をプレビューして、Class Notebook に対応するアイテムを見つけます。
-3. Select that item, and then copy the folder path that's displayed in the details pane. This is the root folder for the Class Notebook.
-4. Edit the search that you created in step 1 and replace the class name in the keyword query with the folder path of the Class Notebook and precede the folder path with the **path** site property; for example, **path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Be sure to include the quotation marks and the trailing forward slash.
+3. そのアイテムを選択して、詳細ウィンドウに表示されているフォルダー パスをコピーします。これは、Class Notebook のルート フォルダーです。
+4. 手順 1 で作成した検索を編集して、キーワード クエリのクラス名を Class Notebook のフォルダー パスに置き換えて、そのフォルダー パスの前に **path** サイト プロパティを追加します。たとえば、**path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"** のようにします。引用符と末尾のスラッシュが含まれていることを確認してください。
 5. 検索条件を追加し、[ファイルの種類] 条件を選択して、ファイルの種類の値として使用します。 これにより、すべての OneNote ファイルが検索結果で返されます。 その結果としてのキーワードの構文は、次のようになります。[](#building-search-queries-to-find-personal-data)
 
     ```Query
@@ -380,14 +380,14 @@ Microsoft To Do のタスク (別名 *To Do*、*やるべきことリスト*に�
 
 ここでは、Skype for Business の個人データへのアクセス方法、表示方法、およびエクスポート方法に関する追加情報を示します。
 
-- Files attached to a meeting are retained in the actual meeting for 180 days and then become inaccessible. These files can be accessed by meeting participants by joining the meeting from the meeting request and then viewing or downloading the attached file. See the "Use the attachments in the meeting" section in [Preload attachments for a Skype for Business meeting](https://support.microsoft.com/ja-JP/office/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251).
-- Conversations in Skype for Business are retained in the Conversation History folder in user mailboxes. You can use Content Search to search mailboxes for data in Skype conversations.
-- A data subject can export their contacts in Skype for Business. To do this, they would right-click a contact group in Skype for Business and click **Copy**. Then they can paste the list of email addresses into a text or Word document.
-- If the Exchange Online mailbox of a meeting participant is placed on Litigation Hold or assigned to an Office 365 retention policy, files attached to a meeting are retained in the participants mailbox. You can use Content Search to search for those files in the participant's mailbox if the retention period for the file has not expired. For more information about retaining files, see [Retaining large files attached to a Skype for Business meeting](https://docs.microsoft.com/skypeforbusiness/set-up-policies-in-your-organization/retaining-large-files-attached-to-a-meeting).
+- 会議に添付されたファイルは、実際の会議に 180 日間保持され、その後でアクセスできなくなります。こうしたファイルは、会議の参加者が会議出席依頼から会議に参加して、添付されたファイルを表示またはダウンロードすることでアクセスできます。「[Skype for Business 会議で使用する添付ファイルのプリロード](https://support.microsoft.com/ja-JP/office/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251)」のセクション「添付ファイルを会議で使用する」を参照してください。
+- Skype for Business の会話は、ユーザーのメールボックス内の [会話履歴] フォルダーに維持されます。コンテンツ検索を使用すると、Skype の会話に含まれるデータについてメールボックスを検索できます。
+- データ主体は、Skype for Business 内の自分の連絡先をエクスポートできます。これを実行するには、Skype for Business の連絡先グループを右クリックして、**[コピー]** をクリックします。これにより、電子メール アドレスのリストが、テキストや Word ドキュメントに貼り付けできるようになります。
+- 会議参加者の Exchange Online メールボックスに訴訟ホールドが実施されている場合や、Office 365 保持ポリシーが割り当てられている場合、会議に添付されたファイルは参加者のメールボックス内に維持されます。参加者のメールボックス内の該当するファイルは、そのファイルの保持期間が経過していない場合、コンテンツ検索を使用して検索できます。ファイルの保持の詳細については、「[Skype for Business の会議に添付された大きなファイルを保持する](https://docs.microsoft.com/skypeforbusiness/set-up-policies-in-your-organization/retaining-large-files-attached-to-a-meeting)」を参照してください。
 
 ## <a name="providing-a-copy-of-personal-data"></a>個人データのコピーを提供する
 
-After you've found personal data that is potentially responsive to a DSR, it's up to you and your organization to decide which data to provide the data subject. For example, you can provide them with a copy of the actual document, an appropriately redacted version, or a screenshot of the portions that you've deemed appropriate to share. For each of these responses to an access request, you'll have to retrieve a copy of the document or other item that contains the responsive data.
+DSR への対応の対象になる可能性のある個人データを見つけたら、担当者と組織はデータ主体にどのデータを提供するかを判断します。たとえば、実際のドキュメントのコピー、適切に編集したバージョン、または共有することが妥当であると判断した部分のスクリーン ショットを提供できます。アクセス要求に対するこのような対応ごとに、対象のデータを含むドキュメントなどのアイテムのコピーを取得する必要があります。
 
 データ主体にコピーを提供する際には、別のデータ主体に関する個人情報などの機密情報を削除または編集することが必要になる場合があります。
 
@@ -395,7 +395,7 @@ After you've found personal data that is potentially responsive to a DSR, it's u
 
 コンテンツ検索ツールを使用して、検索の実行後に見つかったドキュメントまたはメールボックス アイテムのコピーを取得する方法は 2 つあります。
 
-- Preview the search results and then download a copy of the document or item. This is a good way to download a few items or files.
+- 検索結果をプレビューして、ドキュメントまたはアイテムのコピーをダウンロードする。これは、少数のアイテムやファイルをダウンロードする場合に適しています。
 - 検索結果をエクスポートして、検索で返されたすべてのアイテムのコピーをダウンロードする。 この方法は複雑になりますが、DSR に対応する多数のアイテムをダウンロードする場合に適しています。 また、検索結果のエクスポートには役立つレポートも含まれています。 こうしたレポートは、各アイテムに関する追加情報を取得するために使用できます。 **Results.csv** レポートは、エクスポートしたアイテムに関する多数の情報を含んでいるため役立ちます (たとえば、電子メール メッセージのメールボックスや、SharePoint Online および OneDrive for Business のサイトにあるドキュメントまたはリストの URL など)。 この情報は、DSR 調査プロセスでアイテムの所有者と連絡を取る必要がある場合、その所有者の特定に役立ちます。 検索結果のエクスポート時に含まれるレポートの詳細については、「[コンテンツ検索レポートのエクスポート](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report)」を参照してください。
 
 #### <a name="preview-and-download-items"></a>アイテムのプレビューとダウンロード
@@ -409,17 +409,17 @@ After you've found personal data that is potentially responsive to a DSR, it's u
 1. セキュリティ/コンプライアンス センターで、[コンテンツ検索] を開きます。
 2. 結果が表示されていない場合は、**[結果のプレビュー]** をクリックします。
 3. アイテムをクリックして表示します。
-4. Click **Download original file** to download the item to your local computer. You'll also have to download items that can't be previewed.
+4. **[元のファイルのダウンロード]** をクリックして、ローカル コンピューターにアイテムをダウロードします。また、プレビューできないアイテムのダウンロードも必要になります。
 
 検索結果のプレビューの詳細については、「[検索結果のプレビュー](https://docs.microsoft.com/microsoft-365/compliance/content-search)」を参照してください。
 
 #### <a name="export-and-download-items"></a>アイテムのエクスポートとダウンロード
 
-You can also export the results of a content search to get a copy of email messages, documents, lists, and web pages containing the personal data, though this method is more involved than previewing items. See the next section for details about [exporting the results of a Content Search](#export-and-download-content-using-content-search).
+コンテンツ検索の結果をエクスポートして、個人データが含まれている電子メール メッセージ、ドキュメント、リスト、および Web ページのコピーを取得することもできます。ただし、この方法はアイテムのプレビューよりも複雑になります。[コンテンツ検索の結果のエクスポート](#export-and-download-content-using-content-search)に関する詳細については、この次のセクションを参照してください。
 
 ## <a name="exporting-personal-data"></a>個人データのエクスポート
 
-The "right of data portability" allows a data subject to request an electronic copy of personal data that's in a "structured, commonly used, machine-readable format", and to request that your organization transmit these electronic files to another data controller. Microsoft supports this right in two ways:
+「データ ポータビリティの権利」により、データ主体は、"構造化された一般的に使用されているコンピューターが読み取り可能な形式" での個人データの電子コピーを要求できます。また、そうした電子ファイルを別のデータ管理者に送信するように要求することもできます。Microsoft は、この権利を次の 2 つの方法でサポートしています。
 
 - ネイティブのコンピューターが読み取り可能な一般的に使用されている電子形式でデータを保存する Office 365 アプリケーションを提供しています。 Office ファイル形式の詳細については、「[Office ファイル形式 - テクニカル ドキュメント](https://msdn.microsoft.com/library/office/cc313105(v=office.12).aspx)」を参照してください。
 - ネイティブのファイル形式、または別のアプリケーションに簡単にインポートできる形式 (CSV、TXT、JSON など) で組織がデータをエクスポートできるようにしています。
@@ -428,7 +428,7 @@ DSR エクスポート要求を満たすために、ネイティブのファイ�
 
 ### <a name="export-and-download-content-using-content-search"></a>コンテンツ検索を使用したコンテンツのエクスポートとダウンロード
 
-When you export the results of a Content Search, email items can be downloaded as PST files or as individual messages (.msg files). When you export documents and lists from SharePoint Online and OneDrive for Business sites, copies in the native file formats are exported. For example, SharePoint lists are exported as CSV files and Web pages are exported as .aspx or html files.
+コンテンツ検索の結果をエクスポートすると、電子メール アイテムを PST ファイルとして、または個別のメッセージ (.msg ファイル) としてダウンロードできます。SharePoint Online および OneDrive for Business のサイトからドキュメントとリストをエクスポートすると、コピーがネイティブのファイル形式でエクスポートされます。たとえば、SharePoint リストは CSV ファイルとしてエクスポートされ、Web ページは .aspx または html ファイルとしてエクスポートされます。
 
 >[!NOTE]
 >コンテンツ検索を使用してユーザーのメールボックスからメールボックス アイテムをエクスポートするには、ユーザー (アイテムのエクスポート元メールボックスの所有者) に、Exchange Online プラン 2 ライセンスが割り当てられている必要があります。 
@@ -437,7 +437,7 @@ When you export the results of a Content Search, email items can be downloaded a
 
 1. セキュリティ/コンプライアンス センターで、[コンテンツ検索] を開きます。
 2. [検索] ポップアップ ページで [![ダウンロード アイコン](../media/o365-dsr_image21.png)] [**詳細**] をクリックし、 [**結果のエクスポート**] をクリックします。 レポートをエクスポートすることもできます。
-3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options.
+3. **[結果のエクスポート]** ポップアップ ページの各セクションに入力します。スクロール バーを使用して、すべてのエクスポート オプションを確認してください。
 4. セキュリティ/コンプライアンス センターのコンテンツ検索ページに戻って、**[エクスポート]** タブをクリックします。
 5. **[最新の情報に更新]** をクリックして、ページを更新します。
 6. [**名前**] 列で、作成したエクスポート ジョブをクリックします。 エクスポート ジョブの名前は、コンテンツ検索の名前に "**\_Export**" が付加されたものになります。
@@ -448,18 +448,18 @@ When you export the results of a Content Search, email items can be downloaded a
 11. **[参照]** をクリックして、検索結果のファイルをダウンロードする場所を指定します。
 12. **[開始]** をクリックして、検索結果をコンピューターにダウンロードします。
 
-When the export process is complete, you can access the files in the location on your local computer where they were downloaded. Results of a content search are downloaded to a folder named after the Content Search. Documents from sites are copied to a subfolder named **SharePoint**. Mailbox items are copied to subfolder named **Exchange**.
+エクスポート処理が完了すると、ダウンロード先のローカル コンピューターの場所にあるファイルにアクセスできます。コンテンツ検索の結果は、そのコンテンツ検索に関連する名前のフォルダーにダウンロードされます。サイトからのドキュメントは、**[SharePoint]** という名前のサブフォルダーにコピーされます。メールボックス アイテムは、**[Exchange]** という名前のサブフォルダーにコピーされます。
 
 手順ごとの詳細な説明については、「[セキュリティ/コンプライアンス センターの検索結果をエクスポートする](export-search-results.md)」を参照してください。
 
 ### <a name="downloading-documents-and-lists-from-sharepoint-online-and-onedrive-for-business"></a>SharePoint Online および OneDrive for Business からドキュメントとリストをダウンロードする
 
-Another way to export data from SharePoint Online and OneDrive for Business is to download documents and lists directly from a SharePoint Online site or a OneDrive for Business account. You would have to get assigned the permissions to access a site, and then go to the site and download the contents. See:
+SharePoint Online および OneDrive for Business からデータをエクスポートする別の方法として、SharePoint Online サイトまたは OneDrive for Business アカウントからドキュメントとリストを直接ダウンロードします。サイトへのアクセス許可を自分に割り当ててから、そのサイトに移動してコンテンツをダウンロードする必要があります。次の項目を参照してください。
 
 - [OneDrive や SharePoint からファイルとフォルダーをダウンロードする](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)
 - [SharePoint リストを Excel にエクスポートする](https://support.office.com/article/export-to-excel-from-sharepoint-bfb2ea48-6118-4fa9-abb6-cced9424e5d9)
 
-For some DSR export requests, you may want to allow the data subject to download content themselves. This enables the data subject to go to a SharePoint Online site or shared folder and click **Sync** to sync all contents in the document library or selected folders. See:
+一部の DSR エクスポート要求に対して、データ主体がコンテンツをダウンロードできるようにすることが必要になる場合があります。これは、データ主体が SharePoint Online サイトまたは共有フォルダーに移動して **[同期]** をクリックし、ドキュメント ライブラリ内のすべてのコンテンツまたは選択したフォルダーを同期することで可能になります。次の項目を参照してください。
 
 - [次世代の OneDrive 同期クライアントを使用して SharePoint ファイルを同期する](https://docs.microsoft.com/sharepoint/let-users-use-new-onedrive-sync-client)
 - [次世代の OneDrive 同期クライアントを使用して SharePoint ファイルを同期する](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-client-6de9ede8-5b6e-4503-80b2-6190f3354a88)
@@ -488,12 +488,12 @@ SharePoint Online サイトまたは OneDrive for Business アカウントにあ
 ここでは、サイトからドキュメントを削除する際の手順の概要を示します。
 
 1. サイトに移動して、ドキュメントを検索します。
-2. Delete the document. When you delete a document from a site, it's sent to the first-stage Recycle Bin.
-3. Go to the first-stage Recycle Bin (the site Recycle Bin) and delete the same document you deleted in the previous step. The document is sent to the second-stage Recycle Bin. **At this point, the document is soft-deleted**.
-4. Go to the second-stage Recycle Bin (which is the site collection Recycle Bin) and delete the same document that you deleted from the first-stage Recycle Bin. **At this point, the document is hard-deleted.**
+2. ドキュメントを削除します。サイトからドキュメントを削除すると、そのドキュメントは第 1 段階のごみ箱に送られます。
+3. 第 1 段階のごみ箱 (サイトのごみ箱) に移動して、前の手順で削除したものと同じドキュメントを削除します。そのドキュメントは第 2 段階のごみ箱に送られます。**この時点で、ドキュメントは論理的に削除されます**。
+4. 第 2 段階のごみ箱 (サイト コレクションのごみ箱) に移動して、第 1 段階のごみ箱から削除したものと同じドキュメントを削除します。**この時点で、ドキュメントは物理的に削除されます**。
 
 >[!IMPORTANT]
->You can't delete a document that is located on a site that is on hold (with one of the retention or legal hold features in Office 365). In the case where a DSR delete request takes precedence over a legal hold, the hold would have to be removed from the site before a document could be permanently deleted.
+>ホールド (Office 365 の保持または訴訟ホールドのいずれかの機能による) 状態のサイトにあるドキュメントは削除できません。DSR 削除要求が訴訟ホールドよりも優先される場合は、その訴訟ホールドをサイトから削除する必要があり、その後でドキュメントを完全に削除できます。
 
 詳細な手順については、次のトピックを参照してください。
 
@@ -507,7 +507,7 @@ SharePoint Online サイトまたは OneDrive for Business アカウントにあ
 
 ### <a name="deleting-a-sharepoint-site"></a>SharePoint サイトの削除
 
-You may determine that the best way to respond to a DSR delete request is to delete an entire SharePoint site, which will delete all that data located in the site. You can do this by running cmdlets in SharePoint Online PowerShell.
+DSR 削除要求に対応する最適な方法が、SharePoint サイト全体の削除だと判断することがあります。そうすることで、そのサイトに存在するデータをすべて削除します。このような削除は、SharePoint Online PowerShell でコマンドレットを実行することで可能になります。
 
 - [Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) コマンドレットは、サイトを削除して SharePoint Online のごみ箱に移動 (論理的に削除) する場合に使用します。
 - [Remove-SPODeletedSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spodeletedsite?view=sharepoint-ps) コマンドレットは、サイトを完全に削除 (物理的に削除) する場合に使用します。
@@ -516,7 +516,7 @@ You may determine that the best way to respond to a DSR delete request is to del
 
 ### <a name="deleting-a-onedrive-for-business-site"></a>OneDrive for Business サイトの削除
 
-Similarly, you may determine to delete a user's OneDrive for Business site in response to a DSR deletion request. If you delete the user's Office 365 account, their OneDrive for Business site is retained (and restorable) for 30 days. After 30 days, it's moved to the SharePoint Online Recycle Bin (soft-deleted), and then after 93 days, it's permanently deleted (hard-deleted). To accelerate this process, you can use the [Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) cmdlet to move the OneDrive for Business site to the Recycle Bin and then use the [Remove-SPODeletedSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spodeletedsite?view=sharepoint-ps) cmdlet to permanently delete it. As with sites in SharePoint Online, you can't delete a user's OneDrive for Business site if it was assigned to an eDiscovery hold or a retention policy before the user's account was deleted.
+同様に、DSR 削除要求への対応で、ユーザーの OneDrive for Business サイトの削除を決定することがあります。ユーザーの Office 365 アカウントを削除すると、そのユーザーの OneDrive for Business サイトは 30 日間保持されます (回復可能です)。30 日経過すると、そのサイトは SharePoint Online のごみ箱に移動されます (論理的な削除)。93 日経過すると、完全に削除されます (物理的な削除)。このプロセスを短縮するには、[Remove-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-sposite?view=sharepoint-ps) コマンドレットを使用して OneDrive for Business サイトをごみ箱に移動してから、[Remove-SPODeletedSite](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spodeletedsite?view=sharepoint-ps) コマンドレットを使用してサイトを完全に削除します。SharePoint Online のサイトと同様に、ユーザーのアカウントが削除される前に OneDrive for Business サイトに電子情報開示ホールドまたは保持ポリシーが割り当てられていると、そのサイトは削除できなくなります。
 
 ### <a name="deleting-onedrive-for-business-and-sharepoint-online-experience-settings"></a>OneDrive for Business および SharePoint Online エクスペリエンスの設定の削除
 
@@ -524,21 +524,21 @@ Similarly, you may determine to delete a user's OneDrive for Business site in re
 
 #### <a name="deleting-a-sharepoint-user-profile"></a>SharePoint ユーザー プロファイルの削除
 
-The SharePoint user profile will be permanently deleted 30 days after the user account is deleted in Azure Active Directory. However, you can hard-delete the user account, which will remove the SharePoint user profile. For more information, see the [Deleting a user section in this guide](#deleting-a-user).
+SharePoint ユーザー プロファイルは、Azure Active Directory でユーザー アカウントが削除されてから 30 日後に完全に削除されます。ただし、ユーザー アカウントを物理的に削除して、SharePoint ユーザー プロファイルを削除することもできます。詳細については、このガイドのセクション「[ユーザーの削除](#deleting-a-user)」を参照してください。
 
-An admin can expedite the deletion of the User Profile for a user by using the **Remove-SPOUserProfile** cmdlet in SharePoint Online PowerShell. See [Remove-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spouserprofile?view=sharepoint-ps). This requires the user to be at least soft-deleted in Azure Active Directory.
+管理者は SharePoint Online PowerShell の **Remove-SPOUserProfile** コマンドレットを使用すると、ユーザーのユーザー プロファイルを効率よく削除できます。「[Remove-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spouserprofile?view=sharepoint-ps)」を参照してください。このコマンドレットを使用するには、少なくとも Azure Active Directory でユーザーが論理的に削除されている必要があります。
 
 #### <a name="deleting-user-information-lists-on-sharepoint-online-sites"></a>SharePoint Online サイトのユーザー情報リストの削除
 
-For users that have left the organization, this data remains in the sites they interacted with for referential integrity of SharePoint column fields. An admin can delete all User information properties for a user on a given site by using the **Remove-SPOUserInfo** command in SharePoint Online PowerShell. See [Remove-SPOUserInfo](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spouserinfo?view=sharepoint-ps) for information about running this PowerShell cmdlet.
+組織を離れたユーザーの場合、このデータは SharePoint の列フィールドの参照整合性のために、そのユーザーが操作したサイトに残されます。管理者は、SharePoint Online PowerShell の **Remove-SPOUserInfo** コマンドを使用して、特定のサイトのユーザーのユーザー情報プロパティをすべて削除できます。この PowerShell コマンドレットの実行の詳細については、「[Remove-SPOUserInfo](https://docs.microsoft.com/powershell/module/sharepoint-online/remove-spouserinfo?view=sharepoint-ps)」を参照してください。
 
 既定では、このコマンドはユーザーの表示名や削除されたプロパティ (電話番号、電子メール アドレス、技能と専門知識、その他の SharePoint Online ユーザー プロファイルからコピーされたプロパティ) を保持します。 管理者は **RedactUser** パラメーターを使用して、[ユーザー情報] リスト内のユーザーに代替の表示名を指定できます。 これは、ユーザー エクスペリエンスの複数のパーツに影響し、サイト内のファイルの履歴を調べるときに情報が損失します。
 
-Finally, the redaction capability will not remove all metadata or content referencing a user from documents. The way to achieve redaction of file content and metadata is described in the [Making changes to content in OneDrive for Business and SharePoint Online](#making-changes-to-content-in-onedrive-for-business-and-sharepoint-online) section in this guide. This method consists of downloading, deleting, and then uploading a redacted copy of the file.
+最後に、改訂機能では、ユーザーを参照しているすべてのメタデータやコンテンツはドキュメントから削除されません。ファイルのコンテンツやメタデータの改訂を実現する方法については、このガイドのセクション「[OneDrive for Business と SharePoint Online のコンテンツに変更を加える](#making-changes-to-content-in-onedrive-for-business-and-sharepoint-online)」を参照してください。この方法では、ファイルのコピーをダウンロードおよび削除し、改訂したファイルのコピーをアップロードします。
 
 #### <a name="deleting-onedrive-for-business-experience-settings"></a>OneDrive for Business エクスペリエンスの設定の削除
 
-The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/delete-odfb-lists) for more information about the settings, how they are stored, and how to delete them.
+OneDrive for Business エクスペリエンスの設定と情報のすべてを削除する場合に推奨される方法は、残されているファイルを別のユーザーに再割り当てしてから、ユーザーの OneDrive for Business サイトを削除することです。管理者は、[PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) および [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) のコマンドを使用してこれらのリストを削除できます。設定の詳細、設定の保存方法および削除方法については、「[OneDrive for Business エクスペリエンスの設定の削除](https://docs.microsoft.com/sharepoint/delete-odfb-lists)」を参照してください。
 
 #### <a name="onedrive-for-business-and-sharepoint-online-search-queries"></a>OneDrive for Business および SharePoint Online の検索クエリ
 
@@ -561,25 +561,25 @@ DSR 削除要求に応えるために、Exchange Online メールボックス内
 
 #### <a name="hard-delete-mailbox-items"></a>メールボックス アイテムの物理的な削除
 
-If you have to hard-delete mailbox items in response to the DSR deletion request, you can use the **Search-Mailbox -DeleteContent** command in Exchange Online PowerShell. If you use this method, consider using Content Search to develop and refine a search query so that only the items that are to be deleted are returned in the search. Then you can use that query syntax when you run the **Search-Mailbox -DeleteContent** command.
+DSR 削除要求への対応で、メールボックス アイテムの物理的な削除が必要になった場合は、Exchange Online PowerShell で **Search-Mailbox -DeleteContent** コマンドを使用できます。この方法を使用する場合は、削除するアイテムのみが検索結果で返されるように、コンテンツ検索を使用して検索クエリを作成および調整することを検討してください。そうすることで、**Search-Mailbox -DeleteContent** コマンドの実行に、そのクエリ構文を使用できます。
 
 詳細な手順については、「[メッセージを検索して削除する](https://technet.microsoft.com/library/ff459253(v=exchg.150).aspx)」を参照してください。
 
 #### <a name="hard-delete-items-in-a-mailbox-on-hold"></a>ホールド状態のメールボックス アイテムの物理的な削除
 
-As previously explained, if you hard-delete items in a mailbox on hold, items are not removed from the mailbox. They are moved to a hidden folder in the Recoverable Items folder (the **Purges** folder) and will remain there until the hold duration for the item expires or until the hold is removed from the mailbox. If either of those things happen, the items will be purged from Office 365 the next time that the mailbox is processed.
+前述したように、ホールド状態のメールボックス内のアイテムを物理的に削除しても、アイテムはメールボックスから削除されません。そうしたアイテムは、[回復可能なアイテム] フォルダー内の非表示フォルダー (**[Purges]** フォルダー) に移動され、そのアイテムのホールド期間が経過するか、メールボックスからホールドが削除されるまで、そのフォルダーに残されます。そのどちらかが発生すると、アイテムはメールボックスの次回処理時に Office 365 から消去されます。
 
-Your organization might determine that items being permanently deleted when the hold duration expires meets the requirements for a DSR deletion request. However, if you determine that mailbox items must be immediately purged from Office 365, you would have to remove the hold from the mailbox and then hard-deleted the items from the mailbox. For detailed instructions, see [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
+ホールド期間が経過したときにアイテムが完全に削除されることで、DSR 削除要求の要件が満たされると組織が判断することもあります。ただし、すぐに Office 365 からアイテムを消去する必要があると判断した場合は、メールボックスからホールドを削除してから、そのメールボックスからアイテムを物理的に削除する必要があります。詳細な手順については、「[クラウドベースの保留中のメールボックスの回復可能なアイテム フォルダーのアイテムを削除する - 管理者向けヘルプ](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold)」を参照してください。
 
 >[!NOTE]
 >DSR 削除要求に応えるために、前のトピックの手順に従ってメールボックス アイテムを物理的に削除する場合は、メールボックスがホールド状態にある間に該当するアイテムを論理的に削除して、そのアイテムを回復可能なアイテム フォルダーに移動しておく必要があります。
 
 ## <a name="deleting-a-user"></a>ユーザーの削除
 
-In addition to deleting personal data in response to a DSR deletion request, a data subject's "right to be forgotten" may also be fulfilled by deleting their user account. Here are some reasons that you might want to delete a user:
+DSR 削除要求への対応で個人データを削除することに加えて、ユーザー アカウントの削除によって、データ主体の「忘れられる権利」も守られるようになります。ここでは、ユーザーを削除する理由の一部について説明します。
 
 - データ主体が組織から退職した (または退職手続き中である)。
-- The data subject has requested that you delete system-generated logs that have been collected about them. Examples of data in system-generated logs include Office 365 app and service usage data, information about search requests performed by the data subject, and data generated by product and services as a product of system functionality and interaction by users or other systems. For more information, see [Part 3: Responding to DSRs for system-generated Logs](#part-3-responding-to-dsrs-for-system-generated-logs) in this guide.
+- データ主体が自分に関して収集されたシステム生成ログの削除を要求している。システム生成ログに含まれるデータの例として、Office 365 アプリおよびサービスの使用状況データ、データ主体が実行した検索要求に関する情報、システム機能およびユーザーまたは別のシステムの操作による結果としてシステムおよびサービスによって生成されたデータなどが挙げられます。詳細については、このガイドの「[パート 3: システム生成ログに対する DSR への対応](#part-3-responding-to-dsrs-for-system-generated-logs)」を参照してください。
 - データ主体による Office 365 のデータのアクセスや処理を完全に防止する (セクション「[DSR 制限要求への対応](#responding-to-dsr-restriction-requests)」で説明する方法による一時的なアクセスを制限とは対照的)。
 
 ユーザー アカウントを削除すると、次のようになります。
@@ -590,28 +590,28 @@ In addition to deleting personal data in response to a DSR deletion request, a d
 - データ主体に関するシステム生成ログは、サービスのセキュリティや安定性を損なう可能性のあるデータを除き、ユーザー アカウントが削除されてから 30 日後に削除されます。 詳細については、「[システム生成ログの削除](#deleting-system-generated-logs)」セクションを参照してください。
 
 >[!IMPORTANT]
->After you delete a user account, that person will lose the ability to sign in to Office 365 and the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. That person would also be unable to initiate any DSR requests through Microsoft directly in instances where Microsoft is the data controller. For more information, see the [Product and services authenticated with an Org ID for which Microsoft is a data controller](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller) section in Part 4 of this guide.
+>ユーザー アカウントを削除すると、その個人は Office 365 にサインインできなくなり、その個人が学校または職場アカウントに依存していた製品やサービスにサインインできなくなります。さらに、その人物は Microsoft がデータ管理者に該当する DSR 要求を直接 Microsoft を通じて開始することもできなくなります。詳細については、このガイドの「パート 4」のセクション「[Microsoft がデータ管理者である Org ID で認証された製品とサービス](#product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller)」を参照してください。
 
 >[!NOTE]
->In the event that you are a customer currently engaged in FastTrack migrations, deleting the user account will not delete the data copy held by the Microsoft FastTrack team, which is held for the sole purpose of completing the migration. If, during the migration, you would like the Microsoft FastTrack team to also delete the data copy, you can [submit a request](https://go.microsoft.com/fwlink/?linkid=874544). In the ordinary course of business, Microsoft FastTrack will delete all data copies once the migration is complete.
+>現在 FastTrack の移行を実施しているお客様の場合、ユーザー アカウントを削除しても、Microsoft FastTrack チームが保持しているデータのコピーは削除されません。このコピーは、移行を完了する目的でのみ保持されています。移行中に、Microsoft FastTrack チームによるデータ コピーの削除を希望される場合は、[その旨を依頼できます](https://go.microsoft.com/fwlink/?linkid=874544)。Microsoft FastTrack は、通常の業務の流れとして、移行完了後にすべてのデータ コピーを削除します。
 
 個人データの削除に関する前述のセクションでは、データの論理的な削除と物理的な削除について説明しましたが、ユーザー アカウントを削除する場合にも、論理的な削除と物理的な削除の状態が存在します。
 
 - (管理センターまたは Azure portal でユーザーを削除することにより) ユーザー アカウントが最初に削除されたときは、そのユーザー アカウントは論理的に削除され、Azure のごみ箱に 30 日間移動されます。 この時点では、ユーザー アカウントの復元が可能です。
-- If you permanently deleted the user account, the user account is hard-deleted and removed from the Recycle Bin in Azure. At this point, the user account can't be restored, and any data associated with the user account will be permanently removed from the Microsoft cloud. Hard-deleting an account deletes system-generated logs about the data subject, except for data that may compromise the security or stability of the service.
+- ユーザー アカウントを完全に削除すると、そのユーザー アカウントは物理的に削除され、Azure のごみ箱からも削除されます。この時点で、ユーザー アカウントは復元できなくなり、そのユーザー アカウントに関連付けられていたデータは Microsoft のクラウドから完全に削除されます。アカウントが物理的に削除されると、データ主体に関するシステム生成ログが削除されます。ただし、サービスのセキュリティや安定性を損なう可能性のあるデータは削除されません。
 
 ここでは、組織からユーザーを削除する場合の手順の概要を示します。
 
 1. 管理センターまたは Azure portal に移動して、ユーザーを見つけます。
 
-2. Delete the user. When you initially delete the user, the user's account is sent to the Recycle Bin. At this point, the user is soft-deleted. The account is retained in the soft-deleted for 30 days, which allows you to restore the account. After 30 days, the account is automatically hard-deleted. For specific instructions, see [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory).<br><br> ユーザーア カウントは管理センターでも削除できます。 詳細については、「[組織からユーザーを削除する](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)」を参照してください。
+2. ユーザーを削除します。最初にユーザーを削除したときには、ユーザーのアカウントがごみ箱に送られます。この時点で、ユーザーは論理的に削除されます。アカウントは論理的な削除の状態で 30 日間維持されます。この間は、アカウントの復元が可能です。30 日経過後、アカウントは自動的に物理的に削除されます。具体的な手順については、「[Azure AD からユーザーを削除する](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory)」を参照してください。<br><br> ユーザーア カウントは管理センターでも削除できます。 詳細については、「[組織からユーザーを削除する](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)」を参照してください。
 
 3. ユーザー アカウントが物理的に削除されるまで 30 日間待機できない場合は、手動による物理的な削除が可能です。 この操作を Azure portal で実行する場合は、最近削除されたユーザーのリストに移動して、そのユーザーを完全に削除します。 ユーザーはこの時点で物理的に削除されます。 手順については、「[最近削除されたユーザーを完全に削除する方法](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore)」を参照してください。
 
 Office 365 管理ポータルでは、ユーザーの物理的な削除は実行できません。
 
 >[!NOTE]
->In Office 365 operated by 21Vianet (China), you can't permanently delete a user as previously described. To permanently delete a user, you can submit a request via the Office 365 admin portal at this [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage). Go to **Commerce** and then select **Subscription** -> **Privacy** ->  **GDPR** and enter the required information.
+>21Vianet が運営する Office 365 (中国) では、前述したようにユーザーを完全に削除することはできません。ユーザーを完全に削除するには、この [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) を使用して Office 365 管理ポータルから削除リクエストを送信します。**[Commerce]** に移動し、**[Subscription]** -> **[Privacy]** ->  **[GDPR]** を選択して、必要な情報を入力します。
 
 ### <a name="removing-exchange-online-data"></a>Exchange Online データの削除
 
@@ -625,7 +625,7 @@ Office 365 管理ポータルでは、ユーザーの物理的な削除は実行
 
 ## <a name="using-in-app-functionality-to-respond-to-dsrs"></a>アプリ内機能を使用した DSR への対応
 
-While most Customer Data is authored and produced using the applications described in the previous section, Office 365 also offers many other applications that customers can use to produce and store Customer Data. However, Content Search doesn't currently have the ability to find data authored in these other Office 365 applications. To find data generated by these applications, you or the data owner must use in-product functionality or features to find data that may be relevant to a DSR. The following table lists these Office 365 applications. Click the application icon to go the section in this guide that describes how to respond to DSR requests for data authored in the application.
+ほとんどの顧客データは前述のセクションで説明したアプリケーションを使用して作成および生成されますが、Office 365 では、その他にも顧客データの生成と保存に使用できる多数のアプリケーションが提供されています。ただし、現時点では、そのような別の Office 365 アプリケーションで作成したデータをコンテンツ検索で検索することができません。そのようなアプリケーションで生成したデータを検索するには、担当者またはデータの所有者が、製品内の機能を使用して DSR に関連する可能性のあるデータを検索する必要があります。次の表に、該当する Office 365 アプリケーションの一覧を示します。アプリケーション アイコンをクリックすると、そのアプリケーションで作成したデータに対する DSR 要求に対応する方法について説明したセクション (このガイド内) に移動します。
 
 ***表 3: 顧客データの検索にアプリ内の機能を使用できるアプリケーション***
 
@@ -644,14 +644,14 @@ While most Customer Data is authored and produced using the applications describ
 
 ##### <a name="discover"></a>検索
 
-There are several ways that you can search for records in an Access database that might be responsive to a DSR request. For a DSR investigation, you can search for records that related to the data subject or search for records that contain specific data. For example, you could either search or go to a record that corresponds to the data subject. Or you can search for records that contain specific data, such as personal data about the data subject. For more information, see:
+Access データベース内で DSR 要求の対象の可能性があるレコードを検索する方法は複数あります。DSR 調査の場合、データ主体に関連するレコード、または特定のデータが含まれているレコードを検索できます。たとえば、データ主体に対応するレコードを検索するか、またはそのレコードに移動することができます。あるいは、データ主体に関する個人データなどの特定のデータを含むレコードを検索できます。詳細については、以下の情報を参照してください。
 
 - [Access データベース内でレコードを検索する](https://support.microsoft.com/ja-JP/office/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
 - [単純な選択クエリを作成する](https://support.office.com/article/create-a-simple-select-query-de8b1c8d-14e9-4b25-8e22-70888d54de59)
 
 ##### <a name="access"></a>Access
 
-After you find the records or fields that are relevant to the DSR request, you can take a screenshot of the data or export it to an Excel file, Word file, or a text file. You can also create and print a report based on a record source, or a select query that you created to find the data. See:
+DSR 要求に関連するレコードまたはフィールドが見つかったら、データのスクリーンショットを作成するか、またはデータを Excel ファイル、Word ファイル、テキスト ファイルのいずれかにエクスポートできます。また、レコード ソースまたはデータ検索のために作成した選択クエリに基づいて、レポートを出力できます。以下の情報を参照してください。
 
 - [Access のレポートの概要](https://support.office.com/article/introduction-to-reports-in-access-e0869f59-7536-4d19-8e05-7158dcd3681c)
 - [Excel にデータをエクスポートする](https://support.office.com/article/export-data-to-excel-64e974e6-ae43-4301-a53e-20463655b1a9)
@@ -683,7 +683,7 @@ After you find the records or fields that are relevant to the DSR request, you c
 
 次の各セクションでは、Microsoft Bookings のアプリ内機能を使用して、個人データの検索、アクセス、エクスポート、および削除を実行する方法について説明します。 この説明は、スタンドアロンの Bookings アプリと、ビジネス センターからアクセスする Bookings の両方に適用されます。
 
-Microsoft Bookings allows administrators and users or staff, with a Bookings license in their organization, to set up booking pages so customers can schedule and make changes to appointments, receive confirmation emails, updates, cancellation, and reminders email. Business owners and their staff can also book events on behalf of their customers with Bookings. 
+Microsoft Bookings では、組織に Booking ライセンスがある場合に、管理者とユーザーまたはスタッフが予約ページをセットアップできます。これにより、顧客がスケジュールを立て、予約を変更し、確認、更新、キャンセルのメール、およびメールアラームを受信できます。またビジネス オーナーとそのスタッフは、Booking で顧客に代わってイベントを予約できます。 
 
 顧客、管理者、またはスタッフが作成するデータの種類を以下に示します。
 
@@ -705,9 +705,9 @@ Microsoft Bookings allows administrators and users or staff, with a Bookings lic
 
 #### <a name="end-user-identifiable-information"></a>エンドユーザーを特定できる情報
 
-End user Identifiable Information (EUII) includes personal and contact information about the staff that gets scheduled in Bookings. It's added to the Staff details pages when the business owner sets up Bookings and makes updates after the setup. It contains staff member's name, initials, email address, and phone number. This data is stored in the Exchange Online mailbox that hosts Bookings.
+エンドユーザーを特定できる情報 (EUII) には、Bookings でスケジュールされたスタッフの個人情報と連絡先情報が含まれます。ビジネス オーナーが Bookings をセットアップするときと、セットアップ後に変更を行うときに、この情報がスタッフの詳細情報ページに追加されます。この情報には、スタッフ メンバーの名前、イニシャル、メール アドレス、電話番号が含まれます。このデータは、Bookings をホストする Exchange Online メールボックスに保存されます。
 
-This data is retained for as long as the staff member is active in the service unless it's explicitly deleted the business owner or an admin using the in-app UI or by deleting the relevant booking mailbox. When the admin initiates the deletion of staff's details, or if the staff member leaves the service, their details are deleted in accordance with the Exchange Online mailbox's content retention policies set by the business owner or admin.
+このデータは、ビジネス オーナーまたは管理者がアプリ内 UI を使用して削除するか、または関連する予約メールボックスの削除に伴い削除される場合を除き、スタッフ メンバーがこのサービスでアクティブである限り保持されます。管理者がスタッフの詳細情報を削除する場合、またはスタッフ メンバーがサービスの利用を終了する場合には、ビジネス オーナーまたは管理者が設定した Exchange Online メールボックスのコンテンツ保持ポリシーに基づいて詳細情報が削除されます。
 
 ##### <a name="discoveraccess"></a>検出/アクセス
 
@@ -721,7 +721,7 @@ Bookings では、次の種類のデータが収集および保存されます�
 
 ##### <a name="export"></a>エクスポート
 
-To export data corresponding to the business owner, staff and customers, you can use the Business center privacy portal. See [Export or delete user data using Business center privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
+ビジネス オーナー、スタッフ、および顧客に対応するデータをエクスポートするには、ビジネス センター プライバシー ポータルを使用します。「[ビジネス センター プライバシー ポータルでユーザー データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8)」を参照してください。
 
 ##### <a name="delete"></a>削除
 
@@ -732,9 +732,9 @@ DSR 削除要求に対応して削除できる Bookings データを次に示し
 - **予約イベント:** Bookings カレンダーから予約イベントを削除できます。これにより、顧客の情報が削除されます。
 - **会議出席依頼、メールの確認 / 取り消し / 更新 / リマインダー:** Bookings カレンダーからこれらの情報を削除できます。これにより、顧客の情報が削除されます。
 
-Business owners and admins can also delete their customer's data by using the Business center privacy portal. See [Export or delete user data using Business center privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
+ビジネス オーナーと管理者は、ビジネス センター プライバシー ポータルを使用して顧客のデータを削除できます。「[ビジネス センター プライバシー ポータルでユーザー データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8)」を参照してください。
 
-Additionally, you can delete business owner and staff data, you can delete the corresponding user account. See the section  [Deleting a user](#deleting-a-user).
+また、ビジネス オーナーとスタッフのデータを削除できます。このためには、該当するユーザー アカウントを削除します。「[ユーザーの削除](#deleting-a-user)」セクションを参照してください。
 
 #### <a name="listings"></a>Listings
 
@@ -754,11 +754,11 @@ Listings オーナーは、Listings ダッシュボードにサインインし�
 
 ##### <a name="export"></a>エクスポート
 
-To export business owner, staff and customer data, use the Business center privacy portal. See [Export or delete user data using Business center privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
+ビジネス オーナー、スタッフ、および顧客のデータをエクスポートするには、ビジネス センター プライバシー ポータルを使用します。「[ビジネス センター プライバシー ポータルでユーザー データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8)」を参照してください。
 
 ##### <a name="delete"></a>削除
 
-If a Listings owner would like to delete their Listings information, they can disconnect from the provider on the Listings page. After they disconnect, their Listings information will be deleted.
+Listings オーナーが自分の Listings 情報を削除するには、Listings ページでプロバイダーとの接続を解除します。解除後に、Listings の情報が削除されます。
 
 #### <a name="connections"></a>接続
 
@@ -778,11 +778,11 @@ Connections オーナーは、Connections ダッシュボードにサインイ�
 
 ##### <a name="export"></a>エクスポート
 
-To export business owner, staff and customer data, use the Business center privacy portal. See [Export or delete user data using Business center privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
+ビジネス オーナー、スタッフ、および顧客のデータをエクスポートするには、ビジネス センター プライバシー ポータルを使用します。「[ビジネス センター プライバシー ポータルでユーザー データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8)」を参照してください。
 
 ##### <a name="delete"></a>削除
 
-After a Connections owner sends an email campaign, they can't delete the campaign. If there are any draft campaigns they want to delete, they can sign in to the Connections dashboard and delete the draft campaigns.
+Connections オーナーがキャンペーン メールを送信した後は、キャンペーンを削除できません。削除したい下書き状態のキャンペーンがある場合は、Connections ダッシュボードにサインインし、下書き状態のキャンペーンを削除できます。
 
 #### <a name="outlook-customer-manager"></a>Outlook Customer Manager
 
@@ -792,8 +792,8 @@ After a Connections owner sends an email campaign, they can't delete the campaig
 
 Outlook Customer Manager は、Outlook Customer Manager のオーナーおよび顧客と取引先担当者の両方のユーザー情報を収集および保存します。
 
-- Owner data. This includes name, address, and email address. Documents and files that an owner shares with a customer are stored in OneDrive for Business, SharePoint Online, and as tasks in Outlook.
-- Customer and business contact data. Customer data can include name, address, and email address. Customer and contact data is created by the business in Outlook or Outlook web app. Contacts are shared across Business center. Documents and files that a customer shares with a business are stored in OneDrive for Business, SharePoint Online, and as tasks in Outlook.
+- オーナー データ。これには名前、住所、メール アドレスが含まれます。オーナーが顧客と共有するドキュメントとファイルは、OneDrive for Business と SharePoint Online に保存され、Outlook にはタスクとして保存されます。
+- 顧客および取引先担当者データ。顧客データには名前、住所、メール アドレスが含まれます。顧客データと連絡先データは、Outlook または Outlook Web アプリでビジネスにより作成されます。連絡先はビジネス センターで共有されます。顧客がビジネスと共有するドキュメントとファイルは、OneDrive for Business と SharePoint Online に保存され、Outlook にはタスクとして保存されます。
 
 また Outlook Customer Manager は、顧客に関するアクティビティとインサイトを Exchange に保存します。
 
@@ -803,11 +803,11 @@ Outlook Customer Manager オーナーは、Outlook または Outlook Web App に
 
 ##### <a name="export"></a>エクスポート
 
-To export business owner and customer data, use the Outlook Customer Manager privacy portal. For details. See [Export or delete user data using the Outlook Customer Manager privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
+ビジネス オーナーまたは顧客のデータをエクスポートするには、Outlook Customer Manager プライバシー ポータルを使用します。詳細については、「[Outlook Customer Manager プライバシー ポータルでユーザー データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8)」を参照してください。
 
 ##### <a name="delete"></a>削除
 
-To delete customer data, use the Outlook Customer Manager privacy portal. See [Export or delete user data using the Outlook Customer Manager privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
+顧客データを削除するには、Outlook Customer Manager プライバシー ポータルを使用します。「[Outlook Customer Manager プライバシー ポータルでユーザー データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8)」を参照してください。
 
 #### <a name="invoicing"></a>Invoicing
 
@@ -827,13 +827,13 @@ Invoicing で収集および保存されるデータの種類を次に示しま�
 
 ##### <a name="export"></a>エクスポート
 
-To export customer invoicing data, use the Business center privacy portal. See [Export or delete user data using Business center privacy portal](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8).
+顧客の請求書データをエクスポートするには、ビジネス センター プライバシー ポータルを使用します。「[ビジネス センター プライバシー ポータルでユーザー データをエクスポートまたは削除する](https://support.office.com/article/export-or-delete-user-data-using-business-center-privacy-portal-eb48e2c1-4c91-4421-988d-5de497d1e8d8)」を参照してください。
 
 ##### <a name="delete"></a>削除
 
-After an invoice is created and sent, it can't be deleted due to accounting laws. The Invoicing owner can request that Microsoft delete some or all their information from Office 365.
+会計法に基づき、請求書を作成して送信した後は、その請求書は削除できません。Invoicing オーナーは、Microsoft が Office 365 からそのオーナーの情報の一部またはすべてを削除するように依頼できます。
 
-Alternatively, you can delete the invoicing owner's user account in Office 365. See the section [Deleting a user](#deleting-a-user).
+あるいは、Invoicing オーナーのユーザー アカウントを Office 365 から削除できます。「[ユーザーの削除](#deleting-a-user)」セクションを参照してください。
 
 ### <a name="education"></a>教育
 
@@ -848,11 +848,11 @@ Alternatively, you can delete the invoicing owner's user account in Office 365. 
 
 ##### <a name="discoveraccess"></a>検出/アクセス
 
-Assignments stores information that is generated both by teachers and students. Some of this information is store in SharePoint and some is stored in a non-SharePoint location.
+Assignments には、教師と学生が作成する情報が保存されます。この情報には、SharePoint に保存されるものと、ShaPoint 以外の場所に保存されるものがあります。
 
 ##### <a name="finding-assignments-data-stored-in-sharepoint"></a>SharePoint に保存されている Assignments データの検索
 
-Students files associated with a Submission for Assignment are stored in a document library (named **Student Work**) and files associated with Assignments that are created by teachers and (accessible by students) are stored in a different document library (named **Class Files**). Both document libraries are in the corresponding Class Team SharePoint site.
+課題提出に関連付けられている学生のファイルは、ドキュメント ライブラリ (**[学生の作業]**) に保存され、教師が作成した (学生がアクセスできる) 課題に関連付けられているファイルは別のドキュメント ライブラリ (**[クラスのファイル]**) に保存されます。これらのドキュメント ライブラリはいずれも、対応する Class Team SharePoint サイトにあります。
 
 管理者は、セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、([学生の作業] および [クラス ファイル] ライブラリ内にある) 課題提出に関連する学生のファイルや課題関連のファイルを検索できます。 たとえば、管理者は組織内のすべての SharePoint サイトを検索し、検索クエリに、学生の名前とクラスまたは課題の名前を使用して DSR 要求に関連するデータを検索できます。
 
@@ -871,7 +871,7 @@ Students files associated with a Submission for Assignment are stored in a docum
 - 各学生が課題用に提出したドキュメントのリスト
 - 課題の詳細情報 (提出期限など)
 
-To find data, an admin or a teacher would have to go into the Assignment in the Class Team site to find data that may be relevant to a DSR request. An admin can add themselves as an owner to the class and view all the assignments for that class team.
+データを検索するには、管理者または教師が Class Team サイトの [課題] に移動して、DSR 要求に関連する可能性のあるデータを検索する必要があります。管理者は、自分自身をオーナーとしてクラスに追加し、そのクラス チームのすべての課題を確認できます。
 
 学生がクラスに在籍しなくなった場合でも、学生のデータはクラスに残り、「登録なし」としてマークされる場合があります。 この場合、DSR 要求を提出する学生は、以前に登録していたクラスのリストを管理者に提出する必要があります。
 
@@ -883,7 +883,7 @@ PowerShell スクリプトを使用して登録した学生のすべてのクラ
 - [特定の学生のクラスのリストを取得する](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
 - [Assignments から学生と教師のデータをエクスポートする](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-export)
 
-If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can also use the Assignment export script to export submissions data for all assignments that a teacher has access to.
+学生が Class Team サイトから削除されている場合、管理者はエクスポート スクリプトを実行する前にその学生をサイトに再度追加できます。あるいは、管理者がスクリプトの入力ファイルを使用して、その学生がこれまでに登録していたすべてのクラスを指定できます。また、課題エクスポート スクリプトを使用して、教師がアクセスできるすべての課題の提出データをエクスポートすることもできます。
 
 ##### <a name="delete"></a>削除
 
@@ -893,7 +893,7 @@ PowerShell スクリプトを使用して登録した学生のすべてのクラ
 - [特定の学生のクラスのリストを取得する](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-get)
 - [Assignments から学生のデータを削除する](https://docs.microsoft.com/microsoft-365/education/deploy/assignments-script-delete)
 
-If the student has been removed from the Team Class site, the admin can add the student back to the site before running the export script. Or the admin can use the input file for the script to identify every class that the student was ever enrolled in. You can't use the Assignments deletion script to delete teacher data because all Assignments are shared across the Class Team site. As an alternative, an admin would have to add themselves to the Class Team site and then delete a specific Assignment.
+Class Team サイトから学生が削除されている場合、管理者はエクスポート スクリプトを実行する前にその学生をサイトに再び追加できます。あるいは、管理者がスクリプトの入力ファイルを使用して、その学生がこれまでに登録していたすべてのクラスを指定できます。教師データを削除する場合には、課題削除スクリプト使用できません。これは、すべての課題は Class Team サイトで共有されているためです。この代わりに、管理者は自分自身を Class Team サイトに追加し、特定の課題を削除できます。
 
 #### <a name="class-notebook"></a>Class Notebook
 
@@ -905,9 +905,9 @@ Class Notebook でコンテンツを検索する方法については、この�
 
 #### <a name="discover"></a>検出
 
-People can use Flow to perform data-related tasks such as synchronizing files between applications, copying files from one Office 365 service to another, and collecting data from one Office 365 app and storing it in another. For example, a user could set up a Flow to save Outlook email attachments to their OneDrive for Business account. In this example, you could use the Content Search tool to search the user's mailbox for the email message that contained the attachment or search their OneDrive for Business account for the file. This is an example where data handled by Flow might be discoverable in the Office 365 services connected by a Flow workflow.
+Flow を使用すると、アプリケーション間でファイルを同期する、Office 365 サービス間でファイルをコピーする、Office 365 アプリからデータを収集して別のアプリに保存するなど、データに関連したタスクを実行できます。たとえば、ユーザーは Outlook の電子メール添付ファイルを自分の OneDrive for Business アカウントに保存するように Flow を設定できます。この例では、コンテンツ検索ツールを使用して、添付ファイルが含まれた電子メール メッセージについてユーザーのメールボックスを検索することも、そのファイルについてユーザーの OneDrive for Business アカウントを検索することもできます。これは、Flow ワークフローで接続された Office 365 サービスで、Flow によって処理されるデータが検出できる場合の例です。
 
-Additionally, people can use Flow to copy or upload files from Office 365 to an external service, such as Dropbox. In these cases, a DSR request concerning the data in an external service would have to be submitted to the external service, who is processing the data in this type of scenario.
+さらに、Flow を使用すると、Office 365 から Dropbox などの外部のサービスにコピーまたはアップロードできます。この場合、外部サービスにあるデータに関する DSR 要求は、その外部サービスに提出する必要があります。この種のシナリオでは、外部サービスがデータを処理します。
 
 管理者が DSR 要求を受理した場合、管理者はユーザーのフローの所有者として自分自身を追加できます。 これにより、管理者はフロー定義および実行履歴のエクスポートやフローのアクセス許可の再割り当ての実行などの機能を実行できるようになります。 詳細については、「[管理センターでフローを管理する](https://flow.microsoft.com/blog/managing-flow-resources-in-the-admin-center/)」を参照してください。
 
@@ -928,7 +928,7 @@ Additionally, people can use Flow to copy or upload files from Office 365 to an 
 1. <https://admin.flow.microsoft.com> に移動します。
 2. Office 365 の資格情報でサインインします。
 3. [**環境**] ページで、アクセスするフローの環境をクリックします。 組織には既定の環境があります。
-4. On the page for the environment that you selected, click **Resources**, and then click **Flows.** A list of all flows in the environment is displayed.
+4. 選択した環境のページで、**[リソース]**、**[フロー]** の順にクリックします。環境内のすべてのフローのリストが表示されます。
 5. 自分をメンバーとして追加するフローの **[詳細の表示]** をクリックします。
 6. **[所有者]** で、**[共有の管理]** をクリックします。
 7. **[共有]** ポップアップで、自分をメンバーとして追加して、その変更を保存します。
@@ -953,7 +953,7 @@ Additionally, people can use Flow to copy or upload files from Office 365 to an 
 
 #### <a name="export"></a>エクスポート
 
-An admin can export the definition and run history of a user's flows. To do this, an admin must add themselves as an owner of the user's flow in the Flow admin center
+管理者は、ユーザーのフローの定義と実行履歴をエクスポートできます。これを実行するには、Flow 管理センターで管理者が自分自身をユーザーのフローの所有者として追加する必要があります。
 
 - **フロー定義:** 管理者はフローの所有者として自分自身を追加してから、[**Flow**] \> [**自分のフロー**] \> [**チームのフロー**] に移動すると、フロー定義をエクスポートできます (Flow パッケージ ( JSON 形式の Zip ファイル) としてエクスポートされます)。 「[パッケージによる複数の環境におよぶフローのエクスポートおよびインポート](https://flow.microsoft.com/blog/import-export-bap-packages/)」を参照してください。
 
@@ -971,7 +971,7 @@ An admin can export the definition and run history of a user's flows. To do this
 
 #### <a name="discover"></a>検出
 
-Forms users can go to <https://forms.office.com> and select **My forms** to see the Forms they've created. They can also select **Shared with me** to view Forms others have shared via a link. If there are many Forms to sort through, users can use the in-product search bar to search for Forms by title or author. To determine whether Microsoft Forms is a place where personal data responsive to your DSR is likely to reside, you can ask the Data Subject to search his or her **Shared with me** list to determine which users ("Forms owners") have sent Forms to the Data Subject. You can then ask the forms owners to select **Share** in the top navigation bar and send you a link to a specific form so you can view it and further determine whether it is material to your DSR.
+Forms のユーザーは、<https://forms.office.com> に移動して **[マイ フォーム]** を選択すると、そのユーザーが作成したフォームを確認できます。また、**[共有アイテム]** を選択して、別のユーザーが共有にしているフォームをリンクで確認することもできます。分類するフォームが多数ある場合、ユーザーは製品内の検索バーを使用して、タイトルまたは作成者によってフォームを検索できます。DSR に対応する個人データが Microsoft Forms に存在している可能性があるかどうかを判断するには、データ主体に対して、**[共有アイテム]** リストを検索してデータ主体にフォームを送信したユーザー (「フォームの所有者」) を特定するように依頼します。その後で、フォームの所有者に対して、ナビゲーション バーの上部にある **[共有]** を選択して特定のフォームへのリンクを送信するように依頼し、そのフォームを表示して DSR に該当するものであるかどうかを判断します。
 
 #### <a name="access"></a>Access
 
@@ -979,7 +979,7 @@ Forms users can go to <https://forms.office.com> and select **My forms** to see 
 
 #### <a name="delete"></a>削除
 
-Any survey, quiz, questionnaire, or poll can be permanently deleted by its owner. If you would like to honor a DSR "forget me" and delete a form in its entirety, find the Form in the list of forms, select the series of dots (ellipsis) in the upper right corner of the form preview window, and then click **Delete**. Once a Form is deleted, it can't be retrieved. For information, see [Delete a Form](https://support.microsoft.com/ja-JP/office/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
+アンケート、クイズ、調査または投票は、その所有者が完全に削除できます。DSR の「忘れられる権利」を尊重してフォーム全体を削除する場合は、フォームのリストからフォームを見つけて、フォームのプレビュー ウィンドウの右上にある連続するドット (省略記号) を選択して **[削除]** をクリックします。フォームが削除されると、そのフォームは取得できなくなります。詳細については、「[フォームを削除する](https://support.microsoft.com/ja-JP/office/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0)」を参照してください。
 
 #### <a name="export"></a>エクスポート
 
@@ -991,7 +991,7 @@ Any survey, quiz, questionnaire, or poll can be permanently deleted by its owner
 
 #### <a name="discover"></a>検出
 
-A user's organizational data, which is data that is shared in organizational groups, can be accessed by an admin from the Kaizala management portal. Organizational data is retained for a duration of time determined by your organization's retention policies. In addition to user data, Kaizala servers also store the following types of organizational data:
+管理者は、Kaizala 管理ポータルからユーザーの組織データ (組織グループ間で共有されているデータ) にアクセスできます。組織データは、組織の保持ポリシーで指定されている期間にわたり保持されます。Kaizala サーバーではユーザー データの他に、次の組織データも保存されます。
 
 - 組織のグループに所属するメンバーのリスト
 - 組織グループのメッセージ データ (組織グループ間で共有されるメッセージと応答)
@@ -1000,7 +1000,7 @@ A user's organizational data, which is data that is shared in organizational gro
 - 組織により作成された Kaizala アクション
 - Kaizala コネクタ データ
 
-A user's consumer data can be accessed by the data subject using the Kaizala mobile app for consumer data. Consumer data includes the following types of data:
+データ主体は、コンシューマー データ用の Kaizala モバイル アプリを使用してユーザーのコンシューマー データにアクセスできます。コンシューマー データには次のデータが含まれます。
 
 - Kaizala のプライベート グループに属するデータ (Kaizala サーバーに 90 日間保存)
 - ユーザーのプロファイル情報とユーザーの連絡先
@@ -1012,20 +1012,20 @@ A user's consumer data can be accessed by the data subject using the Kaizala mob
 
 #### <a name="access"></a>Access
 
-Kaizala users can go to their mobile device to see Kaizala content they've created on their device. To determine whether Kaizala mobile apps is a place where personal data responsive to a DSR is likely to reside, you can ask the data subject to search their Kaizala app for the requested information.
+Kaizala ユーザーはモバイル デバイスに移動して、デバイスで作成した Kaizala コンテンツを確認できます。Kaizala モバイル アプリに、DSR に関連する個人データが保存されているかどうかを確認するには、データ主体に対し、要求する情報を Kaizala アプリで検索するように指示します。
 
 #### <a name="export"></a>エクスポート
 
-When users in your organization use Kaizala, consumer data is generated, and organizational data may be generated if the user participates in an organization group. Admins can export a user's organizational data from the Kaizala management portal. Kaizala consumer users can export their private data from the Kaizala mobile app. In both cases, note that product and service usage data is also export when an admin or user exports Kaizala data. For details, see:
+組織内のユーザーが Kaizala を使用すると、コンシューマー データが生成されます。ユーザーが組織グループに所属している場合は組織データが生成されます。管理者は Kaizala 管理ポータルからユーザーの組織データをエクスポートできます。Kaizala コンシューマー ユーザーは、Kaizala モバイル アプリから自分のプライベート データをエクスポートできます。いずれの場合でも、管理者またはユーザーが Kaizala データをエクスポートすると、製品とサービスの利用状況データもエクスポートされることに注意してください。詳細については、以下の情報を参照してください。
 
 - [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
 - [Kaizala モバイル アプリでデータをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-your-data)
 
 #### <a name="delete"></a>削除
 
-A Kaizala admin can remove a Kaizala user's account in the Kaizala management portal. After a user account is deleted, the user is removed from all groups that belong to your organization and organizational data is deleted from their device. 
+Kaizala 管理者は、Kaizala 管理ポータルで Kaizala ユーザーのアカウントを削除できます。ユーザー アカウントが削除されたら、そのユーザーは組織に属するすべてのグループから削除され、ユーザーのデバイスから組織データが削除されます。 
 
-To remove all private data from the user's mobile device, the Kaizala user can delete their Kaizala account. After the account is deleted, all related Kaizala content including, chats, photos, and other data will be deleted from the device.
+ユーザーのモバイル デバイスからすべてのプライベート データを削除するには、Kaizala ユーザーは自分の Kaizala アカウントを削除します。アカウントを削除すると、関連するすべての Kaizala コンテンツ (グラフ、写真などのデータ) がデバイスから削除されます。
 
 詳細については、以下を参照してください。
 
@@ -1046,18 +1046,18 @@ Planner の計画は、Microsoft 365 グループに関連付けられ、Microso
 
 #### <a name="delete"></a>削除
 
-You can manually delete a user's personally information by either giving yourself permissions to access the plans the user is part of or signing in as the user to make the changes. See [Delete user data in Microsoft Planner](https://support.office.com/article/delete-user-data-in-microsoft-planner-4349ded2-1891-4896-8e27-05fd40f3929f).
+ユーザーの個人情報は、そのユーザーが参加している計画にアクセスするためのアクセス許可を自分に付与するか、変更を実行するユーザーとしてサインインすることで手動で削除できます。「[Microsoft Planner のユーザー データを削除する](https://support.office.com/article/delete-user-data-in-microsoft-planner-4349ded2-1891-4896-8e27-05fd40f3929f)」を参照してください。
 
 #### <a name="export"></a>エクスポート
 
-You can use a PowerShell script to export a user's data from Planner. When you export the data, a separate JSON file is export for each plan that the user is a part of. See [Export user data from Microsoft Planner](https://support.office.com/article/export-user-data-from-microsoft-planner-91258c96-b353-4da1-b6d9-d78e4809cf08).
+PowerShell スクリプトを使用して、Planner からユーザーのデータをエクスポートできます。データをエクスポートすると、ユーザーが参加している計画ごとに個別の JSON ファイルがエクスポートされます。「[Microsoft Planner からユーザー データをエクスポートする](https://support.office.com/article/export-user-data-from-microsoft-planner-91258c96-b353-4da1-b6d9-d78e4809cf08)」を参照してください。
 
 ### <a name="power-bi"></a>Power BI
 
 次の各セクションでは、Microsoft Power BI のアプリ内機能を使用して、個人データの検索、アクセス、エクスポート、および削除を実行する方法について説明します。
 
 #### <a name="discover"></a>検索
-You can search for content in the different workspaces in Power BI, including dashboards, reports, workbooks, and datasets. Each type of workspace contains a search field that you can use to search that workspace. See [Searching, finding, and sorting content in Power BI service](https://docs.microsoft.com/power-bi/service-navigation-search-filter-sort).
+Power BI の各種ワークスペースでコンテンツ (ダッシュボード、レポート、ワークブック、データシートなど) を検索できます。各種ワークスペースには、そのワークスペース内を検索するために使用できる検索フィールドがあります。「[ナビゲーション: Power BI サービスでコンテンツの検索、探索、並べ替えを行う](https://docs.microsoft.com/power-bi/service-navigation-search-filter-sort)」を参照してください。
 
 #### <a name="access"></a>Access
 
@@ -1067,7 +1067,7 @@ Power BI のレポートから、ダッシュボード、レポートおよび�
 
 ダッシュボード、レポート、およびブックを削除する場合は、「[Power BI サービスのほとんどすべてのものを削除する](https://docs.microsoft.com/power-bi/service-delete)」を参照してください。
 
-Deleting a dashboard, report, or workbook doesn't delete the underlying dataset. Because Power BI relies on a live connection to the underlying source data to be complete and accurate, deleting personal data must be done there. (For example, if you created a Power BI report that is connected to Dynamics 365 for Sales as the live data source, you would have to make any corrections to the data in Dynamics 365 for Sales.)
+ダッシュボード、レポート、またはブックを削除しても、基礎となるデータセットを削除することにはなりません。Power BI は、基礎となるソース データへのライブ接続に依存して完全性と正確性を実現するため、そのソース データで個人データの削除を実行する必要があります (たとえば、ライブ データ ソースとして Dynamics 365 for Sales に接続する Power BI レポートを作成する場合、データの修正は Dynamics 365 for Sales で実行する必要があります)。
 
 データの削除後に、Power BI の[スケジュールされたデータ更新](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh)機能を利用することで、Power BI に保存されたデータセットを更新できます。その後、削除したデータは、そのデータを利用していた Power BI レポートまたはダッシュボードに反映されなくなります。 GDPR 要件に準拠できるようにするために、適切な周期で確実にデータを更新するポリシーの実施が必要になります。
 
@@ -1075,8 +1075,8 @@ Deleting a dashboard, report, or workbook doesn't delete the underlying dataset.
 
 データ ポータビリティ要求への対応を促進するために、Power BI のダッシュボードとレポートをエクスポートできます。
 
-- You can export the underlying data for dashboards and reports to a static Excel file. See the video in [Printing from Power BI service](https://docs.microsoft.com/power-bi/service-print). Using Excel, you can then edit the personal data to be included in the portability request, and save it in a commonly used, machine-readable format such as .csv or .xml.
-- You can export (download) a report from the Power BI service in Office 365 to a .pbix file if it was originally published using Power BI Desktop. You can then import this file to Power BI Desktop and publish (export) it to the Power BI service of another organization. See [Export a report from Power BI service to Desktop](https://docs.microsoft.com/power-bi/service-export-to-pbix).
+- ダッシュボードおよびレポートの基礎となるデータは、静的な Excel ファイルにエクスポートできます。「[Power BI サービスからの印刷](https://docs.microsoft.com/power-bi/service-print)」のビデオを視聴してください。Excel を使用すると、ポータビリティ要求に含める個人データを編集して、そのデータを .csv や .xml などの一般的なコンピューターが読み取り可能な形式で保存できます。
+- レポートは、Office 365 の Power BI サービスから .pbix フィルにエクスポート (ダウンロード) できます (そのレポートが最初に Power BI Desktop を使用して公開されていた場合)。このファイルは、Power BI Desktop にインポートして、別の組織の Power BI サービスに公開 (エクスポート) できます。「[Power BI サービスからデスクトップにレポートをエクスポートする](https://docs.microsoft.com/power-bi/service-export-to-pbix)」を参照してください。
 
 ### <a name="powerapps"></a>PowerApps
 
@@ -1100,7 +1100,7 @@ PowerApps サービスには、Common Data Service for Apps も含まれてい�
 
 管理者は、アプリと関連リソース (フロー、接続、およびカスタム コネクタを含む) にアクセスして実行する権限を自分自身に割り当てることができます。これには、[PowerApps 管理センター](https://admin.powerapps.com/)または [PowerApps 管理 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使用します。
 
-After you have access to the user's app, you can use a web browser to open the app. After you open an app, you can take a screenshot of the data. See [Use PowerApps in a web browser](https://docs.microsoft.com/powerapps/run-app-browser).
+ユーザーのアプリにアクセスできるようになると、Web ブラウザーを使用してアプリを起動できます。アプリの起動後に、データのスナップショットを作成できます。「[アプリを Web ブラウザーで実行する](https://docs.microsoft.com/powerapps/run-app-browser)」を参照してください。
 
 #### <a name="delete"></a>削除
 
@@ -1108,13 +1108,13 @@ PowerApps を使用すると、ユーザーは組織の日常業務にとって�
 
 アプリのような共有データについては、そのユーザーの共有データを完全に削除するか、またはデータを自分自身または組織内の別のユーザーに再割り当てして保持するかを管理者が判断する必要があります。 詳細については、「[データ主体の権利 (DSR) による PowerApps 顧客データの削除要求への応答](https://go.microsoft.com/fwlink/?linkid=871883)」を参照してください。
 
-Any data that was stored by a user in an entity in a Common Data Service For Apps database will also need to be reviewed and (if desired) deleted by an admin using the in-product capabilities. See [Delete Common Data Service user personal data](https://go.microsoft.com/fwlink/?linkid=871886).
+ユーザーがアプリ用 Common Data Service データベースに保存したデータについても確認が必要になります。必要な場合は、管理者が製品内の機能を使用してデータを削除する必要があります。「[データ主体の権利 (DSR) による Common Data Service for Apps の顧客データに対する要求への応答](https://go.microsoft.com/fwlink/?linkid=871886)」を参照してください。
 
 #### <a name="export"></a>エクスポート
 
-Admins have the ability to export personal data stored for a user within the PowerApps service using the [PowerApps Admin Center](https://admin.powerapps.com/) and [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804). See [Export PowerApps personal data](https://go.microsoft.com/fwlink/?linkid=871883).
+管理者は、PowerApps サービス内でユーザー用に保存された個人データをエクスポートできます。エクスポートには、[PowerApps 管理センター](https://admin.powerapps.com/)および [PowerApps 管理 PowerShell コマンドレット](https://go.microsoft.com/fwlink/?linkid=871804)を使用します。「[データ主体の権利 (DSR) による PowerApps 顧客データの削除要求への応答](https://go.microsoft.com/fwlink/?linkid=871883)」を参照してください。
 
-You can also use the in-product search capabilities of [Advanced Find](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search) to search for a user's personal data in any entity. For details about exporting personal data in the Common Data Service, see [Export Common Data Service personal data](https://go.microsoft.com/fwlink/?linkid=871889).
+製品内の検索機能 [[高度な検索]](https://docs.microsoft.com/dynamics365/customer-engagement/basics/save-advanced-find-search) を使用して、エンティティ内のユーザーの個人データを検索することもできます。Common Data Service 内の個人データのエクスポートに関する詳細については、「[データ主体の権利 (DSR) による Common Data Service for Apps の顧客データに対する要求への応答](https://go.microsoft.com/fwlink/?linkid=871889)」を参照してください。
 
 #### <a name="connections-and-custom-connectors-in-powerapps"></a>PowerApps の接続およびカスタム コネクタ
 
@@ -1131,15 +1131,15 @@ You can also use the in-product search capabilities of [Advanced Find](https://d
 コンテンツ検索を使用して、Project に関連付けられている SharePoint Online サイトを検索できます (Project の最初の作成時に、関連付ける SharePoint Online サイトを作成するオプションがあります)。コンテンツ検索では、Project Online の実際のプロジェクトに含まれるデータは検索されず、関連付けられたサイトのみが検索されます。 コンテンツ検索により、プロジェクトに関するメタデータ (件名でメンションされたユーザーなど) が検索されますが、これは、DSR に関連するデータが含まれる Project を見つける (およびアクセスする) 際に役立つことがあります。
 
 >[!TIP]
->The URL for the site collection in your organization where sites associated with Projects is **https://\<your org\>.sharepoint.com/sites/pwa**; for example, **https://contoso.sharepoint.com/pwa**. You can use this specific site collection as the location of your content search and then the name of the Project in the search query. Additionally, an IT admin can use the Site Collections page in the SharePoint admin center to get a list of PWA site collections in the organization.
+>サイトが Project に関連付けられている組織のサイト コレクションの URL は、**https://\<your org\>.sharepoint.com/sites/pwa** です (例: **https://contoso.sharepoint.com/pwa**)。この特定のサイト コレクションは、コンテンツ検索の場所として使用して、検索クエリで Project の名前として使用できます。さらに、IT 管理者は、SharePoint Online 管理センターの [サイト コレクション] ページを使用して、組織の PWA サイト コレクションのリストを取得できます。
 
 #### <a name="delete"></a>削除
 
-You can delete information about a user from your Project Online environment. See [Delete user data from Project Online](https://support.office.com/article/delete-user-data-from-project-online-252fa593-9c25-47ed-b861-643fe8bf1cb7).
+Project Online 環境からユーザーに関する情報を削除できます。「[Project Online からユーザー データを削除する](https://support.office.com/article/delete-user-data-from-project-online-252fa593-9c25-47ed-b861-643fe8bf1cb7)」を参照してください。
 
 #### <a name="export"></a>エクスポート
 
-You can a specific user's content from your Project Online environment. This data is exported to multiple files in the JSON format. For step-by instructions see, [Export user data from Project Online](https://support.office.com/article/export-user-data-from-project-online-27f3838d-3dbe-4b98-80dc-df55f851154d). For detailed information about the files that are exported, see [Project Online export json object definitions](https://support.office.com/article/project-online-export-json-object-definitions-ce5faeae-9af4-4696-b847-a1f4f20327c7).
+Project Online 環境から特定のユーザーのコンテンツをエクスポートできます。このデータは、JSON 形式の複数のファイルにエクスポートされます。手順ごとの指示については、「[Project Online からユーザー データをエクスポートする](https://support.office.com/article/export-user-data-from-project-online-27f3838d-3dbe-4b98-80dc-df55f851154d)」を参照してください。エクスポートされるファイルの詳細については、「[Project Online のエクスポート JSON オブジェクトの定義](https://support.office.com/article/project-online-export-json-object-definitions-ce5faeae-9af4-4696-b847-a1f4f20327c7)」を参照してください。
 
 ### <a name="publisher"></a>Publisher
 
@@ -1177,7 +1177,7 @@ Stream で生成またはアップロードされ、データ主体要求に関�
 
 #### <a name="access"></a>Access
 
-Depending on the nature of the data subject request, a copy of the report described above can be used help satisfy a data subject request. The user report includes the Stream user's name and unique ID, a list of videos the user uploaded, a list of videos the user has access to, a list of channels the user created, a list of all the groups the user is a member of, and a list of all comments the user left on videos. The report further shows whether the user viewed each video listed in the user report. If you would like to provide the data subject with access to a video to satisfy a DSR request, you can share the video.
+データ主体要求の特性によっては、前述のレポートのコピーを使用すると、データ主体の要求に対応する際に役立つ可能性があります。ユーザー レポートには、Stream ユーザーの名前と一意の ID、ユーザーがアップロードしたビデオのリスト、ユーザーがアクセスしたビデオのリスト、ユーザーが作成したチャネルのリスト、ユーザーがメンバーであるすべてのグループのリスト、ユーザーがビデオに投稿したすべてのコメントのリストが表示されます。このレポートにはさらに、ユーザー レポートにリストされている各ビデオをユーザーが閲覧したかどうかも示されます。DSR に対応するためにデータ主体にデータへのアクセスを許可する場合は、ビデオを共有します。
 
 #### <a name="export"></a>エクスポート
 
@@ -1185,7 +1185,7 @@ Stream の「アクセス」セクションを参照してください。
 
 #### <a name="delete"></a>削除
 
-To delete or edit videos or any other Stream content, a Stream admin can select view in admin mode to perform the necessary function. See [Admin capabilities in Microsoft Stream](https://docs.microsoft.com/stream/manage-content-permissions). If a user has left the organization and would like to have their name removed from appearing next to videos that they uploaded, you can remove their name or replace it with another. See [Managing deleted users in Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users).
+ビデオやその他の Stream コンテンツを削除または編集するには、Stream 管理者が管理者モードでビューを選択し、必要な機能を実行します。「[Microsoft Stream での管理機能](https://docs.microsoft.com/stream/manage-content-permissions)」を参照してください。ユーザーが組織を離れており、アップロードしたビデオの横に自分の名前が表示されないようにしたい場合には、名前を削除するか、または別の名前に置き換えることができます。「[Microsoft Stream で削除済みユーザーを管理する](https://docs.microsoft.com/stream/managing-deleted-users)」を参照してください。
 
 ### <a name="sway"></a>Sway
 
@@ -1201,7 +1201,7 @@ Sway を使用して作成したコンテンツ ([www.sway.com](https://sway.off
 
 #### <a name="delete"></a>削除
 
-To learn how to delete a Sway, go to the "How do I delete my Sway?" section in [Privacy settings in Sway](https://support.microsoft.com/ja-JP/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217).
+Sway の削除方法については、「[Sway のプライバシー設定](https://support.microsoft.com/ja-JP/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)」のセクション「自分の Sway の削除方法」を参照してください。
 
 #### <a name="export"></a>エクスポート
 
@@ -1220,11 +1220,11 @@ Sway をエクスポートするには、ダウンロードする Sway を開い
 
 ##### <a name="discover"></a>検出
 
-Whiteboard files (.wbx files) are stored in users' OneDrive for Business account. You can ask the data subject or other users if whiteboards they created may contain personal data responsive to a DSR request. They can share a whiteboard with you, or you can get a copy of it to give to the data subject.
+Whiteboard ファイル (.wbx ファイル) は、ユーザーの OneDrive for Business アカウントに保存されます。データ主体またはその他のユーザーに対し、各自が作成したホワイトボードに、DSR 要求に関連する個人データが含まれているかどうかを問い合わせることができます。データ主体またはその他のユーザーとホワイトボードを共有するか、データ主体に提供するホワイトボードのコピーを取得できます。
 
 ホワイトボードにアクセスして転送するには、以下の操作を実行します。 
 
-1. Give yourself access to the user's OneDrive for Business account. See the "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data).
+1. ユーザーの OneDrive for Business アカウントへのアクセスを自分自身に許可します。「[元のユーザーのデータにアクセスしてバックアップを作成する](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)」の「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」セクションを参照してください。
 2. ユーザーの OneDrive for Business アカウントで Whiteboard App Data フォルダーに移動し、転送するホワイトボードの .wbx ファイルをコピーします。
 3. データ主体の OneDrive for Business アカウントへのアクセスを自分自身に許可し、Whiteboard App Data フォルダーに移動します。
 4. 前の手順でコピーした .wbx ファイルを貼り付けます。
@@ -1234,7 +1234,7 @@ Whiteboard files (.wbx files) are stored in users' OneDrive for Business account
 ホワイト ボードで DSR アクセス要求に関連する個人データを検出した場合に、データ主体にホワイトボードへのアクセスを提供する方法はいくつかあります。
 
 - ホワイトボードの該当する部分のスクリーンショットを作成します。
-- Upload a copy of the .wbx file to the data subject's OneDrive for Business account. See the previous section for steps on accessing and transferring .wbx files.
+- データ主体の OneDrive for Business アカウントに .wbx ファイルのコピーをアップロードします。.wbx ファイルのアクセスと転送の手順については、前のセクションを参照してください。
 - ホワイトボードのコピーを .png ファイルとしてエクスポートします。
 
 ##### <a name="export"></a>エクスポート
@@ -1242,20 +1242,18 @@ Whiteboard files (.wbx files) are stored in users' OneDrive for Business account
 ホワイトボードのコピーを取得した場合は、そのコピーをエクスポートできます。 
 
 1. Surface Hub で Whiteboard を起動します。
-2. Tap the Share button and then select Export a copy.
-You can export a whiteboard to a OneNote (.one) file or to an image (.png) file.
+2. [共有] ボタンをタップし、[コピーをエクスポート] を選択します。ホワイトボードを OneNote (.one) ファイルまたは画像 (.png) ファイルにエクスポートできます。
 
 ##### <a name="delete"></a>削除
 
 ユーザーの OneDrive for Business アカウントへのアクセスを自分自身に許可し、ホワイトボードを削除します。
 
-1. Give yourself access to the data subject's OneDrive for Business account. See the "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)
+1. データ主体の OneDrive for Business アカウントへのアクセスを自分自身に許可します。「[元のユーザーのデータにアクセスしてバックアップを作成する](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)」の「元従業員の OneDrive for Business ドキュメントにアクセスしてバックアップを作成する」セクションを参照してください。
 2. Whiteboard App Data フォルダーに移動し、このフォルダーの内容を削除します。
 
 #### <a name="whiteboard-for-pc-surface-hub-and-other-platforms"></a>PC、Surface Hub、およびその他のプラットフォーム用の Whiteboard
 
-If an admin receives a DSR request for data in the new Whiteboard app, they can use Whiteboard PowerShell to add themselves (or other users) as an owner of a user's whiteboards. This enables an admin to perform actions including accessing, exporting, and deleting whiteboards. Use either the **Set-WhiteboardOwner** cmdlet to add yourself or another user as the owner of a whiteboard or use the **Invoke-TransferAllWhiteboards** cmdlet to transfer the ownership of all whiteboards for a specific user to a new owner. For information about using these cmdlets and installing the Whiteboard PowerShell module, see Microsoft Whiteboard cmdlet reference.
-After you or another person has ownership of a whiteboard, see [Microsoft Whiteboard cmdlet reference](https://docs.microsoft.com/powershell/module/whiteboard/?view=whiteboard-ps).
+新しい Whiteboard アプリのデータに対する DSR 要求を受け取った管理者は、Whiteboard PowerShell を使用して自分自身 (または他のユーザー) を、ユーザーのホワイトボードの所有者として追加します。これにより、管理者はホワイトボードへのアクセス、エクスポート、削除などの操作を実行できます。**Set-WhiteboardOwner** コマンドレットを使用して自分自身または他のユーザーをホワイトボードの所有者として追加するか、または **Invoke-TransferAllWhiteboards** コマンドレットを使用して特定ユーザーのすべてのホワイトボードの所有権を新しい所有者に移行します。これらのコマンドレットの使用法と Whiteboard PowerShell モジュールのインストールの詳細については、「Microsoft Whiteboard コマンドレット リファレンス」を参照してください。管理者または他のユーザーがホワイトボードの所有者になった後は、「[Microsoft Whiteboard コマンドレット リファレンス](https://docs.microsoft.com/powershell/module/whiteboard/?view=whiteboard-ps)」を参照してください。
 
 管理者または他のユーザーがホワイトボードの所有者になった後の、ホワイトボードへのアクセス、ホワイトボードのエクスポート、およびホワイトボードの削除の詳細については、「[ホワイトボードのサポート記事](https://go.microsoft.com/fwlink/?linkid=872780)」を参照してください。
 
@@ -1273,36 +1271,36 @@ Yammer 管理センターでは、Yammer 認証管理者 (全体管理者また�
 
 #### <a name="access"></a>Access
 
-You can view data in the exported files, including the full text of messages and the contents of files. You can also click links in the exported files to go directly to the posted messages and files in Yammer, and to groups, and topics the user created, messages the user liked, messages where the user is @mentioned, polls the user has voted on, and links the user has added.
+エクスポートしたファイルのデータ (メッセージの完全なテキストとファイルのコンテンツを含む) を表示できます。エクスポートしたファイル内のリンクをクリックすると、Yammer で投稿したメッセージとファイル、ユーザーが作成したグループとトピック、ユーザーがお気に入りに追加したメッセージ、ユーザーが @ メンションされたメッセージ、ユーザーが参加した投票、およびユーザーが追加したリンクに直接移動することもできます。
 
 ユーザーごとのデータのエクスポートには、次の情報は含まれません。
 
 - ユーザーのプロファイル:
-    - If the user has a Yammer identity, the user has full control of their profile. For information on how to view and modify the profile, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
+    - ユーザーが Yammer ID を持っている場合は、自分のプロファイルに対するフル コントロールを持ちます。プロファイルの表示方法および変更方法については、「[自分の Yammer プロファイルと設定を変更する](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851)」を参照してください。
     
-    - If the user has an Office 365 identity, the Yammer user profile is pulled automatically from Office 365, which gets the profile information from Azure Active Directory (AAD). Yammer users can temporarily change their profiles in Yammer, but these changes are overwritten when there is a change in AAD, so you must view and change directory data in AAD. See [Manage Yammer users across their lifecycle from Office 365](https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle) and [Add or change profile information for a user in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal).
+    - ユーザーが Office 365 ID を持っている場合は、Yammer ユーザー プロファイルが Office 365 から自動的に採用されます。このプロファイル情報は Azure Active Directory (AAD) から取得されます。Yammer ユーザーは自分のプロファイルを Yammer で一時的に変更できますが、こうした変更は AAD で変更があったときに上書きされるため、ディレクトリ データの表示と変更は AAD で実行する必要があります。「[Office 365 から Yammer ユーザーのライフサイクル全体を管理する](https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle)」および「[Azure Active Directory でユーザーのプロファイル情報を追加または変更する](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal)」を参照してください。
 
 -   ユーザーの設定:
 
-- The user can view and change their own settings. For information on how to view and modify user settings, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851). An admin can view this information and take screenshots, but can't change it. Go to Yammer settings \> **People**, and then click the name of the user.<br/>
+- ユーザーは、自分用の設定を表示および変更できます。ユーザー設定の表示方法と変更方法については、「[自分の Yammer プロファイルと設定を変更する](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851)」を参照してください。管理者は、この情報の表示とスクリーンショットの作成が可能ですが、変更はできません。Yammer の設定 \>**[ユーザー]** に移動して、ユーザーの名前をクリックします。<br/>
     - ユーザーのグループ メンバーシップ、ブックマークしたメッセージ、フォローしているユーザー、およびフォローしているトピック。
     
-    - The user can view this information. For information on how, see [Tips for staying organized in Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380). An admin can view this information and take screenshots, but can't change it. Go to Yammer settings \> **People**, and then click the name of the user.
+    - ユーザーは、この情報を表示できます。その方法については、「[Yammer で整理された状態を維持するためのヒント](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380)」を参照してください。管理者は、この情報の表示とスクリーンショットの作成が可能ですが、変更はできません。Yammer の設定 \>**[ユーザー]** に移動して、ユーザーの名前をクリックします。
 
 #### <a name="export"></a>エクスポート
 
-For instructions for how to export data, see [Manage GDPR data subject requests in Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise). You must run a per-user export for each Yammer network the user is a member of.
+データのエクスポート方法については、「[Yammer Enterprise の GDPR データ主体の要求を管理する](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)」を参照してください。ユーザーごとのエクスポートは、そのユーザーがメンバーとして所属している Yammer ネットワーク別に実行する必要があります。
 
 Yammer にはデータ保存設定があり、ユーザーがメッセージやファイルを削除したときに、データは論理的または物理的のどちらかで削除されます。 論理的な削除に設定されている場合、ユーザーが削除したデータはエクスポートに含まれます。 Yammer のデータ保存設定が物理的な削除に設定されている場合、削除された情報は Yammer に保存されなくなり、エクスポートには含まれなくなります。
 
 #### <a name="delete"></a>削除
 
-Yammer allows verified admins to execute a GDPR-compliant delete via the Yammer admin center if they receive a DSR. This option is called Erase User, and it suspends the user for 14 days and then removes all their personal data, excluding files and messages. If the user is a guest user, this must be done for each external network the guest user is a member of.
+Yammer では、認証管理者は DSR を受理したときに、Yammer 管理センターから GDPR 準拠の削除を実行できます。このオプションは「ユーザーの消去」と呼ばれ、ユーザーを 14 日間保留した後で、そのユーザーのすべての個人データを削除します (ファイルとメッセージを除く)。ユーザーがゲスト ユーザーの場合は、そのゲスト ユーザーが所属している外部ネットワークごとに、この操作を実行する必要があります。
 
 >[!NOTE]
->If an admin wants to remove the files and messages of a user during the 14-day window, they will have to perform a user level export to identify the files and messages, and then decide which ones to delete either by in-product deletion or by using a PowerShell script. After the 14-day window, the admin can no longer associate the user with their files or messages.
+>管理者が 14 日間の期間中にユーザーのファイルとメッセージを削除するには、ユーザー レベルのエクスポートを実行してファイルとメッセージを特定して、製品内の削除または PowerShell スクリプトを使用して削除するファイルとメッセージを決定する必要があります。14 日間の期間が経過すると、管理者は、ユーザーのファイルやメッセージをユーザーに関連付けられなくなります。
 
-When a user is deleted with the Erase User option, notification is sent to the Yammer Inbox of all network admins and verified admins. The Erase User option deletes the user's Yammer profile, but does not delete their Office 365 or Azure Active Directory profile.
+「ユーザーの消去」オプションでユーザーが削除されると、すべてのネットワーク管理者と認証管理者の Yammer 受信トレイに通知が送信されます。「ユーザーの消去」オプションにより、ユーザーの Yammer プロファイルが削除されますが、Office 365 プロファイルまたは Azure Active Directory プロファイルは削除されません。
 
 ユーザーを削除する詳細な手順については、「[Yammer Enterprise の GDPR データ主体の要求を管理する](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)」を参照してください。
 
@@ -1312,7 +1310,7 @@ When a user is deleted with the Erase User option, notification is sent to the Y
 
 ### <a name="requesting-that-the-data-owner-to-make-the-approved-change"></a>承認された変更を実行するようにデータ所有者に要求する
 
-The most direct way to rectify personal data is to ask the data owner to make the change. After you locate the data that is the subject of the DSR, you can provide the following information so that they can make the change.
+最も直接的な個人データの修正方法は、データ所有者に変更を依頼することです。DSR の対象になるデータの特定後に、データ所有者が変更を実行できるように、次に示す情報を提供します。
 
 - 変更が必要なアイテムの場所とファイル名 (ドキュメントやファイルの場合)。 対象のデータの特定は、前述の[検出プロセス](#using-content-search-to-find-personal-data)の一部です。
 - データ所有者が実行する必要のある承認された変更
@@ -1321,7 +1319,7 @@ The most direct way to rectify personal data is to ask the data owner to make th
 
 ### <a name="gaining-access-to-a-sharepoint-online-site-or-onedrive-for-business-account-to-make-changes"></a>変更を加える SharePoint Online サイトまたは OneDrive for Business アカウントへのアクセス権を取得する
 
-If it's not feasible for the data owner to implement the data subject's request for rectification, an IT admin or SharePoint admin in your organization can get access to the content location and make the required changes. Or, an admin can assign you or another data privacy officer the necessary permissions.
+データの所有者にはデータ訂正要求の実施が不可能な場合は、組織内の IT 管理者または SharePoint 管理者がコンテンツの場所にアクセスして、必要な変更を加えることができます。また、管理者は、自分またはデータ プライバシー責任者に必要なアクセス許可を割り当てることができます。
 
 #### <a name="sharepoint-online"></a>SharePoint Online
 
@@ -1343,7 +1341,7 @@ SharePoint Online サイトへの管理者アクセス許可または所有者�
 
 ### <a name="gaining-access-to-an-exchange-online-mailbox-to-make-changes-to-data"></a>データに変更を加える Exchange Online メールボックスへのアクセス権を取得する
 
-A global admin can assign themselves the permissions necessary to open and edit (or delete) items in another user's mailbox, as if they were the mailbox owner. A global admin can also assign these permissions to another user. Specifically, the global admin needs to add the **Read and manage** permission, which is the Full Access permission in Exchange Online. For details, see:
+全体管理者は、別のユーザーのメールボックス内のアイテムを開いて編集 (または削除) するために必要なアクセス許可を自分に割り当てることが可能です (そのメールボックスの所有者のように操作できるようになります)。全体管理者は、そうしたアクセス許可を別のユーザーに割り当てることもできます。具体的には、全体管理者が**読み取りと管理**のアクセス許可を追加する必要があります。これは、Exchange Online のフル アクセス許可です。詳細については、次を参照してください。
 
 - [Office 365 の別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
 - [別のユーザーのメールボックスにアクセスする](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081)
@@ -1352,52 +1350,52 @@ A global admin can assign themselves the permissions necessary to open and edit 
 
 ### <a name="making-changes-to-content-in-onedrive-for-business-and-sharepoint-online"></a>OneDrive for Business と SharePoint Online のコンテンツに変更を加える
 
-Admins or data owners can make changes to SharePoint Online documents, lists, and pages. Keep the following things in mind when making changes to SharePoint content:
+管理者またはデータ所有者は、SharePoint Online のドキュメント、リスト、およびページに変更を加えることができます。SharePoint のコンテンツに変更を加える際には、次の点に注意してください。
 
 - ドキュメントを更新すると、変更が含まれている新しいバージョンのドキュメントが保存されます。 ドキュメントの古いバージョンは更新されません。 これは、DSR 訂正要求の対象になっているデータが、トピックの古いバージョンに残ってしまう可能性があることを意味します。 トピックの古いバージョンは削除して、Office 365 から完全に削除できます。 このガイドの「 [SharePoint Online および OneDrive for Business のドキュメントを削除する](#deleting-documents-in-sharepoint-online-and-onedrive-for-business)」セクションを参照してください。
 - データ主体のトレース (ファイルのすべてのバージョンとデータ主体が実行したアクティビティのすべての記録を含む) をすべてファイルから削除する方法で SharePoint ファイルを完全に修正するには、次の手順を実行する必要があります。
 
     1. ファイルのコピーをローカル コンピューターにダウンロードします。
-    2. Permanently delete the file from SharePoint Online, by deleting the file, and then deleting if from the first-stage and second-stage Recycle Bin. See the [Deleting documents in SharePoint Online and OneDrive for Business](#deleting-documents-in-sharepoint-online-and-onedrive-for-business) section in this guide.
+    2. SharePoint Online からファイルを完全に削除します (ファイルの削除後に、そのファイルを第 1 段階と第 2 段階のごみ箱から削除します)。このガイドのセクション「[SharePoint Online および OneDrive for Business のドキュメントを削除する](#deleting-documents-in-sharepoint-online-and-onedrive-for-business)」を参照してください。
     3. ローカル コンピューター上のドキュメントのコピーに変更を加えます。
     4. 変更したファイルを元の SharePoint Online の場所にアップロードします。
 
-- Data in SharePoint lists can be edited. See [Add, edit, or delete list items](https://support.microsoft.com/ja-JP/office/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde).
+- SharePoint リスト内のデータは編集可能です。「[リスト アイテムを追加、編集、または削除する](https://support.microsoft.com/ja-JP/office/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde)」を参照してください。
 
 IT 管理者は、ドキュメントに関連付けられた特定の個人的なプロパティを修正することもできます。
 
-User information from the SharePoint User Profile or Office 365 is often associated with OneDrive for Business and SharePoint Online documents to represent that person. For example, a user's name in a Created By or Modified By People column for a document or list item. This user information can be rectified in several ways, depending on the source:
+SharePoint の [ユーザー プロファイル] や Office 365 から得られるユーザー情報は、多くの場合、そのユーザーを表すために OneDrive for Business および SharePoint Online のドキュメントに関連付けられています。たとえば、ドキュメントやリストの作成者や更新者の列にあるユーザー名が挙げられます。このユーザー情報は、ソースに応じて複数の方法で訂正できます。
 
 - ユーザーの所有するオンプレミスの Active Directory でユーザー プロパティを修正する。 「表示名」や「氏名 (名)」などのユーザーのプロパティをオンプレミスの AD から同期している場合は、該当するプロパティはその AD で修正する必要があります。 適切にマップされたプロパティは、Office 365 に送られてから OneDrive for Business および SharePoint Online に送られます。
 - 管理センターでユーザー プロパティを修正する。 管理センターで行われたアカウント情報の変更は、OneDrive for Business および SharePoint Online のエクスペリエンスに自動的に反映されます。 詳細については、「[Azure Active Directory でユーザーのプロファイル情報を追加または変更する](https://go.microsoft.com/fwlink/?linkid=864809)」を参照してください。 Office 365 から取得されるプロパティは、SharePoint 側では変更できません。
-- Rectify user properties in the SharePoint user profile experience of the SharePoint admin center. In the user profiles tab of the SharePoint admin center, admins can click **Manage user profiles**, and look up any user's properties. Then they can choose to Edit the user's properties.
-- Rectify user properties in a custom source. Custom SharePoint profile properties may be syncing from a custom source via Microsoft Identity Manager (MIM) or another method.
+- SharePoint Online 管理センターの SharePoint ユーザー プロファイル エクスペリエンスでユーザー プロパティを修正する。SharePoint Online 管理センターの [ユーザー プロファイル] タブで、管理者は **[ユーザー プロファイルの管理]** をクリックして、ユーザーのプロパティを検索できます。その後で、ユーザーのプロパティの編集が可能になります。
+- カスタムのソースでユーザーのプロパティを修正する。カスタムの SharePoint プロファイルのプロパティは、Microsoft Identity Manager (MIM) などの方法でカスタムのソースから同期できます。
 
 古い情報が保持されているエクスペリエンスがある可能性があるため、これはすべてのエクスペリエンスに影響するわけではありません。 たとえば、ユーザーの名前がドキュメント内でテキストとして保持されているかもしれません。
 
 ### <a name="making-changes-to-content-in-power-bi"></a>Power BI のコンテンツに変更を加える
 
-Power BI relies on the underlying source data used in its dashboards and reports to be complete and accurate, so correcting inaccurate or incomplete source data must be done there. For example, if you created a Power BI report that is connected to Dynamics 365 for Sales as the live data source, you would have to make any corrections to the data in Dynamics 365 for Sales.
+Power BI は、ダッシュボードとレポートで使用される基礎となるソース データに依存して完全性と正確性を実現するため、不正確または不完全なソース データの修正は、そのソース データに対して実行する必要があります。たとえば、ライブ データ ソースとして Dynamics 365 for Sales に接続する Power BI レポートを作成する場合、データの修正は Dynamics 365 for Sales で実行する必要があります。
 
-After those changes are made, you can take advantage of the [scheduled data refresh](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh) capabilities to update the dataset that is stored in Power BI so that the revised data is reflected in the dependent Power BI assets. To help comply with GDPR requirements, you should have policies in place to ensure that you are refreshing your data at an appropriate cadence.
+こうした変更を加えた後で、[スケジュールされたデータ更新](https://docs.microsoft.com/power-bi/refresh-scheduled-refresh)機能を利用することで、Power BI に保存されたデータセットを更新して、Power BI の依存アセットに修正したデータを反映できます。GDPR 要件に準拠できるようにするために、適切な周期で確実にデータを更新するポリシーの実施が必要になります。
 
 ### <a name="making-changes-to-content-in-yammer"></a>Yammer のコンテンツに変更を加える
 
-For messages, a user can edit a given message to rectify any inaccuracies. They can request a list of all their messages from a Yammer verified admin, and then click a link in the file to review each message.
+メッセージについては、ユーザーが特定のメッセージを編集して間違いを修正できます。ユーザーは自分のメッセージのすべてのリストを Yammer 認証管理者に要求できます。各メッセージは、ファイル内のリンクをクリックして確認します。
 
-For files, a user can edit a given file to rectify any inaccuracies. They can request a list of all the files they posted from a Yammer verified admin, and then access the files in Yammer. Files that are exported into the Files folder can be viewed by searching for the file by number. For example, for a file named 12345678.ppx in the export, use the Search box in Yammer to search for 1235678.ppx. Or, go to <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>; for example, <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>.
+ファイルについては、ユーザーが特定のファイルを編集して間違いを修正できます。ユーザーは自分が投稿したすべてのファイルのリストを Yammer 認証管理者に要求して、Yammer でファイルにアクセスできます。[ファイル] フォルダーにエクスポートされたファイルは、そのファイルを番号で検索することで表示できます。たとえば、エクスポートに含まれる 12345678.ppx というファイルについては、Yammer の [検索] ボックスを使用して 1235678.ppx を検索します。または、<strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong> にアクセスします (例: <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>)。
 
 ユーザーが自分のプロファイルおよび設定からアクセスできるデータについては、ユーザーが必要な変更を実行できます。
 
 - ユーザーのプロファイル:
 
-    - If the user has a Yammer identity, the user has full control of their profile. For information on how to view and modify the profile, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
+    - ユーザーが Yammer ID を持っている場合は、自分のプロファイルに対するフル コントロールを持ちます。プロファイルの表示方法および変更方法については、「[自分の Yammer プロファイルと設定を変更する](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851)」を参照してください。
     - ユーザーが Office 365 ID を持っている場合は、Yammer ユーザー プロファイルが Office 365 から自動的に採用されます。このプロファイル情報は Azure Active Directory (AAD) から取得されます。 Yammer ユーザーは自分のプロファイルを Yammer で一時的に変更できますが、こうした変更は AAD で変更があったときに上書きされるため、ディレクトリ データの表示と変更を行う最適の場所は AAD です。 ユーザーは、AAD の更新をリクエストする必要があります。 詳細については、「[Office 365 から Yammer ユーザーのライフサイクル全体を管理する](https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle)」および「[Azure Active Directory でユーザーのプロファイル情報を追加または変更する](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal)」を参照してください。
 
 - ユーザーの設定:
 
-    - The user can change their own settings. For information on how to view and modify user settings, see [Change my Yammer profile and settings](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851).
-    - The user's group membership, bookmarked messages, followed users, and followed topics. The user can change this information; see [Tips for staying organized in Yammer](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380).
+    - ユーザーは自分専用の設定を変更できます。ユーザー設定の表示方法と変更方法については、「[自分の Yammer プロファイルと設定を変更する](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851)」を参照してください。
+    - ユーザーのグループ メンバーシップ、ブックマークしたメッセージ、フォローしているユーザー、およびフォローしているトピックについての情報は、ユーザーが変更できます。「[Yammer で整理された状態を維持するためのヒント](https://support.office.com/article/tips-for-staying-organized-in-yammer-40ae9666-75c0-4254-a84c-d87a9542f380)」を参照してください。
 
 ## <a name="responding-to-dsr-restriction-requests"></a>DSR 制限要求への対応
 
@@ -1430,31 +1428,31 @@ For files, a user can edit a given file to rectify any inaccuracies. They can re
 
 データ処理の制限についての DSR 要求に対応するために、Office 365 サービスをオフにするという方法もあります。 この方法は組織全体に影響を与え、すべてのユーザーがサービスの使用やサービスのデータへのアクセスができなくなります。
 
-The most expedient way to turn off a service is to use Office 365 PowerShell and remove the corresponding user license from all users in the organization. This will in effect restrict anyone from access data in that service. For detailed instructions, see [Disable access to services with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) and follow the procedures to disable Office 365 services for users from a single licensing plan.
+最も簡単にサービスをオフにする方法は、Office 365 PowerShell を使用して、組織内のすべてのユーザーから対応するユーザー ライセンスを削除することです。これにより、事実上すべてのユーザーに対し、そのサービスのデータへのアクセスが制限されます。詳細な手順については、「[Office 365 PowerShell を使用してサービスへのアクセスを無効にする](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell)」を参照して、単一のライセンス プランからユーザーの Office 365 サービスを無効にする手順に従ってください。
 
 >[!NOTE]
->For Yammer, in additional to removing the Yammer license from user accounts, you also must disable users' ability to sign in to Yammer with Yammer credentials (by enforcing the use of their Office 365 credentials when signing in). For detailed instructions, see [Turn off Yammer access for Microsoft 365 users](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a).
+>Yammer の場合、ユーザー アカウントから Yammer ライセンスを削除することに加えて、ユーザーが Yammer の資格情報で Yammer にサインインできなくする (サインイン時に、Office 365 の資格情報を使用するように強制する) 必要があります。詳細な手順については、「[Microsoft 365 ユーザーの Yammer へのアクセスをオフにする](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a)」を参照してください。
 
 ### <a name="temporarily-removing-data-from-sharepoint-online-or-onedrive-for-business-sites"></a>SharePoint Online または OneDrive for Business のサイトから一時的にデータを削除する
 
-Another way to restrict the processing of personal data is to temporarily remove it from Office 365 in response to a DSR. When your organization determines that the restriction no longer applies, you can import the data back into Office 365.
+DSR に応えて、個人データの処理を制限するには、Office 365 から一時的に個人データを削除するという方法もあります。制限の適用が不要になったと組織が判断した際には、Office 365 に削除したデータをインポートして元に戻すことができます。
 
 ほとんどの Office ドキュメントは SharePoint Online または OneDrive for Business のサイトにあるため、ここでは、サイトからドキュメントを削除して、そのドキュメントを再インポートする手順の概要を示します。
 
-1. Get a copy of the document that is the subject of the restriction request. You may have to request either access to the site or ask a global admin or a site collection administrator to provide you with a copy of the document.
+1. 制限要求の対象になるドキュメントのコピーを取得します。サイトへのアクセス権を要求するか、全体管理者またはサイト コレクション管理者にドキュメントのコピーを提供するように依頼する必要があります。
 2. そのドキュメントをオンプレミスの場所 (ファイル サーバーやファイル共有) や Microsoft クラウド内の Office 365 テナント以外の場所に保存します。
-3. Permanently delete (purge) the original document from Office 365. This is a 3-step process:
+3. Office 365 から元のドキュメントを完全に削除 (消去) します。次に示す 3 段階の手順を実行します。
 
-    a.  Delete the original copy of the document. When you delete a document from a site, it's sent to the site Recycle Bin (also called the *first-stage Recycle Bin*).
+    a.  ドキュメントのオリジナル コピーを削除します。サイトからドキュメントを削除すると、そのドキュメントはごみ箱に送られます (*第 1 段階のごみ箱*とも呼ばれます)。
 
-    b.  Go to the site Recycle Bin and delete that copy of the document. When you delete a document from the site Recycle Bin, it's sent to the site collection Recycle Bin (also called the *second-stage Recycle Bin*). See [Delete a file, folder, or link from a SharePoint document library](https://support.microsoft.com/ja-JP/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52).
+    b.  サイトのごみ箱に移動して、対象ドキュメントのコピーを削除します。サイトのごみ箱からドキュメントを削除すると、そのドキュメントはサイト コレクションのごみ箱に送られます (*第 2 段階のごみ箱*とも呼ばれます)。「[SharePoint ドキュメント ライブラリからファイル、フォルダー、またはリンクを削除する](https://support.microsoft.com/ja-JP/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)」を参照してください。
 
-    c.  Go to the site collection Recycle Bin and delete that copy of the document, which permanently removes it from Office 365. See [Delete items from the site collection recycle bin](https://support.microsoft.com/ja-JP/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653).
+    c.  サイト コレクションのごみ箱に移動して対象ドキュメントのコピーを削除します。これにより、そのドキュメントは Office 365 から完全に削除されます。「[サイト コレクションのごみ箱からアイテムを削除する](https://support.microsoft.com/ja-JP/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653)」を参照してください。
 
 4. 制限の適用が不要になったときには、オンプレミスに保存しておいたドキュメントのコピーを Office 365 のサイトに再アップロードできます。
 
 >[!IMPORTANT]
->The preceding procedure won't work if the document is located on a site that is on hold (with one of the retention or legal hold features in Office 365). In the case where a restriction request for a DSR takes precedence over a legal hold, the hold would have to be removed from the site before a document could be permanently deleted. Additionally, the document history for deleted documents is permanently removed.
+>上記の手順は、ドキュメントがホールド (Office 365 の保留または訴訟ホールドのいずれかの機能による) 状態のサイトにある場合は機能しません。DSR の制限要求が訴訟ホールドよりも優先される場合は、その訴訟ホールドをサイトから削除する必要があり、その後でドキュメントを完全に削除します。さらに、削除したドキュメントのドキュメント履歴も完全に削除します。
 
 ### <a name="temporarily-restricting-access-to-sharepoint-online-sites"></a>SharePoint Online サイトへのアクセスを一時的に制限する
 
@@ -1462,7 +1460,7 @@ SharePoint Online の管理者は、サイト コレクションをロックす�
 
 ### <a name="preventing-a-user-from-signing-in-to-office-365"></a>ユーザーが Office 365 にサインインできないようにする
 
-An IT admin can also prevent a user from signing into Office 365, which would prevent the user from accessing any Office 365 online service or processing any data stored in Office 365. See [Block a former employee's access to Office 365 data](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee).
+IT 管理者は、ユーザーが Office 365 にサインインできないようにすることも可能です。これにより、ユーザーは Office 365 のオンライン サービスにアクセスすることも、Office 365 に保存されたデータを処理することもできなくなります。「[Office 365 から元従業員を削除する](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee)」を参照してください。
 
 ## <a name="part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365"></a>パート 2: Office 365 で生成されたインサイトに関する DSR への対応
 
@@ -1479,7 +1477,7 @@ Delve では、ユーザーは自分の Office 365 プロファイルを管理�
 
 #### <a name="access-and-export"></a>アクセスとエクスポート
 
-Admins can't access or export a users' Delve data. This means that users have to access and export Delve data themselves. Most of the data types can be accessed and exported directly from Delve, but some data types are only available through other services.
+管理者は、ユーザーの Delve データにアクセスすることもエクスポートすることもできません。そのため、Delve データに対するアクセスおよびエクスポートは、ユーザーが自分で実行する必要があります。ほとんどの種類のデータは、Delve から直接アクセスおよびエクスポートできますが、別のサービスからのみ使用可能になるデータの種類もあります。
 
 ##### <a name="data-available-in-the-delve-user-interface"></a>Delve ユーザー インターフェイスで使用可能なデータ
 
@@ -1493,7 +1491,7 @@ Admins can't access or export a users' Delve data. This means that users have to
 - **お気に入りデータ:** ユーザーがお気に入りとしてマークしたボードやドキュメントです。 この**お気に入り** ページは、ユーザーがお気に入りに追加したボードやドキュメントを表示します。 ユーザーは、現在のお気に入りのボードやドキュメントのリストをエクスポートできます。
 - **機能設定データ:** ユーザーが Delve を使用することで得られる Delve の構成またはアクションです。 ユーザーは、機能設定のすべてのリストをエクスポートできます。
 
-To access or export the above data, the user can click the gear icon in the upper-right corner in Delve, and then click **Feature settings** > **Export data**. Information is exported in JSON format.
+上記のデータにアクセスするかまたはデータをエクスポートするには、Delve の右上隅にある歯車アイコンをクリックし、次に **[機能の設定]** > **[データのエクスポート]** をクリックします。情報は JSON 形式でエクスポートされます。
 
 ##### <a name="data-thats-available-through-other-services"></a>その他のサービスから利用可能なデータ
 
@@ -1510,7 +1508,7 @@ To access or export the above data, the user can click the gear icon in the uppe
 
 #### <a name="restrict"></a>制限
 
-To restrict processing in Delve for your organization, you can turn off the Office Graph. Learn more [here](https://docs.microsoft.com/sharepoint/delve-for-office-365-admins).
+組織の Delve の処理を制限するには、Office Graph をオフにします。詳細については、[ここ](https://docs.microsoft.com/sharepoint/delve-for-office-365-admins)を参照してください。
 
 #### <a name="delete"></a>削除
 
@@ -1521,7 +1519,7 @@ To restrict processing in Delve for your organization, you can turn off the Offi
 
 ### <a name="myanalytics"></a>MyAnalytics
 
-MyAnalytics provides statistics to users to help them understand how they spend their time at work. To help your users better understand the data that is presented to them in their personal dashboard and how that data is calculated, direct your users to the [MyAnalytics personal dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2) help topic.
+MyAnalytics は、ユーザーが仕事に費やした時間について理解するために役立つ統計を提供します。個人用ダッシュボードに表示されるデータと、そのデータの算出方法について正しく理解できるようにするために、ヘルプ トピック「[MyAnalytics の個人用ダッシュボード](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2)」を参照するようにユーザーに指示してください。
 
 #### <a name="access-and-export"></a>アクセスとエクスポート
 
@@ -1529,23 +1527,23 @@ MyAnalytics provides statistics to users to help them understand how they spend 
 
 #### <a name="rectify"></a>修正
 
-All insights generated by MyAnalytics are derived from the user's mail and calendar items. Therefore, there is nothing to rectify other than the source email or calendar items.
+MyAnalytics で生成されるすべてのインサイトは、ユーザーのメールおよび予定表アイテムから導出されます。そのため、ソースのメールまたは予定表アイテム以外に修正するものはありません。
 
 #### <a name="restrict"></a>制限
 
-To restrict processing for a specific user, you can opt them out of MyAnalytics. To see how, see [Configure MyAnalytics user settings](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics).
+特定のユーザーの処理を制限するために、そのユーザーを MyAnalytics から除外できます。その方法については、「[MyAnalytics のユーザー設定を構成する](https://docs.microsoft.com/workplace-analytics/myanalytics/setup/configure-myanalytics)」を参照してください。
 
 #### <a name="delete"></a>削除
 
-All mailbox content, including MyAnalytics data, is purged when a user account is "hard-deleted" from Active Directory. For more information, see the [Deleting a user](#deleting-a-user) section in this guide.
+メールボックスのすべての内容は、ユーザーが Active Directory から「物理的に削除」されるときに、MyAnalytics のデータも含めて削除されます。詳しくは、このガイドの「[ユーザーの削除](#deleting-a-user)」を参照してください。
 
 ### <a name="workplace-analytics"></a>Workplace Analytics
 
-Workplace Analytics allows organizations to augment Office 365 data with their own business data to gain insights about organizational productivity, collaboration patterns, and employee engagement. [This article](https://docs.microsoft.com/workplace-analytics/index-orig) explains the control that your organization has over the data that Workplace Analytics processes and who has access to that data.
+Workplace Analytics により、組織は、組織の生産性、共同作業のパターン、および従業員エンゲージメントに関するインサイトを得るために、Office 365 のデータを組織独自の業務データで補強できるようになります。[この記事](https://docs.microsoft.com/workplace-analytics/index-orig)では、Workplace Analytics で処理されるデータと、そのデータにアクセスできるユーザーを組織が制御する方法について説明しています。
 
 Workplace Analytics で DSR を支援するには、次の操作を実行します。 
 
-1. Determine whether your organization is using Workplace Analytics. For more information, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md). If your organization is not using Workplace Analytics, there is no further action.
+1. 組織で Workplace Analytics を使用しているかどうかを確認します。詳細については、「[ライセンスをユーザーに割り当てる](../admin/manage/assign-licenses-to-users.md)」を参照してください。組織で Workplace Analytics を使用していない場合は、これ以降の操作は不要です。
 
 2. 組織が Workplace Analytics を使用している場合は、Workplace Analytics 管理者の役割が割り当てられている組織内のユーザーを調べます。 また、データ主体のメールボックスに Workplace Analytics のライセンスが付与されているかどうかも確認する必要があります。 必要に応じて、次の DSR を処理する際には、Workplace Analytics 管理者が Microsoft サポートに問い合わせるようにしてください。 
 
@@ -1563,18 +1561,18 @@ Workplace Analytics で DSR を支援するには、次の操作を実行しま�
 
 #### <a name="delete"></a>削除
 
-If a data subject would like to be removed from a Workplace Analytics report or set of reports, you can delete the report. It is your responsibility to delete users from any organizational data that you used to generate the report, and reupload the data. All data about the user is removed when a user account is "hard-deleted" from Azure Active Directory. 
+データ主体が、特定の Workplace Analytics レポートまたは一連のレポートからの削除を希望する場合は、そのレポートを削除できます。レポートの生成に使用したすべての組織データからユーザーを削除し、データを再アップロードする必要があります。ユーザー アカウントが Azure Active Directory から「物理的に削除」されると、ユーザーに関するすべてのデータが削除されます。 
 
 データ主体の個人データを削除するには、全体管理者が次の手順を実行できます。 
 
 1. データ主体から Workplace Analytics ライセンスを削除します。
-2. Delete the Azure Active Directory (AAD) entry for the data subject. (For more information, see [Delete a user](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user).)
-3. Contact support and have support open a ticket for a Data Subject Rights (DSR) user-delete request. In this ticket, identify the data subject by using their User Principal Name (UPN).
+2. データ主体の Azure Active Directory (AAD) エントリを削除します。(詳細については、「[ユーザーの削除](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)」を参照してください)
+3. サポートに連絡し、データ主体権限 (DSR) のユーザー削除要求のチケットを開くことを依頼します。このチケットでは、ユーザー プリンシパル名 (UPN) を使用してデータ主体を識別します。
 4. 会社の人事システムから人事データのコピーをエクスポート (「[データのエクスポート](https://docs.microsoft.com/workplace-analytics/setup/prepare-organizational-data)」を参照) し、その人事データ ファイルからデータ主体の情報を削除し、編集後の人事データ ファイルを .csv 形式で Workplace Analytics にアップロードします (「[組織データをアップロードする](https://docs.microsoft.com/workplace-analytics/setup/upload-organizational-data)」を参照)。
 
 ## <a name="part-3-responding-to-dsrs-for-system-generated-logs"></a>パート 3: システム生成ログに対する DSR への対応
 
-Microsoft also provides you with the ability to access, export, and delete system-generated logs that may be deemed personal under the GDPR's broad definition of "personal data." Examples of system-generated logs that may be deemed personal under GDPR include:
+Microsoft は、GDPR における「個人データ」の広範な定義の下で個人のものと見なされるシステム生成ログに対して、アクセス、エクスポート、および削除するための機能も提供しています。次に、GDPR の下で個人のものと見なされるシステム生成のログの例を示します。
 
 - 製品およびサービスの利用状況データ (ユーザー アクティビティ ログなど)
 - ユーザー検索要求およびクエリ データ
@@ -1635,13 +1633,13 @@ Microsoft の最も頻繁に使用されるサービスの一部 (Exchange Onlin
 
 ### <a name="deleting-system-generated-logs"></a>システム生成ログの削除
 
-To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions about permanently delete a user, see the [Deleting a user section](#deleting-a-user) in this guide. It's important to note that permanently deleting a user account is irreversible once initiated.
+アクセス要求によって取得したシステム生成ログを削除するには、サービスからユーザーを削除して、そのユーザーの Azure Active Directory アカウントを完全に削除する必要があります。ユーザーの完全な削除の手順については、このガイドのセクション「[ユーザーの削除](#deleting-a-user)」を参照してください。ユーザー アカウントの完全な削除は、開始後に取り消すことができなくなる点に注してください。
 
 ユーザーのアカウントを完全に削除すると、ユーザーのデータは、ほぼすべての Office 365 サービスのシステム生成ログから 30 日以内に削除されます。ただし、サービスのセキュリティや安定性を損なう可能性のあるデータは削除されません。 
 
 この 30 日間の例外の 1 つは、Exchange Online でのユーザー アカウントの完全な削除に 30 日以上かかることです。 これは、Exchange Online コンテンツの重要性と不慮のデータ損失を防止するためです。 Exchange Online は、ユーザー アカウントの完全な削除から最大 60 日間、意図的にデータを保持状態にするように設計されています。 ユーザーの Exchange Online データを 30 日の期間中に完全に削除するには、そのユーザー アカウントを Azure Active Directory で完全に削除し、その後[Microsoft サポート](https://support.microsoft.com/)に連絡して、ユーザーの Exchange Online データをスケジュールされた削除プロセスとは別に手動で削除するように依頼してください。 詳細については、このガイドで前述した「[Exchange Online データの削除](#removing-exchange-online-data)」を参照してください。
 
-Deleting a user's account will not remove system-generated logs for Yammer and Kaizala. To remove the data from these applications, see one of the following:
+ユーザー アカウントを削除した場合、Yammer と Kaizala でシステム生成されたログは削除されません。これらのアプリケーションからデータを削除するには、次のいずれかを参照してください。
 
 - Yammer: [Yammer Enterprise の GDPR データ主体の要求を管理する](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)
 - Kaizala: [Kaizala でユーザーの組織データをエクスポートまたは削除する](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
@@ -1662,7 +1660,7 @@ Deleting a user's account will not remove system-generated logs for Yammer and K
 
 ### <a name="microsoft-support"></a>Microsoft サポート
 
-"Support Data" is the data you and your users provide to Microsoft if your organization or your users engage with Microsoft to receive product support related to Office 365 or other Microsoft products and services (for example, to troubleshoot unexpected product behavior). Some of this data may contain personal data. For more information, see [Microsoft Support and Professional Services Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services).
+「サポート データ」とは、組織やユーザーが Office 365 などの Microsoft 製品およびサービスに関連する製品サポート (たとえば、予期しない製品動作のトラブルシューティングなど) を Microsoft に依頼する際に Microsoft に提出するデータのことです。このデータには、個人データが含まれていることがあります。詳細については、「[GDPR のための Microsoft サポート/プロフェッショナル サービス データ主体要求](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-prof-services)」を参照してください。
 
 ### <a name="product-and-services-authenticated-with-an-org-id-for-which-microsoft-is-a-data-controller"></a>Microsoft がデータ管理者である Org ID で認証された製品とサービス
 
@@ -1674,7 +1672,7 @@ Deleting a user's account will not remove system-generated logs for Yammer and K
 - **ユーザーが取得した製品またはサービス:** 認証に AAD を使用する Microsoft の製品やサービス (Office アドオンまたは Microsoft Store で入手可能なアプリケーションなど) をユーザーが個人の裁量で取得できるようにしている場合は、Microsoft がデータ管理者になる可能性があります。 そのような Microsoft の製品やサービスについては、DSR を開始するために Microsoft に直接お問い合わせいただく必要があります。
 
 >[!IMPORTANT]
->If you delete a user as enabled via Azure Active Directory, your (former) user will lose the ability to sign in to any products or services for which he or she formerly relied upon for a work or school account. Additionally, Microsoft will no longer be able to authenticate the user in connection with a DSR request for products or services for which Microsoft is a data controller. If you wish to enable a user to initiate DSRs against such services, it is important you instruct your user to do so before you delete the user's AAD account.
+>Azure Active Directory 経由で有効化されているユーザーを削除すると、元のユーザーは、それまで職場または学校アカウントに依存していた製品やサービスにサインインできなくなります。さらに、Microsoft は、Microsoft がデータ管理者である製品やサービスの DSR 要求に関連して、ユーザーを認証できなくなります。そのようなサービスに対してユーザーが DSR 要求を開始できるようにするには、ユーザーの AAD アカウントを削除する前に、そうした要求を実行するようにユーザーに指示することが重要です。
 
 ### <a name="personal-accounts"></a>個人アカウント
 
@@ -1694,7 +1692,7 @@ Office 365 サービスを使用した DSR 調査の実施を準備する際に�
 
 ### <a name="use-the-dsr-case-tool-to-manage-dsr-investigations"></a>DSR ケース ツールを使用して DSR 調査を管理する
 
-We recommend that you use the DSR case tool in Security & Compliance Center to manage DSR investigations. By using the DSR case tool, you can:
+DSR 調査には、セキュリティ/コンプライアンス センターの DSR ケース ツールを使用することをお勧めします。DSR ケース ツールを使用すると、次のことが可能になります。
 
 - DSR 調査ごとに個別のケースを作成する。
 
@@ -1718,11 +1716,11 @@ We recommend that you use the DSR case tool in Security & Compliance Center to m
 DSR ケースの使用を開始するには、「[セキュリティ/コンプライアンス センターで DSR ケース ツールを使用して GDBR データ主体要求を管理する](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)」を参照してください。
 
 >[!IMPORTANT]
->An eDiscovery Administrator can view and manage all DSR cases in your organization. For more information about the different roles related to eDiscovery, see [Assign eDiscovery permissions to potential case members](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions).
+>電子情報開示の管理者は、組織内のすべての DSR ケースを表示および管理できます。電子情報開示に関連する各種役割の詳細については、「[候補のケース メンバーに電子情報開示のアクセス許可を割り当てる](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions)」を参照してください。
 
 ### <a name="set-up-compliance-boundaries-to-limit-the-scope-of-content-searches"></a>コンテンツ検索の範囲を制限するためにコンプライアンスの境界を使用する
 
-Compliance Boundaries are implemented by using the search permissions filtering functionality in the Security & Compliance Center. Compliance Boundaries create logical search boundaries within an organization that control/limit which content locations (for example Exchange Online mailboxes and SharePoint Online sites) that an IT admin or compliance officer can search. Compliance Boundaries are useful for multi-national organizations that need to respect geographical boundaries, governmental organizations that need to separate different agencies, and business organizations that segregated into business unit or department. For all these scenarios, Compliance Boundaries can be used in DSR investigations to limit which mailboxes and sites can be searched by people involved in the investigation.
+コンプライアンスの境界は、セキュリティ/コンプライアンス センターで検索権限のフィルター処理機能を使用することで実装します。コンプライアンスの境界により、組織内に検索の論理的な境界を作成して、IT 管理者や法令遵守責任者が検索できるコンテンツの場所 (たとえば、Exchange Online のメールボックスや SharePoint Online のサイトなど) を制御/制限します。コンプライアンスの境界は、地理的な境界を重視する必要がある多国籍企業、各種機関を分離する必要がある政府組織、事業単位や部署に分割された事業組織にとって役立ちます。こうしたシナリオのすべてについて、コンプライアンスの境界は、調査の関係者が検索できるメールボックスおよびサイトを制限するために、DSR 調査で使用できます。
 
 コンプライアンスの境界は、電子情報開示のケースと併用することで、調査で検索できるコンテンツの場所を特定の機関内や事業単位内に制限することができます。
 
@@ -1730,12 +1728,12 @@ Compliance Boundaries are implemented by using the search permissions filtering 
 
 1. コンプライアンスの境界として指定する組織内の機関を決定します。
 
-2. Determine which user object attribute in Azure Active Directory will be used to define the compliance boundary. For example, you might choose the Country, CountryCode, or Department attribute, so that members of the admin role group that you create in the next step can only search the content locations of the users that have a specific value for that attribute. This is how you limit who can search for content in a specific agency.
+2. コンプライアンスの境界を定義するために使用する Azure Active Directory のユーザー オブジェクト属性を決定します。たとえば、Country 属性、CountryCode 属性または Department 属性を選択して、次に示す手順で作成する管理者役割グループのメンバーが、その属性に指定された値を持つユーザーのコンテンツの場所のみを検索できるようにします。この方法で、特定の機関のコンテンツを検索できる担当者を制限します。
 
 >[!NOTE]
 >現時点では、OneDrive for Business アカウントに属性を同期するには、OneDrive for Business に対する追加の手順を実行して、Microsoft サポートにリクエストを申し込む必要があります。
 
-4. Create an admin role group in the Security & Compliance Center for each compliance boundary. We recommend that you create these role groups by copying the built-in eDiscovery Manager role group and then removing any roles as necessary.
+4. セキュリティ/コンプライアンス センターで、コンプライアンスの境界ごとに、管理者役割グループを作成します。こうした役割グループを作成する場合は、組み込みの電子情報開示マネージャーの役割グループをコピーして、必要に応じて役割を削除することをお勧めします。
 
 5. 特定の役割グループごとに、電子情報開示マネージャーとしてメンバーを追加します。 メンバーは、DSR の調査と対応の責任者になり、通常は IT 管理者、データ プライバシー担当者、コンプライアンス マネージャー、および人事担当者で構成されます。
 
@@ -1745,7 +1743,7 @@ Compliance Boundaries are implemented by using the search permissions filtering 
 
 ### <a name="use-the-audit-log-search-tool-in-dsr-investigations"></a>DSR 調査で監査ログの検索ツールを使用する
 
-IT admins can use the audit log search tool in the Security & Compliance Center to identity documents, files, and other Office 365 resources that users have created, accessed, changed, or deleted. Searching for this kind activity can be useful in DSR investigations. For example, in SharePoint Online and OneDrive for Business, auditing events are logged when users perform these activities:
+IT 管理者は、セキュリティ/コンプライアンス センターで監査ログの検索ツールを使用することで、ユーザーが作成、アクセス、変更、または削除したドキュメントやファイルなどの Office 365 リソースを特定できます。この種のアクティビティの検索は、DSR 調査で役立ちます。たとえば、SharePoint Online と OneDrive for Business では、ユーザーが次に示すアクティビティを実行したときに、ログに監査イベントが記録されます。
 
 - ファイルにアクセスした
 - ファイルを変更した
@@ -1763,7 +1761,7 @@ IT admins can use the audit log search tool in the Security & Compliance Center 
 
 |日付  |セクション/アプリ |変更  |
 |:---------|:---------|:---------|
-|9/18/2018 | [Whiteboard](#whiteboard) |Whiteboard Preview is no longer in preview and has been released to general availability. Therefore, the section on Whiteboard Preview was renamed to "Whiteboard for PC, Surface Hub, and other platforms"; procedures to access, export, and delete data were removed from this section and replaced with a link to the Whiteboard support article.|
+|9/18/2018 | [Whiteboard](#whiteboard) |Whiteboard プレビューは既にプレビューではなく、リリースされて一般提供されています。したがって、Whiteboard プレビューのセクションは「PC、Surface Hub、およびその他のプラットフォーム用の Whiteboard」に変更されました。このセクションからデータのアクセス、エクスポート、および削除の手順が削除され、Whiteboard のサポート記事へのリンクに置き換えられました。|
 |2018 年 11 月 8 日 | [Workplace Analytics](#workplace-analytics) |Workplace Analytics からデータ主体を削除し、Workplace Analytics レポートからデータ主体の情報を削除する方法を示す具体的な手順を削除セクションに追加しました。|
 |2018 年 11 月 12 日| すべて| 壊れたブックマークと外部トピックへのリンクを修正しました。|
 |2019 年 1 月 9 日| StaffHub |[削除] セクションで、ユーザー アカウントが完全に削除された場合の動作の説明を更新しました。|

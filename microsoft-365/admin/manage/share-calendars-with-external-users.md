@@ -36,7 +36,7 @@ ms.locfileid: "44780063"
 予定表の共有はグローバル設定なので、管理者がテナント内のすべてのユーザーに対して有効にすることができます。 共有が有効になると、ユーザーは Outlook Web App を使用して、組織内または組織外のユーザーと予定表を共有できます。 組織内のユーザーは、自分とは別に、共有の予定表を並べて表示することができます。 組織外のユーザーには、予定表の表示に使用できる URL が送信されます。 ユーザーは、いつ共有するか、どの程度共有するか、どのような場合に自分の予定表を非公開にするかを決定します。
   
 > [!NOTE]
-> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
+> Exchange Server 2013 (オンプレミスのソリューション) を使用する組織と予定表を共有する場合は、Exchange 管理者がクラウドとの認証リレーションシップをセットアップする必要があります。これは "フェデレーション" と呼ばれるもので、ソフトウェアの最小要件を満たす必要があります。詳細については、「[共有](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx)」を参照してください。 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターを使用して予定表の共有を有効にする
 
@@ -53,5 +53,5 @@ ms.locfileid: "44780063"
     
 ## <a name="invite-people-to-access-calendars"></a>予定表にアクセスできるようにユーザーを招待する
 
-Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
+テナントで共有が有効になると、予定表の所有者は特定のユーザーを招待できます。手順については、「[予定表を共有する](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)」を参照してください。 
   

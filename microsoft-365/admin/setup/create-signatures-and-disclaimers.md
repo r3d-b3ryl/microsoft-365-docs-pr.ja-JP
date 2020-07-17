@@ -32,7 +32,7 @@ ms.locfileid: "44779883"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ 組織で送受信されるメール メッセージに、メールの署名、法的免責事項、開示説明書を追加することができます。以下に示すように、すべての送受信メッセージに適用されるように設定できます。または、特定の単語やテキスト パターンを含むメッセージなど、特定のメッセージに適用することができます。
 
  会社全体の電子メール署名の作成に関する短いビデオを見ることができます。 <br><br>
   
@@ -89,7 +89,7 @@ ms.locfileid: "44779883"
 
 9. [ **1 つを選択**] を選択し、フォールバックオプションとして [**折り返し**] を選択します。 [ **OK**] を選択します。 これは、暗号化や別のメール設定のために免責事項を追加できない場合に、メッセージ エンベロープで免責事項がラップされることを意味します。
     
-10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
+10. [ **このルールを次の重大度レベルで監査する**] はオンのままにします。次に、メッセージ ログに使用する [ **低**]、[ **中**]、または [ **高**] を選択します。 
     
 11. 先にテストしない場合は、[ **強制**] を選択して免責事項を即時に有効にします。 
     

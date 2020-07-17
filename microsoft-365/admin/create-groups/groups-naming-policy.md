@@ -69,7 +69,7 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 
 サポートされている Azure Active Directory (Azure AD) 属性は、[部署]、[会社]、[Office]、[StateOrProvince]、[CountryOrRegion]、[Title] です。
 
-- Unsupported user attributes are considered as fixed strings. E.g. "[postalCode]"
+- サポートされていないユーザー属性は、固定文字列と見なされます。例: "[postalCode]"
 
 - 拡張属性とカスタム属性はサポートされません。
 
@@ -104,7 +104,7 @@ Microsoft 365 グループの Azure AD 名前付けポリシーを使用する�
 
 ## <a name="admin-override"></a>管理者による上書き
 
-Selective administrators are exempted from these policies, across all group workloads and endpoints, so that they can create groups with these blocked words and with their desired naming conventions. The following are the list of administrator roles exempted from the group naming policy.
+管理者はブロックする単語と必要な名前付け規則を使ってグループを作成できるように、選択された管理者は、これらのポリシー、すべてのグループのワークロードおよびエンドポイントの適用から除外されます。グループの名前付けポリシーの適用から除外される管理者の役割リストは次のとおりです。
 
 - 全体管理者
 

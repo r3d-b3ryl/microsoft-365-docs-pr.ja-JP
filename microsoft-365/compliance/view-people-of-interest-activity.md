@@ -84,13 +84,13 @@ ms.locfileid: "44819017"
  
 3. 各列見出しの下にキーワード ボックスが表示されます。
   
-4. Click one of the boxes under a column header and type a word or phrase, depending on the column you're filtering on. The results will dynamically readjust to display the events that match your filter.
+4. フィルター処理の対象となる列の列見出しの下に表示されたボックスのいずれかをクリックして語句を入力します。検索結果が動的に調整され、フィルターに一致するイベントが表示されます。
   
 5. フィルターをクリアするには、フィルター ボックスの [**X**] をクリックするか、[**フィルターの非表示**] をクリックします。
 
 ## <a name="export-the-search-results-to-a-file"></a>検索結果をファイルにエクスポートする
 
-You can export the results of an audit log search to a comma separated value (CSV) file on your local computer. You can open this file in Microsoft Excel and use features such as search, sorting, filtering, and splitting a single column (that contains multi-value cells) into multiple columns.
+監査ログの検索結果をローカル コンピューター上のコンマ区切り値 (CSV) ファイルにエクスポートできます。このファイルを Microsoft Excel で開いて、検索、並べ替え、フィルター処理、複数値セルを含む単一列の複数列への分割などの機能を使用することもできます。
 
 1. 監査ログの検索を実行して、目的の結果が得られるまで検索条件を変更します。
   
@@ -101,7 +101,7 @@ You can export the results of an audit log search to a comma separated value (CS
     - **すべての結果をダウンロードします。** このオプションを選択すると、検索条件に一致するすべてのエントリが監査ログからエクスポートされます。 検索結果が大きい場合は、このオプションを選択すると、[**関心のある監査ログの**検索] ページに表示される5000結果に加えて、監査ログからすべてのエントリをダウンロードできます。 このオプションでは、監査ログから CSV ファイルに生データをダウンロードし、AuditData という名前の列に監査ログエントリからの追加情報が含まれています。 このエクスポート オプションを選択した場合、ファイルが他のオプションを選択した場合にダウンロードされるファイルよりはるかに大きくなる可能性があるため、ファイルのダウンロードには時間がかかることがあります。
     
       > [!IMPORTANT]
-      > You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If 50,000 entries are downloaded to the CSV file, you can probably assume there are more than 50,000 events that met the search criteria. To export more than this limit, try using a date range to reduce the number of audit log entries. You might have to run multiple searches with smaller date ranges to export more than 50,000 entries.
+      > 1 回の監査ログの検索で、最大 50,000 件のエントリを CSV ファイルにダウンロードできます。50,000 件のエントリが CSV ファイルにダウンロードされた場合、検索条件に一致したエントリが 50,000 件を超える可能性があります。この制限を超えてエクスポートするには、日付範囲を使用して監査ログ エントリの件数を削減してみてください。50,000 件を超えるエントリをエクスポートするには、日付範囲を狭めて検索を複数回実行することが必要な場合があります。
         
 
 3. エクスポートオプションを選択すると、CSV ファイルを開くか、[ダウンロード] フォルダーに保存するか、または特定のフォルダーに保存するかを確認するメッセージがウィンドウの下部に表示されます。

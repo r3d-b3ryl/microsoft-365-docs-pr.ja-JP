@@ -29,7 +29,7 @@ ms.locfileid: "44755238"
 
  **概要:** 選挙運動用の開発/テスト環境で、パブリック、プライベート、機密、および高機密の SharePoint Online チーム サイトを作成します。 
   
-Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.
+この記事に示した手順を使用して、「[選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)」のソリューションに対応した 4 種類の SharePoint Online チーム サイトを含む開発/テスト環境を作成してください。これらのサイトについての詳細は、トピック 10 のタイトル「**SharePoint および OneDrive for Business**」を参照してください。
   
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>フェーズ 1: 選挙運動用の開発/テスト環境を作成する
 
@@ -213,7 +213,7 @@ Use the instructions in this article to create a dev/test environment that inclu
     
 4. **[設定 - ラベルの適用]** で **[機密]** をクリックし、**[保存]** をクリックします。
     
-Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label outside the organization. This DLP policy will apply to resources in the Campaign marketing site.
+次に、機密ラベルの付いた SharePoint Online チーム サイト上のドキュメントを組織の外部と共有しようとしているユーザーに通知するデータ損失防止 (DLP) ポリシーを構成します。この DLP ポリシーは、キャンペーン マーケティング サイトのリソースに適用します。
   
 1. ブラウザーの **[Microsoft Office Home]** タブで、**[セキュリティとコンプライアンス]** タイルをクリックします。
     
@@ -245,7 +245,7 @@ Next, configure a data loss prevention (DLP) policy that notifies users when the
     
 15. 次の内容をテキスト ボックスに入力するか、貼り付けます。
     
-  - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
+  - 組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。
     
 16. **[OK]** をクリックします。
     
@@ -310,7 +310,7 @@ Next, configure a data loss prevention (DLP) policy that notifies users when the
     
 - メンバーはサイト レベルのアクセス許可を変更できません (これを実行できるのは、**[キャンペーン戦略 - 所有者]** グループのメンバーだけです)。
     
-- Other user accounts cannot access the site or its resources or request access to the site. Additional permissions to the site must be done by the global administrator or by a member of the **Campaign strategy-Owners** group.
+- その他のユーザー アカウントは、サイトやそのリソースにアクセスすることも、そのサイトへのアクセスを要求することもできません。サイトへの追加のアクセス許可は、グローバル管理者または **[キャンペーン戦略 - 所有者]** グループのメンバーが行う必要があります。
     
 次に、キャンペーン戦略チーム サイトのドキュメント フォルダーを [高機密] ラベル用に構成します。
   
@@ -322,7 +322,7 @@ Next, configure a data loss prevention (DLP) policy that notifies users when the
     
 4. **[設定 - ラベルの適用]** で **[高機密]** をクリックし、**[保存]** をクリックします。
     
-Next, configure a DLP policy that blocks users when they share a document on a SharePoint Online team site with the Highly Confidential label outside the organization. This DLP policy will apply to resources in the Campaign strategy site.
+次に、高機密ラベルの付いた SharePoint Online チーム サイト上のドキュメントをユーザーが組織の外部と共有するのをブロックする DLP ポリシーを構成します。この PLD は、キャンペーン戦略サイトのリソースに適用します。
   
 1. 必要に応じて、ローカル コンピューターのブラウザーを使用して、セキュリティ管理者または会社管理者の役割のアカウントで、管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) にサインインします。
     
@@ -356,7 +356,7 @@ Next, configure a DLP policy that blocks users when they share a document on a S
     
 16. 次の内容をテキスト ボックスに入力するか、貼り付けます。
     
-  - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
+  - 組織外のユーザーと共有するには、ファイルをダウンロードしてから開きます。[ファイル]、[文書の保護]、[パスワードを使用して暗号化] の順にクリックし、強力なパスワードを指定します。別の電子メールまたはその他の通信手段でパスワードを送信します。
     
 17. **[OK]** をクリックします。
     
@@ -406,7 +406,7 @@ Next, configure a DLP policy that blocks users when they share a document on a S
     
 19. **[選択] > [OK]** をクリックします。
 
-20. Click **Add or remove labels**. In the **Policy: Add or remove labels** pane, click **CampaignStrategy**, and then click **OK**.   
+20. **[ラベルの追加または削除]** をクリックします。**[ポリシー: ラベルの追加または削除]** ウィンドウで、**[CampaignStrategy]** をクリックしてから、**[OK]** をクリックます。   
 
 21. **[保存]** をクリックし、**[OK]** をクリックします。
   

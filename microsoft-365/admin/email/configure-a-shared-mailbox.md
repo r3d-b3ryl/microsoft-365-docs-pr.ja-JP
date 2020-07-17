@@ -118,7 +118,7 @@ ms.locfileid: "44739203"
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>送信済みメール (返信) の表示を全員に許可する
 
-By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
+既定では、共有メールボックスから送信されたメッセージは、共有メールボックスの [送信済みアイテム] フォルダーには保存されません。代わりに、メッセージを送信したユーザーの [送信済みアイテム] フォルダーに保存されます。
 
 すべてのユーザーに送信済みメールの表示を許可する場合は、管理センターで、共有メールボックスの設定を編集して、[**送信済みアイテム**の編集] を選択し \> **Edit**ます。
 

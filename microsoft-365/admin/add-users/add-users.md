@@ -78,7 +78,7 @@ ms.locfileid: "45015889"
     - [**連絡先情報**] 展開して、携帯電話番号、住所などを入力します。
     - **Password**自動生成されたパスワードを使用するか、または展開して、ユーザーに強力なパスワードを指定します。 90日後にパスワードを変更する必要があります。 または、[ **ユーザーが初回サインイン時にパスワードを変更する**] を選ぶこともできます。
     - [**役割**] このユーザーに管理者権限を割り当てる場合に展開します。
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - [**製品ライセンス**] このセクションを展開し、適切なライセンスを選択します。利用可能なライセンスを持っていない場合でも、ユーザーを追加したり、追加のライセンスを購入したりすることができます。
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ ms.locfileid: "45015889"
     - [**連絡先情報**] 展開して、携帯電話番号、住所などを入力します。
     - **Password**自動生成されたパスワードを使用するか、または展開して、ユーザーに強力なパスワードを指定します。 90日後にパスワードを変更する必要があります。 または、[ **ユーザーが初回サインイン時にパスワードを変更する**] を選ぶこともできます。
     - [**役割**] このユーザーに管理者権限を割り当てる場合に展開します。
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - [**製品ライセンス**] このセクションを展開し、適切なライセンスを選択します。利用可能なライセンスを持っていない場合でも、ユーザーを追加したり、追加のライセンスを購入したりすることができます。
 
 ::: moniker-end
 

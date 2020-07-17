@@ -51,7 +51,7 @@ ms.locfileid: "44818533"
 
 ユーザーが SharePoint Online を持つサブスクリプションから、それを持たないサブスクリプションに切り替えられた場合、 **sharepoint**タイルは Microsoft 365 メニューに表示されなくなります。
   
-However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
+ただし、切り替える前と同じ組織で新しいサブスクリプションを使う場合、ユーザーは SharePoint チーム サイトに引き続きアクセスできます。チーム サイトへの直接 URL を使って、ノートブック、ドキュメント、タスク、予定表の表示や更新ができます。
   
 > [!TIP]
 > ユーザーはサブスクリプションが切り替わる前にチーム サイトにアクセスして、ブラウザーで URL をお気に入りまたはブックマークに保存しておくことをお勧めします。

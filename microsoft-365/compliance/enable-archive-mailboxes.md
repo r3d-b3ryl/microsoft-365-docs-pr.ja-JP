@@ -46,7 +46,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     
 3. セキュリティ/コンプライアンス センターの左のウィンドウで、[**情報ガバナンス**] \> [**アーカイブ**] の順にクリックします。
     
-    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
+    **[アーカイブ]** ページが表示されます。**[アーカイブ メールボックス]** 列は、各ユーザーに対してアーカイブ メールボックスが有効か無効かを示します。 
     
 4. メールボックスの一覧で、アーカイブ メールボックスを有効にする対象のユーザーを選択します。
     
@@ -61,7 +61,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     アーカイブ メールボックスの作成にはしばらくかかる場合があります。 作成されると、選択したユーザーの詳細ウィンドウに [**アーカイブ メールボックス: 有効**] と表示されます。 詳細ウィンドウの情報を更新するには、[**更新**] ![更新アイコン](../media/O365-MDM-Policy-RefreshIcon.gif) をクリックする必要がある場合があります。 
     
 > [!TIP]
-> You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
+> Shift キーまたは Ctrl キーを使用して、アーカイブ メールボックスが無効になっている複数のユーザーを選択して、アーカイブ メールボックスを一括して有効にすることもできます。複数のメールボックスを選択した後に、詳細ウィンドウで **[有効にする]** をクリックします。 
   
 ## <a name="disable-an-archive-mailbox"></a>アーカイブ メールボックスを無効にする
   
@@ -77,7 +77,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     
 3. セキュリティ/コンプライアンス センターの左のウィンドウで、[**情報ガバナンス**] \> [**アーカイブ**] の順にクリックします。
     
-    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
+    **[アーカイブ]** ページが表示されます。**[アーカイブ メールボックス]** 列は、各ユーザーに対してアーカイブ メールボックスが有効か無効かを示します。 
     
 4. メールボックスの一覧で、アーカイブ メールボックスを無効にする対象のユーザーを選択します。
     
@@ -91,7 +91,7 @@ Office 365 でのアーカイブ (インプレース アーカイブとも呼ば
     アーカイブ メールボックスの無効化にはしばらくかかる場合があります。 無効になると、選択したユーザーの詳細ウィンドウに [**アーカイブ メールボックス: 無効]** が表示されます。 詳細ウィンドウの情報を更新するには、[**更新**] ![更新アイコン](../media/O365-MDM-Policy-RefreshIcon.gif) をクリックする必要がある場合があります。 
     
 > [!TIP]
-> You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 
+> Shift キーまたは Ctrl キーを使用して、アーカイブ メールボックスが有効になっている複数のユーザーを選択して、アーカイブ メールボックスを一括して無効にすることもできます。複数のメールボックスを選択した後に、詳細ウィンドウで **[無効にする]** をクリックします。 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Exchange Online PowerShell を使用してアーカイブ メールボックスを有効または無効にする
 

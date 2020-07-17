@@ -42,7 +42,7 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 - Teams チャネルを訪れます。
 
 > [!IMPORTANT]
-> When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
+> 有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
 
 既定では、有効期限はオフになっていることに注意してください。 管理者は、組織で使用する必要がある場合に、そのユーザーを有効にする必要があります。
 

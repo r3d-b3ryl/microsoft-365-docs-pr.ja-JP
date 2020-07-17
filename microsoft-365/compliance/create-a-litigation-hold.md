@@ -86,7 +86,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 通常、削除済みアイテムワークフローでは、ユーザーが完全に削除 (Shift + Delete) したり、[削除済みアイテム] フォルダーから削除したりすると、メールボックスアイテムは回復可能なアイテムフォルダーの削除サブフォルダーに移動されます。 削除ポリシー (削除保持アクションで構成された保持タグ) も、保持期間が経過すると、アイテムを削除サブフォルダーに移動します。 ユーザーが [回復可能なアイテム] フォルダー内のアイテムを削除したとき、またはアイテムの削除済みアイテムの保存期間が経過すると、アイテムは [回復可能なアイテム] フォルダー内の [消去] サブフォルダーに移動され、永続的な削除のマークが付けられます。 このメールボックスは、次に管理フォルダーアシスタント (MFA) によって処理されたときに Exchange から削除されます。
 
-When a mailbox is placed on Litigation Hold, items in the Purges subfolder are preserved for the hold duration specified by the Litigation Hold. The hold duration is calculated from the original date an item was received or created, and defines how long items in the Purges subfolder are held. When the hold duration expires for an item in the Purges subfolder, the item is marked for permanent deletion and will be purged from Exchange the next time the mailbox is processed by the MFA. If an indefinite hold is placed on a mailbox, items will never be purged from the Purges subfolder.
+メールボックスが訴訟ホールドの対象になっている場合、Purges サブフォルダーのアイテムは、訴訟ホールドで指定された保持期間中は保持されます。保持期間は、アイテムが受信または作成された日付から計算され、Purges サブフォルダーでのアイテムの保持期間を定義します。Purges サブフォルダーでのアイテムの保持期間を過ぎると、アイテムには完全削除のマークが付けられ、次回そのメールボックスが、MFA で処理されるときに、Exchange から消去されます。メールボックスが無期限の保持の対象になっている場合、そのアイテムは Purges サブフォルダーから消去されることはありません。
 
 次の図は、[回復可能なアイテム] フォルダー内のサブフォルダーと保持のワークフロー プロセスを示しています。
 

@@ -62,7 +62,7 @@ Microsoft 365 for business のサブスクリプションを購入した場合�
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>ユーザー以外のメールボックスのライセンスについて
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+リソース メールボックス、会議室メールボックス、共有メールボックスにライセンスを割り当てる必要はありません。ただし、記憶域のクォータが 50 ギガバイト (GB) を超えた場合は、ライセンスの割り当てが必要になります。ユーザー以外のメールボックスの詳細については、以下の記事を参照してください。
   
 - [共有メールボックスを作成する](../../admin/email/create-a-shared-mailbox.md)
 - [共有メールボックスからライセンスを削除する](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -72,7 +72,7 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 ## <a name="who-can-assign-licenses"></a>ライセンスを割り当てることができるユーザー
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+個々の管理者が実行できるライセンスに関する作業は、その役割によって異なります。以下の表は、最も一般的なオプションをまとめたものです。管理者の役割と権限の詳細については、「[Office 365 の管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   
 |**管理者ロール**|**ライセンスを割り当てる**|**ライセンスの割り当てを解除する**|**追加のライセンスを購入する**|**アカウントの削除**|
 |:-----|:-----|:-----|:-----|:-----|

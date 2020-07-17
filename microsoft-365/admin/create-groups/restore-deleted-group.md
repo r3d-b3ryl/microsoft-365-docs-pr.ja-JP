@@ -96,7 +96,7 @@ Get-AzureADMSDeletedGroup
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
+グループが正常に削除されたことを確認するには、 *Get AzureADMSDeletedGroup*  コマンドレットをもう一度実行して、グループが論理的に削除されたグループの一覧に表示されなくなったことを確認します。グループとそのすべてのデータが完全に削除されるまで 24 時間ほどかかる場合があります。 
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>Microsoft 365 グループに関する質問
 

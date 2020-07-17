@@ -27,7 +27,7 @@ ms.locfileid: "44817656"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Intune データ主体の要求
 
-The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR.
+欧州連合の[一般データ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) は、雇用主または他の種類の機関や組織 (*データ コントローラー*または単に*コントローラー*と呼ばれます) によって収集された個人データを管理する権限を個人 (同規則にでは*データ主体*と呼ばれます) に与えます。GDPR での個人データは、特定されたまたは特定可能な自然人に関連するすべてのデータと、非常に幅広く定義されています。GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。データ 主体からコントローラーに個人データへのアクション実行を求める正式な要求は、*データ主体要求*または DSR と呼ばれます。
 
 同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。  また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、"売上" として分類された特定のデータ転送の "オプトアウト/オプトイン" 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](offering-ccpa.md)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](ccpa-faq.md)」を参照してください。
 
@@ -61,29 +61,29 @@ The European Union [General Data Protection Regulation (GDPR)](https://ec.europa
 
 ### <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-intune"></a>Azure Active Directory および Microsoft Intune に関する DSR について
 
-When considering services provided to enterprise customers, execution of DSRs must always be understood within the context of a specific Azure Active Directory (AAD) tenant. Notably, DSRs are always executed within a given AAD tenant. If a user is participating in multiple tenants, it is important to emphasize that a given DSR is *only* executed within the context of the specific tenant the request was received within. This is critical to understand as it means the execution of a DSR by one enterprise customer **will not** impact the data of an adjacent enterprise customer.
+お客様企業へのサービス提供を考慮するとき、特定の Azure Active Directory (AAD) テナント内のコンテキストで常に DSR の実行について理解する必要があります。特に、DSR は特定の AAD テナントの内部で常に実行されます。あるユーザーが複数のテナントに参加する場合、要求を受け取った特定のテナントのコンテキスト内で*のみ*、その DSR が実行されることを強調することが重要です。あるお客様企業からの DSR を実行しても、隣接するお客様企業のデータは影響を**受けない**という点を理解することは重要です。
 
-The same also applies for Microsoft Intune provided to an enterprise customer: execution of a DSR against an Intune account *associated with an AAD tenant* **will only** pertain to data within the tenant. In addition, it is important to understand the following when handling Intune accounts within a tenant:
+また、企業顧客に提供される Microsoft Intune に関しても同じことが当てはまります。*ある AAD テナントに関連付けられた* Intune アカウントに対する DSR の実行では、そのテナント内のデータ**のみ**が対象になります。さらに、テナント内の Intune アカウントを扱う際には次の点を理解することが重要です。
 
-- If an Intune user creates an Azure subscription, the subscription will be handled as if it were an AAD tenant. Consequently, DSRs are scoped within the tenant as described above.
-- If an Azure subscription created via an Intune account is deleted, **it will not affect** the actual Intune account. Again, as noted above, DSRs executing within the Azure subscription are limited to the scope of the tenant itself.
+- Intune ユーザーが Azure サブスクリプションを作成すると、そのサブスクリプションは AAD テナントであるかのように扱われます。その結果、DSR の範囲は上記のようにテナント内となります。
+- Intune アカウントを介して作成された Azure サブスクリプションが削除された場合、実際の Intune アカウントには影響が**ありません**。ここでも、上記のように、Azure サブスクリプション内で実行される DSR はテナント自体の範囲に限定されます。
 
-DSRs against an Intune account itself, **outside a given tenant**, are executed via the Consumer Privacy Dashboard. Please refer to the Windows Data Subject Request Guide for further details.
+**特定のテナント外部の** Intune アカウント自体に対する DSR は、カスタマー プライバシー ダッシュボードを介して実行されます。詳しくは、Windows データ主体要求ガイドを参照してください。
 
 ## <a name="part-1-dsr-guide-for-customer-data"></a>第 1 部: 顧客データに関する DSR ガイド
 
 ### <a name="executing-dsrs-against-customer-data"></a>顧客データに対する DSR の実行
 
-Microsoft provides the ability to access, delete, and export certain Customer Data through the Azure Portal and also directly via pre-existing application programming interfaces (APIs) or user interfaces (UIs) for specific services (also referred to as *in-product experiences*). Details regarding such in-product experiences are described in the respective services' reference documentation.
+特定のお客様データにアクセスし、それを削除したりエクスポートしたりするには、Azure ポータルを使用するか、特定のサービス用の既存のアプリケーション プログラミング インターフェイス (API) やユーザー インターフェイス (UI) を直接使用することができます (後者は*製品内エクスペリエンス*とも呼ばれます)。このような製品内エクスペリエンスについての詳細は、各サービスのリファレンス ドキュメントに記載されています。
 
 >[!IMPORTANT]  
->Services supporting in-product DSRs require direct usage of the service's application programming interface (API) or user interface (UI), describing applicable CRUD (create, read, update, delete) operations. Consequently, execution of DSRs within a given service must be done in addition to execution of a DSR within the Azure Portal in order to complete a full request for a given data subject. Please refer to specific services' reference documentation for further details.
+>製品内 DSR をサポートするサービスでは、そのサービスのアプリケーション プログラミング インターフェイス (API) またはユーザー インターフェイス (UI) を直接使用し、該当する CRUD (作成、読み取り、更新、削除) 操作を記述する必要があります。したがって、特定のデータ主体の要求全体を完了するには Azure ポータル内での DSR 実行に加えて特定のサービス内での DSR の実行が必要です。詳細については、特定のサービスのリファレンス ドキュメントを参照してください。
 
 ### <a name="step-1-discover"></a>ステップ 1: 検出
 
-The first step in responding to a DSR is to find the personal data that is the subject of the request. This first step - finding and reviewing the personal data at issue - will help you determine whether a DSR meets your organization's requirements for honoring or declining a DSR. For example, after finding and reviewing the personal data at issue, you may determine the request doesn't meet your organization's requirements because doing so may adversely affect the rights and freedoms of others.
+DSR への対応の第一歩は、要求の対象となる個人データを見つけることです。この第 1 ステップ (該当する個人データの検出と確認) により、DSR の承認/拒否に関する組織の要件を DSR が満たしているかどうかを判断することができます。たとえば、該当する個人データを検出して確認した後、その要求を実行すると他者の権利や自由が侵害される恐れがあるので、その要求は組織の要件に適合しないと判断する場合があります。
 
-After you find the data, you can then perform the specific action to satisfy the request by the data subject. For details, see the following:
+データを見つけた後、データ主体による要求を満たすために特定のアクションを実行できます。詳細については、以下を参照してください。
 
 - [データ収集](https://docs.microsoft.com/intune/privacy-data-collect)
 - [データの保存と処理](https://docs.microsoft.com/intune/privacy-data-store-process)
@@ -91,7 +91,7 @@ After you find the data, you can then perform the specific action to satisfy the
 
 ### <a name="step-2-access"></a>ステップ 2: アクセス
 
-After you've found Customer Data containing personal data that is potentially responsive to a DSR, it is up to you and your organization to decide which data to provide to the data subject. You can provide them with a copy of the actual document, an appropriately redacted version, or a screenshot of the portions you have deemed appropriate to share. For each of these responses to an access request, you will have to retrieve a copy of the document or other item that contains the responsive data.
+DSR に応答する可能性のある個人データを含む顧客データを発見したら、担当者および組織は、データ主体に提供するデータを決定する必要があります。実際のドキュメントのコピー、適切に編集したバージョン、または共有できると判断した部分のスクリーン ショットを提供することができます。アクセス要求に対するこれらの各応答には、応答性の高いデータを含むドキュメントまたはその他のアイテムのコピーを取得する必要があります。
 
 データ主体にコピーを提供する際には、別のデータ主体に関する個人情報などの機密情報を削除または編集することが必要になる場合があります。
 
@@ -107,9 +107,9 @@ Microsoft Intune は、ユーザー インターフェイス (UI) または既�
 
 ### <a name="step-3-rectify"></a>ステップ 3: 修正
 
-If a data subject has asked you to rectify the personal data that resides in your organization's data, you and your organization will have to determine whether it's appropriate to honor the request. Rectifying the data may include taking actions such as editing, redacting, or removing personal data from a document or other type or item.
+データ主体が、組織のデータに存在する個人データの修正を求めた場合、担当者および組織は、その要求に応じることが適切かどうかを判断する必要があります。データの訂正には、ドキュメントやその他の種類のアイテムに含まれている個人情報の編集、修正、または削除などの操作が伴います。
 
-As a data processor, Microsoft does not offer the ability to correct system-generated logs as it reflects factual activities and constitutes a historical record of events within Microsoft services. With respect to Intune, admins can't update device or app specific information. If an end user wants to correct any personal data (like the device name), they must do so directly on their device. Such changes are synchronized the next time they connect to Intune.
+データ プロセッサとして、Microsoft はシステム生成ログを修正する機能を提供していません。これは、このログが実際のアクティビティを反映しており、Microsoft サービス内のイベントの履歴レコードを構成しているためです。Intune に関しては、管理者はデバイスまたはアプリ固有の情報を更新することができません。エンド ユーザーが個人データ (デバイス名など) を修正したい場合は、デバイス上で直接行う必要があります。このような変更は、次に Intune に接続したときに同期されます。
 
 ### <a name="step-4-restrict"></a>ステップ 4: 制限
 
@@ -117,11 +117,11 @@ As a data processor, Microsoft does not offer the ability to correct system-gene
 
 ### <a name="step-5-delete"></a>ステップ 5: 削除
 
-The "right to erasure" by the removal of personal data from an organization's Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information. For details, see [Delete end user personal data](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#delete-end-user-personal-data).
+組織の顧客データから個人データを削除することによる "消去する権利" は、GDPR における重要な保護です。個人データの削除には、監査ログ情報を除く、すべての個人データとシステム生成ログの削除が含まれます。詳細については、「[エンドユーザーの個人データの削除](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#delete-end-user-personal-data)」を参照してください。
 
 ## <a name="part-2-system-generated-logs"></a>第 2 部: システム生成ログ
 
-Audit logs provide tenant admins with a record of activities that generate a change in Microsoft Intune. Audit logs are available for many manage activities and typically create, update (edit), delete, and assign actions. Remote tasks that generate audit events can also be reviewed. These audit logs may contain personal data from users whose devices are enrolled in Intune. Admins can't delete audit logs. For details, see [Audit personal data](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#audit-personal-data).
+監査ログは、Microsoft Intune 内で変更を発生させるアクティビティの記録をテナント管理者に提供します。監査ログは、さまざまな管理アクティビティと、通常は、作成、更新 (編集)、削除、および割り当てアクションに使用できます。監査イベントを生成するリモート タスクを確認することもできます。これらの監査ログに、デバイスが Intune に登録されているユーザーからの個人データが含まれている場合があります。管理者は、監査ログを削除できません。詳細については、「[個人データの監査](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#audit-personal-data)」を参照してください。
 
 ## <a name="notify-about-exporting-or-deleting-issues"></a>エクスポートまたは削除に関する問題を通知する
 

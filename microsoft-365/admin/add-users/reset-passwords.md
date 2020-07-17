@@ -44,7 +44,7 @@ ms.locfileid: "44780567"
   
 ## <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+セルフサービスによるパスワードのリセットを設定することを強くお勧めします。この方法では、ユーザーのパスワードを手動でリセットする必要はありません。詳細については、「[Office 365 でユーザーが自分のパスワードを再設定する](let-users-reset-passwords.md)」を参照してください。
   
 ## <a name="reset-a-business-password-for-someone-else"></a>他のユーザーの勤務先パスワードをリセットする
 
@@ -118,7 +118,7 @@ We strongly recommend that you set up self-service password reset. This way you 
 ## <a name="reset-business-passwords-in-bulk"></a>ビジネスパスワードを一括でリセットする
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)
   
 関連記事: [複数のユーザー アカウントのパスワードを設定する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
   

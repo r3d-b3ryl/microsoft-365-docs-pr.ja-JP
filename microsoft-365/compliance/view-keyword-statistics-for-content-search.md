@@ -26,11 +26,11 @@ ms.locfileid: "44819037"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>コンテンツ検索結果のキーワード統計の表示
 
-After you create and run a Content Search, you can view statistics about the estimated search results. This includes a summary of the search results (similar to the summary of the estimated search results displayed in the details pane), the query statistics such as the number of content locations with items that match the search query, and the name of content locations that have the most matching items. You can display statistics for one or more content searches. This lets you to quickly compare the results for multiple searches and make decisions about the effectiveness of your search queries.
+コンテンツ検索を作成して実行した後は、予想される検索結果の統計情報を表示できます。これには、検索結果の概要 (詳細ウィンドウに表示される予想検索結果のサマリーと同様)、アイテムが検索クエリと一致したコンテンツの場所の数などのクエリ統計情報、最も多くのアイテムが一致したコンテンツの場所の名前が含まれます。1 つまたは複数のコンテンツ検索に対して統計情報を表示できます。これにより、複数の検索の結果を簡単に比較して、検索クエリの有効性を判断できます。
   
-Additionally, you can configure new and existing searches to return statistics for each keyword in a search query. This lets you compare the number of results for each keyword in a query and to compare the keyword statistics from multiple searches.
+さらに、検索クエリ内の各キーワードに対する統計情報を返すように、新規および既存の検索を構成することができます。これにより、クエリ内の各キーワードの結果の数をすばやく比較したり、複数の検索のキーワード統計を比較したりすることができます。
   
-You can also download the search statistics and keyword statistics to a CSV file. This lets you use the filtering and sorting features in Excel to compare results, and prepare reports for your search results.
+また、検索の統計情報とキーワードの統計情報を CSV ファイルにダウンロードできます。これにより、Excel のフィルター機能や並べ替え機能を使用して結果を比較し、検索結果のレポートを準備できます。
   
 ## <a name="get-statistics-for-content-searches"></a>コンテンツ検索の統計情報を取得する
 
@@ -46,19 +46,19 @@ You can also download the search statistics and keyword statistics to a CSV file
     
     **概要**
     
-    This page displays statistics similar to the ones displayed in the details pane on the **Content search** page. Statistics for all selected searches are displayed. Note that you can also re-run the selected searches from this page to update the statistics. 
+    このページには、**[コンテンツ検索]** ページの詳細ウィンドウに表示されるものと似た統計情報が表示されます。選択したすべての検索の統計情報が表示されます。このページから選択した検索を再実行し、統計情報を更新できることにご注意ください。 
     
     ![選択した検索の統計情報のサマリー](../media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
-    a.  The name of the Content Search. As previously stated, you can display and compare statistics for multiple searches.
+    a. コンテンツ検索の名前。前に説明したように、複数の検索の統計情報を表示して比較できます。
     
-    b. The type of content location that was searched. Each row displays statistics for mailboxes, sites, and public folders from the specified search.
+    b. 検索されたコンテンツの場所の種類。各行には、指定した検索に関するメールボックス、サイト、パブリック フォルダーの統計情報が表示されます。
     
-    c. The number of content locations containing items that match the search query. For mailboxes, this statistic also includes the number of archive mailboxes that contain items that match the search query.
+    c. 検索クエリに一致したアイテムが含まれるコンテンツの場所の数。メールボックスの場合、この統計情報には、検索クエリに一致するアイテムが含まれるアーカイブ メールボックスの数も含まれます。
     
-    d. The total number of items of all specified content locations that match the search query. Examples of item types include email messages, calendar items, and documents. If an item contains multiple instances of a keyword that is being searched for, it's only counted once in the total number of items. For example, if you're searching for words "stock" or "fraud" and an email message contains three instances of the word "stock", it's only counted once in the **Items** column. 
+    d. 指定したすべてのコンテンツの場所で、検索クエリと一致するアイテムの合計数。アイテムの種類の例には、メール メッセージ、予定表アイテム、ドキュメントなどが含まれます。アイテムに検索対象のキーワードの複数のインスタンスが含まれている場合は、アイテムの合計数を 1 度カウントするのみです。たとえば、「stock」または「fraud」という単語を検索しており、さらに「stock」という単語の 3 つのインスタンスがメール メッセージに含まれている場合は、**[アイテム]** 列を 1 回カウントするのみです。 
     
-    e. The total size of all items that were found in the specified content location that match the search query. 
+    e. 指定したコンテンツの場所で見つかった、検索クエリに一致するすべてのアイテムの合計サイズ。 
     
     **クエリ**
     
@@ -66,13 +66,13 @@ You can also download the search statistics and keyword statistics to a CSV file
     
     ![選択した検索の検索クエリ統計情報](../media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
-    a. The name of the Content Search that the row contains query statistics for.
+    a. その行のクエリ統計情報に対するコンテンツ検索の名前。
     
-    b. The type of content location that the query statistics are applicable to.
+    b. クエリ統計情報の対象となるコンテンツの場所の種類。
     
-    c. This column indicates which part of the search query the statistics are applicable to. **Primary** indicates the entire search query. If you use a keyword list when you create or edit a search query, statistics for each component of the query are included in this table. See the [Get keyword statistics for Content Searches](#get-keyword-statistics-for-content-searches) section in this article for more information. 
+    c. この列には、統計情報が該当する検索クエリの部分が示されます。**[プライマリ]** は、検索クエリ全体を示します。検索クエリを作成または編集するときにキーワード リストを使用した場合は、クエリの各コンポーネントの統計情報がこの表に含まれます。詳細については、この記事の「[コンテンツ検索のキーワード統計情報を取得する](#get-keyword-statistics-for-content-searches)」セクションを参照してください。 
     
-    d. This column contains the actual search query that run by the Content Search tool. Note that the tool automatically adds a few additional components to the query that you create. 
+    d. この列には、コンテンツ検索ツールによって実行された実際の検索クエリが表示されます。クエリにはツールによっていくつかの追加コンポーネントが自動的に追加されることにご注意ください。 
 
     - キーワードを指定せず、メールボックス内のすべてのコンテンツを検索すると、すべてのアイテムが返されるように、実際のキーワード クエリは `size>=0` のようになります。 
     
@@ -83,27 +83,27 @@ You can also download the search statistics and keyword statistics to a CSV file
           **NOT IsOneNotePage:1** - すべての OneNote ファイルを除外します。これは、これらのファイルは検索クエリと一致するドキュメントと重複するためです。 
 
     
-    e. The number of the content locations (specified by the ** Location type ** column) that contain items that match the search query listed in the **Query** column. 
+    e. **[クエリ]** 列で示されている検索クエリと一致するアイテムを含むコンテンツの場所 ([** コンテンツの場所 **] 列で指定されているもの) の数。 
     
-    f. The number of items (from the specified content location) that match the search query listed in the **Query** column. As previously explained, if an item contains multiple instances of a keyword that is being searched for, it's only counted once in the this column. 
+    f. **[クエリ]** 列で示されている検索クエリと一致する (指定されたコンテンツの場所の) アイテムの数。前に説明したように、アイテムに検索対象のキーワードの複数のインスタンスが含まれている場合、この列では 1 回だけカウントされます。 
     
-    g. The total size of all items that were found (in the specified content location) that match the search query in the **Query** column. 
+    g. 指定したコンテンツの場所で見つかった、**[クエリ]** 列の検索クエリに一致するすべてのアイテムの合計サイズ。 
     
     **トップの場所**
     
-    This page displays statistics about the number of items that match the search query in each content location that was searched. The top 1,000 locations are displayed. If you view statistics for multiple searches, the top 1,000 locations for each search are displayed. Note that a content location isn't included on this page if it doesn't contain any items that match the search query.
+    このページには、検索された各コンテンツの場所で検索クエリに一致したアイテムの数に関する統計情報が表示されます。上位 1,000 の場所が表示されます。複数の検索の統計情報を表示する場合、各検索の上位 1,000 の場所が表示されます。検索クエリに一致する項目が含まれない場合、このページにはコンテンツの場所が含まれないことにご注意ください。
     
     ![検索されたコンテンツの場所で見つかったアイテムの数に関する統計情報](../media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
-    a. The name of the content location.
+    a. コンテンツの場所の名前。
     
-    b. The type of content location that the location statistics are applicable to.
+    b. 場所の統計情報の対象となるコンテンツの場所の種類。
     
-    c. There are columns for each search that you're displaying statistics for. This column shows the number (and total size) of items that match the search query in each content location. Note that when you're displaying statistics for multiple searches, the "NA" in this column indicates that the content location wasn't included in that search. 
+    c. 統計情報を表示している検索ごとに列があります。この列には、各コンテンツの場所で検索クエリに一致したアイテムの数 (および合計サイズ) が表示されます。複数の検索の統計情報を表示している場合は、コンテンツの場所がその検索に含まれなかったことを示す "NA" がこの列に表示されることにご注意ください。 
 
 ## <a name="get-keyword-statistics-for-content-searches"></a>コンテンツ検索のキーワード統計情報を取得する
 
-As previous explained, the **Queries** page shows the search query and the number (and size) of items that match the query. If you use a keyword list when you create or edit a search query, you can get enhanced statistics that show how many items match each keyword or keyword phrase. This can help you quickly identify which parts of the query are the most (and least) effective. For example, if a keyword returns a large number of items, you might choose to refine the keyword query to narrow the search results. You can set up a keyword list when you create or edit a Content Search. 
+前に説明したように、[**クエリ**] ページには、検索クエリと、クエリに一致したアイテムの数 (およびサイズ) が表示されます。検索クエリを作成または編集するときにキーワード リストを使用した場合は、各キーワードやキーワード語句に一致するアイテムの数を表示する拡張統計を取得できます。これは、クエリの最も有効な (または最も有効でない) 部分をすばやく識別するのに役立ちます。たとえば、多数のアイテムを返すキーワードがある場合は、キーワード クエリを修正して検索結果を絞り込むことができます。コンテンツ検索を作成または編集するときに、キーワード リストを設定できます。 
 
 
 キーワード リストを作成して、コンテンツ検索のキーワード統計情報を表示するには:
@@ -116,13 +116,13 @@ As previous explained, the **Queries** page shows the search query and the numbe
     
     ![[キーワード リストの表示] チェック ボックスをオンにして、各行にキーワードを入力する](../media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
-    a. Click the **Show keyword list** check box. 
+    a. **[キーワード リストの表示]** チェック ボックスをオンにします。 
     
-    b. Type a keyword or keyword phase in a row in the keywords table. For example, type **budget** in the first row and then type **security** in the second row. 
+    b. キーワード テーブルの行に、キーワードまたはキーワード句を入力します。たとえば、1 行目に「**予算**」と入力し、2 行目に「**セキュリティ**」と入力します。 
     
 4. 検索して統計情報を取得するキーワードを追加した後、**[検索]** をクリックして修正した検索を実行します。 
     
-5. When the search is completed, select it in the list of searches, and then click **Search statistics** ![Search Statistics button](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png). You can also display and compare keyword statistics for multiple searches.
+5. 検索が完了したら、検索の一覧でそれを選択し、**[検索の統計]** ![[検索の統計] ボタン](../media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png) をクリックします。複数の検索のキーワード統計情報を表示して比較することもできます。
     
 6. **[検索の統計]** ページで、**[クエリ]** をクリックして選択した検索のキーワード統計情報を表示します。 
     
@@ -134,7 +134,7 @@ As previous explained, the **Queries** page shows the search query and the numbe
     
     - 各キーワードの実際の検索クエリ。これには、検索クエリのすべての条件が含まれます。 
     
-    - The complete search query (identified as **Primary** in the **Part** column) and the statistics for the complete query. Note these are the same statistics displayed on the **Summary** page. 
+    - 完全な検索クエリ (**[部分]** 列には **[プライマリ]** と表示されます) および完全なクエリの統計情報。これらは **[概要]** ページに表示されるものと同じ統計情報であることにご注意ください。 
 
 > [!NOTE]
 > 大規模なキーワード リストによって生じる問題を軽減するため、検索クエリのキーワード リストの行は最大 20 行に設定されています。

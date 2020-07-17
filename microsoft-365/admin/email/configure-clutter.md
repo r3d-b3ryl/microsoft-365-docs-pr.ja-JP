@@ -38,7 +38,7 @@ Exchange PowerShell の使用の詳細については、 [「Powershell を使�
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Exchange PowerShell を使用して低優先メール機能を有効にする
 
-You can enable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view Clutter settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+[Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) コマンドレットを実行することで、メールボックスの低優先メールを手動で有効にできます。組織のメールボックスの低優先メール設定を表示することもできます。 [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) コマンドレットを実行します。 
   
 アリー ベリューという名前のユーザーの低優先メールをオンにする
     
@@ -47,7 +47,7 @@ You can enable Clutter manually for a mailbox by running the [Set-Clutter](https
 
 ## <a name="turn-clutter-off-using-exchange-powershell"></a>Exchange PowerShell を使用して低優先メールをオフにする
 
-You can disable Clutter manually for a mailbox by running the [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) cmdlet. You can also view **Clutter** settings for mailboxes in your organization by running the [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) cmdlet. 
+[Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) コマンドレットを実行することで、メールボックスの低優先メールを手動で無効にできます。組織のメールボックスの **低優先メール**設定を表示することもできます。[Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759) コマンドレットを実行します。 
   
 アリー ベリューという名前のユーザーの低優先メールをオフにする
     

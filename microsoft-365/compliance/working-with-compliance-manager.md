@@ -139,11 +139,11 @@ ms.locfileid: "45023394"
 3. ドキュメントを開いてレポート データを確認します。
 
 > [!NOTE]
-> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+> このデータは、実施項目の割り当て履歴の変更状態を保持および表示する、履歴のレポートではありません。生成されたレポートは、レポート実行時 (レポートに書き込まれた日付と時刻のタイムスタンプ) に割り当てられたコントロールの実施項目のスナップショットです。たとえば、後で実施項目の再割り当てをすると、同じユーザー用にこのレポートが再度生成される場合は、スナップショット レポート データが異なります。
   
 #### <a name="reassign-action-items"></a>実施項目の再割り当て
 
-This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+この機能で、組織はユーザー アカウントのアクティブまたは未処理の依存関係を削除することができます。すべての実施項目の所有権 (アクティブと完了済みの実施項目の両方が含まれます) を、返されたユーザー アカウントから、以下で選択した新しいユーザーに再割り当てすると削除できるようになります。この操作では、返されたユーザー アカウントのドキュメントのアップロード履歴は変更されません。
   
  他のユーザーに実施項目を再割り当てするには、次のようにします。
   
@@ -156,9 +156,9 @@ This function enables an organization to remove any active or outstanding depend
 4. 続行するには、[ **OK**] を選択します。そうでない場合は [**キャンセル**] を選択
     
 > [!NOTE]
-> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+> すべての実施項目 (アクティブと完了済みの両方) が新しく選択したユーザーに割り当てられますが、この操作はドキュメントのアップロード履歴には反映されません。前に割り当てられたユーザーによってアップロードされたドキュメントには、前に割り当てられたユーザーの日時と名前が引き続き表示されます。 
   
-Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+前に割り当てられたユーザーを削除するためにドキュメントのアップロード履歴を変更するには、手動でプロセスを実行する必要があります。その場合、管理者は次のようにする必要があります。
   
 1. 以前にダウンロードしたエクスポート レポートを開きます。
   
@@ -174,7 +174,7 @@ Changing the document upload history to remove the previously assigned user will
   
 #### <a name="delete-user-data-history"></a>ユーザー データの履歴の削除
 
-This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+この操作を行うと、返されたユーザーに割り当てられたすべての実施項目におけるコントロールの実施項目は '割り当てなし' の設定になります。また、返されたユーザーによってアップロードされたドキュメントに関する場合で、値によってアップロードされたものは '削除されたユーザー' として設定されます。
   
  ユーザー アカウントの実施項目とドキュメントのアップロード履歴を削除するには、次のようにします。
   

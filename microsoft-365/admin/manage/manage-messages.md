@@ -29,7 +29,7 @@ ms.locfileid: "45005824"
 ---
 # <a name="manage-messages-in-message-center"></a>メッセージ センターでメッセージを管理する
 
-Message center posts are important announcements about new and changed features. This article provides more information about the things you can do with messages to help with change management in your organization.
+メッセージ センターの投稿は、新機能や変更された機能に関する重要なお知らせです。この記事では、メッセージで行うことができる操作の詳細について説明します。こうした操作は、組織内での変更管理に役立ちます。
   
 ## <a name="read-a-message"></a>メッセージの閲覧
 

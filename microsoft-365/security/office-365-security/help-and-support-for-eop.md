@@ -43,7 +43,7 @@ Microsoft からサポートを受けられるようにするには、Microsoft 
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft プレミア サポート サブスクライバーのサポート
 
-If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
+EOP のユーザーで、Microsoft プレミア サポート契約もしている場合は、通常の Microsoft プレミア サポート チャネルでサポートを受けられます。このため、プレミアのテクニカル アカウント マネージャー (TAM) やケースの送信など、プレミア サポートのお客様に提供されているすべてのプロセスとリソースをご利用いただけます。Microsoft Online Services のプレミア サポートは、プレミア サポートの枠組みを社内向け製品からオンライン サービスにまで拡大し、すべての製品とサービスで一貫性のあるサポート環境を提供しています。このサービスによって、お客様が問題を速やかに解決できるようにするとともに、IT インフラストラクチャのさまざまなコンポーネントに対するサポートの管理作業を簡略化します。
 
 プレミアサポートが IT 投資からの価値を最大化するためにどのように役立つかについて詳しくは、「[プレミアサポート (パートナー向け](https://partner.microsoft.com/support/microsoft-services-premier-support))」を参照してください。
 

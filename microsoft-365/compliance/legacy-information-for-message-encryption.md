@@ -179,11 +179,11 @@ S/MIME は、基本的に、クライアント側の暗号化テクノロジで�
   
  **Q. 返信や転送されたメッセージは暗号化されますか。**
   
-Yes. Responses continue to be encrypted throughout the duration of the thread.
+はい。返信はスレッド期間の間、暗号化されます。
   
  **Q. Office 365 のメッセージの暗号化はローカライズを行いますか?**
   
-Incoming email and HTML content is localized based on sender email settings. The viewing portal is localized based on recipient's browser settings. However, the actual body (content) of encrypted message isn't localized.
+受信電子メールと HTML コンテンツは、送信者の電子メール設定に基づいてローカライズされます。表示ポータルは、受信者のブラウザー設定に基づいてローカライズされます。ただし、暗号化されたメッセージの本文 (コンテンツ) はローカライズされません。
   
  **Q: Office 365 メッセージの暗号化に使用される暗号化方法は何ですか。**
   
@@ -191,13 +191,13 @@ Office 365 メッセージの暗号化は、暗号化インフラストラクチ
   
 - Microsoft Azure RMS を使用してキーを取得する場合、暗号化モード2が使用されます。 暗号化モード 2 は、AD RMS 暗号実装を更新して強化した方式です。 この方式は署名と暗号化に RSA 2048 をサポートし、署名に関しては SHA-256 もサポートします。
 
-- If you use Active Directory (AD) RMS to obtain the keys, either Cryptographic Mode 1 or Cryptographic Mode 2 is used. The method used depends on your on-premises AD RMS deployment. Cryptographic Mode 1 is the original AD RMS cryptographic implementation. It supports RSA 1024 for signature and encryption, and supports SHA-1 for signature. This mode continues to be supported by all current versions of RMS.
+- Active Directory (AD) RMS を使用してキーを取得する場合は、暗号化モード 1 または暗号化モード 2 が使用されます。使用される方法は、社内 AD RMS 展開によって異なります。暗号化モード 1 は、元来の AD RMS 暗号実装です。この方式は署名と暗号化に RSA 1024 をサポートし、署名に関しては SHA-1 もサポートします。このモードは、引き続き RMS の現在のすべてのバージョンでサポートされています。
 
 詳細については、「 [AD RMS 暗号化モード](https://go.microsoft.com/fwlink/p/?LinkId=398616)」を参照してください。
   
  **Q: 暗号化されたメッセージが Office365@messaging.microsoft.com から送られたことを示しているのはなぜ**ですか?
   
-When an encrypted reply is sent from the encryption portal or through the OME Viewer app, the sending email address is set to Office365@messaging.microsoft.com because the encrypted message is sent through a Microsoft endpoint. This helps to prevent encrypted messages from being marked as spam. The displayed name on the email and the address within the encryption portal aren't changed because of this labeling. Also, this labeling only applies to messages sent through the portal, not through any other email client.
+暗号化された返信が暗号ポータルから、または OME ビューアー アプリを介して送信されるとき、送信元電子メール アドレスは Office365@messaging.microsoft.com に設定されます。暗号化メッセージは Microsoft エンドポイントを介して送信されるためです。これにより、暗号化されたメッセージがスパムとしてマークされるのを回避できます。このラベルがあるため、暗号化ポータル内の電子メールとアドレスの表示名が変更されることはありません。また、このラベルが適用されるのは、ポータルを介して送信されるメッセージだけで、他の電子メール クライアントを介して送信されるメッセージには適用されません。
   
  **Q: Exchange Hosted Encryption (EHE) サブスクライバーです。Office 365 メッセージの暗号化へのアップグレードの詳細については、どこから入手できますか。**
   

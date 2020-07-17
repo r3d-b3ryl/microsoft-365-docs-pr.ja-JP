@@ -241,9 +241,9 @@ Microsoft 365 サブスクリプションには、データとユーザーを保
 
 - 最初の30日間に実行するタスク。 これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 
-- Tasks to accomplish in 90 days. These take a bit more time to plan and implement but greatly improve your security posture.
+- 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
 
-- Beyond 90 days. These enhancements build in your first 90 days work.
+- 90 日以降。最初の 90 日間の作業で保護が強化されます。
 
 ## <a name="see-also"></a>関連項目:
 

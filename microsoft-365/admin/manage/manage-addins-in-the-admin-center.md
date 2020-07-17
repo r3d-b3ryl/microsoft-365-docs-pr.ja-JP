@@ -128,7 +128,7 @@ Office ストアの無効化のサポートは、次のバージョンで利用�
 
 アドインを展開すると、エンドユーザーは Office アプリケーションでアドインを使い始めることができます (「 [Office アドインの使用を開始](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)する」を参照してください)。 アドインは、アドインがサポートするすべてのプラットフォームに表示されます。
   
-If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
+アドインがアドイン コマンドをサポートする場合、そのコマンドは Office のリボンに表示されます。次の例では、[ **引用の検索** ] コマンドが [ **引用** ] アドインで表示されています。 
 
 ![検索引用を含む Office リボン](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

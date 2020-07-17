@@ -97,7 +97,7 @@ ms.locfileid: "44817756"
 5. 詳細ウィンドウの **[結果をコンピューターにエクスポートする]** で、**[エクスポートの開始]** をクリックします。
     
     > [!NOTE]
-    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the export again after the results are updated. 
+    > 検索の結果が 7 日よりも前の場合は、検索結果を更新するように求められます。この場合は、エクスポートをキャンセルして、選んだ検索の詳細ウィンドウの **[検索結果の更新]** をクリックして、結果が更新された後で、エクスポートをもう一度開始します。  
   
 6. [**検索結果のエクスポート**] ページの [**出力オプション**] で、次のいずれかのオプションを選択します。
     

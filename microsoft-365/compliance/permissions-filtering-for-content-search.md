@@ -80,7 +80,7 @@ ms.locfileid: "44818776"
   
 エラーが表示された場合は、次の要件を確認します。
   
-- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
+- よく起きる問題がパスワードの入力ミスです。もう一度 2 つのステップを実行します。特に、ステップ 1 ではユーザー名とパスワードを慎重に入力します。
     
 - 使用するアカウントに、セキュリティ/コンプライアンス センターにアクセスする権限があることを確認してください。 詳細については、｢[セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
     
@@ -150,7 +150,7 @@ New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com 
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
 
-This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
+この例では、"US Discovery Managers" 役割グループのメンバーが、米国内のメールボックスにのみ、すべてのコンテンツ検索アクションを実行できます。このフィルターには、ISO 3166-1 で米国を表す 3 桁の数値の国コードが含まれています。
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All

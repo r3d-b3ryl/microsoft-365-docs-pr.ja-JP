@@ -24,7 +24,7 @@ ms.locfileid: "44679040"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 社の Microsoft 365 Apps for enterprise の展開
 
-Contoso upgraded their PCs to Windows 10 Enterprise and Microsoft 365 Apps for enterprise to enable more effective collaboration, better security, and a more modern desktop experience. After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:
+Contoso 社では自社の PC を Windows 10 Enterprise と Microsoft 365 Apps for enterprise にアップグレードして、これまで以上に効果的な共同作業、セキュリティの向上、および最新のデスクトップ エクスペリエンスを実現しました。インフラストラクチャとビジネス ニーズを評価した後、Contoso 社は展開に向けて、以下の重要な要件を特定しました。
 
 - すべての PC が Microsoft 365 Apps for enterprise を実行する必要があります
 - 可能な場合は、既存の管理ツールとインフラストラクチャを使用します
@@ -33,7 +33,7 @@ Contoso upgraded their PCs to Windows 10 Enterprise and Microsoft 365 Apps for e
 
 ## <a name="deployment-tools"></a>展開ツール
 
-Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and Microsoft 365 Apps for enterprise with Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
+Contoso 社では自社の要件に基づいて、Configuration Manager (Current Branch) を使用した Windows 10 Enterprise と Microsoft 365 Apps for enterprise の展開を選択しました。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Office の展開と管理をより簡単で効率的にするために、以下の機能も組み込まれています。
 
 - ピア キャッシュ。遠隔地のデバイスに展開する際にネットワーク キャパシティが限られている場合に役立ちます
 - Office クライアント管理ダッシュボード。Office の展開と更新の監視を容易にし、管理者が最新の展開と管理機能にアクセスできるようにします
@@ -44,14 +44,14 @@ Configuration Manager のほかに、Contoso 社では[準備ツールキット]
 
 ## <a name="managing-the-deployment-and-updates"></a>展開および更新プログラムの管理
 
-Microsoft 365 Apps for enterprise has a new release model: Office as a service. The service model makes it easy to stay up to date with new features, but often requires a change in approach for IT departments in how new releases are deployed and tested. To minimize any compatibility issues and to ensure their computers stayed up to date, Contoso deployed Windows and Office in two stages: 
+Microsoft 365 Apps for enterprise には、サービスとしての Office という新しいリリース モデルがあります。このサービス モデルにより、容易に新機能を最新のものにできますが、新リリースの展開やテストの方法に関する IT 部門のアプローチに対して、頻繁に変更が求められることになります。互換性の問題を最小限に抑え、コンピューターの最新状態を維持するため、Contoso 社では Windows と Office を次の 2 段階で展開しました。 
 
-- For the first stage, they deployed Microsoft 365 Apps for enterprise to a small set of representative devices across the organization. This pilot group was used to test apps, add-ins, and hardware with Microsoft 365 Apps for enterprise
+- 最初の段階では、組織全体にわたって、少数の代表的なデバイスに Microsoft 365 Apps for enterprise を展開しました。このパイロット グループは、Microsoft 365 Apps for enterprise でのアプリ、アドイン、およびハードウェアのテストに使用されました。
 - 4 か月後、パイロット グループのアプリ、アドイン、ハードウェアに関する重要な問題を解決した後、Contoso 社では Microsoft 365 Apps for enterprise を組織内の残り (広範グループ) のデバイスに展開しました。 
 
-Instead of managing updates to Office with Configuration Manager, Contoso enabled automatic updates from the cloud. Cloud-based updates reduced their administrative overhead while ensuring the devices stayed up to date. 
+Configuration Manager を使用して Office の更新を管理する代わりに、Contoso 社ではクラウドからの自動更新を有効にしました。クラウドベースの更新は、デバイスを最新の状態に保ちながら、管理上のオーバーヘッドを削減しました。 
 
-Contoso followed the same two-stage approach for feature updates that they used for deploying Office: devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
+Contoso 社では Office の展開に使用した 2 段階アプローチ、つまりパイロット グループ内のデバイスが組織の残り (広範グループ) のデバイスよりも 4 か月早く機能の更新を受け取る方法と同じアプローチを機能の更新にも使用しました。これを Office で可能にするために、Contoso 社では 2 つの推奨される[更新チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels)を使用しました。 
 
 - パイロット グループへの更新向け半期エンタープライズ チャネル (プレビュー) 
 - 広範グループ用の半期エンタープライズ チャネル。 
@@ -64,9 +64,9 @@ Office の展開を完了するために、Contoso 社では Microsoft のベス
 
 1. 展開の前に準備ツールキットを使用して、アプリと Office アドインをテストし、Microsoft 365 Apps for enterprise との互換性を評価しました。
 2. Configuration Manager では、Contoso 社はクライアント デバイス上でピア キャッシュを有効にしました。これは遠隔地にあるクライアントのデバイスに展開する際にネットワーク キャパシティが限られている場合に役立ちます。 
-3. They defined two deployment groups as device collections in Configuration Manager: a pilot group and a broad group. The pilot group, which included a small set of representative devices across the organization, was used to do additional testing of apps, add-ins, and hardware with Windows 10 Enterprise and Microsoft 365 Apps for enterprise. 
-4. They created deployment packages for Office using the Office Client Management dashboard and the Office 365 Installer wizard, both of which are part of the Configuration Manager console. They built two Microsoft 365 Apps for enterprise packages, one for the pilot group on the Semi-Annual Enterprise Channel (Preview) and one for the broad group on the Semi-Annual Enterprise Channel. 
-5. As part of each Office package, they included English, French, and German Language packs. If a device required a language not included in the Office package, it was automatically downloaded from the Office Content Delivery Network (CDN).
+3. Configuration Manager で、パイロット グループと広範グループの 2 つの展開グループをデバイス コレクションとして定義しました。パイロットグループ (組織全体にわたる少数の代表的なデバイスを含む) は、Windows 10 Enterprise と Microsoft 365 Apps for enterprise を使用してアプリ、アドイン、およびハードウェアの追加テストを行うために使用されました。 
+4. Office クライアント管理ダッシュボードと Office 365 インストーラー ウィザード (いずれも Configuration Manager コンソールの一部) を使用して、Office の展開パッケージを作成しました。2 つの Microsoft 365 Apps for enterprise パッケージを作成しました (1 つは半期エンタープライズ チャネル (プレビュー) のパイロット グループ用、1 つは半期エンタープライズ チャネルの広範グループ用)。 
+5. 各 Office パッケージの一部として、英語、フランス語、ドイツ語の言語パックが含まれていました。デバイスに、Office パッケージに含まれていない言語が必要な場合は、Office コンテンツ配信ネットワーク (CDN) から自動的にダウンロードされました。
 6. Office パッケージの組み込み機能を使用して、Microsoft 365 Apps for enterprise のインストール前に既存の MSI バージョンの Office をすべて自動的に削除しました。
 7. Configuration Manager では、Windows と Office パッケージをネットワーク上の配布ポイントに展開し、Configuration Manager の展開タスク シーケンスを実行して、パイロットの Microsoft 365 Apps for enterprise パッケージをパイロット グループに展開しました。
 8. パイロット グループとの互換性問題を解決した後、Contoso 社ではタスク シーケンスを実行して、さまざまな Microsoft 365 Apps for enterprise パッケージを広範囲のグループに展開しました。

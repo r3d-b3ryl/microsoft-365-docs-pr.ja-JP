@@ -160,9 +160,9 @@ Office 365 または Microsoft 365 コンプライアンスセンターのセキ
 
 ## <a name="more-information"></a>詳細情報
 
-- **Why create an eDiscovery Administrator?** As previously explained, an eDiscovery Administrator is member of the eDiscovery Manager role group who can view and access all eDiscovery cases in your organization. This ability to access all the eDiscovery cases has two important purposes: 
+- **電子情報開示管理者を作成する理由。** 前述のとおり、電子情報開示管理者は、組織内のすべての電子情報開示ケースを表示したり、これらのケースにアクセスしたりできる、電子情報開示マネージャー役割グループのメンバーです。すべての電子情報開示ケースにアクセスする能力には、2 つの重要な目的があります。 
 
-  - If a person who is the only member of an eDiscovery case leaves your organization, no one (including members of the Organization Management role group or another member of the eDiscovery Manager role group) can access that eDiscovery case because they aren't a member of a case. In this situation, there would be no way to access the data in the case. But because an eDiscovery Administrator can access all eDiscovery cases in the organization, they can view the case and add themselves or another eDiscovery manager as a member of the case.
+  - 電子情報開示のケースの唯一のメンバーが組織を退職すると、どのユーザー (組織管理役割グループのメンバー、または電子情報開示マネージャー役割グループの他のメンバーなど) も、ケースのメンバーではないため、その電子情報開示のケースにアクセスできなくなります。この状況では、ケースのデータにアクセスする方法はありません。しかし、電子情報開示管理者は、組織内のすべての電子情報開示のケースにアクセスできるため、ケースを表示して、自分自身や別の電子情報開示マネージャーをケースのメンバーとして追加することができます。
 
   - 電子情報開示管理者は、すべての主要な電子情報開示および上級電子情報開示のケースを表示してアクセスできるため、すべてのケースと関連するコンプライアンス検索を監査して監視することができます。 これは、コンプライアンス検索または電子情報開示ケースの誤った使い方の防止に役立ちます。 電子情報開示管理者はコンプライアンス検索の結果に含まれる潜在的な機密情報にアクセスできるため、電子情報開示管理者となるユーザーの数を制限する必要があります。
 

@@ -34,7 +34,7 @@ Microsoft 365 では、データ損失防止 (DLP) ポリシーを使用して�
   
 たとえば、組織において、Windows Server FCI を使用して社会保障番号などの個人情報 (PII) が含まれるドキュメントを識別し、ドキュメント内で検出された個人情報の種類と検出回数に基づいて [**個人情報**] プロパティを [**高**]、[**中**]、[**低**]、[**公開**]、または [**個人情報ではない**] に設定することによってドキュメントの分類を行っている場合があります。 Microsoft 365 では、このプロパティが設定されているドキュメントを特定の値 (**高**、**中**など) に識別する DLP ポリシーを作成し、それらのファイルへのアクセスをブロックするなどの処理を実行できます。 プロパティが [**低**] に設定されている場合には (電子メールの通知送信などの) 異なるアクションを実行する別のルールを同じポリシーに含めることができます。 このようにして、DLP は Windows Server FCI と統合され、Windows Server ベースのファイルサーバーから Microsoft 365 にアップロードまたは共有される Office ドキュメントを保護するのに役立ちます。
   
-A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy — for example, if you want a rule that blocks access to the document for external users when the **Customer** field contains **Contoso**.
+DLP ポリシーは、特定のプロパティの名前と値のペアを探すだけです。対象プロパティに SharePoint 検索の対応する管理プロパティが含まれる場合には、任意のドキュメント プロパティを使用できます。たとえば、SharePoint のサイト コレクションが [**旅行レポート**] という名前のコンテンツの種類を使用し、[**顧客**] という必須フィールドが指定されているとします。ユーザーが旅行レポートを作成するたびに、顧客名を入力する必要が生じます。このプロパティの名前と値のペアを DLP ポリシーでも使用できます。たとえば、[**顧客**] フィールドに [**Contoso**] が含まれるときに外部ユーザーによるドキュメントへのアクセスをブロックするルールを作成できます。
   
 特定の Microsoft 365 ラベルを含むコンテンツに DLP ポリシーを適用する場合は、ここに記載されている手順に従ってはいけないことに注意してください。 代わりに、 [DLP ポリシーの条件として保持ラベルを使用](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)する方法について説明します。
   
@@ -42,7 +42,7 @@ A DLP policy simply looks for a specific property name/value pair. Any document 
 
 DLP ポリシーで Windows Server FCI プロパティまたは他のプロパティを使用するには、その前に、SharePoint 管理センターで管理プロパティを作成する必要があります。 理由は次のとおりです。
   
-In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
+例
   
 DLP は検索クローラーを使用してサイト上の機密情報を識別および分類し、その機密情報を検索インデックスのセキュリティで保護された部分に保存するため、これは重要です。 Office 365 にドキュメントをアップロードすると、SharePoint は、ドキュメントプロパティに基づいて、クロールされたプロパティを自動的に作成します。 ただし、DLP ポリシーで FCI またはその他のプロパティを使用するには、クロールされたプロパティを管理プロパティにマッピングして、そのプロパティを持つコンテンツがインデックスに保持されるようにする必要があります。
   
@@ -66,7 +66,7 @@ DLP は検索クローラーを使用してサイト上の機密情報を識別�
     
     ![[新しい管理プロパティ] ボタンが強調表示されている[プロパティ管理] ページ](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
-5. Enter a name and description for the property. This name is what will appear in your DLP policies.
+5. プロパティの名前と説明を入力します。この名前が、DLP ポリシーに表示されます。
     
 6. [**型**] で [**テキスト**] を選択します。 
     
@@ -128,7 +128,7 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
 
 前のセクションの手順を実行すると、そのプロパティを使用してコンテンツを迅速に検出する DLP ポリシーが作成されます。ただし、そのコンテンツが新しくアップロードされた場合 (コンテンツのインデックスが作成されます)、またはそのコンテンツが古く、編集された (コンテンツの再インデックスが作成される) 場合のみです。
   
-To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled based on a defined crawl schedule. The crawler picks up content that has changed since the last crawl and updates the index. If you need your DLP policy to protect content before the next scheduled crawl, you can take these steps.
+対象プロパティが含まれるコンテンツを検出するには、ライブラリ、サイト、サイト コレクションの再インデックス付けを手動で要求し、対象プロパティが含まれるコンテンツすべてを DLP ポリシーが認識するようにできます。SharePoint Online では、定義されているクロール スケジュールに基づいてコンテンツは自動的にクロールされます。クローラーは、最後にクロールされて以降に変更が加えられたコンテンツを取得して、インデックスを更新します。スケジュールされたクロールが次に実行される前にコンテンツを保護する DLP ポリシーが必要となる場合には、以下の手順を実行できます。
   
 > [!CAUTION]
 > サイトを再インデックス付けすると、検索システムで多大な負荷が発生することがあります。 シナリオで絶対に必要でない限り、サイトを再インデックス化しないでください。 

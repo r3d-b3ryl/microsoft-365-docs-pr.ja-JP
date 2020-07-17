@@ -26,7 +26,7 @@ ms.locfileid: "44936610"
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>詳細な電子情報開示で関連性モジュールを使用する (クラシック)
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Advanced eDiscovery を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、Advanced eDiscovery をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 
   
 詳細な電子情報開示では、関連性に関するトレーニングと、ケースに関連するファイルのレビューが関連モジュールに含まれています。 関連性ワークフローが表示され、次のように説明されています。
   

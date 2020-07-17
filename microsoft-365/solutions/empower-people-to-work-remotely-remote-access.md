@@ -19,6 +19,7 @@ ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
 ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
 ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44844980"

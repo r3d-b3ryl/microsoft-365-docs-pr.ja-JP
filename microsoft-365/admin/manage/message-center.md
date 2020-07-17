@@ -161,10 +161,10 @@ ms.locfileid: "44780087"
 
 #### <a name="display-messages-in-your-preferred-language"></a>任意の言語でメッセージを表示する
   
-We use machine translation to automatically display messages in your preferred language. Read [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more information on how to set your language.
+機械翻訳を利用し、ユーザーの優先言語でメッセージを自動表示しています。言語の設定方法については、「[メッセージ センターの投稿の言語の翻訳](language-translation-for-message-center-posts.md)」を参照してください。
   
 > [!NOTE]
-> The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language. 
+> 週刊ダイジェストやメールで送信されるその他の投稿は英語でのみ提供されます。受信後、[Outlook 用翻訳ツール](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa)を利用してメッセージを自分の優先言語で読むことができます。 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>メッセージセンターにアクセスできない管理者の役割
 

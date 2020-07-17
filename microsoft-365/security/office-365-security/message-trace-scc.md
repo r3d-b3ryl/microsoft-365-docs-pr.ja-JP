@@ -339,7 +339,7 @@ ms.locfileid: "44819342"
 |`SFV=BLK`|ブロックする差出人から発信されたメッセージであるため、フィルター処理が省略され、メッセージはブロックされました。|
 |`SFV=SKS`|スパム対策フィルターによって処理される前に、メッセージがスパムとしてマークされました。 これには、メッセージを自動的にスパムメールとしてマークし、他のすべてのフィルター処理を省略するトランスポート ルールに一致するメッセージが含まれます。|
 |`SCL=<number>`|さまざまな SCL の値とその意味の詳細については、「[Spam Confidence Level](spam-confidence-levels.md)」を参照してください。|
-|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
+|`PCL=<number>`|メッセージの Phishing Confidence Level (PCL) 値。これらの値は、「[Spam Confidence Level](spam-confidence-levels.md)」に記載されている SCL 値と同様に解釈できます。  |
 |`DI=SB`|メッセージの送信者はブロックされました。|
 |`DI=SQ`|メッセージは検疫されました。|
 |`DI=SD`|メッセージは削除されました。|

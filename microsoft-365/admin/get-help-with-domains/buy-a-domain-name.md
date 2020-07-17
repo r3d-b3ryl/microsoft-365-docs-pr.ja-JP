@@ -88,9 +88,9 @@ ms.locfileid: "44780195"
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>ドメインを別のドメイン レジストラーに移行する
 
-If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
+必要な DNS レコードの一部をサポートしていないプロバイダーがドメインを管理している場合は、ドメインを別のレジストラーに移行することができます。ドメインを移行するときには、ドメイン名の更新と保持のために支払先を変更します。
   
-Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
+ドメインの移行先レジストラーに移行をリクエストします。 **DNS の移行**などのオプションについては、そのレジストラーの Web サイトでお確かめください。レジストラーでの変更後、インターネットに更新が行き渡るまでには数日かかることがあります。
  
 
 
@@ -100,7 +100,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+専用ドメインをまだ持っていない場合は、ドメイン名レジストラー、ドメイン リセラー、現在のインターネット プロバイダーなどからオンラインで簡単に購入できます。21Vianet が運営する Office 365 にサインアップすると、たとえば、contoso.partner.onmschina.cn のようなドメイン名を与えられますが、fourthcoffee.com のようなカスタム ドメイン名を使うこともできます。
   
 Microsoft 365 でドメインをセットアップするには、ドメインを所有しており、ドメインの DNS レコードの一部を変更する必要があります。
   

@@ -99,7 +99,7 @@ Microsoft 365 エンタープライズテスト環境のアカウントに対し
     
 7. [**手順 3: 既存のアプリケーションを使用**したままにする] ページで、[**完了**] をクリックします。
     
-8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
+8. User 2 アカウントでサインインするのが今回で初めての場合、パスワードの変更を求められます。元のパスワードと、新しいパスワードを 2 回入力して、**[パスワードを更新してサインイン]** をクリックします。新しいパスワードを安全な場所に記録します。
     
     ブラウザーの [ **Microsoft Office Home** ] タブに、ユーザー2の office ポータルが表示されます。
 

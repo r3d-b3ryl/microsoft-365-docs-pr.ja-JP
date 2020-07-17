@@ -43,7 +43,7 @@ Microsoft は、受信拒否リストを使って、スパム、スプーフィ�
 
 1. Web ブラウザーで、[https://sender.office.com](https://sender.office.com) に移動します。
 
-2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
+2. ページ上の指示に従います。エラー メッセージを受信したメール アドレス、エラー メッセージで特定されている IP アドレスを使っていることを確認してください。1 回のアクセスにつき、1 つのメール アドレス、1 つの IP アドレスのみ入力できます。
 
 3. [ **保存**] をクリックします。
 

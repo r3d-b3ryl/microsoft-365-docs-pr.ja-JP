@@ -54,7 +54,7 @@ ms.locfileid: "44818766"
     
 ## <a name="get-licenses-and-permissions"></a>ライセンスとアクセス許可を取得する
 
-- To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced eDiscovery standalone license. Administrators and compliance officers who are assigned to cases and use Advanced eDiscovery to analyze data don't need an E5 license. 
+- Advanced eDiscovery を使用してユーザーのデータを分析するには、ユーザー (データの保管担当者) に Office365 E5 ライセンスが割り当てられている必要があります。または、Office365 E1 または E3 ライセンスを持つユーザーに Advanced eDiscovery 単体のライセンスを割り当てることもできます。ケースに割り当てられ、Advanced eDiscovery を使用してデータを分析する管理者および法令遵守責任者には E5 ライセンスは不要です。 
     
 - 高度な電子情報開示の検索結果を準備するには、電子情報開示マネージャーまたはセキュリティ & コンプライアンスセンターの電子情報開示管理者である必要があります。 電子情報開示マネージャーは、電子情報開示マネージャー役割グループのメンバーです。 また、電子情報開示管理者は、電子情報開示マネージャー役割グループのメンバーですが、さらに電子情報開示特権が割り当てられています。 電子情報開示管理者のアクセス許可を割り当てる手順については、「[電子情報開示のケース](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members)」のステップ1を参照してください。
     

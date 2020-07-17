@@ -46,7 +46,7 @@ Exchange Online 管理者は、組織内のメールボックスに対して S/M
 
 3. Exchange Online 組織の場合は、適切なバージョンの Azure AD Connect を使用して、ユーザー証明書を AD DS から Azure Active Directory に同期させます。 次に、これらの証明書は Azure Active Directory から Exchange Online のディレクトリに同期され、受信者へのメッセージの暗号化に使用されます。
 
-4. Set up a virtual certificate collection in order to validate S/MIME. This information is used by Outlook on the web when validating the signature of an email and ensuring that it was signed by a trusted certificate.
+4. S/MIME を検証するためには、仮想の証明書のコレクションを設定します。この情報は、電子メールの署名を検証する際に Web 上の Outlook により使用され、そのメールが信頼される証明書により署名されたことが確認されます。
 
 5. S/MIME を使用する Outlook エンド ポイントまたは EAS エンド ポイントを設定します。
 

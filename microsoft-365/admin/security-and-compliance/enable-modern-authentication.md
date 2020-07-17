@@ -36,7 +36,7 @@ Office 2013 がインストールされている Windows デバイスで先進�
 > [!NOTE]
 > 先進認証は Office 2016 クライアントで既に有効になっているため、Office 2016 のレジストリ キーを設定する必要はありません。 
   
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+Microsoft Office 2013 がインストールされている Windows を実行しているデバイス (たとえばノート PC やタブレット) で先進認証を有効にするには、次のレジストリ キーを設定する必要があります。先進認証を有効にするデバイスごとに、次のキーを設定する必要があります。
   
 |**レジストリ キー**|**型**|**値** |
 |:-------|:------:|--------:|
@@ -45,7 +45,7 @@ To enable modern authentication for any devices running Windows (for example on 
    
 レジストリキーを設定したら、Microsoft 365 で[多要素認証 (MFA)](set-up-multi-factor-authentication.md)を使用するように Office 2013 デバイスアプリを設定することができます。 
   
-If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.
+現在、クライアント アプリのいずれかを使ってサインインしている場合、変更を有効にするには、サインアウトしてサインインし直す必要があります。それ以外の場合は、ADAL ID が確立されるまで、MRU とローミングの設定が無効になります。
   
 ## <a name="disable-modern-authentication-on-devices"></a>デバイスで先進認証を無効にする
 

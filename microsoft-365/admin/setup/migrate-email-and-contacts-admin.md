@@ -82,7 +82,7 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
   
 - Open Outlook, then go to **File** \> **Add account**.
     
-Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
+詳細な手順が必要な場合は、「[アカウントの追加](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)」を参照してください。
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   

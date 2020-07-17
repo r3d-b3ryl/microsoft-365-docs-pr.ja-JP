@@ -90,7 +90,7 @@ ms.locfileid: "44818637"
 
 ## <a name="i-dont-see-the-plan-i-want"></a>目的のプランが表示されない
 
-When you use the **Switch plans** button, the plans that you can switch to are displayed based on the services in your current plan. You can only use the **Switch plans** button to switch to a plan that has the same data-related services, or to a higher version. This ensures that users don't lose data related to those services during the switch.
+[ **プランの切り替え**] ボタンを使用するときは、現在のプランのサービスに基づいて、切り替えが可能なプランが表示されます。同じデータ関連サービスが含まれるプランまたはそれらの上位バージョンに切り替える場合のみ、[ **プランの切り替え**] ボタンを使用できます。これで、ユーザーが切り替え中にそれらのサービスに関連するデータを失う心配がなくなります。
   
 切り替え前にプランを比較するには、 [Microsoft 365 for business 製品比較](https://go.microsoft.com/fwlink/p/?linkid=842056)ページを参照してください。 技術仕様については、「 [Microsoft 365 サービスの説明](https://go.microsoft.com/fwlink/p/?linkid=842275)」を参照してください。
   

@@ -32,7 +32,7 @@ ms.locfileid: "44936260"
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>Advanced eDiscovery のケースへのアクセス
 
-You access Advanced eDiscovery from the Security &amp; Compliance Center. You have to be a member of an eDiscovery case in the Security &amp; Compliance Center to access the case in Advanced eDiscovery. For instructions about assigning eDiscovery case permissions and adding users to an eDiscovery case, see [Manage eDiscovery cases in Office 365](ediscovery-cases.md). 
+セキュリティ&amp;コンプライアンス センターから Advanced eDiscovery にアクセスします。Advanced eDiscovery のケースにアクセスするには、セキュリティ&amp;コンプライアンス センターの電子情報開示ケースのメンバーである必要があります。電子情報開示ケースのアクセス許可の割り当て方法、電子情報開示ケースへのユーザーの追加方法については、「[Office 365 で電子情報開示ケースを管理する](ediscovery-cases.md)」を参照してください。 
   
 Advanced eDiscovery のケースに移動するには、以下を実施します: 
   
@@ -44,7 +44,7 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
     
 4. ケースの [**ホーム**] ページで、[**Advanced eDiscovery に切り替え**] をクリックします。
     
-    The **Connecting to Advanced eDiscovery** progress bar is displayed. When you're connected, the case is opened in Advanced eDiscovery. 
+    **[Advanced eDiscovery へ接続しています]** の進行状況バーが表示されます。接続されると、Advanced eDiscovery のケースが開きます。 
     
 ## <a name="workflow"></a>ワークフロー
 
@@ -52,15 +52,15 @@ Advanced eDiscovery のケースに移動するには、以下を実施します
   
 ![図は、Advanced eDiscovery のワークフローを示しています。セットアップには、ユーザー&amp;ケースのセットアップ、ケース データの特定、エクスポート、処理の 4 つのフェーズがあり、その後に分析とローカル コンピューターへのエクスポートのフェーズがあります。](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
-This setup section describes the first four steps in the workflow. For a description of the other steps in the workflow, see the following.
+このセットアップ セクションでは、上記ワークフローの最初の 4 つの手順について説明します。ワークフローの他の手順については、以下を参照してください。
   
 ## <a name="analyze"></a>分析
 
-[Analyzing case data](analyze-case-data-with-advanced-ediscovery.md) Identifies and organizes the files by various parameters, enables the use of Themes, and displays the results. Analyze functionality can be customized by the user in order to achieve enhanced results. 
+[ケース データの分析](analyze-case-data-with-advanced-ediscovery.md): さまざまなパラメーターでファイルの識別および整理を行い、テーマの使用を有効にして、結果を表示します。ユーザーは分析機能をカスタマイズして、詳細な結果を得ることができます。 
   
 ## <a name="relevance-setup-and-relevance"></a>関連性のセットアップおよび関連性
 
-[Relevance Setup](manage-relevance-setup-in-advanced-ediscovery.md) and [Using the Relevance module](use-relevance-in-advanced-ediscovery.md) Enables assessment and relevance training based on a random sample of files and uses them to apply decisions to the predictive coding process. Calculates and displays interim results while monitoring statistical validity of the process. Displays the results to facilitate in making review decisions. 
+[関連性のセットアップ](manage-relevance-setup-in-advanced-ediscovery.md)と[関連性モジュールの使用](use-relevance-in-advanced-ediscovery.md): ファイルのランダムなサンプルに基づく評価と関連性トレーニングを有効にし、その評価と関連性トレーニングを使用して、予測されるコーディング プロセスを決定します。プロセスの統計上の妥当性を監視しながら、中間結果を計算して表示します。校閲の意思決定を容易にする結果を表示します。 
   
 ## <a name="export"></a>エクスポート
 

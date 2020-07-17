@@ -108,12 +108,12 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
  Exchange 2013 の新しい更新プログラム 5 (CU5)、社内 Exchange 2013 組織と Office 365 サービス間の完全な機能を備えたハイブリッド展開がサポートされるようになりました。 ハイブリッド構成ウィザードでの新しい改善点の活用 Exchange 2013 CU5 は、社内組織と Exchange Online 組織間で次のようなハイブリッド機能をサポートしています。  
 
 - 社内組織および Exchange Online 組織間の安全なメール ルーティング。 
-- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
+- 共有ドメイン名前空間によるメール ルーティング。たとえば、社内組織と Exchange Online 組織の両方で、SMTP ドメインとして @contoso.com を使用できます。 
 - 統一されたグローバル アドレス一覧 (GAL)。"共有アドレス帳" とも呼ばれます。  
 - 社内組織と Exchange Online 組織間での空き時間情報や予定表の共有。  
-- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
+- 受信および送信メール フロー制御の集中管理。すべての受信および送信 Exchange Online メッセージを、社内 Exchange 組織経由でルーティングされるように構成できます。 
 - オンプレミス組織と Exchange Online 組織の両方の単一の Office Outlook Web App URL。  
-- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
+- 既存の社内メールボックスを Exchange Online 組織に移動する機能。必要な場合に、Exchange Online メールボックスを移動して社内組織に戻すこともできます。  
 - 社内 Exchange 管理センター (EAC) を使用した、メールボックスの集中管理。  
 - メールヒント、Outlook 連絡先の HD 写真サポート、社内組織と Exchange Online 組織間での複数のメールボックス検索。 
 - クラウドベースでの社内 Exchange メールボックスのメッセージ アーカイブ。 

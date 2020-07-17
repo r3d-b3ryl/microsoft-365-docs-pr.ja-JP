@@ -220,47 +220,47 @@ ms.locfileid: "44819267"
 |サウジアラビア PII:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  サウジアラビアの国民 ID — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
 |サウジアラビア PII:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  サウジアラビアの国民 ID — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
-## <a name="uk-access-to-medical-reports-act"></a>U.K. Access to Medical Reports Act
+## <a name="uk-access-to-medical-reports-act"></a>英国の医療報告書の利用に関する法律
 
 |**ルール名**|**条件 <br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. AMRA: Scan content shared outside - low count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. 米国の医療サービス番号—最小数1、最大数9  <br/>  U.K. 国家保険番号 (NINO) —最小数1、最大数9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
-|U.K. AMRA: Scan content shared outside - high count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. 米国の医療サービス番号—最小数10、最大数任意  <br/>  U.K. 国家保険番号 (NINO) —最小数10、最大数任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
+|英国 AMRA:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. 米国の医療サービス番号—最小数1、最大数9  <br/>  U.K. 国家保険番号 (NINO) —最小数1、最大数9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
+|英国 AMRA:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. 米国の医療サービス番号—最小数10、最大数任意  <br/>  U.K. 国家保険番号 (NINO) —最小数10、最大数任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
-## <a name="uk-data-protection-act"></a>U.K. Data Protection Act
+## <a name="uk-data-protection-act"></a>英国のデータ保護法
 
 |**ルール名**|**条件 <br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. DPA: Scan content shared outside - low count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  米国/英国 パスポート番号—最小数1、最大数9  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
-|U.K. DPA: Scan content shared outside - high count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  米国/英国 パスポート番号—最小数10、最大数任意  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
+|英国 DPA:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  英国の国民保険番号 (NINO) — 最小数 1、最大数 9  <br/>  米国/英国 パスポート番号—最小数1、最大数9  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
+|英国 DPA:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  英国の国民保険番号 (NINO) — 最小数 10、最大数 任意  <br/>  米国/英国 パスポート番号—最小数10、最大数任意  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
-## <a name="uk-financial-data"></a>U.K. Financial Data
+## <a name="uk-financial-data"></a>英国の金融データ
 
 |**ルール名**|**条件 <br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. Financial: Scan content shared outside - low count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  クレジット カード番号 — 最小数 1、最大数 9  <br/>  EU のデビット カード番号 — 最小数 1、最大数 9  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
-|U.K. Financial: Scan content shared outside - high count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  クレジット カード番号 — 最小数 10、最大数 任意  <br/>  EU のデビット カード番号 — 最小数 10、最大数 任意  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
+|英国の金融:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  クレジット カード番号 — 最小数 1、最大数 9  <br/>  EU のデビット カード番号 — 最小数 1、最大数 9  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
+|英国の金融:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  クレジット カード番号 — 最小数 10、最大数 任意  <br/>  EU のデビット カード番号 — 最小数 10、最大数 任意  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
-## <a name="uk-personal-information-online-code-of-practice-piocp"></a>U.K. Personal Information Online Code of Practice (PIOCP)
+## <a name="uk-personal-information-online-code-of-practice-piocp"></a>英国のオンラインの個人情報に関する実務基準 (PIOCP)
 
 |**ルール名**|**条件 <br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. PIOCP: Scan content shared outside - low count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  U.K. National Health Service Number — Min count 1, Max count 9  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
-|U.K. PIOCP: Scan content shared outside - high count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  U.K. National Health Service Number — Min count 10, Max count any  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
+|英国 PIOCP:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  英国の国民保険番号 (NINO) — 最小数 1、最大数 9  <br/>  英国の国民健康保険サービス番号 — 最小数 1、最大数 9  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
+|英国 PIOCP:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  英国の国民保険番号 (NINO) — 最小数 10、最大数 任意  <br/>  英国の国民健康保険サービス番号 — 最小数 10、最大数 任意  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
-## <a name="uk-personally-identifiable-information-pii-data"></a>U.K. Personally Identifiable Information (PII) Data
+## <a name="uk-personally-identifiable-information-pii-data"></a>英国の個人情報 (PII) データ
 
 |**ルール名**|**条件 <br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. PII: Scan content shared outside - low count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  U.S. / U.K. Passport Number — Min count 1, Max count 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
-|U.K. PII: Scan content shared outside - high count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  U.S. / U.K. Passport Number — Min count 10, Max count any  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
+|英国 PII:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  英国の国民保険番号 (NINO) — 最小数 1、最大数 9  <br/>  米国/英国のパスポート番号 — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
+|英国 PII:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  英国の国民保険番号 (NINO) — 最小数 10、最大数 任意  <br/>  米国/英国のパスポート番号 — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
-## <a name="uk-privacy-and-electronic-communications-regulations"></a>U.K. Privacy and Electronic Communications Regulations
+## <a name="uk-privacy-and-electronic-communications-regulations"></a>英国のプライバシーおよび電子通信に関する規制
 
 |**ルール名**|**条件 <br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. PECR: Scan content shared outside - low count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
-|U.K. PECR: Scan content shared outside - high count  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
+|英国 PECR:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  SWIFT コード — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
+|英国 PECR:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  SWIFT コード — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
 ## <a name="us-federal-trade-commission-ftc-consumer-rules"></a>米国連邦取引委員会 (FTC) の消費者保護規則
 
@@ -300,8 +300,8 @@ ms.locfileid: "44819267"
 
 |**ルール名**|**条件 <br/> (機密情報の種類を含む)**|**Actions**|
 |:-----|:-----|:-----|
-|米国 PII:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  米国の個人納税者識別番号 (ITIN) — 最小数 1、最大数 9  <br/>  米国の社会保障番号 (SSN) — 最小数 1、最大数 9  <br/>  U.S. / U.K. Passport Number — Min count 1, Max count 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
-|米国 PII:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  米国の個人納税者識別番号 (ITIN) — 最小数 10、最大数 任意  <br/>  米国の社会保障番号 (SSN) — 最小数 10、最大数 任意  <br/>  U.S. / U.K. Passport Number — Min count 10, Max count any  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
+|米国 PII:外部共有されているコンテンツをスキャン - 低カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  米国の個人納税者識別番号 (ITIN) — 最小数 1、最大数 9  <br/>  米国の社会保障番号 (SSN) — 最小数 1、最大数 9  <br/>  米国/英国のパスポート番号 — 最小数 1、最大数 9  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> |通知の送信  <br/> |
+|米国 PII:外部共有されているコンテンツをスキャン - 高カウント  <br/> | コンテンツには、次の機密情報が含まれます。  <br/>  米国の個人納税者識別番号 (ITIN) — 最小数 10、最大数 任意  <br/>  米国の社会保障番号 (SSN) — 最小数 10、最大数 任意  <br/>  米国/英国のパスポート番号 — 最小数 10、最大数 任意  <br/>  コンテンツの共有対象:  <br/>  自分の所属組織外のユーザー  <br/> | コンテンツへのアクセスの禁止  <br/>  通知の送信  <br/>  上書きの許可  <br/>  業務上の理由が必要  <br/>  インシデント レポートの送信  <br/> |
    
 ## <a name="us-state-breach-notification-laws"></a>米国の個人情報漏洩の通知に関する州法
 

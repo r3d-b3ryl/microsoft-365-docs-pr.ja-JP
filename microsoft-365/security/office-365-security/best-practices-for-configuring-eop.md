@@ -71,7 +71,7 @@ Exchange Online Protection (EOP) のベストプラクティス推奨事項に�
 
 ビジネスニーズを満たすように、メールフロールール (トランスポートルールとも呼ばれる) またはカスタムフィルターを作成します。
 
-When you deploy a new rule to production, select one of the test modes first to see the effect of the rule. Once you are satisfied that the rule is working in the manner intended, change the rule mode to **Enforce**.
+新しいルールを運用環境に展開するときは、最初にテスト モードの 1 つを選択してルールの効果を確認します。ルールが意図したとおりに機能したら、ルールのモードを **[強制]** に変更します。
 
 新しいルールを展開した場合は、適用中のルールを監視するために **[インシデント レポートの生成]** の追加を検討してください。
 

@@ -37,7 +37,7 @@ ms.locfileid: "44816999"
 ---
 # <a name="view-your-bill-or-invoice"></a>課金内容または請求書を表示する
 
-This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
+この記事は、一般法人向け Microsoft 365 サブスクリプションを持っているユーザーを対象としています。この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。
   
 課金内容を表示した場合に料金について説明が必要な場合は、「[課金または請求書の内容を理解する](understand-your-invoice2.md)」のページで詳細な解説を参照してください。
   

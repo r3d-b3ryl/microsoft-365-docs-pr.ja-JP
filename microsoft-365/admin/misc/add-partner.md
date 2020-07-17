@@ -50,13 +50,13 @@ ms.locfileid: "45005688"
 
 ::: moniker range="o365-germany"
 
-An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Office 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website. 
+サブスクリプション アドバイザーとなっている Microsoft の認定パートナーは、サブスクリプションのセットアップと保守を行うために必要な販売、サポート、技術専門分野の知識を提供します。サブスクリプション アドバイザー パートナーは、Office 365 の購入時などに、レコードのパートナーとして追加できます。また、現在パートナーがいない場合は、[Microsoft Pinpoint](https://pinpoint.microsoft.com) の Web サイトで見つけることもできます。 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+選択するパートナーは、使用中の Office 365 サービス、およびサービスを使っている国または地域によって異なります。サブスクリプションのパートナーを追加、またはパートナーを変更する場合は、最初にパートナーの Microsoft Partner ID をパートナーにたずねて入手する必要があります。
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
     
 4. パートナーが既に存在する場合は、チェックアウトウィザードの2番目の手順で、右側のウィンドウの [パートナー情報] の下にある [**追加**] を選択します。
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. 追加するパートナーの Microsoft パートナー ID を入力します。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。
 
 6. ウィザードの残りの手順を完了してサブスクリプションの購入を終了します。 
     
@@ -98,7 +98,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
     
 4. パートナーが既に存在する場合は、チェックアウトウィザードの2番目の手順で、右側のウィンドウの [パートナー情報] の下にある [**追加**] を選択します。
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. 追加するパートナーの Microsoft パートナー ID を入力します。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。
 
 6. ウィザードの残りの手順を完了してサブスクリプションの購入を終了します。 
     
@@ -127,7 +127,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
   
 3. 右側の [サブスクリプションコスト] で、[**その他のアクション**] [ > **レコードのパートナーを追加**する] を選択します。
 
-4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. 追加するパートナーの Microsoft パートナー ID を入力し、[ **ID の確認**]、[ **送信**] の順に選びます。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。
 
 5. パートナー ID が [ **サブスクリプション**] ページに表示されます。
     
@@ -159,7 +159,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
     
 3. [ **パートナー ID**] の下で、[ **レコードのパートナーの編集**] を選びます。
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. 追加するパートナーの新しい Microsoft パートナー ID を入力し、[ **ID の確認**]、[ **送信**] の順に選びます。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
     
 3. [ **パートナー ID**] の下で、[ **レコードのパートナーの編集**] を選びます。
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. 追加するパートナーの新しい Microsoft パートナー ID を入力し、[ **ID の確認**]、[ **送信**] の順に選びます。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ Office 365 の管理者として、ユーザーの作成または編集、ユー
     
 3. [ **パートナー ID**] の下で、[ **レコードのパートナーの編集**] を選びます。
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. 追加するパートナーの新しい Microsoft パートナー ID を入力し、[ **ID の確認**]、[ **送信**] の順に選びます。パートナーの Microsoft パートナー ID は、パートナーにたずねることで入手できます。   
 
 ::: moniker-end
 

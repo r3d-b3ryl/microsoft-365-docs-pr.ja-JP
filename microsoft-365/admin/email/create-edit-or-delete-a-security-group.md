@@ -155,7 +155,7 @@ Exchange 管理センターで配布グループとメールが有効なセキ�
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>組織をセキュリティで保護するためにはセキュリティ グループを使用する必要がありますか?
 
-No. This is just one more way you can manage security for your organization. You can always grant user permissions and access to sites individually. But with security groups, you can easily manage larger groups of users.
+いいえ。これは、組織のセキュリティを管理できる方法の 1 つです。常にユーザーにはアクセス許可およびサイトへのアクセス権限を個別に付与することができます。ただし、セキュリティ グループを使用すれば、大規模なユーザー グループを容易に管理することができます。
   
 ## <a name="can-i-send-email-to-a-security-group"></a>セキュリティ グループにメールを送信できますか?
 

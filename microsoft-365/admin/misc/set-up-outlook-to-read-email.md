@@ -33,7 +33,7 @@ Microsoft 365 サブスクリプションには web ベースの Outlook が付�
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Outlook でメール アカウントを設定する
 
-The first time you open Outlook, an Auto Account Wizard opens. If not, choose **File** then **Add Account**.
+初めて Outlook を開くと、自動アカウント ウィザードが開きます。開かない場合、[ **ファイル**] を選択し、[ **アカウントの追加**] を選択します。
   
 1. On the **E-mail Accounts** page, choose **Next** \> **Add Account**.
     

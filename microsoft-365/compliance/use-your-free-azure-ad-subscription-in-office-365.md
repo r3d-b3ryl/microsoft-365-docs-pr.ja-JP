@@ -26,11 +26,11 @@ ms.locfileid: "44819287"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>無料の Azure Active Directory Domain Services サブスクリプションを使用する
 
-If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
+組織が Microsoft 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite、その他の Microsoft サービスの有料サブスクリプションを保有している場合、Microsoft Azure Active Directory の無料サブスクリプションを利用できます。管理者であれば、Azure AD を使用してユーザー アカウントとグループ アカウントを作成および管理できます。Azure AD を使用するには、Azure portal にアクセスし、アカウンにサインインします。
 
 ## <a name="open-a-private-browsing-session"></a>プライベート ブラウザー セッションを開く
 
-Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
+(通常のセッションではなく) プライベート ブラウジング セッションを使用して、Azure portal (以下の手順 1 参照) にアクセスします。これにより、現在のログオンに使用している資格情報が Azure に渡されません。プライベート ブラウジング セッションを開始するには:
 
 - Microsoft Edge (レガシ バージョン)、Internet Explorer、または Mozilla FireFox では、`CTRL+SHIFT+P` を押します。
 

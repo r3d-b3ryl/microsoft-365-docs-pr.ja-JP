@@ -21,6 +21,7 @@ ms.custom:
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
 ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/06/2020
 ms.locfileid: "45039380"

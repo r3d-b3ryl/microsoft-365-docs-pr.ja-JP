@@ -46,7 +46,7 @@ Microsoft 365 管理センターの [**アクティブなユーザー** ] ペー
 |全体管理者  <br/> |これらのユーザーは、すべての管理機能にアクセスできます。 Microsoft 365 にサインアップしたユーザーはグローバル管理者になりますが、必要に応じて複数設定できます。 全体管理者は、他のユーザーに管理者ロールを割り当てることができる唯一の管理者です。  <br/> |
 |パスワード管理者  <br/> |これらのユーザーは、ユーザーの代理でパスワードの再設定、サービス要求の管理、サービスの正常性の監視を実行できます。  <br/> |
 |サービス管理者  <br/> |これらのユーザーは、代理としてサービス要求の管理、サービスの正常性の監視を実行できます。  <br/> |
-|ユーザー管理の管理者  <br/> |These users can reset passwords, monitor service health, manage user accounts, user groups, and service requests. They can't delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.  <br/> |
+|ユーザー管理の管理者  <br/> |これらのユーザーは、パスワードの再設定、サービス状態の監視、およびユーザー アカウント、ユーザー グループ、お問い合わせの管理を実行できます。全体管理者の削除、他の管理者ロールの作成、および課金管理者、全体管理者、サービス管理者のパスワードの再設定は行えません。  <br/> |
 |ユーザー設定フィルターの追加  <br/> |このオプションを使用すると、ユーザーの特定の種類のユーザーのみを表示するカスタムフィルターを作成することができます (たとえば、Microsoft 365 Apps for business プランに所属するユーザー)。 [クイックヘルプ: ユーザーをフィルター処理](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view)します。  <br/> |
    
 ## <a name="related-articles"></a>関連記事

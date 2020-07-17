@@ -179,7 +179,7 @@ Microsoft 365 では、グループメンバーは通常、自分のグループ
 
 ## <a name="manage-group-owner-status"></a>グループの所有者の状態を管理する
 
-By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
+既定では、グループを作成したユーザーが、グループの所有者になります。多くの場合、グループには、バックアップ サポートやその他の理由のために複数の所有者がいます。メンバーを所有者ステータスに昇格させたり、所有者をメンバー ステータスに降格させたりすることができます。
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>管理センターでメンバーを所有者の状態に昇格させる
 

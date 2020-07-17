@@ -25,6 +25,7 @@ description: ユーザーにライセンスを割り当てる方法を説明し�
 ms.date: 07/01/2020
 ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
 ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45015949"

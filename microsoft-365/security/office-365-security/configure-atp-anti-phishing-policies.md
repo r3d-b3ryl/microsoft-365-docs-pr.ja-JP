@@ -561,7 +561,7 @@ PowerShell でフィッシングルールの優先度を設定するには、次
 Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).
+この例では、Marketing Department というルールの優先度を 2 に設定しています。優先度が 2 以下のすべての既存のルールは、優先度が 1 ずつ下がります (優先度番号が 1 ずつ増加します)。
 
 ```PowerShell
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2

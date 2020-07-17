@@ -115,9 +115,9 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 - **サブスクリプションの住所と連絡先の情報:**
 
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+  - サービスを利用する **国**。この情報は、サインアップ手続き中であっても後で変更することは **できません** 。変更する場合は、サインアップ ウィザードを再起動してください。
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - サブスクリプションに関する確認など、Microsoft から管理者に連絡する場合に使用する、 **メール アドレス** と **電話番号** 。管理者がパスワードを忘れた場合などに、この情報を使って仮のパスワードが送信されます。また、指定したメール アドレスに課金情報が送信されます。
 
     > [!NOTE]
     > ここで入力する電子メールアドレスは、Microsoft 365 のメールアドレス (下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。

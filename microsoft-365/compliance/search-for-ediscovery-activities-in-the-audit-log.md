@@ -202,7 +202,7 @@ ms.locfileid: "44818876"
 |:-----|:-----|
 |ケース  <br/> |作成、変更、または削除された電子情報開示ケースの ID (GUID)。  <br/> |
 |ClientApplication  <br/> |電子情報開示アクティビティ コマンドレッドは、このプロパティの値が **EMC** です。 これは、アクティビティが、セキュリティ/コンプライアンス センターの GUI を使用して実行されたか、PowerShell のコマンドレットを実行して実行されたことを示します。  <br/> |
-|ClientIP  <br/> |The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.  <br/> |
+|ClientIP  <br/> |アクティビティがログ記録されたときに使用されたデバイスの IP アドレス。IP アドレスは IPv4 または IPv6 のアドレス形式で表示されます。  <br/> |
 |ClientRequestId  <br/> | 電子情報開示アクティビティの場合、このプロパティは通常空白です。  <br/> |
 |CmdletVersion  <br/> |組織で実行している セキュリティ/コンプライアンス センターのバージョンのビルド番号。  <br/> |
 |CreationTime  <br/> |電子情報開示アクティビティが実行されたときの協定世界時 (UTC) の日付と時刻。  <br/> |
@@ -227,6 +227,6 @@ ms.locfileid: "44818876"
 |UserId  <br/> |結果としてログ記録されているレコードが生成されたアクティビティ (Operation プロパティで指定された) を実行したユーザー。 システム アカウント (NT AUTHORITY\SYSTEM など) によって実行された電子情報開示アクティビティのレコードも監査ログに含まれます。  <br/> |
 |UserKey  <br/> |UserId プロパティで識別されるユーザーの別の ID。 電子情報開示アクティビティの場合、このプロパティの値は通常、UserId プロパティと同じです。  <br/> |
 |UserServicePlan  <br/> |組織で使用されているサブスクリプション。 電子情報開示アクティビティの場合、このプロパティは通常空白です。  <br/> |
-|UserType  <br/> |The type of user that performed the operation. The following values indicate the user type.  <br/> 0   正規ユーザー。 2   組織の管理者。 3   Microsoft データセンター管理者またはデータセンターのシステム アカウント。 4   システム アカウント。 5   アプリケーション。 6   サービス プリンシパル。 |
+|UserType  <br/> |操作を実行したユーザーの種類。次の値は、ユーザーの種類を指定します。  <br/> 0   正規ユーザー。 2   組織の管理者。 3   Microsoft データセンター管理者またはデータセンターのシステム アカウント。 4   システム アカウント。 5   アプリケーション。 6   サービス プリンシパル。 |
 |バージョン  <br/> |ログに記録されるアクティビティ (Operation プロパティで識別) のバージョン番号を示します。  <br/> |
 |Workload  <br/> |アクティビティが発生したサービス。 電子情報開示アクティビティの場合、この値は、**SecurityComplianceCenter** です。  <br/> |

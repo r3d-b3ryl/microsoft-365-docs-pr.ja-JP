@@ -37,11 +37,11 @@ ms.locfileid: "44780603"
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>メールボックスのアクセス許可をどのように設定しますか?
 
-Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:
+メールボックスのアクセス許可を使用すると、他のユーザーにメールボックスへの読み取り/書き込みのアクセス許可を付与できます。以下の記事では、この機能の設定および使用に必要なヘルプを提供します。
   
  **アクセス許可の設定**
   
-The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
+アクセス許可を設定する最初のステップは、他のユーザーが特定のメールボックスで実行できるアクションを決定することです。ユーザーはそのメールボックスからメールを読み取ること、他のユーザーの代理としてメールを送信すること、そのメールボックスが送信元のように偽装してメールを送信することができます。それぞれのアクセス許可を設定する方法については、以下の記事を参照してください。
   
 - [別のユーザーのメールボックスからメールを読み取る](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
@@ -55,7 +55,7 @@ The first step to setting up permissions is deciding which actions you want to a
   
  **アクセス許可の設定後に使用する方法:**
   
-There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+アクセス許可が付与された後に、メールボックスにアクセスするには、いくつかの異なる方法があります。このヘルプについては、次の記事を参照してください。[別のユーザーのメールボックスにアクセスする](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
   
 ## <a name="send-email-from-another-users-mailbox"></a>別のユーザーのメールボックスからメールを送信する
 
@@ -200,7 +200,7 @@ There are a few different ways you can access a mailbox once you've been given a
 ## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a>Outlook および一般法人向け Outlook on the web での送信および読み取り
 
 
-Want to know how to send email from another user's mailbox? Check out the following topics:
+別のユーザーのメールボックスからメールを送信する方法については、次のトピックを参照してください。
   
 - [他のユーザーのメールおよび予定表のアイテムを管理する](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
     

@@ -52,9 +52,9 @@ Exchange 管理者の役割を割り当てられた場合にユーザーが実�
 
 ## <a name="exchange-online-role-groups"></a>Exchange Online の役割グループ
 
-If you have a large organization, the Exchange admin might want to assign users to Exchange role groups. When an admin adds a user to a role group, the user gets permissions to perform certain business functions only members of that group can do.
+大規模な組織では、Exchange 管理者がユーザーを Exchange の役割グループに割り当てることがあります。役割グループに追加されたユーザーは、そのグループのメンバーだけに許可されている、特定のビジネス機能を実行できるようになります。
   
- For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
+ たとえば、証拠開示管理という役割グループに割り当てられたユーザーは、メールボックスの検索を実行して条件に一致するデータを得ることができます。詳細については、「 [Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)」と「[役割グループの管理](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)」を参照してください。
   
 ## <a name="learn-about-other-admin-role"></a>その他の管理者の役割について説明します。
 

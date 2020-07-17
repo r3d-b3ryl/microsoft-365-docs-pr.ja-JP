@@ -110,7 +110,7 @@ Microsoft 365 グループにユーザーを追加するには、「[ユーザ�
   
 ## <a name="here-are-more-topics-you-might-be-interested-in"></a>その他の関連トピック
 
-- **Set up Office apps on your tablets and phones**. You need to do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+- **タブレットとスマートフォンで Office アプリをセットアップします。** この操作を行うと、チーム サイトに保存されているファイルをタブレットやスマートフォンから編集できるようになります。Office アプリをタブレットやスマートフォンにインストールしない場合、チーム サイトのファイルを表示することはできますが、編集はできません。 
     
   - [Microsoft 365 を使用して Android に Office をインストールしてセットアップする](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     
