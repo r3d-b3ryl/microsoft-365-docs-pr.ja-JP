@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,11 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: a5c1d27afdb7afd8b4ee3052f745c4c986299a2e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005964"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127099"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>手順 5.  リモートワーカー向けの生産性向上アプリとサービスを展開する
 
@@ -66,11 +67,18 @@ Teams は、デスクトップ、Web、モバイル バージョンの Teams か
 
 組織のメールと、先進認証と条件付きアクセスをサポートするメール クライアントを保護する、推奨される ID とデバイス アクセス ポリシーについては、[こちらの記事](../enterprise/secure-email-recommended-policies.md)を参照してください。
 
-## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>SharePoint Online と OneDrive を使用した、ファイルの保存と共同作業
+## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>SharePoint と OneDrive でファイルを格納して共同編集
 
-リモート ワーカーは、コンテンツの共同作業のために SharePoint Online と OneDrive フォルダーをクラウド内の中心的な場所として使用して、ファイルの保存と共有、共同編集、コミュニケーション、共同作業を行うことができます。 リモート ワーカーは、Web ブラウザー、Teams、Office アプリのどこからでも安全に作業を行うことができます。
+リモート ワーカーは、コンテンツの共同作業のために SharePoint と OneDrive フォルダーをクラウド内の中心的な場所として使用して、ファイルの保存と共有、共同編集、コミュニケーション、共同作業を行うことができます。 リモート ワーカーは、Web ブラウザー、Teams、Office アプリのどこからでも安全に作業を行うことができます。
 
-SharePoint Online と OneDrive for Business の保護に推奨される ID とデバイス アクセス ポリシーについては、[こちらの記事](../enterprise/sharepoint-file-access-policies.md)を参照してください。
+以下から SharePoint か OneDrive へドキュメントを移行しなければならない場合もあります。
+
+- [SharePoint Server チームサイト](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
+- [個人用サイト](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [ファイル共有](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [ボックス](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+
+SharePoint Online と OneDrive を保護するには、推奨される ID とデバイス アクセス ポリシーに関する[こちらの記事](../enterprise/sharepoint-file-access-policies.md)を参照してください。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Microsoft 365 アプリを使用した、コンテンツの作成と共同作業
 
