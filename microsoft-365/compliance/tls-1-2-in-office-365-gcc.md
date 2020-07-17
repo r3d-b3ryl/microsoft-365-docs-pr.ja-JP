@@ -1,35 +1,33 @@
 ---
 title: 廃止 TLS 1.0 および 1.1 in Office 365 GCC High および DoD
 description: Office 365 の GCC High および DoD 環境での TLS 1.1 および1.0 のサポートを中止するために、Microsoft が日付を移行する方法と、TLS 1.2 の使用を準備する方法について説明します。
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
-ms.service: O365-seccomp
+ms.collection: M365-security-compliance
+ms.service: information-protection
 ms.topic: article
-ms.author: v-six
-ms.reviewer: lobrion
+ms.reviewer: krowley
+ms.author: shmehta
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: f61c0a809c4666981ee0f2d67eea21474b83a675
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 76e9b203e58ba7fa23942ea42810456e3bee377d
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024827"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158882"
 ---
 # <a name="deprecating-tls-10-and-11-in-office-365-gcc-high-and-dod"></a>廃止 TLS 1.0 および 1.1 in Office 365 GCC High および DoD
 
-> [!IMPORTANT]
-> 世界はパンデミックの真っ只中にあり、マイクロソフトはお客様とパートナーへの影響を認識しています。 商用顧客の負担を軽減するために、TLS 1.0 および 1.1 の廃止の実施を一時的に停止しました。 現在の危機が安定した後、改訂されたタイムラインで更新プログラムが送信されます (この資料は、変更を反映するように改訂されています)。
-
 ## <a name="summary"></a>概要
 
-連邦リスクおよび承認管理プログラム (FedRAMP) に関する最新のコンプライアンス標準に準拠するために、Microsoft Office 365 のトランスポート層セキュリティ (TLS) バージョン1.1 と1.0 を廃止するために、GCC High および DoD 環境に移行しています。 この変更は [、Office 365 で TLS 1.2 の必須の使用を準備するために、](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)Microsoft サポートによって既に発表されています。
+連邦リスクおよび承認管理プログラム (FedRAMP) に関する最新のコンプライアンス標準に準拠するために、Microsoft Office 365 で廃止トランスポート層セキュリティ (TLS) バージョン1.1 および1.0 を使用して、GCC High および DoD 環境を対象としています。 この変更は [、Office 365 で TLS 1.2 の必須の使用を準備するために、](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)Microsoft サポートによって既に発表されています。
 
-データのセキュリティが重要であることを認識しており、サービスの使用に影響を与える可能性がある変更については透過的にコミットされています。
+データのセキュリティは重要であり、サービスの使用に影響を与える可能性がある変更については透過的にコミットされています。
 
 [MICROSOFT TLS 1.0 の実装](https://support.microsoft.com/help/3117336)には既知のセキュリティ上の脆弱性はありませんが、FedRAMP 準拠の標準に対してコミットされたままになります。 そのため、1.1 年1月 2020 15 日から開始する GCC High および DoD 環境では、Office 365 の TLS および1.0 は廃止されます。 TLS 1.1 および1.0 の依存関係を削除する方法の詳細については、次のホワイトペーパーを参照してください。
 

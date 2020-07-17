@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Microsoft 365 のコンプライアンスをすばやく始めるのに役立つタスクについて説明します。
-ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126616"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153690"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの概要を開始するためのクイックタスク
 
@@ -101,6 +101,34 @@ Microsoft 365 環境の複数の場所 (Exchange メールおよびパブリッ�
 
 通信のコンプライアンスを計画して構成するための詳細なガイダンスについては、「 [plan for communication コンプライアンス](communication-compliance-plan.md)」と「[コミュニケーションを開始](communication-compliance-configure.md)する」を参照してください。 通信コンプライアンスライセンスの情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)」を参照してください。
 
+## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>タスク 9: 機密アイテムの処理状況を確認する
+
+機密ラベル、機密情報の種類、アイテム保持ラベル、および trainable 分類子を使用すると、前のタスクで見たように、Exchange、SharePoint、OneDrive 間で機密アイテムの分類とラベル付けを行うことができます。 クイックタスクへの移行の最後の手順では、ラベル付けされたアイテム、およびそれらの機密アイテムに対してユーザーが実行しているアクションを確認します。 この可視性は、[コンテンツエクスプローラー](data-classification-content-explorer.md)と[アクティビティエクスプローラー](data-classification-activity-explorer.md)によって提供されます。
+
+### <a name="content-explorer"></a>コンテンツ エクスプローラー
+ コンテンツエクスプローラーを使用すると、機密情報の種類として分類されたすべてのアイテム、または trainable 分類子によって特定の分類に分類されたすべてのアイテム、および感度解析または保持ラベルが適用されているすべてのアイテムをネイティブ形式で表示できます。
+
+コンテンツエクスプローラーを使用するための詳細なガイダンスについては、「[データのデータ分類の概要](data-classification-overview.md)」と「[コンテンツエクスプローラーを使い始める](data-classification-content-explorer.md)」を参照してください。
+
+### <a name="activity-explorer"></a>アクティビティ エクスプローラー
+アクティビティエクスプローラーを使用すると、分類済みでラベル付けされた機密アイテムに対して行われた処理を監視することができます。
+- SharePoint
+- Exchange
+- OneDrive
+
+使用可能なフィルターは 30 種類以上あり、以下がその一例です。
+
+- 日付の範囲
+- アクティビティの種類
+- 場所
+- ユーザー
+- 機密ラベル
+- 保持ラベル
+- ファイル パス
+- DLP ポリシー
+
+アクティビティエクスプローラーを使用する詳細な手順については、「[アクティビティエクスプローラーの概要](data-classification-activity-explorer.md)」を参照してください。
+
 ## <a name="next-steps"></a>次の手順
 
 これで、組織のコンプライアンス管理の基本が構成されました。機密情報を保護し、その他の insider のリスクを検出して操作するために役立つ、Microsoft 365 の以下のコンプライアンスソリューションを検討してください。
@@ -112,8 +140,8 @@ Microsoft 365 環境の複数の場所 (Exchange メールおよびパブリッ�
 さらに、保持ラベルは、レコード[管理](records-management.md)をサポートして、コンテンツをレコードとしてマークします。 この操作を行うと、ラベルを変更または削除することはできません。また、コンテンツを編集または削除することはできません。 これらの制限は、組織が規制要件に準拠するために必要になる場合があります。
 
 保持ラベルを作成して発行する詳細な手順については、以下のガイダンスを参照してください。
-- [保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
-- [コンテンツへの保持ラベルの自動適用](apply-retention-labels-automatically.md)
+- [アイテム保持ラベルを作成して、アプリに適用する](create-apply-retention-labels.md)
+- [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
 レコード管理のライセンス情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)」を参照してください。
 
@@ -125,7 +153,7 @@ Microsoft 365 環境の複数の場所 (Exchange メールおよびパブリッ�
 
 ### <a name="prevent-data-loss"></a>データの損失を防止する
 
-[データ損失防止 (DLP) ポリシー](data-loss-prevention-policies.md)を使用すると、Microsoft 365 組織全体の機密情報を識別、監視、および自動保護することができます。 DLP ポリシーを使用して、Microsoft サービス全体の機密情報を特定し、機密情報を誤って共有することを防止し、ユーザーがワークフローを中断することなくコンプライアンスを維持する方法を理解できるようにします。
+[データ損失防止 (DLP) ポリシー](data-loss-prevention-policies.md)を使用すると、Microsoft 365 組織全体の機密情報を識別、監視、および自動保護することができます。 DLP ポリシーを使用して、Microsoft サービス全体の機密アイテムを識別し、機密性の高いアイテムが偶発的に共有されないようにし、ワークフローを中断せずに準拠を維持する方法をユーザーが理解できるようにします。
 
 DLP ポリシーを構成するためのステップごとのガイダンスについては、「 [dlp ポリシーの推奨事項の概要](get-started-with-dlp-policy-recommendations.md)」と「[既定の dlp ポリシーの概要](get-started-with-the-default-dlp-policy.md)」を参照してください。 データ損失管理のライセンス情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)」を参照してください。
 
