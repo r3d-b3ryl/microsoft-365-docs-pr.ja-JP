@@ -1,7 +1,7 @@
 ---
-title: 業界テストでのトップスコア (AV-テスト、AV Comparatives、SE Labs、MITRE ATT&の場合)
+title: 業界テストでのトップスコア-Microsoft Threat Protection
 ms.reviewer: ''
-description: Microsoft Defender ATP は、独立したテストで一貫したハイスコアを実現します。 最新のスコアと分析を表示します。
+description: Microsoft の脅威保護の最新のスコアと分析を表示します。これは、独立したテスト (AV-テスト、AV Comparatives、SE Labs、MITRE ATT&のスコア) において高いスコアを常に達成します。 最新のスコアと分析を表示します。
 keywords: Microsoft Defender ウイルス対策、Windows Defender ウイルス対策、av レビュー、ウイルス対策テスト、av テスト、最新の av スコア、検出スコア、セキュリティ製品テスト、セキュリティ業界のテスト、業界のウイルス対策テスト、ベストウイルス対策、av-テスト、av-comparatives、SE labs、MITRE ATT&の場合、エンドポイント保護プラットフォーム、EPP、エンドポイントの検出と応答、EDR、Windows 10、Microsoft Defender ウイルス対策、WDAV、MDATP、Microsoft 脅威の保護、セキュリティ、マルウェア、av、
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909278"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158871"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップスコア
 
