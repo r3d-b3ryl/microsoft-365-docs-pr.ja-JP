@@ -4,14 +4,18 @@ description: ''
 keywords: ブラウザー、Microsoft Managed Desktop、Microsoft 365、service、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094788"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170673"
 ---
 # <a name="new-microsoft-edge-app"></a>新しい Microsoft Edge アプリ
 
@@ -38,7 +42,7 @@ Microsoft マネージドデスクトップデバイス上の Microsoft Edge の
 #### <a name="extension-installation-blocklist"></a>拡張機能のインストール blocklist
 **既定値:** すべての
 
-Microsoft Managed Desktop は、このポリシーを設定して、管理されたエンドポイントに Chrome 拡張機能がインストールされないようにします。 Chromium 拡張モデルには、データ損失防止、プライバシー、およびデバイスを侵害する可能性があるその他のリスクを含む、既知の risksassociated があります。 
+Microsoft Managed Desktop は、このポリシーを設定して、管理されたエンドポイントに Chrome 拡張機能がインストールされないようにします。 Chromium 拡張モデルに関連付けられている既知のリスクには、データ損失防止、プライバシー、およびデバイスを侵害する可能性があるその他のリスクが含まれます。 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>ユーザーレベルのネイティブメッセージングホストを許可する (管理者権限なしでインストールされる)
 
@@ -119,7 +123,7 @@ Microsoft マネージドデスクトップは、基本認証スキームまた�
 
 ## <a name="settings-you-manage"></a>管理する設定
 
-Microsoft Intune の管理用テンプレートプロファイルを使用していないマイクロ Sft エッジ設定を展開することができます。 詳細については、「microsoft [Edge ポリシー設定を Microsoft Intune で構成する](https://docs.microsoft.com/deployedge/configure-edge-with-intune)」を参照してください。 Intune の Microsoft Edge 管理用テンプレートに現在含まれていないポリシーを評価する場合は、Intune で Windows 10 デバイスのカスタム設定を使用できます。
+Microsoft Intune の管理用テンプレートプロファイルを使用していない Microsoft Edge の設定を展開することができます。 詳細については、「microsoft [Edge ポリシー設定を Microsoft Intune で構成する](https://docs.microsoft.com/deployedge/configure-edge-with-intune)」を参照してください。 Intune の Microsoft Edge 管理用テンプレートに現在含まれていないポリシーを評価する場合は、Intune で Windows 10 デバイスのカスタム設定を使用できます。
 
 ### <a name="enabling-specific-chrome-extensions"></a>特定の Chrome 拡張機能を有効にする
 

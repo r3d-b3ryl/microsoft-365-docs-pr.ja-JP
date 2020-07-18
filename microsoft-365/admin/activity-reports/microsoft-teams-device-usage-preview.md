@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 レポートから Microsoft Teams アプリの使用状況レポートを取得することによって、組織で使用される Microsoft Teams アプリの洞察を得ることができます。
-ms.openlocfilehash: 3599ba24e8df9406b5e0bc93d934604880ca4c39
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 4945e74d91e12c1e846de3e4bd8393220349d608
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158859"
+ms.locfileid: "45167355"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage---preview"></a>管理センターの microsoft 365 レポート-Microsoft Teams デバイスの使用状況-プレビュー
 
@@ -57,5 +57,4 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 |Web  <br/> |ユーザーがデバイス上の Teams web クライアントでアクティブだった場合に選択されます。|
 |最後のアクティビティの日付 (UTC)  <br/> |ユーザーが Teams アクティビティに参加した最後の日付 (UTC)。  <br/> |
 |ライセンスされている|ユーザーが Teams を使用するライセンスを持っている場合に選択されます。|
-|Teams の合計アクティビティ|選択した期間における Teams アクティビティの合計数です。 |
 |||

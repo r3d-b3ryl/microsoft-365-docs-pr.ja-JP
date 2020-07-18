@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ユーザーアクティビティレポートを取得して、組織内の Teams アクティビティを把握する方法について説明します。
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158847"
+ms.locfileid: "45167343"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>管理センターの microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ-プレビュー
 
@@ -51,9 +51,9 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 |会議の合計数   <br/> |指定された期間中にユーザーが参加したオンライン会議の数。  <br/> |
 |1:1 通話   <br/> | 指定された期間中にユーザーが参加した1:1 通話の数。  <br/> |
 |最後のアクティビティの日付 (UTC)  <br/> |ユーザーが Microsoft Teams アクティビティに参加した最後の日付。<br/> |
-|アドホックミーティング参加   <br/> | 指定された期間中にユーザーが参加したアドホック会議の数。  <br/> |
-|開催された会議 (アドホック) <br/> |指定された期間中にユーザーが開催したアドホック会議の数。 <br/>|
+|アドホックミーティング参加   <br/> | 指定された期間中にユーザーが参加した予定表でスケジュールされていない会議の数。  <br/> |
+|開催された会議 (アドホック) <br/> |指定された期間中にユーザーが開催した予定表でスケジュールされていない会議の数。 <br/>|
 |開催予定の会議  <br/> |指定された期間中にユーザーが開催した予約済みミーティングの数。  <br/> |
 |ライセンスされている |ユーザーが Teams を使用するライセンスを持っている場合に選択されます。|
-|その他のアクティビティ|ユーザーによる他のチームアクティビティの数。 |
+|その他のアクティビティ|ユーザーはアクティブと見なされますが、チャットメッセージ、1:1 通話、チャネルメッセージ、会議の合計、および開催された会議に対して0の値があります。 例アクションとしては、microsoft teams クライアントがフォアグラウンドでアクティブになったとき、アクションが作成メッセージ領域で実行されたとき、microsoft teams クライアントでのトーストの表示、バナーが microsoft teams クライアントに表示されたなどがあります。 |
 |||
