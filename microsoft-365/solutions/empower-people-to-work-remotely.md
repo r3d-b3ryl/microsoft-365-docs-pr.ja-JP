@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844872"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158900"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -68,6 +68,12 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 | Windows Autopilot | 生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。   | Microsoft 365 E3、E5 |
 | Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer、Power Apps | 作成、連絡、共同作業を行います。 | Microsoft 365 E3、E5 |
 ||||
+
+<a name="poster"></a> このシナリオを 2 ページにまとめた [「リモート ワーカーを支援するポスター」](../downloads/empower-remote-workers.pdf) を参照してください。
+
+[![リモート ワーカーを支援するポスター](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 次の手順を実行することにより、組織のサーバー、データ、クラウド サービスへのアクセスをセキュリティで保護して最適化し、従業員の生産性を最大限に高めることができます。
 
