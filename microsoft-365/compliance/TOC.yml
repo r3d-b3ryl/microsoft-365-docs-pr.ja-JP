@@ -283,34 +283,40 @@
           href: enable-unlimited-archiving.md
         - name: メールボックスのアーカイブと削除ポリシーを設定する
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: データを保持する
+    - name: データを保持および削除する
       items:
-        - name: アイテム保持ポリシーの詳細
-          href: retention-policies.md
-        - name: アイテム保持ポリシーを作成して構成する
+        - name: 保持の詳細
+          items:
+            - name: アイテム保持ポリシーと保持ラベル
+              href: retention.md
+            - name: SharePoint と OneDrive の保持
+              href: retention-policies-sharepoint.md
+            - name: Microsoft Teams の保持
+              href: retention-policies-teams.md
+            - name: Exchange の保持
+              href: retention-policies-exchange.md
+        - name: 保持の概要
+          href: get-started-with-retention.md
+        - name: アイテム保持ポリシーを作成する
           href: create-retention-policies.md
-        - name: SharePoint と OneDrive の保持
-          href: retention-policies-sharepoint.md
-        - name: Microsoft Teams の保持
-          href: retention-policies-teams.md
-        - name: Exchange の保持
-          href: retention-policies-exchange.md
-        - name: ファイル計画
+        - name: ファイル計画を使用する
           href: file-plan-manager.md
-        - name: 保持ラベルの詳細
-          href: labels.md
-        - name: 保持ラベルを作成、発行、および自動適用する
-          href: create-retention-labels.md
+        - name: 保持ラベルを作成してアプリに適用する
+          href: create-apply-retention-labels.md
+        - name: 保持ラベルをコンテンツに自動的に適用する
+          href: apply-retention-labels-automatically.md
         - name: SEC Rule 17a-4 に準拠する
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: PowerShell を使用して保持ラベルを作成および発行する
+        - name: PowerShell で保持ラベルを作成する
           href: bulk-create-publish-labels-using-powershell.md
-        - name: イベント ベースの保持
-          href: event-driven-retention.md
-        - name: イベント ベースの保持を自動化する
-          href: automate-event-driven-retention.md
-        - name: SharePoint ドキュメントのライフサイクルを管理する
-          href: auto-apply-retention-labels-scenario.md
+        - name: イベント ベースの保持を使用する
+          items:
+            - name: イベントの発生時に保持を開始する
+              href: event-driven-retention.md
+            - name: イベント ベースの保持を自動化する
+              href: automate-event-driven-retention.md
+            - name: SharePoint ドキュメントのライフサイクルを管理する
+              href: auto-apply-retention-labels-scenario.md
     - name: データの破棄
       href: disposition.md
     - name: 非アクティブなメールボックスを管理する
@@ -345,34 +351,6 @@
           href: records-management.md
         - name: レコード
           href: records.md
-        - name: ファイル計画
-          items:
-            - name: 保持ラベルを管理する
-              href: file-plan-manager.md
-            - name: 保持ラベルの詳細
-              href: labels.md
-            - name: 保持ラベルを作成および発行する
-              href: create-retention-labels.md
-            - name: PowerShell を使用して大規模に保持ラベルを作成および発行する
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: ラベル分析によるラベル使用状況の表示
-              href: label-analytics.md
-            - name: ドキュメントのラベル アクティビティを表示する
-              href: view-label-activity-for-documents.md
-            - name: データ ガバナンスのレポートを表示する
-              href: view-the-data-governance-reports.md
-        - name: イベント
-          items:
-            - name: イベント ベースの保持
-              href: event-driven-retention.md
-            - name: イベント ベースの保持を自動化する
-              href: automate-event-driven-retention.md
-        - name: 廃棄
-          href: disposition.md
-        - name: レコード管理の詳細情報
-          items:
-            - name: レコード管理のビデオを見る
-              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: eDiscovery の管理
   items:
     - name: Microsoft 365のeDiscovery in

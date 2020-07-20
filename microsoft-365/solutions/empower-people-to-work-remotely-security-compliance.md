@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスのサービスを使用して、リモート ワーカー向けにお客様のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049869"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127079"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>手順 3: リモート ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -54,6 +54,8 @@ Microsoft 365 のこれらのセキュリティ機能を使用して、アプリ
 | Azure AD Identity Protection  | ID ベースのリスクを自動的に検出して修正します。 <br><br>リスクベースの条件付きアクセス ポリシーを作成し、危険なサインインに対して多要素認証 (MFA) を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 |
 ||||
 
+詳細については、「[Microsoft 365 コンプライアンスを開始するためのクイック タスク](../compliance/compliance-quick-tasks.md)」を参照してください。
+
 ## <a name="compliance"></a>コンプライアンス
 
 Microsoft 365 のこれらのコンプライアンス機能を使用して、内部ポリシーや規制要件に準拠します。
@@ -64,10 +66,12 @@ Microsoft 365 のこれらのコンプライアンス機能を使用して、内
 | データ損失防止 (DLP) | 内部や外部での個人情報を含むデータの共有などの危険な共有、偶発的な共有、不適切な共有を検出し、警告し、ブロックします。 | Microsoft 365 E3、E5 | 
 | アプリの条件付きアクセスを制御する | 機密データがユーザーの個人用デバイスでダウンロードされるのを防止します。 | Microsoft 365 E3、E5 |
 | データの保持ラベルとポリシー | データの保持期間や、顧客の個人データの保管についての要件などの情報ガバナンスの制御を展開し、組織のポリシーやデータ規制に準拠します。 | Microsoft 365 E3、E5 |
-| メールの暗号化 | 組織内外のユーザーとの間で、顧客の個人情報などの規制されたデータを含む暗号化されたメール メッセージを送受信します。 | Microsoft 365 E3、E5 |
+| Office のメッセージの暗号化 (OME) | 組織内外のユーザーとの間で、顧客の個人情報などの規制されたデータを含む暗号化されたメール メッセージを送受信します。 | Microsoft 365 E3、E5 |
 | コンプライアンス マネージャー | Microsoft Service Trust Portal のワークフローベースのリスク評価ツールを使用して、Microsoft のクラウド サービスに関連する組織の規制準拠の取り組みを管理します。 | Microsoft 365 E3、E5 |
 | コンプライアンス スコア (プレビュー) | Microsoft 365 コンプライアンス センターで、現在のコンプライアンス構成の全体のスコアと改善のための推奨事項を確認しましょう。 | Microsoft 365 E3、E5 |
 ||||
+
+詳細については、「[在宅勤務をサポートするセキュリティ チームのための最も重要な 12 のタスク](../security/top-security-tasks-for-remote-work.md)」を参照してください。
 
 ## <a name="results-of-step-3"></a>手順 3 の結果
 
