@@ -38,6 +38,8 @@
           href: service-description/operations-and-monitoring.md
         - name: アプリケーションの要件
           href: service-description/mmd-app-requirements.md
+        - name: アプリケーション制御
+          href: service-description/app-control.md
         - name: サービスの変更とコミュニケーション
           href: service-description/servicechanges.md
         - name: サービス プランの例外
@@ -89,6 +91,8 @@
               href: get-started/register-reused-devices-self.md
         - name: ユーザーがデバイスを使えるようにする
           href: get-started/get-started-devices.md
+        - name: アプリ制御の使用を開始する
+          href: get-started/get-started-app-control.md
         - name: アプリを展開する
           href: get-started/deploy-apps.md
           items:
@@ -116,6 +120,8 @@
           href: working-with-managed-desktop/end-user-support.md
         - name: アプリを管理する
           href: working-with-managed-desktop/manage-apps.md
+        - name: アプリ制御を操作する
+          href: working-with-managed-desktop/work-with-app-control.md
         - name: 構成可能な設定
           href: working-with-managed-desktop/config-setting-overview.md
           items:

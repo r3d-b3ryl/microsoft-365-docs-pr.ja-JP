@@ -191,6 +191,10 @@
               items:
                 - name: セキュア スコアの概要
                   href: mtp/microsoft-secure-score.md
+                - name: セキュリティ体制の可視性を獲得する
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: スコアの履歴を記録し、目標を達成する
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: 今後の予定
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: レポート
@@ -215,8 +219,12 @@
               href: mtp/device-profile.md
             - name: フィードバックの提供
               href: mtp/feedback.md
-            - name: ServiceNow を介してチケットを管理する
-              href: ./mtp/tickets.md
+            - name: ServiceNow のチケットとタスクを作成する
+              items:
+                - name: ServiceNow 統合の概要
+                  href: ./mtp/tickets.md
+                - name: セキュリティセンターの ServiceNow チケット
+                  href: ./mtp/tickets-security-center.md
     - name: Office 365 セキュリティ
       items:
         - name: 概要
@@ -407,8 +415,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: 侵害されたユーザー アカウントをすばやく検出して対処する
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: 悪意のあるメールを調査して修復する
+            - name: 悪意のあるメールを調査する
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: 悪意のあるメールを修復する
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: ATP レポートを表示して閲覧する
               href: ./office-365-security/view-reports-for-atp.md
             - name: 脅威の分析によって最新の攻撃行動を理解する
