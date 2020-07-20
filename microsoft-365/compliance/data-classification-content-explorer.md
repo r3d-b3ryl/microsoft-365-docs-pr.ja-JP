@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 731ae51a02e4a6fbd35b5be7c0bf083c814ddfd3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327853"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127044"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -31,7 +31,7 @@ ms.locfileid: "44327853"
 
 ## <a name="prerequisites"></a>前提条件
 
-データ分類にアクセスして使用するすべてのアカウントには、これらのいずれかのサブスクリプションのライセンスが割り当てられている必要があります。
+データ分類にアクセスし、データ分類を使用するすべてのアカウントには、以下のサブスクリプションのいずれかからライセンスが割り当てられている必要があります。
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
@@ -92,7 +92,7 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 
 ### <a name="retention-labels"></a>保持ラベル
 
-[保持ラベル](labels.md)を使用すると、ラベル付けされたアイテムの保持期間、およびアイテムを削除する前に行う手順を定義できます。 手動で、またはポリシーを使用して自動的に適用することができます。 組織が法的要件および規制要件を遵守するのに役立ちます。
+[保持ラベル](retention.md)を使用すると、ラベル付けされたアイテムの保持期間、およびアイテムを削除する前に行う手順を定義できます。 手動で、またはポリシーを使用して自動的に適用することができます。 組織が法的要件および規制要件を遵守するのに役立ちます。
 
 ### <a name="how-to-use-content-explorer"></a>コンテンツ エクスプローラーの使用方法
 
@@ -139,8 +139,7 @@ Exchange フォルダー、SharePoint、OneDrive サイトなどの場所をド�
 
 ## <a name="see-also"></a>関連項目
 
-- [機密ラベル](sensitivity-labels.md)
-- [保持ラベル](labels.md)
+- [秘密度ラベルの詳細](sensitivity-labels.md)
+- [アイテム保持ポリシーと保持ラベルの詳細](retention.md)
 - [機密情報の種類のエンティティ定義.md](sensitive-information-type-entity-definitions.md)
-- [アイテム保持ポリシーの概要](retention-policies.md)
 - [データ損失防止の概要](data-loss-prevention-policies.md)

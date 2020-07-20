@@ -1,5 +1,5 @@
 ---
-title: Teams のアイテム保持ポリシーの詳細
+title: Teams の保持の詳細
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,24 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 8e163aa9f5072e0b2685521fcae37f130d132473
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083495"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127384"
 ---
-# <a name="learn-about-retention-policies-for-microsoft-teams"></a>Microsoft Teams のアイテム保持ポリシーの詳細
+# <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-この記事の情報は、Microsoft Teams に固有の情報が含まれているため、「[アイテム保持ポリシーの詳細](retention-policies.md)」を補足するものです。
+この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、Microsoft Teams に固有の情報が含まれています。
 
-## <a name="how-a-retention-policy-works-with-microsoft-teams"></a>アイテム保持ポリシーは Microsoft Teams に対してどのように作用するか
+## <a name="how-retention-works-with-microsoft-teams"></a>Microsoft Teams での保持のしくみ
 
 アイテム保持ポリシーを使用して、Teams 内のチャットとチャネル メッセージを保持できます。 Teams のチャットは、チャットに含まれる各ユーザーのメールボックス内の隠しフォルダーに保存されます。また、Teams のチャネル メッセージは、チーム用のグループ メールボックス内の同様の隠しフォルダーに保存されます。 
 
-Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、この Teams のデータの保持および削除を行うには、Teams の場所を使用することを強くお勧めします。 Teams の場所を使用すると、Exchange メールボックスおよび基になる Azure を利用したチャット サービスの両方から完全にデータが削除されます。 詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](https://go.microsoft.com/fwlink/?linkid=871258)」、特に「[情報保護アーキテクチャ](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
+Azure を利用したチャット サービスでもこのデータが保存されますが、Teams でもこのサービスを使用していることを理解することが重要です。既定では、このサービスはデータを無期限に保存します。 このため、この Teams データを保持および削除する場合は、Teams の場所を使用する保持ポリシーを作成することをお勧めします。 この保持ポリシーでは、Exchange メールボックスとその基になる Azure を利用したチャット サービスの両方から完全にデータが削除される可能性があります。 詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](https://go.microsoft.com/fwlink/?linkid=871258)」、特に「[情報保護アーキテクチャ](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
 
 Teams のチャットとチャネル メッセージは、ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーの影響を受けません。 Teams のチャットとチャネル メッセージは Exchange に保存されますが、この Teams のデータは、**Teams のチャネル メッセージ**と **Teams のチャット**の場所に対して構成されているアイテム保持ポリシーによってのみ含まれます。
 
@@ -71,27 +71,9 @@ Teams のチャットとチャネル メッセージは、ユーザーまたは�
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business および Teams の相互運用チャット
 
-Skype for Business と Teams の相互運用チャットでも、処理のフローは同じです。 Skype for Business のチャットが Teams に届くと、Teams のチャット スレッドのメッセージとなり、適切なメールボックスに取り込まれます。 Teams のアイテム保持ポリシーは、これらのメッセージに Teams のスレッドから適用されます。 
+Skype for Business のチャットが Teams に届くと、Teams のチャット スレッドのメッセージとなり、適切なメールボックスに取り込まれます。 Teams のアイテム保持ポリシーは、これらのメッセージに Teams のスレッドから適用されます。 
 
 ただし、Skype for Business に対して会話履歴がオンになっていて、Skype for Business のクライアント側からその履歴がメールボックスに保存されている場合、このチャット データは Teams のアイテム保持ポリシーでは処理されません。 このコンテンツには、Skype for Business に構成されているアイテム保持ポリシーを使用します。
-
-## <a name="additional-retention-policies-needed-to-support-teams"></a>Teams をサポートするのに必要な追加のアイテム保持ポリシー
-
-Teams は、単なるチャットやチャネルメッセージを送るだけのツールではありません。 Microsoft 365 グループ (以前の Office 365 グループ) から作成されたチームがある場合は、**Office 365 グループ**の場所を使用して、その Microsoft 365 グループを含むアイテム保持ポリシーを追加で構成する必要があります。 このアイテム保持ポリシーは、グループのメールボックス、サイト、およびドキュメントのコンテンツに適用されます。
-
-チームサイトが Microsoft 365 グループに接続されていない場合に、Teams 内のファイルを保持および削除するためには、**SharePoint サイト**または **OneDrive アカウント**の場所を含むアイテム保持ポリシーが必要です。
-
-- チャット内で共有されるファイルは、ファイルを共有したユーザーの OneDrive アカウントに保存されます。 
-
-- チャネルにアップロードされたファイルは、チームの SharePoint 内に保存されます。
-
-> [!TIP]
-> チームの SharePoint サイトおよびチーム内のユーザーの OneDrive アカウントを選択すると、Microsoft 365 グループに接続されていない特定のチームのみのファイルにアイテム保持ポリシーを適用出来ます。
-
-Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに適用されているアイテム保持ポリシーにより、Teams のチャットやチャネル メッセージで参照されているファイルが、それらのメッセージが削除されるよりも先に削除される場合があります。 このような場合、そのファイルは Teams のメッセージに引き続き表示されますが、ユーザーがファイルをクリックすると、"ファイルが見つかりません" というエラーが表示されます。 この動作はアイテム保持ポリシーに固有のものではなく、ユーザーが SharePoint または OneDrive から手動でファイルを削除した場合にも発生する可能性があります。
-
-> [!NOTE]
-> Teams のチャネル メッセージまたは Teams のチャットを含むアイテム保持ポリシーには、Teams の場所のみを含めることができます。 したがって、Teams でサポートされたその他のコンテンツを保持または削除するには、個別のアイテム保持ポリシーを作成する必要があります。
 
 ## <a name="meetings-and-external-users"></a>会議と外部ユーザー
 
@@ -113,11 +95,11 @@ Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに
 
 ## <a name="limitations"></a>制限事項
 
-Teams の保持機能の最適化に継続的に取り組んでいます。 それまでの間、注意すべき制限事項がいくつかあります。
+Teams の保持機能の最適化に継続的に取り組んでいます。 それまでの間、Teams のチャネル メッセージとチャットで保持を使用する場合は、次の制限事項に注意する必要があります。
   
 - **Teams には、個別のアイテム保持ポリシーが必要です**。 アイテム保持ポリシーを作成して、Teams の場所をオンに切り替えると、その他のすべての場所がオフに切り替わります。 Teams を含むアイテム保持ポリシーには、Teams のみを含めることが可能で、他の場所は含まれません。
 
-- **Teams は組織全体のポリシーに含まれていません**。 組織全体のポリシーを作成する場合、Teams は別のアイテム保持ポリシーを必要とするため、含まれません。
+- **Teams は組織全体のポリシーに含まれていません**。 組織全体のポリシーを作成する場合、Teams のチャネル メッセージとチャットには別のアイテム保持ポリシーが必要なため、それらはそのポリシーには含まれません。
 
 - **Teams は高度なアイテム保持をサポートしていません**。 アイテム保持ポリシーを作成するときに、[[特定の条件を満たすコンテンツを特定するための高度な設定](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)] を選択した場合、Teams の場所は使用できません。 現在、Teams の保持は、それらの場所を選択すると、すべてのチャットおよびチャネル メッセージ コンテンツに適用されます。
 
@@ -135,14 +117,6 @@ Teams の保持機能の最適化に継続的に取り組んでいます。 そ�
     
     - **[Teams のチャット]** の場所にある **[ユーザーの選択]** を選択した場合、ゲストや、メールボックスのユーザーではないユーザーが表示される場合があります。 アイテム保持ポリシーはこれらのユーザー向けに設計されていないため、選択しないでください。
 
-## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>Microsoft Teams のアイテム保持ポリシーを構成する方法
+## <a name="configuration-guidance"></a>構成ガイダンス
 
-「[アイテム保持ポリシーの作成と構成](create-retention-policies.md)」の手順に従い、ウィザードの [**場所の選択**] ページで、次のオプションを選択します。
-
-- [**特定の場所を選択**] > [**Teams のチャネル メッセージ**] と [**Teams のチャット**]
-
-Teams に適用されるアイテム保持ポリシーでは、規制上の理由で必要になる可能性がある [[保持ロック](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)] を使用できます。
-
-## <a name="related-information"></a>関連情報
-
-[Microsoft Teams の保持ポリシー](https://docs.microsoft.com/microsoftteams/retention-policies)
+Microsoft 365 で保持を構成する準備ができている場合は、「[アイテム保持ポリシーと保持ラベルの使用を開始する](get-started-with-retention.md)」を参照してください。

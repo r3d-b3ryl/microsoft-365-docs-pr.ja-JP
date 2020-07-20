@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して保持ラベルを一括で作成および発行する
+title: PowerShell を使用して保持ラベルを作成および発行する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: PowerShell を使用して、組織の保持スケジュールを実装するOffice 365 保持ラベルの使用方法について説明します。
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: PowerShell を使用して、Microsoft 365 コンプライアンス センターとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035535"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126368"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを一括で作成および発行する
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを作成および発行する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-Office 365 では、保持ラベルを使用して組織の保持スケジュールを実装できます。レコード マネージャーまたは法令遵守責任者は、作成および発行すべき保持ラベルを何百も持っている可能性があります。セキュリティ &amp; コンプライアンス センターの UI で保持ラベルの作成と発行を行うことができますが、一度に 1 つずつ保持ラベルを作成するのは時間がかかり、非効率です。
+Microsoft 365 のドキュメントやメールを保持または削除するために[保持ラベル](retention.md)を使用することを決定した後で、非常に多くの、時には数百個もの保持ラベルを作成して発行することが必要であることが判明する場合があります。 大量に保持ラベルを作成する場合、Microsoft 365 コンプライアンス センターから[ファイル プラン](file-plan-manager.md)を使用して保持ラベルを作成することをお勧めします。 ただし、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) も使用できます。
   
-以下に示すスクリプトと .csv ファイルを使用することで、保持ラベルと一括作成し、保持ラベル ポリシーを発行できます。 まず、保持ラベルのリストと保持ラベル ポリシーのリストを Excel で作成します。次に、PowerShell を使用してこれらのリストで保持ラベルと保持ラベル ポリシーを一括作成します。 こうすることで、保持スケジュールで必要な保持ラベルをすべて一度に簡単に作成して発行できます。
-  
-保持ラベルの詳細については、「[ラベルの概要](labels.md)」を参照してください。
+この記事の情報、テンプレート ファイルと例、およびスクリプトを参考にすると、保持ラベルを一括作成し、保持ラベル ポリシーでそれらを発行することができます。 そのようにすると、それらの保持ラベルを[管理者とユーザーが適用する](create-apply-retention-labels.md#how-to-apply-published-retention-labels)ことができるようになります。
+
+説明されている手順では、自動適用される保持ラベルはサポートされません。
+
+概要: 
+
+1. Excel で、保持ラベルのリストとそれらの保持ラベル ポリシーのリストを作成します。
+
+2. PowerShell を使用して、それらのリストに含まれる保持ラベルと保持ラベル ポリシーを作成します。
   
 ## <a name="disclaimer"></a>免責事項
 
-このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
+この記事で提供されるサンプル スクリプトは、Microsoft のいかなる標準サポート プログラムまたはサービスの下でもサポートされません。 サンプル スクリプトは現状のまま提供され、いかなる保証も伴いません。 さらに、Microsoft は、商品性、特定目的への適合性を含む一切の黙示の保証をいたしかねます。 本サンプル スクリプトおよびドキュメントの使用または性能に起因するすべてのリスクは、お客様が負うものとします。 サンプル スクリプトおよびドキュメントを使用したこと、または使用できなかったことに伴って生じるいかなる損害 (業務利益の損失、業務の中断、業務情報の損失、金銭上の損失、その他一切の損害) についても、Microsoft、Microsoft に帰属する作者、スクリプトの作成、製造、または納入に関与したその他のすべての人員は、いかなる場合も責めを負わないものとします。
   
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>手順 1: 保持ラベルを作成するための .csv ファイルを作成する
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>手順 1: 保持ラベル用の .csv ファイルを作成する
 
-まず、設定を持つ保持ラベルのリストを含む .csv ファイルを作成します。下のサンプルを Excel にコピーしてテンプレートとして使用し、テキストを列に変換します (Excel で \>**[データ]** タブ\>**[区切り位置]**\>**[コンマやタブなどの区切り文字によってフィールドごとに区切られたデータ]**\>**[コンマ]**\>**[一般]** を選択します)。次にワークシートを見つけやすい場所に .csv ファイルとして保存します。
-  
-このコマンドレットのパラメーター値の詳細については、「[New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)」を参照してください。
+1. 4 種類の異なる保持ラベルのテンプレートおよびエントリ例を含む、次のサンプル .csv ファイルをコピーして、Excel に貼り付けます。 
+
+2. **[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。
+
+2. 例を、実際に使用する保持ラベルと設定のエントリに置き換えます。 パラメーター値の詳細については、「[New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)」を参照してください。
+
+3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。 例: C:\>Scripts\Labels.csv
+
   
 注:
-  
-- 保持ラベルを作成するためのソース ファイルを指定しない場合、スクリプトは進行し、保持ラベルを発行するためのソース ファイルを要求してきます (次のセクションを参照)。スクリプトは既存の保持ラベルのみを発行します。
-    
+
 - 既に存在するものと同じ名前の保持ラベルが .csv ファイルに含まれている場合、スクリプトはその保持ラベルの作成をスキップします。重複する保持ラベルは作成されません。
     
-- 列見出しを変更したり、名前を変更したりすると、スクリプトは失敗します。このスクリプトでは、ここに示す形式の .csv ファイルが必要です。
+- サンプル .csv ファイルで指定されている列見出しを変更したり、名前を変更したりしないでください。変更すると、スクリプトは失敗します。
     
-### <a name="sample-csv-file"></a>CSV ファイルのサンプル
+### <a name="sample-csv-file-for-retention-labels"></a>保持ラベル用のサンプル .csv ファイル
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>手順 2: ラベルを発行するための .csv ファイルを作成する
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>手順 2: 保持ラベル ポリシー用の .csv ファイルを作成する
 
-次に、場所とその他の設定を持つ保持ラベル ポリシーのリストを含む .csv ファイルを作成します。下のサンプルを Excel にコピーしてテンプレートとして使用し、テキストを列に変換します (Excel で \>**[データ]** タブ\>**[区切り位置]**\>**[コンマやタブなどの区切り文字によってフィールドごとに区切られたデータ]**\>**[コンマ]**\>**[一般]** を選択します)。次にワークシートを見つけやすい場所に .csv ファイルとして保存します。
-  
-このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512)」を参照してください。
-  
+1. 3 種類の異なる保持ラベル ポリシーのテンプレートおよびエントリ例を含む、次のサンプル .csv ファイルをコピーして、Excel に貼り付けます。 
+
+2. **[データ]** タブ \> **[区切り位置]** \> **[区切り文字]** \> **[カンマ]** \> **[標準]** の順に選択して、テキストを列に変換します。
+
+2. 例を、実際に使用する保持ラベル ポリシーとそれらの設定のエントリに置き換えます。 このコマンドレットのパラメーター値の詳細については、「[New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)」を参照してください。
+
+3. 後の手順で見つけやすい場所に、このワークシートを .csv ファイルとして保存します。 例: `<path>Policies.csv`
+
+
 注:
   
-- 保持ラベルを発行するためのソース ファイルを指定していない場合、スクリプトで保持ラベルは作成されますが (前のセクションを参照)、発行されません。
-    
 - 既に存在するものと同じ名前の保持ラベル ポリシーが .csv ファイルに含まれている場合、スクリプトはその保持ラベル ポリシーの作成をスキップします。重複する保持ラベル ポリシーは作成されません。
     
-- スクリプトでは、コンテンツに手動で適用されている保持ラベルのみが発行されます。 このスクリプトでは、コンテンツに自動適用されている保持ラベルはサポートされていません。
+- サンプル .csv ファイルで指定されている列見出しを変更したり、名前を変更したりしないでください。変更すると、スクリプトは失敗します。
     
-- 列見出しを変更したり、名前を変更したりすると、スクリプトは失敗します。このスクリプトでは、ここに示す形式の .csv ファイルが必要です。
-    
-### <a name="sample-csv-file"></a>CSV ファイルのサンプル
+### <a name="sample-csv-file-for-retention-policies"></a>アイテム保持ポリシー用のサンプル .csv ファイル
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -90,20 +100,30 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 ## <a name="step-3-create-the-powershell-script"></a>手順 3: PowerShell スクリプトを作成する
 
-以下の PowerShell スクリプトをコピーしてメモ帳に貼り付けます。\<path\>CreateRetentionSchedule.ps1 のように、ファイル名にサフィックス .ps1 を使用して、簡単に見つけやすい場所にファイルを保存します。
-  
+1. 次の PowerShell スクリプトをコピーして、メモ帳に貼り付けます。
+
+2. ファイル名拡張子として **.ps1** を使用して、見つけやすい場所にファイルを保存します。 例: `<path>CreateRetentionSchedule.ps1`
+
+注:
+
+- このスクリプトを実行すると、前の 2 つの手順で作成した 2 つのソース ファイルを指定するように求められます。
+    - 保持ラベルを作成するソース ファイルを指定しない場合、スクリプトは保持ラベル ポリシーの作成に進みます。 
+    - 保持ラベル ポリシーを作成するソース ファイルを指定しない場合、スクリプトは保持ラベルのみを作成します。
+
+- スクリプトを実行すると、ログ ファイルが生成されます。このファイルには、実行されたアクションと、そのアクションが成功したか失敗したかが記録されます。 このログ ファイルの場所については、最後の手順を参照してください。
+
 ### <a name="powershell-script"></a>PowerShell スクリプト
 
-```
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a>手順 4: セキュリティ&amp;コンプライアンス センター PowerShell に接続する
+## <a name="step-4-run-the-powershell-script"></a>手順 4: PowerShell スクリプトを実行する
 
-以下の手順に従います。
+まず、[セキュリティ/コンプライアンス センターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)します。
+
+次に、保持ラベルを作成および発行するスクリプトを実行します。
   
-- [セキュリティ/コンプライアンス センター PowerShell に接続する](https://go.microsoft.com/fwlink/?linkid=799771)
+1. セキュリティ/コンプライアンス センターの PowerShell セッションで、パスを入力し、その後ろに文字「`.\`」とスクリプトのファイル名を入力し、Enter キーを押してスクリプトを実行します。 例:
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>手順 5: PowerShell スクリプトを実行して保持ラベルを作成および発行する
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-セキュリティ&amp;コンプライアンス センター PowerShell に接続したら、次に、保持ラベルを作成して発行するスクリプトを実行します。
-  
-1. セキュリティ&amp;コンプライアンス PowerShell セッションでパスを入力し、その後ろに文字「.\」とスクリプトのファイル名を入力し、ENTER キーを押してスクリプトを実行します。例を以下に示します。
+2. スクリプトにより、前の手順で作成した .csv ファイルの場所を要求するメッセージが表示されます。 パスを入力し、その後ろに文字「`.\`」と .csv ファイルの名前を入力して、Enter キーを押します。 たとえば、最初のプロンプトでは次のように入力します。
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    スクリプトは、上で作成した .csv ファイルの場所を要求するダイアログを表示します。
-    
-2. パスを入力し、その後ろに文字「.\」と .csv ファイルの名前を入力し、ENTER キーを押します。例を以下に示します。
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a>手順 5: 結果を記録したログ ファイルを確認する
 
-## <a name="step-6-view-the-log-file-with-the-results"></a>手順 6: 結果を含むログ ファイルを表示する
+スクリプトが作成したログ ファイルを使用して、結果を確認し、解決する必要があるエラーを特定します。
 
-スクリプトを実行すると、実行された各アクションと、アクションが成功したか失敗したかを記録するログ ファイルが生成されます。ログ ファイルには、作成された保持ラベルと発行された保持ラベルに関するすべてのメタデータが含まれています。ログ ファイルはこの場所で見つけられます。ファイル名の数字は異なることに注意してください。
+ログ ファイルは次の場所にあります。ただし、サンプル ファイル名の数字は異なる場合があります。
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt

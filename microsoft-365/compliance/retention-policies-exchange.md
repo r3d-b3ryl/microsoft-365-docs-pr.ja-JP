@@ -16,37 +16,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Exchange メールと Exchange パブリック フォルダーに特に適用される保持動作について説明します。
-ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+description: Exchange の保持のしくみについて説明します。
+ms.openlocfilehash: e1860b9ff9c521a5a6a61c58d822a2a893570e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080094"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127444"
 ---
-# <a name="learn-about-retention-policies-for-exchange"></a>Exchange のアイテム保持ポリシーの詳細
+# <a name="learn-about-retention-for-exchange"></a>Exchange の保持の詳細
 
-この記事の情報は、Exchange に固有の情報が含まれているため、「[アイテム保持ポリシーの詳細](retention-policies.md)」を補足するものです。
+この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、Exchange に固有の情報が含まれています。
 
-## <a name="how-a-retention-policy-works-with-exchange"></a>Exchange でのアイテム保持ポリシーの適用方法
-
-ユーザーのメール、予定表、その他のメールボックスのアイテムについては、アイテム保持ポリシーをメールボックスレベルで適用します。
-
-パブリックフォルダーの場合、アイテム保持ポリシーを、フォルダーまたはメールボックスレベルに限らず、すべてのパブリックフォルダーに適用します。
-
-これらの場所でアイテム保持ポリシーを構成する場合、次のメールアイテムが含まれます: メールメッセージ (下書きを含む) 、添付ファイル、タスク、予定表アイテム、終了日、メモ。 連絡先、および終了日が設定されていないタスクおよび予定表アイテムは含まれません。 Skype やチームの保存メッセージなど、メールボックスに保存されている他のアイテムは、個別のアイテム保持ポリシーに含まれます。
+## <a name="how-retention-works-for-exchange"></a>Exchange の保持のしくみ
 
 メールボックスとパブリック フォルダーの両方とも、アイテムを保持するために、[[回復可能なアイテム] フォルダー](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) を使用します。 電子情報開示のアクセス許可を割り当てられているユーザーだけが、他のユーザーの [回復可能なアイテム] フォルダーのアイテムを表示できます。
   
 既定では、削除済みアイテム フォルダー以外のフォルダーからメッセージを削除すると、そのメッセージは削除済みアイテム フォルダーに移動されます。 ユーザーが [削除済みアイテム] フォルダー内のアイテムを削除すると、メッセージは [回復可能なアイテム] フォルダーに移動されます。 ただし、ユーザーは、任意のフォルダー内のアイテムを論理的な削除 (Shift + Delete) ができます。これにより、削除済みアイテム フォルダーがバイパスされ、アイテムが回復可能なアイテム フォルダーに直接移動します。
   
-アイテム保持ポリシーを Exchange の場所に適用すると、タイマー ジョブが定期的に [回復可能なアイテム] フォルダー内のアイテムを評価します。 アイテムが少なくとも 1 つのアイテム保持ポリシーと一致しない場合、そのアイテムは [回復可能なアイテム] フォルダーから完全に削除されます (物理的な削除とも呼ばれます)。
+Exchange データに保持設定を適用すると、[回復可能なアイテム] フォルダー内のアイテムがタイマー ジョブによって定期的に評価されます。 アイテムが少なくとも 1 つのアイテム保持ポリシーまたは保持ラベルと一致しない場合、そのアイテムは [回復可能なアイテム] フォルダーから完全に削除されます (物理的な削除とも呼ばれます)。
 
 タイマー ジョブの実行には最大 7 日かかる場合があり、Exchange の場所には少なくとも 10 MB が必要です。
   
 ユーザーがメールボックスのアイテムのプロパティ (件名、本文、添付ファイル、送信者と受信者、メッセージの送受信日付など) を変更しようとすると、変更が確定される前に元のアイテムのコピーが [回復可能なアイテム] フォルダーに保存されます。 2 番目以降の変更ごとに、この操作が繰り返されます。 保持期間が終了すると、[回復可能なアイテム] フォルダー内のコピーは完全に削除されます。
 
-アイテム保持ポリシーがメールボックスまたはパブリック フォルダーに割り当てられた後のコンテンツのパスは、保持設定が保持および削除、保持のみ、あるいは削除のみのどれであるかによって異なります。
+保持設定が Exchange のコンテンツに適用された後のコンテンツのパスは、保持設定が保持および削除、保持のみ、あるいは削除のみのどれであるかによって異なります。
 
 保持設定が保持および削除の場合
 
@@ -70,24 +64,10 @@ ms.locfileid: "45080094"
 
 2. 設定した期間中に**アイテムが削除された場合**: アイテムはすぐに [回復可能なアイテム] フォルダーに移動されます。 ユーザーが [回復可能なアイテム] フォルダーからアイテムを削除するかフォルダーを空にすると、そのアイテムは完全に削除されます。 それ以外の場合、14 日が経過すると、アイテムは [回復可能なアイテム] フォルダーから完全に削除されます。 
 
-## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>アイテム保持ポリシーから特定の種類の Exchange アイテムを除外する
-
-保持設定が保持のみの場合、PowerShell を使用して、アイテム保持ポリシーから特定の種類の Exchange アイテムを除外することができます。 たとえば、メールボックスでボイスメール メッセージ、IM 会話、その他の Skype for Business Online のコンテンツを除外できます。 予定表、メモ、タスク アイテムを除外することもできます。 この機能は、PowerShell を使用した場合にのみ使用できます。Microsoft 365 コンプライアンス センターのウィザードを使用してアイテム保持ポリシーを作成する場合は使用できません。
-  
-アイテム保持ポリシーで選択した Exchange アイテムの種類を除外するには、`ExcludedItemClasses` パラメーターを [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) および [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) コマンドレットで使用します。
-
-アイテム保持ポリシーのコマンドレットを使用するには、最初に[セキュリティ/コンプライアンス センターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)する必要があります。
-
 ## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
-ユーザーが組織を離れるときに、ユーザーのメールボックスがアイテム保持ポリシーに含まれていると、ユーザーの Microsoft 365 アカウントが削除されるときにメールボックスは非アクティブなメールボックスになります。 非アクティブなメールボックスのコンテンツは、メールボックスが非アクティブになる前に配置されたアイテム保持ポリシーがあれば、引き続きその適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
+ユーザーが組織を離れるときに、ユーザーのメールボックスがアイテム保持ポリシーに含まれていると、ユーザーの Microsoft 365 アカウントが削除されるときにメールボックスは非アクティブなメールボックスになります。 非アクティブなメールボックスのコンテンツは、メールボックスが非アクティブになる前に配置されたアイテム保持ポリシーがあれば、引き続きその適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。
 
-## <a name="how-to-configure-a-retention-policy-for-exchange"></a>Exchange のアイテム保持ポリシーを構成する方法
+## <a name="configuration-guidance"></a>構成ガイダンス
 
-「[アイテム保持ポリシーの作成と構成](create-retention-policies.md)」の手順に従い、ウィザードの [**場所の選択**] ページで、次のオプションのいずれかを選択します。
-
-- **Exchange メール、パブリック フォルダー、Office 365 グループ、OneDrive および SharePoint ドキュメントのコンテンツにのみポリシーを適用する**
-
-- [**特定の場所を選択する**] > [**Exchange メール**]、[**Exchange パブリック フォルダー**] と ［**Office 365 グループ**］。
-
-Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール**の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 これらのメールボックスのコンテンツを保持するには、**Office 365 グループ**の場所を選択します。
+Microsoft 365 で保持を構成する準備ができている場合は、「[アイテム保持ポリシーと保持ラベルの使用を開始する](get-started-with-retention.md)」を参照してください。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: aa5952b26549f9ba9b1c584eb55e203fd53c50e5
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080104"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127504"
 ---
 # <a name="learn-about-records"></a>レコードについての詳細
 
@@ -38,7 +38,7 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
 - 保持期間の終了時に削除された時点で、廃棄の証明を取得します。
 
-[保持ラベル](labels.md)を使用して、コンテンツをレコードとしてマークします。 レコードを宣言する保持ラベルを作成すると、それらのラベルを発行してユーザーや管理者が手動でコンテンツに適用できるようにするか、レコードとしてマークするコンテンツにそれらのラベルを自動的に適用することができます。 手順については、「[保持ラベルを作成、発行、および自動適用する](create-retention-labels.md)」を参照してください。
+[保持ラベル](retention.md#retention-labels)を使用して、コンテンツをレコードとしてマークします。 レコードを宣言する保持ラベルを作成すると、それらのラベルを発行してユーザーや管理者が手動でコンテンツに適用できるようにするか、レコードとしてマークするコンテンツにそれらのラベルを自動的に適用することができます。
 
 保持ラベルを使用してレコードを宣言することで、Microsoft 365 環境全体で単一の、一貫したレコード管理戦略を実装することができます。
 
@@ -60,15 +60,15 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
 
     また、(SharePoint と OneDrive 内の) フォルダーに適用されるレコード ラベルを、コンテンツをレコードとして宣言しない保持ラベルに変更すると、フォルダー内のアイテムは既存のレコード ラベルを保持します。
 
-    SharePoint および OneDrive フォルダーへの保持ラベルの適用の詳細については、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定の保持ラベルの適用](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)」を参照してください。
+    SharePoint および OneDrive フォルダーへの保持ラベルの適用の詳細については、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツへの既定の保持ラベルの適用](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)」を参照してください。
 
-  - **レコードは削除できません**。 「[Exchange でのアイテム保持ポリシーの適用方法](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange)」で説明されているように、ユーザーが Exchange でレコードを削除しようとすると、アイテムは [回復可能なアイテム] フォルダーに移動されます。
+  - **レコードは削除できません**。 「[Exchange の保持のしくみ](retention-policies-exchange.md#how-retention-works-for-exchange)」で説明されているように、ユーザーが Exchange でレコードを削除しようとすると、アイテムは [回復可能なアイテム] フォルダーに移動されます。
 
     ユーザーが SharePoint のレコードを削除しようとすると、「アイテムが削除されませんでした」というエラーが表示され、ライブラリに残ります。
 
     ![SharePoint の「アイテムが削除されませんでした」というメッセージ](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    「[SharePoint および OneDrive でのアイテム保持ポリシーの仕組み](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive)」で説明されているように、ユーザーが OneDrive でレコードを削除しようとすると、アイテムはアイテム保管ライブラリに移動されます。
+    「[SharePoint と OneDrive の保持のしくみ](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)」で説明されているように、ユーザーが OneDrive でレコードを削除しようとすると、アイテムはアイテム保管ライブラリに移動されます。
 
   - **レコード ラベルは削除できません。** レコードラベルがアイテムに適用された後、その場所の管理者 (SharePoint サイトのサイト コレクション管理者など) のみがそのレコード ラベルを削除することができます。
 
@@ -82,7 +82,11 @@ Microsoft 365 でレコードを管理することで、組織は企業のポリ
     
    ![[このラベルを使用して、コンテンツをレコードに分類する] チェックボックスをクリックします](../media/recordversioning6.png)
 
-3. 保持ラベルを SharePoint サイトおよび/または OneDrive アカウントに[公開](labels.md#how-retention-labels-work-with-retention-label-policies)または[自動適用](labels.md#applying-a-retention-label-automatically-based-on-conditions)します。
+3. 保持ラベルを SharePoint サイトと OneDrive アカウントに適用します。
+    
+    - [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+    
+    - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
 
 ### <a name="applying-a-retention-label-to-content"></a>コンテンツに保持ラベルを適用する
@@ -167,4 +171,6 @@ Exchange の場合、メールボックスへの書き込みアクセス権を�
 
 ## <a name="next-steps"></a>次の手順
 
-コンテンツをレコードとしてマークする設定を含む保持ラベルを作成して公開する方法については、「[保持ラベルを作成、発行、および自動適用する](create-retention-labels.md)」を参照してください。
+レコード管理に使用する保持ラベルをまだ作成していない場合は、「[アイテム保持ポリシーと保持ラベルの使用を開始する](get-started-with-retention.md)」を参照してください。
+
+レコード管理の構成と使用に関連するビデオをご希望の場合は、[YouTube のデータ ガバナンスに関するシリーズ](https://go.microsoft.com/fwlink/?linkid=867039)をご覧ください。

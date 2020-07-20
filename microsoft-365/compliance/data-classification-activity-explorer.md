@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーでは、ラベル付きコンテンツを取り扱うユーザーの操作の確認およびフィルター処理を行い、データ分類機能の機能性を完全なものにします。
-ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327843"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126646"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -75,7 +75,7 @@ Microsoft 365 は、SharePoint Online、OneDrive 全体で以下のようなア�
 > アクティビティ エクスプローラーは現在、Exchange Online の保持アクティビティを監視していません。
 
 ## <a name="see-also"></a>関連項目
-- [機密ラベル](sensitivity-labels.md)
-- [保持ラベル](labels.md)
+- [秘密度ラベルの詳細](sensitivity-labels.md)
+- [アイテム保持ポリシーと保持ラベルの詳細](retention.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-- [アイテム保持ポリシーの概要](retention-policies.md)
+

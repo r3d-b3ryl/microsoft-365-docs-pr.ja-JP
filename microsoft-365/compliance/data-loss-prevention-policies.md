@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 全体で組織の機密情報を識別、監視、および自動的に保護する方法について説明します。
-ms.openlocfilehash: 93d0eaf882569b6645c98699f83ad19a25af4864
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817946"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127534"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -337,11 +337,11 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
     
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>DLP ポリシーでの条件としての保持ラベルの使用
 
-事前に作成および発行された[保持ラベル](labels.md)を DLP ポリシーでの条件として使用する場合、注意すべき点がいくつかあります。
+事前に作成および発行された[保持ラベル](retention.md#retention-labels)を DLP ポリシーでの条件として使用する場合、注意すべき点がいくつかあります。
 
-- DLP ポリシーでの条件として保持ラベルを使用するには、保持ラベルを事前に作成、発行、および適用しておく必要があります。
-- 保持ラベルは、作成および発行された後、同期に最大 1 日、自動適用に最大 7 日かかる場合があります。 詳細については、「[保持ラベルが有効になるまでの所要時間](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)」を参照してください。
-- ポリシーに保持ラベルを使用するのは、***SharePoint Online と OneDrive for Business のアイテムに対してのみサポートされます***。
+- DLP ポリシーでの条件として保持ラベルを使用するには、保持ラベルを事前に作成して発行しておく必要があります。
+- 発行済みの保持ラベルを同期するには、1 から 7 日かかる場合があります。アイテム保持ポリシーで発行される保持ラベルの詳細については、「[保持ラベルが適用できるようになったとき](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)」を参照してください。自動的に発行されたアイテム保持ラベルの詳細については、「[保持ラベルが有効になるまでの所要時間](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)」を参照してください。
+- ポリシーでの保持ラベルの使用** は、SharePoint および OneDrive のアイテムに対してのみサポートされています***。
 
   ![条件としてのラベル](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
@@ -360,7 +360,7 @@ DLP ポリシーを作成して有効にすると、次の問題が発生する�
 
 機密情報を含むコンテンツには複数の機能を適用できます。
   
-- [保持ラベル](labels.md#applying-a-retention-label-automatically-based-on-conditions)と[保持ポリシー](retention-policies.md)は、このコンテンツに**保持**操作を適用できます。 
+- [保持ラベルとアイテム保持ポリシー](retention.md)はどちらも、このコンテンツに**保持**アクションを適用できます。 
     
 - DLP ポリシーは、このコンテンツに**保護**操作を適用できます。 ただし、これらの操作を適用する前に、DLP ポリシーにはラベルを含むコンテンツ以外にも一致する他の条件が必要です。 
     

@@ -1,5 +1,5 @@
 ---
-title: イベント ベースの保持の概要
+title: イベントの発生時に保持を開始する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,14 +20,14 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: a0e0025d23bda36d8b9e6315cb932e58d4237a5c
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: 15330c5be34d0cd482b83b4aab5f229cecf2a447
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068126"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126860"
 ---
-# <a name="overview-of-event-driven-retention"></a>イベント ベースの保持の概要
+# <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
@@ -44,12 +44,13 @@ ms.locfileid: "45068126"
 イベント ベースの保持は通常、レコード管理プロセスの一環として使用します。これは以下のことを意味します:
   
 - イベントに基づくラベルでは、通常、レコードとしてコンテンツを分類します。 詳細については、「[レコードの詳細](records.md)」を参照してください。
-    
+
 - レコードとして分類されているもののイベント トリガーがまだ発生していない文書は、イベントがそのドキュメントの保存期間をトリガーするまで無期限に保持されます (レコードを完全に削除することはできません)。
     
 - イベントに基づく保持ラベルは、通常、保持期間の最後に廃棄レビューをトリガーするため、レコード管理者はコンテンツを手動で確認して廃棄できます。 詳細については、「[コンテンツの廃棄](disposition.md)」を参照してください。
     
-イベントに基づく保持ラベルには、Microsoft 365 の他の保持ラベルと同じ機能があります。 詳細については、「[保持ラベルの詳細](labels.md)」を参照してください。
+
+イベントに基づくラベルには、Microsoft 365 の他の保持ラベルと同じ機能があります。 詳細については、「[アイテム保持ポリシーと保持ラベルの詳細](retention.md)」を参照してください。
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>イベントの種類、ラベル、イベント、アセット ID の関係を理解する
 
@@ -114,7 +115,10 @@ ms.locfileid: "45068126"
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>手順 3: イベント ベースの保持ラベルを発行または自動適用する
 
-他の保持ラベルと同じように、イベント ベースのラベルを[発行または自動適用](create-retention-labels.md)する必要があります。したがって、このラベルはドキュメントまたはメールに適用されます。
+他の保持ラベルと同じように、イベント ベースのラベルを発行するか自動適用して、コンテンツに手動または自動で適用されるようにする必要があります。
+- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+- [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
+
 
 > [!NOTE]
 > [**レコード管理**] > [**ファイル計画**] タブまたは [**データ ガバナンス**] > [**ラベル**] タブからイベント ベースの保持ラベルを選択した場合、[**ラベルの自動適用**] ボタンは使用できません。
