@@ -88,6 +88,11 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: 既存のインフラストラクチャを利用して展開する
           href: deploy-with-existing-infrastructure.md
+        - name: 展開および更新プログラム チャネルの構成例
+          href: deploy-update-channels-examples.md
+          items:
+            - name: 最新リリースの幅広い展開
+              href: deploy-update-channels-examples-rapid-deploy.md
         - name: 非エンタープライズ向けに展開する
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: ワークロードを展開する
