@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b99f927711ed1015b38d8020e287d76155ce706f
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095082"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200088"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft のセキュリティで保護されたスコア履歴を追跡し、目標を達成する
 
@@ -76,5 +76,6 @@ ms.locfileid: "45095082"
 ## <a name="related-resources"></a>関連リソース
 
 - [Microsoft セキュリティスコアの概要](microsoft-secure-score.md)
-- [セキュリティ体制の可視性を獲得する](microsoft-secure-score-improvement-actions.md)
+- [セキュリティの姿勢を評価する](microsoft-secure-score-improvement-actions.md)
 - [今後の予定](microsoft-secure-score-whats-coming.md)
+- [新機能](microsoft-secure-score-whats-new.md)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft 365 コンプライアンスセンターに継続的に新機能を追加しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2a48a47c631b0fd3c7e785d98b7221a0c3550c79
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 29d99e0af5f161c91b8a192b9d6f1545a13c7c80
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126910"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199467"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 コンプライアンスセンターの新機能
 
@@ -42,7 +42,7 @@ ms.locfileid: "45126910"
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (有料または試用版)
 - Microsoft 365 Enterprise E3 サブスクリプションと[Microsoft E5 コンプライアンスアドオン](https://go.microsoft.com/fwlink/?linkid=2120432)
 
-プレビューリリース後に、[新しい役割グループ](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)と[ソリューションレベルの設定](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings)を含むいくつかの改善を行いました。
+プレビューリリース後に、[新しい役割グループ](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)と[ソリューションレベルの設定](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)を含むいくつかの改善を行いました。
 
 そのため、ソリューションを使用するときにはフィードバックを残して、改善を続けられるようにしてください。
 
@@ -92,7 +92,7 @@ ms.locfileid: "45126910"
 
 ### <a name="just-launched"></a>開始したばかり
 
-**通信のコンプライアンス**
+**通信コンプライアンス**
 
 Graduating は、プレビュー段階から完全な可用性まで、コミュニケーションコンプライアンスは新しい insider リスクソリューションセットの主要なコンポーネントです。 この堅牢なソリューションにより、組織の標準に準拠していないメッセージの検出、調査、修復処理を行うためのワークフローを使用して、コミュニケーションリスクを最小限に抑えることができます。
 
@@ -171,14 +171,14 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 |データ損失防止|データ損失防止 <br/> https://protection.office.com/datalossprevention |データ損失防止 <br/> https://compliance.microsoft.com/datalossprevention |[データ損失防止の概要](data-loss-prevention-policies.md)|
 |データ主体要求 |データのプライバシー > データ主体要求 <br/> https://protection.office.com/dsrcases |データ主体要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[DSR ケースツールを使用して GDPR データ主体要求を管理する](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |電子情報開示|電子情報開示 > 電子情報開示 <br/> https://protection.office.com/ediscoveryv1 |電子情報開示 > コア <br/> https://compliance.microsoft.com/classicediscovery |[eDiscovery ケースを管理する](ediscovery-cases.md) |
-|イベント|レコード管理 > イベント <br/> https://protection.office.com/events |レコード管理 > [イベント] タブ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[イベントが発生したときに保持を開始する](event-driven-retention.md)|
+|イベント|レコード管理 > イベント <br/> https://protection.office.com/events |レコード管理 > [イベント] タブ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[イベントの発生時に保持を開始する](event-driven-retention.md)|
 |ファイル計画|レコード管理 > ファイル計画 <br/> https://protection.office.com/fileplan |レコード管理 > ファイル計画] タブ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[ファイルプランを使用して保持ラベルを管理する](file-plan-manager.md)|
 |PST ファイルのインポート|情報ガバナンス > PST ファイルのインポート <br/> https://protection.office.com/importV2 |情報ガバナンス > インポート] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[組織の PST ファイルのインポートの概要](importing-pst-files-to-office-365.md)|
 |ラベルアクティビティエクスプローラー|情報ガバナンス > ラベルアクティビティエクスプローラー <br/> https://protection.office.com/labelexplorer |データ分類 > アクティビティエクスプローラータブ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[ラベル付きコンテンツのアクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)|
 |保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | 「[保持ラベルの概要](retention.md)」を参照してください。|
-|アイテム保持ポリシー|情報ガバナンス > の保持 <br/> https://protection.office.com/retention |情報ガバナンス > [保持] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[アイテム保持ポリシーと保持ラベルについて](retention.md)|
+|アイテム保持ポリシー|情報ガバナンス > の保持 <br/> https://protection.office.com/retention |情報ガバナンス > [保持] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[アイテム保持ポリシーと保持ラベルの詳細](retention.md)|
 |機密情報の種類|機密情報の種類 > 分類 <br/> https://protection.office.com/sensitivetypes |データ分類 > 機密情報の種類] タブ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)|
-|機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[機密ラベルについて詳しく見る](sensitivity-labels.md) |
+|機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[秘密度ラベルの詳細](sensitivity-labels.md) |
 |サービス アシュアランス|サービス アシュアランス <br/> https://protection.office.com/serviceassurance/dashboard |現時点では、サービス保証のリソースには、Office 365 セキュリティ & コンプライアンスセンターのみがアクセスできます。 |[セキュリティ/コンプライアンス センターのサービス アシュアランス](service-assurance.md)|
 |監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通信コンプライアンス <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 の通信コンプライアンス (プレビュー)](communication-compliance.md) |
 

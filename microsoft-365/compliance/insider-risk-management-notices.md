@@ -1,5 +1,5 @@
 ---
-title: Insider リスク管理の通知テンプレート
+title: インサイダー リスク管理通知のテンプレート
 description: Microsoft 365 の insider リスク管理の通知テンプレートについて説明します。
 keywords: Microsoft 365、insider リスク管理、リスク管理、コンプライアンス
 localization_priority: Normal
@@ -12,22 +12,22 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 92844691cba4adf39c7b4eee30de97ccff9d0890
-ms.sourcegitcommit: 87cc278ea2ddcd536ecfaa3dfae9a5ddaa502cf9
+ms.openlocfilehash: 0211eefe3c4a946bbaa4ad4c8c66e5df7b37091e
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42179088"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199490"
 ---
-# <a name="insider-risk-management-notice-templates"></a>Insider リスク管理の通知テンプレート
+# <a name="insider-risk-management-notice-templates"></a>インサイダー リスク管理通知のテンプレート
 
-Insider リスク管理の通知テンプレートを使用すると、アクティビティがポリシーの一致と通知を生成するときに、従業員に電子メールメッセージを送信できます。 ほとんどの場合、通知を生成する従業員のアクションは、誤ったミスまたは不注意なアクティビティの結果として、意図したとおりにはなりません。 通知は、従業員に対して、より慎重に、またはリフレッシャートレーニングや企業ポリシーリソースのリンクや情報を提供するための簡単な通知として機能します。 通知は、内部のコンプライアンストレーニングプログラムの重要な部分になる可能性があり、定期的なリスクアクティビティを持つ従業員に関する文書化された監査証跡を作成するのに役立ちます。
+Insider リスク管理の通知テンプレートを使用すると、アクティビティがポリシーの一致とアラートを生成するときに、ユーザーに電子メールメッセージを送信することができます。 ほとんどの場合、警告を生成するユーザー操作は、誤りまたは不注意な操作の結果として、意図したとおりにはなりません。 通知は、ユーザーに対して簡単な通知を提供し、リフレッシャートレーニングの情報へのリンク、または企業ポリシーリソースへのリンクを提供します。 通知は、内部のコンプライアンストレーニングプログラムの重要な部分であり、定期的なリスクアクティビティを持つユーザーのために文書化された監査証跡を作成するのに役立ちます。
 
-問題解決プロセスの一環として、ポリシーの一致に関する電子メール通知通知をユーザーに送信する場合は、通知テンプレートを作成します。 通知は、確認されている特定の通知に関連付けられた従業員の電子メールアドレスにのみ送信できます。 ポリシー一致に適用する通知テンプレートを選択するときは、テンプレートで定義されているフィールド値を受け入れるか、必要に応じてフィールドを上書きするかを選択できます。
+問題解決プロセスの一環として、ポリシーの一致に関する電子メール通知通知をユーザーに送信する場合は、通知テンプレートを作成します。 通知は、確認されている特定の通知に関連付けられたユーザーのメールアドレスにのみ送信できます。 ポリシー一致に適用する通知テンプレートを選択するときは、テンプレートで定義されているフィールド値を受け入れるか、必要に応じてフィールドを上書きするかを選択できます。
 
 ## <a name="notice-templates-dashboard"></a>通知テンプレートダッシュボード
 
-**通知テンプレートダッシュボード**には、構成された通知テンプレートの一覧が表示され、新しい通知テンプレートを作成できます。 メモテンプレートは、最新の通知テンプレートが最初に表示された順序で、逆の順序で一覧表示されます。
+**通知テンプレートダッシュボード**には、構成された通知テンプレートのリストが表示され、新しい通知テンプレートを作成できます。 通知テンプレートは、最新の通知テンプレートを最初に、日付の逆順でリストに表示されます。
 
 ![Insider リスク管理の通知テンプレートダッシュボード](../media/insider-risk-notices-dashboard.png)
 
@@ -39,9 +39,9 @@ Insider リスク管理の通知テンプレートを使用すると、アクテ
 <!DOCTYPE html>
 <html>
 <body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent activity you've performed has generated a risk alert prohibited by the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+<h2>Action Required: Contoso User Code of Conduct Policy Training</h2>
+<p>A recent activity you've performed has generated a risk alert prohibited by the Contoso User <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+<p>You are required to attend the Contoso User Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
 <p>Thank you,</p>
 <p><em>Human Resources</em></p>
 </body>
@@ -61,7 +61,7 @@ Insider リスク管理の通知テンプレートを使用すると、アクテ
 2. [**通知テンプレートの作成**] を選択して、通知ウィザードを開きます。
 3. [**新しい通知テンプレートの作成**] ページで、以下のフィールドに入力します。
     - **テンプレート名**: 通知のフレンドリ名を入力します。 この名前は、ケースから通知を送信するときに、通知ダッシュボードと通知選択リストに通知の一覧に表示されます。
-    - **送信元**: 通知の送信者の電子メールアドレスを入力します。 このアドレスは、ケースから通知を送信するときに変更しない限り、[**差出人:** ] フィールドに表示されます。
+    - **送信元**: 通知の送信者の電子メールアドレスを入力します。 このアドレスは、ケースから通知を送信するときに変更されない限り、ユーザーに送信されるすべての通知の [**差出人:** ] フィールドに表示されます。
     - **Cc および Bcc**フィールド: サブスクリプションの Active Directory から選択された、ポリシーの一致の通知対象となるオプションのユーザーまたはグループ。
     - **件名**: メッセージの件名行に表示される情報。テキスト文字をサポートします。
     - **メッセージ本文**: メッセージ本文に表示される情報は、テキストまたは HTML 値をサポートします。
@@ -76,7 +76,7 @@ Insider リスク管理の通知テンプレートを使用すると、アクテ
 3. [通知の詳細] ページで、[**編集**] を選択します。
 4. **編集**ページでは、次のフィールドを編集できます。
     - [**テンプレート名**: 新しいわかりやすい名前を入力してください。 この名前は、ケースから通知を送信するときに、通知ダッシュボードと通知選択リストに通知の一覧に表示されます。
-    - **送信元**: 通知の送信者の電子メールアドレスを更新します。 このアドレスは、ケースから通知を送信するときに変更しない限り、[**差出人:** ] フィールドに表示されます。
+    - **送信元**: 通知の送信者の電子メールアドレスを更新します。 このアドレスは、ケースから通知を送信するときに変更されない限り、ユーザーに送信されるすべての通知の [**差出人:** ] フィールドに表示されます。
     - **Cc および Bcc**フィールド: サブスクリプションの Active Directory から選択されたポリシーの一致を通知するオプションのユーザーまたはグループを更新します。
     - **件名**: メッセージの件名行に表示される更新情報。テキスト文字をサポートします。
     - **メッセージ本文**: メッセージ本文に表示される更新情報。テキストまたは HTML 値をサポートします。

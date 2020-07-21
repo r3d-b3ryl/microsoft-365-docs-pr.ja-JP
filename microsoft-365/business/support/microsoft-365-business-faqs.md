@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 06/08/2018
-ms.openlocfilehash: a2feb91ddcd2d95da28c3363d983b382cf2aa6dc
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30437825a896acb470b23cb8f68ea36235ee80c8
+ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403452"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45185978"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 Business Premium に関するよく寄せられる質問
 
@@ -137,9 +137,9 @@ Microsoft 365 Business Premium の展開を成功させる一番の近道は、M
 はい。Microsoft 365 Business Premium のサブスクライバーは、iOS、Android、MacOS、およびその他のクロス プラットフォームのデバイス管理にIntune の全機能を使用するためのライセンスを持っています。 サードパーティ製のアプリの管理や WiFi プロファイルの構成、VPN 証明書など、Microsoft 365 Business Premium で簡易管理コンソールでは利用できない機能は、完全なIntune コンソールで管理できます。 
   
 
-### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business"></a>Azure Active Directory (Azure AD) Premium P1 は Microsoft 365 Business に付属していますか。 
+### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory (Azure AD) Premium P1 には、Microsoft 365 Business Premium が付属していますか? 
 
-以前の Microsoft 365 Business には、条件付きアクセス、セルフサービスパスワードリセット、多要素認証など、Azure AD Premium プラン1の機能が含まれていました。 最初は新規顧客向け、次に現在のサブスクライバーに向けて、Microsoft 365 Business のサブスクライバーに、完全な Azure AD Premium P1 ライセンスを展開します。 詳細については、「[Microsoft 365 Business Service の説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)」とこちらの[ブログ](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/azure-active-directory-premium-p1-is-coming-to-microsoft-365/ba-p/1275496)を参照してください。
+はい。 Azure AD Premium P1 は Microsoft Business Premium に含まれています。
  
  
 ### <a name="does-microsoft-365-business-premium-allow-customers-to-manage-macs"></a>Microsoft 365 Business Premium で、ユーザーは Mac を管理できますか。 

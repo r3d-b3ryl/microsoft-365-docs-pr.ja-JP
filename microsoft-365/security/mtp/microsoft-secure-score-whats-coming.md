@@ -1,5 +1,5 @@
 ---
-title: Microsoft のセキュリティで保護されたスコアについて
+title: Microsoft のセキュリティで保護されたスコア
 description: Microsoft 365 セキュリティセンターで Microsoft セキュリティスコアに追加された新しい変更内容について説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善アクション
 ms.prod: microsoft-365-enterprise
@@ -17,22 +17,22 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8e071aa4f2a9b6cfa8187a588b4f75e499f6328
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 634f4194e450a7f3835ae0003c5632220a63108e
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094776"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200052"
 ---
-# <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコアについて
+# <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコア
 
-Microsoft のセキュリティ[スコア](microsoft-secure-score.md)をより良いものにして、セキュリティの状況をより良くし、利便性を向上させるために、近い将来にいくつかの変更を加えています。 お客様のスコアと最大可能スコアが新しくなります。 ただし、これによりセキュリティ体制が変わるわけではありません。
+Microsoft のセキュリティ[スコア](microsoft-secure-score.md)をより良いものにして、セキュリティの状況をより良くし、利便性を向上させるために、近い将来にいくつかの変更を加えています。 スコアと可能な最大スコアは変わる可能性があります。
 
-最近の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score.md#whats-new)」を参照してください。
+## <a name="proposed-changes"></a>Proposed changes
 
-## <a name="august-2020"></a>2020年8月
+これらの変更は、ライセンスに応じて、近日中にマイクロソフトのセキュリティで保護されたスコアになることがあります。 最近の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-new.md)」を参照してください。
 
-### <a name="add-improvement-actions-for-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection の向上アクションを追加する
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection の改善アクションを追加する
 
 - 危険性のある横移動パス
 - 安全でないアカウントの属性
@@ -42,5 +42,6 @@ Microsoft のセキュリティ[スコア](microsoft-secure-score.md)をより�
 ## <a name="related-resources"></a>関連リソース
 
 - [Microsoft セキュリティスコアの概要](microsoft-secure-score.md)
-- [セキュリティ体制の可視性を獲得する](microsoft-secure-score-improvement-actions.md)
+- [セキュリティの姿勢を評価する](microsoft-secure-score-improvement-actions.md)
 - [Microsoft のセキュリティで保護されたスコア履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
+- [新機能](microsoft-secure-score-whats-new.md)

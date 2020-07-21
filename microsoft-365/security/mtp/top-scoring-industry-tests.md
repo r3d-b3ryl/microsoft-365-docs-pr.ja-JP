@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
+ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158871"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45185994"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップスコア
 
@@ -44,19 +44,18 @@ MITRE のテストアプローチの中核は、ソリューションが適切�
 [Microsoft Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)は、独立したテストを一貫した方法で実行し、ウイルス対策市場での主要な選択方法を示しています。 これらのテストでは、ウイルス対策の結果のみが得られ、追加のセキュリティ保護をテストしないことに注意してください。
 
 Microsoft Defender ウイルス対策は、 [Microsoft DEFENDER ATP Windows 10 セキュリティスタック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)の[次世代の保護](https://www.youtube.com/watch?v=Xy3MOxkX_o4)機能で、今日の最新の脅威に対処します。 場合によっては、[キャンペーンの開始後](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)、cyberattack が停止しているために、ユーザーが保護されていることさえ知らないことがあります。 これは、microsoft defender ウイルス対策および Microsoft Defender[エンドポイントの保護プラットフォーム (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/)機能が、 [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、[人工知能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、動作分析、およびその他の高度なテクノロジを使用して、最初にマルウェアを検出して停止するためです。
-<br><br>
-
-**最新の透明度レポートをダウンロードする: [AVT のテスト結果を調べます (1 月2020日](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ))**
 
 ### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>最新テストでの AV-テスト: 5.5/6.0 の保護スコア
 
 AV TEST Product Review and サーティフィケーション Report は、3つのカテゴリ (保護、パフォーマンス、およびユーザビリティ) についてテストします。 次のスコアは、2つのスコアを持つ保護カテゴリに対応しています。現実的なテストと AV テスト参照セット (「蔓延したマルウェア」)。
 
+**最新の透明度レポート: [AV-テスト結果の調査 (2020 年1月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ))**
+
 - 3月2020年4月の AV-テストビジネスユーザーテスト: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**最新**</sup>
 
     Microsoft Defender ウイルス対策は、20540マルウェアサンプルを使用して、5.5/6.0 の全体的な保護スコアを獲得しました。
 
-- January (2020 年2月) AV-テストビジネスユーザーテスト:[保護スコア 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)
+- January (2020 年2月) AV-テストビジネスユーザーテスト:[保護スコア 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 - 11月2019日の AV-テストビジネスユーザーテスト: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
@@ -84,7 +83,9 @@ AV TEST Product Review and サーティフィケーション Report は、3つ�
 
 SE Labs は、エンドポイントソフトウェア、ネットワークアプライアンス、クラウドサービスを含む、攻撃に対して、製品やサービスによって使用されるさまざまなソリューションをテストします。
 
-- エンタープライズエンドポイント保護1月-2020 年3月: [AAA 賞](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>
+**最新の透過性レポートをダウンロードします。 [SE Labs テストの結果を調査](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)します。2020年1月**
+
+- エンタープライズエンドポイント保護 (1 月)-2020 年3月: [AAA 賞](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>の  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
     Microsoft の次世代保護は、1つの主要な製品の1つとして、すべての対象となる攻撃を停止し、1つのパブリック脅威をすべて停止していました。
 

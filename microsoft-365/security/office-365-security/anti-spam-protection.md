@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) でスパムを防止するのに役立つスパム対策設定とフィルターについて学ぶことができます。
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800109"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189563"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP でのスパム対策保護
 
@@ -36,6 +36,9 @@ Exchange online または exchange online メールボックスを使用しな�
 Microsoft のメールの安全性ロードマップには、他に例を見ない製品間のアプローチが含まれます。 EOP のスパム対策およびフィッシング対策テクノロジは、電子メールプラットフォーム全体に適用され、ユーザーに最新のスパム対策およびフィッシング対策ツールと、ネットワーク全体での技術革新を提供します。 EOP の目標は、包括的で使用可能なメール サービスを提供し、迷惑メール、詐欺目的のメールの脅威 (フィッシング)、マルウェアを検出し、それらからユーザーを保護することです。
 
 メールの使用が増えるにつれ、メールの不正使用も増えました。 監視されていない迷惑メールによって、受信トレイとネットワークに余分な負荷が掛かり、ユーザー満足度に影響を及ぼし、正当なメール通信の効果が阻害されます。 これが Microsoft がスパム対策テクノロジへの投資を継続する理由です。 簡単に言えば、迷惑メールを格納して、フィルター処理することから始めます。
+
+> [!TIP]
+> 次のスパム対策テクノロジは、メッセージエンベロープ (たとえば、送信者のドメインまたはメッセージの送信元 IP アドレス) に基づいてメッセージを許可またはブロックする場合に便利です。 ペイロードに基づいてメッセージを許可またはブロックする (たとえば、メッセージまたは添付ファイルの Url) には、[テナントの許可/ブロックリストポータル](tenant-allow-block-list.md)を使用する必要があります。
 
 ## <a name="anti-spam-technologies-in-eop"></a>EOP のスパム対策テクノロジ
 

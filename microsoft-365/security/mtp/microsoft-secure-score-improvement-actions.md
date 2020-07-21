@@ -1,5 +1,5 @@
 ---
-title: Microsoft セキュリティスコアを使用してセキュリティの状況を把握する
+title: Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
 description: Microsoft 365 セキュリティセンターで Microsoft セキュリティスコアを向上させるための処置を行う方法について説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善のための処置
 ms.prod: microsoft-365-enterprise
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ae1a196f11f383c1d3f9fd2056d5d19e7cdd6da
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 469056bbae4627e0b013bfc0f2e965586fd15175
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095073"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200064"
 ---
-# <a name="gain-visibility-into-your-security-posture-through-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの状況を把握する
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
 
 Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点については https://security.microsoft.com/securescore 、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
 
@@ -40,7 +40,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 * インフラストラクチャ (現在のところ、改善のための処置はありません)
 
 >[!NOTE]
->Microsoft Secure Score の最近のリリースでは、Microsoft セキュリティスコアを Id のセキュリティで保護されたスコアと Graph API とは一時的に互換性がない、向上したスコアリングモデルがリリースされました。 [詳細の表示](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>Microsoft Secure Score の最近のリリースでは、Microsoft セキュリティスコアを Id のセキュリティで保護されたスコアと Graph API とは一時的に互換性がない、向上したスコアリングモデルがリリースされました。 [詳細の表示](microsoft-secure-score-whats-new.md)
 
 [Microsoft セキュア スコアの概要] ページでは、これらのグループ間でポイントがどのように分割され、どのポイントが利用可能であるかを確認できます。 また、[概要] ページでは、合計スコアの全表示ビュー、ベンチマーク比較によるセキュア スコア履歴の傾向、スコアを上げるために優先して実装できる改善のための処置を確認することができます。
 
@@ -121,3 +121,4 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 - [Microsoft セキュリティスコアの概要](microsoft-secure-score.md)
 - [Microsoft のセキュリティで保護されたスコア履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
 - [今後の予定](microsoft-secure-score-whats-coming.md)
+- [新機能](microsoft-secure-score-whats-new.md)

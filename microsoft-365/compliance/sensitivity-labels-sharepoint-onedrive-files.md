@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780720"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199527"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -164,17 +164,18 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にす
     ```
 3. Microsoft 365 複数地域の場合: 残りの geo の場所ごとに手順1と2を繰り返します。
 
-## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>機密ラベルを作成または変更した後のロールアウトをスケジュールする
+## <a name="publishing-and-changing-sensitivity-labels"></a>機密ラベルの発行と変更
 
-Microsoft 365 コンプライアンスセンターで機密ラベルを作成または変更した後、それを段階的に公開します。 完全に同期されていないラベルを発行した場合、ユーザーがファイルにラベルを適用してそれらを SharePoint にアップロードすると、ファイルを web 版の Office アプリで開くことができなくなります。 検索と電子情報開示もファイルに対して機能しません。
+SharePoint と OneDrive で機密ラベルを使用する場合は、新しい機密ラベルを発行するか、既存の機密ラベルを更新するときにレプリケーション時間を許可する必要があることに注意してください。 これは、暗号化を適用する新しいラベルにとって特に重要です。
 
-次の手順を実行することをお勧めします。
+例: 暗号化を適用する新しい機密ラベルを作成して発行すると、ユーザーのデスクトップアプリにすぐに表示されます。 ユーザーがこのラベルをドキュメントに適用し、それを SharePoint または OneDrive にアップロードします。 サービスのラベルのレプリケーションが完了していない場合、新しい機能はアップロード時にそのドキュメントに適用されません。 その結果、ドキュメントは検索では返されず、電子情報開示のために Office でドキュメントを開くことができません。
 
-1. 新しいまたは変更された機密ラベルを1人または2人のユーザーにのみ発行します。
+- 次の変更は、1時間以内にレプリケートされます。新規および削除された機密情報ラベル、およびポリシーに含まれるラベルを含む機密ラベルポリシー設定。
 
-2. 最初の発行の後、少なくとも24時間待機します。 ラベルが完全に同期していることを確認します。
+- 次の変更は24時間以内にレプリケートされます。既存のラベルの機密ラベルの設定を変更します。
 
-3. ラベルを広く公開します。
+新しい機密ラベルに対してレプリケーションの遅延が1時間になるため、この例のシナリオでは実行できない可能性が高くなります。 しかし、安全策として、新しいラベルを少数のテストユーザーのみに公開し、1時間待ってから、SharePoint と OneDrive でラベルの動作を確認することをお勧めします。 最後の手順として、既存のラベルポリシーにユーザーを追加するか、または標準ユーザーの既存のラベルポリシーにラベルを追加することによって、より多くのユーザーがラベルを使用できるようにします。 標準ユーザーがラベルを表示しているときに、SharePoint と OneDrive に既に同期されています。
+
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) と機密ラベル
 
