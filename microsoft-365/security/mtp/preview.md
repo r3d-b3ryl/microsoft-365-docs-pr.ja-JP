@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048269"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204829"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
 
@@ -59,8 +59,4 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 
 - **[ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: セキュリティセンターで直接使用できるスキーマテーブルに関する情報。 このリファレンスでは、テーブルと列の説明に加えて、サポートされているイベントの種類 ( `ActionType` 値) とサンプルクエリに関する情報を提供します。  
 
-- **[Id およびアプリテーブル](advanced-hunting-schema-tables.md)**—高度な検索スキーマにある、ユーザーの認証[イベント、Active](advanced-hunting-identityqueryevents-table.md)Directory クエリ、アプリ[関連のアクティビティ](advanced-hunting-identitylogonevents-table.md)に関する可視性を高める[AppFileEvents](advanced-hunting-appfileevents-table.md)ことができます。
-
 - **[ハントの移動](advanced-hunting-go-hunt.md)**—クエリベースの[高度な](advanced-hunting-overview.md)検索機能を使用して、特定のイベント、ユーザー、デバイス、またはその他のエンティティの種類を調査するために、インシデントの調査からすばやくピボットします。
-
-- **[Fileprofile () 関数](advanced-hunting-fileprofile-function.md)**:[高度な](advanced-hunting-overview.md)検索クエリで使用して、包括的なファイル情報を組み込みます。

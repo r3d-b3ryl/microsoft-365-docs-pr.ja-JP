@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Exchange Online Protection (EOP) によって、オンプレミスの電子メール組織がスタンドアロン環境およびハイブリッド環境で保護される方法について説明します。
-ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616988"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204805"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -61,7 +61,13 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 - アジア太平洋 (APAC) では、すべての Exchange Online メールボックスが APAC データセンターに配置されており、現在、メッセージは EOP フィルター処理のために APAC データセンター経由でルーティングされます。
 
-- 南北アメリカでは、すべての Exchange Online メールボックスは米国のデータセンターに配置されており、ブラジルとチリのデータセンターが使用されている南米と、カナダのデータセンターが使用されているカナダには例外があります。 南米およびカナダの顧客宛てのメッセージを含むすべての電子メールメッセージは、EOP フィルター処理のためにローカルデータセンターを経由してルーティングされます。検疫済みメールは、テナントが配置されているデータセンターに保存されます。
+- 南北アメリカでは、サービスは次の場所に配布されます。
+
+  - 南アメリカ: Exchange Online メールボックスは、ブラジルおよびチリのデータセンターにあります。 すべてのメッセージは、EOP フィルター処理のためにローカルデータセンターを経由してルーティングされます。 検疫済みメッセージは、テナントが配置されているデータセンターに格納されます。
+
+  - カナダ: Exchange Online メールボックスは、カナダのデータセンターに配置されています。 すべてのメッセージは、EOP フィルター処理のためにローカルデータセンターを経由してルーティングされます。 検疫済みメッセージは、テナントが配置されているデータセンターに格納されます。
+
+  - 米国: Exchange Online メールボックスは、米国データセンターに配置されています。 すべてのメッセージは、EOP フィルター処理のためにローカルデータセンターを経由してルーティングされます。 検疫済みメッセージは、テナントが配置されているデータセンターに格納されます。
 
 - Government Community Cloud (GCC) では、すべての Exchange Online メールボックスが米国データセンターに配置され、すべてのメッセージが EOP フィルター処理のために米国データセンター経由でルーティングされます。
 

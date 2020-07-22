@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 0ee31ef55c78457ee2b9d3db7b702ada2f55a639
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185994"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204961"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップスコア
 
@@ -100,6 +100,8 @@ SE Labs は、エンドポイントソフトウェア、ネットワークアプ
 ## <a name="endpoint-detection--response"></a>エンドポイント検出 & 応答
 
 Microsoft Defender ATP[エンドポイントの検出と応答](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)機能を使用すると、リアルタイムで実用的な高度な攻撃を検出できます。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。
+
+Microsoft Defender ATP の EDR およびエンドポイント保護機能は、業界のテストと発行から肯定的な結果を受け取っています。 2020年6月に、 [SC Labs のエンドポイントセキュリティツールを評価](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/)し、MICROSOFT Defender ATP [5/5 を星](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)にしました。 また、セキュリティ機能の完全なセットを使用して、最新の脅威の情勢から組織を保護し、エンドポイントのセキュリティソリューションを総合的かつ統一されたものとして識別することもできました。 また、エンドポイントの検出と応答の機能を使用したエンドポイント保護の集束を確認しました。これで、攻撃チェーンはソリューションによって完全にカバーされるようになりました。
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE: 業界トップの光学および検出機能
 

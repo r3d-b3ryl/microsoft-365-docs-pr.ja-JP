@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の送信スパムポリシーを表示、作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024584"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204853"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパムフィルターを構成する
 
@@ -136,26 +136,10 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    - 送信**スパムの送信によって送信者がブロックされた場合に、特定のユーザーに通知し**ます。
 
-     > [!NOTE]
-     > ユーザーが [**受信者の制限**] セクションの制限を超えたためにユーザーがブロックされた**Global admins**場合は、ユーザーによって [**送信メールが電子メール**によって制限されました] という名前の既定の[警告ポリシー](../../compliance/alert-policies.md)が、既に**tenantadmins**グループのメンバーに電子メール通知を送信します。 送信スパムポリシーのこの設定ではなく、通知ポリシーを使用して、管理者およびその他のユーザーに通知することをお勧めします。 手順については、「制限され[たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。 <br/><br/> この設定は、既定の送信スパムポリシーでのみ機能します。 作成したカスタムの送信スパムポリシーでは機能しません。
-
-     この設定を有効にするには:
-
-     a. チェックボックスをオンにして、設定を有効にします。
-
-     b. [**ユーザーの追加**] をクリックします。 [**受信者の追加または削除**] ポップアップが表示されます。
-
-     c. 送信者の電子メール アドレスを入力します。 複数の電子メールアドレスをセミコロンで区切って指定できます (;)または1行に1人の受信者。
-
-     d. Click ![[追加] アイコン](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 受信者を追加します。
-
-        必要な回数だけこれらの手順を繰り返します。
-
-        追加した受信者が、フライアウトの [**受信者リスト**] セクションに表示されます。 受信者を削除するには、[ ![ 削除] ボタンをクリックし ](../../media/scc-remove-icon.png) ます。
-
-     e.  完了したら、**[保存]** をクリックします。
-
-     この設定を無効にするには、このチェックボックスをオフにします。
+     > [!IMPORTANT]
+     > この設定は、送信スパムポリシーから廃止されるプロセスです。
+     > 
+     > ユーザーが [**受信者の制限**] セクションの制限を超えたためにユーザーがブロックされた**Global admins**場合は、ユーザーによって [**送信メールが電子メール**によって制限されました] という名前の既定の[警告ポリシー](../../compliance/alert-policies.md)が、既に**tenantadmins**グループのメンバーに電子メール通知を送信します。 **送信スパムポリシーのこの設定ではなく、通知ポリシーを使用して、管理者およびその他のユーザーに通知することを強くお勧め**します。 手順については、「制限され[たユーザーの通知設定を確認する](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)」を参照してください。
 
 5. オプション[**受信者の制限**] セクションを展開して、疑わしい送信電子メールメッセージの制限およびアクションを構成します。
 
@@ -189,11 +173,11 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
    > [!NOTE]
    > これらの設定は、クラウドベースのメールボックスにのみ適用されます。
-   
+
    - **自動転送**
   
       いずれかのオプションを選択して、自動転送の処理方法を制御します。
-    
+
       - **Automatic**: 既定では、自動転送を無効にした自動転送をシステムで制御できるようにする既定の設定です。
       - **オン**: ポリシー内で、制限なしで外部転送が有効になります。
       - **Off**: 外部転送が無効になり、ブロックされます

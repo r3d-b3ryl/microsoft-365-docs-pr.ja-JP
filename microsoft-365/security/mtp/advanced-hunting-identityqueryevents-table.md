@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899115"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204877"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,8 +38,9 @@ ms.locfileid: "44899115"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `Query` | string | クエリの種類: QueryGroup、Querygroup、または EnumerateUsers |
-| `QueryObject` | string | ユーザー、グループ、デバイス、ドメイン、またはその他のクエリ対象のエンティティ型の名前 |
+| `QueryType` | string | クエリの種類 (QueryGroup、Querygroup、EnumerateUsers など) |
+| `QueryTarget` | string | ユーザー、グループ、デバイス、ドメイン、またはその他のクエリ対象のエンティティ型の名前 |
+| `Query` | string | クエリの実行に使用される文字列 |
 | `Protocol` | string | 通信中に使用されるプロトコル |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
@@ -49,7 +50,14 @@ ms.locfileid: "44899115"
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
 | `DeviceName` | string | エンドポイントの完全修飾ドメイン名 (FQDN) |
 | `IPAddress` | string | エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス |
+| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
+| `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
+| `TargetAccountUpn` | string | 記録されたアクションが適用されたアカウントのユーザープリンシパル名 (UPN) |
+| `TargetAccountDisplayName` | string | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
 | `Location` | string | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
+| `ReportId` | long | イベントの一意識別子 |
+| `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

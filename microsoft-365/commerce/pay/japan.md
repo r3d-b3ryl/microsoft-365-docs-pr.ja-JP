@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,15 +13,25 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 57dc44af9a04bb9d55cc0dd5574ee74620211a73
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 44df2d2fcc3c424a6962ac8ca456c41147971eb5
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401692"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204769"
 ---
 # <a name="payment-information-for-japan"></a>日本のお支払い情報
 
 [別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。
 
-請求書に記載の支払い方法に従い、お支払い送金の際に請求書番号をご記入ください。
+JPY のみで支払いを行い、請求書番号を参照してください。
+
+## <a name="electronic-funds-transfer"></a>電子資金移動
+
+**Bank:** Citibank、N。  
+**銀行 ID:** 0401  
+**分岐:** 東京支社  
+**ブランチコード:** 730  
+**SWIFT コード:** CITIJPJT  
+**アカウント番号:** 160609028  
+**アカウント名:** Microsoft 日本協力

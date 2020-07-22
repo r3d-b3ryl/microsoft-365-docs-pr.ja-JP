@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: ゲストアクセスを制御するために、Microsoft 365 グループにゲストを追加し、ゲストユーザーを表示し、PowerShell を使用する方法について説明します。
-ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854248"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204745"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Microsoft 365 グループでゲストアクセスを管理する
 
@@ -114,7 +114,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 ## <a name="add-guests-to-the-global-address-list"></a>グローバル アドレス一覧にゲストを追加する
 
-既定では、ゲストは Exchange グローバル アドレス一覧に表示されません。 グローバル アドレス一覧にゲストを表示するには、次の手順を使用します。
+既定では、ゲストは Exchange グローバル アドレス一覧に表示されません。 グローバル アドレス一覧にゲストを表示するには、次の手順を使用します。 Exchange Online 管理センターで、ゲストが表示されていることを確認してください。 新しいゲストは、追加後に表示されるまでに少し時間がかかる場合があります。
 
 ゲスト ユーザーの ObjectID を検索するには、次を実行します。
 

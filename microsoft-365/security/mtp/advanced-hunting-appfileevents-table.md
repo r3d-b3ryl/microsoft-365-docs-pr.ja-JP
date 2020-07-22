@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899341"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204757"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -41,13 +41,23 @@ ms.locfileid: "44899341"
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `PreviousFileName` | string | アクションの結果として名前が変更されたファイルの元の名前 |
+| `PreviousFolderPath` | string | 記録されたアクションが適用される前のファイルが含まれている元のフォルダー |
+| `Protocol` | string | 使用されるネットワークプロトコル |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザープリンシパル名 (UPN) |
 | `AccountObjectId` | string | Azure AD でのアカウントの一意識別子 |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `DeviceType` | string | デバイスの種類 | 
+| `OSPlatform` | string | デバイス上で実行されているオペレーティングシステムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
 | `IPAddress` | string | エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス |
+| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
 | `Location` | string | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
+| `Isp` | string | エンドポイントの IP アドレスに関連付けられているインターネットサービスプロバイダー (ISP) |
+| `ReportId` | long | イベントの一意識別子 |
+| `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

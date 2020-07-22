@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7ab2b0ddaa7bc1c8ed4109affb2ef5ff11a7420b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a31ee6de305cf9226a8b605f75bb71406f78fd70
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200231"
+ms.locfileid: "45201423"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider リスク管理設定の概要
 
@@ -74,7 +74,7 @@ Insider リスクポリシーテンプレートは、検出して調査するリ
 
 ![Insider リスク管理カスタムインジケーター設定](../media/insider-risk-custom-indicators.png)
 
-- 最初の daily イベントレベルでは、イベントのリスクスコアに対する影響を小さくするために、1日あたりのしきい値を*10*以上に設定し、1*日あたりの*イベント数が*20*個を*超えると、* イベントのリスクスコアに対する影響が少なくなります。 これらの設定は、次のように効果的です。
+最初の daily イベントレベルでは、イベントのリスクスコアに対する影響を小さくするために、1日あたりのしきい値を*10*以上に設定し、1日あたりのイベント数が*20*個を*超えると、* イベントのリスクスコアに対する影響が少なくなります。 これらの設定は、次のように効果的です。
 
 - イベントの発生後に実行される 1-9 SharePoint イベントがある場合、リスクスコアは最小限の影響を受け、アラートを生成する傾向があります。
 - トリガイベントの後に実行される10-19 の SharePoint イベントがある場合、リスクスコアは本質的に低く、アラートの重大度レベルは低いレベルになる傾向があります。
