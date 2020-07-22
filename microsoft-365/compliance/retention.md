@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: b67320af6f388386d7b7723bbe3f645b46eed8e7
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: 35a8a7a00c8374dd938a3c05e3ffe0c3c85fd347
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138215"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199611"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -237,9 +237,9 @@ Exchange パブリック フォルダー、Skype、および Teams チャネル�
 
 ユーザーまたは自動適用によって保持ラベルがコンテンツに割り当てられた後、コンテンツ検索を使用して、特定の保持ラベルで分類されているすべてのコンテンツを検索することができます。
   
-コンテンツ検索を作成するとき、**コンプライアンス ラベル**の条件を選択し、完全な保持ラベル名を入力するか、ラベル名の一部を入力してワイルドカードを使用します。 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
+コンテンツ検索を作成するとき、**保持 ラベル**の条件を選択し、完全な保持ラベル名を入力するか、ラベル名の一部を入力してワイルドカードを使用します。 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
   
-![コンプライアンス ラベルの条件](../media/compliance-label-condition.png)
+![保持ラベルの条件](../media/retention-label-condition.png)
 
 
 ## <a name="compare-capabilities-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの機能比較
