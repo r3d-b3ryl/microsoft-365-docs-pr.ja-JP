@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のドキュメントやメールを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 465da9f5a3265de01b1108944cd8c6dcfae7912d
-ms.sourcegitcommit: 0b59339167bdc3a69b3d91ae6252dc96bdde7cfe
+ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44907012"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200029"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -168,7 +168,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 このボタンを選択すると、[**ポリシーの作成**] ウィザードが起動し、含めるラベルとラベルの設定を編集できます。 ウィザードを完了すると、選択したユーザーとサービスに変更が自動的にレプリケートされます。
 
-通常、Office アプリのラベルは数時間以内にユーザーに表示されます。 ただし、ラベル ポリシーおよびそれらに対する変更を最大 24 時間使用して、すべてのユーザとサービスにレプリケートされます。
+ユーザーは1時間以内にOfficeアプリに新しいラベルが確認できます。 ただし、既存のラベルの変更が、すべてのユーザーとサービスにレプリケートされるまで、最大で 24 時間かかります。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell を含むその他のラベル ポリシー設定
 
@@ -195,6 +195,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 - デスクトップ アプリの場合: メタデータのラベル情報は残りますが、名前のマッピングに使うラベル ID は利用できなくなっているため、適用されたラベル名は表示されず (ステータス バーなどに)、これによりユーザーはコンテンツはラベル付けされていないと判断します。 ラベルが暗号化を適用している場合、暗号化はそのまま残り、コンテンツが開かれると、既にアーカイブされた保護テンプレートの名前と説明が表示されます。
 
 - Office on the web の場合: ステータス バーまたは**秘密度**列にラベル名は表示されません。 ラベルが暗号化を適用していない場合にのみ、メタデータのラベル情報はそのまま残ります。 ラベルが暗号化を適用していて、[SharePoint と OneDrive の秘密度ラベル](sensitivity-labels-sharepoint-onedrive-files.md)が有効になっている場合、メタデータのラベル情報は削除され、暗号化は解除されます。 
+
+ラベルポリシーから秘密度ラベルを削除したり、秘密度ラベルを削除したりすると、これらの変更がすべてのユーザーとサービスにレプリケートされるまでに最大1時間かかることがあります。　　
 
 ## <a name="next-steps"></a>次の手順
 
