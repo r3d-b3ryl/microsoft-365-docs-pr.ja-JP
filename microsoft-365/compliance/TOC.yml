@@ -169,6 +169,8 @@
       href: tls-1-2-in-office-365-gcc.md
     - name: Office 365 の TLS 1.2
       href: prepare-tls-1.2-in-office-365.md
+    - name: Microsoft 365 の二重キー暗号化パブリックプレビュー
+      href: double-key-encryption.md
     - name: 顧客キー
       items:
         - name: Office 365 のカスタマー キーによるサービスの暗号化
