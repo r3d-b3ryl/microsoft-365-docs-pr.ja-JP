@@ -1,28 +1,26 @@
 ---
 title: Office 365 および Office 365 GCC での TLS 1.2 の準備
 description: TLS 1.0 および 1.1 のサポートが無効になった後、Office 365 と Office 365 GCC でのすべてのクライアントとサーバー間、ブラウザーとサーバー間の組み合わせにおいて、TLS 1.2 の使用を準備する方法
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: d3086c85adf76a322775ce53697504b77e672f9a
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: b76854442fd74dddddcef778ae03a9d76ceb3cc6
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024830"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372500"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Office 365 および Office 365 GCC での TLS 1.2 の準備
-
-> [!IMPORTANT]
-> 世界はパンデミックの真っ只中にあり、マイクロソフトはお客様とパートナーへの影響を認識しています。 商用顧客の負担を軽減するために、TLS 1.0 および 1.1 の廃止の実施を一時的に停止しました。 現在の危機が安定した後、改訂されたタイムラインで更新プログラムが送信されます (この資料は、変更を反映するように改訂されています)。
 
 ## <a name="summary"></a>概要
 
@@ -34,7 +32,7 @@ TLS 1.0 および 1.1 の依存関係を削除する方法については、次�
 
 ## <a name="more-information"></a>詳細
 
-2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用顧客の場合、COVID-19 に関する状況が安定するまで、TLS 1.0 および 1.1 の廃止の実施を停止します。
+2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用のお客様の場合、TLS 1.0 および1.1 の廃止は、2020年10月15日に開始されます。
 
 Office 365 サービスへの接続を維持するためには、クライアントとサーバー間、ブラウザーとサーバー間のすべての組み合わせで TLS バージョン 1.2 (またはそれ以降のバージョン) を使用することをお勧めします。 クライアントとサーバー間、ブラウザーとサーバー間の特定の組み合わせについては、更新が必要になる場合があります。
 
