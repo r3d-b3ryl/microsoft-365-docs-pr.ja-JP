@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 組織全体で SharePoint を計画、ロールアウトするプロセス、および SharePoint Online の価値を引き出すプロセスについて、順を追って説明します。
-ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 77beb26065a9ecfd37acf976e7415cc870ff8ea4
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268211"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201500"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>SharePoint と OneDrive を Microsoft 365 Enterprise 向けに展開する
 
@@ -85,12 +85,11 @@ SharePoint サイトへのアクセスを保護するには、[ID とデバイ�
 
 各自で計画を策定している場合、または FastTrack を使用している場合には、ネットワークと組織が SharePoint を導入できる状態にあるかどうかを判断する必要があります。 特に、基礎インフラストラクチャの[ネットワークの終了条件](networking-exit-criteria.md)を満たしており、SharePoint ベースのドキュメントのための追加トラフィックのパフォーマンスを最大限に引き出すため、インターネット帯域幅、スループット、トラフィック遅延に特別な注意を払うことが重要です。
 
-[[SharePoint に移行する](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)] を使用して、SharePoint ロールアウトを準備します。 
+[[SharePoint に移行する](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)] を使用して、SharePoint ロールアウトを準備します。
 
 SharePoint でのセキュリティの詳細については、次のリソースを参照してください。
-
--     [SharePoint と OneDrive がクラウド内のデータを保護する方法](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--     [OneDrive および SharePoint におけるデータ暗号化](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+- [SharePoint と OneDrive がクラウド内のデータを保護する方法](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+- [OneDrive および SharePoint におけるデータ暗号化](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>結果
 
