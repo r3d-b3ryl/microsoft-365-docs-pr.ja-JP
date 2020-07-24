@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '個人用メールボックスを、複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: c4f71f12b430e239f5ea5791ba5b98a3109452b0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400114"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391532"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -95,6 +95,9 @@ ms.locfileid: "44400114"
     
 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 
+> [!NOTE]
+> 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、インプレースアーカイブを有効にするか、または共有メールボックスにインプレースホールドまたは訴訟ホールドを設定する場合は、メールボックスに exchange online アーカイブまたは Exchange online Plan 2 ライセンスを持つ Exchange Online プラン1を割り当てる必要があります。
+
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>削除済みユーザーのメールボックスを変換する
 
@@ -113,6 +116,7 @@ ms.locfileid: "44400114"
 6. 終了したら、ユーザーのメールボックスからライセンスを削除します。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。
     
 7. 共有メールボックスにメンバーを追加します。
+
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>共有メールボックスを変換して、ユーザーの (プライベート) メールボックスに戻す
 

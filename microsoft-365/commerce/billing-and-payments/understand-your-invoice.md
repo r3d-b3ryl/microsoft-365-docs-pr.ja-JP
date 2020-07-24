@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 description: Microsoft business 製品の請求書または請求書を読んで理解する方法について説明します。
 keywords: 課金アカウント、組織情報、請求書
-ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402644"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391520"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 
 最初のページの上部には、支払いの責任者、請求書の送付先、および請求書の概要が示されます。
 
-| 用語 | 説明 |
+| Term | 説明 |
 | --- | --- |
 | 販売先 |支払いを担当する法人の名前と住所を識別する請求先アカウント。 この情報は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">課金アカウント</a>] ページで管理できます。ここで、アカウントの使用規約を確認し、役割とアクセス許可を管理できます。 |
 | 請求先 |請求書を受信するユーザーを識別します。 この情報は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">課金プロファイル</a>] ページで管理できます。 請求プロファイルは、[**請求書の概要**] セクションの [オンライン請求書] ページにも表示されます。 請求プロファイルの詳細と、それらを使用して組織にとってより柔軟な請求オプションを構築する方法については、「[課金プロファイルを管理](manage-billing-profiles.md)する」を参照してください。 |
@@ -55,7 +55,7 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 
 **請求書の概要**には、前の請求期間以降の諸費用、適用されたクレジット、税金、および合計金額の集計が表示されます。
 
-| 用語 | 説明 |
+| Term | 説明 |
 | --- | --- |
 | 料金|この請求期間に購入された製品の合計数と、それに関連する料金および税。 購入を集計して、請求書の簡潔なビューを提供します。 |
 | 開発者情報 |返品から受け取ったクレジット |
@@ -67,7 +67,7 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 
 雑費ページには、製品別に細分化されたコストが表示されます。 Azure のお客様の場合は、請求書のセクションごとに料金が発生する場合があります。 Azure 製品での請求書セクションの使用方法の詳細については、「 [Microsoft カスタマーアグリーメントの課金アカウントで作業を開始](https://docs.microsoft.com/azure/billing/billing-mca-overview)する」の「[請求書」セクション](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)を参照してください。 各製品オーダー内では、コストはサービスファミリごとに分類されています。
 
-| 用語 |説明 |
+| Term |説明 |
 | --- | --- |
 | 単価 | 雑費の計算に使用されるサービスの有効な単価 (価格設定通貨)。 この価格は、製品、サービスファミリ、メーター、および申し出に対して一意です。 |
 | 量 | 請求期間中に購入または消費される数量 |
@@ -79,11 +79,11 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 
 行アイテムの詳細は、請求する製品の種類によって異なります。 たとえば、Azure 製品の場合は、適用された Azure クレジットの量が表示されます。 座席表の製品には、単価と数量が表示されます。 請求書の詳細には、購入した製品、適用された割引またはクレジット、税率と金額、および品目の合計が表示されます。
 
-    `Total = Charges - Azure Credit + Tax`
+> 合計 = 料金-Azure クレジット + 税
 
 各サービスファミリの合計金額は、Azure クレジットをクレジットまたは料金から差し引くことによって算出され、税を追加します。
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> 合計 = 料金/クレジット: Azure クレジット + 税
 
 請求書に詳細情報を必要とする Azure の請求書がある場合は、「 [Microsoft カスタマーアグリーメントの請求書を確認](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)する」を参照してください。
 
@@ -151,7 +151,7 @@ Microsoft 365 サブスクリプションのみを使用している場合は、
 
 Azure 前払は、対象となる Azure 製品およびサービスに対してのみ支払い方法として使用できます。
 
-## <a name="need-help-contact-support"></a>ヘルプが必要な場合 サポートにお問い合わせください。
+## <a name="need-help-contact-support"></a>サポートが必要な場合 サポートにお問い合わせください。
 
 ご質問がある場合や Azure クレジットについてサポートが必要な場合は、 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">azure サポートを使用してサポートリクエストを作成</a>してください。
 

@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126411"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391556"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -38,6 +38,7 @@ ms.locfileid: "45126411"
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 
 - [探している環境の改善を体感する](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [事前設定されたセキュリティポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
@@ -63,11 +64,6 @@ ms.locfileid: "45126411"
 - [エクスポート URL [オフライン分析のデータをクリックして](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)ください (OFFICE 365 ATP Plan 1 または Plan 2)
 
 - [Office 365 の ATP (**プレビュー**) でキャンペーンビューを使用する](campaigns.md)
-
-## <a name="july-2020"></a>2020 年7 月 
- 
-- [探している環境の改善を体感する](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## <a name="november-2019"></a>2019 年 11 月
 

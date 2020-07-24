@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft 365 のレコード管理を使用すると、保持スケジュールをファイル計画に適用し、保持、レコード宣言、廃棄を管理することができます。
-ms.openlocfilehash: 0179f208f10921293c164516b26440f5bd043517
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 08b028bbd28c06684245321e09f8ef3252098956
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127484"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372490"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 のレコードの管理
 
@@ -33,13 +33,13 @@ ms.locfileid: "45127484"
 
 Microsoft 365 のレコード管理では、次の機能を提供しています。
 
-- **コンテンツをレコードとして分類する**。 コンテンツを[レコード](records.md)としてマークする保持ラベルを作成および発行します。エンドユーザーが適用したり、機密情報、キーワード、またはコンテンツ タイプを識別して[自動適用](apply-retention-labels-automatically.md)したりすることができます。
+- **コンテンツをレコードとして分類する**。 コンテンツを[レコード](records.md)としてマークする保持ラベルを作成および構成します。ユーザーが適用したり、機密情報、キーワード、またはコンテンツ タイプを識別して[自動適用](apply-retention-labels-automatically.md)したりすることができます。
 
 - **ファイル計画を使用して、保持期間に関する要件を移行して管理します**。 [ファイル計画](file-plan-manager.md)を使用して、既存の保持プランを Microsoft 365 に持ち込んだり、新しいプランを構築して管理機能を強化したりすることができます。
 
 - **保持ラベルを使用して、保持と削除の設定を構成します**。 最終更新日や作成日などのさまざまな要因に基づき、保持期間とアクションを定義します。
 
-- [イベント ベースの保持](event-driven-retention.md)を使用して**イベント ベースの保持をトリガーします**。
+- [イベントベースの保持](event-driven-retention.md)を使って、**イベントが発生したときに、別の保持期間を開始する**。
 
 - [処理確認](disposition.md#disposition-reviews)、[レコードの削除](disposition.md#disposition-of-records)の証明を使用して**廃棄を確認および検証します**。
 
@@ -47,7 +47,7 @@ Microsoft 365 のレコード管理では、次の機能を提供しています
 
 - [適切なアクセス権を取得する](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)ために、組織内のレコード管理機能に**特定のアクセス許可**を設定します。
 
-Microsoft 365 のレコード管理ソリューションを使用すると、組織の保持スケジュールをファイル計画に反映させ、保持、レコード宣言、廃棄を管理して、コンテンツのライフサイクル全体をサポートすることができます。
+Microsoft 365 のレコード管理ソリューションを使用すると、組織の保持スケジュールと要件をファイル計画に反映させ、保持、レコード宣言、廃棄を管理して、コンテンツのライフサイクル全体をサポートすることができます。
 
 ## <a name="additional-resources"></a>その他のリソース
 
