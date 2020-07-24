@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f67ca4f9c57730d2e9b95f6060d6c302728f7dc
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
+ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201437"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229437"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -210,7 +210,8 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 ### <a name="double-key-encryption"></a>二重キー暗号化
 
-この機能は現在パブリック プレビューの段階です。
+> [!NOTE]
+> この機能は現在パブリック プレビューで展開中です。 詳細については、「[Microsoft 365 の二重キー暗号化のパブリック プレビューの発表](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)」 を参照してください。
 
 このオプションは、二重キー暗号化サービスを構成していて、このラベルを適用するドキュメントとメールにこの二重キー暗号化を使用する必要がある場合にのみ選択します。
 
@@ -369,9 +370,9 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - [SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md) 機能が組織でまだ有効になっていない場合:
     
-    - 暗号化されたファイルに対して、検索、電子情報開示、Delve は動作しません。 
+    - 暗号化されたファイルに対して、検索、電子情報開示、Delve は動作しません。
     - DLP ポリシーは、これらの暗号化されたファイルのメタデータ (保持ラベルの情報など) に対しては機能しますが、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) に対しては機能しません。
-    - ユーザーは、暗号化されたファイルを Web 用 Office で開くことはできません。 SharePoint および OneDrive 内の Office ファイルの秘密度ラベルが有効化されている場合、ユーザーは有効化されたファイルを Web 用 Office で開くことができますが、次のようないつくつかの[制限](sensitivity-labels-sharepoint-onedrive-files.md#limitations)があります: オンプレミス キー ("Hold Your Own Key" または HYOK と呼ばれます) を使用して適用された暗号化および秘密度ラベルとは別に適用された暗号化。
+    - ユーザーは、暗号化されたファイルを Web 用 Office で開くことはできません。 SharePoint および OneDrive 内の Office ファイルの秘密度ラベルが有効化されている場合、ユーザーは有効化されたファイルを Web 用 Office で開くことができますが、次のようないつくつかの[制限](sensitivity-labels-sharepoint-onedrive-files.md#limitations)があります: オンプレミス キー ("Hold Your Own Key" または HYOK と呼ばれます)を使用して適用された暗号化、[二重キー暗号化](#double-key-encryption)、秘密度ラベルとは別に適用された暗号化。
 
 - 暗号化されたファイルを複数のユーザーが同時に編集するには、全員が Web 用 Office を使用する必要があります。 この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
     

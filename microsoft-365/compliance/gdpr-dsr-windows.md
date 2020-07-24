@@ -1,5 +1,5 @@
 ---
-title: GDPR および CCPA のための Windows データ主体要求のデータ プロセッサー サービス
+title: GDPR および CCPA のための Windows エンタープライズ データ主体要求のデータ プロセッサー サービス
 description: Microsoft 製品、サービス、管理ツールを使用して、DSR に応じて個人データを検索して操作する方法について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
@@ -15,17 +15,17 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 525b8b0783886a7449be72c89a2aa624afda9929
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: bc88f8911f44c9c7b8aad8fbecbbeb073fdcb9ba
+ms.sourcegitcommit: 209a9963719f1ca85ca2075c02721e1a318a7a13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023613"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45374803"
 ---
-# <a name="data-processor-service-for-windows-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Windows データ主体要求のデータ プロセッサー サービス 
+# <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Windows エンタープライズ データ主体要求のデータ プロセッサー サービス 
 
 >[!NOTE]
->このトピックは、Windows プレビュー プログラムの参加者を対象としており、特定の使用条件に同意することが要求されています。 プログラムの詳細を確認し、使用条件に同意するには、[https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview) を参照してください。
+>このトピックは、Windows Enterprise プレビュー プログラム用データプロセッササービスの参加者を対象としており、特定の使用条件に同意することが要求されています。 プログラムの詳細を確認し、使用条件に同意するには、[https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview) を参照してください。
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>データ主体要求 (DSR) の概要 
 EU 一般データ保護規則 (GDPR) は、規制において_データ主体_と呼ばれる人に、雇用主または他の種類の機関や組織 (_データ コントローラー_または単に_コントローラー_と呼ばれます) によって収集された個人データを管理する権限を与えます。 GDPR での個人データは、特定されたまたは特定可能な自然人に関連するすべてのデータと、非常に幅広く定義されています。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。 データ主体がコントローラーに対して個人データへのアクションを実行するよう正式に要求することを、_データ主体の要求_または DSR と呼びます。 
@@ -57,11 +57,11 @@ CCPA における個人情報とは、識別された人、または識別可能
 
 ## <a name="how-to-use-this-guide"></a>このガイドの使用方法 
 
-Windows 登録済みデバイスのデータ プロセッサ サービスを使用すると、Windows はサービスを提供するために、Windows 診断データと呼ばれるいくつかの情報を生成します。
+Windows エンタープライズ登録済みデバイスのデータ プロセッサ サービスを使用すると、Windows はサービスを提供するために、Windows 診断データと呼ばれるいくつかの情報を生成します。
 
 ## <a name="windows-diagnostic-data"></a>Windows 診断データ 
 
-Microsoft は、ユーザーによる Windows のデータ プロセッサ サービスの使用に関連する Windows 診断データへのアクセス、削除、およびエクスポートを行う機能を提供します。
+Microsoft は、ユーザーによる Windows エンタープライズのデータ プロセッサ サービスの使用に関連する Windows 診断データへのアクセス、削除、およびエクスポートを行う機能を提供します。
 
 >[!IMPORTANT]
 >Windows 診断データを修正する機能はサポートされていません。 Windows 診断データは、Windows 内で行われる実際の操作を構成します。そのようなデータへの変更は、操作の履歴記録を危険にさらし、セキュリティのリスクを高め、信頼性を損なう可能性があります。 このドキュメントに記載されているすべてのデータは、Windows 診断データと見なされます。 
@@ -72,7 +72,7 @@ Microsoft の特定の Windows 診断データにアクセスし、それを削�
 
 ### <a name="step-1-access"></a>手順 1: アクセス 
 
-テナント管理者は、特定のユーザーによる Windows 登録済みデバイスのデータ プロセッサ サービスの使用に関連する Windows 診断データにアクセスできる組織内の唯一の人物です。 アクセス要求に対して取得されるデータは、エクスポートによってコンピューターが読み取り可能な形式で提供され、ユーザーがデータに関連付けられているデバイスとサービスを認識できるファイルで提供されます。 上記で説明したように、取得されるデータには Windows サービスのセキュリティまたは安定性を損なう可能性があるデータは含まれません。 
+テナント管理者は、特定のユーザーによる Windows エンタープライズ登録済みデバイスのデータ プロセッサ サービスの使用に関連する Windows 診断データにアクセスできる組織内の唯一の人物です。 アクセス要求に対して取得されるデータは、エクスポートによってコンピューターが読み取り可能な形式で提供され、ユーザーがデータに関連付けられているデバイスとサービスを認識できるファイルで提供されます。 上記で説明したように、取得されるデータには Windows サービスのセキュリティまたは安定性を損なう可能性があるデータは含まれません。 
 
 お客様企業のテナント管理者はポータル エクスペリエンスを利用して、DSR アクセス要求を管理することができます。 「[Azure DSR、パート 2、手順 3: エクスポート](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)」では、Azure ポータルを介して、エクスポートを介して DSR アクセス要求を実行する方法について説明します。
 
@@ -91,7 +91,7 @@ Microsoft は、既存のアプリケーション プログラミング イン�
 
 ### <a name="step-3-export"></a>手順 3: エクスポート 
 
-テナント管理者は、特定のユーザーによる Windows 登録済みデバイスのデータ プロセッサ サービスの使用に関連する Windows 診断データにアクセスできる組織内の唯一の人物です。 エクスポート要求に対して取得されるデータは、コンピューターが読み取り可能な形式で提供され、ユーザーがデータに関連付けられているデバイスとサービスを認識できるファイルで提供されます。 上記で説明したように、取得されるデータには Windows サービスのセキュリティまたは安定性を損なう可能性があるデータは含まれません。 「[Azure DSR、パート 2、手順 3: エクスポート](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)」では、Azure ポータルを介して、DSR エクスポート要求を実行する方法について説明します。 
+テナント管理者は、特定のユーザーによる Windows エンタープライズ登録済みデバイスのデータ プロセッサ サービスの使用に関連する Windows 診断データにアクセスできる組織内の唯一の人物です。 エクスポート要求に対して取得されるデータは、コンピューターが読み取り可能な形式で提供され、ユーザーがデータに関連付けられているデバイスとサービスを認識できるファイルで提供されます。 上記で説明したように、取得されるデータには Windows サービスのセキュリティまたは安定性を損なう可能性があるデータは含まれません。 「[Azure DSR、パート 2、手順 3: エクスポート](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)」では、Azure ポータルを介して、DSR エクスポート要求を実行する方法について説明します。 
 
 Microsoft は、既存のアプリケーション プログラミング インターフェイス (API) を介して直接顧客データをエクスポートする機能を提供します。 詳細については、「[API 参照ドキュメンテーション](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)」に記載されています。
 

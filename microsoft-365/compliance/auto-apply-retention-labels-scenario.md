@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: このソリューション シナリオは、保持ラベルを使用して SharePoint Online に保存されている製品関連ドキュメントのライフサイクルを管理する方法を示します。 これは、ドキュメントを使用してコンテンツを分類し、特に保持ラベルを自動適用し、イベント ベースの保持を設定することによって行われます。
-ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 98e8b7fbe7a62af25797f813e2cefe1be2c39840
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199862"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387454"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する
 
@@ -124,10 +124,10 @@ ms.locfileid: "45199862"
 1. ドロップダウン リストに**基づくコンテンツの保持または削除**で、**イベント**を選択します。
 
 2. [**イベントの種類を選択します**] を選択します。
+    
+    ![製品の仕様のラベルの新しいイベントの種類を作成する](../media/SPRetention6.png)
 
-   ![製品の仕様のラベルの新しいイベントの種類を作成する](../media/SPRetention6.png)
-
-3. [**イベントの種類を選択します**] ページで、ここで [**新しいイベントの種類を作成できます**] を選択します。
+3. [**イベントの種類を選択します**] を選択します。 [**イベントの種類を選択します**] ページで、[**新しいイベントの種類を作成します**] を選択します。
 
 4. [**製品の中止**] という名前のイベントの種類を作成し、説明を入力し、[**完了**] を選択して作成します。 
 
@@ -252,7 +252,7 @@ KQL クエリが正しく機能していることを確認したので、KQL ク
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>保持ラベルが自動的に適用されたことを確認する
 
-7 日後、コンプライアンス センターの [[ラベル アクティビティ エクスプローラー](view-label-activity-for-documents.md)] を使用して、作成したラベル ポリシーがこのシナリオの保持ラベルを製品ドキュメントに自動的に適用したことを確認します。 
+7 日後、コンプライアンス センターの [[アクティビティ エクスプローラー](data-classification-activity-explorer.md)] を使用して、作成したラベル ポリシーがこのシナリオの保持ラベルを製品ドキュメントに自動的に適用したことを確認します。 
 
 もう 1 つの検証手順は、ドキュメント ライブラリ内のドキュメントのプロパティを調べることです。 情報パネルで、選択したドキュメントに保持ラベルが適用されていることがわかります。
 
