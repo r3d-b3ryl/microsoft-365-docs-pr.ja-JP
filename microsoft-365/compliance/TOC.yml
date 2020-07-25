@@ -315,14 +315,10 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: PowerShell で保持ラベルを作成する
           href: bulk-create-publish-labels-using-powershell.md
-        - name: イベント ベースの保持を使用する
-          items:
-            - name: イベントの発生時に保持を開始する
-              href: event-driven-retention.md
-            - name: イベント ベースの保持を自動化する
-              href: automate-event-driven-retention.md
-            - name: SharePoint ドキュメントのライフサイクルを管理する
-              href: auto-apply-retention-labels-scenario.md
+        - name: イベントの発生時に保持を開始する
+          href: event-driven-retention.md
+        - name: SharePoint ドキュメントのライフサイクルを管理する
+          href: auto-apply-retention-labels-scenario.md
     - name: データの破棄
       href: disposition.md
     - name: 非アクティブなメールボックスを管理する
