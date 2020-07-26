@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: 5a04e97b341c66a78010e7255554be72aa073593
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a3760feafa5307c8c71e83dcc72b988258b94a2a
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199731"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391509"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
@@ -64,18 +64,18 @@ ms.locfileid: "45199731"
     
 2. ユーザー (通常はレコード管理者) はコンテンツにこれらの保持ラベルを適用し、(SharePoint と OneDrive のドキュメントの場合) アイテムごとに資産 ID を入力します。 この例では、資産 ID は組織で使用される製品名またはコードです。 したがって、各製品のレコードには保持ラベルが割り当てられ、各レコードには資産 ID を含むプロパティが含まれます。 この図は組織内のすべての製品レコードの**すべてのコンテンツ**を表しており、各アイテムにはそのレコードに該当する製品の資産 ID が含まれます。 
     
-3. Product Lifetime がイベントの種類で、使用しなくなった特定の製品がイベントになります。その種類のイベントが発生したら (上の図の例では、製品を使用しなくなる場合)、以下を指定するイベントを作成します:
+3. 製品の有効期限がイベントの種類であり、有効期限が切れた特定の製品がイベントになります。そのイベントの種類のイベントが発生したら (この場合、製品の有効期限が切れるとき)、以下を指定するイベントを作成します。
     
-  - (SharePoint および OneDrive のドキュメントの) アセット ID。
+   - (SharePoint および OneDrive のドキュメントの) アセット ID。
     
-  - (Exchange アイテムの) キーワード。上の例において組織は、製品レコードを含むメッセージで製品コードを使用するため、Exchange アイテムのキーワードは  SharePoint および OneDrive ドキュメントのアセット  ID と同じになります。
+   - (Exchange アイテムの) キーワード。上の例において組織は、製品レコードを含むメッセージで製品コードを使用するため、Exchange アイテムのキーワードは  SharePoint および OneDrive ドキュメントのアセット  ID と同じになります。
     
-  - イベントが発生した日付。この日付は、保持期間の開始日として使用されます。この日付には、現在、過去、または将来の日付を使用できます。
-    
-4. イベントの作成後、イベントの日付は、そのイベントの種類の保持ラベルを持ち、指定された資産 ID またはキーワードを含むすべてのコンテンツに同期されます。 その他の保持ラベルと同様に、この同期には最大で 7 日間かかる可能性があります。 前の図では、赤で囲まれているアイテムはすべて、このイベントによって保持期間がトリガーされています。 言い換えれば、この製品の期限が切れたとき、そのイベントがその製品のレコードの保持期間のトリガーとなります。
-    
+   - イベントが発生した日付。この日付は、保持期間の開始日として使用されます。この日付には、現在、過去、または将来の日付を使用できます。
+
+4. イベントの作成後、イベントの日付は、そのイベントの種類の保持ラベルを持ち、指定された資産 ID またはキーワードを含むすべてのコンテンツに同期されます。 他の保持ラベルと同様に、この同期には最大で 7 日間かかります。 前の図では、赤で囲まれているアイテムはすべて、このイベントによって保持期間がトリガーされています。 言い換えれば、この製品の期限が切れたとき、そのイベントがその製品のレコードの保持期間のトリガーとなります。
+
 イベントに資産 ID またはキーワードを指定しない場合、そのイベントの種類のラベルの付いた**すべてのコンテンツ**はイベントによってトリガーされる保持期間を持つことを理解することが重要です。 つまり、前の図の場合であれば、すべてのコンテンツの保持が開始されます。 これは、意図したものとは異なる可能性があります。 
-  
+
 最後に、それぞれの保持ラベルにはそれぞれの保持設定があることにご注意ください。 この例では、すべて 10 年間に指定されていますが、それぞれのラベルが異なる保持期間を持つ保持ラベルを、1 つのイベントでトリガーすることができます。
   
 ## <a name="how-to-set-up-event-driven-retention"></a>イベント ドリブンの保持のセットアップ方法
@@ -140,7 +140,7 @@ ms.locfileid: "45199731"
     
 - 特定の製品のみのコンテンツ保持に使用する従業員 ID。
     
-資産 ID は、SharePoint と OneDrive で利用できる別のドキュメント プロパティです。 組織では既に別のドキュメント プロパティや ID を使用してコンテンツを分類している可能性があります。 その場合は、イベントの作成時にそれらのプロパティと値を使用することもできます (後述する手順 6 を参照してください)。 重要な点は、ドキュメント プロパティで *property:value* の組み合わせを使用して、そのアイテムをイベントの種類に関連付ける必要があるということです。
+資産 ID は、SharePoint と OneDrive で利用できる別のドキュメント プロパティです。 組織では既に別のドキュメント プロパティや ID を使用してコンテンツを分類している可能性があります。 その場合、イベントの作成時にそれらのプロパティおよび値を使用することもできます (後述する手順 6 を参照してください)。 重要な点は、ドキュメント プロパティで *property:value* の組み合わせを使用して、そのアイテムをイベントの種類に関連付ける必要があるということです。
   
 ![アセット ID を入力するテキスト ボックス](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
@@ -150,7 +150,7 @@ ms.locfileid: "45199731"
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>手順 6: 手順 2 でのラベルを使用したイベントの種類と同じものを選択する
 
-イベントを作成するときには、手順 2 の保持ラベルで使用したものと同じイベントの種類 (Product Lifetime など) を選択します。 そのイベントの種類が選択されたイベントに適用されている保持ラベルの付いたコンテンツのみが、トリガーされる保持期間を持ちます。
+イベントを作成するときには、手順 2 の保持ラベルで使用したものと同じイベントの種類 (製品の有効期限など) を選択します。 そのイベントの種類が選択されたイベントに適用されている保持ラベルの付いたコンテンツのみが、トリガーされる保持期間を持ちます。
   
 ![イベントの種類を選択するイベント設定のオプション](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
@@ -190,9 +190,7 @@ Exchange アイテムの場合、キーワード を使用します。 AND、OR�
   
 ## <a name="automate-events-by-using-powershell"></a>PowerShell を使用してイベントを自動化する
 
-Microsoft 365 コンプライアンス センターでは、イベントを手動で作成することができますが、イベントが発生した場合、自動的にトリガーすることをサポートしていません。 ただし、Rest API を使用してイベントを自動的にトリガーすることはできます。 詳細については、「[イベント ベースの保持を自動化する](automate-event-driven-retention.md)」を参照してください。
-
-PowerShellスクリプトを使用して、業務用アプリケーションからのイベント ベースの保持を自動化することもできます。 イベント ベースの保持で利用可能な PowerShell コマンドレットは、次のとおりです。
+PowerShell スクリプトを使用して、ビジネス アプリケーションからイベント ベースの保持を自動化することができます。 イベント ベースの保持で利用可能な PowerShell コマンドレットは、次のとおりです。
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
@@ -206,4 +204,257 @@ PowerShellスクリプトを使用して、業務用アプリケーションか�
     
 - [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
     
+
+## <a name="automate-events-by-using-a-rest-api"></a>REST API を使用してイベントを自動化する
+
+REST API を使用して、保持期間の開始をトリガーするイベントを自動的に作成できます。
+
+REST API は一連の HTTP 操作 (HTTP メソッド) をサポートするサービス エンドポイントで、サービス リソースへのアクセス権の作成/取得/更新/削除をできるようにします。 詳細については、「[REST API 要求/応答のコンポーネント](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)」を参照してください。 Microsoft 365 REST API を使用することにより、POST および GET メソッドを使用してイベントを作成および取得できます。
+
+REST API を使用するには、2 つのオプションがあります。
+
+- イベントの発生を自動的にトリガーする **Microsoft Power Automate または同様のアプリケーション**。 Microsoft Power Automate は、他のシステムに接続するためのオーケストレーターなので、カスタム ソリューションを作成する必要はありません。 詳細については、[Power Automate Web サイト](https://flow.microsoft.com/ja-JP/) を参照してください。
+
+- **PowerShell または HTTP クライアントで REST API** を呼び出して、カスタム ソリューションの一部である PowerShell (バージョン 6 以降) を使用してイベントを作成します。
+
+REST API を使用する前に、グローバル管理者として、保持イベント呼び出しに使用する URL を確認します。 これを行うには、REST API の URL を使用して、保持イベント呼び出しの取得を実行します。
+
+```console
+https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+```
+
+応答コードを確認します。 302 の場合は、応答ヘッダーの Location プロパティからリダイレクトされた URL を取得し、以下の手順で `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` の代わりにその URL を使用します。
+
+自動作成されたイベントは、Microsoft 365 コンプライアンス センター > **レコード管理** >  **イベント** で表示することで確認できます。
+
+### <a name="use-microsoft-power-automate-to-create-the-event"></a>Microsoft Power Automate を使用してイベントを作成する
+
+Microsoft 365 REST API を使用してイベントを作成するフローを作成します
+
+![Flow を使用してイベントを作成する](../media/automate-event-driven-retention-flow-1.png)
+
+![Flow を使用して REST API を呼び出す](../media/automate-event-driven-retention-flow-2.png)
+
+#### <a name="create-an-event"></a>イベントを作成する
+
+REST API を呼び出すサンプル コード
+
+- **方法**: 投稿
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+- **ヘッダー**: キー = Content-Type、値 = application/atom+xml
+- **本文**:
+    
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+    
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    
+    xmlns='http://www.w3.org/2005/Atom'>
+    
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    
+    <updated>9/9/2017 10:50:00 PM</updated>
+    
+    <content type='application/xml'>
+    
+    <m:properties>
+    
+    <d:Name>Employee Termination </d:Name>
+    
+    <d:EventType>99e0ae64-a4b8-40bb-82ed-645895610f56</d:EventType>
+    
+    <d:SharePointAssetIdQuery>1234</d:SharePointAssetIdQuery>
+    
+    <d:EventDateTime>2018-12-01T00:00:00Z </d:EventDateTime>
+    
+    </m:properties>
+    
+    </content>
+    
+    </entry>
+    ```
+    
+- **認証**: 基本
+- **ユーザー名**: 「Complianceuser」
+- **パスワード**: 「Compliancepassword」
+
+
+##### <a name="available-parameters"></a>利用可能なパラメーター
+
+
+|パラメーター|説明|Notes|
+|--- |--- |--- |
+|<d:Name></d:Name>|イベントの一意の名前を入力します。|末尾のスペースおよび以下の文字は使用できません。% * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|イベントの種類の名前 (または GUID) を入力します。|例: 「従業員の退職」。 イベントの種類を保持ラベルに関連付ける必要があります。|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|「ComplianceAssetId:」 と従業員 ID を入力します|例: 「ComplianceAssetId: 12345」|
+|<d:EventDateTime></d:EventDateTime>|イベントの日時|形式: yyyy-MM-ddTHH:mm:ssZ、例: 2018-12-01T00:00:00Z
+|
+
+###### <a name="response-codes"></a>応答コード
+
+| 応答コード | 説明       |
+| ----------------- | --------------------- |
+| 302               | リダイレクト              |
+| 201               | 作成済み               |
+| 403               | 承認に失敗しました  |
+| 401               | 認証に失敗しました |
+
+##### <a name="get-events-based-on-a-time-range"></a>時間範囲に基づいてイベントを取得する
+
+- **メソッド**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
+
+- **ヘッダー**: キー = Content-Type、値 = application/atom+xml
+
+- **認証**: 基本
+
+- **ユーザー名**: 「Complianceuser」
+
+- **パスワード**: 「Compliancepassword」
+
+
+###### <a name="response-codes"></a>応答コード
+
+| 応答コード | 説明                   |
+| ----------------- | --------------------------------- |
+| 200               | 問題ありません。イベントの一覧は atom+ xml 形式です |
+| 404               | 見つかりません                         |
+| 302               | リダイレクト                          |
+| 401               | 承認に失敗しました              |
+| 403               | 認証に失敗しました             |
+
+##### <a name="get-an-event-by-id"></a>ID でイベントを取得する
+
+- **メソッド**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **ヘッダー**: キー = Content-Type、値 = application/atom+xml
+
+- **認証**: 基本
+
+- **ユーザー名**: 「Complianceuser」
+
+- **パスワード**: 「Compliancepassword」
+
+###### <a name="response-codes"></a>応答コード
+
+| 応答コード | 説明                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | 問題ありません。応答本体に atom+xml 形式のイベントが含まれています |
+| 404               | 見つかりません                                            |
+| 302               | リダイレクト                                             |
+| 401               | 承認に失敗しました                                 |
+| 403               | 認証に失敗しました                                |
+
+##### <a name="get-an-event-by-name"></a>名前でイベントを取得する
+
+- **メソッド**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **ヘッダー**: キー = Content-Type、値 = application/atom+xml
+
+- **認証**: 基本
+
+- **ユーザー名**: 「Complianceuser」
+
+- **パスワード**: 「Compliancepassword」
+
+
+###### <a name="response-codes"></a>応答コード
+
+| 応答コード | 説明                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | 問題ありません。応答本体に atom+xml 形式のイベントが含まれています |
+| 404               | 見つかりません                                            |
+| 302               | リダイレクト                                             |
+| 401               | 承認に失敗しました                                 |
+| 403               | 認証に失敗しました                                |
+
+### <a name="use-powershell-or-any-http-client-to-create-the-event"></a>PowerShell または HTTP クライアントを使用してイベントを作成する
+
+PowerShell はバージョン 6 以降がインストールされている必要があります。
+
+PowerShell セッションで、次のスクリプトを実行します。
+
+```powershell
+param([string]$baseUri)
+
+$userName = "UserName"
+
+$password = "Password"
+
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+$EventName="EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))"
+
+Write-Host "Start to create an event with name: $EventName"
+
+$body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+
+xmlns='http://www.w3.org/2005/Atom'>
+
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+
+<updated>7/14/2017 2:03:36 PM</updated>
+
+<content type='application/xml'>
+
+<m:properties>
+
+<d:Name>$EventName</d:Name>
+
+<d:EventType>e823b782-9a07-4e30-8091-034fc01f9347</d:EventType>
+
+<d:SharePointAssetIdQuery>'ComplianceAssetId:123'</d:SharePointAssetIdQuery>
+
+</m:properties>
+
+</content>
+
+</entry>"
+
+$event = $null
+
+try
+
+{
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri "$baseUri/ComplianceRetentionEvent" -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+catch
+
+{
+
+$response = $_.Exception.Response
+
+if($response.StatusCode -eq "Redirect")
+
+{
+
+$url = $response.Headers.Location
+
+Write-Host "redirected to $url"
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+}
+
+$event | fl *
+
+```
 
