@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
-ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 60b53e21978867321f6fe824da35db683dc76663
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204865"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372563"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -357,7 +357,7 @@ Exchange Online PowerShell またはスタンドアロンの EOP PowerShell で�
      > [!NOTE]
      > 前回のサイクルで通知を受信できなかった場合は、後続のサイクルが通知をプッシュします。 これにより、同じ日に複数の通知が表示される場合があります。
 
-   - **通知言語**: ドロップダウンをクリックして、リストから使用可能な言語を選びます。 既定値は**Default**で、これはクラウドベースの組織の既定言語を意味します。
+   - **通知言語**: ドロップダウンをクリックして、リストから使用可能な言語を選びます。 既定値は、英語で、**Default**です。
 
    完了したら、**[保存]** をクリックします。
 
