@@ -319,8 +319,8 @@
           href: event-driven-retention.md
         - name: SharePoint ドキュメントのライフサイクルを管理する
           href: auto-apply-retention-labels-scenario.md
-    - name: データの破棄
-      href: disposition.md
+        - name: データの廃棄を管理する
+          href: disposition.md
     - name: 非アクティブなメールボックスを管理する
       items:
         - name: 非アクティブなメールボックスの概要
