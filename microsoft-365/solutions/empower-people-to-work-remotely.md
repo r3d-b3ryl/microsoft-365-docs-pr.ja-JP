@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/14/2020
+ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 37306a4e4e820d1a21d83eeabf3712a7f6abc99e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158900"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429886"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -36,8 +36,7 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 ![Microsoft 365 でリモート ワーカーを支援する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-
-| | |
+| 主な機能 | 説明 |
 |:-------|:-----|
 | 接続しました | 世界中のどこからでも、いつでも、リモート ワーカーは以下にアクセスできます。 <ul><li>Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。 </li><li>オンプレミスのアプリケーション データセンターで提供されるような組織のリソース。</li></ul> |
 | セキュリティ保護 | サインインは、多要素認証 (MFA) や Microsoft 365 と Windows 10 の組み込みセキュリティ機能により、マルウェア、悪意のある攻撃、データ損失から保護されています。 |
@@ -53,21 +52,23 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
-| セキュリティの既定値が適用されている MFA   | サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。   | Microsoft 365 E3、E5 |
-| 条件付きアクセスが適用されている MFA| 条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。    | Microsoft 365 E3、E5 | 
+| セキュリティの既定値が適用されている MFA   | サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。   | Microsoft 365 E3 または E5 |
+| 条件付きアクセスが適用されている MFA| 条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。    | Microsoft 365 E3 または E5 | 
 | リスクベースの条件付きアクセスが適用されている MFA   | Azure Advanced Threat Protection によるユーザー サインインのリスクに基づいて MFA を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 | 
-| セルフサービスによるパスワードのリセット (SSPR)    | ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。  | Microsoft 365 E3、E5 |
+| セルフサービスによるパスワードのリセット (SSPR)    | ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。  | Microsoft 365 E3 または E5 |
 | Azure AD アプリケーション プロキシ    | イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。   | 別の有料 Azure サブスクリプションが必要 |
 | Azure ポイント対サイト VPN   | Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。   | 別の有料 Azure サブスクリプションが必要 |
 | Windows Virtual Desktop   | Azure で実行されている仮想デスクトップで、個人の管理されていないデバイスのみを使用できるリモート ワーカーをサポートします。 | 別の有料 Azure サブスクリプションが必要 |
-| リモート デスクトップ サービス (RDS) | 従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。 | Microsoft 365 E3、E5 | 
+| リモート デスクトップ サービス (RDS) | 従業員によるイントラネット上の Windows ベースのコンピューターへの接続を許可します。 | Microsoft 365 E3 または E5 | 
 | リモート デスクトップ サービス ゲートウェイ   | 通信を暗号化し、RDS ホストがインターネットに直接公開されないようにします。 | 別の Windows サーバー ライセンスが必要 |
-| Microsoft Intune | デバイスとアプリケーションを管理します。   | Microsoft 365 E3、E5 | 
-| Configuration Manager | デバイスでのソフトウェアのインストール、更新、設定を管理します | 別の Configuration Manager ライセンスが必要 |
+| Microsoft Intune | デバイスとアプリケーションを管理します。   | Microsoft 365 E3 または E5 | 
+| 構成マネージャーを使用するための | デバイスでのソフトウェアのインストール、更新、設定を管理します | 別の Configuration Manager ライセンスが必要 |
 | Desktop Analytics | Windows クライアントの更新プログラムの準備状況を確認します。   | 別の Configuration Manager ライセンスが必要 |
-| Windows Autopilot | 生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。   | Microsoft 365 E3、E5 |
-| Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer、Power Apps | 作成、連絡、共同作業を行います。 | Microsoft 365 E3、E5 |
+| Windows Autopilot | 生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。   | Microsoft 365 E3 または E5 |
+| Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer、Power Apps | 作成、連絡、共同作業を行います。 | Microsoft 365 E3 または E5 |
 ||||
+
+リモートワーカーのセキュリティとコンプライアンスの基準については、[リモートワーカーへのセキュリティとコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)を参照してください。
 
 <a name="poster"></a> このシナリオを 2 ページにまとめた [「リモート ワーカーを支援するポスター」](../downloads/empower-remote-workers.pdf) を参照してください。
 
