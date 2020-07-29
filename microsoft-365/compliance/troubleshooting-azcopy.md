@@ -19,12 +19,12 @@ description: Office 以外の365データを読み込み中に、高度な電子
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 0185c179039b7aec72bc400709225ef42489f620
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819147"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434280"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Advanced eDiscovery での AzCopy のトラブルシューティング
 
@@ -42,7 +42,7 @@ Advanced eDiscovery でエラーを修復するために Microsoft 以外の365�
 
 AzCopy がインストールされていない場合や、既定のインストール先 (つまり) 以外の場所にインストールされている場合 `%ProgramFiles(x86)%` 、azcopy コマンドを実行すると、次のエラーが表示されることがあります。
 
-    The system cannot find the path specified.
+> システムで指定されたパスが見つかりません。
 
 AzCopy がローカルコンピューターにインストールされていない場合は、「 [Windows の AzCopy](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)v2.0 でデータを転送する」のインストール情報を参照できます。 必ず既定の場所にインストールしてください。
 

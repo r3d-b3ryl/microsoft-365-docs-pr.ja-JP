@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127314"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502928"
 ---
 # <a name="supervision-policies"></a>監督ポリシー
 
@@ -286,14 +286,6 @@ Office 365 の監督に関する定年に関する情報については、 [Micr
 ## <a name="audit"></a>監査
 
 場合によっては、規制またはコンプライアンスの監査人に情報を提供して、従業員のアクティビティとコミュニケーションの監督を証明する必要があります。 この情報には、定義済みのポリシーに関連付けられているすべての監督活動の要約や、監督ポリシーの変更が含まれる場合があります。 監督ポリシーには、内部または外部の監査を完全に準備するための組み込みの監査証跡が用意されています。 監督ポリシーによって監視されるすべての操作の詳細な監査履歴では、監督手順の証明が提供されます。
-
-次の監督ポリシーアクティビティが監査され、統合監査ログで使用可能になります。
-
-|**アクティビティ**|**関連付けられたコマンド**|
-|:-----|:-----|
-| **ポリシーを作成する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
-| **ポリシーを編集する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
-| **ポリシーを削除する** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
 監査アクティビティを統合監査ログまたは[Search-unifiedauditlog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell コマンドレットを使用して表示します。
 

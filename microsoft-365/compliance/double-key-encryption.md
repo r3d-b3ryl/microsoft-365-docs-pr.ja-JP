@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: d9ed155576d69889e53e4e4d1ce03e4233fd08ff
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387444"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503038"
 ---
 # <a name="double-key-encryption-dke"></a>二重キー暗号化 (DKE)
 
@@ -33,9 +33,11 @@ ms.locfileid: "45387444"
 
 既定のクラウドベースのテナントルートキーの詳細については、「 [Azure Information Protection のテナントキーを計画および実装](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)する」を参照してください。
 
-次のビデオは、二重のキー暗号化がコンテンツをセキュリティで保護するしくみを示しています。
+<!--
+The following video shows how Double Key Encryption works to secure your content.
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+-->
 
 組織に次の要件がある場合は、DKE を使用してコンテンツをセキュリティで保護できます。
 
@@ -45,7 +47,7 @@ ms.locfileid: "45387444"
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>DKE のシステムおよびライセンスの要件
 
-Microsoft 365 の microsoft part および Office 365 E5 365 の二重キー暗号化。 Microsoft 365 E5 ライセンスを持っていない場合は、[試用版](https://aka.ms/M365E5ComplianceTrial)にサインアップできます。 これらのライセンスの詳細については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
+Microsoft 365 の二重キー暗号化には、Microsoft 365 E5 および Office 365 E5 が付属しています。 Microsoft 365 E5 ライセンスを持っていない場合は、[試用版](https://aka.ms/M365E5ComplianceTrial)にサインアップできます。 これらのライセンスの詳細については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
 
 **Office Insider**パブリックプレビューを使用するには、Office Insider プログラムのメンバーである必要があります。 Office Insider に参加するには、にアクセス [https://insider.office.com](https://insider.office.com) してください。 メンバーになったら、組織に適した展開方法を選択して、Office Insider ビルドを展開するための環境を準備します。 手順については、「 [Office Insider ビルドの展開の](https://insider.office.com/business/deploy)概要」を参照してください。
 
@@ -69,7 +71,7 @@ Microsoft 365 の microsoft part および Office 365 E5 365 の二重キー暗�
 
 この記事と展開ビデオでは、DKE サービスの展開先として Azure を使用します。 別の場所に展開している場合は、独自の値を指定する必要があります。
 
-この記事で説明する概念の詳細な手順については、「[二重キー暗号化展開ビデオ](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e)」をご覧ください。 ビデオの完了に約18分かかります。
+この記事で説明する概念の詳細な手順については、「[二重キー暗号化展開ビデオ](https://youtu.be/vDWfHN_kygg)」をご覧ください。 ビデオの完了に約18分かかります。
 
 次の一般的な手順に従って、組織のために二重キー暗号化を設定します。
 
@@ -134,11 +136,11 @@ Microsoft は、GitHub リポジトリに DKE ソースファイルを提供し�
 
 1. 画面の右側にある [**コード**] を選択します。 使用しているバージョンの UI には、[**クローン] または [ダウンロード**] ボタンが表示される場合があります。 次に、表示されたドロップダウンで、[コピー] アイコンを選択して、URL をクリップボードにコピーします。
 
-    次に、例を示します。
+    例:
 
     :::image type="content" source="../media/dke-clone.png" alt-text="GitHub から二重キー暗号化サービスリポジトリを複製する":::
 
-3. Visual Studio Code で、[ **View** \> **Command Palette** ] を選択し、[ **Git: Clone**] を選択します。 一覧のオプションに移動するには、入力を開始して `git: clone` エントリをフィルター処理し、ドロップダウンから選択します。 次に、例を示します。
+3. Visual Studio Code で、[ **View** \> **Command Palette** ] を選択し、[ **Git: Clone**] を選択します。 一覧のオプションに移動するには、入力を開始して `git: clone` エントリをフィルター処理し、ドロップダウンから選択します。 例:
 
     :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Visual Studio Code GIT: Clone オプション":::
 
@@ -148,7 +150,7 @@ Microsoft は、GitHub リポジトリに DKE ソースファイルを提供し�
 
     リポジトリは Visual Studio Code で開かれ、左下に現在の Git ブランチが表示されます。 ブランチは**master**である必要があります。
 
-    次に、例を示します。
+    例:
 
     :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio Code master 分岐":::
 
@@ -182,7 +184,7 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 1. ファイル**でappsettings.js**を開き、設定を探し `AuthorizedEmailAddress` ます。
 
-2. 承認するメールアドレスを追加します。 複数の電子メールアドレスは、二重引用符とコンマで区切ります。 次に、例を示します。
+2. 承認するメールアドレスを追加します。 複数の電子メールアドレスは、二重引用符とコンマで区切ります。 例:
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
@@ -204,13 +206,13 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 1. ファイル**でappsettings.js**を開き、設定を探し `AuthorizedRoles` ます。
 
-2. 承認する Active Directory グループ名を追加します。 複数のグループ名は、二重引用符とコンマで区切ります。 次に、例を示します。
+2. 承認する Active Directory グループ名を追加します。 複数のグループ名は、二重引用符とコンマで区切ります。 例:
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. `LDAPPath`設定を見つけて、Active Directory ドメインを追加します。 次に、例を示します。
+3. `LDAPPath`設定を見つけて、Active Directory ドメインを追加します。 例:
 
    ```json
    "LDAPPath": "contoso.com"
@@ -230,7 +232,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
 
 1. ファイル**でappsettings.js**を開きます。
 
-2. `ValidIssuers`設定を見つけて、 `<tenantid>` テナント ID に置き換えます。 Azure ポータルに移動して、[テナントのプロパティ](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)を表示することによって、テナント ID を見つけることができます。 次に、例を示します。
+2. `ValidIssuers`設定を見つけて、 `<tenantid>` テナント ID に置き換えます。 Azure ポータルに移動して、[テナントのプロパティ](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)を表示することによって、テナント ID を見つけることができます。 例:
 
    ```json
    "ValidIssuers": [
@@ -238,7 +240,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
    ]
    ```
 
-を探し `JwtAudience` ます。 を、 `<yourhostname>` DKE サービスが実行されるコンピューターのホスト名に置き換えます。 次に、例を示します。
+を探し `JwtAudience` ます。 を、 `<yourhostname>` DKE サービスが実行されるコンピューターのホスト名に置き換えます。 例:
 
 
 
@@ -347,7 +349,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
 
 2. [**実行** \> **開始デバッグ**] を選択してプロセスをデバッグします。 環境を選択するように求めるメッセージが表示されたら、[ **.net core**] を選択します。
 
-通常、.net コアデバッガーは ' ' ' に起動 https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 し、スラッシュ (/) とキーの名前を追加します。 次に、例を示します。
+通常、.net コアデバッガーは ' ' ' に起動 https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 し、スラッシュ (/) とキーの名前を追加します。 例:
 
 ```https
 https://localhost:5001/TestKey1
@@ -371,7 +373,7 @@ https://localhost:5001/TestKey1
 
     - [**発行**] で、[**コード**] を選択し、[**ランタイムスタック**] で [ **.net Core 3.1**] を選択します。
 
-    次に、例を示します。
+    例:
 
     :::image type="content" source="../media/dke-azure-add-app-service.png" alt-text="アプリサービスを追加する":::
 
@@ -418,7 +420,7 @@ DKE が展開されており、作成したテストキーを参照すること�
 
 1. ローカルファイルに表示される接続文字列をコピーします。 これらの文字列を使用して Web App サービスに接続し、FTP を使用してファイルをアップロードします。
 
-    次に、例を示します。
+    例:
 
     :::image type="content" source="../media/dke-ftp-dashboard.png" alt-text="FTP ダッシュボードから接続文字列をコピーする":::
 
@@ -446,7 +448,7 @@ DKE が展開されており、作成したテストキーを参照すること�
 
 src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
 
-次に、例を示します。
+例:
 
 key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
@@ -466,7 +468,7 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
     **Onmicrosoft.com**などの非ユーザー設定ドメインを使用して Microsoft Azure を使用している場合は、[**この組織ディレクトリ内のアカウントのみ (microsoft のみ)** ] を選択します。
 
-    次に、例を示します。
+    例:
 
     :::image type="content" source="../media/dke-app-registration.png" alt-text="新しいアプリの登録":::
 
@@ -524,7 +526,7 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
 Microsoft 365 コンプライアンスセンターで、別の方法として、新しい機密ラベルを作成し、暗号化を適用します。 [ **2 重のキー暗号化を使用する**] を選択し、キーのエンドポイント URL を入力します。
 
-次に、例を示します。
+例:
 
 :::image type="content" source="../media/dke-use-dke.png" alt-text="Microsoft 365 コンプライアンスセンターで [二重のキー暗号化を使用する] を選択します。":::
 
@@ -535,11 +537,9 @@ Microsoft 365 コンプライアンスセンターで、別の方法として、
 
 ### <a name="enable-dke-in-your-client"></a>クライアントで DKE を有効にする
 
-Microsoft Office の [感度] リボンの下に DKE ラベルが表示されない場合、クライアントの DKE が有効になっていない可能性があります。
-
 次のレジストリキーを追加して、クライアントに対して DKE を有効にします。
 
-```ini
+```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 

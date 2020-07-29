@@ -9,16 +9,16 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b6310849f27200adbbcbcb1584903011fbdf6145
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 17696b18b4109b568bb1d616813ba40e2a9dccdc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146273"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430473"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルにアクセスする
 
-Microsoft Managed Desktop service へのゲートウェイは、Microsoft [Azure portal](https://portal.azure.com)です。 Azure ポータルを使用してカスタマイズする方法の詳細については、「 [azure portal のドキュメント](https://docs.microsoft.com/azure/azure-portal/)」を参照してください。 
+Microsoft Managed Desktop service へのゲートウェイは、Microsoft [Azure portal](https://portal.azure.com)です。 Azure ポータルを使用してカスタマイズする方法の詳細については、「 [azure portal のドキュメント](https://docs.microsoft.com/azure/azure-portal/)」を参照してください。 プレビューでは、microsoft[エンドポイントマネージャー](https://endpoint.microsoft.com/)で Microsoft Managed Desktop を検索することもできます。 このポータルのデバイス管理の機能についてよく知らない場合は、 [Microsoft エンドポイントマネージャーのドキュメント](https://docs.microsoft.com/mem/)を参照してください。
 
 管理アカウントには、Microsoft Managed Desktop 管理ポータルにアクセスするための特定のアクセス許可が必要です。 役割ベースのアクセス制御 (RBAC) を使用して、組織内のこれらの機能への管理者アクセスを管理することができます。 Azure Active Directory ロールの詳細については、「 [Azure Active directory での管理者ロールのアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)」を参照してください。
 

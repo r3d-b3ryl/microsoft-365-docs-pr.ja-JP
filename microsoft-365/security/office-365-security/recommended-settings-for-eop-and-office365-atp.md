@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389847"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430377"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -194,7 +194,8 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 
 |セキュリティ機能の名前|Standard|Strict|コメント|
 |---|---|---|---|
-|**安全なリンクの使用: Office 365 アプリケーション** <br/><br/> _EnableSafeLinksForO365Clients_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Office 365 アプリ (iOS 版および Android 版) では、ATP の安全なリンクを使用します。|
+|**安全なリンクの使用: Office 365 アプリケーション** <br/><br/> _EnableSafeLinksForO365Clients_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Office 365 デスクトップおよびモバイル (iOS および Android) クライアントでは、ATP の安全なリンクを使用します。|
+|**安全なリンクの使用: Office Web Access コンパニオン** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Office Web Apps で ATP の安全なリンクを使用します。|
 |**ユーザーが [安全なリンク] をクリックしたときに追跡しない** <br/><br/> _トラッククリック_|オフ <br/><br/> `$true`|オフ <br/><br/> `$true`||
 |**ユーザーが元の URL への安全なリンクをクリックできないようにする** <br/><br/> _AllowClickThrough スルー_|オン <br/><br/> `$false`|オン <br/><br/> `$false`||
 |

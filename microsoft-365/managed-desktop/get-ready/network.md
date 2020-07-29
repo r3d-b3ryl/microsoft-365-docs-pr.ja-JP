@@ -1,7 +1,7 @@
 ---
-title: Microsoft マネージドデスクトップのネットワーク構成
+title: Microsoft マネージド デスクトップのネットワーク構成
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,14 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
-ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
+ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735516"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430497"
 ---
-#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのネットワーク構成
+#  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのネットワーク構成
 
 <!--Proxy config -->
 
@@ -33,32 +33,33 @@ Microsoft マネージドデスクトップは、クラウドで管理される�
 
 プロキシまたはファイアウォールは、TLS 1.2 をサポートしている必要があります。 それ以外の場合は、プロトコル検出を無効にする必要があります。
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに対して許可されているエンドポイント
+### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップに必要なエンドポイントが許可されている
 
-Microsoft マネージドデスクトップでは、Azure Portal を使用して web コンソールをホストします。 次の表に示す Url は、Microsoft の管理対象デスクトップデバイスが Microsoft サービスと通信できるように、プロキシとファイアウォールの許可リストに含まれている必要があります。  
+Microsoft マネージドデスクトップでは、Azure Portal を使用して web コンソールをホストします。 Microsoft マネージドデスクトップデバイスが Microsoft サービスと通信できるようにするには、次の Url がプロキシとファイアウォールの許可リストにある必要があります。  
 
-以下の Microsoft Managed Desktop の URL は、お客様の API でサービスが実行されているすべてのものに使用されることに注意してください。 この URL が企業ネットワークで常にアクセス可能であることを確認する必要があります。
+Microsoft マネージドデスクトップの URL は、お客様の API でサービスが実行されるすべての対象に使用されます。 この URL が企業ネットワークで常にアクセス可能であることを確認する必要があります。
 
 Microsoft サービス  | 許可リストに必要な Url 
---- | --- | ---
+--- | ---
 Microsoft マネージド デスクトップ | prod-mwaas-services-customerapi.azurewebsites.net
 ヘルプを表示する | \*. support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 クイックアシスト | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*. lync.com
 Microsoft サポート/回復アシスタント | \*. apibasic.diagnostics.office.com  <br>\*. api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>エンドポイントが許可されているその他の Microsoft 製品
+### <a name="endpoints-allowed-used-by-other-microsoft-products"></a>他の Microsoft 製品で使用が許可されているエンドポイント
 
 Microsoft マネージドデスクトップデバイスが microsoft サービスと通信できるように、許可リストに含まれている必要があるいくつかの Microsoft 製品からの Url があります。 各製品の完全な一覧を表示するには、リンクを使用します。 
 
-Microsoft サービス | ドキュメントソース-許可リストに必要な Url
+Microsoft サービス | ドキュメント
 --- | ---
-Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョン1803の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Windows 10 バージョン1809の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Windows 10 バージョン1903の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Windows 10 バージョン2004の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
-配信の最適化 | [Windows 10 更新プログラムの配信最適化を構成する](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョン1803の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Windows 10 バージョン1809の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Windows 10 バージョン1903の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Windows 10 バージョン2004の接続エンドポイントを管理する](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
+配信最適化 | [Windows 10 更新プログラムの配信最適化を構成する](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、 [Active directory および Active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune のネットワークエンドポイント](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Windows Autopilot | [Windows 自動操縦のネットワーク要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

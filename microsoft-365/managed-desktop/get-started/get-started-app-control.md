@@ -1,5 +1,5 @@
 ---
-title: アプリコントロールの使用を開始する
+title: アプリ制御の使用を開始する
 description: ''
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 12df7b074019ea47f2e293b71c6b0b25fe46f66f
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 431e6cb3b8d7ab7e1dd317918fab4821889c7d4e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170711"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430461"
 ---
-# <a name="get-started-with-app-control"></a>アプリコントロールの使用を開始する
+# <a name="get-started-with-app-control"></a>アプリ制御の使用を開始する
 
 ご使用の環境でアプリの制御を有効にする前に、 [Microsoft Managed Desktop が it](../service-description/app-control.md)と自分の役割と責任をどのように実装しているかを確認し、理解しておいてください。
 
@@ -26,6 +26,19 @@ Microsoft マネージドデスクトップは、セキュリティで保護さ�
 ## <a name="initial-deployment-of-apps"></a>アプリの初期展開
 
 最初にアプリを展開するときに、Microsoft マネージドデスクトップは現在の動作を評価する必要があります。 アプリコントロールを有効にするための正確な手順は、デバイスが環境に展開されているかどうかによって異なります。
+
+### <a name="devices-not-yet-in-use"></a>まだ使用されていないデバイス
+
+まだ使用しているデバイスがない場合は、Microsoft マネージドデスクトップ操作を使用してサービスチケットを開いて、アプリのコントロールを有効にするように要求します。 このスケジュールに従って、ポリシーは展開グループに段階的に展開されます。
+
+|展開グループ  |ポリシーの種類  |Timing  |
+|---------|---------|---------|
+|テスト     |  監査       |  0日       |
+|第 1     | Enforced        | 1 日目        |
+|高速     | Enforced        |  2 日目       |
+|広範な質問     | Enforced        |  3 日目       |
+
+いつでも別のサービス要求を開いて、いつでもこの展開の一部を停止またはロールバックすることができます。
 
 ### <a name="devices-already-in-use"></a>デバイスは既に使用されています
 
@@ -39,21 +52,10 @@ Microsoft マネージドデスクトップは、セキュリティで保護さ�
 |---------|---------|---------|
 |テスト     |  監査       |  0日       |
 |第 1     | Enforced        | 1 日目        |
-|高速     | Enforced        |  3 日目       |
-|広範な質問     | Enforced        |  7 日目       |
+|高速     | Enforced        |  一時停止、要求でのロールアウト       |
+|広範な質問     | Enforced        |  一時停止、要求でのロールアウト       |
 
 いつでも別のサービス要求を開いて、いつでもこの展開の一部を停止またはロールバックすることができます。
 
-### <a name="devices-not-yet-in-use"></a>まだ使用されていないデバイス
 
-まだ使用しているデバイスがない場合は、Microsoft マネージドデスクトップ操作を使用してサービスチケットを開いて、アプリのコントロールを有効にするように要求します。 このスケジュールに従って、ポリシーは展開グループに段階的に展開されます。
-
-|展開グループ  |ポリシーの種類  |Timing  |
-|---------|---------|---------|
-|テスト     |  監査       |  0日       |
-|第 1     | Enforced        | 1 日目        |
-|高速     | Enforced        |  3 日目       |
-|広範な質問     | Enforced        |  7 日目       |
-
-いつでも別のサービス要求を開いて、いつでもこの展開の一部を停止またはロールバックすることができます。
 

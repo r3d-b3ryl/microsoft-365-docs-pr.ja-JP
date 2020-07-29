@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 情報バリアを使用して、組織内の Microsoft Teams を使用して通信のコンプライアンスを確保します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41b9eb1378a585a22bbd747edb395b79cfe761ca
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: f723885a366e6f92f29faccfb632677c6e0028c8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084146"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430225"
 ---
 # <a name="information-barriers"></a>情報バリア
 
@@ -64,10 +64,11 @@ Microsoft Teams、SharePoint Online、OneDrive for Business では、情報バ�
 
 情報バリアは現在ロールアウトされており、次のようなサブスクリプションに含まれています。
 
-- Microsoft 365 E5
-- Office 365 E5
+- Microsoft 365 E5/A5
+- Office 365 E5/A5
 - Office 365 Advanced Compliance
-- Microsoft 365 コンプライアンス E5
+- Microsoft 365 コンプライアンス E5/A5
+- Microsoft 365 Insider リスク管理
 
 詳細については、「[コンプライアンスソリューション](https://products.office.com/business/security-and-compliance/compliance-solutions)」を参照してください。
 

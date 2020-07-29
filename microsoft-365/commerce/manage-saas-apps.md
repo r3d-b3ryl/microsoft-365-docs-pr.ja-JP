@@ -14,23 +14,26 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft 365 管理センターでサードパーティ製アプリをアクティブ化および管理する方法について説明します。
-ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402584"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429992"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサードパーティ製アプリのサブスクリプションを管理する
+
+新しい Microsoft 365 管理センターで、サードパーティ製アプリのライセンスと請求書を管理することができます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの向上、請求書管理の柔軟性の向上などがあります。 サブスクリプション管理は、Microsoft の更新された commerce プラットフォームに基づいています。 これは、顧客が直接購入するか、またはサードパーティのプロバイダーから購入した、サービスとしてのソフトウェアアプリに適用されます。
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
 プレビューモードがオンになっている Microsoft 365 管理センターで、サードパーティ製アプリのライセンスと請求を管理することができます。 更新された機能には、サブスクリプション管理の強化、請求情報へのアクセスの向上、請求書管理の柔軟性の向上などがあります。 サブスクリプション管理は、Microsoft の更新された commerce プラットフォームに基づいています。 これは、顧客が直接購入した、またはサードパーティプロバイダーからの、サービスとしてのソフトウェアアプリに適用されます。
+
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>サービスとしてのソフトウェアアプリを入手する方法
 
@@ -104,7 +107,7 @@ ms.locfileid: "44402584"
 
 ## <a name="manage-payment-methods"></a>支払方法を管理する
 
-サービスとしてのソフトウェアアプリにはそれぞれ、請求プロファイルが割り当てられています。 請求プロファイルを使用すると、請求書に含める製品をカスタマイズしたり、請求書に支払いを行ったりすることができます。 これには以下の関係者が含まれます。
+サービスとしてのソフトウェアアプリにはそれぞれ、請求プロファイルが割り当てられています。 請求プロファイルを使用すると、請求書に含める製品をカスタマイズしたり、請求書に支払いを行ったりすることができます。 これには、次のものが含まれます。
 
 - **支払い方法**–クレジットカードまたは小切手/ワイヤ転送
 - **連絡先情報**-請求先住所と連絡先の名前

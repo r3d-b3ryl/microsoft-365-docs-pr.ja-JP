@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、Outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: 0b900fe00dc590b69755b54f8103688042026df0
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2b074d1bd260f5c95d138577e259aee14ec9e8d7
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588230"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430509"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -40,7 +40,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
 グローバル管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、[組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。 これで、レポートメッセージアドインが[一元展開](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - レポートメッセージアドインは、ほとんどの Microsoft 365 サブスクリプションと、次の製品で機能します。
 
@@ -49,10 +49,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
   - Outlook 2016 for Mac
   - Outlook は、Microsoft 365 apps for Enterprise に含まれています。
 
-- レポートメッセージアドインは現在、次の場合には使用できません。
-
-  - オンプレミスの Exchange 組織内のメールボックス
-  - GCC、GCC HIGH、または DoD サブスクリプション
+- このレポートメッセージアドインは、オンプレミスの Exchange 組織のメールボックスでは使用できません。
 
 - 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [Exchange Online でスパムおよびフィッシングメッセージをユーザーに送信するためのメールボックスを指定](user-submission.md)する」を参照してください。
 

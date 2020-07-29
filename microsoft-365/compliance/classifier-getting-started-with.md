@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 トレーニング可能な分類子は、陽性と陰性のサンプルを提供することによって、さまざまなタイプのコンテンツを認識するトレーニング ツールです。 分類子がトレーニングされると、その結果が正しいことを確認します。 次に、それを使用して組織のコンテンツを検索し、分類して保持または秘密度ラベルを適用するか、データ損失防止 (DLP) または保持ポリシーに含めます。
-ms.openlocfilehash: 10475420c729efc6a1ff59b6620fed08a1bdefca
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 7cad27112597bcdbdce6aeb33fef66f24bdd8819
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126336"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502974"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -45,7 +45,7 @@ ms.locfileid: "45126336"
 この分類方法は、手動または自動のパターン マッチング方法では簡単に識別できないコンテンツに特に適しています。 この分類方法は、アイテムに含まれる要素ではなく、アイテムが何であるかに基づいてアイテムを識別するように分類子をトレーニングすることです (パターン マッチング)。 分類子は、分類したいコンテンツの数百の例を見て、コンテンツのタイプを識別する方法を学びます。 それを間違いなくカテゴリーにある例に与えることから始めます。 それらを処理したら、一致する例と一致しない例の両方を組み合わせてテストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 その後、その結果を確認し、陽性、陰性、偽陽性、偽陰性に仕分けし、その予測の正確性を高めます。 トレーニング済みの分類子を公開すると、SharePoint Online、Exchange、OneDrive などの場所にあるアイテムが並べ替えられ、コンテンツが分類されます。
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>Trainable 分類子を使用できる場所
-組み込みの分類子とトレーニング可能な分類子の両方が、[条件に基づく保持ラベル ポリシーの自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)と[通信コンプライアンス](communication-compliance-configure.md)の条件として使用できます。 
+組み込み分類子と trainable 分類子は、両方とも、[条件](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)および[通信コンプライアンス](communication-compliance.md)に基づいて、[機密ラベルを使用した Office autolabeling](apply-sensitivity-label-automatically.md)の条件として使用できます。 
 
 機密ラベルを使用して、組み込みの分類子を条件として使用できます。「[機密ラベルをコンテンツに自動的に適用](apply-sensitivity-label-automatically.md)する」を参照してください。
 

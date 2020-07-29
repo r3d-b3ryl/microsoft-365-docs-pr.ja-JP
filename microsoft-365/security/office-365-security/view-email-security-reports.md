@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102917"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434257"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -34,7 +34,7 @@ ms.locfileid: "45102917"
 ## <a name="compromised-users-report"></a>侵害されたユーザーレポート
 
 > [!NOTE]
-> このレポートは、Microsoft 365 組織の Exchange Online メールボックスを使用して利用できます。 これは、Exchange Online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織では使用できません。
+> このレポートは、Microsoft 365 組織の Exchange Online メールボックスを使用して利用できます。 これは、スタンドアロンの Exchange Online Protection (EOP) 組織では使用できません。
 
 侵害された**ユーザー**のレポートには、過去7日間以内に**疑わしい**または**制限**されたユーザーアカウントの数が表示されます。 これらの状態のいずれかのアカウントは、問題が発生しているか、侵害されています。 よく使用されるので、レポートを使用して、不審なアカウントや制限付きのアカウントでスパイクや傾向を見つけることができます。 侵害されたユーザーの詳細については、「[危害を受けた電子メールアカウントへの対応](responding-to-a-compromised-email-account.md)」を参照してください。
 
@@ -139,7 +139,7 @@ ms.locfileid: "45102917"
 
 **メールフロー status レポート**には、マルウェア、スパム、フィッシングおよびエッジブロックされたメッセージに関する情報が含まれています。 詳細については、「[メールフロー status report](view-mail-flow-reports.md#mailflow-status-report)」を参照してください。
 
-## <a name="malware-detection-in-email-report"></a>電子メールレポートでのマルウェアの検出
+## <a name="malware-detections-in-email-report"></a>電子メールレポートでのマルウェアの検出
 
 **電子メールのマルウェア検出**レポートには、受信および送信電子メールメッセージ (Exchange Online Protection または EOP によって検出されたマルウェア) でのマルウェアの検出に関する情報が表示されます。 EOP でのマルウェア保護の詳細については、「 [EOP のマルウェア対策保護](anti-malware-protection.md)」を参照してください。
 
@@ -162,7 +162,7 @@ ms.locfileid: "45102917"
 - **Date**
 - **[送信者のアドレス]**
 - **受信者のアドレス**
-- **[メッセージ ID]**
+- メッセージ**id**: メッセージヘッダーの**メッセージ id**ヘッダーフィールドで利用可能で、一意である必要があります。 値の例を次に示し `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` ます (角かっこに注意してください)。
 - **[件名]**
 - **Filename**
 - **マルウェアの名前**
@@ -267,11 +267,14 @@ ms.locfileid: "45102917"
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-**脅威保護の状態**レポートは、EOP と OFFICE 365 ATP の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報は表示できません。 Office 365 ATP レポートの詳細については、「 [View reports For office 365 Advanced Threat Protection](view-reports-for-atp.md)」を参照してください。
+**脅威保護の状態**レポートは、EOP と OFFICE 365 ATP の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報は表示できません。
 
-これは、検出およびブロックされた悪意のある電子メールを示すスマートレポートです。これにより、セキュリティ管理者は傾向を特定したり、組織のポリシーを調整する必要があるかどうかを判断したりすることができます。
+このレポートでは、マルウェア対策エンジンによってブロックされたファイルや web サイトアドレス (Url)、[ゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)、Atp の[安全](atp-safe-links.md)な添付ファイル、Atp の[安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](set-up-anti-phishing-policies.md)などの atp 機能など、悪意のあるコンテンツを含む一意の電子メールメッセージの集計数を示します。 この情報を使用して、傾向を特定したり、組織のポリシーを調整する必要があるかどうかを判断したりできます。
 
-レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] ダッシュボードに移動し \> **Dashboard**て、[**脅威保護の状態**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=ATPV2AggregateReport> ます。
+レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] ダッシュボードに移動し \> **Dashboard**て、[**脅威保護の状態**] を選択します。 レポートに直接移動するには、次のいずれかの Url を開きます。
+
+- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport> 。
+- EOP<https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![レポートダッシュボードの脅威保護状態ウィジェット](../../media/threat-protection-status-report-widget.png)
 
@@ -411,61 +414,7 @@ ms.locfileid: "45102917"
 
 ## <a name="url-threat-protection-report"></a>URL の脅威保護レポート
 
-> [!NOTE]
-> このレポートは、Office 365 Advanced Threat Protection (ATP) でのみ使用できます。 たとえば、Microsoft 365 E5 サブスクリプション、または ATP プラン1または ATP Plan 2 アドオンがあります。
-
-**Url 脅威保護レポート**には、検出された脅威と、 [ATP の安全なリンク](atp-safe-links.md)の一部として、URL クリックに対して行われた操作の概要と傾向のビューが表示されます。 このレポートには、安全なリンクポリシーが適用されているユーザーのクリックデータがありません。 [ユーザーのクリックを**追跡**しない] オプションが選択されています。
-
-レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート** \> **ダッシュボード**] に移動して、[ **URL の保護**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=URLProtectionActionReport> ます。
-
-### <a name="report-view-for-the-url-threat-protection-report"></a>URL 脅威保護レポートのレポートビュー
-
-**URL 脅威保護**レポートには、過去90日間のデータを表示する4時間ごとに更新される2つの集計ビューがあります。
-
-- **[URL] [保護アクション] をクリック**します。組織内のユーザーによる URL クリック数、およびクリックの結果が表示されます。
-
-  - **Blocked**
-  - **ブロックとクリックスルー**
-  - **スキャン中にクリックでクリック**
-
-  クリックすると、ユーザーが悪意のある web サイトをクリックしたことを示します (管理者は、安全なリンクポリシーでクリックを無効にすることができます)。
-
-  [**フィルター**] をクリックすると、次のフィルターを使用してレポートを変更できます。
-
-  - **開始日**と**終了日**
-  - 使用可能なクリック保護アクションと、すべての URL クリック (ブロックされたクリックのみではない) の情報を表示**できる値を**加えたもの。
-
-  ![URL URL の脅威保護レポートにある [保護アクション表示] をクリックします。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
-
-- **Url [アプリケーションごと]**: OFFICE 365 ATP の安全なリンクをサポートしているアプリケーションによる url クリックの数を表示します。
-
-  - **電子メール クライアント**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Teams**
-  - **その他**
-
-  [**フィルター**] をクリックすると、次のフィルターを使用してレポートを変更できます。
-
-  - **開始日**と**終了日**
-  - 利用可能なアプリケーション。
-
-### <a name="details-table-view-for-the-threat-protection-report"></a>脅威保護レポートの詳細表ビュー
-
-[**詳細テーブルの表示**] をクリックすると、このレポートでは、過去7日間の組織内で発生したすべてのクリックが、次のようなほぼリアルタイムで表示されます。
-
-- **[時刻] をクリック**
-- **ユーザー**
-- ** URL **
-- **Action**
-- **App**
-
-詳細テーブルビューで [**フィルター** ] をクリックすると、レポートビューと同じ条件で、およびコンマで区切られた**ドメイン**または**受信者**によってフィルター処理を行うことができます。
-
-レポートビューに戻るには、[**レポートの表示**] をクリックします。
+**URL 脅威保護レポート**は、Office 365 Advanced threat PROTECTION (ATP) で利用できます。 詳細については、「 [URL の脅威保護レポート](view-reports-for-atp.md#url-threat-protection-report)」を参照してください。
 
 ## <a name="user-reported-messages-report"></a>ユーザーによって報告されたメッセージレポート
 
@@ -506,8 +455,12 @@ ms.locfileid: "45102917"
 
 レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「[脅威からの保護](protect-against-threats.md)」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [EOP でのスパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
 
 [セキュリティ/コンプライアンス センターのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+
+[セキュリティ & コンプライアンスセンターでメールフローレポートを表示する](view-mail-flow-reports.md)
+
+[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)

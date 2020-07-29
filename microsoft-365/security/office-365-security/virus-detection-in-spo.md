@@ -19,16 +19,16 @@ ms.collection:
 - M365-security-compliance
 description: ユーザーがアップロードするファイルで、SharePoint Online がウイルスを検出し、ユーザーがファイルをダウンロードまたは同期できないようにする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60d696769ea402e6e2d0e52a1f6633e7962b8329
-ms.sourcegitcommit: f2275d2fbc17a8b5b5da723c7353d3f36c6fb2a7
+ms.openlocfilehash: f6bfc23ca4120122ecfa44ad4d39795fed22af84
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45029610"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429922"
 ---
-# <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online のウイルス検出
+# <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive、Microsoft Teams でのウイルス検出
 
-Microsoft 365 は、ユーザーが SharePoint Online にアップロードするファイルでウイルスを検出することによって、マルウェアから環境を保護するのに役立ちます。 アップロードされたファイルはウイルススキャンされることがあります。 ファイルで感染が見つかると、プロパティが設定されて、そのファイルをダウンロードしたり、同期したりできなくなります。
+Microsoft 365 は、ユーザーが SharePoint Online、OneDrive、Microsoft Teams にアップロードしたファイルのウイルスを検出することによって、マルウェアから環境を保護するのに役立ちます。 アップロードされたファイルはウイルススキャンされることがあります。 ファイルで感染が見つかると、プロパティが設定されて、そのファイルをダウンロードしたり、同期したりできなくなります。
 
 > [!IMPORTANT]
 > SharePoint Online のウイルス対策機能は、ウイルスを封じ込める 1 つの方法にすぎません。 これだけで、お客様の環境がマルウェアから保護されるわけではありません。 すべてのお客様が、マルウェア対策保護を評価してさまざまなレイヤーに実装し、ベスト プラクティスを適用してエンタープライズ インフラストラクチャを保護することをお勧めします。 戦略とベストプラクティスの詳細については、「[セキュリティロードマップ](security-roadmap.md)」を参照してください。
@@ -58,11 +58,18 @@ Microsoft 365 では、一般的なウイルス検出エンジンを使用して
 2. ウイルスが検出されたという警告がユーザーに提示されます。 ユーザーには、ファイルをダウンロードして、独自のウイルス対策ソフトウェアを使用して駆除を試行するオプションが与えられます。
 
 > [!NOTE]
+> 
 > SharePoint Online PowerShell の[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)コマンドレットで*DisallowInfectedFileDownload*パラメーターを使用して、ウイルス対策の警告ウィンドウであっても、感染したファイルをユーザーがダウンロードできないようにすることができます。
+> 
+> また、 *DisallowInfectedFileDownload*パラメーターを有効にすると、検出/ブロックされたファイルへのアクセスは、ユーザーと管理者に対して完全にブロックされることにも注意してください。
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>感染したファイルを OneDrive の同期クライアントが同期しようとするとどうなりますか?
 
 ファイルの同期を 新しい OneDrive の同期クライアント (OneDrive.exe) と前の OneDrive for Business 同期クライアント (Groove.exe) のどちらを使用して行っても、そのファイルにウイルスが含まれている場合には同期クライアントでダウンロードができません。ファイルを同期できないという通知が同期クライアントに表示されます。
+
+## <a name="extended-capabilities-with-office-365-atp"></a>Office 365 ATP の拡張機能
+
+Sharepoint、OneDrive、Microsoft teams のために Office 365 ATP を有効にしたお客様は、SharePoint、onedrive、microsoft [teams 用の atp](turn-on-atp-for-spo-odb-and-teams.md)を有効にすることで、セキュリティ & コンプライアンスセンターを使用して、AV および ATP の検出用に検疫されたファイルを管理することができます。 [ATP のみ: セキュリティ & コンプライアンスセンターを使用して、検疫されたファイルを管理](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)します。
 
 ## <a name="more-information"></a>詳細情報
 

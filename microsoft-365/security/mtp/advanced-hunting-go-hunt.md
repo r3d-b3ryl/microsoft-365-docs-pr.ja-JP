@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 89d592368d49d767d76865d299ab74a41a052b2f
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: b9afecb3d0efce93ae5d5725bba71d8d9719d17f
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689428"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430413"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>ゴーハントを使用してエンティティまたはイベントの情報をすばやく探します。
 
 **適用対象:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 *[ハントハント*] アクションを使用すると、強力なクエリベースの[高度な](advanced-hunting-overview.md)検索機能を使用して、イベントやさまざまなエンティティの種類をすばやく調査できます。 この操作により、選択したイベントまたはエンティティに関する関連情報を検索する高度な検索クエリが自動的に実行されます。
 

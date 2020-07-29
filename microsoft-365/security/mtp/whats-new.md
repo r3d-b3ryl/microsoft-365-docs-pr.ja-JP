@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 1a2a8cd91d0cc32dc5a10b1eb1dd28714cd4f6c4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204937"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429968"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft Threat Protection の新機能
 
@@ -33,6 +33,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="july-2020"></a>2020 年7 月
 - [FileProfile () 関数](advanced-hunting-fileprofile-function.md) <br> [高度な](advanced-hunting-overview.md)検索のクエリでこの関数を使用して、包括的なファイル情報を使用して結果を充実させます。
 - [Id とアプリのテーブル](advanced-hunting-schema-tables.md)<br> 高度な検索スキーマで、認証イベント、Active Directory クエリ、アプリに関連するアクティビティの可視性を取得します。これには、詳細な検索スキーマのイベントテーブル[、イベント](advanced-hunting-identityqueryevents-table.md)[テーブル、および](advanced-hunting-identitylogonevents-table.md) [appfileevents](advanced-hunting-appfileevents-table.md)テーブルが含まれます。
+- [検出する](advanced-hunting-go-hunt.md)<br> クエリベースの[高度な](advanced-hunting-overview.md)検索機能を使用して、特定のイベント、ユーザー、デバイス、またはその他のエンティティの種類を調べることによって、インシデントの調査からすばやくピボットできます。
 
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter フィード <br> 最新のセキュリティ研究、脅威インテリジェンス、製品ニュース、およびダッシュボード内部の詳細を取得します。

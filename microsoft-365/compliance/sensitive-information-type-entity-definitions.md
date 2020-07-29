@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084136"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430520"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -370,30 +370,19 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、95% の確証を持ってそれがこの種類の機密情報であると特定します。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_australian_medical_account_number がパターンに一致するコンテンツを検出した。
 - Keyword_Australia_Medical_Account_Number のキーワードを検出した。
 - チェックサムが渡される。
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_australian_medical_account_number がパターンに一致するコンテンツを検出した。
-- チェックサムが渡される。
 
 ```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
-    <Pattern confidenceLevel="95">
+    <Pattern confidenceLevel="85">
      <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="1">
      <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
-<Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="0" maxMatches="0">
-  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
+    </Pattern>
 </Entity>
 ```
 
@@ -637,7 +626,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -685,7 +674,7 @@ national id
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -1485,7 +1474,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -1595,7 +1584,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -2716,9 +2705,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 7 ～ 8 桁の数字と区切り文字:
 - 1 ～ 2 桁の数字  
 - ピリオド 1 つ  
-- 3 桁の数字  
+- 3 桁の数字 
 - ピリオド 1 つ  
-- 3 桁の数字  
+- 3 桁の数字 
 - ハイフン 1 つ  
 - チェック ディジットとして機能する 1 桁の数字または文字 (大文字小文字の区別なし)
 
@@ -3472,7 +3461,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -3559,7 +3548,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -3850,7 +3839,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -5639,7 +5628,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -6203,7 +6192,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -6813,7 +6802,7 @@ Dictionary
 
 ### <a name="pattern"></a>パターン
 
-Keyword
+キーワード
 
 ### <a name="checksum"></a>チェックサム
 
@@ -6855,7 +6844,7 @@ Dictionary
 
 ### <a name="pattern"></a>パターン
 
-Keyword
+キーワード
 
 ### <a name="checksum"></a>チェックサム
 
@@ -7221,7 +7210,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -7513,7 +7502,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -8458,7 +8447,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -8496,7 +8485,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -8627,7 +8616,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -8932,7 +8921,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -9041,7 +9030,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -9297,7 +9286,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -10229,7 +10218,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -10588,7 +10577,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -11084,7 +11073,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -11147,7 +11136,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+該当しない
   
 ### <a name="definition"></a>定義
 
@@ -11794,6 +11783,10 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_taiwanese_national_id のキーワードを検出した。
 - チェックサムが渡される。
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数 Func_taiwanese_national_id がパターンに一致するコンテンツを検出した。
+- チェックサムが渡される。
+
 ```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
@@ -11801,6 +11794,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
           <IdMatch idRef="Func_taiwanese_national_id" />
           <Match idRef="Keyword_taiwanese_national_id" />
       </Pattern>
+       <Pattern confidenceLevel="75">
+         <IdMatch idRef="Func_taiwanese_national_id" />
+       </Pattern>
 </Entity>
 ```
 

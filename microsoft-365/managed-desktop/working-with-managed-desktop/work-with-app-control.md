@@ -1,5 +1,5 @@
 ---
-title: アプリコントロールの操作
+title: アプリ制御を操作する
 description: ''
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170718"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430449"
 ---
-# <a name="work-with-app-control"></a>アプリコントロールの操作
+# <a name="work-with-app-control"></a>アプリ制御を操作する
 
 ご使用の環境でアプリ管理が展開されると、お客様と Microsoft が管理するデスクトップ操作の両方に、継続的な責任があります。 たとえば、環境に新しいアプリを追加したり、信頼できる署名者を追加 (または削除) したりする場合があります。 セキュリティを強化するには、エンドユーザーにリリースする前に、すべてのアプリをコード署名する必要があります。 アプリの発行元の詳細には、署名者に関する情報が含まれています。
 
@@ -54,8 +54,8 @@ ms.locfileid: "45170718"
 |---------|---------|---------|
 |テスト     |  監査       |  0日       |
 |第 1     | Enforced        | 1 日目        |
-|高速     | Enforced        |  3 日目       |
-|広範な質問     | Enforced        |  7 日目       |
+|高速     | Enforced        |  2 日目       |
+|広範な質問     | Enforced        |  3 日目       |
 
 
 ロールアウトの間に、いつでも展開を一時停止またはロールバックすることができます。 これを行うには、操作を使用して別のサービス要求を開きます。

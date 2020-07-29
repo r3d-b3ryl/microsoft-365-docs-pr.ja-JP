@@ -1,5 +1,5 @@
 ---
-title: セキュリティ & コンプライアンスセンターでメールフローレポートを表示する
+title: セキュリティ/コンプライアンス センターのメールフローレポートを表示
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: 組織のメールフローセキュリティレポートを検索して使用する方法について説明します。 メールフローレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937261"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434181"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでメールフローレポートを表示する
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメールフローレポートを表示
 
 セキュリティ & コンプライアンスセンターで利用できる[メールフローの洞察](mail-flow-insights-v2.md)に加えて、さまざまなメールフローレポートを使用して、Microsoft 365 組織の監視に役立てることもできます。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、 <https://office.protection.com> **レポート**ダッシュボードにアクセスすることで、これらのレポートをセキュリティ & コンプライアンスセンターで表示でき \> **Dashboard**ます。 レポートダッシュボードに直接移動するには、を開き <https://office.protection.office.com/insightdashboard> ます。
 
@@ -129,7 +129,7 @@ ms.locfileid: "44937261"
 
   - **Date**
   - **トランスポートルール**
-  - **件名**
+  - **[件名]**
   - **[送信者のアドレス]**
   - **受信者のアドレス**
   - **重大度**
@@ -140,7 +140,7 @@ ms.locfileid: "44937261"
   - **Date**
   - **DLP ポリシー**
   - **トランスポートルール**
-  - **件名**
+  - **[件名]**
   - **[送信者のアドレス]**
   - **受信者のアドレス**
   - **重大度**
@@ -310,7 +310,7 @@ ms.locfileid: "44937261"
 
   ![送信および受信した電子メールレポートの方向ビュー](../../media/sent-and-received-email-report-direction-view.png)
 
-- **ドリルダウン** \> する方法**マルウェア (マルウェア対策)**: これを選択すると、[電子メールレポートのマルウェアの検出](view-email-security-reports.md#malware-detection-in-email-report)に移動します。
+- **ドリルダウン** \> する方法**マルウェア (マルウェア対策)**: この選択を行うと、[電子メールレポートにあるマルウェアの検出](view-email-security-reports.md#malware-detections-in-email-report)が行われます。
 
 - **ドリルダウン** \> する方法**スパム検出)**: この選択によって、[スパム検出レポート](view-email-security-reports.md#spam-detections-report)が表示されます。
 
@@ -422,7 +422,7 @@ ms.locfileid: "44937261"
 
 詳細については、「exchange online の[アクセス許可](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo)」および「 [Manage Role Groups in exchange online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [セキュリティとコンプライアンス センターのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
 

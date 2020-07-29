@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819450"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434269"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 

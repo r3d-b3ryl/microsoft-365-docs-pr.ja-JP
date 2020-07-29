@@ -1,5 +1,5 @@
 ---
-title: 事前設定済みのセキュリティポリシー
+title: 事前設定されたセキュリティ ポリシー
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (ATP) の保護機能において標準ポリシー設定と厳密なポリシー設定を適用する方法を学習できます。
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389878"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430401"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP および Office 365 ATP の事前設定されたセキュリティポリシー
 
@@ -88,9 +88,10 @@ EOP の保護は、ATP の保護とは別のユーザーに適用することが
 
 1. **厳格な保護**の事前設定セキュリティポリシー
 2. **標準保護**の事前設定セキュリティポリシー
-3. その他の関連するポリシー。
+3. カスタムセキュリティポリシー
+4. 既定のセキュリティポリシー
 
-つまり、**厳格な保護**ポリシーの設定は、**標準保護**ポリシーの設定より優先され、他の関連するポリシーの設定より優先されます。
+つまり、**厳格な保護**ポリシーの設定は、**標準保護**ポリシーの設定を上書きします。これは、カスタムポリシーの設定を上書きします。これにより、既定のポリシーの設定が上書きされます。
 
 ## <a name="assign-preset-security-policies-to-users"></a>事前設定されるセキュリティポリシーのユーザーへの割り当て
 

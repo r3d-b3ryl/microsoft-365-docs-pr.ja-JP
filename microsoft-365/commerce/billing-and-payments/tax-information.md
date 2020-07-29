@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: 'さまざまな地域の Microsoft 365 for business サブスクリプションに対して請求される税の量を確認します。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401752"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434063"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -122,7 +119,7 @@ Microsoft を介してなされた Microsoft 365 管理センターの購入に�
 
 3. **[設定とアクション]** セクションで、**[サービスの利用先住所の編集]** を選択します。
 
-4. **[サービスの利用先住所の編集]** ページで、VAT ID を **[VAT 番号]** ボックスに入力して **[保存]** を選択します。
+4. [**サービス利用状況のアドレスの編集**] ページの [ **vat 番号**] ボックスに、プレフィックスとスペースを含めずに、vat ID を入力します。 [**保存**] を選択します。
 
 ::: moniker-end
 
@@ -134,7 +131,7 @@ Microsoft を介してなされた Microsoft 365 管理センターの購入に�
 
 2. サブスクリプション名を選択して、**[その他の操作]**\>**[VAT 番号の編集]** の順に選択します。
   
-3. **[サービスの利用先住所の編集]** ページで、VAT ID を **[VAT 番号]** ボックスに入力して **[送信]** を選択します。
+3. [**サービス利用状況のアドレスの編集**] ページの [ **vat 番号**] ボックスに、プレフィックスとスペースを含めずに、vat ID を入力します。 [**保存**] を選択します。
 
 ::: moniker-end
 
@@ -184,8 +181,7 @@ Microsoft Corporation ([請求書を参照](view-your-bill-or-invoice.md)) に�
 | 免税が適用される国際組織 | 地方税務当局からの証明書/レターの確認 |
 | プエルトリコ | Certificado de Compras Exentas |
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-content"></a>関連コンテンツ
   
-[課金内容または請求書を表示する](view-your-bill-or-invoice.md)
-  
-[課金内容または請求書の内容を理解する](understand-your-invoice.md)
+請求[書または請求書を表示する](view-your-bill-or-invoice.md)(記事) \
+請求[書または請求書を理解する](understand-your-invoice.md)(記事)

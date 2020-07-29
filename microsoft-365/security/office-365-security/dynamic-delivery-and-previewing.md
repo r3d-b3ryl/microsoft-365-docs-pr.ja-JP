@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: ATP の安全な添付ファイルのポリシーを設定する場合は、[動的配信] を選択してメッセージの遅延を回避し、スキャンされた添付ファイルをプレビューできるようにします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819354"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430353"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>ATP の安全な添付ファイルを使用した動的配信とプレビュー
 
@@ -68,20 +68,20 @@ ATP の安全な添付ファイルのスキャンは、Microsoft 365 データ�
 
 ## <a name="additional-considerations"></a>その他の考慮事項
 
-動的配信はサポートされていない特定のシナリオがあります。 これらには次のコマンドレットがあります。
+安全な添付ファイル (動的配信はサポートされていません) には、特定のシナリオがあります。 これには次のものが含まれます。
 
-- パブリックフォルダー内の電子メールメッセージ
+- パブリックフォルダー内の電子メールメッセージ。
 
-- カスタムルールを使用して、ユーザーのメールボックスにルーティングされてから戻る電子メールメッセージ
+- カスタムルールを使用して、ユーザーのメールボックスにルーティングされ、その後に戻ってきた電子メールメッセージ。
 
-- ホストされたメールボックスと、アーカイブフォルダーなどの他の場所に移動した (自動または手動で) 電子メールメッセージ
+- ホストされたメールボックスと、アーカイブフォルダーなどの他の場所に移動した (自動または手動で) 電子メールメッセージ。
 
-- 削除された電子メールメッセージ
+- 削除される電子メールメッセージ。
 
-- エラー状態にあるユーザーのメールボックス検索フォルダー
+- エラー状態にあるユーザーのメールボックス検索フォルダー。
 
 - Exchange Online 管理者が Exclaimer を有効にしている環境。 この解決方法については、「 [ATP Dynamic Delivery And Exclaimer の使用時に添付ファイル付きメッセージが配信されない](https://support.microsoft.com/help/4014438)」を参照してください。
 
-- [セキュリティで保護された、または汎用インターネットメール内線 (S/MIME)](s-mime-for-message-signing-and-encryption.md)で暗号化されたメッセージ
+- [セキュリティで保護された、または多目的のインターネットメール内線 (S/MIME)](s-mime-for-message-signing-and-encryption.md)で暗号化されたメッセージ)。
 
-- 動的配信がサポートされていない場合、ATP の安全な添付ファイルは電子メールメッセージをスキャンしません。 ただし、 [ATP の安全なリンクポリシー](set-up-atp-safe-links-policies.md)がどのように構成されているかに応じて、url を含む添付ファイル付きの電子メールメッセージを配信することが確認されます。 このような場合、電子メールメッセージと Office ファイルの Url がチェックされます。
+- 動的配信がサポートされていない場合は、安全な添付ファイルによって電子メールメッセージがスキャンされることはありません。 ただし、 [ATP の安全なリンクポリシー](set-up-atp-safe-links-policies.md)がどのように構成されているかに応じて、url を含む添付ファイル付きの電子メールメッセージを配信することが確認されます。 このような場合、電子メールメッセージと Office ファイルの Url がチェックされます。

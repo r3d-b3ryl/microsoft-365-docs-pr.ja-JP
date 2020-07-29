@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 92811aff70e48992088abf221536684dcff794b8
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189512"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503028"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -74,7 +74,7 @@ ms.locfileid: "45189512"
 次の表は、2 つの相補的な自動ラベル付け方法の違いを特定するのに役立ちます。
 
 |機能または動作|ラベル設定: Office アプリの自動ラベル付け |ポリシー: 自動ラベル付け|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |アプリの依存関係|[はい](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |いいえ |
 |場所による制限|いいえ |はい |
 |条件: トレーニング可能な分類子|はい |いいえ |

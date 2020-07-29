@@ -1,19 +1,19 @@
 ---
 title: Microsoft マネージドデスクトップのサポートを受ける
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327894"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430437"
 ---
-# <a name="getting-help-for-end-users"></a>エンドユーザーのヘルプを取得する
+# <a name="getting-help-for-end-users"></a>エンド ユーザーのヘルプ
 
 組織内のユーザーが Microsoft マネージドデスクトップデバイスでヘルプを取得する方法は2つあります。ヘルプアプリまたは電話サポートを**取得**します。 これら両方のサポートオプションは、ユーザーが1日24時間、週7日利用できます。
  
@@ -37,7 +37,7 @@ ms.locfileid: "44327894"
 - デバイスは、「 [Microsoft マネージドデスクトップデバイス](../get-started/set-up-devices.md)のセットアップ ([新しいデバイスの登録](../get-started/register-devices-self.md)など)」の方法のいずれかを使用して、microsoft managed desktop に登録する必要があります。
 - デバイスの表示言語は、次のいずれかの英語ロケールに設定する必要があります。 en-us、en gb、en-us、en-us、または en ca。
 - ヘルプアプリを入手するには、最新の状態にする必要があります。 これを確認するには、Microsoft ストアのアプリの更新を確認します。
-- 特定の[エンドポイント](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)はデバイスからアクセス可能である必要があります。
+- 特定の[エンドポイント](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop)はデバイスからアクセス可能である必要があります。
 
 > [!NOTE]
 > デバイスが完全に機能するように展開された後、ヘルプアプリを取得するのに最大1時間かかることがあります。

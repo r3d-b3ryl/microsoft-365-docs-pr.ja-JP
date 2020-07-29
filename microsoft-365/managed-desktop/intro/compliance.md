@@ -1,17 +1,17 @@
 ---
 title: コンプライアンス
 description: この記事では、Microsoft マネージドデスクトップに関連するコンプライアンス基準を示します。
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: e2a60bba348e4f19eaa56805b509e4472c9fd215
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322019"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434291"
 ---
 # <a name="compliance"></a>コンプライアンス
 
@@ -38,7 +38,7 @@ Microsoft マネージドデスクトップでは、次の資格が得られま�
 [Service Trust Portal (STP)](https://servicetrust.microsoft.com/)には、Microsoft クラウドサービスの提供に関する情報を提供する中心的なリポジトリであるコントロールと技術の要件を含む、関連情報を見つけることができます。 [監査レポート]、[コンプライアンス証明書] など、STP の [[監査レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)] セクションからダウンロードできます。
 
 > [!NOTE]
-> Microsoft マネージドデスクトップは Azure 上で実行されるため、関連するドキュメントには、通常、"Microsoft Azure, Dynamics 365 やその他のオンラインサービス" などのファイル名が含まれています。 これらのドキュメントでは、通常、[監視 + 管理] カテゴリの下に Microsoft Managed Desktop を見つけることができます。
+> Microsoft マネージドデスクトップは Azure 上で実行されるため、関連するドキュメントには、通常、"Microsoft Azure, Dynamics 365 やその他のオンラインサービス" などのファイル名が含まれています。 これらのドキュメントでは、通常、"Microsoft Online Services" または "Monitoring + Management" というカテゴリの下に Microsoft Managed Desktop を検索できます。
 
 ## <a name="shared-responsibility"></a>共有の責任
 
