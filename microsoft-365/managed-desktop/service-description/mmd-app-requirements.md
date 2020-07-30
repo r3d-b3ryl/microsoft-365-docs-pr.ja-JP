@@ -1,63 +1,44 @@
 ---
 title: Microsoft マネージドデスクトップアプリの要件
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637854"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522027"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a><span data-ttu-id="422ac-103">Microsoft マネージドデスクトップアプリの要件</span><span class="sxs-lookup"><span data-stu-id="422ac-103">Microsoft Managed Desktop app requirements</span></span>
+# <a name="microsoft-managed-desktop-app-requirements"></a><span data-ttu-id="88a32-103">Microsoft マネージドデスクトップアプリの要件</span><span class="sxs-lookup"><span data-stu-id="88a32-103">Microsoft Managed Desktop app requirements</span></span>
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-<span data-ttu-id="422ac-104">Microsoft マネージドデスクトップデバイスのパフォーマンス、信頼性、および保守性を保証するために、お客様の基幹業務アプリはエンドユーザーの環境に重大な影響を与えたり、セキュリティの態勢を変更したりする必要がありません。</span><span class="sxs-lookup"><span data-stu-id="422ac-104">In order to guarantee the performance, reliability, and serviceability of Microsoft Managed Desktop devices a customer’s line of business apps must not seriously impact end user experience or modify the security stance.</span></span> <span data-ttu-id="422ac-105">そのため、Microsoft マネージドデスクトップデバイスに展開する基幹業務アプリケーションは、このトピックの要件を満たしている必要があります。</span><span class="sxs-lookup"><span data-stu-id="422ac-105">Consequently, line of business applications that you want to deploy to Microsoft Managed Desktop devices must meet the requirements in this topic.</span></span>
-
-## <a name="application-condition"></a><span data-ttu-id="422ac-106">アプリケーションの条件</span><span class="sxs-lookup"><span data-stu-id="422ac-106">Application condition</span></span>
-
-<span data-ttu-id="422ac-107">アプリケーションが Microsoft マネージドデスクトップ環境に悪影響を与えることは重要ではありません。</span><span class="sxs-lookup"><span data-stu-id="422ac-107">It’s important that applications don’t adversely impact the Microsoft Managed Desktop environment.</span></span> <span data-ttu-id="422ac-108">アプリケーションを展開するためにアプリケーションが満たす必要がある要件を次に示します。</span><span class="sxs-lookup"><span data-stu-id="422ac-108">The following are the requirements that an application must meet for an application to be deployed.</span></span> <span data-ttu-id="422ac-109">特定のアプリケーションまたはドライバーについては、ここに記載されているすべての要件を Microsoft が免除することがあります。</span><span class="sxs-lookup"><span data-stu-id="422ac-109">For any given application or driver, Microsoft may waive any requirement provided herein.</span></span> <span data-ttu-id="422ac-110">Microsoft は、Microsoft マネージドデスクトップデバイスのパフォーマンスと信頼性に悪影響を及ぼすアプリケーションまたはドライバーを削除することを決定する場合があります。</span><span class="sxs-lookup"><span data-stu-id="422ac-110">Microsoft may decide to remove any application or driver that negatively impacts performance and reliability of Microsoft Managed Desktop devices.</span></span>
-
-## <a name="centrally-managed-apps"></a><span data-ttu-id="422ac-111">一元管理されたアプリ</span><span class="sxs-lookup"><span data-stu-id="422ac-111">Centrally managed apps</span></span>
-
-<span data-ttu-id="422ac-112">Microsoft 管理デバイスにインストールされているすべてのアプリケーションとドライバーは、Microsoft Intune、Microsoft Store、または Microsoft Store for Business を使用して展開する必要があります。可能であれば、Windows Update サービスを使用してドライバーを展開することもできます。</span><span class="sxs-lookup"><span data-stu-id="422ac-112">All applications and drivers installed on Microsoft Managed Devices must be deployed through Microsoft Intune, the Microsoft Store, or the Microsoft Store for Business; if available, drivers will also be deployed through the Windows Update service.</span></span> 
-
-## <a name="prohibited-app-classes"></a><span data-ttu-id="422ac-113">禁止されたアプリクラス</span><span class="sxs-lookup"><span data-stu-id="422ac-113">Prohibited app classes</span></span>
-
-<span data-ttu-id="422ac-114">Microsoft マネージドデスクトップデバイスでは、特定の種類のアプリケーションが許可されていません。</span><span class="sxs-lookup"><span data-stu-id="422ac-114">Certain application types are not permitted on Microsoft Managed Desktop devices:</span></span>
-- <span data-ttu-id="422ac-115">サードパーティ製のウイルス対策、セキュリティ、または監査ソフトウェア</span><span class="sxs-lookup"><span data-stu-id="422ac-115">3rd party anti-virus, security, or audit software</span></span>
-- <span data-ttu-id="422ac-116">Microsoft Office for enterprise の365以前のバージョンの Microsoft Office</span><span class="sxs-lookup"><span data-stu-id="422ac-116">Versions of Microsoft Office prior to Microsoft 365 Apps for enterprise</span></span>
-- <span data-ttu-id="422ac-117">他のサードパーティ製ソフトウェアをインストールまたはバンドルするアプリケーション</span><span class="sxs-lookup"><span data-stu-id="422ac-117">Applications that install or bundle other 3rd party software</span></span>
-
-## <a name="restricted-app-behaviors"></a><span data-ttu-id="422ac-118">制限されたアプリの動作</span><span class="sxs-lookup"><span data-stu-id="422ac-118">Restricted app behaviors</span></span>
-
-<span data-ttu-id="422ac-119">アプリの動作によっては、ユーザーの環境に悪影響を及ぼす場合や、Microsoft マネージドデスクトップデバイスにセキュリティリスクをもたらす場合があります。</span><span class="sxs-lookup"><span data-stu-id="422ac-119">Certain app behaviors can negatively impact the user experience or may present a security risk to Microsoft Managed Desktop devices.</span></span> <span data-ttu-id="422ac-120">次の動作を持つアプリは、Microsoft に固有のものではなく、Microsoft マネージドデスクトップ環境での実行が許可されていません。</span><span class="sxs-lookup"><span data-stu-id="422ac-120">Apps with the following behaviors are not permitted to run in the Microsoft Managed Desktop environment without a specific  from Microsoft.</span></span>
-
-<span data-ttu-id="422ac-121">ユーザーの作業状況:</span><span class="sxs-lookup"><span data-stu-id="422ac-121">User Experience:</span></span>
-- <span data-ttu-id="422ac-122">バックグラウンドサービスをインストールする</span><span class="sxs-lookup"><span data-stu-id="422ac-122">Install background services</span></span>
-- <span data-ttu-id="422ac-123">Windows スタートアップパスに自分自身を追加する</span><span class="sxs-lookup"><span data-stu-id="422ac-123">Add itself to the Windows startup path</span></span>
-- <span data-ttu-id="422ac-124">ドライバーに依存するアプリケーション</span><span class="sxs-lookup"><span data-stu-id="422ac-124">Applications dependent on drivers</span></span>
-- <span data-ttu-id="422ac-125">サードパーティの web ブラウザー</span><span class="sxs-lookup"><span data-stu-id="422ac-125">3rd party web browsers</span></span>
-
-<span data-ttu-id="422ac-126">セキュリティ:</span><span class="sxs-lookup"><span data-stu-id="422ac-126">Security:</span></span>
-- <span data-ttu-id="422ac-127">エンドユーザーの権限を昇格させる</span><span class="sxs-lookup"><span data-stu-id="422ac-127">Elevate the end user’s privileges</span></span>
-- <span data-ttu-id="422ac-128">アプリストアとして機能するか、組み込みの拡張マネージャーを備えている</span><span class="sxs-lookup"><span data-stu-id="422ac-128">Act as an app store or have a built-in extension manager</span></span>
-- <span data-ttu-id="422ac-129">既知のセキュリティの脆弱性</span><span class="sxs-lookup"><span data-stu-id="422ac-129">Have known security vulnerabilities</span></span>
-- <span data-ttu-id="422ac-130">エンドユーザーデータへのアクセスを暗号化または制限する</span><span class="sxs-lookup"><span data-stu-id="422ac-130">Encrypt or restrict access to end-user data</span></span>
-- <span data-ttu-id="422ac-131">署名されていないか、信頼できるルートにロールアップしない証明書を使用して署名されている</span><span class="sxs-lookup"><span data-stu-id="422ac-131">Is unsigned or is signed using a certificate which doesn’t roll up to a trusted root</span></span>
+<span data-ttu-id="88a32-104">Microsoft マネージドデスクトップでは、デバイスのパフォーマンス、信頼性、および保守性を保証するために、特定のアプローチを使用してデバイスを管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88a32-104">Microsoft Managed Desktop requires that we manage devices using a specific approach to guarantee the performance, reliability, and serviceability of devices.</span></span> <span data-ttu-id="88a32-105">次の領域に対して Microsoft マネージドデスクトップで行われたアプローチが機能しないことがわかっている場合は、[サービスプランに対する例外](customizing.md)を要求できます。</span><span class="sxs-lookup"><span data-stu-id="88a32-105">If you’re sure that the approach taken by Microsoft Managed Desktop for the areas below will not work for you, you can request an [exception to the service plan](customizing.md).</span></span>
 
 
-## <a name="driver-deployment"></a><span data-ttu-id="422ac-132">ドライバーの展開</span><span class="sxs-lookup"><span data-stu-id="422ac-132">Driver deployment</span></span>
+|<span data-ttu-id="88a32-106">管理領域</span><span class="sxs-lookup"><span data-stu-id="88a32-106">Management area</span></span>  |<span data-ttu-id="88a32-107">Microsoft マネージドデスクトップアプローチ</span><span class="sxs-lookup"><span data-stu-id="88a32-107">Microsoft Managed Desktop approach</span></span>  |
+|---------|---------|
+|<span data-ttu-id="88a32-108">デバイス構成またはポリシー管理</span><span class="sxs-lookup"><span data-stu-id="88a32-108">Device configuration or policy management</span></span>     |  <span data-ttu-id="88a32-109">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="88a32-109">Microsoft Intune</span></span>       |
+|<span data-ttu-id="88a32-110">アプリケーションの管理</span><span class="sxs-lookup"><span data-stu-id="88a32-110">Application management</span></span>     | <span data-ttu-id="88a32-111">Microsoft Intune およびポータルサイト</span><span class="sxs-lookup"><span data-stu-id="88a32-111">Microsoft Intune and Company Portal</span></span>        |
+|<span data-ttu-id="88a32-112">ドライバーの展開</span><span class="sxs-lookup"><span data-stu-id="88a32-112">Driver deployment</span></span>     |  <span data-ttu-id="88a32-113">デバイス、Windows Update、または Intune に含まれるドライバー</span><span class="sxs-lookup"><span data-stu-id="88a32-113">Drivers included with the device, Windows Update, or Intune</span></span>       |
+|<span data-ttu-id="88a32-114">デバイスのセキュリティ</span><span class="sxs-lookup"><span data-stu-id="88a32-114">Device security</span></span>     | <span data-ttu-id="88a32-115">「[デバイスのセキュリティ](security.md#device-security)」を参照</span><span class="sxs-lookup"><span data-stu-id="88a32-115">See [Device security](security.md#device-security)</span></span>      |
+|<span data-ttu-id="88a32-116">ID およびアクセス管理</span><span class="sxs-lookup"><span data-stu-id="88a32-116">Identity and access management</span></span>     | <span data-ttu-id="88a32-117">[Id およびアクセス管理を](security.md#identity-and-access-management)参照してください。</span><span class="sxs-lookup"><span data-stu-id="88a32-117">See [Identity and access management](security.md#identity-and-access-management)</span></span>        |
+|<span data-ttu-id="88a32-118">ネットワーク セキュリティ</span><span class="sxs-lookup"><span data-stu-id="88a32-118">Network security</span></span>     | <span data-ttu-id="88a32-119">「[ネットワークセキュリティ](security.md#network-security)」を参照</span><span class="sxs-lookup"><span data-stu-id="88a32-119">See [Network security](security.md#network-security)</span></span>        |
+|<span data-ttu-id="88a32-120">情報セキュリティ</span><span class="sxs-lookup"><span data-stu-id="88a32-120">Information security</span></span>     |  <span data-ttu-id="88a32-121">[情報セキュリティ](security.md#information-security)を参照する</span><span class="sxs-lookup"><span data-stu-id="88a32-121">See [Information security](security.md#information-security)</span></span>       |
+|<span data-ttu-id="88a32-122">データの回復</span><span class="sxs-lookup"><span data-stu-id="88a32-122">Data recovery</span></span>     | <span data-ttu-id="88a32-123">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="88a32-123">OneDrive for Business</span></span>        |
+|<span data-ttu-id="88a32-124">コア生産性</span><span class="sxs-lookup"><span data-stu-id="88a32-124">Core productivity</span></span>     | <span data-ttu-id="88a32-125">Microsoft 365 Apps for enterprise</span><span class="sxs-lookup"><span data-stu-id="88a32-125">Microsoft 365 Apps for enterprise</span></span>    |
+|<span data-ttu-id="88a32-126">ブラウザー</span><span class="sxs-lookup"><span data-stu-id="88a32-126">Browser</span></span>     | <span data-ttu-id="88a32-127">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="88a32-127">Microsoft Edge</span></span>        |
 
-<span data-ttu-id="422ac-133">Microsoft マネージドデスクトップは、Microsoft の管理されたデバイスを使用して Windows Update または受信トレイで利用可能なデバイスドライバーのみをサポートしています。</span><span class="sxs-lookup"><span data-stu-id="422ac-133">Microsoft Managed Desktop only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device.</span></span> 
 
-<span data-ttu-id="422ac-134">アプリケーションで特定のドライバーを実行する必要がある場合は、制限付きアプリケーションと見なされ、Microsoft マネージドデスクトップに展開する前に例外が必要になります。</span><span class="sxs-lookup"><span data-stu-id="422ac-134">If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an exception before being deployed to Microsoft Managed Desktop.</span></span> 
+
+
+<span data-ttu-id="88a32-128">Microsoft マネージドデスクトップでは、管理対象デバイス上で実行されている他のソフトウェアを監視できます。</span><span class="sxs-lookup"><span data-stu-id="88a32-128">Microsoft Managed Desktop might monitor other software running on managed devices.</span></span> <span data-ttu-id="88a32-129">システムのセキュリティ、パフォーマンス、または信頼性に悪影響を及ぼす場合は、サービスプランに対する例外を要求する必要があります。</span><span class="sxs-lookup"><span data-stu-id="88a32-129">If it negatively impacts system security, performance, or reliability, you might be required to request an exception to the service plan.</span></span>
+
 
