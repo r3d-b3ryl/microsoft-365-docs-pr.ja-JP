@@ -12,13 +12,13 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
-ms.date: 06/08/2018
-ms.openlocfilehash: 30437825a896acb470b23cb8f68ea36235ee80c8
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.date: 07/21/2020
+ms.openlocfilehash: 520009d26d0133a2c53c6149fe4938bea9db5a32
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185978"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503001"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 Business Premium に関するよく寄せられる質問
 
@@ -33,13 +33,13 @@ Microsoft 365 は、小規模から中規模企業向けの、クラス最高の
 * Office のビジネスアプリ (Bookings, MileIQ<sup>[1](#footnote1)</sup>)。 
  
 **エンタープライズ レベルのデバイス管理およびセキュリティ** 
-- Office 365 Advanced Threat Protection プラン1 および Windows Defender Exploit Guard を使用して、フィッシングや高度なマルウェアなどの外部の脅威からの保護をサポートします。 
+- Office 365 Advanced Threat Protection プラン1および Microsoft Defender Exploit Guard を使用して、フィッシングや高度なマルウェアなどの外部の脅威からの保護を提供します。 
 -  データ損失防止ポリシーおよび Azure Information Protection プラン1で、機密情報へのアクセスや送信の方法を制御し、管理することができます。 
 -  Exchange Online のアーカイブ機能を使用して、データの保護、保存、バックアップを行います。  
 -   Office やその他のモバイル アプリでの Intune アプリ保護機能によるアプリ保護。 
--  Intune デバイス管理を使用した Windows 10 PC、MacOS、モバイルデバイスのデバイス管理。 
+-  Intune デバイス管理を使用した Windows 10 Pc、macOS、モバイルデバイスのデバイス管理。 
 -  多要素認証、セルフサービスによるパスワードのリセット、および条件付きアクセスを使用した ID保護。
--  複数のデバイスで一貫したセキュリティ構成&mdash;: さまざまなデバイスで企業データを保護、Windows Defender は常に最新の状態に保たれます。 
+-  デバイス間での一貫したセキュリティ構成 &mdash; 。複数のデバイス間で企業データを保護します。Microsoft Defender ウイルス対策。常に最新の状態になっています。 
  
  
 **簡略化されたデバイスの展開とユーザーのセットアップ** 
@@ -98,14 +98,14 @@ Windows 7、8、8.1 Professional のライセンスがあるデバイスを使�
 Microsoft 365 Business Premium は、従業員が個人のデバイスを業務に使用できるようにする一方で、企業には従業員のデバイスでのビジネス情報へのアクセス、保持、共有を防止する機能を提供する、シンプルかつ強力な手段を提供します。 具体的な機能は次のとおりです。 
 * **Office モバイル用のアプリ保護**により、アプリで iOS および Android モバイル デバイス上の Office データ (メール、カレンダー、連絡先、ドキュメントなど) を保護できます。そのために、一定期間サービスに接続しなかった場合のビジネス データの自動削除、OneDrive for Business のみへの情報の保存の要求、Office アプリへのアクセス時の暗証番号 (PIN)/指紋検証の要求、Office アプリから個人アプリへの会社のデータのコピーの防止などのポリシーを適用します。 Microsoft 365 Business Premium サブスクライバーは、Intune を介して他のモバイル アプリのアプリケーション管理も行えます。 
   
-* **Windows 10 PC 向けのデバイス管理**により、企業は、Windows Defender によるマルウェア対策、自動更新、一定時間後の画面のオフなどの機能を設定して適用できます。 さらに、Windows 10 デバイスを紛失したり盗まれたりした場合は、管理センターを使用して業務アプリケーションとデータの完全にワイプすることができます。 
+* **Windows 10 pc のデバイス管理**を使用すると、Microsoft Defender Antivirus protection for マルウェア、自動更新、指定された時間後に画面をオフにするなどの機能を設定し、適用することを選択できます。 さらに、Windows 10 デバイスを紛失したり盗まれたりした場合は、管理センターを使用して業務アプリケーションとデータの完全にワイプすることができます。 
 
-* **IOS、Android & MacOS のデバイス管理**機能は、企業が iOS、Android、Windows、および MacOS を含む多様なデバイス エコシステムを安全に管理するのに役立ちます。 
+* **Ios、android & macOS の各機能のデバイス管理に**より、企業は Ios、Android、Windows、および macOS デバイスを含む多様なデバイスエコシステムを安全に管理することができます。 
 
 ### <a name="how-does-microsoft-365-business-premium-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 Business Premium は、組織内の PC を悪意のある攻撃から保護するのにどのように役立ちますか。 
-Microsoft 365 Business Premium で管理されている PC は Windows Defender で保護されています。 これは、Windows 10 で使用されているウイルス対策機能のうちの 1 つであり、他のソリューションよりも多くのコンピューターを、ウイルス、マルウェア、スパイウェア、その他の脅威から保護しています。  Microsoft 365 Business Premium では、企業は Windows Defender による保護を確実に実行し、すべての Windows 10 デバイスを常に最新の状態に保つことができます。  
+Microsoft 365 Business Premium で管理されている Pc は Microsoft Defender ウイルス対策を使用して保護されています。これは [いいえ] です。 これは、Windows 10 で使用されているウイルス対策機能のうちの 1 つであり、他のソリューションよりも多くのコンピューターを、ウイルス、マルウェア、スパイウェア、その他の脅威から保護しています。 Microsoft 365 Business Premium を使用すると、組織は Microsoft Defender ウイルス対策保護が稼働していることを確認し、常に Windows 10 デバイスすべてを最新の状態に保つことができます。  
  
-また、Windows 10 Business には、新しい一連の侵入防止機能であるWindows Defender Exploit Guard が付属されています。 この機能の1つであるフォルダーアクセスは、フォルダーのロックを解除し、権限のないユーザーが重要なファイルにアクセスできないようにすることで、ランサムウェアを阻止します。 
+Windows 10 Business には、Microsoft Defender Exploit Guard が追加されています。これには、新しいアタック防止機能のセットが含まれています。 その機能の1つである [制御されたフォルダーアクセス] は、フォルダーをロックダウンし、承認されていないアプリがユーザーの重要なファイルにアクセスするのを防ぐことで、ランサムウェアを停止 
 
 ### <a name="whats-the-difference-between-microsoft-365-business-standard-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Microsoft 365 Business Standard、Microsoft 365 Business Premium、Microsoft 365 Enterprise の違いは何ですか。 
 Microsoft では、中小規模の企業のお客様が、デスクトップおよびデバイスのインフラストラクチャをアップグレードする際に検討できる、さまざまな生産性およびセキュリティ管理サービスを用意しており、それぞれがより強力な機能を提供します。 
@@ -126,7 +126,7 @@ Microsoft 365 Business Premium は、Office 365 を利用できる地域のす�
 Microsoft 365 Business Premium 試用版は、CSP を対象としています。 直販顧客向け試用版は、後日のご案内になります。 
  
 ### <a name="what-should-customers-and-partners-know-before-running-microsoft-365-business-premium-within-their-organization"></a>組織内の Microsoft 365 Business Premium を実行する前に、ユーザーやパートナーに必要な知識は何ですか。 
-Microsoft 365 Business Premium のすべての機能を利用する場合は、既存のデスクトップで Windows 7、8.1、または 10 Pro<sup>[2](#footnote2)</sup> を実行している必要があります。 既存の Windows 10 Pro PC で、Creators Update をまだ実行していない場合は、Creators Update を実行している必要があります。 
+Microsoft 365 Business Premium の全機能を経験したいお客様は、既存のデスクトップで Windows 7、8.1、または 10 Pro<sup>[2](#footnote2)</sup>を実行している必要があります。 既存の Windows 10 Pro PC で、Creators Update をまだ実行していない場合は、Creators Update を実行している必要があります。 
 
 ## <a name="deployment"></a>展開
 
@@ -134,7 +134,7 @@ Microsoft 365 Business Premium のすべての機能を利用する場合は、�
 Microsoft 365 Business Premium の展開を成功させる一番の近道は、Microsoft パートナーと連携することです。 パートナーは幅広いトレーニングを受け、さまざまな顧客のシナリオに対応した経験があり、お客様の環境とニーズを把握するのに最適な知識を持っています。 お客様の組織に経験が豊富な IT 担当者がいる場合は、「<a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Microsoft 365 Business Premium を使い始める</a>」を使用して Microsoft 365 Business Premium の展開を支援できます。 
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 Business Premium には、Microsoft Intune のすべての機能が含まれていますか。 
-はい。Microsoft 365 Business Premium のサブスクライバーは、iOS、Android、MacOS、およびその他のクロス プラットフォームのデバイス管理にIntune の全機能を使用するためのライセンスを持っています。 サードパーティ製のアプリの管理や WiFi プロファイルの構成、VPN 証明書など、Microsoft 365 Business Premium で簡易管理コンソールでは利用できない機能は、完全なIntune コンソールで管理できます。 
+はい、Microsoft 365 Business Premium サブスクライバーは、iOS、Android、macOS、その他のクロスプラットフォームデバイス管理のための完全な Intune 機能を使用するライセンスを持っています。 サードパーティのアプリ管理、Wi-fi プロファイルの構成、VPN 証明書など、Microsoft 365 Business Premium の簡略化された管理コンソールで利用できない機能は、完全な Intune コンソールで管理できます。 
   
 
 ### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory (Azure AD) Premium P1 には、Microsoft 365 Business Premium が付属していますか? 
@@ -143,7 +143,7 @@ Microsoft 365 Business Premium の展開を成功させる一番の近道は、M
  
  
 ### <a name="does-microsoft-365-business-premium-allow-customers-to-manage-macs"></a>Microsoft 365 Business Premium で、ユーザーは Mac を管理できますか。 
-Intune を使用すると、iOS、Android、Windows、MacOS デバイスをセキュリティで保護された方法で管理できます。 
+Intune では、iOS、Android、Windows、および macOS デバイスを安全に管理することができます。 
  
 ### <a name="what-is-windows-autopilot"></a>Windows AutoPilot とは何ですか。 
 Windows AutoPilot は、新しい Windows 10 PC の展開を効率化するサービスです。 このプロセスは、Microsoft 365 Business Premium の一元的な管理コントロールを活用することで、&mdash;IT 担当者がデバイスに触れることなく&mdash;、エンド ユーザーが Microsoft 365 Business に初めてログインしたときに実行できます。 Windows 10 Professional Creators Update (以降) を実行しており、工場出荷時の設定にリセットされた既存の PC に対して、Windows AutoPilot を使用することもできます。 Windows AutoPilot の詳細については、<a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">「2017年 6 月のブログの投稿」</a>を参照してください。
@@ -151,13 +151,13 @@ Windows AutoPilot は、新しい Windows 10 PC の展開を効率化するサ�
 ## <a name="compatibility"></a>互換性
 
 ### <a name="can-i-add-office-365-add-ons-to-microsoft-365-business-premium"></a>Office 365 のアドオンを Microsoft 365 Business Premium に追加することはできますか。 
-Microsoft 365 Business Standard に追加できるすべてのアドオンは、Microsoft 365 Business Premiumに追加することができます。 つまり、Office 365 Cloud App Security、Advanced Compliance、脅威インテリジェンス、MyAnalytics、PowerBI Pro、電話会議を購入できます。 
+Microsoft 365 Business Standard に追加できるすべてのアドオンは、Microsoft 365 Business Premiumに追加することができます。 これは、Office 365 Cloud App Security、Advanced コンプライアンス、脅威インテリジェンス、MyAnalytics、Power BI Pro、および電話会議を購入できることを意味します。 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>Microsoft 365 Business Premium に電話システムと通話プランを追加できますか。 
 いいえ。電話システムと通話プランはより高度なニーズのお客様向けの機能です。 これらの機能が必要なお客様は、Microsoft 365 Enterprise サービスをご検討ください。 
  
-### <a name="can-microsoft-365-business-premium-customers-use-windows-defender-advanced-threat-protection"></a>Microsoft 365 Business Premium のユーザーは、Windows Defender Advanced Threat Protection を使用できますか。 
-いいえ。Windows Defender Advanced Threat Protection を必要とするお客様は、Windows 10 Enterprise E5 または Microsoft 365 Enterprise E5 が必要です。 
+### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 Business Premium のお客様は Microsoft Defender Advanced Threat Protection を使用できますか? 
+はい。 Microsoft Defender Advanced Threat Protection は、Microsoft 365 Business Premium のお客様へのアドオンとして提供されています。
 
 ## <a name="partner-opportunity"></a>パートナーのビジネス チャンス
 

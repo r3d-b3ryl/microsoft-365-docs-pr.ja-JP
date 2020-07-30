@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: この記事では、Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成するために使用できるオプションについて説明します。
-ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167367"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502917"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -101,6 +101,9 @@ Azure AD の利用規約を作成するには
 12. **[新規]** ブレードの **[ポリシーの有効化]** で、**[オン]** をクリックして、**[作成]** をクリックします。
 
 これで、ゲスト ユーザーがお客様の組織のコンテンツ、チームやサイトに初めてアクセスしようとしたときに、利用規約への同意を要求されるようになります。
+
+> [!NOTE]
+> 条件付きアクセスを使用するには、Azure AD Premium P1 ライセンスが必要です。 詳細については、[「条件付きアクセスとは」](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) を参照してください。
 
 ### <a name="more-information"></a>詳細情報
 [Azure Active Directory の利用規約](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)

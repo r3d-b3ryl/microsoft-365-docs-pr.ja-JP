@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の ATP の安全なリンクポリシーでユーザーのブロックされたユーザーの Url を設定する方法と、ユーザーのグループの Url のリストを書き換えない方法について説明します。
-ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702538"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517475"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、リライトしないカスタムの Url リストを設定する
 
@@ -60,11 +60,13 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 
 4. ポリシーの名前と説明を指定します。
 
-5. [**次の url を書き換えない**] セクションで、[**有効な url を入力**してください] ボックスを選択し、url を入力して、プラス記号 (+) を選択します。
+5. ユーザーがリンクをクリックしたときに、url**を**有効にして、既知の悪意のあるリンクの一覧に対して書き換えて確認します。
 
-6. [**適用先**] セクションで、[**受信者が次のメンバー**である] を選択し、ポリシーに含めるグループを選択します。 [**追加**] を選択し、[ **OK]** を選択します。
+6. [**次の url を書き換えない**] セクションで、[**有効な url を入力**してください] ボックスを選択し、url を入力して、プラス記号 (+) を選択します。
 
-7. 画面の右下隅で URL の追加が完了したら、**[保存]** を選択します。
+7. [**適用先**] セクションで、[**受信者が次のメンバー**である] を選択し、ポリシーに含めるグループを選択します。 [**追加**] を選択し、[ **OK]** を選択します。
+
+8. 画面の右下隅で URL の追加が完了したら、**[保存]** を選択します。
 
 > [!NOTE]
 > 組織の禁止された Url のカスタムリストを必ず確認してください。 「 [ATP Safe Links を使用してカスタムのブロックされた url リストをセットアップする](set-up-a-custom-blocked-urls-list-atp.md)」を参照してください。

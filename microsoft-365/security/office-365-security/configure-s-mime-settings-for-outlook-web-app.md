@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Exchange online の Outlook on the web で S/MIME 設定を表示および構成するために必要な Exchange Online 管理者の簡単な説明。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c1496025124717688cc812e22e0d8fe3a441112
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b9f4e6c33369640ad66956568959dd02b01c4fb9
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616624"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517487"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Outlook on the web を使用して、Exchange Online の S/MIME 設定を構成する
 
@@ -31,7 +31,7 @@ Exchange Online の管理者は、S/MIME で保護されたメッセージを送
 
 ## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>新しい Microsoft Edge (Chromium ベース) に関する考慮事項
 
-Web 上の Outlook で S/MIME を新しい[Microsoft edge](https://www.microsoft.com/windows/microsoft-edge) web ブラウザーで使用するには、microsoft edge の新しい microsoft Edge に microsoft S/mime 拡張機能をインストールするために、ユーザー (または別の管理者) が、 **Extensioninstallforcelist**という microsoft edge browser policy を設定および構成する必要があります。 ポリシーの値は `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` です。 このポリシーを適用するには、ドメインに参加しているコンピューターが必要であるため、新しい Microsoft Edge ブラウザーで S/MIME を使用するとドメインに参加しているコンピューターが効果的に必要になります。
+新しい[microsoft](https://www.microsoft.com/windows/microsoft-edge) edge web ブラウザーで Outlook on the Web で S/mime を使用するには、新しい microsoft Edge に microsoft S/mime 拡張機能をインストールするために、ユーザー (または別の管理者) が、 **Extensioninstallforcelist**という microsoft edge browser ポリシーを設定して構成しなければなりません。 ポリシーの値は `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` です。 このポリシーを適用するには、ドメインに参加しているか Azure AD に参加しているデバイスが必要であるため、新しい Microsoft Edge ブラウザーで S/MIME を使用すると、ドメインに参加しているまたは Azure AD に参加しているデバイスが効果的に必要になります。
 
 **Extensioninstallforcelist**ポリシーの詳細については、「 [extensioninstallforcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist)」を参照してください。
 

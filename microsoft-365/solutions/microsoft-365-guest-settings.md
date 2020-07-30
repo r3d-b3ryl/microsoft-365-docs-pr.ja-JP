@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679146"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514791"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -37,7 +37,7 @@ Azure Active Directory は、Microsoft 365 により使用されるディレク�
 
 ### <a name="organizational-relationships-settings"></a>組織の関係の設定
 
-**ナビゲーション:** [[Azure Active Directory 管理センター]](https://aad.portal.azure.com) > [Azure Active Directory] > [組織の関係] > [設定]
+**ナビゲーション:** [[Azure Active Directory 管理センター]](https://aad.portal.azure.com) > [Azure Active Directory] > [外部 ID] > [外部コラボレーションの設定]
 
 ![Azure Active Directory における組織の関係の設定ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -60,7 +60,7 @@ Microsoft 365 管理センターには、共有および Microsoft 365 グルー
 
 ### <a name="sharing"></a>共有
 
-**ナビゲーション:** [Microsoft 365 管理センター](https://admin.microsoft.com) > [設定] > [設定] > [セキュリティとプライバシー] タブ > [共有]
+**ナビゲーション:** [Microsoft 365 管理センター](https://admin.microsoft.com) > [設定] > [組織の設定] > [セキュリティとプライバシー] タブ > [共有]
 
 ![Microsoft 365 管理センターにおけるセキュリティとプライバシーのゲスト共有設定のスクリーンショット](../media/sharepoint-security-privacy-sharing-setting.png)
 

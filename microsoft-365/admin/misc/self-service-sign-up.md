@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,18 +17,15 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: Microsoft 365 セルフサービスのサインアップと、Microsoft パワーアプリ、Microsoft Flow、および財務の Dynamics 365 などの利用可能なセルフサービスプログラムについて説明します。
-ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Microsoft 365 セルフサービスのサインアップと、Microsoft Power Apps、Microsoft Flow、Dynamics 365 for Finance などの利用可能なセルフサービスプログラムについて説明します。
+ms.openlocfilehash: 4a95c4b98821100d0a5164b87c1afe02b854608b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399292"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506299"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
@@ -68,3 +65,4 @@ ms.locfileid: "44399292"
 |**Microsoft Stream** <br/> |組織全体でビデオをアップロードおよび共有して、コミュニケーション力、共同作業、学習の向上を実現します。  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power オートメーションは、ファイルを同期したり、通知を取得したり、データを収集したりするための、お気に入りのアプリとサービス間の自動化されたワークフローを設定するのに役立つ製品です。  <br/> |[電源自動化のためのサインアップとサインイン](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |パワー仮想エージェントは、データ科学者や開発者を必要とせずに、ガイド付きのコーディングされていないグラフィカルインターフェイスを使用して、チームが強力なボットを簡単に作成できるようにします。 パワー仮想エージェントは、現在業界での bot が構築する主な問題の多くを解決します。 該当分野の専門家と bot を構築する開発チームのギャップを排除し、teams を認識し、チーム間で問題を認識して、それに対処するために bot の待機時間を長くします。  <br/> |[ライセンスとアクセスの詳細](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[パワー仮想エージェントにサインアップする](https://aka.ms/TryPVA) <br/> |
+|**Azure AD B2B** <br/> |Azure Active Directory (Azure AD) のビジネスツービジネス (B2B) コラボレーションを使用すると、外部ユーザー (または "ゲストユーザー") に、有料の Azure AD サービスの使用を招待することができます。 一部の機能は無料ですが、有料の Azure AD 機能については、従業員またはテナント内のゲスト以外のユーザーに対して自分が所有する Azure AD edition ライセンスごとに最大5人のゲストユーザーを招待できます。 <br/> |[Azure AD B2B コラボレーションサインアップ用のセルフサービス](https://docs.microsoft.com/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active Directory B2B コラボレーションライセンスのガイダンス](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance) <br/> |

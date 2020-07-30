@@ -1,19 +1,19 @@
 ---
 title: Microsoft マネージドデスクトップのアーカイブされたデバイス
 description: リタイア間近にあるデバイスは登録できますが、サポート期間が短縮されます。
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 4c7ce4e8fd9c41f9ae9417f546e14e7bf8beda5c
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080083"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503069"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
@@ -43,6 +43,9 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU |**2023年5月14日** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | **2023年10月23日** |
 |HP ProBook x360 440 G1| 128 GB/Intel i3/8 GB RAM | 5VS04AV、IR カメラまたは指紋リーダが必要な SKU | **2023年6月6日** |
+|HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | **2023年7月18日** |
+|HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | **2023年7月18日** |
+|AIO の HP EliteOne 800 G4 23.8 |128 GB/Intel i3/8 GB RAM |5VS04AV の SKU| **2023年7月18日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | なし | **2022年11月16時** |
 |Surface Go| 128 GB/Intel 44 15Y/8GB RAM | なし | **2023年8月2時** |
 |Surface のノートブック| 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |

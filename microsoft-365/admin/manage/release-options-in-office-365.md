@@ -22,19 +22,19 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品および機能の更新プログラムのリリースオプションをセットアップする方法について説明します。
-ms.openlocfilehash: 4b26a3e95b11feb5c6a5894702b86e74f82bde03
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399694"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502881"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準または対象指定リリースオプションを設定する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -42,6 +42,9 @@ Microsoft 365 では、数年ごとに費用のかかる更新プログラムを
   
 > [!IMPORTANT]
 > この記事に記載されている Microsoft 365 更新プログラムは、Microsoft 365、SharePoint Online、および Exchange Online に適用されます。 これらは、Skype for Business および関連するサービスには適用されません。 これらのリリースオプションは、Microsoft 365 への変更をリリースするための最善の方法ですが、常に、またはすべての更新プログラムに対して保証することはできません。 
+
+> [!NOTE]
+> アプリケーションの更新プログラムチャネルの詳細については、「 [Microsoft 365 アプリの更新プログラムチャネルの概要](https://docs.microsoft.com/deployoffice/overview-update-channels)」を参照してください。 
   
 ## <a name="how-it-works---release-validation"></a>しくみ - リリースの検証
 

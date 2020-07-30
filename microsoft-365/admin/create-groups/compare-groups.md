@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 使用可能なグループの種類について説明します。
-ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780459"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514769"
 ---
 # <a name="compare-groups"></a>グループを比較する
 
@@ -55,6 +55,8 @@ Microsoft 365 グループには、Outlook for iOS や Outlook for Android な�
 
 配布グループは、"建物 A のユーザー" や "Contoso の全員" など、一連のユーザーに情報をブロードキャストする必要がある状況に最適です。
 
+配布グループは、[Microsoft 365 グループ](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)にアップグレードできます。
+
 ## <a name="security-groups"></a>セキュリティ グループ
 
 [セキュリティ グループ](../email/create-edit-or-delete-a-security-group.md)は、SharePoint などの Microsoft 365 リソースへのアクセスを許可するために使用されます。 ユーザーを各リソースに個別に追加するのではなく、グループを管理するだけで済むため、管理が容易になります。
@@ -82,3 +84,5 @@ Microsoft 365 グループには、Outlook for iOS や Outlook for Android な�
 ## <a name="related-articles"></a>関連記事
 
 [Microsoft 365 グループについて](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[Outlook で配布リストをグループにアップグレードする理由](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e0f76f6a232edeac350d08eeeb47188535ffe688
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955593"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502939"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft の脅威保護で自動調査を行った後の修復アクション
 
@@ -39,7 +39,7 @@ Microsoft の脅威保護の自動化された調査の最中および実行後�
 
 |デバイス (エンドポイント) の修復アクション  |メールの修復アクション  |
 |---------|---------|
-|ファイルの検疫<br/>レジストリ キーの削除<br/>プロセスの強制終了 <br/>サービスの停止 <br/>ドライバーの無効化 <br/>スケジュールされたタスクの実行      |メール メッセージまたはクラスターの論理的な削除<br/>URL のブロック (クリック時)<br/>外部メール転送の無効化          |
+|-調査パッケージを収集する <br/>-分離デバイス (この操作は元に戻すことができます)<br/>-オフボードマシン <br/>-リリースコードの実行 <br/>-検疫からの解放 <br/>-要求のサンプル <br/>-コード実行を制限する (このアクションは元に戻すことができます) <br/>-ウイルス対策スキャンを実行する <br/>-停止および検疫      |-ブロック URL (クリック時)<br/>-電子メールメッセージまたはクラスターのソフト削除<br/>-検疫電子メール<br/>-電子メールの添付ファイルを検疫する<br/>-外部メール転送をオフにする          |
 
 修復が保留になっているか、既に完了しているかにかかわらず、[アクションセンター](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)で確認できます。
 
