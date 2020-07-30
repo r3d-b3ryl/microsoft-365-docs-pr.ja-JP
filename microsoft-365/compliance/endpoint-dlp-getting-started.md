@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: ee276c81a0ebfbf44dd77f6016172f9bf7ed3022
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 67bd00a83314590d1ca1ab71c32d5a325686dc46
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200007"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514780"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpoint Data Loss Prevention (プレビュー) を開始する
 
@@ -81,7 +81,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 これらの要件を満たすために、Endpoint DLP の導入を計画している Windows 10 デバイスを確認してください。
 
 1. Windows 10 ビルド1809 以降を実行していなければなりません。
-2. すべてのデバイスは[Azure Active Directory (AAD) に参加していなければなりません](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)。
+2. すべてのデバイスは[Azure Active Directory (AAD) に参加する ](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)か、Hybrid Azure AD に参加する必要があります。
 3. エンドポイントデバイスに Microsoft Chromium Edge ブラウザをインストールして、クラウドへのアップロードアクティビティのポリシーアクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 
 ## <a name="onboarding-devices-into-device-management"></a>デバイス管理へのデバイスのオンボーディング
@@ -159,7 +159,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 - [エンドポイントのデータ損失防止について学ぶ (プレビュー) ](endpoint-dlp-learn-about.md)
 - [エンドポイントのデータ損失防止の使用 (プレビュー) ](endpoint-dlp-using.md)
 - [データ損失防止の概要](data-loss-prevention-policies.md)
-- [DLPポリシーを作成、テスト、調整する](create-test-tune-dlp-policy.md)
+- [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
 - [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) ](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Windows 10 マシン用のオンボーディングツールとメソッド](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
