@@ -423,7 +423,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: 悪意のあるメールを修復する
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: ATP レポートを表示して閲覧する
+            - name: セキュリティ/コンプライアンス センターのATP レポートを表示する
               href: ./office-365-security/view-reports-for-atp.md
             - name: 脅威の分析によって最新の攻撃行動を理解する
               href: ./mtp/latest-attack-campaigns.md

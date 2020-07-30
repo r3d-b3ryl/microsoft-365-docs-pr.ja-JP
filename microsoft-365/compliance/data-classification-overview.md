@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127222"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430330"
 ---
 # <a name="know-your-data---data-classification-overview"></a>データを把握する - データ分類の概要
 
@@ -132,9 +132,9 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 
 ## <a name="see-also"></a>関連項目
 
-- [ラベル アクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)
-- [ラベル付きコンテンツの表示 (プレビュー)](data-classification-content-explorer.md)
-- [機密ラベルについて詳しく見る](sensitivity-labels.md)
-- [保持ポリシーおよび保持ラベルについて詳しく見る](retention.md)
+- [ラベル アクティビティの表示](data-classification-activity-explorer.md)
+- [ラベル付きコンテンツの表示](data-classification-content-explorer.md)
+- [秘密度ラベルの詳細](sensitivity-labels.md)
+- [アイテム保持ポリシーと保持ラベルの詳細](retention.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)
