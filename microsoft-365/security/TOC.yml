@@ -137,6 +137,8 @@
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 検出する
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: データの範囲の拡張
+                  href: mtp/advanced-hunting-extend-data.md
                 - name: データ スキーマ
                   items:
                     - name: スキーマを理解する

@@ -10,16 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 081385ebe93423b210561b2e34ea0f06796efe71
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 7eb8418f19782e8b3a0d7d00fa8fb3082a6443c9
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160125"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521267"
 ---
 # <a name="microsoft-365-industry-specific-guidance-overview"></a>Microsoft 365 の業界固有のガイダンスの概要
 
-![ベストプラクティスリボン](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **業界固有のガイダンス**では、業界-金融、医療、教育機関向けのベストプラクティスについて説明します。
+![ベストプラクティスリボン ](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **業界固有のガイダンス**では、業界-金融、医療、教育機関向けのベストプラクティスについて説明します。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ソリューションおよびアーキテクチャセンター
+title: Microsoft 365 ソリューションおよびアーキテクチャ センター
 description: セキュリティで保護された最新のコラボレーションを実現するために、統合された Microsoft 365 ソリューションを理解、計画、および実装するために必要な技術ガイダンスを入手できます。
 ms.author: samanro
 author: samanro
@@ -10,26 +10,25 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 55cb2e396b4e557a9fc6de2bba4a90b962137d7b
-ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
+ms.openlocfilehash: 1f9d2d1a8a1c346214fa58f0f6095683bee0b24f
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44664540"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520971"
 ---
-# <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャセンター
+# <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 ソリューションおよびアーキテクチャ センター
 
 このソリューションとアーキテクチャセンターでは、セキュリティで保護された最新のコラボレーションを実現するために、統合された Microsoft 365 ソリューションを理解、計画、および実装するために必要な技術ガイダンスがまとめられています。 このセンターでは、次の内容を確認できます。
 
 ![「 ](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[基本ソリューションガイダンス](foundation-solutions-overview.md)** をブロックする」では、特定のビジネス上の問題やニーズについての完全なガイダンスを提供します。 このガイドでは、概念と機能について説明し、計画から実装、導入に至るまでの、機能的な最終結果につながる選択を行うことができます。 
 
 - [Microsoft 365 でリモート ワーカーを支援する](empower-people-to-work-remotely.md)
-- [Microsoft 365 とのセキュリティで保護されたコラボレーションをセットアップする](setup-secure-collaboration-with-teams.md)
-- [Microsoft 365 で脅威保護を展開する](deploy-threat-protection.md)
-- [情報保護を展開し、データのプライバシー規制を遵守する](information-protection-deploy.md)
+- [Microsoft 365 とセキュリティで保護された共同作業を設定する](setup-secure-collaboration-with-teams.md)
+- [Microsoft 365 での脅威の保護](deploy-threat-protection.md)
+- [データプライバシー規制のための情報の展開保護](information-protection-deploy.md)
 
 ![オブジェクトの ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **[ワークロードのソリューションとシナリオのガイダンス](workload-solutions-scenarios-overview.md)** これらのシナリオとソリューションは、特定のビジネス目標を達成するのに役立ちます。 これらを基本ソリューションに追加して、環境に機能を追加することができます。
 

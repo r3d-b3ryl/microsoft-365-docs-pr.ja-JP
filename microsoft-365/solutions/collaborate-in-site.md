@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: ゲストを使用したグループ作業のために SharePoint サイトをセットアップするために必要な Microsoft 365 構成手順について説明します。
-ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 320fb21f19c9616e78f56e519cb804e3e03b2b45
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160005"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527908"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -44,7 +45,7 @@ Microsoft 365 での共有は、Azure Active Directory の組織上の関係の�
 
 組織上の関係の設定を設定するには
 
-1. Microsoft Azure にログイン[https://portal.azure.com](https://portal.azure.com)します。
+1. Microsoft Azure にログイン [https://portal.azure.com](https://portal.azure.com) します。
 2. 左側のナビゲーションで、[ **Azure Active Directory**] をクリックします。
 3. [**概要**] ウィンドウで、[組織上の**関係**] をクリックします。
 4. [組織上の**関係**] ウィンドウで、[**設定**] をクリックします。
