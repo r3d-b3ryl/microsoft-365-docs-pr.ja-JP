@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: Microsoft 365 の id、デバイス、および脅威保護サービスによる個人データ漏洩を防止します。
-ms.openlocfilehash: 74894037ef2fe56aeb5bc44340cd8a946863baff
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695081"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520983"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>データプライバシー規制に id、デバイス、および脅威保護を使用する
 
@@ -48,7 +48,7 @@ Microsoft 365 には、組織がデータプライバシー関連のコンプラ
 Id と**コントロールアクセス**カテゴリに[azure Active DIRECTORY (azure AD)](https://azure.microsoft.com/services/active-directory/)を使用します。これには、次の操作を実行できます。
 
 - リプレイ対策認証を実装する ("Man-in-the-middle" 攻撃を防ぐため)
-- 従来の認証をブロックする。
+- レガシ認証をブロックする
 - ユーザーのリスクとユーザーサインインリスクポリシーを構成します。
 - 管理者および非管理者に対して、条件付きアクセスと多要素認証 (MFA) を有効にします。
 - パスワードポリシーを構成して、適用します。

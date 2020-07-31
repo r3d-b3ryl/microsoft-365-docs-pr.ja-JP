@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 コンプライアンスセンターでデータ調査 (プレビュー) で新しい調査を作成、構成、および保存する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 62166f1fb820c33e1e8981b31c5fc9a48e54390a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1dae733a2e6dacfc2cc871cc9b589927d306599a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035779"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526913"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>データ調査で新しい調査を作成する (プレビュー)
 
@@ -34,7 +34,7 @@ ms.locfileid: "44035779"
  
 4. [**データ調査 (プレビュー)** ] ページで、[**新しい調査の作成**] をクリックします。
     
-5. [**新しいデータ調査**のポップアップ] ページで、調査の名前 (必須) を指定し、オプションの調査番号と説明を入力します。 調査名は、組織内で一意である必要があることに注意してください。
+5. [**新しいデータ調査**のポップアップ] ページで、調査の名前 (必須) を指定し、オプションの調査番号と説明を入力します。 調査名は、組織内で一意である必要があります。
 
 6. [**この調査を作成した後、追加の設定を構成しますか?**] で、次のいずれかの操作を行います。
 

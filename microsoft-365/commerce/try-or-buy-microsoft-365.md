@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 無料試用版を入手する方法、または Microsoft 365 のサブスクリプションを購入する方法について説明します。
-ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6400f8a05a0e1b8fd8d7200af90a0b232b288895
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403140"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526842"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>Microsoft 365 サブスクリプションを試用する/購入する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -40,7 +40,9 @@ Microsoft 365 は、Office 365 と Windows 10 を高度なセキュリティお�
   
 - Microsoft 365 Business Premium
 
-- Office 365 Enterprise E3
+- Microsoft 365 E5
+
+- Microsoft 365 E3
 
 - Office 365 Enterprise E5
 

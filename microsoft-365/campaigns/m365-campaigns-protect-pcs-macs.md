@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 0cd96cb73ad3d0b38ab1e5ff31c913d97528c2d4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3e0c6a52209c56e75c6ff1210f26e6926e4d7d32
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632793"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527140"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>管理されていない Windows 10 Pc および Mac を保護する
 
@@ -58,7 +59,7 @@ Windows 10 PC または Mac が組織で管理されていない場合は、必�
 **Windows セキュリティを使用してデバイスを保護する**<p>
 Windows 10 を使用している場合は、Windows セキュリティによる最新のウイルス対策保護が得られます。 Windows 10 を初めて起動すると、Windows セキュリティがオンになり、マルウェア (悪意のあるソフトウェア)、ウイルス、およびセキュリティの脅威をスキャンすることにより、PC の保護が積極的に促進されます。 Windows セキュリティは、リアルタイム保護を使用して、PC でダウンロードまたは実行されたすべての情報をスキャンします。
 
-Windows Update は、PC の安全性を確保して脅威から保護するために、Windows セキュリティの更新プログラムを自動的にダウンロードします。
+Windows Update では、自動的に Windows セキュリティの更新プログラムをダウンロードして、PC の安全を確保し、脅威から保護します。
 
 以前のバージョンの Windows を使用していて、Microsoft Security Essentials を使用している場合は、Windows セキュリティに移行することをお勧めします。 詳細については、「 [Windows セキュリティでデバイスを保護](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)する」を参照してください。
 

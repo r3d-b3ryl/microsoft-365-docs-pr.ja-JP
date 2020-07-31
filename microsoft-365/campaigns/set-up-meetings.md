@@ -1,5 +1,5 @@
 ---
-title: オンライン会議をセットアップする
+title: オンライン会議を設定する
 f1.keywords:
 - NOCSH
 ms.author: stevhord
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,14 +25,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams を使用してオンライン会議を設定します。
-ms.openlocfilehash: 83ff561b4159ffe6785db8bb03314aa80668023a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ce13dbcc32457263295e0e617b92a2d7e5fc3909
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080441"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526866"
 ---
-# <a name="set-up-meetings"></a>会議を設定する
+# <a name="set-up-meetings"></a>会議をセットアップする
 
 Microsoft Teams の会議には、音声、ビデオ、共有が含まれます。 オンラインになっているので、常にミーティングスペースを用意して、自分のキャンペーンのために会議室やプロジェクターが必要になることはありません。Microsoft Teams 会議は、組織の内部と外部の両方でスタッフと協力して参加するための最適な方法です。 組織のメンバーでなくても、会議に参加するためのアカウントも持っている必要はありません。 政治的なキャンペーンでは、Microsoft Teams を使用して、オンライン会議をスケジュールして実行できます。 組織外のスタッフ、ボランティア、ゲストを含めることができます。 会議中に、画面を共有したり、ファイルを共有したり、タスクを割り当てたりすることができます。
 

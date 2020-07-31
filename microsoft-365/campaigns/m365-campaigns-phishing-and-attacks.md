@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用した、キャンペーンに対するフィッシングやその他の攻撃から保護します。
-ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 99b578c0b4f36d107d881d8b424ee899a937aa88
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165711"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527164"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から保護する
 
@@ -69,7 +70,7 @@ Microsoft 365 には、攻撃に対して防御するためのさまざまな保
 
 [![「キャンペーン情報を保護する」の図](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
-[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
+[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## <a name="set-it-up"></a>設定する
 

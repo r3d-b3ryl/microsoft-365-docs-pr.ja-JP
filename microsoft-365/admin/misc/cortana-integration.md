@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 有効な職場または学校のアカウントでサインインすると、ユーザーは、Office 365 のエンタープライズレベルのプライバシー、セキュリティ、およびコンプライアンスの約束を満たす Microsoft 365 エクスペリエンスで、クラウドベースのアシスタントサービスを受けることができます。
-ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 5707fb5966e77787b609c20b204602318627d350
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083552"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521279"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 の Cortana
 
@@ -33,7 +33,7 @@ ms.locfileid: "45083552"
 
 個人の生産性アシスタントとして、Cortana は、電子メール、ファイル、チャットなどの Office 365 データを安全かつ安全に処理および理由を提供するように設計されており、時間を節約し、効率を高め、ユーザーの生産性を向上させることができます。
 
-次に、エンタープライズの生産性に Cortana を注目しています。 
+次に、エンタープライズの生産性に Cortana を注目しています。
 
 - 他の Office 365 サービスとの一貫性のある Cortana エンタープライズサービスは、[オンラインサービスの利用規約 (OST)](https://www.microsoft.com/licensing/product-licensing/products)に反映されているのと同じエンタープライズレベルのプライバシー、セキュリティ、およびコンプライアンスの約束を満たします。
 
@@ -159,7 +159,7 @@ Cortana は、作成したタスクやコミットメントを使用して個人
 
 1. Microsoft 365 管理センターで、[**設定**] [組織の設定] を選択  >  **Org Settings**し、[ **Cortana**] を選択します。
 
-2. [次の Cortana での**接続エクスペリエンスを許可**する] チェックボックスをオフにして、cortana の接続エクスペリエンスを無効にします。
+2. 組織内のユーザーの代わりに Microsoft がホストするデータにアクセスし、Cortana 接続エクスペリエンスを無効にするには、 **[Windows 10 で cortana を許可する] (バージョン1909以前) および iOS と Android の cortana アプリ**の選択を解除します。
 
 3. [**変更の保存**] を選択します。
 

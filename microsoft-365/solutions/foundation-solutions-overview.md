@@ -10,15 +10,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 49d58c8d489906519f0c5e3aab4cec8183a5fe5d
-ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
+ms.openlocfilehash: a0dabc7694c925f35a98d9ca0c9855bd85bf6c53
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44664552"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521387"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Microsoft 365 Foundation ソリューションの概要
 
@@ -28,4 +27,4 @@ ms.locfileid: "44664552"
 - [リモート ワーカーの能力を強化する](empower-people-to-work-remotely.md)
 - [Teams、グループ、およびサイトで安全に共同作業を行う](setup-secure-collaboration-with-teams.md)
 - [組織全体で脅威保護とサイバーセキュリティを設定する](deploy-threat-protection.md)
-- [情報保護を展開し、データのプライバシー規制を遵守する](information-protection-deploy.md)
+- [データプライバシー規制のための情報の展開保護](information-protection-deploy.md)

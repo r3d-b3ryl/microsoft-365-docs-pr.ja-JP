@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-security-compliance
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
 description: この記事では、Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成するために使用できるオプションについて説明します。
-ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502917"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527932"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 

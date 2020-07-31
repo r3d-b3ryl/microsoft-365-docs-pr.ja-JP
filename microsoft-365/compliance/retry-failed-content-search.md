@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: ''
 description: 調査中に、[再試行] ボタンを使用して、コンテンツの場所にエラーがあるコンテンツ検索を解決できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034631"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527635"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 
-セキュリティ/コンプライアンスセンターでコンテンツ検索を使用して多数のメールボックスを検索すると、次のような検索エラーが表示されることがあります。
+セキュリティ/コンプライアンスセンターでコンテンツ検索を使用して多数のメールボックスを検索すると、次のようなエラーが表示されることがあります。
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -41,7 +42,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="cause-of-content-location-errors"></a>コンテンツの場所にエラーが発生する原因
 
-多数のメールボックスを検索する場合、検索は Microsoft データセンター内の数千人のサーバーに分散されます。 いつでも、特定のサーバーが再起動状態になったり、冗長コピーにフェールオーバーするプロセスであったりする可能性があります。 どちらの場合も、データを取得するためのコンテンツ検索要求がタイムアウトになります。 前の例では、失敗したメールボックスのエラーは、検索がタイムアウトした結果です。
+多数のメールボックスを検索する場合、検索は Microsoft データセンター内の数千人のサーバーに分散されます。 いつでも、特定のサーバーが再起動状態になったり、冗長コピーにフェールオーバーするプロセスであったりする可能性があります。 どちらの場合も、データを取得するコンテンツ検索の要求はタイムアウトになります。前の例では、失敗したメールボックスのエラーは、検索がタイムアウトした結果です。
 
 ## <a name="resolving-content-location-errors"></a>コンテンツの場所のエラーを解決する
 
@@ -66,6 +67,6 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 - 同じメールボックスで同時に実行されている検索が多すぎます。 可能であれば、1つのメールボックスで一度に1つずつ検索を実行します。
 
-- 単一の検索で大量のメールボックスを検索しています。 非常に多くのメールボックスを検索すると、コンテンツの場所エラーが発生する可能性が高くなります。 可能であれば、各検索で組織内のメールボックスのサブセットが含まれるように、複数の検索を実行してみてください。
+- 単一の検索で大量のメールボックスを検索しています。 多数のメールボックスを検索すると、コンテンツの場所エラーが発生する可能性が高くなります。 可能であれば、各検索で組織内のメールボックスのサブセットが含まれるように、複数の検索を実行してみてください。
 
 - メールボックスで必要なメンテナンスが実行されている。 この原因はほとんどありませんが、コンテンツの場所エラーを受け取ってからしばらく待ってから、検索を再試行してください。

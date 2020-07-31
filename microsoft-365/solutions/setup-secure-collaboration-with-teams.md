@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: 機密に基づいてデータを保護するために Teams をセットアップする方法について説明します。
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724804"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527710"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とセキュリティで保護された共同作業を設定する
 
@@ -77,7 +78,7 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 ||**ベースライン層**|**機密層**|**非常に機密性の高い層**|
 |:--|:-----------|:------------|:-------------------|
-|パブリックまたはプライベートチーム|[Either/リンク/埋め込み]|Kirkland|Kirkland|
+|パブリックまたはプライベートチーム|[Either/リンク/埋め込み]|プライベート|プライベート|
 |認証されていない共有|Blocked|Blocked|Blocked|
 |ファイル共有|可|可|チーム所有者のみが共有できます。|
 |チームメンバーシップ|すべてのユーザーがパブリックチームに参加できます。<br>チーム所有者の承認は、プライベートチームに参加するために必要です。|参加するには、チーム所有者の承認が必要です。|参加するには、チーム所有者の承認が必要です。|

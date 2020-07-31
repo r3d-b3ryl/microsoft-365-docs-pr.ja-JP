@@ -10,16 +10,17 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 3af0826e925f2592aaae930200c0f7b8b9865be1
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 33b84423fa4744c34e184690bcfc3fe8dd435298
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160065"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528050"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -114,7 +115,7 @@ ms.locfileid: "44160065"
 12. **[Office 365 グループに接続されているチーム サイトのプライバシー]** ドロップダウンで、**[非公開 - メンバーのみがサイトにアクセス可能]** を選びます。
 13. ゲスト アクセスを許可する場合は、**[Ofﬁce 365 グループ所有者が組織外のユーザーをグループに追加できるようにする**] チェック ボックスを選択します。 
 14. **[非管理対象デバイス]** で、**[アクセスをブロックする]** を選びます。
-15. **[次へ]** をクリックします。
+15. [**次へ**] をクリックします。
 16. **[Office アプリの自動ラベル付け]** ページで、**[次へ]** をクリックします。
 17. **[送信]** をクリックしてから、**[完了]** をクリックします。
 
@@ -129,7 +130,7 @@ ms.locfileid: "44160065"
 6. [ユーザーとグループに発行] ページで、**[ユーザーとグループの選択]** をクリックします。
 7. **[追加]** をクリックし、作成したチームを選びます。
 8. **[追加]** をクリックし、**[完了]** をクリックします。
-9. **[次へ]** をクリックします。
+9. [**次へ**] をクリックします。
 10. [ポリシーの設定] ページで、**[ユーザーはラベルを削除するか、分類ラベルを下げるために正当な理由を提供する必要がある]** チェック ボックスをオンにし、**[次へ]** をクリックします。
 11. ポリシーの名前を入力し、**[次へ]** をクリックします。
 12. **[送信]** をクリックしてから、**[完了]** をクリックします。
@@ -211,7 +212,7 @@ SharePoint サイトがチーム メンバーではないユーザーと共有�
 Microsoft 365 は、コンテンツを保護するための追加の方法を提供しています。 次のオプションを使用して、組織のセキュリティを強化することを検討してください。
 
 - ゲスト ユーザーを[使用条件](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)に同意させる。
-- ゲストに[セッション タイムアウト ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を設定する。
+- ゲストに[セッション タイムアウト ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)を構成する。
 - [機密情報の種類](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)を作成し、[データ損失防止](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)を使用して、機密情報にアクセスするポリシーを設定する。
 - [Azure Active Directory アクセス](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) レビューを使用して、チームのアクセス権とメンバーシップを定期的に確認する。
 

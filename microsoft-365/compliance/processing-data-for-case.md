@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の高度な電子情報開示ツールで各種のデータを処理する方法の概要を確認します。
-ms.openlocfilehash: f9940318ba7355303e8afed1c83bb314d98b86cf
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024757"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527407"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>高度な電子情報開示で処理エラーを処理する
 
@@ -31,7 +31,7 @@ ms.locfileid: "45024757"
 
 保管担当者および保管担当者以外のデータソースを [ **sources** ] タブのケースに追加すると、Microsoft 365 からすべてのインデックスが作成されたアイテムが完全に検索可能になるように処理されます。 同様に、Microsoft 365 と Microsoft 以外の365データソースの両方からのレビューセットにコンテンツが追加されると、このコンテンツも処理されます。
 
-Advanced eDiscovery の [**処理**] タブでは、さまざまな処理シナリオの詳細なインデックス作成の状態についての洞察が得られます。
+Advanced eDiscovery の [**処理**] タブでは、さまざまな処理シナリオの高度なインデックスの状態を把握できます。
 
 詳細については、次の記事を参照してください。
 

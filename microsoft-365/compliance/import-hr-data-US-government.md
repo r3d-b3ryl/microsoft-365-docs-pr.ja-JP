@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: US Government クラウドの管理者は、組織の人事 (HR) システムから Microsoft 365 に従業員データをインポートするためのデータコネクタをセットアップすることができます。 これにより、社内リスク管理ポリシーの人事データを使用して、組織に内部の脅威をもたらす可能性がある特定のユーザーによるアクティビティを検出することができます。
-ms.openlocfilehash: 8023ffda8a9d367736ec8f7fc781bde5d6f1e1f5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205027"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527645"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>米国政府機関で人事データをインポートするためのコネクタを設定する (プレビュー)
 
@@ -87,7 +87,7 @@ CSV ファイルの最初の行、つまりヘッダー行には、必要な列�
 
    b. HR コネクタの名前を入力します。
 
-5. [**ファイルマッピング**] ページで、3つの列ヘッダー名を入力します (それぞれのボックスに、手順2で作成した CSV ファイルの*パラメーター*とも呼ばれます)。 名前の大文字と小文字は区別されません。 前述のように、これらのボックスに入力する名前は、CSV ファイルのパラメーター名と一致している必要があります。 たとえば、次のスクリーンショットは、手順2に示すサンプル CSV ファイルの例のパラメータ名を示しています。
+5. [**ファイルマッピング**] ページで、適切な各ボックスに、手順2で作成した CSV ファイルの3つの列ヘッダー (*パラメーター*とも呼ばれます) の名前を入力します。 名前の大文字と小文字は区別されません。 前述のように、これらのボックスに入力する名前は、CSV ファイルのパラメーター名と一致している必要があります。 たとえば、次のスクリーンショットは、手順2に示すサンプル CSV ファイルの例のパラメータ名を示しています。
 
    ![CSV ファイル内の列見出し名が一致する](../media/HRConnectorWizard3.png)
 
@@ -198,7 +198,7 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
    
    b. [**詳細設定**] で、[**有効**] チェックボックスがオンになっていることを確認します。
    
-   c. [**OK**] をクリックします。
+   c.  [**OK**] をクリックします。
 
 7. [ **Actions** ] タブを選択し、[**新規**] をクリックして、次の操作を行います。
 
@@ -208,9 +208,9 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
    b. [**プログラム/スクリプト**] ボックスで [**参照**] をクリックし、次の場所に移動して、ボックスにパスが表示されるように `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` します。
 
-   c. [**引数を追加する (省略可能)** ] ボックスに、手順4で実行したのと同じスクリプトコマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
+   c.  [**引数を追加する (省略可能)** ] ボックスに、手順4で実行したのと同じスクリプトコマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
 
-   d. [**開始 (省略可能)** ] ボックスに、手順4で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、`C:\Users\contosoadmin\Desktop\Scripts` などです。
+   d.  [**開始 (省略可能)** ] ボックスに、手順4で実行したスクリプトのフォルダーの場所を貼り付けます。 たとえば、`C:\Users\contosoadmin\Desktop\Scripts` などです。
 
    e.  [ **Ok]** をクリックして、新しいアクションの設定を保存します。
 

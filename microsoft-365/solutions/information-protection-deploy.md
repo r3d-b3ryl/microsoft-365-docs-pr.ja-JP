@@ -13,15 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-overview
 ms.custom: ''
 description: 情報を保護し、データのプライバシー規制に準拠するように、セキュリティとサービスインフラストラクチャを構成します。
-ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854337"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522291"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Microsoft 365 を使用して、データプライバシー規制の情報保護を展開する
 
@@ -37,13 +38,13 @@ Microsoft 365 のデータの種類の例には、Microsoft Teams のチャッ�
 
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
-| コンプライアンス マネージャー | Microsoft クラウドサービスに関連する規制コンプライアンスアクティビティを、Microsoft Service Trust Portal のこのワークフローベースのリスク評価ツールを使用して管理します。 | Microsoft 365 E3、E5 |
-| コンプライアンス スコア (プレビュー) | Microsoft 365 コンプライアンスセンターでの改善に関する、現在のコンプライアンス構成と推奨事項の全体的なスコアを参照してください。 | Microsoft 365 E3、E5 |
-| Office Advanced Threat Protection (ATP) | Microsoft 365 のアプリとデータ (電子メールメッセージ、Office ドキュメント、コラボレーションツールなど) を攻撃から保護します。 | Microsoft 365 E3、E5 | 
-| 秘密度ラベル | ユーザーの生産性を低下させることなく、組織のデータを分類して保護することができます。また、電子メール、ファイル、またはサイトにさまざまなレベルの保護を使用してラベルを作成することによって、共同作業が妨げられます。 | Microsoft 365 E3、E5 |
-| データ損失防止 (DLP) | 内部と外部の両方で個人情報を含むデータの共有など、危険、偶発的、または不適切な共有の検出、警告、ブロックを行います。 | Microsoft 365 E3、E5 | 
-| データ保持ラベルとポリシー | お客様の組織のポリシーやデータの規制に準拠するために、お客様の個人データの保存に関するデータと要件を維持する時間など、情報ガバナンス統制を実装します。 | Microsoft 365 E3、E5 |
-| メールの暗号化 | 顧客の個人データなどの規制データを含む、組織内外のユーザー間で暗号化された電子メールメッセージの送受信を行います。 | Microsoft 365 E3、E5 |
+| コンプライアンス マネージャー | Microsoft Service Trust Portal のワークフローベースのリスク評価ツールを使用して、Microsoft のクラウド サービスに関連する組織の規制準拠の取り組みを管理します。 | Microsoft 365 E3、E5 |
+| コンプライアンス スコア (プレビュー) | Microsoft 365 コンプライアンス センターで、現在のコンプライアンス構成の全体のスコアと改善のための推奨事項を確認しましょう。 | Microsoft 365 E3、E5 |
+| Office Advanced Threat Protection (ATP) | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 | Microsoft 365 E3、E5 | 
+| 秘密度ラベル | メール、ファイル、サイトに様々な保護レベルを持ったラベルを適用することで、ユーザーの生産性や共同作業機能を妨げることなく、組織のデータを分類して保護します。 | Microsoft 365 E3、E5 |
+| データ損失防止 (DLP) | 内部や外部での個人情報を含むデータの共有などの危険な共有、偶発的な共有、不適切な共有を検出し、警告し、ブロックします。 | Microsoft 365 E3、E5 | 
+| データの保持ラベルとポリシー | データの保持期間や、顧客の個人データの保管についての要件などの情報ガバナンスの制御を展開し、組織のポリシーやデータ規制に準拠します。 | Microsoft 365 E3、E5 |
+| メールの暗号化 | 組織内外のユーザーとの間で、顧客の個人情報などの規制されたデータを含む暗号化されたメール メッセージを送受信します。 | Microsoft 365 E3、E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>このソリューションのガイダンスの編成

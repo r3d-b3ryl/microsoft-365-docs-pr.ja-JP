@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理者アカウントをセットアップして保護する方法について説明します。
-ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633655"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527188"
 ---
 # <a name="protect-your-administrator-accounts"></a>管理者アカウントを保護する
 
@@ -46,7 +47,7 @@ Microsoft 365 にサインアップして、情報を入力すると、自動的
 
 追加の管理者アカウントを作成するには:
 
- 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理センター</a>に移動し、左側のナビゲーションで [**ユーザー** \>の**アクティブなユーザー** ] を選択します。
+ 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理センター</a>に移動し、 **Users** \> 左側のナビゲーションで [ユーザーの**アクティブなユーザー** ] を選択します。
 
     ![左側のナビゲーションで、[ユーザー]、[アクティブユーザー] の順に選択します。](../media/Activeusers.png)
 
@@ -67,10 +68,10 @@ Microsoft 365 にサインアップして、情報を入力すると、自動的
 
 ## <a name="create-a-user-account-for-yourself"></a>自分のユーザーアカウントを作成する
 
-ユーザーアカウントを使用して、メールのチェックを含む、組織とのグループ作業に参加します。 これは、管理者の資格情報が*alice の @Contoso<span></span>Chavez*に似ている可能性があることを意味し、通常のユーザーアカウントは*<span></span>alice @Contoso*に似ている場合があります。
+ユーザーアカウントを使用して、メールのチェックを含む、組織とのグループ作業に参加します。 これは、管理者の資格情報が*alice の <span></span> @Contoso Chavez*に似ている可能性があることを意味し、通常のユーザーアカウントは*alice <span></span> @Contoso*に似ている場合があります。
 
 新しいユーザーアカウントを作成するには、次のようにします。
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理センター</a>に移動し、左側のナビゲーションで [**ユーザー** \>の**アクティブなユーザー** ] を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理センター</a>に移動し、 **Users** \> 左側のナビゲーションで [ユーザーの**アクティブなユーザー** ] を選択します。
 2. [**アクティブなユーザー** ] ページで、ページの上部にある [**ユーザーの追加**] を選択し、[**新しいユーザー** ] パネルで名前とその他の情報を入力します。
 3. [**役割**] セクションを展開し、[**ユーザー (管理者権限なし)**] を選択します。
 1. [**製品ライセンス**] セクションで、 **Microsoft 365 Business**のセレクターを **[オン**] に移動します。 

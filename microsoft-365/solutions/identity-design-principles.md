@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 99112b70715770b24c1454fbd9442d2b5b6f08ea
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 0a4dd8c3c93402409863b18b400184d4e60eeee6
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800133"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521043"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Id とそれ以外の場合: 1 つの設計者の視点
 
@@ -312,7 +311,7 @@ Azure の役割ベースのアクセス制御 (RBAC) により、Azure の詳細
 
 上記の図からわかるように、他の多くのサービスは設計の一部として考慮する必要があります (例: [Azure ポリシー](https://docs.microsoft.com/azure/governance/policy/overview)、 [azure 青写真](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理グループ](https://docs.microsoft.com/azure/governance/management-groups/)など)。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 短時間の概要として開始されましたが、予想よりも長くなっています。  これで、組織の委任モデルの作成の詳細を紹介する準備ができました。  この会話は、お客様とよく似ています。 すべてのユーザーに対して動作するモデルは1つありません。 お客様に対して表示される一般的なパターンを文書化する前に、Microsoft エンジニアリングからいくつかの改善された改良を待ってください。 それまでは、Microsoft アカウントチームと協力して、最も近い[Microsoft テクノロジセンター](https://www.microsoft.com/mtc)へのアクセスを手配することができます。  こちらを参照してください。
 
 

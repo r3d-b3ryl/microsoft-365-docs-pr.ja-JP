@@ -10,15 +10,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- M365solutions
+- m365solution-overview
+- m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: e39e69fa7c65d7846cc91b3603c5b6ef96f56752
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: 47ebc8fa23511fbb653b87a31c8a39e1d99c504e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724834"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527722"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を展開する
 
@@ -70,7 +71,7 @@ Microsoft 365 E5 では、脅威保護機能は既定で統合されています
 5. [Microsoft Defender Advanced Threat Protection を構成する](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-advanced-threat-protection)
 6. [Microsoft Cloud App Security を構成する](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
 7. [状態を監視し、アクションを実行する](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
-8. [ユーザーをトレーニングする](deploy-threat-protection-configure.md#step-8-train-users)
+8. [ユーザーのトレーニング](deploy-threat-protection-configure.md#step-8-train-users)
 
 脅威保護機能は並行して構成できるので、異なるサービスに対して複数のセキュリティチームが責任を持つ場合は、組織の保護機能を同時に構成することができます。 次の図は、脅威保護機能を展開するための大まかなプロセスを示しています。 
 

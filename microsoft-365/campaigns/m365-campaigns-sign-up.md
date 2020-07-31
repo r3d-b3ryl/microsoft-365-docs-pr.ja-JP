@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンのための Microsoft 365 のステップバイステップのサインアップ。 Cybersecurity の脅威から、電子メール、データ、コミュニケーションにキャンペーンを保護します。
-ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0628ac1a2e8bf6d12bd4a196df11775ebcc2d583
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632781"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527116"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>キャンペーンのための Microsoft 365 へのサインアップ 
 
@@ -47,7 +48,7 @@ ms.locfileid: "43632781"
 1. Microsoft 365 へのキャンペーン電子メールへの招待で、[**組織 >を登録**する] を選択します。 これにより、Microsoft 365 サインアップが実行されます。
     > [!NOTE]
     > 既存の Microsoft 365 for business サブスクリプションを既に所有しており、Microsoft 365 for キャンペーンのサービスを追加する場合は、「 [microsoft 365 for The キャンペーンを既存のサブスクリプションに追加](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)する」に進んでください。
-1. **[Microsoft 365 business] ページ**で、ビジネスの詳細を入力します。 **ビジネスメールアドレス**の場合は、現在の電子メールアドレスを使用します。 このアドレスは、セットアップ処理中にお客様に連絡するためにのみ必要です。 [**次へ**] を選択します。
+1. **[Microsoft 365 business] ページ**で、ビジネスの詳細を入力します。 **ビジネスメールアドレス**の場合は、現在の電子メールアドレスを使用します。 このアドレスは、セットアップ処理中にお客様に連絡するためにのみ必要です。 **次へ**を選択します。
 1. **[ユーザー ID の作成] ページで、** 次のようにします。
     1. [**ユーザー名**] に、電子メールアドレスに使用する名前またはエイリアスを入力します。 たとえば、Alice だけと呼ばれることもあれば、渡のような場合もあります。 大規模なキャンペーンでは、AliceC または AliceChavez の方がより有意義な場合があります。
     2. **会社**で、作業するキャンペーンの名前を入力します。 たとえば、ContosoCampaign のようになります。 既にドメインを所有している場合は、ここでその名前を使用します。 
@@ -60,7 +61,7 @@ ms.locfileid: "43632781"
     1. 電話機の準備ができたら、[**テキスト**の選択] (または、必要に応じて、**電話をかけ**てください)。 電話番号を入力します。 
     2. [**テキスト**の選択] を選択すると、確認コードが送信できます。 [**電話をかける**] を選択した場合は、コードを呼び出します。
     3. テキストメッセージ (または通話) からコードを入力し、[**次へ**] を選択します。 短時間の待機が予想されます。 
-5. **このページを使用する場所**: キャンペーンの主要な作業場所の詳細と電話番号を入力します。 [**次へ**] を選択します。
+5. **このページを使用する場所**: キャンペーンの主要な作業場所の詳細と電話番号を入力します。 **次へ**を選択します。
 6. **この外観ページは**次のようになります。
     1. ユーザーあたりのコストが $5.00 であることを確認します。 
     2. 今すぐにのみ設定する場合は、[**次へ**] を選択します。 
@@ -80,14 +81,14 @@ Microsoft 365 for business (Microsoft 365 Business Standard など) の既存の
 2. [**ようこそ、ご意見**をお持ちですか?] ページで、クリックまたはタップして**既存のサブスクリプションに追加しますか?サインイン**します。
     
     ![右上隅の [サインイン] を選択します。](../media/addtoexisting.png)
-3. [サインイン] ページで、既存のサブスクリプションの管理者エイリアス (たとえば*Alice@VoteContoso<span></span>.org*) を入力し、[**次へ**] を選択し、パスワードを入力して、[**サインイン**] を選択します。
+3. [サインイン] ページで、既存のサブスクリプションの管理者エイリアス (たとえば*Alice@VoteContoso <span></span> .org*) を入力し、[**次へ**] を選択し、パスワードを入力して、[**サインイン**] を選択します。
 4. **どのように表示されますか。** ユーザーの数を入力し、[**次へ**] をクリックします。 プロモーションコードは、招待 URL に既に含まれているため、ここで入力する必要はありません。
 5. [**支払い方法]** ページで、お支払い方法を入力し、[**注文**] を選択します。
 
 これらの手順を完了すると、[新しいライセンス](../admin/manage/assign-licenses-to-users.md)をキャンペーンスタッフに割り当てる準備が整います。
 
 
-## <a name="whats-next"></a>次の作業
+## <a name="whats-next"></a>次の手順
 - Microsoft [365](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)をセットアップして、microsoft 365 を設定します。 
 - プランに[ユーザーを追加](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json)します。 キャンペーンの候補、すべてのシニアキャンペーンスタッフ、および重要なキャンペーンや関係者の情報にアクセスできるユーザーを含めます。
 - [キャンペーンの強化](m365-campaigns-security-overview.md)

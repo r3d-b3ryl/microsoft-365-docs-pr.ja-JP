@@ -1,5 +1,5 @@
 ---
-title: ソリューションとシナリオのテストラボガイド
+title: ソリューションとシナリオのテスト ラボ ガイド
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,18 +14,17 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- M365solutions
 ms.custom:
 - Ent_Architecture
 description: テストラボガイドを使用して、開発/テスト環境で Microsoft 365 ソリューションとシナリオを構築します。
-ms.openlocfilehash: 38b06678df46189f49b40a5752803786a94784fe
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 7254596da5b2b8b32a01468d3ff1f34d4efd8db8
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159445"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521303"
 ---
-# <a name="test-lab-guides-for-solutions-and-scenarios"></a>ソリューションとシナリオのテストラボガイド
+# <a name="test-lab-guides-for-solutions-and-scenarios"></a>ソリューションとシナリオのテスト ラボ ガイド
 
 テスト ラボ ガイド (TLG) を活用すれば、Microsoft 製品の概要をいち早く把握することができます。テスト ラボ ガイドは、簡単ではあるものの代表的なテスト環境を構成する方法を説明しています。これらの環境は、試用期間または有料サブスクリプションの期間内に、デモ、カスタマイズ、概念の複合的な証拠の作成に使用できます。 
 

@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c8b8416b276ce0e5335b0c0193c6cd79a81d7959
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: 778693787c3d26806b02a2ffbde57e3347326d87
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44581592"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522267"
 ---
 # <a name="networking-up-to-the-cloud--one-architects-viewpoint"></a>ネットワーク上 (クラウドへ) —1つのアーキテクトの視点
 
@@ -101,7 +100,7 @@ TLS 32 接続を強制的に実行することによって、サービスにア�
 
 分割トンネリングを許可していて、一般的な web トラフィックにプロキシも使用している場合は、PAC ファイルで直接実行する必要がある内容と、VPN トンネルを通過することに関する興味深いトラフィックを定義する方法を確認してください。 このように [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs) してサンプルの PAC ファイルが提供されるので、これが容易に管理できるようになります。
 
-## <a name="conclusion"></a>まとめ
+## <a name="conclusion"></a>終わりに
 
 Fortune 500 のほぼすべてを含む数万の組織。ミッションクリティカルな機能には、Office 365 を毎日使用します。 これらはセキュリティで保護されたものであり、インターネット上で実行されます。
 

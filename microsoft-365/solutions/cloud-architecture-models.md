@@ -1,5 +1,5 @@
 ---
-title: Microsoft クラウドアーキテクチャモデル
+title: Microsoft クラウド アーキテクチャ モデル
 description: これらのクラウドアーキテクチャのポスターには、Office 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online、ハイブリッドオンプレミスおよびクラウドソリューションなどの Microsoft クラウドサービスに関する情報が記載されています。
 ms.author: samanro
 author: samanro
@@ -10,15 +10,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: be79402c7aaf540ba3174e0844b1fe5bdc87a7ec
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 3a8daf7982cf0b28adebee5d4d05a9893faf30ba
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160041"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521911"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>エンタープライズアーキテクトのための Microsoft cloud の図
 
@@ -30,7 +29,7 @@ ms.locfileid: "44160041"
 
 Microsoft クラウド サービスおよびプラットフォームのネットワーキングに関して IT アーキテクトが知る必要のある事柄。
   
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |[![Microsoft クラウドのネットワーク モデルのサムネイル画像](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/>更新されたのは2019年11月| このモデルに含まれる内容: <ul><li> クラウド接続のためのネットワークの進化 </li><li> Microsoft のクラウド接続の一般的な要素 </li><li> Microsoft クラウド接続のためのExpressRoute </li><li> Microsoft SaaS、Azure PaaS、および Azure IaaS のネットワークの設計 </li></ul><br/>  <br/>|
 
@@ -39,7 +38,7 @@ Microsoft クラウド サービスおよびプラットフォームのネット
 
 Microsoft のサービスとプラットフォーム用のハイブリッド クラウドに関して IT アーキテクトが知る必要のある事柄。
   
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |[![Microsoft ハイブリッド クラウド モデルのサムネイル画像](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx) <br>更新されたのは2019年11月 | このモデルには次のものが含まれています。 <ul><li> Microsoft のクラウド製品 (SaaS、Azure PaaS、Azure IaaS) とそれらの共通の要素。 </li><li> Microsoft のクラウド製品向けのハイブリッド クラウド アーキテクチャ </li><li> Microsoft SaaS (Office 365)、Azure PaaS、および Azure IaaS のハイブリッド クラウド シナリオ </li></ul><br/>|
    
@@ -56,7 +55,7 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
 
 Microsoft クラウド サービスおよびプラットフォームにおけるセキュリティについて IT アーキテクトが知る必要のある事柄。
   
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |[![Microsoft クラウドのセキュリティ モデルのサムネイル画像](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=48121) <br/>2018年12月更新 | このモデルには次のものが含まれています。 <ul><li>安全なサービスとプラットフォームを提供することにおける Microsoft の役割</li><li>セキュリティ上のリスクを軽減するというお客様側の責任</li><li>最高位のセキュリティ認定 </li><li>Microsoft コンサルティング サービスが提供するセキュリティ サービス </ul><br/>|
 
@@ -75,7 +74,7 @@ Microsoft クラウド サービスおよびプラットフォームにおける
 
 Microsoft クラウド サービスおよびプラットフォームを使用して、組織のためのアイデンティティを設計する上で IT アーキテクトが知る必要のある事柄。
   
-|**Item**|**説明**|
+|**アイテム**|**説明**|
 |:-----|:-----|
 |[![Microsoft クラウド ID モデルのサムネイル画像](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=54431) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=524586)  \| [Visio](https://download.microsoft.com/download/2/3/8/238228E6-9017-4F6C-BD3C-5559E6708F82/MSFT_cloud_architecture_identity.vsd)           \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=54431) <br/>2016年8月更新 | このモデルには次のものが含まれています。 <ul><li>Microsoft のクラウド ID の概要 </li><li>Azure AD IDaaS 機能 </li><li>オンプレミスの Active Directory Domain Services アカウントと Microsoft Azure Active Directory を統合する </li><li>ディレクトリ コンポーネントを Azure に配置する </li><li>Azure IaaS のワークロードのドメイン サービス オプション </li></ul><br/>|
    

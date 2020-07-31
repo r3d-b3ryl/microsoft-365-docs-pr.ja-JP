@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化された電子メールを送信する方法について説明します。
-ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: f5184de55ce07d5e669e98afb6e627833071c4ba
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080029"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526878"
 ---
-# <a name="encrypt-or-label-your-sensitive-email"></a>機密メールを暗号化またはラベル付けする
+# <a name="encrypt-or-label-your-sensitive-email"></a>機密情報を暗号化またはラベル付けする
 
 データおよびキャンペーン情報は重要であり、機密であることがよくあります。 暗号化と機密情報のラベルを使用してこの機密情報を保護すると、電子メールの受信者は、必要な機密度で情報を扱うことができます。
 

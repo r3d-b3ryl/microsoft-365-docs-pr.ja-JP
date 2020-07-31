@@ -1,5 +1,5 @@
 ---
-title: 条件付きアクセスポリシーを設定する
+title: 条件付きアクセス ポリシーのセットアップ
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: MFA を要求し、Microsoft 365 for business の条件付きアクセスポリシーを設定する方法について説明します。
-ms.openlocfilehash: 3caca685d9a96434a0daa2736c322ac1a68b7feb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 917fb52eb5034c3dda28c277b9e86e04db6cac62
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635614"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527200"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>多要素認証を必要とし、条件付きアクセスポリシーを設定する
 
@@ -53,7 +54,7 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
 
 すべてのユーザーに2番目の形式の ID を使用してサインインするよう要求するには、次のようにします。
 
-1. 管理センターに移動し<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>て、[**セットアップ**] を選びます。
+1. 管理センターに移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> て、[**セットアップ**] を選びます。
 
 2. [セットアップ] ページで、[サインイン] の [**セキュリティで保護さ**れたカードの作成] で [**表示**] を選択します。
 
@@ -70,7 +71,7 @@ Microsoft では、これらのベースラインポリシーのすべてを有�
 
 ## <a name="set-up-baseline-policies"></a>ベースラインポリシーを設定する
 
-1. [Azure portal](https://portal.azure.com)に移動して、 **azure Active Directory** \>の**条件付きアクセス**に移動します。
+1. [Azure portal](https://portal.azure.com)に移動して、 **azure Active Directory**の \> **条件付きアクセス**に移動します。
     
     ベースラインポリシーはページに一覧表示されており、管理者と**エンドユーザー保護****を必要**とする手順が完了した後、 [mfa が必要](#require-mfa)であることがわかります。
 

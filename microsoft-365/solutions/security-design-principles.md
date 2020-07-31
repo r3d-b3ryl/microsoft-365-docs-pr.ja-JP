@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: eb8019efb13a13b27a67d541ae69ca6f30b35ed0
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160053"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522279"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Sail オーバーする可能性があるセキュリティ上の課題-1 つのアーキテクトの視点
 
@@ -80,7 +79,7 @@ Cybersecurity のバックグラウンドと経験が長いため、すぐに使
 
 |Resource   |詳細情報  |
 |---------|---------|
-|[自宅での作業をサポートするためのセキュリティチームの主なタスク](../security/top-security-tasks-for-remote-work.md)      | 在宅勤務中の労働者を突然サポートしている場合は、この記事を参考にして、セキュリティを迅速に向上させることができます。 ライセンスプランに基づく上位の推奨タスクが含まれています。    |
+|[自宅での作業をサポートするセキュリティ チームの主なタスク](../security/top-security-tasks-for-remote-work.md)      | 在宅勤務中の労働者を突然サポートしている場合は、この記事を参考にして、セキュリティを迅速に向上させることができます。 ライセンスプランに基づく上位の推奨タスクが含まれています。    |
 |[Microsoft 365 のビジネス上の意思決定者向けのセキュリティ](../security/Microsoft-365-security-for-bdm.md)    | より包括的な計画のための時間がある場合、この記事には、Microsoft 365 にまたがる推奨事項と、攻撃の範囲による優先順位が設定されています。 また、ライセンスとエリア (id、脅威の保護、監視など) での並べ替えに使用できるスプレッドシートも付属しています。  |
 |[Microsoft セキュリティアーキテクチャの推奨事項](https://docs.microsoft.com/security/compass/compass)    | セキュリティアーキテクトの場合は、id、ネットワーク、セキュリティの操作を含む、専門分野別に編成されたセキュリティ推奨事項を確認してください。   |
 |[マイクロソフトのセキュリティ運用に関する推奨事項](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|セキュリティ操作センター (SOC) をセットアップして実行するための Microsoft の推奨事項について説明します。 |
