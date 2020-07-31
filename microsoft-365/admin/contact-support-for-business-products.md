@@ -1,10 +1,10 @@
 ---
-title: ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ
+title: ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,40 +17,40 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: 国/地域別にリストされている電話番号、サービス リクエストのオンライン送信、または Microsoft Store にアクセスして、テクニカル サポートおよび課金サポートに問い合わせます。
+description: 国/地域にリストされている電話番号に電話をかける、またはサービスリクエストをオンラインで送信する、あるいは Microsoft Store に連絡して仮想カスタマーサポートから、技術および課金サポートを受けてください。
 feedback_system: None
-ms.openlocfilehash: 80fa10e01934e98f16fa36403268229409638d68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388247"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506311"
 ---
-# <a name="contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる - 管理者ヘルプ
+# <a name="ways-to-contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 
 ::: moniker range="o365-worldwide"
 
-## <a name="online-support"></a>[オンライン サポート](#tab/online)
+> [!IMPORTANT]
+> これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。 ビジネス管理者でない場合は、[こちらのサポートページ](https://support.microsoft.com/help/contactus)をご利用ください。
 
-サービス リクエストをオンラインで開始して時間を節約します。ソリューションの検索をお手伝い、またはエキスパートから電子メールまたは電話で連絡するよう手配いたします。[初期対応までの応答時間をご確認ください](https://go.microsoft.com/fwlink/p/?LinkId=518251)。
+まず、[サービスの現在の正常性を確認します](https://docs.microsoft.com/office365/enterprise/view-service-health)。 現在および過去の問題に関する詳細情報は、「<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">サービス正常性ダッシュボード</a>」で確認できます。 一覧にない問題が発生している場合は、次のいずれかの方法でサポートを受けることができます。
+
+## <a name="online-support"></a>オンライン サポート
+
+オンラインでサービス リクエストを開始すると時間を節約できます。 ここでは、解決策の検索やテクニカル サポーへの連絡をお手伝いします。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーが管理者ではないことを意味します。その場合は、「[Who has admin permissions in my business? (社内の管理者アクセス許可の所有者)](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。
 
 2. [**ヘルプが必要ですか?**] ボタンを選択します。 
 
-3. [**ヘルプが必要ですか?**] ウィンドウで、必要なヘルプの内容を入力し、[Enter] を押します。
+3. [**ヘルプが必要ですか?**] ウィンドウで、必要なヘルプの内容を入力し、[**Enter**] を押します。
 
 4. 問題が解決されない場合は、[**サポートに問い合わせる**] を選択します。
 
-5. 必要に応じて説明を入力し、自分の連絡先番号とメール アドレスを確認し、希望する連絡方法を選択し、[**連絡を希望する**] を選択します。 ご連絡を差し上げるまでにかかる予想時間は、[**ヘルプが必要ですか?**] ウィンドウに表示されます。
+5. 問題の説明を入力し、自分の連絡先番号とメール アドレスを確認し、希望する連絡方法を選択し、[**連絡を希望する**] を選択します。 ご連絡を差し上げるまでにかかる予想時間は、[**ヘルプが必要ですか?**] ウィンドウに表示されます。
 
-## <a name="phone-support"></a>[電話サポート](#tab/phone)
+## <a name="phone-support"></a>電話によるサポート
 
 課金サポートは、月曜日から金曜日の午前 9 時から午後 5 時 (オーストラリアでは午前 9 時から午後 6 時) に英語で提供されます。
 テクニカル サポートは 24 時間年中無休で英語で提供されます。
@@ -64,23 +64,17 @@ ms.locfileid: "44388247"
 
 - **英国にお住まいの方は、0800 032 6417 にお問い合わせください。**
 
-Microsoft 365 for business サポートの電話番号が上記にリストされていない場合は、以下のドロップダウン メニューを使用して国または地域を選択してください。
+### <a name="phone-numbers-for-other-countries"></a>その他の国の電話番号
+
+サポートの電話番号が上記にない場合は、下のドロップダウンメニューを使用して国または地域の番号を検索します。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-サービス リクエストを開く方法については、上記の [**オンライン サポート**] タブを選択してください。
+## <a name="virtual-support-from-the-microsoft-store"></a>Microsoft Store からの仮想サポート
 
-## <a name="in-store-support"></a>[ストアでのサポート](#tab/instore)
+Microsoft Store セールスおよびカスタマー サポートに問い合わせると、Answer Desk のエキスパートが Microsoft 365 の問題解決の手助けをいたします。
 
-該当の地域の Microsoft Store に問い合わせると、Answer Desk のエキスパートが Microsoft 365 の問題解決の手助けをいたします。
-
-1. [[Microsoft Store のスケジュール](https://go.microsoft.com/fwlink/?LinkID=2041482)] ページに移動し、[**Schedule an appointment (予約をする)**] を選択します。
-
-2. 地域を入力して検索を行い、お近くの Microsoft Store を見つけます。
-
-3. Microsoft Store を選択し、[**Schedule service appointment now**] (今すぐサービスの予約をする) を選択します。
-
----
+クイック ヘルプ リンクと電話番号については、「[Microsoft Store サポートへのお問い合わせ](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020)」ページを参照してください。
 
 ::: moniker-end
 
@@ -92,15 +86,15 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 
 21Vianet テクニカル サポート チームが運用する Office 365 は、21Vianet が運用している Office 365 に関連する問題のみについてトラブルシューティングを行います。お客様のネットワークで発生した問題が Office 365 サポートの範囲外である場合は、社内のネットワーク チームに支援を求めてください。
 
-### <a name="community-and-self-service-support-options"></a>コミュニティおよびセルフサービス サポート
+## <a name="community-and-self-service-support-options"></a>コミュニティおよびセルフサービス サポート
 
 セルフサービス サポートは 21Vianet が運用している Office 365 のすべてのお客様が利用できます。[Office 365 コミュニティ](https://go.microsoft.com/fwlink/p/?linkid=842838)では、トラブルシューティング用のツールやビデオ、ヘルプ用の記事やビデオ、およびフォーラムや Wiki などが利用できます。セルフヘルプ リソースの詳細については、「[21Vianet が運用している Office 365 の詳細](services-in-china/services-in-china.md)」を参照してください。
 
-### <a name="pre-sales-support"></a>販売前サポート
+## <a name="pre-sales-support"></a>販売前サポート
 
 21Vianet が運用している Office 365 の販売前サポートでは、サブスクリプションの特徴と利点、プランの比較、価格、ライセンスに関する支援を提供し、ビジネス ニーズに適したソリューションを見つけるお手伝いをします。また、販売前サポートでは、パートナーの紹介、購入、試用版のサインアップに関する支援も行います。月曜日から金曜日までの営業時間内に問い合わせることができます。販売前サポートには、テクニカル サポートと同じ電話番号を使ってアクセスできます。手順については、「[電話でのお問い合わせ](#contact-support)」を参照してください。
 
-### <a name="billing-and-subscription-management-support"></a>課金およびサブスクリプション管理のサポート
+## <a name="billing-and-subscription-management-support"></a>課金およびサブスクリプション管理のサポート
 
 課金およびサブスクリプション管理については、月曜日から金曜日までの中国の営業時間内 (北京時間) にオンラインまたは電話で問い合わせることができます。課金およびサブスクリプション管理のサポートには、テクニカル サポートと同じ電話番号とオンラインのサービス要求プロセスを使ってアクセスできます。サポートの電話番号は、21Vianet が運用している Office 365 ポータルに掲載されています。手順については、「[電話でのお問い合わせ](#contact-support)」を参照してください。
 
@@ -118,7 +112,7 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 
 - 有料版サブスクリプションの解約
 
-### <a name="technical-support"></a>テクニカル サポート
+## <a name="technical-support"></a>テクニカル サポート
 
 21Vianet が運用している Office 365 サブスクリプションのテクニカル サポートでは、基本的なインストール、セットアップ、および技術的な使用方法全般について支援します。次の表に、サポート内容の一例を示します。
 
@@ -130,7 +124,7 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 > [!NOTE]
 > 「[サポートへの問い合わせ](#contact-support)」でテクニカル サポートに連絡する方法を確認できます。テクニカル サポートには、サード パーティ製のサービスやアドインのトラブルシューティングは含まれていません。他のお客様からの回答については、「[コミュニティ](https://go.microsoft.com/fwlink/p/?linkid=842838)」を参照してください。
 
-### <a name="technical-support-case-handling"></a>テクニカル サポート ケースの処理
+## <a name="technical-support-case-handling"></a>テクニカル サポート ケースの処理
 
 21Vianet では、テクニカル サポート ケースを登録する際に、問題のタイプやお客様への影響を評価した上で、ケースに重大度レベルを割り当てます。次の表に、問題のタイプと重大度レベルの例を示します。
 
@@ -140,7 +134,7 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 | 重大度 B (高) | サービスは使用できるが、一部に不具合がある。ビジネスへの影響は重大でないため、業務時間中に対処することができる。個別のユーザー、顧客、またはサービスが部分的に影響を受ける。 | <ul><li>Outlook の [送信] ボタンの文字が正しく表示されない。</li> <li>EAC (Exchange 管理センター) からは設定できないが、Windows PowerShell からは設定できる。</li></ul> |
 | 重大度 C (重大でない) | ビジネスへの影響は軽微。問題は重要だが、顧客に対して提供しているサービスや生産性への大きな影響はない。個別のユーザーに部分的な影響が出ているが、別の方法が使用できる。 | <ul><li>ユーザーのパスワードを無期限に設定する方法。</li> <li>Exchange Online でユーザーが連絡先の情報を削除できない。</li></ul> |
 
-### <a name="technical-support-initial-response-times"></a>テクニカル サポートの初期応答時間
+## <a name="technical-support-initial-response-times"></a>テクニカル サポートの初期応答時間
 
 初期応答時間は、上記で説明した重大度レベルに基づいています。21Vianet カスタマー サービス チームは、重大度レベルに応じて適切なタイミングで調査をフォロー アップし、お客様とのコミュニケーションをとります。21 vianet では、適切なレベルでのお客様との共同作業も想定しています。
 
@@ -154,22 +148,22 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 
 <sup>2</sup> 重大度 A は、21Vianet と販売アカウント マネージャーを通じて高度なオンライン サービス契約を締結したお客様のみ使用できます。重大度 A はテクニカル サポートにのみ使用できます。課金およびサブスクリプション管理のサポートについては、最上位の重大度レベルは B となります。
 
-### <a name="technical-support-working-hours"></a>テクニカル サポートの稼働時間
+## <a name="technical-support-working-hours"></a>テクニカル サポートの稼働時間
 
 重要度 A: 24\*7 の継続的なサービス
 
 重大度 B/C: 毎日 9:00 - 24:00 (北京時間) です。
 
-### <a name="contact-support"></a>サポートに連絡
+## <a name="contact-support"></a>サポートに連絡
 
 > [!NOTE]
 > 支援付きサポート オプションでは、Office 365 サブスクリプションを利用している組織の管理者向けに限定されています。Office 365 を使用していても管理者でない場合には、コミュニティ フォーラムでサポートを受けるか、管理者へ問い合わせることができます。
 
-#### <a name="open-an-online-request"></a>オンライン リクエストの登録
+### <a name="open-an-online-request"></a>オンライン リクエストの登録
 
 サービス リクエストをオンラインで開始すると時間を節約できます。Microsoft 365 管理センターで、**[サポート]** \> **[新しいサービス リクエスト]** を選択してください。
 
-#### <a name="call-support"></a>電話でのお問い合わせ
+### <a name="call-support"></a>電話でのお問い合わせ
 
 サポートに電話します。オンライン リクエストで問題が発生した場合は、(86) 400-089-0365 で電話サポートが受けられます。
 
@@ -177,7 +171,7 @@ Microsoft 365 for business サポートの電話番号が上記にリストさ�
 
 21Vianet では、適切な専門スタッフによる迅速なテクニカル サポートがクラウド サービスの重要な要素であると考えています。同様に、お客様の IT 部門もユーザー サポートにおいて非常に重要な役割を担っていると理解しています。
 
-#### <a name="administrator-roles-and-responsibilities"></a>管理者の役割と責任
+### <a name="administrator-roles-and-responsibilities"></a>管理者の役割と責任
 
 組織内では、管理者の役割を持つユーザーだけが 21Vianet が運営する Office 365 ポータルの [管理] セクションにアクセスし、Office 365 のサービス リクエストについて 21Vianet と直接やりとりすることを許可されています。
 
@@ -203,7 +197,7 @@ Office 365 では、複数の異なる役割を持つ複数のタイプの管理
 
 管理者はお客様のユーザーに対して初期の支援を提供する必要があります。ただし、セルフサービス サポート リソースを利用して問題を解決できない場合、管理者は[サポートに問い合わせる](#contact-support)必要があります。
 
-#### <a name="21vianet-support-role"></a>21Vianet サポートの役割
+### <a name="21vianet-support-role"></a>21Vianet サポートの役割
 
 21Vianet サポートの役割とは:
 
@@ -221,11 +215,11 @@ Office 365 では、複数の異なる役割を持つ複数のタイプの管理
 
 - 調査を通じてサービスの改善に関するカスタマー フィードバックを継続的に収集します。
 
-### <a name="feature-availability"></a>機能の可用性
+## <a name="feature-availability"></a>機能の可用性
 
 さまざまな Office 365 のプランで利用できる機能を確認するには、「[Office 365 サービスの説明](https://go.microsoft.com/fwlink/p/?linkid=846911)」を参照してください。
 
-### <a name="follow-us-on-wechat"></a>WeChat でフォローしてください
+## <a name="follow-us-on-wechat"></a>WeChat でフォローしてください
 
 この QR コードをスキャンして WeChat でフォローし、21Vianet が運用している Office 365 の最新の更新プログラムを取得します。
 
@@ -242,7 +236,7 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 > [!NOTE]
 > 以下のサポート オプションはすべて Microsoft Cloud Germany に関するものです。ユーザーが Microsoft サポートに問い合わせたときに提供したデータを Microsoft がどのように使用するかについては、「[プライバシーに関する声明](https://go.microsoft.com/fwlink/p/?LinkId=512132)」をご覧ください。
 
-### <a name="get-assisted-support"></a>支援付きサポートを受ける
+## <a name="get-assisted-support"></a>支援付きサポートを受ける
 
 支援付きサポート オプションでは、Office 365 Germany サブスクリプションを利用している組織の管理者向けに限定されています。Office 365 Germany を職場または学校で使用していても管理者でない場合には、コミュニティ フォーラムでサポートを受けるか、管理者または IT 部門へ問い合わせることができます。
 
@@ -252,10 +246,10 @@ Office 365 Germany の管理者は、知識の豊富なサポート担当者に�
 
 | 地域 | 電話番号 | 時間 |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ドイツ | 0800 589 2330 | 課金サポート:  ドイツ語: 月 - 金 9 時 - 5 時ベルリン、英語: 月 - 金 9 時 - 5 時ベルリン。テクニカル サポート: ドイツ語: 24 時間年中無休、英語: 24 時間年中無休。他の電話番号: 069 380 789 305 (国内通話料金がかかります) |
-| 欧州経済地域内の他のすべての市場 | +49 69 380 789 305 | 課金サポート:  ドイツ語: 月 - 金 9 時 - 5 時ベルリン (UTC+1)、英語: 月 - 金 9 時 - 5 時ベルリン (UTC+1)。テクニカル サポート:  ドイツ語: 24 時間年中無休、英語: 24 時間年中無休。電話サポートはドイツへの国際電話で受けられます。 国際通話料金が適用されます。 管理センター経由でサポート チケットを送信すると、通話料金がかからずにすみます。 |
+| ドイツ | 0800&nbsp;589&nbsp;2330 | 課金サポート: <ul><li>ドイツ語: ベルリン時間 月～金 9 時～ 5 時</li><li>英語: ベルリン時間 月～金 9 時～ 5 時</li></ul>テクニカル サポート: <ul><li>ドイツ語: 24 時間年中無休</li><li>英語: 24 時間年中無休</li></ul>代替電話番号: 069 380 789 305 (国内通話料金がかかります) |
+| 欧州経済地域内の他のすべての市場 | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | 課金サポート: <ul><li>ドイツ語: ベルリン時間 (UTC+1) 月～金 9 時～ 5 時</li><li>英語: ベルリン時間 (UTC+1) 月～金 9 時～ 5 時</li></ul>テクニカル サポート: <ul><li>ドイツ語: 24 時間年中無休</li><li>英語: 24 時間年中無休</li></ul>電話サポートは、ドイツに国際電話をおかけいただくと受けることができます。 国際通話料金が適用されます。 管理センター経由でサポート チケットを送信すると、通話料金がかからずにすみます。 |
 
-### <a name="let-our-community-help"></a>コミュニティの活用
+## <a name="let-our-community-help"></a>コミュニティの活用
 
 [Microsoft 365 for business コミュニティ フォーラム](https://go.microsoft.com/fwlink/p/?LinkId=518605)を検索して、既知の問題や最近の傾向に関する話題を検索したり、新しい質問を投稿したりすることもできます。コミュニティ フォーラムはユーザーの問題を解決できるよう訓練を受けた Microsoft サポート エージェントが監視しています。
 
