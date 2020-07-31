@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 機密ラベルを作成する場合、ドキュメントまたは電子メールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 571d1b3c9f12594c039a874eb5163e1191fd8fe9
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503028"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527827"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>機密ラベルをコンテンツに自動的に適用する
 
@@ -56,8 +56,8 @@ ms.locfileid: "46503028"
     SharePoint と OneDrive の自動ラベル付けに固有:
     - Word、PowerPoint、Excel の Office ファイルがサポートされています。
     - テナント内で 1 日あたり最大 25,000 個の自動的にラベル付けされたファイル。
-    - すべてのポリシー全体で最大 10 のサイト コレクション。
-    - テナント全体で最大 10 のポリシー。
+    - 自動ラベル付けポリシーごとに最大 10 個のサイトコレクション。
+    - テナント全体で最大 10 個の自動ラベル付けポリシー。
     - シミュレーション モードの場合、およびラベルが適用される場合、自動ラベル付けポリシーの結果として、変更、変更者、変更日の既存の値は変更されません。
     - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) は、機密ラベルを作成したユーザーです。
 
