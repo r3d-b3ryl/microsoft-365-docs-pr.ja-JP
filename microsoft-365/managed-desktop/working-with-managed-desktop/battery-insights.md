@@ -1,19 +1,22 @@
 ---
-title: バッテリインサイト
+title: バッテリーの分析情報
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: f339fc98ea94c291c533045e9906f626f4b74e2a
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170597"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529841"
 ---
-# <a name="battery-insights"></a>バッテリインサイト
+# <a name="battery-insights"></a>バッテリーの分析情報
 このビューでは、Microsoft マネージドデスクトップデバイスの電力、バッテリ、アプリの使用状況の測定基準が提供されます。 このような目的で、アプリが実行中で、フォーカスがある場合、アプリは "使用中" と見なされます。
 
 利用状況データを表示するには、[**バッテリ**] タブを選択します。
@@ -38,7 +41,7 @@ ms.locfileid: "42170597"
  各アプリについて、色分けされたセグメントは、このカテゴリにおけるアプリのエネルギー使用の配分を示しています。
 
 - CPU
-- 表示
+- ディスプレイ
 - ネットワーク
 - その他
 

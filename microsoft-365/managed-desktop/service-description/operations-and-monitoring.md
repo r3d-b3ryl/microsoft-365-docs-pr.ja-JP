@@ -1,7 +1,7 @@
 ---
 title: Microsoft マネージドデスクトップの操作と監視
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6e543219bd6a7667febadcdc8f3cff6ab705b8d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632015"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529447"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft マネージドデスクトップの操作と監視
 
@@ -79,7 +81,7 @@ Microsoft Managed Desktop service は、microsoft クラウドインスタンス
 
 オンプレミスの製品の場合、組織では、セットアップを管理する責任と、構成および運用のアクティビティを行います。
 
-分類項目 |    Microsoft は | お客様は
+カテゴリ |    Microsoft は | お客様は
 --- | --- | ---
 ネットワーク (プロキシ、パケット検査、VPN)  | お客様との間で、ビジネスユーザーに対するリスクを最小限に抑えるためのアドバイスと計画を行います。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。
 サービス アカウント |-資格情報を実装し、安全に保存および管理します。<br> -許可されていないアクセスまたはこれらの資格情報の使用をセキュリティ運用チームに通知します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-ポリシー、多要素認証、条件付きアクセス、またはアプリケーション展開を Microsoft 管理されたデスクトップサービスアカウントに割り当てません。<br>-パスワードをリセットしたり、資格情報を使用したりしません。<br>-これらのサービスアカウントに関連する、不審なアクティビティが Intune または Azure の監査ログで検出された場合は、Microsoft マネージドデスクトップ操作に対する重大度 C サポート要求を開きます。

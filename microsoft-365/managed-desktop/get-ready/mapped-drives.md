@@ -1,22 +1,24 @@
 ---
 title: Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 description: 確認のための重要な手順
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280175"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530177"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 
-多くのエンタープライズ環境には、マップされたドライブに対する従来の要件があります。これにより、ユーザーまたはチームは、ファイルを共有および保存したり、オンプレミスのアプリケーションを使用したりできます。 Microsoft では、マップされたドライブを Microsoft マネージドデスクトップと共に使用することはお勧めしません。 代わりに、yor ファイルアクセスソリューションを次のように改革することをお勧めします。
+多くのエンタープライズ環境には、マップされたドライブに対する従来の要件があります。これにより、ユーザーまたはチームは、ファイルを共有および保存したり、オンプレミスのアプリケーションを使用したりできます。 Microsoft では、マップされたドライブを Microsoft マネージドデスクトップと共に使用することはお勧めしません。 代わりに、ファイルアクセスソリューションを次のように改革することをお勧めします。
   
 - 個別のユーザーによって使用されるマップされたドライブを OneDrive for Business に移行します。 
 - Teams で使用されるマップされたドライブを移行して、ファイルを SharePoint Online に共有します。 
@@ -34,7 +36,7 @@ ms.locfileid: "42280175"
 - これらのファイル共有場所へのアクセスを必要とするユーザーグループ 
 - 割り当てる必要がある特定のドライブ文字 (必要な場合)
 
-次に例を示します。
+例:
 
 | ドライブ文字 | UNC パス | ユーザーグループ |
 |--------------|----------|------------|

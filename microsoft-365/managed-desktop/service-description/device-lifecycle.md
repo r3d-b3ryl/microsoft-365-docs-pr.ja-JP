@@ -1,16 +1,19 @@
 ---
 title: Microsoft マネージドデスクトップ製品のライフサイクル
 description: このトピックでは、Microsoft マネージドデスクトップで使用されるデバイスの仕様を示します。
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b65724a1eee35149d473fb69ff646b5ef5751b2c
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 0dee95743e0a504330ebbcc69749e41cdc96da39
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583174"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529949"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft マネージドデスクトップ製品のライフサイクル
 

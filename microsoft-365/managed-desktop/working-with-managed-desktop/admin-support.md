@@ -1,19 +1,22 @@
 ---
-title: Microsoft マネージドデスクトップの管理者サポート
+title: Microsoft マネージド デスクトップの管理者サポート
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c3137c25de9f8fe941f62e5c53b1006c5009e222
-ms.sourcegitcommit: 59b006f8e82d1772cae2029f278a59ae8a106736
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: a29fa11e43e9be5c8175118ad5b54817c463e929
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42266093"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529901"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの管理者サポート
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 
 Microsoft マネージドデスクトップの管理ポータルを使用して、サポートチケットまたはフィードバック要求を Microsoft に送信できます。 サポート要求は常にフィードバック送信に優先されます。 サポート要求は、「[重要度の定義」テーブル](#sev)で説明されているように、重要度に基づいてトリアージおよび管理されます。 フィードバックが確認され、要求された応答があります。 
 

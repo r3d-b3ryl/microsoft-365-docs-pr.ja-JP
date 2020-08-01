@@ -16,12 +16,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+- m365solution-identitydevice
+ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222329"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530273"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -33,7 +34,7 @@ Microsoft は、組織によっては独自の環境要件や複雑さがある�
 
 ## <a name="intended-audience"></a>対象ユーザー
 
-これらの推奨事項は、 [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)と[microsoft Enterprise Mobility + Security](https://microsoft.com/ems)に精通している企業のアーキテクトおよび IT 担当者を対象としています。これには、azure Active Directory (Identity)、microsoft Intune (デバイス管理)、azure Information protection (データ保護) などが含まれます。
+これらの推奨事項は、 [Office 365](https://docs.microsoft.com/microsoft-365/admin)と[microsoft Enterprise Mobility + Security](https://microsoft.com/ems)に精通している企業のアーキテクトおよび IT 担当者を対象としています。これには、azure Active Directory (Identity)、microsoft Intune (デバイス管理)、azure Information protection (データ保護) などが含まれます。
 
 ### <a name="customer-environment"></a>お客様の環境
 
@@ -45,7 +46,7 @@ Enterprise Mobility + Security E5 ライセンスを持っていない組織で�
 
 ### <a name="caveats"></a>べき
 
-お客様の組織は、これらの推奨される構成から分岐するポリシーを適用する必要がある特定の推奨事項を含む、規制またはその他のコンプライアンス要件の対象となる場合があります。 これらの構成では、これまで利用できなかった使用状況コントロールが推奨されます。 これらのコントロールは、セキュリティと生産性との間でバランスがあると考えられるため、お勧めします。  
+お客様の組織は、これらの推奨される構成から分岐するポリシーを適用する必要がある特定の推奨事項を含む、規制またはその他のコンプライアンス要件の対象となる場合があります。 これらの構成では、これまで利用できなかった使用状況コントロールが推奨されます。 これらのコントロールは、セキュリティと生産性のバランスがあると考えられるため、お勧めします。  
 
 さまざまな組織保護要件に対応できるようにしていますが、すべての要件を考慮することも、組織のすべての特有の要素を考慮することもできません。
 
@@ -57,7 +58,7 @@ Enterprise Mobility + Security E5 ライセンスを持っていない組織で�
 
 - **ベースライン保護**: データを保護するための最小限の標準と、データにアクセスする id およびデバイスを設定することをお勧めします。 これらのベースライン推奨事項に従って、多くの組織のニーズを満たす強力な既定の保護を提供することができます。
 - **機密保護**: 一部のお客様は、より高いレベルで保護する必要があるデータのサブセットを持っているか、すべてのデータをより高いレベルで保護する必要がある場合があります。 Microsoft 365 環境のすべてまたは特定のデータセットに対して、強化された保護を適用することができます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。  
-- 厳しく**規制**されている組織によっては、非常に多くのデータ、consititutes 取引機密、または規制データがある場合があります。 Microsoft は、ID とデバイスの保護を追加するなど、組織がそのような要件を満たすための機能を提供しています。
+- 厳しく**規制**されている組織の中には、非常に多くのデータがあり、取引の機密を構成したり、規制されたデータが含まれている場合があります。 Microsoft は、ID とデバイスの保護を追加するなど、組織がそのような要件を満たすための機能を提供しています。
 
 ![セキュリティコーン-特定のお客様 > 一部のお客様 >。 特定のアプリケーションに対する幅広いアプリケーション](../media/M365-idquality-threetiers.png)
 
@@ -94,7 +95,7 @@ Microsoft 365 Enterprise は大規模な組織向けに設計されており、O
 
 Azure AD には、id 管理機能の完全なスイートが用意されています。 アクセスを保護するには、次の機能を使用することをお勧めします。
 
-- **[セルフサービスによるパスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: 管理者が制御できる複数の認証方法を確認することにより、ユーザーが自分のパスワードをセキュリティで保護し、ヘルプデスクの介入なしで再設定できるようにします。
+- **[セルフサービスによるパスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: 管理者が制御できる複数の認証方法を確認することにより、ユーザーがパスワードを安全に再設定し、ヘルプデスクの介入を行わないようにします。
 
 - **[多要素認証 (mfa)](/azure/active-directory/authentication/concept-mfa-howitworks)**: mfa では、ユーザーパスワード、Microsoft Authenticator アプリまたは電話からの通知など、2つの形式の認証を提供する必要があります。 MFA は、盗んだ id を使用して環境にアクセスできるリスクを大幅に削減します。
 
@@ -132,7 +133,7 @@ Pc に推奨されるクライアント環境として、Windows 10 と Microsof
 
 次の表では、3つの保護層でこれらの機能を使用するための推奨事項を要約しています。
 
-|保護メカニズム|基準|機密|高度な規制|
+|保護メカニズム|基準|機密|厳しく規制|
 |:-------------------|:-------|:--------|:---------------|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を強制する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|

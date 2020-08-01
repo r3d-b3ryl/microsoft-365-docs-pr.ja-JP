@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: Microsoft 365 for business をセットアップするために必要な作業について説明します。
-ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Microsoft 365 for business に移行する際の要件と考慮事項について説明します。
+ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778951"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529662"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画する
 
 この記事は、Microsoft 365 for business プランに加入しているユーザーを対象としています。
   
-組織を Microsoft 365 に移行する前に、決定しておく必要があるいくつかの事柄と、手元に置いておく必要がある情報があります。
+組織を Microsoft 365 に移行する前に、満たす必要のある要件、必要な情報、必要な情報、および決定しなければならないことがあります。
+
+
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>セットアップウィザードを実行する前に手元にある情報
 

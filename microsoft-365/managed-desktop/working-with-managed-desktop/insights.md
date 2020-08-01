@@ -1,17 +1,20 @@
 ---
 title: 分析情報を操作する
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250427"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529769"
 ---
 # <a name="work-with-insights"></a>分析情報を操作する
 
@@ -46,12 +49,12 @@ Microsoft 365 管理センターからこれらのビューにアクセスする
 
 [信頼性の分析](reliability-insights.md)について説明します。
 
-## <a name="battery-insights"></a>バッテリインサイト
+## <a name="battery-insights"></a>バッテリーの分析情報
 このビューには、環境内のデバイスの電力消費量と予想されるバッテリ寿命に関する情報が表示されます。 この情報を表示するには、[**バッテリ**] タブを選択します。
 
 [詳細につい](battery-insights.md)ては、「」を参照してください。
 
-## <a name="windows-security-update-insights"></a>Windows セキュリティ更新プログラムインサイト
+## <a name="windows-security-update-insights"></a>Windows セキュリティ更新プログラムの分析情報
 
 このビューには、Microsoft マネージドデスクトップデバイスのセキュリティ更新プログラムの状態に関する情報が表示されます。 この情報を表示するには、[ **Windows セキュリティ**] タブを選択します。
 

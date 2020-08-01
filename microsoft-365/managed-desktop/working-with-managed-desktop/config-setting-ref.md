@@ -1,18 +1,20 @@
 ---
 title: Microsoft マネージドデスクトップの構成可能な設定のリファレンス
 description: Microsoft マネージドデスクトップで構成可能な設定のカテゴリを設定する
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632985"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529363"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>構成可能な設定のリファレンス-Microsoft マネージドデスクトップ
 

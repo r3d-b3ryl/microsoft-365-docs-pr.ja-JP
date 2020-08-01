@@ -1,19 +1,22 @@
 ---
-title: Microsoft マネージドデスクトップテクノロジ
+title: Microsoft マネージド デスクトップのテクノロジ
 description: このトピックでは、Microsoft マネージドデスクトップで使用されるテクノロジとアプリの一覧を示します。
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8a86220e7fcfe4c2e788b28842c77d238d98fda4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1f82c339e8cbe4426c87eae045107d26201b0025
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636198"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530021"
 ---
-# <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージドデスクトップテクノロジ
+# <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージド デスクトップのテクノロジ
 
 このトピックでは、Microsoft マネージドデスクトップで使用されるテクノロジとアプリの一覧を示します。
 

@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046330"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529399"
 ---
 # <a name="deploy-apps-to-devices"></a>アプリをデバイスに展開する
 Microsoft Managed Desktop へのオンボードの一部には、ユーザーのデバイスへのアプリの追加と展開が含まれます。 Microsoft マネージドデスクトップポータルを使用している場合は、アプリを追加して展開することができます。 
@@ -58,7 +61,7 @@ Microsoft Store for Business にサインアップしていない場合は、ア
 4. [製品の詳細] で、[**アプリの取得**] を選択します。 Microsoft Store では、組織の**製品**にアプリが追加されます。
 
 **ビジネス向けに Intune と Microsoft Store 間の同期を強制するには**
-1. テナントのために Intune 管理者またはグローバル管理者として[Azure Portal](https://portal.azure.com/)にサインインします。
+1. テナントのために Intune 管理者またはグローバル管理者として[Azure portal](https://portal.azure.com/)にサインインします。
 2. [**すべてのサービス > Intune**] を選択します。 Intune は、[監視 + 管理] セクションにあります。
 3. [Intune] ウィンドウで、[**クライアントアプリ**] を選択し、[**ビジネス向け Microsoft Store**] を選択します。
 4. [**有効**] を選択して、Microsoft Store for Business アプリを Intune と同期します。

@@ -1,17 +1,20 @@
 ---
 title: サービス プランの例外
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 826710bf59acd88494adf1f154e5657d1e039af7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636186"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529937"
 ---
 # <a name="exceptions-to-the-service-plan"></a>サービス プランの例外
 
@@ -29,7 +32,7 @@ Microsoft マネージドデスクトップは、合わせデバイスリスト�
 |ハードウェアまたはソフトウェアのドライバー     |   デバイスドライバー。[アプリケーション要件](mmd-app-requirements.md)による制限      |
 |ポリシー     | 管理対象デバイスのエンタープライズ設定用の Windows 10 または Microsoft 365 アプリ        |
 |デバイス     | Microsoft マネージドデスクトップ[デバイスリスト](device-list.md)にないデバイス        |
-|Other     |  他の領域でカバーされていないもの       |
+|その他     |  他の領域でカバーされていないもの       |
  
 ## <a name="request-an-exception"></a>例外を要求する
 

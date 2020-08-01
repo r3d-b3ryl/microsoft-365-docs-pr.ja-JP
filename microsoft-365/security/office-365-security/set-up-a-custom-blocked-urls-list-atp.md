@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection を使用して、組織でブロックされている Url の一覧を設定する方法について説明します。
-ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617266"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533813"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、ブロックされたカスタムの Url リストを設定する
 
@@ -84,6 +84,10 @@ URL をリストに追加するときは、次の点に注意してください�
 |`https://contoso.com/a`|サイト `https://contoso.com/a` をブロックしますが、`https://contoso.com/a/b` のような追加のサブパスはブロックしません|
 |`https://contoso.com/a*`|サイト `https://contoso.com/a`、`https://contoso.com/a/b` のような追加のサブパスをブロックします|
 |`https://toys.contoso.com*`|サブドメイン (この場合は「toys」) をブロックしますが、他のドメイン URL (`https://contoso.com` や `https://home.contoso.com` など) のクリックを許可します。|
+
+
+> [!NOTE]
+> 既定では、Office 365 ATP Safe Links の既定のポリシーでは、ブロックされる URL の一覧には、500の Url のみを追加できます。
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>組織の特定のユーザーに対して例外を定義する方法
 

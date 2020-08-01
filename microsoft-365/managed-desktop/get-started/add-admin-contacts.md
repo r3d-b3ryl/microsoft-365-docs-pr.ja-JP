@@ -1,17 +1,20 @@
 ---
 title: 管理ポータルで管理者の連絡先を追加および確認する
 description: フォーカスされている領域ごとに、連絡先の情報をお伝えください。
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085904"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529805"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>管理ポータルで管理者の連絡先を追加および確認する
 
@@ -54,7 +57,7 @@ IT ヘルプデスク | サポートスタッフが Microsoft マネージドデ
 
     ![選択されている上部付近のサポートメニュー、管理者の連絡先](../../media/admincontacts.png)
 
-3. [**追加**] を選択します。
+3. **[追加]** を選択します。
 
     ![管理ポータル、[追加] ボタン、[エクスポートと更新] の左側に](../../media/adminadd.png)
 
@@ -69,8 +72,8 @@ IT ヘルプデスク | サポートスタッフが Microsoft マネージドデ
 1. 管理ポータルで管理者の連絡先を追加および確認する (このトピック)
 2. [条件付きアクセスを調整する](conditional-access.md)
 3. [ライセンスを割り当てる](assign-licenses.md)
-4. [デバイスに Intune ポータルサイトをインストールする](company-portal.md)
+4. [Intune ポータル サイトをデバイスにインストールする](company-portal.md)
 5. [Enterprise State Roaming を有効にする](enterprise-state-roaming.md)
-6. [Microsoft マネージドデスクトップデバイスをセットアップする](set-up-devices.md)
+6. [Microsoft マネージド デスクトップのデバイスをセットアップする](set-up-devices.md)
 7. [ユーザーがデバイスを使えるようにする](get-started-devices.md)
 8. [アプリをデバイスに展開する](deploy-apps.md)

@@ -1,18 +1,20 @@
 ---
 title: よく寄せられる質問
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b7acc4a145f4eda34a30bfd5ba83e05869254046
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d38414aed1270c239c9e8075a654c29d875b7a69
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390744"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529722"
 ---
 # <a name="faq-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのよくあるご質問
 

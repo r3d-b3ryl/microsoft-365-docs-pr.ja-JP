@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430437"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529757"
 ---
 # <a name="getting-help-for-end-users"></a>エンド ユーザーのヘルプ
 
@@ -44,7 +47,7 @@ ms.locfileid: "45430437"
 
 これらの前提条件を確認しても、[ヘルプを見る] アプリが動作していない場合は、IT 管理者として[サポートの要求](admin-support.md)をファイルする必要があります。
 
-## <a name="phone-support"></a>電話サポート
+## <a name="phone-support"></a>電話によるサポート
 
 Microsoft マネージドデスクトップデバイスを使用しているエンドユーザーも、通話可能な無料電話番号へのアクセス権を持っています。 これは、ヘルプが利用できない場合に使用することを目的としています。 たとえば、デバイスにサインインできない場合や、デバイスが壊れている場合などです。 電話サポートの電話番号は次のとおりです。
 

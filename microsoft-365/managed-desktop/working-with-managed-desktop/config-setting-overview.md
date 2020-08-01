@@ -5,16 +5,18 @@ keywords: Microsoft マネージドデスクトップ、Microsoft 365、サー�
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d8ebe4519d169db5500c55a3337836ca2d0986c0
-ms.sourcegitcommit: 427c6459614d58f6ef7c74354ae1816423e22323
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1af320ee6151036000e4e8c6fedc4d9152411283
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35390724"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530237"
 ---
-# <a name="configurable-settings---microsoft-managed-desktop"></a>構成可能な設定-Microsoft マネージドデスクトップ
+# <a name="configurable-settings---microsoft-managed-desktop"></a>構成可能な設定 - Microsoft マネージド デスクトップ
 
 Microsoft マネージドデスクトップは、Microsoft マネージドデスクトップによって管理されるすべてのデバイスに適用される設定とポリシーを展開します。 詳細については、「[デバイスの構成](../service-description/device-policies.md)」を参照してください。
 
@@ -41,7 +43,7 @@ Microsoft マネージドデスクトップの構成可能な設定を使用す�
 
 各設定カテゴリは、独自にカスタマイズして展開することができます。 複数の設定カテゴリに変更を同時に展開することはできますが、設定カテゴリに一度に展開できるのは一度に1つだけです。
 
-次に例を示します。
+例:
 - デスクトップの背景画像と信頼済みサイトへの変更は、それぞれ独自の展開として同時に展開することができます。 
 - 2つの展開を同時にブラウザー開始ページに展開することはできません。 最新の展開では、進行中の以前の展開が停止されます。
 
@@ -71,6 +73,6 @@ Microsoft Managed Desktop 管理ポータルで変更を構成し、ステージ
 
 詳細については、「[構成可能な設定を展開および追跡](config-setting-deploy.md)する」を参照してください。
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他のリソース
 - [構成可能な設定のリファレンス](config-setting-ref.md) 
 - [構成可能な設定を展開する](config-setting-deploy.md) 
