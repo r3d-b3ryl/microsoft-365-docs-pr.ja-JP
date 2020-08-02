@@ -1,0 +1,22 @@
+- name: コンテンツの概要
+  items:
+    - name: ドキュメント理解の概要
+      href: document-understanding-overview.md
+    - name: フォーム処理の概要
+      href: form-processing-overview.md
+    - name: ドキュメントの理解とフォーム処理モデルの違い
+      href: difference-between-document-understanding-and-form-processing-model.md
+    - name: コンテンツセンターを作成する
+      href: create-a-content-center.md
+    - name: 分類子を作成する
+      href: create-a-classifier.md
+    - name: 抽出器を作成する
+      href: create-an-extractor.md
+    - name: モデルを適用する
+      href: apply-a-model.md
+    - name: フォーム処理モデルを作成する
+      href: create-a-form-processing-model.md
+- name: セットアップの概要
+  items:
+    - name: コンテンツの理解を設定する
+      href: set-up-content-understanding.md

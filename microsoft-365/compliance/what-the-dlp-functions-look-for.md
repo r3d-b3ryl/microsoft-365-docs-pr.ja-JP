@@ -1,5 +1,5 @@
 ---
-title: DLP 関数の検索対象
+title: データ損失防止 (DLP) 関数の検索対象
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 定義済みの機密情報の種類がどのように機能するかを理解するために、データ損失防止 (DLP) 関数がどのような意味を持つかを説明します。
-ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: データ損失防止 (DLP) 関数の検索方法について説明します。
+ms.openlocfilehash: ef87be7dde83b1e5ba12456e7801e0554bceb6ea
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819277"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536312"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 関数の検索対象
 
 データ損失防止 (DLP) には、クレジットカード番号、EU デビットカード番号などの機密情報の種類が含まれています。これは、DLP ポリシーで使用する準備ができています。 これらの機密情報の種類では、特定のパターンが検索され、適切な書式設定とチェックサムを適用し、関連するキーワードまたはその他の情報を検索することによって、corroborate します。 この機能の一部は、内部機能によって実行されます。 たとえば、クレジットカード番号の機密情報の種類では、有効期限として書式設定された日付を検索するために関数を使用しています。これは、corroborate がクレジットカード番号であることを示すために役立ちます。
   
-このトピックでは、定義済みの機密情報の種類がどのように機能するかを理解するために、これらの関数がどのようなものかを説明します。 詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。
+この記事では、定義済みの機密情報の種類のしくみを理解するために役立つ関数について説明します。 詳細については、「[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」を参照してください。
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -61,7 +61,7 @@ ms.locfileid: "44819277"
     
 ## <a name="func_eu_date"></a>Func_eu_date
 
-この関数は、E.U. でよく使用される形式で日付を検索します。 (米国以外の場所)。 これには、"日/月/年"、"年月日"、"day month" の形式が含まれます。 月の名前または省略形は、大文字と小文字を区別しません。
+この関数は、E.U. でよく使用される形式で日付を検索します。 (米国以外の場所) ("day/月/年"、"日-月"、"月の年" など)。 月の名前または省略形は、大文字と小文字を区別しません。
   
 例:
   
@@ -183,7 +183,7 @@ ms.locfileid: "44819277"
     
   - januari、februari、maart、エイプリル、mei、juni、juli、augustus、9月、ocktober、10月、11月、12月
     
-  - 1月1日6月 (2001 年11月) (oct) 7 月7日9月 | 8 月7日 (oct)
+  - jan 2 月9日9月 (9 月) (9 月7日)
     
 ## <a name="func_expiration_date"></a>Func_expiration_date
 
@@ -201,7 +201,7 @@ ms.locfileid: "44819277"
     
 次の形式では、YY または YYYY がサポートされています。
   
-- 月-YYYY--たとえば、のようになります。2010または2010または1月10日または1月10日
+- 月--2010 または 2010 1 月-または Jan-10 または Jan-10 または1月10日
     
 - 月 YYYY--たとえば、' january 2010 ' または ' Jan 2010 ' または ' Jan 10 ' または ' Jan 10 ' のようになります。
     
@@ -219,7 +219,7 @@ ms.locfileid: "44819277"
     
 ## <a name="func_us_address"></a>Func_us_address
 
-この関数は、米国の都道府県名または郵便省略形の後に、郵便番号で使用されるのと同様に、有効な郵便番号を検索します。 郵便番号は、米国の州名または略語に関連付けられている正しい zip コードのいずれかである必要があります。 米国の都道府県名と郵便番号は、句読点または文字で区切ることはできません。
+この関数は、米国の都道府県名または郵便番号の後に有効な郵便番号を検索します。その後、郵便番号と同じように使用できます。 郵便番号は、米国の州名または略語に関連付けられている正しい zip コードのいずれかである必要があります。 米国の都道府県名と郵便番号は、句読点または文字で区切ることはできません。
   
 例:
   

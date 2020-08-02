@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7eb19698cc3dd2d56e05dfbca8759de178f3fc2a
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229417"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536322"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
-[カスタムの機密情報の種類](custom-sensitive-info-types.md) は、機密情報の不注意または不適切な共有を防ぐために使用されます。 管理者は  [セキュリティー/コンプライアンス センター](create-a-custom-sensitive-information-type.md) または [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)  を使用して、パターン、証拠 ( *従業員*、 *バッジ*、 *ID*などのキーワード)、文字の近接性 (特定のパターンの文字に証拠がどれほど近接しているか)、および信頼レベルに基づいてカスタムの機密情報の種類を定義できます。 このようなカスタムの機密情報の種類は、多くの組織のビジネス ニーズを満たします。
+[カスタムの機密情報の種類](custom-sensitive-info-types.md) は、機密情報の不注意または不適切な共有を防ぐために使用されます。 管理者はセキュリティ/コンプライアンス センターまたは PowerShell を使用して、パターン、証拠 ( *従業員*、 *バッジ*、 *ID* などのキーワード)、文字の近接性 (特定のパターンの文字に証拠がどれほど近接しているか)、および信頼レベルに基づいてカスタムの機密情報の種類を定義できます。 このようなカスタムの機密情報の種類は、多くの組織のビジネス ニーズを満たします。
 
 しかし、汎用的なパターンのみを使用するのではなく、正確なデータ値を使用するカスタムの機密情報の種類が必要な場合はどうでしょう。 Exact Data Match (EDM) ベースの分類では、次の目的で設計されたカスタムの機密情報の種類を作成できます。
 
@@ -51,6 +51,16 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance 
 - Microsoft E5/A5 Information Protection and Governance
+
+## <a name="portal-links-for-your-subscription"></a>サブスクリプションのポータルリンク
+
+
+|ポータル  |世界中の GCC  |GCC-High  |DOD  |
+|---------|---------|---------|---------|
+|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
+|Microsoft 365 セキュリティ センター     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
+|Microsoft 365 コンプライアンス センター     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
+
 
 ## <a name="the-work-flow-at-a-glance"></a>ワークフローの概要
 
@@ -100,7 +110,7 @@ EDM ベースの分類をセットアップおよび構成するには、機密�
       </EdmSchema>
       ```
 
-4. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+4. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 5. データベース スキーマをアップロードするには、次のコマンドレットを 1 つずつ実行します。
 
@@ -133,7 +143,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 1. **edm.mxl** ファイルを編集します (これは、この記事の「 [スキーマを定義する](#define-the-schema-for-your-database-of-sensitive-information) 」セクションで説明したファイルです)。
 
-2. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+2. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 3. データベース スキーマを更新するには、次のコマンドレットを 1 つずつ実行します。
 
@@ -162,7 +172,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 (必要に応じて) EDM ベースの分類に使用しているスキーマを削除するには、次の手順に従います:
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [セキュリティ/コンプライアンス センター PowerShellに接続する](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)の手順を使用して、セキュリティ/コンプライアンス センターに接続します。
 
 2. 次の PowerShell コマンドレットを実行して、「patientrecords」のデータ ストア名を削除するものに置き換えます。
 
@@ -223,7 +233,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
             </Pattern>
             <Pattern confidenceLevel="75">
               <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-              <Any minMatches ="3" maxMatches ="100">
+              <Any minMatches ="3" maxMatches ="6">
                 <match matches="PatientID" />
                 <match matches="MRN"/>
                 <match matches="FirstName"/>
@@ -290,7 +300,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
-1. 全体管理者として、管理センター ([https://admin.microsoft.com](https://admin.microsoft.com/)) へ移動し、 **EDM\_DataUploaders** という [セキュリティー グループを作成](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)  します。
+1. 全体管理者として、[サブスクリプションに適した リンク](#portal-links-for-your-subscription)を使用して管理センターに移動し、 [セキュリティグループを作成](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) します。 **EDM\_DataUploaders**と言います。
 
 2.  **EDM\_DataUploaders**  セキュリティ グループに、1 人以上のユーザーを追加します。 (これらのユーザーは機密情報のデータベースを管理します)。
 
@@ -301,16 +311,25 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 >[!NOTE]
 > この手順を開始する前に、自分が  **EDM\_DataUploaders**  セキュリティ グループのメンバーであり、コンピューターのローカル管理者であることを確認します。
 
-1. [EDM アップロード エージェント](https://go.microsoft.com/fwlink/?linkid=2088639)をダウンロードしてインストールします。 既定では、インストール場所は、[ **C:\\Program Files\\Microsoft\\EdmUploadAgent**] になります。
+#### <a name="links-to-edm-upload-agent-by-subscription-type"></a>サブスクリプションの種類別の EDM アップロードエージェントへのリンク
 
-      > [!TIP]
-      > サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
+- [商用 + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+
+1. サブスクリプションに適した [EDM アップロードエージェント](#links-to-edm-upload-agent-by-subscription-type) をダウンロードしてインストールします。 既定では、インストール場所は、[ **C:\\Program Files\\Microsoft\\EdmUploadAgent**] になります。
+
+> [!TIP]
+> サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
+
+> [!NOTE]
+> EDMUploadAgent を使用して、1日に2回だけ、特定のデータストアにデータをアップロードできます。
 
 2. EDM アップロード エージェントを承認するには、管理者として Windows コマンド プロンプトを開き、次のコマンドを実行します。
 
     `EdmUploadAgent.exe /Authorize`
 
-3. 職場または学校の Office 365 アカウントでサインインします。
+3. EDM_DataUploaders セキュリティグループに追加された、Office 365 の職場または学校のアカウントでサインインします。
 
 次の手順では、EDM アップロード エージェントを使用して機密データにインデックスを付け、インデックス付きのデータをアップロードします。
 
@@ -347,6 +366,10 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 `EdmUploadAgent.exe /GetDataStore`
 
 データ ストアのリストと、それらが最後に更新された日時が表示されます。
+
+特定のストアへのデータのアップロードをすべて表示する場合は、Windows コマンドプロンプトで次のコマンドを実行します。
+
+`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
  [機密情報データベースを更新する](#refreshing-your-sensitive-information-database)ためのプロセスとスケジュールのセットアップを進めます。
 
@@ -459,7 +482,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>EDM を使用して DLP ポリシーを作成する
 
-1. セキュリティ/コンプライアンス センターに移動します ([https://protection.office.com](https://protection.office.com/))。
+1. [サブスクリプションに適切なリンク](#portal-links-for-your-subscription)を使用して、セキュリティ/コンプライアンス センターに移動します。
 
 2.  **[データ損失防止]** \> **[ポリシー]** を選択します。
 
@@ -497,12 +520,9 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ## <a name="related-articles"></a>関連記事
 
-[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-
-[カスタムの機密情報の種類](custom-sensitive-info-types.md)
-
-[DLP ポリシーの概要](data-loss-prevention-policies.md)
-
-[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
+- [カスタムの機密情報の種類](custom-sensitive-info-types.md)
+- [DLP ポリシーの概要](data-loss-prevention-policies.md)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
+- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。

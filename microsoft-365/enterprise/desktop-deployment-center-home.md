@@ -5,10 +5,9 @@ f1.keywords:
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 08/14/19
+ms.date: 08/14/2019
 ms.audience: ITPro
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-solutions
 localization_priority: Priority
 ms.collection:
@@ -16,80 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: デスクトップ展開センターの概要。
-ms.openlocfilehash: 36506864d932665a2da8fd2dfc94ab276e4fa2ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3559a32db71d2cceaf3ab4dc67701d5f5f00e7fe
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638142"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528110"
 ---
 # <a name="desktop-deployment-center"></a>最新デスクトップ展開センターをご覧いただき
 
 <strong>Windows 7 から Windows 10 にアップグレードする</strong>
 <p>2020 年 1 月 14 日に Windows 7 の延長サポートが終了しました。 Windows 7 から Windows 10 へのインプレース アップグレードが、最速の展開方法です。 ユーザーは<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-manual">単一の PC をアップグレードしたり</a>、<a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">Microsoft Endpoint Configuration Manager を使用して数千の PC をアップグレードしたり</a>できます。 インプレース アップグレードを使用するアプリの配信、ファイルの移行、カスタム イメージング、またはクラウドベースのサービスの有効化だけにこだわる必要はありません。 既存の PC をアップグレードするには既存のツールを使用でき、次のアップグレード用の展開手順に重点を置きます。 </p>
 
-<p>
-</p>
-
-<ul class="panelContent cardsM">
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Upgrade ConfigMgr" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>ConfigMgr を Current Branch にアップグレードする</h3>
-            <p>Configuration Manager を使用する組織のディレクトリとネットワークの準備の一部</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/step-1-device-and-app-readiness">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" alt="Device and App Readiness" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>デバイスとアプリの準備状況を確認する</h3>
-            <p>デバイスとアプリの準備の一部。Desktop App Assure 経由でヘルプが提供されます</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" alt="Upgrade Windows 7 PCs" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Windows 7 PC を Windows 10 にアップグレードする</h3>
-            <p>ユーザーにより保持されている PC の OS の展開および機能の更新プログラムの一部</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" width="36" height="36" alt="Upgrade ConfigMgr" /> | **[ConfigMgr を Current Branch にアップグレードする](https://docs.microsoft.com/microsoft-365/enterprise/step-2-directory-and-network-readiness)** <p>Configuration Manager を使用する組織のディレクトリとネットワークの準備の一部</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-3.png" width="36" height="36" alt="Device and App Readiness" /> | **[デバイスとアプリの準備状況を確認する](/microsoft-365/enterprise/step-1-device-and-app-readiness)** <p>デバイスとアプリの準備の一部。Desktop App Assure 経由でヘルプが提供されます</p> | <img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-9.png" width="36" height="36" alt="Upgrade Windows 7 PCs" /> | **[Windows 7 PC を Windows 10 にアップグレードする](/microsoft-365/enterprise/windows-7-to-windows-10-upgrade-automated)** <p>デバイスとアプリの準備の一部; Desktop App Assure 経由でヘルプが提供されます</p> |
 
 <img align="middle" src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-2.png" alt="Desktop Deployment Wheel" height="450" width="802" align="middle" style="background-color: #fff;" />
 

@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 国/地域にリストされている電話番号に電話をかける、またはサービスリクエストをオンラインで送信する、あるいは Microsoft Store に連絡して仮想カスタマーサポートから、技術および課金サポートを受けてください。
+description: 国または地域別にリストされている電話番号を使用するか、サービス リクエストをオンラインで送信して、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
-ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
+ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506311"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46536862"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 
@@ -70,11 +70,6 @@ ms.locfileid: "46506311"
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-## <a name="virtual-support-from-the-microsoft-store"></a>Microsoft Store からの仮想サポート
-
-Microsoft Store セールスおよびカスタマー サポートに問い合わせると、Answer Desk のエキスパートが Microsoft 365 の問題解決の手助けをいたします。
-
-クイック ヘルプ リンクと電話番号については、「[Microsoft Store サポートへのお問い合わせ](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020)」ページを参照してください。
 
 ::: moniker-end
 

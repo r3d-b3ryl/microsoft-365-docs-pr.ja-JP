@@ -2,7 +2,7 @@
 title: Microsoft 365 Enterprise への移行
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 07/29/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 組織全体で Microsoft Office、Office サーバー、Windows のバージョンを Microsoft 365 Enterprise に移行するプロセスの手順に従います。
-ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 05654e4714d2328f2f5853ed49df83a907e580f6
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011797"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528062"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise への移行
+
+
+>[!Note]
+>*コンテンツ* を Microsoft 365 に移行するのに役立つツールをお探しですか?  ネットワーク ファイル共有、SharePoint Server、その他のクラウド プロバイダーからコンテンツを移行する場合でも、ユーザーのニーズを満たす無料の移行ツールが用意されています。 無料の移行ツールの詳細については、以下をご覧ください:
+>
+>[Microsoft 365 にコンテンツを移行する](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
 
 ほとんどの企業では、オペレーティング システム、クライアント ソフトウェア、サーバー ソフトウェアの複数のリリースを使った異種混合環境使用しています。Microsoft 365 Enterprise には、IT インフラストラクチャのこれらのキー コンポーネントの最も安全なバージョンと共に、クラウド テクノロジを活用するために設計されている生産性機能がそろっています。
 
@@ -30,7 +36,7 @@ ms.locfileid: "44011797"
 - デバイス上の Windows 7 および Windows 8.1 から Windows 10 Enterprise
 
 >[!Note]
->Windows 7 は、**2020 年 1 月 14 日**にサポート終了になりました。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
+>Windows 7 は、**2020 年 1 月 14 日**にサポートが終了しました。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
 >
 
 時経つうちにこれらすべての移行が完了すれば、組織内のチームワークと創造性を引き出す安全で統合された[最新の職場](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)環境に組織を近づけることができます。これはすべて Microsoft 365 Enterprise によって成し遂げることができます。 
@@ -144,7 +150,7 @@ Office 2016 リリースのサーバー製品については、サポートの�
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 および 8.1 の移行
 
-Windows 7 は、**2020 年 1 月 14 日**にサポート終了になりました。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
+Windows 7 は、**2020 年 1 月 14 日**にサポートが終了しました。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、[一括アップグレード](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade)を実行することができます。 
 
 その他の方法については、「[Windows 10 展開のシナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)」をご覧ください。 自分で[Windows 10 の展開を計画](https://aka.ms/planforwin10deployment)することもできます。
 
