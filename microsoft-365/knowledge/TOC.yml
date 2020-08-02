@@ -1,0 +1,16 @@
+- name: ナレッジ管理の概要
+  items:
+    - name: ナレッジ管理の概要
+      href: knowledge-management-overview.md
+    - name: トピックセンターの概要
+      href: topic-center-overview.md
+    - name: トピックセンターのトピックを操作する
+      href: work-with-topics.md
+    - name: ユーザーにトピックセンターへのアクセス許可を付与する
+      href: give-user-permissions-to-the-topic-center.md
+- name: セットアップの概要
+  items:
+    - name: ナレッジ管理の設定
+      href: set-up-knowledge-network.md
+    - name: ナレッジマネージメントネットワークを管理する
+      href: manage-knowledge-network.md

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,69 +26,57 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
-ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 81c3a03207fd8f35c975026ebd2a9a0334fc9407
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44816999"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533615"
 ---
-# <a name="view-your-bill-or-invoice"></a><span data-ttu-id="098e4-104">課金内容または請求書を表示する</span><span class="sxs-lookup"><span data-stu-id="098e4-104">View your bill or invoice</span></span>
+# <a name="view-your-bill-or-invoice"></a><span data-ttu-id="ce8d6-104">課金内容または請求書を表示する</span><span class="sxs-lookup"><span data-stu-id="ce8d6-104">View your bill or invoice</span></span>
 
-<span data-ttu-id="098e4-p102">この記事は、一般法人向け Microsoft 365 サブスクリプションを持っているユーザーを対象としています。この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="098e4-p102">This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.</span></span>
+<span data-ttu-id="ce8d6-105">この記事は、一般法人向け Microsoft 365 サブスクリプションを持っているユーザーを対象としています。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-105">This article is for people who have a Microsoft 365 for business subscription.</span></span>
   
-<span data-ttu-id="098e4-107">課金内容を表示した場合に料金について説明が必要な場合は、「[課金または請求書の内容を理解する](understand-your-invoice2.md)」のページで詳細な解説を参照してください。</span><span class="sxs-lookup"><span data-stu-id="098e4-107">If you need help interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.</span></span>
+<span data-ttu-id="ce8d6-106">課金内容を表示した場合に料金について説明が必要な場合は、「[課金または請求書の内容を理解する](understand-your-invoice2.md)」 のページで詳細な解説を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-106">If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.</span></span>
   
- <span data-ttu-id="098e4-108">**管理者ではない場合**:</span><span class="sxs-lookup"><span data-stu-id="098e4-108">**Not an admin?**</span></span> <span data-ttu-id="098e4-109">IT 管理者にお問い合わせください。</span><span class="sxs-lookup"><span data-stu-id="098e4-109">Contact your IT administrator for help.</span></span> 
+<span data-ttu-id="ce8d6-107">**請求書に関して問題がある場合**:</span><span class="sxs-lookup"><span data-stu-id="ce8d6-107">**Have a problem with your bill?**</span></span> <span data-ttu-id="ce8d6-108">[一般法人向け製品のサポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-108">[Contact support for business products](../../admin/contact-support-for-business-products.md).</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="ce8d6-109">はじめに</span><span class="sxs-lookup"><span data-stu-id="ce8d6-109">Before you begin</span></span>
+
+<span data-ttu-id="ce8d6-110">この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-110">You must be a Global or Billing admin to do the steps described in this article.</span></span>
   
- <span data-ttu-id="098e4-110">**請求書に関して問題がある場合**:</span><span class="sxs-lookup"><span data-stu-id="098e4-110">**Have a problem with your bill?**</span></span> <span data-ttu-id="098e4-111">[一般法人向け製品のサポートにお問い合わせください](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="098e4-111">[Contact support for business products](../../admin/contact-support-for-business-products.md).</span></span>
+## <a name="view-a-bill-or-invoice"></a><span data-ttu-id="ce8d6-111">課金内容または請求書を表示する</span><span class="sxs-lookup"><span data-stu-id="ce8d6-111">View a bill or invoice</span></span>
 
- <span data-ttu-id="098e4-112">課金内容または請求書を表示する方法に関する短いビデオをご覧ください (お客様の請求書の表示はビデオ内のものと異なる場合があります)。</span><span class="sxs-lookup"><span data-stu-id="098e4-112">Watch a short video about viewing your bill or invoice (note that your invoice may appear different from the one in the video).</span></span> <br><br>
+1. <span data-ttu-id="ce8d6-112">管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-112">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.</span></span>
+    - <span data-ttu-id="ce8d6-113">Office 365 Germany を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">請求と支払い</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-113">If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.</span></span>
+    - <span data-ttu-id="ce8d6-114">21Vianet が運営する Office 365 を使用している場合は、この [<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">請求と支払い</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-114">If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.</span></span>
+2. <span data-ttu-id="ce8d6-115">[**請求書**] タブで、ドロップダウン リストから日付範囲を選択し、次に表示する注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-115">On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.</span></span>
+3. <span data-ttu-id="ce8d6-116">[概要] ページには、請求書のアイテム、数量、価格、割引、全アイテムの合計が表示されます。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-116">On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.</span></span>
+4. <span data-ttu-id="ce8d6-117">請求書を PDF 形式で印刷または保存するには、[**PDF のダウンロード**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-117">To print or save a PDF copy of the invoice, select **Download PDF**.</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
+## <a name="receive-a-copy-of-your-billing-statement-in-email"></a><span data-ttu-id="ce8d6-118">請求明細書のコピーをメールで受け取る</span><span class="sxs-lookup"><span data-stu-id="ce8d6-118">Receive a copy of your billing statement in email</span></span>
 
-<span data-ttu-id="098e4-113">このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="098e4-113">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
-  
-## <a name="view-a-bill-or-invoice"></a><span data-ttu-id="098e4-114">課金内容または請求書を表示する</span><span class="sxs-lookup"><span data-stu-id="098e4-114">View a bill or invoice</span></span>
+<span data-ttu-id="ce8d6-p103">請求明細書のコピーをメールの添付ファイルとして受け取ることができます。その場合は、次のことに注意してください。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-p103">You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:</span></span>
 
-::: moniker range="o365-worldwide"
+- <span data-ttu-id="ce8d6-121">メールは、通知の受信者として記載されているすべてのユーザーのプライマリと代替の両方のメール アドレスに送信されます。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-121">An email is sent to both the primary and alternate email address for every person listed as a notification recipient.</span></span>
+- <span data-ttu-id="ce8d6-122">2 通の異なるメールを受け取ります。1 通目は請求の準備ができたことと、管理センターにサインインしてそれを確認するための手順を伝えるもので、2 通目には請求明細書が添付されています。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-122">You receive two separate emails: one that lets you know that your bill is ready, with instructions to sign in to the admin center to view it, and a second email that contains the billing statement as an attachment.</span></span>
 
-1. <span data-ttu-id="098e4-115">管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="098e4-115">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.</span></span>
+### <a name="to-receive-your-billing-statement-in-email"></a><span data-ttu-id="ce8d6-123">請求明細書をメールで受け取るには</span><span class="sxs-lookup"><span data-stu-id="ce8d6-123">To receive your billing statement in email</span></span>
 
-::: moniker-end
+1. <span data-ttu-id="ce8d6-124">管理センターで、**[課金情報]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">[課金に関する通知]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-124">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.</span></span>
+    - <span data-ttu-id="ce8d6-125">Office 365 Germany を使用している場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">[課金に関する通知]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-125">If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.</span></span>
+    - <span data-ttu-id="ce8d6-126">21Vianet が運営する Office 365 を使用している場合は、[<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">課金に関する通知</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-126">If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.</span></span>
+1. <span data-ttu-id="ce8d6-127">**[請求書をメールの添付ファイルとしてお送りしますか?]** を **[オン]** に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-127">Under **Receive billing statement as email attachment?** switch the toggle to **On**.</span></span>
 
-::: moniker range="o365-germany"
+    <span data-ttu-id="ce8d6-128">これを **[オフ]** に切り替えることで、請求明細書のメールでの受け取りをいつでも停止できます。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-128">You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.</span></span>
 
-1. <span data-ttu-id="098e4-116">管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">請求と支払い</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="098e4-116">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.</span></span>
+## <a name="next-steps"></a><span data-ttu-id="ce8d6-129">次の手順</span><span class="sxs-lookup"><span data-stu-id="ce8d6-129">Next steps</span></span>
 
-::: moniker-end
+<span data-ttu-id="ce8d6-130">残高があり、その支払いを希望する場合は、オンラインで行うことができます。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-130">If you have a balance and would like to pay it, you can do that online.</span></span> <span data-ttu-id="ce8d6-131">詳細については、「[サブスクリプションの支払いを行う](pay-for-your-subscription.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ce8d6-131">To learn how, see [Pay for your subscription](pay-for-your-subscription.md).</span></span>
 
-::: moniker range="o365-21vianet"
+## <a name="related-content"></a><span data-ttu-id="ce8d6-132">関連コンテンツ</span><span class="sxs-lookup"><span data-stu-id="ce8d6-132">Related content</span></span>
 
-1. <span data-ttu-id="098e4-117">管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">請求と支払い</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="098e4-117">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.</span></span>
-
-::: moniker-end
-
-2. <span data-ttu-id="098e4-118">[**請求書**] タブで、ドロップダウン リストから日付範囲を選択し、次に表示する注文を選択します。</span><span class="sxs-lookup"><span data-stu-id="098e4-118">On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.</span></span>
-
-3. <span data-ttu-id="098e4-119">次の内容が概要ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="098e4-119">On the summary page, you can see the following:</span></span>
-
-    - <span data-ttu-id="098e4-120">合計請求残高、今回の請求額、支払期日、前回支払額、受領日付</span><span class="sxs-lookup"><span data-stu-id="098e4-120">The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.</span></span>
-
-    - <span data-ttu-id="098e4-121">支払い手順</span><span class="sxs-lookup"><span data-stu-id="098e4-121">Payment instructions.</span></span>
-
-    - <span data-ttu-id="098e4-122">過去の支払日と支払額の記録</span><span class="sxs-lookup"><span data-stu-id="098e4-122">A record of past payment dates, and the amounts paid.</span></span>
-
-    - <span data-ttu-id="098e4-123">注文作成日と注文番号</span><span class="sxs-lookup"><span data-stu-id="098e4-123">The order creation date, and the order number.</span></span>
-
-4. <span data-ttu-id="098e4-124">請求書を PDF 形式で印刷または保存するには、[**PDF のダウンロード**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="098e4-124">To print or save a PDF copy of the invoice, select **Download PDF**.</span></span>
-
-## <a name="related-articles"></a><span data-ttu-id="098e4-125">関連記事</span><span class="sxs-lookup"><span data-stu-id="098e4-125">Related articles</span></span>
-
-[<span data-ttu-id="098e4-126">請求書、クレジット カード、または銀行口座引き落としによる支払い方法</span><span class="sxs-lookup"><span data-stu-id="098e4-126">Pay by invoice, credit card, or bank account</span></span>](pay-for-your-subscription.md)
-  
-[<span data-ttu-id="098e4-127">支払方法を管理する</span><span class="sxs-lookup"><span data-stu-id="098e4-127">Manage payment methods</span></span>](manage-payment-methods.md)
-
-[<span data-ttu-id="098e4-128">Minecraft: Education Edition の支払いオプション</span><span class="sxs-lookup"><span data-stu-id="098e4-128">Minecraft: Education Edition payment options</span></span>](https://go.microsoft.com/fwlink/p/?linkid=838761)
+<span data-ttu-id="ce8d6-133">[請求書、クレジット カード、または銀行口座引き落としによる支払い方法](pay-for-your-subscription.md) (記事) </span><span class="sxs-lookup"><span data-stu-id="ce8d6-133">[Pay by invoice, credit card, or bank account](pay-for-your-subscription.md) (article) </span></span>\
+<span data-ttu-id="ce8d6-134">[支払方法を管理する](manage-payment-methods.md) (記事) </span><span class="sxs-lookup"><span data-stu-id="ce8d6-134">[Manage payment methods](manage-payment-methods.md) (article) </span></span>\
+<span data-ttu-id="ce8d6-135">[Minecraft: Education Edition の支払いオプション](https://go.microsoft.com/fwlink/p/?linkid=838761) (記事) \</span><span class="sxs-lookup"><span data-stu-id="ce8d6-135">[Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761) (article)</span></span>

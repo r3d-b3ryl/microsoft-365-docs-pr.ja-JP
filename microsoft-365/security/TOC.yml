@@ -315,6 +315,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: 事前設定されたセキュリティ ポリシー
                   href: ./office-365-security/preset-security-policies.md
+                - name: 事前設定されたセキュリティ ポリシーの構成アナライザー
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: スパム対策メッセージ ヘッダー
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: ポリシーと保護を組み合わせる方法

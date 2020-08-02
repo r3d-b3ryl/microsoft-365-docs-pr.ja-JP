@@ -98,7 +98,7 @@
           items:
             - name: Microsoft Project と Microsoft Visio
               href: get-started/project-visio.md
-            - name: 新しい Microsoft Edge アプリ
+            - name: 新しい Microsoft Edge
               href: get-started/edge-browser-app.md
     - name: Microsoft マネージド デスクトップを使用する
       href: working-with-managed-desktop/index.md
