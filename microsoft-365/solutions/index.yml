@@ -4,7 +4,7 @@ summary: 組織に適したソリューションとアーキテクチャを設�
 brand: m365
 metadata:
   title: Microsoft 365 ソリューションおよびアーキテクチャ センター
-  description: 組織に適したソリューションとアーキテクチャを設計する方法を理解します。
+  description: このヘルプ センターでは、IT トレーニングと、組織に適したソリューションとアーキテクチャを設計する方法について説明します。
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection:
@@ -15,12 +15,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 0d5268adb566b415b9dfd1ed999f96b58a7991a0
-  ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+  ms.openlocfilehash: 38232c5ef3b64ac114dd8296398ade32bcf12d97
+  ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/29/2020
-  ms.locfileid: "46521113"
+  ms.lasthandoff: 07/30/2020
+  ms.locfileid: "46530213"
 highlightedContent:
   items:
   - title: Microsoft 365 でリモート ワーカーを支援する
