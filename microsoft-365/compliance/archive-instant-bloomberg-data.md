@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がインスタント Bloomberg チャットツールから Microsoft 365 にデータをインポートしてアーカイブするためのデータコネクタをセットアップして使用する方法について説明します。
-ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: dbfb0c167d57b4a541c60eda253e93328c156dfc
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936560"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552507"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
@@ -120,7 +120,7 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
 5. [**ユーザーマッピング**] ページで、自動ユーザーマッピングを有効にし、必要に応じてカスタムユーザーマッピングを提供します。
 
    > [!NOTE]
-   > コネクタは、特定のユーザーのメールボックスにチャットメッセージアイテムをインポートします。 **InstantBloomberg**という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress*プロパティの値を使用して実行されます。 すべてのチャットメッセージにこのプロパティが含まれており、プロパティにはチャットメッセージのすべての参加者の電子メールアドレスが設定されています。 *CorporateEmailAddress*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 マッピングファイルには、各ユーザーの Bloomberg UUID および対応する Microsoft 365 メールボックスアドレスが含まれている必要があります。 自動ユーザーマッピングを有効にしてカスタムマッピングマッピングを提供する場合、すべてのチャットアイテムに対して、コネクタはまずカスタムマッピングファイルを参照します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャットアイテムの*CorporateEmailAddress*プロパティを使用します。 コネクタがカスタムマッピングファイルまたはチャットアイテムの*CorporateEmailAddress*プロパティに有効な Microsoft 365 ユーザーを見つけられない場合、そのアイテムはインポートされません。
+   > コネクタは、特定のユーザーのメールボックスにチャットメッセージアイテムをインポートします。 **InstantBloomberg**という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress*プロパティの値を使用して実行されます。 すべてのチャットメッセージにこのプロパティが含まれており、プロパティにはチャットメッセージのすべての参加者の電子メールアドレスが設定されています。 *CorporateEmailAddress*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 マッピングファイルには、各ユーザーの Bloomberg UUID および対応する Microsoft 365 メールボックスアドレスが含まれている必要があります。 自動ユーザーマッピングを有効にし、カスタムマッピングを指定すると、コネクタはまずカスタムマッピングファイルを参照します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャットアイテムの*CorporateEmailAddress*プロパティを使用します。 コネクタがカスタムマッピングファイルまたはチャットアイテムの*CorporateEmailAddress*プロパティに有効な Microsoft 365 ユーザーを見つけられない場合、そのアイテムはインポートされません。
 
 6. [**次へ**] をクリックして設定を確認し、[**準備**] をクリックしてコネクタを作成します。
 

@@ -20,12 +20,12 @@ description: Microsoft 情報保護フレームワークの秘密度ラベルを
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd8aaab95afd66881b842d902988276b9fde54ff
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199557"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552699"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -40,9 +40,6 @@ Microsoft 情報保護フレームワークの秘密度ラベルを使用する�
 ![Excel のリボンおよびステータス バーに示された秘密度ラベル](../media/Sensitivity-label-in-Excel.png)
 
 秘密度ラベルは、グローバル (パブリック) クラウドのテナントでのみサポートされています。 現在、秘密度ラベルは、[国別クラウド](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)などの他のクラウドのテナントではサポートされていません。
-
-> [!NOTE]
-> 秘密度ラベルは、米国政府機関向けコミュニティ (GCC) の組織ではまだ使用できません。
 
 機密ラベルを適用するには、ユーザーは職場または学校のアカウントを使用して Office にサインインする必要があります。
 
