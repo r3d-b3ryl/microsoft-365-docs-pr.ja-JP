@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: いくつかの手順で、Microsoft 365 を有効にして、ローカルの Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: 2eaf5aa76cae1680b93af008af615ae872e4fb20
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 6275c6c4be9cd9631ab095f8b0e1b39683022bb2
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533787"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560845"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Microsoft 365 Business Premium によって管理されるドメインに参加している Windows 10 デバイスを有効にする
 
@@ -50,8 +50,7 @@ ms.locfileid: "46533787"
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. Intune で MDM 機関を確認する
 
-Portal.azure.com に移動し、Intune のページ検索の上部に移動します。
-[Microsoft Intune] ページで、[**デバイスの登録**] を選択し、[**概要**] ページで**MDM authority**が**Intune**であることを確認します。
+[エンドポイントマネージャー](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview)に移動し、[Microsoft Intune] ページで [ **Device enrollment**] を選択して、[**概要**] ページで**MDM authority**が**Intune**であることを確認します。
 
 - **Mdm 機関**が**なし**の場合は、 **mdm 機関**をクリックして**Intune**に設定します。
 - **MDM 機関**が**Microsoft office 365**の場合は、[**デバイス**を  >  **登録**する] を選択し、 **Intune mdm**機関を追加する権限の [ **mdm 機関の追加**] ダイアログを使用します (mdm 機関を追加するに**は、mdm**機関が microsoft Office 365 に設定**され**ている場合にのみ使用できます)。

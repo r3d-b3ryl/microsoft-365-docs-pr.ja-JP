@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Microsoft 365 管理センターで新しい製品および機能の更新プログラムのリリースオプションをセットアップする方法について説明します。
-ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 648be8ca5d3c7aae93ed868972bc59b32ba87987
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502881"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560717"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>標準または対象指定リリースオプションを設定する
 
@@ -38,10 +38,10 @@ ms.locfileid: "46502881"
 
 ::: moniker-end
 
-Microsoft 365 では、数年ごとに費用のかかる更新プログラムを実行する代わりに、新しい製品の更新プログラムと機能が提供されます。 組織がこれらの更新を受信する方法を管理できます。 たとえば、初期リリースにサインアップして、組織が最初に更新を受け取るようにすることができます。 特定の個人のみが更新を受信するように指定できます。 または、[既定のリリーススケジュール] をそのまま使用し、更新プログラムを後で受け取ることができます。 この記事では、さまざまなリリースオプションと、それらを組織で使用する方法について説明します。
-  
 > [!IMPORTANT]
-> この記事に記載されている Microsoft 365 更新プログラムは、Microsoft 365、SharePoint Online、および Exchange Online に適用されます。 これらは、Skype for Business および関連するサービスには適用されません。 これらのリリースオプションは、Microsoft 365 への変更をリリースするための最善の方法ですが、常に、またはすべての更新プログラムに対して保証することはできません。 
+> この記事に記載されている Microsoft 365 更新プログラムは、Microsoft 365、SharePoint Online、および Exchange Online に適用されます。 これらのリリースオプションは、Microsoft 365 への変更をリリースするための最善の方法ですが、常に、またはすべての更新プログラムに対して保証することはできません。 これらは、Skype for Business、Microsoft Teams、および関連するサービスには適用されません。
+
+Microsoft 365 では、数年ごとに費用のかかる更新プログラムを実行する代わりに、新しい製品の更新プログラムと機能が提供されます。 組織がこれらの更新を受信する方法を管理できます。 たとえば、初期リリースにサインアップして、組織が最初に更新を受け取るようにすることができます。 特定の個人のみが更新を受信するように指定できます。 または、[既定のリリーススケジュール] をそのまま使用し、更新プログラムを後で受け取ることができます。 この記事では、さまざまなリリースオプションと、それらを組織で使用する方法について説明します。
 
 > [!NOTE]
 > アプリケーションの更新プログラムチャネルの詳細については、「 [Microsoft 365 アプリの更新プログラムチャネルの概要](https://docs.microsoft.com/deployoffice/overview-update-channels)」を参照してください。 

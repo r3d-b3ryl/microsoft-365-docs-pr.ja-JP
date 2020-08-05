@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'このチェックリストに従って、Microsoft 365 およびセキュリティで保護されたデータから従業員を削除します。 '
-ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b63866615c19ecf1d9096f0d63cbcb2008350f51
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844860"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560389"
 ---
-# <a name="remove-a-former-employee"></a>元従業員を削除する
+# <a name="remove-or-delete-a-former-employee"></a>元従業員を削除または削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
   
@@ -59,7 +59,7 @@ ms.locfileid: "44844860"
 
 3. 新しいパスワードを入力し、[**リセット**] を選択します。 (送信しないでください)。
     
-4. ユーザーの名前を選択して [プロパティ] ウィンドウに移動し、[ **OneDrive** ] タブで [**サインアウトの開始**] を選択します。
+4. ユーザーの名前を選択して [プロパティ] ウィンドウに移動し、[**アカウント**] タブで [**サインアウトの開始**] を選択します。
 
 ::: moniker-end
 
@@ -71,7 +71,7 @@ ms.locfileid: "44844860"
 
 3. 新しいパスワードを入力し、[**リセット**] を選択します。 (送信しないでください)。
 
-4. ユーザーをもう一度選択し、[ **OneDrive の設定**] を展開してから、[**サインアウト**] の横にある [**開始**] を選択します。
+4. ユーザーの名前を選択して [プロパティ] ウィンドウに移動し、[**アカウント**] タブで [**サインアウトの開始**] を選択します。
 
 ::: moniker-end
 
@@ -83,9 +83,12 @@ ms.locfileid: "44844860"
 
 3. 新しいパスワードを入力し、[**リセット**] を選択します。 (送信しないでください)。
 
-4. ユーザーをもう一度選択し、[ **OneDrive の設定**] を展開してから、[**サインアウト**] の横にある [**開始**] を選択します。
+4. ユーザーの名前を選択して [プロパティ] ウィンドウに移動し、[**アカウント**] タブで [**サインアウトの開始**] を選択します。
 
 ::: moniker-end
+
+> [!NOTE]
+> サインアウトを開始するには、全体管理者である必要があります。
 
     
 1時間以内に、または現在の Microsoft 365 ページから出た後、もう一度サインインするように求めるメッセージが表示されます。 (アクセストークンは1時間にとって適切なので、タイムラインはそのトークンの残り時間と現在の web ページから移動するかどうかによって決まります)。
@@ -217,7 +220,8 @@ PowerShell を使用してユーザーをすぐにサインアウトさせるに
     
 6. [**保存**] を選択します。 
     
-    **ヒント**: オンプレミスの Blackberry Enterprise Service からも、そのユーザーを削除するか無効にするかします。さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。 
+   > [!TIP]
+   > オンプレミスの Blackberry Enterprise サービスからユーザーを削除または無効にしてください。 さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。 ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>以前の従業員の Microsoft 365 データへのアクセスをブロックする
 <a name="bkmk_block"> </a>
@@ -343,6 +347,10 @@ Microsoft 365 for business のユーザーライセンスの管理の詳細に�
 Office 365 からユーザーのライセンスを削除すると、ユーザーに関連付けられている PSTN 通話番号が解放されます。この番号を別のユーザーに割り当てることができます。
   
 ユーザーがキュー グループに属している場合、ユーザーは呼び出しキューのエージェントの実行可能な対象にならなくなります。そのため、呼び出しキューに関連付けられているグループからもユーザーを削除することをお勧めします。 
+
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>組織内のユーザーへの着信転送をセットアップする
+
+解雇された従業員の電話番号の着信転送を設定する必要がある場合は、通話ポリシーの [着信の転送] 設定を使用して、着信通話を他のユーザーに転送したり、他のユーザーを同時に呼び出したりすることができる転送をセットアップできます。 詳細については、「 [Microsoft Teams の通話ポリシー](https://docs.microsoft.com/microsoftteams/teams-calling-policy)」を参照してください。
   
 ## <a name="delete-a-former-employees-user-account"></a>元従業員のユーザー アカウントを削除する
 <a name="bkmk_delete"> </a>

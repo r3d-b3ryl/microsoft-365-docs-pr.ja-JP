@@ -1,5 +1,5 @@
 ---
-title: 許可または禁止する Url とファイルをテナントの許可/ブロックリストで管理する
+title: 許可または禁止する Url をテナントの許可/ブロックリストで管理する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理者は、セキュリティ & コンプライアンスセンターのテナントの許可/ブロックリストで URL とファイルエントリを構成する方法について説明します。
-ms.openlocfilehash: db34abf28b5ead8106eb0b1447052d63072b2da3
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+description: 管理者は、セキュリティ & コンプライアンスセンターのテナントの許可/ブロックリストで URL エントリを構成する方法について説明します。
+ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391568"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552552"
 ---
-# <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>テナントの許可/禁止リストの URL とファイルを管理する
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>テナントの許可/ブロックリストの Url を管理する
 
 > [!NOTE]
 > このトピックで説明する機能はプレビュー段階にあり、変更される可能性があり、組織によっては利用できません。
 
 Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、EOP フィルター verdict の使用に同意しない場合があります。 たとえば、良好なメッセージが不良 (誤検知) としてマークされている場合や、無効なメッセージが表示される場合があります (誤検知)。
 
-セキュリティ & コンプライアンスセンターのテナントの許可/禁止リストにより、Microsoft 365 filtering verdicts を手動で上書きすることができます。 テナントの許可/ブロックリストは、メールフローおよびユーザークリック時に使用されます。 テナントの許可/ブロックリストで許可またはブロックする Url とファイルを指定できます。
+セキュリティ & コンプライアンスセンターのテナントの許可/禁止リストにより、Microsoft 365 filtering verdicts を手動で上書きすることができます。 テナントの許可/ブロックリストは、メールフローおよびユーザークリック時に使用されます。 テナントの許可/ブロックリストで許可またはブロックする Url を指定できます。
 
 このトピックでは、セキュリティ & コンプライアンスセンターまたは PowerShell (exchange online にメールボックスがある Microsoft 365 組織の場合は exchange Online PowerShell、exchange online メールボックスを使用しない組織の場合は、スタンドアロン EOP PowerShell) で、テナントの許可/ブロックリストのエントリを構成する方法について説明します。
 
@@ -37,17 +37,9 @@ Exchange online または exchange online メールボックスを使用しな�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [**テナントの許可/ブロックリスト**] ページに直接移動するには、を使用 <https://protection.office.com/tenantAllowBlockList> します。
 
-- ファイルの SHA256 ハッシュ値を使用してファイルを指定します。 Windows でファイルの SHA256 ハッシュ値を検索するには、コマンドプロンプトで次のコマンドを実行します。
-
-  ```dos
-  certutil.exe -hashfile "<Path>\<Filename>" SHA256
-  ```
-
-  値の例を次に示し `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` ます。 知覚ハッシュ (pHash) の値は使用できません。
-
 - 使用可能な URL 値については、このトピックで後述する「[テナントの許可/ブロックリスト」セクションの url 構文](#url-syntax-for-the-tenant-allowblock-list)で説明されています。
 
-- テナントの許可/ブロックリストでは、Url に最大500エントリ、ファイルハッシュには500エントリを使用できます。
+- テナントの許可/ブロックリストでは、URLss に最大500エントリを使用できます。
 
 - エントリは15分以内にアクティブである必要があります。
 
@@ -95,39 +87,15 @@ URL エントリの構文の詳細については、このトピックで後述�
 
 4. 完了したら、[**追加**] をクリックします。
 
-## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストでファイルエントリを作成する
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストのエントリを表示する
 
 1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
 
-2. [**テナントの許可/ブロックリスト**] ページで、[**ファイル**] タブを選択し、[**追加**] をクリックします。
-
-3. 表示される [**新しいファイルの追加**] ポップアップで、次の設定を構成します。
-
-   - **ファイルハッシュの追加**: 行ごとに1つの SHA256 ハッシュ値を入力します (最大数は 20)。
-
-   - [**ブロック/許可**]: 指定したファイルを**許可**または**ブロック**するかどうかを選択します。
-
-   - **無期限: 次**のいずれかの手順を実行します。
-
-     - 設定がオフ (トグルオフ) になっていることを確認 ![ ](../../media/scc-toggle-off.png) し、 **[有効期限**] ボックスを使用して、エントリの有効期限を指定します。
-
-     または
-
-     - 右にトグルを移動して、期限切れにならないようにエントリを構成します。 ![オンに切り替え](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
-
-   - **オプションのメモ**: エントリの説明テキストを入力します。
-
-4. 完了したら、[**追加**] をクリックします。
-
-## <a name="use-the-security--compliance-center-to-view-url-and-file-entries-in-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、URL およびファイルエントリをテナントの許可/ブロックリストに表示する
-
-1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
-
-2. [ **Url** ] タブまたは [**ファイル**] タブを選択します。
+2. [ **Url** ] タブを選択します。
 
 次の列見出しをクリックすると、昇順または降順で並べ替えられます。
 
-- **値**: URL またはファイルハッシュ。
+- **値**
 - **アクション**:**ブロック**または**許可**。
 - **最終更新日**
 - **有効期限**
@@ -135,7 +103,7 @@ URL エントリの構文の詳細については、このトピックで後述�
 
 [**グループ化**] をクリックして、エントリを**アクション**(**ブロック**または**許可**) または**なし**とグループ化します。
 
-[**検索**] をクリックし、URL またはファイル値の全体または一部を入力してから、enter キーを押して特定の値を検索します。 完了したら、[検索のクリア検索の**クリア**] をクリックし ![ ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) ます。
+[**検索**] をクリックして、値の全体または一部を入力し、enter キーを押して特定の値を検索します。 完了したら、[検索のクリア検索の**クリア**] をクリックし ![ ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) ます。
 
 [**フィルター**] をクリックします。 表示される**フィルター**のポップアップで、次のいずれかの設定を構成します。
 
@@ -151,13 +119,13 @@ URL エントリの構文の詳細については、このトピックで後述�
 
 既存のフィルターをクリアするには、[**フィルター**] をクリックし、表示される**フィルター**のポップアップで [**フィルターのクリア**] をクリックします。
 
-## <a name="use-the-security--compliance-center-to-modify-url-and-file-entries-in-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリスト内の URL とファイルエントリを変更する
+## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストのエントリを変更する
 
-URL またはファイルの値自体を変更することはできません。 代わりに、エントリを削除して再作成する必要があります。
+URL の値自体を変更することはできません。 代わりに、エントリを削除して再作成する必要があります。
 
 1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
 
-2. [ **Url** ] タブまたは [**ファイル**] タブを選択します。
+2. [ **Url** ] タブを選択します。
 
 3. 変更するエントリを選択し、[編集アイコンの**編集**] をクリックし ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ます。
 
@@ -177,11 +145,11 @@ URL またはファイルの値自体を変更することはできません。 
 
 5. 完了したら、**[保存]** をクリックします。
 
-## <a name="use-the-security--compliance-center-to-remove-url-and-file-entries-from-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、URL とファイルのエントリをテナントの許可/禁止リストから削除する
+## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストからエントリを削除する
 
 1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。
 
-2. [ **Url** ] タブまたは [**ファイル**] タブを選択します。
+2. [ **Url** ] タブを選択します。
 
 3. 削除するエントリを選択し、[削除] [削除] アイコン**をクリックし** ![ ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) ます。
 
@@ -189,12 +157,12 @@ URL またはファイルの値自体を変更することはできません。 
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Exchange Online PowerShell またはスタンドアロンの EOP PowerShell を使用して、テナントの許可/ブロックリストを構成する
 
-### <a name="use-powershell-to-add-url-and-file-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリストに URL とファイルエントリを追加する
+### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリストにエントリを追加する
 
-テナントの許可/ブロックリストに URL とファイルエントリを追加するには、次の構文を使用します。
+テナントの許可/ブロックリストにエントリを追加するには、次の構文を使用します。
 
 ```powershell
-New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 この例では、contoso.com およびすべてのサブドメイン (たとえば、contoso.com、www.contoso.com、および xyz.abc.contoso.com) の URL ブロックエントリを追加します。 ExpirationDate パラメーターまたは NoExpiration パラメーターを使用していなかったため、エントリは30日後に有効期限が切れます。
@@ -203,20 +171,14 @@ New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block>
 New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 ```
 
-```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Action Allow -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-この例では、指定したファイルの有効期限が切れないファイルの許可エントリを追加します。
-
 構文およびパラメーターの詳細については、「 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)」を参照してください。
 
-### <a name="use-powershell-to-view-url-and-file-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリスト内の URL とファイルエントリを表示する
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリストのエントリを表示する
 
-テナントの許可/ブロックの一覧で URL とファイルエントリを表示するには、次の構文を使用します。
+テナントの許可/ブロックリストのエントリを表示するには、次の構文を使用します。
 
 ```powershell
-Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
 この例では、すべてのブロックされた Url を返します。
@@ -225,22 +187,16 @@ Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | Fil
 Get-TenantAllowBlockListItems -ListType Url -Action Block
 ```
 
-この例では、指定したファイルハッシュ値に関する情報を返します。
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
-```
-
 構文およびパラメーターの詳細については、「 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)」を参照してください。
 
-### <a name="use-powershell-to-modify-url-and-file-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリスト内の URL とファイルエントリを変更する
+### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリストのエントリを変更する
 
-URL またはファイルの値自体を変更することはできません。 代わりに、エントリを削除して再作成する必要があります。
+URL の値自体を変更することはできません。 代わりに、エントリを削除して再作成する必要があります。
 
-テナントの許可/ブロックの一覧で URL とファイルエントリを変更するには、次の構文を使用します。
+テナントの許可/ブロックリストのエントリを変更するには、次の構文を使用します。
 
 ```powershell
-Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
 次の使用例は、指定された項目の有効期限を変更します。
@@ -251,12 +207,12 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 構文およびパラメーターの詳細については、「 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)」を参照してください。
 
-### <a name="use-powershell-to-remove-url-and-file-entries-from-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリストから URL とファイルエントリを削除する
+### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>PowerShell を使用して、テナントの許可/ブロックリストからエントリを削除する
 
-URL とファイルエントリをテナントの許可/禁止リストから削除するには、次の構文を使用します。
+テナントの許可/禁止リストからエントリを削除するには、次の構文を使用します。
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
 ```
 
 この例では、指定した URL エントリをテナントの許可/禁止リストから削除します。

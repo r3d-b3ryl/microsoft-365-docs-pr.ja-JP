@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b11daf1cc6921e4be87b1bd3965adc2d76d0a0dd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049930"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560897"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -50,11 +50,13 @@ Microsoft Threat Protection は、統合された事前違反および事後侵�
 >この[Microsoft Threat Protection の対話的なガイド](https://aka.ms/MTP-Interactive-Guide)をご覧ください。
 
 
-Microsoft Threat Protection スイートは以下を保護します。 
+Microsoft Threat Protection スイートは次のような防護を行います： 
 - **Microsoft DEFENDER atp があるエンドポイント**-MICROSOFT defender atp は、予防的な保護、ブリーチ後の検出、自動化された調査、および応答のための統合エンドポイントプラットフォームです。 
 - **Office 365 を使用した電子メールとコラボレーション**-OFFICE 365 atp は、電子メールメッセージ、リンク (url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 
 - Azure **atp と AZURE AD Identity Protection を使用した id** azure atp では、Active Directory シグナルを使用して、組織での高度な脅威、侵害された id、および悪意のある insider 操作を識別、検出、調査します。 
 - **Microsoft Cloud app security を使用したアプリケーション**-Microsoft cloud app security は、高度な可視性、強力なデータ制御、および拡張された脅威保護をクラウドアプリにもたらす包括的な相互 SaaS ソリューションです。 
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
 Microsoft の脅威保護の独自のクロス積層は、個々のスイートコンポーネントを次のように強化します。
 - 脅威からの保護、および自動アクションによるスイート全体にわたる防御応答の調整に役立つ
@@ -80,7 +82,7 @@ Microsoft の脅威保護の製品間の機能には、次のようなものが�
 - **クロス積脅威**検索-セキュリティチームは、さまざまな保護製品によって収集された生データに対して独自のカスタムクエリを作成することによって、組織の独自の知識を活用して、侵害の兆候を探すことができます。 Microsoft の脅威保護では、エンドポイントと Office 365 の ATP データに対して、30日間の履歴生信号およびアラートデータに対するクエリベースのアクセスが提供されています。 
 
 
-## <a name="get-started"></a>概要
+## <a name="get-started"></a>作業の開始
 Microsoft 365 セキュリティセンターの[security.microsoft.com](https://security.microsoft.com)でサービスを有効にするには、Microsoft の脅威保護ライセンスの要件を満たす必要があります。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

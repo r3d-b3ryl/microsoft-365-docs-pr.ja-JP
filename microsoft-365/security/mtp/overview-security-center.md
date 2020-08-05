@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f7357c204105772ef1780ef94f211e9d711ec735
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516913"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560885"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
@@ -29,7 +29,9 @@ Microsoft 365 セキュリティセンター--Microsoft の id、データ、デ
 
 新しい Microsoft 365 セキュリティセンターと[microsoft 365 コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)は、セキュリティチームおよびコンプライアンスチームのニーズを満たすために設計された専用のワークスペースです。 これらのソリューションは、Microsoft 365 サービス間で統合されており、リスクを軽減し、デジタルスペースを保護するのに役立つ、実践的な洞察を提供します。
 
-Microsoft 365 セキュリティセンター () を[https://security.microsoft.com](https://security.microsoft.com)参照してください。 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BmvV]
+
+Microsoft 365 セキュリティセンター () を参照してください [https://security.microsoft.com](https://security.microsoft.com) 。 
 
 > [!NOTE]
 > Microsoft 365 セキュリティセンターにアクセスするには、Azure Active Directory のグローバル管理者、セキュリティ管理者、セキュリティオペレーター、セキュリティリーダーなどの適切な役割が割り当てられている必要があります。

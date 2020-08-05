@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9c1b9c1853d80d818d97084e2668d3b12b6da0e6
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 07c010a78d297a4a3c932c0d9a0e32cce0c43bfa
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503222"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560909"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>高度な検索範囲を適切な設定で拡張する
 
@@ -45,7 +45,7 @@ ms.locfileid: "46503222"
 
 | データ | 説明 | スキーマテーブル | 構成する方法 |
 | --- | --- | --- | --- |
-| ドメイン コントローラー | オンプレミスの Active Directory から Azure ATP に送信されたデータによって、id 関連情報 (アカウントの詳細、ログオンアクティビティ、Active Directory クエリなど) が表示されます。 | 複数のテーブル ("identity [info](advanced-hunting-identityinfo-table.md)"、"id"[イベント](advanced-hunting-identitylogonevents-table.md)、および "イベント id"[イベント](advanced-hunting-identityqueryevents-table.md)を含む)  | [Azure ATP センサーをインストールする](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)|
+| ドメイン コントローラー | オンプレミスの Active Directory から Azure ATP に送信されたデータによって、id 関連情報 (アカウントの詳細、ログオンアクティビティ、Active Directory クエリなど) が表示されます。 | 複数のテーブル ("identity [info](advanced-hunting-identityinfo-table.md)"、"id"[イベント](advanced-hunting-identitylogonevents-table.md)、および "イベント id"[イベント](advanced-hunting-identityqueryevents-table.md)を含む)  | - [Azure ATP センサーをインストールする](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [関連する Windows イベントを有効にする](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

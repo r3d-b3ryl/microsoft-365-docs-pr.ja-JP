@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '利用状況分析が API に接続する方法について説明し、さまざまな Microsoft 365 サービスの利用状況の月単位の傾向を示します。  '
-ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695093"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560861"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
@@ -140,6 +140,9 @@ Microsoft 365 usage analytics は、多次元データモデルを公開する A
 |SFB_P2PSummary  <br/> |このユーザーが関わったピアツーピア セッションの数です。  <br/> |
 |SFB_ConfOrgSummary  <br/> |このユーザーが編成した会議セッションの数です。  <br/> |
 |SFB_ConfPartSummary  <br/> |このユーザーが参加した会議セッションの数です。  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction は、ユーザーはアクティブと見なされますが、チャットメッセージ、1:1 通話、チャネルメッセージ、会議の合計、および開催された会議に対して、0の値があることを意味します。
    
 ### <a name="data-table---tenant-product-usage"></a>データ テーブル - Tenant Product Usage (テナント製品の利用状況)
 

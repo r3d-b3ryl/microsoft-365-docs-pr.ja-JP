@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780423"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560365"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -51,7 +51,7 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシーを構成および使用できるユーザー
 
-|ロール|できること|
+|役割|できること|
 |---------|---------|
 |グローバル管理者 (Azure、会社の管理者)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシーの設定を作成、読み取り、更新、または削除します。|
 |ユーザー|自分が所有する Microsoft 365 グループを更新または[復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
@@ -78,7 +78,7 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 
 グループの有効期限が切れるまで30日間、グループの所有者 (または所有者がいないグループに対して指定したメールアドレス) は、グループを簡単に更新できる電子メールを受信します。 更新されていない場合は、有効期限が切れるまで15日後にもう一度更新メールを受信します。 まだ更新していない場合は、有効期限が切れる前に1日に1回のメール通知を受信します。
 
-何らかの理由で、所有者または管理者が期限切れになる前にグループを更新しない場合でも、管理者は有効期限が切れてから30日以内にグループを復元することができます。 詳細については[、「削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group)」を参照してください。
+何らかの理由で所有者または管理者がグループを更新せずに期限切れになった場合、自動更新が行われないと、グループが自動的に更新される要件を満たしていないため、管理者は有効期限が切れてから30日後までグループを復元することができます。 詳細については[、「削除された Microsoft 365 グループを復元する](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group)」を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 
@@ -86,4 +86,6 @@ Microsoft 365 グループの使用が増加したことで、管理者とユー
 
 [孤立グループに新しい所有者を割り当てる](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Microsoft 365 グループの有効期限を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'
+[Microsoft 365 グループの有効期限を構成する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+
+[アクティビティベースの自動更新](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)

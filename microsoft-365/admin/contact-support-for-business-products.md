@@ -20,12 +20,13 @@ search.appverid:
 - MET150
 description: 国または地域別にリストされている電話番号を使用するか、サービス リクエストをオンラインで送信して、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
-ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.date: 7/28/2020
+ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536862"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552448"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 
@@ -64,12 +65,9 @@ ms.locfileid: "46536862"
 
 - **英国にお住まいの方は、0800 032 6417 にお問い合わせください。**
 
-### <a name="phone-numbers-for-other-countries"></a>その他の国の電話番号
-
 サポートの電話番号が上記にない場合は、下のドロップダウンメニューを使用して国または地域の番号を検索します。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 

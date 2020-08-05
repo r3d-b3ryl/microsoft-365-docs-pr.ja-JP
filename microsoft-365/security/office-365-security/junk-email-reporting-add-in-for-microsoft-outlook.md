@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: Microsoft 迷惑メール報告アドインをインストールおよび使用して、スパム、非スパム、フィッシングメッセージを Microsoft に報告する方法について説明します。
-ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 54b0fb634333ccb180870ab1fcc6160fd133f81e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208829"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560523"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する
 
@@ -63,7 +63,12 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、誤�
 
    ![フィッシングとして報告するダイアログ](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. 選択したメッセージが、分析用に Microsoft に送信され、迷惑メール フォルダーに移動されます。メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
+3. 選択したメッセージが分析のために Microsoft に送信され、次のようになります。
+
+   - 迷惑メールフォルダーがスパムとして報告された場合は、そのフォルダーに移動します。
+   - フィッシングとして報告された場合に削除されます。
+   
+   メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>迷惑メール報告アドインを使用して迷惑メールフォルダーからの非スパムメッセージとフィッシング詐欺メッセージを報告する
 
@@ -87,7 +92,12 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、誤�
 
    ![フィッシングとして報告するダイアログ](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. 選択したメッセージが、分析用に Microsoft に送信され、迷惑メール フォルダーに移動されます。メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
+3. 選択したメッセージが分析のために Microsoft に送信され、次のようになります。
+
+   - 迷惑メールフォルダーがスパムとして報告された場合は、そのフォルダーに移動します。
+   - フィッシングとして報告された場合に削除されます。
+
+   メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
 
 ## <a name="install-the-junk-email-reporting-add-in"></a>迷惑メール報告アドインをインストールする
 
@@ -96,7 +106,6 @@ Microsoft Outlook 用迷惑メール報告アドインを使用すると、誤�
 - に移動 <https://www.microsoft.com/download/details.aspx?id=18275> して、お使いの Office のバージョンに対応する .msi ファイルを、見つけやすい場所にダウンロードします。
 
   - **32 ビット**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-
   - **64 ビット**:`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - Outlook 2013 以降の場合、唯一の前提条件は、Microsoft .NET Framework 2.0 です。 Windows 10 では、ダウンロードから .NET Framework 2.0 をインストールすることはありません。
@@ -209,7 +218,7 @@ Outlook を閉じた後、次のいずれかの手順を使用して、迷惑メ
 
   表示されるダイアログで、[ **Outlook 用 Microsoft 迷惑メール報告アドインを削除**する] を選択し、[**次へ**] をクリックします。
 
-- **サイレントモード**: 適切な .msi ファイルを検索またはダウンロードします。 コマンドプロンプトウィンドウで、PathToFile を \< \> .msi ファイルの場所に置き換えて、次のいずれかのコマンドを実行します。
+- **サイレントモード**: 適切な .msi ファイルを検索またはダウンロードします。 コマンドプロンプトウィンドウで、を \<PathToFile\> .msi ファイルの場所に置き換えて、次のいずれかのコマンドを実行します。
 
   - **32 ビット**:
 
@@ -288,7 +297,7 @@ Microsoft にメッセージを送信するために使用できるその他の�
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>問題: ユーザーがメッセージを報告するときに確認のメッセージを表示しないように選択したときに、プロンプトが戻る
 
-1. `ConfirmReportJunk`レジストリキー wih を作成します。値は "True" です。
+1. 値が `ConfirmReportJunk` "True" のレジストリキーを作成します。
 
    ```text
    Windows Registry Editor Version 5.00

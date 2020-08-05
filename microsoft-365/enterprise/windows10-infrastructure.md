@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3b4a0174e96fec1591bcac7ba58bcc7d57db8c87
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011925"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552688"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>フェーズ 3: Windows 10 Enterprise
 
@@ -56,7 +56,7 @@ Windows 10 の詳細については、次の記事を参照してください。
 ## <a name="additional-services-and-features"></a>その他のサービスと機能
 Windows 10 Enterprise の展開の一環として、これらの追加のサービスと機能を追加することができます。
 
-### <a name="windows-analytics"></a>Windows Analytics
+### <a name="desktop-analytics"></a>Desktop Analytics
 
 Windows は診断データを使用して、環境内の Windows 10 デバイスの運用効率と正常性に関する詳細な洞察を得るために役立つ豊富で実用的な情報を提供します。
 
@@ -64,7 +64,7 @@ Windows は診断データを使用して、環境内の Windows 10 デバイス
 * コンプライアンスの更新-更新プログラムのコンプライアンスは、追加のインフラストラクチャ要件を伴わずに、すべての Windows 10 デバイスの全体的なビューを取得する IT 管理者を対象としています。
 * デバイスの正常性-デバイスの正常性を使用して、問題に影響を与えるエンドユーザーを事前に検出して修復することができます。
 
-詳細については、「 [Windows Analytics の概要](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview)」を参照してください。
+詳細については、「[デスクトップ分析の概要](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)」を参照してください。
 
 ### <a name="windows-security"></a>Windows セキュリティ
 

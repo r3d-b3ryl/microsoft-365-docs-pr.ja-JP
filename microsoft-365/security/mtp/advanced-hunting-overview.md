@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7bda309dbb1b601c77b6fb34ff9b8be14d5638d
-ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
+ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138280"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552436"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -33,8 +33,11 @@ ms.locfileid: "45138280"
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、興味深いインジケーターとエンティティを見つけることができます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威の両方に対して、無制限な捜索が容易になります。
+<p></p>
 
-同じ脅威を探しているクエリを使用して、カスタムの検出ルールを構築できます。 これらのルールは自動的に実行され、さまざまなイベントやシステムの状態を確認して応答します。これには、違反の疑いがあるアクティビティや不適切なコンピューターが含まれます。
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
+
+同じ脅威を捜索しているクエリを使用して、カスタムの検出ルールを作成できます。 これらのルールは自動的に実行され、違反の疑いがあるアクティビティや誤って構成されたコンピュータといった、さまざまなイベントやシステム状態をチェックして対処します。
 
 Microsoft 365 セキュリティセンターでは、高度な検索はさまざまなワークスペースからのデータになるクエリをサポートしています。これには、Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からのデバイス、メール、アプリ、id に関するデータが含まれます。 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
 
@@ -45,7 +48,7 @@ Microsoft 365 セキュリティセンターでは、高度な検索はさまざ
 | 学習目標 | 説明 | リソース |
 |--|--|--|
 | **言語に慣れる** | 高度な検索は、 [Kusto クエリ言語](https://docs.microsoft.com/azure/kusto/query/)に基づいており、同じ構文および演算子をサポートしています。 最初のクエリを実行して、クエリ言語を学習します。 | [クエリ言語の概要](advanced-hunting-query-language.md) |
-| **クエリ結果の使用方法について説明します。** | グラフと、結果を表示またはエクスポートするさまざまな方法について説明します。 クエリをすばやく微調整して、より豊富な情報を取得する方法について説明します。 | [クエリ結果を操作する](advanced-hunting-query-results.md) |
+| **クエリ結果の使用方法について説明します。** | グラフと、結果を表示またはエクスポートするさまざまな方法について説明します。 クエリをすばやく調整する方法、豊富な情報を取得するためのドリルダウン、および応答アクションを実行する方法について説明します。 | - [クエリ結果を操作する](advanced-hunting-query-results.md)<br>- [クエリ結果に対してアクションを実行する](advanced-hunting-take-action.md) |
 | **スキーマを理解する** | スキーマとその列のテーブルについて、高レベルで十分に理解してください。 これにより、データを検索する場所およびクエリの作成方法を決定できます。 | [スキーマ リファレンス](advanced-hunting-schema-tables.md) |
 | **定義済みのクエリを活用する** | さまざまな脅威の捜索シナリオを網羅する定義済みクエリのコレクションを調べます。 | - [共有クエリを使用する](advanced-hunting-shared-queries.md)<br>- [ハントに移動](advanced-hunting-go-hunt.md) |
 | **クエリを最適化する** | 効率的なクエリおよびメールとデバイスからのデータを結合するクエリを作成する方法を理解します。 | - [クエリのベストプラクティス](advanced-hunting-shared-queries.md) <br>- [複数のデバイスとメールを探します。](advanced-hunting-best-practices.md) |
@@ -63,6 +66,7 @@ Microsoft 365 セキュリティセンターでは、高度な検索はさまざ
 ## <a name="related-topics"></a>関連項目
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
+- [クエリ結果に対してアクションを実行する](advanced-hunting-take-action.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

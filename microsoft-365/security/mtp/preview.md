@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430365"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552664"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
 
@@ -57,5 +57,7 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 ## <a name="preview-features"></a>プレビュー機能
 現在、次の機能と拡張機能をプレビューで利用できます。
 
-- **[ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: セキュリティセンターで直接使用できるスキーマテーブルに関する情報。 このリファレンスでは、テーブルと列の説明に加えて、サポートされているイベントの種類 ( `ActionType` 値) とサンプルクエリに関する情報を提供します。
+- **[高度な検索でアクションを実行](advanced-hunting-take-action.md)** する:[高度な](advanced-hunting-overview.md)検索によって検出された脅威または侵害された資産への対処をすばやく行うことができます。
+
+- **[ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: セキュリティセンターで、高度な検索スキーマテーブルに関する情報を直接取得します。 この便利なリファレンスでは、テーブルと列の説明に加えて、サポートされているイベントの種類 (値) とサンプルクエリに関する情報を提供して `ActionType` います。
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 07/21/2020
-ms.openlocfilehash: 520009d26d0133a2c53c6149fe4938bea9db5a32
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503001"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560801"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 Business Premium に関するよく寄せられる質問
 
@@ -154,7 +154,7 @@ Windows AutoPilot は、新しい Windows 10 PC の展開を効率化するサ�
 Microsoft 365 Business Standard に追加できるすべてのアドオンは、Microsoft 365 Business Premiumに追加することができます。 これは、Office 365 Cloud App Security、Advanced コンプライアンス、脅威インテリジェンス、MyAnalytics、Power BI Pro、および電話会議を購入できることを意味します。 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>Microsoft 365 Business Premium に電話システムと通話プランを追加できますか。 
-いいえ。電話システムと通話プランはより高度なニーズのお客様向けの機能です。 これらの機能が必要なお客様は、Microsoft 365 Enterprise サービスをご検討ください。 
+はい。ビジネス音声サブスクリプションを購入することができます。 [ビジネス voip](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice)は、電話システム、電話会議、国内通話プランなどをバンドルした、最大300ユーザーの中小企業向けに設計されたテレフォニーソリューションです。 利用可能な電話システムの機能には、ボイスメール、発信者番号、コールパーク、着信の転送、自動応答、通話キューなどがあります。 <br> お住まいの国または地域でビジネス Voip が利用可能かどうかを確認するには、「 [Business voice の国と地域の可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)」を参照してください。 価格情報については、「[ビジネス音声の価格設定](https://go.microsoft.com/fwlink/?linkid=2127221)」を参照してください。
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 Business Premium のお客様は Microsoft Defender Advanced Threat Protection を使用できますか? 
 はい。 Microsoft Defender Advanced Threat Protection は、Microsoft 365 Business Premium のお客様へのアドオンとして提供されています。

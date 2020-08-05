@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールや Skype for Business Online などのサービスが独自のドメイン名を使用するように、Microsoft 365 にドメインを追加してセットアップする方法について説明します。
-ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399994"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560343"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>任意のドメインレジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する
 
@@ -162,15 +162,14 @@ Microsoft 365 のドメインのセットアップウィザードの最後の手
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
-3. [ ドメイン] ページで、ドメインを選びます。
+2. [**ドメイン**] ページで、ドメインを選択し、[ **DNS レコード**] を選択します。
 
-4. [ **DNS 設定**] で [**カスタムレコード**] を選択し、[**新しいカスタムレコード**] を選択します。
+3. [ **DNS 設定**] で [**カスタムレコード**] を選択し、[**新しいカスタムレコード**] を選択します。
 
-5. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
+4. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
 
-6. **[保存]** を選択します。
+5. [**保存**] を選択します。
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 
   
-

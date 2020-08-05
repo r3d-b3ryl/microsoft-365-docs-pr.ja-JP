@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: 'カスタムタイルをアプリ起動ツールに追加することによって、電子メール、ドキュメント、アプリ、SharePoint サイト、外部サイト、その他のリソースへのクイックリンクを作成します。 '
-ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cebb4385e40f2cef68d3ee26dca1cb905c8d91c5
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780135"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552496"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>カスタム タイルをアプリ起動ツールに追加する
 
-1. 管理センターで、[設定] [ **Settings**  >  **組織設定**] の順に移動し、[**組織プロファイル**] タブを選択します。
+1. グローバル管理者として管理センターにサインインし、[**設定**] [組織の設定] に移動して、[  >  **Org Settings****組織プロファイル**] タブを選択します。
     
 2. [**組織プロファイル**] タブで、[**カスタムアプリ起動ツールタイル**] を選択します。
   
@@ -91,4 +91,3 @@ SharePoint サイト、外部サイト、レガシー アプリなどをポイ�
 
 アプリ起動ツールにタイルを追加するだけでなく、アプリ起動ツールタイルをナビゲーションバーに追加することもできます ([詳細につい](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)ては、こちらを参照してください)。 組織のブランドに合わせて Microsoft 365 のルックアンドフィールをカスタマイズするには、「 [microsoft 365 テーマをカスタマイズ](../setup/customize-your-organization-theme.md)する」を参照してください。
   
-

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: DNS レコードが正しく設定されていることを確認して、カスタムドメインのセットアップ中に発生した問題を追跡する方法について説明します。
-ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0a315be243395940146479e05de2c7044a5a36ab
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399946"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560253"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>ドメインまたは DNS レコードを追加後に問題を特定して解決する
 
@@ -88,7 +88,7 @@ Microsoft 365 にドメインを追加すると、通常、Microsoft 365 をポ�
 Microsoft では、ドメインの DNS セットアップに関わる問題を解消するためのサポートを用意しています。 Microsoft 365 のドメインのトラブルシューティングツールを使用すると、修正が必要なレコードと、レコードを正確に設定する必要があることがわかります。 
 
 > [!TIP]
-> DNS は適切にセットアップされましたが、デスクトップ上の Outlook ではメールが機能しません。 [Microsoft 365 と共に使用できるさまざまなメールフローのシナリオ](https://www.microsoft.com/?ref=go)を確認して、ビジネスで適切に設定されていることを確認してください。 詳細については、「Outlook の[問題を修正](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)する」を参照してください。 
+> DNS は適切にセットアップされましたが、デスクトップ上の Outlook ではメールが機能しません。 [Microsoft 365 と共に使用できるさまざまなメールフローのシナリオ](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices)を確認して、ビジネスで適切に設定されていることを確認してください。 詳細については、「Outlook の[問題を修正](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)する」を参照してください。 
   
 ## <a name="accessing-your-website-isnt-working"></a>自分の Web サイトにアクセスできませんか?
 <a name="BKMK_Website"> </a>

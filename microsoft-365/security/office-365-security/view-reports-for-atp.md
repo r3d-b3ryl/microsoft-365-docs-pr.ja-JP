@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用し &amp; ます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434097"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560299"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -31,7 +31,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 
 ![セキュリティ & コンプライアンスセンターのレポートダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="advanced-threat-protection-file-types-report"></a>高度な脅威保護のファイルの種類レポート
+## <a name="advanced-threat-protection-file-types-report"></a>Advanced Threat Protection ファイルの種類レポート
 
 **Advanced Threat Protection のファイルの種類レポート**レポートには、 [ATP の安全な添付](atp-safe-attachments.md)ファイルによって検出されたファイルの種類が表示されます。
 
@@ -218,7 +218,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 
 - **[URL] [保護アクション] をクリック**します。組織内のユーザーによる URL クリック数、およびクリックの結果が表示されます。
 
-  - **ブロック済み**
+  - **ブロック**(ユーザーが URL への移動をブロックされた)
   - **ブロックとクリックスルー**
   - **スキャン中にクリックでクリック**
 
@@ -227,7 +227,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
   [**フィルター**] をクリックすると、次のフィルターを使用してレポートを変更できます。
 
   - **開始日**と**終了日**
-  - 使用可能なクリック保護アクションと、すべての URL クリック (ブロックされたクリックのみではない) の情報を表示**できる値を**加えたもの。
+  - 利用可能なクリック保護アクションと**許容さ**れる値 (ユーザーが URL への移動を許可されたもの)。
 
   ![URL URL の脅威保護レポートにある [保護アクション表示] をクリックします。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
@@ -254,7 +254,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 - **[時刻] をクリック**
 - **ユーザー**
 - **URL**
-- **Action**
+- **操作**
 - **App**
 
 詳細テーブルビューで [**フィルター** ] をクリックすると、レポートビューと同じ条件で、およびコンマで区切られた**ドメイン**または**受信者**によってフィルター処理を行うことができます。
