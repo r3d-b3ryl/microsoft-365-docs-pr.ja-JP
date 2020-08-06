@@ -20,12 +20,12 @@ description: Microsoft 情報保護フレームワークの秘密度ラベルを
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 55f3f9a37d8ce51c263c3b83cf31d838204c285a
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552699"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564048"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -39,9 +39,12 @@ Microsoft 情報保護フレームワークの秘密度ラベルを使用する�
 
 ![Excel のリボンおよびステータス バーに示された秘密度ラベル](../media/Sensitivity-label-in-Excel.png)
 
-秘密度ラベルは、グローバル (パブリック) クラウドのテナントでのみサポートされています。 現在、秘密度ラベルは、[国別クラウド](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)などの他のクラウドのテナントではサポートされていません。
+機密ラベルを適用するには、ユーザーは Microsoft 365の職場または学校のアカウントを使用して、サインインする必要があります。
 
-機密ラベルを適用するには、ユーザーは職場または学校のアカウントを使用して Office にサインインする必要があります。
+> [!NOTE]
+> US Government Community（GCCおよびGCC-HC）テナントの場合、機密ラベルは現在、Azure Information Protection の統合されたラベル付けクライアントとスキャナーでのみサポートされています。 
+> 
+> 詳細については、ブログ投稿[GCCおよびGCC-H環境での統合されたラベル付けの一般可用性の発表](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215)を参照してください。
 
 機密ラベルは、次の目的に使用できます。
   

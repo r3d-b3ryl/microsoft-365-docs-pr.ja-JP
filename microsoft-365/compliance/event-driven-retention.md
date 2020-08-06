@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: a3760feafa5307c8c71e83dcc72b988258b94a2a
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391509"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560534"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
@@ -85,7 +85,7 @@ ms.locfileid: "45391509"
 ![イベント ベースの保持をセットアップするワークフローの図](../media/event-based-retention-process.png)
   
 > [!TIP]
-> SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、「[保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)」を参照してください。
+> SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、[保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)を参照してください。
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保持期間がイベントに基づくラベルを作成する
 

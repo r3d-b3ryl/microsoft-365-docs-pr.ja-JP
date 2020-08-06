@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: 'ユーザーに別のユーザーのメールボックスにアクセスする権利を与える方法について説明します。 これにより、ユーザーは他のユーザーのメールボックスからメールを読み取り、メールを送信する権利を与えられます。 '
-ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780603"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560377"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
 
@@ -55,7 +55,10 @@ ms.locfileid: "44780603"
   
  **アクセス許可の設定後に使用する方法:**
   
-アクセス許可が付与された後に、メールボックスにアクセスするには、いくつかの異なる方法があります。このヘルプについては、次の記事を参照してください。[別のユーザーのメールボックスにアクセスする](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+アクセス許可が付与された後に、メールボックスにアクセスするには、いくつかの異なる方法があります。このヘルプについては、次の記事を参照してください:[別のユーザーのメールボックスにアクセスする](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)。
+
+> [!NOTE]
+> アクセス許可は、現在の組織のテナント内でのみ、セットアップできます。 テナント外のユーザーが、メールボックスのアクセス許可をセットアップすることはできません。　　
   
 ## <a name="send-email-from-another-users-mailbox"></a>別のユーザーのメールボックスからメールを送信する
 

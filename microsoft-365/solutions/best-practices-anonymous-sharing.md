@@ -2,7 +2,7 @@
 title: 認証されていない共有のベスト プラクティス
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 72da93a457b91ec7a25e88a0ac2aa8e64b6fe385
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: cea60152f06e8fbd242c9641b962bc9a96fdd019
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526936"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560477"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -46,6 +46,8 @@ ms.locfileid: "46526936"
 4. このボックスに日数を入力し、**[保存]** をクリックします。
 
 *[すべてのユーザー]* リンクの有効期限が切れても、新しい *[すべてのユーザー]* リンクを使ってファイルやフォルダーを再共有できることにご注意ください。
+
+[Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite)を使用して、特定のサイトまたは OneDrive で *[すべてのユーザー]* リンクの有効期限を設定できます。
 
 ## <a name="set-link-permissions"></a>リンクのアクセス許可を設定する
 

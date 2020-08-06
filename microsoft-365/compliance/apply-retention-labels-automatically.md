@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルを作成して自動発行します。
-ms.openlocfilehash: eb29a846f6a7352eec02683c70dad1b0a423bdfa
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127604"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560618"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -189,6 +189,4 @@ ms.locfileid: "45127604"
 
 ## <a name="next-steps"></a>次の手順
 
-別の形式のオートメーションである[イベント ベースの保持](event-driven-retention.md)による保持ラベルの使用を検討します。 この構成を使用すると、指定したイベントによって保持の開始がトリガーされます。 イベント ベースの保持は、自動ポリシーやラベル ポリシーと組み合わせて使用できます。
-
-SharePont の管理プロパティを使用して保持ラベルを自動適用し、イベント ドリブンの保持を実装する詳細なシナリオについては、「[保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)」を参照してください。
+[保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)を参照してください。例として、SharePoint の管理プロパティで、自動適用ポリシーを使用し、保持期間を開始するために、イベントベースの保持を使用するというシナリオがあります。

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430235"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560764"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -66,7 +66,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |ユーザーが、Outlook のルールを使用して、メールに保持ラベルを自動的に適用できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
 |ドキュメントやメールに対して保持アクションと削除アクションのセットを自動的に適用する |[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)|
 |次のようなイベントが発生したときに保持期間を開始する  <br />- 従業員が退職する <br />- 契約満了 <br />- 製品の有効期間の終了| [イベントの発生時に保持を開始する](event-driven-retention.md)|
-|SharePoint で各種ドキュメントのライフサイクルを管理する| [保持ラベルを使用して SharePoint ドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)|
+|SharePoint で各種ドキュメントのライフサイクルを管理する| [保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)|
 |ドキュメントとメールの両方に対して 1 つのレコード管理ソリューションを使用する |[Microsoft 365 のレコードの管理](records-management.md) |
 |SEC Rule 17a-4 に準拠する|[Exchange Online およびセキュリティ/コンプライアンス センターを使用して SEC Rule 17a-4 に準拠する](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |保持期間の終了時にコンテンツが削除される前に、誰かがレビューと承認を行うようにする|[廃棄確認](disposition.md#disposition-reviews) |

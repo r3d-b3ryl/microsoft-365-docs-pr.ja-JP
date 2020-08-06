@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: 33b84423fa4744c34e184690bcfc3fe8dd435298
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528050"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560233"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -41,6 +41,12 @@ ms.locfileid: "46528050"
 
 > [!IMPORTANT]
 > この記事の手順に進む前に、「[Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護するために秘密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)を有効にしていることを確認します。
+
+<a name="poster"></a> このシナリオを 2 ページにまとめた、[セキュリティの分離ポスター を使用したMicrosoft チーム](../downloads/team-security-isolation-poster.pdf)を参照してください。
+
+[![セキュリティの分離ポスター を使用したMicrosoft チーム](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+
+このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
 ## <a name="initial-protections"></a>初期保護
 
