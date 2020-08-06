@@ -1,5 +1,5 @@
 ---
-title: 配信不能レポート
+title: メールフローダッシュボードの配信不能レポート
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,52 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートについて学習できます。
-ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある配信不能レポート (Ndr またはバウンスメッセージとも呼ばれる) で、組織内の送信者に対して発生する可能性の高いエラーコードを監視する方法について説明します。
+ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819511"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577439"
 ---
-# <a name="non-delivery-report"></a><span data-ttu-id="195da-103">配信不能レポート</span><span class="sxs-lookup"><span data-stu-id="195da-103">Non-delivery report</span></span>
+# <a name="non-delivery-report-in-the-security--compliance-center"></a><span data-ttu-id="022c0-103">セキュリティ & コンプライアンスセンターの配信不能レポート</span><span class="sxs-lookup"><span data-stu-id="022c0-103">Non-delivery report in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="195da-104">**配信不能レポート**には、組織内のユーザーの配信不能レポート (ndr またはバウンスメッセージとも呼ばれる) で最も発生したエラーコードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="195da-104">The **Non-delivery report** shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="195da-105">このレポートは Ndr の詳細を表示することを目的としているため、問題のトラブルシューティングを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="195da-105">This report is intended to show the details of NDRs, so you can troubleshoot problems.</span></span>
+<span data-ttu-id="022c0-104">セキュリティ & コンプライアンスセンターの[メールフローダッシュボード](mail-flow-insights-v2.md)の**配信不能レポート**は、組織内のユーザーの配信不能レポート (ndr またはバウンスメッセージとも呼ばれる) で最も発生したエラーコードを示しています。</span><span class="sxs-lookup"><span data-stu-id="022c0-104">The **Non-delivery report** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="022c0-105">このレポートには、メール配信の問題のトラブルシューティングに使用できる Ndr の詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="022c0-105">This report shows the details of NDRs so you can troubleshoot email delivery problems.</span></span>
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポート](../../media/non-delivery-report-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの配信不能レポートウィジェット](../../media/mfi-non-delivery-report-widget.png)
 
-<span data-ttu-id="195da-107">[**データの表示]** をクリックすると、すべての NDR コードまたは特定のコードに関する情報を表示できます。</span><span class="sxs-lookup"><span data-stu-id="195da-107">You can show information for all NDR codes or a specific code by clicking **Show data for**.</span></span> <span data-ttu-id="195da-108">また、次の図に示すように、[**詳細テーブルの表示**] をクリックして、より詳細なビューを表示することもできます。</span><span class="sxs-lookup"><span data-stu-id="195da-108">You can also click **View details table** to see a more detailed view as shown in the following diagram:</span></span>
+## <a name="report-view-for-the-non-delivery-report"></a><span data-ttu-id="022c0-107">配信不能レポートのレポートビュー</span><span class="sxs-lookup"><span data-stu-id="022c0-107">Report view for the Non-delivery report</span></span>
 
-![配信不能レポートの詳細表を表示する](../../media/non-delivery-report-view-details-table.png)
+<span data-ttu-id="022c0-108">**配信不能レポート**ウィジェットをクリックすると、**配信不能レポート**に移動します。</span><span class="sxs-lookup"><span data-stu-id="022c0-108">Clicking on the **Non-delivery report** widget will take you to the **Non-delivery report**.</span></span>
 
-<span data-ttu-id="195da-110">特定の NDR の詳細を表示するためにテーブルの行を選択する場合は、詳細情報を使用してトラブルシューティングを行ったり、必要なアクションを実行したりできます。</span><span class="sxs-lookup"><span data-stu-id="195da-110">When you select a row in the table to view the details of the specific NDR, you can use the detailed information to troubleshoot and take the necessary actions.</span></span>
+<span data-ttu-id="022c0-109">既定では、すべてのエラーコードのアクティビティが表示されます。</span><span class="sxs-lookup"><span data-stu-id="022c0-109">By default, the activity for all error codes is shown.</span></span> <span data-ttu-id="022c0-110">[**データの表示**] をクリックすると、ドロップダウンから特定のエラーコードを選択できます。</span><span class="sxs-lookup"><span data-stu-id="022c0-110">If you click **Show data for**, you can select a specific error code from the dropdown.</span></span>
 
-![配信不能レポートの詳細表で行を選択する](../../media/non-delivery-report-details-table-select-row.png)
+<span data-ttu-id="022c0-111">グラフの特定の日の特定の色 (エラーコード) の上にカーソルを置くと、エラーが発生したメッセージの合計数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="022c0-111">If you hover over a specific color (error code) on a specific day in the chart, you'll see the total number of messages for the error.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="195da-112">関連項目</span><span class="sxs-lookup"><span data-stu-id="195da-112">Related topics</span></span>
+![承認されていないドメインレポートのレポートビュー](../../media/mfi-non-delivery-report-overview-view.png)
 
-<span data-ttu-id="195da-113">メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="195da-113">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="details-table-view-for-the-non-delivery-report"></a><span data-ttu-id="022c0-113">配信不能レポートの詳細表ビュー</span><span class="sxs-lookup"><span data-stu-id="022c0-113">Details table view for the Non-delivery report</span></span>
+
+<span data-ttu-id="022c0-114">レポートビューで [**詳細テーブルの表示**] をクリックすると、次の情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="022c0-114">If you click **View details table** in a report view, the following information is shown:</span></span>
+
+- <span data-ttu-id="022c0-115">**Date**</span><span class="sxs-lookup"><span data-stu-id="022c0-115">**Date**</span></span>
+- <span data-ttu-id="022c0-116">**配信不能レポートのコード**</span><span class="sxs-lookup"><span data-stu-id="022c0-116">**Non-delivery report code**</span></span>
+- <span data-ttu-id="022c0-117">**Count**</span><span class="sxs-lookup"><span data-stu-id="022c0-117">**Count**</span></span>
+- <span data-ttu-id="022c0-118">**サンプルメッセージ**: 影響を受けるメッセージのサンプルのメッセージ id。</span><span class="sxs-lookup"><span data-stu-id="022c0-118">**Sample messages**: The message IDs of a sample of affected messages.</span></span>
+
+<span data-ttu-id="022c0-119">詳細テーブルビューで [**フィルター** ] をクリックすると、**開始日**と**終了日**を含む日付範囲を指定できます。</span><span class="sxs-lookup"><span data-stu-id="022c0-119">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="022c0-120">特定の日付範囲のレポートに対して1人以上の受信者を電子メールで送信するには、[**ダウンロードの依頼**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="022c0-120">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+
+<span data-ttu-id="022c0-121">表の行を選択すると、次の情報を含むフライアウトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="022c0-121">When you select a row in the table, a flyout appears with the following information:</span></span>
+
+- <span data-ttu-id="022c0-122">**Date**</span><span class="sxs-lookup"><span data-stu-id="022c0-122">**Date**</span></span>
+- <span data-ttu-id="022c0-123">**配信不能レポートコード**: 特定のエラーコードの原因と解決方法の詳細については、リンクをクリックして確認できます。</span><span class="sxs-lookup"><span data-stu-id="022c0-123">**Non-delivery report code**: You can click on the link to find for more information about the causes and solutions for the specific error code.</span></span>
+- <span data-ttu-id="022c0-124">**Count**</span><span class="sxs-lookup"><span data-stu-id="022c0-124">**Count**</span></span>
+- <span data-ttu-id="022c0-125">**サンプルメッセージ**: [**サンプルメッセージの表示**] をクリックすると、影響を受けたメッセージのサンプルの[メッセージの追跡](message-trace-scc.md)結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="022c0-125">**Sample messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.</span></span>
+
+![配信不能レポートの [詳細] テーブルビューで行を選択した後の詳細ポップアップ](../../media/mfi-non-delivery-report-details-flyout.png)
+
+## <a name="related-topics"></a><span data-ttu-id="022c0-127">関連項目</span><span class="sxs-lookup"><span data-stu-id="022c0-127">Related topics</span></span>
+
+<span data-ttu-id="022c0-128">メールフローダッシュボードの他の洞察の詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="022c0-128">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

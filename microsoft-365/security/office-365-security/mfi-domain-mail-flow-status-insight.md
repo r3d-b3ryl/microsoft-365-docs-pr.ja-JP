@@ -1,5 +1,5 @@
 ---
-title: トップ ドメインのメール フローの状態洞察
+title: メールフローダッシュボードのトップドメインメールフローのステータスの洞察
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,34 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインのメールフローの状態に関する洞察を得ることができます。
-ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインのメールフロー状態の洞察を使用して、電子メールドメイン内の MX レコードに関連するメールフローの問題のトラブルシューティングを行う方法を学習できます。
+ms.openlocfilehash: 6366e3aee0ab50096f1396776397c80fabc8aaf2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818593"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577754"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a><span data-ttu-id="be421-103">トップ ドメインのメール フローの状態洞察</span><span class="sxs-lookup"><span data-stu-id="be421-103">Top domain mail flow status insight</span></span>
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a><span data-ttu-id="27702-103">セキュリティ & コンプライアンスセンターでの上位ドメインメールフローのステータスの洞察</span><span class="sxs-lookup"><span data-stu-id="27702-103">Top domain mail flow status insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="be421-104">**上位ドメインのメールフローの状態**に関する情報は、メールフローの観点から、組織のドメインの現在の状態を示します。</span><span class="sxs-lookup"><span data-stu-id="be421-104">The **Top domain mail flow status** insight gives you the current status for your organization's domains in terms of mail flow.</span></span> <span data-ttu-id="be421-105">この洞察は、***メールフローに影響を与える***(たとえば、外部電子メールを受信できない) 問題が発生しているドメインを特定してトラブルシューティングするのに役立ちます。特に、ドメインの有効期限、または間違った MX レコードがあるドメイン。</span><span class="sxs-lookup"><span data-stu-id="be421-105">This insight helps you identify and troubleshoot domains that are experiencing ***mail flow impacting*** issues (for example, unable to receive external email), especially domain expirations or domains with incorrect MX records.</span></span>
+<span data-ttu-id="27702-104">セキュリティ & コンプライアンスセンターの[メールフローダッシュボード](mail-flow-insights-v2.md)にある**上位ドメインメールフローの状態**に関する洞察は、メールフローの観点から、組織のドメインの現在の状態を示しています。</span><span class="sxs-lookup"><span data-stu-id="27702-104">The **Top domain mail flow status** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives you the current status for your organization's domains in terms of mail flow.</span></span> <span data-ttu-id="27702-105">この洞察は、***メールフローに影響を与える***(たとえば、外部電子メールを受信できない) 問題が発生しているドメインを特定してトラブルシューティングするのに役立ちます。特に、ドメインの有効期限、または間違った MX レコードがあるドメイン。</span><span class="sxs-lookup"><span data-stu-id="27702-105">This insight helps you identify and troubleshoot domains that are experiencing ***mail flow impacting*** issues (for example, unable to receive external email), especially domain expirations or domains with incorrect MX records.</span></span>
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインフローの状態の洞察](../../media/domain-mail-flow-status-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードのトップドメインフロー状態ウィジェット](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-<span data-ttu-id="be421-107">[**詳細**] をクリックすると、各ドメインの状態の詳細が表示されるポップアップが表示されます。</span><span class="sxs-lookup"><span data-stu-id="be421-107">When you click **View details** in the insight, a flyout appears that shows you more details for the status of each domain.</span></span>
+<span data-ttu-id="27702-107">ウィジェットの [**詳細の表示**] をクリックすると、**ドメイン状態**ポップアップが表示され、各ドメインの状態の詳細がわかります。</span><span class="sxs-lookup"><span data-stu-id="27702-107">When you click **View details** in the widget, a **Domain status** flyout appears that shows you more details for the status of each domain:</span></span>
 
-<span data-ttu-id="be421-108">ドメインに緑のチェックマークが表示されている場合は、現在の MX レコード (メールフローインサイトダッシュボードを参照した場合) がレコードに設定されている値と一致し、ドメインが過去2時間以内に電子メールを受信したことを示します。</span><span class="sxs-lookup"><span data-stu-id="be421-108">A green check mark for a domain indicates the current MX record (when you browsed to the mail flow insights dashboard) matches the value we have on record, and that the domain has received email during the past two hours.</span></span>
+- <span data-ttu-id="27702-108">**ドメイン**</span><span class="sxs-lookup"><span data-stu-id="27702-108">**Domain**</span></span>
+- <span data-ttu-id="27702-109">**以前の MX レコード**</span><span class="sxs-lookup"><span data-stu-id="27702-109">**Previous MX record**</span></span>
+- <span data-ttu-id="27702-110">**現在の MX レコード**</span><span class="sxs-lookup"><span data-stu-id="27702-110">**Current MX record**</span></span>
+- <span data-ttu-id="27702-111">**受信した電子メールの状態**</span><span class="sxs-lookup"><span data-stu-id="27702-111">**Email receiving status**</span></span>
+- <span data-ttu-id="27702-112">**ドメインの状態**: 緑のチェックマークは、現在の MX レコード (ウィジェットをクリックしたとき) がレコードに設定されている値と一致し、ドメインが過去2時間以内に電子メールを受信したことを示します。</span><span class="sxs-lookup"><span data-stu-id="27702-112">**Domain status**: A green check mark indicates the current MX record (at the time you clicked on the widget) matches the value we have on record, and that the domain has received email during the past two hours.</span></span>
 
-<span data-ttu-id="be421-109">ドメインの赤色の x は、MX レコードが変更されており、過去6時間以内にドメインがメールを受信していないことを示します。</span><span class="sxs-lookup"><span data-stu-id="be421-109">A red x for a domain indicates the MX record has been changed, and that the domain has received no email during the past 6 hours.</span></span> <span data-ttu-id="be421-110">これは、ドメインの有効期限が切れているか、MX レコードが正しく更新されていないことを示している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="be421-110">This likely indicates that your domain has expired, or that the MX record has been incorrectly updated.</span></span> <span data-ttu-id="be421-111">ドメインレジストラーまたは DNS ホスティングサービスを使用して、ドメインの有効期限が切れていないか、またはドメインの MX レコードが正しくないかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="be421-111">Check with your domain registrar or DNS hosting service to see if the domain has expired, or if the domain's MX record is incorrect.</span></span>
+  <span data-ttu-id="27702-113">赤の X は、MX レコードが変更されたこと、および過去6時間以内にドメインがメールを受信していないことを示します。</span><span class="sxs-lookup"><span data-stu-id="27702-113">A red X indicates the MX record has been changed, and that the domain has received no email during the past 6 hours.</span></span> <span data-ttu-id="27702-114">これは、ドメインの有効期限が切れているか、MX レコードが正しく更新されていないことを示している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="27702-114">This likely indicates that your domain has expired, or that the MX record has been incorrectly updated.</span></span> <span data-ttu-id="27702-115">ドメインレジストラーまたは DNS ホスティングサービスを使用して、ドメインの有効期限が切れていないか、またはドメインの MX レコードが正しくないかどうかを確認します。</span><span class="sxs-lookup"><span data-stu-id="27702-115">Check with your domain registrar or DNS hosting service to see if the domain has expired, or if the domain's MX record is incorrect.</span></span>
 
-![トップドメインフローの状態に関する詳細ポップアップ](../../media/domain-mail-flow-status-flyout.png)
+<span data-ttu-id="27702-116">[**詳細表示**] をクリックすると、他のドメインについても同じ情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="27702-116">You can click **View more** to see the same information for more domains.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="be421-113">関連項目</span><span class="sxs-lookup"><span data-stu-id="be421-113">Related topics</span></span>
+![上位ドメインのメールフローの状態に関する詳細ポップアップ](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-<span data-ttu-id="be421-114">メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="be421-114">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="related-topics"></a><span data-ttu-id="27702-118">関連項目</span><span class="sxs-lookup"><span data-stu-id="27702-118">Related topics</span></span>
+
+<span data-ttu-id="27702-119">メールフローダッシュボードの他の洞察の詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="27702-119">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

@@ -1,11 +1,11 @@
 ---
-title: 低速メール フローのルールのインサイト
+title: 低速メールフロールールの洞察を修正する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 5/3/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +13,39 @@ localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについて理解できます。
-ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理者は、セキュリティ & コンプライアンスセンターにある [低速なメールフロールールの詳細を修正する] を使用して、組織内の非効率的または壊れたメールフロールール (トランスポートルールとも呼ばれます) を特定して修正する方法を学習できます。
+ms.openlocfilehash: bb1c09c2809260be8086059259a1aeec3f1fb3eb
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819366"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577166"
 ---
-# <a name="slow-mail-flow-rules-insight"></a><span data-ttu-id="b5fe2-103">低速メール フローのルールのインサイト</span><span class="sxs-lookup"><span data-stu-id="b5fe2-103">Slow mail flow rules insight</span></span>
+# <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a><span data-ttu-id="6347c-103">セキュリティ & コンプライアンスセンターでの低速メールフロールールの洞察を修正する</span><span class="sxs-lookup"><span data-stu-id="6347c-103">Fix slow mail flow rules insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="b5fe2-104">非効率的なメールフロールール (トランスポートルールとも呼ばれます) は、組織のメールフロー遅延につながる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="b5fe2-105">この洞察は、組織のメールフローに影響を与えるメールフロールールを報告します。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="b5fe2-106">これらの種類のルールの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-106">Examples of these types of rules are:</span></span>
+<span data-ttu-id="6347c-104">非効率的なメールフロールール (トランスポートルールとも呼ばれます) は、組織のメールフロー遅延につながる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="6347c-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="6347c-105">この洞察は、組織のメールフローに影響を与えるメールフロールールを報告します。</span><span class="sxs-lookup"><span data-stu-id="6347c-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="6347c-106">これらの種類のルールの例を次に示します。</span><span class="sxs-lookup"><span data-stu-id="6347c-106">Examples of these types of rules include:</span></span>
 
-- <span data-ttu-id="b5fe2-107">**が**大規模なグループの場合、を使用する条件。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-107">Conditions that use **Is member of** for large groups.</span></span>
+- <span data-ttu-id="6347c-107">**が**大規模なグループの場合、を使用する条件。</span><span class="sxs-lookup"><span data-stu-id="6347c-107">Conditions that use **Is member of** for large groups.</span></span>
+- <span data-ttu-id="6347c-108">複合正規表現 (regex) パターンマッチングを使用する条件。</span><span class="sxs-lookup"><span data-stu-id="6347c-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
+- <span data-ttu-id="6347c-109">添付ファイルのコンテンツチェックを使用する条件。</span><span class="sxs-lookup"><span data-stu-id="6347c-109">Conditions that use content checking in attachments.</span></span>
 
-- <span data-ttu-id="b5fe2-108">複合正規表現 (regex) パターンマッチングを使用する条件。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
+<span data-ttu-id="6347c-110">「セキュリティの**低速メール**フロールール」では、セキュリティ & コンプライアンスセンターのメール[フローダッシュボード](mail-flow-insights-v2.md)の**推奨事項につい**て理解しています。メールフロールールの完了に時間がかかりすぎた場合に通知します。</span><span class="sxs-lookup"><span data-stu-id="6347c-110">The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail flow rule is taking too long to complete.</span></span> <span data-ttu-id="6347c-111">この洞察は、条件が検出された後にのみ表示されます (メールループがない場合は、洞察は見られません)。</span><span class="sxs-lookup"><span data-stu-id="6347c-111">This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).</span></span>
 
-- <span data-ttu-id="b5fe2-109">添付ファイルのコンテンツチェックを使用する条件。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-109">Conditions that use content checking in attachments.</span></span>
+<span data-ttu-id="6347c-112">メールフローの遅延を減らすために、この通知を使用して、メールフロールールを識別し、微調整することができます。</span><span class="sxs-lookup"><span data-stu-id="6347c-112">You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
 
-<span data-ttu-id="b5fe2-110">この洞察は、メールフローの遅延を減らすために、メールフロールールを特定し、微調整するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-110">The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
+![メールフローダッシュボードのお住まいの地域で推奨されるメールフロールールの詳細を修正する](../../media/mfi-fix-slow-mail-flow-rules.png)
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードに記載されている低速メールフロールールについての考察](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+<span data-ttu-id="6347c-114">ウィジェットの [**詳細の表示**] をクリックすると、詳細情報を含むフライアウトが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6347c-114">When you click **View details** on the widget, a flyout appears with more information:</span></span>
 
-<span data-ttu-id="b5fe2-112">[詳細の**表示**] をクリックすると、フライアウトウィンドウが表示され、ルールを確認できます。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-112">When you click **View details**, a flyout pane appears where you can review the rule.</span></span> <span data-ttu-id="b5fe2-113">また、フライアウトウィンドウで [**サンプルメッセージの表示**] をクリックして、ルールによって影響を受けたメッセージの種類を確認することもできます。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-113">In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.</span></span>
+- <span data-ttu-id="6347c-115">**ルール**: 概要にマウスカーソルを移動すると、ルールのすべての条件、例外、およびアクションが表示されます。</span><span class="sxs-lookup"><span data-stu-id="6347c-115">**Rule**: You can hover over the summary to see all of the conditions, exceptions, and actions of the rule.</span></span> <span data-ttu-id="6347c-116">概要をクリックして、Exchange 管理センター (EAC) でルールを編集できます。</span><span class="sxs-lookup"><span data-stu-id="6347c-116">You can click on the summary to edit the rule in the Exchange admin center (EAC).</span></span>
+- <span data-ttu-id="6347c-117">評価された**メッセージの数**: [**サンプルメッセージの表示**] をクリックすると、ルールの影響を受けたメッセージのサンプルのメッセージの[追跡](message-trace-scc.md)結果が表示されます。</span><span class="sxs-lookup"><span data-stu-id="6347c-117">**Number of messages evaluated**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the rule.</span></span>
+- <span data-ttu-id="6347c-118">**各メッセージにかかった平均時間**</span><span class="sxs-lookup"><span data-stu-id="6347c-118">**Average time spent on each message**</span></span>
+- <span data-ttu-id="6347c-119">**メッセージにかかった平均**時間: 時間データの下半分から上半分を区切る中央値。</span><span class="sxs-lookup"><span data-stu-id="6347c-119">**Median time spent on a message**: The middle value that separates the upper half from the lower half of time data.</span></span>
 
-![メールフローダッシュボードの [低速メールフロールールの詳細を表示する] をクリックした後のフライアウトウィンドウ](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![[Fix the details mail flow rules] の [詳細の表示] をクリックした後に表示される詳細ポップアップ](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-## <a name="related-topics"></a><span data-ttu-id="b5fe2-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="b5fe2-115">Related topics</span></span>
+<span data-ttu-id="6347c-121">Exchange Online のメールフロールールにおける条件と例外の詳細については、「 [Exchange online のメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6347c-121">For more information about conditions and exceptions in mail flow rules in Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).</span></span>
 
-<span data-ttu-id="b5fe2-116">メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b5fe2-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6347c-122">関連項目</span><span class="sxs-lookup"><span data-stu-id="6347c-122">Related topics</span></span>
+
+<span data-ttu-id="6347c-123">メールフローダッシュボードの他の洞察の詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="6347c-123">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

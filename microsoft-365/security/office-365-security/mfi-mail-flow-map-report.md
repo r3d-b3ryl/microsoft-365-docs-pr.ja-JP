@@ -1,5 +1,5 @@
 ---
-title: メール フローのマップ レポート
+title: メールフローマップ
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップレポートの詳細を確認できます。
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップを使用して、コネクタ経由のメールフローと、コネクタを使用せずに組織との間で送受信されるメールフローを視覚的に追跡する方法を学習できます。
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818845"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577693"
 ---
-# <a name="mail-flow-map-report"></a><span data-ttu-id="eb422-103">メール フローのマップ レポート</span><span class="sxs-lookup"><span data-stu-id="eb422-103">Mail flow map report</span></span>
+# <a name="mail-flow-map-in-the-security--compliance-center"></a><span data-ttu-id="bd29f-103">セキュリティ & コンプライアンスセンターのメールフローマップ</span><span class="sxs-lookup"><span data-stu-id="bd29f-103">Mail flow map in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="eb422-104">このレポートでは、組織を通過するメールの流れについての情報が提供されます。</span><span class="sxs-lookup"><span data-stu-id="eb422-104">This report gives insights as to how mail flows through your organization.</span></span> <span data-ttu-id="eb422-105">この情報を使用して、パターンを学習し、異常を特定し、発生した問題を解決することができます。</span><span class="sxs-lookup"><span data-stu-id="eb422-105">You can use this information to learn patterns, identify anomalies, and fix issues as they arise.</span></span>
+<span data-ttu-id="bd29f-104">セキュリティ & コンプライアンスセンターの[メールフローダッシュボード](mail-flow-insights-v2.md)の**メールフローマップ**は、組織内のメールフローについての洞察を提供します。</span><span class="sxs-lookup"><span data-stu-id="bd29f-104">The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization.</span></span> <span data-ttu-id="bd29f-105">この情報を使用すると、パターンを学習し、異常を特定し、発生した問題を解決できます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-105">You can use this information to learn patterns, identify anomalies, and fix issues as they occur.</span></span>
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードのメールフローマップレポート](../../media/mail-flow-map-selected.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードのメールフローマップウィジェット](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a><span data-ttu-id="eb422-107">メールフローマップウィジェット</span><span class="sxs-lookup"><span data-stu-id="eb422-107">Mail flow map widget</span></span>
+<span data-ttu-id="bd29f-107">既定では、このウィジェットは、前の日のメールフローパターンを、 *Sankey*図と呼ばれるグラフに表示します。</span><span class="sxs-lookup"><span data-stu-id="bd29f-107">By default, the widget shows the mail flow pattern from the previous day in a chart known as a *Sankey* diagram.</span></span> <span data-ttu-id="bd29f-108">左向き矢印←および→右矢印を使用して、 ![ ](../../media/scc-left-arrow.png) ![ ](../../media/scc-right-arrow.png) さまざまな日からの情報を表示することができます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-108">You can use the left arrow ![Left arrow](../../media/scc-left-arrow.png) and right arrow ![Right arrow](../../media/scc-right-arrow.png) to show information from different days.</span></span> <span data-ttu-id="bd29f-109">それぞれの異なる色は、異なる受信コネクタまたは送信コネクタ経由のメールフローを表します (またはコネクタを使用しない)。</span><span class="sxs-lookup"><span data-stu-id="bd29f-109">Each different color represents mail flow over a different inbound or outbound connector (or without using connectors).</span></span> <span data-ttu-id="bd29f-110">特定の色の上にカーソルを置くと、そのコネクタの種類に応じたメッセージ数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-110">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-<span data-ttu-id="eb422-108">既定では、メールフローマップは、前日からの高レベルのメールフローパターンを示しています。</span><span class="sxs-lookup"><span data-stu-id="eb422-108">By default, the mail flow map shows the high level mail flow pattern from the previous day.</span></span> <span data-ttu-id="eb422-109">さまざまな日の左矢印と右矢印を使用できます。</span><span class="sxs-lookup"><span data-stu-id="eb422-109">You can use the left and right arrows for different days.</span></span> <span data-ttu-id="eb422-110">レポートの各領域の上にマウスカーソルを移動すると、次の図に示すように、組織との間のメールの量が表示されます。</span><span class="sxs-lookup"><span data-stu-id="eb422-110">Hovering your mouse cursor over each area in the report will show the volume of mail to and from your organization as shown in the following diagram:</span></span>
+## <a name="report-view-for-the-mail-flow-map"></a><span data-ttu-id="bd29f-111">メールフローマップのレポートビュー</span><span class="sxs-lookup"><span data-stu-id="bd29f-111">Report view for the Mail flow map</span></span>
 
-![メールフローマップウィジェットの左および右の矢印](../../media/mail-flow-map-widget.png)
+<span data-ttu-id="bd29f-112">**メールフローマップ**ウィジェットをクリックすると、**メールフローマップ**レポートが表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-112">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span>
 
-## <a name="mail-flow-map-basics"></a><span data-ttu-id="eb422-112">メールフローマップの基礎</span><span class="sxs-lookup"><span data-stu-id="eb422-112">Mail flow map basics</span></span>
+<span data-ttu-id="bd29f-113">次のグラフがレポートビューで利用できます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-113">The following charts are available in the report view:</span></span>
 
-<span data-ttu-id="eb422-113">**メールフローマップ**ウィジェットをクリックすると、**メールフローマップ**レポートが表示されます。</span><span class="sxs-lookup"><span data-stu-id="eb422-113">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span> <span data-ttu-id="eb422-114">詳細なレポートを表示するには、[詳細データの表示] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="eb422-114">Here you can see more granular level of report, you can click View details table to see detailed data.</span></span> <span data-ttu-id="eb422-115">[要求レポート] をクリックして詳細レポートをダウンロードすることもできます。</span><span class="sxs-lookup"><span data-stu-id="eb422-115">You can also download the detailed report by clicking Request report.</span></span>
+- <span data-ttu-id="bd29f-114">**データの表示: 概要**: これは基本的に、ウィジェットの大きな表示です。</span><span class="sxs-lookup"><span data-stu-id="bd29f-114">**Show data for: Overview**: This is basically a larger view of the widget.</span></span> <span data-ttu-id="bd29f-115">特定の色の上にカーソルを置くと、そのコネクタの種類に応じたメッセージ数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-115">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-![メールフローマップレポートの概要ビュー](../../media/mail-flow-map-overview.png)
+  ![メールフローマップレポートの概要ビュー](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a><span data-ttu-id="eb422-117">詳細</span><span class="sxs-lookup"><span data-stu-id="eb422-117">Details</span></span>
+- <span data-ttu-id="bd29f-117">**データの表示: 詳細**: このビューには、コネクタと送信先ドメインの詳細が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-117">**Show data for: Detail**: This view shows details about the connectors and destination domains.</span></span> <span data-ttu-id="bd29f-118">上位の送信者と受信者のドメインが一覧表示され、残りは**他のユーザー**に配置されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-118">The top sender and recipient domains are listed, and the rest are put in **Others**.</span></span> <span data-ttu-id="bd29f-119">特定の色とセクションの上にカーソルを移動すると、メッセージの数が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-119">If you hover over a specific color and section, the number of messages is displayed.</span></span>
 
-<span data-ttu-id="eb422-118">既定では、[**データの表示]** は値の**概要**に設定されています。</span><span class="sxs-lookup"><span data-stu-id="eb422-118">By default, **Show data for** is set to the value **Overview**.</span></span> <span data-ttu-id="eb422-119">ドロップダウンをクリックして [ **detail**] を選択すると、ビューはドメインレベルの詳細に切り替わります。</span><span class="sxs-lookup"><span data-stu-id="eb422-119">When you click on the drop down and select **Detail**, the view switches to the domain level detail.</span></span>
+  ![メールフローマップレポートの詳細表示](../../media/mfi-mail-flow-map-report-detail.png)
 
-![メールフローマップレポートの概要表示での [データの表示] での詳細の選択](../../media/mail-flow-map-select-detail.png)
+<span data-ttu-id="bd29f-121">レポートビューで [**フィルター** ] をクリックすると、**開始日**と**終了日**を含む日付範囲を指定できます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-121">If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-<span data-ttu-id="eb422-121">次の図に示すように、上位の送信者と受信者のドメインが表示され、残りは**他のユーザー**に配置されます。</span><span class="sxs-lookup"><span data-stu-id="eb422-121">The top sender and recipient domains are listed, and the rest will be put in **Others** as shown in the following diagrams:</span></span>
+<span data-ttu-id="bd29f-122">特定の日付範囲のレポートに対して1人以上の受信者を電子メールで送信するには、[**ダウンロードの依頼**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd29f-122">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
 
-![メールフローマップレポートの詳細表示](../../media/mail-flow-map-detail.png)
+<span data-ttu-id="bd29f-123">関連する洞察は、使用可能な場合はメールフローマップの下に表示されます (たとえば、[[可能なメールループ](mfi-mail-loop-insight.md)の状況を修正する] など)。</span><span class="sxs-lookup"><span data-stu-id="bd29f-123">Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md)).</span></span>
 
-## <a name="related-insights"></a><span data-ttu-id="eb422-123">関連する分析情報</span><span class="sxs-lookup"><span data-stu-id="eb422-123">Related insights</span></span>
+## <a name="details-table-view-for-the-mail-flow-map"></a><span data-ttu-id="bd29f-124">メールフローマップの詳細表ビュー</span><span class="sxs-lookup"><span data-stu-id="bd29f-124">Details table view for the Mail flow map</span></span>
 
-<span data-ttu-id="eb422-124">関連する洞察は、使用可能な場合はメールフローマップの下に表示されます (たとえば、送信者のドメインの洞察やメールループの洞察など)。</span><span class="sxs-lookup"><span data-stu-id="eb422-124">Related insights are shown beneath the Mail flow map if they're available (for example, the Sender domain insight or the Mail loop insight).</span></span>
+<span data-ttu-id="bd29f-125">レポートビューで [**詳細テーブルの表示**] をクリックすると、次の情報が表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-125">If you click **View details table** in a report view, the following information is shown:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="eb422-125">関連項目</span><span class="sxs-lookup"><span data-stu-id="eb422-125">See also</span></span>
+- <span data-ttu-id="bd29f-126">**Date**</span><span class="sxs-lookup"><span data-stu-id="bd29f-126">**Date**</span></span>
+- <span data-ttu-id="bd29f-127">**カテゴリ**</span><span class="sxs-lookup"><span data-stu-id="bd29f-127">**Category**</span></span>
+- <span data-ttu-id="bd29f-128">**コネクタ/サードパーティのサービスプロバイダー**</span><span class="sxs-lookup"><span data-stu-id="bd29f-128">**Connector / Third-party service provider**</span></span>
+- <span data-ttu-id="bd29f-129">**送信者/受信者ドメイン**</span><span class="sxs-lookup"><span data-stu-id="bd29f-129">**Sender/Recipient domain**</span></span>
+- <span data-ttu-id="bd29f-130">**メッセージ数**</span><span class="sxs-lookup"><span data-stu-id="bd29f-130">**Message count**</span></span>
 
-<span data-ttu-id="eb422-126">メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="eb422-126">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="bd29f-131">詳細テーブルビューで [**フィルター** ] をクリックすると、**開始日**と**終了日**を含む日付範囲を指定できます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-131">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="bd29f-132">行を選択すると、同様の詳細がフライアウトに表示されます。</span><span class="sxs-lookup"><span data-stu-id="bd29f-132">If you select a row, similar details are shown in a flyout:</span></span>
+
+![メールフローマップの詳細表の詳細ポップアップ](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+<span data-ttu-id="bd29f-134">特定の日付範囲のレポートに対して1人以上の受信者を電子メールで送信するには、[**ダウンロードの依頼**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd29f-134">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+
+<span data-ttu-id="bd29f-135">レポートビューに戻るには、[**レポートの表示**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="bd29f-135">To go back to the reports view, click **View report**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="bd29f-136">関連項目</span><span class="sxs-lookup"><span data-stu-id="bd29f-136">See also</span></span>
+
+<span data-ttu-id="bd29f-137">メールフローダッシュボードの他の洞察の詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bd29f-137">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
