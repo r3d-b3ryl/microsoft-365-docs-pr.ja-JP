@@ -489,28 +489,30 @@
             - name: セキュリティ/コンプライアンス センター のメール フロー インサイト
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
-                - name: メール フローのマップ レポート
+                - name: 自動転送されたメッセージのインサイト
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: メール ループの可能性の修正のインサイト
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: 時間のかかるメール フロー ルールの修正のインサイト
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: メール フローのマップ
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: トップ ドメインのメール フローの状態洞察
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: SMTP Auth クライアントのレポート
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: 送信者ドメインの洞察を修正する
-                  href: ./office-365-security/mfi-sender-domain-insight.md
+                - name: 新しいドメインにメールが転送されていますのインサイト
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: 新しいユーザーがメールを転送していますのインサイト
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
+                - name: 承認済みでないドメインのレポート
+                  href: ./office-365-security/mfi-non-accepted-domain-report.md
                 - name: 配信不能レポート
                   href: ./office-365-security/mfi-non-delivery-report.md
-                - name: 承認されていないドメインのレポート
-                  href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: 送信と受信のメール フロー
+                - name: 送信および受信メール フローのインサイト
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: キューのアラートとキュー
+                - name: キューのインサイト
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: 自動転送済みメッセージレポート
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: メール ループのインサイト
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: 低速メール フローのルールのインサイト
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: SMTP Auth クライアントのインサイトとレポート
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: トップ ドメインのメール フローの状態のインサイト
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: セキュリティ ソリューション
           items:
             - name: 選挙運動、非営利組織、およびその他のアジャイル組織のための Microsoft Security ガイダンス
