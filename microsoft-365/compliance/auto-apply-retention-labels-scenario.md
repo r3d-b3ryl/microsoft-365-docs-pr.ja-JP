@@ -1,5 +1,5 @@
 ---
-title: 保持ラベルを使用して、SharePoint に保存されている製品ドキュメントのライフサイクルを管理する
+title: 保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,19 +15,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: この記事では、保持ラベルを使用して SharePoint に保存されている製品関連ドキュメントのライフサイクルを管理する方法を示します。 このプロセスでは、ドキュメントのメタデータを使用してコンテンツを分類し、保持ラベルを自動的に適用して、イベント ベースの保持を構成します。
-ms.openlocfilehash: b3b71757d887781a12c71f2c105409827230f33c
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+description: メタデータを使用してコンテンツを分類し、ラベルを自動的に適用し、イベントベースの保持を使用して保持期間を開始することにより、保持ラベルを使用して SharePoint のドキュメントのライフサイクルを管理する方法。
+ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552529"
+ms.locfileid: "46560670"
 ---
-# <a name="manage-the-lifecycle-of-product-documents-stored-in-sharepoint-with-retention-labels"></a>保持ラベルを使用して、SharePoint に保存されている製品ドキュメントのライフサイクルを管理する
+# <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-この記事では、保持ラベルを使用して、イベント ベースの保持を構成することにより、SharePoint に保存されている製品関連ドキュメントのライフサイクルを管理する方法について説明します。
+この記事では、自動的に適用される保持ラベルとイベントベースの保持を使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する方法について説明します。
 
 自動適用機能は、ドキュメントを分類するために SharePoint メタデータを使用します。 この記事は製品関連ドキュメント向けですが、他のシナリオにも同じ概念を使用できます。 たとえば、石油およびガス産業では、石油基地、坑井検層、生産ライセンスなどの物理的資産に関するドキュメントのライフサイクルを管理できます。 金融サービス業界では、銀行口座、住宅ローン、または保険契約に関するドキュメントを管理できます。 公的機関では、建設許可または税務フォームに関する文書を管理できます。
 
@@ -80,10 +80,8 @@ ms.locfileid: "46552529"
 | 製品の仕様      | 生産中止後 5 年  | 削除                                       |
 | 製品契約          | 生産中止後 10 年 | レビュー                                       |
 | ユーザー マニュアル                | 生産中止後 5 年  | 削除                                       |
-| 他のすべての種類のドキュメント | 積極的に保持しない  | ドキュメントが 3 年以上経過したときに削除する<sup>\*</sup>  |
+| 他のすべての種類のドキュメント | 積極的に保持しない  | ドキュメントが 3 年以上経過したときに削除する <br /><br /> 過去 3 年以内に変更されていないドキュメントは、3 年以上前のものと見なされます。 |
 |||
-
-   <sup>\*</sup> 過去 3 年以内に変更されていないドキュメントは、3 年以上前のものと見なされます。
 
 Microsoft 365 コンプライアンス センターを使用して、次の [保持ラベル](retention.md#retention-labels) を作成します。
 

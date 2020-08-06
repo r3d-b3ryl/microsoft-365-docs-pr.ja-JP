@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。 '
-ms.openlocfilehash: a4d5f5240a6d4cca686b4809d05970b5e18b897f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399580"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560873"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -75,13 +75,17 @@ ms.locfileid: "44399580"
     
 ## <a name="prevent-last-password-from-being-used-again"></a>最後に使用したパスワードの再使用を禁止する
 
-ユーザーが古いパスワードを再使用することを禁止する場合、Azure AD でこの操作を行うことができます。 「[パスワードの履歴を記録する](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history)」を参照します。
-
-また、従業員がモバイル デバイスを使用して Microsoft 365 にアクセスしている場合、それをワイプしてパスワードが保存されていないことを確認してください。 詳細については、「[元従業員のモバイル デバイスをワイプし、ブロックする](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device)」を参照してください。
-
+ユーザーが古いパスワードを再使用できないようにするには、Azure AD んpパスワードの履歴を適用します。 詳細については、[「カスタムパスワードポリシーを作成する 」](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)を参照してください。
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>オンプレミスの Active Directory から Azure AD (Microsoft 365) へユーザー パスワード ハッシュを同期する
 
-この記事は、クラウド専用ユーザー (Azure AD) の有効期限ポリシーを設定するユーザーを対象にしています。 パスワード ハッシュ同期、パススルー認証、または ADFS などのオンプレミスのフェデレーションを使用するハイブリッド ID ユーザーには適用されません。
+この記事は、クラウド専用ユーザー (Azure AD) の有効期限ポリシーを設定するユーザーを対象にしています。 パスワード ハッシュ同期、パススルー認証、ADFSなどのオンプレミス フェデレーションを使用するハイブリッド ID ユーザーには適用されません。
   
 ユーザー パスワード ハッシュをオンプレミスの AD から Azure AD に同期する方法については、「[Implement password hash synchronization with Azure AD Connect sync (Azure AD Connect 同期でパスワード ハッシュ同期を実装する)](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)」を参照してください。
+
+
+## <a name="update-password-policy"></a>パスワードポリシーの更新
+
+Set-MsolPasswordPolicy コマンドレットは、指定されたドメインまたはテナントのパスワードポリシーを更新します。 2つの設定が必要です。まず、パスワードを変更するまでの有効期間を指定します。2番目に、パスワードの有効期限が近づいているという最初の通知をユーザーが受け取るときにトリガーされる、パスワードの有効期限までの日数を示します。
+
+特定のドメインまたはテナントのパスワードポリシーを更新する方法については、[「Set-MsolPasswordPolicy」](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)を参照してください。
