@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Microsoft 365 メッセージセンターの概要と、変更管理におけるその役割について説明します。
-ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cec60a7ae5df1af01625f8feef84ff258d798659
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780087"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564027"
 ---
 # <a name="message-center"></a>メッセージ センター
 
@@ -178,3 +178,9 @@ ms.locfileid: "44780087"
 - Intune サービス管理者
 - 特権ロール管理者
 - レポート閲覧者
+
+## <a name="unsubscribe-from-message-center-emails"></a>メッセージセンターの電子メールの登録を解除する
+
+1. ダイジェスト メールは既定でオンになっており、プライマリの電子メール アドレスに届きます。 毎週のダイジェストの受信を停止するには、 **[メッセージの1週間のダイジェストを送信**する] 設定を [**オフ**] に変更します。 <br/><br/>メジャー更新プログラムの電子メール通知は別に制御されます。 主な更新に関する電子メールを受信しないようにする場合は、「**主な更新プログラムの**メールを送信する」が**オフ**になっていることを確認してください。  <br/><br/>データプライバシーメッセージに関する電子メール通知を受信しないようにするには、「**データのプライバシーメッセージの電子メールを送信**する」が**オフ**になっていることを確認します。  (データプライバシーメッセージは、週のダイジェストには含まれません。)<br/><br/>
+
+2. [**保存**] を選択して、変更を保存します。<br/>

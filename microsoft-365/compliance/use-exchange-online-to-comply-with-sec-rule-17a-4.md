@@ -18,12 +18,12 @@ description: CFTC ルール 1.31 (c)-(d)、FINRA ルール 4511、および SEC 
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bba51bed4409bfb933b577419f48ab6963d4f7d6
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127304"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577117"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Exchange Online および セキュリティ/コンプライアンス センターを使用して米国証券取引委員会規則 17a-4 (SEC Rule 17a-4) に準拠する
 
@@ -70,12 +70,3 @@ Exchange Online では、ユーザーのメール ボックスに[アイテム�
 
 アイテム保持ポリシーは、PowerShell を使用してロックできます。 詳細については、「[[保持ロック] を使用して規制要件に準拠する](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)」をご覧ください。
 
-## <a name="known-limitations"></a>既知の制限
-
-現在、Exchange Online にはいくつかの制限があります。
-
-- スレッド形式の通信は、Teams チャットおよびチャンネル メッセージでサポートされていません。
-- Teams チャットおよびチャンネル メッセージでの "いいね" は保持されません。
-
-> [!NOTE]
-> アイテム レベルの監査は Microsoft 365 グループのメールボックスで利用できるようになりました。 詳細については、「[メールボックスの監査を管理する](enable-mailbox-auditing.md)」を参照してください。

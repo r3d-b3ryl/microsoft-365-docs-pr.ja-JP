@@ -1,5 +1,5 @@
 ---
-title: セキュリティ/コンプライアンス センターのメールフローレポートを表示
+title: レポートダッシュボードのメールフローレポートを表示する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 組織のメールフローセキュリティレポートを検索して使用する方法について説明します。 メールフローレポートは、セキュリティ & コンプライアンスセンターで利用できます。
+description: 管理者は、セキュリティ & コンプライアンスセンターのレポートダッシュボードで使用できるメールフローレポートについて説明しています。
 ms.custom: ''
-ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434181"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578020"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメールフローレポートを表示
+# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのレポートダッシュボードでメールフローレポートを表示する
 
-セキュリティ & コンプライアンスセンターで利用できる[メールフローの洞察](mail-flow-insights-v2.md)に加えて、さまざまなメールフローレポートを使用して、Microsoft 365 組織の監視に役立てることもできます。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、 <https://office.protection.com> **レポート**ダッシュボードにアクセスすることで、これらのレポートをセキュリティ & コンプライアンスセンターで表示でき \> **Dashboard**ます。 レポートダッシュボードに直接移動するには、を開き <https://office.protection.office.com/insightdashboard> ます。
+セキュリティ & コンプライアンスセンターの[メールフローダッシュボード](mail-flow-insights-v2.md)で使用できるメールフローレポートに加えて、Microsoft 365 組織を監視するのに役立つさまざまな追加のメールフローレポートがレポートダッシュボードに用意されています。
+
+[必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、**レポート**ダッシュボードにアクセスすることによって、[セキュリティ & コンプライアンスセンター](https://office.protection.com)でこれらのレポートを表示でき \> **Dashboard**ます。 レポートダッシュボードに直接移動するには、を開き <https://office.protection.office.com/insightdashboard> ます。
 
 ![セキュリティ & コンプライアンスセンターのレポートダッシュボード](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -225,7 +227,7 @@ ms.locfileid: "45434181"
 
   - **正常なメール**
   - **マルウェア**
-  - **スパム**
+  - **[スパム]**
   - **エッジ保護**
   - **ルールメッセージ**
   - **フィッシング詐欺メール**
@@ -237,7 +239,7 @@ ms.locfileid: "45434181"
 データテーブルには、次の情報が含まれています。
 
 - **[方向]**
-- **型**
+- **Type**
 - **24 時間**
 - **3 日間**
 - **7日**
@@ -327,7 +329,7 @@ ms.locfileid: "45434181"
 [次の方法で**詳細テーブルを表示**] をクリックすると、 **[方向] または**[**下に移動: 方向**] が表示され、次の情報が表示されます。
 
 - **日付 (UTC)**
-- **型**
+- **Type**
 - **[方向]**
 - **メッセージ数**
 
@@ -404,26 +406,22 @@ ms.locfileid: "45434181"
 
 - セキュリティ & コンプライアンスセンターでは、次のいずれかの役割グループのメンバーである必要があります。
 
-  -組織の管理
-
-  -セキュリティ管理者 ( [Azure Active Directory 管理センター](https://aad.portal.azure.com) -セキュリティリーダでこれを実行することもできます)
+  -組織の管理-セキュリティ管理者 ( [Azure Active Directory 管理センター](https://aad.portal.azure.com) -セキュリティリーダでこれを実行することもできます)
 
   詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)」を参照してください。
 
 - Exchange Online では、次のいずれかの役割グループのメンバーである必要があります。
 
-  -組織の管理
-
-  -表示のみの組織管理
-
-  -表示のみの受信者
-
-  -コンプライアンス管理
+  -組織の管理-表示のみの組織の管理-表示のみの受信者-コンプライアンス管理
 
 詳細については、「exchange online の[アクセス許可](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo)」および「 [Manage Role Groups in exchange online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)」を参照してください。
 
 ## <a name="related-topics"></a>関連項目
 
-[セキュリティとコンプライアンス センターのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+[セキュリティ/コンプライアンス センターのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+
+[セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](mail-flow-insights-v2.md)
 
 [セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)
+
+[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)

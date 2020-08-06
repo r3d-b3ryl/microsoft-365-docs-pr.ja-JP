@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 269e68c1e7f864ba5be84f1dc444a3d7d9c27e55
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434257"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578032"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -58,13 +58,13 @@ ms.locfileid: "45434257"
 
 - **作成時刻**
 - **[ユーザー ID]**
-- **Action**
+- **操作**
 
 レポートビューに戻るには、[**レポートの表示**] をクリックします。
 
 ## <a name="encryption-report"></a>暗号化レポート
 
-**暗号化レポート**は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 例:
+**暗号化レポート**は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 次に例を示します。
 
 - ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。 詳細については、「 [Microsoft 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
@@ -221,7 +221,7 @@ ms.locfileid: "45434257"
 - **[送信者のアドレス]**
 - **受信者のアドレス**
 - **イベントの種類**
-- **Action**
+- **操作**
 - **[件名]**
 
 詳細テーブルで [**フィルター** ] をクリックすると、次のフィルターを使用して結果を変更できます。
@@ -260,7 +260,7 @@ ms.locfileid: "45434257"
 - **スプーフィングされた送信者**
 - **True 送信者**
 - [**Sender IP (送信者の IP)**]
-- **Action**
+- **操作**
 - **メッセージ数**
 
 レポートビューに戻るには、[**レポートの表示**] をクリックします。

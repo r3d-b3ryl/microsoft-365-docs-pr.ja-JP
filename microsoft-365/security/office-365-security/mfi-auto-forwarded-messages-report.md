@@ -1,5 +1,5 @@
 ---
-title: 自動転送済みメッセージレポート
+title: 自動転送されたメッセージの洞察
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの自動転送メッセージレポートについて説明します。
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635306"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577821"
 ---
-# <a name="auto-forwarded-messages-report"></a>自動転送済みメッセージレポート
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの自動転送メッセージの洞察
 
-メールフローダッシュボードの**自動転送メッセージ**レポートには、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
+セキュリティ & コンプライアンスセンターの[メールフローダッシュボード](mail-flow-insights-v2.md)に表示される**自動転送メッセージ**には、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
 
-![セキュリティ & コンプライアンスセンターでの自動転送メッセージの洞察](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
-
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの自動転送されたメッセージレポート](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![セキュリティ & コンプライアンスセンターの自動転送メッセージウィジェット](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>自動転送されたメッセージの詳細
 
-ウィジェット内のメッセージ数をクリックすると、自動転送メッセージの状態を示すフライアウトウィンドウが表示されます。 [**転送レポート**] リンクをクリックすると、詳細を確認できます。
+ウィジェット内のメッセージ数をクリックすると、自動的に転送されるメッセージに関する詳細情報を示すフライアウトウィンドウが表示されます。
 
-![セキュリティ & コンプライアンスセンターの自動転送されたメッセージの詳細ポップアップ](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+- **転送方法による自動転送メッセージ**:
+
+  - **メールフロールール**
+  - **受信トレイルール**
+  - **SMTP 転送による**
+  - 詳細については、[転送レポート](view-mail-flow-reports.md#forwarding-report)へのリンクを参照してください。
+
+- **ドメインおよびユーザーによる自動転送メッセージ**:
+
+  - **上位5ドメイン転送先**
+  - **新しいドメイン (先週)**
+  - **上位5人のユーザーの転送**
+  - **新しいユーザー (先週)**
+  - 詳細については、[転送変更レポート](mfi-new-users-forwarding-email.md#forwarding-modifications-report)へのリンクを参照してください。
+
+![セキュリティ & コンプライアンスセンターの自動転送されたメッセージレポートの詳細ポップアップ](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>分析情報
 
-レポートデータ:**新しい転送ユーザー**および**新しい転送ドメイン**を基にして、2つの洞察が生成されます。 各洞察には、新しいフォワーダーまたはドメインの数の概要と、**新しい転送レポート**へのリンクが含まれており、2種類のデータについてより詳細な情報を提供しています。 **新しい転送レポート**には、新しいアクティビティのタイムラインビューも表示され、[詳細] テーブルには転送を開始したユーザーとそのドメインが示されます。
+レポートデータに基づいて、2つの洞察が生成されます。
+
+- [新しいユーザーがメールを転送する](mfi-new-users-forwarding-email.md)
+- [メールを転送する新しいドメイン](mfi-new-domains-being-forwarded-email.md)
 
 ## <a name="see-also"></a>関連項目
 
-メールフローダッシュボードのその他のメールフローインサイトの詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メールフローダッシュボードの他の洞察の詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

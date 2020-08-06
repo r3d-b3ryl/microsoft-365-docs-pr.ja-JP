@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ & コンプライアンスセンターで利用できるスマートレポートと分析情報、およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 407fee494b0fbb93b76e669c150e20136064454b
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434313"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577188"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートとインサイト
 
@@ -41,7 +41,7 @@ ms.locfileid: "45434313"
 
 セキュリティ & コンプライアンスセンターでは、さまざまなレポートを利用できます。 ([**レポート** \> ] に移動します。**ダッシュボード**を表示して、すべてのビューを取得します。)次の表に、利用可能なレポートとその詳細情報へのリンクを示します。
   
-|**情報のタイプ**|**実行する方法**|**詳細情報の参照先**|
+|情報の種類|実行する方法|詳細情報の参照先|
 |---|---|---|
 |**セキュリティ & コンプライアンスセンターのレポート**(すべて)  <br/> データ損失防止レポート、ラベル、電子メールセキュリティレポート、高度な脅威保護レポートなど、セキュリティ & コンプライアンスレポートなどの、重要な洞察と推奨事項、およびセキュリティに関するリンクへのリンク|セキュリティ & コンプライアンスセンターで、[**レポート** \> **ダッシュボード**] に移動します。|[Microsoft 365 セキュリティセンターのレポートを監視および表示する](../mtp/monitoring-and-reporting.md)|
 |**データ損失防止** <br/> データ損失防止ポリシーの一致、誤検知と上書き、ポリシーを作成または編集するリンク|セキュリティ & コンプライアンスセンターで、[**データ損失防止** \> **ポリシー** ] に移動します。|[データ損失防止のレポートを表示する](../../compliance/view-the-dlp-reports.md)|

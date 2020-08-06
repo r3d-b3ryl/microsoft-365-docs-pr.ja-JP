@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターの送信ポータルを使用して、疑わしいメール、疑わしいフィッシングメール、スパム、その他の潜在的な有害なメッセージ、Url、およびその他の潜在的な問題を報告する方法について説明します。
-ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 4d0737d881334db9cc4aeda43037ab89d7444618
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726850"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577872"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -36,17 +36,17 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **送信**ページに直接移動するには、を使用 <https://protection.office.com/reportsubmission> します。
 
-- このトピックの手順を実行する前に、アクセス許可を割り当てる必要があります。
+- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
 
   - メッセージとファイルを Microsoft に送信するには、次のいずれかの役割グループのメンバーである必要があります。
 
-    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**組織管理**または**セキュリティ管理者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**組織の管理**または**検疫の管理**。
+    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
+    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
 
   - 送信ポータルへの読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
 
-    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**セキュリティリーダ**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**表示のみの組織の管理**。
+    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
 - ユーザーがメッセージやファイルを Microsoft に送信する方法の詳細については、「 [microsoft へのメッセージとファイルの報告](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
@@ -118,7 +118,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 2. [**送信**] ページが表示されたら、[**管理者の提出**] タブが選択されていることを確認します。
 
-ページの上部に、[開始日]、[終了日]、[(既定)] の順に入力し、ボックスに値を入力して [最新の情報に更新] ボタンをクリックすることで、**送信 ID**でフィルター処理でき ![ ](../../media/scc-quarantine-refresh.png) ます。 Update
+ページの上部に、[開始日]、[終了日]、[(既定)] の順に入力し、ボックスに値を入力して [最新の情報に更新] ボタンをクリックすることにより、**送信 ID**でフィルター処理できます (既定では、すべての提出物に割り当てられている GUID 値) ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 フィルター条件を変更するには、[**提出 ID** ] ボタンをクリックして、次のいずれかの値を選択します。
 
@@ -141,7 +141,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 ページの下部にある [**列のオプション**] ボタンをクリックすると、ビューの列を追加または削除できます。
 
 - **Date**
-- **送信 ID**
+- **送信 ID**: すべての提出物に割り当てられている GUID 値。
 - **提出者**<sup>\*</sup>
 - **[件名]**<sup>\*</sup>
 - **Sender**
@@ -208,7 +208,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 フィルター条件を変更するには、[**送信者**] ボタンをクリックし、次のいずれかの値を選択します。
 
 - **送信元ドメイン**
-- **件名**
+- **[件名]**
 - **提出者**
 - **送信の種類**
 - [**Sender IP (送信者の IP)**]
