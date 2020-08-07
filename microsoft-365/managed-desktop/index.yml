@@ -1,84 +1,53 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft マネージド デスクトップのドキュメントとリソース
+### YamlMime:Landing
+title: Microsoft マネージド デスクトップのドキュメント
+summary: Microsoft マネージド デスクトップは、Microsoft 365 Enterprise、Microsoft によるクラウドベースのデバイス管理、およびセキュリティ監視を統合し、IT チームを解放してコア ビジネス ニーズに集中できるようにします。
 metadata:
-  title: Microsoft マネージド デスクトップ デバイスのドキュメント
-  description: null
-  keywords: デバイス、 アプリ、管理
+  title: Microsoft マネージド デスクトップのドキュメント
+  description: Microsoft マネージド デスクトップは、Microsoft 365 Enterprise、Microsoft によるクラウドベースのデバイス管理、およびセキュリティ監視を統合し、IT チームを解放してコア ビジネス ニーズに集中できるようにします。
+  keywords: device, app, management
+  ms.service: m365-md
+  ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-  - items:
-      - type: markdown
-        text: Microsoft マネージド デスクトップは、Microsoft 365 Enterprise、Microsoft によるクラウドベースのデバイス管理、およびセキュリティ監視を統合し、IT チームを解放してコア ビジネス ニーズに集中できるようにします。
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: intro/index.md
-            html: <p>意思決定者のための Microsoft マネージド デスクトップ デバイスの概要--機能、しくみ、および使用できること</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
-              alt: ''
-            title: Microsoft マネージド デスクトップとは
-          - href: service-description/index.md
-            html: <p>Microsoft マネージド デスクトップのすべてのパーツの詳細な説明</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-              alt: ''
-            title: サービスの説明
-          - href: get-ready/index.md
-            html: <p>ユーザーの環境と組織でサービスを利用するための手順</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              alt: ''
-            title: 準備する
-          - href: get-started/index.md
-            html: <p>デバイスのセットアップやアプリの展開など、Microsoft マネージド デスクトップを組織に活用する</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              alt: ''
-            title: 使用を開始する
-          - href: working-with-managed-desktop/index.md
-            html: <p>このサービスを使用した日々の運用に関するすべての情報</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
-              alt: ''
-            title: Microsoft マネージド デスクトップを使用する
-  - title: 新しい記事とブログ投稿
-    items:
-      - type: paragraph
-        text: 知っておく必要がある最新のすばらしい情報を参照してください。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: '[ロードマップ] Microsoft マネージド デスクトップの完全なロードマップ'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: '[ホワイトペーパー] スタディ: マネージド デスクトップサービスの需要が高まり'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '[電子ブック]最新のワークプレースで会社に喜びをあたえる'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
-              alt: ''
-  - title: 動画
-    items:
-      - type: paragraph
-        text: NBAのインディアナ・ペイサーズ チームの技術門の副社長が Microsoft マネージド デスクトップのメリットについて説明します。
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
-      - type: paragraph
-        text: Microsoft マネージド デスクトップのジェネラルマネージャーは、毎年 Ignite カンファレンス で、サービスのハイライトをすべて共有しています。
-      - type: markdown
-        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
+  ms.date: 07/13/2020
+  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
+  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 08/05/2020
+  ms.locfileid: "46564145"
+landingContent:
+- title: Microsoft マネージド デスクトップについて
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft マネージド デスクトップとは
+      url: /microsoft-365/managed-desktop/intro/
+    - text: サービスの説明
+      url: /microsoft-365/managed-desktop/service-description
+  - linkListType: get-started
+    links:
+    - text: 準備する
+      url: get-ready/index.md
+    - text: はじめに
+      url: get-started/index.md
+    - text: Microsoft マネージド デスクトップを使用する
+      url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+- title: 新しい記事とブログ投稿
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: '[ロードマップ] Microsoft マネージド デスクトップの完全なロードマップ'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+    - text: '[ホワイトペーパー] スタディ: マネージド デスクトップサービスの需要が高まり'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+    - text: '[電子ブック]最新のワークプレースで会社に喜びをあたえる'
+      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+- title: 動画
+  linkLists:
+  - linkListType: video
+    links:
+    - text: Lloyds 銀行グループのエンジニアリング ディレクターから Microsoft マネージド デスクトップの利点について説明します。
+      url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
+    - text: 年間 Ignite コンファレンスの Microsoft マネージド デスクトップの特徴
+      url: /microsoft-365/managed-desktop/service-description
