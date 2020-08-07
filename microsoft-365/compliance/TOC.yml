@@ -335,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: 非アクティブなメールボックスを削除する
           href: delete-an-inactive-mailbox.md
-    - name: データ ガバナンスをモニターする
-      items:
-        - name: ドキュメントのラベル アクティビティを表示する
-          href: view-label-activity-for-documents.md
-        - name: ラベル分析によるラベル使用状況の表示
-          href: label-analytics.md
-        - name: データ ガバナンスのレポートを表示する
-          href: view-the-data-governance-reports.md
     - name: データ ガバナンスの詳細情報
       items:
         - name: Microsoft のデータ ガバナンス チームによるビデオを見る
