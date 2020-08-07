@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f540c1fce1c525ab49037ea27b139f10fac76f33
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560233"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577964"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "46560233"
 
 この記事では、プライベート アクセスの他にも、チーム チャネルの [**ファイル**] セクションからアクセスできる関連付けられた SharePoint サイトを構成して厳しく規制されたデータの保存で必要な追加のセキュリティを提供する方法について説明します。
 
-規制の厳しいデータ用にチームを構成する場合の要素は次のとおりです。
+セキュリティの分離を使用するチームの構成における要素は、次のとおりです。
 
 - プライベート チーム
 - チームに関連付けられた SharePoint サイトでの以下の追加のセキュリティ:
@@ -42,9 +42,9 @@ ms.locfileid: "46560233"
 > [!IMPORTANT]
 > この記事の手順に進む前に、「[Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護するために秘密度ラベル](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)を有効にしていることを確認します。
 
-<a name="poster"></a> このシナリオを 2 ページにまとめた、[セキュリティの分離ポスター を使用したMicrosoft チーム](../downloads/team-security-isolation-poster.pdf)を参照してください。
+<a name="poster"></a> このシナリオを 2 ページにまとめた、「[セキュリティの分離ポスター を使用した Microsoft Teams](../downloads/team-security-isolation-poster.pdf)」を参照してください。
 
-[![セキュリティの分離ポスター を使用したMicrosoft チーム](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![セキュリティの分離ポスター を使用した Microsoft Teams](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) または [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) 形式でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
@@ -226,7 +226,7 @@ Microsoft 365 は、コンテンツを保護するための追加の方法を提
 
 チームを設置したら、このチームの導入とチーム メンバーへの追加のセキュリティを促します。
 
-## <a name="train-your-users"></a>ユーザーをトレーニングする
+### <a name="train-your-users"></a>ユーザーをトレーニングする
 
 チームのメンバーは、チームおよびそのすべてのリソース (チャット、会議、およびその他のアプリなど) にアクセスできます。 チャネルの [**ファイル**] セクションにあるファイルで作業をする場合、チームのメンバーは、作成したファイルに秘密度ラベルを割り当てる必要があります。
 

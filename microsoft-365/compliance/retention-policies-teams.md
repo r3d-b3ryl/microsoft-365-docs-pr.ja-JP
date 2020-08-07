@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127384"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577975"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -104,6 +104,8 @@ Teams の保持機能の最適化に継続的に取り組んでいます。 そ�
 - **Teams は高度なアイテム保持をサポートしていません**。 アイテム保持ポリシーを作成するときに、[[特定の条件を満たすコンテンツを特定するための高度な設定](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)] を選択した場合、Teams の場所は使用できません。 現在、Teams の保持は、それらの場所を選択すると、すべてのチャットおよびチャネル メッセージ コンテンツに適用されます。
 
 - **Teams のチャネル メッセージのアイテム保持ポリシーを構成する場合、プライベート チャネルの Teams メッセージは含まれません**。 現在、プライベートチャネルはアイテム保持ポリシーでサポートされていません。 
+
+- **Teams チャットおよびチャンネル メッセージでの "いいね" やその他の反応は保持されません**。 他のユーザーからの絵文字形式の反応は、アイテム保持ポリシーではサポートされていません。
 
 - **Teams は、期限切れのメッセージをクリーンアップするために最大 7 日を要する場合があります**。 Teams に適用されるアイテム保持ポリシーは、保持期間が終了するとチャットとチャネル メッセージを削除します。 ただし、これらのメッセージをクリーンアップして完全に削除するには、3 日から 7 日を要する場合があります。 またチャットおよびチャネル メッセージは、保持期間が終了しメッセージが完全に削除されたときに電子情報開示ツールで検索できるようになります。
     

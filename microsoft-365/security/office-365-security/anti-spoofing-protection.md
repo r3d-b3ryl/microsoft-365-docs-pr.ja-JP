@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
-ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209033"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577850"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -119,7 +119,7 @@ DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメ�
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>スプーフィングのマークが付けられたメッセージの数量に関するレポート
 
-EOP 組織は、セキュリティ/コンプライアンス センターのレポート ダッシュボードの**スプーフィング検出**レポートを使用できます。 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
+EOP 組織は、セキュリティ/コンプライアンス センターのレポート ダッシュボードの**スプーフィング検出**レポートを利用できます。 詳細については、「[スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
 
 Office 365 ATP 組織は、セキュリティ/コンプライアンス センターで脅威エクスプローラーを使用して、フィッシング詐欺に関する情報を表示できます。 詳細については、「[Microsoft 365 脅威の調査および対応](office-365-ti.md)」をご覧ください。
 
@@ -129,12 +129,12 @@ Office 365 ATP 組織は、セキュリティ/コンプライアンス センタ
 
 たとえば、Gabriela Laureano (glaureano @ contoso.com) はバード ウォッチングに興味があり、メーリングリスト birdwatchers @ fabrikam.com に参加し、リストに次のメッセージを送信します。
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> 
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br/> 
 **件名:** 今週、レーニア山からアオカケス を見ることができます <br/><br/>今週、レーニア山からの風景を 眺めてみませんか?
 
 メーリングリスト サーバーはメッセージを受信し、その内容を変更して、リストのメンバーにリプレイします。 リプレイされたメッセージの From アドレス (glaureano @ contoso.com) は同じですが、件名行にタグを追加して、メッセージの下側にフッターを追加します。 この種の変更は、メーリング リストでは一般的なものですが、スプーフィングの誤検出の原因になることがあります。
 
-> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <br/><br/> 今週、レーニア山からの風景を 眺めてみませんか? <br/><br/> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br/> **件名:** [BIRDWATCHERS] 今週、レーニア山からアオカケス を見ることができます <br/><br/> 今週、レーニア山からの風景を 眺めてみませんか? <br/><br/> このメッセージは、Birdwatchers ディスカッション リストに送信されました。 いつでも購読を解除できます。
 
 メーリング リストのメッセージがスプーフィング対策チェックにパスできるようにするには、メーリングリストを制御するかどうかに応じて、次の手順を実行します。
 
