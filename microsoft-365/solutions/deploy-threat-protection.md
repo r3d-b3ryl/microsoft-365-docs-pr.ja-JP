@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 で脅威保護機能を展開する
 description: Microsoft 365 E5 に脅威保護のサービスと機能を展開する方法について説明します。
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 47ebc8fa23511fbb653b87a31c8a39e1d99c504e
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 312df25bf4fe2b91bb60b4122378b4457b25723c
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527722"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588186"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を展開する
 
-[マルウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)、および[fileless の脅威](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)などの高度な cyberattacks は、頻繁に発生します。 企業は、自分と顧客を保護する必要があります。 このような攻撃によって、組織にとって重要な問題が発生する可能性があります。これには、信頼の喪失から財務 woes、業務上の脅威などがあります。 脅威からの保護は重要ですが、組織の時間、労力、リソースを重視する場所を決定するのは困難な場合があります。 
+[マルウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)、および[fileless の脅威](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)などの高度な cyberattacks は、頻繁に発生します。 企業は、自分と顧客を保護する必要があります。 サイバーセキュリティ攻撃は、組織にとって重要な問題を発生させることがあります。これには、組織にとって、信頼の喪失から財務 woes、業務上の脅威などがあります。 脅威からの保護は重要ですが、組織の時間、労力、リソースを重視する場所を決定するのは困難な場合があります。 
 
-マイクロソフトのセキュリティソリューションは、microsoft の製品とサービスに組み込まれています。 自動化およびコンピューターの学習機能により、セキュリティチームの負荷が軽減され、適切なアイテムが確実に宛先になるようになります。 また、Microsoft security solutions の強みは、trillions が[インテリジェントなセキュリティグラフ](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)で毎日処理する信号を基に構築されています。 Microsoft 365 のセキュリティソリューションには、 [microsoft の脅威保護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)が含まれています。このソリューションは、電子メール、データ、デバイス、および id を介して、組織に対する高度な脅威の画像をペイントするための情報をまとめたものです。
+マイクロソフトのセキュリティソリューションは、microsoft の製品とサービスに組み込まれています。 自動化およびコンピューターの学習機能により、セキュリティチームの負荷が軽減され、適切なアイテムが確実に宛先になるようになります。 また、Microsoft security solutions の強みは、trillions が[インテリジェントなセキュリティグラフ](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)で毎日処理する信号を基に構築されています。 Microsoft 365 のセキュリティソリューションには、電子メール、データ、デバイス、id を介して、組織に対する高度な脅威の画像をペイントするための、 [microsoft の脅威保護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)が含まれています。
 
 展開プロセスの概要については、このビデオをご覧ください。
 
@@ -52,10 +52,10 @@ Microsoft 365 E5 では、脅威保護機能は既定で統合されています
 |ソリューション/機能  |説明  |
 |---------|---------|
 |多要素認証および条件付きアクセス     |侵害された id とデバイスから保護します。 基礎となるため、この保護を使用して開始します。 このガイダンスで推奨される構成には、前提条件としての Azure AD Identity Protection が含まれています。     |
-|Azure Advanced Threat Protection     |  オンプレミスの Active Directory シグナルを活用して、組織に向けた高度な脅威、侵害された id、悪意のある insider 操作を特定、検出、調査する、クラウドベースのセキュリティソリューション。 オンプレミスとクラウドインフラストラクチャを保護し、依存関係または前提条件を持たず、すぐにメリットを得ることができるため、このことに注目してください。       | 
-|Office 365 Advanced Threat Protection     | 電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 マルウェア、フィッシング、スプーフィング、その他の攻撃の種類に対する保護。 これは、変更制御、変更されたシステムから設定を移行すること、およびその他の考慮事項によって、展開に時間がかかる場合があるため、お勧めします。 <br><br>注: すべての Office 365 サブスクリプション (Exchange Online Protection) に含まれている脅威保護機能も構成してください。       |
-|Microsoft Defender Advanced Threat Protection    | 高度な脅威の防止、検出、調査、および応答に役立つエンドポイント保護プラットフォーム。 これは展開に時間がかかりますが、他の管理者が責任を負う場合は、他の機能と並行して実行できます。   |
-|Microsoft Cloud App Security     |   検出、調査、ガバナンスのためのクラウドアクセスセキュリティブローカー。 これを早期に有効にして、データの収集と分析を開始することができます。 SaaS アプリ間での情報およびその他の対象保護を実装するには、計画を行い、多くの時間を要することがあります。       | 
+|Azure Advanced Threat Protection     |  オンプレミスの Active Directory シグナルを活用して、組織に向けた高度な脅威、侵害された id、悪意のある insider 操作を特定、検出、調査する、クラウドベースのセキュリティソリューション。 オンプレミスとクラウドインフラストラクチャを保護し、依存関係または前提条件を持たず、すぐにメリットを提供できるため、次に Azure Advanced Threat Protection に注目してください。       | 
+|Office 365 Advanced Threat Protection     | 電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 マルウェア、フィッシング、スプーフィング、その他の攻撃の種類に対する保護。 Office 365 Advanced Threat Protection を構成する場合は、変更制御、配置されたシステムから設定を移行する、またはその他の考慮事項が長くなる可能性があるため、次のようにお勧めします。 <br><br>注: すべての Office 365 サブスクリプション (Exchange Online Protection) に含まれる脅威保護機能を構成してください。       |
+|Microsoft Defender Advanced Threat Protection    | 高度な脅威の防止、検出、調査、および応答に役立つエンドポイント保護プラットフォーム。 Microsoft Defender Advanced Threat Protection は展開に時間がかかる場合がありますが、構成は他の機能と並行して実行できます。   |
+|Microsoft Cloud App Security     |   検出、調査、ガバナンスのためのクラウドアクセスセキュリティブローカー。 Microsoft Cloud App Security を事前に有効にして、データの収集と洞察を開始することができます。 SaaS アプリ間での情報およびその他の対象保護を実装するには、計画を行い、多くの時間を要することがあります。       | 
 
 > [!TIP]
 > 複数のセキュリティチームを持つ組織は、これらの機能を並行して実装することができます。

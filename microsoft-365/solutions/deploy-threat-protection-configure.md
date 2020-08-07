@@ -1,8 +1,8 @@
 ---
 title: Microsoft 365 で脅威保護機能を構成するための手順
 description: Microsoft 365 E5 に脅威保護のサービスと機能を展開する方法について説明します。
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 30ecb25ca68b23278aa8b2905c5f3aa8703cb7f1
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522087"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588230"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を構成する
 
@@ -95,9 +95,8 @@ Microsoft の脅威保護は、アラート、インシデント、自動化さ�
 
 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (OFFICE 365 ATP) は、電子メールメッセージ (添付ファイルと url)、Office ドキュメント、コラボレーションツールにおける悪意のある脅威から組織を保護します。 次の表に、Microsoft 365 E5 に含まれる Office 365 ATP の機能と機能を示します。
 
-|||
-|---|---|
 |構成、保護、および検出の各機能|自動化、調査、修復、教育機能|
+|---|---|
 |[添付ファイル保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[リンク保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[SharePoint、OneDrive、Microsoft Teams 用の ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP のフィッシング対策保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[脅威トラッカー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[脅威エクスプローラー](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻撃シミュレータ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
