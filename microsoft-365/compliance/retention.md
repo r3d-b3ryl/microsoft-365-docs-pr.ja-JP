@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: b435d80a6f2ce4f056e446bbc32e5580d063d4a9
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372480"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588209"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -233,10 +233,24 @@ Exchange パブリック フォルダー、Skype、および Teams チャネル�
 
 明示的に割り当てられた保持ラベルは、暗黙的に割り当てられた保持ラベルよりも優先されます。 詳細については、このページの「[保持の原則または優先順位](retention.md#the-principles-of-retention-or-what-takes-precedence)」のセクションを参照してください。
 
-#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>コンテンツ検索を使用した特定の保持ラベルが適用されたすべてのコンテンツの検索
+#### <a name="monitoring-retention-labels"></a>保持ラベルの監視
 
-ユーザーまたは自動適用によって保持ラベルがコンテンツに割り当てられた後、コンテンツ検索を使用して、特定の保持ラベルで分類されているすべてのコンテンツを検索することができます。
-  
+Microsoft 365 コンプライアンス センターから、**データ分類** > **概要** を使用して、保持ラベルがテナントでどのように使用されているかを監視し、ラベル付きアイテムの場所を特定します。 重要な前提条件を含む詳細については、「[データを理解する - データ分類の概要](data-classification-overview.md)」を参照してください。
+
+詳細については、[コンテンツ エクスプローラー](data-classification-content-explorer.md) と [アクティビティ エクスプローラー](data-classification-activity-explorer.md) を使用します。
+
+> [!TIP]
+>トレーニング可能な分類子や機密情報タイプなど、他のデータ分類インサイトのいくつかを使用することを検討して、レコードとして保持または削除する必要がある、またはレコードとして管理する必要があるコンテンツを特定できるようにします。
+
+Office 365 セキュリティ/コンプライアンス センターには、**情報ガバナンス** > **ダッシュボード** の保持ラベルと同等の概要情報と、**情報ガバナンス** > **ラベル アクティビティ エクスプローラー** の詳細情報があります。 この古い管理センターから保持ラベルを監視する方法の詳細については、次のドキュメントを参照してください:
+- [データ ガバナンスのレポートを表示する](view-the-data-governance-reports.md)
+- [ラベル分析によるラベル使用状況を表示する](label-analytics.md)
+- [ドキュメントのラベルのアクティビティを表示する](view-label-activity-for-documents.md)
+
+#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>コンテンツ検索を使用した特定の保持ラベルを持つすべてのコンテンツの検索
+
+保持ラベルがユーザーによって、または自動適用されてコンテンツに適用された後、コンテンツ検索を使用して、特定の保持ラベルが適用されているすべてのアイテムを検索できます。
+
 コンテンツ検索を作成するとき、**保持 ラベル**の条件を選択し、完全な保持ラベル名を入力するか、ラベル名の一部を入力してワイルドカードを使用します。 詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
   
 ![保持ラベルの条件](../media/retention-label-condition.png)
@@ -258,6 +272,7 @@ Exchange パブリック フォルダー、Skype、および Teams チャネル�
 |ラベル作成時またはイベント発生時に保持期間を開始 | 不要 | はい |
 |処理確認 | いいえ| はい |
 |廃棄の証明 (最大 7 年間) | いいえ |はい (アイテムがレコードとして宣言されている場合)|
+|管理者アクティビティを監査する| はい | はい|
 |保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
 
 アイテム保持ポリシーと保持ラベルの両方を補完的な保持方法として使用することができます。 例:
@@ -292,6 +307,10 @@ Exchange パブリック フォルダー、Skype、および Teams チャネル�
 4. **最短の削除期間が優先されます。** 同様に、保持期間なしでコンテンツを削除する複数の保持設定が指定されている場合、そのコンテンツは最短保持期間の終了時に削除されます。 
 
 最後に、アイテム保持ポリシーや保持ラベルでは、電子情報開示のために保持しているコンテンツを完全に削除することはできません。 電子情報開示のための保持を解除すると、コンテンツは再びそのワークロードに対するセキュリティで保護された場所のクリーンアップ プロセスの対象になります。
+
+## <a name="auditing-retention-configuration"></a>アイテム保持構成の監査
+
+[監査が有効になっている](turn-audit-log-search-on-or-off.md) 場合、アイテム保持ポリシーと保持ラベルの管理者アクションは監査ログに保存されます。 たとえば、アイテム保持ポリシーまたはラベルを作成、構成、または削除すると、監査イベントが作成されます。 完全なリストについては、「[アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)」を参照してください。
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 
