@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。 '
-ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560873"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597367"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -75,7 +75,9 @@ ms.locfileid: "46560873"
     
 ## <a name="prevent-last-password-from-being-used-again"></a>最後に使用したパスワードの再使用を禁止する
 
-ユーザーが古いパスワードを再使用できないようにするには、Azure AD んpパスワードの履歴を適用します。 詳細については、[「カスタムパスワードポリシーを作成する 」](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)を参照してください。
+ユーザーが古いパスワードを再使用できないようにするには、オンプレミスの Active Directory (AD) でパスワードの履歴の記録を適用します。 詳細については、[「カスタムパスワードポリシーを作成する 」](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)を参照してください。
+
+Azure AD では、ユーザーがパスワードを変更する場合、前回のパスワードは使用できません。 パスワード ポリシーは、Azure AD で直接作成および管理されるすべてのユーザーアカウントに適用されます。 このパスワード ポリシーは変更できません。 詳細については、「[Azure AD のパスワード ポリシー](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)」を参照してください。
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>オンプレミスの Active Directory から Azure AD (Microsoft 365) へユーザー パスワード ハッシュを同期する
 

@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 金融サービスがデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がどのように役立つかを説明します
 f1.keywords: NOCSH
-ms.openlocfilehash: ccb6243df9030188129c6f2be7b34f467b09781d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521209"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597523"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -66,7 +66,7 @@ Teams では、顧客の機密データをセキュリティで保護された�
 
 もう一つの一般的なシナリオは、ドキュメントの共同作業、保存、管理を、安全に行うために 「仮想データ ルーム」 として Teams を利用することです。 投資銀行、資産管理企業、未公開株式投資会社内のチーム メンバーやシンジケートは、取引や投資においてセキュリティで保護された方法で共同作業できます。 部門横断型のチームはそのような取引の計画や実施に関わることが多いため、データの共有や会話をセキュリティで保護された方法で実施できることは欠かせない要件です。 関係するドキュメントを外部の投資家とセキュリティで保護された方法で共有することも重要な要件です。 Teams ではセキュリティで保護され、完全に監査可能な場所が提供され、この場所で投資のためのデータを一元的に保存、保護、共有できます。
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="大画面上で画像について検討する会議中のオフィスワーカーのグループ。":::
+![大画面上で画像について検討する会議中のオフィス ワーカーのグループ。](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams: コラボレーションを改善し、コンプライアンス リスクを軽減する
 
@@ -156,7 +156,7 @@ Identity Protection により、組織は 3 つの重要なタスクを実現す
 
 Identity Protection は、クラウド インテリジェンスを活用して ID 漏えいから組織を自動的に保護します。クラウド インテリジェンスは、Microsoft エコシステム全体におけるヒューリスティックなユーザーおよびエンティティ行動分析 (UEBA) と機械学習 (ML) に基づく高度な検出に支えられています。
 
-:::image type="content" source="../media/win17-15021-00-n9.jpg" alt-text="プレゼンテーションを聞く 5 人のインフォメーション ワーカー。":::
+![プレゼンテーションを聞く 5 人のインフォメーション ワーカー。](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>機密データを特定し、データ損失を防止する
 Microsoft 365 では、組み合わされた強力な機能により、組織内の機密データを特定できるようになります。機能には次が含まれます。
@@ -178,7 +178,7 @@ Identity Protection が生成して取り込まれるシグナルは、アクセ
 
 Identity Protection は、クラウド インテリジェンスを活用して ID 漏えいから組織を自動的に保護します。クラウド インテリジェンスは、Microsoft エコシステム全体におけるヒューリスティックなユーザーおよびエンティティ行動分析と機械学習に基づく高度な検出に支えられています。
 
-:::image type="content" source="../media/clo1718-portrait-006.jpg" alt-text="多数のモニターの前にいるインフォメーション ワーカーの写真。":::
+![多数のモニターの前にいるインフォメーション ワーカーの写真](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>要塞を防御する
 
@@ -199,7 +199,7 @@ Microsoft 365 が提供するセキュリティ サービスは、インテリ�
 * キル チェーン全体で疑わしいユーザー アクティビティや高度な攻撃を特定し、調査する。
 * 迅速なトリアージのために、簡潔なタイムラインで示された明確なインシデント情報を提供する。
 
-:::image type="content" source="../media/clo1717-corporate-office-021.jpg" alt-text="小さな会議室に集まるオフィス ワーカーと、プレゼンテーションを行う従業員。":::
+![小さな会議室に集まるオフィス ワーカー。 プレゼンテーションする人。](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>データと記録の管理
 
@@ -285,7 +285,7 @@ Microsoft 365 での情報バリアは、Teams の会話やファイルをサポ
  
 * [FINRA Rule 3120 (監督管理システム)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) は、企業が Rule 3110 で定義された監督手順書類を検証するための監督管理ポリシーと手順 (supervisory control policies and procedures, SCP) のシステムを確立することを要求しています。 企業には、WSP を作成することだけでなく、これらの手順を毎年テストして、適用される証券関連の法令への遵守能力を検証するためのポリシーを確立することも求められています。 テストの範囲を定義するために、リスクベースの手法とサンプリングを使用されることがあります。 他の要件の中でもこの規則は特に、企業に対して、テスト結果の概要と、テスト結果に対する重大な例外または修正された手順を含む年次レポートを経営陣に提出することを求めています。
 
-:::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="画面上でグラフや表を見ているオフィス ワーカーと、後ろの方で行われている会議。":::
+![画面上でグラフや表を見ているオフィス ワーカーと、後ろの方で行われている会議。](../media/wco18-desk-work-002.jpg)
  
 ### <a name="communication-compliance"></a>通信コンプライアンス
 
@@ -296,7 +296,7 @@ Microsoft 365 での通信コンプライアンスを使用すると、組織は
 
 FINRA 規則の遵守だけではなく、通信コンプライアンスを使用することにより、組織は他の法的要求事項、会社のポリシー、倫理規範を遵守するために通信を監視することができるようになります。 通信コンプライアンスには脅威、ハラスメント、冒涜的表現の分類子が組み込まれており、通信をレビューする際の偽陽性を減らすことができるため、レビュー担当者の調査と修正プロセスの時間を節約することができます。 また、合併や買収、経営陣の交代などの機密性の高い変化を経験する際に、組織は通信を監視することによってリスクを抑えることができるようになります。
 
-:::image type="content" source="../media/msc16-slalom-004.jpg" alt-text="画面に集中するインフォメーション ワーカー。":::
+![画面に集中するインフォメーション ワーカー。](../media/msc16-slalom-004.jpg)
  
 ## <a name="protect-against-data-exfiltration-and-insider-risk"></a>データ流出とインサイダー リスクから保護する
 
@@ -312,14 +312,14 @@ Microsoft 365 では最近、Microsoft 365 サービス全体のシグナルを�
 
 Microsoft 365 のインサイダー リスク管理は、インサイダー リスクを管理および調査する組織の能力を格段に高めつつ、より高いレベルでの事例への対応が必要になった場合に、組織がデータのプライバシー規制を準拠し、確立されたエスカレーションの方法を実行できるようにします。
 
-:::image type="content" source="../media/clo17-call-center-006.jpg" alt-text="パーティションで区切られたスペースで画面を見るコール センターの職員。":::
+![パーティションで区切られたスペースで画面を見るコール センターの職員。](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>テナントの制限
 機密データを扱い、セキュリティを非常に重視している組織は通常、ユーザーがアクセスできるオンライン リソースを管理することを望みます。 同時に、Office 365 などのオンライン サービスを使用してセキュリティで保護されたコラボレーションを行うことも希望します。 結果として、ユーザーがアクセスできる Office 365 環境を管理するのは挑戦となります。企業向けではない Office 365 環境は、意図せずに、または悪意を持って会社のデバイスからデータを抜き取るために利用されることがあるからです。 従来、組織はユーザーが会社のデバイスからアクセスできるドメインや IP アドレスを制限してきました。 ユーザーが Office 365 サービスに正当にアクセスする必要があるクラウド ファーストの世界では、この方法は通用しません。
 
 Microsoft 365 では、テナントの[制限](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)にこの課題に対処するための機能を加えています。 テナントの制限では、従業員による不正な ID (自社のディレクトリに含まれない ID) を使用した外部の Office 365 エンタープライズ テナントへのアクセスを制限するよう構成できます。 現時点で、テナントの制限はテナント全体に適用され、構成されたリストに含まれるテナントへのアクセスだけが許可されます。 Microsoft はこのソリューションの開発を続けており、今後より詳細な制御が可能になり、提供される保護が強化されていきます。
 
-:::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="図":::
+![グラフィック](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>まとめ
 
