@@ -1,11 +1,11 @@
 ---
-title: 情報を保護する
+title: Microsoft 365 を使用して情報を保護する
 f1.keywords:
 - NOCSH
-ms.author: bcarter
-author: brendacarter
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 4/26/2019
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,27 +14,53 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: このランディングページには、Microsoft 365 および Office 365 の情報の保護に関するリンクと情報が記載されています。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3657fc674547013c8517b6121d6b2bbb636b7481
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+description: 組織の重要なデータを保護するために役立つ Microsoft 365 の機能と関連ドキュメントを特定します。
+ms.openlocfilehash: eb83655fddf5b59a7a95d2a8b9999ab683305a89
+ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127494"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592311"
 ---
-# <a name="protect-information"></a>情報を保護する
+# <a name="protect-information-using-microsoft-365"></a>Microsoft 365 を使用して情報を保護する
 
-Microsoft 365 および Office 365 には、情報を保護するために特定の種類のデータに適用できる機能が含まれています。
+>*[Microsoft 365 セキュリティ & コンプライアンスのライセンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+
+Microsoft の情報保護機能を使用して、機密情報がどこに存在していても機密情報を検出、分類、保護することができます。
+
+## <a name="know-your-data"></a>データを把握する
+
+データの状況を理解し、ハイブリッド環境全体で重要なデータを識別するには、次の機能を使用します。
+ 
+|機能|どのような問題が解決されますか。|はじめに|
+|:------|:------------|:--------------------|:-----------------------------|
+|[機密情報の種類](sensitive-information-type-entity-definitions.md)| 組み込みまたはカスタムの正規表現または関数を使用して機密データを識別し、補強エビデンスと共にキーワード、信頼度、および近接性を含むものを指定します。| [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)|
+|[Trainable 分類子 (プレビュー)](classifier-getting-started-with.md)| 組み込み分類子のいずれかを使用してデータを分類するか、独自のコンテンツを使用して分類する er をトレーニングします。 | [Trainable 分類子を作成する (プレビュー)](classifier-creating-a-trainable-classifier.md) |
+|[データ分類](data-classification-overview.md) | 機密ラベル、保持ラベル、または組織内の機密情報の種類として分類されているアイテムと、ユーザーがそのアイテムに対して行った操作を識別します。  | [コンテンツ エクスプローラーの使用を開始する](data-classification-content-explorer.md)<br /><br /> [アクティビティ エクスプローラーの使用を開始する](data-classification-activity-explorer.md) |
+
+## <a name="protect-your-data"></a>データを保護する
+
+暗号化、アクセス制限、および視覚マークを含む柔軟な保護アクションを適用するには、次の機能を使用します。
+
+|機能|どのような問題が解決されますか。|はじめに|
+|:------|:------------|---------------------|:----------------------------|
+|[機密ラベル](sensitivity-labels.md)| アプリケーション、サービス、およびデバイスにまたがる単一のソリューション。データをラベル付けして、組織の内外で転送する際にデータを保護します。 <br /><br />シナリオ例: [POWER BI で機密ラベルを適用および表示し、エクスポート時にデータを保護する](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[機密ラベルの概要](get-started-with-sensitivity-labels.md) |
+|[Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Windows コンピューターの場合は、すべてのファイルの種類のラベル付けと保護をファイルエクスプローラーと PowerShell から行うことができる追加の機能の機密ラベルを拡張します。<br /><br /> その他の機能[の例: Azure Information Protection の統合されたラベル付けクライアントのカスタム構成](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection 統合されたラベル付けされたクライアント管理者ガイド](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[二重キー暗号化](double-key-encryption.md)| すべての状況において、保護されたコンテンツを復号化するか、または規制要件に応じて、暗号化キーを地理的な境界内に保持する必要があります。 | [二重キー暗号化の展開](double-key-encryption.md#deploy-double-key-encryption)|
+|[Office 365 メッセージの暗号化](ome.md)(OME)| 任意のデバイスで任意のユーザーに送信される電子メールメッセージと添付ドキュメントを暗号化します。これにより、承認済みの受信者のみがメールの情報を読むことができます。  <br /><br />シナリオ例:[高度なメッセージ暗号化によって暗号化された電子メールを取り消す](revoke-ome-encrypted-mail.md) | [Office 365 のメッセージの暗号化を開始する](set-up-new-message-encryption-capabilities.md)|
+|[カスタマー キーによるサービスの暗号化](customer-key-overview.md) | 許可されていないシステムまたは個人によるデータの表示を防止し、Microsoft データセンターの BitLocker ディスク暗号化を補完します。 | [Office 365 のカスタマー キーを設定する](customer-key-set-up.md)|
+|[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|ユーザーがドキュメントをチェックアウトするときに、ダウンロードしたファイルが保護されるように、指定したポリシーに従って、承認されたユーザーのみがファイルを表示して使用できるようにします。 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
+[Rights Management コネクタ](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Exchange または SharePoint Server を使用する既存のオンプレミスの展開、または Windows Server とファイル分類インフラストラクチャ (FCI) を実行するファイルサーバーに対してのみ保護を行う | [RMS コネクタを展開する手順](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
+|[Azure Information Protection の統合されたラベル付けスキャナー](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| オンプレミスのデータストアに存在する機密情報を検出、ラベル付け、保護します。 | [Azure Information Protection の統合ラベル付けされたスキャナーを構成およびインストールする](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| クラウド内のデータストアに存在する機密情報を検出、ラベル付け、保護する | [クラウドに保存されている規制対象および機密データを検出、分類、ラベル付け、保護する](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Microsoft 情報保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|サードパーティ製のアプリおよびサービスに対して機密ラベルを拡張します。  <br /><br /> シナリオ例:[機密ラベルを設定および取得する (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK のセットアップと構成](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
+## <a name="prevent-data-loss"></a>データの損失を防止する
+
+機密情報の偶発的な共有を防止するために、次の機能を使用します。
 
 
-|**機能**|**詳細情報**|
-|:-----|:-----|
-|[機密ラベル](sensitivity-labels.md) <br/> |秘密度ラベルを使用すると、機密コンテンツを分類して保護できます。 保護オプションには、ラベル、透かし、暗号化が含まれます。 機密ラベルは Azure Information Protection を使用します。 Azure Information Protection ラベルを使用している場合は、移行が完了するまで、他の管理センターで新しいラベルを作成しないようにすることをお勧めします。 「 [Azure Information Protection migration](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。 <br/> [保持ラベル](retention.md#retention-labels)は、機密ラベルとは異なることに注意してください。 保持ラベルは、定義したポリシーに基づいてコンテンツを保持または削除するのに役立ちます。 これらは、組織が業界の規制や社内ポリシーに準拠するのに役立ちます。|
-|[データ損失防止](data-loss-prevention-policies.md)(DLP)  <br/> |データ損失防止 (DLP) ポリシーを使用すると、Office 365 内の機密情報を識別、監視し、自動的に保護できます。 データ損失防止ポリシーでは、機密情報を識別するために秘密性ラベルおよび機密情報の種類を使用できます。 <br/> |
-|[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md) <br/> |Microsoft 365 には、DLP ポリシーでの使用や、秘密度や保持ラベルによる自動分類のために用意されている機密情報の種類が数多く含まれています。 機密情報の種類を[Azure Information Protection スキャナー](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)で使用して、オンプレミスのファイルを分類および保護することもできます。 機密情報の種類は、自動プロセスが医療サービス番号やクレジットカード番号など、特定の種類の情報を認識する方法を定義します。   <br/> |
-|[Office 365 メッセージの暗号化](ome.md)(OME)  <br/> |Office 365 Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。 Office 365 Message Encryption は、Outlook.com、Yahoo!、Gmail、およびその他のメール サービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。 <br/> |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/)<br/> |Azure Information Protection (AIP とも呼ばれることもあります) は、組織がドキュメントとメールを分類、ラベル付けし、必要に応じて保護するのに役に立ちます。 管理者は、ルールと条件を定義して、ラベルを自動的に適用できます。 ユーザーは、ファイルとメールに手動でラベルを適用できます。 ラベルを適用するときに関する推奨事項をユーザーに提供することもできます。<br/> 機密ラベルまたは Office メッセージの暗号化を使用している場合は、既に分類と保護の機能を使用しています。 Office 365 に Azure Information Protection ラベルをまだ移行していない場合は、引き続き Azure Information Protection で管理します。  <br/>オンプレミスで[Azure Information Protection スキャナー](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)を実行して、Windows Server、ネットワーク共有、および SharePoint server サイトとライブラリのファイルを分類して保護することができます。 これは、Office 365 に移行するデータを特定するための最初の手順となります。
-|顧客管理暗号化キーを使用した Azure Information Protection <br/> |組織によっては、暗号化キーの制御を維持するために、ビジネスニーズやコンプライアンス要件があります。 これは一般的ではありません。 Azure Information Protection を使用すると、組織は独自のキー (BYOK) をサービスに取り込むことができます。 詳細については、「 [Azure Information Protection の独自のキーを取り込む (BYOK)](https://docs.microsoft.com/azure/information-protection/byok-price-restrictions)」を参照してください。 別のより複雑なオプションが提供されているお客様は、社内で暗号化キーを保持する必要があります。これは、独自のキーを保持する (HYOK) と呼ばれます。  詳細については、「[独自のキーを保持する (HYOK) Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions)」を参照してください。 <br/> |
-    
-
+|機能|どのような問題が解決されますか。|はじめに|
+|:------|:------------|:---------------------|:-----------------------------|
+|[データ損失防止](data-loss-prevention-policies.md)(DLP)| 機密アイテムの意図しない共有の防止に役立てる <br /><br />シナリオ例: [Microsoft Teams の機密情報をチャットおよびチャネルメッセージで保護](dlp-microsoft-teams.md)する | [DLP の既定ポリシーの概要](get-started-with-the-default-dlp-policy.md)|
+|[エンドポイントのデータ損失防止 (プレビュー)](endpoint-dlp-learn-about.md)| Windows 10 コンピューターで使用および共有されるアイテムに DLP 機能を拡張します。 | [エンドポイント データ損失防止(プレビュー) を開始する](endpoint-dlp-getting-started.md)|
