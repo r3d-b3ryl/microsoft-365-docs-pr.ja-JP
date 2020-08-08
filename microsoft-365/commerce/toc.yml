@@ -4,14 +4,10 @@
   href: ../admin/index.yml
 - name: 試用する/購入する
   items:
-    - name: Microsoft 365 試用版にサインアップする
-      href: sign-up-for-office-365-trial.md
     - name: Microsoft 365 の試用または購入
       href: try-or-buy-microsoft-365.md
     - name: 試用期間を延長する
       href: extend-your-trial.md
-    - name: 別のサブスクリプションを購入する
-      href: buy-another-subscription.md
     - name: アドオンを購入または編集する
       href: buy-or-edit-an-add-on.md
     - name: 記憶領域を追加する
