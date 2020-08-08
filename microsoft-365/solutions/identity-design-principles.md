@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0a4dd8c3c93402409863b18b400184d4e60eeee6
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 427d266ea46c184a87b8b0b4fbe242adfb8deff1
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521043"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597545"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Id とそれ以外の場合: 1 つの設計者の視点
 
@@ -26,7 +26,7 @@ ms.locfileid: "46521043"
 
 ## <a name="about-the-author"></a>筆者について
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg" alt-text="Alex Shteynberg photo":::
+![Alex Shteynberg photo](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
 
 私は、ニューヨークの[Microsoft テクノロジセンター](https://www.microsoft.com/mtc?rtc=1)にある主要な技術アーキテクトです。 多くのお客様や複雑な要件に対応しています。 自分の視点と意見はこれらの相互作用に基づいており、すべての状況に適用されるとは限りません。 しかし、自分の経験で、お客様が最も複雑な課題にお役立ていただける場合は、すべてのお客様を支援できます。 
 
@@ -106,7 +106,8 @@ XYZ SaaS はジャストインタイム (JIT) プロビジョニングをサポ�
 
 多くの場合、misconceptions を明確にするために、クライアント認証フローを通じてお客様を歩きます。 結果は次の図のようになります。これは、それを取得する対話型プロセスほどよくありません。
 
-:::image type="content" source="../media/solutions-architecture-center/identity-beyond-whiteboard-example.png" alt-text="ホワイトボード会話の例":::
+
+![ホワイトボード会話の例](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
 
 このホワイトボードの図は、セキュリティポリシーが認証要求のフロー内で適用される場所を示しています。 この例では、Active Directory フェデレーションサービス (AD FS) によって適用されるポリシーは最初のサービス要求に適用されますが、以降のサービス要求には適用されません。 これは、少なくとも1つの理由により、セキュリティコントロールをクラウドに移行する理由です。
 
@@ -122,7 +123,7 @@ XYZ SaaS はジャストインタイム (JIT) プロビジョニングをサポ�
 
 Azure AD のポリシーエンジンは、[条件付きアクセスポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)を使用して実装されます。 このシステムは、さまざまな他の脅威検出システムからの情報に依存して動的な意思決定を行います。 単純なビューは、次の図のようになります。
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-illustration-3.png" alt-text="Azure AD のポリシーエンジン":::
+![Azure AD のポリシーエンジン](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
 
 これらのすべての信号を統合すると、次のような動的なポリシーが可能になります。
 - デバイスで脅威が検出された場合、データへのアクセスは、ダウンロード機能を使用せずに web に制限されます。
@@ -149,12 +150,11 @@ Azure AD には[、詳細な監査およびレポート](https://docs.microsoft.
 
 焦らないで下さい！ これは、Exchange が非推奨 (または SharePoint など) になっていることを意味するわけではありません。これはまだコアサービスです。 ここでは、今のところ、テクノロジプロバイダーが複数のサービスのコンポーネントを使用してユーザーエクスペリエンス (UX) を移行していたことを意味しています。 Microsoft 365 では、簡単な例として、電子メールの添付ファイルが SharePoint Online または OneDrive for Business に保存されている "[モダン添付ファイル](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)" が挙げられます。 
 
-:::image type="content" source="../media/solutions-architecture-center/modern-attachments.png" alt-text="メールにファイルを添付する":::
-
+![メールにファイルを添付する](../media/solutions-architecture-center/modern-attachments.png)
 
 Outlook クライアントを見ると、Exchange だけでなく、この機能の一部として "接続されている" サービスの多くが表示されます。 これには、Azure AD、Microsoft Search、アプリ、プロファイル、コンプライアンス、Office 365 グループが含まれます。 
 
-:::image type="content" source="../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png" alt-text="吹き出しを使用した Outlook インターフェイス":::
+![吹き出しを使用した Outlook インターフェイス](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
 今後の機能のプレビューに関する[Microsoft 流動的なフレームワーク](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268)についてお読みください。 プレビューでは、Outlook で直接 Teams 会話を読んで、返信することができます。 実際には、 [Teams クライアント](https://products.office.com/microsoft-teams/download-app)はこの戦略のより顕著な例の1つです。 
 
@@ -187,7 +187,7 @@ Outlook クライアントを見ると、Exchange だけでなく、この機能
 
 ### <a name="multi-geo"></a>Multi-Geo 
 
-複数[地域に](https://docs.microsoft.com/office365/enterprise/office-365-multi-geo)する場合、または複数地域にしない場合は、この質問が該当します。 Office 365 複数地域を使用すると、[データ常駐](https://docs.microsoft.com/office365/enterprise/o365-data-locations)の要件を満たすように選択した地理的な場所に、保存データをプロビジョニングして保存することができます。 この機能については、多くの misconceptions があります。 以下の点にご注意ください。 
+複数[地域に](https://docs.microsoft.com/office365/enterprise/office-365-multi-geo)する場合、または複数地域にしない場合は、この質問が該当します。 Office 365 複数地域を使用すると、[データ常駐](https://docs.microsoft.com/office365/enterprise/o365-data-locations)の要件を満たすように選択した地理的な場所に、保存データをプロビジョニングして保存することができます。 この機能については、多くの misconceptions があります。 以下の点に注意します。 
 - パフォーマンス上のメリットは提供されません。 [ネットワーク設計](https://aka.ms/office365networking)が適切でない場合は、パフォーマンスが悪くなる可能性があります。 Microsoft ネットワークに対して "閉じる" デバイスを取得する (必ずしもデータには使用しないでください)。
 - [GDPR コンプライアンス](https://www.microsoft.com/trust-center/privacy/gdpr-overview)のソリューションではありません。 GDPR は、データ主権または保存場所にフォーカスしません。 そのためのコンプライアンスフレームワークは他にもあります。
 - この方法では、管理の委任 (下の図を参照) または[情報バリア](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)は解決されません。
@@ -307,7 +307,7 @@ Office 365 には、[統合監査ログ](https://docs.microsoft.com/microsoft-36
 
 Azure の役割ベースのアクセス制御 (RBAC) により、Azure の詳細なアクセス管理が可能になります。 RBAC を使用すると、ユーザーがジョブを実行するのに必要な最小限のアクセス許可を付与することで、リソースへのアクセスを管理できます。 詳細はこのドキュメントの範囲外ですが、RBAC の詳細については、「 [Azure での役割ベースのアクセス制御 (rbac) とは](https://docs.microsoft.com/azure/role-based-access-control/overview)」を参照してください。 RBAC は重要ですが、Azure のガバナンスに関する考慮事項の一部にすぎません。 詳細については、「[クラウド導入フレームワーク](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/)」を参照してください。 私の友人、Andres Ravinet は、お客様が方法を決定するためにさまざまなコンポーネントについてのステップバイステップで説明しています。 さまざまな要素の高レベルのビュー (実際の顧客モデルに到達するプロセスとしては適していません) は、次のようなものです。
 
-:::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="委任された管理のための Azure コンポーネントの高レベルのビュー":::
+![委任された管理のための Azure コンポーネントの高レベルのビュー](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
 上記の図からわかるように、他の多くのサービスは設計の一部として考慮する必要があります (例: [Azure ポリシー](https://docs.microsoft.com/azure/governance/policy/overview)、 [azure 青写真](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理グループ](https://docs.microsoft.com/azure/governance/management-groups/)など)。
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,25 +18,21 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: 新しいサブスクリプションにアップグレードする方法について説明します。
-ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 別のプランにアップグレードする方法について説明します。
+ms.openlocfilehash: 55667646637cfd2ad6dd56e2361b0c41b136a79e
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403176"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597621"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -78,6 +74,10 @@ ms.locfileid: "44403176"
 
 サービス数の少ないプランに移動する場合は、[手動でプランを変更](change-plans-manually.md)するか、[サポートに連絡](../../admin/contact-support-for-business-products.md)してください。
 
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>一部のユーザーのみをアップグレードしたいと考えています。 どうすればよいですか?
+
+一部のユーザーを別のプランにアップグレードするだけで、新しいサブスクリプションを最初に購入する必要がある場合は、「[変更プランを手動で変更](change-plans-manually.md)する」を参照してください。 ユーザーをアップグレードするサブスクリプションが既にある場合は、「[ユーザーを別のサブスクリプションに移動](move-users-different-subscription.md)する」を参照してください。
+
 ## <a name="why-some-changes-take-longer"></a>変更により時間がかかる理由
 
 **割り当てられているユーザーの数:** 多数のユーザーが割り当てられている場合は、アップグレードを実行して新しいプランに移動するまでに長い時間がかかります。
@@ -88,7 +88,7 @@ ms.locfileid: "44403176"
 
 [**アップグレード**] タブにプランが表示されない場合は、プランを自動的にアップグレードできないことを意味します。 場合によっては、アップグレード可能なプランを表示できるように問題を解決したり、代わりにプランを手動でアップグレードまたは変更したりすることができる場合があります。
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>アップグレードする計画が表示されないのはなぜですか?
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>アップグレードする計画が表示されないのはなぜですか?
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>ライセンス数を超えるユーザーがいるため、今はサブスクリプションをアップグレードできません。
 

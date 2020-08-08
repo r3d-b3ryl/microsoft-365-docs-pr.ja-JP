@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 'PowerShell を使用して電子メールアドレスポリシーを構成することによって、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。 '
-ms.openlocfilehash: 5569f42f15835be02a20166e64ce09a08b146dd7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 19caa4f4dfdef4895fa58f8bf5c198269844044f
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388211"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597379"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Microsoft 365 グループを作成するときに使用するドメインを選択する
 
@@ -103,7 +103,7 @@ EAP を変更しても、プロビジョニング済みのグループには影�
   
 ## <a name="hybrid-requirements"></a>ハイブリッド要件
 
-組織がハイブリッドシナリオで構成されている場合は、「 [microsoft 365 グループをオンプレミスの Exchange ハイブリッドで構成](https://go.microsoft.com/fwlink/p/?LinkId=785430)する」を参照して、組織が microsoft 365 グループを作成するための要件を満たしていることを確認してください。 
+組織がハイブリッドシナリオで構成されている場合は、「 [microsoft 365 グループをオンプレミスの Exchange ハイブリッドで構成](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups)する」を参照して、組織が microsoft 365 グループを作成するための要件を満たしていることを確認してください。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>電子メールアドレスポリシーグループの使用に関するその他の情報:
 

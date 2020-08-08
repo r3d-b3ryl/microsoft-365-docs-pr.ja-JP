@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170673"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597499"
 ---
 # <a name="new-microsoft-edge-app"></a>新しい Microsoft Edge アプリ
 
@@ -25,11 +25,18 @@ ms.locfileid: "45170673"
 
 Microsoft マネージドデスクトップデバイスを新しい Microsoft Edge ブラウザーに移行するには、Microsoft マネージドデスクトップポータルを使用して、IT サポートチケットをファイルに追加します。 チケットをファイル化した後、24時間ごとに展開グループに展開すると、エッジ安定チャネルがテストグループに展開されます。 展開を一時停止するには、別のチケットをファイルに保存する操作を要求します。
 
+[ベータチャネル] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 組織内での代表的な検証の要求時にも利用できます。 Microsoft マネージドデスクトップは、必要に応じて、アプリケーションをテストおよび最初のグループに展開します。これにより、これらのすべてのユーザーは、安定したチャネルに加えて、ベータチャネルを利用できるようになります。 ベータチャネルにアクセスする必要がある追加のユーザーについては、**最新の Workplace Edge ベータユーザー**グループに追加して、会社のポータルからインストールする必要があります。
+
 ## <a name="updates-to-microsoft-edge"></a>Microsoft Edge への更新
 
-Microsoft マネージドデスクトップは、6週間ごとに自動更新される、Microsoft Edge の安定した[チャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel)を展開します。 お客様に最適な環境を実現するために、安定したチャネルでの更新は、Microsoft Edge 製品グループによって[段階的](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout)にロールアウトされています。 Microsoft Edge ベータチャネルは現在使用できません。
+Microsoft マネージドデスクトップは、6週間ごとに自動更新される、Microsoft Edge の安定した[チャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel)を展開します。 お客様に最適な環境を実現するために、安定したチャネルでの更新は、Microsoft Edge 製品グループによって[段階的](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout)にロールアウトされています。 
+
+[ベータチャネル] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 組織内の代表的な検証については、テストと最初のグループの両方でデバイスに展開されます。 このチャネルは完全にサポートされており、約6週間ごとに新機能によって自動更新されます。
 
 Microsoft Edge が正しく更新されるように、Microsoft Edge[更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を変更しないでください。
+
+### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge ベータチャネル
+
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップによって管理される設定
 
@@ -66,19 +73,19 @@ SSL エラーが発生しているサイトにユーザーがアクセスでき�
 
 ### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart 画面
 
-#### <a name="configure-microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen を構成する
+#### <a name="configure-windows-defender-smartscreen"></a>Windows Defender SmartScreen を構成する
 
 **既定値:** い
 
 エンドユーザーを保護するために、既定で有効になっています。
 
-#### <a name="microsoft-defender-smartscreen-prompts-for-sites"></a>サイトの Microsoft Defender SmartScreen プロンプト
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>サイトの Windows Defender SmartScreen プロンプト
 
 **既定値:** い
 
 この設定を無効にすることをお勧めします。これにより、ユーザーは警告を無視し、潜在的な悪意のあるサイトに進むことができるようになります。
 
-#### <a name="prevent-bypassing-of-microsoft-defender-smartscreen-warnings-about-downloads"></a>ダウンロードに関する Microsoft Defender SmartScreen の警告をバイパスできないようにする
+#### <a name="prevent-bypassing-of-windows-defender-smartscreen-warnings-about-downloads"></a>ダウンロードに関する Windows Defender SmartScreen の警告をバイパスできないようにする
 
 **既定値:** い
 
@@ -99,6 +106,19 @@ SSL エラーが発生しているサイトにユーザーがアクセスでき�
 **既定値:** 党
 
 エンドユーザーが自分のデバイスにパスワードを保存することを許可することはお勧めしません。
+
+### <a name="internet-explorer-mode-in-microsoft-edge"></a>Microsoft Edge の Internet Explorer モード
+Microsoft Edge で IE モードを使用すると、組織が必要とするすべてのサイトを1つのブラウザーで簡単に使用できるようになります。 Chromium レンダリングエンジンと互換性のあるサイトには、統合された Chromium エンジンを使用します。また、IE 機能に依存していないサイトまたは Internet Explorer 11 (IE11) の Trident MSHTML エンジンを使用します。 [詳細情報](https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+
+Microsoft マネージドデスクトップでは、既定でデバイスの Internet Explorer モードが有効になっています。 
+
+#### <a name="internet-explorer-mode-integration"></a>Internet Explorer モードの統合
+**既定値:** Internet Explorer モード
+
+既定では、デバイスは Internet Explorer モードを使用するように設定されていますが、代わりにスタンドアロンの Internet Explorer 11 ウィンドウでサイトを開くように設定することもできます。 これを変更するには、サポート要求をファイルにします。
+
+#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>エンタープライズモードのサイトリストにサイトを追加する
+サイトを Internet Explorer モードで開くには、それらを[エンタープライズサイトリスト](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)に含める必要があります。 エンタープライズサイトリストの管理と展開は責任を負っています。 詳細については、「configure [Enterprise Mode Site List policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy) 」を参照してください。
 
 ### <a name="other-settings"></a>その他の設定
 
@@ -132,6 +152,9 @@ Microsoft Intune の管理用テンプレートプロファイルを使用して
 ### <a name="install-extensions-silently"></a>拡張機能をサイレントインストールする
 
 管理用テンプレートを使用して Microsoft Edge を設定し、ユーザーに通知せずに拡張機能をインストールすることもできます。 **Microsoft Edge > 拡張 > 機能を使用して、サイレントモードでインストールされる拡張機能を制御する >**、[コンピューターの構成の詳細について説明します。
+
+### <a name="microsoft-edge-update-policies"></a>Microsoft Edge 更新ポリシー
+Microsoft Edge が正しく更新されるように、Microsoft Edge[更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を変更しないでください。
 
 ### <a name="other-common-enterprise-policies"></a>その他の一般的なエンタープライズポリシー
 

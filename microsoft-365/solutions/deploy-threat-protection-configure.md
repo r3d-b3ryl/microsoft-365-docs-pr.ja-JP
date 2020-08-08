@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: fb1290a0f0b884fdbc630cbfcd10cd1102c8acae
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588230"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597511"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を構成する
 
@@ -156,7 +156,7 @@ Office 365 ATP を使用すると、組織内のユーザーは、電子メー�
 
 脅威保護のサービスと機能を設定して展開した後、次の手順として、脅威の検出を監視し、適切な操作を行います。 最適な出発点は、microsoft 365 セキュリティセンター () を使用して、 [https://security.microsoft.com](https://security.microsoft.com) microsoft id、データ、デバイス、アプリ、およびインフラストラクチャ全体のセキュリティを監視および管理できます。 
 
-:::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 セキュリティ センター":::
+![Microsoft 365 セキュリティ センター](../media/solutions-architecture-center/m365-security-center.png)
 
 Microsoft 365 セキュリティセンターは、特にセキュリティ管理者およびセキュリティ運用チームを対象としています。 Microsoft 365 セキュリティセンターでは、次のことを行うことができます。
 - セキュリティ[で保護さ](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)れたスコアを使用して、組織の全体的なセキュリティの状態を表示します。
