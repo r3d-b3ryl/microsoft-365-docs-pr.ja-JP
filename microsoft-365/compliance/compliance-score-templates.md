@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンススコア (プレビュー) で評価を設定するために使用できるすべてのテンプレートを確認します。
-ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: e95e58aaa046ff48fed721881b8486f0ef5267b3
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035622"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612693"
 ---
 # <a name="compliance-score-preview-templates"></a>コンプライアンススコア (プレビュー) テンプレート
 
@@ -41,6 +41,6 @@ ms.locfileid: "45035622"
 | :---: |:---:|:---:|:---:|
 |[Cloud Security アライアンス (CSA) Cloud Controls Matrix (CCM) 3.0.1](offering-csa-star-attestation.md) | [FedRAMP モデレート](offering-fedramp.md)| [連邦金融機関調査協議会 (FFIEC) Information Security ブックレット](offering-ffiec-us.md) |[ブラジルの一般データ保護法 (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387) |
 |[ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073) | [NIST 800-53 リビジョン4](https://go.microsoft.com/fwlink/?linkid=2109075) | [HIPAA/ヒットエコー](offering-hipaa-hitech.md) | [カリフォルニアコンシューマ Privacy Act (CCPA)](offering-ccpa.md) (プレビュー)
-|[ISO 27001:2019](offering-iso-27701.md)  | [NIST 800-171](offering-nist-sp-800-171.md)|  | [Dubai Information Security Resolution (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193) |
-| [ISO 27018:2014](offering-iso-27018.md) | [NIST Cybersecurity Framework (CSF)](offering-nist-csf.md) |  |[欧州連合 GDPR](gdpr.md) |
+|[ISO 27018:2014](offering-iso-27018.md)  | [NIST 800-171](offering-nist-sp-800-171.md)|  | [Dubai Information Security Resolution (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193) |
+| [ISO 27701:2019](offering-iso-27701.md) | [NIST Cybersecurity Framework (CSF)](offering-nist-csf.md) |  |[欧州連合 GDPR](gdpr.md) |
 | [Microsoft 365 データ保護のベースライン](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) | [SOC 1 & 2](offering-soc.md) |  | [Irap/オーストラリア自治体 ISM](offering-ccsl-irap-australia.md) (プレビュー) |

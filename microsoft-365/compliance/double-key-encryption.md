@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 0c66afa22c8712455a875bc8ca4ddcad1678e2e7
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503038"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602000"
 ---
 # <a name="double-key-encryption-dke"></a>二重キー暗号化 (DKE)
 
@@ -136,13 +136,13 @@ Microsoft は、GitHub リポジトリに DKE ソースファイルを提供し�
 
 1. 画面の右側にある [**コード**] を選択します。 使用しているバージョンの UI には、[**クローン] または [ダウンロード**] ボタンが表示される場合があります。 次に、表示されたドロップダウンで、[コピー] アイコンを選択して、URL をクリップボードにコピーします。
 
-    例:
+    次に例を示します。
 
-    :::image type="content" source="../media/dke-clone.png" alt-text="GitHub から二重キー暗号化サービスリポジトリを複製する":::
+   ![GitHub から二重キー暗号化サービスリポジトリを複製する](../media/dke-clone.png)
 
-3. Visual Studio Code で、[ **View** \> **Command Palette** ] を選択し、[ **Git: Clone**] を選択します。 一覧のオプションに移動するには、入力を開始して `git: clone` エントリをフィルター処理し、ドロップダウンから選択します。 例:
+3. Visual Studio Code で、[ **View** \> **Command Palette** ] を選択し、[ **Git: Clone**] を選択します。 一覧のオプションに移動するには、入力を開始して `git: clone` エントリをフィルター処理し、ドロップダウンから選択します。 次に例を示します。
 
-    :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Visual Studio Code GIT: Clone オプション":::
+   ![Visual Studio Code GIT: Clone オプション](../media/dke-vscode-clone.png)
 
 4. テキストボックスに、Git からコピーした URL を貼り付けて、[ **GitHub から複製**] を選択します。
 
@@ -150,9 +150,9 @@ Microsoft は、GitHub リポジトリに DKE ソースファイルを提供し�
 
     リポジトリは Visual Studio Code で開かれ、左下に現在の Git ブランチが表示されます。 ブランチは**master**である必要があります。
 
-    例:
+    次に例を示します。
 
-    :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio Code master 分岐":::
+   ![Visual Studio Code master 分岐](../media/dke-vscode-master.png)
 
 6. [単語**マスター** ] を選択し、分岐の一覧から [ **public_preview** ] を選択します。
 
@@ -170,7 +170,7 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 [ファイル] の appsettings.jsで、アプリケーションの設定を変更します。 このファイルは、DoubleKeyEncryptionService\src\customer-key-store. でローカルに複製した DoubleKeyEncryptionService リポジトリにあります。 たとえば、次の図に示すように、Visual Studio Code でファイルを参照できます。
 
-:::image type="content" source="../media/dke-appsettingsjson.png" alt-text="DKE のファイルの appsettings.jsを検索します。":::
+![DKE のファイルの appsettings.jsを検索します。](../media/dke-appsettingsjson.png)
 
 #### <a name="key-access-settings"></a>キーアクセス設定
 
@@ -184,7 +184,7 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 1. ファイル**でappsettings.js**を開き、設定を探し `AuthorizedEmailAddress` ます。
 
-2. 承認するメールアドレスを追加します。 複数の電子メールアドレスは、二重引用符とコンマで区切ります。 例:
+2. 承認するメールアドレスを追加します。 複数の電子メールアドレスは、二重引用符とコンマで区切ります。 次に例を示します。
 
    ```json
    "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
@@ -200,19 +200,19 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 このイメージは、電子メールの承認用に正しく書式設定されたファイル**のappsettings.js**を示しています。
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="電子メール認証方法が表示されているファイルの appsettings.js":::
+   ![電子メール認証方法が表示されているファイルの appsettings.js](../media/dke-email-accesssetting.png)
 
 **ロール認証を使用して DKE のキーアクセス設定を設定するには**
 
 1. ファイル**でappsettings.js**を開き、設定を探し `AuthorizedRoles` ます。
 
-2. 承認する Active Directory グループ名を追加します。 複数のグループ名は、二重引用符とコンマで区切ります。 例:
+2. 承認する Active Directory グループ名を追加します。 複数のグループ名は、二重引用符とコンマで区切ります。 次に例を示します。
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. `LDAPPath`設定を見つけて、Active Directory ドメインを追加します。 例:
+3. `LDAPPath`設定を見つけて、Active Directory ドメインを追加します。 次に例を示します。
 
    ```json
    "LDAPPath": "contoso.com"
@@ -222,7 +222,7 @@ DKE サービスを展開するには、次の種類のアプリケーション�
 
 このイメージは、役割承認用に正しく書式設定されたファイル**のappsettings.js**を示しています。
 
-   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="ロール認証方法が表示されているファイルのappsettings.js":::
+   ![ロール認証方法が表示されているファイルの appsettings.js](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>テナントとキーの設定
 
@@ -232,7 +232,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
 
 1. ファイル**でappsettings.js**を開きます。
 
-2. `ValidIssuers`設定を見つけて、 `<tenantid>` テナント ID に置き換えます。 Azure ポータルに移動して、[テナントのプロパティ](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)を表示することによって、テナント ID を見つけることができます。 例:
+2. `ValidIssuers`設定を見つけて、 `<tenantid>` テナント ID に置き換えます。 Azure ポータルに移動して、[テナントのプロパティ](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)を表示することによって、テナント ID を見つけることができます。 次に例を示します。
 
    ```json
    "ValidIssuers": [
@@ -240,7 +240,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
    ]
    ```
 
-を探し `JwtAudience` ます。 を、 `<yourhostname>` DKE サービスが実行されるコンピューターのホスト名に置き換えます。 例:
+を探し `JwtAudience` ます。 を、 `<yourhostname>` DKE サービスが実行されるコンピューターのホスト名に置き換えます。 次に例を示します。
 
 
 
@@ -252,7 +252,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
 
 この画像**にはappsettings.js**のテナントとキーの設定の正しい形式が表示されます。 `LDAPPath`は、ロールの承認のために構成されています。
 
-:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="ファイルの appsettings.jsの DKE の正しいテナントとキー設定を示します。":::
+![ファイルの appsettings.jsの DKE の正しいテナントとキー設定を示します。](../media/dke-appsettingsjson-tenantkeysettings.png)
 
 ### <a name="generate-test-keys"></a>テストキーを生成する
 
@@ -311,7 +311,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
 
    最終結果は次のようになります。
 
-   :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="パブリックプレビュー用の startup.cs ファイル":::
+   ![パブリックプレビュー用の startup.cs ファイル](../media/dke-startupcs-usetestkeys.png)
 
 これで[、DKE プロジェクトを構築](#build-the-project)する準備ができました。
 
@@ -325,15 +325,15 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
 
    ビルドタスクが見つからない場合は、[**ビルドタスクの構成**] を選択し、次のように .net コア用のタスクを作成します。
 
-   :::image type="content" source="../media/dke-configurebuildtask.png" alt-text=".NET の不明なビルドタスクを構成する":::
+   ![.NET の不明なビルドタスクを構成する](../media/dke-configurebuildtask.png)
 
    1. [**テンプレートから tasks.jsを作成**] を選択します。
 
-   :::image type="content" source="../media/dke-createtasksjsonfromtemplate.png" alt-text="DKE テンプレートからファイルに tasks.jsを作成する":::
+   ![DKE テンプレートからファイルに tasks.jsを作成する](../media/dke-createtasksjsonfromtemplate.png)
 
    2. テンプレートの種類の一覧から [ **.Net Core**] を選択します。
 
-   :::image type="content" source="../media/dke-tasksjsontemplate.png" alt-text="DKE テンプレートからファイルに tasks.jsを作成する":::
+   ![DKE テンプレートからファイルに tasks.jsを作成する](../media/dke-tasksjsontemplate.png)
 
    3. [ビルド] セクションで、**顧客キーストア**ファイルへのパスを見つけます。 存在しない場合は、次の行を追加します。
 
@@ -349,7 +349,7 @@ DKE テナントとキー設定は、ファイルの**appsettings.js**にあり�
 
 2. [**実行** \> **開始デバッグ**] を選択してプロセスをデバッグします。 環境を選択するように求めるメッセージが表示されたら、[ **.net core**] を選択します。
 
-通常、.net コアデバッガーは ' ' ' に起動 https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 し、スラッシュ (/) とキーの名前を追加します。 例:
+通常、.net コアデバッガーは ' ' ' に起動 https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 し、スラッシュ (/) とキーの名前を追加します。 次に例を示します。
 
 ```https
 https://localhost:5001/TestKey1
@@ -373,9 +373,9 @@ https://localhost:5001/TestKey1
 
     - [**発行**] で、[**コード**] を選択し、[**ランタイムスタック**] で [ **.net Core 3.1**] を選択します。
 
-    例:
+    次に例を示します。
 
-    :::image type="content" source="../media/dke-azure-add-app-service.png" alt-text="アプリサービスを追加する":::
+   ![アプリサービスを追加する](../media/dke-azure-add-app-service.png)
 
 1. ページの下部にある [**レビュー + 作成**] を選択し、[**追加**] を選択します。
 
@@ -420,9 +420,9 @@ DKE が展開されており、作成したテストキーを参照すること�
 
 1. ローカルファイルに表示される接続文字列をコピーします。 これらの文字列を使用して Web App サービスに接続し、FTP を使用してファイルをアップロードします。
 
-    例:
+    次に例を示します。
 
-    :::image type="content" source="../media/dke-ftp-dashboard.png" alt-text="FTP ダッシュボードから接続文字列をコピーする":::
+   ![FTP ダッシュボードから接続文字列をコピーする](../media/dke-ftp-dashboard.png)
 
 1. キーの格納用のコードベースで、 **customer-key-store\src\customer-key-store ディレクトリ**に移動します。
 
@@ -444,11 +444,11 @@ DKE が展開されており、作成したテストキーを参照すること�
 
 前述の方法のいずれかを使用して DKE を展開した後、展開とキーストアの設定を検証します。
 
-実行
+次を実行します:  
 
 src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
 
-例:
+次に例を示します。
 
 key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
@@ -468,9 +468,9 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
     **Onmicrosoft.com**などの非ユーザー設定ドメインを使用して Microsoft Azure を使用している場合は、[**この組織ディレクトリ内のアカウントのみ (microsoft のみ)** ] を選択します。
 
-    例:
+    次に例を示します。
 
-    :::image type="content" source="../media/dke-app-registration.png" alt-text="新しいアプリの登録":::
+   ![新しいアプリの登録](../media/dke-app-registration.png)
 
 4. ページの下部にある [**登録**] を選択して、新しいアプリの登録を作成します。
 
@@ -526,9 +526,9 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
 Microsoft 365 コンプライアンスセンターで、別の方法として、新しい機密ラベルを作成し、暗号化を適用します。 [ **2 重のキー暗号化を使用する**] を選択し、キーのエンドポイント URL を入力します。
 
-例:
+次に例を示します。
 
-:::image type="content" source="../media/dke-use-dke.png" alt-text="Microsoft 365 コンプライアンスセンターで [二重のキー暗号化を使用する] を選択します。":::
+![Microsoft 365 コンプライアンスセンターで [二重のキー暗号化を使用する] を選択します。](../media/dke-use-dke.png)
 
 追加した DKE ラベルは、Microsoft 365 Apps for enterprise の最新バージョンのユーザーに対して表示され始めます。
 
