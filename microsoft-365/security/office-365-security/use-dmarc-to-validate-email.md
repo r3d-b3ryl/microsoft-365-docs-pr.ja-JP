@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
-ms.openlocfilehash: adc213ec5c47184f997a812425e53a61d7ac2da3
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016323"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601875"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -227,7 +227,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 すべて、またはほとんどのメールは、最初にプライマリ MX である mail.contoso.com にルーティングされてから、EOP にルーティングされます。 場合によっては、MX レコードとして EOP をリストすることさえなく、単にメールをルーティングするようにコネクタを接続していることもあります。 EOP は、DMARC 検証を行うための最初のエントリである必要はありません。 検証は、オンプレミスまたは O365 以外のすべてのサーバーが DMARC チェックを行うわけではないため、検証だけを行います。  DMARC TXT レコードを設定するときに顧客のドメイン (サーバーではなく) に対して DMARC を強制できますが、実際に強制するのは受信サーバーだけです。  EOP を受信サーバーとして設定すると、EOP は DMARC 強制を行います。
 
-:::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="DMARC のトラブルシューティング グラフィック、Daniel Mande 提供":::
+![DMARC のトラブルシューティング グラフィック、Daniel Mande 提供](../../media/Tp_DMARCTroublehoot.png)
 
 ## <a name="for-more-information"></a>詳細情報
 

@@ -261,20 +261,22 @@
       items:
         - name: サード パーティのデータのアーカイブの概要
           href: archiving-third-party-data.md
-        - name: Bloomberg メッセージデータのアーカイブ(プレビュー)
-          href: archive-bloomberg-message-data.md
-        - name: Facebook データのアーカイブ (プレビュー)
-          href: archive-facebook-data-with-sample-connector.md
-        - name: 人事データのインポート (プレビュー)
-          href: import-hr-data.md
-        - name: ICE チャットデータのアーカイブ (プレビュー)
-          href: archive-icechat-data.md
-        - name: Instant Bloomberg データのアーカイブ
-          href: archive-instant-bloomberg-data.md
-        - name: LinkedIn データのアーカイブ
-          href: archive-linkedin-data.md
-        - name: Twitter データのアーカイブ (プレビュー)
-          href: archive-twitter-data-with-sample-connector.md
+        - name: Microsoft データ コネクタ
+          items:
+            - name: Bloomberg メッセージ
+              href: archive-bloomberg-message-data.md
+            - name: Facebook Business
+              href: archive-facebook-data-with-sample-connector.md
+            - name: 人事データ
+              href: import-hr-data.md
+            - name: IceChat
+              href: archive-icechat-data.md
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
         - name: パートナーと共同作業して、サード パーティのデータをアーカイブする
           href: work-with-partner-to-archive-third-party-data.md
         - name: サード パーティ データを検索する

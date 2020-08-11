@@ -103,6 +103,13 @@
     - name: Microsoft マネージド デスクトップを使用する
       href: working-with-managed-desktop/index.md
       items:
+        - name: レポートを操作する
+          href: working-with-managed-desktop/reports.md
+          items:
+            - name: デバイスのコンプライアンス レポート
+              href: working-with-managed-desktop/device-compliance-report.md
+            - name: デバイス一覧レポート
+              href: working-with-managed-desktop/device-inventory-report.md
         - name: 分析情報を操作する
           href: working-with-managed-desktop/insights.md
           items:
