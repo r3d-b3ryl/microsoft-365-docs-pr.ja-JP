@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 分類子を作成する方法について説明します。
-ms.openlocfilehash: 029ac16310f8e95a69a713896b1109a778eb3b8d
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 088770ace8914b583b184c78c3ce110d9d68b4c7
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537566"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612610"
 ---
 # <a name="create-a-classifier-preview"></a>分類子を作成する (プレビュー)
 
@@ -122,7 +122,7 @@ ms.locfileid: "46537566"
     a. **名前**を入力します ("暴露ブロック" など)。</br>
     b. **種類**を選択します。 この例では、テキスト文字列を追加しているため、**語句リスト**を選択します。</br>
     c.  [**ここに入力**] ボックスに、文字列を入力します。  この例では、「追加情報開示のための要求」を追加します。 文字列が大文字小文字を区別する必要がある場合は、**大文字小文字を区別**することができます。</br>
-    d.  [**保存**] をクリックします。
+    d.  **[保存]** をクリックします。
 
     ![説明を作成する](../media/content-understanding/explanation.png) 
     

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
+ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222687"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46617188"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -29,13 +29,13 @@ ms.locfileid: "44222687"
 
 これらの推奨事項は、ニーズの粒度 (**基準**、**機密**、**高規制**) に基づいて適用できる、3つの異なるセキュリティと SharePoint ファイルの保護に基づいています。 これらのセキュリティ層および推奨されるクライアントオペレーティングシステムの詳細については、この推奨事項の[概要](microsoft-365-policies-configurations.md)を参照してください。
 
-このガイダンスを実装するだけでなく、機密および規制の厳しいコンテンツに適切なアクセス許可を設定するなど、適切な保護を使用して SharePoint サイトを構成するようにしてください。 ベースライン、機密、および高度な規制保護用のサイトを作成する方法の詳細については、「 [Secure SharePoint Online sites and files](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)」を参照してください。
+このガイダンスを実装するだけでなく、機密および規制の厳しいコンテンツに適切なアクセス許可を設定するなど、適切な保護を使用して SharePoint サイトを構成するようにしてください。
 
 ## <a name="updating-common-policies-to-include-sharepoint-and-onedrive-for-business"></a>SharePoint および OneDrive for business を含めるための共通ポリシーの更新
 
 次の図は、SharePoint Online と OneDrive for business のファイルを保護するために推奨されるポリシーのセットを示しています。 この値は、SharePoint Online と OneDrive for business の保護を追加するために、どのポリシーを更新または新規作成する必要があるかを示します。
 
-![SharePoint Online および OneDrive のポリシーの概要](../media/identity-access-ruleset-sharepoint.png)
+[![SharePoint Online および OneDrive ](../media/identity-access-ruleset-sharepoint.png) のポリシーの概要](../media/identity-access-ruleset-sharepoint.png#lightbox)
 
 共通ポリシーの作成時に SharePoint Online を含めた場合は、新しいポリシーを作成するだけで済みます。 条件付きアクセスルールを構成する場合は、SharePoint Online に OneDrive for Business が含まれています。
 
@@ -53,7 +53,7 @@ ms.locfileid: "44222687"
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 |         |[準拠*して*いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に SharePoint Online を含める|
 ||[Sharepoint Online のアクセス制御ポリシー](#sharepoint-online-access-control-policies): 管理されていないデバイスからの特定の SharePoint サイトへのブラウザー専用アクセスを許可する|これにより、ファイルの編集とダウンロードができなくなります。 PowerShell を使用してサイトを指定する|
-|**高度な規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
+|**厳しく規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに SharePoint Online を含める|
 ||[Sharepoint Online のアクセス制御ポリシー](#use-app-enforced-restrictions-in-sharepoint-online): 管理されていないデバイスから特定の SharePoint サイトへのアクセスをブロックする|PowerShell を使用してサイトを指定する|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>SharePoint Online でアプリに強制される制限を使用する
@@ -77,7 +77,7 @@ SharePoint サイトのアクセス許可は、通常、サイトへのアクセ
 
 次の図は、SharePoint デバイスアクセスポリシーがサイトへのアクセスを保護する方法の例を示しています。
 
-![SharePoint デバイスアクセスポリシーがサイトを保護する方法](../media/SharePoint-rules-scenario.png)
+[![SharePoint デバイスアクセスポリシーがサイト ](../media/SharePoint-rules-scenario.png) を保護する方法](../media/SharePoint-rules-scenario.png#lightbox)
 
 この図について:
 
@@ -86,6 +86,4 @@ SharePoint サイトのアクセス許可は、通常、サイトへのアクセ
 - James が、自分が管理されていない電話を使用して、自分のメンバーである機密サイトにアクセスすると、このサイトに対して構成されているデバイスアクセスポリシーにより、機密サイトへのブラウザーのみのアクセスが許可されます。
 - James が管理されていない電話を使用して、自分のメンバーである、規制の厳しいサイトにアクセスすると、そのサイトに対して構成されたアクセスポリシーによってブロックされます。 このサイトにアクセスできるのは、管理対象の PC を使用している場合のみです。
 
-## <a name="next-steps"></a>次の手順
 
-[SharePoint Online サイトとファイルをセキュリティで保護する](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)

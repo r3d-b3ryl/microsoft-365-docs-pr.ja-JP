@@ -21,12 +21,12 @@ description: Microsoft 365 管理センター-今月追加された機能につ�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015995"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602011"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -102,7 +102,7 @@ Microsoft 365 管理センターに新しい Azure Active Directory 管理者の
 
 ご存知ですが、! 統合された役割の経験に対して2番目の手順を実行し、Microsoft 365 管理センターで Intune の役割を管理できるようになりました。 また、役割を検索したり、役割のアクセス許可を表示したりする機能を利用することもできます。 つまり、Microsoft 365 と Intune の役割を管理するために2つの別個のツールは必要ありません。 Microsoft 365 管理センターにサインインすると、[役割] ページには、Azure AD 用と Intune 用の2つのピボットがあることがわかります。
 
-:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Intune ピボットが選択された [ロール] ページ":::
+![Intune ピボットが選択された [ロール] ページ](../media/MAC-WN-IntuneRoles.png)
 
 ### <a name="sync-message-center-posts-to-planner"></a>メッセージセンターの投稿を Planner に同期させる
 
@@ -162,7 +162,7 @@ Teams の使用率が向上したため、管理に役立ついくつかの機�
 
 #### <a name="for-admins-and-business-owners"></a>管理者およびビジネスオーナー向け
 
-- [リモート作業でスモールビジネスを支援する](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [リモート ワークで小規模ビジネスを強化する](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [リモート小規模ビジネスを実行する](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Microsoft Business Basic にサインアップする](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [2要素サインインの設定](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -173,19 +173,19 @@ Teams の使用率が向上したため、管理に役立ついくつかの機�
 
 ユーザーを追加する際にライセンスを割り当てることがどれほど難しいかについて、管理者から多くのフィードバックを受け取りました。 この修正プログラムに対する最初の更新プログラムを作成し、これらの要求を処理するために、より信頼性の高いバックグラウンドサービスに移行しました。 問題が発生した場合は、エラーメッセージが表示され、もう一度試してみることができます。
 
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="エラーを含むユーザー確認ページを追加します。":::
+![エラーを含むユーザー確認ページを追加します。](../media/MAC-WN-ImprovedLicensing.png)
 
 ### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams ホームページカード
 
 Teams の使用状況において uptick を使用すると、一部の組織は、teams をより見つけやすくするための固定されたダッシュボードカードを取得します。 また、このカードには、組織のリモート作業への移行を支援するためのトレーニングとドキュメントへのリンクもあります。 **ホーム**ページに移動するだけで新しいカードが表示されます。
 
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams ホームページカード":::
+![Microsoft Teams ホームページカード](../media/MAC-WN-TeamsCard.PNG)
 
 ### <a name="customize-your-organizations-sharepoint-mobile-app-theme"></a>組織の SharePoint モバイルアプリのテーマをカスタマイズする
 
 Microsoft 365 管理センターを使用すると、iOS 用の SharePoint モバイルアプリと Android 用の SharePoint モバイルアプリで組織のテーマをカスタマイズできるようになりました。 この機能により、SharePoint Online と一致するモバイルイントラネットアプリの環境を、外出先で利用することができます。 テーマのカスタマイズには、ロゴの画像、ナビゲーションバーの色、テキストとアイコンの色、およびアクセントの色が含まれており、認識が容易になります。
 
-:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="管理センターの設定をモバイルアプリにマッピングする図。":::
+![管理センターの設定をモバイルアプリにマッピングする図。](../media/MAC-WN-CustThemeSP.png)
 
 ### <a name="improvements-to-the-add-a-group-wizard"></a>グループの追加ウィザードの機能強化
 
@@ -295,7 +295,7 @@ Ignite 後に提供するお知らせが非常に少ないため、11月と12月
 
 詳細については、「」を参照してください。 [クレジット カードまたは銀行口座から請求書に変更する](../commerce/billing-and-payments/change-payment-method.md)
 
-### <a name="global-reader"></a>グローバル閲覧者
+### <a name="global-reader"></a>グローバルリーダー
 
 [Ignite Edition 2019](#october-2019---ignite-edition)ではグローバルリーダーの役割について説明していましたが、より広範に展開されているため、いくつかの詳細について説明します。
 
@@ -403,7 +403,7 @@ Ignite 2019 では、いくつかのエキサイティングな機能リリー�
 今月の請求書とサブスクリプションの更新プログラムが提供されています。
 
 - デバイスベースのサブスクリプション: microsoft 365 管理センターのデバイスに**対して、microsoft 365 アプリの教育 (デバイス)** ライセンスを割り当てるか、または割り当てを解除することができます。 **Microsoft 365 の教育機関向けアプリ (デバイス)** は、ライセンスをデバイスに割り当てることができるアドオンライセンスです。 [製品**の請求**] に移動し  >  **Your products** 、ライセンスを検索して購入します。
-- ユーザーベースのライセンス管理:**ユーザー**の  >  **アクティブユーザー**のライセンスを新しいスタイルに割り当てる方法を更新しました。 詳しくは、次のトピックを参照してください。
+- ユーザーベースのライセンス管理:**ユーザー**の  >  **アクティブユーザー**のライセンスを新しいスタイルに割り当てる方法を更新しました。 詳細については、以下を参照してください。
   - [ユーザーにライセンスを割り当てる](manage/assign-licenses-to-users.md)
   - [ユーザーからライセンスの割り当てを解除する](manage/remove-licenses-from-users.md)
 

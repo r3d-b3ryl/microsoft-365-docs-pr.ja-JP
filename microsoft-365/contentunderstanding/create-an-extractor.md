@@ -8,15 +8,15 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 抽出器を作成する方法について
-ms.openlocfilehash: 76cb17df069c6905080baabb0b57d765fe5cc94c
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 64dede9f6613da82c65ca12c6c335a25301f5b9e
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540108"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612764"
 ---
 # <a name="create-an-extractor-preview"></a>抽出器を作成する (プレビュー)
 > [!Note] 
@@ -61,7 +61,7 @@ ms.locfileid: "46540108"
 
 1. **ラベル付きの例**のリストから、負の例を選択します。
 2. ビューアーで、記事の上部にある [**ラベルなし**] を選択します。
-3. [**保存**] をクリックします。
+3. **[保存]** をクリックします。
  
 5つのファイルをラベル付けしたら、トレーニングに移動するように通知バナーが表示されます。 その他のドキュメントを選択したり、トレーニングを進めることができます。 
 

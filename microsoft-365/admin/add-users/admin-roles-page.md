@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 1f662221a2bcd8bc75c8226b2da726966a096be6
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432113"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602095"
 ---
 # <a name="get-started-with-the-roles-page"></a>[ロール] ページで作業を開始する
 
 [役割] ページでは、管理センターでタスクを実行するためのアクセス許可をユーザーに付与できます。 これにより、組織は適切な人物にタスクを分散し、データを安全に保つことができます。
 
-:::image type="content" source="../../media/roles-main-page.png" alt-text="管理者の役割を示す図":::
+![管理者の役割を示す図](../../media/roles-main-page.png)
 
 > [!TIP]
 > 役割の詳細な説明をお探しですか ? 「 [Azure Active Directory」](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)と「管理者の役割[について](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)」を参照してください。
@@ -39,7 +39,7 @@ ms.locfileid: "44432113"
 
 管理者リストをエクスポートして、役割で検索してフィルター処理することもできます。
 
-:::image type="content" source="../../media/admin-role-page-options.png" alt-text="管理者の役割をフィルターまたはインポートする":::
+![管理者の役割をフィルターまたはインポートする](../../media/admin-role-page-options.png)
 
 |||
 |:-----|:-----|
@@ -62,7 +62,7 @@ ms.locfileid: "44432113"
 
 Microsoft online services 間で、ほとんどの管理機能およびデータへのグローバルアクセスを必要とするユーザーにグローバル管理者の役割を割り当てます。 グローバルなアクセスを多くのユーザーに許可することはセキュリティ上のリスクであるため、2 〜 4 人のグローバル管理者を配置することをお勧めします。 グローバル管理者のみが、すべてのユーザーのパスワードをリセットし、ドメインを追加および管理できます。 また、Microsoft サポートへのサービス要求を開いて管理することもできます。 Microsoft online services にサインアップしたユーザーは、自動的にグローバル管理者になります。[詳細情報](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
-### <a name="global-reader"></a>グローバル閲覧者
+### <a name="global-reader"></a>グローバルリーダー
 
 グローバル管理者が表示できるすべての管理センターで管理機能と設定を表示する必要があるユーザーに、グローバル読み取り管理者の役割を割り当てます。 グローバル閲覧者の管理者の役割では、設定を編集することはできません。 [詳細情報](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
@@ -96,11 +96,11 @@ Teams & Skype admin center にアクセスして管理するユーザーに Team
 
 - [最大3つのロール] を選択し、[**ロールの比較**] を選択して、各ロールが持つアクセス許可を表示します。
 
-:::image type="content" source="../../media/compare-roles-list.png" alt-text="管理者の役割の比較を示す図":::
+![管理者の役割の比較を示す図](../../media/compare-roles-list.png)
 
 ::: moniker-end
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 管理者ロールについて](about-admin-roles.md)
 

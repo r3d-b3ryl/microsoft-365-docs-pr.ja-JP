@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: ユーザーが Windows 10 デバイスに Office アプリをインストールして、Microsoft 365 管理センターから Windows 10 Pc に Office を簡単にインストールできるようにします。
-ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786236"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601985"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>ユーザーが Windows 10 デバイスに Office をインストールするのを支援する
 
@@ -46,7 +46,7 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="manage-office-deployments"></a>Office 展開を管理する
 
@@ -60,8 +60,7 @@ Office アプリのインストールに関する短いビデオをご覧くだ�
     
 4. [**メールユーザーをダウンロードする] リンクをダウンロードするためのリンク**をクリックして、電子メールを送信するユーザーを選択してから、[**選択したユーザーにメールを送信**します。
 
-    
-      :::image type="content" source="../media/sendemailtousers.png" alt-text="[Office ダウンロードを使用して電子メールを送信するユーザー] リンクを選択します。":::
+   ![[Office ダウンロードを使用して電子メールを送信するユーザー] リンクを選択します。](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の設定と使用の詳細については、「」を参照してください。
 

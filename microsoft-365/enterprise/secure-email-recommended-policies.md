@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: e469f0d1c0be85aeb5f98a4f2e6e2758cddd8450
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: c2eabd160cf221f7e2bb7b81f07c205135476cc9
+ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222699"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46617176"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -37,6 +37,8 @@ ms.locfileid: "44222699"
 
 ![メールを保護するためのポリシー更新の概要](../media/identity-access-ruleset-mail.png)
 
+[この画像のより大きいバージョンを表示する](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+
 ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ルールは、[一般的な id およびデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクします。
 
 |保護レベル|ポリシー|More information|
@@ -49,7 +51,7 @@ ms.locfileid: "44222699"
 |        |[ActiveSync クライアントをブロックする](#block-activesync-clients)|この新しいポリシーを追加する| 
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| クラウドアプリの割り当てに Exchange Online を含める|
 |         |[準拠*して*いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に Exchange Online を含める|
-|**高度な規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
+|**厳しく規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントをブロックする
 

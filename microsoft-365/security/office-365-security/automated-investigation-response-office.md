@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答機能の概要を Office 365 Advanced Threat Protection プラン2でご覧ください。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c977aa3f57c981cdc29037ca6f9f7803b7accd03
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208913"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601899"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Microsoft 365 の自動調査と応答 (AIR) の概要
 
@@ -127,11 +127,11 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 たとえば、脅威エクスプローラーの**マルウェア**表示を使用しているとします。 グラフの下にあるタブを使用して、[**電子メール**] タブを選択します。リストで1つ以上のアイテムを選択すると、[ **+ Actions** ] ボタンがアクティブになります。 
 
-:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="選択されたメッセージを含むエクスプローラー":::
+![選択されたメッセージを含むエクスプローラー](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
 [ **Actions** ] メニューを使用して、**トリガー調査**を選択できます。
 
-:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="選択されたメッセージの [アクション] メニュー":::
+![選択されたメッセージの [アクション] メニュー](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
 アラートによってトリガーされるプレイブックと同様、エクスプローラーのビューからトリガーされる自動調査には、ルート調査、脅威を特定して相関関連を特定するための手順、これらの脅威を軽減するための推奨処置が含まれます。
 

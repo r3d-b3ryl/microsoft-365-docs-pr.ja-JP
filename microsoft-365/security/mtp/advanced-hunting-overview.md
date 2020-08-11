@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c09047648f1d6bb6d68be78315a876be4998e595
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552436"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608335"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -39,7 +39,7 @@ ms.locfileid: "46552436"
 
 同じ脅威を捜索しているクエリを使用して、カスタムの検出ルールを作成できます。 これらのルールは自動的に実行され、違反の疑いがあるアクティビティや誤って構成されたコンピュータといった、さまざまなイベントやシステム状態をチェックして対処します。
 
-Microsoft 365 セキュリティセンターでは、高度な検索はさまざまなワークスペースからのデータになるクエリをサポートしています。これには、Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からのデバイス、メール、アプリ、id に関するデータが含まれます。 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
+この機能は、microsoft [DEFENDER atp での高度な](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)検索に似ていますが、microsoft 365 セキュリティセンターでは、MICROSOFT defender Atp、OFFICE 365 Atp、Microsoft Cloud App security、および Azure ATP からのデバイス、メール、アプリ、id に関するデータを含む、さまざまなワークスペースからのデータを参照するクエリをサポートしています。 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 
@@ -66,7 +66,7 @@ Microsoft 365 セキュリティセンターでは、高度な検索はさまざ
 ## <a name="related-topics"></a>関連項目
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
-- [クエリ結果に対してアクションを実行する](advanced-hunting-take-action.md)
+- [クエリ結果に対し、アクションを行う](advanced-hunting-take-action.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
 - [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
