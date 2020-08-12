@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
-ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936939"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632141"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -61,8 +61,8 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
 1. 以下の表の SFP 構文について、十分に理解しておいてください。
 
-   ||**使用対象**|**共通事項**|**追加対象**|
-   |:-----|:-----|:-----|:-----|
+   ||もし今使っているとしたら...|お客様に共通のことでは?|追加対象|
+   |---|---|---|---|
    |1|いずれかの電子メール システム (必須)|共通。この値で始まるすべての SPF レコード|v=spf1|
    |2|Exchange Online|共通|include:spf.protection.outlook.com|
    |3|Exchange Online 専用のみ|共通ではない|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -88,6 +88,16 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 3. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。 ドメインに配置できる SPF TXT レコードは 1 つのみです。 SPF TXT レコードが存在する場合、新しいレコードを追加するのではなく、既存のレコードを更新しなければなりません。 「[Office 365 の DNS レコードを作成する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」に移動し、DNS ホストのリンクをクリックします。
 
 4. SPF TXT レコードをテストします。
+
+## <a name="how-to-handle-subdomains"></a>サブドメインの処理方法とは?
+
+サブドメインは、トップレベルドメインの SPF レコードを継承しないので、サブドメインごとに、別々のレコードを作成する必要があることに注意してください。
+
+存在しないサブドメインからのメールを、攻撃者が送信することを防ぐために、すべてのドメインとサブドメインに対して追加のワイルドカード SPF レコード (`*.`) が必要です。 例:
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## <a name="more-information-about-spf"></a>SPF の詳細情報
 
