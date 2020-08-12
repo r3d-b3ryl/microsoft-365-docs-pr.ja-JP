@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577548"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641643"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -207,6 +207,20 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
    > [!NOTE]
    > URL のポップアップダイアログで、電子メールメッセージのフィルター処理が削除され、環境内の URL の公開が完全に表示されます。 これにより、関心のあるメールメッセージをエクスプローラーでフィルター処理し、潜在的な脅威である特定の Url を見つけ、URL フィルターをエクスプローラービュー自体に追加することなく、環境内の URL の公開について理解を深めることができます (URL の詳細ダイアログを使用)。
+
+
+**さまざまなクリック verdicts の解釈**
+
+電子メールまたは URL flyouts 内でのトップクリックとフィルタリングエクスペリエンスの範囲内で、お探しのエクスペリエンスの一部として異なるクリック値が表示されます。 次に、クリック Verdicts に指定できる値とその解釈を示します。
+
+- **None**: URL の verdict をキャプチャできませんでした。 ユーザーが URL をクリックした可能性があります。
+- **許可**: ユーザーは URL への移動を許可されました。
+- [**ブロック**済み: ユーザーが URL への移動をブロックされました。
+- **保留中の verdict**: ユーザーに分析保留中ページが表示されました。
+- **ブロック**されたオーバーライド: ユーザーは URL への移動をブロックされました。ただし、ユーザーはオーバーライドをブロックして、URL に移動します。
+- **Pending verdict バイパス**: ユーザーが分析ページで表示されました。ただし、ユーザーはページをオーバーライドして URL に移動します。
+- **エラー**: ユーザーにエラーページが表示されました。 これは、verdict のキャプチャでエラーが発生したことも意味します。
+- **失敗**: verdict のキャプチャ中に不明な例外が発生しました。 ユーザーが URL をクリックした可能性があります。 
 
 ## <a name="review-email-messages-reported-by-users"></a>ユーザーが報告した電子メールメッセージを確認する
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ & コンプライアンスセンターのレポートダッシュボードで使用できるメールフローレポートについて説明しています。
 ms.custom: ''
-ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578020"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635036"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのレポートダッシュボードでメールフローレポートを表示する
 
@@ -206,8 +206,7 @@ ms.locfileid: "46578020"
 
 ## <a name="mailflow-status-report"></a>メールフロー状態レポート
 
-**メールフローの状態レポート**は、[送信および受信](#sent-and-received-email-report)した電子メールレポートに似ていますが、エッジで許可またはブロックされる電子メールに関する追加情報が含まれています。 これは、エッジ保護情報が含まれている唯一のレポートで、Exchange Online Protection (EOP) による評価のためにサービスに許可されるまでにブロックされる電子メールの量のみを示しています。
-
+**メールフローの状態レポート**は、[送信および受信](#sent-and-received-email-report)した電子メールレポートに似ていますが、エッジで許可またはブロックされる電子メールに関する追加情報が含まれています。 これは、エッジ保護情報が含まれている唯一のレポートで、Exchange Online Protection (EOP) による評価のためにサービスに許可されるまでにブロックされる電子メールの量のみを示しています。 メッセージが5人の受信者に送信される場合は、メッセージを5つの異なるメッセージとしてカウントし、1つのメッセージではないことを理解しておくことが重要です。  
 レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] ダッシュボードに移動し \> **Dashboard**て、**メールフローの状態レポート**を選択します。 **メールフロー状態レポート**に直接移動するには、を開き <https://protection.office.com/mailflowStatusReport> ます。
 
 ![レポートダッシュボードのメールフロー status レポートウィジェット](../../media/mail-flow-status-report-widget.png)
@@ -221,7 +220,7 @@ ms.locfileid: "46578020"
 
   - **受信**
   - **向き**
-  - **組織内**(**受信**および**送信**とは別にカウントされます)
+  - **組織内**: この数は、テナント内のメッセージに対して使用されます。 sender abc@domain.com が受信者 xyz@domain.com に送信される (**受信**および**送信**とは別にカウントされます)
 
 - **型**:
 
@@ -239,7 +238,7 @@ ms.locfileid: "46578020"
 データテーブルには、次の情報が含まれています。
 
 - **[方向]**
-- **Type**
+- **型**
 - **24 時間**
 - **3 日間**
 - **7日**
@@ -329,7 +328,7 @@ ms.locfileid: "46578020"
 [次の方法で**詳細テーブルを表示**] をクリックすると、 **[方向] または**[**下に移動: 方向**] が表示され、次の情報が表示されます。
 
 - **日付 (UTC)**
-- **Type**
+- **型**
 - **[方向]**
 - **メッセージ数**
 

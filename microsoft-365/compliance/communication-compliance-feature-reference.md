@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597556"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632130"
 ---
 # <a name="communication-compliance-feature-reference"></a>コミュニケーションコンプライアンス機能のリファレンス
 
@@ -68,11 +68,11 @@ Microsoft 365 の組織のコミュニケーション コンプライアンス �
 コミュニケーション コンプライアンス ポリシーの使用を開始する前に、通信のレビューの対象ユーザーを決定する必要があります。 このポリシーでは、監督対象となるユーザーまたはユーザーのグループを指定するために、ユーザーのメール アドレスが使用されます。 これらのグループの例としては、Microsoft 365 グループ、Exchange ベースの配布リスト、Yammer コミュニティ、Microsoft Teams チャネルなどがあります。 特定の除外グループまたはグループのリストを使用して、特定のユーザーまたはグループを監視から除外することもできます。
 
 >[!IMPORTANT]
->通信コンプライアンスポリシーでカバーされるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。既存の Enterprise E5 プランを所有しておらず、通信のコンプライアンスを試行したい場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
+>通信コンプライアンスポリシーでカバーされるユーザーは、Microsoft 365 E5 コンプライアンスライセンス、Advanced コンプライアンスアドオンを備えた Office 365 Enterprise E3 ライセンス、または Office 365 Enterprise E5 サブスクリプションに含まれている必要があります。 既存の Enterprise E5 プランを所有しておらず、通信のコンプライアンスを試行したい場合は、 [Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)することができます。
 
 ## <a name="reviewers"></a>レビュー担当者
 
-通信コンプライアンスポリシーを作成する場合は、監視対象ユーザーのメッセージをレビューするユーザーを決定する必要があります。 このポリシーでは、監督対象の通信のレビューを行うユーザーまたはユーザーのグループを指定するために、ユーザーのメール アドレスが使用されます。 AAll レビューアーは、Exchange Online でホストされているメールボックスを持っている必要があります。また、*コミュニケーションコンプライアンス分析*または*通信コンプライアンス調査*の役割のいずれかに割り当てる必要があります。 レビューアー (アナリストまたは調査担当者のいずれか) に、*コミュニケーションコンプライアンスケース管理*役割が割り当てられている必要もあります。 レビュー担当者がポリシーに追加されると、ポリシーへの割り当てを通知する電子メールメッセージを自動的に受信し、レビュープロセスに関する情報へのリンクを提供します。
+通信コンプライアンスポリシーを作成する場合は、監視対象ユーザーのメッセージをレビューするユーザーを決定する必要があります。 このポリシーでは、監督対象の通信のレビューを行うユーザーまたはユーザーのグループを指定するために、ユーザーのメール アドレスが使用されます。 すべてのレビュー担当者は、Exchange Online でホストされているメールボックスを持っている必要があり、*コミュニケーションコンプライアンス分析*または*通信コンプライアンス調査*の役割のいずれかに割り当てる必要があります。 レビューアー (アナリストまたは調査担当者のいずれか) に、*コミュニケーションコンプライアンスケース管理*役割が割り当てられている必要もあります。 レビュー担当者がポリシーに追加されると、ポリシーへの割り当てを通知する電子メールメッセージを自動的に受信し、レビュープロセスに関する情報へのリンクを提供します。
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>監視対象のユーザーとレビューアーのグループ
 
@@ -109,7 +109,7 @@ Microsoft 365 の組織のコミュニケーション コンプライアンス �
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Bloomberg メッセージ](archive-bloomberg-message-data.md)
-    - [ICE チャット](archive-icechat-data.md)
+    - [IceChat](archive-icechat-data.md)
 
 通信コンプライアンスポリシーにコネクタを割り当てる前に、Microsoft 365 組織用にサードパーティ製のコネクタを構成する必要があります。 通信コンプライアンスポリシーウィザードの [**サードパーティのソース**] セクションには、現在構成されているサードパーティ製コネクタのみが表示されます。
 
@@ -197,7 +197,7 @@ Microsoft 365 の trainable 分類子の詳細については、「 [trainable �
 入力してコンマで区切る各単語は個別に適用されます (電子メールまたは添付ファイルに適用するポリシー条件には、1つの単語のみを適用する必要があります)。 たとえば、条件を使用して、**メッセージにこれらの単語のいずれかが含まれている**場合は、「銀行型」、「confidential」、「insider 取り引き」をコンマ (銀行、社外秘、「insider 取り引き」) で区切ったものを使用します。 このポリシーは、"銀行"、"confidential"、または "insider トレーディング" という単語を含むメッセージに適用されます。 このポリシー条件を適用するには、これらの単語または語句のいずれか1つのみが必要です。 メッセージまたは添付ファイル内の単語は、入力した内容と正確に一致する必要があります。
 
 >[!IMPORTANT]
->ユーザー辞書ファイルをインポートする場合は、それぞれの単語または語句を復帰と改行で区切る必要があります。 <br> 例: <br><br>
+>ユーザー辞書ファイルをインポートする場合は、それぞれの単語または語句を復帰と改行で区切る必要があります。 <br> 次に例を示します。 <br><br>
 >*銀行* <br>
 >*機密* <br>
 >*insider トレーディング*
@@ -246,13 +246,13 @@ Microsoft 365 の trainable 分類子の詳細については、「 [trainable �
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -268,9 +268,9 @@ Microsoft 365 の trainable 分類子の詳細については、「 [trainable �
 | **Date** | メッセージが組織内のユーザーによって送信または受信された日付。 |
 | **File クラス** | メッセージの種類 (*メッセージ*または*添付ファイル*のいずれか) に基づいたメッセージのクラス。 |
 | **添付ファイルあり** | メッセージ内の添付ファイルの存在。 |
-| **アイテム クラス** | メッセージの種類、電子メール、Microsoft teams chat、Bloonmberg などに基づいたメッセージの送信元。一般的なアイテムの種類とメッセージクラスの詳細については、「[アイテムの種類とメッセージクラス](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)」を参照してください。 |
+| **アイテム クラス** | メッセージの種類、電子メール、Microsoft teams chat、Bloomberg などに基づいたメッセージの送信元。一般的なアイテムの種類とメッセージクラスの詳細については、「[アイテムの種類とメッセージクラス](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)」を参照してください。 |
 | **受信者のドメイン** | メッセージが送信されたドメイン。 通常、このドメインは Microsoft 365 サブスクリプションドメインとして既定で使用されます。 |
-| **Recipient** | メッセージが送信されたユーザー。 |
+| **[受信者]** | メッセージが送信されたユーザー。 |
 | **Sender** | メッセージを送信したユーザー。 |
 | **送信元ドメイン** | メッセージを送信したドメイン。 |
 | **[サイズ]** | メッセージのサイズ (KB 単位)。 |
@@ -321,7 +321,7 @@ Microsoft 365 の trainable 分類子の詳細については、「 [trainable �
 **レポート**ダッシュボードには、次のレポートウィジェットが含まれています。
 
 - **最近のポリシーの一致**: 時間の経過によるアクティブなポリシーの一致数を表示します。
-- 解決された**アイテム (ポリシー別**): ポリシーによって解決されたポリシー一致アラートの数を時系列で表示します。
+- **解決済みアイテム (ポリシー別**): ポリシーによって解決されたポリシー一致アラートの数を時系列で表示します。
 - **最も多くのポリシーが一致するユーザー**: 特定の期間におけるユーザー (または匿名化ユーザー名) とポリシーの一致数が表示されます。
 - **最も一致するポリシー**: ポリシーと、指定された期間に一致するアイテムの数が表示されます。
 

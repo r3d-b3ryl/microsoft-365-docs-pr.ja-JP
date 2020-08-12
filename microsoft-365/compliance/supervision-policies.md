@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: eb57a60643eb6168ad9fbbca178a3baf1b26392b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502928"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632108"
 ---
 # <a name="supervision-policies"></a>監督ポリシー
 

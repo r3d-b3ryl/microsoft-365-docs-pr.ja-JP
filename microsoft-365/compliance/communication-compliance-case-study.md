@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 79948e514009d3adffcead87aafc18ab2f1e3b25
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 9e16e96989fd3e2312129f9633bd298181839cf0
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597636"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632088"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>ケーススタディ-Contoso 社は、Microsoft Teams、Exchange、Yammer の通信に対して、不快な言語ポリシーを迅速に構成します。
 
@@ -81,7 +81,7 @@ Contoso 社の IT 管理者は、次の手順を実行して Contoso のライ�
 
 通信コンプライアンス機能を管理するためのアクセス許可を構成するために使用する役割は5つあります。 Microsoft 365 コンプライアンスセンターで通信のコンプライアンスをメニューオプションとして利用できるようにし、これらの構成手順を続行するために、Contoso 管理者には*通信コンプライアンス管理者*の役割が割り当てられます。
 
-Contoso 社は、1つの custome 役割グループを作成し、すべての通信コンプライアンスの役割をそのグループに割り当てることを決定しています。 これにより、Contoso はすぐに迅速に開始し、コンプライアンス管理要件に最適なものにすることができます。
+Contoso 社は、1つのカスタム役割グループを作成し、すべての通信コンプライアンスの役割をそのグループに割り当てることを決定します。 これにより、Contoso はすぐに迅速に開始し、コンプライアンス管理要件に最適なものにすることができます。
 
 Contoso 社は、次のすべての通信コンプライアンス役割を含む1つの役割グループを作成します。
 

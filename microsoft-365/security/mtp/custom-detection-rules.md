@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005712"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632153"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタムの検出ルールを作成および管理する
 
@@ -51,6 +51,10 @@ ms.locfileid: "45005712"
 ### <a name="1-prepare-the-query"></a>1. クエリを準備します。
 
 Microsoft 365 セキュリティセンターで、 **[高度な**検索] に移動して既存のクエリを選択するか、新しいクエリを作成します。 新しいクエリを使用する場合は、クエリを実行してエラーを特定し、考えられる結果を理解します。
+
+>[!IMPORTANT]
+>サービスによって返される通知が多すぎないようにするために、各ルールは、実行時に常に100通知のみを生成するように制限されています。 ルールを作成する前に、クエリを微調整して、通常の日常的なアクティビティに対する警告が発生しないようにします。
+
 
 #### <a name="required-columns-in-the-query-results"></a>クエリ結果に必要な列
 カスタム検出ルールを作成するには、クエリは次の列を返す必要があります。
@@ -85,6 +89,7 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. 新しいルールを作成し、通知の詳細を提供します。
 
 クエリエディターでクエリを実行して、[**検出ルールの作成**] を選択し、次の通知の詳細を指定します。
