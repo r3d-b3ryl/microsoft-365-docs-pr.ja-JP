@@ -28,11 +28,11 @@ ms.locfileid: "44815434"
 ---
 # <a name="manage-office-365-message-encryption"></a>Office 365 Message Encryption
 
-Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web の [**暗号化**] ボタンを表示したりすることができます。 この記事のタスクでは、その方法について説明します。
+Office 365 Message Encryption (OME) の設定を終了すると、いくつかの方法で展開の構成をカスタマイズできます。 たとえば、1回限りのパスコードを有効にするかどうかを構成したり、Outlook on the web の [ **暗号化** ] ボタンを表示したりすることができます。 この記事のタスクでは、その方法について説明します。
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Google、Yahoo、Microsoft アカウントの受信者がこれらのアカウントを使用して Office 365 メッセージ暗号化ポータルにサインインできるかどうかを管理する
 
-新しい Office 365 メッセージ暗号化機能をセットアップすると、組織内のユーザーは組織外の受信者にメッセージを送信できるようになります。 受信者が Google account、Yahoo アカウント、Microsoft アカウントなどの*ソーシャル id*を使用している場合、受信者はソーシャル ID で OME ポータルにサインインできます。 必要に応じて、受信者がソーシャル Id を使用して OME ポータルにサインインすることを許可しないようにすることもできます。
+新しい Office 365 メッセージ暗号化機能をセットアップすると、組織内のユーザーは組織外の受信者にメッセージを送信できるようになります。 受信者が Google account、Yahoo アカウント、Microsoft アカウントなどの *ソーシャル id* を使用している場合、受信者はソーシャル ID で OME ポータルにサインインできます。 必要に応じて、受信者がソーシャル Id を使用して OME ポータルにサインインすることを許可しないようにすることもできます。
   
 ### <a name="to-manage-whether-recipients-can-use-social-ids-to-sign-in-to-the-ome-portal"></a>受信者がソーシャル Id を使用して OME ポータルにサインインできるかどうかを管理するには
   
@@ -96,13 +96,13 @@ OME によって暗号化されたメッセージの受信者が Outlook を使�
    Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
    ```
 
-   たとえば、[**暗号化**] ボタンを無効にするには、次のようにします。
+   たとえば、[ **暗号化** ] ボタンを無効にするには、次のようにします。
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-   [**暗号化**] ボタンを有効にするには:
+   [ **暗号化** ] ボタンを有効にするには:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
@@ -191,11 +191,11 @@ Microsoft 365 で、[暗号化のみ] オプションを使用して電子メー
 
     各部分の意味は次のとおりです。
 
-   - `mail flow rule name`は、新しいメールフロールールに使用する名前です。
+   - `mail flow rule name` は、新しいメールフロールールに使用する名前です。
 
-   - `option name`は、またはのいずれか `Encrypt` `Do Not Forward` です。
+   - `option name` は、またはのいずれか `Encrypt` `Do Not Forward` です。
 
-   - `template name`は、カスタムブランド化テンプレートに指定した名前です (例 `OME Configuration` :)。
+   - `template name` は、カスタムブランド化テンプレートに指定した名前です (例 `OME Configuration` :)。
 
    "OME Configuration" テンプレートを使用してすべての外部電子メールを暗号化し、暗号化のみのオプションを適用するには、次のようにします。
 
@@ -211,17 +211,17 @@ Microsoft 365 で、[暗号化のみ] オプションを使用して電子メー
 
 ## <a name="customize-the-appearance-of-email-messages-and-the-ome-portal"></a>電子メールメッセージと OME ポータルの外観をカスタマイズする
 
-組織に合わせて OME をカスタマイズする方法の詳細については、「[組織のブランドを暗号化されたメッセージに追加](add-your-organization-brand-to-encrypted-messages.md)する」を参照してください。
+組織に合わせて OME をカスタマイズする方法の詳細については、「 [組織のブランドを暗号化されたメッセージに追加](add-your-organization-brand-to-encrypted-messages.md)する」を参照してください。
   
 ## <a name="disable-the-new-capabilities-for-ome"></a>OME の新機能を無効にする
 
-この記事は提供されていませんが、必要な場合は、OME の新機能を無効にすることは非常に簡単です。 最初に、新しい OME 機能を使用するように作成したメールフロールールを削除する必要があります。 メールフロールールの削除の詳細については、「[メールフロールールの管理](https://technet.microsoft.com/library/jj657505%28v=exchg.150%29.aspx)」を参照してください。 次に、Exchange Online の PowerShell で次の手順を実行します。
+この記事は提供されていませんが、必要な場合は、OME の新機能を無効にすることは非常に簡単です。 最初に、新しい OME 機能を使用するように作成したメールフロールールを削除する必要があります。 メールフロールールの削除の詳細については、「 [メールフロールールの管理](https://technet.microsoft.com/library/jj657505%28v=exchg.150%29.aspx)」を参照してください。 次に、Exchange Online の PowerShell で次の手順を実行します。
   
 ### <a name="to-disable-the-new-capabilities-for-ome"></a>OME の新機能を無効にするには
   
 1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell セッションを開始し、Exchange Online に接続します。 手順については、「[Exchange Online PowerShell に接続する](https://aka.ms/exopowershell)」を参照してください。
 
-2. Web 上の Outlook で [**暗号化**] ボタンを有効にした場合は、SimplifiedClientAccessEnabled パラメーターを指定して、Set-IRMConfiguration コマンドレットを実行することによって、そのボタンを無効にします。 それ以外の場合は、この手順をスキップします。
+2. Web 上の Outlook で [ **暗号化** ] ボタンを有効にした場合は、SimplifiedClientAccessEnabled パラメーターを指定して、Set-IRMConfiguration コマンドレットを実行することによって、そのボタンを無効にします。 それ以外の場合は、この手順をスキップします。
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
