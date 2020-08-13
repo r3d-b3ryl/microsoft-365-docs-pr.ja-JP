@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスの購入をオンまたはオフにする方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391544"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653715"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールで AllowSelfServicePurchase を使用する
 
@@ -92,6 +92,10 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | ユーザーあたりの電源アプリ | CFQ7TTC0KP0P |
 | ユーザーごとの電源自動化 | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
+| プロジェクト計画1 | CFQ7TTC0KXND |
+| プロジェクト計画3 | CFQ7TTC0KXNC |
+| Visio プラン1 | CFQ7TTC0KXN9 |
+| Visio プラン2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の状態を表示または設定する
 
@@ -128,7 +132,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
-**問題**
+### <a name="problem"></a>問題
 
 次のエラーメッセージが表示されます。
 
@@ -136,7 +140,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 これは、トランスポート層セキュリティ (TLS) の古いバージョンが原因である可能性があります。 このサービスを接続するには、TLS 1.2 以上を使用する必要があります。
 
-**解決方法**
+### <a name="solution"></a>ソリューション
 
 TLS 1.2 にアップグレードします。[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 

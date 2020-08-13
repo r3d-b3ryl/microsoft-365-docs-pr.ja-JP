@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046049"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649297"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -76,10 +76,10 @@ ms.locfileid: "45046049"
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory と Microsoft online services の認証イベント |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Active Directory オブジェクト (ユーザー、グループ、デバイス、ドメインなど) に対して実行されるクエリアクティビティ |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

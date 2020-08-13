@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用し &amp; ます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 194ce245e02490a313effdeaad0715fdd8035a19
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: dc68df40e6b7b576644be607697d7b1ed0a33660
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577986"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653535"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -265,14 +265,17 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 
 このトピックで説明する ATP レポートに加えて、次の表に示すように、他のいくつかのレポートも利用できます。
 
+****
+
 |レポート|トピック|
 |---|---|
 |**エクスプローラー** (atp plan 2) または**リアルタイム検出**(atp プラン 1)|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
 |上位の送信者と受信者レポート、スプーフィングメールレポート、スパム検出レポートなどの**電子メールセキュリティレポート**。|[セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)|
 |転送レポート、メールフロー状態レポート、上位の送信者と受信者レポートなどの**メールフローレポート**。|[セキュリティ & コンプライアンスセンターでメールフローレポートを表示する](view-mail-flow-reports.md)|
 |**ATP の安全なリンクの URL トレース**(PowerShell のみ)。 このコマンドレットの出力では、過去7日間の ATP の安全なリンクアクションの結果が表示されます。|[取得-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**EOP および ATP のメールトラフィック結果**(PowerShell のみ)。 このコマンドレットの出力には、ドメイン、日付、イベントの種類、方向、アクション、およびメッセージ数に関する情報が含まれています。|[Get-mailtrafficatpreport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**EOP および ATP のメールトラフィック結果**(PowerShell のみ)。 このコマンドレットの出力には、ドメイン、日付、イベントの種類、方向、アクション、およびメッセージ数に関する情報が含まれています。|[Get-mailtrafficatpreport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**EOP および ATP の検出に関するメール詳細レポート**(PowerShell のみ)。 このコマンドレットの出力には、悪意のあるファイルまたは Url、フィッシングの試行、偽装、その他の電子メールやファイルの潜在的な脅威に関する詳細が記載されています。|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>ATP レポートを表示するには、どのようなアクセス許可が必要ですか。
 

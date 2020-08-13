@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Microsoft Exchange Online Protection (EOP) 管理者が利用できるレポートとトラブルシューティングツールについて説明します。
-ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ddf8c021681bb600548b134d678d1e0fb0f29d0c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588170"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652803"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポート作成とメッセージ追跡
 
@@ -57,7 +57,7 @@ Exchange online メールボックスを使用しない Exchange Online また�
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
 
-Microsoft Graph を使用して、管理センターで利用可能なレポートをプログラムで作成します。 詳細については、「microsoft [graph の概要](https://docs.microsoft.com/graph/overview)」および「 [Microsoft graph で Office 365 の使用状況レポート](https://docs.microsoft.com/graph/api/resources/report)を使用する」を参照してください。
+Microsoft Graph を使用して、管理センターで利用可能なレポートをプログラムで作成します。 詳細については、「microsoft [graph の概要](https://docs.microsoft.com/graph/overview) 」および「 [Microsoft graph で Office 365 の使用状況レポート](https://docs.microsoft.com/graph/api/resources/report)を使用する」を参照してください。
 
 ## <a name="message-trace"></a>メッセージの追跡
 
@@ -75,10 +75,11 @@ EOP を通過する電子メール メッセージを追跡します。電子メ
 
 EOP のレポート機能とメッセージ トレース データが使用可能なタイミングと期間を次の表に示します。
 
-||||
-|:-----|:-----|:-----|
-|**レポートの種類**|**データ使用可能期間 (遡及期間)**|**待機時間**|
-|メール保護概要レポート|90 日間|メッセージ データの集計は 24 ～ 48 時間以内にほぼ完了します。最大 5 日間のマイナーな増分集計変更が実施される場合があります。|
+****
+
+|レポートの種類|データ使用可能期間 (遡及期間)|遅延|
+|---|---|---|
+|メール保護概要レポート|90 日|メッセージ データの集計は 24 ～ 48 時間以内にほぼ完了します。最大 5 日間のマイナーな増分集計変更が実施される場合があります。|
 |メール保護詳細レポート|90 日|生成後 7 日未満の詳細データに関しては、24 時間以内に表示されるはずですが、48 時間まで完成しない場合があります。最大 5 日分のマイナーな増分変更が実施される場合があります。 <br/><br/> 7 日以上前のメッセージに関する詳細レポートを表示するには、結果が出るまでに最大で数時間かかる場合があります。|
 |メッセージ追跡データ|90 日|生成後 7 日未満のメッセージのメッセージ追跡を実施した場合は、メッセージが 5 ～ 30 分で表示されるはずです。<br/><br/> 7 日以上前のメッセージのメッセージ追跡を実施した場合は、結果が出るまでに最大で数時間かかる場合があります。|
 |

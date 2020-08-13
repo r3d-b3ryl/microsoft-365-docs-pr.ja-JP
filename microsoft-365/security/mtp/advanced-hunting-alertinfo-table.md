@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a1290ee415073a9cb3948bc4b0cc6bb3ae13285b
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 36e76ae097dc31c6d7eb7eeff18dd2128ff0cc5c
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899019"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649489"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -41,8 +41,8 @@ ms.locfileid: "44899019"
 | `AlertId` | string | アラートの一意識別子 |
 | `Title` | 文字列 | アラートのタイトル |
 | `Category` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの種類 |
-| `Severity` | string | アラートで識別された脅威インジケーターまたは侵害アクティビティの起こりうる影響 (高、中、低) を示します。 |
-| `ServiceSource` | string | 通知情報を提供した製品またはサービス |
+| `Severity` | 文字列 | アラートで識別された脅威インジケーターまたは侵害アクティビティの起こりうる影響 (高、中、低) を示します。 |
+| `ServiceSource` | 文字列 | 通知情報を提供した製品またはサービス |
 | `DetectionSource` | string | 注目のコンポーネントまたはアクティビティを特定した検出テクノロジまたはセンサー |
 | `AttackTechniques` | string | MITRE ATT&の警告をトリガーしたアクティビティに関連付けられた手法 |
 
@@ -50,6 +50,6 @@ ms.locfileid: "44899019"
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

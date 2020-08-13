@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) での保護の順序、および保護ポリシーの優先度の値によってどのようなポリシーが適用されるかを調べることができます。
-ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209441"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653680"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
@@ -33,32 +33,34 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 
 - **電子メール保護の種類の優先度**: この順序は構成できず、次の表に記載されています。
 
-  |||||
+  ****
+
+  |優先度|電子メール保護|カテゴリ|管理対象|
   |---|---|---|---|
-  |**[優先度]**|**電子メール保護**|**カテゴリ**|**管理対象**|
   |1-d|マルウェア|CAT: 男性 W|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
-  |pbm-2|フィッシング|CAT: PHSH|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
-  |1/3|高確度スパム|CAT: HSPM|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
+  |2|フィッシング|CAT: PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |1/3|高確度スパム|CAT: HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |4 |スプーフィング|CAT: スプーフィング|[EOP でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)|
-  |5 |スパム|CAT: SPM|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
-  |6 |バルク|CAT: BULK|[EOP でスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
+  |5 |スパム|CAT: SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |6 |バルク|CAT: BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |7<sup>\*</sup>|ドメイン偽装 (保護されたユーザー)|DIMP|[ATP フィッシング詐欺対策ポリシーを設定する](configure-atp-anti-phishing-policies.md)|
   |~<sup>\*</sup>|ユーザー偽装 (保護されたドメイン)|UIMP|[ATP フィッシング詐欺対策ポリシーを設定する](configure-atp-anti-phishing-policies.md)|
   |
 
-  <sup>\*</sup>これらの機能は、ATP のフィッシング対策ポリシーでのみ利用可能です。
+  <sup>\*</sup> これらの機能は、ATP のフィッシング対策ポリシーでのみ利用可能です。
 
 - **ポリシーの優先度**: 各保護の種類 (スパム対策、マルウェア対策、フィッシング詐欺対策など) について、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用するカスタムポリシーを作成することもできます。 各カスタムポリシーには、ポリシーが適用される順序を決定する優先順位の値があります。 既定のポリシーは常に最後に適用されます。
 
   ユーザーが同じ種類の複数のポリシーで定義されている場合、優先度の高いポリシーのみが適用されます。 その種類の残りのポリシーは、ユーザーに対して評価されません (既定のポリシーを含む)。
 
-たとえば、**同じユーザーに適用される**次の ATP のフィッシング対策ポリシーと、ユーザーの偽装とスプーフィングの両方として識別されるメッセージを考えてみます。
+たとえば、 **同じユーザーに適用される**次の ATP のフィッシング対策ポリシーと、ユーザーの偽装とスプーフィングの両方として識別されるメッセージを考えてみます。
 
-  |||||
+  ****
+
+  |ATP のフィッシング対策ポリシー|優先度|ユーザー偽装|スプーフィング対策|
   |---|---|---|---|
-  |**ATP のフィッシング対策ポリシー**|**[優先度]**|**ユーザー偽装**|**スプーフィング対策**|
   |ポリシー A|1-d|オン|オフ|
-  |ポリシー B|pbm-2|オフ|オン|
+  |ポリシー B|2|オフ|オン|
   |
 
 1. スプーフィングは、ユーザー偽装 (8) よりも優先度が高いため、メッセージはスプーフィングとしてマークされ、スプーフィングとして扱われます。

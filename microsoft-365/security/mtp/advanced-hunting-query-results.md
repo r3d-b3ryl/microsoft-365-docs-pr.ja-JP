@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899086"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649381"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を操作する
 
@@ -41,9 +41,9 @@ ms.locfileid: "44899086"
 ## <a name="view-query-results-as-a-table-or-chart"></a>クエリ結果を表またはグラフとして表示する
 既定では、高度な検索では、クエリ結果が表形式データとして表示されます。 同じデータをグラフとして表示することもできます。 高度な検索では、次のビューがサポートされます。
 
-| ビューの種類 | 説明 |
+| ビューの種類 | 内容 |
 | -- | -- |
-| **Table** | クエリの結果を表形式で表示します。 |
+| **表** | クエリの結果を表形式で表示します。 |
 | **縦棒グラフ** | X 軸に一連の一意のアイテムを垂直バーとしてレンダリングし、高さが別のフィールドの数値を表すようにします。 |
 | **積み上げ縦棒グラフ** | X 軸上の一連の一意のアイテムを、1つまたは複数の他のフィールドからの数値で表される垂直な積み上げ縦棒グラフで描画します。 |
 | **円グラフ** | 一意のアイテムを表す、断面パイをレンダリングします。 各円グラフのサイズは、別のフィールドの数値を表します。 |
@@ -151,7 +151,7 @@ AppFileEvents
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
 - [カスタム検出の概要](custom-detections-overview.md)

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のスパム対策ポリシーで利用できる高度なスパムフィルター (ASF) 設定について学習できます。
-ms.openlocfilehash: 691539b8abd4fcd2e749c71d7fd337b0105d66ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352478"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653343"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパムフィルター (ASF) 設定
 
@@ -33,7 +33,12 @@ ms.locfileid: "44352478"
 Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織に Exchange Online メールボックスを使用していないメールボックスを持つ Microsoft 365 組織では、スパム対策ポリシーの高度なスパムフィルター (ASF) 設定 (スパムフィルターポリシーまたはコンテンツフィルターポリシーとも呼ばれます) により、管理者は特定のメッセージプロパティに基づいてメッセージをスパムとし ASF は特に、スパムによく見られるため、これらのプロパティを対象としています。 プロパティによっては、ASF 検出によってメッセージが**スパム**または**信頼度の高いスパム**としてマークされます。
 
 > [!NOTE]
-> 1つ以上の ASF 設定を有効にすることは、スパムフィルタリングに対して積極的にアプローチすることです。 ASF によってフィルター処理されたメッセージを誤検知として報告することはできません。 ASF によってフィルター処理されたメッセージを特定するには、次のようにします。 <ul><li>定期的なエンドユーザーのスパム検疫通知。</li><li>フィルター処理されたメッセージが検疫に存在する。</li><li>`X-CustomSpam:`このトピックで説明されているように、メッセージに追加される特定の X-ヘッダーフィールド。</li></ul>
+> 1つ以上の ASF 設定を有効にすることは、スパムフィルタリングに対して積極的にアプローチすることです。 ASF によってフィルター処理されたメッセージを誤検知として報告することはできません。 ASF によってフィルター処理されたメッセージを特定するには、次のようにします。
+> - 定期的なエンドユーザーのスパム検疫通知。
+>
+> - フィルター処理されたメッセージが検疫に存在する。
+>
+> - `X-CustomSpam:`このトピックで説明されているように、メッセージに追加される特定の X-ヘッダーフィールド。
 
 次のセクションでは、セキュリティ & コンプライアンスセンター、および Exchange Online PowerShell またはスタンドアロン EOP PowerShell ([set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)および[set-hostedcontentfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)) で使用可能な ASF 設定とオプションについて説明します。 詳細については、「[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。
 
@@ -58,9 +63,7 @@ ASF 設定ごとに、次のオプションがスパム対策ポリシーで利�
   - テストモードは、次の ASF 設定では使用できません。
 
     - **条件付き送信者 ID フィルター: hard fail** (*MarkAsSpamFromAddressAuthFail*)
-
     - **NDR バック散布**(*MarkAsSpamNdrBackscatter*)
-
     - **SPF レコード: hard fail** (*MarkAsSpamSpfRecordHardFail*)
 
   - **テスト**に設定されている*すべて*の ASF 設定に同じテストモードアクションが適用されます。 異なる ASF 設定に対して異なるテストモードアクションを構成することはできません。
@@ -69,9 +72,10 @@ ASF 設定ごとに、次のオプションがスパム対策ポリシーで利�
 
 次の ASF 設定は、検出されたメッセージのスパム信頼レベル (SCL) を5または6に設定します。これは、**スパム**フィルター verdict およびスパム対策ポリシーの対応するアクションに対応します。
 
-||||
+****
+
+|スパム対策ポリシー設定|内容|X-ヘッダーの追加|
 |---|---|---|
-|**スパム対策ポリシー設定**|**説明**|**X-ヘッダーの追加**|
 |**リモート サイトへのイメージ リンク** <br/><br/> *IncreaseScoreWithImageLinks*|`<Img>`リモートサイトへの HTML タグリンク (たとえば、http を使用する) を含むメッセージは、スパムとしてマークされます。|`X-CustomSpam: Image links to remote sites`|
 |**別のポートに対する URL リダイレクト** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|80 (HTTP)、8080 (代替 HTTP)、または 443 (HTTPS) 以外の TCP ポートにリダイレクトするハイパーリンクを含むメッセージは、スパムとしてマークされます。|`X-CustomSpam: URL redirect to other port`|
 |**URL 内の数値 IP アドレス** <br/><br/> *IncreaseScoreWithNumericIps*|数値ベースの Url (通常は IP アドレス) を含むメッセージは、スパムとしてマークされます。|`X-CustomSpam: Numeric IP in URL`|
@@ -82,9 +86,10 @@ ASF 設定ごとに、次のオプションがスパム対策ポリシーで利�
 
 次の ASF 設定では、検出されたメッセージの SCL を9に設定します。これは、**信頼度の高いスパム**フィルター verdict およびスパム対策ポリシーの対応するアクションに対応します。
 
-||||
+****
+
+|スパム対策ポリシー設定|内容|X-ヘッダーの追加|
 |---|---|---|
-|**スパム対策ポリシー設定**|**説明**|**X-ヘッダーの追加**|
 |**空メッセージ** <br/><br/> *MarkAsSpamEmptyMessages*|件名がなく、メッセージ本文にコンテンツがないメッセージ。添付ファイルは、信頼度の高いスパムとしてマークされません。|`X-CustomSpam: Empty Message`|
 |**HTML 内の JavaScript または VBScript** <br/><br/> *MarkAsSpamJavaScriptInHtml*|HTML で JavaScript または Visual Basic Script Edition を使用するメッセージは、信頼度の高いスパムとしてマークされます。 <br/><br/> これらのスクリプト言語は、特定のアクションが自動的に実行されるように電子メールメッセージで使用されます。|`X-CustomSpam: Javascript or VBscript tags in HTML`|
 |**HTML 内の Frame タグまたは IFrame タグ** <br><br/> *MarkAsSpamFramesInHtml*|`<frame>`または HTML タグを含むメッセージ `<iframe>` は、信頼度の高いスパムとしてマークされます。 <br/><br/> これらのタグは、テキストやグラフィックスを表示するようにページを書式設定するために、電子メールメッセージで使用されます。|`X-CustomSpam: IFRAME or FRAME in HTML`|

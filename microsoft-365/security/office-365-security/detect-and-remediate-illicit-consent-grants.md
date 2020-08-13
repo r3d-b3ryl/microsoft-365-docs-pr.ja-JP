@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Microsoft Office 365 で不法な同意を与える攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726805"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652959"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不法な同意の付与を検出して修復する
 
@@ -54,11 +54,11 @@ ms.locfileid: "44726805"
 5. 結果をクリックして、アクティビティの詳細を表示します。 [**詳細情報**] をクリックして、アクティビティの詳細を取得します。 IsAdminContent が True に設定されているかどうかを確認します。
 
 > [!NOTE]
-> 
+>
 > イベントが発生した後に、対応する監査ログエントリが検索結果に表示されるようにするには、30分から最大24時間かかることがあります。
-> 
+>
 > 監査レコードが保持され、監査ログで検索可能な期間は、Microsoft 365 サブスクリプションによって異なり、具体的には特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
-> 
+>
 > この値が true の場合は、グローバル管理者のアクセス権を持つユーザーがデータへの広範なアクセス権を持っている可能性があることを示します。 これが予期しない場合は、[攻撃を確認](#how-to-confirm-an-attack)するための手順を実行します。
 
 ## <a name="how-to-confirm-an-attack"></a>攻撃を確認する方法

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d5d666bef07c6ae8c5a43b641a8e7f6a11f5457a
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 892ffe59f0902938b5d248e11a967b46de9c30b3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899257"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649051"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -43,7 +43,7 @@ ms.locfileid: "44899257"
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemotePort` | int | 接続先のリモートデバイスの TCP ポート |
-| `RemoteUrl` | string | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
+| `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `LocalIP` | 文字列 | 通信時に使用されるローカルコンピューターに割り当てられた IP アドレス |
 | `LocalPort` | int | 通信時に使用されるローカルコンピューターの TCP ポート |
 | `Protocol` | string | 通信中に使用されるプロトコル |
@@ -72,6 +72,6 @@ ms.locfileid: "44899257"
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

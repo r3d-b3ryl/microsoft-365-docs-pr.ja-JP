@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、安全なリンクを使用して組織をフィッシングやその他の攻撃から保護する方法について説明します。
-ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754750"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656983"
 ---
 # <a name="atp-safe-links"></a>ATP の安全なリンク機能
 
@@ -65,11 +65,14 @@ ATP の安全なリンクポリシーが確立されると、全体管理者、�
 
 **また、必要なアクセス許可があることを確認して**ください。 ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。 次の表では、いくつかの例について説明します。
 
+****
+
 |役割|参照先/割り当て方法|
-|---------|---------|
+|---|---|
 |グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター (<https://aad.portal.azure.com>)|
 |Exchange Online 組織の管理|Exchange 管理センター (<https://outlook.office365.com/ecp>) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
+|
 
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>ATP の安全なリンク保護が適切であることを確認する方法
 
@@ -81,10 +84,13 @@ ATP 安全なリンクポリシーが確立されると、組織のセキュリ�
 
 次の表では、ATP の安全なリンク保護が適用される可能性がある、または導入されていない可能性があるシナリオの例を示します。 (これらすべての場合において、組織に Office 365 Enterprise E5 があると想定しています)。
 
+****
+
 |シナリオ例|この場合、ATP の安全なリンク保護が適用されますか。|
-|:-----|:-----|
+|---|---|
 |田中は、電子メールおよび Office ドキュメント内の Url を対象とする、ATP の安全なリンクポリシーを持つグループのメンバーです。 田中は、他のユーザーが送信した PowerPoint プレゼンテーションを開き、プレゼンテーション内の URL をクリックします。|はい。 定義されている ATP の安全なリンクポリシーは、田中のグループ、田中の電子メール、および Word、Excel、PowerPoint、または Visio ドキュメントに適用されるため、田中がサインインしており、Microsoft 365 Apps for enterprise for Windows、iOS、Android デバイスで使用している場合に限ります。|
 |Chris の組織では、グローバルまたはセキュリティ管理者がまだ ATP の安全なリンクポリシーを定義していません。 Chris は、悪意のある web サイトへの URL を含む電子メールを受信します。 Chris は、URL が悪意があることを認識しないので、リンクをクリックします。|いいえ。 組織内のすべてのユーザーの Url を対象とする既定のポリシーは、保護を確立するために定義する必要があります。|
 |Pat の組織では、グローバルまたはセキュリティ管理者は、まだ ATP の安全なリンクポリシーを定義または編集していません。 [Pat] Word 文書を開き、ファイル内の URL をクリックします。|いいえ。 Office ドキュメントを含むポリシーは、保護を確立するために定義する必要があります。 「 [Set UP ATP Safe Links policies In Office 365」を](set-up-atp-safe-links-policies.md)参照してください。|
 |Lee の組織には、 `https://tailspintoys.com` ブロックされた web サイトとしてリストされている、ATP の安全なリンクポリシーがあります。 Lee は、の URL が含まれる電子メールメッセージを受信 `https://tailspintoys.com/aboutus/trythispage` します。 Lee が URL をクリックします。|これは、サイト全体とそのすべてのサブページがブロックする Url の一覧に含まれているかどうかによって決まります。 「 [ATP Safe Links を使用してカスタムのブロックされた url リストをセットアップする](set-up-a-custom-blocked-urls-list-atp.md)」を参照してください。|
 |田中の仕事仲間は、電子メールが悪意のある URL を含んでいることを知らずに、田中に電子メールを送信します。|これは、組織内で送信される電子メールに ATP の安全なリンクポリシーが定義されているかどうかによって決まります。 「 [Set UP ATP Safe Links policies In Office 365」を](set-up-atp-safe-links-policies.md)参照してください。|
+|

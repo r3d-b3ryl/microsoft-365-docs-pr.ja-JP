@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
-ms.openlocfilehash: 7d1c62bd6ddef44e86e47b894e2d386dd8c0bd55
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 959f842e05939e4a6cfc54d1b860de96bd8546e6
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755190"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656935"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -69,8 +69,10 @@ EOP のユーザーで、Microsoft プレミア サポート契約もしてい�
 
 Microsoft は、世界中で製品サポート用にローカルまたはフリー ダイヤルの電話番号を提供しています。 これらのサポート センターの多くは、営業時間内に現地の言語で、または毎日 24 時間英語でヘルプを提供しています。 下にリストされている場所が表示されない場合は、上記の手順に従って仮想エージェントを使用して、ローカルサポートの電話番号を検索します。
 
-|**国または地域**|**購入前および請求に関する質問**|**技術サポートに関する質問**|
-|:-----|:-----|:-----|
+****
+
+|国または地域|購入前および請求に関する質問|技術サポートに関する質問|
+|---|---|---|
 |ブラジル|フリーダイヤル: 08007621146 <br/> ローカル: 1147001999|同じ|
 |フランス|フリーダイヤル: 0805 540 594 <br/> ローカル:01 57 32 42 97|同じ|
 |ドイツ|フリーダイヤル: 0800 589 2332 <br/>  ローカル: 069 380 789 508|同じ|
@@ -79,6 +81,7 @@ Microsoft は、世界中で製品サポート用にローカルまたはフリ�
 |スペイン|フリーダイヤル: 900 814 197 <br/> ローカル: 912 718 160|同じ|
 |英国|フリーダイヤル: 0800 032 6417 <br/> ローカル: 0203 450 6455|同じ|
 |米国|フリー ダイヤル:1-877-913-2707|フリー ダイヤル:1-800-865-9408|
+|
 
 ## <a name="for-more-information-about-eop-documentation"></a>EOP ドキュメントの詳細について
 

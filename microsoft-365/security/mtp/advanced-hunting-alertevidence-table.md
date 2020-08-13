@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 8fc713db33b0e40adcd0975d26c10daece636ab1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899353"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649513"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -39,10 +39,10 @@ ms.locfileid: "44899353"
 | `AlertId` | string | アラートの一意識別子 |
 | `EntityType` | string | オブジェクトの種類 (ファイル、プロセス、デバイス、ユーザーなど) |
 | `EvidenceRole` | string | エンティティが通知に関与する方法。そのエンティティが影響を受けているか、または単に関連しているかを示します。 |
-| `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
-| `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
+| `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
-| `RemoteUrl` | string | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
+| `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `AccountName` | 文字列 | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
@@ -56,6 +56,6 @@ ms.locfileid: "44899353"
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

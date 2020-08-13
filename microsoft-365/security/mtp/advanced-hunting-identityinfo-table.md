@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204925"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649309"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -53,12 +53,12 @@ ms.locfileid: "45204925"
 | `SipProxyAddress` | string | アカウントのボイスオーバー IP (VOIP) セッション開始プロトコル (SIP) アドレス |
 | `City` | string | アカウントユーザーが配置されている市区町村 |
 | `Country` | string | アカウントユーザーが配置されている国/地域 |
-| `IsAccountEnabled` | boolean | アカウントが有効であるかどうかを示します |
+| `IsAccountEnabled` | ブール値 | アカウントが有効であるかどうかを示します |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

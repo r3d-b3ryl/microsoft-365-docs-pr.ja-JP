@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection を使用して、組織でブロックされている Url の一覧を設定する方法について説明します。
-ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533813"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656649"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、ブロックされたカスタムの Url リストを設定する
 
@@ -45,11 +45,14 @@ ms.locfileid: "46533813"
 
 ATP ポリシーを編集 (または定義) するには、次の表に示す役割の 1 つが割り当てられている必要があります。
 
+****
+
 |役割|参照先/割り当て方法|
-|---------|---------|
+|---|---|
 |グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
+|
 
 > [!TIP]
 > 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
@@ -78,13 +81,15 @@ URL をリストに追加するときは、次の点に注意してください�
 
 - URL ごとにワイルドカードのアスタリスク (\*) を 3 つまで含めることができます。次の表は、入力できる内容と、エントリにどのような効果があるかについていくつかの例を示しています。
 
+****
+
 |エントリの例|機能|
-|:-----|:-----|
+|---|---|
 |`contoso.com` または `*contoso.com*`|ドメイン、サブドメイン、パス (`https://www.contoso.com`、`https://sub.contoso.com`、`https://contoso.com/abc` など) をブロックします|
 |`https://contoso.com/a`|サイト `https://contoso.com/a` をブロックしますが、`https://contoso.com/a/b` のような追加のサブパスはブロックしません|
 |`https://contoso.com/a*`|サイト `https://contoso.com/a`、`https://contoso.com/a/b` のような追加のサブパスをブロックします|
 |`https://toys.contoso.com*`|サブドメイン (この場合は「toys」) をブロックしますが、他のドメイン URL (`https://contoso.com` や `https://home.contoso.com` など) のクリックを許可します。|
-
+|
 
 > [!NOTE]
 > 既定では、Office 365 ATP Safe Links の既定のポリシーでは、ブロックされる URL の一覧には、500の Url のみを追加できます。

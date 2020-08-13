@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online メールボックスの迷惑メール設定を構成する方法について説明します。 これらの設定の多くは、Outlook または web 上の Outlook でユーザーが使用できます。
-ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5da4aad41f5c5f00f65fa1ceb4fc4c0fad773779
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755262"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653043"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online のメールボックスで迷惑メール設定を構成する
 
@@ -44,7 +44,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織では、�
 > [!NOTE]
 > ユーザーが自分の信頼できる差出人のリストに追加した送信者からのメッセージは、EOP の一部として接続フィルター処理をスキップします (SCL は-1 です)。 ユーザーが Outlook の差出人セーフリストにエントリを追加できないようにするには、このトピックで後述する「 [outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」のセクションに記載されているように、グループポリシーを使用します。 ポリシーフィルター、コンテンツフィルター、および Advanced Threat Protection (ATP) のチェックは、引き続きメッセージに適用されます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - これらの手順を実行するには、Exchange Online PowerShell のみを使用できます。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -80,9 +80,9 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 構文およびパラメーターの詳細については、「 [set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)」を参照してください。
 
 > [!NOTE]
-> 
+>
 > - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するには、 `-ErrorAction SlientlyContinue` **set-mailboxjunkemailconfiguration**コマンドにを追加します。
-> 
+>
 > - 迷惑メールルールを無効にしても、Outlook の迷惑メールフィルター (構成方法によって異なります) では、メッセージがスパムであるかどうかを判断し、メッセージを自分のスパム verdict およびメールボックスのセーフリストコレクションに基づいて受信トレイまたは迷惑メールフォルダーに移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
@@ -99,9 +99,10 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 メールボックスのセーフリスト コレクションには、信頼できる差出人のリスト、信頼できる宛先のリスト、および受信拒否リストが含まれています。 既定では、ユーザーは Outlook または web 上の Outlook の自分のメールボックスでセーフリストコレクションを構成できます。 管理者は、 **Set-MailboxJunkEmailConfiguration** コマンドレットで対応するパラメーターを使用して、ユーザーのメールボックスのセーフリスト コレクションを構成できます。 次の表に、これらのパラメーターの説明を示します。
 
-|||
+****
+
+|Set-mailboxjunkemailconfiguration のパラメーター|Outlook on the web の設定|
 |---|---|
-|**Set-mailboxjunkemailconfiguration のパラメーター**|**Outlook on the web の設定**|
 |_BlockedSendersAndDomains_|**次の送信者またはドメインからのメールを [迷惑メール] フォルダーに移動する**|
 |_ContactsTrusted_|**自分の連絡先からのメールを信頼する**|
 |_TrustedListsOnly_|**[差出人セーフリスト] と [セーフリスト] のアドレスからの電子メールのみを信頼する**|
@@ -143,11 +144,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 構文およびパラメーターの詳細については、「 [set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)」を参照してください。
 
 > [!NOTE]
-> 
+>
 > - ユーザーが自分のメールボックスを開いたことがない場合は、前のコマンドを実行するとエラーが表示されることがあります。 このエラーを一括操作で抑制するには、 `-ErrorAction SlientlyContinue` **set-mailboxjunkemailconfiguration**コマンドにを追加します。
-> 
+>
 > - 迷惑メールルールがメールボックスで無効になっている場合でも、セーフリストコレクションを構成することができます。また、Outlook の迷惑メールフィルターは、受信トレイまたは迷惑メールフォルダーにメッセージを移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
-> 
+>
 > - Outlook の迷惑メールフィルターには、追加のセーフリストのコレクション設定があります (たとえば、**電子メールが [差出人セーフリスト] に自動的に追加**されます)。 詳細については、「[迷惑メールフィルターを使用して表示するメッセージを制御する](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077)」を参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法

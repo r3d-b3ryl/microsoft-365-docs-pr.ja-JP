@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: ユーザーがアップロードするファイルで、SharePoint Online がウイルスを検出し、ユーザーがファイルをダウンロードまたは同期できないようにする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6bfc23ca4120122ecfa44ad4d39795fed22af84
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0e58fa8dc8b30c5bc6ff5db1508d8b7f9189b73a
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429922"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653511"
 ---
 # <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive、Microsoft Teams でのウイルス検出
 
@@ -58,9 +58,9 @@ Microsoft 365 では、一般的なウイルス検出エンジンを使用して
 2. ウイルスが検出されたという警告がユーザーに提示されます。 ユーザーには、ファイルをダウンロードして、独自のウイルス対策ソフトウェアを使用して駆除を試行するオプションが与えられます。
 
 > [!NOTE]
-> 
+>
 > SharePoint Online PowerShell の[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)コマンドレットで*DisallowInfectedFileDownload*パラメーターを使用して、ウイルス対策の警告ウィンドウであっても、感染したファイルをユーザーがダウンロードできないようにすることができます。
-> 
+>
 > また、 *DisallowInfectedFileDownload*パラメーターを有効にすると、検出/ブロックされたファイルへのアクセスは、ユーザーと管理者に対して完全にブロックされることにも注意してください。
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>感染したファイルを OneDrive の同期クライアントが同期しようとするとどうなりますか?
@@ -71,7 +71,7 @@ Microsoft 365 では、一般的なウイルス検出エンジンを使用して
 
 Sharepoint、OneDrive、Microsoft teams のために Office 365 ATP を有効にしたお客様は、SharePoint、onedrive、microsoft [teams 用の atp](turn-on-atp-for-spo-odb-and-teams.md)を有効にすることで、セキュリティ & コンプライアンスセンターを使用して、AV および ATP の検出用に検疫されたファイルを管理することができます。 [ATP のみ: セキュリティ & コンプライアンスセンターを使用して、検疫されたファイルを管理](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>More information
 
 SharePoint Online のウイルス対策を構成する方法の詳細については、「[脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide#requirements)」および「 [sharepoint、OneDrive、Microsoft TEAMS 用の ATP を有効](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide)にする」を参照してください。
 

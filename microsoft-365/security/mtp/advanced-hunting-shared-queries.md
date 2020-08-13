@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fd497ce1733dd4770b9bbc8f699bbccf3237fbd
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: d9dcd07a4fc63130d015bf31270d1de9212f9a53
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781519"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649189"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>高度な捜索で共有クエリを使用する
 
@@ -59,6 +59,9 @@ ms.locfileid: "43781519"
 
 2. [**削除**] を選択して、削除を確認します。 または、[**名前の変更**] を選択して、クエリに新しい名前を入力ます。
 
+## <a name="create-a-direct-link-to-a-query"></a>クエリへの直接リンクを作成する
+高度な検索クエリエディターでクエリを直接開くリンクを生成するには、クエリを最終処理して、[**共有リンク**] を選択します。
+
 ## <a name="access-queries-in-the-github-repository"></a>GitHub リポジトリ内のクエリにアクセスする  
 Microsoft のセキュリティ調査員は、[GitHub の指定された公開リポジトリ](https://aka.ms/hunting-queries)で高度な捜索クエリを定期的に共有しています。 このリポジトリは投稿できます。 投稿するには、[GitHub に無料で参加](https://github.com/)してください。
 
@@ -69,6 +72,6 @@ Microsoft のセキュリティ調査員は、[GitHub の指定された公開�
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Standalone Exchange Online Protection (EOP) 組織内の管理者は、Exchange 管理センター (EAC) とスタンドアロン Exchange Online Protection (EOP) PowerShell で、配布グループとメールが有効なセキュリティグループを作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616504"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653655"
 ---
 # <a name="manage-groups-in-eop"></a>EOP でグループを管理する
 
@@ -30,7 +30,10 @@ Exchange Online メールボックスを使用しないスタンドアロンの 
 - **メールが有効なセキュリティグループ**: 管理者の役割に対するアクセス許可を必要とする、メールユーザーおよびその他のセキュリティグループのコレクション。 たとえば、特定のユーザーグループに管理者アクセス許可を付与して、スパム対策とマルウェア対策設定を構成できるようにする場合があります。
 
     > [!NOTE]
-    > <ul><li>既定では、新しいメールが有効なセキュリティグループは、外部 (認証されていない) 送信者からのメッセージを拒否します。</li><li>メールが有効なセキュリティグループに配布グループを追加しないでください。</li></ul>.
+    >
+    > - 既定では、新しいメールが有効なセキュリティグループは、外部 (認証されていない) 送信者からのメッセージを拒否します。
+    >
+    > - メールが有効なセキュリティグループに配布グループを追加しないでください。
 
 グループを管理するには、Exchange 管理センター (EAC) とスタンドアロン EOP PowerShell を使用します。
 
@@ -38,7 +41,7 @@ Exchange Online メールボックスを使用しないスタンドアロンの 
 
 - Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - スタンドアロンの EOP PowerShell でグループを管理する場合、調整が発生する可能性があります。 このトピックの PowerShell の手順では、コマンドの結果が表示されるまでに数分の遅延が発生するバッチ処理方式を使用しています。
 

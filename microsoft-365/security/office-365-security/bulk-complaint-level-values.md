@@ -16,12 +16,12 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) で使用されるバルクコンプライアンスレベル (BCL) の値について説明しています。
-ms.openlocfilehash: 87ef0787aad12022d9034800c4ddc72e54445f5d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 19fa7172bd242852d03822c588e163b7a13f9201
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209609"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653211"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>EOP でのバルク苦情レベル (BCL)
 
@@ -33,9 +33,10 @@ Exchange online メールボックスを使用しない Exchange Online また�
 
 次の表で、BCL のしきい値について説明します。
 
-|||
+****
+
+|BCL|説明|
 |:---:|---|
-|**BCL**|**説明**|
 |.0|バルク送信者からのメッセージではありません。|
 |1, 2, 3|苦情がほとんどないバルク送信者からのメッセージです。|
 |4, 5, 6, 7|苦情の件数がさまざまなバルク送信者からのメッセージです。|

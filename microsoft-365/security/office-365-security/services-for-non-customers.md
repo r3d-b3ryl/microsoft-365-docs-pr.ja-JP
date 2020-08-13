@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
-ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208236"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652659"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Microsoft 365 にメールを送信するユーザー以外のサービス
 
@@ -31,12 +31,15 @@ ms.locfileid: "44208236"
 
 ## <a name="sender-solutions"></a>送信者のソリューション
 
-|**サービス**|**利点**|
-|:-----|:-----|
+****
+
+|サービス|メリット|
+|---|---|
 |このオンライン ヘルプ コンテンツ|提供内容： <br/> EOP ユーザーへの通信の配信に関連する質問の開始点。 <br/><br/> には、ポリシーと要件に関する簡単なオンラインガイドが含まれています。 <br/><br/> Microsoft によって使用されている迷惑メールフィルターと認証テクノロジの概要について説明します。|
 |[Microsoft サポート](#microsoft-support)|配信の問題に対するセルフヘルプと充実したサポートを提供します。|
 |[スパム対策 IP リストから除外ポータル](#anti-spam-ip-delist-portal)|IP リストからの除外要求を送信するためのツール。この要求を送信する前に、送信者は、疑わしい IP から不正なメールや悪意のあるメールが送信されないことを確認する責任があります。|
 |[Exchange Online からの迷惑メールの不正使用とスパムの報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|スパムやその他の不要なメールが Exchange Online から送信されないようにして、インターネットやメールシステムを雑然としないようにします。|
+|
 
 ## <a name="microsoft-support"></a>Microsoft サポート
 
@@ -56,7 +59,7 @@ Microsoft は、Microsoft 365 の受信者にメールを送信する際に問�
 
 ## <a name="anti-spam-ip-delist-portal"></a>スパム対策 IP リストから除外ポータル
 
-これは、Microsoft 365 の受信拒否リストから自分自身を削除するために使用できるセルフサービスポータルです。 Microsoft 365 に電子メールアドレスが含まれている受信者に電子メールを送信しようとしたときにエラーメッセージが表示される場合は、このポータルを使用します。 詳細については、「[リストから除外のポータルを使用して、受信拒否リストから自分自身を削除する](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)」を参照してください。
+これは、Microsoft 365 の受信拒否リストから自分自身を削除するために使用できるセルフサービスポータルです。 Microsoft 365 に電子メールアドレスが含まれている受信者に電子メールを送信しようとしたときにエラーメッセージが表示される場合は、このポータルを使用します。 詳細については、「[リストから除外ポータルを使って、受信拒否リストから自分自身を削除する](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)」を参照してください。
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Exchange Online からの迷惑メールの不正使用とスパムの報告
 

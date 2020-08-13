@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection の一部である、市販の & スピアーフィッシング攻撃に対する保護を提供するフィッシング対策機能について説明します。
-ms.openlocfilehash: dda94145dfbef7466ebd8e1fb9f01d592515f598
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44875423"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653366"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 の ATP フィッシング対策機能
 
@@ -54,12 +54,15 @@ ATP のフィッシング対策機能は、 [Advanced Threat Protection](office-
 特定のユーザーに対して、ATP のフィッシング対策のコンピューターの学習モデルをアクティブにするには、定義済みの[atp の安全な添付ファイル](atp-safe-attachments.md)、 [atp の安全なリンク](atp-safe-links.md)、または atp のフィッシング対策ポリシーの一部である必要があります。 
 
 次の表に、いくつかのシナリオの例を示します。 これらの各例では、組織は Office 365 Enterprise E5 を使用しています。これには Advanced Threat Protection が含まれています。
-  
-|**シナリオ例**|**この場合、ATP のフィッシング対策が適用されますか。**|
-|:-----|:-----|
+
+****
+
+|シナリオ例|この場合、ATP のフィッシング対策が適用されますか。|
+|---|---|
 |Pat の組織には Office 365 Enterprise E5 がありますが、ATP の安全な添付ファイル、ATP の安全なリンク、または ATP の高度なフィッシングのポリシーは定義されていません。|いいえ。 この機能は使用できますが、ATP コンピューターの学習モデルを動作させるには、少なくとも1つの ATP ポリシーを定義する必要があります。 偽装の場合は、ATP のフィッシング対策ポリシーも設定する必要があります。|
 |Lee は、Contoso 社の販売部門の従業員です。 Lee の組織には、財務の従業員のみに適用される ATP のフィッシング対策ポリシーがあります。|いいえ。 この場合、ATP のフィッシング対策 (コンピューターモデルと偽装保護) は財務担当従業員に適用されますが、販売部門を含むその他の従業員になることはありません。|
 |昨日、田中の組織の Office 365 管理者は、すべての従業員に適用される ATP のフィッシング対策ポリシーを設定します。 今日以前は、田中は、ポリシーによってカバーされる偽装を含む電子メールメッセージを受信しました。|はい。 この例では、田中に Advanced Threat Protection のライセンスがあり、田中を含む ATP のフィッシング対策ポリシーが定義されています。 通常、新しいポリシーがデータセンター間で有効になるまでには約30分かかります。このケースでは、1日以上経過しているため、ポリシーが有効になっている必要があります。|
+|
 
 ## <a name="related-topics"></a>関連項目
 

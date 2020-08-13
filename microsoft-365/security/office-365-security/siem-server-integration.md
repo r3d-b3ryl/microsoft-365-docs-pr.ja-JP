@@ -17,16 +17,16 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Microsoft 365 クラウドサービスおよびアプリケーションとのセキュリティ情報およびイベント管理 (SIEM) サーバーの統合の概要を理解する
-ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035262"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653576"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 のサービスおよびアプリケーションとの統合
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>概要
 
 組織は、セキュリティ情報およびイベント管理 (SIEM) サーバーの取得を使用または計画していますか。 Microsoft 365 または Office 365 との統合について疑問があるかもしれません。 この記事では、SIEM サーバーと Microsoft 365 のサービスおよびアプリケーションを統合するために使用できるリソースの一覧を示します。
 
@@ -35,7 +35,7 @@ ms.locfileid: "44035262"
 
 ## <a name="do-i-need-a-siem-server"></a>SIEM サーバーは必要ですか?
 
-SIEM サーバーが必要かどうかは、組織のセキュリティ要件やデータの格納場所など、さまざまな要因によって異なります。 Microsoft 365 には、SIEM サーバーのような追加のサーバーを使用せずに、多くの組織のセキュリティニーズに合ったさまざまなセキュリティ機能が含まれています。 組織によっては、SIEM サーバーの使用を必要とする特別な状況があります。 次に例を示します。
+SIEM サーバーが必要かどうかは、組織のセキュリティ要件やデータの格納場所など、さまざまな要因によって異なります。 Microsoft 365 には、SIEM サーバーのような追加のサーバーを使用せずに、多くの組織のセキュリティニーズに合ったさまざまなセキュリティ機能が含まれています。 組織によっては、SIEM サーバーの使用を必要とする特別な状況があります。 次に、いくつかの例を示します:
 
 - *Fabrikam*には、オンプレミスのコンテンツとアプリケーションがあります。クラウドには、ハイブリッドクラウド展開があります。 すべてのコンテンツとアプリケーションでセキュリティレポートを取得するために、Fabrikam は SIEM サーバーを実装しています。
 
@@ -45,9 +45,10 @@ SIEM サーバーが必要かどうかは、組織のセキュリティ要件や
 
 SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプリケーションからのデータを受信できます。 次の表に、SIEM server のサービスとアプリケーションと、詳細について説明するリソースを365示します。
 
-||||
+****
+
+|Microsoft 365 サービスまたはアプリケーション|SIEM サーバーの入力/メソッド|追加情報|
 |---|---|---|
-|**Microsoft 365 サービスまたはアプリケーション**|**SIEM サーバーの入力/メソッド**|**追加情報**|
 |[Office 365 Advanced Threat Protection](office-365-atp.md)|監査ログ|[Office 365 Advanced Threat Protection との SIEM の統合](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/)|Azure でホストされている HTTPS エンドポイント <br/>REST API|[SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|ログの統合|[SIEM と Microsoft Cloud App Security との統合](https://docs.microsoft.com/cloud-app-security/siem)|

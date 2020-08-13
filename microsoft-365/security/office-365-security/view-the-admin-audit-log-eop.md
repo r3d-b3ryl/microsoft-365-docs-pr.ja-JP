@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 管理者は、管理者監査ログをスタンドアロンの Exchange Online Protection (EOP) で表示および検索する方法を学習できます。
-ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613326"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653499"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>管理者監査ログをスタンドアロン EOP で表示する
 
@@ -26,13 +26,18 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 管理者監査ログには、管理者や管理者特権が割り当てられているユーザーが実行したスタンドアロンの EOP PowerShell コマンドレットに基づいて、特定の操作が記録されます。 管理者監査ログのエントリは、実行されたコマンドレット、使用されたパラメーター、コマンドレットを実行したユーザー、および影響を受けたオブジェクトについての情報を提供します。
 
 > [!NOTE]
-> <ul><li>管理者監査ログは既定で有効になっており、無効にすることはできません。</li><li>管理者監査ログには、 **Get**、 **Search**、または**Test**という動詞で始まるコマンドレットに基づいてアクションが記録されることはありません。</li><li>監査ログのエントリは 90 日間維持されます。 エントリが90日よりも古い場合は、削除されます。</li></ul>
+>
+> - 管理者監査ログは既定で有効になっており、無効にすることはできません。
+>
+> - 管理者監査ログには、 **Get**、 **Search**、または**Test**という動詞で始まるコマンドレットに基づいてアクションが記録されることはありません。
+>
+> - 監査ログのエントリは 90 日間維持されます。 エントリが90日よりも古い場合は、削除されます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange 管理センターを開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
-- スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、ComplianceManagement、組織の管理 (グローバル管理者)、および SecurityAdministrator の役割グループに既定で割り当てられている監査ログまたは表示専用の監査ログの役割が必要です。 詳細については、「 [Permissions in STANDALONE EOP](feature-permissions-in-eop.md) 」を参照して、EAC を使用して、[役割グループのメンバーの一覧を変更](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)します。
 
@@ -73,9 +78,9 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 - _Parameters_パラメーターは、_コマンドレット_パラメーターと共にのみ使用できます。
 
-- _Objectid_パラメーターは、コマンドレットによって変更されたオブジェクトによって結果をフィルター処理します。 有効な値は、監査ログでのオブジェクトの表現方法によって異なります。 例:
+- _Objectid_パラメーターは、コマンドレットによって変更されたオブジェクトによって結果をフィルター処理します。 有効な値は、監査ログでのオブジェクトの表現方法によって異なります。 以下に例を示します。
 
-  - 名前
+  - Name
   - 標準識別名 (たとえば、contoso.com/Users/Akia Al-Al-zuhairi)
 
   結果を絞り込んで、対象のオブジェクトの種類を特定するには、このコマンドレットの他のフィルター処理パラメーターを使用する必要があります。
@@ -133,9 +138,10 @@ Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04
 
 それぞれの監査ログ エントリには、次の表に記載されている情報が含まれます。 監査ログには、1 つまたは複数の監査ログ エントリが含まれています。
 
-|||
+****
+
+|フィールド|説明|
 |---|---|
-|**Field**|**説明**|
 |`RunspaceId`|このフィールドは、EOP によって内部的に使用されます。|
 |`ObjectModified`|このフィールドには、フィールドで指定されたコマンドレットによって変更されたオブジェクトが含まれてい `CmdletName` ます。|
 |`CmdletName`|このフィールドには、フィールド内のユーザーによって実行されたコマンドレットの名前が含まれてい `Caller` ます。|

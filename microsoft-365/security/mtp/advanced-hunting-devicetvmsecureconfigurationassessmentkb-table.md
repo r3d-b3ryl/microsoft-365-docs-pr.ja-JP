@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a265bb84b0ad59ee56cb0f0670951bab1bcd344a
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 2c16929555b3923086e249db61cebb3cf7af17c8
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327965"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648967"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -38,13 +38,13 @@ ms.locfileid: "44327965"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | 特定の構成の一意の識別子 |
-| `ConfigurationImpact` | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `ConfigurationImpact` | string | 構成が全体の構成スコアに与える影響の評価 (1-10) |
 | `ConfigurationName` | string | 構成の表示名 |
 | `ConfigurationDescription` | string | 構成の説明 |
 | `RiskDescription` | string | 関連するリスクの説明 |
 | `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
 | `ConfigurationSubcategory` | string |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
-| `ConfigurationBenchmarks` | 文字列 | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
+| `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `RelatedMitreTechniques` | string | 構成に関連する Mitre ATT&CK フレームワーク テクニックの一覧 |
 | `RelatedMitreTactics ` | string | 構成に関連する Mitre ATT&CK フレームワーク戦術の一覧 |
 
@@ -53,7 +53,7 @@ ms.locfileid: "44327965"
 - [積極的に脅威を捜索する](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
 - [脅威および脆弱性管理の概要](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

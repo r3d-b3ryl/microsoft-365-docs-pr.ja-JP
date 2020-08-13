@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5a9bc0a28f8c9f360975325adbdd50ad22b0afc5
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 0384f3ba07b42c8e783994dfa1db75cf2d6ca80b
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005700"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648865"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -43,7 +43,7 @@ ms.locfileid: "45005700"
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類: 手動による修復、フィッシング ZAP、マルウェアの ZAP |
 | `ActionTrigger` | string | アクションが管理者によってトリガーされたかどうか (手動または保留中の自動アクションの承認)、または ZAP または動的配信などの特別なメカニズムによって発生したかどうかを示します。 |
 | `ActionResult` | string | アクションの結果 |
-| `RecipientEmailAddress` | 文字列型 | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
+| `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 
 ## <a name="supported-event-types"></a>サポートされるイベントの種類
@@ -53,10 +53,10 @@ ms.locfileid: "45005700"
 - **フィッシング ZAP** –[ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md)は、配信後にフィッシング電子メールに対してアクションを実行しました。
 - **マルウェア ZAP** –ゼロ時間自動削除 (ZAP) は、配信後にマルウェアを含む電子メールメッセージに対してアクションを実行しました。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

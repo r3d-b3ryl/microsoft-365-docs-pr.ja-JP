@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 エデュケーションのアカデミック価格に関する学校の資格を確認する方法について説明します。
 ms.date: 07/21/2020
-ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 0bfb779880b94e309e266d8f57ed0a25b749e1f2
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560705"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653727"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Microsoft 365 エデュケーションサブスクリプションのアカデミック資格を確認する
 
@@ -60,7 +60,7 @@ Microsoft 365 教育の試用版をお持ちの場合は、いつでも学校の
 
 1. 
             [Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)に戻ります。
-2. [ホーム] ページで一番下までスクロールし、**請求**カードを探します。
+2. [ホーム] ページで、**請求**カードを見つけます。
     **請求**カードは、検証プロセスの状態を示します。 カードには、承認済み、保留中、辞退、またはドメインの追加のいずれかの状態が表示されます。
 
     > [!NOTE]
@@ -94,7 +94,7 @@ Microsoft 365 教育の試用版をお持ちの場合は、いつでも学校の
 
 学校のアカデミック資格決定に関してご質問がある場合は、[サポートにお問い合わせ](../../admin/contact-support-for-business-products.md)ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 学校用に Microsoft 365 を展開する方法については、 [microsoft 365 エデュケーションのドキュメントとリソース](https://docs.microsoft.com/microsoft-365/education/deploy/)を参照してください。 次に、[ユーザーを追加して、ライセンスを同時に割り当てる](../../admin/add-users/add-users.md)ことができます。 必要な場合は、[サブスクリプションのライセンスをさらに購入](../licenses/buy-licenses.md)することもできます。
 

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベストプラクティス推奨事項に従って、成功を設定し、一般的な構成エラーを回避します。
-ms.openlocfilehash: e5e87883e9c8aad21552ebf306a9716f14532884
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 880e61538f4de588b01a9ec107fcf629a0e7eeed
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739088"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653199"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>スタンドアロン EOP を構成するためのベストプラクティス
 
@@ -39,9 +39,10 @@ Exchange Online Protection (EOP) のベストプラクティス推奨事項に�
 
 これらの設定は、セキュリティポリシーの範囲外にある幅広い機能をカバーしています。
 
-|||||
+****
+
+|セキュリティ機能の名前|Standard|Strict|コメント|
 |---|---|---|---|
-|**セキュリティ機能の名前**|**Standard**|**Strict**|**Comment**|
 |[SPF を設定して、スプーフィングを防止する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|はい|はい||
 |[DKIM を使用して、Office 365 のカスタム ドメインから送信される送信電子メールを検証する](use-dkim-to-validate-outbound-email.md)|はい|はい||
 |[DMARC を使用して Office 365 で電子メールを検証する](use-dmarc-to-validate-email.md)|はい|はい|を `action=quarantine` 標準として使用し、Strict に対して使用し `action=reject` ます。|

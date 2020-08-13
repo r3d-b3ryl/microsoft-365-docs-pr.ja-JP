@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 104ca1b89c4dd6ede2ad06404bbdc0da7d11f689
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 80f1be5458474a34a303ae6c306c5907bde0df5a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899233"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649039"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -41,8 +41,8 @@ ms.locfileid: "44899233"
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
-| `FileName` | string | 記録されたアクションが適用されたファイルの名前 |
-| `FolderPath` | string | 記録されたアクションが適用されたファイルを含むフォルダ |
+| `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
+| `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
@@ -79,6 +79,6 @@ ms.locfileid: "44899233"
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

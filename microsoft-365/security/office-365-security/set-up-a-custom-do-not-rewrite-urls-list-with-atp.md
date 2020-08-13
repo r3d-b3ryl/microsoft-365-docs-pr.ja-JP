@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の ATP の安全なリンクポリシーでユーザーのブロックされたユーザーの Url を設定する方法と、ユーザーのグループの Url のリストを書き換えない方法について説明します。
-ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517475"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656971"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、リライトしないカスタムの Url リストを設定する
 
@@ -41,11 +41,12 @@ ATP の安全なリンク保護では、組織のブロックされた Url の�
 
 ATP ポリシーを編集 (または定義) するには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。 詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-|役割  |参照先/割り当て方法  |
-|---------|---------|
-|グローバル管理者 |Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。         |
-|セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織の管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください) |
+|役割|参照先/割り当て方法|
+|---|---|
+|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
+|セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
+|Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
+|
 
 > [!TIP]
 > 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
@@ -83,9 +84,12 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 
 次の表に、入力できる内容と、それらのエントリの影響についての例を示します。
 
+****
+
 |エントリの例|機能|
-|:-----|:-----|
+|---|---|
 |`contoso.com`|受信者がサブドメインやパスではなく、サイトにアクセスできるように `https://contoso.com` します。|
 |`*.contoso.com/*`|受信者が、、、またはなどのドメイン、サブドメイン、およびパスにアクセスできるようにし `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` `https://www.contoso.com/a` ます。 <br/><br/> このエントリには、次のように、 `*contoso.com*` 偽装している可能性のあるサイトが含まれていないため、 `https://www.falsecontoso.com` またはのようになります。`https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|特定の受信者が、次のようなサブパスではなく、サイトにアクセスできるようにし `https://contoso.com/a` ます。`https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|特定の受信者が、次のようなサブパスでサイトにアクセスできるようにします。 `https://contoso.com/a``https://contoso.com/a/b`|
+|

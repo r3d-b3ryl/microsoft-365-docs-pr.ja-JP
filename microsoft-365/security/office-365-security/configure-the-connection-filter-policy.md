@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、電子メールサーバーからのメールを許可またはブロックするように接続フィルターを構成する方法について説明します。
-ms.openlocfilehash: e0cb5161ac33333a0f8cd5f897b4a0a85315c12e
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 675247ba1764cb928bec967c581083c6365f635a
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755250"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656793"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターの構成
 
-Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 顧客の場合は、EOP (特に既定の接続フィルターポリシー) で接続フィルターを使用して、適切なまたは不良なソース電子メールサーバーを IP アドレスで識別します。 既定の接続フィルターポリシーの主要なコンポーネントは次のとおりです。
+Exchange Online または exchange online メールボックスを持たないスタンドアロンの Exchange Online Protection (EOP) 顧客のメールボックスを使用している Microsoft 365 顧客の場合は、EOP (特に既定の接続フィルターポリシー) で接続フィルターを使用して、適切なまたは不良なソース電子メールサーバーを IP アドレスで識別します。 既定の接続フィルター ポリシーの主な構成要素は次のとおりです。
 
 - **Ip 許可一覧**: ip アドレスまたは ip アドレス範囲で指定した送信元電子メールサーバーからのすべての受信メッセージに対してスパムフィルター処理をスキップします。 このようなソースからのメッセージにスパムフィルター処理が依然として発生する可能性があるシナリオについては、このトピックで後述する「 [IP 許可一覧のソースからのメッセージのフィルター処理](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered)」セクションを参照してください。 IP 許可一覧が安全な送信者戦略全体にどのように適合するかの詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
@@ -44,19 +44,19 @@ Exchange Online または exchange online メールボックスを持たない�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。
 
-- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- このトピックの手順を実行する前に、アクセス許可を割り当てる必要があります。
+- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
 
   - 既定の接続フィルターポリシーを変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
-    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**組織管理**または**セキュリティ管理者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**組織の管理**または**検疫の管理**。
+    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
+    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
 
   - 既定の接続フィルターポリシーに対する読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
 
-    - [セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**セキュリティリーダ**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**表示のみの組織の管理**。
+    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
 - 許可またはブロックする電子メールサーバー (送信者) の送信元 IP アドレスを確認するには、メッセージヘッダーの [接続 IP (**CIP**)] ヘッダーフィールドを確認します。 さまざまな電子メールクライアントのメッセージヘッダーを表示するには、「 [Outlook でインターネットメッセージヘッダーを表示](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)する」を参照してください。
 
@@ -200,6 +200,7 @@ IP 許可一覧内の電子メールサーバーからのメッセージは、�
 
 ## <a name="new-to-microsoft-365"></a>Microsoft 365 の新機能
 
-||
-|:-----|
+|<!-- a -->|
+|---|
 |![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される**管理者と IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。|
+|

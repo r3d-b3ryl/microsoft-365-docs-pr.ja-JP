@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dca8cac2c66147975f71c86b91aee7b36c92cf9
-ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
+ms.openlocfilehash: a1fa80d79c1802d96fc755def3b8ec15af13b0c9
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46608335"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649405"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -68,7 +68,7 @@ ms.locfileid: "46608335"
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [クエリ結果に対し、アクションを行う](advanced-hunting-take-action.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
 - [カスタム検出の概要](custom-detections-overview.md)

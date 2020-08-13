@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0f565e7584a961fcbc48e6a421419cd48a20a963
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: ad3cfe34c697cbef09a99efdcbe1c1bd6ced1ca2
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899329"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649465"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -42,15 +42,15 @@ ms.locfileid: "44899329"
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
-| `FileName` | string | 記録されたアクションが適用されたファイルの名前 |
-| `FolderPath` | string | 記録されたアクションが適用されたファイルを含むフォルダ |
-| `SHA1` | string | 記録されたアクションが適用されたファイルの SHA-1 |
-| `SHA256` | 文字列型 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
+| `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
+| `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
+| `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `RemoteUrl` | string | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
+| `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `RemoteDeviceName` | 文字列 | 影響を受けるコンピューターでリモート操作を実行したコンピューターの名前。 報告されるイベントによっては、この名前は完全修飾ドメイン名 (FQDN)、NetBIOS 名、またはドメイン情報のないホスト名の場合があります。 |
 | `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
 | `ProcessCommandLine` | string | 新しいプロセスを作成するために使用されるコマンドライン |
@@ -89,6 +89,6 @@ ms.locfileid: "44899329"
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

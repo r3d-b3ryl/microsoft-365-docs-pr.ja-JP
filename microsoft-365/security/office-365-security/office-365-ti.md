@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection プランの脅威の調査および応答機能について説明します。
-ms.openlocfilehash: 61b08dc2b77c874e255547b2bcaef596ee017bf4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6c009a756b30d4b35159b98b145b19b72c9ab541
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033940"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656673"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
@@ -34,7 +34,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 - 組織に対する cyberattacks を防止するためにセキュリティ操作を支援するための洞察と知識の提供
 - メールベースの重要な脅威に対して[Office 365 で自動化された調査と応答](automated-investigation-response-office.md)を使用する
     
-脅威の調査と応答の機能によって、セキュリティ&amp;コンプライアンスセンターで利用可能な脅威と関連する応答アクションが洞察されます。 これらの洞察は、組織のセキュリティチームが電子メールまたはファイルベースの攻撃からユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、危険にさらされた Pc、セキュリティインシデントなど、複数のソースからのデータを監視し、データを収集するのに役立ちます。 ビジネス意思決定者およびセキュリティ運用チームは、この情報を使用して組織との脅威を理解し、知的財産権を保護することができます。
+脅威の調査と応答の機能によって、セキュリティコンプライアンスセンターで利用可能な脅威と関連する応答アクションが洞察され &amp; ます。 これらの洞察は、組織のセキュリティチームが電子メールまたはファイルベースの攻撃からユーザーを保護するのに役立ちます。 機能は、ユーザーアクティビティ、認証、電子メール、危険にさらされた Pc、セキュリティインシデントなど、複数のソースからのデータを監視し、データを収集するのに役立ちます。 ビジネス意思決定者およびセキュリティ運用チームは、この情報を使用して組織との脅威を理解し、知的財産権を保護することができます。
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>脅威の調査と応答のツールについて理解する
 
@@ -52,7 +52,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
   
 ![脅威ダッシュボード](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-このダッシュボードを表示して使用するには&amp; 、セキュリティ/コンプライアンスセンターで、[**脅威管理** \> ]**ダッシュボード**に移動します。
+このダッシュボードを表示して使用するには、セキュリティ/コンプライアンスセンターで、[ &amp; **脅威管理**] ダッシュボードに移動し \> **Dashboard**ます。
   
 ### <a name="threat-explorer"></a>脅威エクスプローラー
 
@@ -60,7 +60,7 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 ![脅威エクスプローラー](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-このレポートを表示して使用するには&amp; 、セキュリティ/コンプライアンスセンターで、[**脅威管理** \> **エクスプローラー**] に移動します。
+このレポートを表示して使用するには、セキュリティ/コンプライアンスセンターで、[ &amp; **脅威管理**エクスプローラー] に移動し \> **Explorer**ます。
   
 ### <a name="incidents"></a>インシデント
 
@@ -68,9 +68,9 @@ Office 365 の脅威の調査と応答機能[Advanced Threat Protection](office-
 
 ![Office 365 の現在の脅威インシデントの一覧](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-組織の現在のインシデントの一覧を表示するには、セキュリティ & コンプライアンスセンターで、[**脅威管理** \>の**レビュー** \> **インシデント**] に移動します。
+組織の現在のインシデントの一覧を表示するには、セキュリティ & コンプライアンスセンターで、[**脅威管理**の \> **レビュー** \> **インシデント**] に移動します。
 
-![[セキュリティ & コンプライアンスセンター] で、[脅威\>管理のレビュー] を選択します。](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
+![[セキュリティ & コンプライアンスセンター] で、[脅威管理のレビュー] を選択します。 \>](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulator"></a>攻撃シミュレータ
 
@@ -96,20 +96,23 @@ Office 365 Advanced Threat Protection は、役割ベースのアクセス制御
 
 > [!TIP]
 > セキュリティ管理者などの一部の役割は、セキュリティ & コンプライアンスセンターで割り当てることができますが、代わりに Microsoft 365 管理センターまたは Azure Active Directory のどちらかを使用することを検討してください。 役割、役割グループ、およびアクセス許可の詳細については、以下のリソースを参照してください。
-> - [セキュリティ&amp; /コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)
+>
+> - [セキュリティ/コンプライアンスセンターのアクセス許可 &amp;](permissions-in-the-security-and-compliance-center.md)
+>
 > - [Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
+****
 
-|アクティビティ |ロールと権限 |  
-|:-----|:-----|
-|脅威ダッシュボード (または新しい[セキュリティダッシュボード](security-dashboard.md)) を使用する<br/> <br/>最近の脅威または現在の脅威に関する情報を表示する  <br/> |以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで割り当てることができます。 |
-|脅威[エクスプローラー (およびリアルタイム検出)](threat-explorer.md)を使用して脅威を分析する  <br/> |以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで割り当てることができます。 |
-|インシデント (調査とも呼ばれる) を表示する <br/> インシデントに電子メールメッセージを追加する  <br/> |以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかで割り当てることができます。  |
-|インシデントで電子メールアクションをトリガーする <br/> <br/> 疑わしい電子メールメッセージの検索と削除  <br/> |以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者**、**および検索と削除**の役割<br/><br/>**グローバル管理**者および**セキュリティ管理者**の役割は、Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかに割り当てることができます。 <br/><br/>**検索および削除**の役割は、セキュリティ & コンプライアンスセンター ([https://protection.office.com](https://protection.office.com)) で割り当てる必要があります。 |
-|Office 365 Advanced Threat Protection プラン2と Microsoft Defender Advanced Threat Protection の統合  <br/><br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する  <br/> |**グローバル管理者**または Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) または Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) のいずれかに割り当てられている**セキュリティ管理者**の役割。<br/>--- **plus** ---<br/>追加のアプリケーション ( [Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 、SIEM サーバーなど) で割り当てられている適切な役割  |
-   
-    
-## <a name="next-steps"></a>次の手順
+|アクティビティ|ロールと権限|
+|---|---|
+|脅威ダッシュボード (または新しい[セキュリティダッシュボード](security-dashboard.md)) を使用する<br/> <br/>最近の脅威または現在の脅威に関する情報を表示する|以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) または Microsoft 365 admin center () のいずれかで割り当てることができ [https://admin.microsoft.com](https://admin.microsoft.com) ます。|
+|脅威[エクスプローラー (およびリアルタイム検出)](threat-explorer.md)を使用して脅威を分析する|以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) または Microsoft 365 admin center () のいずれかで割り当てることができ [https://admin.microsoft.com](https://admin.microsoft.com) ます。|
+|インシデント (調査とも呼ばれる) を表示する <br/> インシデントに電子メールメッセージを追加する|以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者** <br/>- **セキュリティリーダ** <br/> <br/>これらの役割は、Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) または Microsoft 365 admin center () のいずれかで割り当てることができ [https://admin.microsoft.com](https://admin.microsoft.com) ます。|
+|インシデントで電子メールアクションをトリガーする <br/> <br/> 疑わしい電子メールメッセージの検索と削除|以下のいずれか: <br/>- **グローバル管理者**  <br/> - **セキュリティ管理者**、**および検索と削除**の役割<br/><br/>**グローバル管理**者および**セキュリティ管理者**の役割は、Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) または Microsoft 365 admin center () のいずれかに割り当てることができ [https://admin.microsoft.com](https://admin.microsoft.com) ます。 <br/><br/>**検索および削除**の役割は、セキュリティ & コンプライアンスセンター () で割り当てる必要があり [https://protection.office.com](https://protection.office.com) ます。|
+|Office 365 Advanced Threat Protection プラン2と Microsoft Defender Advanced Threat Protection の統合  <br/><br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する|**グローバル管理者**または Azure Active Directory () または Microsoft 365 admin center () のいずれかに割り当てられている**セキュリティ管理者**の役割 [https://portal.azure.com](https://portal.azure.com) [https://admin.microsoft.com](https://admin.microsoft.com) 。<br/>--- **plus** ---<br/>追加のアプリケーション ( [Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 、SIEM サーバーなど) で割り当てられている適切な役割|
+|
+
+## <a name="next-steps"></a>次のステップ
 
 - [脅威のトラッカーについて-新知識と注目](threat-trackers.md)
 

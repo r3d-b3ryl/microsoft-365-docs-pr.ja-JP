@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: スタンドアロンの Exchange Online Protection のタスクに必要なアクセス許可について説明します。
-ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2f653fbae49087b8fc1ebc3a97586512965df970
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588254"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652899"
 ---
 # <a name="permissions-in-standalone-eop"></a>スタンドアロン EOP のアクセス許可
 
@@ -43,20 +43,21 @@ Microsoft 365 全体のアクセス許可の詳細については、「[管理�
 
 次の表では、スタンドアロン EOP で使用可能な役割グループについて説明します。
 
-||||
+****
+
+|役割グループ|内容|割り当てられた既定の役割|
 |---|---|---|
-|**役割グループ**|**説明**|**割り当てられた既定の役割**|
-|ComplianceManagement|サブスクリプションに DLP 機能がある場合は、データ損失防止 (DLP) を含む、組織内のコンプライアンス設定を構成および管理します。 <br/><br/> Azure AD の[コンプライアンス管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator)ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|監査ログ <br/><br/> コンプライアンス管理 <br/><br/> Information Rights Management <br/><br/> 保持管理 <br/><br/> 表示のみの監査ログ <br/><br/> "View-Only Configuration/表示専用構成" <br/><br/> "View-Only Recipients/表示専用受信者"|
+|ComplianceManagement|サブスクリプションに DLP 機能がある場合は、データ損失防止 (DLP) を含む、組織内のコンプライアンス設定を構成および管理します。 <br/><br/> Azure AD の[コンプライアンス管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator)ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|監査ログ <br/><br/> コンプライアンス管理 <br/><br/> Information Rights Management <br/><br/> 保持管理 <br/><br/> 表示専用の監査ログ <br/><br/> "View-Only Configuration/表示専用構成" <br/><br/> "View-Only Recipients/表示専用受信者"|
 |ContentExplorerContentViewer|不使用。|データ分類コンテンツビューアー|
 |ContentExplorerListViewer|不使用。|データ分類リストビューアー|
 |問い合わせ|メールユーザーを表示および管理します。|パスワードのリセット <br/><br/> ユーザーオプション <br/><br/> "View-Only Recipients/表示専用受信者"|
 |HygieneManagement|保護機能 (スパム対策、マルウェア対策など) を管理します。|トランスポートの検疫 <br/><br/> "View-Only Configuration/表示専用構成" <br/><br/> "View-Only Recipients/表示専用受信者"|
 |MailFlowAdministrator|承認済みドメインおよびコネクタの表示と管理|リモートドメインと承認済みドメイン <br/><br/> "View-Only Recipients/表示専用受信者"|
-|組織|組織全体への管理者アクセスと、ほぼすべてのタスクを実行する機能。 <br/><br/> Azure AD の[グローバル管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。 <br/><br/> **重要**: "組織" 管理役割グループは強力な役割であるため、組織レベルの管理タスクを実行するユーザーのみがこの役割グループのメンバーになる必要があります。|マルウェア対策 <br/><br/> スパム対策 <br/><br/> 監査ログ <br/><br/> コンプライアンス管理者 <br/><br/> 動的配布グループ <br/><br/> Information Rights Management <br/><br/> "Mail Recipient Creation/メール受信者の作成" <br/><br/> Mail Recipients <br/><br/> "Message Tracking/メッセージ追跡" <br/><br/> "Migration/移行" <br/><br/> 組織のクライアントアクセス <br/><br/> 組織の構成 <br/><br/> 組織のトランスポート設定 <br/><br/> Quarantine <br/><br/> "Recipient Policies/受信者ポリシー" <br/><br/> リモートドメインと承認済みドメイン <br/><br/> パスワードのリセット <br/><br/> 保持管理 <br/><br/> 役割管理 <br/><br/> セキュリティ管理者 <br/><br/> セキュリティグループの作成とメンバーシップ <br/><br/> セキュリティ閲覧者 <br/><br/> 機密ラベル管理者 <br/><br/> 監督 <br/><br/> トランスポートの検疫 <br/><br/> トランスポート ルール <br/><br/> ユーザーオプション <br/><br/> 表示専用のマルウェア対策 <br/><br/> 表示専用スパム対策 <br/><br/> 表示のみの監査ログ <br/><br/> "View-Only Configuration/表示専用構成" <br/><br/> 表示のみの検疫 <br/><br/> "View-Only Recipients/表示専用受信者" <br/><br/> 表示のみの脅威インテリジェンス|
+|組織|組織全体への管理者アクセスと、ほぼすべてのタスクを実行する機能。 <br/><br/> Azure AD の[グローバル管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。 <br/><br/> **重要**: "組織" 管理役割グループは強力な役割であるため、組織レベルの管理タスクを実行するユーザーのみがこの役割グループのメンバーになる必要があります。|マルウェア対策 <br/><br/> スパム対策 <br/><br/> 監査ログ <br/><br/> コンプライアンス管理者 <br/><br/> 動的配布グループ <br/><br/> Information Rights Management <br/><br/> "Mail Recipient Creation/メール受信者の作成" <br/><br/> Mail Recipients <br/><br/> "Message Tracking/メッセージ追跡" <br/><br/> "Migration/移行" <br/><br/> 組織のクライアントアクセス <br/><br/> 組織の構成 <br/><br/> 組織のトランスポート設定 <br/><br/> Quarantine <br/><br/> "Recipient Policies/受信者ポリシー" <br/><br/> リモートドメインと承認済みドメイン <br/><br/> パスワードのリセット <br/><br/> 保持管理 <br/><br/> 役割管理 <br/><br/> セキュリティ管理者 <br/><br/> セキュリティグループの作成とメンバーシップ <br/><br/> セキュリティ閲覧者 <br/><br/> 機密ラベル管理者 <br/><br/> 監督 <br/><br/> トランスポートの検疫 <br/><br/> トランスポート ルール <br/><br/> ユーザーオプション <br/><br/> 表示専用のマルウェア対策 <br/><br/> 表示専用スパム対策 <br/><br/> 表示専用の監査ログ <br/><br/> "View-Only Configuration/表示専用構成" <br/><br/> 表示のみの検疫 <br/><br/> "View-Only Recipients/表示専用受信者" <br/><br/> 表示のみの脅威インテリジェンス|
 |QuarantineAdministrator|すべての受信者の検疫済みメッセージを管理します。|Quarantine|
 |受信者管理|組織内の受信者オブジェクトを作成、管理、および削除します。|動的配布グループ <br/><br/> "Mail Recipient Creation/メール受信者の作成" <br/><br/> Mail Recipients <br/><br/> "Message Tracking/メッセージ追跡" <br/><br/> "Migration/移行" <br/><br/> "Recipient Policies/受信者ポリシー" <br/><br/> パスワードのリセット|
 |Ecm.recordsmanagement|アイテム保持ポリシータグ、メッセージ分類、メールフロールール (トランスポートルールとも呼ばれる) などのコンプライアンス機能を構成します。|"Message Tracking/メッセージ追跡" <br/><br/> 保持管理 <br/><br/> トランスポート ルール|
-|SecurityAdministrator|組織内の保護のすべての側面 (スパム対策、マルウェア対策、スプーフィング対策、検疫など) を構成します。 <br/><br/> Azure AD の[セキュリティ管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|マルウェア対策 <br/><br/> スパム対策 <br/><br/> 監査ログ <br/><br/> Quarantine <br/><br/> セキュリティ管理者 <br/><br/> 機密ラベル管理者 <br/><br/> 表示専用のマルウェア対策 <br/><br/> 表示専用スパム対策 <br/><br/> 表示のみの監査ログ <br/><br/> 表示のみの検疫 <br/><br/> 表示のみの脅威インテリジェンス|
+|SecurityAdministrator|組織内の保護のすべての側面 (スパム対策、マルウェア対策、スプーフィング対策、検疫など) を構成します。 <br/><br/> Azure AD の[セキュリティ管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|マルウェア対策 <br/><br/> スパム対策 <br/><br/> 監査ログ <br/><br/> Quarantine <br/><br/> セキュリティ管理者 <br/><br/> 機密ラベル管理者 <br/><br/> 表示専用のマルウェア対策 <br/><br/> 表示専用スパム対策 <br/><br/> 表示専用の監査ログ <br/><br/> 表示のみの検疫 <br/><br/> 表示のみの脅威インテリジェンス|
 |SecurityReader|組織内の保護のすべての側面 (スパム対策、マルウェア対策、スプーフィング対策、検疫など) へのアクセスを表示のみ許可します。 <br/><br/> Azure AD の[セキュリティリーダー](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader)ロールのメンバーは、この役割グループのアクセス許可を自動的に取得します。|セキュリティ閲覧者 <br/><br/> 表示専用のマルウェア対策 <br/><br/> 表示専用スパム対策 <br/><br/> 表示のみの検疫 <br/><br/> 表示のみの脅威インテリジェンス|
 |TenantAdmins|この役割グループのメンバーシップは、複数のサービス間で同期され、一元管理されます。 既定では、この役割グループには役割が割り当てられていません。 ただし、組織の管理役割グループのメンバーであり、アクセス許可が継承されます。|なし|
 |Viewonly組織管理|組織内の受信者、保護、および構成オブジェクトとそのプロパティを表示します。|コンプライアンス管理者 <br/><br/> セキュリティ管理者 <br/><br/> セキュリティ閲覧者 <br/><br/> 機密ラベル管理者 <br/><br/> "View-Only Configuration/表示専用構成" <br/><br/> "View-Only Recipients/表示専用受信者"|
@@ -70,9 +71,10 @@ Exchange Online の組み込みの役割グループが管理者のジョブ機�
 
 次の表では、スタンドアロン EOP で使用できる組み込みの役割について説明します。
 
-||||
+****
+
+|Role * *|内容|既定の役割グループの割り当て|
 |---|---|---|
-|**ロール**|**説明**|**既定の役割グループの割り当て**|
 |マルウェア対策|マルウェア対策機能の構成とレポートを表示および変更します。|組織 <br/><br/> SecurityAdministrator|
 |スパム対策|スパム対策機能の構成とレポートを表示および変更します。|組織 <br/><br/> SecurityAdministrator|
 |監査ログ|管理者監査ログを検索し、結果を表示します。|ComplianceManagement <br/><br/> 組織 <br/><br/> SecurityAdministrator|
@@ -97,7 +99,7 @@ Exchange Online の組み込みの役割グループが管理者のジョブ機�
 |役割管理|役割グループを作成して管理します。|組織|
 |セキュリティ管理者|すべてのセキュリティおよび保護機能の構成とレポートを管理します。|組織 <br/><br/> SecurityAdministrator <br/><br/> Viewonly組織管理|
 |セキュリティグループの作成とメンバーシップ|メールが有効なセキュリティグループを作成して管理します。|組織|
-|セキュリティ閲覧者|セキュリティおよび保護機能の構成とレポートを表示します。|組織の管理 <br/><br/> SecurityReader <br/><br/> Viewonly組織管理|
+|セキュリティ閲覧者|セキュリティおよび保護機能の構成とレポートを表示します。|組織管理 <br/><br/> SecurityReader <br/><br/> Viewonly組織管理|
 |機密ラベル管理者<sup>\*</sup>||組織 <br/><br/> SecurityAdministrator <br/><br/> Viewonly組織管理|
 |マネージ<sup>\*</sup>||組織|
 |トランスポートの検疫|マルウェア対策、スパム対策機能、およびスプーフィング対策機能を管理します。|HygieneManagement <br/><br/> 組織|
@@ -105,7 +107,7 @@ Exchange Online の組み込みの役割グループが管理者のジョブ機�
 |ユーザーオプション|既存のメールユーザーを変更します。|問い合わせ <br/><br/> 組織|
 |表示専用のマルウェア対策|マルウェア対策機能の構成とレポートを表示します。|組織 <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |表示専用スパム対策|スパム対策機能の構成とレポートを表示します。|組織 <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
-|表示のみの監査ログ|管理者監査ログを検索し、結果を表示します。|ComplianceManagement <br/><br/> 組織 <br/><br/> SecurityAdministrator|
+|表示専用の監査ログ|管理者監査ログを検索し、結果を表示します。|ComplianceManagement <br/><br/> 組織 <br/><br/> SecurityAdministrator|
 |"View-Only Configuration/表示専用構成"|組織内のすべての組織およびメールフロー (受信者以外) の設定を表示します。|ComplianceManagement <br/><br/> HygieneManagement <br/><br/> 組織 <br/><br/> Viewonly組織管理|
 |表示のみの検疫|すべての受信者の検疫済みメッセージをすべて表示します。|組織 <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |"View-Only Recipients/表示専用受信者"|受信者のプロパティを表示し、メッセージの追跡を実行します。|ComplianceManagement <br/><br/> 問い合わせ <br/><br/> HygieneManagement <br/><br/> MailFlowAdministrator <br/><br/>  組織 <br/><br/> Viewonly組織管理|
@@ -123,13 +125,14 @@ Microsoft 365 管理センターでユーザーを作成する場合、グロー
 
 次の表は、Microsoft 365 の役割と、それらが対応するスタンドアロンの EOP 役割グループを示しています。 これらの役割の詳細については、「[管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)て」を参照してください。
 
-|||
+****
+
+|Microsoft 365 の役割|EOP 役割グループ|
 |---|---|
-|**Microsoft 365 の役割**|**EOP 役割グループ**|
 |Exchange 管理者|組織|
 |グローバル管理者|組織 <br/><br/> **注**: グローバル管理者の役割と組織の管理役割グループは、特別な会社の管理者役割グループを使用して関連付けられています。 会社の管理者の役割グループは内部で管理されており、直接変更することはできません。|
 |パスワード管理者|問い合わせ|
-|グローバル閲覧者|Viewonly組織管理|
+|グローバルリーダー|Viewonly組織管理|
 |セキュリティ管理者|SecurityAdministrator|
 |セキュリティ閲覧者|SecurityReader|
 |

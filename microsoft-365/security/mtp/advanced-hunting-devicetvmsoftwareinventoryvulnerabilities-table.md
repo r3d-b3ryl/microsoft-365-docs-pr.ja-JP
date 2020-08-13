@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0a7ac5a68bcdb12b3cdcd94cac8012c7807a6e2b
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 70b687a185538b11cf0a8975eebf2a5d8b53ec11
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327964"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648955"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
@@ -39,14 +39,14 @@ ms.locfileid: "44327964"
 |-------------|-----------|-------------|
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | 文字列 | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
+| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
 | `OSVersion` | string | コンピューターで実行されているオペレーティング システムのバージョンです。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `SoftwareVendor` | string | ソフトウェアベンダーの名前 |
 | `SoftwareName` | string | ソフトウェア製品の名前 |
 | `SoftwareVersion` | string | ソフトウェア製品のバージョン番号 |
 | `CveId` | string | 共通脆弱性識別子 (CVE) システムでセキュリティの脆弱性に割り当てられている一意の識別子  |
-| `VulnerabilitySeverityLevel` | 文字列型 | CVSS スコアと脅威の度合いの影響を受ける動的要因に基づいて、セキュリティの脆弱性に割り当てられている重大度レベル |
+| `VulnerabilitySeverityLevel` | string | CVSS スコアと脅威の度合いの影響を受ける動的要因に基づいて、セキュリティの脆弱性に割り当てられている重大度レベル |
 
 
 
@@ -55,7 +55,7 @@ ms.locfileid: "44327964"
 - [積極的に脅威を捜索する](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
 - [脅威および脆弱性管理の概要](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

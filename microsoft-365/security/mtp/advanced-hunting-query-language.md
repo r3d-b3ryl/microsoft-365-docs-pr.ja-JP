@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049699"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649393"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -179,6 +179,6 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイスとメール全体で脅威を捜索する](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

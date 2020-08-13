@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のメッセージに適用されるスパム信頼レベル (SCL) について学ぶことができます。
-ms.openlocfilehash: bc3a1e7e4b3e5f737b8861c14e0fd2c3d0841940
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7e8d706f89c5b16bd34ad074498e011dc5d74093
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208014"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656541"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼度 (SCL)
 
@@ -31,9 +31,10 @@ Exchange online または exchange online メールボックスを使用しな�
 
 SCL の意味と、メッセージに対して実行される既定のアクションについて、次の表で説明します。 スパムフィルター verdict に基づいてメッセージに対して実行できるアクションの詳細については、「 [EOP でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
-||||
+****
+
+|SCL|定義|既定のアクション|
 |:---:|---|---|
-|**SCL**|**定義**|**既定のアクション**|
 |-1|メッセージは、スパムフィルター処理をスキップしました。 たとえば、メッセージが差出人セーフリストから送信された、または宛先セーフリストに送信された、または IP 許可一覧にある電子メールソースサーバーのメッセージである場合です。 詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。|受信者の受信トレイにメッセージを配信します。|
 |0, 1|スパムフィルターは、メッセージがスパムではないことを確認しました。|受信者の受信トレイにメッセージを配信します。|
 |5, 6|メッセージが**スパム**としてマークされたスパムフィルター|受信者の迷惑メール フォルダーにメッセージを配信します。|
@@ -46,6 +47,6 @@ SCL 2、3、4、7、および8は、スパムフィルター処理によって�
 
 SCL と同じように、バルク苦情レベル (BCL) は、不適切なバルクメール (_灰色のメール_) を特定します。 上位の BCL は、バルクメールメッセージが苦情を生み出している可能性が高いことを示します (したがって、スパムである可能性が高くなります)。 「スパム対策ポリシー」で、BCL のしきい値を構成します。 詳細については、「 [EOP のスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」、「 [EOP でのバルク苦情レベル (BCL)](bulk-complaint-level-values.md)」、および「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
 
-||
-|:-----|
+|<!-- -->|
+|---|
 |![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される**Microsoft 365 管理者および IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。|

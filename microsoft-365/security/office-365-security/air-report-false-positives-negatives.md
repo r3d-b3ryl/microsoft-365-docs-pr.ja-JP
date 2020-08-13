@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 826d8561ba0c9618f21458493416b7dbd75af9e1
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520160"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656863"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
 
@@ -61,11 +61,13 @@ Office 365 に加えて、組織で[Microsoft Defender Advanced Threat Protectio
 
 脅威エクスプローラーを使用すると、セキュリティ運用チームは、アクションによって影響を受ける電子メールを検索し、アクションを元に戻す可能性があります。
 
-|シナリオ  |元に戻すオプション  |詳細情報 |
-|---------|---------|---------|
-|電子メールメッセージがユーザーの迷惑メールフォルダーにルーティングされた     |-ユーザーの削除済みアイテムフォルダーにメッセージを移動する<br/>-ユーザーの受信トレイにメッセージを移動する <br/>-メッセージを削除する          |[Office 365 で配信された悪意のある電子メールを検索して調査する](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
-|電子メールメッセージまたはファイルが検疫された     |-電子メールまたはファイルを解放します。 <br/>-電子メールまたはファイルを削除します。         |[Office 365 の管理者として検疫済みメッセージおよびファイルを管理する](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
+****
 
+|シナリオ|元に戻すオプション|詳細情報|
+|---|---|---|
+|電子メールメッセージがユーザーの迷惑メールフォルダーにルーティングされた|-ユーザーの削除済みアイテムフォルダーにメッセージを移動する<br/>-ユーザーの受信トレイにメッセージを移動する <br/>-メッセージを削除する|[Office 365 で配信された悪意のある電子メールを検索して調査する](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
+|電子メールメッセージまたはファイルが検疫された|-電子メールまたはファイルを解放します。 <br/>-電子メールまたはファイルを削除します。|[Office 365 の管理者として検疫済みメッセージおよびファイルを管理する](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>[操作] タブを使用して、調査を行うアクションを元に戻す
 
