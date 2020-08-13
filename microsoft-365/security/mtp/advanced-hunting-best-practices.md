@@ -17,43 +17,43 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9d7f6ee67e231ce7aa9bce1decc4de2f2d5a6d41
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: f66b17fbdaaa58cf12bd0373d0fece59349c3a48
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929506"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649501"
 ---
-# <a name="advanced-hunting-query-best-practices"></a><span data-ttu-id="e917d-104">高度な検索クエリのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="e917d-104">Advanced hunting query best practices</span></span>
+# <a name="advanced-hunting-query-best-practices"></a><span data-ttu-id="53343-104">高度な検索クエリのベスト プラクティス</span><span class="sxs-lookup"><span data-stu-id="53343-104">Advanced hunting query best practices</span></span>
 
-<span data-ttu-id="e917d-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="e917d-105">**Applies to:**</span></span>
-- <span data-ttu-id="e917d-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="e917d-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="53343-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="53343-105">**Applies to:**</span></span>
+- <span data-ttu-id="53343-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="53343-106">Microsoft Threat Protection</span></span>
 
 
 
-## <a name="optimize-query-performance"></a><span data-ttu-id="e917d-107">クエリのパフォーマンスを最適化する</span><span class="sxs-lookup"><span data-stu-id="e917d-107">Optimize query performance</span></span>
-<span data-ttu-id="e917d-108">次の推奨事項を適用すると、複雑なクエリを実行する際に結果をすばやく表示し、タイムアウトを回避することができます。</span><span class="sxs-lookup"><span data-stu-id="e917d-108">Apply these recommendations to get results faster and avoid timeouts while running complex queries:</span></span>
-- <span data-ttu-id="e917d-109">新しいクエリを試行するときは、結果セットが大きくなり過ぎないよう、常に `limit` を使用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-109">When trying new queries, always use `limit` to avoid extremely large result sets.</span></span> <span data-ttu-id="e917d-110">`count` を使用して結果セットのサイズを最初に判断することもできます。</span><span class="sxs-lookup"><span data-stu-id="e917d-110">You can also initially assess the size of the result set using `count`.</span></span>
-- <span data-ttu-id="e917d-111">最初に時間フィルターを使用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-111">Use time filters first.</span></span> <span data-ttu-id="e917d-112">クエリを偶数の日数に制限するのが理想です。</span><span class="sxs-lookup"><span data-stu-id="e917d-112">Ideally, limit your queries to even days.</span></span>
-- <span data-ttu-id="e917d-113">時間フィルターの適用直後に、ほとんどのデータがクエリの開始時に除外されるようなフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-113">Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.</span></span>
-- <span data-ttu-id="e917d-114">完全なトークンを検索する場合の演算子として、`contains` ではなく `has` を使用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-114">Use the `has` operator over `contains` when looking for full tokens.</span></span>
-- <span data-ttu-id="e917d-115">すべての列に対して全文検索を実行するのではなく、特定の列を検索します。</span><span class="sxs-lookup"><span data-stu-id="e917d-115">Look in a specific column rather than running full text searches across all columns.</span></span>
-- <span data-ttu-id="e917d-116">テーブルを結合するときは、最初は行数が少ないテーブルを指定します。</span><span class="sxs-lookup"><span data-stu-id="e917d-116">When joining tables, specify the table with fewer rows first.</span></span>
-- <span data-ttu-id="e917d-117">`project` は、結合したテーブルの必要な列に対してのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-117">`project` only the necessary columns from tables you've joined.</span></span>
+## <a name="optimize-query-performance"></a><span data-ttu-id="53343-107">クエリのパフォーマンスを最適化する</span><span class="sxs-lookup"><span data-stu-id="53343-107">Optimize query performance</span></span>
+<span data-ttu-id="53343-108">次の推奨事項を適用すると、複雑なクエリを実行する際に結果をすばやく表示し、タイムアウトを回避することができます。</span><span class="sxs-lookup"><span data-stu-id="53343-108">Apply these recommendations to get results faster and avoid timeouts while running complex queries:</span></span>
+- <span data-ttu-id="53343-109">新しいクエリを試行するときは、結果セットが大きくなり過ぎないよう、常に `limit` を使用します。</span><span class="sxs-lookup"><span data-stu-id="53343-109">When trying new queries, always use `limit` to avoid extremely large result sets.</span></span> <span data-ttu-id="53343-110">`count` を使用して結果セットのサイズを最初に判断することもできます。</span><span class="sxs-lookup"><span data-stu-id="53343-110">You can also initially assess the size of the result set using `count`.</span></span>
+- <span data-ttu-id="53343-111">最初に時間フィルターを使用します。</span><span class="sxs-lookup"><span data-stu-id="53343-111">Use time filters first.</span></span> <span data-ttu-id="53343-112">クエリを偶数の日数に制限するのが理想です。</span><span class="sxs-lookup"><span data-stu-id="53343-112">Ideally, limit your queries to even days.</span></span>
+- <span data-ttu-id="53343-113">時間フィルターの適用直後に、ほとんどのデータがクエリの開始時に除外されるようなフィルターを適用します。</span><span class="sxs-lookup"><span data-stu-id="53343-113">Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.</span></span>
+- <span data-ttu-id="53343-114">完全なトークンを検索する場合の演算子として、`contains` ではなく `has` を使用します。</span><span class="sxs-lookup"><span data-stu-id="53343-114">Use the `has` operator over `contains` when looking for full tokens.</span></span>
+- <span data-ttu-id="53343-115">すべての列に対して全文検索を実行するのではなく、特定の列を検索します。</span><span class="sxs-lookup"><span data-stu-id="53343-115">Look in a specific column rather than running full text searches across all columns.</span></span>
+- <span data-ttu-id="53343-116">テーブルを結合するときは、最初は行数が少ないテーブルを指定します。</span><span class="sxs-lookup"><span data-stu-id="53343-116">When joining tables, specify the table with fewer rows first.</span></span>
+- <span data-ttu-id="53343-117">`project` は、結合したテーブルの必要な列に対してのみ使用します。</span><span class="sxs-lookup"><span data-stu-id="53343-117">`project` only the necessary columns from tables you've joined.</span></span>
 
 >[!Tip]
-><span data-ttu-id="e917d-118">クエリのパフォーマンスを向上させる方法の詳細については、「[Kusto クエリのベスト プラクティス](https://docs.microsoft.com/azure/kusto/query/best-practices)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e917d-118">For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).</span></span>
+><span data-ttu-id="53343-118">クエリのパフォーマンスを向上させる方法の詳細については、「[Kusto クエリのベスト プラクティス](https://docs.microsoft.com/azure/kusto/query/best-practices)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="53343-118">For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).</span></span>
 
-## <a name="query-tips-and-pitfalls"></a><span data-ttu-id="e917d-119">クエリのヒントと落とし穴</span><span class="sxs-lookup"><span data-stu-id="e917d-119">Query tips and pitfalls</span></span>
+## <a name="query-tips-and-pitfalls"></a><span data-ttu-id="53343-119">クエリのヒントと落とし穴</span><span class="sxs-lookup"><span data-stu-id="53343-119">Query tips and pitfalls</span></span>
 
-### <a name="queries-with-process-ids"></a><span data-ttu-id="e917d-120">プロセス ID を使用するクエリ</span><span class="sxs-lookup"><span data-stu-id="e917d-120">Queries with process IDs</span></span>
-<span data-ttu-id="e917d-121">Windows では、プロセス ID (PID) はリサイクルされ、新しいプロセス用に再利用されます。</span><span class="sxs-lookup"><span data-stu-id="e917d-121">Process IDs (PIDs) are recycled in Windows and reused for new processes.</span></span> <span data-ttu-id="e917d-122">そのため、それ単体では特定のプロセスの一意の識別子として機能しません。</span><span class="sxs-lookup"><span data-stu-id="e917d-122">On their own, they can't serve as unique identifiers for specific processes.</span></span>
+### <a name="queries-with-process-ids"></a><span data-ttu-id="53343-120">プロセス ID を使用するクエリ</span><span class="sxs-lookup"><span data-stu-id="53343-120">Queries with process IDs</span></span>
+<span data-ttu-id="53343-121">Windows では、プロセス ID (PID) はリサイクルされ、新しいプロセス用に再利用されます。</span><span class="sxs-lookup"><span data-stu-id="53343-121">Process IDs (PIDs) are recycled in Windows and reused for new processes.</span></span> <span data-ttu-id="53343-122">そのため、それ単体では特定のプロセスの一意の識別子として機能しません。</span><span class="sxs-lookup"><span data-stu-id="53343-122">On their own, they can't serve as unique identifiers for specific processes.</span></span>
 
-<span data-ttu-id="e917d-123">特定のコンピューター上のプロセスの一意の識別子を取得するには、プロセス ID をプロセスの作成日時と共に使用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-123">To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.</span></span> <span data-ttu-id="e917d-124">プロセスに関するデータを結合または集計する際は、コンピューターの識別子の列 (`DeviceId` または `DeviceName`)、プロセス ID (`ProcessId` または `InitiatingProcessId`)、およびプロセスの作成日時 (`ProcessCreationTime` または `InitiatingProcessCreationTime`) を含めます。</span><span class="sxs-lookup"><span data-stu-id="e917d-124">When you join or summarize data around processes, include columns for the machine identifier (either `DeviceId` or `DeviceName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)</span></span>
+<span data-ttu-id="53343-123">特定のコンピューター上のプロセスの一意の識別子を取得するには、プロセス ID をプロセスの作成日時と共に使用します。</span><span class="sxs-lookup"><span data-stu-id="53343-123">To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time.</span></span> <span data-ttu-id="53343-124">プロセスに関するデータを結合または集計する際は、コンピューターの識別子の列 (`DeviceId` または `DeviceName`)、プロセス ID (`ProcessId` または `InitiatingProcessId`)、およびプロセスの作成日時 (`ProcessCreationTime` または `InitiatingProcessCreationTime`) を含めます。</span><span class="sxs-lookup"><span data-stu-id="53343-124">When you join or summarize data around processes, include columns for the machine identifier (either `DeviceId` or `DeviceName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)</span></span>
 
-<span data-ttu-id="e917d-125">次のクエリ例では、ファイル共有のスキャンを行っている可能性がある、ポート 445 (SMB) 経由で 10 個を超える IP アドレスにアクセスしているプロセスを見つけます。</span><span class="sxs-lookup"><span data-stu-id="e917d-125">The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.</span></span>
+<span data-ttu-id="53343-125">次のクエリ例では、ファイル共有のスキャンを行っている可能性がある、ポート 445 (SMB) 経由で 10 個を超える IP アドレスにアクセスしているプロセスを見つけます。</span><span class="sxs-lookup"><span data-stu-id="53343-125">The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.</span></span>
 
-<span data-ttu-id="e917d-126">クエリ例:</span><span class="sxs-lookup"><span data-stu-id="e917d-126">Example query:</span></span>
+<span data-ttu-id="53343-126">クエリ例:</span><span class="sxs-lookup"><span data-stu-id="53343-126">Example query:</span></span>
 ```kusto
 DeviceNetworkEvents
 | where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
@@ -61,22 +61,22 @@ DeviceNetworkEvents
 | where RemoteIPCount > 10
 ```
 
-<span data-ttu-id="e917d-127">このクエリでは `InitiatingProcessId` と `InitiatingProcessCreationTime` の両方を使用して集計が行われるため、同一のプロセス ID を持つ複数のプロセスを混ぜることなく単一のプロセスのみがクエリで検索されます。</span><span class="sxs-lookup"><span data-stu-id="e917d-127">The query summarizes by both `InitiatingProcessId` and `InitiatingProcessCreationTime` so that it looks at a single process, without mixing multiple processes with the same process ID.</span></span>
+<span data-ttu-id="53343-127">このクエリでは `InitiatingProcessId` と `InitiatingProcessCreationTime` の両方を使用して集計が行われるため、同一のプロセス ID を持つ複数のプロセスを混ぜることなく単一のプロセスのみがクエリで検索されます。</span><span class="sxs-lookup"><span data-stu-id="53343-127">The query summarizes by both `InitiatingProcessId` and `InitiatingProcessCreationTime` so that it looks at a single process, without mixing multiple processes with the same process ID.</span></span>
 
-### <a name="queries-with-command-lines"></a><span data-ttu-id="e917d-128">コマンド ラインを使用したクエリ</span><span class="sxs-lookup"><span data-stu-id="e917d-128">Queries with command lines</span></span>
+### <a name="queries-with-command-lines"></a><span data-ttu-id="53343-128">コマンド ラインを使用したクエリ</span><span class="sxs-lookup"><span data-stu-id="53343-128">Queries with command lines</span></span>
 
-<span data-ttu-id="e917d-129">さまざまなコマンド ラインを使用できます。</span><span class="sxs-lookup"><span data-stu-id="e917d-129">Command lines can vary.</span></span> <span data-ttu-id="e917d-130">該当する場合は、ファイル名をフィルター処理し、あいまい一致を実行します。</span><span class="sxs-lookup"><span data-stu-id="e917d-130">When applicable, filter on file names and do fuzzy matching.</span></span>
+<span data-ttu-id="53343-129">さまざまなコマンド ラインを使用できます。</span><span class="sxs-lookup"><span data-stu-id="53343-129">Command lines can vary.</span></span> <span data-ttu-id="53343-130">該当する場合は、ファイル名をフィルター処理し、あいまい一致を実行します。</span><span class="sxs-lookup"><span data-stu-id="53343-130">When applicable, filter on file names and do fuzzy matching.</span></span>
 
-<span data-ttu-id="e917d-131">タスクを実行するためのコマンド ラインは、さまざまな方法で構築できます。</span><span class="sxs-lookup"><span data-stu-id="e917d-131">There are numerous ways to construct a command line to accomplish a task.</span></span> <span data-ttu-id="e917d-132">たとえば、攻撃者が画像ファイルを参照する際に、パスを使用する場合、パスを使用しない場合、ファイル拡張子を使用しない場合、環境変数を使用する場合、または引用符を使用する場合があります。</span><span class="sxs-lookup"><span data-stu-id="e917d-132">For example, an attacker could reference an image file with or without a path, without a file extension, using environment variables, or with quotes.</span></span> <span data-ttu-id="e917d-133">また、攻撃者はパラメーターの順序を変更したり、複数の引用符やスペースを追加したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="e917d-133">In addition, the attacker could also change the order of parameters or add multiple quotes and spaces.</span></span>
+<span data-ttu-id="53343-131">タスクを実行するためのコマンド ラインは、さまざまな方法で構築できます。</span><span class="sxs-lookup"><span data-stu-id="53343-131">There are numerous ways to construct a command line to accomplish a task.</span></span> <span data-ttu-id="53343-132">たとえば、攻撃者が画像ファイルを参照する際に、パスを使用する場合、パスを使用しない場合、ファイル拡張子を使用しない場合、環境変数を使用する場合、または引用符を使用する場合があります。</span><span class="sxs-lookup"><span data-stu-id="53343-132">For example, an attacker could reference an image file with or without a path, without a file extension, using environment variables, or with quotes.</span></span> <span data-ttu-id="53343-133">また、攻撃者はパラメーターの順序を変更したり、複数の引用符やスペースを追加したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="53343-133">In addition, the attacker could also change the order of parameters or add multiple quotes and spaces.</span></span>
 
-<span data-ttu-id="e917d-134">コマンドラインを使用してより強力なクエリを作成するには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="e917d-134">To create more durable queries using command lines, apply the following practices:</span></span>
+<span data-ttu-id="53343-134">コマンドラインを使用してより強力なクエリを作成するには、次の方法を実行します。</span><span class="sxs-lookup"><span data-stu-id="53343-134">To create more durable queries using command lines, apply the following practices:</span></span>
 
-- <span data-ttu-id="e917d-135">コマンド ライン フィールドを使用してフィルター処理をするのではなく、filename フィールドを一致させることにより既知のプロセス (*net.exe* または *psexec.exe*) を特定します。</span><span class="sxs-lookup"><span data-stu-id="e917d-135">Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command-line field.</span></span>
-- <span data-ttu-id="e917d-136">コマンドライン引数をクエリする際は、関連性のない複数の引数で完全な一致を特定の順序で検索しないようにします。</span><span class="sxs-lookup"><span data-stu-id="e917d-136">When querying for command-line arguments, don't look for an exact match on multiple unrelated arguments in a certain order.</span></span> <span data-ttu-id="e917d-137">代わりに、正規表現を使用するか、複数の個別の contains 演算子を使用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-137">Instead, use regular expressions or use multiple separate contains operators.</span></span>
-- <span data-ttu-id="e917d-138">大文字と小文字を区別しない一致を使用します。</span><span class="sxs-lookup"><span data-stu-id="e917d-138">Use case insensitive matches.</span></span> <span data-ttu-id="e917d-139">たとえば、`==`、`in`、`contains_cs` の代わりに `=~`、`in~`、`contains` を使用します。 </span><span class="sxs-lookup"><span data-stu-id="e917d-139">For example, use `=~`, `in~`, and `contains` instead of `==`, `in`, and `contains_cs`</span></span>
-- <span data-ttu-id="e917d-140">DOS コマンドラインの難読化手法に対処するには、引用符を削除し、コンマをスペースで置き換え、連続する複数のスペースをスペース 1 つで置き換えることを検討します。</span><span class="sxs-lookup"><span data-stu-id="e917d-140">To mitigate DOS command-line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space.</span></span> <span data-ttu-id="e917d-141">他の方法を使用しないと対処することが難しいより複雑な DOS 難読化手法がありますが、上記の対処法は、最も一般的な手法に対して有効です。</span><span class="sxs-lookup"><span data-stu-id="e917d-141">Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.</span></span>
+- <span data-ttu-id="53343-135">コマンド ライン フィールドを使用してフィルター処理をするのではなく、filename フィールドを一致させることにより既知のプロセス (*net.exe* または *psexec.exe*) を特定します。</span><span class="sxs-lookup"><span data-stu-id="53343-135">Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command-line field.</span></span>
+- <span data-ttu-id="53343-136">コマンドライン引数をクエリする際は、関連性のない複数の引数で完全な一致を特定の順序で検索しないようにします。</span><span class="sxs-lookup"><span data-stu-id="53343-136">When querying for command-line arguments, don't look for an exact match on multiple unrelated arguments in a certain order.</span></span> <span data-ttu-id="53343-137">代わりに、正規表現を使用するか、複数の個別の contains 演算子を使用します。</span><span class="sxs-lookup"><span data-stu-id="53343-137">Instead, use regular expressions or use multiple separate contains operators.</span></span>
+- <span data-ttu-id="53343-138">大文字と小文字を区別しない一致を使用します。</span><span class="sxs-lookup"><span data-stu-id="53343-138">Use case insensitive matches.</span></span> <span data-ttu-id="53343-139">たとえば、`==`、`in`、`contains_cs` の代わりに `=~`、`in~`、`contains` を使用します。 </span><span class="sxs-lookup"><span data-stu-id="53343-139">For example, use `=~`, `in~`, and `contains` instead of `==`, `in`, and `contains_cs`</span></span>
+- <span data-ttu-id="53343-140">DOS コマンドラインの難読化手法に対処するには、引用符を削除し、コンマをスペースで置き換え、連続する複数のスペースをスペース 1 つで置き換えることを検討します。</span><span class="sxs-lookup"><span data-stu-id="53343-140">To mitigate DOS command-line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space.</span></span> <span data-ttu-id="53343-141">他の方法を使用しないと対処することが難しいより複雑な DOS 難読化手法がありますが、上記の対処法は、最も一般的な手法に対して有効です。</span><span class="sxs-lookup"><span data-stu-id="53343-141">Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.</span></span>
 
-<span data-ttu-id="e917d-142">以下の例では、Windows Defender ファイアウォール サービスを停止させる *net.exe* というファイルを検索するクエリを作成するためのさまざまな方法を示します。</span><span class="sxs-lookup"><span data-stu-id="e917d-142">The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:</span></span>
+<span data-ttu-id="53343-142">以下の例では、Windows Defender ファイアウォール サービスを停止させる *net.exe* というファイルを検索するクエリを作成するためのさまざまな方法を示します。</span><span class="sxs-lookup"><span data-stu-id="53343-142">The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:</span></span>
 
 ```kusto
 // Non-durable query - do not use
@@ -94,10 +94,10 @@ DeviceProcessEvents
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
-## <a name="related-topics"></a><span data-ttu-id="e917d-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="e917d-143">Related topics</span></span>
-- [<span data-ttu-id="e917d-144">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="e917d-144">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="e917d-145">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="e917d-145">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="e917d-146">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="e917d-146">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="e917d-147">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="e917d-147">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="e917d-148">デバイスとメール全体で脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="e917d-148">Hunt for threats across devices and emails</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="e917d-149">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="e917d-149">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+## <a name="related-topics"></a><span data-ttu-id="53343-143">関連項目</span><span class="sxs-lookup"><span data-stu-id="53343-143">Related topics</span></span>
+- [<span data-ttu-id="53343-144">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="53343-144">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="53343-145">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="53343-145">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="53343-146">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="53343-146">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="53343-147">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="53343-147">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="53343-148">デバイス、メール、アプリ、および id の間でのハント</span><span class="sxs-lookup"><span data-stu-id="53343-148">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="53343-149">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="53343-149">Understand the schema</span></span>](advanced-hunting-schema-tables.md)

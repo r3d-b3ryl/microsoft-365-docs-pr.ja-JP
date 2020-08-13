@@ -1,7 +1,7 @@
 ---
-title: 高度な捜索を使用してデバイスとメール全体で脅威を見つける
-description: デバイスとメールを対象とした一般的な捜索シナリオとサンプル クエリを説明します。
-keywords: 高度な捜索、Office365 データ、Windows デバイス、Office 365 メールの正規化、メール、脅威の捜索、サイバー脅威の捜索、検索、クエリ、テレメトリ、Microsoft 365、Microsoft Threat Protection
+title: 高度な検索機能を使用して、デバイス、メール、アプリ、id 間の脅威を探します。
+description: デバイス、メール、アプリ、および id をカバーする一般的な検索シナリオとサンプルクエリを調査します。
+keywords: 高度な検索、Office365 データ、Windows デバイス、Office365 メール正規化、電子メール、アプリ、id、脅威の検索、サイバー脅威の検索、検索、クエリ、テレメトリ、Microsoft 365、Microsoft の脅威保護
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,86 +17,185 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ec7f9083401fdf7a2114d99ddd2dcc009411e34b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633509"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649345"
 ---
-# <a name="hunt-for-threats-across-devices-and-emails"></a><span data-ttu-id="86fbb-104">デバイスとメール全体で脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="86fbb-104">Hunt for threats across devices and emails</span></span>
+# <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a><span data-ttu-id="8913b-104">デバイス、メール、アプリ、および id 間の脅威を探します。</span><span class="sxs-lookup"><span data-stu-id="8913b-104">Hunt for threats across devices, emails, apps, and identities</span></span>
 
-<span data-ttu-id="86fbb-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="86fbb-105">**Applies to:**</span></span>
-- <span data-ttu-id="86fbb-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="86fbb-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="8913b-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="8913b-105">**Applies to:**</span></span>
+- <span data-ttu-id="8913b-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="8913b-106">Microsoft Threat Protection</span></span>
 
+<span data-ttu-id="8913b-107">Microsoft の脅威保護での[高度な](advanced-hunting-overview.md)検索では、次のような脅威を事前に確認できます。</span><span class="sxs-lookup"><span data-stu-id="8913b-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across:</span></span>
+- <span data-ttu-id="8913b-108">Microsoft Defender ATP で管理されているデバイス</span><span class="sxs-lookup"><span data-stu-id="8913b-108">Devices managed by Microsoft Defender ATP</span></span>
+- <span data-ttu-id="8913b-109">Microsoft 365 によって処理された電子メール</span><span class="sxs-lookup"><span data-stu-id="8913b-109">Emails processed by Microsoft 365</span></span>
+- <span data-ttu-id="8913b-110">Microsoft Cloud App Security と Azure ATP によって追跡される cloud app アクティビティ、認証イベント、およびドメインコントローラアクティビティ</span><span class="sxs-lookup"><span data-stu-id="8913b-110">Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Azure ATP</span></span>
 
+<span data-ttu-id="8913b-111">この可視性レベルにより、電子メールや web で受信した高度な侵入を含む、ネットワークの一部を通過する脅威をすばやく確認できます。また、ローカルの権限を取得し、権限のあるドメインの資格情報を取得したり、デバイス間で laterally を移動したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="8913b-111">With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices.</span></span> 
 
-<span data-ttu-id="86fbb-107">Microsoft の脅威保護で[高度な](advanced-hunting-overview.md)検索を使用すると、Windows デバイスと Microsoft 電子メールを介して脅威を事前に確認できます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-107">[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Microsoft emails.</span></span> <span data-ttu-id="86fbb-108">デバイスとメールの両方を対象としたクエリの作成方法を検討する上で役立つ捜索シナリオとサンプル クエリをいくつか紹介します。</span><span class="sxs-lookup"><span data-stu-id="86fbb-108">Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.</span></span>
+<span data-ttu-id="8913b-112">ここでは、このような高度な脅威を探すときにクエリを作成する方法を調査するのに役立つ、さまざまな検索シナリオに基づく一般的な手法とサンプルクエリを示します。</span><span class="sxs-lookup"><span data-stu-id="8913b-112">Here are general techniques and sample queries based on various hunting scenarios that can help you explore how you might construct queries when hunting for such sophisticated threats.</span></span>
 
-## <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="86fbb-109">メール アドレスからユーザー アカウントを取得する</span><span class="sxs-lookup"><span data-stu-id="86fbb-109">Obtain user accounts from email addresses</span></span>
-<span data-ttu-id="86fbb-110">[デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="86fbb-110">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="86fbb-111">これを行うには、メール アドレスからの *local-host* を使用します。</span><span class="sxs-lookup"><span data-stu-id="86fbb-111">To do this use the *local-host* from the email address:</span></span>
+## <a name="get-entity-info"></a><span data-ttu-id="8913b-113">エンティティ情報を取得する</span><span class="sxs-lookup"><span data-stu-id="8913b-113">Get entity info</span></span>
+<span data-ttu-id="8913b-114">ユーザーアカウント、デバイス、およびファイルに関する情報をすばやく取得する方法については、以下のクエリを使用してください。</span><span class="sxs-lookup"><span data-stu-id="8913b-114">Use these queries to learn how you can quickly get information about user accounts, devices, and files.</span></span> 
+
+### <a name="obtain-user-accounts-from-email-addresses"></a><span data-ttu-id="8913b-115">メール アドレスからユーザー アカウントを取得する</span><span class="sxs-lookup"><span data-stu-id="8913b-115">Obtain user accounts from email addresses</span></span>
+<span data-ttu-id="8913b-116">[デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。</span><span class="sxs-lookup"><span data-stu-id="8913b-116">When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses.</span></span> <span data-ttu-id="8913b-117">通常、この操作は、電子メールアドレスから*ローカルホスト*を使用して、受信者または送信者のアドレスに対して行うことができます。</span><span class="sxs-lookup"><span data-stu-id="8913b-117">You can generally do this for either recipient or sender address using the *local-host* from the email address.</span></span>
+
+<span data-ttu-id="8913b-118">次のスニペットでは、 [tostring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) kusto 関数を使用して、 `@` 列の from 受信者の電子メールアドレスの前にローカルホストを抽出し `RecipientEmailAddress` ます。</span><span class="sxs-lookup"><span data-stu-id="8913b-118">In the snippet below, we use the [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host right before the `@` from recipient email addresses in the column `RecipientEmailAddress`.</span></span>
 
 ```kusto
-AccountName = tostring(split(SenderFromAddress, "@")[0])
+//Query snippet showing how to extract the account name from an email address
+AccountName = tostring(split(RecipientEmailAddress, "@")[0])
+```
+<span data-ttu-id="8913b-119">次のクエリは、このスニペットの使用方法を示しています。</span><span class="sxs-lookup"><span data-stu-id="8913b-119">The query below shows how this snippet can be used:</span></span>
+
+```kusto
+EmailEvents
+| where Timestamp > ago(7d)
+| project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 ```
 
-<span data-ttu-id="86fbb-112">この正規化の手法は、以下のシナリオで使用されます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-112">This normalization technique is used in the succeeding scenarios.</span></span>
+### <a name="merge-the-identityinfo-table"></a><span data-ttu-id="8913b-120">Id 情報テーブルをマージする</span><span class="sxs-lookup"><span data-stu-id="8913b-120">Merge the IdentityInfo table</span></span>
 
-## <a name="hunting-scenarios"></a><span data-ttu-id="86fbb-113">捜索のシナリオ</span><span class="sxs-lookup"><span data-stu-id="86fbb-113">Hunting scenarios</span></span>
+<span data-ttu-id="8913b-121">ユーザー[情報テーブル](advanced-hunting-identityinfo-table.md)を結合または結合することによって、アカウント名やその他のアカウント情報を取得できます。</span><span class="sxs-lookup"><span data-stu-id="8913b-121">You can get account names and other account information by merging or joining the [IdentityInfo table](advanced-hunting-identityinfo-table.md).</span></span> <span data-ttu-id="8913b-122">次のクエリは、 [Emailevents テーブル](advanced-hunting-emailevents-table.md)からフィッシングとマルウェアの検出の一覧を取得し、その情報をテーブルに結合して `IdentityInfo` 各受信者に関する詳細情報を取得します。</span><span class="sxs-lookup"><span data-stu-id="8913b-122">The query below obtains the list of phishing and malware detections from the [EmailEvents table](advanced-hunting-emailevents-table.md) and then joins that information with the `IdentityInfo` table to get detailed information about each recipient.</span></span> 
 
-### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="86fbb-114">既知の悪意のある送信者からのファイルがデバイスに存在するかどうかを確認する</span><span class="sxs-lookup"><span data-stu-id="86fbb-114">Check if files from a known malicious sender are on your devices</span></span>
-<span data-ttu-id="86fbb-115">悪意のあるファイルを送信するメール アドレスが判明している場合、このクエリを実行すると、その送信者からのファイルがデバイスに存在するかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-115">Assuming you know of an email address sending malicious files, you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="86fbb-116">このクエリは、マルウェア配布キャンペーンの影響を受けたデバイスの数を特定する目的などに使用できます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-116">You can use this query, for example, to determine the number of devices affected by a malware distribution campaign.</span></span>
+>[!Tip]
+> <span data-ttu-id="8913b-123">このクエリは `kind=inner` 、[内部結合](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)を指定するために使用します。これにより、左側の値または受信者の電子メールアドレスの重複を防ぐことができます。</span><span class="sxs-lookup"><span data-stu-id="8913b-123">This query uses `kind=inner` to specify an [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication of left side values or the recipient email addresses.</span></span>
 
 ```kusto
-//Get prevalence of files sent by a malicious sender in your organization
+EmailEvents
+| where Timestamp > ago(7d)
+//Get email processing events where the messages were identified as either phishing or malware
+| where MalwareFilterVerdict == 'Malware' or PhishFilterVerdict == 'Phish'
+//Merge email events with identity info to get recipient details
+| join (IdentityInfo | distinct AccountUpn, AccountDisplayName, JobTitle, 
+Department, City, Country) on $left.RecipientEmailAddress == $right.AccountUpn 
+//Show important message and recipient details
+| project Timestamp, NetworkMessageId, Subject, PhishFilterVerdict, MalwareFilterVerdict,
+SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle, 
+Department, City, Country
+```
+
+### <a name="get-device-information"></a><span data-ttu-id="8913b-124">デバイス情報を取得する</span><span class="sxs-lookup"><span data-stu-id="8913b-124">Get device information</span></span>
+<span data-ttu-id="8913b-125">[高度な検索スキーマ](advanced-hunting-schema-tables.md)では、さまざまなテーブルに多様なデバイス情報が用意されています。</span><span class="sxs-lookup"><span data-stu-id="8913b-125">The [advanced hunting schema](advanced-hunting-schema-tables.md) provides extensive device information in various tables.</span></span> <span data-ttu-id="8913b-126">たとえば、 [DeviceInfo テーブル](advanced-hunting-deviceinfo-table.md)は、定期的に集計されたイベントデータに基づく包括的なデバイス情報を提供します。</span><span class="sxs-lookup"><span data-stu-id="8913b-126">For example, the [DeviceInfo table](advanced-hunting-deviceinfo-table.md) provides comprehensive device information based on event data aggregated regularly.</span></span> <span data-ttu-id="8913b-127">このクエリは、テーブルを使用して、 `DeviceInfo` 侵害された可能性があるユーザー () がデバイスにログオンしているかどうかを確認し、 `<account-name>` それらのデバイスでトリガーされた通知を一覧表示します。</span><span class="sxs-lookup"><span data-stu-id="8913b-127">This query uses the `DeviceInfo` table to check if a potentially compromised user (`<account-name>`) has logged on to any devices and then lists the alerts that have been triggered on those devices.</span></span>
+
+```kusto
+DeviceInfo
+//Query for devices that the potentially compromised account has logged onto
+| where LoggedOnUsers contains '<account-name>'
+| distinct DeviceId
+//Crosscheck devices against alert records in AlertEvidence and AlertInfo tables
+| join kind=inner AlertEvidence on DeviceId
+| project AlertId
+//List all alerts on devices that user has logged on to
+| join AlertInfo on AlertId
+| project AlertId, Timestamp, Title, Severity, Category 
+```
+
+## <a name="hunting-scenarios"></a><span data-ttu-id="8913b-128">捜索のシナリオ</span><span class="sxs-lookup"><span data-stu-id="8913b-128">Hunting scenarios</span></span>
+
+### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a><span data-ttu-id="8913b-129">Zapped できなかった電子メールを受信したユーザーのログオンアクティビティを一覧表示する</span><span class="sxs-lookup"><span data-stu-id="8913b-129">List logon activities of users that received emails that were not zapped successfully</span></span>
+<span data-ttu-id="8913b-130">[ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md)は、受信後の悪意のある電子メールアドレスを解決します。</span><span class="sxs-lookup"><span data-stu-id="8913b-130">[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received.</span></span> <span data-ttu-id="8913b-131">ZAP が失敗すると、悪意のあるコードがデバイス上で実行され、アカウントが侵害されたままになる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="8913b-131">If ZAP fails, malicious code might eventually run on the device and leave accounts compromised.</span></span> <span data-ttu-id="8913b-132">このクエリは、電子メールの受信者によって行われたログオンアクティビティが、ZAP によって正常にアドレス指定されなかったことをチェックします。</span><span class="sxs-lookup"><span data-stu-id="8913b-132">This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.</span></span>
+
+```kusto
+EmailPostDeliveryEvents 
+| where Timestamp > ago(7d)
+//List malicious emails that were not zapped successfully
+| where ActionType has "ZAP" and ActionResult == "Error"
+| project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
+//Get logon activity of recipients using RecipientEmailAddress and AccountUpn
+| join kind=inner IdentityLogonEvents on $left.RecipientEmailAddress == $right.AccountUpn
+| where Timestamp between ((ZapTime-24h) .. (ZapTime+24h))
+//Show only pertinent info, such as account name, the app or service, protocol, the target device, and type of logon
+| project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn, 
+LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
+```
+
+### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a><span data-ttu-id="8913b-133">資格情報の盗用を対象としたドメインアカウントによるログオン試行の取得</span><span class="sxs-lookup"><span data-stu-id="8913b-133">Get logon attempts by domain accounts targeted by credential theft</span></span>
+<span data-ttu-id="8913b-134">このクエリは、まず、テーブル内のすべての資格情報アクセスアラートを識別 `AlertInfo` します。</span><span class="sxs-lookup"><span data-stu-id="8913b-134">This query first identifies all credential access alerts in the `AlertInfo` table.</span></span> <span data-ttu-id="8913b-135">次に、テーブルを結合または結合して、 `AlertEvidence` 対象となるアカウントの名前を解析し、ドメインに参加しているアカウントについてのみフィルター処理を行います。</span><span class="sxs-lookup"><span data-stu-id="8913b-135">It then merges or joins the `AlertEvidence` table, which it parses for the names of the targeted accounts and filters for domain-joined accounts only.</span></span> <span data-ttu-id="8913b-136">最後に、テーブルをチェックして、 `IdentityLogonEvents` ドメインに参加している対象のアカウントによってすべてのログオンアクティビティを取得します。</span><span class="sxs-lookup"><span data-stu-id="8913b-136">Finally, it checks the `IdentityLogonEvents` table to get all logon activities by the domain-joined targeted accounts.</span></span>
+
+```kusto
+AlertInfo
+| where Timestamp > ago(30d)
+//Get all credential access alerts
+| where Category == "CredentialAccess"
+//Get more info from AlertEvidence table to get the SID of the target accounts
+| join AlertEvidence on AlertId
+| extend IsJoined=(parse_json(AdditionalFields).Account.IsDomainJoined)
+| extend TargetAccountSid=tostring(parse_json(AdditionalFields).Account.Sid)
+//Filter for domain-joined accounts only
+| where IsJoined has "true"
+//Merge with IdentityLogonEvents to get all logon attempts by the potentially compromised target accounts
+| join kind=inner IdentityLogonEvents on $left.TargetAccountSid == $right.AccountSid
+//Show only pertinent info, such as account name, the app or service, protocol, the accessed device, and type of logon
+| project AccountDisplayName, TargetAccountSid, Application, Protocol, DeviceName, LogonType
+```
+
+### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a><span data-ttu-id="8913b-137">既知の悪意のある送信者からのファイルがデバイスに存在するかどうかを確認する</span><span class="sxs-lookup"><span data-stu-id="8913b-137">Check if files from a known malicious sender are on your devices</span></span>
+<span data-ttu-id="8913b-138">悪意のあるファイルを送信する電子メールアドレスを知っていることを前提とし `MaliciousSender@example.com` て、このクエリを実行して、この送信者からのファイルがデバイス上に存在するかどうかを判断できます。</span><span class="sxs-lookup"><span data-stu-id="8913b-138">Assuming you know of an email address sending malicious files (`MaliciousSender@example.com`), you can run this query to determine if files from this sender exist on your devices.</span></span> <span data-ttu-id="8913b-139">たとえば、このクエリを使用して、マルウェア配布キャンペーンの影響を受けたデバイスを特定することができます。</span><span class="sxs-lookup"><span data-stu-id="8913b-139">You can use this query, for example, to identify devices affected by a malware distribution campaign.</span></span>
+
+```kusto
 EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
+//Get emails with attachments identified by a SHA-256
 | where isnotempty(SHA256)
 | join (
+//Check devices for any activity involving the attachments
 DeviceFileEvents
 | project FileName, SHA256
 ) on SHA256
+| project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```
 
-### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="86fbb-117">悪意のあるメール受信後のログオン試行を確認する</span><span class="sxs-lookup"><span data-stu-id="86fbb-117">Review logon attempts after receipt of malicious emails</span></span>
-<span data-ttu-id="86fbb-118">このクエリは、既知の悪意のあるメールの受信後 30 分以内に受信者が実行したログオン試行のうち、最新のもの 10 件を見つけます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-118">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="86fbb-119">このクエリを使用することで、メールの受信者のアカウントが侵害されたかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-119">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
+### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a><span data-ttu-id="8913b-140">悪意のあるメール受信後のログオン試行を確認する</span><span class="sxs-lookup"><span data-stu-id="8913b-140">Review logon attempts after receipt of malicious emails</span></span>
+<span data-ttu-id="8913b-141">このクエリは、既知の悪意のあるメールの受信後 30 分以内に受信者が実行したログオン試行のうち、最新のもの 10 件を見つけます。</span><span class="sxs-lookup"><span data-stu-id="8913b-141">This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails.</span></span> <span data-ttu-id="8913b-142">このクエリを使用することで、メールの受信者のアカウントが侵害されたかどうかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="8913b-142">You can use this query to check whether the accounts of the email recipients have been compromised.</span></span>
 
 ```kusto
-//Find logons that occurred right after malicious email was received
-let MaliciousEmail=EmailEvents
-| where MalwareFilterVerdict == "Malware" 
+//Define new table for malicious emails
+let MaliciousEmails=EmailEvents
+//List emails detected as malware, getting only pertinent columns
+| where MalwareFilterVerdict == "Malware"
 | project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
-MaliciousEmail
+MaliciousEmails
 | join (
-DeviceLogonEvents
+//Merge malicious emails with logon events to find logons by recipients
+IdentityLogonEvents
 | project LogonTime = Timestamp, AccountName, DeviceName
 ) on AccountName 
+//Check only logons within 30 minutes of receipt of an email
 | where (LogonTime - TimeEmail) between (0min.. 30min)
 | take 10
 ```
 
-### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="86fbb-120">既知の悪意のある送信者からのメール受信後の PowerShell アクティビティを確認する</span><span class="sxs-lookup"><span data-stu-id="86fbb-120">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
-<span data-ttu-id="86fbb-121">悪意のあるメールには多くの場合、PowerShell コマンドを実行して追加のペイロードを配信するドキュメントや特別に細工した添付ファイルが含まれます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-121">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="86fbb-122">既知の悪意のあるユーザーから送信されたメールに気付いた場合、このクエリを使用することで、その送信者からのメールの受信後 30 分以内に発生した PowerShell アクティビティを表示および確認できます。</span><span class="sxs-lookup"><span data-stu-id="86fbb-122">If you are aware of emails coming from a known malicious sender, you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender .</span></span>  
+### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a><span data-ttu-id="8913b-143">既知の悪意のある送信者からのメール受信後の PowerShell アクティビティを確認する</span><span class="sxs-lookup"><span data-stu-id="8913b-143">Review PowerShell activities after receipt of emails from known malicious sender</span></span>
+<span data-ttu-id="8913b-144">悪意のあるメールには多くの場合、PowerShell コマンドを実行して追加のペイロードを配信するドキュメントや特別に細工した添付ファイルが含まれます。</span><span class="sxs-lookup"><span data-stu-id="8913b-144">Malicious emails often contain documents and other specially crafted attachments that run PowerShell commands to deliver additional payloads.</span></span> <span data-ttu-id="8913b-145">既知の悪意のある送信者 () からのメールを認識している場合は `MaliciousSender@example.com` 、このクエリを使用して、送信者から電子メールを受信してから30分以内に発生した PowerShell アクティビティをリストして確認することができます。</span><span class="sxs-lookup"><span data-stu-id="8913b-145">If you are aware of emails coming from a known malicious sender (`MaliciousSender@example.com`), you can use this query to list and review PowerShell activities that occurred within 30 minutes after an email was received from the sender.</span></span>  
 
 ```kusto
-//Find PowerShell activities right after email was received from malicious sender
-let x=EmailEvents
+//Define new table for emails from specific sender
+let EmailsFromBadSender=EmailEvents
 | where SenderFromAddress =~ "MaliciousSender@example.com"
 | project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
-x
+//Merge emails from sender with process-related events on devices
+EmailsFromBadSender
 | join (
 DeviceProcessEvents
+//Look for PowerShell activity
 | where FileName =~ "powershell.exe"
+//Add line below to check only events initiated by Outlook
 //| where InitiatingProcessParentFileName =~ "outlook.exe"
 | project TimeProc = Timestamp, AccountName, DeviceName, InitiatingProcessParentFileName, InitiatingProcessFileName, FileName, ProcessCommandLine
 ) on AccountName 
+//Check only PowerShell activities within 30 minutes of receipt of an email
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="86fbb-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="86fbb-123">Related topics</span></span>
-- [<span data-ttu-id="86fbb-124">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="86fbb-124">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="86fbb-125">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="86fbb-125">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="86fbb-126">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="86fbb-126">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="86fbb-127">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="86fbb-127">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="86fbb-128">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="86fbb-128">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="86fbb-129">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="86fbb-129">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="8913b-146">関連項目</span><span class="sxs-lookup"><span data-stu-id="8913b-146">Related topics</span></span>
+- [<span data-ttu-id="8913b-147">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="8913b-147">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="8913b-148">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="8913b-148">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="8913b-149">クエリ結果を操作する</span><span class="sxs-lookup"><span data-stu-id="8913b-149">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="8913b-150">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="8913b-150">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="8913b-151">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="8913b-151">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="8913b-152">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="8913b-152">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
