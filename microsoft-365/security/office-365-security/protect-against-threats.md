@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Microsoft 365 の脅威保護について学習し、組織での使用方法を構成することができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54500500095392ebfc3d93080701fa4715fc8448
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 8c2786ebda18b5730e1cbe93316f0d6cc319f6a9
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617398"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656633"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -32,30 +32,33 @@ Microsoft 365 には、さまざまな脅威保護機能が含まれています
 > [!IMPORTANT]
 > **ポリシーの種類ごとに最初に推奨される設定が含まれています。ただし、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもでき**ます。 使用しているポリシーまたは変更がデータセンターによって処理されるまで約30分間待機します。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 ### <a name="subscriptions"></a>サブスクリプション
 
-脅威保護機能は、すべての Microsoft 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには、より高度な機能が含まれています。 次の表に、この記事に含まれる保護機能を最小限のサブスクリプション要件と共に示します。<br/>
+脅威保護機能は、すべての Microsoft 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションには、より高度な機能が含まれています。 次の表に、この記事に含まれる保護機能を最小限のサブスクリプション要件と共に示します。
 
-|||
+****
+
+|保護の種類|サブスクリプションの要件|
 |---|---|
-|**保護の種類**|**サブスクリプションの要件**|
 |マルウェア対策保護|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (EOP)|
-|電子メールおよび Office ドキュメント内の悪意のある Url やファイルからの保護|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
+|メールおよび Office ドキュメント内の悪意のある URL およびファイルからの保護|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
 |フィッシング対策保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |高度なフィッシング対策保護|[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |スパム対策保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |ゼロ時間自動削除 (電子メール用)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|監査ログ (これはレポートのために使用されます)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
+|監査ログ (これはレポート目的で使用されます)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
 |
 
 ### <a name="roles-and-permissions"></a>ロールと権限
 
 [セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)でポリシーを構成するには、適切な役割が割り当てられている必要があります。 次の表にいくつかの例があります:
 
+****
+
 |役割または役割グループ|詳細情報|
-|---------|---------|
+|---|---|
 |グローバル管理者|[Microsoft 365 管理者ロールについて](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |セキュリティ管理者|[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
@@ -221,9 +224,10 @@ Microsoft 365 には、さまざまな脅威保護機能が含まれています
 
 脅威保護機能を構成した後は、それらの機能がどのように動作しているかを監視し、必要に応じてポリシーを確認して変更し、新しい機能とサービスの更新について確認してください。
 
-|||
+****
+
+|行うこと|追加情報|
 |---|---|
-|**操作**|**追加情報**|
 |レポートを表示して、組織の脅威保護機能がどのように機能するかを確認する|[セキュリティダッシュボード](security-dashboard.md)<br/>[電子メールセキュリティレポート](view-email-security-reports.md)<br/>[Office 365 ATP のレポート](view-reports-for-atp.md)<br/>[脅威エクスプローラー](threat-explorer.md)|
 |必要に応じて脅威保護ポリシーを定期的にレビューし、改訂する|[セキュリティ スコア](../mtp/microsoft-secure-score.md)<br/>[スマートレポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 脅威の調査と応答機能](keep-users-safe-with-office-365-ti.md)|
 |新機能とサービス更新を見る|[標準および対象のリリースオプション](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Message Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|

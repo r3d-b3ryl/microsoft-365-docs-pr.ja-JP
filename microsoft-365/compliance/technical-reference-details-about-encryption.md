@@ -1,5 +1,5 @@
 ---
-title: 暗号化に関するテクニカルリファレンスの詳細
+title: 暗号化についてのテクニカル リファレンスの詳細
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Office 365 で暗号化に使用されるさまざまな証明書、テクノロジ、および TLS 暗号スイートについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91fa21fff12c429032af6468ff3024acfc6ca2ab
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: c9bc61a7c7a35d84d5e4ff338927ead98a932d9d
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024543"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649098"
 ---
-# <a name="technical-reference-details-about-encryption"></a>暗号化に関するテクニカルリファレンスの詳細
+# <a name="technical-reference-details-about-encryption"></a>暗号化についてのテクニカル リファレンスの詳細
 
 この記事では、 [Office 365 の暗号化](encryption.md)に使用される証明書、テクノロジ、および TLS 暗号スイートについて説明します。 この記事では、計画した deprecations の詳細についても説明します。
   
@@ -52,13 +52,7 @@ TLS バージョン 1.3 (TLS 1.3) は現在サポートされていません。
   
 ## <a name="support-for-tls-10-and-11-deprecation-and-what-this-means-for-you"></a>TLS 1.0 および1.1 のサポートが廃止され、これが何を意味するのかを説明します。
 
-2018年10月31日以降、Office 365 は TLS 1.0 および1.1 をサポートしなくなりました。 これは、Microsoft が、TLS 1.0 および1.1 を使用して Office 365 に接続するクライアント、デバイス、またはサービスに関する新しい問題を修正しないことを意味します。
-
-これは、Office 365 が TLS 1.0 および1.1 の接続をブロックすることを意味するわけではありません。
-
-最初は、2020年6月1日の日付を設定していますが、世界規模および GCC 環境ではの TLS 1.0 および TLS 1.1 は廃止されていますが、この日付は無効になりました。 これは COVID-19 のためです。 この廃止予定に新しい日付がある場合は、ここで公開します。 
-
-GCC High および DoD 環境では、2020年1月15日に公式の廃止が行われました。
+2018年10月31日以降、Office 365 は TLS 1.0 および1.1 をサポートしなくなりました。 これは、Microsoft が、TLS 1.0 および1.1 を使用して Office 365 に接続するクライアント、デバイス、またはサービスに関する新しい問題を修正しないことを意味します。 GCC High および DoD 環境の公式の廃止は2020年1月15日に開始しました。 全世界および GCC 環境での TLS 1.0 および1.1 の廃止は、2020年10月15日に開始されます。 
 
 すべてのクライアントサーバーとブラウザーのサーバーの組み合わせが TLS 1.2 と最新の暗号スイートを使用して、Office 365 および Microsoft 365 サービスへのセキュリティで保護された接続を維持するようにする必要があります。 クライアントとサーバー間、ブラウザーとサーバー間の特定の組み合わせについては、更新が必要になる場合があります。 この影響の詳細については、「 [Office 365 での TLS 1.2 の必須使用の準備](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)」を参照してください。
   
@@ -76,21 +70,32 @@ Cipher suite は、セキュリティで保護された接続を確立するた�
 
 > [!IMPORTANT]
 > TLS のバージョンが廃止され、使用され*なく*なったバージョンを使用して新しいバージョンを入手できないことに注意してください。 TLS 1.3 は現在サポートされていません。 従来のサービスが TLS 1.0 または1.1 を必要としない場合は、それらを無効にする必要があります。
-  
-|**プロトコル**|**暗号スイート名**|**キー交換アルゴリズム/強度**|**完全なフォワード機密サポート**|**認証アルゴリズム/強度**|**暗号/強度**|
+
+| Cipher suite | キー交換アルゴリズム/強度 | 完全な転送機密性 | 暗号/強度 | 認証アルゴリズム |
+|:-----|:-----|:-----|:-----|:-----|
+|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|はい <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|はい <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 <br/>     |ECDH/192 <br/>|はい <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br/>     |ECDH/128 <br/>|はい <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|はい <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|はい <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |いいえ <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |いいえ <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |いいえ <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |いいえ <br/> |AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |いいえ <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |いいえ <br/> |AES/128 <br/>|RSA/112 <br/> |
+
+次の暗号スイートは、廃止日まで TLS 1.0 および1.1 プロトコルを引き続きサポートします。 廃止日が2020年1月15日である GCC の高および DoD 環境で、日付が2020年10月15日の世界および GCC 環境での場合。
+
+| プロトコル | 暗号スイート名 | キー交換アルゴリズム/強度 | 完全なフォワード機密サポート | 認証アルゴリズム/強度 | 暗号/強度 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |いいえ  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |はい  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |はい  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |いいえ  <br/>  |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |いいえ  <br/>  |RSA/112  <br/> |AES/128  <br/> |
    
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 [Windows 10 v1903 の TLS 暗号スイート](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
 
 [Office 365 での暗号化](encryption.md)
@@ -101,5 +106,4 @@ Cipher suite は、セキュリティで保護された接続を確立するた�
   
 [TLS/SSL 暗号化の強化 (Windows IT センター)](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
- [Office 365 および Office 365 GCC での TLS 1.2 の準備](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
-
+[Office 365 および Office 365 GCC での TLS 1.2 の準備](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 電子メールで悪意のあるファイルから組織を保護する安全な添付ファイルポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430425"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656632"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Office 365 の ATP の安全な添付ファイルのポリシーを設定する
 
@@ -46,8 +46,10 @@ ms.locfileid: "45430425"
 
 - 必要なアクセス許可を持っていることを確認してください。 ATP ポリシーを定義 (または編集) するには、Exchange Online 組織の管理役割 (既定では、グローバル管理者がこの役割に割り当てられます) または Exchange Online の検疫管理およびセキュリティ管理者の役割のいずれかが割り当てられている必要があります。 詳細については、次の表を参照してください。
 
+  ****
+
   |役割|参照先/割り当て方法|
-  |---------|---------|
+  |---|---|
   |グローバル管理者 |Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
   |セキュリティ管理者 |Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online 組織の管理、Exchange Online の検疫管理 |Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
@@ -89,9 +91,10 @@ ms.locfileid: "45430425"
 
 ATP の安全な添付ファイルのポリシーを設定するときは、Monitor、Block、Replace、動的配信など、さまざまなオプションから選択します。 これらのオプションの機能について疑問がある場合は、次の表で各オプションとその影響について要約しています。
 
-||||
+****
+
+|オプション|効果|次の場合に使用します。|
 |---|---|---|
-|**オプション**|**Effect**|**次の場合に使用します。**|
 |**オフ**|マルウェアの添付ファイルをスキャンしない  <br/> メッセージ配信を遅延しない|選択した受信者のスキャンをオフにします。  <br/> 内部メールのルーティングで不必要な遅延が発生しないようにします。  <br/> **このオプションは、ほとんどのユーザーには推奨されていません。このオプションは、信頼できる差出人からの電子メールのみを取得する受信者に対して、ATP の安全な添付ファイルのスキャンを無効にする場合にのみ使用してください。**|
 |**モニター**|添付ファイル付きのメッセージを配信し、検出されたマルウェアの発生を追跡します。|検出されたマルウェアが組織内で通過する場所を確認する|
 |**Block**|検出されたマルウェア添付ファイルのメッセージを処理できないようにする  <br/> 検出されたマルウェアを持つメッセージを[Office 365 で検疫](manage-quarantined-messages-and-files.md)に送信します。これにより、セキュリティ管理者またはアナリストは、これらのメッセージを確認および解放 (または削除) できます。  <br/> 今後のメッセージと添付ファイルを自動的にブロックする|同じマルウェアの添付ファイルを使用して、組織を繰り返しの攻撃から保護する|
@@ -101,7 +104,7 @@ ATP の安全な添付ファイルのポリシーを設定するときは、Moni
 |**マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合に上記の選択を適用する**|安全でない添付ファイルに対して構成されたアクションを、スキャンできない添付ファイル (タイムアウトまたはエラーのため) に適用します。|
 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 ATP の安全な添付ファイルのポリシーを設定すると、レポートを表示することによって、ATP が組織でどのように機能しているかを確認できます。 詳細については、以下のリソースを参照してください。
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632141"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656613"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -61,7 +61,9 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
 1. 以下の表の SFP 構文について、十分に理解しておいてください。
 
-   ||もし今使っているとしたら...|お客様に共通のことでは?|追加対象|
+   ****
+
+   |<!-- -->|もし今使っているとしたら...|お客様に共通のことでは?|追加対象|
    |---|---|---|---|
    |1|いずれかの電子メール システム (必須)|共通。この値で始まるすべての SPF レコード|v=spf1|
    |2|Exchange Online|共通|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
    |5|サード パーティ製の電子メール システム|共通ではない|\<domain name\> の内容を含めます。  <br/> domain name は、サード パーティ製の電子メール システムのドメイン名です。|
    |6|オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム|共通ではない| 各追加メール システムで次のいずれかを使用します。 <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  \<_domain name_\> の内容を含めます。  <br/>  \<_IP address_\> の値は他のメール システムの IP アドレスで、\<_domain name_\> はユーザーのドメインのためにメールを送信する他のメール システムのドメイン名です。|
    |7|いずれかの電子メール システム (必須)|共通。この値で終わるすべての SPF レコード|\<_enforcement rule_\>  <br/> 可能な値はいくつかあります。**-all** を使用することをお勧めします。|
+   |
 
 2. まだ行っていない場合は、表の構文を使用して SPF TXT レコードを作成します。
 

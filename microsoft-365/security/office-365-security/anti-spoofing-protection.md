@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
-ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 25e1c73a58ffc89ecf4723fbb7cb872ff7d16071
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577850"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653415"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -129,8 +129,7 @@ Office 365 ATP 組織は、セキュリティ/コンプライアンス センタ
 
 たとえば、Gabriela Laureano (glaureano @ contoso.com) はバード ウォッチングに興味があり、メーリングリスト birdwatchers @ fabrikam.com に参加し、リストに次のメッセージを送信します。
 
-> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br/> 
-**件名:** 今週、レーニア山からアオカケス を見ることができます <br/><br/>今週、レーニア山からの風景を 眺めてみませんか?
+> **差出人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **宛先:** Birdwatcher のディスカッション リスト\<birdwatchers@fabrikam.com\> <br/> **件名:** 今週、レーニア山からアオカケス を見ることができます <br/><br/>今週、レーニア山からの風景を 眺めてみませんか?
 
 メーリングリスト サーバーはメッセージを受信し、その内容を変更して、リストのメンバーにリプレイします。 リプレイされたメッセージの From アドレス (glaureano @ contoso.com) は同じですが、件名行にタグを追加して、メッセージの下側にフッターを追加します。 この種の変更は、メーリング リストでは一般的なものですが、スプーフィングの誤検出の原因になることがあります。
 

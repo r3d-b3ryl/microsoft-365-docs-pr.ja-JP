@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 976911abe047be350ae6c64409cd6607ea75de7a
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 6109cecc79b4db876ee595d4786d176ae7f42f5d
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811076"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656553"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
@@ -35,17 +35,20 @@ ms.locfileid: "44811076"
 
 ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。 次の表では、いくつかの例について説明します。
 
+****
+
 |役割|参照先/割り当て方法|
-|---------|---------|
+|---|---|
 |グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
+|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
 **この手順を開始する前に、Microsoft 365 環境の監査ログが既に有効になっていることを確認して**ください。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
 
-1. に移動 [https://protection.office.com](https://protection.office.com) し、職場または学校のアカウントでサインインします。
+1. に移動 <https://protection.office.com> し、職場または学校のアカウントでサインインします。
 
 2. [セキュリティ & コンプライアンスセンター] の左側のナビゲーションウィンドウで、[**脅威の管理**] の下にある [**ポリシー**の \> **安全な添付ファイル**] を選択します。
 
@@ -97,7 +100,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 通知の詳細については、「[セキュリティ & コンプライアンスセンターでアクティビティ警告を作成](../../compliance/create-activity-alerts.md)する」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 1. [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
 
