@@ -243,7 +243,7 @@
   items:
     - name: 情報ガバナンスの管理
       href: manage-information-governance.md
-    - name: データのインポート
+    - name: メールボックス データをインポートする
       items:
         - name: PST ファイルのインポートの概要
           href: importing-pst-files-to-office-365.md
@@ -251,8 +251,6 @@
           href: use-network-upload-to-import-pst-files.md
         - name: ドライブ送付を使用して PST ファイルをインポートする
           href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: PST コレクション ツールを使用して、PST ファイルの検索、コピー、および を削除をする
-          href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: PST ファイルをインポートするときに、データをフィルター処理する
           href: filter-data-when-importing-pst-files.md
         - name: PST ファイルのインポートに関する FAQ

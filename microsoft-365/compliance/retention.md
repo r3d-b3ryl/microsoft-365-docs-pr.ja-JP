@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588209"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649154"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -124,6 +124,8 @@ ms.locfileid: "46588209"
   
 > [!IMPORTANT]
 > アイテム保持ポリシーをロックする前に、その影響を理解し、組織が規制要件を満たす必要があるかどうかを確認することは非常に重要です。 保管ロックを適用すると、管理者はアイテム保持ポリシーを無効にすることも削除することもできなくなります。
+
+アイテム保持ポリシーを作成した後に、PowerShell を使用して保持ロックを適用します。 手順は、「[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)」に含まれています。
 
 #### <a name="releasing-a-retention-policy"></a>アイテム保持ポリシーを解除する
 

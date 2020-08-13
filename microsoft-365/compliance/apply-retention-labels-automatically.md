@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルを作成して自動発行します。
-ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560618"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648806"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -136,6 +136,8 @@ ms.locfileid: "46560618"
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>キーワードまたは検索可能なプロパティによるコンテンツへの自動適用ラベル
 
 特定の条件を満たすコンテンツにラベルを自動的に適用できます。現在利用可能な条件では、特定の単語、フレーズ、または検索可能なプロパティの値を含むコンテンツへのラベルの適用がサポートされています。AND、OR、NOT などの検索演算子を使用してクエリを絞り込むことができます。
+
+検索可能なプロパティのラベルを自動適用しているときに、管理プロパティのエイリアスをクエリで使用することはできません。 RefinableString01 のように、管理プロパティの実際の名前である必要があります。
 
 クエリ構文の詳細については、次を参照してください。
 

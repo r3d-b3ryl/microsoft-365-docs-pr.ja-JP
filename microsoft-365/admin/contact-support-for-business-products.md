@@ -21,12 +21,12 @@ search.appverid:
 description: 国または地域別にリストされている電話番号を使用するか、サービス リクエストをオンラインで送信して、テクニカル サポートおよび課金サポートに問い合わせます。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552448"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641587"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>ビジネス製品についてサポートに問い合わせる方法 - 管理者ヘルプ
 
@@ -56,6 +56,9 @@ ms.locfileid: "46552448"
 課金サポートは、月曜日から金曜日の午前 9 時から午後 5 時 (オーストラリアでは午前 9 時から午後 6 時) に英語で提供されます。
 テクニカル サポートは 24 時間年中無休で英語で提供されます。
 管理者からサポートに電話する際は、アカウントの詳細情報をご用意ください。
+
+> [!NOTE]
+> 組織をより適切に保護するために、既存の電話ベースの検証プロセスに暗証番号 (PIN) ベースの検証手順を追加しました。 組織プロファイルに登録されていない番号からお問い合わせいただいた場合、Microsoft サポート担当者は、Microsoft 365 管理センターのプロファイルに登録されているメールまたは電話番号に認証コードを送信します。 このコードをサポート担当者に教えて、組織のアカウントへのアクセスを許可する必要があります。
 
 - **米国にお住まいの方は、1 800 865 9408 にお問い合わせください。**
 

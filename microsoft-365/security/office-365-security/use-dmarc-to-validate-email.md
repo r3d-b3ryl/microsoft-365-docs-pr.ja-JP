@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
-ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601875"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632119"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -39,7 +39,7 @@ Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https:/
 
 SPF は、DNS TXT レコードを使用して、特定のドメインに対する認証済みの送信側 IP アドレスのリストを提示します。通常、SPF チェックは 5321.MailFrom アドレスに対してのみ実行されます。つまり、単独で SPF を使用すると、5322.From アドレスは認証されないことになります。これは、SPF チェックにパスしていても、5322.From 送信者アドレスがスプーフィングされたメッセージをユーザーが受信するというシナリオの余地を残すことになります。たとえば、次のような SMTP トランスクリプトを考えてみます。
 
-```text
+```console
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -76,7 +76,7 @@ SPF の DNS レコードと同様に、DMARC のレコードは、スプーフ�
 
 Microsoft の DMARC TXT レコードは、次のような内容になります。
 
-```text
+```console
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
 ```
 
@@ -114,7 +114,7 @@ Microsoft 365 を使用しているもののカスタム ドメインを使用�
 
 たとえば、contoso.com が Exchange Online からメールを送信するとします。このとき、オンプレミスの Exchange サーバーの IP アドレスが 192.168.0.1、Web アプリケーションの IP アドレスが 192.168.100.100 だと仮定すると、SPF TXT テキストレコードは次のようになります。
 
-```text
+```console
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -132,7 +132,7 @@ SPF のセットアップ後には、DKIM をセットアップする必要が�
 
 ここでは、Microsoft 365 で最もよく使用される構文オプションを示します。ただし、ここに記載されていない別の構文のオプションもあります。ドメイン用の DMARC TXT レコードは、次に示す形式で作成します。
 
-```text
+```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
@@ -152,19 +152,19 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 - ポリシーをなし (none) に設定する
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - ポリシーを検疫 (quarantine) に設定する
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - ポリシーを拒否 (reject) に設定する
 
-    ```text
+    ```console
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -187,6 +187,16 @@ DMARC は、メール フローの他の部分に影響を与えないように�
 3. DMARC に失敗したメッセージを受け取らないように外部システムに要求する
 
     最後の手順は、拒否ポリシーの実装です。拒否ポリシーとは、ポリシーを拒否 (p=reject) に設定した DMARC TXT レコードのことです。これにより、DMARC レシーバーに対して、DMARC チェックに失敗したメッセージを受け取らないように指示します。
+    
+4. サブドメイン用に DMARC を設定する方法
+
+DMARC は、ポリシーを DNS の TXT レコードとして公開することで実装され、階層的です (たとえば、contoso.com に公開されたポリシーは、サブドメインに別のポリシーが明示的に定義されていない限り、sub.domain.contonos.com に適用されます)。 これは、より広い範囲をカバーするために、より少ない数の高レベル DMARC レコードを指定できる場合があるため、便利です。 サブドメインがトップ レベル ドメインの DMARC レコードを継承しないようにするには、明示的なサブドメイン DMARC レコードを構成するように注意する必要があります。
+
+また、`sp=reject` 値を追加することにより、サブドメインがメールを送信してはならないときに DMARC にワイルドカード タイプのポリシーを追加できます。 例:
+
+```console
+_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 が DMARC に失敗した送信メールを処理する方法
 
@@ -220,7 +230,7 @@ Microsoft が ARC Sealer の場合、現在、Microsoft 365 では ARC を使用
 
 お客様の場合でも、ドメインのプライマリ MX レコードが EOP を指していないと、DMARC による利点は得られなくなります。 たとえば、MX レコードがオンプレミスのメール サーバーを指していて、コネクタを使用することで EOP にメールをルーティングしていると、DMARC は機能しなくなります。 このシナリオでは、受信側ドメインは認証済みドメインのいずれかになりますが、EOP はプライマリ MX ではありません。 たとえば、contoso.com がそれ自体の MX をポイントしていて、セカンダリ MX レコードとして EOP を使用しているとすると、contoso.com の MX レコードは次のようになります。
 
-```text
+```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
