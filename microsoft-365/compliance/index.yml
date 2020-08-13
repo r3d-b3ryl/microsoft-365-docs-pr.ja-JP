@@ -13,45 +13,27 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: 6dc99bbfb674c3119fb1926abe5690381a3d78cd
-  ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+  ms.openlocfilehash: 648b9a3256aaca8eaabba80af1edee3beccf1ac2
+  ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/29/2020
-  ms.locfileid: "46521197"
+  ms.lasthandoff: 08/12/2020
+  ms.locfileid: "46641621"
 landingContent:
-- title: 情報保護の管理
+- title: 情報保護とガバナンスを管理する
   linkLists:
   - linkListType: overview
     links:
-    - text: 秘密度ラベル
-      url: sensitivity-labels.md
-    - text: データ損失防止 (DLP)
-      url: data-loss-prevention-policies.md
-    - text: 機密情報の種類
-      url: custom-sensitive-info-types.md
-    - text: メールの暗号化
-      url: email-encryption.md
-    - text: 顧客キー
-      url: customer-key-overview.md
-- title: 情報ガバナンスの管理
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: アイテム保持ポリシーと保持ラベル
-      url: retention.md
-    - text: レコード管理
-      url: records-management.md
-    - text: ファイル計画マネージャー
-      url: file-plan-manager.md
-    - text: イベント ベースの保持
-      url: event-driven-retention.md
-    - text: PST インポート
-      url: importing-pst-files-to-office-365.md
-    - text: サードパーティのデータ コネクタ
-      url: archiving-third-party-data.md
-    - text: データ ガバナンスのレポート
-      url: view-the-data-governance-reports.md
+    - text: データを把握する
+      url: protect-information.md#know-your-data
+    - text: データを保護する
+      url: protect-information.md#protect-your-data
+    - text: データの損失を防止する
+      url: protect-information.md#prevent-data-loss
+    - text: データを統制する
+      url: manage-information-governance.md
+    - text: 'ラニング パス: 情報保護とガバナンスを管理する'
+      url: /learn/paths/m365-compliance-information
 - title: インサイダー リスクを管理する
   linkLists:
   - linkListType: overview
