@@ -135,7 +135,7 @@
                   href: mtp/advanced-hunting-take-action.md
                 - name: 共有クエリを使用する
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: デバイスとメールでの検出
+                - name: デバイス、メール、アプリ、ID 間での捜索
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 検出する
                   href: mtp/advanced-hunting-go-hunt.md

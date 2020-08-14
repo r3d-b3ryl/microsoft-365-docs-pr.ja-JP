@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: a6826be5cccf89d3b2e48e0e37df9a9263e4a8a7
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: acf440d7bc46c51a6c00b10d06619868a09e155d
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201511"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662245"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-SharePoint と OneDrive で Office ファイルの機密ラベルを有効にする前に、web 上の Office に[機密ラベル](sensitivity-labels.md)を適用することはできません。 リボンに [**秘密度**] ボタン、またはステータスバーに適用されるラベル名が表示されません。 さらに、デスクトップアプリを使用してファイルにラベルを付け、それらを SharePoint または OneDrive に保存する場合、ラベルが暗号化を適用した場合、サービスはこれらのファイルのコンテンツを処理できません。 共同編集、電子情報開示、データ損失防止、検索、およびその他の共同作業機能は、これらの状況では機能しません。
+SharePoint と OneDrive で Office ファイルの機密ラベルを有効にする前に、web 上の Office に [機密ラベル](sensitivity-labels.md) を適用することはできません。 リボンに [ **秘密度** ] ボタン、またはステータスバーに適用されるラベル名が表示されません。 さらに、デスクトップアプリを使用してファイルにラベルを付け、それらを SharePoint または OneDrive に保存する場合、ラベルが暗号化を適用した場合、サービスはこれらのファイルのコンテンツを処理できません。 共同編集、電子情報開示、データ損失防止、検索、およびその他の共同作業機能は、これらの状況では機能しません。
 
-SharePoint および OneDrive で Office ファイルの機密ラベルを有効にする場合、これらすべての機能が有効になります。 機密ラベルをユーザーに表示するだけでなく、クラウドベースのキーを使用した暗号化を含む新しいファイルと変更されたファイルに対して ([二重キー暗号化](double-key-encryption.md)を使用しない)。
+SharePoint および OneDrive で Office ファイルの機密ラベルを有効にする場合、これらすべての機能が有効になります。 機密ラベルをユーザーに表示するだけでなく、クラウドベースのキーを使用した暗号化を含む新しいファイルと変更されたファイルに対して ( [二重キー暗号化](double-key-encryption.md)を使用しない)。
 
 - Word、Excel、PowerPoint のファイルでは、SharePoint がラベルを認識し、暗号化されたファイルのコンテンツを処理できるようになりました。
 
@@ -40,16 +40,16 @@ SharePoint および OneDrive で Office ファイルの機密ラベルを有効
 
 - Web 上の Office (Word、Excel、PowerPoint) を使用して、暗号化を適用する機密ラベルが設定された Office ファイルを開いて編集します。 暗号化によって割り当てられたアクセス許可が適用されます。 Word on the web では、これらの文書を編集するときに自動ラベルを使用することもできます。
 
-- 外部ユーザーは、ゲストアカウントを使用して、暗号化のラベルが付けられたドキュメントにアクセスできます。 詳細については、「[サポートの外部ユーザーとラベル付きコンテンツ](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)」を参照してください。 
+- 外部ユーザーは、ゲストアカウントを使用して、暗号化のラベルが付けられたドキュメントにアクセスできます。 詳細については、「 [サポートの外部ユーザーとラベル付きコンテンツ](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)」を参照してください。 
 
-- Office 365 電子情報開示では、これらのファイルのフルテキスト検索がサポートされています。 データ損失防止 (DLP) ポリシーは、これらのファイルのコンテンツをサポートします。
+- Office 365 電子情報開示では、これらのファイルのフルテキスト検索とデータ損失防止 (DLP) ポリシーをサポートしています。これらのファイルのコンテンツはサポートされています。
 
 > [!NOTE]
-> オンプレミスキーで暗号化が適用されている場合、キー管理トポロジ (HYOK)、または[二重キー暗号化](double-key-encryption.md)を使用している場合、ファイルコンテンツを処理するための SharePoint の動作は変わりません。
+> 暗号化がオンプレミスキーで適用されている場合 ("キーの保持" または "HYOK" と呼ばれることもあります)、または [二重キー暗号化](double-key-encryption.md)を使用した場合、ファイルコンテンツを処理するための SharePoint の動作は変わりません。
 >
-> Sharepoint の動作は、SharePoint の既存のラベル付きファイルと暗号化されたファイルに対しても変わりません。 これらのファイルが新しい機能を利用できるようにするには、コマンドを実行して SharePoint と OneDrive の機密ラベルを有効にした後、それらのファイルをダウンロードしてアップロードするか、または編集する必要があります。 その後、SharePoint はこれらのファイルを処理できます。 たとえば、それらは検索と電子情報開示の結果として返されます。
+> Sharepoint の動作は、SharePoint の既存のファイルで、1つの Azure ベースのキーを使用して、暗号化のラベルが付けられている場合にも変わりません。 SharePoint と OneDrive で Office ファイルの機密ラベルを有効にした後、これらのファイルが新機能を活用できるようにするには、ファイルをダウンロードしてから再アップロードするか、編集する必要があります。 たとえば、それらは検索と電子情報開示の結果として返されます。
 
-SharePoint と OneDrive で Office ファイルの機密ラベルを有効にした後、次の3つの新しい[監査イベント](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)を使用して、Sharepoint と onedrive のドキュメントに適用される機密ラベルを監視できます。
+SharePoint と OneDrive で Office ファイルの機密ラベルを有効にした後、次の3つの新しい [監査イベント](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) を使用して、Sharepoint と onedrive のドキュメントに適用される機密ラベルを監視できます。
 - **ファイルに適用された機密ラベル**
 - **ファイルに適用された機密ラベルの変更**
 - **ファイルから削除された機密ラベル**
@@ -60,11 +60,11 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にし
 
 SharePoint および OneDrive では、Office ファイルの機密ラベルを無効にするかどうかをいつでも選択できます ([オプトアウト)](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) 。
 
-Sharepoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの「 [Sharepoint Information Rights management (irm) と [秘密度ラベル](#sharepoint-information-rights-management-irm-and-sensitivity-labels)] セクションを確認してください。 
+Sharepoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの「 [Sharepoint Information Rights management (irm) と [秘密度ラベル](#sharepoint-information-rights-management-irm-and-sensitivity-labels) ] セクションを確認してください。 
 
 ## <a name="requirements"></a>要件
 
-これらの新機能は、[機密ラベル](sensitivity-labels.md)に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
+これらの新機能は、 [機密ラベル](sensitivity-labels.md) に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
 OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョン19.002.0107.0008 以降の Mac を使用します。 これらのバージョンは、2019年1月28日にリリースされ、現在すべてのリングにリリースされています。 詳細については、 [OneDrive リリースノート](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0)を参照してください。 SharePoint と OneDrive で Office ファイルの機密ラベルを有効にした後、古いバージョンの同期アプリを実行しているユーザーには、更新を求めるメッセージが表示されます。
 
@@ -76,10 +76,10 @@ OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョ
     
     2. ファイルをダウンロードしてから、それらを SharePoint にアップロードします。
 
-- 暗号化を適用したラベルが[暗号化に対し](encryption-sensitivity-labels.md#configure-encryption-settings)て次のいずれかの構成を持っている場合、SharePoint は暗号化ファイルを処理できません。
+- 暗号化を適用したラベルが [暗号化に対し](encryption-sensitivity-labels.md#configure-encryption-settings)て次のいずれかの構成を持っている場合、SharePoint は暗号化ファイルを処理できません。
     - ユーザーがラベルと Word、PowerPoint、Excel のチェックボックスを**適用するときにアクセス許可を割り当てること**ができるようにし **、[アクセス許可を指定するようユーザーに要求する]** を選択します。 この設定は、"ユーザー定義の権限" と呼ばれることがあります。
-    - **コンテンツへのユーザーアクセスの有効期限**が、 **Never**以外の値に設定されています。
-    - **二重キー暗号化**が選択されています。
+    - **コンテンツへのユーザーアクセスの有効期限** が、 **Never**以外の値に設定されています。
+    - **二重キー暗号化** が選択されています。
     
     これらの暗号化構成のいずれかを使用したラベルの場合、web 上の Office のユーザーにはラベルが表示されません。 また、これらの暗号化設定を既に持っているラベル付きドキュメントでは、新しい機能を使用できません。 たとえば、これらのドキュメントは、更新された場合でも、検索結果では返されません。
 
@@ -116,7 +116,7 @@ OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョ
     
     このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。 
 
-2. Office online ファイルのコンテンツを処理する機能を有効にするメッセージが表示された場合は、[**今すぐ有効**にする] を選択します。
+2. Office online ファイルのコンテンツを処理する機能を有効にするメッセージが表示された場合は、[ **今すぐ有効**にする] を選択します。
     
     ![[今すぐ開始] ボタンをオンにして、Office Online の機密ラベルを有効にする](../media/sensitivity-labels-turn-on-banner.png)
     
@@ -127,13 +127,13 @@ OneDrive sync app バージョン19.002.0121.0008 以降、またはバージョ
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>PowerShell を使用して機密ラベルのサポートを有効にする
 
-コンプライアンスセンターを使用する代わりに、SharePoint Online PowerShell から[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)コマンドレットを使用して、機密ラベルのサポートを有効にすることができます。 
+コンプライアンスセンターを使用する代わりに、SharePoint Online PowerShell から [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) コマンドレットを使用して、機密ラベルのサポートを有効にすることができます。 
 
 Microsoft 365 複数地域を使用している場合は、すべての地域の場所でこのサポートを有効にするために PowerShell を使用する必要があります。
 
 #### <a name="prepare-the-sharepoint-online-management-shell"></a>SharePoint Online 管理シェルの準備
 
-SharePoint と OneDrive で Office ファイルの機密ラベルを有効にするために PowerShell コマンドを実行する前に、SharePoint Online Management Shell バージョン16.0.19418.12000 以降を実行していることを確認してください。 最新バージョンが既にインストールされている場合は、[次の手順](#run-the-powershell-command-to-enable-support-for-sensitivity-labels)に進んで PowerShell コマンドを実行できます。
+SharePoint と OneDrive で Office ファイルの機密ラベルを有効にするために PowerShell コマンドを実行する前に、SharePoint Online Management Shell バージョン16.0.19418.12000 以降を実行していることを確認してください。 最新バージョンが既にインストールされている場合は、 [次の手順](#run-the-powershell-command-to-enable-support-for-sensitivity-labels) に進んで PowerShell コマンドを実行できます。
 
 1. PowerShell ギャラリーから以前のバージョンの SharePoint Online 管理シェルをインストールした場合、次のコマンドレットを実行してモジュールを更新できます。
 
@@ -141,7 +141,7 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にす
     Update-Module -Name Microsoft.Online.SharePoint.PowerShell
     ```
 
-2. または、Microsoft ダウンロードセンターから以前のバージョンの SharePoint Online 管理シェルをインストールした場合は、[**プログラムの追加と削除**] に移動して、Sharepoint Online 管理シェルをアンインストールすることもできます。
+2. または、Microsoft ダウンロードセンターから以前のバージョンの SharePoint Online 管理シェルをインストールした場合は、[ **プログラムの追加と削除** ] に移動して、Sharepoint Online 管理シェルをアンインストールすることもできます。
 
 3. Web ブラウザーで [ダウンロード センター] ページへと移動し、[最新の SharePoint Online 管理シェルをダウンロードします](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
@@ -153,13 +153,13 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にす
 
 #### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>PowerShell コマンドを実行して機密ラベルのサポートを有効にする
 
-新機能を有効にするには、 [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)コマンドレットを*EnableAIPIntegration*パラメーターと共に使用します。
+新機能を有効にするには、 [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) コマンドレットを *EnableAIPIntegration* パラメーターと共に使用します。
 
 1. Microsoft 365 で全体管理者または SharePoint 管理者特権を持つ職場または学校のアカウントを使用して、SharePoint に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
     
-    注: Microsoft 365 複数地域を使用している場合は、-Url パラメーターと[connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)を使用して、地理的な場所の1つに対して SharePoint Online 管理センターサイトの Url を指定します。
+    注: Microsoft 365 複数地域を使用している場合は、-Url パラメーターと [connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)を使用して、地理的な場所の1つに対して SharePoint Online 管理センターサイトの Url を指定します。
 
-2. 次のコマンドを実行し、 **Y**キーを押して確認します。
+2. 次のコマンドを実行し、 **Y** キーを押して確認します。
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
@@ -181,9 +181,9 @@ SharePoint と OneDrive で機密ラベルを使用する場合は、新しい�
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) と機密ラベル
 
-[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md)は、ファイルをダウンロードするときに暗号化と制限を適用することによって、リストおよびライブラリレベルでファイルを保護する古いテクノロジです。 この古い保護テクノロジは、権限のないユーザーが SharePoint の外部でファイルを開くことを防止するように設計されています。
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) は、ファイルをダウンロードするときに暗号化と制限を適用することによって、リストおよびライブラリレベルでファイルを保護する古いテクノロジです。 この古い保護テクノロジは、権限のないユーザーが SharePoint の外部でファイルを開くことを防止するように設計されています。
 
-一方、機密ラベルは、暗号化に加えて、視覚的なマーキング (ヘッダー、フッター、ウォーターマーク) の保護設定を提供します。 暗号化設定では、ユーザーがコンテンツに対して実行できる操作を制限する[使用権限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights)の範囲全体がサポートされており、[多くのシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)で同じ機密ラベルがサポートされています。 同じ保護方法をワークロードおよびアプリ間で一貫した設定で使用すると、一貫性のある保護戦略が得られます。
+一方、機密ラベルは、暗号化に加えて、視覚的なマーキング (ヘッダー、フッター、ウォーターマーク) の保護設定を提供します。 暗号化設定では、ユーザーがコンテンツに対して実行できる操作を制限する [使用権限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) の範囲全体がサポートされており、 [多くのシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)で同じ機密ラベルがサポートされています。 同じ保護方法をワークロードおよびアプリ間で一貫した設定で使用すると、一貫性のある保護戦略が得られます。
 
 ただし、両方の保護ソリューションを一緒に使用することができ、その動作は次のようになります。 
 
@@ -201,13 +201,13 @@ SharePoint と OneDrive で機密ラベルを使用する場合は、新しい�
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>ドキュメントを機密ラベルで検索する
 
-管理プロパティの情報保護**ラボ**を使用して、特定の機密ラベルが設定されている SharePoint または OneDrive 内のすべてのドキュメントを検索します。 次の構文を使用します。`InformationProtectionLabelId:<GUID>`
+管理プロパティの情報保護 **ラボ** を使用して、特定の機密ラベルが設定されている SharePoint または OneDrive 内のすべてのドキュメントを検索します。 次の構文を使用します。 `InformationProtectionLabelId:<GUID>`
 
 たとえば、"Confidential" というラベルが付けられていて、そのラベルの GUID が "8faca7b8-8d20-48a3-8ea2-0f96310a848e" のすべてのドキュメントを検索するには、検索ボックスに次のように入力します。
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
 
-機密ラベルの Guid を取得するには、次[のコマンドレットを使用します](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps)。
+機密ラベルの Guid を取得するには、次 [のコマンドレットを使用します](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) 。
     
 1. まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
     
@@ -232,7 +232,7 @@ SharePoint と OneDrive で機密ラベルを使用する場合は、新しい�
 
 これらの新機能を無効にした場合、SharePoint と OneDrive の機密ラベルを有効にした後にアップロードしたファイルは、ラベル設定が引き続き適用されるため、ラベルによって保護されます。 これらの新機能を無効にした後、機密ラベルを新しいファイルに適用すると、フルテキスト検索、電子情報開示、共同編集は機能しなくなります。
 
-これらの新機能を無効にするには、PowerShell を使用する必要があります。 SharePoint Online 管理シェルと[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)コマンドレットを使用して、「PowerShell を使用して[機密ラベルのサポートを有効にする](#use-powershell-to-enable-support-for-sensitivity-labels)」の説明に従って、同じ*EnableAIPIntegration*パラメーターを指定します。 しかし、今回はパラメーター値を false に設定し、 **Y**キーを押して確認します。
+これらの新機能を無効にするには、PowerShell を使用する必要があります。 SharePoint Online 管理シェルと[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)コマンドレットを使用して、「PowerShell を使用して[機密ラベルのサポートを有効にする](#use-powershell-to-enable-support-for-sensitivity-labels)」の説明に従って、同じ*EnableAIPIntegration*パラメーターを指定します。 しかし、今回はパラメーター値を false に設定し、 **Y** キーを押して確認します。
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false
@@ -240,6 +240,6 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 Microsoft 365 複数地域を使用している場合は、各地域の場所に対してこのコマンドを実行する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-SharePoint と OneDrive で Office ファイルの機密ラベルを有効にした後、自動ラベル付けポリシーを使用して、これらのファイルに自動的にラベル付けすることを検討してください。 詳細については、「[コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」を参照してください。
+SharePoint と OneDrive で Office ファイルの機密ラベルを有効にした後、自動ラベル付けポリシーを使用して、これらのファイルに自動的にラベル付けすることを検討してください。 詳細については、「 [コンテンツに機密ラベルを自動的に適用する](apply-sensitivity-label-automatically.md)」を参照してください。

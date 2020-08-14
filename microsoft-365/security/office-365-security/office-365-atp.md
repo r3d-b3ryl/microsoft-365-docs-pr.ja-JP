@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
-ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434051"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653607"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection
 
@@ -45,9 +45,11 @@ Office 365 Advanced Threat Protection (ATP) は、電子メール メッセー�
 
 次の表は、各プランに含まれる機能をまとめたものです。
 
-| Office 365 ATP プラン 1 | Office 365 ATP プラン 2 |
+****
+
+|Office 365 ATP プラン 1|Office 365 ATP プラン 2|
 |---|---|
-|構成、保護、および検出機能:<br/>[安全な添付ファイル](atp-safe-attachments.md)<br/>[安全なリンク](atp-safe-links.md)<br/>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)<br/>[ATPのフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>[リアルタイムの検出](threat-explorer.md)|Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:<br/>[脅威トラッカー](threat-trackers.md)<br/>[脅威エクスプローラー](threat-explorer.md)<br/>[自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻撃シミュレータ](attack-simulator.md)|
+|<br/>構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[ATP のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:</li><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
 |
 
 - Office 365 ATP プラン 2 は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。
@@ -112,11 +114,11 @@ Office 365 ATP プラン 2 には、組織のセキュリティ チームが悪�
 セキュリティ/コンプライアンス センターで ATP 機能にアクセスするには、適切な役割が割り当てられている必要があります。 次の表にいくつかの例があります:
 
 |役割または役割グループ|追加情報|
-|---------|---------|
-|グローバル管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます) |[Microsoft 365 管理者ロールについて](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|セキュリティ管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます) |[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
+|---|---|
+|グローバル管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます)|[Microsoft 365 管理者ロールについて](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|セキュリティ管理者 (Azure Active Directory またはセキュリティ/コンプライアンス センターで割り当てることができます)|[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 組織管理 (Exchange Online で割り当てることができます)|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
-|検索と消去 (セキュリティ/コンプライアンス センターでのみ割り当てることができます) |[セキュリティ/コンプライアンス センターのアクセス許可] (permissions-in-the-security-and-compliance-center.md|
+|検索と消去 (セキュリティ/コンプライアンス センターでのみ割り当てることができます)|[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)|
 
 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 

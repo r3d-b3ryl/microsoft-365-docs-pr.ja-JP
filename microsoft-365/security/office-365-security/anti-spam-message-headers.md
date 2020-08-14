@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) によってメッセージに追加されるヘッダー フィールドについて学習することができます。 これらのヘッダー フィールドは、メッセージとそのメッセージがどのように処理されたかについての情報を提供します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755358"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653427"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
@@ -43,9 +43,10 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 > [!NOTE]
 > **X-Forefront-Antispam-Report** ヘッダーには、多くのさまざまなヘッダー フィールドと値が含まれています。 テーブルに記載されていないこのヘッダー内のその他のフィールドは、Microsoft スパム対策チームが診断のために専用で使用します。
 
-|||
+****
+
+|ヘッダー フィールド|説明|
 |---|---|
-|**ヘッダー フィールド**|**説明**|
 |ARC|ARC プロトコルには次のヘッダーがあります。 <ul><li>AAR: DMARC からの認証結果ヘッダーのコンテンツを記録します。</li><li>AMS: このヘッダーには、メッセージの暗号化署名が含まれます。</li><li>AS: メッセージ ヘッダーの暗号化署名が含まれます。 このヘッダーには、"cv=" と呼ばれるチェーン検証のタグが含まれており、チェーン検証の結果が **none**、**pass**、または **fail** として含まれています。</li></ul>|
 |CAT:|メッセージに適用される保護ポリシーです。 <ul><li>BULK: バルク</li><li>DIMP: ドメイン偽装</li><li>GIMP: メールボックス インテリジェンスに基づく偽装</li><li>HPHSH または HPHISH: 高精度フィッシング</li><li>HSPM: 高確度スパム</li><li>MALW: マルウェア</li><li>PHSH: フィッシング</li><li>SPM: スパム</li><li>SPOOF: なりすまし</li><li>UIMP: ユーザー偽装</li><li>AMP: マルウェア対策</li><li>SAP: 添付ファイル保護</li><li>OSPM: 送信スパム</li></ul><br/>受信メッセージには、複数の種類の保護と複数の検出スキャンによりフラグが付けられる場合があります。 ポリシーの優先度はそれぞれ異なり、優先度が最も高いポリシーが最初に適用されます。 詳細については、「[複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー](how-policies-and-protections-are-combined.md)」を参照してください。|
 |CIP: \[IP アドレス\]|接続 IP アドレス。 この IP アドレスは、IP 許可一覧または IP 禁止一覧で使用できます。 詳細については、「[接続フィルターを構成する](configure-the-connection-filter-policy.md)」を参照してください。|
@@ -75,9 +76,10 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 
 次の表に、**X-Microsoft-Antispam** メッセージ ヘッダー内の便利なフィールドを示します。このヘッダー内のその他のフィールドは、Microsoft スパム対策チームが診断のために専用で使用します。
 
-|||
+****
+
+|ヘッダー フィールド|説明|
 |---|---|
-|**ヘッダー フィールド**|**説明**|
 |BCL|メッセージの Bulk Complaint Level (BCL)。 BCL が高いほど、バルク メール メッセージ (_グレー メール_とも呼ばれます) が好ましくない内容である可能性が高い (したがって、スパムである可能性が高い) ことを示します。 詳細については、「[Bulk Complaint Level (BCL)](bulk-complaint-level-values.md)」を参照してください。|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 フィールドと各電子メールの認証チェックに使用できる値を次の表に示します。
 
-|||
+****
+
+|ヘッダー フィールド|説明|
 |---|---|
-|**ヘッダー フィールド**|**説明**|
 |action|DMARC チェックの結果に基づいて、スパム フィルターが実行するアクションを示します。例: <ul><li>**oreject** または **o.reject**: 拒否の上書き (override reject) の略語。 この場合、Microsoft 365 は、ポリシーが p=reject に設定されている DMARC TXT レコードが属するドメインから DMARC チェックに失敗したメッセージを受信すると、このアクションを使用します。 Microsoft 365 はメッセージを削除または拒否する代わりに、スパムとしてメッセージにマークを付けます。 このように Microsoft 365 が構成されている理由の詳細については、「[Microsoft 365 が DMARC に失敗した受信メールを処理する方法](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)」を参照してください。</li><li>**pct.quarantine**: DMARC をパスしないメッセージのうち、100% 未満のある割合のメッセージはいずれにせよ配信されることを示します。 これは、メッセージが DMARC に失敗してポリシーが検疫に設定されますが、pct フィールドは 100% に設定されず、システムは指定されたドメインのポリシーに従って、DMARC アクションを適用しないことをランダムに判断しているということです。</li><li>**pct.reject**: DMARC をパスしないメッセージのうち、100% 未満のある割合のメッセージはいずれにせよ配信されることを示します。 これは、メッセージが DMARC に失敗してポリシーが拒否に設定されますが、pct フィールドは 100% に設定されず、システムは指定されたドメインのポリシーに従って、DMARC アクションを適用しないことをランダムに判断しているということです。</li><li>**permerror**: DMARC の評価時に永続的なエラーが発生したことを示します (DNS で正しくない形式の DMARC TXT レコードが見つかった場合など)。 このメッセージを再送信しようとしても、結果が異なる可能性はほとんどありません。 その代わりに、ドメインの所有者に問い合わせて問題を解決する必要があります。</li><li>**temperror**: DMARC の評価時に一時的なエラーが発生したことを示します。 メールが正しく処理されるように、少し時間をおいてからメッセージを送信するように、送信者に要求することもできます。</li></ul>|
 |compauth|複合認証の結果。 Microsoft 365 が、SPF、DKIM、DMARC などのさまざまな種類の認証を組み合わせて、メッセージが認証されているかどうかを判断するために使用されます。 評価の基準として、差出人: ドメインを使用します。|
 |dkim|メッセージの DKIM チェックの結果についての説明。次の値を指定できます。 <ul><li>**pass**: メッセージの DKIM チェックにパスしたことを示します。</li><li>**fail (理由)**: メッセージの DKIM チェックに失敗したことと、その理由を示します。 たとえば、メッセージが署名されていない場合、署名を認証できない場合などです。</li><li>**none**: メッセージが署名されていないことを示します。 これは、ドメインに DKIM レコードがあるかどうかや、DKIM レコードが結果を評価しない (このメッセージが署名されていない点のみ) ことを示しますが、これらを示さない場合もあります。</li></ul>|
