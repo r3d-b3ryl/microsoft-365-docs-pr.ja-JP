@@ -1,7 +1,7 @@
 ---
 title: 任意のドメインレジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -25,24 +25,24 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールや Skype for Business Online などのサービスが独自のドメイン名を使用するように、Microsoft 365 にドメインを追加してセットアップする方法について説明します。
-ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560343"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662234"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>任意のドメインレジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-最初に[ドメイン (ホスト固有の指示) を設定](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)し、レジストラーに関する指示があるかどうかを確認します。 
+最初に [ドメイン (ホスト固有の指示) を設定](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) し、レジストラーに関する指示があるかどうかを確認します。 
   
-次の手順に従って、Microsoft 365 にドメインを追加して設定します。これにより、電子メールや Skype for Business Online などのサービスで独自のドメイン名が使用されます。 これを行うには、ドメインを確認してから、ドメインのネームサーバーを Microsoft 365 に変更して、適切な DNS レコードをセットアップできるようにします。 次のステートメントで状況を説明する場合は、次の手順を実行します。
+次の手順に従って、Microsoft 365 にドメインを追加して設定します。これにより、電子メールやチームなどのサービスが独自のドメイン名を使用できるようになります。 これを行うには、ドメインを確認してから、ドメインのネームサーバーを Microsoft 365 に変更して、適切な DNS レコードをセットアップできるようにします。 次のステートメントで状況を説明する場合は、次の手順を実行します。
   
 - 自分のドメインを所有しており、Microsoft 365 と連携するように設定する場合。
     
-- Microsoft 365 を使用して、DNS レコードを管理したいとします。 (必要に応じ[て、自分の DNS レコードを管理](../setup/add-domain.md)することもできます)。
+- Microsoft 365 を使用して、DNS レコードを管理したいとします。 (必要に応じ [て、自分の DNS レコードを管理](../setup/add-domain.md)することもできます)。
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>確認のため TXT レコードまたは MX レコードを追加する
 <a name="BKMK_verify"> </a>
@@ -114,17 +114,19 @@ Microsoft 365 のドメインのセットアップウィザードの最後の手
   
 ドメインレジストラーの web サイトで、自分でドメインのネームサーバーを変更するには、次の手順を実行します。
   
-1. ドメイン レジストラーの Web サイトで、ドメインのネーム サーバーを編集できる場所を見つけます。
+1. ドメインレジストラーの web サイト上の領域を検索します。ここでは、ドメインのネームサーバーを変更したり、カスタムネームサーバーを使用する領域を変更したりできます。
     
-2. 2つのネームサーバーレコードを作成するか、または次の値に一致するように既存のネームサーバーレコードを編集します。
+2. ネームサーバーレコードを作成するか、または次の値と一致するように既存のネームサーバーレコードを編集します。
     
 |||
 |:-----|:-----|
 |1 番目のネーム サーバー  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |2 番目のネーム サーバー  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|3 番目のネームサーバー  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|4 番目のネームサーバー  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > 少なくとも2つのネームサーバーレコードを使用する必要があります。 他のネームサーバーが表示されている場合は、それらを削除するか、 **ns3.bdm.microsoftonline.com**および**ns4.bdm.microsoftonline.com**に変更することができます。 
+   > 4つすべてのレコードを追加することをお勧めしますが、レジストラーで2つだけをサポートする場合は、 **ns1.bdm.microsoftonline.com** と **ns2.bdm.microsoftonline.com**を追加します。 
   
 3. 変更内容を保存します。
     
@@ -145,7 +147,7 @@ Microsoft 365 のドメインのセットアップウィザードの最後の手
 |2 番目のネーム サーバー  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > 少なくとも2つのネームサーバーレコードを使用する必要があります。 他のネームサーバーが表示されている場合は、それらを削除するか、 **ns3.dns.partner.microsoftonline.cn**および**ns4.dns.partner.microsoftonline.cn**に変更することができます。 
+   > 少なくとも2つのネームサーバーレコードを使用する必要があります。 他のネームサーバーが表示されている場合は、それらを削除するか、 **ns3.dns.partner.microsoftonline.cn** および **ns4.dns.partner.microsoftonline.cn**に変更することができます。 
   
 3. 変更内容を保存します。
     
@@ -162,9 +164,9 @@ Microsoft 365 のドメインのセットアップウィザードの最後の手
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
-2. [**ドメイン**] ページで、ドメインを選択し、[ **DNS レコード**] を選択します。
+2. [ **ドメイン** ] ページで、ドメインを選択し、[ **DNS レコード**] を選択します。
 
-3. [ **DNS 設定**] で [**カスタムレコード**] を選択し、[**新しいカスタムレコード**] を選択します。
+3. [ **DNS 設定**] で [ **カスタムレコード**] を選択し、[ **新しいカスタムレコード**] を選択します。
 
 4. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
 
