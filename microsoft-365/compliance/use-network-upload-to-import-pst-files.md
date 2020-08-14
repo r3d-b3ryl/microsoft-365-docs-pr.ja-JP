@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127334"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641632"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -117,12 +117,12 @@ ms.locfileid: "45127334"
     
     ![[データのインポート] ページで SAS URL をコピーして AzCopy ツールをダウンロードする](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
-    a. 手順 2 で、[**ネットワーク アップロード SAS URL を表示する**] をクリックします。 SAS URL が表示されたら、[**クリップボードにコピー**] をクリックしてから、ファイルに貼り付けて保存し、後でアクセスできるようにします。
+    1. 手順 2 で、[**ネットワーク アップロード SAS URL を表示する**] をクリックします。 SAS URL が表示されたら、[**クリップボードにコピー**] をクリックしてから、ファイルに貼り付けて保存し、後でアクセスできるようにします。
     
-    b. 手順 3 では、[**Azure AzCopy ツールのダウンロード**] をクリックし、AzCopy ツールをダウンロードしてインストールします。 ポップアップ ウィンドウで、[**実行**] をクリックして、AzCopy をインストールします。 
+    1. 手順 3 では、[**Azure AzCopy ツールのダウンロード**] をクリックし、AzCopy ツールをダウンロードしてインストールします。 ポップアップ ウィンドウで、[**実行**] をクリックして、AzCopy をインストールします。 
     
-> [!NOTE]
-> [**データのインポート**] ページを開いたままにしておくか (もう一度 SAS URL をコピーする必要がある場合)、[**キャンセル**] をクリックして閉じることができます。 
+   > [!NOTE]
+   > [**データのインポート**] ページを開いたままにしておくか (もう一度 SAS URL をコピーする必要がある場合)、[**キャンセル**] をクリックして閉じることができます。 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>手順 2: Office 365 に PST ファイルをアップロードする
 
@@ -146,7 +146,7 @@ ms.locfileid: "45127334"
  
     次の表は、AzCopy.exe のパラメーターとそれに必要な値を説明したものです。 前の手順で取得した情報は、これらのパラメーターの値に使用されます。
     
-    |**パラメーター**|**Description**|**例**|
+    | パラメーター | 説明 | 例 |
     |:-----|:-----|:-----|
     | `/Source:` <br/> |Office 365 にアップロードする PST ファイルを含む組織内のソース ディレクトリを指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
     | `/Dest:` <br/> |手順 1 で取得した SAS URL を指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。<br/><br/>**注:** スクリプトまたはバッチ ファイルで SAS URL を使用している場合は、エスケープする必要がある特定の文字に注意する必要があります。 たとえば、`%` は `%%` に変更し、`&` は `^&` に変更する必要があります。<br/><br/>**ヒント:** (省略可能) PST ファイルをアップロードする Azure Storage の場所にサブフォルダーを指定できます。 SAS URL で ("ingestiondata" の後に) サブフォルダーの場所を追加してこの操作を行います。 最初の例では、サブフォルダーを指定しません。 つまり、PST は、Azure Storage の場所の (*ingestiondata* という名前の) ルートにアップロードされます。 2 つ目の例では、PST ファイルを Azure Storage の場所のルートにある (*PSTFiles* という名前の) サブフォルダーにアップロードします。  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> または  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
@@ -208,7 +208,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
 
 2. CSV ファイルを開くか、ローカル コンピューターに保存します。次の例は、完了した PST インポートのマッピング ファイル (メモ帳で開いた) を示しています。Microsoft Excel を使って CSV ファイルを編集するほうが、はるかに簡単です。
 
-    ```text
+    ```console
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -229,7 +229,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
 
  3. 次の表の情報を使って、必要な情報を含む CSV ファイルを作成します。
 
-    |**パラメーター**|**Description**|**例**|
+    | パラメーター | 説明 | 例 |
     |:-----|:-----|:-----|
     | `Workload` <br/> |データのインポート先のサービスを指定します。 ユーザー メールボックスに PST ファイルをインポートするには、`Exchange` を使用します。  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |手順 2 で PST ファイルをアップロードした Azure Storage の場所でフォルダーの場所を指定します。  <br/> 手順 2 の `/Dest:` パラメーターの SAS URL にオプションのサブフォルダー名を入れなかった場合は、CSV ファイルのこのパラメーターを空白のままにしておきます。 サブフォルダー名を入れた場合は、このパラメーターでその名前を指定します (2 つ目の例を参照)。 このパラメーターの値には、大文字と小文字の区別があります。  <br/> どちらの場合でも、`FilePath` パラメーターの値に "ingestiondata" を含め*ない*でください。  <br/><br/> **重要: **手順 2 で `/Dest:` パラメーターに SAS URL の省略可能なサブフォルダー名を含めた場合、ファイル パス名の大文字小文字はそのとき使用したものと同じである必要があります。 たとえば、手順 2 でサブフォルダー名として `PSTFiles` を使用した場合、CSV ファイル内の `FilePath` パラメーターに `pstfiles` を使用すると、PST ファイルのインポートは失敗します。 必ず、両方のインスタンスの大文字と小文字を同じにしてください。  <br/> |(空白のまま)  <br/> または  <br/>  `PSTFiles` <br/> |
@@ -306,17 +306,17 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
   
 3. 次のいずれかの操作を行います。
     
-    a.  インポートするデータをトリミングする場合は [**はい、インポートする前にフィルター処理します**] をクリックします。
+   1. インポートするデータをトリミングする場合は [**はい、インポートする前にフィルター処理します**] をクリックします。
     
-    PST ファイル内のデータをフィルター処理してインポート ジョブを開始する手順の詳細については、「[Office 365 に PST ファイルをインポートするときにデータをフィルター処理する](filter-data-when-importing-pst-files.md)」を参照してください。
+      PST ファイル内のデータをフィルター処理してインポート ジョブを開始する手順の詳細については、「[Office 365 に PST ファイルをインポートするときにデータをフィルター処理する](filter-data-when-importing-pst-files.md)」を参照してください。
     
-    または
+      または
     
-    b.  PST ファイル内のすべてのデータをインポートするには、[**いいえ、すべてのアイテムをインポートします**] をクリックして、[**次へ**] をクリックします。
+   1.  PST ファイル内のすべてのデータをインポートするには、[**いいえ、すべてのアイテムをインポートします**] をクリックして、[**次へ**] をクリックします。
     
 4. すべてのデータをインポートする場合は、[**データのインポート**] をクリックしてインポート ジョブを開始します。 
     
-    インポート ジョブのステータスが [**PST ファイルのインポート**] ページに表示されます。 ![更新アイコン](../media/O365-MDM-Policy-RefreshIcon.gif) [**更新**] をクリックして、[**ステータス**] 列に表示されるステータス情報を更新します。 インポート ジョブをクリックするとステータス フライアウト ページが表示され、インポートされている各 PST ファイルに関するステータス情報が表示されます。 
+   インポート ジョブのステータスが [**PST ファイルのインポート**] ページに表示されます。 ![更新アイコン](../media/O365-MDM-Policy-RefreshIcon.gif) [**更新**] をクリックして、[**ステータス**] 列に表示されるステータス情報を更新します。 インポート ジョブをクリックするとステータス フライアウト ページが表示され、インポートされている各 PST ファイルに関するステータス情報が表示されます。 
 
 
   
@@ -346,7 +346,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
   
 - 手順 1 で取得する Shared Access Signature (SAS) URL の例を示します。 この例には、PST ファイルをアップロードするために AzCopy.exe ツールで実行するコマンドの構文も含まれています。 パスワードや他のセキュリティ関連の情報を保護するのと同じように、SAS URL を保護する予防措置を講じる必要があります。
 
-    ```text
+    ```console
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y

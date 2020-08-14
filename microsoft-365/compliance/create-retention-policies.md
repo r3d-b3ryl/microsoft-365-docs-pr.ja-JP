@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 9974bebef9809647e7fb87f98f9d2f505baca4f3
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3a08bd67ff705b0b11b815843041b146fbef388f
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126508"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656747"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -288,31 +288,37 @@ Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブに�
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>PowerShell を使用してアイテム保持ポリシーをロックする
 
-規制要件に準拠するために [[保持ロック](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)] を使用する必要がある場合は、PowerShell を使用する必要があります。
+規制要件に準拠するために [[保持ロック](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)] を使用する必要がある場合は、PowerShell を使用する必要があります。 管理者は、保持ロックが適用された後にアイテム保持ポリシーを無効にしたり、削除したりすることができないので、この機能の有効化は、偶発的な構成を予防するものとして UI で使用することはできません。
+
+保持ロックのいかなる構成にも対応するすべてのアイテム保持ポリシー。 ただし、次のような PowerShell コマンドを使用すると、**作業負荷** パラメーターはポリシーで構成される実際の作業負荷を反映するのではなく、常に **Exchange、SharePoint、OneDriveForBusines、Skype、ModernGroup** などが表示されることがわかります。 これは表示のみの問題です。
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
-2. アイテム保持ポリシーを一覧表示し、`Get-RetentionCompliancePolicy` を実行してロックするポリシーの名前を検索します。
+2. アイテム保持ポリシーを一覧表示し、[Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy) を実行してロックするポリシーの名前を検索します。 以下に例を示します。
     
    ![PowerShell のアイテム保持ポリシーの一覧](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
-3. アイテム保持ポリシーに [保持ロック] を設定するには `Set-RetentionCompliancePolicy` を実行しますが、その際に `RestrictiveRetention` パラメーターを true に設定する必要があります。 以下に例を示します。
-
-   ```powershell
-   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-   ```
-   
-   ![PowerShell の RestrictiveRetention パラメーター](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+3. アイテム保持ポリシーに保持ロックを設定するには、アイテム保持ポリシーの名前を指定して [Set-RetentionCompliancePolicy]( ) コマンドレットを実行し、 *RestrictiveRetention* パラメーターを「true」に設定します。
     
-   そのコマンドレットを実行した後、[**すべてはい**]を選択します。
+    ```powershell
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    ```
+    
+    例:
+    
+    ![PowerShell の RestrictiveRetention パラメーター](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    
+     メッセージが表示されたら、この構成に含まれる制限事項を読んで確認し、**すべて続行** を選びます。
     
    ![PowerShell でアイテム保持ポリシーをロックすることを確認するプロンプト](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-アイテム保持ポリシーに保持ロックが設定されました。 `Get-RetentionCompliancePolicy`を実行すると、`RestrictiveRetention`パラメーターは true に設定されます。 次に例を示します。
+アイテム保持ポリシーに保持ロックが設定されました。 確認するには、`Get-RetentionCompliancePolicy` をもう一度実行しますが、アイテム保持ポリシーの名前を指定してポリシー パラメーターを表示します。
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
+
+**RestrictiveRetention** が **True** に設定されていることを確認する必要があります。 例:
 
 ![PowerShell に表示されるすべてのパラメーターを含むロックされたポリシー](../media/retention-policy-preservation-lock-locked-policy.PNG)
   

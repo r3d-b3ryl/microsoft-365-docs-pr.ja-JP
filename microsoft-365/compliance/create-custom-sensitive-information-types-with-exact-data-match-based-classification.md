@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
-ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
+ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46536322"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648752"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -66,8 +66,8 @@ EDM ベースの分類を使用すると、機密情報のデータベース内�
 
 |フェーズ  |前提条件  |
 |---------|---------|
-|[パート 1: EDM ベースの分類をセットアップする](#part-1-set-up-edm-based-classification)<br/><br/>(適宜)<br/>- [データベーススキーマを編集する](#editing-the-schema-for-edm-based-classification) <br/>- [スキーマを削除する](#removing-the-schema-for-edm-based-classification) |- 機密データへの読み取りアクセス<br/>- .xml 形式のデータベース スキーマ (例を提供)<br/>- .xml 形式のルールパッケージ (例を提供)<br/>- セキュリティ/コンプライアンス センターへの管理者権限 (PowerShell を使用) |
-|[パート 2: 機密データのインデックスを作成しアップロードする](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(適宜)<br/>[データを更新する](#refreshing-your-sensitive-information-database) |- カスタムのセキュリティ グループとユーザー アカウント<br/>- EDM アップロード エージェントを使用するコンピューターへのローカル管理者アクセス<br/>- 機密データへの読み取りアクセス<br/>- データ更新のプロセスとスケジュール|
+|[パート 1: EDM ベースの分類をセットアップする](#part-1-set-up-edm-based-classification)<br/><br/>(適宜)<br/>- [データベーススキーマを編集する](#editing-the-schema-for-edm-based-classification) <br/>- [スキーマを削除する](#removing-the-schema-for-edm-based-classification) |- 機密データへの読み取りアクセス<br/>- XML 形式のデータベース スキーマ (例を提供)<br/>- XML 形式のルール パッケージ (例を提供)<br/>- セキュリティ/コンプライアンス センターへの管理者権限 (PowerShell を使用) |
+|[パート 2: 機密データをハッシュしアップロードする](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(適宜)<br/>[データを更新する](#refreshing-your-sensitive-information-database) |- カスタムのセキュリティ グループとユーザー アカウント<br/>- EDM アップロード エージェントを使用するコンピューターへのローカル管理者アクセス<br/>- 機密データへの読み取りアクセス<br/>- データ更新のプロセスとスケジュール|
 |[パート 3: Microsoft クラウド サービスで EDM ベースの分類を使用する](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- DLP を使用する Microsoft 365 サブスクリプション<br/>- 有効化された EDM ベースの分類機能 |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>パート 1: EDM ベースの分類をセットアップする
@@ -83,14 +83,14 @@ EDM ベースの分類をセットアップおよび構成するには、機密�
 
 2. EDM ベースの分類に使用されるフィールドの名前が 1 行目に含まれるように、.csv ファイル内の機密データを構成します。 .csv ファイルには、"ssn"、"birthdate"、"firstname"、"lastname" などのフィールド名があります。 列見出しに、名前にスペースまたはアンダースコアを含めることはできませんのでご了承ください。 たとえば、 csv ファイルは *PatientRecords.csv*と呼ばれており、その列には *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN*などが含まれます。
 
-3. 機密情報のデータベースのスキーマを .xml 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を  **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。 
+3. 機密情報のデータベースのスキーマを XML 形式で定義します (次の例と同様)。 このスキーマ ファイルの名前を  **edm.xml** にして、データベースの各列に対して構文を使用する行があるように構成します。 
 
       `\<Field name="" searchable=""/\>`
 
       -  *Field name*  の値に列名を使用します。
       -  *searchable="true"*  を使用して、最大 5 つのフィールドで検索可能にします。 少なくとも 1 つのフィールドを検索可能に指定する必要があります。
 
-      たとえば、次の .xml ファイルは患者の記録のデータベースのスキーマを定義します。検索可能として指定された 5 つのフィールドは、 *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB* です。
+      たとえば、次の XML ファイルは患者の記録のデータベースのスキーマを定義します。検索可能として指定された 5 つのフィールドは、 *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB* です。
 
       (この例は、コピー、変更、使用することができます。)
 
@@ -195,7 +195,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 ### <a name="set-up-a-rule-package"></a>ルール パッケージを設定する
 
-1. 次の例のように、.xml 形式 (Unicode エンコード) でルール パッケージを作成します。 (この例は、コピー、変更、使用することができます。)
+1. 次の例のように、XML 形式 (Unicode エンコード) でルール パッケージを作成します。 (この例は、コピー、変更、使用することができます。)
 
       ルール パッケージをセットアップするときに、.csv ファイルと **edm .xml** ファイルを正しく参照してください。 この例は、コピー、変更、使用が可能です。 このサンプル xml では、EDM の機密情報の種類を作成するために、次のフィールドをカスタマイズする必要があります。
 
@@ -260,7 +260,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
 
-この時点で、EDM ベースの分類がセットアップされています。 次の手順では、機密データにインデックスを付け、インデックス付きのデータをアップロードします。
+この時点で、EDM ベースの分類がセットアップされています。 次の手順では、機密データをハッシュして、インデックス用のハッシュをアップロードします。
 
 前の手順から PatientRecords スキーマが次の 5 つのフィールドを検索可能として定義していることに注意してください:  *PatientID*、 *MRN*、 *SSN*、 *Phone*、 *DOB*。 ルール パッケージの例には、これらのフィールドが含まれ、検索可能なフィールドごとに 1 つの  *ExactMatch*  アイテムを含むデータベース スキーマ ファイル (**edm.xml**) を参照します。 次の ExactMatch アイテムを検討してください。
 
@@ -294,9 +294,9 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 > [!NOTE]
 > 追加機能を使用して EDMSchema を更新するには、10 から 60 分かかることがあります。 追加機能を使用する手順を実行する前に、更新プログラムを完了する必要があります。
 
-### <a name="part-2-index-and-upload-the-sensitive-data"></a>パート 2: 機密データのインデックスを作成しアップロードする
+### <a name="part-2-hash-and-upload-the-sensitive-data"></a>パート 2: 機密データをハッシュしアップロードする
 
-このフェーズでは、カスタムのセキュリティ グループとユーザー アカウントをセットアップし、EDM Upload Agent ツールをセットアップします。 次に、このツールを使用して機密データにインデックスを作成し、インデックス付きのデータをアップロードします。
+このフェーズでは、カスタムのセキュリティ グループとユーザー アカウントをセットアップし、EDM Upload Agent ツールをセットアップします。 次に、このツールを使用して機密データにハッシュして、インデックスが付けられるようにハッシュされたデータをアップロードします。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
@@ -319,21 +319,21 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 1. サブスクリプションに適した [EDM アップロードエージェント](#links-to-edm-upload-agent-by-subscription-type) をダウンロードしてインストールします。 既定では、インストール場所は、[ **C:\\Program Files\\Microsoft\\EdmUploadAgent**] になります。
 
-> [!TIP]
-> サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
+   > [!TIP]
+   > サポートされているコマンド パラメーターから一覧を取得するには、エージェントの引数を実行します。 たとえば、「EdmUploadAgent.exe」です。
 
-> [!NOTE]
-> EDMUploadAgent を使用して、1日に2回だけ、特定のデータストアにデータをアップロードできます。
+   > [!NOTE]
+   > EDMUploadAgent を使用して、1日に2回だけ、特定のデータストアにデータをアップロードできます。
 
 2. EDM アップロード エージェントを承認するには、管理者として Windows コマンド プロンプトを開き、次のコマンドを実行します。
 
-    `EdmUploadAgent.exe /Authorize`
+   `EdmUploadAgent.exe /Authorize`
 
 3. EDM_DataUploaders セキュリティグループに追加された、Office 365 の職場または学校のアカウントでサインインします。
 
-次の手順では、EDM アップロード エージェントを使用して機密データにインデックスを付け、インデックス付きのデータをアップロードします。
+次の手順では、EDM アップロード エージェントを使用して機密データにハッシュし、ハッシュされたデータをアップロードします。
 
-#### <a name="index-and-upload-the-sensitive-data"></a>機密データのインデックスを作成しアップロードする
+#### <a name="hash-and-upload-the-sensitive-data"></a>機密データをハッシュしアップロードする
 
 機密データ ファイル (この例では  **PatientRecords.csv**) をコンピューターのローカル ドライブに保存します。 (例の  **PatientRecords.csv**  ファイルを  **C:\\Edm\\Data** に保存しました。)
 
@@ -343,9 +343,9 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 例: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-分離された環境で機密データのインデックスを作成して実行するには、インデックスを実行し、手順を個別にアップロードします。
+分離された環境で機密データのハッシュを分離して実行するには、ハッシュを実行し、手順を個別にアップロードします。
 
-機密データにインデックスを付けるには、Windows コマンド プロンプトで次のコマンドを実行します。
+機密データをハッシュするには、Windows コマンド プロンプトで次のコマンドを実行します。
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
@@ -353,7 +353,7 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-インデックス付きのデータをアップロードするには、Windows コマンド プロンプトで次のコマンドを実行します。
+ハッシュされたデータをアップロードするには、Windows コマンド プロンプトで次のコマンドを実行します。
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
@@ -361,7 +361,9 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
-機密データがアップロードされたことを確認するには、Windows コマンド プロンプトで次のコマンドを実行します。
+
+機密データがアップロードされたことを確認するには、コマンド プロンプト ウィンドウで次のコマンドを実行します。
+
 
 `EdmUploadAgent.exe /GetDataStore`
 
@@ -377,28 +379,28 @@ EDM ベースの分類に使用するフィールドの変更など、**edm.xml*
 
 #### <a name="refreshing-your-sensitive-information-database"></a>機密情報データベースを更新する
 
-機密情報データベースは毎日または毎週更新できます。また、EDM アップロード ツールを使用して機密データのインデックスを再作成し、インデックス付きデータを再アップロードできます。
+機密情報データベースは毎日または毎週更新できます。また、EDM アップロード ツールを使用して機密データを再ハッシュしてから、ハッシュされたデータを再アップロードできます。
 
 1. 機密情報のデータベースを更新するためのプロセスと頻度 (毎日または毎週) を決定します。
 
-2. 機密情報データを Microsoft Excel などのアプリに再度エクスポートし、ファイルを .csv 形式で保存します。 「 [機密データのインデックスを作成しアップロードする](#index-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したファイル名と場所と同じものを使用してください。
+2. 機密情報データを Microsoft Excel などのアプリに再度エクスポートし、ファイルを .csv 形式で保存します。 「 [機密データをハッシュしアップロードする](#hash-and-upload-the-sensitive-data)」で説明した手順の実行時に使用したファイル名と場所と同じものを使用してください。
 
       > [!NOTE]
       > .csv ファイルの構造 (フィールド名) に変更がない場合は、データを更新する際に、データベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。
 
-3.  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) を使用して、 [機密データのインデックスを作成しアップロードする](#index-and-upload-the-sensitive-data)  手順の、手順 2 と 3 を自動化します。 タスクのスケジュールを設定するにはいくつかの方法があります。
+3.  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) を使用して、 [機密データをハッシュしアップロードする](#hash-and-upload-the-sensitive-data)  手順の、手順 2 と 3 を自動化します。 タスクのスケジュールを設定するにはいくつかの方法があります。
 
-      | **方法**             | **操作**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-      | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      | メソッド             | 操作 |
+      | ---------------------- | ---------------- |
       | Windows PowerShell     |  [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) のドキュメントと、この記事の  [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler) を参照してください。 |
       | タスク スケジューラ API     |  [タスク スケジューラ](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) ドキュメントを参照してください                                                                                                                                                                                                                                                                                |
       | Windows のユーザー インターフェイス | Windows の場合、 **[スタート]** をクリックし、「タスクスケジューラ」と入力します。 次に、結果のリストで  **[タスク スケジューラ]** を右クリックし、 **[管理者として実行]** を選択します。                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>タスク スケジューラの PowerShell スクリプトの例
 
-このセクションには、データのインデックスを作成したり、インデックス付きのデータをアップロードするタスクのスケジュールに使用できる PowerShell スクリプトの例が含まれています。
+このセクションには、データをハッシュしたり、ハッシュされたデータをアップロードするタスクのスケジュールに使用できる PowerShell スクリプトの例が含まれています。
 
-##### <a name="to-schedule-index-and-upload-in-a-combined-step"></a>インデックスのスケジュールを設定して、結合されたステップでアップロードするには
+##### <a name="to-schedule-hashing-and-upload-in-a-combined-step"></a>ハッシュのスケジュールを設定して、結合されたステップでアップロードするには
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -430,7 +432,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="to-schedule-index-and-upload-as-separate-steps"></a>インデックスのスケジュールを設定して、個別のステップでアップロードするには
+#### <a name="to-schedule-hashing-and-upload-as-separate-steps"></a>ハッシュのスケジュールを設定して、結合されたステップでアップロードするには
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -525,4 +527,4 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [DLP ポリシーの概要](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-- [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+
