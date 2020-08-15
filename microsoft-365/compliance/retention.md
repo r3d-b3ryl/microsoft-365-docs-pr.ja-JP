@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662311"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757570"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -58,7 +58,7 @@ ms.locfileid: "46662311"
 
 - Exchange メールボックスの場合: コピーは、**[回復可能なアイテム]** フォルダーに保持されます。 
 
-- Teams のチャネルおよびチャット メッセージの場合: コピーは、Exchange の **[回復可能なアイテム]** フォルダー内の隠しフォルダーに保持されます。
+- Teams のチャネルおよびチャット メッセージの場合: **SubstrateHolds**という名前の隠しフォルダーに Exchange**回復可能アイテム**フォルダー内のサブフォルダーとして保存されます。
 
 > [!NOTE]
 > アイテム保管ライブラリは、サイトのストレージ クォータから除外されていないストレージを消費します。 SharePoint グループや Microsoft 365 グループに対して保持設定を使用する場合は、ストレージを増やすことが必要な場合があります。

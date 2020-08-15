@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 8599774994ccabce716c1366c0ffc6e1773626e9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577975"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685809"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -66,7 +66,7 @@ Teams のチャットとチャネル メッセージは、ユーザーまたは�
 
 1. 保持期間中に**メッセージが削除されない場合**、保持期間の終了時にメッセージは SubstrateHolds フォルダーに移動されます。 
 
-2. 期間中にユーザーがアイテムを**削除した場合**、アイテムはすぐに SubstrateHolds フォルダーに移動されます。 ユーザーが SubstrateHolds フォルダーからメッセージを削除するかフォルダーを空にすると、そのアイテムは完全に削除されます。 それ以外の場合、メッセージは SubstrateHolds フォルダーに移動した 1 日後に完全に削除されます。
+2. 期間中にユーザーがアイテムを**削除した場合**、アイテムはすぐに SubstrateHolds フォルダーに移動されます。 メッセージは SubstrateHolds フォルダーに移動した 1 日後に完全に削除されます。
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business および Teams の相互運用チャット

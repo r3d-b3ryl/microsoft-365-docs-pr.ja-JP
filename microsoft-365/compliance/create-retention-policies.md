@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 3bec74c1043e2ecfd632144647945f441433dcb2
-ms.sourcegitcommit: 12e19f9cc319f25ab9dd3b0f77ad17e227d7f0be
+ms.openlocfilehash: 4eb08eed668efb598068a7229b9312ccb6654274
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46672912"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757580"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -150,7 +150,7 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 
 Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、**Office 365 グループ**の場所を使用する必要があります。 Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール**の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 また、最初は **Exchange メール**の場所でグループ メールボックスを含めるか除外するかを指定できますが、アイテム保持ポリシーを保存しようとすると、Exchange の場所では「RemoteGroupMailbox」を選択できないことを示すエラーを受け取ります。
 
-Microsoft 365 グループに適用されるアイテム保持ポリシーには、グループ メールボックスおよびサイトの両方が含まれます。 Microsoft 365 グループに適用されるアイテム保持ポリシーは、Microsoft Teams を含む Microsoft 365 グループによって作成されたリソースを保護します。
+もし、teamsサイトがグループ作成時に選択されたか、後でグループに追加された場合は、Microsoft 365グループに適用される保持ポリシーにはグループメールボックスとteamsのサイトも含まれます。 teamsサイトに保存されているファイルは、この場所に含まれますが、独自のアイテム保持ポリシーの場所を持つTeamsのチャットまたはTeamsチャネルメッセージは含まれません。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business の構成情報
 

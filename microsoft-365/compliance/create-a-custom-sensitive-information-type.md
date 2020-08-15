@@ -17,21 +17,38 @@ search.appverid:
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f702582a0e2c53b0846cd0586295d9bbea657e3c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818066"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686661"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
 
-セキュリティ/コンプライアンス センターで[カスタムの機密情報の種類](custom-sensitive-info-types.md)を作成するために、この記事をお読みください(「[https://protection.office.com](https://protection.office.com)」)。 この方法を使用して作成されるカスタムの機密情報の種類は、`Microsoft.SCCManaged.CustomRulePack`という名前のルール パッケージに追加されます。
+セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成するために、この記事をお読みください([https://protection.office.com](https://protection.office.com))。 この方法を使用して作成されるカスタムの機密情報の種類は、`Microsoft.SCCManaged.CustomRulePack`という名前のルール パッケージに追加されます。
 
 PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。 これらの方法の詳細については、次を参照してください。
 - [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Exact Data Match (EMD) を使用して、DPL 向けのカスタムの機密情報の種類を作成する](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+
+> [!NOTE]
+> Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
+> - 中国語（簡体字）
+> - 中国語 (繁体字)
+> - 韓国語
+> - 日本語
+> 
+>このプレビューは、商用クラウドにのみ表示されます。ロールアウトは以下に限られます：
+> - 日本
+> - 韓国
+> - 中国
+> - 香港
+> - マカオ
+> - 台湾
+>
+>このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
 
 ## <a name="before-you-begin"></a>はじめに
 

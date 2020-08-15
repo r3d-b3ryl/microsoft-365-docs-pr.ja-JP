@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 699cea6aec6f11462aed0c08db98ca4620df519a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648752"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686561"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する
 
@@ -40,6 +40,23 @@ ms.locfileid: "46648752"
 ![EDM ベースの分類](../media/EDMClassification.png)
 
 EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日、または毎週更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、 [データ損失防止ポリシー](data-loss-prevention-policies.md) (DLP) や [Microsoft Cloud App Security ファイル ポリシー](https://docs.microsoft.com/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
+
+> [!NOTE]
+> Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
+> - 中国語（簡体字）
+> - 中国語 (繁体字)
+> - 韓国語
+> - 日本語
+> 
+>このプレビューは、商用クラウドにのみ表示されます。ロールアウトは以下に限られます：
+> - 日本
+> - 韓国
+> - 中国
+> - 香港
+> - マカオ
+> - 台湾
+>
+>このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
