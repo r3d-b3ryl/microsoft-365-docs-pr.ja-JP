@@ -17,165 +17,182 @@ search.appverid:
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f702582a0e2c53b0846cd0586295d9bbea657e3c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818066"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686661"
 ---
 <!-- rename md file to match the display name -->
-# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a><span data-ttu-id="e69df-103">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="e69df-103">Create a custom sensitive information type in the Security & Compliance Center</span></span>
+# <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a><span data-ttu-id="90a68-103">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="90a68-103">Create a custom sensitive information type in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="e69df-104">セキュリティ/コンプライアンス センターで[カスタムの機密情報の種類](custom-sensitive-info-types.md)を作成するために、この記事をお読みください(「[https://protection.office.com](https://protection.office.com)」)。</span><span class="sxs-lookup"><span data-stu-id="e69df-104">Read this article to create a [custom sensitive information type](custom-sensitive-info-types.md) in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)).</span></span> <span data-ttu-id="e69df-105">この方法を使用して作成されるカスタムの機密情報の種類は、`Microsoft.SCCManaged.CustomRulePack`という名前のルール パッケージに追加されます。</span><span class="sxs-lookup"><span data-stu-id="e69df-105">The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.</span></span>
+<span data-ttu-id="90a68-104">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成するために、この記事をお読みください([https://protection.office.com](https://protection.office.com))。</span><span class="sxs-lookup"><span data-stu-id="90a68-104">Read this article to create a custom sensitive information type in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)).</span></span> <span data-ttu-id="90a68-105">この方法を使用して作成されるカスタムの機密情報の種類は、`Microsoft.SCCManaged.CustomRulePack`という名前のルール パッケージに追加されます。</span><span class="sxs-lookup"><span data-stu-id="90a68-105">The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.</span></span>
 
-<span data-ttu-id="e69df-106">PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="e69df-106">You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities.</span></span> <span data-ttu-id="e69df-107">これらの方法の詳細については、次を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-107">To learn more about those methods, see:</span></span>
-- [<span data-ttu-id="e69df-108">セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="e69df-108">Create a custom sensitive information type in Security & Compliance Center PowerShell</span></span>](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [<span data-ttu-id="e69df-109">Exact Data Match (EMD) を使用して、DPL 向けのカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="e69df-109">Create a custom sensitive information type for DLP with Exact Data Match (EDM)</span></span>](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
-
-## <a name="before-you-begin"></a><span data-ttu-id="e69df-110">はじめに</span><span class="sxs-lookup"><span data-stu-id="e69df-110">Before you begin</span></span>
+<span data-ttu-id="90a68-106">PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。</span><span class="sxs-lookup"><span data-stu-id="90a68-106">You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities.</span></span> <span data-ttu-id="90a68-107">これらの方法の詳細については、次を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-107">To learn more about those methods, see:</span></span>
+- [<span data-ttu-id="90a68-108">セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="90a68-108">Create a custom sensitive information type in Security & Compliance Center PowerShell</span></span>](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [<span data-ttu-id="90a68-109">Exact Data Match (EMD) を使用して、DPL 向けのカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="90a68-109">Create a custom sensitive information type for DLP with Exact Data Match (EDM)</span></span>](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 > [!NOTE]
-> <span data-ttu-id="e69df-111">UI を使用してカスタムの機密情報の種類を作成、テスト、展開するには、グローバル管理者またはコンプライアンス管理者のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="e69df-111">You should have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI.</span></span> <span data-ttu-id="e69df-112">Office 365 で「[管理者ロールについて](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-112">See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.</span></span>
+> <span data-ttu-id="90a68-110">Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。</span><span class="sxs-lookup"><span data-stu-id="90a68-110">Microsoft 365 Information Protection now  supports in preview double byte character set languages for:</span></span>
+> - <span data-ttu-id="90a68-111">中国語（簡体字）</span><span class="sxs-lookup"><span data-stu-id="90a68-111">Chinese (simplified)</span></span>
+> - <span data-ttu-id="90a68-112">中国語 (繁体字)</span><span class="sxs-lookup"><span data-stu-id="90a68-112">Chinese (traditional)</span></span>
+> - <span data-ttu-id="90a68-113">韓国語</span><span class="sxs-lookup"><span data-stu-id="90a68-113">Korean</span></span>
+> - <span data-ttu-id="90a68-114">日本語</span><span class="sxs-lookup"><span data-stu-id="90a68-114">Japanese</span></span>
+> 
+><span data-ttu-id="90a68-115">このプレビューは、商用クラウドにのみ表示されます。ロールアウトは以下に限られます：</span><span class="sxs-lookup"><span data-stu-id="90a68-115">This preview is only in the commercial cloud and the rollout is limited to:</span></span>
+> - <span data-ttu-id="90a68-116">日本</span><span class="sxs-lookup"><span data-stu-id="90a68-116">Japan</span></span>
+> - <span data-ttu-id="90a68-117">韓国</span><span class="sxs-lookup"><span data-stu-id="90a68-117">Korea</span></span>
+> - <span data-ttu-id="90a68-118">中国</span><span class="sxs-lookup"><span data-stu-id="90a68-118">China</span></span>
+> - <span data-ttu-id="90a68-119">香港</span><span class="sxs-lookup"><span data-stu-id="90a68-119">Hong Kong</span></span>
+> - <span data-ttu-id="90a68-120">マカオ</span><span class="sxs-lookup"><span data-stu-id="90a68-120">Macau</span></span>
+> - <span data-ttu-id="90a68-121">台湾</span><span class="sxs-lookup"><span data-stu-id="90a68-121">Taiwan</span></span>
+>
+><span data-ttu-id="90a68-122">このサポートは、機密情報の種類で使用できます。</span><span class="sxs-lookup"><span data-stu-id="90a68-122">This support is available for sensitive information types.</span></span> <span data-ttu-id="90a68-123">詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-123">See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.</span></span>
 
-- <span data-ttu-id="e69df-113">組織には、データ損失防止 (DLP) を含む Office 365 Enterprise などのサブスクリプションが必要です。</span><span class="sxs-lookup"><span data-stu-id="e69df-113">Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP).</span></span> <span data-ttu-id="e69df-114">[メッセージング ポリシーとコンプライアンス サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-114">See [Messaging Policy and Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).</span></span> 
+## <a name="before-you-begin"></a><span data-ttu-id="90a68-124">はじめに</span><span class="sxs-lookup"><span data-stu-id="90a68-124">Before you begin</span></span>
 
-- <span data-ttu-id="e69df-p105">カスタムの機密情報の種類では、正規表現 (RegEx) に精通している必要があります。テキストの処理に使用される Boost.RegEx (旧称 RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-p105">Custom sensitive information types require familiarity with regular expressions (RegEx). For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).</span></span>
+> [!NOTE]
+> <span data-ttu-id="90a68-125">UI を使用してカスタムの機密情報の種類を作成、テスト、展開するには、グローバル管理者またはコンプライアンス管理者のアクセス許可が必要です。</span><span class="sxs-lookup"><span data-stu-id="90a68-125">You should have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI.</span></span> <span data-ttu-id="90a68-126">Office 365 で「[管理者ロールについて](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-126">See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.</span></span>
 
-  <span data-ttu-id="e69df-117">Microsoft カスタマー サービス/サポートでは、カスタム分類または正規表現パターンの作成をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="e69df-117">Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns.</span></span> <span data-ttu-id="e69df-118">サポート エンジニアは、たとえば、テスト目的のサンプルの正規表現パターンを提供したり、期待通りにトリガーされない既存の正規表現パターンのトラブルシューティングをサポートしたりなど、機能に対する限定的なサポートを提供しますが、カスタムのコンテンツ一致の開発でユーザーの要件を満たしたり、義務を果たしたりすることを確約するわけではありません。</span><span class="sxs-lookup"><span data-stu-id="e69df-118">Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.</span></span>
+- <span data-ttu-id="90a68-127">組織には、データ損失防止 (DLP) を含む Office 365 Enterprise などのサブスクリプションが必要です。</span><span class="sxs-lookup"><span data-stu-id="90a68-127">Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP).</span></span> <span data-ttu-id="90a68-128">[メッセージング ポリシーとコンプライアンス サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-128">See [Messaging Policy and Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc).</span></span> 
 
-- <span data-ttu-id="e69df-119">DLP では、検索クローラーを使用して、SharePoint Online および OneDrive for Business のサイトの機密情報を特定して分類します。</span><span class="sxs-lookup"><span data-stu-id="e69df-119">DLP uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites.</span></span> <span data-ttu-id="e69df-120">既存のコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="e69df-120">To identify your new custom sensitive information type in existing content, the content must be re-crawled.</span></span> <span data-ttu-id="e69df-121">コンテンツは、スケジュールに基づいてクロールされますが、サイト コレクション、リスト、またはライブラリのコンテンツを手動で再クロールすることができます。</span><span class="sxs-lookup"><span data-stu-id="e69df-121">Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library.</span></span> <span data-ttu-id="e69df-122">詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](https://docs.microsoft.com/sharepoint/crawl-site-content)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-122">For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).</span></span>
+- <span data-ttu-id="90a68-p106">カスタムの機密情報の種類では、正規表現 (RegEx) に精通している必要があります。テキストの処理に使用される Boost.RegEx (旧称 RegEx++) エンジンの詳細については、「[Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-p106">Custom sensitive information types require familiarity with regular expressions (RegEx). For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).</span></span>
 
-## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="e69df-123">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="e69df-123">Create custom sensitive information types in the Security & Compliance Center</span></span>
+  <span data-ttu-id="90a68-131">Microsoft カスタマー サービス/サポートでは、カスタム分類または正規表現パターンの作成をサポートしていません。</span><span class="sxs-lookup"><span data-stu-id="90a68-131">Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns.</span></span> <span data-ttu-id="90a68-132">サポート エンジニアは、たとえば、テスト目的のサンプルの正規表現パターンを提供したり、期待通りにトリガーされない既存の正規表現パターンのトラブルシューティングをサポートしたりなど、機能に対する限定的なサポートを提供しますが、カスタムのコンテンツ一致の開発でユーザーの要件を満たしたり、義務を果たしたりすることを確約するわけではありません。</span><span class="sxs-lookup"><span data-stu-id="90a68-132">Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.</span></span>
 
-<span data-ttu-id="e69df-124">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して **[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-124">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.</span></span>
+- <span data-ttu-id="90a68-133">DLP では、検索クローラーを使用して、SharePoint Online および OneDrive for Business のサイトの機密情報を特定して分類します。</span><span class="sxs-lookup"><span data-stu-id="90a68-133">DLP uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites.</span></span> <span data-ttu-id="90a68-134">既存のコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。</span><span class="sxs-lookup"><span data-stu-id="90a68-134">To identify your new custom sensitive information type in existing content, the content must be re-crawled.</span></span> <span data-ttu-id="90a68-135">コンテンツは、スケジュールに基づいてクロールされますが、サイト コレクション、リスト、またはライブラリのコンテンツを手動で再クロールすることができます。</span><span class="sxs-lookup"><span data-stu-id="90a68-135">Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library.</span></span> <span data-ttu-id="90a68-136">詳細については、「[サイト、ライブラリ、またはリストのクロールおよび再インデックスの手動要求](https://docs.microsoft.com/sharepoint/crawl-site-content)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-136">For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).</span></span>
 
-<span data-ttu-id="e69df-125">各設定については説明するまでもありませんが、ウィザードの関連ページには説明が記載されています。</span><span class="sxs-lookup"><span data-stu-id="e69df-125">The settings are fairly self-evident, and are explained on the associate page of the wizard:</span></span>
+## <a name="create-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="90a68-137">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する</span><span class="sxs-lookup"><span data-stu-id="90a68-137">Create custom sensitive information types in the Security & Compliance Center</span></span>
 
-- <span data-ttu-id="e69df-126">**[名前]**</span><span class="sxs-lookup"><span data-stu-id="e69df-126">**Name**</span></span>
+<span data-ttu-id="90a68-138">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して **[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-138">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.</span></span>
 
-- <span data-ttu-id="e69df-127">**[説明]**</span><span class="sxs-lookup"><span data-stu-id="e69df-127">**Description**</span></span>
+<span data-ttu-id="90a68-139">各設定については説明するまでもありませんが、ウィザードの関連ページには説明が記載されています。</span><span class="sxs-lookup"><span data-stu-id="90a68-139">The settings are fairly self-evident, and are explained on the associate page of the wizard:</span></span>
 
-- <span data-ttu-id="e69df-128">**[近接性]**</span><span class="sxs-lookup"><span data-stu-id="e69df-128">**Proximity**</span></span>
+- <span data-ttu-id="90a68-140">**[名前]**</span><span class="sxs-lookup"><span data-stu-id="90a68-140">**Name**</span></span>
 
-- <span data-ttu-id="e69df-129">**[信頼度]**</span><span class="sxs-lookup"><span data-stu-id="e69df-129">**Confidence level**</span></span>
+- <span data-ttu-id="90a68-141">**[説明]**</span><span class="sxs-lookup"><span data-stu-id="90a68-141">**Description**</span></span>
 
-- <span data-ttu-id="e69df-130">**[プライマリ パターン要素]** (キーワード、正規表現、またはディクショナリ)</span><span class="sxs-lookup"><span data-stu-id="e69df-130">**Primary pattern element** (keywords, regular expression, or dictionary)</span></span>
+- <span data-ttu-id="90a68-142">**[近接性]**</span><span class="sxs-lookup"><span data-stu-id="90a68-142">**Proximity**</span></span>
 
-- <span data-ttu-id="e69df-131">オプションの **[補強パターン要素]** (キーワード、正規表現、またはディクショナリ) および対応する **[最小コスト]** 値。</span><span class="sxs-lookup"><span data-stu-id="e69df-131">Optional **Supporting pattern elements** (keywords, regular expression, or dictionary) and a corresponding **Minimum cost** value.</span></span>
+- <span data-ttu-id="90a68-143">**[信頼度]**</span><span class="sxs-lookup"><span data-stu-id="90a68-143">**Confidence level**</span></span>
 
-<span data-ttu-id="e69df-p108">この例のシナリオ: キーワードの「従業員」、「ID」および「社員証」と共に、コンテンツに含まれる 9 桁の従業員番号を検出するために、カスタムの機密情報の種類が必要になりました。このカスタムの機密情報の種類を作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="e69df-p108">Here's a scenario: You want a custom sensitive information type that detects 9-digit employee numbers in content, along with the keywords "employee" "ID" and "badge". To create this custom sensitive information type, do the following steps:</span></span>
+- <span data-ttu-id="90a68-144">**[プライマリ パターン要素]** (キーワード、正規表現、またはディクショナリ)</span><span class="sxs-lookup"><span data-stu-id="90a68-144">**Primary pattern element** (keywords, regular expression, or dictionary)</span></span>
 
-1. <span data-ttu-id="e69df-134">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して **[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-134">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.</span></span>
+- <span data-ttu-id="90a68-145">オプションの **[補強パターン要素]** (キーワード、正規表現、またはディクショナリ) および対応する **[最小コスト]** 値。</span><span class="sxs-lookup"><span data-stu-id="90a68-145">Optional **Supporting pattern elements** (keywords, regular expression, or dictionary) and a corresponding **Minimum cost** value.</span></span>
+
+<span data-ttu-id="90a68-p109">この例のシナリオ: キーワードの「従業員」、「ID」および「社員証」と共に、コンテンツに含まれる 9 桁の従業員番号を検出するために、カスタムの機密情報の種類が必要になりました。このカスタムの機密情報の種類を作成するには、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="90a68-p109">Here's a scenario: You want a custom sensitive information type that detects 9-digit employee numbers in content, along with the keywords "employee" "ID" and "badge". To create this custom sensitive information type, do the following steps:</span></span>
+
+1. <span data-ttu-id="90a68-148">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して **[作成]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-148">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.</span></span>
 
     ![機密情報の種類と [作成] ボタンの場所](../media/scc-cust-sens-info-type-new.png)
 
-2. <span data-ttu-id="e69df-136">**[名前と説明の選択]** ページが開いたら、次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="e69df-136">In the **Choose a name and description** page that opens, enter the following values:</span></span>
+2. <span data-ttu-id="90a68-150">**[名前と説明の選択]** ページが開いたら、次の値を入力します。</span><span class="sxs-lookup"><span data-stu-id="90a68-150">In the **Choose a name and description** page that opens, enter the following values:</span></span>
 
-  - <span data-ttu-id="e69df-137">**[名前]**: 従業員 ID。</span><span class="sxs-lookup"><span data-stu-id="e69df-137">**Name**: Employee ID.</span></span>
+  - <span data-ttu-id="90a68-151">**[名前]**: 従業員 ID。</span><span class="sxs-lookup"><span data-stu-id="90a68-151">**Name**: Employee ID.</span></span>
 
-  - <span data-ttu-id="e69df-138">**[説明]**: 9 桁の Contoso 従業員 ID 番号を検出します。</span><span class="sxs-lookup"><span data-stu-id="e69df-138">**Description**: Detect nine-digit Contoso employee ID numbers.</span></span>
+  - <span data-ttu-id="90a68-152">**[説明]**: 9 桁の Contoso 従業員 ID 番号を検出します。</span><span class="sxs-lookup"><span data-stu-id="90a68-152">**Description**: Detect nine-digit Contoso employee ID numbers.</span></span>
 
     ![名前と説明のページ](../media/scc-cust-sens-info-type-new-name-desc.png)
 
-    <span data-ttu-id="e69df-140">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-140">When you're finished, click **Next**.</span></span>
+    <span data-ttu-id="90a68-154">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-154">When you're finished, click **Next**.</span></span>
 
-3. <span data-ttu-id="e69df-141">**[一致の要件]** ページが開いたら、**[要素の追加]** をクリックして、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="e69df-141">In the **Requirements for matching** page that opens, click **Add an element** configure the following settings:</span></span>
+3. <span data-ttu-id="90a68-155">**[一致の要件]** ページが開いたら、**[要素の追加]** をクリックして、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="90a68-155">In the **Requirements for matching** page that opens, click **Add an element** configure the following settings:</span></span>
 
-    - <span data-ttu-id="e69df-142">**次を含むコンテンツを検出する**:</span><span class="sxs-lookup"><span data-stu-id="e69df-142">**Detect content containing**:</span></span>
+    - <span data-ttu-id="90a68-156">**次を含むコンテンツを検出する**:</span><span class="sxs-lookup"><span data-stu-id="90a68-156">**Detect content containing**:</span></span>
  
-      <span data-ttu-id="e69df-p109">a. **[これらのいずれか]** をクリックして、**[正規表現]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e69df-p109">a. Click **Any of these** and select **Regular expression**.</span></span>
+      <span data-ttu-id="90a68-p110">a. **[これらのいずれか]** をクリックして、**[正規表現]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="90a68-p110">a. Click **Any of these** and select **Regular expression**.</span></span>
 
-      <span data-ttu-id="e69df-p110">b. 正規表現ボックスに、`(\s)(\d{9})(\s)` (空白文字で囲まれた 9 桁の数字) を入力します。</span><span class="sxs-lookup"><span data-stu-id="e69df-p110">b. In the regular expression box, enter `(\s)(\d{9})(\s)` (nine-digit numbers surrounded by white space).</span></span>
+      <span data-ttu-id="90a68-p111">b. 正規表現ボックスに、`(\s)(\d{9})(\s)` (空白文字で囲まれた 9 桁の数字) を入力します。</span><span class="sxs-lookup"><span data-stu-id="90a68-p111">b. In the regular expression box, enter `(\s)(\d{9})(\s)` (nine-digit numbers surrounded by white space).</span></span>
   
-    - <span data-ttu-id="e69df-147">**[補強要素]**: **[補強要素の追加]** をクリックして、**[このキーワード リストを含める]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e69df-147">**Supporting elements**: Click **Add supporting elements** and select **Contains this keyword list**.</span></span>
+    - <span data-ttu-id="90a68-161">**[補強要素]**: **[補強要素の追加]** をクリックして、**[このキーワード リストを含める]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="90a68-161">**Supporting elements**: Click **Add supporting elements** and select **Contains this keyword list**.</span></span>
 
-    - <span data-ttu-id="e69df-148">**[このキーワード リストを含める]** 領域が表示されたら、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="e69df-148">In the **Contains this keyword list** area that appears, configure the following settings:</span></span>
+    - <span data-ttu-id="90a68-162">**[このキーワード リストを含める]** 領域が表示されたら、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="90a68-162">In the **Contains this keyword list** area that appears, configure the following settings:</span></span>
 
-      - <span data-ttu-id="e69df-149">**[キーワード リスト]**: 次の値を入力します: 従業員、ID、社員証。</span><span class="sxs-lookup"><span data-stu-id="e69df-149">**Keyword list**: Enter the following value: employee,ID,badge.</span></span>
+      - <span data-ttu-id="90a68-163">**[キーワード リスト]**: 次の値を入力します: 従業員、ID、社員証。</span><span class="sxs-lookup"><span data-stu-id="90a68-163">**Keyword list**: Enter the following value: employee,ID,badge.</span></span>
 
-      - <span data-ttu-id="e69df-150">**[最低数]**: 既定値 1 のままにします。</span><span class="sxs-lookup"><span data-stu-id="e69df-150">**Minimum count**: Leave the default value 1.</span></span>
+      - <span data-ttu-id="90a68-164">**[最低数]**: 既定値 1 のままにします。</span><span class="sxs-lookup"><span data-stu-id="90a68-164">**Minimum count**: Leave the default value 1.</span></span>
 
-    - <span data-ttu-id="e69df-151">既定の **[信頼度]** 値 60 のままにします。</span><span class="sxs-lookup"><span data-stu-id="e69df-151">Leave the default **Confidence level** value 60.</span></span> 
+    - <span data-ttu-id="90a68-165">既定の **[信頼度]** 値 60 のままにします。</span><span class="sxs-lookup"><span data-stu-id="90a68-165">Leave the default **Confidence level** value 60.</span></span> 
 
-    - <span data-ttu-id="e69df-152">既定の **[文字の近接]** 値 300 のままにします。</span><span class="sxs-lookup"><span data-stu-id="e69df-152">Leave the default **Character proximity** value 300.</span></span>
+    - <span data-ttu-id="90a68-166">既定の **[文字の近接]** 値 300 のままにします。</span><span class="sxs-lookup"><span data-stu-id="90a68-166">Leave the default **Character proximity** value 300.</span></span>
 
     ![[一致の要件] ページ](../media/scc-cust-sens-info-type-new-reqs.png)
 
-    <span data-ttu-id="e69df-154">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-154">When you're finished, click **Next**.</span></span>
+    <span data-ttu-id="90a68-168">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-168">When you're finished, click **Next**.</span></span>
 
-4. <span data-ttu-id="e69df-155">**[確認と最終処理]** ページが開いたら、設定を確認して **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-155">On the **Review and finalize** page that opens, review the settings and click **Finish**.</span></span>
+4. <span data-ttu-id="90a68-169">**[確認と最終処理]** ページが開いたら、設定を確認して **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-169">On the **Review and finalize** page that opens, review the settings and click **Finish**.</span></span>
 
     ![[確認と最終処理] ページ](../media/scc-cust-sens-info-type-new-review.png)
 
-5. <span data-ttu-id="e69df-p111">次のページでは、[**はい**] をクリックして新しいカスタムの機密情報の種類をテストするように促されます。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする](#test-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。ルールのテストを後で行うには、[**いいえ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-p111">The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.</span></span>
+5. <span data-ttu-id="90a68-p112">次のページでは、[**はい**] をクリックして新しいカスタムの機密情報の種類をテストするように促されます。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする](#test-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。ルールのテストを後で行うには、[**いいえ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-p112">The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.</span></span>
 
     ![推奨をテストするページ](../media/scc-cust-sens-info-type-new-test.png)
 
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="e69df-161">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="e69df-161">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="90a68-175">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="90a68-175">How do you know this worked?</span></span>
 
-<span data-ttu-id="e69df-162">新しい機密情報の種類が正常に作成されたことを確認するには、次に示す手順のいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="e69df-162">To verify that you've successfully created a new sensitive information type, do any of the following steps:</span></span>
+<span data-ttu-id="90a68-176">新しい機密情報の種類が正常に作成されたことを確認するには、次に示す手順のいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="90a68-176">To verify that you've successfully created a new sensitive information type, do any of the following steps:</span></span>
 
-  - <span data-ttu-id="e69df-163">**[分類]** \> **[機密情報の種類]** に移動して、新しいカスタムの機密情報の種類が一覧に表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="e69df-163">Go to **Classifications** \> **Sensitive info types** and verify the new custom sensitive information type is listed.</span></span>
+  - <span data-ttu-id="90a68-177">**[分類]** \> **[機密情報の種類]** に移動して、新しいカスタムの機密情報の種類が一覧に表示されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="90a68-177">Go to **Classifications** \> **Sensitive info types** and verify the new custom sensitive information type is listed.</span></span>
 
-  - <span data-ttu-id="e69df-p112">新しいカスタムの機密情報の種類をテストします。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする](#test-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-p112">Test the new custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
+  - <span data-ttu-id="90a68-p113">新しいカスタムの機密情報の種類をテストします。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする](#test-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-p113">Test the new custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
 
-## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="e69df-166">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を変更する</span><span class="sxs-lookup"><span data-stu-id="e69df-166">Modify custom sensitive information types in the Security & Compliance Center</span></span>
+## <a name="modify-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="90a68-180">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を変更する</span><span class="sxs-lookup"><span data-stu-id="90a68-180">Modify custom sensitive information types in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="e69df-167">**注**:</span><span class="sxs-lookup"><span data-stu-id="e69df-167">**Notes**:</span></span>
+<span data-ttu-id="90a68-181">**注**:</span><span class="sxs-lookup"><span data-stu-id="90a68-181">**Notes**:</span></span>
 <!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type customize-a-built-in-sensitive-information-type it sure seems like it does-->
-- <span data-ttu-id="e69df-p113">カスタムの機密情報の種類のみを変更できます。組み込みの機密情報の種類は変更できません。ただし、PowerShell を使用して組み込みの機密情報の種類をエクスポートし、エクスポートしたものをカスタムの機密情報の種類としてインポートすることができます。詳細については、「[組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-p113">You can only modify custom sensitive information types; you can't modify built-in sensitive information types. But you can use PowerShell to export built-in custom sensitive information types, customize them, and import them as custom sensitive information types. For more information, see [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).</span></span>
+- <span data-ttu-id="90a68-p114">カスタムの機密情報の種類のみを変更できます。組み込みの機密情報の種類は変更できません。ただし、PowerShell を使用して組み込みの機密情報の種類をエクスポートし、エクスポートしたものをカスタムの機密情報の種類としてインポートすることができます。詳細については、「[組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-p114">You can only modify custom sensitive information types; you can't modify built-in sensitive information types. But you can use PowerShell to export built-in custom sensitive information types, customize them, and import them as custom sensitive information types. For more information, see [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).</span></span>
 
-- <span data-ttu-id="e69df-p114">変更できるのは、UI で作成したカスタムの機密情報の種類のみです。カスタムの機密情報の種類のルール パッケージをインポートするのに [PowerShell プロシージャ](create-a-custom-sensitive-information-type-in-scc-powershell.md)を使用した場合、エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="e69df-p114">You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error.</span></span>
+- <span data-ttu-id="90a68-p115">変更できるのは、UI で作成したカスタムの機密情報の種類のみです。カスタムの機密情報の種類のルール パッケージをインポートするのに [PowerShell プロシージャ](create-a-custom-sensitive-information-type-in-scc-powershell.md)を使用した場合、エラーが表示されます。</span><span class="sxs-lookup"><span data-stu-id="90a68-p115">You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error.</span></span>
 
-<span data-ttu-id="e69df-173">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して、変更するカスタムの機密情報の種類を選択し、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-173">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**, select the custom sensitive information type that you want to modify, and then click **Edit**.</span></span>
+<span data-ttu-id="90a68-187">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して、変更するカスタムの機密情報の種類を選択し、[**編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-187">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**, select the custom sensitive information type that you want to modify, and then click **Edit**.</span></span>
 
   ![機密情報の種類と [編集] ボタンの場所](../media/scc-cust-sens-info-type-edit.png)
 
-<span data-ttu-id="e69df-p115">ここでは、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成したときと同じオプションを選択できます。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](#create-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-p115">The same options are available here as when you created the custom sensitive information type in the Security & Compliance Center. For more information, see [Create custom sensitive information types in the Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
+<span data-ttu-id="90a68-p116">ここでは、セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成したときと同じオプションを選択できます。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](#create-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-p116">The same options are available here as when you created the custom sensitive information type in the Security & Compliance Center. For more information, see [Create custom sensitive information types in the Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
 
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="e69df-177">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="e69df-177">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="90a68-191">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="90a68-191">How do you know this worked?</span></span>
 
-<span data-ttu-id="e69df-178">機密情報の種類が正常に変更されたことを確認するには、次に示す手順のいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="e69df-178">To verify that you've successfully modified a sensitive information type, do any of the following steps:</span></span>
+<span data-ttu-id="90a68-192">機密情報の種類が正常に変更されたことを確認するには、次に示す手順のいずれかを実行します。</span><span class="sxs-lookup"><span data-stu-id="90a68-192">To verify that you've successfully modified a sensitive information type, do any of the following steps:</span></span>
 
-  - <span data-ttu-id="e69df-179">**[分類]** \> **[機密情報の種類]** に移動して、変更したカスタムの機密情報の種類のプロパティを確認します。</span><span class="sxs-lookup"><span data-stu-id="e69df-179">Go to **Classifications** \> **Sensitive info types** to verify the properties of the modified custom sensitive information type.</span></span> 
+  - <span data-ttu-id="90a68-193">**[分類]** \> **[機密情報の種類]** に移動して、変更したカスタムの機密情報の種類のプロパティを確認します。</span><span class="sxs-lookup"><span data-stu-id="90a68-193">Go to **Classifications** \> **Sensitive info types** to verify the properties of the modified custom sensitive information type.</span></span> 
 
-  - <span data-ttu-id="e69df-p116">変更したカスタムの機密情報の種類をテストします。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする](#test-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-p116">Test the modified custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
+  - <span data-ttu-id="90a68-p117">変更したカスタムの機密情報の種類をテストします。詳細については、「[セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする](#test-custom-sensitive-information-types-in-the-security--compliance-center)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-p117">Test the modified custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).</span></span>
 
-## <a name="remove-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="e69df-182">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を削除する</span><span class="sxs-lookup"><span data-stu-id="e69df-182">Remove custom sensitive information types in the Security & Compliance Center</span></span> 
+## <a name="remove-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="90a68-196">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を削除する</span><span class="sxs-lookup"><span data-stu-id="90a68-196">Remove custom sensitive information types in the Security & Compliance Center</span></span> 
 
-<span data-ttu-id="e69df-183">**注**:</span><span class="sxs-lookup"><span data-stu-id="e69df-183">**Notes**:</span></span>
+<span data-ttu-id="90a68-197">**注**:</span><span class="sxs-lookup"><span data-stu-id="90a68-197">**Notes**:</span></span>
 
-- <span data-ttu-id="e69df-184">カスタムの機密情報の種類のみを削除できます。組み込みの機密情報の種類は削除できません。</span><span class="sxs-lookup"><span data-stu-id="e69df-184">You can only remove custom sensitive information types; you can't remove built-in sensitive information types.</span></span>
+- <span data-ttu-id="90a68-198">カスタムの機密情報の種類のみを削除できます。組み込みの機密情報の種類は削除できません。</span><span class="sxs-lookup"><span data-stu-id="90a68-198">You can only remove custom sensitive information types; you can't remove built-in sensitive information types.</span></span>
 
-- <span data-ttu-id="e69df-185">カスタムの機密情報の種類を削除する前に、その機密情報の種類を参照している DLP ポリシーまたは Exchange メール フロー ルール (別名: トランスポート ルール) がないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="e69df-185">Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.</span></span>
+- <span data-ttu-id="90a68-199">カスタムの機密情報の種類を削除する前に、その機密情報の種類を参照している DLP ポリシーまたは Exchange メール フロー ルール (別名: トランスポート ルール) がないことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="90a68-199">Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.</span></span>
 
-1. <span data-ttu-id="e69df-186">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して、削除するカスタムの機密情報の種類を 1 つ以上選択します。</span><span class="sxs-lookup"><span data-stu-id="e69df-186">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and select one or more custom sensitive information types that you want to remove.</span></span>
+1. <span data-ttu-id="90a68-200">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動して、削除するカスタムの機密情報の種類を 1 つ以上選択します。</span><span class="sxs-lookup"><span data-stu-id="90a68-200">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and select one or more custom sensitive information types that you want to remove.</span></span>
 
-2. <span data-ttu-id="e69df-187">ポップアップが開いたら、**[削除]** (複数選択した場合は **[機密情報の種類の削除]**) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-187">In the fly-out that opens, click **Delete** (or **Delete sensitive info types** if you selected more than one).</span></span>
+2. <span data-ttu-id="90a68-201">ポップアップが開いたら、**[削除]** (複数選択した場合は **[機密情報の種類の削除]**) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-201">In the fly-out that opens, click **Delete** (or **Delete sensitive info types** if you selected more than one).</span></span>
 
     ![機密情報の種類と [削除] ボタンの場所](../media/scc-cust-sens-info-type-delete.png)
 
-3. <span data-ttu-id="e69df-189">警告メッセージが表示されたら、**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-189">In the warning message that appears, click **Yes**.</span></span>
+3. <span data-ttu-id="90a68-203">警告メッセージが表示されたら、**[はい]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-203">In the warning message that appears, click **Yes**.</span></span>
 
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="e69df-190">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="e69df-190">How do you know this worked?</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="90a68-204">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="90a68-204">How do you know this worked?</span></span>
 
-<span data-ttu-id="e69df-191">カスタムの機密情報の種類が正常に削除されたことを確認するには、**[分類]** \> **[機密情報の種類]** に移動して、そのカスタムの機密情報の種類が一覧に表示されていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="e69df-191">To verify that you've successfully removed a custom sensitive information type, go to **Classifications** \> **Sensitive info types** to verify the custom sensitive information type is no longer listed.</span></span>
+<span data-ttu-id="90a68-205">カスタムの機密情報の種類が正常に削除されたことを確認するには、**[分類]** \> **[機密情報の種類]** に移動して、そのカスタムの機密情報の種類が一覧に表示されていないことを確認します。</span><span class="sxs-lookup"><span data-stu-id="90a68-205">To verify that you've successfully removed a custom sensitive information type, go to **Classifications** \> **Sensitive info types** to verify the custom sensitive information type is no longer listed.</span></span>
 
-## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="e69df-192">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする</span><span class="sxs-lookup"><span data-stu-id="e69df-192">Test custom sensitive information types in the Security & Compliance Center</span></span>
+## <a name="test-custom-sensitive-information-types-in-the-security--compliance-center"></a><span data-ttu-id="90a68-206">セキュリティ/コンプライアンス センターでカスタムの機密情報の種類をテストする</span><span class="sxs-lookup"><span data-stu-id="90a68-206">Test custom sensitive information types in the Security & Compliance Center</span></span>
 
-1. <span data-ttu-id="e69df-193">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="e69df-193">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**.</span></span>
+1. <span data-ttu-id="90a68-207">セキュリティ/コンプライアンス センターで、**[分類]** \> **[機密情報の種類]** に移動します。</span><span class="sxs-lookup"><span data-stu-id="90a68-207">In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**.</span></span>
 
-2. <span data-ttu-id="e69df-p117">テストするカスタムの機密情報の種類を 1 つ以上選択します。ポップアップが開いたら、**[種類のテスト]** (複数選択した場合は **[機密情報の種類のテスト]**) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-p117">Select one or more custom sensitive information types to test. In the fly-out that opens, click **Test type** (or **Test sensitive info types** if you selected more than one).</span></span>
+2. <span data-ttu-id="90a68-p118">テストするカスタムの機密情報の種類を 1 つ以上選択します。ポップアップが開いたら、**[種類のテスト]** (複数選択した場合は **[機密情報の種類のテスト]**) をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-p118">Select one or more custom sensitive information types to test. In the fly-out that opens, click **Test type** (or **Test sensitive info types** if you selected more than one).</span></span>
 
     ![機密情報の種類と [種類のテスト] ボタンの場所](../media/scc-cust-sens-info-type-test.png)
 
-3. <span data-ttu-id="e69df-197">[**テストの対象ファイルのアップロード**] ページが開いたら、ファイルをドラッグ アンド ドロップするか、または [**参照**] をクリックしてファイルを選択し、テストの対象ドキュメントをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="e69df-197">On the **Upload file to test** page that opens, upload a document to test by dragging and dropping a file or by clicking **Browse** and selecting a file.</span></span>
+3. <span data-ttu-id="90a68-211">[**テストの対象ファイルのアップロード**] ページが開いたら、ファイルをドラッグ アンド ドロップするか、または [**参照**] をクリックしてファイルを選択し、テストの対象ドキュメントをアップロードします。</span><span class="sxs-lookup"><span data-stu-id="90a68-211">On the **Upload file to test** page that opens, upload a document to test by dragging and dropping a file or by clicking **Browse** and selecting a file.</span></span>
 
     ![[テストの対象ファイルのアップロード] ページ](../media/scc-cust-sens-info-type-test-upload.png)
 
-4. <span data-ttu-id="e69df-199">**[テスト]** ボタンをクリックして、ファイル内のパターン マッチについてドキュメントをテストします。</span><span class="sxs-lookup"><span data-stu-id="e69df-199">Click the **Test** button to test the document for pattern matches in the file.</span></span>
+4. <span data-ttu-id="90a68-213">**[テスト]** ボタンをクリックして、ファイル内のパターン マッチについてドキュメントをテストします。</span><span class="sxs-lookup"><span data-stu-id="90a68-213">Click the **Test** button to test the document for pattern matches in the file.</span></span>
 
-5. <span data-ttu-id="e69df-200">[**照合結果**] ページで、[**完了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e69df-200">On the **Match results** page, click **Finish**.</span></span>
+5. <span data-ttu-id="90a68-214">[**照合結果**] ページで、[**完了**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="90a68-214">On the **Match results** page, click **Finish**.</span></span>
 
     ![照合結果](../media/scc-cust-sens-info-type-test-results.png)
