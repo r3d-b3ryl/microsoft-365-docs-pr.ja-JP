@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d8601538b440b5133731d67743379bdc7980d1d5
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d10b4a7d47f849769d0a534941bddc1c3678f3a4
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522243"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695220"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -56,22 +56,12 @@ IT アーキテクトが Microsoft 365 のグループについて知ってお�
 |[![Microsoft Defender ATP 展開戦略のサムネイルイメージ](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>更新日: 2020 年 2 月 | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
 
-<a name="m365foundationinfra"></a>
-### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 Enterprise の基盤インフラストラクチャ
-
-展開を開始するための Microsoft 365 Enterprise の[基盤インフラストラクチャ](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure)をひとめで確認できます。
-  
-|**Item**|**説明**|
-|:-----|:-----|
-|[![Microsoft 365 Enterprise の基盤インフラストラクチャ ポスターのサムネイル画像](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [オンライン表示](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> 更新日: 2019 年 12 月| このポスターでは、目標、機能とツール、設計上の決定、構成結果、オンボード、および継続的な監視と更新の観点から、基盤インフラストラクチャの各フェーズについて要約します。 <br/>| 
-
-   
 <a name="BKMK_O365IDP"></a>
 ### <a name="identity-and-device-protection-for-office-365"></a>Office 365 の ID とデバイス保護
 
 Office 365、他の SaaS サービス、および Azure AD アプリケーション プロキシで公開したオンプレミス アプリケーションにアクセスする ID とデバイスを保護するために推奨される機能。
 
-|**アイテム**|**説明**|
+|**Item**|**説明**|
 |:-----|:-----|
 |[![モデル ポスター:Office 365 およびその他の SaaS アプリケーションの ID とデバイス保護](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 更新日: 2018 年 11 月|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。このドキュメントでは、ID とデバイスを保護する機能に関する詳細情報に、どの機能が相当するのかを説明します。  <br/> |
    
