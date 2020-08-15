@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649154"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662311"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -115,7 +115,7 @@ ms.locfileid: "46649154"
   
 保持ポリシーがロックされている場合:
 
-- 誰もそれをオフにすることはできません
+- だれもオフにすることはできません。
 - 場所は追加できますが、削除できません
 - ポリシーの対象となるコンテンツは、保持期間中は変更または削除できません
 - 保持期間を延長することはできますが、短縮することはできません

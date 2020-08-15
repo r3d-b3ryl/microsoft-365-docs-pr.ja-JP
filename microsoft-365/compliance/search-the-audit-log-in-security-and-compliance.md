@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577997"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674627"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -39,8 +39,6 @@ ms.locfileid: "46577997"
 - Azure Active Directory (Office 365 のディレクトリ サービス) 内の管理者アクティビティ
 
 - Exchange Online 内の管理者アクティビティ (Exchange 管理者監査ログ)
-
-- Sway 内のユーザーおよび管理者のアクティビティ
 
 - セキュリティ/コンプライアンス センター内の電子情報開示アクティビティ
 
@@ -130,7 +128,6 @@ ms.locfileid: "46577997"
   |セキュリティ/コンプライアンス センター|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |機密ラベル||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online と OneDrive for Business|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Yammer||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Forms|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -305,15 +302,15 @@ ms.locfileid: "46577997"
 |:-----|:-----|:-----|
 |[ファイル アクティビティとページ アクティビティ](#file-and-page-activities)|[フォルダー アクティビティ](#folder-activities)|[SharePoint リスト アクティビティ](#sharepoint-list-activities)|
 |[共有アクティビティとアクセス要求アクティビティ](#sharing-and-access-request-activities)|[同期アクティビティ](#synchronization-activities)|[サイトの権限のアクティビティ](#site-permissions-activities)|
-|[サイト管理アクティビティ](#site-administration-activities)|[Exchange メールボックス アクティビティ](#exchange-mailbox-activities)|[Sway アクティビティ](#sway-activities)|
-|[ユーザー管理アクティビティ](#user-administration-activities)|[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities)|[アプリケーション管理アクティビティ](#application-administration-activities)|
-|[役割管理アクティビティ](#role-administration-activities)|[ディレクトリ管理アクティビティ](#directory-administration-activities)|[電子情報開示アクティビティ](#ediscovery-activities)|
-|[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams アクティビティ](#microsoft-teams-activities)|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts アクティビティ](#microsoft-teams-shifts-activities)|
-|[Yammer アクティビティ](#yammer-activities)|[Microsoft Power Automate のアクティビティ](#microsoft-power-automate-activities)|[Microsoft Power Apps のアクティビティ](#microsoft-power-apps-activities)|
-|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|[コンテンツ エクスプローラー アクティビティ](#content-explorer-activities)|[検疫アクティビティ](#quarantine-activities)|
-|[Microsoft Forms アクティビティ](#microsoft-forms-activities)|[機密ラベル アクティビティ](#sensitivity-label-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)|
-|[アイテム保持ポリシーと保持ラベルのアクティビティ](#retention-policy-and-retention-label-activities)|||
+|[サイト管理アクティビティ](#site-administration-activities)|[Exchange メールボックスのアクティビティ](#exchange-mailbox-activities)|[ユーザー管理アクティビティ](#user-administration-activities)|
+|[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities)|[アプリケーション管理アクティビティ](#application-administration-activities)|[役割管理アクティビティ](#role-administration-activities)|
+|[ディレクトリ管理アクティビティ](#directory-administration-activities)|[電子情報開示アクティビティ](#ediscovery-activities)|[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|
+|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|[Microsoft Teams アクティビティ](#microsoft-teams-activities)|
+|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts アクティビティ](#microsoft-teams-shifts-activities)|[Yammer アクティビティ](#yammer-activities)|
+|[Microsoft Power Automate のアクティビティ](#microsoft-power-automate-activities)|[Microsoft Power Apps のアクティビティ](#microsoft-power-apps-activities)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
+|[コンテンツ エクスプローラー アクティビティ](#content-explorer-activities)|[検疫アクティビティ](#quarantine-activities)|[Microsoft Forms アクティビティ](#microsoft-forms-activities)|
+|[機密ラベル アクティビティ](#sensitivity-label-activities)|[アイテム保持ポリシーと保持ラベルのアクティビティ](#retention-policy-and-retention-label-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)
+|||
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
 
@@ -557,28 +554,6 @@ ms.locfileid: "46577997"
 |メッセージの更新|Update|メッセージまたはそのプロパティが変更されました。|
 |メールボックスへのユーザーのサインイン|MailboxLogin|ユーザーが自分のメールボックスにサインインしました。|
 |メッセージをレコードとしてラベル付けする||ユーザーがメール メッセージに保持ラベルを適用しました。このラベルは、アイテムをレコードとしてマークするように構成されています。 |
-||||
-
-### <a name="sway-activities"></a>Sway アクティビティ
-
-次の表は、Sway のユーザーと管理者のアクティビティ一覧です。 Sway は、ユーザーが対話型の Web ベースのキャンバスでアイデア、ストーリー、プレゼンテーションを収集、書式設定、および共有できる Microsoft 365 のアプリです。 詳細については、「[Sway – 管理のヘルプについてよく寄せられる質問](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)」を参照してください。
-
-|フレンドリ名|操作​​|説明|
-|:-----|:-----|:-----|
-|Sway の共有レベルの変更|SwayChangeShareLevel|ユーザーが、Sway の共有レベルを変更しました。このイベントは、ユーザーによる、Sway に関連付けられた共有範囲の変更 (たとえば、「パブリック」と「組織内」) をキャプチャします。|
-|Sway の作成|SwayCreate|ユーザーが Sway を作成しました。|
-|Sway の削除|SwayDelete|ユーザーが Sway を削除しました。|
-|Sway の複製の無効化|SwayDisableDuplication|ユーザーが Sway の複製を無効にしました。|
-|Sway の複製|SwayDuplicate|ユーザーが Sway を複製しました。|
-|Sway の編集|SwayEdit|ユーザーが Sway を編集しました。|
-|Sway の複製の有効化|EnableDuplication|ユーザーは Sway を複製できます。 ユーザーが Sway の複製を有効にする機能は、既定で有効になっています。|
-|Sway の共有の取り消し|SwayRevokeShare|ユーザーが Sway へのアクセスを取り消して Sway の共有を停止しました。アクセスの取り消しにより、Sway に関連付けられたリンクが変更されます。|
-|Sway の共有|SwayShare|ユーザーが Sway を共有しようとしています。このイベントは、Sway 共有メニュー内で特定の共有先をクリックするユーザー アクションをキャプチャします。このイベントでは、ユーザーが共有アクションを完了したかどうかは示されません。|
-|Sway の外部共有の無効化|SwayExternalSharingOff|管理者が Microsoft 365 管理センターを使用して、組織全体に対して Sway の外部共有を無効にしました。|
-|Sway の外部共有の有効化|SwayExternalSharingOn|管理者が Microsoft 365 管理センターを使用して、組織全体に対して Sway の外部共有を有効にしました。|
-|Sway のサービスの無効化|SwayServiceOff|管理者が Microsoft 365 管理センターを使用して、組織全体に対して Sway を無効にしました。|
-|Sway のサービスの有効化|SwayServiceOn|管理者が Microsoft 365 管理センターを使用して、組織全体に対して Sway を有効にしました (Sway サービスは既定で有効になります)。|
-|Sway の表示|SwayView|ユーザーが Sway を表示しました。|
 ||||
 
 ### <a name="user-administration-activities"></a>ユーザー管理アクティビティ

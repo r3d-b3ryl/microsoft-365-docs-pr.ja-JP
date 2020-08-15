@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: c126a8e00ae5182d42122fb98f95ffd585360412
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641632"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662291"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
 
@@ -390,4 +390,4 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
     
 5. **メールボックスにインポートされる PST データをフィルター処理する**: インポート ジョブを作成すると、Microsoft 365 は PST ファイルに含まれているアイテムの経過時間とさまざまなメッセージの種類を識別することで、PST ファイル内のデータを (安全に) 分析します。 分析が完了し、データをインポートする準備ができたら、PST ファイルに含まれるすべてのデータをインポートするか、インポートするデータをトリミングするかを選ぶことができます。データをトリミングする場合は、インポートするデータを制御するフィルターを設定します。
     
-6. **PST インポート ジョブを開始する** - インポート ジョブを開始すると、Microsoft 365 は PST インポート マッピング ファイルの情報を使用して、PST ファイルを Azure Storage の場所からユーザーのメールボックスにインポートします。 インポート ジョブの進捗情報 (インポート中の各 PST ファイルに関する情報を含む) が セキュリティ/コンプライアンス センターの [**PST のインポート**] ページに表示されます。 インポート ジョブが完了すると、ジョブの状態が [**完了**] に設定されます。
+6. **PST インポート ジョブを開始する: ** インポートジョブを開始すると、Microsoft 365 は PST インポートマッピングファイルの情報を使用して、PST ファイルを Azure Storage の場所からユーザーのメールボックスにインポートします。 インポート ジョブの進捗情報 (インポート中の各 PST ファイルに関する情報を含む) が セキュリティ/コンプライアンス センターの [**PST のインポート**] ページに表示されます。 インポート ジョブが完了すると、ジョブの状態が [**完了**] に設定されます。
