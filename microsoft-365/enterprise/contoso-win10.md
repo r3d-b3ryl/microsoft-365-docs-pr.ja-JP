@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Windows 10 Enterprise の一括アップグレードを展開した方法について説明します。
-ms.openlocfilehash: c66be4ad5ee383301c4fb10cf2590f7cbbed033f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630683"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686420"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 社の Windows 10 Enterprise 展開
 
-Microsoft 365 Enterprise の広範なロールアウトに先立ち、Contoso 社には、Windows 7 (10%)、Windows 8.1 (65%)、Windows 10 (25%) が混在する Windows 互換の PC とデバイスがありました。Contoso 社は、Windows 10 Enterprise 用の PC をアップグレードして、高度なセキュリティを利用したいと考え、更新プログラムの自動展開により IT 部門の負荷を削減しました。 
+Microsoft 365 for enterprise の大規模な展開の前に、Contoso には windows 7 (10%)、Windows 8.1 (65%)、および Windows 10 (25%) の組み合わせを実行している Windows 互換 Pc とデバイスがありました。Windows 10 Enterprise 用に Pc をアップグレードすることを望んでいる Contoso 社は、高度なセキュリティを利用し、更新プログラムの自動展開に伴う IT オーバーヘッドを削減しました。 
 
 インフラストラクチャとビジネス ニーズを評価した後、Contoso 社は展開に向けて、以下の重要な要件を特定しました。
 
@@ -95,8 +95,8 @@ Contoso 社が Configuration Manager インフラストラクチャを利用し�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Enterprise 向け Windows 10 Enterprise](windows10-infrastructure.md)
+[Windows 10 Enterprise](https://docs.microsoft.com/windows/deployment/)
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

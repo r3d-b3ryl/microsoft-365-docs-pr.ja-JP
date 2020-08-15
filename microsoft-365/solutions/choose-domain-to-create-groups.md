@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: PowerShell を使用して電子メールアドレスポリシーを構成することによって、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。
-ms.openlocfilehash: a4bc5bd499652109586c30462d484a12a6cbe876
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 5ce0068f1b4562c37b2ccf2b1fb9a928b392a7ee
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662702"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686732"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Microsoft 365 グループを作成するときに使用するドメインを選択する
 
@@ -71,7 +71,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- 他のすべてのユーザーを groups.contoso.com ドメインに入れる。 次のコマンドを使用します。
+- 他のユーザーによって作成されたグループは、groups.contoso.com ドメイン内に作成されます。 次のコマンドを使用します。
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3

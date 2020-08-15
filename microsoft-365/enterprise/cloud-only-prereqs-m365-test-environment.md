@@ -9,24 +9,24 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 94d3f5cdff7c8515ab775ae8070b74dd9b80df0f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
-ms.translationtype: HT
+ms.openlocfilehash: a8025a2543a53a229be13d19c246165fe88ad433
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153784"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685786"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 
-*このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
+*このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
 
-[ID とデバイスのアクセス構成](microsoft-365-policies-configurations.md)は、構成と条件付きアクセス ポリシーのセットで、Office 365 および Microsoft 365 Enterprise の Microsoft Intune などを含めた、Azure Active Directory (Azure AD) と統合されているすべてのサービスへのアクセスを保護します。
+[Id およびデバイスアクセス構成](microsoft-365-policies-configurations.md) は、Azure Active Directory (azure AD) と統合されたすべてのサービスへのアクセスを保護するための一連の構成および条件付きアクセスポリシーです。
 
 この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
 
@@ -116,10 +116,10 @@ Skype for Business Online については、
 
 [その他の ID のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md#identity)
 
-[フェーズ 2: ID](identity-infrastructure.md)
+[Identity ロードマップ](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)
+[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)

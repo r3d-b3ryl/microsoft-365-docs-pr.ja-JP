@@ -2,31 +2,31 @@
 title: Windows と Office 展開ラボ キット
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
-ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
-ms.translationtype: HT
+ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052727"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685500"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
 
-これらのラボは、Windows 10 Enterprise および Microsoft 365 Apps for enterprise を実行するデスクトップの展開と管理を計画、テスト、検証するために設計されています。 このラボでは、デスクトップ展開の円環に記載されている手順とツールをカバーします。これは、Microsoft Endpoint Configuration Manager、Desktop Analytics、Office カスタマイズ ツール、OneDrive、Windows Autopilot などにまたがります。
+これらのラボは、Windows 10 Enterprise および Microsoft 365 Apps for enterprise を実行しているデスクトップの展開と管理を計画、テスト、検証するのに役立つように設計されています。 ラボの表紙は、Microsoft エンドポイント構成マネージャー、デスクトップ分析、Office カスタマイズツール、OneDrive、Windows 自動操縦などを使用しています。
 
-このトレーニングは、Windows 7 のライフ終了を準備をしている組織を強くお勧めします。また、現在 Windows 10、Microsoft 365 for enterprise (以前の Office 365 ProPlus)または Office 2019 のアプリを使用している場合にも適用されます。 また、ラボ環境は独立しているため、展開ツールの更新プログラムを調べたり、展開関連の自動化をテストしたりするのに最適です。
+このキットは、Windows 8 のアップグレードを準備する組織には強く推奨されており、現在 Windows 10、Microsoft 365 Apps for enterprise (旧称 Office 365 ProPlus)、または Office 2019 を使用している場合にも適用されます。 また、ラボ環境は独立しているため、展開ツールの更新プログラムを調べたり、展開関連の自動化をテストしたりするのに最適です。
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
@@ -47,8 +47,7 @@ ms.locfileid: "45052727"
 さらに、このラボは次の試用版に接続するように設計されています。 
 
   - Microsoft 365 E5
-  - Office 365 Enterprise E5
-  - Enterprise Mobility + Security
+  - Office 365 Enterprise E5 with Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>ステップ バイ ステップ ラボ
 
@@ -57,14 +56,14 @@ ms.locfileid: "45052727"
 ### <a name="device-and-app-readiness"></a>デバイスとアプリの準備
 
   - Desktop Analytics
-  - 新機能 新しい Microsoft Edge の展開と更新 
-  - 新機能! クラウド管理ゲートウェイ (CMG) のインストールと構成 
+  - 新しい Microsoft Edge の展開と更新 
+  - クラウド管理ゲートウェイ (CMG) のインストールと構成 
   - Internet Explorer モード 
   - Application Guard 
 
 ### <a name="directory-and-network-readiness"></a>ディレクトリとネットワークの準備
 
-  - 新機能 Windows 10 更新プログラム配信の最適化 
+  - Windows 10 更新プログラム配信の最適化 
   - Configuration Manager と Microsoft Intune の共同管理
   - リモート アクセス (VPN)
 
@@ -110,7 +109,7 @@ ms.locfileid: "45052727"
   - Configuration Manager を使用した Microsoft 365 Apps for enterprise のサービス
   - 新機能! 構成マネージャーと Intune を使用した Office の更新
   
-### <a name="new-windows-virtual-desktop"></a>新機能 Windows Virtual Desktop
+### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
   - Windows Virtual Desktop: 準備、展開、最適化 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード
@@ -120,8 +119,6 @@ ms.locfileid: "45052727"
 *良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご利用ください。また、自動プロビジョニングには 30 分から 45 分程度をお見積もりください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 9 月 12 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
 
 ## <a name="additional-guidance"></a>追加のガイダンス
-
-  - [デスクトップ展開センター](https://www.aka.ms/howtoshift)
 
   - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 

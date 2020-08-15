@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633365"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686036"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
-Microsoftは、Azure Active Directory（Azure AD）を使用して、自社のクラウド製品にIDaaS (Identity as a Service)を提供します。 Microsoft 365 EnterpriseEnterprise導入のため、ContosoのIDaaSソリューションは、自社運用のIDプロバイダーを利用しながら、既存の信頼できるサードパーティのIDプロバイダーと連携した認証方法を一体化させる必要がありました。
+Microsoftは、Azure Active Directory（Azure AD）を使用して、自社のクラウド製品にIDaaS (Identity as a Service)を提供します。 Microsoft 365 for enterprise を採用するために、Contoso 社の IDaaS ソリューションは社内 id プロバイダーを活用する必要がありましたが、既存の信頼できるサードパーティ id プロバイダーとのフェデレーション認証を含める必要がありました。
 
 ## <a name="contosos-active-directory-domain-services-forest"></a>ContosoのActive Directoryドメイン　サービス フォレスト
 
@@ -55,7 +55,7 @@ Contoso 社は、このインフラストラクチャを維持し、顧客とパ
 
 Contosoは、自社運用のAD DSフォレストをMicrosoft 365クラウドリソースへの認証に活用したいと考えていました。 ここから、パスワードハッシュ同期（PHS）が誕生しました。
 
-PHSは、自社運用のAD DSフォレストをMicrosoft 365 Enterpriseの登録のあるAzure ADテナントと同期し、ユーザーアカウントとグループアカウント、およびハッシュ化されたバージョンのユーザーアカウントパスワードをコピーします。 
+PHS は、オンプレミスの AD DS フォレストを、Microsoft 365 for enterprise サブスクリプションの Azure AD テナントと同期し、ユーザーアカウントとグループアカウント、およびハッシュされたバージョンのユーザーアカウントパスワードをコピーします。 
 
 継続的なディレクトリ同期を実行するために、ContosoはAzure AD 連携ツールをパリのデータセンター内のサーバーに展開しました。 
 
@@ -81,8 +81,8 @@ Contoso 社が Configuration Manager インフラストラクチャを利用し�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Enterprise の ID](identity-infrastructure.md)
+[Microsoft 365 の id ロードマップ](identity-roadmap-microsoft-365.md)
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

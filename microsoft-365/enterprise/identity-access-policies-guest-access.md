@@ -1,5 +1,5 @@
 ---
-title: ゲストおよび外部の B2B アクセスを許可するための id およびデバイスアクセスポリシー-Microsoft 365 Enterprise |Microsoft Docs
+title: ゲストおよび外部の B2B アクセスを許可するための id およびデバイスアクセスポリシー-Microsoft 365 for enterprise |Microsoft Docs
 description: ゲストおよび外部ユーザーのアクセスを保護するために推奨される条件付きアクセスと関連ポリシーについて説明します。
 author: BrendaCarter
 manager: johmar
@@ -15,17 +15,17 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 8276dcf85f6c5fd61e01e67deee4fea35c1a15c4
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 0ab4a2d48a1ac90f48bbfee82239fc0c4c1d55d5
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067458"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686828"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>ゲストおよび外部の B2B アクセスを許可するためのポリシー
-この記事では、推奨される一般的な id およびデバイスアクセスポリシーを調整して、B2B アカウントアクセス (ゲストおよび外部ユーザー) を許可する方法について説明します。 このガイダンスは、[共通の id およびデバイスアクセスポリシー](identity-access-policies.md)に基づいて構築されています。
+この記事では、推奨される一般的な id およびデバイスアクセスポリシーを調整して、B2B アカウントアクセス (ゲストおよび外部ユーザー) を許可する方法について説明します。 このガイダンスは、 [共通の id およびデバイスアクセスポリシー](identity-access-policies.md)に基づいて構築されています。
 
-これらの推奨事項は、保護の**ベースライン**層に適用するように設計されています。 ただし、**機密性**の**高い規制**保護に対するニーズの粒度に基づいて、推奨事項を調整することができます。 
+これらの推奨事項は、保護の **ベースライン** 層に適用するように設計されています。 ただし、 **機密性** の **高い規制** 保護に対するニーズの粒度に基づいて、推奨事項を調整することができます。 
 
 Azure AD テナントを使用して認証するための B2B ユーザーのパスを指定しても、ユーザーは環境全体にアクセスできません。 B2B ユーザーは、条件付きアクセスポリシーに付与されているサービス内のファイルと共有されているリソースにのみアクセスできます。
 
@@ -35,7 +35,7 @@ Azure AD テナントを使用して認証するための B2B ユーザーのパ
 
 ![ゲストアクセスを保護するためのポリシー更新の概要](../media/identity-access-ruleset-guest.png)
 
-次の表に、更新または新規作成のどちらかを行う必要があるポリシーを示します。 共通のポリシーは、[一般的な id とデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクしています。
+次の表に、更新または新規作成のどちらかを行う必要があるポリシーを示します。 共通のポリシーは、 [一般的な id とデバイスアクセスポリシー](identity-access-policies.md) の記事に記載されている関連する構成手順にリンクしています。
 
 |保護レベル|ポリシー|詳細情報|
 |:---------------|:-------|:----------------|
@@ -43,7 +43,7 @@ Azure AD テナントを使用して認証するための B2B ユーザーのパ
 |        |[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ゲストユーザーと外部ユーザーを除外するには、このルールを変更します。|
 |        |[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|ゲストユーザーと外部ユーザーを除外するには、このルールを変更します。|
 
-条件付きアクセスルールにゲストと外部ユーザーを含めたり、除外したりするには、[包含または除外] タブをクリックして、**すべてのゲストと外部ユーザー**をチェックします。
+条件付きアクセスルールにゲストと外部ユーザーを含めたり、除外したりするには、[包含または除外] タブをクリックして、 **すべてのゲストと外部ユーザー**をチェックします。
 
 ![ゲストを除外するためのコントロールの画面キャプチャ](../media/identity-access-exclude-guests-ui.png)
 
@@ -58,7 +58,7 @@ Microsoft Teams では、アプリ内のゲストユーザーと外部ユーザ�
 このルールは、ゲストのホームテナントに MFA が登録されているかどうかに関係なく、ゲストをテナントに登録することを確認します。 テナント内のリソースにアクセスする場合、ゲストおよび外部ユーザーはすべての要求に対して MFA を使用する必要があります。 
 
 ### <a name="excluding-guest-and-external-users-from-risk-based-mfa"></a>リスクベースの MFA からゲストユーザーと外部ユーザーを除外する
-組織では Id 保護を使用して B2B ユーザーに対してリスクベースのポリシーを適用することができますが、ホームに既存の id があるため、リソースディレクトリでの B2B コラボレーションユーザーの Id 保護の実装には制限があります。名簿. これらの制限により、ゲストユーザーをリスクベースの MFA ポリシーから除外し、これらのユーザーが常に MFA を使用するようにすることをお勧めします。 
+組織では Id 保護を使用して B2B ユーザーに対してリスクベースのポリシーを適用することができますが、ホームディレクトリに存在する id があるため、リソースディレクトリでの B2B コラボレーションユーザーの Id 保護の実装には制限があります。 これらの制限により、ゲストユーザーをリスクベースの MFA ポリシーから除外し、これらのユーザーが常に MFA を使用するようにすることをお勧めします。 
 
 詳細については、「 [B2B コラボレーションユーザーの Id 保護の制限事項](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users)」を参照してください。 
 

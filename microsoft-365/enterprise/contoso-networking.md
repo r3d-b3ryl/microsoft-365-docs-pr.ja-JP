@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 社のネットワーク インフラストラクチャと、Microsoft 365 Enterprise のクラウド サービスに対する最高のネットワーク性能を得るために SD-WAN テクノロジをどのように使用しているかについて説明します。
-ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+description: Contoso 社のネットワークインフラストラクチャと、その SD テクノロジを使用して、エンタープライズクラウドサービスの Microsoft 365 に対する最適なネットワークパフォーマンスを実現する方法について理解します。
+ms.openlocfilehash: bc2ae68917258b94ed46ef0c1257f56e0736105c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625280"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685820"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 
@@ -50,7 +50,7 @@ ms.locfileid: "43625280"
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>Microsoft への最適なネットワーク接続のための SD-WAN の使用
 
-Contoso 社は次の [Microsoft 365 ネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)に従いました。
+Contoso 社は次の [Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)に従いました。
 
 1. Microsoft 365 ネットワーク トラフィックを識別して区別する
 2. ネットワーク接続のローカルの出口を提供する
@@ -83,17 +83,17 @@ Contoso 社は、次のような基幹業務アプリケーションおよびサ
 
 サテライト オフィスまたは地域ハブ オフィスのユーザーについては、従業員が必要とするリソースの 60% をサテライト オフィスおよび地域ハブ オフィスのサーバーでまかなうことができます。リソース要求の残りの 40% は、WAN リンク経由でパリ キャンパスに引き継がれる必要があります。
 
-## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-enterprise"></a>Contoso 社のネットワーク分析と Microsoft 365 Enterprise のネットワークの準備
+## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-for-enterprise"></a>Contoso 社のネットワーク分析と、Microsoft 365 for enterprise のネットワークの準備
 
-Contoso 社のユーザーによる Microsoft 365 Enterprise サービスの導入が成功するかどうかは、インターネットへの高可用性と高性能の接続、または Microsoft クラウド サービスへの直接接続によります。Contoso 社は、Microsoft 365 Enterprise のクラウド サービスへの最適な接続を計画および実装するために、次の手順を実行しました。
+Contoso 社のユーザーによるエンタープライズサービスへの Microsoft 365 の導入を成功させるには、インターネットへの可用性とパフォーマンスの高い接続、または Microsoft クラウドサービスへの直接アクセスがあります。Contoso 社は次の手順を実行して、エンタープライズクラウドサービス用に Microsoft 365 への接続の最適化を計画し、実装しました。
 
 1. 計画の支援のために、会社の WAN ネットワーク ダイアグラムを作成
 
    Contoso 社は、ネットワーク上で管理されている場所、既存のネットワーク接続、既存のネットワーク周辺機器、サービス クラスを示す図を作成して、ネットワーク計画を開始しました。ネットワーク接続の計画と実装における後続の各ステップにおいて、この図が使用されました。
 
-2. Microsoft 365 Enterprise のネットワーク接続の計画を作成
+2. エンタープライズネットワーク接続用の Microsoft 365 の計画を作成しました。
 
-   Contoso 社は、[Microsoft 365 のネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)を使用し、参照ネットワーク アーキテクチャを提供して、Microsoft 365 接続の優先トポロジを SD-WAN にすることに決定しました。
+   Contoso 社は、[Microsoft 365 のネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)を使用し、参照ネットワーク アーキテクチャを提供して、Microsoft 365 接続の優先トポロジを SD-WAN にすることに決定しました。
 
 3. 各オフィスのインターネット接続利用率と MPLS WAN 帯域幅を分析し、必要に応じて帯域幅を拡大
 
@@ -109,7 +109,7 @@ Contoso 社のユーザーによる Microsoft 365 Enterprise サービスの導�
 
 6. ネットワーク エンドポイントとポートの接続を検証
 
-   Contoso 社は、Microsoft が提供するネットワーク接続テスト ツールを実行して、Microsoft 365 Enterprise のクラウド サービスの接続を検証しました。
+   Contoso 社は、microsoft が提供するネットワーク接続テストツールを実行して、エンタープライズクラウドサービスのための Microsoft 365 の接続を検証しました。
 
 7. 従業員のコンピューターのネットワーク接続を最適化
 
@@ -121,8 +121,8 @@ Contoso 社が、どのようにクラウド内のオンプレミスの Active D
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Enterprise のネットワーク](networking-infrastructure.md)
+[Microsoft 365 のネットワークロードマップ](networking-roadmap-microsoft-365.md)
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

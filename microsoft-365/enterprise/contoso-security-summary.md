@@ -1,5 +1,5 @@
 ---
-title: Contoso Corporation 向けの Microsoft 365 Enterprise の概要
+title: Contoso Corporation のエンタープライズセキュリティのための Microsoft 365 の概要
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 社が Microsoft 365 Enterprise 全体でセキュリティ機能を使用している方法について説明します。
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Contoso 社が Microsoft 365 for enterprise 全体でセキュリティ機能を使用する方法について説明します。
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268400"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686442"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise の概要
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズセキュリティのための Microsoft 365 の概要
 
-IT セキュリティ部門による Microsoft 365 Enterprise の展開の承認を得るために、徹底的なセキュリティ レビューが実施されました。Contoso 社でのクラウドに対するセキュリティ要件を次に示します。
+IT セキュリティ部門によるエンタープライズの Microsoft 365 の展開の承認を取得するために、完全なセキュリティレビューが実施されました。Contoso 社のクラウドのセキュリティ要件は次のとおりです。
 
 - クラウド リソースにアクセスする従業員に対して、最も強力な認証方法を使用します
 - 必ず PC とモバイル デバイスを接続し、セキュリティで保護された方法でアプリケーションにアクセスします
@@ -36,7 +36,7 @@ IT セキュリティ部門による Microsoft 365 Enterprise の展開の承認
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contoso 社の Microsoft 365 準備完了までのプロセス
 
-Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリティを準備するために、次の手順を行いました。
+Contoso 社は、次の手順を使用して、企業向けの Microsoft 365 の展開のためのセキュリティを準備しました。
 
 1. クラウドの管理者アカウントを制限する
 
@@ -44,13 +44,13 @@ Contoso 社は、Microsoft 365 Enterprise の展開用に自社のセキュリ�
 
 2. データ分析を行い 3 つのレベルに分類する
 
-   Contoso 社は慎重なレビューを行い、3 つのレベルを決定しました。これらのレベルは、Contoso 社の最も重要なデータを保護するための Microsoft 365 Enterprise の機能の決定に使用されました。
+   Contoso 社は慎重なレビューを行い、3つのレベルを決定しました。これらのレベルは、Contoso 社の最も重要なデータを保護するために、Microsoft 365 for enterprise 機能を決定するために使用されました。
 
 3. 各データ レベルに応じてアクセス ポリシー、保持ポリシー、情報保護ポリシーを決定した
 
    データ レベルに基づき、Contoso 社は詳細な要件を決定しました。これらの要件は、クラウドに移動する将来の IT ワークロードを制限するために使用されます。
 
-セキュリティのベスト プラクティスと Microsoft 365 Enterprise 展開の要件に基づき、Contoso 社のセキュリティ管理者と IT 部門は次のセクションに示すように、数多くのセキュリティ機能を展開しました。
+エンタープライズ展開の要件については、セキュリティのベストプラクティスと Microsoft 365 に従って、Contoso 社のセキュリティ管理者と IT 部門では、次のセクションで説明するように、多くのセキュリティ機能を展開しています。
 
 ## <a name="identity--access-management"></a>ID およびアクセス管理 
 

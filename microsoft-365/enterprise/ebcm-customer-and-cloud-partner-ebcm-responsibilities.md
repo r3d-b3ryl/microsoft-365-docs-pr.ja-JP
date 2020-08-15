@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: サービス インシデントの発生時に Microsoft が何を行っているかを理解し、ビジネス継続性プランをより適切に準備できるようにします。
-ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 5486ad2ae8c2e5d97b466a8cbd2a4dbab416b29b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067676"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686120"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>エンタープライズ ビジネス継続性管理の顧客とクラウド パートナーの責任
 
@@ -65,7 +65,7 @@ Microsoft 365 オンライン サービスへのアクセスを提供するこ�
 
 ### <a name="location"></a>場所
 多くの組織では、エンタープライズ システムとクラウド サービスに接続するために、従業員が特定の物理的またはネットワークの場所にいる必要があります。  
-Microsoft は、クラウド リソースへのネットワーク接続を設定するためのベスト プラクティスを企業に説明する「[ネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)」を公開しています。 最適化の例には、スプリット トンネル VPN の実装が含まれ、VPN トンネル経由ではなくユーザーのネットワークから直接接続できるようになります。  これらの接続の原則は、接続の遅延を低く維持するために重要ですが、サービスの復元力には、一般的なコラボレーションのために企業リソースに接続する代替方法が必要です。
+Microsoft は、クラウド リソースへのネットワーク接続を設定するためのベスト プラクティスを企業に説明する「[ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)」を公開しています。 最適化の例には、スプリット トンネル VPN の実装が含まれ、VPN トンネル経由ではなくユーザーのネットワークから直接接続できるようになります。  これらの接続の原則は、接続の遅延を低く維持するために重要ですが、サービスの復元力には、一般的なコラボレーションのために企業リソースに接続する代替方法が必要です。
 
 ### <a name="systems"></a>システム
 多くのコラボレーション ソリューションは、企業のワイド エリア ネットワーク (WAN) などのシステムに依存しています。 これらのシステムが利用できない場合、組織はどのように対応しますか?

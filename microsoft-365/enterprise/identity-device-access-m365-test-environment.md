@@ -9,24 +9,24 @@ ms.date: 04/23/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 45749140698553a75df50ed1111cdbfc8eb15684
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
-ms.translationtype: HT
+ms.openlocfilehash: c5bc0fbbb3ae3839cb7aa71e8c840784ae4a4cad
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153740"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685856"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境の ID およびデバイス
 
-*このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
+*このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
 
-[ID とデバイスのアクセス構成](microsoft-365-policies-configurations.md)は、機能と条件付きアクセス ポリシーのセットで、Office 365 および Microsoft 365 Enterprise の Microsoft Intune などを含めた、Azure Active Directory (Azure AD) と統合されているすべてのサービスへのアクセスを保護します。
+[Id およびデバイスアクセスの構成](microsoft-365-policies-configurations.md) は、Azure Active Directory (azure AD) と統合されたすべてのサービスへのアクセスを保護する一連の機能と条件付きアクセスポリシーです。
 
 これらのポリシーが正しく設定されたテスト環境を作成するには:
 
@@ -42,10 +42,10 @@ ms.locfileid: "43153740"
 
 [その他の ID のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md#identity)
 
-[フェーズ 2: ID](identity-infrastructure.md)
+[Identity ロードマップ](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)
+[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)

@@ -1,5 +1,5 @@
 ---
-title: 一般的な id およびデバイスアクセスポリシー-Microsoft 365 Enterprise |Microsoft Docs
+title: 一般的な id およびデバイスアクセスポリシー-Microsoft 365 for enterprise |Microsoft Docs
 description: ID およびデバイス アクセス ポリシーと構成を適用する方法に関する Microsoft の推奨事項のポリシーを説明します。
 author: BrendaCarter
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: a91488b9bfa126b1419af7697c0ae8510ddbc149
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625268"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685976"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -32,8 +32,8 @@ ms.locfileid: "43625268"
 
 次の図は、推奨されるポリシーセットを示しています。 この図は、各ポリシーが適用される保護層と、それらのポリシーが Pc、電話、タブレット、または両方のカテゴリのデバイスに適用されるかどうかを示しています。 また、これらのポリシーが構成されている場所も示されます。
 
-[![Id とデバイスのアクセス](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-を構成するための一般的なポリシー[この画像の大規模なバージョンの表示](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Id とデバイスのアクセスを構成するための一般的なポリシー](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
+ [この画像の大規模なバージョンの表示](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 この記事の残りの部分では、これらのポリシーを構成する方法について説明します。 
 
@@ -46,14 +46,14 @@ ms.locfileid: "43625268"
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](#require-mfa-based-on-sign-in-risk)| |
 |        |[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスルールをバイパスすることができます。そのため、これらをブロックすることが重要です。|
-|        |[リスクの高いユーザーがパスワードを変更する必要がある](#high-risk-users-must-change-password)|アカウントに対して高リスクのアクティビティが検出された場合に、サインイン時にユーザーにパスワードを変更することを強制します。|
+|        |[高リスク ユーザーはパスワードを変更する必要がある](#high-risk-users-must-change-password)|アカウントに対して高リスクのアクティビティが検出された場合に、サインイン時にユーザーにパスワードを変更することを強制します。|
 |        |[アプリデータ保護ポリシーを適用する](#apply-app-data-protection-policies)|プラットフォームごとに1つのポリシー (iOS、Android、Windows)。 Intune App Protection ポリシー (アプリ) は、レベル1からレベル3までの事前に定義された保護のセットです。|
 |        |[承認済みアプリとアプリ保護を必要とする](#require-approved-apps-and-app-protection)|携帯電話とタブレットにモバイルアプリの保護を適用する|
 |        |[デバイスコンプライアンスポリシーの定義](#define-device-compliance-policies)|プラットフォームごとに1つのポリシー|
 |        |[準拠 PC が必要](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Pc の Intune 管理を強制する|
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](#require-mfa-based-on-sign-in-risk)| |
-|         |[準拠*して*いる pc とモバイルデバイスが必要](#require-compliant-pcs-and-mobile-devices)|Pc と携帯電話/タブレットに Intune 管理を強制する|
-|**高度な規制**|[*常に*MFA が必要](#require-mfa-based-on-sign-in-risk)|
+|         |[準拠 *して* いる pc とモバイルデバイスが必要](#require-compliant-pcs-and-mobile-devices)|Pc と携帯電話/タブレットに Intune 管理を強制する|
+|**厳しく規制**|[*常に* MFA が必要](#require-mfa-based-on-sign-in-risk)|
 | | |
 
 ## <a name="assigning-policies-to-users"></a>ユーザーへのポリシーの割り当て
@@ -105,23 +105,23 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 |プロパティ|保護レベル|値|注|
 |:---|:---------|:-----|:----|
-|リスク レベル|ベースライン|高、中|両方をチェック|
+|リスク レベル|基準|高、中|両方をチェック|
 | |機密|高、中、低|3 つすべてチェック|
-| |高度な規制| |すべてのオプションをオフのままにして、常に MFA を強制する|
+| |厳しく規制| |すべてのオプションをオフのままにして、常に MFA を強制する|
 
 **アクセス制御**
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|許可|アクセスの許可|正しい|選択|
+|許可|アクセスの許可|True|オン|
 ||MFA を要求|True|Check|
-||デバイスを準拠としてマークする必要がある|誤り||
-||ハイブリッドの Azure AD に参加しているデバイスが必要|誤り||
+||デバイスを準拠としてマークする必要がある|False||
+||ハイブリッドの Azure AD に参加しているデバイスが必要|False||
 ||承認済みクライアントアプリを必要とする|False||
-||選択したコントロールすべてが必要|True|選択|
+||選択したコントロールすべてが必要|True|オン|
 
 > [!NOTE]
-> **[**] を選択して、このポリシーを有効にしてください。 また、ポリシーをテストする場合は、[[対象](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)] ツールを使用してください。
+> **[**] を選択して、このポリシーを有効にしてください。 また、ポリシーをテストする場合は、[ [対象](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) ] ツールを使用してください。
 
 
 
@@ -150,19 +150,19 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|許可|アクセスをブロックする|正しい|選択|
-||MFA を要求|誤り||
-||デバイスを準拠としてマークする必要がある|誤り||
-||ハイブリッドの Azure AD に参加しているデバイスが必要|誤り||
+|許可|アクセスをブロックする|True|オン|
+||MFA を要求|False||
+||デバイスを準拠としてマークする必要がある|False||
+||ハイブリッドの Azure AD に参加しているデバイスが必要|False||
 ||承認済みクライアントアプリを必要とする|False||
-||選択したコントロールすべてが必要|True|選択|
+||選択したコントロールすべてが必要|True|オン|
 
 > [!NOTE]
-> **[**] を選択して、このポリシーを有効にしてください。 また、ポリシーをテストする場合は、[[対象](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)] ツールを使用してください。
+> **[**] を選択して、このポリシーを有効にしてください。 また、ポリシーをテストする場合は、[ [対象](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) ] ツールを使用してください。
 
 
 
-## <a name="high-risk-users-must-change-password"></a>リスクの高いユーザーがパスワードを変更する必要がある
+## <a name="high-risk-users-must-change-password"></a>高リスク ユーザーはパスワードを変更する必要がある
 すべての危険度の高いユーザーが侵害されたアカウントが、サインイン時にパスワードの変更を強制的に実行するようにするには、次のポリシーを適用する必要があります。
 
 管理者資格情報を使用して [Microsoft Azure ポータル (https://portal.azure.com)](https://portal.azure.com/) にログインしてから、**[Azure AD Identity Protection]、[ユーザーのリスク ポリシー]** の順に移動します。
@@ -179,30 +179,30 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 | 型 | [プロパティ] | 値                  | 注 |
 |:-----|:-----------|:------------------------|:------|
-|      | Access     | SSL 経由でのみ            | 正しい  |
+|      | アクセス     | SSL 経由でのみ            | True  |
 |      | アクセス     | パスワードの変更を必須とする | True  |
 
 **レビュー:** 該当なし
 
 > [!NOTE]
-> **[**] を選択して、このポリシーを有効にしてください。 ポリシーをテストする[場合](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif)は、[対象] ツールを使用することも検討してください。
+> **[**] を選択して、このポリシーを有効にしてください。 ポリシーをテストする [場合](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) は、[対象] ツールを使用することも検討してください。
 
 ## <a name="apply-app-data-protection-policies"></a>アプリデータ保護ポリシーを適用する
 アプリ保護ポリシー (APP) は、どのアプリが許可されるか、組織のデータによって実行できるアクションを定義します。 APP で利用可能な選択肢は、組織が特定のニーズに合わせて保護を調整できるようにすることです。 一部のシナリオでは、完全なシナリオを実装するために必要なポリシー設定がわからない場合があります。 組織がモバイルクライアントエンドポイント強化の優先順位を設定するために、Microsoft では、iOS および Android のモバイルアプリ管理用のアプリデータ保護フレームワークに対して分類を導入しています。 
 
 アプリデータ保護フレームワークは3つの異なる構成レベルに編成されており、各レベルは前のレベルから構築されています。 
 
-- **エンタープライズ基本データ保護**(レベル 1) は、アプリが PIN で保護され、暗号化され、選択的なワイプ操作を実行することを保証します。 Android デバイスの場合、このレベルでは Android デバイスの構成証明を検証します。 これは、Exchange Online メールボックスポリシーに類似のデータ保護制御を提供するエントリレベルの構成で、これをアプリに紹介します。 
-- **エンタープライズ拡張データ保護**(レベル 2) アプリデータ漏洩防止メカニズムおよび最小 OS 要件について説明します。 これは、職場または学校データにアクセスするほとんどのモバイルユーザーに適用される構成です。 
-- **エンタープライズ高データ保護**(レベル 3) は、高度なデータ保護機構、強化された PIN 構成、およびアプリモバイル脅威の防御を導入しています。 この構成は、高リスクデータにアクセスするユーザーに適しています。 
+- **エンタープライズ基本データ保護** (レベル 1) は、アプリが PIN で保護され、暗号化され、選択的なワイプ操作を実行することを保証します。 Android デバイスの場合、このレベルでは Android デバイスの構成証明を検証します。 これは、Exchange Online メールボックスポリシーに類似のデータ保護制御を提供するエントリレベルの構成で、これをアプリに紹介します。 
+- **エンタープライズ拡張データ保護** (レベル 2) アプリデータ漏洩防止メカニズムおよび最小 OS 要件について説明します。 これは、職場または学校データにアクセスするほとんどのモバイルユーザーに適用される構成です。 
+- **エンタープライズ高データ保護** (レベル 3) は、高度なデータ保護機構、強化された PIN 構成、およびアプリモバイル脅威の防御を導入しています。 この構成は、高リスクデータにアクセスするユーザーに適しています。 
 
-各構成レベルおよび保護する必要のある最小アプリケーションについての特定の推奨事項を確認するには、「[アプリ保護ポリシーを使用してデータ保護フレームワーク](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)を確認する」を参照してください。 
+各構成レベルおよび保護する必要のある最小アプリケーションについての特定の推奨事項を確認するには、「 [アプリ保護ポリシーを使用してデータ保護フレームワーク](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)を確認する」を参照してください。 
 
 [Id とデバイスのアクセス構成](microsoft-365-policies-configurations.md)で説明されている原則を使用して、ベースラインおよび機密保護層がレベル2エンタープライズ拡張データ保護設定と緊密にマッピングされます。 高度な規制保護層は、レベル3エンタープライズ高データ保護設定に厳密にマップされます。
 
 |保護レベル |アプリ保護ポリシー  |詳細情報  |
 |---------|---------|---------|
-|ベースライン     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。         |
+|基準     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。         |
 |機密     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。        |
 |厳しい規制     | [レベル3エンタープライズ高データ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)        | レベル3で適用されるポリシー設定には、レベル1および2に推奨されているすべてのポリシー設定が含まれています。さらに、レベル2よりも高度な制御を実装するために、以下のポリシー設定を追加または更新します。        |
 
@@ -213,18 +213,18 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 ## <a name="require-approved-apps-and-app-protection"></a>承認済みアプリとアプリ保護を必要とする
 Intune で適用したアプリ保護ポリシーを適用するには、承認済みのクライアントアプリとアプリ保護ポリシーで設定された条件を要求する条件付きアクセスルールを作成する必要があります。 
 
-アプリ保護ポリシーを適用するには、「[条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」で説明されている一連のポリシーが必要です。 これらのポリシーは、この推奨される id とアクセス構成ポリシーのセットに含まれています。
+アプリ保護ポリシーを適用するには、「 [条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」で説明されている一連のポリシーが必要です。 これらのポリシーは、この推奨される id とアクセス構成ポリシーのセットに含まれています。
 
-承認済みアプリとアプリの保護を必要とする条件付きアクセスルールを作成するには、「[シナリオ 1: microsoft 365 アプリ](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)には、microsoft 365 の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これは、IOS および Android 用の Outlook を許可し、OAuth 対応 exchange ActiveSync クライアントによる exchange Online への接続をブロックします
+承認済みアプリとアプリの保護を必要とする条件付きアクセスルールを作成するには、「 [シナリオ 1: microsoft 365 アプリ](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)には、microsoft 365 の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これは、IOS および Android 用の Outlook を許可し、OAuth 対応 exchange ActiveSync クライアントによる exchange Online への接続をブロックします
 
    > [!NOTE]
    > このポリシーにより、モバイルユーザーは適用可能なアプリを使用してすべての Office エンドポイントにアクセスできます。
 
-Exchange Online へのモバイルアクセスを有効にしている場合は、[ブロック ActiveSync クライアント](secure-email-recommended-policies.md#block-activesync-clients)を実装します。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。 このポリシーは、この記事の上部にある図には示されていません。 [メールを保護するためのポリシーの推奨事項](secure-email-recommended-policies.md)について説明します。
+Exchange Online へのモバイルアクセスを有効にしている場合は、 [ブロック ActiveSync クライアント](secure-email-recommended-policies.md#block-activesync-clients)を実装します。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。 このポリシーは、この記事の上部にある図には示されていません。 [メールを保護するためのポリシーの推奨事項](secure-email-recommended-policies.md)について説明します。
 
- これらのポリシーは、承認された[クライアントアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app)とする grant controls を活用し、[アプリ保護ポリシーを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)とします。
+ これらのポリシーは、承認された [クライアントアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) とする grant controls を活用し、 [アプリ保護ポリシーを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)とします。
 
-最後に、iOS および Android デバイス上の他のクライアントアプリに対して従来の認証をブロックすることで、これらのクライアントが条件付きアクセスルールをバイパスできないようにします。 この記事のガイダンスに従っている場合は、[先進認証をサポートしていないブロッククライアントが](#block-clients-that-dont-support-modern-authentication)既に構成されています。
+最後に、iOS および Android デバイス上の他のクライアントアプリに対して従来の認証をブロックすることで、これらのクライアントが条件付きアクセスルールをバイパスできないようにします。 この記事のガイダンスに従っている場合は、 [先進認証をサポートしていないブロッククライアントが](#block-clients-that-dont-support-modern-authentication)既に構成されています。
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
@@ -254,11 +254,11 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Windows 8.1 以降
 - Windows 10 以降
 
-デバイスコンプライアンスポリシーを作成するには、管理者の資格情報を使用して[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にログインし、[**デバイス** > **コンプライアンスポリシー** > の**ポリシー**] に移動します。 [**ポリシーの作成**] を選択します。
+デバイスコンプライアンスポリシーを作成するには、管理者の資格情報を使用して[Microsoft Endpoint Manager 管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にログインし、[**デバイス**  >  **コンプライアンスポリシー**のポリシー] に移動し  >  **Policies**ます。 [ **ポリシーの作成**] を選択します。
 
-デバイスコンプライアンスポリシーを展開するには、ユーザーグループに割り当てる必要があります。 ポリシーは、作成して保存した後に割り当てます。 管理センターで、ポリシーを選択し、[**割り当て**] を選択します。 ポリシーを受信するグループを選択したら、[**保存**] を選択してそのグループの割り当てを保存し、ポリシーを展開します。
+デバイスコンプライアンスポリシーを展開するには、ユーザーグループに割り当てる必要があります。 ポリシーは、作成して保存した後に割り当てます。 管理センターで、ポリシーを選択し、[ **割り当て**] を選択します。 ポリシーを受信するグループを選択したら、[ **保存** ] を選択してそのグループの割り当てを保存し、ポリシーを展開します。
 
-Intune でコンプライアンスポリシーを作成する詳細な手順については、「Intune ドキュメントの「 [Microsoft intune でコンプライアンスポリシーを作成](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)する」を参照してください。
+Intune でコンプライアンスポリシーを作成する詳細な手順については、「Intune ドキュメントの「 [Microsoft intune でコンプライアンスポリシーを作成](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) する」を参照してください。
 
 Windows 10 では、次の設定をお勧めします。
 
@@ -281,8 +281,8 @@ Windows 10 では、次の設定をお勧めします。
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|Password|モバイルデバイスのロックを解除するためのパスワードを要求する|必須||
-||単純なパスワード|Block||
+|パスワード|モバイルデバイスのロックを解除するためのパスワードを要求する|必須||
+||単純なパスワード|拒否||
 ||パスワードの種類|既定のデバイス||
 ||パスワードの最小文字数|6 ||
 ||パスワードが必要になるまでの最大非アクティブ時間 (分)|15 |この設定は、Android バージョン4.0 以降、または KNOX 4.0 以降でサポートされています。 IOS デバイスでは、iOS 8.0 以降でサポートされています。|
@@ -324,17 +324,17 @@ Windows 10 では、次の設定をお勧めします。
 
 7. **[アプリの選択**] を選択し、[**クラウドアプリ**] リストから目的のアプリを選択します。 たとえば、[Exchange Online] を選択します。 **[選択**して**完了**] を選択します。
 
-8. 準拠している Pc を必要とするが、準拠している電話やタブレットではないものを要求するには、**条件**と**デバイスプラットフォーム**を選択します **[Select device プラットフォーム]** を選択して、[ **Windows**と**macOS**] を選択します。
+8. 準拠している Pc を必要とするが、準拠している電話やタブレットではないものを要求するには、 **条件** と **デバイスプラットフォーム**を選択します **[Select device プラットフォーム]** を選択して、[ **Windows**と**macOS**] を選択します。
 
 9. **[アクセス制御]** セクションから **[許可]** を選びます。
 
-10. [**アクセス許可**] を選択し、[**デバイスが準拠していることをマークする必要がある**] を選択します。 複数のコントロールの場合は、[選択し**たすべてのコントロールを必要とする**] を選択し、[**選択**] を選択します。 
+10. [ **アクセス許可**] を選択し、[ **デバイスが準拠していることをマークする必要がある**] を選択します。 複数のコントロールの場合は、[選択し **たすべてのコントロールを必要とする**] を選択し、[ **選択**] を選択します。 
 
 11. **[作成]** を選択します。
 
-準拠している Pc*と*モバイルデバイスを必要とする目的では、プラットフォームを選択しないでください。 これにより、すべてのデバイスのコンプライアンスを強制します。 
+準拠している Pc *と* モバイルデバイスを必要とする目的では、プラットフォームを選択しないでください。 これにより、すべてのデバイスのコンプライアンスを強制します。 
 
-## <a name="require-compliant-pcs-and-mobile-devices"></a>準拠*して*いる pc とモバイルデバイスが必要
+## <a name="require-compliant-pcs-and-mobile-devices"></a>準拠 *して* いる pc とモバイルデバイスが必要
 
 すべてのデバイスのコンプライアンスを要求するには、次のようにします。
 
@@ -354,7 +354,7 @@ Windows 10 では、次の設定をお勧めします。
 
 8. **[アクセス制御]** セクションから **[許可]** を選びます。
 
-9. [**アクセス許可**] を選択し、[**デバイスが準拠していることをマークする必要がある**] を選択します。 複数のコントロールの場合は、[選択し**たすべてのコントロールを必要とする**] を選択し、[**選択**] を選択します。 
+9. [ **アクセス許可**] を選択し、[ **デバイスが準拠していることをマークする必要がある**] を選択します。 複数のコントロールの場合は、[選択し **たすべてのコントロールを必要とする**] を選択し、[ **選択**] を選択します。 
 
 10. **[作成]** を選択します。
 

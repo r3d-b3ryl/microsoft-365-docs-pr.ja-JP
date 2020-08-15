@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise テスト環境のデータ分類
+title: Microsoft 365 for enterprise テスト環境のデータ分類
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,26 +13,26 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: このテストラボガイドを使用して、Microsoft 365 エンタープライズテスト環境のドキュメントの保持ラベルを作成して使用します。
-ms.openlocfilehash: 41873eba8f2d6168d68d771c6feb17a44c775f6a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: このテストラボガイドを使用して、Microsoft 365 for enterprise テスト環境のドキュメントに対して保持ラベルを作成して使用します。
+ms.openlocfilehash: 171fcb74b09a1f2e5c80f23e010640dce55660bc
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636094"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686408"
 ---
-# <a name="data-classification-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 Enterprise テスト環境のデータ分類
+# <a name="data-classification-for-your-microsoft-365-for-enterprise-test-environment"></a>Microsoft 365 for enterprise テスト環境のデータ分類
 
-*このテストラボ ガイドは、Microsoft 365 Enterprise および Office 365 Enterprise テスト環境に使用できます。*
+*このテストラボガイドは、Microsoft 365 for enterprise および Office 365 エンタープライズテスト環境の両方で使用できます。*
 
-この記事の手順に従って、Microsoft 365 Enterprise テスト環境の保持ラベルを使用してデータ分類を構成します。
+この記事の手順に従って、エンタープライズテスト環境の Microsoft 365 で保持ラベルを使用してデータ分類を構成します。
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事へのビジュアル マップを確認してください。
   
-## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 for enterprise テスト環境を構築する
 
 最小要件での軽量な方法で保持ラベルを構成する場合は、「 [軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
@@ -91,7 +91,7 @@ ms.locfileid: "43636094"
 
 最初に、機密レベルの SharePoint Online チームサイトを作成します。
   
-1. ブラウザーのプライベートインスタンスを使用して、グローバル管理者アカウントを使用して [Office 365 ポータル](https://portal.office.com) にサインインします。
+1. ブラウザーのプライベートインスタンスを使用して、グローバル管理者アカウントを使用して [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
     
 2. タイルのリストで、**[SharePoint]** をクリックします。
     
@@ -133,8 +133,6 @@ ms.locfileid: "43636094"
     
 7. **Document.docx**ウィンドウで、[**保持ラベルの適用**] の下の [**高機密**] ラベルを選択し、[**保存**] をクリックします。
 
-保持ラベルを運用環境に展開する方法の詳細とリンクについては、「**情報保護**フェーズ」の「[環境の分類を構成](infoprotect-configure-classification.md)する」の手順を参照してください。
-
 ## <a name="next-step"></a>次の手順
 
 テスト環境でのその他の [情報保護](m365-enterprise-test-lab-guides.md#information-protection) 機能と機能について説明します。
@@ -143,8 +141,8 @@ ms.locfileid: "43636094"
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)
+[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)
 
  

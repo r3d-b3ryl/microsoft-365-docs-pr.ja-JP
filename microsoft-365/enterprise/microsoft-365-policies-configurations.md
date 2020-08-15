@@ -1,5 +1,5 @@
 ---
-title: Id とデバイスのアクセス構成-Microsoft 365 Enterprise
+title: Id とデバイスのアクセス構成-エンタープライズ向け Microsoft 365
 description: セキュリティで保護された電子メール、ドキュメント、およびアプリのポリシーと構成を展開するための Microsoft の推奨事項と中心概念について説明します。
 author: brendacarter
 manager: laurawi
@@ -17,24 +17,24 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530273"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686628"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
 この一連の記事では、条件付きアクセスポリシーと関連機能の規定セットを含む推奨される環境と構成を実装することにより、Enterprise Mobility + Security (EMS) 製品を使用してクラウドサービスへのセキュリティで保護されたアクセスを構成する方法について説明します。 EMS は、Microsoft 365 のコアコンポーネントです。 このガイダンスを使用して、azure Active Directory と統合されたすべてのサービスへのアクセスを保護できます。これには、Microsoft 365 サービス、その他の SaaS サービス、および Azure AD アプリケーションプロキシで公開されたオンプレミスアプリケーションが含まれます。 
 
-これらの推奨事項は、Microsoft セキュリティスコアと[AZURE AD の id スコア](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)に沿っており、組織にとってこれらのスコアが増加します。 これらの推奨事項は[、id インフラストラクチャをセキュリティで保護するための5つの手順を](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)実装するのにも役立ちます。 
+これらの推奨事項は、Microsoft セキュリティスコアと [AZURE AD の id スコア](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)に沿っており、組織にとってこれらのスコアが増加します。 これらの推奨事項は [、id インフラストラクチャをセキュリティで保護するための5つの手順を](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)実装するのにも役立ちます。 
 
 Microsoft は、組織によっては独自の環境要件や複雑さがあることを認識しています。 これらの組織のいずれかである場合は、これらの推奨事項を出発点として使用します。 ただし、ほとんどの組織では、これらの推奨事項を定められたとおりに実装できます。 
 
 ## <a name="intended-audience"></a>対象ユーザー
 
-これらの推奨事項は、 [Office 365](https://docs.microsoft.com/microsoft-365/admin)と[microsoft Enterprise Mobility + Security](https://microsoft.com/ems)に精通している企業のアーキテクトおよび IT 担当者を対象としています。これには、azure Active Directory (Identity)、microsoft Intune (デバイス管理)、azure Information protection (データ保護) などが含まれます。
+これらの推奨事項は、 [Office 365](https://docs.microsoft.com/microsoft-365/admin) と [microsoft Enterprise Mobility + Security](https://microsoft.com/ems)に精通している企業のアーキテクトおよび IT 担当者を対象としています。これには、azure Active Directory (Identity)、microsoft Intune (デバイス管理)、azure Information protection (データ保護) などが含まれます。
 
 ### <a name="customer-environment"></a>お客様の環境
 
@@ -42,7 +42,7 @@ Microsoft は、組織によっては独自の環境要件や複雑さがある�
 
 提供されている推奨事項の多くは、Enterprise Mobility + Security (EMS) E5 ライセンスでのみ利用可能なサービスに依存しています。 推奨される推奨事項は、完全な EMS E5 ライセンス機能を前提としています。
 
-Enterprise Mobility + Security E5 ライセンスを持っていない組織では、少なくともすべてのプランに含まれている Azure AD ベースの保護機能を実装することをお勧めします。 詳細については、記事「Azure AD ライブラリの[ベースライン保護](/azure/active-directory/active-directory-conditional-access-baseline-protection)について」を参照してください。
+Enterprise Mobility + Security E5 ライセンスを持っていない組織では、少なくともすべてのプランに含まれている Azure AD ベースの保護機能を実装することをお勧めします。 詳細については、記事「Azure AD ライブラリの [ベースライン保護](/azure/active-directory/active-directory-conditional-access-baseline-protection)について」を参照してください。
 
 ### <a name="caveats"></a>べき
 
@@ -87,7 +87,7 @@ Enterprise Mobility + Security E5 ライセンスを持っていない組織で�
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>Id とデバイスのアクセス保護のサービスと概念
 
-Microsoft 365 Enterprise は大規模な組織向けに設計されており、Office 365 Enterprise、Windows 10 Enterprise、Enterprise Mobility + Security (EMS) を統合することにより、すべてのユーザーがクリエイティブに共同作業し、安全に共同作業を行うことができます。
+Microsoft 365 for enterprise は大規模な組織向けに設計されており、Office 365 Enterprise、Windows 10 Enterprise、Enterprise Mobility + Security (EMS) を統合することにより、すべてのユーザーがクリエイティブに共同作業し、安全に共同作業を行うことができます。
 
 このセクションでは、id とデバイスのアクセスにおいて重要な Microsoft 365 サービスと機能の概要について説明します。
 
@@ -109,11 +109,11 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Intune](https://docs.microsoft.com/intune/introduction-intune)は、Microsoft のクラウドベースのモバイルデバイス管理サービスです。 このガイダンスでは、Intune を使用して Windows Pc のデバイスを管理することと、デバイスコンプライアンスポリシーの構成を推奨することをお勧めします。 Intune は、デバイスが準拠しているかどうかを判断し、条件付きアクセスポリシーを適用するときに使用するために、このデータを Azure AD に送信します。
+[Intune](https://docs.microsoft.com/intune/introduction-intune) は、Microsoft のクラウドベースのモバイルデバイス管理サービスです。 このガイダンスでは、Intune を使用して Windows Pc のデバイスを管理することと、デバイスコンプライアンスポリシーの構成を推奨することをお勧めします。 Intune は、デバイスが準拠しているかどうかを判断し、条件付きアクセスポリシーを適用するときに使用するために、このデータを Azure AD に送信します。
 
 #### <a name="intune-app-protection"></a>Intune アプリの保護
 
-[Intune アプリ保護](https://docs.microsoft.com/intune/app-protection-policy)ポリシーを使用して、モバイルアプリで組織のデータを保護できます。または、デバイスを管理者に登録することができます。 Intune では、情報を保護して、従業員の生産性を維持し、データ損失を防ぐことができます。 アプリレベルのポリシーを実装することで、会社のリソースへのアクセスを制限し、データを IT 部門のコントロール内に保持することができます。
+[Intune アプリ保護](https://docs.microsoft.com/intune/app-protection-policy) ポリシーを使用して、モバイルアプリで組織のデータを保護できます。または、デバイスを管理者に登録することができます。 Intune では、情報を保護して、従業員の生産性を維持し、データ損失を防ぐことができます。 アプリレベルのポリシーを実装することで、会社のリソースへのアクセスを制限し、データを IT 部門のコントロール内に保持することができます。
 
 このガイダンスは、承認済みアプリの使用を強制するために推奨されるポリシーを作成する方法と、これらのアプリをビジネスデータで使用する方法を決定する方法を示しています。
 

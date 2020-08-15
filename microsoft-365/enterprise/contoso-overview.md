@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068300"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686454"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
 
@@ -58,9 +58,9 @@ Contoso Corporation は、フランスのパリに本社を持つ多国籍企業
 
 Contoso 社の要員の 25% はモバイル専門であり、地域ハブ オフィスおよびサテライト オフィスではモバイル専門のワーカーの割合がさらに高くなります。モバイル専門のワーカーにより良いサポートを提供することが、Contoso 社の重要なビジネス目標です。
 
-## <a name="design-considerations-for-microsoft-365-enterprise"></a>Microsoft 365 Enterprise の設計上の考慮事項
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Microsoft 365 for enterprise の設計上の考慮事項
 
-Contoso 社の IT アーキテクトは、Microsoft 365 Enterprise を展開する際の、次の設計上の要件と考慮事項を特定しました。 
+Contoso 社の IT アーキテクトは、エンタープライズ向けの Microsoft 365 を展開するときに、以下の設計要件と考慮事項を特定しました。 
 
 - 地理的に複数の場所にあり、地域に応じた規制とコンプライアンスの要件がある
 - 本社オフィスに中央イントラネット データセンターがあり、地域のアプリケーション サーバーで内部の基幹業務アプリケーションをホストしている
@@ -74,11 +74,11 @@ Contoso 社の IT アーキテクトは、Microsoft 365 Enterprise を展開す�
 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社のオンプレミスの IT インフラストラクチャについて、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて[説明](contoso-infra-needs.md)します。
+Contoso 社のオンプレミスの IT インフラストラクチャと、ビジネスニーズが Microsoft 365 for enterprise でどのように扱われているかについて[説明](contoso-infra-needs.md)します。
 
 ## <a name="see-also"></a>関連項目
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 

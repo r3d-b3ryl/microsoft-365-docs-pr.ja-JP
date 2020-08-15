@@ -9,7 +9,7 @@ ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,29 +18,29 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワードのリセットを構成してテストします。'
-ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 98e6b8d8432c86e9d1c432128ed6d223da83610e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632889"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686538"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワードのリセット
 
-*このテストラボ ガイドは、Microsoft 365 Enterprise テスト環境にのみ使用できます。*
+*このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
 
 Azure Active Directory (Azure AD) のセルフサービスによるパスワードのリセット (SSPR) によって、ユーザーは自分のパスワードまたはアカウントをリセットまたはロック解除することができます。 
 
 この記事では、Microsoft 365 テスト環境でパスワードの構成およびリセットを行う方法を、次の 3 つのフェーズに分けて説明します。
 
-1.    Microsoft 365 Enterprise のテスト環境を作成します。
+1.    エンタープライズテスト環境用の Microsoft 365 を作成します。
 2.  パスワード ライトバックを有効にします。
 3.    User 3 アカウントのパスワードのリセットを構成してテストする。
     
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事のビジュアル マップを確認してください。
+> [ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事へのビジュアル マップを確認してください。
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>フェーズ 1: Microsoft 365 テスト環境のパスワード ハッシュ同期を構成する
 
@@ -50,7 +50,7 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
   
 この構成は、次の内容で成立します。 
   
-- Microsoft 365 E5 または Office 365 E5 の試用版または有料サブスクリプション。
+- Microsoft 365 E5 の試用版または有料サブスクリプション。
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。 
 - Azure AD Connect が APP1 上で実行され、TESTLAB Active Directory Domain Services (AD DS) ドメインが、Microsoft 365 サブスクリプションの Azure AD テナントに同期されます。
 
@@ -89,8 +89,6 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
 11. **[アカウントに戻る]** で User 3 アカウントの新しいパスワードを入力し、**[完了]** をクリックします。 変更された User 3 アカウントのパスワードをメモし、安全な場所に保管します。
 12. 同じブラウザの別のタブで[https://portal.office.com](https://portal.office.com)に移動し、ユーザー 3 アカウント名およびその新しいパスワードでサインインします。 **[Microsoft Office Home]** ページが表示されます。
 
-実稼働環境でのパスワードのリセットの構成に関する情報およびリンクについては、ID フェーズの手順、「[パスワードのリセットを簡素化する](identity-secure-your-passwords.md#identity-pw-reset)」を参照してください。
-
 ## <a name="next-step"></a>次の手順
 
 テスト環境の追加の [ID](m365-enterprise-test-lab-guides.md#identity) 機能について調べます。
@@ -99,6 +97,6 @@ Azure Active Directory (Azure AD) のセルフサービスによるパスワー�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)
+[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)

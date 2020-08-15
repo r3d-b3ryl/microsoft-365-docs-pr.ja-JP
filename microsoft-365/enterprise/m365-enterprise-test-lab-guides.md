@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 向けのデモ、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: 5907edd1bc42b9d679ed020331f225ef2d2b2594
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818743"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686768"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
@@ -43,7 +43,7 @@ TLG はモジュラーとして機能するように設計されています。T
 
 ## <a name="base-configuration"></a>基本構成
 
-最初に、Office 365 E5、Enterprise Mobility + Security (EMS) E5、および Windows 10 Enterprise を含む [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/) のテスト環境を作成します。2 種類の基本構成を作成できます:
+最初に、 [Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)のテスト環境を作成します。2つの異なる種類の基本構成を作成できます。
 
 - オンプレミスのコンポーネントを含まないクラウド専用の環境で、Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合には、[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)を使用します。
 
@@ -63,7 +63,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
   
    AD DS ドメイン コントローラーへのパススルー認証を有効にしてテストします。
 
-- [フェデレーション認証](federated-identity-for-your-office-365-dev-test-environment.md)
+- [フェデレーション認証](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    AD DS ドメイン コントローラーへのフェデレーション認証を有効にしてテストします。
 

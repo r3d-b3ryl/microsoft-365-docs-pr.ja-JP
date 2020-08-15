@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,37 +17,37 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: このテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 用にシミュレートされたエンタープライズ テスト環境を作成します。
-ms.openlocfilehash: 486429bf9e1c0a88c9beb01a092f968256c1fa77
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: このテストラボガイドを使用して、エンタープライズ向けの Microsoft 365 用にシミュレートされたエンタープライズテスト環境を作成します。
+ms.openlocfilehash: 9f4cbb300946109368759d6ec8f1120332e1ed92
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818497"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685678"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>シミュレートされたエンタープライズ基本構成
 
-*このテストラボ ガイドは、Microsoft 365 Enterprise および Office 365 Enterprise テスト環境に使用できます。*
+*このテストラボガイドは、Microsoft 365 for enterprise および Office 365 エンタープライズテスト環境の両方で使用できます。*
 
-この記事では、次のものを含む Microsoft 365 Enterprise のシンプルな環境を作成するための詳しい手順について説明します。
+この記事では、次の項目を含む、Microsoft 365 for enterprise の簡略化された環境を作成するための詳細な手順について説明します。
 
 - Microsoft 365 E5 の試用版または有料サブスクリプション。
 - インターネットに接続している組織の簡易型イントラネット。Azure 仮想ネットワーク上に配置された 3 つの仮想マシン (DC1、APP1、および CLIENT1) で構成されます。
  
 ![シミュレートされたエンタープライズ基本構成](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-完成した環境は、その他の [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)や各自の実験で、[Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) の機能をテストするために使用できます。
+結果として得られた環境を使用して、 [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise) の機能を、追加の [テストラボガイド](m365-enterprise-test-lab-guides.md) または独自にテストすることができます。
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Microsoft 365 Enterprise のテスト ラボ ガイド スタック内のすべての記事のビジュアル マップについては、[Microsoft 365 Enterprise のテスト ラボ ガイド スタック](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)にアクセスします。
+> Microsoft 365 for enterprise のテスト [ラボガイドスタック](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) にアクセスして、microsoft 365 for Enterprise のテストラボガイドスタックに含まれるすべての記事へのビジュアルマップを表示します。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>フェーズ 1: シミュレートされたイントラネットを作成する
 
 このフェーズでは、Active Directory Domain Services (AD DS) ドメイン コントローラー、アプリケーション サーバー、クライアント コンピューターを含むシミュレートされたイントラネットを Azure インフラストラクチャ サービスに作成します。 
 
-こうしたコンピューターは、他の [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)でハイブリッド ID およびその他の機能の構成とデモンストレーションのために使用します。
+ハイブリッド id およびその他の機能を構成してデモンストレーションするには、これらのコンピューターを追加 [の Microsoft 365 for enterprise のテストラボガイド](m365-enterprise-test-lab-guides.md) に使用します。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1: Azure Resource Manager テンプレートを使用して、シミュレートされたイントラネットを構築する
 
@@ -371,7 +371,7 @@ CLIENT1 の再起動後に、TESTLAB\\User1 のアカウント名とパスワー
 
 Azure ポータルから、CORP\User1 アカウントを使用して CLIENT1 に接続します。
 
-新しい Office 365 E5 試用版のサブスクリプションを作成するには、「軽量な基本構成」のテスト ラボ ガイドの [フェーズ 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) にある手順を実行します。
+新しい Office 365 E5 試用版のサブスクリプションを作成するには、「軽量な基本構成」のテスト ラボ ガイドの [フェーズ 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) にある手順を実行します。
 
 新しい Office 365 E5 試用版のサブスクリプションを構成するには、「軽量な基本構成」のテスト ラボ ガイドの [フェーズ 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) にある手順を実行します。
 
@@ -379,7 +379,7 @@ Azure ポータルから、CORP\User1 アカウントを使用して CLIENT1 に
 
 Office 365 のテスト環境だけが必要な場合は、ここで終了します。 
 
-Office 365 と Microsoft 365 の両方に適用される追加のテスト ラボ ガイドについては、「[Microsoft 365 エンタープライズ テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)」を参照してください。
+Microsoft 365 と Office 365 の両方に適用される追加のテストラボガイドについては、「 [microsoft 365 for Enterprise Test Lab ガイド](m365-enterprise-test-lab-guides.md) 」を参照してください。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>Microsoft 365 E5 の試用版サブスクリプションを追加する
 
@@ -398,7 +398,7 @@ Office 365 と Microsoft 365 の両方に適用される追加のテスト ラ�
   
 ![シミュレートされたエンタープライズ基本構成のフェーズ 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-これで、[Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise) の追加機能を試せるようになりました。
+これで、 [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)の追加機能を試す準備ができました。
   
 ## <a name="next-steps"></a>次の手順
 
@@ -412,6 +412,6 @@ Office 365 と Microsoft 365 の両方に適用される追加のテスト ラ�
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)
+[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)

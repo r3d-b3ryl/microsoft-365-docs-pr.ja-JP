@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネス ニーズが Microsoft 365 Enterprise によってどのように満たされたかについて説明します。
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: Contoso 社のオンプレミスの IT インフラストラクチャの基本的な構造について、およびそのビジネスニーズが Microsoft 365 for enterprise によってどのように満たされたかについて説明します。
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011199"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685832"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 社の IT インフラストラクチャおよびビジネス ニーズ
 
@@ -112,20 +112,20 @@ Contoso 社のビジネス ニーズは、5 つの主なカテゴリに分類さ
 
   組織全体で Windows オペレーティング システムと Microsoft 365 Apps for enterprise の更新プログラムのインストールを自動化します。
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>Contoso 社のビジネス ニーズを Microsoft 365 Enterprise にマッピングする
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>Contoso 社のビジネスニーズをエンタープライズ向け Microsoft 365 にマッピングする
 
 Contoso 社の IT 部門は展開に先立ち、Microsoft 365 E5 の機能への以下のビジネス ニーズのマッピングを決定しました。
 
-||||
+
+| カテゴリ | ビジネス ニーズ | エンタープライズ製品または機能のための Microsoft 365 |
 |:-------|:-----|:-----|
-| **カテゴリ** | **ビジネス ニーズ** | **Microsoft 365 Enterprise の製品または機能** |
 | 生産性 |  |  |
 |  | グループ作業を容易にする | Microsoft Teams、SharePoint、OneDrive |
 |  | リモート ワーカーとモバイル ワーカーの生産性を向上させる | Microsoft 365 のワークロードとクラウドベースのデータ |
 |  | 独創性と革新性を向上させる | Windows Ink、職場の Cortana、PowerPoint |
 | セキュリティ |  |  |
 |  | ID およびアクセス管理 | Azure 多要素認証 (MFA) および Azure AD Privileged Identity Management (PIM) 付きの専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Office 365 脅威の調査および対応 <BR> |
+|  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Microsoft 365 脅威の調査と応答 <BR> |
 |  | 情報保護 | Azure Information Protection <BR> データ損失防止 (DLP) <BR> Windows 情報保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | セキュリティ管理 | Azure Security Center  <BR> Windows Defender セキュリティ センター |
 | リモート/モバイル アクセスおよびビジネス パートナー |  |  |
@@ -133,7 +133,7 @@ Contoso 社の IT 部門は展開に先立ち、Microsoft 365 E5 の機能への
 |  | 従業員のリモート アクセス インフラストラクチャを縮小する | Microsoft 365 のワークロードとクラウドベースのデータ |
 |  | B2B のトランザクションにおける接続性を向上し、オーバーヘッドを削減する | フェデレーション認証とクラウドベースのリソース |
 | コンプライアンス |  |  |
-|  | 地域の規制要件に準拠する | Office 365 の GDPR 機能 |
+|  | 地域の規制要件に準拠する | Microsoft 365 の GDPR 機能 |
 | 管理 |  |  |
 |  | クライアントの更新プログラムをインストールするため、IT オーバーヘッドを削減する | 展開リング <BR> Windows 10 Enterprise の更新プログラム <BR> Microsoft 365 Apps for enterprise の更新プログラム |
 ||||
@@ -144,6 +144,6 @@ Contoso 社のオンプレミス ネットワークと、Microsoft 365 のクラ
 
 ## <a name="see-also"></a>関連項目
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

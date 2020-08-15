@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Enterprise ビジネス継続性管理の軽減策
+title: エンタープライズビジネス継続性管理を緩和するための Microsoft 365
 author: chrfox
 f1.keywords:
 - NOCSH
@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 サービス インシデント シナリオの軽減のサンプル。
-ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
-ms.translationtype: HT
+ms.openlocfilehash: 71f2aade674d1d3f2ba95701f9d8113a8b57afeb
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086635"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686048"
 ---
 # <a name="service-incident-mitigation-strategies"></a>サービス インシデントの軽減戦略
 

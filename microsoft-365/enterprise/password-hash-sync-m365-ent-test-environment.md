@@ -9,7 +9,7 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: '概要: Microsoft 365 テスト環境のパスワード ハッシュ同期とサインインを構成して実例を示します。'
-ms.openlocfilehash: 2d5fbd3ed2a2afb994fc36f5ba3a15a8c55a274e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 2930d147e2ae3277b0af4d2aa81a602c73128439
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819390"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686550"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のパスワード ハッシュ同期
 
-*このテストラボ ガイドは、Microsoft 365 Enterprise および Office 365 Enterprise テスト環境に使用できます。*
+*このテストラボガイドは、Microsoft 365 for enterprise および Office 365 エンタープライズテスト環境の両方で使用できます。*
 
 多くの組織では、Azure AD Connect とパスワード ハッシュ同期を使用して、オンプレミスの Active Directory Domain Services (AD DS) フォレスト内のアカウント セットを、Microsoft 365 サブスクリプションの Azure AD テナント内のアカウント セットに同期します。 この記事では、Microsoft 365 のテスト環境にパスワード ハッシュ同期を追加する方法について説明します。最終的な構成は、次のとおりになります。
   
@@ -40,7 +40,7 @@ ms.locfileid: "44819390"
 2. APP1 に Azure AD Connect をインストールして構成する。
     
 > [!TIP]
-> Microsoft 365 Enterprise のテスト ラボ ガイド スタック内のすべての記事のビジュアル マップについては、「[Microsoft 365 Enterprise のテスト ラボ ガイド スタック](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)」にアクセスします。
+> Microsoft 365 for enterprise のテスト [ラボガイドスタック](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) にアクセスして、microsoft 365 for Enterprise のテストラボガイドスタックに含まれるすべての記事へのビジュアルマップを表示します。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 のシミュレートされたエンタープライズ テスト環境を作成する
 
@@ -50,7 +50,7 @@ ms.locfileid: "44819390"
   
 この構成は、次の内容で成立します。 
   
-- Microsoft 365 E5 または Office 365 E5 の試用版または有料サブスクリプション。
+- Microsoft 365 E5 の試用版または有料サブスクリプション。
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワーク内の仮想マシン DC1、APP1、CLIENT1 で構成されます。 DC1 は、testlab.\<your public domain name> AD DS ドメインのドメイン コントローラーです。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>フェーズ 2: testlab ドメインを作成および登録する
@@ -59,7 +59,7 @@ ms.locfileid: "44819390"
 
 最初に、パブリック DNS 登録プロバイダーと協力して、現在のドメイン名に基づいて新しいパブリック DNS ドメイン名を作成し、サブスクリプションに追加します。 **testlab.**\<your public domain> という名前の使用をお勧めします。 たとえば、パブリック ドメイン名が **<span>contoso</span>.com** である場合は、パブリック ドメイン名 **<span>testlab</span>.contoso.com** を追加します。
   
-次に、ドメイン登録プロセスを経て、**testlab.**\<your public domain> ドメインを Microsoft 365 または Office 365 の試用版または有料のサブスクリプションに追加します。 このときに、他の DNS レコードも **testlab.**\<your public domain> ドメインに追加します。 詳細については、「[Office 365 にドメインを追加する](https://docs.microsoft.com/office365/admin/setup/add-domain)」を参照してください。 
+次に、ドメイン登録プロセスを経て、**testlab.**\<your public domain> ドメイン登録プロセスを通じて、Microsoft 365 試用版または有料版サブスクリプションにドメインを移行します。 このときに、他の DNS レコードも **testlab.**\<your public domain> ドメインに追加します。 詳細については、「 [Microsoft 365 にドメインを追加する](../admin/setup/add-domain.md)」を参照してください。 
 
 最終的な構成をここに示します。
   
@@ -67,7 +67,7 @@ ms.locfileid: "44819390"
   
 この構成は、次の内容で成立します。
 
-- DNS ドメイン testlab.\<your public domain name> が登録されている Microsoft 365 E5 または Office 365 E5 の試用版サブスクリプションまたは有料サブスクリプション。
+- DNS ドメインのテストラボでの Microsoft 365 E5 試用版または有料サブスクリプション。\<your public domain name> が登録されている Microsoft 365 E5 または Office 365 E5 の試用版サブスクリプションまたは有料サブスクリプション。
 - インターネットに接続する組織の簡易型イントラネット。Azure 仮想ネットワークのサブネット上に配置された仮想マシン DC1、APP1、および CLIENT1 で構成されます。
 
 testlab.\<your public domain name> がどのようにして次のようになっているかについてご注意ください。
@@ -146,8 +146,8 @@ User1 は、TESTLAB AD DS ドメインのドメイン管理者のアクセス許
 
 [Microsoft 365 Enterprise のテスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise を展開する](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365-enterprise/)
+[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

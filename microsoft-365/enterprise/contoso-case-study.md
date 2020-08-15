@@ -1,5 +1,5 @@
 ---
-title: Contoso Corporation 向けの Microsoft 365 Enterprise
+title: Contoso Corporation 向けの Microsoft 365 for enterprise
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,26 +9,26 @@ ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: 架空ではあるが代表的な世界規模の組織が Microsoft 365 Enterprise をどのように導入したか。
-ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: HT
+description: 架空の代表的なグローバル組織が Microsoft 365 for enterprise を採用した方法。
+ms.openlocfilehash: fe9003531ada50374c0447c9b05a99798f883e47
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854260"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685988"
 ---
-# <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 Enterprise
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 for enterprise
 
-Microsoft 365 Enterprise は、Microsoft のプレミア クラウド製品であり、ローカルおよびクラウドベースの生産性アプリとサービスを Windows 10 Enterprise および高度なセキュリティ機能と組み合わせることで、あらゆるユーザーがクリエイティブで安全に共同作業ができるようにする包括的でインテリジェントなソリューションを提供します。 
+Microsoft 365 for enterprise は、ローカルおよびクラウドベースの生産性向上アプリとサービスを Windows 10 Enterprise および上級セキュリティ機能と組み合わせて、すべてのユーザーがクリエイティブで共同作業できる完全なインテリジェントソリューションを実現する、Microsoft のプレミアクラウドサービスです。 
 
-架空の企業、Contoso Corporation は、フランスのパリに本社を置く代表的な世界規模の製造業の複合企業です。Contoso 社は Microsoft 365 Enterprise を展開して、ネットワーク、ID、Windows 10 Enterprise、Microsoft 365 Apps for enterprise、モバイル デバイス管理、情報の保護、セキュリティに関する主な設計上の決定と実装の詳細に対応しました。 
+Contoso Corporation は架空のグローバル製造な企業製造で、その本社はパリ、フランスにあります。Contoso 社は、企業向けに Microsoft 365 を展開し、主な設計上の決定と、ネットワーク、id、Windows 10 Enterprise、Microsoft 365 Apps for enterprise、モバイルデバイス管理、情報保護、セキュリティの実装の詳細について説明してきました。 
 
-Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、クラウド サービスを使用することによって従業員、パートナー、データ、プロセスをまとめて管理し、デジタル トランスフォーメーションを促進することです。それにより、顧客にとっての価値を生み出し、デジタル ファーストの時代にあって競争力を維持することを目指しています。
+企業向けの Contoso 365 社の全体的な目標は、クラウドサービスを使用して、従業員、パートナー、データ、およびプロセスを共同で行うことにより、顧客の価値を高め、デジタル業界で競争上の優位性を維持することによって、デジタル変換を促進することです。
 
 詳細については、次の記事を参照してください。
 
@@ -62,11 +62,11 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
 - [情報保護](contoso-info-protect.md)
 
-  一般的なデータと価値の高いデータの両方を確実に識別し、ラベルを付け、適切なセキュリティ層の対象とするために、Contoso 社では、Microsoft 365 Enterprise の情報保護に伴うデータ セキュリティ ポリシーを施行しています。
+  共通のデータと高価値データの両方が識別され、ラベルが付けられ、セキュリティの階層に従っていることを確認するために、Contoso は企業情報保護のために Microsoft 365 とのデータセキュリティポリシーを適用します。
 
-- [Microsoft 365 Enterprise セキュリティの概要](contoso-security-summary.md)
+- [エンタープライズセキュリティのための Microsoft 365 の概要](contoso-security-summary.md)
 
-  Contoso 社では、ID およびアクセス管理、脅威保護、情報保護、およびセキュリティ管理のための幅広い Microsoft 365 Enterprise のセキュリティ機能を使用しています。
+  Contoso 社では、id およびアクセス管理、脅威保護、情報保護、およびセキュリティ管理のためのエンタープライズセキュリティ機能について、Microsoft 365 の全範囲を使用しています。
 
 - [極秘プロジェクトのチーム](../solutions/contoso-team-for-top-secret-project.md)
 
@@ -78,12 +78,12 @@ Microsoft 365 Enterprise に関する Contoso 社の全体的な目標は、ク�
 
 ## <a name="next-step"></a>次の手順
 
-Contoso Corporation とその世界各地のオフィス、Microsoft 365 Enterprise の展開時に扱われた設計上の考慮事項について[説明](contoso-overview.md)します。
+Contoso Corporation、ワールドワイドオフィス、Microsoft 365 for enterprise を展開したときに対処された設計上の考慮事項について[説明](contoso-overview.md)します。
 
 
 ## <a name="see-also"></a>関連項目
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 

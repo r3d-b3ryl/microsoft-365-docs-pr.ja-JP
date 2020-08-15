@@ -1,5 +1,5 @@
 ---
-title: セキュリティで保護された電子メールの推奨されるポリシー - Microsoft 365 Enterprise | Microsoft Docs
+title: セキュリティで保護された電子メールの推奨ポリシー-Microsoft 365 for enterprise |Microsoft Docs
 description: 電子メールのポリシーと構成を適用する方法に関する、Microsoft が推奨するポリシーについて説明します。
 author: brendacarter
 manager: laurawi
@@ -16,18 +16,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: c2eabd160cf221f7e2bb7b81f07c205135476cc9
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 39e7be86c06a471a4eefc0cacd3657c363eddae6
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617176"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685608"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
-この記事では、推奨される id とデバイスアクセスポリシーを実装して、先進認証および条件付きアクセスをサポートする組織の電子メールと電子メールクライアントを保護する方法について説明します。 このガイダンスは、[一般的な id とデバイスのアクセスポリシー](identity-access-policies.md)を基に作成されており、さらにいくつかの推奨事項も含まれています。
+この記事では、推奨される id とデバイスアクセスポリシーを実装して、先進認証および条件付きアクセスをサポートする組織の電子メールと電子メールクライアントを保護する方法について説明します。 このガイダンスは、 [一般的な id とデバイスのアクセスポリシー](identity-access-policies.md) を基に作成されており、さらにいくつかの推奨事項も含まれています。
 
-これらの推奨事項は、ニーズの粒度 (**基準**、**機密**、**高規制**) に基づいて適用できる、セキュリティと保護の3つの異なる層に基づいています。 これらのセキュリティ層と、以下の推奨事項で参照されている推奨されるクライアントのオペレーティング システムの詳細については、[推奨されるセキュリティ ポリシーと構成の概要](microsoft-365-policies-configurations.md)に関するページを参照してください。
+これらの推奨事項は、ニーズの粒度 ( **基準**、 **機密**、 **高規制**) に基づいて適用できる、セキュリティと保護の3つの異なる層に基づいています。 これらのセキュリティ層と、以下の推奨事項で参照されている推奨されるクライアントのオペレーティング システムの詳細については、[推奨されるセキュリティ ポリシーと構成の概要](microsoft-365-policies-configurations.md)に関するページを参照してください。
 
 これらの推奨事項では、ユーザーがモバイルデバイスの iOS および Android 用の Outlook を含むモダンメールクライアントを使用する必要があります。 IOS および Android 用の Outlook は、Office 365 の最適な機能をサポートします。 これらのモバイル Outlook アプリは、モバイル使用をサポートし、他の Microsoft クラウドセキュリティ機能と連携するセキュリティ機能を備えた設計も行われています。 詳細については、「 [iOS および Android 用の OUTLOOK FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)」を参照してください。
 
@@ -39,9 +39,9 @@ ms.locfileid: "46617176"
 
 [この画像のより大きいバージョンを表示する](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
 
-ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ルールは、[一般的な id およびデバイスアクセスポリシー](identity-access-policies.md)の記事に記載されている関連する構成手順にリンクします。
+ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ルールは、 [一般的な id およびデバイスアクセスポリシー](identity-access-policies.md) の記事に記載されている関連する構成手順にリンクします。
 
-|保護レベル|ポリシー|More information|
+|保護レベル|ポリシー|詳細情報|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
 |        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに Exchange Online を含める|
@@ -50,14 +50,14 @@ ms.locfileid: "46617176"
 |        |[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|クラウドアプリの一覧に Exchange Online を含める|
 |        |[ActiveSync クライアントをブロックする](#block-activesync-clients)|この新しいポリシーを追加する| 
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| クラウドアプリの割り当てに Exchange Online を含める|
-|         |[準拠*して*いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に Exchange Online を含める|
-|**厳しく規制**|[*常に*MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
+|         |[準拠 *して* いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に Exchange Online を含める|
+|**厳しく規制**|[*常に* MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントをブロックする
 
-このポリシーでは、ActiveSync クライアントが他の条件付きアクセスルールをバイパスできないようにします。 ルール構成は、ActiveSync クライアントにのみ適用されます。 [**[アプリ保護ポリシーを必須](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** にする] を選択すると、このポリシーによって ActiveSync クライアントがブロックされます。 このポリシーの作成の詳細については、「[条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」を参照してください。
+このポリシーでは、ActiveSync クライアントが他の条件付きアクセスルールをバイパスできないようにします。 ルール構成は、ActiveSync クライアントにのみ適用されます。 [ **[アプリ保護ポリシーを必須](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** にする] を選択すると、このポリシーによって ActiveSync クライアントがブロックされます。 このポリシーの作成の詳細については、「 [条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」を参照してください。
 
-1. 「[シナリオ 1: Office 365 アプリは、アプリ保護ポリシーを使用して承認済みアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)とする」の「手順 2: exchange Online の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
+1. 「 [シナリオ 1: Office 365 アプリは、アプリ保護ポリシーを使用して承認済みアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)とする」の「手順 2: exchange Online の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
 
 ## <a name="set-up-message-encryption"></a>メッセージの暗号化をセットアップする
 

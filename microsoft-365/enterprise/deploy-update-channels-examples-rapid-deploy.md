@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: 最新リリースを導入している組織での、Windows 10 アプリ、 Microsoft 365 アプリのチャネルの使用方法。
-ms.openlocfilehash: 46f36a7bd26ef190aca2a63fdaa993e420988b30
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200128"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686168"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新リリースの幅広い展開例
 
@@ -109,6 +109,6 @@ Microsoft 365 アプリの展開方法と戦略の詳細については、[Micro
 
 [展開および更新プログラム チャネルの構成例](deploy-update-channels-examples.md)
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
