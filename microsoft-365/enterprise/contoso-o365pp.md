@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Microsoft 365 Apps for enterprise を展開する方法について説明します。
-ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
-ms.translationtype: HT
+ms.openlocfilehash: de6a5348a49a490afa3c3ac632e66026966e2ef3
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679040"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695160"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 社の Microsoft 365 Apps for enterprise の展開
 
@@ -79,12 +79,12 @@ Contoso 社ではクラウドからデバイスを自動的に更新するよう
  
 ## <a name="next-step"></a>次の手順
 
-Contoso 社が Microsoft 365 Enterprise で Microsoft Intune を使用して、組織全体で実行されるデバイスとアプリを管理する方法について[説明](contoso-mdm.md)します。
+Contoso 社が microsoft 365 で microsoft Intune を使用して、自社のデバイスおよびそれらのデバイス上で実行されるアプリを管理する方法に[ついて説明](contoso-mdm.md)します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 Enterprise 用 Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)
+[Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[展開ガイド](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
