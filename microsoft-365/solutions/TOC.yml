@@ -105,6 +105,42 @@
               href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 多国籍企業のケーススタディ
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+        - name: 共同作業ガバナンス
+          items:
+            - name: 概要
+              href: collaboration-governance-overview.md
+            - name: 最初にガバナンス
+              href: collaboration-governance-first.md
+            - name: SharePoint を使用するグループ
+              href: groups-sharepoint-governance.md
+            - name: グループ、SharePoint、Teams
+              href: groups-sharepoint-teams-governance.md
+            - name: サービスの相互作用のリファレンス
+              href: groups-services-interactions.md
+            - name: Access
+              href: groups-teams-access-governance.md
+            - name: コンプライアンス
+              href: groups-teams-compliance-governance.md
+            - name: コミュニケーション
+              href: groups-teams-communication-governance.md
+            - name: 組織とライフサイクル
+              items:
+                - name: 組織とライフサイクルのガバナンス
+                  href: plan-organization-lifecycle-governance.md
+                - name: グループの作成を管理する
+                  href: manage-creation-of-groups.md
+                - name: 名前付けポリシー
+                  href: groups-naming-policy.md
+                - name: 有効期限ポリシー
+                  href: microsoft-365-groups-expiration-policy.md
+                - name: グループごとのゲスト アクセス
+                  href: per-group-guest-access.md
+                - name: 送信者ポリシー
+                  href: allow-members-to-send-as-or-send-on-behalf-of-group.md
+                - name: グループ作成ドメイン
+                  href: choose-domain-to-create-groups.md
+                - name: ライフサイクル終了オプション
+                  href: end-life-cycle-groups-teams-sites-yammer.md
         - name: Microsoft 365 での SharePoint のファイルの共同作業
           href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: インテリジェントな SharePoint イントラネットを計画する

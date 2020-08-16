@@ -343,8 +343,12 @@
       items:
         - name: レコード管理
           href: records-management.md
-        - name: レコード
+        - name: レコードについての詳細
           href: records.md
+        - name: レコードの宣言
+          href: declare-records.md
+        - name: レコードのバージョン管理
+          href: record-versioning.md
 - name: eDiscovery の管理
   items:
     - name: Microsoft 365のeDiscovery in

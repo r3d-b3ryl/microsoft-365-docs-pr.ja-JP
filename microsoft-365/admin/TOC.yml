@@ -133,20 +133,8 @@
               href: create-groups/add-or-remove-members-from-groups.md
             - name: 削除したグループを復元する
               href: create-groups/restore-deleted-group.md
-            - name: グループのガバナンスを計画する
-              href: create-groups/plan-for-groups-governance.md
-            - name: グループの作成を管理する
-              href: create-groups/manage-creation-of-groups.md
-            - name: グループのドメインを選ぶ
-              href: create-groups/choose-domain-to-create-groups.md
-            - name: グループの名前付けポリシーの概要
-              href: create-groups/groups-naming-policy.md
-            - name: メンバーがグループとの間でメールを送受信できるようにする
-              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
             - name: グループへのゲスト アクセスを管理する
               href: create-groups/manage-guest-access-in-groups.md
-            - name: グループで秘密度ラベルを使用する
-              href: ../compliance/sensitivity-labels-teams-groups-sites.md
     - name: メールと予定表を管理する
       href: email/index.yml
       items:
