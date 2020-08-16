@@ -1,5 +1,5 @@
 ---
-title: キーワード ディクショナリを作成する
+title: キーワード 辞書を作成する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,33 +17,50 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Office 365 セキュリティ & コンプライアンスセンターでキーワードディクショナリを作成するための基本的な手順について説明します。
-ms.openlocfilehash: a2b56d013b452f02a26ea956da19e5644bf9d44a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
-ms.translationtype: MT
+description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
+ms.openlocfilehash: d3308de0138b13391a5bd8a4493cda87c4023bd8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648730"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686639"
 ---
-# <a name="create-a-keyword-dictionary"></a>キーワード 辞書を作成する
+# <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
-データ損失防止 (DLP) は、機密情報を識別、監視、保護することができます。 機密情報を特定するには、特に、一般的なコンテンツ (医療関連の通信など) や不適切または明示的な言語を特定するときにキーワードの検索が必要になることがあります。 キーワードリストは機密情報の種類に作成できますが、キーワードリストのサイズは制限されており、作成または編集するには XML を変更する必要があります。 キーワード辞書を使用すると、キーワードを簡単に管理でき、より大きなスケールで、1辞書に最大10万用語をサポートし、任意の言語をサポートします。
+データ損失防止 (DLP) は、機密アイテムの識別、監視、および保護を行うことができます。 機密アイテムの識別には、特に汎用コンテンツ (医療関連の通信など) または不適切な言語や露骨な表現を識別するときに、キーワードを検索する必要がある場合があります。 機密情報の種類でキーワード リストを作成することができますが、キーワード リストにはサイズの制限があり、リストの作成や編集を行うには、XML を変更する必要があります。 キーワード ディクショナリでは、簡単なキーワードの管理を、ディクショナリごとに最大 100,000 語をサポートする大きなスケールで提供します。
+  
+> [!NOTE]
+> Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
+> - 中国語 (簡体字)
+> - 中国語 (繁体字)
+> - 韓国語
+> - 日本語
+> 
+>このプレビューは、商用クラウドにのみ表示され、ロールアウトは以下に限られます。
+> - 日本
+> - 韓国
+> - 中国
+> - 香港特別行政区
+> - マカオ
+> - 台湾
+>
+>このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (プレビュー) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>キーワード ディクショナリを作成する基本的な手順
 
 ディクショナリのキーワードを、さまざまなソースから作成することができます。一般的な例として、サービスにインポートされたファイルや PowerShell コマンドレットでインポートされたファイル (.csv または .txt リストなど)、PowerShell コマンドレットで直接入力するリスト、または既存のディクショナリなどがあります。キーワード ディクショナリを作成するときには、次の同じ基本手順に従います。
   
-1. **セキュリティ & コンプライアンスセンター** ( [https://protection.office.com](https://protection.office.com) ) を使用するか、**セキュリティ &amp; コンプライアンスセンターの PowerShell**に接続します。
+1. **セキュリティ/コンプライアンス センター** ([https://protection.office.com](https://protection.office.com)) を使用するか、**セキュリティ &amp; コンプライアンス センター PowerShell** に接続します。
     
-2. **目的のソースからキーワードを定義または読み込み**ます。 ウィザードとコマンドレットはどちらも、ユーザー設定のキーワード辞書を作成するためのキーワードのコンマ区切りのリストを受け入れます。この手順は、キーワードの取得元に応じて若干異なります。 いったん読み込まれたキーワードは、インポートされる前にエンコードされてバイト配列に変換されます。
+2. **目的のソースからキーワードを定義または読み込みます**。 ウィザードとコマンドレットの両方でコンマ区切りキーワード リストを使ってカスタム キーワード ディクショナリを作成できるので、この手順はキーワードがどこから得られるかによって多少異なります。 いったん読み込まれたキーワードは、インポートされる前にエンコードされてバイト配列に変換されます。
     
-3. **辞書を作成**します。 名前と説明を選択し、辞書を作成します。
+3. **ディクショナリを作成します**。 名前と説明を選択し、ディクショナリを作成します。
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターを使用してキーワードディクショナリを作成する
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターを使用してキーワード ディクショナリを作成する
 
 ユーザー辞書のキーワードを作成してインポートするには、次の手順を実行します。
 
-1. セキュリティ & コンプライアンスセンター () に接続し [https://protection.office.com](https://protection.office.com) ます。
+1. セキュリティ/コンプライアンス センターに接続します ([https://protection.office.com](https://protection.office.com))。
 
 2. **[分類] > [機密情報の種類]** の順に移動します。
 
@@ -69,7 +86,7 @@ ms.locfileid: "46648730"
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>PowerShell を使用してファイルからキーワード ディクショナリを作成する
 
-多くの場合、大きい辞書を作成する必要がある場合は、ファイルまたは他のソースからエクスポートされたリストのキーワードを使用することをお勧めします。この例では、外部電子メールで画面に表示するのに適していない言語のリストを含むキーワードディクショナリを作成します。最初に、[セキュリティ &amp; コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)する必要があります。
+大きなディクショナリを作成する必要がある場合、それは他のソースからエクスポートされたファイルやリストからのキーワードを使用するためであることが多いです。 この場合、外部メールの画面に対する不適切な言語のリストを含めて、キーワード ディクショナリを作成します。 まず、[セキュリティ &amp; コンプライアンス センター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) に接続します。
   
 1. キーワードをテキスト ファイルにコピーし、各キーワードが別個の行にあるかどうかを確認します。
     
@@ -91,7 +108,7 @@ ms.locfileid: "46648730"
 
 キーワード ディクショナリのいずれかでキーワードを変更したり、組み込みのディクショナリのいずれかを変更したりする必要が生じることがあります。 現在のところ、PowerShell を使用してのみ、カスタム キーワード ディクショナリを更新できます。 
 
-たとえば、いくつかの用語を PowerShell で変更し、それらをエディターで変更できるようにローカルに保存してから、以前の用語をインプレースで更新します。 
+たとえば、PowerShell で用語をいくつか変更し、ローカル環境のエディターで用語を変更できる場所に用語を保存して、元の用語をそこで更新します。 
 
 最初に、ディクショナリ オブジェクトを取得します。
   
@@ -99,9 +116,9 @@ ms.locfileid: "46648730"
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-印刷 `$dict` にはさまざまな変数が表示されます。 キーワード自体はバックエンドのオブジェクトに格納されますが、 `$dict.KeywordDictionary` 辞書を変更するために使用する文字列表現が含まれています。 
+`$dict` を印刷すると、さまざまな変数が表示されます。 キーワード自体はバックエンドのオブジェクトに保存されますが、`$dict.KeywordDictionary` にはその文字列表現が含まれ、ディクショナリを変更するために使用します。 
 
-辞書を変更する前に、メソッドを使用して用語の文字列を配列に戻す必要があり `.split(',')` ます。 その後、メソッドを使用してキーワード間の不要なスペースをクリーンアップし `.trim()` 、操作するキーワードだけを残します。 
+ディクショナリを変更する前に、`.split(',')` メソッドを使用して、用語の文字列を配列に戻す必要があります。 使用するキーワードだけを残し、`.trim()` メソッドでキーワード間の不要なスペースを取り除きます。 
   
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -182,7 +199,7 @@ PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>カスタムの機密情報の種類と DLP ポリシーでキーワード ディクショナリを使う
 
-キーワード辞書は、カスタムの機密情報の種類の一致要件の一部として、または機密情報の種類自体として使用できます。 どちらの場合も、[カスタムの機密情報の種類](create-a-custom-sensitive-information-type-in-scc-powershell.md)を作成する必要があります。 リンクされた記事の手順に従って、機密情報の種類を作成します。 XML を取得したら、それを使用するには、ディクショナリの GUID 識別子が必要になります。
+キーワード ディクショナリは、カスタムの機密情報の種類に一致する要件の一部として、または機密情報の種類自体として使用できます。 どちらも、[カスタムの機密情報の種類](create-a-custom-sensitive-information-type-in-scc-powershell.md) を作成する必要があります。 リンク先の記事の手順に従って、機密情報の種類を作成します。 XML がある場合は、それを使用するディクショナリの GUID 識別子が必要になります。
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
