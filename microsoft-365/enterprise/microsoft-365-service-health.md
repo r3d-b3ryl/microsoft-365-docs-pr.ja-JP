@@ -16,18 +16,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 サービス正常性の状態
-ms.openlocfilehash: 26a9983528072054606cc399ad871d0f99fd22fb
-ms.sourcegitcommit: d818828c66cf98b0b0037ba8b3cb790c940281b7
+ms.openlocfilehash: f7bb310452f841c04eabdd683d3ec82b4ad2b57a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43583359"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686604"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 ネットワーク正常性の状態
 
 新型コロナウイルス感染症 (COVID-19) のために生じている危機的な状況により Microsoft のクラウド サービスの需要が高まっているため、Microsoft のグローバル ネットワークの正常性に関する情報と、お客様が経験する可能性があるが弊社が制御できないネットワーク品質の問題に関する情報を提供します。
 
-この情報には、Office 365 を含む、弊社のすべての「サービスとしてのソフトウェア」製品に影響するネットワーク問題が含まれます。
+この情報には、Microsoft 365 を含む、弊社のすべての「サービスとしてのソフトウェア」製品に影響するネットワーク問題が含まれます。
 
 _このページの更新は遅れる可能性があります。より自動化されたソリューションを構築しつつ、手動で更新しています。_
 
@@ -43,6 +43,6 @@ Microsoft のグローバル ネットワーク内、またはお客様と Micro
 
 Microsoft サービスのネットワーク使用改善のために、これらのリソースをご利用ください。
 
-- [VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
-- [ネットワーク接続の Office 365 の原則](https://aka.ms/pnc)
+- [VPN スプリット トンネリングを使用してリモート ユーザーの Microsoft 365 の接続を最適化する](microsoft-365-vpn-split-tunnel.md)
+- [ネットワーク接続の Microsoft 365 の原則](https://aka.ms/pnc)
 - [Azure ネットワーク サービスを使用してリモートで作業する](https://docs.microsoft.com/azure/networking/working-remotely-support)
