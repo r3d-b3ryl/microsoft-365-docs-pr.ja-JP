@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: ユーザーにライセンスを割り当てる方法を説明します。
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015949"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757559"
 ---
 # <a name="assign-licenses-to-users"></a>ユーザーにライセンスを割り当てる
 
@@ -160,6 +160,25 @@ ms.locfileid: "45015949"
 5. [**製品ライセンス**] ウィンドウの下部で、 [**保存**] \> [**閉じる**] \> [**閉じる**] の順に選択します。
 
 ::: moniker-end
+
+## <a name="assign-a-license-to-a-guest-user"></a>ゲスト ユーザーにライセンスを割り当てる
+
+ゲスト ユーザーを招待して、Azure Active Directory 管理センターで組織と共同作業できます。 ゲスト ユーザーについては、「[Azure Active Directory B2B のゲスト ユーザーアクセスとは?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b)」を参照してください。 ゲスト ユーザーがいない場合は、「[クイック スタート: Azure Portal のディレクトリにゲスト ユーザーを追加する](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)」を参照してください。
+
+> [!IMPORTANT]
+> 次の手順を実行するには、全体管理者である必要があります。
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory 管理センター</a>に移動します。
+2. ナビゲーション ウィンドウで、**[ユーザー]** を選択します。
+3. **[ユーザー | すべてのユーザー (プレビュー)]** ページで **[フィルターの追加]** を選択します。
+4. **[フィールドの選択**] メニューから **[ユーザーの種類]** を選択して、**[適用]** を選択します。
+5. 次のメニューから **[ゲスト]** を選択します。
+6. 結果のリストから、ライセンスが必要なユーザーを選択します。
+7. **[管理]** で **[ライセンス]** を選択します。
+8. **[割り当て]** を選択します。
+9. **[ライセンスの割り当ての更新]** ページで、ライセンスを割り当てる製品を選択します。
+10. 右側で、ゲスト ユーザーにアクセスを許可しないサービスのチェック ボックスをオフにします。
+11. **[保存]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 
