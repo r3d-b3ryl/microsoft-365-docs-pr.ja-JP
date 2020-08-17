@@ -2,220 +2,697 @@
   href: index.yml
 - name: Microsoft 365 for enterprise の概要
   href: microsoft-365-overview.md
-- name: Microsoft 365 for enterprise を展開する
-  href: deploy-microsoft-365-enterprise.md
+- name: ネットワーク
   items:
-    - name: 基礎インフラストラクチャを展開する
-      href: deploy-foundation-infrastructure.md
+    - name: ロードマップ
+      href: networking-roadmap-microsoft-365.md
+    - name: 計画
       items:
-        - name: フェーズ 1 - ネットワーク
-          href: networking-infrastructure.md
-          items:
-            - name: 手順 1 - Microsoft 365 のネットワークを準備する
-              href: networking-provide-bandwidth-cloud-services.md
-            - name: 手順 2 - オフィスごとにローカルのインターネット接続を構成する
-              href: networking-dns-resolution-same-location.md
-            - name: 手順 3 - ネットワーク ヘアピンを回避する
-              href: networking-avoid-network-hairpins.md
-            - name: 手順 4 - トラフィック バイパスを構成する
-              href: networking-configure-proxies-firewalls.md
-            - name: 手順 5 - クライアントとサービスのパフォーマンスを最適化する
-              href: networking-optimize-tcp-performance.md
-            - name: ネットワークの終了条件
-              href: networking-exit-criteria.md
-        - name: フェーズ 2 - ID
-          href: identity-infrastructure.md
-          items:
-            - name: 手順 1 - グローバル管理者アカウントを作成して保護する
-              href: identity-create-protect-global-admins.md
-            - name: 手順 2 - パスワードをセキュリティで保護する
-              href: identity-secure-your-passwords.md
-            - name: 手順 3 - ユーザーのサインインをセキュリティで保護して管理する
-              href: identity-secure-user-sign-ins.md
-            - name: 手順 4 - ユーザ アカウントを追加する
-              href: identity-add-user-accounts.md
-            - name: 手順 5 - 管理にグループを使用する
-              href: identity-use-group-management.md
-            - name: 手順 6 - Identity Governance を構成する
-              href: identity-configure-identity-governance.md
-            - name: ID の終了条件
-              href: identity-exit-criteria.md
-        - name: フェーズ 3 - Windows 10 Enterprise
-          href: windows10-infrastructure.md
-          items:
-            - name: 手順 1 - 組織の準備をする
-              href: windows10-prepare-your-org.md
-            - name: 手順 2 - インプレース アップグレードとして展開する
-              href: windows10-deploy-inplaceupgrade.md
-            - name: 手順 3 - 新しいデバイス用に展開する
-              href: windows10-deploy-autopilot.md
-            - name: 手順 4 - デバイスの正常性とコンプライアンスを監視する
-              href: windows10-enable-windows-analytics.md
-            - name: 手順 5 - セキュリティ機能を展開する
-              href: windows10-enable-security-features.md
-            - name: Windows 10 Enterprise の終了条件
-              href: windows10-exit-criteria.md
-        - name: 'フェーズ 4: Microsoft 365 Apps for enterprise'
-          href: office365proplus-infrastructure.md
-          items:
-            - name: Microsoft 365 Apps for enterprise の終了条件
-              href: office365proplus-exit-criteria.md
-        - name: フェーズ 5 - モバイル デバイス管理
-          href: mobility-infrastructure.md
-          items:
-            - name: モバイル デバイス管理の終了条件
-              href: mobility-infrastructure-exit-criteria.md
-        - name: フェーズ 6 - 情報保護
-          href: infoprotect-infrastructure.md
-          items:
-            - name: 手順 1 - セキュリティおよび情報保護のレベルを定義する
-              href: infoprotect-define-sec-infoprotect-levels.md
-            - name: 手順 2 - 環境の分類を構成する
-              href: infoprotect-configure-classification.md
-            - name: 手順 3 - Microsoft 365 のセキュリティ強化を構成する
-              href: infoprotect-configure-increased-security-office-365.md
-            - name: 手順 4 - Windows 情報保護を構成する
-              href: infoprotect-deploy-windows-information-protection.md
-            - name: 手順 5 - データ損失防止 (DLP) を構成する
-              href: infoprotect-data-loss-prevention.md
-            - name: 手順 6 - 電子メールの暗号化を構成する
-              href: infoprotect-email-encryption.md
-            - name: 手順 7 - Office 365 の特権アクセス管理を構成する
-              href: infoprotect-configure-privileged-access-management.md
-            - name: 情報保護の終了条件
-              href: infoprotect-exit-criteria.md
-        - name: 展開戦略
-          href: deployment-strategies-microsoft-365-enterprise.md
-        - name: 既存のインフラストラクチャを利用して展開する
-          href: deploy-with-existing-infrastructure.md
-        - name: 展開および更新プログラム チャネルの構成例
-          href: deploy-update-channels-examples.md
-          items:
-            - name: 最新リリースの幅広い展開
-              href: deploy-update-channels-examples-rapid-deploy.md
-        - name: 非エンタープライズ向けに展開する
-          href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: ワークロードを展開する
-      href: deploy-workloads.md
+        - name: Microsoft 365 ネットワーク接続の概要
+          href: microsoft-365-networking-overview.md
+        - name: Microsoft 365 ネットワーク接続の原則
+          href: microsoft-365-network-connectivity-principles.md
+        - name: Microsoft 365 ネットワーク接続の評価
+          href: assessing-network-connectivity.md
+        - name: Office 365 向け ExpressRoute のネットワーク計画
+          href: network-planning-with-expressroute.md
+        - name: Microsoft 365 サービスに接続するネットワーク デバイスの計画
+          href: plan-for-network-devices.md
+        - name: Microsoft 365 のネットワークと移行の計画
+          href: network-and-migration-planning.md
+    - name: 展開
       items:
-        - name: Microsoft Teams
-          href: teams-workload.md
-        - name: Exchange Online
-          href: exchangeonline-workload.md
-        - name: SharePoint および OneDrive for Business
-          href: sharepoint-online-onedrive-workload.md
-        - name: 移行
-          href: migration-microsoft-365-enterprise-workload.md
-    - name: テスト ラボ ガイド
-      href: m365-enterprise-test-lab-guides.md
+        - name: ドメインの追加
+          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: M365E エンドポイントのホワイトリストを構成する
+          items:
+            - name: Office 365 IP アドレスと URL の Web サービス
+              href: microsoft-365-ip-web-service.md
+            - name: Web サービスに含まれていないその他のエンドポイント
+              href: additional-office365-ip-addresses-and-urls.md
+        - name: SharePoint Online での Office 365 CDN の使用
+          href: use-microsoft-365-cdn-with-spo.md
+        - name: リモート ユーザーの接続を最適化する
+          items:
+            - name: VPN 分割トンネリングの概要
+              href: microsoft-365-vpn-split-tunnel.md
+            - name: VPN の分割トンネリングを実装する
+              href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: 中国ユーザー向け Microsoft 365 の最適化
+              href: microsoft-365-networking-china.md
+            - name: ネイティブ Windows 10 VPN クライアントでリモートワーカーのための Microsoft 365 のトラフィックを最適化する
+              href: 'https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization'
+        - name: Office 365 向け ExpressRoute
+          href: azure-expressroute.md
+          items:
+            - name: Office 365 向け ExpressRoute でのルーティング
+              href: routing-with-expressroute.md
+    - name: 管理
       items:
-        - name: 基本構成
+        - name: Office 365 エンドポイント
           items:
-            - name: ライトウェイト
-              href: lightweight-base-configuration-microsoft-365-enterprise.md
-            - name: シミュレートされたエンタープライズ
-              href: simulated-ent-base-configuration-microsoft-365-enterprise.md
-        - name: ID
+            - name: Microsoft 365 エンドポイント
+              href: microsoft-365-endpoints.md
+            - name: 世界中のエンドポイント
+              href: urls-and-ip-address-ranges.md
+            - name: 米国政府の DoD エンドポイント
+              href: microsoft-365-u-s-government-dod-endpoints.md
+            - name: 米国政府の GCC High エンドポイント
+              href: microsoft-365-u-s-government-gcc-high-endpoints.md
+            - name: 21Vianet エンドポイントが運用している Office 365
+              href: urls-and-ip-address-ranges-21vianet.md
+            - name: Office 365 Germany のエンドポイント
+              href: microsoft-365-germany-endpoints.md
+        - name: コンテンツ配信ネットワーク
+          href: content-delivery-networks.md
+        - name: Office 365 サービスでの IPv6 サポート
+          href: ipv6-support.md
+        - name: Office 365 の NAT サポート
+          href: nat-support-with-microsoft-365.md
+        - name: Office for Mac でのネットワーク要求
+          href: network-requests-in-office-2016-for-mac.md
+        - name: ネットワーク計画とパフォーマンスのチューニング
+          href: network-planning-and-performance.md
+        - name: 接続を監視する
+          href: monitor-connectivity.md
+        - name: ExpressRoute の管理
+          href: managing-expressroute-for-connectivity.md
+    - name: Office 365 ネットワーク パートナー プログラム
+      href: microsoft-365-networking-partner-program.md
+- name: テナント
+  items:
+    - name: ロードマップ
+      href: tenant-roadmap-microsoft-365.md
+    - name: 計画
+      items:
+        - name: サブスクリプション、ライセンス、アカウント、およびテナント
+          href: subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md
+        - name: サード パーティ SSL 証明書の計画
+          href: plan-for-third-party-ssl-certificates.md
+        - name: セットアップ ガイド
+          href: setup-guides-for-microsoft-365.md
+        - name: 統合
           items:
-            - name: パスワード ハッシュの同期
-              href: password-hash-sync-m365-ent-test-environment.md
-            - name: パススルー認証
-              href: pass-through-auth-m365-ent-test-environment.md
-            - name: フェデレーション認証
-              href: federated-identity-for-your-office-365-dev-test-environment.md
-            - name: Azure AD シームレス シングル サインオン
-              href: single-sign-on-m365-ent-test-environment.md
-            - name: 多要素認証
-              href: multi-factor-authentication-microsoft-365-test-environment.md
-            - name: グローバル管理者アカウントを保護する
-              href: protect-global-administrator-accounts-microsoft-365-test-environment.md
-            - name: パスワードの書き戻し
-              href: password-writeback-m365-ent-test-environment.md
-            - name: パスワードのリセット
-              href: password-reset-m365-ent-test-environment.md
-            - name: ライセンスとグループ メンバーシップの自動管理
-              href: automate-licenses-group-membership-microsoft-365-test-environment.md
-            - name: Azure AD Identity Protection
-              href: azure-ad-identity-protection-microsoft-365-test-environment.md
-            - name: ID と デバイス アクセス
-              href: identity-device-access-m365-test-environment.md
+            - name: 統合アプリおよび Azure AD
+              href: integrated-apps-and-azure-ads.md
+            - name: オンプレミスとの統合
+              href: microsoft-365-integration.md
+            - name: Azure との統合
+              href: azure-integration.md
+            - name: Azure ExpressRoute
+              href: azure-expressroute.md
+            - name: Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
+              href: modern-auth-for-office-2013-and-2016.md
+        - name: テナント間コラボレーション
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: クライアント アプリのサポート
+          items:
+            - name: 証明書ベースの認証
+              href: microsoft-365-client-support-certificate-based-authentication.md
+            - name: 条件付きアクセス
+              href: microsoft-365-client-support-conditional-access.md
+            - name: 基本的なモビリティ セキュリティと Intune のどちらかを選択する
+              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
+            - name: 先進認証
+              href: microsoft-365-client-support-modern-authentication.md
+            - name: シングル サインオン
+              href: microsoft-365-client-support-single-sign-on.md
+        - name: ハイブリッド先進認証
+          items:
+            - name: Skype for Business Server と Exchange Server の前提条件
+              href: hybrid-modern-auth-overview.md
+            - name: Exchange Server の構成
+              href: configure-exchange-server-for-hybrid-modern-authentication.md
+            - name: Skype for Business の構成
+              href: configure-skype-for-business-for-hybrid-modern-authentication.md
+            - name: Skype for Business と Exchange の削除または無効化
+              href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+        - name: アップグレードの計画
+          href: plan-upgrade-previous-versions-office.md
+          items:
+            - name: Office 2007
               items:
-                - name: クラウド専用
-                  href: cloud-only-prereqs-m365-test-environment.md
-                - name: パスワード ハッシュの同期
-                  href: phs-prereqs-m365-test-environment.md
-                - name: パススルー認証
-                  href: pta-prereqs-m365-test-environment.md
-        - name: モバイル デバイス管理
+                - name: Office 2007 サーバー/クライアントからアップグレードする
+                  href: upgrade-from-office-2007-servers-and-products.md
+                - name: Office 2007 デスクトップ
+                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2007-end-support-roadmap'
+                - name: Exchange 2007
+                  href: exchange-2007-end-of-support.md
+                - name: SharePoint 2007
+                  href: sharepoint-2007-end-of-support.md
+                - name: Office Communications Server
+                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                - name: PerformancePoint Server 2007
+                  href: pps-2007-end-of-support.md
+                - name: Project Server 2007
+                  href: project-server-2007-end-of-support.md
+            - name: Office 2010
+              items:
+                - name: Office 2010 サーバー/クライアントからアップグレードする
+                  href: upgrade-from-office-2010-servers-and-products.md
+                - name: Office 2010 デスクトップ
+                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2010-end-support-roadmap'
+                - name: Exchange 2010
+                  href: exchange-2010-end-of-support.md
+                - name: SharePoint 2010
+                  href: upgrade-from-sharepoint-2010.md
+                - name: Lync Server 2010
+                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                - name: Project Server 2010
+                  href: project-server-2010-end-of-support.md
+        - name: Microsoft 365 でのテナントの分離
+          href: microsoft-365-tenant-isolation-overview.md
           items:
-            - name: iOS および Android デバイスを登録する
-              href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
-            - name: デバイス コンプライアンス ポリシー
-              href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
-        - name: 情報保護
+            - name: Azure Active Directory Domain Services での分離とアクセス制御
+              href: microsoft-365-isolation-in-azure-active-directory.md
+            - name: テナント境界の監視とテスト
+              href: microsoft-365-monitoring-and-testing.md
+            - name: リソースの制限
+              href: microsoft-365-resource-limits.md
+            - name: 分離とアクセス制御
+              href: microsoft-365-isolation-in-microsoft-365.md
+            - name: 検索でのテナントの分離
+              href: microsoft-365-isolation-in-microsoft-365-search.md
+            - name: ビデオでのテナントの分離
+              href: microsoft-365-isolation-in-microsoft-365-video.md
+            - name: Office Graph と Delve でのテナントの分離
+              href: microsoft-365-isolation-in-graph-and-delve.md
+        - name: サービス アシュアランス
           items:
-            - name: 強化された Microsoft 365 のセキュリティ
-              href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
-            - name: データの分類
-              href: data-classification-microsoft-365-enterprise-dev-test-environment.md
-            - name: 特権アクセス管理
-              href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
-    - name: Contoso 社の導入事例
-      href: contoso-case-study.md
+            - name: セキュリティ/コンプライアンス センターのサービス アシュアランス
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/service-assurance'
+            - name: 管理用アクセス制御
+              href: microsoft-365-administrative-access-controls-overview.md
+              items:
+                - name: アクセス制御の監視と監査
+                  href: microsoft-365-monitoring-and-auditing-access-controls.md
+                - name: 分離の制御
+                  href: microsoft-365-isolation-controls.md
+                - name: 担当者の制御
+                  href: microsoft-365-personnel-controls.md
+                - name: 技術の制御
+                  href: microsoft-365-technology-controls.md
+                - name: Yammer Enterprise でのアクセス制御
+                  href: microsoft-365-yammer-enterprise-access-controls.md
+            - name: 監査と報告
+              href: microsoft-365-auditing-and-reporting-overview.md
+              items:
+                - name: レポート作成機能
+                  href: microsoft-365-reporting-features.md
+                - name: 電子情報開示と検索機能
+                  href: microsoft-365-ediscovery-and-search-features.md
+                - name: Microsoft 365 のエンジニアリングのための内部ログ記録
+                  href: microsoft-365-internal-logging.md
+                - name: メールボックスの移行
+                  href: microsoft-365-mailbox-migrations.md
+                - name: 管理アクティビティ API
+                  href: microsoft-365-management-activity-api.md
+            - name: データの回復性
+              href: microsoft-365-data-resiliency-overview.md
+              items:
+                - name: データの破損の対処
+                  href: microsoft-365-dealing-with-data-corruption.md
+                - name: Exchange Online データの回復
+                  href: microsoft-365-exchange-data-resiliency.md
+                - name: マルウェアと ランサムウェアからの保護
+                  href: microsoft-365-malware-and-ransomware-protection.md
+                - name: 監視と自己修復
+                  href: microsoft-365-monitoring-and-self-healing.md
+            - name: データの保持、削除、および破棄
+              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
+              items:
+                - name: データの破棄
+                  href: microsoft-365-data-destruction.md
+                - name: 不変性
+                  href: microsoft-365-data-immutability.md
+                - name: Exchange Online データの削除
+                  href: microsoft-365-exchange-online-data-deletion.md
+                - name: SharePoint Online データの削除
+                  href: microsoft-365-sharepoint-online-data-deletion.md
+                - name: Skype for Business データの削除
+                  href: microsoft-365-skype-data-deletion.md
+            - name: サービス拒否攻撃からの保護
+              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
+              items:
+                - name: サービス拒否攻撃に対する Microsoft の防御戦略
+                  href: microsoft-365-microsoft-dos-defense-strategy.md
+                - name: サービス拒否攻撃に対する防御の主要な原則
+                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
+            - name: Microsoft Cloud での暗号化
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview'
+              items:
+                - name: Microsoft 365 でのサービスの暗号化
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption'
+                - name: 転送中データの暗号化
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit'
+                - name: 顧客により管理される暗号化機能
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features'
+                - name: 暗号化のリスクと保護
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections'
+                - name: Skype for Business、OneDrive for Business、SharePoint Online、Exchange Online の暗号化
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange'
+                - name: Microsoft Dynamics 365 での暗号化
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365'
+                - name: Azure での暗号化
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption'
+    - name: 展開
       items:
-        - name: 概要
-          href: contoso-overview.md
-        - name: Contoso 社の IT インフラストラクチャおよびニーズ
-          href: contoso-infra-needs.md
-        - name: ネットワーク
-          href: contoso-networking.md
-        - name: ID
-          href: contoso-identity.md
-        - name: Windows 10 Enterprise
-          href: contoso-win10.md
-        - name: Microsoft 365 Apps for enterprise
-          href: contoso-o365pp.md
-        - name: モバイル デバイス管理
-          href: contoso-mdm.md
-        - name: 情報保護
-          href: contoso-info-protect.md
-        - name: セキュリティの概要
-          href: contoso-security-summary.md
-    - name: Microsoft 365 サービス正常性の状態
-      href: microsoft-365-service-health.md
-- name: 最新デスクトップ展開センター
-  href: desktop-deployment-center-home.md
+        - name: ドメインの追加
+          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: Multi-Geo
+      items:
+        - name: Microsoft 365 Multi-Geo
+          href: microsoft-365-multi-geo.md
+        - name: OneDrive と SharePoint の複数地域機能
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
+        - name: Exchange Multi-Geo
+          href: multi-geo-capabilities-in-exchange-online.md
+        - name: 計画
+          items:
+            - name: 複数地域機能の計画
+              href: plan-for-multi-geo.md
+            - name: 管理エクスペリエンス
+              href: administering-a-multi-geo-environment.md
+            - name: ユーザー エクスペリエンス
+              href: multi-geo-user-experience.md
+        - name: 展開
+          items:
+            - name: 複数地域機能の構成
+              href: multi-geo-tenant-configuration.md
+            - name: 優先されるデータの場所の構成
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json
+            - name: 検索の構成
+              href: configure-search-for-multi-geo.md
+        - name: 管理
+          items:
+            - name: 複数地域環境の管理
+              href: administering-a-multi-geo-environment.md
+            - name: SharePoint クォータの管理
+              href: sharepoint-multi-geo-storage-quota.md
+            - name: OneDrive サイトの移動
+              href: move-onedrive-between-geo-locations.md
+            - name: SharePoint サイトの移動
+              href: move-sharepoint-between-geo-locations.md
+            - name: 地域管理者を追加または削除する
+              href: add-a-sharepoint-geo-admin.md
+            - name: 地域の場所にコンテンツを制限する
+              href: restrict-content-to-geo-location.md
+            - name: Microsoft 365 Multi-Geo 電子情報開示を構成する
+              href: multi-geo-ediscovery-configuration.md
+            - name: 特定 PDL でのグループの作成
+              href: multi-geo-add-group-with-pdl.md
+            - name: 地理的位置の削除
+              href: delete-a-geo-location.md
+            - name: サテライト地域で SharePoint Multi-Geo の有効化
+              href: enabling-SP-multigeo-satellite-geolocation.md
+            - name: Exchange Multi-Geo の管理
+              href: administering-exchange-online-multi-geo.md
+    - name: 新しい Microsoft 365 データセンター GEO に移行する
+      href: moving-data-to-new-datacenter-geos.md
+      items:
+        - name: データ移行をリクエストする方法
+          href: request-your-data-move.md
+        - name: データの移行中および移行後
+          href: during-and-after-your-data-move.md
+        - name: データ移行についての一般的な FAQ
+          href: data-move-faq.md
+        - name: 'Microsoft Cloud Deutschland: Office 365 移行プログラム'
+          href: ms-cloud-germany-transition.md
+        - name: 'Microsoft Cloud Deutschland: 移行のオプト イン'
+          href: ms-cloud-germany-migration-opt-in.md
+        - name: 顧客データの保存場所
+          href: o365-data-locations.md
+- name: ID
   items:
-    - name: はじめに - ユーザー、プロセス、およびテクノロジのガイダンス
-      href: getting-started.md
-    - name: 手順 1 - デバイスとアプリの準備
-      href: step-1-device-and-app-readiness.md
-    - name: 手順 2 - ディレクトリとネットワークの準備
-      href: step-2-directory-and-network-readiness.md
-    - name: 手順 3 - Office および LOB アプリの配信
-      href: step-3-office-and-lob-app-delivery.md
-    - name: 手順 4 - ユーザーのファイルと設定の移行
-      href: step-4-user-files-and-settings-migration.md
-    - name: 手順 5 - セキュリティとコンプライアンスに関する考慮事項
-      href: step-5-security-and-compliance.md
-    - name: 手順 6 - OS の展開と機能更新プログラム
-      href: step-6-os-deployment-and-feature-updates.md
-    - name: 手順 7 - Windows と Office のサービス
-      href: step-7-windows-and-office-as-a-service.md
-    - name: 手順 8 - ユーザーのコミュニケーションとトレーニング
-      href: step-8-user-communications-and-training.md
-    - name: Windows 7 から Windows 10 への手動アップグレード
-      href: windows-7-to-windows-10-upgrade-manual.md
-    - name: Windows 7 から Windows 10 への自動アップグレード
-      href: windows-7-to-windows-10-upgrade-automated.md
-    - name: Windows と Office の展開と Lab キット
-      href: modern-desktop-deployment-and-management-lab.md
-    - name: 展開に関するヘルプを検索する
-      href: find-help-for-modern-desktop-deployment.md
+    - name: ロードマップ
+      href: identity-roadmap-microsoft-365.md
+    - name: 計画
+      items:
+        - name: ID モデル
+          href: about-microsoft-365-identity.md
+        - name: ハイブリッド ID
+          href: plan-for-directory-synchronization.md
+    - name: 展開
+      items:
+        - name: グローバル管理者アカウントを保護する
+          href: protect-your-global-administrator-accounts.md
+        - name: クラウド専用 ID
+          href: cloud-only-identities.md
+        - name: ハイブリッド ID
+          href: prepare-for-directory-synchronization.md
+        - name: ディレクトリ同期のために非ルーティング ドメインの準備を整える
+          href: prepare-a-non-routable-domain-for-directory-synchronization.md
+        - name: ディレクトリの同期をセットアップする
+          href: set-up-directory-synchronization.md
+        - name: ハイブリッド ソリューション
+          items:
+            - name: 概要
+              href: hybrid-solutions.md
+            - name: SharePoint Server 2016 認証に Azure Active Directory を使用する
+              href: using-azure-ad-for-sharepoint-server-authentication.md
+            - name: オンプレミス ネットワークを Azure 仮想ネットワークに接続する
+              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+            - name: Azure IaaS でディレクトリ同期サーバーを展開する
+              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+            - name: Azure に高可用性フェデレーション認証を展開する
+              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+              items:
+                - name: フェーズ 1 - Azure を構成する
+                  href: high-availability-federated-authentication-phase-1-configure-azure.md
+                - name: フェーズ 2 - ドメイン コントローラーを構成する
+                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                - name: フェーズ 3 - AD FS サーバーを構成する
+                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                - name: フェーズ 4 - Web アプリケーション プロキシを構成する
+                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                - name: フェーズ 5 - フェデレーション認証を構成する
+                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+            - name: Microsoft Azure での SharePoint Server 2013 の障害復旧
+              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+    - name: 管理
+      items:
+        - name: ユーザー アカウントにライセンスを割り当てる
+          href: assign-licenses-to-user-accounts.md
+        - name: Microsoft 365 ヘルプ センター
+          href: 'https://docs.microsoft.com/office365/admin/admin-home'
+        - name: ユーザー アカウント管理ツール
+          href: manage-microsoft-365-accounts.md
+        - name: 同時に複数のユーザーを追加する
+          href: add-several-users-at-the-same-time.md
+        - name: ユーザーのメールボックスで削除されたアイテムを復元する
+          href: recover-deleted-items-in-a-mailbox.md
+        - name: ディレクトリ同期
+          items:
+            - name: ディレクトリ同期の状態を表示する
+              href: view-directory-synchronization-status.md
+            - name: ディレクトリ同期エラーを確認する
+              href: identify-directory-synchronization-errors.md
+            - name: ディレクトリ同期の問題を解決する
+              href: fix-problems-with-directory-synchronization.md
+            - name: ディレクトリ同期を無効にする
+              href: turn-off-directory-synchronization.md
+- name: クライアントとサーバー ソフトウェア
+  items:
+    - name: ロードマップ
+      href: client-server-software-roadmap-microsoft-365.md
+    - name: 計画
+      items:
+        - name: アップグレードの計画
+          href: plan-upgrade-previous-versions-office.md
+    - name: 展開
+      items:
+        - name: Office 2007
+          items:
+            - name: Office 2007 サーバー/クライアントからアップグレードする
+              href: upgrade-from-office-2007-servers-and-products.md
+            - name: Office 2007 デスクトップ
+              href: 'https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap'
+            - name: Exchange 2007
+              href: exchange-2007-end-of-support.md
+            - name: SharePoint 2007
+              href: sharepoint-2007-end-of-support.md
+            - name: Office Communications Server
+              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+            - name: PerformancePoint Server 2007
+              href: pps-2007-end-of-support.md
+            - name: Project Server 2007
+              href: project-server-2007-end-of-support.md
+        - name: Office 2010
+          items:
+            - name: Office 2010 サーバー/クライアントからアップグレードする
+              href: upgrade-from-office-2010-servers-and-products.md
+            - name: Office 2010 デスクトップ
+              href: 'https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap'
+            - name: Exchange 2010
+              href: exchange-2010-end-of-support.md
+            - name: SharePoint 2010
+              href: upgrade-from-sharepoint-2010.md
+            - name: Lync Server 2010
+              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+            - name: Project Server 2010
+              href: project-server-2010-end-of-support.md
+- name: セキュリティとコンプライアンス
+  href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap'
+- name: クラウド サービス
+  items:
+    - name: ロードマップ
+      href: cloud-services-roadmap-microsoft-365.md
+    - name: 展開
+      items:
+        - name: 準備する
+          href: configure-services-and-applications.md
+        - name: Exchange Online
+          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+        - name: SharePoint
+          href: 'https://docs.microsoft.com/sharepoint/sharepoint-online'
+        - name: Skype for Business
+          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+        - name: Microsoft Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/Teams-overview'
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: Azure 著作権管理
+          href: activate-rms-in-microsoft-365.md
+        - name: リリース オプションの構成
+          href: 'https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47'
+        - name: ユーザーをトレーニングする
+          href: 'https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users'
+    - name: 管理
+      items:
+        - name: サービス正常性の確認方法
+          href: view-service-health.md
+        - name: サポート オプション
+          href: 'https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b'
+        - name: Exchange Online
+          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+        - name: SharePoint
+          href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
+        - name: Skype for Business
+          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+        - name: Microsoft Teams
+          href: 'https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide'
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: パフォーマンスとチューニング
+          items:
+            - name: Microsoft 365 のパフォーマンスをチューニングする
+              href: tune-microsoft-365-performance.md
+            - name: ベースラインとパフォーマンス履歴を使用した、パフォーマンスのチューニング
+              href: performance-tuning-using-baselines-and-history.md
+            - name: Exchange Online のパフォーマンスをチューニングする
+              href: tune-exchange-online-performance.md
+            - name: SharePoint のパフォーマンスをチューニングする
+              href: tune-sharepoint-online-performance.md
+              items:
+                - name: SharePoint のパフォーマンスのチューニングの概要
+                  href: introduction-to-performance-tuning-for-sharepoint-online.md
+                - name: SharePoint のパフォーマンスの問題の診断
+                  href: diagnosing-performance-issues-with-sharepoint-online.md
+            - name: Skype for Business Online のパフォーマンスの調整
+              href: tune-skype-for-business-online-performance.md
+            - name: Project Online のパフォーマンスの調整
+              href: 'https://docs.microsoft.com/ProjectOnline/tune-project-online-performance'
+            - name: パフォーマンスのトラブルシューティングの計画
+              href: performance-troubleshooting-plan.md
+- name: Windows 10
+  href: 'https://docs.microsoft.com/windows/deployment/'
+- name: Microsoft 365 Apps for enterprise
+  href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+- name: 展開および更新プログラム チャネルの構成例
+  items:
+    - name: 概要
+      href: deploy-update-channels-examples.md
+    - name: 最新リリースの幅広い展開
+      href: deploy-update-channels-examples-rapid-deploy.md
+- name: デバイスの管理
+  items:
+    - name: ロードマップ
+      href: device-management-roadmap-microsoft-365.md
+- name: PowerShell で Microsoft 365を管理する
+  href: manage-microsoft-365-with-microsoft-365-powershell.md
+  items:
+    - name: はじめに
+      href: getting-started-with-microsoft-365-powershell.md
+      items:
+        - name: PowerShell を使用する理由
+          href: why-you-need-to-use-microsoft-365-powershell.md
+        - name: PowerShell を使用して Microsoft 365 に接続する
+          href: connect-to-microsoft-365-powershell.md
+        - name: 単一の Windows PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
+          href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
+        - name: PowerShell でレポートを作成する
+          href: use-windows-powershell-to-create-reports-in-microsoft-365.md
+        - name: Microsoft 365 サービスのコマンドレットリファレンス
+          href: cmdlet-references-for-microsoft-365-services.md
+        - name: PowerShell のコミュニティ リソース
+          href: microsoft-365-powershell-community-resources.md
+    - name: ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する
+      href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
+      items:
+        - name: ユーザー アカウント
+          items:
+            - name: 作成する
+              href: create-user-accounts-with-microsoft-365-powershell.md
+            - name: 表示
+              href: view-user-accounts-with-microsoft-365-powershell.md
+            - name: プロパティの構成
+              href: configure-user-account-properties-with-microsoft-365-powershell.md
+            - name: 役割を割り当てる
+              href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
+            - name: 削除および復元
+              href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
+            - name: ブロック
+              href: block-user-accounts-with-microsoft-365-powershell.md
+        - name: ライセンスおよびサービス
+          items:
+            - name: 表示
+              href: view-licenses-and-services-with-microsoft-365-powershell.md
+            - name: ライセンスのあるユーザーとライセンスのないユーザーを表示する
+              href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
+            - name: ユーザー アカウントにライセンスを割り当てる
+              href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
+            - name: アカウントのライセンスとサービスの詳細を表示する
+              href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: サービスへのアクセスを無効にする
+              href: disable-access-to-services-with-microsoft-365-powershell.md
+              items:
+                - name: Sway へのアクセスを無効にする
+                  href: disable-access-to-sway-with-microsoft-365-powershell.md
+                - name: ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする
+                  href: disable-access-to-services-while-assigning-user-licenses.md
+                - name: ユーザー アカウントからライセンスを削除する
+                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
+        - name: グループ
+          items:
+            - name: グループ メンバーシップを管理する
+              href: maintain-group-membership-with-microsoft-365-powershell.md
+            - name: Microsoft 365 グループを管理する
+              href: manage-microsoft-365-groups-with-powershell.md
+    - name: SharePoint Online を管理する
+      href: manage-sharepoint-online-with-microsoft-365-powershell.md
+      items:
+        - name: SharePoint Online サイトを作成し、ユーザーを追加する
+          href: create-sharepoint-sites-and-add-users-with-powershell.md
+        - name: SharePoint Online のユーザーとグループを管理する
+          href: manage-sharepoint-users-and-groups-with-powershell.md
+        - name: SharePoint Online サイト グループを管理する
+          href: manage-sharepoint-site-groups-with-powershell.md
+    - name: Exchange Online を管理する
+      href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
+    - name: Microsoft 365 へのメール移行に PowerShell を使用する
+      href: use-powershell-for-email-migration-to-microsoft-365.md
+      items:
+        - name: Microsoft 365 への一括移行に PowerShell を使用する
+          href: use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md
+        - name: Microsoft 365 への IMAP 移行に PowerShell を使用する
+          href: use-powershell-to-perform-an-imap-migration-to-microsoft-365.md
+        - name: Microsoft 365 への段階的な移行に PowerShell を使用する
+          href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
+    - name: 委任アクセスパートナー向けの Windows PowerShell で Microsoft 365 を管理する
+      href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      items:
+        - name: 委任アクセスパートナー向けの Windows PowerShell で Microsoft 365 テナントを管理する
+          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+        - name: 委任アクセス許可パートナー用 Windows PowerShell でクライアント テナンシーにドメインを追加する
+          href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
+        - name: 委任アクセス許可パートナー用リモート Windows PowerShell 経由で Exchange Online に接続する
+          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+        - name: 委任アクセス許可パートナー用 Windows PowerShell 経由で顧客レポート データを取得する
+          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
+    - name: Microsoft Teams を管理する
+      href: 'https://docs.microsoft.com/microsoftteams/teams-powershell-install'
+    - name: Skype for Business Online を管理する
+      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
+      items:
+        - name: Skype for Business Online のポリシーを管理する
+          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
+        - name: ユーザーごとに Skype for Business Online のポリシーを割り当てる
+          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
+    - name: 一元展開 PowerShell を使用してアドインを管理する
+      href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+- name: テスト ラボ ガイド
+  href: m365-enterprise-test-lab-guides.md
+  items:
+    - name: 基本構成
+      items:
+        - name: ライトウェイト
+          href: lightweight-base-configuration-microsoft-365-enterprise.md
+        - name: シミュレートされたエンタープライズ
+          href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+    - name: ID
+      items:
+        - name: パスワード ハッシュの同期
+          href: password-hash-sync-m365-ent-test-environment.md
+        - name: パススルー認証
+          href: pass-through-auth-m365-ent-test-environment.md
+        - name: フェデレーション認証
+          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
+        - name: Azure AD シームレス シングル サインオン
+          href: single-sign-on-m365-ent-test-environment.md
+        - name: 多要素認証
+          href: multi-factor-authentication-microsoft-365-test-environment.md
+        - name: グローバル管理者アカウントを保護する
+          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+        - name: パスワードの書き戻し
+          href: password-writeback-m365-ent-test-environment.md
+        - name: パスワードのリセット
+          href: password-reset-m365-ent-test-environment.md
+        - name: ライセンスとグループ メンバーシップの自動管理
+          href: automate-licenses-group-membership-microsoft-365-test-environment.md
+        - name: Azure AD Identity Protection
+          href: azure-ad-identity-protection-microsoft-365-test-environment.md
+        - name: ID と デバイス アクセス
+          href: identity-device-access-m365-test-environment.md
+          items:
+            - name: クラウド専用
+              href: cloud-only-prereqs-m365-test-environment.md
+            - name: パスワード ハッシュの同期
+              href: phs-prereqs-m365-test-environment.md
+            - name: パススルー認証
+              href: pta-prereqs-m365-test-environment.md
+    - name: モバイル デバイス管理
+      items:
+        - name: iOS および Android デバイスを登録する
+          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+        - name: デバイス コンプライアンス ポリシー
+          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+    - name: 情報保護
+      items:
+        - name: 強化された Microsoft 365 のセキュリティ
+          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+        - name: データの分類
+          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+        - name: 特権アクセス管理
+          href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+- name: Contoso 社の導入事例
+  href: contoso-case-study.md
+  items:
+    - name: 概要
+      href: contoso-overview.md
+    - name: Contoso 社の IT インフラストラクチャおよびニーズ
+      href: contoso-infra-needs.md
+    - name: ネットワーク
+      href: contoso-networking.md
+    - name: ID
+      href: contoso-identity.md
+    - name: Windows 10 Enterprise
+      href: contoso-win10.md
+    - name: Microsoft 365 Apps for enterprise
+      href: contoso-o365pp.md
+    - name: モバイル デバイス管理
+      href: contoso-mdm.md
+    - name: 情報保護
+      href: contoso-info-protect.md
+    - name: セキュリティの概要
+      href: contoso-security-summary.md
+- name: Microsoft 365 サービス正常性の状態
+  href: microsoft-365-service-health.md
 - name: Microsoft 365 コンプライアンス
   href: ../compliance/index.yml
 - name: Microsoft 365 セキュリティ
   href: ../security/index.yml
+- name: Microsoft 365 のアーキテクチャとソリューション
+  href: ../solutions/index.yml
 - name: クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM)
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
@@ -227,3 +704,5 @@
       href: ebcm-developing-your-ebcm-plan.md
     - name: サービス インシデント対策のシナリオ
       href: ebcm-microsoft-365-mitigations.md
+- name: Microsoft 365 for Business
+  href: ../admin/index.yml
