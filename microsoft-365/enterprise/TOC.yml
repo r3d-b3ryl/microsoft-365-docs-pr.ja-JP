@@ -30,7 +30,15 @@
               href: microsoft-365-ip-web-service.md
             - name: Web サービスに含まれていないその他のエンドポイント
               href: additional-office365-ip-addresses-and-urls.md
-        - name: SharePoint Online での Office 365 CDN の使用
+            - name: Office 365 GCC High および DOD の追加のネットワーク セキュリティ要件
+              href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
+            - name: Office 365 DoD の DNS レコード
+              href: dns-records-for-office-365-dod.md
+            - name: Office 365 GCC High の DNS レコード
+              href: dns-records-for-office-365-gcc-high.md
+        - name: コンテンツ配信ネットワーク (CDN) クイックスタート
+          href: office-365-cdn-quickstart.md
+        - name: SharePoint Online での CDN の使用
           href: use-microsoft-365-cdn-with-spo.md
         - name: リモート ユーザーの接続を最適化する
           items:
@@ -45,6 +53,8 @@
         - name: Office 365 向け ExpressRoute
           href: azure-expressroute.md
           items:
+            - name: ExpressRoute の実装
+              href: implementing-expressroute.md
             - name: Office 365 向け ExpressRoute でのルーティング
               href: routing-with-expressroute.md
     - name: 管理
@@ -53,6 +63,8 @@
           items:
             - name: Microsoft 365 エンドポイント
               href: microsoft-365-endpoints.md
+            - name: Office 365 エンドポイントを管理する
+              href: managing-office-365-endpoints.md
             - name: 世界中のエンドポイント
               href: urls-and-ip-address-ranges.md
             - name: 米国政府の DoD エンドポイント
@@ -395,6 +407,8 @@
   items:
     - name: ロードマップ
       href: client-server-software-roadmap-microsoft-365.md
+    - name: SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
+      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
     - name: 計画
       items:
         - name: アップグレードの計画
