@@ -6,8 +6,6 @@
       href: compliance-quick-tasks.md
     - name: コンプライアンス センターの新機能
       href: whats-new.md
-    - name: コンプライアンス コンテンツの最近の更新プログラム
-      href: recently-updated-topics-mcc.md
     - name: Microsoft 365 コンプライアンス センター
       href: microsoft-365-compliance-center.md
     - name: Microsoft 365 ソリューション カタログ
@@ -341,13 +339,13 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: レコード管理
       items:
-        - name: レコード管理
+        - name: レコード管理の詳細
           href: records-management.md
-        - name: レコードについての詳細
-          href: records.md
+        - name: レコード管理の使用を開始する
+          href: get-started-with-records-management.md
         - name: レコードの宣言
           href: declare-records.md
-        - name: レコードのバージョン管理
+        - name: レコードのバージョン管理を使用する
           href: record-versioning.md
 - name: eDiscovery の管理
   items:

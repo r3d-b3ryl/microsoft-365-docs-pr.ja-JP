@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 従業員がいつでもどこからでもリモートで作業できるようにするセキュリティとインフラストラクチャを構成します。
-ms.openlocfilehash: c8d56d3dd6e2c46db6ef1938dee8383b56e8966c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522255"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778343"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>開発/テスト環境でセキュリティの分離を使用してチームを構成する
 
@@ -33,15 +33,15 @@ ms.locfileid: "46522255"
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 Enterprise のテスト環境を構築する
 
-最小要件で機密チームと高機密チームを簡易な方法でテストする場合は、「[軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)」の手順に従ってください。
+最小要件で機密チームと高機密チームを簡易な方法でテストする場合は、「[軽量な基本構成](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
 
-シミュレーションのエンタープライズで機密チームと高機密チームをテストするには、「[パスワード ハッシュの同期](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)」の手順に従ってください。
+シミュレーションのエンタープライズで機密チームと高機密チームをテストするには、「[パスワード ハッシュの同期](../enterprise/password-hash-sync-m365-ent-test-environment.md)」の手順に従ってください。
 
 >[!Note]
 >セキュリティ分離を使用してチームをテストする場合、シミュレーションのエンタープライズ テスト環境は必要ありません。シミュレーションのエンタープライズ テスト環境には、インターネットに接続されたシミュレーションのイントラネット、Active Directory Domain Services (AD DS) フォレスト用のディレクトリ同期が含まれています。 この機能は、セキュリティ分離を使用してチームをテストし、一般的な組織と類似した環境で試していただけるようオプションとしてここで提供されています。
 >
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-group-and-users"></a>フェーズ 2: Azure Active Directory (AD) グループとユーザーを作成して構成する
+## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>フェーズ 2: Azure Active Directory (Azure AD) のグループとユーザーを作成して構成する
 
 このフェーズでは、架空の組織用の Azure AD のグループとユーザーを作成して構成します。
   
@@ -65,7 +65,7 @@ ms.locfileid: "46522255"
     
 次に、新しい **C スイート** グループのメンバーに Microsoft 365 E5 ライセンスが自動的に割り当てられるように、自動ライセンスを設定します。
   
-1. Azure Portal で **[Azure Active Directory] > [ライセンス] > [すべての製品]** の順にクリックします。
+1. Azure portal で **[Azure Active Directory] > [ライセンス] > [すべての製品]** の順にクリックします。
     
 2. 一覧で、「**Microsoft 365 Enterprise E5**」を選択し、**[割り当て]** をクリックします。
     
@@ -77,7 +77,7 @@ ms.locfileid: "46522255"
     
 6. ブラウザーの [Azure Portal] タブを閉じます。
     
-次に、[Graph 用 Azure Active Directory PowerShell モジュールに接続します](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+次に、[Graph 用 Azure Active Directory PowerShell モジュールに接続します](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 組織名、場所、および共通のパスワードを入力し、PowerShell コマンド プロンプトまたは Integrated Script Environment (ISE) からこれらのコマンドを実行し、新しいユーザー アカウントを作成し、それぞれの C スイト グループに追加します。
   
@@ -115,7 +115,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 このフェーズでは、シニア リーダーシップ チームのメンバーが会社の戦略に協力できるように、セキュリティを分離したチームを作成して構成します。
 
-まず、[この記事](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)の手順に進む前に、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護するために秘密度ラベルを有効にします。
+まず、[この記事](../compliance/sensitivity-labels-teams-groups-sites.md)の手順に進む前に、Microsoft Teams、Office 365 グループ、SharePoint サイトのコンテンツを保護するために秘密度ラベルを有効にします。
 
 次に、チームを作ります。
 
@@ -126,9 +126,15 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 5. **[プライバシー]** で、**[プライベート]** をクリックします。
 6. **会社戦略**と入力し、[**作成**]  >  [**閉じる**] の順にクリックします。
 
+次に、プライベート チャネルの作成を会社戦略グループの所有者に制限します。
+
+1. チームで、**[その他のオプション]** をクリックしてから、**[チームの管理]** をクリックします。
+2. **[設定]** タブで、**[メンバーのアクセス許可]** を展開します。
+3. **[プライベート チャネルを作成する]** チェック ボックスをオフにします。
+
 次に、秘密度ラベルを次の設定で構成します。
 
-- ラベルの名前は「会社戦略」です
+- 名前は "会社戦略" です。
 - 暗号化が有効になっています
 - 会社戦略グループには、共同編集のアクセス許可があります
 
@@ -199,10 +205,6 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ![会社戦略の分離チームの構成](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-チーム内のファイルには、会社戦略グループのメンバーによって割り当てられた会社戦略の秘密度ラベルを含めることができます。 次に例を示します。
+## <a name="next-step"></a>次のステップ
 
-![会社戦略の秘密度ラベルが適用されたファイルの例](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
-## <a name="next-step"></a>次の手順
-
-実稼働環境への展開の準備ができたら、詳細な設定情報は、「[セキュリティの分離を使用してチームを構成する](secure-teams-security-isolation.md)」を参照してください。
+実稼働環境の展開の準備ができたら、「[構成手順](secure-teams-security-isolation.md)」を参照してください。

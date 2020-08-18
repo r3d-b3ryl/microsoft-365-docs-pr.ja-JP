@@ -15,13 +15,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
+hideEdit: true
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b302879b50c06007656aba93b38f8387557d301b
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430520"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778557"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -37,9 +38,9 @@ ms.locfileid: "45430520"
 
 さ
 - 0、1、2、3、6、7、または 8 で始まる 4 桁の数字
-- ハイフン 1 つ 
+- ハイフン 1 つ
 - 4 桁の数字
-- ハイフン 1 つ 
+- ハイフン 1 つ
 - 1 桁の数字
 
 書式なし: 0、1、2、3、6、7、または8で始まる9桁の連続した数字 
@@ -98,9 +99,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 8 桁の数字:
 - 2 桁の数字
 - ピリオド 1 つ 
-- 3 桁の数字 
+- 3 桁の数字
 - ピリオド 1 つ 
-- 3 桁の数字 
+- 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -577,9 +578,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_austria_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- 正規表現は、  `Regex_austria_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
     
-- From キーワード `Keywords_austria_eu_driver's_license_number` が見つかりました。 
+- From キーワード  `Keywords_austria_eu_driver's_license_number` が見つかりました。 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -626,15 +627,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_austria_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+- 正規表現は、  `Regex_austria_eu_national_id_card` パターンに一致するコンテンツを検出します。 
     
-- From キーワード `Keywords_austria_eu_national_id_card` が見つかりました。 
+- From キーワード  `Keywords_austria_eu_national_id_card` が見つかりました。 
    
 ```xml
 <!-- EU austria_eu_national_id -->
@@ -674,15 +675,15 @@ national id
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_austria_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- 正規表現は、  `Regex_austria_eu_passport_number` パターンに一致するコンテンツを検出します。 
     
-- From キーワード `Keywords_austria_eu_passport_number` が見つかりました。 
+- From キーワード  `Keywords_austria_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -726,13 +727,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_austria_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_austria_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
-- From キーワード `Keywords_austria_eu_ssn_or_equivalent` が見つかりました。 
+- From キーワード  `Keywords_austria_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_austria_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_austria_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -790,12 +791,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_austria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_austria_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_austria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_austria_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_austria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_austria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -858,7 +859,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureDocumentDBAuthKey は、このパターンに一致するコンテンツを検索します。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -918,7 +919,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureConnectionString は、このパターンに一致するコンテンツを検索します。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -978,7 +979,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureIoTConnectionString は、このパターンに一致するコンテンツを検索します。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1028,7 +1029,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzurePublishSettingPasswords は、このパターンに一致するコンテンツを検索します。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 
 ```xml
@@ -1084,7 +1085,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureRedisCacheConnectionString は、このパターンに一致するコンテンツを検出します。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1178,7 +1179,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureServiceBusConnectionString は、このパターンに一致するコンテンツを検出します。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1236,8 +1237,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_AzureStorageAccountKey は、このパターンに一致するコンテンツを検索します。
-- 正規表現 CEP_AzureEmulatorStorageAccountFilter は、このパターンに一致するコンテンツを検出し**ません**。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- 正規表現 CEP_AzureEmulatorStorageAccountFilter は、このパターンに一致するコンテンツを検出し **ません** 。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1323,8 +1324,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_belgium_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_belgium_eu_driver's_license_number` が見つかりました。
+- 正規表現は、  `Regex_belgium_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_belgium_eu_driver's_license_number` が見つかりました。
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1474,14 +1475,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_belgium_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_belgium_eu_passport_number` が見つかりました。
+- 正規表現は、  `Regex_belgium_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_belgium_eu_passport_number` が見つかりました。
 
 ```xml
  <!-- EU Passport Number -->
@@ -1523,12 +1524,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_belgium_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_belgium_eu_ssn_or_equivalent` が見つかりました。 
+- 関数は、  `Func_belgium_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_belgium_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_belgium_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_belgium_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -1584,14 +1585,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_belgium_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_belgium_eu_tax_file_number` が見つかりました。 
+- 正規表現は、  `Regex_belgium_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_belgium_eu_tax_file_number` が見つかりました。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -1885,8 +1886,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_bulgaria_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_bulgaria_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_bulgaria_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_bulgaria_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -1942,12 +1943,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_bulgaria_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_bulgaria_national_number` が見つかりました。 
+- 関数は、  `Func_bulgaria_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_bulgaria_national_number` が見つかりました。 
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_bulgaria_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_bulgaria_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -2030,8 +2031,8 @@ national id
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_bulgaria_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_bulgaria_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_bulgaria_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_bulgaria_eu_passport_number` が見つかりました。 
 
 ```xml
  <!-- EU Passport Number -->
@@ -2069,12 +2070,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_bulgaria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_bulgaria_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_bulgaria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_bulgaria_eu_tax_file_number` が見つかりました。 
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_bulgaria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_bulgaria_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
 
 ```xml
  <!-- EU Tax File Number -->
@@ -3076,8 +3077,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_croatia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_croatia_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_croatia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_croatia_eu_driver's_license_number` が見つかりました。 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3192,8 +3193,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_croatia_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_croatia_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_croatia_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_croatia_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3284,12 +3285,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_croatia_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_croatia_eu_ssn_or_equivalent` が見つかりました。 
+- 関数は、  `Func_croatia_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_croatia_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_croatia_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_croatia_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3345,12 +3346,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_croatia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_croatia_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_croatia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_croatia_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_croatia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_croatia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3418,8 +3419,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_cyprus_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_cyprus_eu_driver's_license_number` が見つかりました。
+- 正規表現は、  `Regex_cyprus_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_cyprus_eu_driver's_license_number` が見つかりました。
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3461,14 +3462,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_cyprus_eu_national_id_card` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_cyprus_eu_national_id_card` が見つかりました。 
+- 正規表現は、  `Regex_cyprus_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_cyprus_eu_national_id_card` が見つかりました。 
     
 ```xml 
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -3509,8 +3510,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_cyprus_eu_passport_number` パターンに一致するコンテンツを検出します。
-- From キーワード `Keywords_cyprus_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_cyprus_eu_passport_number` パターンに一致するコンテンツを検出します。
+- From キーワード  `Keywords_cyprus_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3548,18 +3549,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_cyprus_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_cyprus_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_cyprus_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_cyprus_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_cyprus_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_cyprus_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3629,8 +3630,8 @@ Pattern confidenceLevel="75">
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_czech_republic_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_czech_republic_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_czech_republic_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_czech_republic_eu_driver's_license_number` が見つかりました。 
 
 ```xml
  <!-- EU Driver's License Number -->
@@ -3681,8 +3682,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_czech_republic_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_czech_republic_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_czech_republic_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_czech_republic_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3784,12 +3785,12 @@ Keyword_czech_id_card からのキーワードが見つかりました。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_czech_republic_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_czech_republic_eu_ssn_or_equivalent` が見つかりました。 
+- 関数は、  `Func_czech_republic_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_czech_republic_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_czech_republic_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_czech_republic_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
 
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3839,14 +3840,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_czech_republic_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_czech_republic_eu_tax_file_number` が見つかりました。 
+- 正規表現は、  `Regex_czech_republic_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_czech_republic_eu_tax_file_number` が見つかりました。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -3919,8 +3920,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_denmark_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_denmark_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_denmark_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_denmark_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -3971,8 +3972,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_denmark_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_denmark_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_denmark_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_denmark_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4107,12 +4108,12 @@ Keyword_denmark_id からのキーワードが見つかりました。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_denmark_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_denmark_eu_ssn_or_equivalent` が見つかりました。 
+- 関数は、  `Func_denmark_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_denmark_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_denmark_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_denmark_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -4166,12 +4167,12 @@ Hyphenl を含む10桁の数字:
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_denmark_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_denmark_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_denmark_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_denmark_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_denmark_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_denmark_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -4301,8 +4302,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_estonia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_estonia_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_estonia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_estonia_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -4357,12 +4358,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_estonia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_estonia_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_estonia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_estonia_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_estonia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_estonia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
  
@@ -4432,8 +4433,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_estonia_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_estonia_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_estonia_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_estonia_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4479,12 +4480,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_estonia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_estonia_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_estonia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_estonia_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_estonia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_estonia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5055,9 +5056,9 @@ hese エンティティは、EU 税務識別番号の機密情報の種類に含
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_finland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- 正規表現は、  `Regex_finland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
     
-- From キーワード `Keywords_finland_eu_driver's_license_number` が見つかりました。 
+- From キーワード  `Keywords_finland_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -5234,12 +5235,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_finland_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_finland_eu_ssn_or_equivalent` が見つかりました。 
+- 関数は、  `Func_finland_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_finland_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_finland_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_finland_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -5304,12 +5305,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_finland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_finland_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_finland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_finland_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_finland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_finland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5628,18 +5629,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_france_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_france_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_france_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_france_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_france_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_france_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -5985,12 +5986,12 @@ bnationalit
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_germany_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_germany_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_germany_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_germany_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_germany_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_germany_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6053,8 +6054,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_greece_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_greece_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_greece_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_greece_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6157,8 +6158,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_greece_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_greece_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_greece_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_greece_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6192,15 +6193,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_greece_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
+- 正規表現は、  `Regex_greece_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
     
-- From キーワード `Keywords_greece_eu_tax_file_number` が見つかりました。 
+- From キーワード  `Keywords_greece_eu_tax_file_number` が見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
@@ -6350,8 +6351,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_hungary_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_hungary_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_hungary_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_hungary_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -6404,12 +6405,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_hungary_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_hungary_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_hungary_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_hungary_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_hungary_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_hungary_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -6455,8 +6456,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_hungary_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_hungary_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_hungary_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_hungary_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -6495,12 +6496,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_hungary_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_hungary_eu_ssn_or_equivalent` が見つかりました。 
+- 関数は、  `Func_hungary_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_hungary_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_hungary_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_hungary_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -6562,12 +6563,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_hungary_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_hungary_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_hungary_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_hungary_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_hungary_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_hungary_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -6661,9 +6662,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="pattern"></a>パターン
 
 12 桁の数字:
-- 4 桁の数字  
+- 4 桁の数字 
 - スペースまたはハイフン 1 つ (省略可能)  
-- 4 桁の数字  
+- 4 桁の数字 
 - スペースまたはハイフン 1 つ (省略可能)  
 - 最後の数字はチェック ディジット
 
@@ -6963,8 +6964,8 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_ireland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_ireland_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_ireland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_ireland_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -7088,7 +7089,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 2つの文字または数字の後に7桁の数字が続きます。
   
 - 2 つの数字または文字 (大文字小文字を区別しない)
-- 7 桁の数字 
+- 7 桁の数字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -7098,8 +7099,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_ireland_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_ireland_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_ireland_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_ireland_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7210,18 +7211,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_ireland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_ireland_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_ireland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_ireland_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_ireland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_ireland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7428,12 +7429,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_italy_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_italy_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_italy_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_italy_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_italy_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_italy_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
 <!-- Italy national identification number -->
@@ -7502,14 +7503,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_italy_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_italy_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_italy_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_italy_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7562,12 +7563,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_italy_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_italy_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_italy_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_italy_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_italy_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_italy_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -7998,8 +7999,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_latvia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_latvia_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_latvia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_latvia_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8053,12 +8054,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_latvia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_latvia_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_latvia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_latvia_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_latvia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_latvia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
 <!-- Latvia national identification number -->
@@ -8166,8 +8167,8 @@ registration number
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_latvia_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_latvia_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_latvia_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_latvia_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8211,12 +8212,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_latvia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_latvia_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_latvia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_latvia_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_latvia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_latvia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8321,8 +8322,8 @@ registration number
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_lithuania_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_lithuania_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_lithuania_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_lithuania_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8376,12 +8377,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_lithuania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_lithuania_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_lithuania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_lithuania_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_lithuania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_lithuania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
 <!-- Lithuania national identification number -->
@@ -8447,14 +8448,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_lithuania_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_lithuania_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_lithuania_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_lithuania_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8485,18 +8486,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_lithuania_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_lithuania_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8567,8 +8568,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_luxemburg_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_luxemburg_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_luxemburg_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_luxemburg_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -8616,14 +8617,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_luxemburg_eu_national_id_card` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_luxemburg_eu_national_id_card` が見つかりました。 
+- 正規表現は、  `Regex_luxemburg_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_luxemburg_eu_national_id_card` が見つかりました。 
     
 ```xml
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -8678,8 +8679,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_nation_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_nation_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_nation_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_nation_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8719,12 +8720,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_luxemburg_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_luxemburg_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -8874,8 +8875,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_malta_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_malta_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_malta_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_malta_eu_driver's_license_number` が見つかりました。 
     
 ```xml
 <!-- EU Driver's License Number -->
@@ -8921,18 +8922,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_malta_eu_national_id_card` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_malta_eu_national_id_card` が見つかりました。 
+- 正規表現は、  `Regex_malta_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_malta_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_malta_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+- 正規表現は、  `Regex_malta_eu_national_id_card` パターンに一致するコンテンツを検出します。 
     
 ```xml
  <!--Malta national identification number  -->
@@ -8986,8 +8987,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_malta_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_malta_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_malta_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_malta_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9030,18 +9031,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_malta_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_malta_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_malta_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_malta_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_malta_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_malta_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9175,8 +9176,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_netherlands_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_netherlands_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_netherlands_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_netherlands_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9227,12 +9228,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_netherlands_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_netherlands_eu_national_id_card` パターンに一致するコンテンツを検索します。 
 - From キーワードが見つかりました。
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_netherlands_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_netherlands_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!--Netherland national identification number  -->
@@ -9286,14 +9287,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_netherlands_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_netherlands_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_netherlands_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_netherlands_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9336,12 +9337,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_netherlands_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_netherlands_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_netherlands_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_netherlands_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_netherlands_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_netherlands_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9550,7 +9551,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - スラッシュ 1 つ 
 - 2 桁の数字
 - スラッシュ 1 つ 
-- 7 桁の数字 
+- 7 桁の数字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -9560,8 +9561,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_poland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_poland_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_poland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_poland_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9741,12 +9742,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_poland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_poland_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_poland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_poland_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_poland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_poland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -9877,8 +9878,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_portugal_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_portugal_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_portugal_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_portugal_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -9930,8 +9931,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_portugal_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_portugal_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_portugal_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_portugal_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9968,12 +9969,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_portugal_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_portugal_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_portugal_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_portugal_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_portugal_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_portugal_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10039,8 +10040,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_romania_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_romania_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_romania_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_romania_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10089,12 +10090,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_romania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_romania_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_romania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_romania_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_romania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_romania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!--Romania national identification number  -->
@@ -10183,8 +10184,8 @@ national id
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_romania_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_romania_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_romania_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_romania_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10218,14 +10219,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_romania_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_romania_eu_tax_file_number` が見つかりました。 
+- 正規表現は、  `Regex_romania_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_romania_eu_tax_file_number` が見つかりました。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10412,8 +10413,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_slovakia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_slovakia_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_slovakia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_slovakia_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10451,12 +10452,12 @@ drivers license drivers ライセンスドライバーのライセンスドラ�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_slovakia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_slovakia_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_slovakia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_slovakia_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_slovakia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_slovakia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- Slovakia national identification number -->
@@ -10542,8 +10543,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_slovakia_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_slovakia_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_slovakia_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_slovakia_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10577,14 +10578,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_slovakia_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_slovakia_eu_tax_file_number` が見つかりました。 
+- 正規表現は、  `Regex_slovakia_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_slovakia_eu_tax_file_number` が見つかりました。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -10668,8 +10669,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_slovenia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_slovenia_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_slovenia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_slovenia_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -10723,12 +10724,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_slovenia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_slovenia_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_slovenia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_slovenia_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_slovenia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_slovenia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- Slovenia national identification number -->
@@ -10798,8 +10799,8 @@ national id
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_slovenia_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_slovenia_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_slovenia_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_slovenia_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10836,12 +10837,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_slovenia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_slovenia_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_slovenia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_slovenia_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_slovenia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_slovenia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11005,8 +11006,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_spain_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_spain_eu_driver's_license_number` が見つかりました。 
+- 関数は、  `Func_spain_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_spain_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11073,14 +11074,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_spain_eu_national_id_card` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_spain_eu_national_id_card"` が見つかりました。 
+- 正規表現は、  `Regex_spain_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_spain_eu_national_id_card"` が見つかりました。 
     
 ```xml
 <!-- Spain national identification number -->
@@ -11136,14 +11137,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-該当しない
+該当なし
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_spain_eu_passport_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_spain_eu_passport_number` が見つかりました。 
+- 正規表現は、  `Regex_spain_eu_passport_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_spain_eu_passport_number` が見つかりました。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -11255,12 +11256,12 @@ Foreigner の識別番号のない Foreigners
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_spain_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_spain_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_spain_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_spain_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_spain_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_spain_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11334,9 +11335,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 CEP_Regex_SQLServerConnectionString は、このパターンに一致するコンテンツを検索します。
-- CEP_GlobalFilter からのキーワードが見つかり**ません**。
-- 正規表現 CEP_PasswordPlaceHolder は、このパターンに一致するコンテンツを検出し**ません**。
-- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し**ません**。
+- CEP_GlobalFilter からのキーワードが見つかり **ません** 。
+- 正規表現 CEP_PasswordPlaceHolder は、このパターンに一致するコンテンツを検出し **ません** 。
+- 正規表現 CEP_CommonExampleKeywords は、このパターンに一致するコンテンツを検出し **ません** 。
 
 ```sql
 <!---SQL Server Connection String>
@@ -11409,8 +11410,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 正規表現は、 `Regex_sweden_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード `Keywords_sweden_eu_driver's_license_number` が見つかりました。 
+- 正規表現は、  `Regex_sweden_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
+- From キーワード  `Keywords_sweden_eu_driver's_license_number` が見つかりました。 
     
 ```xml
  <!-- EU Driver's License Number -->
@@ -11574,12 +11575,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_sweden_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_sweden_eu_ssn_or_equivalent` が見つかりました。 
+- 関数は、  `Func_sweden_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_sweden_eu_ssn_or_equivalent` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_sweden_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_sweden_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -11638,12 +11639,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_sweden_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード `Keywords_sweden_eu_tax_file_number` が見つかりました。 
+- 関数は、  `Func_sweden_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_sweden_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_sweden_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_sweden_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
  <!-- EU Tax File Number -->
@@ -11739,7 +11740,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - swift routing number 
 - bic number 
 - bic code 
-- bic\# 
+- bic \# 
 - bic\# 
 - bank identifier code 
 - 標準化9362 
@@ -11751,12 +11752,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - BICコード 
 - 銀行識別コードのための国際組織 
 - Organisation internationale de normalisation 9362 
-- rapide\# 
+- rapide \# 
 - code SWIFT 
 - le numéro de swift 
 - swift numéro d'acheminement 
 - le numéro BIC 
-- \#BIC 
+- \# BIC 
 - code identificateur de banque 
    
 ## <a name="taiwan-national-identification-number"></a>台湾国立識別番号
@@ -12280,9 +12281,9 @@ Unique 納税リファレンス (UTR):10 桁の数字
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、 `Func_uk_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_uk_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
-- From キーワード `Keywords_uk_eu_tax_file_number` が見つかりました。 
+- From キーワード  `Keywords_uk_eu_tax_file_number` が見つかりました。 
     
 ```
  <!-- EU Tax File Number -->
