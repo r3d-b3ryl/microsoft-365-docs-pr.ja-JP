@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 943bf3949ab57eb4603695495d7a8ca0c4b90db7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 47a6aee128dbc8375d5860e1e8b1e4e0acc355cb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695261"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778453"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-ドキュメントを [レコード](records.md)としてマークし、レコードに対して実行できるアクションを制限する機能は、あらゆるレコード管理ソリューションに不可欠な目標です。 ただし、後進のバージョンを作成するためには、他のユーザーと共同作業を行うことも必要になる場合があります。
+ドキュメントを [レコード](records-management.md#records)としてマークし、レコードに対して実行できるアクションを制限する機能は、あらゆるレコード管理ソリューションに不可欠な目標です。 ただし、後進のバージョンを作成するためには、他のユーザーと共同作業を行うことも必要になる場合があります。
 
 たとえば、販売契約をレコードとしてマークする場合、新しい条件で契約を更新し、そして前のレコード バージョンを保持したまま最新バージョンを新しいレコードとしてマークする必要があります。 これらのタイプのシナリオでは、SharePoint と OneDrive が*レコードのバージョン管理*をサポートしています。 OneNote ノートブックのフォルダーは、レコードのバージョン管理をサポートしていません。
 
@@ -103,6 +103,4 @@ ms.locfileid: "46695261"
 
 ## <a name="next-steps"></a>次の手順
 
-コンテンツをレコードとしてマークするには、[[保持ラベルを使用してレコードを宣言する](declare-records.md)] を参照してください。
-
-レコードの廃棄の詳細については、「[コンテンツの廃棄](disposition.md)」 を参照してください。
+レコード管理でサポートされているその他のシナリオについては、「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。

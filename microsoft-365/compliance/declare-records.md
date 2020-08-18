@@ -17,25 +17,27 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: c8024cf08be2259ffa8b6747bebf4943e11e4d60
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d637817e8d1bcc8c72bfe011dfd288ac4e2d0298
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695264"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778517"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-[保持ラベル](retention.md#retention-labels)を使用して、コンテンツをレコードとしてマークします。 それらの保持ラベルを発行してユーザーや管理者が手動でコンテンツに適用できるようにするか、レコードとしてマークするコンテンツにそれらのラベルを自動的に適用することができます。
+アイテムをレコードとして宣言するには、コンテンツをレコードとしてマークする[保持ラベル](retention.md#retention-labels)を使用します。 それらの保持ラベルを発行してユーザーや管理者が手動でコンテンツに適用できるようにするか、レコードとしてマークするコンテンツにそれらのラベルを自動的に適用することができます。
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>保持ラベルを構成してレコードを宣言する
 
-[保持ラベル](retention.md#retention-labels)を作成するときに、そのコンテンツをレコードとしてマークするオプションを選択します。
+保持ラベルを作成または構成するときに、そのコンテンツをレコードとしてマークするオプションを選択します。
 
 >[!NOTE] 
 > Microsoft 365 コンプライアンスセンターで **情報 ガバナンス**から保持ラベルを作成または構成する場合、コンテンツをレコードとしてマークするオプションは利用できません。 代わりに **レコード管理**を使用する必要があります。
+
+コンテンツをレコードとしてマークする新しい保持ラベルを作成するには、次の操作を行います。
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)で、**レコードの管理** \> **ファイル プラン**に移動します。 [**ファイルプラン**] ページで、[**ラベルの作成**] を選びます。
 
@@ -62,6 +64,4 @@ ms.locfileid: "46695264"
 
 ## <a name="next-steps"></a>次の手順
 
-レコードであるドキュメントを更新する必要がある場合は、「[レコードのバージョン管理を使用して SharePoint または OneDriveに保存されているレコードを更新する](record-versioning.md)」を参照してください。
-
-レコードの廃棄の詳細については、「[コンテンツの廃棄](disposition.md)」 を参照してください。
+レコード管理でサポートされているシナリオの一覧については、「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。

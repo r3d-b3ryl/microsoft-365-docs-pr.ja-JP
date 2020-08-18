@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588175"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778293"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -52,7 +52,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 アイテム保持ポリシーと保持ラベルを作成して管理するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。この制限された管理に権限を付与するには、ユーザーを [**コンプライアンス管理者**] の管理者役割グループに追加することをお勧めします。 手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。
 
-これらのアクセス許可は、アイテム保持ポリシーを作成して適用するためにのみ必要です。 アイテム保持ポリシーを構成するユーザーは、コンテンツへのアクセスを必要としません。
+これらのアクセス許可は、アイテム保持ポリシーと保持ラベルの作成、構成、適用にのみ必要です。 アイテム保持ポリシーと保持ラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルを使用する一般的なシナリオ
 
@@ -67,11 +67,12 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |ドキュメントやメールに対して保持アクションと削除アクションのセットを自動的に適用する |[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)|
 |次のようなイベントが発生したときに保持期間を開始する  <br />- 従業員が退職する <br />- 契約満了 <br />- 製品の有効期間の終了| [イベントの発生時に保持を開始する](event-driven-retention.md)|
 |SharePoint で各種ドキュメントのライフサイクルを管理する| [保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)|
-|ドキュメントとメールの両方に対して 1 つのレコード管理ソリューションを使用する |[Microsoft 365 のレコードの管理](records-management.md) |
 |SEC Rule 17a-4 に準拠する|[Exchange Online およびセキュリティ/コンプライアンス センターを使用して SEC Rule 17a-4 に準拠する](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |保持期間の終了時にコンテンツが削除される前に、誰かがレビューと承認を行うようにする|[廃棄確認](disposition.md#disposition-reviews) |
-|保持期間の終了時に削除されるコンテンツの廃棄の証明を取得する|[レコードの廃棄](disposition.md#disposition-of-records) |
 | 保持ラベルが適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
+|ドキュメントとメールに対して 1 つのレコード管理ソリューションを使用する |[レコード管理の詳細](records-management.md) |
+
+レコード管理用の保持ラベルを使用する場合、コンテンツをレコードとしてマークする保持ラベルに固有の追加のシナリオがあります。 「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。
 
 ## <a name="end-user-documentation-for-retention-labels"></a>保持ラベルに関するエンド ユーザー向けのドキュメント
 
