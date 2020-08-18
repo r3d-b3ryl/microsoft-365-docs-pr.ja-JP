@@ -1,31 +1,34 @@
 ---
-title: Microsoft マネージドデスクトップのセキュリティ
+title: Microsoft マネージドデスクトップのセキュリティテクノロジ
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470491"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778258"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティテクノロジ
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft マネージドデスクトップでは、管理されたデバイスとデータを保護するために、いくつかの Microsoft テクノロジを使用しています。 具体的には次のとおりです。 
+Microsoft マネージドデスクトップでは、管理されたデバイスとデータを保護するために、いくつかの Microsoft テクノロジを使用しています。 さらに、Microsoft Managed デスクトップセキュリティ運用センターでは、これらのテクノロジと組み合わせてさまざまな [プロセス](security-operations.md) を使用しています。
 
+具体的には次のとおりです。 
 
-- [デバイスセキュリティ](#device-security)– Microsoft マネージドデスクトップデバイスのセキュリティと保護
-- [Id およびアクセス管理](#identity-and-access-management): Azure Active Directory id サービスを使用して、デバイスの安全な使用を管理する
-- [ネットワークセキュリティ](#network-security)– VPN 情報と Microsoft Managed Desktop 推奨ソリューションと設定
-- [情報セキュリティ](#information-security)–機密情報をさらに保護するためのオプションの利用可能なサービス 
+- [デバイスセキュリティ](#device-security) – Microsoft マネージドデスクトップデバイスのセキュリティと保護
+- [Id およびアクセス管理](#identity-and-access-management) : Azure Active Directory id サービスを使用して、デバイスの安全な使用を管理する
+- [ネットワークセキュリティ](#network-security) – VPN 情報と Microsoft Managed Desktop 推奨ソリューションと設定
+- [情報セキュリティ](#information-security) –機密情報をさらに保護するためのオプションの利用可能なサービス 
 
-Microsoft マネージドデスクトップで使用されるデータストレージ、使用方法、セキュリティプラクティスの詳細については、ホワイトペーパー「」をダウンロードしてください [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
+Microsoft マネージドデスクトップで使用されるデータストレージ、使用方法、セキュリティプラクティスの詳細については、ホワイトペーパー「」を参照してください [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
 
 
 ## <a name="device-security"></a>デバイスのセキュリティ
@@ -69,5 +72,5 @@ VPN | お客様は VPN インフラストラクチャを所有しており、制
 サービス | 説明
 --- | ---
 データの回復  | デバイス上の重要なフォルダーに格納されている情報は、OneDrive for Business にバックアップされます。 Microsoft マネージドデスクトップは、OneDrive for Business と同期されていないデータに対しては責任がありません。 
-Windows 情報保護 |    高度なレベルの情報セキュリティが必要な企業では、 [Windows 情報保護](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip)と[Azure information protection](https://www.microsoft.com/cloud-platform/azure-information-protection)をお勧めします。 
+Windows 情報保護 |    高度なレベルの情報セキュリティが必要な企業では、 [Windows 情報保護](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip) と [Azure information protection](https://www.microsoft.com/cloud-platform/azure-information-protection)をお勧めします。 
 
