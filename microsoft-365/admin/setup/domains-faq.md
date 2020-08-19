@@ -24,222 +24,231 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: ドメインの詳細については、よく寄せられる質問への回答を検索してください。
-ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068105"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804198"
 ---
-# <a name="domains-faq"></a><span data-ttu-id="cc613-103">ドメイン FAQ</span><span class="sxs-lookup"><span data-stu-id="cc613-103">Domains FAQ</span></span>
+# <a name="domains-faq"></a><span data-ttu-id="a02ac-103">ドメイン FAQ</span><span class="sxs-lookup"><span data-stu-id="a02ac-103">Domains FAQ</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="cc613-104">管理センターは変更されました。</span><span class="sxs-lookup"><span data-stu-id="cc613-104">The admin center is changing.</span></span> <span data-ttu-id="cc613-105">エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="cc613-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="a02ac-104">管理センターは変更されました。</span><span class="sxs-lookup"><span data-stu-id="a02ac-104">The admin center is changing.</span></span> <span data-ttu-id="a02ac-105">エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="cc613-106">この記事では、Microsoft 365 のドメインに関してよく寄せられる質問に対する回答を示します。</span><span class="sxs-lookup"><span data-stu-id="cc613-106">This article contains answers to frequently asked questions about domains in Microsoft 365.</span></span>
+<span data-ttu-id="a02ac-106">この記事では、Microsoft 365 のドメインに関してよく寄せられる質問に対する回答を示します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-106">This article contains answers to frequently asked questions about domains in Microsoft 365.</span></span>
 
-<span data-ttu-id="cc613-107">質問の回答が見つからない場合は、コメントを残してお知らせください。ご質問を FAQ の一覧に追加します。</span><span class="sxs-lookup"><span data-stu-id="cc613-107">If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.</span></span>
+<span data-ttu-id="a02ac-107">質問の回答が見つからない場合は、コメントを残してお知らせください。ご質問を FAQ の一覧に追加します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-107">If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.</span></span>
 
-<span data-ttu-id="cc613-108">この記事の内容</span><span class="sxs-lookup"><span data-stu-id="cc613-108">In this article</span></span>
+<span data-ttu-id="a02ac-108">この記事の内容</span><span class="sxs-lookup"><span data-stu-id="a02ac-108">In this article</span></span>
 
-- [<span data-ttu-id="cc613-109">MX 優先度とは</span><span class="sxs-lookup"><span data-stu-id="cc613-109">What is MX priority?</span></span>](#what-is-mx-priority)
-- [<span data-ttu-id="cc613-110">自分のドメインの SPF レコードを検証するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-110">How can I validate SPF records for my domain?</span></span>](#how-can-i-validate-spf-records-for-my-domain)
-- [<span data-ttu-id="cc613-111">ドメイン名とは何ですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-111">What is a domain name?</span></span>](#what-is-a-domain-name)
-- [<span data-ttu-id="cc613-112">自分の DNS プロバイダーが特定のレコードの種類をサポートしていない場合はどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="cc613-112">What happens if my DNS provider doesn't support certain record types?</span></span>](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
-- [<span data-ttu-id="cc613-113">Microsoft 365 で既定のドメインを設定または変更するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-113">How do I set or change the default domain in Microsoft 365?</span></span>](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
-- [<span data-ttu-id="cc613-114">Microsoft 365 にカスタムサブドメインまたは複数のドメインを追加できますか。</span><span class="sxs-lookup"><span data-stu-id="cc613-114">Can I add custom subdomains or multiple domains to Microsoft 365?</span></span>](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-- [<span data-ttu-id="cc613-115">"onmicrosoft.com" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-115">Why do I have an "onmicrosoft.com" domain?</span></span>](#why-do-i-have-an-onmicrosoftcom-domain)
-- [<span data-ttu-id="cc613-116">"onmicrosoft.de" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-116">Why do I have an "onmicrosoft.de" domain?</span></span>](#why-do-i-have-an-onmicrosoftde-domain)
-- [<span data-ttu-id="cc613-117">非営利団体または教育機関のステータスを確認するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-117">How do I verify my nonprofit or education status?</span></span>](#how-do-i-verify-my-nonprofit-or-education-status)
+- [<span data-ttu-id="a02ac-109">MX 優先度とは</span><span class="sxs-lookup"><span data-stu-id="a02ac-109">What is MX priority?</span></span>](#what-is-mx-priority)
+- [<span data-ttu-id="a02ac-110">自分のドメインの SPF レコードを検証するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-110">How can I validate SPF records for my domain?</span></span>](#how-can-i-validate-spf-records-for-my-domain)
+- [<span data-ttu-id="a02ac-111">ドメイン名とは何ですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-111">What is a domain name?</span></span>](#what-is-a-domain-name)
+- [<span data-ttu-id="a02ac-112">自分の DNS プロバイダーが特定のレコードの種類をサポートしていない場合はどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-112">What happens if my DNS provider doesn't support certain record types?</span></span>](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [<span data-ttu-id="a02ac-113">Microsoft 365 で既定のドメインを設定または変更するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-113">How do I set or change the default domain in Microsoft 365?</span></span>](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [<span data-ttu-id="a02ac-114">Microsoft 365 にカスタムサブドメインまたは複数のドメインを追加できますか。</span><span class="sxs-lookup"><span data-stu-id="a02ac-114">Can I add custom subdomains or multiple domains to Microsoft 365?</span></span>](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- <span data-ttu-id="a02ac-115">[Microsoft 365 から別のホストにドメインを転送する方法を教えてください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-115">[How do I transfer a domain from Microsoft 365 to another host?]</span></span>
+- [<span data-ttu-id="a02ac-116">"onmicrosoft.com" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-116">Why do I have an "onmicrosoft.com" domain?</span></span>](#why-do-i-have-an-onmicrosoftcom-domain)
+- [<span data-ttu-id="a02ac-117">"onmicrosoft.de" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-117">Why do I have an "onmicrosoft.de" domain?</span></span>](#why-do-i-have-an-onmicrosoftde-domain)
+- [<span data-ttu-id="a02ac-118">非営利団体または教育機関のステータスを確認するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-118">How do I verify my nonprofit or education status?</span></span>](#how-do-i-verify-my-nonprofit-or-education-status)
     
-## <a name="what-is-mx-priority"></a><span data-ttu-id="cc613-118">MX 優先度とは何ですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-118">What is MX priority?</span></span>
+## <a name="what-is-mx-priority"></a><span data-ttu-id="a02ac-119">MX 優先度とは何ですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-119">What is MX priority?</span></span>
 
-<span data-ttu-id="cc613-119">メールは最も小さい優先順位番号 (最高の優先順位) でメール交換サーバーに配信されるので、メールのルーティングに使用する MX レコードは、最も小さい優先順位番号 (通常は 0 または *高い*  優先順位) が指定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-119">Mail is delivered to the mail exchange server with the lowest preference number (highest priority), so the MX record you use for mail routing should have the lowest preference number, typically 0 or  *High*  priority.</span></span> 
+<span data-ttu-id="a02ac-120">メールは最も小さい優先順位番号 (最高の優先順位) でメール交換サーバーに配信されるので、メールのルーティングに使用する MX レコードは、最も小さい優先順位番号 (通常は 0 または *高い*  優先順位) が指定されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-120">Mail is delivered to the mail exchange server with the lowest preference number (highest priority), so the MX record you use for mail routing should have the lowest preference number, typically 0 or  *High*  priority.</span></span> 
   
-- <span data-ttu-id="cc613-120">MX レコードを作成するときには、ほとんどの DNS ホスティング プロバイダーで、優先度順位を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-120">When you create an MX record, most DNS hosting providers require you to set the preference number.</span></span>
+- <span data-ttu-id="a02ac-121">MX レコードを作成するときには、ほとんどの DNS ホスティング プロバイダーで、優先度順位を設定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-121">When you create an MX record, most DNS hosting providers require you to set the preference number.</span></span>
     
-- <span data-ttu-id="cc613-121">ボックスのラベルは [ *優先度*  ] の場合もあれば、[  *優先順位*  ] の場合もあります。</span><span class="sxs-lookup"><span data-stu-id="cc613-121">Some label the box  *preference*  , and some label it  *priority*  .</span></span> 
+- <span data-ttu-id="a02ac-122">ボックスのラベルは [ *優先度*  ] の場合もあれば、[  *優先順位*  ] の場合もあります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-122">Some label the box  *preference*  , and some label it  *priority*  .</span></span> 
     
-- <span data-ttu-id="cc613-122">数値を要求される場合もあれば、[ *低*  ]、[  *中*  ]、または [  *高*  ] を選択するように要求される場合もあります。</span><span class="sxs-lookup"><span data-stu-id="cc613-122">Some require a number, and some ask you to select  *Low*  ,  *Medium*  , or  *High*  .</span></span> 
+- <span data-ttu-id="a02ac-123">数値を要求される場合もあれば、[ *低*  ]、[  *中*  ]、または [  *高*  ] を選択するように要求される場合もあります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-123">Some require a number, and some ask you to select  *Low*  ,  *Medium*  , or  *High*  .</span></span> 
     
-- <span data-ttu-id="cc613-123">MX レコードが 1 つだけの場合は、任意の値を優先順位に指定できます。</span><span class="sxs-lookup"><span data-stu-id="cc613-123">If you only have one MX record, any value is fine for priority or preference.</span></span>
+- <span data-ttu-id="a02ac-124">MX レコードが 1 つだけの場合は、任意の値を優先順位に指定できます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-124">If you only have one MX record, any value is fine for priority or preference.</span></span>
     
-- <span data-ttu-id="cc613-124">複数の MX レコードがある場合は、メールのルーティングの MX レコードがドメインを所有していることを検証するために使用されるレコードより高い優先度になっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="cc613-124">If you have more than one, make sure the MX record for mail routing is higher priority than the one used for validating that you own the domain.</span></span>
+- <span data-ttu-id="a02ac-125">複数の MX レコードがある場合は、メールのルーティングの MX レコードがドメインを所有していることを検証するために使用されるレコードより高い優先度になっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-125">If you have more than one, make sure the MX record for mail routing is higher priority than the one used for validating that you own the domain.</span></span>
     
-## <a name="how-can-i-validate-spf-records-for-my-domain"></a><span data-ttu-id="cc613-125">SPF レコードはどうやって検証できますか?</span><span class="sxs-lookup"><span data-stu-id="cc613-125">How can I validate SPF records for my domain?</span></span>
+## <a name="how-can-i-validate-spf-records-for-my-domain"></a><span data-ttu-id="a02ac-126">SPF レコードはどうやって検証できますか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-126">How can I validate SPF records for my domain?</span></span>
 
-<span data-ttu-id="cc613-126">**SPF の TXT レコードを1つだけ**持っているか作成しておくことが重要です。</span><span class="sxs-lookup"><span data-stu-id="cc613-126">It's important that you have or create  **only one TXT record for SPF**.</span></span> <span data-ttu-id="cc613-127">既に SPF レコードがある場合は、新しい Microsoft 365 値を作成するのではなく、新しい Microsoft 値を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-127">If you already have an SPF record, you should append the new Microsoft 365 values to it, rather than create a new one.</span></span> <span data-ttu-id="cc613-128">Microsoft メールの SPF レコードを追加または更新した後、次のいずれかのツールを使用して構文が正しいことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="cc613-128">After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools:</span></span> 
+<span data-ttu-id="a02ac-127">**SPF の TXT レコードを1つだけ**持っているか作成しておくことが重要です。</span><span class="sxs-lookup"><span data-stu-id="a02ac-127">It's important that you have or create  **only one TXT record for SPF**.</span></span> <span data-ttu-id="a02ac-128">既に SPF レコードがある場合は、新しい Microsoft 365 値を作成するのではなく、新しい Microsoft 値を追加する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-128">If you already have an SPF record, you should append the new Microsoft 365 values to it, rather than create a new one.</span></span> <span data-ttu-id="a02ac-129">Microsoft メールの SPF レコードを追加または更新した後、次のいずれかのツールを使用して構文が正しいことを確認してください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-129">After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools:</span></span> 
   
-- [<span data-ttu-id="cc613-129">SPF レコード テスト ツール</span><span class="sxs-lookup"><span data-stu-id="cc613-129">SPF Record Testing Tools</span></span>](http://www.kitterman.com/spf/validate.html)
+- [<span data-ttu-id="a02ac-130">SPF レコード テスト ツール</span><span class="sxs-lookup"><span data-stu-id="a02ac-130">SPF Record Testing Tools</span></span>](http://www.kitterman.com/spf/validate.html)
     
-- [<span data-ttu-id="cc613-130">SPF Surveyor</span><span class="sxs-lookup"><span data-stu-id="cc613-130">SPF Surveyor</span></span>](https://dmarcian.com/spf-survey/)
+- [<span data-ttu-id="a02ac-131">SPF Surveyor</span><span class="sxs-lookup"><span data-stu-id="a02ac-131">SPF Surveyor</span></span>](https://dmarcian.com/spf-survey/)
     
-- [<span data-ttu-id="cc613-131">Dig Web インターフェイス</span><span class="sxs-lookup"><span data-stu-id="cc613-131">Dig web interface</span></span>](http://digwebinterface.com/)
+- [<span data-ttu-id="a02ac-132">Dig Web インターフェイス</span><span class="sxs-lookup"><span data-stu-id="a02ac-132">Dig web interface</span></span>](http://digwebinterface.com/)
 
-## <a name="what-is-a-domain-name"></a><span data-ttu-id="cc613-132">ドメイン名とは何ですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-132">What is a domain name?</span></span>
+## <a name="what-is-a-domain-name"></a><span data-ttu-id="a02ac-133">ドメイン名とは何ですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-133">What is a domain name?</span></span>
 
-<span data-ttu-id="cc613-p103">ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。通常は、  *yourbusiness.com*  や  *stateuniversity.edu*  のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。</span><span class="sxs-lookup"><span data-stu-id="cc613-p103">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.*</span></span> 
+<span data-ttu-id="a02ac-p103">ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。通常は、  *yourbusiness.com*  や  *stateuniversity.edu*  のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-p103">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.*</span></span> 
   
-<span data-ttu-id="cc613-136">Microsoft 365 で "**渡 \@ contoso.com**" のようなカスタムドメインを使用すると、ブランドの信頼性と認識を構築するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="cc613-136">Using a custom domain like "**rob\@contoso.com**" with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
+<span data-ttu-id="a02ac-137">Microsoft 365 で "**渡 \@ contoso.com**" のようなカスタムドメインを使用すると、ブランドの信頼性と認識を構築するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-137">Using a custom domain like "**rob\@contoso.com**" with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
   
-<span data-ttu-id="cc613-137">[Microsoft 365 でドメインを購入し、自動的に設定](../get-help-with-domains/buy-a-domain-name.md)することも、ドメインレジストラーで購入したり、既に所有しているドメインを購入したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="cc613-137">You can [buy a domain in Microsoft 365 and we'll set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.</span></span>
+<span data-ttu-id="a02ac-138">[Microsoft 365 でドメインを購入し、自動的に設定](../get-help-with-domains/buy-a-domain-name.md)することも、ドメインレジストラーで購入したり、既に所有しているドメインを購入したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-138">You can [buy a domain in Microsoft 365 and we'll set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.</span></span>
     
-## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a><span data-ttu-id="cc613-138">DNS プロバイダーで特定のレコードの種類がサポートされない場合はどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="cc613-138">What happens if my DNS provider doesn't support certain record types?</span></span>
+## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a><span data-ttu-id="a02ac-139">DNS プロバイダーで特定のレコードの種類がサポートされない場合はどうなりますか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-139">What happens if my DNS provider doesn't support certain record types?</span></span>
 
-<span data-ttu-id="cc613-139">独自の DNS レコードを管理していて、DNS ホストが Microsoft 365 に必要なすべての DNS レコードをサポートしていない場合は、一部の Microsoft 365 機能が動作しません。</span><span class="sxs-lookup"><span data-stu-id="cc613-139">If you manage your own DNS records and your DNS host does not support all the DNS records that Microsoft 365 needs, some Microsoft 365 features won't work.</span></span> <span data-ttu-id="cc613-140">必要な DNS レコードをすべてサポートしているレジストラーにドメインを移行することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="cc613-140">We recommend that you transfer your domain to a registrar that supports all required DNS records.</span></span>
+<span data-ttu-id="a02ac-140">独自の DNS レコードを管理していて、DNS ホストが Microsoft 365 に必要なすべての DNS レコードをサポートしていない場合は、一部の Microsoft 365 機能が動作しません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-140">If you manage your own DNS records and your DNS host does not support all the DNS records that Microsoft 365 needs, some Microsoft 365 features won't work.</span></span> <span data-ttu-id="a02ac-141">必要な DNS レコードをすべてサポートしているレジストラーにドメインを移行することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="a02ac-141">We recommend that you transfer your domain to a registrar that supports all required DNS records.</span></span>
   
-<span data-ttu-id="cc613-141">すべての必須の DNS レコードをサポートするプロバイダー。</span><span class="sxs-lookup"><span data-stu-id="cc613-141">Providers that support all required DNS records:</span></span>
+<span data-ttu-id="a02ac-142">すべての必須の DNS レコードをサポートするプロバイダー。</span><span class="sxs-lookup"><span data-stu-id="a02ac-142">Providers that support all required DNS records:</span></span>
   
-- <span data-ttu-id="cc613-142">Dynadot</span><span class="sxs-lookup"><span data-stu-id="cc613-142">Dynadot</span></span>
+- <span data-ttu-id="a02ac-143">Dynadot</span><span class="sxs-lookup"><span data-stu-id="a02ac-143">Dynadot</span></span>
     
-- <span data-ttu-id="cc613-143">eNomCentral</span><span class="sxs-lookup"><span data-stu-id="cc613-143">eNomCentral</span></span>
+- <span data-ttu-id="a02ac-144">eNomCentral</span><span class="sxs-lookup"><span data-stu-id="a02ac-144">eNomCentral</span></span>
     
-- <span data-ttu-id="cc613-144">Europe Registry</span><span class="sxs-lookup"><span data-stu-id="cc613-144">Europe Registry</span></span>
+- <span data-ttu-id="a02ac-145">Europe Registry</span><span class="sxs-lookup"><span data-stu-id="a02ac-145">Europe Registry</span></span>
     
-- <span data-ttu-id="cc613-145">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="cc613-145">GoDaddy</span></span>
+- <span data-ttu-id="a02ac-146">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="a02ac-146">GoDaddy</span></span>
     
-- <span data-ttu-id="cc613-146">Hover</span><span class="sxs-lookup"><span data-stu-id="cc613-146">Hover</span></span>
+- <span data-ttu-id="a02ac-147">Hover</span><span class="sxs-lookup"><span data-stu-id="a02ac-147">Hover</span></span>
     
-- <span data-ttu-id="cc613-147">MyHosting.com</span><span class="sxs-lookup"><span data-stu-id="cc613-147">MyHosting.com</span></span>
+- <span data-ttu-id="a02ac-148">MyHosting.com</span><span class="sxs-lookup"><span data-stu-id="a02ac-148">MyHosting.com</span></span>
     
-- <span data-ttu-id="cc613-148">Name.com</span><span class="sxs-lookup"><span data-stu-id="cc613-148">Name.com</span></span>
+- <span data-ttu-id="a02ac-149">Name.com</span><span class="sxs-lookup"><span data-stu-id="a02ac-149">Name.com</span></span>
     
-- <span data-ttu-id="cc613-149">Nearly Free Speech</span><span class="sxs-lookup"><span data-stu-id="cc613-149">Nearly Free Speech</span></span>
+- <span data-ttu-id="a02ac-150">Nearly Free Speech</span><span class="sxs-lookup"><span data-stu-id="a02ac-150">Nearly Free Speech</span></span>
     
-- <span data-ttu-id="cc613-150">Nettica</span><span class="sxs-lookup"><span data-stu-id="cc613-150">Nettica</span></span>
+- <span data-ttu-id="a02ac-151">Nettica</span><span class="sxs-lookup"><span data-stu-id="a02ac-151">Nettica</span></span>
     
-- <span data-ttu-id="cc613-151">Network Information Center (NIC)</span><span class="sxs-lookup"><span data-stu-id="cc613-151">Network Information Center (NIC)</span></span>
+- <span data-ttu-id="a02ac-152">Network Information Center (NIC)</span><span class="sxs-lookup"><span data-stu-id="a02ac-152">Network Information Center (NIC)</span></span>
     
-- <span data-ttu-id="cc613-152">Network Solutions</span><span class="sxs-lookup"><span data-stu-id="cc613-152">Network Solutions</span></span>
+- <span data-ttu-id="a02ac-153">Network Solutions</span><span class="sxs-lookup"><span data-stu-id="a02ac-153">Network Solutions</span></span>
     
-- <span data-ttu-id="cc613-153">Register.com</span><span class="sxs-lookup"><span data-stu-id="cc613-153">Register.com</span></span>
+- <span data-ttu-id="a02ac-154">Register.com</span><span class="sxs-lookup"><span data-stu-id="a02ac-154">Register.com</span></span>
   
-## <a name="how-do-i-set-or-change-the-default-domain-in-microsoft-365"></a><span data-ttu-id="cc613-154">Microsoft 365 で既定のドメインを設定または変更するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-154">How do I set or change the default domain in Microsoft 365?</span></span>
+## <a name="how-do-i-set-or-change-the-default-domain-in-microsoft-365"></a><span data-ttu-id="a02ac-155">Microsoft 365 で既定のドメインを設定または変更するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-155">How do I set or change the default domain in Microsoft 365?</span></span>
 
-<span data-ttu-id="cc613-155">既定のドメインを選択するには、少なくとも1つのカスタムドメインが Microsoft 365 に追加されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-155">You must have at least one custom domain that you've added to Microsoft 365 before you can choose a default domain.</span></span>
+<span data-ttu-id="a02ac-156">既定のドメインを選択するには、少なくとも1つのカスタムドメインが Microsoft 365 に追加されている必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-156">You must have at least one custom domain that you've added to Microsoft 365 before you can choose a default domain.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="cc613-156">管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="cc613-156">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="a02ac-157">管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-157">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="cc613-157">管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="cc613-157">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="a02ac-158">管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-158">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="cc613-158">管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="cc613-158">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="a02ac-159">管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-159">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="cc613-159">[**ドメイン**] ページで、新しいメール アドレスの既定として設定するドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="cc613-159">On the **Domains** page, select the domain you want to set as the default for new email addresses.</span></span> 
+2. <span data-ttu-id="a02ac-160">[**ドメイン**] ページで、新しいメール アドレスの既定として設定するドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-160">On the **Domains** page, select the domain you want to set as the default for new email addresses.</span></span> 
     
-3. <span data-ttu-id="cc613-160">[**既定に設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="cc613-160">Select **Set as default**.</span></span>
+3. <span data-ttu-id="a02ac-161">[**既定に設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-161">Select **Set as default**.</span></span>
     
 ::: moniker range="o365-worldwide"
 
-<span data-ttu-id="cc613-161">*.onmicrosoft.com* ドメインの最初の部分の名前を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="cc613-161">You cannot change the name of your initial  *.onmicrosoft.com*  domain.</span></span> 
+<span data-ttu-id="a02ac-162">*.onmicrosoft.com* ドメインの最初の部分の名前を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-162">You cannot change the name of your initial  *.onmicrosoft.com*  domain.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="cc613-162">*.onmicrosoft.de* ドメインの最初の部分の名前を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="cc613-162">You cannot change the name of your initial  *.onmicrosoft.de*  domain.</span></span> 
+<span data-ttu-id="a02ac-163">*.onmicrosoft.de* ドメインの最初の部分の名前を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-163">You cannot change the name of your initial  *.onmicrosoft.de*  domain.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-<span data-ttu-id="cc613-163">*.partner.onmschina.cn* ドメインの最初の部分の名前を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="cc613-163">You cannot change the name of your initial  *.partner.onmschina.cn*  domain.</span></span> 
+<span data-ttu-id="a02ac-164">*.partner.onmschina.cn* ドメインの最初の部分の名前を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-164">You cannot change the name of your initial  *.partner.onmschina.cn*  domain.</span></span> 
 
 ::: moniker-end
 
-## <a name="can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365"></a><span data-ttu-id="cc613-164">Microsoft 365 にカスタムサブドメインまたは複数のドメインを追加できますか。</span><span class="sxs-lookup"><span data-stu-id="cc613-164">Can I add custom subdomains or multiple domains to Microsoft 365?</span></span>
+## <a name="can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365"></a><span data-ttu-id="a02ac-165">Microsoft 365 にカスタムサブドメインまたは複数のドメインを追加できますか。</span><span class="sxs-lookup"><span data-stu-id="a02ac-165">Can I add custom subdomains or multiple domains to Microsoft 365?</span></span>
 
 ::: moniker range="o365-worldwide"
 
-<span data-ttu-id="cc613-165">はい。</span><span class="sxs-lookup"><span data-stu-id="cc613-165">Yes.</span></span> <span data-ttu-id="cc613-166">サブドメインを追加するには、レジストラーの web サイトで独自の DNS 設定を管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-166">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="cc613-167">NS レコードでの DNS 設定の管理を行う場合や、Microsoft からドメインを購入した場合は、サブドメインを追加することはできません。</span><span class="sxs-lookup"><span data-stu-id="cc613-167">If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
+<span data-ttu-id="a02ac-166">はい。</span><span class="sxs-lookup"><span data-stu-id="a02ac-166">Yes.</span></span> <span data-ttu-id="a02ac-167">サブドメインを追加するには、レジストラーの web サイトで独自の DNS 設定を管理する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-167">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="a02ac-168">NS レコードでの DNS 設定の管理を行う場合や、Microsoft からドメインを購入した場合は、サブドメインを追加することはできません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-168">If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="cc613-p106">はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を Microsoft が行っている場合または Microsoft からドメインを購入した場合は、サブドメインを追加できません。</span><span class="sxs-lookup"><span data-stu-id="cc613-p106">Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
+<span data-ttu-id="a02ac-p106">はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を Microsoft が行っている場合または Microsoft からドメインを購入した場合は、サブドメインを追加できません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-p106">Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-<span data-ttu-id="cc613-p107">はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を 21Vianet が行っている場合は、サブドメインを追加できません。</span><span class="sxs-lookup"><span data-stu-id="cc613-p107">Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.</span></span>
+<span data-ttu-id="a02ac-p107">はい。サブドメインを追加するには、レジストラーの Web サイトでの DNS 設定を自分で管理する必要があります。NS レコードの DNS 設定の管理を 21Vianet が行っている場合は、サブドメインを追加できません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-p107">Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="cc613-174">通常、Microsoft 365 サブスクリプションには最大900のドメインを追加できます。</span><span class="sxs-lookup"><span data-stu-id="cc613-174">Typically, you can add up to 900 domains to your Microsoft 365 subscription.</span></span>
+<span data-ttu-id="a02ac-175">通常、Microsoft 365 サブスクリプションには最大900のドメインを追加できます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-175">Typically, you can add up to 900 domains to your Microsoft 365 subscription.</span></span>
   
-<span data-ttu-id="cc613-175">例えば、contoso.com と contosomaketing.com の各ドメインを追加し、その後に www.contoso.com、www.partners.contoso.com、www.partners.marketing.contoso.com などのサブドメインを追加することができます。</span><span class="sxs-lookup"><span data-stu-id="cc613-175">For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains www.contoso.com, www.partners.contoso.com, www.partners.marketing.contoso.com, and so on.</span></span>
+<span data-ttu-id="a02ac-176">例えば、contoso.com と contosomaketing.com の各ドメインを追加し、その後に www.contoso.com、www.partners.contoso.com、www.partners.marketing.contoso.com などのサブドメインを追加することができます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-176">For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains www.contoso.com, www.partners.contoso.com, www.partners.marketing.contoso.com, and so on.</span></span>
   
-<span data-ttu-id="cc613-176">サブドメインを追加すると、確認が行われる親ドメインでの確認に基づき、自動的に確認されます。</span><span class="sxs-lookup"><span data-stu-id="cc613-176">When you add a subdomain, it is automatically verified based on the parent domain that is being verified.</span></span>
+<span data-ttu-id="a02ac-177">サブドメインを追加すると、確認が行われる親ドメインでの確認に基づき、自動的に確認されます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-177">When you add a subdomain, it is automatically verified based on the parent domain that is being verified.</span></span>
   
-<span data-ttu-id="cc613-177">Microsoft 365 に複数のドメインを追加する場合は、追加した任意のドメインで任意のサービス (電子メールなど) をホストできます。</span><span class="sxs-lookup"><span data-stu-id="cc613-177">When you add multiple domains to Microsoft 365, you can host any of the services (like email) on any of the domains you've added.</span></span>  <span data-ttu-id="cc613-178">*電子メールを Microsoft 365 に変更すると、ドメインの MX レコードを更新すると、そのドメインに送信されるすべての電子メールが Microsoft 365 に送られ始めます。*</span><span class="sxs-lookup"><span data-stu-id="cc613-178">*When you change your email to Microsoft 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Microsoft 365.*</span></span> 
+<span data-ttu-id="a02ac-178">Microsoft 365 に複数のドメインを追加する場合は、追加した任意のドメインで任意のサービス (電子メールなど) をホストできます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-178">When you add multiple domains to Microsoft 365, you can host any of the services (like email) on any of the domains you've added.</span></span>  <span data-ttu-id="a02ac-179">*電子メールを Microsoft 365 に変更すると、ドメインの MX レコードを更新すると、そのドメインに送信されるすべての電子メールが Microsoft 365 に送られ始めます。*</span><span class="sxs-lookup"><span data-stu-id="a02ac-179">*When you change your email to Microsoft 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Microsoft 365.*</span></span> 
  
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> <span data-ttu-id="cc613-179">Contoso.com ドメインを Microsoft 365 サブスクリプションに追加した場合は、他の Microsoft 365 組織にサブドメイン xyz.contoso.com を追加することもできます。</span><span class="sxs-lookup"><span data-stu-id="cc613-179">If you added a contoso.com domain to a Microsoft 365 subscription, you can also add the subdomain xyz.contoso.com to another Microsoft 365 organization.</span></span> <span data-ttu-id="cc613-180">サブドメインを追加する際に、DNS ホスティングプロバイダーに TXT レコードを追加するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cc613-180">When adding the subdomain, you are prompted to add a TXT record in the DNS hosting provider.</span></span>
+> <span data-ttu-id="a02ac-180">Contoso.com ドメインを Microsoft 365 サブスクリプションに追加した場合は、他の Microsoft 365 組織にサブドメイン xyz.contoso.com を追加することもできます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-180">If you added a contoso.com domain to a Microsoft 365 subscription, you can also add the subdomain xyz.contoso.com to another Microsoft 365 organization.</span></span> <span data-ttu-id="a02ac-181">サブドメインを追加する際に、DNS ホスティングプロバイダーに TXT レコードを追加するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-181">When adding the subdomain, you are prompted to add a TXT record in the DNS hosting provider.</span></span>
 
-## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a><span data-ttu-id="cc613-181">"onmicrosoft.com" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-181">Why do I have an "onmicrosoft.com" domain?</span></span>
+## <a name="how-do-i-transfer-a-domain-from-microsoft-365-to-another-host"></a><span data-ttu-id="a02ac-182">Microsoft 365 から別のホストにドメインを移行するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-182">How do I transfer a domain from Microsoft 365 to another host?</span></span>
 
-<span data-ttu-id="cc613-182">Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.com*などのドメインを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc613-182">Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.com*, when you sign up with the service.</span></span> <span data-ttu-id="cc613-183">サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.com*のようなドメインが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cc613-183">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.com*.</span></span> 
+<span data-ttu-id="a02ac-183">ドメインを移行する手順については、「 [Microsoft から別のホストへのドメインの移行](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-183">For the procedure to transfer a domain, see [Transfer a domain from Microsoft to another host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host).</span></span>
+
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a><span data-ttu-id="a02ac-184">カスタムドメインから Microsoft 365 をパイロットする</span><span class="sxs-lookup"><span data-stu-id="a02ac-184">Pilot Microsoft 365 from my custom domain</span></span>
+
+<span data-ttu-id="a02ac-185">Microsoft 365 の電子メール機能をカスタムドメインから Microsoft 365 メールボックスにパイロットする手順については、「 [カスタムドメインからの microsoft 365 のパイロット](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-185">For the procedure to pilot Microsoft 365 email functionality from a custom domain to a Microsoft 365 mailbox, see [Pilot Microsoft 365 from my custom domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain).</span></span>
+
+## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a><span data-ttu-id="a02ac-186">"onmicrosoft.com" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-186">Why do I have an "onmicrosoft.com" domain?</span></span>
+
+<span data-ttu-id="a02ac-187">Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.com*などのドメインを作成します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-187">Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.com*, when you sign up with the service.</span></span> <span data-ttu-id="a02ac-188">サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.com*のようなドメインが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a02ac-188">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.com*.</span></span> 
   
- <span data-ttu-id="cc613-184">\***Alan \@ contoso.com\*のように電子メールを表示する場合**は[、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「[ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="cc613-184">**If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already.</span></span> 
+ <span data-ttu-id="a02ac-189">\***Alan \@ contoso.com\*のように電子メールを表示する場合**は[、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「[ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-189">**If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already.</span></span> 
   
-- <span data-ttu-id="cc613-185">**サインアップ後に onmicrosoft ドメインの名前は変更できません** 。</span><span class="sxs-lookup"><span data-stu-id="cc613-185">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="cc613-186">たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.com の場合、fabrikam.onmicrosoft.com に変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="cc613-186">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com.</span></span> <span data-ttu-id="cc613-187">別の onmicrosoft.com ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-187">To use a different onmicrosoft.com domain, you'd have to start a new subscription with Microsoft 365.</span></span> 
+- <span data-ttu-id="a02ac-190">**サインアップ後に onmicrosoft ドメインの名前は変更できません** 。</span><span class="sxs-lookup"><span data-stu-id="a02ac-190">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="a02ac-191">たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.com の場合、fabrikam.onmicrosoft.com に変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-191">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com.</span></span> <span data-ttu-id="a02ac-192">別の onmicrosoft.com ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-192">To use a different onmicrosoft.com domain, you'd have to start a new subscription with Microsoft 365.</span></span> 
     
-- <span data-ttu-id="cc613-p112">**チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.com ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。</span><span class="sxs-lookup"><span data-stu-id="cc613-p112">**You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.com domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
+- <span data-ttu-id="a02ac-p112">**チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.com ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-p112">**You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.com domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
     
-- <span data-ttu-id="cc613-191">**onmicrosoft ドメインは、削除できません。**</span><span class="sxs-lookup"><span data-stu-id="cc613-191">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="cc613-192">Microsoft 365 は、サブスクリプションの背後で使用されているため、これを維持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-192">Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="cc613-193">カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="cc613-193">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
+- <span data-ttu-id="a02ac-196">**onmicrosoft ドメインは、削除できません。**</span><span class="sxs-lookup"><span data-stu-id="a02ac-196">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="a02ac-197">Microsoft 365 は、サブスクリプションの背後で使用されているため、これを維持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-197">Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="a02ac-198">カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-198">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
     
-<span data-ttu-id="cc613-p114">ドメインを追加した後でも、初期の onmicrosoft.com ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。</span><span class="sxs-lookup"><span data-stu-id="cc613-p114">You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.</span></span>
+<span data-ttu-id="a02ac-p114">ドメインを追加した後でも、初期の onmicrosoft.com ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-p114">You can keep using the initial onmicrosoft.com domain even after you add your domain. It still works for email and other services, so it's your choice.</span></span>
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-## <a name="why-do-i-have-an-onmicrosoftde-domain"></a><span data-ttu-id="cc613-196">"onmicrosoft.de" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-196">Why do I have an "onmicrosoft.de" domain?</span></span>
+## <a name="why-do-i-have-an-onmicrosoftde-domain"></a><span data-ttu-id="a02ac-201">"onmicrosoft.de" ドメインがあるのはなぜですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-201">Why do I have an "onmicrosoft.de" domain?</span></span>
 
-<span data-ttu-id="cc613-197">Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.de*などのドメインを作成します。</span><span class="sxs-lookup"><span data-stu-id="cc613-197">Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service.</span></span> <span data-ttu-id="cc613-198">サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de*のようなドメインが含まれています。</span><span class="sxs-lookup"><span data-stu-id="cc613-198">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*.</span></span> 
+<span data-ttu-id="a02ac-202">Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.de*などのドメインを作成します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-202">Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service.</span></span> <span data-ttu-id="a02ac-203">サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de*のようなドメインが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a02ac-203">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*.</span></span> 
   
- <span data-ttu-id="cc613-199">\***Alan@contoso.de\*のように電子メールを表示する場合**は[、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「[ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="cc613-199">**If you want to have your email look like *alan@contoso.de*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already.</span></span> 
+ <span data-ttu-id="a02ac-204">\***Alan@contoso.de\*のように電子メールを表示する場合**は[、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「[ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-204">**If you want to have your email look like *alan@contoso.de*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already.</span></span> 
   
-- <span data-ttu-id="cc613-200">**サインアップ後に onmicrosoft ドメインの名前は変更できません** 。</span><span class="sxs-lookup"><span data-stu-id="cc613-200">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="cc613-201">たとえば、選択した初期ドメインが fourthcoffee.onmicrosoft.de の場合、fabrikam.onmicrosoft.de に変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="cc613-201">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de.</span></span> <span data-ttu-id="cc613-202">別の onmicrosoft.de ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-202">To use a different onmicrosoft.de domain, you'd have to start a new subscription with Microsoft 365.</span></span> 
+- <span data-ttu-id="a02ac-205">**サインアップ後に onmicrosoft ドメインの名前は変更できません** 。</span><span class="sxs-lookup"><span data-stu-id="a02ac-205">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="a02ac-206">たとえば、選択した初期ドメインが fourthcoffee.onmicrosoft.de の場合、fabrikam.onmicrosoft.de に変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-206">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de.</span></span> <span data-ttu-id="a02ac-207">別の onmicrosoft.de ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-207">To use a different onmicrosoft.de domain, you'd have to start a new subscription with Microsoft 365.</span></span> 
     
-- <span data-ttu-id="cc613-p117">**チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.de ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。</span><span class="sxs-lookup"><span data-stu-id="cc613-p117">**You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
+- <span data-ttu-id="a02ac-p117">**チーム サイトの URL の名前を変更することはできません。** チーム サイトの URL は onmicrosoft.de ドメイン名に基づいています。SharePoint Online のアーキテクチャの動作方法のため、残念ながらチーム サイトの名前は変更できません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-p117">**You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
     
-- <span data-ttu-id="cc613-205">**onmicrosoft ドメインは、削除できません。**</span><span class="sxs-lookup"><span data-stu-id="cc613-205">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="cc613-206">Microsoft 365 は、サブスクリプションの背後で使用されているため、これを維持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc613-206">Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="cc613-207">カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="cc613-207">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
+- <span data-ttu-id="a02ac-210">**onmicrosoft ドメインは、削除できません。**</span><span class="sxs-lookup"><span data-stu-id="a02ac-210">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="a02ac-211">Microsoft 365 は、サブスクリプションの背後で使用されているため、これを維持する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a02ac-211">Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="a02ac-212">カスタム ドメインを追加した場合は、初期ドメインを使う必要はありません。</span><span class="sxs-lookup"><span data-stu-id="a02ac-212">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
     
-<span data-ttu-id="cc613-p119">ドメインを追加した後でも、初期の onmicrosoft.de ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。</span><span class="sxs-lookup"><span data-stu-id="cc613-p119">You can keep using the initial onmicrosoft.de domain even after you add your domain. It still works for email and other services, so it's your choice.</span></span>
+<span data-ttu-id="a02ac-p119">ドメインを追加した後でも、初期の onmicrosoft.de ドメインを使うことができます。初期ドメインは、メールやその他のサービスでも引き続き利用できます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-p119">You can keep using the initial onmicrosoft.de domain even after you add your domain. It still works for email and other services, so it's your choice.</span></span>
   
 ::: moniker-end
 
-## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a><span data-ttu-id="cc613-210">非営利団体または教育機関のステータスを確認するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="cc613-210">How do I verify my nonprofit or education status?</span></span>
+## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a><span data-ttu-id="a02ac-215">非営利団体または教育機関のステータスを確認するにはどうすればよいですか?</span><span class="sxs-lookup"><span data-stu-id="a02ac-215">How do I verify my nonprofit or education status?</span></span>
 
-1. <span data-ttu-id="cc613-211">[管理センター](https://docs.microsoft.com/microsoft-365/admin/admin-home)で [**セットアップ**] を選択してウィザードを開始します。</span><span class="sxs-lookup"><span data-stu-id="cc613-211">Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard.</span></span> <span data-ttu-id="cc613-212">(必ず Microsoft 365 にサインインしてください)。</span><span class="sxs-lookup"><span data-stu-id="cc613-212">(Be sure to sign in to Microsoft 365 first.)</span></span> 
+1. <span data-ttu-id="a02ac-216">[管理センター](https://docs.microsoft.com/microsoft-365/admin/admin-home)で [**セットアップ**] を選択してウィザードを開始します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-216">Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard.</span></span> <span data-ttu-id="a02ac-217">(必ず Microsoft 365 にサインインしてください)。</span><span class="sxs-lookup"><span data-stu-id="a02ac-217">(Be sure to sign in to Microsoft 365 first.)</span></span> 
     
-2. <span data-ttu-id="cc613-213">学校の管理者になるには、Microsoft 365 で [**管理者になる**] オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="cc613-213">To become the admin for your school, select the  **Become an admin** option in Microsoft 365.</span></span> 
+2. <span data-ttu-id="a02ac-218">学校の管理者になるには、Microsoft 365 で [  **管理者になる** ] オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-218">To become the admin for your school, select the  **Become an admin** option in Microsoft 365.</span></span> 
     
-3. <span data-ttu-id="cc613-214">ドメインの DNS ホスト web サイトに TXT DNS レコードを追加するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="cc613-214">You'll be prompted to add a TXT DNS record at the DNS host website for your domain.</span></span> <span data-ttu-id="cc613-215">それはなぜでしょうか。</span><span class="sxs-lookup"><span data-stu-id="cc613-215">Why?</span></span> <span data-ttu-id="cc613-216">DNS ホストでサインインし、ドメインのレコードを追加することにより、Microsoft 365 にドメイン名を所有していることを証明します。</span><span class="sxs-lookup"><span data-stu-id="cc613-216">Because by signing in at the DNS host and adding a record for your domain, you prove to Microsoft 365 that you own the domain name.</span></span>
+3. <span data-ttu-id="a02ac-219">ドメインの DNS ホスト web サイトに TXT DNS レコードを追加するように求めるメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a02ac-219">You'll be prompted to add a TXT DNS record at the DNS host website for your domain.</span></span> <span data-ttu-id="a02ac-220">それはなぜでしょうか。</span><span class="sxs-lookup"><span data-stu-id="a02ac-220">Why?</span></span> <span data-ttu-id="a02ac-221">DNS ホストでサインインし、ドメインのレコードを追加することにより、Microsoft 365 にドメイン名を所有していることを証明します。</span><span class="sxs-lookup"><span data-stu-id="a02ac-221">Because by signing in at the DNS host and adding a record for your domain, you prove to Microsoft 365 that you own the domain name.</span></span>
     
-4. <span data-ttu-id="cc613-217">レコードを追加した後、Microsoft 365 ポータルに戻り、追加されたことを確認して、Microsoft 365 で確認できるようにします。</span><span class="sxs-lookup"><span data-stu-id="cc613-217">After you add the record, you'll go back to the Microsoft 365 portal and confirm that you've added it, so Microsoft 365 can check.</span></span>
+4. <span data-ttu-id="a02ac-222">レコードを追加した後、Microsoft 365 ポータルに戻り、追加されたことを確認して、Microsoft 365 で確認できるようにします。</span><span class="sxs-lookup"><span data-stu-id="a02ac-222">After you add the record, you'll go back to the Microsoft 365 portal and confirm that you've added it, so Microsoft 365 can check.</span></span>
     
-<span data-ttu-id="cc613-218">非営利団体があり、Microsoft 365 を入手する必要がある場合</span><span class="sxs-lookup"><span data-stu-id="cc613-218">Have a nonprofit and want to get Microsoft 365?</span></span> <span data-ttu-id="cc613-219">[組織に資格](https://www.microsoft.com/en-us/nonprofits/eligibility)があることを確認してから、サービスにサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="cc613-219">[Make sure your organization qualifies](https://www.microsoft.com/en-us/nonprofits/eligibility) and then sign up for the service.</span></span> 
+<span data-ttu-id="a02ac-223">非営利団体があり、Microsoft 365 を入手する必要がある場合</span><span class="sxs-lookup"><span data-stu-id="a02ac-223">Have a nonprofit and want to get Microsoft 365?</span></span> <span data-ttu-id="a02ac-224">[組織に資格](https://www.microsoft.com/en-us/nonprofits/eligibility) があることを確認してから、サービスにサインアップしてください。</span><span class="sxs-lookup"><span data-stu-id="a02ac-224">[Make sure your organization qualifies](https://www.microsoft.com/en-us/nonprofits/eligibility) and then sign up for the service.</span></span> 
   
-<span data-ttu-id="cc613-220">学校の管理者になる方法の詳細については、</span><span class="sxs-lookup"><span data-stu-id="cc613-220">Want to know more about becoming the admin for your school?</span></span> <span data-ttu-id="cc613-221">[こちらのヘルプ記事をご覧ください](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
-)。</span><span class="sxs-lookup"><span data-stu-id="cc613-221">[Learn all about it](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
+<span data-ttu-id="a02ac-225">学校の管理者になる方法の詳細については、</span><span class="sxs-lookup"><span data-stu-id="a02ac-225">Want to know more about becoming the admin for your school?</span></span> <span data-ttu-id="a02ac-226">[こちらのヘルプ記事をご覧ください](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
+)。</span><span class="sxs-lookup"><span data-stu-id="a02ac-226">[Learn all about it](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
 ).</span></span>

@@ -19,61 +19,61 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: 8880655ec24f20efd139b8334ab754f51146b496
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148116"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798212"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a><span data-ttu-id="30912-104">Microsoft Threat Protection でインシデントを管理する</span><span class="sxs-lookup"><span data-stu-id="30912-104">Manage incidents in Microsoft Threat Protection</span></span>
+# <a name="manage-incidents-in-microsoft-threat-protection"></a><span data-ttu-id="c407e-104">Microsoft Threat Protection でインシデントを管理する</span><span class="sxs-lookup"><span data-stu-id="c407e-104">Manage incidents in Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="30912-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="30912-105">**Applies to:**</span></span>
-- <span data-ttu-id="30912-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="30912-106">Microsoft Threat Protection</span></span>
-
-
-
-<span data-ttu-id="30912-107">インシデントの管理は、脅威を封じ込めて対処する上でとても重要です。</span><span class="sxs-lookup"><span data-stu-id="30912-107">Managing incidents is critical in ensuring that threats are contained and addressed.</span></span> <span data-ttu-id="30912-108">Microsoft Threat Protection では、デバイス、ユーザー、およびメールボックスにおけるインシデントを管理できます。</span><span class="sxs-lookup"><span data-stu-id="30912-108">In Microsoft Threat Protection, you have access to managing incidents on devices, users, and mailboxes.</span></span> 
+<span data-ttu-id="c407e-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="c407e-105">**Applies to:**</span></span>
+- <span data-ttu-id="c407e-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="c407e-106">Microsoft Threat Protection</span></span>
 
 
-<span data-ttu-id="30912-109">インシデントを管理するには、**インシデント キュー**からインシデントを選択します。</span><span class="sxs-lookup"><span data-stu-id="30912-109">You can manage incidents by selecting an incident from the **Incidents queue**.</span></span> 
 
-<span data-ttu-id="30912-110">インシデントの名前を編集し、インシデントを解決し、インシデントの分類と判定を設定できます。</span><span class="sxs-lookup"><span data-stu-id="30912-110">You can edit the name of an incident, resolve it, set its classification and determination.</span></span> <span data-ttu-id="30912-111">インシデントを自分に割り当てたり、インシデント タグやコメントを追加したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="30912-111">You can also assign the incident to yourself, add incident tags and comments.</span></span>
+<span data-ttu-id="c407e-107">インシデントの管理は、脅威を封じ込めて対処する上でとても重要です。</span><span class="sxs-lookup"><span data-stu-id="c407e-107">Managing incidents is critical in ensuring that threats are contained and addressed.</span></span> <span data-ttu-id="c407e-108">Microsoft Threat Protection では、デバイス、ユーザー、およびメールボックスにおけるインシデントを管理できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-108">In Microsoft Threat Protection, you have access to managing incidents on devices, users, and mailboxes.</span></span> 
 
-<span data-ttu-id="30912-112">調査中にあるインシデントから別のインシデントに警告を移動する場合は、この操作は [Alerts (警告)] タブで行うこともできます。こうすることで、関連するすべての警告が含まれた大規模なインシデントまたは小規模なインシデントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="30912-112">In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.</span></span>
 
-## <a name="edit-incident-name"></a><span data-ttu-id="30912-113">インシデント名を編集する</span><span class="sxs-lookup"><span data-stu-id="30912-113">Edit incident name</span></span>
-<span data-ttu-id="30912-114">既定では、インシデントには数値が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="30912-114">By default, an incident is assigned a number.</span></span> <span data-ttu-id="30912-115">インシデント名は、組織での命名規則に準拠するよう変更できます。</span><span class="sxs-lookup"><span data-stu-id="30912-115">You can modify the incident name to better align with your preferred naming convention.</span></span>
+<span data-ttu-id="c407e-109">インシデントを管理するには、**インシデント キュー**からインシデントを選択します。</span><span class="sxs-lookup"><span data-stu-id="c407e-109">You can manage incidents by selecting an incident from the **Incidents queue**.</span></span> 
 
-> [!TIP]
-> <span data-ttu-id="30912-116">その概要では、自動インシデントの名前付け (現在パブリックプレビュー) で、インシデント名が、影響を受けるエンドポイント数、影響を受けるユーザー、検出ソースまたはカテゴリなどのアラート属性に基づいて生成されます。</span><span class="sxs-lookup"><span data-stu-id="30912-116">For additional visibility at-a-glance, automatic incident naming, currently in public preview, generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.</span></span> <span data-ttu-id="30912-117">これにより、インシデントの範囲をすばやく理解することができます。</span><span class="sxs-lookup"><span data-stu-id="30912-117">This allows you to quickly understand the scope of the incident.</span></span>
->
-> <span data-ttu-id="30912-118">例: 複数の*ソースによって報告された複数のエンドポイントのマルチステージインシデント*。</span><span class="sxs-lookup"><span data-stu-id="30912-118">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
->
-> <span data-ttu-id="30912-119">自動インシデントの名前の公開前に存在していたインシデントは、名前が変更されません。</span><span class="sxs-lookup"><span data-stu-id="30912-119">Incidents that existed prior the rollout of automatic incident naming will not have their name changed.</span></span>
->
-> <span data-ttu-id="30912-120">[プレビュー機能を有効](preview.md#turn-on-preview-features)にする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="30912-120">Learn more about [turning on preview features](preview.md#turn-on-preview-features).</span></span>
+<span data-ttu-id="c407e-110">インシデントの名前を編集し、インシデントを解決し、インシデントの分類と判定を設定できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-110">You can edit the name of an incident, resolve it, set its classification and determination.</span></span> <span data-ttu-id="c407e-111">インシデントを自分に割り当てたり、インシデント タグやコメントを追加したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="c407e-111">You can also assign the incident to yourself, add incident tags and comments.</span></span>
 
-## <a name="assign-incidents"></a><span data-ttu-id="30912-121">インシデントを割り当てる</span><span class="sxs-lookup"><span data-stu-id="30912-121">Assign incidents</span></span>
-<span data-ttu-id="30912-122">インシデントがまだ割り当てられていない場合、[**Assign to me (自分に割り当て)**] を選択してインシデントを自分に割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="30912-122">If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself.</span></span> <span data-ttu-id="30912-123">これにより、インシデントの所有権だけでなくそのインシデントと関連するすべての警告の所有権が自分に割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="30912-123">Doing so assumes ownership of not just the incident, but also all the alerts associated with it.</span></span>
+<span data-ttu-id="c407e-112">調査中にあるインシデントから別のインシデントに警告を移動する場合は、この操作は [Alerts (警告)] タブで行うこともできます。こうすることで、関連するすべての警告が含まれた大規模なインシデントまたは小規模なインシデントを作成できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-112">In cases where while investigating you would like to move alerts from one incident to another you can also do so from the Alerts tab, thus creating a larger or smaller incident that include all relevant alerts.</span></span>
 
-## <a name="set-status-and-classification"></a><span data-ttu-id="30912-124">状態と分類を設定する</span><span class="sxs-lookup"><span data-stu-id="30912-124">Set status and classification</span></span>
-### <a name="incident-status"></a><span data-ttu-id="30912-125">インシデントの状態</span><span class="sxs-lookup"><span data-stu-id="30912-125">Incident status</span></span>
-<span data-ttu-id="30912-126">インシデントは、調査の進捗に合わせて状態を変更することにより、**Active (アクティブ)** または **Resolved (解決済み)** に分類できます。</span><span class="sxs-lookup"><span data-stu-id="30912-126">You can categorize incidents (as **Active**, or **Resolved**) by changing their status as your investigation progresses.</span></span> <span data-ttu-id="30912-127">こうすることで、チームでのインシデントへの対応方法を整理して管理できます。</span><span class="sxs-lookup"><span data-stu-id="30912-127">This helps you organize and manage how your team can respond to incidents.</span></span>
+## <a name="edit-incident-name"></a><span data-ttu-id="c407e-113">インシデント名を編集する</span><span class="sxs-lookup"><span data-stu-id="c407e-113">Edit incident name</span></span>
+<span data-ttu-id="c407e-114">インシデントには、影響を受けたエンドポイント数、影響を受けたユーザー、検出ソースまたはカテゴリなどのアラート属性に基づいて、自動的に名前が割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="c407e-114">Incidents are automatically assigned a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.</span></span> <span data-ttu-id="c407e-115">これにより、インシデントの範囲をすばやく理解することができます。</span><span class="sxs-lookup"><span data-stu-id="c407e-115">This allows you to quickly understand the scope of the incident.</span></span>
 
-<span data-ttu-id="30912-128">たとえば、組織の SOC アナリストは、当日の緊急の **Active (アクティブ)** インシデントを確認して、調査のためにそれらを自分に割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="30912-128">For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to herself for investigation.</span></span>
+<span data-ttu-id="c407e-116">例: 複数の*ソースによって報告された複数のエンドポイントのマルチステージインシデント*。</span><span class="sxs-lookup"><span data-stu-id="c407e-116">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
 
-<span data-ttu-id="30912-129">また、インシデントが修復された場合は、SOC アナリストはインシデントを **Resolved (解決済み)** と設定することができます。</span><span class="sxs-lookup"><span data-stu-id="30912-129">Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated.</span></span> <span data-ttu-id="30912-130">インシデントを解決すると、インシデントに含まれているすべての警告が、まだ開かれているものも含めて自動的に閉じられます。</span><span class="sxs-lookup"><span data-stu-id="30912-130">Resolving an incident will automatically close all alerts that are part of the incident and still open.</span></span> 
+<span data-ttu-id="c407e-117">インシデント名は、組織での命名規則に準拠するよう変更できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-117">You can modify the incident name to better align with your preferred naming convention.</span></span>
 
-### <a name="classification-and-determination"></a><span data-ttu-id="30912-131">分類と判定</span><span class="sxs-lookup"><span data-stu-id="30912-131">Classification and determination</span></span>
-<span data-ttu-id="30912-132">分類を設定しないことも、インシデントが真または偽であると指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="30912-132">You can choose not to set a classification, or decide to specify whether an incident is true or false.</span></span> <span data-ttu-id="30912-133">こうすることで、チームにはインシデントの傾向が示され、チームの学習につながります。</span><span class="sxs-lookup"><span data-stu-id="30912-133">Doing so helps the team see patterns and learn from them.</span></span> 
+> [!NOTE]
+> <span data-ttu-id="c407e-118">自動インシデントの名前付け機能を展開する前に存在していたインシデントは、その名前を保持します。</span><span class="sxs-lookup"><span data-stu-id="c407e-118">Incidents that existed prior the rollout of the automatic incident naming feature will retain their name.</span></span>
 
-## <a name="add-comments"></a><span data-ttu-id="30912-134">コメントを追加する</span><span class="sxs-lookup"><span data-stu-id="30912-134">Add comments</span></span>
-<span data-ttu-id="30912-135">警告にはコメントを追加することができ、インシデントに関する過去のイベントを表示して、以前に行われた変更を確認できます。</span><span class="sxs-lookup"><span data-stu-id="30912-135">You can add comments and view historical events about an incident to see previous changes made to it.</span></span>
 
-<span data-ttu-id="30912-136">警告に変更またはコメントが加えられるたびに、[Comments and history (コメントと履歴)] セクションに記録されます。</span><span class="sxs-lookup"><span data-stu-id="30912-136">Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.</span></span>
 
-<span data-ttu-id="30912-137">追加されたコメントは直ちにウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="30912-137">Added comments instantly appear on the pane.</span></span>
+## <a name="assign-incidents"></a><span data-ttu-id="c407e-119">インシデントを割り当てる</span><span class="sxs-lookup"><span data-stu-id="c407e-119">Assign incidents</span></span>
+<span data-ttu-id="c407e-120">インシデントがまだ割り当てられていない場合、[**Assign to me (自分に割り当て)**] を選択してインシデントを自分に割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="c407e-120">If an incident has not yet been assigned, you can select **Assign to me** to assign the incident to yourself.</span></span> <span data-ttu-id="c407e-121">これにより、インシデントの所有権だけでなくそのインシデントと関連するすべての警告の所有権が自分に割り当てられます。</span><span class="sxs-lookup"><span data-stu-id="c407e-121">Doing so assumes ownership of not just the incident, but also all the alerts associated with it.</span></span>
 
-## <a name="add-incident-tags"></a><span data-ttu-id="30912-138">インシデント タグを追加する</span><span class="sxs-lookup"><span data-stu-id="30912-138">Add incident tags</span></span>
-<span data-ttu-id="30912-139">共通した特徴を持つインシデントのグループにフラグを設定するなどの目的に、カスタム タグをインシデントに追加できます。</span><span class="sxs-lookup"><span data-stu-id="30912-139">You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics.</span></span> <span data-ttu-id="30912-140">こうすることで、特定のタグを含むすべてのインシデントのインシデント キューを後からフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="30912-140">You can later filter the incidents queue for all incidents that contain a specific tag.</span></span>
+## <a name="set-status-and-classification"></a><span data-ttu-id="c407e-122">状態と分類を設定する</span><span class="sxs-lookup"><span data-stu-id="c407e-122">Set status and classification</span></span>
+### <a name="incident-status"></a><span data-ttu-id="c407e-123">インシデントの状態</span><span class="sxs-lookup"><span data-stu-id="c407e-123">Incident status</span></span>
+<span data-ttu-id="c407e-124">インシデントは、調査の進捗に合わせて状態を変更することにより、**Active (アクティブ)** または **Resolved (解決済み)** に分類できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-124">You can categorize incidents (as **Active**, or **Resolved**) by changing their status as your investigation progresses.</span></span> <span data-ttu-id="c407e-125">こうすることで、チームでのインシデントへの対応方法を整理して管理できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-125">This helps you organize and manage how your team can respond to incidents.</span></span>
+
+<span data-ttu-id="c407e-126">たとえば、組織の SOC アナリストは、当日の緊急の **Active (アクティブ)** インシデントを確認して、調査のためにそれらを自分に割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="c407e-126">For example, your SOC analyst can review the urgent **Active** incidents for the day, and decide to assign them to herself for investigation.</span></span>
+
+<span data-ttu-id="c407e-127">また、インシデントが修復された場合は、SOC アナリストはインシデントを **Resolved (解決済み)** と設定することができます。</span><span class="sxs-lookup"><span data-stu-id="c407e-127">Alternatively, your SOC analyst might set the incident as **Resolved** if the incident has been remediated.</span></span> <span data-ttu-id="c407e-128">インシデントを解決すると、インシデントに含まれているすべての警告が、まだ開かれているものも含めて自動的に閉じられます。</span><span class="sxs-lookup"><span data-stu-id="c407e-128">Resolving an incident will automatically close all alerts that are part of the incident and still open.</span></span> 
+
+### <a name="classification-and-determination"></a><span data-ttu-id="c407e-129">分類と判定</span><span class="sxs-lookup"><span data-stu-id="c407e-129">Classification and determination</span></span>
+<span data-ttu-id="c407e-130">分類を設定しないことも、インシデントが真または偽であると指定することもできます。</span><span class="sxs-lookup"><span data-stu-id="c407e-130">You can choose not to set a classification, or decide to specify whether an incident is true or false.</span></span> <span data-ttu-id="c407e-131">こうすることで、チームにはインシデントの傾向が示され、チームの学習につながります。</span><span class="sxs-lookup"><span data-stu-id="c407e-131">Doing so helps the team see patterns and learn from them.</span></span> 
+
+## <a name="add-comments"></a><span data-ttu-id="c407e-132">コメントを追加する</span><span class="sxs-lookup"><span data-stu-id="c407e-132">Add comments</span></span>
+<span data-ttu-id="c407e-133">警告にはコメントを追加することができ、インシデントに関する過去のイベントを表示して、以前に行われた変更を確認できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-133">You can add comments and view historical events about an incident to see previous changes made to it.</span></span>
+
+<span data-ttu-id="c407e-134">警告に変更またはコメントが加えられるたびに、[Comments and history (コメントと履歴)] セクションに記録されます。</span><span class="sxs-lookup"><span data-stu-id="c407e-134">Whenever a change or comment is made to an alert, it is recorded in the Comments and history section.</span></span>
+
+<span data-ttu-id="c407e-135">追加されたコメントは直ちにウィンドウに表示されます。</span><span class="sxs-lookup"><span data-stu-id="c407e-135">Added comments instantly appear on the pane.</span></span>
+
+## <a name="add-incident-tags"></a><span data-ttu-id="c407e-136">インシデント タグを追加する</span><span class="sxs-lookup"><span data-stu-id="c407e-136">Add incident tags</span></span>
+<span data-ttu-id="c407e-137">共通した特徴を持つインシデントのグループにフラグを設定するなどの目的に、カスタム タグをインシデントに追加できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-137">You can add custom tags to an incident, for example to flag a group of incidents with a common characteristics.</span></span> <span data-ttu-id="c407e-138">こうすることで、特定のタグを含むすべてのインシデントのインシデント キューを後からフィルター処理できます。</span><span class="sxs-lookup"><span data-stu-id="c407e-138">You can later filter the incidents queue for all incidents that contain a specific tag.</span></span>
