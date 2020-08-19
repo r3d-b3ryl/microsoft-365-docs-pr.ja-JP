@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204949"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797784"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
 **適用対象:**
 - Microsoft Threat Protection
 
-この `FileProfile()` 関数は、クエリによって検出されたファイルに次のデータを追加する、[高度な](advanced-hunting-overview.md)検索のエンリッチメント関数です。
+この `FileProfile()` 関数は、クエリによって検出されたファイルに次のデータを追加する、 [高度な](advanced-hunting-overview.md) 検索のエンリッチメント関数です。
 
 | 列 | データ型 | 説明 |
 |------------|-------------|-------------|
@@ -43,9 +43,9 @@ ms.locfileid: "45204949"
 | 署名者 | string | ファイルの署名者に関する情報 |
 | 発行者 | string | 発行元の証明機関 (CA) に関する情報 |
 | SignerHash | string | 署名者を識別する一意のハッシュ値 |
-| IsCertificateValid | boolean | ファイルへの署名に使用された証明書が有効かどうか |
-| IsRootSignerMicrosoft | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します |
-| IsExecutable | boolean | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
+| IsCertificateValid | ブール値 | ファイルへの署名に使用された証明書が有効かどうか |
+| IsRootSignerMicrosoft | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します |
+| IsExecutable | ブール値 | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
 | Mail.threatname です | string | 検出されたマルウェアまたは他の脅威の検出名 |
 | Publisher | string | ファイルを発行した組織の名前 |
 | SoftwareName | string | ソフトウェア製品の名前 |
@@ -83,7 +83,8 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
+- [その他のクエリの例を取得する](advanced-hunting-shared-queries.md)

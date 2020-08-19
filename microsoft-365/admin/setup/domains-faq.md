@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: ドメインの詳細については、よく寄せられる質問への回答を検索してください。
-ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068105"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804198"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
@@ -52,6 +52,7 @@ ms.locfileid: "45068105"
 - [自分の DNS プロバイダーが特定のレコードの種類をサポートしていない場合はどうなりますか?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [Microsoft 365 で既定のドメインを設定または変更するにはどうすればよいですか?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [Microsoft 365 にカスタムサブドメインまたは複数のドメインを追加できますか。](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [Microsoft 365 から別のホストにドメインを転送する方法を教えてください。
 - ["onmicrosoft.com" ドメインがあるのはなぜですか?](#why-do-i-have-an-onmicrosoftcom-domain)
 - ["onmicrosoft.de" ドメインがあるのはなぜですか?](#why-do-i-have-an-onmicrosoftde-domain)
 - [非営利団体または教育機関のステータスを確認するにはどうすればよいですか?](#how-do-i-verify-my-nonprofit-or-education-status)
@@ -195,6 +196,14 @@ Microsoft 365 に複数のドメインを追加する場合は、追加した任
 > [!NOTE]
 > Contoso.com ドメインを Microsoft 365 サブスクリプションに追加した場合は、他の Microsoft 365 組織にサブドメイン xyz.contoso.com を追加することもできます。 サブドメインを追加する際に、DNS ホスティングプロバイダーに TXT レコードを追加するように求めるメッセージが表示されます。
 
+## <a name="how-do-i-transfer-a-domain-from-microsoft-365-to-another-host"></a>Microsoft 365 から別のホストにドメインを移行するにはどうすればよいですか?
+
+ドメインを移行する手順については、「 [Microsoft から別のホストへのドメインの移行](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host)」を参照してください。
+
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
+
+Microsoft 365 の電子メール機能をカスタムドメインから Microsoft 365 メールボックスにパイロットする手順については、「 [カスタムドメインからの microsoft 365 のパイロット](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain)」を参照してください。
+
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>"onmicrosoft.com" ドメインがあるのはなぜですか?
 
 Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.com*などのドメインを作成します。 サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.com*のようなドメインが含まれています。 
@@ -232,13 +241,13 @@ Microsoft 365 は、サービスにサインアップするときに、 *contoso
 
 1. [管理センター](https://docs.microsoft.com/microsoft-365/admin/admin-home)で [**セットアップ**] を選択してウィザードを開始します。 (必ず Microsoft 365 にサインインしてください)。 
     
-2. 学校の管理者になるには、Microsoft 365 で [**管理者になる**] オプションを選択します。 
+2. 学校の管理者になるには、Microsoft 365 で [  **管理者になる** ] オプションを選択します。 
     
 3. ドメインの DNS ホスト web サイトに TXT DNS レコードを追加するように求めるメッセージが表示されます。 それはなぜでしょうか。 DNS ホストでサインインし、ドメインのレコードを追加することにより、Microsoft 365 にドメイン名を所有していることを証明します。
     
 4. レコードを追加した後、Microsoft 365 ポータルに戻り、追加されたことを確認して、Microsoft 365 で確認できるようにします。
     
-非営利団体があり、Microsoft 365 を入手する必要がある場合 [組織に資格](https://www.microsoft.com/en-us/nonprofits/eligibility)があることを確認してから、サービスにサインアップしてください。 
+非営利団体があり、Microsoft 365 を入手する必要がある場合 [組織に資格](https://www.microsoft.com/en-us/nonprofits/eligibility) があることを確認してから、サービスにサインアップしてください。 
   
 学校の管理者になる方法の詳細については、 [こちらのヘルプ記事をご覧ください](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
 )。

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aec5bf5dfe29dd55bf5e5df471126db46fdfcb4c
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 86212bdecb58b2e79a94d0129a0a531ef22bd6e4
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648829"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797842"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -30,6 +30,9 @@ ms.locfileid: "46648829"
 - Microsoft Threat Protection
 
 `IdentityLogonEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、Microsoft Cloud App Security で取得した microsoft online services に関連する Azure ATP と認証アクティビティによってキャプチャされた、オンプレミスの Active Directory によって行われた認証アクティビティに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+
+>[!TIP]
+> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
 
 >[!NOTE]
 >次の表は、クラウドアプリのセキュリティによって追跡された Azure Active Directory (AD) ログオンアクティビティ、具体的には、ActiveSync やその他の従来のプロトコルを使用した対話的なサインインと認証アクティビティについて説明しています。 この表に記載されていない非対話型のログオンは、Azure AD 監査ログに表示できます。 [クラウドアプリのセキュリティを Microsoft 365 に接続する方法について説明します。](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
@@ -39,8 +42,8 @@ ms.locfileid: "46648829"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
-| `LogonType` | string | ログオンセッションの種類。具体的には次のとおりです。<br><br> - **Interactive** -ユーザーがローカルのキーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート対話 (RDP) ログオン**-ユーザーがリモートデスクトップ、ターミナルサービス、リモートアシスタンス、またはその他の RDP クライアントを使用してリモートでコンピューターと対話する<br><br> - PsExec を使用してコンピューターにアクセスするとき、またはプリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに、**ネットワーク**セッションが開始されます。<br><br> - スケジュールされたタスクによって開始された**バッチ**セッション<br><br> - **サービス**-開始時にサービスによって開始されたセッション |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `LogonType` | string | ログオンセッションの種類。具体的には次のとおりです。<br><br> - **Interactive** -ユーザーがローカルのキーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート対話 (RDP) ログオン** -ユーザーがリモートデスクトップ、ターミナルサービス、リモートアシスタンス、またはその他の RDP クライアントを使用してリモートでコンピューターと対話する<br><br> - PsExec を使用してコンピューターにアクセスするとき、またはプリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに、**ネットワーク**セッションが開始されます。<br><br> - スケジュールされたタスクによって開始された**バッチ**セッション<br><br> - **サービス** -開始時にサービスによって開始されたセッション |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
 | `Protocol` | string | 使用されるネットワークプロトコル |
 | `FailureReason` | string | 記録された操作が失敗した理由を説明する情報 |
@@ -63,10 +66,10 @@ ms.locfileid: "46648829"
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

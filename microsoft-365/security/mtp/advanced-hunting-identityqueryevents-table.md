@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cf2038a15242139817eb073ec2a6408905824123
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b5238ca32cdf9050391ef69bae3be0914b93f452
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649321"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797806"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -31,12 +31,15 @@ ms.locfileid: "46649321"
 
 `IdentityQueryEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、Active Directory オブジェクト (ユーザー、グループ、デバイス、ドメインなど) に対して実行されたクエリに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
+>[!TIP]
+> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
+
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
 | `QueryType` | string | クエリの種類 (QueryGroup、Querygroup、EnumerateUsers など) |
 | `QueryTarget` | string | ユーザー、グループ、デバイス、ドメイン、またはその他のクエリ対象のエンティティ型の名前 |
@@ -59,10 +62,10 @@ ms.locfileid: "46649321"
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

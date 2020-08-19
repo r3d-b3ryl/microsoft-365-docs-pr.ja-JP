@@ -1,7 +1,7 @@
 ---
-title: 高度な検索スキーマの AppFileEvents テーブル
-description: 高度な検索スキーマの AppFileEvents テーブルでクラウドアプリおよびサービスに関連付けられているファイル関連イベントについて説明します。
-keywords: 高度な検索、脅威の探し、サイバーの脅威の検出、microsoft の脅威の防止、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、AppFileEvents、Cloud App Security、MCAS
+title: 高度な検索スキーマの [イベント] テーブル
+description: 高度な検索スキーマのイベントテーブルのドメインコントローライベントと Active Directory イベントについて説明します。
+keywords: 高度な検索、脅威の調査、サイバー脅威の調査、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、column、data type、description、identity Directoryevents、domain controller、Active Directory、Azure ATP、id
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4e7ddbc5b5cc330496c01d956c4bcecceb897a9a
+ms.openlocfilehash: 1a65a8e78dfa09bc0a417669a1efd35320e261da
 ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798040"
+ms.locfileid: "46798788"
 ---
-# <a name="appfileevents"></a>AppFileEvents
+# <a name="identitydirectoryevents"></a>Identity Directoryevents
 
 **適用対象:**
 - Microsoft Threat Protection
 
-`AppFileEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、クラウドアプリと Microsoft cloud App Security によって監視されるサービスのファイル関連アクティビティに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+`IdentityDirectoryEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表に、ACTIVE Directory (AD) を実行しているオンプレミスのドメインコントローラーに関連するイベントが含まれています。 このテーブルは、パスワードの変更、パスワードの有効期限、ユーザープリンシパル名 (UPN) の変更など、さまざまな id 関連イベントをキャプチャします。 また、タスクのスケジューリングや PowerShell アクティビティなど、ドメインコントローラーのシステムイベントもキャプチャします。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
 > テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
@@ -41,24 +43,24 @@ ms.locfileid: "46798040"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
-| `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
-| `PreviousFileName` | string | アクションの結果として名前が変更されたファイルの元の名前 |
-| `PreviousFolderPath` | string | 記録されたアクションが適用される前のファイルが含まれている元のフォルダー |
-| `Protocol` | string | 使用されるネットワークプロトコル |
+| `TargetAccountUpn` | string | 記録されたアクションが適用されたアカウントのユーザープリンシパル名 (UPN) |
+| `TargetAccountDisplayName` | string | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
+| `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
+| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
+| `DestinationPort` | string | アクティビティの宛先ポート |
+| `Protocol` | string | 通信中に使用されるプロトコル |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountUpn` | string | アカウントのユーザープリンシパル名 (UPN) |
+| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `AccountObjectId` | string | Azure AD でのアカウントの一意識別子 |
 | `AccountDisplayName` | string | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
 | `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `DeviceType` | string | デバイスの種類 | 
-| `OSPlatform` | string | デバイス上で実行されているオペレーティングシステムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
-| `IPAddress` | string | エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス |
-| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
-| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
+| `IPAddress` | string | 通信中にデバイスに割り当てられた IP アドレス |
+| `Port` | string | 通信中に使用される TCP ポート |
 | `Location` | string | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
-| `Isp` | string | エンドポイントの IP アドレスに関連付けられているインターネットサービスプロバイダー (ISP) |
+| `ISP` | string | IP アドレスに関連付けられているインターネットサービスプロバイダー |
 | `ReportId` | long | イベントの一意識別子 |
 | `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
 

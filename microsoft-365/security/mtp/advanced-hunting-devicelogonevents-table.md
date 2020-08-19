@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0f93199fa23a422e82019730b38fcf407e8503a3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: f3c13025203a59eb192b9e0d193c429be57a83ce
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649417"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797982"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -32,6 +32,9 @@ ms.locfileid: "46649417"
 
 
 `DeviceLogonEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、デバイス上のユーザーログオンやその他の認証イベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+
+>[!TIP]
+> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -44,7 +47,7 @@ ms.locfileid: "46649417"
 | `AccountDomain` | string | アカウントのドメイン |
 | `AccountName` | string | アカウントのユーザー名 |
 | `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `LogonType` | string | ログオンセッションの種類。具体的には次のとおりです。<br><br> - **Interactive** -ユーザーがローカルのキーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート対話 (RDP) ログオン**-ユーザーがリモートデスクトップ、ターミナルサービス、リモートアシスタンス、またはその他の RDP クライアントを使用してリモートでコンピューターと対話する<br><br> - PsExec を使用してコンピューターにアクセスするとき、またはプリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに、**ネットワーク**セッションが開始されます。<br><br> - スケジュールされたタスクによって開始された**バッチ**セッション<br><br> - **サービス**-開始時にサービスによって開始されたセッション<br> |
+| `LogonType` | string | ログオンセッションの種類。具体的には次のとおりです。<br><br> - **Interactive** -ユーザーがローカルのキーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート対話 (RDP) ログオン** -ユーザーがリモートデスクトップ、ターミナルサービス、リモートアシスタンス、またはその他の RDP クライアントを使用してリモートでコンピューターと対話する<br><br> - PsExec を使用してコンピューターにアクセスするとき、またはプリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに、**ネットワーク**セッションが開始されます。<br><br> - スケジュールされたタスクによって開始された**バッチ**セッション<br><br> - **サービス** -開始時にサービスによって開始されたセッション<br> |
 | `LogonId` | string | ログオンセッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
 | `RemoteDeviceName` | string | 影響を受けるコンピューターでリモート操作を実行したコンピューターの名前。 報告されるイベントに応じて、この名前は完全修飾ドメイン名 (FQDN)、ドメイン情報のない NetBIOS 名またはホスト名にすることができます。 |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
@@ -71,10 +74,10 @@ ms.locfileid: "46649417"
 | `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
 | `IsLocalAdmin` | ブール値 | ユーザーがコンピューターのローカル管理者であるかどうかを示すブールインジケーター |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

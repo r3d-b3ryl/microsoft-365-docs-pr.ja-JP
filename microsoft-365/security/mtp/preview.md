@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552664"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798236"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
 
@@ -43,21 +43,22 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 
 [プレビュー環境] 設定をオンにして、最初の機能を試すことができます。
 
-1. ナビゲーションウィンドウで、[**設定**] を選択します。
+1. ナビゲーションウィンドウで、[ **設定**] を選択します。
 
 2. [ **Microsoft Threat Protection**] を選択します。
 
 
 3. [**プレビュー機能の選択]**  >  **プレビュー機能を有効に**します。 
 
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
 
-[**プレビュー機能を有効に**する] チェックボックスがオンになっている場合は、プレビュー機能が有効になっていることを確認できます。 
+[ **プレビュー機能を有効に** する] チェックボックスがオンになっている場合は、プレビュー機能が有効になっていることを確認できます。 
 
 ## <a name="preview-features"></a>プレビュー機能
 現在、次の機能と拡張機能をプレビューで利用できます。
 
-- **[高度な検索でアクションを実行](advanced-hunting-take-action.md)** する:[高度な](advanced-hunting-overview.md)検索によって検出された脅威または侵害された資産への対処をすばやく行うことができます。
-
-- **[ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: セキュリティセンターで、高度な検索スキーマテーブルに関する情報を直接取得します。 この便利なリファレンスでは、テーブルと列の説明に加えて、サポートされているイベントの種類 (値) とサンプルクエリに関する情報を提供して `ActionType` います。
+- **[高度な検索の](advanced-hunting-identitydirectoryevents-table.md)** 場合は、Active DIRECTORY (AD) を実行しているオンプレミスのドメインコントローラーを含むイベントを検索します。 この表では、ドメインコントローラーの id 関連イベントの範囲とシステムイベントについて説明します。
+- **[AssignedIPAddresses () 関数](advanced-hunting-assignedipaddresses-function.md)** -高度な検索でこの関数を使用して、デバイスに割り当てられている最新の ip アドレス、または指定した時点からの最新の ip アドレスをすばやく取得します。
+- **[高度な検索でアクションを実行](advanced-hunting-take-action.md)** する: [高度な](advanced-hunting-overview.md)検索によって検出された脅威または侵害された資産への対処をすばやく行うことができます。
+- **[ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : セキュリティセンターで、高度な検索スキーマテーブルに関する情報を直接取得します。 この便利なリファレンスでは、テーブルと列の説明に加えて、サポートされているイベントの種類 (値) とサンプルクエリに関する情報を提供して `ActionType` います。
 

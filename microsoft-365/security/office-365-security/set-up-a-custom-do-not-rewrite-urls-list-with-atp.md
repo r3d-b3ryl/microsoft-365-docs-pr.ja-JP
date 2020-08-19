@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 の ATP の安全なリンクポリシーでユーザーのブロックされたユーザーの Url を設定する方法と、ユーザーのグループの Url のリストを書き換えない方法について説明します。
-ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 17828566769f438439eebcb4e460ecac1147a648
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656971"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798332"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、リライトしないカスタムの Url リストを設定する
 
@@ -35,37 +35,40 @@ ms.locfileid: "46656971"
 
 この記事では、ATP の安全なリンクスキャンから除外する Url の一覧を指定する方法と、注意すべき重要な点について説明します。
 
+> [!NOTE]
+> 組織が安全なリンクポリシーを使用している場合は、サードパーティのフィッシングテストでサポートされている唯一の方法は、"書き換えない" リストです。
+
 ## <a name="set-up-a-do-not-rewrite-list"></a>「書き換えない」リストを設定する
 
 ATP の安全なリンク保護では、組織のブロックされた Url のリストや例外の「書き換えない」リストを含むいくつかのリストを使用します。 必要なアクセス許可を持っている場合は、カスタムの "書き換えない" リストを設定できます。 この操作は、組織内の特定の受信者に適用する安全なリンクポリシーを追加または編集するときに行います。
 
-ATP ポリシーを編集 (または定義) するには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。 詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+ATP ポリシーを編集 (または定義) するには、適切な役割が割り当てられている必要があります。 次の表は、いくつかの例を示しています。 詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 |役割|参照先/割り当て方法|
 |---|---|
-|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
+|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
 |
 
 > [!TIP]
-> 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+> 役割とアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>ユーザー設定の「リライトしない」 Url リストを表示または編集するには
 
 1. [https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。
 
-2. 左側のナビゲーションで、[**脅威管理** \> **ポリシー** \> **セーフリンク**] の下にあります。
+2. 左側のナビゲーションで、[ **脅威管理** \> **ポリシー** \> **セーフリンク**] の下にあります。
 
-3. [**特定の受信者に適用するポリシー** ] セクションで、[**新規**作成] (新しいボタンはプラス記号 () に似ています) を選択して、 **+** 新しいポリシーを作成します。 (または、既存のポリシーを編集することもできます)。<br/>![[新規] を選択して、特定の電子メール受信者の安全なリンクポリシーを追加します。](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. [ **特定の受信者に適用するポリシー** ] セクションで、[ **新規** 作成] (新しいボタンはプラス記号 () に似ています) を選択して、 **+** 新しいポリシーを作成します。 (または、既存のポリシーを編集することもできます)。<br/>![[新規] を選択して、特定の電子メール受信者の安全なリンクポリシーを追加します。](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
 
 4. ポリシーの名前と説明を指定します。
 
-5. ユーザーがリンクをクリックしたときに、url**を**有効にして、既知の悪意のあるリンクの一覧に対して書き換えて確認します。
+5. ユーザーがリンクをクリックしたときに、url **を** 有効にして、既知の悪意のあるリンクの一覧に対して書き換えて確認します。
 
-6. [**次の url を書き換えない**] セクションで、[**有効な url を入力**してください] ボックスを選択し、url を入力して、プラス記号 (+) を選択します。
+6. [ **次の url を書き換えない** ] セクションで、[ **有効な url を入力** してください] ボックスを選択し、url を入力して、プラス記号 (+) を選択します。
 
-7. [**適用先**] セクションで、[**受信者が次のメンバー**である] を選択し、ポリシーに含めるグループを選択します。 [**追加**] を選択し、[ **OK]** を選択します。
+7. [ **適用先** ] セクションで、[ **受信者が次のメンバー**である] を選択し、ポリシーに含めるグループを選択します。 [ **追加**] を選択し、[ **OK]** を選択します。
 
 8. 画面の右下隅で URL の追加が完了したら、**[保存]** を選択します。
 
@@ -89,7 +92,7 @@ ATP ポリシーを編集 (または定義) するには、適切な役割が割
 |エントリの例|機能|
 |---|---|
 |`contoso.com`|受信者がサブドメインやパスではなく、サイトにアクセスできるように `https://contoso.com` します。|
-|`*.contoso.com/*`|受信者が、、、またはなどのドメイン、サブドメイン、およびパスにアクセスできるようにし `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` `https://www.contoso.com/a` ます。 <br/><br/> このエントリには、次のように、 `*contoso.com*` 偽装している可能性のあるサイトが含まれていないため、 `https://www.falsecontoso.com` またはのようになります。`https://www.false.contoso.completelyfalse.com`|
-|`https://contoso.com/a`|特定の受信者が、次のようなサブパスではなく、サイトにアクセスできるようにし `https://contoso.com/a` ます。`https://contoso.com/a/b`|
+|`*.contoso.com/*`|受信者が、、、またはなどのドメイン、サブドメイン、およびパスにアクセスできるようにし `https://www.contoso.com` `https://www.contoso.com` `https://maps.contoso.com` `https://www.contoso.com/a` ます。 <br/><br/> このエントリには、次のように、 `*contoso.com*` 偽装している可能性のあるサイトが含まれていないため、 `https://www.falsecontoso.com` またはのようになります。 `https://www.false.contoso.completelyfalse.com`|
+|`https://contoso.com/a`|特定の受信者が、次のようなサブパスではなく、サイトにアクセスできるようにし `https://contoso.com/a` ます。 `https://contoso.com/a/b`|
 |`https://contoso.com/a/*`|特定の受信者が、次のようなサブパスでサイトにアクセスできるようにします。 `https://contoso.com/a``https://contoso.com/a/b`|
 |

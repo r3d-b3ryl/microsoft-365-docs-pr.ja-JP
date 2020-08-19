@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b88bdb09b84db5de813fc9020d9695f26c61f105
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b4656c4fd7666ba99ca6125331bdc458d3835edb
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649441"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798006"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -31,6 +31,9 @@ ms.locfileid: "46649441"
 
 `DeviceFileEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、ファイルの作成、変更、およびその他のファイルシステムイベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
+>[!TIP]
+> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
+
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
 | 列名 | データ型 | 説明 |
@@ -38,7 +41,7 @@ ms.locfileid: "46649441"
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
@@ -76,10 +79,10 @@ ms.locfileid: "46649441"
 | `SensitivitySubLabel` | string | Sublabel は、電子メール、ファイル、またはその他のコンテンツに適用され、情報保護のために分類します。機密サブラベルは、機密ラベルの下にグループ化されますが、個別に処理されます。 |
 | `IsAzureInfoProtectionApplied` | ブール値 | ファイルが Azure Information Protection によって暗号化されているかどうかを示します |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649393"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797854"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -33,7 +33,7 @@ ms.locfileid: "46649393"
 
 ## <a name="try-your-first-query"></a>最初のクエリを試してみる
 
-Microsoft 365 セキュリティセンターで、「検索 **」に移動**して最初のクエリを実行します。 次の例を使用してください。
+Microsoft 365 セキュリティセンターで、「検索 **」に移動** して最初のクエリを実行します。 次の例を使用してください。
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -66,7 +66,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 // Finds PowerShell execution events that could involve a download
 ```
 
-通常、クエリ自体はテーブル名から始まり、続いてパイプ (`|`) で始まる一連の要素が続きます。 この例では、まず、2つのテーブルのユニオンを作成し、 `DeviceProcessEvents` `DeviceNetworkEvents` を、必要に応じてパイプライン処理された要素を追加します。
+通常、クエリ自体はテーブル名から始まり、続いてパイプ (`|`) で始まる一連の要素が続きます。 この例では、まず、2つのテーブルのユニオンを作成し、  `DeviceProcessEvents` `DeviceNetworkEvents` を、必要に応じてパイプライン処理された要素を追加します。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>結果の列と長さをカスタマイズする 
-クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義する要素を追加できます。 `project`特定の列を返し、 `top` 結果の数を制限します。 これらの演算子を使用すると、結果が適切に書式設定されており、処理がかなり簡単になります。
+クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義する要素を追加できます。 `project` 特定の列を返し、 `top` 結果の数を制限します。 これらの演算子を使用すると、結果が適切に書式設定されており、処理がかなり簡単になります。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -117,7 +117,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 >[!TIP]
 >クエリ結果をグラフとして表示し、フィルターをすばやく調整することができます。 ガイダンスについては、「[クエリ結果の使用方法](advanced-hunting-query-results.md)」を参照してください。
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>高度な捜索のための一般的なクエリ演算子を学習する
+## <a name="learn-common-query-operators"></a>一般的なクエリ演算子について説明します。
 
 最初のクエリを実行し、そのコンポーネントの一般的な概念を理解したので、少しだけ遡って基本的なことを学習しましょう。 高度な捜索で使用される Kusto クエリ言語は、次のような一般的な演算子をサポートします。
 
@@ -136,7 +136,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 これらの演算子の実際の例を見るには、高度な捜索の [**はじめに**] セクションから実行します。
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>データ型とクエリ構文の意味を理解する
+## <a name="understand-data-types"></a>データ型について理解する
 
 高度な捜索テーブルのデータは、通常、次のデータ型に分類されます。
 
@@ -148,17 +148,19 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `int` | 32 ビットの数値  |
 | `long` | 64 ビットの数値 |
 
+これらのデータ型とその影響の詳細については、「 [Kusto スカラーデータ型](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)」を参照してください。
+
 ## <a name="get-help-as-you-write-queries"></a>クエリを記述するときにヘルプを参照する
 次の機能を利用して、クエリをより速く記述します。
 - **Autosuggest** : クエリを作成すると、高度な検索によって IntelliSense から候補が表示されます。 
 - **スキーマツリー** -テーブルとその列のリストを含むスキーマ表現は、作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
-- **[スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: テーブルと列の説明、およびサポートされるイベントの種類 ( `ActionType` 値) とサンプルクエリを含むポータル内のリファレンス
+- **[スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : テーブルと列の説明、およびサポートされるイベントの種類 ( `ActionType` 値) とサンプルクエリを含むポータル内のリファレンス
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>エディターで複数のクエリを操作する
 クエリエディターは、複数のクエリを試すために、スクラッチパッドとして機能することができます。 複数のクエリを使用するには
 
 - 各クエリは空の行で区切ります。
-- クエリの任意の部分にカーソルを置き、クエリを実行する前に選択します。 これは、選択したクエリのみを実行します。 別のクエリを実行するには、必要に応じてカーソルを移動して、[**クエリの実行**] を選択します。
+- クエリの任意の部分にカーソルを置き、クエリを実行する前に選択します。 これは、選択したクエリのみを実行します。 別のクエリを実行するには、必要に応じてカーソルを移動して、[ **クエリの実行**] を選択します。
 
 ![複数のクエリを使用したクエリエディターのイメージ](../../media/mtp-ah/ah-multi-query.png)
 
@@ -179,6 +181,6 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

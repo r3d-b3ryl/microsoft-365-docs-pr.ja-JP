@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
-ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652719"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804280"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 
-ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 以下に例を示します。
+ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 次に、例を示します。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -52,13 +52,35 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
 
 <sup>\*</sup> 既定のポリシーでは、ポリシーの名前と説明は読み取り専用 (説明が空白) なので、ポリシーを適用するユーザーを指定することはできません (既定のポリシーはすべての受信者に適用されます)。
 
-フィッシング対策ポリシーを構成するには、次のトピックを参照してください。
+フィッシング対策ポリシーを構成するには、次の記事を参照してください。
 
 - [EOP でフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)
 
 - [Microsoft 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)
 
-このトピックの残りの部分では、フィッシング対策ポリシーと ATP のフィッシング対策ポリシーで使用可能な設定について説明します。
+この記事の残りの部分では、フィッシング対策ポリシーおよび ATP のフィッシング対策ポリシーで使用可能な設定について説明します。
+
+## <a name="policy-settings"></a>ポリシー設定
+
+フィッシング対策ポリシーおよび ATP のフィッシング対策ポリシーでは、次のポリシー設定を使用できます。
+
+- **Name**: 既定のフィッシング対策ポリシーの名前を変更することはできませんが、作成したカスタムポリシーの名前と名前を変更することはできます。
+
+- **説明** 既定のフィッシング対策ポリシーに説明を追加することはできませんが、作成したカスタムポリシーの説明を追加したり変更したりすることができます。
+
+- **適用対象**: フィッシング対策ポリシーを適用する内部受信者を指定します。 この値は、カスタムポリシーでは必須であり、既定のポリシーでは使用できません (既定のポリシーはすべての受信者に適用されます)。
+
+  各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
+
+  - **受信者は**、組織内の1つ以上のメールボックス、メールユーザー、またはメール連絡先です。
+  - **受信者が**組織内の1つまたは複数のグループのメンバーである。
+  - **受信者のドメインは、** Microsoft 365 で構成された1つ以上の承認済みドメインです。
+
+  - 例外を**除く**: ルールの例外。 設定と動作は、次の条件とまったく同じです。
+
+    - **受信者が**
+    - **受信者がメンバーである**
+    - **受信者のドメインが**
 
 ## <a name="spoof-settings"></a>スプーフィング設定
 
@@ -75,28 +97,34 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
 
   - **[迷惑メールフォルダーにメッセージを移動する**]: これが既定値です。 メッセージがメールボックスに配信され、迷惑メールフォルダーに移動されます。 Exchange Online では、メールボックスで迷惑メールルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定で有効になっています)。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
-  - **メッセージを検疫**する: 目的の受信者ではなく、検疫にメッセージを送信します。 検疫の詳細については、以下のトピックを参照してください。
+  - **メッセージを検疫**する: 目的の受信者ではなく、検疫にメッセージを送信します。 検疫の詳細については、次の記事を参照してください。
 
     - [Microsoft 365 での検疫](quarantine-email-messages.md)
     - [Microsoft 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
     - [Microsoft 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
-- **認証**されていない送信者: Outlook での未識別の送信者識別を有効または無効にします。 具体的には次のとおりです。
+- **認証**されていない送信者: 次のセクションの説明を参照してください。
 
-  - メッセージが SPF または DKIM のチェックに合格せず、メッセージが DMARC または[コンポジット認証](email-validation-and-authentication.md#composite-authentication)に**合格しない**場合、送信者の写真に疑問符 (?) が追加されます。
+### <a name="unauthenticated-sender"></a>認証されていない送信者
 
-  - Via タグ (chris@contoso.com <u>via</u> michelle@fabrikam.com) は、From アドレスのドメイン (電子メールクライアントに表示されるメッセージの送信者) が dkim シグネチャまたは **MAIL From** アドレスのドメインと異なる場合に追加されます。 これらのアドレスの詳細については、「[電子メールメッセージの標準の概要](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)」を参照してください。
+認証されていない送信者の識別は、前のセクションで説明したように、フィッシング対策ポリシーおよび ATP のフィッシング対策ポリシーで使用可能な [スプーフィング設定](#spoof-settings) の一部です。
 
-  特定の送信者からのメッセージにこれらの識別子が追加されないようにするには、次のオプションを使用できます。
+認証されていない **送信者** の設定は、Outlook での送信者識別情報の未識別を有効または無効にします 具体的には次のとおりです。
 
-  - スプーフィングインテリジェンスポリシーで、送信者にスプーフィングすることを許可します。 手順については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
+- メッセージが SPF または DKIM のチェックに合格せず、メッセージが DMARC または[コンポジット認証](email-validation-and-authentication.md#composite-authentication)に**合格しない**場合、送信者の写真に疑問符 (?) が追加されます。
 
-  - 送信者ドメインの[電子メール認証を構成](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)します。
+- Via タグ (chris@contoso.com <u>via</u> michelle@fabrikam.com) は、From アドレスのドメイン (電子メールクライアントに表示されるメッセージの送信者) が dkim シグネチャまたは **MAIL From** アドレスのドメインと異なる場合に追加されます。 これらのアドレスの詳細については、「[電子メールメッセージの標準の概要](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)」を参照してください。
+
+特定の送信者からのメッセージにこれらの識別子が追加されないようにするには、次のオプションを使用できます。
+
+- スプーフィングインテリジェンスポリシーで、送信者にスプーフィングすることを許可します。 手順については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
+
+- 送信者ドメインの[電子メール認証を構成](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)します。
   
-    - 送信者の写真の疑問符の場合は、SPF または DKIM が最も重要です。
-    - Via タグの場合は、d KIM 署名のドメイン、または From アドレスのドメインの **メール** アドレスが一致する (またはサブドメインである) ことを確認します。
+  - 送信者の写真の疑問符の場合は、SPF または DKIM が最も重要です。
+  - Via タグの場合は、d KIM 署名のドメイン、または From アドレスのドメインの **メール** アドレスが一致する (またはサブドメインである) ことを確認します。
 
-  詳細については、「 [Outlook.com および Outlook on the web」の「疑わしいメッセージを特定](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)する」を参照してください。
+詳細については、「 [Outlook.com および Outlook on the web」の「疑わしいメッセージを特定](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)する」を参照してください。
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの排他的な設定
 
@@ -105,34 +133,11 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
 > [!NOTE]
 > 既定では、既定のポリシーの場合でも、ATP の排他的な設定は構成されていないか、有効になっていません。 これらの機能を利用するには、既定の ATP のフィッシング対策ポリシーでそれらを有効にして構成するか、カスタムの ATP のフィッシング対策ポリシーを作成して構成する必要があります。
 
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーのポリシー設定
-
-次のポリシー設定は、ATP のフィッシング対策ポリシーでのみ使用できます。
-
-- **Name**: 既定のフィッシング対策ポリシーの名前を変更することはできませんが、作成したカスタムポリシーの名前と名前を変更することはできます。
-
-- **説明** 既定のフィッシング対策ポリシーに説明を追加することはできませんが、作成したカスタムポリシーの説明を追加したり変更したりすることができます。
-
-- **適用対象**: ATP のフィッシング対策ポリシーが適用される内部の受信者を識別します。 この値は、カスタムポリシーでは必須であり、既定のポリシーでは使用できません (既定のポリシーはすべての受信者に適用されます)。
-
-    各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
-
-  - **受信者は**、組織内の1つ以上のメールボックス、メールユーザー、またはメール連絡先です。
-  - **受信者が**組織内の1つまたは複数のグループのメンバーである。
-  - **受信者のドメインは、** Microsoft 365 で構成された1つ以上の承認済みドメインです。
-
-  - 例外を**除く**: ルールの例外。 設定と動作は、次の条件とまったく同じです。
-
-    - **受信者が**
-    - **受信者がメンバーである**
-    - **受信者のドメインが**
-
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP のフィッシング対策ポリシーの偽装設定
 
 偽装は、メッセージ内の送信者または送信者の電子メールドメインが、実際の送信者またはドメインに似ているように見えます。
 
 - ドメイン contoso.com のなりすまし例は óntoso.com です。
-
 - ユーザー michelle@contoso.com のなりすまし例は、michele@contoso.com です。
 
 なりすましされたドメインは、受信者を欺くことを目的とする場合を除いて、正規のドメイン（登録済みドメイン、構成済みの電子メール認証レコードなど）と見なされる場合があります。
@@ -155,7 +160,7 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
 
   - **[迷惑メールフォルダーにメッセージを移動する**]: メッセージはメールボックスに配信され、迷惑メールフォルダーに移動されます。 Exchange Online では、メールボックスで迷惑メールルールが有効になっている場合、メッセージは [迷惑メール] フォルダーに移動されます (既定で有効になっています)。 詳細については、「 [Microsoft 365 の「Exchange Online メールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
-    - **メッセージを検疫**する: 目的の受信者ではなく、検疫にメッセージを送信します。 検疫の詳細については、以下のトピックを参照してください。
+    - **メッセージを検疫**する: 目的の受信者ではなく、検疫にメッセージを送信します。 検疫の詳細については、次の記事を参照してください。
 
     - [Microsoft 365 での検疫](quarantine-email-messages.md)
     - [Microsoft 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)

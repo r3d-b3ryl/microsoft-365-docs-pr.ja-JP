@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9b5fd9bfe881ec1313afb26da5d19cd96054862
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649297"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797830"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -37,16 +37,16 @@ ms.locfileid: "46649297"
 クエリを作成する際には、組み込みスキーマ参照を使用して、スキーマ内の各テーブルに関する以下の情報をすばやく取得します。
 
 - [**テーブルの説明**]: テーブルに格納されているデータの種類と、そのデータのソース。
-- **列**-表のすべての列。
-- **アクションの種類**-列で、 `ActionType` テーブルでサポートされているイベントの種類を表す値を指定できます。 これは、イベント情報を含むテーブルに対してのみ提供されます。
-- **サンプルクエリ**-テーブルを使用する方法を示すクエリの例です。
+- **列** -表のすべての列。
+- **アクションの種類** -列で、 `ActionType` テーブルでサポートされているイベントの種類を表す値を指定できます。 これは、イベント情報を含むテーブルに対してのみ提供されます。
+- **サンプルクエリ** -テーブルを使用する方法を示すクエリの例です。
 
 ### <a name="access-the-schema-reference"></a>スキーマリファレンスにアクセスする
-スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [**参照の表示**] アクションを選択します。 [**スキーマ参照**] を選択して、テーブルを検索することもできます。   
+スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [ **参照の表示** ] アクションを選択します。 [ **スキーマ参照** ] を選択して、テーブルを検索することもできます。   
 
 ![ポータル内スキーマリファレンスへのアクセス方法を示す画像 ](../../media/mtp-ah/ah-reference.png) 
 
-## <a name="schema-tables"></a>スキーマ テーブル
+## <a name="learn-the-schema-tables"></a>スキーマテーブルについて
 次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度な捜索画面のスキーマ表現の一部として、セキュリティ センターにも一覧表示されます。
 
 | テーブル名 | 説明 |
@@ -72,14 +72,15 @@ ms.locfileid: "46649297"
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 の電子メールイベント (電子メール配信およびブロックイベントを含む) |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 がメールを受信者のメールボックスに配信した後の、配信後に発生するセキュリティイベント |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | メールの Url に関する情報 |
+| **[Identity Directoryevents](advanced-hunting-identitydirectoryevents-table.md)** | Active Directory (AD) を実行しているオンプレミスのドメインコントローラーに関係するイベント。 この表では、ドメインコントローラーの id 関連イベントの範囲とシステムイベントについて説明します。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Azure Active Directory を含む、さまざまなソースからのアカウント情報 |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory と Microsoft online services の認証イベント |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Active Directory オブジェクト (ユーザー、グループ、デバイス、ドメインなど) に対して実行されるクエリアクティビティ |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

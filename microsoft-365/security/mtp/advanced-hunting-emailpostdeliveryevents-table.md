@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0384f3ba07b42c8e783994dfa1db75cf2d6ca80b
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 88074de8792124557c65b5be074e3b02bfec2511
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648865"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797888"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -30,6 +30,9 @@ ms.locfileid: "46648865"
 - Microsoft Threat Protection
 
 `EmailPostDeliveryEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、Microsoft 365 によって処理された電子メールメッセージに対して実行された配信後の処理に関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+
+>[!TIP]
+> テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
 
 個々の電子メールメッセージに関する詳細情報を取得するには、、、およびの表を使用することもでき [`EmailEvents`](advanced-hunting-emailevents-table.md) [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) ます。 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -49,14 +52,14 @@ ms.locfileid: "46648865"
 ## <a name="supported-event-types"></a>サポートされるイベントの種類
 このテーブルは、次の値を持つイベントをキャプチャし `ActionType` ます。
 
-- **手動による修復**–管理者は、ユーザーのメールボックスに配信された後に、電子メールメッセージに対して手動でアクションを実行していました。 これには、[脅威エクスプローラー](../office-365-security/threat-explorer.md)を使用して手動で行う操作や、自動化された[調査と応答 (AIR) アクション](mtp-autoir-actions.md)の承認が含まれます。
-- **フィッシング ZAP** –[ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md)は、配信後にフィッシング電子メールに対してアクションを実行しました。
+- **手動による修復** –管理者は、ユーザーのメールボックスに配信された後に、電子メールメッセージに対して手動でアクションを実行していました。 これには、 [脅威エクスプローラー](../office-365-security/threat-explorer.md) を使用して手動で行う操作や、自動化された [調査と応答 (AIR) アクション](mtp-autoir-actions.md)の承認が含まれます。
+- **フィッシング ZAP** – [ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) は、配信後にフィッシング電子メールに対してアクションを実行しました。
 - **マルウェア ZAP** –ゼロ時間自動削除 (ZAP) は、配信後にマルウェアを含む電子メールメッセージに対してアクションを実行しました。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
