@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の microsoft Information ガバナンス
+title: Microsoft 365 での Microsoft 情報ガバナンス
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -13,36 +13,38 @@ localization_priority: High
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365 の Microsoft Information ガバナンス機能を実装して、コンプライアンスまたは規制要件に合わせてデータを管理します。
-ms.openlocfilehash: b67fbe1a8336ba73d1c43ebc531657c60dd3e8d8
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+description: Microsoft 365 に Microsoft 情報ガバナンス機能を実装して、データをコンプライアンスや規制要件に準拠して管理します。
+ms.openlocfilehash: 8883b376f75ecd92c99d837a769ef6297b5e7129
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804245"
+ms.locfileid: "46815190"
 ---
-# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 の microsoft Information ガバナンス
+# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 での Microsoft 情報ガバナンス
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-コンプライアンスまたは規制の要件に合わせてデータを管理するには、Microsoft Information ガバナンス (場合によっては MIG に短縮されることもあります) 機能を使用します。
+準拠や規制要件に応じたデータ管理には、Microsoft の情報ガバナンス (MIG に略化される場合があります) を使用します。
+
+データを保護する場合 [「Microsoft 365 の Microsoft Information Protection」を参照してください](protect-information.md)。
 
 ## <a name="information-governance"></a>情報ガバナンス
 
-目的の内容を保持し、不要なものを削除するには、次のようにします。
+目的の操作をその内容に維持し、削除するには、以下の手順を実行します。
  
-|機能|どのような問題が解決されますか。|作業の開始|
+|機能|どのような問題が解決しますか。|概要|
 |:------|:------------|:--------------------|:-----------------------------|
-|[アイテム保持ポリシーと保持ラベル](retention.md)| メール、ドキュメント、インスタントメッセージなどのポリシー管理と削除ワークフローを使用してコンテンツを保持または削除する <br /><br />シナリオ例: [アイテム保持ラベルを自動的にコンテンツに適用する](apply-retention-labels-automatically.md) | [アイテム保持ポリシーおよび保持ラベルの使用を開始する](get-started-with-retention.md)|
-|[サービスのインポート](importing-pst-files-to-office-365.md)| Exchange Online メールボックスへの PST ファイルの一括インポート、コンプライアンスまたは規制の要件を満たすために電子メールメッセージを保持および検索する | [ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする](use-network-upload-to-import-pst-files.md)|
-|[サード パーティのデータをアーカイブする](archiving-third-party-data.md)| ソーシャルメディアプラットフォーム、インスタントメッセージングプラットフォーム、およびドキュメントコラボレーションプラットフォームから、コンプライアンスソリューションをサードパーティのデータにインポート、アーカイブ、および適用します。| [サードパーティコネクタ](archiving-third-party-data.md#third-party-data-connectors)|
-|[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)| 従業員が組織を離れた後にメールボックスの内容を保持する | [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)|
+|[アイテム保持ポリシーと保持ラベル](retention.md)| ポリシー管理と電子メール、ドキュメント、インスタント メッセージの削除ワークフローを使用してコンテンツを保持または削除する <br /><br />シナリオ例: 保持 [ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md) | [アイテム保持ポリシーおよび保持ラベルの使用を開始する](get-started-with-retention.md)|
+|[インポート サービス](importing-pst-files-to-office-365.md)| EXCHANGE Online メールボックスに PST ファイルを一括インポートして、コンプライアンスや規制上の要件に関する電子メール メッセージを保持および検索します。 | [ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする](use-network-upload-to-import-pst-files.md)|
+|[サード パーティのデータをアーカイブする](archiving-third-party-data.md)| ソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、およびドキュメントのグループ作業プラットフォームから、コンプライアンス ソリューションをインポート、アーカイブ、および適用する| [サード パーティ コネクタ](archiving-third-party-data.md#third-party-data-connectors)|
+|[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)| 従業員が組織を離脱した後にメールボックスの内容を保持する | [非アクティブなメールボックスを作成および管理する](create-and-manage-inactive-mailboxes.md)|
 
 ## <a name="records-management"></a>レコード管理
 
-法律、ビジネス、または規制の義務に関する価値の高いコンテンツを管理するには、レコード管理を使用します。
+法的、ビジネス、または規制上の義務の重要なコンテンツを管理するには、レコード管理を使用します。
 
-|機能|どのような問題が解決されますか。|作業の開始|
+|機能|どのような問題が解決しますか。|概要|
 |:------|:------------|---------------------|:----------------------------|
-|[レコード管理](records-management.md)| 保存スケジュールと要件を含む電子メールおよびドキュメント用の単一のソリューション。レコード宣言、保持、および廃棄によるコンテンツの完全なライフサイクルをサポートするファイルプラン <br /><br />シナリオ例: [レコードの廃棄](disposition.md#disposition-of-records)|[レコード管理の使用を開始する](get-started-with-records-management.md) |
+|[レコード管理](records-management.md)| 保持スケジュールと要件が組み込むメールとドキュメントに対する単一のソリューション。レコード宣言、保持、および分化を含むコンテンツの完全なライフサイクルをサポートします。 <br /><br />シナリオ例: [レコードの配置を変更する](disposition.md#disposition-of-records)|[レコード管理の使用を開始する](get-started-with-records-management.md) |
 
