@@ -1,6 +1,6 @@
 ---
-title: Microsoft セキュリティスコアの新機能
-description: Microsoft 365 セキュリティセンターの Microsoft セキュリティスコアに対して発生した新しい変更点について説明します。
+title: Microsoft セキュア スコアの新機能
+description: Microsoft 365 セキュリティ センターで Microsoft セキュア スコアが新しく変更されたされた内容について説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善のための処置
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -20,59 +20,68 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f9f4f40b9cd88cad1676417d467d04367eaa0be
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200147"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815233"
 ---
-# <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュリティスコアの新機能
+# <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュア スコアの新機能
 
-Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
+Microsoft セキュア スコアをお客様のセキュリティの状態をよりよく理解するために、いくつかの変更を加えました。 計画された変更については、Microsoft セキ[ュア スコアの新機能を参照してください。](microsoft-secure-score-whats-coming.md)
+
+## <a name="july-2020"></a>2020 年7 月
+
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection の改善のための処置を追加
+
+- 危険なリアル移動パス
+- セキュリティで保護されていないアカウントの属性
+- Active Directory 信頼のセキュリティ機能を有効にする
+- セキュリティで保護されていない SID の履歴属性をエンティティから削除する
 
 ## <a name="june-2020"></a>2020 年 6 月
 
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションを削除しました
+### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションの削除
 
-* Attack Surface Reduction ルールを有効にする
+* 攻撃表面の縮小ルールを有効にする
 
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションが追加されました
+### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善のための処置が追加されました
 
-* Adobe Reader が子プロセスを作成するのをブロックする
-* ランサムウェアに対する高度な保護の使用
-* すべての Office アプリケーションで子プロセスを作成することを禁止する
-* Office アプリケーションで実行可能なコンテンツを作成することを禁止する
-* JavaScript または VBScript がダウンロードされた実行可能コンテンツを起動するのをブロックする
-* 難読化する可能性のあるスクリプトの実行をブロックする
-* 電子メールクライアントおよび webmail からの実行可能ファイルのコンテンツをブロックする
-* Office コミュニケーションアプリケーションによる子プロセスの作成を禁止する
-* USB から実行される信頼できないおよび署名されていないプロセスをブロックする
-* WMI イベントサブスクリプション経由の永続化をブロックする
-* Office アプリケーションが他のプロセスにコードを挿入するのをブロックする
-* 実行可能ファイルが、流行、年齢、または信頼できるリストの条件を満たしていない限り、実行を禁止する
-* PSExec および WMI コマンドからのプロセス作成をブロックする
-* Windows ローカルセキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)
-* Office マクロからの Win32 API 呼び出しをブロックする
+* 子プロセスの作成が Adobe Reader でブロックされる
+* ランムウェアに対する高度な保護の使用
+* すべてのプロセスOfficeプロセスを作成するのをブロックする
+* アプリケーションがOfficeコンテンツを作成できないのをブロックする
+* ダウンロードされた実行可能ファイルのコンテンツを、JavaScript または VBScript で起動できないのをブロックする
+* 文書化されている可能性のあるスクリプトの実行をブロックする
+* メール クライアントと Web メールから実行可能ファイルのコンテンツをブロックする
+* 通信Office アプリケーションが子プロセスを作成するのをブロックする
+* USB から実行される、信頼されていないプロセスや署名されていないプロセスをブロックする
+* WMI イベント サブスクリプションによる永続性のブロック
+* アプリケーションOffice他のプロセスにコードを挿入するのをブロックする
+* 実行可能ファイルの実行を、提案、年齢、または信頼できるリストの条件に満たしていない場合に実行できないようにする
+* PSExec コマンドと WMI コマンドからのプロセス作成をブロックする
+* Windows ローカル セキュリティ機関サブシステムからの資格情報のステーリングをブロックする (lsass.exe)
+* [次のマクロからの Win32 API 呼びOfficeブロックする
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Id のセキュリティで保護されたスコアとグラフ API の非互換性
+## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>ID セキュア スコアおよび Graph API との互換性の問題
 
-Microsoft Secure Score の最近のリリースでは、向上したスコアリングモデルがリリースされました。 これらの変更により、より柔軟かつ正確にセキュリティ状況を表示することができます。 しかし、これらの更新プログラムにより、Microsoft セキュリティスコアが Id のセキュリティで保護されたスコアと Graph API とは一時的に互換性がなくなりました。
+Microsoft セキュア スコアの最新のリリースでは、強化されたスコアリング モデルがリリースされました。 これらの変更により、セキュリティ状態をより柔軟かつ、より的なものに表示できます。 ただし、これらの更新は、Microsoft セキュア スコアを ID セキュア スコアおよび Graph API と一時的に互換性がもれていました。
 
-時間では、Id のセキュリティスコアと Graph API が新しいスコアリングモデルを採用します。 その後、Microsoft のセキュリティで保護されたスコア、Id のセキュリティで保護されたスコア、Graph API によって報告されたスコアの違いがわかります。 ご不便をかけて申し訳ございません。今後、このようなエクスペリエンスの互換性を確保するために取り組んでいます。
+時には、ID セキュア スコアと Graph API では新しいスコア モデルが導入されます。 それまで、Microsoft セキュア スコア、ID セキュア スコア、Graph API によって報告されたスコアの違いがユーザーに表示されます。 ご意図的な変更に対するものを取り上もっており、これらのエクスペリエンスの将来的な互換性を確保する取り上が取り上がりました。
 
-## <a name="updated-improvement-actions"></a>更新された改善アクション
+## <a name="updated-improvement-actions"></a>改善のための処置の更新
 
-- Azure Active Directory の改善アクションを追加しました
-- Azure Advanced Threat Protection の向上アクションを追加しました
-- Microsoft Defender ATP の[脅威 & 脆弱性管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)のセキュリティに関する推奨事項のサポート
-    - リリースされた TVM で提供されるすべてのセキュリティの推奨事項を使用できるようになりました。
+- Azure Active Directory の改善のための処置を追加した
+- Azure Advanced Threat Protection の改善のための処置を追加しました
+- Microsoft Defender ATP [脅威の脆弱性&のセキュリティに関する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 推奨事項
+    - TVM が提供するリリースされたセキュリティの推奨事項をすべて入手できるようになりました
 
-## <a name="updated-interface-and-functionality"></a>更新されたインターフェイスと機能
+## <a name="updated-interface-and-functionality"></a>更新されたインターフェイス
 
 * CISO およびリード レベルのディスカッションのすべての新しい指標と傾向の表示
 * スコアを追跡して評価するための新しい方法
-* スコア回帰の追跡と理解の向上
+* スコアの連合の追跡と理解の向上
 * 改善のための処置のフィルタリング、タグ付け、検索、グループ化
 * スコア予測と計画されているアクションを使用して、将来の目標に向けて管理する
 * その他多数。
@@ -83,6 +92,6 @@ Microsoft Secure Score の最近のリリースでは、向上したスコアリ
 
 ## <a name="related-resources"></a>関連リソース
 
-- [セキュリティの姿勢を評価する](microsoft-secure-score-improvement-actions.md)
-- [Microsoft のセキュリティで保護されたスコア履歴を追跡し、目標を達成する](microsoft-secure-score-history-metrics-trends.md)
+- [セキュリティ体制にアクセス](microsoft-secure-score-improvement-actions.md)
+- [Microsoft セキュア スコアの履歴と目標への対する満たす](microsoft-secure-score-history-metrics-trends.md)
 - [今後の予定](microsoft-secure-score-whats-coming.md)

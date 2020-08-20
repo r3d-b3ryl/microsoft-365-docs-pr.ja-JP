@@ -20,52 +20,54 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: カスタムドメインの DNS レコードを管理するように Microsoft を設定している場合は、Microsoft 外でホストされている既存のパブリック web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: c33dd9253da2e8833ec6ae4693be34739b31ea63
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: カスタム ドメインの DNS レコードを管理する Microsoft を設定している場合、Microsoft の外部でホストされている既存の一般向け Web サイトにトラフィックをルーティングする方法について説明します。
+ms.openlocfilehash: 9a7090eef3ce7d1c67839e7320f31d7bd32aa6a7
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400222"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814400"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
- **DNS ホスティングプロバイダーでドメインの Microsoft レコードを管理する場合**は、このトピックの手順について心配する必要はありません。 Web サイトは現在の状態のままで、引き続きサイトにアクセスできます。 
+ **DNS ホスティング プロバイダーでドメインの Microsoft レコードを管理**する場合は、このトピックの手順を心読する必要はありません。 Web サイトは現在の状態のままで、引き続きサイトにアクセスできます。 
   
- Microsoft が**DNS レコードを管理している場合**、microsoft の外部でホストされている既存のパブリック web サイトにトラフィックをルーティングするには、ドメインを microsoft に追加した後、次の手順を実行します。 
+ **Microsoft が DNS レコードを管理する場合、Microsoft**外でホストされている既存の一般向け Web サイトにトラフィックをルーティングするために、Microsoft にドメインを追加した後、以下の手順を実行します。 
   
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで DNS レコードを更新する
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
-2. [ **ドメイン** ] ページで、ドメインの一覧から、Web サイトで使用しているドメインを選択し、管理ウィンドウで [ **DNS 設定** ] を選択します。 
+2. **[Domains] ページ**で、ドメインを選び **、[DNS Records] を選ます**。
+
+3. [DNS **設定] で**、[カスタム レコード **] を選択します**。
+
+4. [ **+ 新しいカスタム レコード** ] を選択し、次の項目を入力します。 
     
-3. [**+ 新しいカスタム レコード**] を選択し、次を入力します。 
+   - [ **DNS の種類** ] には、「 **A (アドレス)** 」と入力します。
     
-  - [ **DNS の種類** ] には、「 **A (アドレス)** 」と入力します。
+   - [ **ホスト名またはエイリアス** ] には、「 **@** 」と入力します。
     
-  - [ **ホスト名またはエイリアス** ] には、「 **@** 」と入力します。
+   - [ **IP アドレス** ] には、Web サイトが現在ホストされている場所の静的 IP アドレス (たとえば、172.16.140.1) を入力します。 
     
-  - [ **IP アドレス** ] には、Web サイトが現在ホストされている場所の静的 IP アドレス (たとえば、172.16.140.1) を入力します。 
+   これは、Web サイトの *動的*  IP アドレスではなく、  *静的*  IP アドレスでなければなりません。 Web サイトがホストされているサイトで、一般向け Web サイトの静的 IP アドレスを取得できることを確認します。 
     
-    これは、Web サイトの *動的*  IP アドレスではなく、  *静的*  IP アドレスでなければなりません。 Web サイトがホストされているサイトで、一般向け Web サイトの静的 IP アドレスを取得できることを確認します。 
-    
-3. [**保存**] を選択します。 
+5. [**保存**] を選択します。 
     
 さらに、CNAME レコードを作成して、Web サイトを顧客が簡単に見つけることができるようにすることもできます。
   
 1. [ **+ 新しいカスタム レコード** ] を選択し、次の項目を入力します。 
     
-  - [ **DNS の種類** ] には、「 **CNAME (エイリアス)** 」と入力します。
+   - [ **DNS の種類** ] には、「 **CNAME (エイリアス)** 」と入力します。
     
-  - [ **ホスト名またはエイリアス** ] には、「 **www** 」と入力します。
+   - [ **ホスト名またはエイリアス** ] には、「 **www** 」と入力します。
     
-  - [ **ポイント先のアドレス** ] には、Web サイトの完全修飾ドメイン名 (FQDN) を入力します (例: contoso.com)。 
+   - [ **ポイント先のアドレス** ] には、Web サイトの完全修飾ドメイン名 (FQDN) を入力します (例: contoso.com)。 
     
 2. [**保存**] を選択します。 
     
 最後に、次の操作を行います。
   
-Microsoft を参照するように[、ドメインの NS レコードを更新](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)します。 
+[ドメインの NS レコードを更新して](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) Microsoft をポイントします。 
   
-NS レコードが Microsoft を指すように更新されている場合、ドメインはすべて設定されています。 メールは Microsoft にルーティングされ、web サイトのアドレスへのトラフィックは引き続き現在の web サイトのホストに送られます。
+NS レコードが更新され Microsoft をポイントするようになっていなけら、ドメインはすべてセットアップ済みです。 メールは Microsoft にルーティングされ、Web サイト アドレスへのトラフィックは引き続き現在の Web サイト ホストに送信されます。
  
