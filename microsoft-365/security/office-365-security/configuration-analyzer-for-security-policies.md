@@ -1,5 +1,5 @@
 ---
-title: セキュリティポリシーの構成アナライザー
+title: セキュリティ ポリシーの構成アナライザー
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,7 @@ manager: dansimp
 ms.reviewer: ''
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,126 +16,126 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、構成アナライザーを使用して、標準保護と厳格な保護の事前設定セキュリティポリシーの下にある設定を含むセキュリティポリシーを検索して修正する方法を学習できます。
-ms.openlocfilehash: 259d498646ecf893a57a608a37e3b771083716cc
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+description: 管理者は、構成アナライザーを使用して、標準保護と制限保護のプレセット セキュリティ ポリシーの下の設定を含むセキュリティ ポリシーを検索して修正する方法について学習できます。
+ms.openlocfilehash: 4515efcd73d40eae93523c6ef139553420e48677
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533991"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825775"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>EOP および Office 365 ATP の保護ポリシーの構成アナライザー
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>EOP と Office 365 ATP の保護ポリシー Officeの構成アナライザー
 
 > [!NOTE]
-> このトピックで説明する機能はプレビュー段階にあり、組織によっては使用できず、変更される可能性があります。
+> このトピックで説明する機能はプレビューであり、すべての組織で利用できるものであり、変更される可能性があります。
 
-セキュリティ & コンプライアンスセンターの構成アナライザーでは、[既定のセキュリティポリシー](preset-security-policies.md)の標準保護と厳密な保護プロファイル設定の下にある設定を含む、セキュリティポリシーのいずれかを検索して修正するための一元的な場所が提供されます。
+セキュリティ & コンプライアンス センターの Configuration Analyzer では、事前設定されたセキュリティ ポリシーの標準保護と制限保護のプロファイル設定の下に表示される設定を含むセキュリティ ポリシーを一元的に [検索して修正できます](preset-security-policies.md)。
 
-次の種類のポリシーが、構成アナライザーによって分析されます。
+構成アナライザーでは、以下の種類のポリシーが分析されます。
 
-- **Exchange Online Protection (EOP) ポリシー**: これには、exchange online メールボックスを使用する Microsoft 365 組織と、exchange online メールボックスを持たないスタンドアロン EOP 組織が含まれます。
+- **Exchange Online Protection (EOP) ポリシー**: これには、Exchange Online メールボックスを使用している Microsoft 365 組織と Exchange Online メールボックスを持つスタンドアロン EOP 組織が含まれます。
   
   - [スパム対策ポリシー](configure-your-spam-filter-policies.md)。
   - [マルウェア対策ポリシー](configure-anti-malware-policies.md)。
   - [EOP フィッシング対策ポリシー](set-up-anti-phishing-policies.md#spoof-settings)。
 
-- **Office 365 Advanced Threat Protection (ATP) ポリシー**: これには、Microsoft 365 E5 または OFFICE 365 ATP アドオンサブスクリプションを使用する組織が含まれます。
+- **Office 365 Advanced Threat Protection (ATP) ポリシー**: これには、Microsoft 365 E5 または Office 365 の ATP アドオン サブスクリプションを持つ組織が含まれます。
 
-  - ATP のフィッシング対策ポリシーには、次のものが含まれます。
+  - ATP フィッシング対策ポリシーには、以下が含まれます。
 
-    - EOP のフィッシング対策ポリシーで使用可能なものと同じ[スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)。
-    - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
+    - EOP フ [ィッシング](set-up-anti-phishing-policies.md#spoof-settings) 対策ポリシーで使用できるのと同じスプーフィング設定。
+    - [偽装の設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [高度なフィッシングしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - 「[安全なリンク」ポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users)。
+  - [安全なリンクポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users)。
 
-  - [安全な添付ファイルのポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)。
+  - [安全な添付ファイル ポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)。
 
-ベースラインとして使用される**標準**および**厳密**なポリシー設定値については、「 [EOP and Office 365 ATP security の推奨設定](recommended-settings-for-eop-and-office365-atp.md)」を参照してください。
+基準 **として** 使用 **される標準および制限の** ポリシー設定値については、EOP と [Office 365 ATP セキュリティの推奨設定に説明されています](recommended-settings-for-eop-and-office365-atp.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [**構成アナライザー** ] ページに直接移動するには、を使用 <https://protection.office.com/configurationAnalyzer> します。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 構成アナライザーページ **に直接移動するには** 、以下を使用します <https://protection.office.com/configurationAnalyzer> 。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 - このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
 
-  - 構成アナライザーを使用**して**セキュリティポリシーを更新するには、次のいずれかの役割グループのメンバーである必要があります。
+  - 構成アナライザ **ーを** 使用してセキュリティ ポリシーを更新するには、次の役割グループのいずれかのメンバーである必要があります。
 
     - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
     - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
 
-  - 構成アナライザーへの読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
+  - 構成アナライザーに対する読み取り専用アクセスを実行するには、次の役割グループのいずれかのメンバーである必要があります。
 
     - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
     - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
-## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで構成アナライザーを使用する
+## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>セキュリティ センターで構成アナライザー&使用する
 
-[セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \> **構成アナライザー**] に移動します。
+セキュリティ/コンプライアンス センター&、脅威管理ポリシー **構成アナラ** \> **イザー** \> **に移動します**。
 
-![[脅威管理ポリシー] ページの [構成アナライザー] ウィジェット \>](../../media/configuration-analyzer-widget.png)
+![[脅威管理ポリシー] ページの構成アナライザー \> ウィジェット](../../media/configuration-analyzer-widget.png)
 
-構成アナライザーには、次の2つの主要なタブがあります。
+構成アナライザーには 2 つの主なタブがあります。
 
-- **設定と推奨事項**: Standard または Strict を選択し、それらの設定を既存のセキュリティポリシーと比較します。 結果では、設定の値を調整して、Standard または Strict と同じレベルにすることができます。
+- **[設定] と推奨**事項: [標準] または [制限する] を選択し、それらの設定を既存のセキュリティ ポリシーと比較します。 結果の中で、設定の値を調整して、標準または高クォータと同じレベルに設定できます。
 
-- **構成ドリフトの分析と履歴**: このビューでは、構成アナライザーの結果に基づいて、ポリシーに加えた変更を追跡できます。
+- **構成重複分析と履歴**: このビューでは、構成アナライザーの結果に基づいてポリシーに加えた変更を一定期間で追跡できます。
 
-### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>構成アナライザーの [設定] タブと [おすすめ候補] タブ
+### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>構成アナライザーの [設定とおすすめ] タブ
 
-既定では、タブは標準の保護プロファイルと比較して開きます。 厳密保護プロファイルの比較に切り替えるには、[厳密な**推奨事項の表示**] をクリックします。 元に戻すには、[**標準的な推奨事項を表示**する] を選択します。
+既定では、タブは標準保護プロファイルとの比較で開かれます。 [フィルターする] をクリックして、[高一次的な保護プロファイル] をクリック **して、[書き込み] をクリックします**。 標準的な推奨事項の表示 **を選択して、前に戻す必要があります**。
 
-![構成アナライザーの [設定と推奨事項] ビュー](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![構成アナライザーでの [設定と推奨事項] ビュー](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-既定では、[**ポリシーグループ/設定名**] 列には、さまざまな種類のセキュリティポリシーの折りたたまれたビューと、改善を必要とするポリシーの設定数 (存在する場合) が含まれています。 ポリシーの種類は次のとおりです。
+既定では、 **ポリシー グループ/設定名** の列には、異なる種類のセキュリティ ポリシーと、改善が必要なポリシーの設定の数 (存在する場合) が折りたたまれたビューに含まれます。 ポリシーの種類は次のとおりです。
 
 - **スパム対策**
 - **フィッシング対策**
 - **マルウェア対策**
-- **Atp の安全な添付ファイル**(サブスクリプションに atp が含まれている場合)
-- **Atp の安全なリンク**(サブスクリプションに atp が含まれている場合)
+- **ATP の安全な添付ファイル** (サブスクリプションに ATP が含まれている場合)
+- **ATP の安全なリンク** (サブスクリプションに ATP が含まれている場合)
 
-既定のビューでは、すべてが折りたたまれています。 各ポリシーの横に、ポリシーからの比較結果 (変更可能) と、標準または厳密な保護プロファイルの対応するポリシーの設定 (変更不可) が表示されます。 次の情報が表示されます。
+既定のビューでは、すべてが折りたたされています。 各ポリシーの横に、ポリシーの比較結果の概要 (変更できます) と、標準または高レベルの保護プロファイル (変更することはできません) に対応するポリシーの設定が表示されます。 次の情報が表示されます。
 
-- **緑**: すべての既存ポリシーのすべての設定は、少なくとも、比較対象の保護プロファイルと同じようにセキュリティで保護されています。
-- **オレンジ**: 既存のポリシーで設定されている設定の数が少ないため、比較している保護プロファイルほど安全ではありません。
-- **赤**: 既存のポリシーの設定の多くは、比較している保護プロファイルほど安全ではありません。 これは、多くのポリシーの設定のいくつか、または1つのポリシーの多くの設定の場合があります。
+- **緑 : 既存**のすべてのポリシーのすべての設定は、比較する保護プロファイル以上に安全です。
+- **Amber**: 既存のポリシーの設定の数がわずかで、比較する保護プロファイルに安全でない。
+- **Red**: 既存のポリシーの設定の数が大幅にセキュアになっていないのは、その相性が安全な保護プロファイルではありません。 これは、多くのポリシーの設定や、1 つのポリシー内の多くの設定にできます。
 
-好ましい比較には、次のテキストが表示されます。**すべての設定**は \<**Standard** or **Strict**\> **推奨事項**に従います。 そうしないと、変更する推奨設定の数が表示されます。
+使い気に入りになっておりの比較を行う場合は、テキスト「すべての設定 **: 推奨事項」** \<**Standard** or **Strict**\> **が表示されます**。 そうしないと、変更する推奨設定の数が表示されます。
 
-[**ポリシーグループ]/[設定名**] を展開すると、アテンションを必要とする特定の各ポリシーのすべてのポリシーと関連付けられた設定が表示されます。 または、特定の種類のポリシー (**スパム対策**など) を拡張して、注意が必要な種類のポリシーの設定のみを表示することもできます。
+ポリシー グループ/ **設定の名前を展開すると**、注意を必要とするすべてのポリシーおよび関連する設定が表示されます。 または、特定の種類のポリシー (スパム対策など) **を拡張**して、ユーザーの注意を必要とするポリシーの種類の設定だけを表示することができます。
 
-比較に改善に関する推奨策 (緑色) がない場合は、ポリシーを拡張しても何も示されません。 改善に関していくつかの推奨事項 (黄色または赤) がある場合は、注意を要する設定が表示され、対応する情報が次の列に表示されます。
+比較に推奨事項が (緑) されていない場合は、ポリシーを拡張するものは何もありません。 改善するいくつかの推奨事項 (amber または red) がある場合、注意が必要な設定がわかり、対応する情報は次の列に示されています。
 
-- 注意が必要な設定の名前。 たとえば、前のスクリーンショットでは、スパム対策ポリシーの**バルクメールのしきい値**です。
+- ユーザーの注意が必要な設定の名前。 たとえば、前のスクリーンショットでは、それはスパム対策ポリシー **のバルク** メールしきい値です。
 
-- **Policy**: 設定を含む影響を受けるポリシーの名前。
+- **Policy:** 設定を含む影響を受けるポリシーの名前。
 
-- **適用**対象: 影響を受けたポリシーが適用されるユーザーの数。
+- **適用:** 影響を受けるポリシーが適用されるユーザーの数。
 
-- **現在の構成**: 設定の現在の値。
+- **現在の**構成 : 設定の現在の値。
 
 - **最終更新**日: ポリシーが最後に変更された日付。
 
-- **推奨事項**: 標準または厳密な保護プロファイルの設定値。 ポリシーの設定の値を、保護プロファイルの推奨値と一致するように変更するには、[**採用**] をクリックします。 変更に成功すると、「**推奨事項**」というメッセージが表示されます。 [**更新**] をクリックして、推奨数の削減、および結果からの特定の設定/ポリシー行の削除を確認します。
+- **おす**すめ : 標準または [上書きの保護プロファイル] の設定値。 保護プロファイルの推奨値と一致するようにポリシーの設定の値を変更するには **、[Adopt] をクリックします**。 変更が成功すると、次のメッセージが表示されます: **おすすめは正しく導入されています**。 [ **更新]** をクリックすると、使用するおすすめ候トの数が減少し、特定の設定/ポリシー行が結果から削除されます。
 
-### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>構成アナライザーの [構成誤差の分析と履歴] タブ
+### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>構成ダッシュ化と構成アナライザーの [履歴] タブ
 
-このタブでは、セキュリティアナライザーの情報に基づいてカスタムセキュリティポリシーに加えた変更を追跡できます。 既定では、次の情報が表示されます。
+このタブでは、セキュリティ アナライザーの情報に基づいて、カスタム セキュリティ ポリシーに加えた変更を追跡できます。 既定では、次の情報が表示されます。
 
 - **最終更新日時**
 - **更新者**
 - **設定名**
 - **ポリシー**
-- **Type**
+- **型**
 
-結果をフィルター処理するには、**[フィルター]** をクリックします。 表示される [**フィルター** ] ポップアップでは、次のフィルターから選択できます。
+結果をフィルター処理するには、**[フィルター]** をクリックします。 表示される **[フィルター** ] ポップアップでは、次のフィルターから選択できます。
 
-- **開始**時刻と**終了時刻**(date)
-- **標準保護**または**厳密な保護**
+- **開始時刻** と **終了時刻** (date)
+- **標準的** な **保護または高い保護**
 
-結果を .csv ファイルにエクスポートするには、[**エクスポート**] をクリックします。
+結果を .csv ファイルにエクスポートするには、[エクスポート] をクリック **します**。
 
-![構成アナライザーの構成誤差分析と履歴ビュー](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![構成ダッシュの分析と Configuration Analyzer の履歴ビュー](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

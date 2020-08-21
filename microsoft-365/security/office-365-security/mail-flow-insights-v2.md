@@ -1,78 +1,78 @@
 ---
-title: メールフローダッシュボードのメールフローインサイト
+title: メール フロー ダッシュボードのメール フローの分析情報
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで使用できる洞察およびレポートについて学習できます。
+description: 管理者は、セキュリティ/コンプライアンス センターのメール フロー ダッシュボードで使用できる分析情報やレポートについて&できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577795"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826567"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
-管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードを使用して、組織内のメールフローに関連する問題を解決するための傾向、洞察、アクションの実行を検索できます。
+管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードを使用して、傾向、見つけ、および組織のメール フローに関連する問題を修正するためのアクションを実行できます。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボード](../../media/mail-flow-dashboard-v2.png)
+![コンプライアンス センターのメール & フロー ダッシュボード](../../media/mail-flow-dashboard-v2.png)
 
-利用可能な洞察は次のとおりです。
+使用可能な分析情報を次に示します。
 
-- [自動転送されたメッセージの洞察](mfi-auto-forwarded-messages-report.md)
+- [自動転送されたメッセージのインサイト](mfi-auto-forwarded-messages-report.md)
 
-- [使用可能なメールループの洞察](mfi-mail-loop-insight.md)<sup>1</sup>を修正する
+- [メール ループの可能性についての分析情報 1 の](mfi-mail-loop-insight.md)<sup>修正</sup>
 
-- [低速メールフロールールの見通しを修正](mfi-slow-mail-flow-rules-insight.md)する<sup>1</sup>
+- [低速メール フローのルールを修正する](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
-- [メールフローマップ](mfi-mail-flow-map-report.md)
+- [メール フローのマップ](mfi-mail-flow-map-report.md)
 
-- [転送される新しいドメインメールの洞察](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+- [受信メールのインサイト 2 で転送される新しいドメイン](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
 
-- [新しいユーザーの転送メールの洞察](mfi-new-users-forwarding-email.md)<sup>2</sup>
+- [新しいユーザーがメールのインサイト 2 を転送](mfi-new-users-forwarding-email.md)<sup>する</sup>
 
 - [承認されていないドメインのレポート](mfi-non-accepted-domain-report.md)
 
 - [配信不能レポート](mfi-non-delivery-report.md)
 
-- [送信および受信メールフローの洞察](mfi-outbound-and-inbound-mail-flow.md)
+- [送信および受信メール フローのインサイト](mfi-outbound-and-inbound-mail-flow.md)
 
-- [キューの把握](mfi-queue-alerts-and-queues.md)
+- [キューのインサイト](mfi-queue-alerts-and-queues.md)
 
-- [SMTP 認証クライアントの洞察とレポート](mfi-smtp-auth-clients-report.md)
+- [SMTP Auth クライアントのインサイトとレポート](mfi-smtp-auth-clients-report.md)
 
 - [トップドメインのメール フローの状態洞察](mfi-domain-mail-flow-status-insight.md)　
 
-<sup>1</sup>この洞察は、問題が検出された後にのみ、メールフローダッシュボードの**お勧め**の領域に表示されます。 それ以外の場合は、表示されません。
+<sup>1</sup>この分析情報は、問題が検出された**Recommended for you**後でのみ、[メール フロー] ダッシュボードの [推奨] 領域に表示されます。 そうしないと、表示されない。
 
-<sup>2</sup>この洞察はメールフローダッシュボードには表示されませんが、問題が検出された後、[転送レポート](view-mail-flow-reports.md#forwarding-report)ページに表示されます。 それ以外の場合は、表示されません。
+<sup>2</sup> つの分析情報はメール フロー ダッシュボードには表示されませんが、問題が検出された後に [転送レポート](view-mail-flow-reports.md#forwarding-report) ページに表示されます。 そうしないと、表示されない。
 
-## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>メールフローダッシュボードを表示するために必要なアクセス許可
+## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>メール フロー ダッシュボードを表示するために必要なアクセス許可
 
-メールフローダッシュボードは、次のルートグループのメンバーが使用できます。
+メール フロー ダッシュボードは、次のルート グループのメンバーが利用できます。
 
-- セキュリティ & コンプライアンスセンター (グローバル管理者) での**組織の管理**。
+- **セキュリティ グループ** コンプライアンス センター (&での組織の管理)。
 
-- Azure AD の**[Exchange 管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
+- Azure AD の**[Exchange](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** AD。
 
-- セキュリティ & コンプライアンスセンターの**メールフロー管理者**: この役割グループのメンバーが全体管理者または Exchange 管理者の役割グループのメンバーでもない場合は、次の問題と要件を確認してください。
+- セキュリティ & コンプライアンス センターの**MailFlow**管理者:この役割グループのメンバーが、グローバル管理者または Exchange 管理者役割グループのメンバーでもない場合は、次の問題と要件に注意してください。
 
-  - ユーザーは、セキュリティ & コンプライアンスセンターに直接ログインする必要があり <https://protection.office.com> ます。
-  - ユーザーには、メールフローダッシュボードに対する読み取り専用アクセス許可のみが付与されます。
-  - ユーザーは、Microsoft 365 管理センターへのアクセス権を持ちません。
+  - ユーザーは、直下のセキュリティ 構成&にログインする必要があります <https://protection.office.com> 。
+  - ユーザーは、メール フロー ダッシュボードへの読み取り専用アクセス許可のみを持つ必要があります。
+  - ユーザーは、Microsoft 365 管理センターにアクセスできません。
 
-セキュリティ & コンプライアンスセンターでのアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照し、[セキュリティ & コンプライアンスセンターへのアクセス権をユーザーに付与](grant-access-to-the-security-and-compliance-center.md)します。
+セキュリティ コンプライアンス センターのアクセス許可の詳細については &、 [セキュリティ & コンプライアンス センターのアクセス許可を参照し、ユーザー](permissions-in-the-security-and-compliance-center.md) にセキュリティ コンプライアンス [センターへのアクセス&許可を付与します](grant-access-to-the-security-and-compliance-center.md)。
 
-## <a name="where-to-find-the-mail-flow-dashboard"></a>メールフローダッシュボードの検索先
+## <a name="where-to-find-the-mail-flow-dashboard"></a>メール フロー ダッシュボードの場所
 
-[セキュリティ & コンプライアンスセンター] <https://protection.office.com> を開き、[**メールフロー**] を展開して、[**ダッシュボード**] を選択します。
+セキュリティ センターの&、[メール フロー] <https://protection.office.com> を展開 **し、[** ダッシュボード] を選択 **します**。
 
-メールフローダッシュボードに直接移動するには、を開き <https://protection.office.com/mailflow/dashboard> ます。
+メール フローのダッシュボードに直接移動するには、開きます <https://protection.office.com/mailflow/dashboard> 。

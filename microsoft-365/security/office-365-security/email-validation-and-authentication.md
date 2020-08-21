@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理者は、スプーフィング、フィッシング、およびスパムを防ぐには、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用方法を確認できます。
-ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209501"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826651"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -41,7 +41,7 @@ ms.locfileid: "44209501"
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>メール認証を使用してスプーフィングを防止する
 
-DMARC では、メッセージの**差出人**アドレス (メール クライアントでユーザーに表示される差出人のメール アドレス) を調べて、スプーフィングを防止します。 送信先のメール組織では、メール ドメインが SPF または DKIM にパスしたことも確認できます。これは、ドメインが認証されたため、スプーフィングされていないことを意味します。 
+DMARC では、メッセージの**差出人**アドレス (メール クライアントでユーザーに表示される差出人のメール アドレス) を調べて、スプーフィングを防止します。 送信先のメール組織では、メール ドメインが SPF または DKIM にパスしたことも確認できます。これは、ドメインが認証されたため、スプーフィングされていないことを意味します。
 
 ただし、問題は、メール認証用のDNS 内 SPF、DKIM、および DMARC レコード (総称してメール認証ポリシーと呼ばれます) は完全にオプションであるということです。 そのため、microsoft.com や skype.com などの強力なメール認証ポリシーを公開しているドメインはスプーフィングから保護されますが、公開しているメール認証ポリシーが弱いドメインや認証ポリシーがまったく存在しないドメインはスプーフィングの主な対象になります。
 

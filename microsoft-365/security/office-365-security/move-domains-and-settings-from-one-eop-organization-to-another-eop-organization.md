@@ -1,5 +1,5 @@
 ---
-title: ドメイン & 設定をある EOP 組織から別の組織に移動する
+title: ドメインの設定& EOP 組織間で移動する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,26 +7,26 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、ドメインと設定を1つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) から別の組織に移動する方法について説明します。
-ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: この記事では、ドメインと設定を 1 つのファーム保護 (EOP) 組織 (テナント) から別の Microsoft Exchange Onlineに移動する方法について説明します。
+ms.openlocfilehash: a33042631a5a5371e2d120f76f49cb2a46a638a3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617452"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827691"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>ドメインと設定を EOP 組織から別の EOP 組織に移動する
 
 ビジネス要件が変化すると、1 つの Microsoft Exchange Online Protection (EOP) 組織 (テナント) を 2 つの別個の組織に分割したり、2 つの組織を 1 つに併合したり、ドメインや EOP の設定を 1 つの組織から別の組織へ移動したりする必要が生じることがあります。1 つの EOP 組織から別の EOP 組織へ移動するのは難しい作業ですが、いくつかの基本的なリモート Windows PowerShell スクリプトを用意し、少しの準備作業を行えば、比較的短いメンテナンス期間で完了できます。
 
 > [!NOTE]
-> 設定を確実に移動できるのは、EOP スタンドアロン (Standard) 組織から別の EOP Standard または Exchange Enterprise CAL with Services (EOP Premium) 組織のいずれかへの移動、または EOP Premium 組織から別の EOP Premium 組織への移動だけです。 一部のプレミアム機能は EOP Standard 組織ではサポートされていないため、EOP Premium 組織から EOP 標準組織への移動は成功しないことがあります。 <br><br> この記事の指示は、EOP フィルターのみの組織を対象にしています。1 つの Exchange Online 組織から別の Exchange Online 組織への移動には、追加の考慮事項があります。Exchange Online 組織は、この記事の指示の適用範囲外です。
+> 設定を確実に移動できるのは、EOP スタンドアロン (Standard) 組織から別の EOP Standard または Exchange Enterprise CAL with Services (EOP Premium) 組織のいずれかへの移動、または EOP Premium 組織から別の EOP Premium 組織への移動だけです。 一部のプレミアム機能は EOP Standard 組織ではサポートされないため、EOP Premium 組織から EOP Standard 組織への移動は成功しない可能性があります。 <br><br> この記事の指示は、EOP フィルターのみの組織を対象にしています。1 つの Exchange Online 組織から別の Exchange Online 組織への移動には、追加の考慮事項があります。Exchange Online 組織は、この記事の指示の適用範囲外です。
 
 次の例では、Contoso, Ltd. 社を Contoso Suites 社に併合します。次の図は、ドメイン、メール ユーザーとグループ、および設定を、移動元 EOP 組織 (contoso.onmicrosoft.com) から移動先 EOP 組織 (contososuites.onmicrosoft.com) に移動するプロセスを示しています。
 
@@ -46,9 +46,9 @@ ms.locfileid: "44617452"
 
 - スパム対策
 
-  - スパム対策ポリシー (コンテンツフィルターポリシーとも呼ばれます)
-  - 送信スパムフィルターポリシー
-  - 接続フィルターポリシー
+  - スパム対策ポリシー (コンテンツ フィルター ポリシーとも呼ばれる)
+  - 送信スパム フィルター ポリシー
+  - 接続フィルターのポリシー
 
 - マルウェア対策ポリシー
 
@@ -57,13 +57,13 @@ ms.locfileid: "44617452"
 - メール フロー ルール (トランスポート ルールとも呼ばれます)
 
   > [!NOTE]
-  > メールフロールールコレクションのエクスポートとインポートに対するコマンドレットのサポートは、現時点では EOP Premium サブスクリプションプランではサポートされていません。
+  > メール フロー ルール コレクションのエクスポートとインポートのコマンドレット サポートは、現在、EOP Premium サブスクリプション プランでのみサポートされています。
 
-すべての設定を収集する最も簡単な方法は、PowerShell を使用することです。 スタンドアロンの EOP PowerShell に接続するには、「 [Exchange Online Protection の powershell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
+すべての設定を収集する最も簡単な方法は、PowerShell を使用する方法です。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 次に、すべての設定を収集し、それらを .xml ファイルにエクスポートし、そのファイルを移動先のテナントにインポートします。一般に、各設定の **Get** コマンドレットの出力を **Export-Clixml** コマンドレットにパイプ処理することにより、設定を .xml ファイルに保存できます。この後のコード例に示すとおりです。
 
-スタンドアロン EOP PowerShell で、見つけやすい場所に Export というディレクトリを作成し、そのディレクトリに移動します。 例:
+スタンドアロン EOP PowerShell で、見つけやすい場所に Export というディレクトリを作成し、そのディレクトリに移動します。 たとえば、次のようにします。
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -73,7 +73,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-次のスクリプトは、移動元の組織のすべてのメールユーザー、グループ、スパム対策の設定、マルウェア対策の設定、コネクタ、およびメールフロールールを収集するために使用できます。 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、それを先ほど作成した Export ディレクトリに Source_EOP_Settings.ps1 という名前で保存し、次のコマンドを実行してください。
+次のスクリプトは、移動元の組織のすべてのメール ユーザー、グループ、スパム対策の設定、マルウェア対策の設定、コネクター、メール フロー ルールを収集するために使用できます。 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、それを先ほど作成した Export ディレクトリに Source_EOP_Settings.ps1 という名前で保存し、次のコマンドを実行してください。
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -177,13 +177,13 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-これで、移行先の組織の Microsoft 365 管理センターから情報を確認して収集することができるようになります。このため、時間が来るとすぐにドメインを確認できます。
+これで、移動先の組織の Microsoft 365 管理センターから情報を確認して収集し、次の時にドメインを迅速に検証できるようになります。
 
-1. Microsoft 365 管理センターにサインイン <https://portal.office.com> します。
+1. Microsoft 365 管理センターにサインインします <https://portal.office.com> 。
 
 2. **[ドメイン]** をクリックします。
 
-   ドメインが表示されない場合は、[ **navigtion のカスタマイズ**] をクリックし、[**セットアップ**] を選択して、[**保存**] をクリックします。
+   ドメインが表示されていない場合は、[ナビゲーションのカスタマイズ] をクリック **し、[** セットアップ] **を選択してから**[保存] を **クリックします**。
 
 3. それぞれの **[セットアップの開始]** リンクをクリックした後、セットアップ ウィザードの指示に従います。
 
@@ -191,7 +191,7 @@ Foreach ($domain in $Domains) {
 
 5. ドメインの検証に使用する MX レコードまたは TXT レコードを記録し、セットアップ ウィザードを終了します。
 
-6. 検証 TXT レコードを DNS レコードに追加します。 これにより、移動元の組織からドメインを削除した後、移動先の組織でドメインを迅速に検証できます。 DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
+6. 検証 TXT レコードを DNS レコードに追加します。 これにより、移動元の組織からドメインを削除した後、移動先の組織でドメインを迅速に検証できます。 DNS の構成の詳細については、「任意の [DNS ホスティング プロバイダーで Microsoft 365 用の DNS レコードを作成する」を参照してください](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>手順 3: 送信者がメールをキューに格納するように強制する
 
@@ -201,14 +201,14 @@ Foreach ($domain in $Domains) {
 
 別の方法として、自分のドメインに対する DNS レコードが保持されている各ドメイン (DNS ホスティング サービスとも呼ばれる) に無効な MX レコード置く方法もあります。このようにすると、送信元ではメールをキューに格納し、再試行します (通常は 48 時間にわたって再試行しますが、プロバイダーによって異なります)。無効な MX 宛先としては、invalid.outlook.com を使用できます。MX レコードの有効時間 (TTL) 値を 5 分に短縮すれば、変更が各 DNS プロバイダーに伝達されるまでの時間を短縮できます。
 
-DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
+DNS の構成の詳細については、「任意の [DNS ホスティング プロバイダーで Microsoft 365 用の DNS レコードを作成する」を参照してください](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 > [!IMPORTANT]
 > メールをキューに保持する時間はプロバイダーごとに異なります。キューに格納する時間が満了して送信者に配信不能レポート (NDR) が送信されるのを避けるため、新しいテナントを迅速に設定し、DNS 設定を元に戻す必要があります。
 
 ## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>手順 4: 移動元の組織からユーザー、グループ、およびドメインを削除する
 
-次のスクリプトは、Azure Active Directory PowerShell を使用して、移動元のテナントからユーザー、グループ、およびドメインを削除します。 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、ファイルを C:\EOP\Export\Remove_Users_and_Groups.ps1 として保存し、次のコマンドを実行してください。
+次のスクリプトでは、Azure Active Directory PowerShell を使用して、移動元のテナントからユーザー、グループ、およびドメインを削除します。 次のテキストをコピーしてメモ帳などのテキスト エディターに貼り付け、ファイルを C:\EOP\Export\Remove_Users_and_Groups.ps1 として保存し、次のコマンドを実行してください。
 
 ```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"
@@ -249,7 +249,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>手順 5: 移動先の組織のドメインを検証する
 
-1. の管理センターにサインイン [https://portal.office.com](https://portal.office.com) します。
+1. 管理センターにサインインします [https://portal.office.com](https://portal.office.com) 。
 
 2. **[ドメイン]** をクリックします。
 
@@ -646,11 +646,11 @@ rm -erroraction 'silentlycontinue' $outfile
 #****************************************************************************
 # HostedContentFilterPolicy
 #****************************************************************************
-$HostedContentFilterPolicys = Import-Clixml ".\HostedContentFilterPolicy.xml"
-$HostedContentFilterPolicyCount = $HostedContentFilterPolicys.Name.Count
+$HostedContentFilterPolicies = Import-Clixml ".\HostedContentFilterPolicy.xml"
+$HostedContentFilterPolicyCount = $HostedContentFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedContentFilterPolicyCount Inbound Connectors"
-    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicys) {
+    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicies) {
         $HostedContentFilterPolicyCmdlet = "New-HostedContentFilterPolicy"
         if($HostedContentFilterPolicy.Name -eq "Default") {$HostedContentFilterPolicyCmdlet = "Set-HostedContentFilterPolicy -Identity Default"}
         else {
@@ -726,11 +726,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedOutboundSpamFilterPolicy
 #****************************************************************************
-$HostedOutboundSpamFilterPolicys = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
-$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicys.Name.Count
+$HostedOutboundSpamFilterPolicies = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
+$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedOutboundSpamFilterPolicyCount Hosted Outbound Spam Filter Policies"
-    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicys) {
+    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicies) {
         $HostedOutboundSpamFilterPolicyCmdlet = "Set-HostedOutboundSpamFilterPolicy Default"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedOutboundSpamFilterPolicy.AdminDisplayName
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundAdditionalRecipients"
@@ -747,11 +747,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedConnectionFilterPolicy
 #****************************************************************************
-$HostedConnectionFilterPolicys = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
-$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicys.Name.Count
+$HostedConnectionFilterPolicies = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
+$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedConnectionFilterPolicyCount Hosted Connection Filter Policies"
-    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicys) {
+    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicies) {
         $HostedConnectionFilterPolicyCmdlet = "Set-HostedConnectionFilterPolicy"
         $HostedConnectionFilterPolicyCmdlet += makeparam "Identity" $HostedConnectionFilterPolicy.Name
         $HostedConnectionFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedConnectionFilterPolicy.AdminDisplayName
@@ -768,11 +768,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # MalwareFilterPolicy
 #****************************************************************************
-$MalwareFilterPolicys = Import-Clixml ".\MalwareFilterPolicy.xml"
-$MalwareFilterPolicyCount = $MalwareFilterPolicys.Name.Count
+$MalwareFilterPolicies = Import-Clixml ".\MalwareFilterPolicy.xml"
+$MalwareFilterPolicyCount = $MalwareFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $MalwareFilterPolicyCount Malware Filter Policies"
-    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicys) {
+    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicies) {
         $MalwareFilterPolicyCmdlet = "New-MalwareFilterPolicy"
         if($MalwareFilterPolicy.Name -eq "Default") {$MalwareFilterPolicyCmdlet = "Set-MalwareFilterPolicy Default"}
         else {
@@ -931,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>手順 8: DNS 設定を元に戻し、メールをキューに格納する処置を停止する
 
-送信中に送信者がメールをキューに入れられるように MX レコードを無効なアドレスに設定することを選択した場合は、[管理センター](https://admin.microsoft.com)で指定されているとおりに正しい値に設定する必要があります。 DNS の構成の詳細については、「 [Microsoft 365 の任意の dns ホスティングプロバイダーで dns レコードを作成](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)する」を参照してください。
+移行中に送信者がメールをキューに格納する原因として MX レコードに無効なアドレスを設定した場合は、管理センターで指定した正しい値に設定する [必要があります](https://admin.microsoft.com)。 DNS の構成の詳細については、「任意の [DNS ホスティング プロバイダーで Microsoft 365 用の DNS レコードを作成する」を参照してください](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。

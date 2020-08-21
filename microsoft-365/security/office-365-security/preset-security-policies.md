@@ -6,157 +6,157 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (ATP) の保護機能において標準ポリシー設定と厳密なポリシー設定を適用する方法を学習できます。
-ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (ATP) の保護機能に対して標準および制限のポリシー設定を適用する方法について学習できます。
+ms.openlocfilehash: a2f0472d8dd44c90fd5db14e71d2db0d5d323b50
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430401"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825259"
 ---
-# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP および Office 365 ATP の事前設定されたセキュリティポリシー
+# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP と Office 365 ATP での事前セキュリティ ポリシー
 
-事前設定されたセキュリティポリシーにより、すべての推奨されるスパム、マルウェア、およびフィッシングポリシーをユーザーに一度に適用するための一元的な場所が提供されます。 ポリシー設定は構成できません。 その代わりに、ユーザーは microsoft によって設定され、問題のあるコンテンツをユーザーに保持していなくても、作業を中断することなくバランスを取るために、データセンターの観察とエクスペリエンスに基づいています。
+事前設定済みのセキュリティ ポリシーは、推奨されるすべてのスパム、マルウェア、およびフィッシング ポリシーを一度にユーザーに適用するための一元的な場所を提供します。 ポリシー設定は構成できません。 むしろ、ユーザーが作業を中断することなく、ユーザーから問題のあるコンテンツを切り分けずにバランスアップするために、Microsoft によって設定され、データセンター内の観測とエクスペリエンスに基づいています。
 
-このトピックの残りの部分では、事前設定されたセキュリティポリシーとそれらを構成する方法について説明します。
+このトピックの残りの部分では、事前に設定されたセキュリティ ポリシーと、その構成方法について説明します。
 
-## <a name="what-preset-security-policies-are-made-of"></a>事前設定されたセキュリティポリシーの内容
+## <a name="what-preset-security-policies-are-made-of"></a>作成される事前設定のセキュリティ ポリシー
 
-事前設定されたセキュリティポリシーは、次の要素で構成されます。
+事前設定済みのセキュリティ ポリシーは、次の要素で構成されます。
 
 - プロファイル
 - ポリシー
 - ポリシー設定
 
-また、複数の事前設定されたセキュリティポリシーやその他のポリシーが同じユーザーに適用される場合は、優先順位が重要です。
+さらに、複数の事前に設定されたセキュリティ ポリシーとその他のポリシーが同じ人物に適用される場合は、優先順位が重要になります。
 
-### <a name="profiles-in-preset-security-policies"></a>事前設定されるセキュリティポリシーのプロファイル
+### <a name="profiles-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのプロファイル
 
-プロファイルは、保護レベルを決定します。 次のプロファイルを使用できます。
+プロファイルは保護レベルを決定します。 使用可能なプロファイルは次のとおりです。
 
-- **標準保護**: ほとんどのユーザーに適したベースライン保護プロファイル。
-- **厳重な保護**: 選択したユーザーのために、より厳しい保護プロファイルを使用します (高価値のターゲットまたは優先度の高いユーザー)。
+- **標準的**な保護: ほとんどのユーザーに適したベースライン保護プロファイルです。
+- **高い保護:** 選択されたユーザーに対してより、より総した保護プロファイル (高いターゲット、または優先ユーザー)。
 
-ルールは、プロファイルが適用されているかどうかを決定する条件と例外を指定して使用します。
+プロファイルが適用される対象ユーザーと適用対象でないユーザーを決定する条件と例外をルールに使用します。
 
 各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
 
-使用可能な条件と例外は次のとおりです。
+使用できる条件と例外は以下のとおりです。
 
-- **受信者は**、組織内のメールボックス、メールユーザー、またはメール連絡先です。
-- **受信者が**組織内のグループのメンバーである。
-- **受信者のドメインは、** Microsoft 365 で構成されている承認済みドメインです。
+- **受信者は、** 組織内のメールボックス、メール ユーザー、メール連絡先です。
+- **受信者は組織内の**: グループのメンバーです。
+- **受信者のドメインは、Microsoft**365 で構成されている承認済みドメインです。
 
-### <a name="policies-in-preset-security-policies"></a>事前設定されるセキュリティポリシーのポリシー
+### <a name="policies-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー
 
-事前設定されたセキュリティポリシーは、EOP および Office 365 ATP のさまざまな保護機能から対応するポリシーを使用します。 これらのポリシーは、**標準保護**または厳格な**保護**の事前設定のセキュリティポリシーをユーザーに割り当てた_後_に作成されます。 これらのポリシーを変更することはできません。
+事前設定されたセキュリティ ポリシーは、EOP および 365 ATP のさまざまな保護機能からの対応Officeを使用します。 これらのポリシーは、標準_保護または_制限付き**のセキュリティ ポリシー****をユーザーに割り**当てた後に作成されます。 これらのポリシーは変更できません。
 
-- **Exchange Online Protection (EOP) ポリシー**: これには、exchange online メールボックスを使用する Microsoft 365 組織と、exchange online メールボックスを持たないスタンドアロン EOP 組織が含まれます。
+- **Exchange Online Protection (EOP) ポリシー**: これには、Exchange Online メールボックスを使用している Microsoft 365 組織と Exchange Online メールボックスを持つスタンドアロン EOP 組織が含まれます。
   
-  - **標準の事前設定**されたセキュリティポリシーと**厳密な事前設定セキュリティポリシー**という名前[のスパム対策ポリシー](configure-your-spam-filter-policies.md) 。
-  - **標準の事前設定**されたセキュリティポリシーと**厳密な事前設定セキュリティポリシー**という名前[のマルウェア対策ポリシー](configure-anti-malware-policies.md) 。
-  - EOP の**既定のセキュリティポリシー**および厳密な事前設定された**セキュリティポリシー** (スプーフィング設定) という名前の[フィッシング対策ポリシー](set-up-anti-phishing-policies.md#spoof-settings)を設定します。
+  - Standard [Preset Security Policy](configure-your-spam-filter-policies.md)および**Strict Preset Security Policy という名前のスパム対策ポリシー**。 **Standard Preset Security Policy**
+  - [標準のプセットの](configure-anti-malware-policies.md)**セキュリティ ポリシーおよび Strict** **Preset Security Policy という名前のマルウェア対策ポリシー**。
+  - [標準プレセット セキュリティ ポリシーおよび](set-up-anti-phishing-policies.md#spoof-settings) **Standard Preset Security Policy** **Strict Preset Security Policy (Spoof** settings) という名前の EOP フィッシング対策ポリシー。
 
-- **Office 365 Advanced Threat Protection (ATP) ポリシー**: これには、Microsoft 365 E5 または OFFICE 365 ATP アドオンサブスクリプションを使用する組織が含まれます。
+- **Office 365 Advanced Threat Protection (ATP) ポリシー**: これには、Microsoft 365 E5 または Office 365 の ATP アドオン サブスクリプションを持つ組織が含まれます。
 
-  - **標準の事前設定**されたセキュリティポリシーと、次のような**厳格な事前設定セキュリティポリシー**という名前の、ATP のフィッシング対策ポリシー。
+  - 標準プレセットセキュリティ ポリシーと Strict **Preset Security Policy** という名前の ATP **フィッシング対策ポリシー。次**のポリシーが含まれます。
 
-    - EOP のフィッシング対策ポリシーで使用可能なものと同じ[スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)。
-    - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
+    - EOP フ [ィッシング](set-up-anti-phishing-policies.md#spoof-settings) 対策ポリシーで使用できるのと同じスプーフィング設定。
+    - [偽装の設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [高度なフィッシングしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [安全なリンク]**標準の事前設定**されたセキュリティポリシーと**厳密な事前設定セキュリティポリシー**という名前の[ポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) 。
+  - [標準のプレセット](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users)のセキュリティ ポリシーおよび**Strict Preset Security Policy (標準のプレセット セキュリティ ポリシー) という名前の安全なリンク ポリシー**。 **Standard Preset Security Policy**
 
-  - [[安全な添付ファイル](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)]**標準の既定のセキュリティポリシー**と、厳密に設定された**セキュリティポリシー**という名前のポリシー。
+  - [「標準のプセットの](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)**セキュリティ ポリシー」と「Strict** **Preset Security Policy」という名前の安全な添付ファイル ポリシー**。
 
-EOP の保護は、ATP の保護とは別のユーザーに適用することができることに注意してください。
+EOP 保護は、ATP 保護とは異なるユーザーに適用できる点に注意してください。
 
-### <a name="policy-settings-in-preset-security-policies"></a>事前設定されるセキュリティポリシーのポリシー設定
+### <a name="policy-settings-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー設定
 
-保護プロファイルでポリシー設定を変更することはできません。 [ [EOP] および [Office 365 ATP セキュリティ] の [推奨設定](recommended-settings-for-eop-and-office365-atp.md)] の値については、「**標準**および**厳密**なポリシー設定値」を参照してください。
+保護プロファイルのポリシー設定は変更できません。 **Standard および** **Strict のポリシー**設定値は、EOP と ATP セキュリティの[推奨設定Office説明されています](recommended-settings-for-eop-and-office365-atp.md)。
 
-### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>事前設定されたセキュリティポリシーおよびその他のポリシーの優先順位
+### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>事前に設定されたセキュリティ ポリシーおよびその他のポリシーの優先順位
 
-ユーザーに複数のポリシーが適用されている場合、次の順序は、優先度の高いものから順に適用されます。
+複数のポリシーがユーザーに適用されている場合は、次の順序が最高の優先度から最低の優先度の順に適用されます。
 
-1. **厳格な保護**の事前設定セキュリティポリシー
-2. **標準保護**の事前設定セキュリティポリシー
-3. カスタムセキュリティポリシー
-4. 既定のセキュリティポリシー
+1. **高い保護プレセット** のセキュリティ ポリシー
+2. **標準保護** プレセット セキュリティ ポリシー
+3. カスタム セキュリティ ポリシー
+4. 既定のセキュリティ ポリシー
 
-つまり、**厳格な保護**ポリシーの設定は、**標準保護**ポリシーの設定を上書きします。これは、カスタムポリシーの設定を上書きします。これにより、既定のポリシーの設定が上書きされます。
+つまり、高い保護ポリシーの設定は **、標準** 保護ポリシーの設定より優先されます。 **これは** 、カスタム ポリシーからの設定を上書きします。これは、既定のポリシーからの設定を上書きします。
 
-## <a name="assign-preset-security-policies-to-users"></a>事前設定されるセキュリティポリシーのユーザーへの割り当て
+## <a name="assign-preset-security-policies-to-users"></a>事前設定したセキュリティ ポリシーをユーザーに割り当てる
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [事前設定された**セキュリティポリシー** ] ページに直接移動するには、を使用 <https://protection.office.com/presetSecurityPolicies> します。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [設定済みのセキュリティ ポリシー **] ページに直接移動するには**、. <https://protection.office.com/presetSecurityPolicies>
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 - このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
 
-  - 事前設定されたセキュリティポリシーを構成するには、次のいずれかの役割グループのメンバーである必要があります。
+  - 事前設定されたセキュリティ ポリシーを構成するには、次の役割グループのいずれかのメンバーである必要があります。
 
     - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
     - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
 
-  - 事前設定されたセキュリティポリシーに対する読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
+  - 事前に設定されたセキュリティ ポリシーに読み取り専用アクセスするには、次の役割グループのいずれかのメンバーである必要があります。
 
     - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
     - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
-### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>セキュリティ & コンプライアンスセンターを使用して、事前に設定されたセキュリティポリシーをユーザーに割り当てる
+### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>セキュリティ/コンプライアンス センターを&、事前設定のセキュリティ ポリシーをユーザーに割り当てる
 
-1. [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** ] \> **プリセットセキュリティポリシー**に移動します。
+1. セキュリティ コンプライアンス センターから&、脅威管理**ポリシーの** \> **Policy** \> **プレセットのセキュリティ ポリシーに移動します**。
 
-2. [**標準保護**] または [**厳重な保護**] で、[**編集**] をクリックします。
+2. [Standard **protection]** (保護または **[ Strict Protection)] で、[Edit]** を **クリックします**。
 
-3. [**標準保護を適用**する] または [**厳格な保護を適用**する] ウィザードが起動します。 [ **EOP 保護の適用先**] ステップで、 [EOP 保護](#policies-in-preset-security-policies)を適用する内部の受信者を特定します。
+3. 標準**保護の適用ウィザードまたは****高い取り消し保護ウィザード**が開始します。 EOP 保護 **が適用されるには、EOP** 保護が適用される内部の [受信者を](#policies-in-preset-security-policies) 特定します。
 
-   1. [**条件の追加] を**クリックします。 表示されるドロップダウンで、[適用済みの**場合**] の条件を選択します。
+   1. [条件 **の追加] をクリックします**。 表示されるドロップダウンで、[適用する条件: **Applied if**
 
-      - **受信者の**
-      - **受信者がメンバーである**
-      - **受信者のドメイン**
+      - **受信者が次の場合**
+      - **受信者が次のメンバーの場合**
+      - **受信者のドメインが**
 
-      条件は1回だけ使用できますが、条件に複数の値を指定することができます。 同じ条件の複数の値を使用するか、ロジックを指定します (例: _\<recipient1\>_ または _\<recipient2\>_ )。
+      一度に使用できる条件は 1 つのみですが、条件には複数の値を指定できます。 同じ条件に複数の値がある場合、OR ロジック (例、 _\<recipient1\>_ など) が使用されます _\<recipient2\>_ 。
 
-   2. 選択した条件が影付きのセクションに表示されます。 そのセクションで、**次のいずれか**のボックスをクリックします。 少し待つと、値を選択できるようにリストが表示されます。 または、値の入力を開始して、リストにフィルターを適用し、値を選択することもできます。 必要な回数だけこの手順を繰り返します。 個々の値を削除するには、その値の [削除] アイコン**をクリックし** ![ ](../../media/scc-remove-icon.png) ます。 条件全体を削除するには、条件の [削除] アイコン**をクリックし** ![ ](../../media/scc-remove-icon.png) ます。
+   2. 選択した条件が、シェード セクションに表示されます。 そのセクションで、以下のボックス **をクリック** します。 しばらく待つと、一覧が表示され、値を選択できます。 または、値を入力してリストにフィルターを適用し、値を選択できます。 必要な回数だけこの手順を繰り返します。 個別の値を削除するには、値の **[削除** ![ ] ](../../media/scc-remove-icon.png) アイコンをクリックします。 条件全体を削除するには、条件の [ **削除** ![ ] ](../../media/scc-remove-icon.png) アイコンをクリックします。
 
-   3. 別の条件を追加するには、[**条件の追加**] をクリックし、残りの条件から選択します。 さまざまな条件とロジック (たとえば、と) が使用さ _\<recipient1\>_ _\<member of group 1\>_ れます。
+   3. 別の条件を追加するには、[ **条件を追加] をクリック** し、残りの条件から選択します。 さまざまな条件では AND ロジック (およびなど) が _\<recipient1\>_ 使います _\<member of group 1\>_ 。
 
-      前の手順を繰り返して条件に値を追加し、必要に応じて、または条件が満たされなくなるまで、この手順を繰り返します。
+      上記の手順を繰り返して条件に値を追加し、条件が満たないか、不足するまでこの手順を繰り返します。
 
-   4. 例外を追加するには、[**条件の追加**] をクリックします。 表示されたドロップダウンで、[ **when when**] の条件を選択します。 設定と動作は、条件とまったく同じです。
-
-   完了したら、**[次へ]** をクリックします。
-
-4. 組織で Office 365 ATP が使用されている場合は、「 **atp の保護を適用**」の手順に進み、 [office 365 atp の保護](#policies-in-preset-security-policies)が適用される内部の受信者を特定します。
-
-   設定と動作は、手順**に適用される EOP 保護**とよく似ています。
+   4. 例外を追加するには、[条件の **追加] をクリックします**。 表示されるドロップダウンで、[いつ次の場合を除く" の下に条件 **を選択します**。 設定と動作は、条件とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
-5. [**確認**] 手順で選択内容を確認し、[**確認**] をクリックします。
+4. 組織が Office 365 ATP を使用している場合は、Office 365 **ATP** 保護が適用される内部の [受信者を特定するための手順に従う](#policies-in-preset-security-policies) 必要があります。
 
-### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>セキュリティ & コンプライアンスセンターを使用して、事前設定されたセキュリティポリシーの割り当てを変更する
+   設定と動作は、EOP 保護が手順 **に適用されるのとまったく同** じです。
 
-**標準保護**または**厳密保護**のセキュリティポリシーの割り当てを変更する手順は、最初[に事前に設定したセキュリティポリシーをユーザーに割り当て](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users)た場合と同じです。
+   完了したら、**[次へ]** をクリックします。
 
-既存の条件と例外を保持したまま、**標準保護**または**厳格な保護**のセキュリティポリシーを無効にするには、[**無効**] に切り替えます。 ポリシーを有効にするには、[オン] を**スライドします。**
+5. [確認 **] の** 手順で選択した内容を確認し、[確認] を **クリックします**。
+
+### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>セキュリティ コンプライアンス センターを&、既定のセキュリティ ポリシーの割り当てを変更する
+
+標準保護または高い保護のセキュリティ**Standard protection**ポリシーを割り当てて変更する**手順**は、事前に設定されたセキュリティ ポリシーをユーザーに最初に割り[当ててから行う手順と同じです](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users)。
+
+既存の条件**と例外を保持****したままで、** 標準の保護または制限付き保護セキュリティ ポリシーを無効にするには、トグルを **[Disabled]** にスライドします。 ポリシーを有効にするには、トグルを有効に切り替 **えて有効にします**。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
-**標準保護**または**厳格な保護**セキュリティポリシーがユーザーに正常に割り当てられたことを確認するには、保護設定を使用します。既定値は**標準保護**設定とは異なります。これは**厳密な保護**設定とは異なります。
+標準保護または制限の保護のセキュリティ**ポリシー****がユーザー**に正常に割り当てられたことを確認するには、既定値が標準の保護設定と**異なる保護**設定を使用します。これは **、[制限する保護] 設定とは異**なります。
 
-たとえば、スパムとして検出された電子メール (高精度スパムではない) の場合は、メッセージが [迷惑メール]**フォルダーに配信**され**Strict protection**ていることを確認してください。
+たとえば、(信頼度の高いスパムでない) 電子メールの場合は、メッセージが標準保護ユーザーの [迷惑メール] フォルダー **に配信され** 、厳密に **保護ユーザーの場合は検疫** されます。
 
-または、[バルクメール](bulk-complaint-level-values.md)の場合は、bcl 値6以上が**標準の保護**ユーザー用の迷惑メールフォルダーにメッセージを配信していることを確認し、bcl 値4以上の検疫を使用して、**厳正な保護**ユーザーにメッセージを送信します。
+または、バ [ルク メールの場合](bulk-complaint-level-values.md)は、BCL 値 6 以上が標準保護ユーザー用迷惑メール フォルダー **にメッセージを配信し** 、BCL 値 4 以上で厳密な保護ユーザーに向け **、メッセージを検疫したことを確認** します。

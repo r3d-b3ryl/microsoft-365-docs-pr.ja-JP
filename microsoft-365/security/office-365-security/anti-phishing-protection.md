@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,50 +18,50 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) のフィッシング対策保護機能について学ぶことができます。
-ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) のフィッシング対策保護機能について学習できます。
+ms.openlocfilehash: 5594c4e7033ab70a622403bca7759cd4b89f111a
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588314"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827447"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 でのフィッシング対策保護
 
-*フィッシング*とは、正規または信頼された送信者からのメッセージで機密情報を盗もうとする電子メール攻撃のことです。 フィッシングには特定のカテゴリがあります。 例:
+*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには、特定のカテゴリがあります。 たとえば、次のようにします。
 
-- **スピアーフィッシング**は、目的の受信者に特化した、非常に集中的でカスタマイズされたコンテンツを使用します (通常は、攻撃者による受信者の偵察後)。
+- **スピア フィッシングでは、** 特にターゲットとなる受信者にカスタマイズされた (通常は、攻撃者による受信者の再調整後) にカスタマイズした、非常に焦点を置かれてカスタマイズされたコンテンツを使用します。
 
-- **Whaling**は、組織内のエグゼクティブまたはその他の高価値のターゲットに対して最大の効果を与えるように指示されます。
+- **Whaling は** 、最大効果をもつ組織内のエグゼクティブまたはその他の価値の高いターゲットに向けられます。
 
-- **ビジネスメールの侵害 (BEC)** は、受信者が支払いを承認したり、ファンドを転送したり、顧客データを公開したりするための取り組みで、偽造された信頼できる送信者 (金融責任者、顧客、信頼できるパートナーなど) を使用します。
+- **ビジネス メールが侵害された業者 (BEC)** は、取り組みを取り入れてパートナーを本人が業者に取り入れて、顧客データの承認、行使いの促金を取り入れ、取り入れないように取り組むために取り組む目的で、業務上の信頼できる送信者 (BEC) を使用します。
 
-- データを暗号化し、暗号化を解除するために支払いを要求する**ランサムウェア**は、常にフィッシングメッセージで開始します。 フィッシング対策保護は暗号化されたファイルの解読には役立ちませんが、ランサムウェアキャンペーンに関連付けられている最初のフィッシングメッセージを検出するのに役立ちます。 ランサムウェア攻撃からの回復の詳細については、「 [Microsoft 365 のランサムウェアからの回復](recover-from-ransomware.md)」を参照してください。
+- **ほとんどの場合、データを暗号化** し支払いを要求するランスパンダウェアは、ほとんどの場合、フィッシング メッセージで開始します。 フィッシング対策保護は、暗号化されたファイルの暗号化を解除する上では役立ちますが、ランサムウェア キャンペーンに関連付けられている最初のフィッシング メッセージを検出する上で役立ちます。 ランムウェア攻撃からの回復の詳細については [、「Microsoft 365 のランスムウェア攻撃からの回復」を参照してください](recover-from-ransomware.md)。
 
-攻撃の複雑さが増すにつれて、熟練したユーザーが高度なフィッシングメッセージを識別することが困難になります。 幸いなことに、Exchange Online Protection (EOP) と Office 365 のその他の機能については、「Advanced Threat Protection (Office 365 ATP)」を参照してください。
+攻撃の複雑さが増すと、トレーニング済みユーザーはさらに複雑なフィッシング メッセージを識別するのは難しいものになります。 Exchange Online Protection (EOP) と Office 365 Advanced Threat Protection (Office 365 ATP) の追加機能が役立ちます。
 
-## <a name="anti-phishing-protection-in-eop"></a>EOP でのフィッシング対策保護
+## <a name="anti-phishing-protection-in-eop"></a>EOP のフィッシング対策保護
 
-EOP (つまり、ATP を使用しない Microsoft 365 組織) には、組織をフィッシング脅威から保護するのに役立つ機能が含まれています。
+EOP (つまり、ATP を使用しない Microsoft 365 組織) には、フィッシングの脅威から組織を保護するために役立つ機能が含まれています。
 
-- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「 [Configure スプーフ知能 IN EOP」](learn-about-spoof-intelligence.md)を参照してください。
+- **スプーフィング インテリジェンス**: 内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。 詳細については、「EOP でス [プーフィング インテリジェンスを構成する」を参照してください](learn-about-spoof-intelligence.md)。
 
-- **EOP のフィッシング対策ポリシー**: スプーフィングインテリジェンスを有効または無効にしたり、Outlook で認証されていない送信者の識別を有効または無効にしたり、ブロックされた送信者に対するアクションを指定したりします ([迷惑メール] フォルダーまたは検疫に移動)。 詳細については、「 [CONFIGURE EOP」の「フィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
+- **EOP のフィッシング対策**ポリシー: スプーフィング インテリジェンスを有効または無効にし、Outlook で認証されていない送信者識別情報をオンまたはオフにして、スプーフィングされた送信者 ([迷惑メール] フォルダーまたは検疫に移動) のアクションを指定する。 詳細については [、「EOP でフィッシング対策ポリシーを構成する」を参照してください](configure-anti-phishing-policies-eop.md)。
 
-- **暗黙的な電子メール認証**: EOP では、受信電子メールの標準の電子メール認証チェック ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [dkim](use-dkim-to-validate-outbound-email.md)、 [DMARC](use-dmarc-to-validate-email.md)) を使用して、送信者評価、送信者履歴、受信者履歴、動作分析、その他の高度な手法を使用して偽造された送信者を特定できます。 詳細については、「[Microsoft 365 でのメール認証](email-validation-and-authentication.md)」をご覧ください。
+- **暗黙的なメール認証**: EOP は、送信者評価、送信者履歴、受信者履歴、行きの分析、およびその他の高度な手法を使用して、受信メール (SPF、DKIM、DMARC) の電子メール認証チェックを強化して、偽の送信者を識別します。[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md) [DMARC](use-dmarc-to-validate-email.md) 詳細については、「[Microsoft 365 でのメール認証](email-validation-and-authentication.md)」をご覧ください。
 
 ## <a name="additional-anti-phishing-protection-in-office-365-atp"></a>Office 365 ATP の追加のフィッシング対策保護
 
-Office 365 ATP には、追加の高度なフィッシング対策機能が含まれています。
+Office 365 ATP には、次のより高度なフィッシング対策機能が含まれています。
 
-- **ATP のフィッシング対策ポリシー**: 新しいカスタムポリシーを作成し、偽装の設定 (ユーザーとドメインを偽装から保護)、メールボックスインテリジェンスの設定、および詳細なフィッシングしきい値を調整します。 詳細については、「 [Microsoft 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。 フィッシング対策ポリシーと ATP のフィッシング対策ポリシーの相違点の詳細については、「 [Microsoft 365 のフィッシング対策ポリシー](set-up-anti-phishing-policies.md)」を参照してください。
+- **ATP フィッシング対策**ポリシー: 新しいカスタム ポリシーを作成、偽装対策設定 (偽装からユーザーとドメインを保護)、メールボックス インテリジェンスの設定、および調整可能な高度なフィッシングしきい値。 詳細については [、「Microsoft 365 で ATP フィッシング対策ポリシーを構成する」を参照してください](configure-atp-anti-phishing-policies.md)。 フィッシング対策ポリシーと ATP フィッシング対策ポリシーの違いの詳細については、Microsoft 365 のフィッシ [ング対策ポリシーを参照してください](set-up-anti-phishing-policies.md)。
 
-- [**キャンペーンビュー**]: コンピューター学習およびその他のヒューリスティックは、サービスと組織全体に対して、組織的なフィッシング攻撃に関係するメッセージを識別して分析します。 詳細については、「[Office 365 ATP のキャンペーン ビュー](campaigns.md)」を参照してください。
+- **キャンペーン ビュー**: 機械学習とその他のヒューリスティックは、サービス全体および組織に対する調整されたフィッシング攻撃に関係するメッセージを特定して分析します。 詳細については、「[Office 365 ATP のキャンペーン ビュー](campaigns.md)」を参照してください。
 
-- **アタックシミュレータ**: 管理者は偽のフィッシングメッセージを作成し、それを教育ツールとして内部ユーザーに送信できます。 詳細については、「 [Office 365 ATP」の「アタックシミュレータ」](attack-simulator.md)を参照してください。
+- **攻撃シミュレータ**: 管理者は偽のフィッシング メッセージを作成し、教育ツールとして内部ユーザーに送信できます。 詳細については [、「Office 365 ATP」の「攻撃シミュレータ」を参照してください](attack-simulator.md)。
 
 ## <a name="other-anti-phishing-resources"></a>その他のフィッシング対策リソース
 
-- エンドユーザーの場合:[フィッシング対策やその他の形式のオンライン詐欺から保護](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)します。
+- エンド ユーザー向け: [フィッシング スキームや](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)オンライン切り取りから自分を保護します。
 
-- [Microsoft 365 がフィッシングを防ぐために差出人アドレスを検証する方法](how-office-365-validates-the-from-address.md)。
+- [Microsoft 365 がフィッシングを防止するために From アドレスを検証する方法](how-office-365-validates-the-from-address.md)。

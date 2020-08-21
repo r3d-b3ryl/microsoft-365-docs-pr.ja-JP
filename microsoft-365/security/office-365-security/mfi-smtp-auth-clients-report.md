@@ -1,90 +1,90 @@
 ---
-title: メールフローダッシュボードの SMTP 認証クライアントの洞察とレポート
+title: メール フロー ダッシュボードの SMTP Auth クライアントインサイトとレポート
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで SMTP 認証の洞察とレポートを使用して、組織内で、認証済みの SMTP (SMTP AUTH) を使用して電子メールメッセージを送信する電子メール送信者を監視する方法を学習できます。
-ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで SMTP Auth insight を使用してレポートし、認証済み SMTP (SMTP AUTH) を使用してメール メッセージを送信する、組織内のメール送信者を監視する方法を学習できます。
+ms.openlocfilehash: 65e5569bcd79caef071ee2103d18a4e985c19dbb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577237"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826871"
 ---
-# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの SMTP 認証クライアントの洞察とレポート
+# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>セキュリティ コンプライアンス センターの SMTP Auth クライアントのインサイト& レポート
 
-[メールフローダッシュボード](mail-flow-insights-v2.md)とそれに関連付けられている[smtp auth clients レポート](#smtp-auth-clients-report)に記載されている**smtp 認証**クライアントは、組織内のユーザーまたはシステムアカウントによる smtp auth クライアント送信プロトコルの使用を強調します。 この従来のプロトコル (エンドポイント smtp.office365.com を使用します) は基本認証のみを提供し、侵害されたアカウントが電子メールを送信するために使用されやすくなります。 洞察とレポートを使用すると、SMTP 認証の電子メールの送信に関する異常な動作を確認できます。 また、SMTP 認証を使用するクライアントまたはデバイスの TLS 使用状況データも表示されます。
+**メール フローのダッシュボードおよび**関連する SMTP Auth[クライアント](mail-flow-insights-v2.md)レポートの[SMTP Auth クライアントから、組織内](#smtp-auth-clients-report)のユーザーまたはシステム アカウントでの SMTP AUTH クライアント送信プロトコルの使用状況を強調表示します。 このレガシ プロトコル (エンドポイント smtp.office365.com を使用する) は基本認証のみを提供し、侵害されたアカウントが電子メールを送信するために使用するのを受け付けします。 インサイトとレポートでは、SMTP AUTH メールを送信するための異形式のアクティビティをチェックできます。 また、SMTP AUTH を使用したクライアントまたはデバイスの TLS 使用状況データも示しています。
 
-ウィジェットは、過去7日間に SMTP 認証プロトコルを使用したユーザーまたはサービスアカウントの数を示します。
+ウィジェットは、過去 7 日間の SMTP Auth プロトコルを使用したユーザーまたはサービス アカウントの数を示します。
 
-![セキュリティ & コンプライアンスセンターのメールフローダッシュボードの SMTP 認証クライアントウィジェット](../../media/mfi-smtp-auth-clients-report-widget.png)
+![セキュリティ センター センターのメール フロー ダッシュボードの SMTP Auth クライアント &イジェット](../../media/mfi-smtp-auth-clients-report-widget.png)
 
-ウィジェットのメッセージ数をクリックすると、[ **SMTP Auth clients** ] ポップアップが表示されます。 フライアウトは、過去1週間の TLS 使用量とボリュームを集約したビューを提供します。
+ウィジェット上のメッセージ数をクリックすると **、SMTP Auth クライアントのポップ** アップが表示されます。 ポップアップでは、過去 1 週間の TLS 使用状況とボリュームの集計ビューが提供されます。
 
-![メールフローダッシュボードの SMTP 認証クライアントウィジェットをクリックした後の詳細ポップアップ](../../media/mfi-smtp-auth-clients-report-details.png)
+![[メール フロー ダッシュボード] で SMTP Auth クライアント ウィジェットをクリックした後の詳細ポップアップ](../../media/mfi-smtp-auth-clients-report-details.png)
 
-[ **Smtp auth clients レポート**] リンクをクリックすると、次のセクションで説明されているように、smtp auth clients レポートに移動できます。
+SMTP Auth クライアント レポート **リンクをクリックすると** 、次のセクションの説明に示されている SMTP Auth クライアント レポートに移動できます。
 
 ## <a name="smtp-auth-clients-report"></a>SMTP Auth クライアントのレポート
 
-### <a name="report-view-for-the-smtp-auth-clients-report"></a>SMTP 認証クライアントレポートのレポートビュー
+### <a name="report-view-for-the-smtp-auth-clients-report"></a>SMTP Auth クライアント レポートのレポート ビュー
 
-既定では、レポートには過去7日間のデータが表示されますが、データは過去90日間で利用可能です。
+既定では、レポートには最も期間 7 日間のデータが表示されますが、過去 90 日間のデータが取得可能になります。
 
-概要セクションには、次のグラフが含まれています。
+概要セクションには、次のグラフが含まれます。
 
-- **データの表示: 送信ボリューム**: 既定では、すべてのドメインから送信された SMTP Auth クライアントメッセージの数 ([**データの表示: 既定ではすべての送信者ドメイン**が選択されています)] を示しています。 結果を特定の送信者のドメインにフィルター処理するには、ドロップダウンリストから [**データの表示]** をクリックし、送信者のドメインを選択します。 特定のデータポイント (日単位) をポイントすると、メッセージ数が表示されます。
+- **データの表示: ボリュームの送信**: 既定では、すべてのドメインから送信された SMTP Auth クライアント メッセージの数がグラフに表示されます **([表示: 既定ではすべての送信者ドメイン** ] が選択されています)。 特定の送信者ドメインに結果をフィルターするには、[ **データの** 表示] をクリックし、ドロップダウン リストから送信者ドメインを選択します。 特定のデータ ポイントをポイントする場合は、メッセージ数が表示されます。
 
-  ![セキュリティ & コンプライアンスセンターの SMTP 認証クライアントレポートでのボリューム表示の送信](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
+  ![コンプライアンス センターの SMTP Auth クライアント レポートでのボリューム & ビューの送信](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- **データの表示方法: TLS 使用法**: 選択した期間におけるすべての SMTP Auth クライアントメッセージの tls 使用率を示します。 このグラフでは、以前のバージョンの TLS を使用しているユーザーとシステムアカウントを識別し、アクションを実行することができます。
+- **データの閲覧元: TLS 使用**率: 選択した期間中のすべての SMTP Auth クライアント メッセージに対する TLS 使用率がグラフに示されます。 このグラフを使用すると、ユーザーおよびシステム アカウントを特定して、以前のバージョンの TLS を使用しているユーザー アカウントを特定してアクションを実行できます。
 
-  ![セキュリティ & コンプライアンスセンターの SMTP 認証クライアントレポートの TLS 使用法の表示](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
+  ![セキュリティ コンプライアンス センターの SMTP Auth クライアント レポートの TLS 使用&ビュー](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
-レポートビューで [**フィルター** ] をクリックすると、**開始日**と**終了日**を含む日付範囲を指定できます。
+レポート ビューで **[フィルター** ] をクリックすると、開始日と終了日で**日付範囲****を指定できます**。
 
-[**要求レポート**] をクリックして、レポートの詳細バージョンを電子メールメッセージで受信します。 レポートを受信する日付の範囲と受信者を指定できます。
+[ **要求] レポートを** クリックすると、メール メッセージでレポートの詳細バージョンが表示されます。 レポートを受信する日付範囲と受信者を指定できます。
 
-### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>SMTP Auth clients レポートの詳細表ビュー
+### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>SMTP Auth クライアント レポートの詳細テーブル ビュー
 
-[**詳細テーブルの表示**] をクリックした場合、表示されている情報は、表示されていたグラフによって異なります。
+[詳細の **表示] テーブルを**クリックした場合に表示される情報は、表示しているグラフによって異なるためです。
 
-- **データの表示: 送信ボリューム**: 次の情報が表に表示されます。
+- **データの表示: Sending volume:** 次の情報が表に表示されています。
 
   - **[送信者のアドレス]**
   - **メッセージ数**
 
-  行を選択すると、同じ詳細がフライアウトに表示されます。
+  行を選択すると、詳細と同じ詳細がポップアップに表示されます。
 
-- **データの表示方法: TLS 使用法**: 次の情報を表に示します。
+- **データの表示元: TLS の使用**方法: 次の情報を表に示します。
 
   - **[送信者のアドレス]**
-  - **TLS 1.0%**<sup>\*</sup>
-  - **TLS 1.1%**<sup>\*</sup>
-  - **TLS 1.2%**<sup>\*</sup>
+  - **TLS1.0%**<sup>\*</sup>
+  - **TLS1.1%**<sup>\*</sup>
+  - **TLS1.2%**<sup>\*</sup>
   - **メッセージ数**
 
-  <sup>\*</sup>この列には、送信者からのメッセージの割合と数が表示されます。
+  <sup>\*</sup> この列には、送信者からのメッセージの割合と数の両方が表示されます。
 
-詳細テーブルビューで [**フィルター** ] をクリックすると、**開始日**と**終了日**を含む日付範囲を指定できます。
+詳細テーブル ビュー**の [** フィルター] をクリックすると、開始日と終了日で**日付範囲****を指定できます**。
 
-行を選択すると、同様の詳細がフライアウトに表示されます。
+行を選択すると、同様の詳細がポップアップに表示されます。
 
-![SMTP Auth clients レポートの [TLS usage] ビューの詳細表からの詳細ポップアップ](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+![SMTP Auth クライアント レポートの TLS 使用状況ビューの詳細テーブルからの詳細ポップアップ](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
 
-[**要求レポート**] をクリックして、レポートの詳細バージョンを電子メールメッセージで受信します。 レポートを受信する日付の範囲と受信者を指定できます。
+[ **要求] レポートを** クリックすると、メール メッセージでレポートの詳細バージョンが表示されます。 レポートを受信する日付範囲と受信者を指定できます。
 
-レポートビューに戻るには、[**レポートの表示**] をクリックします。
+レポート ビューに戻るには、[レポートの表示] **をクリックします**。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-メールフローダッシュボードの他の洞察の詳細については、「[セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
+メール フロー ダッシュボードの他の分析情報については、セキュリティ コンプライアンス センターの [メール フローの詳細&を参照してください](mail-flow-insights-v2.md)。

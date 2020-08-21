@@ -1,5 +1,5 @@
 ---
-title: 分析のためにメッセージを手動で Microsoft に送信する
+title: 分析用に Microsoft に手動でメッセージを送信する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,79 +15,79 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 管理者とエンドユーザーは、分析用に Microsoft に電子メールメッセージ (不良または無効なメールが許可されたメール) を送信する方法を学習できます。
+description: 管理者とエンド ユーザーは、Microsoft への分析を行う必要なメッセージ (不適切なメールや不適切なメールの受信のマーク) を確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 94f00f8399164a84d2cb9dae0c4c416b73dfb0dc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653595"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827811"
 ---
-# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のためにメッセージを手動で Microsoft に送信する
+# <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析用に Microsoft に手動でメッセージを送信する
 
 > [!NOTE]
-> Exchange Online メールボックスを使用している組織内の管理者である場合は、セキュリティ & コンプライアンスセンターで送信ポータルを使用することをお勧めします。 詳細については、「[管理者による送信を使用して疑わしいスパム、フィッシング、url、およびファイルを Microsoft に送信する](admin-submission.md)」を参照してください。
+> Exchange Online メールボックスを持つ組織内の管理者は、セキュリティ/コンプライアンス センターの提出ポータルを&ことをお勧めします。 詳細については、「管理者送信 [を使用して、スパム、フィッシング、URL、ファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
 
-組織内のユーザーが迷惑メール (スパム) またはフィッシングメッセージを受信トレイで受信する場合や、迷惑メールとしてマークされているために正当な電子メールメッセージを受信しない場合は、ストレスがかかることがあります。 より正確になるように、スパムフィルターを常に微調整しています。
+組織のユーザーが受信トレイで迷惑メール メッセージ (スパム) やフィッシング メッセージを受信したり、当該電子メール メッセージが迷惑メールとしてマークされたため受信されなけない場合に、イライラする可能性があります。 迷惑メール フィルターは、いつも調整していくために、より高い結果が生じないでいい場合も当てはまりはありません。
 
-この処理を支援するには、誤検知 (不良としてマークされた良好な電子メール)、誤検知 (無効なメールが許可されている)、および Microsoft に対するフィッシングメッセージを分析用に送信します。
+組織とユーザーは、誤検知 (良いメールが悪いメール)、誤検知 (不正なメールの許可)、分析用に Microsoft にフィッシング メールを送信することで、このプロセスをサポートできます。
 
 > [!NOTE]
-> 大量の送信が送信されるため、分析のすべての要求に応答できない場合があります。
+> 弊回の送出量が多いため、分析を受けたすべての要求に回答できない場合があります。
 
-## <a name="submit-false-negatives-to-microsoft"></a>誤検知を Microsoft に送信する
+## <a name="submit-false-negatives-to-microsoft"></a>Microsoft に偽の漏れを送信する
 
 > [!TIP]
-> 次の手順を使用して誤検知を報告する代わりに、Outlook および web 上の Outlook (旧称 Outlook Web App) のユーザーは Microsoft Outlook 用のレポートメッセージアドインを使用できます。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。
+> 次の手順を使用して誤検知を報告する代わりに、Outlook および Web 上の Outlook (Outlook Web App) のユーザーは Microsoft Outlook 用の報告メッセージ アドインを使用できます。 このツールをインストールして使用する方法については、「レポート [メッセージ アドインを有効にする」を参照してください](enable-the-report-message-add-in.md)。
 
-スパムまたはフィッシングとして識別されたスパムフィルタリングを通過したメッセージを受信した場合は、そのメッセージを Microsoft スパム分析および Microsoft フィッシング分析チームに適宜送信することができます。 アナリストはメッセージを確認し、分類基準を満たす場合は、サービス全体のフィルターに追加します。
+スパム フィルター処理を通過したメッセージを受信し、スパムまたはフィッシングとして識別されるメッセージを受信した場合、そのメッセージを Microsoft スパム分析チームおよび Microsoft Phishing Analysis チームに送信できます。 アナリストはメッセージを確認し、分類条件に一致する場合はサービス全体のフィルターに追加します。
 
-1. 次のいずれかの受信者を使用して、新しい空の電子メールメッセージを作成します。
+1. 空の電子メール メッセージを作成し、次の受信者のいずれかを設定します。
 
-   - **迷惑メール**:`junk@office365.microsoft.com`
+   - **迷惑メール**: `junk@office365.microsoft.com`
 
-   - **フィッシング**:`phish@office365.microsoft.com`
+   - **フィッシング**: `phish@office365.microsoft.com`
 
-2. 迷惑メールまたはフィッシングメッセージを新しいメッセージにドラッグアンドドロップします。 これにより、迷惑メールまたはフィッシングメッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
+2. 迷惑メールまたはフィッシング メール メッセージを新しいメッセージにドラッグ アンド ドロップします。 これにより、迷惑メールまたはフィッシングのメッセージが新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしてはいけません (メッセージのヘッダーを検かけ出すには、元のメッセージが必要です)。
 
    > [!NOTE]
    >
-   > - 新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージの種類が同一であることを確認してください。フィッシングメッセージと迷惑メールメッセージのいずれかです。
+   > - 新しいメッセージ内の複数のメッセージを添付することができます。 すべてのメッセージの種類が同一であること (フィッシング メッセージか迷惑メール メッセージのどちらか) を確認します。
    >
    > - 新しいメッセージの本文は空のままにします。
    >
-   > - 添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。
+   > - 添付されたメッセージには, .msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web 形式) 形式のいずれかを使用します。
 
-3. 完了したら、[**送信**] をクリックします。
+3. 完了したら、[送信] を **クリックします**。
 
 > [!TIP]
-> 管理者は、スパムとして misidentified されている特定のメッセージをブロックするいくつかの方法を用意しています。 詳細については、「 [EOP でブロックされる送信者のリストを作成する](create-block-sender-lists-in-office-365.md)」を参照してください。
+> 管理者は、スパムとして識別されていない特定のメッセージをブロックするためのいくつかの方法を利用できます。 詳細については、「EOP でブロック [する送信者リストを作成する」を参照してください](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="submit-false-positives-to-microsoft"></a>誤検知を Microsoft に送信する
 
 > [!TIP]
-> 次の手順を使用して誤検知を報告するのではなく、Outlook および web 上の Outlook のユーザーは Microsoft Outlook 用のレポートメッセージアドインを使用できます。 このツールをインストールして使用する方法については、「[レポートメッセージアドインを有効](enable-the-report-message-add-in.md)にする」を参照してください。
+> 以下の手順を使用して誤検知を報告する代わりに、Outlook や Outlook on the web のユーザーは Microsoft Outlook のメッセージ報告アドインを使用できます。 このツールをインストールして使用する方法については、「レポート [メッセージ アドインを有効にする」を参照してください](enable-the-report-message-add-in.md)。
 
-メッセージが誤ってスパムとして識別された場合は、メッセージを Microsoft スパム分析チームに送信できます。 アナリストはメッセージを評価し、(分析の結果に応じて) サービス全体のフィルターを調整して、メッセージを通過できるようにすることができます。
+メッセージが誤ってスパムとして識別された場合は、Microsoft スパム分析チームに送信することができます。 アナリストはメッセージを評価し、このメッセージが許可される場合はサービス全体のフィルターを調整できます。
 
-1. 受信者としての新しい空の電子メールメッセージを作成し `not_junk@office365.microsoft.com` ます。
+1. 受信者として新しい空のメール メッセージ `not_junk@office365.microsoft.com` を作成します。
 
-2. Misidentified メッセージを新しいメッセージにドラッグアンドドロップします。 これにより、misidentified メッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
+2. 識別されていないメッセージを新しいメッセージにドラッグ アンド ドロップします。 これにより、識別されていないメッセージが新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしてはいけません (メッセージのヘッダーを検かけ出すには、元のメッセージが必要です)。
 
    > [!NOTE]
    >
-   > - 新しいメッセージに複数のメッセージを添付することができます。 すべてのメッセージの種類が同一であることを確認してください。フィッシングメッセージと迷惑メールメッセージのいずれかです。
+   > - 新しいメッセージ内の複数のメッセージを添付することができます。 すべてのメッセージの種類が同一であること (フィッシング メッセージか迷惑メール メッセージのどちらか) を確認します。
    >
    > - 新しいメッセージの本文は空のままにします。
    >
-   > - 添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。
+   > - 添付されたメッセージには, .msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web 形式) 形式のいずれかを使用します。
 
-3. 完了したら、[**送信**] をクリックします。
+3. 完了したら、[送信] を **クリックします**。
 
 > [!TIP]
-> 管理者は、特定のメッセージがスパムフィルタリングをスキップできるようにするいくつかの方法があります。 詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
+> 管理者は、特定のメッセージにスパム フィルターをスキップするさまざまな方法を用いることができます。 詳細については、「EOP で差 [出人セーフ リストを作成する」を参照してください](create-safe-sender-lists-in-office-365.md)。
 
-## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Microsoft に報告されたメッセージのコピーを受信するためのメールフロールールを作成する
+## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Microsoft に報告されたメッセージのコピーを受信するメール フロー ルールを作成する
 
-手順については、「[メールフロールールを使用して、ユーザーが Microsoft に報告する内容を確認する」を](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)参照してください。
+手順については、「メール フロー [ルールを使用して、ユーザーが Microsoft に報告する内容を参照する」を参照してください](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)。

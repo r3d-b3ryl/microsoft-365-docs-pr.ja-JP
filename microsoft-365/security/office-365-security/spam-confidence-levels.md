@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,36 +17,36 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) のメッセージに適用されるスパム信頼レベル (SCL) について学ぶことができます。
-ms.openlocfilehash: 7e8d706f89c5b16bd34ad074498e011dc5d74093
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+description: 管理者は、Exchange Online Protection (EOP) のメッセージに適用される Spam Confidence Level (SCL) について学習できます。
+ms.openlocfilehash: 44687b8234e38e7f818aee908d1b65f382c908fe
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656541"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827399"
 ---
-# <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼度 (SCL)
+# <a name="spam-confidence-level-scl-in-eop"></a>EOP の Spam Confidence Level (SCL)
 
-Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、受信メッセージは EOP のスパムフィルタリングを通過し、スパムスコアが割り当てられます。 このスコアは、X ヘッダー内のメッセージに追加される個々のスパム信頼レベル (SCL) にマップされます。 SCL が高いほど、メッセージがスパムである可能性が高いことを示します。 EOP は、SCL に基づいてメッセージに対してアクションを実行します。
+Exchange Online にメールボックスを含む Microsoft 365 組織や、Exchange Online メールボックスを使用しないスタンドアロン Exchange Online Protection (EOP) 組織では、受信メッセージは EOP のスパム フィルタリングを通過し、スパム スコアが割り当てられます。 そのスコアは、X ヘッダー内のメッセージに追加される個々の Spam Confidence Level (SCL) にマップされます。 SCL が高いと、メッセージがスパムである可能性が高いことを示します。 EOP は SCL に基づいてメッセージに対してアクションを実行します。
 
-SCL の意味と、メッセージに対して実行される既定のアクションについて、次の表で説明します。 スパムフィルター verdict に基づいてメッセージに対して実行できるアクションの詳細については、「 [EOP でスパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
+メッセージに対して実行される SCL の意味と既定のアクションについて、以下の表で説明します。 スパム フィルターの確認に基づいてメッセージに対して実行できるアクションの詳細については [、「EOP でスパム対策ポリシーを構成する」を参照してください](configure-your-spam-filter-policies.md)。
 
 ****
 
 |SCL|定義|既定のアクション|
 |:---:|---|---|
-|-1|メッセージは、スパムフィルター処理をスキップしました。 たとえば、メッセージが差出人セーフリストから送信された、または宛先セーフリストに送信された、または IP 許可一覧にある電子メールソースサーバーのメッセージである場合です。 詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。|受信者の受信トレイにメッセージを配信します。|
-|0, 1|スパムフィルターは、メッセージがスパムではないことを確認しました。|受信者の受信トレイにメッセージを配信します。|
-|5, 6|メッセージが**スパム**としてマークされたスパムフィルター|受信者の迷惑メール フォルダーにメッセージを配信します。|
-|9 |スパムフィルターがメッセージを**高信頼スパム**としてマークしました|受信者の迷惑メール フォルダーにメッセージを配信します。|
+|-1|メッセージはスパム フィルター処理をスキップしました。 たとえば、メッセージが差出人セーフ リストから差出人セーフに送信されたか、または IP 許可一覧のメール送信元サーバーからのメッセージである場合です。 詳細については、「EOP で差出 [人セーフ リストを作成する」を参照してください](create-safe-sender-lists-in-office-365.md)。|受信者の受信トレイにメッセージを配信します。|
+|0, 1|スパム フィルターが、メッセージがスパムでないと判断しました。|受信者の受信トレイにメッセージを配信します。|
+|5, 6|スパム フィルターがメッセージをスパムとしてマーク **した**|受信者の迷惑メール フォルダーにメッセージを配信します。|
+|9 |スパム フィルター処理によってメッセージが **信頼度が高いスパムとしてマークされた**|受信者の迷惑メール フォルダーにメッセージを配信します。|
 |
 
-SCL 2、3、4、7、および8は、スパムフィルター処理によって使用されていないことがわかります。
+SCL 2、3、4、7、8 はスパム フィルター処理により使用されていない場合に確認できます。
 
-メールフロールール (トランスポートルールとも呼ばれます) を使用して、メッセージに SCL をスタンプすることができます。 メールフロールールを使用して SCL を設定する場合は、5または6の値によって**スパムに対するスパム**フィルター処理がトリガーされ、**精度の高いスパム**に対しては7、8、または9の値がスパムフィルター処理をトリガーします。 詳細については、「[メールフロールールを使用してメッセージにスパム信頼レベル (SCL) を設定する](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)」を参照してください。
+メール フロー ルール (別名トランスポート ルール) は、メッセージに SCL をスタンプするために使用できます。 メール フロー ルールを使用して SCL を設定する場合、値 5 または 6 は **Spam**に対してスパム フィルター処理をトリガーし、7、8、9 のいずれかの値によって高信頼スパムに対するスパム フィルター **処理がトリガーされます**。 詳細については、「メール フロー [ルールを使用して、メッセージの Spam Confidence Level (SCL) を設定する」を参照してください](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
-SCL と同じように、バルク苦情レベル (BCL) は、不適切なバルクメール (_灰色のメール_) を特定します。 上位の BCL は、バルクメールメッセージが苦情を生み出している可能性が高いことを示します (したがって、スパムである可能性が高くなります)。 「スパム対策ポリシー」で、BCL のしきい値を構成します。 詳細については、「 [EOP のスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」、「 [EOP でのバルク苦情レベル (BCL)](bulk-complaint-level-values.md)」、および「[迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
+SCL と同様に、バルク アル クアマーク レベル (BCL) は、不正なバルク メール (グレー メール _とも呼ばれる) を識別します_。 BCL が高い場合、バルク メール メッセージが不合を不用意にする可能性が高いことを示します (したがって、スパムである可能性が高くなります)。 スパム対策ポリシーで BCL しきい値を構成します。 詳細については[、「EOP で迷惑メール対策ポリシーを構成する」、「EOP でバル](configure-your-spam-filter-policies.md)ク コントライド レベル[(BCL)」を構成して](bulk-complaint-level-values.md)[、迷惑メール](what-s-the-difference-between-junk-email-and-bulk-email.md)とバルク メールの違いを確認してください。
 
 |<!-- -->|
 |---|
-|![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される**Microsoft 365 管理者および IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。|
+|![LinkedIn Learning New ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **to Microsoft 365 の小さいアイコン** LinkedIn Learning が提供する **Microsoft 365**管理者および IT プロダッシー向けの無料のビデオ コースをご覧ください。|
