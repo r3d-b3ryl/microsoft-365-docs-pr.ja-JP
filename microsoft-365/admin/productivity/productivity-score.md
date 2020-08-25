@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101649"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868857"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -42,9 +42,9 @@ ms.locfileid: "45101649"
 
     ユーザーがオンラインで作業するときには時間を節約できるため、このような洞察が提供されます。 任意のデバイスで自由に作業できる場合は、より高い生産性と満足度が得られます。 柔軟な方法で通信できる場合は、より効率的で、より優れた関係が得られ、組織がより統合されます。 エビデンスについては、「 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)」を参照してください。
 
-- **テクノロジの実績:** 生産性は、信頼性とパフォーマンスの高いテクノロジに加えて、Microsoft 365 を効率的に使用することによっても異なります。 エンドポイント分析が提供されています。これにより、デバイスのセットアップと起動の時間についての洞察と推奨事項が提供され、組織に対して Microsoft 365 network connectivity insights が提供されます。
+- **テクノロジの実績:** 生産性は、信頼性とパフォーマンスの高いテクノロジに加えて、Microsoft 365 を効率的に使用することによっても異なります。 [エンドポイント分析](https://aka.ms/endpointanalytics)を提供することで、エンドポイントのハードウェアとソフトウェアのパフォーマンスと正常性の問題によってユーザーの生産性がどのような影響を受け、修復するために推奨される処置を提供できるかを理解するのに役立つ情報を提供します。さらに、組織に Microsoft 365 network connectivity insights を提供しています。
 
-エンドポイント分析の詳細については、「[ネットワーク接続の概要」](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)を参照してください。
+概要と前提条件の詳細については、「 [エンドポイント分析とは](https://docs.microsoft.com/mem/analytics/overview) 」を参照してください。 Microsoft 365 network connectivity insights の詳細については、「 [ネットワーク接続の概要」](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)を参照してください。
   
 
 ## <a name="how-the-score-is-calculated"></a>スコアの計算方法
@@ -91,15 +91,15 @@ Microsoft 365 管理ホームから、[**レポート**の  >  **生産性スコ
 
 ![生産性スコアのホームページ](../../media/pslanding.png)
 
-**得点**は、ポイント (分子) と最大可能なポイント (分母) を表示できるように、パーセント値として表示されます。
+**得点** は、ポイント (分子) と最大可能なポイント (分母) を表示できるように、パーセント値として表示されます。
 
-**ピアベンチマーク**を使用すると、自分のスコアを自分のような組織と比較することができます。 従業員の experience カテゴリの場合、ピアベンチマーク測定値は、同様の組織のセット内のメジャーの平均として計算されます。 このセットは、ライセンスが付与されたユーザーの数、ライセンス、業界、tenure の種類がある、地域内の組織で構成されています (Microsoft 365 を使用)。 
+**ピアベンチマーク** を使用すると、自分のスコアを自分のような組織と比較することができます。 従業員の experience カテゴリの場合、ピアベンチマーク測定値は、同様の組織のセット内のメジャーの平均として計算されます。 このセットは、ライセンスが付与されたユーザーの数、ライセンス、業界、tenure の種類がある、地域内の組織で構成されています (Microsoft 365 を使用)。 
 
 Endpoint analytics ピアベンチマークには、すべてのテナントでの集約された中央値に基づいた、デバイスの起動パフォーマンスおよび推奨されるソフトウェア構成のターゲットが含まれています。
 
 ネットワーク接続の場合、推奨されるベンチマークは80ポイントです。
 
-「 **Score 降伏**」セクションには、従業員とテクノロジの experience 分野によるベンチマークと共に、生産性スコアの内訳が表示されます。
+「 **Score 降伏** 」セクションには、従業員とテクノロジの experience 分野によるベンチマークと共に、生産性スコアの内訳が表示されます。
 
 スコア履歴では、各カテゴリのスコアが過去6か月にどのように変化したかが表示されます。
 
@@ -153,4 +153,4 @@ Office ファイルを1人のユーザーが作成して共有した後、少な
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
-生産性スコアに関する考えと、改善方法に関するアイデアを共有してください。 製品内の**フィードバック**セクションを使用して、ProductivityScorePreview@service.microsoft.com の生産性スコアチームに連絡します。
+生産性スコアに関する考えと、改善方法に関するアイデアを共有してください。 製品内の **フィードバック** セクションを使用して、ProductivityScorePreview@service.microsoft.com の生産性スコアチームに連絡します。

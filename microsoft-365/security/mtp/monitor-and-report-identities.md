@@ -15,16 +15,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e884e6fc67670f25e48747324c15b158cc5c284
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7b29e91527f4c9cf6fd466ef730c9c4e9552b10e
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034036"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866885"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでの id の監視とレポート
 
-組織内の id を監視し、疑わしいまたは危険な動作を追跡することができます。 **レポート**の [ **id** ] カテゴリでは、次のものを追跡できます。
+組織内の id を監視し、疑わしいまたは危険な動作を追跡します。 **レポート**の [ **id** ] カテゴリでは、次のものを追跡できます。
 
 * 異常が最も多く検出されたユーザー
 * 条件付きアクセス ポリシーによって危険性が高いと報告されたユーザーの数

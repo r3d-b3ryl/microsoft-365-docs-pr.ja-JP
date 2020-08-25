@@ -17,79 +17,73 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: ユーザーが Microsoft 365 セキュリティ/コンプライアンス センターでのアクセス許可を割り &当てないと、そのセキュリティまたはコンプライアンス機能を管理できません。
+description: ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、Microsoft 365 セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d21fef9458c02bd09d6d5ce2129b95571e0f8371
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826603"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868923"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
-ユーザーは、自分のいずれかのセキュリティまたはコンプライアンス機能を管理&、セキュリティ コンプライアンス センターでアクセス許可を割り当てる必要があります。 グローバル管理者またはセキュリティ コンプライアンス センターの [組織の管理] 役割グループ &のメンバーは、ユーザーにこれらの許可を付与できます。 ユーザーが管理できるのは、アクセス権が付与されたセキュリティまたはコンプライアンスの機能のみです。
+ユーザーがセキュリティまたはコンプライアンス機能を管理する前に、セキュリティ & コンプライアンスセンターでアクセス許可を割り当てる必要があります。 セキュリティ & コンプライアンスセンターでは、組織の全体管理者または組織のメンバーとして、これらのアクセス許可をユーザーに与えることができます。 ユーザーが管理できるのは、アクセス権が付与されたセキュリティまたはコンプライアンスの機能のみです。
 
-ユーザーに付与できるさまざまなアクセス許可の詳細については、セキュリティ/コンプライアンス センター& [&確認してください](permissions-in-the-security-and-compliance-center.md)。
+セキュリティ & コンプライアンスセンターでユーザーに付与できるさまざまなアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンターでアクセス許可](permissions-in-the-security-and-compliance-center.md)を確認する」を参照してください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- この記事の手順を実行するには、グローバル管理者か、セキュリティ & コンプライアンス センターの組織の管理役割グループのメンバーである必要があります。
+- この記事に記載されている手順を完了するには、グローバル管理者であるか、またはセキュリティ & コンプライアンスセンターの組織の組織の管理役割グループのメンバーである必要があります。
 
-- セキュリティ コンプライアンス センターの役割グループ&、Exchange Online の役割グループと名前が似ていますが、同じです。
+- セキュリティ & コンプライアンスセンターの役割グループには、Exchange Online の役割グループと同じような名前が付いている場合がありますが、これらは同じではありません。
 
-- 役割グループのメンバーシップは、Exchange Online とセキュリティ コンプライアンス センターの間&されません。
+- 役割グループのメンバーシップは、Exchange Online とセキュリティ & コンプライアンスセンターとの間で共有されません。
 
-- 委任アクセス許可 (AOBO) アクセス許可を持つ委任アクセス許可 (DAP) パートナーは、コンプライアンス センターのセキュリティ &にアクセスできません。
+- (AOBO) 権限を持つ代理アクセス許可 (DAP) パートナーは、セキュリティ & コンプライアンスセンターにアクセスできません。
 
-## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>管理センターを使用して、セキュリティ センターとコンプライアンス センターへのアクセス&許可する
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターを使用して、別のユーザーにセキュリティ & コンプライアンスセンターへのアクセス権を付与する
 
-1. [サインインして管理センターに移動します](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center)。
+1. [セキュリティ & コンプライアンスセンター] を開き、 <https://protection.office.com> [ **アクセス許可**] に移動します。 [ **アクセス許可** ] タブに直接移動するには、を開き <https://protection.office.com/permissions> ます。
 
-2. Microsoft 365 管理センターで、[管理センター **] を開き、[** セキュリティ]、[ **コンプライアンス&します**。
+2. 役割グループの一覧から役割グループを選択し、[編集] 編集アイコン **をクリックし** ![ ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) ます。
 
-3. セキュリティ/コンプライアンス センター&アクセス許可に移動 **します**。
+3. 役割グループのプロパティページの [**メンバー**] で、 **[追加** ![ ] アイコンをクリックし、 ](../../media/ITPro-EAC-AddIcon.gif) 追加するユーザーの名前を選択します。
 
-4. 一覧から、ユーザーを追加する役割グループを選択し、[編集] アイコン **を** ![ クリックします ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) 。
+4. 役割グループに追加するすべてのユーザーを選択したら、[ ** \> 追加**] をクリックし、[ **OK]** をクリックします。
 
-5. [**メンバー**の追加] の役割グループのプロパティ ページで、[**追加** ![ ] アイコン ](../../media/ITPro-EAC-AddIcon.gif) をクリックし、追加するユーザーの名前を 1 つまたは複数選択します。
+5. 完了したら、**[保存]** をクリックします。
 
-6. 役割グループに追加するユーザーをすべて選択したら、[追加] をクリックしてから **[OK] \> **を**クリックします**。
-
-7. **[保存]** をクリックして、役割グループに加えた変更を保存します。
-
-### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
-
-1. セキュリティ/コンプライアンス センター&アクセス許可に移動 **します**。
-
-2. 一覧から、メンバーを表示する役割グループを選択します。
-
-3. 右側の役割グループの詳細に、役割グループのメンバーを表示することができます。
-
-## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>PowerShell を使用して、セキュリティ/コンプライアンス センターへのアクセス権を別&付与する
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターの PowerShell を使用して、別のユーザーがセキュリティ & コンプライアンスセンターにアクセスできるようにする
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-2. 次の例で示すように、**Add-RoleGroupMember** コマンドを使用して、ユーザーを Organization Management の役割に追加できます。
+2. 次の構文を使用してください。
+
+   ```powershell
+   Add-RoleGroupMember -Identity <RoleGroup> -Member <UserIdentity>
+
+   - _Identity_ is the role group.
+   - _Member_ is the user or universal security group (USG). You can specify only one member at a time.
+
+   This example adds MatildaS to the Organization Management role group.
 
    ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-   **パラメーター**:
-
-   - _Identity_ は、メンバーを追加する役割グループです。
-
-   - _メンバー_ は、役割グループに追加するメールボックス、ユニバーサル セキュリティ グループ (USG)、またはコンピューターです。 一度に 1 メンバーしか指定できません。
-
-構文およびパラメーターの詳細については [、「Add-RoleGroupMember」を参照してください](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember)。
+構文およびパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember) 」を参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-ユーザーにセキュリティ & コンプライアンス センターへのアクセス権を付与したことを確認するには、 **次の例のように、Get-RoleGroupMember** コマンドレットを使用して組織管理役割グループのメンバーを表示します。
+セキュリティ & コンプライアンスセンターへのアクセスが正常に付与されたことを確認するには、次のいずれかの手順を実行します。
 
-```PowerShell
-Get-RoleGroupMember -Identity "Organization Management"
-```
+- [セキュリティ & コンプライアンスセンター] で、[ **アクセス許可** ] に移動して役割グループを選択します。 表示される詳細ポップアップで、役割グループのメンバーを確認します。 
 
-構文およびパラメーターの詳細については [、「Get-RoleGroupMember」を参照してください](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)。
+- セキュリティ & コンプライアンスセンターの PowerShell で、を \<RoleGroupName\> 役割グループの名前に置き換えて、次のコマンドを実行します。
+
+  ```powershell
+  Get-RoleGroupMember -Identity "<RoleGroupName>"
+  ```
+
+  構文およびパラメーターの詳細については、「 [add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)」を参照してください。

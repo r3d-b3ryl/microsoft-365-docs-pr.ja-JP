@@ -15,66 +15,66 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Exchange Online Protection (EOP) でのスプーフィング対策保護に関してよく寄せられる質問と回答を表示できます。
-ms.openlocfilehash: 66dbedaf638154c4a35359a4e5bc66c326c04d1e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: 管理者は、Exchange Online Protection (EOP) のスプーフィング対策保護についてよく寄せられる質問と回答を参照できます。
+ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826675"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867141"
 ---
 # <a name="anti-spoofing-protection-faq"></a>スプーフィング対策保護に関する FAQ
 
-このトピックでは、Exchange Online メールボックスを使用している Microsoft 365 組織または Exchange Online メールボックスを使用していないスタンドアロン Exchange Online Protection (EOP) 組織向けのスプーフィング対策保護に関するよく寄せられる質問と回答について取り上示します。
+この記事では、exchange Online のメールボックスを使用する Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織に対するスプーフィング対策保護に関するよく寄せられる質問と回答について説明します。
 
-スパム対策保護に関する質問と回答については、「スパム対策保護 [のよく寄せられる質問」を参照してください](anti-spam-protection-faq.md)。
+スパム対策保護に関する質問と回答については、「 [スパム対策保護](anti-spam-protection-faq.md)に関する FAQ」を参照してください。
 
-マルウェア対策保護に関する質問と回答については、「マルウェア対策保護 [」に関してよく寄せられる質問を参照してください。](anti-malware-protection-faq-eop.md)
+マルウェア対策保護に関する質問と回答については、「[マルウェア対策保護](anti-malware-protection-faq-eop.md)に関する faq」を参照してください。
 
-## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Microsoft が認証されていない受信メールを迷惑メールとして選択したのはなぜですか?
+## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Microsoft が認証されていない受信メールを選択したのはなぜですか?
 
-フィッシング攻撃の影響により、15 年以上前から電子メール認証が行われたため、Microsoft は認証されていない受信電子メールを許可するリスクが、合当の受信メールを失う危険性よりも高いと考えています。
+Microsoft は、認証されていない受信メールを引き続き許可するリスクが正当な受信電子メールを失うリスクよりも高いと考えています。
 
-## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>迷惑メールの受信メールに対して、問題があるメールはスパムとしてマークされますか?
+## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Junking 認証されていない受信電子メールによって正当な電子メールがスパムとしてマークされるのか。
 
-Microsoft が 2018 年にこの機能を有効にすると、一部の誤検知が発生しました (有用なメッセージは無効なマークになりました)。 しかし、時間の過とおり、送信者は新しい送信者認証の要件を満たすと調整され、多くのメール パスでスプーフィングされたと識別されなかったメッセージの数も調整されました。
+Microsoft が2018でこの機能を有効にすると、誤検知が発生しました (良好なメッセージが不良としてマークされた)。 しかし、時間の経過により、送信者は要件に合わせて調整されています。 多くの電子メールパスでは、スプーフィングとして misidentified されたメッセージ数は無視されました。
 
-Microsoft はまず、新しいメール認証要件を数週間前に導入してからお客様に展開しました。 最初のうちは混乱もありましたが、それも次第に収まりました。
+Microsoft は、お客様への展開を開始する前に、新しい電子メール認証要件を数週間、初めて採用しています。 最初のうちは混乱もありましたが、それも次第に収まりました。
 
-## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>スプーフィング インテリジェンスは ATP なしで Microsoft 365 のお客様が利用できますか?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>ATP がない場合、Microsoft 365 のお客様はスプーフィングインテリジェンスを利用できますか?
 
-はい。 2018 年 10 月の後、スプーフィング インテリジェンスは Exchange Online のメールボックスを持つすべての組織、Exchange Online メールボックスを持たないスタンドアロン EOP 組織で利用できます。
+はい。 2018年10月の時点で、Exchange Online にメールボックスを持つすべての組織と、Exchange Online メールボックスがないスタンドアロン EOP 組織では、スプーフィングインテリジェンスを使用できます。
 
-スプーフィング対策テクノロジは、Office 365 Enterprise E5 サブスクリプションまたは Office 365 Advanced Threat Protection (Office 365 ATP) アドオンをサブスクリプション用に取得した組織にのみ展開されました。
+初期段階では、Office 365 Advanced Threat Protection でのみ、スプーフィング対策テクノロジを利用できました。 たとえば、Microsoft E5 サブスクリプションまたは ATP アドオンがあります。
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>スパムまたは非スパムのメッセージについて、どのように Microsoft に報告すればよいですか
 
 「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-## <a name="im-an-admin-and-i-dont-know-all-of-sources-for-messages-in-my-email-domain"></a>管理者ですが、メール ドメイン内のメッセージのすべての送信元がわかっているわけだりません。
+## <a name="im-an-admin-and-i-dont-know-all-of-sources-for-messages-in-my-email-domain"></a>自分が管理者であり、電子メールドメイン内のメッセージのソースがすべてわからない。
 
-メール [のすべての送信元がわからない場合に見てください](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email)。
+「 [電子メールのすべてのソースがわからない」を](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email)参照してください。
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>組織のスプーフィング対策保護を無効にした場合はどうなりますか?
 
-これについては、お勧めできません。より多くの見逃されたフィッシング メッセージやスパム メッセージにさらされるようになります。 すべてのフィッシングがスプーフィングであるわけでなく、すべてのスプーフィングが見逃されるわけでもありません。 ただし、スプーフィング対策を有効にしているお客様よりもリスクは高くなります。
+スプーフィング対策保護を無効にすることはお勧めしません。 保護を無効にすると、組織内でより多くのフィッシングおよびスパムメッセージが配信されるようになります。 すべてのフィッシングがスプーフィングされるわけではなく、すべてのスプーフィングされたメッセージが失われるわけではありません。 ただし、リスクは高くなります。
 
-コネクタの [拡張フィルターが使用可能になった](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) ため、MX レコードが EOP にメールを配信する前に別のサーバーまたはサービスをポイントしている場合、スプーフィング対策保護を無効にしておくことをお勧めしません。
+これで [コネクタのフィルター処理が拡張](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) されたので、EOP 前に他のサービスを経由してメールをルーティングするときに、スプーフィング対策保護を無効にすることはお勧めしません。
 
-## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>スプーフィング対策保護とは、すべてのフィッシングから保護されるという意味ですか?
+## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>スプーフィング対策保護は、すべてのフィッシングから保護されることを意味しますか?
 
-残り、いいえ、 攻撃者は、他の方法 (侵害されたアカウントや無料のメール サービスのアカウントなど) を使用するのを受け入れます。 ただし、フィッシング対策保護は、この他の種類のフィッシング方法を検出するほうが優れていません。 EOP では保護層が連携して機能し、積み重ねて動作します。
+残念ですが、ありません。 攻撃者は、他の手法 (たとえば、無料の電子メールサービスのアカウントやアカウントなど) を使用するために適応します。 ただし、フィッシング対策保護は、これらの他の種類のフィッシング方法を検出する方がはるかに優れています。 EOP の保護レイヤーは相互に連携して設計されており、互いに重ねて構築されています。
 
-## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>他の大規模な電子メール サービスは認証されていない受信メールをブロックしますか。
+## <a name="do-other-large-email-services-block-unauthenticated-inbound-email"></a>その他の大規模な電子メールサービスは、認証されていない受信メールをブロックするか
 
-大規模な電子メール サービスには、従来の SPF、DKIM、および DMARC のチェックが実装されています。 一部のサービスには、さらに複雑なチェックが他に含まれますが、認証されていないメールをブロックし、スプーフィングされたメッセージとして処理する EOP にはあくまで少しありません。 ただし、このこの情報の方は、特にフィッシングの問題のため、認証されていない電子メールの問題をより多く認識しています。
+ほぼすべての大規模な電子メールサービスは、従来の SPF、DKIM、DMARC のチェックを実装しています。 一部のサービスでは、他の厳密なチェックが行われますが、認証されていない電子メールをブロックし、それらをスプーフィングされたメッセージとして処理することはほとんどありません EOP。 しかし、特にフィッシングの問題により、認証されていない電子メールに関する問題について、業界はより多くの情報を把握してきています。
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>スプーフィング対策を有効にした場合でも、高度なスパム フィルターの設定「SPF レコード: Hard_Fail」(MarkAsSpamSpfRecordHardFail)_ を有効にする必要がありますか?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>まだスプーフィング対策を有効にしている場合は、高度なスパムフィルター設定 "SPF レコード: hard fail" (_MarkAsSpamSpfRecordHardFail_) を有効にする必要がありますか?
 
-いいえ。 スプーフィング対策では SPF Hard Fail を考慮するだけでなく、それほど広範囲な条件のセットが考慮され、この ASF 設定は不要になりました。 スプーフィング対策を有効にしているときに、**SPF レコード: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) も有効にすると、誤検出が多くなる可能性があります。
+いいえ。 この ASF 設定は不要になりました。 スプーフィング対策保護では、SPF に障害が発生した場合と、非常に幅広い条件セットがあると見なされます。 スプーフィング対策を有効にしているときに、**SPF レコード: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) も有効にすると、誤検出が多くなる可能性があります。
 
-スパムやフィッシング メッセージを検出する追加のメリットをほとんどなく、多くの場合誤検出が発生するので、この機能を無効にすることをお勧めします。 詳細については [、EOP の高度なスパム フィルター (ASF) の設定を参照してください](advanced-spam-filtering-asf-options.md)。
+この機能を無効にすることをお勧めします。これにより、スパムやフィッシングメッセージを検出するための追加のメリットはほとんど提供されず、その代わりに、ほとんどが誤検知を生成することになります。 詳細については、「 [Advanced Spam Filter (ASF) settings IN EOP](advanced-spam-filtering-asf-options.md)」を参照してください。
 
-## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>送信者書き換えスキームは転送される電子メールの修正に役立ちますか?
+## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>送信者の書き換えスキームは転送された電子メールの修正に役立ちますか?
 
-SRS は転送された電子メールの問題を部分的にしか解決しません。 SMTP MAIL FROM を書き **換え**ることで、SRS では転送されたメッセージが次の宛先で SPF をパスするようにできます。 ただし、スプーフィング対策は**MAIL FROM、DKIM**署名ドメイン (またはその他のシグナル) と組み合わせた From アドレスに基づけられているため、SRS 転送された電子メールにスプーフィングのマークが付けられることを防止する十分な数ではありません。 **From**
+SRS は転送された電子メールの問題を部分的にしか解決しません。 SMTP **メールをから**再書き込みすることで、SRS は転送されたメッセージが次の宛先に SPF を通過することを保証できます。 ただし、スプーフィング対策は、 **差出人** アドレスと (または他の信号の) **from** または dkim 署名ドメイン (またはその他の信号) との組み合わせに基づいているため、SRS で転送された電子メールがスプーフィングとしてマークされることを防ぐだけではありません。
