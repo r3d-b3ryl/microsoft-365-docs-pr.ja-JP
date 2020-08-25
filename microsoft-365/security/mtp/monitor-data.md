@@ -15,22 +15,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9bb0a7d0ce7def52089ec64a35edc5a2475b342
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79113aa4097da26a3a12a9ed99b1c5a8b3ad3d81
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034012"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866745"
 ---
-# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a><span data-ttu-id="23991-104">Microsoft 365 セキュリティセンターでのデータの監視とレポート</span><span class="sxs-lookup"><span data-stu-id="23991-104">Data monitoring and reporting in the Microsoft 365 security center</span></span>
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a><span data-ttu-id="10392-104">Microsoft 365 セキュリティセンターでのデータの監視とレポート</span><span class="sxs-lookup"><span data-stu-id="10392-104">Data monitoring and reporting in the Microsoft 365 security center</span></span>
 
-<span data-ttu-id="23991-105">**データ** カテゴリは、無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するために役立ちます。</span><span class="sxs-lookup"><span data-stu-id="23991-105">The **Data** category helps track user activity that could lead to unauthorized data disclosure.</span></span> <span data-ttu-id="23991-106">既存の DLP ポリシーレポートの再作成と、サードパーティの DLP ポリシー一致レポートの再作成があります。</span><span class="sxs-lookup"><span data-stu-id="23991-106">These are the rework of existing DLP policy reports plus a third-party DLP policy match report.</span></span>
+<span data-ttu-id="10392-105">**データ** カテゴリは、無許可のデータ開示につながる可能性のあるユーザー アクティビティを追跡するために役立ちます。</span><span class="sxs-lookup"><span data-stu-id="10392-105">The **Data** category helps track user activity that could lead to unauthorized data disclosure.</span></span> <span data-ttu-id="10392-106">既存の DLP ポリシーレポートの再作業と、サードパーティの DLP ポリシー一致レポートを作成します。</span><span class="sxs-lookup"><span data-stu-id="10392-106">They are the rework of existing DLP policy reports plus a third-party DLP policy match report.</span></span>
 
-<span data-ttu-id="23991-107">次のことがわかります。</span><span class="sxs-lookup"><span data-stu-id="23991-107">You can see:</span></span>
+<span data-ttu-id="10392-107">次のことがわかります。</span><span class="sxs-lookup"><span data-stu-id="10392-107">You can see:</span></span>
 
-* <span data-ttu-id="23991-108">クラウド アプリから最も多くファイルを共有しているユーザー</span><span class="sxs-lookup"><span data-stu-id="23991-108">Users who share the most files from cloud apps</span></span>
-* <span data-ttu-id="23991-109">一致した DLP ポリシーの数</span><span class="sxs-lookup"><span data-stu-id="23991-109">How many DLP policy matches occurred</span></span>
-* <span data-ttu-id="23991-110">DLP ポリシーの上書きの数または報告された誤検出の数</span><span class="sxs-lookup"><span data-stu-id="23991-110">How many DLP policies overrides or false positives are reported</span></span>
-* <span data-ttu-id="23991-111">Microsoft Cloud App Security を介してサードパーティのクラウドサービスで発生した DLP ポリシーの一致数</span><span class="sxs-lookup"><span data-stu-id="23991-111">How many DLP policy matches happened in 3rd party cloud services via Microsoft Cloud App Security</span></span>
+- <span data-ttu-id="10392-108">クラウド アプリから最も多くファイルを共有しているユーザー</span><span class="sxs-lookup"><span data-stu-id="10392-108">Users who share the most files from cloud apps</span></span>
+- <span data-ttu-id="10392-109">一致した DLP ポリシーの数</span><span class="sxs-lookup"><span data-stu-id="10392-109">How many DLP policy matches occurred</span></span>
+- <span data-ttu-id="10392-110">DLP ポリシーの上書きの数または報告された誤検出の数</span><span class="sxs-lookup"><span data-stu-id="10392-110">How many DLP policies overrides or false positives are reported</span></span>
+- <span data-ttu-id="10392-111">Microsoft Cloud App Security を介してサードパーティ製のクラウドサービスで発生した DLP ポリシーの一致数</span><span class="sxs-lookup"><span data-stu-id="10392-111">How many DLP policy matches happened in third-party cloud services via Microsoft Cloud App Security</span></span>
 
 ![レポートページのデータカテゴリ](../../media/data.png)
