@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: セキュリティ/コンプライアンス センターのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 36cf04722b13f3d1033ddae54e32307497d9194b
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127162"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860734"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートの概要
 
@@ -146,7 +146,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
   
  **ネットワーク アップロードはどこで利用できますか?**
   
-現在のところ、ネットワーク アップロードは米国、カナダ、ブラジル、英国、フランス、ドイツ、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリア、アラブ首長国連邦 (UAE) でご利用いただけます。ネットワーク アップロードはその他の地域でも間もなく利用可能になります。
+現在のところ、ネットワーク アップロードは米国、カナダ、ブラジル、英国、フランス、ドイツ、スイス、ノルウェー、欧州、インド、東アジア、東南アジア、日本、韓国、オーストラリア、アラブ首長国連邦 (UAE) でご利用いただけます。ネットワーク アップロードはその他の地域でも間もなく利用可能になります。
   
  **ネットワーク アップロードを使用して PST ファイルをインポートすると、料金はいくらですか?**
   

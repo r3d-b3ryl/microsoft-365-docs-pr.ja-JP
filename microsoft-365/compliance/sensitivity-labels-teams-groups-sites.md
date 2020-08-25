@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 849eae1c2c3153d8f17e561aa82312c95672ec04
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199627"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845745"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -32,7 +32,7 @@ ms.locfileid: "45199627"
 
 - Microsoft 365 グループに接続されているチーム サイトのプライバシー (パブリックまたはプライベート)
 - 外部ユーザーのアクセス
-- 非管理対象デバイスからのアクセス 
+- 非管理対象デバイスからのアクセス
 
 サポートされているコンテナーにこの秘密度ラベルを適用すると、分類および保護の設定が、接続されたサイトまたはグループに自動的に適用されます。
 
@@ -55,19 +55,12 @@ ms.locfileid: "45199627"
 
 1. この機能は Azure AD 機能を使用するため、Azure AD のドキュメント [「Azure Active Directory で Microsoft 365 グループに秘密度ラベルを割り当てる」](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) の指示に従い、秘密度ラベルのサポートを有効にします。
 
-2. 秘密度ラベルを Azure AD に同期することが必要になります。 まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
-    
-    たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+2. 秘密度ラベルを Azure AD に同期することが必要になります。 まず、[セキュリティ/コンプライアンス センターの PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+
+   たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
 
 3. 秘密度ラベルを Microsoft 365 グループで使用できるように、次のコマンドを実行します。
-    
+
     ```powershell
     Execute-AzureAdLabelSync
     ```
@@ -81,12 +74,12 @@ ms.locfileid: "45199627"
 この新しい [**サイトとグループの設定**] ページで、設定を構成します。
 
 - **Office 365 グループに接続されたチーム サイトのプライバシー**: このラベルが適用されているチーム サイトまたはグループに組織内の誰もがアクセスできるようにする場合は、既定の [**公開 - 組織内のすべてのユーザーがサイトにアクセスできます**] に設定します。
-    
-    組織内の承認されたメンバーのみにアクセスを制限する場合は、[**プライベート**] を選択します。
-    
-    秘密度ラベルを使用してコンテナー内のコンテンツを保護し、ユーザーが自分でプライバシー設定を構成できるようにする場合は、[**なし - ユーザーがサイトにアクセスできるユーザーを選択できるようにします**] を選択します。
-    
-    このラベルをコンテナーに適用すると、[**パブリック**] または [**プライベート**] の設定によってプライバシー設定が設定およびロックされます。 選択した設定は、チームまたはグループに構成されている可能性がある以前のプライバシー設定を置き換え、プライバシー値をロックします。これにより、コンテナーから最初に秘密度ラベルを削除することによってのみ、変更できるようになります。 秘密度ラベルを削除しても、ラベルからのプライバシー設定は維持され、ユーザーは再びラベルを変更することができます。
+
+  組織内の承認されたメンバーのみにアクセスを制限する場合は、[**プライベート**] を選択します。
+
+  秘密度ラベルを使用してコンテナー内のコンテンツを保護し、ユーザーが自分でプライバシー設定を構成できるようにする場合は、[**なし - ユーザーがサイトにアクセスできるユーザーを選択できるようにします**] を選択します。
+
+  このラベルをコンテナーに適用すると、[**パブリック**] または [**プライベート**] の設定によってプライバシー設定が設定およびロックされます。 選択した設定は、チームまたはグループに構成されている可能性がある以前のプライバシー設定を置き換え、プライバシー値をロックします。これにより、コンテナーから最初に秘密度ラベルを削除することによってのみ、変更できるようになります。 秘密度ラベルを削除しても、ラベルからのプライバシー設定は維持され、ユーザーは再びラベルを変更することができます。
 
 - **外部ユーザー アクセス**: グループの所有者が[ゲストをグループに追加](/office365/admin/create-groups/manage-guest-access-in-groups)できるかどうかを制御します。
 
@@ -96,7 +89,7 @@ ms.locfileid: "45199627"
 
 > [!IMPORTANT]
 > チーム、グループ、またはサイトにラベルを適用すると、それらのサイトとグループの設定のみが有効になります。 暗号化やコンテンツ マーキングなどのその他のラベル設定は、チーム、グループ、またはサイト内のコンテンツに適用されません。
-> 
+>
 > テナントへの段階的なロールアウト: ユーザーがチーム、グループ、サイトを作成するときに選択できるのは、サイトの設定およびグループの設定のラベルのみです。 ラベルにサイトとグループの設定が有効になっていないときに、ラベルをコンテナーに適用する場合は、ラベル名のみがコンテナーに適用されます。
 
 秘密度ラベルがまだ公開されていない場合は、[秘密度ラベル ポリシーに追加](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)して公開します。 このラベルを含む秘密度ラベル ポリシーが割り当てられているユーザーには、サイトとグループ用にそのラベルを選択できます。
@@ -114,8 +107,9 @@ ms.locfileid: "45199627"
 1. 秘密度ラベルを作成し構成したら、少数のテスト ユーザーにのみ適用されるラベル ポリシーにこのラベルを追加します。
 
 2. 変更がレプリケートされるまで待機します。
-    - 新規ラベル: 1 時間待機します。
-    - 既存のラベル: 24 時間待機します。
+
+   - 新規ラベル: 1 時間待機します。
+   - 既存のラベル: 24 時間待機します。
 
 3. この待ち時間の後、テスト ユーザー アカウントのいずれかを使用して、手順 1 で作成したラベルを持つチーム、Microsoft 365 グループ、または SharePoint サイトを作成します。
 
@@ -123,14 +117,13 @@ ms.locfileid: "45199627"
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>サイトとグループに対して構成されている発行済みのラベルを変更する
 
-ベスト プラクティスとして、秘密度ラベルを複数のチーム、グループ、またはサイトに適用した後に、ラベルのサイトとグループの設定を変更しないようにします。 この場合、ラベルが適用されているすべてのコンテナーに変更を複製されるまで 24 時間待機することを忘れないでください。 
+ベスト プラクティスとして、秘密度ラベルを複数のチーム、グループ、またはサイトに適用した後に、ラベルのサイトとグループの設定を変更しないようにします。 この場合、ラベルが適用されているすべてのコンテナーに変更を複製されるまで 24 時間待機することを忘れないでください。
 
 また、**外部ユーザーのアクセス** 設定を含む変更は、次のようになります。
 
 - 新しい設定は新しいユーザーに適用されますが、既存のユーザーには適用されません。 たとえば、この設定は以前に選択されていて、その結果、ゲスト ユーザーがサイトにアクセスした場合、この設定をラベル構成で解除した後も、これらのゲスト ユーザーはサイトにアクセスできます。
 
 - HiddenMembership および roleEnabled グループ プロパティのプライバシー設定は更新されません。
-
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>サイトとグループに対して構成されている発行済みラベルを削除する
 
@@ -161,9 +154,9 @@ ms.locfileid: "45199627"
 
 - 「[Assign a label to a new group in Azure portal (Azure ポータルの新しいグループにラベルを割り当てる)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)」
 
--  [Assign a label to an existing group in Azure portal (Azure ポータルの既存のグループにラベルを割り当てる)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
+- [Assign a label to an existing group in Azure portal (Azure ポータルの既存のグループにラベルを割り当てる)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
--  「[Remove a label from an existing group in Azure portal (Azure ポータルの既存のグループからラベルを削除する)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).」
+- 「[Remove a label from an existing group in Azure portal (Azure ポータルの既存のグループからラベルを削除する)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).」
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>新しいチームに機密ラベルを適用する
 
@@ -199,35 +192,35 @@ Outlook on the web では、新しいグループを作成するときに、公�
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>PowerShell を使用して、複数のサイトに秘密度ラベルを適用する
 
-[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) コマンドレットを使用して、現在の SharePoint Online 管理シェルの *秘密度ラベル* のパラメーターによって、多くのサイトに秘密度ラベルを適用できます。 サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
+[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) コマンドレットを使用して、現在の [SharePoint Online 管理シェル](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)の *SensitivityLabel* パラメーターによって、多くのサイトに秘密度ラベルを適用できます。 サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
 
 SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があることを確認します。
 
 1. **[管理者として実行]** オプションを使用して PowerShell セッションを開きます。
 
-2. ラベルの GUID がわからない場合、[Office 365 セキュリティ/コンプライアンス センターの PowerShellに接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)、秘密度ラベルとそれらの GUID のリストを取得します。
-    
-    ```powershell
-    Get-Label |ft Name, Guid
-    ```
+2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)、秘密度ラベルとそれらの GUID のリストを取得します。
 
-3. ここでは、[Exchange Online PowerShellに接続して](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)、ラベルの GUID を変数として保存します。 例: 
-    
-    ```powershell
-    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
-    ```
+   ```powershell
+   Get-Label |ft Name, Guid
+   ```
+
+3. ここでは、[SharePoint Online PowerShellに接続して](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)、ラベルの GUID を変数として保存します。 例:
+
+   ```powershell
+   $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
+   ```
 
 4. URL に共通の識別文字列が含まれる複数のサイトを特定する新しい変数を作成します。 例:
-    
-    ```powershell
-    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents" 
-    ```
+
+   ```powershell
+   $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
+   ```
 
 5. これらのサイトにラベルを適用するには、次のコマンドを実行します。 サンプルを使用します。
-    
-    ```powershell
-    $sites | ForEach-Object {Set-SpoTenant $_.url -SensitivityLabel $Id}
-    ```
+
+   ```powershell
+   $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
+   ```
 
 異なるサイトに異なるラベルを適用するには、各サイトで次のコマンドを繰り返します。 `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
@@ -252,30 +245,34 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 次のアプリとサービスで、サイトとグループの設定用に構成した秘密度ラベルをサポートしています。
 
 - 管理センター:
-    - SharePoint 管理センター
-    - Azure Active Directory ポータル
-    - Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、Office 365 セキュリティ/コンプライアンス センター
+
+  - SharePoint 管理センター
+  - Azure Active Directory ポータル
+  - Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、セキュリティ/コンプライアンス センター
 
 - ユーザーのアプリとサービス:
-    - SharePoint
-    - Teams
-    - Outlook on the web and for Windows、MacOS、iOS、および Android
-    - フォーム
-    - Stream
+
+  - SharePoint
+  - Teams
+  - Outlook on the web and for Windows、MacOS、iOS、および Android
+  - フォーム
+  - Stream
 
 次のアプリとサービスで、サイトとグループの設定用に構成した秘密度ラベルをサポートしています。
 
 - 管理センター:
-    - Microsoft 365 管理センター
-    - Teams 管理センター
-    - Exchange 管理センター
+
+  - Microsoft 365 管理センター
+  - Teams 管理センター
+  - Exchange 管理センター
 
 - ユーザーのアプリとサービス:
-    - Dynamics 365
-    - Yammer
-    - Planner
-    - Project
-    - PowerBI
+
+  - Dynamics 365
+  - Yammer
+  - Planner
+  - Project
+  - PowerBI
 
 ## <a name="classic-azure-ad-group-classification"></a>従来の Azure AD グループの分類
 
@@ -286,7 +283,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 これらの分類は、Azure AD PowerShell または PnP コア ライブラリを使用し、`ClassificationList` 設定に値を定義することによって構成されています。 テナントに分類値が定義されている場合は、[AzureADPreview PowerShell モジュール](https://www.powershellgallery.com/packages/AzureADPreview)から次のコマンドを実行すると、それらが表示されます。
 
 ```powershell
-   ($setting["ClassificationList"])
+($setting["ClassificationList"])
 ```
 
 古い分類を機密ラベルに変換するには、次のいずれかの操作を行います。
@@ -295,46 +292,31 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 - 新しいラベルの作成: 既存の分類と同じ名前を持つ新しい機密ラベルを作成および公開して、サイトおよびグループに必要なラベル設定を指定します。
 
-その後で以下の手順に従います。 
+その後で以下の手順に従います。
 
 1. PowerShell を使用し、既存の Microsoft 365 グループおよび SharePoint サイトに名前のマッピングを使用して秘密度ラベルを適用します。 手順については、次のセクションを参照してください。
 
 2. 既存のグループおよびサイトから古い分類を削除します。
 
-機密ラベルをまだサポートしていないアプリやサービスでユーザーが新しいグループを作成できないようにすることはできませんが、定期的な PowerShell スクリプトを実行して、ユーザーが古い分類で作成した新しいグループを探し、機密ラベルを使用するようにそれらを変換することができます。 
+機密ラベルをまだサポートしていないアプリやサービスでユーザーが新しいグループを作成できないようにすることはできませんが、定期的な PowerShell スクリプトを実行して、ユーザーが古い分類で作成した新しいグループを探し、機密ラベルを使用するようにそれらを変換することができます。
 
 サイトとグループの秘密度ラベルと Azure AD の分類の共存を管理する方法については、「[Microsoft 365 グループの Azure Active Directory の分類と秘密度ラベル](migrate-aad-classification-sensitivity-labels.md)」 を参照してください。
 
-#### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>PowerShell を使用して Microsoft 365 グループの分類を秘密度ラベルに変換する
+### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>PowerShell を使用して Microsoft 365 グループの分類を秘密度ラベルに変換する
 
-1. まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
-    
-    たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+1. まず、[セキュリティ/コンプライアンス センターの PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+
+   たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
 
 2. [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) コマンドレットを使用して、機密ラベルおよびその GUID のリストを取得します。
-    
-    ```powershell
-    Get-Label |ft Name, Guid
-    ```
+
+   ```powershell
+   Get-Label |ft Name, Guid
+   ```
 
 3. Microsoft 365 グループに適用する秘密度ラベルの GUID をメモします。
 
-4. 次に、[Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
-    
-    例:
-    
-    ```powershell
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session
-    ```
+4. ここでは、別の Windows PowerShell ウィンドウで [Exchange Online PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 5. 次のコマンドを例として使用して、現在 "一般" の分類を持つグループのリストを取得します。
 
@@ -355,15 +337,15 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 誰かが機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも[優先度が高く](sensitivity-labels.md#label-priority-order-matters)なっている場合、このアクションはブロックされません。 たとえば、「**一般**」ラベルを SharePoint サイトに適用し、誰かがこのサイトに「**社外秘**」というラベルの付けられたドキュメントをアップロードしたとします。 優先度の高い機密ラベルは、優先順位の低いコンテンツよりも機密性の高いコンテンツを識別するため、この状況はセキュリティ上の懸念になる可能性があります。
 
-アクションはブロックされていませんが、監査され、ドキュメントをアップロードした人とサイト管理者にメールが自動的に生成されます。 結果として、ユーザーと管理者の両方が、この不適切なラベルの優先順位を設定し、必要に書類を特定することができます。 たとえば、アップロードされたドキュメントをサイトから削除または移動します。 
+アクションはブロックされていませんが、監査され、ドキュメントをアップロードした人とサイト管理者にメールが自動的に生成されます。 結果として、ユーザーと管理者の両方が、この不適切なラベルの優先順位を設定し、必要に書類を特定することができます。 たとえば、アップロードされたドキュメントをサイトから削除または移動します。
 
 ドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも優先度が低い場合、セキュリティ上の懸念にはなりません。 たとえば、「**一般**」というラベルの付いたドキュメントが、「**社外秘**」というラベルの付いたサイトにアップロードされている場合です。 このシナリオでは、監査イベントとメールが生成されません。
 
-このイベントの監査ログを検索するには、[**ファイルとページのアクティビティ**] カテゴリから [**検出されたドキュメントの機密度の不一致**] を探します。 
+このイベントの監査ログを検索するには、[**ファイルとページのアクティビティ**] カテゴリから [**検出されたドキュメントの機密度の不一致**] を探します。
 
 自動生成されたメールには、サブジェクト **の互換性がない秘密度ラベルが検出されました**とメールメッセージは、アップロードされたドキュメントとサイトへのリンクとのラベルの不一致を説明します。 ユーザーが感度ラベルを変更できるようにするドキュメントリンクも含まれています。 現在、これらの自動メールは無効にすることも、カスタマイズすることができません。
 
-サイトまたはグループに対して、または、ある人が機密ラベルを追加または削除する場合、これらのアクティビティも監査されますが、メールは自動的に生成されません。 
+サイトまたはグループに対して、または、ある人が機密ラベルを追加または削除する場合、これらのアクティビティも監査されますが、メールは自動的に生成されません。
 
 これらの監査イベントはすべて、[秘密ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) カテゴリに記載されています。 監査ログを検索する手順については、「[セキュリティ/コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 

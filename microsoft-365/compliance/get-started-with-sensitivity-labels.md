@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 50392693b92ac660445d5966168b143c70853291
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 4712cc4f2dd042c3564523a565b71db69a18f5bc
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506332"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845767"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -80,7 +80,7 @@ ms.locfileid: "46506332"
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|
-|Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付ける |[Office アプリで秘密度ラベルを使用する](sensitivity-labels-office-apps.md)|
+|Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付ける - すべてのプラットフォームでの手動によるラベル付けのサポートを含む |[Office アプリで秘密度ラベルを使用する](sensitivity-labels-office-apps.md)|
 |ユーザーが Office アプリ、エクスプローラー、および PowerShell を使用して、Windows コンピューターからファイルにラベルを付けて保護できるようにする|[Windows 用のAzure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |秘密度ラベルを使用してドキュメントやメールを暗号化し、そのコンテンツにアクセスできるユーザーとその使用方法を制限する |[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)|
 |ドキュメントが暗号化されている場合でも、共同編集、電子情報開示、データ損失防止、検索をサポートし、Office on the web の秘密度ラベルを有効にする | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -94,7 +94,7 @@ ms.locfileid: "46506332"
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>機密度ラベルのエンド ユーザー向けのドキュメント
 
-最も効果的なエンド ユーザー向けのドキュメントは、選択したラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ただし、基本的な手順については次のリソースを使用できます。   
+最も効果的なエンド ユーザー向けのドキュメントは、選択したラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ただし、基本的な手順については次のリソースを使用できます。
 
 - [Office 内のファイルやメールに機密ラベルを適用する](https://support.microsoft.com/ja-JP/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Office の秘密度ラベルに関する既知の問題](https://support.microsoft.com/ja-JP/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
@@ -104,4 +104,4 @@ ms.locfileid: "46506332"
 
 - [Azure Information Protection の統合ラベル ユーザー ガイド](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
 
-
+秘密度ラベルを PDF ドキュメントの暗号化に適用する場合は、Windows または Mac で Microsoft Edge を使用して、これらのドキュメントを開くことができます。 詳細および代替リーダーについては、「[保護された PDF をサポートする PDF リーダー](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)」を参照してください。
