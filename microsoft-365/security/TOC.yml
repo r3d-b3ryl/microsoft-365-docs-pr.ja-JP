@@ -313,6 +313,8 @@
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
                     - name: Outlook on the web で迷惑メールとフィッシング詐欺を報告する
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                    - name: Outlook for iOS と Outlook for Android で迷惑メールとフィッシング詐欺を報告する
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md
                     - name: メッセージを手動で Microsoft に送信する
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する
@@ -382,6 +384,8 @@
                   href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
                 - name: DMARC を使用してメールを検証する
                   href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: Application Guard for Office をインストールする
+              href: ./office-365-security/install-app-guard.md
             - name: セキュリティ/コンプライアンス センターのスマート レポートとインサイト
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: セキュリティ ダッシュボードの概要

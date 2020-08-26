@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 'Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。 '
-ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: e95184bda631a5efaad0376c766ce5408c0a95e7
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597367"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868869"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "46597367"
 > [!IMPORTANT]
 > [グローバル管理者](../add-users/about-admin-roles.md)のみ次の手順を実行できます。
   
-1. 管理センターで、[**設定**] \> [**設定**] の順に移動します。
+1. 管理センターで、[**設定**] \> [**組織の設定**] の順に移動します。
 
 2. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページに移動します。
  グローバル管理者でない場合は、[セキュリティとプライバシー] オプションは表示されません。

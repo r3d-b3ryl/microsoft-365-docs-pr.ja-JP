@@ -1,5 +1,5 @@
 ---
-title: レコード管理の使用を開始する
+title: Microsoft 365 でレコード管理の使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: bec70df94ce81ee7497b3ec236dca5649ce90cb7
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778643"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868902"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-レコード管理ソリューションを使用して、組織内の法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツの管理を開始する準備はできましたか? 開始するために、次の高水準なガイダンスを参考にできます。
+Microsoft 365 のレコード管理ソリューションを使用して、組織内の法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツの管理を開始する準備はできましたか? 開始するために、次の高水準なガイダンスを参考にできます。
 
 1. **レコード管理ソリューションの理解**と、ドキュメントやメールがレコード宣言される場合にどのようなアクションが許可されたり禁止されたりするかについて説明します。[レコード管理に関する詳細情報](records-management.md)。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "46778643"
     - [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
     - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
 
-## <a name="subscription-and-licensing-requirements-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルのサブスクリプションおよびライセンス要件
+## <a name="subscription-and-licensing-requirements-for-records-management"></a>レコード管理のサブスクリプションおよびライセンス要件
 
 レコード管理はさまざまな異なるサブスクリプションに対応しており、ユーザーのライセンス要件は使用する機能によって異なります。
 
@@ -49,9 +49,15 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 ## <a name="permissions-required-for-records-management"></a>レコード管理に必要なアクセス許可
 
-レコード管理を担当するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。この制限された管理に権限を付与するには、ユーザーを [**レコード管理**] の管理者役割グループに追加することをお勧めします。 手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」を参照してください。
+レコード管理を担当するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。この制限された管理に権限を付与するには、ユーザーを **RecordManagement** 役割を付与する [**レコード管理**] の管理者役割グループに追加することをお勧めします。
 
-これらのアクセス許可は、レコード宣言する保持ラベルの作成、構成、適用にのみ必要です。 保持ラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
+この役割グループに含まれる権限には、[処理確認と検証](disposition.md)に必要な権限が含まれていません。また、既定では、全体管理者にもこの権限はありません。 処理を管理するには、カスタムの役割グループを作成するか、この役割を含む既定の役割グループ (**コンプライアンス管理者**など) を使用して、**処理管理**の役割を使用します。
+
+これらの役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)」を参照してください。
+
+ユーザーを役割グループに追加して役割を割り当てる手順については、「[ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)」をご覧ください。
+
+これらの権限は、レコードを宣言し、処理を管理する保持ラベルを作成、構成、適用するためにのみ必要です。 保持ラベルを構成するユーザーは、コンテンツへのアクセスを必要としません。
 
 ## <a name="common-scenarios-for-records-management"></a>レコード管理の一般的なシナリオ
 
