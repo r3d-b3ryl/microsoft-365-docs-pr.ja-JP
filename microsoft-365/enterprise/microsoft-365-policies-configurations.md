@@ -1,14 +1,14 @@
 ---
 title: Id とデバイスのアクセス構成-エンタープライズ向け Microsoft 365
 description: セキュリティで保護された電子メール、ドキュメント、およびアプリのポリシーと構成を展開するための Microsoft の推奨事項と中心概念について説明します。
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686628"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898166"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -64,15 +64,14 @@ Enterprise Mobility + Security E5 ライセンスを持っていない組織で�
 
 このガイダンスでは、これらの各層の保護の id とデバイスの保護を実装する方法について説明します。 組織の出発点としてこのガイダンスを使用し、組織の特定の要件を満たすようにポリシーを調整します。
 
-データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 たとえば、このガイダンスを実装する場合は、必ず同等のレベルでデータを保護してください。 これらのアーキテクチャモデルは、どの機能が同等であるかを示しています。
+データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 たとえば、このガイダンスを実装する場合は、必ず同等のレベルでデータを保護してください。 
 
-**Office 365 の ID とデバイス保護**<br/>
+**Office 365 アーキテクチャモデルの id およびデバイス保護**モデルは、どの機能が同等であるかを示しています。
+
 ![ポスターのサムネイル「Office の Id とデバイスの保護365」](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**Office 365 のファイル保護ソリューション**<br/>
-![ポスターのサムネイル「Office のファイル保護ソリューション」 (365)](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+また、Microsoft 365 に保存されている情報を保護するために、「 [Deploy information protection for data privacy 規制](../solutions/information-protection-deploy.md) ソリューション」を参照してください。
 
 ## <a name="security-and-productivity-trade-offs"></a>セキュリティと生産性の折り合い
 

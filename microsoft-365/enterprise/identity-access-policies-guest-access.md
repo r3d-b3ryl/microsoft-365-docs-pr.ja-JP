@@ -1,13 +1,13 @@
 ---
 title: ゲストおよび外部の B2B アクセスを許可するための id およびデバイスアクセスポリシー-Microsoft 365 for enterprise |Microsoft Docs
 description: ゲストおよび外部ユーザーのアクセスを保護するために推奨される条件付きアクセスと関連ポリシーについて説明します。
-author: BrendaCarter
-manager: johmar
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0ab4a2d48a1ac90f48bbfee82239fc0c4c1d55d5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ad1203543db1c2bd0ea9e9bdd3433aad58db320b
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686828"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898106"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>ゲストおよび外部の B2B アクセスを許可するためのポリシー
 この記事では、推奨される一般的な id およびデバイスアクセスポリシーを調整して、B2B アカウントアクセス (ゲストおよび外部ユーザー) を許可する方法について説明します。 このガイダンスは、 [共通の id およびデバイスアクセスポリシー](identity-access-policies.md)に基づいて構築されています。
@@ -37,7 +37,7 @@ Azure AD テナントを使用して認証するための B2B ユーザーのパ
 
 次の表に、更新または新規作成のどちらかを行う必要があるポリシーを示します。 共通のポリシーは、 [一般的な id とデバイスアクセスポリシー](identity-access-policies.md) の記事に記載されている関連する構成手順にリンクしています。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|詳細|
 |:---------------|:-------|:----------------|
 |**Baseline**|[ゲストおよび外部ユーザーに対して MFA を常に要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいルールを作成し、ゲストおよび外部ユーザーにのみ適用します。 [サインインリスク] で、[すべてのオプション] をオフのままにして、常に MFA を適用します。|
 |        |[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ゲストユーザーと外部ユーザーを除外するには、このルールを変更します。|
@@ -47,7 +47,7 @@ Azure AD テナントを使用して認証するための B2B ユーザーのパ
 
 ![ゲストを除外するためのコントロールの画面キャプチャ](../media/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 ### <a name="guests-vs-external-users"></a>ゲストおよび外部ユーザー
 Azure AD では、ゲストユーザーと外部ユーザーは同じです。 これらの両方のユーザーの種類は Guest です。 ゲストユーザーは B2B ユーザーです。

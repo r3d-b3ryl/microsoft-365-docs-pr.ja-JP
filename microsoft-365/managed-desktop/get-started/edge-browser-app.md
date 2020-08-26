@@ -10,30 +10,30 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597499"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903873"
 ---
 # <a name="new-microsoft-edge-app"></a>新しい Microsoft Edge アプリ
 
-新しい[Microsoft Edge ブラウザー](https://www.microsoft.com/edge)は、閲覧時に、プライバシー、生産性、および価値の高い世界クラスのパフォーマンスを提供します。 Microsoft マネージドデスクトップは、お客様の環境に新しいエッジブラウザーを展開するためのパブリックプレビューを提供しています。
+新しい [Microsoft Edge ブラウザー](https://www.microsoft.com/edge) は、閲覧時に、プライバシー、生産性、および価値の高い世界クラスのパフォーマンスを提供します。 Microsoft マネージドデスクトップは、お客様の環境に新しいエッジブラウザーを展開するためのパブリックプレビューを提供しています。
 
 ## <a name="initial-deployment"></a>初期展開
 
 Microsoft マネージドデスクトップデバイスを新しい Microsoft Edge ブラウザーに移行するには、Microsoft マネージドデスクトップポータルを使用して、IT サポートチケットをファイルに追加します。 チケットをファイル化した後、24時間ごとに展開グループに展開すると、エッジ安定チャネルがテストグループに展開されます。 展開を一時停止するには、別のチケットをファイルに保存する操作を要求します。
 
-[ベータチャネル] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 組織内での代表的な検証の要求時にも利用できます。 Microsoft マネージドデスクトップは、必要に応じて、アプリケーションをテストおよび最初のグループに展開します。これにより、これらのすべてのユーザーは、安定したチャネルに加えて、ベータチャネルを利用できるようになります。 ベータチャネルにアクセスする必要がある追加のユーザーについては、**最新の Workplace Edge ベータユーザー**グループに追加して、会社のポータルからインストールする必要があります。
+また、 [ベータチャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) は、組織内の代表的な検証の要求時に使用することもできます。 Microsoft マネージドデスクトップは、必要に応じて、アプリケーションをテストおよび最初のグループに展開します。これにより、これらのすべてのユーザーは、安定したチャネルに加えて、ベータチャネルを利用できるようになります。 ベータチャネルにアクセスする必要がある追加のユーザーについては、 **最新の Workplace Edge ベータユーザー** グループに追加して、会社のポータルからインストールする必要があります。
 
 ## <a name="updates-to-microsoft-edge"></a>Microsoft Edge への更新
 
-Microsoft マネージドデスクトップは、6週間ごとに自動更新される、Microsoft Edge の安定した[チャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel)を展開します。 お客様に最適な環境を実現するために、安定したチャネルでの更新は、Microsoft Edge 製品グループによって[段階的](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout)にロールアウトされています。 
+Microsoft マネージドデスクトップは、6週間ごとに自動更新される、Microsoft Edge の安定した [チャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) を展開します。 お客様に最適な環境を実現するために、安定したチャネルでの更新は、Microsoft Edge 製品グループによって [段階的](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) にロールアウトされています。 
 
-[ベータチャネル] ( https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 組織内の代表的な検証については、テストと最初のグループの両方でデバイスに展開されます。 このチャネルは完全にサポートされており、約6週間ごとに新機能によって自動更新されます。
+[ベータチャネル](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)は、組織内の代表的な検証のためにテストと最初のグループの両方のデバイスに展開されます。 このチャネルは完全にサポートされており、約6週間ごとに新機能によって自動更新されます。
 
-Microsoft Edge が正しく更新されるように、Microsoft Edge[更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を変更しないでください。
+Microsoft Edge が正しく更新されるように、Microsoft Edge [更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を変更しないでください。
 
 ### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge ベータチャネル
 
@@ -49,7 +49,7 @@ Microsoft マネージドデスクトップデバイス上の Microsoft Edge の
 #### <a name="extension-installation-blocklist"></a>拡張機能のインストール blocklist
 **既定値:** すべての
 
-Microsoft Managed Desktop は、このポリシーを設定して、管理されたエンドポイントに Chrome 拡張機能がインストールされないようにします。 Chromium 拡張モデルに関連付けられている既知のリスクには、データ損失防止、プライバシー、およびデバイスを侵害する可能性があるその他のリスクが含まれます。 
+Microsoft Managed Desktop は、このポリシーを設定して、管理されたエンドポイントに Chrome 拡張機能がインストールされないようにします。 Chromium 拡張モデルに関連する既知のリスクには、データ損失防止、プライバシー、およびデバイスを侵害する可能性があるその他のリスクが含まれます。 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>ユーザーレベルのネイティブメッセージングホストを許可する (管理者権限なしでインストールされる)
 
@@ -71,7 +71,7 @@ Microsoft Managed Desktop は、このポリシーを設定して、管理され
 
 SSL エラーが発生しているサイトにユーザーがアクセスできるようにするため、この設定を有効にすることはお勧めしません。
 
-### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender Smart 画面
+### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
 #### <a name="configure-windows-defender-smartscreen"></a>Windows Defender SmartScreen を構成する
 
@@ -118,7 +118,7 @@ Microsoft マネージドデスクトップでは、既定でデバイスの Int
 既定では、デバイスは Internet Explorer モードを使用するように設定されていますが、代わりにスタンドアロンの Internet Explorer 11 ウィンドウでサイトを開くように設定することもできます。 これを変更するには、サポート要求をファイルにします。
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>エンタープライズモードのサイトリストにサイトを追加する
-サイトを Internet Explorer モードで開くには、それらを[エンタープライズサイトリスト](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)に含める必要があります。 エンタープライズサイトリストの管理と展開は責任を負っています。 詳細については、「configure [Enterprise Mode Site List policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy) 」を参照してください。
+サイトを Internet Explorer モードで開くには、それらを [エンタープライズサイトリスト](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)に含める必要があります。 エンタープライズサイトリストの管理と展開は責任を負っています。 詳細については、「configure [Enterprise Mode Site List policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy) 」を参照してください。
 
 ### <a name="other-settings"></a>その他の設定
 
@@ -154,7 +154,7 @@ Microsoft Intune の管理用テンプレートプロファイルを使用して
 管理用テンプレートを使用して Microsoft Edge を設定し、ユーザーに通知せずに拡張機能をインストールすることもできます。 **Microsoft Edge > 拡張 > 機能を使用して、サイレントモードでインストールされる拡張機能を制御する >**、[コンピューターの構成の詳細について説明します。
 
 ### <a name="microsoft-edge-update-policies"></a>Microsoft Edge 更新ポリシー
-Microsoft Edge が正しく更新されるように、Microsoft Edge[更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を変更しないでください。
+Microsoft Edge が正しく更新されるように、Microsoft Edge [更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を変更しないでください。
 
 ### <a name="other-common-enterprise-policies"></a>その他の一般的なエンタープライズポリシー
 

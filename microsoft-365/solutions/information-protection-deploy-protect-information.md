@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスの機能を展開し、個人情報を保護します。
-ms.openlocfilehash: 8e7d037218b4d67e9ba7f450bd1a5235b1ae164f
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 87057d7c823fc9808169efd254300f2b2f5e0487
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520995"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903897"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>情報をデータプライバシーの規則に従って保護する
 
@@ -50,7 +50,7 @@ ms.locfileid: "46520995"
 - HIPAA のエコー (45 CFR 164.312 (e) (1))
 - HIPAA のエコー (45 C.F.R. 164.312 (e) (2) (ii))
 
-上記の各項目の詳細については、「[データプライバシーのリスクを評価し、機密アイテムを識別](information-protection-deploy-assess.md)する」の記事を参照してください。
+上記の各項目の詳細については、「 [データプライバシーのリスクを評価し、機密アイテムを識別](information-protection-deploy-assess.md) する」の記事を参照してください。
 
 情報保護のためのデータプライバシーの規則をお勧めします。
 
@@ -64,16 +64,17 @@ Microsoft 365 で情報保護スキームの使用を開始するには、次の
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>Microsoft 365 で情報保護を管理する
 
-Microsoft[情報保護ソリューション](../compliance/protect-information.md)には、microsoft 365、microsoft Azure、および microsoft Windows にわたるさまざまな統合機能が含まれています。 Microsoft 365 では、情報保護ソリューションには次のものが含まれています。
+Microsoft [情報保護ソリューション](../compliance/protect-information.md) には、microsoft 365、microsoft Azure、および microsoft Windows にわたるさまざまな統合機能が含まれています。 Microsoft 365 では、情報保護ソリューションには次のものが含まれています。
 
 - [カスタマー キーによるサービスの暗号化](../compliance/customer-key-overview.md)
-- [機密情報の種類](../compliance/what-the-sensitive-information-types-look-for.md)(「[データプライバシーのリスクを評価し機密アイテムを識別](information-protection-deploy-assess.md)する」の記事を参照)
+- [機密情報の種類](../compliance/what-the-sensitive-information-types-look-for.md) (「 [データプライバシーのリスクを評価し機密アイテムを識別](information-protection-deploy-assess.md)する」の記事を参照)
 - [機密ラベル](../compliance/sensitivity-labels.md) 
   - サービス/コンテナーレベル
   - クライアント側/コンテンツレベル
   - SharePoint および OneDrive での保存データの自動化
 - データ損失防止 (DLP)
-- [Office 365 Message encryption の新機能 (OME)](../compliance/ome.md)と OME [Advanced message encryption](../compliance/ome-advanced-message-encryption.md)
+- [Microsoft 365 エンドポイントのデータ損失防止 (プレビュー)](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide)
+- [Office 365 Message encryption の新機能 (OME)](../compliance/ome.md) と OME [Advanced message encryption](../compliance/ome-advanced-message-encryption.md)
 
 また、サイトおよびライブラリレベルの保護は、あらゆる保護スキームに含める重要なメカニズムです。
 
@@ -96,8 +97,8 @@ Microsoft Information Protection フレームワークからの機密ラベル�
 
 1. 次の点について理解します。
    - **ビジネス要件。** 企業に機密ラベルを適用する業務上の理由を確立します。 たとえば、情報保護のためのデータプライバシー要件。
-   - **機密ラベル機能。** 機密ラベルは複雑になる可能性があるので、開始する前に[機密ラベルの文書](../compliance/sensitivity-labels.md)を必ずお読みください。
-   - **重要な注意点**機密ラベルは Microsoft コンプライアンス管理センターで管理されますが、対象化およびアプリケーションのオプションは大きく異なります。
+   - **機密ラベル機能。** 機密ラベルは複雑になる可能性があるので、開始する前に [機密ラベルの文書](../compliance/sensitivity-labels.md) を必ずお読みください。
+   - **重要な注意点** 機密ラベルは Microsoft コンプライアンス管理センターで管理されますが、対象化およびアプリケーションのオプションは大きく異なります。
       - サイト、グループ、およびチームには、コンテナーレベルでの機密ラベルがあります (この設定は、コンテナー内のコンテンツには適用されません)。 これらは、サイト、グループ、またはチームがプロビジョニングされたときに適用されるユーザーおよびグループに公開されます。
       - アクティブなコンテンツには、機密ラベルがあります。 これらは、ユーザーまたはグループに対しても、手動で適用するか、または次のように自動的に適用されます。
         - このファイルは、ユーザーのデスクトップまたは SharePoint サイトに対して開く/編集/保存されます。
@@ -108,20 +109,20 @@ Microsoft Information Protection フレームワークからの機密ラベル�
 
    - Azure Information Protection
 
-      現在の秘密度のラベル付けスキームは、既存の[Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)のラベル実装と調整する必要がある場合があります。
+      現在の秘密度のラベル付けスキームは、既存の [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) のラベル実装と調整する必要がある場合があります。
    - OME
 
       電子メール保護と、OME のような既存の電子メール暗号化方法に対してモダン感度ラベルを使用することを計画している場合は、それらを共存させることができますが、どちらのシナリオを適用するかを理解しておく必要があります。 「 [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities)」を参照してください。これには、モダン感度ラベルと OME ベースの保護を比較した表が含まれます。
 
-3. より広範な情報保護スキームへの統合を計画します。 OME との共存の上に、現在の機密ラベルを Microsoft 365 データ損失防止 (DLP) や Microsoft Cloud App Security などの side-by-side 機能で使用できます。 データのプライバシーに関連する情報保護の目標を達成するには、「[機密ラベルと Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) 」を参照してください。
+3. より広範な情報保護スキームへの統合を計画します。 OME との共存の上に、現在の機密ラベルを Microsoft 365 データ損失防止 (DLP) や Microsoft Cloud App Security などの side-by-side 機能で使用できます。 データのプライバシーに関連する情報保護の目標を達成するには、「 [機密ラベルと Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) 」を参照してください。
 
-4. 機密ラベルの分類と制御スキームを開発します。 「[データ分類と機密ラベルの分類」を](https://aka.ms/dataclassificationwhitepaper)参照してください。
+4. 機密ラベルの分類と制御スキームを開発します。 「 [データ分類と機密ラベルの分類」を](https://aka.ms/dataclassificationwhitepaper)参照してください。
 
 ### <a name="general-guidance"></a>一般的なガイダンス
 
 1. **スキーマの定義。** 技術的な機能を使用してラベルと保護を適用する前に、組織全体で分類スキーマを定義する作業を行います。 分類スキーマが既に存在する場合は、個人データの追加が容易になります。 
 2. **作業の開始** 最初に、実装するラベルの数と名前を決定します。 使用するテクノロジとラベルの適用方法について心配することなく、このアクティビティを実行します。 このスキーマは、社内およびその他のクラウドサービスに存在するデータを含め、組織全体で汎用的に適用します。
-3. **その他の推奨事項**ポリシー、ラベル、および条件を設計および実装するときは、次の推奨事項に従うことを検討してください。
+3. **その他の推奨事項** ポリシー、ラベル、および条件を設計および実装するときは、次の推奨事項に従うことを検討してください。
 
    - **既存の分類スキーマを使用します (存在する場合)。** 多くの組織では、既に何らかの形式でデータ分類を使用しています。 既存のラベルスキーマを慎重に評価し、可能な場合はそのスキーマをそのまま使用します。 エンドユーザーに認識される使い慣れたラベルを使用することで、導入が促進されます。
    - **小規模に開始します。** 作成できるラベルの数には、実質的に制限はありません。 ただし、ラベルとサブラベルの数が多いと導入が遅くなる可能性があります。
@@ -133,7 +134,7 @@ Microsoft Information Protection フレームワークからの機密ラベル�
 
 ### <a name="create-and-deploy-sensitivity-labels-for-sites-groups-and-teams"></a>サイト、グループ、teams の機密ラベルを作成および展開する
 
-Microsoft 365 コンプライアンスセンターで[機密ラベル](../compliance/sensitivity-labels-teams-groups-sites.md)を作成すると、それらをこれらのコンテナーに適用できるようになります。
+Microsoft 365 コンプライアンスセンターで [機密ラベル](../compliance/sensitivity-labels-teams-groups-sites.md) を作成すると、それらをこれらのコンテナーに適用できるようになります。
 
 - Microsoft Teams サイト
 - Microsoft 365 グループ (以前の Office 365 グループ)
@@ -153,22 +154,22 @@ Microsoft 365 コンプライアンスセンターで[機密ラベル](../compli
 
 機密ラベルを使用して組織のデータの保護を開始する準備ができたら、次のようにします。
 
-1. **ラベルを作成する。** コンテンツのさまざまなレベルに対する組織の分類方法に従って、秘密度ラベルを作成して名前を付けます。 分類分類の開発の詳細については、「[データ分類と機密ラベル](https://aka.ms/dataclassificationwhitepaper)の分類」ホワイトペーパーを参照してください。
+1. **ラベルを作成する。** コンテンツのさまざまなレベルに対する組織の分類方法に従って、秘密度ラベルを作成して名前を付けます。 分類分類の開発の詳細については、「 [データ分類と機密ラベル](https://aka.ms/dataclassificationwhitepaper)の分類」ホワイトペーパーを参照してください。
 2. **各ラベルの機能を定義する。** 各ラベルに関連付ける必要がある保護設定を構成します。 たとえば、低機密コンテンツ ("General" ラベルなど) にヘッダーまたはフッターのみを適用し、より高い機密度のコンテンツ ("社外秘" ラベルなど) にウォーターマークを設定し、暗号化を有効にすることができます。
 3. **ラベルを発行する。** 秘密度ラベルの構成が完了したら、ラベル ポリシーを使用してラベルを公開します。 ラベルを使用する必要があるユーザーとグループおよび使用するポリシー設定を決定します。 1つのラベルが再利用可能です。 一度定義した後、別のユーザーに割り当てられた複数のラベルポリシーに含めることができます。
 
-Microsoft 365 コンプライアンスセンターから機密ラベルを発行すると、そのラベルが作成または編集されたときにコンテンツを分類して保護するために、ユーザーが[Office アプリ](../compliance/sensitivity-labels-office-apps.md)に表示され始めます。
+Microsoft 365 コンプライアンスセンターから機密ラベルを発行すると、そのラベルが作成または編集されたときにコンテンツを分類して保護するために、ユーザーが [Office アプリ](../compliance/sensitivity-labels-office-apps.md) に表示され始めます。
 
 ![Microsoft 365 での機密ラベルの展開フロー](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 データのプライバシーを保護するため、機密情報が含まれる電子メールやコンテンツに、暗号化やその他のルールを使用して機密ラベルを手動で適用します。
 
 >[!Note]
->電子メールに暗号化が有効になっている機密ラベルには、OME と重複する機能があります。 「[セキュリティで保護された電子メールのシナリオと OME および機密ラベルの比較](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)」を参照してください。
+>電子メールに暗号化が有効になっている機密ラベルには、OME と重複する機能があります。 「 [セキュリティで保護された電子メールのシナリオと OME および機密ラベルの比較](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels)」を参照してください。
 
 ### <a name="client-side-auto-labeling-when-users-edit-documents-or-compose-emails"></a>ユーザーがドキュメントを編集するとき、または電子メールを作成するときのクライアント側の自動ラベル付け
 
-機密ラベルを作成すると、指定した条件に一致する場合に電子メールを含む、そのラベルをコンテンツに[自動的に割り当てる](../compliance/apply-sensitivity-label-automatically.md)ことができます。
+機密ラベルを作成すると、指定した条件に一致する場合に電子メールを含む、そのラベルをコンテンツに [自動的に割り当てる](../compliance/apply-sensitivity-label-automatically.md) ことができます。
 
 機密ラベルを自動的にコンテンツに適用する機能が重要である理由は次のとおりです。
 
@@ -178,7 +179,7 @@ Microsoft 365 コンプライアンスセンターから機密ラベルを発行
 
 自動ラベル付けは、ラベルを自動的に適用するだけでなく、ユーザーへのラベルの推奨をサポートします。 ただし、どちらの場合も、ユーザーはラベルを承諾または拒否するかどうかを決定し、コンテンツの正しいラベル付けを行います。
 
-このクライアント側のラベル付けでは、ドキュメントを保存する前であってもラベルを適用できるため、ドキュメントの遅延が最小限に抑えられます。 ただし、すべてのクライアント アプリが自動ラベル付けをサポートしているわけではありません。 この機能は、Azure Information Protection の統一されたラベル付けクライアントと、[いくつかのバージョンの Office アプリ](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)でサポートされています。
+このクライアント側のラベル付けでは、ドキュメントを保存する前であってもラベルを適用できるため、ドキュメントの遅延が最小限に抑えられます。 ただし、すべてのクライアント アプリが自動ラベル付けをサポートしているわけではありません。 この機能は、Azure Information Protection の統一されたラベル付けクライアントと、 [いくつかのバージョンの Office アプリ](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)でサポートされています。
 
 構成手順については、「 [Office アプリの自動ラベル付けを構成する方法](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)」を参照してください。
 
@@ -196,7 +197,7 @@ Microsoft 365 コンプライアンスセンターから機密ラベルを発行
 
 ## <a name="data-loss-prevention"></a>データ損失防止 
 
-Microsoft 365 で[データ損失防止 (DLP)](../compliance/data-loss-prevention-policies.md)を使用して、内部と外部の両方で個人情報を含むデータの共有など、危険、偶発的、または不適切な共有を検出、警告、ブロックすることができます。
+Microsoft 365 で [データ損失防止 (DLP)](../compliance/data-loss-prevention-policies.md) を使用して、内部と外部の両方で個人情報を含むデータの共有など、危険、偶発的、または不適切な共有を検出、警告、ブロックすることができます。
 
 DLP では、次のことが可能になります。
 
@@ -227,13 +228,13 @@ DLP は、正常性レコードが含まれるドキュメントまたは電子�
 
 - ビジネス要件。
 
-- 「[データプライバシーのリスクを評価し、機密性の高いアイテムを識別](information-protection-deploy-assess.md)する」の説明に従って、組織のリスクベースの評価を行います。
+- 「 [データプライバシーのリスクを評価し、機密性の高いアイテムを識別](information-protection-deploy-assess.md)する」の説明に従って、組織のリスクベースの評価を行います。
 
 - その他の情報保護およびガバナンスメカニズムの導入、またはデータのプライバシーの計画。
 
-- 「[データプライバシーのリスクを評価し、機密性の高いアイテムを識別](information-protection-deploy-assess.md)する」の説明に従って、評価作業に基づいて個人データに対して特定した機密情報の種類。 DLP ポリシー条件は、機密情報の種類と保持ラベルの両方に基づくことができます。
+- 「 [データプライバシーのリスクを評価し、機密性の高いアイテムを識別](information-protection-deploy-assess.md)する」の説明に従って、評価作業に基づいて個人データに対して特定した機密情報の種類。 DLP ポリシー条件は、機密情報の種類と保持ラベルの両方に基づくことができます。
 
-- 保存期間のラベル DLP 条件を指定する必要があります。 詳細については、「組織の記事[のデータプライバシー規制に関する情報を管理する](information-protection-deploy-govern.md)」を参照してください。
+- 保存期間のラベル DLP 条件を指定する必要があります。 詳細については、「組織の記事 [のデータプライバシー規制に関する情報を管理する](information-protection-deploy-govern.md) 」を参照してください。
 
 - 継続的な DLP ポリシー管理。組織内のユーザーが機密情報の種類、保持ラベル、規制、コンプライアンスポリシーの変更に関するポリシーを運用および調整する必要があります。
 
@@ -256,7 +257,7 @@ GDPR を認識するための DLP ポリシーの例を次に示します。
 
 ![GDPR を認識するための DLP ポリシーの例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-DLP ポリシーの作成と適用の詳細については、[この記事](../compliance/create-test-tune-dlp-policy.md)を参照してください。
+DLP ポリシーの作成と適用の詳細については、 [この記事](../compliance/create-test-tune-dlp-policy.md) を参照してください。
 
 ### <a name="protection-levels-for-data-privacy"></a>データプライバシーの保護レベル
 
@@ -307,7 +308,7 @@ DLP ポリシーの作成と適用の詳細については、[この記事](../c
 
 また、この保護を適用するメールフロールールを定義することもできます。 たとえば、特定の受信者に宛てられたすべてのメッセージの暗号化、または件名行に特定のキーワードの単語が含まれているルールを作成し、受信者がメッセージの内容をコピーまたは印刷できないように指定することもできます。
 
-さらに、OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md)を使用すると、外部の受信者に対するより柔軟な制御と、暗号化された電子メールへのアクセスを必要とするコンプライアンスの義務を満たすことができます。 Microsoft 365 で OME Advanced Message Encryption を使用すると、機密情報の種類を検出する自動ポリシーを使用して、組織外で共有される機密メールを制御することができます。 
+さらに、OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md) を使用すると、外部の受信者に対するより柔軟な制御と、暗号化された電子メールへのアクセスを必要とするコンプライアンスの義務を満たすことができます。 Microsoft 365 で OME Advanced Message Encryption を使用すると、機密情報の種類を検出する自動ポリシーを使用して、組織外で共有される機密メールを制御することができます。 
 
 データのプライバシーを保護するため、外部のユーザーとメールを共有する必要がある場合は、有効期限を指定してメッセージを取り消すことができます。 外部の受信者に送信されるメッセージの有効期限は、失効日と設定のみを行うことができます。
 

@@ -1,13 +1,13 @@
 ---
 title: Id およびデバイスアクセスポリシーを実装するための前提条件-エンタープライズ向け Microsoft 365 |Microsoft Docs
 description: ID およびデバイス アクセス ポリシーと構成を適用する方法に関する Microsoft の推奨事項のポリシーを説明します。
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 295e1c713b97740fcf40e9607e650c242a68c035
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a81e17cad1722c58f5bf13b2a36c16fc2ff5cba4
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685880"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898042"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -82,13 +82,13 @@ BYOD Windows デバイスでは、ユーザーは **職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|OneDrive 同期クライアント|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 7|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 8.1|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
-|Windows 10|サポート|サポート|該当なし|該当なし|プレビュー<sup>*</sup>|
+|Windows 7|サポート|サポート|N/A|N/A|プレビュー<sup>*</sup>|
+|Windows 8.1|サポート|サポート|N/A|N/A|プレビュー<sup>*</sup>|
+|Windows 10|サポート|サポート|N/A|N/A|プレビュー<sup>*</sup>|
 |Windows Phone 10|非サポート|非サポート|サポート対象外|サポート対象外|サポート対象外|
 |Android|サポート|サポート|サポート|サポート|N/A|
 |iOS|サポート|サポート|サポート|サポート|N/A|
-|macOS|パブリック プレビュー|パブリック プレビュー|該当なし|該当なし|サポートされていません|
+|macOS|パブリック プレビュー|パブリック プレビュー|N/A|N/A|サポートされていません|
 |Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 
 <sup>*</sup>[OneDrive 同期クライアント](https://docs.microsoft.com/onedrive/enable-conditional-access)での条件付きアクセスの使用方法について説明します。

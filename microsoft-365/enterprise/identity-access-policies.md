@@ -1,13 +1,13 @@
 ---
 title: 一般的な id およびデバイスアクセスポリシー-Microsoft 365 for enterprise |Microsoft Docs
 description: ID およびデバイス アクセス ポリシーと構成を適用する方法に関する Microsoft の推奨事項のポリシーを説明します。
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685976"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898118"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -42,7 +42,7 @@ ms.locfileid: "46685976"
 これらのタスクを実行するための時間を提供するために、この表に記載されている順序で基準ポリシーを実装することをお勧めします。 ただし、機密性が高く規制された保護のための MFA ポリシーは、いつでも実装できます。
 
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|詳細|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](#require-mfa-based-on-sign-in-risk)| |
 |        |[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスルールをバイパスすることができます。そのため、これらをブロックすることが重要です。|
@@ -200,7 +200,7 @@ MFA を必要とする前に、まず Identity Protection MFA 登録ポリシー
 
 [Id とデバイスのアクセス構成](microsoft-365-policies-configurations.md)で説明されている原則を使用して、ベースラインおよび機密保護層がレベル2エンタープライズ拡張データ保護設定と緊密にマッピングされます。 高度な規制保護層は、レベル3エンタープライズ高データ保護設定に厳密にマップされます。
 
-|保護レベル |アプリ保護ポリシー  |詳細情報  |
+|保護レベル |アプリ保護ポリシー  |詳細  |
 |---------|---------|---------|
 |基準     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。         |
 |機密     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。        |
@@ -250,7 +250,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- この設定は、次の種類のデバイスで使用できます。
+- Windows Phone 8.1
 - Windows 8.1 以降
 - Windows 10 以降
 
@@ -281,8 +281,8 @@ Windows 10 では、次の設定をお勧めします。
 
 |型|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
-|パスワード|モバイルデバイスのロックを解除するためのパスワードを要求する|必須||
-||単純なパスワード|拒否||
+|Password|モバイルデバイスのロックを解除するためのパスワードを要求する|必須||
+||単純なパスワード|ブロック||
 ||パスワードの種類|既定のデバイス||
 ||パスワードの最小文字数|6 ||
 ||パスワードが必要になるまでの最大非アクティブ時間 (分)|15 |この設定は、Android バージョン4.0 以降、または KNOX 4.0 以降でサポートされています。 IOS デバイスでは、iOS 8.0 以降でサポートされています。|

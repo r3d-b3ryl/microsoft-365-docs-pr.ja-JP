@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: dc1f5a540b261437a0bf94132bd41929ce5d3546
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560921"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898130"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -69,7 +69,7 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 | Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer、Power Apps | 作成、連絡、共同作業を行います。 | Microsoft 365 E3 または E5 |
 ||||
 
-リモートワーカーのセキュリティとコンプライアンスの基準については、[リモートワーカーへのセキュリティとコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)を参照してください。
+セキュリティとコンプライアンスの基準については、「[リモート ワーカーのためのセキュリティとコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)」を参照してください。
 
 <a name="poster"></a> このソルーションを 2 ページにまとめた [「リモート ワーカーを支援するポスター」](../downloads/empower-remote-workers.pdf) を参照してください。
 
