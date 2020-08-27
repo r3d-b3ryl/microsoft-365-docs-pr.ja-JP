@@ -17,11 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Microsoft 365 管理センターで Azure 管理者の役割を管理する。
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432486"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898030"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365管理センター のAzure Active Directory の役割について
 
@@ -67,6 +68,7 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 |メッセージ センターのプライバシー閲覧者     |    メッセージ センターのデータ プライバシー メッセージへのアクセス。メール通知の取得を行います。     |
 |メッセージ センター閲覧者     | メッセージ センターで通常のメッセージの読み取りおよび共有を行い、毎週のメール ダイジェストを取得し、ユーザー、グループ、ドメイン、およびサブスクリプションへの読み取り専用アクセス権を持ちます。     |
 |Office アプリ管理者    |   Office のクラウドベース ポリシー、およびユーザーの Office アプリに表示される新しいコンテンツの管理を行います。   |
+|パスワード管理者    |   管理者以外のユーザー、または次の役割のメンバーのパスワードをリセットします: ディレクトリ リーダー、ゲスト招待元、パスワード管理者。 この役割は、サービス要求を管理したり、サービス正常性を監視したりする能力を付与することはできません。   |
 |Power BI 管理者    |   Power Bl 管理タスクへのフル アクセス。サービス リクエストを管理し、およびサービス正常性の監視を行います。   |
 |Power プラットフォーム管理者     |    Microsoft Dynamics 365、PowerApps、データ損失防止ポリシー、および Microsoft Flow へのフル アクセス。     |
 |特権ロール管理者     |    役割の割り当て、および Privileged Identity Management のすべてのアクセス制御機能を管理します。     |

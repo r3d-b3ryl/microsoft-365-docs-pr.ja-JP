@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2428109743b408061ead8ad87d5e59ac30417c06
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254300"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898085"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -107,7 +107,7 @@ Microsoft クラウド サービスでは、少なくとも年に 1 回、SOC 1 
 
 **Azure SOC 報告書が発行される頻度はどれくらいですか?**
 
-Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、PowerApps、Microsoft Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、半年ごとに新たな報告書が発行されます (期間は 3 月 31 日と 9 月 30 日に終了)。 ブリッジ レターは、1 月に発行されて 10/1- 12/31 の期間をカバーし、7 月に発行されて 4/1 - 6/30の期間をカバーします。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
+Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、PowerApps、Microsoft Stream、Microsoft データセンターの SOC 報告書は、12 か月連続の実行期間 (監査期間) に基づいており、半年ごとに新たな報告書が発行されます (期間は 3 月 31 日と 9 月 30 日に終了)。 ブリッジ レターは四半期ごとに発行され、過去 3 か月間をカバーします。 たとえば、1 月のレターは 10 月 1 日から 12 月 31 日を、4 月のレターは 1 月 1 日から 3 月 31 日を、7 月のレターは 4 月 1 日から 6 月 30 日を、10 月のレターは 7 月 1 日から 9 月 30 日をカバーします。 最新の報告書は Service Trust Portal から[ダウンロード](https://aka.ms/stp)できます。
 
 **Microsoft データセンターの監査は、自分自身で実施する必要がありますか?**
 
