@@ -15,13 +15,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: 組織外のユーザーとのグループ作業用に Microsoft 365 を構成する方法について説明します。
-ms.openlocfilehash: 8bde8a3ffe4ab4ec8d0a0ada8e7c6030d00a549b
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Teams で共同作業し、Sharepoint サイトを共有するために外部ユーザーを招待するときに、共有と追加のセキュリティを有効にするように Microsoft 365 を構成します。
+ms.openlocfilehash: f8dc81ae32bed7a12daf21955ada60ab852d4617
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527850"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255793"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>組織外のユーザーとの共同作業
 
@@ -29,16 +29,16 @@ Microsoft 365 の外部共有機能を使用すると、組織内のユーザー
 
 組織外のユーザーとの共同作業は、次の2つの主要コンポーネントで構成されます。
 
-- **共有を有効**にする-Azure Active Directory、Teams、Microsoft 365 グループ、および SharePoint の間で共有コントロールを構成して、組織で必要とされるレベルの共有を許可します。
-- **追加のセキュリティを有効**にします。組織外のユーザーによる認証を要求するように基本の共有機能を構成することはできますが、Microsoft 365 には、データを保護し、外部共有している間にガバナンスポリシーを維持するために役立つ、多くの追加のセキュリティおよびコンプライアンス機能が用意されています。
+- **共有を有効** にする-Azure Active Directory、Teams、Microsoft 365 グループ、および SharePoint の間で共有コントロールを構成して、組織で必要とされるレベルの共有を許可します。
+- **追加のセキュリティを有効** にします。組織外のユーザーによる認証を要求するように基本の共有機能を構成することはできますが、Microsoft 365 には、データを保護し、外部共有している間にガバナンスポリシーを維持するために役立つ、多くの追加のセキュリティおよびコンプライアンス機能が用意されています。
 
 ## <a name="enable-sharing"></a>共有を有効にする
 
 Microsoft 365 では、既定では、組織外のユーザーとの共有は SharePoint と OneDrive で有効になっていますが、Teams では無効になっています。 SharePoint および OneDrive の外部共有シナリオの多くは、それ以上の構成を行わなくても動作します。 使用しているシナリオの設定を確認するか、または新しいシナリオを有効にするには、次のオプションのいずれかを選択します。
 
-- [ドキュメントに対して共同作業](collaborate-on-documents.md)を行う: Microsoft 365 を構成して、ファイルとフォルダーの組織外のユーザー (ゲストと認証されていないユーザーの両方) との共有と共同作業を可能にする方法について説明します。
-- [サイトでの共同作業](collaborate-in-site.md)-ゲストを使用した SharePoint サイトの共有を有効にするように Microsoft 365 を構成する方法について説明します。
-- [チームとしての共同作業](collaborate-as-team.md)-Teams でゲストコラボレーションを有効にするように Microsoft 365 を構成する方法について説明します。
+- [ドキュメントに対して共同作業](collaborate-on-documents.md) を行う: Microsoft 365 を構成して、ファイルとフォルダーの組織外のユーザー (ゲストと認証されていないユーザーの両方) との共有と共同作業を可能にする方法について説明します。
+- [サイトでの共同作業](collaborate-in-site.md) -ゲストを使用した SharePoint サイトの共有を有効にするように Microsoft 365 を構成する方法について説明します。
+- [チームとしての共同作業](collaborate-as-team.md) -Teams でゲストコラボレーションを有効にするように Microsoft 365 を構成する方法について説明します。
 
 Microsoft 365 で使用可能なゲスト共有設定の包括的な説明については、「 [microsoft 365 ゲスト共有設定のリファレンス](microsoft-365-guest-settings.md)」を参照してください。
 
@@ -47,16 +47,16 @@ Microsoft 365 で使用可能なゲスト共有設定の包括的な説明につ
 組織外のユーザーとの共有に使用するシナリオを有効にしたら、偶発的または故意に不適切な共有からコンテンツを保護するための追加の保護機能を検討します。
 
 - 認証されていない[ユーザーとファイルやフォルダーを共有するためのベストプラクティス](best-practices-anonymous-sharing.md)-認証されていないユーザーとの共有のベストプラクティスについて説明します。
-- [偶発的な公開を制限](share-limit-accidental-exposure.md)する: 機密コンテンツを誤って組織外のユーザーと共有する危険性を軽減する方法について説明します。
-- [セキュリティで保護されたゲスト共有環境を作成](create-secure-guest-sharing-environment.md)する-組織外のユーザーとの共有が安全かつ安全な方法で行われ、ガバナンス要件を満たしていることを確認するために、Microsoft 365 で提供されるツールについて説明します。
+- [偶発的な公開を制限](share-limit-accidental-exposure.md) する: 機密コンテンツを誤って組織外のユーザーと共有する危険性を軽減する方法について説明します。
+- [セキュリティで保護されたゲスト共有環境を作成](create-secure-guest-sharing-environment.md) する-組織外のユーザーとの共有が安全かつ安全な方法で行われ、ガバナンス要件を満たしていることを確認するために、Microsoft 365 で提供されるツールについて説明します。
 
 ## <a name="collaborate-with-partner-companies"></a>パートナー企業との共同作業
 
-他の組織から多数のゲストが関係する大規模なプロジェクトで作業している場合や、ゲストが頻繁に変更される可能性のある継続的なベンダーの関係がある場合は、Azure Active Directory の資格管理を使用して、ゲスト管理を簡略化し、パートナー会社がその責任で共有できるようにすることができます。 詳細について[は、「管理されたゲストでの B2B エクストラネットの作成](b2b-extranet.md)」を参照してください。
+他の組織から多数のゲストが関係する大規模なプロジェクトで作業している場合や、ゲストが頻繁に変更される可能性のある継続的なベンダーの関係がある場合は、Azure Active Directory の資格管理を使用して、ゲスト管理を簡略化し、パートナー会社がその責任で共有できるようにすることができます。 詳細について [は、「管理されたゲストでの B2B エクストラネットの作成](b2b-extranet.md) 」を参照してください。
 
 ## <a name="limit-sharing"></a>共有を制限する
 
-Microsoft 365 の共有機能の一部がガバナンスポリシーと競合している場合は、「 [365 microsoft の](microsoft-365-limit-sharing.md)共有を制限する」を参照して、共有の制限のオプションについて確認してください。
+Microsoft 365 の共有機能の一部がガバナンスポリシーと競合している場合は、「 [365 microsoft の](microsoft-365-limit-sharing.md) 共有を制限する」を参照して、共有の制限のオプションについて確認してください。
 
 ## <a name="related-topics"></a>関連項目
 
