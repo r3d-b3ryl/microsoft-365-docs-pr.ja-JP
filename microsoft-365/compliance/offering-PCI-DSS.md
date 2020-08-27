@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6709f9edca2e1436bf1ea9be1a48dda596c2d0a4
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 12f61d84557cda1af518bb78de22f4901ebdc08f
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254456"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898095"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -98,6 +98,6 @@ PCI Security Standards Council が提供している情報により、具体的�
 
 - [PCI Security Standards Council](https://www.pcisecuritystandards.org/)
 - [PCI データ セキュリティ基準](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)
-- [Azure PCI DSS 3.2.1 責任マトリックス](https://aka.ms/pciresponsibilitymatrix)
+- [Azure PCI DSS 3.2.1 ブループリント](https://docs.microsoft.com/azure/governance/blueprints/samples/pci-dss-3.2.1/)
 - [PCI DSS クイック レファレンス ガイド](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
