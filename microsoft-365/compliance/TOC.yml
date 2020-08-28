@@ -78,8 +78,51 @@
     - name: 顧客ロックボックス
       href: customer-lockbox-requests.md
 - name: 情報保護の管理
-  href: protect-information.md
   items:
+    - name: データの把握、データの保護、データ損失の防止
+      href: protect-information.md
+    - name: 機密情報の種類
+      items:
+        - name: 機密情報の種類のエンティティ定義
+          href: sensitive-information-type-entity-definitions.md
+        - name: DLP 関数の検索対象
+          href: what-the-dlp-functions-look-for.md
+        - name: DLP のカスタマイズについてもっと詳しく見る
+          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
+        - name: 組み込みの機密情報の種類をカスタマイズする
+          href: customize-a-built-in-sensitive-information-type.md
+        - name: カスタムの機密情報の種類
+          href: custom-sensitive-info-types.md
+        - name: Exact Data Match によりカスタムの機密情報の種類を作成する
+          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: カスタムの機密情報の種類を作成する -セキュリティ/コンプライアンス センター
+          href: create-a-custom-sensitive-information-type.md
+        - name: カスタムの機密情報の種類を作成する - PowerShell
+          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: キーワード 辞書を作成する
+          href: create-a-keyword-dictionary.md
+        - name: ドキュメント フィンガープリンティング
+          href: document-fingerprinting.md
+        - name: 機密情報の DLP 関数
+          href: what-the-dlp-functions-look-for.md
+    - name: トレーニング可能な分類子
+      items:
+        - name: トレーニング可能な分類子の使用を開始する (プレビュー)
+          href: classifier-getting-started-with.md
+        - name: 組み込みの分類子を使用する (プレビュー)
+          href: classifier-using-a-ready-to-use-classifier.md
+        - name: 分類子の作成とトレーニング (プレビュー)
+          href: classifier-creating-a-trainable-classifier.md
+    - name: データの分類
+      items:
+        - name: データの分類を理解する
+          href: data-classification-overview.md
+        - name: コンテンツ エクスプローラーの使用を開始する
+          href: data-classification-content-explorer.md
+        - name: アクティビティ エクスプローラーの使用を開始する
+          href: data-classification-activity-explorer.md
+        - name: データ分類のリリース ノート
+          href: data-classification-pub-preview-relnotes.md
     - name: 秘密度ラベル
       items:
         - name: 秘密度ラベルの詳細
@@ -100,9 +143,77 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Office アプリで秘密度ラベルを使用する
           href: sensitivity-labels-office-apps.md
-    - name: データ損失防止 (DLP)
-      href: data-loss-prevention-policies.md
+    - name: 暗号化
       items:
+        - name: 暗号化を理解する
+          href: encryption.md
+        - name: 二重キー暗号化 (プレビュー)
+          href: double-key-encryption.md
+        - name: Office 365 サービスの暗号化
+          href: office-365-service-encryption.md
+        - name: 顧客キー
+          items:
+            - name: Office 365 のカスタマー キーによるサービスの暗号化
+              href: customer-key-overview.md
+            - name: Office 365 のカスタマー キーを設定する
+              href: customer-key-set-up.md
+            - name: Office 365 のカスタマー キーを管理する
+              href: customer-key-manage.md
+            - name: カスタマー キーまたは可用性キーをローリングまたはローテーションする
+              href: customer-key-availability-key-roll.md
+            - name: カスタマー キーの可用性キーの詳細
+              href: customer-key-availability-key-understand.md
+        - name: メールの暗号化
+          href: email-encryption.md
+          items:
+            - name: Office 365 Message Encryption (OME)
+              href: ome.md
+            - name: 新しい Office 365 Message Encryption 機能を設定する
+              href: set-up-new-message-encryption-capabilities.md
+            - name: Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する
+              href: define-mail-flow-rules-to-encrypt-email.md
+            - name: 暗号化されたメッセージに組織のブランドを追加する
+              href: add-your-organization-brand-to-encrypted-messages.md
+            - name: Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
+              href: ome-sensitive-info-types.md
+            - name: Office 365 Message Encryption
+              href: manage-office-365-message-encryption.md
+            - name: Office 365 Advanced Message Encryption
+              href: ome-advanced-message-encryption.md
+            - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
+              href: ome-advanced-expiration.md
+            - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールを無効にする
+              href: revoke-ome-encrypted-mail.md
+            - name: OME のバージョンを比較する
+              href: ome-version-comparison.md
+            - name: Office 365 Message Encryption に関する FAQ
+              href: ome-faq.md
+            - name: Exchange Online がメールの機密情報をセキュリティで保護する方法
+              href: exchange-online-secures-email-secrets.md
+            - name: Office 365 でメール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
+              href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: BitLocker と Distributed Key Manager (DKM) による暗号化
+              href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+            - name: レガシー OME
+              items:
+                - name: Office 365 Message Encryption の古い情報
+                  href: legacy-information-for-message-encryption.md
+                - name: Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する
+                  href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: SharePoint IRM
+          href: set-up-irm-in-sp-admin-center.md
+        - name: テクニカル リファレンス
+          href: technical-reference-details-about-encryption.md
+        - name: Office 365 の TLS 1.0 および1.1の 廃止
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: Office 365 GCC High および DoD での TLS 1.0 および 1.1 の廃止
+          href: tls-1-2-in-office-365-gcc.md
+        - name: Office 365 の TLS 1.2
+          href: prepare-tls-1.2-in-office-365.md
+    - name: データ損失防止 (DLP)
+      items:
+        - name: データ損失防止 (DLP) について
+          href: data-loss-prevention-policies.md
         - name: DLP と Microsoft Teams
           href: dlp-microsoft-teams.md
         - name: エンドポイント データ損失防止 (プレビュー) について
@@ -131,116 +242,42 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
           href: how-dlp-works-between-admin-centers.md
-    - name: 機密情報の種類
-      items:
-        - name: 機密情報の種類のエンティティ定義
-          href: sensitive-information-type-entity-definitions.md
-        - name: DLP 関数の検索対象
-          href: what-the-dlp-functions-look-for.md
-        - name: DLP のカスタマイズについてもっと詳しく見る
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
-        - name: 組み込みの機密情報の種類をカスタマイズする
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: カスタムの機密情報の種類
-          href: custom-sensitive-info-types.md
-        - name: 完全なデータ一致に基づく分類で、カスタムの機密情報の種類を作成する
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
-          href: create-a-custom-sensitive-information-type.md
-        - name: PowerShell を使用してカスタムの機密情報の種類を作成する
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: キーワード 辞書を作成する
-          href: create-a-keyword-dictionary.md
-        - name: ドキュメント フィンガープリンティング
-          href: document-fingerprinting.md
-        - name: 機密情報の DLP 関数
-          href: what-the-dlp-functions-look-for.md
-    - name: Microsoft 365 での暗号化
-      href: encryption.md
-    - name: Office 365 サービスの暗号化
-      href: office-365-service-encryption.md
-    - name: Office 365 の暗号化についてのテクニカル リファレンスの詳細
-      href: technical-reference-details-about-encryption.md
-    - name: Office 365 の TLS 1.0 および1.1の 廃止
-      href: tls-1.0-and-1.1-deprecation-for-office-365.md
-    - name: Office 365 GCC High および DoD での TLS 1.0 および 1.1 の廃止
-      href: tls-1-2-in-office-365-gcc.md
-    - name: Office 365 の TLS 1.2
-      href: prepare-tls-1.2-in-office-365.md
-    - name: Microsoft 365 の二重キー暗号化パブリックプレビュー
-      href: double-key-encryption.md
-    - name: 顧客キー
-      items:
-        - name: Office 365 のカスタマー キーによるサービスの暗号化
-          href: customer-key-overview.md
-        - name: Office 365 のカスタマー キーを設定する
-          href: customer-key-set-up.md
-        - name: Office 365 のカスタマー キーを管理する
-          href: customer-key-manage.md
-        - name: カスタマー キーまたは可用性キーをローリングまたはローテーションする
-          href: customer-key-availability-key-roll.md
-        - name: カスタマー キーの可用性キーの詳細
-          href: customer-key-availability-key-understand.md
-    - name: 転送中データの暗号化
-      href: office-365-encryption-for-data-in-transit.md
-    - name: メールの暗号化
-      href: email-encryption.md
-      items:
-        - name: Office 365 Message Encryption (OME)
-          href: ome.md
-        - name: 新しい Office 365 Message Encryption 機能を設定する
-          href: set-up-new-message-encryption-capabilities.md
-        - name: Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する
-          href: define-mail-flow-rules-to-encrypt-email.md
-        - name: 暗号化されたメッセージに組織のブランドを追加する
-          href: add-your-organization-brand-to-encrypted-messages.md
-        - name: Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
-          href: ome-sensitive-info-types.md
-        - name: Office 365 Message Encryption
-          href: manage-office-365-message-encryption.md
-        - name: Office 365 Advanced Message Encryption
-          href: ome-advanced-message-encryption.md
-        - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
-          href: ome-advanced-expiration.md
-        - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールを無効にする
-          href: revoke-ome-encrypted-mail.md
-        - name: OME のバージョンを比較する
-          href: ome-version-comparison.md
-        - name: Office 365 Message Encryption に関する FAQ
-          href: ome-faq.md
-        - name: Exchange Online がメールの機密情報をセキュリティで保護する方法
-          href: exchange-online-secures-email-secrets.md
-        - name: Office 365 でメール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
-          href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: BitLocker と Distributed Key Manager (DKM) による暗号化
-          href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
-        - name: レガシー OME
-          items:
-            - name: Office 365 Message Encryption の古い情報
-              href: legacy-information-for-message-encryption.md
-            - name: Office 365 Message Encryption の旧バージョン用に Microsoft Azure AD Rights Management を設定する
-              href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: SharePoint 管理センターで IRM を設定する
-      href: set-up-irm-in-sp-admin-center.md
-    - name: データの分類を理解する
-      href: data-classification-overview.md
-      items:
-        - name: コンテンツ エクスプローラーの使用を開始する
-          href: data-classification-content-explorer.md
-        - name: アクティビティ エクスプローラーの使用を開始する
-          href: data-classification-activity-explorer.md
-        - name: データ分類のリリース ノート
-          href: data-classification-pub-preview-relnotes.md
-        - name: トレーニング可能な分類子の使用を開始する (プレビュー)
-          href: classifier-getting-started-with.md
-        - name: 組み込みの分類子を使用する (プレビュー)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: 分類子の作成とトレーニング (プレビュー)
-          href: classifier-creating-a-trainable-classifier.md
 - name: 情報ガバナンスの管理
   items:
-    - name: 情報ガバナンスの管理
+    - name: データを統制する
       href: manage-information-governance.md
+    - name: データを保持および削除する
+      items:
+        - name: 保持の詳細
+          items:
+            - name: アイテム保持ポリシーと保持ラベル
+              href: retention.md
+            - name: SharePoint と OneDrive の保持
+              href: retention-policies-sharepoint.md
+            - name: Microsoft Teams の保持
+              href: retention-policies-teams.md
+            - name: Exchange の保持
+              href: retention-policies-exchange.md
+        - name: 保持の概要
+          href: get-started-with-retention.md
+        - name: アイテム保持ポリシーを作成する
+          href: create-retention-policies.md
+        - name: ファイル計画を使用する
+          href: file-plan-manager.md
+        - name: 保持ラベルを作成してアプリに適用する
+          href: create-apply-retention-labels.md
+        - name: 保持ラベルをコンテンツに自動的に適用する
+          href: apply-retention-labels-automatically.md
+        - name: SEC Rule 17a-4 に準拠する
+          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: PowerShell で保持ラベルを作成する
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: イベントの発生時に保持を開始する
+          href: event-driven-retention.md
+        - name: 保持ラベルを使用して、ドキュメントのライフサイクルを管理する
+          href: auto-apply-retention-labels-scenario.md
+        - name: データの廃棄を管理する
+          href: disposition.md
     - name: メールボックス データをインポートする
       items:
         - name: PST ファイルのインポートの概要
@@ -287,38 +324,6 @@
           href: enable-unlimited-archiving.md
         - name: メールボックスのアーカイブと削除ポリシーを設定する
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: データを保持および削除する
-      items:
-        - name: 保持の詳細
-          items:
-            - name: アイテム保持ポリシーと保持ラベル
-              href: retention.md
-            - name: SharePoint と OneDrive の保持
-              href: retention-policies-sharepoint.md
-            - name: Microsoft Teams の保持
-              href: retention-policies-teams.md
-            - name: Exchange の保持
-              href: retention-policies-exchange.md
-        - name: 保持の概要
-          href: get-started-with-retention.md
-        - name: アイテム保持ポリシーを作成する
-          href: create-retention-policies.md
-        - name: ファイル計画を使用する
-          href: file-plan-manager.md
-        - name: 保持ラベルを作成してアプリに適用する
-          href: create-apply-retention-labels.md
-        - name: 保持ラベルをコンテンツに自動的に適用する
-          href: apply-retention-labels-automatically.md
-        - name: SEC Rule 17a-4 に準拠する
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: PowerShell で保持ラベルを作成する
-          href: bulk-create-publish-labels-using-powershell.md
-        - name: イベントの発生時に保持を開始する
-          href: event-driven-retention.md
-        - name: 保持ラベルを使用して、ドキュメントのライフサイクルを管理する
-          href: auto-apply-retention-labels-scenario.md
-        - name: データの廃棄を管理する
-          href: disposition.md
     - name: 非アクティブなメールボックスを管理する
       items:
         - name: 非アクティブなメールボックスの概要
@@ -333,10 +338,8 @@
           href: restore-an-inactive-mailbox.md
         - name: 非アクティブなメールボックスを削除する
           href: delete-an-inactive-mailbox.md
-    - name: データ ガバナンスの詳細情報
-      items:
-        - name: Microsoft のデータ ガバナンス チームによるビデオを見る
-          href: 'https://go.microsoft.com/fwlink/?linkid=867039'
+    - name: データ ガバナンス チームによるビデオ
+      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: レコード管理
       items:
         - name: レコード管理の詳細
