@@ -22,34 +22,36 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Microsoft 365 プランを変更する前に、Outlook、OneDrive、Yammer、および SharePoint のコンテンツをバックアップします。
-ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 1158a98fc35c586ae900ef64579b52b9d64a85e6
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818533"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294719"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Microsoft 365 for business プランを切り替える前にデータをバックアップする
 
 ユーザーが、データ関連サービスの数が少なくなる別のサブスクリプションに切り替わった場合、またはユーザーが組織を離れた場合は、Microsoft 365 に保存されているデータのコピーをダウンロードしてから、新しいサブスクリプションに切り替えることができます。
+
+同じまたは複数のサービスを持つサブスクリプションにユーザーを移動する場合は、ユーザーデータをバックアップする必要はありません。 [ユーザーを別のサブスクリプションに移動するを](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription)参照してください。
   
 ## <a name="save-a-copy-of-outlook-information"></a>Outlook 情報のコピーを保存する
 
-ユーザーが Outlook を使用している場合は、プランを切り替える前に、[電子メール、連絡先、予定表を outlook の .pst ファイルにエクスポートまたはバックアップ](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)することができます。
+ユーザーが Outlook を使用している場合は、プランを切り替える前に、 [電子メール、連絡先、予定表を outlook の .pst ファイルにエクスポートまたはバックアップ](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) することができます。
   
-新しいプランへの切り替えが完了すると、ユーザーは[Outlook .pst ファイルからメール、連絡先、予定表をインポート](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)できます。
+新しいプランへの切り替えが完了すると、ユーザーは [Outlook .pst ファイルからメール、連絡先、予定表をインポート](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)できます。
   
 ## <a name="save-files-stored-in-onedrive-for-business"></a>OneDrive for business に保存されているファイルを保存する
 
-別のサブスクリプションに切り替える前に、ユーザーは[OneDrive または SharePoint からファイルやフォルダー](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05)を別の場所 (コンピューターのハードドライブ上のフォルダー、または組織のネットワーク上のファイル共有) にダウンロードできます。
+別のサブスクリプションに切り替える前に、ユーザーは [OneDrive または SharePoint からファイルやフォルダー](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) を別の場所 (コンピューターのハードドライブ上のフォルダー、または組織のネットワーク上のファイル共有) にダウンロードできます。
   
 ## <a name="save-yammer-information"></a>Yammer 情報の保存
 
-管理者はすべてのメッセージ、ノート、ファイル、トピック、ユーザー、グループを .zip ファイルにエクスポートできます。 詳細については、「 [Yammer Enterprise からデータをエクスポート](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data)する」を参照してください。 開発者は[YAMMER API](https://go.microsoft.com/fwlink/p/?linkid=842495)を使用してこれを行うこともできます。
+管理者はすべてのメッセージ、ノート、ファイル、トピック、ユーザー、グループを .zip ファイルにエクスポートできます。 詳細については、「 [Yammer Enterprise からデータをエクスポート](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data)する」を参照してください。 開発者は [YAMMER API](https://go.microsoft.com/fwlink/p/?linkid=842495) を使用してこれを行うこともできます。
   
 ## <a name="how-to-save-sharepoint-information"></a>SharePoint 情報を保存する方法
 
-ユーザーが SharePoint Online を持つサブスクリプションから、それを持たないサブスクリプションに切り替えられた場合、 **sharepoint**タイルは Microsoft 365 メニューに表示されなくなります。
+ユーザーが SharePoint Online を持つサブスクリプションから、それを持たないサブスクリプションに切り替えられた場合、 **sharepoint** タイルは Microsoft 365 メニューに表示されなくなります。
   
 ただし、切り替える前と同じ組織で新しいサブスクリプションを使う場合、ユーザーは SharePoint チーム サイトに引き続きアクセスできます。チーム サイトへの直接 URL を使って、ノートブック、ドキュメント、タスク、予定表の表示や更新ができます。
   
@@ -62,7 +64,7 @@ ms.locfileid: "44818533"
 https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 ```
 
-ここ _\<orgDomain\>_ で、は組織の URL です。
+ここ  _\<orgDomain\>_ で、は組織の URL です。
   
 たとえば、組織のドメインが contoso.onmicrosoft.com の場合、チーム サイトへの直接 URL は https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx のようになります。
   

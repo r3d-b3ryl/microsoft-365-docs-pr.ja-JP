@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866921"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289665"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコア
 
@@ -30,9 +30,8 @@ ms.locfileid: "46866921"
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-これらの変更は、ライセンスに応じて、近日中にマイクロソフトのセキュリティで保護されたスコアになることがあります。 最近の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-new.md)」を参照してください。
-
-- 「Enable policy to legacy authentication」という名前の Azure Active Directory 向上アクションについて、最大スコアを7から8に変更します。
+### <a name="september-2020"></a>2020年9月
+- 変更は計画されていません
 
 ## <a name="related-resources"></a>関連リソース
 

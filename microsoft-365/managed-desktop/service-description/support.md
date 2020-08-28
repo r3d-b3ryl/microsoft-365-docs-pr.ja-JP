@@ -1,17 +1,17 @@
 ---
 title: Microsoft マネージドデスクトップのサポート
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de113fd61fbb8fabaea64d58525a2f8aca052e90
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632003"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289783"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのサポート
 
@@ -27,7 +27,7 @@ Microsoft は、予防的でリアクティブなインシデント管理を行�
 Microsoft マネージドデスクトップのサポートは次のとおりです。
 
 - Microsoft マネージドデスクトップデバイス専用のエンジニアチーム
-- Microsoft マネージドデスクトップデバイスを使用するエンドユーザー向けのサポートオプション
+- Microsoft マネージドデスクトップデバイスを使用するユーザーのサポートオプション
 - Microsoft マネージドデスクトップデバイスを管理するエンジニアに対して、Microsoft マネージドデスクトップデバイスへの限定的な管理アクセス権を付与します。 
 
 サポートされる製品:
@@ -45,7 +45,7 @@ Microsoft マネージドデスクトップのサポートは次のとおりで�
 - Microsoft マネージドデスクトップに含まれていない "テスト" グループとデバイスの microsoft マネージドデスクトップデバイスがスコープ外 
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [IT 管理者がサポートを受ける方法を説明します。](../working-with-managed-desktop/admin-support.md)
-- [エンドユーザーがサポートを受ける方法を説明します。](../working-with-managed-desktop/end-user-support.md)
+- [ユーザーがサポートを受ける方法を説明します。](../working-with-managed-desktop/end-user-support.md)

@@ -10,23 +10,23 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0b76a14a30caeb75cfdcb8acc5715fe6710e0625
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430449"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289461"
 ---
 # <a name="work-with-app-control"></a>アプリ制御を操作する
 
-ご使用の環境でアプリ管理が展開されると、お客様と Microsoft が管理するデスクトップ操作の両方に、継続的な責任があります。 たとえば、環境に新しいアプリを追加したり、信頼できる署名者を追加 (または削除) したりする場合があります。 セキュリティを強化するには、エンドユーザーにリリースする前に、すべてのアプリをコード署名する必要があります。 アプリの発行元の詳細には、署名者に関する情報が含まれています。
+ご使用の環境でアプリ管理が展開されると、お客様と Microsoft が管理するデスクトップ操作の両方に、継続的な責任があります。 たとえば、環境に新しいアプリを追加したり、信頼できる署名者を追加 (または削除) したりする場合があります。 セキュリティを強化するには、ユーザーにリリースする前に、すべてのアプリをコード署名する必要があります。 アプリの発行元の詳細には、署名者に関する情報が含まれています。
 
 
 ## <a name="add-a-new-app"></a>新しいアプリの追加
 
 新しいアプリを追加するには、次の手順を実行します。
 
-1. アプリを[Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)に追加します。
+1. アプリを [Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management)に追加します。
 2. アプリをテストリングの任意のデバイスに展開します。 
 3. 標準のビジネスプロセスに従ってアプリをテストします。 
 4. **Application And Services Logs\Microsoft\Windows\AppLocker**の下にあるイベントビューアーを調べて、 **8003**または**8006**イベントを探します。 これらのイベントは、アプリがブロックされることを示します。 すべてのアプリケーションのロッカーイベントとその意味については、「 [AppLocker でイベントビューアーを使用する](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker)」を参照してください。
@@ -45,7 +45,7 @@ ms.locfileid: "45430449"
     - 発行元の詳細 (例: "O = <publisher name> , L = <location> , S = State, C = Country") 
 
 > [!NOTE]
-> アプリの信頼を削除するには、同じ手順を実行しますが、[**変更の種類**] を [*削除*] に設定します。
+> アプリの信頼を削除するには、同じ手順を実行しますが、[ **変更の種類** ] を [ *削除*] に設定します。
 
 このスケジュールに従って、ポリシーは展開グループに段階的に展開されます。
 
@@ -70,8 +70,8 @@ ms.locfileid: "45430449"
 1. テストリングで監査モードポリシーが適用された Microsoft マネージドデスクトップデバイスを検索します。 
 2. デバイスにアプリをインストールしようとしています。
 3. そのデバイスでイベントビューアーを開きます。 
-4. イベントビューアーで、[**アプリケーションとサービス Logs\Microsoft\Windows**] に移動し、[ **AppLocker**] を選択します。 
-5. 任意の**8003**または**8006**イベントを検索し、そのイベントから情報をコピーします。 
+4. イベントビューアーで、[ **アプリケーションとサービス Logs\Microsoft\Windows**] に移動し、[ **AppLocker**] を選択します。 
+5. 任意の **8003** または **8006** イベントを検索し、そのイベントから情報をコピーします。 
     - アプリケーション名 
     - アプリケーションのバージョン 
     - 説明 

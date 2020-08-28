@@ -15,12 +15,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 description: Microsoft Home プログラムに関するよく寄せられる質問 (FAQ)
-ms.openlocfilehash: 9d37afb952374b3d01d3ef3212b82cfd1ccde7a7
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903497"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294688"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft Home でプログラムを使用するとよく寄せられる質問 (FAQ)
 
@@ -34,14 +34,13 @@ ms.locfileid: "46903497"
 
 Microsoft Home Use プログラム (HUP) を使用すると、対象となる企業の従業員は、割引で Microsoft コンシューマー製品を購入できます。 [ [ホーム] [プログラム製品の使用] ページ](https://www.microsoft.com/home-use-program)にアクセスして、各製品サービスの現在の割引を確認できます。
 
-## <a name="in-which-countries-is-this-benefit-available"></a>この特典を利用できる国を教えてください。
+## <a name="in-which-markets-is-the-home-use-program-offered"></a>ホーム使用プログラムが提供されているマーケットはどのようなものですか?
 
-ここ (Microsoft Store for Business) で特典をアクティブにすると、Microsoft 製品の HUP 割引は、次のことを除き、世界中のほとんどの国の従業員が利用できます。
+Microsoft 365 ファミリおよび個人サブスクリプションの割引は、以下の例外を含む、世界中の対象企業に提供されます。
 
-- ロシア
-- ベネズエラ
-
-HUP 割引は、Surface devices とアクセサリ、および Xbox ゲームパスの最終購入時にも利用可能な場合があります。 可用性については、「 [Microsoft 365 サブスクリプション](https://go.microsoft.com/fwlink/p/linkid=2139192)」を参照してください。
+- 中華人民共和国、ロシア、ベネズエラ: この特典は、これらの市場ではご利用になれません。
+- 中国および香港: これらの市場では1年間のサブスクリプションが提供されています。 中国の場合は、 [中国の Microsoft 365 に](https://www.microsoftstore.com.cn/home-use-program/invite)アクセスしてください。 香港については、「 [Microsoft 365 を割引価格で購入する](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)」を参照してください。
+- 日本: Microsoft 365 ファミリは利用できません。
 
 ## <a name="how-does-an-organization-qualify-for-hup-discounts"></a>組織が HUP 割引にどのように適合しているか。
 
@@ -64,12 +63,6 @@ HUP 割引は、Surface devices とアクセサリ、および Xbox ゲームパ
 会社のドメイン (例: contoso .com) を所有していることを証明するために、DNS に特別なレコードを作成する必要があります。
 
 管理されたテナントになるためのステップごとのプロセスについては、「 [Azure Active で管理者として管理](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)されていないディレクトリを引き継ぐ」を参照してください。
-
-## <a name="where-can-i-find-marketing-materials-to-help-promote-the-program-within-my-company"></a>会社内でプログラムを宣伝するのに役立つマーケティング資料を見つけることができますか?
-
-会社のオンボードマーケティング資料は、「Microsoft Home プログラムのオンボードマテリアル」リンクの下にある管理ポータルの [ _バージョン情報_ ] セクションで見つけることができます。
-
-[IT/人事管理者向けリソース] ページで、販促用資料をすばやく検索することもできます。 [ [ホーム] [プログラムのホームページ](https://www.microsoft.com/home-use-program/resources) ] の順に移動して、ページの [ _home use program 販促リソース_ ] セクションまで下にスクロールします。
 
 ## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>ホーム使用プログラムが従業員にもたらすメリットを促進するために利用できるリソース
 

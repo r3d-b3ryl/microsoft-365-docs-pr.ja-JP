@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530105"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289593"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのアプリ
 
@@ -26,24 +26,24 @@ ms.locfileid: "46530105"
 
 Microsoft では、microsoft マネージドデスクトップに参加するために必要な Microsoft 365 E3 または E5 ライセンスと共に、特定の主要なアプリが含まれています。 ただし、これらのアプリが提供されている場合でも、一部の責任とアクションを完了することができます。
 
-また、Microsoft Intune の展開パイプラインを使用して、会社のポータルまたは必要なバックグラウンドインストールを通じて、Microsoft 以外の追加のアプリをエンドユーザーに展開することもできます。 専門知識を持っている場合は、必要なアプリを自分で移行できます。または、Microsoft コンサルティングサービス (MCS) または Microsoft 以外のベンダーが、パッケージ化と移行のプロジェクトにお役立てください。 MCS の使用の詳細については、「 [Microsoft コンサルティングサービスを使用](apps-MCS.md)する」を参照してください。
+また、Microsoft Intune の展開パイプラインを使用して、会社のポータルまたは必要なバックグラウンドインストールを通じて、Microsoft 以外の追加のアプリをユーザーに展開することもできます。 専門知識を持っている場合は、必要なアプリを自分で移行できます。または、Microsoft コンサルティングサービス (MCS) または Microsoft 以外のベンダーが、パッケージ化と移行のプロジェクトにお役立てください。 MCS の使用の詳細については、「 [Microsoft コンサルティングサービスを使用](apps-MCS.md)する」を参照してください。
 
 
 ## <a name="apps-provided-by-microsoft"></a>Microsoft によって提供されるアプリ
 
-Microsoft Managed Desktop license には、Microsoft 365 Apps for enterprise Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、および OneNote) の64ビットバージョンのアプリが含まれています。クイック実行バージョンの Microsoft Project と Visio は既定では含まれて*いません*が、追加するように要求することができます。 これらのアプリの詳細については、「microsoft [Project または Microsoft Visio を Microsoft マネージドデスクトップデバイスにインストール](../get-started/project-visio.md)する」を参照してください。
+Microsoft Managed Desktop license には、Microsoft 365 Apps for enterprise Standard Suite (Word、Excel、PowerPoint、Outlook、Publisher、Access、Skype for Business、および OneNote) の64ビットバージョンのアプリが含まれています。クイック実行バージョンの Microsoft Project と Visio は既定では含まれて *いません* が、追加するように要求することができます。 これらのアプリの詳細については、「microsoft [Project または Microsoft Visio を Microsoft マネージドデスクトップデバイスにインストール](../get-started/project-visio.md)する」を参照してください。
 
 ### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Microsoft が提供するアプリのサポート内容
 
-Microsoft は、エンタープライズアプリ用に同梱されている Microsoft 365 アプリの展開、更新、およびサポートに関する完全なサービスを提供します。 既定では、クイック実行バージョンの Microsoft Project と Visio は含まれて*いません*が、Microsoft Managed Desktop は展開グループを提供し、IT 管理者がライセンスを管理したり、組織に適したアプリケーションを展開したりできるようにします。 Microsoft は、Microsoft マネージドデスクトップサポートチャネルを使用して、これらのアプリケーションのエンドユーザーをサポートします。
+Microsoft は、エンタープライズアプリ用に同梱されている Microsoft 365 アプリの展開、更新、およびサポートに関する完全なサービスを提供します。 既定では、クイック実行バージョンの Microsoft Project と Visio は含まれて *いません* が、Microsoft Managed Desktop は展開グループを提供し、IT 管理者がライセンスを管理したり、組織に適したアプリケーションを展開したりできるようにします。 Microsoft は、Microsoft マネージドデスクトップサポートチャネルを使用して、これらのアプリケーションのユーザーをサポートします。
 
 ### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>提供するアプリをサポートするために必要な作業
 
 これらのアプリで実行する必要があるいくつかの事柄があります。
 
-- **ライセンスの割り当て**-エンタープライズ向け Microsoft 365 アプリのエンドユーザーに対して、適切なライセンスを取得して割り当てる責任があります。
-- **セキュリティグループにユーザーを追加する**-Microsoft Project または Visio を使用している場合は、IT 管理者が該当する展開グループにユーザーを追加する必要があります。 IT 管理者は、そのユーザーが会社を去る場合に、そのユーザーからライセンスを再利用する責任も担います。
-- **Microsoft 365 アドオンを展開**する-エンタープライズアプリ用の Microsoft 365 アプリのいずれかにアドオンが必要な場合は、他の Windows 32 アプリと同じように展開します。 
+- **ライセンスの割り当て** -エンタープライズ向けの Microsoft 365 アプリのユーザーに適切なライセンスを取得して割り当てる責任があります。
+- **セキュリティグループにユーザーを追加する** -Microsoft Project または Visio を使用している場合は、IT 管理者が該当する展開グループにユーザーを追加する必要があります。 IT 管理者は、そのユーザーが会社を去る場合に、そのユーザーからライセンスを再利用する責任も担います。
+- **Microsoft 365 アドオンを展開** する-エンタープライズアプリ用の Microsoft 365 アプリのいずれかにアドオンが必要な場合は、他の Windows 32 アプリと同じように展開します。 
 
 ## <a name="apps-you-provide"></a>提供するアプリ
 
@@ -56,7 +56,7 @@ Microsoft エンドポイント構成マネージャーを使用してアプリ�
 アプリを確認し、次の点を確認します。
 
 - 「 [Microsoft Managed Desktop app の要件](https://aka.ms/app-req)」で説明されているように、禁止されている、または制限された動作を持つアプリはありません。
-- アプリは、Microsoft Intune による管理の準備が整っている必要があります。 詳細については、「 [Microsoft intune を使用した Windows 10 アプリの展開](https://docs.microsoft.com/intune/apps-windows-10-app-deploy)」および「 [microsoft intune にアプリを追加する](https://docs.microsoft.com/intune/apps-add)」を参照してください。
+- アプリは、Microsoft Intune による管理の準備が整っている必要があります。 詳細については、「 [Microsoft intune を使用した Windows 10 アプリの展開](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) 」および「 [microsoft intune にアプリを追加する](https://docs.microsoft.com/intune/apps-add)」を参照してください。
 - ライセンスキーの提供、ライセンス条項に同意する、事前設定のサーバー接続など、その他のプレパッケージング要件。
 
 ### <a name="decide-how-to-package-apps"></a>アプリをパッケージ化する方法を決定する

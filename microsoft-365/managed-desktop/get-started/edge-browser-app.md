@@ -1,6 +1,6 @@
 ---
 title: 新しい Microsoft Edge
-description: ''
+description: 新しいエッジブラウザーを展開および更新する方法について説明します。
 keywords: ブラウザー、Microsoft Managed Desktop、Microsoft 365、service、ドキュメント
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903873"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294676"
 ---
 # <a name="new-microsoft-edge-app"></a>新しい Microsoft Edge アプリ
 
@@ -35,7 +35,6 @@ Microsoft マネージドデスクトップは、6週間ごとに自動更新さ
 
 Microsoft Edge が正しく更新されるように、Microsoft Edge [更新ポリシー](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)を変更しないでください。
 
-### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge ベータチャネル
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップによって管理される設定
@@ -44,7 +43,7 @@ Microsoft マネージドデスクトップでは、ブラウザーをセキュ�
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge 拡張機能
 
-Microsoft マネージドデスクトップデバイス上の Microsoft Edge のセキュリティベースラインは、2つのポリシーを設定して、Chrome 拡張およびセキュリティで保護されたエンドユーザーをすべて無効にします。 環境で拡張機能を有効にして展開するには、「管理する設定」を参照してください。 
+Microsoft マネージドデスクトップデバイス上の Microsoft Edge のセキュリティベースラインは、2つのポリシーを設定して、Chrome 拡張とセキュリティ保護されたユーザーをすべて無効にします。 環境で拡張機能を有効にして展開するには、「管理する設定」を参照してください。 
 
 #### <a name="extension-installation-blocklist"></a>拡張機能のインストール blocklist
 **既定値:** すべての
@@ -77,7 +76,7 @@ SSL エラーが発生しているサイトにユーザーがアクセスでき�
 
 **既定値:** い
 
-エンドユーザーを保護するために、既定で有効になっています。
+ユーザーを保護するために既定で有効になります。
 
 #### <a name="windows-defender-smartscreen-prompts-for-sites"></a>サイトの Windows Defender SmartScreen プロンプト
 
@@ -105,7 +104,7 @@ SSL エラーが発生しているサイトにユーザーがアクセスでき�
 
 **既定値:** 党
 
-エンドユーザーが自分のデバイスにパスワードを保存することを許可することはお勧めしません。
+ユーザーが自分のデバイスにパスワードを保存することを許可することはお勧めしません。
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Microsoft Edge の Internet Explorer モード
 Microsoft Edge で IE モードを使用すると、組織が必要とするすべてのサイトを1つのブラウザーで簡単に使用できるようになります。 Chromium レンダリングエンジンと互換性のあるサイトには、統合された Chromium エンジンを使用します。また、IE 機能に依存していないサイトまたは Internet Explorer 11 (IE11) の Trident MSHTML エンジンを使用します。 [詳細情報](https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

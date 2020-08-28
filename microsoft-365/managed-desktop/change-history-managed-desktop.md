@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528038"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289605"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
@@ -33,11 +33,11 @@ ms.locfileid: "46528038"
 [アプリ制御の使用を開始する](get-started/get-started-app-control.md) | 更新された記事
 [アプリ制御を操作する](working-with-managed-desktop/work-with-app-control.md) | 更新された記事
 [Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
-[アプリコントロール](service-description/app-control.md) | 更新された記事
+[アプリ コントロール](service-description/app-control.md) | 更新された記事
 [Microsoft マネージド デスクトップのネットワーク構成](get-ready/network.md) | 更新された記事
 [新しい Microsoft Edge アプリ](get-started/edge-browser-app.md) | 更新された記事
 [管理ポータルにアクセスする](get-started/access-admin-portal.md) | 新しい記事
-[アプリコントロール](service-description/app-control.md) | 新しい記事
+[アプリ コントロール](service-description/app-control.md) | 新しい記事
 [Microsoft Project または microsoft Visio を Microsoft マネージドデスクトップデバイスにインストールする](get-started/project-visio.md) | 更新された記事
 
 ## <a name="june-2020"></a>2020 年 6 月
@@ -51,7 +51,7 @@ ms.locfileid: "46528038"
 ## <a name="may-2020"></a>2020 年 5 月
 新規または変更された記事 | 説明
 --- | ---
-[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[ユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [デバイスを登録するためのパートナー向け手順](get-started/register-devices-partner.md) | 更新された記事
 [Microsoft マネージドデスクトップデバイス](service-description/device-list.md) | 更新された記事
 [新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
@@ -121,7 +121,7 @@ ms.locfileid: "46528038"
 新規または変更された記事 | 説明
 --- | ---
 [サービス プランの例外](service-description/customizing.md) | 新しい記事
-[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[ユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
 [サービスの変更とコミュニケーション](service-description/servicechanges.md) | 新しい記事
 [新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
@@ -135,7 +135,7 @@ ms.locfileid: "46528038"
 新規または変更された記事 | 説明
 --- | ---
 [Microsoft マネージド デスクトップのテクノロジ](intro/technologies.md) | 更新された記事
-[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[ユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [Microsoft マネージドデスクトップデバイス](service-description/device-list.md) | 更新された記事
 [構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ](working-with-managed-desktop/config-setting-deploy.md) | 更新された記事
 [Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
@@ -150,7 +150,7 @@ ms.locfileid: "46528038"
 --- | ---
 [Microsoft コンサルティング サービスを使用する](get-ready/apps-mcs.md) | 更新された記事
 [Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
-[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[ユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 更新された記事
 [Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
 [Microsoft マネージド デスクトップのテクノロジ](intro/technologies.md) | 更新された記事
 
@@ -183,7 +183,7 @@ ms.locfileid: "46528038"
 [Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](get-ready/mapped-drives.md) | 新しい記事
 [Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](get-ready/certs-wifi-lan.md) | 新しい記事
 [Microsoft マネージドデスクトップデバイスの注文](get-started/devices.md) | 更新された記事
-[エンド ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 新しい記事
+[ユーザーのヘルプを取得する](working-with-managed-desktop/end-user-support.md) | 新しい記事
 
 ## <a name="april-2019"></a>2019 年 4 月
 新規または変更された記事 | 説明
@@ -226,7 +226,7 @@ ms.locfileid: "46528038"
 
 新規または変更された記事 | 説明
 --- | ---
-[Microsoft マネージドデスクトップのサポート](service-description/support.md)<br />[Microsoft マネージドデスクトップのエンドユーザーサポート](working-with-managed-desktop/end-user-support.md) | オーストラリアを含むように更新しました。
+[Microsoft マネージドデスクトップのサポート](service-description/support.md)<br />[Microsoft マネージドデスクトップのユーザーサポート](working-with-managed-desktop/end-user-support.md) | オーストラリアを含むように更新しました。
 
 ## <a name="october-30-2018"></a>2018年10月30日
 コンテンツの再編成: [Microsoft Managed Desktop service の説明](service-description/index.md)のセクションが追加されました。 

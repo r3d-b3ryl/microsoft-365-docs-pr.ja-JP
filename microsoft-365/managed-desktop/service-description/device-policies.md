@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d16f63490de8060eea7ef06a4ad6960d846f16eb
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529387"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289711"
 ---
 # <a name="device-configuration"></a>デバイス構成
 
@@ -23,7 +23,7 @@ ms.locfileid: "46529387"
 
 <!-- Device configuration and Security Addendum-->
 
-Microsoft マネージドデスクトップの新しいデバイスがセットアップされている場合は、Microsoft マネージドデスクトップ用に最適化された適切な構成を備えていることを確認してください。 これには、オンボードプロセスの一部として設定される一連の既定のポリシーが含まれています。 これらのポリシーは、可能な限り、モバイルデバイス管理 (MDM) を使用して配信されます。 詳細については、「[モバイルデバイス管理](https://docs.microsoft.com/windows/client-management/mdm/)」を参照してください。 
+Microsoft マネージドデスクトップの新しいデバイスがセットアップされている場合は、Microsoft マネージドデスクトップ用に最適化された適切な構成を備えていることを確認してください。 これには、オンボードプロセスの一部として設定される一連の既定のポリシーが含まれています。 これらのポリシーは、可能な限り、モバイルデバイス管理 (MDM) を使用して配信されます。 詳細については、「 [モバイルデバイス管理](https://docs.microsoft.com/windows/client-management/mdm/)」を参照してください。 
 
 >[!NOTE]
 >競合を回避するには、これらのポリシーを変更しないようにします。
@@ -37,18 +37,18 @@ Microsoft マネージドデスクトップの新しいデバイスがセット�
 ポリシー | 説明
 --- | ---
 セキュリティベースライン | MDM の[microsoft セキュリティベースライン](https://docs.microsoft.com/windows/device-security/windows-security-baselines)は、Microsoft マネージドデスクトップデバイスすべてに対して構成されています。 この基準は、業界標準の構成です。 これは一般にリリースされ、十分にテストされており、microsoft のセキュリティ担当者によって、モダンワークプレースで Microsoft の管理されたデスクトップデバイスとアプリが安全に保たれるようになっています。 <br><br>常に進化しているセキュリティ脅威の状況において脅威を軽減するために、Microsoft セキュリティベースラインが更新され、Windows 10 機能更新プログラムごとに Microsoft マネージドデスクトップデバイスに展開されます。<br><br>詳細については、「 [Windows セキュリティベースライン](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)」を参照してください。
-Microsoft Managed デスクトップ推奨セキュリティテンプレート | ユーザーの利便性を最適化する、セキュリティベースラインに対する推奨される変更のセット。  これらの変更点につい[ては、「セキュリティ補遺](#security-addendum)」に記載されています。 補遺のポリシーへの更新は、必要に応じて実行されます。  
+Microsoft Managed デスクトップ推奨セキュリティテンプレート | ユーザーの利便性を最適化する、セキュリティベースラインに対する推奨される変更のセット。  これらの変更点につい [ては、「セキュリティ補遺](#security-addendum)」に記載されています。 補遺のポリシーへの更新は、必要に応じて実行されます。  
 更新プログラムの展開 | Windows Update for Business を使用して、ソフトウェア更新プログラムの段階的な展開を行います。 IT 管理者は、展開グループポリシーの設定を変更することはできません。 グループベースの展開の詳細については、「 [Microsoft マネージドデスクトップでの更新プログラムの処理方法](updates.md)」を参照してください。
-従量制課金接続 | 既定では、従量制課金接続 (LTE ネットワークなど) での更新はオフになっていますが、各ユーザーは **[設定 > 更新 > プログラム] の [詳細オプション]** でこの機能を個別に有効にすることができます。 すべてのユーザーが従量制課金接続での更新を有効にできるようにするには、[変更要求を送信](../working-with-managed-desktop/admin-support.md)します。これにより、すべてのデバイスに対してこの設定が有効になります。
+従量制課金接続 | 既定では、従量制課金接続 (LTE ネットワークなど) での更新はオフになっていますが、各ユーザーは **[設定 > 更新 > プログラム] の [詳細オプション]** でこの機能を個別に有効にすることができます。 すべてのユーザーが従量制課金接続での更新を有効にできるようにするには、 [変更要求を送信](../working-with-managed-desktop/admin-support.md)します。これにより、すべてのデバイスに対してこの設定が有効になります。
 | デバイスのポリシー準拠 | これらのポリシーは、すべての Microsoft マネージドデスクトップデバイスに対して構成されます。 デバイスは、必要なセキュリティ構成から drifts されている場合に、準拠していないと報告されます。
 
 ## <a name="diagnostic-data"></a>診断ログ
 
- デバイスは、既知の商用識別子の下に拡張診断データを Microsoft に提供するように設定されます。 Microsoft マネージドデスクトップの一部として、IT 管理者はこれらの設定を変更できません。 一般的なデータ保護規則 (GDPR) 地域のお客様にとって、エンドユーザーは提供される診断データのレベルを下げることができますが、サービスが減少します。 たとえば、Microsoft マネージドデスクトップでは、パフォーマンスとセキュリティのニーズを満たすために、設定とポリシーを反復処理するために必要なデータを収集することはできません。 詳細については、「[組織で Windows 診断データを構成する](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)」を参照してください。
+ デバイスは、既知の商用識別子の下に拡張診断データを Microsoft に提供するように設定されます。 Microsoft マネージドデスクトップの一部として、IT 管理者はこれらの設定を変更できません。 一般的なデータ保護規則 (GDPR) 地域のお客様の場合、ユーザーは提供される診断データのレベルを下げることができますが、サービスが減少します。 たとえば、Microsoft マネージドデスクトップでは、パフォーマンスとセキュリティのニーズを満たすために、設定とポリシーを反復処理するために必要なデータを収集することはできません。 詳細については、「[組織で Windows 診断データを構成する](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)」を参照してください。
 
 ## <a name="security-addendum"></a>セキュリティ補遺
 
- このセクションでは、[既定のポリシー](#default-policies)にリストされている標準の Microsoft 管理デスクトップポリシーに加えて展開されるポリシーの概要について説明します。 この構成は、金融サービスおよび規制の厳しい業界を念頭に置いて設計されており、ユーザーの生産性を維持しながら、最高のセキュリティを実現します。
+ このセクションでは、 [既定のポリシー](#default-policies)にリストされている標準の Microsoft 管理デスクトップポリシーに加えて展開されるポリシーの概要について説明します。 この構成は、金融サービスおよび規制の厳しい業界を念頭に置いて設計されており、ユーザーの生産性を維持しながら、最高のセキュリティを実現します。
 
  ### <a name="additional-security-policies"></a>その他のセキュリティポリシー
 

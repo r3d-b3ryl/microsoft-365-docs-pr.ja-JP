@@ -1,17 +1,17 @@
 ---
 title: サポートされている地域と言語
 description: Microsoft マネージドデスクトップでサポートされている地域と言語
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 58d3355788d9af4297ba454c404b4b2b920c358e
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: bf3d1745030561102b5b7b25611001a4d7698ef0
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790695"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289653"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Microsoft Managed Desktop サポートされている地域と言語
 
@@ -19,7 +19,7 @@ ms.locfileid: "43790695"
 
 ## <a name="supported-languages"></a>サポートされている言語
 
-英語は、Microsoft マネージドデスクトップのユーザーが使用できる唯一の言語です。 これには、エンドユーザーと管理者の両方のユーザーインターフェイスと、[管理者サポート](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support)と[エンドユーザー](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)の両方のサポートの両方の操作が含まれます。
+英語は、Microsoft マネージドデスクトップのユーザーが使用できる唯一の言語です。 これには、ユーザーと管理者の両方のすべてのユーザーインターフェイスと、 [管理者サポート](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) と [エンドユーザー](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)の両方のサポートの両方の操作が含まれます。
 
 
 Microsoft マネージドデスクトップサービスを中断することなく、英語圏外の地域の外部で管理されたデバイスを引き続き使用できます。 たとえば、英国に基づく従業員は、アジア、ヨーロッパ、南アメリカを移動しているときに、管理対象デバイスで安全に作業し、更新情報を受信することができます。 
@@ -45,4 +45,4 @@ Microsoft マネージドデスクトップでのユーザーサポートの詳�
 - オーストラリア
 - ニュージーランド
 
-これらの地域のエンドユーザーと管理者は、自分のデバイスと管理ツールに英語を使用する必要があります。 
+これらの地域のユーザーと管理者は、自分のデバイスと管理ツールに英語を使用する必要があります。 

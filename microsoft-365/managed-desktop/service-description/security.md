@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778258"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289485"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティテクノロジ
 
@@ -62,7 +62,7 @@ Id およびアクセス管理により、企業の資産とビジネス上の�
 
 サービス | 説明
 --- | ---
-VPN | お客様は VPN インフラストラクチャを所有しており、制限された企業リソースをイントラネットの外部に公開することができます。<br><br>最小要件: Microsoft Managed Desktop には、Windows 10 互換およびサポートされている VPN ソリューションが必要です。 組織に VPN ソリューションが必要な場合は、Windows 10 をサポートし、Intune 経由でパッケージ化して展開する必要があります。 詳細については、ソフトウェアの発行元にお問い合わせください。<br><br>勧告<br>-Microsoft では、Intune を使用して VPN プロファイルをプッシュして簡単に展開できる先進の VPN ソリューションをお勧めします。 これにより、常に、シームレスで信頼性が高く、企業ネットワークにアクセスするための安全な方法が提供されます。 詳細については、「 [Intune の VPN 設定](https://docs.microsoft.com/intune/vpn-settings-configure)」を参照してください。<br>-サードユーザー環境に影響を与える可能性があるため、microsoft マネージドデスクトップの使用時に Microsoft は、太 VPN クライアントまたはレガシ VPN クライアントをお勧めしません。<br>-Microsoft では、パフォーマンスの問題を回避するために、送信 web トラフィックを VPN 経由で直接インターネットに移動することをお勧めします。<br>-Microsoft では、VPN の代わりに Azure Active Directory アプリプロキシを使用することをお勧めします。
+VPN | お客様は VPN インフラストラクチャを所有しており、制限された企業リソースをイントラネットの外部に公開することができます。<br><br>最小要件: Microsoft Managed Desktop には、Windows 10 互換およびサポートされている VPN ソリューションが必要です。 組織に VPN ソリューションが必要な場合は、Windows 10 をサポートし、Intune 経由でパッケージ化して展開する必要があります。 詳細については、ソフトウェアの発行元にお問い合わせください。<br><br>勧告<br>-Microsoft では、Intune を使用して VPN プロファイルをプッシュして簡単に展開できる先進の VPN ソリューションをお勧めします。 これにより、常に、シームレスで信頼性が高く、企業ネットワークにアクセスするための安全な方法が提供されます。 詳細については、「 [Intune の VPN 設定](https://docs.microsoft.com/intune/vpn-settings-configure)」を参照してください。<br>-ユーザー環境に影響を与える可能性があるため、microsoft の管理されたデスクトップを使用している場合は、Microsoft によるシック VPN クライアントまたはレガシ VPN クライアントの使用をお勧めしません。<br>-Microsoft では、パフォーマンスの問題を回避するために、送信 web トラフィックを VPN 経由で直接インターネットに移動することをお勧めします。<br>-Microsoft では、VPN の代わりに Azure Active Directory アプリプロキシを使用することをお勧めします。
 
 
 ## <a name="information-security"></a>情報セキュリティ
