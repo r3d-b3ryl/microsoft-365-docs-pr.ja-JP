@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: 'この記事では、Microsoft から別のレジストラーにドメインを移行するための手順について説明します。 '
-ms.openlocfilehash: 7e00f5ae2c36a06803a3f7a8acd825dcab90805c
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788985"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289173"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>Microsoft から別のホストにドメインを移行する
 
@@ -43,7 +43,7 @@ Microsoft 365 でコードを取得するには、次の手順に従います。
 
 1. 管理センターで、[  **設定**] [ドメイン] に移動し   >  **Domains**ます。
 
-2. <[ **ドメイン** ] ページで、別のドメインレジストラーに移行する Microsoft 365 ドメインを選択して、[ **状態の確認**] を選択します。
+2. [ **ドメイン** ] ページで、別のドメインレジストラーに移行する Microsoft 365 ドメインを選択し、[状態の **確認**] を選択します。
 
 3. ページの上部で、[ドメインの **移行**] を選択します。
 

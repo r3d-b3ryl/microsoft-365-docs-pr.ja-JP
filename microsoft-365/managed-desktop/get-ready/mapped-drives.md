@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530177"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289275"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 
@@ -24,7 +24,7 @@ ms.locfileid: "46530177"
 - Teams で使用されるマップされたドライブを移行して、ファイルを SharePoint Online に共有します。 
 - オンプレミスのファイル共有を使用するアプリケーションを近代化またはリプレースして、その要件を削除します。
   
-モダン化これらのサービスを使用すると、Microsoft マネージドデスクトップでのエンドユーザーの操作を最高にすることができます。 Microsoft FastTrack サービスは、Microsoft クラウドサービスを使用してお客様の環境をモダン化するのに役立ちます。 必要な[サービスおよびプラン](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans)で fasttrack サービスの対象となっているかどうかを確認してから、Microsoft マネージドデスクトップの準備のために直接連絡することができます。 FastTrack OneDrive for Business または SharePoint Online の移行の背景については、「[データ移行](https://docs.microsoft.com/fasttrack/o365-data-migration)」を参照してください。
+モダン化これらのサービスを使用すると、Microsoft マネージドデスクトップで最高のユーザー環境を使用できるようになります。 Microsoft FastTrack サービスは、Microsoft クラウドサービスを使用してお客様の環境をモダン化するのに役立ちます。 必要な [サービスおよびプラン](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) で fasttrack サービスの対象となっているかどうかを確認してから、Microsoft マネージドデスクトップの準備のために直接連絡することができます。 FastTrack OneDrive for Business または SharePoint Online の移行の背景については、「 [データ移行](https://docs.microsoft.com/fasttrack/o365-data-migration)」を参照してください。
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでのマップされたドライブ
  

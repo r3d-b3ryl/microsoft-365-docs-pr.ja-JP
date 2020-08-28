@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織の人事 (HR) システムから Microsoft 365 に従業員データをインポートするためのデータコネクタをセットアップすることができます。 これにより、社内リスク管理ポリシーの人事データを使用して、組織に内部の脅威をもたらす可能性がある特定のユーザーによるアクティビティを検出することができます。
-ms.openlocfilehash: 49589d2e5a6a716a2e224aa28b73bd14f9048d0b
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255770"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289252"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>HR データをインポートするためのコネクタを設定する (プレビュー)
 
@@ -201,15 +201,15 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>手順 2: Azure Active Directory でアプリを作成する
 
-次の手順では、Azure Active Directory (AAD) で新しいアプリを作成し、登録します。 アプリは、手順3で作成した HR コネクタに対応します。 このアプリを作成すると、AAD が実行され、組織にアクセスしようとするときに、AAD が HR コネクタを認証できるようになります。 このアプリは、手順4で実行して人事データを Microsoft クラウドにアップロードするスクリプトを認証するためにも使用されます。 この AAD アプリの作成時には、必ず次の情報を保存してください。 これらの値は、手順3と手順4で使用されます。
+次の手順では、Azure Active Directory (Azure AD) で新しいアプリを作成し、登録します。 アプリは、手順3で作成した HR コネクタに対応します。 このアプリを作成すると、Azure AD は、組織へのアクセスを試行しているときに、HR コネクタを認証できるようになります。 このアプリは、手順4で実行して人事データを Microsoft クラウドにアップロードするスクリプトを認証するためにも使用されます。 この Azure AD アプリの作成時には、必ず次の情報を保存してください。 これらの値は、手順3と手順4で使用されます。
 
-- AAD アプリケーション ID ( *アプリ id* または *クライアント id*とも呼ばれる)
+- Azure AD アプリケーション ID ( *アプリ id* または *クライアント id*とも呼ばれる)
 
-- AAD アプリケーションシークレット ( *クライアントシークレット*とも呼ばれる)
+- Azure AD アプリケーションシークレット ( *クライアントシークレット*とも呼ばれる)
 
 - テナント Id ( *ディレクトリ id*とも呼ばれる)
 
-AAD でアプリを作成するための詳細な手順については、「 [Microsoft identity platform を使用](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)してアプリケーションを登録する」を参照してください。
+Azure AD でアプリを作成するための詳細な手順については、「 [Microsoft identity platform を使用](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)してアプリケーションを登録する」を参照してください。
 
 ## <a name="step-3-create-the-hr-connector"></a>手順 3: HR コネクタを作成する
 
@@ -225,9 +225,9 @@ AAD でアプリを作成するための詳細な手順については、「 [Mi
 
 4. [ **接続の設定** ] ページで、次の操作を実行し、[ **次へ**] をクリックします。
 
-   a. 手順2で作成した Azure アプリの AAD アプリケーション ID を入力するか貼り付けます。
+   a. 手順2で作成した Azure アプリケーションの Azure AD アプリケーション ID を入力するか貼り付けます。
 
-   b.  HR コネクタの名前を入力します。
+   b. HR コネクタの名前を入力します。
 
 5. [人事シナリオ] ページで、データをインポートする1つまたは複数の HR シナリオを選択し、[ **次へ**] をクリックします。
 
@@ -253,7 +253,7 @@ AAD でアプリを作成するための詳細な手順については、「 [Mi
 
    a. **ジョブ ID。** このジョブ ID は、次の手順でスクリプトを実行するために必要になります。 このページからコピーするか、コネクタのポップアップページからコピーすることができます。
 
-   b.  **サンプルスクリプトにリンクします。** サンプルスクリプトにアクセスするには、 **次** のリンクをクリックして、GitHub サイトに移動します (リンクは新しいウィンドウを開きます)。 このウィンドウを開いたままにして、手順4でスクリプトをコピーできるようにします。 または、スクリプトを実行するときにアクセスできるように、移動先にブックマークを付けたり、URL をコピーしたりすることもできます。 このリンクは、コネクタのフライアウトページでも使用できます。
+   b. **サンプルスクリプトにリンクします。** サンプルスクリプトにアクセスするには、 **次** のリンクをクリックして、GitHub サイトに移動します (リンクは新しいウィンドウを開きます)。 このウィンドウを開いたままにして、手順4でスクリプトをコピーできるようにします。 または、スクリプトを実行するときにアクセスできるように、移動先にブックマークを付けたり、URL をコピーしたりすることもできます。 このリンクは、コネクタのフライアウトページでも使用できます。
 
 9. **[完了]** をクリックします。
 
@@ -294,8 +294,8 @@ HR コネクタを設定する最後の手順は、Microsoft クラウドに (�
    |**パラメーター**|**説明**
    |:-----|:-----|:-----|
    |`tenantId`|これは、手順2で取得した Microsoft 365 組織の Id です。 Azure AD 管理センターの **概要** ブレードで、組織のテナント Id を取得することもできます。 これは、組織を識別するために使用されます。|
-   |`appId` |これは、手順2で Azure AD で作成したアプリの AAD アプリケーション Id です。 これは、スクリプトが Microsoft 365 組織にアクセスしようとするときに、Azure AD によって認証に使用されます。 | 
-   |`appSecret`|これは、手順2で Azure AD で作成したアプリの AAD アプリケーションシークレットです。 これは認証にも使用されます。|
+   |`appId` |これは、手順2で Azure AD で作成したアプリの Azure AD アプリケーション Id です。 これは、スクリプトが Microsoft 365 組織にアクセスしようとするときに、Azure AD によって認証に使用されます。 | 
+   |`appSecret`|これは、手順2で Azure AD で作成したアプリの Azure AD アプリケーションシークレットです。 これは認証にも使用されます。|
    |`jobId`|これは、手順3で作成した HR コネクタのジョブ ID です。 これは、HR コネクタを使用して、Microsoft クラウドにアップロードされる人事データを関連付けるために使用されます。|
    |`csvFilePath`|これは、手順1で作成した CSV ファイル (スクリプトと同じシステムに格納されている) のファイルパスです。 ファイルパスにスペースを含めないでください。それ以外の場合は、単一引用符を使用します。|
    |||
@@ -307,9 +307,9 @@ HR コネクタを設定する最後の手順は、Microsoft クラウドに (�
     ```
 
    アップロードが成功すると、[ **アップロードに成功しまし** た] メッセージがスクリプトに表示されます。
-   
+
    > [!NOTE]
-   > Excution ポリシーのために上記のコマンドの実行に問題がある場合は、実行ポリシーの設定に関するガイダンスについては、「 [実行ポリシーについ](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) て」および「 [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) 」を参照してください。 
+   > 実行ポリシーのために上記のコマンドの実行に問題がある場合は、実行ポリシーの設定に関するガイダンスについては、「 [実行ポリシーについ](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) て」と「 [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) 」を参照してください。
 
 ## <a name="step-5-monitor-the-hr-connector"></a>手順 5: HR コネクタを監視する
 
@@ -347,13 +347,13 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
    a. ログオンしているかどうかにかかわらず、コンピューターにログオンしている場合または実行した場合にのみスクリプトを実行するかどうかを決定します。
 
-   b.  [ **最上位の特権で実行** する] チェックボックスがオンになっていることを確認します。
+   b. [ **最上位の特権で実行** する] チェックボックスがオンになっていることを確認します。
 
 6. [ **トリガー** ] タブを選択し、[ **新規**] をクリックして、次の操作を行います。
 
    a. [ **設定**] で [ **毎日** ] オプションを選択し、スクリプトを初めて実行する日付と時刻を選択します。 このスクリプトは毎日、指定した時刻に実行されます。
 
-   b.  [ **詳細設定**] で、[ **有効** ] チェックボックスがオンになっていることを確認します。
+   b. [ **詳細設定**] で、[ **有効** ] チェックボックスがオンになっていることを確認します。
 
    c. [**OK**] をクリックします。
 
@@ -363,7 +363,7 @@ Windows でタスクスケジューラアプリを使用して、スクリプト
 
    a. [ **アクション** ] ドロップダウンリストで、[ **プログラムの開始** ] が選択されていることを確認してください。
 
-   b.  [ **プログラム/スクリプト** ] ボックスで [ **参照**] をクリックし、次の場所に移動して、ボックスにパスが表示されるように `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` します。
+   b. [ **プログラム/スクリプト** ] ボックスで [ **参照**] をクリックし、次の場所に移動して、ボックスにパスが表示されるように `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` します。
 
    c. [ **引数を追加する (省略可能)** ] ボックスに、手順4で実行したのと同じスクリプトコマンドを貼り付けます。 たとえば、`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"` のように指定します。
 

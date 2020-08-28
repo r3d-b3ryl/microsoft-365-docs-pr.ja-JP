@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a9ff0e76448df183ac5c34c5832155e0b135d313
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868993"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289141"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
@@ -155,9 +155,9 @@ Microsoft Managed Desktop [管理ポータル](https://aka.ms/mmdportal)で、�
 |---------------|-------------|
 | AutopilotRegistrationRequested | 登録はまだ行われていません。 後でもう一度確認してください。 |
 | 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
-| ユーザーの準備完了 | 登録が成功し、デバイスをエンドユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
-| Active | デバイスはエンドユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
-| 未使用 | デバイスはエンドユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  | 
+| ユーザーの準備完了 | 登録が成功し、デバイスをユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
+| Active | デバイスはユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
+| 未使用 | デバイスはユーザーに配信され、テナントに登録されています。 しかし、最近7日間ではデバイスを使用していません。  | 
 
 #### <a name="troubleshooting-device-registration"></a>デバイス登録のトラブルシューティング
 
