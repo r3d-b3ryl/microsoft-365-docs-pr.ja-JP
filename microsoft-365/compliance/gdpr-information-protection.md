@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 02dbb22ad47fbacf964308d2b4a989f34b6d6c9d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214571"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307684"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>GDPR のための情報保護と Microsoft 365 の機能
 
@@ -32,9 +32,9 @@ Microsoft 365 は、一般データ保護規則 (GDPR) に準拠するための�
 
 ## <a name="information-protection"></a>情報保護
 
-Office 365 は、豊富なデータ管理機能を提供します。個人データの検索、分類、保護、監視の詳細については、[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)を参照してください。
+Office 365 は、豊富なデータ管理機能を提供します。個人データの検索、分類、保護、監視の詳細については、[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)を参照してください。
 
-ファイル共有、SharePoint Server、Exchange Server、Skype for Business Server、Project Server、Office Online Server を含むオンプレミス サーバーのヘルプについては、[オンプレミス Office サーバーに関する GDPR](https://docs.microsoft.com/office365/enterprise/gdpr-for-office-servers) を参照してください。 
+ファイル共有、SharePoint Server、Exchange Server、Skype for Business Server、Project Server、Office Online Server を含むオンプレミス サーバーのヘルプについては、[オンプレミス Office サーバーに関する GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-for-office-servers) を参照してください。 
 
 ## <a name="identity-and-access-management"></a>ID およびアクセス管理
 
@@ -50,7 +50,7 @@ Azure Active Directory とその他の Microsoft 365 機能は、ID やデバイ
 Microsoft は、開始点として使用できる推奨設定を提供しています。
 
 - [ID とデバイスのアクセス構成](../enterprise/microsoft-365-policies-configurations.md): 3 層保護 (ベースライン、機密、高度な規制) を実現する推奨ポリシー構成。このガイダンスでは、Exchange Online および SharePoint Online (OneDrive for Business を含む) のための推奨ポリシーを記載します。
-- [政治キャンペーン、非営利団体、その他のアジャイル組織のセキュリティに関するガイダンス](https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): これには同じポリシーのセットが含まれていますが、BYOD 環境と B2B アカウントのための追加のガイダンスを提供します。
+- [政治キャンペーン、非営利団体、その他のアジャイル組織のセキュリティに関するガイダンス](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): これには同じポリシーのセットが含まれていますが、BYOD 環境と B2B アカウントのための追加のガイダンスを提供します。
 
 ## <a name="threat-protection"></a>脅威保護
 

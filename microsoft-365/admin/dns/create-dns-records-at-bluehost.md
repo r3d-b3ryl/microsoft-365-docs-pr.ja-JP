@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: ドメインを確認し、電子メール、Skype for Business Online、および Bluehost のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 7b241c4635ecc4a8092702f95d19df7ed94ce1cd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400559"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307045"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>Microsoft の Bluehost で DNS レコードを作成する
 
@@ -53,11 +53,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     (下へスクロールしなければならないことがあります。)
     
-3. [ ***Domain_name*** ] 領域の**dns ゾーンエディタ**行で、[ **dns レコードの管理**] を選択します。
+3. [ ***Domain_name*** ] 領域の **dns ゾーンエディタ** 行で、[ **dns レコードの管理**] を選択します。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |||||
     |:-----|:-----|:-----|:-----|
@@ -93,15 +93,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (下へスクロールしなければならないことがあります。)
     
-3. [ ***Domain_name*** ] 領域の**dns ゾーンエディタ**行で、[ **dns レコードの管理**] を選択します。
+3. [ ***Domain_name*** ] 領域の **dns ゾーンエディタ** 行で、[ **dns レコードの管理**] を選択します。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |**Host Record**|**TTL**|**Type**|**Points To**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/>**注:**\<*domain-key*\>Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**注: Microsoft アカウントから**取得\<*domain-key*\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
    
    ![ドロップダウンリストから [種類] を選択する](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
@@ -111,7 +111,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. その他の MX レコードが [ **MX (Mail Exchanger)** ] セクションにある場合は、それぞれのレコードを削除します。 
     
-    その他の MX レコードのいずれかで、[削除] を選択し**ます。**
+    その他の MX レコードのいずれかで、[削除] を選択し **ます。**
     
     ![追加の MX レコードごとに [削除] を選択します。](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
@@ -130,14 +130,14 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (下へスクロールしなければならないことがあります。)
     
-3. [ ***Domain_name*** ] 領域の**dns ゾーンエディタ**行で、[ **dns レコードの管理**] を選択します。
+3. [ ***Domain_name*** ] 領域の **dns ゾーンエディタ** 行で、[ **dns レコードの管理**] を選択します。
     
-4. [ **A (ホスト)** レコード] セクションで、**自動検出**レコードの行を見つけて、その行に対して [**削除**] を選択します。 
+4. [ **A (ホスト)** レコード] セクションで、 **自動検出** レコードの行を見つけて、その行に対して [ **削除** ] を選択します。 
     
     > [!IMPORTANT]
     > Microsoft によって必要とされる**自動検出**レコードを追加する*前に*、既存の**自動検出**レコードを削除する必要があります。 Bluehost does not allow you to maintain two **autodiscover** records simultaneously. 
   
-    ![[削除] を選択します。](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
+    ![[削除] を選択する](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
 5. **[OK]** を選択します。
     
@@ -147,7 +147,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     [ **DNS Zone Editor**] ページの [ **Add DNS Record**] 領域で、新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |**Host Record**|**TTL**|**Type**|**Points To**|
     |:-----|:-----|:-----|:-----|
@@ -165,7 +165,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 8. 他の 5 つの CNAME レコードをそれぞれ追加します。
     
-    引き続き [ **DNS レコードの追加**] セクションで、表の次の行の値を使用してレコードを作成し、[ **add record** ] をもう一度選択してそのレコードを完成させます。 
+    引き続き [ **DNS レコードの追加** ] セクションで、表の次の行の値を使用してレコードを作成し、[ **add record** ] をもう一度選択してそのレコードを完成させます。 
     
     6 つの CNAME レコードの作成がすべて完了するまで、このプロセスを繰り返します。
     
@@ -173,7 +173,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
   
 1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -181,11 +181,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (下へスクロールしなければならないことがあります。)
     
-3. [ ***Domain_name*** ] 領域の**dns ゾーンエディタ**行で、[ **dns レコードの管理**] を選択します。
+3. [ ***Domain_name*** ] 領域の **dns ゾーンエディタ** 行で、[ **dns レコードの管理**] を選択します。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
         
     |**Host Record**|**TTL**|**Type**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
@@ -206,13 +206,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (下へスクロールしなければならないことがあります。)
     
-3. [ ***Domain_name*** ] 領域の**dns ゾーンエディタ**行で、[ **dns レコードの管理**] を選択します。
+3. [ ***Domain_name*** ] 領域の **dns ゾーンエディタ** 行で、[ **dns レコードの管理**] を選択します。
     
 4. 2 つの SRV レコードの最初のレコードを作成します。
     
     [ **DNS Zone Editor**] ページの [ **Add DNS Record**] 領域で、新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |**Service**|**Protocol**|**Host**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**Points To**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -227,7 +227,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 残りの SRV レコードを追加します。
     
-    引き続き [ **DNS レコードの追加**] セクションで、表の他の行の値を使用してレコードを作成し、[ **Add record** ] をもう一度選択してそのレコードを完成させます。 
+    引き続き [ **DNS レコードの追加** ] セクションで、表の他の行の値を使用してレコードを作成し、[ **Add record** ] をもう一度選択してそのレコードを完成させます。 
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 

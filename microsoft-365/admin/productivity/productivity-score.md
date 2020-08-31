@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868857"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307479"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -44,7 +44,7 @@ ms.locfileid: "46868857"
 
 - **テクノロジの実績:** 生産性は、信頼性とパフォーマンスの高いテクノロジに加えて、Microsoft 365 を効率的に使用することによっても異なります。 [エンドポイント分析](https://aka.ms/endpointanalytics)を提供することで、エンドポイントのハードウェアとソフトウェアのパフォーマンスと正常性の問題によってユーザーの生産性がどのような影響を受け、修復するために推奨される処置を提供できるかを理解するのに役立つ情報を提供します。さらに、組織に Microsoft 365 network connectivity insights を提供しています。
 
-概要と前提条件の詳細については、「 [エンドポイント分析とは](https://docs.microsoft.com/mem/analytics/overview) 」を参照してください。 Microsoft 365 network connectivity insights の詳細については、「 [ネットワーク接続の概要」](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)を参照してください。
+概要と前提条件の詳細については、「 [エンドポイント分析とは](https://docs.microsoft.com/mem/analytics/overview) 」を参照してください。 Microsoft 365 network connectivity insights の詳細については、「 [ネットワーク接続の概要」](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)を参照してください。
   
 
 ## <a name="how-the-score-is-calculated"></a>スコアの計算方法

@@ -20,12 +20,12 @@ search.appverid:
 description: Office 365 E4 サブスクリプションからアップグレードする方法について説明します。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ab3ac1c85dc3726585f9c414449ff4847626fc8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692033"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308007"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Office 365 E4 サブスクリプションからのアップグレード
 
@@ -130,7 +130,7 @@ ms.locfileid: "46692033"
 Microsoft 365 管理センターを使用して、一度に最大20人のユーザーのライセンスを再割り当てすることができます。 方法については、「 [ユーザーを別のサブスクリプションに移動する](move-users-different-subscription.md)」を参照してください。
 
 > [!TIP]
-> ユーザー数が多い場合は、 [Office 365 PowerShell を使用してユーザーライセンスを一括で割り当てる](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)ことができます。
+> ユーザー数が多い場合は、 [Office 365 PowerShell を使用してユーザーライセンスを一括で割り当てる](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)ことができます。
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>手順 4: Office 365 E4 サブスクリプションをキャンセルする
 

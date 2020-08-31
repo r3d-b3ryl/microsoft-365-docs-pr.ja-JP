@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: ドメインを確認し、電子メール、Skype for Business Online、および Dnsat の他のサービスの DNS レコードを Microsoft にとって簡単にセットアップする方法について説明します。
-ms.openlocfilehash: db28ac0cb95bd86bc13a1a1ce47f273989aa4436
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 07cf79b86e02fa79d59882fa51402cccc922c2b6
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400523"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307105"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Microsoft にとって簡単に DNS レコードを Dnsで作成する
 
@@ -54,11 +54,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://cp.dnsmadeeasy.com/)を使って DNSMadeEasy でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**管理コンソール**] ページの [**最近更新さ**れたドメイン] 領域で、更新するドメインを選択します。 
+2. [ **管理コンソール** ] ページの [ **最近更新さ** れたドメイン] 領域で、更新するドメインを選択します。 
     
-3. [管理された**DNS** ] ページの [ **TXT Records** ] 領域で、( **+** ) コントロール ([**新規追加**]) を選択します。
+3. [管理された **DNS** ] ページの [ **TXT Records** ] 領域で、( **+** ) コントロール ([ **新規追加**]) を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
 4. In the **Add TXT Records** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -92,15 +92,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://cp.dnsmadeeasy.com/)を使って DNSMadeEasy でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**管理コンソール**] ページの [**最近更新さ**れたドメイン] 領域で、更新するドメインを選択します。 
+2. [ **管理コンソール** ] ページの [ **最近更新さ** れたドメイン] 領域で、更新するドメインを選択します。 
     
-    [**管理コンソール**] ページの [**最近更新さ**れたドメイン] 領域で、更新するドメインを選択します。 
+    [ **管理コンソール** ] ページの [ **最近更新さ** れたドメイン] 領域で、更新するドメインを選択します。 
     
     ![Dnsの簡単な設定-1-2](../../media/8d8f403e-d7cd-429e-913b-dacb1f4644a2.png)
   
-3. [管理された**DNS** ] ページの [ **MX Records** ] 領域で、 **(+)** コントロール ([**新規追加**]) を選択します。
+3. [管理された **DNS** ] ページの [ **MX Records** ] 領域で、 **(+)** コントロール ([ **新規追加**]) を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![Dnsの簡単な設定-2-1](../../media/404c73bf-1db4-4d68-82d8-68303f418ed4.png)
   
@@ -110,7 +110,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**サーバー**|**MX レベル**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **注:**\<*domain-key*\>Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1800  <br/> |
+    |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから**取得\<*domain-key*\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1800  <br/> |
    
     ![Dnsの簡単な設定-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -122,24 +122,24 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dnsの簡単な設定-2-4-1](../../media/58a07769-0b30-4111-b555-bfc3b82a7d4c.png)
   
-7. すべてのレコードが選択されたら、[**選択した**ものを削除] を選択します。
+7. すべてのレコードが選択されたら、[ **選択した**ものを削除] を選択します。
     
     ![Dnsの簡単な設定-2-4-2](../../media/e9064c07-1ce7-4387-b47a-90d4193da374.png)
   
-8. [ **MX レコードの削除**] ダイアログボックスで、[**削除**] を選択して変更を確認します。 
+8. [ **MX レコードの削除** ] ダイアログボックスで、[ **削除** ] を選択して変更を確認します。 
     
     ![Dnsの簡単な設定-2-5](../../media/03c405e5-868f-468f-b6d2-046d27b201fb.png)
   
-## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な5つの CNAME レコードを追加する
+## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な 5 つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
 1. まず、[このリンク](https://cp.dnsmadeeasy.com/)を使って DNSMadeEasy でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**管理コンソール**] ページの [**最近更新さ**れたドメイン] 領域で、更新するドメインを選択します。 
+2. [ **管理コンソール** ] ページの [ **最近更新さ** れたドメイン] 領域で、更新するドメインを選択します。 
     
-3. [管理された**DNS** ] ページの [ **CNAME Records** ] 領域で、 **(+)** コントロール ([**新規追加**]) を選択します。
+3. [管理された **DNS** ] ページの [ **CNAME Records** ] 領域で、 **(+)** コントロール ([ **新規追加**]) を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![Dnsの簡単な設定-3-1](../../media/a5feb238-690d-4b64-a625-91a82b3f4068.png)
   
@@ -149,11 +149,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**Alias to (エイリアス)**|**TTL**|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
-    |sip  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
-    |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
-    |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
-    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |autodiscover  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |sip  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
    
     ![Dnsの簡単な設定-3-2](../../media/de6dddcd-bf0a-4993-ab4c-a6d10167bf34.png)
   
@@ -163,7 +163,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 他の4つの CNAME レコードをそれぞれ追加します。
     
-    [ **CNAME Records** ] セクションで、 **(+)** コントロール ([**新規追加**]) を選択し、表の次の行の値を使用してレコードを作成し、[ **Submit** ] をもう一度選択してそのレコードを完成させます。 
+    [ **CNAME Records** ] セクションで、 **(+)** コントロール ([ **新規追加**]) を選択し、表の次の行の値を使用してレコードを作成し、[ **Submit** ] をもう一度選択してそのレコードを完成させます。 
     
     この手順を繰り返し、5つの CNAME レコードをすべて作成します。
     
@@ -171,13 +171,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
   
 1. まず、[このリンク](https://cp.dnsmadeeasy.com/)を使って DNSMadeEasy でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**管理コンソール**] ページの [**最近更新さ**れたドメイン] 領域で、更新するドメインを選択します。 
+2. [ **管理コンソール** ] ページの [ **最近更新さ** れたドメイン] 領域で、更新するドメインを選択します。 
     
-3. [管理された**DNS** ] ページの [ **TXT Records** ] 領域で、 **(+)** コントロール ([**新規追加**]) を選択します。
+3. [管理された **DNS** ] ページの [ **TXT Records** ] 領域で、 **(+)** コントロール ([ **新規追加**]) を選択します。
     
     (下へスクロールしなければならないことがあります。)
     
@@ -200,9 +200,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://cp.dnsmadeeasy.com/)を使って DNSMadeEasy でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**管理コンソール**] ページの [**最近更新さ**れたドメイン] 領域で、更新するドメインを選択します。 
+2. [ **管理コンソール** ] ページの [ **最近更新さ** れたドメイン] 領域で、更新するドメインを選択します。 
     
-3. [管理された**DNS** ] ページの [ **SRV Records** ] 領域で、 **(+)** コントロール ([**新規追加**]) を選択します。
+3. [管理された **DNS** ] ページの [ **SRV Records** ] 領域で、 **(+)** コントロール ([ **新規追加**]) を選択します。
     
     (下へスクロールしなければならないことがあります。)
     
@@ -214,8 +214,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**Priority**|**Weight**|**Port**|**Host**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
    
     ![Dnsの簡単な設定-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   
@@ -225,7 +225,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 残りの SRV レコードを追加します。
     
-    [ **SRV Records** ] セクションで、 **(+)** コントロール ([**新規追加**]) を選択し、表の次の行の値を使用してレコードを作成し、[ **Submit** ] をもう一度選択してそのレコードを完成させます。 
+    [ **SRV Records** ] セクションで、 **(+)** コントロール ([ **新規追加**]) を選択し、表の次の行の値を使用してレコードを作成し、[ **Submit** ] をもう一度選択してそのレコードを完成させます。 
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 

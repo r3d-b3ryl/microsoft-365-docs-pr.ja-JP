@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Microsoft 365 for business に移行する際の要件と考慮事項について説明します。
-ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 14543e3859f06e7f89cf74e2159a70483c7ec228
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529662"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307545"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画する
 
@@ -43,16 +43,16 @@ ms.locfileid: "46529662"
 
 - ユーザーがサインインできるように、従業員に自分のユーザー ID とパスワードを通知する方法。 情報を使用してそれらを呼び出すことはできますか? または、個人のメールアドレスに送信しますか? ユーザーはメールにアクセスできないので、これを使用することはできません。
 
-- 組織のドメイン名 (contoso.com**など) があり、Microsoft**電子メールの使用を計画している場合は、ドメインが登録されている場所とサインイン情報を知っている必要があります。
+- 組織のドメイン名 (contoso.com **など) があり、Microsoft** 電子メールの使用を計画している場合は、ドメインが登録されている場所とサインイン情報を知っている必要があります。
 
 ## <a name="what-happens-when-you-run-the-microsoft-365-setup-wizard"></a>Microsoft 365 セットアップウィザードを実行したときの処理
 
 セットアップウィザードは、コンピューターへの Microsoft 365 アプリのインストール、ドメインの追加と検証、ユーザーの追加とライセンスの割り当て、ドメインの接続を行います。
 
 > [!NOTE]
-> Microsoft 365 で、ウィザードで追加するユーザーに[管理者ロールを割り当てる](../add-users/assign-admin-roles.md)必要がある場合は、後で [**ユーザー** ] ページでこれを行うことができます。 
+> Microsoft 365 で、ウィザードで追加するユーザーに [管理者ロールを割り当てる](../add-users/assign-admin-roles.md) 必要がある場合は、後で [ **ユーザー** ] ページでこれを行うことができます。 
   
-セットアップウィザードを完了していない場合は、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)セットアップからいつでもセットアップタスクを完了でき  >  **Setup**ます。 このページから、別の電子メールサービスからメールと連絡先を移行したり、管理者アカウントのドメインを変更したり、ユーザーを追加または削除したり、パスワードをリセットしたり、その他のビジネス機能を実行したりすることができます。 セットアップウィザードと**セットアップ**ページの相違点の詳細については、「 [Microsoft 365 セットアップウィザードとセットアップページの相違点](o365-setup-wizard-and-setup-page.md)」を参照してください。
+セットアップウィザードを完了していない場合は、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)セットアップからいつでもセットアップタスクを完了でき  >  **Setup**ます。 このページから、別の電子メールサービスからメールと連絡先を移行したり、管理者アカウントのドメインを変更したり、ユーザーを追加または削除したり、パスワードをリセットしたり、その他のビジネス機能を実行したりすることができます。 セットアップウィザードと **セットアップ** ページの相違点の詳細については、「 [Microsoft 365 セットアップウィザードとセットアップページの相違点](o365-setup-wizard-and-setup-page.md)」を参照してください。
 
 任意の時点で行き詰まった場合は、にお問い合わせください。 [ご参考になります。](../contact-support-for-business-products.md)
   
@@ -60,7 +60,7 @@ ms.locfileid: "46529662"
 
 オンプレミス環境からのデータまたはユーザーの移行、またはディレクトリ同期を含むハイブリッドシステムのセットアップを含むいくつかのシナリオがあります。 どちらかのカテゴリにいる場合は、次の記事の手順に従ってください。
   
-- オンプレミスの Active Directory とのディレクトリ同期をセットアップするには、「 [microsoft 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)する」および「microsoft [365 Identity と Azure Active directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity)365 について」を参照してください。
+- オンプレミスの Active Directory とのディレクトリ同期をセットアップするには、「 [microsoft 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)する」および「microsoft [365 Identity と Azure Active directory](https://docs.microsoft.com/microsoft-365/enterprise/about-microsoft-365-identity)365 について」を参照してください。
 
 - Exchange ハイブリッドを設定するには、ハイブリッド Exchange を設定する (DNS レコードの設定を含む) 異なるいくつかの方法のすべてについて説明した「[Exchange Server 展開アシスタント](https://aka.ms/exdeploy)」の詳しい手順を参照してください。
 
@@ -78,9 +78,9 @@ ms.locfileid: "46529662"
 
     3. 会議に使用する[Microsoft Teams](#plan-for-teams)をセットアップします。
 
-    4. [コンテンツを Microsoft 365 クラウドストレージ](set-up-file-storage-and-sharing.md)(OneDrive または SharePoint チームサイト) に移動します。
+    4. [コンテンツを Microsoft 365 クラウドストレージ](set-up-file-storage-and-sharing.md) (OneDrive または SharePoint チームサイト) に移動します。
 
-    5. 準備が整ったら、[管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)で、左側のナビゲーションウィンドウで [**設定**] を選択し、[**セットアップ**] ページを使用し[てドメインと電子メールを移動](add-domain.md)します。
+    5. 準備が整ったら、 [管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)で、左側のナビゲーションウィンドウで [ **設定** ] を選択し、[ **セットアップ** ] ページを使用し [てドメインと電子メールを移動](add-domain.md)します。
 
 ## <a name="check-that-your-devices-meet-system-requirements"></a>デバイスがシステム要件を満たしていることを確認する
 
@@ -96,7 +96,7 @@ ms.locfileid: "46529662"
   
 メールに Microsoft 365 を使用する場合は、次のようにします。
   
-- 会社の電子メールアドレス (*渡 \@ contoso.com*など) を別の電子メールサービスから microsoft 365 に移行するには、メールを新しい microsoft 365 メールボックスに配信するように指示する必要があります。 これを行うには、**セットアップ**ページで [**ユーザーのデータを移行**する] を選択します。ここでは、ドメインホストで行う必要のある更新プログラムについて手順を追って説明します。
+- 会社の電子メールアドレス ( *渡 \@ contoso.com*など) を別の電子メールサービスから microsoft 365 に移行するには、メールを新しい microsoft 365 メールボックスに配信するように指示する必要があります。 これを行うには、**セットアップ**ページで [**ユーザーのデータを移行**する] を選択します。ここでは、ドメインホストで行う必要のある更新プログラムについて手順を追って説明します。
 
 - ドメイン ホストの更新後、変更は通常 1、2 時間で有効になります。 ただし、インターネット経由で変更が更新されるまでに最大72時間かかる場合があることに注意してください。
 
@@ -104,12 +104,12 @@ ms.locfileid: "46529662"
 
 ### <a name="plan-to-move-your-existing-email-contacts-and-calendar"></a>既存のメール、連絡先、予定表の移行の計画
   
-電子メールアカウントに Microsoft 365 を使用する場合は、既存のメール、連絡先、予定表をお客様と一緒にご利用いただけます。 [**セットアップ**] ページでは、ほとんどのシナリオにおいて既存の電子メールと連絡先を移動するのに役立つ情報が表示されます。 また、1 つまたは複数のメールボックスを移行するためのステップ バイ ステップ ガイドも用意しています。
+電子メールアカウントに Microsoft 365 を使用する場合は、既存のメール、連絡先、予定表をお客様と一緒にご利用いただけます。 [ **セットアップ** ] ページでは、ほとんどのシナリオにおいて既存の電子メールと連絡先を移動するのに役立つ情報が表示されます。 また、1 つまたは複数のメールボックスを移行するためのステップ バイ ステップ ガイドも用意しています。
   
 |**メールボックスの数**|**推奨事項**|
 |:-----|:-----|
 |少数  <br/> |**セットアップ**ページを使用してメールボックスを移行しない場合は、メールボックスの所有者が自分のメールと連絡先を移行できるようにすることができます。 [ビジネス向けの Microsoft 365 へのメールと連絡先の移行を](migrate-email-and-contacts-admin.md)参照してください。  <br/> |
-|やや少数  <br/> |Gmail から移行している場合は、「 [Microsoft 365 への G Suite メールボックスの移行](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)」を参照してください。  <br/> Exchange を含む別のメールプロバイダーから移行している場合は、「[複数のメールアカウントを Microsoft 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)」を参照してください。  <br/> |
+|やや少数  <br/> |Gmail から移行している場合は、「 [Microsoft 365 への G Suite メールボックスの移行](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)」を参照してください。  <br/> Exchange を含む別のメールプロバイダーから移行している場合は、「 [複数のメールアカウントを Microsoft 365 に移行する方法](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)」を参照してください。  <br/> |
 
 ## <a name="plan-for-file-storage-and-migration"></a>ファイル ストレージと移行の計画
 
@@ -117,7 +117,7 @@ Microsoft 365 は、個人、小規模な組織、および企業向けにクラ
   
 - [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)または[SharePoint チームサイト](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)に、**数百のファイルを移動することができ**ます。 一度に 100 個のファイルをアップロードできます。 ただし、ファイルの既定の最大サイズである 2 GB を超えるファイルはアップロードしないでください。
   
-- **数千のファイル**を Microsoft 365 ストレージに移動する場合は、 [SharePoint Online の制限](https://go.microsoft.com/fwlink/p/?LinkID=856113)を確認してください。 移行ツールを使用するか、または移行を支援する[パートナー](https://go.microsoft.com/fwlink/?linkid=391089)の採用を検討することをお勧めします。 大量のファイルを移行する方法については、「[SharePoint Online および OneDrive 移行ユーザー ガイド](https://go.microsoft.com/fwlink/?LinkId=723574)」を参照してください。
+- **数千のファイル** を Microsoft 365 ストレージに移動する場合は、 [SharePoint Online の制限](https://go.microsoft.com/fwlink/p/?LinkID=856113)を確認してください。 移行ツールを使用するか、または移行を支援する[パートナー](https://go.microsoft.com/fwlink/?linkid=391089)の採用を検討することをお勧めします。 大量のファイルを移行する方法については、「[SharePoint Online および OneDrive 移行ユーザー ガイド](https://go.microsoft.com/fwlink/?LinkId=723574)」を参照してください。
   
 ## <a name="plan-for-teams"></a>Teams を計画する
 
@@ -127,9 +127,9 @@ Microsoft Teams を使用して、サブスクリプションに参加してい�
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>Active Directory やその他のソフトウェアとの統合の計画
 
-- **オンプレミスの Active Directory と統合するかどうか。** Azure Active Directory Connect を使用して、オンプレミスの Active Directory を Microsoft 365 に統合することができます。 手順については、「 [Microsoft 365 のディレクトリ同期をセットアップする](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)」を参照してください。
+- **オンプレミスの Active Directory と統合するかどうか。** Azure Active Directory Connect を使用して、オンプレミスの Active Directory を Microsoft 365 に統合することができます。 手順については、「 [Microsoft 365 のディレクトリ同期をセットアップする](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)」を参照してください。
   
-- **Microsoft 365 を他の企業が作成したソフトウェアと統合するかどうか。** Microsoft 365 を組織内の他のソフトウェアと統合する必要がある場合は、展開を支援する[パートナーの採用](https://go.microsoft.com/fwlink/?linkid=391089)を検討することをお勧めします。
+- **Microsoft 365 を他の企業が作成したソフトウェアと統合するかどうか。** Microsoft 365 を組織内の他のソフトウェアと統合する必要がある場合は、展開を支援する [パートナーの採用](https://go.microsoft.com/fwlink/?linkid=391089) を検討することをお勧めします。
   
 ## <a name="do-you-want-someone-to-help-you-set-up-microsoft-365"></a>他のユーザーが Microsoft 365 をセットアップできるようにしますか。
 

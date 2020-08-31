@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fc43420b18483bc93814b2eb0e8605af86beef1c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 355d83c4ad1e51e03f137a1342d00f3693c242e7
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034783"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308018"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -74,7 +74,7 @@ Microsoft はクラウド セキュリティの業界リーダーとして認識
 |:-----|:-----|
 |**領域**|**タスク**|
 |Microsoft 365 の高度なツールと情報保護を使用して、デバイスの継続的な制御と企業データの保護を実装します。|*   [Microsoft Intune](https://docs.microsoft.com/intune/) を使用して、モバイル デバイスで保存およびアクセスされる機密データを保護し、クラウド サービスへのアクセスに準拠した会社のデバイスを必ず使用するようにします。|
-|Microsoft 365 および他のクラウド アプリケーション間で進行中のコンプライアンスを監視します。|*   組織の定義済みポリシーと手順に対するパフォーマンスを評価するには、[コンプライアンス スコア](compliance-score.md)を継続的に使用して、組織の情報セキュリティ ポリシーの実施を定期的に評価します。<br>*   [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) を使用して、高レベルのアクセス許可を持つすべてのユーザーおよびグループ (特権ユーザーまたは管理ユーザー) を管理し、定期的に評価します。<br>*   [特権アクセスの管理](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365)を展開、設定し、Office 365 の特権的管理タスクを細かくアクセス制限できるようにします。  有効にした後は、ユーザーはジャスト イン タイムのアクセスを要求し、広範囲で時間に制約がある承認ワークフローを介して、特権的管理タスクを完了する必要があります。<br>*   [所有者以外のメールボックス アクセス](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports)を監査して、潜在的な情報漏洩を特定し、すべての Exchange Online メールボックスに対する所有者以外のアクセスを積極的に確認します。<br>*   [Office 365 アラート ポリシー、データ損失防止レポート、Microsoft Cloud App Security](https://docs.microsoft.com/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data) を使用して、組織のクラウド アプリケーションの使用状況を監視し、ヒューリスティックおよびユーザー アクティビティに基づいて高度なアラート ポリシーを実装します。<br>*   [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して危険なアクティビティを自動的に追跡することで、潜在的な悪意のある管理者を特定し、データ侵害を調査し、コンプライアンス要件が満たされていることを確認します。|
+|Microsoft 365 および他のクラウド アプリケーション間で進行中のコンプライアンスを監視します。|*   組織の定義済みポリシーと手順に対するパフォーマンスを評価するには、[コンプライアンス スコア](compliance-score.md)を継続的に使用して、組織の情報セキュリティ ポリシーの実施を定期的に評価します。<br>*   [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) を使用して、高レベルのアクセス許可を持つすべてのユーザーおよびグループ (特権ユーザーまたは管理ユーザー) を管理し、定期的に評価します。<br>*   [特権アクセスの管理](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview)を展開、設定し、Office 365 の特権的管理タスクを細かくアクセス制限できるようにします。  有効にした後は、ユーザーはジャスト イン タイムのアクセスを要求し、広範囲で時間に制約がある承認ワークフローを介して、特権的管理タスクを完了する必要があります。<br>*   [所有者以外のメールボックス アクセス](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports)を監査して、潜在的な情報漏洩を特定し、すべての Exchange Online メールボックスに対する所有者以外のアクセスを積極的に確認します。<br>*   [Office 365 アラート ポリシー、データ損失防止レポート、Microsoft Cloud App Security](https://docs.microsoft.com/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data) を使用して、組織のクラウド アプリケーションの使用状況を監視し、ヒューリスティックおよびユーザー アクティビティに基づいて高度なアラート ポリシーを実装します。<br>*   [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して危険なアクティビティを自動的に追跡することで、潜在的な悪意のある管理者を特定し、データ侵害を調査し、コンプライアンス要件が満たされていることを確認します。|
 |強化された脅威分析で高度な脅威検出機能と保護機能を活用し、信頼性の高い階層化されたセキュリティ戦略を組織に提供します。組織のセキュリティを侵害されたシステムの影響を軽減するために、インシデント対応計画を作成します。|*   [Windows Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/) を展開して構成し、豊富な分析とレポートを活用して、ターゲットにされている組織内のユーザーや、使用されているサイバー攻撃の手法についての重要な分析情報を得ます。<br>*   [Office 365 Advanced Threat Protection のレポートと分析](/security/office-365-security/view-reports-for-atp.md)を利用し、組織内で自動的に検出される悪意のあるコンテンツや悪意のある電子メールについての分析情報を使用して、脅威を分析します。組み込みのレポートとメッセージ追跡機能を使用して、不明なウイルスやマルウェアが原因でブロックされた電子メール メッセージを調査します。<br>*   [Office 365 脅威インテリジェンス](/security/office-365-security/office-365-ti.md)を使用し、さまざまなソースからの分析情報を集計して、クラウド セキュリティ環境の全体像を取得します。<br>*    [Office 365 脅威インテリジェンスと Windows Defender Advanced Threat Protection を統合](/security/office-365-security/integrate-office-365-ti-with-wdatp.md)して、Office 365 で脅威を調査する際にユーザーのデバイスが危険にさらされるかどうかを迅速に把握します。<br>*   [Office 365 攻撃シミュレータ](/security/office-365-security/attack-simulator.md)を使用して、Office 365 環境内の一般的な攻撃方法をシミュレートします。  攻撃シミュレーションの結果を確認して、ユーザーのトレーニングの機会を特定し、組織のインシデント対応手順を検証します。<br>*   監視および監査データへのアクセスが承認されたユーザーに限定され、組織のインシデント対応策と統合されるように、[セキュリティ/コンプライアンス センターでアクセス許可](/security/office-365-security/permissions-in-the-security-and-compliance-center.md)を構成します。|
 |||
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
-ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: d2035ed0805215f1bd8e343f9edf1c557035b5c1
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632165"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307849"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -83,7 +83,7 @@ DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされ
 
 1. **DKIM の構成が済んでいる**場合は、次のようにしてビットを転換します。
 
-   1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです)。
+   1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (このコマンドレットは、Exchange Online のものです)。
    1. 次のコマンドを実行します。
 
       ```powershell 
@@ -92,7 +92,7 @@ DKIM キーでは 1024 ビットと 2048 ビットの両方がサポートされ
 
 1. **DKIM の新規実装**の場合は、次のようにします。
 
-   1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (これは、Exchange Online コマンドレットです)。
+   1. [PowerShell で Office 365 のワークロードに接続します](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (これは、Exchange Online コマンドレットです)。
    1. 次のコマンドを実行します。
 
       ```powershell

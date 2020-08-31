@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: 'Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
-ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 6159b62cb6c1e09cb86732cc27cc4c4c87328a42
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780567"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307291"
 ---
 # <a name="reset-passwords"></a>パスワードをリセットする
 
@@ -82,7 +82,7 @@ ms.locfileid: "44780567"
     
 1. 右上隅の **[My Account**  >  **Personal Info**] > 名前 (アイコン) を選択します。 
           
-2. [**連絡先の詳細**] で、連絡用**メール**が正確であること、および携帯電話番号が入力されていることを再確認します。 正しくない場合は、この場で変更します。 
+2. [ **連絡先の詳細**] で、連絡用 **メール** が正確であること、および携帯電話番号が入力されていることを再確認します。 正しくない場合は、この場で変更します。 
         
 3. [サインアウト]: 右上隅にある自分の名前を選択します (上記の画像では、 **Diane**として表示され \> **Sign out**ます)。 
         
@@ -120,7 +120,7 @@ ms.locfileid: "44780567"
 
 PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)
   
-関連記事: [複数のユーザー アカウントのパスワードを設定する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
+関連記事: [複数のユーザー アカウントのパスワードを設定する](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)
   
 概要については、「 [Microsoft 365 管理者向けの PowerShell](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1)」を参照してください。
   

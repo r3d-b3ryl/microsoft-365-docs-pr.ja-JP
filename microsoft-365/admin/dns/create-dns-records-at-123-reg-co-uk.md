@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: ドメインを確認し、電子メール、Skype for Business Online、および123-reg.co.uk のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 3c188c7e9f2f9390aa45196d798e04441d33bcb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 51542e1f00153a87ca06ec540d391de6ca621bab
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400583"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307033"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Microsoft の123-reg.co.uk で DNS レコードを作成する
 
@@ -54,7 +54,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [ **Dns の管理**] ページで、[ **Advanced dns** ] タブを選択します。 
+4. [ **Dns の管理** ] ページで、[ **Advanced dns** ] タブを選択します。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -94,7 +94,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [ **Dns の管理**] ページで、[ **Advanced dns** ] タブを選択します。 
+4. [ **Dns の管理** ] ページで、[ **Advanced dns** ] タブを選択します。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -102,13 +102,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:**\<domain-key\>Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  . mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから**取得\<domain-key\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![テーブルの値をコピーして貼り付ける](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
+    ![[追加] を選択する](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
 7. その他の MX レコードがある場合は、そのレコードの **削除 (ごみ箱)** アイコンを選んでそれぞれ削除します。 
     
@@ -123,7 +123,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [ **Dns の管理**] ページで、[ **Advanced dns** ] タブを選択します。 
+4. [ **Dns の管理** ] ページで、[ **Advanced dns** ] タブを選択します。 
     
 5. 6 つの CNAME レコードの最初のレコードを追加します。
     
@@ -133,17 +133,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Hostname**|**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
    
     ![テーブルから値をコピーして貼り付けます。](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+    ![[追加] を選択する](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
 7. 他の 5 つの CNAME レコードを追加します。
     
@@ -155,7 +155,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 自分のドメインに対して既に SPF レコードがある場合は、Microsfot 用の新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords)を参照してください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 自分のドメインに対して既に SPF レコードがある場合は、Microsfot 用の新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)を参照してください。 To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md). 
   
 1. まず、[このリンク](https://www.123-reg.co.uk/secure/cpanel/domain/overview)を使って 123-reg.co.uk でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -163,7 +163,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [ **Dns の管理**] ページで、[ **Advanced dns** ] タブを選択します。 
+4. [ **Dns の管理** ] ページで、[ **Advanced dns** ] タブを選択します。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -175,9 +175,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![123Reg-BP-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
+    ![[追加] を選択する](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
@@ -188,7 +188,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. [ **Dns の管理**] ページで、[ **Advanced dns** ] タブを選択します。 
+4. [ **Dns の管理** ] ページで、[ **Advanced dns** ] タブを選択します。 
     
 5. 2 つの SRV レコードの最初のレコードを追加します。
     
@@ -199,14 +199,14 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
     |Hostname|Type|Priority|TTL|Destination SRV|
-    |_sip _tls|SRV|100|3600|1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
-    |_sipfederationtls _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)** <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません** <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
     ![テーブルから値をコピーして貼り付けます。](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
-6. [**追加**] を選択します。
+6. **[追加]** を選択します。
     
-    ![[追加] を選択します。](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
+    ![[追加] を選択する](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
 7. 他の SRV レコードを追加します。
     

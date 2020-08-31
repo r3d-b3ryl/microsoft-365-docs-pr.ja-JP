@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを IONOS 用に 1&1 に設定する方法について説明します。
-ms.openlocfilehash: 983fba73a6f82308d6d1bcf706ff93d72b98976c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 10c135d8fdc1512f0b2c1b341f3524097d5f6494
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400595"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307153"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>IONOS の 1&1 で DNS レコードを作成する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
 > [!CAUTION]
-> 1&1 IONOS では、ドメインは MX レコードとトップレベル自動検出 CNAME レコードの両方を持つことはできないことに注意してください。 これにより、Microsoft の Exchange Online を構成する方法が制限されます。 回避策がありますが、1&1 IONOS でサブドメインを作成した経験がある場合に**のみ**、この方法を使用することをお勧めします。 > このサービスの[制限](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)にかかわらず、1&1 IONOS で独自の Microsoft DNS レコードを管理する場合は、この記事の手順に従って、ドメインを確認し、電子メール、Skype For business Online などの dns レコードを設定します。 
+> 1&1 IONOS では、ドメインは MX レコードとトップレベル自動検出 CNAME レコードの両方を持つことはできないことに注意してください。 これにより、Microsoft の Exchange Online を構成する方法が制限されます。 回避策がありますが、1&1 IONOS でサブドメインを作成した経験がある場合に **のみ** 、この方法を使用することをお勧めします。 > このサービスの [制限](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) にかかわらず、1&1 IONOS で独自の Microsoft DNS レコードを管理する場合は、この記事の手順に従って、ドメインを確認し、電子メール、Skype For business Online などの dns レコードを設定します。 
   
 これらのレコードを 1&1 IONOS に追加すると、使用しているドメインが、Microsoft サービスで機能するように設定されます。
   
@@ -50,19 +50,19 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 次の手順を実行するか、[ビデオ (0 分 42 秒から開始) をご覧ください](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
   
-1. まず、[このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
+1. まず、 [このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
     
 2. [ **Manage domains**] を選びます。
     
-3. [**ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** ( **v**)] コントロールを選択します。
+3. [ **ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** ( **v**)] コントロールを選択します。
     
-4. [**ドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
+4. [ **ドメインの設定** ] 領域で、[ **DNS 設定の編集**] を選択します。
     
 5. [ **TXT および SRV Records** ] セクションで、[ **Add Record**] を選択します。
     
 6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     ||||
     |:-----|:-----|:-----|
@@ -71,9 +71,9 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
    
 7. **[保存]** を選択します。
     
-8. [**保存**] をもう一度選択します。 
+8. [ **保存** ] をもう一度選択します。 
     
-9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。
+9. [ **EDIT DNS Settings** ] ダイアログボックスで、[ **はい**] を選択します。
     
 10. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -99,17 +99,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 次の手順を実行するか、[ビデオ (3 分 22 秒から開始) を参照](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)してください。
   
 > [!NOTE]
-> 1und1.de に登録した場合は、[ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
+> 1und1.de に登録した場合は、 [ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
   
-1. まず、[このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
+1. まず、 [このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
     
 2. [ **Manage domains**] を選びます。
     
-3. [**ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** ( **v**)] コントロールを選択します。
+3. [ **ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** ( **v**)] コントロールを選択します。
     
-4. [**ドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
+4. [ **ドメインの設定** ] 領域で、[ **DNS 設定の編集**] を選択します。
     
-5. [ **Mx Records** ] セクションの [ **MAIL エクスチェンジャー (MX Record)** ] 領域で、[**その他のメールサーバー**] を選択します。<br/>(You may have to scroll down.)<br/>![1 &amp; 1-BP-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. [ **Mx Records** ] セクションの [ **MAIL エクスチェンジャー (MX Record)** ] 領域で、[ **その他のメールサーバー**] を選択します。<br/>(下へスクロールしなければならないことがあります。)<br/>![1 &amp; 1-BP-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
 6. 既に他の MX レコードがある場合は、それぞれのレコードを選び、キーボードの **Delete** キーを押して、レコードを削除します<br/>(登録されている MX レコードがない場合は、次の手順に進みます)。<br/>![1 &amp; 1-BP-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
@@ -117,13 +117,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**MX 1**|**Priority**|
     |:-----|:-----|
-    | *\<domain-key\>*. mail.protection.outlook.com  <br/>  注: \<domain-key\> Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | 
+    | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  注: \<domain-key\> Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | 
     
     ![1および 1-構成2および3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. **[保存]** を選択します。<br/>(You may have to scroll down.)<br/>![1 &amp; 1-BP-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+8. **[保存]** を選択します。<br/>(下へスクロールしなければならないことがあります。)<br/>![1 &amp; 1-BP-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
   
-9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。<br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. [ **EDIT DNS Settings** ] ダイアログボックスで、[ **はい**] を選択します。<br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な6つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
@@ -138,15 +138,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 次の手順を実行するか、[ビデオ (3 分 57 秒から開始) を参照](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)してください。
   
 > [!NOTE]
-> 1und1.de に登録した場合は、[ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
+> 1und1.de に登録した場合は、 [ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
   
-1. まず、[このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
+1. まず、 [このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
     
 2. [ **Manage domains**] を選びます。
     
-3. [**ドメインセンター** ] ページで、更新するドメインを見つけ、[サブドメインの**管理**] を選択します。<br/>![1 &amp; 1-BP-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>次に、2 つのサブドメインを作成して、それぞれの [ **Alias**] 値を設定します<br/>(1&1 IONOS でサポートされる最上位の CNAME レコードは1つだけなので、Microsoft はいくつかの CNAME レコードを必要とします)。<br/>最初に、Autodiscover サブドメインを作成します。
+3. [ **ドメインセンター** ] ページで、更新するドメインを見つけ、[サブドメインの **管理**] を選択します。<br/>![1 &amp; 1-BP-3-0](../../media/d570d03f-5c38-463d-809e-5bb9e4fb2777.png) <br/>次に、2 つのサブドメインを作成して、それぞれの [ **Alias**] 値を設定します<br/>(1&1 IONOS でサポートされる最上位の CNAME レコードは1つだけなので、Microsoft はいくつかの CNAME レコードを必要とします)。<br/>最初に、Autodiscover サブドメインを作成します。
     
-4. [**サブドメインの概要**] セクションで、[**サブドメインの作成**] を選択します。
+4. [ **サブドメインの概要** ] セクションで、[ **サブドメインの作成**] を選択します。
     
     ![1&amp;1-BP-Configure-3-1](../../media/95c63639-eb80-443d-8951-98e8b6cdcc4f.png)
   
@@ -158,11 +158,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![1 &amp; 1-BP-3-2](../../media/9be45113-ebaf-48e6-983c-a7e6ff9eea45.png)
   
-6. [**サブドメインの作成**] を選択します。<br/>![1 &amp; 1-BP-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
+6. [ **サブドメインの作成**] を選択します。<br/>![1 &amp; 1-BP-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
   
-7. [**サブドメインの概要**] セクションで、作成したばかりの**自動検出**サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>![1 &amp; 1-BP-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
+7. [ **サブドメインの概要** ] セクションで、作成したばかりの **自動検出** サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>![1 &amp; 1-BP-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
   
-8. [**サブドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。 <br/>![1 &amp; 1-BP-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
+8. [ **サブドメインの設定** ] 領域で、[ **DNS 設定の編集**] を選択します。 <br/>![1 &amp; 1-BP-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
   
 9. [ **A/AAAA レコード (Ip アドレス)** ] セクションの [ **Ip アドレス (A レコード)** ] 領域で、[ **CNAME**] を選択します。<br/>![1 &amp; 1-BP-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
   
@@ -183,7 +183,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 以降の手順に従って追加の CNAME レコードを作成すると、Skype for Business Online サービスが有効になります。 手順は、前に 2 つの CNAME レコードを作成したときの手順と同じです。
   
-1. 3 つ目のサブドメイン (Lyncdiscover) を作成します。<br/>[**サブドメインの概要**] セクションで、[**サブドメインの作成**] を選択します。
+1. 3 つ目のサブドメイン (Lyncdiscover) を作成します。<br/>[ **サブドメインの概要** ] セクションで、[ **サブドメインの作成**] を選択します。
     
 2. 新しいサブドメインの [ **Create Subdomain**] ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます ( **Alias** 値は後の手順で追加します)。<br/> 
     
@@ -191,11 +191,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |:-----|:-----|
     |lyncdiscover   |webdir.online.lync.com  |
    
-3. [**サブドメインの作成**] を選択します。
+3. [ **サブドメインの作成**] を選択します。
     
-4. [**ドメインセンター** ] ページで、[サブドメインの**管理**] を選択します。
+4. [ **ドメインセンター** ] ページで、[サブドメインの **管理**] を選択します。
     
-5. [**サブドメインの概要**] セクションで、作成したばかりの**lyncdiscover**サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>[**サブドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
+5. [ **サブドメインの概要** ] セクションで、作成したばかりの **lyncdiscover** サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>[ **サブドメインの設定** ] 領域で、[ **DNS 設定の編集**] を選択します。
     
 6. [ **A/AAAA レコード (Ip アドレス)** ] セクションの [ **Ip アドレス (A レコード)** ] 領域で、[ **CNAME**] を選択します。
     
@@ -205,11 +205,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |:-----|:-----|
     |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |
    
-8. [ **I am aware** ] 免責事項のチェックボックスをオンにして、[**保存**] を選択します。
+8. [ **I am aware** ] 免責事項のチェックボックスをオンにして、[ **保存**] を選択します。
     
-9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。
+9. [ **EDIT DNS Settings** ] ダイアログボックスで、[ **はい**] を選択します。
     
-10. 4 つ目のサブドメイン (SIP) を作成します。 <br/>[**サブドメインの概要**] セクションで、[**サブドメインの作成**] を選択します。
+10. 4 つ目のサブドメイン (SIP) を作成します。 <br/>[ **サブドメインの概要** ] セクションで、[ **サブドメインの作成**] を選択します。
     
 11. 新しいサブドメインの [ **Create Subdomain**] ボックスに、次の表の **Create Subdomain** 値のみを入力するか、コピーして貼り付けます ( **Alias** 値は後の手順で追加します)。<br/>
     
@@ -217,11 +217,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |:-----|:-----|
     |sip  <br/> |sipdir.online.lync.com  <br/> |
    
-12. [**サブドメインの作成**] を選択します。
+12. [ **サブドメインの作成**] を選択します。
     
-13. [**ドメインセンター** ] ページで、[サブドメインの**管理**] を選択します。
+13. [ **ドメインセンター** ] ページで、[サブドメインの **管理**] を選択します。
     
-14. [**サブドメインの概要**] セクションで、作成したばかりの**sip**サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>[**サブドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
+14. [ **サブドメインの概要** ] セクションで、作成したばかりの **sip** サブドメインを見つけて、そのサブドメインの [ **Panel (v)** ] コントロールを選択します。 <br/>[ **サブドメインの設定** ] 領域で、[ **DNS 設定の編集**] を選択します。
     
 15. [ **A/AAAA レコード (Ip アドレス)** ] セクションの [ **Ip アドレス (A レコード)** ] 領域で、[ **CNAME**] を選択します。
     
@@ -231,9 +231,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |:-----|:-----|
     |sip  <br/> |sipdir.online.lync.com  <br/> |
    
-17. [ **I am aware** ] 免責事項のチェックボックスをオンにして、[**保存**] を選択します。
+17. [ **I am aware** ] 免責事項のチェックボックスをオンにして、[ **保存**] を選択します。
     
-18. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。
+18. [ **EDIT DNS Settings** ] ダイアログボックスで、[ **はい**] を選択します。
     
 ### <a name="cname-records-needed-for-mdm"></a>MDM に必要な CNAME レコード
 
@@ -248,26 +248,26 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
   
 次の手順を実行するか、[ビデオ (5 分 9 秒から開始) を参照](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)してください。
   
 > [!NOTE]
-> 1und1.de に登録した場合は、[ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
+> 1und1.de に登録した場合は、 [ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
   
-1. まず、[このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
+1. まず、 [このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
     
 2. [ **Manage domains**] を選びます。
     
-3. [**ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** (**v**)] コントロールを選択します。
+3. [ **ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** (**v**)] コントロールを選択します。
     
-4. [**ドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
+4. [ **ドメインの設定** ] 領域で、[ **DNS 設定の編集**] を選択します。
     
-5. [ **TXT および SRV Records** ] セクションで、[ **Add Record**] を選択します。 <br/>(You may have to scroll down.)
+5. [ **TXT および SRV Records** ] セクションで、[ **Add Record**] を選択します。 <br/>(下へスクロールしなければならないことがあります。)
     
-6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Choose the **Type** value from the drop-down list.) <br/>
+6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(ドロップダウン リストから [**Type**] の値を選びます。) <br/>
     
-    |**種類**|**Prefix**|**Name Value**|
+    |**Type**|**Prefix**|**Name Value**|
     |:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           | 
     
@@ -277,22 +277,22 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 8. **[保存]** を選択します。<br/>![レコードを保存する](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
   
-9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。<br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. [ **EDIT DNS Settings** ] ダイアログボックスで、[ **はい**] を選択します。<br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 
 次の手順を実行するか、[ビデオ (5 分 51 秒から開始) を参照](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)してください。
   
 > [!NOTE]
-> 1und1.de に登録した場合は、[ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
+> 1und1.de に登録した場合は、 [ここにサインイン](https://go.microsoft.com/fwlink/?linkid=859152)してください。 
   
-1. まず、[このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
+1. まず、 [このリンク](https://my.1and1.com/)を使用して 1&1 IONOS でドメインページにアクセスします。 You'll be prompted to log in.
     
 2. [ **Manage domains**] を選びます。
     
-3. [**ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** ( **v**)] コントロールを選択します。
+3. [ **ドメインセンター** ] ページで、更新するドメインを見つけて、そのドメインの [ **Panel** ( **v**)] コントロールを選択します。
     
-4. [**ドメインの設定**] 領域で、[ **DNS 設定の編集**] を選択します。
+4. [ **ドメインの設定** ] 領域で、[ **DNS 設定の編集**] を選択します。
     
 5. [ **TXT および SRV Records** ] セクションで、[ **Add Record**] を選択します。
     
@@ -300,7 +300,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Type**|**Service**|**Protocol**|**Name**|**Host**|**Priority**|**Weight**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 h)  <br/> |
+    |SRV  <br/> |sip  <br/> |tls  <br/> |(このフィールドは空のままにします。)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (1 h)  <br/> |
     |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(このフィールドは空のままにします。)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (1 h)  <br/> |  
     
     ![1 &amp; 1-BP-5-1](../../media/087e337d-926b-42ff-b11d-b449cfaed76c.png)
@@ -309,9 +309,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 8. **[保存]** を選択します。 <br/>![1 &amp; 1-BP-5-3](../../media/097e7e95-4899-4878-b6e7-c3abd8193c52.png)
   
-9. [ **EDIT DNS Settings** ] ダイアログボックスで、[**はい**] を選択します。 <br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+9. [ **EDIT DNS Settings** ] ダイアログボックスで、[ **はい**] を選択します。 <br/>![[DNS 設定の編集] ダイアログボックスで [はい] を選択する](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
-10. 残りの SRV レコードを追加します。 <br/>[ **TXT および SRV Records** ] セクションで、[ **Add Record**] を選択します。 <br/>[ **Add Record** ] 領域で、表の他の行の値を使用してレコードを作成し、[**追加**]、[**保存**]、および **[はい]** を再度選択してレコードを完成させます。 
+10. 残りの SRV レコードを追加します。 <br/>[ **TXT および SRV Records** ] セクションで、[ **Add Record**] を選択します。 <br/>[ **Add Record** ] 領域で、表の他の行の値を使用してレコードを作成し、[ **追加**]、[ **保存**]、および **[はい]** を再度選択してレコードを完成させます。 
     
 > [!NOTE]
 > 通常、DNS の変更が反映されるまでの時間は約 15 分です。ただし、インターネットの DNS システム全体を更新する変更の場合、さらに長くかかることもあります。DNS レコードの追加後にメール フローなどに問題が発生した場合は、「[ドメインまたは DNS レコードを追加後に問題を特定して解決する](../get-help-with-domains/find-and-fix-issues.md)」を参照してください。 

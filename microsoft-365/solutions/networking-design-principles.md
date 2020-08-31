@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 778693787c3d26806b02a2ffbde57e3347326d87
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: a005d56dcca08c05eb433ef75ca3870785b39f19
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522267"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308131"
 ---
 # <a name="networking-up-to-the-cloud--one-architects-viewpoint"></a>ネットワーク上 (クラウドへ) —1つのアーキテクトの視点
 
@@ -36,21 +36,21 @@ ms.locfileid: "46522267"
 
 ## <a name="its-not-the-network--its-how-youre-misusing-it"></a>ネットワークではありません。 (mis) を使用しています。
 
-どのくらいの回数であっても、*クリエイティブ*なセキュリティチームやネットワークチームがどのような方法で Microsoft クラウドサービスに接続する必要があるかどうかを amaze することはできません。 何らかのセキュリティポリシー、コンプライアンス標準、またはより良い方法で、ユーザーが達成しようとしていることについての会話や、より良い方法、より*良い方法、* 費用対効果の高い方法、さらに優れた方法を使用することをお勧めします。 
+どのくらいの回数であっても、 *クリエイティブ* なセキュリティチームやネットワークチームがどのような方法で Microsoft クラウドサービスに接続する必要があるかどうかを amaze することはできません。 何らかのセキュリティポリシー、コンプライアンス標準、またはより良い方法で、ユーザーが達成しようとしていることについての会話や、より良い方法、より *良い方法、* 費用対効果の高い方法、さらに優れた方法を使用することをお勧めします。 
 
-このような状況が私にエスカレートされている場合は、通常、課題を取得して hows と [方法] を調べて、必要な場所に移動します。 しかし、完全に frank が到着している場合には、そのようなことをできるようにする必要があります。また、最後に concede が機能しない場合には、それに戻ってきたことを伝える必要があります。 必要に応じて、これを行うことはできますが、そうではあり*ませ*ん。 今回は、この投稿に含める予定のすべてについて説明します。 お客様の役割に関係なく、組織で Microsoft クラウドサービスを使用する場合は、次の点について理解を助けることがあるかもしれません。
+このような状況が私にエスカレートされている場合は、通常、課題を取得して hows と [方法] を調べて、必要な場所に移動します。 しかし、完全に frank が到着している場合には、そのようなことをできるようにする必要があります。また、最後に concede が機能しない場合には、それに戻ってきたことを伝える必要があります。 必要に応じて、これを行うことはできますが、そうではあり *ませ*ん。 今回は、この投稿に含める予定のすべてについて説明します。 お客様の役割に関係なく、組織で Microsoft クラウドサービスを使用する場合は、次の点について理解を助けることがあるかもしれません。
 
 
 ## <a name="guiding-principles"></a>指針原則
 ここでは、ここで説明する内容に関するいくつかの基本的なルールについて説明します。 ここでは、実際のセキュリティを維持しながら、最小限の複雑さと最大のパフォーマンスを確保するために、クラウドサービスに安全に接続する方法について説明します。 次に示すものは、自分またはお客様が好きなプロキシサーバーを使用していない場合でも、どのようなものにも対応していません。
 
 - このような場合、Jurassic パークムービーからのワトソン博士の paraphrase については **、必要ではないことを意味**します。 . . はい。ただし、セキュリティチームは、必要な場合に停止していないかどうかについて、事前に使用されていたかどうかを判断することができました。    
-- **セキュリティは複雑ではありません**。より多くの費用をかけて、より多くのデバイスを利用したり、[その他のボタン] をクリックしたりするだけで、セキュリティが強化されません。
-- **Office 365 はインターネット経由でアクセス**しますが、office 365 がインターネットであるのと同じではありません。 これは、Microsoft によって管理され、ユーザーによって管理される SaaS サービスです。 インターネット上でアクセスする web サイトとは異なり、実際には curtain の背後をピークし、ポリシーおよびコンプライアンス基準を満たすために必要なコントロールを適用することができますが、目的を達成するには、別の方法で実行するだけで十分な場合があります。
+- **セキュリティは複雑ではありません** 。より多くの費用をかけて、より多くのデバイスを利用したり、[その他のボタン] をクリックしたりするだけで、セキュリティが強化されません。
+- **Office 365 はインターネット経由でアクセス** しますが、office 365 がインターネットであるのと同じではありません。 これは、Microsoft によって管理され、ユーザーによって管理される SaaS サービスです。 インターネット上でアクセスする web サイトとは異なり、実際には curtain の背後をピークし、ポリシーおよびコンプライアンス基準を満たすために必要なコントロールを適用することができますが、目的を達成するには、別の方法で実行するだけで十分な場合があります。
 - 一部のユーザーは、 **breakouts**を使用して、すべてのユーザーのインターネットトラフィックを監視し、ポリシーを適用することができますが、通常は、すべてのユーザーがすべての場所でインターネットアクセスをプロビジョニングするよりも安価であること、またはそのような方法であることから、多くの場合は、すべてのユーザーにとって、すべてのユーザー しかし、これらのチョークポイントは、まさにトラフィックのチョークを示すポイント。 ユーザーが Instagram を参照したり、cat ビデオをストリーミングしたりできなくなることはありませんが、ミッションクリティカルなビジネスアプリケーションのトラフィックを同じ方法で扱うことはありません。
-- **Dns ain't ハッピーな場合は、ain't nothing**を使用することができます。これは、他の地域のサーバーへの要求によって、または dns 解決情報をキャッシュする ISP の dns サーバーまたは他のパブリック dns サーバーを使用しているかどうかに関係なく、hamstrung の機能を備えています。 
+- **Dns ain't ハッピーな場合は、ain't nothing** を使用することができます。これは、他の地域のサーバーへの要求によって、または dns 解決情報をキャッシュする ISP の dns サーバーまたは他のパブリック dns サーバーを使用しているかどうかに関係なく、hamstrung の機能を備えています。 
 - これをどのように使用するかと**いうことは、現在の方法**ではなく、常にテクノロジが変更され、Office 365 が例外ではないことを意味します。 オンプレミスのサービスに対して開発および展開されたセキュリティ対策を適用したり、web サーフィンを制御したりすることは、同じレベルのセキュリティ保証を提供することではなく、パフォーマンスに重大な悪影響を与える可能性があります。
-- **Office 365 は、インターネット経由でアクセスできるように構築され**ています。これは簡単に行うことができます。 ユーザーとエッジとの間で何をするかに関係なく、ネットワークが使用された後、そのトラフィックが自分に到達する前に、インターネットを経由することができます。 Azure ExpressRoute を使用してネットワークからお客様への重要な機密トラフィックを送信する場合でも、インターネット接続は完全に必要です。 同意します。 考えすぎません。
+- **Office 365 は、インターネット経由でアクセスできるように構築され** ています。これは簡単に行うことができます。 ユーザーとエッジとの間で何をするかに関係なく、ネットワークが使用された後、そのトラフィックが自分に到達する前に、インターネットを経由することができます。 Azure ExpressRoute を使用してネットワークからお客様への重要な機密トラフィックを送信する場合でも、インターネット接続は完全に必要です。 同意します。 考えすぎません。
 
 ## <a name="where-bad-choices-are-often-made"></a>誤った選択が行われることが多い
 
@@ -62,7 +62,7 @@ Greenfield 環境を展開しているお客様はほとんどありません。
 帯域幅は常に問題になりますが、負荷の増加を処理するために NAT デバイスに十分な能力がありません。リソースを解放するには、接続を閉じて終了することがあります。 Office 365 に接続するクライアントソフトウェアのほとんどは永続的な接続を想定しており、Office 365 を完全に利用しているユーザーは、32以上の接続を持つことがあります。 NAT デバイスが途中で切断されている場合、それらのアプリケーションが存在しなくなった接続を使用しようとすると、それらのアプリが応答しないことがあります。 ユーザーが新しい接続を確立して、その接続を確立しようとすると、ネットワーク歯車にさらに負荷がかけられます。
 
 ### <a name="localized-breakout"></a>ローカライズされたブレイクアウト
-この一覧に記載されているその他の要素はすべて、ネットワークを切断して、できる限り早く自分に到達することになります。 ユーザーのトラフィックを中央の出口に Backhauling ます。特に、その出口ポイントがユーザーの数よりも別の地域にある場合は、不必要な待機時間が発生し、クライアントとダウンロードの速度の両方に影響します。 Microsoft は、ほぼすべての主要 ISP によって確立されたすべてのサービスとピアリングに対してフロントエンドを備えたプレゼンスポイントを世界中に持っています。そのため、ユーザーのトラフィックを*ローカル*にルーティングすることにより、短時間でネットワークに侵入できるようになります。 
+この一覧に記載されているその他の要素はすべて、ネットワークを切断して、できる限り早く自分に到達することになります。 ユーザーのトラフィックを中央の出口に Backhauling ます。特に、その出口ポイントがユーザーの数よりも別の地域にある場合は、不必要な待機時間が発生し、クライアントとダウンロードの速度の両方に影響します。 Microsoft は、ほぼすべての主要 ISP によって確立されたすべてのサービスとピアリングに対してフロントエンドを備えたプレゼンスポイントを世界中に持っています。そのため、ユーザーのトラフィックを *ローカル* にルーティングすることにより、短時間でネットワークに侵入できるようになります。 
 
 ### <a name="dns-resolution-traffic-should-follow-the-internet-egress-path"></a>DNS 解決トラフィックは、インターネット出口パスに従う必要があります。
 当然ですが、クライアントがエンドポイントを検出するには、DNS を使用する必要があります。 Microsoft の DNS サーバーは、DNS 要求のソースを評価して、インターネット用語で、要求の送信元に最も近い応答を返します。 名前解決要求がユーザーのトラフィックと同じパスになるように、DNS が構成されていることを確認してください。これにより、lest は、ローカルに送信されたが、別の地域のエンドポイントにもアクセスできるようになります。 これは、リモートデータセンターの DNS サーバーに転送するのではなく、ローカルの DNS サーバーが "ルートに移動" されることを意味します。 パブリックおよびプライベート DNS サービスについては、世界のある部分からの結果をキャッシュし、世界の他の部分からの要求に対応することができます。
@@ -70,7 +70,7 @@ Greenfield 環境を展開しているお客様はほとんどありません。
 ### <a name="to-proxy-or-not-to-proxy-that-is-the-question"></a>プロキシに対してプロキシまたは not を行う場合は、その質問
 最初に考慮する必要があるのは、Office 365 へのユーザー接続をプロキシするかどうかです。 簡単です。プロキシを実行しません。 Office 365 はインターネット経由でアクセスされますが、インターネットではありません。 これはコアサービスの拡張機能であり、そのように扱う必要があります。 DLP、マルウェア対策、コンテンツ検査など、プロキシで行うことができることは、サービスで既に提供されています。また、規模にかかわらず、TLS で暗号化された接続を解読する必要もありません。 しかし、それ以外の方法では制御できないトラフィックをプロキシにする場合は、「」およびのトラフィックのカテゴリに注意を払う必要が [https://aka.ms/pnc](https://aka.ms/pnc) [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs) あります。 Office 365 には3つのカテゴリのトラフィックがあります。 最適化と許可は、実際には直接実行し、プロキシをバイパスする必要があります。 既定では、プロキシできます。 詳細については、これらのドキュメントをご確認ください。 . . 読み取ります。
 
-プロキシを使用することを希望するお客様のほとんどは、クライアントがプロキシに対して HTTP 接続要求を行ったときに、プロキシに HTTP 接続要求を送信したときに、プロキシが高価な余分なルーターになることを認識することになります。 MAPI や RTC などの使用されているプロトコルは、web プロキシが認識するプロトコルではなく、TLS クラッキングを使用しても、実際には特にセキュリティを強化することはありません。 さら*に遅延が*発生しています。 詳細については、「 [https://aka.ms/pnc](https://aka.ms/pnc) Microsoft 365 のトラフィックの最適化、許可、および既定の分類を含む」を参照してください。
+プロキシを使用することを希望するお客様のほとんどは、クライアントがプロキシに対して HTTP 接続要求を行ったときに、プロキシに HTTP 接続要求を送信したときに、プロキシが高価な余分なルーターになることを認識することになります。 MAPI や RTC などの使用されているプロトコルは、web プロキシが認識するプロトコルではなく、TLS クラッキングを使用しても、実際には特にセキュリティを強化することはありません。 さら *に遅延が* 発生しています。 詳細については、「 [https://aka.ms/pnc](https://aka.ms/pnc) Microsoft 365 のトラフィックの最適化、許可、および既定の分類を含む」を参照してください。
 
 最後に、その影響を処理するために、プロキシとそれに対応する応答に対する全体的な影響について検討します。 より多くの接続がプロキシを介して確立されているため、TCP スケールを小さくして、それほど多くのトラフィックをバッファーする必要がないようにすることができます。 プロキシが過負荷になり、スケールファクターが0になっているというお客様を見たことがあります。 スケールファクターは指数値なので、8を使用しているため、スケール係数値の減少はそれぞれ、スループットに大きな悪影響を与えることになります。
 
@@ -79,14 +79,14 @@ TLS 検査はセキュリティを意味します。 しかし、実際にはで
 ### <a name="streaming-isnt-important-except-that-it-is"></a>ストリーミングは重要で*はあり*ませんが、
 Office 365 で UDP を使用するサービスは、Skype (廃止予定) と Microsoft Teams のみです。 Teams は、オーディオ、ビデオ、プレゼンテーション共有などのストリーミングトラフィックに UDP を使用します。 音声、ビデオ、およびプレゼンテーションの発表や、デモの実行など、ストリーミングトラフィックが有効になります。 これらは UDP を使用します。パケットがドロップされるか、順不同になったため、実際にはユーザーによって unnoticeable されることがありますが、そのストリームは今まで続けておくことができます。 
 
-クライアントからサービスへの送信 UDP トラフィックが許可されていない場合は、TCP を使用してフォールバックすることができます。 しかし、TCP パケットがドロップされると、再転送タイムアウト (RTO) の期限が切れ、欠落しているパケットが再送信されるまで、*すべてが停止*します。 パケットが順不同で到着した場合、他のパケットが到着するまですべてが停止し、順に再構築できます。 両方とも音声で perceptible の異常につながる (最大ヘッドルームを記憶する) とビデオ (一部をクリックしたことがあります)。 . . そのような場合は)、パフォーマンスが低下し、ユーザーの作業が正しくないことにつながります。 プロキシについては、前述の説明を覚えておいてください。 Teams クライアントがプロキシを使用するように強制する場合は、強制的に TCP を使用するようにします。 これで、パフォーマンスへの悪影響が2回発生しています。
+クライアントからサービスへの送信 UDP トラフィックが許可されていない場合は、TCP を使用してフォールバックすることができます。 しかし、TCP パケットがドロップされると、再転送タイムアウト (RTO) の期限が切れ、欠落しているパケットが再送信されるまで、 *すべてが停止* します。 パケットが順不同で到着した場合、他のパケットが到着するまですべてが停止し、順に再構築できます。 両方とも音声で perceptible の異常につながる (最大ヘッドルームを記憶する) とビデオ (一部をクリックしたことがあります)。 . . そのような場合は)、パフォーマンスが低下し、ユーザーの作業が正しくないことにつながります。 プロキシについては、前述の説明を覚えておいてください。 Teams クライアントがプロキシを使用するように強制する場合は、強制的に TCP を使用するようにします。 これで、パフォーマンスへの悪影響が2回発生しています。
 
 ### <a name="split-tunneling-may-seem-scary"></a>スプリットトンネリングは恐ろしいかもしれません。
 しかし、そうではありません。 Office 365 へのすべての接続は TLS を経由しています。 現時点で TLS 1.2 を提供してきましたが、従来のクライアントでは以前のバージョンを引き続き使用しており、それがリスクとなるため、すぐにこれを無効にします。
 
-TLS 32 接続を強制的に実行することによって、サービスにアクセスする前に VPN にアクセスすることは、セキュリティを追加しません。 これにより、待機時間が追加され、全体的なスループットが低下します。 一部の VPN ソリューションでは、TCP を強制的にトンネリングするように UDP を強制することで、ストリーミングトラフィックに悪影響を及ぼすことがあります。 また、TLS 検査を行っていない限り、すべての欠点があります。 現在、お客様間での非常に一般的なテーマは現在、多くの従業員がリモートであるため、アクセスのために分割トンネリングを構成して、[カテゴリの Office 365 エンドポイントを最適化](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories)するのではなく、帯域幅が大きく、すべてのユーザーが VPN を使用して接続することによる影響を受けています。
+TLS 32 接続を強制的に実行することによって、サービスにアクセスする前に VPN にアクセスすることは、セキュリティを追加しません。 これにより、待機時間が追加され、全体的なスループットが低下します。 一部の VPN ソリューションでは、TCP を強制的にトンネリングするように UDP を強制することで、ストリーミングトラフィックに悪影響を及ぼすことがあります。 また、TLS 検査を行っていない限り、すべての欠点があります。 現在、お客様間での非常に一般的なテーマは現在、多くの従業員がリモートであるため、アクセスのために分割トンネリングを構成して、 [カテゴリの Office 365 エンドポイントを最適化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)するのではなく、帯域幅が大きく、すべてのユーザーが VPN を使用して接続することによる影響を受けています。
 
-分割トンネリングを実行するための簡単な修正プログラムです。 詳細については、「 [VPN 分割トンネリングを使用してリモートユーザーの Office 365 の接続を最適化](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)する」を参照してください。
+分割トンネリングを実行するための簡単な修正プログラムです。 詳細については、「 [VPN 分割トンネリングを使用してリモートユーザーの Office 365 の接続を最適化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)する」を参照してください。
 
 
 ## <a name="the-sins-of-the-past"></a>過去の大罪
@@ -96,7 +96,7 @@ TLS 32 接続を強制的に実行することによって、サービスにア�
 
 ## <a name="exceptions-to-the-rules"></a>ルールの例外
 
-組織でテナントの[制限](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)が必要な場合は、TLS ブレイクでプロキシを使用して、プロキシ経由のトラフィックを強制的に実行する必要がありますが、すべてのトラフィックを強制する必要はありません。  これは、すべてまたは何も提案ではないため、プロキシで変更する必要があるものに注意を払う必要があります。 
+組織でテナントの [制限](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)が必要な場合は、TLS ブレイクでプロキシを使用して、プロキシ経由のトラフィックを強制的に実行する必要がありますが、すべてのトラフィックを強制する必要はありません。  これは、すべてまたは何も提案ではないため、プロキシで変更する必要があるものに注意を払う必要があります。 
 
 分割トンネリングを許可していて、一般的な web トラフィックにプロキシも使用している場合は、PAC ファイルで直接実行する必要がある内容と、VPN トンネルを通過することに関する興味深いトラフィックを定義する方法を確認してください。 このように [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs) してサンプルの PAC ファイルが提供されるので、これが容易に管理できるようになります。
 
@@ -108,32 +108,32 @@ Fortune 500 のほぼすべてを含む数万の組織。ミッションクリ�
 
 ## <a name="further-reading"></a>参考資料
 
-[Office 365 のネットワーク接続の原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)
+[Office 365 のネットワーク接続の原則](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)
 
-[Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-[Office 365 エンドポイントの管理](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
+[Office 365 エンドポイントの管理](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)
 
-[Office 365 IP アドレスと URL の Web サービス ](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)
+[Office 365 IP アドレスと URL の Web サービス ](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-ip-web-service)
 
-[Office 365 のネットワーク接続の評価](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
+[Office 365 のネットワーク接続の評価](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
 
-[Office 365 のネットワークとパフォーマンスのチューニング](https://docs.microsoft.com/office365/enterprise/network-planning-and-performance)
+[Office 365 のネットワークとパフォーマンスのチューニング](https://docs.microsoft.com/microsoft-365/enterprise/network-planning-and-performance)
 
-[Office 365 ネットワーク接続の評価](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
+[Office 365 ネットワーク接続の評価](https://docs.microsoft.com/microsoft-365/enterprise/assessing-network-connectivity)
 
-[ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](https://docs.microsoft.com/office365/enterprise/performance-tuning-using-baselines-and-history)
+[ベースラインとパフォーマンス履歴を使用した、Office 365 のパフォーマンスのチューニング](https://docs.microsoft.com/microsoft-365/enterprise/performance-tuning-using-baselines-and-history)
 
-[Office 365 のパフォーマンスに関するトラブルシューティングの計画](https://docs.microsoft.com/office365/enterprise/performance-troubleshooting-plan)
+[Office 365 のパフォーマンスに関するトラブルシューティングの計画](https://docs.microsoft.com/microsoft-365/enterprise/performance-troubleshooting-plan)
 
-[Content Delivery Network](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)
+[Content Delivery Network](https://docs.microsoft.com/microsoft-365/enterprise/content-delivery-networks)
 
 [Microsoft 365 の接続テスト](https://connectivity.office.com/)
 
-[Microsoft が高速で信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[Microsoft がそのファースト・信頼性の高いグローバルネットワークを構築する方法](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
-[Office 365 ネットワークのブログ](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
+[Office 365 ネットワークのしくみ](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
 
-[VPN 分割トンネリングを使用したリモートユーザーのための Office 365 接続](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
+[VPN 分割トンネリングを使用したリモートユーザーのための Office 365 接続](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
 
 

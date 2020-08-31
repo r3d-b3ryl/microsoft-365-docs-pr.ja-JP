@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 のルート証明書と証明機関 (CAs) の完全な一覧を表示します。
-ms.openlocfilehash: 4fa98f417968229a0ba5382b7b1e8b4067db2e36
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c0f63f6e4ebc288f8b06d608af81a485e5f71e8a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631702"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307446"
 ---
 # <a name="encryption-chains"></a>暗号化チェーン
 
-Office 365 は、いくつかの異なる証明書プロバイダーを活用しています。 以下は、お客様が Office 365 へのアクセス時に遭遇する既知の Office 365 ルート証明書の完全なリストを示しています。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については、「 [Plan for サードパーティ SSL certificates For Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates)」を参照してください。 次の証明書情報は、Office 365 の全世界および国内のクラウドインスタンスに適用されます。
+Office 365 は、いくつかの異なる証明書プロバイダーを活用しています。 以下は、お客様が Office 365 へのアクセス時に遭遇する既知の Office 365 ルート証明書の完全なリストを示しています。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については、「 [Plan for サードパーティ SSL certificates For Office 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)」を参照してください。 次の証明書情報は、Office 365 の全世界および国内のクラウドインスタンスに適用されます。
 
 >[!NOTE]
 >**Dod および gcc の多い**お客様に適用される証明書情報については、「 [Office 365 暗号化チェーン-DOD および gcc high](encryption-office-365-certificate-chains-itar.md)」を参照してください。
 
 | **証明書の種類** | **P7b ダウンロード** | **CRL エンドポイント** | **OCSP エンドポイント** | **AIA エンドポイント** |
 | --- | --- | --- | --- | --- |
-| 公開されている信頼されたルート証明書 | [Office 365 ルート証明書バンドル (P7B)](https://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) | crl.globalsign.net<br>www.d-trust.net | 該当なし | 該当なし |
+| 公開されている信頼されたルート証明書 | [Office 365 ルート証明書バンドル (P7B)](https://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) | crl.globalsign.net<br>www.d-trust.net | N/A | N/A |
 | 公開されている公開中間証明書 | [Office 365 中間証明書バンドル (P7B)](https://download.microsoft.com/download/4/D/5/4D5339A4-0A4A-46AB-AE52-B179DEDA4BEC/O365_Intermediate_Certs_20170321.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 証明書プロバイダーの詳細については、以下のセクションを展開して、その他の詳細を確認してください。
@@ -145,7 +145,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust ルート証明機関-G2**
 
-| **[件名]** | CN = Entrust ルート証明機関-G2<br>OU =&quot;(c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **シリアル番号** | 4A:53: 8C:28 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -159,7 +159,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **[件名]** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS\_2048 incorp。 ref で。 (制限 s liab.)<br>O = Entrust |
+| **[件名]** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 s liab.)<br>O = Entrust |
 | --- | --- |
 | **シリアル番号** | 38:63: DE: F8 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -203,7 +203,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="thawte-primary-root-ca---g3"></a>**thawte プライマリルート CA-G3**
 
-| **[件名]** | CN = thawte プライマリルート CA-G3<br>OU =&quot;(c) 2008 Thawte, inc.-承認済みの使用のみ&quot;<br>OU = 証明サービス部門<br>O =&quot;Thawte, Inc&quot;<br>C = US |
+| **[件名]** | CN = thawte プライマリルート CA-G3<br>OU = &quot; (c) 2008 thawte, inc.-承認済みの使用のみ&quot;<br>OU = 証明サービス部門<br>O = &quot; thawte, Inc&quot;<br>C = US |
 | --- | --- |
 | **シリアル番号** | 60:01:97: B7:46: A7: EA: B4: B4: 9A: D6: 4B: .2F: F7:90: FB |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -217,7 +217,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign Class 3 パブリックプライマリ証明機関-G5**
 
-| **[件名]** | CN = VeriSign Class 3 パブリックプライマリ証明機関-G5<br>OU =&quot;(c) 2006 VeriSign, inc.-承認済みの使用のみ&quot;<br>OU = VeriSign Trust Network<br>O =&quot;VeriSign, Inc&quot;<br>C = US |
+| **[件名]** | CN = VeriSign Class 3 パブリックプライマリ証明機関-G5<br>OU = &quot; (c) 2006 VeriSign, inc.-承認済みの使用のみ&quot;<br>OU = VeriSign Trust Network<br>O = &quot; VeriSign, Inc&quot;<br>C = US |
 | --- | --- |
 | **シリアル番号** | 18: DA: D1: 9E:26: 7D: E8: BB: 4A:21:58: CD:97: 6B: 3B: 4A |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -344,9 +344,9 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1c"></a>**Entrust 証明機関-L1C**
 
-| **[件名]** | CN = Entrust 証明機関-L1C<br>OU =&quot;(c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust 証明機関-L1C<br>OU = &quot; (c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
-| **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS\_2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
+| **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
 | **シリアル番号** | 4C: 0E: 8C:39 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha1RSA |
@@ -362,9 +362,9 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust 証明機関-L1K**
 
-| **[件名]** | CN = Entrust 証明機関-L1K<br>OU =&quot;(c) 2012 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust 証明機関-L1K<br>OU = &quot; (c) 2012 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
-| **発行者** | CN = Entrust ルート証明機関-G2<br>OU =&quot;(c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **発行者** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | **シリアル番号** | 0E: E9: 4C: C3:00:00:00:00:51: D3:77:85 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha256RSA |
@@ -616,7 +616,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 | **[件名]** | CN = Symantec Class 3 EV SSL CA-G3<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = US |
 | --- | --- |
-| **発行者** | CN = VeriSign Class 3 パブリックプライマリ証明機関-G5<br>OU =&quot;(c) 2006 VeriSign, inc.-承認済みの使用のみ&quot;<br>OU = VeriSign Trust Network<br>O =&quot;VeriSign, Inc&quot;<br>C = US |
+| **発行者** | CN = VeriSign Class 3 パブリックプライマリ証明機関-G5<br>OU = &quot; (c) 2006 VeriSign, inc.-承認済みの使用のみ&quot;<br>OU = VeriSign Trust Network<br>O = &quot; VeriSign, Inc&quot;<br>C = US |
 | **サブジェクトの別名** | ディレクトリアドレス: CN = SymantecPKI-1-533 |
 | **シリアル番号** | 7E: E1: 4A: 6F: 6F: EF: F2: D3: 7F: 3F: AD:65: 4D: 3A: DA: B4 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -635,7 +635,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 | **[件名]** | CN = Symantec Class 3 セキュリティで保護されたサーバー CA-G4<br>OU = Symantec Trust Network<br>O = Symantec Corporation<br>C = US |
 | --- | --- |
-| **発行者** | CN = VeriSign Class 3 パブリックプライマリ証明機関-G5<br>OU =&quot;(c) 2006 VeriSign, inc.-承認済みの使用のみ&quot;<br>OU = VeriSign Trust Network<br>O =&quot;VeriSign, Inc&quot;<br>C = US |
+| **発行者** | CN = VeriSign Class 3 パブリックプライマリ証明機関-G5<br>OU = &quot; (c) 2006 VeriSign, inc.-承認済みの使用のみ&quot;<br>OU = VeriSign Trust Network<br>O = &quot; VeriSign, Inc&quot;<br>C = US |
 | **サブジェクトの別名** | ディレクトリアドレス: CN = SymantecPKI-1-534 |
 | **シリアル番号** | 51: 3F: B9:74:38:70: B7:34:40:41: 8D:30:93:06: 365: FF |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -652,9 +652,9 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="thawte-sha256-ssl-ca"></a>**thawte SHA256 SSL CA**
 
-| **[件名]** | CN = thawte SHA256 SSL CA<br>O =&quot;Thawte, Inc&quot;<br>C = US |
+| **[件名]** | CN = thawte SHA256 SSL CA<br>O = &quot; thawte, Inc&quot;<br>C = US |
 | --- | --- |
-| **発行者** | CN = thawte プライマリルート CA-G3<br>OU =&quot;(c) 2008 Thawte, inc.-承認済みの使用のみ&quot;<br>OU = 証明サービス部門<br>O =&quot;Thawte, Inc&quot;<br>C = US |
+| **発行者** | CN = thawte プライマリルート CA-G3<br>OU = &quot; (c) 2008 thawte, inc.-承認済みの使用のみ&quot;<br>OU = 証明サービス部門<br>O = &quot; thawte, Inc&quot;<br>C = US |
 | **サブジェクトの別名** | ディレクトリアドレス: CN = VeriSignMPKI-2-415 |
 | **シリアル番号** | 36:34: 9E:18: C9: 9C:26:69: B6:56: 2E: 6C: E5: AD:71:32 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |

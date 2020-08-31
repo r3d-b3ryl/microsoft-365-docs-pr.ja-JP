@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: ユーザーアカウントからライセンスの割り当てを解除する方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 29dbdb89550d5bd9bd13071b184ffe1ca340f2a6
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 4441fd253c4cf5304562900bf31869eb4e0f21ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015937"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306541"
 ---
 # <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
 
@@ -45,7 +45,7 @@ ms.locfileid: "45015937"
 ## <a name="before-you-begin"></a>はじめに
 
 - ライセンスの割り当てを解除するには、グローバルなライセンス、ユーザー管理者である必要があります。 詳細については、「[Microsoft 365 の管理者の役割](../add-users/about-admin-roles.md)」を参照してください。
-- [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell)ことができます。
+- [Office 365 PowerShell を使用してライセンスをユーザー アカウントに割り当てる](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell)ことができます。
 - ライセンスを割り当てられた [ユーザーアカウントを削除](../add-users/delete-a-user.md) して、他のユーザーがライセンスを使用できるようにすることもできます。 ユーザーアカウントを削除すると、そのライセンスはすぐに他のユーザーに割り当てることができます。
 
 ::: moniker range="o365-worldwide"
@@ -70,7 +70,7 @@ ms.locfileid: "45015937"
 
 ### <a name="unassign-licenses-from-one-user"></a>1人のユーザーのライセンスの割り当てを解除する
   
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 2. ライセンスの割り当てを解除するユーザーの行を選択します。
 3. 右側のウィンドウで、[**ライセンスとアプリ**] を選択します。
 4. [ **ライセンス** ] セクションを展開し、割り当てを解除するライセンスのボックスをオフにして、[ **変更の保存**] を選択します。
@@ -81,7 +81,7 @@ ms.locfileid: "45015937"
 
 ## <a name="unassign-licenses-from-one-user"></a>1人のユーザーのライセンスの割り当てを解除する
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 2. ライセンスの割り当てを解除するユーザーを選択します。
 3. 右側の [ **製品ライセンス** ] 行で、[ **編集**] を選択します。
 4. [ **製品ライセンス** ] ウィンドウで、ユーザーの割り当てを解除するライセンスを [ **オフ** ] の位置に切り替えます。 たとえば、Office 365 Enterprise E3 ライセンスをオフにした場合、そのライセンスとそのユーザーのライセンスの下にあるすべてのサービスは割り当てられません。
@@ -93,7 +93,7 @@ ms.locfileid: "45015937"
 
 ## <a name="unassign-licenses-from-one-user"></a>1人のユーザーのライセンスの割り当てを解除する
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 2. ライセンスの割り当てを解除するユーザーを選択します。
 3. 右側の [ **製品ライセンス** ] 行で、[ **編集**] を選択します。
 4. [ **製品ライセンス** ] ウィンドウで、ユーザーの割り当てを解除するライセンスを [ **オフ** ] の位置に切り替えます。 たとえば、Office 365 Enterprise E3 ライセンスをオフにした場合、そのライセンスとそのユーザーのライセンスの下にあるすべてのサービスは割り当てられません。
@@ -104,7 +104,7 @@ ms.locfileid: "45015937"
 ::: moniker range="o365-worldwide"
 ###  <a name="unassign-licenses-from-multiple-users"></a>複数のユーザーからのライセンスの割り当てを解除する
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 2. ライセンスの割り当てを解除するユーザーの名前の横にある円を選択します。
 3. 上部で [**その他のオプション (...)**] を選択し、[**製品ライセンスの管理**] を選択します。
 4. [**製品ライセンスの管理**] ウィンドウで、[**既存の製品ライセンス割り当てを置き換える**] \> [**次へ**] の順に選択します。
@@ -116,7 +116,7 @@ ms.locfileid: "45015937"
 
 ##  <a name="unassign-licenses-from-multiple-users"></a>複数のユーザーからのライセンスの割り当てを解除する
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 2. すべてのライセンスの割り当てを解除するユーザーの名前の横にあるチェックボックスをオンにします。
 3. [**一括処理**] ウィンドウで、[**製品ライセンスの編集**] を選択します。
 4. In the **Replace existing products** pane, select **Replace existing product license assignments** \> **Next**.
@@ -128,7 +128,7 @@ ms.locfileid: "45015937"
 
 ##  <a name="unassign-licenses-from-multiple-users"></a>複数のユーザーからのライセンスの割り当てを解除する
   
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 2. すべてのライセンスの割り当てを解除するユーザーの名前の横にあるチェックボックスをオンにします。
 3. [**一括処理**] ウィンドウで、[**製品ライセンスの編集**] を選択します。
 4. In the **Replace existing products** pane, select **Replace existing product license assignments** \> **Next**.

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Office 365 ドイツについて説明します。
-ms.openlocfilehash: e17ce259837167dd4b2b0ab894b00318103f73a5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386795"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307279"
 ---
 # <a name="learn-about-office-365-germany"></a>Office 365 Germany の詳細
 
@@ -45,7 +45,7 @@ Office 365 ドイツプランのオファーリングは、この分離された
   
 ご用意しているいくつかの [Office 365 Germany サブスクリプション プラン](https://go.microsoft.com/fwlink/p/?linkid=839016)では、次のようなサービスと機能を利用することができます。 また、[オンライン サービス使用条件](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)を参照してください。
   
-- Microsoft 365 Apps for enterprise、Office 2016、および Office 2013<sup>1</sup>。 Office 2013 では、office[クライアントで office 365 モダン認証を使用](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)する必要があることに注意してください。
+- Microsoft 365 Apps for enterprise、Office 2016、および Office 2013<sup>1</sup>。 Office 2013 では、office [クライアントで office 365 モダン認証を使用](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)する必要があることに注意してください。
     
 - Exchange Online
     
@@ -61,7 +61,7 @@ Office 365 ドイツプランのオファーリングは、この分離された
     
 - Microsoft 365 ビデオ
     
-- Web 用 Project
+- Project for the web
     
 - Web 用 Visio
     
@@ -85,16 +85,16 @@ Office 365 ドイツプランのオファーリングは、この分離された
     
 - Delve
     
-<sup>1</sup>Office 365 ドイツプランには、Microsoft 365 Apps for enterprise、Office 2013、および Office 2016 など、エンドユーザーのデバイス (「クライアントソフトウェアアプリケーション」) にインストールされ、実行されるクライアントソフトウェアアプリケーションが含まれています。 クライアントソフトウェアアプリケーションは、ドイツのデータセンターでは機能しません。また、エンドユーザーは、[ドイツ語のオンラインサービス](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)ではないオンラインサービスにアクセスすることができます。 For purposes of your agreement with Microsoft, client software applications are not [German Online Services](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). ドイツ語のデータ常駐を約束し、ドイツ語のデータトラスティによるアクセス制御は、[ドイツ語のオンラインサービス](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)にのみ適用されます。
+<sup>1</sup>Office 365 ドイツプランには、Microsoft 365 Apps for enterprise、Office 2013、および Office 2016 など、エンドユーザーのデバイス (「クライアントソフトウェアアプリケーション」) にインストールされ、実行されるクライアントソフトウェアアプリケーションが含まれています。 クライアントソフトウェアアプリケーションは、ドイツのデータセンターでは機能しません。また、エンドユーザーは、 [ドイツ語のオンラインサービス](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)ではないオンラインサービスにアクセスすることができます。 For purposes of your agreement with Microsoft, client software applications are not [German Online Services](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). ドイツ語のデータ常駐を約束し、ドイツ語のデータトラスティによるアクセス制御は、 [ドイツ語のオンラインサービス](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)にのみ適用されます。
   
 ## <a name="general-information"></a>一般情報
 
 |||
 |-----|-----|
 |ポータルにサインインする  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
-|サブスクリプション、課金、技術サポート  <br/> |ドイツ語と英語で利用可能なドイツ語ベースのサポート詳細については、「一般[法人向けサポートへのお問い合わせ-管理者向けヘルプ](../contact-support-for-business-products.md)」を参照してください。  <br/> |
-|IP アドレスと URL  <br/> |「[Office 365 Germany のエンドポイント](https://docs.microsoft.com/office365/enterprise/office-365-germany-endpoints)」を参照してください。  <br/> |
-|Yammer  <br/> |注意事項なし。  <br/> |
+|サブスクリプション、課金、技術サポート  <br/> |ドイツ語と英語で利用可能なドイツ語ベースのサポート詳細については、「一般 [法人向けサポートへのお問い合わせ-管理者向けヘルプ](../contact-support-for-business-products.md)」を参照してください。  <br/> |
+|IP アドレスと URL  <br/> |「[Office 365 Germany のエンドポイント](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints)」を参照してください。  <br/> |
+|Yammer  <br/> |使用できません。  <br/> |
 |Office 2013 より前のバージョンの Office、またはエンタープライズ<sup>1</sup>用の Microsoft 365 アプリ <br/> |サポートされません。  <br/> |
 |Office Lens  <br/> |使用できません。  <br/> |
 |Microsoft 365 内からドメインを購入する機能  <br/> |使用できません。  <br/> |

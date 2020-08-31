@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、microsoft 365 お客様に一括メールを送信するためのベストプラクティス &、Microsoft 365 の受信トレイへの電子メールの送信に関するトラブルシューティング情報を提供します。
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208599"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307581"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365 に送信されるメールのトラブルシューティング
 
@@ -63,7 +63,7 @@ DNS 逆引き参照を行えない送信者からの電子メールは受け付�
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-この一覧から削除を要求するには、[リストから除外ポータルを使用して、受信拒否リストから自分自身を削除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)します。
+この一覧から削除を要求するには、 [リストから除外ポータルを使用して、受信拒否リストから自分自身を削除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)します。
 
 ## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>受信者の迷惑メールフォルダーに上陸した電子メール
 
@@ -79,7 +79,7 @@ IP アドレスが EOP によって調整されたことを示す NDR を EOP �
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Microsoft 365 で送信者から電子メールを受信できません
 
- Microsoft ユーザーからのメッセージを受信するには、ご使用のネットワークが Microsoft データセンター内で EOP が使用している IP アドレスからの接続を許可していることを確認してください。 詳細については、「 [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
+ Microsoft ユーザーからのメッセージを受信するには、ご使用のネットワークが Microsoft データセンター内で EOP が使用している IP アドレスからの接続を許可していることを確認してください。 詳細については、「 [Exchange Online Protection の IP アドレス](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)」を参照してください。
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Microsoft 365 ユーザーに一括メール送信するためのベストプラクティス
 

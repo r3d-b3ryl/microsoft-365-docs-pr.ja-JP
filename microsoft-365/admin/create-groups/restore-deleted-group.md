@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除された Microsoft 365 グループを復元する方法について説明します。
-ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8fb2cb3afdf390efae7854a040bb56df731cceaf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818509"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307189"
 ---
 # <a name="restore-a-deleted-group"></a>削除されたグループを復元する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Microsoft 365 グループの所有者である場合は、次の手順に従っ
 
 1. [[削除さ](https://outlook.office.com/people/group/deleted)れたグループ] ページで、[**グループ**] ノードの下の [**グループの管理**] オプションを選択し、[**削除済み**] を選択します。
 
-2. 復元するグループの横にある [**復元**] タブをクリックします。
+2. 復元するグループの横にある [ **復元** ] タブをクリックします。
 
 削除されたグループがここに表示されない場合は、管理者に問い合わせてください。
 
@@ -70,9 +70,9 @@ Microsoft 365 グループの所有者である場合は、次の手順に従っ
 
 グローバル管理者またはグループ管理者の場合は、次のように、削除されたグループを Microsoft 365 管理センターで復元できます。
 
-1. [管理センター](https://admin.microsoft.com)に移動します。
-2. [**グループ**] を展開し、[**削除済みグループ**] をクリックします。
-3. 復元するグループを選択し、[**グループの復元**] をクリックします。
+1. [管理センター](https://admin.microsoft.com)にアクセスします。
+2. [ **グループ**] を展開し、[ **削除済みグループ**] をクリックします。
+3. 復元するグループを選択し、[ **グループの復元**] をクリックします。
 
 > [!NOTE]
 > 場合によっては、グループとそのすべてのデータが復元されるまでに24時間かかることがあります。 
@@ -100,11 +100,11 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>Microsoft 365 グループに関する質問
 
-Microsoft[技術コミュニティ](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)にアクセスして、microsoft 365 グループに関する質問を投稿し、会話に参加してください。 
+Microsoft [技術コミュニティ](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) にアクセスして、microsoft 365 グループに関する質問を投稿し、会話に参加してください。 
   
 ## <a name="related-articles"></a>関連記事
 
-[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
   
 [Remove-UnifiedGroup コマンドレットを使用してグループを削除する](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   

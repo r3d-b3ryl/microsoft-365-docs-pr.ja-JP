@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: ドメイン管理に役立つドメインとそれに関連する DNS レコードについて説明します。
-ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 9819ec858eecb659f8576d9fa3c1ef426d500e80
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079993"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306565"
 ---
 # <a name="dns-basics"></a>DNS の基本
 
@@ -188,7 +188,7 @@ Microsoft 365 では、ドメイン名をメール、一般向け Web サイト�
   
 ドメインをセットアップするには、Microsoft 365 管理センターの[値の一覧を参照](information-for-dns-records.md)してください。 
   
-また、展開を予定している場合は、Microsoft 365 に必要なすべての DNS レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Microsoft 365 の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)」を確認してください。
+また、展開を予定している場合は、Microsoft 365 に必要なすべての DNS レコードの一覧、それぞれのレコードの機能、値の例も確認してください。 「[Microsoft 365 の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)」を確認してください。
   
 ## <a name="how-can-i-learn-more"></a>さらに詳しく知るには
 

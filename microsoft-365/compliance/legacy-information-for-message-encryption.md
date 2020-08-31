@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織の従来のファイルを Office 365 Message Encryption (OME) に移行する方法について説明します。
-ms.openlocfilehash: e69a0d3f0d8803630ecff976d0060d8a7447b928
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 06c0e41d6c3b7cbf7d06bf6aae82742211bd2542
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817124"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306506"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -31,7 +31,7 @@ ms.locfileid: "44817124"
   
 Office 365 Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。 Office 365 メッセージの暗号化は、Outlook.com、Yahoo、Gmail、その他の電子メールサービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
   
-次に例を示します。
+次に、いくつかの例を示します:
   
 - 銀行の従業員がクレジットカードの明細書を顧客に送信する
 
@@ -57,7 +57,7 @@ Office 365 Message Encryption は、Microsoft Azure Rights Management (Azure RMS
   
 ![暗号化された電子メールのパスを示す図](../media/O365-Office365MessageEncryption-Concept.png)
   
-詳細については、[新しい OME 機能のリリース前に、「従来の Office 365 Message Encryption のサービス情報](legacy-information-for-message-encryption.md#LegacyServiceInfo)」を参照してください。
+詳細については、 [新しい OME 機能のリリース前に、「従来の Office 365 Message Encryption のサービス情報](legacy-information-for-message-encryption.md#LegacyServiceInfo)」を参照してください。
   
 ## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>新しい OME 機能を使用しない Office 365 メッセージ暗号化のメールフロールールを定義する
 
@@ -93,9 +93,9 @@ Exchange Online および Exchange Online Protection 管理者は、暗号化さ
   
  **暗号化の電子メールメッセージと暗号化ポータルを組織のブランドでカスタマイズするには**
   
-1. 「リモート[Powershell を使用して Exchange online に接続する](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated)」の説明に従って、リモート powershell を使用して exchange online に接続します。
+1. 「リモート [Powershell を使用して Exchange online に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」の説明に従って、リモート powershell を使用して exchange online に接続します。
 
-2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用します。この場合、ガイダンスについ[ては、](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)次の表を参照してください。
+2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用します。この場合、ガイダンスについ [ては、](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 次の表を参照してください。
 
    **暗号化のカスタマイズ オプション**
 
@@ -108,9 +108,9 @@ Exchange Online および Exchange Online Protection 管理者は、暗号化さ
 
  **暗号化の電子メールメッセージおよび暗号化ポータルからブランドのカスタマイズを削除するには**
   
-1. 「リモート[Powershell を使用して Exchange online に接続する](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)」の説明に従って、リモート powershell を使用して exchange online に接続します。
+1. 「リモート [Powershell を使用して Exchange online に接続する](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)」の説明に従って、リモート powershell を使用して exchange online に接続します。
 
-2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用し[ます。](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 組織のブランド化されたカスタマイズを DisclaimerText、EmailText、および PortalText の値から削除するには、値を空の文字列に設定し `""` ます。 ロゴなどのすべてのイメージ値について、値をに設定 `"$null"` します。
+2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用し[ます。](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 組織のブランド化されたカスタマイズを DisclaimerText、EmailText、および PortalText の値から削除するには、値を空の文字列に設定し  `""` ます。 ロゴなどのすべてのイメージ値について、値をに設定  `"$null"` します。
 
    **暗号化のカスタマイズ オプション**
 
@@ -141,7 +141,7 @@ Exchange Online および Exchange Online Protection 管理者は、暗号化さ
 
 Office 365 メッセージの暗号化についての質問 いくつかの答えを次に示します。 必要な情報が見つからない場合は、「 [Microsoft Tech Community フォーラム (Office 365](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365))」を確認してください。
   
- **Q: ユーザーが暗号化された電子メールメッセージを組織外の受信者に送信します。Office 365 メッセージの暗号化で暗号化された電子メールメッセージの読み取りと返信を行うために、外部の受信者が行う必要があることはありますか。**
+ **Q.ユーザーが暗号化された電子メールメッセージを組織外の受信者に送信します。Office 365 メッセージの暗号化で暗号化された電子メールメッセージの読み取りと返信を行うために、外部の受信者が行う必要があることはありますか。**
   
 Microsoft 365 の暗号化されたメッセージを受信する組織外の受信者は、次の2つの方法のいずれかで表示できます。
   
@@ -149,13 +149,13 @@ Microsoft 365 の暗号化されたメッセージを受信する組織外の受
 
 - ワンタイムパスコードを使用します。
 
- **Q: Microsoft 365 では、クラウドまたは Microsoft サーバーに保存されている暗号化メッセージはありますか?**
+ **Q.Microsoft 365 の暗号化メッセージは、クラウドまたは Microsoft サーバーに保存されますか。**
   
 いいえ、暗号化されたメッセージは受信者の電子メールシステムに保持され、受信者がメッセージを開いたときに、Microsoft サーバーに表示するために一時的に投稿されます。 メッセージはそこに格納されません。
   
  **Q. 暗号化された電子メール メッセージを独自のブランドでカスタマイズすることはできますか。**
   
-はい。 Windows PowerShell コマンドレットを使用して、暗号化された電子メール メッセージの上に表示する既定のテキスト、免責事項テキスト、および電子メール メッセージや暗号化ポータルに使用するロゴをカスタマイズできます。 詳細については、「[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
+はい、できます。 Windows PowerShell コマンドレットを使用して、暗号化された電子メール メッセージの上に表示する既定のテキスト、免責事項テキスト、および電子メール メッセージや暗号化ポータルに使用するロゴをカスタマイズできます。 詳細については、「[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
   
  **Q. このサービスは組織内のすべてのユーザーに対して 1 つのライセンスが必要ですか。**
   
@@ -165,11 +165,11 @@ Microsoft 365 の暗号化されたメッセージを受信する組織外の受
   
 いいえ。外部の受信者は、暗号化されたメッセージを読んで返信するためにサブスクリプションを必要としません。
   
- **Q: Office 365 メッセージの暗号化は、Rights Management Services (RMS) とはどのような違いがありますか?**
+ **Q.Office 365 メッセージの暗号化と Rights Management Services (RMS) との違い**
   
 RMS は、次のような組み込みのテンプレートを提供することによって、組織の内部電子メールに関する情報権限保護機能を提供します。「転送不可」および「会社の機密」 Office 365 Message Encryption は、外部の受信者や内部の受信者に送信されるメッセージの電子メールメッセージの暗号化をサポートしています。
   
- **Q: Office 365 メッセージの暗号化は S/MIME とはどのような違いがありますか?**
+ **Q.Office 365 メッセージの暗号化と S/MIME の違い**
   
 S/MIME は、基本的に、クライアント側の暗号化テクノロジであり、複雑な証明書管理と発行インフラストラクチャが必要です。 Office 365 メッセージの暗号化は、メールフロールール (トランスポートルールとも呼ばれます) を使用します。証明書の公開には依存しません。
   
@@ -181,11 +181,11 @@ S/MIME は、基本的に、クライアント側の暗号化テクノロジで�
   
 はい。返信はスレッド期間の間、暗号化されます。
   
- **Q. Office 365 のメッセージの暗号化はローカライズを行いますか?**
+ **Q.Office 365 メッセージの暗号化はローカライズを提供しますか?**
   
 受信電子メールと HTML コンテンツは、送信者の電子メール設定に基づいてローカライズされます。表示ポータルは、受信者のブラウザー設定に基づいてローカライズされます。ただし、暗号化されたメッセージの本文 (コンテンツ) はローカライズされません。
   
- **Q: Office 365 メッセージの暗号化に使用される暗号化方法は何ですか。**
+ **Q.Office 365 メッセージの暗号化に使用される暗号化方法**
   
 Office 365 メッセージの暗号化は、暗号化インフラストラクチャとして Rights Management サービス (RMS) を使用します。 使用される暗号化方式は、メッセージの暗号化と復号化に使用する RMS キーを取得する場所によって異なります。
   
@@ -195,21 +195,21 @@ Office 365 メッセージの暗号化は、暗号化インフラストラクチ
 
 詳細については、「 [AD RMS 暗号化モード](https://go.microsoft.com/fwlink/p/?LinkId=398616)」を参照してください。
   
- **Q: 暗号化されたメッセージが Office365@messaging.microsoft.com から送られたことを示しているのはなぜ**ですか?
+ **Q。暗号化されたメッセージが Office365@messaging.microsoft.com から送られたことを示しているのはなぜ** ですか?
   
 暗号化された返信が暗号ポータルから、または OME ビューアー アプリを介して送信されるとき、送信元電子メール アドレスは Office365@messaging.microsoft.com に設定されます。暗号化メッセージは Microsoft エンドポイントを介して送信されるためです。これにより、暗号化されたメッセージがスパムとしてマークされるのを回避できます。このラベルがあるため、暗号化ポータル内の電子メールとアドレスの表示名が変更されることはありません。また、このラベルが適用されるのは、ポータルを介して送信されるメッセージだけで、他の電子メール クライアントを介して送信されるメッセージには適用されません。
   
- **Q: Exchange Hosted Encryption (EHE) サブスクライバーです。Office 365 メッセージの暗号化へのアップグレードの詳細については、どこから入手できますか。**
+ **Q.Exchange Hosted Encryption (EHE) サブスクライバー。Office 365 メッセージの暗号化へのアップグレードの詳細については、どこから入手できますか。**
   
 EHE のすべてのお客様は、Office 365 Message Encryption にアップグレードされました。 詳細については、「 [Exchange Hosted Encryption Upgrade Center」](https://go.microsoft.com/fwlink/p/?LinkID=511077)を参照してください。
   
- **Q: Office 365 メッセージの暗号化をサポートするために、組織のファイアウォール内の Url、IP アドレス、またはポートを開く必要がありますか。**
+ **Q.Office 365 メッセージの暗号化をサポートするために、組織のファイアウォール内の Url、IP アドレス、またはポートを開く必要がありますか。**
   
-はい。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Microsoft 365 の url と IP アドレスの範囲](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)」を参照してください。
+はい、できます。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Microsoft 365 の url と IP アドレスの範囲](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)」を参照してください。
   
- **Q: Microsoft 365 の暗号化メッセージを送信できる受信者の数はいくつですか。**
+ **Q.Microsoft 365 で暗号化されたメッセージを送信できる受信者の数**
   
-受信者の制限は、メッセージあたりの受信者数が500の場合、または配布リストの展開後に、11980文字がメッセージ**の "宛先**" フィールドに設定されている場合は、最初の方になります。
+受信者の制限は、メッセージあたりの受信者数が500の場合、または配布リストの展開後に、11980文字がメッセージ **の "宛先** " フィールドに設定されている場合は、最初の方になります。
   
  **Q. 特定の受信者に送信されたメッセージを取り消すことは可能ですか。**
   

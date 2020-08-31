@@ -10,12 +10,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: この記事では、従来の Azure Active Directory 分類と機密ラベルについて説明します。
-ms.openlocfilehash: f11473653884392048d5f9a84f8e284dba5f6f27
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755391"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308174"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Microsoft 365 グループの Azure Active Directory 分類と機密ラベル
 
@@ -23,7 +23,7 @@ ms.locfileid: "44755391"
 
 [これらのサービス](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#support-for-the-sensitivity-labels)では、機密ラベルがサポートされています。
 
-機密ラベルの詳細については、「[機密ラベルに](sensitivity-labels.md)ついて」を参照してください。
+機密ラベルの詳細については、「 [機密ラベルに](sensitivity-labels.md)ついて」を参照してください。
 
 サイトおよび Microsoft 365 グループの機密ラベルとその動作の詳細については、「 [Microsoft Teams、microsoft 365 グループ、および SharePoint サイトのコンテンツを保護するための機密情報を使用する](sensitivity-labels-teams-groups-sites.md)」を参照してください。
 
@@ -36,8 +36,8 @@ ms.locfileid: "44755391"
     - テナント管理者は、暗号化やウォーターマークなどのファイルおよび電子メール関連のアクションを選択できます。
     - テナント管理者は、機密ラベルに対して Microsoft 365 グループと SharePoint Online のサイト関連アクションを選択できます。
 - テナント管理者がポリシーを発行します。
-- **互換性のあるワークロード**機密ラベルを表示します。 機密ラベルを使用してグループを作成します。 互換性のあるワークロードは、機密ラベルをサポートするサービスです。
-- **互換性のないワークロード**は、機密ラベルがまだサポートされていないサービスです。 ただし、グループを作成することはできますが、互換性のないワークロードを使用して機密ラベルに関連付けることはできません。 このようなグループを機密ラベルと関連付けるには、テナント管理者は PowerShell コマンドレットを実行できます。
+- **互換性のあるワークロード** 機密ラベルを表示します。 機密ラベルを使用してグループを作成します。 互換性のあるワークロードは、機密ラベルをサポートするサービスです。
+- **互換性のないワークロード** は、機密ラベルがまだサポートされていないサービスです。 ただし、グループを作成することはできますが、互換性のないワークロードを使用して機密ラベルに関連付けることはできません。 このようなグループを機密ラベルと関連付けるには、テナント管理者は PowerShell コマンドレットを実行できます。
 
 表 1. 互換性があり、互換性のないワークロードの動作–グループを作成、編集、または削除する
 
@@ -52,7 +52,7 @@ ms.locfileid: "44755391"
 > - ただし、ユーザーがグループを編集して、グループに機密ラベルを付けて保存すると、選択したプライバシー設定が適用された機密ラベルのプライバシー設定によって上書きされます。
 > 以前のバージョンの Outlook クライアントを新しいバージョンにアップグレードすることをお勧めします。
 
-## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>シナリオ 2: テナントで従来の AAD[分類](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)が既に使用されている
+## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>シナリオ 2: テナントで従来の AAD[分類](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)が既に使用されている
 
 ### <a name="case-a-tenant-never-used-sensitivity-labels-for-documents-and-emails"></a>ケース A: テナントはドキュメントおよび電子メールの機密ラベルを使用していません
 
@@ -89,5 +89,5 @@ ms.locfileid: "44755391"
 
 ## <a name="sample-script"></a>サンプル スクリプト
 
-従来の AAD ラベルを持つグループを機密ラベルに移行するサンプルスクリプトについては、「[従来の AZURE AD グループの分類](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)」を参照してください。
+従来の AAD ラベルを持つグループを機密ラベルに移行するサンプルスクリプトについては、「 [従来の AZURE AD グループの分類](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)」を参照してください。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 未成年者の個人データを管理する一般的なデータ保護規則 (GDPR) の規則について説明します。
-ms.openlocfilehash: dcf2c98906830e0007747e2dd90e67b9dc85a5bb
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103102"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306553"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>未成年者とストアからのアドインの取得
 
@@ -65,13 +65,13 @@ GDPR を未成年者に準拠させるには、次のいずれかの Office ビ�
   
 Windows 版 Word、Excel、PowerPoint 2013 は、Active Directory 認証ライブラリ (ADAL) が有効になっている場合と同じ未成年者チェックをサポートします。 次に説明するように、2つのコンプライアンスオプションがあります。
   
-- **ADAL を有効に**します。 この記事では、office[クライアントでの Microsoft 365 モダン認証](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)2013 の使用方法について説明します。<br/>「 [Windows デバイスで Office 2013 の先進認証を有効](../security-and-compliance/enable-modern-authentication.md)にする」で説明されているように、レジストリキーを設定して ADAL を有効にする必要もあります。<br/>さらに、Office 2013 用の次の4月の更新プログラムをインストールする必要があります。
+- **ADAL を有効に**します。 この記事では、office [クライアントでの Microsoft 365 モダン認証](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)2013 の使用方法について説明します。<br/>「 [Windows デバイスで Office 2013 の先進認証を有効](../security-and-compliance/enable-modern-authentication.md)にする」で説明されているように、レジストリキーを設定して ADAL を有効にする必要もあります。<br/>さらに、Office 2013 用の次の4月の更新プログラムをインストールする必要があります。
     
   - [Office 2013 のセキュリティ更新プログラムの説明: 2018 年4月10日](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
   - [2018年4月3日 Office 2013 の更新プログラム (KB4018333)](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **ADAL を有効にしない**でください。 Office 2013 で ADAL を有効にできない場合は、グループポリシーを使用して Office クライアントのストアをオフにすることをお勧めします。 Office 用アプリの設定を無効にする方法については、[ここ](https://technet.microsoft.com/library/cc178992.aspx)を参照してください。
+- **ADAL を有効にしない**でください。 Office 2013 で ADAL を有効にできない場合は、グループポリシーを使用して Office クライアントのストアをオフにすることをお勧めします。 Office 用アプリの設定を無効にする方法については、 [ここ](https://technet.microsoft.com/library/cc178992.aspx)を参照してください。
 
 ## <a name="related-articles"></a>関連記事
 

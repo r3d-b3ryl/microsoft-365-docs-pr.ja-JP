@@ -13,19 +13,19 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1db3deb6be37fc9b22f4de73e55e8f59e2c5d35b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: adce3f2525c92b8cee565f759a94081bc2f75231
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44393919"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306517"
 ---
 # <a name="contact-support-for-nigeria"></a>ナイジェリアのサポートに問い合わせる
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話番号
-01 271 0156
+01 912 5070
 
 オプション9を選択する
 

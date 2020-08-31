@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループについて説明します。
-ms.openlocfilehash: 6922e6bf8561d0600c25de9768669d90e959ff26
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387401"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307267"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -42,7 +42,7 @@ Microsoft 365 グループは、Microsoft 365 全体のすべてのチームワ�
 
 Microsoft 365 グループでは、これらのリソースに対するアクセス許可を手動で割り当てる必要はありません。グループにユーザーを追加すると、そのグループが提供するツールに必要なアクセス許可が自動的に与えられるためです。
 
-グループの作成を[特定のユーザーのセットに制限](manage-creation-of-groups.md)しない限り、任意のユーザーがグループを作成できます。 グループの作成を制限すると、グループを作成できないユーザーは、SharePoint サイト、Planners、またはチームを作成できなくなります。 これらのサービスでは、グループを作成できるようにするためにユーザーを作成する必要があります。 ユーザーがグループのメンバーである場合は、Planner でタスクを作成したり、Teams チャットを使用したりするなど、グループのアクティビティに参加できます。
+グループの作成を [特定のユーザーのセットに制限](manage-creation-of-groups.md)しない限り、任意のユーザーがグループを作成できます。 グループの作成を制限すると、グループを作成できないユーザーは、SharePoint サイト、Planners、またはチームを作成できなくなります。 これらのサービスでは、グループを作成できるようにするためにユーザーを作成する必要があります。 ユーザーがグループのメンバーである場合は、Planner でタスクを作成したり、Teams チャットを使用したりするなど、グループのアクティビティに参加できます。
 
 グループの役割は次のとおりです。
 
@@ -62,9 +62,9 @@ Microsoft 365 グループでは、これらのリソースに対するアクセ
 
 Microsoft 365 グループのライフサイクルの管理方法をさらに自動化する場合は、有効期限ポリシーを使用して、特定の時間間隔でグループを期限切れにすることができます。 グループの所有者は、グループが期限切れになる 30、15、1 日前に電子メールを受け取ります。これにより、グループがまだ必要な場合は、所有者は簡単に更新することができます。 「 [Microsoft 365 グループ有効期限ポリシー](office-365-groups-expiration-policy.md)」を参照してください。
 
-グループは、Microsoft 365 管理センターから、または [PowerShell を使用](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)して管理できます。
+グループは、Microsoft 365 管理センターから、または [PowerShell を使用](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel)して管理できます。
 
-大規模企業など、多数のユーザーがいる場合は、さまざまな目的でグループを作成するユーザーが多数存在する可能性があります。 ベストプラクティスについては、「 [Microsoft 365 グループのガバナンスの計画」](plan-for-groups-governance.md)を参照することを強くお勧めします。
+大規模企業など、多数のユーザーがいる場合は、さまざまな目的でグループを作成するユーザーが多数存在する可能性があります。 ベストプラクティスについては、「 [Microsoft 365 グループのガバナンスの計画」](plan-for-groups-governance.md) を参照することを強くお勧めします。
 
 ## <a name="group-limits"></a>グループの制限
 
@@ -82,7 +82,7 @@ Microsoft 365 グループには、次の制限が適用されます。
 
 組織が使用できる Microsoft 365 グループの既定の最大数は50万です。 既定の制限を超えないようにするには、Microsoft サポートに連絡する必要があります。 Microsoft 365 Groups の制限の詳細については、「 [microsoft 365 のグループ-管理者向けヘルプ](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)」を参照してください。
 
-グループの使用に関する操作可能な情報を持っている場合は、Microsoft 365 グループを管理する方が効率的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については[、「管理センターの Microsoft 365 レポート](../activity-reports/office-365-groups.md)」を参照してください。
+グループの使用に関する操作可能な情報を持っている場合は、Microsoft 365 グループを管理する方が効率的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については [、「管理センターの Microsoft 365 レポート](../activity-reports/office-365-groups.md) 」を参照してください。
 
 ## <a name="sensitivity-labels"></a>秘密度ラベル
 
@@ -92,12 +92,12 @@ Microsoft 365 グループには、次の制限が適用されます。
 - 外部ユーザーのアクセス
 - 非管理対象デバイスアクセス
 
-たとえば、*高機密*という名前のラベルを作成し、このラベルを使用して作成されたグループがプライベートで、外部ユーザーを許可していないことを指定できます。 グループの作成時に組織内のユーザーがこのラベルを選択すると、グループは [プライベート] に設定され、グループメンバーが外部ユーザーをグループに追加することは許可されません。
+たとえば、 *高機密* という名前のラベルを作成し、このラベルを使用して作成されたグループがプライベートで、外部ユーザーを許可していないことを指定できます。 グループの作成時に組織内のユーザーがこのラベルを選択すると、グループは [プライベート] に設定され、グループメンバーが外部ユーザーをグループに追加することは許可されません。
 
 > [!IMPORTANT]
 > 現在、分類ラベルを使用している場合、グループを作成するユーザーは、機密ラベルが有効になっていても使用できなくなります。 
 
-機密ラベルの作成、管理、および使用の詳細については、「[機密情報を使用して Microsoft Teams のコンテンツを保護する」、「microsoft 365 グループ」、および「SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」を参照してください。
+機密ラベルの作成、管理、および使用の詳細については、「 [機密情報を使用して Microsoft Teams のコンテンツを保護する」、「microsoft 365 グループ」、および「SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」を参照してください。
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>どの Microsoft 365 プランにグループが含まれていますか?
 
@@ -120,6 +120,6 @@ Microsoft 365 グループは、Azure Active Directory (AAD) で動作します�
 
 [配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
 [SharePoint Online の制限](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)

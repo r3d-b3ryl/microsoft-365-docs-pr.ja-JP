@@ -14,31 +14,31 @@ ms.collection:
 localization_priority: None
 description: これは、情報バリアセグメントを定義するために使用する Azure Active Directory ユーザーアカウント属性に関するリファレンス記事です。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035053"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307996"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>情報バリア ポリシーの属性
 
-Azure Active Directory の特定の属性を使用して、ユーザーをセグメントにすることができます。 セグメントが定義されると、それらのセグメントは情報バリアポリシーのフィルターとして使用できます。 たとえば **、部署を使用し**て、組織内の部署別のユーザーのセグメントを定義することができます (2 つの部署に対して1人の従業員が同時に働くことは想定されていません)。 
+Azure Active Directory の特定の属性を使用して、ユーザーをセグメントにすることができます。 セグメントが定義されると、それらのセグメントは情報バリアポリシーのフィルターとして使用できます。 たとえば **、部署を使用し** て、組織内の部署別のユーザーのセグメントを定義することができます (2 つの部署に対して1人の従業員が同時に働くことは想定されていません)。 
 
 この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を示します。 情報バリアの詳細については、以下のリソースを参照してください。
 - [情報障壁](information-barriers.md)
 - [Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
-- [情報バリアポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)
+- [情報バリア ポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>情報バリアポリシーで属性を使用する方法
 
 この記事に記載されている属性は、ユーザーのセグメントを定義または編集するために使用できます。 定義済みのセグメントは、[情報バリアポリシー](information-barriers-policies.md)でパラメーター ( *usergroupfilter*値と呼ばれる) として機能します。
 
-1. セグメントを定義するために使用する属性を決定します。 (この記事の[参照](#reference)セクションを参照してください)。
+1. セグメントを定義するために使用する属性を決定します。 (この記事の [参照](#reference) セクションを参照してください)。
 
 2. 手順1で選択した属性に対して、ユーザーアカウントに値が入力されていることを確認します。 ユーザーアカウントの詳細を表示し、必要に応じて、属性値を含めるようにユーザーアカウントを編集します。 
 
-    - 複数のアカウントを編集する (または PowerShell を使用して1つのアカウントを編集する) には、「 [Office 365 powershell でユーザーアカウントのプロパティを構成](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)する」を参照してください。
+    - 複数のアカウントを編集する (または PowerShell を使用して1つのアカウントを編集する) には、「 [Office 365 powershell でユーザーアカウントのプロパティを構成](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)する」を参照してください。
 
     - 単一のアカウントを編集するには、「 [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)する」を参照してください。
 
@@ -51,7 +51,7 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
     |ExtensionAttribute1 を使用して、DayTraders という名前のセグメントを定義します (この属性には "Daytraders" のような役職が含まれているとします)。|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > セグメントを定義するときは、すべてのセグメントに同じ属性を使用します。 たとえば、*部門*を使用してセグメントを定義する場合、 *department*を使用してすべてのセグメントを定義します。 *部署*を使用したセグメントと、 *MemberOf*を使用しているセグメントを定義しないでください。 セグメントが重ならないようにします。各ユーザーは、1つのセグメントにのみ割り当てる必要があります。 
+    > セグメントを定義するときは、すべてのセグメントに同じ属性を使用します。 たとえば、 *部門*を使用してセグメントを定義する場合、 *department*を使用してすべてのセグメントを定義します。 *部署*を使用したセグメントと、 *MemberOf*を使用しているセグメントを定義しないでください。 セグメントが重ならないようにします。各ユーザーは、1つのセグメントにのみ割り当てる必要があります。 
 
 ## <a name="reference"></a>リファレンス
 
@@ -82,9 +82,9 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 |MSExchExtensionCustomAttribute3 |ExtensionCustomAttribute3 |
 |MSExchExtensionCustomAttribute4 |ExtensionCustomAttribute4 |
 |MSExchExtensionCustomAttribute5 |ExtensionCustomAttribute5 |
-|MailNickname |Alias |
+|MailNickname |エイリアス |
 |PhysicalDeliveryOfficeName |Office |
-|郵便 |郵便 |
+|PostalCode |PostalCode |
 |ProxyAddresses |EmailAddresses |
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
@@ -94,11 +94,11 @@ Azure Active Directory の特定の属性を使用して、ユーザーをセグ
 |説明    |説明    |
 |所属    |MemberOfGroup    |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft Teams の情報障壁に関するポリシーを定義する](information-barriers-policies.md)
 
-[情報障壁のトラブルシューティング](information-barriers-troubleshooting.md)
+[情報バリアのトラブルシューティング](information-barriers-troubleshooting.md)
 
 [情報障壁](information-barriers.md)
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: ドメインを確認し、電子メール、Skype for Business Online、および Amazon Web Services (AWS) for Microsoft のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: fcc4da3a5841e9df2f6edabd540363fe70bb73ad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dbbf82c9c776108c4d5e34e2eb639f9c36e9f28b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400571"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307069"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Microsoft の Amazon Web サービス (AWS) で DNS レコードを作成する
 
@@ -51,7 +51,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**リソース**] ページで、[ **Hosted Zones**] を選択します。
+2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
     
 3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
     
@@ -67,7 +67,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |**名前** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
-    |(Leave this field empty.)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |単純  <br/> |
+    |(Leave this field empty.)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 Microsoft 365 の表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
    
 6. **[作成]** を選択します。
     
@@ -94,7 +94,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**リソース**] ページで、[ **Hosted Zones**] を選択します。
+2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
     
 3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
     
@@ -106,7 +106,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |MX - Mail Exchange  <br/> |No  <br/> |300  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:**\<*domain-key*\>Microsoft 365 アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |単純  <br/> |
+    |(このフィールドは空のままにします。)  <br/> |MX - Mail Exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:**\<*domain-key*\>Microsoft 365 アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
        
     ![AWS-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -136,7 +136,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**リソース**] ページで、[ **Hosted Zones**] を選択します。
+2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
     
 3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
     
@@ -150,11 +150,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
-    |sip  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
-    |lyncdiscover  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |webdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
-    |enterpriseregistration  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
-    |EnterpriseEnrollment  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
+    |autodiscover  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
+    |sip  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
+    |lyncdiscover  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
+    |enterpriseregistration  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
+    |EnterpriseEnrollment  <br/> |CNAME - 正規名  <br/> |No  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |Simple  <br/> |
    
     ![AWS-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
@@ -172,11 +172,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 次に例を示します。 こちらの[Microsoft の外部ドメイン ネーム システムのレコード](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)を参照してください。 SPF レコードを検証するには、これらの[spf 検証ツール](../setup/domains-faq.md)のいずれかを使用できます。 
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**リソース**] ページで、[ **Hosted Zones**] を選択します。
+2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
     
 3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
     
@@ -201,7 +201,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**リソース**] ページで、[ **Hosted Zones**] を選択します。
+2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
     
 3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
     
@@ -215,8 +215,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls|SRV - サービス ロケータ|No|300|100 1 443 sipdir.online.lync.com. **この値は、ピリオド (.) で終了する必要があります。**><br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |Simple|
-    |_sipfederationtls _tcp|SRV - サービス ロケータ|No|300|100 1 5061 sipfed.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |単純|
+    |_sip._tls|SRV - サービス ロケータ|No|300|100 1 443 sipdir.online.lync.com. **この値は、ピリオド (.) で終了する必要があります。**><br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |Simple|
+    |_sipfederationtls._tcp|SRV - サービス ロケータ|No|300|100 1 5061 sipfed.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |シンプル|
    
     ![AWS-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   

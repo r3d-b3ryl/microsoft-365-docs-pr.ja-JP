@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a7ca90bfc4a8d323b67528ca850f60059abeb12
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652839"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307775"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
@@ -101,7 +101,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|管理者の追加、ポリシーと設定の追加、ログのアップロード、ガバナンス アクションの実行。|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (準備中)|セキュリティ ポリシーの表示、セキュリティ状態の表示、セキュリティ ポリシーの編集、アラートと推奨事項の表示、アラートと推奨事項の却下。|
-|[**Office 365 サービス正常性**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
+|[**Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
 |
 
 ### <a name="security-operator"></a>セキュリティ オペレーター
@@ -119,7 +119,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |**Windows Defender ATP および EDR**|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> アラートの表示、調査、対応。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|セキュリティ閲覧者ロールができるすべてのことに加え、アラートの表示および破棄。|
-|[**Office 365 サービス正常性**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
+|[**Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
 |
 
 ### <a name="security-reader"></a>セキュリティ閲覧者
@@ -138,7 +138,7 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|読み取り専用アクセス許可を使用して情報を表示する。 <br/><br/> 通知の管理。|
 |[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|推奨事項とアラートの表示。 <br/><br/> セキュリティ ポリシーの表示。 <br/><br/> セキュリティの状態を表示することはできますが、変更することはできません。|
-|[**Office 365 サービス正常性**](https://docs.microsoft.com/office365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
+|[**Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>全体管理者は Azure Active Directory のロール管理が可能
