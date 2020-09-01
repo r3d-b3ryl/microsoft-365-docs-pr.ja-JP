@@ -1,9 +1,9 @@
 ---
-title: 単一の Windows PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
+title: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2020
+ms.date: 08/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,29 +17,27 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: '概要: 単一の Windows PowerShell ウィンドウで Windows PowerShell をすべての Microsoft 365 サービスに接続します。'
-ms.openlocfilehash: d4e4bf6ec07ee4a0a5b2f8cb1c83ffacd221eaa0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
+ms.openlocfilehash: af676434017cbe7025baa5e8509e6203a5d59674
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691976"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307627"
 ---
-# <a name="connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window"></a>単一の Windows PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
+# <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 
-PowerShell を使用して Microsoft 365 を管理する場合は、Microsoft 365 管理センター、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft Teams、および セキュリティ &amp; コンプライアンス センターに対応する最大 5 つの異なる Windows PowerShell セッションを同時に開くことができます。 別々の Windows PowerShell セッションで 5 つの異なる接続方法を使用すると、デスクトップは以下のようになります。
+PowerShell を使用して Microsoft 365 を管理する場合は、ユーザー アカウントの管理、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft Teams、セキュリティ&amp;コンプライアンス センターに対応する別の PowerShell ウィンドウで複数の PowerShell セッションを同時に開くことができます。 
   
-![一度に実行している 5 つの Windows PowerShell コンソール](../media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
-  
-これは Microsoft 365 の管理に最適な状況ではありません。サービス間管理のために 5 つのウィンドウ間でデータを交換できないからです。 このトピックでは、Microsoft 365アカウント、Skype for Business Online、Exchange Online、SharePoint Online、Microsoft Teams、およびセキュリティ &amp; コンプライアンス センターを管理する Windows PowerShell の単一のインスタンスを使用する方法について説明します。
+サービス間管理のためにウィンドウ間でデータを交換できないため、これは Microsoft 365 の管理に最適な状況ではありません。 このトピックでは、Microsoft 365 アカウント、Skype for Business Online、Exchange Online、SharePoint Online、Microsoft Teams、セキュリティ&amp;コンプライアンス センターを管理する PowerShell の単一のインスタンスを使用する方法について説明します。
 
 >[!Note]
->この記事には現在、ワールドワイド (+ GCC) クラウドに接続するコマンドのみ含まれています。 追加のメモには、他の Microsoft 365 クラウドへの接続に関する情報が掲載されています。
+>この記事には現在、ワールドワイド (+ GCC) クラウドに接続するコマンドのみ含まれています。 メモでは、他の Microsoft 365 クラウドへの接続に関する情報が掲載されている記事へのリンクを提供しています。
 >
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-Windows PowerShell の単一のインスタンスからすべての Microsoft 365 を管理する前に、次の前提条件を考慮してください。
+PowerShell の単一のインスタンスからすべての Microsoft 365 を管理する前に、次の前提条件を考慮してください。
   
 - これらの手順に使用する Microsoft 365 の職場または学校のアカウントは、Microsoft 365 管理者ロールのメンバーである必要があります。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) を参照してください。 これは Microsoft 365向け PowerShell の要件であり、他のすべての Microsoft 365 サービスについては必ずしも当てはまりません。
     
@@ -67,11 +65,11 @@ Windows PowerShell の単一のインスタンスからすべての Microsoft 36
     
    - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-   - [Skype for Business Online、Windows PowerShell モジュール](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+   - [Skype for Business Online、PowerShell モジュール](https://go.microsoft.com/fwlink/p/?LinkId=532439)
    - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
-   - [Teams での PowerShell の概要](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+   - [Teams PowerShell の概要](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  Skype for Business Online、およびセキュリティ &amp; コンプライアンス センターに対して署名付きスクリプトを実行するよう Windows PowerShell を構成する必要があります。 そのためには、管理者特権の Windows PowerShell セッション (Windows PowerShell ウィンドウで **[管理者として実行]** を選択して開きます) で、次のコマンドを実行します。
+-  Skype for Business Online やセキュリティ&amp;コンプライアンス センターに対して署名付きスクリプトを実行するよう PowerShell を構成する必要があります。 そのためには、管理者特権の PowerShell セッション (**[管理者として実行]** を選択して開く PowerShell ウィンドウ) で、次のコマンドを実行します。
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -95,14 +93,14 @@ Windows PowerShell の単一のインスタンスからすべての Microsoft 36
    Connect-AzureAD -Credential $credential
    ```
   
-   または、Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュールを使用する場合、次のコマンドを実行します。
+   また、PowerShell モジュール用の Microsoft Azure Active Directory モジュールを使用する場合には、次のコマンドを実行します。
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。 これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。
+   > PowerShell Core は、PowerShell モジュール用の Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。 これらのコマンドレットを引き続き使用するには、PowerShell から実行する必要があります。
 
 4. 次のコマンドを実行して、SharePoint Online に接続します。 ドメインの組織名を指定します。 たとえば、"litwareinc.onmicrosoft.com" の場合、組織名の値は "litwareinc" です。
     
@@ -166,7 +164,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-または、Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュールを使用しているときに、単一のブロック内のすべてのコマンドがあります。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
+または、PowerShell モジュール用の Microsoft Azure Active Directory モジュールを使用しているときに、ここには単一のブロック内のすべてのコマンドがあります。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -184,7 +182,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-Windows PowerShell ウィンドウを閉じる準備が整った段階で次のコマンドを実行し、Skype for Business Online、SharePoint Online、セキュリティ &amp; コンプライアンス センター、および Teams に対するアクティブなセッションを削除します。
+PowerShell ウィンドウを閉じる準備が整った段階で次のコマンドを実行し、Skype for Business Online、SharePoint Online、セキュリティ&amp;コンプライアンス センター、Teams に対するアクティブなセッションを削除します。
   
 ```powershell
 Remove-PSSession $sfboSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
@@ -211,7 +209,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-または、ここでは Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュールを使用する場合のすべてのコマンドを示します。
+また、ここには PowerShell モジュール用の Microsoft Azure Active Directory モジュールを使用する場合のすべてのコマンドがあります。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -237,4 +235,3 @@ Connect-MicrosoftTeams
 - [PowerShell を使用して Microsoft 365 に接続する](connect-to-microsoft-365-powershell.md)
 - [PowerShell を使用して SharePoint Online を管理する](manage-sharepoint-online-with-microsoft-365-powershell.md)
 - [Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-- [Windows PowerShell を使用して Microsoft 365 でレポートを作成する](use-windows-powershell-to-create-reports-in-microsoft-365.md)
