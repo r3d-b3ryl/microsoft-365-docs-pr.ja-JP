@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Microsoft 365 管理センターで Azure 管理者の役割を管理する。
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898030"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289095"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365管理センター のAzure Active Directory の役割について
 
@@ -62,6 +62,8 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 |グループ管理者   |グループを作成し、管理センター全体のすべてのグループ設定を管理します。|
 |ゲスト招待者     |    Azure Active Directory B2B ゲスト ユーザーの招待を管理します。     |
 |ヘルプデスク管理者     | すべての非管理者および一部の管理者ロールのパスワードをリセットして再認証し、サービス リクエストを管理し、サービス正常性の監視を行います。      |
+|Insights 管理者     | Microsoft 365 Insights アプリケーションのすべての側面を管理し、Azure Active Directory 情報を読み取り、サービス正常性の監視とサービス要求の作成と管理を行います。      |
+|Insights ビジネス管理者     | Microsoft 365 Insights アプリケーションのレポートと詳細情報を参照してください。      |
 |Intune 管理者     | Intune へのフル アクセス。ユーザーとデバイスの管理によるポリシーの関連付け、グループの作成および管理を行います。      |
 |Kaizala 管理者     |    すべての Kaizala 管理機能およびデータへのフル アクセス。サービス リクエストの管理を行います。     |
 |ライセンス管理者     |     ユーザーへのライセンスの割り当ておよび削除を行い、ユーザーの使用場所を編集します。    |

@@ -293,7 +293,7 @@
           items:
             - name: Android または iOS の設定を検証する
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Windows 10 の PC のデバイス保護を設定する
+        - name: Windows 10 PC のデバイス保護設定を編集または作成する
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: Windows 10 PC の設定を検証する
