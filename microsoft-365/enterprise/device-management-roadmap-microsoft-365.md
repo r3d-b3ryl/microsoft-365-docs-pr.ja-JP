@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Microsoft 365 のデバイス管理をセットアップするためのロードマップ。
-ms.openlocfilehash: 1c5a06c75ede11697e2ecf17c47eb035e78dcd27
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691852"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315743"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 のデバイス管理のロードマップ
 
@@ -47,17 +47,11 @@ Intune は、モバイルデバイス管理 (MDM) またはモバイルアプリ
  
 ## <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 
-Microsoft では、セキュアで生産性の高い労働力を確保するために [ID とデバイスのアクセス](microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供しています。 デバイスアクセスの場合は、このフェーズの手順と共に次の記事の推奨事項と設定を使用します。
+Microsoft では、セキュアで生産性の高い労働力を確保するために [ID とデバイスのアクセス](microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供しています。 デバイスアクセスの場合は、次の記事の推奨事項と設定を使用します。
 
 - [前提条件](identity-access-prerequisites.md)
 - [共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)
 
-## <a name="how-microsoft-does-device-management-for-microsoft-365"></a>Microsoft でのデバイス管理の方法 (Microsoft 365)
-
-Microsoft の IT 専門家 [が EMS を使用してデバイスを管理](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8)する方法について説明します。
-
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 社が Microsoft 365 のデバイス管理を行った方法
 
 架空の多国籍企業である Contoso Corporation が、Microsoft 365 cloud services を使用して [モバイルデバイス管理インフラストラクチャを展開](contoso-mdm.md) した方法について説明します。
-
-![Contoso 社](../media/contoso-overview/contoso-icon.png)

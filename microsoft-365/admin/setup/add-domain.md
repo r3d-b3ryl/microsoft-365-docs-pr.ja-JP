@@ -25,20 +25,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: Microsoft 365 管理センターで Microsoft 365 にドメインを追加するには、DNS ホストで DNS レコードを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+description: Dns レコードを DNS ホストに追加して、365 Microsoft 365 の microsoft にドメインを追加します。 これらの手順を案内するウィザードがあります。
+ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814434"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315719"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -83,18 +83,20 @@ ms.locfileid: "46814434"
     
 5. ドメインの所有を確認する方法を選択します。
     
-    1. ドメインが GoDaddy または 1 &amp; 1 に登録されている場合は、[**次へ Sign in**  >  **Next]** を選び、Microsoft[がレコードを自動的に設定します](../get-help-with-domains/domain-connect.md)。
+    1. ドメインレジストラーで[ドメイン接続](#domain-connect-registrars-integrating-with-microsoft-365)を**使用して**いる場合は、[  >  **次へ**] を選択すると、Microsoft に[よってレコードが自動的に設定され](../get-help-with-domains/domain-connect.md)ます。
     
     2. ドメインに登録している連絡先に、検証コードを含むメールを送信できます。 レコードのメールに見覚えがない、またはメールにアクセスできない場合、3 番目のオプションを利用できます。
     
     3. TXT レコードを使用し、ドメインを検証できます。 これを選択し、**[次へ]** を選択すると、この DNS レコードをレジストラーの Web サイトに追加する方法が表示されます。 レコードを追加すると、検証に最大 30 分かかることがあります。 
+
+    4. ドメインの web サイトにテキストファイルを追加することができます。 セットアップウィザードから .txt ファイルを選択してダウンロードし、web サイトの最上位レベルのフォルダーにファイルをアップロードします。 ファイルへのパスは、次のようになり `http://mydomain.com/ms39978200.txt` ます。 Web サイトでファイルを検索して、ドメインを所有していることを確認します。
     
 6. Office でドメインを使用するために必要な DNS 変更の方法を選択します。
     
     1. DNS を Office に自動構成させる場合、**[DNS レコードを追加してもらう]** を選択します。 
     
   
-    2. 自分 **で DNS レコードを自分で追加します。** その場合、特定の Microsoft 365 サービスのみをドメインに接続する場合、またはここではスキップして後で行います。 **次のように、操作内容を正確に把握している場合に、このオプションを選択します。**
+    2. 特定の Microsoft 365 サービスのみをドメインに接続する場合、またはこれを今後スキップする場合は **、[自分で DNS レコードを追加** する] を選択します。 **次のように、操作内容を正確に把握している場合に、このオプションを選択します。**
     
 7. *DNS レコードを自分で追加する*を選択した場合、**[次へ]** を選択します。そして、ドメインを設定するために、レジストラー Web サイトに追加する必要があるすべてのレコードが含まれるページが表示されます。 
     
@@ -112,47 +114,47 @@ ms.locfileid: "46814434"
 
 ## <a name="add-or-edit-custom-dns-records"></a>カスタムの DNS レコードを追加または編集する
 
-Web サイトまたはサード パーティのサービスのカスタム レコードを追加するには、以下の手順に従います。
+Web サイトまたはサードパーティサービスのカスタムレコードを追加するには、以下の手順を実行します。
 
-1. Microsoft 管理センターにサインインします <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
+1. Microsoft 管理センターにサインイン <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> します。
 
 2. [**設定**]   >  [**ドメイン**] ページの順に移動します。
 
 3. [ **ドメイン**] ページで、ドメインを選びます。 
     
-4. [DNS **設定] で**、[カスタム レコード **] を選択します**。次に新しい **カスタム レコードを選択します**。
+4. [ **DNS 設定**] で、[ **カスタムレコード**] を選択します。次に、[ **新しいカスタムレコード**] を選択します。
 
 5. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
     
 6. **[保存]** を選択します。
 
-## <a name="registrars-with-domain-connect"></a>Domain Connect を使用したレジストラー
+## <a name="registrars-with-domain-connect"></a>レジストラーとドメイン接続
 
-[ドメイン接続](https://www.domainconnect.org/) が有効になっているレジストラーでは、3 段階のプロセスで Microsoft 365 にドメインを追加できますが、少し時間がかかります。 
+[ドメイン接続](https://www.domainconnect.org/) が有効な登録機関は、数分かかる3つのステップのプロセスで、ドメインを Microsoft 365 に追加することができます。 
   
-ウィザードでは、ドメインを所有していることを確認したうし、ドメインのレコードが自動的にセットアップされるので、Microsoft 365 や Teams などの他の Microsoft 365 サービスが自分のドメインで機能するようにメールが送信されます。
+このウィザードでは、ドメインを所有していることを確認し、ドメインのレコードを自動的に設定することを確認します。そのため、Microsoft 365 およびその他の Microsoft 365 サービス (Teams など) が自分のドメインで作業します。
   
 > [!NOTE]
 > セットアップ ウィザードを開始する前に、ブラウザーのポップアップ ブロック機能が無効になっていることを確認してください。
   
-### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Microsoft 365 との統合ドメイン接続レジストラー
+### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Microsoft 365 と統合するドメイン接続レジストラー
 
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [1 &amp; IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy リセラー)
-    - [MadDog Domains](https://www.maddogdomains.com/)
-    - [CheapNames](https://www.cheapnames.com)
+- SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy 販売店)
+    - [MadDog ドメイン](https://www.maddogdomains.com/)
+    - [不正名](https://www.cheapnames.com)
 
-### <a name="what-happens-to-my-email-and-website"></a>電子メールと Web サイトはどうなりうですか?
+### <a name="what-happens-to-my-email-and-website"></a>電子メールと web サイトはどうなりますか?
 
-セットアップを終了すると、ユーザーのドメインの MX レコードが Microsoft 365 を指定するように更新され、そのドメインのすべてのメールが Microsoft 365 に送信されるされるになります。 ユーザーのドメインにメールを持つすべてのユーザーが Microsoft 365 に追加され、メールボックスが設定されている必要があります。
+セットアップが完了すると、ドメインの MX レコードが更新され、Microsoft 365 をポイントするようになり、ドメインのすべての電子メールが Microsoft 365 に送られ始めます。 自分のドメインで電子メールを取得するすべてのユーザーについて、Microsoft 365 でユーザーを追加し、メールボックスを設定していることを確認してください。
   
-ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続のセットアップ手順は、Web サイトには影響を与えない。
+ビジネスで使用している Web サイトがある場合は、そのままの場所で稼働し続けます。 ドメイン接続のセットアップ手順は、web サイトには影響しません。
 
 ## <a name="related-articles"></a>関連記事
 

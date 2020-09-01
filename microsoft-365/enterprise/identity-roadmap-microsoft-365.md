@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 のロードマップ情報。
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692233"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315801"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の id ロードマップ
 
@@ -40,16 +40,16 @@ Microsoft 365 for enterprise では、綿密に計画され、実行されてい
 
 [このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
-## <a name="plan"></a>プラン
+## <a name="plan"></a>計画
 
-Id 実装の計画段階で、次のようになります。
+Id の実装を計画するには、次のようにします。
 
 - [さまざまな id モデルを理解する](about-microsoft-365-identity.md)
 - [ハイブリッド id とディレクトリ同期を計画する](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>展開
 
-Id 実装の展開段階で、次のようになります。
+Id の実装を展開するには、次のようにします。
 
 - [グローバル管理者アカウントを保護する](protect-your-global-administrator-accounts.md)
 - [クラウド専用の id を構成して使用する](cloud-only-identities.md)
@@ -59,14 +59,14 @@ Id 実装の展開段階で、次のようになります。
 
 ### <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 
-Microsoft では、セキュアで生産性の高い要員を確保するために [ID とデバイスのアクセス](microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供しています。たとえば、このフェーズの手順で、以下の記事に記されている推奨事項と設定を使用してください。
+Microsoft では、セキュアで生産性の高い労働力を確保するために [ID とデバイスのアクセス](microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供しています。 Identity の場合は、以下の記事の推奨事項と設定を使用します。
 
 - [前提条件](identity-access-prerequisites.md)
 - [共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)
 
 ## <a name="manage"></a>管理
 
-Id 実装の管理フェーズでは、次のようになります。
+Id の実装を管理するには、次のようにします。
 
 - [ライセンスの割り当てとユーザーアカウントの管理](assign-licenses-to-user-accounts.md)
 - [ディレクトリ同期を監視する](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Microsoft の IT エキスパートが [ID を管理し、アクセスをセキ�
 
 架空の典型的な多国籍企業である Contoso Corporation が、Microsoft 365 のクラウド サービス向けに[ハイブリッド ID インフラストラクチャを展開](contoso-identity.md)した方法をご紹介します。
 
-![Contoso 社](../media/contoso-overview/contoso-icon.png)
-
 ## <a name="next-step"></a>次の手順
 
 Id [モデル](about-microsoft-365-identity.md)を使用して id の計画を開始します。
-

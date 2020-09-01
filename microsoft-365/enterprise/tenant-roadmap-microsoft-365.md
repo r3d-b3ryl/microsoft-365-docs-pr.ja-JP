@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 用のテナントをセットアップするためのロードマップ。
-ms.openlocfilehash: db7054d1f6afc7e4835507dc6415e0b240918c1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692175"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315755"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 のテナントロードマップ
 
@@ -28,9 +28,9 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 
 ネットワークと id の基本的なサービスを準備するには、適切に計画され、実行されるテナントの構成が重要です。
 
-## <a name="plan"></a>プラン
+## <a name="plan"></a>計画
 
-テナント実装の計画段階で、次の手順を実行します。
+テナントの実装を計画するには、次のようにします。
 
 - [サブスクリプション、ライセンス、および Azure Active Directory (Azure AD) テナントについて理解する](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [サードパーティの SSL 証明書の使用方法を理解する](plan-for-third-party-ssl-certificates.md)
@@ -44,7 +44,7 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 
 ## <a name="deploy"></a>展開
 
-テナント実装の展開フェーズで、組織の [DNS ドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) します。
+テナントを展開するには、組織の [DNS ドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) します。
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>複数の地理的な場所を持つテナント
 
@@ -52,7 +52,7 @@ Microsoft 365 Multi-Geo を使用すれば、組織はその組織の Microsoft 
 
 Microsoft 365 複数地域を使用して、理解、計画、構成、管理を[開始](microsoft-365-multi-geo.md)します。
 
-## <a name="moving-a-tenants-geographic-locations"></a>テナントの地理的な場所の移動
+## <a name="move-a-tenants-geographic-locations"></a>テナントの地理的な場所を移動する
 
 Microsoft は、Microsoft 365 services の新しいデータセンターの地理的な場所 (geo) を引き続き開きます。 これらの新しいデータセンター geo は、お客様の需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo では、コア カスタマー データを geo 内に常駐できます。
 

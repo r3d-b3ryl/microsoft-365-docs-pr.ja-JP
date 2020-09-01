@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 組織内のユーザーの Office スクリプト設定を管理する方法について説明します。
-ms.openlocfilehash: 12a80f277f6d17a8e7f5228f6948e70b7a93be11
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 44e2a5c0e0577db344fdbb00a110674df3e71bdc
+ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300837"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47317495"
 ---
 # <a name="manage-office-scripts-settings"></a>Office スクリプトの設定を管理する
 
@@ -35,7 +35,7 @@ Office スクリプトを使用すると、ユーザーは web 上の Excel で�
 
     - Microsoft 365 Business Standard
     - Microsoft 365 Apps for business
-    - Microsoft 365 Apps for enterprise
+    - エンタープライズ向け Microsoft  365 アプリ
     - Office 365 E3
     - Office 365 E5
     - Office 365 A3
@@ -80,7 +80,7 @@ Office スクリプトを使用すると、ユーザーは web 上の Excel で�
 
 7. **[保存]** を選択します。
 
-    Office スクリプト設定の変更が有効になるまで、最大48時間かかる場合があります。
+    Office スクリプトの設定の変更が有効になるまで、最大48時間かかる場合があります。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 用のクラウドサービスをセットアップするためのロードマップ。
-ms.openlocfilehash: 2b6b69f25888305232ba93d9d738319fe5137019
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692039"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315767"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Microsoft 365 のクラウドサービスのロードマップ
 
@@ -28,11 +28,11 @@ Exchange、SharePoint、または Skype for Business 用の既存のサーバー
 
 ## <a name="deploy"></a>展開
 
-クラウドサービスの展開段階で、次の手順を実行します。
+クラウドサービスを展開するには、次のようにします。
 
 - [サービスの準備をする](configure-services-and-applications.md)
 - [オンプレミスデータを Microsoft 365 に移行する](migrate-data-to-office-365.md)
-- クラウドサービスを展開する
+- ユーザー用にセットアップされたクラウドサービスを取得する
   - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
   - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
   - [Skype for Business](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -42,7 +42,7 @@ Exchange、SharePoint、または Skype for Business 用の既存のサーバー
 
 ## <a name="manage"></a>管理
 
-クラウドサービスの管理段階で、次の手順を実行します。 
+クラウドサービスを管理するには、次のようにします。 
 
 - [サービスの正常性を確認する](view-service-health.md)
 - [サポートオプションを理解する](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)

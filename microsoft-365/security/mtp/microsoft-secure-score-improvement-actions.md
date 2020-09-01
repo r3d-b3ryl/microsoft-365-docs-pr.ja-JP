@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ab75e7ddbf3ada01c3f1247e58d8dc9472ecae77
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 3b913b3d53abf8c46fbcc9e053f91f512864c9d8
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866977"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315833"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
 
@@ -35,7 +35,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 * Identity (Azure Active Directory アカウント & の役割)
 * データ (Microsoft Information Protection)
-* デバイス (Microsoft Defender ATP、 [構成スコア](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score)と呼ばれる)
+* デバイス (Microsoft Defender ATP、 [デバイスの Microsoft セキュリティスコア](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)と呼ばれる)
 * アプリ (Office 365 や Microsoft Cloud App Security を含む、メール アプリとクラウド アプリ)
 * インフラストラクチャ (現在のところ、改善のための処置はありません)
 
