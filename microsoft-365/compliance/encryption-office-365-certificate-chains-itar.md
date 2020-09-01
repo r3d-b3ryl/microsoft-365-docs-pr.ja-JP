@@ -1,5 +1,5 @@
 ---
-title: Office 365 の暗号化チェーン-DOD および GCC High
+title: Office 365 暗号化チェーン - DOD および GCC High
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Office 365 の DOD および GCC 高ルート証明書と証明機関 (CAs) の完全な一覧を表示します。
-ms.openlocfilehash: 615a62b2ae2a954580ebf82f4c1b70748c991a71
-ms.sourcegitcommit: 6adfcf042e64b21f09f2b8e072e8eba6d3479e31
+ms.openlocfilehash: 19f164669392372c99c562f55cfb05487d9f7ed2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951905"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308280"
 ---
-# <a name="office-365-encryption-chains---dod-and-gcc-high"></a>Office 365 の暗号化チェーン-DOD および GCC High
+# <a name="office-365-encryption-chains---dod-and-gcc-high"></a>Office 365 暗号化チェーン - DOD および GCC High
 
-Office 365 は、いくつかの異なる証明書プロバイダーを活用しています。 以下は、 **DOD および GCC が多くのお客様**が Office 365 へのアクセス時に遭遇する既知の Office 365 ルート証明書の完全なリストを示しています。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については、「 [Plan for サードパーティ SSL certificates For Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates)」を参照してください。
+Office 365 は、いくつかの異なる証明書プロバイダーを活用しています。 以下は、 **DOD および GCC が多くのお客様** が Office 365 へのアクセス時に遭遇する既知の Office 365 ルート証明書の完全なリストを示しています。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については、「 [Plan for サードパーティ SSL certificates For Office 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)」を参照してください。
 
-次の証明書情報は、**すべての DOD および GCC 高のお客様**に適用されます。
+次の証明書情報は、 **すべての DOD および GCC 高のお客様**に適用されます。
 
 >[!NOTE]
 >**世界中のお客様**に適用される証明書情報については、「 [Office 365 暗号化チェーン](encryption-office-365-certificate-chains.md)」を参照してください。
@@ -43,7 +43,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Subject** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
+| **[件名]** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | --- | --- |
 | **シリアル番号** | 02:00:00: B9 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -57,7 +57,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
 
-| **Subject** | CN = DigiCert Cloud Services CA-1<br>O = DigiCert Inc<br>C = US |
+| **[件名]** | CN = DigiCert Cloud Services CA-1<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **発行者** | CN = DigiCert グローバルルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | **シリアル番号** | 01: 9E: C1: C6: BD: 3F:59: 7B: B2: 0C:33:38: E5:51: D8:77 |
@@ -75,7 +75,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert グローバルルート CA**
 
-| **Subject** | CN = DigiCert グローバルルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
+| **[件名]** | CN = DigiCert グローバルルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **シリアル番号** | 08: 3B: E0:56:90:42:46: B1: A1:75: 6A: C9:59:91: C7: 4A |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -90,7 +90,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert の高保証 EV ルート CA**
 
-| **Subject** | CN = DigiCert 高保証 EV ルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
+| **[件名]** | CN = DigiCert 高保証 EV ルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **シリアル番号** | 02: AC: 5C:26: 6A: 0B:40: 9B: 8F: 0B:79: F2: AE:46:25:77 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -105,7 +105,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 Extended Validation Server CA**
 
-| **Subject** | CN = DigiCert SHA2 Extended Validation Server CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
+| **[件名]** | CN = DigiCert SHA2 Extended Validation Server CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **シリアル番号** | 0C:79: A9:44: B0: 8C:11:95:20:92:61: 5F: E2: 6B: 1D:83 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -119,7 +119,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-root-certification-authority"></a>**Entrust ルート証明機関**
 
-| **Subject** | CN = Entrust ルート証明機関<br>OU = "(c) 2006 Entrust, Inc"<br>OU = entrust/CPS はリファレンスに組み込まれています。<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust ルート証明機関<br>OU = "(c) 2006 Entrust, Inc"<br>OU = entrust/CPS はリファレンスに組み込まれています。<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **シリアル番号** | 45: 6B:50:54 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -133,7 +133,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust ルート証明機関-G2**
 
-| **Subject** | CN = Entrust ルート証明機関-G2<br>OU =&quot;(c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **シリアル番号** | 4A:53: 8C:28 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -147,7 +147,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Subject** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS\_2048 incorp。 ref で。 (制限 s liab.)<br>O = Entrust |
+| **[件名]** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 s liab.)<br>O = Entrust |
 | --- | --- |
 | **シリアル番号** | 38:63: DE: F8 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -161,9 +161,9 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1c"></a>**Entrust 証明機関-L1C**
 
-| **Subject** | CN = Entrust 証明機関-L1C<br>OU =&quot;(c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust 証明機関-L1C<br>OU = &quot; (c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
-| **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS\_2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
+| **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
 | **シリアル番号** | 4C: 0E: 8C:39 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha1RSA |
@@ -179,9 +179,9 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1e"></a>**Entrust 証明機関-L1E**
 
-| **Subject** | CN = Entrust 証明機関-L1E<br>OU =&quot;(c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust 証明機関-L1E<br>OU = &quot; (c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
-| **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS\_2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
+| **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
 | **シリアル番号** | 4C: 0E: C9:18 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha1RSA |
@@ -196,9 +196,9 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust 証明機関-L1K**
 
-| **Subject** | CN = Entrust 証明機関-L1K<br>OU =&quot;(c) 2012 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust 証明機関-L1K<br>OU = &quot; (c) 2012 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
-| **発行者** | CN = Entrust ルート証明機関-G2<br>OU =&quot;(c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **発行者** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | **シリアル番号** | 0E: E9: 4C: C3:00:00:00:00:51: D3:77:85 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha256RSA |
@@ -214,9 +214,9 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1m"></a>**Entrust 証明機関-L1M**
 
-| **Subject** | CN = Entrust サーティフィケーション Authority-L1M, OU =&quot;(c) 2014 Entrust, Inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **[件名]** | CN = Entrust サーティフィケーション Authority-L1M, OU = &quot; (c) 2014 Entrust, Inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
-| **発行者** | CN = Entrust ルート証明機関-G2<br>OU =&quot;(c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O =&quot;Entrust, Inc&quot;<br>C = US |
+| **発行者** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | **シリアル番号** | 61: A1: E7: D2:00:00:00:00:51: D3:66: A6 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
 | **署名アルゴリズム** | sha256RSA |
@@ -231,7 +231,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **Subject** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **[件名]** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 08: B8: 7A:50: 1B: BE: 9C: DA: 2D:16: 4D: 3E:39:43: BF:55 |
@@ -249,7 +249,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **Subject** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **[件名]** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 0F: 2C:10: C9: 5B:06: C0:93: 7F: B8: D4:49: F8: 3E:85:69 |
@@ -267,7 +267,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **Subject** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **[件名]** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 0B: 6A: B3: B0: 3E:、B1: A9: F6: C4:60:92: 6A: A8: CD: FE: B3 |
@@ -285,7 +285,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **Subject** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **[件名]** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 08:88: CD:52: 5F:19:24:44: 4D:14: A5:82:91: DE: B9:52 |

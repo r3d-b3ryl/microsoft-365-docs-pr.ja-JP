@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d8c315364e9a00a49ad825ef2652ff4e8a7476b
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 7282659399d2541b50c43dffc9fc8690baecd803
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755274"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308441"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
 
@@ -133,7 +133,7 @@ ms.locfileid: "44755274"
 
 このフェーズでは、選挙運動のサンプル ユーザー アカウントを追加します。
 
-まず、[Azure Active Directory PowerShell for Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+まず、[Azure Active Directory PowerShell for Graph モジュールに接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell)します。
 
 次に、組織名、場所、および共通のパスワードを入力し、PowerShell コマンド プロンプトまたは Integrated Scripting Environment (ISE) からこれらのコマンドを実行します。
 
@@ -206,6 +206,6 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 [選挙運動用の開発/テスト環境でチーム サイトを作成する](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 
-[クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [クラウド導入およびハイブリッド ソリューション](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)

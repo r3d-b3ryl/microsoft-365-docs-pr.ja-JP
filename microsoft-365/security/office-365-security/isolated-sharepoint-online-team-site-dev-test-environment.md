@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Microsoft 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チームサイトを構成します。'
-ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 095b0e5098d86f69c21576e72439dde48a092db3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588030"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308405"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>分離した SharePoint Online チーム サイト開発/テスト環境
 
@@ -57,7 +57,7 @@ Microsoft 365 開発/テスト環境で分離した SharePoint Online チーム�
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>フェーズ 1: 軽量またはシミュレートされたエンタープライズ Microsoft 365 開発/テスト環境を構築する
 
-最小要件での軽量な方法で分離した SharePoint Online チームサイトを作成する場合は、[軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)のフェーズ2とフェーズ3の手順に従ってください。
+最小要件での軽量な方法で分離した SharePoint Online チームサイトを作成する場合は、 [軽量な基本構成](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)のフェーズ2とフェーズ3の手順に従ってください。
 
 シミュレートされたエンタープライズ構成で分離した SharePoint Online チームサイトを作成する場合は、「 [Microsoft 365 テスト環境のパスワードハッシュ同期](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)」の手順に従ってください。
 
@@ -66,7 +66,7 @@ Microsoft 365 開発/テスト環境で分離した SharePoint Online チーム�
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>フェーズ 2: ユーザー アカウントとアクセス グループを作成する
 
-「 [Office 365 PowerShell に接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)する」の手順を使用して、全体管理者アカウントを使用して試用版サブスクリプションに接続します。
+「 [Office 365 PowerShell に接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) する」の手順を使用して、全体管理者アカウントを使用して試用版サブスクリプションに接続します。
 
 - お使いのコンピューター (ライトウェイトの Microsoft 365 開発/テスト環境)。
 
@@ -151,7 +151,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 1. ローカルコンピューター (軽量構成) または CLIENT1 (シミュレートされたエンタープライズ構成) のどちらかでブラウザーを使用して、 [https://admin.microsoft.com](https://admin.microsoft.com) 全体管理者アカウントを使用して Microsoft 365 管理センター () にサインインします。
 
-2. タイルのリストで、**[SharePoint]** をクリックします。
+2. タイルのリストで、 **[SharePoint]** をクリックします。
 
 3. ブラウザーの新しい SharePoint タブで、 **[+ サイトの作成]** をクリックします。
 
@@ -171,7 +171,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 11. リストの **[ProjectX のメンバー]** をクリックします。
 
-12. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
+12. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
 
 13. **[共有]** ダイアログ ボックスに「 **ProjectX-Members**」と入力し、それを選択して、 **[共有]** をクリックします。
 
@@ -179,7 +179,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 15. リストの **[ProjectX の所有者]** をクリックします。
 
-16. **[ユーザーとグループ]** ページで、**[新規]** をクリックします。
+16. **[ユーザーとグループ]** ページで、 **[新規]** をクリックします。
 
 17. **[共有]** ダイアログ ボックスに「 **ProjectX-Admins**」と入力し、それを選択して、 **[共有]** をクリックします。
 
@@ -219,7 +219,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 3. [https://admin.microsoft.com](https://admin.microsoft.com)デザイナーのリーダーのアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
-4. タイルのリストで、**[SharePoint]** をクリックします。
+4. タイルのリストで、 **[SharePoint]** をクリックします。
 
 5. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「 **ProjectX**」と入力し、検索をアクティブ化した後、 **[ProjectX]** チーム サイトをクリックします。ProjectX チーム サイトのブラウザーに新しいタブが表示されます。
 
@@ -235,7 +235,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 11. ブラウザーの **[ProjectX-Documents]** タブで、 **[新規] > [Word 文書]** の順にクリックします。
 
-12. ページに何らかのテキストを入力し、状態が [**保存済み**] になっていることを待ってから、ブラウザーの [戻る] ボタンをクリックし、ページを更新します。 **ドキュメント**フォルダーに新しい **.docx**が表示されます。
+12. ページに何らかのテキストを入力し、状態が [ **保存済み**] になっていることを待ってから、ブラウザーの [戻る] ボタンをクリックし、ページを更新します。 **ドキュメント**フォルダーに新しい**Document.docx**が表示されます。
 
 13. **[Document.docx]** ドキュメントの省略記号をクリックし、 **[リンクの取得]** をクリックします。
 
@@ -249,7 +249,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 1. [https://admin.microsoft.com](https://admin.microsoft.com)開発 VP のアカウント名とパスワードを使用して、Microsoft 365 管理センター () にサインインします。
 
-2. タイルのリストで、**[SharePoint]** をクリックします。
+2. タイルのリストで、 **[SharePoint]** をクリックします。
 
 3. ブラウザーの新しい **[SharePoint]** タブの検索ボックスに「 **ProjectX**」と入力し、検索をアクティブ化した後、 **[ProjectX]** チーム サイトをクリックします。ProjectX チーム サイトのブラウザーに新しいタブが表示されます。
 
@@ -287,7 +287,7 @@ ProjectX 用の SharePoint Online チーム サイトを作成するには、次
 
 [分離した SharePoint Online チーム サイト](isolated-sharepoint-online-team-sites.md)
 
-[クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[クラウド導入のテスト ラボ ガイド (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [シミュレートされたエンタープライズ基本構成](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 

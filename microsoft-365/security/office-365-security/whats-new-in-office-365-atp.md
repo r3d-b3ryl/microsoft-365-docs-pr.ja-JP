@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.reviewer: vippand
+ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294777"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308381"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -39,7 +40,7 @@ ms.locfileid: "47294777"
 
 - [構成アナライザーを使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
 - [テナントの許可/ブロックリストを使用してフィルター verdicts を手動で上書きする](tenant-allow-block-list.md)
-- [上位の対象ユーザー、トランスポートルール、コネクタなど、脅威エクスプローラーの拡張機能](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [上位の対象ユーザー、トランスポートルール、コネクタなど、脅威エクスプローラーの拡張機能](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - [脅威エクスプローラー](threat-explorer.md)での提示情報 (電子メールは、テナント/ユーザーポリシーによって許可/ブロックされました)
 - [脅威エクスプローラー](threat-explorer.md)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none)
 

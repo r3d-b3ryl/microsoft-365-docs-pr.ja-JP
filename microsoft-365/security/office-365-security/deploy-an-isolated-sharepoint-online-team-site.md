@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: このステップごとの展開ガイドを使用して、Microsoft Office 365 で分離した SharePoint Online チームサイトを作成して構成します。
-ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755226"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308417"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
 
@@ -72,7 +72,7 @@ Azure AD で次のアクセス グループを作成する必要があります�
     
 3. **[グループ] - [すべてのグループ]** ブレードで、**[+ 新しいグループ]** をクリックします。
     
-4. [**新しいグループ]** ブレードで、次のようにします。
+4. [ **新しいグループ]** ブレードで、次のようにします。
     
     - **[グループの種類]** で **[セキュリティ]** を選択します。
 
@@ -109,7 +109,7 @@ Office 365 を介してユーザーアカウントとグループを管理して
   
 Microsoft 365 管理センターの場合は、ユーザーアカウント管理者または会社の管理者の役割が割り当てられているユーザーアカウントでサインインし、グループを使用して適切なユーザーアカウントとグループを適切なアクセスグループに追加します。
   
-PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
+PowerShell の場合、まず、 [Azure Active Directory PowerShell For Graph モジュールに接続](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
   
 次に、以下のコマンド ブロックを使用して、個々のユーザー アカウントをアクセス グループに追加します。
   
@@ -163,17 +163,17 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 1. SharePoint Online チームサイト (SharePoint Online 管理者) を管理するために使用されるアカウントを使用して、Microsoft 365 管理センターにサインインします。 詳細については、「[一般法人向け Office 365 にサインインする場所](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)」を参照してください。
 
-2. Microsoft 365 管理センターの [**管理センター**] で、[ **SharePoint**] をクリックします。
+2. Microsoft 365 管理センターの [ **管理センター**] で、[ **SharePoint**] をクリックします。
 
-3. SharePoint 管理センターで、[**サイト**] を展開し、[**アクティブなサイト**] をクリックします。
+3. SharePoint 管理センターで、[ **サイト** ] を展開し、[ **アクティブなサイト**] をクリックします。
 
-4. [**作成**] をクリックし、[**その他のオプション**] を選択します。
+4. [ **作成**] をクリックし、[ **その他のオプション**] を選択します。
 
-5. [**テンプレートの選択**] リストで、[**チームサイト**] を選択します。
+5. [ **テンプレートの選択** ] リストで、[ **チームサイト**] を選択します。
    
 6. **[サイト名]** にチーム サイトの名前を入力します。 
     
-7. [**プライマリ管理者**] に、ログインに使用しているアカウントを入力します。
+7. [ **プライマリ管理者**] に、ログインに使用しているアカウントを入力します。
  
 8. [**完了**] をクリックします。
     
@@ -181,19 +181,19 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 1. ツールバーで、設定アイコンをクリックしてから、**[サイトの権限]** をクリックします。
 
-2. [**サイト共有**] で、[**メンバーが共有する方法を変更する**] をクリックします。
+2. [ **サイト共有**] で、[ **メンバーが共有する方法を変更する**] をクリックします。
 
-3. [**サイト所有者のみがファイル、フォルダー、およびサイトを共有できる**] を選択します。
+3. [ **サイト所有者のみがファイル、フォルダー、およびサイトを共有できる**] を選択します。
 
 4. **アクセス許可の要求**を**オフ**に設定します。
 
-5. **[保存]** をクリックします。
+5. [**保存**] をクリックします。
     
-6. [**権限**] ウィンドウで、[**高度な権限の設定**] をクリックします。
+6. [ **権限** ] ウィンドウで、[ **高度な権限の設定**] をクリックします。
     
 7. On the **Permissions** tab of your browser, click **\<site name> Members** in the list.
     
-8. **[ユーザーとグループ]** で、**[新規]** をクリックします。
+8. **[ユーザーとグループ]** で、 **[新規]** をクリックします。
     
 9. **[共有]** ダイアログ ボックスで、サイト メンバーのアクセス グループの名前を入力し、それを選択してから、**[共有]** をクリックします。
     
@@ -201,7 +201,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 11. Click **\<site name> Owners** in the list.
     
-12. **[ユーザーとグループ]** で、**[新規]** をクリックします。
+12. **[ユーザーとグループ]** で、 **[新規]** をクリックします。
     
 13. **[共有]** ダイアログ ボックスで、サイト管理者のアクセス グループの名前を入力し、それを選択してから、**[共有]** をクリックします。
     
