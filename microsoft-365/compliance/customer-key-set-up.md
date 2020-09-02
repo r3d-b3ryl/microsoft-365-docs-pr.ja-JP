@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、および Teams の各ファイルに対して Microsoft 365 の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868892"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324213"
 ---
 # <a name="set-up-customer-key"></a>顧客キーを設定する
 
@@ -31,7 +31,9 @@ Office 365 の顧客キーを使用するには、事前に Azure をセット�
   
 ## <a name="before-you-set-up-customer-key"></a>顧客キーを設定する前に
 
-開始する前に、組織に適したライセンスを持っていることを確認してください。 Microsoft 365 の顧客キーは、Office 365 E5 または Advanced コンプライアンス SKU で提供されます。 このトピックの概念と手順を理解するには、「 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 」のドキュメントを参照してください。 また、「 [テナント](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100))」など、Azure で使用される用語について理解しておいてください。
+開始する前に、組織に適したライセンスを持っていることを確認してください。 2020年4月1日以降、Office 365 の顧客キーが Office 365 E5、M365 E5、M365 E5 コンプライアンス、および M365 E5 情報保護 & ガバナンス Sku で提供されます。 Office 365 Advanced コンプライアンス SKU は、調達の新しいライセンスでは使用できなくなりました。 既存の Office 365 Advanced コンプライアンスライセンスは引き続きサポートされます。
+
+このトピックの概念と手順を理解するには、「 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 」のドキュメントを参照してください。 また、「azure [AD テナント](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)」などの、azure で使用される用語について理解しておいてください。
 
 FastTrack は、顧客キーの登録に使用する必要なテナントおよびサービス構成情報を収集するためにのみ使用されます。 カスタマーキー提供は FastTrack を通じて公開されるため、パートナーは同じ方法で必要な情報を送信することができます。 FastTrack を使用すると、提供されているデータのアーカイブも容易になります。
   
@@ -195,7 +197,7 @@ Microsoft 365 チームに連絡する前に、顧客キーで使用する Azure
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   以下に例を示します。
+   例:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
@@ -319,7 +321,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 > [!TIP]
 > 出力ファイルに対して、コンテナー名とキー名の組み合わせを選択します。 これにより、ファイル名が自己記述されます。 バックアップファイルの名前が競合しないようにすることもできます。
   
-以下に例を示します。
+例:
   
 ```powershell
 Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -OutputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup

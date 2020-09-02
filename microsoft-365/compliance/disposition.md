@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 構成した設定に従って、廃棄レビューを使用するか、コンテンツを自動的に削除するかにかかわらず、コンテンツの廃棄を監視および管理します。
-ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294766"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321996"
 ---
 # <a name="disposition-of-content"></a>コンテンツの廃棄
 
@@ -62,7 +62,7 @@ Microsoft 365 コンプライアンスセンターの [ **廃棄** ] タブに�
 
 保持期間の終了時に廃棄レビューがトリガーされた場合:
   
-- 選択したユーザーには、閲覧するコンテンツがあることを示す電子メール通知が送信されます。 これらのレビュー担当者は、個別のユーザー、配布グループまたはセキュリティグループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) を使用できます。 通知は週単位で送信されることに注意してください。
+- 選択したユーザーには、閲覧するコンテンツがあることを示す電子メール通知が送信されます。 これらのレビュー担当者は、個々のユーザーまたはメールが有効なセキュリティグループにすることができます。 通知は週単位で送信されることに注意してください。
     
 - レビュー担当者は、Microsoft 365 コンプライアンスセンターの [ **廃棄** ] タブに移動してコンテンツを確認し、完全に削除するか、保持期間を延長するか、または別の保持ラベルを適用するかを決定します。
 

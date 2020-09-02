@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可とデータ暗号化ポリシーを管理することによって、キーを管理する方法について説明します。
-ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 8f5f23fa1b8ce8baa8fafd3f29ca5fb8905887a1
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717308"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324259"
 ---
 # <a name="manage-customer-key"></a>顧客キーを管理する
 
@@ -84,11 +84,11 @@ Exchange Online と Skype for Business 用に作成したすべての DEPs の�
 
 2. 組織内のすべての DEPs を戻すには、パラメーターを指定せずに、コマンドレットを実行します。
 
-  ```powershell
-  Get-DataEncryptionPolicy
-  ```
+   ```powershell
+   Get-DataEncryptionPolicy
+   ```
 
-  Get-DataEncryptionPolicy コマンドレットの詳細については、「 [get-dataencryptionpolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps)」を参照してください。
+   Get-DataEncryptionPolicy コマンドレットの詳細については、「 [get-dataencryptionpolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps)」を参照してください。
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>メールボックスをクラウドに移行する前に DEP を割り当てる
 
@@ -100,11 +100,11 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
 
 2. Set-MailUser コマンドレットを実行します。
 
-  ```powershell
-  Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
-  ```
+   ```powershell
+   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
+   ```
 
-  *GeneralMailboxOrMailUserIdParameter*にはメールボックスを指定し、 *Dataencryptionpolicyidparameter*は DEP の ID です。 Set-mailuser コマンドレットの詳細については、「 [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps)」を参照してください。
+   *GeneralMailboxOrMailUserIdParameter*にはメールボックスを指定し、 *Dataencryptionpolicyidparameter*は DEP の ID です。 Set-mailuser コマンドレットの詳細については、「 [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps)」を参照してください。
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>メールボックスに割り当てられた DEP を決定する
 
@@ -116,7 +116,7 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   ここで、 *GeneralMailboxOrMailUserIdParameter*はメールボックスと DataEncryptionPolicyID を指定し、DEP の GUID を返します。 Get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps)」を参照してください。
+   ここで、 *GeneralMailboxOrMailUserIdParameter* はメールボックスと DataEncryptionPolicyID を指定し、DEP の GUID を返します。 Get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps)」を参照してください。
   
 2. Get-DataEncryptionPolicy コマンドレットを実行して、メールボックスが割り当てられている DEP のフレンドリ名を検索します。
   
@@ -124,7 +124,7 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
    Get-DataEncryptionPolicy <GUID>
    ```
 
-   ここで、 *guid*は、前の手順で get-mailboxstatistics コマンドレットによって返される guid です。
+   ここで、 *guid* は、前の手順で get-mailboxstatistics コマンドレットによって返される guid です。
 
 ## <a name="verify-that-customer-key-has-finished-encryption"></a>顧客キーが暗号化を完了したことを確認する
 
@@ -140,9 +140,9 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
 Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEncrypted
 ```
 
-IsEncrypted プロパティは、メールボックスが暗号化されている場合は**true**の値を返し、メールボックスが暗号化されていない場合は**false**の値を返します。
+IsEncrypted プロパティは、メールボックスが暗号化されている場合は **true** の値を返し、メールボックスが暗号化されていない場合は **false** の値を返します。
 
-メールボックスの移動が完了するまでの時間は、メールボックスのサイズによって異なります。 新しい DEP を割り当てた時点から72時間後にメールボックスが完全に暗号化されていない場合は、Microsoft サポートにお問い合わせください。 New-moverequest コマンドレットは、ローカルメールボックスの移動では使用できなくなりました。 詳細については、[このお知らせ](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141)を参照してください。
+メールボックスの移動が完了するまでの時間は、メールボックスのサイズによって異なります。 新しい DEP を割り当てた時点から72時間後にメールボックスが完全に暗号化されていない場合は、Microsoft サポートにお問い合わせください。 New-moverequest コマンドレットは、ローカルメールボックスの移動では使用できなくなりました。 詳細については、 [このお知らせ](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141) を参照してください。
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>SharePoint Online、OneDrive for Business、および Teams ファイルの暗号化が完了していることを確認する
 
@@ -167,6 +167,20 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
   - **登録済み:** 顧客キーの暗号化が適用され、すべてのサイトのすべてのファイルが暗号化されました。
 
   - **ローリング:** キーロールが進行中です。 Geo のキーがローリングの場合は、進行状況を監視できるように、キーロール操作を完了したサイトの割合に関する情報も表示されます。
+
+## <a name="unassign-a-dep-from-a-mailbox"></a>メールボックスからの DEP の割り当て解除
+
+メールボックス PowerShell コマンドレットを使用し、をに設定して、メールボックスから DEP を割り当て解除し `DataEncryptionPolicy` `$NULL` ます。 このコマンドレットを実行すると、現在割り当てられている DEP が割り当てを取り消し、既定の Microsoft 管理キーに関連付けられている DEP を使用してメールボックスを再度暗号化します。 Microsoft マネージキーで使用される DEP は、割り当てを解除することはできません。 Microsoft の管理キーを使用しない場合は、別の DEP をメールボックスに割り当てることができます。
+
+メールボックス PowerShell コマンドレットを使用して、メールボックスから DEP の割り当てを解除するには、次の手順を実行します。
+
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+
+2. メールボックスの設定コマンドレットを実行します。
+
+   ```powershell
+   Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+   ```
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>キーを無効にし、データ削除パスプロセスを開始する
 
@@ -195,7 +209,7 @@ Exchange Online と Skype for Business のデータ削除パスを開始する�
 
 2. 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
 
-3. 削除するメールボックスを含む DEP ごとに、次のように[Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy)コマンドレットを実行します。
+3. 削除するメールボックスを含む DEP ごとに、次のように [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) コマンドレットを実行します。
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>
@@ -229,7 +243,7 @@ SharePoint Online、OneDrive for Business、および Teams ファイルのデ�
 
 ## <a name="related-articles"></a>関連記事
 
-- [顧客キーによるサービスの暗号化](customer-key-overview.md)
+- [カスタマー キーによるサービスの暗号化](customer-key-overview.md)
 
 - [可用性キーについて](customer-key-availability-key-understand.md)
 
