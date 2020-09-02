@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: '[サブスクリプション] ページにアクセスして、組織のサブスクリプションを確認する方法について説明します。'
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: '[製品] ページにアクセスして、組織のサブスクリプションを確認する方法について説明します。'
+ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780507"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324550"
 ---
 # <a name="what-subscription-do-i-have"></a>取得しているサブスクリプションが不明な場合
 
@@ -40,8 +37,9 @@ ms.locfileid: "44780507"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-
-2. サブスクリプションは、[**製品**] ページに、サブスクリプション名、サブスクリプションに関する情報、およびその状態を表示します。 縮小表示を表示するには、[**テーブルビュー**] を選択します。
+2. [ **製品** ] タブには、すべてのサブスクリプションが表示されます。 各サブスクリプション行には、ライセンス、サブスクリプションの状態、請求に関する情報が含まれています。
+3. リストに表示される列を変更する場合は、[ **列の選択**] を選択します。 列の選択を変更して、[ **保存**] を選択します。
+4. 1つのサブスクリプションの詳細を確認するには、そのサブスクリプションを選択します。
 
 ::: moniker-end
   

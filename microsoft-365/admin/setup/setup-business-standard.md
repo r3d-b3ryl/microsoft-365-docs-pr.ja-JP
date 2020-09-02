@@ -25,14 +25,20 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: b42dd0779c708410614ea2ab0d134aa3dcf0c7e9
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778927"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324448"
 ---
-# <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard のセットアップ
+# <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard をセットアップする
+
+Microsoft 365 Business Standard のセットアップに関する短いビデオをご覧ください。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
+
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
   
  *次の手順は、**[Microsoft 365 Business Standard プラン](https://go.microsoft.com/fwlink/p/?LinkId=627220)** を所有する企業および[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を対象としています。*
 

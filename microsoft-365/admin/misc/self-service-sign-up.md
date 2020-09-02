@@ -20,28 +20,25 @@ search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Microsoft 365 セルフサービスのサインアップと、Microsoft Power Apps、Microsoft Flow、Dynamics 365 for Finance などの利用可能なセルフサービスプログラムについて説明します。
-ms.openlocfilehash: 4a95c4b98821100d0a5164b87c1afe02b854608b
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506299"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324482"
 ---
 # <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
 
-ご意見ご感想をお待ちしており、組織内のユーザーが Microsoft からオンラインサービスにサインアップすることが容易になりました。 この新しいサインアップ処理では、ユーザーはサブスクリプションによって支払われるサービスを使用するようにサインアップすることができます。または、自分に代わってアクションを実行することを求められずに、無料のサービスを使用することができます。
+セルフサービスサインアップにより、組織内のユーザーが Microsoft のオンラインサービスにサインアップするのが容易になります。 ユーザーはサブスクリプションによって支払われるサービスを使用するようにサインアップすることができます。または、自分に代わってアクションを実行するよう求められずに、無料サービスを使用することができます。
   
 ## <a name="how-self-service-sign-up-works"></a>セルフサービス サインアップのしくみ
 
 次の例は、学校の場合のセルフサービス サインアップのしくみを説明しています。テナントでセルフサービス プログラムを有効にしているどの組織の場合も、同じプロセスを使用できます。
   
-1. 学生と教職員は、自らが学校に関連付けられていることを示す、学校のメール アドレスを持ちます。たとえば、メール アドレス jakob@uw.edu はワシントン大学の学生であることを示します。
-
-2. 学生と教職員は、[当社の web サイト](https://go.microsoft.com/fwlink/p/?LinkId=536628)に移動し、自分のメールアドレスを使用して、組織が提供する、企業向けの Microsoft 365 アプリなどのサービスにサインアップします。 学生と教職員は、Microsoft が提供する他の無料サービスにサインアップすることもできます。
-
+1. 学生と教職員は、自らが学校に関連付けられていることを示す、学校のメール アドレスを持ちます。 たとえば、電子メールアドレス jakob@uw.edu は、ワシントン大学の学生を示す場合があります。
+2. 学生と教職員は、 [当社の web サイト](https://go.microsoft.com/fwlink/p/?LinkId=536628)に移動し、自分のメールアドレスを使用して、組織が提供する、企業向けの Microsoft 365 アプリなどのサービスにサインアップします。 学生と教職員は、Microsoft が提供する他の無料サービスにサインアップすることもできます。
 3. 電子メールアドレスを検証し、Microsoft 365、Power BI、またはその他のサービスをすぐに使用できるようにします。
-
-4. ビジネス管理者は、管理センターで [**製品**] ページを表示することによって、サブスクリプションにサインアップしたユーザーを確認できます。 このようにすると、テナント内のサービスのライセンスが新規にあるか、認識されないかを確認できます。 ユーザーがセルフサービスサブスクリプションにサインアップできるかどうかを制御するには、 [Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell コマンドレットを**AllowAdHocSubscriptions**パラメーターと共に使用します。 詳細については、「[セルフサービス設定を制御する方法](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)」を参照してください。
+4. ビジネス管理者は、Microsoft 365 管理センターの [ **ライセンス** ] ページでサブスクリプションを選択することによって、サブスクリプションにサインアップしたユーザーを確認できます。 このようにすると、テナント内のサービスのライセンスが新規にあるか、認識されないかを確認できます。 ユーザーがセルフサービスサブスクリプションにサインアップできるかどうかを制御するには、 [Set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell コマンドレットを **AllowAdHocSubscriptions** パラメーターと共に使用します。 詳細については、「[セルフサービス設定を制御する方法](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-self-service-signup#how-do-i-control-self-service-settings)」を参照してください。
 
 ## <a name="available-self-service-programs"></a>利用可能なセルフサービス プログラム
 
@@ -50,7 +47,7 @@ ms.locfileid: "46506299"
 |||||
 |:-----|:-----|:-----|:-----|
 |**プログラム** <br/> |**説明** <br/> |**追加情報** <br/> |****セルフサービス サインアップ用の Web サイト**** <br/> |
-|Office 365 A1 * * * * <br/> |任意の学生または教師は、学校の電子メールアドレスを使用して無料の Office 365 にサインアップし、web 用に Office アプリを入手できます。また、1 TB の OneDrive クラウドストレージと SharePoint Online を、クラス、チーム、およびプロジェクトサイトで利用できます。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
+|Office 365 A1 * * * * <br/> |任意の学生または教師は、学校の電子メールアドレスを使用して無料の Office 365 にサインアップし、web 用の Office アプリを取得できます。また、1 TB の OneDrive クラウドストレージと SharePoint Online を、クラス、チーム、およびプロジェクトサイトで利用できます。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1 Plus** <br/> |対象とする学生と教師は、Office 365 A1 Plus にサインアップできます。これには、上記のすべての機能と Microsoft 365 Apps for enterprise が含まれます。 Microsoft 365 enterprise 用アプリは、デスクトップまたはラップトップコンピューターにインストールされている Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access、Skype for Business などの生産性向上ソフトウェアです。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI を使用すると、ユーザーはデータを表示したり、探索を共有したり、直観的な新しい方法で共同作業したりできます。 <br/> 組織が既に加入している場合は、「Power BI Pro ユーザーの試用版」のライセンスが追加されている可能性があります。これは、ユーザーが限定的で、高度な機能へのアクセスを無料で提供しています。  <br/> |[組織内の Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
 |**RMS (Rights Management Services)** <br/> |個人用の RMS は、Azure Rights Management (Azure RMS) で保護された機密性の高いファイルが送信されているが、IT 部門が Azure Rights Management (Azure RMS)、Active Directory Rights Management Services (AD RMS) のいずれも実装していない組織に所属するユーザーのための無料のセルフサービス サブスクリプションです。  <br/> |[個人用の RMS と Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management ポータル](https://portal.azure.com/) したがって、お客様は、特定の権利保護されたドキュメントを開くことができるかどうかをチェックできます。  <br/> |

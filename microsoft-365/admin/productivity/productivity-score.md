@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生産性スコアの概要。
-ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a7f6fc5fef9189f7478bcc67e1d24bdf037f561d
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307479"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324436"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft プロダクティビティスコア (プレビュー)
 
@@ -40,9 +40,9 @@ ms.locfileid: "47307479"
 
 - **従業員の利便性:** ユーザーがどのようにコンテンツをグループ作業するか、どのように Microsoft 365 製品を使用して通信するか、また、プラットフォームごとに Microsoft 365 を使用するかどうかを測定します。 
 
-    ユーザーがオンラインで作業するときには時間を節約できるため、このような洞察が提供されます。 任意のデバイスで自由に作業できる場合は、より高い生産性と満足度が得られます。 柔軟な方法で通信できる場合は、より効率的で、より優れた関係が得られ、組織がより統合されます。 エビデンスについては、「 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)」を参照してください。
+    ユーザーがオンラインで作業するときには時間を節約できるため、このような洞察が提供されます。 任意のデバイスで自由に作業できるため、生産性が高まり、満足しています。 柔軟な方法でコミュニケーションを行うことにより、ユーザーの作業効率が向上し、リレーションシップがより効率的になります。 エビデンスについては、「 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)」を参照してください。
 
-- **テクノロジの実績:** 生産性は、信頼性とパフォーマンスの高いテクノロジに加えて、Microsoft 365 を効率的に使用することによっても異なります。 [エンドポイント分析](https://aka.ms/endpointanalytics)を提供することで、エンドポイントのハードウェアとソフトウェアのパフォーマンスと正常性の問題によってユーザーの生産性がどのような影響を受け、修復するために推奨される処置を提供できるかを理解するのに役立つ情報を提供します。さらに、組織に Microsoft 365 network connectivity insights を提供しています。
+- **テクノロジの実績:** 生産性は、信頼性とパフォーマンスの高いテクノロジに加えて、Microsoft 365 を効率的に使用することによっても異なります。 [エンドポイント分析](https://aka.ms/endpointanalytics)を提供することで、エンドポイントのハードウェアとソフトウェアのパフォーマンスと正常性の問題によってユーザーの生産性がどのように影響されるかを理解するのに役立つ情報を提供します。 また、お客様の組織のために Microsoft 365 network connectivity insights に加えて、推奨される処置を行うこともできます。
 
 概要と前提条件の詳細については、「 [エンドポイント分析とは](https://docs.microsoft.com/mem/analytics/overview) 」を参照してください。 Microsoft 365 network connectivity insights の詳細については、「 [ネットワーク接続の概要」](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)を参照してください。
   
@@ -66,7 +66,7 @@ ms.locfileid: "47307479"
 
 生産性スコアには、Exchange、SharePoint、OneDrive、Teams、Word、Excel、PowerPoint、OneNote、Outlook、Yammer、Skype からのデータが含まれます。
 
-スコアは毎日更新され、過去 28 ~ 180 日間 (現在の日付を含む) に完了したユーザー操作を反映します。
+スコアは毎日更新され、最後の 28 (現在の日付を含む) で完了したユーザー操作を反映します。
 
 
 ## <a name="pre-requisites"></a>前提条件 
@@ -111,15 +111,15 @@ Endpoint analytics ピアベンチマークには、すべてのテナントで�
 
 ### <a name="content-collaboration-details"></a>コンテンツコラボレーションの詳細
 
-コンテンツコラボレーションの主な洞察は、オンラインでの作成、読み取り、共同作業 (編集と共有) を行うユーザーの数です。 調査では、ユーザーがオンラインファイルを使用して共同作業するときに、各ユーザーが週に平均100分 (約2時間) を保存することを示しているため、これらの測定は重要です。
+コンテンツコラボレーションの主な洞察は、オンラインでの作成、読み取り、共同作業 (編集と共有) を行うユーザーの数です。 調査では、ユーザーがオンラインファイルを使用して共同作業するときに、各ユーザーが毎週1週間に約2時間を節約することを示しているため、これらのメジャーは重要です。
 
-Office ファイルを1人のユーザーが作成して共有した後、少なくとも1人の他のユーザーがコンテンツのコラボレーションを定義しています。 
+Office ファイルを1人のユーザーが作成して共有した後、少なくとも1人のユーザーがそれを読むことにより、コンテンツのコラボレーションを定義しています。 
 
-閲覧者: OneDrive または SharePoint のオンラインファイルにアクセスしたり、ダウンロードしたりするユーザー。
+**閲覧**者: OneDrive または SharePoint のオンラインファイルにアクセスしたり、ダウンロードしたりするユーザー。
 
 **クリエーター:** OneDrive または SharePoint のオンラインファイルを作成、変更、アップロード、同期、チェックイン、コピー、または移動するユーザー。
 
-コラボレーター: OneDrive または SharePoint を使用してオンラインファイルで共同作業を行うユーザー。 2人のユーザーが、他のユーザーが作成または変更した後、28日間のウィンドウ内でオンラインの Word、Excel、PowerPoint、OneNote、または PDF cloud ドキュメントを読み取りまたは編集した場合に、コラボレーターとなります。
+**コラボレーター**: OneDrive または SharePoint を使用してオンラインファイルで共同作業を行うユーザー。 2人のユーザーが、他のユーザーが作成または変更した後に、オンラインの Office アプリまたは PDF クラウドドキュメントを28日のウィンドウ内で読み取りまたは編集した場合に、共同作業を行うことができます。
 
 グループ作業の対象となるファイルの種類は、Word、Excel、PowerPoint、OneNote、および PDF のファイルです。
 
@@ -127,7 +127,7 @@ Office ファイルを1人のユーザーが作成して共有した後、少な
 
 ### <a name="communication-details"></a>コミュニケーションの詳細
 
-コミュニケーションの主要な洞察は、組織内のユーザーが電子メール、チャット、コミュニティ投稿を使用して通信する頻度です。 この情報は、ユーザーがさまざまなリアルタイム通信ツールを使用する場合に、コミュニケーションのモードを選択することによって、office の場所を越えた関係を開発するのに役立つ、チャットやコミュニティなどのツールを備えているために重要です。
+コミュニケーションの主要な洞察は、組織内のユーザーが電子メール、チャット、コミュニティ投稿を使用して通信する頻度です。 さまざまなリアルタイム通信ツールを使用している場合は、コミュニケーションのモードを選択して、office の場所を越えた関係を開発するためのチャットやコミュニティなど、コミュニケーションの方法を選択することができます。
 
 ### <a name="mobility-details"></a>モビリティの詳細
 
@@ -153,4 +153,4 @@ Office ファイルを1人のユーザーが作成して共有した後、少な
 
 ## <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 
-生産性スコアに関する考えと、改善方法に関するアイデアを共有してください。 製品内の **フィードバック** セクションを使用して、ProductivityScorePreview@service.microsoft.com の生産性スコアチームに連絡します。
+生産性スコアに関する考えと、それを改善する方法についてのアイデアを共有します。 製品内の **フィードバック** セクションを使用して、ProductivityScorePreview@service.microsoft.com の生産性スコアチームに連絡します。

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: Microsoft 365 のデータの場所'
-ms.openlocfilehash: 3287c50eb35746559a5ce9c9296c9e93f9e686dd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 17655e8cb35f3eaa78315fd2cdb3450f1552ad96
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691927"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324269"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -4099,8 +4099,8 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | ノルウェー |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| ホワイトボード | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
@@ -4819,8 +4819,8 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| ホワイトボード | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| フォーム | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Workplace Analytics | 米国 |
 </p></details>
 
