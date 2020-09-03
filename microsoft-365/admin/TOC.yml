@@ -212,6 +212,8 @@
           href: manage/set-password-expiration-policy.md
         - name: アプリ起動ツールをカスタマイズする
           href: manage/customize-the-app-launcher.md
+        - name: ユーザーのアプリ起動ツールにアプリを固定する
+          href: manage/pin-apps-to-app-launcher.md
         - name: 最新のアプリへとユーザーをアップグレードする
           href: setup/upgrade-users-to-latest-office-client.md
         - name: アドインの一元展開の要件
@@ -220,6 +222,8 @@
           href: manage/manage-deployment-of-add-ins.md
         - name: 管理センターでアドインを管理する
           href: manage/manage-addins-in-the-admin-center.md
+        - name: Office スクリプトの設定を管理する
+          href: manage/manage-office-scripts-settings.md
         - name: 一元展開に関する FAQ
           href: manage/centralized-deployment-faq.md
         - name: パートナーやリセラーを探す
