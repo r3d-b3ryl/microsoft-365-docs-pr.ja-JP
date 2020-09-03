@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 SharePoint Online のデータ削除
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint Online でのデータ削除の動作について説明します。たとえば、削除されたコンテンツが保存される場所や、期間について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5cea1b797d078f6ae627700b28c6fb90cc005637
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e914e84f3679483e5030b7f2a06913cb052e5411
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692053"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332726"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365 での SharePoint Online データの削除
 

@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 71969a58acd64c3e830da398288249cbb8610b5f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797795"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334850"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -506,9 +506,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
         <Match idRef="Keyword_Australia_Tax_File_Number" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_number_exclusions" />
-        </Any>
       </Pattern>
     </Entity>
 ```
@@ -526,39 +523,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - individual tax return
 - tax file number
 - tfn
-
-#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
-
-- 00000000
-- 11111111
-- 22222222
-- 33333333
-- 44444444
-- 55555555
-- 66666666
-- 77777777
-- 88888888
-- 99999999
-- 000000000
-- 111111111
-- 222222222
-- 333333333
-- 444444444
-- 555555555
-- 666666666
-- 777777777
-- 888888888
-- 999999999
-- 0000000000
-- 1111111111
-- 2222222222
-- 3333333333
-- 4444444444
-- 5555555555
-- 6666666666
-- 7777777777
-- 8888888888
-- 9999999999
 
 ## <a name="austria-drivers-license-number"></a>オーストリアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
@@ -728,7 +692,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
   
-- 関数は、  `Func_austria_eu_ssn_or_equivalent` パターンに一致するコンテンツを検索します。 
+- 関数 ' Func_austria_eu_
+
+_or_equivalent ' は、このパターンに一致するコンテンツを検索します。 
     
 - From キーワード  `Keywords_austria_eu_ssn_or_equivalent` が見つかりました。 
     
@@ -2864,20 +2830,28 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- card verification
+- 
+card verification
+
 - card identification number
 - cvn
 - cid
 - cvc2
 - cvv2
-- pin block
+- 
+pin block
 - security code
+
 - security number
+
 - security no
+
 - issue number
+
 - issue no
 - cryptogramme
-- numéro de sécurité
+- 
+numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -2888,24 +2862,32 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- cod. sicurezza
-- cod sicurezza
+- cod.sicurezza
+- 
+cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- cod. seg
-- cod seg
+- cod.seg
+- 
+cod seg
 - código de segurança
+
 - codigo de seguranca
+
 - codigo de segurança
+
 - código de seguranca
-- cód. segurança
-- cod. seguranca cod。 segurança
-- cód. seguranca
-- cód segurança
-- cod seguranca cod segurança
-- cód seguranca
+- cód.segurança
+- cod.seguranca
+- cod.segurança
+- cód.seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
 - número de verificação
+
 - numero de verificacao
 - ablん f
 - gültig bis
@@ -2913,54 +2895,79 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- data scad
+- 
+data scad
 - fecha de expiracion
+
 - fecha de venc
 - vencimiento
-- válido hasta
+- 
+válido hasta
 - valido hasta
 - vto
-- data de expiração
+- 
+data de expiração
 - data de expiracao
+
 - data em que expira
 - validade
 - valor は
 - vencimento
-- Venc 
+- トランザクション
+- トランザクション番号
+- 参照番号
+- セキュリティコード
+- セキュリティ コード
+- セキュリティナンバー
+- セキュリティ ナンバー
+- セキュリティ番号
+
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - amex
 - american express
 - americanexpress
+- americano espresso
+
 - Visa
 - mastercard
 - master card
-- mc 
+- mc
 - mastercards
-- master cards
-- diner's Club
+- 
+master cards
+- ダイナースのクラブ
 - diners club
 - din/クラブ
+- 開示
 - discover card
 - discovercard
 - discover cards
 - JCB
+- BrandSmart
 - japanese card bureau
+
 - carte blanche
 - carteblanche
 - credit card
 - ]#
 - cc #:
-- expiration date
+- 有効期限
 - exp date
-- expiry date
-- 日付 d'expiration
-- date d'exp
-- date expiration
+
+- 
+expiry date
+- 
+date d’expiration
+- 
+date d'exp
+- 
+date expiration
 - bank card
 - bankcard
-- card number
+- 
+card number
 - card num
 - カード番号
 - カード番号
@@ -2986,14 +2993,36 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - atm cards
 - atmcards
 - enroute
-- en route
+- 
+en route
 - card type
+
+- Cardmember のアカウント
+- cardmember アカウント
+- Cardno
+- 法人カード
+- 法人カード
+- カードの種類
+- カードのアカウント番号
+- カードメンバーアカウント
+- Cardmember Acct。
+- card no.
+
+- カード番号
+- card number
+
 - carte bancaire
+
 - carte de crédit
+
 - carte de credit
+
 - numéro de carte
+
 - numero de carte
+
 - nº de la carte
+
 - nº de carte
 - kreditkarte
 - karte
@@ -3003,61 +3032,124 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
-- kartennr 
+- kartennr
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- carta di credito
+- 
+carta di credito
 - carta credito
-- carta
+- アンド.carta
 - n carta
-- nr. carta
-- nr carta
+- nr.carta
+- 
+nr carta
 - numero carta
+
 - numero della carta
+
 - numero di carta
+
 - tarjeta credito
+
 - tarjeta de credito
-- tarjeta crédito
-- tarjeta de crédito
+
+- 
+tarjeta crédito
+- 
+tarjeta de crédito
 - tarjeta de atm
+
 - tarjeta atm
+
 - tarjeta debito
+
 - tarjeta de debito
-- tarjeta débito
-- tarjeta de débito
+
+- 
+tarjeta débito
+- 
+tarjeta de débito
 - nº de tarjeta
-- 違います。 de tarjeta
-- no de tarjeta
+- 違います。de tarjeta
+- 非の tarjeta
 - numero de tarjeta
+
 - número de tarjeta
+
 - tarjeta no
 - tarjetahabiente
-- cartão de crédito
+- 
+cartão de crédito
 - cartão de credito
+
 - cartao de crédito
+
 - cartao de credito
+
 - cartão de débito
+
 - cartao de débito
+
 - cartão de debito
+
 - cartao de debito
+
 - débito automático
 - debito automatico
-- número do cartão
-- numero do cartão 
+
+- 
+número do cartão
+- numero do cartão
+
 - número do cartao
+
 - numero do cartao
+
 - número de cartão
+
 - numero de cartão
+
 - número de cartao
+
 - numero de cartao
-- nº do cartão
-- nº do cartao
+
 - n ° do cartão
+- nº do cartao
+- n °do cartão
 - no do cartão
-- no do cartao
-- 違います。 do cartão
-- 違います。 do cartao 
+- いいえ。
+- 違います。do cartão
+- 違います。do cartao
+- クレジットカード番号
+- クレジットカードナンバー
+- クレジットカード＃
+- クレジットカード
+- クレジット
+- クレカ
+- カード番号
+- カードナンバー
+- カード＃
+- アメックス
+- アメリカンエクスプレス
+- アメリカン エクスプレス
+- Visaカード
+- Visa カード
+- マスターカード
+- マスター カード
+- マスター
+- ダイナースクラブ
+- ダイナース クラブ
+- ダイナース
+- 有効期限
+- 期限
+- キャッシュカード
+- キャッシュ カード
+- カード名義人
+- カードの名義人
+- カードの名義
+- デビット カード
+- デビットカード
 
 ## <a name="croatia-drivers-license-number"></a>クロアチアの運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
@@ -6724,12 +6816,9 @@ DLP ポリシーは75% です。この種類の機密情報は、近接する300
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検索します。
 - Keyword_indonesia_id_card からのキーワードが見つかりました。
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現 Regex_indonesia_id_card は、このパターンに一致するコンテンツを検索します。
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -6737,10 +6826,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   <Pattern confidenceLevel="85">
      <IdMatch idRef="Regex_indonesia_id_card"/>
      <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
 </Entity>
 ```
 
@@ -12258,7 +12343,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - ソーシャルセキュリティ
 - great britain
-- 金
+
+- NI 番号
+- NI No。
+- NI#
+- NI#
+- 金#
+- insurancenumber
+- nationalinsurance#
+- nationalinsurancenumber
+
     
 ## <a name="uk-tax-identification-number"></a>U.K. 税識別番号
 この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
@@ -12693,14 +12787,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- Social Security 
-- Social Security# 
-- Soc Sec 
-- SSN 
-- SSN 
-- SSN# 
-- 秒# 
-- SSID 
+- SSA 番号
+- social security number
+- ソーシャルセキュリティ#
+- ソーシャルセキュリティ#
+- ソーシャルセキュリティなし
+- Social Security#
+- Soc Sec
+- SSN
+- SSN
+- SSN#
+- 秒#
+- SSID
    
 ## <a name="us--uk-passport-number"></a>米国/英国 passport number
 英国 パスポート番号機密情報の種類エンティティは、EU のパスポート番号機密情報の種類で利用でき、スタンドアロンの機密情報の種類エンティティとして使用できます。

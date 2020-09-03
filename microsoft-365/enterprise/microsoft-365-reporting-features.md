@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 レポート機能
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Azure Active Directory と Exchange Online を含む、Microsoft 365 のさまざまなレポート機能について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 104d587ea87a61a66b73aa1441170f37e082a72f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692054"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332738"
 ---
 # <a name="microsoft-365-reporting-features"></a>Microsoft 365 レポート機能
 

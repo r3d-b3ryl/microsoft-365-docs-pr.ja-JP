@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321928"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332751"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -161,7 +161,7 @@ Windows 10 for Microsoft 365 enterprise for enterprise は、Pc に推奨され�
 ![Id とデバイスのアクセスを構成する手順。](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. 前提条件となる id 機能とその設定を構成します。
-2. 最も一般的な id を構成し、条件付きアクセスポリシーにアクセスします。
+2. 共通 id を構成し、条件付きアクセスポリシーにアクセスします。
 3. ゲストユーザーと外部ユーザーの条件付きアクセスポリシーを構成します。
 4. Microsoft Teams、Exchange Online、SharePoint などの Microsoft 365 クラウドアプリの条件付きアクセスポリシーを構成します。
 

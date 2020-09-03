@@ -1,7 +1,7 @@
 ---
 title: Office 365 Skype for Business データ削除
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、保存されていないコンテンツの種類など、Skype for Business でのデータ削除についての説明を確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf317f2ecd3d547ae8601553a34fb43fb4b5bd9d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0a47df4dd0dfdf5551668f8cafc9baa023bd6db1
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692051"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332714"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 での Skype for Business データの削除
 

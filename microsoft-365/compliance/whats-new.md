@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンスセンターに新しい新しいソリューションを追加したり、フィードバックに基づいて既存の機能を更新したり、最新のドキュメントを展開したりすることができるかどうかにかかわらず、Microsoft 365 は、変更されたコンプライアンスの状況を常に把握するのに役立つ情報を用意しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868974"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336670"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -36,6 +36,32 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 > [!TIP]
 > 他の管理センターでは何が起こっているのでしょうか。 次の記事をご覧ください。<br>[Microsoft 365 管理センターの新機能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft Threat Protection の新機能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 また、 [microsoft 365 ロードマップ](https://www.microsoft.com/en-us/microsoft-365/roadmap) を参照して、起動された、展開中の、開発中である、キャンセルされた、または既にリリースされた microsoft 365 の機能について説明します。
+
+## <a name="july-2020"></a>2020 年7 月
+
+### <a name="spotlight-on-help-docs"></a>ヘルプドキュメントのスポットライト
+
+組織の機密データを保護および管理するために使用されるコンプライアンスソリューションを理解するために、ソリューションがこれらの目標を達成するためにどのように連携するかについての概要を示す2つの新しいランディングページを作成しました。これにより、関連するドキュメントへのリンクを使用してさらに進むことができます。
+
+[Microsoft の microsoft Information Protection (365)](protect-information.md)<br>
+[Microsoft 365 の microsoft Information ガバナンス](manage-Information-governance.md)
+
+### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>高度な電子情報開示: 状況には、非 custodial データソースを追加する
+
+保管担当者に関連付けられていないケースにデータを追加します ( [非 custodial データソース](non-custodial-data-sources.md)として知られています)。 この非 wi-fi ダイヤルデータを保持する必要がある場合は、新しい高度なインデックス作成機能を使用することができます。
+
+### <a name="data-connectors-hr-connector-enhancements"></a>データコネクタ: HR コネクタの拡張機能
+
+(プレビュー)新しいバージョンの [HR コネクタ](import-hr-data.md) を使用すると、ジョブレベルの変更、業績評価、およびパフォーマンス向上計画に関連するデータをインポートできます。 このデータは、いくつかの [insider リスクポリシー](insider-risk-management-policies.md) で、関連するアクティビティを検出するために使用できます。
+
+### <a name="retention-labels-new-support-for-email"></a>保持ラベル: 新しいサポート電子メール
+
+メッセージがラベル付けされたときにに基づいてメールの保持を開始するための [保持ラベル](retention.md#retention-labels) を作成できるようになりました。 これは、アイテムの送信日時に基づいて保持される予定表アイテムには適用されません。
+
+### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>機密ラベル: 新機能と改善点
+
+- (プレビュー)ラベルの暗号化設定を構成する場合は、 [二重のキー暗号化](encryption-sensitivity-labels.md#double-key-encryption) を使用してラベル付きファイルや電子メールを保護するための新しいオプションを探します。
+- 機密ラベルを作成または削除したり、ラベルポリシーを作成、編集、または削除するときに、変更が1時間以内にすべてのユーザー、アプリ、およびサービスに同期されるようになりました。
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -293,20 +319,3 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 ### <a name="update-to-data-investigations"></a>データ調査への更新
 
 データの調査を実行すると、元の場所からアイテムを削除できるようになります。 これは、組織全体の Exchange メールボックス、SharePoint サイト、および OneDrive アカウントからアイテムを削除できることを意味します。 アイテムを証拠として収集したため、証拠セットに保存されたアイテムのコピーが、さらに参考になるか、参照として保持することができます。 [詳細情報](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) データの調査を実行すると、元の場所からアイテムを削除できるようになります。 これは、組織全体の Exchange メールボックス、SharePoint サイト、および OneDrive アカウントからアイテムを削除できることを意味します。 アイテムを証拠として収集したため、証拠セットに保存されたアイテムのコピーが、さらに参考になるか、参照として保持することができます。 詳細について [は、「Microsoft 365 のデータ流出インシデントの管理」](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) を参照してください。 
-
-## <a name="july-2019"></a>2019 年 7 月
-
-### <a name="new-admin-roles"></a>新しい管理者の役割
-
-組織のセキュリティとコンプライアンスを管理するために、2つの新しい管理者の役割をリリースしました。すべての友人に連絡します。
-
-- **コンプライアンスデータ管理者**。この役割を持つユーザーは、Microsoft 365 コンプライアンスセンター、Microsoft 365 管理センター、および Azure のデータを保護および追跡するためのアクセス許可を持っています。 また、Exchange 管理センター、コンプライアンスマネージャー、Teams & Skype for Business 管理センターを管理したり、Azure および Microsoft 365 のサポートチケットを作成したりすることもできます。
-- **セキュリティオペレーター**。 この役割を持つユーザーは、通知を管理し、Microsoft 365 セキュリティセンター、Azure Active Directory、Id 保護、特権 Id 管理、および Office 365 Security & コンプライアンスセンターのすべてを含む、セキュリティ関連機能へのグローバルな読み取り専用アクセスを持つことができます。
-
-[これらの役割の詳細情報](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
-
-### <a name="search-and-filtering-for-reports"></a>レポートの検索とフィルター処理
-
-必要なレポートを見つけるために、大量のレポートをスクロールする必要はありません。 これで、(タイトルに基づいて) レポートを検索し、「ラベル」や「コンプライアンス」、「Office 365」や「Microsoft Cloud App Security」などのソースのカテゴリにフィルターを適用することができます。
-
-![適用されたフィルターを使用したレポートの検索とフィルターのボタンの画面キャプチャ](../media/mcc_report_filtering.png)
