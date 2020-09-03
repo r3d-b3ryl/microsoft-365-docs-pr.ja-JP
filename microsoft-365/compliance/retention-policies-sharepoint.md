@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127404"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315790"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -71,7 +71,7 @@ SharePoint と OneDrive では、保持をサポートするためにアイテ�
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>サイト コレクション内のドキュメントのバージョンによる保持のしくみ
 
-バージョン管理は、SharePoint および OneDrive のすべてのドキュメント ライブラリの機能です。 規定ではバージョン管理は少なくとも 500 のメジャー バージョンを保持しますが、この制限は増やすことができます。 詳細については、「[リストまたはライブラリのバージョン管理を有効にし、構成する](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)」を参照してください。
+バージョン管理は、SharePoint および OneDrive のすべてのドキュメント ライブラリの機能です。 規定ではバージョン管理は少なくとも 500 のメジャー バージョンを保持しますが、この制限は増やすことができます。 詳細については、「[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)」および「[リストとライブラリでバージョン管理が機能するしくみ](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247)」を参照してください。
   
 保持のみ設定は、SharePoint サイト コレクションまたは OneDrive アカウント内にあるドキュメントのすべてのバージョンを保持します。 保留または保持のみの保持設定の対象となるドキュメントが初めて編集されると、オリジナル ドキュメントのバージョンがアイテム保管ライブラリにコピーされます。 保留または保持のみの設定の対象となるドキュメントが削除されると、バージョン管理が有効である場合は、すべてのバージョンがアイテム保管ライブラリにコピーされます。 アイテム保管ライブラリ内のドキュメントの各バージョンは、独自の保持期間を持つ個別のアイテムとして存在します。
   
@@ -81,6 +81,10 @@ SharePoint と OneDrive では、保持をサポートするためにアイテ�
 
 > [!NOTE]
 > 保存されたバージョンの SharePoint および OneDrive ドキュメントは、eDiscovery ツールで検索できません。
+
+保持ポリシー (または法的な保留) の対象となるアイテムの場合、ドキュメントの保持期間に達するまで、ドキュメントライブラリのバージョン管理の制限は無視されます。 このシナリオでは、古いバージョンは自動的には削除されず、ユーザーはバージョンを削除できません。
+
+これは、保持ポリシーがサイトに適用されていない場合の保持ラベルには当てはまりません。 その代わり、新しいバージョンに対応するために古いバージョンが自動的に削除されるようにバージョン管理の制限が守られますが、ユーザーは引き続きバージョンを削除できません。
 
 ## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合
 
