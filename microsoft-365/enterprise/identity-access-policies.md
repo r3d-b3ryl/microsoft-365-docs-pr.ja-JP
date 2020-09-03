@@ -1,6 +1,6 @@
 ---
 title: 一般的な id およびデバイスアクセスポリシー-Microsoft 365 for enterprise |Microsoft Docs
-description: ID およびデバイス アクセス ポリシーと構成を適用する方法に関する Microsoft の推奨事項のポリシーを説明します。
+description: 推奨される一般的な id およびデバイスアクセスポリシーと構成について説明します。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898118"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332111"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 この記事では、Azure AD Application Proxy で公開されているオンプレミスアプリケーションを含む、クラウドサービスへのアクセスを保護するための一般的な推奨ポリシーについて説明します。 
@@ -32,8 +32,8 @@ ms.locfileid: "46898118"
 
 次の図は、推奨されるポリシーセットを示しています。 この図は、各ポリシーが適用される保護層と、それらのポリシーが Pc、電話、タブレット、または両方のカテゴリのデバイスに適用されるかどうかを示しています。 また、これらのポリシーが構成されている場所も示されます。
 
-[ ![ Id とデバイスのアクセスを構成するための一般的なポリシー](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [この画像の大規模なバージョンの表示](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ Id とデバイスのアクセスを構成するための一般的なポリシー](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [この画像の大規模なバージョンの表示](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 この記事の残りの部分では、これらのポリシーを構成する方法について説明します。 
 
@@ -63,13 +63,13 @@ ms.locfileid: "46898118"
 
 次の図は、ユーザーの割り当てと除外の例を示しています。
 
-![MFA ルールのユーザー割り当てと除外の例](../media/identity-access-policies-assignment.png)
+![MFA ルールのユーザー割り当てと除外の例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 図では、"Top secret プロジェクト X teams *" には、MFA を*必要とする条件付きアクセスポリシーが割り当てられています。 ユーザーにより高度な保護を適用する場合は、慎重に行います。 このプロジェクトチームのメンバーは、厳しく規制されたコンテンツを表示していない場合でも、ログオンするたびに2つの形式の認証を提供する必要があります。  
 
-これらの推奨事項の一部として作成されたすべての Azure AD グループは、Microsoft 365 グループとして作成する必要があります。 これは、SharePoint Online のドキュメントをセキュリティで保護する場合の Azure Information Protection (AIP) の展開で特に重要です。
+これらの推奨事項の一部として作成されたすべての Azure AD グループは、Microsoft 365 グループとして作成する必要があります。 これは、SharePoint Online でドキュメントを保護するときに機密ラベルを展開する場合に特に重要です。
 
-![Microsoft 365 グループを作成するための画面キャプチャ](../media/identity-device-AAD-groups.png)
+![Microsoft 365 グループを作成するための画面キャプチャ](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>サインインリスクに基づいて MFA を必須にする

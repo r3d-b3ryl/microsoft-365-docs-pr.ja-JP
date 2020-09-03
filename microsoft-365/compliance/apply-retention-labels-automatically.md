@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルを作成して自動発行します。
-ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648806"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315819"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -38,8 +38,8 @@ ms.locfileid: "46648806"
     
 - ユーザーはデータ ガバナンス ポリシーについて把握する必要がなくなるので、仕事に集中できる。
     
-コンテンツに機密情報、キーワード、[トレーニング可能な分類子](classifier-getting-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
-    
+コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-getting-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
+
 保持ラベルを自動的に適用するプロセスは、次の条件に基づいています。
 
 ![自動適用ラベルの役割とタスクの図](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -113,7 +113,7 @@ ms.locfileid: "46648806"
 
 - [特定の種類の機密情報](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [作成したクエリに一致する特定のキーワード](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [作成したクエリに一致する特定のキーワードまたは検索可能なプロパティ](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [トレーニング可能な分類子の一致](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
@@ -135,30 +135,28 @@ ms.locfileid: "46648806"
   
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>キーワードまたは検索可能なプロパティによるコンテンツへの自動適用ラベル
 
-特定の条件を満たすコンテンツにラベルを自動的に適用できます。現在利用可能な条件では、特定の単語、フレーズ、または検索可能なプロパティの値を含むコンテンツへのラベルの適用がサポートされています。AND、OR、NOT などの検索演算子を使用してクエリを絞り込むことができます。
+特定の単語、フレーズ、または検索可能なプロパティの値を含むクエリを使用して、コンテンツにラベルを自動で適用できます。AND、OR、NOT などの検索演算子を使用してクエリを絞り込むことができます。
 
-検索可能なプロパティのラベルを自動適用しているときに、管理プロパティのエイリアスをクエリで使用することはできません。 RefinableString01 のように、管理プロパティの実際の名前である必要があります。
+![クエリ エディター](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
-クエリ構文の詳細については、次を参照してください。
+キーワード クエリ言語 (KQL) 構文の詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」をご覧ください。
 
-- [キーワード クエリ言語 (KQL) 構文のリファレンス](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-クエリ ベースのラベルは検索インデックスを使用してコンテンツを特定します。有効な検索可能なプロパティの詳細については、以下を参照してください。
+クエリベースのラベルでは、検索インデックスを使用してコンテンツを識別します。 使用できる検索可能なプロパティの詳細については、以下を参照してください。
 
 - [コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)
 - [クロールされたプロパティと管理プロパティの概要 (SharePoint Server)](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
+> [!NOTE]
+> SharePoint 管理プロパティはエイリアスをサポートしますが、保持ラベルを構成するときにこれらを使用しないでください。 「RefinableString01」のように、管理プロパティの実際の名前を常に指定します。
+
 クエリの例:
 
-- Exchange
-    - subject:"Quarterly Financials"
-    - 受信者: garthf<!--nolink-->@contoso.com
-- SharePoint および OneDrive
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![クエリ エディター](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-
+| Workload | 例 |
+|:-----|:-----|
+|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `recipients:garthf@contoso.com` |
+|SharePoint | `contenttype:contract` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 の人事管理
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、microsoft 365 の Microsoft 要員の審査方法の概要について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66155eac8ffbab1401a1d0487261b37c8a7841e3
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 65f2afdc48f08e0bb67c2c842f9160b676fcb039
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692105"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332763"
 ---
 # <a name="microsoft-365-personnel-controls"></a>Microsoft 365 の人事管理
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 データの不変性
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Microsoft 365 が検出可能な形式でデータを保持して、法令遵守、内部ガバナンスの要件、および訴訟のリスクに対処する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c070eea4498aca89d7cdb8fea233d9b9596491a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ce3b3f0f5036ab76be714747d7e95fe86139dd75
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691822"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331922"
 ---
 # <a name="immutability-in-microsoft-365"></a>Microsoft 365 での不変性
 

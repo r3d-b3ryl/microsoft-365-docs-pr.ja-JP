@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 の内部ログの Microsoft 365 エンジニアリング
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 エンジニアリングチームの内部ログのしくみについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696235"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332510"
 ---
-# <a name="internal-logging-for-microsoft-365-engineering"></a>Microsoft 365 エンジニアリングの内部ログ
+# <a name="internal-logging-for-microsoft-365-engineering"></a>Microsoft 365 のエンジニアリングのための内部ログ記録
 
 お客様が利用できるイベントとログデータに加えて、microsoft の microsoft 365 エンジニアが利用できる内部ログデータ収集システムもあります。 Microsoft 365 サーバーから、Cosmos と呼ばれる内部の大規模なデータコンピューティングサービスに、さまざまな種類のログデータがアップロードされています。 各サービスチームは、それぞれのサーバーからの監査ログを Cosmos データベースにアップロードして、集約と分析を行います。 このデータ転送は、「Office データローダー (ODL)」と呼ばれる独自の自動化ツールを使用して、明示的に承認されたポートとプロトコルに基づいて、FIPS 140-2 で検証された TLS 接続を介して行われます。 Microsoft 365 で監査レコードを収集して処理するために使用されるツールでは、元の監査レコードのコンテンツや時間の順序を永続的に変更したり、取り消したりすることはできません。
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 分離コントロール
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Microsoft 365 で分離コントロールが動作する方法について説明します。これにより、必要に応じてサービス間での相互運用を行うことができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15805c2fb57cbcaa33c5ba24dcbcaa378feea4bc
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bb0989f19002267ab92bf184a12a4076f753580e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691955"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332378"
 ---
 # <a name="microsoft-365-isolation-controls"></a>Microsoft 365 分離コントロール 
 

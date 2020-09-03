@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 の管理アクセス制御
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: この記事では、Microsoft 365 の管理アクセス制御とデータ分類の概要について説明します。
-ms.openlocfilehash: b5063f89e89b6cffffda53a5df3088a80f89c242
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 817a5907566435d021fe78d89b5c9476c04318d0
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691673"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332594"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Microsoft 365 の管理アクセス制御 
 
@@ -94,8 +94,8 @@ Microsoft 365 では、オンプレミス環境でのデータ管理と同じ方
 
 ## <a name="related-links"></a>関連リンク
 
-- [分離コントロール](microsoft-365-isolation-controls.md)
-- [人事管理](microsoft-365-personnel-controls.md)
+- [分離の制御](microsoft-365-isolation-controls.md)
+- [担当者の制御](microsoft-365-personnel-controls.md)
 - [テクノロジコントロール](microsoft-365-technology-controls.md)
 - [アクセス制御の監視と監査](microsoft-365-monitoring-and-auditing-access-controls.md)
 - [Yammer Enterprise でのアクセス制御](microsoft-365-yammer-enterprise-access-controls.md)

@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: '概要: microsoft 365 の高可用性フェデレーション認証をホストするように Microsoft Azure インフラストラクチャを構成します。'
-ms.openlocfilehash: a99259e8c60346665f76aeba3a8a440e0f9061f0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692134"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332342"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性フェデレーション認証のフェーズ 1: Azure を構成する
 
@@ -57,7 +57,7 @@ Azure のコンポーネントの構成を開始する前に、次に示す表�
     
 2. その結果のビットを 10 進数に変換して、ゲートウェイ サブネットのサイズに設定されたプレフィックス長のアドレス空間として表現します。
     
-この計算を実行する PowerShell コマンドブロックおよび C# または Python コンソールアプリケーションについては、「 [Azure gateway のサブネットのアドレス空間計算ツール](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) 」を参照してください。
+この計算を実行する PowerShell コマンドブロックおよび C# または Python コンソールアプリケーションについては、「 [Azure gateway のサブネットのアドレス空間計算ツール](address-space-calculator-for-azure-gateway-subnets.md) 」を参照してください。
   
 これに該当するアドレス空間については、仮想ネットワークのアドレス空間に基づいて、IT 部門と協議して決定してください。
   

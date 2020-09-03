@@ -1,7 +1,7 @@
 ---
 title: サービス拒否攻撃に対する防御の Microsoft 365 コア原則
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,14 +15,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft は、サービス拒否 (DoS) 攻撃に対する防御において、吸収、検出、軽減の中心となる原則を活用する方法について説明します。
-ms.openlocfilehash: b04ec717f7c97e44c6ed4011156666e8c27f06c0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb3446570dd8e99ccdb3005a6a7c90ca90a81aee
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691823"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331910"
 ---
-# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する防御の中心となる原則
+# <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>サービス拒否攻撃に対する防御の主要な原則
 
 ネットワークベースの DoS 攻撃に対する防御の3つの主要な原則は、配賦、検出、および軽減です。 自動処理は検出の前に発生し、軽減の前に検出が行われます。 配賦は、DoS 攻撃に対して最適な防衛策です。 攻撃を検出できない場合は、軽減することはできません。 しかし、最小の DoS 攻撃を吸収できない場合でも、攻撃を検出するのに十分に長い時間がかかることはありません。
 

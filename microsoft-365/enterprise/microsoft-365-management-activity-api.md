@@ -1,7 +1,7 @@
 ---
 title: Office 365 管理アクティビティ API
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、Office 365 Management Activity API と、アクティビティログから提供される情報についての概要を簡単に確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ea08673f4c26c9ee4b7093ba420b69bed91abc81
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8d51f27f28b0adb84ef43004664ef310567263b9
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692097"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332306"
 ---
 # <a name="office-365-management-activity-api"></a>Office 365 管理アクティビティ API
 

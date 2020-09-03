@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 の電子情報開示と検索機能の概要
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 監査の使用と透明性を実現するための、Microsoft 365 内の電子情報開示機能およびその他の検索機能の概要。
-ms.openlocfilehash: 6a30e1aa687807d61b788bd75fcc63129ff0aa0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692065"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331861"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 の電子情報開示と検索機能の概要 
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 の監視および監査アクセス制御
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: '概要: Microsoft 365 で利用可能なさまざまな監視および監査アクセス制御の概要について説明します。'
-ms.openlocfilehash: f1302c4056bfd605e35aae08d8f5355f8d204db2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ba79ba2263940e5677ada412f467a429e584b8ff
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691947"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332294"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-microsoft-365"></a>Microsoft 365 でのアクセス制御の監視と監査
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方かを積極的に決定できます。コンテンツを保持してから削除する、組織全体または特定の場所またはユーザーに単一のポリシーを適用する、すべてのコンテンツまたは特定の条件を満たすコンテンツにポリシーを適用する、などです。
-ms.openlocfilehash: 6a22c1020c7e6d6c1fce4f80ce40da353b095e64
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903862"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315851"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -210,9 +210,7 @@ Outlook のフォルダー **[会話履歴]** は、Skype のアーカイブに�
 ### <a name="identify-content-that-contains-specific-keywords"></a>特定のキーワードを含むコンテンツを特定する
 
 特定の条件を満たすコンテンツにのみアイテム保持ポリシーを適用し、そのコンテンツだけを保持することができます。 利用できる条件で、特定の単語または語句を含むコンテンツにアイテム保持ポリシーを適用するようになります。 AND、OR、NOT などの検索演算子を使用して、クエリを絞り込むことができます。 このような演算子の詳細については、「[コンテンツ検索のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
-  
-検索可能なプロパティ (**件名:** など) の追加については間もなくサポートされます。
-  
+
 クエリベースの保持では、検索インデックスを使用してコンテンツを識別します。
   
 ![クエリ エディター](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 クライアントアプリケーションのサポート-証明書ベースの認証
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 クライアントアプリによる証明書ベースの認証のサポートに関する詳細を確認します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 870e6f39c054752a2a07848c34eecd0996e1816c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 89ae78b4cf5c5bb3cfb1575a5db76047f4299239
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692219"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332630"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Microsoft 365 クライアントアプリケーションのサポート-証明書ベースの認証
 
@@ -49,7 +49,7 @@ Microsoft 365 でのプラットフォームサポートの詳細については
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | ![Access アイコン](../media/o365-access-64x64.png) <br> [Access](https://products.office.com/access) | ![Azure アイコン](../media/o365-azure-64x64.png) <br> [Azure AD <br> ポータル ](https://azure.microsoft.com/features/azure-portal/) | ![会社のポータルのアイコン](../media/o365-microsoft-64x64.png) <br> [会社の <br> ポータル ](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal) | ![Delve アイコン](../media/o365-delve-64x64.png) <br> [Delve](https://products.office.com/business/intelligent-search) | ![Dynamics 365 アイコン](../media/o365-dynamics365-64x64.png) <br> [Dynamics 365](https://dynamics.microsoft.com) 
-| ![エッジアイコン](../media/o365-edge-64x64.png) <br> [Edge](https://www.microsoft.com/windows/microsoft-edge) | ![Excel アイコン](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Forms アイコン](../media/o365-forms-64x64.png) <br> [Forms](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Kaizala アイコン](../media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com アイコン](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
+| ![エッジアイコン](../media/o365-edge-64x64.png) <br> [下辺](https://www.microsoft.com/windows/microsoft-edge) | ![Excel アイコン](../media/o365-excel-64x64.png) <br> [Excel](https://products.office.com/excel) | ![Forms アイコン](../media/o365-forms-64x64.png) <br> [Forms](https://flow.microsoft.com/connectors/shared_microsoftforms/microsoft-forms/) | ![Kaizala アイコン](../media/o365-kaizala-64x64.png) <br> [Kaizala](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com アイコン](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) 
 | ![Office 365 管理者アイコン](../media/o365-o365admin-64x64.png) <br> [Microsoft 365 <br> 管理者](https://products.office.com/business/manage-office-365-admin-app) | ![レンズアイコン](../media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive for Business アイコン](../media/o365-OneDrive-64x64.png) <br> [OneDrive<sup>1</sup>](https://products.office.com/onedrive-for-business/online-cloud-storage) |  ![OneNote アイコン](../media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook アイコン](../media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) 
 | ![Planner アイコン](../media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps アイコン](../media/o365-powerapps-64x64.png) <br> [PowerApps<sup>3</sup>](https://powerapps.microsoft.com) | ![電源の自動化アイコン](../media/o365-flow-64x64.png) <br> [電源の <br> 自動化](https://flow.microsoft.com) | ![PowerBI アイコン](../media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com)| ![PowerPoint アイコン](../media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Project アイコン](../media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher アイコン](../media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint アイコン](../media/o365-sharepoint-64x64.png) <br> [Sharepoint](https://products.office.com/sharepoint) | ![Skype for Business アイコン](../media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> business](https://www.skype.com/business/) | ![付箋アイコン](../media/o365-stickynotes-64x64.png) <br> [付箋](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) 
