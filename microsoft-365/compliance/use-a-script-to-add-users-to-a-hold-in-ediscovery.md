@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: セキュリティ & コンプライアンスセンターの電子情報開示ケースに関連付けられた新しい保留リストにメールボックス & OneDrive for Business サイトを追加するスクリプトを実行する方法について説明します。
-ms.openlocfilehash: 55ad3c8c8a4a6b77df4c2d3409fee6e5b43cc5f6
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391487"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357677"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>スクリプトを使用して、コア電子情報開示ケースの保留リストにユーザーを追加する
 
 セキュリティ & コンプライアンスセンターでは、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できる PowerShell コマンドレットが提供されています。 現時点では、セキュリティ & コンプライアンスセンターで電子情報開示ケースツールを使用して、大量の保管担当者コンテンツの場所を保持することにより、時間と準備がかかります。 たとえば、ホールドを作成する前に、保留にする各 OneDrive for Business サイトの URL を収集する必要があります。 その後、保持するユーザーごとに、メールボックスとその OneDrive for Business サイトを保留リストに追加する必要があります。 セキュリティ & コンプライアンスセンターの今後のリリースでは、この操作が簡単になりました。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。
   
-スクリプトによって、組織の個人用サイトのドメインの名前 (たとえば、URL 内の**contoso** 、 https://contoso-my.sharepoint.com) 既存の電子情報開示ケースの名前、ケースに関連付けられた新しい保留の名前、保留するユーザーの電子メールアドレスのリスト、クエリベースの保持を作成する場合に使用する検索クエリ) の入力を求められます。 次に、スクリプトは、リスト内の各ユーザーの OneDrive for Business サイトの URL を取得し、新しいホールドを作成して、リスト内の各ユーザーのメールボックスと OneDrive for business サイトを保留リストに追加します。 このスクリプトは、新しいホールドに関する情報を含むログファイルも生成します。
+スクリプトによって、組織の個人用サイトのドメインの名前 (たとえば、URL 内の **contoso** 、 https://contoso-my.sharepoint.com) 既存の電子情報開示ケースの名前、ケースに関連付けられた新しい保留の名前、保留するユーザーの電子メールアドレスのリスト、クエリベースの保持を作成する場合に使用する検索クエリ) の入力を求められます。 次に、スクリプトは、リスト内の各ユーザーの OneDrive for Business サイトの URL を取得し、新しいホールドを作成して、リスト内の各ユーザーのメールボックスと OneDrive for business サイトを保留リストに追加します。 このスクリプトは、新しいホールドに関する情報を含むログファイルも生成します。
   
 これを行うには、以下の手順を実行します。
   
@@ -69,7 +69,7 @@ ms.locfileid: "45391487"
 
 最初の手順として、SharePoint Online 管理シェルがローカルコンピューターにまだインストールされていない場合はインストールします。 この手順でシェルを使用する必要はありませんが、手順3で実行するスクリプトに必要な前提条件が含まれているためインストールする必要があります。 これらの前提条件によって、スクリプトは SharePoint Online と通信して、OneDrive for Business サイトの Url を取得できます。
   
-「 [Sharepoint Online 管理シェル Windows PowerShell 環境をセットアップ](https://go.microsoft.com/fwlink/p/?LinkID=286318)する」に移動し、手順1と手順2を実行して、ローカルコンピューターに Sharepoint Online 管理シェルをインストールします。 
+「 [Sharepoint Online 管理シェル Windows PowerShell 環境をセットアップ](https://go.microsoft.com/fwlink/p/?LinkID=286318) する」に移動し、手順1と手順2を実行して、ローカルコンピューターに Sharepoint Online 管理シェルをインストールします。 
 
 ## <a name="step-2-generate-a-list-of-users"></a>手順 2: ユーザーのリストを生成する
 
@@ -81,7 +81,7 @@ ms.locfileid: "45391487"
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-このコマンドを実行した後、テキストファイルを開いて、プロパティ名を含むヘッダーを削除し `PrimarySmtpAddress` ます。 その後、手順3で作成するホールドに追加するユーザーのメールアドレス以外のすべてのメールアドレスを削除します。 電子メールアドレスのリストの前または後に空白行がないことを確認します。
+このコマンドを実行した後、テキストファイルを開いて、プロパティ名を含むヘッダーを削除し  `PrimarySmtpAddress` ます。 その後、手順3で作成するホールドに追加するユーザーのメールアドレス以外のすべてのメールアドレスを削除します。 電子メールアドレスのリストの前または後に空白行がないことを確認します。
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>手順 3: スクリプトを実行して保留リストを作成し、ユーザーを追加する
 
@@ -89,13 +89,13 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   
 - **ユーザーの資格情報:** このスクリプトは、資格情報を使用して、リモート PowerShell を使用してセキュリティ & コンプライアンスセンターに接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーリストの OneDrive for Business Url を取得します。
 
-- **個人用サイトのドメインの名前:** 個人用サイトのドメインは、組織内のすべての OneDrive for Business サイトを含むドメインです。 たとえば、個人用サイトのドメインの URL がの場合は、 **https://contoso-my.sharepoint.com** `contoso` スクリプトで個人用サイトのドメインの名前の入力を求められたときに入力します。
+- **個人用サイトのドメインの名前:** 個人用サイトのドメインは、組織内のすべての OneDrive for Business サイトを含むドメインです。 たとえば、個人用サイトのドメインの URL がの場合は、 **https://contoso-my.sharepoint.com**  `contoso` スクリプトで個人用サイトのドメインの名前の入力を求められたときに入力します。
 
 - **ケースの名前:** 既存のケースの名前。 このスクリプトは、このケースに関連付けられている新しいホールドを作成します。
 
 - **保留の名前:** スクリプトが作成し、指定されたケースに関連付けられているホールドの名前。
 
-- **クエリベースの保持の検索クエリ:** クエリベースの保持を作成して、指定した検索条件に一致するコンテンツのみを保持することができます。 すべてのコンテンツを保持するには、検索クエリの入力を求められたときに**enter**キーを押します。
+- **クエリベースの保持の検索クエリ:** クエリベースの保持を作成して、指定した検索条件に一致するコンテンツのみを保持することができます。 すべてのコンテンツを保持するには、検索クエリの入力を求められたときに **enter** キーを押します。
 
 - **保留をオンまたはオフにします。** スクリプトを作成した後でホールドを有効にしたり、スクリプトで保持を有効にせずにホールドを作成したりすることができます。 スクリプトでホールドをオンにしていない場合は、後でセキュリティ & コンプライアンスセンターで有効にするか、次の PowerShell コマンドを実行します。
 
@@ -107,7 +107,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **ユーザーのリストを含むテキストファイルの名前**-手順2で保留に追加するユーザーの一覧が含まれているテキストファイルの名前。 このファイルがスクリプトと同じフォルダーにある場合は、ファイルの名前 (たとえば、HoldUsers.txt) を入力するだけです。 テキストファイルが別のフォルダーにある場合は、ファイルの完全なパス名を入力します。
+- **ユーザーのリストを含むテキストファイルの名前** -手順2で保留に追加するユーザーの一覧が含まれているテキストファイルの名前。 このファイルがスクリプトと同じフォルダーにある場合は、ファイルの名前 (たとえば、HoldUsers.txt) を入力するだけです。 テキストファイルが別のフォルダーにある場合は、ファイルの完全なパス名を入力します。
 
 スクリプトが要求する情報を収集したら、最後の手順として、スクリプトを実行して新しいホールドを作成し、それにユーザーを追加します。
   
@@ -296,7 +296,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. スクリプトによってプロンプトが表示される情報を入力します。
 
-   このスクリプトは、セキュリティ & コンプライアンスセンターの PowerShell に接続し、電子情報開示ケースで新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for Business を追加します。 セキュリティ & コンプライアンスセンターの [**電子情報開示**] ページに移動して、新しいホールドを表示することができます。 
+   このスクリプトは、セキュリティ & コンプライアンスセンターの PowerShell に接続し、電子情報開示ケースで新しいホールドを作成し、リスト内のユーザーのメールボックスと OneDrive for Business を追加します。 セキュリティ & コンプライアンスセンターの [ **電子情報開示** ] ページに移動して、新しいホールドを表示することができます。 
 
 スクリプトの実行が完了すると、次のログファイルが作成され、スクリプトが配置されているフォルダーに保存されます。
   
@@ -304,6 +304,6 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **LocationsNotOnHold.txt:** スクリプトが保留になっていないメールボックスと OneDrive for Business サイトの一覧が含まれています。 ユーザーがメールボックスを持っているが、OneDrive for Business サイトを持っていない場合、ユーザーは保留になっていない OneDrive for Business サイトの一覧に含まれています。
 
-- **GetCaseHoldPolicy.txt:** 新しいホールドの**CaseHoldPolicy**コマンドレットの出力が含まれています。新しいホールドを作成した後にスクリプトが実行されます。 このコマンドレットによって返される情報には、メールボックスと OneDrive for Business サイトが保持されたユーザーの一覧、および保留が有効か無効かが含まれます。 
+- **GetCaseHoldPolicy.txt:** 新しいホールドの **CaseHoldPolicy** コマンドレットの出力が含まれています。新しいホールドを作成した後にスクリプトが実行されます。 このコマンドレットによって返される情報には、メールボックスと OneDrive for Business サイトが保持されたユーザーの一覧、および保留が有効か無効かが含まれます。 
 
-- **GetCaseHoldRule.txt:** 新しいホールドの**new-caseholdrule**コマンドレットの出力が含まれています。新しいホールドを作成した後にスクリプトが実行されます。 このコマンドレットによって返される情報には、クエリベースの保持を作成するためにスクリプトを使用した場合の検索クエリが含まれています。
+- **GetCaseHoldRule.txt:** 新しいホールドの **new-caseholdrule** コマンドレットの出力が含まれています。新しいホールドを作成した後にスクリプトが実行されます。 このコマンドレットによって返される情報には、クエリベースの保持を作成するためにスクリプトを使用した場合の検索クエリが含まれています。

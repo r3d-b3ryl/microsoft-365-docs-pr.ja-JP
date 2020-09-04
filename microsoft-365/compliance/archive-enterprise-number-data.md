@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、TeleMessage Enterprise 番号 Archiver から SMS および MMS データをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 5e82d5a83b80987837cba323342e60c6d2b31b72
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: d2e871f6d2515ac49018c6710689517a7bde0985
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282727"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47362036"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data-preview"></a>エンタープライズ番号データをアーカイブするようにコネクタを設定する (プレビュー)
 
@@ -40,7 +40,7 @@ TeleMessage Enterprise Number Archiver connector データがユーザーのメ�
 
 ## <a name="before-you-begin"></a>はじめに
 
-エンタープライズ番号のアーカイバデータをアーカイブするために必要な実装手順の多くは、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
+エンタープライズ番号の Archiver データをアーカイブするために必要ないくつかの実装手順は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
 
 - [TeleMessage からエンタープライズ電話番号 Archiver サービス](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)を注文して、組織の有効な管理アカウントを取得します。 コンプライアンスセンターでコネクタを作成するときに、このアカウントにサインインする必要があります。
 
@@ -48,7 +48,7 @@ TeleMessage Enterprise Number Archiver connector データがユーザーのメ�
 
 - 従業員の携帯電話に TeleMessage Enterprise 番号 Archiver アプリをインストールしてアクティブ化します。
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この同意を得るには、コネクタを作成する必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 Bell ネットワークコネクタを正常に作成するには、この手順を完了する必要があります。
+- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この同意を得るには、コネクタを作成する必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 Bell ネットワークコネクタを正常に作成するには、この手順を完了する必要があります。
 
 - エンタープライズ番号アーカイバコネクタを作成するユーザーには、Exchange Online の Mailbox Import Export 役割が割り当てられている必要があります。 これは、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
 
@@ -82,4 +82,4 @@ TeleMessage Enterprise Number Archiver connector データがユーザーのメ�
 
 ## <a name="known-issues"></a>既知の問題
 
-- コネクタは、10 MB を超えるアイテムをインポートしません。
+- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。

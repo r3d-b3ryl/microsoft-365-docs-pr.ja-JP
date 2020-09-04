@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、ユーザーのグループのメールボックスと OneDrive for Business サイトを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90aab661992ae2f0c19d18939191230dc0469eaa
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: e3a10913cc4d8618e3d25bdf34e30c9d55a43324
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527363"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357799"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
 
-セキュリティ & コンプライアンスセンターでは、時間がかかる電子情報開示関連のタスクを自動化するための Windows PowerShell コマンドレットが多数提供されています。 現在、セキュリティ & コンプライアンスセンターでコンテンツ検索を作成して、大量の保管担当者コンテンツの場所を検索するには時間と準備がかかります。 検索を作成する前に、各 OneDrive for Business サイトの URL を収集し、各メールボックスと OneDrive for Business サイトを検索に追加する必要があります。 今後のリリースでは、これはセキュリティ & コンプライアンスセンターで行うのが容易になります。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。 このスクリプトは、組織の個人用サイトドメインの名前 (たとえば、URL 内の**contoso** `https://contoso-my.sharepoint.com` )、ユーザーの電子メールアドレスの一覧、新しいコンテンツ検索の名前、使用する検索クエリを入力するように求めます。 このスクリプトは、リスト内の各ユーザーの OneDrive for Business URL を取得し、ユーザーが指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
+セキュリティ & コンプライアンスセンターでは、時間がかかる電子情報開示関連のタスクを自動化するための Windows PowerShell コマンドレットが多数提供されています。 現在、セキュリティ & コンプライアンスセンターでコンテンツ検索を作成して、大量の保管担当者コンテンツの場所を検索するには時間と準備がかかります。 検索を作成する前に、各 OneDrive for Business サイトの URL を収集し、各メールボックスと OneDrive for Business サイトを検索に追加する必要があります。 今後のリリースでは、これはセキュリティ & コンプライアンスセンターで行うのが容易になります。 その後、この記事のスクリプトを使用してこのプロセスを自動化できます。 このスクリプトは、組織の個人用サイトドメインの名前 (たとえば、URL 内の **contoso** `https://contoso-my.sharepoint.com` )、ユーザーの電子メールアドレスの一覧、新しいコンテンツ検索の名前、使用する検索クエリを入力するように求めます。 このスクリプトは、リスト内の各ユーザーの OneDrive for Business URL を取得し、ユーザーが指定した検索クエリを使用して、リスト内の各ユーザーのメールボックスと OneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
   
 ## <a name="permissions-and-script-information"></a>アクセス許可とスクリプト情報
 
@@ -44,33 +44,33 @@ ms.locfileid: "46527363"
 
 最初の手順として、SharePoint Online 管理シェルをインストールします。 この手順でシェルを使用する必要はありませんが、手順3で実行するスクリプトに必要な前提条件が含まれているためインストールする必要があります。 これらの前提条件によって、スクリプトは SharePoint Online と通信して、OneDrive for Business サイトの Url を取得できます。
   
-「 [Sharepoint Online 管理シェル Windows PowerShell 環境をセットアップ](https://go.microsoft.com/fwlink/p/?LinkID=286318)する」に移動し、手順1と手順2を実行して、Sharepoint Online 管理シェルをインストールします。
+「 [Sharepoint Online 管理シェル Windows PowerShell 環境をセットアップ](https://go.microsoft.com/fwlink/p/?LinkID=286318) する」に移動し、手順1と手順2を実行して、Sharepoint Online 管理シェルをインストールします。
   
 ## <a name="step-2-generate-a-list-of-users"></a>手順 2: ユーザーのリストを生成する
 
 手順3のスクリプトは、メールボックスと OneDrive アカウントでユーザーのリストを検索するコンテンツ検索を作成します。 テキストファイルに電子メールアドレスを入力することも、Windows PowerShell でコマンドを実行して電子メールアドレスの一覧を取得し、それをファイルに保存することもできます (手順3でスクリプトを保存するのと同じフォルダーに格納されます)。
   
-次の[Exchange Online の PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)コマンドでは、を実行して、組織内のすべてのユーザーの電子メールアドレスの一覧を取得し、それをという名前のテキストファイルに保存することができ `Users.txt` ます。 
+次の [Exchange Online の PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) コマンドでは、を実行して、組織内のすべてのユーザーの電子メールアドレスの一覧を取得し、それをという名前のテキストファイルに保存することができ `Users.txt` ます。 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-このコマンドを実行した後、必ずファイルを開いて、プロパティ名を含むヘッダーを削除してください `PrimarySmtpAddress` 。 テキストファイルには、電子メールアドレスのリストのみを含める必要があります。それ以外の場合は何も指定しないでください。 電子メールアドレスのリストの前または後に空白行がないことを確認します。
+このコマンドを実行した後、必ずファイルを開いて、プロパティ名を含むヘッダーを削除してください  `PrimarySmtpAddress` 。 テキストファイルには、電子メールアドレスのリストのみを含める必要があります。それ以外の場合は何も指定しないでください。 電子メールアドレスのリストの前または後に空白行がないことを確認します。
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>手順 3: スクリプトを実行して検索を作成および開始する
 
 この手順でスクリプトを実行すると、次の情報を入力するように求めるメッセージが表示されます。 スクリプトを実行する前に、この情報を用意しておいてください。
   
-- **ユーザーの資格情報**-スクリプトは、自分の資格情報を使用して SharePoint Online にアクセスして、OneDrive for Business の url を取得し、リモート PowerShell を使用してセキュリティ & コンプライアンスセンターに接続します。 
+- **ユーザーの資格情報** -スクリプトは、自分の資格情報を使用して SharePoint Online にアクセスして、OneDrive for Business の url を取得し、リモート PowerShell を使用してセキュリティ & コンプライアンスセンターに接続します。 
     
-- **個人用サイトのドメインの名前**-個人用サイトのドメインは、組織内のすべての OneDrive for business サイトを含むドメインです。 たとえば、個人用サイトのドメインの URL がの場合は、 **https://contoso-my.sharepoint.com** スクリプトによって、 `contoso` 個人用サイトのドメインの名前を入力するように求めるメッセージが表示されます。 
+- **個人用サイトのドメインの名前** -個人用サイトのドメインは、組織内のすべての OneDrive for business サイトを含むドメインです。 たとえば、個人用サイトのドメインの URL がの場合は、 **https://contoso-my.sharepoint.com** スクリプトによって、  `contoso` 個人用サイトのドメインの名前を入力するように求めるメッセージが表示されます。 
     
-- **手順2のテキストファイルのパス名**。手順2で作成したテキストファイルのパス名。 テキストファイルとスクリプトが同じフォルダーにある場合は、テキストファイルの名前を入力します。 それ以外の場合は、テキストファイルの完全なパス名を入力します。 
+- **手順2のテキストファイルのパス名** 。手順2で作成したテキストファイルのパス名。 テキストファイルとスクリプトが同じフォルダーにある場合は、テキストファイルの名前を入力します。 それ以外の場合は、テキストファイルの完全なパス名を入力します。 
     
-- **コンテンツ検索の名前**-スクリプトによって作成されるコンテンツ検索の名前。 
+- **コンテンツ検索の名前** -スクリプトによって作成されるコンテンツ検索の名前。 
     
-- **検索クエリ**-コンテンツ検索と共に使用される検索クエリが作成され、実行されます。 検索クエリの詳細については、「[コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
+- **検索クエリ** -コンテンツ検索と共に使用される検索クエリが作成され、実行されます。 検索クエリの詳細については、「 [コンテンツ検索のキーワードクエリと検索条件](keyword-queries-and-search-conditions.md)」を参照してください。
 
 
 **このスクリプトを実行するには、以下の手順を実行します。**
@@ -187,4 +187,4 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 検索クエリ (空白のままにすると、コンテンツの場所にあるすべてのアイテムが返されます)。
     
-    このスクリプトは、各 OneDrive for Business サイトの Url を取得し、検索を作成して開始します。 セキュリティ & コンプライアンスセンターの PowerShell で**new-compliancesearch**コマンドレットを実行して、検索の統計と結果を表示するか、またはセキュリティ & コンプライアンスセンターの**コンテンツ検索**ページに移動して、検索に関する情報を表示することができます。 
+    このスクリプトは、各 OneDrive for Business サイトの Url を取得し、検索を作成して開始します。 セキュリティ & コンプライアンスセンターの PowerShell で **new-compliancesearch** コマンドレットを実行して、検索の統計と結果を表示するか、またはセキュリティ & コンプライアンスセンターの **コンテンツ検索** ページに移動して、検索に関する情報を表示することができます。 

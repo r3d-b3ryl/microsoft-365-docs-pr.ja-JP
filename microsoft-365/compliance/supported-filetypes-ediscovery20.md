@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 Advanced eDiscovery でサポートされているファイルの種類の一覧。これには、高度な電子情報開示の OCR 機能でサポートされている画像ファイルの種類が含まれます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4b23e0b0f428c91b13e461eb6514da99e5a69f42
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819157"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357748"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高度な電子情報開示でサポートされているファイルの種類
 
@@ -50,14 +50,14 @@ ms.locfileid: "44819157"
 | ビデオ/m4v | はい | はい | いいえ | はい | いいえ | .m4v |
 ||||||||
 
-## <a name="database"></a>データベース
+## <a name="database"></a>Database
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| アプリケーション/x-msaccess.exe | はい | はい | はい | 不要 | いいえ | .mdb |
+| アプリケーション/x-msaccess.exe | はい | はい | はい | いいえ | いいえ | .mdb |
 ||||||||
 
-## <a name="email"></a>Email
+## <a name="email"></a>メール
 
 | Mime の種類 | ファイルの識別 | メタデータ抽出 | テキストの抽出 | ネイティブビューアー | ビューアーに注釈を付ける | 可能な拡張機能 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |

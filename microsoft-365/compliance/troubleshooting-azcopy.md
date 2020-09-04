@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -19,12 +19,12 @@ description: Office 以外の365データを読み込み中に、高度な電子
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 4bf8461cb02ca3601707f248a64d8a8a9741efab
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434280"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357707"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Advanced eDiscovery での AzCopy のトラブルシューティング
 
@@ -36,7 +36,7 @@ Advanced eDiscovery でエラーを修復するために Microsoft 以外の365�
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>サポートされているバージョンの AzCopy がローカルコンピューターにインストールされていません
 
-現時点では、Microsoft 以外の365データを Advanced eDiscovery で読み込むには、AzCopy v1.1 を使用する必要があります。 AzCopy v2.0 を使用していない場合、前のスクリーンショットに表示されている [**ファイルのアップロード**] ページに表示される azcopy コマンドはエラーを返します。 このバージョンをインストールするには、「 [Windows で AzCopy](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)v2.0 でデータを転送する」を参照してください。
+現時点では、Microsoft 以外の365データを Advanced eDiscovery で読み込むには、AzCopy v1.1 を使用する必要があります。 AzCopy v2.0 を使用していない場合、前のスクリーンショットに表示されている [ **ファイルのアップロード** ] ページに表示される azcopy コマンドはエラーを返します。 このバージョンをインストールするには、「 [Windows で AzCopy](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)v2.0 でデータを転送する」を参照してください。
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy がローカルコンピューターにインストールされていないか、既定の場所にインストールされていません
 

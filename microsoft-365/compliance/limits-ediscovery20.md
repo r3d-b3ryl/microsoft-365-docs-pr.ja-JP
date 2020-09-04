@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の高度な電子情報開示ソリューションに適用される大文字と小文字の制限、インデックスの制限、および検索の制限について説明します。
-ms.openlocfilehash: 5666bae5315586ed421ad8d6c748505cda8ae3e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778463"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358475"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>Advanced eDiscovery を制限する
 
@@ -60,9 +60,9 @@ ms.locfileid: "46778463"
 |:-----|:-----|
 |1回の検索で検索できるメールボックスまたはサイトの最大数。  <br/> |無制限  <br/> |
 |一度に実行できる検索の最大数。  <br/> |無制限  <br/> | 
-|一度に1人のユーザーが同時に開始できる検索の最大数。  <br/> |10   <br/> | 
+|一度に1人のユーザーが同時に開始できる検索の最大数。  <br/> |10    <br/> | 
 |検索クエリの最大文字数 (演算子と条件を含む)。  <br/> |**メールボックス**: 1万<br/>**サイト**: すべてのサイトを検索する場合は4000、最大20件のサイト<sup>2</sup>を検索する場合は2000 <br/> |
-|プレフィックスワイルドカードの最小文字数。たとえば、 **1 \* **また**は \* セットを設定**します。 <br/> |1/3  <br/> |  
+|プレフィックスワイルドカードの最小文字数。たとえば、 **1 \* **また**は \* セットを設定**します。 <br/> |3   <br/> |  
 |プレフィックスワイルドカードを使用して完全に一致する語句を検索する場合、またはプレフィックスワイルドカードおよび **NEAR** ブール演算子を使用する場合に返される最大のバリエーションです。  <br/> |1万 <sup>3</sup> <br/> |
 |検索のプレビューページに表示される、ユーザーごとのメールボックスあたりのアイテムの最大数。 最新のアイテムが表示されます。   <br/> |100  <br/> |
 |検索のプレビューページに表示されるすべてのメールボックスからのアイテムの最大数。  <br/> |1,000  <br/> |

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Android 携帯電話から SMS、MMS、音声通話をインポートしてアーカイブするための TeleMessage コネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 0eb8d77abb0c18abead03cb744102e795b7a57b5
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 2284e09b3f04bf135435407a842f3e2c3f0648fa
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282625"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47362100"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data-preview"></a>Android mobile データをアーカイブするためのコネクタを設定する (プレビュー)
 
@@ -42,7 +42,7 @@ Android 携帯電話からのデータがユーザーのメールボックスに
 
 ## <a name="before-you-begin"></a>はじめに
 
-Android の通信データをアーカイブするために必要な実装手順の多くは、Microsoft 365 の外部にあります。これは、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
+Android の通信データをアーカイブするために必要ないくつかの実装手順は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
 
 - [TeleMessage から Android Archiver service](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)を注文して、組織の有効な管理アカウントを取得します。 コネクタを作成するときに、このアカウントにサインインする必要があります。
 
@@ -50,7 +50,7 @@ Android の通信データをアーカイブするために必要な実装手順
 
 - 従業員の携帯電話に TeleMessage Android Archiver アプリをインストールしてアクティブ化します。
 
-- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この同意を得るには、コネクタを作成する必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 AT&T ネットワークコネクタを正常に作成するには、この手順を完了する必要があります。
+- 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この同意を得るには、コネクタを作成する必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Microsoft 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 AT&T ネットワークコネクタを正常に作成するには、この手順を完了する必要があります。
 
 - Android アーカイバコネクタを作成するユーザーには、Exchange Online のメールボックスのインポートのエクスポート役割が割り当てられている必要があります。 これは、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
 
@@ -84,4 +84,4 @@ Android の通信データをアーカイブするために必要な実装手順
 
 ## <a name="known-issues"></a>既知の問題
 
-- コネクタは、10 MB を超えるアイテムをインポートしません。
+- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がインスタント Bloomberg チャットツールから Microsoft 365 にデータをインポートしてアーカイブするためのデータコネクタをセットアップして使用する方法について説明します。
-ms.openlocfilehash: 248636d1f343b1f314201ce74dacdf2ecd043e68
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 4df1a67ae9e372efe5c6e8c654f1a6821b5cb30d
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255824"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358239"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
@@ -44,7 +44,7 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
 
 ## <a name="before-you-begin"></a>はじめに
 
-インスタント Bloomberg データをアーカイブするために必要な実装手順の多くは、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に、完了する必要があります。
+インスタント Bloomberg データをアーカイブするために必要ないくつかの実装手順は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
 
 - 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3でインスタント Bloomberg コネクタを正常に作成するには、この手順を完了する必要があります。
 

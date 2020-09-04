@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Office 365 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順について説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f643f4c3709b811a10618343a4b37ac4114dd8c0
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2b96ed80ba9f347616fd364b3b97ac960cdaeb8e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434170"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357997"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、および解決する
 
@@ -52,7 +52,7 @@ ms.locfileid: "45434170"
    > |名前|RecipientType|
    > |---|---|
    > |Alias、User|Enable-mailuser|
-   > |Alias、User|User|
+   > |Alias、User|ユーザー|
 
 3. 複数のユーザーが返された場合は、競合しているオブジェクトを見つけて修正します。
 
@@ -77,19 +77,19 @@ ms.locfileid: "45434170"
 
 3. 失敗した場所のみで電子情報開示検索を再試行します。
 
-4. 引き続きこれらのエラーが表示される場合は、「その他のトラブルシューティング手順のために[失敗した場所を再試行](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search)する」を参照してください。
+4. 引き続きこれらのエラーが表示される場合は、「その他のトラブルシューティング手順のために [失敗した場所を再試行](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) する」を参照してください。
 
 ## <a name="errorissue-file-not-found"></a>エラー/問題: ファイルが見つかりません
 
 SharePoint Online を含む電子情報開示検索を実行する際に、ビジネスの場所として1つのドライブを使用すると、 `File Not Found` ファイルがサイトに配置されていてもエラーが発生することがあります。 このエラーは、エクスポート時に警告が表示され、items.csv errors.csv またはスキップされます。 これは、サイトでファイルが見つからない場合、またはインデックスが古くなっている場合に発生することがあります。 実際のエラーのテキストを次に示します (強調が追加されています)。
 
-> 28.06.2019 10:02: コンテンツをダウンロードするには19_FailedToExportItem_Failed します。 その他の診断情報: 6ea52149-91cd-コンテンツのダウンロードに失敗しました。 b5bb-82ca6a3ec9be Document of the be of the of the type of Document。 関連付け Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode:-2147024894 >---例外:***ファイルが見つかりません***。 ProcessResponseStream (Stream responseStream) () で、内部例外スタックトレース---の最後に (Stream) を呼び出します。の場合は、内部例外スタックトレースの末尾に---します。
+> 28.06.2019 10:02: コンテンツをダウンロードするには19_FailedToExportItem_Failed します。 その他の診断情報: 6ea52149-91cd-コンテンツのダウンロードに失敗しました。 b5bb-82ca6a3ec9be Document of the be of the of the type of Document。 関連付け Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode:-2147024894 >---例外: ***ファイルが見つかりません***。 ProcessResponseStream (Stream responseStream) () で、内部例外スタックトレース---の最後に (Stream) を呼び出します。の場合は、内部例外スタックトレースの末尾に---します。
 
 ### <a name="resolution"></a>解決方法
 
 1. 検索で特定された場所を調べて、ファイルの場所が正しいことと、検索場所に追加されていることを確認します。
 
-2. サイト[、ライブラリ、またはリストのインデックスを再作成するための、手動要求](https://docs.microsoft.com/sharepoint/crawl-site-content)の手順を使用します。
+2. サイト [、ライブラリ、またはリストのインデックスを再作成するための、手動要求](https://docs.microsoft.com/sharepoint/crawl-site-content) の手順を使用します。
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>エラー/問題: 受信者が見つからないため、検索が失敗する
 
@@ -113,9 +113,9 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 ### <a name="resolution"></a>解決方法
 
-1. この記事に記載されている手順を使用して、[ダウンロード速度を上げ](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)ます。
+1. この記事に記載されている手順を使用して、 [ダウンロード速度を上げ](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)ます。
 
-2. それでも問題が解決しない場合は、[セキュリティに & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
+2. それでも問題が解決しない場合は、 [セキュリティに & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) に接続し、次のコマンドを実行します。
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL

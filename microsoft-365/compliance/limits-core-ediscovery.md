@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、Microsoft 365 のコア電子情報開示ケースの制限について説明します。
-ms.openlocfilehash: 00df8cff683701ce5ee38dca12b6f7af5b31c8b0
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6224ce5ecb8fc0439e43ab5e1362f8a618194202
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351898"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358515"
 ---
 # <a name="limits-in-core-ediscovery"></a>コア電子情報開示の制限
 
-次の表に、主要な電子情報開示ケースの制限と、コア電子情報開示ケースに関連付けられている保留リストを示します。 コア電子情報開示の詳細については、「[コア電子情報開示の概要](ediscovery-cases.md)」を参照してください。
+次の表に、主要な電子情報開示ケースの制限と、コア電子情報開示ケースに関連付けられている保留リストを示します。 コア電子情報開示の詳細については、「 [コア電子情報開示の概要](ediscovery-cases.md)」を参照してください。
     
   |**制限の説明**|**制限**|
   |:-----|:-----|

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Bloomberg メッセージ電子メールツールから Microsoft 365 にデータをインポートしてアーカイブするためのデータコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: f9793db545b5298663da7bbfa39a0878854e070d
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255864"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358293"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>Bloomberg メッセージデータをアーカイブするコネクタを設定する (プレビュー)
 
@@ -43,7 +43,7 @@ Bloomberg メッセージデータがユーザーのメールボックスに保�
 
 ## <a name="before-you-begin"></a>はじめに
 
-Bloomberg メッセージデータをアーカイブするために必要な実装手順の多くは、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に、完了する必要があります。
+Bloomberg メッセージデータをアーカイブするために必要な実装手順の一部は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
 
 - 組織は、Office 365 インポートサービスが組織内のメールボックスデータにアクセスできるようにするための同意を得る必要があります。 この要求に同意するには、 [このページ](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)に移動して、Office 365 グローバル管理者の資格情報でサインインし、要求を承諾します。 手順3で Bloomberg メッセージコネクタを正常に作成するには、この手順を完了する必要があります。
 

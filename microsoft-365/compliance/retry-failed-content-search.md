@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 調査中に、[再試行] ボタンを使用して、コンテンツの場所にエラーがあるコンテンツ検索を解決できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b3aed9c1d2d1fe3c40adb64b4854ef359f931bcb
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527635"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357557"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所のエラーを解決する
 
@@ -46,7 +46,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="resolving-content-location-errors"></a>コンテンツの場所のエラーを解決する
 
-検索を再起動すると、複数のサーバーで同様のエラーが発生することがよくあります。 検索を再起動する代わりに、検索結果ページの上部に表示される [**再試行**] ボタンをクリックします。
+検索を再起動すると、複数のサーバーで同様のエラーが発生することがよくあります。 検索を再起動する代わりに、検索結果ページの上部に表示される [ **再試行** ] ボタンをクリックします。
 
 ![[再試行] ボタンをクリックしてコンテンツの場所のエラーを解決する](../media/retrycontentsearch3.png)
 
@@ -60,7 +60,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 - 検索クエリがメールボックスから大量のコンテンツを取得している可能性があります。 可能であれば、キーワード、日付の範囲、および検索条件を使用して、検索範囲を絞るようにしてください。
 
-- キーワード[リスト](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)を使用して検索クエリを作成するときに、キーワードやキーワード語句が多すぎます。 キーワードリストを使用する検索クエリを実行すると、基本的には、統計が生成されるように、キーワードリストの各行に対して個別に検索を実行します。 検索クエリでキーワードリストを使用している場合は、キーワードリストの行数を最小にするか、数字のキーワードを小さなリストに分割して、各キーワードリストに対して異なる検索を作成します。
+- キーワード [リスト](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)を使用して検索クエリを作成するときに、キーワードやキーワード語句が多すぎます。 キーワードリストを使用する検索クエリを実行すると、基本的には、統計が生成されるように、キーワードリストの各行に対して個別に検索を実行します。 検索クエリでキーワードリストを使用している場合は、キーワードリストの行数を最小にするか、数字のキーワードを小さなリストに分割して、各キーワードリストに対して異なる検索を作成します。
 
   > [!NOTE]
   > 大規模なキーワード リストによって生じる問題を軽減するため、検索クエリのキーワード リストの行は最大 20 行に設定されています。

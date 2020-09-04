@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 電子情報開示のアクセス許可を割り当てられたユーザーが、セキュリティ & コンプライアンスセンターでコンテンツ検索とコア電子情報開示タスクを実行するときに記録されるイベントについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 671fdebd75dfdaaf09deebf320b9fe4cfab0ca1c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 529e1a0ac3dc66ac15bd1b3fbcde466fb36d5f4e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818876"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357547"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
@@ -55,10 +55,10 @@ ms.locfileid: "44818876"
 
 3. 左側のウィンドウで [**検索**] をクリックし、[**監査ログの検索**] をクリックします。
 
-4. [**アクティビティ**] ドロップダウンリストで、[**電子情報開示アクティビティ**] または [**高度な電子情報開示アクティビティ**] の下にある1つ以上のアクティビティをクリックして検索します。
+4. [ **アクティビティ** ] ドロップダウンリストで、[ **電子情報開示アクティビティ** ] または [ **高度な電子情報開示アクティビティ**] の下にある1つ以上のアクティビティをクリックして検索します。
 
     > [!NOTE]
-    > [**アクティビティ**] ドロップダウンリストには、コマンドレットの監査ログからレコードを返す、**電子情報開示のコマンドレットアクティビティ**という名前のアクティビティのグループも含まれています。
+    > [ **アクティビティ** ] ドロップダウンリストには、コマンドレットの監査ログからレコードを返す、 **電子情報開示のコマンドレットアクティビティ** という名前のアクティビティのグループも含まれています。
   
 5. 日付と時間の範囲を選択します。その期間内に発生した電子情報開示イベントが表示されます。 
 
