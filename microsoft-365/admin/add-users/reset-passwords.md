@@ -26,125 +26,128 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: 'Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。 '
-ms.openlocfilehash: 6159b62cb6c1e09cb86732cc27cc4c4c87328a42
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+description: Microsoft 365 for business サブスクリプションでユーザーのパスワードをリセットする方法について説明します。
+ms.openlocfilehash: 31a654f16e62ca574666dc9811004c5f40c546e6
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307291"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361763"
 ---
-# <a name="reset-passwords"></a><span data-ttu-id="a093b-103">パスワードをリセットする</span><span class="sxs-lookup"><span data-stu-id="a093b-103">Reset passwords</span></span>
+# <a name="reset-passwords"></a><span data-ttu-id="26e8c-103">パスワードをリセットする</span><span class="sxs-lookup"><span data-stu-id="26e8c-103">Reset passwords</span></span>
 
-<span data-ttu-id="a093b-104">ユーザーのパスワードをリセットする方法に関する短いビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a093b-104">Watch a short video about resetting user passwords.</span></span><br><br>
+<span data-ttu-id="26e8c-104">この記事では、Microsoft 365 for business サブスクリプションを使用している場合に、自分とユーザーのパスワードをリセットする方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-104">This article explains how to reset passwords for yourself and for your users when you have an Microsoft 365 for business subscription.</span></span>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP] 
+## <a name="before-you-begin"></a><span data-ttu-id="26e8c-105">はじめに</span><span class="sxs-lookup"><span data-stu-id="26e8c-105">Before you begin</span></span>
 
-<span data-ttu-id="a093b-105">このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="a093b-105">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="26e8c-106">この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。</span><span class="sxs-lookup"><span data-stu-id="26e8c-106">This article is for people who set password expiration policy for a business, school, or nonprofit.</span></span> <span data-ttu-id="26e8c-107">これらの手順を完了するには、Microsoft 365 管理者アカウントでサインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="26e8c-107">To complete these steps, you need to sign in with your Microsoft 365 admin account.</span></span> <span data-ttu-id="26e8c-108">[管理者アカウントとは](../admin-overview/admin-overview.md)</span><span class="sxs-lookup"><span data-stu-id="26e8c-108">[What's an admin account?](../admin-overview/admin-overview.md).</span></span> 
+
+<span data-ttu-id="26e8c-109">これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。</span><span class="sxs-lookup"><span data-stu-id="26e8c-109">You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.</span></span>
+
+## <a name="watch-reset-a-business-password-for-a-user"></a><span data-ttu-id="26e8c-110">視聴: ユーザーの勤務先のパスワードをリセットする</span><span class="sxs-lookup"><span data-stu-id="26e8c-110">Watch: Reset a business password for a user</span></span>
+
+<span data-ttu-id="26e8c-111">ユーザーのパスワードをリセットする方法に関する短いビデオをご覧ください。</span><span class="sxs-lookup"><span data-stu-id="26e8c-111">Watch a short video about resetting user passwords.</span></span><br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+
+<span data-ttu-id="26e8c-112">このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="26e8c-112">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
   
-## <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="a093b-106">ユーザーが自分でパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="a093b-106">Let users reset their own passwords</span></span>
+## <a name="steps-reset-a-business-password-for-a-user"></a><span data-ttu-id="26e8c-113">手順: ユーザーのビジネスパスワードをリセットする</span><span class="sxs-lookup"><span data-stu-id="26e8c-113">Steps: Reset a business password for a user</span></span>
 
-<span data-ttu-id="a093b-p101">セルフサービスによるパスワードのリセットを設定することを強くお勧めします。この方法では、ユーザーのパスワードを手動でリセットする必要はありません。詳細については、「[Office 365 でユーザーが自分のパスワードを再設定する](let-users-reset-passwords.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a093b-p101">We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).</span></span>
-  
-## <a name="reset-a-business-password-for-someone-else"></a><span data-ttu-id="a093b-110">他のユーザーの勤務先パスワードをリセットする</span><span class="sxs-lookup"><span data-stu-id="a093b-110">Reset a business password for someone else</span></span>
-
-<span data-ttu-id="a093b-111">これらの手順は、Microsoft 365 for business プランを使用しているユーザーのみを対象としています。</span><span class="sxs-lookup"><span data-stu-id="a093b-111">These steps are only for people using a Microsoft 365 for business plan.</span></span> <span data-ttu-id="a093b-112">実行するには、Microsoft 365 の管理者アカウントでサインインする必要があります。</span><span class="sxs-lookup"><span data-stu-id="a093b-112">To do them, you need to sign in with your Microsoft 365 admin account.</span></span> [<span data-ttu-id="a093b-113">管理者アカウントとは</span><span class="sxs-lookup"><span data-stu-id="a093b-113">What's an admin account?</span></span>](../admin-overview/admin-overview.md)
-
- 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="a093b-114">管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-114">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="26e8c-114">管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-114">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="a093b-115">管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="26e8c-115">管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="a093b-116">管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-116">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
+1. <span data-ttu-id="26e8c-116">管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-116">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="a093b-117">[**アクティブ ユーザー**] ページでユーザーを選択し、[**パスワードのリセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-117">On the **Active users** page, select the user and then select **Reset password**.</span></span>
-    
-3. <span data-ttu-id="a093b-118">[**パスワードのリセット**] ページに表示される手順を実行して、ユーザーの新しいパスワードを自動生成するかユーザー用に新しいパスワードを作成し、[**リセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-118">Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.</span></span>  
-    
-4. <span data-ttu-id="a093b-119">ユーザーが受信可能なメール アドレスを入力して、ユーザーが新しいパスワードを受信できるようにします。ユーザーに連絡を取り、ユーザーがパスワードを受け取ったことを確認します。</span><span class="sxs-lookup"><span data-stu-id="a093b-119">Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.</span></span>
- 
+2. <span data-ttu-id="26e8c-117">[**アクティブ ユーザー**] ページでユーザーを選択し、[**パスワードのリセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-117">On the **Active users** page, select the user and then select **Reset password**.</span></span>
+
+3. <span data-ttu-id="26e8c-118">[**パスワードのリセット**] ページに表示される手順を実行して、ユーザーの新しいパスワードを自動生成するかユーザー用に新しいパスワードを作成し、[**リセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-118">Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.</span></span>  
+
+4. <span data-ttu-id="26e8c-119">ユーザーが受信可能なメール アドレスを入力して、ユーザーが新しいパスワードを受信できるようにします。ユーザーに連絡を取り、ユーザーがパスワードを受け取ったことを確認します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-119">Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.</span></span>
+
+## <a name="let-users-reset-their-own-passwords"></a><span data-ttu-id="26e8c-120">ユーザーが自分でパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="26e8c-120">Let users reset their own passwords</span></span>
+
+<span data-ttu-id="26e8c-p102">セルフサービスによるパスワードのリセットを設定することを強くお勧めします。この方法では、ユーザーのパスワードを手動でリセットする必要はありません。詳細については、「[Office 365 でユーザーが自分のパスワードを再設定する](let-users-reset-passwords.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26e8c-p102">We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).</span></span>
+
+## <a name="reset-my-admin-password"></a><span data-ttu-id="26e8c-124">自分の管理者パスワードのリセット</span><span class="sxs-lookup"><span data-stu-id="26e8c-124">Reset my admin password</span></span>
+
+<span data-ttu-id="26e8c-125">パスワードを忘れた場合に、次の手順を使用します。たとえば、パスワードがブラウザーに保存されているために、Microsoft 365 にサインインできます。</span><span class="sxs-lookup"><span data-stu-id="26e8c-125">Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:</span></span>
+
+1. <span data-ttu-id="26e8c-126">右上隅の **[My Account**  >  **Personal Info**] > 名前 (アイコン) を選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-126">Select your name (icon) in upper right corner > **My Account** > **Personal Info**.</span></span>
+
+2. <span data-ttu-id="26e8c-127">[ **連絡先の詳細**] で、連絡用 **メール** が正確であること、および携帯電話番号が入力されていることを再確認します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-127">Under **Contact details**, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number.</span></span> <span data-ttu-id="26e8c-128">正しくない場合は、この場で変更します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-128">If not, change them now.</span></span>
+
+3. <span data-ttu-id="26e8c-129">[サインアウト]: 右上隅にある名前を選択して、 \> **サインアウト**します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-129">Sign out: select your name in the upper right corner \> **Sign out**.</span></span>
+
+4. <span data-ttu-id="26e8c-130">もう一度サインインします: ユーザー名を入力し \> [**次へ**] \> [**パスワードを忘れた場合**] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-130">Now sign in again: type your user name \> **Next** \> and then select **Forgot password**.</span></span>
+
+5. <span data-ttu-id="26e8c-131">ウィザードの手順に従って、パスワードをリセットします。</span><span class="sxs-lookup"><span data-stu-id="26e8c-131">Follow the steps in the wizard to reset your password.</span></span> <span data-ttu-id="26e8c-132">ウィザードでは、あなたがパスワードをリセットするための適切なユーザーであることが、代替連絡先情報を使用して確認されます。</span><span class="sxs-lookup"><span data-stu-id="26e8c-132">It uses your alternate contact info to verify you're the right person to reset your password.</span></span>
+
+<span data-ttu-id="26e8c-133">パスワードを忘れ、サインインできない場合:</span><span class="sxs-lookup"><span data-stu-id="26e8c-133">If you forgot your password and can't sign in:</span></span>
+
+- <span data-ttu-id="26e8c-134">社内の別のグローバル管理者にパスワードのリセットを依頼します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-134">Ask another global admin in your business to reset your password for you.</span></span>
+
+- <span data-ttu-id="26e8c-135">携帯電話番号などの別の連絡先情報を提供していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="26e8c-135">Make sure you've provided alternate contact information, including a mobile phone number.</span></span>
+
+- <span data-ttu-id="26e8c-136">または、[Microsoft サポートにお電話ください](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。</span><span class="sxs-lookup"><span data-stu-id="26e8c-136">Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).</span></span>
+
+## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a><span data-ttu-id="26e8c-137">組織内のすべてのユーザーのビジネスパスワードを同時にリセットする</span><span class="sxs-lookup"><span data-stu-id="26e8c-137">Reset all business passwords for everyone in your organization at the same time</span></span>
+<span data-ttu-id="26e8c-138"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="26e8c-138"><a name="bkmk_forgot"> </a></span></span>
+
+<span data-ttu-id="26e8c-139">次の手順は、数十のユーザーを抱える会社を対象にしています。</span><span class="sxs-lookup"><span data-stu-id="26e8c-139">These steps work for a business with tens of users.</span></span> <span data-ttu-id="26e8c-140">ユーザー数が数百または数千の場合は、パスワードを一括でリセットする (一度に最大40ユーザー) の次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="26e8c-140">If you have hundreds or thousands of users, see the next section on resetting passwords in bulk (maximum 40 users at a time).</span></span>
   
-## <a name="reset-my-admin-password"></a><span data-ttu-id="a093b-120">自分の管理者パスワードのリセット</span><span class="sxs-lookup"><span data-stu-id="a093b-120">Reset my admin password</span></span>
+1. <span data-ttu-id="26e8c-141">管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-141">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
 
-<span data-ttu-id="a093b-121">パスワードを忘れた場合に、次の手順を使用します。たとえば、パスワードがブラウザーに保存されているために、Microsoft 365 にサインインできます。</span><span class="sxs-lookup"><span data-stu-id="a093b-121">Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser:</span></span> 
-    
-1. <span data-ttu-id="a093b-122">右上隅の **[My Account**  >  **Personal Info**] > 名前 (アイコン) を選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-122">Select your name (icon) in upper right corner > **My Account** > **Personal Info**.</span></span> 
-          
-2. <span data-ttu-id="a093b-123">[ **連絡先の詳細**] で、連絡用 **メール** が正確であること、および携帯電話番号が入力されていることを再確認します。</span><span class="sxs-lookup"><span data-stu-id="a093b-123">Under **Contact details**, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number.</span></span> <span data-ttu-id="a093b-124">正しくない場合は、この場で変更します。</span><span class="sxs-lookup"><span data-stu-id="a093b-124">If not, change them now.</span></span> 
-        
-3. <span data-ttu-id="a093b-125">[サインアウト]: 右上隅にある自分の名前を選択します (上記の画像では、 **Diane**として表示され \> **Sign out**ます)。</span><span class="sxs-lookup"><span data-stu-id="a093b-125">Sign out: select your name in the upper right corner (in the above image, shown as **Diane**) \> **Sign out**.</span></span> 
-        
-4. <span data-ttu-id="a093b-126">もう一度サインインします: ユーザー名を入力し \> [**次へ**] \> [**パスワードを忘れた場合**] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-126">Now sign in again: type your user name \> **Next** \> and then select **Forgot password**.</span></span> 
-    
-5. <span data-ttu-id="a093b-127">ウィザードの手順に従って、パスワードをリセットします。</span><span class="sxs-lookup"><span data-stu-id="a093b-127">Follow the steps in the wizard to reset your password.</span></span> <span data-ttu-id="a093b-128">ウィザードでは、あなたがパスワードをリセットするための適切なユーザーであることが、代替連絡先情報を使用して確認されます。</span><span class="sxs-lookup"><span data-stu-id="a093b-128">It uses your alternate contact info to verify you're the right person to reset your password.</span></span> 
-    
-<span data-ttu-id="a093b-129">パスワードを忘れ、サインインできない場合:</span><span class="sxs-lookup"><span data-stu-id="a093b-129">If you forgot your password and can't sign in:</span></span> 
-    
-- <span data-ttu-id="a093b-130">社内の別のグローバル管理者にパスワードのリセットを依頼します。</span><span class="sxs-lookup"><span data-stu-id="a093b-130">Ask another global admin in your business to reset your password for you.</span></span>
+2. <span data-ttu-id="26e8c-142">[**表示名**] の横にある、社内のすべてのユーザーを選択するオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-142">Select the option next to **Display name** to select everyone in your business.</span></span> <span data-ttu-id="26e8c-143">自分の選択を解除します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-143">Then unselect yourself.</span></span> <span data-ttu-id="26e8c-144">自分以外のユーザーのパスワードをリセットするのと同時に、自分のパスワードをリセットすることはできません。</span><span class="sxs-lookup"><span data-stu-id="26e8c-144">You can't reset your own password at the same time you reset everyone else's password.</span></span>
 
-- <span data-ttu-id="a093b-131">携帯電話番号などの別の連絡先情報を提供していることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="a093b-131">Make sure you've provided alternate contact information, including a mobile phone number.</span></span> 
-    
-- <span data-ttu-id="a093b-132">または、[Microsoft サポートにお電話ください](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。</span><span class="sxs-lookup"><span data-stu-id="a093b-132">Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).</span></span> 
-    
-## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a><span data-ttu-id="a093b-133">組織内のすべてのユーザーのビジネスパスワードを同時にリセットする</span><span class="sxs-lookup"><span data-stu-id="a093b-133">Reset all business passwords for everyone in your organization at the same time</span></span>
-<span data-ttu-id="a093b-134"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="a093b-134"><a name="bkmk_forgot"> </a></span></span>
+3. <span data-ttu-id="26e8c-145">[**パスワードのリセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-145">Select **Reset password**.</span></span> 
 
-<span data-ttu-id="a093b-135">次の手順は、数十のユーザーを抱える会社を対象にしています。</span><span class="sxs-lookup"><span data-stu-id="a093b-135">These steps work for a business with tens of users.</span></span> <span data-ttu-id="a093b-136">ユーザー数が数百または数千の場合は、パスワードを一括でリセットする (一度に最大40ユーザー) の次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="a093b-136">If you have hundreds or thousands of users, see the next section on resetting passwords in bulk (maximum 40 users at a time).</span></span>
+4. <span data-ttu-id="26e8c-146">[**パスワードのリセット**] ページの指示に従って操作し、[**リセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-146">Follow the instructions on the **Reset password** page, and select **Reset**.</span></span>  <span data-ttu-id="26e8c-147">パスワードの自動生成を選択した場合、新しい一時パスワードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="26e8c-147">If you opted for auto-generating the passwords, the new temporary passwords will be displayed.</span></span>
+
+5. <span data-ttu-id="26e8c-148">一時パスワードを受信できるメール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="26e8c-148">Enter an email address where you can receive the temporary passwords.</span></span> <span data-ttu-id="26e8c-149">ユーザーの一時パスワードをユーザーに通知する必要があります。</span><span class="sxs-lookup"><span data-stu-id="26e8c-149">You'll need to notify your users what their temporary passwords are.</span></span>
   
-1. <span data-ttu-id="a093b-137">管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-137">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
-    
-2. <span data-ttu-id="a093b-138">[**表示名**] の横にある、社内のすべてのユーザーを選択するオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-138">Select the option next to **Display name** to select everyone in your business.</span></span> <span data-ttu-id="a093b-139">自分の選択を解除します。</span><span class="sxs-lookup"><span data-stu-id="a093b-139">Then unselect yourself.</span></span> <span data-ttu-id="a093b-140">自分以外のユーザーのパスワードをリセットするのと同時に、自分のパスワードをリセットすることはできません。</span><span class="sxs-lookup"><span data-stu-id="a093b-140">You can't reset your own password at the same time you reset everyone else's password.</span></span>
-    
-3. <span data-ttu-id="a093b-141">[**パスワードのリセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-141">Select **Reset password**.</span></span> 
+## <a name="reset-business-passwords-in-bulk"></a><span data-ttu-id="26e8c-150">ビジネスパスワードを一括でリセットする</span><span class="sxs-lookup"><span data-stu-id="26e8c-150">Reset business passwords in bulk</span></span>
+<span data-ttu-id="26e8c-151"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="26e8c-151"><a name="bkmk_forgot"> </a></span></span>
 
-4. <span data-ttu-id="a093b-142">[**パスワードのリセット**] ページの指示に従って操作し、[**リセット**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="a093b-142">Follow the instructions on the **Reset password** page, and select **Reset**.</span></span>  <span data-ttu-id="a093b-143">パスワードの自動生成を選択した場合、新しい一時パスワードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="a093b-143">If you opted for auto-generating the passwords, the new temporary passwords will be displayed.</span></span>   
-    
-5. <span data-ttu-id="a093b-144">一時パスワードを受信できるメール アドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="a093b-144">Enter an email address where you can receive the temporary passwords.</span></span> <span data-ttu-id="a093b-145">ユーザーの一時パスワードをユーザーに通知する必要があります。</span><span class="sxs-lookup"><span data-stu-id="a093b-145">You'll need to notify your users what their temporary passwords are.</span></span>
-    
-
+<span data-ttu-id="26e8c-p109">PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)</span><span class="sxs-lookup"><span data-stu-id="26e8c-p109">Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).</span></span>
   
-## <a name="reset-business-passwords-in-bulk"></a><span data-ttu-id="a093b-146">ビジネスパスワードを一括でリセットする</span><span class="sxs-lookup"><span data-stu-id="a093b-146">Reset business passwords in bulk</span></span>
-<span data-ttu-id="a093b-147"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="a093b-147"><a name="bkmk_forgot"> </a></span></span>
-
-<span data-ttu-id="a093b-p109">PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)</span><span class="sxs-lookup"><span data-stu-id="a093b-p109">Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).</span></span>
+<!-- Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-<span data-ttu-id="a093b-150">関連記事: [複数のユーザー アカウントのパスワードを設定する](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)</span><span class="sxs-lookup"><span data-stu-id="a093b-150">Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).</span></span>
+<span data-ttu-id="26e8c-154">概要については、「 [Manage Microsoft 365 With PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26e8c-154">For overview information, see [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).</span></span>
   
-<span data-ttu-id="a093b-151">概要については、「 [Microsoft 365 管理者向けの PowerShell](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a093b-151">For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).</span></span>
+## <a name="force-a-password-change-for-all-users-in-your-business"></a><span data-ttu-id="26e8c-155">社内のすべてのユーザーに対してパスワードの変更を強制する</span><span class="sxs-lookup"><span data-stu-id="26e8c-155">Force a password change for all users in your business</span></span>
+
+<span data-ttu-id="26e8c-156">Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してください: [Office 365 のすべてのユーザーのパスワードの変更を強制する](https://go.microsoft.com/fwlink/?linkid=853693)</span><span class="sxs-lookup"><span data-stu-id="26e8c-156">Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).</span></span>
   
-## <a name="force-a-password-change-for-all-users-in-your-business"></a><span data-ttu-id="a093b-152">社内のすべてのユーザーに対してパスワードの変更を強制する</span><span class="sxs-lookup"><span data-stu-id="a093b-152">Force a password change for all users in your business</span></span>
-<span data-ttu-id="a093b-153"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="a093b-153"><a name="bkmk_forgot"> </a></span></span>
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a><span data-ttu-id="26e8c-157">Microsoft 365 for business サブスクリプションがありません</span><span class="sxs-lookup"><span data-stu-id="26e8c-157">I don't have a Microsoft 365 for business subscription</span></span>
 
-<span data-ttu-id="a093b-154">Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してください: [Office 365 のすべてのユーザーのパスワードの変更を強制する](https://go.microsoft.com/fwlink/?linkid=853693)</span><span class="sxs-lookup"><span data-stu-id="a093b-154">Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password change for all users in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).</span></span>
+<span data-ttu-id="26e8c-158">この記事、「[Office で使用するアカウントまたはパスワードを忘れてしまった](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="26e8c-158">Try this article: [I forgot the username or password for the account I use with Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)</span></span>
   
-## <a name="im-lost"></a><span data-ttu-id="a093b-155">どうしたらよいかわからない場合</span><span class="sxs-lookup"><span data-stu-id="a093b-155">I'm lost!</span></span>
-<span data-ttu-id="a093b-156"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="a093b-156"><a name="bkmk_forgot"> </a></span></span>
-
-<span data-ttu-id="a093b-157">この記事、「[Office で使用するアカウントまたはパスワードを忘れてしまった](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a093b-157">Try this article: [I forgot the username or password for the account I use with Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)</span></span>
+## <a name="related-content"></a><span data-ttu-id="26e8c-159">関連コンテンツ</span><span class="sxs-lookup"><span data-stu-id="26e8c-159">Related content</span></span>
   
-## <a name="related-articles"></a><span data-ttu-id="a093b-158">関連記事</span><span class="sxs-lookup"><span data-stu-id="a093b-158">Related articles</span></span>
-<span data-ttu-id="a093b-159"><a name="bkmk_forgot"> </a></span><span class="sxs-lookup"><span data-stu-id="a093b-159"><a name="bkmk_forgot"> </a></span></span>
-  
-[<span data-ttu-id="a093b-160">ユーザーが自分でパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="a093b-160">Let users reset their own passwords</span></span>](let-users-reset-passwords.md)
+[<span data-ttu-id="26e8c-160">ユーザーが自分でパスワードをリセットできるようにする</span><span class="sxs-lookup"><span data-stu-id="26e8c-160">Let users reset their own passwords</span></span>](../add-users/let-users-reset-passwords.md)
 
-[<span data-ttu-id="a093b-161">個別のユーザーのパスワードを無期限に設定する</span><span class="sxs-lookup"><span data-stu-id="a093b-161">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
+[<span data-ttu-id="26e8c-161">パスワードをリセットする</span><span class="sxs-lookup"><span data-stu-id="26e8c-161">Reset passwords</span></span>](../add-users/reset-passwords.md)
 
-[<span data-ttu-id="a093b-162">組織のパスワード有効期限ポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="a093b-162">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
+[<span data-ttu-id="26e8c-162">個別のユーザーのパスワードを無期限に設定する</span><span class="sxs-lookup"><span data-stu-id="26e8c-162">Set an individual user's password to never expire</span></span>](set-password-to-never-expire.md)
 
-[<span data-ttu-id="a093b-163">ユーザーを復元する</span><span class="sxs-lookup"><span data-stu-id="a093b-163">Restore a user</span></span>](restore-user.md)
+[<span data-ttu-id="26e8c-163">組織のパスワード有効期限ポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="26e8c-163">Set the password expiration policy for your organization</span></span>](../manage/set-password-expiration-policy.md)
 
-[<span data-ttu-id="a093b-164">元従業員を削除する</span><span class="sxs-lookup"><span data-stu-id="a093b-164">Remove a former employee</span></span>](remove-former-employee.md)
+[<span data-ttu-id="26e8c-164">ユーザーを復元する</span><span class="sxs-lookup"><span data-stu-id="26e8c-164">Restore a user</span></span>](restore-user.md)
 
-[<span data-ttu-id="a093b-165">一般法人向け Microsoft 365 のトレーニング ビデオ</span><span class="sxs-lookup"><span data-stu-id="a093b-165">Microsoft 365 for business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="26e8c-165">元従業員を削除する</span><span class="sxs-lookup"><span data-stu-id="26e8c-165">Remove a former employee</span></span>](remove-former-employee.md)
+
+[<span data-ttu-id="26e8c-166">一般法人向け Microsoft 365 のトレーニング ビデオ</span><span class="sxs-lookup"><span data-stu-id="26e8c-166">Microsoft 365 for business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
