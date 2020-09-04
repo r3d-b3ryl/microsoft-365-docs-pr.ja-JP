@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: 'プロダクトキー を使用して Microsoft 365 for business のサブスクリプションを更新し、継続請求をオンまたはオフにする方法について説明します。 '
-ms.openlocfilehash: 8dd9697f95e238ff759b90b1fef7544be9196c85
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 継続請求をオフまたはオンにして Microsoft 365 を更新する方法について説明します。
+ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403224"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324306"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
@@ -57,18 +53,15 @@ ms.locfileid: "44403224"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-
 2. 継続請求を管理するサブスクリプションを選択します。
-
-3. [**課金**] の [**更新予定日**] または [**有効期限**] の横にある [**編集**] を選択します。
-
-4. [**継続請求の設定**] ウィンドウで、[**無効にする**] を選択して無効にします。 継続請求が既にオフになっている場合は、[**毎月**] または [**1 回**] を選択してオンにします。
-
-5. [**変更の送信**] を選択します。
+3. サブスクリプションの詳細情報ページの **[Subscription and payment settings]** (サブスクリプションと支払い設定) の下で、**[Edit recurring billing]** (継続請求の編集) を選択します。
+4. **[Edit recurring billing settings]** (継続請求の設定の編集) ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。
+5. **[保存]** を選択します。
 
     > [!NOTE]
     > - **継続請求**設定の変更は、アクティブなサブスクリプションに対してのみ行うことができます。 サブスクリプションが既に期限切れになっていたり、無効であったりする場合に、**継続請求**をオンまたはオフにするには、 サブスクリプションを[再アクティブ化](reactivate-your-subscription.md)するする必要があります。
-    > - **継続請求**を無効にしても、サブスクリプションはすぐにはキャンセルされません。 期限切れになるまでアクティブのままとなります。 [**お使いの製品**] ページにあるサブスクリプションの詳細の [**課金**] セクションで有効期限を確認できます。
+    > - **継続請求**を無効にしても、サブスクリプションはキャンセルされません。 サブスクリプションを有効にし続ける場合には、請求書の支払いを手動で行う必要があります。
+    > - **継続請求**をオフにすると、サブスクリプションは有効期限が切れるまで有効になります。 有効期限は、**[Subscription and payment settings]** (サブスクリプションと支払いの設定) セクションのサブスクリプションの詳細情報ページで確認できます。
     > - サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
 
 ::: moniker-end
