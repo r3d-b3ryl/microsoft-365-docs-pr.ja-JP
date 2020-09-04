@@ -1,5 +1,5 @@
 ---
-title: ユーザーのパスワードを再送信する-管理者ヘルプ
+title: ユーザーのパスワードを再送信する - 管理者向けヘルプ
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,24 +19,30 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 'パスワードをリセットして、新しい Microsoft 365 ユーザーに通知メールを送信する方法について説明します。 '
-ms.openlocfilehash: 2f9d4fd829e4378b245fd3b8277e9b913d17ab69
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: パスワードをリセットして、新しい Microsoft 365 ユーザーに通知メールを送信する方法について説明します。
+ms.openlocfilehash: d39a448cdea9e986c46fbebc1d4cfcdf63882daf
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386987"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361821"
 ---
-# <a name="resend-a-users-password---admin-help"></a>ユーザーのパスワードを再送信する-管理者ヘルプ
+# <a name="resend-a-users-password---admin-help"></a>ユーザーのパスワードを再送信する - 管理者向けヘルプ
 
-この記事では、Office 365 で新しいユーザーに通知メールを再送信する方法について説明します。 これを行うには、ユーザーのパスワードをリセットします。
-  
-これらの手順を実行するには、[グローバル管理者またはパスワード管理者](about-admin-roles.md)である必要があります。 
+この記事では、Office 365 で新しいユーザーに通知メールを再送信する方法について説明します。 これは、新しいユーザーを作成したときに、新しいパスワードを使用して電子メールを受信しない場合に発生する可能性があります。 これを行うには、ユーザーのパスワードをリセットします。
+
+## <a name="before-you-begin"></a>はじめに
+
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)
+
+これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。
+
+## <a name="resend-user-password"></a>ユーザーのパスワードを再送信する
   
 ::: moniker range="o365-worldwide"  
   
 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
-     
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -52,9 +58,13 @@ ms.locfileid: "44386987"
 ::: moniker-end
 
 2. [**アクティブ ユーザー**] ページでユーザーを選択し、[**パスワードのリセット**] を選択します。
-    
+
 3. [**パスワードのリセット**] ページに表示される手順を実行して、ユーザーの新しいパスワードを自動生成するかユーザー用に新しいパスワードを作成し、[**リセット**] を選択します。  
-    
+
 4. ユーザーが受信可能なメール アドレスを入力して、ユーザーが新しいパスワードを受信できるようにします。ユーザーに連絡を取り、ユーザーがパスワードを受け取ったことを確認します。
-    
-  
+
+## <a name="related-content"></a>関連コンテンツ
+
+[ユーザーが自分でパスワードをリセットできるようにする](../add-users/let-users-reset-passwords.md)
+
+[パスワードをリセットする](../add-users/reset-passwords.md)

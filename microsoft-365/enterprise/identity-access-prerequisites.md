@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca898fa76ff45fe15a6dc48e7ad8bcae3e94951c
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332554"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357976"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
@@ -116,6 +116,6 @@ Microsoft 365 E3 または E5、または個別の Azure AD Premium P1 または
 
 ## <a name="next-step"></a>次の手順
 
-![手順 2: 共通 id を構成し、条件付きアクセスポリシーにアクセスします。](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+![手順 2: 共通 id を構成し、条件付きアクセスポリシーにアクセスする](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
 
 [共通 id およびデバイスアクセスポリシーを構成する](identity-access-policies.md)

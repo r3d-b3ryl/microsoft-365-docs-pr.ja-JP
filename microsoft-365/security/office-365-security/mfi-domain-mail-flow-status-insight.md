@@ -1,5 +1,5 @@
 ---
-title: メール フロー ダッシュボードの上位ドメインのメール フローの状態に関する分析情報
+title: メールフローダッシュボードのトップドメインメールフローのステータスの洞察
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,34 +12,34 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、セキュリティ & コンプライアンス センターのメール フロー ダッシュボードで上位ドメインのメール フローの状態のインサイトを使用して、メール ドメイン内の MX レコードに関連するメール フロー問題のトラブルシューティングを行う方法を学習できます。
-ms.openlocfilehash: 9640d5e37932efeb7c0c8f8c56d0a15bc7f07e5b
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインのメールフロー状態の洞察を使用して、電子メールドメイン内の MX レコードに関連するメールフローの問題のトラブルシューティングを行う方法を学習できます。
+ms.openlocfilehash: 34b80bee48bd91524fbd95961c473f50fbe394b7
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827017"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358314"
 ---
-# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>セキュリティ センターの上位ドメインのメール フローの状態&分析情報
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの上位ドメインメールフローのステータスの洞察
 
-セキュリティ &**コンプライアンス センターの**メール フロー ダッシュボード[Mail flow dashboard](mail-flow-insights-v2.md)で上位ドメインのメール フロー状態の分析情報は、メール フローの点で組織のドメインの現在の状態を示します。 この分析情報は、問題に影響を与えるメール フロー (外部メールを受信できない***mail flow impacting***など) を特定してトラブルシューティングする際に役立ちます。特に、ドメインの有効期限または MX レコードが正しくないドメイン。
+[セキュリティ & コンプライアンスセンター](https://protection.office.com)の[メールフローダッシュボード](mail-flow-insights-v2.md)にある**上位ドメインメールフローの状態**に関する洞察は、メールフローの観点から、組織のドメインの現在の状態を示しています。 この洞察は、 ***メールフローに影響を与える*** (たとえば、外部電子メールを受信できない) 問題が発生しているドメインを特定してトラブルシューティングするのに役立ちます。特に、ドメインの有効期限、または間違った MX レコードがあるドメイン。
 
-![セキュリティ/コンプライアンス センターのメール フロー ダッシュボードの上位ドメイン フローの状態ウィジ&イジェット](../../media/mfi-top-domain-mail-flow-status-widget.png)
+![セキュリティ & コンプライアンスセンターのメールフローダッシュボードのトップドメインフロー状態ウィジェット](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-ウィジェ **ットの [** 詳細の表示] をクリックすると、 **各ドメイン** の状態に関する詳細が [ドメインの状態] ポップアップに表示されます。
+ウィジェットの [ **詳細の表示** ] をクリックすると、 **ドメイン状態** ポップアップが表示され、各ドメインの状態の詳細がわかります。
 
 - **ドメイン**
 - **以前の MX レコード**
 - **現在の MX レコード**
-- **メールの受信状態**
-- **Domain status**: A green check mark indicates the current MX record (at the time you clicked on the widget) matches the value we have on record, and that the domain has received email during the past two hours.
+- **受信した電子メールの状態**
+- **ドメインの状態**: 緑のチェックマークは、現在の MX レコード (ウィジェットをクリックしたとき) がレコードに設定されている値と一致し、ドメインが過去2時間以内に電子メールを受信したことを示します。
 
-  赤い X は、MX レコードが変更されたことを示し、そのドメインが現在 6 時間前にメールを受信したことを示します。 これは、ドメインの有効期限が切れていること、または MX レコードが正しく更新されていないことを示している可能性があります。 ドメイン レジストラーか DNS ホスティング サービスに確認して、ドメインの有効期限が切れていないか、ドメインの MX レコードが正しくないかどうかを確認してください。
+  赤の X は、MX レコードが変更されたこと、および過去6時間以内にドメインがメールを受信していないことを示します。 これは、ドメインの有効期限が切れているか、MX レコードが正しく更新されていないことを示している可能性があります。 ドメインレジストラーまたは DNS ホスティングサービスを使用して、ドメインの有効期限が切れていないか、またはドメインの MX レコードが正しくないかどうかを確認します。
 
-[詳細表示] **をクリックすると** 、その他のドメインに対して同じ情報が表示されます。
+[ **詳細表示** ] をクリックすると、他のドメインについても同じ情報が表示されます。
 
-![[トップ ドメインのメール フロー状態] の詳細ポップアップ](../../media/mfi-top-domain-mail-flow-status-view-details.png)
+![上位ドメインのメールフローの状態に関する詳細ポップアップ](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
-メール フロー ダッシュボードの他の分析情報については、セキュリティ コンプライアンス センターの [メール フローの詳細&を参照してください](mail-flow-insights-v2.md)。
+メールフローダッシュボードの他の洞察の詳細については、「 [セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。
