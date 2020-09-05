@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet の Merge1 サイトにアーカイブされた Facebook からのデータを Microsoft 365 にインポートしてアーカイブするためのコネクタを設定できます。 コネクタを設定するには、Globanet を使用する必要があります。このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して組織のサードパーティデータを管理することができます。
-ms.openlocfilehash: b57ad60133fdb7cee7db24781755bda032b10a89
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362006"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399134"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Facebook データからワークプレースをアーカイブするようにコネクタを設定する (プレビュー)
 
@@ -40,7 +40,7 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 4. このコネクタは、手順3で説明されているように、自動ユーザーマッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 **Facebook からの workplace**という名前の受信トレイフォルダー内のサブフォルダーが作成され、そのフォルダーに workplace アイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての Workplace アイテムには、すべてのチャットまたは投稿の参加者の電子メールアドレスが設定された、このプロパティが含まれています。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Facebook connector の Workplace の使用条件に同意して、Merge1 アカウントを作成します。 ここでは、 [Globanet カスタマサポート](https://globanet.com/contact-us/)に連絡する必要があります。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
@@ -72,7 +72,7 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップしてコネクタのセットアップを完了する
 
-ユーザーをマップし、Microsoft 365 コンプライアンスセンターで設定したコネクタを完成させるには、次の手順を実行します。
+ユーザーをマップし、Microsoft 365 コンプライアンスセンターでコネクタの設定を完了するには、次の手順を実行します。
 
 1. [ **外部ユーザーを Microsoft 365 ユーザーにマップする** ] ページで、[自動ユーザーマッピング] を有効にします。 Workplace アイテムには、組織内のユーザーの電子メールアドレスを含む *email* というプロパティが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合は、そのユーザーのメールボックスにアイテムがインポートされます。
 

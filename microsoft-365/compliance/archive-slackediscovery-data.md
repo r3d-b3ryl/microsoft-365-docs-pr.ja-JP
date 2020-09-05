@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet 余裕情報開示から Microsoft 365 にデータをインポートしてアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 2d24f2784b07446f529057d9abfc05cf2688be4a
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 86a6595ae12201e5083b524661ef53dba54f8cf3
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361974"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399308"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>コネクタをアーカイブ余裕期間電子情報開示データに設定する (プレビュー)
 
@@ -40,7 +40,7 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 4. 手順3で説明されているように、コネクタは、 *電子メール* プロパティの値と自動ユーザーマッピングを使用して、変換されたチャットメッセージアイテムを特定のユーザーのメールボックスにインポートします。 ユーザーのメールボックスには、「 **余裕期間電子情報開示** 」という名前の受信トレイフォルダーに新しいサブフォルダーが作成され、チャットメッセージアイテムはそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべてのチャットメッセージには、このプロパティが含まれており、チャットメッセージのすべての参加者の電子メールアドレスが設定されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Globanet Merge1 アカウントを作成するには、余裕期間電子情報開示コネクタの使用条件に同意します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/contact-us)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 

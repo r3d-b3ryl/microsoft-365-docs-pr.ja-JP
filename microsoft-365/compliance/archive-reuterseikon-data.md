@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Reuters Eikon データを Microsoft 365 の Globanet からインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: ee28cd33e6c4531bf769a1e178d733eff453cb75
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a5cd6e6266c9e5d8b74f50a5712e436e6225c9df
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362016"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399340"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>コネクタを Reuters Eikon data にアーカイブするように設定する (プレビュー)
 
@@ -28,7 +28,7 @@ Reuters Eikon のデータがユーザーのメールボックスに格納され
 
 ## <a name="overview-of-archiving-reuters-eikon-data"></a>Reuters Eikon データのアーカイブの概要
 
-次の概要では、コネクタを使用して Microsoft 365 の Reuters Eikon 情報をアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して Microsoft 365 の Reuters Eikon データをアーカイブするプロセスについて説明します。
 
 ![Reuters Eikon データのアーカイブワークフロー](../media/ReutersEikonConnectorWorkflow.png)
 
@@ -40,7 +40,7 @@ Reuters Eikon のデータがユーザーのメールボックスに格納され
 
 4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup)で説明されているように、自動ユーザーマッピングの*Email*プロパティの値を使用して、特定のユーザーのメールボックスにアイテムをインポートします。 ユーザーメールボックスに **Reuters Eikon** という名前の受信トレイフォルダー内のサブフォルダーが作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての Reuters Eikon item には、アイテムのすべての参加者の電子メールアドレスが設定されたこのプロパティが含まれています。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Globanet Merge1 アカウントを作成するには、余裕期間電子情報開示コネクタの使用条件に同意します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/contact-us)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
@@ -68,7 +68,7 @@ Reuters Eikon のデータがユーザーのメールボックスに格納され
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップしてコネクタのセットアップを完了する
 
-ユーザーをマップし、Microsoft 365 コンプライアンスセンターで設定したコネクタを完成させるには、次の手順を実行します。
+ユーザーをマップし、Microsoft 365 コンプライアンスセンターでコネクタの設定を完了するには、次の手順を実行します。
 
 1. [ **外部ユーザーを Microsoft 365 ユーザーにマップする** ] ページで、[自動ユーザーマッピング] を有効にします。 Reuters Eikon のアイテムには、組織内のユーザーの電子メールアドレスを含む *email*というプロパティが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合は、そのユーザーのメールボックスにアイテムがインポートされます。
 

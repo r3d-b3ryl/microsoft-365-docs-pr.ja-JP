@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet の会議から Microsoft 365 にデータをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 6c040d6955b8b3ef737fdccd648bd5993fc5c135
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361984"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399144"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>アーカイブへのコネクタの設定アーカイブ会議データ (プレビュー)
 
@@ -40,7 +40,7 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 4. このコネクタは、手順3で説明されているように、 *電子メール* プロパティの値と自動ユーザーマッピングを使用して、変換された会議アイテムを特定のユーザーのメールボックスにインポートします。 ユーザーのメールボックスには、" **ズーム会議** " という名前の受信トレイフォルダーに新しいサブフォルダーが作成され、会議アイテムはそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての会議アイテムには、会議のすべての参加者の電子メールアドレスが設定されたこのプロパティが含まれています。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Globanet Merge1 アカウントを作成するには、余裕期間電子情報開示コネクタの使用条件に同意します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/contact-us)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 

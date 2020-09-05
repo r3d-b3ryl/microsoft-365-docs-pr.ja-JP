@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet Symphony から Microsoft 365 にデータをインポートしてアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 29af0cda6d1f6b194c13047382ab7e01b6b200dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: ccd6676060d48027713203f9fe27e506635af92c
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361798"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399318"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>Symphony データをアーカイブするためのコネクタを設定する (プレビュー)
 
@@ -40,7 +40,7 @@ Symphony 通信がユーザーのメールボックスに格納された後、�
 
 4. このコネクタは、手順3で説明されているように、自動ユーザーマッピングの *Email* プロパティの値を使用して、変換されたメッセージアイテムを特定のユーザーのメールボックスにインポートします。 ユーザーメールボックスに **Symphony** という名前の受信トレイフォルダーに新しいサブフォルダーが作成され、そのフォルダーにメッセージアイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべてのチャットメッセージには、このプロパティが含まれており、チャットメッセージのすべての参加者の電子メールアドレスが設定されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - Symphony コネクタの使用条件に同意して、Globanet Merge1 アカウントを作成します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/contact-us)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
@@ -62,13 +62,13 @@ Symphony 通信がユーザーのメールボックスに格納された後、�
 
 ## <a name="configure-the-symphony-connector-on-the-globanet-merge1-site"></a>Globanet Merge1 サイトで Symphony コネクタを構成する
 
-2番目の手順は、Merge1 サイト上の Symphony コネクタを構成することです。 Globanet Merge1 サイトでの Symphony コネクタの構成の詳細については、「 [Merge1 サードパーティ製コネクタのユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf)」を参照してください。
+2番目の手順は、Merge1 サイト上の Symphony コネクタを構成することです。 Globanet Merge1 サイト上の Symphony コネクタの構成の詳細については、「 [Merge1 サードパーティ製コネクタのユーザーガイド](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf)」を参照してください。
 
 [ **保存 & 完了**] をクリックすると、Microsoft 365 コンプライアンスセンター、コネクタウィザードの [ **ユーザーマッピング** ] ページに戻ります。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>手順 3: ユーザーをマップしてコネクタのセットアップを完了する
 
-ユーザーをマップし、Microsoft 365 コンプライアンスセンターで設定したコネクタを完成させるには、次の手順を実行します。
+ユーザーをマップし、Microsoft 365 コンプライアンスセンターでコネクタの設定を完了するには、次の手順を実行します。
 
 1. [ **外部ユーザーを Microsoft 365 ユーザーにマップする** ] ページで、[自動ユーザーマッピング] を有効にします。 Symphony のアイテムには、組織内のユーザーの電子メールアドレスを含む *email*というプロパティが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合は、そのユーザーのメールボックスにアイテムがインポートされます。
 

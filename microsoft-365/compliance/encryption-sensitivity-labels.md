@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229437"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334860"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -211,9 +211,9 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 ### <a name="double-key-encryption"></a>二重キー暗号化
 
 > [!NOTE]
-> この機能は現在パブリック プレビューで展開中です。 詳細については、「[Microsoft 365 の二重キー暗号化のパブリック プレビューの発表](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)」 を参照してください。
+> この機能は現在パブリック プレビューの段階です。 詳細については、「[Microsoft 365 の二重キー暗号化のパブリック プレビューの発表](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)」 を参照してください。
 
-このオプションは、二重キー暗号化サービスを構成していて、このラベルを適用するドキュメントとメールにこの二重キー暗号化を使用する必要がある場合にのみ選択します。
+このオプションは、二重キー暗号化サービスを構成していて、このラベルを適用するファイルやメールにこの二重キー暗号化を使用する必要がある場合にのみ選択します。
 
 詳細、前提条件、構成手順については、「[二重キー暗号化 (DKE)](double-key-encryption.md)」を参照してください。
 
