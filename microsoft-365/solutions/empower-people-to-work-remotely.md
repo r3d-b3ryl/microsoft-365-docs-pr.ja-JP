@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898130"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357304"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -37,13 +37,33 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 ![Microsoft 365 でリモート ワーカーを支援する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| 主な機能 | 説明 |
-|:-------|:-----|
-| 接続しました | 世界中のどこからでも、いつでも、リモート ワーカーは以下にアクセスできます。 <ul><li>Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。 </li><li>オンプレミスのアプリケーション データセンターで提供されるような組織のリソース。</li></ul> |
-| セキュリティ保護 | サインインは、多要素認証 (MFA) や Microsoft 365 と Windows 10 の組み込みセキュリティ機能により、マルウェア、悪意のある攻撃、データ損失から保護されています。 |
-| 管理対象 | リモート ワーカーのデバイスは、許可されたアプリを介して、セキュリティ設定を備えたクラウドから管理され、システム正常性への準拠を要求します。 |
-| 共同作業と生産性 | リモート ワーカーは、次の高度な共同作業の手法により、オンプレミスと同じように生産性を高めることができます。 <ul><li>Teams を使用したオンライン会議とチャット セッション。 </li><li>SharePoint と OneDrive を使用してグローバルなアクセシビリティとリアルタイムの共同作業を実現する、クラウドベースのファイル ストレージ用の共有ワークスペース。 </li><li>作業を分割して完了するための共有タスクとワークフロー。 </li></ul> |
-|||
+このビデオでは、展開プロセスの手順の概要について説明します。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+このソリューションは、次の主要な機能を提供します。
+
+- 接続しました
+
+  世界中のどこからでも、いつでも、リモート ワーカーは以下にアクセスできます。 
+
+  - Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。 
+  - オンプレミスのアプリケーション データセンターで提供されるような組織のリソース。
+
+- セキュリティ保護
+
+  サインインは、多要素認証 (MFA) や Microsoft 365 と Windows 10 の組み込みセキュリティ機能により、マルウェア、悪意のある攻撃、データ損失から保護されています。
+
+- 管理対象
+
+  リモート ワーカーのデバイスは、許可されたアプリを介して、セキュリティ設定を備えたクラウドから管理され、システム正常性への準拠を要求します。
+
+- 共同作業と生産性
+
+  リモート ワーカーは、次の高度な共同作業の手法により、オンプレミスと同じように生産性を高めることができます。
+  - Teams を使用したオンライン会議とチャット セッション。 
+  - SharePoint と OneDrive を使用してグローバルなアクセシビリティとリアルタイムの共同作業を実現する、クラウドベースのファイル ストレージ用の共有ワークスペース。
+  - 作業を分割して完了するための共有タスクとワークフロー。 
 
 シームレスなサインイン エクスペリエンスを実現するには、オンプレミスの Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
 

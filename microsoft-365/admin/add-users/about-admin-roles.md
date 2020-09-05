@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 361c6599dfccbe7a80fa520bcd1fa988a1fae536
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506287"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361775"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
@@ -40,6 +40,10 @@ Microsoft 365 管理センターで管理できる詳細な Azure AD 役割の�
 Microsoft 365 管理センターで管理できる詳細な Intune 役割の説明の完全なリストをお探しですか?  「[Microsoft Intune の役割ベースのアクセス制御 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)」を確認してください。
 
 Microsoft 365 管理センターでの役割を割り当てる方法の詳細については、「[管理者ロールを割り当てる](assign-admin-roles.md)」を参照してください。
+
+### <a name="watch-what-is-an-admin"></a>ビデオ: 管理者とは
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>役割を割り当てるためのセキュリティ ガイドライン
 
