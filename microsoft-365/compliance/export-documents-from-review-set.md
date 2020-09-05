@@ -15,71 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: プレゼンテーションまたは外部レビューのために、校閲セットからコンテンツを選択してエクスポートまたはダウンロードする方法について説明します。
+description: プレゼンテーションまたは外部レビューのために、校閲セットからコンテンツを選択してエクスポートする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034095"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399180"
 ---
-# <a name="export-documents-from-a-review-set"></a><span data-ttu-id="07080-103">レビュー セットからドキュメントをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="07080-103">Export documents from a review set</span></span>
+# <a name="export-documents-from-a-review-set"></a><span data-ttu-id="fbb3d-103">レビュー セットからドキュメントをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="fbb3d-103">Export documents from a review set</span></span>
 
-<span data-ttu-id="07080-104">次のいずれかの方法で、プレゼンテーションまたは外部レビューのコンテンツをレビューセットからエクスポートできます。</span><span class="sxs-lookup"><span data-stu-id="07080-104">You can export content for presentation or external review from a review set by one of the following methods:</span></span>
+<span data-ttu-id="fbb3d-104">[エクスポートすると、ユーザーはダウンロードパッケージに含まれるコンテンツをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-104">Export allows users to customize the content that is included in the download package.</span></span> <span data-ttu-id="fbb3d-105">エクスポートツールでは、次の設定の構成ページが提供されます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-105">The Export tool provides a configuration page with the following settings:</span></span>
 
-- [<span data-ttu-id="07080-105">ドキュメントのダウンロード</span><span class="sxs-lookup"><span data-stu-id="07080-105">Download documents</span></span>](#download-documents-from-a-review-set)
- 
-- [<span data-ttu-id="07080-106">ドキュメントのエクスポート</span><span class="sxs-lookup"><span data-stu-id="07080-106">Export documents</span></span>](#export-documents-from-a-review-set)
+![レビューセットからアイテムをエクスポートするためのオプション](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## <a name="download-documents-from-a-review-set"></a><span data-ttu-id="07080-107">校閲セットからドキュメントをダウンロードする</span><span class="sxs-lookup"><span data-stu-id="07080-107">Download documents from a review set</span></span>
+## <a name="export-options"></a><span data-ttu-id="fbb3d-107">エクスポート オプション</span><span class="sxs-lookup"><span data-stu-id="fbb3d-107">Export options</span></span>
 
-<span data-ttu-id="07080-108">ダウンロードは、ネイティブ形式のレビューセットからコンテンツをダウンロードする簡単な方法を提供します。</span><span class="sxs-lookup"><span data-stu-id="07080-108">Download offers a simple way to download content from a review set in Native format.</span></span> <span data-ttu-id="07080-109">ブラウザーのデータ転送機能を利用して、ダウンロードが完了するとブラウザーのプロンプトが表示されるようになります。</span><span class="sxs-lookup"><span data-stu-id="07080-109">It leverages the browser's data transfer features so a browser prompt will appear once a download is ready.</span></span> <span data-ttu-id="07080-110">このメソッドを使用してダウンロードしたファイルは、コンテナーファイルに圧縮され、アイテムレベルのファイルになります。</span><span class="sxs-lookup"><span data-stu-id="07080-110">Files downloaded using this method will be zipped into a container file and will be item level files.</span></span> <span data-ttu-id="07080-111">これは、添付ファイルを選択すると、添付ファイルが含まれている電子メールを自動的に受信することを意味します。</span><span class="sxs-lookup"><span data-stu-id="07080-111">This means that if you select an attachment, you will automatically receive the email with the attachment included.</span></span> <span data-ttu-id="07080-112">同様に、word 文書に埋め込まれた excel スプレッドシートを選択すると、excel スプレッドシートが埋め込まれた word 文書が表示されます。</span><span class="sxs-lookup"><span data-stu-id="07080-112">Similarly, if you select an excel spreadsheet that was embedded in a word document, you will receive the word document with the excel spreadsheet embedded.</span></span> <span data-ttu-id="07080-113">ダウンロードされたアイテムは、ファイルプロパティとして表示できる最終変更日を保持します。</span><span class="sxs-lookup"><span data-stu-id="07080-113">Downloaded items will preserve the last modified date which can be viewed as a file property.</span></span>
+- <span data-ttu-id="fbb3d-108">[エクスポート名: エクスポートジョブの名前。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-108">Export name: Name of the export job.</span></span>
 
-<span data-ttu-id="07080-114">レビューセットからコンテンツをダウンロードするには、ダウンロードするファイルを選択してから、[操作] メニューの [ダウンロード] を選択します。</span><span class="sxs-lookup"><span data-stu-id="07080-114">To download content from a review set, start by selecting the files you want to download then select "Download" under the Actions menu.</span></span>
+- <span data-ttu-id="fbb3d-109">Description: 説明を追加するための自由テキストフィールド。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-109">Description: Free-text field for you to add a description.</span></span>
 
-![コンピューターの説明のスクリーンショットが自動的に生成される](../media/eDiscoDownload.png)
+- <span data-ttu-id="fbb3d-110">エクスポートするドキュメント:</span><span class="sxs-lookup"><span data-stu-id="fbb3d-110">Export these documents:</span></span>
 
-## <a name="export-documents-from-a-review-set"></a><span data-ttu-id="07080-116">レビュー セットからドキュメントをエクスポートする</span><span class="sxs-lookup"><span data-stu-id="07080-116">Export documents from a review set</span></span>
+  - <span data-ttu-id="fbb3d-111">[選択したドキュメントのみ-現在選択されているドキュメントのみをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-111">Selected documents only - Exports only the documents that are currently selected.</span></span>
+  
+  - <span data-ttu-id="fbb3d-112">レビューのすべてのドキュメント-レビューセット内のすべてのドキュメントをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-112">All documents in the review set - Exports all documents in the review set</span></span>
 
-<span data-ttu-id="07080-117">[エクスポートすると、ユーザーはダウンロードパッケージに含まれるコンテンツをカスタマイズできます。</span><span class="sxs-lookup"><span data-stu-id="07080-117">Export allows users to customize the content that is included in the download package.</span></span> <span data-ttu-id="07080-118">構成ページには、次の設定が用意されています。</span><span class="sxs-lookup"><span data-stu-id="07080-118">It provides a configuration page with the following settings:</span></span>
+- <span data-ttu-id="fbb3d-113">のメタデータ</span><span class="sxs-lookup"><span data-stu-id="fbb3d-113">Metadata</span></span>
+  
+  - <span data-ttu-id="fbb3d-114">Load file-このファイルには、各ファイルのメタデータが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-114">Load file - This file contains metadata for each file.</span></span> <span data-ttu-id="fbb3d-115">含まれるフィールドの詳細については、「 [Advanced 電子情報開示のドキュメントメタデータフィールド](document-metadata-fields-in-Advanced-eDiscovery.md) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-115">see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md) for more information about what fields are included.</span></span> <span data-ttu-id="fbb3d-116">このファイルは、通常、サードパーティの電子情報開示ツールによって取り込まれたできます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-116">This file can typically be ingested by third-party eDiscovery tools.</span></span>
+  
+  - <span data-ttu-id="fbb3d-117">Tags-選択されている場合、タグ付け情報はロードファイルに含まれます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-117">Tags - When selected, tagging information will be included in the load file.</span></span>
 
-### <a name="metadata-file"></a><span data-ttu-id="07080-119">メタデータファイル</span><span class="sxs-lookup"><span data-stu-id="07080-119">Metadata file</span></span>
-
-<span data-ttu-id="07080-120">これは、エクスポートするファイルに関連付けられたメタデータを含む "load file" と考えることができます。</span><span class="sxs-lookup"><span data-stu-id="07080-120">This can be considered your "load file" that contains metadata associated with the files you export.</span></span> <span data-ttu-id="07080-121">メタデータファイルで使用できるエクスポートフィールドの一覧については、「 [Advanced 電子情報開示のドキュメントメタデータフィールド](document-metadata-fields-in-Advanced-eDiscovery.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="07080-121">For a list of exported fields available in the metadata file, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).</span></span> <span data-ttu-id="07080-122">このファイルは、通常、サードパーティ製のツールによって取り込まれたできます。</span><span class="sxs-lookup"><span data-stu-id="07080-122">This file can typically be ingested by third-party tools.</span></span>
-
-### <a name="tag-data"></a><span data-ttu-id="07080-123">タグデータ</span><span class="sxs-lookup"><span data-stu-id="07080-123">Tag data</span></span>
-
-<span data-ttu-id="07080-124">このコンテンツは、メタデータファイルのフィールドとして追加されます。</span><span class="sxs-lookup"><span data-stu-id="07080-124">This content would be added as fields in the metadata file.</span></span> <span data-ttu-id="07080-125">これには、校閲セットに適用されるすべてのタグ情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="07080-125">It contains all of the tag information applied in review sets.</span></span>
-
-### <a name="text-files"></a><span data-ttu-id="07080-126">テキスト ファイル</span><span class="sxs-lookup"><span data-stu-id="07080-126">Text files</span></span>
-
-<span data-ttu-id="07080-127">レビューセットからエクスポートされたファイルごとに、テキストファイルを生成できます。</span><span class="sxs-lookup"><span data-stu-id="07080-127">Text files can be generated for each file exported from a review set.</span></span> <span data-ttu-id="07080-128">これらのファイルは、多くの場合、サービスパートナーが取り込むデータの一部としてサードパーティ製ツールに必要とする場合があります。</span><span class="sxs-lookup"><span data-stu-id="07080-128">Often times these files are required by service partners as part of ingesting data into third-party tools.</span></span>
-
-### <a name="redacted-files"></a><span data-ttu-id="07080-129">がファイル</span><span class="sxs-lookup"><span data-stu-id="07080-129">Redacted files</span></span>
-
-<span data-ttu-id="07080-130">レビュー中にが PDF ファイルが生成された場合、これらのファイルはエクスポート中に利用できます。</span><span class="sxs-lookup"><span data-stu-id="07080-130">If redacted PDF files are generated during review, these files are available during export.</span></span> <span data-ttu-id="07080-131">ネイティブファイルのみをエクスポートするか、または校正を必要とするネイティブファイルを、実際の redactions を含む PDF ファイルに置き換えるかを決定できます。</span><span class="sxs-lookup"><span data-stu-id="07080-131">You can decide whether to export native files only or to replace the native files that required redaction with the PDF files that contain the actual redactions.</span></span>
-
-### <a name="export-location"></a><span data-ttu-id="07080-132">エクスポート場所</span><span class="sxs-lookup"><span data-stu-id="07080-132">Export location</span></span>
-
-<span data-ttu-id="07080-133">エクスポートされたコンテンツは、Microsoft が提供する Azure blob またはお客様の blob のいずれかに配信されます。詳細については、export で提供されている場合があります。</span><span class="sxs-lookup"><span data-stu-id="07080-133">Exported content is delivered to either a Microsoft provided Azure blob or a customer's blob can be used if the details are provided at export.</span></span>
-
-### <a name="export-structure"></a><span data-ttu-id="07080-134">エクスポート構造</span><span class="sxs-lookup"><span data-stu-id="07080-134">Export structure</span></span>
-
-<span data-ttu-id="07080-135">コンテンツが校閲セットからエクスポートされると、コンテンツは次のように構成されます。</span><span class="sxs-lookup"><span data-stu-id="07080-135">When content is exported from a review set, the content is organized in the following structure.</span></span>
-
-  - <span data-ttu-id="07080-136">ルートフォルダー–ダウンロード ID</span><span class="sxs-lookup"><span data-stu-id="07080-136">Root folder – Download ID</span></span>
+- <span data-ttu-id="fbb3d-118">コンテンツ</span><span class="sxs-lookup"><span data-stu-id="fbb3d-118">Content</span></span>
+  
+  - <span data-ttu-id="fbb3d-119">ネイティブファイル-ネイティブファイルを含める場合は、このチェックボックスをオンにします。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-119">Native files - Select this checkbox to include the native files.</span></span>
+  
+  - <span data-ttu-id="fbb3d-120">会話オプション</span><span class="sxs-lookup"><span data-stu-id="fbb3d-120">Conversation options</span></span>
     
-      - <span data-ttu-id="07080-137">Load\_\_ファイル .csv = メタデータファイルのエクスポート</span><span class="sxs-lookup"><span data-stu-id="07080-137">Export\_load\_file.csv = metadata file</span></span>
+    - <span data-ttu-id="fbb3d-121">会話ファイル-再構築したチャットメッセージをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-121">Conversation files - Export reconstructed chat messages.</span></span> <span data-ttu-id="fbb3d-122">この形式では、ネイティブアプリケーションでユーザーに表示されるものと同じような形式で会話が表示されます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-122">This format presents conversations in a form that resembles what users see in the native application.</span></span>
     
-      - <span data-ttu-id="07080-138">Summary.txt = エクスポート統計情報を含む要約ファイル</span><span class="sxs-lookup"><span data-stu-id="07080-138">Summary.txt = a summary file with export statistics</span></span>
+    - <span data-ttu-id="fbb3d-123">個別のチャットメッセージ-Microsoft 365 に格納されているとおりに、元の会話ファイルをエクスポートします。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-123">Individual chat messages - Export the original conversation files as they are stored in Microsoft 365.</span></span>
+
+- <span data-ttu-id="fbb3d-124">Options</span><span class="sxs-lookup"><span data-stu-id="fbb3d-124">Options</span></span>
+
+  - <span data-ttu-id="fbb3d-125">テキストファイル-展開されたテキストバージョンのネイティブファイルが含まれます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-125">Text files - Include extracted text versions of native files.</span></span>
+  
+  - <span data-ttu-id="fbb3d-126">が natives を変換された Pdf に置換する-レビュー中にが PDF ファイルが生成された場合、これらのファイルはエクスポートに使用できます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-126">Replace redacted natives with converted PDFs - If redacted PDF files are generated during review, these files are available for export.</span></span> <span data-ttu-id="fbb3d-127">このオプションを選択しないことで、がされていたネイティブファイルのみをエクスポートすることを選択することも、このオプションを選択して、実際の redactions を含む PDF ファイルをエクスポートすることもできます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-127">You can choose to export only the native files that were redacted (by not selecting this option) or you can select this option to export the PDF files that contain the actual redactions.</span></span>
+
+- <span data-ttu-id="fbb3d-128">出力オプション (エクスポートされたコンテンツは、web ブラウザーを使用して直接ダウンロードすることも、Azure ストレージアカウントに送信することもできます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-128">Output options (Exported content is either available for download directly through a web browser or can be sent to an Azure Storage account.</span></span> <span data-ttu-id="fbb3d-129">最初の2つのオプションは、直接ダウンロードを有効にします。)</span><span class="sxs-lookup"><span data-stu-id="fbb3d-129">The first two options enable direct download.)</span></span>
+  
+  - <span data-ttu-id="fbb3d-130">圧縮されていないファイルおよび Pst (可能な場合はメールが Pst に追加されます)-ファイルは、ユーザーがネイティブアプリケーションで表示する元のディレクトリ構造に似た形式でエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-130">Loose files and PSTs (email is added to PSTs when possible) - Files are exported in a format that resembles the original directory structure seen by users in their native applications.</span></span>  <span data-ttu-id="fbb3d-131">詳細については、「圧縮されていない [ファイルおよび PST のエクスポート構造](#loose-files-and-pst-export-structure) 」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-131">For more information, see the [Loose files and PST export structure](#loose-files-and-pst-export-structure) section.</span></span>
+  
+  - <span data-ttu-id="fbb3d-132">圧縮されたディレクトリ構造-ファイルがエクスポートされ、ダウンロードに含まれます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-132">Condensed directory structure - Files are exported and included in the download.</span></span>
+  
+  - <span data-ttu-id="fbb3d-133">圧縮されたディレクトリ構造を Azure Storage account にエクスポートします。ファイルは、組織の Azure Storage accouunt にエクスポートされます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-133">Condensed directory structure exported to your Azure Storage account - Files are exported to your organization's Azure Storage accouunt.</span></span>
+
+## <a name="loose-files-and-pst-export-structure"></a><span data-ttu-id="fbb3d-134">ルースファイルおよび PST エクスポート構造</span><span class="sxs-lookup"><span data-stu-id="fbb3d-134">Loose files and PST export structure</span></span>
+
+<span data-ttu-id="fbb3d-135">このエクスポートオプションを選択した場合、エクスポートされたコンテンツは次の構造で構成されます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-135">If you select this export option, the exported content is organized in the following structure:</span></span>
+
+- <span data-ttu-id="fbb3d-136">ルートフォルダー–名前付き ExportName.zip のこのフォルダー</span><span class="sxs-lookup"><span data-stu-id="fbb3d-136">Root folder – This folder in named ExportName.zip</span></span>
+  
+  - <span data-ttu-id="fbb3d-137">Export_load_file.csv メタデータファイル。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-137">Export_load_file.csv - Metadata file.</span></span>
+  
+  - <span data-ttu-id="fbb3d-138">Summary.csv-エクスポート統計情報も含む要約ファイル。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-138">Summary.csv - A summary file that also contains export statistics.</span></span>
+  
+  - <span data-ttu-id="fbb3d-139">Exchange-このフォルダーには、Exchange からのすべてのコンテンツがネイティブファイル形式で格納されます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-139">Exchange - This folder contains all content from Exchange in native file format.</span></span> <span data-ttu-id="fbb3d-140">[ **変換した pdf を使用してが Natives を置換** する] オプションを選択した場合、Natives ファイルはが pdf に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-140">Natives files are replaced with redacted PDFs if you selected the **Replace redacted natives with converted PDFs** option.</span></span>
+  
+  - <span data-ttu-id="fbb3d-141">SharePoint = このフォルダーには、ネイティブファイル形式で SharePoint からのすべてのネイティブコンテンツが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-141">SharePoint = This folder contains all native content from SharePoint in a native file format.</span></span> <span data-ttu-id="fbb3d-142">[ **変換した pdf を使用してが Natives を置換** する] オプションを選択した場合、Natives ファイルはが pdf に置き換えられます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-142">Natives files are replaced with redacted PDFs if you selected the **Replace redacted natives with converted PDFs** option.</span></span>
+
+## <a name="condensed-directory-structure"></a><span data-ttu-id="fbb3d-143">圧縮ディレクトリ構造</span><span class="sxs-lookup"><span data-stu-id="fbb3d-143">Condensed directory structure</span></span>
+
+- <span data-ttu-id="fbb3d-144">ルートフォルダー-このフォルダーには ExportName.zip という名前が付けられます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-144">Root folder - This folder is named ExportName.zip</span></span>
+  
+  - <span data-ttu-id="fbb3d-145">Export_load_file.csv メタデータファイル。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-145">Export_load_file.csv - Metadata file.</span></span>
+  
+  - <span data-ttu-id="fbb3d-146">Summary.txt-エクスポート統計情報も含む要約ファイル。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-146">Summary.txt - A summary file that also contains export statistics.</span></span>
+  
+  - <span data-ttu-id="fbb3d-147">Input_or_native_files-このフォルダーには、エクスポートされたすべてのネイティブファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-147">Input_or_native_files - This folder contains all the native files that were exported.</span></span> <span data-ttu-id="fbb3d-148">が PDF ファイルをエクスポートする場合、それらのファイルは PST ファイルには配置されません。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-148">If you export redacted PDF files, they are not put in PST files.</span></span> <span data-ttu-id="fbb3d-149">代わりに、それらのフォルダーは個別のフォルダーに追加されます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-149">Instead, they're added to a separated folder.</span></span>
+  
+  - <span data-ttu-id="fbb3d-150">Error_files-このフォルダーには、次のエラーファイルが含まれています (エクスポートに含まれている場合)。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-150">Error_files - This folder contains the following error files, if they are included in the export:</span></span>
     
-      - <span data-ttu-id="07080-139">入力\_ファイルまた\_はネイティブファイル = すべてのネイティブファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="07080-139">Input\_or native\_files = contains all native files</span></span>
+    - <span data-ttu-id="fbb3d-151">ExtractionError。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-151">ExtractionError.</span></span> <span data-ttu-id="fbb3d-152">親ファイルから正しく抽出されなかったファイルの利用可能なメタデータを含む CSV ファイル。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-152">A CSV file that contains any available metadata of files that weren't properly extracted from parent files.</span></span>
     
-      - <span data-ttu-id="07080-140">エラー\_ファイル = エクスポートに含まれているエラーファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="07080-140">Error\_files = contains any error files included in the export</span></span>
-        
-          - <span data-ttu-id="07080-141">ExtractionError –親ファイルから正しく抽出されなかったファイルの利用可能なメタデータを含む csv。</span><span class="sxs-lookup"><span data-stu-id="07080-141">ExtractionError – a csv that contains any available metadata of files that were not properly extracted from parent files</span></span>
-        
-          - <span data-ttu-id="07080-142">ProcessingError-処理エラーがあるコンテンツ。</span><span class="sxs-lookup"><span data-stu-id="07080-142">ProcessingError – content with processing errors.</span></span> <span data-ttu-id="07080-143">このコンテンツはアイテムレベルを意味する。添付ファイルに処理エラーが発生した場合、添付ファイルを含む電子メールはこのフォルダーに含まれます。</span><span class="sxs-lookup"><span data-stu-id="07080-143">This content is item level meaning if an attachment experienced a processing error, the email that contains the attachment will be included in this folder.</span></span>
-    
-      - <span data-ttu-id="07080-144">抽出\_さ\_れたテキストファイル = 処理時に生成されたすべての抽出済みテキストファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="07080-144">Extracted\_text\_files = contains all of the extracted text files generated at processing.</span></span>
+    - <span data-ttu-id="fbb3d-153">ProcessingError-このファイルには、処理エラーが発生したドキュメントの一覧が含まれています。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-153">ProcessingError – This file contains a list of documents with processing errors.</span></span> <span data-ttu-id="fbb3d-154">このコンテンツはアイテムレベルです。つまり、添付ファイルの結果として処理エラーが発生した場合、添付ファイルを含む電子メールメッセージがこのフォルダーに含まれます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-154">This content is item-level, meaning if an attachment resulted in a processing error, the email message that contains the attachment is included in this folder.</span></span>
+  
+  - <span data-ttu-id="fbb3d-155">Extracted_text_files-このフォルダーには、処理で生成されたすべての抽出済みテキストファイルが含まれています。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-155">Extracted_text_files - This folder contains all of the extracted text files that were generated at processing.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="fbb3d-156">エクスポートジョブは、ケースの期間中は保持され、そのケースが削除されていない限り、ダウンロードできます。</span><span class="sxs-lookup"><span data-stu-id="fbb3d-156">Export jobs are retained for the life of the case and can be downloaded as long as the case isn't deleted.</span></span>
