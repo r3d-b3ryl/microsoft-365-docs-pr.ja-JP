@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、ユーザーによって報告されたスパムやフィッシング電子メールを収集するようにメールボックスを構成する方法について説明します。
-ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: e482399adb6304840b8286a226800e6b9dcb6813
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294755"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394725"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Exchange Online でスパムおよびフィッシングメッセージをユーザーが送信するためのメールボックスを指定する
 
@@ -43,17 +43,10 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ **ユーザーの送信** ] ページに直接移動するには、を使用 <https://protection.office.com/userSubmissionsReportMessage> します。
 
-- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
+- ユーザー送信の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
 
-  - ユーザー送信の構成を変更するには、次のいずれかの役割グループのメンバーである必要があります。
-
-    - Azure AD および**組織の管理**または**セキュリティ管理者**および[セキュリティ & コンプライアンスセンター](permissions-in-the-security-and-compliance-center.md)の**[Exchange 管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
-    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
-
-  - ユーザーの発信への読み取り専用アクセスでは、次の両方の役割グループのメンバーである必要があります。
-
-    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
+  - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**組織の管理**。
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>セキュリティ & コンプライアンスセンターを使用してユーザー送信メールボックスを構成する
 

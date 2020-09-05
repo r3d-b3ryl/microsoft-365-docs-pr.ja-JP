@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255747"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394683"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>Microsoft Threat Protection の高度な捜索により、脅威を積極的に捜索する
 
@@ -39,7 +39,7 @@ ms.locfileid: "47255747"
 
 同じ脅威を捜索しているクエリを使用して、カスタムの検出ルールを作成できます。 これらのルールは自動的に実行され、違反の疑いがあるアクティビティや誤って構成されたコンピュータといった、さまざまなイベントやシステム状態をチェックして対処します。
 
-この機能は、microsoft [DEFENDER atp での高度な](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)検索に似ていますが、microsoft 365 セキュリティセンターでは、MICROSOFT defender Atp、OFFICE 365 Atp、Microsoft Cloud App security、および Azure ATP からのデバイス、メール、アプリ、id に関するデータを含む、さまざまなワークスペースからのデータを参照するクエリをサポートしています。 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
+この機能は、microsoft [DEFENDER atp での高度な](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)検索と似ていますが、microsoft 365 セキュリティセンターで利用可能な Microsoft の脅威保護では、MICROSOFT defender Atp、OFFICE 365 Atp、Microsoft Cloud App security、および Azure ATP のデバイス、メール、アプリ、id に関するデータを含む、さまざまなワークスペースからのデータを参照するクエリをサポートします 高度な捜索を使用するには、[Microsoft Threat Protection を有効](mtp-enable.md)にします。
 
 ## <a name="get-started-with-advanced-hunting"></a>高度な捜索を開始する
 
