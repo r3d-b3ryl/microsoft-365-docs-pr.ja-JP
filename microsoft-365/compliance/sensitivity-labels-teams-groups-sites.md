@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: ecc84196435125c83ff9518c2758e3f2611427b3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307796"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357789"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -33,6 +33,9 @@ ms.locfileid: "47307796"
 - Microsoft 365 グループに接続されているチーム サイトのプライバシー (パブリックまたはプライベート)
 - 外部ユーザーのアクセス
 - 非管理対象デバイスからのアクセス
+
+> [!IMPORTANT]
+> **[管理されていないデバイスからのアクセス]** 設定は、SharePoint機能と連動して、[管理されていないデバイスからのアクセスを制御します](/sharepoint/control-access-from-unmanaged-devices)。 テナントがこの設定が構成されている機密ラベルを使用するには、この依存 SharePoint 機能を構成する必要があります。 追加情報については、以下の手順を参照してください。
 
 サポートされているコンテナーにこの秘密度ラベルを適用すると、分類および保護の設定が、接続されたサイトまたはグループに自動的に適用されます。
 
@@ -83,7 +86,13 @@ ms.locfileid: "47307796"
 
 - **外部ユーザー アクセス**: グループの所有者が[ゲストをグループに追加](/office365/admin/create-groups/manage-guest-access-in-groups)できるかどうかを制御します。
 
-- **非管理対象デバイス**: [非管理対象デバイス](/sharepoint/control-access-from-unmanaged-devices)の場合、フル アクセスを許可するか、Web のみのアクセスを許可するか、またはアクセスを完全にブロックします。 この設定をテナント レベルまたは特定のサイトで構成した場合、ここで指定した設定は、より制限の厳しい場合にのみ適用されます。
+- **非管理対象デバイス**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能も構成する必要があります。 手順については、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定に指定するオプションは、[特定のSharePointサイトまたはOneDriveへのアクセスをブロックまたは制限する](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) ことと同等です。
+    
+    依存する SharePoint 機能を構成しない場合、ここで指定するオプションは効果がありません。 また、テナントレベルで構成された設定よりも制限が少ない場合は効果がありません。 テナントレベルの設定と同じか、より制限的なラベル設定を選択します。
+    
+    たとえば、テナントが [**制限されたWebのみのアクセスを許可する**] に構成されている場合、フルアクセスを許可するラベル設定は制限が少ないため、効果がありません。 このテナントレベルの設定では、アクセスをブロックするためのラベル設定 (より制限的) または制限付きアクセスのためのラベル設定 (テナント設定と同じ) を選択します。
+    
+    SharePoint 機能はラベル構成とは別に構成できるため、機密ラベルウィザードで依存関係が設定されているかどうかのチェックは行われません。
 
 ![[サイトとグループの設定] タブ](../media/edit-sensitivity-label-site-group2.png)
 
@@ -272,7 +281,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
   - Yammer
   - Planner
   - Project
-  - PowerBI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>従来の Azure AD グループの分類
 
