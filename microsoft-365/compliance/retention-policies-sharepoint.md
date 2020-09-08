@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315790"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394704"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -98,4 +98,9 @@ SharePoint と OneDrive では、保持をサポートするためにアイテ�
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-Microsoft 365 で保持を構成する準備ができている場合は、「[アイテム保持ポリシーと保持ラベルの使用を開始する](get-started-with-retention.md)」を参照してください。
+Microsoft 365 で保持を構成するのが初めての場合は、「[アイテム保持ポリシーと保持ラベルの使用を開始する](get-started-with-retention.md)」を参照してください。
+
+Exchange のアイテム保持ポリシーまたは保持ラベルを構成する準備ができたら、以下の手順をご覧ください。
+- [アイテム保持ポリシーを作成して構成する](create-retention-policies.md)
+- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+- [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)

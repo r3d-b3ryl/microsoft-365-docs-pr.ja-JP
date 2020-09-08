@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334860"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399266"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
 
@@ -170,7 +170,7 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 
 ベスト プラクティスとして、ユーザーではなくグループを使用します。この方針により、シンプルな構成を維持できます。
 
-##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>[**Add any authenticated users**] (すべての認証されたユーザーを追加) の要件と制限事項
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>[Add any authenticated users] (すべての認証されたユーザーを追加) の要件と制限事項
 
 この設定では、ラベルによって暗号化されているコンテンツにアクセスできるユーザーは制限されませんが、コンテンツの暗号化は実行され、コンテンツの使用 (アクセス許可) およびコンテンツへのアクセス (有効期限とオフライン アクセス) を制限するオプションが提供されます。 ただし、暗号化されたコンテンツを開くために使用するアプリケーションでは、使用する認証方法がサポートされている必要があります。 このため、Google などのフェデレーションされたソーシャル プロバイダーやワンタイム パスコード認証はメールに対してのみ動作し、動作するのは Exchange Online を使用した場合のみになります。 Microsoft アカウントは、Office 365 アプリおよび [Azure Information Protection ビューアー](https://portal.azurerms.com/#/download)で使用できます。
 
@@ -213,7 +213,7 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 > [!NOTE]
 > この機能は現在パブリック プレビューの段階です。 詳細については、「[Microsoft 365 の二重キー暗号化のパブリック プレビューの発表](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)」 を参照してください。
 
-このオプションは、二重キー暗号化サービスを構成していて、このラベルを適用するファイルやメールにこの二重キー暗号化を使用する必要がある場合にのみ選択します。
+このオプションは、二重キー暗号化サービスを構成していて、このラベルを適用するファイルにこの二重キー暗号化を使用する必要がある場合にのみ選択します。
 
 詳細、前提条件、構成手順については、「[二重キー暗号化 (DKE)](double-key-encryption.md)」を参照してください。
 
