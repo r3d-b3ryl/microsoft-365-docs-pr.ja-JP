@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 67bd00a83314590d1ca1ab71c32d5a325686dc46
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514780"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399224"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpoint Data Loss Prevention (プレビュー) を開始する
 
@@ -99,17 +99,17 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
 2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。 
 
-![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   ![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-> [!NOTE]
-> 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
+   > [!NOTE]
+   > 通常、デバイスのオンボーディングが有効になるまで約 60 秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかる場合があります。
 
 3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 デバイスをオンボードするまで、リストは空になります。
 4. オンボーディングプロセスを開始するには、[**オンボーディング**]を選択します。
 5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、**パッケージをダウンロード**します。
 
-![導入方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-1. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックしますと、手順 5 で選択した導入パッケージと一致するMDATPプロシージャにアクセスするランディングページが表示されます。
+   ![導入方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+6. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックしますと、手順 5 で選択した導入パッケージと一致するMDATPプロシージャにアクセスするランディングページが表示されます。
     - グループポリシーを使用した Windows 10 マシンのオンボード
     - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
     - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
@@ -152,7 +152,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 ## <a name="next-steps"></a>次の手順
 デバイスがオンボードされ、Activity Explorer でアクティビティデータを表示できるようになりました。次の手順に進み、機密アイテムを保護する DLP ポリシーを作成します。
 
-1) [エンドポイントのデータ損失防止の使用 (プレビュー) ](endpoint-dlp-using.md)
+- [エンドポイントのデータ損失防止の使用 (プレビュー) ](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>こちらもご覧ください
 
