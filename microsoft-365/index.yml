@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: 管理者と IT プロフェッショナル向けの Microsoft 365 ヘルプ センター
-summary: Microsoft 365 のヘルプとトレーニング リソースをご覧ください。
+title: Microsoft 365 ドキュメント
+summary: お客様のビジネスや組織で Microsoft 365 の使用を開始するために必要なソリューション、シナリオ、リソースを案内します。
 brand: m365
 metadata:
-  title: 管理者と IT プロフェッショナル向けの Microsoft 365 ヘルプ センター
-  description: 組織、小規模企業、キャンペーン、教育者、学生をサポートするために、Microsoft 365 をセットアップし、展開し、管理します
+  title: Microsoft 365 ドキュメント
+  description: お客様のビジネスや組織で Microsoft 365 の使用を開始するために必要なソリューション、シナリオ、リソースを案内します。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -13,61 +13,241 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
-  ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+  ms.openlocfilehash: 2f414fe4556735a367bab9f08d8496f48843cb9e
+  ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "44909290"
+  ms.lasthandoff: 09/04/2020
+  ms.locfileid: "47399113"
 highlightedContent:
   items:
-  - title: 管理者と IT プロフェッショナル向けのトレーニング
-    itemType: learn
-    url: https://docs.microsoft.com/learn/m365/
-  - title: エンド ユーザー向けのトレーニング
-    itemType: learn
-    url: https://support.office.com/modernworkplace
-  - title: クラウドでビジネスをセットアップする
-    itemType: learn
-    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-  - title: IT プロフェッショナル向けのテスト ラボ ガイド
+  - title: リモート ワーカーの支援
     itemType: how-to-guide
-    url: ./enterprise/m365-enterprise-test-lab-guides.md
-  - title: Microsoft 365 技術コミュニティ
+    url: solutions/empower-people-to-work-remotely.md
+  - title: Microsoft Teams を使用したリモート学習
     itemType: get-started
-    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-  - title: 開発者向けのリソース
-    itemType: reference
-    url: https://developer.microsoft.com/microsoft-365
+    url: /MicrosoftTeams/remote-learning-edu
+  - title: Microsoft Learn を使用してスキルを身に付ける
+    itemType: learn
+    url: /learn/m365/
+  - title: Microsoft 365 を使用して小規模事業を構築する
+    itemType: quickstart
+    url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+productDirectory:
+  title: Microsoft 365 のソリューションとシナリオ
+  items:
+  - title: Microsoft 365 ソリューション
+    imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    links:
+    - url: solutions/empower-people-to-work-remotely.md
+      text: リモート ワーカーの支援
+    - url: solutions/setup-secure-collaboration-with-teams.md
+      text: セキュリティで保護されたコラボレーションの設定
+    - url: solutions/deploy-threat-protection.md
+      text: 脅威に対する保護の展開
+    - url: solutions/information-protection-deploy.md
+      text: データ プライバシー規制用の情報保護の展開
+    - url: campaigns/index.md
+      text: Microsoft 365 for Campaigns (小規模事業向けのセキュリティ ガイダンス)
+  - title: 会議と通信
+    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    links:
+    - url: /MicrosoftTeams/quick-start-meetings-live-events
+      text: Microsoft Teams での会議とライブ イベント
+    - url: /MicrosoftTeams/business-voice/whats-business-voice
+      text: Microsoft 365 Business Voice
+    - url: /MicrosoftTeams/cloud-voice-landing-page
+      text: Microsoft Teams のクラウド ボイス
+    - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+      text: Microsoft テレフォニー ソリューション
+  - title: チームと連携する
+    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    links:
+    - url: solutions/collaborate-with-people-outside-your-organization.md
+      text: 外部共有の構成
+    - url: /sharepoint/plan-intranet
+      text: インテリジェントな SharePoint イントラネットの計画
+    - url: /sharepoint/deploy-file-collaboration
+      text: SharePoint でのファイル上の共同作業
+    - url: /onedrive/plan-onedrive-enterprise
+      text: エンタープライズ向けの OneDrive ガイド
+  - title: アーキテクチャのリソース
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    links:
+    - url: solutions/productivity-illustrations.md
+      text: Microsoft 365 の生産性図
+    - url: solutions/cloud-architecture-models.md
+      text: Microsoft クラウド アーキテクチャ モデル
+    - url: solutions/design-principles.md
+      text: エンタープライズ アーキテクチャの設計原則
+  - title: 組織をセキュリティで保護する
+    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    links:
+    - url: security/top-security-tasks-for-remote-work.md
+      text: 自宅での作業をサポートするセキュリティ チームの主なタスク
+    - url: solutions/configure-teams-three-tiers-protection.md
+      text: Microsoft Teams を使用して ３ つのレベルでの保護を構成する
+    - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+      text: Microsoft Defender Advanced Threat Protection の展開
+    - url: security/office-365-security/office-365-atp.md
+      text: Office 365 Advanced Threat Protection の展開
+    - url: enterprise/microsoft-365-policies-configurations.md
+      text: ID と デバイス アクセスの保護を構成する
+  - title: 情報の保護と規制遵守
+    imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+    links:
+    - url: compliance/compliance-quick-tasks.md
+      text: Microsoft 365 コンプライアンスを開始するためのクイック タスク
+    - url: compliance/protect-information.md
+      text: 情報保護の管理
+    - url: compliance/manage-information-governance.md
+      text: 情報ガバナンスの管理
+    - url: compliance/overview-data-investigations.md
+      text: 内部調査と外部調査の管理
+    - url: compliance/insider-risk-management.md
+      text: インサイダー リスクの管理
+  - title: デスクトップとデバイスの展開と管理
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    links:
+    - url: /DeployOffice/plan-microsoft-365-apps
+      text: Microsoft 365 Apps の展開
+    - url: /windows/deployment/
+      text: Windows 10 の展開
+    - url: /microsoft-365/managed-desktop/
+      text: Microsoft マネージド デスクトップ
+    - url: /mem/intune/fundamentals/what-is-intune
+      text: Microsoft Intune を使用したデバイス管理
+  - title: Microsoft 365 に移行する
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    links:
+    - url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      text: Microsoft Teams に移行する
+    - url: /sharepointmigration/migrate-to-sharepoint-online
+      text: コンテンツを SharePoint、OneDrive、Teams に移行する
+    - url: /Exchange/mailbox-migration/mailbox-migration
+      text: 複数のメール アカウントを Microsoft 365 に移行する
+  - title: 業界固有のソリューションとシナリオ
+    imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+    links:
+    - url: solutions/financial-services-secure-collaboration.md
+      text: 金融サービスのセキュリティとコンプライアンス
+    - url: solutions/energy-secure-collaboration.md
+      text: エネルギーおよび公益サービスのセキュリティとコンプライアンス
+    - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+      text: 医療関係組織用 Teams
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
+      text: 教育機関用 Teams
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
+      text: 政府機関用 Teams
+    - url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+      text: Microsoft Teams を使用して政府機関のリモート ワーカーをサポートする
 additionalContent:
   sections:
-  - title: Microsoft 365 のサポートを依頼する
-    summary: カードを選択して、Microsoft 365 の詳細をご覧ください。
+  - title: すべてのアプリとサービス
+    summary: Microsoft 365 に含まれているすべてのアプリと製品のドキュメント。
     items:
-    - title: Microsoft 365 管理センター
-      summary: 組織の Microsoft 365 のサービスをセットアップして管理します。
-      url: ./admin/index.yml
-    - title: Microsoft 365 Business Premium
-      summary: 中小企業向けに設計されています。 Excel や Outlook のような Windows アプリと Office アプリの最新バージョンを使用して会社を経営します。 すべてのビジネス デバイスに及ぶデータ保護とセキュリティを活用しましょう。
-      url: ./business/index.yml
-    - title: Microsoft 365 Enterprise
-      summary: 大規模な組織向けに設計されています。 Office アプリ、Windows 10、および Enterprise Mobility + Security でビジネスを保護し、作業方法を変革します。
-      url: ./enterprise/index.yml
-    - title: Microsoft 365 ソリューションおよびアーキテクチャ センター
-      summary: 組織に適したソリューションとアーキテクチャを設計する方法を理解します。
-      url: ./solutions/index.yml
-    - title: Microsoft 365 Education
-      summary: 手ごろな価格の教育用に構築された単一ソリューションで、教育者が創造力を発揮し、チームワークを促進し、シンプルかつ安全な操作性を実現できるように設計されています。
-      url: https://docs.microsoft.com/education/
-    - title: Microsoft 365 コンプライアンス
-      summary: 組織が情報を管理し、リスクから保護し、法律または規制の標準への準拠を支援します。
-      url: ./compliance/index.yml
-    - title: Microsoft 365 セキュリティ
-      summary: Microsoft 365 セキュリティの堅牢なセキュリティ ソリューションとサービスについて説明し、攻撃対象から組織をよりよく保護できるようにします。
-      url: ./security/index.yml
-    - title: Microsoft 365 for Campaigns
-      summary: Microsoft 365 for business のこの推奨構成により、キャンペーンまたはビジネス データおよび通信を安全に保ちます。
-      url: ./campaigns/index.md
-    - title: Microsoft マネージド デスクトップ
-      summary: Microsoft マネージド デスクトップは、Microsoft 365 Enterprise、Microsoft によるクラウドベースのデバイス管理、およびセキュリティ監視を統合し、IT チームを解放してコア ビジネス ニーズに集中できるようにします。
-      url: ./managed-desktop/index.yml
+    - title: Microsoft 365
+      summary: 組織の Microsoft 365 のサービスをセットアップして管理する。
+      links:
+      - text: Microsoft 365 管理センター
+        url: admin/index.yml
+      - text: Microsoft 365 Business Premium
+        url: business/index.yml
+      - text: Microsoft 365 Enterprise
+        url: enterprise/index.yml
+      - text: Microsoft 365 コンプライアンス
+        url: compliance/index.yml
+      - text: Microsoft 365 セキュリティ
+        url: security/index.yml
+      - text: Microsoft マネージド デスクトップ
+        url: managed-desktop/index.yml
+      - text: トラブルシューティングとサポート
+        url: /office/troubleshoot
+    - title: Microsoft Teams
+      links:
+      - text: 管理に関するドキュメント
+        url: /MicrosoftTeams/Teams-overview
+      - text: Teams でのセキュリティとコンプライアンス
+        url: /MicrosoftTeams/security-compliance-overview
+      - text: Skype for Business から Teams へのアップグレード
+        url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      - text: その他 >
+        url: /MicrosoftTeams
+    - title: Office を展開する
+      links:
+      - text: Microsoft 365 アプリ
+        url: /DeployOffice/plan-microsoft-365-apps
+      - text: Office for Mac
+        url: /DeployOffice/mac
+      - text: Office 2019
+        url: /DeployOffice/office2019
+      - text: その他 >
+        url: /DeployOffice
+    - title: SharePoint
+      links:
+      - text: SharePoint Online
+        url: /sharepoint/sharepoint-online
+      - text: SharePoint Server
+        url: /sharepoint/sharepoint-server
+      - text: ハイブリッド
+        url: /sharepoint/hybrid/hybrid
+      - text: SharePoint の PowerShell リファレンス
+        url: /powershell/sharepoint
+      - text: その他 >
+        url: /sharepoint
+    - title: OneDrive
+      links:
+      - text: 計画、展開、管理
+        url: /onedrive/onedrive
+      - text: OneDrive についてもっと >
+        url: /onedrive
+    - title: Outlook と Exchange
+      links:
+      - text: iOS 版および Android 版 Outlook
+        url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
+      - text: Exchange Online
+        url: /Exchange/exchange-online
+      - text: Exchange についてもっと >
+        url: /Exchange
+    - title: Planner と Project
+      links:
+      - text: Planner の管理者向けヘルプ
+        url: /office365/planner/planner-admin-home
+      - text: Project for the web
+        url: /project-for-the-web/projectforweb-admin-home
+      - text: その他のプロジェクト >
+        url: /Project
+    - title: Yammer
+      links:
+      - text: 管理者向けヘルプ
+        url: /yammer/yammer-landing-page
+    - title: Kaizala
+      links:
+      - text: 作業の開始
+        url: /Kaizala
+    - title: Microsoft Stream
+      links:
+      - text: ヘルプ ドキュメント
+        url: /stream/
+    - title: Skype for Business
+      links:
+      - text: IT プロフェッショナル向けドキュメント
+        url: /skypeforbusiness
+    - title: Office Online Server
+      links:
+      - text: 作業の開始
+        url: /officeonlineserver
+  - title: 関連するガイダンスとリソース
+    items:
+    - title: 開発者
+      summary: Microsoft 365 デベロッパー センターでは、開発者向けのチュートリアル、参考使用、その他のリソースを見つけることができます。
+      url: https://developer.microsoft.com/microsoft-365
+    - title: エンド ユーザー
+      summary: Microsoft 365 ユーザー向けのトレーニング、使用方法、ヘルプ コンテンツは、support.microsoft.com で見つけることができます。
+      url: https://support.microsoft.com/microsoft-365
+    - title: 教育者
+      summary: Microsoft 365 Education を使用して創造性を解放し、チームワークを促進し、安全かつシンプルなエクスペリエンスを実現する方法をご覧ください。
+      url: /education
+    - title: 技術コミュニティ
+      summary: Microsoft 365 技術コミュニティに参加すれば、経験を共有したり、情報交換を通してエキスパートから学んだりできます。
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

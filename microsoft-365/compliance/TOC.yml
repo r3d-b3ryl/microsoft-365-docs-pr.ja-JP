@@ -548,10 +548,10 @@
         - name: ケース データをエクスポートする
           href: exporting-data-ediscover20.md
           items:
+            - name: レビュー セットからドキュメントをダウンロードする
+              href: download-documents-from-review-set.md
             - name: レビュー セットからドキュメントをエクスポートする
               href: export-documents-from-review-set.md
-            - name: エクスポート ジョブのダウンロード
-              href: download-export-jobs.md
         - name: ジョブを管理する
           href: managing-jobs-ediscovery20.md
         - name: ケース設定を構成する
