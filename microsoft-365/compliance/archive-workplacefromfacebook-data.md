@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet の Merge1 サイトにアーカイブされた Facebook からのデータを Microsoft 365 にインポートしてアーカイブするためのコネクタを設定できます。 コネクタを設定するには、Globanet を使用する必要があります。このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して組織のサードパーティデータを管理することができます。
-ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399134"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405488"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Facebook データからワークプレースをアーカイブするようにコネクタを設定する (プレビュー)
 
@@ -40,9 +40,9 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 4. このコネクタは、手順3で説明されているように、自動ユーザーマッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 **Facebook からの workplace**という名前の受信トレイフォルダー内のサブフォルダーが作成され、そのフォルダーに workplace アイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての Workplace アイテムには、すべてのチャットまたは投稿の参加者の電子メールアドレスが設定された、このプロパティが含まれています。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- Facebook connector の Workplace の使用条件に同意して、Merge1 アカウントを作成します。 ここでは、 [Globanet カスタマサポート](https://globanet.com/contact-us/)に連絡する必要があります。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
 - https://my.workplace.com/work/admin/apps/コンプライアンスと電子情報開示の目的で、api 経由でワークプレースからデータを取得するためのカスタム統合を作成します。
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet から Microsoft 365 に EML データをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: b27bfdfc9d14495857dadcb4d30b1930d7b90781
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 99b32960b46853ed4766c255e36df05c8fe9086a
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399154"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405598"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data-preview"></a>EML データをアーカイブするようにコネクタを設定する (プレビュー)
 
@@ -40,9 +40,9 @@ EML メッセージをユーザーのメールボックスに格納した後は�
 
 4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup)で説明されている自動ユーザーマッピングプロセスの*Email*プロパティの値を使用して、変換されたメッセージアイテムを特定のユーザーのメールボックスにインポートします。 このプロセスでは、 **eml**という名前の受信トレイフォルダー内のサブフォルダーがユーザーのメールボックス内に作成され、そのフォルダーに eml アイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべてのメッセージにこのプロパティが含まれており、コンテンツ項目のすべての参加者の電子メールアドレスが設定されます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- Globanet Merge1 アカウントを作成するには、EML コネクタの使用条件に同意します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/contact-us)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
 - 手順1で EML コネクタを作成して (手順3で完了させる) ユーザーは、Exchange Online のメールボックスのインポートのエクスポート役割に割り当てられている必要があります。 この役割は、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
 

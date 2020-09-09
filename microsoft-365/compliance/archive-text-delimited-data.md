@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet から Microsoft 365 にテキスト区切りのデータをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: e57e9693da77a246bafcdf30561fd1414761355f
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 6a7c8a23fdf78ccac21e1cae68dbc6b971bd6486
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399298"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405608"
 ---
 # <a name="set-up-a-connector-to-archive-text-delimited-data-preview"></a>テキスト区切りのデータをアーカイブするようにコネクタを設定する (プレビュー)
 
@@ -42,9 +42,9 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 4. このコネクタは、手順3で説明されているように、自動ユーザーマッピングの *Email* プロパティの値を使用して、変換されたメッセージアイテムを特定のユーザーのメールボックスにインポートします。 [ **テキスト区切り** ] という名前の受信トレイフォルダーに新しいサブフォルダーが作成され、ユーザーのメールボックスにメッセージアイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべてのメッセージにこのプロパティが含まれています。このプロパティには、メッセージのすべての参加者の電子メールアドレスが設定されます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- Globanet Merge1 アカウントを作成するには、テキスト区切りコネクタの使用条件に同意します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/contact-us)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
 - 手順1でテキスト区切りコネクタを作成し、(手順3で完了する) ユーザーは、Exchange Online のメールボックスのインポートのエクスポート役割に割り当てられている必要があります。 この役割は、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Microsoft 365 で Globanet FX Connect からデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 9c769088148f747e4918f2f91a244ad321d61888
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: d22313ab1de1700c14ee4b35f6a0e3dbcae73ae3
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399440"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405588"
 ---
 # <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>コネクタを設定して、FX 接続データをアーカイブする (プレビュー)
 
@@ -40,9 +40,9 @@ FX Connect データがユーザーのメールボックスに格納された後
 
 4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup)で説明されているように、自動ユーザーマッピングの*Email*プロパティの値を使用して、特定のユーザーのメールボックスにアイテムをインポートします。 ユーザーメールボックスに [ **FX Connect** ] という名前の受信トレイフォルダー内のサブフォルダーが作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての FX Connect アイテムには、アイテムのすべての参加者の電子メールアドレスが設定されたこのプロパティが含まれています。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- Globanet Merge1 アカウントを作成するには、FX Connect コネクタの使用条件に同意します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/contact-us)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
+- Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。  これを行うには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
 - 手順1で FX の接続コネクタを作成したユーザー (および手順3で完了したもの) は、Exchange Online のメールボックスのインポートのエクスポート役割に割り当てる必要があります。 この役割は、Microsoft 365 コンプライアンスセンターの [ **データコネクタ** ] ページでコネクタを追加するために必要です。 既定では、この役割は Exchange Online のどの役割グループにも割り当てられていません。 Exchange Online の組織の管理役割グループに、メールボックスのインポートの役割を追加することができます。 または、役割グループを作成し、メールボックスインポートエクスポート役割を割り当ててから、適切なユーザーをメンバーとして追加することもできます。 詳細については、記事「Manage role groups in Exchange Online」の「 [役割グループの作成](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 」または「 [役割グループの変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 」のセクションを参照してください。
 

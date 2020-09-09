@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 管理者が Exchange Online メールボックスのユーザーの回復可能なアイテムフォルダーのアイテムを、法的情報保留の対象となっている場合でも削除できる方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321964"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405468"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>保留中のクラウド ベースのメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
 
@@ -288,11 +288,11 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 
    - **Discoveryholds**: 電子情報開示の保持またはアイテム保持ポリシーによって保持された、物理的に削除されたアイテムが含まれています。 このサブフォルダーは、エンドユーザーには表示されません。
 
-   - **SubstrateHolds**: Teams や、アイテム保持ポリシーまたはその他の保留によって保持されているその他のクラウドベースのアプリから、物理的に削除されたアイテムが含まれています。このサブフォルダーは、エンドユーザーには表示されません。
+   - **SubstrateHolds**: Teams や、アイテム保持ポリシーまたはその他の保留によって保持されているその他のクラウドベースのアプリから、物理的に削除されたアイテムが含まれています。 このサブフォルダーは、エンドユーザーには表示されません。
 
 3. **New-compliancesearch**コマンドレット (セキュリティ & コンプライアンスセンター PowerShell) を使用するか、コンプライアンスセンターのコンテンツ検索ツールを使用して、対象ユーザーの回復可能なアイテムフォルダーからアイテムを返すコンテンツ検索を作成します。 検索するすべてのサブフォルダーの検索クエリに FolderId を含めることで、これを行うことができます。 たとえば、次のクエリは、削除および eDiscoveryHolds サブフォルダー内のすべてのメッセージを返します。
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -307,8 +307,15 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > 前のコマンドを実行すると、最大10個のアイテム (メールボックスごと) が削除されます。 つまり、 `New-ComplianceSearchAction -Purge` 回復可能なアイテムフォルダーで削除するアイテムを削除するには、コマンドを複数回実行する必要があるかもしれません。
+5. 前のコマンドを実行すると、メールボックスごとに最大10個のアイテムが削除されます。 つまり、 `New-ComplianceSearchAction -Purge` 回復可能なアイテムフォルダーで削除するアイテムをすべて削除するには、コマンドを複数回実行する必要があるかもしれません。 その他のアイテムを削除するには、最初に、前のコンプライアンス検索の削除アクションを削除する必要があります。 これを行うには、 `Remove-ComplianceSearchAction` コマンドレットを実行します。 たとえば、前の手順で実行された削除アクションを削除するには、次のコマンドを実行します。
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+   その後、新しいコンプライアンス検索の削除アクションを作成して、さらにアイテムを削除することができます。 新しい削除アクションを作成する前に、それぞれの削除アクションを削除する必要があります。
+
+   コンプライアンス検索アクションの一覧を取得するには、コマンドレットを実行し `Get-ComplianceSearchAction` ます。 削除アクションは `_Purge` 、検索名に追加されて識別されます。
 
 ### <a name="verify-that-items-were-deleted"></a>アイテムが削除されたことを確認する
 
