@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308197"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407930"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 
-ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 例:
+ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 次に例を示します。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -106,21 +106,23 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
     - [Microsoft 365 の管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
     - [Microsoft 365 のユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
-- **認証**されていない送信者: 次のセクションの説明を参照してください。
+- [認証されていない**送信者**]: 次のセクションの情報を参照してください。
 
 ### <a name="unauthenticated-sender"></a>認証されていない送信者
 
 認証されていない送信者の識別は、前のセクションで説明したように、フィッシング対策ポリシーおよび ATP のフィッシング対策ポリシーで使用可能な [スプーフィング設定](#spoof-settings) の一部です。
 
-認証されていない **送信者** の設定は、Outlook での送信者識別情報の未識別を有効または無効にします 具体的には次のとおりです。
+認証されていない **送信者** の設定は、Outlook での認証されていない送信者の識別の有効化または無効化 具体的には次のとおりです。
 
-- メッセージが SPF または DKIM のチェックに合格せず、メッセージが DMARC または[コンポジット認証](email-validation-and-authentication.md#composite-authentication)に**合格しない**場合、送信者の写真に疑問符 (?) が追加されます。
+- メッセージが SPF または DKIM のチェックに合格せず、メッセージが DMARC または[コンポジット認証](email-validation-and-authentication.md#composite-authentication)に**合格しない**場合、送信者の写真に疑問符 (?) が追加されます。 認証されていない送信者識別を無効にすると、その質問マークが送信者の写真に追加されることはありません。
 
-- Via タグ (chris@contoso.com <u>via</u> michelle@fabrikam.com) は、From アドレスのドメイン (電子メールクライアントに表示されるメッセージの送信者) が dkim シグネチャまたは **MAIL From** アドレスのドメインと異なる場合に追加されます。 これらのアドレスの詳細については、「[電子メールメッセージの標準の概要](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)」を参照してください。
+- Via タグ (chris@contoso.com <u>via</u> michelle@fabrikam.com) は、From アドレスのドメイン (電子メールクライアントに表示されるメッセージの送信者) が dkim シグネチャまたは **MAIL From** アドレスのドメインと異なる場合に追加されます。 これらのアドレスの詳細については、「 [電子メールメッセージの標準の概要](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)」を参照してください。
 
-特定の送信者からのメッセージにこれらの識別子が追加されないようにするには、次のオプションを使用できます。
+  [認証されていない送信者 id を無効にしても、From アドレスのドメインが DKIM シグネチャまたは MAIL FROM アドレスのドメインと異なる場合、via タグを追加することはできません。
 
-- スプーフィングインテリジェンスポリシーで、送信者にスプーフィングすることを許可します。 手順については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
+疑問符または via タグが特定の送信者からのメッセージに追加されないようにするには、次のオプションを使用できます。
+
+- スプーフィングインテリジェンスポリシーで、送信者にスプーフィングすることを許可します。 この操作により、認証されていない送信者の識別が無効になっている場合に、送信者からのメッセージに via タグが表示されないようにします。 手順については、「 [Microsoft 365 でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)」を参照してください。
 
 - 送信者ドメインの[電子メール認証を構成](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)します。
   

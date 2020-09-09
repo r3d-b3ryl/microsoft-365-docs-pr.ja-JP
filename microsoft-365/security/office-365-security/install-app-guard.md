@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: ハードウェアベースの分離の最新情報を取得します。 悪用または悪意のあるリンクのような最新の攻撃や、従業員の生産性や企業のセキュリティを阻止できないようにします。
-ms.openlocfilehash: d0a89e8f8874c9ad298bf862384019b9e1ace0bf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867466"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405543"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>管理者向けの Office 用アプリケーションガード (パブリックプレビュー)
 
@@ -45,7 +45,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
 * **Windows 10**: Windows 10 Enterprise Edition、クライアントビルドバージョン 2004 (20H1) ビルド19041
 * **Office**: Office ベータチャネルビルドバージョン 2008 16.0.13212 以降
-* **更新プログラムパッケージ**: 毎月の Windows 10 累積セキュリティ更新プログラム [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
+* **更新プログラムパッケージ**: 毎月の Windows 10 累積セキュリティ更新プログラム [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 システム要件の詳細については、「 [Microsoft Defender Application Guard のシステム要件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)」を参照してください。 Office Insider Preview ビルドの詳細については、「 [Office insider ビルドの展開の](https://insider.office.com/business/deploy)概要」を参照してください。
 
@@ -56,28 +56,9 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
 ### <a name="enable-application-guard-for-office"></a>Office 用 Application Guard を有効にする
 
-1.  **Windows 10 累積された毎月のセキュリティ更新プログラム KB4566782**をダウンロードしてインストールします。 
+1.  **Windows 10 累積された毎月のセキュリティ更新プログラム KB4571756**をダウンロードしてインストールします。 
 
-2. [**Office 機能有効化パッケージの Application Guard を**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi)ダウンロードしてインストールします。 このパッケージでは、[ **コンピューターの構成 \ 管理用テンプレート**] の下に "KB4559004 Issue 001 Preview" というグループポリシーがインストールされます。 このグループポリシーを **有効**に設定します。
-     ![ローカル グループ ポリシー エディター](../../media/ag01-deploy.png)
-
-     ![KB4559004 Issue 001 プレビュー](../../media/ag02-deploy.png)
-
-    次のレジストリキーを直接設定することもできます。 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    次に、次の PowerShell コマンドを実行します。 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  [Windows の機能] の下にある [ **Microsoft Defender Application Guard** ] を選択し、[ **OK]** を選択します。 Application Guard 機能を有効にすると、システムの再起動が求められます。 今すぐ再起動するか、手順4の後で再起動するかを選択できます。
+2.  [Windows の機能] の下にある [ **Microsoft Defender Application Guard** ] を選択し、[ **OK]** を選択します。 Application Guard 機能を有効にすると、システムの再起動が求められます。 今すぐ再起動するか、手順3の後で再起動するかを選択できます。
 
     ![AG が表示されている [Windows の機能] ダイアログボックス](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  「 **コンピューターの構成 \\ 管理用テンプレート \\ Windows コンポーネント \\ microsoft defender application guard**」にある「管理モードグループポリシー」の「microsoft defender application Guard」を参照してください。 [オプション] の値を **2** または **3** に設定し、[ **OK]** または [ **適用**] を選択して、このポリシーを有効にします。
+3.  「 **コンピューターの構成 \\ 管理用テンプレート \\ Windows コンポーネント \\ microsoft defender application guard**」にある「管理モードグループポリシー」の「microsoft defender application Guard」を参照してください。 [オプション] の値を **2** または **3** に設定し、[ **OK]** または [ **適用**] を選択して、このポリシーを有効にします。
 
     ![管理モードで AG を有効にする](../../media/ag04-deploy.png)
   
@@ -98,7 +79,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
     <br>値: **2**
 
 
-5.  システムを再起動します。
+4.  システムを再起動します。
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>完全なデータを送信するための診断 & フィードバックの設定
 
@@ -147,7 +128,7 @@ Office では、次のポリシーをサポートして、Office 用 Application
 > これらのポリシーは近日中に利用可能になります。
 >また、これらのポリシーを構成すると、Application Guard for Office で開かれたファイルの一部の機能を無効にすることができます。
 
-| ポリシー                                                                          | 説明                                                                                                                                                                                                                                                                                             |
+| ポリシー                                                                          | Description                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Office 用 Application Guard を無効にする                                            | このポリシーを有効にすると、Word、Excel、および PowerPoint で、Office の Application Guard ではなく、保護されたビューの分離コンテナーが使用されるようになります。 このポリシーを使用すると、エッジを有効にしたままでも問題が発生した場合に、Office の Application Guard を一時的に無効にすることができます。                                  |
 | Application Guard で開いたドキュメントのコピー/貼り付けを無効にする                    | このポリシーを有効にすると、ユーザーは Application Guard for Office で開かれているドキュメントから外部で開いているドキュメントにコンテンツをコピーして貼り付けることができなくなります。                                                                                                                                   |
