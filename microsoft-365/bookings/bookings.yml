@@ -1,0 +1,52 @@
+### YamlMime:Landing
+title: Microsoft Bookings
+summary: Microsoft の予約を使用して予定を予約し、管理します。 Outlook および自動通知との統合が含まれています。
+metadata:
+  title: Microsoft Bookings
+  description: Microsoft の予約を使用して予定を予約し、管理します。 Outlook および自動通知との統合が含まれています。
+  ms.service: bookings
+  ms.topic: landing-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 07/21/2020
+  ms.openlocfilehash: 7fb9456dfeb6481aebe1f81307a30c4cfad0ec02
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419890"
+landingContent:
+- title: Microsoft 予約について
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft 予約とは
+      url: bookings-overview.md
+  - linkListType: download
+    links:
+    - text: 予約アプリを取得する
+      url: get-bookings-app.md
+- title: Microsoft Bookings の設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 勤務先情報を入力する
+      url: enter-business-information.md
+    - text: スケジュール ポリシーを設定する
+      url: set-scheduling-policies.md
+    - text: サービスの提供内容を定義する
+      url: define-service-offerings.md
+    - text: 従業員の稼働時間を設定する
+      url: employee-hours.md
+    - text: 予約ページのカスタマイズと公開
+      url: customize-booking-page.md
+    - text: 予約の作成とスタッフの割り当て
+      url: create-a-manual-booking.md
+- title: 予定を予約するようにユーザーを招待する
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 予約ページをカスタマイズする
+      url: customize-booking-page.md

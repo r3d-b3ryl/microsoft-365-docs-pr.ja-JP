@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649345"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419146"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、および id 間の脅威を探します。
 
@@ -42,7 +42,7 @@ Microsoft の脅威保護での[高度な](advanced-hunting-overview.md)検索�
 ユーザーアカウント、デバイス、およびファイルに関する情報をすばやく取得する方法については、以下のクエリを使用してください。 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>メール アドレスからユーザー アカウントを取得する
-[デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。 通常、この操作は、電子メールアドレスから*ローカルホスト*を使用して、受信者または送信者のアドレスに対して行うことができます。
+[デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。 通常、この操作は、電子メールアドレスから *ローカルホスト* を使用して、受信者または送信者のアドレスに対して行うことができます。
 
 次のスニペットでは、 [tostring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) kusto 関数を使用して、 `@` 列の from 受信者の電子メールアドレスの前にローカルホストを抽出し `RecipientEmailAddress` ます。
 
@@ -60,10 +60,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>Id 情報テーブルをマージする
 
-ユーザー[情報テーブル](advanced-hunting-identityinfo-table.md)を結合または結合することによって、アカウント名やその他のアカウント情報を取得できます。 次のクエリは、 [Emailevents テーブル](advanced-hunting-emailevents-table.md)からフィッシングとマルウェアの検出の一覧を取得し、その情報をテーブルに結合して `IdentityInfo` 各受信者に関する詳細情報を取得します。 
-
->[!Tip]
-> このクエリは `kind=inner` 、[内部結合](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)を指定するために使用します。これにより、左側の値または受信者の電子メールアドレスの重複を防ぐことができます。
+ユーザー [情報テーブル](advanced-hunting-identityinfo-table.md)を結合または結合することによって、アカウント名やその他のアカウント情報を取得できます。 次のクエリは、 [Emailevents テーブル](advanced-hunting-emailevents-table.md) からフィッシングとマルウェアの検出の一覧を取得し、その情報をテーブルに結合して `IdentityInfo` 各受信者に関する詳細情報を取得します。 
 
 ```kusto
 EmailEvents
@@ -80,7 +77,10 @@ Department, City, Country
 ```
 
 ### <a name="get-device-information"></a>デバイス情報を取得する
-[高度な検索スキーマ](advanced-hunting-schema-tables.md)では、さまざまなテーブルに多様なデバイス情報が用意されています。 たとえば、 [DeviceInfo テーブル](advanced-hunting-deviceinfo-table.md)は、定期的に集計されたイベントデータに基づく包括的なデバイス情報を提供します。 このクエリは、テーブルを使用して、 `DeviceInfo` 侵害された可能性があるユーザー () がデバイスにログオンしているかどうかを確認し、 `<account-name>` それらのデバイスでトリガーされた通知を一覧表示します。
+[高度な検索スキーマ](advanced-hunting-schema-tables.md)では、さまざまなテーブルに多様なデバイス情報が用意されています。 たとえば、 [DeviceInfo テーブル](advanced-hunting-deviceinfo-table.md) は、定期的に集計されたイベントデータに基づく包括的なデバイス情報を提供します。 このクエリは、テーブルを使用して、 `DeviceInfo` 侵害された可能性があるユーザー () がデバイスにログオンしているかどうかを確認し、 `<account-name>` それらのデバイスでトリガーされた通知を一覧表示します。
+
+>[!Tip]
+> このクエリは、を使用し `kind=inner` て [内部結合](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)を指定します。これにより、の左側の値の重複を防ぐことができ `DeviceId` ます。
 
 ```kusto
 DeviceInfo
@@ -98,7 +98,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>捜索のシナリオ
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Zapped できなかった電子メールを受信したユーザーのログオンアクティビティを一覧表示する
-[ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md)は、受信後の悪意のある電子メールアドレスを解決します。 ZAP が失敗すると、悪意のあるコードがデバイス上で実行され、アカウントが侵害されたままになる可能性があります。 このクエリは、電子メールの受信者によって行われたログオンアクティビティが、ZAP によって正常にアドレス指定されなかったことをチェックします。
+[ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) は、受信後の悪意のある電子メールアドレスを解決します。 ZAP が失敗すると、悪意のあるコードがデバイス上で実行され、アカウントが侵害されたままになる可能性があります。 このクエリは、電子メールの受信者によって行われたログオンアクティビティが、ZAP によって正常にアドレス指定されなかったことをチェックします。
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -192,7 +192,7 @@ DeviceProcessEvents
 | where (TimeProc - TimeEmail) between (0min.. 30min)
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

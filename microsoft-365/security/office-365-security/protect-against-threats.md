@@ -9,226 +9,290 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: ''
+ms.date: 09/08/2020
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft 365 の脅威保護について説明し、組織での使用方法を構成できます。
+description: 管理者は、Microsoft 365 の脅威保護について学習し、組織での使用方法を構成することができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8f1cecbb3141b4751778212025e5aad582707e12
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8b96ba1735f94e80450fa4f604fc45dc60b80d12
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826827"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417124"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
-Microsoft 365 には、さまざまな脅威保護機能が含まれています。 チェックリストとして使用できるクイック スタート ガイドを以下に示します。組織で脅威保護機能が設定されているか確認します。 Office 365 の脅威保護機能を使用したのが新しい場合、または開始する場所が不適切な場合は、次のガイダンスを出すための開始点として使用してください。
+Advanced Threat Protection の構成をチャンクに分割するクイックスタートガイドを次に示します。 Office 365 の脅威保護機能に慣れておらず、どこから始めるかがわからない場合や、 *実行*するのが最適な場合は、このガイドをチェックリストと開始点として使用します。
 
 > [!IMPORTANT]
-> **初期推奨される設定はポリシーの種類ごとに適用されています。ただし、多くのオプションを利用できます。また、組織固有のニーズに合わせて設定を調整できます**。 ポリシーまたは変更がデータセンターに通過するまで、約 30 分間の制限を行います。
+> **ポリシーの種類ごとに最初に推奨される設定が含まれています。ただし、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもでき**ます。 使用しているポリシーまたは変更がデータセンターによって処理されるまで約30分間待機します。
 
 ## <a name="requirements"></a>Requirements
 
 ### <a name="subscriptions"></a>サブスクリプション
 
-脅威保護機能は、すべての Microsoft 365 サブスクリプションに含まれています。ただし、一部のサブスクリプションにはより高度な機能が含まれています。 次の表は、この記事に含まれている保護機能とサブスクリプションの最小要件を示しています。
+脅威保護機能は、Microsoft または Office 365 の *すべて* のサブスクリプションに含まれています。ただし、一部のサブスクリプションには、高度な機能があります。 以下の表に、この記事に含まれる保護機能と最小のサブスクリプション要件を示します。
+
+> [!TIP]
+> 監査を有効にする *方法* 以外に、「Office 365 Exchange Online Protection (**EOP**) の一部としてマークされているマルウェア対策、フィッシング対策、およびスパム対策を開始することに注意してください。 高度な脅威保護 (ATP) を含み、EOP を使用していることがわかっている場合は、Advanced Threat Protection (**ATP**) を忘れないようにしてください。
 
 ****
 
 |保護の種類|サブスクリプションの要件|
 |---|---|
-|マルウェア対策保護|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (EOP)|
-|メールおよび Office ドキュメント内の悪意のある URL およびファイルからの保護|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP)|
+|監査ログ (レポート用)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
+|マルウェア対策保護|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) (**EOP**)|
 |フィッシング対策保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|高度なフィッシング対策保護|[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |スパム対策保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|ゼロア自動消去 (メールの場合)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|監査ログ (これはレポート目的で使用されます)|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
-|
+|ゼロ時間自動削除 (電子メール用)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
+|電子メールおよび Office ドキュメント内の悪意のある Url やファイルからの保護 (安全なリンクと安全な添付ファイル)|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
+|SharePoint、OneDrive、Microsoft Teams のワークロードに対して ATP を有効にする| [ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)|
+|高度なフィッシング対策保護|[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>ロールと権限
 
-セキュリティ センターでポリシーを構成するには、適切な役割が割 [り当&必要があります](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。 次の表にいくつかの例があります:
+ATP ポリシーを構成するには、 [セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)で適切な役割が割り当てられている必要があります。 これらの操作を実行できる役割については、以下の表を参照してください。
 
 ****
 
 |役割または役割グループ|詳細情報|
 |---|---|
-|全体管理者|[Microsoft 365 管理者ロールについて](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|グローバル管理者|[Microsoft 365 管理者ロールについて](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |セキュリティ管理者|[Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 組織の管理|[Exchange Online のアクセス許可](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>および<br> [Exchange Online の PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-詳細については、セキュリティ コンプライアンス センター [の「アクセス許可」 &amp; を参照してください](permissions-in-the-security-and-compliance-center.md)。
+詳細については、「 [Security &amp; コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-## <a name="part-1---anti-malware-protection"></a>第 1 部 - マルウェア対策保護
+## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>開始する前に、レポートと調査の監査ログを有効にします。
 
-[マルウェア対策保護は EOP](anti-malware-protection.md) を含むサブスクリプションで利用 [できます](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+事前に監査ログを開始します。 次の手順の **一部については、** 監査が必要になります。 監査ログは、 [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)を含むサブスクリプションで利用できます。 [セキュリティダッシュボード](security-dashboard.md)、[電子メールセキュリティレポート](view-email-security-reports.md)、[エクスプローラー](threat-explorer.md)などの脅威保護レポートのデータを表示するためには、監査ログを*オンに*する必要があります。 詳細については、「 [監査ログの検索を有効または無効](../../compliance/turn-audit-log-search-on-or-off.md)にする」を参照してください。
 
-1. セキュリティ/[コンプライアンス &で脅威](https://protection.office.com)管理**ポリシーのマルウェア**  >  **Policy**  >  **対策を選択します**。
+## <a name="part-1---anti-malware-protection"></a>パート 1-マルウェア対策保護
 
-2. 既定のポリシーを **ダブルクリック** し、[設定] を選択 **します**。
+[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)を含むサブスクリプションでは[、マルウェア対策保護](anti-malware-protection.md)を利用できます。
 
-3. 以下の設定を指定します。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**の  >  **マルウェア対策**] を選択します。
 
-    - [マルウェア **検出応答] セクションで、** 既定の設定を [いいえ] のまま **にします**。
+2. [ **既定** のポリシー] をダブルクリックし、[ **設定**] を選択します。
 
-    - [共通の **添付ファイルの種類フィルター] セクション** で、[オン] を **クリックします**。
+3. 次の設定を指定します。
 
-4. [**保存**] をクリックします。
+    - [ **マルウェア検出の応答** ] セクションで、既定の設定の [ **いいえ**] をそのまま使用します。
 
-マルウェア対策ポリシー オプションの詳細については、「マルウェア対策 [ポリシーを構成する」を参照してください](configure-anti-malware-policies.md)。
+    - [ **一般的な添付ファイルの種類のフィルター** ] セクションで、 **[オン**] を選択します。
 
-## <a name="part-2---protection-from-malicious-urls-and-files"></a>パート 2 - 悪意のある URL とファイルからの保護
+4. **[保存]** をクリックします。
 
-悪意のある URL やファイルからのクリック時保護は [、Office 365 ATP (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) を含むサブスクリプションで利用できます [。ATP](atp-safe-attachments.md) の安全な添付ファイルや [ATP](atp-safe-links.md) の安全なリンクのポリシーによってセットアップされます。
+マルウェア対策ポリシーオプションの詳細については、「 [マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
-### <a name="atp-safe-attachments-policies"></a>ATP の安全な添付ファイル機能のポリシー
-
-[ATP の安全な添付ファイル機能を設定するには](atp-safe-attachments.md)、少なくとも 1 つの ATP の安全な添付ファイルに対するポリシーを定義する必要があります。
-
-1. セキュリティ/[コンプライアンス センター&で、脅](https://protection.office.com)威管理**ポリシー**  >  **Policy**  >  **ATP の安全な添付ファイルを選択します**。
-
-2. **SharePoint、OneDrive、Microsoft Teams の ATP を有効にするオプションを選択します**。
-
-3. [メールの **添付ファイルの保護] セクションで** 、プラス記号 ( ) をクリックします **+** 。
-
-4. 以下の設定を指定します。
-
-   - [名前 **] ボックス** に、次のように入力します `Block malware` 。
-
-   - 応答セクションで、ブロックを選択 **します**。
-
-   - [リダイレクト **の添付ファイル]** セクションで 、[ **リダイレクトを有効にする] オプションを選択**し、検出されたファイルを確認する組織のセキュリティ管理者またはオペレーターのメール アドレスを指定します。
-
-   - In the **Applied to** section, choose The recipient **domain is**. 次に、ドメインを選び、[追加 **]、** または **[OK] をクリックします**。
-
-5. [**保存**] をクリックします。
-
-6. (**推奨される追加手順**)全体管理者または SharePoint Online 管理者は、Microsoft 365 環境に対して**DisallowInfectedFileDownload パラメーター**を*true*に設定して**[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行します。 (これにより、悪意があるとして検出されたファイルを開いたり、移動したり、コピーしたり、共有したりするのを防止できます。)
-
-詳細については [、「Office 365 ATP の安全な添付ファイル ポリシーを設定](set-up-atp-safe-attachments-policies.md) し [、SharePoint、OneDrive、Microsoft Teams Office 365 ATP を有効にする」を参照してください](turn-on-atp-for-spo-odb-and-teams.md)。
-
-### <a name="atp-safe-links-policies"></a>ATP の安全なリンク機能のポリシー
-
-[ATP の安全なリンクを設定するには、既定](atp-safe-links.md)のポリシーを確認および編集し、特定のユーザーに対するポリシーを追加します。
-
-1. コンプライアンス センター[から&で、脅](https://protection.office.com)威**管理ポリシー**  >  **Policy**  >  **ATP の安全なリンクを選択します**。
-
-2. [既定] ポリシーを **ダブルクリック** します。
-
-3. 「 **安全なリンクを使用する」セクション** で **、「Microsoft 365 Apps for enterprise、iOS および Android 用 Office」のオプション、および [保存**] をクリック **します**。
-
-4. 特定の **受信者に適用するポリシー セクションで** 、プラス記号 ( ) をクリックします **+** 。
-
-5. 以下の設定を指定します。
-
-   - [名前 **] ボックス** に名前を入力 `Safe Links` します。例:
-
-   - [処理の **選択] セクションで** 、[オン] を **クリックします**。
-
-   - 次のオプションを選びます。
-
-     - **安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする**
-
-     - **組織内で送信される電子メール メッセージに安全なリンクを適用する**
-
-     - **ユーザーが元の URL への安全なリンクをクリックしてクリックできない**
-
-   - In the **Applied to** section, choose The recipient **domain is**. 次に、ドメインを選び、[追加 **]、** または **[OK] をクリックします**。
-
-6. [**保存**] をクリックします。
-
-詳細については、「[Office 365 ATP の安全なリンク ポリシーを設定する](set-up-atp-safe-links-policies.md)」をご覧ください。
-
-## <a name="part-3---anti-phishing-protection"></a>第 3 部 - フィッシング対策保護
+## <a name="part-2---anti-phishing-protection"></a>パート 2-フィッシング対策保護
 
 [フィッシング対策]
 
-[フィッシング対策は、EOP](anti-phishing-protection.md) を含むサブスクリプションで使用 [できます](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。 ATP で高度なフィッシング対策 [保護を利用できます](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。
+[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)を含むサブスクリプションでは、[フィッシング対策保護](anti-phishing-protection.md)を利用できます。 高度なフィッシング対策を [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)で利用できます。
 
-次の手順では、ATP フィッシング対策ポリシーを構成する方法について説明します。 ステップは、フィッシング対策ポリシー (ATP なし) を構成するための手順と似ています。
+次の手順では、ATP のフィッシング対策ポリシーを構成する方法について説明します。 この手順は、(ATP を使用しない) フィッシング対策ポリシーの構成に似ています。
 
-1. セキュリティ コンプライアンス[センターで&で、](https://protection.office.com)脅**威管理**  >  **ポリシー**  >  **ATP フィッシング対策を選択します**。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP のフィッシング対策**] を選択します。
 
-2. [既定 **のポリシー] をクリックします**。
+2. [ **既定のポリシー**] をクリックします。
 
-3. [偽装 **] セクションで、[** 編集] を **クリック**し、次の設定を指定します。
+3. [ **偽装** ] セクションで、[ **編集**] をクリックし、次の設定を指定します。
 
-   - [保護する **ユーザーを追加します]** タブで、保護を有効にします。 次に、組織のボード メンバー、CEO、CFO、その他のシニア リーダーなどのユーザーを追加します。 個々のメール アドレスを入力するか、クリックして一覧を表示できます)。
+   - [ **保護するユーザーの追加** ] タブで、 *[* 保護] をオンにします。 次に、組織の取締役会のメンバー、CEO、CFO、その他のシニアリーダーなどのユーザーを追加します。 (個々の電子メールアドレスを入力するか、クリックしてリストを表示することができます。)
 
-   - [ドメインの**追加] タブで、** 自動的に自分**が所有するドメインを含める。** カスタム ドメインがある場合は、それらも追加します。
+   - [ **保護するドメインの追加** ] タブで、 **自分が所有しているドメインを自動的**に有効にします。 カスタムドメインがある場合は、ここで追加します。
 
-   - [アクション **] タブ**で、偽**装されたユーザーと**偽装されたドメイン**オプションの両方の****メッセージを検疫するを選択**します。 さらに、偽装の安全性のヒントを有効にしてください。
+   - [**操作**] タブで、[**偽装**されたユーザーと**偽装ドメイン**の両方の**メッセージを検疫**する] を選択します。 また、偽装の安全のヒントを有効にします。
 
-   - [メールボックス **インテリジェンス] タブ** で、メールボックス インテリジェンスが有効になっていることを確認します。 さらに、メールボックス インテリジェンス ベース偽装保護を有効にします。 偽装 **されたユーザーの一覧で、[電子メールが送信される] で [** 検疫] を **選択します**。
+   - [ **メールボックスインテリジェンス** ] タブで、メールボックスインテリジェンスが有効になっていることを確認し、メールボックスインテリジェンスに基づく偽装保護をオンにします。 [偽装され **たユーザーがメールを送信した場合** ] で、[ **メッセージを検疫**する] を選択します。
 
-   - [ **信頼できる送信者とドメインの追加]** タブで、追加する信頼できる送信者またはドメインを指定します。
+   - [ **信頼できる差出人とドメインの追加** ] タブで、追加する信頼できる送信者またはドメインを指定します。
 
-   - 設定を **確認した後、[** 設定の確認] タブで [保存] を **クリックします**。
+   - 設定を確認した後、[**設定の確認**] タブに**保存**します。
 
-4. **[Spoof] セクションで** **、[Edit]** をクリックし、次の設定を指定します。
+4. [ **スプーフィング** ] セクションで、[ **編集**] をクリックし、次の設定を指定します。
 
-   - [ス **プーフィング フィルター設定]** タブで、スプーフィング対策保護がオンになっていることを確認します。
+   - [ **スプーフィングフィルターの設定** ] タブで、[スプーフィング対策] 保護が有効になっていることを確認します。
 
-   - [操作] タブ **で** 、[メッセージの検 **疫] を選択します**。
+   - [ **Actions** ] タブで、[ **メッセージを検疫する**] を選択します。
 
-   - 設定を **確認した後、[** 設定の確認] タブで [保存] を **クリックします**。 (変更を加えなかった場合は、[キャンセル] を **クリックします**)。
+   - 変更内容を確認した後、[**設定の確認**] タブに**保存**します。 (変更を行っていない場合は、 **キャンセル**します)。
 
-5. 既定のポリシー設定ページを閉じます。
+5. [既定のポリシー設定] ページを閉じます。
 
-フィッシング対策ポリシー オプションの詳細については [、「ATP フィッシング対策ポリシーを構成する」を参照してください](configure-atp-anti-phishing-policies.md)。
+フィッシング対策ポリシーのオプションの詳細については、「 [ATP のフィッシング対策ポリシーを構成](configure-atp-anti-phishing-policies.md)する」を参照してください。
 
-## <a name="part-4---anti-spam-protection"></a>第 4 部 - スパム対策保護
+## <a name="part-3---anti-spam-protection"></a>パート 3-スパム対策保護
 
-[EOP を含む](anti-spam-protection.md) サブスクリプションでは、スパム対策保護を利用 [できます](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
+[スパム対策保護](anti-spam-protection.md) は、 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)を含むサブスクリプションで使用できます。
 
-1. コンプライアンス コンプライアンス[センター&脅威管理](https://protection.office.com)**ポリシーの**  >  **Policy**  >  **スパム対策を選択します**。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**ポリシーのスパム対策] を選択し  >  **Policy**  >  **Anti-spam**ます。
 
-2. [カスタム] **タブで** 、[カスタム設定 **] を有効** にします。
+2. [ **カスタム** ] タブで、[ユーザー設定] をオンにします。
 
-3. [ **既定のスパム フィルター ポリシーを展開し**、 **ポリシーの編集]** をクリックして、次の設定を指定します。
+3. [ **既定のスパムフィルターポリシー**] を展開し、[ **ポリシーの編集**] をクリックして、次の設定を指定します。
 
-   - [スパムおよび **バルクアクション] セクション** でしきい値を 5 または 6 に設定します。
+   - [ **スパムと一括操作** ] セクションで、しきい値を5または6に設定します。
 
-   - 許可リスト **セクションで** 、許可されている送信者とドメインを確認 (および必要に応じて編集) します。
+   - [ **許可するリスト** ] セクションで、許可された送信者とドメインを確認 (または編集) します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
-スパム対策ポリシーのオプションの詳細については、「EOP でスパム対策 [ポリシーを構成する」を参照してください](configure-your-spam-filter-policies.md)。
+スパム対策ポリシーオプションの詳細については、「 [CONFIGURE EOP」の「スパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
-## <a name="part-5---additional-settings-to-configure"></a>パート 5 - 構成する追加設定
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments"></a>パート 4-悪意のある Url およびファイルからの保護 (安全なリンクと安全な添付ファイル)
 
-マルウェア、悪意のある URL とファイル、フィッシング、スパムからの保護の構成に加えて、ゼロアリングおよび監査ログの設定を構成することをお勧めします。
+悪意のある Url やファイルからのクリック時の保護は、 [Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) を含むサブスクリプションで利用できます。 これは、Atp の [安全な添付ファイル](atp-safe-attachments.md) と [atp の安全なリンク](atp-safe-links.md) ポリシーによって設定されます。
 
-### <a name="zero-hour-auto-purge-for-email"></a>ゼロアルフパージのメールの消去
+### <a name="atp-safe-attachments-policies"></a>ATP の安全な添付ファイルポリシー
 
-[ゼロアチ](zero-hour-auto-purge.md) (ZAP) は EOP を含むサブスクリプションで利用 [できます](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。 この保護は既定で有効になっています。ただし、保護が有効にするには、次の条件が満たされる必要があります。
+[Atp の安全な添付ファイル](atp-safe-attachments.md)を設定するには、少なくとも1つの Atp の安全な添付ファイルポリシーを定義する必要があります。
 
-- スパム対策ポリシーの [迷惑**メール] フォルダーにメッセージを移動**[するアクションが設定されています](anti-spam-protection.md)。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP 安全添付ファイル**] を選択します。
 
-- ユーザーは既定の迷惑メール設定 [を保持してお](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)り、迷惑メールの保護を無効にしていません。
+2. [ **SharePoint、OneDrive、Microsoft Teams の ATP を有効にする**] オプションを選択します。
 
-詳細については、「ゼロ [アア自動消去 - スパムやマルウェアからの保護」を参照してください](zero-hour-auto-purge.md)。
+3. [ **電子メールの添付ファイルを保護** する] セクションで、プラス記号 () をクリックし **+** ます。
 
-### <a name="audit-logging-for-reporting-and-investigation"></a>レポートと調査の監査ログ
+4. 次の設定を指定します。
 
-監査ログは Exchange Online を含むサブスクリプションで [使用できます](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)。 セキュリティ ダッシュボード、電子メールのセキュリティ レポート、およびエクスプローラーなどの脅[email security reports](view-email-security-reports.md)[威保護](security-dashboard.md)レポートでデータを表示[するには](threat-explorer.md)、組織の監査ログを有効にする必要があります。 詳細については、「監査ログ検索 [を有効または無効にする」を参照してください](../../compliance/turn-audit-log-search-on-or-off.md)。
+   - [ **名前** ] ボックスに「」と入力 `Block malware` します。
 
-## <a name="post-setup-tasks"></a>セットアップ後の作業
+   - [応答] セクションで、[ **ブロック**] を選択します。
 
-脅威保護機能を構成したら、それらの機能がどのように動作しているかを監視し、必要に応じてポリシーを確認して変更し、新機能とサービス更新がないかを確認します。
+   - [ **添付ファイルのリダイレクト** ] セクションで、[ **リダイレクトを有効にする**] オプションを選択します。 組織のセキュリティ管理者またはオペレーターの電子メールアドレスを指定して、検出されたファイルを確認します。
+
+   - [ **適用先** ] セクションで、[ **受信者ドメイン**] を選択します。 次に、ドメインを選択し、[ **追加**] を選択して、[ **OK]** をクリックします。
+
+5. **保存**します。
+
+6. (**推奨の追加手順**)グローバル管理者または SharePoint Online 管理者は、 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行して、Microsoft 365 環境の **DisallowInfectedFileDownload** パラメーターを  *true* に設定します。 (これにより、ユーザーが悪意を持って検出されたファイルを開く、移動、コピー、または共有できなくなります)。
+
+詳細については、「 [office 365 の atp の安全な添付ファイルのポリシーをセットアップ](set-up-atp-safe-attachments-policies.md) する」および「 [SharePoint、OneDrive、Microsoft Teams 用の office 365 ATP を有効](turn-on-atp-for-spo-odb-and-teams.md)にする」を参照してください。
+
+### <a name="atp-safe-links-policies"></a>ATP の安全なリンクポリシー
+
+[ATP の安全なリンク](atp-safe-links.md)を設定するには、既定のポリシーを確認して編集し、特定のユーザーのポリシーを追加します。
+
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP セーフリンク**] を選択します。
+
+2. [ **既定** のポリシー] をダブルクリックします。
+
+3. [ **安全なリンクの使用** ] セクションで、[ **Microsoft 365 Apps for enterprise]、[Office for IOS**、および Android] のオプションを選択し、[ **保存**] をクリックします。
+
+4. [ **特定の受信者に適用されるポリシー** ] セクションで、プラス記号 () をクリックし **+** ます。
+
+5. 次の設定を指定します。
+
+   - [ **名前** ] ボックスに、などの名前を入力し `Safe Links` ます。
+
+   - **[アクションの選択**] セクションで、[**オン**] を選択します。
+
+   - 次のオプションを選択します。
+
+     - **安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする**
+
+     - **組織内で送信される電子メールメッセージに安全なリンクを適用する**
+
+     - **ユーザーが元の URL への安全なリンクをクリックできないようにする**
+
+   - [ **適用先** ] セクションで、[ **受信者ドメイン**] を選択します。 次に、ドメインを選択し、[ **追加**] を選択して、[ **OK]** をクリックします。
+
+6. **保存**します。
+
+詳細については、「[Office 365 ATP の安全なリンク ポリシーを設定する](set-up-atp-safe-links-policies.md)」をご覧ください。
+
+## <a name="part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads"></a>パート 5-SharePoint、OneDrive、Microsoft Teams のワークロードに対して ATP を有効にする
+
+SharePoint、OneDrive、Teams などのワークロードは、共同作業のために構築されています。 ATP を使用すると、チームサイトやドキュメントライブラリで悪意のあるファイルが検出された場合に、そのファイルをブロックおよび検出することができます。 この機能の詳細については、 [こちら](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-worldwide)を参照してください。
+
+> [!IMPORTANT]
+> **この手順を開始する前に、Microsoft 365 環境の監査ログが既に有効になっていることを確認して**ください。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「 [監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」を参照してください。
+
+1. に移動 <https://protection.office.com> し、職場または学校のアカウントでサインインします。
+
+2. [セキュリティ & コンプライアンスセンター] の左側のナビゲーションウィンドウで、[ **脅威の管理**] の下にある [ **ポリシー**の \> **安全な添付ファイル**] を選択します。
+
+   ![[セキュリティ & コンプライアンスセンター] で、[脅威管理ポリシー] を選択します。 \>](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+
+3. **[SharePoint、OneDrive、および Microsoft Teams に対して ATP を有効にする]** をオンにします。
+
+   ![SharePoint Online、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にします。](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+
+4. **保存**します。
+
+5. 組織の [安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md) と [安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認し、必要に応じて編集します。
+
+6. 勧めグローバル管理者または SharePoint Online 管理者として、 _DisallowInfectedFileDownload_パラメーターを*true*に設定して**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行します。
+
+   - このパラメーターを *true* に設定すると、検出されたファイルのすべてのアクション (削除を除く) がブロックされます。 ユーザーは、検出されたファイルを開いたり、移動、コピー、または共有したりできません。
+
+   - パラメーターを *false* に設定すると、削除とダウンロード以外のすべてのアクションがブロックされます。 ユーザーは、リスクを容認し、検出されたファイルをダウンロードすることを選択できます。
+   > [!TIP] Microsoft 365 での PowerShell の使用の詳細については、「 [Manage microsoft 365 With powershell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)」を参照してください。
+
+7. 変更がすべての Microsoft 365 データセンターに蔓延するまで最大30分かかります。
+
+
+#### <a name="now-set-up-alerts-for-detected-files"></a>検出されたファイルの通知を設定する
+
+SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別された場合に通知を受け取るには、警告を設定します。
+
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、 **[通知の**管理] を選択し \> **Manage alerts**ます。
+
+2. [ **新しい通知ポリシー**] を選択します。
+
+3. 通知の名前を指定します。 たとえば、ライブラリに悪意のあるファイルを入力することができます。
+
+4. 通知の説明を入力します。 たとえば、SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出されたときに管理者に通知を入力できます。
+
+5. [ **この通知を送信するタイミング** ] セクションで、次のように設定します。
+
+   a. [ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。
+
+   b. [ **ユーザー** ] フィールドは空のままにします。
+
+6. [ **この通知を送信する** ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。
+
+7. **保存**します。
+
+通知の詳細については、「 [セキュリティ & コンプライアンスセンターでアクティビティ警告を作成](../../compliance/create-activity-alerts.md)する」を参照してください。
+
+> [!NOTE]
+> 構成が完了したら、次のリンクを使用してワークロード調査を開始します。
+>- [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
+>- [SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出された場合の対処方法](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+>- [Microsoft 365 で管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md) 
+
+## <a name="part-6---additional-settings-to-configure"></a>パート 6-構成する追加設定
+
+マルウェア、悪意のある Url、ファイル、フィッシング、スパムからの保護の構成に加えて、ゼロ時間の自動削除を構成することをお勧めします。
+
+### <a name="zero-hour-auto-purge-for-email-in-eop"></a>EOP の電子メールのゼロ時間自動削除
+
+[ゼロ時間自動削除](zero-hour-auto-purge.md) (ZAP) は、 [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)を含むサブスクリプションで利用できます。 この保護は既定で有効になっています。ただし、保護を有効にするには、次の条件を満たす必要があります。
+
+- スパム[対策ポリシー](anti-spam-protection.md)で、 **[迷惑メール] フォルダーにメッセージを移動**するように設定されています。
+
+- ユーザーが既定の [迷惑メール設定](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)を保持していて、迷惑メールの保護がオフになっていない。
+
+詳細については、「 [スパムおよびマルウェアに対するゼロ時間自動削除対策](zero-hour-auto-purge.md)」を参照してください。
+
+## <a name="post-setup-tasks-and-next-steps"></a>セットアップ後のタスクと次の手順
+
+脅威保護機能を構成した後、これらの機能がどのように動作するかを必ず監視してください。 必要な操作を実行できるように、ポリシーを確認し、改訂します。 また、価値を追加できる新機能とサービス更新をご確認ください。
 
 ****
 
 |操作|追加情報|
 |---|---|
-|レポートを表示して、組織に対して脅威保護機能がどのように機能しているかを確認する|[セキュリティ ダッシュボード](security-dashboard.md)<br/>[電子メール セキュリティ レポート](view-email-security-reports.md)<br/>[365 ATP Officeレポート](view-reports-for-atp.md)<br/>[脅威エクスプローラー](threat-explorer.md)|
-|必要に応じて脅威保護ポリシーを定期的に確認して変更する|[セキュリティ スコア](../mtp/microsoft-secure-score.md)<br/>[スマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 脅威の調査および対応の機能](keep-users-safe-with-office-365-ti.md)|
-|新機能およびサービス更新プログラムを確認する|[標準および対象指定リリース オプション](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Message Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|
+|レポートを表示して、組織の脅威保護機能がどのように機能するかを確認する|[セキュリティダッシュボード](security-dashboard.md)<br/>[電子メールセキュリティレポート](view-email-security-reports.md)<br/>[Office 365 ATP のレポート](view-reports-for-atp.md)<br/>[脅威エクスプローラー](threat-explorer.md)|
+|必要に応じて脅威保護ポリシーを定期的にレビューし、改訂する|[セキュリティ スコア](../mtp/microsoft-secure-score.md)<br/>[スマートレポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 脅威の調査と応答機能](keep-users-safe-with-office-365-ti.md)|
+|新機能とサービス更新を見る|[標準および対象のリリースオプション](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Message Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|EOP および ATP の推奨される標準および厳密なセキュリティ構成の詳細について説明します。 | [EOP および Office 365 の ATP セキュリティに関する推奨設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) |

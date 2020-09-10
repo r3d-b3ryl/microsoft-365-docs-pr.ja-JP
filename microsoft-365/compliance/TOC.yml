@@ -936,7 +936,7 @@
 - name: コンプライアンス認証
   items:
     - name: Microsoft コンプライアンスのサービス
-      href: offering-home.md
+      href: offering-home.yml
     - name: グローバル
       items:
         - name: CIS ベンチマーク
