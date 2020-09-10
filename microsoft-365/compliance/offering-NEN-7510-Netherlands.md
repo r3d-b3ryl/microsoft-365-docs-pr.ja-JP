@@ -3,7 +3,7 @@ title: NEN 7510
 description: オランダ国内の組織は NEN 7510 標準に従い、患者の医療データの統制を実施する必要があります。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 572e41368c7046f0ad9fd8c68c7f26e4aaad93ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 90d1634ffd9b8f52dc3ccd19d44363bb2eae2227
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800052"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417881"
 ---
 # <a name="nen-7510"></a>NEN 7510
 

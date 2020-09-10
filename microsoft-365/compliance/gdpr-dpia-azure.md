@@ -3,7 +3,7 @@ title: 'DPIA: Azure での GDPR への対応'
 description: Microsoft Azure を使用するときに、データ保護影響評価 (DPIA) が必要かどうかを判断する情報を見つけます。
 keywords: DPIA、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ec7bcf7a3211531e1c0cd2abf514752c6099e8d1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c60079bbbb5f141751e5f4526dcf327e876746ac
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035465"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417931"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-azure"></a>データ保護影響評価: Microsoft Azure を利用するデータ管理者向けガイダンス
 

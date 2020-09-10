@@ -3,7 +3,7 @@ title: 一般データ保護規則
 description: 一般データ保護規則 (GDPR) に役立つ情報を参照しながら、Microsoft 技術ガイダンスについて説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800022"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422455"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 
@@ -210,7 +210,7 @@ Microsoft では長年にわたり、企業向けオンライン サービスの
 
 **その他の Microsoft のコンプライアンス サービスには、どのようなものがありますか?**
 
-世界中のほとんどすべての国で事業を営むグローバル企業として、Microsoft はお客様を支援するための堅牢なコンプライアンス ポートフォリオを用意しています。 コンプライアンス サービス (FedRamp、HIPAA/HITECH、ISO 27001、ISO 27002、ISO 27018、NIST 800-171、UK G-Cloud など多数) の完全なリストは、[コンプライアンス サービスのトピック](offering-home.md)を参照してください。
+世界中のほとんどすべての国で事業を営むグローバル企業として、Microsoft はお客様を支援するための堅牢なコンプライアンス ポートフォリオを用意しています。 コンプライアンス サービス (FedRamp、HIPAA/HITECH、ISO 27001、ISO 27002、ISO 27018、NIST 800-171、UK G-Cloud など多数) の完全なリストは、[コンプライアンス サービスのトピック](offering-home.yml)を参照してください。
 
 **GDPR は、どのように私の会社に影響するのですか?**
 

@@ -4,7 +4,7 @@ description: この記事には、GDPR の Microsoft の EU データ保護責�
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 ms.custom: seo-marvel-apr2020
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 885055aa0684dc0ad0788a7e056c51b6cfd4c587
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 140d66c48feed0534c377fb03673bb575e62527d
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049773"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417941"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft のデータ保護責任者
 

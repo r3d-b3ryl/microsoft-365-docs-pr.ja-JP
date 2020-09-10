@@ -3,7 +3,7 @@ title: GDPR に関する Microsoft サポートおよびプロフェッショナ
 description: Microsoft プロフェッショナル サービスおよびサポート サービスを利用する際に、GDPR をサポートするために必要な情報にアクセスする便利な方法を提供します。
 keywords: ARC、アカウンタビリティ対応準備チェックリスト、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 05bf6a14e27e716e4e30b6ad3715f3cdd4f49eec
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: f6242ebddf6597d3ce4256f4ddfc0ab9ac59c8f5
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558138"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422421"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Microsoft サポートおよびプロフェッショナル サービス アカウンタビリティ対応準備チェックリスト
 
@@ -139,7 +139,7 @@ ms.locfileid: "42558138"
 |  9 <a name="9"> </a> | [顧客データ保護影響評価に関する Microsoft プロフェッショナル サービスからの重要な情報](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services) | |
 | 10 <a name="10"> </a> | [ISO 27001 監査レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) | |
 | 11 <a name="11"> </a> | Microsoft プロフェッショナル サービス ISO/IEC 27001:2013 ISMS の適用性に関するステートメント | お客様のアカウント管理チームを介した要求での SOA。|
-| 12 <a name="12"> </a> | [Microsoft Trust Center コンプライアンスの提供](offering-home.md) | |
+| 12 <a name="12"> </a> | [Microsoft Trust Center コンプライアンスの提供](offering-home.yml) | |
 | 13 <a name="13"> </a> | [Microsoft DPO 情報](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) | |
 
 ## <a name="learn-more"></a>詳細情報

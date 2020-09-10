@@ -3,7 +3,7 @@ title: データ保護影響評価
 description: このドキュメントには、データ管理者に対し、DPIA が必要であるかどうかを判断し、必要な場合には DPIA に含める詳細情報を決定する上で役立つ情報が記載されています。
 keywords: データ保護影響評価、DPIA、Dynamics 365、Microsoft プロフェッショナル サービス、Microsoft 365、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 21bda86075b2ab1e542e482e8c0a1edee640035e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8bedb6e913e55cdd4cd44d8f343df1ec0433fdf8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558077"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417971"
 ---
 # <a name="data-protection-impact-assessment-for-the-gdpr"></a>GDPR のデータ保護影響評価
 

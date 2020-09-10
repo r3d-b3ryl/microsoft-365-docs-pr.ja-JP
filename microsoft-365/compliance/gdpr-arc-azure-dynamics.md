@@ -3,7 +3,7 @@ title: GDPR に関する Azure および Dynamics 365 アカウンタビリテ�
 description: Microsoft Azure を使用する際に、GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。
 keywords: ARC Azure、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd94ab9bfcc4ca1c9e8f6b99364fa99dde5ff644
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815264"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422465"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Azure および Dynamics 365 アカウンタビリティ対応準備チェックリスト
 
@@ -144,7 +144,7 @@ GDPR 関連のドキュメントの詳細については、「[https://aka.ms/gd
 | 11 <a name="11"> </a> | [顧客データ保護影響評価に関する Azure からの重要な情報](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 タイプ 2 監査レポート [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (全体) ISO/IEC 27001:2013 ISMS の適用性に関するステートメント](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft Trust Center コンプライアンスで提供されるサービス](offering-home.md)  |
+| 14 <a name="14"> </a> | [Microsoft Trust Center コンプライアンスで提供されるサービス](offering-home.yml)  |
 | 15 <a name="15"> </a> | [Microsoft DPO 情報](https://aka.ms/GDPRDPO) |
 | 16 <a name="16"> </a> | [顧客データ保護の影響に関する Dynamics 365 からの重要な情報](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 17 <a name="17"> </a> | [Dynamics 365 における監査とレポート](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |
