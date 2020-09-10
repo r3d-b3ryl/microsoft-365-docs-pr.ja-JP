@@ -1,0 +1,41 @@
+### YamlMime:Hub
+title: Microsoft Bookings
+summary: Microsoft の予約を設定して、顧客にサービスを提供することを予定の基準にする方法について説明します。
+brand: m365
+metadata:
+  title: Microsoft Bookings
+  description: Microsoft の予約を設定して、顧客にサービスを提供することを予定の基準にする方法について説明します。
+  ms.service: bookings
+  ms.topic: hub-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 09/04/2020
+  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419849"
+additionalContent:
+  sections:
+  - items:
+    - title: Microsoft 予約とは
+      summary: Web ベースの予約された予定表とアプリを使用して予定をスケジュールおよび管理します。これには、スタッフおよび自動通知メールの Outlook 統合が含まれます。
+      url: bookings-overview.md
+    - title: 勤務先情報を入力する
+      summary: Microsoft の予約で、会社名、住所、電話番号、web サイト URL、ロゴ、営業時間を含む、[自己紹介の作成] ページを入力します。
+      url: enter-business-information.md
+    - title: 予約アプリを取得する
+      summary: 色のテーマを変更し、外部の顧客が予約しているページがどのように表示されるかを設定します。
+      url: customize-booking-page.md
+    - title: スタッフを予約に追加する
+      summary: スタッフリストを作成し、名前、電話番号、電子メールアドレスなど、スタッフメンバーの詳細を管理します。
+      url: add-staff.md
+    - title: 休業、休暇、休暇期間のスケジュール
+      summary: 指定された時間中に従業員が予約の対象としてマークされないように、予約予定表から office の休業日および従業員の休暇を予約します。
+      url: schedule-closures-time-off-vacation.md
+    - title: Microsoft の予約の従業員の就業時間
+      summary: Microsoft の予約で従業員の就業時間と利用可能時間を設定します。
+      url: employee-hours.md
