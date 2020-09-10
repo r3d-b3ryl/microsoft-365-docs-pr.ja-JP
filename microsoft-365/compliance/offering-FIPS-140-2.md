@@ -3,7 +3,7 @@ title: 連邦情報処理規格 (FIPS) 文書140-2
 description: Microsoft は、暗号化モジュールが米国連邦情報処理規格に準拠していることを認定しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8288438eed0f658d8058125bc90315e9a2626c08
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: f193e1846b957a26475cdfc48add6679a951841f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066582"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415851"
 ---
 # <a name="federal-information-processing-standard-fips-publication-140-2"></a>連邦情報処理規格 (FIPS) 文書140-2
 
@@ -31,7 +31,7 @@ ms.locfileid: "44066582"
 
 ## <a name="microsofts-approach-to-fips-140-2-validation"></a>Microsoft の FIPS 140-2 検証に対するアプローチ
 
-Microsoft では、140-2 の要件を満たすための積極的なコミットメントを維持しています。これは、2001で標準を開始してから、検証済みの暗号化モジュールを備えています。 Microsoft は、米国標準技術局 (NIST)[暗号化モジュール検証プログラム](https://csrc.nist.gov/Projects/cryptographic-module-validation-program)(cmvp) の下で、暗号化モジュールを検証します。 多くのクラウドサービスを含む複数の Microsoft 製品は、これらの暗号化モジュールを使用します。
+Microsoft では、140-2 の要件を満たすための積極的なコミットメントを維持しています。これは、2001で標準を開始してから、検証済みの暗号化モジュールを備えています。 Microsoft は、米国標準技術局 (NIST) [暗号化モジュール検証プログラム](https://csrc.nist.gov/Projects/cryptographic-module-validation-program) (cmvp) の下で、暗号化モジュールを検証します。 多くのクラウドサービスを含む複数の Microsoft 製品は、これらの暗号化モジュールを使用します。
 
 Microsoft Windows 暗号化モジュールの技術情報、各モジュールのセキュリティポリシー、および CMVP 証明書の詳細については、「 [windows および Windows SERVER FIPS 140-2 のコンテンツ](https://aka.ms/AA6ehud)」を参照してください。
 
@@ -71,7 +71,7 @@ FIPS 140-2 で検証された暗号化モジュールを使用する必要があ
 
 **Microsoft Azure は FIPS 140-2 をどのようにサポートしていますか?**
 
-Azure は、ハードウェア、市販のオペレーティングシステム (Linux と Windows)、および Azure 固有のバージョンの Windows を組み合わせて構築されています。 Microsoft[セキュリティ開発ライフサイクル](https://www.microsoft.com/securityengineering/sdl/)(SDL) では、オペレーティングシステムでは、ハイパースケールクラウドでの運用中に fips 140-2 の承認済みアルゴリズムを使用しているため、すべての Azure サービスがデータセキュリティに対して fips 140-2 の承認済みアルゴリズムを使用しています。
+Azure は、ハードウェア、市販のオペレーティングシステム (Linux と Windows)、および Azure 固有のバージョンの Windows を組み合わせて構築されています。 Microsoft [セキュリティ開発ライフサイクル](https://www.microsoft.com/securityengineering/sdl/) (SDL) では、オペレーティングシステムでは、ハイパースケールクラウドでの運用中に fips 140-2 の承認済みアルゴリズムを使用しているため、すべての Azure サービスがデータセキュリティに対して fips 140-2 の承認済みアルゴリズムを使用しています。
 
 **代理店の認定プロセスで、Microsoft の FIPS 140-2 への準拠を使用できますか?**
 
@@ -86,4 +86,4 @@ FIPS 140-2 に準拠するには、fips 承認モードで実行するように�
 - [暗号化モジュールの FIPS Pub 140-2 セキュリティ要件](https://csrc.nist.gov/publications/fips/fips140-2/fips1402.pdf)
 - [NIST 暗号化モジュール検証プログラム](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows、Windows Server、および FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

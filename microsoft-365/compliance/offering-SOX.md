@@ -3,7 +3,7 @@ title: 米国企業改革法 (SOX 法)
 description: 金融サービス企業は、Microsoft のコンプライアンスレポートを使用して、サーベンスオクスリー法への準拠に対応できます。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ca91606910c38664e74d650f750769121ea11957
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066310"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415355"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>米国企業改革法 (SOX 法)
 
@@ -37,7 +37,7 @@ Microsoft は、クラウドサービスプロバイダーに対して SOX の�
 
 サードパーティの監査会社によって作成された監査レポートでは、Microsoft コントロールが適切に設計されており、指定した日付に操作が行われ、指定された期間にわたって効率的に稼働していることが attests ます。 お客様は、レポートを確認して、Microsoft control の目標とその制御の有効性を把握し、補完的なコントロールにアクセスできます。
 
-Azure クライアントが SOX の義務に対処できるようにするために、Microsoft は[サーベンスオクスリー法向けの Azure ガイダンス](https://aka.ms/Azure-SOX-Guide)を公開しています。 このホワイトペーパーでは、SOX 準拠の影響など、移行のベストプラクティスについて説明し、SOX 関連アプリケーション (Microsoft Finance および Microsoft Finance) を Azure に移行する際の社内での操作について説明します。
+Azure クライアントが SOX の義務に対処できるようにするために、Microsoft は [サーベンスオクスリー法向けの Azure ガイダンス](https://aka.ms/Azure-SOX-Guide)を公開しています。 このホワイトペーパーでは、SOX 準拠の影響など、移行のベストプラクティスについて説明し、SOX 関連アプリケーション (Microsoft Finance および Microsoft Finance) を Azure に移行する際の社内での操作について説明します。
 
 Microsoft では、お客様とのコンプライアンス責任を共有しています。 コンプライアンスプログラムに関する詳細情報を提供しています。これは、証明サードパーティから詳細な監査結果を要求することで確認できます。 しかし、最終的には、お客様がビジネスに適用される特定の法律や規制に準拠しているかどうかを判断することができます。 たとえば、ユーザーがクラウドリソースにアクセスするなどの SOX 関連のセキュリティコントロールがあり、責任を負っています。組織は、SOX 準拠の一環としてこれらのコントロールの適切な監査を開発する必要があります。
 
@@ -53,7 +53,7 @@ SOX 準拠の義務に対応する際に Microsoft Azure コンプライアン�
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
-[SOC 1 タイプ 2](offering-SOC.md)レポート:
+[SOC 1 タイプ 2](offering-SOC.md) レポート:
 
 - Azure と Power BI
 - Dynamics 365
@@ -72,4 +72,4 @@ SOX 準拠の義務に対応する際に Microsoft Azure コンプライアン�
 - [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft 法人向けクラウド サービスおよび金融サービス](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [クラウド コンピューティングの共同責任](https://aka.ms/sharedresponsibility)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

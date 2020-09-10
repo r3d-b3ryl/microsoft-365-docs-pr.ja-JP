@@ -3,7 +3,7 @@ title: カリフォルニア州消費者プライバシー法 (CCPA)
 description: Microsoft サービスとカリフォルニアのコンシューマプライバシー法 (CCPA)。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: de9fcad3b1d54247114974ce4432068c136fdb2a
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 1bdd6770c033abe7a2bf714029b2a4075fada249
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222029"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415739"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>カリフォルニア州消費者プライバシー法 (CCPA)
 
 ## <a name="ccpa-overview"></a>CCPA の概要
 
-カリフォルニアのコンシューマ Privacy 法 (CCPA) は、米国の最初の包括的なプライバシー法です。 カリフォルニアのコンシューマーにさまざまなプライバシー権限を与えます。  CCPA によって制限される企業には、開示、一般的なデータ保護規則 (GDPR) (コンシューマーデータのサブジェクト権限 (DSRs) など)、特定のデータ転送用の「オプトアウト」、「オプトイン」など、これらのコンシューマーにさまざまな義務があります。未成年者の要件。
+カリフォルニアのコンシューマ Privacy 法 (CCPA) は、米国の最初の包括的なプライバシー法です。 カリフォルニアのコンシューマーにさまざまなプライバシー権限を与えます。  CCPA によって制限される企業には、開示、一般的なデータ保護規則 (GDPR) (コンシューマーデータのサブジェクト権限 (DSRs) など)、特定のデータ転送用の「オプトアウト」、未成年者の「オプトイン」要件など、これらのコンシューマーに多くの責務があります。
 
-CCPA は、以下の1つまたは複数のことを満たしているカリフォルニア州の企業にのみ適用されます。 (1) $2500万よりも高い年間売上を得ることができます。または、(2) カリフォルニアの消費者個人の売上から年間収益の50% を超えないようにします。情報、または (3) 5万を超えるカリフォルニア消費者の個人情報を売買または共有します。
+CCPA は、以下の1つまたは複数のことを満たす、カリフォルニアでの企業を遂行している企業にのみ適用されます。 (1) $2500万より多くの年間収益を50得ることができます。または、(2) は、カリフォルニアの消費者5万の個人情報を販売したときに、その個人情報を売買または共有し
 
 CCPA は 2020 年 1 月 1 日から有効になります。 ただし、カリフォルニア弁護士の一般 (AG) による執行は、2020年7月1日に開始されます。
 
@@ -35,7 +35,7 @@ CCPA は 2020 年 1 月 1 日から有効になります。 ただし、カリ�
 
 ## <a name="microsoft-and-the-ccpa"></a>Microsoft と CCPA
 
-カリフォルニアでビジネスを行っている商用のお客様のために、Microsoft は、オンラインサービスとプロフェッショナルサービスの提供に関して、「サービスプロバイダー」としての役割を果たします。  オンラインサービス使用条件 (OST) と Microsoft プロフェッショナルサービスデータ保護補遺 (MSDPA) の条項は、既に CCPA の下のサービスプロバイダーの要件を満たしており、一般にお客様がデータを引き続き転送できるように十分です。オンラインサービスに接続します。 そのため、お客様が Microsoft を CCPA の下のサービスプロバイダーとして利用できるようにするために、追加の契約変更は不要です。
+カリフォルニアでビジネスを行っている商用のお客様のために、Microsoft は、オンラインサービスとプロフェッショナルサービスの提供に関して、「サービスプロバイダー」としての役割を果たします。  オンラインサービス使用条件 (OST) と Microsoft プロフェッショナルサービスデータ保護補遺 (MSDPA) の条項は、既に CCPA の下のサービスプロバイダーの要件を満たしており、一般にお客様がオンラインサービスへのデータの転送を継続できるように十分に対応しています。 そのため、お客様が Microsoft を CCPA の下のサービスプロバイダーとして利用できるようにするために、追加の契約変更は不要です。
 
 OST で設定されているように、Microsoft は、オンラインサービスのプロビジョニングに適用できるすべての法律および規制に準拠しています。これには、CCPA が含まれます。  
 
@@ -53,7 +53,7 @@ OST で設定されているように、Microsoft は、オンラインサービ
 
 CCPA の準備をするために必要ないくつかの手順を以下に示します。
 
-- CCPA プライバシープログラムの一環として、[コンプライアンススコア](compliance-score.md)の GDPR 評価の活用を開始します。
+- CCPA プライバシープログラムの一環として、 [コンプライアンススコア](compliance-score.md) の GDPR 評価の活用を開始します。
 - データ主体要求ツールを使用して、データ主体のアクセス要求 (DSARs) に効率よく応答するためのプロセスを確立します。
 - ラベルとポリシーを設定し、Microsoft Information Protection を使用して機密データを検索、分類、保護します。
 - メールの暗号化機能を使用して、機密情報をさらに管理します。
@@ -103,4 +103,4 @@ CCPA には、次のように、個人情報を収集、転送、販売する規
 - [CCPA ガイドの概要](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [データ主体要求と GDPR](gdpr-data-subject-requests.md)
 - [カリフォルニア州消費者プライバシー法 (CCPA) の FAQ](ccpa-faq.md)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

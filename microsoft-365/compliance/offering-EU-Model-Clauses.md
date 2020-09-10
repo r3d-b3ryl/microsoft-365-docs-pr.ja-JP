@@ -3,7 +3,7 @@ title: 欧州連合モデル条項
 description: Microsoft は、EU 標準契約条項をお客様に提供し、個人データの転送を保証しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9d678ca5ee9b8a8ebf4feadfb27826caa533967e
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: b4767b9cc3d267020fee1c44876bf47442d0cea2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773864"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415495"
 ---
 # <a name="european-union-model-clauses"></a>欧州連合モデル条項
 

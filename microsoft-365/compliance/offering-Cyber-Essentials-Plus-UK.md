@@ -3,7 +3,7 @@ title: 英国サイバーの Essentials PLUS
 description: サイバーエッセンシャル PLUS は、組織が一般的なサイバーセキュリティ脅威から保護することを支援する英国政府定義スキームです。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066430"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415577"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>英国サイバーの Essentials PLUS
 
@@ -38,9 +38,9 @@ ms.locfileid: "44066430"
 
 ## <a name="microsoft-and-uk-cyber-essentials-plus"></a>Microsoft と UK のサイバーのエッセンシャルプラス
 
-Microsoft Azure は、サイバーエッセンシャルとバッジを持っており、[サイバー Essentials スキーム](https://go.microsoft.com/fwlink/p/?linkid=2099398)に記載されている要件を満たしています。 世界をリードするコンプライアンスポートフォリオの証拠を提供するために、Azure 運用システムが頻繁にテストおよび監査されます。
+Microsoft Azure は、サイバーエッセンシャルとバッジを持っており、 [サイバー Essentials スキーム](https://go.microsoft.com/fwlink/p/?linkid=2099398)に記載されている要件を満たしています。 世界をリードするコンプライアンスポートフォリオの証拠を提供するために、Azure 運用システムが頻繁にテストおよび監査されます。
 
-Azure のグローバルな操作に適用される[Azure サイバー ESSENTIALS PLUS 証明書](https://aka.ms/AzureCyberEPlusCert)は、ダウンロードできます。
+Azure のグローバルな操作に適用される [Azure サイバー ESSENTIALS PLUS 証明書](https://aka.ms/AzureCyberEPlusCert)は、ダウンロードできます。
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -50,4 +50,4 @@ Azure のグローバルな操作に適用される[Azure サイバー ESSENTIAL
 ## <a name="resources"></a>リソース
 
 - [サイバー Essentials スキーム: 保証フレームワーク](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

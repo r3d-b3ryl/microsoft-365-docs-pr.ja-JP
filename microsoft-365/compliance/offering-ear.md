@@ -3,7 +3,7 @@ title: US 輸出管理の規制 (EAR)
 description: Microsoft クラウドサービスは、お客様が米輸出管理規則 (EAR) に準拠したコンプライアンス要件を満たし、輸出規制リスクを管理する手助けをしています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,39 +14,39 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1adf0bab35c921dd416028747b0309e5ad5f3055
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 4ad12f785a76f6ee733cb3b459ad58370a330f51
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601964"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416063"
 ---
 # <a name="us-export-administration-regulations-ear"></a>US 輸出管理の規制 (EAR)
 
 ## <a name="about-the-ear"></a>イヤーについて
 
-米国商務省は、[業界およびセキュリティ (BIS) のビューロー](https://www.bis.doc.gov/)で輸出管理の規則 (イヤー) を適用します。 この耳は、商業および軍事の目的と特定の防衛物の両方で使用できる "デュアルユース" のアイテムを含む、ほとんどの商用商品、ソフトウェア、およびテクノロジの輸出および再輸出に関する制御を幅広く制御し、課しています。
+米国商務省は、 [業界およびセキュリティ (BIS) のビューロー](https://www.bis.doc.gov/)で輸出管理の規則 (イヤー) を適用します。 この耳は、商業および軍事の目的と特定の防衛物の両方で使用できる "デュアルユース" のアイテムを含む、ほとんどの商用商品、ソフトウェア、およびテクノロジの輸出および再輸出に関する制御を幅広く制御し、課しています。
 
-BIS ガイダンスでは、データまたはソフトウェアがクラウドにアップロードされるとき、またはユーザーノード間で転送されるときに、クラウドプロバイダーではなく、顧客が "エクスポーター" となり、そのデータまたはソフトウェアの転送、保存、およびアクセスを確実に行うことができるようになります。イヤーに準拠します。
+BIS ガイダンスでは、データまたはソフトウェアがクラウドにアップロードされるとき、またはユーザーノード間で転送されるときに、クラウドプロバイダーではなく、お客様は、そのデータまたはソフトウェアの転送、保存、アクセスを確実に行う必要がある「エクスポーター」を持っています。
 
-[BIS によれ](https://www.bis.doc.gov/index.php/documents/regulation-docs/412-part-734-scope-of-the-export-administration-regulations/file)ば、*輸出*とは、保護された技術または技術データを米国内の国外の人物に転送すること (または*エクスポート*とも呼ばれます) を指します。 耳になることは、次のとおりです。
+[BIS によれ](https://www.bis.doc.gov/index.php/documents/regulation-docs/412-part-734-scope-of-the-export-administration-regulations/file)ば、 *輸出* とは、保護された技術または技術データを米国内の国外の人物に転送すること (または *エクスポート*とも呼ばれます) を指します。 耳になることは、次のとおりです。
 
 - 米国からエクスポートします。
-- 元のアイテムと特定の外部元アイテムを再輸出または再転送します。これには、 *minimis*の一部のコンテンツが含まれています。
+- 元のアイテムと特定の外部元アイテムを再輸出または再転送します。これには、 *minimis* の一部のコンテンツが含まれています。
 - 他の国から個人に連絡または開示を行います。
 
-EAR の対象となるアイテムは、各アイテムに固有の[エクスポート制御分類番号 (ECCN)](https://www.bis.doc.gov/index.php/licensing/commerce-control-list-classification/export-control-classification-number-eccn)が割り当てられている Commerce コントロールリスト (ccl) にあります。 CCL に記載されていないアイテムは EAR99 として指定されており、ほとんどの EAR99 市販製品ではライセンスをエクスポートする必要はありません。 ただし、宛先、エンドユーザー、またはアイテムの使用終了によっては、EAR99 アイテムでも、BIS エクスポートライセンスが必要になることがあります。
+EAR の対象となるアイテムは、各アイテムに固有の [エクスポート制御分類番号 (ECCN)](https://www.bis.doc.gov/index.php/licensing/commerce-control-list-classification/export-control-classification-number-eccn)が割り当てられている Commerce コントロールリスト (ccl) にあります。 CCL に記載されていないアイテムは EAR99 として指定されており、ほとんどの EAR99 市販製品ではライセンスをエクスポートする必要はありません。 ただし、宛先、エンドユーザー、またはアイテムの使用終了によっては、EAR99 アイテムでも、BIS エクスポートライセンスが必要になることがあります。
 
-2016年6月に公開された[最終的なルール](https://www.federalregister.gov/documents/2016/06/03/2016-12734/revisions-to-definitions-in-the-export-administration-regulations)では、サードツーエンドで FIPS 140-2 の検証済み暗号化モジュールを使用して、サードツーエンドで暗号化されていて、故意に軍事によって禁止されていない国またはロシアのフェデレーションに保存されていなかった場合にも、そのことを明確にします
+2016年6月に公開された [最終的なルール](https://www.federalregister.gov/documents/2016/06/03/2016-12734/revisions-to-definitions-in-the-export-administration-regulations)では、サードツーエンドで FIPS 140-2 の検証済み暗号化モジュールを使用して、サードツーエンドで暗号化されていて、故意に軍事によって禁止されていない国またはロシアのフェデレーションに保存されていなかった場合にも、そのことを明確にします
 
 ## <a name="microsoft-and-the-ear"></a>Microsoft とイヤー
 
-Microsoft のテクノロジ、製品、およびサービスは、輸出管理の規制 (EAR) の対象となります。 EAR のコンプライアンス認定はありませんが、Microsoft Azure、Microsoft Azure Government、および Microsoft Office 365 Government (GCCHigh および DoD 環境) には、お客様にとって、EAR 管理のエクスポートの対象となる重要な機能とツールがあります。リスクを制御し、コンプライアンス要件を満たします。
+Microsoft のテクノロジ、製品、およびサービスは、輸出管理の規制 (EAR) の対象となります。 耳に対するコンプライアンス認定はありませんが、Microsoft Azure、Microsoft Azure Government、Microsoft Office 365 Government (GCCHigh および DoD 環境) には、お客様にとって、「輸出管理のリスクを管理し、そのコンプライアンス要件を満たす」というお客様を対象とした場合に役立つ重要な機能とツールが提供されます。
 
 この米コマース部門は、Microsoft などのクラウドサービスプロバイダーではなく、顧客データのエクスポーターと見なされるというお客様の地位を獲得しています。 ほとんどのお客様のデータは、耳になる輸出規制の対象となる "テクノロジ" または "技術データ" とは見なされませんが、Microsoft の範囲内のクラウドサービスは、お客様が管理し、発生する可能性のある輸出規制リスクを大幅に軽減できるように構造化されています。 Microsoft は一般に、対象ユーザーに対して政府機関のクラウドサービスの使用を推奨していますが、排他的ではありません。 適切な計画があれば、お客様は次のツールと独自の内部手順を使用して、輸出規制に関する完全なコンプライアンスを実現できます。
 
 - **データの場所を制御**します。 お客様は、データが保存されている場所を確認でき、ストレージを制限する堅牢なツールにアクセスできます。 そのため、データを米国内に格納し、管理対象テクノロジまたは技術データを米国外で転送することを最小限に抑えることができます。 さらに、顧客データは、データが「故意に格納される」というイヤー prohibitions と一致していません。 Azure データセンターは、25か d のいずれかの国またはロシアのフェデレーションにありません。
-- **エンドツーエンドの暗号化**。 耳で指定された物理的な格納場所に対してエンドツーエンドの暗号化セーフハーバーを利用することにより、Microsoft のスコープ内のクラウドサービスは、輸出管理のリスクに対する保護に役立つ暗号化機能を提供します。 また、転送中および保存中の[データを暗号化するためのさまざまなオプション](https://aka.ms/Azure-Encryption-Overview)をお客様に提供します。また、暗号化オプションの中から柔軟に選択できます。
+- **エンドツーエンドの暗号化**。 耳で指定された物理的な格納場所に対してエンドツーエンドの暗号化セーフハーバーを利用することにより、Microsoft のスコープ内のクラウドサービスは、輸出管理のリスクに対する保護に役立つ暗号化機能を提供します。 また、転送中および保存中の [データを暗号化するためのさまざまなオプション](https://aka.ms/Azure-Encryption-Overview) をお客様に提供します。また、暗号化オプションの中から柔軟に選択できます。
 - **許可されていないエクスポートを防止するためのツールとプロトコル**。 また、暗号化を使用すると、非 US のユーザーが暗号化されたデータにアクセスしている場合でも、暗号化されたデータを読み取ることができない場合や、データを認識していない場合でも、データの読み取りまたは認識ができない場合には何も表示されません。したがって、制御されたデータの "リリース" はありません。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
@@ -66,7 +66,7 @@ Microsoft のテクノロジ、製品、およびサービスは、輸出管理�
 
 **Microsoft クラウドサービスを使用する際に、輸出規制に準拠するにはどうすればよいですか。**
 
-この耳では、データが Microsoft クラウドなどのクラウドサーバーにアップロードされるときに、クラウドサービスプロバイダーではなく、データを所有する顧客がエクスポーターと見なされます。 そのため、データの所有者 (Microsoft のお客様) は、Microsoft cloud の使用方法を慎重に評価する必要があります。輸出規制を implicate し、使用しているデータやストアに格納されているデータがイヤーにあるかどうかを判断します。、適用される場合は、どのようなコントロールが適用されます。 [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)と[Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI)のクラウドサービスを使用して、お客様が輸出規制を完全に遵守できるようにする方法について説明します。
+この耳では、データが Microsoft クラウドなどのクラウドサーバーにアップロードされるときに、クラウドサービスプロバイダーではなく、データを所有する顧客がエクスポーターと見なされます。 そのため、データの所有者 (Microsoft のお客様) は、Microsoft cloud の使用方法について慎重に検討する必要があります。輸出規制を implicate し、ユーザーが使用するデータや保存しているデータがイヤーに含まれているかどうかを判断します。 [Azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c24c11f2-2cd4-444a-9160-19762855ad3a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)と[Office 365](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE1s5kI)のクラウドサービスを使用して、お客様が輸出規制を完全に遵守できるようにする方法について説明します。
 
 **マイクロソフトのテクノロジ、製品、サービスは、耳の対象となりますか?**
 
@@ -91,4 +91,4 @@ Microsoft のテクノロジ、製品、およびサービスは、輸出管理�
 - [暗号化に対するエクスポートの制限](https://docs.microsoft.com/windows/uwp/security/export-restrictions-on-cryptography)
 - [Microsoft および FIPS 140-2](offering-fips-140-2.md)
 - [Microsoft および ITAR](offering-itar.md)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

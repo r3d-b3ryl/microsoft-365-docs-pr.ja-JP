@@ -3,7 +3,7 @@ title: オーストラリアの行政機関認定クラウドサービスのリ�
 description: Microsoft は、分類されていない配布制限マーカー (DLM) と、オーストラリアのサイバーセキュリティセンター (ACSC) による IRAP 評価および認定に基づく保護されたデータの両方に対して、オーストラリア認定クラウドサービスのリストに含まれています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 98b669a216b5c3a875cb1a42fd0cc97fb6112f1b
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222109"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417331"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>オーストラリア自治体情報セキュリティ登録された査定者プログラム (IRAP)
 
@@ -40,7 +40,7 @@ ms.locfileid: "42222109"
 
 認定されたクラウドサービスリスト (CCSL) は、オーストラリア政府による IRAP 評価が正常に完了し、オーストラリアのサイバーセキュリティセンター (ACSC) によって認定されたクラウドサービスを識別します。 この認定は、情報セキュリティが登録された評価者による総合的な評価の完了、レビュー、検収を認識し、すべてのオーストラリアの政府機関がそれを使用できるようにします。 また、CCSL は、新しいニュージーランド政府機関によって参照されることがあります。これは、NZ ISM とオーストラリア自治体 ISM との間でリスク評価を実施することです。
 
-Microsoft の Azure、Dynamics 365 CRM、および Office 365 は、未分類の配信制限マーカー (DLM) (現時点では正式: 機密) および保護されたデータの両方の CCSL に含まれています。以前の IRAP 評価と認定オーストラリアのサイバーセキュリティセンター (ACSC)。
+Microsoft の Azure、Dynamics 365 CRM、および Office 365 は、未分類の情報 (DLM) (現時点では正式: 機密) と、オーストラリアのサイバーセキュリティセンター (ACSC) による以前の IRAP の評価および認定に基づいて保護されたデータの両方について引き続き CCSL に含まれています。
 
 ## <a name="microsoft-and-irap"></a>Microsoft および IRAP
 
@@ -48,9 +48,9 @@ Microsoft の Azure、Dynamics 365 CRM、および Office 365 は、未分類の
 
 オーストラリアでの Microsoft のサービスの評価には、使用可能な4つの Azure 地域が含まれています。 米国政府機関および重要なインフラストラクチャでは、microsoft は、キャンベラの CDC データセンターから提供されるニーズに特化した、2つの地域を展開しています。[オーストラリア中央およびオーストラリア中央 2](https://azure.microsoft.com/global-infrastructure/australia/) オーストラリアの地域の相違点については、「Azure IRAP 評価レポート」で説明されています。これは、 [Microsoft Service Trust Portal](https://aka.ms/au-irap)のオーストラリア固有のページで利用できます。
 
-Microsoft は、Microsoft の IT 運用チーム、物理データセンター、侵入検知、暗号化、クロスドメインおよびネットワークセキュリティで使用されるセキュリティ制御とプロセスを調査する、ACSC 認定の IRAP 評価者を参加しています。スコープ内サービスのアクセス制御と情報セキュリティリスク管理。 IRAP 評価では、Microsoft システムアーキテクチャがサウンドセキュリティ原則に基づいており、適用されているオーストラリア政府情報セキュリティマニュアル (ISM) コントロールが適切に設定されており、評価されたサービス内で完全に有効になっていることがわかりました。
+Microsoft は、Microsoft の IT 運用チーム、物理データセンター、侵入検知、暗号化、クロスドメインおよびネットワークセキュリティ、アクセス制御、および情報セキュリティリスク管理 (スコープ内サービス) によって使用されるセキュリティ制御とプロセスを調査する、ACSC 認定の IRAP 評価者を参加しています。 IRAP 評価では、Microsoft システムアーキテクチャがサウンドセキュリティ原則に基づいており、適用されているオーストラリア政府情報セキュリティマニュアル (ISM) コントロールが適切に設定されており、評価されたサービス内で完全に有効になっていることがわかりました。
 
-ISM で使用されるリスク管理フレームワークは、[米国国立標準技術者 (NIST) 特別文書 (SP) 800-37 リビジョンの](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)セキュリティとプライバシーのためのシステムライフサイクル手法の1つである、「情報システムと組織のリスク管理フレームワーク」からのものです。 このリスク管理フレームワークでは、さまざまなリスク管理基準[(国際標準化機構 (ISO) 31000:2018、リスク管理-ガイドライン](https://www.iso.org/standard/65694.html)など) を使用して、リスクおよびセキュリティ制御の選択を特定できます。 広く使用されているリスク管理フレームワークには、次の6つの手順が含まれています。
+ISM で使用されるリスク管理フレームワークは、 [米国国立標準技術者 (NIST) 特別文書 (SP) 800-37 リビジョンの](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)セキュリティとプライバシーのためのシステムライフサイクル手法の1つである、「情報システムと組織のリスク管理フレームワーク」からのものです。 このリスク管理フレームワークでは、さまざまなリスク管理基準 [(国際標準化機構 (ISO) 31000:2018、リスク管理-ガイドライン](https://www.iso.org/standard/65694.html)など) を使用して、リスクおよびセキュリティ制御の選択を特定できます。 広く使用されているリスク管理フレームワークには、次の6つの手順が含まれています。
 
 - システムを定義する
 - セキュリティコントロールを選択する
@@ -61,7 +61,7 @@ ISM で使用されるリスク管理フレームワークは、[米国国立標
 
 その他の補償コントロールは、常に個別の機関によるリスク管理ベースで実装することができます。
 
-Microsoft のサービスの IRAP 評価では、政府機関の公的機関のお客様に対して、および保護の処理、保存、送信に適した効果的なセキュリティ制御を提供することができます。を参照してください。 これには、オーストラリアの政府、医療、教育のデータの大部分が含まれます。
+Microsoft のサービスの IRAP 評価では、政府機関の公的機関のお客様に対して、保護された機密情報の処理、保存、送信に対して適切かつ効果的なセキュリティ統制を適用することができます。 これには、オーストラリアの政府、医療、教育のデータの大部分が含まれます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -76,7 +76,7 @@ IRAP は、クラウドサービスを使用するすべてのオーストラリ
 
 **組織のリスク評価および承認プロセスにおいて、Microsoft のコンプライアンスを使用できますか。**
 
-はい。 組織で、ISM を使用して運用するための承認を必要とする場合、またはその要求を求める場合は、リスク評価で Azure と Office 365 の IRAP セキュリティ評価を使用できます。 できます。しかし、Microsoft のプラットフォームに展開された実装を評価するための査定官と、自分の組織内の統制およびプロセスについて評価する責任を担います。
+はい、できます。 組織で、ISM を使用して運用するための承認を必要とする場合、またはその要求を求める場合は、リスク評価で Azure と Office 365 の IRAP セキュリティ評価を使用できます。 できます。しかし、Microsoft のプラットフォームに展開された実装を評価するための査定官と、自分の組織内の統制およびプロセスについて評価する責任を担います。
 
 **組織のリスク評価と、運用の承認については、どこから始めますか?**
 
@@ -96,4 +96,4 @@ IRAP は、クラウドサービスを使用するすべてのオーストラリ
 - [Microsoft Service Trust Portal (STP) のオーストラリアページ](https://aka.ms/au-irap)
 - [オーストラリアのセキュリティおよびゲートウェイのガイド](https://docs.microsoft.com/azure/azure-australia)
 - [認定済みクラウドサービスの .ASD](https://acsc.gov.au/infosec/irap/certified_clouds.htm)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

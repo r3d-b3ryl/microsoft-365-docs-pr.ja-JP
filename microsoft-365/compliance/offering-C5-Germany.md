@@ -3,7 +3,7 @@ title: クラウド コンピューティング コンプライアンス コン�
 description: Azure、Azure Government、Azure Germany によるクラウド コンピューティング コンプライアンス コントロール カタログ (C5) への準拠証明の方法について説明します。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 48b9e0135198f687430bf195c7dff8a405d15f7e
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065872"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416163"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>クラウド コンピューティング コンプライアンス コントロール カタログ (C5)
 

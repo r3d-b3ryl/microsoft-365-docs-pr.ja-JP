@@ -3,7 +3,7 @@ title: ロシアの個人データローカライズ要件
 description: 個人データ、ロシア市民の個人データ記録、systematization、蓄積、保存、明確化、および抽出が、ロシアにある Microsoft サービスおよびデータベースで実行される方法について説明します。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3c2a89a881e2615a8459f0a7126b2d92f750c6b0
-ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
+ms.openlocfilehash: c8c5e78cfd7d531b2c2ee46ae4f28367240a87ca
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278450"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415993"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>ロシアの個人データローカライズ要件
 
@@ -35,15 +35,15 @@ Microsoft Azure、Microsoft 365、Dynamics 365、および Power Platform など
 
 ### <a name="microsoft-id-management"></a>Microsoft ID の管理
 
-Microsoft は、microsoft のクラウドソリューションプロバイダー (CSP) パートナー経由で microsoft Online Services (Microsoft Azure、Microsoft 365、Dynamics 365、および電源プラットフォーム) へのサブスクライブを検討することをお客様に招待しています。 詳細については、 [CSP パートナーの一覧](https://pinpoint.microsoft.com/search?type=services&campaign=691)を参照してください。
+Microsoft は、microsoft のクラウドソリューションプロバイダー (CSP) パートナー経由で microsoft Online Services (Microsoft Azure、Microsoft 365、Dynamics 365、および電源プラットフォーム) へのサブスクライブを検討することをお客様に招待しています。 詳細については、 [CSP パートナーの一覧](https://pinpoint.microsoft.com/search?type=services&campaign=691) を参照してください。
 
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>Microsoft Online Services のユーザー Id とアクセス権を管理する
 
-Microsoft Azure、Microsoft 365、Dynamics 365、電源プラットフォームなどの Microsoft Online Services の場合、ユーザーの確認とアクセスの管理は[Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/)を介して実行されます。 Microsoft のお客様が Microsoft クラウドサービス (Windows Server Active Directory (AD) やその他の ID 管理システムなど) に対してローカルの id 管理システムを使用している場合、お客様は Azure AD Connect を通じてこのようなシステムを Azure Active Directory (AAD) にすばやく統合することができます。 詳細については、「 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) 」オプションを参照してください。 また、Microsoft のお客様は、サードパーティベンダーのアプリケーションやソリューションを使用してユーザーを管理し、そのローカル識別システムを Azure AD と統合することを検討することもできます。
+Microsoft Azure、Microsoft 365、Dynamics 365、電源プラットフォームなどの Microsoft Online Services の場合、ユーザーの確認とアクセスの管理は [Azure Active Directory (AAD)](https://azure.microsoft.com/services/active-directory/)を介して実行されます。 Microsoft のお客様が Microsoft クラウドサービス (Windows Server Active Directory (AD) やその他の ID 管理システムなど) に対してローカルの id 管理システムを使用している場合、お客様は Azure AD Connect を通じてこのようなシステムを Azure Active Directory (AAD) にすばやく統合することができます。 詳細については、「 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) 」オプションを参照してください。 また、Microsoft のお客様は、サードパーティベンダーのアプリケーションやソリューションを使用してユーザーを管理し、そのローカル識別システムを Azure AD と統合することを検討することもできます。
 
 ## <a name="questions-and-support"></a>質問とサポート
 
-技術的および請求に関する質問については、以下の Microsoft サポートリソースを参照してください。 その他の質問や説明については、Microsoft の[プライバシーチーム](https://support.microsoft.com/gp/privacy-page)にお問い合わせください。
+技術的および請求に関する質問については、以下の Microsoft サポートリソースを参照してください。 その他の質問や説明については、Microsoft の [プライバシーチーム](https://support.microsoft.com/gp/privacy-page)にお問い合わせください。
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
 
@@ -71,5 +71,5 @@ Microsoft Azure、Microsoft 365、Dynamics 365、電源プラットフォーム�
 - **オンラインサポート**:[電源プラットフォームサポート](https://docs.microsoft.com/power-platform/admin/get-help-support)経由でクエリを送信する
 
 > [!NOTE]
-> <sup>1</sup>連邦法はありません。 242-FZ (edition 12.31.2014) ' は、ロシアのフェデレーションの特定の法律上の行動に対して、個人データの処理手順を明確にするための情報および電気通信ネットワークの07.21.2014 <br>
-> <sup>2</sup>連邦法はありません。 07.27 の場合、個人データの 152-FZ。 2006<br>
+> <sup>1</sup> 連邦法はありません。 242-FZ (edition 12.31.2014) ' は、ロシアのフェデレーションの特定の法律上の行動に対して、個人データの処理手順を明確にするための情報および電気通信ネットワークの07.21.2014 <br>
+> <sup>2</sup> 連邦法はありません。 07.27 の場合、個人データの 152-FZ。 2006<br>

@@ -3,7 +3,7 @@ title: 食品および医薬品管理の CFR Title 21 パート11
 description: Microsoft は、お客様がこれらの食品および薬品管理の規制に準拠することを支援します。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066380"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417341"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食品および医薬品管理の CFR Title 21 パート11
 
@@ -27,7 +27,7 @@ ms.locfileid: "44066380"
 
 連邦規制のコード (CFR) には、米国連邦政府機関の経営部門および機関の規則と規定が含まれています。 CFR の50の各タイトルは、異なる規制エリアに対応しています。
 
-[FDA CFR Title 21](https://aka.ms/FDA-CFR)は、食品および医薬品管理 (FDA) の管轄区域、薬品執行管理、および全国薬品管理ポリシーの事務所で、食品および薬物の製造または消費を規制します。 CFR Title 21 Part 11 で概説されている規制は、FDA の監督の対象となる組織が使用する情報を管理するテクノロジシステムの基本ルールを設定します。 このような GxP プロセスを適切なラボプラクティス (GLP)、適切な臨床慣行 (GXP)、および適切な製造プラクティス (GMP) として管理するテクノロジシステムでは、GxP への準拠を検証する必要もあります。
+[FDA CFR Title 21](https://aka.ms/FDA-CFR) は、食品および医薬品管理 (FDA) の管轄区域、薬品執行管理、および全国薬品管理ポリシーの事務所で、食品および薬物の製造または消費を規制します。 CFR Title 21 Part 11 で概説されている規制は、FDA の監督の対象となる組織が使用する情報を管理するテクノロジシステムの基本ルールを設定します。 このような GxP プロセスを適切なラボプラクティス (GLP)、適切な臨床慣行 (GXP)、および適切な製造プラクティス (GMP) として管理するテクノロジシステムでは、GxP への準拠を検証する必要もあります。
 
 CFR Title 21 Part 11 は、電子記録と署名が、紙のレコードおよび手書き署名の信頼度、信頼性、および一般的に同等のものであることを保証するための要件を設定します。 また、FDA 規制の業界でコンピューターシステムのセキュリティを向上させるためのガイドラインも提供します。 サブジェクト企業は、自分のプロセスや製品が意図したとおりに動作することを証明する必要があります。これらのプロセスと製品が変更された場合は、その校正を再検証する必要があります。 ベストプラクティスガイドラインについて説明します。
 
@@ -41,7 +41,7 @@ Microsoft enterprise cloud services では、通常独立したサードパー�
 
 これらの通常の監査と証明書は、特に FDA の規制へのコンプライアンスを重視していませんが、目的と目的は、CFR Title 21 Part 11 の場合と本質的に似ています。また、Microsoft cloud services に保存されているデータの機密性、整合性、および可用性を確保するためにも役立ちます。 認定方法は、製薬工学 (ISPE) GAMP シリーズのベストプラクティスガイドの国際社会、および規制された Gamp 環境のコンピューター上のシステムに適した製薬調査協力スキーム (PIC/S) のベストプラクティスを含む、業界のベストプラクティスに基づいています。
 
-お客様は、コンプライアンスレポートへのアクセスを要求することができます。また、Microsoft アカウント担当者または[サービス信頼ポータル](https://aka.ms/stphelp)を通じて、プライバシーに関する同意を受けることができます。 さらに、Microsoft Azure および Microsoft Office 365 の認定ガイドラインには、Microsoft 監査コントロールが CFR Title 21 Part 11 の要件に対応する方法、および FDA の資格戦略を実装するためのガイダンス、および共有責任の領域の説明が記載されています。
+お客様は、コンプライアンスレポートへのアクセスを要求することができます。また、Microsoft アカウント担当者または [サービス信頼ポータル](https://aka.ms/stphelp)を通じて、プライバシーに関する同意を受けることができます。 さらに、Microsoft Azure および Microsoft Office 365 の認定ガイドラインには、Microsoft 監査コントロールが CFR Title 21 Part 11 の要件に対応する方法、および FDA の資格戦略を実装するためのガイダンス、および共有責任の領域の説明が記載されています。
 
 FDA CFR Title 21 の展開を促進する方法について説明します。 [AZURE fda 21 認定ガイドをダウンロード](https://go.microsoft.com/fwlink/p/?linkid=2086604)する
 
@@ -77,11 +77,11 @@ Microsoft によって実装される監査対象のコントロールは、デ�
 
 **組織の証明プロセスに Microsoft のコンプライアンスを使用できますか?**
 
-はい。 IEC/ISO 27001、ISO/IEC 27018、SOC 1、および SOC 2 標準に関する、Microsoft の統制の有効性に関する独立したサードパーティのコンプライアンスレポート。 Microsoft enterprise cloud のお客様は、これらの関連するレポートで説明されている監査された制御を、独自の CFR Title 21 Part 11 のリスク分析と認定の取り組みの一部として使用できます。 FDA の規制の対象となるアプリケーションを構築および展開するお客様は、アプリケーションが FDA の要件を満たしていることを確認する責任があります。
+はい、できます。 IEC/ISO 27001、ISO/IEC 27018、SOC 1、および SOC 2 標準に関する、Microsoft の統制の有効性に関する独立したサードパーティのコンプライアンスレポート。 Microsoft enterprise cloud のお客様は、これらの関連するレポートで説明されている監査された制御を、独自の CFR Title 21 Part 11 のリスク分析と認定の取り組みの一部として使用できます。 FDA の規制の対象となるアプリケーションを構築および展開するお客様は、アプリケーションが FDA の要件を満たしていることを確認する責任があります。
 
 **この標準に準拠して管理するための Microsoft の責任は何ですか。**
 
-Microsoft は、そのエンタープライズクラウドサービスが、管理[オンラインサービス用語](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)および該当するサービスレベル契約 (sla) で定義された用語を満たしていることを保証します。 これにより、システムをセキュリティで保護して監視するのに十分な制御を実装および維持する責任が定義されます。
+Microsoft は、そのエンタープライズクラウドサービスが、管理 [オンラインサービス用語](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) および該当するサービスレベル契約 (sla) で定義された用語を満たしていることを保証します。 これにより、システムをセキュリティで保護して監視するのに十分な制御を実装および維持する責任が定義されます。
 
 ## <a name="resources"></a>リソース
 

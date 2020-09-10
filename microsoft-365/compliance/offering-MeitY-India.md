@@ -3,7 +3,7 @@ title: エレクトロニクスおよび情報技術の官庁 (MeitY)
 description: Microsoft では、インドの電子機器技術および情報技術の官庁による完全な認定が行われました。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 86a3e7ce703881452d3d112aace3b418bf0984af
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b73e701c870bcd43672f43f9fe51d3e5fb10c615
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066098"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417491"
 ---
 # <a name="ministry-of-electronics-and-information-technology-meity"></a>エレクトロニクスおよび情報技術の官庁 (MeitY)
 
@@ -29,7 +29,7 @@ ms.locfileid: "44066098"
 
 「MeitY」では、クラウドサービスプロバイダーの認定 (「empanelment」と呼ばれます) を提供しています。これには、事前定義された一連の標準とセキュリティ、相互運用性、データの移植性、サービスレベル契約、契約上の諸条件に対する準拠として、クラウドサービスを認定する必要があります。 監査者による認定は、クラウドサービスプロバイダーの監査を実施して、コンプライアンスを確認します。
 
-認定を受けた後、クラウドサービスプロバイダーは、公的機関の組織が認定されたクラウドサービスを比較して調達できる、行政機関のクラウドサービスディレクトリに一覧表示されます。 このディレクトリは、 [Meghraj Cloud イニシアチブ](https://meity.gov.in/content/gi-cloud-meghraj)(または、「GI \[government of インド\] cloud」) のサービスで、官公庁でのクラウドコンピューティングの使用を促進し、公的機関の IT サービスの実装を管理します。
+認定を受けた後、クラウドサービスプロバイダーは、公的機関の組織が認定されたクラウドサービスを比較して調達できる、行政機関のクラウドサービスディレクトリに一覧表示されます。 このディレクトリは、 [Meghraj Cloud イニシアチブ](https://meity.gov.in/content/gi-cloud-meghraj) (または、「GI \[ government of インド \] cloud」) のサービスで、官公庁でのクラウドコンピューティングの使用を促進し、公的機関の IT サービスの実装を管理します。
 
 ## <a name="microsoft-and-ministry-of-electronics-and-information-technology-meity"></a>Microsoft およびエレクトロニクスおよび情報技術の官庁 (MeitY
 
@@ -62,4 +62,4 @@ Microsoft の MeitY は、品質保証サービスを提供する政府機関で
 - [エレクトロニクスおよび情報技術の官庁](https://meity.gov.in/)
 - [MeghRaj Cloud イニシアチブ](https://meity.gov.in/content/gi-cloud-meghraj)
 - [認定クラウドサービスプロバイダー](https://meity.gov.in/content/gi-cloud-meghraj)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

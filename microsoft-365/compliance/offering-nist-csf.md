@@ -3,7 +3,7 @@ title: 米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 description: Microsoft Cloud Services は、米国標準技術局 (NIST) Cybersecurity Framework (CSF) に準拠しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b705d26efa513214164c05703acafe8d5d141c2
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44799982"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417089"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -29,7 +29,7 @@ ms.locfileid: "44799982"
 
 排除の主な優先順位は、組織が cybersecurity のリスクを管理し、ビジネスの効率を高めることができるようにするための一連の標準とプラクティスを確立することでした。 NIST フレームワークは、政府機関と民間組織の両方に対して追加の規制要件を課すことなく、cybersecurity リスクに対処します。
 
-Cybersecurity は、[重要なインフラストラクチャを改善するための](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)Nist のフレームワークの付録 a にある nist SP 800-53 を含む、グローバルに認識される標準を参照しています。 このようなフレームワーク内の各コントロールは、FedRAMP の適度なベースライン内の対応する NIST 800-53 コントロールにマップされます。
+Cybersecurity は、 [重要なインフラストラクチャを改善するための](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)Nist のフレームワークの付録 a にある nist SP 800-53 を含む、グローバルに認識される標準を参照しています。 このようなフレームワーク内の各コントロールは、FedRAMP の適度なベースライン内の対応する NIST 800-53 コントロールにマップされます。
 
 ## <a name="microsoft-and-the-nist-csf"></a>Microsoft および NIST CSF
 
@@ -68,7 +68,7 @@ Cybersecurity は、デジタル変換の時代に、重要な管理上の問題
 
 **には、Azure Government、Dynamics 365、および Office 365 が NIST CSF 要件をサポートしていることを検証した独立した査定官がありますか?**
 
-はい。サードパーティの評価組織には、重要なインフラストラクチャ Cybersecurity、バージョン1.0、2014年2月12日を改善するためのフレームワークで定義されているように、attested の Cybersecurity Framework (CSF) リスク管理プラクティスに準拠していることがあります。 NIST CSF は FedRAMP 中程度のコントロールフレームワークにマップされており、独立評価では、FedRAMP の適度なベースラインに対して Dynamics 365 を評価しています。 また、Office 365 は、2018年6月の HITRUST から、 [NIST の NIST CSF レター](https://aka.ms/O365NISTCSFcertification)を取得しています。
+はい。サードパーティの評価組織には、重要なインフラストラクチャ Cybersecurity、バージョン1.0、2014年2月12日を改善するためのフレームワークで定義されているように、attested の Cybersecurity Framework (CSF) リスク管理プラクティスに準拠していることがあります。 NIST CSF は FedRAMP 中程度のコントロールフレームワークにマップされており、独立評価では、FedRAMP の適度なベースラインに対して Dynamics 365 を評価しています。 また、Office 365 は、2018年6月の HITRUST から、 [NIST の NIST CSF レター](https://aka.ms/O365NISTCSFcertification) を取得しています。
 
 **Microsoft クラウドサービスによるフレームワークへの準拠をどのように示しますか?**
 
@@ -80,7 +80,7 @@ FedRAMP 認定のためにサードパーティによって作成された正式
 
 **組織に Microsoft のコンプライアンスを使用できますか?**
 
-はい。 マイクロソフトが Microsoft クラウドサービスのセキュリティとプライバシーを維持するために実装した統制の有効性に関する、独立したサードパーティのコンプライアンスレポート。 Microsoft のお客様は、これらの関連するレポートで説明されている監査対象の制御を、独自の FedRAMP と、NIST のリスク分析および認定の取り組みの一部として使用することができます。
+はい、できます。 マイクロソフトが Microsoft クラウドサービスのセキュリティとプライバシーを維持するために実装した統制の有効性に関する、独立したサードパーティのコンプライアンスレポート。 Microsoft のお客様は、これらの関連するレポートで説明されている監査対象の制御を、独自の FedRAMP と、NIST のリスク分析および認定の取り組みの一部として使用することができます。
 
 **重要なインフラストラクチャであると見なされるのは米国政府機関の組織ですか。**
 
@@ -109,4 +109,4 @@ Microsoft は、その他のクラウドサービスプロバイダーと比較�
 - [連邦ネットワークおよび重要なインフラストラクチャの Cybersecurity を強化する Presidential Executive の注文](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft Government クラウド](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

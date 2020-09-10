@@ -3,7 +3,7 @@ title: US DoE 10 CFR Part 810
 description: 米国 DoE 10 CFR Part 810 の輸出規制要件の対象となるお客様は、Azure Government を使用できます。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a809ae91bbe1302ae4087b3a430dea87e2c913a1
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066440"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415697"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>US DoE 10 CFR Part 810
 
@@ -45,7 +45,7 @@ FedRAMP は適切な基準を提供しており、Azure 自治体がコアイン
 
 ## <a name="about-doe-10-cfr-part-810"></a>DoE 10 CFR Part 810 について
 
-米国防省エネルギー (DoE) 輸出規制[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)は、未分類の核技術およびアシスタントのエクスポートを管理します。 米国からエクスポートされた核テクノロジが peaceful の目的にのみ使用されることを保証するのに役立つ情報を記載しています。 改訂されたパーツ 810 (最終規則) は、2015年3月に有効になり、[国内の核セキュリティ管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)によって管理されます。 セクション810.6 は、「一般に承認された」と、特定の認証を必要とするもの (たとえば、エンリッチメントやヘビー水の生産などの機密性の高い核テクノロジを必要とする技術) の両方について、特別な DoE 承認が必要であることを示しています。
+米国防省エネルギー (DoE) 輸出規制 [10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) は、未分類の核技術およびアシスタントのエクスポートを管理します。 米国からエクスポートされた核テクノロジが peaceful の目的にのみ使用されることを保証するのに役立つ情報を記載しています。 改訂されたパーツ 810 (最終規則) は、2015年3月に有効になり、 [国内の核セキュリティ管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)によって管理されます。 セクション810.6 は、「一般に承認された」と、特定の認証を必要とするもの (たとえば、エンリッチメントやヘビー水の生産などの機密性の高い核テクノロジを必要とする技術) の両方について、特別な DoE 承認が必要であることを示しています。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

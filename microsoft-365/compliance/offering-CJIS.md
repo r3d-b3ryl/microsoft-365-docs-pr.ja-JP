@@ -3,7 +3,7 @@ title: 刑事司法 Information Services (CJIS) セキュリティポリシー
 description: Microsoft government cloud service は、米国犯罪司法 Information Services セキュリティポリシーに準拠しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
-ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
+ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772518"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416419"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事司法 Information Services (CJIS) セキュリティポリシー
 
 ## <a name="cjis-overview"></a>CJIS の概要
 
-米国連邦政府機関の調査 (FBI) の犯罪司法情報サービス (CJIS) 部門は、州、地方、および連邦法執行機関と犯罪司法機関が犯罪司法情報 (CJI) にアクセスすることを可能にします。たとえば、指紋記録や犯罪履歴などです。 米国の司法当局およびその他の政府機関は、CJI の転送、保存、処理にクラウドサービスを使用することが、CJI を保護するための最小のセキュリティ要件と制御を確立する[Cjis セキュリティポリシー](https://aka.ms/cjis-security-policy)に準拠していることを確認する必要があります。
+米国連邦政府機関の調査 (FBI) の犯罪司法情報サービス (CJIS) 部門は、州、地方、および連邦法執行機関と犯罪司法機関が犯罪司法情報 (CJI) にアクセスすることを可能にします。たとえば、指紋記録や犯罪履歴などです。 米国の司法当局およびその他の政府機関は、CJI の転送、保存、処理にクラウドサービスを使用することが、CJI を保護するための最小のセキュリティ要件と制御を確立する [Cjis セキュリティポリシー](https://aka.ms/cjis-security-policy)に準拠していることを確認する必要があります。
 
 CJIS のセキュリティポリシーには、presidential と FBI のディレクティブ、連邦法、犯罪者の勧告ポリシーボードの決定、および米国標準技術局 (NIST) のガイダンスが統合されています。 ポリシーは定期的に更新され、セキュリティ要件の変化を反映しています。
 
@@ -68,7 +68,7 @@ Alabama、アラスカ、Arkansas、アリゾナ、カリフォルニア、コ�
 
 **コンプライアンス情報を要求するには、どうすればよいですか?**
 
-関心がある管轄権については、Microsoft アカウント担当者にお問い合わせください。 現在<cjis@microsoft.com>どのサービスがどの状態で利用可能であるかについての情報を連絡します。
+関心がある管轄権については、Microsoft アカウント担当者にお問い合わせください。 <cjis@microsoft.com>現在どのサービスがどの状態で利用可能であるかについての情報を連絡します。
 
 **クラウドサービスが自分の状態の要件を満たすことができることを Microsoft がどのように示していますか?**
 
@@ -76,7 +76,7 @@ Microsoft は、状態 CJIS Systems Agency (CSA) を使用して、情報契約�
 
 **エージェンシーのコンプライアンスの取り組みはどこで開始しますか?**
 
-[Cjis セキュリティポリシー](https://aka.ms/cjis-security-policy)には、CJI を保護するためにエージェンシーが講じる必要のある対策が含まれています。 さらに、Microsoft アカウント担当者は、管轄区の要件を熟知したユーザーと連絡を取ります。
+[Cjis セキュリティポリシー](https://aka.ms/cjis-security-policy) には、CJI を保護するためにエージェンシーが講じる必要のある対策が含まれています。 さらに、Microsoft アカウント担当者は、管轄区の要件を熟知したユーザーと連絡を取ります。
 
 ## <a name="resources"></a>リソース
 

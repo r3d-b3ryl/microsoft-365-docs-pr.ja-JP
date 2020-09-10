@@ -3,7 +3,7 @@ title: Federal Risk and Authorization Management Program (FedRAMP)
 description: Microsoft には、米国連邦リスクおよび承認管理プログラム P-ATOs と ATOs が付与されました。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ddb997246f2b7a23b25e1b611170c6163e1d670
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781484"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415781"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Federal Risk and Authorization Management Program (FedRAMP)
 
@@ -43,7 +43,7 @@ FedRAMP 承認は、NIST ガイドライン (低、中、高) に基づく3つ�
 
 Microsoft の官公庁クラウドサービス (Azure Government、Dynamics 365 Government、Office 365 など) は米国連邦リスクおよび承認管理プログラム (FedRAMP) の要件を満たしており、米国連邦政府機関は、Microsoft クラウドのコスト削減と厳密なセキュリティによる恩恵を受けることができます。
 
-Microsoft government cloud service では、公的機関のお客様に、fedramp に準拠した豊富なサービスを提供しています。これにより、お客様は fedramp の高レベルの[設計](https://aka.ms/fedrampblueprint)を実装する必要がある、あらゆる Azure で展開されたアーキテクチャに対して一連のポリシーを展開することができます。
+Microsoft government cloud service では、公的機関のお客様に、fedramp に準拠した豊富なサービスを提供しています。これにより、お客様は fedramp の高レベルの [設計](https://aka.ms/fedrampblueprint)を実装する必要がある、あらゆる Azure で展開されたアーキテクチャに対して一連のポリシーを展開することができます。
 
 ## <a name="microsoft-azure-p-atos"></a>Microsoft Azure P-ATOs
 
@@ -51,7 +51,7 @@ Azure および Azure Government は、ATO を共同認証ボード (FedRAMP 認
 
 Azure および Azure Government の FedRAMP 監査には、スコープ内サービスのインフラストラクチャ、開発、運用、管理、サポートを含む情報セキュリティ管理システムが含まれていました。 ATO が付与されている場合でも、CSP は、動作するすべての政府機関からの承認 (ATO) を必要とします。 Azure では、政府機関は、独自のセキュリティ承認プロセスで Azure ATO を使用して、FedRAMP 要件にも合致するエージェンシー ATO を発行するための基礎として利用できます。
 
-Azure は、他のクラウドプロバイダーよりも多くのサービスを FedRAMP の高影響レベルでサポートし続けます。 また、Azure パブリッククラウドの FedRAMP は、多くの政府機関のお客様のニーズに対応していますが、より厳しい要件を持つ機関は Azure Government を引き続き利用します。これにより、スタッフの高度な審査などの追加の手段が提供されます。 Microsoft は、現在の年に対して計画されているサービスに加えて、現在 Azure Government で[利用可能なすべての azure パブリックサービス](https://docs.microsoft.com/azure/azure-government/compliance/azure-services-in-fedramp-auditscope#azure-public-services-by-audit-scope)をリストしています。
+Azure は、他のクラウドプロバイダーよりも多くのサービスを FedRAMP の高影響レベルでサポートし続けます。 また、Azure パブリッククラウドの FedRAMP は、多くの政府機関のお客様のニーズに対応していますが、より厳しい要件を持つ機関は Azure Government を引き続き利用します。これにより、スタッフの高度な審査などの追加の手段が提供されます。 Microsoft は、現在の年に対して計画されているサービスに加えて、現在 Azure Government で [利用可能なすべての azure パブリックサービス](https://docs.microsoft.com/azure/azure-government/compliance/azure-services-in-fedramp-auditscope#azure-public-services-by-audit-scope) をリストしています。
 
 ## <a name="microsoft-dynamics-365-us-government-ato"></a>Microsoft Dynamics 365 米国政府機関 ATO
 
@@ -70,7 +70,7 @@ Dynamics 365 米国政府機関は、米国の米国国防省、都市開発 (HU
 - Intune
 - [Office 365 および Office 365 U.S. Governmen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 米国防総省
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
 - Microsoft Defender ATP
 
 > [!NOTE]
@@ -103,11 +103,11 @@ FISMA は、FISMA 要件に準拠している組織からのみ情報システ�
 
 **エージェンシーが独自のコンプライアンス作業を開始する場所**
 
-連邦機関が、FedRAMP を正常に移動し、その要件を満たすために必要な手順の概要については、「[承認済み: 代理を取得](https://www.fedramp.gov/agency-authorization/)する」に移動してください。
+連邦機関が、FedRAMP を正常に移動し、その要件を満たすために必要な手順の概要については、「 [承認済み: 代理を取得](https://www.fedramp.gov/agency-authorization/)する」に移動してください。
 
 **代理店の承認プロセスで Microsoft のコンプライアンスを使用できますか?**
 
-はい。 連邦政府機関からの ATO を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書を使用することができます。 ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
+はい、できます。 連邦政府機関からの ATO を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書を使用することができます。 ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 

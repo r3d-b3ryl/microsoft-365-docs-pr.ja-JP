@@ -3,7 +3,7 @@ title: 著作権詐取に対するフェデレーション (ファクト)
 description: Microsoft Azure は、英国の著作権詐取に対するフェデレーションからの認定を得ました。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: acc0ab379cdd93d873cc0b1eb2f0d729eff251c8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066400"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416113"
 ---
 # <a name="federation-against-copyright-theft-fact"></a>著作権詐取に対するフェデレーション (ファクト)
 
@@ -59,4 +59,4 @@ Microsoft では、実際には、Microsoft は、独立した評価を実施す
 - [Azure ISO 27001 認定](https://aka.ms/Azure-BSI-Cert)
 - [MPAA 評価](offering-mpaa.md)
 - [CSA CAIQ v3.0.1 への Azure の対応](https://aka.ms/csacaiqresponses)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

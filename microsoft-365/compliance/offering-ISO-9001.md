@@ -3,7 +3,7 @@ title: ISO 9001:2015 品質管理システム標準
 description: Microsoft は、これらの品質管理標準の実施に関する認証を取得しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: e2caa6dd9a2e6838877edb2000e020ddb682ffd5
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254310"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417661"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 品質管理システム標準
 
@@ -41,7 +41,7 @@ ISO 9001:2015 により確立された品質管理原則を忠実に守るため
 - Microsoft Defender Advanced Threat Protection
 - Microsoft Healthcare Bot
 - Microsoft マネージド デスクトップ
-- Power Automate (以前の Microsoft Flow) クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
 - Power BI Embedded

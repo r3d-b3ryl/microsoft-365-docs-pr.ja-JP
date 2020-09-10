@@ -3,7 +3,7 @@ title: NIST SP 800 –171
 description: Microsoft クラウドサービスは NIST SP 800 に準拠しています。連邦情報システムで制御されていない未分類情報 (CUI) を保護するための171ガイドラインです。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47e001fafedbdcaab6e1aa6365789bc309d9f65c
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 757541aa86049106ad06f02419fee02033c6a0e3
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065812"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417069"
 ---
 # <a name="nist-sp-800171"></a>NIST SP 800 –171
 
 ## <a name="about-nist-sp-800171"></a>NIST SP 800 –171について
 
-米国国立標準技術局 (NIST) は、連邦政府機関の情報と情報システムを保護するための測定基準とガイドラインを推進および維持します。 統制されていない未分類情報の管理 (CUI) についてエグゼクティブオーダー13556に応答すると、 [NIST SP 800 – 171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)を公開していますが、*連邦情報システムおよび組織で*は、管理されていない未分類情報を保護しています。 CUI は、政府によって作成されたデジタルおよび物理の情報 (つまり、分類されていないものの代理となるエンティティ) として定義されており、機密保護を必要とします。
+米国国立標準技術局 (NIST) は、連邦政府機関の情報と情報システムを保護するための測定基準とガイドラインを推進および維持します。 統制されていない未分類情報の管理 (CUI) についてエグゼクティブオーダー13556に応答すると、 [NIST SP 800 – 171](https://csrc.nist.gov/publications/detail/sp/800-171/rev-1/final)を公開していますが、 *連邦情報システムおよび組織で*は、管理されていない未分類情報を保護しています。 CUI は、政府によって作成されたデジタルおよび物理の情報 (つまり、分類されていないものの代理となるエンティティ) として定義されており、機密保護を必要とします。
 
 NIST SP 800 –171は2015年6月に最初に公開されており、脅威の進化に対応するために複数回更新されています。 このガイドでは、政府機関以外の情報システムおよび組織に対して、CUI への安全なアクセス、転送、保存を行う方法についてのガイドラインを提供します。この要件は、次の4つの主なカテゴリに分類されます。
 
@@ -36,7 +36,7 @@ NIST SP 800 –171は2015年6月に最初に公開されており、脅威の進
 
 ## <a name="microsoft-and-nist-sp-800171"></a>Microsoft および NIST SP 800 –171
 
-Kratos Secureinfo および Coalfire を認定したサードパーティの評価組織では、Microsoft と提携して、*米国連邦情報システムおよび組織内の管理されていない未分類情報 (cui)* を、ユーザーがプロセスを処理するときに使用することを証明します。 [FedRAMP 要件の microsoft 実装](offering-fedramp.md)により、microsoft のスコープ内のクラウドサービスが、既に配置されているシステムとプラクティスを使用して、NIST SP 800 –171の要件を満たしていることを確認できます。
+Kratos Secureinfo および Coalfire を認定したサードパーティの評価組織では、Microsoft と提携して、 *米国連邦情報システムおよび組織内の管理されていない未分類情報 (cui)* を、ユーザーがプロセスを処理するときに使用することを証明します。 [FedRAMP 要件の microsoft 実装](offering-fedramp.md)により、microsoft のスコープ内のクラウドサービスが、既に配置されているシステムとプラクティスを使用して、NIST SP 800 –171の要件を満たしていることを確認できます。
 
 NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が使用する標準です。 付録 D: NIST SP 800 –171は、自分の CUI セキュリティ要件を、NIST SP 800-53 の関連するセキュリティコントロールに直接マッピングします。これは、スコープ内のクラウドサービスが既に評価され、FedRAMP プログラムで承認されています。
 
@@ -61,7 +61,7 @@ NIST SP 800 –171要件は、NIST SP 800-53 のサブセットで、FedRAMP が
 
 **NIST SP 800 –171を使用して、組織の Microsoft コンプライアンスを使用できますか?**
 
-はい。 Microsoft のお客様は、独自の FedRAMP の一部としての、独立したサードパーティの評価組織 (3PAO) からのレポートで説明されている監査された統制を使用できます。 これらのレポートは、Microsoft がスコープ内のクラウドサービスで実装した統制の有効性を証明します。 お客様は、CUI ワークロードが NIST SP 800 –171ガイドラインに準拠していることを確認する責任があります。
+はい、できます。 Microsoft のお客様は、独自の FedRAMP の一部としての、独立したサードパーティの評価組織 (3PAO) からのレポートで説明されている監査された統制を使用できます。 これらのレポートは、Microsoft がスコープ内のクラウドサービスで実装した統制の有効性を証明します。 お客様は、CUI ワークロードが NIST SP 800 –171ガイドラインに準拠していることを確認する責任があります。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 

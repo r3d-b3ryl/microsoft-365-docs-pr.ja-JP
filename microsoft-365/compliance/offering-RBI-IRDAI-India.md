@@ -3,7 +3,7 @@ title: '[インド of インド (RBI)] および [インドの保険法規およ
 description: Microsoft は、クラウド導入において、インドの金融機関を支援するためのガイダンスを公開しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d76289740a117979ec4ac2d91a2e24782995d0fb
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066184"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416073"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>[インド of インド (RBI)] および [インドの保険法規および開発機関 (IRDAI)] の予約銀行
 
@@ -31,9 +31,9 @@ ms.locfileid: "44066184"
 
 - 金融サービス (rbi) に[よる金融サービスのアウトソーシングにおけるリスクと行動コードの管理に関するガイドライン](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf)は、金融サービスをアウトソーシングし、アウトソーシングが rbi のスーパーバイザーの役割を阻害しないようにするために、規制された銀行が公開するリスクに対処するためのものです。 RBI では、金融サービスのアウトソーシングを求める銀行の事前の承認は必要ありません。ただし、内部監査やコンプライアンス機能などのコアバンキング機能はアウトソーシングしないでください。
 - [情報セキュリティ、電子銀行、テクノロジリスク管理、およびサイバー Frauds](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (rbi) に関するガイドライン。 金融機関は、活動の規模と性質が重要であるか、インド外のサービスプロバイダーとの広範なデータ共有を必要とするアウトソーシングの手配を報告する必要があります。 このガイダンスは、運用データがインドの外部で保存または処理される場合に特に適用されます。
-- [インド Insurers 規制 (IRDAI) によるアクティビティのアウトソーシング](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1)。 毎年、保険会社は、会計年度の決算から45日以内に、中心的な活動の特定のサポート機能の IRDAI へのアウトソーシングを報告する必要があります。 (Microsoft[チェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)の7ページ」では、「コアアクティビティのサポート機能」について説明しています。
+- [インド Insurers 規制 (IRDAI) によるアクティビティのアウトソーシング](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) 。 毎年、保険会社は、会計年度の決算から45日以内に、中心的な活動の特定のサポート機能の IRDAI へのアウトソーシングを報告する必要があります。 (Microsoft [チェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) の7ページ」では、「コアアクティビティのサポート機能」について説明しています。
 
-クラウドサービスを使用する金融企業は、[情報技術 (適切なセキュリティのベストプラクティスと手順、機密性の高い個人データまたは情報) ルール](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf)である 2011 (meity) を含む、プライバシールールに準拠している必要があります。 インドのデータ保護法を強化するために開発されたものであり、機密の個人データの保護と処理を規定しています。
+クラウドサービスを使用する金融企業は、 [情報技術 (適切なセキュリティのベストプラクティスと手順、機密性の高い個人データまたは情報) ルール](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) である 2011 (meity) を含む、プライバシールールに準拠している必要があります。 インドのデータ保護法を強化するために開発されたものであり、機密の個人データの保護と処理を規定しています。
 
 ## <a name="microsoft-rbi-and-irdai"></a>Microsoft、RBI、および IRDAI
 

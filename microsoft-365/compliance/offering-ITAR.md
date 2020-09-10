@@ -3,7 +3,7 @@ title: 肘掛けされる国際トラフィック (ITAR)
 description: Azure Government は、Regs 対応システムでの国際トラフィックの作成をお客様にサポートしています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6019e215e99af672f7e938b11abdac8732c152fa
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065732"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417641"
 ---
 # <a name="international-traffic-in-arms-regulations-itar"></a>肘掛けされる国際トラフィック (ITAR)
 
@@ -57,4 +57,4 @@ Microsoft アカウント担当者にお問い合わせください。
 - [ITAR で制御されるデータでの Azure Government の使用](https://aka.ms/azure-itar-guide)
 - [Azure Government](https://azure.microsoft.com/features/gov/)
 - [Office 365 米国政府機関](https://products.office.com/government/office-365-web-services-for-government)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

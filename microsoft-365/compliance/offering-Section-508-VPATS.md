@@ -3,7 +3,7 @@ title: 米国セクション508
 description: Microsoft では、これらのサービスのユーザー補助機能について説明する多くのクラウドサービスについて、詳細なアクセシビリティ準拠レポートを提供しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 1037232f7e72bd6d82cd0818dfad2ca2722144ec
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066300"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415345"
 ---
 # <a name="us-section-508"></a>米国セクション508
 
@@ -53,4 +53,4 @@ Microsoft では、製品とサービスの開発における米国のセクシ�
 - [Office 365 アクセシビリティ センター](https://go.microsoft.com/fwlink/p/?linkid=2051801): 障碍のある方のための Office 365 のリソースです。
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): 製品およびサービス、またはコンプライアンスについて、アクセシビリティに関する質問のあるエンタープライズのお客様専用のサポートです。
 - [DHS 信頼テスタープログラム](https://go.microsoft.com/fwlink/?linkid=2052171): Microsoft が参加する米国国土安全保障 (DHS) 信頼されたテスタープログラムに関する情報を取得します。
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

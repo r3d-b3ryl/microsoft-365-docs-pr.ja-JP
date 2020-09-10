@@ -3,7 +3,7 @@ title: 英国政府-クラウド (G-クラウド)
 description: クラウン商用サービスは、Microsoft クラウドサービスの分類を米国政府機関に更新します。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 2d0498ab48190758f6f21f538eefe131fb1edd70
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560774"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416053"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-クラウド (G-クラウド)
 
@@ -37,7 +37,7 @@ ms.locfileid: "46560774"
 
 デジタルマーケットプレースへの Microsoft サービスの予定は、英国の政府機関およびパートナーが、英国の公式データである米国政府のデータを保存および処理できることを意味します。 さらに、Microsoft クラウドサービスの販売店である G-クラウドに含まれている、450を超える Microsoft パートナーが提供されるようになりました。 これらのユーザーは、独自のアプリケーションで14原則を使用して、スコープ内サービスのコンプライアンスを直接アサートすることができます。 ただし、お客様とパートナーは、Microsoft クラウドサービスのコンプライアンスの構成証明と決定に含まれていないすべてのコンポーネントについて、独自のコンプライアンスを達成する必要があります。
 
- [14 Microsoft Azure を使用した uk クラウド向けのクラウドセキュリティ統制](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/)によって、サービスを Azure に移行するためのお客様の戦略が提供され、CESG/nscs によって義務付けられている英国の義務を満たすことができます。 このホワイトペーパーでは、クラウドセキュリティプリンシパルに記載されている14個のコントロールに対処するために Azure をどのように使用できるかについての情報を提供します。また、お客様が Microsoft Azure サービスを採用しているときにコストを節約しつつ、より迅速に移行できるようにします
+ [14 Microsoft Azure を使用した uk クラウド向けのクラウドセキュリティ統制](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) によって、サービスを Azure に移行するためのお客様の戦略が提供され、CESG/nscs によって義務付けられている英国の義務を満たすことができます。 このホワイトペーパーでは、クラウドセキュリティプリンシパルに記載されている14個のコントロールに対処するために Azure をどのように使用できるかについての情報を提供します。また、お客様が Microsoft Azure サービスを採用しているときにコストを節約しつつ、より迅速に移行できるようにします
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -47,7 +47,7 @@ ms.locfileid: "46560774"
 - Intune
 - Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - Office 365: Exchange Online、SharePoint Online、Skype for Business Online
-- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
@@ -84,7 +84,7 @@ Azure のセキュリティとコンプライアンス UK ブループリント�
 
 **デジタル市場の利用資格があるユーザー**
 
-英国のすべての政府機関、デボルブされた組織、ローカルの機関、幅広い公開セクターの本文、および arm の長さの本文は、マーケットプレースでサービスを購入する資格があります。 ご利用の資格がわからない場合は、公的[機関の組織の完全な一覧](https://www.gov.uk/government/publications/public-sector-organisations-eligible-to-use-cloudstore)を参照してください。
+英国のすべての政府機関、デボルブされた組織、ローカルの機関、幅広い公開セクターの本文、および arm の長さの本文は、マーケットプレースでサービスを購入する資格があります。 ご利用の資格がわからない場合は、公的 [機関の組織の完全な一覧](https://www.gov.uk/government/publications/public-sector-organisations-eligible-to-use-cloudstore)を参照してください。
 
 **Arm の長さの本文とは**
 
@@ -99,7 +99,7 @@ Azure のセキュリティとコンプライアンス UK ブループリント�
 
 **他の Microsoft EU データセンターはどこにありますか?**
 
-UK データセンターに加えて、Microsoft クラウドサービスには複数の場所にデータセンターがあります。 全センターの最新のリストについては、[データの[場所] ページ](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located)を参照してください。
+UK データセンターに加えて、Microsoft クラウドサービスには複数の場所にデータセンターがあります。 全センターの最新のリストについては、[データの [場所] ページ](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located)を参照してください。
 
 **監査人の報告書のコピーはどのようにして入手できますか ?**
 
@@ -112,4 +112,4 @@ UK データセンターに加えて、Microsoft クラウドサービスには�
 - [G-クラウドセキュリティの原則](https://aka.ms/UK-G-Cloud)
 - [デジタルマーケットプレース](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

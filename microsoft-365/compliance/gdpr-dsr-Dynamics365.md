@@ -3,7 +3,7 @@ title: GDPR および CCPA のための Dynamics 365 データ対象要求
 description: このガイドは、個人データを検索して操作する方法、および Dynamics 365 のお客様による DSR および CCPA 要求への対応方法について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 04ecbd6e52a56ea83f3b2e2eaebd02de20cfbe52
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a5237f845239414a9b26a6da7028e323a11ea850
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817666"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416601"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Dynamics 365 データ対象要求
 

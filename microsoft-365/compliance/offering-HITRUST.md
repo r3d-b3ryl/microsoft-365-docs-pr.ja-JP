@@ -3,7 +3,7 @@ title: Health Information Trust アライアンス (HITRUST) Common Security Fra
 description: Azure と Office 365 は、正常性情報信頼アライアンス (HITRUST) Common Security Framework (CSF) に対して認定されています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e94cc9164938189e1b6fb07d897cf4bbf1e73c5d
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066674"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417039"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 
@@ -27,7 +27,7 @@ ms.locfileid: "44066674"
 
 健康情報信頼アライアンス (HITRUST) は、医療業界の代表者によって管理される組織です。 HITRUST は、一般的なセキュリティフレームワーク (CSF) を作成して管理します。これは、医療機関およびそのプロバイダーが、一貫性のある効率的な方法でセキュリティとコンプライアンスを実証できるようにするための認定されたフレームワークです。
 
-CSF は HIPAA に基づいて構築されており、個人を特定できる正常性の情報を使用、公開、保護するための要件を確立し、準拠していないことを強制する US の医療法です。 HITRUST は、標準化されたコンプライアンスフレームワーク、評価、および認定プロセスを提供します。これには、クラウドサービスプロバイダーと対象となる health エンティティがコンプライアンスを測定できます。 CSF は、支払いカード業界データセキュリティ基準 ([PCI DSS](https://www.microsoft.com/trustcenter/compliance/pci))、 [ISO/IEC 27001](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001)情報セキュリティ管理標準、および交換の最小許容リスク基準 ([MARS-E](https://www.microsoft.com/trustcenter/compliance/mars-e)) などの、医療固有のセキュリティ、プライバシー、およびその他の規制要件を組み込みます。
+CSF は HIPAA に基づいて構築されており、個人を特定できる正常性の情報を使用、公開、保護するための要件を確立し、準拠していないことを強制する US の医療法です。 HITRUST は、標準化されたコンプライアンスフレームワーク、評価、および認定プロセスを提供します。これには、クラウドサービスプロバイダーと対象となる health エンティティがコンプライアンスを測定できます。 CSF は、支払いカード業界データセキュリティ基準 ([PCI DSS](https://www.microsoft.com/trustcenter/compliance/pci))、 [ISO/IEC 27001](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001) 情報セキュリティ管理標準、および交換の最小許容リスク基準 ([MARS-E](https://www.microsoft.com/trustcenter/compliance/mars-e)) などの、医療固有のセキュリティ、プライバシー、およびその他の規制要件を組み込みます。
 
 CSF は、エンドポイント保護、モバイルデバイスのセキュリティ、アクセス制御など、19個の異なるドメインに分かれています。 HITRUST は、これらのコントロールに対して IT 提供を認定します。 また、HITRUST では、組織、システム、および規制上の要因に基づいて、証明書の要件を組織のリスクに適応させることができます。
 
@@ -74,7 +74,7 @@ HITRUST MyCSF ツールで、Azure の完全に継承または共有の責任の
 
 **Azure HITRUST コンプライアンスを使用して組織の証明プロセスに基づいて構築できますか?**
 
-はい。 Microsoft サービスに展開された実装のための HITRUST 証明書が必要な場合は、コンプライアンス評価を実施する際に、Azure HITRUST への準拠に基づいて構築できます。 ただし、組織内の HITRUST の要件と制御を評価する責任があります。
+はい、できます。 Microsoft サービスに展開された実装のための HITRUST 証明書が必要な場合は、コンプライアンス評価を実施する際に、Azure HITRUST への準拠に基づいて構築できます。 ただし、組織内の HITRUST の要件と制御を評価する責任があります。
 
 **HITRUST 証明書のコピーを取得するにはどうすればよいですか?**
 
@@ -109,4 +109,4 @@ HITRUST MyCSF®ツールにログインして、Microsoft Azure でホストさ�
 - [HITRUST CSF 9.3](https://hitrustalliance.net/csf-license-agreement/)
 - [CSF の理解と活用](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [HITRUST 共有責任プログラムの詳細については、「」を参照してください。](https://go.microsoft.com/fwlink/p/?linkid=2100268)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -3,7 +3,7 @@ title: 連邦政府機関買収規制補足 (DFARS dfars)
 description: Microsoft Azure Government は、連邦取得の防御法 (DFARS dfars) の要件をサポートしています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b850db09306f3cb4664433fb5659e8b65b421ba
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 07e3104881688b81d126cbd8b65844c7a2853d16
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41602554"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415547"
 ---
 # <a name="defense-federal-acquisition-regulation-supplement-dfars"></a>連邦政府機関買収規制補足 (DFARS dfars)
 
 ## <a name="dfars-overview"></a>DFARS 概要
 
-2016年10月21日には、米国国防総省 (DoD) によって最終的なルールが発行され、防衛業者に対して修正を適用し、保護されたインシデントとサイバーインシデントの報告に関する義務を課すことがあります。システムは、カバーされた防衛情報 (CDI) を処理、保存、または送信します。  
+2016年10月21日に、米国国防総省 (DoD) によって最終的なルールが発行され、情報システムが対象の防御技術情報 (CDI) を処理、保存、または送信する防衛業者に対して、保護された修正とサイバーインシデントの報告に関する義務があります。  
   
 最後の DFARS – 7012 (カバーされた防衛情報およびサイバーインシデントレポートを保護する) は、サイバーインシデントレポートの要件と、クラウドサービスプロバイダーの追加の考慮事項を含めるための保護を指定します。 DFARS 252.204 –7012では、すべての DoD 請負業者および国防工業基盤において、適切なセキュリティのための DFARS 要件に準拠する必要があります。ただし、2017年12月31日より後ではありません。
 
@@ -56,7 +56,7 @@ Azure 自治体および Office 365 の米国政府による防衛を利用す�
 
 **独立した査定官があります。これは、Azure 自治体および Office 365 の米国政府機関が DFARS 要件をサポートしているかどうかを検証しました**
 
-はい。サードパーティの評価組織には、Azure 自治体および Office 365 の米国政府防衛機関のクラウドサービスサービスが DFARS –7012の該当する要件を満たしていることが attested されています (未分類の統制された技術の保護情報)。
+はい。サードパーティの評価組織には、7012 (未分類の管理技術情報を保護しています) という、attested の要件を満たしていることを、Azure Government および Office 365 の米国政府防衛機関のクラウドサービスサービスが提供しているということがあります。
 
 **統制されていない未分類情報 (CUI) と対象となる防衛情報 (CDI) の関係は何ですか?**
 
@@ -69,7 +69,7 @@ CDI は、制御された技術情報またはその他の情報 (CUI レジス�
 
 **すべての Microsoft サービスが、DFARS 規制下の「対象となる防衛情報」に該当する「適切なセキュリティ」要件を満たしているか。**
 
-2016年10月に、国防総省 (DoD) は、「対象となる防衛情報」を通じて処理、保存、または送信するすべての DoD 請負業者に適用される、連邦防御法補足 (DFARS) 句を実装する最終規則を規定しています。情報システム。 このようなシステムは、NIST SP 800 –171で規定されているセキュリティ要件を満たしている必要があります。[連邦情報システムや組織内の規制](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)されていない未分類情報を保護すること、または DoD 契約責任者によって承認された「代替、同等の効果的なセキュリティ対策」。 また、DoD 請負業者は、対象となる防御情報を処理、保存、または送信するために外部クラウドサービスプロバイダーを使用する必要があります。このプロバイダーは、FedRAMP の適度なベースラインと同等のセキュリティ要件を満たしている必要があります。
+2016年10月に、国防総省 (DoD) は、情報システムを使用して、"対象となる防衛情報" を処理、保存、または送信するすべての DoD 請負業者に適用される、連邦防御 (promulgated) 句を実装する最終規則を示しています。 このようなシステムは、NIST SP 800 –171で規定されているセキュリティ要件を満たしている必要があります。 [連邦情報システムや組織内の規制](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)されていない未分類情報を保護すること、または DoD 契約責任者によって承認された「代替、同等の効果的なセキュリティ対策」。 また、DoD 請負業者は、対象となる防御情報を処理、保存、または送信するために外部クラウドサービスプロバイダーを使用する必要があります。このプロバイダーは、FedRAMP の適度なベースラインと同等のセキュリティ要件を満たしている必要があります。
 
 次の Microsoft クラウドサービスは、FedRAMP の中程度の承認を受け取り、DFARS 場合は、Azure Government、Dynamics 365 米国政府、Office 365 米国政府機関、および Office 365 米国政府機関との間で十分です。
 
@@ -81,4 +81,4 @@ CDI は、制御された技術情報またはその他の情報 (CUI レジス�
 - [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [オンライン サービスの使用条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [制御されていない未分類の情報 (CUI)](https://www.archives.gov/cui/registry/category-list)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -3,7 +3,7 @@ title: クラウド セキュリティ アライアンス (CSA) STAR 証明
 description: Azure と Intune には独立した監査に基づき、クラウド セキュリティ アライアンス STAR 証明が授与されています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0db45966c1473d27854ff4f695d1d9696435d075
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254406"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415617"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>クラウド セキュリティ アライアンス (CSA) STAR 証明
 
@@ -45,7 +45,7 @@ Microsoft Azure と Microsoft Intune は CSA STAR 証明の認定を取得しま
 - Microsoft Graph
 - Intune
 - Microsoft マネージド デスクトップ
-- Power Automate (以前の Microsoft Flow) クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
+- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス) 
 - Power BI
 

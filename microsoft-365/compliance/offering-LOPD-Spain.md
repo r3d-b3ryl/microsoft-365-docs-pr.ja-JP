@@ -3,7 +3,7 @@ title: スペインの Royal Decree (王室令) 1720/2007、スペインの基�
 description: Microsoft クラウドのお客様は、スペインの個人データ保護局 (AEPD) により国境を越えたデータの転送の許可を受けています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2582dcc9c865ad96390163ffef819811906cf0de
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 7dcf17874aeaf93c6f592313f27897f13bc91829
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066624"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417511"
 ---
 # <a name="spanish-royal-decree-17202007-spanish-organic-law-151999"></a>スペインの Royal Decree (王室令) 1720/2007、スペインの基本法 15/1999
 

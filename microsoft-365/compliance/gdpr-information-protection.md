@@ -3,7 +3,7 @@ title: 情報保護
 description: EU 一般データ保護規則 (GDPR) 向けの Microsoft 365 の情報保護機能について説明します。
 keywords: Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 04/13/2018
 f1.keywords:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 02dbb22ad47fbacf964308d2b4a989f34b6d6c9d
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307684"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416801"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>GDPR のための情報保護と Microsoft 365 の機能
 

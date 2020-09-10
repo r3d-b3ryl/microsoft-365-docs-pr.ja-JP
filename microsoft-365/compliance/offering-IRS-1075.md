@@ -3,7 +3,7 @@ title: 米内部収益サービス発行1075
 description: Microsoft では、microsoft の内部収益サービス文書1075の要件を満たすコントロールをご利用いただけます。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b64b69d52028a09ddd54863d4e2cbf5f0642bd67
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066330"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416347"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>米内部収益サービス発行1075
 
@@ -31,7 +31,7 @@ FTI を保護するために、IRS 1075 は、アプリケーション、プラ�
 
 ## <a name="microsoft-and-us-internal-revenue-service-publication-1075"></a>Microsoft および米内部収益サービス文書1075
 
-Microsoft Azure Government および[Microsoft Office 365 米国政府](https://products.office.com/government/office-365-web-services-for-government)機関向けのクラウドサービスには、適切な統制があり、microsoft agency のお客様が IRS 1075 の特性要件を満たすために必要なセキュリティ機能があるという契約上のコミットメントが提供されます。  
+Microsoft Azure Government および [Microsoft Office 365 米国政府](https://products.office.com/government/office-365-web-services-for-government) 機関向けのクラウドサービスには、適切な統制があり、microsoft agency のお客様が IRS 1075 の特性要件を満たすために必要なセキュリティ機能があるという契約上のコミットメントが提供されます。  
   
 これらの Microsoft cloud services for government は、お客様がソリューションを構築して運用できるプラットフォームを提供します。ただし、お客様は、特定のソリューションが IRS 1075 に準拠しているかどうかを判断する必要があります。したがって、IRS 監査の対象となります。  
   
@@ -64,7 +64,7 @@ IRS 1075 の実質的な要件への準拠については、毎年、FedRAMP aud
 
 **マイクロソフトは、IRS 1075 の要件をどのように対応していますか?**
 
-Microsoft は、セキュリティ、プライバシー、運用の各コントロールおよび NIST 800-53 rev を監視します。このコントロールは、中程度影響力のある情報システムのために FedRAMP のベースラインで必要とされるものです。 継続的な監視レポートを通じて、この情報への四半期ごとのアクセスを提供します。 Azure Government および Office 365 の米国政府機関のお客様は、[サービス信頼ポータル](https://aka.ms/stphelp)を通じてこの機密情報にアクセスできます。
+Microsoft は、セキュリティ、プライバシー、運用の各コントロールおよび NIST 800-53 rev を監視します。このコントロールは、中程度影響力のある情報システムのために FedRAMP のベースラインで必要とされるものです。 継続的な監視レポートを通じて、この情報への四半期ごとのアクセスを提供します。 Azure Government および Office 365 の米国政府機関のお客様は、 [サービス信頼ポータル](https://aka.ms/stphelp)を通じてこの機密情報にアクセスできます。
 
 さらに、Microsoft は、Azure Government および Office 365 米国政府向けのマスターコントロールセットに IRS 1075 コントロールを含めること、および年間に対する監査を行うことを約束しています。
 

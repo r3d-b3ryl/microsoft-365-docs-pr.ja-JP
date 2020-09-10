@@ -3,7 +3,7 @@ title: 韓国-情報セキュリティ管理システム (K-ISMS)
 description: Microsoft Azure は、韓国情報セキュリティ管理システム (K-ISMS) の認証を得ました (ISMS)。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 069267af4e695ebdf811f92cdab653c5f20e4af4
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fb3f1c9c3017b24d9a10af9debf1bb1c5c4f1f60
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065932"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415415"
 ---
 # <a name="korea-information-security-management-system-k-isms"></a>韓国-情報セキュリティ管理システム (K-ISMS)
 

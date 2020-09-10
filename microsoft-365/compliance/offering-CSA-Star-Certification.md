@@ -3,7 +3,7 @@ title: Cloud Security Alliance (CSA) STAR 認証
 description: Azure、Intune、Power BI には、ゴールド レベルの Cloud Security Alliance STAR 認証が付与されています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 897fc513d0f129a273f87107dc8e85127890ee6e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: a5da8e0168b58011a696f1f602d21e410e2a1eb6
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254396"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415606"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>Cloud Security Alliance (CSA) STAR Certification
 

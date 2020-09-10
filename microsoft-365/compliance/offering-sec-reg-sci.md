@@ -3,7 +3,7 @@ title: 証券および Exchange の委員会規制システムのコンプライ
 description: SCI ルールは、そのような自己規制組織 (SROs) をストックおよび options 交換、登録済みクリアエージェンシー、代替取引システム (ATSs) として含む、SCI エンティティに適用されます。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2b314934a51c16ab4e907b7d9f6208e7de21641
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fd4817f31aa91698a77de45fd8315b3f84431289
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065712"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415931"
 ---
 # <a name="securities-and-exchange-commission-regulation-systems-compliance-and-integrity-sci"></a>証券および Exchange のコミッション: 規制システムのコンプライアンスと整合性 (SCI)
 
@@ -27,7 +27,7 @@ ms.locfileid: "44065712"
 
 米国証券取引委員会 (SEC) は米国連邦政府機関の独立系であり、米国証券業界の主要な overseer とレギュレータです。 It wields は、連邦証券法による執行機関を提示し、新しい証券ルールを提案し、証券業界の市場規制を監視します。
 
-2014年11月に、SEC は、[システムのコンプライアンスと整合性 (sci)](https://www.sec.gov/rules/final/2014/34-73639.pdf) (およびレポートされた sci イベントのための bolster) を採用して、米国証券市場のテクノロジインフラストラクチャをしました。 規制は、システム停止の頻度を抑え、そのようなインシデントが発生した場合の復元性を向上させ、SEC による証券市場のテクノロジの監督および規制の適用を行うように設計されています。
+2014年11月に、SEC は、 [システムのコンプライアンスと整合性 (sci)](https://www.sec.gov/rules/final/2014/34-73639.pdf) (およびレポートされた sci イベントのための bolster) を採用して、米国証券市場のテクノロジインフラストラクチャをしました。 規制は、システム停止の頻度を抑え、そのようなインシデントが発生した場合の復元性を向上させ、SEC による証券市場のテクノロジの監督および規制の適用を行うように設計されています。
 
 SCI ルールは、そのような自己規制組織 (SROs) をストックおよび options 交換、登録済みクリアエージェンシー、代替取引システム (ATSs) として含む、SCI エンティティに適用されます。 ルールは主に、主な証券市況の機能 (取引、クリアランスと決済、注文ルーティング、市場データ、市場規制、市場監視) を直接サポートするシステムを制御します。
 
@@ -35,7 +35,7 @@ SCI ルールは、そのような自己規制組織 (SROs) をストックお�
 
 米国証券取引委員会 (SEC) は、米国証券を運用およびサポートする金融機関のテクノロジインフラストラクチャを強化するために、規制 SCI を採用しています。 SEC の監視では、これらのシステムが高可用性、強力な復元性、および低遅延 (メッセージの大容量で遅延が少ない) を確実にするための要件が設計されています。
 
-この規制に準拠する必要があるお客様の金融サービスのお客様のためのガイダンスを提供するため、Microsoft は[Microsoft AZURE SEC 規制システムのコンプライアンスと整合性に関するクラウド実装ガイド](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers)を公開しています。 このドキュメント内のガイダンス:
+この規制に準拠する必要があるお客様の金融サービスのお客様のためのガイダンスを提供するため、Microsoft は [Microsoft AZURE SEC 規制システムのコンプライアンスと整合性に関するクラウド実装ガイド](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=a69ce0c1-7b7e-44e9-9143-867241e6b2f9&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_FAQ_and_White_Papers)を公開しています。 このドキュメント内のガイダンス:
 
 - 強力な復元性、高可用性、および低遅延をサポートする、全体的な Azure 機能の概要について説明します。
 - Azure が管理する領域および規制面を明確にします。 このポイントごとの Azure 機能とサービスの SCI 要件へのマッピングは、規制フレームワークに対する Azure コンプライアンスを測定します。 また、お客様は、社内での運用時に完全に所有されていたセキュリティ責任を Azure に移行できることを理解しやすくなります。 これらの機能は、Microsoft が Azure の Sla で行う約束によって支えられています。
@@ -58,7 +58,7 @@ SCI ルールは、そのような自己規制組織 (SROs) をストックお�
 
 **クラウドテクノロジを使用する場合の共有責任の意味**
 
-コンピューティング環境を社内設置型からクラウド内のデータセンターに移行すると、クラウドサービスプロバイダー (CSP) にもセキュリティの責任が移行されるため、お客様はその責任を共有できるようになります。 すべてのアプリケーションとソリューションについて、その責任がどの程度お客様のものになっているか、およびお客様が展開する Azure モデル (IaaS、SaaS、または PaaS) によって、CSP にどの程度が依存しているか。 必要なセキュリティ制御を実装するために、ユーザーが責任を負う度合いを把握することはお客様の責任です。 ただし、Microsoft では、この複雑なダイナミックにお客様が移動するのに役立つガイダンスを提供しています。 詳細については、「[クラウドコンピューティングの共有責任](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91)」を参照してください。
+コンピューティング環境を社内設置型からクラウド内のデータセンターに移行すると、クラウドサービスプロバイダー (CSP) にもセキュリティの責任が移行されるため、お客様はその責任を共有できるようになります。 すべてのアプリケーションとソリューションについて、その責任がどの程度お客様のものになっているか、およびお客様が展開する Azure モデル (IaaS、SaaS、または PaaS) によって、CSP にどの程度が依存しているか。 必要なセキュリティ制御を実装するために、ユーザーが責任を負う度合いを把握することはお客様の責任です。 ただし、Microsoft では、この複雑なダイナミックにお客様が移動するのに役立つガイダンスを提供しています。 詳細については、「 [クラウドコンピューティングの共有責任](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91)」を参照してください。
 
 **どの金融機関が Azure を利用して、規制の SCI 要件を満たすことができるか。**
 
@@ -69,8 +69,8 @@ SCI ルールは、そのような自己規制組織 (SROs) をストックお�
 - [規制 SCI に関してよく寄せられる質問に対する SEC の回答](https://www.sec.gov/divisions/marketreg/regulation-sci-faq.shtml)
 - [ビジネス継続性と障害復旧 (BCDR): Azure ペアリングされた領域](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
 - [クラウドコンピューティングの規制原則と Microsoft Online Services のコンプライアンスマップ](https://aka.ms/FinServ-Guide-US)
-- [Microsoft Cloud Financial Services Compliance プログラム](https://aka.ms/FSCP-Print)
+- [Microsoft Cloud Financial Services Compliance Program](https://aka.ms/FSCP-Print)
 - [Azure における金融サービス コンプライアンス](https://aka.ms/FinServ-Compliance-Azure)
 - [Microsoft 金融サービス](https://aka.ms/FinServ-Compliance)
 - [Microsoft および SEC Rule 17a-4](offering-SEC-17a-4.md)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

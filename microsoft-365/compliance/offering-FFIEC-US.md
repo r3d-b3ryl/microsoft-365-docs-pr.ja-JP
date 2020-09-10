@@ -3,7 +3,7 @@ title: 連邦金融機関調査委員会 (FFIEC)
 description: Microsoft は、金融サービスクライアントが連邦金融機関調査委員会 (FFIEC) の監査要件に準拠しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 34feea4f90ddbb4036bb08c5548696f4fcd649a9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800098"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417321"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>連邦金融機関調査委員会 (FFIEC)
 
@@ -37,10 +37,10 @@ Microsoft Azure、Microsoft Power BI、Microsoft Office 365 は、金融サー�
 
 金融機関クライアントが Azure との FFIEC のコンプライアンス要件を満たすために、Microsoft では以下を開発しています。
 
-- [クラウドセキュリティ診断ツール * *](https://aka.ms/FFIEC-CSDT)を使用して、Azure サービスのリスク評価を効率的に実施できるようにします。 このツール (Excel スプレッドシート) には、金融サービス規制やその他の関連基準の要件を追跡する19個の情報セキュリティドメイン (ネットワークおよびシステムのセキュリティ、情報およびリスク管理など) があります。また、FFIEC IT の調査ハンドブックもあります。 このツールは、技術サービスプロバイダ (TSPs) に適用される各要件を Azure が準拠する方法について説明します。
+- [クラウドセキュリティ診断ツール * *](https://aka.ms/FFIEC-CSDT) を使用して、Azure サービスのリスク評価を効率的に実施できるようにします。 このツール (Excel スプレッドシート) には、金融サービス規制やその他の関連基準の要件を追跡する19個の情報セキュリティドメイン (ネットワークおよびシステムのセキュリティ、情報およびリスク管理など) があります。また、FFIEC IT の調査ハンドブックもあります。 このツールは、技術サービスプロバイダ (TSPs) に適用される各要件を Azure が準拠する方法について説明します。
 - [FFIEC 規制サービスのワークロードのための Azure セキュリティおよびコンプライアンスブループリント](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)。診断ツールの付属。 このガイドでは、Azure クラウドサービスの使用方法と、FFIEC の要件およびリスク評価ガイドラインに関するお客様のコンプライアンスに関する考慮事項について説明します。
 
-FFIEC の要件に準拠するために、Microsoft クラウドサービスは、独立した CPA 企業によって作成された[SOC 構成証明書](offering-SOC.md)を提供します。 たとえば、認証された SOC の種類2は、AICPA SSAE 18 標準に基づいています (105 セクションを参照)。これは、SAS 70 を交換したものであり、財務報告に関する特定のコントロールのレポートに適しています。 SOC レポートには、指定された監視期間中に関連する制御目標を達成するために、監査者が Microsoft 統制の有効性についての意見が記載されています。 金融機関は、Azure、Power BI、および Office 365 に展開された資産に対して FFIEC 固有のコンプライアンス義務を遵守するときに、この公式監査を使用できます。
+FFIEC の要件に準拠するために、Microsoft クラウドサービスは、独立した CPA 企業によって作成された [SOC 構成証明書](offering-SOC.md) を提供します。 たとえば、認証された SOC の種類2は、AICPA SSAE 18 標準に基づいています (105 セクションを参照)。これは、SAS 70 を交換したものであり、財務報告に関する特定のコントロールのレポートに適しています。 SOC レポートには、指定された監視期間中に関連する制御目標を達成するために、監査者が Microsoft 統制の有効性についての意見が記載されています。 金融機関は、Azure、Power BI、および Office 365 に展開された資産に対して FFIEC 固有のコンプライアンス義務を遵守するときに、この公式監査を使用できます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -57,7 +57,7 @@ Azure および Office 365 の SOC 構成証明レポート。
 
 **マイクロソフトの SOC 標準を使用して、組織の機関の FFIEC 準拠の義務を満たすことはできますか?**
 
-これらの義務を満たすために、Microsoft は、前述した SOC 標準への準拠についての詳細を提供しています。 しかし最終的には、お客様は自分のサービスが、お客様の機関に適用される特定の法律および規制に準拠しているかどうかを判断する必要があります。 また、FFIEC は、「監査レポートまたはレビューのユーザーは、レポートに含まれる情報のみに依存して TSP の内部統制環境を検証することはない」ということにもアドバイスしています。 「FFIEC IT の調査ハンドブック」の「[アウトソーシングテクノロジ](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)」に記載されているように、追加の確認および監視手順を使用する必要があります。
+これらの義務を満たすために、Microsoft は、前述した SOC 標準への準拠についての詳細を提供しています。 しかし最終的には、お客様は自分のサービスが、お客様の機関に適用される特定の法律および規制に準拠しているかどうかを判断する必要があります。 また、FFIEC は、「監査レポートまたはレビューのユーザーは、レポートに含まれる情報のみに依存して TSP の内部統制環境を検証することはない」ということにもアドバイスしています。 「FFIEC IT の調査ハンドブック」の「 [アウトソーシングテクノロジ](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) 」に記載されているように、追加の確認および監視手順を使用する必要があります。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
 
@@ -78,4 +78,4 @@ Azure および Office 365 の SOC 構成証明レポート。
 - [Azure における金融サービス コンプライアンス](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Microsoft 法人向けクラウド サービスおよび金融サービス](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [クラウド コンピューティングの共同責任](https://aka.ms/sharedresponsibility)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

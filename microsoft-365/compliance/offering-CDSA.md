@@ -3,7 +3,7 @@ title: Content Delivery &amp; Security Association (CDSA) の Content Protection
 description: Azure は Content Delivery and Security Association の Content Protection and Security 標準の認証を取得しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b349c41f2f423f7c0fca1b66c20c571a3512fa54
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 8c87d00e76ac71be3527e9db741aea6ee7a741f4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065862"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417311"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Content Delivery &amp; Security Association (CDSA) の Content Protection &amp; Security (CPS) 標準
 

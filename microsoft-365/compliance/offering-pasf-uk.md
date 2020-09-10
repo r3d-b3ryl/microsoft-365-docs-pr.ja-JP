@@ -3,7 +3,7 @@ title: 警察の安全な施設 (PASF) 英国
 description: Microsoft business cloud services では、組織のデータを処理してクラウドに保存するために、警察が安全な施設を必要とする英国法の実施をサポートしています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3207d0d29c837064ac5c27cc7022a8d0d7e63a22
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 828a16ce825a21a532a22d60cd0005db10c97a75
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065792"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416399"
 ---
 # <a name="police-assured-secure-facilities-pasf-united-kingdom"></a>警察の安全な施設 (PASF) 英国
 
 ## <a name="about-pasf"></a>PASF について
 
-英国のホームオフィス (セキュリティ、immigration、および法規の責任者) の国内の規制情報リスク管理チーム (NPIRMT) は、警察の情報がその基準を満たしていることを確認するために請求されます。 国家の規制[情報リスク管理ポリシー](http://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf)により、警察の情報システムをクラウドに移行するリスクを評価している英国全体にわたって、法律執行機関の中心標準と統制を設定します。 このポリシーでは、protectively がマークされているか、またはその他の機密法の実施情報を保存および処理する、英国のすべての国内の警察サービスが、データを格納するデータセンターの物理的な調査を行う必要があります。 データセンターが正常に評価されると、それが PASF であると判断されます。
+英国のホームオフィス (セキュリティ、immigration、および法規の責任者) の国内の規制情報リスク管理チーム (NPIRMT) は、警察の情報がその基準を満たしていることを確認するために請求されます。 国家の規制 [情報リスク管理ポリシー](http://library.college.police.uk/docs/APP-National-Policing-Information-Risk-Management-Policy.pdf)により、警察の情報システムをクラウドに移行するリスクを評価している英国全体にわたって、法律執行機関の中心標準と統制を設定します。 このポリシーでは、protectively がマークされているか、またはその他の機密法の実施情報を保存および処理する、英国のすべての国内の警察サービスが、データを格納するデータセンターの物理的な調査を行う必要があります。 データセンターが正常に評価されると、それが PASF であると判断されます。
 
 NPIRMT は、社内の警察サービスを期日のデューデリジェンスレビューに役立てるために、Azure データセンターの PASF 監査を実行し、それが準拠していると判断しました。 地域の警察サービスは、この NPIRMT 評価を使用して独自のレビューをサポートできます。 NPIRMT ポリシーガイドラインを使用すると、各警察サービスのシニア情報リスク所有者は、特定のアプリケーションのコンテキストで個々のデータセンターの適合性を評価し、承認のために NPIRMT に提出する必要があります。
 
@@ -33,7 +33,7 @@ NPIRMT は、社内の警察サービスを期日のデューデリジェンス�
 
 UK の国家の審査情報リスク管理チーム (NPIRMT) は、英国の Microsoft Azure データセンターの物理的なインフラストラクチャに関する包括的なセキュリティ評価を完了し、是正措置を行わずに NPIRMT 要件に準拠していることを示しています。 この物理的な監査により、Microsoft business cloud services は、そのデータをクラウドに処理して保存するために、警察にセキュリティ保護された施設 (PASF) を必要とする英国全体で警察フォースをサポートできるようになりました。
 
-Microsoft は、セキュリティに対する総合的な多層防御アプローチを採用しています。 英国のデータセンター (すべての Microsoft データセンターなど) は、クラウドサービスプロバイダーの国際的に認識されている標準[ポートフォリオ](https://azure.microsoft.com/overview/trusted-cloud/)に準拠することが認定されており、それらの要件を一貫して満たすことができます。 これには、 [iso/iec 27001 Information Security Management 標準](offering-iso-27001.md)および ISO/Iec 27018 コードを実装するための認定が含まれています。[クラウド内の個人データを保護する方法](offering-iso-27018.md)です。
+Microsoft は、セキュリティに対する総合的な多層防御アプローチを採用しています。 英国のデータセンター (すべての Microsoft データセンターなど) は、クラウドサービスプロバイダーの国際的に認識されている標準 [ポートフォリオ](https://azure.microsoft.com/overview/trusted-cloud/) に準拠することが認定されており、それらの要件を一貫して満たすことができます。 これには、 [iso/iec 27001 Information Security Management 標準](offering-iso-27001.md) および ISO/Iec 27018 コードを実装するための認定が含まれています。 [クラウド内の個人データを保護する方法](offering-iso-27018.md)です。
 
 これらの認定は、データセンターの物理的なセキュリティを保護するために講じる対策によって支えられています。 顧客データが格納されている領域への物理的なアクセスを厳密に制御するために、データセンターを設計、構築、運用する方法から始まる、階層化されたアプローチを採用しています。 Microsoft によって管理されているデータセンターには、施設の周辺、建物の周辺、建物内、およびデータセンターフロアで必要なアクセス承認があり、幅広いレベルの保護があります。 これにより、承認されていないユーザーがデータおよびデータセンターのリソースに物理的にアクセスするリスクを軽減します。
 
@@ -55,12 +55,12 @@ NPIRMT は、1つの Azure データセンターを毎年監査し、英国の4�
 
 **英国の警察部門は、自社のリスク評価の一部として Azure PASF 評価を使用できますか。**
 
-はい。 法律執行機関は、クラウドに移行する前に、Azure の NPIRMT 評価を使用して、独自のローカルリスク評価をサポートできます。
+はい、できます。 法律執行機関は、クラウドに移行する前に、Azure の NPIRMT 評価を使用して、独自のローカルリスク評価をサポートできます。
 
 ## <a name="resources"></a>リソース
 
 - [国の監視の認定ポリシー](http://library.college.police.uk/docs/APP-National-Policing-Accreditation-Policy-2013.pdf)
 - [Azure 施設、設置型、および物理的なセキュリティ](https://azure.microsoft.com/blog/azure-layered-approach-to-physical-security/)
 - [Microsoft および ISO/IEC 27001:2013 ISM 標準](offering-iso-27001.md)
-- [Microsoft  オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [Microsoft オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -3,7 +3,7 @@ title: デジタル生産パートナーシップ (DPP) 英国
 description: Microsoft Azure では、DPP がブロードキャスト用にセキュリティマークを付けてコミットされています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,24 +14,24 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ce688fbf933cc14884e989572e222396f4ccec52
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066634"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415455"
 ---
 # <a name="digital-production-partnership-dpp-united-kingdom"></a>デジタル生産パートナーシップ (DPP) 英国
 
 ## <a name="about-the-dpp"></a>DPP について
 
-放送局は、web サイト、IT インフラストラクチャ、およびシステムに対して confronting を頻繁に cyberattacks しています。 これらの脅威への対応として、[デジタル生産パートナーシップ](https://www.thedpp.com/)(dpp) は、[**北アメリカの放送関連**](https://nabanet.com/)(NABA) と提携して、[サプライヤーの放送中のサイバーセキュリティ要件](https://nabanet.com/wp-content/uploads/2017/08/NABA_DPP_CyberSecurity_Requirements_3.pdf)を開発します。 英国の放送局の最高情報セキュリティ担当者は、これらを最低限の cybersecurity 要件として裏にしました。  
+放送局は、web サイト、IT インフラストラクチャ、およびシステムに対して confronting を頻繁に cyberattacks しています。 これらの脅威への対応として、 [デジタル生産パートナーシップ](https://www.thedpp.com/) (dpp) は、 [**北アメリカの放送関連**](https://nabanet.com/) (NABA) と提携して、 [サプライヤーの放送中のサイバーセキュリティ要件](https://nabanet.com/wp-content/uploads/2017/08/NABA_DPP_CyberSecurity_Requirements_3.pdf)を開発します。 英国の放送局の最高情報セキュリティ担当者は、これらを最低限の cybersecurity 要件として裏にしました。  
   
-その後、DPP は、放送およびサプライヤーのセキュリティ担当者と協力して自己評価のインベントリを作成します。これに[より、サプライヤー](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklist.xlsx)は、cybersecurity のベストプラクティスの展開を放送していることを示すことができます。 この作業では、2017年10月に開始されたセキュリティプログラムに対して、2つの異なるマークを使用して、1つはブロードキャスト用に、もう1つは運用用に1つずつ、正式な[Dpp](https://www.thedpp.com/tech/security/committed-to-security/)を確立します。
+その後、DPP は、放送およびサプライヤーのセキュリティ担当者と協力して自己評価のインベントリを作成します。これに [より、サプライヤー](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklist.xlsx)は、cybersecurity のベストプラクティスの展開を放送していることを示すことができます。 この作業では、2017年10月に開始されたセキュリティプログラムに対して、2つの異なるマークを使用して、1つはブロードキャスト用に、もう1つは運用用に1つずつ、正式な [Dpp](https://www.thedpp.com/tech/security/committed-to-security/) を確立します。
 
 ## <a name="microsoft-and-the-dpp"></a>Microsoft および DPP
 
-Microsoft Azure では、デジタル生産パートナーシップ (DPP) 自己評価アンケートの完了後に、DPP がブロードキャスト用にコミットされたこと*を示して*います。 ドキュメントとテスト、認証、セキュリティ制御のためのベストプラクティスのセットを文書化する必要があります。 [Eurofins は、デジタルテスト](https://www.eurofins-digitaltesting.com/)、品質保証のエキスパート、および dpp のメンバーを調べて、Microsoft の応答で確認してからサインアウトし、最終検証のために dpp に送信しました。  
+Microsoft Azure では、デジタル生産パートナーシップ (DPP) 自己評価アンケートの完了後に、DPP がブロードキャスト用にコミットされたこと *を示して*います。 ドキュメントとテスト、認証、セキュリティ制御のためのベストプラクティスのセットを文書化する必要があります。 [Eurofins は、デジタルテスト](https://www.eurofins-digitaltesting.com/)、品質保証のエキスパート、および dpp のメンバーを調べて、Microsoft の応答で確認してからサインアウトし、最終検証のために dpp に送信しました。  
   
 そのため、Microsoft Azure を使用している放送およびその他のメディアのお客様は、堅牢なセキュリティと復元性の高いサービスが、プログラム開発から送信までの、ブロードキャスト業界の固有の要求を満たすことができるという自信を持つことができます。
 
@@ -55,4 +55,4 @@ Azure ブロードキャストマークは1年間有効であり、毎年更新�
 
 - [DPP がセキュリティプログラムによってコミットされたブロードキャストチェックリストのユーザーガイド](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [サプライヤーのサイバーセキュリティ要件を促進するための NABA と DPP の共に使用する統合](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

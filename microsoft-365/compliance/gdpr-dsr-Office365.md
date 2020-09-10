@@ -3,7 +3,7 @@ title: GDPR および CCPA に基づく Office 365 データ対象要求
 description: GDPR および CCPA に基づくユーザーの権利と、DSR への対応で企業が Office 365 を使用してデータを検索および処理する方法について説明します。
 keywords: Office 365、DSR、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df3288d8b54d60bc34bbc81132b6d6bc85cd18f2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f08d0adf58d0e6028fddabf7c88bc7c0bcf8aecb
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307718"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416631"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Office 365 データ対象要求
 

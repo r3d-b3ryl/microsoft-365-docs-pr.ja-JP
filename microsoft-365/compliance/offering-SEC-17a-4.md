@@ -3,7 +3,7 @@ title: 米国証券取引委員会 (SEC) ルール 17a-4-4 (f) 米国
 description: 独立した評価会社が、金融企業が SEC Rule 17a-4 (f) レコードの保持と不変のストレージ要件を満たすことができること365を検証しています。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 63a7c4f7385ec3d782ff030374ba344406c6d094
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bd91e2439b501a20396763358f35a94aa31b4672
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126666"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417235"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>米国証券取引委員会 (SEC) ルール 17a-4-4 (f) 米国
 
 ## <a name="microsoft-and-sec-rule-17a-4f"></a>Microsoft および SEC Rule 17a-4 (f)
 
-米国[証券取引委員会 (SEC)](https://www.sec.gov/)は米国連邦政府機関の独立系であり、米国証券業界の主要な overseer とレギュレータです。 It wields は、連邦証券法による執行機関を提示し、新しい証券ルールを提案し、証券業界の市場規制を監視します。
+米国 [証券取引委員会 (SEC)](https://www.sec.gov/) は米国連邦政府機関の独立系であり、米国証券業界の主要な overseer とレギュレータです。 It wields は、連邦証券法による執行機関を提示し、新しい証券ルールを提案し、証券業界の市場規制を監視します。
 
-SEC は、電子記憶メディアに書籍や記録を保持することを選択する規制対象エンティティの厳密かつ明示的な要件を定義します。 この It は、証券会社ディーラーの保存期間を含め、記録管理を規制する[17 cfr 240.17 a-3](https://www.govinfo.gov/app/details/CFR-2012-title17-vol3/CFR-2012-title17-vol3-sec240-17a-3)および[17 cfr 240.17 a-4](https://www.ecfr.gov/cgi-bin/text-idx?mc=true&node=pt17.4.240&rgn=div5#se17.4.240_117a_64)を確立しました。 その後、SEC が[修正](https://www.sec.gov/rules/interp/34-47806.htm)した 17 CFR 240.17 a-4 段落 (f) は、2つの interpretive リリースを明示的に発行して、特定の条件が満たされている限り、書籍や記録を電子記憶媒体に保持できるようにします。
+SEC は、電子記憶メディアに書籍や記録を保持することを選択する規制対象エンティティの厳密かつ明示的な要件を定義します。 この It は、証券会社ディーラーの保存期間を含め、記録管理を規制する [17 cfr 240.17 a-3](https://www.govinfo.gov/app/details/CFR-2012-title17-vol3/CFR-2012-title17-vol3-sec240-17a-3) および [17 cfr 240.17 a-4](https://www.ecfr.gov/cgi-bin/text-idx?mc=true&node=pt17.4.240&rgn=div5#se17.4.240_117a_64) を確立しました。 その後、SEC が [修正](https://www.sec.gov/rules/interp/34-47806.htm) した 17 CFR 240.17 a-4 段落 (f) は、2つの interpretive リリースを明示的に発行して、特定の条件が満たされている限り、書籍や記録を電子記憶媒体に保持できるようにします。
 
 必要な保存期間におけるレコードの変更または消去を阻止した場合、電子ストレージシステムはこれらの条件を満たします。 保存期間は、レコードの種類に基づいて3から6年に変化し、最初の2年間に対して直接アクセスが義務付けられています。 さらに、interpretive リリースの1つでは、subpoenas、法務ホールド、その他の要件に準拠するために、SEC が確立した保存期間を超えたレコードをストレージシステムが保持できることが要求されます。
 
@@ -39,8 +39,8 @@ SEC は、電子記憶メディアに書籍や記録を保持することを選�
 
 SEC Rule 17a-4 (f) に準拠するように Azure と Office 365 のコンプライアンスを評価するために、Microsoft は、レコード管理と情報ガバナンスに特化した独立した評価会社を保有しています。 Cohasset が関連しています。 生成されるレポートの対象:
 
-- **Azure**: [SEC 17a-4-4 (f) コンプライアンス評価: Microsoft azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset は、ポリシーロックオプションを使用して、時間ベースの blob[ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage)を消去できないようにすることを検証しています。このオプションを使用すると、消去不能かつ書き換え不可 (WORM) 形式で時間ベースの blob を保持することができます。 各 Blob (レコード) は、必要な保存期間が期限切れになり、関連付けられた法的保持が解放されるまで、変更、上書き、または削除されないように保護されます。 機密性の高いワークロードを持つソフトウェアプロバイダーとパートナーは、レコード保持と不変のストレージのための onestop ショップクラウドソリューションとして、Azure 不変 Blob ストレージを利用できるようになりました。 金融機関は、これらの機能を利用して、準拠したまま、自分のアプリケーションを構築できるようになりました。
-- **Office 365**: [Exchange Online を使用して SEC 17a-4 に準拠](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)します。 Cohasset では、 [office 365 に保持ロック](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)が設定されていると、ブローカーディーラーを含む規制対象の顧客が、レコード保持の SEC 要件に準拠するために役立つ方法でデータを保存できるようにするアーカイブ機能があります。 Office 365 のアイテム保持ポリシーでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。
+- **Azure**: [SEC 17a-4-4 (f) コンプライアンス評価: Microsoft azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset は、ポリシーロックオプションを使用して、時間ベースの blob [ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) を消去できないようにすることを検証しています。このオプションを使用すると、消去不能かつ書き換え不可 (WORM) 形式で時間ベースの blob を保持することができます。 各 Blob (レコード) は、必要な保存期間が期限切れになり、関連付けられた法的保持が解放されるまで、変更、上書き、または削除されないように保護されます。 機密性の高いワークロードを持つソフトウェアプロバイダーとパートナーは、レコード保持と不変のストレージのための onestop ショップクラウドソリューションとして、Azure 不変 Blob ストレージを利用できるようになりました。 金融機関は、これらの機能を利用して、準拠したまま、自分のアプリケーションを構築できるようになりました。
+- **Office 365**: [Exchange Online を使用して SEC 17a-4 に準拠](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)します。 Cohasset では、 [office 365 に保持ロック](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) が設定されていると、ブローカーディーラーを含む規制対象の顧客が、レコード保持の SEC 要件に準拠するために役立つ方法でデータを保存できるようにするアーカイブ機能があります。 Office 365 のアイテム保持ポリシーでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -80,4 +80,4 @@ Microsoft クラウドサービスおよびレギュレータの通知のリス�
 - [Azure 金融サービス クラウド リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Office 365 のアイテム保持ポリシー](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融サービスのブログ](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

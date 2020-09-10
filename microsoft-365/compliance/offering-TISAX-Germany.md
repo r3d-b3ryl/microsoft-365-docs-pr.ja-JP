@@ -3,7 +3,7 @@ title: 信頼された情報セキュリティ アセスメント交換 (TISAX) 
 description: ENX 認定の独立監査役が、Microsoft クラウド データセンターを TISAX セキュリティ要件に照らし合わせて評価しました。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c6f876ee3285f68f6488f83fdc978e175c26f3eb
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: fe9186b45268fee11d011d6a941e244071e31a42
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357293"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417541"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>信頼された情報セキュリティ アセスメント交換 (TISAX) ドイツ
 

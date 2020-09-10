@@ -3,7 +3,7 @@ title: 米国国防総省 (DoD) 暫定認証
 description: Microsoft は、影響レベル5、4、および2で、米国国防総省 (DoD) の仮承認を受けました。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 333333ad274c569337c2cbab7fd00c7337e26160
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fee91c384850b5a1593cc17e6215985217ada033
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064768"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415475"
 ---
 # <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>米国国防総省 (DoD) の影響レベル2、4、および5の仮承認
 
@@ -88,11 +88,11 @@ Azure のセキュリティとコンプライアンス部門の防御の青写�
 
 **Microsoft のコンプライアンスを自分の組織の認定プロセスに利用できますか?**
 
-はい。 すべての DoD 機関は、DoD 認証を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書に頼ることができます。 (これは、DoD をサポートし、クラウドサービスを必要とする他の組織にも適用されます)。ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
+はい、できます。 すべての DoD 機関は、DoD 認証を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書に頼ることができます。 (これは、DoD をサポートし、クラウドサービスを必要とする他の組織にも適用されます)。ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
 
 **Microsoft の DoD 認定資格は、NIST 800 –171の要件を満たしていますか?**
 
-2016年10月に、国防総省 (DoD) は、情報システムを使用して、"対象となる防衛情報" を処理、保存、または送信するすべての DoD 請負業者に適用される、連邦防御 (promulgated) 句を実装する最終規則を示しています。 このようなシステムは、NIST SP 800 –171で規定されているセキュリティ要件を満たしている必要があります。[連邦情報システムや組織内の規制](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)されていない未分類情報を保護すること、または DoD 契約責任者によって承認された「代替の効果的なセキュリティ対策」というものです。 また、DoD 請負業者は、対象となる防御情報を処理、保存、または送信するために外部クラウドサービスプロバイダーを使用する必要があります。このプロバイダーは、FedRAMP の適度なベースラインと同等のセキュリティ要件を満たしている必要があります。
+2016年10月に、国防総省 (DoD) は、情報システムを使用して、"対象となる防衛情報" を処理、保存、または送信するすべての DoD 請負業者に適用される、連邦防御 (promulgated) 句を実装する最終規則を示しています。 このようなシステムは、NIST SP 800 –171で規定されているセキュリティ要件を満たしている必要があります。 [連邦情報システムや組織内の規制](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)されていない未分類情報を保護すること、または DoD 契約責任者によって承認された「代替の効果的なセキュリティ対策」というものです。 また、DoD 請負業者は、対象となる防御情報を処理、保存、または送信するために外部クラウドサービスプロバイダーを使用する必要があります。このプロバイダーは、FedRAMP の適度なベースラインと同等のセキュリティ要件を満たしている必要があります。
 
 次の Microsoft クラウドサービスは、FedRAMP の中程度の承認を受信しています。 Azure、Azure Government、Dynamics 365 米国政府、Office 365 MT、Office 365 米国政府機関、および Office 365 米国政府機関による防御。
 
