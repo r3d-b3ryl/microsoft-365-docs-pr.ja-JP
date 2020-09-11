@@ -3,7 +3,7 @@ title: GDPR と CCPA のための Microsoft サポート/プロフェッショ�
 description: Microsoft サポート/プロフェッショナルサービスが GDPR および CCPA のデータ サブジェクトの要求をどのように処理するかについて説明します。
 keywords: プロフェッショナル サービス、Microsoft 365、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR、CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8bbdcc6140ffac298942f81899a4c872cc05584
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 496a84b153d017eb69ba5b18443e4331c00c4dd7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036312"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416581"
 ---
 # <a name="microsoft-support-and-professional-services-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のための Microsoft サポート/プロフェッショナル サービス データ サブジェクト要求
 
@@ -133,7 +133,7 @@ DSR の解決に関して Microsoft がお客様を支援する場合、これ�
 
 特定の連携を識別するために、お客様は連携全体を検索する必要があります。プレミア顧客の場合、お客様の契約サービス マネージャー (“CSM”) は契約スケジュールの下で作成されたすべてのサポート要求 (SR) を確認できます。プレミアでない場合、オンライン サービス サポート エリアなど、同等のサポート連携ポータルを使用できます。
 
-![SMC での検索](../media/Prof-Serv-DSR-Doc-Final_image3.png)CSM は Support.Microsoft.Com ([https://support.microsoft.com/\<local 言語コード\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) (“SMC”) でポータルにアクセスし、サポート要求を選択および確認できます。 (注: URL 内のローカル言語コードを置き換えてください)。
+![SMC での検索](../media/Prof-Serv-DSR-Doc-Final_image3.png) CSM は Support.Microsoft.Com ([https://support.microsoft.com/\<local language code\>/premier](https://support.microsoft.com/%3clocal%20language%20code%3e/premier)) ("SMC") でポータルにアクセスし、サポート要求を選択および確認できます。 (注: URL 内のローカル言語コードを置き換えてください)。
 
 >[!IMPORTANT]
 >SMC 内のケース履歴に加えて、お客様はサポート連携時に Microsoft によって収集された (またはお客様の許可の下でオンライン サービスから削除された) ファイル内にエンド ユーザーの個人データを保有している場合があります。 例としてお客様の Exchange メールボックス、Azure VM、データベースのコピーなどがあります。 こうした個人データは特定の連携に関するケース事例 (つまりチケット) の中で記述されている場合と記述されていない場合があります。 そのデータを確認するために、お客様連絡先は、Microsoft サポート データ転送および管理ツール (DTM) 内のワークスペースの URL を受け取っている特定の認証済み (AAD または MSA による) サポート要求連絡先である必要があります。 お客様連絡先はファイルにアクセスできますが、グローバル表示は使用できません。また、SMC はファイルが存在するかどうかを示しません。

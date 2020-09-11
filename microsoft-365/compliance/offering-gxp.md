@@ -3,7 +3,7 @@ title: Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 description: Azure と Office 365 は、ライフ サイエンス企業が GxP の法的要件を満たすのに役立ちます。
 keywords: Microsoft 365、コンプライアンス、サービス
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a130275588b765514162cd08e37d9d5e512a409
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6b96cb357a2e4debff19770a32af98a767afafa4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066162"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416003"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>Good Clinical, Laboratory, and Manufacturing Practices (GxP)
 
 ## <a name="about-gxp"></a>GxP について
 
-*GxP* という用語は、「ベスト プラクティス」ガイドラインと規定の一般的な略語です。 "x" は、臨床 (GCP)、製造 (GMP)、流通 (GDP)、実験室 (GLP)、農業(GAP) などの特定のフィールドを表します。 単一の規制機関または管理機関はありません。要件は、それぞれの国で類似していますが、各国には独自のガイドラインと規制機関があります。 GxP 規制には、[米国 FDA CFR Title 21 Part 11 ](https://aka.ms/FDA-CFR)および EU における [ EudraLex Volume 4 - GMP ガイドライン、付録 11 ](https://ec.europa.eu/health/documents/eudralex/vol-4_en)で概説されているものが含まれます。
+*GxP* という用語は、「ベスト プラクティス」ガイドラインと規定の一般的な略語です。 "x" は、臨床 (GCP)、製造 (GMP)、流通 (GDP)、実験室 (GLP)、農業 (GAP) などの特定のフィールドを表します。 単一の規制機関または管理機関はありません。要件は、それぞれの国で類似していますが、各国には独自のガイドラインと規制機関があります。 GxP 規制には、[米国食品医薬品局 (FDA) CFR Title 21 Part 11](https://aka.ms/FDA-CFR) および欧州連合 (EU) における [EudraLex Volume 4 - GMP ガイドライン、付録 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) で概説されている要件が含まれます。
 
 規制の目標は、規制対象業界の企業が安全に使用できる製品を製造し、製造プロセス中に厳しい品質基準を満たすことを目的としています。 GxP プロセスを使用するコンピューター化されたシステムは、GxP 要件の準拠の検証が必要であり、システムが要件を満たす能力を実証できる場合に適格と見なされます。
 
@@ -35,7 +35,7 @@ Microsoft は、ライフ サイエンス製品およびサービスの研究、
 
 クラウド サービス プロバイダー向けの GxP 認証はありません。
 
-- Microsoft Azure と Microsoft Office 365 は、ISO 9001 (QMS) やISO/ IEC 27001 (ISMS) など、品質管理と情報セキュリティに関する多くの独立した監査を受けています。 これには、有効性が検証された Microsoft の手続きおよび技術的管理の定期的な監査が含まれます。
+- Microsoft Azure と Microsoft Office 365 は、ISO 9001 (QMS) やISO/ IEC 27001 (ISMS) など、品質管理と情報セキュリティに関する多くの独立した監査を受けています。 このレビューには、有効性が検証された Microsoft の手続きおよび技術的管理の定期的な監査が含まれます。
 - Microsoft の認定評価のアプローチは、International Society for Pharmaceutical Engineering (国際製薬技術協会) (ISPE) の *Good Automated Manufacturing Practices* (GAMP) シリーズや、Pharmaceutical Inspection Co-operation Scheme (医薬品査察協同スキーム) (PIC/S) PI 011-3の「 *Good Practices for Computerized Systems in Regulated GxP Environments*」など、業界のベスト プラクティスにも則っています。
 
 これらの標準とベスト プラクティスは GxP 規制への準拠に特に焦点を合わせていませんが、目的は類似しており、Microsoft クラウド サービスに保存されたデータの機密性、整合性、可用性を保証します。
@@ -47,11 +47,14 @@ Azure および Office 365 で GxP ソリューションを構築するライフ
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
-- [Office 365](https://aka.ms/o365-compliance-framework)
+- Microsoft 365
+- Microsoft Dynamics 365
 
 ## <a name="how-to-implement"></a>実装方法
 
-- [Azure GxP ガイドライン](https://aka.ms/gxpcompliance): GxP のベストプラクティスと規制に準拠した、Azure を使用するための包括的なツールセット。
+- [Microsoft 365 GxP ガイドライン](../downloads/microsoft-365-gxp-guidelines-july-2020.pdf): GxP のベストプラクティスと規制に準拠しながら、Microsoft 365 を使用するためのホワイトペーパー。
+- [Microsoft Dynamics 365 GxP ガイドライン](../downloads/microsoft-dynamics-365-gxp-guidelines-july-2020.pdf): GxP のベストプラクティスと規制に準拠しながら、Microsoft Dynamics 365 を使用するためのホワイトペーパー。
+- [Azure GxP ガイドライン](https://aka.ms/gxpcompliance): GxP のベストプラクティスと規制に準拠しながら、Azure を使用するための包括的なツールセット。
 - [GxP システムで Azure を使用する](https://aka.ms/GXP-Azure-Strategies): ライフサイエンス企業が GxP アプリケーションを構築するための戦略を確立するのに役立ちます。
 - FDA CFR Title 21 第 11 部のガイド：電子記録の FDA ガイドラインに準拠する[ Azure ](https://aka.ms/Azure-FDA-Guidelines)および[ Office 365 ](https://aka.ms/o365-qualification-guideline)認定戦略の確立に関するヘルプをご覧ください。
 

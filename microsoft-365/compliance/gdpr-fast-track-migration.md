@@ -4,7 +4,7 @@ description: Microsoft 技術的なガイダンス - 削除要求を送信する
 keywords: FastTrack 移行、Microsoft 365 Education、Microsoft 365 ドキュメント、GDPR
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 162a64535f82f24411121ed81e36078511eb8eba
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632488"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416913"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>削除要求を送信するための FastTrack 移行ツールセット
 
@@ -73,7 +73,7 @@ Microsoft は、Windows プラットフォームと PowerShell コンソール�
 
 DSR を送信するには、まず、Office 365 認証情報を使用してログインする必要があります。適切な認証情報を入力すれば、全体管理者の状態が検証され、テナント情報が収集されます。 
 
-**Login-FastTrackAccount -ApiKey: \<FastTrack MVM から提供される API キー\>**
+**Login-FastTrackAccount -ApiKey: \<API Key provided by FastTrack MVM\>**
 
 ログインに成功すると、資格情報とキーが保存され、現在の PowerShell セッションの残りの部分に対して FastTrack モジュールで使用されます。
 
