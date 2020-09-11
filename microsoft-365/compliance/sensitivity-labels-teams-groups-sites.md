@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: bbed892481571706d8d43c3fa4d5aff7e9fb4c92
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357789"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427016"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -201,13 +201,13 @@ Outlook on the web では、新しいグループを作成するときに、公�
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>PowerShell を使用して、複数のサイトに秘密度ラベルを適用する
 
-[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) コマンドレットを使用して、現在の [SharePoint Online 管理シェル](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)の *SensitivityLabel* パラメーターによって、多くのサイトに秘密度ラベルを適用できます。 サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
+[Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) と [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) コマンドレットを使用して、現在の [SharePoint Online 管理シェル](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)の *SensitivityLabel* パラメーターによって、多くのサイトに秘密度ラベルを適用できます。 サイトには、任意の SharePoint サイトコレクション、または OneDrive サイトを使用できます。
 
 SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があることを確認します。
 
 1. **[管理者として実行]** オプションを使用して PowerShell セッションを開きます。
 
-2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)、秘密度ラベルとそれらの GUID のリストを取得します。
+2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)、秘密度ラベルとそれらの GUID のリストを取得します。
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -317,7 +317,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
    たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
 
-2. [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) コマンドレットを使用して、機密ラベルおよびその GUID のリストを取得します。
+2. [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label) コマンドレットを使用して、機密ラベルおよびその GUID のリストを取得します。
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -325,7 +325,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 3. Microsoft 365 グループに適用する秘密度ラベルの GUID をメモします。
 
-4. ここでは、別の Windows PowerShell ウィンドウで [Exchange Online PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+4. ここでは、別の Windows PowerShell ウィンドウで [Exchange Online PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 5. 次のコマンドを例として使用して、現在 "一般" の分類を持つグループのリストを取得します。
 
