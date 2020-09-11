@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、Microsoft 365 プランに含まれています。
-ms.openlocfilehash: d4595428dd2e2b14948b9f788720fcadcf9eb895
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: df52d500c945275b62170ab16260f0c019340f73
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336989"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429928"
 ---
 # <a name="choose-between-basic-mobility-and-security-and-intune"></a>基本的なモビリティとセキュリティおよび Intune のどちらかを選択する
 
@@ -31,12 +31,12 @@ Microsoft Intune は、特定の Microsoft 365 プランに含まれているス
 
 |**計画**|**基本的なモビリティとセキュリティ**|**Microsoft Intune**|
 |:-----|:-----|:-----|
-|Microsoft 365 Apps|はい|いいえ|
-|Microsoft 365 Business Basic|はい|いいえ|
-|Microsoft 365 Business Standard|はい|いいえ|
-|Office 365 E1 |はい|いいえ|
-|Office 365 E3 |はい|いいえ|
-|Office 365 E5 |はい|いいえ|
+|Microsoft 365 アプリ|必要|いいえ|
+|Microsoft 365 Business Basic|必要|いいえ|
+|Microsoft 365 Business Standard|必要|いいえ|
+|Office 365 E1 |必要|いいえ|
+|Office 365 E3 |必要|いいえ|
+|Office 365 E5 |必要|いいえ|
 |Microsoft 365 Business Premium |はい|はい|
 |Microsoft 365 Firstline 3 |はい|はい|
 |Microsoft 365 Enterprise E3 |はい|はい|
@@ -61,9 +61,9 @@ Microsoft Intune および組み込みの基本的なモビリティとセキュ
 |**機能領域**|**機能のハイライト**|**基本的なモビリティとセキュリティ**|**Microsoft Intune**|
 |:-----|:-----|:-----|:-----|
 |デバイスの種類|OS プラットフォームと主要な管理モードのバリエーションが異なります。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS<br/>iPad OS|
-|デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 詳細については、「 [基本的なモビリティとセキュリティの機能](capabilities-of-basic-mobility-and-secruity.md)」を参照してください。|はい|
+|デバイスのポリシー準拠|デバイスレベルの PIN ロックや jailbreak の検出などのセキュリティポリシーを設定および管理します。 |Android 9 以降のデバイスの制限。 詳細については、「 [基本的なモビリティとセキュリティの機能](capabilities.md)」を参照してください。|必要|
 |デバイスコンプライアンスに基づく条件付きアクセス |準拠していないデバイスが、クラウドから会社の電子メールやデータにアクセスできないようにします。 |-Windows 10 ではサポートされていません。<br/>-Exchange Online、Sharepoint Online、および Outlook サービスへのアクセスを制御することに制限されています。 |いいえ|
-|デバイス構成  |デバイスの設定を構成します (たとえば、カメラを無効にします)。 |設定の制限されたセット。詳細については、「 [基本的なモビリティとセキュリティの機能](capabilities-of-basic-mobility-and-secruity.md)」を参照してください。 |はい|
+|デバイス構成  |デバイスの設定を構成します (たとえば、カメラを無効にします)。 |設定の制限されたセット。詳細については、「 [基本的なモビリティとセキュリティの機能](capabilities.md)」を参照してください。 |必要|
 |リモート操作  |インターネット経由でデバイスにコマンドを送信します。 たとえば、個人データを保存したまま、従業員のデバイスから Office データを削除します (廃止)。 |破棄<br/>ワイプ<br/>削除|-自動操縦リセット (Windows のみ)<br/>- [Bitlocker キーの回転](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)  (Windows のみ)<br/>- [デリート](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)<br/>- [ライセンス認証](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)   の無効化(iOS のみ)<br/>- [新しい開始](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)  (Windows のみ)<br/>- [フルスキャン](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  (Windows 10 のみ)<br/>- [デバイス](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)   を探す(iOS のみ)<br/>- [失われたモード](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)  (iOS のみ)<br/>- [クイックスキャン](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)(Windows 10 のみ)<br/>- [Android のリモートコントロール](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)<br/>- [リモートロック](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)<br/>- [デバイス名の変更](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)<br/>- [パスコードのリセット](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)<br/>- [再起動](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)  (Windows のみ)<br/>- [削除](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#retire)<br/>-Windows Defender セキュリティインテリジェンスを更新する (Windows のみ)<br/>-Windows 10 PIN リセット (Windows のみ)<br/>- [ふき](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#wipe)<br/>- [カスタム通知](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   を送信する(Android、iOS、iPad OS)<br/>- [デバイスの同期](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)|
 |電子メール プロファイル  |デバイス上にネイティブの電子メールプロファイルをプロビジョニングします。 |はい|はい|
 |WIFI プロファイル |デバイス上にネイティブ WI-FI プロファイルをプロビジョニングします。 |いいえ|はい|

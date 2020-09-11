@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの基本的なモビリティとセキュリティを使用して、登録されているデバイスから情報を削除します。
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336967"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429952"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>基本的なモビリティとセキュリティでモバイルデバイスをワイプする
 
@@ -39,7 +39,7 @@ Microsoft 365 の組み込みの基本的なモビリティとセキュリティ
 
 - **デバイスがワイプされると (工場出荷時のリセットまたは会社データの削除)**、デバイスは管理対象デバイスのリストから削除されます。
     
-- **デバイスを自動的にリセット**する: ユーザーが特定の回数だけデバイスのパスワードを入力しようとして失敗した場合に、自動的に工場でリセットされる基本的なモビリティおよびセキュリティポリシーをセットアップできます。 これを行うには、「 [basic mobility and security でのデバイスセキュリティポリシーの作成](create-device-security-policies-in-basic-mmobility-and-security.md)」の手順を実行します。
+- **デバイスを自動的にリセット**する: ユーザーが特定の回数だけデバイスのパスワードを入力しようとして失敗した場合に、自動的に工場でリセットされる基本的なモビリティおよびセキュリティポリシーをセットアップできます。 これを行うには、「 [basic mobility and security でのデバイスセキュリティポリシーの作成](create-device-security-policies.md)」の手順を実行します。
     
 - デバイスをワイプするときの**ユーザーの利便性を知りたい場合**は、[  [ユーザーとデバイスの影響]](#whats-the-user-and-device-impact)を参照してください。   
 
@@ -91,4 +91,4 @@ Microsoft 365 の組み込みの基本的なモビリティとセキュリティ
 
 ## <a name="related-topics"></a>関連項目
 
-[基本的なモビリティとセキュリティの設定](set-up-basic-mobility-and-security.md)
+[基本的なモビリティとセキュリティの設定](set-up.md)

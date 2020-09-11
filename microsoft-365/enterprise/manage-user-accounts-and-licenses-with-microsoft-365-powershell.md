@@ -16,21 +16,21 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: この記事では、PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する方法について説明します。
-ms.openlocfilehash: a262cbb62cd457e3a22550af2f773551cf67bb43
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: PowerShell を使用して Microsoft 365 のユーザーアカウント、ライセンス、グループを管理する方法について説明します。
+ms.openlocfilehash: 0c6ca6a4165b616097405a9de178c254aa489a3c
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696230"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429988"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>Microsoft 365 ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 管理者の主なタスクの1つは、ユーザーアカウント、ライセンス、およびグループを管理することです。 これらのタスクのほとんどの側面は、Microsoft 365 管理センターでも実行できますが、PowerShell を使用すると、他のタスクがより速く、簡単になります。 
+Microsoft 365 管理者は、ユーザーアカウント、ライセンス、およびグループを管理する必要があります。 これらのタスクのほとんどは Microsoft 365 管理センターで行うことができますが、PowerShell の方が簡単です。
 
-詳細については、以下のトピックを参照してください。
+詳細については、以下の記事を参照してください。
 
 ## <a name="user-accounts"></a>ユーザー アカウント
 
@@ -54,4 +54,3 @@ Microsoft 365 管理者の主なタスクの1つは、ユーザーアカウン�
 ## <a name="groups"></a>グループ
 - [グループ メンバーシップを管理する](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Microsoft 365 グループを管理する](manage-microsoft-365-groups-with-powershell.md)
-
