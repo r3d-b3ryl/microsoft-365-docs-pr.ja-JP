@@ -13,28 +13,28 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
-description: '概要: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。'
-ms.openlocfilehash: aea78d135a5d7ffbb5d8480c549d0fdee88f7d51
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
+ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692075"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430036"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Skype for Business Online 管理者の主要なタスクの 1 つは、ポリシーの管理です。 Microsoft 365 管理センターでもこれらのタスクの一部を実行できますが、他のタスクについては、PowerShell のほうがより早く簡単に実行できます。 
+Skype for Business Online 管理者は、ポリシーの管理を担当します。 これらのタスクの一部は Microsoft 365 管理センターで実行できますが、PowerShell で実行しやすいものもあります。
 
 ## <a name="before-you-start"></a>始める前に
 
-[Skype for Business Online Connector モジュール](https://www.microsoft.com/download/details.aspx?id=39366)をダウンロードしてインストールし、コンピューターを再起動します。
+[Skype for Business Online Windows PowerShell モジュール](https://www.microsoft.com/download/details.aspx?id=39366)をダウンロードしてインストールし、コンピューターを再起動します。
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-name-and-password"></a>Skype for Business Online 管理者のアカウント名とパスワードを使用して接続する
+## <a name="connect-using-skype-for-business-online-admin-credentials"></a>Skype for Business Online の管理者資格情報を使用して接続する
 
-1. Windows PowerShell コマンド プロンプトを開いて次のコマンドを実行します: 
+1. Windows PowerShell コマンド プロンプト ウィンドを開いて次のコマンドを実行します:
     
    ```powershell
    Import-Module SkypeOnlineConnector
@@ -43,12 +43,12 @@ Skype for Business Online 管理者の主要なタスクの 1 つは、ポリシ
    Import-PSSession $sfbSession
    ```
 
-2. [**Windows PowerShell 資格情報の要求**] ダイアログ ボックスに Skype for Business Online 管理者のアカウント名とパスワードをを入力し、[**OK**] をクリックします。
+2. [**Windows PowerShell 資格情報の要求**] ダイアログ ボックスに Skype for Business Online 管理者のアカウント名とパスワードを入力し、[**OK**] を選択します。
 
 
-## <a name="connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication"></a>多要素認証で Skype for Business Online 管理者アカウントを使用して接続する
+## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>多要素認証の管理者アカウントを使用して接続する
 
-1. Windows PowerShell コマンド プロンプトを開いて次のコマンドを実行します:
+1. Windows PowerShell コマンド プロンプト ウィンドを開いて次のコマンドを実行します:
 
    ```powershell
    Import-Module SkypeOnlineConnector
@@ -58,11 +58,11 @@ Skype for Business Online 管理者の主要なタスクの 1 つは、ポリシ
 
 2. **New-CsOnlineSession** コマンドでダイアログ ボックスが表示されたら、Skype for Business Online 管理者のアカウント名を入力します。
 
-3. [**アカウントにサインイン**] ダイアログ ボックスで、Skype for Business Online 管理者のパスワードを入力し、[**サインイン**] をクリックします。
+3. [**アカウントにサインイン**] ダイアログ ボックスで、Skype for Business Online 管理者のパスワードを入力し、[**サインイン**] を選択します。
 
-4. [**アカウントにサインイン**] ダイアログ ボックスの手順に従い、確認コードなどのその他の認証情報を入力し、[**確認**] をクリックします。
+4. [**アカウントにサインイン**] ダイアログ ボックスで手順に従い、確認コードなどのその他の認証情報を追加し、[**確認**] を選択します。
 
-詳細については、次のトピックをご覧ください。
+詳しくは、以下を参照してください。
   
 - [PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-policies-with-microsoft-365-powershell.md)
     
@@ -75,4 +75,3 @@ Skype for Business Online 管理者の主要なタスクの 1 つは、ポリシ
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)
 
 [Skype for Business PowerShell のコマンドレット リファレンス](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
-

@@ -525,7 +525,7 @@
 - name: PowerShell で Microsoft 365を管理する
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items:
-    - name: はじめに
+    - name: 作業の開始
       href: getting-started-with-microsoft-365-powershell.md
       items:
         - name: PowerShell を使用する理由
@@ -582,7 +582,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Microsoft 365 グループを管理する
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: SharePoint Online を管理する
+    - name: SharePoint を管理する
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items:
         - name: SharePoint Online サイトを作成し、ユーザーを追加する
@@ -593,7 +593,7 @@
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Exchange Online を管理する
       href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
-    - name: Microsoft 365 へのメール移行に PowerShell を使用する
+    - name: メールを Microsoft 365 に移行するには、PowerShell を使用します。
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items:
         - name: Microsoft 365 への一括移行に PowerShell を使用する

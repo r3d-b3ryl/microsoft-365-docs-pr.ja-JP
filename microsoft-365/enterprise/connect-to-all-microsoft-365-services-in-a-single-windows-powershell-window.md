@@ -3,7 +3,7 @@ title: 単一の PowerShell ウィンドウですべての Microsoft 365 サー�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/26/2020
+ms.date: 09/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
-ms.openlocfilehash: af676434017cbe7025baa5e8509e6203a5d59674
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 08d2f4c6ce67aa9fea196d56b2eb5f36a36d7943
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307627"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47430048"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 
@@ -39,7 +39,7 @@ PowerShell を使用して Microsoft 365 を管理する場合は、ユーザー
 
 PowerShell の単一のインスタンスからすべての Microsoft 365 を管理する前に、次の前提条件を考慮してください。
   
-- これらの手順に使用する Microsoft 365 の職場または学校のアカウントは、Microsoft 365 管理者ロールのメンバーである必要があります。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide) を参照してください。 これは Microsoft 365向け PowerShell の要件であり、他のすべての Microsoft 365 サービスについては必ずしも当てはまりません。
+- これらの手順に使用する Microsoft 365 の職場または学校のアカウントは、Microsoft 365 管理者ロールのメンバーである必要があります。 詳細については、[「管理者の役割について」](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) を参照してください。 これは Microsoft 365向け PowerShell の要件であり、他のすべての Microsoft 365 サービスについては必ずしも当てはまりません。
     
 - 次の Windows の 64 ビット バージョンを使用できます。
     
@@ -66,7 +66,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
    - [Skype for Business Online、PowerShell モジュール](https://go.microsoft.com/fwlink/p/?LinkId=532439)
-   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
+   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Teams PowerShell の概要](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
 -  Skype for Business Online やセキュリティ&amp;コンプライアンス センターに対して署名付きスクリプトを実行するよう PowerShell を構成する必要があります。 そのためには、管理者特権の PowerShell セッション (**[管理者として実行]** を選択して開く PowerShell ウィンドウ) で、次のコマンドを実行します。
@@ -74,6 +74,12 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    ```powershell
    Set-ExecutionPolicy RemoteSigned
    ```
+
+## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Exchange Online およびセキュリティ &amp; コンプライアンス センターと Exchange Online PowerShell V2 モジュール
+
+この記事では、Exchange Online PowerShell V2 モジュールを使用して、Exchange Online とセキュリティ &amp; コンプライアンス センターの両方に接続します。 ただし、現時点では、**同じ PowerShell ウィンドウで** Exchange Online とセキュリティ &amp; コンプライアンス センターの両方に接続することはできません。
+
+したがって、複数の Microsoft 365 サービスの PowerShell ウィンドウを構成する場合は、Exchange Online *または*セキュリティ &amp; コンプライアンス センターとの接続を選択する必要があります。
 
 ## <a name="connection-steps-when-using-just-a-password"></a>パスワードだけを使用する場合の接続手順
 
@@ -93,14 +99,14 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    Connect-AzureAD -Credential $credential
    ```
   
-   また、PowerShell モジュール用の Microsoft Azure Active Directory モジュールを使用する場合には、次のコマンドを実行します。
+   または、Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュールを使用する場合、次のコマンドを実行します。
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > PowerShell Core は、PowerShell モジュール用の Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。 これらのコマンドレットを引き続き使用するには、PowerShell から実行する必要があります。
+   > PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。 これらのコマンドレットを引き続き使用するには、PowerShell から実行する必要があります。
 
 4. 次のコマンドを実行して、SharePoint Online に接続します。 ドメインの組織名を指定します。 たとえば、"litwareinc.onmicrosoft.com" の場合、組織名の値は "litwareinc" です。
     
@@ -120,13 +126,25 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
 6. 次のコマンドを実行して、Exchange Online に接続します。
     
    ```powershell
+   Import-Module ExchangeOnlineManagement
    Connect-ExchangeOnline -Credential $credential -ShowProgress $true
    ```
 
    > [!Note]
-   > 全世界以外の Exchange Online for Microsoft 365 クラウドに接続するには、**-ExchangeEnvironmentName** パラメーターを使用します。 詳細については、[「Connect-ExchangeOnline」](https://docs.microsoft.com/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps) を参照してください。
+   > 全世界以外の Exchange Online for Microsoft 365 クラウドに接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」をご覧ください。
 
-7. 次のコマンドを実行して、Teams PowerShell に接続します。
+7. あるいは、次のコマンドを実行して、セキュリティ &amp; コンプライアンス センター に接続します。
+    
+   ```powershell
+   $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
+   Import-Module ExchangeOnlineManagement
+   Connect-IPPSSession -UserPrincipalName $acctName
+   ```
+
+   > [!Note]
+   > Microsoft 365 クラウド向けセキュリティ &amp; コンプライアンス センターに接続するには、[「セキュリティ/コンプライアンス センター PowerShell に接続する」](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) を参照してください。
+
+8. 次のコマンドを実行して、Teams PowerShell に接続します。
     
    ```powershell
    Import-Module MicrosoftTeams
@@ -134,19 +152,12 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    ```
   
    > [!Note]
-   > 全世界以外の Microsoft Teams クラウドに接続する方法については、[「Connect-MicrosoftTeams」](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams?view=teams-ps)を参照してください。
+   > 全世界以外の Microsoft Teams クラウドに接続する方法については、[「Connect-MicrosoftTeams」](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)を参照してください。
 
-8. 次のコマンドを実行して、セキュリティ &amp; コンプライアンス センター に接続します。
-    
-   ```powershell
-   $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
-   Import-PSSession $SccSession -Prefix cc
-   ```
 
-   > [!Note]
-   > Microsoft 365 クラウド向けセキュリティ &amp; コンプライアンス センターに接続するには、[「セキュリティ/コンプライアンス センター PowerShell に接続する」](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) を参照してください。
+### <a name="azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュール
 
-Azure Active Directory PowerShell for Graph モジュールを使用しているときに、単一のブロック内のすべてのコマンドがあります。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
+以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用する場合の、単一のブロック内の*セキュリティ &amp; コンプライアンス センターを除く*すべてのサービスのコマンドです。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -157,14 +168,33 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $crede
 Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
-$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $SccSession -Prefix cc
+Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -Credential $credential -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-または、PowerShell モジュール用の Microsoft Azure Active Directory モジュールを使用しているときに、ここには単一のブロック内のすべてのコマンドがあります。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
+以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用する場合の、単一のブロック内の *Exchange Online を除く*すべてのサービスのコマンドです。 ドメイン ホストの名前とサインインの UPN を指定してから、それらすべてを同時に実行します。
+  
+```powershell
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
+$credential = Get-Credential -UserName $acctName
+Connect-AzureAD -Credential $credential
+Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
+Import-Module SkypeOnlineConnector
+$sfboSession = New-CsOnlineSession -Credential $credential
+Import-PSSession $sfboSession
+Import-Module ExchangeOnlineManagement
+Connect-IPPSSession -UserPrincipalName $acctName
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
+```
+
+### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュール
+
+以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する場合の、単一のブロック内の*セキュリティ &amp; コンプライアンス センターを除く*すべてのサービスのコマンドです。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -175,22 +205,34 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $crede
 Import-Module SkypeOnlineConnector
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
-$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication "Basic" -AllowRedirection
-Import-PSSession $SccSession -Prefix cc
+Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -Credential $credential -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-PowerShell ウィンドウを閉じる準備が整った段階で次のコマンドを実行し、Skype for Business Online、SharePoint Online、セキュリティ&amp;コンプライアンス センター、Teams に対するアクティブなセッションを削除します。
+以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する場合の、単一のブロック内の *Exchange Online を除く*すべてのサービスのコマンドです。 ドメイン ホストの名前とサインインの UPN を指定してから、それらすべてを同時に実行します。
   
 ```powershell
-Remove-PSSession $sfboSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
+$credential = Get-Credential -UserName $acctName
+Connect-AzureAD -Credential $credential
+Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
+Import-Module SkypeOnlineConnector
+$sfboSession = New-CsOnlineSession -Credential $credential
+Import-PSSession $sfboSession
+Import-Module ExchangeOnlineManagement
+Connect-IPPSSession -UserPrincipalName $acctName
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams -Credential $credential
 ```
-
 ## <a name="connection-steps-when-using-multi-factor-authentication"></a>多要素認証を使用する場合の接続手順
 
-ここでは、Azure AD、SharePoint Online、Skype for Business、Exchange Online、および Azure Active Directory PowerShell for Graph モジュールを使用する単一のウィンドウ内で多要素認証を使用する Teams に接続するすべてのコマンドを示します。 ユーザー アカウントのユーザー プリンシパル名 (UPN)、およびドメインのホスト名を指定し、一度にそれらを実行します。
+### <a name="azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュール
+
+以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用した多要素認証を使用して、*セキュリティ &amp; コンプライアンス センターを除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -203,13 +245,34 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 #Exchange Online
+Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 #Teams
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
+以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用した多要素認証を使用して、*Exchange Online を除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
-また、ここには PowerShell モジュール用の Microsoft Azure Active Directory モジュールを使用する場合のすべてのコマンドがあります。
+```powershell
+$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+#Azure Active Directory
+Connect-AzureAD
+#SharePoint Online
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com
+#Skype for Business Online
+$sfboSession = New-CsOnlineSession -UserName $acctName
+Import-PSSession $sfboSession
+#Security & Compliance Center
+Import-Module ExchangeOnlineManagement
+Connect-IPPSSession -UserPrincipalName $acctName
+#Teams
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
+```
+### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Windows PowerShell 用 Microsoft Azure Active Directory モジュール
+
+以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用した多要素認証を使用して、*セキュリティ &amp; コンプライアンス センターを除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -222,13 +285,40 @@ Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 #Exchange Online
+Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 #Teams
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
+以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用した多要素認証を使用して、*Exchange Online を除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
-セキュリティ &amp; コンプライアンス センター向けに、多要素認証を使用して接続する方法は、[「多要素認証を使用してセキュリティ/コンプライアンス センター PowerShell に接続する」](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) を参照してください。
+```powershell
+$acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
+$orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
+#Azure Active Directory
+Connect-MsolService
+#SharePoint Online
+Connect-SPOService -Url https://$orgName-admin.sharepoint.com
+#Skype for Business Online
+$sfboSession = New-CsOnlineSession -UserName $acctName
+Import-PSSession $sfboSession
+#Security & Compliance Center
+Import-Module ExchangeOnlineManagement
+Connect-IPPSSession -UserPrincipalName $acctName
+#Teams
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
+```
+
+## <a name="close-the-powershell-window"></a>PowerShell ウィンドウを閉じる
+
+PowerShell ウィンドウを閉じる準備が整った段階で次のコマンドを実行し、Skype for Business Online、および Teams に対するアクティブなセッションを削除します。
+  
+```powershell
+Remove-PSSession $sfboSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
+```
+
 
 ## <a name="see-also"></a>関連項目
 

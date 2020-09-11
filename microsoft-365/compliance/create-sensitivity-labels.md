@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Information Protection ソリューションの要件: 組織のドキュメントやメールを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 71e7724873a783f72e8a4088e85f82be68ae75f8
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560512"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427006"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -71,7 +71,7 @@ ms.locfileid: "46560512"
 
 既存のラベルを編集するには、目的のラベルを選択し、[**ラベルの編集**] ボタンを選択します。
 
-![秘密度ラベルを編集する](../media/edit-sensitivity-label-full.png)
+![[ラベルの編集] ボタンを押して、秘密度ラベルを編集する](../media/edit-sensitivity-label-full.png)
 
 このボタンを選択すると、[**秘密度ラベルの編集**] ウィザードが起動し、手順 3 のすべてのラベル設定を変更できます。
 
@@ -87,7 +87,7 @@ ms.locfileid: "46560512"
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell を含むその他のラベル設定
 
-[セキュリティ/コンプライアンス センターの PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) の [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) コマンドレットを使ってその他のラベル設定を使用できます。
+[セキュリティ/コンプライアンス センターの PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) の [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label) コマンドレットを使ってその他のラベル設定を使用できます。
 
 例として以下のようなものがあります。
 
@@ -107,7 +107,7 @@ Azure Information Protection 統合ラベリングクライアントの場合の
 
 サポートする必要がある言語については、Office の[言語識別子](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (言語タグとも呼ばれます) を使用して、ラベル名とツールヒントの独自の翻訳を指定します。
 
-PowerShell でコマンドを実行する前に、最初に[セキュリティ/コンプライアンス センターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)する必要があります。
+PowerShell でコマンドを実行する前に、最初に[セキュリティ/コンプライアンス センターの PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)する必要があります。
 
 
 ```powershell
@@ -178,22 +178,22 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>セキュリティ/コンプライアンス センターの PowerShell を含むその他のラベル ポリシー設定
 
-[セキュリティ/コンプライアンス センター](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) PowerShell の [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) コマンドレットを使用すると、追加のラベルポリシー設定を利用できます。
+[セキュリティ/コンプライアンス センター](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) PowerShell の [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) コマンドレットを使用すると、追加のラベルポリシー設定を利用できます。
 
 Azure Information Protection 統合ラベル付けクライアントの場合のみ、Outlook に別の既定のラベルを設定するなどの[詳細設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)を指定し、送信される電子メールを警告、正当化、またはブロックするポップアップメッセージを実装できます。 完全なリストについては、このクライアントの管理ガイドの [[利用できるラベルの詳細設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)] を参照してください。
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>機密ラベルとそのポリシーに PowerShell を使用する
 
-[セキュリティ / コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) を使用して、ラベル管理センターに表示されるすべての設定を作成し、構成できるようになりました。 つまり、ラベル管理センターでは使用できない設定に PowerShell を使用することに加えて、機密ラベルと機密ラベルポリシーの作成とメンテナンスを完全にスクリプト化できるようになりました。 
+[セキュリティ / コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) を使用して、ラベル管理センターに表示されるすべての設定を作成し、構成できるようになりました。 つまり、ラベル管理センターでは使用できない設定に PowerShell を使用することに加えて、機密ラベルと機密ラベルポリシーの作成とメンテナンスを完全にスクリプト化できるようになりました。 
 
 サポートされるパラメーターと値については、次のドキュメントを参照してください。
 
-- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
-- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
-- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
-- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label)
+- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy)
 
-機密ラベルまたは機密ラベルポリシーの削除をスクリプト化する必要がある場合は、 [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) および [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps) を使用することもできます。 ただし、機密ラベルを削除する前に、次のセクションを必ずお読みください。
+機密ラベルまたは機密ラベルポリシーの削除をスクリプト化する必要がある場合は、 [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label) および [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy) を使用することもできます。 ただし、機密ラベルを削除する前に、次のセクションを必ずお読みください。
 
 ## <a name="removing-and-deleting-labels"></a>ラベルの解除と削除
 
