@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft の予約についてよく寄せられる質問。
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419909"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545718"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 予約のよく寄せられる質問
 
@@ -41,11 +41,11 @@ Microsoft 365 Business Premium、A3、A5、E3、E5、または管理者のいず
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>自分の Web サイトで予約を使用できますか。
 
-はい、できます。 IFrame を使用してサイトに予約予定表を埋め込む方法が提供されています。 リンクの埋め込みコードは、予約アプリの [ **予約ページ** ] タブにあります。
+はい。 IFrame を使用してサイトに予約予定表を埋め込む方法が提供されています。 リンクの埋め込みコードは、予約アプリの [ **予約ページ** ] タブにあります。
 
 ### <a name="can-i-use-bookings-even-if-i-dont-have-a-web-page-for-my-business"></a>ビジネス用の Web ページがない場合でも予約を使用できますか。
 
-はい、できます。 Web アプリの [ **予約ページ** ] タブ内に予約ページへのリンクを提供します。 お客様またはクライアントに対してそのリンクを提供するだけで、ビジネスのための最新の空き時間情報を表示することができます。 または、ソーシャルメディアで予約ページを共有したり、埋め込み機能を使用して iFrame でそれをホストしたりすることもできます。 また、ダイレクト検索エンジンのインデックス作成を無効にして、組織内のアクセスを制限することで、ページにアクセスできるユーザーを制御することもできます。
+はい。 Web アプリの [ **予約ページ** ] タブ内に予約ページへのリンクを提供します。 お客様またはクライアントに対してそのリンクを提供するだけで、ビジネスのための最新の空き時間情報を表示することができます。 または、ソーシャルメディアで予約ページを共有したり、埋め込み機能を使用して iFrame でそれをホストしたりすることもできます。 また、ダイレクト検索エンジンのインデックス作成を無効にして、組織内のアクセスを制限することで、ページにアクセスできるユーザーを制御することもできます。
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>IT 部門はエンドユーザーが予約にアクセスできるかどうかを制御できますか。
 
@@ -124,11 +124,11 @@ OWA メールボックスポリシーを使用して予約へのアクセスを�
 
 ### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>従業員は、Microsoft 365 アカウントなしで予約を使用できますか?
 
-はい、できます。 任意の電子メールを使用してスタッフを追加しても、他のユーザーが予定を持っているときに、電子メールの確認と予定表の出席依頼を受け取ることができます。
+はい。 任意の電子メールを使用してスタッフを追加しても、他のユーザーが予定を持っているときに、電子メールの確認と予定表の出席依頼を受け取ることができます。
 
 ### <a name="can-i-create-more-than-one-bookings-calendar-under-the-same-microsoft-365-account-and-switch-between-them"></a>同じ Microsoft 365 アカウントで複数の予約予定表を作成し、それらを切り替えることはできますか。
 
-はい、できます。 1つのアカウントで複数の予約予定表を作成して管理することができます。 予約 Web アプリの会社名の横にあるキャレットを使用して、それらを切り替えることができます。
+はい。 1つのアカウントで複数の予約予定表を作成して管理することができます。 予約 Web アプリの会社名の横にあるキャレットを使用して、それらを切り替えることができます。
 
 ### <a name="what-if-my-organization-has-mixed-licenses-with-f1f3-e1-and-e3e5"></a>組織で、F1/F3、E1、および E3/E5 とのライセンスが混在している場合はどうなりますか。
 
@@ -180,7 +180,7 @@ Skype または Microsoft Teams クライアントを使用している場合、
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>電子メール通知はテナントのドメイン名として送信できますか?
 
-電子メールアドレスは、Microsoft 365 設定レベルで制御および管理され、そこにあるドメイン構成設定に依存します。 詳細については、 [こちら](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)を参照してください。
+電子メールアドレスは、Microsoft 365 設定レベルで制御および管理され、そこにあるドメイン構成設定に依存します。 詳細については、 [こちら](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)を参照してください。
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>異なるサービスまたは特定の構成に依存する SMS メッセージを送信する機能はありますか。
 
@@ -200,7 +200,7 @@ Skype または Microsoft Teams クライアントを使用している場合、
 
 ### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>予定表を非公開にすることはできますが (公開はできません)、指定されたユーザーが引き続きアクセスできますか。
 
-はい、できます。 Web アプリの [予約ページ] タブにあるチェックボックス: **Microsoft 365 または Office 365 アカウントを組織から予約する必要**があります。 このチェックボックスをオンにすると、セルフサービスページアクセスがテナント内のユーザーにのみ制限されます。 Web アプリの作成と管理に含まれる予約予定表は、管理者または閲覧者の役割を持つページにスタッフとして追加された個人のみがアクセスできます。
+はい。 Web アプリの [予約ページ] タブにあるチェックボックス: **Microsoft 365 または Office 365 アカウントを組織から予約する必要**があります。 このチェックボックスをオンにすると、セルフサービスページアクセスがテナント内のユーザーにのみ制限されます。 Web アプリの作成と管理に含まれる予約予定表は、管理者または閲覧者の役割を持つページにスタッフとして追加された個人のみがアクセスできます。
 
 :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のページのアクセス制御":::
 
@@ -366,7 +366,7 @@ SMS テキストメッセージが有効になっている予定を予約する�
 
   - [予約ページのカスタマイズと公開](customize-booking-page.md)
 
-  - [テナントメールボックスの構成](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [テナントメールボックスの構成](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [グループ予約](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

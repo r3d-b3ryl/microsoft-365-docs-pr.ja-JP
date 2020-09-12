@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 の条件付きアクセスをサポートするプラットフォーム、クライアント、および Powershell モジュールについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2245b8fe9b235013bccc9ea2b80d6b6c86448a89
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: fd4dcaeda27f12427f3175b7ec52e2fdb0c153da
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332018"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546514"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Microsoft 365 クライアントアプリケーションのサポート-条件付きアクセス
 
@@ -54,13 +54,13 @@ Microsoft 365 でのプラットフォームサポートの詳細については
 | ![OneNote アイコン](../media/o365-OneNote-64x64.png) <br> [OneNote](https://products.office.com/onenote) | ![Outlook アイコン](../media/o365-outlook-64x64.png) <br> [Outlook](https://products.office.com/outlook) | ![Planner アイコン](../media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![PowerApps アイコン](../media/o365-powerapps-64x64.png) <br> [PowerApps](https://powerapps.microsoft.com) | ![電源の自動化アイコン](../media/o365-flow-64x64.png) <br> [電源の <br> 自動化](https://flow.microsoft.com)
 | ![PowerBI アイコン](../media/o365-powerbi-64x64.png) <br> [Power BI](https://powerbi.microsoft.com) | ![PowerPoint アイコン](../media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) | ![Project アイコン](../media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher アイコン](../media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint アイコン](../media/o365-sharepoint-64x64.png) <br> [Sharepoint](https://products.office.com/sharepoint) 
 | ![Skype for Business アイコン](../media/o365-skypeforbusiness-64x64.png) <br> [Skype for <br> business](https://www.skype.com/business/) | ![付箋アイコン](../media/o365-stickynotes-64x64.png) <br> [付箋](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw) | ![Stream アイコン](../media/o365-stream-64x64.png) <br> [Stream](https://stream.microsoft.com) | ![Sway アイコン](../media/o365-sway-64x64.png) <br> [Sway](https://sway.com) | ![Teams アイコン](../media/o365-teams-64x64.png) <br> [Teams](https://products.office.com/microsoft-teams/group-chat-software) 
-| ![To Do アイコン](../media/o365-todo-64x64.png) <br> [やるべきこと](https://todo.microsoft.com) | ![Visio アイコン](../media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Word アイコン](../media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer アイコン](../media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
+| ![To Do アイコン](../media/o365-todo-64x64.png) <br> [To Do](https://todo.microsoft.com) | ![Visio アイコン](../media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Word アイコン](../media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) | ![Yammer アイコン](../media/o365-yammer-64x64.png) <br> [Yammer](https://products.office.com/yammer/yammer-overview)
 
 ## <a name="supported-powershell-modules"></a>サポートされている PowerShell モジュール
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Azure アイコン](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange アイコン](../media/o365-exchange-64x64.png) <br> [Exchange Online の <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![SharePoint アイコン](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Azure アイコン](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange アイコン](../media/o365-exchange-64x64.png) <br> [Exchange Online の <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![SharePoint アイコン](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> 近日中に入手可能な OneDrive 上の OneDrive でサポートされています。

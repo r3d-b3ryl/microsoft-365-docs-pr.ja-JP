@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事には、Microsoft 365 メールボックスの移行と、移行に使用されるコマンドレットの一覧についての簡単な概要が記載されています。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 86681cbca6f0899268ce11e233e8781619cb18e3
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 63080643e4994d6b16e77298907725a827997cef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332318"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546800"
 ---
 # <a name="microsoft-365-mailbox-migrations"></a>Microsoft 365 メールボックスの移行
 
@@ -29,14 +29,14 @@ Exchange ベースのハイブリッド展開では、オンプレミスの Exch
 
 お客様は、次のコマンドレットを使用して、メールボックスの移行に関する統計情報やその他の情報を確認できます。
 
-- [Get-moverequeststatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MoveRequestStatistics?view=exchange-ps): ユーザーメールボックスの既定の統計情報を提供します。これには、ステータス、メールボックスのサイズ、アーカイブメールボックスのサイズ、完了率が含まれます。
-- [Get メールボックス](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox?view=exchange-ps
+- [Get-moverequeststatistics](https://docs.microsoft.com/powershell/module/exchange/get-moverequeststatistics): ユーザーメールボックスの既定の統計情報を提供します。これには、ステータス、メールボックスのサイズ、アーカイブメールボックスのサイズ、完了率が含まれます。
+- [Get メールボックス](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-Mailbox
 ): 組織内のメールボックスオブジェクトと属性の要約リストを提供します。
-- [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/Get-Recipient?view=exchange-ps): メールボックス、メールユーザー、連絡先、配布グループなどの既存のメールが有効なオブジェクトの一覧を提供します。
-- [New-moverequest](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MoveRequest?view=exchange-ps): 継続的なメールボックスの移行の詳細な状態を提供します。
-- [MigrationUser](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationUser?view=exchange-ps): メールボックスの移動と移行のユーザーに関する情報を提供します。
-- [New-migrationbatch](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationBatch?view=exchange-ps): 現在の移行バッチの状態に関する情報を提供します。
-- [Get-migrationuserstatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/Get-MigrationUserStatistics?view=exchange-ps): 特定のユーザーの移行状態に関する詳細情報を提供します。
-- [Get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Get-MailboxStatistics?view=exchange-ps): サイズ、メッセージ数、最終アクセス日時などのメールボックスに関する情報を提供します。
+- [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/get-recipient): メールボックス、メールユーザー、連絡先、配布グループなどの既存のメールが有効なオブジェクトの一覧を提供します。
+- [New-moverequest](https://docs.microsoft.com/powershell/module/exchange/get-moverequest): 継続的なメールボックスの移行の詳細な状態を提供します。
+- [MigrationUser](https://docs.microsoft.com/powershell/module/exchange/get-migrationuser): メールボックスの移動と移行のユーザーに関する情報を提供します。
+- [New-migrationbatch](https://docs.microsoft.com/powershell/module/exchange/get-migrationbatch): 現在の移行バッチの状態に関する情報を提供します。
+- [Get-migrationuserstatistics](https://docs.microsoft.com/powershell/module/exchange/get-migrationuserstatistics): 特定のユーザーの移行状態に関する詳細情報を提供します。
+- [Get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics): サイズ、メッセージ数、最終アクセス日時などのメールボックスに関する情報を提供します。
 
-コマンドレットの詳細については、「 [移動と移行のコマンドレット (Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps))」を参照してください。
+コマンドレットの詳細については、「 [移動と移行のコマンドレット (Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))」を参照してください。

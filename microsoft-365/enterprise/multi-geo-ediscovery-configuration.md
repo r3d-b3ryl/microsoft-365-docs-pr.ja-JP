@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: 地域パラメーターを使用して、Microsoft 365 複数地域でサテライトの場所で使用する電子情報開示を構成する方法について説明します。
-ms.openlocfilehash: 83141f824c76ca5531e1b390b91adcdb4f3874de
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691787"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547952"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 Multi-Geo 電子情報開示の構成
 
@@ -35,7 +35,7 @@ Microsoft 365 全体管理者は、別のユーザーが電子情報開示を実
 
 地域のコンプライアンス セキュリティ フィルターを設定するには:
 
-1. [Microsoft 365 セキュリティ/コンプライアンス センター PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Microsoft 365 セキュリティ/コンプライアンス センター PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. 次の構文を使用してください。
 
@@ -49,4 +49,4 @@ Microsoft 365 全体管理者は、別のユーザーが電子情報開示を実
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-追加のパラメーターと構文については、「[New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter)」の記事を参照してください。
+追加のパラメーターと構文については、「[New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter)」の記事を参照してください。

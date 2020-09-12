@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーによって作成されたセルフサービスの購入を管理する方法について説明します。
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430000"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546676"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
@@ -38,13 +38,13 @@ ms.locfileid: "47430000"
 ## <a name="view-self-service-subscriptions"></a>セルフサービスサブスクリプションを表示する
 
 1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. [ **結果の絞り込み**] の横にある [ **アカウントの種類** ] ドロップダウンから、[ **セルフサービス**] を選択します。
+2. [ **製品** ] タブで、フィルターアイコンを選択し、[ **セルフサービス**] を選択します。
 3. サブスクリプションの詳細を表示するには、一覧から1つを選択します。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>セルフサービス購入サブスクリプションのライセンスを持っているユーザーを表示する
 
 1. 管理センターで、[**課金**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
-2. [フィルター] アイコンを選択し、[ **セルフサービス**] を選択します。
+2. フィルターアイコンを選択し、[ **セルフサービス**] を選択します。
 3. ユーザーに割り当てられているライセンスを確認するには、製品を選択します。
     > [!NOTE]
     > 製品に対して複数の購入がある場合、その製品は一度だけ表示され、[ **利用可能な数量** ] 列には、その製品に対して購入されたすべてのサブスクリプションの合計が表示されます。
@@ -67,13 +67,12 @@ ms.locfileid: "47430000"
 
 セルフサービス購入に割り当てられているユーザーの既存のライセンスを割り当てたり、既存の契約を使用して追加のサブスクリプションを購入したりすることができます。 これらの集中的に購入したライセンスを割り当てた後、purchasers に既存のサブスクリプションをキャンセルするよう要求することができます。
 
-1. グローバル管理者または課金管理者アカウントを使用して、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a> にサインインします。
-2. [**請求**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">書サービス</a>] ページに移動します。
-3. 購入する製品を見つけて選択し、[ **購入**] を選択します。
-4. 残りの手順を実行して、購入を完了します。
-5. 手順6で参照するユーザーの一覧をエクスポートするには、「 [セルフサービスで購入したサブスクリプションのライセンスを表示](#view-who-has-licenses-for-a-self-service-purchase-subscription) する」の手順を実行します。
-6. 他のサブスクリプションにライセンスを持つすべてのユーザーにライセンスを割り当てます。 詳細な手順については、「 [ユーザーへのライセンスの割り当て](../../admin/manage/assign-licenses-to-users.md)」を参照してください。
-7. セルフサービス購入サブスクリプションを購入したユーザーに連絡して、それを取り消すように依頼します。
+1. 管理センターで、[ **請求** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">書購入サービス</a> ] ページに移動します。
+2. 購入する製品を見つけて選択し、[ **購入**] を選択します。
+3. 残りの手順を実行して、購入を完了します。
+4. 次の手順で参照するユーザーの一覧をエクスポートするには、「 [セルフサービスで購入したサブスクリプションのライセンスを表示](#view-who-has-licenses-for-a-self-service-purchase-subscription) する」の手順に従います。
+5. 他のサブスクリプションにライセンスを持つすべてのユーザーにライセンスを割り当てます。 詳細な手順については、「 [ユーザーへのライセンスの割り当て](../../admin/manage/assign-licenses-to-users.md)」を参照してください。
+6. セルフサービス購入サブスクリプションを購入したユーザーに連絡して、 [それを取り消す](manage-self-service-purchases-users.md#cancel-a-subscription)ように依頼します。
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>セルフサービス購入サブスクリプションを引き継ぐ
 

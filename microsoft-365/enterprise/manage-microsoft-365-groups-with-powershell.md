@@ -21,15 +21,15 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: この記事では、PowerShell での Microsoft 365 グループの一般的な管理タスクの実行方法について説明します。
-ms.openlocfilehash: a9c25fc4fbc2fb1f39c6e7b9e7e5de0e778fd513
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a02990b2890d9fdfd523209e1d912aafdaeac091
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691750"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547928"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell を使用して Microsoft 365 グループを管理する
- 
+
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 この記事では、Microsoft PowerShell でグループの一般的な管理タスクを行うための手順について説明します。 また、グループの PowerShell コマンドレットを示します。 SharePoint サイトを管理する方法の詳細については、「[PowerShell を使用して SharePoint Online サイトを管理する](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)」を参照してください。
@@ -38,34 +38,31 @@ ms.locfileid: "46691750"
 <a name="BK_LinkToGuideLines"> </a>
 
 ユーザーが [Outlook でグループを作成または編集](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)するときに、組織での使用に関するガイドラインへのリンクをそのユーザーに表示することができます。 たとえば、グループ名に特定のプレフィックスまたはサフィックスを追加する必要がある場合があります。
-  
-Azure Active Directory (Azure AD) PowerShell を使用して、Microsoft 365 グループの組織の使用ガイドラインをユーザーに示します。 「[グループの設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?LinkID=827484)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 AAD コマンドレットを実行すると、ユーザーが Outlook でグループを作成または編集するときに、ガイドラインへのリンクが表示されます。 
-  
+
+Azure Active Directory (Azure AD) PowerShell を使用して、Microsoft 365 グループの組織の使用ガイドラインをユーザーに示します。 「[グループの設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?LinkID=827484)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 AAD コマンドレットを実行すると、ユーザーが Outlook でグループを作成または編集するときに、ガイドラインへのリンクが表示されます。
+
 ![使用ガイドラインのリンクがある新しいグループを作成する](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
-  
+
 ![グループ使用ガイドラインをクリックして、組織の Office 365 グループのガイドラインを参照する](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
-  
+
 ## <a name="allow-users-to-send-as-the-microsoft-365-group"></a>ユーザーが Microsoft 365 グループとして送信できるようにする
 <a name="BK_LinkToGuideLines"> </a>
-  
-Microsoft 365 グループを [送信者として送信] にできるようにする場合は、この機能を構成するために、 [アドインのアクセス許可](https://docs.microsoft.com/powershell/module/exchange/Add-RecipientPermission) と対象ユーザーの [アクセス許可](https://docs.microsoft.com/powershell/module/exchange/Get-Recipient) のコマンドレットを使用します。 この設定を有効にすると、Microsoft 365 グループのユーザーは、Outlook または web 上の Outlook を使用して、Microsoft 365 グループとして電子メールを送信および返信できます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。 
+
+Microsoft 365 グループを "送信元" にできるようにする場合は、この機能を構成するために、 [アドインのアクセス許可](https://docs.microsoft.com/powershell/module/exchange/add-recipientpermission) と [受信者アクセス許可](https://docs.microsoft.com/powershell/module/exchange/get-recipientpermission) のコマンドレットを使用します。 この設定を有効にすると、Microsoft 365 グループのユーザーは、Outlook または web 上の Outlook を使用して、Microsoft 365 グループとして電子メールを送信および返信できます。 ユーザーはグループに移動し、新しいメールを作成して、「メールボックス所有者として送信する」フィールドをグループのメール アドレスに変更することができます。
 
 ([Exchange 管理センターでもこれを行うことができます](https://docs.microsoft.com/office365/admin/create-groups/allow-members-to-send-as-or-send-on-behalf-of-group)。)
-  
-次のスクリプトを使用して、 *\<GroupAlias\>* 更新するグループのエイリアスと、 *\<UserAlias\>* アクセス許可を付与するユーザーのエイリアスを使用します。 [Exchange Online PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)、このスクリプトを実行します。
+
+次のスクリプトを使用して、 *\<GroupAlias\>* 更新するグループのエイリアスと、 *\<UserAlias\>* アクセス許可を付与するユーザーのエイリアスを使用します。 [Exchange Online PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)、このスクリプトを実行します。
 
 ```PowerShell
 $groupAlias = "<GroupAlias>"
-
 $userAlias = "<UserAlias>"
-
-
 $groupsRecipientDetails = Get-Recipient -RecipientTypeDetails groupmailbox -Identity $groupAlias
 
 Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAlias -AccessRights SendAs
 ```
 
-コマンドレットが実行されると、**From** フィールドにグループ メール アドレスを追加することにより、ユーザーが Outlook または Outlook on the web に移動して、グループとして送信することができます。 
+コマンドレットが実行されると、**From** フィールドにグループ メール アドレスを追加することにより、ユーザーが Outlook または Outlook on the web に移動して、グループとして送信することができます。
 
 ## <a name="create-classifications-for-office-groups-in-your-organization"></a>組織の Office グループの分類を作成する
 
@@ -75,51 +72,51 @@ Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAli
 > 現在、分類ラベルを使用している場合、グループを作成するユーザーは、機密ラベルが有効になっていても使用できなくなります。
 
 以前のグループ分類機能を使用することもできます。 組織内のユーザーが Office 365 グループを作成するときに設定できる分類を作成できます。 たとえば、作成するグループにユーザーが「標準」、「機密」、「極秘」といった分類を設定できるようにすることができます。 グループの分類は既定では設定されていないので、ユーザーに分類を設定させるには、分類を作成する必要があります。 組織の Office 365 グループ使用ガイドラインをユーザーに参照させるには、Azure Active Directory PowerShell を使用します。
-  
-「[グループの設定を構成するための Azure Active Directory コマンドレット](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、Office 365 グループの分類を定義します。 
-  
-```
+
+「[グループの設定を構成するための Azure Active Directory コマンドレット](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、Office 365 グループの分類を定義します。
+
+```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
 ```
 
 各分類に説明を関連付けるために、定義する設定属性 *ClassificationDescriptions* を使用できます。
-  
-```
+
+```powershell
 $setting["ClassificationDescriptions"] ="Classification:Description,Classification:Description"
 ```
 
 ここで、Classification は ClassificationList の文字列と一致します。
 
 例:
-  
-```
+
+```powershell
 $setting["ClassificationDescriptions"] = "Low Impact: General communication, Medium Impact: Company internal data , High Impact: Data that has regulatory requirements"
 ```
 
-上の Azure Active Directory コマンドレットを実行して分類を設定した後、特定のグループに分類を設定する場合は、[Set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/Set-UnifiedGroup) コマンドレットを実行します。 
-  
-```
-Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact> 
+上の Azure Active Directory コマンドレットを実行して分類を設定した後、特定のグループに分類を設定する場合は、[Set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/Set-UnifiedGroup) コマンドレットを実行します。
+
+```powershell
+Set-UnifiedGroup <LowImpactGroup@constoso.com> -Classification <LowImpact>
 ```
 
 または、分類を使用して新しいグループを作成します。
-  
-```
-New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public> 
+
+```powershell
+New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -AccessType <Public>
 ```
 
-Exchange Online PowerShell の使用の詳細については、「[Exchange Online による PowerShell の使用](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)」および「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。 
-  
-これらの設定を有効にした後、グループの所有者は、Outlook on the web および Outlook​​ のドロップダウン メニューから分類を選択し、[**編集**] グループ ページから分類を保存できるようになります。 
-  
+Exchange Online PowerShell の使用の詳細については、「[Exchange Online による PowerShell の使用](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」および「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+
+これらの設定を有効にした後、グループの所有者は、Outlook on the web および Outlook​​ のドロップダウン メニューから分類を選択し、[**編集**] グループ ページから分類を保存できるようになります。
+
 ![Office 365 グループの分類を選択する](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
-  
+
 ## <a name="hide-office-365-groups-from-gal"></a>GAL から Office 365 グループを非表示にする
 <a name="BKMK_CreateClassification"> </a>
 
 組織内のグローバルアドレス一覧 (GAL) およびその他のリストに Office 365 グループを表示するかどうかを指定できます。 たとえば、アドレス一覧に表示したくない法務部グループがある場合は、GAL にそのグループを表示しないようにすることができます。 アドレス一覧からグループを非表示にするには、次のように Set-UnifiedGroup コマンドレットを実行します。
-  
-```
+
+```powershell
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
 ```
 
@@ -127,10 +124,10 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 <a name="BKMK_CreateClassification"> </a>
 
 他の組織のユーザーが Office 365 グループに電子メールを送信できないようにするには、そのグループの設定を変更します。 これにより、内部のユーザーのみがグループにメールを送信できるようになります。 外部ユーザーがそのグループにメッセージを送信しようとしても、拒否されます。
-  
+
 この設定を更新するには、次のように Set-UnifiedGroup コマンドレットを実行します。
 
-```
+```powershell
 Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
@@ -138,16 +135,16 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 <a name="BKMK_CreateClassification"> </a>
 
 送信者が Office 365 グループにメールを送信しようとするたびに、メール ヒントが表示されるようにすることができます。
-  
+
 グループにメール ヒントを追加するには、Set-UnifiedGroup コマンドレットを実行します。
 
-```
+```powershell
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
 ```
 
 メール ヒントと共に、MailTipTranslations を設定することもできます。これは、メール ヒントの追加言語を指定します。 スペイン語の翻訳を追加するとします。この場合は、次のコマンドを実行します。
-  
-```
+
+```powershell
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
 ```
 
@@ -155,7 +152,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 表示名は、Office 365 グループの名前を指定します。 この名前は、exchange 管理センターまたは Microsoft 365 管理センターで確認できます。 Set-UnifiedGroup コマンドを実行して、グループの表示名を編集するか、既存の Office 365 グループに表示名を割り当てることができます。
 
-```
+```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ```
 
@@ -163,23 +160,23 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 <a name="BKMK_CreateClassification"> </a>
 
 Outlook の Office 365 グループは、既定で非公開として作成されます。 組織が既定で Office 365 グループを公開として作成する (または非公開に戻す) 場合は、次の PowerShell コマンドレット構文を使用します。
-  
+
  `Set-OrganizationConfig -DefaultGroupAccessType Public`
-  
+
 非公開に設定するには:
-  
+
  `Set-OrganizationConfig -DefaultGroupAccessType Private`
-  
-設定を確認するには: 
-  
+
+設定を確認するには:
+
  `Get-OrganizationConfig | ft DefaultGroupAccessType`
-  
-詳細については、「[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)」および「[Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/Get-OrganizationConfig)」を参照してください。
-  
+
+詳細については、「[Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)」および「[Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig)」を参照してください。
+
 ## <a name="office-365-groups-cmdlets"></a>Office 365 グループのコマンドレット
 
 次のコマンドレットは、Office 365 グループで使用できます。
-  
+
 |**コマンドレット名**|**Description**|
 |:-----|:-----|
 |[Get-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |既存の Office 365 グループを検索し、グループ オブジェクトのプロパティを表示するには、このコマンドレットを使用します。  <br/> |

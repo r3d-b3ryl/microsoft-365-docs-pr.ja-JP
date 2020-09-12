@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Azure AD、Exchange Online、SharePoint Online、Skype for Business Online、セキュリティ & コンプライアンスに関する Microsoft 365 PowerShell コマンドレットリファレンストピックを検索します。
-ms.openlocfilehash: 4905c20216e6df02399fe372ec31fe3bedfde6c4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8f2aa4b123e3b7e3f92aabee7f9e8adeeb9c154f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692038"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547120"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレットリファレンス
 
@@ -42,7 +42,7 @@ Microsoft 365 PowerShell の接続手順については、「 [Connect To micros
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Exchange Online の PowerShell コマンドレット
 
-Exchange Online のコマンドレットリファレンストピックは、 [Exchange online の PowerShell ドキュメント](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)の「 **reference** 」セクションにあります。
+Exchange Online のコマンドレットリファレンストピックは、 [Exchange online の PowerShell ドキュメント](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)の「 **reference** 」セクションにあります。
   
 Exchange Online PowerShell の接続手順については、「 [Exchange Online powershell に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)」をクリックしてください。
   
@@ -61,17 +61,14 @@ Skype for business Online のコマンドレットリファレンストピック
   
 Skype for business Online の PowerShell の接続手順については、「 [powershell を使用して skype For Business online を管理](manage-skype-for-business-online-with-microsoft-365-powershell.md)する」をクリックしてください。
 
-## <a name="security-amp-compliance-center-powershell-cmdlets"></a>セキュリティ センターとコンプライアンス センターの PowerShell コマンドレット
+## <a name="security--compliance-center-powershell-cmdlets"></a>セキュリティ & コンプライアンスセンターの PowerShell コマンドレット
 
-Microsoft 365 セキュリティ &amp; コンプライアンスセンターのコマンドレットリファレンストピックは、 [Exchange Online の PowerShell ドキュメント](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)の「 **reference** 」セクションにあります。
+Microsoft 365 セキュリティ & コンプライアンスセンターのコマンドレットリファレンスのトピックは、[セキュリティ & コンプライアンス PowerShell のドキュメント](https://docs.microsoft.com/powershell/exchange/scc-powershell)の**参照**セクションにあります。
   
-セキュリティコンプライアンスセンター PowerShell の接続手順については &amp; 、「 [Security &amp; コンプライアンスセンター powershell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)」をクリックします。
+セキュリティ & コンプライアンスセンター PowerShell の接続手順については、「 [セキュリティ & コンプライアンスセンター powershell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)」をクリックしてください。
 
-
-  
 ## <a name="see-also"></a>関連項目
 
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)
-

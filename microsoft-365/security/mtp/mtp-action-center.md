@@ -3,7 +3,7 @@ title: アクション センターに移動して、自動化された調査お
 description: アクション センターを使用して、自動化された調査の詳細を表示し、保留中のアクションを承認する
 keywords: アクション センター、脅威の防止、調査、アラート、保留、自動化、検出
 search.appverid: met150
-ms.prod: M365-security-compliance
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 77bc0f088a9779396a56a9cc8cc9ae6ecbdadea7
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503105"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547988"
 ---
 # <a name="the-action-center"></a>アクション センター
 
 **適用対象:**
 - Microsoft Threat Protection
 
-アクション センターを使用して、組織のデバイスおよびメールボックス全体の現在および過去の調査結果を確認します。 脅威の種類および結果の verdict に応じて、[修復アクション](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)は自動的に、または組織のセキュリティ運用チームによる承認時に発生します。 すべての修復アクションは、承認待ちか既に承認済みかにかかわらず、アクションセンターに統合されます。 
+アクション センターを使用して、組織のデバイスおよびメールボックス全体の現在および過去の調査結果を確認します。 脅威の種類および結果の verdict に応じて、 [修復アクション](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) は自動的に、または組織のセキュリティ運用チームによる承認時に発生します。 すべての修復アクションは、承認待ちか既に承認済みかにかかわらず、アクションセンターに統合されます。 
 
 ![アクション センター](../../media/air-actioncenter.png)
 
@@ -49,7 +49,7 @@ ms.locfileid: "46503105"
 
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
 
-3. アクションセンターに、[**保留中**] と [**履歴**] という2つのタブが表示されます。
+3. アクションセンターに、[ **保留中** ] と [ **履歴**] という2つのタブが表示されます。
 
     - [**保留中**] タブには、続行するにはセキュリティ運用チームの誰かによる確認および承認が必要な調査のリストが表示されます。 ここに表示されている保留中のアイテムを確認し、実行してください。
 

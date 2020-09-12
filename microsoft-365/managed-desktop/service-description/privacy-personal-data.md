@@ -2,7 +2,7 @@
 title: プライバシーおよび個人データ
 description: サービスで収集、格納、および使用されるデータの詳細
 keywords: GDPR、保持、削除、保存、保存、処理、セキュリティ、監査
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 f1.keywords:
@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e1b0c856a3bfb886521ee2c1a2115e4c29504862
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47363262"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547940"
 ---
 # <a name="privacy-and-personal-data"></a>プライバシーおよび個人データ
 
@@ -115,7 +115,7 @@ Microsoft マネージドデスクトップは、ISO 認定システムで個人
 
 Microsoft マネージドデスクトップでは、プロファイル、広告、またはマーケティングの目的で収集された個人データを、サービス提供の一環として使用していません。
 
-## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のためのデータ主体の要求
+## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のためのデータ対象要求
 
 欧州連合の [一般的なデータ保護規則 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) は、雇用者またはその他の種類の代理人または組織 (データコントローラーまたはコントローラーとも呼ばれる) によって収集された個人データを管理するために、ユーザーに対して (「データのサブジェクト」としての規則に従って) 権限を与えます。 GDPR での個人データは、特定されたまたは特定可能な自然人に関連するすべてのデータと、非常に幅広く定義されています。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。 データ主体がコントローラーに対して個人データへのアクションを実行するよう正式に要求することを、データ主体の要求または DSR と呼びます。
 

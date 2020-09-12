@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、モバイルデバイスをセキュリティで保護し、管理するのに役立ちます。
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430241"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545898"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -103,8 +103,8 @@ Windows 10 のアクセス制御には、Azure AD Premium を含むサブスク�
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |パスワードを要求|はい|はい|はい|
-|シンプルなパスワードを禁止|必要|いいえ|いいえ|
-|英数字のパスワードを要求|必要|いいえ|いいえ|
+|シンプルなパスワードを禁止|はい|不要|不要|
+|英数字のパスワードを要求|はい|不要|不要|
 |パスワードの最小文字数 |はい|はい|はい|
 |デバイスがワイプされるまでのサインイン失敗回数 |はい|はい|はい|
 |デバイスがロックされるまでのアイドル時間 (分) |はい|はい|はい|
@@ -115,7 +115,7 @@ Windows 10 のアクセス制御には、Azure AD Premium を含むサブスク�
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|デバイス<sup>1</sup>でデータの暗号化を必須にする |いいえ|はい|はい|
+|デバイス<sup>1</sup>でデータの暗号化を必須にする |不要|はい|はい|
 
 <sup>1</sup>Samsung Knox では、ストレージカードの暗号化も要求できます。 
 
@@ -131,16 +131,16 @@ Windows 10 のアクセス制御には、Azure AD Premium を含むサブスク�
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|電子メール プロファイルが管理されている |必要|いいえ|いいえ|
+|電子メール プロファイルが管理されている |はい|不要|不要|
 
 ## <a name="cloud-settings"></a>クラウドの設定 
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|暗号化されたバックアップを要求 |必要|いいえ|いいえ|
-|クラウド バックアップの禁止 |必要|いいえ|いいえ|
-|ドキュメントの同期の禁止 |必要|いいえ|いいえ|
-|写真の同期の禁止  |必要|いいえ|いいえ|
+|暗号化されたバックアップを要求 |はい|不要|不要|
+|クラウド バックアップの禁止 |はい|不要|不要|
+|ドキュメントの同期の禁止 |はい|不要|不要|
+|写真の同期の禁止  |はい|不要|不要|
 |Google バックアップを許可する  |該当なし|いいえ|はい|
 |Google アカウントの自動同期を許可する  |該当なし|いいえ|はい|
 
@@ -148,43 +148,43 @@ Windows 10 のアクセス制御には、Azure AD Premium を含むサブスク�
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|画面キャプチャの禁止 |必要|いいえ|はい|
-|デバイスからの診断データ送信の禁止 |必要|いいえ|はい|
+|画面キャプチャの禁止 |はい|不要|はい|
+|デバイスからの診断データ送信の禁止 |はい|不要|はい|
 
 ## <a name="application-settings"></a>アプリケーションの設定 
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|デバイスでのビデオ会議をブロックする |必要|いいえ|いいえ|
-|アプリケーション ストアへのアクセスをブロックする |必要|いいえ|はい|
-|アプリケーション ストアへアクセスする際にパスワードを要求する |いいえ|はい|はい|
+|デバイスでのビデオ会議をブロックする |はい|不要|不要|
+|アプリケーション ストアへのアクセスをブロックする |はい|不要|はい|
+|アプリケーション ストアへアクセスする際にパスワードを要求する |不要|はい|はい|
 
 ## <a name="device-capabilities-settings"></a>デバイスの機能の設定 
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|リムーバブル記憶域との接続の禁止 |はい|はい|いいえ|
-|Bluetooth 接続の禁止 |はい|はい|いいえ|
+|リムーバブル記憶域との接続の禁止 |はい|はい|不要|
+|Bluetooth 接続の禁止 |はい|はい|不要|
 
-##  <a name="additional-settings"></a>その他の設定 
+## <a name="additional-settings"></a>その他の設定
 
-PowerShell コマンドレットを使用して、次のようなポリシー設定もできます。 詳細については、「 [Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)」を参照してください。
+セキュリティ & コンプライアンスセンターの PowerShell コマンドレットを使用して、次の追加のポリシー設定を設定できます。 詳細については、「 [Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell)」を参照してください。
 
 |**設定名**|**iOS 7.1 以降**|**Android 5 以降**|
 |:-----|:-----|:-----|
 |CameraEnabled|はい|はい|
-|RegionRatings|必要|いいえ|
-|MoviesRatings|必要|いいえ|
-|TVShowsRating |必要|いいえ|
-|AppsRatings |必要|いいえ|
-|AllowVoiceDialing |必要|いいえ|
-|AllowVoiceAssistant |必要|いいえ|
-|AllowAssistantWhileLocked  |必要|いいえ|
-|Allowpass Booklocked Locked |必要|いいえ|
-|MaxPasswordGracePeriod |必要|いいえ|
-|PasswordQuality |いいえ|はい|
-|SystemSecurityTLS  |必要|いいえ|
-|WLANEnabled  |いいえ|いいえ|
+|RegionRatings|はい|不要|
+|MoviesRatings|はい|不要|
+|TVShowsRating |はい|不要|
+|AppsRatings |はい|不要|
+|AllowVoiceDialing |はい|不要|
+|AllowVoiceAssistant |はい|不要|
+|AllowAssistantWhileLocked  |はい|不要|
+|Allowpass Booklocked Locked |はい|不要|
+|MaxPasswordGracePeriod |はい|不要|
+|PasswordQuality |不要|はい|
+|SystemSecurityTLS  |はい|不要|
+|WLANEnabled  |不要|不要|
 
 ## <a name="settings-supported-by-windows"></a>Windows でサポートされている設定 
 
@@ -240,7 +240,7 @@ PowerShell コマンドレットを使用して、これらの追加のポリシ
 
 詳細については、「 [Basic Mobility And Security でモバイルデバイスをワイプする](wipe-mobile-device.md)」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 の基本的なモビリティとセキュリティの概要](overview.md)
 

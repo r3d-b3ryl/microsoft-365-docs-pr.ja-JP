@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308369"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547800"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Id とそれ以外の場合: 1 つの設計者の視点
 
@@ -117,7 +117,7 @@ XYZ SaaS はジャストインタイム (JIT) プロビジョニングをサポ�
 
 
 
-### <a name="authorization"></a>承認
+### <a name="authorization"></a>Authorization
 
 [ウィキペディア](https://en.wikipedia.org/wiki/Authorization)ごとに、"承認対象" はアクセスポリシーを定義することです。 多くのユーザーは、オブジェクト (ファイル、サービスなど) へのアクセス制御を定義できるようになります。 現在の世界規模の脅威では、この概念は、さまざまな脅威ベクトルに反応してアクセス制御をすばやく調整できる動的なポリシーに急速に進化しています。 たとえば、通常とは異なる場所から銀行口座にアクセスすると、追加の確認手順が表示されます。 これを解決するには、ポリシーそのものではなく、脅威の検出とシグナル関連付けの方法論のエコシステムを考慮する必要があります。
 
@@ -272,7 +272,7 @@ Office 365 には、 [統合監査ログ](https://docs.microsoft.com/microsoft-3
 
 他の API を通じてアクセスされる Microsoft 365 ログの例には、次のようなものがあります。
 - [AZURE AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (Office 365 に関連付けられていないアクティビティ)
-- [Exchange メッセージ追跡](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
+- [Exchange メッセージ追跡](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
 - 前述の脅威/UEBA システム (たとえば、Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender ATP など)
 - [Microsoft information protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

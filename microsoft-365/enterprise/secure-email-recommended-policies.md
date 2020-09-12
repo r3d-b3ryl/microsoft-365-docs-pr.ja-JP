@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2dfaf33a837a74d92ec9bbbbb7f04b726e7f3744
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898142"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547863"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -33,15 +33,17 @@ ms.locfileid: "46898142"
 
 ## <a name="updating-common-policies-to-include-email"></a>電子メールを含めるための共通ポリシーの更新
 
-次の図は、一般的な id およびデバイスアクセスポリシーを示し、電子メールを保護するために更新する必要があるポリシーを示しています。 ActiveSync クライアントをブロックする Exchange Online の新しいルールの追加に注意してください。 これにより、Outlook mobile が強制的に使用されます。
+電子メールを保護するために、次の図は、共通 id およびデバイスアクセスポリシーから更新するポリシーを示しています。
 
-![メールを保護するためのポリシー更新の概要](../media/identity-access-ruleset-mail.png)
+[![Teams およびその依存サービスへのアクセスを保護するためのポリシー更新の概要](../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-[この画像のより大きいバージョンを表示する](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
+[この画像のより大きいバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
-ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ルールは、 [共通の id およびデバイスアクセスポリシー](identity-access-policies.md)の関連する構成手順にリンクします。
+Exchange Online の新しいポリシーを追加して、ActiveSync クライアントをブロックすることに注意してください。 これにより、Outlook mobile が強制的に使用されます。
 
-|保護レベル|ポリシー|詳細|
+ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ポリシーは、 [共通の id およびデバイスアクセスポリシー](identity-access-policies.md)の関連する構成手順にリンクします。
+
+|保護レベル|ポリシー|詳細情報|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
 |        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに Exchange Online を含める|
@@ -55,7 +57,7 @@ ms.locfileid: "46898142"
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントをブロックする
 
-このポリシーでは、ActiveSync クライアントが他の条件付きアクセスルールをバイパスできないようにします。 ルール構成は、ActiveSync クライアントにのみ適用されます。 [ **[アプリ保護ポリシーを必須](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** にする] を選択すると、このポリシーによって ActiveSync クライアントがブロックされます。 このポリシーの作成の詳細については、「 [条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」を参照してください。
+このポリシーでは、ActiveSync クライアントが他の条件付きアクセスポリシーをバイパスできないようにします。 ポリシー構成は、ActiveSync クライアントにのみ適用されます。 [ **[アプリ保護ポリシーを必須](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)** にする] を選択すると、このポリシーによって ActiveSync クライアントがブロックされます。 このポリシーの作成の詳細については、「 [条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」を参照してください。
 
 1. 「 [シナリオ 1: Office 365 アプリは、アプリ保護ポリシーを使用して承認済みアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)とする」の「手順 2: exchange Online の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
 
@@ -67,4 +69,9 @@ ms.locfileid: "46898142"
 
 ## <a name="next-steps"></a>次の手順
 
-[SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項の詳細](sharepoint-file-access-policies.md)
+![手順 4: Microsoft 365 クラウドアプリのポリシー](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+
+次の条件付きアクセスポリシーを構成します。
+
+- [Microsoft Teams](teams-access-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)

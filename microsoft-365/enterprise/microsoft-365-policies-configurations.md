@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332751"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546644"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -73,10 +73,9 @@ ms.locfileid: "47332751"
 
 データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 たとえば、このガイダンスを実装する場合は、必ず同等のレベルでデータを保護してください。 
 
-**Office 365 アーキテクチャモデルの id およびデバイス保護**モデルは、どの機能が同等であるかを示しています。
+**Microsoft 365 アーキテクチャモデルの id およびデバイス保護**は、どの機能が同等であるかを示しています。
 
-![ポスターのサムネイル「Office の Id とデバイスの保護365」](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
+[![Microsoft 365 ポスターの Id およびデバイス保護のサムネイル画像](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  PDF とし[て表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|PDF とし[てダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 また、Microsoft 365 に保存されている情報を保護するために、「 [Deploy information protection for data privacy 規制](../solutions/information-protection-deploy.md) ソリューション」を参照してください。
 
@@ -105,10 +104,11 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 |:-------|:-----|:-------|
 | [多要素認証 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) | MFA では、ユーザーのパスワード、Microsoft Authenticator アプリまたは電話からの通知など、2つの形式の認証を提供する必要があります。 MFA は、ユーザーの環境へのアクセスに使用できる資格情報を収集するリスクを大幅に軽減します。 Microsoft 365 は、MFA ベースのサインインに Azure 多要素認証サービスを使用します。 | Microsoft 365 E3 または E5 |
 | [条件付きアクセス](/azure/active-directory/conditional-access/overview) | Azure AD は、ユーザーサインインの条件を評価し、条件付きアクセスポリシーを使用して許可されたアクセスを決定します。 たとえば、このガイダンスでは、機密データへのアクセスにデバイスのコンプライアンスを必要とする条件付きアクセスポリシーを作成する方法を示します。 これにより、自分のデバイスを持つハッカーが機密データにアクセスするリスクが大幅に軽減されます。 また、デバイスは正常性とセキュリティの特定の要件を満たす必要があるため、デバイス上の機密データを保護します。 | Microsoft 365 E3 または E5 |
-| [Azure AD グループ](/azure/active-directory/fundamentals/active-directory-manage-groups) | 条件付きアクセスルール、Intune を使用したデバイス管理、組織内のファイルおよびサイトへのアクセス許可は、ユーザーアカウントまたは Azure AD グループへの割り当てに依存しています。 実装する保護のレベルに対応する Azure AD グループを作成することをお勧めします。 たとえば、役員スタッフの方が、ハッカーの価値が高いと考えられます。 そのため、これらの従業員のユーザーアカウントを Azure AD グループに追加して、このグループを条件付きアクセスポリシーと、より高いレベルのアクセス保護を適用するその他のポリシーに割り当てることをお勧めします。 | Microsoft 365 E3 または E5 |
-| [デバイスの登録](/azure/active-directory/devices/overview) | デバイスの id を作成するために、デバイスを Azure AD に登録します。 この id は、ユーザーがサインインして、ドメインに参加しているか、準拠している Pc を必要とする条件付きアクセスルールを適用するときに、デバイスを認証するために使用されます。 このガイダンスでは、device enrollment を使用して、ドメインに参加している Windows コンピューターを自動的に登録します。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。 | Microsoft 365 E3 または E5 |
+| [Azure AD グループ](/azure/active-directory/fundamentals/active-directory-manage-groups) | 条件付きアクセスポリシー、Intune を使用したデバイス管理、組織内のファイルおよびサイトへのアクセス許可は、ユーザーアカウントまたは Azure AD グループへの割り当てに依存しています。 実装する保護のレベルに対応する Azure AD グループを作成することをお勧めします。 たとえば、役員スタッフの方が、ハッカーの価値が高いと考えられます。 そのため、これらの従業員のユーザーアカウントを Azure AD グループに追加して、このグループを条件付きアクセスポリシーと、より高いレベルのアクセス保護を適用するその他のポリシーに割り当てることをお勧めします。 | Microsoft 365 E3 または E5 |
+| [デバイスの登録](/azure/active-directory/devices/overview) | デバイスの id を作成するために、デバイスを Azure AD に登録します。 この id は、ユーザーがサインインして、ドメインに参加しているか、準拠している Pc を必要とする条件付きアクセスポリシーを適用するときに、デバイスを認証するために使用されます。 このガイダンスでは、device enrollment を使用して、ドメインに参加している Windows コンピューターを自動的に登録します。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。 | Microsoft 365 E3 または E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | 組織の id に影響を及ぼす可能性のある脆弱性を検出し、自動修復ポリシーを低、中、高のサインインリスクとユーザーのリスクに構成できます。 このガイダンスは、このリスク評価に基づいて、多要素認証の条件付きアクセスポリシーを適用します。 このガイダンスには、アカウントに対して高リスクのアクティビティが検出された場合にユーザーにパスワードの変更を要求する条件付きアクセスポリシーも含まれています。 | Microsoft 365 E5、Microsoft 365 E3 with Identity & Threat Protection アドオン、EMS E5、または Azure Premium P2 ライセンス |
 | [セルフサービスによるパスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | 管理者が制御できる複数の認証方法を確認することにより、ユーザーがパスワードを安全に、かつヘルプデスクの介入なしにリセットできるようにします。 | Microsoft 365 E3 または E5 |
+| [AZURE AD パスワード保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。 既知の脆弱なパスワードとその亜種、および組織に固有のその他の弱い用語を検出およびブロックします。 既定のグローバル禁止パスワードリストは、Azure AD テナント内のすべてのユーザーに自動的に適用されます。 カスタム禁止パスワードリストには、追加のエントリを定義できます。 ユーザーがパスワードを変更または再設定すると、これらの禁止されたパスワードの一覧がチェックされ、強力なパスワードの使用が強制されます。 |  Microsoft 365 E3 または E5 |
 ||||
 
 ![Id とデバイスのアクセスのコンポーネント。](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

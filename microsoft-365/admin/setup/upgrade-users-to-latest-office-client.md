@@ -2,7 +2,7 @@
 title: Microsoft 365 for business ユーザーを最新の Office クライアントにアップグレードする
 f1.keywords:
 - NOCSH
-ms.author: kwekuako
+ms.author: kwekua
 author: kwekuako
 manager: scotv
 audience: Admin
@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: ユーザーを最新の Office クライアントにアップグレードする方法について説明します。
-ms.openlocfilehash: fb2513b2112dd8427222d43d14184895df3b594b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 7cddf1554a5892ddac510fc77238529194c1a2a0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778879"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545730"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Microsoft 365 for business ユーザーを最新の Office クライアントにアップグレードする
 
@@ -39,13 +39,13 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
 
 - 検出された脆弱性に対するセキュリティ修正プログラム
 
-詳細については、「 [Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)」を参照してください。
+詳細については、「 [Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap) 」を参照してください。
 
  **これは適切なトピックですか。**
   
  お客様が組織の Microsoft 365 for business サブスクリプションを担当する管理者である場合は、適切な場所に配置されています。 通常、管理者は、ユーザーの管理、パスワードのリセット、Office のインストールの管理、ライセンスの追加または削除などのタスクを担当します。
 
- 管理者ではなく、 [Microsoft 365 ファミリ](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans)製品を使用している場合は、「office をアップグレードする方法について」を参照してください。以前のバージョンの office をアップグレードする方法については、「office の[アップグレード方法](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350)」を参照してください。
+ 管理者ではなく、 [Microsoft 365 ファミリ](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) 製品を使用している場合は、「office をアップグレードする方法について」を参照してください。以前のバージョンの office をアップグレードする方法については、「office の [アップグレード方法](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) 」を参照してください。
 
 ## <a name="get-ready-to-upgrade"></a>アップグレードの準備をする
 
@@ -60,9 +60,9 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
 Office の[システム要件をチェック](https://products.office.com/office-system-requirements)して、デバイスが最新バージョンの office と互換性があることを確認してください。 たとえば、Windows XP または Windows Vista を実行しているコンピューターに新しいバージョンの Office をインストールすることはできません。
   
 > [!TIP]
-> 組織内のユーザーが Pc またはラップトップで以前のバージョンの Windows を実行している場合は、Windows 10 にアップグレードすることをお勧めします。 Windows 7 のサポートが終了しました。 詳細については、「 [2020 年1月の Windows 7 のサポート」](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1)を参照してください。
+> 組織内のユーザーが Pc またはラップトップで以前のバージョンの Windows を実行している場合は、Windows 10 にアップグレードすることをお勧めします。 Windows 7 のサポートが終了しました。 詳細については、「 [2020 年1月の Windows 7 のサポート」](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) を参照してください。
 
-オペレーティングシステムをアップグレードできるかどうかを確認するには、 [Windows 10 のシステム要件](https://www.microsoft.com/windows/windows-10-specifications)を確認してください。
+オペレーティングシステムをアップグレードできるかどうかを確認するには、 [Windows 10 のシステム要件](https://www.microsoft.com/windows/windows-10-specifications) を確認してください。
 
 ### <a name="check-application-compatibility"></a>アプリケーションの互換性の確認
 
@@ -84,7 +84,7 @@ Office の[システム要件をチェック](https://products.office.com/office
 
  **オプション 1: Office サブスクリプションを切り替える**
 
-Office を含むサブスクリプションに切り替えてください。 「[別の Microsoft 365 for business プランへの切り替え」を](../../commerce/subscriptions/switch-to-a-different-plan.md)参照してください。
+Office を含むサブスクリプションに切り替えてください。 「 [別の Microsoft 365 for business プランへの切り替え」を](../../commerce/subscriptions/switch-to-a-different-plan.md)参照してください。
 
 **オプション 2: 個人または1回の Office の購入を購入するか、ボリュームライセンスを使用して Office を購入する**
 
@@ -108,11 +108,11 @@ Office の最新バージョンをインストールする前に、以前のバ�
   
 ### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>以前のバージョンの Office をアンインストール後に再インストールできない既知の問題
 
- **ボリュームライセンスを使用した Office**これらのボリュームライセンスバージョンの Office のソースファイルにアクセスできなくなった場合は、再インストールすることはできません。
+ **ボリュームライセンスを使用した Office** これらのボリュームライセンスバージョンの Office のソースファイルにアクセスできなくなった場合は、再インストールすることはできません。
 
- **コンピューターにプレインストールされている Office**ディスクまたはプロダクトキーがない場合 (Office がある場合)、再インストールすることはできません。
+ **コンピューターにプレインストールされている Office** ディスクまたはプロダクトキーがない場合 (Office がある場合)、再インストールすることはできません。
 
- **サポートされていないサブスクリプション**Office のコピーが、Office 365 Small Business Premium または Office 365 の中規模企業など、廃止されたサブスクリプションを通じて取得した場合、サブスクリプションに付属のプロダクトキーを使用していない限り、以前のバージョンの Office をインストールすることはできません。
+ **サポートされていないサブスクリプション** Office のコピーが、Office 365 Small Business Premium または Office 365 の中規模企業など、廃止されたサブスクリプションを通じて取得した場合、サブスクリプションに付属のプロダクトキーを使用していない限り、以前のバージョンの Office をインストールすることはできません。
 
 以前のバージョンの Office と最新版を共存させる場合、「[異なるバージョンの Office を同じ PC にインストールして使う](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf)」で、共存が可能なバージョンの一覧をご確認いただけます。たとえば、サードパーティ アドインをインストールして以前のバージョンの Office で使用しているとき、アドインと最新版の Office の間に互換性があるかどうかがわからない場合は、共存インストールが正しい選択となることがあります。
 
@@ -125,4 +125,4 @@ Office の最新バージョンをインストールする前に、以前のバ�
 アップグレードするユーザーにライセンスがあることを確認したら、最後に Office をインストールするには、「 [PC または Mac に office をダウンロードしてインストールまたは再](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)インストールする」を参照してください。
   
 > [!TIP]
-> ユーザーに Office をインストールさせたくない場合は、「 [Manage software download settings In office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)」を参照してください。 Office[展開ツール](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool)を使用して office ソフトウェアをローカルネットワークにダウンロードし、通常使用するソフトウェア展開方法を使用して office を展開することができます。
+> ユーザーに Office をインストールさせたくない場合は、「 [Manage software download settings In office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)」を参照してください。 Office [展開ツール](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) を使用して office ソフトウェアをローカルネットワークにダウンロードし、通常使用するソフトウェア展開方法を使用して office を展開することができます。

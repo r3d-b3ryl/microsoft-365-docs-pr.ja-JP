@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 監査の使用と透明性を実現するための、Microsoft 365 内の電子情報開示機能およびその他の検索機能の概要。
-ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d18d3d4776c434788ee8fef7fb8be9edf339ff04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331861"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547772"
 ---
-# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 の電子情報開示と検索機能の概要 
+# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 の電子情報開示と検索機能の概要
 
 ## <a name="ediscovery"></a>電子情報開示
 
@@ -44,12 +44,12 @@ SharePoint Online と OneDrive for business からのイベントは、発生す
 | プロパティ | 説明 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日付 | イベントの日付と時刻 |
-| ユーザー | アクションを実行したユーザー |
+| User | アクションを実行したユーザー |
 | ClientIP | アクティビティがログに記録されたときに使用されたデバイスの IPv4 または IPv6 アドレス。 |
 | CreationTime | ユーザーがアクティビティを実行したときの協定世界時 (UTC) の日付と時刻。 |
 | EventSource | イベントが発生したことを示します。 可能な値は、SharePoint と ObjectModel です。 |
 | ID | レポートエントリの ID。 ID はレポートエントリを一意に識別します。 |
-| 操作​​ | [このユーザーアクティビティの結果を表示] で選択された値に対応するユーザーまたはアクティビティの名前。 |
+| 操作 | [このユーザーアクティビティの結果を表示] で選択された値に対応するユーザーまたはアクティビティの名前。 |
 | OrganizationId | イベントが発生した組織の Microsoft 365 サービスの GUID。 |
 | UserAgent | ブラウザーによって提供される、ユーザーのブラウザーに関する情報。 |
 | UserId | レコードが記録されるようになった (Operation プロパティで指定された) アクションを実行したユーザー。 |
@@ -57,7 +57,7 @@ SharePoint Online と OneDrive for business からのイベントは、発生す
 |  | 0は、通常のユーザーを示します。 |
 |  | 2は、Microsoft 365 組織の管理者であることを示します。 |
 |  | 3 Microsoft データセンターの管理者またはデータセンターのシステムアカウントを示します。 |
-| Workload | アクティビティが発生した Microsoft 365 サービス。 このプロパティに指定できる値は次のとおりです。 |
+| ワークロード | アクティビティが発生した Microsoft 365 サービス。 このプロパティに指定できる値は次のとおりです。 |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive for Business |
@@ -67,6 +67,6 @@ Microsoft 365 監査ログを検索する詳細な手順については、「 [�
 
 ## <a name="search-unified-audit-log"></a>検索統合監査ログ
 
-監査ログ検索機能を使用して、統合監査ログを検索します。 Microsoft 365 では、リモート PowerShell を使用してこのログを検索することもできます。 Exchange Online PowerShell の [search-unifiedauditlog コマンドレット](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) は、exchange Online、SharePoint Online、OneDrive for business、および Azure AD からのユーザー操作に関連するイベントの統合監査ログを検索するために使用されます。 
+監査ログ検索機能を使用して、統合監査ログを検索します。 Microsoft 365 では、リモート PowerShell を使用してこのログを検索することもできます。 Exchange Online PowerShell の [search-unifiedauditlog コマンドレット](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) は、exchange Online、SharePoint Online、OneDrive for business、および Azure AD からのユーザー操作に関連するイベントの統合監査ログを検索するために使用されます。
 
 指定した日付範囲内のすべてのイベントを検索することも、特定のアクション、アクションを実行したユーザー、またはターゲットオブジェクトなどの特定の条件に基づいて結果をフィルター処理することもできます。 管理者は、Exchange Online の PowerShell セッションを最大3つまで同時に使用して、長い期間の検索を分割できます。

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Skype for Business と Exchange からハイブリッド先進認証を削除または無効化する方法について説明します。
-ms.openlocfilehash: da0887936f5def69ad80c8f04381bcb3a85c2349
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691692"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547098"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>Skype for Business および Exchange からのハイブリッド先進認証の削除または無効化
 
@@ -47,7 +47,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange online**: リモート PowerShell を使用して [exchange online に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) します。 *OAuth2ClientProfileEnabled*フラグを ' false ' にするには、次のコマンドを実行します。
+2. **Exchange online**: リモート PowerShell を使用して [exchange online に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) します。 *OAuth2ClientProfileEnabled*フラグを ' false ' にするには、次のコマンドを実行します。
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false

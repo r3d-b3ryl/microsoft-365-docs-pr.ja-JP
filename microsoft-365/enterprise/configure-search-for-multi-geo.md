@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 複数地域環境で検索を構成する方法について説明します。 複数地域環境では、OneDrive for Business などの一部のクライアントのみが結果を返すことができます。
-ms.openlocfilehash: 22c71661e8f3b643a1fd7afa33b38584a1cd1be5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695075"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547154"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Office 365 Multi-Geo ために検索を構成する
 
@@ -30,15 +30,11 @@ Multi-Geo 環境では、それぞれの地域の場所にはその場所固有�
 
 次のクライアントは、すべての地域の場所からの結果を返します。
 
--   OneDrive for Business
-
--   Delve
-
--   SharePoint ホーム ページ
-
--   検索センター
-
--   SharePoint 検索 API を使用するカスタムの検索アプリケーション
+- OneDrive for Business
+- Delve
+- SharePoint ホーム ページ
+- 検索センター
+- SharePoint 検索 API を使用するカスタムの検索アプリケーション
 
 ### <a name="onedrive-for-business"></a>OneDrive for Business
 
@@ -135,14 +131,12 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 すべての検索クライアントは、既存の SharePoint 検索 REST API を使用して検索インデックスとやり取りします。
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![SharePoint 検索 REST Api が検索インデックスとどのように連携するかを示す図](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 検索クライアントは、クエリ プロパティ EnableMultiGeoSearch = true を設定して、検索 REST エンドポイントを呼び出します。
 2. クエリは、テナント内のすべての地域の場所に送信されます。
 3. それぞれの地域の場所からの検索結果はマージされ、ランク付けされます。
 4. クライアントは、統一された検索結果を取得します。
-
-
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>すべての地域の場所から結果を受け取るまでは、検索結果が結合されない点にご注意ください。 したがって、地域の場所が 1 つのみの環境での検索に比べ、複数地域検索では遅延が大きくなります。
 
@@ -151,29 +145,32 @@ Multi-Geo 環境では、従来の検索機能一部のがサポートされま�
 
 それぞれの検索センターには、複数のバーティカルがあり、それぞれのバーティカルを個別に設定する必要があります。
 
-1.  ここに示す手順は、検索結果ページと検索結果 Web パーツを編集するためのアクセス許可があるアカウントで実行してください。
+1. ここに示す手順は、検索結果ページと検索結果 Web パーツを編集するためのアクセス許可があるアカウントで実行してください。
 
-2.  検索結果ページに移動します (検索結果ページの[一覧](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213)を参照してください)
+2. 検索結果ページに移動します (検索結果ページの[一覧](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213)を参照してください)
 
-3.  設定するバーティカルを選択し、右上の **[設定]** ギア アイコンをクリックして、**[ページの編集]** をクリックします。編集モードで、検索結果ページが開きます。
+3. 設定するバーティカルを選択し、右上の **[設定]** ギア アイコンをクリックして、**[ページの編集]** をクリックします。編集モードで、検索結果ページが開きます。
 
-     ![](../media/configure-search-for-multi-geo-image2.png)
-1.  検索結果 Web パーツで、マウス ポインターを Web パーツの右上に移動させ、矢印をクリックし、メニューから [**Web パーツの編集**] をクリックします。 ページの右上のリボンの下に検索結果 Web パーツのツール ウィンドウが開きます。 ![](../media/configure-search-for-multi-geo-image3.png)
+   ![[設定] でページ選択を編集する](../media/configure-search-for-multi-geo-image2.png)
 
-1.  Web パーツ ツール ウィンドウの **[設定]** セクションで、**[結果コントロールの設定]** から **[複数地域の検索結果を表示する]** を選択して、検索結果 Web パーツに、すべての地域の場所からの結果が表示されるようにします。
+4. 検索結果 Web パーツで、マウス ポインターを Web パーツの右上に移動させ、矢印をクリックし、メニューから [**Web パーツの編集**] をクリックします。 ページの右上のリボンの下に検索結果 Web パーツのツール ウィンドウが開きます。
 
-2.  **[OK]** をクリックして変更内容を保存して、Web パーツ ツール ウィンドウを閉じます。
+   ![Web パーツの選択を編集する](../media/configure-search-for-multi-geo-image3.png)
 
-3.  検索結果 Web パーツに対する変更内容を確認するには、メイン メニューの [ページ] タブで **[チェックイン]** をクリックします。
+5. Web パーツ ツール ウィンドウの **[設定]** セクションで、**[結果コントロールの設定]** から **[複数地域の検索結果を表示する]** を選択して、検索結果 Web パーツに、すべての地域の場所からの結果が表示されるようにします。
 
-4.  ページの上部にあるメモで示されるリンクを使用して、変更内容を公開します。
+6. **[OK]** をクリックして変更内容を保存して、Web パーツ ツール ウィンドウを閉じます。
+
+7. 検索結果 Web パーツに対する変更内容を確認するには、メイン メニューの [ページ] タブで **[チェックイン]** をクリックします。
+
+8. ページの上部にあるメモで示されるリンクを使用して、変更内容を公開します。
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>カスタムの検索アプリケーションにすべてまたは一部の地域の場所からの結果を表示する
 
 カスタムの検索アプリケーションは、SharePoint 検索 REST API への要求にクエリ パラメーターを指定することで、すべてまたは一部の地域の場所からの結果を取得するようになります。このクエリ パラメーターに応じて、すべてまたは一部の地域の場所にクエリがファンアウトされます。たとえば、一部の地域の場所に対して関連情報を取得するクエリを実行する必要がある場合は、対象の地域にのみファンアウトするように制御できます。この要求が成功すると、SharePoint 検索 REST API は応答データを返します。
 
-**要件**
+### <a name="requirement"></a>要件
 
 地域的位置ごとに、組織内のすべてのユーザーにルート Web サイトの**読み取り**アクセス許可レベルが付与されていることを確認する必要があります (たとえば、contoso**APAC**.sharepoint.com/ および contoso**EU**.sharepoint.com/)。[アクセス許可について](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
@@ -230,14 +227,12 @@ MultiGeoSearchStatus: 要求に対する応答で SharePoint 検索 API が返�
 <td align="left">Partial</td>
 <td align="left">1 つ以上の地域の場所からの部分的な結果。この結果は一時的なエラーによって不完全なものになります。</td>
 </tr>
-
 </tbody>
 </table>
 
 ### <a name="query-using-the-rest-service"></a>REST サービスを使用したクエリ
 
 GET 要求の場合は、URL でクエリ パラメーターを指定します。POST 要求の場合は、JavaScript Object Notation (JSON) 形式のクエリ パラメーターを本文で渡します。
-
 
 #### <a name="request-headers"></a>要求ヘッダー
 
@@ -269,8 +264,9 @@ https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' 
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>**すべて**の地域の場所にファンアウトされる POST 要求の例
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -289,11 +285,11 @@ https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' 
         "ClientType": "my_client_id"
         }
     }
-
+```
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>**一部**の地域の場所にファンアウトされる POST 要求の例
 
-
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -318,13 +314,15 @@ https:// \<tenant\> / \_ api/search/query? querytext = ' site ' &ClientType = ' 
             }
         }
     }
+```
 
 ### <a name="query-using-csom"></a>CSOM を使用したクエリ
 
 次に、**すべて**の地域の場所にファアウトされる CSOM クエリの例を示します。
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
-
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```

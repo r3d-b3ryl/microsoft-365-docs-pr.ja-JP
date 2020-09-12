@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 脅威の修復
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903885"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547242"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Office 365 で配信される悪意のある電子メールを修復する
 
@@ -36,10 +36,9 @@ ms.locfileid: "46903885"
 
 |アクティビティ|役割グループ|必要な*プレビュー*の役割|
 |---|---|---|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者|いいえ|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする|グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者|いいえ|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者|不要|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする|グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者|不要|
 |脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする|グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview|はい|
-
 
 > [!NOTE]
 > プレビュー *は役割です*。 *役割グループ*ではありません。 Office 365 の既存の役割グループにプレビューの役割を追加する必要があります。 *グローバル管理者の役割*は、 [Microsoft 365 管理センター](https://admin.microsoft.com)で割り当てられています。 セキュリティ管理者とセキュリティリーダーの役割は、 [セキュリティ/コンプライアンスセンター](https://protection.office.com)で割り当てられます。 役割とアクセス許可の詳細については、「 [セキュリティセンターとコンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。

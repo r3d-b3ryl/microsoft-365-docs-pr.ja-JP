@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint サイトを複数地域環境内の別の地理的な場所に移動し、変更の予測をユーザーに伝達する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e96c422b1d2685c9fe3d4c8c45aa8437a6776621
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691603"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545638"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -36,13 +36,13 @@ SharePoint サイトの地域移動を使って、SharePoint サイトを複数�
 ジオ位置情報間でサイトを移動するには、全体管理者または SharePoint 管理者である必要があります。
 
 サイトの内容によりますが、約4～6時間のSharePoint サイトの地域移動中は、読み取り専用ウィンドウになります。
- 
+
 ## <a name="best-practices"></a>ベスト プラクティス
 
-- その手順に慣れるために、テスト サイトで SharePoint サイトを移動してみてください。 
-- スケジュールまたは移動を実行する前に、サイトを移動できるかどうかを検証します。 
+- その手順に慣れるために、テスト サイトで SharePoint サイトを移動してみてください。
+- スケジュールまたは移動を実行する前に、サイトを移動できるかどうかを検証します。
 - 可能であれば、地域間の移動スケジュールはユーザーへの影響を減らすために営業時間外に移動します。
-- サイトの移動前に影響を受けるユーザーに通知します。 
+- サイトの移動前に影響を受けるユーザーに通知します。
 
 ## <a name="communicating-to-your-users"></a>ユーザーへの連絡
 
@@ -62,10 +62,11 @@ SharePoint サイトの移動を事前にスケジュールすることができ
 
 - 一度に最大 4,000 件の移動をスケジュールすることができます。
 - 移動開始後はスケジュールを追加でき、常時最大 4,000 件の保留中の移動をキューに置いておけます。
- 
+
 SharePoint サイトの地域移動を後でスケジュール設定するには、移動開始時に次のいずれかのパラメーターを含みます:
+
 - `PreferredMoveBeginDate` -移動は、この指定時刻に開始されると見込まれます。
-- `PreferredMoveEndDate` -移動は、ベストエフォート方式でこの指定時刻に完了すると見込まれます。 
+- `PreferredMoveEndDate` -移動は、ベストエフォート方式でこの指定時刻に完了すると見込まれます。
 
 両方のパラメーターの時間を協定世界時 (UTC) で指定してください。
 
@@ -73,19 +74,22 @@ SharePoint サイトの地域移動を後でスケジュール設定するには
 
 SharePoint サイトの地域移動は　サイトがあるジオ位置情報でSharePoint の管理 URLから接続し、実行する必要があります。
 
-例えば、サイト URLが https://contosohealthcare.sharepoint.com/sites/Turbinesの場合、 SharePoint の管理 URL https://contosohealthcare-admin.sharepoint.com:に接続します。
+たとえば、サイトの URL がである場合、 <https://contosohealthcare.sharepoint.com/sites/Turbines> SharePoint 管理 URL に接続し <https://contosohealthcare-admin.sharepoint.com> ます。
 
-`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
+```powershell
+Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
+```
 
-![](../media/move-onedrive-between-geo-locations-image1.png)
- 
+![Connect-sposervice コマンドが表示されている SharePoint Online 管理シェルウィンドウ](../media/move-onedrive-between-geo-locations-image1.png)
+
 ### <a name="validating-the-environment"></a>環境の検証
 
 サイトの移動をスケジュールする前に、サイトが移動できるか検証することをお勧めします。
 
 サイトの移動はサポートしていません:
--    Business Connectivity Services
--    InfoPath フォーム 
+
+- Business Connectivity Services
+- InfoPath フォーム
 - Information Rights Management (IRM) テンプレートの適用
 
 すべてのジオ位置情報に互換性があることを確認するために、 `Get-SPOGeoMoveCrossCompatibilityStatus`を実行します。 すべてのジオ位置情報と、その環境が移動先のジオ位置情報と互換性があるかどうかを表示します。
@@ -102,15 +106,17 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 既定値では、サイトの最初のURL は移動先のジオ位置情報の URL に変更されます。 例:
 
-https://Contoso.sharepoint.com/sites/projectx から https://ContosoEUR.sharepoint.com/sites/projectx
+<https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projectx>
 
 Microsoft 365 グループと関連付けられていないサイトは、`-DestinationUrl` パラメーターを使ってサイト名を変更できます。 例:
 
-https://Contoso.sharepoint.com/sites/projectx から https://ContosoEUR.sharepoint.com/sites/projecty
+<https://Contoso.sharepoint.com/sites/projectx> から <https://ContosoEUR.sharepoint.com/sites/projecty>
 
 サイトの移動を開始するには、次のコマンドを実行します:
 
-`Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+```
 
 ![Start-SPOSiteContentMove コマンドレットを示す PowerShell ウィンドウのスクリーン ショット](../media/multi-geo-sharepoint-site-move-powershell.png)
 
@@ -124,7 +130,8 @@ Microsoft 365 グループの PDL を設定するには:
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-PDL を更新したら、サイトの移動を開始できます。 
+
+PDL を更新したら、サイトの移動を開始できます。
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -139,19 +146,22 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 次のコマンドレットを使用して接続している地域外でのサイトの移動状況を確認することができます。
 
 - [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (グループ接続以外のサイト)
-- Get-SPOUnifiedGroupMoveState (グループ接続のサイト)
+- [SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (グループに接続されたサイト)
 
 `-SourceSiteUrl` パラメーターを使用して、移動状況を確認したいサイトを指定します。
 
 移動状況については、次に示す表で説明します。
 
+****
+
 |状態|説明|
-|:-----|:----------|
+|---|---|
 |トリガーの準備|移動は開始されていません。|
 |スケジュール済み|移動がキューにあり、まだ開始されていません。|
 |InProgress (n/4)|移動は、検証 (1/4)、バックアップ (2/4)、復元 (3/4)、クリーンアップ (4/4) のいずれかの状態で進行中です。|
 |Success|移動は正常に完了しています。|
 |Failed|移動は失敗しました。|
+|
 
 移動に関する追加情報を確認する `-Verbose` オプションを適用することもできます。
 
@@ -215,4 +225,4 @@ PowerAppsは、移動先の位置情報で再作成する必要があります�
 
 ### <a name="data-movement-between-geo-locations"></a>ジオ位置情報間のデータ移動
 
-SharePoint にサイトとそのファイルに関連付けられているメタデータが保存されている場合は、コンテンツの Azure Blob ストレージを使用します。 その元のジオ位置情報から移動先のジオ位置情報へ移動後、サービスも関連付けられている Blob ストレージへ移動します。 BLOB ストレージは約40日で移動を完了します。 
+SharePoint にサイトとそのファイルに関連付けられているメタデータが保存されている場合は、コンテンツの Azure Blob ストレージを使用します。 その元のジオ位置情報から移動先のジオ位置情報へ移動後、サービスも関連付けられている Blob ストレージへ移動します。 BLOB ストレージは約40日で移動を完了します。

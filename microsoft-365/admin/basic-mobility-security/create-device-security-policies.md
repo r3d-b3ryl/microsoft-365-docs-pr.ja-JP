@@ -18,29 +18,29 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティを使用して、組織の情報を保護するデバイスポリシーを作成します。
-ms.openlocfilehash: eddd3454e8f00bab7a830e7710331cafd097d7de
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 322bca862c852f83406ca4622a63384b2e2275e5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430238"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545886"
 ---
-# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>基本的なモビリティとセキュリティでデバイスのセキュリティポリシーを作成する 
+# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>基本的なモビリティとセキュリティでデバイスのセキュリティポリシーを作成する
 
 基本的なモビリティとセキュリティを使用して、Microsoft 365 上の組織情報を権限のないアクセスから保護するのに役立つデバイスポリシーを作成できます。 ポリシーを組織内の任意のモバイルデバイスに適用できます。これには、デバイスのユーザーに Microsoft 365 ライセンスが適用されており、基本的なモビリティとセキュリティでデバイスが登録されています。
 
 ## <a name="before-you-begin"></a>はじめに
 
->[!IMPORTANT]
->モバイルデバイスポリシーを作成する前に、をアクティブにして、基本的なモビリティとセキュリティを設定する必要があります。 詳細については、「基本的なモビリティとセキュリティの概要」を参照してください。
+> [!IMPORTANT]
+> モバイルデバイスポリシーを作成する前に、をアクティブにして、基本的なモビリティとセキュリティを設定する必要があります。 詳細については、「基本的なモビリティとセキュリティの概要」を参照してください。
 
 - 基本的なモビリティとセキュリティがサポートするデバイス、モバイルデバイスアプリ、セキュリティ設定について説明します。 「 [基本的なモビリティとセキュリティの機能](capabilities.md)」を参照してください。
 - ポリシーの展開先となる Microsoft 365 ユーザーを含むセキュリティグループを作成します。また、Microsoft 365 へのアクセスをブロックすることから除外することをお勧めします。 新しいポリシーを組織に展開する前に、少数のユーザーに展開することによってポリシーをテストすることをお勧めします。 自分だけを含むセキュリティグループを作成して使用することができます。または、ポリシーをテストできる Microsoft 365 ユーザーの数が少なくなります。 セキュリティグループの詳細については、「 [セキュリティグループを作成、編集、または削除](https://go.microsoft.com/fwlink/p/?LinkId=518555)する」を参照してください。
 - Microsoft 365 で基本的なモビリティおよびセキュリティポリシーを作成して展開するには、Microsoft 365 グローバル管理者である必要があります。詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)」を参照してください。
 - ポリシーを展開する前に、基本的なモビリティとセキュリティにおいて、デバイスの登録が受ける可能性のある影響を組織が理解できるようにしてください。 ポリシーの設定方法によっては、準拠していないデバイスから Microsoft 365 およびデータへのアクセスをブロックすることができます。これには、インストールされたアプリケーション、写真、および登録済みデバイス上の個人情報を含めることができます。また、データを削除することもできます。
 
->[!NOTE]
->Microsoft 365 Business Standard 用 MDM で作成されるポリシーとアクセスルール exchange ActiveSync モバイルデバイスメールボックスポリシーと、Exchange 管理センターで作成されたデバイスアクセスルールを上書きします。 Microsoft 365 Business Standard の MDM にデバイスを登録した後、デバイスに適用された Exchange ActiveSync モバイルデバイスメールボックスポリシーまたはデバイスアクセスルールは無視されます。 Exchange ActiveSync の詳細については、「exchange [activesync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380)」を参照してください。
+> [!NOTE]
+> Microsoft 365 Business Standard 用 MDM で作成されるポリシーとアクセスルール exchange ActiveSync モバイルデバイスメールボックスポリシーと、Exchange 管理センターで作成されたデバイスアクセスルールを上書きします。 Microsoft 365 Business Standard の MDM にデバイスを登録した後、デバイスに適用された Exchange ActiveSync モバイルデバイスメールボックスポリシーまたはデバイスアクセスルールは無視されます。 Exchange ActiveSync の詳細については、「exchange [activesync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380)」を参照してください。
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>手順 1: デバイスポリシーを作成してテストグループに展開する
 
@@ -50,7 +50,7 @@ ms.locfileid: "47430238"
 
 2. [**ポリシーの作成**] を選択します。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なモビリティおよびセキュリティポリシーの設定":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なモビリティおよびセキュリティポリシーの設定":::
 
 3. [ **ポリシー設定** ] ページで、組織内のモバイルデバイスに適用する要件を指定します。
 
@@ -71,7 +71,7 @@ ms.locfileid: "47430238"
 3. ポリシーが適用されているユーザーデバイスの状態を確認します。 デバイスの **状態** を管理する場合 **。**
 4. デバイスを選択した後に、[ **出荷時の設定にリセット** ] または [ **会社データ** を **管理** から削除] ボタンをクリックして、デバイスの完全なワイプまたは選択解除を行うこともできます。 手順については、「Microsoft 365 でモバイルデバイスをワイプする」を参照してください。
 
-手順 3: 組織にポリシーを展開する
+## <a name="step-3-deploy-a-policy-to-your-organization"></a>手順 3: 組織にポリシーを展開する
 
 デバイスポリシーを作成し、予期したとおりに動作することを確認したら、それを組織に展開します。
 
@@ -85,7 +85,7 @@ ms.locfileid: "47430238"
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>手順 4: サポートされていないデバイスの電子メールアクセスをブロックする
 
-組織情報を保護するために、基本的なモビリティとセキュリティでサポートされていないモバイルデバイスに対する Microsoft 365 メールへのアプリのアクセスをブロックする必要があります。 サポートされているデバイスの一覧については、「 [サポートされるデバイス](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)」を参照してください。 
+組織情報を保護するために、基本的なモビリティとセキュリティでサポートされていないモバイルデバイスに対する Microsoft 365 メールへのアプリのアクセスをブロックする必要があります。 サポートされているデバイスの一覧については、「 [サポートされるデバイス](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)」を参照してください。
 
 **アプリのアクセスをブロックするには**
 
@@ -93,7 +93,7 @@ ms.locfileid: "47430238"
 2. [ **組織全体のデバイスアクセス設定の管理**] を選択します。
 3. サポートされていないデバイスをブロックするには、 **MDM が Microsoft 365 用にサポート**していない場合は、[**ブロック**] を選択し、[**保存**] を選択します。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本的なモビリティおよびセキュリティブロックアクセスオプション":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本的なモビリティおよびセキュリティブロックアクセスオプション":::
 
 ## <a name="step-5-choose-security-groups-to-be-excluded-from-conditional-access-checks"></a>手順 5: 条件付きアクセスチェックから除外するセキュリティグループを選択する
 
@@ -103,7 +103,7 @@ ms.locfileid: "47430238"
 
 2. [ **組織全体のデバイスアクセス設定の管理**] を選択します。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なモビリティとセキュリティ [ポリシーの作成] オプション":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なモビリティとセキュリティ [ポリシーの作成] オプション":::
 
 3. [ **追加** ] を選択して、ユーザーが Microsoft 365 へのアクセスをブロックされないようにするセキュリティグループを追加します。 ユーザーがこのリストに追加されている場合、サポートされていないデバイスを使用しているときに Microsoft 365 メールにアクセスできます。
 
@@ -113,7 +113,7 @@ ms.locfileid: "47430238"
 
 6. [ **組織全体のデバイスアクセス設定** ] パネルで、[ **保存**] を選択します。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="基本的なモビリティおよびセキュリティ許可のアクセスオプション":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="基本的なモビリティおよびセキュリティ許可のアクセスオプション":::
 
 ## <a name="what-is-the-impact-of-security-policies-on-different-device-types"></a>さまざまなデバイスの種類に対するセキュリティポリシーの影響について
 
@@ -121,33 +121,34 @@ ms.locfileid: "47430238"
 
 |**セキュリティポリシー**|**Android 4 以降**|**Samsung KNOX**|**iOS 6 以降**|**注**|
 |:-----|:-----|:-----|:-----|:-----|
-|暗号化されたバックアップを要求|いいえ|はい|はい|iOS の暗号化されたバックアップが必要です。|
+|暗号化されたバックアップを要求|不要|はい|はい|iOS の暗号化されたバックアップが必要です。|
 |クラウド バックアップの禁止|はい|はい|はい|Android での Google バックアップをブロックする (淡色表示)、iOS でのクラウドバックアップ。|
-|ドキュメントの同期の禁止|いいえ|いいえ|はい|iOS: クラウド内のドキュメントをブロックします。|
-|写真の同期の禁止 |いいえ|いいえ|はい|iOS (ネイティブ): 写真ストリームをブロックします。|
-|画面キャプチャの禁止 |いいえ|はい|はい|試行時にブロックされます。|
-|ビデオ会議をブロックする |いいえ|いいえ|はい|FaceTime が iOS でブロックされ、Skype またはその他のユーザーにはブロックされています。|
-|診断データの送信をブロックする |いいえ|はい|はい|Android で Google crash レポートを送信することを禁止します。|
-|アプリストアへのアクセスをブロックする |いいえ|はい|はい|Android のホームページに [アプリストア] アイコンがありません。 Windows では無効です。 iOS にはありません。|
-|アプリストアにパスワードを要求する |いいえ|いいえ|はい|iOS: iTunes 購入にはパスワードが必要です。|
-|リムーバブル記憶域への接続をブロックする |いいえ|はい|該当なし|Android: SD カードが [設定] で灰色表示され、Windows によってユーザーに通知されるが、インストールされているアプリを使用できない|
-|Bluetooth 接続の禁止 |メモを参照|メモを参照|必要|Android の設定として BlueTooth を無効にすることはできません。 その代わりに、BlueTooth を必要とするすべてのトランザクションを無効にします。 Advanced Audio Distribution、Audio/Video リモートコントロール、ハンズフリーデバイス、ヘッドセット、電話帳アクセス、およびシリアルポート。 これらのいずれかが使用されている場合は、ページの下部に小さなトーストメッセージが表示されます。|
+|ドキュメントの同期の禁止|不要|不要|はい|iOS: クラウド内のドキュメントをブロックします。|
+|写真の同期の禁止 |不要|不要|はい|iOS (ネイティブ): 写真ストリームをブロックします。|
+|画面キャプチャの禁止 |不要|はい|はい|試行時にブロックされます。|
+|ビデオ会議をブロックする |不要|不要|はい|FaceTime が iOS でブロックされ、Skype またはその他のユーザーにはブロックされています。|
+|診断データの送信をブロックする |不要|はい|はい|Android で Google crash レポートを送信することを禁止します。|
+|アプリストアへのアクセスをブロックする |不要|はい|はい|Android のホームページに [アプリストア] アイコンがありません。 Windows では無効です。 iOS にはありません。|
+|アプリストアにパスワードを要求する |不要|不要|はい|iOS: iTunes 購入にはパスワードが必要です。|
+|リムーバブル記憶域への接続をブロックする |不要|はい|該当なし|Android: SD カードが [設定] で灰色表示され、Windows によってユーザーに通知されるが、インストールされているアプリを使用できない|
+|Bluetooth 接続の禁止 |メモを参照|メモを参照|はい|Android の設定として BlueTooth を無効にすることはできません。 その代わりに、BlueTooth を必要とするすべてのトランザクションを無効にします。 Advanced Audio Distribution、Audio/Video リモートコントロール、ハンズフリーデバイス、ヘッドセット、電話帳アクセス、およびシリアルポート。 これらのいずれかが使用されている場合は、ページの下部に小さなトーストメッセージが表示されます。|
 
 ## <a name="what-happens-when-you-delete-a-policy-or-remove-a-user-from-the-policy"></a>ポリシーを削除したり、ポリシーからユーザーを削除したりするとどうなりますか。
 
 ポリシーを削除するか、ポリシーが展開されたグループからユーザーを削除すると、ポリシー設定、Microsoft 365 電子メールプロファイル、およびキャッシュされたメールがユーザーのデバイスから削除されることがあります。 次の表を参照して、さまざまなデバイスの種類について何が削除されているかを確認してください。
 
 |**削除された機能**|**iOS 6 以降**|**Android 4 以降 (Samsung KNOX を含む)**|
-|:-----|:-----|:----------------------|
-|管理された電子メールプロファイル<sup>1</sup>|必要|いいえ|
-|クラウド バックアップの禁止|必要|いいえ|
-<sup>1</sup>[ **電子メールプロファイルを管理** する] オプションを選択してポリシーを展開した場合は、そのプロファイルで管理された電子メールプロファイルとキャッシュされたメールがユーザーデバイスから削除されます。
+|:-----|:-----|:-----|
+|管理された電子メールプロファイル<sup>1</sup>|はい|不要|
+|クラウド バックアップの禁止|はい|不要|
+
+<sup>1</sup> [ **電子メールプロファイルを管理** する] オプションを選択してポリシーを展開した場合、そのプロファイルで管理された電子メールプロファイルとキャッシュされたメールがユーザーデバイスから削除されます。
 
 ポリシーが適用されるユーザーごとに、そのポリシーがモバイルデバイスから削除されます。このポリシーは、次にデバイスが基本的なモビリティとセキュリティでチェックインするときに適用されます。 これらのユーザーデバイスに適用される新しいポリシーを展開すると、基本的なモビリティとセキュリティで再登録するように求めるメッセージが表示されます。
 
-また、デバイスを完全に消去するか、またはデバイスから組織情報を選択的に消去することもできます。 詳細については、「 [Basic Mobility And Security でモバイルデバイスをワイプする](wipe-mobile-device.md)」を参照してください。 
+また、デバイスを完全に消去するか、またはデバイスから組織情報を選択的に消去することもできます。 詳細については、「 [Basic Mobility And Security でモバイルデバイスをワイプする](wipe-mobile-device.md)」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [基本的なモビリティとセキュリティの概要](overview.md)
 

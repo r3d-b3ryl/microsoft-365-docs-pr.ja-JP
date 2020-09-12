@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Office 365 ドイツについて説明します。
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307279"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545920"
 ---
 # <a name="learn-about-office-365-germany"></a>Office 365 Germany の詳細
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307279"
 
 Office 365 ドイツは、ヨーロッパ全域で利用可能な Office 365 サービスの差別化オプションです。 この記事では、ドイツの法律に準拠した、ドイツ語のデータセンターから、デジタル作業のための業界トップの生産性サービスを提供し、ドイツの法律で規定された固有のデータによって管理することによって、ドイツ、欧州連合 (EU)、および欧州自由貿易協会 (EFTA) のニーズを解決しました
   
-データ受託者として、Deutsche Telekom の子会社である、ドイツの独立企業 T-Systems International が、顧客データへの物理的および論理的アクセスを制御します。ドイツ法に準拠した、データ受託者による承認や監督がなければ、顧客データにアクセスすることはできません。
+データ受託者として、Deutsche Telekom の子会社である、ドイツの独立企業 T-Systems International が、顧客データへの物理的および論理的アクセスを制御します。 お客様のデータには、ドイツの法律によって管理されるデータトラスティによる承認なしでアクセスすることはできません。
   
-お客様のニーズを移行し、Office 365 ドイツの分離により、お客様が望む柔軟性と一貫性に対応できるようになりました。 2018年8月から、新しいお客様を受け入れたり、現在利用可能な Microsoft クラウドドイツから新しいサービスを展開したりすることはなくなりました。 詳細については、次のブログ投稿を参照してください。 [2019 のドイツで新しい datacentres からクラウドサービスを提供し、顧客の変化に対応できる](https://go.microsoft.com/fwlink/p/?linkid=839016)ようにします。
+お客様のニーズがシフトされ、Office 365 ドイツの分離により、お客様が求める柔軟性と一貫性に対処できるようになりました。 2018年8月以降、新しいお客様を受け入れたり、現在利用可能な Microsoft クラウドドイツから新しいサービスを展開したりすることはなくなりました。 詳細については、次のブログ投稿を参照してください。 [2019 のドイツで新しい datacentres からクラウドサービスを提供し、顧客の変化に対応できる](https://go.microsoft.com/fwlink/p/?linkid=839016)ようにします。
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>Office 365 Germany で利用できる Microsoft オンライン サービス
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>Office 365 ドイツで利用可能な Microsoft online サービスを教えてください。
 
 Office 365 ドイツプランのオファーリングは、この分離された環境で可能な限り、グローバルな提供に沿っています。 除外項目には、Yammer 関連のプラン、廃止目前のプラン、非営利のプログラムを通じて利用可能なプランが含まれます。 Office 365 E5、SPE、およびその他のサービスは、Office 365 ドイツの ga 後に利用可能になります。 
   
@@ -89,7 +89,7 @@ Office 365 ドイツプランのオファーリングは、この分離された
   
 ## <a name="general-information"></a>一般情報
 
-|||
+|アイテム|情報|
 |-----|-----|
 |ポータルにサインインする  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |サブスクリプション、課金、技術サポート  <br/> |ドイツ語と英語で利用可能なドイツ語ベースのサポート詳細については、「一般 [法人向けサポートへのお問い合わせ-管理者向けヘルプ](../contact-support-for-business-products.md)」を参照してください。  <br/> |

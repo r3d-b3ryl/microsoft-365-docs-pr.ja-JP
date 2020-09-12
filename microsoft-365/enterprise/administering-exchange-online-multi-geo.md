@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: PowerShell を使用して Microsoft 365 環境の Exchange Online の複数地域設定を管理する方法について説明します。
-ms.openlocfilehash: 645d48066ca02dbf3480e20ae30dc187f84293cf
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 996566d67aa8ba7ebca1406cd5d6265458637fee
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691617"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546248"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>複数地域環境での Exchange Online メールボックスの管理
 
-Microsoft 365 環境で複数地域プロパティを表示および構成するには、リモート PowerShell が必要です。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)」を参照してください。
+Microsoft 365 環境で複数の geo プロパティを表示および構成するには、Exchange Online PowerShell が必要です。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 ユーザー オブジェクトの **PreferredDataLocation** プロパティを参照するには、v1.x に [Microsoft Azure Active Directory PowerShell モジュール](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 以降が必要です。 AAD Connect 経由で AAD に同期されたユーザー オブジェクトでは、**PreferredDataLocation** 値を AAD PowerShell 経由で直接変更することはできません。 クラウド専用ユーザー オブジェクトは、AAD PowerShell 経由で変更できます。 Azure AD PowerShell に接続するには、「[PowerShell への接続](connect-to-microsoft-365-powershell.md)」を参照してください。
 
@@ -29,9 +29,37 @@ Microsoft 365 環境で複数地域プロパティを表示および構成する
 
 通常、Exchange Online PowerShellは地理上の中央位置に接続します。 しかし、衛星の地理的位置に直接接続することもできます。 パフォーマンスが向上するため、その場所にいるユーザーのみを管理している場合は、衛星地域に直接接続することをお勧めします。
 
-特定の地域の場所に接続する場合、*ConnectionUri* パラメーターは、通常の接続手順とは異なります。 残りのコマンドと値は同じです。 手順は次のとおりです。
+EXO V2 モジュールをインストールして使用するための要件は、「[EXO V2 モジュールをインストールして維持する](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)」に記載されています。
 
-1. ローカル コンピューターで、Windows PowerShell を開き、次のコマンドを実行します。
+Exchange Online の PowerShell を特定の地域の場所に接続するために、 *Connectionuri* パラメーターは通常の接続手順とは異なります。 残りのコマンドと値は同じです。
+
+具体的には、 `?email=<emailaddress>` _connectionuri_ 値の末尾に値を追加する必要があります。 `<emailaddress>` は、対象と **なる** 地域の場所にあるメールボックスの電子メールアドレスです。 そのメールボックスへのアクセス許可または資格情報への関係は、要因ではありません。電子メールアドレスは、接続先の Exchange Online PowerShell に対してのみを指定します。
+
+Microsoft 365 または Microsoft 365 GCC のお客様は、通常、 _Connectionuri_ パラメーターを使用して Exchange Online PowerShell に接続する必要はありません。 ただし、特定の地域の場所に接続するには、値でを使用できるように、 _Connectionuri_ パラメーターを使用する必要があり `?email=<emailaddress>` ます。
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>多要素認証 (MFA) を使用して Exchange Online PowerShell で地理的位置に接続する
+
+1. Windows PowerShell ウィンドウで、次のコマンドを実行して EXO V2 モジュールを読み込みます。
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. 次の例では、admin@contoso.onmicrosoft.com は管理者アカウントで、ターゲット地域の場所はメールボックス olga@contoso.onmicrosoft.com が存在する場所です。
+
+  ```powershell
+  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
+  ```
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>MFA を使用せずに Exchange Online PowerShell で地理的位置に接続する
+
+1. Windows PowerShell ウィンドウで、次のコマンドを実行して EXO V2 モジュールを読み込みます。
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. 次のコマンドを実行します。
 
    ```powershell
    $UserCredential = Get-Credential
@@ -39,23 +67,11 @@ Microsoft 365 環境で複数地域プロパティを表示および構成する
 
    **[Windows PowerShell 資格情報の要求]** ダイアログ ボックスで、職場または学校のアカウントとパスワードを入力してから **[OK]** をクリックします。
 
-2. `<emailaddress>` をターゲットの地域の場所にある**任意の**メールボックスの電子メールアドレスに置き換えます。 メールボックスのアクセス許可、および手順 1 の認証情報との関係は重要ではありません。電子メールアドレスによって、接続先が Exchange Online に通知されるだけです。
-  
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
-   ```
-
-   たとえば、olga@contoso.onmicrosoft.com が、接続したい地理的位置で有効なメール ボックスのメール アドレスである場合、次のコマンドを実行します。
+3. 次の例では、ターゲットの地理的位置はメールボックス olga@contoso.onmicrosoft.com が存在する場所です。
 
    ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
+   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
-
-3. 次のコマンドを実行します。
-
-    ```powershell
-    Import-PSSession $Session
-    ```
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Exchange Online 組織で構成されている使用可能な地域の場所を表示する
 
@@ -135,14 +151,13 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 ```
 
 > [!NOTE]
+>
 > - 前述したように、オンプレミスの Active Directory から同期されたユーザーオブジェクトに対して、この手順を使用することはできません。 Active Directory で **PreferredDataLocation** 値を変更し、それを AAD Connect を使用して同期させる必要があります。 詳細については、「[Azure Active Directory Connect 同期: Microsoft 365 リソースの優先されるデータの場所を構成する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)」を参照してください。
-> 
+>
 > - メールボックスを新しい地域の場所に再配置するための所要時間は次のいくつかの要素によって決まります。
-> 
+>
 >   - メールボックスのサイズと種類。
-> 
 >   - 移行されるメールボックスの数。
-> 
 >   - リソース移動の可用性。
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>訴訟ホールド中の無効のメールボックスを移動する
@@ -172,17 +187,11 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 この例では、次の値を使用して Elizabeth Brunner 用に新しいユーザー アカウントを作成します。
 
 - ユーザー プリンシパル名: ebrunner@contoso.onmicrosoft.com
-
 - 名: Elizabeth
-
 - 姓: Brunner
-
 - 表示名：Elizabeth Brunner
-
 - パスワード: ランダムに生成され、コマンドの結果に表示される (*パスワード* パラメーターを使用していないため)
-
 - ライセンス：`contoso:ENTERPRISEPREMIUM`（E5）
-
 - 場所: オーストラリア (AUS)
 
 ```powershell

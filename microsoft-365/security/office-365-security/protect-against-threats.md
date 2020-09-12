@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Microsoft 365 の脅威保護について学習し、組織での使用方法を構成することができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b96ba1735f94e80450fa4f604fc45dc60b80d12
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417124"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547364"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -230,17 +230,17 @@ SharePoint、OneDrive、Teams などのワークロードは、共同作業の�
 
 5. 組織の [安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md) と [安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認し、必要に応じて編集します。
 
-6. 勧めグローバル管理者または SharePoint Online 管理者として、 _DisallowInfectedFileDownload_パラメーターを*true*に設定して**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行します。
+6. 勧めグローバル管理者または SharePoint Online 管理者として、 _DisallowInfectedFileDownload_パラメーターをに設定して**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行し `$true` ます。
 
-   - このパラメーターを *true* に設定すると、検出されたファイルのすべてのアクション (削除を除く) がブロックされます。 ユーザーは、検出されたファイルを開いたり、移動、コピー、または共有したりできません。
+   - `$true` 検出されたファイルのすべてのアクション (削除を除く) をブロックします。 ユーザーは、検出されたファイルを開いたり、移動、コピー、または共有したりできません。
+   - `$false` 削除とダウンロード以外のすべてのアクションをブロックします。 ユーザーは、リスクを容認し、検出されたファイルをダウンロードすることを選択できます。
 
-   - パラメーターを *false* に設定すると、削除とダウンロード以外のすべてのアクションがブロックされます。 ユーザーは、リスクを容認し、検出されたファイルをダウンロードすることを選択できます。
-   > [!TIP] Microsoft 365 での PowerShell の使用の詳細については、「 [Manage microsoft 365 With powershell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)」を参照してください。
+   > [!TIP]
+   > Microsoft 365 での PowerShell の使用の詳細については、「 [Manage microsoft 365 With powershell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)」を参照してください。
 
 7. 変更がすべての Microsoft 365 データセンターに蔓延するまで最大30分かかります。
 
-
-#### <a name="now-set-up-alerts-for-detected-files"></a>検出されたファイルの通知を設定する
+### <a name="now-set-up-alerts-for-detected-files"></a>検出されたファイルの通知を設定する
 
 SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別された場合に通知を受け取るには、警告を設定します。
 
@@ -256,7 +256,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
    a. [ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。
 
-   b. [ **ユーザー** ] フィールドは空のままにします。
+   b.  [ **ユーザー** ] フィールドは空のままにします。
 
 6. [ **この通知を送信する** ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。
 
@@ -266,9 +266,10 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 > [!NOTE]
 > 構成が完了したら、次のリンクを使用してワークロード調査を開始します。
->- [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
->- [SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出された場合の対処方法](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [Microsoft 365 で管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md) 
+>
+> - [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
+> - [SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出された場合の対処方法](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Microsoft 365 で管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>パート 6-構成する追加設定
 
