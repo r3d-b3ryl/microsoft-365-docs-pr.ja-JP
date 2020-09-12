@@ -80,7 +80,7 @@ ms.locfileid: "46845767"
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|
-|Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付ける - すべてのプラットフォームでの手動によるラベル付けのサポートを含む |[Office アプリで秘密度ラベルを使用する](sensitivity-labels-office-apps.md)|
+|Office アプリの秘密度ラベルを管理して、コンテンツの作成時にラベルを付けられるようにする (すべてのプラットフォームでの手動によるラベル付けのサポートを含む) |[Office アプリで秘密度ラベルを使用する](sensitivity-labels-office-apps.md)|
 |ユーザーが Office アプリ、エクスプローラー、および PowerShell を使用して、Windows コンピューターからファイルにラベルを付けて保護できるようにする|[Windows 用のAzure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |秘密度ラベルを使用してドキュメントやメールを暗号化し、そのコンテンツにアクセスできるユーザーとその使用方法を制限する |[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)|
 |ドキュメントが暗号化されている場合でも、共同編集、電子情報開示、データ損失防止、検索をサポートし、Office on the web の秘密度ラベルを有効にする | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
