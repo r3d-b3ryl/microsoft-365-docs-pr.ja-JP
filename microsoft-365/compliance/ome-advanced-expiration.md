@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 の高度なメッセージ暗号化を使用して、カスタムブランド化されたテンプレートを使用して電子メールの有効期限を設定することにより、電子メールのセキュリティを拡張します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e929ce1d948a83a98cca6fa35a65b80a2fc9ef15
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818690"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546161"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
 
@@ -40,7 +40,7 @@ Office 365 Advanced Message Encryption では、カスタムブランドを適�
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>PowerShell を使用してメールの有効期限を強制するカスタムブランド化テンプレートを作成する
 
-1. 組織のグローバル管理者のアクセス許可を持つアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)します。
+1. 組織のグローバル管理者のアクセス許可を持つアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 2. OMEConfiguration 新しいコマンドレットを実行します。
 
@@ -50,9 +50,9 @@ Office 365 Advanced Message Encryption では、カスタムブランドを適�
 
 ここで、
 
-- `Identity`は、カスタムテンプレートの名前です。
+- `Identity` は、カスタムテンプレートの名前です。
 
-- `ExternalMailExpiryInDays`受信者が期限切れになる前にメールを保持できる日数を指定します。 1から730日までの任意の値を使用できます。
+- `ExternalMailExpiryInDays` 受信者が期限切れになる前にメールを保持できる日数を指定します。 1から730日までの任意の値を使用できます。
 
 ## <a name="more-information-about-office-365-advanced-message-encryption"></a>Office 365 の詳細なメッセージの暗号化に関する詳細情報
 

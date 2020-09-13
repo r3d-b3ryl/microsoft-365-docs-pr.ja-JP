@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 新しいメッセージ保護機能がどのように機能するかについての質問がありますか。 ここで回答を確認してください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798189"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546061"
 ---
 # <a name="message-encryption-faq"></a>メッセージ暗号化に関する FAQ
 
@@ -120,7 +120,7 @@ Outlook on the web、outlook for iOS、outlook for Android では、追加の手
 
 Outlook デスクトップは、PDF 添付ファイルの暗号化をネイティブにサポートしていません。 代わりに、Exchange メールフロールールまたは DLP を設定して、最初に PDF 添付ファイルに暗号化を適用する必要があります。 PDF 形式の添付ファイルを使用して Outlook デスクトップからメールを送信する場合、クライアントは、まず添付ファイル付きのメッセージをサービスに送信します。 サービスは、ファイルを受信すると、Exchange Online のデータ損失防止 (DLP) ポリシーまたはメールフロールールの OME 保護を適用します。 次に、Exchange Online は、保護された PDF ファイル添付ファイルを含むメッセージを送信します。
 
-PDF 添付ファイルの暗号化を有効にするには、 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)で次のコマンドを実行します。
+PDF 添付ファイルの暗号化を有効にするには、 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)で次のコマンドを実行します。
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
@@ -186,8 +186,8 @@ Not yet. OneDrive for Business の添付ファイルはサポートされてお�
 | Outlook on the web | はい | はい                |
 | Outlook for Windows| はい | はい                |
 | Outlook for Mac    | はい | はい                |
-| Outlook for Android| はい | いいえ                 |
-| Outlook for iOS    | はい | いいえ                 |
+| Outlook for Android| はい | 不要                 |
+| Outlook for iOS    | はい | 不要                 |
 |
 
 現在、次の2つの既知の制限があります。

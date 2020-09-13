@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、および調整する方法について説明します。
-ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648784"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546937"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーを作成、テスト、調整する
 
@@ -46,7 +46,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     
 2. セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページで役割グループを作成します。 
 
-3. 役割グループの作成時に、 **[役割の選択**] セクションを使用して、次の役割を役割グループに追加します。 **DLP コンプライアンス管理**。
+3. 役割グループの作成時に、 **[役割の選択** ] セクションを使用して、次の役割を役割グループに追加します。 **DLP コンプライアンス管理**。
     
 4. **メンバーの選択**セクションを使用して、以前に作成した Microsoft 365 グループを役割グループに追加します。
 
@@ -69,7 +69,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 - "新しいラップトップをご注文いただくことができます。 VISA カード1111-1111-1111-1111、有効期限11/22、および自分が所有しているときに送信する予定の日付を送信する
 - "My ラップトップのシリアル番号は2222-2222-2222-2222 で、11/2010 で購入されました。 ところで、旅行 visa は承認されていますか?
 
-ブックマークを保持するための適切な参照は、[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)で、各情報の種類が検出される方法を説明しています。
+ブックマークを保持するための適切な参照は、 [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md) で、各情報の種類が検出される方法を説明しています。
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>データ損失防止を開始する場所
 
@@ -77,7 +77,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 Exchange Online の DLP ポリシーは、Exchange 管理センターを介して管理できます。 ただし、セキュリティ/コンプライアンス センターを介してすべてのワークロードの DLP ポリシーを構成できるため、この記事のデモではこれを使用します。 セキュリティ/コンプライアンス センターでは、[**データ損失防止**] >  [**ポリシー**] の下に DLP ポリシーがあります。 [**ポリシーの作成**] をクリックして開始します。
 
-Microsoft 365 には、DLP ポリシーの作成に使用できる一連の[dlp ポリシーテンプレート](what-the-dlp-policy-templates-include.md)が用意されています。 例えば、ここがオーストラリアの企業だとしましょう。 ポリシー テンプレートをフィルター処理し、オーストラリアに関連するもののみを表示できます。これらは金融、医療、健康、プライバシーの一般カテゴリに分類されます。
+Microsoft 365 には、DLP ポリシーの作成に使用できる一連の [dlp ポリシーテンプレート](what-the-dlp-policy-templates-include.md) が用意されています。 例えば、ここがオーストラリアの企業だとしましょう。 ポリシー テンプレートをフィルター処理し、オーストラリアに関連するもののみを表示できます。これらは金融、医療、健康、プライバシーの一般カテゴリに分類されます。
 
 ![国または地域を選択するオプション](../media/DLP-create-test-tune-choose-country.png)
 
@@ -113,7 +113,7 @@ Microsoft 365 には、DLP ポリシーの作成に使用できる一連の[dlp 
 
 ## <a name="test-a-dlp-policy"></a>DLP ポリシーをテストする
 
-新しい DLP ポリシーは、約 1 時間以内に有効になります。 通常のユーザー アクティビティによってトリガーされるのを待つことも、試しに自分でトリガーすることもできます。 前述の[「機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」にリンクされており、DLP 一致をトリガーする方法に関する情報を提供します。
+新しい DLP ポリシーは、約 1 時間以内に有効になります。 通常のユーザー アクティビティによってトリガーされるのを待つことも、試しに自分でトリガーすることもできます。 前述の [「機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)」にリンクされており、DLP 一致をトリガーする方法に関する情報を提供します。
 
 例として、この記事のために作成した DLP ポリシーはオーストラリアのタックス ファイル ナンバー (TFN) を検出します。 ドキュメントによると、一致は以下の基準に基づいています。
 
@@ -210,7 +210,7 @@ DLP ポリシー テンプレートは、そのままでは完璧ではありま
 
 インスタンス数の変更に加えて、一致の精度 (または信頼レベル) を調整することもできます。 機密情報の種類に複数のパターンがある場合、ルールが特定のパターンのみに一致するように、ルールの一致の精度を調整できます。 たとえば、誤検出を減らすためにルールの一致の精度を設定して、最も高い信頼レベルを持つパターンのみと一致するようにできます。 信頼レベルの計算方法を理解することは少し難しい (そしてこの投稿の範囲を超えている) のですが、ここに[信頼レベルを使用してルールを調整する方法](data-loss-prevention-policies.md#match-accuracy)の良い説明があります。
 
-さらに高度な機能を利用する場合は、機密情報の種類をカスタマイズすることができます。たとえば、[オーストラリアドライバーのライセンス番号](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)のキーワードの一覧から "シドニー NSW" を削除して、上記の誤検知を排除することができます。 XML および PowerShell を使用してこれを行う方法については、[組み込みの機密情報の種類のカスタマイズ](customize-a-built-in-sensitive-information-type.md)に関するこのトピックを参照してください。
+さらに高度な機能を利用する場合は、機密情報の種類をカスタマイズすることができます。たとえば、 [オーストラリアドライバーのライセンス番号](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)のキーワードの一覧から "シドニー NSW" を削除して、上記の誤検知を排除することができます。 XML および PowerShell を使用してこれを行う方法については、[組み込みの機密情報の種類のカスタマイズ](customize-a-built-in-sensitive-information-type.md)に関するこのトピックを参照してください。
 
 ## <a name="turn-on-a-dlp-policy"></a>DLP ポリシーを有効にする
 
@@ -218,7 +218,7 @@ DLP ポリシーが機密情報の種類を正確かつ効果的に検出し、�
 
 ![ポリシーをオンにするオプション](../media/DLP-create-test-tune-turn-on-policy.png)
  
-ポリシーを有効にする時期を待っている場合には、[セキュリティ/コンプライアンス センターの PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)、[Get-DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps)を実行して DistributionStatus を確認します。
+ポリシーを有効にする時期を待っている場合には、[セキュリティ/コンプライアンス センターの PowerShell に接続し](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)、[Get-DlpCompliancePolicy コマンドレット](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy)を実行して DistributionStatus を確認します。
 
 ![PowerShell でコマンドレットを実行する](../media/DLP-create-test-tune-PowerShell.png)
 
