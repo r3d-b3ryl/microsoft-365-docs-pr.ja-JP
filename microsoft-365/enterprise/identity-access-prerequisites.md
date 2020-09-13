@@ -16,18 +16,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357976"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547206"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
 この記事では、推奨される id とデバイスのアクセスポリシーを展開する前に実装する必要がある前提条件について説明します。 この記事では、推奨される既定のプラットフォームクライアント構成についても説明します。これには、ユーザーに最適なシングルサインオン (SSO) の機能、および条件付きアクセスの技術的な前提条件が提供されます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 推奨される id とデバイスのアクセスポリシーを実装する前に、365 365 次のような前提条件を満たす必要があります。
 
@@ -40,7 +40,7 @@ ms.locfileid: "47357976"
 
 | 構成 | 例外 |
 | :------------- | :-----------: |
-|  [パスワードハッシュの同期を構成](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)します。 これを有効にして、リークした資格情報を検出し、リスクベースの条件付きアクセスに対して動作するようにする必要があります。 **注:** これは、組織でハイブリッドフェデレーション認証を使用するかどうかに関係なく必要になります。 |  クラウド専用 |
+|  [PHS を構成](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)します。  これを有効にして、リークした資格情報を検出し、リスクベースの条件付きアクセスに対して動作するようにする必要があります。 **注:** これは、組織がフェデレーション認証を使用しているかどうかに関係なく必要になります。 |  クラウド専用 |
 | ユーザーが組織のネットワークに接続されている組織のデバイス上にいるときに、ユーザーに対して自動的にサインインするために、[シームレスなシングルサインオンを有効](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso)にします。 | クラウドのみとフェデレーション  |
 | [名前付きネットワークを構成します](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection は使用できるすべてのセッション データを収集し、分析してリスク スコアを生成します。 「Networks configuration」という名前の Azure AD で、組織のパブリック IP 範囲をネットワークに指定することをお勧めします。 これらの範囲から来たトラフィックにはリスクスコアが減少し、組織環境外からのトラフィックにはより高いリスクスコアが与えられます。 | |
 |[セルフサービスのパスワードのリセット (SSPR) および多要素認証 (MFA) に対して、すべてのユーザーを登録](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)します。 事前に Azure 多要素認証を使用するようにユーザーを登録することをお勧めします。 Azure AD Identity Protection は、Azure の多要素認証を使用して、追加のセキュリティ検証を実行します。 さらに、お客様のデバイスに [Microsoft Authenticator アプリ](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) と Microsoft ポータルサイトアプリをインストールすることをお勧めします。 これらは、各プラットフォームのアプリストアからインストールできます。 | |
@@ -49,7 +49,7 @@ ms.locfileid: "47357976"
 | [オンプレミス AD へのパスワード ライトバックを構成します](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 パスワードの書き戻しを使用すると、高リスクなアカウントの侵害が検出されたときに、ユーザーがオンプレミスのパスワードを変更するよう要求することができます。 この機能を有効にするには、次の2つの方法のいずれかを使用します。 Azure AD Connect セットアップウィザードの [オプション機能] 画面で **パスワードの書き戻し** を有効にするか、Windows PowerShell で有効にすることができます。 | クラウド専用 |
 | [AZURE AD パスワード保護を構成](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)します。 Azure AD パスワード保護は、既知の弱いパスワードとその亜種を検出してブロックすることができます。また、組織固有のその他の弱い用語をブロックすることもできます。 既定のグローバル禁止パスワードリストは、Azure AD テナント内のすべてのユーザーに自動的に適用されます。 カスタム禁止パスワードリストには、追加のエントリを定義できます。 ユーザーがパスワードを変更または再設定すると、これらの禁止されたパスワードの一覧がチェックされ、強力なパスワードの使用が強制されます。 | |
 | [Azure Active Directory Id 保護を有効に](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)します。 Azure AD Id 保護を使用すると、組織の id に影響を及ぼす可能性のある脆弱性を検出し、自動修復ポリシーを低、中、高のサインインリスクとユーザーのリスクに構成できます。  | |
-| [Exchange online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)と[Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)の**先進認証を有効に**します。 モダン認証は、多要素認証 (MFA) を使用するための前提条件です。 モダン認証は、Office 2016 クライアント、SharePoint Online、および OneDrive for business では既定で有効になっています。 |  |
+| [Exchange online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)と[Skype for business online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)の**先進認証を有効に**します。 先進認証は、MFA を使用するための前提条件です。 モダン認証は、Office 2016 クライアント、SharePoint、OneDrive for business では既定で有効になっています。 |  |
 |||
 
 ## <a name="recommended-client-configurations"></a>推奨されるクライアント構成
@@ -87,11 +87,11 @@ BYOD Windows デバイスでは、ユーザーは **職場または学校のア�
 
 |プラットフォーム|Word/Excel/PowerPoint|OneNote|OneDrive アプリ|SharePoint アプリ|[OneDrive 同期クライアント](https://docs.microsoft.com/onedrive/enable-conditional-access)|
 |:-------|:-----|:------------|:-------|:-------------|:-----|
-|Windows 8.1|サポート|サポート|該当なし|該当なし|サポート|
-|Windows 10|サポート|サポート|該当なし|該当なし|サポート|
-|Android|サポート|サポート|サポート|サポート|N/A|
-|iOS|サポート|サポート|サポート|サポート|N/A|
-|macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
+|Windows 8.1|サポート済み|サポート済み|該当なし|該当なし|サポート済み|
+|Windows 10|サポート済み|サポート済み|該当なし|該当なし|サポート済み|
+|Android|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|iOS|サポート済み|サポート済み|サポート済み|サポート済み|N/A|
+|macOS|サポート済み|サポート済み|該当なし|該当なし|サポートされていません|
 |Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 のクライアント サポート

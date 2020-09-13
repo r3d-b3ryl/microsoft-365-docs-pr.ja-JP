@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、および Teams の各ファイルに対して Microsoft 365 の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 8181ccfc988a10813f13e0b61d15f83eef57db76
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324213"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546759"
 ---
 # <a name="set-up-customer-key"></a>顧客キーを設定する
 
@@ -402,7 +402,7 @@ DEP は、Azure Key Vault に格納されているキーのセットに関連付
   
 DEP を作成するには、次の手順を実行します。
   
-1. ローカルコンピューターで、組織内のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell ウィンドウで [Exchange Online powershell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) します。
+1. ローカルコンピューターで、組織内のグローバル管理者のアクセス許可を持つ職場または学校のアカウントを使用して、Windows PowerShell ウィンドウで [Exchange Online powershell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) します。
 
 2. DEP を作成するには、次のコマンドを入力して、新しい-DataEncryptionPolicy コマンドレットを使用します。
 
@@ -486,7 +486,7 @@ DEP を作成するには、Windows PowerShell を使用して SharePoint Online
 
 ### <a name="validate-file-encryption"></a>ファイルの暗号化を検証する
 
- SharePoint Online、OneDrive for Business、および Teams ファイルの暗号化を検証するには、 [Sharepoint Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)し、get-spodataencryptionpolicy コマンドレットを使用してテナントの状態を確認します。 Customer キーの暗号化が有効になっており、すべてのサイトのすべてのファイルが暗号化されている場合、 _State_ プロパティは、 **登録** された値を返します。 暗号化がまだ実行中の場合、このコマンドレットは、完了したサイトの割合に関する情報を提供します。
+ SharePoint Online、OneDrive for Business、および Teams ファイルの暗号化を検証するには、 [Sharepoint Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)し、get-spodataencryptionpolicy コマンドレットを使用してテナントの状態を確認します。 Customer キーの暗号化が有効になっており、すべてのサイトのすべてのファイルが暗号化されている場合、 _State_ プロパティは、 **登録** された値を返します。 暗号化がまだ実行中の場合、このコマンドレットは、完了したサイトの割合に関する情報を提供します。
 
 ## <a name="related-articles"></a>関連記事
 

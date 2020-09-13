@@ -18,12 +18,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Office 365 メッセージの暗号化を使用して、組織の機密情報の種類のポリシーを作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 173ff06a6af674c0df6c0b03bd5b61f6c9b430fa
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bfc77fa88ff798f98d260682dfbdbdd57b17af69
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818670"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545987"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージの暗号化を使用して組織の機密情報の種類のポリシーを作成する
 
@@ -39,7 +39,7 @@ Exchange 管理センター (EAC) にサインインし、[**メールフロー*
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>PowerShell を使用して作成されたメールフロールールの例
 
-メールまたは添付ファイルに次の機密情報の種類が含まれている場合は、PowerShell で次のコマンドを実行して、組織外から送信されたメールを*暗号化専用*ポリシーで自動的に暗号化する Exchange メールフロールールを作成します。
+メールまたは添付ファイルに次の機密情報の種類が含まれている場合は、PowerShell で次のコマンドを実行して、組織外から送信されたメールを *暗号化専用* ポリシーで自動的に暗号化する Exchange メールフロールールを作成します。
 
 - ABA ルーティング番号
 - クレジットカード番号
@@ -54,7 +54,7 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-詳細については、「 [new-transportrule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule?view=exchange-ps) [」を参照して](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration?view=exchange-ps)ください。
+詳細については、「 [new-transportrule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule) [」を参照して](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration)ください。
 
 ## <a name="how-recipients-access-attachments"></a>受信者が添付ファイルにアクセスする方法
 

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 顧客キーを設定した後、AKV キーを復元し、アクセス許可とデータ暗号化ポリシーを管理することによって、キーを管理する方法について説明します。
-ms.openlocfilehash: 8f5f23fa1b8ce8baa8fafd3f29ca5fb8905887a1
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: de85edd5c53fc2b76be4361575e1a85655c0f297
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324259"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547087"
 ---
 # <a name="manage-customer-key"></a>顧客キーを管理する
 
@@ -80,7 +80,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 Exchange Online と Skype for Business 用に作成したすべての DEPs の一覧を表示するには、次の手順を実行します。
 
-1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 2. 組織内のすべての DEPs を戻すには、パラメーターを指定せずに、コマンドレットを実行します。
 
@@ -88,7 +88,7 @@ Exchange Online と Skype for Business 用に作成したすべての DEPs の�
    Get-DataEncryptionPolicy
    ```
 
-   Get-DataEncryptionPolicy コマンドレットの詳細については、「 [get-dataencryptionpolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps)」を参照してください。
+   Get-DataEncryptionPolicy コマンドレットの詳細については、「 [get-dataencryptionpolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy)」を参照してください。
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>メールボックスをクラウドに移行する前に DEP を割り当てる
 
@@ -96,7 +96,7 @@ DEP 365 を割り当てると、移行時に、割り当てられた DEP を使�
 
 Office 365 に移行する前に、メールボックスに DEP を割り当てるには、Exchange Online PowerShell で Set-MailUser コマンドレットを実行します。
 
-1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 2. Set-MailUser コマンドレットを実行します。
 
@@ -104,19 +104,19 @@ Office 365 に移行する前に、メールボックスに DEP を割り当て�
    Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
    ```
 
-   *GeneralMailboxOrMailUserIdParameter*にはメールボックスを指定し、 *Dataencryptionpolicyidparameter*は DEP の ID です。 Set-mailuser コマンドレットの詳細については、「 [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps)」を参照してください。
+   *GeneralMailboxOrMailUserIdParameter*にはメールボックスを指定し、 *Dataencryptionpolicyidparameter*は DEP の ID です。 Set-mailuser コマンドレットの詳細については、「 [set-mailuser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)」を参照してください。
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>メールボックスに割り当てられた DEP を決定する
 
 メールボックスに割り当てられている DEP を特定するには、Get-mailboxstatistics コマンドレットを使用します。 コマンドレットは、一意の識別子 (GUID) を返します。
   
-1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   ここで、 *GeneralMailboxOrMailUserIdParameter* はメールボックスと DataEncryptionPolicyID を指定し、DEP の GUID を返します。 Get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps)」を参照してください。
+   ここで、 *GeneralMailboxOrMailUserIdParameter* はメールボックスと DataEncryptionPolicyID を指定し、DEP の GUID を返します。 Get-mailboxstatistics コマンドレットの詳細については、「 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics)」を参照してください。
   
 2. Get-DataEncryptionPolicy コマンドレットを実行して、メールボックスが割り当てられている DEP のフレンドリ名を検索します。
   
@@ -174,7 +174,7 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 メールボックス PowerShell コマンドレットを使用して、メールボックスから DEP の割り当てを解除するには、次の手順を実行します。
 
-1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+1. 組織で全体管理者のアクセス許可を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 2. メールボックスの設定コマンドレットを実行します。
 
@@ -207,7 +207,7 @@ Exchange Online と Skype for Business のデータ削除パスを開始する�
 
 1. Azure Key コンテナーから、"O365 Exchange Online" のラップとラップ解除のアクセス許可を削除します。
 
-2. 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)します。
+2. 組織のグローバル管理者特権を持つ職場または学校のアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 3. 削除するメールボックスを含む DEP ごとに、次のように [Set-DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) コマンドレットを実行します。
 

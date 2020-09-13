@@ -7,15 +7,15 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: この記事では、従来の Azure Active Directory 分類と機密ラベルについて説明します。
-ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308174"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545661"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Microsoft 365 グループの Azure Active Directory 分類と機密ラベル
 
@@ -41,15 +41,17 @@ ms.locfileid: "47308174"
 
 表 1. 互換性があり、互換性のないワークロードの動作–グループを作成、編集、または削除する
 
-|Workload|グループウィンドウでユーザーに表示されるラベルの一覧|新しいグループを作成する |グループの編集 |Delete group |
+|ワークロード|グループウィンドウでユーザーに表示されるラベルの一覧|新しいグループを作成する |グループの編集 |Delete group |
 |:-------|:-------|:--------|:--------|:--------|   
 |動作   |機密ラベル |動作に変更はありません。 |動作に変更はありません。 |動作に変更はありません。 |
 |互換性のない |機密ラベルは表示されません。 |ユーザーは、機密ラベルを選択せずにグループを作成できます。 <br><br> 注: 管理者はコマンドレットを実行して、バックグラウンドで機密ラベルを適用できます。 |**ケース 1**: 以前に選択した機密ラベルがありません。 ユーザーはグループを編集できます。<br><br> **ケース 2**: コマンドレットを使用して、バックグラウンドで以前に適用された機密ラベル ユーザーは、グループを正常に編集できます。ユーザーがラベルに関して、プライバシー設定の無効な組み合わせを選択するケースは除きます。 |動作に変更はありません。|
 
 > [!NOTE]
 > Outlook デスクトップクライアント (Win 32) の場合、管理者がテナントで機密ラベルを有効にし、ユーザーが以前のバージョンの Outlook デスクトップクライアント (Win 32) を使用しています。
+>
 > - ユーザーには、Outlook デスクトップクライアントの古いバージョンに機密ラベルが表示されます。
 > - ただし、ユーザーがグループを編集して、グループに機密ラベルを付けて保存すると、選択したプライバシー設定が適用された機密ラベルのプライバシー設定によって上書きされます。
+>
 > 以前のバージョンの Outlook クライアントを新しいバージョンにアップグレードすることをお勧めします。
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>シナリオ 2: テナントで従来の AAD[分類](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)が既に使用されている
@@ -69,15 +71,17 @@ ms.locfileid: "47308174"
 
 表 2.  互換性があり、互換性のないワークロードの動作–グループを作成、編集、または削除する
 
-|Workload|グループウィンドウでユーザーに表示されるラベルの一覧|新しいグループを作成する |グループの編集 |Delete group |
+|ワークロード|グループウィンドウでユーザーに表示されるラベルの一覧|新しいグループを作成する |グループの編集 |Delete group |
 |:-------|:-------|:--------|:--------|:--------|   
 |動作   |機密ラベル |動作に変更はありません。 |動作に変更はありません。 |動作に変更はありません。 |
 |互換性のない |以前の従来の AAD ラベル。 |ユーザーは、従来の Azure AD ラベルが選択されたグループを作成できます。 <br><br>注: 管理者はコマンドレットを実行して、バックグラウンドで機密ラベルを適用できます。 |**ケース 1**: 以前に選択した機密ラベルがありません。 ユーザーはグループを編集できます。<br><br> **ケース 2**: 以前に選択された、従来の AAD ラベル。 ユーザーはグループを編集できます。<br><br> **ケース 3**: 以前にコマンドレットを使用してバックグラウンドで適用した機密ラベル。 ユーザーがグループを編集できるようにする必要があります。1つのケースを除き、ユーザーはラベルに関してプライバシー設定の無効な組み合わせを選択します。 |ユーザーはグループを削除できます。 |
 
 > [!NOTE]
 > Outlook デスクトップクライアント (Win 32) の場合、管理者がテナントで機密ラベルを有効にし、ユーザーが以前のバージョンの Outlook デスクトップクライアント (Win 32) を使用しています。
+>
 > - ユーザーには、Outlook デスクトップクライアントの古いバージョンに機密ラベルが表示されます。
 > - ただし、ユーザーがグループを編集して、グループに機密ラベルを付けて保存すると、選択したプライバシー設定が適用された機密ラベルのプライバシー設定によって上書きされます。
+>
 > 以前のバージョンの Outlook クライアントを新しいバージョンにアップグレードすることをお勧めします。
 
 ### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>ケース B: ドキュメントと電子メールに使用されるテナントの機密ラベル
@@ -90,4 +94,3 @@ ms.locfileid: "47308174"
 ## <a name="sample-script"></a>サンプル スクリプト
 
 従来の AAD ラベルを持つグループを機密ラベルに移行するサンプルスクリプトについては、「 [従来の AZURE AD グループの分類](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)」を参照してください。
-

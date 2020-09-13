@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 28d47ae30d47430744729705d9ace2e1ea0a6b97
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419170"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547226"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -44,7 +44,7 @@ ms.locfileid: "47419170"
 
 これらのタスクを実行するための時間を提供するために、この表に記載されている順序で基準ポリシーを実装することをお勧めします。 ただし、機密性が高く規制された保護レベルの MFA ポリシーは、いつでも実装できます。
 
-|保護レベル|ポリシー|詳細|
+|保護レベル|ポリシー|詳細情報|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](#require-mfa-based-on-sign-in-risk)| |
 |        |[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスポリシーをバイパスすることがあるため、これらをブロックすることが重要です。|
@@ -62,11 +62,11 @@ ms.locfileid: "47419170"
 
 ポリシーを構成する前に、各層の保護に使用している Azure AD グループを特定します。 通常、ベースライン保護は組織内の全員に適用されます。 ベースラインと機密保護の両方に含まれているユーザーには、適用されているすべてのベースラインポリシーと、機密ポリシーが適用されます。 保護は累積され、最も制限の厳しいポリシーが適用されます。 
 
-条件付きアクセスの除外に対して Azure AD グループを作成することをお勧めします。 このグループを、[**割り当て**] セクションの [**ユーザーとグループ**] の設定の [**除外**] の値にあるすべての条件付きアクセスルールに追加します。 これにより、アクセスの問題のトラブルシューティングを行っている間、ユーザーにアクセス権を与えることができます。 これは、一時的なソリューションとしてのみお勧めします。 このグループを監視して変更を確認し、除外グループが意図したとおりにのみ使用されていることを確認します。 
+条件付きアクセスの除外に対して Azure AD グループを作成することをお勧めします。 このグループを、[**割り当て**] セクションの [**ユーザーとグループ**] の設定の [**除外**] の値にあるすべての条件付きアクセスポリシーに追加します。 これにより、アクセスの問題のトラブルシューティングを行っている間、ユーザーにアクセス権を与えることができます。 これは、一時的なソリューションとしてのみお勧めします。 このグループを監視して変更を確認し、除外グループが意図したとおりにのみ使用されていることを確認します。 
 
 ここでは、MFA を必要とするグループ割り当てと除外の例を示します。
 
-![MFA ルールのグループ割り当てと除外の例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![MFA ポリシーのグループ割り当てと除外の例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 結果は次のとおりです。
 
@@ -82,7 +82,7 @@ ms.locfileid: "47419170"
 
 グループとユーザーに高レベルの保護を適用する場合は注意が必要です。 たとえば、Top Secret プロジェクト X グループのメンバーは、プロジェクト X の厳しい規制コンテンツで作業していない場合でも、サインインするたびに MFA を使用する必要があります。  
 
-これらの推奨事項の一部として作成されたすべての Azure AD グループは、Microsoft 365 グループとして作成する必要があります。 これは、Microsoft Teams および SharePoint Online でドキュメントを保護するときに機密ラベルを展開する際に重要です。
+これらの推奨事項の一部として作成されたすべての Azure AD グループは、Microsoft 365 グループとして作成する必要があります。 これは、Microsoft Teams および SharePoint でドキュメントを保護するときに機密ラベルを展開する際に重要です。
 
 ![Microsoft 365 グループを作成するための画面キャプチャ](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "47419170"
 |:---|:---------|:-----|:----|
 |ユーザーとグループ|含める| [ユーザーとグループ > ユーザーとグループ **] を選択**します。対象ユーザーアカウントを含む特定のグループを選択します。 |パイロットユーザーアカウントを含むグループから始めます。|
 ||除外| [**ユーザーとグループ**]: 条件付きアクセスの例外グループを選択します。サービスアカウント (アプリ id)。|メンバーシップは、必要に応じて一時的に変更する必要があります。|
-|クラウドアプリまたはアクション| **クラウドアプリ > 含める** | **[アプリの選択**]: このルールを適用するアプリを選択します。 たとえば、[Exchange Online] を選択します。||
+|クラウドアプリまたはアクション| **クラウドアプリ > 含める** | **[アプリの選択**]: このポリシーを適用するアプリを選択します。 たとえば、[Exchange Online] を選択します。||
 |条件| | |環境とニーズに固有の条件を構成します。|
 ||サインイン リスク||次の表のガイダンスを参照してください。|
 |||||
@@ -194,6 +194,8 @@ Suppport モダン認証を実行する Microsoft 365 のクライアントの�
 
 ポリシーをテストするには、[ [対象](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) ] ツールを使用することを検討してください。
 
+このポリシーは、「 [AZURE AD パスワード保護を構成](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)する」と組み合わせて使用します。これにより、既知の弱いパスワードとその亜種と、組織固有のその他の弱い用語を検出してブロックします。 Azure AD パスワード保護を使用すると、変更されたパスワードが強固なパスワードになることが保証されます。
+
 ## <a name="apply-app-data-protection-policies"></a>アプリデータ保護ポリシーを適用する
 
 アプリ保護ポリシー (APP) は、どのアプリが許可されるか、組織のデータによって実行できるアクションを定義します。 APP で利用可能な選択肢は、組織が特定のニーズに合わせて保護を調整できるようにすることです。 一部のシナリオでは、完全なシナリオを実装するために必要なポリシー設定がわからない場合があります。 組織がモバイルクライアントエンドポイント強化の優先順位を設定するために、Microsoft では、iOS および Android のモバイルアプリ管理用のアプリデータ保護フレームワークに対して分類を導入しています。 
@@ -208,7 +210,7 @@ Suppport モダン認証を実行する Microsoft 365 のクライアントの�
 
 [Id とデバイスのアクセス構成](microsoft-365-policies-configurations.md)で説明されている原則を使用して、ベースラインおよび機密保護層がレベル2エンタープライズ拡張データ保護設定と緊密にマッピングされます。 高度な規制保護層は、レベル3エンタープライズ高データ保護設定に厳密にマップされます。
 
-|保護レベル |アプリ保護ポリシー  |詳細  |
+|保護レベル |アプリ保護ポリシー  |詳細情報  |
 |---------|---------|---------|
 |基準     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。         |
 |機密     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。        |
@@ -221,11 +223,11 @@ Suppport モダン認証を実行する Microsoft 365 のクライアントの�
 
 ## <a name="require-approved-apps-and-app-protection"></a>承認済みアプリとアプリ保護を必要とする
 
-Intune で適用したアプリ保護ポリシーを適用するには、承認済みのクライアントアプリとアプリ保護ポリシーで設定された条件を要求する条件付きアクセスルールを作成する必要があります。 
+Intune で適用したアプリ保護ポリシーを強制するには、承認されたクライアントアプリとアプリ保護ポリシーで設定された条件を要求するための条件付きアクセスポリシーを作成する必要があります。 
 
 アプリ保護ポリシーを適用するには、「 [条件付きアクセスでのクラウドアプリケーションへのアクセスにアプリ保護ポリシーが必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)」で説明されている一連のポリシーが必要です。 これらのポリシーは、この推奨される id とアクセス構成ポリシーのセットに含まれています。
 
-承認済みアプリとアプリの保護を必要とする条件付きアクセスルールを作成するには、「 [シナリオ 1: microsoft 365 アプリ](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)には、microsoft 365 の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これは、IOS および Android 用の Outlook を許可し、OAuth 対応 exchange ActiveSync クライアントによる exchange Online への接続をブロックします
+承認済みアプリとアプリの保護を必要とする条件付きアクセスポリシーを作成するには、「 [シナリオ 1: microsoft 365 アプリ](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)には、microsoft 365 の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これは、IOS および Android 用の Outlook を許可し、OAuth 対応 exchange ActiveSync クライアントが exchange Online に接続できないようにするためです
 
    > [!NOTE]
    > このポリシーにより、モバイルユーザーは適用可能なアプリを使用してすべての Office エンドポイントにアクセスできます。
@@ -234,7 +236,7 @@ Exchange Online へのモバイルアクセスを有効にしている場合は�
 
  これらのポリシーは、承認された [クライアントアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) とする grant controls を活用し、 [アプリ保護ポリシーを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)とします。
 
-最後に、iOS および Android デバイス上の他のクライアントアプリに対して従来の認証をブロックすることで、これらのクライアントが条件付きアクセスルールをバイパスできないようにします。 この記事のガイダンスに従っている場合は、 [先進認証をサポートしていないブロッククライアントが](#block-clients-that-dont-support-modern-authentication)既に構成されています。
+最後に、iOS および Android デバイス上の他のクライアントアプリに対して従来の認証をブロックすることで、これらのクライアントが条件付きアクセスポリシーをバイパスできないようにします。 この記事のガイダンスに従っている場合は、 [先進認証をサポートしていないブロッククライアントが](#block-clients-that-dont-support-modern-authentication)既に構成されています。
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

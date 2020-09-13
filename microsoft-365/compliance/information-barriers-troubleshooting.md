@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: この記事は、情報の障壁をトラブルシューティングするためのガイドとして使用してください。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4e6087d0e1886d833a6cf0472ed467f8577c5d0
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e19c7d22e2b34d3f8083bcf5b8fb7297dbf86229
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307930"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545671"
 ---
 # <a name="troubleshooting-information-barriers"></a>情報バリアのトラブルシューティング
 
@@ -28,7 +28,7 @@ ms.locfileid: "47307930"
 情報の障壁が設定された後に予期しない問題が発生した場合は、それらの問題を解決するために実行できるいくつかの手順があります。 この記事をガイドとして使用します。
 
 > [!IMPORTANT]
-> この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-全体管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「 [必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)していることを確認してください。
+> この記事で説明されているタスクを実行するには、次のいずれかのような適切な役割が割り当てられている必要があります。<br/>-Microsoft 365 エンタープライズグローバル管理者<br/>-全体管理者<br/>-コンプライアンス管理者<br/>-IB コンプライアンス管理 (新しい役割)<p>情報障壁の前提条件の詳細については、「 [必須コンポーネント (情報バリアポリシー)](information-barriers-policies.md#prerequisites)」を参照してください。<p>[セキュリティ & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)していることを確認してください。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題: ユーザーが予期せず Microsoft Teams の他のユーザーとの通信をブロックされている 
 
@@ -147,7 +147,7 @@ Policy application コマンドレットを実行すると、組織内のすべ�
 
 2. 前の手順の結果に応じて、次のいずれかの手順を実行します。
   
-    |状態  |次のステップ  |
+    |状態  |次の手順  |
     |---------|---------|
     |**未開始**     |**InformationBarrierPoliciesApplication**コマンドレットが実行されてから45分以上経過している場合は、監査ログを調べて、ポリシー定義にエラーがないかどうか、またはアプリケーションが開始されていない理由を確認してください。 |
     |**失敗**     |アプリケーションに障害が発生した場合は、監査ログを確認します。 また、セグメントとポリシーも確認してください。 複数のセグメントに割り当てられているユーザーはいますか? セグメントに複数の poliicy が割り当てられているかどうか。 必要に応じて、 [セグメントを編集](information-barriers-edit-segments-policies.md#edit-a-segment) するか、または [ポリシーを編集](information-barriers-edit-segments-policies.md#edit-a-policy)してから、 **InformationBarrierPoliciesApplication** コマンドレットを再度実行します。  |
@@ -161,11 +161,11 @@ Policy application コマンドレットを実行すると、組織内のすべ�
 
 組織に [Exchange アドレス帳ポリシー](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) が設定されていないことを確認します。 このようなポリシーにより、情報バリアポリシーが適用されなくなります。
 
-1. [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) に接続する 
+1. [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) に接続する 
 
-2. [AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps)コマンドレットを実行し、結果を確認します。
+2. [AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy)コマンドレットを実行し、結果を確認します。
 
-    |結果  |次のステップ  |
+    |結果  |次の手順  |
     |---------|---------|
     |Exchange アドレス帳ポリシーの一覧     |[アドレス帳ポリシーを削除する](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
     |アドレス帳ポリシーが存在しません |ポリシーアプリケーションが失敗している理由を確認するには、監査ログを参照してください。 |

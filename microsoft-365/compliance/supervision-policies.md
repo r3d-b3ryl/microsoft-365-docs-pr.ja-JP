@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 27c4d4603396089cb58cfed192f09d0db70cac5a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282605"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547587"
 ---
 # <a name="supervision-policies"></a>監督ポリシー
 
@@ -143,7 +143,7 @@ Office 365 の監督に関する定年に関する情報については、 [Micr
 
 #### <a name="custom-keyword-dictionaries"></a>ユーザー設定のキーワード辞書
 
-ユーザー定義のキーワード辞書 (または辞書) を構成して、組織または業界に固有のキーワードを簡単に管理できるようにします。 キーワード辞書は、辞書で最大100KB 語の用語をサポートしており、任意の言語をサポートしています。 テナントの制限も、圧縮後に100KB ます。 必要に応じて、1つのポリシーに複数のカスタムキーワードディクショナリを適用したり、ポリシーごとに1つのキーワードディクショナリを設定したりできます。 これらの辞書は、監督ポリシーで割り当てられ、ファイル (.csv または .txt リストなど) や、 [コンプライアンスセンターでインポート](create-a-keyword-dictionary.md)できるリストからソースにすることができます。
+ユーザー定義のキーワード辞書 (または辞書) を構成して、組織または業界に固有のキーワードを簡単に管理できるようにします。 キーワード辞書は、辞書で最大100KB 語の用語をサポートしており、任意の言語をサポートしています。 テナント制限は、圧縮後も 100KB です。 必要に応じて、1つのポリシーに複数のカスタムキーワードディクショナリを適用したり、ポリシーごとに1つのキーワードディクショナリを設定したりできます。 これらの辞書は、監督ポリシーで割り当てられ、ファイル (.csv または .txt リストなど) や、 [コンプライアンスセンターでインポート](create-a-keyword-dictionary.md)できるリストからソースにすることができます。
 
 #### <a name="offensive-language"></a>不快な言葉
 
@@ -301,7 +301,7 @@ Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -Re
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-監督のレポートとログで提供される情報に加えて、 [SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) PowerShell コマンドレットを使用して、すべての監督ポリシーアクティビティの完全な詳細リストを取得することもできます。
+監督のレポートとログで提供される情報に加えて、 [SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity) PowerShell コマンドレットを使用して、すべての監督ポリシーアクティビティの完全な詳細リストを取得することもできます。
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 

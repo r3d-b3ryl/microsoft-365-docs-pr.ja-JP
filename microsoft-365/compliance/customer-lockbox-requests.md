@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 問題が発生したときに Microsoft サポートエンジニアがデータにアクセスする方法を制御するための、カスタマーロックボックス要求について説明します。
-ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794256"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546503"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 のカスタマーロックボックス
 
@@ -101,7 +101,7 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
     ![カスタマーロックボックス要求を承認または拒否する](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> Microsoft 365 のカスタマーロックボックス要求を承認、拒否、またはキャンセルするには、AccessToCustomerDataRequest コマンドレットを使用します。 Microsoft サポートエンジニアによるデータへのアクセスを制御します。 詳細については、「 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps)」を参照してください。
+> Microsoft 365 のカスタマーロックボックス要求を承認、拒否、またはキャンセルするには、AccessToCustomerDataRequest コマンドレットを使用します。 Microsoft サポートエンジニアによるデータへのアクセスを制御します。 詳細については、「 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest)」を参照してください。
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>カスタマー ロックボックス要求を監査する
@@ -126,11 +126,11 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
     a. **アクティビティ** -検索ですべてのアクティビティの監査レコードが返されるようにするには、このフィールドを空白のままにします。 これは、カスタマーロックボックス要求と、Microsoft のエンジニアによって実行される対応するアクティビティに関連する監査レコードを返すために必要です。
 
-    b. **開始** 日と **終了日** -その期間内に発生したイベントを表示する日付と時刻の範囲を選択します。
+    b.  **開始** 日と **終了日** -その期間内に発生したイベントを表示する日付と時刻の範囲を選択します。
 
     c. **ユーザー** -このフィールドは空白のままにします。
 
-    d.  **ファイル、フォルダー、またはサイト** - このフィールドは空白のままにします。
+    d. **ファイル、フォルダー、またはサイト** - このフィールドは空白のままにします。
 
 5. [**検索**] をクリックして、設定した検索条件で検索を実行します。
 

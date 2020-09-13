@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 74244b5288043a1d1bc62e0ae09ee8c25ff7d4e1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352160"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546779"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>Office 365 で監督ポリシーを構成する
 
@@ -38,7 +38,7 @@ ms.locfileid: "44352160"
 >- 2020年8月31日から、既存のポリシーは新しいメッセージのキャプチャを停止します。
 >- 2020年10月の26th を開始すると、既存のポリシーが削除されます。
 >
->新しい[コミュニケーションコンプライアンス](communication-compliance.md)ソリューションを使用して、より豊富なインテリジェント機能を備えた通信の監視または規制要件に対処するには、現在、Office 365 の監視を使用している、または監督を使用しているお客様に対して、積極的にお勧めします。
+>新しい [コミュニケーションコンプライアンス](communication-compliance.md) ソリューションを使用して、より豊富なインテリジェント機能を備えた通信の監視または規制要件に対処するには、現在、Office 365 の監視を使用している、または監督を使用しているお客様に対して、積極的にお勧めします。
 
 監督ポリシーを使って、内部レビューまたは外部レビューによる調査のために従業員の通信をキャプチャします。 監督ポリシーが組織内の通信を監視する方法の詳細については、「[Office 365 の監督ポリシー](supervision-policies.md)」を参照してください。
 
@@ -54,7 +54,7 @@ ms.locfileid: "44352160"
 
 - **手順 2 (必須)**: [組織で監督機能を使用できるようにする](#step-2-make-supervision-available-in-your-organization-required)
 
-    自分がポリシーを設定できるように、自分を監督レビューの役割グループに追加します。 この役割が割り当てられているすべてのユーザーは、セキュリティ & コンプライアンスセンターの [**監督**] ページにアクセスできます。 レビュー可能なメールが Exchange Online でホストされている場合、各レビュー担当者は [Exchange Online へのリモート PowerShell アクセス](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)が必要です。
+    自分がポリシーを設定できるように、自分を監督レビューの役割グループに追加します。 この役割が割り当てられているすべてのユーザーは、セキュリティ & コンプライアンスセンターの [ **監督** ] ページにアクセスできます。 レビュー可能なメールが Exchange Online でホストされている場合、各レビュー担当者は [Exchange Online へのリモート PowerShell アクセス](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)が必要です。
 
 - **手順 3 (オプション)**: [カスタムの機密情報の種類と DLP ポリシーでキーワード ディクショナリを使う](#step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional)
 
@@ -83,7 +83,7 @@ ms.locfileid: "44352160"
 
 大規模な企業組織の監督対象ユーザーを管理するには、大規模なグループ全体のユーザーすべてを監視する必要がある場合があります。 PowerShell を使用して、割り当てられたグループのグローバル監督ポリシーの配布グループを構成できます。 これにより、単一のポリシーで数千人のユーザーを監視し、新しい従業員が組織に加入する際に監督ポリシーを最新の状態に保つことができます。
 
-1. 次のプロパティを使用して、グローバル監督ポリシー専用の[配布グループ](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps)を作成します。この配布グループが他の目的または他の Office 365 サービスに使用されていないことを確認します。
+1. 次のプロパティを使用して、グローバル監督ポリシー専用の[配布グループ](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup)を作成します。この配布グループが他の目的または他の Office 365 サービスに使用されていないことを確認します。
 
     - **MemberDepartRestriction = Closed**。 ユーザーが配布グループから自分自身を削除できないようにします。
     - **MemberJoinRestriction = Closed**。 ユーザーが配布グループに自分自身を追加できないようにします。
@@ -118,7 +118,7 @@ ms.locfileid: "44352160"
 
 ## <a name="step-2-make-supervision-available-in-your-organization-required"></a>手順 2: 組織で監督機能を使用できるようにする (必須)
 
-セキュリティ & コンプライアンスセンターで、**監督**をメニューオプションとして利用できるようにするには、監督レビュー管理者の役割が割り当てられている必要があります。
+セキュリティ & コンプライアンスセンターで、 **監督** をメニューオプションとして利用できるようにするには、監督レビュー管理者の役割が割り当てられている必要があります。
   
 そのためには、自分自身を監督レビュー役割グループのメンバーとして追加するか、役割グループを作成します。
   
@@ -126,7 +126,7 @@ ms.locfileid: "44352160"
 
 1. [https://protection.office.com](https://protection.office.com)組織内の管理者アカウントの資格情報を使用してサインインします。
 
-2. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動します。
+2. [セキュリティ & コンプライアンスセンター] で、[ **アクセス許可**] に移動します。
 
 3. [**監督レビュー**] 役割グループを選び、編集アイコンをクリックします。
 
@@ -136,7 +136,7 @@ ms.locfileid: "44352160"
 
 1. [https://protection.office.com/permissions](https://protection.office.com/permissions)組織内の管理者アカウントの資格情報を使用してサインインします。
 
-2. [セキュリティ & コンプライアンスセンター] で、[**アクセス許可**] に移動し、[追加] () をクリックし **+** ます。
+2. [セキュリティ & コンプライアンスセンター] で、[ **アクセス許可** ] に移動し、[追加] () をクリックし **+** ます。
 
 3. [**役割**] セクションで、[追加] (**+**) をクリックし、[**監督レビュー管理者**] までスクロールします。 この役割を役割グループに追加します。
 
@@ -146,7 +146,7 @@ ms.locfileid: "44352160"
 
 ### <a name="enable-remote-powershell-access-for-reviewers-if-email-is-hosted-on-exchange-online"></a>レビュー担当者のリモート PowerShell アクセスを有効にします (メールが Exchange Online でホストされている場合)
 
-1. 「[Exchange Online PowerShell へのアクセスを有効または無効にする](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)」のガイダンスに従ってください。
+1. 「[Exchange Online PowerShell へのアクセスを有効または無効にする](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)」のガイダンスに従ってください。
 
 ## <a name="step-3-create-custom-sensitive-information-types-and-custom-keyword-dictionaries-optional"></a>手順 3: カスタムの機密情報の種類と DLP ポリシーでキーワード ディクショナリを使う (オプション)
 
@@ -173,7 +173,7 @@ ms.locfileid: "44352160"
   
 1. [https://protection.office.com](https://protection.office.com)組織内の管理者アカウントの資格情報を使用してサインインします。
 
-2. [セキュリティ & コンプライアンスセンター] で、[**監督**] を選択します。
+2. [セキュリティ & コンプライアンスセンター] で、[ **監督**] を選択します。
   
 3. [**作成**] を選択し、ウィザードに従ってポリシー構成を設定します。 ウィザードを使用して、以下の操作をします。
 

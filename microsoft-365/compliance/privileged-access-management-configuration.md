@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: Office 365 での特権アクセス管理の有効化と構成の詳細については、この記事を使用してください。
-ms.openlocfilehash: 4bae6d311b3447534165ee803d7094e5797a9b1c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 7b3ac9dbc065bcbbdf48e805a3975886a894c645
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936322"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545997"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特権アクセス管理の使用を開始する
 
@@ -32,7 +32,7 @@ ms.locfileid: "44936322"
 
 ## <a name="before-you-begin"></a>はじめに
 
-特権アクセス管理を使い始める前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 特権アクセス管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
+特権アクセス管理を使い始める前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) とアドオンを確認する必要があります。 特権アクセス管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 
 - Microsoft 365 E5 サブスクリプション (有料または試用版)
 - Microsoft 365 E3 サブスクリプション (または Office 365 E3 サブスクリプション + Enterprise Mobility and Security E3 サブスクリプション) + Microsoft 365 E5 コンプライアンスアドオン
@@ -48,7 +48,7 @@ ms.locfileid: "44936322"
 >[!IMPORTANT]
 >Office 365 Advanced コンプライアンスは、スタンドアロンサブスクリプションとして販売されなくなりました。 現在のサブスクリプションの有効期限が切れた場合、お客様は上記のサブスクリプションのいずれかに移行する必要があります。これには、同じまたは追加のコンプライアンス機能が含まれます。
 
-既存の Office 365 Enterprise E5 プランを持っておらず、特権アクセス管理を実行する場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)を既存の office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)することができます。
+既存の Office 365 Enterprise E5 プランを持っておらず、特権アクセス管理を実行する場合は、 [microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) を既存の office 365 サブスクリプションに追加するか、Microsoft 365 Enterprise E5 の [試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise) することができます。
 
 ## <a name="enable-and-configure-privileged-access-management"></a>特権アクセス管理を有効にして構成する
 
@@ -73,21 +73,21 @@ ms.locfileid: "44936322"
 承認が与えられると、アクセス要求したユーザーは目的のタスクを実行でき、特権アクセスはユーザーに代わってタスクを承認および実行します。 承認は、要求された期間 (既定の期間は 4 時間) にわたって有効で、その間依頼者は目的のタスクを複数回実行できます。 これらのすべての実行はログに記録され、セキュリティとコンプライアンスの監査で利用されます。 
 
 >[!NOTE]
->Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「[複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。 Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用して、組織で多要素認証を有効にする必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
+>Exchange 管理 PowerShell を使用して特権アクセスを有効にし、構成する場合は、「 [複数要素認証を使用して Exchange Online powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa) に接続する」の手順に従って、Office 365 資格情報を使用して Exchange online powershell に接続します。 Exchange Online PowerShell への接続中に特権アクセスを有効にする手順を使用して、組織で多要素認証を有効にする必要はありません。 多要素認証を使用して接続すると、要求に署名するために特権アクセスで使用される OAuth トークンが作成されます。
 
 <a name="step1"> </a>
 
 ## <a name="step-1-create-an-approvers-group"></a>手順 1: 承認者のグループを作成する
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、 **[グループ**  >  **の追加]** を選びます。
 
-3. [**メールが有効なセキュリティグループ**] を選択し、新しいグループの**名前**、**グループ電子メールアドレス**、および**説明**フィールドを入力します。
+3. [ **メールが有効なセキュリティグループ** ] を選択し、新しいグループの **名前**、 **グループ電子メールアドレス**、および **説明** フィールドを入力します。
 
 4. グループを保存します。  グループが完全に構成され、Microsoft 365 管理センターに表示するには、数分かかることがあります。
 
-5. 新しい承認者のグループを選択し、[**編集**] を選択してグループにユーザーを追加します。
+5. 新しい承認者のグループを選択し、[ **編集** ] を選択してグループにユーザーを追加します。
 
 6. グループを保存します。
 
@@ -97,15 +97,15 @@ ms.locfileid: "44936322"
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、[**設定**] [  >  **組織設定**の  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
-3. [**権限のあるタスクの承認を必須**にする] コントロールを有効にします。
+3. [ **権限のあるタスクの承認を必須** にする] コントロールを有効にします。
 
-4. 手順1で作成した承認者のグループを**既定の承認者グループ**として割り当てます。
+4. 手順1で作成した承認者のグループを **既定の承認者グループ**として割り当てます。
 
-5. **保存**して**閉じ**ます。
+5. **保存** して **閉じ**ます。
 
 ### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
@@ -132,13 +132,13 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、[**設定**] [  >  **組織設定**の  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
-3. [**アクセスポリシーと要求の管理**] を選択します。
+3. [ **アクセスポリシーと要求の管理**] を選択します。
 
-4. [**ポリシーの構成**] を選択し、[**ポリシーの追加**] を選択します。
+4. [ **ポリシーの構成** ] を選択し、[ **ポリシーの追加**] を選択します。
 
 5. ドロップダウンフィールドで、組織に適切な値を選択します。
     
@@ -152,7 +152,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
     **承認グループ**: 手順 1で作成した承認者グループを選択します。
 
-6. [**作成**] を選択し、[**閉じる**] をクリックします。 ポリシーが完全に構成され、有効になるまでに数分かかる場合があります。
+6. [ **作成** ] を選択し、[ **閉じる**] をクリックします。 ポリシーが完全に構成され、有効になるまでに数分かかる場合があります。
 
 ### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
@@ -178,13 +178,13 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、[**設定**] [  >  **組織設定**の  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
-3. [**アクセスポリシーと要求の管理**] を選択します。
+3. [ **アクセスポリシーと要求の管理**] を選択します。
 
-4. [**新しい要求**] を選択します。 ドロップダウンフィールドで、組織に適切な値を選択します。
+4. [ **新しい要求**] を選択します。 ドロップダウンフィールドで、組織に適切な値を選択します。
 
     **要求の種類**: タスク、役割、役割グループ
 
@@ -196,7 +196,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **Comments**: アクセス要求に関連するコメントのテキストフィールド
 
-5. [**保存**] を選択し、[**閉じる**] をクリックします。 要求は、電子メールを介して承認者のグループに送信されます。
+5. [ **保存** ] を選択し、[ **閉じる**] をクリックします。 要求は、電子メールを介して承認者のグループに送信されます。
 
 #### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
@@ -218,13 +218,13 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、[**設定**] [  >  **組織設定**の  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
-3. [**アクセスポリシーと要求の管理**] を選択します。
+3. [ **アクセスポリシーと要求の管理**] を選択します。
 
-4. [**表示**] を選択して、送信された要求を**保留**、**承認**、**拒否**、または**顧客のロックボックス**の状態でフィルター処理します。
+4. [ **表示** ] を選択して、送信された要求を **保留**、 **承認**、 **拒否**、または **顧客のロックボックス** の状態でフィルター処理します。
 
 #### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
@@ -246,15 +246,15 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 #### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、[**設定**] [  >  **組織設定**の  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
-3. [**アクセスポリシーと要求の管理**] を選択します。
+3. [ **アクセスポリシーと要求の管理**] を選択します。
 
 4. 詳細を表示し、要求に対してアクションを実行するには、リストされている要求を選択します。
 
-5. [**承認**] を選択して要求を承認するか、[**拒否**] を選択して要求を拒否します。 以前に承認された要求では、 **Revoke**を選択することによってアクセスを取り消すことができます
+5. [ **承認** ] を選択して要求を承認するか、[ **拒否** ] を選択して要求を拒否します。 以前に承認された要求では、 **Revoke**を選択することによってアクセスを取り消すことができます
 
 #### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 
@@ -288,15 +288,15 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、[**設定**] [  >  **組織設定**の  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
-3. [**アクセスポリシーと要求の管理**] を選択します。
+3. [ **アクセスポリシーと要求の管理**] を選択します。
 
-4. [**構成ポリシー**] を選択します。
+4. [ **構成ポリシー**] を選択します。
 
-5. 削除するポリシーを選択し、[ポリシーの**削除**] を選択します。
+5. 削除するポリシーを選択し、[ポリシーの **削除**] を選択します。
 
 6. **[閉じる]** を選択します。
 
@@ -314,11 +314,11 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センター
 
-1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。
+1. 組織内の管理者アカウントの資格情報を使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
 2. 管理センターで、[**設定**] [  >  **組織設定**の  >  **セキュリティ & プライバシー**  >  **特権アクセス**] に移動します。
 
-3. [**特権アクセス制御の承認を必須**にする] を有効にします。
+3. [ **特権アクセス制御の承認を必須** にする] を有効にします。
 
 ### <a name="in-exchange-management-powershell"></a>Exchange 管理 PowerShell
 

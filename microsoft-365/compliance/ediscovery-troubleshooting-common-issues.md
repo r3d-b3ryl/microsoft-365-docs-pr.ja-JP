@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Office 365 電子情報開示の一般的な問題を解決するために実行できる基本的なトラブルシューティング手順について説明します。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b96ed80ba9f347616fd364b3b97ac960cdaeb8e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357997"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545955"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>一般的な電子情報開示の問題を調査、トラブルシューティング、および解決する
 
@@ -38,7 +38,7 @@ ms.locfileid: "47357997"
 
 同じユーザー ID を持つ重複したユーザーまたは配布リストをチェックします。
 
-1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続します。
+1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)に接続します。
 
 2. ユーザー名のすべてのインスタンスを取得するには、次のコマンドを実行します。
 
@@ -49,10 +49,10 @@ ms.locfileid: "47357997"
    ' Useralias@contoso.com ' の出力は次のようになります。
 
    > 
-   > |名前|RecipientType|
+   > |Name|RecipientType|
    > |---|---|
    > |Alias、User|Enable-mailuser|
-   > |Alias、User|ユーザー|
+   > |Alias、User|User|
 
 3. 複数のユーザーが返された場合は、競合しているオブジェクトを見つけて修正します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "47357997"
 
 このエラーが表示された場合は、検索で失敗した場所を確認し、失敗した場所でのみ検索を実行することをお勧めします。
 
-1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
+1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -97,7 +97,7 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 ### <a name="resolution"></a>解決方法
 
-1. [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) に接続する
+1. [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) に接続する
 
 2. ユーザーが Exchange Online Protection と同期されているかどうかを確認するには、次のコマンドを実行します。
 
@@ -115,7 +115,7 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 1. この記事に記載されている手順を使用して、 [ダウンロード速度を上げ](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)ます。
 
-2. それでも問題が解決しない場合は、 [セキュリティに & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) に接続し、次のコマンドを実行します。
+2. それでも問題が解決しない場合は、 [セキュリティに & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) に接続し、次のコマンドを実行します。
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -143,7 +143,7 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 1. 検索を小さな検索に分割して、検索を再度実行します。  短い日付範囲を使用するか、検索する場所の数を制限してください。
 
-2. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
+2. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)に接続し、次のコマンドを実行します。
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -163,7 +163,7 @@ SharePoint Online を含む電子情報開示検索を実行する際に、ビ�
 
 ### <a name="resolution"></a>解決方法
 
-1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)に接続し、電子情報開示ケースホールドに対して次のコマンドを実行します。
+1. [セキュリティ & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)に接続し、電子情報開示ケースホールドに対して次のコマンドを実行します。
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
