@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d65b64f80dc9d8c3c799e8044d6fc5d3dfec4321
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357809"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547253"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -828,14 +828,14 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
-| アイテム保持ポリシーの構成された設定 |NewRetentionComplianceRule |管理者が新しいアイテム保持ポリシーの保持設定を構成しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) コマンドレットの実行にも対応します。|
+| アイテム保持ポリシーの構成された設定 |NewRetentionComplianceRule |管理者が新しいアイテム保持ポリシーの保持設定を構成しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) コマンドレットの実行にも対応します。|
 | 作成された保持ラベル |NewComplianceTag |管理者が新しい保持ラベルを作成しました。|
 | アイテム保持ポリシーが作成されました |NewRetentionCompliancePolicy|管理者が新しいアイテム保持ポリシーを作成しました。|
 | アイテム保持ポリシーから削除された設定| RemoveRetentionComplianceRule<br/>| 管理者がアイテム保持ポリシーの構成設定を削除しました。 ほとんどの場合、このアクティビティは、管理者がアイテム保持ポリシーを削除した場合、または [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule) コマンドレット を実行した場合に記録されます。|
 | 削除された保持ラベル |RemovecomplianceTag | 管理者が保持ラベルを削除しました。|
 | 削除されたアイテム保持ポリシー |RemoveRetentionCompliancePolicy<br/> |管理者がアイテム保持ポリシーを削除しました。 |
 | 保持ラベルの規制レコード オプションを有効にする<br/> |SetRestrictiveRetentionUI |管理者が [Set-RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) コマンドレットを実行したため、管理者は保持ラベルの UI 構成オプションを選択して、コンテンツを規制レコードとしてマークできます。|
-| アイテム保持ポリシーの更新された設定 | SetRetentionComplianceRule | 管理者が既存のアイテム保持ポリシーの保持設定を変更しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) コマンドレットの実行にも対応しています。 |
+| アイテム保持ポリシーの更新された設定 | SetRetentionComplianceRule | 管理者が既存のアイテム保持ポリシーの保持設定を変更しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) コマンドレットの実行にも対応しています。 |
 | 更新された保持ラベル |SetComplianceTag  | 管理者が既存の保持ラベルを更新しました。|
 | 更新アイテム保持ポリシー |SetRetentionCompliancePolicy |管理者が既存のアイテム保持ポリシーを更新しました。 このイベントをトリガーする更新には、アイテム保持ポリシーが適用されるコンテンツの場所の追加または除外が含まれます。|
 

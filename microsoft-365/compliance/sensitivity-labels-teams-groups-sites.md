@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: bbed892481571706d8d43c3fa4d5aff7e9fb4c92
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: b81d598c3a80a915d9d20622a1b6d2e6f4517883
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427016"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547689"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -207,7 +207,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 1. **[管理者として実行]** オプションを使用して PowerShell セッションを開きます。
 
-2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)、秘密度ラベルとそれらの GUID のリストを取得します。
+2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)、秘密度ラベルとそれらの GUID のリストを取得します。
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -325,7 +325,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 3. Microsoft 365 グループに適用する秘密度ラベルの GUID をメモします。
 
-4. ここでは、別の Windows PowerShell ウィンドウで [Exchange Online PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+4. ここでは、別の Windows PowerShell ウィンドウで [Exchange Online PowerShell に接続します](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 5. 次のコマンドを例として使用して、現在 "一般" の分類を持つグループのリストを取得します。
 
