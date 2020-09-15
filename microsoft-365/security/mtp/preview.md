@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798236"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649951"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
 
@@ -50,13 +50,14 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 
 3. [**プレビュー機能の選択]**  >  **プレビュー機能を有効に**します。 
 
-3. **[保存]** を選択します。
+3. [**保存**] を選択します。
 
 [ **プレビュー機能を有効に** する] チェックボックスがオンになっている場合は、プレビュー機能が有効になっていることを確認できます。 
 
 ## <a name="preview-features"></a>プレビュー機能
 現在、次の機能と拡張機能をプレビューで利用できます。
 
+- **[Microsoft Threat Protection api](api-overview.md)** -lop レベルの Microsoft 脅威保護 api を使用すると、共有インシデントと高度な検索の表に基づいてワークフローを自動化できます。 
 - **[高度な検索の](advanced-hunting-identitydirectoryevents-table.md)** 場合は、Active DIRECTORY (AD) を実行しているオンプレミスのドメインコントローラーを含むイベントを検索します。 この表では、ドメインコントローラーの id 関連イベントの範囲とシステムイベントについて説明します。
 - **[AssignedIPAddresses () 関数](advanced-hunting-assignedipaddresses-function.md)** -高度な検索でこの関数を使用して、デバイスに割り当てられている最新の ip アドレス、または指定した時点からの最新の ip アドレスをすばやく取得します。
 - **[高度な検索でアクションを実行](advanced-hunting-take-action.md)** する: [高度な](advanced-hunting-overview.md)検索によって検出された脅威または侵害された資産への対処をすばやく行うことができます。

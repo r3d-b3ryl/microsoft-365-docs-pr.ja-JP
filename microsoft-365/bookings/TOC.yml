@@ -32,7 +32,7 @@
     - name: 予約アプリを取得する
       href: get-bookings-app.md
     - name: Microsoft Teams での予約アプリと仮想訪問
-      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+      href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
     - name: 比較グラフ-web アプリと Teams アプリ
       href: comparison-chart.md
     - name: 予約予定表を削除する

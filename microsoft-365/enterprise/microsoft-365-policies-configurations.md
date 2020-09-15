@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/31/2020
+ms.date: 09/14/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,26 +17,33 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
+ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546644"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651146"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
-この一連の記事では、条件付きアクセスポリシーと関連機能の規定セットを含む、推奨される環境と構成を実装することによって、Microsoft 365 を使用してクラウドサービスへのセキュリティで保護されたアクセスを構成する方法について説明します。 このガイダンスを使用して、azure Active Directory (Azure AD) と統合されたすべてのサービスへのアクセスを保護できます。これには、Microsoft 365 サービス、その他の SaaS サービス、および Azure AD アプリケーションプロキシで公開されたオンプレミスアプリケーションが含まれます。
+組織の先進セキュリティ境界は、ネットワークを超えて拡張され、さまざまなデバイスを備えたあらゆる場所からクラウドベースのアプリにアクセスするユーザーが含まれるようになりました。 セキュリティインフラストラクチャで、特定のアクセス要求を許可するかどうか、およびその条件について判断する必要があります。 
 
-推奨事項は次のとおりです。
+この判断は、ユーザーアカウントのサインイン、使用されているデバイス、ユーザーがアクセスしようとしているアプリ、アクセス要求が行われた場所、および要求のリスク評価に基づいて行う必要があります。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
 
-- [Microsoft セキュリティスコア](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)と[Azure AD の id スコア](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)に合わせて配置され、組織のこれらのスコアが増加します。
-- は [、id インフラストラクチャをセキュリティで保護するための5つの手順を](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)実装するのに役立ちます。 
+このシリーズの記事では、id およびデバイスアクセスの前提条件となる構成のセット、および azure Active Directory (Azure AD) の条件付きアクセス、Microsoft Intune、および Azure AD Application Proxy で公開されているその他の SaaS サービス、およびオンプレミスアプリケーションに対する Microsoft 365 へのアクセスを保護するためのポリシーについて説明します。
+
+Id とデバイスのアクセスの設定とポリシーは3層で推奨されます。ベースライン保護、機密保護、および厳しいデータを持つ環境の保護。 これらの層とそれに対応する構成により、データ、id、デバイスの間で一貫したレベルの保護が提供されます。
+
+これらの機能と推奨事項:
+
+- は、Microsoft 365 E3 および Microsoft 365 E5 でサポートされています。
+- は、 [Microsoft セキュリティスコア](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) と [Azure AD の id スコア](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)に沿って配置されており、組織にとってこれらのスコアが増加します。
+- は [、id インフラストラクチャをセキュリティで保護するための5つの手順を](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)実装するのに役立ちます。
 
 組織に固有の環境要件や複雑さがある場合は、これらの推奨事項を出発点として使用します。 ただし、ほとんどの組織では、これらの推奨事項を定められたとおりに実装できます。
 
 >[!Note]
->Microsoft は、Office 365 サブスクリプションの Enterprise Mobility + Security (EMS) ライセンスも販売しています。 EMS E3 および EMS E5 機能は、Microsoft 365 E3 および Microsoft 365 E5 とほぼ同じです。 詳細については、「 [EMS プラン](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 」を参照してください。
+>Microsoft は、Office 365 サブスクリプションの Enterprise Mobility + Security (EMS) ライセンスも販売しています。 EMS E3 および EMS E5 機能は、Microsoft 365 E3 および Microsoft 365 E5 の機能と同じです。 詳細については、「 [EMS プラン](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 」を参照してください。
 >
 
 ## <a name="intended-audience"></a>対象ユーザー

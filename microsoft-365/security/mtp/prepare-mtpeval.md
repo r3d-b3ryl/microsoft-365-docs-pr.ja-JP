@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da0fd99aaa533c6e4f65b5b279adcd9a4b648c9c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ad2f34fbb94cafd22976c6ff7c75cdd254e913e3
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049629"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47650095"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-environment"></a>Microsoft の脅威保護のテスト環境を準備する
 
@@ -35,12 +35,12 @@ Microsoft の脅威保護の試用ラボ環境を作成して展開すること�
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
         <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護のテスト環境を準備する" />
-      <br/>フェーズ 1: 準備</a><br>
+      <br/>フェーズ 1: 準備 </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
         <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護のテスト環境をセットアップする" />
-      <br/>フェーズ 2: セットアップ</a><br>
+      <br/>フェーズ 2: セットアップ </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
@@ -83,11 +83,11 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 
 -   I = このプロジェクトの通知を受けた
 
-| 名前                 | Role                                                                                                                                                                                                          | Action |
+| Name                 | Role                                                                                                                                                                                                          | Action |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 名前と電子メールを入力する | **最高情報セキュリティ責任者 (CISO)** *新しいテクノロジの展開について組織の内部スポンサーとしての役割を果たすエグゼクティブの代表者。*                                                  | だから     |
-| 名前と電子メールを入力する | **サイバー防衛運用センター (cdoc) の本社**は、*この変更がお客様のセキュリティ運用チームのプロセスとどのように連携するかを定義することを担当しています。*       | だから     |
-| 名前と電子メールを入力する | **セキュリティアーキテクト**セキュリティ*チームは、この変更が組織内のコアセキュリティアーキテクチャとどのように連携するかを定義することを担当しています。*                         | R      |
+| 名前と電子メールを入力する | **サイバー防衛運用センター (cdoc) の本社**は、 *この変更がお客様のセキュリティ運用チームのプロセスとどのように連携するかを定義することを担当しています。*       | だから     |
+| 名前と電子メールを入力する | **セキュリティアーキテクト**セキュリティ *チームは、この変更が組織内のコアセキュリティアーキテクチャとどのように連携するかを定義することを担当しています。*                         | R      |
 | 名前と電子メールを入力する | **Workplace アーキテクト** *IT チームの代表者は、この変更が組織内のコアワークプレースアーキテクチャとどのように連携するかを定義すること*を担当します。                             | R      |
 | 名前と電子メールを入力する | **セキュリティアナリスト***この変更によって、検出機能、ユーザーの操作、およびこの変更の全体的な有用性に関する情報を提供できる、cdoc チームからの担当者は、セキュリティ運用の観点から、この変更に関する情報を提供できます。* | I      |
 
@@ -103,22 +103,22 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 3. ドメインコントローラーで、Azure Active Directory Connect ウィザードに従います。 ライセンス条項とプライバシーに関する通知を読んで、同意する場合はチェックボックスをオンにします。 [**続行**] をクリックします。
 ![Azure AD Connect ウェルカムページの画像](../../media/mtp-eval-3.png) <br>
 
-4. [**エクスプレス設定**] に移動します。
+4. [ **エクスプレス設定**] に移動します。
 ![Express 設定ページのイメージ](../../media/mtp-eval-4.png) <br>
 
-5. グローバル管理者の資格情報を入力します。 **[次へ]** をクリックします。
+5. グローバル管理者の資格情報を入力します。 [**次へ**] をクリックします。
 ![グローバル管理者の資格情報を入力する必要がある Azure AD に接続するためのページの画像](../../media/mtp-eval-5.png) <br>
 
-6. Active Directory ドメインサービスのエンタープライズ管理者の資格情報を入力します。 **[次へ]** をクリックします。
+6. Active Directory ドメインサービスのエンタープライズ管理者の資格情報を入力します。 [**次へ**] をクリックします。
 ![資格情報を入力する必要がある、AD DS への接続ページの画像](../../media/mtp-eval-6.png) <br>
 
-7. [**インストール**] をクリックして構成を確認します。
+7. [ **インストール** ] をクリックして構成を確認します。
 ![構成確認ページのイメージ](../../media/mtp-eval-7.png) <br>
 
 8. これで完了です。 Azure Active Directory Connect が正常に構成されました。
 ![正常に構成された Azure Active Directory Connect ページのイメージ](../../media/mtp-eval-8.png) <br>
 
-これで、 [Active Directory にユーザーとグループを追加](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate)し、 [SAM-R ポリシーを構成](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc)できるようになります。  
+これで、 [Active Directory にユーザーとグループを追加](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) し、 [SAM-R ポリシーを構成](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc)できるようになります。  
 
 
 ## <a name="configuration-order"></a>構成の順序
@@ -126,13 +126,11 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 構成順序のランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 Advanced Threat Protection| Office 365 ATP は、電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 <br> [詳細情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1-d                   |
-|Azure Advanced Threat Protection|Azure ATP では、Active Directory のシグナルを使用して、高度な脅威、侵害された id、および組織に向けた悪意のある insider 操作を識別、検出、調査します。 <br> [詳細情報](https://docs.microsoft.com/azure-advanced-threat-protection/) を参照してください。| pbm-2 |
-|Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで稼働するクラウドアクセスセキュリティブローカー (CASB) です。 これにより、豊富な可視性、データ移動の制御、および高度な分析が提供され、すべてのクラウドサービスにわたる脅威を特定し、戦闘することができます。 <br> [詳細情報](https://docs.microsoft.com/cloud-app-security/) を参照してください。                                                                                                                                                                                                                                                                                                                                                                       |1/3                   |
+| Office 365 Advanced Threat Protection| Office 365 ATP は、電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 <br> [詳細情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                    |
+|Azure Advanced Threat Protection|Azure ATP では、Active Directory のシグナルを使用して、高度な脅威、侵害された id、および組織に向けた悪意のある insider 操作を識別、検出、調査します。 <br> [詳細情報](https://docs.microsoft.com/azure-advanced-threat-protection/) を参照してください。| 2  |
+|Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで稼働するクラウドアクセスセキュリティブローカー (CASB) です。 これにより、豊富な可視性、データ移動の制御、および高度な分析が提供され、すべてのクラウドサービスにわたる脅威を特定し、戦闘することができます。 <br> [詳細情報](https://docs.microsoft.com/cloud-app-security/) を参照してください。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
 |Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP エンドポイント検出および対応機能により、高度な攻撃のほとんどリアルタイムで実用的な検出が実現されます。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>次の手順
-|||
-|:-------|:-----|
-|![フェーズ 2: セットアップ](../../media/setup.png) <br>[フェーズ 2: セットアップ](setup-mtpeval.md) | Microsoft の脅威保護のテスト環境をセットアップする
+![フェーズ 2: セットアップ](../../media/setup.png) <br>[フェーズ 2: セットアップ](setup-mtpeval.md)<br> Microsoft の脅威保護のテスト環境をセットアップする
 

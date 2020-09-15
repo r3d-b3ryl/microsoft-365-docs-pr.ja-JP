@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection のインシデントを調査する
+title: Microsoft Threat Protection のインシデントの概要
 description: デバイス、ユーザー、メールボックス全体で発生したインシデントを調査します。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235116"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649939"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft Threat Protection のインシデントの概要
 

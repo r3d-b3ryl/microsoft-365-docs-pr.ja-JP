@@ -1,5 +1,5 @@
 ---
-title: Microsoft の脅威保護を評価する
+title: Microsoft Threat Protection を評価する
 description: Microsoft の脅威保護の試用ラボ環境をセットアップして、デバイス、id、データ、およびアプリケーションを保護するために設計された調整脅威保護ソリューションが組織にどのように役立つかを確認します。
 keywords: Microsoft Threat Protection の試用版、microsoft の脅威保護の評価、microsoft の脅威保護評価ラボ、サイバーセキュリティ、高度な脅威、エンタープライズセキュリティ、デバイス、デバイス、id、ユーザー、データ、アプリケーション、インシデント、自動化された調査と修復、高度な検索
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6ee8147965a29b87d84690535116f096e4c6006
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a9d7b514aac8d1a769c0dabf6dcdb54f4bcb447b
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049641"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649963"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-environment"></a>Microsoft の脅威保護のテスト環境を作成する 
 
@@ -78,6 +78,5 @@ Microsoft の脅威保護のテスト環境を作成して展開するには、3
 -   運用環境でのペネトレーションテスト
 
 ## <a name="next-step"></a>次の手順
-|||
-|:-------|:-----|
-|![フェーズ 1: 準備](../../media/prepare.png) <br>[フェーズ 1: 準備](prepare-mtpeval.md) | Microsoft の脅威保護評価ラボ環境の準備
+![フェーズ 1: 準備](../../media/prepare.png) <br>[フェーズ 1: 準備](prepare-mtpeval.md) 
+<br> Microsoft の脅威保護評価ラボ環境の準備
