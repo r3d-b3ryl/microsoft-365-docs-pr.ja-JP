@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 0391fccfd7316b5c3268dd479c16fc2acf37080d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84ea370f513ade134df75b2ee4e0912d6a623227
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036272"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547343"
 ---
 # <a name="gdpr-for-office-web-apps-server-and-office-online-server"></a>Office Web Apps Server および Office Online Server の GDPR 対応
 
@@ -26,33 +26,35 @@ Office Online Server および Office Web Apps Server のテレメトリ デー�
 
 ログの各行には、それぞれ 1 つの CorrelationID が含まれています。関連するログ行は同じ CorrelationID を共有します。各 CorrelationID は単一の SessionID に結び付いており、1 つの SessionID は複数の CorrelationID に関連付けられている場合があります。各 SessionID を単一の UserID に関連付けることが可能ですが、いくつかのセッションは匿名のことがあり、その場合は関連する UserID がありません。そのため、特定のユーザーに関連付けられているのがどのデータかを判別するため、単一 UserID をそのユーザーに関連する SessionID に、それらの SessionID を対応する CorrelationID に、そしてそれらの CorrelationID をその関連付けのすべてのログにマッピングすることが可能です。さまざまな ID の間の関係については、次の図を参照してください。
 
-![](../media/gdpr-for-office-online-server-image1.jpg)
+![SessionIDs と CorrelationIds の関係を示すフローチャート](../media/gdpr-for-office-online-server-image1.jpg)
 
 ## <a name="gathering-logs"></a>ログの収集
 
 たとえば、UserID 1 に関連するすべてのログを収集するための最初のステップは、UserID 1 に関連するすべてのセッション (つまり SessionID 1 と SessionID 2) を収集することです。次のステップは、SessionID 1 に関連するすべての関連付け (CorrelationID 1、2、および 3)、および SessionID 2 に関連するすべての関連付け (CorrelationID 4) を収集することです。最後に、リスト内の関連付けのそれぞれに関連するすべてのログを収集します。
 
-1.  UlsViewer の起動
+1. UlsViewer の起動
 
-2.  対象となる期間に対応する uls ログを開きます。ULS ログは、%PROGRAMDATA%\\Microsoft\\OfficeWebApps\\Data\\Logs\\ULS の中に保存されています。
+2. 対象となる期間に対応する uls ログを開きます。ULS ログは、%PROGRAMDATA%\\Microsoft\\OfficeWebApps\\Data\\Logs\\ULS の中に保存されています。
 
-3.  フィルターの編集 | 変更
+3. フィルターの編集 | 変更
 
-4.  次のフィルターを適用します。
+4. 次のフィルターを適用します。
 
-    -   EventID が apr3y に等しい、または
+    - EventID が apr3y に等しい、
 
-    -   EventID が bp2d6 に等しい
+      または、
 
-5.  ハッシュ UserID が、これら 2 つのイベントのうちのいずれか 1 つのメッセージ内に含まれます
+    - EventID が bp2d6 に等しい
 
-6.  apr3y の場合、メッセージには UserID 値および PUID 値が含まれます
+5. ハッシュ UserID が、これら 2 つのイベントのうちのいずれか 1 つのメッセージ内に含まれます
 
-7.  bp2d6 の場合、メッセージにかなりの情報が含まれます。LoggableUserId 値フィールドがハッシュ UserID です。
+6. apr3y の場合、メッセージには UserID 値および PUID 値が含まれます
 
-8.  これらの 2 つのタグのうちのいずれか 1 つからハッシュ UserID が取得されると、ULSViewer のその行の WacSessionId 値の内容は、そのユーザーに関連する WacSessionId になります
+7. bp2d6 の場合、メッセージにかなりの情報が含まれます。LoggableUserId 値フィールドがハッシュ UserID です。
 
-9.  問題のユーザーに関連する WacSessionId 値をすべて収集します
+8. これらの 2 つのタグのうちのいずれか 1 つからハッシュ UserID が取得されると、ULSViewer のその行の WacSessionId 値の内容は、そのユーザーに関連する WacSessionId になります
+
+9. 問題のユーザーに関連する WacSessionId 値をすべて収集します
 
 10. リスト内の最初の WacSessionId で、EventId が "xmnv" に等しく、Message が "UserSessionId=\<WacSessionId\>" に等しいものすべてをフィルター処理します (フィルターの \<WacSessionId\> の部分を実際の WacSessionId に置き換える)
 
@@ -70,16 +72,16 @@ Office Online Server および Office Web Apps Server のテレメトリ デー�
 
 Office のログには、さまざまな異なるタイプのデータが含まれます。ULS ログに含まれるデータの例を、次に示します。
 
--   製品使用中に発生した問題のエラー コード
+- 製品使用中に発生した問題のエラー コード
 
--   ボタンのクリックおよびアプリ使用状況についてのその他のデータ
+- ボタンのクリックおよびアプリ使用状況についてのその他のデータ
 
--   アプリについて、またアプリ内の特定の機能についてのパフォーマンス データ
+- アプリについて、またアプリ内の特定の機能についてのパフォーマンス データ
 
--   ユーザーのコンピューターの所在地を示す一般的な位置情報 (IP アドレスから派生する国 / 地域、県、市町村)、ただし正確な地理的位置ではありません
+- ユーザーのコンピューターの所在地を示すおおまかな位置情報 (IP アドレスに由来する国 / 地域、県、市町村)、ただし正確な地理的位置ではありません。
 
--   ブラウザーに関する基本的なメタデータ (つまりブラウザーの名前とバージョン)、およびコンピューターに関する基本的なメタデータ (OS の種類とバージョン)
+- ブラウザーに関する基本的なメタデータ (つまりブラウザーの名前とバージョン)、およびコンピューターに関する基本的なメタデータ (OS の種類とバージョン)
 
--   ドキュメント ホストからのエラー メッセージ (OneDrive、SharePoint、Exchange など)
+- ドキュメント ホストからのエラー メッセージ (OneDrive、SharePoint、Exchange など)
 
--   ユーザーのアクションには関係しないアプリの内部プロセスに関する情報
+- ユーザーのアクションには関係しないアプリの内部プロセスに関する情報
