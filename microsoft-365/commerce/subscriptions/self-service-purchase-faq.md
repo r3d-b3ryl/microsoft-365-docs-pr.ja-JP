@@ -17,13 +17,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: セルフサービス購入に関してよく寄せられる質問に対する回答を確認できます。
-ms.date: 08/12/2020
-ms.openlocfilehash: 78a7082a966a866f18ac2aa378198dbb33d8c158
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.date: 09/15/2020
+ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653703"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816927"
 ---
 # <a name="self-service-purchase-faq"></a>セルフサービス購入についてよく寄せられる質問
 
@@ -32,7 +32,7 @@ ms.locfileid: "46653703"
 セルフサービス購入は、電源プラットフォーム (Power BI、電源アプリ、および電源自動化)、プロジェクト、Visio で利用できます。
 
 > [!NOTE]
-> セルフサービス購入はインドでは利用できず、政府または教育機関のお客様は利用できません。
+> セルフサービス購入は、インドまたは官公庁または教育機関のお客様にはご利用いただけません。 ブラジルおよびコンゴ民主共和国では、プロジェクトと Visio をセルフサービスで購入することはできません。
 
 ## <a name="making-a-self-service-purchase"></a>セルフサービス購入の作成
 

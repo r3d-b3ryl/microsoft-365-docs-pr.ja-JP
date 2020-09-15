@@ -1,7 +1,7 @@
 ---
 title: Microsoft の脅威保護のテスト環境を準備する
-description: Microsoft の脅威保護のテスト環境をセットアップするときに、ステークホルダーのサインアップ、タイムライン、環境に関する考慮事項、および導入の順序を準備する
-keywords: MTP 試用準備、展開、準備、ステークホルダー、タイムライン、環境、エンドポイント、サーバー、管理、導入
+description: Microsoft の脅威保護の試用ラボまたはパイロット環境をセットアップするときに、ステークホルダーのサインアップ、タイムライン、環境に関する考慮事項、導入の順序を準備する
+keywords: Mtp 試用準備、MTP パイロット準備、mtp パイロットプロジェクトを実行するための準備、パイロット MTP プロジェクトの実行、展開、準備、ステークホルダー、タイムライン、環境、エンドポイント、サーバー、管理、導入
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,31 +15,31 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ad2f34fbb94cafd22976c6ff7c75cdd254e913e3
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: a684f49ab8c70a19a17ff43195197677bccbf95b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650095"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816771"
 ---
-# <a name="prepare-your-microsoft-threat-protection-trial-lab-environment"></a>Microsoft の脅威保護のテスト環境を準備する
+# <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Microsoft の脅威保護の試用ラボまたはパイロット環境の準備
 
 **適用対象:**
 - Microsoft Threat Protection
 
-Microsoft の脅威保護の試用ラボ環境を作成して展開することは、3つのフェーズのプロセスです。
+Microsoft の脅威保護の試用ラボまたはパイロット環境を作成して展開するには、3つのフェーズがあります。
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護のテスト環境を準備する" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境の準備" />
       <br/>フェーズ 1: 準備 </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護のテスト環境をセットアップする" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境をセットアップする" />
       <br/>フェーズ 2: セットアップ </a><br>
         </td>
     <td align="center">
@@ -64,13 +64,13 @@ Microsoft の脅威保護の試用ラボ環境を作成して展開すること�
 現在、準備段階になっています。
 
 
-正常な展開には、準備が重要です。 このセクションでは、Microsoft の脅威保護の展開用の試用版ラボ環境を作成するための準備として、考慮する必要のある内容について説明します。
+正常な展開には、準備が重要です。 このセクションでは、Microsoft の脅威保護の展開のための試用ラボまたはパイロット環境を作成するための準備として考慮する必要のある内容について説明します。
 
 ## <a name="prerequisites"></a>前提条件
 Microsoft の脅威保護をプロビジョニングおよび使用するためのライセンス、ハードウェア要件、ソフトウェア要件、およびその他の構成設定について説明します。 [Microsoft の脅威保護](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide)、 [microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [OFFICE 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)、 [Azure atp](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)、 [microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)の最小要件を参照してください。
 
 ## <a name="stakeholders-and-sign-off"></a>関係者と承認
-次のセクションでは、プロジェクトに関係するすべての関係者を特定し、評価または概念実証の校正を行う場合でも、承認、確認、または通知を受ける必要がある可能性があるすべての関係者を識別します。
+次のセクションでは、プロジェクトに関係するすべての関係者を特定し、評価のために、またはパイロットを実行しているかどうかにかかわらず、サインオフ、レビュー、または通知を受ける必要がある可能性があるすべての関係者を識別します。
 
 >[!NOTE]
 >組織によっては、このような役割を持つセキュリティ組織の成熟度を持たない場合があります。 このような場合は、レビューと承認の責任について指導者チームと相談してください。
@@ -92,7 +92,7 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 | 名前と電子メールを入力する | **セキュリティアナリスト***この変更によって、検出機能、ユーザーの操作、およびこの変更の全体的な有用性に関する情報を提供できる、cdoc チームからの担当者は、セキュリティ運用の観点から、この変更に関する情報を提供できます。* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Azure Active Directory の準備
-オンプレミスの Active Directory と Azure Active Directory との間の同期を既に有効にしている場合は、この手順をスキップします。 Azure Active Directory からの既存のベストプラクティスドキュメントを確認します。 次の手順は、Microsoft の脅威保護を評価するために最適化されています。
+オンプレミスの Active Directory と Azure Active Directory との間の同期を既に有効にしている場合は、この手順をスキップします。 Azure Active Directory からの既存のベストプラクティスドキュメントを確認します。 次の手順は、パイロット Microsoft の脅威保護プロジェクトを評価または実行するために最適化されています。
 
 1. Azure **AD Connect**> [azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade)ポータルに移動します。 
 ![Azure Active Directory ポータルページのイメージ](../../media/mtp-eval-1.png) <br> 
@@ -122,7 +122,7 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 
 
 ## <a name="configuration-order"></a>構成の順序
-次の表は、試用版ラボ環境の展開に Microsoft の脅威保護コンポーネントを構成するために Microsoft が推奨する順序を示しています。
+次の表は、試用ラボまたはパイロット環境の展開に Microsoft の脅威保護コンポーネントを構成するために Microsoft が推奨する順序を示しています。
 
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 構成順序のランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -132,5 +132,5 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 |Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP エンドポイント検出および対応機能により、高度な攻撃のほとんどリアルタイムで実用的な検出が実現されます。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>次の手順
-![フェーズ 2: セットアップ](../../media/setup.png) <br>[フェーズ 2: セットアップ](setup-mtpeval.md)<br> Microsoft の脅威保護のテスト環境をセットアップする
+![フェーズ 2: セットアップ](../../media/setup.png) <br>[フェーズ 2: セットアップ](setup-mtpeval.md)<br> Microsoft の脅威保護の試用ラボまたはパイロット環境をセットアップする
 

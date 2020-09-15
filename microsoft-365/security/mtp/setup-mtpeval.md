@@ -1,7 +1,7 @@
 ---
-title: Microsoft の脅威保護のテスト環境をセットアップする
+title: Microsoft の脅威保護の試用ラボまたはパイロット環境をセットアップする
 description: Microsoft 365 セキュリティセンターにアクセスして、Microsoft の脅威保護のテスト環境をセットアップする
-keywords: Microsoft Threat Protection 試用版のセットアップ、microsoft threat protection、Microsoft Threat Protection 評価ラボのセットアップの試行
+keywords: Microsoft Threat Protection 試用版のセットアップ、Microsoft Threat Protection パイロットセットアップ、microsoft threat protection、Microsoft Threat Protection 評価ラボの設定の試行
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 69a883263952b7c20225659ae023399e0242606d
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650071"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817183"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Microsoft の脅威保護のテスト環境をセットアップする 
 
@@ -28,26 +28,26 @@ ms.locfileid: "47650071"
 - Microsoft Threat Protection 
 
 
-Microsoft の脅威保護の試用ラボ環境を作成して展開することは、3つのフェーズのプロセスです。
+Microsoft の脅威保護の試用ラボまたはパイロット環境を作成して展開するには、3つのフェーズがあります。
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護評価ラボの準備" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Microsoft の脅威保護評価ラボまたはパイロット環境を準備する" />
       <br/>フェーズ 1: 準備 </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Microsoft の脅威保護評価ラボをセットアップする" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境をセットアップする" />
       <br/>フェーズ 2: セットアップ </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
-Microsoft の脅威保護のテスト環境とエンドポイントの各 Microsoft 脅威保護の柱を構成する" />
+Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard your endpoints" title="
+Microsoft の脅威保護の試用ラボまたはパイロット環境とエンドポイントの各 Microsoft 脅威保護の柱を構成する" />
       <br/>フェーズ 3: 構成 & オンボード </a><br>
 </td>
 
@@ -55,12 +55,12 @@ Microsoft の脅威保護のテスト環境とエンドポイントの各 Micros
   </tr>
 </table>
 
-現在、セットアップ段階になっています。 最初の手順を実行して、Microsoft 365 セキュリティセンターにアクセスし、試用ラボ環境をセットアップします。
+現在、セットアップ段階になっています。 最初の手順を実行して、Microsoft 365 セキュリティセンターにアクセスし、試用ラボまたはパイロット環境を設定します。
 
 Microsoft 365 E5 ライセンスにサインアップするために使用できる onmicrosoft.com テナントを生成するには、Office 365 または Azure Active Directory サブスクリプションにサインアップし*ます。* 
 
 >[!NOTE]
->既存の Office 365 または Azure Active Directory サブスクリプションを既にお持ちの場合は、「Office 365 E5 試用版テナントの作成」の手順を省略できます。
+>既存の Office 365 または Azure Active Directory サブスクリプションを既に所有している場合は、「Office 365 E5 試用版またはパイロットのテナント作成の手順をスキップできます。
 
 このフェーズでは、次の手順を実行します。
 - Office 365 E5 試用版テナントを作成する
@@ -77,7 +77,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 2. メールアドレス (個人または企業) を入力して、試用版の登録を完了します。 [ **アカウントの設定] を**クリックします。
 ![Image of_Office 365 E5 試用版登録の設定ページ](../../media/mtp-eval-10.png) <br> 
 
-3. 名、姓、勤務先電話番号、会社名、会社のサイズ、国または地域を入力します。  
+3. 名、姓、勤務先電話番号、会社名、会社の規模、国または地域を入力します。  
 <br>![Image of_Office 365 E5 試用版登録のセットアップページで、名前、電話番号、および会社の詳細を確認するページが表示されます。](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >ここで設定した国または地域によって、Office 365 がホストされるデータセンターの地域が決まります。
@@ -97,7 +97,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 8. 会社のドメインを Office 365 テナントに接続します。 オプション[ **既に所有** しているドメインを接続する] を選択し、ドメイン名を入力します。 [**次へ**] をクリックします。
 <br>![画像 of_Office 365 E5 セットアップページで、サインインとメールをカスタマイズする必要があります。](../../media/mtp-eval-16.png) <br>
  
-9. ドメインの所有権を検証するには、TXT または MX レコードを追加する必要があります。 ドメインに TXT または MX レコードを追加したら、[ **検証**] を選択します。
+9. TXT または MX レコードを追加して、ドメインの所有権を検証します。 ドメインに TXT または MX レコードを追加したら、[ **検証**] を選択します。
 <br>![イメージ of_Office 365 E5 セットアップページ。ドメインを確認するために MX レコードの TXT を追加する必要があります。](../../media/mtp-eval-17.png) <br>
  
 10. オプションテナントの追加のユーザーアカウントを作成します。 [ **次へ**] をクリックすると、この手順を省略できます。
@@ -137,7 +137,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 5. [ **今すぐ試行** ] をクリックして、Microsoft 365 E5 試用版を確認します。
 <br>![Image of_Microsoft 365 E5 [無料試用版の開始] ページで、[今すぐ試行] ボタンを開始する必要があります。](../../media/mtp-eval-27.png) <br>
  
-6. **Microsoft 365 管理センター**  >  **ユーザー**の  >  **アクティブユーザー**に移動します。 ユーザーアカウントを選択し、[ **製品ライセンスの管理**] を選択してから、ライセンスを Office 365 E5 から **Microsoft 365 e5**にスワップします。 **[保存]** をクリックします。
+6. **Microsoft 365 管理センター**  >  **ユーザー**の  >  **アクティブユーザー**に移動します。 ユーザーアカウントを選択し、[ **製品ライセンスの管理**] を選択してから、ライセンスを Office 365 E5 から **Microsoft 365 e5**にスワップします。 [**保存**] をクリックします。
 ![Image of_Microsoft 365 管理センター] ページで、Microsoft 365 E5 ライセンスを選択できます。](../../media/mtp-eval-28.png) <br>
  
 7. グローバル管理者アカウントをもう一度選択し、[ **ユーザー名の管理**] をクリックします。
@@ -149,4 +149,4 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 
 
 ## <a name="next-step"></a>次の手順
-![フェーズ 3: 構成 & オンボード](../../media/config-onboard.png) <br>[フェーズ 3: 構成 & オンボード](config-mtpeval.md) <br>Microsoft の脅威保護評価ラボとエンドポイントをオンボードにするために、Microsoft の各脅威保護の柱を構成します。
+![フェーズ 3: 構成 & オンボード](../../media/config-onboard.png) <br>[フェーズ 3: 構成 & オンボード](config-mtpeval.md) <br>Microsoft の脅威保護の試用ラボまたはパイロット環境とエンドポイントをオンボードにするために、Microsoft の各脅威保護の柱を構成します。

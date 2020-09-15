@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: レビューセットでクエリを作成して実行し、高度な電子情報開示ケースにおけるより効率的なレビューのためにデータを整理する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527437"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816720"
 ---
 # <a name="query-the-data-in-a-review-set"></a>レビュー セット内のデータをクエリする
 
@@ -30,13 +30,13 @@ ms.locfileid: "46527437"
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>レビューセットにクエリを作成して実行する
 
-レビュー セット内のドキュメントに対してクエリを作成して実行するには、レビュー セットで **[新しいクエリ]** をクリックします。 クエリの名前を指定して条件を定義した後、[**保存**] をクリックしてクエリを保存して実行します。 以前に保存したクエリを実行するには、保存されているクエリをクリックします。
+レビューセット内のドキュメントに対してクエリを作成して実行するには、レビューセットの [ **新しいクエリ** ] を選択します。 クエリの名前を指定して条件を定義した後、[ **保存** ] を選択してクエリを保存して実行します。 以前に保存されたクエリを実行するには、保存済みのクエリを選択します。
 
 ![Set クエリを確認する](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>レビューセットクエリを作成する
 
-クエリを作成するには、キーワード条件カードで条件カードとクエリ言語を組み合わせて使用します。 また、より複雑なクエリを作成するには、条件カードをブロック (*条件グループ*と呼ばれる) としてグループ化することもできます。 検索できるメタデータのプロパティの一覧と説明については、「[Advanced eDiscovery のドキュメントのメタデータ フィールド](document-metadata-fields-in-Advanced-eDiscovery.md)」をご覧ください。
+クエリを作成するには、キーワード条件カードで条件カードとクエリ言語を組み合わせて使用します。 また、より複雑なクエリを作成するには、条件カードをブロック ( *条件グループ*と呼ばれる) としてグループ化することもできます。 検索できるメタデータのプロパティの一覧と説明については、「[Advanced eDiscovery のドキュメントのメタデータ フィールド](document-metadata-fields-in-Advanced-eDiscovery.md)」をご覧ください。
 
 ### <a name="condition-cards"></a>条件カード
 
@@ -56,9 +56,9 @@ ms.locfileid: "46527437"
 
 条件カードに加えて、キーワードカードで KQL のようなクエリ言語を使用してクエリを作成できます。 レビューセットクエリのクエリ言語は、 **AND**、 **OR**、 **NOT**、 **NEAR**などの標準ブール演算子をサポートしています。 また、1文字のワイルドカード (?) と複数文字のワイルドカード (*) もサポートしています。
 
-## <a name="using-filters"></a>フィルターの使用
+## <a name="filters"></a>フィルター
 
-保存できるクエリに加えて、レビューセットフィルターを使用して、追加の条件をレビューセットクエリにすばやく適用することができます。 これにより、レビュー セットのクエリによって表示される結果をさらに絞り込むことができます。
+保存できるクエリに加えて、レビューセットフィルターを使用して、追加の条件をレビューセットクエリにすばやく適用することができます。 フィルターを使用すると、レビューセットクエリによって表示される結果をさらに絞り込むことができます。
 
 ![設定フィルターを確認する](../media/AeDReviewSetFilters.png)
 
