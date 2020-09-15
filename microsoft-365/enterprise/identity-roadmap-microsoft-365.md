@@ -15,30 +15,30 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 のロードマップ情報。
-ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315801"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775125"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の id ロードマップ
 
-Microsoft 365 for enterprise では、綿密に計画され、実行されている id インフラストラクチャにより、セキュリティの強化と、認証されたユーザーとデバイスによる生産性のワークロードとそのデータのアクセスのみを入念することができます。
+Microsoft 365 for enterprise では、十分に計画され、実行された id インフラストラクチャにより、生産性のワークロードへのアクセスと、認証されたユーザーとデバイスのみへのデータへのアクセス制限を含む、セキュリティを強化する方法が入念されています。
 
-このビデオでは、Microsoft 365 for enterprise の id モデルと認証の概要について見ていきます。
+Microsoft 365 for enterprise の id モデルと認証の概要については、次のビデオをご覧ください。
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-各 Microsoft 365 for enterprise プランの id 機能、Azure Active Directory (Azure AD) の役割、社内およびクラウドベースのコンポーネント、および最も一般的な認証構成については、「 [Identity Infrastructure](../downloads/m365e-identity-infra.pdf)」のポスターを参照してください。
+各 Microsoft 365 for enterprise プランの id 機能、Azure Active Directory の役割、オンプレミスとクラウドベースのコンポーネントの両方、および最も一般的な認証構成については、「 [Identity Infrastructure](../downloads/m365e-identity-infra.pdf)」のポスターを参照してください。
 
 [![ID インフラストラクチャ ポスター](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-この2ページのポスターは、Microsoft 365 for enterprise の id の概念と構成をすばやく理解するための簡単な方法です。
+この2ページのポスターを参照して、Microsoft 365 for enterprise の id の概念と構成をすばやく増やします。
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)することもできます。 レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
 
 ## <a name="plan"></a>計画
 
@@ -59,7 +59,7 @@ Id の実装を展開するには、次のようにします。
 
 ### <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 
-Microsoft では、セキュアで生産性の高い労働力を確保するために [ID とデバイスのアクセス](microsoft-365-policies-configurations.md)に関する一連の推奨事項を提供しています。 Identity の場合は、以下の記事の推奨事項と設定を使用します。
+セキュリティで保護された生産性の高い労働力を確保するために、Microsoft は [id とデバイスへのアクセス](microsoft-365-policies-configurations.md)に関する推奨事項のセットを提供しています。 Identity の場合は、以下の記事の推奨事項と設定を使用します。
 
 - [前提条件](identity-access-prerequisites.md)
 - [共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)
@@ -76,12 +76,12 @@ Id の実装を管理するには、次のようにします。
 Microsoft の IT エキスパートが [ID を管理し、アクセスをセキュリティで保護](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft)する方法について説明します。
 
 >[!Note]
->この IT Showcase のリソースは英語でのみご利用いただけます。
+>この IT ショウケースリソースは英語でのみ利用できます。
 >
 
 ## <a name="how-contoso-did-identity-for-microsoft-365"></a>Contoso 社が Microsoft 365 の id を使用する方法
 
-架空の典型的な多国籍企業である Contoso Corporation が、Microsoft 365 のクラウド サービス向けに[ハイブリッド ID インフラストラクチャを展開](contoso-identity.md)した方法をご紹介します。
+架空の多国籍組織が Microsoft 365 cloud services のハイブリッド id インフラストラクチャを展開する方法の例については、「 [Contoso Corporation の id](contoso-identity.md)」を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

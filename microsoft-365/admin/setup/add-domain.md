@@ -26,19 +26,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Dns レコードを DNS ホストに追加して、365 Microsoft 365 の microsoft にドメインを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315719"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775161"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -83,34 +83,26 @@ ms.locfileid: "47315719"
     
 5. ドメインの所有を確認する方法を選択します。
     
-    1. ドメインレジストラーで[ドメイン接続](#domain-connect-registrars-integrating-with-microsoft-365)を**使用して**いる場合は、[  >  **次へ**] を選択すると、Microsoft に[よってレコードが自動的に設定され](../get-help-with-domains/domain-connect.md)ます。
+    1. ドメインレジストラーが [ドメイン接続](#domain-connect-registrars-integrating-with-microsoft-365)を使用している場合、microsoft はレジストラーにサインインして microsoft 365 への接続を確認することによって、 [レコードを自動的に](../get-help-with-domains/domain-connect.md) セットアップします。 管理センターに戻り、Microsoft がドメインを自動的に検証するようになります。
+    2. TXT レコードを使用し、ドメインを検証できます。 これを選択し、**[次へ]** を選択すると、この DNS レコードをレジストラーの Web サイトに追加する方法が表示されます。 レコードを追加すると、検証に最大 30 分かかることがあります。 
+    3. ドメインの web サイトにテキストファイルを追加することができます。 セットアップウィザードから .txt ファイルを選択してダウンロードし、web サイトの最上位レベルのフォルダーにファイルをアップロードします。 ファイルへのパスは、次のようになり `http://mydomain.com/ms39978200.txt` ます。 Web サイトでファイルを検索して、ドメインを所有していることを確認します。
     
-    2. ドメインに登録している連絡先に、検証コードを含むメールを送信できます。 レコードのメールに見覚えがない、またはメールにアクセスできない場合、3 番目のオプションを利用できます。
+6. Microsoft がドメインを使用するために必要な DNS 変更を行う方法を選択します。
     
-    3. TXT レコードを使用し、ドメインを検証できます。 これを選択し、**[次へ]** を選択すると、この DNS レコードをレジストラーの Web サイトに追加する方法が表示されます。 レコードを追加すると、検証に最大 30 分かかることがあります。 
-
-    4. ドメインの web サイトにテキストファイルを追加することができます。 セットアップウィザードから .txt ファイルを選択してダウンロードし、web サイトの最上位レベルのフォルダーにファイルをアップロードします。 ファイルへのパスは、次のようになり `http://mydomain.com/ms39978200.txt` ます。 Web サイトでファイルを検索して、ドメインを所有していることを確認します。
-    
-6. Office でドメインを使用するために必要な DNS 変更の方法を選択します。
-    
-    1. DNS を Office に自動構成させる場合、**[DNS レコードを追加してもらう]** を選択します。 
-    
-  
+    1. レジストラーが[ドメイン接続](#domain-connect-registrars-integrating-with-microsoft-365)をサポートしている場合は **、[DNS レコードを追加**する] を選択し、microsoft はレジストラーにサインインして microsoft 365 への接続を確認して、[レコードを自動的に](../get-help-with-domains/domain-connect.md)セットアップします。
     2. 特定の Microsoft 365 サービスのみをドメインに接続する場合、またはこれを今後スキップする場合は **、[自分で DNS レコードを追加** する] を選択します。 **次のように、操作内容を正確に把握している場合に、このオプションを選択します。**
-    
-7. *DNS レコードを自分で追加する*を選択した場合、**[次へ]** を選択します。そして、ドメインを設定するために、レジストラー Web サイトに追加する必要があるすべてのレコードが含まれるページが表示されます。 
-    
-  
-  
+
+7. *DNS レコードを自分で追加*することを選択した場合は、[**次へ**] を選択すると、レジストラーの web サイトに追加する必要があるすべてのレコードがあるページが表示され、ドメインをセットアップすることができます。 
+
     ポータルでレジストラーが認識されない場合、[一般的な方法に従うことができます](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
     
     [ホスト固有の命令](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)の一覧からお使いのホストを見つけ、手順に従って必要なすべてのレコードを追加します。 
     
     ドメインの DNS ホスティング プロバイダーまたはドメイン レジストラーがわからない場合は、「[ドメイン レジストラーまたは DNS ホスティング プロバイダーを探す](../get-help-with-domains/find-your-domain-registrar.md)」を参照してください。
     
-    後で行う場合、下にスクロールして **[この手順をスキップ]** を選択します。
+    後で待機する場合は、すべてのサービスの選択を解除して [ **続行**] をクリックするか、または [前のドメイン接続] ステップで [ **その他のオプション** ] を選択し、[ **これはスキップ**します] を選択します。
     
-8. **[完了]** を選択します。これで完了です! 
+8. **[完了]** を選択します。これで完了です!
 
 ## <a name="add-or-edit-custom-dns-records"></a>カスタムの DNS レコードを追加または編集する
 
@@ -126,7 +118,7 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 
 5. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
     
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 ## <a name="registrars-with-domain-connect"></a>レジストラーとドメイン接続
 
@@ -140,15 +132,16 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Microsoft 365 と統合するドメイン接続レジストラー
 
 - [1 &amp; IONOS](https://www.1and1.com/)
-- [123Reg](https://www.123-reg.co.uk/)
+- [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy 販売店)
-    - [MadDog ドメイン](https://www.maddogdomains.com/)
-    - [不正名](https://www.cheapnames.com)
+    - 例:
+        - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
+        - [Domainall 現在](https://www.domainrightnow.com/)
 
 ### <a name="what-happens-to-my-email-and-website"></a>電子メールと web サイトはどうなりますか?
 

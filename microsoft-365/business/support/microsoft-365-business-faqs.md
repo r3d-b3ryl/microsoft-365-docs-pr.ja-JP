@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 07/21/2020
-ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: e056f0c33aec180080a0d4e27e182d2d98877e6e
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560801"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775087"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 Business Premium に関するよく寄せられる質問
 
@@ -98,9 +98,9 @@ Windows 7、8、8.1 Professional のライセンスがあるデバイスを使�
 Microsoft 365 Business Premium は、従業員が個人のデバイスを業務に使用できるようにする一方で、企業には従業員のデバイスでのビジネス情報へのアクセス、保持、共有を防止する機能を提供する、シンプルかつ強力な手段を提供します。 具体的な機能は次のとおりです。 
 * **Office モバイル用のアプリ保護**により、アプリで iOS および Android モバイル デバイス上の Office データ (メール、カレンダー、連絡先、ドキュメントなど) を保護できます。そのために、一定期間サービスに接続しなかった場合のビジネス データの自動削除、OneDrive for Business のみへの情報の保存の要求、Office アプリへのアクセス時の暗証番号 (PIN)/指紋検証の要求、Office アプリから個人アプリへの会社のデータのコピーの防止などのポリシーを適用します。 Microsoft 365 Business Premium サブスクライバーは、Intune を介して他のモバイル アプリのアプリケーション管理も行えます。 
   
-* **Windows 10 pc のデバイス管理**を使用すると、Microsoft Defender Antivirus protection for マルウェア、自動更新、指定された時間後に画面をオフにするなどの機能を設定し、適用することを選択できます。 さらに、Windows 10 デバイスを紛失したり盗まれたりした場合は、管理センターを使用して業務アプリケーションとデータの完全にワイプすることができます。 
+* **Windows 10 pc のデバイス管理** を使用すると、Microsoft Defender Antivirus protection for マルウェア、自動更新、指定された時間後に画面をオフにするなどの機能を設定し、適用することを選択できます。 さらに、Windows 10 デバイスを紛失したり盗まれたりした場合は、管理センターを使用して業務アプリケーションとデータの完全にワイプすることができます。 
 
-* **Ios、android & macOS の各機能のデバイス管理に**より、企業は Ios、Android、Windows、および macOS デバイスを含む多様なデバイスエコシステムを安全に管理することができます。 
+* **Ios、android & macOS の各機能のデバイス管理に** より、企業は Ios、Android、Windows、および macOS デバイスを含む多様なデバイスエコシステムを安全に管理することができます。 
 
 ### <a name="how-does-microsoft-365-business-premium-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 Business Premium は、組織内の PC を悪意のある攻撃から保護するのにどのように役立ちますか。 
 Microsoft 365 Business Premium で管理されている Pc は Microsoft Defender ウイルス対策を使用して保護されています。これは [いいえ] です。 これは、Windows 10 で使用されているウイルス対策機能のうちの 1 つであり、他のソリューションよりも多くのコンピューターを、ウイルス、マルウェア、スパイウェア、その他の脅威から保護しています。 Microsoft 365 Business Premium を使用すると、組織は Microsoft Defender ウイルス対策保護が稼働していることを確認し、常に Windows 10 デバイスすべてを最新の状態に保つことができます。  
@@ -126,7 +126,7 @@ Microsoft 365 Business Premium は、Office 365 を利用できる地域のす�
 Microsoft 365 Business Premium 試用版は、CSP を対象としています。 直販顧客向け試用版は、後日のご案内になります。 
  
 ### <a name="what-should-customers-and-partners-know-before-running-microsoft-365-business-premium-within-their-organization"></a>組織内の Microsoft 365 Business Premium を実行する前に、ユーザーやパートナーに必要な知識は何ですか。 
-Microsoft 365 Business Premium の全機能を経験したいお客様は、既存のデスクトップで Windows 7、8.1、または 10 Pro<sup>[2](#footnote2)</sup>を実行している必要があります。 既存の Windows 10 Pro PC で、Creators Update をまだ実行していない場合は、Creators Update を実行している必要があります。 
+Microsoft 365 Business Premium の全機能を経験したいお客様は、既存のデスクトップで Windows 7、8.1、または 10 Pro<sup>[2](#footnote2)</sup> を実行している必要があります。 既存の Windows 10 Pro PC で、Creators Update をまだ実行していない場合は、Creators Update を実行している必要があります。 
 
 ## <a name="deployment"></a>展開
 
@@ -154,10 +154,10 @@ Windows AutoPilot は、新しい Windows 10 PC の展開を効率化するサ�
 Microsoft 365 Business Standard に追加できるすべてのアドオンは、Microsoft 365 Business Premiumに追加することができます。 これは、Office 365 Cloud App Security、Advanced コンプライアンス、脅威インテリジェンス、MyAnalytics、Power BI Pro、および電話会議を購入できることを意味します。 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>Microsoft 365 Business Premium に電話システムと通話プランを追加できますか。 
-はい。ビジネス音声サブスクリプションを購入することができます。 [ビジネス voip](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice)は、電話システム、電話会議、国内通話プランなどをバンドルした、最大300ユーザーの中小企業向けに設計されたテレフォニーソリューションです。 利用可能な電話システムの機能には、ボイスメール、発信者番号、コールパーク、着信の転送、自動応答、通話キューなどがあります。 <br> お住まいの国または地域でビジネス Voip が利用可能かどうかを確認するには、「 [Business voice の国と地域の可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)」を参照してください。 価格情報については、「[ビジネス音声の価格設定](https://go.microsoft.com/fwlink/?linkid=2127221)」を参照してください。
+はい。ビジネス音声サブスクリプションを購入することができます。 [ビジネス voip](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) は、電話システム、電話会議、国内通話プランなどをバンドルした、最大300ユーザーの中小企業向けに設計されたテレフォニーソリューションです。 利用可能な電話システムの機能には、ボイスメール、発信者番号、コールパーク、着信の転送、自動応答、通話キューなどがあります。 <br> お住まいの国または地域でビジネス Voip が利用可能かどうかを確認するには、「 [Business voice の国と地域の可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)」を参照してください。 価格情報については、「 [ビジネス音声の価格設定](https://go.microsoft.com/fwlink/?linkid=2127221)」を参照してください。
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 Business Premium のお客様は Microsoft Defender Advanced Threat Protection を使用できますか? 
-はい。 Microsoft Defender Advanced Threat Protection は、Microsoft 365 Business Premium のお客様へのアドオンとして提供されています。
+はい。 microsoft の [クラウドソリューションプロバイダー](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)から購入した場合、Microsoft Defender Advanced Threat Protection は Microsoft 365 Business Premium へのアドオンとして利用できます。
 
 ## <a name="partner-opportunity"></a>パートナーのビジネス チャンス
 

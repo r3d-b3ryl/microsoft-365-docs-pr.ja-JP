@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 用のテナントをセットアップするためのロードマップ。
-ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315755"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775149"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 のテナントロードマップ
 
-Microsoft 365 テナントは、組織に割り当てられた一連のサービスです。 このテナントは、通常、1つ以上の DNS ドメイン名に関連付けられており、さまざまなサブスクリプションのための中央のコンテナーとして機能し、ユーザーアカウントに割り当てられているライセンスに含まれるものとして機能します。 
+Microsoft 365 テナントは、組織に割り当てられた一連のサービスです。 通常、このテナントは1つ以上の DNS ドメイン名に関連付けられており、さまざまなサブスクリプションのための中央のコンテナーとして機能し、ユーザーアカウントに割り当てられているライセンスに含まれています。
 
 Microsoft 365 テナントを作成するときは、特定の地理的な場所に割り当てます。 また、複数の地理的な場所を持つテナントを作成し、テナントをある場所から別の場所に移動することもできます。
 
-ネットワークと id の基本的なサービスを準備するには、適切に計画され、実行されるテナントの構成が重要です。
+ネットワークと id の基本サービスのためにテナントを準備するには、テナントの構成を慎重に計画して実行することが重要です。
 
 ## <a name="plan"></a>計画
 
@@ -50,13 +50,13 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 
 Microsoft 365 Multi-Geo を使用すれば、組織はその組織の Microsoft 365 のプレゼンスを、その既存のテナント内の複数の地域または国に対して展開することができます。
 
-Microsoft 365 複数地域を使用して、理解、計画、構成、管理を[開始](microsoft-365-multi-geo.md)します。
+Microsoft 365 の複数地域 (計画、構成、管理方法を含む) の詳細について [は、ここから開始](microsoft-365-multi-geo.md)してください。
 
 ## <a name="move-a-tenants-geographic-locations"></a>テナントの地理的な場所を移動する
 
 Microsoft は、Microsoft 365 services の新しいデータセンターの地理的な場所 (geo) を引き続き開きます。 これらの新しいデータセンター geo は、お客様の需要と利用状況の拡大をサポートするための容量とコンピューティングリソースを追加します。 さらに、新しいデータセンター geo では、コア カスタマー データを geo 内に常駐できます。
 
-[コアデータを新しい Microsoft 365 データセンター geo に移行する](moving-data-to-new-datacenter-geos.md)ことで、geo データの移行について理解し、要求する作業を開始します。
+Geo データの移動を要求する方法を含む、Microsoft 365 データセンター geo の詳細について [は、ここから開始](moving-data-to-new-datacenter-geos.md)してください。
 
 ## <a name="next-step"></a>次の手順
 
