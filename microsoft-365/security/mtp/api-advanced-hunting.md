@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 92d5d2840963ae00ae0f03e3359f287371f770ee
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 9e92a0328d2e7fb9cfe7461241dd866081926876
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650426"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825376"
 ---
 # <a name="advanced-hunting-apis"></a>高度な検索 Api
 
@@ -37,8 +37,10 @@ ms.locfileid: "47650426"
 ## <a name="limitations"></a>制限事項
 1. クエリは、過去30日間のデータに対してのみ実行できます。
 2. 結果には最大10万行が含まれます。
-3. 実行回数は、テナントごとに制限されます。1分あたり最大15件の通話、稼働時間は1時間ごとに15分、稼働時間は1日に4時間。
+3. 実行回数は、テナントによって制限されます。1分あたり最大10件の通話、1時間ごとに10分の時間、実行時間は1日に4時間。
 4. 1回の要求の最大実行時間は10分です。
+5. 429応答は、要求数または CPU によってクォータ制限値に達したことを表します。 また、429応答本文は、クォータが更新されるまでの時間も示します。 
+
 
 ## <a name="permissions"></a>アクセス許可
 この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法を含む詳細については、「 [Microsoft の脅威保護 api にアクセス](api-access.md)する」を参照してください。

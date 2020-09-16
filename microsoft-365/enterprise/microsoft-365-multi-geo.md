@@ -3,7 +3,7 @@ title: Microsoft 365 Multi-Geo
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: この記事では、microsoft 365 複数地域を使用して、複数の地域に Microsoft 365 プレゼンスを展開する方法について説明します。
-ms.openlocfilehash: a5843b98b5d64dfb3872c3d8a5d48c0e56949c02
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 41069490a8c824bb58a8f4247987abd3ce0901b6
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692048"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825359"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo
 
@@ -26,9 +26,9 @@ Microsoft 365 Multi-Geo を使用すれば、組織はその組織の Microsoft 
   
 Microsoft 365 Multi-Geo を使用すると、データ所在地に関連する要件を満たすために選択した地域の場所で保存データのプロビジョニングと保存を行うことができ、同時に、モダンな生産性向上エクスペリエンスを従業員に対してグローバルに展開することができます。
 
-#### <a name="video-introducing-microsoft-365-multi-geo"></a>ビデオ: Microsoft 365 Multi-Geo の紹介
+Microsoft 365 の複数地域に関するビデオについては、「 [SharePoint Online と OneDrive の複数地域を使用してデータの保存場所を制御する](https://www.youtube.com/watch?v=Do9U3JuROhk)」を参照してください。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
+## <a name="multi-geo-architecture"></a>複数地域アーキテクチャ
 
 Multi-Geo 環境では、Microsoft 365 テナントは中央の場所 (Microsoft 365 サブスクリプションが最初にプロビジョニングされた場所) と 1 つ以上のサテライトの場所で構成されています。 複数地域テナント内では、地理的な場所、グループ、およびユーザー情報に関する情報が、Azure Active Directory (Azure AD) 内でマスター管理されます。 テナント情報が集中的にマスター管理され、個々の地理的な場所に同期されるので、その企業のすべてのユーザーが関わる共有とエクスペリエンスにグローバルな情報が含まれています。
 
