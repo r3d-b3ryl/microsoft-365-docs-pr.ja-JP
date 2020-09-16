@@ -7,21 +7,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: BDM のための Microsoft 365 セキュリティ
           href: Microsoft-365-security-for-bdm.md
-        - name: 最高情報セキュリティ責任者 (CISO) のワークショップ トレーニング
-          href: ./office-365-security/ciso-workshop.md
-          items:
-            - name: モジュール 1 - Microsoft のサイバーセキュリティ ブリーフィング
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: モジュール 2 - セキュリティ管理
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: モジュール 3 - ID とゼロ トラスト ユーザー アクセス
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: モジュール 4a - 脅威保護戦略、第 1 部
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: モジュール 4b - 脅威保護戦略、第 2 部
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: モジュール 5 - 情報保護
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: ID とデバイスのアクセス構成
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
@@ -87,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: 使い方ガイド
           items:
-            - name: 試用版ラボの環境を作る
+            - name: 試用版ラボまたはパイロット環境を作成する
               href: mtp/mtp-evaluation.md
             - name: サポートされるサービスを展開する
               href: mtp/deploy-supported-services.md
@@ -219,22 +204,62 @@
                   href: mtp/monitor-devices.md
                 - name: アプリの監視とレポート
                   href: mtp/monitor-apps.md
+            - name: API
+              items: null
+        - name: 参照
+          items:
             - name: アクセス許可と設定
               items:
                 - name: アクセスを管理する
                   href: mtp/mtp-permissions.md
                 - name: タイム ゾーンを設定する
                   href: mtp/mtp-time-zone.md
-            - name: デバイス プロファイルを表示する
-              href: mtp/device-profile.md
-            - name: フィードバックの提供
-              href: mtp/feedback.md
-            - name: ServiceNow のチケットとタスクを作成する
+                - name: デバイス プロファイルを表示する
+                  href: mtp/device-profile.md
+                - name: フィードバックの提供
+                  href: mtp/feedback.md
+                - name: ServiceNow のチケットとタスクを作成する
+                  items:
+                    - name: ServiceNow 統合の概要
+                      href: ./mtp/tickets.md
+                    - name: セキュリティセンターの ServiceNow チケット
+                      href: ./mtp/tickets-security-center.md
+            - name: Microsoft Threat Protection API (プレビュー)
               items:
-                - name: ServiceNow 統合の概要
-                  href: ./mtp/tickets.md
-                - name: セキュリティセンターの ServiceNow チケット
-                  href: ./mtp/tickets-security-center.md
+                - name: Microsoft Threat Protection API の概要 (プレビュー)
+                  href: mtp/api-overview.md
+                - name: Microsoft Threat Protection API を使い始める (プレビュー)
+                  items:
+                    - name: Microsoft Threat Protection API ライセンスと使用条件
+                      href: mtp/api-terms.md
+                    - name: Microsoft Threat Protection API をアクセスする
+                      href: mtp/api-access.md
+                    - name: Hello World の例
+                      href: mtp/api-hello-world.md
+                    - name: アプリケーション コンテキストでアクセスする
+                      href: mtp/api-create-app-web.md
+                    - name: ユーザー コンテキストでアクセスする
+                      href: mtp/api-create-app-user-context.md
+                    - name: パートナー アプリケーションへのアクセスを取得する
+                      href: mtp/api-partner-access.md
+                    - name: その他の API リソース
+                      href: mtp/api-articles.md
+                - name: Microsoft Threat Protection API とスキーマ (プレビュー)
+                  items:
+                    - name: サポートされている Microsoft Threat Protection API
+                      href: mtp/api-supported.md
+                    - name: 一般的な REST API エラー コード
+                      href: mtp/api-error-codes.md
+                    - name: 高度な追及 API
+                      href: mtp/api-advanced-hunting.md
+                    - name: インシデント API
+                      items:
+                        - name: インシデントの方法とプロパティ
+                          href: mtp/api-incident.md
+                        - name: インシデントを一覧表示する
+                          href: mtp/api-list-incidents.md
+                        - name: インシデントを更新する
+                          href: mtp/api-update-incidents.md
     - name: Office 365 セキュリティ
       items:
         - name: 概要
