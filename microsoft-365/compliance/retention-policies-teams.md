@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: cc0d422220d4f3c2ca667a4f0076eb9e62d90518
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 04ca027b9ce8ad1b36e0d4e60c4e10308a822a63
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394694"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816740"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -100,10 +100,6 @@ Skype for Business のチャットが Teams に届くと、Teams のチャット
 ## <a name="limitations"></a>制限事項
 
 Teams の保持機能の最適化に継続的に取り組んでいます。 それまでの間、Teams のチャネル メッセージとチャットで保持を使用する場合は、次の制限事項に注意する必要があります。
-
-- **Teams は組織全体のポリシーに含まれていません**。 組織全体のポリシーを作成する場合、Teams のチャネル メッセージとチャットには別のアイテム保持ポリシーが必要なため、それらはそのポリシーには含まれません。
-
-- **Teams は高度なアイテム保持をサポートしていません**。 アイテム保持ポリシーを作成するときに、[[特定の条件を満たすコンテンツを特定するための高度な設定](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)] を選択した場合、Teams の場所は使用できません。 Teams の保持は、それらの場所を選択すると、すべてのチャットおよびチャネル メッセージ コンテンツに適用されます。
 
 - **Teams のチャネル メッセージのアイテム保持ポリシーを構成する場合、プライベート チャネルの Teams メッセージは含まれません**。 現在、プライベートチャネルはアイテム保持ポリシーでサポートされていません。 
 
