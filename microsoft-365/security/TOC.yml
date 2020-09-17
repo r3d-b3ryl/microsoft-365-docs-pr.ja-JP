@@ -112,6 +112,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: クエリ言語の説明
                   href: mtp/advanced-hunting-query-language.md
+                - name: エキスパート トレーニングを受ける
+                  href: mtp/advanced-hunting-expert-training.md
                 - name: クエリのベスト プラクティスを適用する
                   href: mtp/advanced-hunting-best-practices.md
                 - name: クエリ結果を操作する
