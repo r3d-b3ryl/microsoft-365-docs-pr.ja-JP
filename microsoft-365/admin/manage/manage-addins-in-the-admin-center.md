@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: caaea8404c099f56704d21684323a4b20e61f52d
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 10bca6776173c07a28b097f44c641c3e65a0cf6c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103101"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948702"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -40,11 +40,11 @@ Office アドインは、ドキュメントをカスタマイズしたり、web 
 
 管理者が組織内のユーザーに対してアドインを展開した後、管理者はアドインのオン/オフ、編集、削除、およびアドインへのアクセスの管理を行うことができます。
 
-管理センターからのアドインのインストールの詳細については、「[管理センターで](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)のアドインの展開」を参照してください。
+管理センターからのアドインのインストールの詳細については、「 [管理センターで](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)のアドインの展開」を参照してください。
   
 ## <a name="add-in-states"></a>アドインの状態
 
-アドインは、 **[オン**] または [**オフ**] のどちらかの状態にすることができます。
+アドインは、 **[オン** ] または [ **オフ** ] のどちらかの状態にすることができます。
   
 |**状態**|**状態が発生する原因**|**影響**|
 |:-----|:-----|:-----|
@@ -62,7 +62,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、web 
 
 2. 展開されたアドインを選択します。
 
-3. [**アドインの削除**] をクリックします。 右下隅にある [アドイン] ボタンを削除します。
+3. [ **アドインの削除**] をクリックします。 右下隅にある [アドイン] ボタンを削除します。
 
 4. 選択内容を確認し、[**アドインの削除]** を選びます。
 
@@ -81,7 +81,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、web 
 ## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>すべてのクライアント (Outlook を除く) で Office ストアをオフにして、アドインのダウンロードを禁止する
 
 > [!NOTE]
-> Outlook アドインのインストールは、[別のプロセス](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)で管理されます。
+> Outlook アドインのインストールは、 [別のプロセス](https://technet.microsoft.com/library/jj943754%28v=exchg.150%29.aspx)で管理されます。
 
 組織の場合は、Office ストアから新しい Office アドインをダウンロードできないようにする必要があります。 これを一元展開と組み合わせて使用することにより、組織内のユーザーが組織内の承認済みアドインのみを展開するようにすることができます。
   
@@ -108,7 +108,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、web 
     
 - Microsoft 365 内のアドイン
     
-ストアにアクセスしようとするユーザーには、次のメッセージが表示されます。**申し訳ございません。 Microsoft 365 は、Office ストアアドインの個別の取得を防止するように構成されています。**
+ストアにアクセスしようとするユーザーには、次のメッセージが表示されます。 **申し訳ございません。 Microsoft 365 は、Office ストアアドインの個別の取得を防止するように構成されています。**
   
 Office ストアの無効化のサポートは、次のバージョンで利用できます。
   
@@ -144,7 +144,7 @@ Office ストアの無効化のサポートは、次のバージョンで利用�
   
 ### <a name="in-outlook"></a>Outlook
 
-1. [**ホーム**] リボンで、[アドインの**取得**] を選択します。<br/>![Outlook の [格納] ボタン](../../media/getaddinsicon.png)
+1. [ **ホーム** ] リボンで、[アドインの **取得**] を選択します。<br/>![Outlook の [格納] ボタン](../../media/getaddinsicon.png)
   
 2. 左側のナビゲーションで、**[管理者が管理]** を選びます。 
 
@@ -152,7 +152,7 @@ Office ストアの無効化のサポートは、次のバージョンで利用�
 
 [管理センターでアドインを展開する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 
-[Office アドイン](https://go.microsoft.com/fwlink/p/?linkid=846362)の作成と構築の詳細情報を表示します。
+[Office アドイン](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)の作成と構築の詳細情報を表示します。
   
 [一元展開 PowerShell コマンドレットを使用してアドインを管理](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)します。
   

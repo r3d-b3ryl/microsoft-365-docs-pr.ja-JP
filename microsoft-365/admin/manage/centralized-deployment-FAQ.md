@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターからの一元展開についてよく寄せられる質問に対する回答を確認してください。
-ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102886"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948690"
 ---
 # <a name="centralized-deployment-faq"></a>一元展開に関する FAQ
 
@@ -44,7 +44,7 @@ ms.locfileid: "45102886"
 
 管理を容易にするには、個別のユーザー割り当てではなく、グループの割り当てを使用することをお勧めします。
  
-詳細については、「[ユーザーとグループの割り当て](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments)」を参照してください。  
+詳細については、「 [ユーザーとグループの割り当て](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments)」を参照してください。  
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>アドインがすべてのユーザーに対して表示されるまでにどのくらいの時間がかかりますか?  
 
@@ -64,27 +64,27 @@ ms.locfileid: "45102886"
 
 **Fixed (既定値)**  アドインは、割り当てられたユーザーに自動的に展開され、削除することはできません。  
  
-**利用可能**ユーザーは、[ホーム] を選択してアドインを Outlook にインストールし、管理者によって管理されたアドイン **> >** します。
+**利用可能** ユーザーは、[ホーム] を選択してアドインを Outlook にインストールし、管理者によって管理されたアドイン **> >** します。
  
-**省略可能**アドインは、割り当てられたユーザーに自動的に展開されますが、削除することもできます。  
+**省略可能** アドインは、割り当てられたユーザーに自動的に展開されますが、削除することもできます。  
     
 ## <a name="can-admins-update-line-of-business-lob-add-ins"></a>管理者は基幹業務 (LOB) アドインを更新できますか?  
 
 はい。 管理者が展開した LOB アドインのメタデータ変更をサポートするために、管理者は新しいマニフェストファイルをアップロードできます。アドインは、次に Office アプリケーションが起動したときに更新されます。 Web アプリケーションはいつでも変更できます。  
  
-詳細については、「[基幹業務アドイン](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)」を参照してください。  
+詳細については、「 [基幹業務アドイン](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)」を参照してください。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>管理者がアドインをオフにできるか  
 
 はい。 管理者は、Microsoft 管理センターからすべてのユーザーに対して展開するアドインをオンまたはオフにすることができます。
 
-詳細については、「[アドインの状態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)」を参照してください。  
+詳細については、「 [アドインの状態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)」を参照してください。  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>管理者がアドインを削除または削除できるかどうか。
 
 はい。 管理者は、Microsoft 管理センターからすべてのユーザー向けに展開したアドインを削除できます。
 
-詳細については、「[アドインを削除する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)」を参照してください。 
+詳細については、「 [アドインを削除する](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)」を参照してください。 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>管理者は一元展開を使用して、Office ストアから有料のアドインを展開できますか。 
 
@@ -94,8 +94,10 @@ ms.locfileid: "45102886"
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>組織のアドインを管理するには、どの管理者の役割を使用する必要がありますか。  
 
-アドインを管理するには、グローバル管理者の役割を持っている必要があります。Microsoft 365 for business サブスクリプションを購入したユーザーである場合は、グローバル管理者になります。 
+グローバル管理者は、アドイン管理ライフサイクルへの完全なアクセス権を持つ推奨の役割です。 他の管理者の役割は、アドインの展開ライフサイクルへのアクセスが制限されています。 Microsoft 365 for business サブスクリプションを購入したユーザーである場合は、グローバル管理者になります。 
  
 サブスクリプションには、組織内の他のユーザーに割り当てることができる一連の管理者ロールが付属しています。 各管理役割は、一般的なビジネス機能にマップされ、組織内のユーザーに Microsoft 365 管理センターで特定のタスクを実行するためのアクセス許可を付与します。  
  
-詳細については、「[管理者ロールを割り当てる](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide)」を参照してください。  
+詳細については、「 [管理者ロールを割り当てる](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide)」を参照してください。  
+
+

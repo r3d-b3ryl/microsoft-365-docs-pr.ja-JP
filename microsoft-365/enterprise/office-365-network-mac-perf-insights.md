@@ -14,26 +14,32 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights (プレビュー)
-ms.openlocfilehash: b30af89d480383fdc9011d24409e3b418339c70b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691905"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948518"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (プレビュー)
 
-**Network insights** は、Microsoft 365 テナントから収集され、テナントの管理ユーザーのみが表示できるライブパフォーマンス指標です。 Insights は、Microsoft 365 管理センターのに表示され <https://portal.microsoft.com/adminportal/home#/networkperformance> ます。
+**Network insights** は、Microsoft 365 テナントから収集されたパフォーマンス指標で、テナントの管理ユーザーのみが参照できます。 Insights は、Microsoft 365 管理センターのに表示され <https://portal.microsoft.com/adminportal/home#/networkperformance> ます。
 
 Insights は、オフィスの場所のネットワーク境界を設計するのに役立ちます。 各洞察では、ユーザーがテナントにアクセスする地理的な場所ごとに、特定の一般的な問題のパフォーマンス特性に関するライブ詳細が提供されます。
 
-各オフィスの場所には、次の5つの特定のネットワーク洞察が表示されることがあります。
+各オフィスの場所には、次の6つの特定のネットワーク洞察が表示されることがあります。
 
 - [Backhauled ネットワークの出口](#backhauled-network-egress)
 - [近距離のお客様のためのパフォーマンスの向上](#better-performance-detected-for-customers-near-you)
 - [Exchange Online サービスのフロントドアの非最適な使用](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [最適ではない SharePoint Online サービスのフロントドアの使用](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [SharePoint フロントドアからのダウンロード速度が低い](#low-download-speed-from-sharepoint-front-door)
+- [中国ユーザーにとって最適なネットワークの出口](#china-user-optimal-network-egress)
+
+テナントには、2つのテナントレベルのネットワーク洞察が表示されることがあります。 これらは、次のように、本番 viて y スコアページにも表示されます。
+
+- [接続の問題によって影響を受ける Exchange のサンプリングされる接続](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [接続の問題によって影響を受ける SharePoint のサンプリングされる接続](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >Network insights、Microsoft 365 Admin Center でのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Microsoft 365 テナントに対してのみ使用できます。
@@ -140,6 +146,30 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 ### <a name="what-should-i-do"></a>どうすればよいですか?
 
 この洞察に関連するパフォーマンスの問題を軽減する方法の詳細については、「 [Office 365 グローバルテナントパフォーマンスの最適化 (中国ユーザー向け](microsoft-365-networking-china.md))」を参照してください。
+
+## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>接続の問題によって影響を受ける Exchange のサンプリングされる接続
+
+この洞察は、サンプリングされた接続の50% 以上が影響を受けたときに表示されます。 この影響は、各サンプルの Exchange 評価が60% 以下になることによって定義されます。
+
+### <a name="what-does-this-mean"></a>シナリオ
+
+ユーザーの大部分が Outlook を Exchange Online に接続しているときに、ユーザーの問題が発生している可能性があることを示しています。 サンプルのパーセンテージは、60ポイントを下回っているユーザーの割合を表すことがあります。  
+
+### <a name="what-should-i-do"></a>どうすればよいですか?
+
+まだ実行していない場合は、office の場所のネットワーク接続の表示を有効にします。 Exchange に影響を与えるネットワーク接続の問題が impactred ているオフィスを特定し、ユーザーを Microsoft のネットワークに接続するそれぞれのネットワーク境界を改善する方法を見つける必要があります。
+
+## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>接続の問題によって影響を受ける SharePoint のサンプリングされる接続
+
+この洞察は、サンプリングされた接続の50% 以上が影響を受けたときに表示されます。 各サンプルでは、SharePoint の評価が40% 未満であるという影響が定義されています。
+
+### <a name="what-does-this-mean"></a>シナリオ
+
+多くのユーザーが SharePoint および OneDrive でユーザー環境に問題が発生している可能性があることを示しています。 サンプルのパーセンテージは、40ポイントを下回っているユーザーの割合を表すことがあります。  
+
+### <a name="what-should-i-do"></a>どうすればよいですか?
+
+まだ実行していない場合は、office の場所のネットワーク接続の表示を有効にします。 SharePoint に影響を与えるネットワーク接続の不足によって impactred されているオフィスを特定し、ユーザーを Microsoft のネットワークに接続するそれぞれのネットワーク境界を改善する方法を見つける必要があります。
 
 ## <a name="related-topics"></a>関連項目
 

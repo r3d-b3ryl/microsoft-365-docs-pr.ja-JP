@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649951"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947998"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
 
@@ -59,7 +59,6 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 
 - **[Microsoft Threat Protection api](api-overview.md)** -lop レベルの Microsoft 脅威保護 api を使用すると、共有インシデントと高度な検索の表に基づいてワークフローを自動化できます。 
 - **[高度な検索の](advanced-hunting-identitydirectoryevents-table.md)** 場合は、Active DIRECTORY (AD) を実行しているオンプレミスのドメインコントローラーを含むイベントを検索します。 この表では、ドメインコントローラーの id 関連イベントの範囲とシステムイベントについて説明します。
-- **[AssignedIPAddresses () 関数](advanced-hunting-assignedipaddresses-function.md)** -高度な検索でこの関数を使用して、デバイスに割り当てられている最新の ip アドレス、または指定した時点からの最新の ip アドレスをすばやく取得します。
 - **[高度な検索でアクションを実行](advanced-hunting-take-action.md)** する: [高度な](advanced-hunting-overview.md)検索によって検出された脅威または侵害された資産への対処をすばやく行うことができます。
 - **[ポータル内スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : セキュリティセンターで、高度な検索スキーマテーブルに関する情報を直接取得します。 この便利なリファレンスでは、テーブルと列の説明に加えて、サポートされているイベントの種類 (値) とサンプルクエリに関する情報を提供して `ActionType` います。
 

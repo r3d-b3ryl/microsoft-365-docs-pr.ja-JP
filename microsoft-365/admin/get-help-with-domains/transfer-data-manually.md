@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: プランまたは会社名を変更したとき、または複数のサブスクリプションを1つに結合したときに、2つの Microsoft 365 アカウント間でデータを手動で転送する方法について説明します。
-ms.openlocfilehash: 91ea4140f0460e1f8cc1243f1b5f203738dcc9ee
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1297e2d55692262be55b166dacc56cb89cc6c8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685512"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948726"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>2つのアカウント間でデータを手動で転送する
 
@@ -106,3 +106,7 @@ Microsoft 365 でホストされているパブリック web サイトがある�
 ### <a name="onedrive-for-business-data"></a>OneDrive For Business データ:
 
 ユーザーに [OneDrive For business のコンテンツを自分のコンピューターに](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)コピー/同期させ、新しいサブスクリプションに追加してもらいます。
+
+### <a name="onenote"></a>OneNote 
+
+ユーザーに [OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) をバックアップして、 [バックアップから](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) 新しいサブスクリプションにメモを復元するように依頼します。

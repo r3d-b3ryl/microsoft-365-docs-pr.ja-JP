@@ -3,7 +3,7 @@ title: Microsoft 365 ネットワーク接続テスト (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/14/2020
+ms.date: 09/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク接続テスト (プレビュー)
-ms.openlocfilehash: 92bd850c98261df1808219ee1f28c75da370d443
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650024"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948546"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 ネットワーク接続テスト (プレビュー)
 
@@ -29,6 +29,8 @@ Microsoft 365 ネットワーク接続テストツールは、にあり <https:/
 >ネットワーク接続テストツールは、世界各地の商用およびドイツのテナントをサポートしていますが、GCC のモデレート、GCC High、DoD、中国ではサポートされていません。
 
 Microsoft 365 管理センターのネットワーク insights は、毎日集計される Microsoft 365 テナントの正規の製品の測定基準に基づいています。 これに対して、Microsoft 365 ネットワーク接続テストのネットワーク洞察は、ツールでローカルおよび1回実行されます。 製品内で実行できるテストは制限されており、ユーザーに対してローカルにテストを実行することにより、より深い洞察を得られるように収集できます。 次に、Microsoft 365 管理センターの network insights は、特定のオフィスの場所で Microsoft 365 を使用するためのネットワークの問題があることを示しています。 Microsoft 365 connectivity test は、この問題の根本的な原因を特定するのに役立ち、推奨されるネットワークパフォーマンスの向上アクションを導きます。
+
+![ネットワーク接続テストツール](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Microsoft 365 管理センターの各オフィスの場所についてネットワーク品質の状態を評価し、Microsoft 365 の接続テストに基づいてテストを展開した後は、より多くの情報を見つけられるようにすることをお勧めします。
 
@@ -205,6 +207,28 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 このセクションでは、Exchange Online サービスのフロントドア、SharePoint Online サービスのフロントドア、Microsoft Teams サービスのフロントドアに対する ICMP traceroute の結果を示します。 これは情報のみを対象として提供されており、関連するネットワークの洞察がありません。 3つの traceroutes が提供されています。 Traceroute から_outlook.office365.com_、顧客の SharePoint フロントエンドに対する traceroute、または_microsoft.sharepoint.com_が提供されていない場合はに、traceroute_に world.tr.teams.microsoft.com するもの。_
 
+## <a name="what-happens-at-each-test-step"></a>各テストステップで行われる処理
+
+### <a name="office-location-identification"></a>オフィスの場所の識別情報
+
+[テストの実行] ボタンをクリックすると、実行中のテストページが表示され、オフィスの場所が特定されます。 所在地は、市区町村、都道府県、および国で入力できます。また、web ブラウザーから検出することもできます。 この値を検出した場合は、web ブラウザーから緯度と経度を要求し、使用する前に300m で300m に対して正確な精度を設定します。 これは、ネットワークパフォーマンスの構築よりも正確に場所を特定する必要がないためです。 
+
+### <a name="javascript-tests"></a>JavaScript テスト
+
+Office の場所を識別した後、JavaScript で TCP レイテンシテストを実行し、使用中の Office 365 サービスのフロントドアサーバーについてサービスのデータを要求します。 完了したら、マップと [詳細] タブで、次の手順の前に表示することができます。
+
+### <a name="download-the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーションをダウンロードする
+
+次に、高度なテストクライアントアプリケーションのダウンロードを開始します。 クライアントアプリケーションを起動するには、ユーザーを使用します。また、.NET Core がインストールされている必要もあります。
+
+### <a name="start-the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーションを開始する
+
+クライアントアプリケーションが開始すると、web ページが更新されて表示され、テストデータが web ページに受信され始めます。 新しいデータが受信されるたびに更新され、受信したデータを確認できます。
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>高度なテストの完了とテストレポートのアップロード
+
+テストが完了すると、web ページと高度なテストクライアントはどちらもこれを示し、テストレポートにサインインしているユーザーがいる場合は、顧客テナントにアップロードされます。
+
 ## <a name="connectivity-reports"></a>接続レポート
 
 サインインすると、以前に実行したレポートを確認できます。 また、それらを共有したり、リストから削除したりすることもできます。
@@ -224,6 +248,10 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 ### <a name="is-this-tool-released-and-supported-by-microsoft"></a>このツールは、Microsoft によってリリースされ、サポートされていますか?
 
 現時点ではプレビューになっており、Microsoft のサポートによって ga リリース状態に達するまで定期的に更新プログラムを提供する予定です。 品質向上のためにフィードバックを提供してください。 このツールの一部として、より詳細な Office 365 ネットワークオンボードガイドを発行することを計画しています。このツールは、テスト結果によって組織用にカスタマイズされています。
+
+### <a name="what-is-required-to-run-the-advanced-test-client"></a>高度なテストクライアントを実行するために必要なこと
+
+高度なテストクライアントには、.NET コア3.1 デスクトップランタイムが必要です。 高度なテストクライアントをインストールせずに実行すると、 [.Net Core 3.1 インストーラページ](https://dotnet.microsoft.com/download/dotnet-core/3.1)に転送されます。 SDK ではなく、ASP.NET Core ランタイムをインストールするようにしてください。これは、ページ上でより上位にある必要があります。 コンピューターに対する管理者のアクセス許可は、.NET コアをインストールするための reuqired です。 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Microsoft 365 サービスのフロントドアとは
 

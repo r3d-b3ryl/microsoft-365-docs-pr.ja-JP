@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651146"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949894"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -115,7 +115,7 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 | [デバイスの登録](/azure/active-directory/devices/overview) | デバイスの id を作成するために、デバイスを Azure AD に登録します。 この id は、ユーザーがサインインして、ドメインに参加しているか、準拠している Pc を必要とする条件付きアクセスポリシーを適用するときに、デバイスを認証するために使用されます。 このガイダンスでは、device enrollment を使用して、ドメインに参加している Windows コンピューターを自動的に登録します。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。 | Microsoft 365 E3 または E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | 組織の id に影響を及ぼす可能性のある脆弱性を検出し、自動修復ポリシーを低、中、高のサインインリスクとユーザーのリスクに構成できます。 このガイダンスは、このリスク評価に基づいて、多要素認証の条件付きアクセスポリシーを適用します。 このガイダンスには、アカウントに対して高リスクのアクティビティが検出された場合にユーザーにパスワードの変更を要求する条件付きアクセスポリシーも含まれています。 | Microsoft 365 E5、Microsoft 365 E3 with Identity & Threat Protection アドオン、EMS E5、または Azure Premium P2 ライセンス |
 | [セルフサービスによるパスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | 管理者が制御できる複数の認証方法を確認することにより、ユーザーがパスワードを安全に、かつヘルプデスクの介入なしにリセットできるようにします。 | Microsoft 365 E3 または E5 |
-| [AZURE AD パスワード保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。 既知の脆弱なパスワードとその亜種、および組織に固有のその他の弱い用語を検出およびブロックします。 既定のグローバル禁止パスワードリストは、Azure AD テナント内のすべてのユーザーに自動的に適用されます。 カスタム禁止パスワードリストには、追加のエントリを定義できます。 ユーザーがパスワードを変更または再設定すると、これらの禁止されたパスワードの一覧がチェックされ、強力なパスワードの使用が強制されます。 |  Microsoft 365 E3 または E5 |
+| [Azure AD パスワード保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 既知の脆弱なパスワードとその亜種、および組織に固有のその他の弱い用語を検出およびブロックします。 既定のグローバル禁止パスワードリストは、Azure AD テナント内のすべてのユーザーに自動的に適用されます。 カスタム禁止パスワードリストには、追加のエントリを定義できます。 ユーザーがパスワードを変更または再設定すると、これらの禁止されたパスワードの一覧がチェックされ、強力なパスワードの使用が強制されます。 |  Microsoft 365 E3 または E5 |
 ||||
 
 ![Id とデバイスのアクセスのコンポーネント。](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

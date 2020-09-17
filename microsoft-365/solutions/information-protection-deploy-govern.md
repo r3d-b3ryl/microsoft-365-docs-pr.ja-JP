@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: Microsoft 365 の保持ラベルとポリシーを使用して、Microsoft 365 環境の個人データを管理します。
-ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522303"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949254"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>データプライバシーの規則に従って情報を管理する
 
@@ -44,7 +44,7 @@ ms.locfileid: "46522303"
 - HIPAA のエコー (45 CFR 164.316 (b) (1) (ii))
 - LGPD 記事46
 
-これらの規則の詳細については、「[データプライバシーのリスクを評価し、機密情報を特定](information-protection-deploy-assess.md)する」の記事を参照してください。
+これらの規則の詳細については、「 [データプライバシーのリスクを評価し、機密情報を特定](information-protection-deploy-assess.md)する」の記事を参照してください。
 
 情報ガバナンスでは、通常、次のようなデータプライバシー規制が呼び出されます。
 
@@ -67,11 +67,11 @@ ms.locfileid: "46522303"
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>Microsoft 365 での情報ガバナンスの管理
 
-開始するには、「Microsoft 365 での[情報ガバナンス](../compliance/manage-information-governance.md)と[データの保存、削除、破棄](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)を管理する」を参照してください。
+開始するには、「Microsoft 365 での [情報ガバナンス](../compliance/manage-information-governance.md) と [データの保存、削除、破棄](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)を管理する」を参照してください。
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>コンテナー、電子メール、およびコンテンツのデータ保持スケジュールを開発する
 
-以下の点にご注意ください。
+以下の点に注意します。
 
 - 定義された情報の種類についてデータ保持スケジュールを確立することは、保持または削除のスキームを実装するための前提条件と考える必要があります。
 
@@ -81,27 +81,13 @@ ms.locfileid: "46522303"
 
 - お客様の環境内の個人情報の種類がよく知られている場合は、この種のコンテンツの保持と削除のスケジュールを確立し、情報アーキテクチャを調整してこの種の情報をより簡単に管理できるようにします。 たとえば、個別のサイト、ライブラリ、またはフォルダー内の個人情報を分離してアクセスを制御します。
 
-### <a name="retention-policies"></a>アイテム保持ポリシー
+### <a name="retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベル
 
-自動的に適用されるサイト内のコンテンツの[保持ポリシー](../compliance/retention-policies.md)を作成して展開します。
-
-個人データを含むまたはを含んでいるサイトのデータのプライバシーを保護するには、組織の標準に対応するための保持ルールまたは削除ルールを指定します。
-
-### <a name="retention-labels"></a>保持ラベル
-
-コンテンツとメールの[保持ラベル](../compliance/labels.md)を作成して展開します。
-
-個人データが含まれているか、または使用が想定されているサイト、ライブラリ、フォルダー、電子メールのデータプライバシーについては、自動保持または削除ルールを指定して、組織の標準に対応します。
+[アイテム保持ポリシーと保持ラベル](../compliance/retention.md)を使用して、個人データを含むまたはを含んでいると予想される Microsoft 365 のコンテンツを保持または削除します。
 
 ### <a name="records-management"></a>レコード管理
 
-レコード保持スケジュールおよびファイル計画に基づいて、レコード管理の保持ラベルを作成して展開します。
+Microsoft 365 のデータの [レコード管理ソリューション](../compliance/records-management.md) を実装するために、コンテンツを宣言する保持ラベルを使用します。
 
-データのプライバシーを保護するため、法務部門によって受信されるデータ主体要求 (DSRs) は、レコードを宣言して無期限に保管し、法的なアクティビティ保持の仕様に準拠しています。
+データのプライバシーを保護するため、法務部門が受信するデータ主体要求 (DSRs) はレコードとして宣言され、証明書を使用して無期限に保管または廃棄することができます。規制アクティビティの保存期間の仕様に準拠しています。
 
-詳細については、以下のリソースを参照してください。 
-
-- [レコード管理](../compliance/records-management.md)
-- [ファイル計画マネージャー](../compliance/file-plan-manager.md)
-- [レコード管理用のイベントベースの保持](../compliance/automate-event-driven-retention.md)
-- [コンテンツの廃棄](../compliance/disposition-reviews.md)

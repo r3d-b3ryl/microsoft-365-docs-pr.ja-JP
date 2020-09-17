@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a88fc5f46a6dafda72a24ba5e80587b24a216955
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546482"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950810"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>ゲストおよび外部の B2B アクセスを許可するためのポリシー
 
@@ -55,7 +55,9 @@ B2B ユーザーが Azure Active Directory (Azure AD) テナントを使用し�
 ### <a name="guests-vs-external-users"></a>ゲストおよび外部ユーザー
 Azure AD では、ゲストユーザーと外部ユーザーは同じです。 これらの両方のユーザーの種類は Guest です。 ゲストユーザーは B2B ユーザーです。
 
-Microsoft Teams では、アプリ内のゲストユーザーと外部ユーザーを区別しますが、認証時には B2B ユーザーになります。 Teams ゲストおよび外部ユーザーの詳細については、「 [teams のゲストおよび外部アクセスを有効にする](teams-access-policies.md#enabling-guest-and-external-access-for-teams)」を参照してください。
+Microsoft Teams では、アプリ内のゲストユーザーと外部ユーザーを区別します。 ゲストユーザーには Azure AD B2B アカウントがあり、teams に追加できます。 外部ユーザーは、通話、チャット、会議にのみ参加できます。 詳細については、「 [teams のゲストユーザーと外部ユーザーの比較](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)」を参照してください。
+
+Teams の id とデバイスへのアクセスの保護の詳細については、「 [teams のチャット、グループ、ファイルを保護するためのポリシーの推奨事項](teams-access-policies.md) 」を参照してください。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>ゲストおよび外部ユーザーに対して MFA を常に要求する
 このポリシーにより、ゲストがホームテナントで MFA に登録されているかどうかにかかわらず、テナント内の MFA を登録するように求められます。 テナント内のリソースにアクセスする場合、ゲストおよび外部ユーザーはすべての要求に対して MFA を使用する必要があります。 

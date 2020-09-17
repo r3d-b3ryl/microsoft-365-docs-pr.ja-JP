@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 の多要素認証について説明します。
-ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: bca84e949e696b483b567bf5f72233840023abca
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083588"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948714"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 の多要素認証
 
@@ -134,7 +134,7 @@ Azure AD Identity Protection とリスク ベースの条件付きアクセス �
 
 詳細については、こちらの [Azure AD Identity Protection の概要](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)をご覧ください。
 
-### <a name="mfa-for-an-individual-user-account-not-recommended"></a>個別のユーザー アカウントに対する MFA (推奨されません)
+### <a name="legacy-per-person-mfa-not-recommended"></a>ユーザー1人あたりの既存の MFA (推奨されません)
 
 ユーザー アカウントのサインインに MFA を要求するには、セキュリティの既定値または条件付きアクセス ポリシーを使用する必要があります。これらのいずれも使用できない場合は、あらゆるサイズのサブスクリプションについて、管理者ロール、特にグローバル管理者ロールを持つユーザー アカウントに対する MFA を強く推奨します。 
 
@@ -152,7 +152,7 @@ Microsoft 365 管理センターの **アクティブなユーザー** ウィン
 |:-------|:-----|:-------|:-------|
 | **セキュリティの既定値** | 条件付きアクセス ポリシーを使用できない |   条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
 | **条件付きアクセス ポリシー** |いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます | MFA 登録中にユーザーが指定 |
-| **ユーザー ごとのアカウント設定 (推奨されません)** | 毎回のサインインで MFA を要求して、セキュリティの既定値と条件付きアクセス ポリシーを上書きします | セキュリティの既定値と条件付きアクセス ポリシーによって上書きされます | MFA 登録中にユーザーが指定|
+| **ユーザー1人あたりの既存の MFA (推奨されません)** | 毎回のサインインで MFA を要求して、セキュリティの既定値と条件付きアクセス ポリシーを上書きします | セキュリティの既定値と条件付きアクセス ポリシーによって上書きされます | MFA 登録中にユーザーが指定|
 ||||
 
 セキュリティの既定値が有効になっている場合、すべての新しいユーザーは、次回のサインイン時に MFA 登録と Microsoft Authenticator アプリの使用を求められます。
@@ -171,4 +171,3 @@ Microsoft 365 管理センターでは、ユーザー単位およびサービス
 ## <a name="your-next-step"></a>次のステップ
 
 [Microsoft 365 の MFA を設定する](set-up-multi-factor-authentication.md)
-

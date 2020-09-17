@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794233"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949314"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+関数を使用して、 `AssignedIPAddresses()` デバイスに割り当てられている最新の IP アドレスをすばやく取得します。 Timestamp 引数を指定すると、この関数は指定された時刻に最新の IP アドレスを取得します。 
 
-関数を使用して、 `AssignedIPAddresses()` デバイスに割り当てられている最新の ip アドレスや、指定した時点からの最新の ip アドレスをすばやく取得します。 この関数は、次の列を持つテーブルを返します。
+この関数は、次の列を持つテーブルを返します。
 
-| 列 | データ型 | 説明 |
+| Column | データ型 | 説明 |
 |------------|-------------|-------------|
-| Timestamp | 日付型 | デバイスが IP アドレスを使用して観測された最新時刻 |
-| IPAddress | string | デバイスによって使用される IP アドレス |
-| IPType | string | IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します |
-| NetworkAdapterType | int | IP アドレスが割り当てられているデバイスによって使用されるネットワークアダプターの種類。 可能な値については、[この列挙型](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)を参照してください。  |
-| ConnectedNetworks | int | 割り当てられた IP アドレスを持つアダプターがに接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベートまたはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれています。 |
-
+| `Timestamp` | 日付型 | デバイスが IP アドレスを使用して観測された最新時刻 |
+| `IPAddress` | string | デバイスによって使用される IP アドレス |
+| `IPType` | string | IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します |
+| `NetworkAdapterType` | int | IP アドレスが割り当てられているデバイスによって使用されるネットワークアダプターの種類。 可能な値については、[この列挙型](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)を参照してください。 |
+| `ConnectedNetworks` | int | 割り当てられた IP アドレスを持つアダプターがに接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれています。 |
 
 ## <a name="syntax"></a>構文
 
@@ -51,11 +50,11 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>引数
 
 - **x** `DeviceId` または `DeviceName` デバイスを識別する値
-- **y** - `Timestamp` (datetime) 値は、最新の IP アドレスを取得する特定の時点を示します。 指定しない場合、関数は最新の IP アドレスを返します。
+- **y**- `Timestamp` (datetime) 値は、指定した時刻から最新の IP アドレスを取得するように関数に指示します。 指定しない場合、関数は最新の IP アドレスを返します。
 
 ## <a name="examples"></a>例
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>24時間前にデバイスによって使用された IP アドレスの一覧を取得する
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>デバイスによって使用される IP アドレスの一覧を取得する24時間前
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))
@@ -76,7 +75,7 @@ AssignedIPAddresses(DeviceName, Date)
 | where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: グループとそのアクティビティについて知るために、Microsoft 365 groups レポートを取得します。
-ms.openlocfilehash: 5c89cc6b5b211cbba3414f61d6b15c0c62f54c73
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1d329efa4fe7cdf12b6c7452b6480d237fb3d5c1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387563"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948990"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターの microsoft 365 レポート-Microsoft 365 グループ
 
@@ -46,7 +46,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
   
 ![Microsoft 365 レポート-グループ活動](../../media/852027a4-8eab-47d1-b770-2bb874bdc403.png)
   
-|||
+|アイテム|説明|
 |:-----|:-----|
 |1.  <br/> |**Microsoft 365 groups**レポートでは、過去7日間、30日間、90日間、または180日の傾向を確認できます。 ただし、レポートで特定の日を選択すると、表 (7) には、(レポートが生成された日付ではなく) 現在の日付から最大 28 日間のデータが表示されます。  <br/> |
 |2.  <br/> |各レポートのデータは、通常、過去 24 - 48 時間まで表示されます。  <br/> |

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: データの移動は、Microsoft がテナントのサービスと関連データを新しいデータセンター geo に移動するときに発生するバックエンドの操作です。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691829"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950274"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -45,8 +45,8 @@ Exchange Online、SharePoint Online、Teams、および Skype for Business の�
 |アラブ首長国連邦  <br/> |2022年7月1日  <br/> |
 |南アフリカ  <br/> |2022年7月1日  <br/> |
 |スイス、リヒテンシュタイン  <br/> |2022年7月1日  <br/> |
-|ドイツ  <br/> |計画  <br/> |
 |ノルウェー  <br/> |2022年11月1日  <br/> |
+|ドイツ  <br/> |計画  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 

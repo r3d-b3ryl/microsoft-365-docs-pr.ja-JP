@@ -3,7 +3,7 @@ title: Microsoft 365 および Office 365 サービスのセットアップ ガ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: セットアップガイドを使用して、Microsoft 365 または Office 365 の計画と構成を促進します。
-ms.openlocfilehash: 2f2c398a3e807b3859cf8f53f63a0ac908ba2683
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 879942d75f37a7984dad8f4ac5dc99933b3988f4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691796"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949740"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -51,7 +51,7 @@ Microsoft 365 および Office 365 のセットアップガイドを使用する
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでのセットアップガイドの動作について
 
-各ガイドには、手順を追って説明する、リソース、記事、および必要に応じて、構成の変更を行うために使用できるスクリプトが記載されています。 これらのガイドでは、small と large の両方の特定のニーズを反映する選択肢について説明します。 また、提供されるガイダンスには、経験豊富な管理者のためのサポートが含まれています。
+各ガイドには、手順を追って説明する、リソース、記事、および必要に応じて、構成の変更を行うために使用できるスクリプトが記載されています。 これらのガイドでは、小規模および大規模な組織の特定のニーズを反映する選択肢について説明します。 また、提供されるガイダンスには、経験豊富な管理者のためのサポートが含まれています。
 
 ![セットアップガイドの例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
@@ -61,11 +61,11 @@ Microsoft 365 および Office 365 のセットアップガイドを使用する
 
 ### <a name="prepare-your-environment"></a>環境を準備する
 
-「 [環境を準備](https://aka.ms/prepareyourenvironment) する」ガイドは、Microsoft 365 および Office 365 サービスのために組織の環境を準備する際に役に立ちます。 目的に関係なく、適切な展開を確実に行うために必要なタスクがあります。 環境の準備中にエラーが発生しないようにするために、ドメインの接続、ユーザーの追加、ライセンスの割り当て、Exchange Online を使用した電子メールのセットアップ、Office アプリのインストールまたは展開を行うためのステップバイステップの手順が提供されています。 
+「 [環境の準備](https://aka.ms/prepareyourenvironment) 」ガイドを使用すると、Microsoft 365 および Office 365 サービスのために組織の環境を準備することができます。 目的に関係なく、適切な展開を確実に行うために必要なタスクがあります。 環境の準備中にエラーが発生しないようにするために、ドメインの接続、ユーザーの追加、ライセンスの割り当て、Exchange Online を使用した電子メールのセットアップ、Office アプリのインストールまたは展開を行うためのステップバイステップの手順が提供されています。 
 
 ### <a name="email-setup-advisor"></a>電子メールの設定アドバイザー
 
-[電子メールセットアップアドバイザー](https://aka.ms/office365setup)では、組織の Exchange Online を構成するために必要なステップバイステップガイダンスが提供されています。 これには、新しい電子メールアカウントの設定、電子メールの移行、電子メール保護の構成が含まれます。 電子メールの設定を正常に行うために、このアドバイザーを使用すると、組織の現在のメールシステム、移行されるメールボックスの数、およびユーザーとそのアクセスを管理する方法に基づいて推奨される移行方法が提供されます。
+[電子メールセットアップアドバイザー](https://aka.ms/office365setup)では、組織の Exchange Online を構成するために必要なステップバイステップガイダンスが提供されています。 これには、新しい電子メールアカウントの設定、電子メールの移行、電子メール保護の構成が含まれます。 電子メールの設定を正常に行うために、このアドバイザーを使用すると、組織の現在のメールシステム、移行されるメールボックスの数、およびユーザーとそのアクセスを管理する方法に基づいて、推奨される移行方法が提供されます。
 
 ### <a name="gmail-contacts-and-calendar-advisor"></a>Gmail 連絡先と予定表アドバイザー
 
@@ -90,11 +90,11 @@ Windows 仮想デスクトップは、クラウドで実行される包括的な
 
 [Windows 仮想デスクトップセットアップガイド](https://aka.ms/wvdsetupguide)は、管理者に、リソースの計画と、展開、セットアップのガイダンス、およびその他のリソースに関する前提条件を提供します。 
 
-## <a name="guides-for-security"></a>セキュリティガイド
+## <a name="guides-for-authentication-and-access"></a>認証とアクセスのガイド
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD セットアップガイド
 
-「 [AZURE AD セットアップガイド」](https://aka.ms/aadpguidance) には、組織に強力なセキュリティ基盤があることを確認するための情報が記載されています。 このガイドでは、管理者向けの Azure の役割ベースのアクセス制御 (Azure RBAC)、オンプレミスのディレクトリの Azure AD Connect、および Azure AD Connect の正常性などの初期機能をセットアップして、自動同期時にハイブリッド id の正常性を監視できるようにします。 
+[AZURE AD セットアップガイド](https://aka.ms/aadpguidance)には、組織に強力なセキュリティ基盤があることを確認するための情報が記載されています。 このガイドでは、管理者向けの Azure の役割ベースのアクセス制御 (Azure RBAC)、オンプレミスのディレクトリの Azure AD Connect、および Azure AD Connect の正常性などの初期機能をセットアップして、自動同期時にハイブリッド id の正常性を監視できるようにします。 
 
 また、オプションの高度な ID 保護、ユーザープロビジョニングの自動化を含む、セルフサービスのパスワードのリセット、条件付きアクセス、および統合されたサードパーティのサインオンを有効にする方法についても説明します。
 
@@ -103,6 +103,18 @@ Windows 仮想デスクトップは、クラウドで実行される包括的な
 ユーザーがデバイスに安全にアクセスできるようにするための代替サインイン方法にアップグレードします。 Windows Hello for Business、Microsoft Authenticator アプリ、セキュリティキーのいずれかのパスワードを使用します。 
 
 [パスワードを使用しない [] 展開ウィザード](https://aka.ms/passwordlesssetup) を使用して、適切な passwordless の認証方法を見つけ、それらの展開方法に関するガイダンスを受けることができます。 
+
+### <a name="plan-your-self-service-password-reset-deployment"></a>セルフサービスによるパスワードのリセットの展開を計画する
+
+ユーザーに対して、自分のアカウントがロックされている場合は、自分のパスワードを変更または再設定することができます。または、ヘルプデスクエンジニアに連絡する必要なしに、パスワードを忘れることがあります。 
+
+自分の環境に SSPR を展開する際に役立つ、適切な Azure ポータルオプションを構成するための関連記事と手順を受信するには、「 [セルフサービスによるパスワードリセット展開の計画」](https://aka.ms/SSPRSetupGuide) を使用します。
+
+### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Active Directory フェデレーションサービス (AD FS) の展開アドバイザー
+
+[AD fs 展開アドバイザー](https://aka.ms/adfsguidance)は、Microsoft 365 および Office 365 サービスのユーザーを認証するオンプレミスの AD FS インフラストラクチャを展開するためのステップバイステップのガイダンスを提供します。 このガイドでは、組織が AD FS のコンポーネントと要件を確認し、展開に必要な SSL 証明書を取得してインストールし、必要な web アプリケーションプロキシサーバーをインストールすることができます。 
+
+## <a name="guides-for-security-and-compliance"></a>セキュリティとコンプライアンスのガイド
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender Advanced Threat Protection (ATP) advisor
 
@@ -121,31 +133,39 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 
 [Office 365 Advanced Threat Protection advisor](https://aka.ms/oatpsetup)は、電子メールメッセージ、リンク、およびサードパーティのコラボレーションツールを使用して、お客様の環境で発生する可能性のある悪意のある脅威から組織を保護します。 このガイドには、高度な脅威保護計画を準備して、組織のニーズに合わせて識別するのに役立つリソースと情報が記載されています。 
 
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Active Directory フェデレーションサービス (AD FS) の展開アドバイザー
+### <a name="microsoft-information-protection-setup-guide"></a>Microsoft information protection セットアップガイド
 
-[AD fs 展開アドバイザー](https://aka.ms/adfsguidance)は、Microsoft 365 および Office 365 サービスのユーザーを認証するオンプレミスの AD FS インフラストラクチャを展開するためのステップバイステップのガイダンスを提供します。 このガイドでは、組織が AD FS のコンポーネントと要件を確認し、展開に必要な SSL 証明書を取得してインストールし、必要な web アプリケーションプロキシサーバーをインストールすることができます。 
+機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要について説明します。 機密情報を検出、分類、保護、および監視する4段階のライフサイクルアプローチを使用します。 [Microsoft information protection セットアップガイド](https://aka.ms/mipsetupguide)には、これらの各ステージを完了するためのガイダンスが記載されています。
+
+### <a name="microsoft-information-governance-setup-guide"></a>Microsoft information ガバナンスセットアップガイド
+
+「 [Microsoft Information ガバナンスセットアップガイド」](https://aka.ms/migsetupguide) では、設定した特定のライフサイクルのガイドラインに従ってデータを分類して管理するための、組織のガバナンス戦略の設定と管理に必要な情報について説明します。 このガイドでは、組織の再利用可能なコンテンツおよびコンプライアンスレコードに適用されるラベル、ラベルポリシー、および保持ポリシーを作成、自動適用、または発行する方法について説明します。 また、バルクシナリオのファイル計画を使用して CSV ファイルをインポートする方法や、個々のドキュメントに手動で適用する方法についての情報も得られます。 
 
 ## <a name="guides-for-collaboration"></a>グループ作業のガイド
 
-### <a name="microsoft-365-apps-for-enterprise-deployment-advisor"></a>エンタープライズ展開アドバイザー用の Microsoft 365 アプリ
+### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 アプリの展開アドバイザー
 
 [Microsoft 365 Apps 展開アドバイザー](https://aka.ms/OPPquickstartguide)は、Word、Excel、PowerPoint、OneNote などの Office 製品の最新バージョンを実行しているユーザーのデバイスを取得するのに役に立ちます。 管理ツールを使用してエンタープライズ展開に簡単にインストールできるオプションを含む、さまざまな展開方法についてのガイダンスが用意されています。 手順は、環境を評価し、特定の展開要件を把握して、インストールを成功させるために必要なサポートツールを実装するのに役立ちます。 
 
-### <a name="mobile-apps-setup-assistant"></a>モバイルアプリのセットアップアシスタント
+### <a name="office-mobile-apps-setup-assistant"></a>Office mobile apps セットアップアシスタント
 
-「 [モバイルアプリセットアップアシスタント](https://aka.ms/officeappguidance) 」では、Windows、IOS、Android のモバイルデバイスに Office アプリをダウンロードしてインストールする方法について説明します。 このガイドでは、Microsoft 365 および Office 365 アプリを携帯電話およびタブレットデバイスにダウンロードしてインストールするための詳細な手順について説明します。
+[Office mobile apps セットアップアシスタント](https://aka.ms/officeappguidance)には、Windows、IOS、Android のモバイルデバイスで office アプリをダウンロードしてインストールするための手順が記載されています。 このガイドでは、Microsoft 365 および Office 365 アプリを携帯電話およびタブレットデバイスにダウンロードしてインストールするための詳細な手順について説明します。
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams セットアップガイド
 
 [Microsoft Teams セットアップガイド](https://aka.ms/teamsguidance)では、チームとプライベートコミュニケーションの両方について、メッセージング、通話、および音声またはビデオ会議を通じてリアルタイム会話をホストするチームワークスペースをセットアップするためのガイダンスを組織に提供します。 Teams 管理センター内でネットワークプランナーツールと Teams アドバイザーを使用して、組織のネットワーク要件を決定する手順が表示されます。 展開が完了すると、Teams の使用を開始するのに役立つリソースがガイドに表示されます。
 
-### <a name="sharepoint-deployment-advisor"></a>SharePoint 展開アドバイザー
+### <a name="sharepoint-setup-guide"></a>SharePoint セットアップガイド
 
-[Sharepoint 展開アドバイザー](https://aka.ms/spoguidance)は、sharepoint ドキュメントの記憶域とコンテンツ管理のセットアップ、サイトの作成、外部共有の構成、データの移行、詳細設定の構成を行うことができます。これにより、組織内でのユーザーの活動とコミュニケーションが促進されます。 コンテンツ共有のアクセス許可ポリシーを構成する手順を実行し、移行同期ツールを選択して、SharePoint 環境のセキュリティ設定を有効にします。 
+[Sharepoint セットアップガイド](https://aka.ms/spoguidance)は、sharepoint ドキュメントストレージとコンテンツ管理のセットアップ、サイトの作成、外部共有の構成、データの移行、および詳細設定の構成を行うことができます。また、組織内のユーザーの活動とコミュニケーションを促進します。 コンテンツ共有のアクセス許可ポリシーを構成する手順を実行し、移行同期ツールを選択して、SharePoint 環境のセキュリティ設定を有効にします。 
 
-### <a name="onedrive-quick-start-guide"></a>OneDrive クイックスタートガイド
+### <a name="onedrive-setup-guide"></a>OneDrive セットアップガイド
 
 Onedrive の [セットアップガイド](https://aka.ms/ODfBquickstartguide) を使用して、onedrive ファイルの保存、共有、グループ作業、および同期機能を使い始めることができます。 OneDrive は、ユーザーが Microsoft 365 アプリのファイルを同期し、外部共有を構成し、ユーザーデータを移行し、セキュリティとデバイスアクセスの詳細設定を構成するための一元的な場所を提供します。 Onedrive のセットアップガイドは、OneDrive サブスクリプションまたはスタンドアロンの OneDrive プランを使用して展開できます。 
+
+### <a name="yammer-deployment-advisor"></a>Yammer 展開アドバイザー
+
+Yammer を使用して組織全体に接続して参加します。 [Yammer 展開アドバイザー](https://aka.ms/yammerdeploymentguide)は、ドメインを追加し、管理者を定義し、yammer ネットワークを結合することで、yammer ネットワークを準備します。 Yammer を展開して、外観をカスタマイズし、セキュリティとコンプライアンスを構成し、設定を調整するためのガイダンスが得られます。
 
 ## <a name="advanced-wizards"></a>高度なウィザード
 
@@ -156,6 +176,12 @@ Windows 7 および Windows 8.1 デバイスを Windows 10 の最新バージョ
 ### <a name="deploy-office-to-your-users"></a>ユーザーに Office を展開する
 
 Office 展開ツールを使用してインストールをカスタマイズする機能を使用して、クラウドから Office アプリを展開します。 [ [Office をユーザーに展開する] ガイドを ](https://aka.ms/proplusodt) 使用すると、高度な設定を使用してカスタマイズされた office 構成を作成したり、事前に推奨される構成を使用したりできます。 ユーザーが自己インストールを実行しているか、ユーザーに個別にまたは一括して展開しているかにかかわらず、この詳細ウィザードでは、組織に合わせてカスタマイズされた Office インストールをユーザーに提供するためのステップバイステップの手順を説明します。
+
+### <a name="deploy-office-to-remote-users"></a>リモートユーザーに Office を展開する
+
+リモートで機能するようになったので、ユーザーが内部ネットワークに接続されていない場合や、自分のデバイスを使用している場合は、組織の Office 設定を受信する必要があります。 
+
+Office [をリモートユーザー](https://aka.ms/officeremoteinstall) として展開するガイドを使用して、カスタマイズした office インストールを作成し、ユーザーに対して、構成を使用して office をシームレスにインストールする生成された PowerShell スクリプトを送信します。
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Configuration Manager を使用して Microsoft 365 アプリを展開および更新する
 

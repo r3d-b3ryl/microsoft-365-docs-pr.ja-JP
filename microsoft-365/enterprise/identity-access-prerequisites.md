@@ -16,18 +16,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 034dd31309c783e8b231a113d2bda5ccb1888d5b
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547206"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950762"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Id およびデバイスアクセスポリシーを実装するための前提条件
 
 この記事では、推奨される id とデバイスのアクセスポリシーを展開する前に実装する必要がある前提条件について説明します。 この記事では、推奨される既定のプラットフォームクライアント構成についても説明します。これには、ユーザーに最適なシングルサインオン (SSO) の機能、および条件付きアクセスの技術的な前提条件が提供されます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 推奨される id とデバイスのアクセスポリシーを実装する前に、365 365 次のような前提条件を満たす必要があります。
 
@@ -116,6 +116,6 @@ Microsoft 365 E3 または E5、または個別の Azure AD Premium P1 または
 
 ## <a name="next-step"></a>次の手順
 
-![手順 2: 共通 id を構成し、条件付きアクセスポリシーにアクセスする](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+[![手順 2: 共通 id を構成し、条件付きアクセスポリシーにアクセスする](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
 [共通 id およびデバイスアクセスポリシーを構成する](identity-access-policies.md)

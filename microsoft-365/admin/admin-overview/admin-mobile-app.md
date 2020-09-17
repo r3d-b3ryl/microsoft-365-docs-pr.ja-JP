@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: Microsoft 365 Admin アプリを入手して、携帯電話またはタブレットからオンライン組織を管理する方法について説明します。
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780543"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948810"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 admin モバイルアプリについて
 
@@ -40,7 +40,7 @@ ms.locfileid: "44780543"
 
 - サービスの正常性と変更通知を取得する
 - お問い合わせを作成する
-- ユーザーのパスワードを再設定する
+- ユーザーのパスワードを再設定します
 - ライセンスを割り当てる
 - グループメンバーシップを追加または削除する
 - ユーザーの追加 
@@ -48,7 +48,7 @@ ms.locfileid: "44780543"
 また、複数のオンライン組織の責任者である場合は、複数の組織にサインインして、それらをすばやく切り替えることができます。 
   
 > [!IMPORTANT]
-> IOS または Android で管理者モバイルアプリを使用するときに問題が発生した場合は、 [feedback365@microsoft.com](mailto:feedback365@microsoft.com)に電子メールでお知らせください。 
+> IOS または Android で管理者モバイルアプリを使用するときに問題が発生した場合は、 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) に電子メールでお知らせください。 
   
 ## <a name="download-the-admin-mobile-app"></a>管理者のモバイル アプリをダウンロードする
 
@@ -89,6 +89,10 @@ ms.locfileid: "44780543"
 
 特定のサービスインシデントまたはメッセージを選択すると、右上隅に共有オプションが表示されます。 現在、メールの共有がサポートされています。
   
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>このアプリを複数のアカウントまたはテナントで使用できますか?
+
+はい。複数のアカウントまたはテナントをセットアップすることができます。
+  
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>アプリが正常に動作しません。 アプリの不審な動作のトラブルシューティングを行うにはどうすればよいですか?
 
 以下のようないくつかの一般的なモバイル アプリのトラブルシューティングを使うことができます。
@@ -97,11 +101,11 @@ ms.locfileid: "44780543"
     
 2. アプリをアンインストールして、再インストールします。
 
-3. それでもうまくいかない場合は、 [feedback365@microsoft.com](mailto:feedback365@microsoft.com)に電子メールを送信してご連絡ください。
+3. それでもうまくいかない場合は、 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) に電子メールを送信してご連絡ください。
     
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>質問の回答がない場合はどうすればよいですか?
 
-電子メール[feedback365@microsoft.com](mailto:feedback365@microsoft.com)を使用して、アプリに関する問題を報告します。 または、この記事の最後にフィードバックを提供することもできます。 
+電子メール [feedback365@microsoft.com](mailto:feedback365@microsoft.com) を使用して、アプリに関する問題を報告します。 または、この記事の最後にフィードバックを提供することもできます。 
   
 ## <a name="see-also"></a>関連項目
 

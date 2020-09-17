@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547226"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950800"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -35,6 +35,10 @@ ms.locfileid: "47547226"
 
 [ ![ Id とデバイスのアクセスを構成するための一般的なポリシー](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [この画像の大規模なバージョンの表示](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+以下に、個々のポリシーへのリンクを含む1ページの PDF の概要を示します。
+
+[![Microsoft 365 配布資料の Id とデバイス保護のサムネイル画像](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  PDF とし[て表示する](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \|[PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
 
 この記事の残りの部分では、これらのポリシーを構成する方法について説明します。 
 
@@ -374,7 +378,6 @@ Intune でコンプライアンスポリシーを作成する詳細な手順に�
 
 ## <a name="next-step"></a>次の手順
 
-![手順 3: ゲストユーザーと外部ユーザーのポリシー](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![手順 3: ゲストユーザーと外部ユーザーのポリシー](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [ゲストユーザーと外部ユーザーのポリシー推奨事項について説明します。](identity-access-policies-guest-access.md)

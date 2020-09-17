@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1a2a8cd91d0cc32dc5a10b1eb1dd28714cd4f6c4
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: da3fd8b97899e302c9b7b24a5c0677534b579981
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429968"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947986"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft Threat Protection の新機能
 
@@ -30,10 +30,13 @@ RSS フィード: このページが更新されたときに通知を取得す�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
-## <a name="july-2020"></a>2020 年7 月
-- [FileProfile () 関数](advanced-hunting-fileprofile-function.md) <br> [高度な](advanced-hunting-overview.md)検索のクエリでこの関数を使用して、包括的なファイル情報を使用して結果を充実させます。
+## <a name="september-2020"></a>2020 年 9 月
+- [AssignedIPAddresses () 関数](advanced-hunting-assignedipaddresses-function.md) <br> この関数を [高度な](advanced-hunting-overview.md) 検索クエリで使用して、デバイスに割り当てられている最新の ip アドレスや、指定した時点からの最新の ip アドレスをすばやく取得します。
+
+## <a name="july-2020"></a>2020 年 7 月
+- [FileProfile () 関数](advanced-hunting-fileprofile-function.md) <br> 高度な検索のクエリでこの関数を使用して、包括的なファイル情報を使用して結果を充実させます。
 - [Id とアプリのテーブル](advanced-hunting-schema-tables.md)<br> 高度な検索スキーマで、認証イベント、Active Directory クエリ、アプリに関連するアクティビティの可視性を取得します。これには、詳細な検索スキーマのイベントテーブル[、イベント](advanced-hunting-identityqueryevents-table.md)[テーブル、および](advanced-hunting-identitylogonevents-table.md) [appfileevents](advanced-hunting-appfileevents-table.md)テーブルが含まれます。
-- [検出する](advanced-hunting-go-hunt.md)<br> クエリベースの[高度な](advanced-hunting-overview.md)検索機能を使用して、特定のイベント、ユーザー、デバイス、またはその他のエンティティの種類を調べることによって、インシデントの調査からすばやくピボットできます。
+- [検出する](advanced-hunting-go-hunt.md)<br> クエリベースの高度な検索機能を使用して、特定のイベント、ユーザー、デバイス、またはその他のエンティティの種類を調べることによって、インシデントの調査からすばやくピボットできます。
 
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter フィード <br> 最新のセキュリティ研究、脅威インテリジェンス、製品ニュース、およびダッシュボード内部の詳細を取得します。

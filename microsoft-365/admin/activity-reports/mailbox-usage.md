@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: メールボックス使用状況レポートを取得して、ユーザーのメールボックスを持つユーザーのアクティビティについて把握する方法について説明します。
-ms.openlocfilehash: 15da09574b2273e119ba9cf2c132d2e9596e9a64
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0b0c57bda813e1600866513df86b7c973dcdffdc
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387683"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949134"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>管理センターでの Microsoft 365 レポート-メールボックスの使用状況
 
@@ -44,7 +44,7 @@ ms.locfileid: "44387683"
 
 組織の [ **メールボックスの使用状況**] を表示するには、[ **メールボックス**]、[ **記憶域**]、[ **クォータ**] グラフを確認します。 
   
-|||
+|アイテム|説明|
 |:-----|:-----|
 |1.  <br/> |[ **メールボックスの使用状況**] レポートでは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択すると、テーブルには、現在の日付 (レポートが生成された日付ではありません) から最大28日間のデータが表示されます。  <br/> |
 |2.  <br/> |各レポートのデータは、通常、過去 24 - 48 時間まで表示されます。  <br/> |

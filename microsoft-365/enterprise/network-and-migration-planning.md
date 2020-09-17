@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: この記事には、ネットワークの計画、テスト、Office 365 への移行に関する情報へのリンクが含まれています。
-ms.openlocfilehash: 1e6973f93c65012f4ca007332a47cc6b9e67b3b0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692177"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948450"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 のネットワークと移行の計画
 
@@ -51,7 +51,7 @@ Office 365 を使用すると、組織のインターネット回線の使用率
     
 2. クライアントが使用できる Office 365 サービスと機能を決定します。 さまざまなサービスや利用状況のプロファイルを持つユーザーのグループが存在する可能性があります。
     
-3. クライアントのパイロットグループに対するネットワークの使用を測定します。 パイロットクライアントが、組織内のユーザーのさまざまなプロファイルおよび地理的に異なる場所を代表するものであることを確認します。 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744)と[Skype for business](https://go.microsoft.com/fwlink/p/?LinkId=321551)の従来の電卓や、自分のネットワークで実行した[ケーススタディ](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)に対して、結果をクロスチェックすることができます。 
+3. クライアントのパイロットグループに対するネットワークの使用を測定します。 パイロットクライアントが、組織内のユーザーのさまざまなプロファイルおよび地理的に異なる場所を代表するものであることを確認します。 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744)と[Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network)の従来の電卓、または自社のネットワークで実行した[ケーススタディ](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365)に対して、結果をクロスチェックすることができます。 
     
 4. ネットワークに変更を加える前に、パイロットグループの測定値を使用して、組織のニーズ全体を推定し、見積もりを検証するために再テストします。
     

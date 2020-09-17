@@ -7,23 +7,23 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: e9306ff3f797e03422a40ceb189a76dee331ddd9
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 6e4038982f396bbd427273225c2a3d1a9f866252
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612504"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948128"
 ---
 # <a name="topic-center-overview-preview"></a>トピックセンターの概要 (プレビュー)
 
 > [!Note] 
 > この記事の内容は、Project Cortex のプライベートプレビュー用です。 [詳細については、「Project Cortex](https://aka.ms/projectcortex)」を参照してください。
 
-トピックセンターは、組織のナレッジセンターとして機能する最新の SharePoint サイトです。 これは、Microsoft 365 管理センターの[ナレッジマネージメントのセットアップ](set-up-knowledge-network.md)時に作成されます。
+トピックセンターは、組織のナレッジセンターとして機能する最新の SharePoint サイトです。 これは、Microsoft 365 管理センターの [ナレッジマネージメントのセットアップ](set-up-knowledge-network.md) 時に作成されます。
 
 トピックセンターでは、適切なアクセス許可を持つユーザーは次のことを行うことができます。
 
@@ -32,21 +32,21 @@ ms.locfileid: "46612504"
 - 既存のトピックページを編集する
 
 > [!Note] 
-> 作業の各タスクの詳細については[、トピックセンターのトピックを](work-with-topics.md)参照してください。
+> 作業の各タスクの詳細については [、トピックセンターのトピックを](work-with-topics.md)参照してください。
 
 ## <a name="where-is-the-topic-center"></a>トピックセンターの場所
 
-トピックセンターは、ナレッジ管理のセットアップ時に作成されます。 セットアップが完了すると、管理者は [[ナレッジセンターの管理] ページ](manage-knowledge-network.md)で URL を見つけることができます。
+トピックセンターは、ナレッジ管理のセットアップ時に作成されます。 セットアップが完了すると、管理者は [ [ナレッジセンターの管理] ページ](manage-knowledge-network.md)で URL を見つけることができます。
 
-1. Microsoft 365 管理センターで、ナビゲーションウィンドウの [**設定**] を選択し、[**組織ナレッジ**] セクションで、[**ユーザーをナレッジに接続する**] を選択します。
+1. Microsoft 365 管理センターで、ナビゲーションウィンドウの [ **設定** ] を選択し、[ **組織ナレッジ** ] セクションで、[ **ユーザーをナレッジに接続する**] を選択します。
 
    ![ユーザーを知識に結び付ける](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
 
-2. [**ユーザーをナレッジに接続**] ページの [**概要**] セクションで、「サイト URL の**トピックセンターアドレス**」を参照してください。
+2. [ **ユーザーをナレッジに接続** ] ページの [ **概要** ] セクションで、「サイト URL の **トピックセンターアドレス** 」を参照してください。
 
 ## <a name="permissions-to-use-the-topic-center"></a>トピックセンターを使用するためのアクセス許可
 
-トピックセンターで作業するには、必要なアクセス許可を持っている必要があります。 管理者は、[ナレッジマネージメントのセットアップ](set-up-knowledge-network.md)中にこれらのアクセス許可をユーザーに割り当てることができます。または、管理者が Microsoft 365 管理センターを使用して、新しいユーザーを[追加](give-user-permissions-to-the-topic-center.md)することもできます。
+トピックセンターで作業するには、必要なアクセス許可を持っている必要があります。 管理者は、 [ナレッジマネージメントのセットアップ](set-up-knowledge-network.md)中にこれらのアクセス許可をユーザーに割り当てることができます。または、管理者が Microsoft 365 管理センターを使用して、新しいユーザーを [追加](give-user-permissions-to-the-topic-center.md) することもできます。
 
 トピックセンターのユーザーには、次の2つのアクセス許可のセットを与えることができます。
 
@@ -59,7 +59,7 @@ ms.locfileid: "46612504"
 
 トピックダッシュボードには、指定したソースの場所からマイニングされたトピックが表示されます。 各トピックには、トピックが検出された日付と、フィードバックが提供されているかどうかが表示されます。 **トピックの管理**のアクセス許可が割り当てられているユーザーは、未確認のトピックを確認して、次のことを選択できます。
 - トピック「アクセス権を持つユーザーに対してトピックを強調表示し、関連するトピックカードとトピックページを表示する」を確認します。
-- トピックを拒否する: ユーザーがトピックを使用できなくなります。 トピックが [**拒否**] タブに移動され、必要に応じて後で確認できるようになります。
+- トピックを拒否する: ユーザーがトピックを使用できなくなります。 トピックが [ **拒否** ] タブに移動され、必要に応じて後で確認できるようになります。
 
 ## <a name="create-or-edit-a-topic"></a>トピックを作成または編集する
 

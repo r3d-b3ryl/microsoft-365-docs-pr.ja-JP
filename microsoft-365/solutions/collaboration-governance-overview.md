@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint、Yammer の関連する機能を管理する方法について説明します。
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662701"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950714"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Microsoft 365 のコラボレーションガバナンスの概要
 
@@ -108,16 +108,16 @@ Microsoft 365 グループと Teams のガバナンスの詳細については�
 
 スケールでの管理とガバナンス、使用方法と導入のためのベストプラクティス、セルフサービスなど、Microsoft 365 グループの基本技術および新技術技術について説明します。
 
-- [Microsoft 365 グループを採用する](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [Microsoft 365 グループを採用する](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **ガバナンス**
 
 グループの有効期限のライフサイクル、命名ポリシー、分類ラベル、外部ゲストとのコラボレーション、グループ作成のアクセス許可の管理方法について説明します。
 
-- [コラボレーションを変革し、Office 365 グループとの統合を促進する](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [コラボレーションを変革し、Office 365 グループとの統合を促進する](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **お客様の例**
 
 グローバルなコラボレーションプラットフォームを提供するために、Microsoft 365 グループ、SharePoint、Teams、Yammer がどのように連携するかについて、舞台裏の例を参照してください。
 
-- [Office 365 グループ、SharePoint、Teams、Yammer を使用してコラボレーションを検索する](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [Office 365 グループ、SharePoint、Teams、Yammer を使用してコラボレーションを検索する](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

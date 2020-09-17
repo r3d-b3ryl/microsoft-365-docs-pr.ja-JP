@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3ca475ef6dbdbd66af47216c4130d748788730c2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419134"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949302"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -31,7 +31,12 @@ ms.locfileid: "47419134"
 
 これらの推奨事項を適用して、結果を迅速に取得し、複雑なクエリの実行中にタイムアウトを回避します。 クエリのパフォーマンスを向上させる方法の詳細については、「[Kusto クエリのベスト プラクティス](https://docs.microsoft.com/azure/kusto/query/best-practices)」を参照してください。
 
-## <a name="general-guidance"></a>一般的なガイダンス
+## <a name="understand-cpu-resource-limits"></a>CPU リソースの制限を理解する
+各テナントは、そのサイズに応じて、高度な検索クエリの実行に割り当てられた CPU リソースの設定済み容量にアクセスできます。 さまざまなサービス制限の詳細については、 [「アドバンス検索の制限について](advanced-hunting-limits.md)」を参照してください。
+
+複数のクエリを定期的に実行する必要がある場合は、この記事の最適化ガイダンスを使用して、制限を超えたことによる影響を最小限に抑える必要があります。
+
+## <a name="general-optimization-tips"></a>一般的な最適化のヒント
 
 - **新しいクエリのサイズ**変更-クエリが大きな結果セットを返すことが疑われる場合は、まず [count 演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)を使用して評価します。 大きな結果セットを使用しないように [制限](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) またはシノニムを使用し `take` ます。
 - **事前にフィルターを適用**する-タイムフィルターとその他のフィルターを適用してデータセットを縮小します。特に、変換関数と解析関数 ( [substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)、 [replace ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)、 [trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction)、 [toupper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)、または [parse_json () など)](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)を使用する前に行います。 次の例では、フィルター演算子を使用してレコード数を減らした後、解析関数 [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) を使用しています。
@@ -253,11 +258,9 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 
 サポートされているすべての解析関数の詳細については、「 [Kusto string 関数](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions)」を参照してください。 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語ドキュメント](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [サービスの制限](advanced-hunting-limits.md)
+- [詳細な検索エラーを処理する](advanced-hunting-errors.md)
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
-- [クエリ結果を操作する](advanced-hunting-query-results.md)
-- [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
-- [スキーマを理解する](advanced-hunting-schema-tables.md)

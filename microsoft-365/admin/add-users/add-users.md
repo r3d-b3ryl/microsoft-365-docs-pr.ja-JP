@@ -21,23 +21,23 @@ search.appverid:
 - MET150
 description: ユーザーを追加して、Microsoft 365 にライセンスを同時に割り当てる方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307375"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948798"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して、ライセンスを同時に割り当てる
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
-チームのメンバーは、サインインして [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395)にアクセスする前に、ユーザーアカウントが必要です。 ユーザー アカウントを追加する最も簡単な方法は、Microsoft 365 管理センターで 1 人ずつ追加する方法です。 この手順を実行すると、ユーザーには Microsoft 365 ライセンス、サインイン資格情報、および Microsoft 365 メールボックスがあります。
+チームのメンバーは、サインインして [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business)にアクセスする前に、ユーザーアカウントが必要です。 ユーザー アカウントを追加する最も簡単な方法は、Microsoft 365 管理センターで 1 人ずつ追加する方法です。 この手順を実行すると、ユーザーには Microsoft 365 ライセンス、サインイン資格情報、および Microsoft 365 メールボックスがあります。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -54,7 +54,7 @@ ms.locfileid: "47307375"
 
 ::: moniker range="o365-worldwide"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。
+1. <https://admin.microsoft.com> で管理センターにアクセスします。
 2. [**ユーザー**] > [**アクティブなユーザー**] の順に移動し、[**ユーザーの追加**] を選択します。
 3. [基本 **] ウィンドウで** 、[基本的なユーザー情報] を入力し、[ **次へ**] を選択します。
     - **名前** 姓と名、表示名、およびユーザー名を入力します。
@@ -70,7 +70,7 @@ ms.locfileid: "47307375"
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> で管理センターにアクセスします。
+1. <https://portal.office.de/adminportal> で管理センターにアクセスします。
 2. [**ユーザー**] > [**アクティブなユーザー**] の順に移動し、[**ユーザーの追加**] を選択します。
 3. [**新しいユーザー**] ウィンドウで、次の情報を入力します。 完了したら、[ **追加**] を選択します。
     - [**名前**] 名、姓、表示名、ユーザー名を入力します。
@@ -84,7 +84,7 @@ ms.locfileid: "47307375"
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> で管理センターにアクセスします。
+1. <https://portal.partner.microsoftonline.cn> で管理センターにアクセスします。
 2. [**ユーザー**] > [**アクティブなユーザー**] の順に移動し、[**ユーザーの追加**] を選択します。
 3. [**新しいユーザー**] ウィンドウで、次の情報を入力します。 完了したら、[ **追加**] を選択します。
     - [**名前**] 名、姓、表示名、ユーザー名を入力します。
@@ -99,7 +99,7 @@ ms.locfileid: "47307375"
 ## <a name="add-multiple-users-at-the-same-time"></a>一度に複数のユーザーを追加する
 
 複数のユーザーを同時に追加するには、次のいずれかの方法を使用できます。
-  
+
 - **ユーザーをまとめて追加するには、スプレッドシートを使用します。** 「[同時に複数のユーザーを追加する](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time)」を参照してください。
 - **アカウントの追加とライセンスの割り当てを自動化します。** 「 [Microsoft 365 PowerShell を使用してユーザーアカウントを作成する」を](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell)参照してください。 この方法は、Windows PowerShell コマンドレットについて詳しい知識のある場合に選んでください。
 - **ActiveDirectory を使用する場合** [Microsoft 365 のディレクトリ同期をセットアップ](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)します。 Azure AD Connect ツールを使用して、Microsoft 365 の Active Directory ユーザーアカウント (およびその他の Active Directory オブジェクト) をレプリケートします。 同期では、ユーザー アカウントのみが追加されます。 電子メールやその他の Office アプリを使用するには、その前に、同期されたユーザーにライセンスを割り当てる必要があります。

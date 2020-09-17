@@ -1,5 +1,5 @@
 ---
-title: 管理センターの microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ-プレビュー
+title: 管理センターの microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -19,30 +19,34 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ユーザーアクティビティレポートを取得して、組織内の Teams アクティビティを把握する方法について説明します。
-ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: 5b6c67903e7af600cac6ad1fda10962aecc2cc83
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167343"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949032"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>管理センターの microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ-プレビュー
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ
 
 Microsoft 365 **Reports** dashboard には、組織内の製品全体にわたるアクティビティの概要が表示されます。 これにより、個別の製品レベルのレポートを詳細に確認して、各製品内のアクティビティについてより詳しく知ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft Teams ユーザーアクティビティレポートでは、組織内の Microsoft Teams アクティビティについての洞察を得ることができます。
   
 > [!NOTE]
 > レポートを表示するには、Microsoft 365 または Exchange、SharePoint、Teams サービス、Teams 通信、または Skype for Business 管理者のグローバル管理者、グローバル閲覧者またはレポート閲覧者である必要があります。  
  
-## <a name="how-to-get-to-the-preview-microsoft-teams-user-activity-report"></a>Microsoft Teams のプレビューユーザーアクティビティレポートを取得する方法
+## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Microsoft Teams ユーザー アクティビティ レポートを取得する手順
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
-2. **[レポートの選択**] ドロップダウンから、[ **Microsoft Teams**] を選択します。
+2. ダッシュボードのホームページから、Microsoft Teams のアクティビティカードの [ **詳細表示** ] ボタンをクリックします。
   
-## <a name="interpret-the-preview-microsoft-teams-user-activity-report"></a>Microsoft Teams のプレビューのユーザーアクティビティレポートを解釈する
+## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Microsoft Teams ユーザー アクティビティ レポートを解釈する
 
-[**ユーザーアクティビティ**] タブを選択すると、[Teams のプレビュー] レポートでユーザーアクティビティを表示できます。
-  
-|||
+[ **ユーザーアクティビティ** ] タブを選択すると、Teams レポートでユーザーアクティビティを表示できます。 <br/>![Microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
+
+レポートに列を追加または削除するには、[ **列の選択** ] を選択します。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+
+また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+
+|アイテム|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
 |ユーザー名  <br/> |ユーザーの電子メール アドレス。 実際のメール アドレスを表示することも、このフィールドを匿名にすることもできます。   <br/> |
