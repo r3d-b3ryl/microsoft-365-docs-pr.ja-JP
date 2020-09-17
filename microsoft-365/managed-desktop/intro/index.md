@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: abd6a123cdc06a84ce094a93eac06f50fe23a315
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a126627a4c4d96b2b6918cefb0630801b3674383
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289735"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950498"
 ---
-# <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは?
+# <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
 
 Microsoft マネージド デスクトップは、[Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) ([Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise と [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) を含む) を組み合わせたクラウドベースのサービスであり、次の機能を追加します。

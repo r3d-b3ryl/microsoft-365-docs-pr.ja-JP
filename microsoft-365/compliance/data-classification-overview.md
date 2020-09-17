@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588219"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948507"
 ---
 # <a name="know-your-data---data-classification-overview"></a>データを把握する - データ分類の概要
 
@@ -49,7 +49,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 
 データ分類にアクセスし、データ分類を使用するすべてのアカウントには、以下のサブスクリプションのいずれかからライセンスが割り当てられている必要があります。
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5)
 - Office 365 (E5)
 - 高度なコンプライアンス (E5) アドオン
 - 高度な脅威インテリジェンス (E5) アドオン

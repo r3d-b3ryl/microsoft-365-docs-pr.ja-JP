@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
-ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 1f014a221334925f5b9c90371d552eb64d026c1f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632119"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949434"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -206,7 +206,7 @@ DMARC 拒否ポリシー (p=reject) を発行すると、どの顧客も Microso
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Microsoft 365 が DMARC に失敗した受信メールを処理する方法
 
-送信側サーバーの DMARC ポリシーが `p=reject` の場合、EOP はメッセージを拒否するのではなく、スプーフィングとしてのマークを付けます。 つまり、受信メールの場合、Microsoft 365 は `p=reject` と `p=quarantine` を同様に扱うということです。 管理者は、[フィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md)内のスプーフィングとして分類されたメッセージに対するアクションを定義できます。
+送信側サーバーの DMARC ポリシーが `p=reject` の場合、[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) はメッセージを拒否するのではなく、スプーフィングとしてマークを付けます。 つまり、受信メールの場合、Microsoft 365 は `p=reject` と `p=quarantine` を同様に扱うということです。 管理者は、[フィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md)内のスプーフィングとして分類されたメッセージに対するアクションを定義できます。
 
 このように Microsoft 365 が構成されている理由は、一部の正当なメールが DMARC に失敗することがあるためです。 たとえば、メッセージがメーリング リストに送信されてから、リストのすべての参加者にメッセージが中継される場合、DMARC に失敗することがあります。 こうしたメッセージを Microsoft 365 が拒否すると、受信者は正当なメールを失うことになり、そのメールを取得する手段がなくなります。 その代わりに、このようなメッセージは DMARC に失敗するようにしておき、スパムのマークを付けて拒否しないようにします。 必要であれば、ユーザーは自分の受信トレイから、次の方法でメッセージを取得できます。
 

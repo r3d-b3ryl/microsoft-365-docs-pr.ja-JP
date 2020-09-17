@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399224"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949847"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpoint Data Loss Prevention (プレビュー) を開始する
 
@@ -82,7 +82,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 1. Windows 10 ビルド1809 以降を実行していなければなりません。
 2. すべてのデバイスは[Azure Active Directory (AAD) に参加する ](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)か、Hybrid Azure AD に参加する必要があります。
-3. エンドポイントデバイスに Microsoft Chromium Edge ブラウザをインストールして、クラウドへのアップロードアクティビティのポリシーアクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
+3. エンドポイント デバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドへのアップロード アクティビティのポリシー アクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 
 ## <a name="onboarding-devices-into-device-management"></a>デバイス管理へのデバイスのオンボーディング
 
@@ -102,7 +102,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
    ![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
-   > 通常、デバイスのオンボーディングが有効になるまで約 60 秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかる場合があります。
+   > 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
 
 3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 デバイスをオンボードするまで、リストは空になります。
 4. オンボーディングプロセスを開始するには、[**オンボーディング**]を選択します。
