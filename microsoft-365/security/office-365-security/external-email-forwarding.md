@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 727f14e8158f7e024b6029231fed18adb2d56a62
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898054"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949690"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Office 365 で外部電子メール転送を構成する
 
@@ -31,7 +31,10 @@ ms.locfileid: "46898054"
 
 - **Off** -自動外部転送が無効になり、エンドユーザーに配信不能レポート (NDR) が生成されます。
 
-これらの設定を構成する方法の詳細については、「 [EOP で送信スパムフィルターを構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) する」を参照してください。
+これらの設定を構成する方法の詳細については、「 [EOP で送信スパムフィルターを構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) する」を参照してください。
+
+> [!NOTE]
+> また、自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルールも可能になります。
 
 ## <a name="controlling-external-email-forwarding"></a>外部メール転送を制御する
 
@@ -42,7 +45,7 @@ Office 365 では、受信トレイルールまたはメールボックス構成
 > [!NOTE]
 > Office 365 で外部アドレスへの自動転送を無効にすると、 [メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) の投稿によって伝達された詳細をフェーズ内でロールアウトすることができます。 管理者がこれらの変更を準備するには、事前にポリシーを変更して、ユーザーに混乱が発生しないようにする必要があります。
 
-組織内の自動転送 (受信トレイルールまたは SMTP 転送) を使用しているユーザーの詳細については、「 [自動転送](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide)されたメッセージ」レポートを参照してください。
+組織内の自動転送 (受信トレイルールまたは SMTP 転送) を使用しているユーザーの詳細については、「 [自動転送](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true)されたメッセージ」レポートを参照してください。
 
 ## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>このポリシーが他の自動転送コントロールとどのように連動するか
 

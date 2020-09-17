@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
-ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407930"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950606"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 
-ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 次に例を示します。
+ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 例:
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -188,6 +188,9 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
   - **偽装ユーザー**: 差出人アドレスに保護されたユーザーが含まれています。
   - **偽装ドメイン**: 差出人アドレスには保護されたドメインが含まれています。
   - **通常の文字**: 差出人アドレスには、保護された送信者またはドメインに、一般的でない文字セット (数学記号、文字、大文字と小文字の組み合わせなど) が含まれています。
+
+  > [!NOTE]
+  > 偽装の安全のヒントがオフになっている場合でも、メールフロールール (トランスポートルールとも呼ばれます) を使用して、 **Exchange-Enablefirstcontactsaf** という名前のメッセージヘッダーをメッセージに追加できます。 特定の安全のヒントが表示されるのは、受信者が送信者からの電子メールを受信しないことがよくあることや、受信者が最初に送信者から電子メールを受信した場合です。
 
 - **メールボックスインテリジェンス**: 頻繁に使用する連絡先とユーザーの電子メールのパターンを決定する人工知能 (AI) を有効または無効にします。 この設定により、AI は、これらの連絡先からの正当な電子メールとスプーフィングされたメールを区別します。 メールボックスインテリジェンスは、Exchange Online メールボックスに対してのみ使用できます。
 

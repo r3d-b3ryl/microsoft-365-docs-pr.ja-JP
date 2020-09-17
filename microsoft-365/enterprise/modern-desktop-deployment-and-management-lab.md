@@ -1,5 +1,5 @@
 ---
-title: Windows と Office 展開ラボ キット
+title: Windows および Office 展開ラボキット
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685500"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949882"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キット
+# <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office 展開ラボキット
 
 これらのラボは、Windows 10 Enterprise および Microsoft 365 Apps for enterprise を実行しているデスクトップの展開と管理を計画、テスト、検証するのに役立つように設計されています。 ラボの表紙は、Microsoft エンドポイント構成マネージャー、デスクトップ分析、Office カスタマイズツール、OneDrive、Windows 自動操縦などを使用しています。
 
@@ -32,7 +32,7 @@ ms.locfileid: "46685500"
 
 ## <a name="a-complete-lab-environment"></a>完全なラボ環境
 
-このラボでは、自動的にプロビジョニングされた仮想ラボ環境が提供されます。これには、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、および完全に構成された Configuration Manager インスタンスが含まれます。 ラボには次の製品の最新の評価版が含まれています。
+このラボでは、自動的にプロビジョニングされた仮想ラボ環境が提供されます。これには、ドメインに参加しているデスクトップ クライアント、ドメイン コントローラー、インターネット ゲートウェイ、および完全に構成された Configuration Manager インスタンスが含まれます。 ラボには、次の製品の最新の評価バージョンが含まれています。
 
   - 新機能! Windows 10 Enterprise バージョン 2004
   - Windows 7 Enterprise
@@ -53,70 +53,36 @@ ms.locfileid: "46685500"
 
 詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager 用にラボは更新されました。 
 
-### <a name="device-and-app-readiness"></a>デバイスとアプリの準備
+### <a name="plan-and-prepare-infrastructure"></a>インフラストラクチャを計画および準備する 
+Desktop Analytics   
+Cloud Management Gateway & Cloud Distribution Point テナントの接続、共同管理、および切り替えのワークロード    
+リモート アクセス
 
-  - Desktop Analytics
-  - 新しい Microsoft Edge の展開と更新 
-  - クラウド管理ゲートウェイ (CMG) のインストールと構成 
-  - Internet Explorer モード 
-  - Application Guard 
+### <a name="prepare-configuration"></a>構成を準備する   
+Windows 10 の更新プログラムの配布サービスを最適化するグループポリシーを使用して windows 10 を構成 365 365 マネージャーが Microsoft Intune サービスを使用して windows 10 を使用する windows 10 を使用した windows 10 のサービスを提供する    
+セキュリティとコンプライアンス 
 
-### <a name="directory-and-network-readiness"></a>ディレクトリとネットワークの準備
+### <a name="prepare-applications"></a>アプリケーションを準備する    
+Office 用準備ツールキット    
+Win32 アプリケーションの MSIX パッケージと変換 
 
-  - Windows 10 更新プログラム配信の最適化 
-  - Configuration Manager と Microsoft Intune の共同管理
-  - リモート アクセス (VPN)
+### <a name="deploy-windows-10"></a>Windows 10 の展開   
+Configuration Manager OS 展開タスクシーケンスでの OS 展開タスクシーケンス MDT Windows 自動操縦による新しい Microsoft Edge の展開と管理    
 
-### <a name="office-and-lob-app-delivery"></a>Office と LOB アプリの配信
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise を展開する    
+クラウド管理展開    
+ローカル管理展開  
+AD に参加していないデバイスでのエンタープライズ展開用 Microsoft 365 アプリ   
+Configuration Manager を使用したエンタープライズ管理展開 Microsoft Intune を使用したエンタープライズ管理展開    
+Microsoft Intune を使用した LOB の展開と管理 Microsoft Teams を展開する
 
-  - Microsoft 365 Apps for enterprise
-  - Configuration Manager と Microsoft Intune を使用したエンタープライズ管理の展開
-  - Microsoft Intune を使用したアプリケーションの展開と管理
-  - ビジネス向け Microsoft Store を使用したアプリの展開とセルフ サービス インストール
-  - 新機能 Microsoft Teams をインストールする 
-
-### <a name="user-file-and-settings-migration"></a>ユーザー ファイルと設定の移行
-
-  - 既知のフォルダー ファイルの移行 
-  - ユーザー状態移行ツール 
-  - Enterprise State Roaming
-  - [スタート] メニューのカスタマイズと UWP アプリの削除 
-  - User Experience Virtualization (UE-V) 
-
-### <a name="security-and-compliance"></a>セキュリティとコンプライアンス
-
-  - BitLocker デバイス暗号化
-  - Windows Defender ウイルス対策
-  - Windows Hello for Business
-  - BIOS から UEFI への変換
-  - Windows Defender Application Guard
-  - Windows Defender Exploit Guard
-  - Windows Defender Application Control
-  - Windows Defender Advanced Threat Protection
-  - 新機能! エンドポイントのセキュリティ 
-
-### <a name="os-deployment-and-feature-updates"></a>OS の展開と機能の更新プログラム
-
-  - OS イメージの作成
-  - Configuration Manager での OS 展開タスク シーケンス 
-  - MDT での OS 展開タスク シーケンス
-  - Windows Autopilot
-  - プロビジョニング パッケージ 
-
-### <a name="windows-and-office-as-a-service"></a>サービスとしての Windows および Office
-  - グループ ポリシーを使用した Windows Update の管理
-  - Configuration Manager と Intune を使用した Windows 10 のサービス
-  - Configuration Manager を使用した Microsoft 365 Apps for enterprise のサービス
-  - 新機能! 構成マネージャーと Intune を使用した Office の更新
-  
-### <a name="windows-virtual-desktop"></a>Windows Virtual Desktop
-  - Windows Virtual Desktop: 準備、展開、最適化 
-
+### <a name="deploy-windows-virtual-desktop"></a>Windows 仮想デスクトップを展開する  
+ 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-*良好なダウンロード エクスペリエンスが得られるよう、このコンテンツのダウンロードには、広範な帯域幅をご利用ください。また、自動プロビジョニングには 30 分から 45 分程度をお見積もりください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。最適なパフォーマンスを得るには、32 GB のメモリが使用可能であることが推奨されます。このラボは 2020 年 9 月 12 日で有効期限が切れますが、その前に新しいバージョンが公開される予定です。*
+*このコンテンツをダウンロードするには広い帯域幅を使用して、ダウンロードの機能を強化し、自動プロビジョニングに30-45 分を許可してください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB のディスクの空き領域が必要です。最適なパフォーマンスを得るためには、32 GB の使用可能なメモリが推奨されます。このラボは2020年12月4日に期限が切れます。有効期限が切れる前に、新しいバージョンが公開されます。*
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

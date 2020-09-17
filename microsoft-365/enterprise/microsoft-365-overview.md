@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 1a7c0cbb339ae0023264fbafb39e9b8682e98af2
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: b5064d78a1681a3331248f3d17d389c46b1da314
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775185"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949918"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -30,22 +30,22 @@ Microsoft 365 for Enterprise は、誰もが創造性を発揮し、安全に連
 
 Microsoft 365 for Enterprise は以下で構成されています。
 
-| サービス | 説明 |
-|:-------|:-----|
-| ローカルおよびクラウド ベースのアプリと生産性サービス | Microsoft 365 Apps for enterprise、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。 |
-| Windows 10 Enterprise | 大規模と中規模の組織のニーズを満たします。 これは、ユーザーにとって最も生産的かつ安全なバージョンの Windows です。 IT プロフェッショナルに対しては、包括的な展開、デバイス、アプリの管理も提供します。 |
-| デバイス管理と高度なセキュリティ サービス | Microsoft Intune が含まれています。これは、クラウドベースのエンタープライズ モビリティ管理 サービスであり、組織のデータを保護しながら、従業員の生産性を高めるのに役立ちます。 |
+|サービス|説明|
+|---|---|
+|ローカルおよびクラウド ベースのアプリと生産性サービス|Microsoft 365 Apps for enterprise、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。|
+|Windows 10 Enterprise|大規模と中規模の組織のニーズを満たします。 これは、ユーザーにとって最も生産的かつ安全なバージョンの Windows です。 IT プロフェッショナルに対しては、包括的な展開、デバイス、アプリの管理も提供します。|
+|デバイス管理と高度なセキュリティ サービス|Microsoft Intune が含まれています。これは、クラウドベースのエンタープライズ モビリティ管理 サービスであり、組織のデータを保護しながら、従業員の生産性を高めるのに役立ちます。|
 |||
 
 ## <a name="plans"></a>プラン
 
 Microsoft 365 for Enterprise には 3 つのプランがあります。
 
-| プラン名 | 機能 |
-|:-------|:-----|
-| E3 | Microsoft 365 の主要な製品と機能にアクセスして、安全に職場の生産性を高め、イノベーションを推進します。 |
-| E5 | Microsoft 365 の最新の製品と機能にアクセスします。 これには、高度な脅威保護、セキュリティツール、および共同作業ツールが含まれます。 このプランには、E3 のすべての機能に加えて、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。 |
-| F3 | 現場の最前線で働く従業員が最高の仕事をできるように、彼らが使え役に立つ専用のツールやリソースを通じて従業員とつながります。 |
+|プラン名|機能|
+|---|---|
+|E3|Microsoft 365 の主要な製品と機能にアクセスして、安全に職場の生産性を高め、イノベーションを推進します。|
+|E5|Microsoft 365 の最新の製品と機能にアクセスします。 これには、高度な脅威保護、セキュリティツール、および共同作業ツールが含まれます。 このプランには、E3 のすべての機能に加えて、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。|
+|F3|現場の最前線で働く従業員が最高の仕事をできるように、彼らが使え役に立つ専用のツールやリソースを通じて従業員とつながります。|
 |||
 
 Microsoft 365 E3 をお持ちの場合は、次のアドオンも入手できます。
@@ -107,31 +107,31 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 Microsoft 365 for Enterprise の製品、機能、およびコンポーネントの展開を計画するには、3 つの方法があります。
 
 - FastTrack との提携：
-  
+
    Microsoft のエンジニアは FastTrack を使用して、自分のペースでクラウドに移行できます。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
-  
+
 - Microsoft コンサルティング サービスまたは [Microsoft パートナー](https://partner.microsoft.com/)を使用すると：
 
    コンサルタントは、ご使用の現在のインフラストラクチャを分析し、Microsoft 365 for Enterprise のすべてのソフトウェアとサービスを組み込む計画の開発を支援できます。
 
 - お客様自身による導入です：
 
-   [ネットワーク ロードマップ](networking-roadmap-microsoft-365.md)から始めて、既存のインフラストラクチャと生産性ワークロードを構築または検証します。 
+   [ネットワーク ロードマップ](networking-roadmap-microsoft-365.md)から始めて、既存のインフラストラクチャと生産性ワークロードを構築または検証します。
 
 架空の代表的な多国籍企業である[Contoso Corporation](contoso-overview.md) のMicrosoft 365 for enterprise の展開方法をご覧ください。
 
 ## <a name="additional-microsoft-365-products"></a>追加の Microsoft 365 製品
 
 - [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
- 
+
   小規模および中規模の企業向けに、優れた生産性やコラボレーション機能と、ビジネス データを保護するためのデバイス管理およびセキュリティ ソリューションを統合します。
 
 - [Microsoft 365 Education](https://docs.microsoft.com/education)
- 
+
   手ごろな価格の教育用に構築された単一ソリューションで、教育者が創造力を発揮し、チームワークを促進し、シンプルかつ安全な操作性を実現できるようにします。
 
 - [Microsoft 365 政府機関向け](https://www.microsoft.com/microsoft-365/government)
- 
+
   米国の公共部門の従業員が協力して安全に作業できるようにします。
 
 ## <a name="microsoft-365-training"></a>Microsoft 365 のトレーニング
@@ -139,7 +139,6 @@ Microsoft 365 for Enterprise の製品、機能、およびコンポーネント
 ![Microsoft 365 の基礎トレーニング](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 Microsoft 365 と、Microsoft 365の認定の詳細について学ぶには: [認定済Microsoft 365: 基本](https://docs.microsoft.com/learn/paths/m365-fundamentals/)から始めることができます。
-
 
 ## <a name="see-also"></a>関連項目
 

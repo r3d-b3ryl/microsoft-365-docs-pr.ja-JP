@@ -4,13 +4,14 @@ description: ''
 keywords: Microsoft Managed Desktop、Microsoft 365、service、documentation、ITISM
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 05bd5a2ee36633b7ccf9ae61e601988a7268bb2c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 4b735ec28b655dfc01c874bc4865388d11247b67
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289807"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947962"
 ---
 # <a name="microsoft-managed-desktop-and-itil"></a>Microsoft マネージド デスクトップと ITIL (IT インフラストラクチャ ライブラリ)
 
@@ -27,7 +28,7 @@ ITIL およびそのフェーズとプロセスの詳細については、 [ド�
 
 
 
-|ITIL プロセス |説明  |ドキュメント |
+|ITIL プロセス |Description  |ドキュメント |
 |---------|---------|---------|
 |サービスレベルの管理     | 応答時間は、管理者サポート要求とインシデントに対して定義されます。  |  [Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md)  |
 |サービスカタログの管理     | サービスの説明サービスの各コンポーネントの詳細については、「サービスの状態」を参照してください。<br><br>サービスを運用するために必要なことを理解するために詳細な前提条件。  | - [Microsoft マネージドデスクトップサービスの説明](service-description/index.md)<br><br>- [Microsoft マネージドデスクトップでの登録準備をする](get-ready/index.md)  |
@@ -39,7 +40,7 @@ ITIL およびそのフェーズとプロセスの詳細については、 [ド�
 ## <a name="service-transition"></a>サービス移行
 
 
-|ITIL プロセス |説明  |ドキュメント |
+|ITIL プロセス |Description  |ドキュメント |
 |---------|---------|---------|
 |変更管理     | 定義されている責任のバランス、プロセスの概要、および変更管理に関連する種類。  | [Microsoft マネージドデスクトップの操作と監視](service-description/operations-and-monitoring.md#change-management) |
 |リリースと展開の管理     |  Microsoft マネージドデスクトップは、サービスに登録されたデバイスの更新プログラムを管理します。  | [Microsoft マネージドデスクトップでの更新プログラムの処理方法](service-description/updates.md)        |
@@ -51,7 +52,7 @@ ITIL およびそのフェーズとプロセスの詳細については、 [ド�
 ## <a name="service-operation"></a>サービス操作
 
 
-|ITIL プロセス |説明  |ドキュメント  |
+|ITIL プロセス |Description  |ドキュメント  |
 |---------|---------|---------|
 |イベントの管理     |  デバイスの監視の詳細について説明します。<br><br>Microsoft マネージドデスクトップサービスの標準的な運用手順について説明します。 |  - [Microsoft マネージドデスクトップのセキュリティ](service-description/security.md)<br>- [Microsoft マネージドデスクトップの操作と監視](service-description/operations-and-monitoring.md)       |
 |インシデント管理  | Microsoft マネージドデスクトップは、定義された重要度定義ごとにインシデントを調査して処理します。  |  [サポート要求の重要度の定義](working-with-managed-desktop/admin-support.md#support-request-severity-definitions)       |

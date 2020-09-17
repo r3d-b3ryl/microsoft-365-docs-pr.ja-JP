@@ -17,17 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、構成アナライザーを使用して、標準保護と厳格な保護の事前設定セキュリティポリシーの下にあるセキュリティポリシーを検索して修正する方法を学習できます。
-ms.openlocfilehash: 39bec980ac95681ec2c2300914582d5e8786c884
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 022f11013ef49c65b1f94fea7a3872233ff1ab14
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867165"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949480"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>EOP および Office 365 ATP の保護ポリシーの構成アナライザー
 
 > [!NOTE]
-> このトピックで説明する機能はプレビュー段階にあり、組織によっては使用できず、変更される可能性があります。
+> このトピックで説明する機能はプレビュー段階にあり、組織によっては使用できず、変更される可能性があります。 リリーススケジュールの詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer)をご覧ください。
 
 セキュリティ & コンプライアンスセンターの構成アナライザーでは、設定が [既定のセキュリティポリシー](preset-security-policies.md)の標準保護と厳密な保護プロファイル設定より下にあるセキュリティポリシーを検索して修正するための一元的な場所が提供されます。
 

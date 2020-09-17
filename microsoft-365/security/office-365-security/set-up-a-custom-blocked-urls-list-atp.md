@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection を使用して、組織でブロックされている Url の一覧を設定する方法について説明します。
-ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656649"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948092"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>ATP の安全なリンクを使用して、ブロックされたカスタムの Url リストを設定する
 
@@ -49,13 +49,13 @@ ATP ポリシーを編集 (または定義) するには、次の表に示す役
 
 |役割|参照先/割り当て方法|
 |---|---|
-|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)てを参照してください)。|
+|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) てを参照してください)。|
 |セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
 |
 
 > [!TIP]
-> 役割とアクセス許可の詳細については、「[セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+> 役割とアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>ユーザー設定のブロック URL リストを表示または編集するには
 
@@ -92,7 +92,7 @@ URL をリストに追加するときは、次の点に注意してください�
 |
 
 > [!NOTE]
-> 既定では、Office 365 ATP Safe Links の既定のポリシーでは、ブロックされる URL の一覧には、500の Url のみを追加できます。
+> 既定では、Office 365 ATP Safe Links の既定のポリシーでは、ブロックされる URL の一覧には、500の Url のみを追加できます。 個々の URL は128文字を超えることはできません。 ブロックする URL リスト全体は、1万文字を超えることはできません。
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>組織の特定のユーザーに対して例外を定義する方法
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 構成した設定に従って、廃棄レビューを使用するか、コンテンツを自動的に削除するかにかかわらず、コンテンツの廃棄を監視および管理します。
-ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321996"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950391"
 ---
 # <a name="disposition-of-content"></a>コンテンツの廃棄
 
@@ -75,7 +75,7 @@ Microsoft 365 コンプライアンスセンターの [ **廃棄** ] タブに�
 
 ![レコード管理の保留中の廃棄の概要](../media/dispositions-overview.png)
 
-[ **保留中のすべて**の処理を表示] を選択すると、[ **ディスポジション** ] ページが開きます。 例:
+[ **保留中のすべて**の処理を表示] を選択すると、[ **ディスポジション** ] ページが開きます。 以下に例を示します。
 
 ![Microsoft 365 コンプライアンスセンターの [配置] ページ](../media/disposition-tab.png)
 
@@ -122,9 +122,9 @@ Microsoft 365 コンプライアンスセンターの [ **廃棄** ] タブに�
 > [!NOTE]
 > SharePoint と OneDrive のレコードの廃棄証明のロールアウトは完了しました。
 >
-> Exchange でのレコードの廃棄の証明が開始されたばかりです。このロールアウトが完了すると、このメモが更新されます。
+> このメモを削除する際には、Exchange でのレコードの廃棄証明のロールアウトはほぼ完了です。
 
-[**レコード管理**] ページの [**廃棄**] タブを使用して、削除されたレコード (自動または廃棄レビュー後) を特定します。 これらのアイテムは、[**種類**] 列に破棄された**レコード**を表示します。 例:
+[**レコード管理**] ページの [**廃棄**] タブを使用して、削除されたレコード (自動または廃棄レビュー後) を特定します。 これらのアイテムは、[**種類**] 列に破棄された**レコード**を表示します。 以下に例を示します。
 
 ![廃棄レビューなしで破棄されたアイテム](../media/records-disposed2.png)
 

@@ -1,19 +1,20 @@
 ---
-title: サービスの変更と通信
+title: サービスの変更とコミュニケーション
 description: ''
-keywords: Microsoft マネージドデスクトップ、Microsoft 365、サービス、ドキュメント
+keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 00d1cb409364c017585c6afcd10a236ecbcdc3a0
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 753ad703a7949b7901ddd76d0d8c966b170461ea
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697901"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950320"
 ---
-# <a name="service-changes-and-communication"></a>サービスの変更と通信
+# <a name="service-changes-and-communication"></a>サービスの変更とコミュニケーション
 
 Microsoft では、Microsoft Managed Desktop の動作方法に関する詳細を変更する必要がある場合があります。 同様に、サービスに影響する変更を行う必要がある場合もあります。 このような変更は、重要な方法に応じて異なる方法で処理されます。 このトピックでは、主な変更点を定義し、その他の変更に対処する方法について説明します。
 
@@ -23,7 +24,7 @@ Microsoft では、Microsoft Managed Desktop の動作方法に関する詳細�
 
 アクションを必要とするすべての主要な変更について、少なくとも30日前に通知が提供されます。 Microsoft Managed Desktop Admin portal メッセージングシステムを使用してお知らせします。
 
-**主な変更点**は、これらの領域に影響を与える可能性があります。
+**主な変更点** は、これらの領域に影響を与える可能性があります。
 - 毎日の生産性に影響を与える変更
 - カスタマイズされた機能とアプリケーションに対する変更
 - 表示可能な容量の拡大または縮小
@@ -43,7 +44,7 @@ Microsoft では、Microsoft Managed Desktop の動作方法に関する詳細�
 - デバイスに適用されるセキュリティベースラインの更新
 - [Supported devices](device-list.md)
 
-これらの変更は、確立されたチャネルを使用して通知します。 変更についての質問がある場合は、Microsoft Managed Desktop [Operations team](../working-with-managed-desktop/admin-support.md)にお問い合わせください。 サービスへの変更は、必要に応じて[変更履歴](../change-history-managed-desktop.md)にも記載されています。
+これらの変更は、確立されたチャネルを使用して通知します。 変更についての質問がある場合は、Microsoft Managed Desktop [Operations team](../working-with-managed-desktop/admin-support.md)にお問い合わせください。 サービスへの変更は、必要に応じて [変更履歴](../change-history-managed-desktop.md)にも記載されています。
 
 Microsoft マネージドデスクトップの変更と通信は、次の2つの Microsoft ポリシーによって制御されます。
 - [モダンライフサイクルポリシー](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
@@ -51,7 +52,7 @@ Microsoft マネージドデスクトップの変更と通信は、次の2つの
 
 ## <a name="changes-you-make"></a>加えた変更
 
-環境によっては、Microsoft マネージドデスクトップに影響を与える変更があります。 これらの主要な変更については、Microsoft Managed Desktop 管理ポータルでサービスリクエストを提出することによって、少なくとも30日の通知が送信されることを確認してください。 手順については、「 [Microsoft マネージドデスクトップの管理者サポート」を](../working-with-managed-desktop/admin-support.md)参照してください。 これにより、変更を計画および準備するのに十分な時間が確保され、中断を防ぐことができます。
+環境によっては、Microsoft マネージドデスクトップに影響を与える変更があります。 これらの主要な変更については、Microsoft Managed Desktop 管理ポータルでサービスリクエストを提出することによって、少なくとも30日の通知が送信されることを確認してください。 手順については、「 [Microsoft マネージドデスクトップの管理者サポート」を](../working-with-managed-desktop/admin-support.md) 参照してください。 これにより、変更を計画および準備するのに十分な時間が確保され、中断を防ぐことができます。
 
 主な変更点は、これらの領域に影響を与える可能性があります。
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターの送信ポータルを使用して、疑わしいメール、疑わしいフィッシングメール、スパム、その他の潜在的な有害なメッセージ、Url、およびその他の潜在的な問題を報告する方法について説明します。
-ms.openlocfilehash: 08d1633142bba7348cbc899f9cf9b2a1288c3743
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394737"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947974"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -78,7 +78,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>疑わしい URL を Microsoft に送信する
 
-1. [ **オブジェクトの種類** ] セクションで、[ **URL**] を選択します。 表示されるボックスに、完全な URL (たとえば、) を入力し <https://www.fabrikam.com/marketing.html> ます。
+1. [ **オブジェクトの種類** ] セクションで、[ **URL**] を選択します。 表示されるボックスに、完全な URL (たとえば、) を入力し `https://www.fabrikam.com/marketing.html` ます。
 
 2. [ **送信理由** ] セクションで、次のいずれかのオプションを選択します。
 

@@ -24,24 +24,24 @@ f1.keywords:
 - NOCSH
 description: Office 2010 サーバーおよびクライアントアプリケーションのアップグレードの計画を開始します。サポートは間もなく終了し、カスタムサポート契約は利用できません。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0805434c9b3d43c4e3d6aa5fd77cdf60bc2339d0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: da45f18c0cf39c06ea19dd348cbd77286152a885
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696278"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949528"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Office 2010 および Exchange 2010 は、**2020年10月13日** にサポートが終了します。 
+Office 2010 および Exchange 2010 は、**2020年10月13日** にサポートが終了します。
 
 SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサポートが終了します。
 
-アップグレードを計画している場合、今が Microsoft 365 に移行するすばらしいタイミングです。 
+アップグレードを計画している場合、今が Microsoft 365 に移行するすばらしいタイミングです。
 
-- Microsoft 365 には、Exchange Server や SharePoint Server のような Office 2010 サーバー製品向けのクラウドベースのサービスのほかに、Teams、OneDrive for Business などのサービスがあります。 
+- Microsoft 365 には、Exchange Server や SharePoint Server のような Office 2010 サーバー製品向けのクラウドベースのサービスのほかに、Teams、OneDrive for Business などのサービスがあります。
 
 - Microsoft 365 Apps for enterprise (旧称Office 365 ProPlus) は、Microsoft 365 E3 および E5に含まれており、ローカル デバイスにインストールされる一連の Office クライアント アプリです。 仕事効率化およびセキュリティ機能が Microsoft クラウドから継続的に更新されるようになりました。
 
@@ -51,18 +51,18 @@ Office 2010 サーバー/クライアント、および Windows 7のアップグ
 
 この 1 ページのポスターで、Office 2010 サーバー/クライアント製品と Windows 7 がサポート終了に達してしまうことを防ぐさまざまな手段をすばやく理解できます。ここには、特に推奨される手段と、Microsoft365 Enterprise のオプション サポートが含まれます。
 
-このポスターを [ダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf) して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
-      
+このポスターを [ダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
+
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 サーバー/クライアントのアップグレード計画
-  
-|**本製品の対象**|**本サポートの終了日**|**このリソースを確認**|
-|:-----|:-----|:-----|
-|Office 2010 (Word 2010、Excel 2010、PowerPoint 2010、および Outlook 2010 を含む)  <br/> | 2020年10月13日 |[Office 2010 のサポート終了のロードマップ](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) <br/> |
-|Exchange Server 2010  <br/> | 2020年10月13日  |[Exchange 2010 のサポート終了のロードマップ](exchange-2010-end-of-support.md) <br/> |
-|SharePoint 2010 または SharePoint Server 2010  <br/> | 2021年4月13日 |[SharePoint 2010 からのアップグレード](upgrade-from-sharepoint-2010.md) <br/> |
-|Project Server 2010 <br/> | 2021年4月13日 | [Project Server 2010 のサポート終了のロードマップ](project-server-2010-end-of-support.md) <br/> |
-|Lync Server 2010 <br/> | 2021年4月13日 | [Skype for Business Server へのアップグレードを計画する](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade) <br/> |
-    
+
+|本製品の対象|本サポートの終了日|このリソースを確認|
+|---|---|---|
+|Office 2010 (Word 2010、Excel 2010、PowerPoint 2010、および Outlook 2010 を含む)|2020年10月13日 |[Office 2010 のサポート終了のロードマップ](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)|
+|Exchange Server 2010|2020年10月13日|[Exchange 2010 のサポート終了のロードマップ](exchange-2010-end-of-support.md)|
+|SharePoint 2010 または SharePoint Server 2010|2021年4月13日|[SharePoint 2010 からのアップグレード](upgrade-from-sharepoint-2010.md)|
+|Project Server 2010|2021年4月13日|[Project Server 2010 のサポート終了のロードマップ](project-server-2010-end-of-support.md)|
+|Lync Server 2010|2021年4月13日|[Skype for Business Server へのアップグレードを計画する](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+
 ## <a name="im-a-home-user-what-do-i-do"></a>私はホーム ユーザーです。 どうしたらよいでしょうか。
 
 家庭で Office 2010 製品とアプリケーションを使用している場合は、[この情報](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do) を参照してください。
@@ -70,8 +70,7 @@ Office 2010 サーバー/クライアント、および Windows 7のアップグ
 ## <a name="related-topics"></a>関連項目
 
 [ビデオ: Microsoft 365とは?](https://support.office.com/article/847caf12-2589-452c-8aca-1c009797678b.aspx)
-  
+
 [Microsoft のライフサイクル ポリシー](https://go.microsoft.com/fwlink/?linkid=865200)
 
 [Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる](plan-upgrade-previous-versions-office.md)
-

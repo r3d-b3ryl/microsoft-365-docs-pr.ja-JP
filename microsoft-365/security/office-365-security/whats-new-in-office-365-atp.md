@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/27/2020
+ms.date: 09/10/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 1aa5d2b59bf1f07c0a74ee7381cbefdb2b5c7506
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308381"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949422"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -40,29 +40,29 @@ ms.locfileid: "47308381"
 
 - [構成アナライザーを使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
 - [テナントの許可/ブロックリストを使用してフィルター verdicts を手動で上書きする](tenant-allow-block-list.md)
-- [上位の対象ユーザー、トランスポートルール、コネクタなど、脅威エクスプローラーの拡張機能](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
+- [上位の対象ユーザー、トランスポートルール、コネクタを含む脅威エクスプローラーの拡張機能](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP Plan 2)
 - [脅威エクスプローラー](threat-explorer.md)での提示情報 (電子メールは、テナント/ユーザーポリシーによって許可/ブロックされました)
-- [脅威エクスプローラー](threat-explorer.md)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none)
+- [脅威エクスプローラー](threat-explorer.md)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none) 
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 
-- [探している環境の改善を体感する](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [事前設定されたセキュリティポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md)
+- お[探しの環境が改善されました](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)(OFFICE 365 ATP プラン1または Plan 2)
+- [事前設定されたセキュリティポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
-- [自動調査と応答を使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。
+- [自動調査と応答を使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。 (Office 365 ATP Plan 2)
 
 ## <a name="januaryfebruary-2020"></a>2020年1月/年2月
 
-- [Office 365 ATP のキャンペーンビューの一般的な利用可能性](campaigns.md)
-- セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索してフィルター処理できるようにするための[脅威エクスプローラー](threat-explorer.md)の機能拡張。
+- [Office 365 atp のキャンペーンビューの一般的な可用性](campaigns.md) (OFFICE 365 atp Plan 2)
+- セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索してフィルター処理できるようにする[脅威エクスプローラー](threat-explorer.md)の機能強化: (Office 365 ATP Plan 2)
     - 配信場所と特別なアクション
     - 方向性 (受信、送信、または組織内)
     - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
     - 詳細な時間フィルター (日、時間、半時間) 
 
-- **インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威の管理**  >  ] に移動します。**レビュー**)
+- **インシデント**ウィジェットは、**アクションセンター**ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威の管理**  >  ] に移動します。**レビュー**)(Office 365 ATP Plan 2)
 
 - [Microsoft 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(プレビュー)**
 
@@ -70,7 +70,7 @@ ms.locfileid: "47308381"
 
 - [エクスポート URL [オフライン分析のデータをクリックして](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) ください (OFFICE 365 ATP Plan 1 または Plan 2)
 
-- [Office 365 の ATP (**プレビュー**) でキャンペーンビューを使用する](campaigns.md)
+- [Office 365 の atp (**プレビュー**) でのキャンペーンビューの使用](campaigns.md) (office 365 atp Plan 2)
 
 ## <a name="november-2019"></a>2019 年 11 月
 

@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547940"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950486"
 ---
 # <a name="privacy-and-personal-data"></a>プライバシーおよび個人データ
 
@@ -128,7 +128,7 @@ Microsoft マネージドデスクトップでは、プロファイル、広告�
 
 ### <a name="it-admin-contact-information"></a>IT 管理者の連絡先情報
 
-テナント管理者は、Microsoft マネージドデスクトップポータルの [管理者の連絡先] セクションで、自分の個人データを直接表示、修正、および削除できます。
+テナント管理者は、Microsoft マネージドデスクトップポータルの [管理者の連絡先] セクションで、自分の個人データ (自分の連絡先情報など) を直接表示、修正、および削除できます。
 
 ### <a name="user-related-personal-data"></a>ユーザーに関連する個人データ
 
