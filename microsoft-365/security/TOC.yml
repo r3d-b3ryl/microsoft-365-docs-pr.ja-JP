@@ -110,22 +110,30 @@
               items:
                 - name: 高度な検出の概要
                   href: mtp/advanced-hunting-overview.md
-                - name: クエリ言語の説明
-                  href: mtp/advanced-hunting-query-language.md
-                - name: エキスパート トレーニングを受ける
-                  href: mtp/advanced-hunting-expert-training.md
-                - name: クエリのベスト プラクティスを適用する
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: サンプルを学習、トレーニングして取得する
+                  items:
+                    - name: クエリ言語の説明
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: エキスパート トレーニングを受ける
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: 共有クエリを使用する
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: デバイス、メール、アプリ、ID 間での捜索
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: クエリ結果を操作する
                   href: mtp/advanced-hunting-query-results.md
                 - name: クエリ結果に対し、アクションを行う
                   href: mtp/advanced-hunting-take-action.md
-                - name: 共有クエリを使用する
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: デバイス、メール、アプリ、ID 間での捜索
-                  href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 検出する
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: エラーを最適化し処理する
+                  items:
+                    - name: クエリのベスト プラクティスを適用する
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: エラーを処理する
+                      href: mtp/advanced-hunting-errors.md
+                    - name: サービスの制限
+                      href: mtp/advanced-hunting-limits.md
                 - name: データの範囲の拡張
                   href: mtp/advanced-hunting-extend-data.md
                 - name: データ スキーマ
