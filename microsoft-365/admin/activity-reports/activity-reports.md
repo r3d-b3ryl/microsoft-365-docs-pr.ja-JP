@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948210"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104453"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -58,9 +58,8 @@ ms.locfileid: "47948210"
 
 ::: moniker-end
 
-   
-2. ダッシュボード上部の [ **レポートの選択**] を選び、利用可能なすべてのレポートの一覧から選択します。 または、詳細を参照するには、サービス (メール、OneDrive など) のアクティビティ ウィジェット一覧を選択します。 <br/>![利用状況ダッシュボード](../../media/usage-report-dashboard.png)
-  
+2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [**その他を表示**] ボタンをクリックします。 サービスに関するさまざまなレポートがタブに表示されます。 <br/>![利用状況ダッシュボード](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>レポートを閲覧できるユーザー
 
 次の権限を持っているユーザー:
@@ -147,7 +146,7 @@ ms.locfileid: "47948210"
 
 ::: moniker range="o365-worldwide"
 
-- [国防総省と Government Community Cloud 向けの Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity.md)
+- [Microsoft Teams ユーザー アクティビティ (米国政府機関向け)](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ ms.locfileid: "47948210"
 
 ::: moniker range="o365-worldwide"
 
-- [国防総省と Government Community Cloud 向けの Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage.md)
+- [Microsoft Teams デバイスの利用状況 (米国政府機関向け)](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 

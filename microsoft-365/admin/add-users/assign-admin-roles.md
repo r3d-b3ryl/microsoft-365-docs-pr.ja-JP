@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理者の役割をユーザーまたは複数のユーザーに割り当てて、管理センターで特定のタスクを実行できるようにする方法について説明します。
-ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131760"
 ---
 # <a name="assign-admin-roles"></a>管理者ロールを割り当てる
 
@@ -42,11 +42,11 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 新しいユーザーを追加した場合、管理者の役割を割り当てていないと、それらは *ユーザーの役割* にあり、Microsoft 管理センターのいずれかに対する管理者特権を持ちません。 しかし、操作の実行についてサポートが必要な場合は、管理者の役割をユーザーに割り当てることができます。 たとえば、パスワードのリセットを支援するユーザーが必要な場合は、グローバル管理者の役割を割り当てないでください。パスワード管理者の役割を割り当てる必要があります。 データやオンライン ビジネスに無制限にアクセスできるグローバル管理者が多すぎると、セキュリティ リスクが生じます。
 
-管理者の追加に関する短いビデオをご覧ください。<br><br>
+## <a name="watch-add-an-adminbrbr"></a>監視: 管理者を追加します。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-このビデオがお役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
+このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
 ## <a name="assign-admin-roles"></a>管理者ロールを割り当てる 
 
@@ -78,7 +78,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [ **アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[ **役割**] の横にある [ **編集**] を選択します。 
 
@@ -90,7 +90,7 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 2. [ **アクティブなユーザー** ] ページで、変更する管理者の役割を持つユーザーを選択します。 フライアウトウィンドウで、[ **役割**] の横にある [ **編集**] を選択します。
 
@@ -100,7 +100,6 @@ Microsoft business サブスクリプションを購入したユーザーであ�
 
 ::: moniker-end
 
-
 ## <a name="assign-admin-roles-to-multiple-users"></a>複数のユーザーに管理者ロールを割り当てる
 
 PowerShell がわかっている場合は、「PowerShell を使用して [ユーザーアカウントに役割を割り当てる](https://go.microsoft.com/fwlink/?linkid=854257)」を参照してください。 これは多数のユーザーにロールを割り当てるための最適な方法です。
@@ -108,7 +107,6 @@ PowerShell がわかっている場合は、「PowerShell を使用して [ユ�
 次の手順を使用して、多数のユーザーにロールを割り当てます。
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="check-your-permissions"></a>アクセス許可を確認する
 

@@ -1,9 +1,29 @@
 ---
-タイトル: 試用ラボまたはパイロット環境の Microsoft 脅威保護の柱を構成する説明: Office 365 ATP、Azure ATP、Microsoft Cloud App Security、Microsoft Defender ATP を試用ラボまたはパイロット環境で構成します。
-キーワード: Microsoft Threat Protection の試用版、Microsoft Threat protection の試用版の構成、microsoft threat Protection の試験プロジェクトの構成、microsoft threat protection の設定を構成する、microsoft threat protection の eADQiWindows を構成します。「10XVcnh」の「met150」と入力します。: type: security ms (): dolmont  
-作成者: DulceMontemayor dansimp priority: 中規模のマネージャー: ITPro の対象ユーザー: ms. コレクション: M365-コンプライアンス (法令遵守) ms. トピック: 記事 
+title: 試用ラボまたはパイロット環境用の Microsoft 脅威保護の柱を構成する
+description: 試用ラボやパイロット環境では、Office 365 ATP、Azure ATP、Microsoft Cloud App Security、Microsoft Defender ATP などの Microsoft 脅威保護柱を構成します。
+keywords: Microsoft の脅威保護の評価を構成する、Microsoft の脅威保護の評価の構成、Microsoft の脅威保護パイロットプロジェクトの構成、Microsoft の脅威保護の柱の構成、Microsoft Threat Protection の柱
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: dolmont
+author: DulceMontemayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956273"
 ---
-
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>試用ラボまたはパイロット環境用の Microsoft 脅威保護の柱を構成する
 
 **適用対象:**
@@ -43,7 +63,7 @@ Microsoft の脅威保護の試用ラボまたはパイロット環境を作成�
 
 ## <a name="microsoft-threat-protection-pillars"></a>Microsoft Threat Protection の柱
 Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱がネットワーク組織のセキュリティに価値を提供していますが、4つの Microsoft 脅威保護の柱を有効にすることで、組織は最大の価値を得ることができます。
-
+<br>
 ![画像 of_Microsoft ユーザーのための脅威保護ソリューション、Azure Advanced Threat Protection、エンドポイントの Microsoft Defender Advanced Threat Protection、クラウドアプリ、Microsoft Cloud App Security、およびデータについては、Office 365 Advanced Threat Protection  ](../../media/mtp-eval-31.png) <br>
 
 このセクションでは、以下を構成する方法について説明します。
@@ -121,7 +141,7 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 <br>![[イメージ of_Azure の詳細な脅威保護] ページで、[次へ] をクリックして Azure ATP センサーウィザードを実行します。](../../media/mtp-eval-47.png) <br>
  
 7. センサー展開の種類で [ **次へ** ] をクリックします。
-<br>![[イメージ of_Azure の詳細な脅威保護] ページで、[次へ] をクリックして Azure ATP センサーウィザードを実行します。](../../media/mtp-eval-48.png) <br>
+<br>![Image of_Azure Advanced Threat Protection ページで、[次へ] をクリックして次のページに移動します。](../../media/mtp-eval-48.png) <br>
  
 8. ウィザードで次に入力する必要があるため、アクセスキーをコピーします。
 ![次の Azure ATP センサーセットアップウィザードページで入力する必要があるアクセスキーをコピーする必要のあるイメージ of_the センサーページ](../../media/mtp-eval-49.png) <br>
@@ -233,5 +253,6 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 
 次に、攻撃をシミュレートし、製品間の機能を検出して通知を作成し、エンドポイントへの fileless 攻撃に自動的に応答する方法を確認できます。
 
-## <a name="next-steps"></a>次の手順
-[テスト警告を生成](generate-test-alert.md)します。
+## <a name="next-step"></a>次の手順
+|![アタックシミュレーションフェーズ](../../media/mtp/run-sim.png) <br>[アタックシミュレーションフェーズ](mtp-pilot-simulate.md) | Microsoft の脅威保護パイロット環境のアタックシミュレーションを実行します。
+|:-------|:-----|

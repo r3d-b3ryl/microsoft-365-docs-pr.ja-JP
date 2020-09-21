@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 10bca6776173c07a28b097f44c641c3e65a0cf6c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+description: 一元的なアドインを使用して組織内のユーザーやグループにアドインを展開する方法について説明します。
+ms.openlocfilehash: c7f8b7bf71dbdaaf1c850c801a5145d3ab47a65c
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948702"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171294"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
 

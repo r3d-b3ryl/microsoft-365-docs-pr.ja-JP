@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights (プレビュー)
-ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 682c888fefb9bec9725e470d62019c857fc2de07
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962373"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171340"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (プレビュー)
 
@@ -157,7 +157,7 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 
 ### <a name="what-should-i-do"></a>どうすればよいですか?
 
-まだ実行していない場合は、office の場所のネットワーク接続の表示を有効にします。 Exchange に影響を与えるネットワーク接続の問題が impactred ているオフィスを特定し、ユーザーを Microsoft のネットワークに接続するそれぞれのネットワーク境界を改善する方法を見つける必要があります。
+まだ実行していない場合は、office の場所のネットワーク接続の表示を有効にします。 Exchange に影響を与える不十分なネットワーク接続によって影響を受けるオフィスを特定し、ユーザーを Microsoft のネットワークに接続するそれぞれのネットワーク境界を改善する方法を見つける必要があります。
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>接続の問題によって影響を受ける SharePoint のサンプリングされる接続
 
@@ -169,14 +169,14 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 
 ### <a name="what-should-i-do"></a>どうすればよいですか?
 
-まだ実行していない場合は、office の場所のネットワーク接続の表示を有効にします。 SharePoint に影響を与えるネットワーク接続の不足によって impactred されているオフィスを特定し、ユーザーを Microsoft のネットワークに接続するそれぞれのネットワーク境界を改善する方法を見つける必要があります。
+まだ実行していない場合は、office の場所のネットワーク接続の表示を有効にします。 SharePoint に影響を与える不十分なネットワーク接続によって影響を受けるオフィスを特定し、ユーザーを Microsoft のネットワークに接続するそれぞれのネットワーク境界を改善する方法を見つける必要があります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理センターでのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 
-[M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 ネットワーク接続テストツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)](office-365-network-mac-location-services.md)

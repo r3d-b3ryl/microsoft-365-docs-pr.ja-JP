@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Microsoft 365 コンプライアンスを使用して Microsoft Information Protection (MIP) 機能を実装することで、機密情報がどこに存在している場合でも機密情報を検出、分類、保護することができます。
-ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131967"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft の microsoft Information Protection (365)
 
@@ -41,7 +41,7 @@ MIP 機能は、Microsoft 365 コンプライアンスに含まれており、 [
 |機能|どのような問題が解決されますか。|作業の開始|
 |:------|:------------|:--------------------|:-----------------------------|
 |[機密情報の種類](sensitive-information-type-entity-definitions.md)| 組み込みまたはカスタムの正規表現または関数を使用して機密データを識別し、補強エビデンスと共にキーワード、信頼度、および近接性を含むものを指定します。| [組み込みの機密情報の種類をカスタマイズする](customize-a-built-in-sensitive-information-type.md)|
-|[Trainable 分類子 (プレビュー)](classifier-getting-started-with.md)| 組み込み分類子の1つを使用して、または独自のコンテンツで分類子をトレーニングすることで、データを分類します。 | [Trainable 分類子を作成する (プレビュー)](classifier-creating-a-trainable-classifier.md) |
+|[Trainable 分類子 (プレビュー)](classifier-learn-about.md)| 組み込み分類子の1つを使用して、または独自のコンテンツで分類子をトレーニングすることで、データを分類します。 | [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-get-started-with.md) |
 |[データ分類](data-classification-overview.md) | 機密ラベル、保持ラベル、または組織内の機密情報の種類として分類されているアイテムと、ユーザーがそのアイテムに対して行った操作を識別します。  | [コンテンツ エクスプローラーの使用を開始する](data-classification-content-explorer.md)<br /><br /> [アクティビティ エクスプローラーの使用を開始する](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>データを保護する

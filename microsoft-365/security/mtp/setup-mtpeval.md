@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c3323192e0095ad6693241390cff81d42be9cce1
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817183"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956245"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Microsoft の脅威保護のテスト環境をセットアップする 
 
@@ -121,7 +121,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 ## <a name="enable-microsoft-365-trial-subscription"></a>Microsoft 365 試用版サブスクリプションを有効にする
 
 >[!NOTE]
->試用版にサインアップすると、1か月に使用する25ユーザーライセンスが提供されます。 詳細について [は、「Try Or Buy a M365 subscription](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1) 」を参照してください。
+>試用版にサインアップすると、1か月に使用する25ユーザーライセンスが提供されます。 詳細について [は、「Try Or Buy a M365 subscription](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) 」を参照してください。
 
 1. [Microsoft 365 管理センター](https://admin.microsoft.com/)で、[**課金**] をクリックしてから [**購入サービス**] に移動します。
 
@@ -149,4 +149,5 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 
 
 ## <a name="next-step"></a>次の手順
-![フェーズ 3: 構成 & オンボード](../../media/config-onboard.png) <br>[フェーズ 3: 構成 & オンボード](config-mtpeval.md) <br>Microsoft の脅威保護の試用ラボまたはパイロット環境とエンドポイントをオンボードにするために、Microsoft の各脅威保護の柱を構成します。
+|![フェーズ 3: 構成 & オンボード](../../media/config-onboard.png) <br>[フェーズ 3: 構成 & オンボード](config-mtpeval.md) | Microsoft の脅威保護の試用ラボまたはパイロット環境とエンドポイントをオンボードにするために、Microsoft の各脅威保護の柱を構成します。
+|:-------|:-----|

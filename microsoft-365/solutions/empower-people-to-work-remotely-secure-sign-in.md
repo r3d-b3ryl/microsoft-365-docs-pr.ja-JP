@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: リモート ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: a8c0b8ac689407fa871d2373f1ca0a3658bb1668
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 0b655800d27e6836a3848bfb2a94fc9c30439ec7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132204"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>手順 1. MFA を使用してリモート ワーカーのサインイン セキュリティを強化する
 
@@ -86,7 +86,7 @@ Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azu
 
 この表は、セキュリティの既定値と条件付きアクセス ポリシーで MFA を有効にした結果を示しています。
 
-|| Enabled | 無効 | 追加の認証方法 |
+| メソッド | Enabled | 無効 | 追加の認証方法 |
 |:-------|:-----|:-------|:-------|
 | **セキュリティの既定値**  | 条件付きアクセス ポリシーを使用できない | 条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
 | **条件付きアクセス ポリシー** | いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます  | MFA 登録中にユーザーが指定  |
@@ -104,7 +104,7 @@ Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azu
 
 - [MFA for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [Azure AD がリモート作業を可能にするのに役立つ 5 つの方法](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
-- [Microsoft 365 の ID インフラストラクチャを計画および展開する](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure?view=o365-worldwide#plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure)
+- [Microsoft 365 の ID ロードマップ](../enterprise/identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD トレーニング ビデオ](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Azure 多要素認証の登録ポリシーの構成](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Azure AD のセルフサービスによるパスワードのリセットの展開を計画する](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)

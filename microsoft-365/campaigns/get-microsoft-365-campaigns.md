@@ -2,8 +2,8 @@
 title: キャンペーンに Microsoft 365 を入手する
 f1.keywords:
 - NOCSH
-ms.author: supotter
-author: supotter
+ms.author: sirkkuw
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンを cybersecurity の脅威から電子メール、データ、コミュニケーションに保護できるように、Microsoft 365 をキャンペーンに対して取得します。
-ms.openlocfilehash: 13e0f66b388e9041e1654a7a45226d3204499618
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131978"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>キャンペーンに Microsoft 365 を入手する
 
@@ -60,6 +60,6 @@ Microsoft 365 Business Premium のこの構成には、スタッフが安全に�
 2. フォームを完成した後、情報を確認するには数日かかります。 
 3. 国内レベルの政治的なキャンペーンまたは関係者を表していることを確認した後、Microsoft からの電子メールによる招待を受け取ります。 招待には、組織に固有のサインアップリンクが含まれています。 
 
-招待状を受け取ったら、[キャンペーンに Microsoft 365 にサインアップ](m365-campaigns-sign-up.md)します。
+招待状を受け取ったら、 [キャンペーンに Microsoft 365 にサインアップ](m365-campaigns-sign-up.md)します。
 
 

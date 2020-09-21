@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: ユーザーがデスクトップ、モバイル、および web 用の Office アプリで機密ラベルを操作する方法と、機密ラベルをサポートするアプリについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 513a544239890f2299a7208d2ba2c20c4507a7ef
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7ad340d84297c716edcfbb39ea7f3aa75c093523
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357779"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962634"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -63,7 +63,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [現在のチャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 以降) | 16.35 +   | レビュー   | レビュー         | レビュー                                                        |
 |[ラベル分析を使用](label-analytics.md) してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
-|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | [現在のチャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview)へのロールアウト (2006 以降)                                  | レビュー | レビュー | レビュー | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | [現在のチャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview)へのロールアウト (2006 以降)                                  | Word および PowerPoint のプレビュー: 現在のチャネルへのロールアウト [(プレビュー)](https://office.com/insider) | レビュー | レビュー | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル付きおよび保護されたドキュメントでの [自動保存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) と [共同編集](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) をサポートする | レビュー | レビュー | レビュー | レビュー | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -80,7 +80,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | はい               |
 |[ラベル分析を使用](label-analytics.md) してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
 |[ユーザーが電子メールとドキュメントにラベルを適用することを必須にする](sensitivity-labels.md#what-label-policies-can-do)   | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
-|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | プレビュー: [ベータチャネル](https://office.com/insider) と現在のチャネルへのロールアウト [(プレビュー)](https://office.com/insider)                      | レビュー                    | レビュー           | レビュー               | はい |
+|[機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)                    | [現在のチャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview)へのロールアウト (2006 以降)                      | レビュー                    | レビュー           | レビュー               | はい |
 |
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 組み込みのラベルクライアントとその他のラベルソリューション

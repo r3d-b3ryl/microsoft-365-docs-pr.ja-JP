@@ -26,16 +26,16 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: サポートを呼び出す前に Microsoft 365 サービスの正常性の状態を表示して、アクティブなサービスが中断していないかどうかを確認します。
-ms.openlocfilehash: 49f7d3afd3c19cd4e9b6486db580082fe933b997
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
+ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692147"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48134077"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Microsoft 365 サービス正常性を確認する方法
 
-[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
+[![管理センターについて知らせるラベルが変更されていますので、詳細については、aka.ms/aboutM365preview を参照してください。](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
 
 Microsoft サービスの正常性 (web 上の Office、Yammer、Microsoft Dynamics CRM、およびモバイルデバイス管理クラウドサービス) は、 [microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)の [**サービス正常性**] ページで確認できます。 クラウド サービスの問題が発生している場合は、サポートに連絡するかトラブルシューティングに時間を費やす前に、サービス正常性を確認することで、解決に向けて取り組み中の既知の問題であるかどうかを判別できます。
 
@@ -46,7 +46,7 @@ Microsoft サービスの正常性 (web 上の Office、Yammer、Microsoft Dynam
 1. Microsoft 365 管理センターに移動し、 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) 管理者アカウントでサインインします。
 
     > [!NOTE]
-    > 全体管理者またはサービス管理者の役割を割り当てられているユーザーは、サービス正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)」を参照してください。
+    > 全体管理者またはサービス管理者の役割を割り当てられているユーザーは、サービス正常性を表示できます。 Exchange、SharePoint、および Skype for Business の管理者がサービス正常性を表示できるようにする場合も、ユーザーにはサービス管理者の役割が割り当てられている必要があります。 サービス正常性を表示できる役割の詳細については、「[管理者の役割について](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center)」を参照してください。
   
 2. 新しい管理センターを使用していない場合は、 **ホーム** ページで、右上隅にある [ **新しい管理センターの** 切り替えを試みる] を選択します。
 
@@ -64,7 +64,9 @@ Microsoft サービスの正常性 (web 上の Office、Yammer、Microsoft Dynam
 
 Microsoft 365 サービスで問題が発生し、[ **サービス正常性** ] ページに表示されていない場合は、[ **問題を報告**する] を選択して、省略形を完了します。 他の組織からの関連データとレポートを調べて、問題がどの程度広がっているか、およびそれがサービスに起因しているかどうかを確認します。 該当する場合、[**サービス正常性**] ページに新しいインシデントまたは勧告として追加し、その解決を追跡できます。 約 30 分以内に一覧に表示されない場合は、問題を解決するためにサポートに連絡することを検討してください。
 
-アクティブなインシデントのテナントと状態の変更に影響を与える新しいインシデントの電子メール通知にサインアップするには、[ **ユーザー設定**] を選択し、[ **メールでサービス**の正常性通知を送信する] をクリックして、次の情報を指定します。
+ダッシュボードに表示されるサービスの表示をカスタマイズするには、[ユーザー**設定の**  >  **カスタムビュー**] を選択し、サービス正常性ダッシュボードのビューから除外するサービスのチェックボックスをオフにします。 監視するサービスごとに、チェックボックスがオンになっていることを確認します。    
+
+アクティブなインシデントのテナントと状態の変更に影響を与える新しいインシデントの電子メール通知にサインアップするには、[**ユーザー設定**の電子メール] を選択し、  >  **Email**[**メールでサービス**の正常性通知を送信する] をクリックして、次の情報を指定します。
 
 - 最大2つの電子メールアドレス。
 - インシデントまたはアドバイザリの通知が必要かどうか
@@ -80,7 +82,7 @@ Microsoft 365 サービスで問題が発生し、[ **サービス正常性** ] 
 
 [**すべてのサービス**] ビューで、[サービスの状態] を選択すると、勧告またはインシデントの概要ビューが開きます。
   
-![サービスの勧告を表示するスクリーンショット](../media/service-health-advisory.png)
+[![サービス勧告 ](../media/service-health-advisory.png) を示すスクリーンショット](../media/service-health-advisory.png#lightbox)
 
 勧告またはインシデントの概要では、以下の情報が提供されます。
 
@@ -150,4 +152,4 @@ Microsoft 365 サービスで問題が発生し、[ **サービス正常性** ] 
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理センター](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- のアクティビティレポート[メッセージセンターの設定](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)
+ のアクティビティレポート[メッセージセンターの設定](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)

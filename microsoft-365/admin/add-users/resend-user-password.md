@@ -19,21 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: パスワードをリセットして、新しい Microsoft 365 ユーザーに通知メールを送信する方法について説明します。
-ms.openlocfilehash: d39a448cdea9e986c46fbebc1d4cfcdf63882daf
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: パスワードをリセットして、新しい Microsoft 365 ユーザーに電子メールを送信する方法について説明します。
+ms.openlocfilehash: 206e38929183fc280134a42e3febead2483d0f76
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131748"
 ---
 # <a name="resend-a-users-password---admin-help"></a>ユーザーのパスワードを再送信する - 管理者向けヘルプ
 
 この記事では、Office 365 で新しいユーザーに通知メールを再送信する方法について説明します。 これは、新しいユーザーを作成したときに、新しいパスワードを使用して電子メールを受信しない場合に発生する可能性があります。 これを行うには、ユーザーのパスワードをリセットします。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)。
 
 これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。
 

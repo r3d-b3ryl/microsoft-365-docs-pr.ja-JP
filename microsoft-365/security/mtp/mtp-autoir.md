@@ -1,7 +1,7 @@
 ---
-title: Microsoft の脅威保護の自動化された調査と応答機能
-description: Microsoft Threat Protection での自動調査および対応機能の概要を説明します
-keywords: 自動化、調査、警告、トリガー、アクション、修復
+title: Microsoft Threat Protection での自動調査および対応
+description: Microsoft の脅威保護における自動調査と応答機能の概要 (自己復旧とも呼ばれる) を取得する
+keywords: 自動化、調査、警告、トリガー、アクション、修復、自己復旧
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,25 +18,33 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 9fc4c99254f4f27b476930a555b237be093bff24
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.date: 09/16/2020
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: f2a0a439996f13cea3823815aceb9dd1c235e2f2
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962667"
 ---
-# <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Microsoft の脅威保護の自動化された調査と応答機能
+# <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Microsoft Threat Protection での自動調査および対応
 
 **適用対象:**
 - Microsoft Threat Protection
 
-セキュリティの警告がトリガーされたときに、そのような警告を確認し、組織を保護するための手順を実行することは、セキュリティ運用チームにかかっています。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 Microsoft の脅威保護の自動化された調査と応答機能 ( *自己復旧* 機能とも呼ばれる) は、Microsoft の脅威保護に役立ちます。 
+セキュリティの警告がトリガーされたときに、そのような警告を確認し、組織を保護するための手順を実行することは、セキュリティ運用チームにかかっています。 警告の優先順位付けと調査には、多くの時間がかかる場合があります。調査実行中に新しい警告が出されるような状況では、この傾向が特に強くなります。 セキュリティ運用チームは、監視および保護を必要とする脅威の膨大さに圧倒されてしまう可能性があります。 自動化された調査と応答の機能、自動修復機能、Microsoft の脅威保護が役立つことがあります。
 
-自動修復機能がどのように機能するかについては、次のビデオをご覧ください。
+セルフ修復のしくみについては、次のビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-自動化された調査と応答は、セキュリティ運用センターの仮想アナリストを持つことに似ています。
+Microsoft の脅威保護では、自動調査と自己復旧機能による応答は、デバイス、電子メール & コンテンツ、および id に対して機能します。 Microsoft の脅威保護は、次の機能を統合します。 
+- [Microsoft Defender Advanced Threat Protection の自動化された調査と修復](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Office 365 Advanced Threat Protection の自動調査と応答](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Azure advanced threat detection](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+ 
+この記事では、自動化された調査と応答のしくみについて説明します。 これらの機能を構成するには、「 [Microsoft Threat Protection で自動調査と応答機能を構成](mtp-configure-auto-investigation-response.md)する」を参照してください。
 
 ## <a name="your-virtual-analyst"></a>仮想アナリスト
 
@@ -62,25 +70,14 @@ ms.locfileid: "47950726"
 
 各調査では、調査対象の各証拠に対して、verdicts (*悪意*、 *疑わしい*、または *脅威なし) が*生成されます。 脅威の種類および結果の verdict に応じて、修復アクションは自動的に、または組織のセキュリティ運用チームによる承認時に発生します。 保留中および完了済みのアクションは、[アクション センター](mtp-action-center.md)に一覧表示されます。
 
-> [!TIP]
-> Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 「 [Microsoft の脅威保護」の「自動調査および応答機能」で誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
-
 調査の実行中にその他の関連する警告が発生した場合は、それらの警告は調査が完了するまで調査に追加され続けます。 有害なエンティティが別の場所に見つかった場合、そのエンティティを対象に含めるために自動調査の対象範囲が拡大され、全般的なセキュリティのプレイブックが実行されます。 
 
 > [!NOTE]
-> すべてのアラートが自動化された調査をトリガーするわけではなく、自動修復処理で調査結果がすべて行われるわけではありません。これは、組織で自動化された調査と応答の構成方法によって異なります。 
+> すべてのアラートが自動化された調査をトリガーするわけではなく、自動修復処理で調査結果がすべて行われるわけではありません。これは、組織で自動化された調査と応答の構成方法によって異なります。 「 [Configure 自動調査および応答機能を Microsoft の脅威保護に構成する](mtp-configure-auto-investigation-response.md)」を参照してください。
 
-## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>Microsoft の脅威保護における自動調査と応答の要件
 
-|要件 |詳細 |
-|--|--|
-|サブスクリプションの要件 |以下のいずれか: <br/>-Microsoft 365 E5 <br/>-Microsoft 365 A5 <br/>-Microsoft 365 E5 セキュリティ<br/>-Microsoft 365 A5 セキュリティ<br/>-Office 365 E5 プラス Enterprise Mobility + Security E5 + Windows E5<br/><br/>[Microsoft の脅威保護ライセンス要件](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements)を参照してください。|
-|ネットワーク要件 |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) がオン<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) が構成済み<br/>- [MCAS が Azure ATP と統合済み](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
-|Windows コンピューターの要件 |-Windows 10、バージョン1709以降がインストールされている (「 [windows 10 リリース情報](https://docs.microsoft.com/windows/release-information/)」を参照) 次の脅威保護サービスが構成されている。<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Windows Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|電子メールコンテンツと Office ファイルの保護 |[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) の構成 |
-|アクセス許可 |-自動調査と応答を構成するには、Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com) ) または Microsoft 365 管理センター () のいずれかで、グローバル管理者またはセキュリティ管理者の役割が割り当てられている必要があり [https://admin.microsoft.com](https://admin.microsoft.com) ます。<br/><br/>-自動調査および応答機能を使用するには、「 [アクションセンタータスクに必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)」を参照してください。 |
+## <a name="next-steps"></a>次の手順
 
-## <a name="next-steps"></a>次のステップ
-
-- [自動調査と対応に関連するアクションを承認または拒否する](mtp-autoir-actions.md)
+- [Microsoft の脅威保護における自動調査と応答の前提条件を参照してください。](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
+- [組織の自動化された調査と応答を構成する](mtp-configure-auto-investigation-response.md)
 - [アクション センターの詳細](mtp-action-center.md)

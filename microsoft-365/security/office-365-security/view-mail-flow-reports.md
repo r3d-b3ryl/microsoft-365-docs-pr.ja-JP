@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ & コンプライアンスセンターのレポートダッシュボードで使用できるメールフローレポートについて説明しています。
 ms.custom: ''
-ms.openlocfilehash: 772aec3c18e3e6343bdfd4831252d03a46961735
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949622"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171400"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのレポートダッシュボードでメールフローレポートを表示する
 
@@ -399,7 +399,7 @@ EOP または ATP によってフィルター処理された電子メールを�
 
 ## <a name="sent-and-received-email-report"></a>送信および受信した電子メールレポート
 
-**送信および受信**した電子メールレポートは、スパム検出、マルウェア、および "good" と識別された電子メールを含む、受信および送信電子メールに関する情報を示すスマートレポートです。 このレポートと [メールフロー状態レポート](#mailflow-status-report) の違いは次のとおりです。このレポートには、エッジ保護によってブロックされたメッセージに関するデータは含まれません。
+**送信および受信**した電子メールレポートは、スパム検出、マルウェア、および "good" と識別された電子メールを含む、受信および送信電子メールに関する情報を示すスマートレポートです。 このレポートと [メールフロー状態レポート](#mailflow-status-report) の違いは次のとおりです。このレポートには、エッジ保護によってブロックされたメッセージに関するデータは含まれません。メッセージが5人の受信者に送信されると、1つのメッセージとして数えられることを理解しておくことが重要です。
 
 レポートの集計ビューと詳細ビューでは、90日間のフィルター処理を実行できます。
 

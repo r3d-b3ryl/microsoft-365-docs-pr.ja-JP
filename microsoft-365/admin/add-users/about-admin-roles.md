@@ -21,19 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者は、管理センターでサポート チケットを開くことができます。
+ms.openlocfilehash: 35fee24a2e9de6c00f37e93c59851b7e760baa19
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131784"
 ---
 # <a name="about-admin-roles"></a>管理者ロールについて
 
 Microsoft 365 または Office 365 サブスクリプションには、Microsoft 365 管理センターを使用して組織内のユーザーに割り当てることができる管理者ロールセットがあります。 各管理者ロールは、一般的なビジネス機能にマップされ、組織内のユーザーに管理センターで特定のタスクを実行する許可を与えます。
 
 Microsoft 365 管理センターでは、Azure AD の役割およびMicrosoft Intune の役割を管理できます。 ただし、これらの役割は、Azure ポータルおよびIntune 管理センターで使用可能な役割のサブセットです。
+
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft 365 管理センターで管理できる詳細な Azure AD 役割の説明の完全なリストをお探しですか? 「Azure Active Directory での管理者役割のアクセス許可」を確認してください。 [Azure Active Directory での管理者役割のアクセス許可](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 

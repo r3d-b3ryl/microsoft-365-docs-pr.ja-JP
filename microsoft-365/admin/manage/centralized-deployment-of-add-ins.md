@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用して Office アドインを展開できるようにします。
-ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131736"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -43,10 +43,10 @@ ms.locfileid: "45102874"
 
 すべてのユーザーについて、アドインがクライアントに対して表示されるまでに最大24時間かかる場合があります。
   
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise (組織の ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
-以下の Office および Exchange の特定の要件を確認することも、[集中展開の互換性チェック](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)を使用することもできます。
+以下の Office および Exchange の特定の要件を確認することも、[集中展開の互換性チェック](#centralized-deployment-compatibility-checker)を使用することもできます。
 
 一元展開は、次の機能をサポートしていません。
   
@@ -82,7 +82,7 @@ Microsoft 365 Apps for enterprise を使用するには、ユーザーは Micros
 
 ユーザーがエンタープライズ向けの Microsoft 365 アプリをインストールしていて、それを最近使用しているかどうかを検出する最も簡単な方法は、microsoft 365 管理センターで利用できる Microsoft Office ライセンス認証レポートを使用することです。 このレポートでは、過去7日間、30日間、90日間、または180日以内に、エンタープライズ向けの Microsoft 365 アプリをアクティブ化したすべてのユーザーの一覧を示します。 一元展開をするという目的のため、Windows または Mac のデスクトップで行ったライセンス認証は、レポートの重要な列に表示されます。 このレポートは、Excel にエクスポートできます。 レポートの詳細については、「 [Microsoft Office ライセンス認証」の「microsoft 365 レポート](../activity-reports/microsoft-office-activations.md)」を参照してください。
   
-ライセンス認証レポートを使用しない場合は、ユーザーが Word などの Office アプリケーションを自分のコンピューターで開くように求めることができます。次に、[**ファイル**アカウント] を選択し \> **Account**ます。 [**製品情報**] の下に、次の図に示すように、**サブスクリプション製品**と**Microsoft 365 for enterprise**が表示されます。
+ライセンス認証レポートを使用しない場合は、ユーザーが Word などの Office アプリケーションを自分のコンピューターで開くように求めることができます。次に、[**ファイル**アカウント] を選択し \> **Account**ます。 [ **製品情報**] の下に、次の図に示すように、 **サブスクリプション製品** と **microsoft 365 for Enterprise**または microsoft 365 Business Premium が表示されます。
 
 ![Office アプリケーションの製品情報](../../media/product-information-microsoft-365-enterprise.png)
   
@@ -98,7 +98,7 @@ Microsoft Exchange では、アドインのマニフェストが組織のテナ�
 
 ### <a name="centralized-deployment-compatibility-checker"></a>一元的な展開の互換性チェック
 
-一元展開の互換性チェックを使用して、テナントのユーザーが Word、Excel、PowerPoint の一元展開を使用するように設定されているかどうかを確認できます。 互換性チェックは、Outlook のサポートには必要ありません。 互換性チェックを[ここ](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)にダウンロードします。
+一元展開の互換性チェックを使用して、テナントのユーザーが Word、Excel、PowerPoint の一元展開を使用するように設定されているかどうかを確認できます。 互換性チェックは、Outlook のサポートには必要ありません。 互換性チェックを [ここ](https://aka.ms/officeaddindeploymentorgcompatibilitychecker)にダウンロードします。
   
 #### <a name="run-the-compatibility-checker"></a>互換性チェックを実行する
   
@@ -115,12 +115,12 @@ Microsoft Exchange では、アドインのマニフェストが組織のテナ�
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   このコマンドは、 *_Tenantdomain_* (たとえば、 *TailspinToysIncorporated </span> ) の入力を求めます。com*) と*_TenantAdmin_* の資格情報 (グローバル管理者の資格情報を使用) を使用して、同意を要求します。
+   このコマンドは、  *_Tenantdomain_* (たとえば、 *TailspinToysIncorporated </span> ) の入力を求めます。com*) と  *_TenantAdmin_* の資格情報 (グローバル管理者の資格情報を使用) を使用して、同意を要求します。
     
    > [!NOTE]
    > テナントのユーザー数によって、チェックが完了するのに数分または数時間かかる場合があります。 
   
-ツールの実行が完了すると、コンマ区切り (.csv) 形式で出力ファイルが作成されます。 既定では、ファイルは**C:\windows\system32**に保存されます。 出力ファイルには、次の情報が含まれます。
+ツールの実行が完了すると、コンマ区切り (.csv) 形式で出力ファイルが作成されます。 既定では、ファイルは **C:\windows\system32** に保存されます。 出力ファイルには、次の情報が含まれます。
   
 - ユーザー名
     
@@ -152,7 +152,7 @@ Microsoft Exchange では、アドインのマニフェストが組織のテナ�
    
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>グループにネストされたグループが含まれているかどうかを調べる
 
-グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの [宛先] フィールド**に**グループ名を入力し、解決時にグループ名を選択すると、ユーザーまたはネストしたグループが含まれている場合は、そのグループの名前が表示されます。 次の例では、「テスト グループ」での Outlook 情報先カードの [ **メンバー**] タブには、ユーザーはなく、2 つのサブ グループのみが表示されています。 
+グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの [宛先] フィールド **に** グループ名を入力し、解決時にグループ名を選択すると、ユーザーまたはネストしたグループが含まれている場合は、そのグループの名前が表示されます。 次の例では、「テスト グループ」での Outlook 情報先カードの [ **メンバー**] タブには、ユーザーはなく、2 つのサブ グループのみが表示されています。 
   
 ![Outlook 連絡先カードの [メンバー] タブ](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
@@ -169,6 +169,6 @@ Microsoft Exchange では、アドインのマニフェストが組織のテナ�
 |**プラットフォーム**|**デバッグ情報**|
 |:-----|:-----|
 |Office  <br/> | Charles/Fiddler ログ  <br/>  テナント ID ( [詳細情報](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. いずれかの office ページのソースを表示し、関連付け ID の値を探して、サポートに送信します。  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|リッチ クライアント (Windows、Mac)  <br/> | Charles/Fiddler ログ  <br/>  クライアントアプリのビルド番号 (**ファイル/アカウント**のスクリーンショットとして推奨)  <br/> |
+|リッチ クライアント (Windows、Mac)  <br/> | Charles/Fiddler ログ  <br/>  クライアントアプリのビルド番号 ( **ファイル/アカウント**のスクリーンショットとして推奨)  <br/> |
    
 

@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: ゲストを使用したグループ作業のために SharePoint サイトをセットアップするために必要な Microsoft 365 構成手順について説明します。
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797818"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171270"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -39,18 +39,18 @@ ms.locfileid: "46797818"
 
 Microsoft 365 での共有は、 [Azure Active Directory の組織上の関係の設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)によって最上位レベルで管理されます。 Azure AD でゲストの共有が無効または制限されている場合、これは Microsoft 365 で構成した共有設定よりも優先されます。
 
-組織上の関係の設定を確認して、ゲストとの共有がブロックされないようにしてください。
+外部のグループ作業設定を確認して、ゲストとの共有がブロックされないようにしてください。
 
-![Azure Active Directory における組織の関係の設定ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory の外部コラボレーション設定ページのスクリーンショット](../media/azure-ad-organizational-relationships-settings.png)
 
-組織上の関係の設定を設定するには
+外部コラボレーション設定を設定するには:
+
 
 1. Microsoft Azure にログイン [https://portal.azure.com](https://portal.azure.com) します。
 2. 左側のナビゲーションで、[ **Azure Active Directory**] をクリックします。
-3. [ **概要** ] ウィンドウで、[組織上の **関係**] をクリックします。
-4. [組織上の **関係** ] ウィンドウで、[ **設定**] をクリックします。
-5. **管理者とゲスト招待元役割のユーザーが招待できる**ことと、**メンバーが招待**できることを確認します。どちらも **[はい]** に設定されています。
-6. 変更を加えた場合は、[**保存**] をクリックします。
+3. [ **外部 id** ] を選択し、[ **外部のグループ作業設定**] をクリックします。
+4. [ **ゲスト招待の設定** ] ウィンドウで、 **guest 招待元役割の管理者とユーザーが招待できる** こと、および **メンバーが招待** できるユーザーが **[はい]** に設定されていることを確認します。
+5. 変更を加えた場合は、[**保存**] をクリックします。
 
 [ **共同作業の制限** ] セクションの設定に注意してください。 共同作業を行うゲストのドメインがブロックされていないことを確認します。
 
@@ -135,7 +135,7 @@ SharePoint 組織レベルの共有設定を設定するには
 1. Web 上の Outlook の [ **グループ**] で、メンバーを追加するグループをクリックします。
 2. グループの連絡先カードを開いて、[ **その他のオプション** (...)] の下にある [ **メンバーの追加**] をクリックします。
 3. 招待するゲストの電子メールアドレスを入力し、[ **追加**] をクリックします。
-4. **[閉じる]** をクリックします。
+4. [閉じる] **** をクリックします。
 
 ## <a name="see-also"></a>関連項目
 
@@ -146,4 +146,3 @@ SharePoint 組織レベルの共有設定を設定するには
 [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)
-

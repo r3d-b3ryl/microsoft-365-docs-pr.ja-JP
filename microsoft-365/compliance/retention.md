@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132137"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -83,7 +83,7 @@ ms.locfileid: "47816755"
  
 - コンテンツの保持期間や最終更新日以外に、コンテンツにラベルが付けられた時点やイベントに基づいて保持期間を開始するオプション。
 
-- [トレーニング可能な分類子](classifier-getting-started-with.md)を使用して、ラベル付けするコンテンツを識別する。
+- [トレーニング可能な分類子](classifier-learn-about.md)を使用して、ラベル付けするコンテンツを識別する。
 
 - SharePoint ドキュメントに既定のラベルを適用する。
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 08e2bd43b4337087b401244b7dc4cf80a26aaf06
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131671"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpoint Data Loss Prevention (プレビュー) を開始する
 
@@ -90,7 +90,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 まだオンボーディングされていないデバイスをオンボーディングする場合は、適切なスクリプトをダウンロードして、それらのデバイスに導入します。 [オンボーディングデバイスの手順](endpoint-dlp-getting-started.md#onboarding-devices)に従ってください。
 
-すでに[Microsoft Defender Advanced Threat Protection (MDATP) ](https://docs.microsoft.com/windows/security/threat-protection/) にオンボーディングされているデバイスがある場合、それらはすでに管理対象デバイスのリストに表示されます。 「[MDATPにオンボーディングされたデバイス」の手順](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp)に従います。
+既に [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) にオンボーディングされているデバイスがある場合、それらは管理対象デバイスのリストに表示されます。 [「Microsoft Defender for Endpoint にオンボーディングされているデバイスを使用」の手順](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint)に従ってください。
 
 ### <a name="onboarding-devices"></a>オンボーディングデバイス
 
@@ -109,7 +109,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、**パッケージをダウンロード**します。
 
    ![導入方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-6. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックしますと、手順 5 で選択した導入パッケージと一致するMDATPプロシージャにアクセスするランディングページが表示されます。
+6. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
     - グループポリシーを使用した Windows 10 マシンのオンボード
     - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
     - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
@@ -121,16 +121,16 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 > [!NOTE]
 > これは、ライセンス執行時でのエクスペリエンスです。 必要なライセンスがないと、データは表示されず、アクセスできません。
 
-### <a name="with-devices-onboarded-into-mdatp"></a>MDATP にオンボーディングされたデバイス
+### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint にオンボーディングされているデバイスを使用
 
-このシナリオでは、MDATP はすでに導入されており、レポートするエンドポイントがあります。 これらすべてのエンドポイントが管理対象デバイスのリストに表示されます。 新しいデバイスを引き続き Endpoint DLP にオンボーディングして、[オンボーディングデバイスの手順](endpoint-dlp-getting-started.md#onboarding-devices)を使用してカバレッジを拡大します。
+このシナリオでは、Microsoft Defender for Endpoint は既に導入されており、レポートするエンドポイントがあります。 これらすべてのエンドポイントが管理対象デバイスのリストに表示されます。 新しいデバイスを引き続き Endpoint DLP にオンボーディングして、[オンボーディングデバイスの手順](endpoint-dlp-getting-started.md#onboarding-devices)を使用してカバレッジを拡大します。
 
 1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
 2. コンプライアンスセンターの設定ページを開き、[**デバイスの監視を有効にする**]を選択します。
-3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 すでに MDATP にレポートしているデバイスのリストが表示されます。 ![デバイス管理](../media/endpoint-dlp-getting-started-2-device-management.png)
+3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 既に Microsoft Defender for Endpoint にレポートしているデバイスのリストが表示されます。 ![デバイス管理](../media/endpoint-dlp-getting-started-2-device-management.png)
 4. 追加のデバイスをオンボードする必要がある場合は、[**オンボーディング**]を選択します。
 5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、[**パッケージをダウンロード**]します。
-6. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックしますと、手順 5 で選択した導入パッケージと一致するMDATPプロシージャにアクセスするランディングページが表示されます。
+6. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
     - グループポリシーを使用した Windows 10 マシンのオンボード
     - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
     - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード

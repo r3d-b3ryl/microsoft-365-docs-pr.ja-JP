@@ -17,16 +17,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection のキャンペーン ビューについて説明します。
-ms.openlocfilehash: 72662519177f4ac43e3de04e9755fd99f5ffb03f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867201"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173310"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP のキャンペーン ビュー
 
-[キャンペーンビュー] は、Advanced Threat Protection (ATP) プラン2の機能です (たとえば、Microsoft 365 E5 や、ATP プラン2アドオンがある組織など)。 セキュリティ & コンプライアンスセンターの Campaing ビューは、サービスのフィッシング攻撃を特定して分類します。 キャンペーン ビューは、次の目的に使用できます。
+[キャンペーンビュー] は、Advanced Threat Protection (ATP) プラン2の機能です (たとえば、Microsoft 365 E5 や、ATP プラン2アドオンがある組織など)。 セキュリティ & コンプライアンスセンターの [キャンペーン] ビューサービスのフィッシング攻撃を特定して分類します。 キャンペーン ビューは、次の目的に使用できます。
 
 - フィッシング攻撃を効率的に調査し、対処する。
 - 攻撃対象を正確に理解する。
@@ -47,7 +47,7 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
 
 キャンペーンは、期間が短い場合や、複数の日、週、または月でアクティブで非アクティブな期間がある場合があります。 特定の組織に対してキャンペーンが開始された場合や、組織が複数の企業にわたるより大きなキャンペーンの一部になっている場合があります。
 
-## <a name="campaign-views-the-security--compliance-center"></a>[キャンペーンビューセキュリティ & コンプライアンスセンター
+## <a name="campaign-views-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのキャンペーンビュー
 
 キャンペーンビューは、 [セキュリティ & コンプライアンスセンター](https://protection.office.com) の [ **脅威管理** \> ] **キャンペーン**で、またはに直接アクセスでき <https://protection.office.com/campaigns> ます。
 
@@ -84,7 +84,7 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
 
 - **型**: この値は、 **フィッシング** または **マルウェア**です。
 
-- **Subtype**: この値には、キャンペーンの詳細が含まれます。 以下に例を示します。
+- **Subtype**: この値には、キャンペーンの詳細が含まれます。 例:
 
   - **フィッシング**: 使用可能な場合は、このキャンペーンによって phished されているブランド。 たとえば、、、、、 `Microsoft` `365` 、など `Unknown` `Outlook` `DocuSign` です。
 
@@ -241,7 +241,7 @@ Microsoft Defender ATP サブスクリプションをお持ちの場合は、[ *
   - **フォルダーの削除**
   - **落下**
   - **外部**: 受信者は、ハイブリッド環境でオンプレミスの電子メール組織に配置されます。
-  - **失敗**
+  - **Failed**
   - **転送**
   - [**Inbox (受信トレイ)**]
   - [**Junk folder (迷惑メール フォルダー)**]

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク接続テスト (プレビュー)
-ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962400"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171352"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 ネットワーク接続テスト (プレビュー)
 
@@ -37,13 +37,33 @@ Microsoft 365 管理センターの各オフィスの場所についてネット
 >[!IMPORTANT]
 >Network insights、Microsoft 365 Admin Center でのパフォーマンスに関する推奨事項と評価は現在プレビュー状態であり、機能プレビュープログラムに登録されている Microsoft 365 テナントに対してのみ使用できます。
 
-## <a name="the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーション
+## <a name="what-happens-at-each-test-step"></a>各テストステップで行われる処理
+
+### <a name="office-location-identification"></a>オフィスの場所の識別情報
+
+[テストの実行] ボタンをクリックすると、実行中のテストページが表示され、オフィスの場所が特定されます。 所在地は、市区町村、都道府県、および国で入力できます。また、web ブラウザーから検出することもできます。 この値を検出した場合は、web ブラウザーから緯度と経度を要求し、使用する前に300m で300m に対して正確な精度を設定します。 これは、ネットワークパフォーマンスの構築よりも正確に場所を特定する必要がないためです。 
+
+### <a name="javascript-tests"></a>JavaScript テスト
+
+Office の場所を識別した後、JavaScript で TCP レイテンシテストを実行し、使用中の Office 365 サービスのフロントドアサーバーについてサービスのデータを要求します。 完了したら、マップと [詳細] タブで、次の手順の前に表示することができます。
+
+### <a name="download-the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーションをダウンロードする
+
+次に、高度なテストクライアントアプリケーションのダウンロードを開始します。 クライアントアプリケーションを起動するには、ユーザーを使用します。また、.NET Core がインストールされている必要もあります。
 
 Microsoft 365 ネットワーク接続テストには2つの部分があります。web サイト <https://connectivity.office.com> と、高度なネットワーク接続テストを実行するダウンロード可能な Windows クライアントアプリケーション。 ほとんどのテストでは、アプリケーションが実行されている必要があります。 実行時に、結果が web ページに返されます。
 
 Web ブラウザーテストが完了した後、web サイトからアドバンストクライアントテストアプリケーションをダウンロードするように求めるメッセージが表示されます。 メッセージが表示されたら、ファイルを開いて実行します。
 
 ![高度なテストクライアントアプリケーション](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### <a name="start-the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーションを開始する
+
+クライアントアプリケーションが開始すると、web ページが更新されて表示され、テストデータが web ページに受信され始めます。 新しいデータが受信されるたびに更新され、受信したデータを確認できます。
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>高度なテストの完了とテストレポートのアップロード
+
+テストが完了すると、web ページと高度なテストクライアントはどちらもこれを示し、テストレポートにサインインしているユーザーがいる場合は、顧客テナントにアップロードされます。
 
 ## <a name="sharing-your-test-report"></a>テストレポートを共有する
 
@@ -111,7 +131,7 @@ Microsoft 365 のネットワーク接続には、ユーザーのオフィスの
 
 #### <a name="vpn-split-tunnel"></a>VPN 分割トンネル
 
-Exchange Online、SharePoint Online、Microsoft Teams の各最適化カテゴリルートは、VPN で tunnelled されているかどうかをテストします。 ワークロードの分割は、VPN 全体を回避します。 Tunnelled ワークロードは、すべて VPN 経由で送信されます。 選択的 tunnelled ワークロードには、VPN 経由で送信されるいくつかのルートと一部が切り離されています。すべてのワークロードがスプリットアウトまたは選択的 tunnelled であるかどうかを示す結果が返されます。
+Exchange Online、SharePoint Online、Microsoft Teams の各最適化カテゴリルートは、VPN でトンネリングされているかどうかを確認するためにテストされています。 ワークロードの分割は、VPN 全体を回避します。 トンネルされたワークロードはすべて VPN 経由で送信されます。 選択的トンネルワークロードには、VPN 経由で送信されるルートと一部が切り離されているものがあります。すべてのワークロードがスプリットアウトまたは選択的トンネリングされている場合、合格の結果が表示されます。
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>優れたパフォーマンスを備えた大都市圏のお客様
 
@@ -207,28 +227,6 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 このセクションでは、Exchange Online サービスのフロントドア、SharePoint Online サービスのフロントドア、Microsoft Teams サービスのフロントドアに対する ICMP traceroute の結果を示します。 これは情報のみを対象として提供されており、関連するネットワークの洞察がありません。 3つの traceroutes が提供されています。 Traceroute から_outlook.office365.com_、顧客の SharePoint フロントエンドに対する traceroute、または_microsoft.sharepoint.com_が提供されていない場合はに、traceroute_に world.tr.teams.microsoft.com するもの。_
 
-## <a name="what-happens-at-each-test-step"></a>各テストステップで行われる処理
-
-### <a name="office-location-identification"></a>オフィスの場所の識別情報
-
-[テストの実行] ボタンをクリックすると、実行中のテストページが表示され、オフィスの場所が特定されます。 所在地は、市区町村、都道府県、および国で入力できます。また、web ブラウザーから検出することもできます。 この値を検出した場合は、web ブラウザーから緯度と経度を要求し、使用する前に300m で300m に対して正確な精度を設定します。 これは、ネットワークパフォーマンスの構築よりも正確に場所を特定する必要がないためです。 
-
-### <a name="javascript-tests"></a>JavaScript テスト
-
-Office の場所を識別した後、JavaScript で TCP レイテンシテストを実行し、使用中の Office 365 サービスのフロントドアサーバーについてサービスのデータを要求します。 完了したら、マップと [詳細] タブで、次の手順の前に表示することができます。
-
-### <a name="download-the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーションをダウンロードする
-
-次に、高度なテストクライアントアプリケーションのダウンロードを開始します。 クライアントアプリケーションを起動するには、ユーザーを使用します。また、.NET Core がインストールされている必要もあります。
-
-### <a name="start-the-advanced-tests-client-application"></a>高度なテストクライアントアプリケーションを開始する
-
-クライアントアプリケーションが開始すると、web ページが更新されて表示され、テストデータが web ページに受信され始めます。 新しいデータが受信されるたびに更新され、受信したデータを確認できます。
-
-### <a name="advanced-tests-completed-and-test-report-upload"></a>高度なテストの完了とテストレポートのアップロード
-
-テストが完了すると、web ページと高度なテストクライアントはどちらもこれを示し、テストレポートにサインインしているユーザーがいる場合は、顧客テナントにアップロードされます。
-
 ## <a name="connectivity-reports"></a>接続レポート
 
 サインインすると、以前に実行したレポートを確認できます。 また、それらを共有したり、リストから削除したりすることもできます。
@@ -251,7 +249,7 @@ Office の場所を識別した後、JavaScript で TCP レイテンシテスト
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>高度なテストクライアントを実行するために必要なこと
 
-高度なテストクライアントには、.NET コア3.1 デスクトップランタイムが必要です。 高度なテストクライアントをインストールせずに実行すると、 [.Net Core 3.1 インストーラページ](https://dotnet.microsoft.com/download/dotnet-core/3.1)に転送されます。 SDK ではなく、ASP.NET Core ランタイムをインストールするようにしてください。これは、ページ上でより上位にある必要があります。 コンピューターに対する管理者のアクセス許可は、.NET コアをインストールするための reuqired です。 
+高度なテストクライアントには、.NET コア3.1 デスクトップランタイムが必要です。 高度なテストクライアントをインストールせずに実行すると、 [.Net Core 3.1 インストーラページ](https://dotnet.microsoft.com/download/dotnet-core/3.1)に転送されます。 SDK ではなく、ASP.NET Core ランタイムをインストールするようにしてください。これは、ページ上でより上位にある必要があります。 .NET Core をインストールするには、コンピューターに対する管理者のアクセス許可が必要です。 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Microsoft 365 サービスのフロントドアとは
 
@@ -267,7 +265,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 インターネット出口の場所は、ネットワークトラフィックがエンタープライズネットワークから出てインターネットに接続する場所です。 これは、ネットワークアドレス変換 (NAT) デバイスがあり、通常はインターネットサービスプロバイダー (ISP) を使用して接続する場所としても識別されます。 場所とインターネット出口の場所の間に長距離の距離がある場合は、WAN のバックアウトが非常に重要であることがわかります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項](office-365-network-mac-perf-overview.md)
 

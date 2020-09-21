@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows および Office 展開ラボ キットと、その入手方法について説明します。
-ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949882"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171412"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows および Office 展開ラボキット
 
@@ -54,35 +54,47 @@ ms.locfileid: "47949882"
 詳細なラボのガイドにより、複数の展開および管理シナリオを体験できます。 最新バージョンの Intune と Configuration Manager 用にラボは更新されました。 
 
 ### <a name="plan-and-prepare-infrastructure"></a>インフラストラクチャを計画および準備する 
-Desktop Analytics   
-Cloud Management Gateway & Cloud Distribution Point テナントの接続、共同管理、および切り替えのワークロード    
-リモート アクセス
+- Desktop Analytics 
+- Cloud Management Gateway & Cloud Distribution Point 
+- テナント接続、共同管理、および切り替えのワークロード  
+- リモート アクセス (VPN) 
 
 ### <a name="prepare-configuration"></a>構成を準備する   
-Windows 10 の更新プログラムの配布サービスを最適化するグループポリシーを使用して windows 10 を構成 365 365 マネージャーが Microsoft Intune サービスを使用して windows 10 を使用する windows 10 を使用した windows 10 のサービスを提供する    
-セキュリティとコンプライアンス 
+- Windows 10 更新プログラムの配信を最適化する   
+- グループポリシーを使用した Windows 10 のサービス
+- Microsoft Intune を使用した Windows 10 のサービス   
+- Configuration Manager を使用した Windows 10 のサービス   
+- 構成マネージャーを使用したエンタープライズ向け Microsoft 365 アプリのサービス   
+- Intune を使用したエンタープライズ向け Microsoft 365 アプリのサービス  
+- セキュリティとコンプライアンス   
 
 ### <a name="prepare-applications"></a>アプリケーションを準備する    
-Office 用準備ツールキット    
-Win32 アプリケーションの MSIX パッケージと変換 
+- Office 用準備ツールキット  
+- Win32 アプリケーションの MSIX パッケージと変換   
 
 ### <a name="deploy-windows-10"></a>Windows 10 の展開   
-Configuration Manager OS 展開タスクシーケンスでの OS 展開タスクシーケンス MDT Windows 自動操縦による新しい Microsoft Edge の展開と管理    
+- 構成マネージャーでの OS 展開タスクシーケンス
+- MDT での OS 展開タスクシーケンス   
+- Windows Autopilot
+- 新しい Microsoft Edge を展開および管理する  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise を展開する    
-クラウド管理展開    
-ローカル管理展開  
-AD に参加していないデバイスでのエンタープライズ展開用 Microsoft 365 アプリ   
-Configuration Manager を使用したエンタープライズ管理展開 Microsoft Intune を使用したエンタープライズ管理展開    
-Microsoft Intune を使用した LOB の展開と管理 Microsoft Teams を展開する
+- クラウド管理展開  
+- ローカル管理展開    
+- AD に参加していないデバイスでのエンタープライズ展開用 Microsoft 365 アプリ 
+- 構成マネージャーを使用したエンタープライズ管理展開
+- Microsoft Intune を使用したエンタープライズ管理展開  
+- Microsoft Intune を使用した LOB の展開と管理
+- Microsoft Teams を展開する
 
 ### <a name="deploy-windows-virtual-desktop"></a>Windows 仮想デスクトップを展開する  
+- 準備、展開、最適化
  
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>Windows と Office 展開ラボ キットのダウンロード
 
 [Windows と Office 展開ラボ キットをダウンロード](https://www.microsoft.com/evalcenter/evaluate-lab-kit)します。
 
-*このコンテンツをダウンロードするには広い帯域幅を使用して、ダウンロードの機能を強化し、自動プロビジョニングに30-45 分を許可してください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB のディスクの空き領域が必要です。最適なパフォーマンスを得るためには、32 GB の使用可能なメモリが推奨されます。このラボは2020年12月4日に期限が切れます。有効期限が切れる前に、新しいバージョンが公開されます。*
+*このコンテンツをダウンロードするには広い帯域幅を使用して、ダウンロードの機能を強化し、自動プロビジョニングに30-45 分を許可してください。ラボ環境には、少なくとも 16 GB の使用可能なメモリと 150 GB のディスクの空き領域が必要です。最適なパフォーマンスを得るためには、32 GB の使用可能なメモリが推奨されます。ラボは2020年12月5日に期限切れになります。有効期限が切れる前に、新しいバージョンが公開されます。*
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

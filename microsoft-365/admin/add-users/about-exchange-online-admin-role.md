@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理者は、組織のメールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みのアイテムを復元します。 '
-ms.openlocfilehash: 0b63679883e8329782700085fa0c11a0ac6585ca
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: be4c8a4f1c75402d690cc705dd408c9070e40c9b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307435"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131772"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
@@ -34,15 +34,17 @@ Microsoft 365 を管理するために、 [Exchange 管理センター](https://
   
  **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、Exchange Online サービスの正常性、変更通知、リリース通知など、Microsoft 365 管理センターでの重要な情報を確認できます。
   
+## <a name="before-you-begin"></a>開始する前に
+
 Exchange 管理者の役割を割り当てられた場合にユーザーが実行できる重要なタスクのいくつかを次に説明します。
   
 - [ユーザーのメールボックスで削除されたアイテムを復元する](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
-    
+
 - [組織内のメールボックスのアーカイブと削除のポリシーを設定](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)します。
-    
+
 - メールボックスの機能をセットアップします。たとえば、メールボックス共有ポリシーを設定すると、ユーザーが予定表や連絡先の情報を組織外の人とどのように共有できるかを指定できます。
-    
-- 他のユーザーのメールボックスの [[送信者](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)] および [[送信 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)] の代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。 
+
+- 他のユーザーのメールボックスの [[送信者](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)] および [[送信 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)] の代理人を設定します。 たとえば、経営幹部は、メールの送信を代理でアシスタントに行ってもらう場合があります。
 
 - ユーザーのグループが共通の電子メールアドレスからメールを監視して送信できるように、[共有メールボックスを作成](../email/create-a-shared-mailbox.md)します。
 

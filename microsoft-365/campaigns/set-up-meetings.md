@@ -2,7 +2,7 @@
 title: オンライン会議を設定する
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: twerner
 author: twerner
 manager: scotv
 ms.audience: Admin
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams を使用してオンライン会議を設定します。
-ms.openlocfilehash: ce13dbcc32457263295e0e617b92a2d7e5fc3909
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 3e1eaba887249db59ef28e36ffefb5b89f80c469
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526866"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132002"
 ---
 # <a name="set-up-meetings"></a>会議をセットアップする
 
@@ -38,7 +38,7 @@ Microsoft Teams の会議には、音声、ビデオ、共有が含まれます�
 
 [![会議中の2人のユーザーの図](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
-Microsoft Teams を使用してオンライン会議に参加またはホストする方法の簡単な概要については、「 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712)または[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)でインフォグラフィック」をダウンロードしてご確認ください。
+Microsoft Teams を使用してオンライン会議に参加またはホストする方法の簡単な概要については、「 [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) または [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) でインフォグラフィック」をダウンロードしてご確認ください。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132171"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -101,6 +101,6 @@ Microsoft 365 ソリューションカタログにアクセスするには、に
 
 - **Microsoft Information Protection**は、microsoft 365 ソリューションが、どこにいても機密情報の検出、分類、保護を支援する方法について説明します。
     - **Microsoft Cloud App Security について理解し、セットアップし**ます。 「 [クイックスタート: Microsoft Cloud App Security の使用を開始](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)する」を参照してください。
-    - **分類子を使い始める**。 コンテンツを分類して、適切に処理できるようにラベル付けすることは、情報保護の統制の出発点となります。 「 [Trainable 分類子の](classifier-getting-started-with.md)概要」を参照してください。
+    - **分類子を使い始める**。 コンテンツを分類して、適切に処理できるようにラベル付けすることは、情報保護の統制の出発点となります。 詳細については、「 [trainable 分類子 (プレビュー)](classifier-learn-about.md)」を参照してください。
 
 - 多くの場合、 **Microsoft 365 ソリューションカタログにアクセス**して、コンプライアンス要件を満たすために役立つ新しいソリューションを確認してください。 にサインイン [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側のナビゲーションウィンドウで [ **カタログ** ] を選択します。

@@ -3,7 +3,7 @@ title: Office 365 向け VPN スプリット トンネリングの実装
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/15/2020
+ms.date: 9/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: 1fa86501e9cf29ffd41ec5b25a86cc4f2b139d52
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696261"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171424"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -220,7 +220,7 @@ VPN クライアントの設定を行い、**最適化** IP へのトラフィ�
 
 ### <a name="configuration"></a>構成
 
-通話と会議の両方で、Teams のメディアに必要な最適化 IP サブネットがルートテーブルに正しく配置されている限り、Teams が _GetBestRoute_ メソッドを呼び出して特定の宛先に使用するインターフェイスを決定すると、上記の Microsoft IP ブロックにある Microsoft の宛先にローカルのインターフェイスが返されます。
+通話と会議のどちらの場合も、teams メディアのために必要な最適化 IP サブネットがルートテーブルに適切に配置されていれば、Teams が [GetBestRoute](https://docs.microsoft.com/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) 関数を呼び出して、特定の宛先に対して使用する必要があるルートに対応するローカルインターフェイスを特定します。
 
 一部の VPN クライアント ソフトウェアでは、URL に基づいてルーティング操作が可能です。 ただし、Teams のメディア トラフィックには URL が関連付けられていないため、このトラフィックのルーティングの制御は IP サブネットを使用して行う必要があります。
 
@@ -293,7 +293,7 @@ Microsoft のセキュリティチームは、セキュリティ専門家にと�
 
 ### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>トラフィックがオンプレミスのソリューションを通過しなくなったときに、DLP を適用して機密データを保護するにはどうすればよいですか？
 
-機密情報が不注意により漏洩することを防ぐため、Office 365 には豊富な[組み込みツール](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)のセットがあります。 Teams と SharePoint の組み込みの [ DLP 機能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)を使用して、不適切に保存または共有された機密情報を検出できます。 リモート作業戦略の一部に、独自のデバイス (BYOD) ポリシーが含まれる場合は、 [アプリベースの条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) を使用して、機密データがユーザーの個人用デバイスにダウンロードされないようにすることができます。
+機密情報が不注意により漏洩することを防ぐため、Office 365 には豊富な[組み込みツール](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)のセットがあります。 Teams と SharePoint の組み込みの [ DLP 機能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)を使用して、不適切に保存または共有された機密情報を検出できます。 リモート作業戦略の一部に、独自のデバイス (BYOD) ポリシーが含まれる場合は、 [アプリベースの条件付きアクセス](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) を使用して、機密データがユーザーの個人用デバイスにダウンロードされないようにすることができます。
 
 ### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>ユーザーが直接接続を行っている時に、ユーザーの認証制御を評価、維持するにはどうすればよいですか？
 
@@ -307,7 +307,7 @@ Q1 に記載されているテナント制限機能に加えて、「[条件付�
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>ウイルスやマルウェアからの保護はどうすればいいですか？
 
-同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection)。 前述したように、プロトコル/トラフィックを完全には理解していない可能性があるデバイスでは、このようなセキュリティ要素をサービス自体に提供するよりもはるかに効率的です。既定では、SharePoint Online は既知のマルウェアの [ファイルアップロードを自動的にスキャン](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo?view=o365-worldwide) します
+同じく、Office 365 は、サービス自体のさまざまな層にある「最適化」のマークのあるエンドポイントを保護します。これは[このドキュメントで概説されています](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection)。 前述したように、プロトコル/トラフィックを完全には理解していない可能性があるデバイスでは、このようなセキュリティ要素をサービス自体に提供するよりもはるかに効率的です。既定では、SharePoint Online は既知のマルウェアの [ファイルアップロードを自動的にスキャン](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) します
 
 上記の Exchange エンドポイントの場合、[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) および [Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) は、サービスにトラフィックのセキュリティを提供するという優れた機能を果たします。
 
@@ -323,7 +323,7 @@ Azure Virtual Network への直接アクセスを許可する方法について�
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>なぜポート 80 が必要なのですか？ トラフィックは平文で送信されていますか？
 
-ポート 80 はポート 443 セッションへのリダイレクトなどにのみ使用され、顧客データは送信されないか、ポート 80 経由ではアクセスできません。 [こちらの記事](https://docs.microsoft.com/microsoft-365/compliance/encryption?view=o365-worldwide)では、Office 365 の転送中および保存中のデータの暗号化について、[こちらの記事](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)では、SRTP を使用してTeams のメディア トラフィックを保護する方法について概説しています。
+ポート 80 はポート 443 セッションへのリダイレクトなどにのみ使用され、顧客データは送信されないか、ポート 80 経由ではアクセスできません。 [こちらの記事](https://docs.microsoft.com/microsoft-365/compliance/encryption)では、Office 365 の転送中および保存中のデータの暗号化について、[こちらの記事](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)では、SRTP を使用してTeams のメディア トラフィックを保護する方法について概説しています。
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>この内容は、Office 365 のワールドワイド インスタンスを使用している中国のユーザーにも適用されますか？
 

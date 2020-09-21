@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962655"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>自動調査の後に保留中のアクションを承認または拒否する
 
@@ -35,7 +37,7 @@ ms.locfileid: "42633925"
 > [!TIP]
 > Microsoft の脅威保護の自動化された調査と応答機能によって何かが失敗したか、誤って検出されたと思われる場合は、お知らせください。 [Microsoft の脅威保護で自動調査と応答 (AIR) 機能の誤検知/ネガを報告する方法を](mtp-autoir-report-false-positives-negatives.md)参照してください。
 
-保留中のアクションは、[アクションセンター](#review-a-pending-action-in-the-action-center)または[調査詳細ビュー](#review-a-pending-action-in-the-investigation-details-view)を使用して確認および承認できます。
+保留中のアクションは、 [アクションセンター](#review-a-pending-action-in-the-action-center) または [調査詳細ビュー](#review-a-pending-action-in-the-investigation-details-view)を使用して確認および承認できます。
 
 > [!NOTE]
 > 修復アクションを承認または拒否するには、[適切なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)が必要です。
@@ -62,8 +64,5 @@ ms.locfileid: "42633925"
 
 ## <a name="next-steps"></a>次のステップ
 
-- [アクション センターの詳細](mtp-action-center.md)
-
-- [インシデントの詳細](incidents-overview.md)
-
-- [捜索の詳細](advanced-hunting-overview.md)
+- [自動調査の詳細と結果を表示する](mtp-autoir-results.md)
+- [自動調査と応答機能で誤検知/否定を処理する](mtp-autoir-report-false-positives-negatives.md)

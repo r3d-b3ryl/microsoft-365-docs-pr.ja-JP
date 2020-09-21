@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/12/2020
+ms.date: 09/18/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: fc2b83fc167a9385383d7085ed6d1e8db15abd42
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651134"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132114"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>Teams のチャット、グループ、およびファイルを保護するためのポリシーの推奨事項
 
@@ -71,28 +71,49 @@ Teams のクラウドアプリの割り当てに含める依存サービスは�
 |        |[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|このポリシーに Teams および依存するサービスを含めます。|
 |**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams にはゲストアクセスと外部アクセスのルールが含まれています。これについては、この記事の後半で説明します。 このポリシーに Teams および依存するサービスを含めます。|
 |         |[準拠 *して* いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|このポリシーに Teams および依存するサービスを含めます。|
-|**厳しく規制**|[*常に* MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ユーザー id に関係なく、MFA は組織によって使用されます。 このポリシーに Teams および依存するサービスを含めます。
+|**厳しく規制**|[*常に* MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ユーザー id に関係なく、MFA は組織によって使用されます。 このポリシーに Teams および依存するサービスを含めます。 |
 | | |
 
 ## <a name="teams-dependent-services-architecture"></a>Teams 依存サービスのアーキテクチャ
 
 参考として、次の図は、サービスチームが依存していることを示しています。 詳細とその他の図については、「microsoft [Teams and related プロダクティビティ service In microsoft 365 IN IT アーキテクト](../solutions/productivity-illustrations.md)」を参照してください。
 
-![SharePoint、OneDrive for Business、および Exchange への Teams の依存関係を示す図](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![SharePoint、OneDrive for Business、および Exchange への Teams の依存関係を示す図](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-## <a name="enabling-guest-and-external-access-for-teams"></a>Teams でゲストおよび外部アクセスを有効にする
+[この画像のより大きいバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-Azure AD では、ゲストユーザーと外部ユーザーは同じです。 これらの両方のユーザーの種類は Guest です。 ゲストユーザーは B2B ユーザーです。 Microsoft Teams は、アプリ内のゲストユーザーと外部ユーザーを区別します。 これらの各操作が Teams でどのように扱われるかを理解することは重要ですが、どちらの種類のユーザーも Azure AD の B2B ユーザーであり、B2B ユーザーの推奨ポリシーは両方に適用されます。 ゲストアクセスを許可するために推奨されるポリシーについては、「 [ゲストおよび外部の B2B アクセスを許可するためのポリシー](identity-access-policies-guest-access.md)」を参照してください。
+## <a name="guest-and-external-access-for-teams"></a>Teams のゲストおよび外部アクセス
+
+Microsoft Teams では、以下を定義します。
+
+- **ゲストアクセス** では、チームのメンバーとして追加し、すべての権限がチームのコミュニケーションとリソースにアクセスできるようにする、ゲストまたは外部ユーザーに対して AZURE AD B2B アカウントを使用します。
+
+- Azure AD B2B アカウントを持たない外部ユーザーに対して**外部アクセス**を行います。 外部アクセスには、通話、チャット、および会議への招待と参加を含めることができますが、チームのメンバーシップやチームのリソースへのアクセスは含まれません。
+
+条件付きアクセスポリシーは、対応する Azure AD B2B アカウントがあるため、Teams でのゲストアクセスにのみ適用されます。
+
+<!--
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+
+--> 
+
+Azure AD B2B アカウントを使用してゲストユーザーと外部ユーザーにアクセスを許可するために推奨されるポリシーについては、「 [ゲストおよび外部 B2B アカウントのアクセスを許可するためのポリシー](identity-access-policies-guest-access.md)」を参照してください。
 
 ### <a name="guest-access-in-teams"></a>Teams でのゲスト アクセス
 
-企業または組織の内部にあるユーザーのポリシーに加えて、管理者はゲストアクセスを有効にして、ユーザーごとに、組織外のユーザーが Teams のリソースにアクセスしたり、グループの会話、チャット、会議などの内部ユーザーと対話したりすることができます。 ゲストアクセスの詳細については、次のリンクを参照してください。 [Teams ゲストアクセス](https://docs.microsoft.com/microsoftteams/guest-access)
+企業または組織の内部にあるユーザーのポリシーに加えて、管理者はゲストアクセスを有効にして、ユーザーごとに、組織外のユーザーが Teams のリソースにアクセスしたり、グループの会話、チャット、会議などの内部ユーザーと対話したりすることができます。 
+
+ゲストアクセスおよびその実装方法の詳細については、「  [Teams ゲストアクセス](https://docs.microsoft.com/microsoftteams/guest-access)」を参照してください。
 
 ### <a name="external-access-in-teams"></a>Teams での外部アクセス
 
-外部アクセスは、ゲストアクセスと混同されることがあるため、これらの2つの非内部アクセスメカニズムが実際に大きく異なることを明確にすることが重要です。 ゲストアクセスはユーザー単位で行われますが (一度に1人のユーザーを追加する)、管理者が外部アクセスを有効にすると、外部ドメインのすべてのユーザーを Teams に同時に追加することができます。 ただし、これらの外部ユーザーは、ゲストアクセスで追加された個人よりもアクセスと機能が少なくなります。 外部アクセスユーザーは、Teams を使用して内部ユーザーとチャットすることができます。
+外部アクセスは、ゲストアクセスと混同されることがあるため、これらの2つの非内部アクセスメカニズムが実際に大きく異なることを明確にすることが重要です。 
 
-外部アクセスの詳細と、必要に応じてそれを実装する方法については、「 [Microsoft Teams で外部アクセスを管理](https://docs.microsoft.com/microsoftteams/manage-external-access)する」を参照してください。
+外部アクセスは、teams のユーザーとの間で、外部ドメイン全体の Teams ユーザーが会議を検索、呼び出し、チャット、セットアップするための方法です。 Teams 管理者は、組織レベルで外部アクセスを構成します。 詳細については、「 [Microsoft Teams で外部アクセスを管理](https://docs.microsoft.com/microsoftteams/manage-external-access)する」を参照してください。
+
+外部アクセスユーザーのアクセス権と機能は、ゲストアクセスで追加された個人数よりも少なくなります。 たとえば、外部アクセスユーザーは、Teams を使用して内部ユーザーとチャットすることはできますが、チームチャネル、ファイル、またはその他のリソースにアクセスすることはできません。
+
+外部アクセスでは、Azure AD B2B ユーザーアカウントを使用しないため、条件付きアクセスポリシーを使用しません。 
 
 ## <a name="teams-policies"></a>Teams ポリシー
 
