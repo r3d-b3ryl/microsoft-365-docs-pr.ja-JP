@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: サービス名、説明、場所、期間、価格を含むサービスオファーリング情報の入力手順。 また、サービスを提供する資格がある従業員にタグを付けることもできます。
-ms.openlocfilehash: 60b77633b9845b3c269f6773c1fb8a26256fbdc5
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962539"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>予約でのサービス提供の定義
 
 Microsoft の予約でサービスオファーリングを定義するときは、サービス名、説明、場所 (個人を会議に参加するか、オンライン会議を開催するかを選択します)、期間、顧客とスタッフへの既定のアラーム、サービスに関する内部メモ、および価格を設定します。 また、サービスを提供する資格がある従業員にタグを付けることもできます。 次に、顧客がビジネス web サイトにアクセスして予定を予約したときに、どの種類の予定を利用できるようにするかを確認したり、サービスの提供を希望する人物を選択したり、サービスのコストをどの程度のものにするかを選択したりできます。
 
 予約ページを通じて他のユーザーがサービスにアクセスしたときに送信される電子メールの確認と事前通知に、カスタマイズされた情報と Url を追加することもできます。
-
-> [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
 
 ## <a name="create-the-service-details"></a>サービスの詳細情報を作成する
 

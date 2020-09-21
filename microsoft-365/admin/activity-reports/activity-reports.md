@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: f1902c71b167d6293530eae61fa6c57d63c5f06c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387803"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948210"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
+ユーザーが仕事でどのように Microsoft 365 サービスを使用しているかを簡単に確認できます。たとえば、サービスをかなり使用しているためにクォータに近づいているユーザーや、Microsoft 365 ライセンスをまったく必要としない可能性があるユーザーを、特定することができます。
   
-Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
+過去 7 日、30 日、90 日、180 日間のレポートを利用できます。すべてのレポート期間のデータが最初から存在するわけではありません。レポートは、48 時間以内に使用できるようになります。
   
 概要については、次のビデオを参照してください: レポートの使用方法
   
@@ -141,13 +141,25 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity.md)
+- [Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage.md)
+- [国防総省と Government Community Cloud 向けの Microsoft Teams ユーザー アクティビティ](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [国防総省と Government Community Cloud 向けの Microsoft Teams デバイスの利用状況](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
@@ -159,7 +171,7 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>特定のユーザーの使用状況の情報を表示する方法
 
-Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
+特定のユーザーがどの程度サービスを使用しているかを調べるには、サービス レポートを使います。たとえば、特定のユーザーが使っているメールボックス記憶域の量を確認するには、メールボックスの利用状況レポートを開き、ユーザーを名前で並べ替えます。ユーザーが何千人もいる場合は、レポートを Excel にエクスポートすると、一覧をすばやくフィルター処理できます。
   
 ユーザーのアカウントを入力してから、ユーザーが使っているサービスとその量の一覧を取得すると、レポートを生成できません。
   
@@ -177,7 +189,7 @@ Use the service reports to research how much a specific user is using the servic
   
 ![レポート - 匿名ユーザー リスト](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
+レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。この設定は、レポートの API にも適用されます。
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>ユーザー アカウントが削除されたとき、使用状況データはどうなりますか?
 

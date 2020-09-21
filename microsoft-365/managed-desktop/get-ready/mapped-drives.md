@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: fc216adadea8dd774901d42a754fb288412318a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104596"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップ用に、マップされたドライブを準備する
 
@@ -48,8 +48,8 @@ ms.locfileid: "47289275"
  
 マップされたドライブを使用しないようにして、サービスリクエストを提出する前に要件を慎重に確認してください。 その後、次の手順を実行します。
 
-1. [Microsoft マネージドデスクトップポータル](https://aka.ms/mmdportal)に移動します。  
-2. 「Support **> support requests** 」セクションから「マップされたドライブの展開」というタイトルのサポート要求を送信し、必要なファイル共有の詳細をすべて提供します。  
+1. [Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)に移動し、[トラブルシューティング + サポート] を選択してから、microsoft 管理されたデスクトップ op セクションの下にある [サービスリクエスト] を探します。  
+2. "マップされたドライブの展開" というタイトルのサポート要求を送信し、必要なファイル共有の詳細をすべて提供します。  
 3. Microsoft マネージドデスクトップ IT 操作は、要求が完了したときに、サポート要求の更新を使用してアドバイスします。 最初は、この構成はテスト展開グループのデバイスにのみ展開されます。  
-4. Microsoft マネージドデスクトップの IT 運用によって展開された構成が期待どおりに動作するかどうかをテストし、確認する必要があります。 テストが完了したら、サポート要求の [ディスカッション] タブを使用して、Microsoft Managed Desktop IT Operations に通知します。  
+4. Microsoft マネージドデスクトップの IT 運用によって展開された構成が期待どおりに動作するかどうかをテストし、確認する必要があります。 同じサポート要求の詳細にある [ディスカッション] タブを使用して返信し、テストが完了したことを Microsoft Managed Desktop IT Operations に通知します。  
 5. Microsoft Managed Desktop IT 運用チームは、その構成を他の展開グループに展開します。 

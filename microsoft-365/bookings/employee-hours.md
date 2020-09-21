@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft の予約で従業員の就業時間と利用可能時間を設定します。
-ms.openlocfilehash: 656b52992f4da32ae334809bd1a3ee4dd3b89652
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962527"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft の予約の従業員の就業時間
 
@@ -23,9 +23,6 @@ ms.locfileid: "47419860"
 [ **スタッフ** ] ページでは、従業員の勤務時間をカスタマイズして、業務および従業員のニーズを満たすことができます。
 
 スタッフ メンバーが休暇中に顧客が予約できないように、スタッフ メンバーの休暇を予約する手順については、「[休業、休暇、休暇期間のスケジュール](schedule-closures-time-off-vacation.md)」を参照してください。
-
-> [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
 
 ## <a name="customize-employee-working-hours"></a>従業員の稼働時間をカスタマイズする
 

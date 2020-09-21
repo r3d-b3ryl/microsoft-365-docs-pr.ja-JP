@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: 4d4aa8afc7a17d2f9f0ae2d48404d7a3da553d47
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547988"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962265"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -92,11 +94,8 @@ ms.locfileid: "47547988"
 > [!NOTE]
 > Azure Active Directory でグローバル管理者の役割が割り当てられているユーザーは、アクション センターで保留中のアクションを承認または拒否できます。 ただし、ベスト プラクティスとして、グローバル管理者の役割が割り当てられているユーザーの数を制限する必要があります。 アクション センターのアクセス許可については、上記のセキュリティ管理者、有効な修復アクション、および検索と消去の役割を使用することをお勧めします。
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 
-- [Microsoft Threat Protection のインシデントの詳細](incidents-overview.md)
-
+- [自動調査の後に保留中のアクションを承認または拒否する](mtp-autoir-actions.md)
 - [自動化された調査の結果を表示する](mtp-autoir-results.md)
-
-- [Microsoft Threat Protection の捜索の詳細](advanced-hunting-overview.md)
 

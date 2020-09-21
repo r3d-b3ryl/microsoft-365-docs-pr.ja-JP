@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131580"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
 組織の先進セキュリティ境界は、ネットワークを超えて拡張され、さまざまなデバイスを備えたあらゆる場所からクラウドベースのアプリにアクセスするユーザーが含まれるようになりました。 セキュリティインフラストラクチャで、特定のアクセス要求を許可するかどうか、およびその条件について判断する必要があります。 
 
-この判断は、ユーザーアカウントのサインイン、使用されているデバイス、ユーザーがアクセスしようとしているアプリ、アクセス要求が行われた場所、および要求のリスク評価に基づいて行う必要があります。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
+この判断は、サインインのユーザーアカウント、使用しているデバイス、アクセスのためにユーザーが使用しているアプリ、アクセス要求が行われた場所、および要求のリスクの評価に基づいて行う必要があります。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
 
 このシリーズの記事では、id およびデバイスアクセスの前提条件となる構成のセット、および azure Active Directory (Azure AD) の条件付きアクセス、Microsoft Intune、および Azure AD Application Proxy で公開されているその他の SaaS サービス、およびオンプレミスアプリケーションに対する Microsoft 365 へのアクセスを保護するためのポリシーについて説明します。
 

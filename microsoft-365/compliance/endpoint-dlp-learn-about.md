@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 エンドポイントのデータ損失防止は、、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: 2423f45fefe994fbaf5704074c49ce862a59340e
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7403f20fa7c97c63be0e5001e8d3f5b37b409eee
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517498"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131549"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Microsoft 365 のエンドポイントのデータ損失防止について学ぶ (プレビュー) 
 
@@ -120,7 +120,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 - デバイス名
 - 場所の宛先の種類
 - コピーを実行したアプリケーション
-- MDATP デバイス ID (該当する場合)
+- Microsoft Defender for Endpoint デバイス ID (該当する場合)
 - リムーバブルメディアデバイスの製造元
 - リムーバブルメディアデバイスのモデル
 - リムーバブルメディアデバイスのシリアル番号

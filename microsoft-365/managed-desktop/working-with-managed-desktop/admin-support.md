@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104584"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップの管理者サポート
 
@@ -24,10 +24,11 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 >アプリパッケージ、デバイス、セキュリティ、およびその他の管理者の [連絡先が設定](../get-started/add-admin-contacts.md) されていることを確認してください。 管理者の連絡先が構成されていない場合、これらの領域のいずれにもサポート要求を送信することはできません。
 
 **サポートリクエストを送信するには**
-1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインします。 
-2. [ **サポート要求**] で、[ **+ 新しいサポートチケット**] を選択します。
-3. 必要なヘルプに一致する **サポート要求の種類** を選択します。 次の表は、オプションの概要を示しています。 
-4. **重大度レベル**を選択します。 詳細については、「 [Support request severity definitions](#sev)」を参照してください。 
+1. [Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)にサインインし、**トラブルシューティング + サポート**メニューに移動します。
+2. [Microsoft Managed Desktop] セクションを探し、[ **要求**] を選択します。
+3. [ **サポート要求**] で、[ **+ 新しいサポートチケット**] を選択します。
+4. 必要なヘルプに一致する **サポート要求の種類** を選択します。 次の表は、オプションの概要を示しています。 
+5. **重大度レベル**を選択します。 詳細については、「 [Support request severity definitions](#sev)」を参照してください。 
 
 サポート要求の種類 | 使用する状況
 --- | ---
@@ -58,7 +59,7 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 
 フィードバックをお送りください。また、それを使用して管理者のサポートを向上させることができます。
 
-チケットが **緩和** された状態または **解決済み** の状態になったら、その特定の問題を使用して、フィードバックを共有できます。 これを行うには、管理ポータルの [ **サポート要求** ] ページに移動します。 特定のチケットを選択します。 右側に表示されるフライインで、[ **フィードバック** ] タブを選択し、要求された情報を入力します。 フィードバックフォームに個人情報を含めないように注意してください。 プライバシーの詳細については、 [Microsoft のプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明を参照してください。
+チケットが **緩和** された状態または **解決済み** の状態になったら、その特定の問題を使用して、フィードバックを共有できます。 これを行うには、MEM ポータルの**トラブルシューティング + サポート**メニューにある [**サービスリクエスト**] ページに移動します。 特定のチケットを選択します。 右側のスライドに、チケットの詳細が表示され、[ **フィードバック** ] タブを選択して、要求された情報を入力します。 フィードバックフォームに個人情報を含めないように注意してください。 プライバシーの詳細については、 [Microsoft のプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明を参照してください。
 
 ![フィードバックフォーム](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ Microsoft マネージドデスクトップの管理ポータルを使用して�
 ## <a name="additional-resources"></a>その他のリソース
 - [Microsoft マネージドデスクトップのユーザーサポート](end-user-support.md)。 
 - [Microsoft マネージドデスクトップのサポート](../service-description/support.md)。 
-- Microsoft managed desktop を既に購読している場合は、「microsoft managed desktop admin [Portal](https://aka.ms/mwaasportal)」の「 **Online resources** 」セクションにある「Microsoft managed desktop admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を見つけることができます。
+- Microsoft マネージドデスクトップを既に購読している場合は、「microsoft managed desktop Admin Guide」の「microsoft managed desktop Admin Guide」に記載さ**れている**「microsoft の管理されたデスクトップ管理ガイド」に記載されている詳細な手順、処理フロー、作業手順、および faq を、「Microsoft [Endpoint Manager](https://endpoint.microsoft.com/)の**テナント管理**メニューの「 **microsoft managed desktop** 」

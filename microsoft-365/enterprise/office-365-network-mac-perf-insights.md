@@ -3,7 +3,7 @@ title: Microsoft 365 Network Insights (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 Network Insights (プレビュー)
-ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948518"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962373"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 Network Insights (プレビュー)
 
@@ -86,7 +86,7 @@ Network insights service が、特定のユーザーの場所からネットワ�
 
 この洞察は、一部の概要ビューに "ルーティング" として短縮されています。
 
-![非最適なフロントドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+![非最適な EXO フロントドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>シナリオ
 
@@ -102,7 +102,7 @@ Exchange Online サービスのフロントドアを使用していない場合�
 
 この洞察は、一部の要約ビューでは "Afd" と略記されています。
 
-![非最適なフロントドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+![非最適な SPO フロントドア](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### <a name="what-does-this-mean"></a>シナリオ
 
@@ -171,9 +171,9 @@ Network insights service が、特定のオフィスの場所と SharePoint Onli
 
 まだ実行していない場合は、office の場所のネットワーク接続の表示を有効にします。 SharePoint に影響を与えるネットワーク接続の不足によって impactred されているオフィスを特定し、ユーザーを Microsoft のネットワークに接続するそれぞれのネットワーク境界を改善する方法を見つける必要があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-[Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理センターでのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 

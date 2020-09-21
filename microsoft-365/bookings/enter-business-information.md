@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 次の手順に従って、Microsoft 予約の会社名、住所、電話番号、web サイト URL、ロゴ、営業時間などの Us ページを作成します。
-ms.openlocfilehash: 65de115f2217948b1e57a1642ca3c6a105675898
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962503"
 ---
 # <a name="enter-your-business-information"></a>勤務先情報を入力する
 
@@ -25,7 +25,7 @@ Microsoft の予約では、web アプリ内の [勤務先情報] ページに�
    ![Microsoft の予約の [勤務先情報] ページの例](../media/bookings-business-info.png)
 
 > [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
+> 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
 
 ## <a name="provide-business-name-and-contact-information"></a>会社名と連絡先情報を指定する
 
@@ -41,7 +41,7 @@ Microsoft の予約では、web アプリ内の [勤務先情報] ページに�
 
 1. **プライバシーポリシー**と**用語 & 条件**の url を入力します。
 
-1. **[保存]** を選択します。
+1. [**保存**] を選択します。
 
 ## <a name="set-your-business-hours"></a>勤務時間を設定する
 
@@ -83,4 +83,4 @@ Microsoft の予約では、web アプリ内の [勤務先情報] ページに�
 
    ![[写真のアップロード] ボタンの画像](../media/bookings-upload-photo.png)
 
-1. **[保存]** を選択します。
+1. [**保存**] を選択します。

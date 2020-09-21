@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: Microsoft 予約の言語とタイムゾーンの設定を変更します。 予約が誤って作成された場合は、間違ったタイムゾーンに対して予約が設定されている可能性があります。
-ms.openlocfilehash: 07e5dde2a896610ee079063943aff24ec69ba721
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962433"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>Microsoft Bookings で言語とタイム ゾーンを設定する
 
 Microsoft の予約を使用していて、予約が間違った時刻に作成されている場合は、タイムゾーンの設定を変更する必要があります。 同様に、一部の予約が間違った言語である場合は、言語設定の変更が必要になることがあります。
 
 予約には、2つの異なる言語とタイムゾーンの設定があります。 最初の設定は予約予定表の言語とタイムゾーンを制御し、ログインしているユーザーの個人用予定表の Outlook on the web 設定を使用して設定されます。 2番目の設定は、顧客が使用するセルフサービス予約ページに影響し、そのページの言語とタイムゾーンのみを制御する [地域の設定] ページを使用して設定されます。
-
-> [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>予約予定表の言語とタイム ゾーンの設定
 
@@ -39,7 +36,7 @@ Microsoft の予約を使用していて、予約が間違った時刻に作成�
 
 1. [言語] また **は [現在のタイムゾーン** ] ボックスのドロップダウン矢印を選択し、目的の設定を選択して、言語またはタイムゾーンを変更します。
 
-1. **[保存]** をクリックします。 設定パネルが閉じ、web 上の Outlook が再起動し、新しい言語とタイムゾーンの設定が適用されます。
+1. [**保存**] をクリックします。 設定パネルが閉じ、web 上の Outlook が再起動し、新しい言語とタイムゾーンの設定が適用されます。
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>予約ページの言語とタイム ゾーンの設定
 

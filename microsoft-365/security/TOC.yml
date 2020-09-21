@@ -70,10 +70,24 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: テストの警告を生成する
               href: mtp/generate-test-alert.md
+        - name: 実稼働環境でパイロットを実行する
+          items:
+            - name: パイロットの概要
+              href: mtp/mtp-pilot.md
+            - name: プラン
+              href: mtp/mtp-pilot-plan.md
+            - name: 準備
+              href: mtp/prepare-mtpeval.md
+            - name: 攻撃のシミュレーション
+              href: mtp/mtp-pilot-simulate.md
+            - name: 閉じて要約する
+              href: mtp/mtp-pilot-close.md
         - name: 使い方ガイド
           items:
             - name: 試用版ラボまたはパイロット環境を作成する
               href: mtp/mtp-evaluation.md
+            - name: パイロット プレイブックを実行する
+              href: mtp/mtp-pilot.md
             - name: サポートされるサービスを展開する
               href: mtp/deploy-supported-services.md
             - name: Microsoft Threat Protection を有効にする
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: 自動調査および対応
               items:
-                - name: AIR の概要
+                - name: 自動調査および対応の概要
                   href: mtp/mtp-autoir.md
-                - name: 修復アクション
+                - name: 自動調査および対応機能の構成
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: 自動調査後の修復アクション
                   href: mtp/mtp-remediation-actions.md
-                - name: アクション センター
+                - name: アクション センターにアクセスする
                   href: mtp/mtp-action-center.md
+                - name: 保留中の修復アクションを承認または拒否する
+                  href: mtp/mtp-autoir-actions.md
                 - name: 自動調査の詳細と結果を表示する
                   href: mtp/mtp-autoir-results.md
-                - name: 保留中のアクションを承認または拒否する
-                  href: mtp/mtp-autoir-actions.md
                 - name: 誤検知/検出漏れを報告する
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 高度な検出
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: アプリの監視とレポート
                   href: mtp/monitor-apps.md
-            - name: API
-              items: null
         - name: 参照
           items:
             - name: アクセス許可と設定

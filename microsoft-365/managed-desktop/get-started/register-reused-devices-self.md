@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104572"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
@@ -21,7 +21,7 @@ ms.locfileid: "47289141"
 
 パートナーのプロセスは、パートナーが [デバイスを登録する手順](register-devices-partner.md)に記載されています。
 
-Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Microsoft Managed Desktop 管理ポータルを使用してデバイスを登録できます。
+Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Microsoft マネージドデスクトップにデバイスを登録するには、Microsoft エンドポイントマネージャーポータルを使用します。
 
 ## <a name="prepare-to-register-existing-devices"></a>既存のデバイスを登録するための準備
 
@@ -56,7 +56,7 @@ Microsoft エンドポイント構成マネージャーを使用して、Microso
 2. [監視] ワークスペースで、[ **レポート** ] ノードを展開し、[ **レポート**] を展開して、[ **ハードウェア-全般** ] ノードを選択します。 
 3. レポート、 **Windows 自動操縦デバイス情報**を実行し、結果を表示します。
 4. レポートビューアーで [ **エクスポート** ] アイコンを選択し、[ **CSV (コンマ区切り)** ] オプションを選択します。
-5. ファイルを保存した後は、Microsoft マネージドデスクトップに登録する予定のデバイスのみに結果をフィルター処理し、そのデータを Microsoft Managed Desktop [管理ポータル](https://aka.ms/mmdportal)にアップロードする必要があります。左側のナビゲーションウィンドウで [ **デバイス** ] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
+5. ファイルを保存した後で、Microsoft マネージドデスクトップに登録する予定のデバイスのみに結果をフィルター処理し、Microsoft マネージドデスクトップにデータをアップロードする必要があります。 Microsoft エンドポイントマネージャーを開き、[ **デバイス** ] メニューに移動して、[Microsoft Managed Desktop] セクションを探し、[ **デバイス**] を選択します。 [ **+ Register devices** ] を選択して、新しいデバイスを登録するためのフライインを開きます。
 
 
 詳細については [、「管理者ポータルを使用してデバイスを登録](#register-devices-by-using-the-admin-portal) する」を参照してください。
@@ -134,9 +134,9 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>管理ポータルを使用してデバイスを登録する
 
-Microsoft Managed Desktop [管理ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウで [ **デバイス** ] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
+[Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[ **デバイス**] を選択します。 [Microsoft Managed Desktop Devices] ワークスペースで、[ **+ デバイスの登録** ] を選択して、新しいデバイスを登録するためのフライインを開きます。
 
-[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -149,7 +149,7 @@ Microsoft Managed Desktop [管理ポータル](https://aka.ms/mmdportal)で、�
 1. [ **デバイスの登録**] を選択します。 デバイスは、 **AutopilotRegistrationRequested**としてマークされているデバイス**ブレード**上のデバイスの一覧に追加されます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは **ユーザーのための** 準備完了として表示され、ユーザーが使用を開始するのを待っています。
 
 
-メインの **Microsoft Managed Desktop-Devices** ページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
+メインページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
 
 | State | 説明 |
 |---------------|-------------|

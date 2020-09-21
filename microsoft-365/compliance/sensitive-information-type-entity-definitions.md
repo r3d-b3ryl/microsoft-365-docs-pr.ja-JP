@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 8716a6d4e29f94ff3d7bedaaadece2449fcec8a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d29732051f2a7c023992287a131f3bb68bd28a4d
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104501"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -212,16 +212,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 11桁の数字 (オプションの区切り記号):
 
 - 2桁の数字
-- オプションのハイフンまたはスペース
+- 省略可能なハイフンまたはスペース
 - 3桁の数字
-- オプションのハイフンまたはスペース
+- 省略可能なハイフンまたはスペース
 - 3桁の数字
-- オプションのハイフンまたはスペース
+- 省略可能なハイフンまたはスペース
 - 3桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -275,7 +275,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -477,7 +477,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -600,7 +600,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -790,7 +790,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -851,7 +851,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -924,7 +924,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -1507,7 +1507,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -1653,7 +1653,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -1723,7 +1723,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 
 ### <a name="definition"></a>定義
@@ -1785,7 +1785,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -1848,7 +1848,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -1925,7 +1925,7 @@ Registro de 識別子 Dade (RIC) (新しい形式):
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -2034,7 +2034,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -2650,7 +2650,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -2734,7 +2734,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -2794,7 +2794,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -3377,7 +3377,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -3453,7 +3453,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -3811,17 +3811,17 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 9桁の数字 (古い形式):
 - 生年月日を表す6桁の数字
-- スラッシュ
+- 省略可能なスラッシュ
 - 3桁の数字
 
 10桁の数字 (新しい形式):
 - 生年月日を表す6桁の数字
-- スラッシュ 
+- 省略可能なスラッシュ 
 - 4桁の数字 (最後の桁はチェックディジット)
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -3922,7 +3922,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -3978,7 +3978,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -4074,7 +4074,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -4196,7 +4196,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -4252,7 +4252,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -4344,7 +4344,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -4461,7 +4461,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -4845,24 +4845,24 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - [チェコ語](#czech-personal-identity-number)
 - [デンマーク](#denmark-personal-identification-number)
 - [エストニア](#estonia-personal-identification-code)
-- [フィンランド](#finland-national-identification-number)
-- [France](#france-national-identification-card-cni)
+- [フィンランド](#finland-national-id)
+- [France](#france-national-id-card-cni)
 - [Germany](#germany-identity-card-number)
 - [ギリシャ](#greece-national-id-card)
-- [ハンガリー](#hungary-national-identification-number)
-- [アイルランド](#ireland-national-identification-number)
-- [イタリア](#italy-national-identification-number)
-- [ラトビア](#latvia-national-identification-number)
-- [Lithuania](#lithuania-national-identification-number)
-- [ルクセンブルク](#luxemburg-national-identification-number)
-- [マルタ](#malta-national-identification-number)
-- [オランダ](#netherlands-national-identification-number)
+- [ハンガリー](#hungary-personal-identification-number)
+- [アイルランド](#ireland-personal-public-service-pps-number)
+- [イタリア](#italy-fiscal-code)
+- [ラトビア](#latvia-personal-code)
+- [Lithuania](#lithuania-personal-code)
+- [ルクセンブルク](#luxemburg-national-identification-number-natural-persons)
+- [マルタ](#malta-identity-card-number)
+- [オランダ](#netherlands-citizens-service-bsn-number)
 - [ポーランド](#poland-national-id-pesel)
 - [Portugal](#portugal-citizen-card-number)
-- [ルーマニア](#romania-national-identification-number)
-- [スロバキア](#slovakia-national-identification-number)
-- [スロベニア](#slovenia-national-identification-number)
-- [スペイン](#spain-national-identification-number)
+- [ルーマニア](#romania-personal-numeric-code-cnp)
+- [スロバキア](#slovakia-personal-number)
+- [スロベニア](#slovenia-unique-master-citizen-number)
+- [スペイン](#spain-dni)
 - [U.K.](#uk-national-insurance-number-nino)                                        
 
 
@@ -4924,26 +4924,33 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 これらのエンティティは、EU 税務識別番号の機密情報の種類に含まれています。
 
 - [Austria](#austria-tax-identification-number)
+- [Belgium](#belgium-national-number)
+- [ブルガリア](#bulgaria-uniform-civil-number)
+- [Croatia](#croatia-identity-card-number)
 - [キプロス](#cyprus-tax-identification-number)
+- [チェコ語](#czech-personal-identity-number)
+- [デンマーク](#denmark-personal-identification-number)
+- [エストニア](#estonia-personal-identification-code)
+- [フィンランド](#finland-national-id)
 - [France](#france-tax-identification-number)
 - [Germany](#germany-tax-identification-number)
 - [ギリシャ](#greece-tax-identification-number)
 - [ハンガリー](#hungary-tax-identification-number)
-- [アイルランド](#ireland-tax-identification-number)
-- [イタリア](#italy-tax-identification-number)
-- [ラトビア](#latvia-tax-identification-number)
-- [Lithuania](#lithuania-tax-identification-number)
-- [ルクセンブルク](#luxemburg-tax-identification-number)
+- [アイルランド](#ireland-personal-public-service-pps-number)
+- [イタリア](#italy-fiscal-code)
+- [ラトビア](#latvia-personal-code)
+- [Lithuania](#lithuania-personal-code)
+- [ルクセンブルク](#luxemburg-national-identification-number-non-natural-persons)
 - [マルタ](#malta-tax-identification-number)
 - [オランダ](#netherlands-tax-identification-number)
 - [ポーランド](#poland-tax-identification-number)
 - [Portugal](#portugal-tax-identification-number)
-- [ルーマニア](#romania-tax-identification-number)
-- [スロバキア](#slovakia-tax-identification-number)
+- [ルーマニア](#romania-personal-numeric-code-cnp)
+- [スロバキア](#slovakia-personal-number)
 - [スロベニア](#slovenia-tax-identification-number)
 - [スペイン](#spain-tax-identification-number)
 - [スウェーデン](#sweden-tax-identification-number)
-- [U.K.](#uk-tax-identification-number)
+- [U.K.](#uk-unique-taxpayer-reference-number)
 
 
 ## <a name="finland-drivers-license-number"></a>フィンランドの運転免許証番号
@@ -5054,7 +5061,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - terveyskortti
 
 
-## <a name="finland-national-identification-number"></a>フィンランドの米国の識別番号
+## <a name="finland-national-id"></a>フィンランドの国民 ID
 
 ### <a name="format"></a>フォーマット
 
@@ -5070,7 +5077,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -5208,7 +5215,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -5355,7 +5362,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 個別の d'assuréソーシャル
 
 
-## <a name="france-national-identification-card-cni"></a>フランスの国民識別カード (CNI)
+## <a name="france-national-id-card-cni"></a>フランスの国民 id カード (CNI)
 
 ### <a name="format"></a>フォーマット
 
@@ -5477,7 +5484,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -5561,7 +5568,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -5636,7 +5643,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -5693,7 +5700,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -5892,7 +5899,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -5982,7 +5989,7 @@ bnationalit
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -6057,7 +6064,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -6323,7 +6330,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -6447,9 +6454,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - vezetoi engedely
 
 
-## <a name="hungary-national-identification-number"></a>ハンガリーの国の識別番号
-
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="hungary-personal-identification-number"></a>ハンガリーの個人識別番号
 
 ### <a name="format"></a>フォーマット
 
@@ -6459,14 +6464,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 11 桁の数字:
   
--  性別に対応する1桁の数字 (1-オス、2-女性、その他の数字は1900または市民が二重市民権を持つ市民の場合もあります) 
+- 性別に対応する1桁の数字 (1-オス、2-女性、その他の数字は1900または市民が二重市民権を持つ市民の場合もあります) 
 - 誕生日に対応する6桁の数字 (YYMMDD という)
 - シリアル番号に対応する3桁の数字
 - 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -6480,15 +6485,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_hungary_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Personal Identification Number -->
+      <Entity id="7b5cc218-7046-47d9-80c9-f325b50896ca" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_national_id_card" />
           <Match idRef="Keywords_hungary_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_national_id_card" />
-</Pattern>
-</Entity>
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_hungary_eu_telephone_number" />
+            <Match idRef="Keywords_hungary_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -6561,7 +6571,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -6612,8 +6622,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ## <a name="hungary-tax-identification-number"></a>ハンガリーの税識別番号
 
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
 ### <a name="format"></a>フォーマット
 
 スペースまたは区切り文字を含まない10桁の数字
@@ -6623,13 +6631,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 10桁の数字:
   
 - "8" である1桁の数字 
-- 日付01/01/1867 と個人の誕生日との間の日数に対応する5桁の数字
-- 同じ日に生まれた個人を区別する機会によって生成された番号に対応する3桁の数字
+- 8 桁の数字
 - 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -6643,16 +6650,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_hungary_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Tax Identification Number -->
+      <Entity id="ede42eb4-59d9-49eb-9603-d7853fbda91d" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_tax_file_number" />
           <Match idRef="Keywords_hungary_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_hungary_eu_telephone_number" />
+            <Match idRef="Keywords_hungary_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -6701,7 +6712,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -6759,7 +6770,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -6802,7 +6813,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -6903,7 +6914,7 @@ ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -7127,89 +7138,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ceadúnas tiomána
 
 
-## <a name="ireland-national-identification-number"></a>アイルランドの国の識別番号
-
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類にのみ含まれています。
-
-### <a name="format"></a>フォーマット
-
-指定したパターンの文字、数字、スペースの9文字の組み合わせ
-  
-### <a name="pattern"></a>パターン
-
-指定したパターンの文字、数字、スペースの9文字の組み合わせ
-  
-01年 1 2013 月から今すぐに。
-  
-- 7 桁の数字  
-- 1つのチェックディジット
-- 1つのスペースまたは大文字の "W" (大文字小文字を区別)
-    
-01年1月2013前:
-  
-- 7 桁の数字  
-- 1つのチェックディジット
-- 1つのスペースまたは大文字 (大文字と小文字を区別)
-    
-### <a name="checksum"></a>チェックサム
-
-必要
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
-- 関数は、パターンに一致するコンテンツを検索します。
-- From キーワードが見つかりました。
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-  
-- 関数は、パターンに一致するコンテンツを検索します。
-    
-```xml
- <!--Ireland national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_ireland_eu_national_id_card" />
-          <Match idRef="Keywords_ireland_eu_national_id_card" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_ireland_eu_national_id_card" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
-
-- クライアント id サービス
-- identification number
-
-- 個人 id 番号
-- 個人用パブリックサービス番号
-- 個人サービスいいえ
-- phearsanta seirbhíse poiblí
-- pps no
-- pps 番号
-- pps サービスいいえ
-- pps uimh
-- ppsn
-- ppsno#
-- ppsno
-- パブリックサービスいいえ
-- publicserviceno ありません#
-- publicserviceno ありません
-- 収益および社会保険番号
-- rsi no
-- rsi 番号
-- の rs
-- seirbhís aitheantais クライアント
-- uimh.psp
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
-
 ## <a name="ireland-passport-number"></a>アイルランドのパスポート番号
 
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
@@ -7277,19 +7205,17 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 新しい形式 (1 Jan 2013 以降):
 - 7桁の数字 
 - アルファベットのチェックディジットである文字 (大文字小文字の区別なし) 
-- 文字 "A" または "H" (大文字小文字の区別なし)
+- A ~ I の範囲のオプションの文字、または "W"
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_ireland_pps は、このパターンに一致するコンテンツを検索します。
-- 次のいずれかの条件に該当する:
-    - Keyword_ireland_pps からのキーワードが見つかりました。
-    - 関数 Func_eu_date が適切な日付形式の日付を検出した。
+- Keywords_ireland_eu_national_id_card からのキーワードが見つかりました。
 - チェックサムが渡される。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
@@ -7297,81 +7223,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - チェックサムが渡される。
 
 ```xml
-<!-- Ireland Personal Public Service (PPS) Number -->
-<Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_ireland_pps"/>
-     <Any minMatches="1">
-  <Match idRef="Keyword_ireland_pps"/>
-  <Match idRef="Func_eu_date"/>
-     </Any>
-  </Pattern>
-  <Pattern confidenceLevel="65">
-     <IdMatch idRef="Func_ireland_pps"/>
-  </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keyword_ireland_pps"></a>Keyword_ireland_pps
-
-- Personal Public Service Number 
-- PPS Number 
-- PPS Num 
-- PPS No. 
-- PPS # 
-- PPS# 
-- PPSN 
-- Public Services Card 
-- Uimhir Phearsanta Seirbhíse Poiblí 
-- Uimh. PSP 
-- PSP 
-
-
-## <a name="ireland-tax-identification-number"></a>アイルランドの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-7桁の数字の後にスペースまたは区切り文字を含まない文字
-  
-### <a name="pattern"></a>パターン
-
-7桁の数字の後に、文字を続けます。
-  
-- 7桁の数字 
-- 1文字 (大文字小文字を区別しない)
-    
-### <a name="checksum"></a>チェックサム
-
-該当なし
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_ireland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード  `Keywords_ireland_eu_tax_file_number` が見つかりました。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_ireland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Personal Public Service (PPS) Number -->
+      <Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_ireland_eu_tax_file_number" />
-          <Match idRef="Keywords_ireland_eu_tax_file_number" />
+          <IdMatch idRef="Func_ireland_pps" />
+          <Match idRef="Keywords_ireland_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_ireland_eu_tax_file_number" />
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_ireland_pps" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_ireland_eu_tax_file_number"></a>Keywords_ireland_eu_tax_file_number
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 - クライアント id サービス
 - identification number
@@ -7382,11 +7248,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - phearsanta seirbhíse poiblí
 - pps no
 - pps 番号
+- pps num
 - pps サービスいいえ
-- pps uimh
 - ppsn
 - ppsno#
 - ppsno
+- psp
 - パブリックサービスいいえ
 - publicserviceno ありません#
 - publicserviceno ありません
@@ -7395,10 +7262,27 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - rsi 番号
 - の rs
 - seirbhís aitheantais クライアント
-- uimh.psp
+- uimh
 - uimhir aitheantais chánach
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
+- tax id
+
+- 税 id 番号
+- 税識別番号
+- 課税番号#
+- 課税番号
+- 課税番号
+- 税務登録番号
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- は#
 
 
 ## <a name="israel-bank-account-number"></a>イスラエルの銀行口座番号
@@ -7462,7 +7346,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -7534,8 +7418,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - numero di patente di guida 
 - patente di guida 
 
-## <a name="italy-national-identification-number"></a>イタリアの米国の識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="italy-fiscal-code"></a>イタリアの会計年度コード
 
 ### <a name="format"></a>フォーマット
 
@@ -7554,7 +7437,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -7566,16 +7449,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_italy_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
-<!-- Italy national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Italy Fiscal Code -->
+      <Entity id="4cd79172-8da9-4ff5-9188-98b1e7e2eca6" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_italy_eu_national_id_card" />
           <Match idRef="Keywords_italy_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_italy_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -7666,90 +7549,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - numéro passeport
 
 
-## <a name="italy-tax-identification-number"></a>イタリアの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-指定したパターンの16桁の文字と数字
-  
-### <a name="pattern"></a>パターン
-
-16桁の文字と数字:
-  
-- ファミリ名の最初の3つの子音に対応する3つの文字 
-- 最初の名前の最初、3番目、および4番目の子音に対応する3つの文字
-- 誕生年の最後の桁に対応する2桁の数字
-- 誕生日に対応する1桁の数字。文字はアルファベット順に使用されますが、A から E、H、L、M、P、R から T までの文字が使用されます (つまり、1月は A と10月は R)。
-- 誕生日に対応する2桁の数字。40が男性と区別するために女性の誕生日に追加されます。
-- 個人が生まれた municipality に固有のエリアコードに対応する4桁の数字。国全体のコードが外国の国に使用されます。
-- 1つのチェックディジット
-    
-### <a name="checksum"></a>チェックサム
-
-必要
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_italy_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード  `Keywords_italy_eu_tax_file_number` が見つかりました。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_italy_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_italy_eu_tax_file_number" />
-          <Match idRef="Keywords_italy_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_italy_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_italy_eu_tax_file_number"></a>Keywords_italy_eu_tax_file_number
-
-- codice 会計
-- codice fiscale
-- codice id 個人 ale
-- codice 個人 ale
-- 会計コード
-- numero certificato 個人 ale
-- numero di 識別子/azione fiscale
-- numero id 個人 ale
-- numero 個人 ale
-- 個人証明書番号
-- 個人コード
-- 個人 id コード
-- 個人 id 番号
-- personalcodeno#
-- 税コード
-- tax id
-
-- 税 id 番号
-- 税識別番号
-- 課税 id 番号
-- 課税番号#
-- 課税番号
-- 課税番号
-- 税務登録番号
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- tin id
-- tin no
-- は#
-
-
 ## <a name="italy-value-added-tax-number"></a>イタリアの付加価値税番号
 
 ### <a name="format"></a>フォーマット
@@ -7767,7 +7566,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -7993,7 +7792,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -8051,7 +7850,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -8323,14 +8122,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - dlno#
 - autovadītāja apliecība
 
-## <a name="latvia-national-identification-number"></a>ラトビア国立識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="latvia-personal-code"></a>ラトビアの個人コード
 
 ### <a name="format"></a>フォーマット
 
-11桁の数字と、指定された形式のハイフン
+11桁の数字と任意指定のハイフン
   
 ### <a name="pattern"></a>パターン
+
+古い形式
 
 11桁の数字とハイフン:
   
@@ -8338,31 +8138,54 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ハイフン1つ
 - 誕生日の世紀に対応する1桁の数字 (「0」、20世紀の場合は「1」、21世紀の場合は「2」)
 - ランダムに生成される4桁の数字
+
+新しい形式
+
+11 桁の数字
+
+- 2桁の "32"
+- 9 桁の数字
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_latvia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数  `Func_latvia_eu_national_id_card` または regex が `Regex_latvia_eu_national_id_card_new_format` パターンに一致するコンテンツを検出した。 
 - From キーワード  `Keywords_latvia_eu_national_id_card` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_latvia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数  `Func_latvia_eu_national_id_card` または regex が `Regex_latvia_eu_national_id_card_new_format` パターンに一致するコンテンツを検出した。 
     
 ```xml
-<!-- Latvia national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Personal Code -->
+      <Entity id="03fcf763-27c2-49ed-9422-2641c6c895c9" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_latvia_eu_national_id_card" />
           <Match idRef="Keywords_latvia_eu_national_id_card" />
         </Pattern>
- <Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_latvia_eu_national_id_card" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_latvia_eu_telephone_number" />
+            <Match idRef="Keywords_latvia_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_national_id_card_new_format" />
+          <Match idRef="Keywords_latvia_eu_national_id_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_latvia_eu_national_id_card_new_format" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_latvia_eu_telephone_number" />
+            <Match idRef="Keywords_latvia_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -8479,117 +8302,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passport いいえ
 - pase numurs    
 
-## <a name="latvia-tax-identification-number"></a>ラトビアの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-スペースまたは区切り文字を含まない11桁の数字
-  
-### <a name="pattern"></a>パターン
-
-指定したパターンの11桁の数字
-  
-- 誕生日に対応する6桁の数字 (DDMMYY) 
-- "0" が19世紀に対応する1桁の数字、"1" は20世紀に、"2" は21世紀に対応します。
-- 4桁の数字
-    
-### <a name="checksum"></a>チェックサム
-
-必要
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_latvia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード  `Keywords_latvia_eu_tax_file_number` が見つかりました。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_latvia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_latvia_eu_tax_file_number" />
-          <Match idRef="Keywords_latvia_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_latvia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_latvia_eu_tax_file_number"></a>Keywords_latvia_eu_tax_file_number
-
-- 管理用番号
-- alvas nē
-- 出生地番号
-- 市民番号
-- 民事番号
-- 電子全数調査番号
-- 電子番号
-- 会計コード
-- 医療ユーザー番号
-- rid#
-- id-コード
-- identification number
-
-- identifikācijas numurs
-- id-番号
-- 個別の番号
-- latvija alva
-- nacionālais id
-- 
-national id
-- 国別識別番号
-- 国内の id 番号
-- national insurance number
-
-- 国内登録番号
-- nodokļa numurs
-- nodokļu id
-- nodokļu identifikācija numurs
-- 個人証明書番号
-- 個人コード
-- 個人 id コード
-- 個人 id 番号
-- 個人識別コード
-- 個人識別子
-- 個人の id 番号
-- 個人番号
-- 個人の数値コード
-- personalcodeno#
-- ペルソナ kods
-- 母集団識別コード
-- パブリックサービス番号
-- 
-registration number
-- 収益番号
-- 社会保険番号
-- social security number
-
-- 都道府県税コード
-- 税ファイル番号
-- tax id
-
-- 税 id 番号
-- 税識別番号
-- 課税番号#
-- 課税番号
-- 課税番号
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- tin id
-- tin no
-- は#
-- voter の番号
 
 ## <a name="lithuania-drivers-license-number"></a>リトアニア運転免許証番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
@@ -8640,8 +8352,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - dlno#
 - vエア uotojo pažymėjimas
 
-## <a name="lithuania-national-identification-number"></a>リトアニア国立識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="lithuania-personal-code"></a>リトアニアの個人コード
 
 ### <a name="format"></a>フォーマット
 
@@ -8651,35 +8362,39 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 スペースと区切り文字を含まない11桁の数字:
   
-- ユーザーの性別および誕生世紀に対応する1桁の数字
+- ユーザーの性別および誕生世紀に対応する1桁の数字 (1-6)
 - 誕生日に対応する6桁の数字 (YYMMDD という) 
 - 誕生日のシリアル番号に対応する3桁の数字
 - 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_lithuania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワード  `Keywords_lithuania_eu_national_id_card` が見つかりました。 
+- 関数は、  `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- From キーワード  `Keywords_lithuania_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_lithuania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
-<!-- Lithuania national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Personal Code -->
+      <Entity id="cd6d3786-8ec3-4524-a2cf-1e0095379171" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_lithuania_eu_national_id_card" />
-          <Match idRef="Keywords_lithuania_eu_national_id_card" />
-        </Pattern> 
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_lithuania_eu_national_id_card" />
+          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
+          <Match idRef="Keywords_lithuania_eu_tax_file_number" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_lithuania_eu_telephone_number" />
+            <Match idRef="Keywords_lithuania_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -8760,79 +8475,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passport いいえ
 - 大き o numeris
 
-## <a name="lithuania-tax-identification-number"></a>リトアニア税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-11桁の数字 (スペースまたは区切り文字なし)
-  
-### <a name="pattern"></a>パターン
-
-11 桁の数字
-  
-### <a name="checksum"></a>チェックサム
-
-該当なし
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-- From キーワード  `Keywords_lithuania_eu_tax_file_number` が見つかりました。 
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_lithuania_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
-          <Match idRef="Keywords_lithuania_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_lithuania_eu_tax_file_number"></a>Keywords_lithuania_eu_tax_file_number
-
-- asmeninis skaitmeninis das
-- asmens の das
-- 市民サービス番号
-- mokesčių id
-- mokesčių identifikavimas numeris
-- mokesčių identifikavimo numeris
-- mokesčių numeris
-- 国別の識別番号
-- 個人コード
-- piliečio paslaugos numeris
-- tax id
-
-- 税 id 番号
-- 税識別番号
-- 課税番号#
-- 課税番号
-- 課税番号
-- 税務登録番号
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- tin id
-- tin no
-- は#
-- unikalus identifikavimo のための das
-- unikalus identifikavimo numeris
-- 一意の識別番号
-- 一意の id 番号
-- uniqueidentityno#
 
 ## <a name="luxemburg-drivers-license-number"></a>ルクセンブルグドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
@@ -8883,39 +8525,48 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - dlno#
 - fahて fabnis
 
-## <a name="luxemburg-national-identification-number"></a>ルクセンブルク国立識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="luxemburg-national-identification-number-natural-persons"></a>ルクセンブルク national 識別番号 (自然人数)
 
 ### <a name="format"></a>フォーマット
 
-スペースと区切り文字を含まない11桁の数字
+13桁の数字、スペースまたは区切り記号なし
   
 ### <a name="pattern"></a>パターン
 
-11 桁の数字
+13 桁の数字:
   
-- ユーザーの性別および誕生世紀に対応する1桁の数字
-- 誕生日に対応する6桁の数字 (YYMMDD という) 
-- 誕生日のシリアル番号に対応する3桁の数字
-- 1つのチェックディジット
+- 11 桁の数字 
+- 2つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+はい
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現は、  `Regex_luxemburg_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数は、  `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_luxemburg_eu_national_id_card` が見つかりました。 
-    
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数は、  `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+
+
 ```xml
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_luxemburg_eu_national_id_card" />
+      <!-- Luxemburg National Identification Number (Natural persons) -->
+      <Entity id="aaf661ed-29ec-426d-8bf9-880cad298ebb" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
           <Match idRef="Keywords_luxemburg_eu_national_id_card" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_luxemburg_eu_telephone_number" />
+            <Match idRef="Keywords_luxemburg_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -8983,44 +8634,53 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passport いいえ
 - passnummer
 
-## <a name="luxemburg-tax-identification-number"></a>ルクセンブルク税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>ルクセンブルク national 識別番号 (非自然人数)
 
 ### <a name="format"></a>フォーマット
 
-13桁の数字、スペースまたは区切り記号なし
+11 桁の数字
   
 ### <a name="pattern"></a>パターン
 
-13 桁の数字:
+11 桁の数字
   
-- 11 桁の数字 
-- 2つのチェックディジット
+- 2桁の数字
+- 省略可能なスペース 
+- 3桁の数字 
+- 省略可能なスペース
+- 3桁の数字 
+- 省略可能なスペース
+- 2桁の数字
+- 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_luxemburg_eu_tax_file_number_non_natural` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_luxemburg_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_luxemburg_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数は、  `Func_luxemburg_eu_tax_file_number_non_natural` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg National Identification Number (Non-natural persons) -->
+      <Entity id="84bffa3a-d805-4788-a613-b1e4df3804cf" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number_non_natural" />
           <Match idRef="Keywords_luxemburg_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number_non_natural" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_luxemburg_eu_telephone_number" />
+            <Match idRef="Keywords_luxemburg_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -9188,8 +8848,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - dlno#
 - liċenzja tas-sewqan
 
-## <a name="malta-national-identification-number"></a>マルタ国立識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="malta-identity-card-number"></a>マルタの id カード番号
 
 ### <a name="format"></a>フォーマット
 
@@ -9200,7 +8859,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 7桁の数字の後に1文字。
   
 - 7桁の数字 
-- 1つの大文字 (大文字と小文字を区別)
+- "M, G, A, P, L, H, B, Z" (大文字小文字の区別なし) の1文字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -9216,16 +8875,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 正規表現は、  `Regex_malta_eu_national_id_card` パターンに一致するコンテンツを検出します。 
     
 ```xml
- <!--Malta national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Identity Card Number -->
+      <Entity id="854b36b3-a388-4ac8-a4ec-677c2b5e4356" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_national_id_card" />
           <Match idRef="Keywords_malta_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="65">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Regex_malta_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -9289,7 +8948,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - numru tal-passaport
 
 ## <a name="malta-tax-identification-number"></a>マルタ税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -9317,23 +8975,30 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_malta_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- Regex を  `Regex_malta_eu_tax_file_number`  検索するか、 `Regex_malta_eu_tax_file_number_non_maltese_national` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_malta_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_malta_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- Regex を  `Regex_malta_eu_tax_file_number` 検索するか、 `Regex_malta_eu_tax_file_number_non_maltese_national` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Tax ID Number -->
+      <Entity id="ec830c63-65f4-45d0-9d8c-910dc8334b20" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_malta_eu_tax_file_number" />
+          <IdMatch idRef="Regex_malta_eu_tax_file_number" />
           <Match idRef="Keywords_malta_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="65">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Regex_malta_eu_tax_file_number" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_malta_eu_tax_file_number_non_maltese_national" />
+          <Match idRef="Keywords_malta_eu_tax_file_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Regex_malta_eu_tax_file_number_non_maltese_national" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -9389,30 +9054,28 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_netherlands_bsn は、このパターンに一致するコンテンツを検索します。
 - Keyword_netherlands_bsn からのキーワードが見つかりました。
-- 関数 Func_eu_date2 は、日付を正しい日付形式で検索します。
 - チェックサムが渡される。
 
 ```xml
-<!-- Netherlands Citizen's Service (BSN) Number -->
-<Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
-  <Pattern confidenceLevel="85">
-       <IdMatch idRef="Func_netherlands_bsn" /> 
-       <Match idRef="Keyword_netherlands_bsn" /> 
-       <Match idRef="Func_eu_date2" /> 
-  </Pattern>
-</Entity>
+      <!-- Netherlands Citizen's Service (BSN) Number -->
+      <Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_netherlands_bsn" />
+          <Match idRef="Keywords_netherlands_eu_national_id_card" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keyword_netherlands_bsn"></a>Keyword_netherlands_bsn
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
   
 - bsn#
 - bsn
@@ -9487,68 +9150,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - rijbewijs
 - rijbewijsnummer
 
-## <a name="netherlands-national-identification-number"></a>オランダの国の識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-スペースまたは区切り文字を含まない9桁の数字
-  
-### <a name="pattern"></a>パターン
-
-9桁の数字
-  
-### <a name="checksum"></a>チェックサム
-
-必要
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_netherlands_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-- From キーワードが見つかりました。
-    
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_netherlands_eu_national_id_card` パターンに一致するコンテンツを検索します。 
-    
-```xml
- <!--Netherland national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_netherlands_eu_national_id_card" />
-          <Match idRef="Keywords_netherlands_eu_national_id_card" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_netherlands_eu_national_id_card" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
-
-- bsn#
-- bsn
-- burgerservicenummer
-- 市民サービス番号
-- 個人番号
-- 個人番号
-- 個人の数値コード
-- 個人関連の番号
-- persoonlijk nummer
-- persoonlijke numerieke コード
-- persoonsgebonden
-- persoonsnummer
-- sociaal-fiscaal nummer
-- 社会会計番号
-- sofi
-- sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
-- 一意の識別番号
-- 一意の id 番号
-- uniqueidentityno#
 
 ## <a name="netherlands-passport-number"></a>オランダのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
@@ -9594,7 +9195,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - paspoortnummer
 
 ## <a name="netherlands-tax-identification-number"></a>オランダの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -9606,7 +9206,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -9614,20 +9214,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_netherlands_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_netherlands_eu_tax_file_number` が見つかりました。 
     
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数は、  `Func_netherlands_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Tax Identification Number -->
+      <Entity id="01f42a64-eba7-4892-a67b-398237e4ade2" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_netherlands_eu_tax_file_number" />
           <Match idRef="Keywords_netherlands_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_netherlands_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -9692,7 +9292,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -9749,7 +9349,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -9799,7 +9399,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -9912,7 +9512,7 @@ international driving permit
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -9960,7 +9560,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -10009,7 +9609,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -10060,7 +9660,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -10209,7 +9809,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -10242,7 +9842,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
    
 ## <a name="poland-national-id-pesel"></a>ポーランドの国民 ID (PESEL)
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -10250,11 +9849,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-11 桁の連続する数字
+- YYMMDD というの形式で生年月日を表す6桁の数字
+- 4桁の数字
+- 1つのチェックディジット
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -10263,14 +9864,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_pesel_identification_number のキーワードを検出した。
 - チェックサムが渡される。
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数 Func_pesel_identification_number がパターンに一致するコンテンツを検出した。
+- チェックサムが渡される。
+
 ```xml
-<!-- Poland National ID (PESEL) -->      
-<Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
-      <Pattern confidenceLevel="85">
+      <!-- Poland National ID (PESEL) -->
+      <Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_pesel_identification_number" />
           <Match idRef="Keyword_pesel_identification_number" />
-      </Pattern>
-</Entity>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_pesel_identification_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -10301,7 +9909,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -10346,7 +9954,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -10390,7 +9998,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 
 ## <a name="poland-tax-identification-number"></a>ポーランドの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -10402,7 +10009,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -10410,20 +10017,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_poland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_poland_eu_tax_file_number` が見つかりました。 
     
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_poland_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
-    
+  
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Tax Identification Number -->
+      <Entity id="1ff28b4d-40f2-49e9-b677-9606a88e2bca" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_poland_eu_tax_file_number" />
           <Match idRef="Keywords_poland_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_poland_eu_tax_file_number" />
-        </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -10461,9 +10063,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 
 ## <a name="portugal-citizen-card-number"></a>ポルトガルの市民カード番号
-- この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
-- この機密情報の種類エンティティは、EU 社会保障番号または同等の ID の機密情報の種類に含まれています。
-
 
 ### <a name="format"></a>フォーマット
 
@@ -10616,19 +10215,22 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - número do passaporte
 
 ## <a name="portugal-tax-identification-number"></a>ポルトガルの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
-スペースまたは区切り文字を含まない9桁の数字
+省略可能なスペースを含む9桁の数字
   
 ### <a name="pattern"></a>パターン
 
-9桁の数字
+- 3桁の数字
+- 省略可能なスペース
+- 3桁の数字
+- 省略可能なスペース
+- 3桁の数字
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -10636,20 +10238,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_portugal_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_portugal_eu_tax_file_number` が見つかりました。 
     
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数は、  `Func_portugal_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Tax Identification Number -->
+      <Entity id="65372402-3131-4f1e-9983-4439841d1f15" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_portugal_eu_tax_file_number" />
           <Match idRef="Keywords_portugal_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_portugal_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -10733,8 +10335,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - dlno#
 - permis de conducere
 
-## <a name="romania-national-identification-number"></a>ルーマニア国立識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="romania-personal-numeric-code-cnp"></a>ルーマニアの個人数値コード (CNP)
 
 ### <a name="format"></a>フォーマット
 
@@ -10742,11 +10343,14 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="pattern"></a>パターン
 
-13 桁の数字
-  
+- 1-9 から1桁の数字
+- 誕生日を表す6桁の数字 (YYMMDD という)
+- 01-52 または99の2桁の数字
+- 4桁の数字
+
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -10758,16 +10362,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_romania_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!--Romania national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Personal Numerical Code (CNP) -->
+      <Entity id="eb5fa399-fe28-4c67-8188-d63a616ed89c" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_romania_eu_national_id_card" />
           <Match idRef="Keywords_romania_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_romania_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -10864,92 +10468,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - ルーマニアのパスポート番号
 - passport いいえ
 - numărul pașaportului
-
-## <a name="romania-tax-identification-number"></a>ルーマニアの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-13桁の数字、スペースまたは区切り記号なし
-  
-### <a name="pattern"></a>パターン
-
-13 桁の数字
-  
-### <a name="checksum"></a>チェックサム
-
-該当なし
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現は、  `Regex_romania_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_romania_eu_tax_file_number` が見つかりました。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_romania_eu_tax_file_number" />
-          <Match idRef="Keywords_romania_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_romania_eu_tax_file_number"></a>Keywords_romania_eu_tax_file_number
-
-- cnp#
-- cnp
-- cod 識別子 (個人)
-- cod 数値個人
-- cod の識別子は
-- codnumericpersonal#
-- codul 会計 nr。
-- fiscală nr を識別子#
-- id-ul taxei
-- 保険番号
-- insurancenumber#
-- national id#
-- 
-national id
-- 国別の識別番号
-- număr 識別子の個人情報
-- număr 識別子縦
-- număr 個人用非 ic
-- număridentitate#
-- număridentitate
-- numărpersonalunic#
-- numărpersonalunic
-- număru de 識別子は fiscală
-- numărul de 識別子は fiscală
-- 個人の数値コード
-- pin#
-- pin
-- 税ファイル番号
-- 税ファイル番号
-- tax id
-
-- 税 id 番号
-- 税識別番号
-- 課税番号#
-- 課税番号
-- 課税番号
-- 税務登録番号
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- tin id
-- tin no
-- は#
-- 一意の識別番号
-- 一意の id 番号
-- uniqueidentityno#
-- uniqueidentityno
 
 
 ## <a name="russia-passport-number-domestic"></a>ロシアのパスポート番号 (国内)
@@ -11119,7 +10637,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -11210,20 +10728,22 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - dlno#
 - vodičský preukaz
 
-## <a name="slovakia-national-identification-number"></a>スロバキア国立識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="slovakia-personal-number"></a>スロバキアの個人番号
 
 ### <a name="format"></a>フォーマット
 
-1つの円記号を含む10桁の数字
+省略可能な円記号を含む9桁または10桁の数字
   
 ### <a name="pattern"></a>パターン
 
-1つの円記号を含む10桁の数字:
+- 誕生日を表す6桁の数字
+- 省略可能なスラッシュ (/)
+- 3桁の数字
+- 1つのオプションのチェックディジット
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -11231,20 +10751,21 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_slovakia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_slovakia_eu_national_id_card` が見つかりました。 
     
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数は、  `Func_slovakia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- Slovakia national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Personal Number -->
+      <Entity id="951c26b7-3b35-4f73-924b-15dd599cb9ab" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_slovakia_eu_national_id_card" />
           <Match idRef="Keywords_slovakia_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_slovakia_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
+    </Version>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -11339,89 +10860,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - passport いいえ
 - číslo/
 
-## <a name="slovakia-tax-identification-number"></a>スロバキアの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
-### <a name="format"></a>フォーマット
-
-スペースまたは区切り文字を含まない10桁の数字
-  
-### <a name="pattern"></a>パターン
-
-10桁の数字
-  
-### <a name="checksum"></a>チェックサム
-
-該当なし
-  
-### <a name="definition"></a>定義
-
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現は、  `Regex_slovakia_eu_tax_file_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_slovakia_eu_tax_file_number` が見つかりました。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovakia_eu_tax_file_number" />
-          <Match idRef="Keywords_slovakia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>キーワード
-
-#### <a name="keywords_slovakia_eu_tax_file_number"></a>Keywords_slovakia_eu_tax_file_number
-
-- azonosító szám
-- 出生地番号
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
-- id 番号
-- 識別番号
-- identification number
-
-- identifikačná karta č
-- identifikačné číslo
-- id カード番号
-- id カード番号
-- národná identifikačná značka č
-- 国番号
-- nationalnumber#
-- nemzeti személyazonosító igazolvány
-- personalidnumber#
-- rč
-- rodne cislo
-- rodnéčíslo
-- social security number
-
-- ssn#
-- ssn
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
-- 税ファイル番号
-- 税ファイル番号
-- tax id
-
-- 税 id 番号
-- 税識別番号
-- 課税番号#
-- 課税番号
-- 課税番号
-- 税務登録番号
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- tin id
-- tin no
-- は#
-
 
 ## <a name="slovenia-drivers-license-number"></a>スロベニアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
@@ -11472,8 +10910,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - dlno#
 - vozniško dovoljenje
 
-## <a name="slovenia-national-identification-number"></a>スロベニアの国の識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="slovenia-unique-master-citizen-number"></a>スロベニア固有マスタ市民番号
 
 ### <a name="format"></a>フォーマット
 
@@ -11484,13 +10921,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 指定したパターンの13桁の数字:
   
 - 誕生日 (DDMMLLL) に対応する7桁の数字で、"LLL" は誕生年の最後の3桁に対応します。 
-- 誕生日の範囲に対応する2桁の数字
+- "50" という誕生日の領域に対応する2桁の数字
 - 同じ日に生まれた人物の性別とシリアル番号の組み合わせに対応する3つの数字 (女性の場合は男性と500-999 は 000-499)
 - 1つのチェックディジット
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -11502,16 +10939,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_slovenia_eu_national_id_card` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- Slovenia national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Unique Master Citizen Number -->
+      <Entity id="68948b27-803d-41e4-adf1-13e05eb541bb" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_slovenia_eu_national_id_card" />
           <Match idRef="Keywords_slovenia_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_slovenia_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -11591,7 +11028,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - številka potnega lista
 
 ## <a name="slovenia-tax-identification-number"></a>スロベニアの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -11599,11 +11035,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="pattern"></a>パターン
 
-8桁の数字
+- 1-9 の1桁の数字
+- 6桁の数字
+- 1つのチェックディジット
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -11611,20 +11049,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_slovenia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_slovenia_eu_tax_file_number` が見つかりました。 
     
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、65% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数は、  `Func_slovenia_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Tax Identification Number -->
+      <Entity id="e47b071e-c352-4d70-8241-8c215ad65505" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_nation_eu_tax_file_number" />
-          <Match idRef="Keywords_nation_eu_tax_file_number" />
+          <IdMatch idRef="Func_slovenia_eu_tax_file_number" />
+          <Match idRef="Keywords_slovenia_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_slovenia_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -11672,7 +11110,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -11717,7 +11155,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -11769,7 +11207,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -11826,39 +11264,52 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - el carnet de conducir
 - carnet conducir
 
-## <a name="spain-national-identification-number"></a>スペインの米国の識別番号
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類でのみ使用できます。
+## <a name="spain-dni"></a>スペイン DNI
 
 ### <a name="format"></a>フォーマット
 
-7桁の数字の後に1文字
+8桁の数字の後に1つの文字
   
 ### <a name="pattern"></a>パターン
 
 7桁の数字の後に1文字
   
-- 7桁の数字
-- 1桁の数字または文字 (大文字小文字を区別しない)
+- 8桁の数字
+- オプションのスペースまたはハイフン
+- 1つのチェック文字 (大文字と小文字は区別されません)
     
 ### <a name="checksum"></a>チェックサム
 
-該当なし
+はい
   
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 正規表現は、  `Regex_spain_eu_national_id_card` パターンに一致するコンテンツを検出します。 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数を  `Func_spain_eu_DL_and_NI_number_citizen` 返し `Func_spain_eu_DL_and_NI_number_foreigner` ます。または、パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_spain_eu_national_id_card"` が見つかりました。 
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数を  `Func_spain_eu_DL_and_NI_number_citizen` 返し `Func_spain_eu_DL_and_NI_number_foreigner` ます。または、パターンに一致するコンテンツを検索します。 
+
     
 ```xml
-<!-- Spain national identification number -->
- 
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_spain_eu_national_id_card" />
+      <!-- Spain DNI -->
+      <Entity id="8e6251b9-47b4-40e8-a42b-0f80876be192" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
           <Match idRef="Keywords_spain_eu_national_id_card" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Match idRef="Keywords_spain_eu_national_id_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -11955,7 +11406,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -11977,7 +11428,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 なし
 
 ## <a name="spain-tax-identification-number"></a>スペインの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -12016,28 +11466,35 @@ Foreigner の識別番号のない Foreigners
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_spain_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数を  `Func_spain_eu_tax_file_number` 返し `Func_spain_eu_DL_and_NI_number_citizen` ます。または、パターンに一致するコンテンツを検索します。 
 - From キーワード  `Keywords_spain_eu_tax_file_number` が見つかりました。 
     
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_spain_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
+- 関数を  `Func_spain_eu_tax_file_number` 返し `Func_spain_eu_DL_and_NI_number_citizen` ます。または、パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Spain Tax Identification Number -->
+      <Entity id="10f0d113-b0e1-47dc-872a-a4f45b9376a3" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_spain_eu_tax_file_number" />
           <Match idRef="Keywords_spain_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_spain_eu_tax_file_number" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Match idRef="Keywords_spain_eu_tax_file_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -12205,7 +11662,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - körkort
 
 ## <a name="sweden-national-id"></a>スウェーデンの国民 ID
-この機密情報の種類エンティティは、EU 国立 Id 番号の機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -12214,33 +11670,61 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="pattern"></a>パターン
 
 10桁または12桁の数字とオプションの区切り記号:
-- 2桁から4桁の数字 (省略可能) 
+- 2桁の数字 (省略可能) 
 - YYMMDD という日付形式の 6 桁の数字 
-- 「-」または「+」 (省略可能) の区切り記号
+- "-" または "+" の区切り記号 (省略可能)
 - 4桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数 Func_swedish_national_identifier がパターンに一致するコンテンツを検出した。
+- 関数は、 `Func_swedish_national_identifier` パターンに一致するコンテンツを検索します。
+- From キーワード `Keywords_swedish_national_identifier` が見つかりました
 - チェックサムが渡される。
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数は、 `Func_swedish_national_identifier` パターンに一致するコンテンツを検索します。
+- チェックサムが渡される。
+
+
 ```xml
-<!-- Sweden National ID -->
-<Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- Sweden National ID -->
+    <Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_swedish_national_identifier" />
-    </Pattern>
-</Entity>
+        <Match idRef="Keywords_swedish_national_identifier" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_swedish_national_identifier" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-いいえ
+#### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
+
+- id 番号
+- id 番号
+- rid#
+- 識別番号
+- identification number
+
+- identifikationsnumret#
+- identifikationsnumret
+- [識別子]
+- identity ドキュメント
+- id 番号
+- id 番号
+- id-nummer
+- 個人 id
+- personnummer#
+- personnummer
+- skatteidentifikationsnummer
    
 ## <a name="sweden-passport-number"></a>スウェーデンのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類に含まれており、スタンドアロンの機密情報の種類エンティティとして使用できます。
@@ -12332,7 +11816,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -12375,7 +11859,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - identifikationsnumret#
 
 ## <a name="sweden-tax-identification-number"></a>スウェーデンの税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
 
 ### <a name="format"></a>フォーマット
 
@@ -12386,7 +11869,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 10桁の数字と記号:
   
 - 誕生日に対応する6桁の数字 (YYMMDD という) 
-- プラス記号、マイナス記号、または円記号
+- プラス記号またはマイナス記号
 - 識別番号を一意にするための3桁の数字: 
   - 1990より前に発行された番号については、7桁目と8桁目の数字は、誕生日または外国出身の人物を識別します。
   - 9桁の数字は、男性に対して、または女性に対して、性別を示します。
@@ -12394,7 +11877,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
   
 ### <a name="definition"></a>定義
 
@@ -12406,16 +11889,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 関数は、  `Func_sweden_eu_tax_file_number` パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Tax Identification Number -->
+      <Entity id="139acba0-a5bc-4fbb-876d-f7a493ae8a40" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_sweden_eu_tax_file_number" />
           <Match idRef="Keywords_sweden_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_sweden_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_sweden_eu_telephone_number" />
+            <Match idRef="Keywords_sweden_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
@@ -12539,7 +12026,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -12604,7 +12091,7 @@ numéro de sécurité sociale
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -12759,7 +12246,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -12806,7 +12293,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -12857,7 +12344,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -12955,7 +12442,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-必要
+はい
 
 ### <a name="definition"></a>定義
 
@@ -13097,23 +12584,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - nationalinsurancenumber
 
     
-## <a name="uk-tax-identification-number"></a>U.K. 税識別番号
-この機密情報の種類エンティティは、EU 税務識別番号の機密情報の種類でのみ使用できます。
-
+## <a name="uk-unique-taxpayer-reference-number"></a>U.K. 一意納税者番号
 
 ### <a name="format"></a>フォーマット
 
-unique 納税リファレンス (UTR): スペースと区切り文字を含まない10桁の数字
+スペースと区切り文字を含まない10桁の数字
  
   
 ### <a name="pattern"></a>パターン
 
-unique 納税リファレンス (UTR):10 桁の数字
-
+10 桁の数字
   
 ### <a name="checksum"></a>チェックサム
 
-必要
+いいえ
   
 ### <a name="definition"></a>定義
 
@@ -13122,13 +12606,13 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - From キーワード  `Keywords_uk_eu_tax_file_number` が見つかりました。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
+      <!-- U.K. Unique Taxpayer Reference Number -->
+      <Entity id="ad4a8116-0db8-439a-b545-6d967642f0ec" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_uk_eu_tax_file_number" />
           <Match idRef="Keywords_uk_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード

@@ -3,7 +3,7 @@ title: Microsoft 365 管理センターでのネットワーク接続 (プレビ
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,20 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 35ea28ec45a7e581901c0f4f22360a1dcd0def8b
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948411"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962289"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターでのネットワーク接続 (プレビュー)
 
-Microsoft 365 管理センターには、Microsoft 365 テナントから収集され、テナントの管理ユーザーのみが表示できる、集約されたネットワーク接続メトリックが含まれるようになりました。 **ネットワーク評価** と **ネットワーク Insights** は、Microsoft 365 管理センターの [ **正常性] の下に表示されます。接続**。
+Microsoft 365 管理センターには、Microsoft 365 テナントから収集され、テナントの管理ユーザーのみが表示できる、集約されたネットワーク接続メトリックが含まれるようになりました。
+
+![ネットワーク接続テストツール](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+
+**ネットワーク評価** と **ネットワーク Insights** は、Microsoft 365 管理センターの [ **正常性] の下に表示されます。接続**。
 
 ![ネットワークパフォーマンスページ](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -160,7 +164,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 インターネット出口の場所は、ネットワークトラフィックがエンタープライズネットワークから出てインターネットに接続する場所です。 これは、ネットワークアドレス変換 (NAT) デバイスがあり、通常はインターネットサービスプロバイダー (ISP) を使用して接続する場所としても識別されます。 場所とインターネット出口の場所の間に長距離の距離がある場合は、WAN のバックアウトが非常に重要であることを示している可能性があります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 network insights (プレビュー)](office-365-network-mac-perf-insights.md)
 

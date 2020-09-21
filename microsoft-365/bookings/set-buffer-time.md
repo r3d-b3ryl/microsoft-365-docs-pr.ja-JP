@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Microsoft 予約の予定の前または後にバッファー時間を設定して、機器のクリーンアップまたはリセットの時間を確保します。
-ms.openlocfilehash: dceb777f9ddba9f1ddabfee00608813afae57a86
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 882ab0340fe56976429ed8294f2fa386b801941f
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962349"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Microsoft Bookings でバッファー時間を設定する
 
 一部の予定には、お客様が会議室や備品をセットアップ、クリーンアップ、またはリセットするための時間が必要になる場合があります。 また、お客様の予定間で出張している場合は、お客様がお客様を待たずに予定間を移動できるようにするための時間が必要になることがあります。
 
 定期的な予定の開始、予定の終了後、またはその両方を設定して、次の予定を準備するのに必要な時間をスタッフに与えることができます。
-
-> [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
 
 ## <a name="set-buffer-time-defaults"></a>バッファー時間の既定値の設定
 

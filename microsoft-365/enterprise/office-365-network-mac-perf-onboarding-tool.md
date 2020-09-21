@@ -3,7 +3,7 @@ title: Microsoft 365 ネットワーク接続テスト (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク接続テスト (プレビュー)
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962400"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 ネットワーク接続テスト (プレビュー)
 
 Microsoft 365 ネットワーク接続テストツールは、にあり <https://connectivity.office.com> ます。 これは、Microsoft 365 管理センターで利用可能なネットワーク評価およびネットワーク insights 情報に対する adjunct ツールであり、正常性の下にあります。 **[接続** ] メニュー
 
+![接続テストツール](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >ネットワーク接続テストツールは、世界各地の商用およびドイツのテナントをサポートしていますが、GCC のモデレート、GCC High、DoD、中国ではサポートされていません。
 
 Microsoft 365 管理センターのネットワーク insights は、毎日集計される Microsoft 365 テナントの正規の製品の測定基準に基づいています。 これに対して、Microsoft 365 ネットワーク接続テストのネットワーク洞察は、ツールでローカルおよび1回実行されます。 製品内で実行できるテストは制限されており、ユーザーに対してローカルにテストを実行することにより、より深い洞察を得られるように収集できます。 次に、Microsoft 365 管理センターの network insights は、特定のオフィスの場所で Microsoft 365 を使用するためのネットワークの問題があることを示しています。 Microsoft 365 connectivity test は、この問題の根本的な原因を特定するのに役立ち、推奨されるネットワークパフォーマンスの向上アクションを導きます。
-
-![ネットワーク接続テストツール](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 Microsoft 365 管理センターの各オフィスの場所についてネットワーク品質の状態を評価し、Microsoft 365 の接続テストに基づいてテストを展開した後は、より多くの情報を見つけられるようにすることをお勧めします。
 
@@ -267,7 +267,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 インターネット出口の場所は、ネットワークトラフィックがエンタープライズネットワークから出てインターネットに接続する場所です。 これは、ネットワークアドレス変換 (NAT) デバイスがあり、通常はインターネットサービスプロバイダー (ISP) を使用して接続する場所としても識別されます。 場所とインターネット出口の場所の間に長距離の距離がある場合は、WAN のバックアウトが非常に重要であることがわかります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項](office-365-network-mac-perf-overview.md)
 

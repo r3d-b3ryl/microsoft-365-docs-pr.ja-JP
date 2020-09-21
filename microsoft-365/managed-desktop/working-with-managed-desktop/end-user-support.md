@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104414"
 ---
-# <a name="getting-help-for-users"></a>ユーザーのヘルプを取得する
+# <a name="getting-help-for-users"></a>ユーザーのヘルプ
 
 組織内のユーザーが Microsoft マネージドデスクトップデバイスでヘルプを取得する方法は2つあります。ヘルプアプリまたは電話サポートを **取得** します。 これら両方のサポートオプションは、ユーザーが1日24時間、週7日利用できます。
  
@@ -71,4 +71,4 @@ Microsoft マネージドデスクトップデバイスを使用しているユ�
 ## <a name="additional-resources"></a>その他のリソース
 - [Microsoft マネージドデスクトップの管理者サポート](admin-support.md)。 
 - [Microsoft マネージドデスクトップのサポート](../service-description/support.md)。
-- Microsoft managed desktop を既に購読している場合は、「microsoft managed desktop admin [Portal](https://aka.ms/mwaasportal)」の「 **Online resources** 」セクションにある「Microsoft managed desktop admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を見つけることができます。
+- Microsoft マネージドデスクトップに対して既に加入している場合は、microsoft の[エンドポイントマネージャー](https://endpoint.microsoft.com/)の**テナント管理**メニューの [microsoft managed desktop] セクションにある**オンラインリソース**の「microsoft managed desktop Admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を参照してください。

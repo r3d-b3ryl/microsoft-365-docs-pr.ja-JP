@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 次の手順に従って、Microsoft の予約アプリを使用して予定を作成し、従業員を割り当てます。
-ms.openlocfilehash: d0538b1c3e19a6bc78c997ff3e681ac30aa074ff
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419883"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962563"
 ---
 # <a name="create-a-manual-booking"></a>手動予約を作成する
 
 予約のスケジュールとスタッフの割り当てには 2 つの方法があります。 最初の方法は、お客様が自分の web サイトに追加したスタンドアロンの予約ページまたは組み込み予約ページを使用している場合です。 もう1つの方法は、顧客が予定を呼び出すときなど、自分または自分の従業員が手動で予約を入力できるようにすることです。 この記事は手動のシナリオについて説明します。
-
-> [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
 
 1. Microsoft 365 で、アプリ起動ツールを選択し、[ **予約**] を選択します。
 

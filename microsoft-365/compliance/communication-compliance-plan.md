@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131539"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 
@@ -66,7 +66,7 @@ ms.locfileid: "47289322"
 - セットアップを簡単にするために、コミュニケーションをレビューする必要があるユーザーのグループを作成することを検討してください。 グループを使用している場合いくつかの必要な場合があります。 たとえば、2 つの異なるグループ間の通信を監視する場合や、監督対象ではないグループを指定する場合などです。
 - 確認する通信のパーセンテージを100% に構成して、ポリシーが組織の通信に関する懸念のすべての問題をキャッチするようにします。
 - Microsoft 365 組織のメールボックスにインポートされたデータについては、 [サードパーティ製のソース](communication-compliance-feature-reference.md#supported-communication-types) からの通信をスキャンすることができます。 これらのプラットフォームでの通信の確認を含めるには、これらのサービスへのコネクタを構成して、メッセージの会議ポリシーの条件が通信ポリシーによって監視されるようにする必要があります。
-- ポリシーでは、カスタム通信コンプライアンスポリシーの英語以外の監視言語をサポートできます。 任意の言語で [ユーザー設定のキーワード辞書](communication-compliance-feature-reference.md#custom-keyword-dictionaries) を作成するか、Microsoft 365 の [trainable 分類子](classifier-getting-started-with.md) を使用して独自の machine learning モデルを作成します。
+- ポリシーでは、カスタム通信コンプライアンスポリシーの英語以外の監視言語をサポートできます。 任意の言語で [ユーザー設定のキーワード辞書](communication-compliance-feature-reference.md#custom-keyword-dictionaries) を作成するか、Microsoft 365 の [trainable 分類子](classifier-get-started-with.md) を使用して独自の machine learning モデルを作成します。
 - すべての組織には、異なる通信基準とポリシーニーズがあります。 特定の種類の情報については、通信コンプライアンス [ポリシーの条件](communication-compliance-feature-reference.md#conditional-settings) またはモニターを使用して、 [カスタムの機密情報の種類](create-a-custom-sensitive-information-type.md)を使用して特定のキーワードを監視します。
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。

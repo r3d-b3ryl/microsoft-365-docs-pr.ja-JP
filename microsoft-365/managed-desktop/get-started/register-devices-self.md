@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104402"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
-Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Microsoft Managed Desktop 管理ポータルを使用してデバイスを登録できます。
+Microsoft マネージドデスクトップをブランド化されたデバイスで使用することも、既に所有しているデバイスを再利用することもできます (イメージを再作成する必要があります)。 Microsoft マネージドデスクトップにデバイスを登録するには、Microsoft エンドポイントマネージャーポータルを使用します。
 
 > [!NOTE]
 > パートナーと協力してデバイスを入手する方法 その場合は、ハードウェアハッシュの取得について心配する必要はありません。そのようにします。 パートナーが [パートナーセンター](https://partner.microsoft.com/dashboard)でお客様との関係を確立していることを確認してください。 パートナーが詳細については、 [パートナーセンターのヘルプ](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)を参照してください。 この関係が確立されると、パートナーは単にデバイスを登録するだけで済みます。これ以上の操作は必要ありません。 詳細を確認する場合、またはパートナーに質問がある場合は、「 [パートナーがデバイスを登録する手順](register-devices-partner.md)」を参照してください。 デバイスが登録されたら、 [画像の確認](#check-the-image) とユーザーへ [のデバイスの配信](#deliver-the-device) を続行できます。
@@ -73,9 +73,9 @@ PowerShell Gallery web サイトで [Get-WindowsAutoPilotInfo.ps1](https://www.p
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>管理ポータルを使用してデバイスを登録する
 
-Microsoft Managed Desktop [管理ポータル](https://aka.ms/mmdportal)で、左側のナビゲーションウィンドウで [ **デバイス** ] を選択します。 [ **+ デバイスの登録**] を選択します。フライインが開きます。
+[Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[ **デバイス**] を選択します。 [Microsoft Managed Desktop Devices] ワークスペースで、[ **+ デバイスの登録** ] を選択して、新しいデバイスを登録するためのフライインを開きます。
 
-[![[デバイスの登録] を選択した後のフライイン、割り当てられたユーザーの列が含まれているデバイスを一覧表示する、シリアル番号、状態、最終確認日、および保存期間](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -87,7 +87,7 @@ Microsoft Managed Desktop [管理ポータル](https://aka.ms/mmdportal)で、�
 3. [ **デバイスの登録**] を選択します。 デバイスは、 **AutopilotRegistrationRequested**としてマークされているデバイス**ブレード**上のデバイスの一覧に追加されます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは **ユーザーのための** 準備完了として表示され、ユーザーが使用を開始するのを待っています。
 
 
-メインの **Microsoft Managed Desktop-Devices** ページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
+メインページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
 
 | State | 説明 |
 |---------------|-------------|

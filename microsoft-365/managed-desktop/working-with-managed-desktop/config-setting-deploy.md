@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b731422e6d981b12ea576ed26b841e7c679266ae
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: a24d0dc64e2262a8b208119c45a4a6bade701c10
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530261"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104536"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ
 
@@ -29,7 +29,7 @@ ms.locfileid: "46530261"
 展開 | 変更は、このグループへの展開を待機しています。
 処理中 | このグループ内のアクティブなデバイスに変更が適用されています。 
 完了 | このグループ内のすべてのアクティブなデバイスで変更が完了しました。 
-Failed | グループ内のアクティブなデバイスの10% で変更が失敗したため、展開が停止されました。<br><br> 展開のトラブルシューティングを行うために、サポート要求が Microsoft マネージドデスクトップ操作を使用して自動的に開かれます。 
+失敗 | グループ内のアクティブなデバイスの10% で変更が失敗したため、展開が停止されました。<br><br> 展開のトラブルシューティングを行うために、サポート要求が Microsoft マネージドデスクトップ操作を使用して自動的に開かれます。 
 復帰 | 変更は、すべての展開グループに正常に展開された最後の変更に戻されました。
 
 ## <a name="deploy-changes"></a>変更を展開する
@@ -38,34 +38,35 @@ Failed | グループ内のアクティブなデバイスの10% で変更が失�
 
 **変更を展開するには**
 
-1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
-2. [**設定**] で、[**構成可能**] を選択します。
-3. [**展開状態**] ワークスペースで、展開する設定を選択し、展開する段階的展開を選択します。
-4. 展開グループのいずれかに変更を展開するには、[**展開**] を選択します。
+1. [Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)にサインインして、[**デバイス**] メニューに移動します。
+2. [Microsoft Managed Desktop] セクションを探し、[ **設定**] を選択します。
+3. [ **展開状態** ] ワークスペースで、展開する設定を選択し、展開する段階的展開を選択します。
+4. 展開グループのいずれかに変更を展開するには、[ **展開** ] を選択します。
 
 > [!NOTE] 
 > オレンジ色の警告アイコンは、展開に使用できる前のグループがあることを示しています。これは、順序どおりに展開することをお勧めします。 
 
-![展開状態ワークスペース。 右側の [信頼済みサイト] ウィンドウ。 [展開グループ] セクションには、[展開グループ]、[デバイス]、[状態] の3つの列があります。 [状態] 列の [展開] が強調表示されています。](../../media/1deployedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](../../media/1deployedit.png) -->
+
 展開グループへの展開は、次の順序で行うことをお勧めします。 Test、First、Fast、および広義です。 
 
-各グループで変更が完了すると、状態が [**完了**] に変わります。
+各グループで変更が完了すると、状態が [ **完了**] に変わります。
 
-![更新日、バージョン、テスト、最初、高速、および広範な列を含む展開状態ワークスペース。 プロキシ行が展開され、それぞれの4つの展開グループで "complete" というフラグが付けられた日付形式の設定が表示されます。](../../media/2completeedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](../../media/2completeedit.png) -->
 
 ## <a name="revert-deployment"></a>展開を元に戻す
 
-変更を展開した後、**展開状態**から元に戻すことができます。 **進行**中または**完了**した変更を元に戻すと、現在の展開は停止します。 この設定は、すべてのグループに展開された最新のバージョンに戻ります。 
+変更を展開した後、 **展開状態**から元に戻すことができます。 **進行**中または**完了**した変更を元に戻すと、現在の展開は停止します。 この設定は、すべてのグループに展開された最新のバージョンに戻ります。 
 
 デスクトップの背景画像を使用して変更を元に戻す手順を示します。 
 
 **変更を元に戻すには**
-1. [Microsoft Managed Desktop 管理ポータル](https://aka.ms/mwaasportal)にサインインする
-2. [**設定**] で、[**構成可能**] を選択します。
-3. [**展開状態**] ワークスペースで、元に戻す設定を選択してから、元に戻す段階的な展開を選択します。
-4. [**この変更を元に戻す必要がありますか?**] で、[**展開の取り消し**] を選択します。
+1. [Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)にサインインして、[**デバイス**] メニューに移動します。
+2. [Microsoft Managed Desktop] セクションを探し、[ **設定**] を選択します。
+3. [ **展開状態** ] ワークスペースで、元に戻す設定を選択してから、元に戻す段階的な展開を選択します。
+4. [ **この変更を元に戻す必要がありますか?**] で、[ **展開の取り消し**] を選択します。
 
-![展開状態ワークスペース。 ブラウザーの開始ページが選択され、送信された変更とその状態に関するデータで右側のウィンドウが開きます。 下部にある [この変更を元に戻す必要があります] 領域は、「展開を元に戻す」を選択できます。](../../media/3revert.png) 
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->
 
 ## <a name="additional-resources"></a>その他のリソース
 - [構成可能な設定の概要](config-setting-overview.md)

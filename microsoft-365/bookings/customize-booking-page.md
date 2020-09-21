@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Microsoft 予約アプリで予約ページの色のテーマを変更します。
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962515"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>予約ページのカスタマイズと公開
 
 予約ページには、予約ページが表示されている外部顧客がどのように表示されるかを設定します。 予約ページをカスタマイズして発行すると、お客様はそれを使用して予定を予約することができます。
-
-> [!NOTE]
-> 予約は、Microsoft 365 Business Standard、Microsoft 365 A3、または Microsoft 365 A5 サブスクリプションを使用しているお客様に対して、既定でオンになっています。 予約は、Office 365 Enterprise E3 および Office 365 Enterprise E5 を持つお客様も利用できますが、既定ではオフになっています。 開始するには、「 [Microsoft 予約へのアクセスを取得](get-access.md)する」を参照してください。 予約をオンまたはオフにするには、「 [組織の予約を有効または無効](turn-bookings-on-or-off.md)にする」を参照してください。
 
 予約ページをカスタマイズするには、 [Office.com](https://office.com)にサインインして、[ **予約** \> **予約] ページ**に移動します。 予約ページは、次のオプションを使用してカスタマイズできます。 予約ページをセットアップしたら、お客様が自分で予約を開始できるように、ページを発行することができます。
 

@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 03a9b19a5b8ba957419e23c2bb12748c9c57e80d
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289497"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104620"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップでの更新プログラムの処理方法
 
@@ -55,16 +55,15 @@ Microsoft マネージドデスクトップでは、次の4つの Azure AD グ�
 
 
 <table>
-<tr><th colspan="5">展開設定を更新する</th></tr>
-<tr><th>更新の種類</th><th>テスト</th><th>第 1</th><th>高速</th><th>広範な質問</th></tr>
-<tr><td>オペレーティングシステムの品質更新プログラム</td><td>0日</td><td>0日</td><td>0日</td><td>3 日間</td></tr>
-<tr><td>オペレーティングシステムの機能更新プログラム</td><td>0日</td><td>30 日間</td><td>60 日</td><td>90 日間</td></tr>
-<tr><td>ドライバー/ファームウェア</td><td colspan="4">品質更新プログラムのスケジュールに従います。</td></tr>
-<tr><td>ウイルス対策の定義</td><td colspan="4">各スキャンで更新</td></tr>
-<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Office の現在のチャネルに従う
+    <tr><th colspan="5">展開設定を更新する</th></tr>
+    <tr><th>更新の種類</th><th>テスト</th><th>第 1</th><th>高速</th><th>広範な質問</th></tr>
+    <tr><td>オペレーティングシステムの品質更新プログラム</td><td>0日</td><td>0日</td><td>0日</td><td>3 日間</td></tr>
+    <tr><td>オペレーティングシステムの機能更新プログラム</td><td>0日</td><td>30 日間</td><td>60 日</td><td>90 日間</td></tr>
+    <tr><td>ドライバー/ファームウェア</td><td colspan="4">品質更新プログラムのスケジュールに従います。</td></tr>
+    <tr><td>ウイルス対策の定義</td><td colspan="4">各スキャンで更新</td></tr>
+    <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">詳細情報</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">詳細情報</a></td></tr>
 </table>
-
-Microsoft 365 Apps for enterprise の現在のチャネルの詳細については、「 [microsoft 365 アプリの更新プログラムチャネルの概要](https://docs.microsoft.com/deployoffice/overview-update-channels)」を参照してください。
 
 >[!NOTE]
 >この遅延期間は、すべてのユーザーに対して高セキュリティとパフォーマンス標準を確実にするために意図的に設計されています。 さらに、Microsoft マネージドデスクトップのすべてのデバイスで収集されたデータと、更新プログラムのさまざまな範囲と影響に基づいて、Microsoft マネージドデスクトップは、ad hoc ですべての展開グループに対して上記の遅延期間の長さを変更するための柔軟性を確保しています。

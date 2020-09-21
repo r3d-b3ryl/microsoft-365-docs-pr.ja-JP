@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 725dc5d2e9e5cf0638a54c5ee46d77b321ae4796
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131725"
 ---
 # <a name="know-your-data---data-classification-overview"></a>データを把握する - データ分類の概要
 
@@ -34,7 +34,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 - 機密データおよび保持されたデータの保存場所
 
 これらの機能は、データ分類のページでも管理することができます。
-- [トレーニング可能な分類子](classifier-getting-started-with.md)
+- [トレーニング可能な分類子](classifier-learn-about.md)
 - [機密情報の種類](what-the-sensitive-information-types-look-for.md)
 
 データ分類は、**Microsoft 365 コンプライアンス センター**または **Microsoft 365 セキュリティ センター**  >  [**分類**]  >  [**データ分類**] で確認することができます。
@@ -137,4 +137,4 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 - [秘密度ラベルの詳細](sensitivity-labels.md)
 - [アイテム保持ポリシーと保持ラベルの詳細](retention.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-- [トレーニング可能な分類子の使用を開始する (プレビュー)](classifier-getting-started-with.md)
+- [トレーニング可能な分類子の詳細 (プレビュー)](classifier-learn-about.md)
