@@ -19,23 +19,26 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fd8a09ceb32b8ddacea06b4569a2d2a851daaeb2
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 60795815ae68d640eeac4b9bc9f0188c7751aaf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235206"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201037"
 ---
-# <a name="set-the-time-zone-for-microsoft-threat-protection"></a><span data-ttu-id="c176a-104">Microsoft Threat Protection のタイムゾーンを設定する</span><span class="sxs-lookup"><span data-stu-id="c176a-104">Set the time zone for Microsoft Threat Protection</span></span>
+# <a name="set-the-time-zone-for-microsoft-threat-protection"></a><span data-ttu-id="9cf89-104">Microsoft Threat Protection のタイムゾーンを設定する</span><span class="sxs-lookup"><span data-stu-id="9cf89-104">Set the time zone for Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="c176a-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="c176a-105">**Applies to:**</span></span>
-- <span data-ttu-id="c176a-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="c176a-106">Microsoft Threat Protection</span></span>
-
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="c176a-107">Microsoft Threat Protection では、ローカル タイム ゾーンまたは UTC を使用して日付と時刻の情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="c176a-107">Microsoft Threat Protection can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="c176a-108">選択したタイムゾーンは、Microsoft 365 セキュリティ センターの次の機能に示される日付と時刻の情報に適用されます。</span><span class="sxs-lookup"><span data-stu-id="c176a-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="c176a-109">インシデント</span><span class="sxs-lookup"><span data-stu-id="c176a-109">Incidents</span></span>
-- <span data-ttu-id="c176a-110">アクション センターを含む調査と修復の自動化</span><span class="sxs-lookup"><span data-stu-id="c176a-110">Automated investigation and remediation, including the action center</span></span>
-- <span data-ttu-id="c176a-111">高度な捜索</span><span class="sxs-lookup"><span data-stu-id="c176a-111">Advanced hunting</span></span>
+<span data-ttu-id="9cf89-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="9cf89-105">**Applies to:**</span></span>
+- <span data-ttu-id="9cf89-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="9cf89-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="c176a-112">これらの機能のタイムゾーンを設定するには、[**設定**] > [**Microsoft Threat Protection**] > [**タイム ゾーン**] へ移動します。</span><span class="sxs-lookup"><span data-stu-id="c176a-112">To set the time zone for these features, go to **Settings** > **Microsoft Threat Protection** > **Time zone**.</span></span>
+
+
+<span data-ttu-id="9cf89-107">Microsoft Threat Protection では、ローカル タイム ゾーンまたは UTC を使用して日付と時刻の情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="9cf89-107">Microsoft Threat Protection can display date and time information using either your local time zone or UTC.</span></span> <span data-ttu-id="9cf89-108">選択したタイムゾーンは、Microsoft 365 セキュリティ センターの次の機能に示される日付と時刻の情報に適用されます。</span><span class="sxs-lookup"><span data-stu-id="9cf89-108">The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 security center:</span></span>
+- <span data-ttu-id="9cf89-109">インシデント</span><span class="sxs-lookup"><span data-stu-id="9cf89-109">Incidents</span></span>
+- <span data-ttu-id="9cf89-110">アクション センターを含む調査と修復の自動化</span><span class="sxs-lookup"><span data-stu-id="9cf89-110">Automated investigation and remediation, including the action center</span></span>
+- <span data-ttu-id="9cf89-111">高度な捜索</span><span class="sxs-lookup"><span data-stu-id="9cf89-111">Advanced hunting</span></span>
+
+<span data-ttu-id="9cf89-112">これらの機能のタイムゾーンを設定するには、[**設定**] > [**Microsoft Threat Protection**] > [**タイム ゾーン**] へ移動します。</span><span class="sxs-lookup"><span data-stu-id="9cf89-112">To set the time zone for these features, go to **Settings** > **Microsoft Threat Protection** > **Time zone**.</span></span>
