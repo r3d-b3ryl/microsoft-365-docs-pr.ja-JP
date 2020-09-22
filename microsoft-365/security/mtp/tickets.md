@@ -19,14 +19,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: b9e900baf02e9fc866fe6fe520ad1e40ccd565de
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950702"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196121"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>ServiceNow チケットを Microsoft 365 セキュリティセンターおよびコンプライアンスセンターに統合する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 [!include[Prerelease information](../includes/prerelease.md)]
 
@@ -61,7 +64,7 @@ Microsoft 365 セキュリティセンターまたはコンプライアンスセ
 * チケット作成を開始するユーザー ID
 * タスク名
 * タスクの説明
-* 優先度
+* Priority
 * 期限
 * 推奨ソース (ユーザーの推奨事項または Microsoft 推奨)
 * 推奨カテゴリ (デバイス、データ、アプリ、Id、インフラストラクチャ)

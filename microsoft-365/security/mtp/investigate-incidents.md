@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1883f61f50dad9b601329369bf180ddecba70138
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 46d82220851c78525bd0b1ee00c4abae69c0304f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928964"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196313"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>Microsoft Threat Protection のインシデントを調査する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 
@@ -96,7 +99,7 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 
 ## <a name="investigations"></a>調査
 
-[**調査**] を選択すると、このインシデントで通知によってトリガーされたすべての自動調査が表示されます。 調査は、Microsoft Defender ATP および Office 365 Advanced Threat Protection での自動調査の実行をどのように構成したかによって、修復アクションを実行するか、またはアナリストからのアクションの承認を待ちます。
+[ **調査** ] を選択すると、このインシデントで通知によってトリガーされたすべての自動調査が表示されます。 調査は、Microsoft Defender ATP および Office 365 Advanced Threat Protection での自動調査の実行をどのように構成したかによって、修復アクションを実行するか、またはアナリストからのアクションの承認を待ちます。
 
 ![インシデントの [調査] タブの画像](../../media/incident-investigations.png)
 

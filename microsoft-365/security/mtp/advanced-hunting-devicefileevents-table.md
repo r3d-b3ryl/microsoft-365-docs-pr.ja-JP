@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b4656c4fd7666ba99ca6125331bdc458d3835edb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e4534967ca6e9563f802cdf49385b46790d56932
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798006"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198191"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -39,47 +42,47 @@ ms.locfileid: "46798006"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `DeviceId` | 文字列 | コンピューターの一意識別子 |
+| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
-| `FileOriginUrl` | string | ファイルのダウンロード元の URL |
-| `FileOriginReferrerUrl` | string | ダウンロードしたファイルにリンクする web ページの URL |
-| `FileOriginIP` | string | ファイルのダウンロード元の IP アドレス |
-| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessMD5` | string | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
-| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
-| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージファイル) の256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `FileOriginUrl` | 文字列 | ファイルのダウンロード元の URL |
+| `FileOriginReferrerUrl` | 文字列 | ダウンロードしたファイルにリンクする web ページの URL |
+| `FileOriginIP` | 文字列 | ファイルのダウンロード元の IP アドレス |
+| `InitiatingProcessAccountDomain` | 文字列 | イベントを担当するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | 文字列 | イベントを担当するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | 文字列 | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessMD5` | 文字列 | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
+| `InitiatingProcessSHA1` | 文字列 | イベントを開始したプロセス (画像ファイル) の SHA-1 |
+| `InitiatingProcessSHA256` | 文字列 | イベントを開始したプロセス (イメージファイル) の256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `InitiatingProcessFolderPath` | 文字列型 | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
-| `InitiatingProcessFileName` | string | イベントを開始したプロセスの名前 |
+| `InitiatingProcessFileName` | 文字列 | イベントを開始したプロセスの名前 |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスを実行するために使用されるコマンドライン |
+| `InitiatingProcessCommandLine` | 文字列 | イベントを開始したプロセスを実行するために使用されるコマンドライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日付と時刻 |
-| `InitiatingProcessIntegrityLevel` | string | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動されたかどうかなど、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響します。 |
-| `InitiatingProcessTokenElevation` | string | イベントを開始したプロセスに適用されたユーザーアクセス制御 (UAC) 特権昇格が存在するかどうかを示すトークンの種類 |
+| `InitiatingProcessIntegrityLevel` | 文字列 | イベントを開始したプロセスの整合性レベル。 Windows は、インターネットダウンロードから起動されたかどうかなど、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響します。 |
+| `InitiatingProcessTokenElevation` | 文字列 | イベントを開始したプロセスに適用されたユーザーアクセス制御 (UAC) 特権昇格が存在するかどうかを示すトークンの種類 |
 | `InitiatingProcessParentId` | int | イベントを担当するプロセスを発生させる親プロセスのプロセス ID (PID) |
-| `InitiatingProcessParentFileName` | string | イベントを処理するプロセスを生成した親プロセスの名前 |
+| `InitiatingProcessParentFileName` | 文字列 | イベントを処理するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
-| `RequestProtocol` | string | ネットワークプロトコル (該当する場合) は、アクティビティの開始に使用されます。 Unknown、Local、SMB、または NFS |
-| `ShareName` | string | ファイルを含む共有フォルダの名前 |
-| `RequestSourceIP` | string | アクティビティを開始したリモートデバイスの IPv4 または IPv6 アドレス |
-| `RequestSourcePort` | string | アクティビティを開始したリモートデバイスの送信元ポート |
-| `RequestAccountName` | string | アクティビティをリモートで開始するために使用されるアカウントのユーザー名 |
-| `RequestAccountDomain` | string | アクティビティをリモートで開始するために使用されるアカウントのドメイン |
-| `RequestAccountSid` | string | アクティビティをリモートで開始するために使用されるアカウントのセキュリティ識別子 (SID) |
+| `RequestProtocol` | 文字列 | ネットワークプロトコル (該当する場合) は、アクティビティの開始に使用されます。 Unknown、Local、SMB、または NFS |
+| `ShareName` | 文字列 | ファイルを含む共有フォルダの名前 |
+| `RequestSourceIP` | 文字列 | アクティビティを開始したリモートデバイスの IPv4 または IPv6 アドレス |
+| `RequestSourcePort` | 文字列 | アクティビティを開始したリモートデバイスの送信元ポート |
+| `RequestAccountName` | 文字列 | アクティビティをリモートで開始するために使用されるアカウントのユーザー名 |
+| `RequestAccountDomain` | 文字列 | アクティビティをリモートで開始するために使用されるアカウントのドメイン |
+| `RequestAccountSid` | 文字列 | アクティビティをリモートで開始するために使用されるアカウントのセキュリティ識別子 (SID) |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
-| `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
-| `SensitivityLabel` | string | 情報保護のためにメール、ファイル、その他のコンテンツに適用されるラベル |
-| `SensitivitySubLabel` | string | Sublabel は、電子メール、ファイル、またはその他のコンテンツに適用され、情報保護のために分類します。機密サブラベルは、機密ラベルの下にグループ化されますが、個別に処理されます。 |
-| `IsAzureInfoProtectionApplied` | ブール値 | ファイルが Azure Information Protection によって暗号化されているかどうかを示します |
+| `AppGuardContainerId` | 文字列 | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
+| `SensitivityLabel` | 文字列 | 情報保護のためにメール、ファイル、その他のコンテンツに適用されるラベル |
+| `SensitivitySubLabel` | 文字列 | Sublabel は、電子メール、ファイル、またはその他のコンテンツに適用され、情報保護のために分類します。機密サブラベルは、機密ラベルの下にグループ化されますが、個別に処理されます。 |
+| `IsAzureInfoProtectionApplied` | boolean | ファイルが Azure Information Protection によって暗号化されているかどうかを示します |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

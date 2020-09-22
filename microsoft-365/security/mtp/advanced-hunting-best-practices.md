@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: af9579b94314375aa786782ea477bb11b0cd9c0b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949302"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198213"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -248,7 +251,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ### <a name="parse-strings"></a>文字列を解析する
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。 
 
-| 文字列 | 職務 | 使用例 |
+| String | 関数 | 使用例 |
 |--|--|--|
 | コマンドライン | [parse_command_line ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 | 
 | Paths | [parse_path ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | ファイルまたはフォルダーのパスのセクションを抽出します。 |

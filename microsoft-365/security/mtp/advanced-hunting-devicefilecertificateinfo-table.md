@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 33f9c726839f17afbb935c6d028cc4eaa5b74843
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 69669366f4f4d79f7c9ec7f28c8ccf1336e96adc
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649453"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198225"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -36,28 +39,28 @@ ms.locfileid: "46649453"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | string | コンピューターの一意識別子 |
-| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `DeviceId` | 文字列 | コンピューターの一意識別子 |
+| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| `IsSigned` | ブール値 | ファイルが署名されているかどうかを示します |
-| `SignatureType` | string | 署名情報がファイル自体の埋め込みコンテンツとして読み取られたか、外部カタログファイルから読み取られたかを示します |
-| `Signer` | string | ファイルの署名者に関する情報 |
-| `SignerHash` | string | 署名者を識別する一意のハッシュ値 |
-| `Issuer` | string | 発行元の証明機関 (CA) に関する情報 |
-| `IssuerHash` | string | 発行証明機関 (CA) を識別する一意のハッシュ値 |
-| `CertificateSerialNumber` | string | 発行元の証明機関 (CA) に固有の証明書の識別子 |
-| `CrlDistributionPointUrls` | string |  証明書と証明書失効リスト (Crl) を含むネットワーク共有の Url を一覧表示する JSON 配列 |
+| `IsSigned` | boolean | ファイルが署名されているかどうかを示します |
+| `SignatureType` | 文字列 | 署名情報がファイル自体の埋め込みコンテンツとして読み取られたか、外部カタログファイルから読み取られたかを示します |
+| `Signer` | 文字列 | ファイルの署名者に関する情報 |
+| `SignerHash` | 文字列 | 署名者を識別する一意のハッシュ値 |
+| `Issuer` | 文字列 | 発行元の証明機関 (CA) に関する情報 |
+| `IssuerHash` | 文字列 | 発行証明機関 (CA) を識別する一意のハッシュ値 |
+| `CertificateSerialNumber` | 文字列 | 発行元の証明機関 (CA) に固有の証明書の識別子 |
+| `CrlDistributionPointUrls` | 文字列 |  証明書と証明書失効リスト (Crl) を含むネットワーク共有の Url を一覧表示する JSON 配列 |
 | `CertificateCreationTime` | 日付型 | 証明書が作成された日付と時刻 |
 | `CertificateExpirationTime` | 日付型 | 証明書が期限切れに設定された日付と時刻 |
 | `CertificateCountersignatureTime` | 日付型 | 証明書が副署名された日付と時刻 |
-| `IsTrusted` | ブール値 | WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。この関数は、不明なルート証明書情報、無効な署名、失効した証明書、およびその他の疑わしい属性をチェックします。 |
-| `IsRootSignerMicrosoft` | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します |
+| `IsTrusted` | boolean | WinVerifyTrust 関数の結果に基づいてファイルが信頼されているかどうかを示します。この関数は、不明なルート証明書情報、無効な署名、失効した証明書、およびその他の疑わしい属性をチェックします。 |
+| `IsRootSignerMicrosoft` | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 | 
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

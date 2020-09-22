@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f01f76ac591b4c2be9873fa87ec416939158acd3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47947998"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195505"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft Threat Protection のプレビュー機能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -50,7 +53,7 @@ Microsoft Threat Protection プレビューリリースの新機能について�
 
 3. [**プレビュー機能の選択]**  >  **プレビュー機能を有効に**します。 
 
-3. [**保存**] を選択します。
+3. **[保存]** を選択します。
 
 [ **プレビュー機能を有効に** する] チェックボックスがオンになっている場合は、プレビュー機能が有効になっていることを確認できます。 
 

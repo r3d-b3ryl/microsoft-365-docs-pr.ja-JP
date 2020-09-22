@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: ハードウェアベースの分離の最新情報を取得します。 悪用または悪意のあるリンクのような最新の攻撃や、従業員の生産性や企業のセキュリティを阻止できないようにします。
-ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405543"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197575"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>管理者向けの Office 用アプリケーションガード (パブリックプレビュー)
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 **適用対象:** Word、Excel、および PowerPoint for Microsoft 365、Windows 10 Enterprise
@@ -128,7 +131,7 @@ Office では、次のポリシーをサポートして、Office 用 Application
 > これらのポリシーは近日中に利用可能になります。
 >また、これらのポリシーを構成すると、Application Guard for Office で開かれたファイルの一部の機能を無効にすることができます。
 
-| ポリシー                                                                          | Description                                                                                                                                                                                                                                                                                             |
+| ポリシー                                                                          | 説明                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Office 用 Application Guard を無効にする                                            | このポリシーを有効にすると、Word、Excel、および PowerPoint で、Office の Application Guard ではなく、保護されたビューの分離コンテナーが使用されるようになります。 このポリシーを使用すると、エッジを有効にしたままでも問題が発生した場合に、Office の Application Guard を一時的に無効にすることができます。                                  |
 | Application Guard で開いたドキュメントのコピー/貼り付けを無効にする                    | このポリシーを有効にすると、ユーザーは Application Guard for Office で開かれているドキュメントから外部で開いているドキュメントにコンテンツをコピーして貼り付けることができなくなります。                                                                                                                                   |

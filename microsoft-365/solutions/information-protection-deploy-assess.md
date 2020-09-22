@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: データプライバシーの規則、関連するシナリオ、準備状況、および Microsoft 365 環境の機密情報の種類を決定します。
-ms.openlocfilehash: ba47a43c7af8d97af852e0a3ef417cdc1dbab46a
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 237039bfd853c0f58276926f29bda26981df6b8c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521375"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195749"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Microsoft 365 を使用してデータのプライバシーリスクを評価し、機密アイテムを識別する
 
@@ -29,7 +29,7 @@ ms.locfileid: "46521375"
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>潜在的に適用可能なデータプライバシー規制
 
-データプライバシー規制に関する、より幅広い規制フレームワークに関する参考資料については、 [Microsoft サービスの信頼ポータル](https://servicetrust.microsoft.com/)と、[一般的なデータ保護規則 (GDPR) の規則に関する一連の記事](../compliance/gdpr.md)、および業界または地域で対象となる可能性のある他の規制に関する資料を参照してください。
+データプライバシー規制に関する、より幅広い規制フレームワークに関する参考資料については、 [Microsoft サービスの信頼ポータル](https://servicetrust.microsoft.com/) と、 [一般的なデータ保護規則 (GDPR) の規則に関する一連の記事](../compliance/gdpr.md)、および業界または地域で対象となる可能性のある他の規制に関する資料を参照してください。
 
 ### <a name="gdpr"></a>GDPR
 
@@ -59,7 +59,7 @@ ISO 27001 などの他の標準に準拠することは、ユーザー、プロ�
 
 | 規定 | 記事/セクション | 記載 | 適用可能なテクニカルコントロールカテゴリ |
 |:-------|:-----|:-------|:-------|
-| GDPR | 記事 5 (1) (f) | 個人データの適切なセキュリティを確保する方法で処理されるのは、承認されていないまたは違法な処理に対する保護や、適切な技術または組織の測定値 (「誠実」と「機密」) を使用した、個人データの適切なセキュリティを確保する方法です。  |  いずれ <br> ID <br> Device <br> 脅威保護 <br> 情報を保護する <br> 情報を管理する <br> 検出と対応 |
+| GDPR | 記事 5 (1) (f) | 個人データの適切なセキュリティを確保する方法で処理されるのは、承認されていないまたは違法な処理に対する保護や、適切な技術または組織の測定値 (「誠実」と「機密」) を使用した、個人データの適切なセキュリティを確保する方法です。  |  いずれ <br> Identity <br> デバイス <br> 脅威保護 <br> 情報を保護する <br> 情報を管理する <br> 検出と対応 |
 |  | 記事 (32) (1) (a) | アートの状態、実装のコスト、および処理の性質、範囲、コンテキスト、および目的について、また、自然責任者の権利と自由についてのさまざまな確率と重大度を考慮したうえで、コントローラーとプロセッサは適切な技術および組織上の手段を実装し、リスクに適したレベルのセキュリティを確保する必要があります。(必要に応じて alia 間を含む): (a) 個人データの仮名化と暗号化。 | 情報を保護する |
 |  | 記事 (13) (2) (a) | "...コントローラーは、個人データを取得するときに、公正で透過的な処理を行うために、(a) 個人データを保存する期間、または可能でない場合には、その期間を決定するために使用される基準を確実にするために必要な、次の追加情報を使用してデータ主体に提供します。 | 情報を管理する |
 |  | 記事 (15) (1) (e) | データサブジェクトは、自分または個人のデータが処理されているかどうかについて、コントローラーの確認から取得する権限を持っているものとします。その場合は、個人データと次の情報にアクセスできます。 (e) 個人データの訂正または消去、またはデータの対象に関する個人データの処理の制限、またはそのような処理に対するオブジェクトの制限 | 検出と対応 |
@@ -78,7 +78,7 @@ ISO 27001 などの他の標準に準拠することは、ユーザー、プロ�
 |||||
 
 >[!Important]
->これは完全なリストではありません。 記載されているテクニカルコントロールカテゴリへの関連するセクションの適用に関する詳細については、[コンプライアンスマネージャー](../compliance/compliance-manager-overview.md)または法務/コンプライアンスアドバイザーを参照してください。
+>これは完全なリストではありません。 記載されているテクニカルコントロールカテゴリへの関連するセクションの適用に関する詳細については、 [コンプライアンスマネージャー](../compliance/compliance-manager.md) または法務/コンプライアンスアドバイザーを参照してください。
 >
 
 ## <a name="knowing-your-data"></a>データの理解
@@ -155,7 +155,7 @@ ISO 27001 などの他の標準に準拠することは、ユーザー、プロ�
 
 このカテゴリは、お客様のデータ漏洩の多くのパブリックインスタンスが原因で、データのプライバシーを考慮している人のうちの最も多くの人です。 これは、プロバイダーに対する契約の下にあるサードパーティのような意図的なものでも、悪意のあるアクターによる excontrolなどの意図しないものでもかまいません。 コンシューマーデータの保護は、EU がこれらの規制を制定する主な理由の1つです。 GDPR および CCPA などのデータプライバシーに関する規制では、以下のことを計画する必要があります。
 
-- [アクションプラン](../compliance/gdpr-action-plan.md)と[アカウンタビリティの準備チェックリスト](../compliance/gdpr-arc-office365.md)
+- [アクションプラン](../compliance/gdpr-action-plan.md) と [アカウンタビリティの準備チェックリスト](../compliance/gdpr-arc-office365.md)
 - [データ保護影響評価](../compliance/gdpr-data-protection-impact-assessments.md)
 - [ブリーチ通知](../compliance/gdpr-breach-office365.md)
 - [データ サブジェクト要求](../compliance/gdpr-dsr-office365.md)
@@ -168,13 +168,13 @@ ISO 27001 などの他の標準に準拠することは、ユーザー、プロ�
 
 お客様が Microsoft 365 環境の個人データを所有していない場合、または環境の特定の部分に限定されている場合に、技術的な制御が必要になるのは、コンシューマータイプのデータがある場合だけではなく、環境のリスクの高い部分のみに限られている場合があります。
 
-Microsoft 365 のコンプライアンススコアのように、外部の組織または標準コントロールセットに推奨されている場合もありますが、お客様の実装の選択は、実際のリスクの露呈度を定量化するために、データ在庫の認識に基づいて行う必要があります。
+Microsoft 365 のコンプライアンスマネージャーのような、外部の組織または標準コントロールセットの推奨事項では、制御戦略についての通知を行うことができますが、お客様の選択は、実際のリスクの露呈度を定量化するために、データ在庫の認識によって決定する必要があります。
 
 ほとんどの組織では、上記のシナリオのいずれかに公開されています。 総合的なアプローチを評価することが重要です。
 
 ## <a name="step-2-assess-your-readiness-for-complying-with-data-privacy-regulations"></a>手順 2: データプライバシー規制への準拠の準備状況を評価する
 
-GDPR に固有ですが、無料の[MICROSOFT GDPR 評価ツール](https://www.microsoft.com/cyberassessment/en/gdpr/uso365)で検討されている質問は、全体的なデータプライバシーの準備状況を理解するために役立ちます。 
+GDPR に固有ですが、無料の [MICROSOFT GDPR 評価ツール](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) で検討されている質問は、全体的なデータプライバシーの準備状況を理解するために役立ちます。 
 
 米国またはブラジルの LGPD の CCPA など、他のデータプライバシー規制の対象となる組織は、GDPR と重複してプロビジョニングされているため、このツールの準備によってもメリットがあります。
 
@@ -194,7 +194,7 @@ GDPR 評価は、次のセクションで構成されます。
 
 個人を含む環境でコンテンツを検索することは強力なタスクであり、以前はコンプライアンス検索、電子情報開示、高度な電子情報開示、DLP、監査を使用しています。 
 
-Microsoft コンプライアンス管理センターの新しい**データ分類**ソリューションを使用すると、[コンテンツエクスプローラー](../compliance/data-classification-content-explorer.md)の機能が非常に簡単になります。これは、個人データに関連するものを含む、組み込みの機密情報の種類またはカスタムの機密情報の種類のいずれかで動作します。
+Microsoft コンプライアンス管理センターの新しい **データ分類** ソリューションを使用すると、 [コンテンツエクスプローラー](../compliance/data-classification-content-explorer.md) の機能が非常に簡単になります。これは、個人データに関連するものを含む、組み込みの機密情報の種類またはカスタムの機密情報の種類のいずれかで動作します。
  
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
@@ -214,11 +214,11 @@ Microsoft コンプライアンス管理センターには100を超える機密�
 - [カスタムの機密情報の種類:](../compliance/custom-sensitive-info-types.md)
 - [セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type.md)
 - [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [正確なデータ一致に基づく分類を使用してカスタムの機密情報の種類を作成する](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>コンテンツエクスプローラー
 
-お客様の環境で機密性の高いアイテムが発生するかどうかを判断するための重要なツールは、Microsoft 365 コンプライアンス管理センターの新しい[コンテンツエクスプローラー](../compliance/data-classification-content-explorer.md)です。 このツールは、機密情報の種類の発生や結果の表示のために、Microsoft 365 サブスクリプション全体の最初のスキャンおよび継続的なスキャンを行うための自動化されたツールです。
+お客様の環境で機密性の高いアイテムが発生するかどうかを判断するための重要なツールは、Microsoft 365 コンプライアンス管理センターの新しい [コンテンツエクスプローラー](../compliance/data-classification-content-explorer.md) です。 このツールは、機密情報の種類の発生や結果の表示のために、Microsoft 365 サブスクリプション全体の最初のスキャンおよび継続的なスキャンを行うための自動化されたツールです。
  
 新しいコンテンツエクスプローラーツールを使用すると、組み込みの機密情報の種類またはカスタムの情報のいずれかを使用して、環境内の機密アイテムの場所をすばやく識別できます。 これには、プロセスの確立と、機密アイテムのプレゼンスと場所を定期的に調査する責任が割り当てられることがあります。
 
@@ -228,6 +228,6 @@ Microsoft コンプライアンス管理センターには100を超える機密�
 
 コンテンツエクスプローラーに加えて、組織はコンテンツ検索機能にアクセスして、高度な検索条件やカスタムフィルターを使用して、環境内の個人データを検索するためのカスタム検索を作成できます。
 
-個人データの検出にコンテンツ検索を使用するための詳細なガイダンスについては、[この記事](../compliance/search-for-and-find-personal-data.md)で説明します。 [GDPR および CCPA につい](../compliance/gdpr-dsr-office365.md#introduction-to-dsrs)ても、コンテンツ検索とその他の探索手法が dsrs で検討されています。
+個人データの検出にコンテンツ検索を使用するための詳細なガイダンスについては、 [この記事](../compliance/search-for-and-find-personal-data.md)で説明します。 [GDPR および CCPA につい](../compliance/gdpr-dsr-office365.md#introduction-to-dsrs)ても、コンテンツ検索とその他の探索手法が dsrs で検討されています。
 
-Microsoft 365 の個人データに関する調査と修復の手法に関する追加の洞察は、[モニターと応答の記事](information-protection-deploy-monitor-respond.md)に記載されています。
+Microsoft 365 の個人データに関する調査と修復の手法に関する追加の洞察は、 [モニターと応答の記事](information-protection-deploy-monitor-respond.md)に記載されています。

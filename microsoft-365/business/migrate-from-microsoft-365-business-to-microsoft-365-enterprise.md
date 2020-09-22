@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business Premium から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401992"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195521"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Microsoft 365 Business Premium から Microsoft 365 E3 への移行
 
@@ -37,7 +37,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 
 または、ビジネスには、Microsoft 365 Apps for enterprise、Windows 10 Enterprise E3、エンタープライズクライアントアクセスライセンス (Cal) などのエンタープライズ機能が必要です。
 
-アップグレードは簡単です。[管理センターから](../commerce/subscriptions/upgrade-to-different-plan.md)アップグレードを開始できます。 現在のサブスクリプションのすべてのデータと構成が保持されます。 移行を準備するために実行する必要はありません。その後は、新しい機能を利用する以外に何もする必要はありません。
+アップグレードは簡単です。 [管理センターから](../commerce/subscriptions/upgrade-to-different-plan.md)アップグレードを開始できます。 現在のサブスクリプションのすべてのデータと構成が保持されます。 移行を準備するために実行する必要はありません。その後は、新しい機能を利用する以外に何もする必要はありません。
 
 >[!Note]
 >また、Microsoft 365 Business Premium サブスクリプションを最大300の席で使用することもできます。また、Microsoft 365 E3 サブスクリプションは、300さらに多くのユーザーを対象としています。 ただし、Office 365 ATP は Microsoft 365 E3 には含まれていません。 引き続き脅威を保護するには、office 365 ATP のライセンスを追加して、Office 365 ATP ポリシーの範囲内のすべてのユーザーがライセンスを持つようにする必要があります。
@@ -79,13 +79,13 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 | エンタープライズ CAL スイート (Exchange、SharePoint、Skype、Windows、Microsoft エンドポイント構成マネージャー、Windows Rights Management)| |         ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | **コンプライアンス**        | | | 
 | 無制限のメールのアーカイブ    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
-| コンプライアンススコア/コンプライアンスマネージャー    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| コンプライアンス マネージャー    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | 電子情報開示    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | インプレース保持と訴訟ホールド    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | メッセージング レコード管理 (MRM) 保持タグとアイテム保持ポリシー    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 ||||
 
-\*SaaS アプリへのアクセスが割り当てられているユーザーは、最大10個のアプリへの SSO アクセスを取得できます。 管理者は SSO を構成し、さまざまな SaaS アプリへのユーザーアクセスを変更できますが、SSO アクセスは、一度に1ユーザーあたり10個のアプリに対してのみ許可されます。 すべての Office 365 アプリは、1つのアプリとして数えられます。
+\* SaaS アプリへのアクセスが割り当てられているユーザーは、最大10個のアプリへの SSO アクセスを取得できます。 管理者は SSO を構成し、さまざまな SaaS アプリへのユーザーアクセスを変更できますが、SSO アクセスは、一度に1ユーザーあたり10個のアプリに対してのみ許可されます。 すべての Office 365 アプリは、1つのアプリとして数えられます。
 
 ## <a name="migration"></a>移行
 

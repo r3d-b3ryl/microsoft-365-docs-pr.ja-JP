@@ -19,19 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 50ca606a6bef9cec528b6b0ef78142f050e37c51
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844908"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195493"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft Threat Protection の前提条件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
 
-プロビジョニングおよび[Microsoft の脅威保護](microsoft-threat-protection.md)の使用に関するライセンスおよびその他の要件について説明します。
+プロビジョニングおよび [Microsoft の脅威保護](microsoft-threat-protection.md)の使用に関するライセンスおよびその他の要件について説明します。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 これらのライセンスのいずれかを使用すると、追加のコストを必要とせずに Microsoft 365 セキュリティセンターの Microsoft の脅威保護機能にアクセスできます。
@@ -60,13 +63,13 @@ Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.
 > ライセンス情報を表示するには、 [AZURE AD の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)**課金管理者**または**グローバル閲覧**者の役割のいずれかが割り当てられている必要があります。 アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-Microsoft の脅威保護を有効にするには、Azure Active Directory の**グローバル管理者**または**セキュリティ管理者**である必要があります。 Microsoft の脅威保護を使用するために必要な役割の一覧と、データへのアクセスを規制する方法については、「 [microsoft の脅威保護へのアクセスの管理](mtp-permissions.md)」を参照してください。
+Microsoft の脅威保護を有効にするには、Azure Active Directory の **グローバル管理者** または **セキュリティ管理者** である必要があります。 Microsoft の脅威保護を使用するために必要な役割の一覧と、データへのアクセスを規制する方法については、「 [microsoft の脅威保護へのアクセスの管理](mtp-permissions.md)」を参照してください。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 Microsoft Edge、Internet Explorer 11、または任意の HTML 5 準拠の web ブラウザーを使用して、microsoft 365 セキュリティセンターの Microsoft 脅威保護にアクセスします。
 
 ## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国 GCC、GCC 高、その他の米国政府機関向けの可用性
-現時点では、Microsoft の脅威保護は次の場合には使用でき*ません*。
+現時点では、Microsoft の脅威保護は次の場合には使用でき *ません* 。
 - 米国政府機関向けコミュニティクラウド (GCC)
 - 米国政府機関向けコミュニティクラウド高 (GCC 高)
 - 米国国防総省

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bcd607afa6c1de0edf8a668d26b920079419da84
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560897"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196169"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -47,14 +50,14 @@ Microsoft Threat Protection は、統合された事前違反および事後侵�
 
 
 >[!TIP]
->この[Microsoft Threat Protection の対話的なガイド](https://aka.ms/MTP-Interactive-Guide)をご覧ください。
+>この [Microsoft Threat Protection の対話的なガイド](https://aka.ms/MTP-Interactive-Guide)をご覧ください。
 
 
 Microsoft Threat Protection スイートは次のような防護を行います： 
-- **Microsoft DEFENDER atp があるエンドポイント**-MICROSOFT defender atp は、予防的な保護、ブリーチ後の検出、自動化された調査、および応答のための統合エンドポイントプラットフォームです。 
-- **Office 365 を使用した電子メールとコラボレーション**-OFFICE 365 atp は、電子メールメッセージ、リンク (url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 
+- **Microsoft DEFENDER atp があるエンドポイント** -MICROSOFT defender atp は、予防的な保護、ブリーチ後の検出、自動化された調査、および応答のための統合エンドポイントプラットフォームです。 
+- **Office 365 を使用した電子メールとコラボレーション** -OFFICE 365 atp は、電子メールメッセージ、リンク (url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 
 - Azure **atp と AZURE AD Identity Protection を使用した id** azure atp では、Active Directory シグナルを使用して、組織での高度な脅威、侵害された id、および悪意のある insider 操作を識別、検出、調査します。 
-- **Microsoft Cloud app security を使用したアプリケーション**-Microsoft cloud app security は、高度な可視性、強力なデータ制御、および拡張された脅威保護をクラウドアプリにもたらす包括的な相互 SaaS ソリューションです。 
+- **Microsoft Cloud app security を使用したアプリケーション** -Microsoft cloud app security は、高度な可視性、強力なデータ制御、および拡張された脅威保護をクラウドアプリにもたらす包括的な相互 SaaS ソリューションです。 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
@@ -75,14 +78,14 @@ Suite 製品全体で関連付けられているすべての通知を1つのイ�
 
 
 Microsoft の脅威保護の製品間の機能には、次のようなものがあります。 
-- **製品間での単一ウィンドウの**中央表示ウィンドウ検出、影響を受ける資産、実行された操作、および関連する証拠に関するすべての情報が、 [security.microsoft.com](https://security.microsoft.com)の単一のキューおよび単一のウィンドウに表示されます。 
+- **製品間での単一ウィンドウの** 中央表示ウィンドウ検出、影響を受ける資産、実行された操作、および関連する証拠に関するすべての情報が、 [security.microsoft.com](https://security.microsoft.com)の単一のキューおよび単一のウィンドウに表示されます。 
 - **組み合わされたインシデントキュー** -セキュリティ担当者が、完全な攻撃範囲を確保し、影響を受けるリソースと自動修復アクションをグループ化し、タイムリーに提示します。 
-- **脅威に**とって重要な脅威に対する自動応答は、Microsoft の脅威保護製品間でリアルタイムで共有されるため、攻撃の進行を停止できます。 たとえば、Microsoft Defender ATP で保護されているエンドポイントで悪意のあるファイルが検出された場合は、Office 365 ATP に対して、すべての電子メールメッセージからファイルをスキャンして削除するように指示します。 このファイルは、Microsoft 365 セキュリティスイート全体によって表示がブロックされます。
+- **脅威に** とって重要な脅威に対する自動応答は、Microsoft の脅威保護製品間でリアルタイムで共有されるため、攻撃の進行を停止できます。 たとえば、Microsoft Defender ATP で保護されているエンドポイントで悪意のあるファイルが検出された場合は、Office 365 ATP に対して、すべての電子メールメッセージからファイルをスキャンして削除するように指示します。 このファイルは、Microsoft 365 セキュリティスイート全体によって表示がブロックされます。
 - 侵害された**デバイス、ユーザー id、メールボックスに対する自己復旧**-Microsoft の脅威保護は、影響を受けた自動アクションおよびプレイブックを使用して、影響を受けるアセットをセキュリティで保護された状態に戻します。 Microsoft の脅威保護は、スイート製品の自動修復機能を活用して、インシデントに関連する影響を受けるすべての資産が可能な場合に自動的に修復されるようにします。
-- **クロス積脅威**検索-セキュリティチームは、さまざまな保護製品によって収集された生データに対して独自のカスタムクエリを作成することによって、組織の独自の知識を活用して、侵害の兆候を探すことができます。 Microsoft の脅威保護では、エンドポイントと Office 365 の ATP データに対して、30日間の履歴生信号およびアラートデータに対するクエリベースのアクセスが提供されています。 
+- **クロス積脅威** 検索-セキュリティチームは、さまざまな保護製品によって収集された生データに対して独自のカスタムクエリを作成することによって、組織の独自の知識を活用して、侵害の兆候を探すことができます。 Microsoft の脅威保護では、エンドポイントと Office 365 の ATP データに対して、30日間の履歴生信号およびアラートデータに対するクエリベースのアクセスが提供されています。 
 
 
 ## <a name="get-started"></a>作業の開始
-Microsoft 365 セキュリティセンターの[security.microsoft.com](https://security.microsoft.com)でサービスを有効にするには、Microsoft の脅威保護ライセンスの要件を満たす必要があります。 詳細については、以下を参照してください。
+Microsoft 365 セキュリティセンターの [security.microsoft.com](https://security.microsoft.com)でサービスを有効にするには、Microsoft の脅威保護ライセンスの要件を満たす必要があります。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

@@ -14,14 +14,17 @@ search.appverid: MET150
 description: 脅威の修復
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 526a88409514127d4fb484f88632bf3185004854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547242"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197443"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Office 365 で配信される悪意のある電子メールを修復する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 修復とは、脅威に対して proscribed アクションを実行することを意味します。 組織に送信された悪意のある電子メールは、システムによって、ゼロ時間の自動削除 (ZAP)、またはセキュリティチームによるクリーンアップを行うことができます。たとえば、 *[受信トレイへ*移動]、 *[迷惑メールに*移動]、[削除*済みアイテムに*移動]、[削除済みアイテム *]、*[削除済みアイテム]、[*ハード削除* Office Advanced Threat Protection (Office ATP) P2/E5 を使用すると、セキュリティチームは手動および自動調査により、電子メールおよびコラボレーション機能の脅威を修復できます。
 
@@ -36,8 +39,8 @@ ms.locfileid: "47547242"
 
 |アクティビティ|役割グループ|必要な*プレビュー*の役割|
 |---|---|---|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者|不要|
-|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする|グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者|不要|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者|いいえ|
+|脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする|グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者|いいえ|
 |脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする|グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview|はい|
 
 > [!NOTE]

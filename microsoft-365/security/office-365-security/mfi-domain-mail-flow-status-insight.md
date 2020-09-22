@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードにある上位ドメインのメールフロー状態の洞察を使用して、電子メールドメイン内の MX レコードに関連するメールフローの問題のトラブルシューティングを行う方法を学習できます。
-ms.openlocfilehash: 34b80bee48bd91524fbd95961c473f50fbe394b7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 24922d6ae7d2ec50e3d9383631991cf46a818c05
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197527"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの上位ドメインメールフローのステータスの洞察
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [セキュリティ & コンプライアンスセンター](https://protection.office.com)の[メールフローダッシュボード](mail-flow-insights-v2.md)にある**上位ドメインメールフローの状態**に関する洞察は、メールフローの観点から、組織のドメインの現在の状態を示しています。 この洞察は、 ***メールフローに影響を与える*** (たとえば、外部電子メールを受信できない) 問題が発生しているドメインを特定してトラブルシューティングするのに役立ちます。特に、ドメインの有効期限、または間違った MX レコードがあるドメイン。
 

@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
-ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950606"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195917"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 

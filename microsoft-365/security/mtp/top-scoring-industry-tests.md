@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 40d0ffa779b0ab13a0bdd887b12d69c20892662d
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: e518f91b264680e3d356b1e6158f4b9740ed52a2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399351"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196097"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップスコア
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 [Microsoft の脅威保護](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) テクノロジは、独立したテストでの高いスコアを一貫して達成し、企業の脅威保護機能の強度を示します。 Microsoft は、これらのテストスコアを透過的にすることを目的としています。 このページでは、結果の要約と分析を行います。
 

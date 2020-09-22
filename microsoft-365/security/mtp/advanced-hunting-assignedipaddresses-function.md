@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198249"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -36,8 +39,8 @@ ms.locfileid: "47949314"
 | Column | データ型 | 説明 |
 |------------|-------------|-------------|
 | `Timestamp` | 日付型 | デバイスが IP アドレスを使用して観測された最新時刻 |
-| `IPAddress` | string | デバイスによって使用される IP アドレス |
-| `IPType` | string | IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します |
+| `IPAddress` | 文字列 | デバイスによって使用される IP アドレス |
+| `IPType` | 文字列 | IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します |
 | `NetworkAdapterType` | int | IP アドレスが割り当てられているデバイスによって使用されるネットワークアダプターの種類。 可能な値については、[この列挙型](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)を参照してください。 |
 | `ConnectedNetworks` | int | 割り当てられた IP アドレスを持つアダプターがに接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれています。 |
 

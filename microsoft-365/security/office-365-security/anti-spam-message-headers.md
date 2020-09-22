@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) によってメッセージに追加されるヘッダー フィールドについて学習することができます。 これらのヘッダー フィールドは、メッセージとそのメッセージがどのように処理されたかについての情報を提供します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 71cefb4a26751b92dd8b5e5a308bbc18b1a5c221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867189"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197503"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 すべての Microsoft 365 組織では、Exchange Online Protection (EOP) がすべての受信メッセージをスキャンして、スパム、マルウェア、およびその他の脅威を検出します。 これらのスキャンの結果は、メッセージの次のヘッダー フィールドに追加されます。
 

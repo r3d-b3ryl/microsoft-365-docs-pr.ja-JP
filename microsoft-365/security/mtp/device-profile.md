@@ -12,14 +12,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: db6109fb73f0e208ab4403e2469bc955a1a01b38
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43517038"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196859"
 ---
 # <a name="device-profile-page"></a>デバイスプロファイルページ
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft 365 セキュリティポータルはデバイスプロファイルページを提供するので、ネットワーク上のデバイスの正常性と状態をすばやく評価できます。
 
@@ -48,15 +51,15 @@ Microsoft 365 セキュリティポータルはデバイスプロファイルペ
 
 サイドバーには、デバイスの完全な名前と露出レベルが一覧表示されます。 また、以下のように、次のようないくつかの重要な基本的な情報を、開いた場合と閉じて設定したサブセクションで提供することもできます。
 
-* **タグ**-デバイスに関連付けられている MICROSOFT Defender Atp、Azure atp、またはカスタムタグ。 Azure ATP からのタグは編集できません。
-* **セキュリティ情報**-インシデントとアクティブなアラートを開きます。 Microsoft Defender ATP に登録されているデバイスには、露出レベルとリスクレベルも表示されます。
+* **タグ** -デバイスに関連付けられている MICROSOFT Defender Atp、Azure atp、またはカスタムタグ。 Azure ATP からのタグは編集できません。
+* **セキュリティ情報** -インシデントとアクティブなアラートを開きます。 Microsoft Defender ATP に登録されているデバイスには、露出レベルとリスクレベルも表示されます。
 
 > [!TIP]
 > 露出レベルは、デバイスがセキュリティ上の推奨事項とどの程度準拠しているかに関係していますが、リスクレベルは、アクティブな通知の種類や重要度など、さまざまな要因に基づいて計算されます。
 
-* **デバイスの詳細**-デバイスが最初に表示されたときのドメイン、OS、タイムスタンプ、IP アドレス、リソース。 Microsoft Defender ATP に登録されているデバイスには、正常性の状態も表示されます。 Azure ATP に登録されたデバイスは、最初にデバイスが作成されたときの SAM 名とタイムスタンプを表示します。
-* **ネットワークアクティビティ**-最初の時点でのタイムスタンプ、およびデバイスがネットワーク上で最後に表示された時刻。
-* **ディレクトリデータ**(*Azure ATP に登録されているデバイス専用*)- [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview)のフラグ、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)、およびグループメンバーシップ。
+* **デバイスの詳細** -デバイスが最初に表示されたときのドメイン、OS、タイムスタンプ、IP アドレス、リソース。 Microsoft Defender ATP に登録されているデバイスには、正常性の状態も表示されます。 Azure ATP に登録されたデバイスは、最初にデバイスが作成されたときの SAM 名とタイムスタンプを表示します。
+* **ネットワークアクティビティ** -最初の時点でのタイムスタンプ、およびデバイスがネットワーク上で最後に表示された時刻。
+* **ディレクトリデータ** (*Azure ATP に登録されているデバイス専用*)- [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) のフラグ、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)、およびグループメンバーシップ。
 
 ## <a name="response-actions"></a>応答アクション
 
@@ -65,19 +68,19 @@ Microsoft 365 セキュリティポータルはデバイスプロファイルペ
 ![デバイスプロファイルのアクションバーの画像](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [応答アクション](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)は、デバイスが MICROSOFT Defender ATP に登録されている場合にのみ使用できます。
+> * [応答アクション](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) は、デバイスが MICROSOFT Defender ATP に登録されている場合にのみ使用できます。
 > * Microsoft Defender ATP に登録されているデバイスでは、デバイスの OS とバージョン番号に基づいて、異なる数の応答アクションが表示されることがあります。
 
 [デバイスプロファイル] ページで使用可能なアクションは次のとおりです。
 
-* **タグの管理**-このデバイスに適用したカスタムタグを更新します。
-* **デバイスの分離**-Microsoft Defender Advanced Threat Protection に接続された状態を維持したまま、組織のネットワークからデバイスを分離します。 通信目的で、デバイスが分離されている間、Outlook、Teams、および Skype for Business を実行することを選択できます。
+* **タグの管理** -このデバイスに適用したカスタムタグを更新します。
+* **デバイスの分離** -Microsoft Defender Advanced Threat Protection に接続された状態を維持したまま、組織のネットワークからデバイスを分離します。 通信目的で、デバイスが分離されている間、Outlook、Teams、および Skype for Business を実行することを選択できます。
 * **アクションセンター** -送信されたアクションの状態を表示します。 別のアクションが既に選択されている場合にのみ使用できます。
-* **アプリの実行を制限**する-Microsoft によって署名されていないアプリケーションが実行されないようにします。
-* **ウイルス対策スキャンを実行**する-Windows Defender ウイルス対策の定義を更新し、すぐにウイルス対策スキャンを実行します。 クイックスキャンまたはフルスキャンのどちらかを選択します。
-* **収集調査パッケージ**-デバイスに関する情報を収集します。 調査が完了したら、ダウンロードすることができます。
+* **アプリの実行を制限** する-Microsoft によって署名されていないアプリケーションが実行されないようにします。
+* **ウイルス対策スキャンを実行** する-Windows Defender ウイルス対策の定義を更新し、すぐにウイルス対策スキャンを実行します。 クイックスキャンまたはフルスキャンのどちらかを選択します。
+* **収集調査パッケージ** -デバイスに関する情報を収集します。 調査が完了したら、ダウンロードすることができます。
 * [ **Live Response Session を開始**する-[詳細なセキュリティ調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)のためにデバイス上のリモートシェルをロードします。
-* **自動化**された調査を開始します。脅威を自動的に調査[し、remediates](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)します。 自動調査を手動でトリガーしてこのページから実行することもできますが、[特定のアラートポリシーによっ](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies)て自動的に調査がトリガーされます。
+* **自動化** された調査を開始します。脅威を自動的に調査 [し、remediates](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)します。 自動調査を手動でトリガーしてこのページから実行することもできますが、 [特定のアラートポリシーによっ](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) て自動的に調査がトリガーされます。
 * **アクションセンター** -現在実行されているすべての応答アクションに関する情報を表示します。
 
 ## <a name="tabs-section"></a>[タブ] セクション
@@ -88,7 +91,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ### <a name="overview-tab"></a>[概要] タブ
 
-既定のタブは**概要**です。 これにより、デバイスに関する最も重要なセキュリティの事実をすばやく確認できます。
+既定のタブは **概要**です。 これにより、デバイスに関する最も重要なセキュリティの事実をすばやく確認できます。
 
 ![デバイスプロファイルの [概要] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
@@ -98,7 +101,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ### <a name="alerts-tab"></a>[通知] タブ
 
-[**通知**] タブには、Azure Atp と MICROSOFT Defender atp の両方から、デバイス上で発生した通知の一覧が含まれています。
+[ **通知** ] タブには、Azure Atp と MICROSOFT Defender atp の両方から、デバイス上で発生した通知の一覧が含まれています。
 
 ![デバイスプロファイルの [通知] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -106,7 +109,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 このタブの列には、アラートをトリガーした脅威の重要度、状態、調査状態、およびアラートが割り当てられている人物に関する情報が含まれています。
 
-[*影響を受けるエンティティ*] 列は、現在表示されているプロファイルを含むデバイス (エンティティ)、および影響を受けるネットワーク内の他のデバイスを参照します。
+[ *影響を受けるエンティティ* ] 列は、現在表示されているプロファイルを含むデバイス (エンティティ)、および影響を受けるネットワーク内の他のデバイスを参照します。
 
 このリストからアイテムを選択すると、選択した通知に関する詳細情報が含まれているフライアウトが開きます。
 
@@ -114,7 +117,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ### <a name="timeline-tab"></a>[タイムライン] タブ
 
-[**タイムライン**] タブには、デバイス上で発生したすべてのイベントを示す対話的な時系列のグラフが含まれています。 グラフの強調表示された領域を左または右に移動すると、さまざまな期間にわたるイベントを表示できます。 対話型のグラフとイベントの一覧の間にあるドロップダウンメニューから、ユーザー設定の日付の範囲を選択することもできます。
+[ **タイムライン** ] タブには、デバイス上で発生したすべてのイベントを示す対話的な時系列のグラフが含まれています。 グラフの強調表示された領域を左または右に移動すると、さまざまな期間にわたるイベントを表示できます。 対話型のグラフとイベントの一覧の間にあるドロップダウンメニューから、ユーザー設定の日付の範囲を選択することもできます。
 
 グラフの下に、選択した日付範囲のイベントの一覧が表示されます。
 
@@ -130,7 +133,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ### <a name="security-recommendations-tab"></a>[セキュリティの推奨事項] タブ
 
-[**セキュリティの推奨事項**] タブには、デバイスを保護するために実行できるアクションが一覧表示されます。 このリストで項目を選択すると、推奨事項の適用方法を説明するポップアップが表示されます。
+[ **セキュリティの推奨事項** ] タブには、デバイスを保護するために実行できるアクションが一覧表示されます。 このリストで項目を選択すると、推奨事項の適用方法を説明するポップアップが表示されます。
 
 ![デバイスプロファイルの [セキュリティの推奨事項] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
@@ -140,7 +143,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ### <a name="software-inventory"></a>ソフトウェア インベントリ
 
-[**ソフトウェアインベントリ**] タブには、デバイスにインストールされているソフトウェアが表示されます。
+[ **ソフトウェアインベントリ** ] タブには、デバイスにインストールされているソフトウェアが表示されます。
 
 ![デバイスプロファイルの [ソフトウェアインベントリ] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
@@ -152,7 +155,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ### <a name="discovered-vulnerabilities-tab"></a>[検出された脆弱性] タブ
 
-[**検出**された脆弱性] タブには、デバイスに影響を与える可能性のある一般的な脆弱性と悪用 (cves) が一覧表示されます。
+[ **検出** された脆弱性] タブには、デバイスに影響を与える可能性のある一般的な脆弱性と悪用 (cves) が一覧表示されます。
 
 ![デバイスプロファイルの [検出された脆弱性] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
@@ -164,7 +167,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ### <a name="missing-kbs"></a>KBs がありません
 
-[ **Kb がありません**] タブには、デバイスにまだ適用されていない Microsoft 更新プログラムが一覧表示されます。 質問の "KBs" は、これらの更新を説明する[サポート技術情報の記事](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query)です。たとえば、 [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762)のようになります。
+[ **Kb がありません** ] タブには、デバイスにまだ適用されていない Microsoft 更新プログラムが一覧表示されます。 質問の "KBs" は、これらの更新を説明する [サポート技術情報の記事](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) です。たとえば、 [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762)のようになります。
 
 ![デバイスプロファイル用に [不足] タブのイメージ](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 

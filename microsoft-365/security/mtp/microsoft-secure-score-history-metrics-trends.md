@@ -20,14 +20,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 46a45eac2fe5d1a19b0d2c40c6c1405f31b7f7f7
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 6c31ea1f7217babd4949bee843b091bb767e210e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866709"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196291"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>Microsoft のセキュリティで保護されたスコア履歴を追跡し、目標を達成する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 [Microsoft セキュリティスコア](microsoft-secure-score.md) は、組織のセキュリティに関する状況の測定値で、より多くの改善アクションが行われたことを示しています。 この点については https://security.microsoft.com/securescore 、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
 
