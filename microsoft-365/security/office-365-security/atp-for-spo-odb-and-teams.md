@@ -21,14 +21,17 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: SharePoint Online、OneDrive for Business、Microsoft Teams のファイルの Office 365 Advanced Threat Protection について説明します。
-ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9831b61fafc7cb4696fbad3d569f061612f85fe1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815411"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199041"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams の Office 365 ATP の概要
 
@@ -52,11 +55,11 @@ Microsoft 365 の構成方法によっては、ユーザーはブロックされ
 
 ## <a name="keep-these-points-in-mind"></a>これらの点を念頭に置いてください。
 
-- ATP では、SharePoint Online、OneDrive for Business、または Microsoft Teams のすべてのファイルがスキャンされるわけではありません。 これは仕様です。 ファイルは、共有とゲストアクティビティイベントを使用するプロセスによって非同期でスキャンされ、スマートヒューリスティックおよび脅威信号を使用して悪意のあるファイルを識別します。
+- ATP では、SharePoint Online、OneDrive for Business、または Microsoft Teams のすべてのファイルがスキャンされるわけではありません。 この動作は仕様です。 ファイルは、共有とゲストアクティビティイベントを使用するプロセスによって非同期でスキャンされ、スマートヒューリスティックおよび脅威信号を使用して悪意のあるファイルを識別します。
 
-- SharePoint サイトが[モダンな環境](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)を使用するように構成されていることを確認します。 ファイルが悪意のあるものとして認識され、ブロックされると、これがモダンな機能で発生していることがわかりますが、クラシックビューでは表示されません。 ATP 保護は、モダンな表示とクラシック表示のどちらを使用するかに適用されます。ただし、ファイルがブロックされているという視覚インジケーターは、モダンな環境でのみ表示されます。
+- SharePoint サイトが [モダンな環境](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)を使用するように構成されていることを確認します。 ファイルが悪意のあるものとして認識され、ブロックされると、これがモダンな機能で発生していることがわかりますが、クラシックビューでは表示されません。 ATP 保護は、モダンな表示とクラシック表示のどちらを使用するかに適用されます。ただし、ファイルがブロックされているという視覚インジケーターは、モダンな環境でのみ表示されます。
 
-- SharePoint Online、OneDrive for Business、または Microsoft Teams で悪意のあるものとして識別されたファイルは、 [Office 365 Advanced Threat Protection](view-reports-for-atp.md)および[Explorer (およびリアルタイム検出)](threat-explorer.md)のレポートで表示されます。
+- SharePoint Online、OneDrive for Business、または Microsoft Teams で悪意のあるものとして識別されたファイルは、 [Office 365 Advanced Threat Protection](view-reports-for-atp.md) および [Explorer (およびリアルタイム検出)](threat-explorer.md)のレポートで表示されます。
 
 - ATP は、組織の全体的な脅威保護戦略の一部であり、スパム対策とマルウェア対策の保護、および安全なリンクと安全な添付ファイルが含まれます。 詳細については、「 [Office 365 の脅威から保護](protect-against-threats.md)する」を参照してください。
 
@@ -64,17 +67,17 @@ Microsoft 365 の構成方法によっては、ユーザーはブロックされ
 
 ## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>SharePoint Online、OneDrive for Business、Microsoft Teams 用の ATP での検疫
 
- 2018年5月の初期段階では、セキュリティ/コンプライアンスセンターの[検疫](quarantine-email-messages.md)機能 &amp; が、SharePoint Online、OneDrive For Business、Microsoft TEAMS 用の ATP に拡張されています。
+ 2018年5月の初期段階では、セキュリティ/コンプライアンスセンターの [検疫](quarantine-email-messages.md) 機能 &amp; が、SharePoint Online、OneDrive For Business、Microsoft TEAMS 用の ATP に拡張されています。
 
-SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルは、検疫されたアイテムの一覧に含まれています。 (セキュリティ &amp;コンプライアンスセンターで、[**脅威管理** \> の**レビュー** ] [ \> **検疫**と**ファイル**のフィルター] に移動します。)
+SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別されると、そのファイルは、検疫されたアイテムの一覧に含まれています。 (セキュリティ &amp; コンプライアンスセンターで、[ **脅威管理** \> の **レビュー** ] [ \> **検疫** と **ファイル**のフィルター] に移動します。)
 
-組織の Microsoft 365 for business security team の一部であり、[セキュリティ/ &amp; コンプライアンスセンターで必要なアクセス許可が割り当てら](permissions-in-the-security-and-compliance-center.md)れている場合は、検疫からの ATP によって悪意があると検出されたファイルをダウンロード、リリース、レポート、および削除できます。
+組織の Microsoft 365 for business security team の一部であり、 [セキュリティ/ &amp; コンプライアンスセンターで必要なアクセス許可が割り当てら](permissions-in-the-security-and-compliance-center.md)れている場合は、検疫からの ATP によって悪意があると検出されたファイルをダウンロード、リリース、レポート、および削除できます。
 
-- ファイルを**リリースおよびレポートすると**、SharePoint、OneDrive、Microsoft Teams の各チームサイトまたはドキュメントライブラリにあるファイルの ATP ブロックが削除されます。 その後、ユーザーはファイルを開いて、共有し、ダウンロードすることができます。 そして、[ **microsoft にレポートを送信**] オプションが選択されている場合、ファイルは誤検知として microsoft に報告されます。
+- ファイルを**リリースおよびレポートすると**、SharePoint、OneDrive、Microsoft Teams の各チームサイトまたはドキュメントライブラリにあるファイルの ATP ブロックが削除されます。 その後、ユーザーはファイルを開いて、共有し、ダウンロードすることができます。 そして、[ **microsoft にレポートを送信** ] オプションが選択されている場合、ファイルは誤検知として microsoft に報告されます。
 
-- **ファイルを削除する**と、検疫からファイルが削除されます。ただし、ファイルは開いたり共有したりすることはブロックされたままです。 また、ファイルは、対応するドキュメントライブラリまたはチームサイト (SharePoint Online、OneDrive for Business、または Microsoft Teams) で削除する必要があります。
+- **ファイルを削除する** と、検疫からファイルが削除されます。ただし、ファイルは開いたり共有したりすることはブロックされたままです。 また、ファイルは、対応するドキュメントライブラリまたはチームサイト (SharePoint Online、OneDrive for Business、または Microsoft Teams) で削除する必要があります。
 
-- **ファイルをダウンロード**すると、誤検知のためにファイルをダウンロードして分析することができます。
+- **ファイルをダウンロード** すると、誤検知のためにファイルをダウンロードして分析することができます。
 
 ## <a name="next-steps"></a>次の手順
 

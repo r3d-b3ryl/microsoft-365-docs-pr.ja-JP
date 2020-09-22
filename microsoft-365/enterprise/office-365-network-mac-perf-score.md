@@ -3,7 +3,7 @@ title: Microsoft 365 ネットワーク評価 (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク評価 (プレビュー)
-ms.openlocfilehash: 21fb9515ea1621225cffbe23fe87d0daeb5265de
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 3d80130dbf9ca41342bc1a01fe3ce992303efb48
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104548"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200749"
 ---
 # <a name="microsoft-365-network-assessment-preview"></a>Microsoft 365 ネットワーク評価 (プレビュー)
 
@@ -101,8 +101,6 @@ Microsoft Teams では、ネットワーク品質は UDP 遅延、UDP ジッタ�
 
 [Microsoft 365 network performance insights (プレビュー)](office-365-network-mac-perf-insights.md)
 
-[M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 ネットワーク接続テストツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)](office-365-network-mac-location-services.md)
-
-[Microsoft 365 ネットワーク接続テストツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)

@@ -16,14 +16,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: '概要: Microsoft 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チームサイトを構成します。'
-ms.openlocfilehash: 095b0e5098d86f69c21576e72439dde48a092db3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308405"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199663"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>分離した SharePoint Online チーム サイト開発/テスト環境
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **概要:** Microsoft 365 開発/テスト環境で、組織の他の部分とは分離した SharePoint Online チームサイトを構成します。
 

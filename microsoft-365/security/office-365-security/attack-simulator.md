@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、アタックシミュレータを使用して、Microsoft 365 E5 または ATP Plan 2 組織でシミュレートされたフィッシングおよびパスワード攻撃を実行する方法を学習できます。
-ms.openlocfilehash: 9fc28cdecc07f5325918e3d5176e52d1051a626c
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 86d365036daa4f24d2c2e3b8e64b5836e291889f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426995"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200391"
 ---
 # <a name="attack-simulator-in-atp"></a>ATP のアタックシミュレータ
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 組織で Office 365 Advanced Threat Protection (ATP) プラン2があり、脅威の [調査および応答機能](office-365-ti.md)が含まれている場合は、セキュリティ & コンプライアンスセンターでアタックシミュレータを使用して、組織で現実的な攻撃シナリオを実行できます。 このようなシミュレートされた攻撃は、実際の攻撃が下の回線に影響を与える前に、脆弱性のあるユーザーを特定して見つけるのに役立ちます。 詳細については、この記事をお読みください。
 

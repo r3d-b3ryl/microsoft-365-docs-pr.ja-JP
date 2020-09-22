@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: 脅威の調査と応答機能を使用して、悪意のある電子メールを検索して調査する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 120cc32a2736858a0f0d99ab37f1d51c70a6071c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949266"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201915"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Office 365 で配信された悪意のある電子メールを調査する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) を使用すると、組織内のユーザーにリスクがあるというアクティビティを調査し、組織を保護するための処置を取ることができます。 たとえば、組織のセキュリティチームに属している場合は、配信された不審な電子メールメッセージを見つけて調査することができます。 これを行うには、 [脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)を使用します。
 
@@ -55,7 +58,7 @@ ms.locfileid: "47949266"
 |---|---|---|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して脅威を分析する |グローバル管理者 <br> セキュリティ管理者 <br> セキュリティ閲覧者|いいえ|
 |脅威エクスプローラー (およびリアルタイム検出) を使用して、電子メールメッセージのヘッダーを表示し、検疫された電子メールメッセージをプレビューしてダウンロードする|グローバル管理者 <br> セキュリティ管理者 <br>セキュリティ閲覧者|いいえ|
-|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする|グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview|必要|
+|脅威エクスプローラーを使用してヘッダーを表示し、メールボックスに配信された電子メールメッセージをダウンロードする|グローバル管理者 <br>セキュリティ管理者 <br> セキュリティ閲覧者 <br> Preview|はい|
 |
 
 > [!NOTE]

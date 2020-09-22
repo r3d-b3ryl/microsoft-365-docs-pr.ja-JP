@@ -14,14 +14,17 @@ ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 81ad3ab0d3bc20a49128fa6ed45ff62195b32bc7
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47963861"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199747"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Microsoft の脅威保護で自動調査および応答機能を構成する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft Threat Protection には、強力な自動化された [調査と応答機能](mtp-autoir.md) が含まれており、セキュリティ運用チームの時間と労力を大幅に節約できます。 自己復旧の場合、これらの機能はセキュリティアナリストが脅威を調査して対応するための手順に似ています。これにより、より迅速に、拡張性を高めることができます。 この記事では、Microsoft の脅威保護で自動化された調査と応答を構成する方法について説明します。
 

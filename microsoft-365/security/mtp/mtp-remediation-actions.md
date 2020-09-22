@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 205809bac14cc82e850ea1cbc0349256432bfe68
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 232d19cb0bcb6a2f91c1bdad15d842ec7396499c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962587"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201053"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft の脅威保護で自動調査を行った後の修復アクション
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -65,6 +68,6 @@ Microsoft の脅威保護の自動化された調査の最中および実行後�
 
 ## <a name="next-steps"></a>次の手順
 
-- [アクションセンターにアクセスする](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [アクション センターにアクセスする](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [保留中のアクションを承認または拒否する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 - [自動調査と応答機能で誤検知/否定を処理する](mtp-autoir-report-false-positives-negatives.md)

@@ -19,14 +19,17 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
-ms.openlocfilehash: cfd20b0d5e6e13343346761b9b909a333b9a6ff5
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827519"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200127"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **概要** 侵害された Microsoft 365 電子メール アカウントを認識して対処する方法について説明します。
 

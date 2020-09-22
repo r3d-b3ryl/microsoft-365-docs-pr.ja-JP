@@ -16,14 +16,17 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
-ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652659"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199579"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Microsoft 365 にメールを送信するユーザー以外のサービス
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 電子メールの不正使用、迷惑メール、詐欺メール (フィッシング詐欺) は、引き続き電子メール エコシステム全体にとって負担となっています。 電子メールの使用においてユーザーの信頼を維持するために、Microsoft はさまざまなポリシーとテクノロジを用意して、ユーザーを保護しています。 ただし、正当な電子メールが不利を被らないようにするべきであることも理解しています。 そのため、送信者が送信評価をプロアクティブに管理することで、Microsoft 365 ユーザーに電子メールを配信する機能を向上させる一連のサービスを確立しています。
 
@@ -33,7 +36,7 @@ ms.locfileid: "46652659"
 
 ****
 
-|サービス|メリット|
+|サービス|利点|
 |---|---|
 |このオンライン ヘルプ コンテンツ|提供内容： <br/> EOP ユーザーへの通信の配信に関連する質問の開始点。 <br/><br/> には、ポリシーと要件に関する簡単なオンラインガイドが含まれています。 <br/><br/> Microsoft によって使用されている迷惑メールフィルターと認証テクノロジの概要について説明します。|
 |[Microsoft サポート](#microsoft-support)|配信の問題に対するセルフヘルプと充実したサポートを提供します。|

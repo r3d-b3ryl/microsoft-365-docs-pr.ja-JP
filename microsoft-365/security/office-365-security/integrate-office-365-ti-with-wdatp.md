@@ -18,20 +18,23 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合し、より詳細な脅威管理情報を表示します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bfb87edd24a22033b3771ba0fd3c4f1afbbc988e
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 0906b8b44922084a65999dd9ab10a09c827605c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086710"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201973"
 ---
 # <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (OFFICE 365 atp) は、 [Microsoft Defender advanced threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (microsoft defender atp) で動作するように構成できます。
 
 Microsoft Defender ATP を使用して Office 365 ATP を統合することにより、ユーザーのデバイスが危険にさらされている場合に、セキュリティ運用チームが迅速に監視してアクションを実行できるようになります。 たとえば、統合が有効になると、セキュリティ運用チームは、検出された電子メールメッセージによって影響を受ける可能性があるデバイス、およびそれらのデバイスが Microsoft Defender ATP で保持している最近の通知の数を表示できるようになります。 
 
-次の図は、Microsoft Defender ATP の統合が有効になっている**デバイス**タブの外観を示しています。
+次の図は、Microsoft Defender ATP の統合が有効になっている **デバイス** タブの外観を示しています。
   
 ![Microsoft Defender ATP が有効になっている場合は、アラートがあるデバイスの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
@@ -40,13 +43,13 @@ Microsoft Defender ATP を使用して Office 365 ATP を統合することに�
 > [!TIP]
 > Microsoft Defender セキュリティセンター (Microsoft Defender ATP ポータルとも呼ばれます)**[の詳細については、こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** を参照してください。
   
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 - 組織では、Office 365 ATP Plan 2 (または Office 365 E5) と Microsoft Defender ATP を所有している必要があります。
     
-- [セキュリティ/ &amp; コンプライアンスセンター](https://protection.office.com)では、全体管理者であるか、セキュリティ管理者の役割 (セキュリティ管理者など) が割り当てられている必要があります。 ([セキュリティ &amp; コンプライアンスセンターのアクセス許可を](permissions-in-the-security-and-compliance-center.md)参照)
+- [セキュリティ/ &amp; コンプライアンスセンター](https://protection.office.com)では、全体管理者であるか、セキュリティ管理者の役割 (セキュリティ管理者など) が割り当てられている必要があります。 ( [セキュリティ &amp; コンプライアンスセンターのアクセス許可を](permissions-in-the-security-and-compliance-center.md)参照)
     
-- セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方の[エクスプローラー (またはリアルタイム検出)](threat-explorer.md)にアクセスできる必要があります。
+- セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方の [エクスプローラー (またはリアルタイム検出)](threat-explorer.md) にアクセスできる必要があります。
     
 ## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a>Microsoft Defender ATP を使用して Office 365 ATP を統合するには
 
@@ -62,7 +65,7 @@ Microsoft Defender ATP との Office 365 ATP の統合は、セキュリティ &
     
 5. Microsoft Defender セキュリティセンター () に移動 [https://securitycenter.windows.com](https://securitycenter.windows.com) します。
 
-6. ナビゲーションバーで、[**設定**] を選択します。 [**全般**] で、[**高度な機能**] を選択します。
+6. ナビゲーションバーで、[ **設定**] を選択します。 [ **全般**] で、[ **高度な機能**] を選択します。
 
 7. [ **Office 365 の脅威インテリジェンス接続**] まで下にスクロールし、接続をオンにします。<br/>![Office 365 脅威インテリジェンス接続](../../media/mdatp-oatptoggle.png)<br>
 

@@ -3,7 +3,7 @@ title: Microsoft 365 管理センターでのネットワーク接続 (プレビ
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171364"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200799"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターでのネットワーク接続 (プレビュー)
 
@@ -63,7 +63,7 @@ Windows Location Service は、コンピューター上で同意である必要�
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Microsoft 365 ネットワーク接続テストツールを使用してテストレポートを手動で収集する
 
-このオプションでは、それぞれの場所で個人を識別する必要があります。 管理者権限を持っている Windows コンピューター上で、 [Microsoft 365 のネットワーク接続テスト](https://connectivity.office.com) を参照するように依頼します。 Web サイトでは、結果を表示するのと同じ組織に対して Office 365 アカウントにサインインする必要があります。 次に、[テストの実行] をクリックします。 テスト中に、ダウンロードされた接続テスト EXE があります。 それらを開いて実行する必要もあります。 テストが完了すると、テスト結果が Office 365 にアップロードされます。
+このオプションでは、それぞれの場所で個人を識別する必要があります。 ユーザーに管理者権限を持つ Windows コンピューター上で、 [Microsoft 365 のネットワーク接続テスト](https://connectivity.office.com) を参照するように依頼します。 Web サイトでは、結果を表示するのと同じ組織に対して Office 365 アカウントにサインインする必要があります。 その後、[ **テストの実行**] をクリックする必要があります。 テスト中に、ダウンロードされた接続テスト EXE があります。 それらを開いて実行する必要もあります。 テストが完了すると、テスト結果が Office 365 にアップロードされます。
 
 テストレポートは、LAN サブネット情報を使用して追加された場合は場所にリンクされます。それ以外の場合は、都市の場所のみに表示されます。
 
@@ -174,7 +174,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>最適な Microsoft 365 サービスのフロントドアとは何ですか。
 
-最適な Microsoft 365 サービスのフロントドアは、一般に都市またはメトロエリアでのネットワーク出口に最も近いものです。 [Microsoft 365 connectivity test](office-365-network-mac-perf-onboarding-tool.md)を使用して、使用中の microsoft 365 サービスのフロントドアと最適なサービスフロントドアの場所を特定します。 使用中のフロントドアが最適であると判断した場合は、Microsoft のグローバルネットワークに最適な接続を行います。
+最適な Microsoft 365 サービスのフロントドアは、一般に都市またはメトロエリアでのネットワーク出口に最も近いものです。 [Microsoft 365 connectivity test tool (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)を使用して、使用中の microsoft 365 サービスのフロントドアと最適なサービスフロントドアの場所を特定します。 使用中のフロントドアが最適であると判断した場合は、Microsoft のグローバルネットワークに最適な接続を行います。
 
 ### <a name="what-is-an-internet-egress-location"></a>インターネット出口の場所とは
 
@@ -186,8 +186,6 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 [Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
 
-[M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 connectivity test tool (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)](office-365-network-mac-location-services.md)
-
-[Microsoft 365 ネットワーク接続テストツール (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)

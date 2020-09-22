@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: bcf5b79fcd2fdf0a5af5648e6f6b7ea65d69594c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844920"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201293"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>Microsoft Threat Protection サービスに関する問題のトラブルシューティング
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -45,6 +48,6 @@ ms.locfileid: "44844920"
 詳細については、「[Azure ATP 統合](https://docs.microsoft.com/cloud-app-security/aatp-integration)」を参照してください。
 
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>サービスをオンにするための設定ページはどこにありますか。
-Microsoft の脅威保護を有効にするには、Microsoft 365 セキュリティセンターのナビゲーションウィンドウの**設定**にアクセスします。 このナビゲーション項目は、[必要なアクセス許可とライセンス](mtp-enable.md#check-license-eligibility-and-required-permissions)がある場合にのみ表示されます。
+Microsoft の脅威保護を有効にするには、Microsoft 365 セキュリティセンターのナビゲーションウィンドウの **設定** にアクセスします。 このナビゲーション項目は、 [必要なアクセス許可とライセンス](mtp-enable.md#check-license-eligibility-and-required-permissions)がある場合にのみ表示されます。
  
 

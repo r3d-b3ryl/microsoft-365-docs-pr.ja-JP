@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 1778e8485e859d01e4eec40c7a0d404636e27e8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956273"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199651"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>試用ラボまたはパイロット環境用の Microsoft 脅威保護の柱を構成する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -253,6 +256,6 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 
 次に、攻撃をシミュレートし、製品間の機能を検出して通知を作成し、エンドポイントへの fileless 攻撃に自動的に応答する方法を確認できます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 |![アタックシミュレーションフェーズ](../../media/mtp/run-sim.png) <br>[アタックシミュレーションフェーズ](mtp-pilot-simulate.md) | Microsoft の脅威保護パイロット環境のアタックシミュレーションを実行します。
 |:-------|:-----|

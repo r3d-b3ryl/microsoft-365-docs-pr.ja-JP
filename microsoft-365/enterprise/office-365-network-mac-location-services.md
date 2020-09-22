@@ -3,7 +3,7 @@ title: Microsoft 365 ネットワーク接続ロケーションサービス (プ
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)
-ms.openlocfilehash: e614e719069a74ea087b07ca624ae0450790c763
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f2ab872f67eca70ab2791d3ad6fe1396b009cc18
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692043"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200783"
 ---
 # <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 ネットワーク接続ロケーションサービス (プレビュー)
 
@@ -38,3 +38,13 @@ Microsoft 365 管理センターでは、Bing マップコントロールを使�
 Geocodes を含む Bing Maps で提供されるコンテンツは、そのコンテンツが提供される製品内でのみ使用できます。 お客様による Microsoft 365 管理センターの場所サービス機能の使用 (Bing Maps による) は、 _Bing Maps エンドユーザー使用許諾契約_ 書 () <https://go.microsoft.com/?linkid=9710837> およびで提供される microsoft のプライバシーに関する _声明_ に準拠しています。 <https://go.microsoft.com/fwlink/?LinkID=248686.>
 
 Bing Maps で提供されるこの機能は、この **テクノロジ**でもサポートされています。 Bing Maps _は、ここ_ で提供される場所サービスを活用する方法について説明 <https://legal.here.com/en-gb/terms> します。
+
+## <a name="related-topics"></a>関連項目
+
+[Microsoft 365 管理センターでのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
+
+[Microsoft 365 network performance insights (プレビュー)](office-365-network-mac-perf-insights.md)
+
+[Microsoft 365 ネットワーク評価 (プレビュー)](office-365-network-mac-perf-score.md)
+
+[M365 管理センターでの Microsoft 365 の接続テスト (プレビュー)](office-365-network-mac-perf-onboarding-tool.md)

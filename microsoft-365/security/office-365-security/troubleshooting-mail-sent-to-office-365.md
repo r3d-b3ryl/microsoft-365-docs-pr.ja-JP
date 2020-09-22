@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、microsoft 365 お客様に一括メールを送信するためのベストプラクティス &、Microsoft 365 の受信トレイへの電子メールの送信に関するトラブルシューティング情報を提供します。
-ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307581"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201739"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>Microsoft 365 に送信されるメールのトラブルシューティング
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 この記事では、Microsoft 365 の受信トレイに電子メールを送信しようとしたときに問題が発生している送信者のトラブルシューティングに関する情報を提供し、顧客への一括メール送信のベストプラクティスを提供します。
 

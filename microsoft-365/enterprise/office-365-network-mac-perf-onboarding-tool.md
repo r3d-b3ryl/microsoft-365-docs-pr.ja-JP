@@ -1,9 +1,9 @@
 ---
-title: Microsoft 365 ネットワーク接続テスト (プレビュー)
+title: Microsoft 365 ネットワーク接続テストツール (プレビュー)
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Microsoft 365 ネットワーク接続テスト (プレビュー)
-ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+description: Microsoft 365 ネットワーク接続テストツール (プレビュー)
+ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171352"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200819"
 ---
-# <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 ネットワーク接続テスト (プレビュー)
+# <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 ネットワーク接続テストツール (プレビュー)
 
 Microsoft 365 ネットワーク接続テストツールは、にあり <https://connectivity.office.com> ます。 これは、Microsoft 365 管理センターで利用可能なネットワーク評価およびネットワーク insights 情報に対する adjunct ツールであり、正常性の下にあります。 **[接続** ] メニュー
 
@@ -249,7 +249,7 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>高度なテストクライアントを実行するために必要なこと
 
-高度なテストクライアントには、.NET コア3.1 デスクトップランタイムが必要です。 高度なテストクライアントをインストールせずに実行すると、 [.Net Core 3.1 インストーラページ](https://dotnet.microsoft.com/download/dotnet-core/3.1)に転送されます。 SDK ではなく、ASP.NET Core ランタイムをインストールするようにしてください。これは、ページ上でより上位にある必要があります。 .NET Core をインストールするには、コンピューターに対する管理者のアクセス許可が必要です。 
+高度なテストクライアントには、.NET コア3.1 デスクトップランタイムが必要です。 高度なテストクライアントをインストールせずに実行すると、 [.Net Core 3.1 インストーラページ](https://dotnet.microsoft.com/download/dotnet-core/3.1)に転送されます。 SDK ではなく、ASP.NET Core ランタイムをインストールするようにしてください。これは、ページ上でより上位にある必要があります。 .NET Core をインストールするには、コンピューターに対する管理者のアクセス許可が必要です。
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>Microsoft 365 サービスのフロントドアとは
 
@@ -267,7 +267,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 ## <a name="related-topics"></a>関連項目
 
-[Microsoft 365 管理センター (プレビュー) でのネットワークパフォーマンスに関する推奨事項](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理センターでのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 network performance insights (プレビュー)](office-365-network-mac-perf-insights.md)
 

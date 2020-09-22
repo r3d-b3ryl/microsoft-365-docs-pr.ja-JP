@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47322030"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201867"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 組織で [office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) を使用しており、 [必要なアクセス許可](#required-licenses-and-permissions)がある場合は、 **Explorer** または **リアルタイムの検出** (以前の *リアルタイムのレポート* - [新機能を参照](#new-features-in-threat-explorer-and-real-time-detections)) があります。 [セキュリティ & コンプライアンスセンター] で、[ **脅威の管理**] に移動してから、[ **エクスプローラー** ] _または_[ **リアルタイムの検出**] を選択します。
 

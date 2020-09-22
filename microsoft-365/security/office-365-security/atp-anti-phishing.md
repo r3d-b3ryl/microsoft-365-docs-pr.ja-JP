@@ -17,21 +17,24 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection の一部である、市販の & スピアーフィッシング攻撃に対する保護を提供するフィッシング対策機能について説明します。
-ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: db1587d0cd60dc94e79b1498e000e63aa2a5ceac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653366"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199065"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 の ATP フィッシング対策機能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ATP のフィッシング対策は、 [Office 365 Advanced Threat Protection](office-365-atp.md)の一部です。 ATP アンチフィッシングは、機械学習モデルのセットと偽装検出アルゴリズムを受信メッセージに適用して、コモディティ フィッシング攻撃およびスピア フィッシング攻撃への保護を提供します。 すべてのメッセージは、フィッシングメッセージを検出するために訓練された広範な一連の機械学習モデルと共に、さまざまなユーザーおよびドメイン偽装攻撃から保護するための一連の高度なアルゴリズムと共に適用されます。 ATP のフィッシング対策は、Office 365 グローバルまたはセキュリティ管理者によって設定されたポリシーに従って組織を保護します。
   
 詳細については、「 [Office 365 でフィッシング対策ポリシーをセットアップ](set-up-anti-phishing-policies.md)する」を参照してください。
   
 > [!NOTE]
-> ATP のフィッシング対策は、Advanced Threat Protection でのみ利用できます。これは、 [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 エデュケーション A5 などのサブスクリプションに含まれています。Office 365 ATP を含まない Office 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection)」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> ATP のフィッシング対策は、Advanced Threat Protection でのみ利用できます。これは、 [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)、office 365 Enterprise E5、office 365 エデュケーション A5 などのサブスクリプションに含まれています。Office 365 ATP を含まない Office 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection) 」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
 
 ## <a name="how-atp-anti-phishing-works"></a>ATP のフィッシング対策のしくみ
 
@@ -51,7 +54,7 @@ ATP のフィッシング対策機能は、 [Advanced Threat Protection](office-
 
 さらに、組織に対してサービスがどのように機能しているかを示すレポートを使用できます。 詳細については、「 [View reports For Office 365 Advanced Threat Protection](view-reports-for-atp.md)」を参照してください。
 
-特定のユーザーに対して、ATP のフィッシング対策のコンピューターの学習モデルをアクティブにするには、定義済みの[atp の安全な添付ファイル](atp-safe-attachments.md)、 [atp の安全なリンク](atp-safe-links.md)、または atp のフィッシング対策ポリシーの一部である必要があります。 
+特定のユーザーに対して、ATP のフィッシング対策のコンピューターの学習モデルをアクティブにするには、定義済みの [atp の安全な添付ファイル](atp-safe-attachments.md)、 [atp の安全なリンク](atp-safe-links.md)、または atp のフィッシング対策ポリシーの一部である必要があります。 
 
 次の表に、いくつかのシナリオの例を示します。 これらの各例では、組織は Office 365 Enterprise E5 を使用しています。これには Advanced Threat Protection が含まれています。
 

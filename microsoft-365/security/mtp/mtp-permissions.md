@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f747737fc94241ca5f65ad9881715f517d5fbe3c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 96a8694f5cbc7c27d27acbd5ec0aabe8712c6f06
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773841"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201077"
 ---
 # <a name="manage-access-to-microsoft-threat-protection"></a>Microsoft Threat Protection へのアクセスを管理する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection

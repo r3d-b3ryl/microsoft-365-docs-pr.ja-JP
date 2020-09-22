@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のスパム対策ポリシーで利用できる高度なスパムフィルター (ASF) 設定について学習できます。
-ms.openlocfilehash: 6a670a9aba2204035646840d0f128ca9a90ece15
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: f2c58349bc1ffd2bb231eadf83bd4d70582925a2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867223"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199949"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパムフィルター (ASF) 設定
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > 現在、スパム対策ポリシーで使用可能な ASF 設定は、廃止されるプロセスに含まれています。 スパム対策ポリシーでは、これらの設定を使用しないことをお勧めします。 これらの ASF 設定の機能は、フィルター処理スタックの他の部分に組み込まれています。 詳細については、「 [EOP スパム対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)」を参照してください。

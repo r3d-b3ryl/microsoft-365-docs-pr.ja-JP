@@ -13,114 +13,117 @@ localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
-description: Microsoft 迷惑メール報告アドインをインストールして、スパム、非スパム、フィッシング メールを Microsoft に報告する方法について説明します。
-ms.openlocfilehash: 42b38830b55ae3dbee4ec74a0e96531d920c24a5
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: Microsoft 迷惑メール報告アドインをインストールおよび使用して、スパム、非スパム、フィッシングメッセージを Microsoft に報告する方法について説明します。
+ms.openlocfilehash: 096bd83c53149360e6cdd3ba8e73aacce5b1106f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827101"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199687"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する
 
-> [!NOTE]
-> 迷惑メール報告アドインを使用している場合は、代わりに [、迷惑メール報告アドインをお勧](enable-the-report-message-add-in.md) めします。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Microsoft Outlook 用迷惑メール報告アドインにより、ユーザーは誤検知 (優れたメールがスパムとしてマークされています)、漏えい (不適切なメールで許可される)、およびフィッシング メッセージを Microsoft に送信できます。 組織で Exchange Online Protection (たとえば、オンプレミスの Exchange、または Exchange Online 以外のメール サービス) を使用していない場合、迷惑メールの報告送信はスパム フィルタリングに影響しません。
+
+> [!NOTE]
+> 現在迷惑メール報告アドインを使用していない場合は、代わりに [レポートメッセージアドイン](enable-the-report-message-add-in.md) を使用することをお勧めします。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+
+Microsoft Outlook 用迷惑メール報告アドインを使用すると、誤検知 (スパムとしてマークされた良好な電子メール)、誤検知 (無効な電子メールが許可されている)、およびフィッシングメッセージを Microsoft に送信できます。 組織が Exchange Online Protection (たとえば、オンプレミスの Exchange や Exchange Online 以外の電子メールサービスなど) を使用していない場合、迷惑メールレポートの送信はスパムフィルターに影響しません。
 
 このトピックでは、迷惑メール報告アドインをインストールして使用する方法について説明します。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
-- 迷惑メール報告アドインをインストールする場合は、後述 [する「迷惑メール報告アドインをインストール](#install-the-junk-email-reporting-add-in) する」を参照してください。
+- 迷惑メール報告アドインをインストールするには、このトピックで後述する「 [迷惑メール報告アドインをインストール](#install-the-junk-email-reporting-add-in) する」セクションを参照してください。
 
-- 迷惑メール報告アドインは、次のバージョンの Outlook で機能します。
+- 迷惑メール報告アドインは、次のバージョンの Outlook で動作します。
 
   - Outlook 2013 以降
-  - Microsoft 365 Apps for enterprise に含まれる Outlook
+  - Outlook は、Microsoft 365 Apps for enterprise に含まれています。
 
-- Microsoft へのメッセージの報告の詳細については、「メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+- Microsoft へのメッセージの報告の詳細については、「 [microsoft にメッセージとファイルを報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>迷惑メール報告アドインを使用してスパム メッセージとフィッシング メッセージを報告する
+## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>迷惑メール報告アドインを使用してスパムおよびフィッシングメッセージを報告する
 
-1. 受信トレイ内のメッセージまたはその他の [迷惑メール] 以外の電子メール フォルダーに対しては、次のいずれかの方法を使用して、スパム メッセージとフィッシング メッセージを報告します。
+1. 受信トレイまたは迷惑メール以外のその他の電子メールフォルダー内のメッセージの場合、次のいずれかの方法を使用して、スパムメッセージとフィッシングメッセージを報告します。
 
-   - メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム** ] **または [メッセージ** ] タブで、[迷惑メールとして保存] **をクリックし**、[ **迷惑メールとして** レポート] または **[レポート] を選択します**。
+   - メッセージを選択するか、メッセージを開きます。 リボンの [ **ホーム** ] タブまたは [ **メッセージ** ] タブで、[ **迷惑メール**] をクリックし、[ **迷惑メール** として報告] または [ **フィッシングとして報告**] を選択します。
 
-     ![リボンから迷惑メールまたはフィッシング メールを報告する](../../media/junk-email-reporting-ribbon.png)
+     ![リボンから迷惑メールまたはフィッシング詐欺メールを報告する](../../media/junk-email-reporting-ribbon.png)
 
-   - メッセージを右クリックし、[迷惑メール **]** を選択して、[迷惑メールとして保存] または [ **フィッシ** ング **として報告] を選択します**。
+   - メッセージを右クリックし、[ **迷惑メール**] を選択して、[ **迷惑メールと** して報告] または [ **フィッシングとして報告**] を選択します。
 
-     ![右クリックから迷惑メールまたはフィッシング メールを報告する](../../media/junk-email-reporting-right-click.png)
+     ![右クリックで迷惑メールまたはフィッシング詐欺メールを報告する](../../media/junk-email-reporting-right-click.png)
 
-   - 複数のメッセージを選択して右クリックし、[迷惑メールとして報告] または [ **フィッシ** ング **として報告] を選択します**。
+   - 複数のメッセージを選択して右クリックし、[ **迷惑メールと** して報告] または [ **フィッシングとして**報告] を選択します。
 
-     ![右クリックして、複数の迷惑メール またはフィッシングメール メッセージを報告します](../../media/junk-email-reporting-right-click-multiple.png)
+     ![右クリックで複数の迷惑メールまたはフィッシング詐欺メールメッセージを報告する](../../media/junk-email-reporting-right-click-multiple.png)
 
-2. 表示されるダイアログで情報を読み、レポート をクリック **します**。 後で注意が必要な場合は、[ **レポートしない] をクリックします**。
+2. 表示されるダイアログで、情報を読み、[ **レポート**] をクリックします。 気が変わった場合は、[ **レポートしない**] をクリックします。
 
-   ![迷惑メールとして報告](../../media/junk-email-reporting-report-as-junk-dialog.png)
+   ![[迷惑メールとして報告] ダイアログ](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
-   ![フィッシング ダイアログとして報告する](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![フィッシングとして報告するダイアログ](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. 選択したメッセージは、分析用に Microsoft に送信され、次の処理が行います。
+3. 選択したメッセージが分析のために Microsoft に送信され、次のようになります。
 
-   - スパムとして報告された場合、[迷惑メール] フォルダーに移動されました。
-   - フィッシングとして報告された場合は削除されます。
+   - 迷惑メールフォルダーがスパムとして報告された場合は、そのフォルダーに移動します。
+   - フィッシングとして報告された場合に削除されます。
    
    メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
 
-## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>迷惑メール報告アドインを使用して、迷惑メール フォルダーから、スパムではないフィッシングやフィッシングのメッセージを報告する
+## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>迷惑メール報告アドインを使用して迷惑メールフォルダーからの非スパムメッセージとフィッシング詐欺メッセージを報告する
 
-1. 迷惑メール フォルダーで、次のいずれかの方法を使用して、スパムの誤検知またはフィッシング メッセージを報告します。
+1. [迷惑メール] フォルダーで、次のいずれかの方法を使用してスパム誤検知またはフィッシングメッセージを報告します。
 
-   - メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム** ] **または [メッセージ** ] タブで [迷惑メールしない] をクリック **し**、[迷惑メールしない] または [ **レポート** ] を **選択します**。
+   - メッセージを選択するか、メッセージを開きます。 リボンの [ **ホーム** ] タブまたは [ **メッセージ** ] タブで、[ **迷惑メール**ではない] をクリックし、[ **迷惑メール** ではないと報告] または [ **フィッシングとし**て報告する] を選択します。
 
-     ![[迷惑メール] フォルダーのリボンから、迷惑メールまたはフィッシングメールでないメールを報告します](../../media/junk-email-reporting-junk-folder-ribbon.png)
+     ![迷惑メールフォルダーのリボンから迷惑メールまたはフィッシング詐欺メールを報告しない](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-   - メッセージを右クリックして [迷惑 **メール]** をクリックし、[迷惑メールとして保存] を選択するか、[ **フィ** ッ **シングとして報告] を選択します**。
+   - メッセージを右クリックし、[ **迷惑メール**] をクリックして、[ **迷惑メールではないメール** として報告] または [ **フィッシングとして報告**] を選択します。
 
-     ![迷惑メール フォルダーで右クリックして、迷惑メールまたはフィッシング メールでないメールを報告します](../../media/junk-email-reporting-junk-folder-right-click.png)
+     ![迷惑メールフォルダーを右クリックして迷惑メールではないことを報告する](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-   - 複数のメッセージを選択して右クリックし、次に [迷惑メールしないメールとしてレポート] または [ **フ** ィッ **シングとして報告] を選択します**。
+   - 複数のメッセージを選択し、右クリックして、[ **迷惑メール** ではないと報告] または [ **フィッシングとし**て報告する] を選択します。
 
-     ![迷惑メール フォルダーで右クリックして、迷惑メール メッセージまたはフィッシングメール メッセージの複数を報告する](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+     ![迷惑メールフォルダー内の複数の迷惑メールまたはフィッシング詐欺メールメッセージを右クリックして報告する](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-2. 表示されるダイアログで情報を読み、レポート をクリック **します**。 後で注意が必要な場合は、[ **レポートしない] をクリックします**。
+2. 表示されるダイアログで、情報を読み、[ **レポート**] をクリックします。 気が変わった場合は、[ **レポートしない**] をクリックします。
 
-   ![迷惑メールでないことを報告するダイアログ](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
+   ![[迷惑メールではないメールとして報告] ダイアログ](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
 
-   ![フィッシング ダイアログとして報告する](../../media/junk-email-reporting-report-as-phishing-dialog.png)
+   ![フィッシングとして報告するダイアログ](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. 選択したメッセージは、分析用に Microsoft に送信され、次の処理が行います。
+3. 選択したメッセージが分析のために Microsoft に送信され、次のようになります。
 
-   - スパムとして報告された場合、[迷惑メール] フォルダーに移動されました。
-   - フィッシングとして報告された場合は削除されます。
+   - 迷惑メールフォルダーがスパムとして報告された場合は、そのフォルダーに移動します。
+   - フィッシングとして報告された場合に削除されます。
 
    メッセージが送信されたことを確認するには、 **[送信済みアイテム]** フォルダーを開いて、送信済みのメッセージを表示します。
 
 ## <a name="install-the-junk-email-reporting-add-in"></a>迷惑メール報告アドインをインストールする
 
-- このアドインをインストールするコンピューターの管理者特権が必要です。
+- アドインをインストールするコンピューターで管理者特権を持っている必要があります。
 
-- お使 <https://www.microsoft.com/download/details.aspx?id=18275> いのバージョンに適した .msi ファイルに移動してOffice、簡単に見つけやすい場所にダウンロードします。
+- に移動 <https://www.microsoft.com/download/details.aspx?id=18275> して、お使いの Office のバージョンに対応する .msi ファイルを、見つけやすい場所にダウンロードします。
 
   - **32 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Outlook 2013 以降では、前提条件は Microsoft .NET Framework 2.0 のみです。 Windows 10 では、ダウンロードからの .NET Framework 2.0 はインストールしていけない。
+- Outlook 2013 以降の場合、唯一の前提条件は、Microsoft .NET Framework 2.0 です。 Windows 10 では、ダウンロードから .NET Framework 2.0 をインストールすることはありません。
 
-### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>セットアップ ウィザードを使用して迷惑メール報告アドインをインストールする
+### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>セットアップウィザードを使用して迷惑メール報告アドインをインストールする
 
 1. お使いのコンピューターで Outlook を終了します。
 
-2. Windows 10 で、.NET Framework 2.0 が有効になっていることを確認します。 手順については、コントロール パネル [の [.NET Framework 3.5 を有効にする] を参照してください](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)。
+2. Windows 10 で、.NET Framework 2.0 が有効になっていることを確認します。 手順については、「 [コントロールパネルで .Net Framework 3.5 を有効にする](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel)」を参照してください。
 
-3. ダウンロードした .msi ファイルを見つけ、ダブルクリックします。
+3. ダウンロードした .msi ファイルを見つけ、それをダブルクリックします。
 
 4. **[Microsoft 迷惑メール報告アドイン セットアップにようこそ]** ページで **[次へ]** をクリックします。
 
-5. 使用許諾契約書を確認し、 **使用許諾契約書** の条項に同意します。入力条件に同意する場合は、[次へ] をクリック **します**。
+5. 使用許諾契約書の内容を確認し、条項に同意する場合は [ **使用許諾契約書の条項に同意** します] をクリックし、[ **次へ**] をクリックします。
 
 6. ウィザードが完了したら、 **[完了]** をクリックします。
 
@@ -134,32 +137,32 @@ Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷
 
 1. お使いのコンピューターで Outlook を終了します。
 
-2. Windows 10 で、次のコマンドを実行して .NET Framework 2.0 をインストールします。
+2. Windows 10 では、次のコマンドを実行して .NET Framework 2.0 をインストールします。
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
    ```
 
-3. ユーザー入力を行わずにアドインをインストールするには、コマンド プロンプトを開いて次の構文を使用します。
+3. ユーザーの操作なしでアドインをインストールするには、コマンドプロンプトを開き、次の構文を使用します。
 
    ```dos
    msiexec /qn /i "<PathToMSIFile>\<MSIFile>" [MaxMessageSelection=<1-50>] [BccEmailAddress="<EmailAddress1>; <EmailAddress2>"...]
    ```
 
-   - `MaxMessageSelection` 1 つの提出で選択できる最大メッセージ数を指定します。 有効な値は 1 ~ 50 です。 既定値は 15 です。
+   - `MaxMessageSelection` 1回の送信に対して選択できるメッセージの最大数を指定します。 有効な値は 1 ~ 50 です。 既定値は 15 です。
 
-   - `BccEmailAddress` は、ユーザーのすべての申請のコピーを受信する追加の BCC 受信者を指定します。 既定値は空白です (追加の BCC 受信者はありません)。
+   - `BccEmailAddress` すべてのユーザー送信のコピーを受信する追加の Bcc 受信者を指定します。 既定値は空白です (追加の Bcc 受信者は含まれません)。
 
-   この例では、指定したパスから既定の設定で 64 ビット バージョンのアドインをインストールします。
+   この例では、既定の設定を使用して、指定されたパスから64ビット版のアドインをインストールします。
 
    ```dos
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi"
    ```
 
-   この例では、次の追加設定を指定したパスから 32 ビット バージョンのアドインをインストールします。
+   この例では、次の追加設定を使用して、指定されたパスから32ビットバージョンのアドインをインストールします。
 
-   - 1 つの送信で最大 20 のメッセージを選択できます。
-   - junkreports@contoso.comはhollyd@treyresearch.net BCC コピーを受信または受信します。
+   - 1回の送信で最大20個のメッセージを選択できます。
+   - junkreports@contoso.com および hollyd@treyresearch.net は、すべての送信の Bcc コピーを受信します。
 
    ```dos
    msiexec /qn /i "C:\Downloads\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" MaxMessageSelection=20 BccEmailAddress="junkreports@contoso.com; hollyd@treyresearch.net"
@@ -167,58 +170,58 @@ Microsoft にフィッシング詐欺メールを報告する場合は、 **[迷
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-迷惑メール報告アドインが正常にインストールされたことを確認するには、Outlook で以下のいずれかの手順を実行します。
+迷惑メール報告アドインが正常にインストールされたことを確認するには、Outlook で次のいずれかの手順を実行します。
 
-- メッセージを選択するか、メッセージを開きます。 リボンの **[ホーム** ] **タブまたは [** メッセージ] タブで、[迷惑メール] **を**クリックして、次のオプションを使用できることを確認します。
+- メッセージを選択するか、メッセージを開きます。 リボンの [ **ホーム** ] タブまたは [ **メッセージ** ] タブで、[ **迷惑メール**] をクリックし、次のオプションが使用可能になっていることを確認します。
 
-  - **迷惑メールとして報告**
-  - **レポートをフィッシングとして報告する**
-  - **迷惑レポート オプション**
-  - **迷惑メールの報告に役立つヘルプ**
+  - **迷惑メールとして報告する**
+  - **フィッシングとして報告する**
+  - **迷惑メール報告オプション**
+  - **迷惑メールを報告するオンラインヘルプ**
 
-  ![リボンから迷惑メールまたはフィッシング メールを報告する](../../media/junk-email-reporting-ribbon.png)
+  ![リボンから迷惑メールまたはフィッシング詐欺メールを報告する](../../media/junk-email-reporting-ribbon.png)
 
-- メッセージを右クリックし、[迷惑メール] **を選択して**、次のオプションが使用できることを確認します。
+- メッセージを右クリックし、[ **迷惑メール**] を選択して、次のオプションが使用可能であることを確認します。
 
-  - **迷惑メールとして報告**
-  - **レポートをフィッシングとして報告する**
-  - **迷惑レポート オプション**
-  - **迷惑メールの報告に役立つヘルプ**
+  - **迷惑メールとして報告する**
+  - **フィッシングとして報告する**
+  - **迷惑メール報告オプション**
+  - **迷惑メールを報告するオンラインヘルプ**
 
-  ![右クリックから迷惑メールまたはフィッシング メールを報告する](../../media/junk-email-reporting-right-click.png)
+  ![右クリックで迷惑メールまたはフィッシング詐欺メールを報告する](../../media/junk-email-reporting-right-click.png)
 
-- 複数のメッセージを選択し、右クリックして、次のオプションを使用できることを確認します。
+- 複数のメッセージを選択し、右クリックして、次のオプションが使用可能であることを確認します。
 
-  - **迷惑メールとして報告**
-  - **レポートをフィッシングとして報告する**
+  - **迷惑メールとして報告する**
+  - **フィッシングとして報告する**
 
-  ![右クリックして、複数の迷惑メール またはフィッシングメール メッセージを報告します](../../media/junk-email-reporting-right-click-multiple.png)
+  ![右クリックで複数の迷惑メールまたはフィッシング詐欺メールメッセージを報告する](../../media/junk-email-reporting-right-click-multiple.png)
 
-- [迷惑メール] フォルダーで以前の **アクションを実行し** 、以前の迷惑メール報告 **オプションが** [迷惑メールでなけなけた] **になたびないことを確認します**。
+- **[迷惑メール**] フォルダー内の以前のアクションを実行し、以前の**迷惑**レポートオプションが迷惑メールでは**ない**ことを確認します。
 
-  ![[迷惑メール] フォルダーのリボンから、迷惑メールまたはフィッシングメールでないメールを報告します](../../media/junk-email-reporting-junk-folder-ribbon.png)
+  ![迷惑メールフォルダーのリボンから迷惑メールまたはフィッシング詐欺メールを報告しない](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-  ![迷惑メール フォルダーで右クリックして、迷惑メールまたはフィッシング メールでないメールを報告します](../../media/junk-email-reporting-junk-folder-right-click.png)
+  ![迷惑メールフォルダーを右クリックして迷惑メールではないことを報告する](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-  ![迷惑メール フォルダーで右クリックして、迷惑メール メッセージまたはフィッシングメール メッセージの複数を報告する](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
+  ![迷惑メールフォルダー内の複数の迷惑メールまたはフィッシング詐欺メールメッセージを右クリックして報告する](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>迷惑メール報告アドインをアンインストールする
 
-Outlook を終了した後、次のいずれかの手順を使用して迷惑メール報告アドインをアンインストールします。
+Outlook を閉じた後、次のいずれかの手順を使用して、迷惑メール報告アドインをアンインストールします。
 
-- **[コントロール パネル]:** Windows キー + R キーを押します。開いた **[ファイル** 名を指定して実行] ダイアログ ボックスで `control appwiz.cpl` **、[OK] を入力してクリックします**。
+- **コントロールパネル**: Windows キー + R を押します。開いた [ **実行** ] ダイアログで、enter と入力し、 `control appwiz.cpl` [ **OK**] をクリックします。
 
-  一覧から **Microsoft 迷惑メール報告アドインを検索して** 選択し、[アンインストール] をクリック **します**。
+  一覧で **Microsoft 迷惑メール報告アドイン** を見つけて選択し、[ **アンインストール**] をクリックします。
 
-- **Windows インストーラ**ー パッケージ: 適切な .msi ファイルを検索またはダウンロードし、ダブルクリックします。
+- **Windows インストーラーパッケージ**: 該当する .msi ファイルを検索またはダウンロードし、それをダブルクリックします。
 
   - **32 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64 ビット**: `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  表示されるダイアログで **、[Outlook 用迷惑メール報告アドインを削除する** ] を選び、[次へ] をクリック **します**。
+  表示されるダイアログで、[ **Outlook 用 Microsoft 迷惑メール報告アドインを削除** する] を選択し、[ **次へ**] をクリックします。
 
-- **サイレント モード**: 適切な .msi ファイルを検索またはダウンロードします。 コマンド プロンプト ウィンドウで \<PathToFile\> 、.msi ファイルの場所を置き換え、次のいずれかのコマンドを実行します。
+- **サイレントモード**: 適切な .msi ファイルを検索またはダウンロードします。 コマンドプロンプトウィンドウで、を \<PathToFile\> .msi ファイルの場所に置き換えて、次のいずれかのコマンドを実行します。
 
   - **32 ビット**:
 
@@ -232,15 +235,15 @@ Outlook を終了した後、次のいずれかの手順を使用して迷惑メ
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-アンインストール後に Outlook を開くと、迷惑メール、迷惑メール、およびフィッシング レポート オプションがなけけないはなかもしれます。
+アンインストール後に Outlook を開くと、迷惑メール、迷惑メールではない迷惑メールの報告オプションは表示されなくなります。
 
 ## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>迷惑メール報告アドインのトラブルシューティング
 
-迷惑メール報告アドインの追加後に Outlook で問題が発生する場合があります。 このセクションでは、発生する可能性のある問題と、それらの問題を解決するためのヒントについて説明します。
+迷惑メール報告アドインを追加した後、Outlook で問題が発生することがあります。 このセクションでは、発生する可能性のある問題と、それらの問題を解決するためのヒントについて説明します。
 
 ### <a name="troubleshooting-for-users"></a>ユーザー向けのトラブルシューティング
 
-次の 1 つ以上の問題が発生しています。
+次の1つまたは複数の問題が発生します。
 
 - **[迷惑メールの報告]** をクリックしても何も起こらない
 - 電子メール メッセージを選択した後に Outlook が応答しなくなった
@@ -248,19 +251,19 @@ Outlook を終了した後、次のいずれかの手順を使用して迷惑メ
 
 この問題を解決するには、次の手順を実行します。
 
-1. Outlook を終了して再起動します。
-2. テスト メッセージを作成して送信し、受信者がメッセージを受信したことを確認します。
-3. それが解決しない場合は、管理者に問い合わせます。
+1. Outlook を閉じて、再起動します。
+2. テストメッセージを作成して送信し、受信者がメッセージを受信したことを確認します。
+3. 問題が解決しない場合は、管理者に問い合わせてください。
 
-メッセージをマイクロソフトに送信するために使用できるその他の方法については、「レポート メッセージと [ファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+Microsoft にメッセージを送信するために使用できるその他の方法については、「Microsoft へのメッセージ [とファイルの報告](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ### <a name="troubleshooting-for-admins"></a>管理者向けのトラブルシューティング
 
-#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>問題: システム管理者への連絡をユーザーに連絡するようにユーザーに連絡をとるエラー メッセージが連続して表示される
+#### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>問題: ユーザーにシステム管理者に問い合わせるように求めるエラーメッセージが継続的に表示される
 
-1. レジストリ キーの `LoggingLevel` 値を "Verbose" に設定します。
+1. `LoggingLevel`レジストリキーの値を "Verbose" に設定していることを確認または設定します。
 
-   - **32 ビット Windows 上の 32 ビット Outlook**:
+   - **32 ビット版32の Windows 上の Outlook**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -269,7 +272,7 @@ Outlook を終了した後、次のいずれかの手順を使用して迷惑メ
      "LoggingLevel"="Verbose"
      ```
 
-   - **32 ビット Outlook on 64 ビット Windows**:
+   - **32 ビット版64の Windows 上の Outlook**:
 
      ```text
      Windows Registry Editor Version 5.00
@@ -287,7 +290,7 @@ Outlook を終了した後、次のいずれかの手順を使用して迷惑メ
      "LoggingLevel"="Verbose"
      ```
 
-2. Outlook を再起動し、エラー メッセージが表示されたら報告する必要があります。
+2. Outlook を再起動し、エラーメッセージが表示された場合にユーザーに報告するように依頼します。
 
 3. 次の場所にあるログ情報を収集します。
 
@@ -295,9 +298,9 @@ Outlook を終了した後、次のいずれかの手順を使用して迷惑メ
 
 4. Exchange Online Protection テクニカル サポートに問い合わせ、ログ情報を提供します。
 
-#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>問題: メッセージを報告するときに確認プロンプトが表示されないように選択したユーザーが、そのメッセージを返したい
+#### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>問題: ユーザーがメッセージを報告するときに確認のメッセージを表示しないように選択したときに、プロンプトが戻る
 
-1. 値 `ConfirmReportJunk` が "True" のレジストリ キーを作成します。
+1. 値が `ConfirmReportJunk` "True" のレジストリキーを作成します。
 
    ```text
    Windows Registry Editor Version 5.00

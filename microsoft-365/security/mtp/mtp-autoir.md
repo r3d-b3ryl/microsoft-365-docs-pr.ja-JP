@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: f2a0a439996f13cea3823815aceb9dd1c235e2f2
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 2131af5e35aa0cf9f236940d2b4aaa2bed85190a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962667"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199783"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Microsoft Threat Protection での自動調査および対応
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection

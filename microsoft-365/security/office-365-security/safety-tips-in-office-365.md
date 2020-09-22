@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: EOP と Office 365 が、電子メールの上部に安全なヒントを追加することによって、スパム、フィッシング、およびマルウェアの防止をどのように保護するかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949634"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201985"
 ---
 # <a name="safety-tips-in-email-messages"></a>メール メッセージの安全性に関するヒント
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange Online Protection (EOP) と Microsoft 365 は、スパム、フィッシング、マルウェアの防止を強化します。 今日では、これらの攻撃の一部は正当なものであることがよく細工されています。 [迷惑メール] フォルダーにメッセージを送信するだけでは不十分なわけではありません。 これで、Outlook または web 上の Outlook または電子メールクライアントで電子メールを確認すると、EOP によって送信者が自動的に確認され、安全なヒントが電子メールの上部に追加されます。
 
