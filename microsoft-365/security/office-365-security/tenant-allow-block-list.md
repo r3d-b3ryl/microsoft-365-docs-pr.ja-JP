@@ -1,5 +1,5 @@
 ---
-title: テナント許可/ブロック一覧で許可される URL とブロックされる URL を管理する
+title: 許可または禁止する Url をテナントの許可/ブロックリストで管理する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,451 +14,454 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理者は、セキュリティ コンプライアンス センターのテナントの許可/ブロック リストの URL エントリを構成する方法&できます。
-ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+description: 管理者は、セキュリティ & コンプライアンスセンターのテナントの許可/ブロックリストで URL エントリを構成する方法について説明します。
+ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845944"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202341"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a><span data-ttu-id="67604-103">テナントの許可/禁止リストの URL を管理する</span><span class="sxs-lookup"><span data-stu-id="67604-103">Manage URLs in the Tenant Allow/Block List</span></span>
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-103">テナントの許可/禁止リストの URL を管理する</span><span class="sxs-lookup"><span data-stu-id="9ad67-103">Manage URLs in the Tenant Allow/Block List</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
-> <span data-ttu-id="67604-104">このトピックで説明する機能はプレビュー段階であり、変更される可能性があります。すべての組織で利用できるものもあります。</span><span class="sxs-lookup"><span data-stu-id="67604-104">The features described in this topic are in Preview, are subject to change, and are not available in all organizations.</span></span>
+> <span data-ttu-id="9ad67-104">このトピックで説明する機能はプレビュー段階にあり、変更される可能性があり、組織によっては利用できません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-104">The features described in this topic are in Preview, are subject to change, and are not available in all organizations.</span></span>
 
-<span data-ttu-id="67604-105">Exchange Online にメールボックスがある Microsoft 365 組織や、Exchange Online メールボックスを使用しないスタンドアロン Exchange Online Protection (EOP) 組織では、EOP フィルター処理について同意する場合があります。</span><span class="sxs-lookup"><span data-stu-id="67604-105">In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict.</span></span> <span data-ttu-id="67604-106">たとえば、優れたメッセージが悪か (誤検知) としてマークされている、または無効なメッセージが許可されている (検知漏れ) などです。</span><span class="sxs-lookup"><span data-stu-id="67604-106">For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).</span></span>
+<span data-ttu-id="9ad67-105">Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、EOP フィルター verdict の使用に同意しない場合があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-105">In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict.</span></span> <span data-ttu-id="9ad67-106">たとえば、良好なメッセージが不良 (誤検知) としてマークされている場合や、無効なメッセージが表示される場合があります (誤検知)。</span><span class="sxs-lookup"><span data-stu-id="9ad67-106">For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).</span></span>
 
-<span data-ttu-id="67604-107">セキュリティ センターのテナント許可/ブロック リストには、&のフィルター操作について手動でオーバーライドする方法が用いました。</span><span class="sxs-lookup"><span data-stu-id="67604-107">The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts.</span></span> <span data-ttu-id="67604-108">テナント許可/禁止一覧は、メール フロー時と、ユーザーがクリックした時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="67604-108">The Tenant Allow/Block List is used during mail flow and at the time of user clicks.</span></span> <span data-ttu-id="67604-109">テナントの許可/ブロックリストで、許可またはブロックする URL を指定できます。</span><span class="sxs-lookup"><span data-stu-id="67604-109">You can specify URLs to allow or block in the Tenant Allow/Block List.</span></span>
+<span data-ttu-id="9ad67-107">セキュリティ & コンプライアンスセンターのテナントの許可/禁止リストにより、Microsoft 365 filtering verdicts を手動で上書きすることができます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-107">The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Microsoft 365 filtering verdicts.</span></span> <span data-ttu-id="9ad67-108">テナントの許可/ブロックリストは、メールフローおよびユーザークリック時に使用されます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-108">The Tenant Allow/Block List is used during mail flow and at the time of user clicks.</span></span> <span data-ttu-id="9ad67-109">テナントの許可/ブロックリストで許可またはブロックする Url を指定できます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-109">You can specify URLs to allow or block in the Tenant Allow/Block List.</span></span>
 
-<span data-ttu-id="67604-110">このトピックでは、セキュリティ &/コンプライアンス センターまたは PowerShell (Exchange Online のメールボックスを使用する Microsoft 365 組織の場合は Exchange Online PowerShell、Exchange Online メールボックスを持つ組織の場合はスタンドアロン EOP PowerShell) のエントリの構成方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="67604-110">This topic describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).</span></span>
+<span data-ttu-id="9ad67-110">このトピックでは、セキュリティ & コンプライアンスセンターまたは PowerShell (exchange online にメールボックスがある Microsoft 365 組織の場合は exchange Online PowerShell、exchange online メールボックスを使用しない組織の場合は、スタンドアロン EOP PowerShell) で、テナントの許可/ブロックリストのエントリを構成する方法について説明します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-110">This topic describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="67604-111">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="67604-111">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="9ad67-111">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="9ad67-111">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="67604-112"><https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。</span><span class="sxs-lookup"><span data-stu-id="67604-112">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="67604-113">テナント許可/ブロック リスト **ページに直接移動するには、** 次のコマンドを使用します <https://protection.office.com/tenantAllowBlockList> 。</span><span class="sxs-lookup"><span data-stu-id="67604-113">To go directly to the **Tenant Allow/Block List** page, use <https://protection.office.com/tenantAllowBlockList>.</span></span>
+- <span data-ttu-id="9ad67-112"><https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-112">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="9ad67-113">[ **テナントの許可/ブロックリスト** ] ページに直接移動するには、を使用 <https://protection.office.com/tenantAllowBlockList> します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-113">To go directly to the **Tenant Allow/Block List** page, use <https://protection.office.com/tenantAllowBlockList>.</span></span>
 
-- <span data-ttu-id="67604-114">使用できる URL 値については、このトピックの [後半にある「テナントの許可/ブロックリスト」の](#url-syntax-for-the-tenant-allowblock-list) URL 構文で説明します。</span><span class="sxs-lookup"><span data-stu-id="67604-114">The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.</span></span>
+- <span data-ttu-id="9ad67-114">使用可能な URL 値については、このトピックで後述する「 [テナントの許可/ブロックリスト」セクションの url 構文](#url-syntax-for-the-tenant-allowblock-list) で説明されています。</span><span class="sxs-lookup"><span data-stu-id="9ad67-114">The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.</span></span>
 
-- <span data-ttu-id="67604-115">テナント許可/ブロック リストでは、URL のエントリ数を最大で 500 個に設定できます。</span><span class="sxs-lookup"><span data-stu-id="67604-115">The Tenant Allow/Block List allows a maximum of 500 entries for URLs.</span></span>
+- <span data-ttu-id="9ad67-115">テナントの許可/ブロックリストでは、Url に対して最大500エントリが許可されます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-115">The Tenant Allow/Block List allows a maximum of 500 entries for URLs.</span></span>
 
-- <span data-ttu-id="67604-116">エントリは 15 分以内にアクティブである必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-116">An entry should be active within 15 minutes.</span></span>
+- <span data-ttu-id="9ad67-116">エントリは15分以内にアクティブである必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-116">An entry should be active within 15 minutes.</span></span>
 
-- <span data-ttu-id="67604-117">ブロック エントリは、許可エントリより優先されます。</span><span class="sxs-lookup"><span data-stu-id="67604-117">Block entries take precedence over allow entries.</span></span>
+- <span data-ttu-id="9ad67-117">禁止エントリは、許可エントリよりも優先されます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-117">Block entries take precedence over allow entries.</span></span>
 
-- <span data-ttu-id="67604-118">既定では、テナント許可/禁止一覧のエントリは 30 日後に期限切れになります。</span><span class="sxs-lookup"><span data-stu-id="67604-118">By default, entries in the Tenant Allow/Block List will expire after 30 days.</span></span> <span data-ttu-id="67604-119">日付を指定したり、期限を切れないように設定したりすることができます。</span><span class="sxs-lookup"><span data-stu-id="67604-119">You can specify a date or set them to never expire.</span></span>
+- <span data-ttu-id="9ad67-118">既定では、テナントの許可/ブロックリストのエントリは30日後に期限切れになります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-118">By default, entries in the Tenant Allow/Block List will expire after 30 days.</span></span> <span data-ttu-id="9ad67-119">日付を指定するか、期限切れにならないように設定できます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-119">You can specify a date or set them to never expire.</span></span>
 
-- <span data-ttu-id="67604-120">Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="67604-120">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="67604-121">スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="67604-121">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
+- <span data-ttu-id="9ad67-120">Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad67-120">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="9ad67-121">スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad67-121">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
-- <span data-ttu-id="67604-122">このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-122">You need to be assigned permissions before you can do the procedures in this topic:</span></span>
+- <span data-ttu-id="9ad67-122">このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-122">You need to be assigned permissions before you can do the procedures in this topic:</span></span>
 
-  - <span data-ttu-id="67604-123">テナント許可/禁止一覧に対して値を追加および削除するには、次の役割グループのいずれかのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-123">To add and remove values from the Tenant Allow/Block List, you need to be a member of one of the following role groups:</span></span>
+  - <span data-ttu-id="9ad67-123">テナントの許可/禁止リストの値を追加および削除するには、次のいずれかの役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-123">To add and remove values from the Tenant Allow/Block List, you need to be a member of one of the following role groups:</span></span>
 
-    - <span data-ttu-id="67604-124">**組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。</span><span class="sxs-lookup"><span data-stu-id="67604-124">**Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
-    - <span data-ttu-id="67604-125">**組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。</span><span class="sxs-lookup"><span data-stu-id="67604-125">**Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
+    - <span data-ttu-id="9ad67-124">**組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。</span><span class="sxs-lookup"><span data-stu-id="9ad67-124">**Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+    - <span data-ttu-id="9ad67-125">**組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。</span><span class="sxs-lookup"><span data-stu-id="9ad67-125">**Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
 
-  - <span data-ttu-id="67604-126">テナントの許可/禁止一覧に対する読み取り専用アクセス権を持つには、次の役割グループのいずれかのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-126">For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:</span></span>
+  - <span data-ttu-id="9ad67-126">テナントの許可/禁止リストに対する読み取り専用アクセスの場合は、次のいずれかの役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-126">For read-only access to the Tenant Allow/Block List, you need to be a member of one of the following role groups:</span></span>
 
-    - <span data-ttu-id="67604-127">[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。</span><span class="sxs-lookup"><span data-stu-id="67604-127">**Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
-    - <span data-ttu-id="67604-128">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。</span><span class="sxs-lookup"><span data-stu-id="67604-128">**View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
+    - <span data-ttu-id="9ad67-127">[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。</span><span class="sxs-lookup"><span data-stu-id="9ad67-127">**Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+    - <span data-ttu-id="9ad67-128">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。</span><span class="sxs-lookup"><span data-stu-id="9ad67-128">**View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
 
-## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="67604-129">セキュリティ/コンプライアンス &使用して、テナント許可/ブロック リスト内に URL エントリを作成する</span><span class="sxs-lookup"><span data-stu-id="67604-129">Use the Security & Compliance Center to create URL entries in the Tenant Allow/Block List</span></span>
+## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-129">セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストで URL エントリを作成する</span><span class="sxs-lookup"><span data-stu-id="9ad67-129">Use the Security & Compliance Center to create URL entries in the Tenant Allow/Block List</span></span>
 
-<span data-ttu-id="67604-130">URL エントリの構文の詳細については、このトピックで後述 [する「テナントの許可/ブロックリスト」の](#url-syntax-for-the-tenant-allowblock-list) URL 構文を参照してください。</span><span class="sxs-lookup"><span data-stu-id="67604-130">For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.</span></span>
+<span data-ttu-id="9ad67-130">URL エントリの構文の詳細については、このトピックで後述する「 [テナントの許可/ブロックリスト」セクションの url 構文](#url-syntax-for-the-tenant-allowblock-list) を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad67-130">For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.</span></span>
 
-1. <span data-ttu-id="67604-131">コンプライアンス センター内&で、[脅威管理ポリシー **のテナント** \> **の許可/** \> **ブロック リスト] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="67604-131">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
+1. <span data-ttu-id="9ad67-131">[セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-131">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
 
-2. <span data-ttu-id="67604-132">[テナント許可 **/ブロック一覧] ページ** で、[URL] タブが **選択** されたことを確認し、[追加] をクリック **します。**</span><span class="sxs-lookup"><span data-stu-id="67604-132">On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click **Add**</span></span>
+2. <span data-ttu-id="9ad67-132">[**テナントの許可/ブロックリスト**] ページで、[ **url** ] タブが選択されていることを確認し、[**追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ad67-132">On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click **Add**</span></span>
 
-3. <span data-ttu-id="67604-133">表示される **新しい URL の** 追加ポップアップで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="67604-133">In the **Add new URLs** flyout that appears, configure the following settings:</span></span>
+3. <span data-ttu-id="9ad67-133">表示される [ **新しい url の追加** ] ポップアップで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-133">In the **Add new URLs** flyout that appears, configure the following settings:</span></span>
 
-   - <span data-ttu-id="67604-134">**ワイルドカードを使用して URL を追加します**。1 行に 1 つの URL を入力し、最大 20 の URL を入力します。</span><span class="sxs-lookup"><span data-stu-id="67604-134">**Add URLs with wildcards**: Enter one URL per line, up to a maximum of 20.</span></span>
+   - <span data-ttu-id="9ad67-134">**ワイルドカードを使用して url を追加**します。1行に1つの url を入力します。最大値は20です。</span><span class="sxs-lookup"><span data-stu-id="9ad67-134">**Add URLs with wildcards**: Enter one URL per line, up to a maximum of 20.</span></span>
 
-   - <span data-ttu-id="67604-135">**[Block/Allow]:** 指定した URL を**許可するか\*\*\*\*ブロック**するかを選択します。</span><span class="sxs-lookup"><span data-stu-id="67604-135">**Block/Allow**: Select whether you want to **Allow** or **Block** the specified URLs.</span></span>
+   - <span data-ttu-id="9ad67-135">[**ブロック/許可**]: 指定した Url を**許可**または**ブロック**するかどうかを選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-135">**Block/Allow**: Select whether you want to **Allow** or **Block** the specified URLs.</span></span>
 
-   - <span data-ttu-id="67604-136">**無期限 :** 次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="67604-136">**Never expire**: Do one of the following steps:</span></span>
+   - <span data-ttu-id="9ad67-136">**無期限: 次**のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-136">**Never expire**: Do one of the following steps:</span></span>
 
-     - <span data-ttu-id="67604-137">設定がオフになっていること (オフに ![ 切り替 ](../../media/scc-toggle-off.png) え) を確認 **し、Expires ボックスを使用** してエントリの有効期限を指定します。</span><span class="sxs-lookup"><span data-stu-id="67604-137">Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.</span></span>
+     - <span data-ttu-id="9ad67-137">設定がオフ (トグルオフ) になっていることを確認 ![ ](../../media/scc-toggle-off.png) し、 **[有効期限** ] ボックスを使用して、エントリの有効期限を指定します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-137">Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.</span></span>
 
-     <span data-ttu-id="67604-138">または</span><span class="sxs-lookup"><span data-stu-id="67604-138">or</span></span>
+     <span data-ttu-id="9ad67-138">または</span><span class="sxs-lookup"><span data-stu-id="9ad67-138">or</span></span>
 
-     - <span data-ttu-id="67604-139">エントリを有効期限切れにしないように設定するには、右に切り替えを移動します。</span><span class="sxs-lookup"><span data-stu-id="67604-139">Move the toggle to the right to configure the entries to never expire:</span></span> ![オンに切り替え](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)<span data-ttu-id="67604-141">.</span><span class="sxs-lookup"><span data-stu-id="67604-141">.</span></span>
+     - <span data-ttu-id="9ad67-139">右にトグルを移動して、期限切れにならないようにエントリを構成します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-139">Move the toggle to the right to configure the entries to never expire:</span></span> ![オンに切り替え](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)<span data-ttu-id="9ad67-141">.</span><span class="sxs-lookup"><span data-stu-id="9ad67-141">.</span></span>
 
-   - <span data-ttu-id="67604-142">**オプション メモ**: エントリの説明テキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="67604-142">**Optional note**: Enter descriptive text for the entries.</span></span>
+   - <span data-ttu-id="9ad67-142">**オプションのメモ**: エントリの説明テキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-142">**Optional note**: Enter descriptive text for the entries.</span></span>
 
-4. <span data-ttu-id="67604-143">完了したら、[追加] を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="67604-143">When you're finished, click **Add**.</span></span>
+4. <span data-ttu-id="9ad67-143">完了したら、[ **追加**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ad67-143">When you're finished, click **Add**.</span></span>
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="67604-144">セキュリティ/コンプライアンス センター&を使用して、テナントの許可/ブロック リストのエントリを表示する</span><span class="sxs-lookup"><span data-stu-id="67604-144">Use the Security & Compliance Center to view entries in the Tenant Allow/Block List</span></span>
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-144">セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストのエントリを表示する</span><span class="sxs-lookup"><span data-stu-id="9ad67-144">Use the Security & Compliance Center to view entries in the Tenant Allow/Block List</span></span>
 
-1. <span data-ttu-id="67604-145">コンプライアンス センター内&で、[脅威管理ポリシー **のテナント** \> **の許可/** \> **ブロック リスト] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="67604-145">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
+1. <span data-ttu-id="9ad67-145">[セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-145">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
 
-2. <span data-ttu-id="67604-146">**[URL] タブを選**びます。</span><span class="sxs-lookup"><span data-stu-id="67604-146">Select the **URLs** tab.</span></span>
+2. <span data-ttu-id="9ad67-146">[ **Url** ] タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-146">Select the **URLs** tab.</span></span>
 
-<span data-ttu-id="67604-147">次の列見出しをクリックすると、昇順または昇順で並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="67604-147">Click on the following column headings to sort in ascending or descending order:</span></span>
+<span data-ttu-id="9ad67-147">次の列見出しをクリックすると、昇順または降順で並べ替えられます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-147">Click on the following column headings to sort in ascending or descending order:</span></span>
 
-- <span data-ttu-id="67604-148">**値**</span><span class="sxs-lookup"><span data-stu-id="67604-148">**Value**</span></span>
-- <span data-ttu-id="67604-149">**操作**:**ブロックまたは\*\*\*\*許可**。</span><span class="sxs-lookup"><span data-stu-id="67604-149">**Action**: **Block** or **Allow**.</span></span>
-- <span data-ttu-id="67604-150">**最終更新日**</span><span class="sxs-lookup"><span data-stu-id="67604-150">**Last updated date**</span></span>
-- <span data-ttu-id="67604-151">**有効期限**</span><span class="sxs-lookup"><span data-stu-id="67604-151">**Expiration date**</span></span>
-- <span data-ttu-id="67604-152">**注**</span><span class="sxs-lookup"><span data-stu-id="67604-152">**Note**</span></span>
+- <span data-ttu-id="9ad67-148">**値**</span><span class="sxs-lookup"><span data-stu-id="9ad67-148">**Value**</span></span>
+- <span data-ttu-id="9ad67-149">**アクション**: **ブロック** または **許可**。</span><span class="sxs-lookup"><span data-stu-id="9ad67-149">**Action**: **Block** or **Allow**.</span></span>
+- <span data-ttu-id="9ad67-150">**最終更新日**</span><span class="sxs-lookup"><span data-stu-id="9ad67-150">**Last updated date**</span></span>
+- <span data-ttu-id="9ad67-151">**有効期限**</span><span class="sxs-lookup"><span data-stu-id="9ad67-151">**Expiration date**</span></span>
+- <span data-ttu-id="9ad67-152">**注**</span><span class="sxs-lookup"><span data-stu-id="9ad67-152">**Note**</span></span>
 
-<span data-ttu-id="67604-153">[ **グループ化]** をクリックし、[ **アクション** (ブロックまたは**許可)]** または [なし] **にして**エントリを **グループ化します**。</span><span class="sxs-lookup"><span data-stu-id="67604-153">Click **Group** to group the entries by **Action** (**Block** or **Allow**) or **None**.</span></span>
+<span data-ttu-id="9ad67-153">[ **グループ化** ] をクリックして、エントリを **アクション** (**ブロック** または **許可**) または **なし**とグループ化します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-153">Click **Group** to group the entries by **Action** (**Block** or **Allow**) or **None**.</span></span>
 
-<span data-ttu-id="67604-154">[ **検索]** をクリックし、値の全体または一部を入力して、Enter キーを押して特定の値を検索します。</span><span class="sxs-lookup"><span data-stu-id="67604-154">Click **Search**, enter all or part of a value, and then press ENTER to find a specific value.</span></span> <span data-ttu-id="67604-155">完了したら、[検索のクリア] **アイコンを** ![ クリックします ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) 。</span><span class="sxs-lookup"><span data-stu-id="67604-155">When you're finished, click **Clear search** ![Clear search icon](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif).</span></span>
+<span data-ttu-id="9ad67-154">[ **検索**] をクリックして、値の全体または一部を入力し、enter キーを押して特定の値を検索します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-154">Click **Search**, enter all or part of a value, and then press ENTER to find a specific value.</span></span> <span data-ttu-id="9ad67-155">完了したら、[検索のクリア検索の **クリア**] をクリックし ![ ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) ます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-155">When you're finished, click **Clear search** ![Clear search icon](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif).</span></span>
 
-<span data-ttu-id="67604-156">フィルター を **クリックします**。</span><span class="sxs-lookup"><span data-stu-id="67604-156">Click **Filter**.</span></span> <span data-ttu-id="67604-157">表示される **[フィルター** ] ポップアップで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="67604-157">In the **Filter** flyout that appears, configure any of the following settings:</span></span>
+<span data-ttu-id="9ad67-156">[ **フィルター**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ad67-156">Click **Filter**.</span></span> <span data-ttu-id="9ad67-157">表示される **フィルター** のポップアップで、次のいずれかの設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-157">In the **Filter** flyout that appears, configure any of the following settings:</span></span>
 
-- <span data-ttu-id="67604-158">**操作**: 許可 **、ブロック\*\*\*\*、またはその両方**を選択します。</span><span class="sxs-lookup"><span data-stu-id="67604-158">**Action**: Select **Allow**, **Block** or both.</span></span>
+- <span data-ttu-id="9ad67-158">**アクション**: **Allow**、 **Block** 、または both を選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-158">**Action**: Select **Allow**, **Block** or both.</span></span>
 
-- <span data-ttu-id="67604-159">**有効期限を切れない**: オン (トグ ![ ル ](../../media/scc-toggle-off.png) オフ) またはオン ( ![ トオン) をオンにします ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。</span><span class="sxs-lookup"><span data-stu-id="67604-159">**Never expire**: Select off (![Toggle off](../../media/scc-toggle-off.png)) or on (![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)).</span></span>
+- <span data-ttu-id="9ad67-159">**無期限: オフ**(オフ ![ ](../../media/scc-toggle-off.png) ) またはオン ( ![ トグルオン ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) )。</span><span class="sxs-lookup"><span data-stu-id="9ad67-159">**Never expire**: Select off (![Toggle off](../../media/scc-toggle-off.png)) or on (![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)).</span></span>
 
-- <span data-ttu-id="67604-160">**Last updated:** Select a start date (**From),** an end date (**To**) or both.</span><span class="sxs-lookup"><span data-stu-id="67604-160">**Last updated**: Select a start date (**From**), an end date (**To**) or both.</span></span>
+- <span data-ttu-id="9ad67-160">**最終更新**日時: 開始日 (開始**日)、** 終了日 (**To**)、またはその両方を選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-160">**Last updated**: Select a start date (**From**), an end date (**To**) or both.</span></span>
 
-- <span data-ttu-id="67604-161">**有効期限:** 開始日 ([開始**日])、** 終了日 **(To)、またはその**両方を選択します。</span><span class="sxs-lookup"><span data-stu-id="67604-161">**Expiration date**: Select a start date (**From**), an end date (**To**) or both.</span></span>
+- <span data-ttu-id="9ad67-161">[**有効期限**]: 開始日 (開始**日)、** 終了日 (**To**)、またはその両方を選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-161">**Expiration date**: Select a start date (**From**), an end date (**To**) or both.</span></span>
 
-<span data-ttu-id="67604-162">完了したら、[適用] をクリック **します**。</span><span class="sxs-lookup"><span data-stu-id="67604-162">When you're finished, click **Apply**.</span></span>
+<span data-ttu-id="9ad67-162">完了したら、[ **適用**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ad67-162">When you're finished, click **Apply**.</span></span>
 
-<span data-ttu-id="67604-163">既存のフィルターをクリアするには **、[フィルター**] をクリックし、表示される **フィルター** ポップアップで [フィルターのクリア] **をクリックします**。</span><span class="sxs-lookup"><span data-stu-id="67604-163">To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.</span></span>
+<span data-ttu-id="9ad67-163">既存のフィルターをクリアするには、[ **フィルター**] をクリックし、表示される **フィルター** のポップアップで [ **フィルターのクリア**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ad67-163">To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.</span></span>
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="67604-164">セキュリティ コンプライアンス センター&、テナントの許可/ブロック リスト内のエントリを変更する</span><span class="sxs-lookup"><span data-stu-id="67604-164">Use the Security & Compliance Center to modify entries in the Tenant Allow/Block List</span></span>
+## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-164">セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストのエントリを変更する</span><span class="sxs-lookup"><span data-stu-id="9ad67-164">Use the Security & Compliance Center to modify entries in the Tenant Allow/Block List</span></span>
 
-<span data-ttu-id="67604-165">URL 値自体は変更できません。</span><span class="sxs-lookup"><span data-stu-id="67604-165">You can't modify the URL value itself.</span></span> <span data-ttu-id="67604-166">代わりに、入力を削除して再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-166">Instead, you need to delete the entry and recreate it.</span></span>
+<span data-ttu-id="9ad67-165">URL の値自体を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-165">You can't modify the URL value itself.</span></span> <span data-ttu-id="9ad67-166">代わりに、エントリを削除して再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-166">Instead, you need to delete the entry and recreate it.</span></span>
 
-1. <span data-ttu-id="67604-167">コンプライアンス センター内&で、[脅威管理ポリシー **のテナント** \> **の許可/** \> **ブロック リスト] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="67604-167">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
+1. <span data-ttu-id="9ad67-167">[セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-167">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
 
-2. <span data-ttu-id="67604-168">**[URL] タブを選**びます。</span><span class="sxs-lookup"><span data-stu-id="67604-168">Select the **URLs** tab.</span></span>
+2. <span data-ttu-id="9ad67-168">[ **Url** ] タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-168">Select the **URLs** tab.</span></span>
 
-3. <span data-ttu-id="67604-169">変更するエントリを選択し、[編集] アイコン **を** ![ クリックします ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。</span><span class="sxs-lookup"><span data-stu-id="67604-169">Select the entry that you want to modify, and then click **Edit** ![Edit icon](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png).</span></span>
+3. <span data-ttu-id="9ad67-169">変更するエントリを選択し、[編集アイコンの **編集**] をクリックし ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) ます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-169">Select the entry that you want to modify, and then click **Edit** ![Edit icon](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png).</span></span>
 
-4. <span data-ttu-id="67604-170">表示されるポップアップで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="67604-170">In the flyout that appears, configure the following settings:</span></span>
+4. <span data-ttu-id="9ad67-170">表示されたポップアップで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-170">In the flyout that appears, configure the following settings:</span></span>
 
-   - <span data-ttu-id="67604-171">**Block/Allow**: Select **Allow** or **Block**.</span><span class="sxs-lookup"><span data-stu-id="67604-171">**Block/Allow**: Select **Allow** or **Block**.</span></span>
+   - <span data-ttu-id="9ad67-171">[**ブロック/許可**]: [**許可**] または [**ブロック**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-171">**Block/Allow**: Select **Allow** or **Block**.</span></span>
 
-   - <span data-ttu-id="67604-172">**無期限 :** 次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="67604-172">**Never expire**: Do one of the following steps:</span></span>
+   - <span data-ttu-id="9ad67-172">**無期限: 次**のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-172">**Never expire**: Do one of the following steps:</span></span>
 
-     - <span data-ttu-id="67604-173">設定がオフになっていること (オフに ![ 切り替 ](../../media/scc-toggle-off.png) え) を確認 **し、Expires ボックスを使用** してエントリに有効期限を指定します。</span><span class="sxs-lookup"><span data-stu-id="67604-173">Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entry.</span></span>
+     - <span data-ttu-id="9ad67-173">設定がオフ (トグルオフ) になっていることを確認 ![ ](../../media/scc-toggle-off.png) し、 **[有効期限** ] ボックスを使用して、エントリの有効期限を指定します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-173">Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entry.</span></span>
 
-     <span data-ttu-id="67604-174">または</span><span class="sxs-lookup"><span data-stu-id="67604-174">or</span></span>
+     <span data-ttu-id="9ad67-174">または</span><span class="sxs-lookup"><span data-stu-id="9ad67-174">or</span></span>
 
-     - <span data-ttu-id="67604-175">エントリを有効期限切れにしないように設定するには、右に切り替えを切り替えて入力します。</span><span class="sxs-lookup"><span data-stu-id="67604-175">Move the toggle to the right to configure the entry to never expire:</span></span> ![オンに切り替え](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)<span data-ttu-id="67604-177">.</span><span class="sxs-lookup"><span data-stu-id="67604-177">.</span></span>
+     - <span data-ttu-id="9ad67-175">この設定を右に移動して、期限切れにならないようにエントリを構成します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-175">Move the toggle to the right to configure the entry to never expire:</span></span> ![オンに切り替え](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)<span data-ttu-id="9ad67-177">.</span><span class="sxs-lookup"><span data-stu-id="9ad67-177">.</span></span>
 
-   - <span data-ttu-id="67604-178">**オプション メモ**: エントリの説明テキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="67604-178">**Optional note**: Enter descriptive text for the entry.</span></span>
+   - <span data-ttu-id="9ad67-178">**オプションのメモ**: エントリの説明テキストを入力します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-178">**Optional note**: Enter descriptive text for the entry.</span></span>
 
-5. <span data-ttu-id="67604-179">完了したら、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="67604-179">When you're finished, click **Save**.</span></span>
+5. <span data-ttu-id="9ad67-179">完了したら、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ad67-179">When you're finished, click **Save**.</span></span>
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a><span data-ttu-id="67604-180">セキュリティ/コンプライアンス センター&を使用して、テナント許可/ブロック リストからエントリを削除する</span><span class="sxs-lookup"><span data-stu-id="67604-180">Use the Security & Compliance Center to remove entries from the Tenant Allow/Block List</span></span>
+## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-180">セキュリティ & コンプライアンスセンターを使用して、テナントの許可/ブロックリストからエントリを削除する</span><span class="sxs-lookup"><span data-stu-id="9ad67-180">Use the Security & Compliance Center to remove entries from the Tenant Allow/Block List</span></span>
 
-1. <span data-ttu-id="67604-181">コンプライアンス センター内&で、[脅威管理ポリシー **のテナント** \> **の許可/** \> **ブロック リスト] に移動します**。</span><span class="sxs-lookup"><span data-stu-id="67604-181">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
+1. <span data-ttu-id="9ad67-181">[セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー**の \> **テナントの許可/ブロックリスト**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-181">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.</span></span>
 
-2. <span data-ttu-id="67604-182">**[URL] タブを選**びます。</span><span class="sxs-lookup"><span data-stu-id="67604-182">Select the **URLs** tab.</span></span>
+2. <span data-ttu-id="9ad67-182">[ **Url** ] タブを選択します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-182">Select the **URLs** tab.</span></span>
 
-3. <span data-ttu-id="67604-183">削除するエントリを選択し、[削除] アイコンを **クリック** ![ します ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。</span><span class="sxs-lookup"><span data-stu-id="67604-183">Select the entry that you want to remove, and then click **Delete** ![Delete icon](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).</span></span>
+3. <span data-ttu-id="9ad67-183">削除するエントリを選択し、[削除] [削除] アイコン **をクリックし** ![ ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) ます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-183">Select the entry that you want to remove, and then click **Delete** ![Delete icon](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).</span></span>
 
-4. <span data-ttu-id="67604-184">警告ダイアログが表示されたら、[削除] をクリック **します**。</span><span class="sxs-lookup"><span data-stu-id="67604-184">In the warning dialog that appears, click **Delete**.</span></span>
+4. <span data-ttu-id="9ad67-184">表示される警告ダイアログで、[ **削除**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="9ad67-184">In the warning dialog that appears, click **Delete**.</span></span>
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a><span data-ttu-id="67604-185">Exchange Online PowerShell またはスタンドアロン EOP PowerShell を使用してテナントの許可/ブロック一覧を構成する</span><span class="sxs-lookup"><span data-stu-id="67604-185">Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Tenant Allow/Block List</span></span>
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-185">Exchange Online PowerShell またはスタンドアロンの EOP PowerShell を使用して、テナントの許可/ブロックリストを構成する</span><span class="sxs-lookup"><span data-stu-id="9ad67-185">Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Tenant Allow/Block List</span></span>
 
-### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="67604-186">PowerShell を使用してテナントの許可/ブロック リストにエントリを追加する</span><span class="sxs-lookup"><span data-stu-id="67604-186">Use PowerShell to add entries in the Tenant Allow/Block List</span></span>
+### <a name="use-powershell-to-add-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-186">PowerShell を使用して、テナントの許可/ブロックリストにエントリを追加する</span><span class="sxs-lookup"><span data-stu-id="9ad67-186">Use PowerShell to add entries in the Tenant Allow/Block List</span></span>
 
-<span data-ttu-id="67604-187">テナント許可/ブロック リストにエントリを追加するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="67604-187">To add entries in the Tenant Allow/Block List, use the following syntax:</span></span>
+<span data-ttu-id="9ad67-187">テナントの許可/ブロックリストにエントリを追加するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-187">To add entries in the Tenant Allow/Block List, use the following syntax:</span></span>
 
 ```powershell
 New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-<span data-ttu-id="67604-188">この例では、メールボックス コレクションとすべてのサブドメインcontoso.com (たとえば、contoso.com、www.contoso.com) の URL ブロック エントリを xyz.abc.contoso.com追加します。</span><span class="sxs-lookup"><span data-stu-id="67604-188">This example adds a URL block entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com).</span></span> <span data-ttu-id="67604-189">ExpirationDate パラメーターまたは NoExpiration パラメーターを使用しないため、30 日後にエントリの有効期限が切れます。</span><span class="sxs-lookup"><span data-stu-id="67604-189">Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.</span></span>
+<span data-ttu-id="9ad67-188">この例では、contoso.com およびすべてのサブドメイン (たとえば、contoso.com、www.contoso.com、および xyz.abc.contoso.com) の URL ブロックエントリを追加します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-188">This example adds a URL block entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com).</span></span> <span data-ttu-id="9ad67-189">ExpirationDate パラメーターまたは NoExpiration パラメーターを使用していなかったため、エントリは30日後に有効期限が切れます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-189">Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.</span></span>
 
 ```powershell
 New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 ```
 
-<span data-ttu-id="67604-190">構文およびパラメーターの詳細については [、「New-TenantAllowBlockListItems」を参照してください](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)。</span><span class="sxs-lookup"><span data-stu-id="67604-190">For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).</span></span>
+<span data-ttu-id="9ad67-190">構文およびパラメーターの詳細については、「 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad67-190">For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).</span></span>
 
-### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="67604-191">PowerShell を使用してテナントの許可/ブロック リスト内のエントリを表示する</span><span class="sxs-lookup"><span data-stu-id="67604-191">Use PowerShell to view entries in the Tenant Allow/Block List</span></span>
+### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-191">PowerShell を使用して、テナントの許可/ブロックリストのエントリを表示する</span><span class="sxs-lookup"><span data-stu-id="9ad67-191">Use PowerShell to view entries in the Tenant Allow/Block List</span></span>
 
-<span data-ttu-id="67604-192">テナント許可/ブロック リストのエントリを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="67604-192">To view entries in the Tenant Allow/Block List, use the following syntax:</span></span>
+<span data-ttu-id="9ad67-192">テナントの許可/ブロックリストのエントリを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-192">To view entries in the Tenant Allow/Block List, use the following syntax:</span></span>
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
 ```
 
-<span data-ttu-id="67604-193">この例では、ブロックされているすべての URL を返します。</span><span class="sxs-lookup"><span data-stu-id="67604-193">This example returns all blocked URLs.</span></span>
+<span data-ttu-id="9ad67-193">この例では、すべてのブロックされた Url を返します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-193">This example returns all blocked URLs.</span></span>
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Action Block
 ```
 
-<span data-ttu-id="67604-194">構文およびパラメーターの詳細については [、「Get-TenantAllowBlockListItems」を参照してください](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)。</span><span class="sxs-lookup"><span data-stu-id="67604-194">For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).</span></span>
+<span data-ttu-id="9ad67-194">構文およびパラメーターの詳細については、「 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad67-194">For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).</span></span>
 
-### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="67604-195">PowerShell を使用してテナントの許可/ブロック リスト内のエントリを変更する</span><span class="sxs-lookup"><span data-stu-id="67604-195">Use PowerShell to modify entries in the Tenant Allow/Block List</span></span>
+### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-195">PowerShell を使用して、テナントの許可/ブロックリストのエントリを変更する</span><span class="sxs-lookup"><span data-stu-id="9ad67-195">Use PowerShell to modify entries in the Tenant Allow/Block List</span></span>
 
-<span data-ttu-id="67604-196">URL 値自体は変更できません。</span><span class="sxs-lookup"><span data-stu-id="67604-196">You can't modify the URL value itself.</span></span> <span data-ttu-id="67604-197">代わりに、入力を削除して再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-197">Instead, you need to delete the entry and recreate it.</span></span>
+<span data-ttu-id="9ad67-196">URL の値自体を変更することはできません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-196">You can't modify the URL value itself.</span></span> <span data-ttu-id="9ad67-197">代わりに、エントリを削除して再作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-197">Instead, you need to delete the entry and recreate it.</span></span>
 
-<span data-ttu-id="67604-198">テナント許可/ブロック リストのエントリを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="67604-198">To modify entries in the Tenant Allow/Block List, use the following syntax:</span></span>
+<span data-ttu-id="9ad67-198">テナントの許可/ブロックリストのエントリを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-198">To modify entries in the Tenant Allow/Block List, use the following syntax:</span></span>
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
-<span data-ttu-id="67604-199">この例では、指定したエントリの有効期限を変更します。</span><span class="sxs-lookup"><span data-stu-id="67604-199">This example changes the expiration date of the specified entry.</span></span>
+<span data-ttu-id="9ad67-199">次の使用例は、指定された項目の有効期限を変更します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-199">This example changes the expiration date of the specified entry.</span></span>
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
 ```
 
-<span data-ttu-id="67604-200">構文およびパラメーターの詳細については [、「Set-TenantAllowBlockListItems」を参照してください](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)。</span><span class="sxs-lookup"><span data-stu-id="67604-200">For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).</span></span>
+<span data-ttu-id="9ad67-200">構文およびパラメーターの詳細については、「 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad67-200">For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).</span></span>
 
-### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a><span data-ttu-id="67604-201">PowerShell を使用してテナント許可/ブロック リストからエントリを削除する</span><span class="sxs-lookup"><span data-stu-id="67604-201">Use PowerShell to remove entries from the Tenant Allow/Block List</span></span>
+### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-201">PowerShell を使用して、テナントの許可/ブロックリストからエントリを削除する</span><span class="sxs-lookup"><span data-stu-id="9ad67-201">Use PowerShell to remove entries from the Tenant Allow/Block List</span></span>
 
-<span data-ttu-id="67604-202">テナント許可/ブロック リストからエントリを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="67604-202">To remove entries from the Tenant Allow/Block List, use the following syntax:</span></span>
+<span data-ttu-id="9ad67-202">テナントの許可/禁止リストからエントリを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-202">To remove entries from the Tenant Allow/Block List, use the following syntax:</span></span>
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
 ```
 
-<span data-ttu-id="67604-203">この例では、指定した URL エントリをテナント許可/ブロック一覧から削除します。</span><span class="sxs-lookup"><span data-stu-id="67604-203">This example removes the specified URL entry from the Tenant Allow/Block List.</span></span>
+<span data-ttu-id="9ad67-203">この例では、指定した URL エントリをテナントの許可/禁止リストから削除します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-203">This example removes the specified URL entry from the Tenant Allow/Block List.</span></span>
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
-<span data-ttu-id="67604-204">構文およびパラメーターの詳細については [、Remove-TenantAllowBlockListItems を参照してください](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems)。</span><span class="sxs-lookup"><span data-stu-id="67604-204">For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).</span></span>
+<span data-ttu-id="9ad67-204">構文およびパラメーターの詳細については、「 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9ad67-204">For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).</span></span>
 
-## <a name="url-syntax-for-the-tenant-allowblock-list"></a><span data-ttu-id="67604-205">テナント許可/ブロック リストの URL 構文</span><span class="sxs-lookup"><span data-stu-id="67604-205">URL syntax for the Tenant Allow/Block List</span></span>
+## <a name="url-syntax-for-the-tenant-allowblock-list"></a><span data-ttu-id="9ad67-205">テナントの許可/ブロックリストの URL 構文</span><span class="sxs-lookup"><span data-stu-id="9ad67-205">URL syntax for the Tenant Allow/Block List</span></span>
 
-- <span data-ttu-id="67604-206">IP4v アドレスおよび IPv6 アドレスは使用できますが、TCP/UDP ポートは使用できません。</span><span class="sxs-lookup"><span data-stu-id="67604-206">IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.</span></span>
+- <span data-ttu-id="9ad67-206">IP4v および IPv6 アドレスは許可されますが、TCP/UDP ポートは許可されません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-206">IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.</span></span>
 
-- <span data-ttu-id="67604-207">ファイル名拡張子は許可されません (たとえば、test.pdf)。</span><span class="sxs-lookup"><span data-stu-id="67604-207">Filename extensions are not allowed (for example, test.pdf).</span></span>
+- <span data-ttu-id="9ad67-207">ファイル名拡張子を使用することはできません (test.pdf など)。</span><span class="sxs-lookup"><span data-stu-id="9ad67-207">Filename extensions are not allowed (for example, test.pdf).</span></span>
 
-- <span data-ttu-id="67604-208">Unicode はサポートされていませんが、Punycode はサポートされます。</span><span class="sxs-lookup"><span data-stu-id="67604-208">Unicode is not supported, but Punycode is.</span></span>
+- <span data-ttu-id="9ad67-208">Unicode はサポートされていませんが、Punycode はです。</span><span class="sxs-lookup"><span data-stu-id="9ad67-208">Unicode is not supported, but Punycode is.</span></span>
 
-- <span data-ttu-id="67604-209">次の説明がすべて当たる場合、ホスト名を使用できます。</span><span class="sxs-lookup"><span data-stu-id="67604-209">Hostnames are allowed if all of the following statements are true:</span></span>
+- <span data-ttu-id="9ad67-209">次のすべてのステートメントが true の場合、ホスト名が許可されます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-209">Hostnames are allowed if all of the following statements are true:</span></span>
 
-  - <span data-ttu-id="67604-210">ホスト名にピリオドが含まれている場合。</span><span class="sxs-lookup"><span data-stu-id="67604-210">The hostname contains a period.</span></span>
-  - <span data-ttu-id="67604-211">ピリオドの左側には 1 文字以上が必要です。</span><span class="sxs-lookup"><span data-stu-id="67604-211">There is at least one character to the left of the period.</span></span>
-  - <span data-ttu-id="67604-212">ピリオドの右側には 2 文字以上があります。</span><span class="sxs-lookup"><span data-stu-id="67604-212">There are at least two characters to the right of the period.</span></span>
+  - <span data-ttu-id="9ad67-210">ホスト名にはピリオドが含まれています。</span><span class="sxs-lookup"><span data-stu-id="9ad67-210">The hostname contains a period.</span></span>
+  - <span data-ttu-id="9ad67-211">ピリオドの左側には、少なくとも1つの文字があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-211">There is at least one character to the left of the period.</span></span>
+  - <span data-ttu-id="9ad67-212">ピリオドの右側には、少なくとも2つの文字があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-212">There are at least two characters to the right of the period.</span></span>
 
-  <span data-ttu-id="67604-213">たとえば、許可 `t.co` されている、 `.com` または `contoso.` 許可されていない場合です。</span><span class="sxs-lookup"><span data-stu-id="67604-213">For example, `t.co` is allowed; `.com` or `contoso.` are not allowed.</span></span>
+  <span data-ttu-id="9ad67-213">たとえば、は許可されて `t.co` `.com` いるか、許可され `contoso.` ていません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-213">For example, `t.co` is allowed; `.com` or `contoso.` are not allowed.</span></span>
 
-- <span data-ttu-id="67604-214">サブパスは暗黙的にはされません。</span><span class="sxs-lookup"><span data-stu-id="67604-214">Subpaths are not implied.</span></span>
+- <span data-ttu-id="9ad67-214">サブパスは黙示的ではありません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-214">Subpaths are not implied.</span></span>
 
-  <span data-ttu-id="67604-215">たとえば、何も `contoso.com` 含まれていません `contoso.com/a` 。</span><span class="sxs-lookup"><span data-stu-id="67604-215">For example, `contoso.com` does not include `contoso.com/a`.</span></span>
+  <span data-ttu-id="9ad67-215">たとえば、にはを `contoso.com` 含めません `contoso.com/a` 。</span><span class="sxs-lookup"><span data-stu-id="9ad67-215">For example, `contoso.com` does not include `contoso.com/a`.</span></span>
 
-- <span data-ttu-id="67604-216">以下のシナリオでは、ワイルドカード (\*) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="67604-216">Wildcards (\*) are allowed in the following scenarios:</span></span>
+- <span data-ttu-id="9ad67-216">次のシナリオでは、ワイルドカード (\*) を使用できます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-216">Wildcards (\*) are allowed in the following scenarios:</span></span>
 
-  - <span data-ttu-id="67604-217">ワイルドカードを左のワイルドカードの後にピリオドで指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-217">A left wildcard must be followed by a period to specify a subdomain.</span></span>
+  - <span data-ttu-id="9ad67-217">サブドメインを指定するには、左のワイルドカードの後にピリオドを置く必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-217">A left wildcard must be followed by a period to specify a subdomain.</span></span>
 
-    <span data-ttu-id="67604-218">たとえば、許可 `*.contoso.com` されていますが `*contoso.com` 、許可されていません。</span><span class="sxs-lookup"><span data-stu-id="67604-218">For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.</span></span>
+    <span data-ttu-id="9ad67-218">たとえば、 `*.contoso.com` は許可され `*contoso.com` ていません。許可されていません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-218">For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.</span></span>
 
-  - <span data-ttu-id="67604-219">ワイルドカードを指定するには、シャープ (/) の後に適切なワイルドカードを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-219">A right wildcard must follow a forward slash (/) to specify a path.</span></span>
+  - <span data-ttu-id="9ad67-219">右のワイルドカードは、スラッシュ (/) に続けてパスを指定する必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-219">A right wildcard must follow a forward slash (/) to specify a path.</span></span>
 
-    <span data-ttu-id="67604-220">たとえば、許可 `contoso.com/*` されている、 `contoso.com*` または `contoso.com/ab*` 許可されていない場合です。</span><span class="sxs-lookup"><span data-stu-id="67604-220">For example, `contoso.com/*` is allowed; `contoso.com*` or `contoso.com/ab*` are not allowed.</span></span>
+    <span data-ttu-id="9ad67-220">たとえば、は許可されて `contoso.com/*` `contoso.com*` いるか、許可され `contoso.com/ab*` ていません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-220">For example, `contoso.com/*` is allowed; `contoso.com*` or `contoso.com/ab*` are not allowed.</span></span>
 
-  - <span data-ttu-id="67604-221">すべてのサブパスは、右のワイルドカードによって示されるものでない。</span><span class="sxs-lookup"><span data-stu-id="67604-221">All subpaths are not implied by a right wildcard.</span></span>
+  - <span data-ttu-id="9ad67-221">すべてのサブパスは、右のワイルドカードでは暗黙的には含まれません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-221">All subpaths are not implied by a right wildcard.</span></span>
 
-    <span data-ttu-id="67604-222">たとえば、何も `contoso.com/*` 含まれていません `contoso.com/a` 。</span><span class="sxs-lookup"><span data-stu-id="67604-222">For example, `contoso.com/*` does not include `contoso.com/a`.</span></span>
+    <span data-ttu-id="9ad67-222">たとえば、にはを `contoso.com/*` 含めません `contoso.com/a` 。</span><span class="sxs-lookup"><span data-stu-id="9ad67-222">For example, `contoso.com/*` does not include `contoso.com/a`.</span></span>
 
-  - <span data-ttu-id="67604-223">`*.com*` 無効なドメインです (解決可能なドメインではありません)。また、右のワイルドカードがスラッシュに従いません)。</span><span class="sxs-lookup"><span data-stu-id="67604-223">`*.com*` is invalid (not a resolvable domain and the right wildcard does not follow a forward slash).</span></span>
+  - <span data-ttu-id="9ad67-223">`*.com*` は無効です (解決可能なドメインではなく、右のワイルドカードはスラッシュに従っていません)。</span><span class="sxs-lookup"><span data-stu-id="9ad67-223">`*.com*` is invalid (not a resolvable domain and the right wildcard does not follow a forward slash).</span></span>
 
-  - <span data-ttu-id="67604-224">IP アドレスではワイルドカードは使用できません。</span><span class="sxs-lookup"><span data-stu-id="67604-224">Wildcards are not allowed in IP addresses.</span></span>
+  - <span data-ttu-id="9ad67-224">IP アドレスにワイルドカードを使用することはできません。</span><span class="sxs-lookup"><span data-stu-id="9ad67-224">Wildcards are not allowed in IP addresses.</span></span>
 
-- <span data-ttu-id="67604-225">切り記号 (~) は、次のシナリオで利用できます。</span><span class="sxs-lookup"><span data-stu-id="67604-225">The tilde (~) character is available in the following scenarios:</span></span>
+- <span data-ttu-id="9ad67-225">チルダ (~) 文字は、次のシナリオで使用できます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-225">The tilde (~) character is available in the following scenarios:</span></span>
 
-  - <span data-ttu-id="67604-226">左のタイルを指定すると、ドメインとすべてのサブドメインが適用されます。</span><span class="sxs-lookup"><span data-stu-id="67604-226">A left tilde implies a domain and all subdomains.</span></span>
+  - <span data-ttu-id="9ad67-226">左チルダは、1つのドメインとすべてのサブドメインを意味します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-226">A left tilde implies a domain and all subdomains.</span></span>
 
-    <span data-ttu-id="67604-227">たとえば `~contoso.com` 、includes や `contoso.com` `*.contoso.com` .</span><span class="sxs-lookup"><span data-stu-id="67604-227">For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.</span></span>
+    <span data-ttu-id="9ad67-227">たとえば `~contoso.com` `contoso.com` 、とを含み `*.contoso.com` ます。</span><span class="sxs-lookup"><span data-stu-id="9ad67-227">For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.</span></span>
 
-- <span data-ttu-id="67604-228">URL エントリはすべてのプロトコルに適用されているため、プロトコル ( `http://` たとえば `https://` 、, など) を含む URL エントリ `ftp://` は失敗します。</span><span class="sxs-lookup"><span data-stu-id="67604-228">URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.</span></span>
+- <span data-ttu-id="9ad67-228">`http://` `https://` Url エントリはすべてのプロトコルに適用されるため、プロトコル (たとえば、など) を含む url エントリ `ftp://` は失敗します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-228">URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.</span></span>
 
-- <span data-ttu-id="67604-229">ユーザー名やパスワードはサポートされていないか、必須ではありません。</span><span class="sxs-lookup"><span data-stu-id="67604-229">A username or password aren't supported or required.</span></span>
+- <span data-ttu-id="9ad67-229">ユーザー名またはパスワードがサポートされていないか、または必要です。</span><span class="sxs-lookup"><span data-stu-id="9ad67-229">A username or password aren't supported or required.</span></span>
 
-- <span data-ttu-id="67604-230">かつ正しくない文字 (' または ") です。</span><span class="sxs-lookup"><span data-stu-id="67604-230">Quotes (' or ") are invalid characters.</span></span>
+- <span data-ttu-id="9ad67-230">引用符 (' または ") は無効な文字です。</span><span class="sxs-lookup"><span data-stu-id="9ad67-230">Quotes (' or ") are invalid characters.</span></span>
 
-- <span data-ttu-id="67604-231">URL には、可能な限り、すべてのリダイレクトを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="67604-231">A URL should include all redirects where possible.</span></span>
+- <span data-ttu-id="9ad67-231">可能な場合は、URL にすべてのリダイレクトを含める必要があります。</span><span class="sxs-lookup"><span data-stu-id="9ad67-231">A URL should include all redirects where possible.</span></span>
 
-### <a name="url-entry-scenarios"></a><span data-ttu-id="67604-232">URL 入力のシナリオ</span><span class="sxs-lookup"><span data-stu-id="67604-232">URL entry scenarios</span></span>
+### <a name="url-entry-scenarios"></a><span data-ttu-id="9ad67-232">URL エントリのシナリオ</span><span class="sxs-lookup"><span data-stu-id="9ad67-232">URL entry scenarios</span></span>
 
-<span data-ttu-id="67604-233">有効な URL エントリとその結果については、以下のセクションで説明します。</span><span class="sxs-lookup"><span data-stu-id="67604-233">Valid URL entries and their results are described in the following sections.</span></span>
+<span data-ttu-id="9ad67-233">次のセクションでは、有効な URL エントリとその結果について説明します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-233">Valid URL entries and their results are described in the following sections.</span></span>
 
-#### <a name="scenario-no-wildcards"></a><span data-ttu-id="67604-234">シナリオ: ワイルドカードなし</span><span class="sxs-lookup"><span data-stu-id="67604-234">Scenario: No wildcards</span></span>
+#### <a name="scenario-no-wildcards"></a><span data-ttu-id="9ad67-234">シナリオ: ワイルドカードがありません</span><span class="sxs-lookup"><span data-stu-id="9ad67-234">Scenario: No wildcards</span></span>
 
-<span data-ttu-id="67604-235">**エントリ**: `contoso.com`</span><span class="sxs-lookup"><span data-stu-id="67604-235">**Entry**: `contoso.com`</span></span>
+<span data-ttu-id="9ad67-235">**Entry**: `contoso.com`</span><span class="sxs-lookup"><span data-stu-id="9ad67-235">**Entry**: `contoso.com`</span></span>
 
-- <span data-ttu-id="67604-236">**マッチを許可**する : contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-236">**Allow match**: contoso.com</span></span>
+- <span data-ttu-id="9ad67-236">**Match の許可**: contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-236">**Allow match**: contoso.com</span></span>
 
-- <span data-ttu-id="67604-237">**許可しない**:</span><span class="sxs-lookup"><span data-stu-id="67604-237">**Allow not matched**:</span></span>
+- <span data-ttu-id="9ad67-237">**許可しない**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-237">**Allow not matched**:</span></span>
 
-  - <span data-ttu-id="67604-238">abc-contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-238">abc-contoso.com</span></span>
-  - <span data-ttu-id="67604-239">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="67604-239">contoso.com/a</span></span>
-  - <span data-ttu-id="67604-240">payroll.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-240">payroll.contoso.com</span></span>
-  - <span data-ttu-id="67604-241">test.com/contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-241">test.com/contoso.com</span></span>
-  - <span data-ttu-id="67604-242">test.com/q=contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-242">test.com/q=contoso.com</span></span>
-  - <span data-ttu-id="67604-243">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-243">www.contoso.com</span></span>
-  - <span data-ttu-id="67604-244">www.contoso.com/q=a@contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-244">www.contoso.com/q=a@contoso.com</span></span>
+  - <span data-ttu-id="9ad67-238">abc-contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-238">abc-contoso.com</span></span>
+  - <span data-ttu-id="9ad67-239">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-239">contoso.com/a</span></span>
+  - <span data-ttu-id="9ad67-240">payroll.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-240">payroll.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-241">test.com/contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-241">test.com/contoso.com</span></span>
+  - <span data-ttu-id="9ad67-242">test.com/q=contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-242">test.com/q=contoso.com</span></span>
+  - <span data-ttu-id="9ad67-243">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-243">www.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-244">www. .com/q = a@contoso</span><span class="sxs-lookup"><span data-stu-id="9ad67-244">www.contoso.com/q=a@contoso.com</span></span>
   
-- <span data-ttu-id="67604-245">**ブロックの一致**:</span><span class="sxs-lookup"><span data-stu-id="67604-245">**Block match**:</span></span>
+- <span data-ttu-id="9ad67-245">**ブロック一致**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-245">**Block match**:</span></span>
 
-  - <span data-ttu-id="67604-246">contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-246">contoso.com</span></span>
-  - <span data-ttu-id="67604-247">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="67604-247">contoso.com/a</span></span>
-  - <span data-ttu-id="67604-248">payroll.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-248">payroll.contoso.com</span></span>
-  - <span data-ttu-id="67604-249">test.com/contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-249">test.com/contoso.com</span></span>
-  - <span data-ttu-id="67604-250">test.com/q=contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-250">test.com/q=contoso.com</span></span>
-  - <span data-ttu-id="67604-251">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-251">www.contoso.com</span></span>
-  - <span data-ttu-id="67604-252">www.contoso.com/q=a@contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-252">www.contoso.com/q=a@contoso.com</span></span>
+  - <span data-ttu-id="9ad67-246">contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-246">contoso.com</span></span>
+  - <span data-ttu-id="9ad67-247">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-247">contoso.com/a</span></span>
+  - <span data-ttu-id="9ad67-248">payroll.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-248">payroll.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-249">test.com/contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-249">test.com/contoso.com</span></span>
+  - <span data-ttu-id="9ad67-250">test.com/q=contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-250">test.com/q=contoso.com</span></span>
+  - <span data-ttu-id="9ad67-251">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-251">www.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-252">www. .com/q = a@contoso</span><span class="sxs-lookup"><span data-stu-id="9ad67-252">www.contoso.com/q=a@contoso.com</span></span>
 
-- <span data-ttu-id="67604-253">**ブロックが見つかりません**: abc-contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-253">**Block not matched**: abc-contoso.com</span></span>
+- <span data-ttu-id="9ad67-253">**ブロックが一致しません**: abc-contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-253">**Block not matched**: abc-contoso.com</span></span>
 
-#### <a name="scenario-left-wildcard-subdomain"></a><span data-ttu-id="67604-254">シナリオ: 左ワイルドカード (サブドメイン)</span><span class="sxs-lookup"><span data-stu-id="67604-254">Scenario: Left wildcard (subdomain)</span></span>
+#### <a name="scenario-left-wildcard-subdomain"></a><span data-ttu-id="9ad67-254">シナリオ: 左ワイルドカード (サブドメイン)</span><span class="sxs-lookup"><span data-stu-id="9ad67-254">Scenario: Left wildcard (subdomain)</span></span>
 
-<span data-ttu-id="67604-255">**エントリ**: `*.contoso.com`</span><span class="sxs-lookup"><span data-stu-id="67604-255">**Entry**: `*.contoso.com`</span></span>
+<span data-ttu-id="9ad67-255">**Entry**: `*.contoso.com`</span><span class="sxs-lookup"><span data-stu-id="9ad67-255">**Entry**: `*.contoso.com`</span></span>
 
-- <span data-ttu-id="67604-256">**マッチとブロック** の **マッチを許可します**:</span><span class="sxs-lookup"><span data-stu-id="67604-256">**Allow match** and **Block match**:</span></span>
+- <span data-ttu-id="9ad67-256">一致と**ブロックの一致**を**許可する**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-256">**Allow match** and **Block match**:</span></span>
 
-  - <span data-ttu-id="67604-257">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-257">www.contoso.com</span></span>
-  - <span data-ttu-id="67604-258">xyz.abc.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-258">xyz.abc.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-257">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-257">www.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-258">xyz.abc.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-258">xyz.abc.contoso.com</span></span>
 
-- <span data-ttu-id="67604-259">**一致およびブロック**禁止**Block not matched**</span><span class="sxs-lookup"><span data-stu-id="67604-259">**Allow not matched** and **Block not matched**:</span></span>
+- <span data-ttu-id="9ad67-259">[一致しない] と [**ブロックが一致**し**ません**] を許可します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-259">**Allow not matched** and **Block not matched**:</span></span>
 
-  - <span data-ttu-id="67604-260">123contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-260">123contoso.com</span></span>
-  - <span data-ttu-id="67604-261">contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-261">contoso.com</span></span>
-  - <span data-ttu-id="67604-262">test.com/contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-262">test.com/contoso.com</span></span>
-  - <span data-ttu-id="67604-263">www.contoso.com/abc</span><span class="sxs-lookup"><span data-stu-id="67604-263">www.contoso.com/abc</span></span>
+  - <span data-ttu-id="9ad67-260">123contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-260">123contoso.com</span></span>
+  - <span data-ttu-id="9ad67-261">contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-261">contoso.com</span></span>
+  - <span data-ttu-id="9ad67-262">test.com/contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-262">test.com/contoso.com</span></span>
+  - <span data-ttu-id="9ad67-263">www.contoso.com/abc</span><span class="sxs-lookup"><span data-stu-id="9ad67-263">www.contoso.com/abc</span></span>
   
-#### <a name="scenario-right-wildcard-at-top-of-path"></a><span data-ttu-id="67604-264">シナリオ: パスの上部にワイルドカード文字をワイルドカード</span><span class="sxs-lookup"><span data-stu-id="67604-264">Scenario: Right wildcard at top of path</span></span>
+#### <a name="scenario-right-wildcard-at-top-of-path"></a><span data-ttu-id="9ad67-264">シナリオ: パスの上部にあるワイルドカード (右)</span><span class="sxs-lookup"><span data-stu-id="9ad67-264">Scenario: Right wildcard at top of path</span></span>
 
-<span data-ttu-id="67604-265">**エントリ**: `contoso.com/a/*`</span><span class="sxs-lookup"><span data-stu-id="67604-265">**Entry**: `contoso.com/a/*`</span></span>
+<span data-ttu-id="9ad67-265">**Entry**: `contoso.com/a/*`</span><span class="sxs-lookup"><span data-stu-id="9ad67-265">**Entry**: `contoso.com/a/*`</span></span>
 
-- <span data-ttu-id="67604-266">**マッチとブロック** の **マッチを許可します**:</span><span class="sxs-lookup"><span data-stu-id="67604-266">**Allow match** and **Block match**:</span></span>
+- <span data-ttu-id="9ad67-266">一致と**ブロックの一致**を**許可する**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-266">**Allow match** and **Block match**:</span></span>
 
-  - <span data-ttu-id="67604-267">contoso.com/a/b</span><span class="sxs-lookup"><span data-stu-id="67604-267">contoso.com/a/b</span></span>
-  - <span data-ttu-id="67604-268">contoso.com/a/b/c</span><span class="sxs-lookup"><span data-stu-id="67604-268">contoso.com/a/b/c</span></span>
-  - <span data-ttu-id="67604-269">contoso.com/a/?q=joe@t.com</span><span class="sxs-lookup"><span data-stu-id="67604-269">contoso.com/a/?q=joe@t.com</span></span>
+  - <span data-ttu-id="9ad67-267">contoso.com/a/b</span><span class="sxs-lookup"><span data-stu-id="9ad67-267">contoso.com/a/b</span></span>
+  - <span data-ttu-id="9ad67-268">contoso.com/a/b/c</span><span class="sxs-lookup"><span data-stu-id="9ad67-268">contoso.com/a/b/c</span></span>
+  - <span data-ttu-id="9ad67-269">contoso .com/a/? q = joe@t</span><span class="sxs-lookup"><span data-stu-id="9ad67-269">contoso.com/a/?q=joe@t.com</span></span>
 
-- <span data-ttu-id="67604-270">**一致およびブロック**禁止**Block not matched**</span><span class="sxs-lookup"><span data-stu-id="67604-270">**Allow not matched** and **Block not matched**:</span></span>
+- <span data-ttu-id="9ad67-270">[一致しない] と [**ブロックが一致**し**ません**] を許可します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-270">**Allow not matched** and **Block not matched**:</span></span>
 
-  - <span data-ttu-id="67604-271">contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-271">contoso.com</span></span>
-  - <span data-ttu-id="67604-272">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="67604-272">contoso.com/a</span></span>
-  - <span data-ttu-id="67604-273">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-273">www.contoso.com</span></span>
-  - <span data-ttu-id="67604-274">www.contoso.com/q=a@contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-274">www.contoso.com/q=a@contoso.com</span></span>
+  - <span data-ttu-id="9ad67-271">contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-271">contoso.com</span></span>
+  - <span data-ttu-id="9ad67-272">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-272">contoso.com/a</span></span>
+  - <span data-ttu-id="9ad67-273">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-273">www.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-274">www. .com/q = a@contoso</span><span class="sxs-lookup"><span data-stu-id="9ad67-274">www.contoso.com/q=a@contoso.com</span></span>
   
-#### <a name="scenario-left-tilde"></a><span data-ttu-id="67604-275">シナリオ: 左揃え</span><span class="sxs-lookup"><span data-stu-id="67604-275">Scenario: Left tilde</span></span>
+#### <a name="scenario-left-tilde"></a><span data-ttu-id="9ad67-275">シナリオ: 左チルダ</span><span class="sxs-lookup"><span data-stu-id="9ad67-275">Scenario: Left tilde</span></span>
 
-<span data-ttu-id="67604-276">**エントリ**: `~contoso.com`</span><span class="sxs-lookup"><span data-stu-id="67604-276">**Entry**: `~contoso.com`</span></span>
+<span data-ttu-id="9ad67-276">**Entry**: `~contoso.com`</span><span class="sxs-lookup"><span data-stu-id="9ad67-276">**Entry**: `~contoso.com`</span></span>
 
-- <span data-ttu-id="67604-277">**マッチとブロック** の **マッチを許可します**:</span><span class="sxs-lookup"><span data-stu-id="67604-277">**Allow match** and **Block match**:</span></span>
+- <span data-ttu-id="9ad67-277">一致と**ブロックの一致**を**許可する**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-277">**Allow match** and **Block match**:</span></span>
 
-  - <span data-ttu-id="67604-278">contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-278">contoso.com</span></span>
-  - <span data-ttu-id="67604-279">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-279">www.contoso.com</span></span>
-  - <span data-ttu-id="67604-280">xyz.abc.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-280">xyz.abc.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-278">contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-278">contoso.com</span></span>
+  - <span data-ttu-id="9ad67-279">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-279">www.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-280">xyz.abc.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-280">xyz.abc.contoso.com</span></span>
 
-- <span data-ttu-id="67604-281">**一致およびブロック**禁止**Block not matched**</span><span class="sxs-lookup"><span data-stu-id="67604-281">**Allow not matched** and **Block not matched**:</span></span>
+- <span data-ttu-id="9ad67-281">[一致しない] と [**ブロックが一致**し**ません**] を許可します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-281">**Allow not matched** and **Block not matched**:</span></span>
 
-  - <span data-ttu-id="67604-282">123contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-282">123contoso.com</span></span>
-  - <span data-ttu-id="67604-283">contoso.com/abc</span><span class="sxs-lookup"><span data-stu-id="67604-283">contoso.com/abc</span></span>
-  - <span data-ttu-id="67604-284">www.contoso.com/abc</span><span class="sxs-lookup"><span data-stu-id="67604-284">www.contoso.com/abc</span></span>
+  - <span data-ttu-id="9ad67-282">123contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-282">123contoso.com</span></span>
+  - <span data-ttu-id="9ad67-283">contoso.com/abc</span><span class="sxs-lookup"><span data-stu-id="9ad67-283">contoso.com/abc</span></span>
+  - <span data-ttu-id="9ad67-284">www.contoso.com/abc</span><span class="sxs-lookup"><span data-stu-id="9ad67-284">www.contoso.com/abc</span></span>
 
-#### <a name="scenario-right-wildcard-suffix"></a><span data-ttu-id="67604-285">シナリオ: 右のワイルドカード サフィックス</span><span class="sxs-lookup"><span data-stu-id="67604-285">Scenario: Right wildcard suffix</span></span>
+#### <a name="scenario-right-wildcard-suffix"></a><span data-ttu-id="9ad67-285">シナリオ: 右ワイルドカードサフィックス</span><span class="sxs-lookup"><span data-stu-id="9ad67-285">Scenario: Right wildcard suffix</span></span>
 
-<span data-ttu-id="67604-286">**エントリ**: `contoso.com/*`</span><span class="sxs-lookup"><span data-stu-id="67604-286">**Entry**: `contoso.com/*`</span></span>
+<span data-ttu-id="9ad67-286">**Entry**: `contoso.com/*`</span><span class="sxs-lookup"><span data-stu-id="9ad67-286">**Entry**: `contoso.com/*`</span></span>
 
-- <span data-ttu-id="67604-287">**マッチとブロック** の **マッチを許可します**:</span><span class="sxs-lookup"><span data-stu-id="67604-287">**Allow match** and **Block match**:</span></span>
+- <span data-ttu-id="9ad67-287">一致と**ブロックの一致**を**許可する**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-287">**Allow match** and **Block match**:</span></span>
 
-  - <span data-ttu-id="67604-288">contoso.com/?q=whatever@fabrikam.com</span><span class="sxs-lookup"><span data-stu-id="67604-288">contoso.com/?q=whatever@fabrikam.com</span></span>
-  - <span data-ttu-id="67604-289">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="67604-289">contoso.com/a</span></span>
-  - <span data-ttu-id="67604-290">contoso.com/a/b/c</span><span class="sxs-lookup"><span data-stu-id="67604-290">contoso.com/a/b/c</span></span>
-  - <span data-ttu-id="67604-291">contoso.com/ab</span><span class="sxs-lookup"><span data-stu-id="67604-291">contoso.com/ab</span></span>
-  - <span data-ttu-id="67604-292">contoso.com/b</span><span class="sxs-lookup"><span data-stu-id="67604-292">contoso.com/b</span></span>
-  - <span data-ttu-id="67604-293">contoso.com/b/a/c</span><span class="sxs-lookup"><span data-stu-id="67604-293">contoso.com/b/a/c</span></span>
-  - <span data-ttu-id="67604-294">contoso.com/ba</span><span class="sxs-lookup"><span data-stu-id="67604-294">contoso.com/ba</span></span>
+  - <span data-ttu-id="9ad67-288">contoso .com/? q = whatever@fabrikam</span><span class="sxs-lookup"><span data-stu-id="9ad67-288">contoso.com/?q=whatever@fabrikam.com</span></span>
+  - <span data-ttu-id="9ad67-289">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-289">contoso.com/a</span></span>
+  - <span data-ttu-id="9ad67-290">contoso.com/a/b/c</span><span class="sxs-lookup"><span data-stu-id="9ad67-290">contoso.com/a/b/c</span></span>
+  - <span data-ttu-id="9ad67-291">contoso.com/ab</span><span class="sxs-lookup"><span data-stu-id="9ad67-291">contoso.com/ab</span></span>
+  - <span data-ttu-id="9ad67-292">contoso.com/b</span><span class="sxs-lookup"><span data-stu-id="9ad67-292">contoso.com/b</span></span>
+  - <span data-ttu-id="9ad67-293">contoso.com/b/a/c</span><span class="sxs-lookup"><span data-stu-id="9ad67-293">contoso.com/b/a/c</span></span>
+  - <span data-ttu-id="9ad67-294">contoso.com/ba</span><span class="sxs-lookup"><span data-stu-id="9ad67-294">contoso.com/ba</span></span>
 
-- <span data-ttu-id="67604-295">**一致禁止およびブロック\*\*\*\*の禁止**: contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-295">**Allow not matched** and **Block not matched**: contoso.com</span></span>
+- <span data-ttu-id="9ad67-295">**Allow not 一致** と **ブロック not 一致**: contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-295">**Allow not matched** and **Block not matched**: contoso.com</span></span>
 
-#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a><span data-ttu-id="67604-296">シナリオ: 左ワイルドカード サブドメインと、右ワイルドカード サフィックス</span><span class="sxs-lookup"><span data-stu-id="67604-296">Scenario: Left wildcard subdomain and right wildcard suffix</span></span>
+#### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a><span data-ttu-id="9ad67-296">シナリオ: 左ワイルドカードサブドメインと右ワイルドカードサフィックス</span><span class="sxs-lookup"><span data-stu-id="9ad67-296">Scenario: Left wildcard subdomain and right wildcard suffix</span></span>
 
-<span data-ttu-id="67604-297">**エントリ**: `*.contoso.com/*`</span><span class="sxs-lookup"><span data-stu-id="67604-297">**Entry**: `*.contoso.com/*`</span></span>
+<span data-ttu-id="9ad67-297">**Entry**: `*.contoso.com/*`</span><span class="sxs-lookup"><span data-stu-id="9ad67-297">**Entry**: `*.contoso.com/*`</span></span>
 
-- <span data-ttu-id="67604-298">**マッチとブロック** の **マッチを許可します**:</span><span class="sxs-lookup"><span data-stu-id="67604-298">**Allow match** and **Block match**:</span></span>
+- <span data-ttu-id="9ad67-298">一致と**ブロックの一致**を**許可する**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-298">**Allow match** and **Block match**:</span></span>
 
-  - <span data-ttu-id="67604-299">abc.contoso.com/ab</span><span class="sxs-lookup"><span data-stu-id="67604-299">abc.contoso.com/ab</span></span>
-  - <span data-ttu-id="67604-300">abc.xyz.contoso.com/a/b/c</span><span class="sxs-lookup"><span data-stu-id="67604-300">abc.xyz.contoso.com/a/b/c</span></span>
-  - <span data-ttu-id="67604-301">www.contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="67604-301">www.contoso.com/a</span></span>
-  - <span data-ttu-id="67604-302">www.contoso.com/b/a/c</span><span class="sxs-lookup"><span data-stu-id="67604-302">www.contoso.com/b/a/c</span></span>
-  - <span data-ttu-id="67604-303">xyz.contoso.com/ba</span><span class="sxs-lookup"><span data-stu-id="67604-303">xyz.contoso.com/ba</span></span>
+  - <span data-ttu-id="9ad67-299">abc.contoso.com/ab</span><span class="sxs-lookup"><span data-stu-id="9ad67-299">abc.contoso.com/ab</span></span>
+  - <span data-ttu-id="9ad67-300">abc.xyz.contoso.com/a/b/c</span><span class="sxs-lookup"><span data-stu-id="9ad67-300">abc.xyz.contoso.com/a/b/c</span></span>
+  - <span data-ttu-id="9ad67-301">www.contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-301">www.contoso.com/a</span></span>
+  - <span data-ttu-id="9ad67-302">www.contoso.com/b/a/c</span><span class="sxs-lookup"><span data-stu-id="9ad67-302">www.contoso.com/b/a/c</span></span>
+  - <span data-ttu-id="9ad67-303">xyz.contoso.com/ba</span><span class="sxs-lookup"><span data-stu-id="9ad67-303">xyz.contoso.com/ba</span></span>
 
-- <span data-ttu-id="67604-304">**一致しない、または\*\*\*\*ブロックを禁止する**: contoso.com/b</span><span class="sxs-lookup"><span data-stu-id="67604-304">**Allow not matched** and **Block not matched**: contoso.com/b</span></span>
+- <span data-ttu-id="9ad67-304">**Allow not 一致** と **ブロック not 一致**: contoso.com/b</span><span class="sxs-lookup"><span data-stu-id="9ad67-304">**Allow not matched** and **Block not matched**: contoso.com/b</span></span>
 
-#### <a name="scenario-left-and-right-tilde"></a><span data-ttu-id="67604-305">シナリオ: 左右のシルード</span><span class="sxs-lookup"><span data-stu-id="67604-305">Scenario: Left and right tilde</span></span>
+#### <a name="scenario-left-and-right-tilde"></a><span data-ttu-id="9ad67-305">シナリオ: 左と右のチルダ</span><span class="sxs-lookup"><span data-stu-id="9ad67-305">Scenario: Left and right tilde</span></span>
 
-<span data-ttu-id="67604-306">**エントリ**: `~contoso.com~`</span><span class="sxs-lookup"><span data-stu-id="67604-306">**Entry**: `~contoso.com~`</span></span>
+<span data-ttu-id="9ad67-306">**Entry**: `~contoso.com~`</span><span class="sxs-lookup"><span data-stu-id="9ad67-306">**Entry**: `~contoso.com~`</span></span>
 
-- <span data-ttu-id="67604-307">**マッチとブロック** の **マッチを許可します**:</span><span class="sxs-lookup"><span data-stu-id="67604-307">**Allow match** and **Block match**:</span></span>
+- <span data-ttu-id="9ad67-307">一致と**ブロックの一致**を**許可する**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-307">**Allow match** and **Block match**:</span></span>
 
-  - <span data-ttu-id="67604-308">contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-308">contoso.com</span></span>
-  - <span data-ttu-id="67604-309">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="67604-309">contoso.com/a</span></span>
-  - <span data-ttu-id="67604-310">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-310">www.contoso.com</span></span>
-  - <span data-ttu-id="67604-311">www.contoso.com/b</span><span class="sxs-lookup"><span data-stu-id="67604-311">www.contoso.com/b</span></span>
-  - <span data-ttu-id="67604-312">xyz.abc.contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-312">xyz.abc.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-308">contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-308">contoso.com</span></span>
+  - <span data-ttu-id="9ad67-309">contoso.com/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-309">contoso.com/a</span></span>
+  - <span data-ttu-id="9ad67-310">www.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-310">www.contoso.com</span></span>
+  - <span data-ttu-id="9ad67-311">www.contoso.com/b</span><span class="sxs-lookup"><span data-stu-id="9ad67-311">www.contoso.com/b</span></span>
+  - <span data-ttu-id="9ad67-312">xyz.abc.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-312">xyz.abc.contoso.com</span></span>
 
-- <span data-ttu-id="67604-313">**一致およびブロック**禁止**Block not matched**</span><span class="sxs-lookup"><span data-stu-id="67604-313">**Allow not matched** and **Block not matched**:</span></span>
+- <span data-ttu-id="9ad67-313">[一致しない] と [**ブロックが一致**し**ません**] を許可します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-313">**Allow not matched** and **Block not matched**:</span></span>
 
-  - <span data-ttu-id="67604-314">123contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-314">123contoso.com</span></span>
-  - <span data-ttu-id="67604-315">contoso.org</span><span class="sxs-lookup"><span data-stu-id="67604-315">contoso.org</span></span>
+  - <span data-ttu-id="9ad67-314">123contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-314">123contoso.com</span></span>
+  - <span data-ttu-id="9ad67-315">contoso.org</span><span class="sxs-lookup"><span data-stu-id="9ad67-315">contoso.org</span></span>
 
-#### <a name="scenario-ip-address"></a><span data-ttu-id="67604-316">シナリオ: IP アドレス</span><span class="sxs-lookup"><span data-stu-id="67604-316">Scenario: IP address</span></span>
+#### <a name="scenario-ip-address"></a><span data-ttu-id="9ad67-316">シナリオ: IP アドレス</span><span class="sxs-lookup"><span data-stu-id="9ad67-316">Scenario: IP address</span></span>
 
-<span data-ttu-id="67604-317">**エントリ**: `1.2.3.4`</span><span class="sxs-lookup"><span data-stu-id="67604-317">**Entry**: `1.2.3.4`</span></span>
+<span data-ttu-id="9ad67-317">**Entry**: `1.2.3.4`</span><span class="sxs-lookup"><span data-stu-id="9ad67-317">**Entry**: `1.2.3.4`</span></span>
 
-- <span data-ttu-id="67604-318">**一致を許可\*\*\*\*する一致を許可**する : 1.2.3.4</span><span class="sxs-lookup"><span data-stu-id="67604-318">**Allow match** and **Block match**: 1.2.3.4</span></span>
+- <span data-ttu-id="9ad67-318">Match と**Block match**を**許可する**: 1.2.3.4</span><span class="sxs-lookup"><span data-stu-id="9ad67-318">**Allow match** and **Block match**: 1.2.3.4</span></span>
 
-- <span data-ttu-id="67604-319">**一致およびブロック**禁止**Block not matched**</span><span class="sxs-lookup"><span data-stu-id="67604-319">**Allow not matched** and **Block not matched**:</span></span>
+- <span data-ttu-id="9ad67-319">[一致しない] と [**ブロックが一致**し**ません**] を許可します。</span><span class="sxs-lookup"><span data-stu-id="9ad67-319">**Allow not matched** and **Block not matched**:</span></span>
 
-  - <span data-ttu-id="67604-320">1.2.3.4/a</span><span class="sxs-lookup"><span data-stu-id="67604-320">1.2.3.4/a</span></span>
-  - <span data-ttu-id="67604-321">11.2.3.4/a</span><span class="sxs-lookup"><span data-stu-id="67604-321">11.2.3.4/a</span></span>
+  - <span data-ttu-id="9ad67-320">1.2.3.4/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-320">1.2.3.4/a</span></span>
+  - <span data-ttu-id="9ad67-321">11.2.3.4/a</span><span class="sxs-lookup"><span data-stu-id="9ad67-321">11.2.3.4/a</span></span>
 
-#### <a name="ip-address-with-right-wildcard"></a><span data-ttu-id="67604-322">適切なワイルドカードを使用した IP アドレス</span><span class="sxs-lookup"><span data-stu-id="67604-322">IP address with right wildcard</span></span>
+#### <a name="ip-address-with-right-wildcard"></a><span data-ttu-id="9ad67-322">右ワイルドカードを使用した IP アドレス</span><span class="sxs-lookup"><span data-stu-id="9ad67-322">IP address with right wildcard</span></span>
 
-<span data-ttu-id="67604-323">**エントリ**: `1.2.3.4/*`</span><span class="sxs-lookup"><span data-stu-id="67604-323">**Entry**: `1.2.3.4/*`</span></span>
+<span data-ttu-id="9ad67-323">**Entry**: `1.2.3.4/*`</span><span class="sxs-lookup"><span data-stu-id="9ad67-323">**Entry**: `1.2.3.4/*`</span></span>
 
-- <span data-ttu-id="67604-324">**マッチとブロック** の **マッチを許可します**:</span><span class="sxs-lookup"><span data-stu-id="67604-324">**Allow match** and **Block match**:</span></span>
+- <span data-ttu-id="9ad67-324">一致と**ブロックの一致**を**許可する**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-324">**Allow match** and **Block match**:</span></span>
 
-  - <span data-ttu-id="67604-325">1.2.3.4/b</span><span class="sxs-lookup"><span data-stu-id="67604-325">1.2.3.4/b</span></span>
-  - <span data-ttu-id="67604-326">1.2.3.4/baaaa</span><span class="sxs-lookup"><span data-stu-id="67604-326">1.2.3.4/baaaa</span></span>
+  - <span data-ttu-id="9ad67-325">1.2.3.4/b</span><span class="sxs-lookup"><span data-stu-id="9ad67-325">1.2.3.4/b</span></span>
+  - <span data-ttu-id="9ad67-326">1.2.3.4/baaaa</span><span class="sxs-lookup"><span data-stu-id="9ad67-326">1.2.3.4/baaaa</span></span>
 
-### <a name="examples-of-invalid-entries"></a><span data-ttu-id="67604-327">無効なエントリの例</span><span class="sxs-lookup"><span data-stu-id="67604-327">Examples of invalid entries</span></span>
+### <a name="examples-of-invalid-entries"></a><span data-ttu-id="9ad67-327">無効なエントリの例</span><span class="sxs-lookup"><span data-stu-id="9ad67-327">Examples of invalid entries</span></span>
 
-<span data-ttu-id="67604-328">次のエントリは無効です。</span><span class="sxs-lookup"><span data-stu-id="67604-328">The following entries are invalid:</span></span>
+<span data-ttu-id="9ad67-328">次のエントリは無効です。</span><span class="sxs-lookup"><span data-stu-id="9ad67-328">The following entries are invalid:</span></span>
 
-- <span data-ttu-id="67604-329">**ドメインの値が見つからないか、無効です**。</span><span class="sxs-lookup"><span data-stu-id="67604-329">**Missing or invalid domain values**:</span></span>
+- <span data-ttu-id="9ad67-329">**ドメイン値がないか、または無効**です。</span><span class="sxs-lookup"><span data-stu-id="9ad67-329">**Missing or invalid domain values**:</span></span>
 
-  - <span data-ttu-id="67604-330">contoso</span><span class="sxs-lookup"><span data-stu-id="67604-330">contoso</span></span>
-  - <span data-ttu-id="67604-331">\*.contoso.\*</span><span class="sxs-lookup"><span data-stu-id="67604-331">\*.contoso.\*</span></span>
-  - <span data-ttu-id="67604-332">\*.com</span><span class="sxs-lookup"><span data-stu-id="67604-332">\*.com</span></span>
-  - <span data-ttu-id="67604-333">\*.pdf</span><span class="sxs-lookup"><span data-stu-id="67604-333">\*.pdf</span></span>
+  - <span data-ttu-id="9ad67-330">拠点</span><span class="sxs-lookup"><span data-stu-id="9ad67-330">contoso</span></span>
+  - <span data-ttu-id="9ad67-331">\*拠点.\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-331">\*.contoso.\*</span></span>
+  - <span data-ttu-id="9ad67-332">\*.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-332">\*.com</span></span>
+  - <span data-ttu-id="9ad67-333">\*.pdf</span><span class="sxs-lookup"><span data-stu-id="9ad67-333">\*.pdf</span></span>
 
-- <span data-ttu-id="67604-334">**テキスト上のワイルドカードまたは間隔文字なし**:</span><span class="sxs-lookup"><span data-stu-id="67604-334">**Wildcard on text or without spacing characters**:</span></span>
+- <span data-ttu-id="9ad67-334">**文字列の場合はワイルドカード、文字間隔は使用しませ**ん。</span><span class="sxs-lookup"><span data-stu-id="9ad67-334">**Wildcard on text or without spacing characters**:</span></span>
 
-  - <span data-ttu-id="67604-335">\*contoso.com</span><span class="sxs-lookup"><span data-stu-id="67604-335">\*contoso.com</span></span>
-  - <span data-ttu-id="67604-336">contoso.com\*</span><span class="sxs-lookup"><span data-stu-id="67604-336">contoso.com\*</span></span>
-  - <span data-ttu-id="67604-337">\*1.2.3.4</span><span class="sxs-lookup"><span data-stu-id="67604-337">\*1.2.3.4</span></span>
-  - <span data-ttu-id="67604-338">1.2.3.4\*</span><span class="sxs-lookup"><span data-stu-id="67604-338">1.2.3.4\*</span></span>
-  - <span data-ttu-id="67604-339">contoso.com/a\*</span><span class="sxs-lookup"><span data-stu-id="67604-339">contoso.com/a\*</span></span>
-  - <span data-ttu-id="67604-340">contoso.com/ab\*</span><span class="sxs-lookup"><span data-stu-id="67604-340">contoso.com/ab\*</span></span>
+  - <span data-ttu-id="9ad67-335">\*contoso.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-335">\*contoso.com</span></span>
+  - <span data-ttu-id="9ad67-336">contoso.com\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-336">contoso.com\*</span></span>
+  - <span data-ttu-id="9ad67-337">\*1.2.3.4</span><span class="sxs-lookup"><span data-stu-id="9ad67-337">\*1.2.3.4</span></span>
+  - <span data-ttu-id="9ad67-338">1.2.3.4\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-338">1.2.3.4\*</span></span>
+  - <span data-ttu-id="9ad67-339">contoso.com/a\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-339">contoso.com/a\*</span></span>
+  - <span data-ttu-id="9ad67-340">contoso.com/ab\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-340">contoso.com/ab\*</span></span>
 
-- <span data-ttu-id="67604-341">**ポートを使用した IP アドレス**:</span><span class="sxs-lookup"><span data-stu-id="67604-341">**IP addresses with ports**:</span></span>
+- <span data-ttu-id="9ad67-341">**ポートを使用した IP アドレス**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-341">**IP addresses with ports**:</span></span>
 
-  - <span data-ttu-id="67604-342">contoso.com:443</span><span class="sxs-lookup"><span data-stu-id="67604-342">contoso.com:443</span></span>
-  - <span data-ttu-id="67604-343">abc.contoso.com:25</span><span class="sxs-lookup"><span data-stu-id="67604-343">abc.contoso.com:25</span></span>
+  - <span data-ttu-id="9ad67-342">contoso.com:443</span><span class="sxs-lookup"><span data-stu-id="9ad67-342">contoso.com:443</span></span>
+  - <span data-ttu-id="9ad67-343">abc.contoso.com:25</span><span class="sxs-lookup"><span data-stu-id="9ad67-343">abc.contoso.com:25</span></span>
 
-- <span data-ttu-id="67604-344">**非説明のワイルドカード**:</span><span class="sxs-lookup"><span data-stu-id="67604-344">**Non-descriptive wildcards**:</span></span>
+- <span data-ttu-id="9ad67-344">**説明のないワイルドカード**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-344">**Non-descriptive wildcards**:</span></span>
 
   - \*
-  - <span data-ttu-id="67604-345">\*.\*</span><span class="sxs-lookup"><span data-stu-id="67604-345">\*.\*</span></span>
+  - <span data-ttu-id="9ad67-345">\*.\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-345">\*.\*</span></span>
 
-- <span data-ttu-id="67604-346">**中間ワイルドカード**:</span><span class="sxs-lookup"><span data-stu-id="67604-346">**Middle wildcards**:</span></span>
+- <span data-ttu-id="9ad67-346">**中央のワイルドカード**:</span><span class="sxs-lookup"><span data-stu-id="9ad67-346">**Middle wildcards**:</span></span>
 
-  - <span data-ttu-id="67604-347">conto \* so.com</span><span class="sxs-lookup"><span data-stu-id="67604-347">conto\*so.com</span></span>
-  - <span data-ttu-id="67604-348">conto~so.com</span><span class="sxs-lookup"><span data-stu-id="67604-348">conto~so.com</span></span>
+  - <span data-ttu-id="9ad67-347">conto \* so.com</span><span class="sxs-lookup"><span data-stu-id="9ad67-347">conto\*so.com</span></span>
+  - <span data-ttu-id="9ad67-348">~ so ~ .com</span><span class="sxs-lookup"><span data-stu-id="9ad67-348">conto~so.com</span></span>
 
-- <span data-ttu-id="67604-349">**二重ワイルドカード**</span><span class="sxs-lookup"><span data-stu-id="67604-349">**Double wildcards**</span></span>
+- <span data-ttu-id="9ad67-349">**2文字のワイルドカード**</span><span class="sxs-lookup"><span data-stu-id="9ad67-349">**Double wildcards**</span></span>
 
-  - <span data-ttu-id="67604-350">contoso.com/\*\*</span><span class="sxs-lookup"><span data-stu-id="67604-350">contoso.com/\*\*</span></span>
-  - <span data-ttu-id="67604-351">contoso.com/\*/\*</span><span class="sxs-lookup"><span data-stu-id="67604-351">contoso.com/\*/\*</span></span>
+  - <span data-ttu-id="9ad67-350">contoso.com/\*\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-350">contoso.com/\*\*</span></span>
+  - <span data-ttu-id="9ad67-351">contoso.com/\*/\*</span><span class="sxs-lookup"><span data-stu-id="9ad67-351">contoso.com/\*/\*</span></span>
