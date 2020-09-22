@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、exchange online Protection (EOP) 組織で使用可能なフィッシング対策ポリシーを作成、変更、および削除する方法について説明します。 Exchange Online のメールボックスは使用できません。
-ms.openlocfilehash: 3b83bcd3c60dbd779d727a79f6689fdf0004d340
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 66c02513966eda45c4993a28904667f11be225f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255759"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203397"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でフィッシング対策ポリシーを構成する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織内のメールボックスを使用する Microsoft 365 組織では、Exchange Online メールボックスを使用していない場合、既定で有効になっている一部のスプーフィング対策機能が含まれている既定のフィッシング対策ポリシーがあります。 詳細については、「 [フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
 
@@ -149,7 +152,7 @@ Exchange Online の PowerShell では、ポリシーとルールを個別に管�
    - **名前**
    - **説明**
    - **適用先**
-   - **設定の確認**
+   - **設定を確認する**
 
    完了したら、[任意のページに **保存** ] をクリックします。
 

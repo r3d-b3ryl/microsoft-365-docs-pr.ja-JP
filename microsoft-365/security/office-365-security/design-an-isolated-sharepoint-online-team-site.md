@@ -18,14 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: アクセス許可レベルの決定、アクセスグループを持つユーザーへのアクセス許可の割り当て、およびネストされた Azure AD グループを含む、分離した SharePoint Online チームサイトを設計します。
-ms.openlocfilehash: d26f55d9e037d86eac28e5cf21c56406eae5cc19
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653007"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203121"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの設計
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **概要:** 分離した SharePoint Online チーム サイトの設計プロセスをステップごとに示します。
 
@@ -35,11 +38,11 @@ ms.locfileid: "46653007"
 
 既定では、すべての SharePoint Online チーム サイトは次の SharePoint グループを使用して作成されます。
 
-- \<site name>スタッフ
+- \<site name> スタッフ
 
-- \<site name>書き込む
+- \<site name> 書き込む
 
-- \<site name>経営
+- \<site name> 経営
 
 これらのグループは、Microsoft 365 および Azure Active Directory (AD) グループとは別のものであり、サイトのリソースに対するアクセス許可を割り当てるための基礎となります。
 
@@ -49,9 +52,9 @@ SharePoint グループのメンバーがサイトで実行できる内容を決
 
 |SharePoint グループ|アクセス許可レベル|
 |---|---|
-|\<site name>スタッフ|Edit|
-|\<site name>書き込む|読み取り|
-|\<site name>経営|フル コントロール|
+|\<site name> スタッフ|Edit|
+|\<site name> 書き込む|読み取り|
+|\<site name> 経営|フル コントロール|
 |
 
  **ベスト プラクティス:** 追加の SharePoint グループおよびアクセス許可レベルを作成できます。ただし、分離した SharePoint Online サイトには、既定の SharePoint グループおよびアクセス許可レベルを使用することをお勧めします。
@@ -74,11 +77,11 @@ SharePoint グループのメンバーがサイトで実行できる内容を決
 
  **ベスト プラクティス:** 個々のユーザー アカウントを使用してアクセス許可を管理することもできますが、代わりにアクセス グループと呼ばれる 1 つの Azure AD グループを使用することをお勧めします。この方法は、SharePoint グループごとにユーザー アカウントのリストを管理するのではなく、アクセス グループのメンバーシップでアクセス許可の管理を簡略化するものです。
 
-Microsoft 365 の Azure AD グループは、で Microsoft 365 のグループとは異なります。 Azure AD グループは、その**種類**が [**セキュリティ**] に設定され、電子メールアドレスを持たない Microsoft 365 管理センターに表示されます。 以下で Azure AD グループを管理できます。
+Microsoft 365 の Azure AD グループは、で Microsoft 365 のグループとは異なります。 Azure AD グループは、その **種類** が [ **セキュリティ** ] に設定され、電子メールアドレスを持たない Microsoft 365 管理センターに表示されます。 以下で Azure AD グループを管理できます。
 
 - Active Directory Domain Services (AD DS)
 
-    これらは、オンプレミスの AD DS インフラストラクチャで作成され、Microsoft 365 サブスクリプションに同期されているグループです。 Microsoft 365 管理センターでは、これらのグループの**状態**は**Active directory と同期**しています。
+    これらは、オンプレミスの AD DS インフラストラクチャで作成され、Microsoft 365 サブスクリプションに同期されているグループです。 Microsoft 365 管理センターでは、これらのグループの **状態** は **Active directory と同期**しています。
 
 - Office 365
 
@@ -92,9 +95,9 @@ Microsoft 365 の Azure AD グループは、で Microsoft 365 のグループ�
 
 |SharePoint グループ|Azure AD ベースのアクセス グループ|権限レベル|
 |---|---|---|
-|\<site name>スタッフ|\<site name>スタッフ|Edit|
-|\<site name>書き込む|\<site name>見る|読み取り|
-|\<site name>経営|\<site name>管理|フル コントロール|
+|\<site name> スタッフ|\<site name> スタッフ|Edit|
+|\<site name> 書き込む|\<site name> 見る|読み取り|
+|\<site name> 経営|\<site name> 管理|フル コントロール|
 |
 
  **ベストプラクティス:** Microsoft 365 または Azure AD グループは SharePoint グループのメンバーとして使用できますが、Azure AD グループを使用することをお勧めします。 AD DS または Microsoft 365 によって管理される Azure AD グループでは、ネストされたグループを使用してアクセス許可を割り当てる方が柔軟性があります。
@@ -138,7 +141,7 @@ Azure AD ベースのアクセスグループを使用するように構成さ�
 
 リサーチ、エンジニアリング、プロジェクトリードの各チームのすべてのユーザーアカウントはサイトメンバーになることを目的としているため、Azure AD グループを ProjectX Members アクセスグループに追加するのが簡単です。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 分離したサイトを運用環境で作成および構成する準備ができたら、「[Deploy an isolated SharePoint Online team site](deploy-an-isolated-sharepoint-online-team-site.md)」を参照してください。
 

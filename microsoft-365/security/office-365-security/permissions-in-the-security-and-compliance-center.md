@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 description: 管理者は、Microsoft 365 のセキュリティ & コンプライアンスセンターで使用可能なアクセス許可について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1738438601712199b9a8e7365338d03e17621f0
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6dab91169b260ea3dae47034ec5c15ebeb2462a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171316"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202689"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのアクセス許可
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 セキュリティ & コンプライアンスセンターを使用すると、デバイス管理、データ損失防止、電子情報開示、保持などのコンプライアンスタスクを実行するユーザーにアクセス許可を付与することができます。 これらのユーザーは、明示的にアクセス権を付与されたタスクのみを実行できます。 セキュリティ & コンプライアンスセンターにアクセスするには、ユーザーはグローバル管理者であるか、1つ以上のセキュリティ & コンプライアンスセンターの役割グループのメンバーである必要があります。
 

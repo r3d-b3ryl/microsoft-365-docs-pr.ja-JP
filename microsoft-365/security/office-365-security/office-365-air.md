@@ -16,14 +16,17 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 0587c2d58410d7a0bc4a581f156a2cbfc06701a9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: adee64461d06b46f467682835a493a7eebe89aef
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949704"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202653"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Office 365 で自動調査と応答 (AIR) の使用を開始する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) Plan 2 には、強力な自動化された調査と応答 (航空) 機能が含まれており、セキュリティ運用チームの時間と労力を節約できます。 アラートがトリガーされると、その通知をレビュー、優先度設定、応答するためのセキュリティ運用チームが必要になります。 受信通知の音量を維持することは非常に困難です。 これを自動化することによって役立つことがあります。 AIR を使用すると、セキュリティ運用チームは、トリガーされた通知を失うことなく、優先度の高いタスクに集中できます。
 

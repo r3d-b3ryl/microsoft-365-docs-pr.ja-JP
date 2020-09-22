@@ -20,14 +20,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3b913b3d53abf8c46fbcc9e053f91f512864c9d8
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7049845b4c1b240c5ecc72b4f2ebac1acecfbaf6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315833"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203685"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点については https://security.microsoft.com/securescore 、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
 

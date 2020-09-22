@@ -21,14 +21,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 21Vianet が運営する Office 365 を使用した中国の管理者は、スタンドアロンの Exchange Online Protection (EOP) を使用してオンプレミスのメールボックスを保護する方法について説明します。
-ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: eb17b25db93aa50c6c390b5f79cdbd707762a0f9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307751"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202485"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>スタンドアロン EOP を使用して、中国のオンプレミスのメールボックスを保護する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > この記事は、中国で21Vianet が運営する Office 365 にのみ適用されます。

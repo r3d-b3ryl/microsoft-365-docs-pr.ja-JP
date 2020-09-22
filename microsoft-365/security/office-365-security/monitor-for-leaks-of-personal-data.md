@@ -18,14 +18,17 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 個人データの漏えいの監視に使用できる 3 つのツールについて説明します。
-ms.openlocfilehash: ef6e1b2edecc8ee8318f1b1e6228e9931b8c66c5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351887"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202701"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>個人情報の漏えいを監視する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 個人データの使用と転送を監視するために使用できるツールは数多くあります。このトピックでは、効果的な 3 つのツールについて説明します。
 

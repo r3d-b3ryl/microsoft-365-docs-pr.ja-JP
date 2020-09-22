@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Microsoft 365 の脅威保護について学習し、組織での使用方法を構成することができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547364"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202581"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Advanced Threat Protection の構成をチャンクに分割するクイックスタートガイドを次に示します。 Office 365 の脅威保護機能に慣れておらず、どこから始めるかがわからない場合や、 *実行*するのが最適な場合は、このガイドをチェックリストと開始点として使用します。
 
@@ -87,7 +90,7 @@ ATP ポリシーを構成するには、 [セキュリティ & コンプライ�
 
     - [ **一般的な添付ファイルの種類のフィルター** ] セクションで、 **[オン**] を選択します。
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 マルウェア対策ポリシーオプションの詳細については、「 [マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
@@ -143,7 +146,7 @@ ATP ポリシーを構成するには、 [セキュリティ & コンプライ�
 
    - [ **許可するリスト** ] セクションで、許可された送信者とドメインを確認 (または編集) します。
 
-4. **[保存]** をクリックします。
+4. [**保存**] をクリックします。
 
 スパム対策ポリシーオプションの詳細については、「 [CONFIGURE EOP」の「スパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
@@ -256,7 +259,7 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
    a. [ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。
 
-   b.  [ **ユーザー** ] フィールドは空のままにします。
+   b. [ **ユーザー** ] フィールドは空のままにします。
 
 6. [ **この通知を送信する** ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。
 

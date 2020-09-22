@@ -17,16 +17,19 @@ search.appverid:
 - MET150
 description: Microsoft Office 365 で不法な同意を与える攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b534d53166c09cf77993948cf1c448e21c8cd330
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652959"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203097"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不法な同意の付与を検出して修復する
 
-**概要** Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+**概要**  Office 365 で不法な同意を付与する攻撃を認識し、修復する方法について説明します。
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Office 365 における不正な同意の付与攻撃
 
@@ -35,7 +38,7 @@ ms.locfileid: "46652959"
 これらの攻撃は、情報を呼び出しているエンティティが人間ではなく、オートメーションであることを前提とする相互作用モデルを利用します。
 
 > [!IMPORTANT]
-> 現時点では、アプリからの不法な同意を得られる問題が発生していると思われますか。 Microsoft Cloud App Security (MCAS) には、OAuth アプリを検出、調査、修復するためのツールがあります。 この MCAS の記事には、[危険な OAuth アプリを調査](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)する方法の概要を示すチュートリアルがあります。 また、 [OAuth アプリポリシー](https://docs.microsoft.com/cloud-app-security/app-permission-policy)を設定して、アプリが要求するアクセス許可を調査し、ユーザーがこれらのアプリを承認して、これらのアクセス許可要求を幅広く承認または禁止することもできます。
+> 現時点では、アプリからの不法な同意を得られる問題が発生していると思われますか。 Microsoft Cloud App Security (MCAS) には、OAuth アプリを検出、調査、修復するためのツールがあります。 この MCAS の記事には、 [危険な OAuth アプリを調査](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)する方法の概要を示すチュートリアルがあります。 また、 [OAuth アプリポリシー](https://docs.microsoft.com/cloud-app-security/app-permission-policy) を設定して、アプリが要求するアクセス許可を調査し、ユーザーがこれらのアプリを承認して、これらのアクセス許可要求を幅広く承認または禁止することもできます。
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 のように、不法な同意を与える攻撃はどのようになりますか?
 
@@ -43,23 +46,23 @@ ms.locfileid: "46652959"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>この攻撃の兆候を見つけるための手順
 
-1. の**セキュリティ & コンプライアンスセンター** ] を開き <https://protection.office.com> ます。
+1. の **セキュリティ & コンプライアンスセンター** ] を開き <https://protection.office.com> ます。
 
-2. [**検索**] に移動して、[**監査ログの検索**] を選択します。
+2. [ **検索** ] に移動して、[ **監査ログの検索**] を選択します。
 
-3. 検索 (すべてのアクティビティとすべてのユーザー)、必要に応じて開始日と終了日を入力し、[**検索**] をクリックします。
+3. 検索 (すべてのアクティビティとすべてのユーザー)、必要に応じて開始日と終了日を入力し、[ **検索**] をクリックします。
 
-4. [**結果のフィルター** ] をクリックし、[**アクティビティ**] フィールドに「アプリケーションへの同意」と入力します。
+4. [ **結果のフィルター** ] をクリックし、[ **アクティビティ** ] フィールドに「アプリケーションへの同意」と入力します。
 
-5. 結果をクリックして、アクティビティの詳細を表示します。 [**詳細情報**] をクリックして、アクティビティの詳細を取得します。 IsAdminContent が True に設定されているかどうかを確認します。
+5. 結果をクリックして、アクティビティの詳細を表示します。 [ **詳細情報** ] をクリックして、アクティビティの詳細を取得します。 IsAdminContent が True に設定されているかどうかを確認します。
 
 > [!NOTE]
 >
 > イベントが発生した後に、対応する監査ログエントリが検索結果に表示されるようにするには、30分から最大24時間かかることがあります。
 >
-> 監査レコードが保持され、監査ログで検索可能な期間は、Microsoft 365 サブスクリプションによって異なり、具体的には特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「[監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+> 監査レコードが保持され、監査ログで検索可能な期間は、Microsoft 365 サブスクリプションによって異なり、具体的には特定のユーザーに割り当てられているライセンスの種類によって異なります。 詳細については、「 [監査ログ](../../compliance/search-the-audit-log-in-security-and-compliance.md)」を参照してください。
 >
-> この値が true の場合は、グローバル管理者のアクセス権を持つユーザーがデータへの広範なアクセス権を持っている可能性があることを示します。 これが予期しない場合は、[攻撃を確認](#how-to-confirm-an-attack)するための手順を実行します。
+> この値が true の場合は、グローバル管理者のアクセス権を持つユーザーがデータへの広範なアクセス権を持っている可能性があることを示します。 これが予期しない場合は、 [攻撃を確認](#how-to-confirm-an-attack)するための手順を実行します。
 
 ## <a name="how-to-confirm-an-attack"></a>攻撃を確認する方法
 
@@ -87,7 +90,7 @@ ms.locfileid: "46652959"
 
 4. 確認するユーザーを選択します。
 
-5. [**アプリケーション**] を選択します。
+5. [ **アプリケーション**] を選択します。
 
 これにより、ユーザーに割り当てられているアプリと、アプリケーションのアクセス許可が表示されます。
 
@@ -97,7 +100,7 @@ ms.locfileid: "46652959"
 
 ### <a name="steps-for-doing-this-with-powershell"></a>PowerShell を使用してこれを行うための手順
 
-不法同意付与攻撃を確認する最も簡単な方法は[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)を実行することです。これにより、テナント内のすべてのユーザーの oauth 承諾許可と oauth アプリがすべて、1つの .csv ファイルにダンプされます。
+不法同意付与攻撃を確認する最も簡単な方法は [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)を実行することです。これにより、テナント内のすべてのユーザーの oauth 承諾許可と oauth アプリがすべて、1つの .csv ファイルにダンプされます。
 
 #### <a name="pre-requisites"></a>前提条件
 
@@ -108,7 +111,7 @@ ms.locfileid: "46652959"
 - スクリプトを実行するコンピューターのローカル管理者。
 
 > [!IMPORTANT]
-> 管理アカウントでは、多要素認証を必要とすることを***強くお勧め***します。 このスクリプトは、MFA 認証をサポートします。
+> 管理アカウントでは、多要素認証を必要とすることを ***強くお勧め*** します。 このスクリプトは、MFA 認証をサポートします。
 
 1. スクリプトを実行するコンピューターに、ローカル管理者権限を使用してサインインします。
 
@@ -136,7 +139,7 @@ ms.locfileid: "46652959"
 
 ## <a name="determine-the-scope-of-the-attack"></a>攻撃の範囲を決定する
 
-アプリケーションアクセスのインベントリ処理が終了したら、**監査ログ**を確認して、違反の完全な範囲を特定します。 影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)で検索できます。
+アプリケーションアクセスのインベントリ処理が終了したら、 **監査ログ** を確認して、違反の完全な範囲を特定します。 影響を受けるユーザー、不法アプリケーションが組織にアクセスした時間枠、およびアプリのアクセス許可を検索します。 **監査ログ**は、 [Microsoft 365 セキュリティ/コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)で検索できます。
 
 > [!IMPORTANT]
 > この情報を取得するには、攻撃の前に、[管理者とユーザーの](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)[メールボックスの監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)とアクティビティの監査を有効にする必要があります。
@@ -149,11 +152,11 @@ ms.locfileid: "46652959"
 
   - **Azure Active Directory ユーザー**ブレードの影響を受けるユーザーに移動します。
 
-  - [**アプリケーション**] を選択します。
+  - [ **アプリケーション**] を選択します。
 
   - 違法アプリケーションを選択します。
 
-  - ドリルダウンで [**削除**] をクリックします。
+  - ドリルダウンで [ **削除** ] をクリックします。
 
 - PowerShell で OAuth 同意の付与を取り消すには、 [AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant)の手順に従ってください。
 
@@ -161,7 +164,7 @@ ms.locfileid: "46652959"
 
 - 影響を受けるアカウントのサインインを完全に無効にすることもできます。これにより、そのアカウントのデータに対するアプリのアクセスが無効になります。 これは、エンドユーザーの生産性を向上させるのには理想的ではありませんが、影響をすばやく抑えるために作業する場合は、実用的な短期的な修復になります。
 
-- テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。 これを行うには、[統合アプリをオンまたはオフ](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)にする手順に従ってください。
+- テナントのために統合アプリケーションをオフにすることができます。 これは、エンドユーザーがテナント全体に同意を付与する機能を無効にする重大な手順です。 これにより、ユーザーが悪意のあるアプリケーションへのアクセスを誤って許可するのを防ぐことができます。 これは、ユーザーがサードパーティ製のアプリケーションを使用して生産性を向上させることがひどくないため、強くお勧めしません。 これを行うには、 [統合アプリをオンまたはオフ](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)にする手順に従ってください。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
 
@@ -175,11 +178,11 @@ Microsoft 365 サブスクリプションには、データとユーザーを保
 
 ## <a name="see-also"></a>関連項目:
 
-- [[自分のアプリケーション] リスト内の予期しないアプリケーション](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application)は、データにアクセスするための予期しないアプリケーションがあることを認識した後に、管理者がさまざまなアクションを実行できるようにします。
+- [[自分のアプリケーション] リスト内の予期しないアプリケーション](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) は、データにアクセスするための予期しないアプリケーションがあることを認識した後に、管理者がさまざまなアクションを実行できるようにします。
 
-- [アプリケーションを Azure Active Directory と統合](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent)することは、同意とアクセス許可の概要です。
+- [アプリケーションを Azure Active Directory と統合](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) することは、同意とアクセス許可の概要です。
 
-- [アプリケーションの開発に関する問題](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map)さまざまな同意に関する記事へのリンクを提供します。
+- [アプリケーションの開発に関する問題](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) さまざまな同意に関する記事へのリンクを提供します。
 
 - 「 [Azure Active Directory のアプリケーションおよびサービスプリンシパルオブジェクト (AZURE AD)」で](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects)は、アプリケーションモデルにとって中核となるアプリケーションおよびサービスプリンシパルオブジェクトの概要を示します。
 

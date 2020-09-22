@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e790f4f415575323cfdd5fc15db41baa8b59c7f6
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650394"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203634"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -68,7 +71,7 @@ PATCH /api/incidents/{id}
 
 名前 | 種類 | 説明
 :---|:---|:---
-Authorization | 文字列 | ベアラー {token}。 **必須**。
+Authorization | String | ベアラー {token}。 **必須**。
 Content-Type | 文字列 | application/json. **必須**。
 
 
@@ -80,8 +83,8 @@ Content-Type | 文字列 | application/json. **必須**。
 プロパティ | 種類 | 説明
 :---|:---|:---
 status | 列挙 | 通知の現在の状態を指定します。 可能な値は ```Active``` 、、、 ```Resolved``` ```Redirected``` です。
-assignedTo | string | インシデントの所有者。
-classification | 列挙 | 通知の仕様。 可能な値は、```Unknown```、```FalsePositive```、```TruePositive``` です。
+assignedTo | 文字列 | インシデントの所有者。
+classification | 列挙 | 通知の仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。
 決定 | 列挙 | 通知の決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
 tags | 文字列リスト | インシデントタグのリスト。
 
@@ -113,5 +116,5 @@ tags | 文字列リスト | インシデントタグのリスト。
 
 
 ## <a name="related-topic"></a>関連トピック
-- [インシデント Api](api-incident.md)
+- [インシデント API](api-incident.md)
 - [インシデントを一覧表示する](api-list-incidents.md)

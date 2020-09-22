@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の修復アクションについて説明します。
-ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 2f1d6a1dccfaece6a52ec33fd86ea244fbb6c4fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804829"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202449"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の後に、保留中または完了した修復アクションを表示する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 ![AIR の調査処理 ページ](../../media/air-investigationactionspage.png)
@@ -36,17 +39,17 @@ ms.locfileid: "43804829"
 
 1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
 
-2. [**脅威管理** > の**調査**] に移動します。
+2. [**脅威管理**  >  の**調査**] に移動します。
 
 3. 調査の一覧で、[ **ID** ] 列のアイテムを選択します。 
 
-4. [**操作**] タブを選択します。
+4. [ **操作** ] タブを選択します。
 
 5. リストからアイテムを選択します。 (これにより、[承認] ボタンと [拒否] ボタンが有効になります)。
 
 6. 選択したアイテムの利用可能な情報を確認し、その操作を承認または拒否します。 
-   - **承認**は修復を開始することを許可します。
-   - **却下**にはその他のアクションはありません
+   - **承認** は修復を開始することを許可します。
+   - **却下** にはその他のアクションはありません
 
 ## <a name="next-steps"></a>次の手順
 

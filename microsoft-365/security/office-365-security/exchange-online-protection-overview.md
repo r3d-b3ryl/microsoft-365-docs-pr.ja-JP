@@ -14,14 +14,17 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Exchange Online Protection (EOP) によって、オンプレミスの電子メール組織がスタンドアロン環境およびハイブリッド環境で保護される方法について説明します。
-ms.openlocfilehash: b546b60e242d7f4f7fd4c4550bb61b94052ff4d1
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: f99954ec280eeb8c84e6183cea9ad0b9fee63507
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137020"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202905"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange Online Protection (EOP) は、組織をスパムやマルウェアから保護するために役立つクラウドベースのフィルタリングサービスです。 EOP は、Exchange Online メールボックスを使用するすべての Microsoft 365 組織に含まれています。 ただし、EOP は、次のオンプレミスのシナリオでも使用できます。
 

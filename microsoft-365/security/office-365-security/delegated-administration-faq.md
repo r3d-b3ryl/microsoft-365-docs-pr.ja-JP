@@ -14,14 +14,17 @@ ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、microsoft のパートナーと販売店のための Microsoft 365 で、委任された管理タスクについてよく寄せられる質問と回答を確認できます。
-ms.openlocfilehash: 3efadc8793778bfabe10922e8e29044747d60ad0
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 6729f276e6afea83568ca59d3bf48c08fcd837d2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866697"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203145"
 ---
 # <a name="delegated-administration-faq"></a>代理管理の FAQ
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 この記事では、microsoft パートナーおよび販売店で、Microsoft 365 での代理管理タスクについてよく寄せられる質問とその回答について説明します。 代理管理には、他のテナント (企業) の Exchange Online Protection (EOP) 設定を管理する機能が含まれています。
 

@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の送信スパムポリシーを表示、作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: ebeebe3486ad4dad926ad72509154904700e320a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2c7a48280487944352f4ee8afc1e7f0596186a3d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203301"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP で送信スパムフィルターを構成する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange Online メールボックスを使用していない場合、EOP を介して送信される送信電子メールメッセージは、スパムや通常の送信アクティビティに対して自動的にチェックされます。365
 

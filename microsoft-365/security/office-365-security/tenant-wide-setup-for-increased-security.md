@@ -1,5 +1,5 @@
 ---
-title: セキュリティ強化のために Microsoft 365 テナントを構成する
+title: 'セキュリティ強化のために、Office 365 テナントを構成する '
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -19,14 +19,17 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: このトピックでは、Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について手順を追って説明します。
-ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 72040469f802c2cb5a4fac132ff1c3cd8999e124
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308221"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202021"
 ---
-# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために Microsoft 365 テナントを構成する
+# <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 このトピックでは、Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について手順を追って説明します。 セキュリティのニーズによっては、より多くのセキュリティを必要とする場合があります。 これらの推奨事項を出発点として使用します。
 

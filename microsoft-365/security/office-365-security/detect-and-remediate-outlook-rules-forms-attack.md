@@ -17,16 +17,19 @@ search.appverid:
 - MET150
 description: Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 7d879d34a925354084e08d82f5e1724725c18825
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811052"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203073"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlook のルールおよびカスタムフォームインジェクション攻撃を検出および修復する
 
-**概要**Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+**概要** Office 365 で Outlook のルールとユーザー設定フォームのインジェクション攻撃を認識して修復する方法について説明します。
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Outlook のルールとユーザー設定フォームの挿入攻撃とは
 
@@ -101,27 +104,27 @@ ms.locfileid: "44811052"
 
 1. ユーザーとしてユーザーの Outlook クライアントを開きます。 ユーザーは、自分のメールボックスのルールを調べるためにヘルプを必要とする場合があります。
 
-2. Outlook でルールインターフェイスを開く方法の手順については、「[ルールを使用してメールメッセージを管理](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)する」の記事を参照してください。
+2. Outlook でルールインターフェイスを開く方法の手順については、「 [ルールを使用してメールメッセージを管理](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) する」の記事を参照してください。
 
 3. ユーザーが作成しなかったルール、または不審な名前のルールがないかどうかを確認します。
 
 4. ルールの説明で、を起動して、アプリケーションまたはを参照するルールの処理を確認します。EXE、。ZIP ファイルを開くか、URL を起動します。
 
-5. Outlook プロセス ID の使用を開始する新しいプロセスを探します。 「[プロセス ID を検索](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id)する」を参照してください。
+5. Outlook プロセス ID の使用を開始する新しいプロセスを探します。 「 [プロセス ID を検索](https://docs.microsoft.com/windows-hardware/drivers/debugger/finding-the-process-id)する」を参照してください。
 
 ### <a name="steps-to-confirm-the-forms-attack-using-the-outlook-client"></a>Outlook クライアントを使用してフォームの攻撃を確認する手順
 
 1. ユーザーとしてユーザーの Outlook クライアントを開きます。
 
-2. の手順に従い、ユーザーのバージョンの Outlook の [[開発] タブを表示](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45)します。
+2. の手順に従い、ユーザーのバージョンの Outlook の [ [開発] タブを表示](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) します。
 
-3. Outlook で [現在表示されている開発] タブを開き、[**フォームのデザイン**] をクリックします。
+3. Outlook で [現在表示されている開発] タブを開き、[ **フォームのデザイン**] をクリックします。
 
 4. [**検索**先] の一覧から [**受信トレイ**] を選択します。 ユーザー設定フォームを検索します。 ユーザー設定フォームがある場合は、ユーザー設定フォームを使用するだけで十分な場合があります。
 
 5. 特に非表示に設定されたカスタムフォームを調査します。
 
-6. 任意のユーザー設定フォームを開き、**フォーム**グループの [**コードの表示**] をクリックして、フォームが読み込まれたときに実行される内容を確認します。
+6. 任意のユーザー設定フォームを開き、 **フォーム** グループの [ **コードの表示** ] をクリックして、フォームが読み込まれたときに実行される内容を確認します。
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>PowerShell を使用してルールとフォームの攻撃を確認する手順
 
@@ -159,13 +162,13 @@ ms.locfileid: "44811052"
 
 1. ユーザーが Outlook で使用したすべてのデバイスを特定します。 これらはすべて、潜在的なマルウェアを駆除する必要があります。 すべてのデバイスがクリーニングされるまで、ユーザーはサインオンして電子メールを使用できません。
 
-2. 「各デバイスの[ルールを削除する](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f)」の手順に従います。
+2. 「各デバイスの [ルールを削除する](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) 」の手順に従います。
 
 3. 他のマルウェアが存在することが不明な場合は、デバイス上のすべてのソフトウェアを書式設定して再インストールすることができます。 モバイルデバイスでは、製造元の手順に従って、デバイスを出荷時イメージにリセットできます。
 
 4. 最新バージョンの Outlook をインストールします。 Outlook の現在のバージョンでは、この両方の種類の攻撃が既定でブロックされることに注意してください。
 
-5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) して、MFA がまだ有効になっていない場合[のユーザーのセットアップ多要素認証](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
+5. メールボックスのすべてのオフラインコピーが削除されたら、ユーザーのパスワードをリセット (高品質のパスワードを使用) して、MFA がまだ有効になっていない場合 [のユーザーのセットアップ多要素認証](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) の手順に従います。 これにより、ユーザーの資格情報が他の手段 (フィッシングやパスワードの再利用など) で公開されることがなくなります。
 
 ### <a name="using-powershell"></a>PowerShell の使用
 
@@ -175,27 +178,27 @@ ms.locfileid: "44811052"
 
 1. リモート PowerShell を使用して Exchange サーバーに接続します。 [「リモート PowerShell を使用して Exchange サーバーに接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)」の手順を実行します。
 
-2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除する場合は、コマンドレットの[削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)を使用します。
+2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除する場合は、コマンドレットの [削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) を使用します。
 
-3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)します。
+3. 詳細な調査のためにルールとその内容を保持する場合は [、コマンドレットを使用](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) します。
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online のメールボックスの手順
 
 1. [「PowerShell を使用して Exchange Online に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」の手順を実行します。
 
-2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除するには、 [[受信トレイルールの削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)] コマンドレットを使用します。
+2. 1つのルール、複数のルール、またはメールボックスからすべてのルールを完全に削除するには、 [[受信トレイルールの削除](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) ] コマンドレットを使用します。
 
-3. 詳細な調査のためにルールとその内容を保持する場合は[、コマンドレットを使用](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule)します。
+3. 詳細な調査のためにルールとその内容を保持する場合は [、コマンドレットを使用](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) します。
 
 ## <a name="how-to-minimize-future-attacks"></a>今後の攻撃を最小限に抑える方法
 
 ### <a name="first-protect-your-accounts"></a>最初: アカウントを保護する
 
-ルールとフォームのエクスプロイトは、攻撃者がユーザーのアカウントのいずれかを盗んだ後、または侵害した後にのみ使用されます。 そのため、これらの悪用を組織に対して使用できないようにするための最初の手順として、ユーザーアカウントを積極的に保護することが挙げられます。 アカウントが侵害される最も一般的な方法には、フィッシングまたは[パスワード spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻撃があります。
+ルールとフォームのエクスプロイトは、攻撃者がユーザーのアカウントのいずれかを盗んだ後、または侵害した後にのみ使用されます。 そのため、これらの悪用を組織に対して使用できないようにするための最初の手順として、ユーザーアカウントを積極的に保護することが挙げられます。 アカウントが侵害される最も一般的な方法には、フィッシングまたは [パスワード spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) 攻撃があります。
 
-ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、[ユーザーに多要素認証を設定](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)することです。 次のことも実行する必要があります。
+ユーザーアカウントや特に管理者アカウントを保護する最善の方法は、 [ユーザーに多要素認証を設定](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)することです。 次のことも実行する必要があります。
 
-- ユーザーアカウントがどのようにアクセスされ、[使用されるかを](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)監視します。 最初の違反を防ぐことはできませんが、期間を短縮して、違反が早く検出された場合の影響を短縮することができます。 これらの[Office 365 Cloud App Security ポリシー](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)を使用して、アカウントを監視し、異常なアクティビティに関する警告を表示することができます。
+- ユーザーアカウントがどのようにアクセスされ、 [使用されるかを](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)監視します。 最初の違反を防ぐことはできませんが、期間を短縮して、違反が早く検出された場合の影響を短縮することができます。 これらの [Office 365 Cloud App Security ポリシー](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) を使用して、アカウントを監視し、異常なアクティビティに関する警告を表示することができます。
 
   - [**失敗したログイン試行回数**]: このポリシーは、環境をプロファイルし、ユーザーが1回のセッションで複数の失敗したログインアクティビティを実行したときに、違反が発生したことを示す通知をトリガーします。
 
@@ -227,9 +230,9 @@ Outlook 2013 および2016クライアントのパッチバージョンは次の
 
 [64 ビットバージョンの Windows を使用してシステムレジストリを表示する方法](https://support.microsoft.com/help/305097)についての情報を使用して、"Start Application" がレジストリ内の上書きによって再度有効になっているかどうかを確認できます。 次のサブキーをチェックします。
 
-- **Outlook 2016**:`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
+- **Outlook 2016**: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
-- **Outlook 2013**:`HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
+- **Outlook 2013**: `HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Outlook\Security\`
 
 キー EnableUnsafeClientMailRules を探します。 これが存在し、1に設定されている場合は、Outlook セキュリティパッチが上書きされ、コンピューターはフォーム/ルールの攻撃に対して脆弱になります。 値が0の場合、"アプリケーションを起動します" アクションは無効になります。 更新され、パッチされたバージョンの Outlook がインストールされていて、このレジストリキーが存在しない場合、システムはこれらの攻撃に対して脆弱ではありません。
 

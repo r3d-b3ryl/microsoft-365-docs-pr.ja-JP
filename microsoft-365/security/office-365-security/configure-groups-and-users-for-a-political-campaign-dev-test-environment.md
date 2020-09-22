@@ -18,14 +18,17 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: '要約: 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7282659399d2541b50c43dffc9fc8690baecd803
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308441"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203361"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>選挙運動の開発/テスト環境用にグループとユーザーを構成する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **要約:** 選挙運動の開発/テスト環境向けのユーザーとグループで Office 365 と Enterprise Mobility + Security (EMS) の試用版サブスクリプションを作成します。
 

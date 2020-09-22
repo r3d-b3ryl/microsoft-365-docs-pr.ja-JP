@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: このステップごとの展開ガイドを使用して、Microsoft Office 365 で分離した SharePoint Online チームサイトを作成して構成します。
-ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308417"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203133"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>分離した SharePoint Online チーム サイトの展開
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **概要:** ステップごとの手順を使用して、分離した新しい SharePoint Online チーム サイトを展開します。
   

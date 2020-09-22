@@ -1,6 +1,6 @@
 ---
-title: サポートされている Microsoft 脅威保護 Api
-description: サポートされている Microsoft 脅威保護 Api
+title: サポートされている Microsoft Threat Protection API
+description: サポートされている Microsoft Threat Protection API
 keywords: MTP、Api、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 49fa182a6142748ca7769411fe74389f365ba75f
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650396"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203697"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>サポートされている Microsoft 脅威保護 Api 
+# <a name="supported-microsoft-threat-protection-apis"></a>サポートされている Microsoft Threat Protection API 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **適用対象:**
 - Microsoft Threat Protection
 
@@ -52,5 +55,5 @@ ms.locfileid: "47650396"
 
 トピック | 説明
 :---|:---
-[高度な検索 API](api-advanced-hunting.md) | API から高度な検索クエリを実行します。
-[インシデント Api](api-incident.md) | インシデント関連の API 呼び出しを実行します。インシデントの一覧表示、インシデントの更新など。
+[高度な追及 API](api-advanced-hunting.md) | API から高度な検索クエリを実行します。
+[インシデント API](api-incident.md) | インシデント関連の API 呼び出しを実行します。インシデントの一覧表示、インシデントの更新など。

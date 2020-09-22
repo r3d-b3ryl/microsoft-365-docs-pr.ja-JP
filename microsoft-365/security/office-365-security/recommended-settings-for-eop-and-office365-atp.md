@@ -16,14 +16,17 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 1022accb992fbc0aee92b8da97f9d8a48cbe35f2
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405385"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202713"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のある電子メールが従業員の受信トレイに届かないようにするために使用します。 しかし、毎日新しい高度な攻撃が発生すると、多くの場合、保護が強化されます。 **Office 365 Advanced Threat Protection (ATP)** ATP プラン1または ATP Plan 2 には、管理者によるセキュリティ、統制、調査の層をさらに強化する追加機能が含まれています。
 
@@ -265,7 +268,7 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |**マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合は、上記の選択を適用します。** <br/><br/> _ActionOnError_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - **Exchange メールフロー/Exchange トランスポートルール**のベストプラクティスについては、こちらを参照してください。 詳細については、 [この記事](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) を参照してください。
 

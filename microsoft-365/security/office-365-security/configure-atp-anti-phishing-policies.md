@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 Advanced Threat Protection (Office 365 ATP) を使用して組織で使用できる高度なフィッシング対策ポリシーを作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 83f100cab12c91af1405ffc5f386ff51028710a9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a4b5dc5beac23e267f6b0e5070d91301b589ad4c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547654"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203385"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>ATP フィッシング詐欺対策ポリシーを設定する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ATP のフィッシング対策ポリシーは、 [Office 365 Advanced Threat Protection](office-365-atp.md)の一部です。 ATP のフィッシング対策ポリシーは、悪意のある偽造ベースのフィッシング攻撃やその他の種類のフィッシング攻撃から組織を保護するのに役立ちます。 Exchange Online Protection (EOP) と ATP のフィッシング対策ポリシーにおけるフィッシング対策ポリシーの相違点の詳細については、「 [フィッシング対策保護](anti-phishing-protection.md)」を参照してください。
 
@@ -147,7 +150,7 @@ ATP のフィッシング対策ポリシーを変更するには、次の手順�
    - **名前**
    - **説明**
    - **適用先**
-   - **設定の確認**
+   - **設定を確認する**
 
    完了したら、[任意のページに **保存** ] をクリックします。
 

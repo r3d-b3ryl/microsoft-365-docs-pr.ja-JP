@@ -19,16 +19,19 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) のフィッシング対策保護機能について学ぶことができます。
-ms.openlocfilehash: f6d864a7f9995de64f3714dffcd1838b2480a627
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 5607a3bf566fabccf3ae55726aca9eefcff9c062
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867177"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202413"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 でのフィッシング対策保護
 
-*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 以下に例を示します。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 例:
 
 - **スピアーフィッシング** は、対象の受信者に特化した、優先されるカスタマイズされたコンテンツを使用します (通常は、受信者が攻撃者による偵察後に行います)。
 

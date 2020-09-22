@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) の送信スパムコントロール、および大量のメールを送信する必要がある場合の対処方法について学ぶことができます。
-ms.openlocfilehash: 99502e7fb55419dedb4d0f7d4a7e6c4591eff859
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1097b768b955f2fa99c552ceda7564bef33a1aa7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208925"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202389"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>EOP での送信スパム保護
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange online または exchange online メールボックスを使用しない exchange online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、送信スパムを真剣に管理しています。 故意または誤ってスパムを組織から送信したお客様は、サービス全体の評判を低下させ、他のお客様の電子メール配信に影響を与える可能性があります。
 
@@ -34,13 +37,13 @@ Exchange online または exchange online メールボックスを使用しな�
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>管理者が送信スパムを制御する方法
 
-- **組み込み通知の使用**: ユーザーが[サービス](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)または[送信スパムポリシー](configure-the-outbound-spam-policy.md)の制限を超え、電子メールの送信が制限されている場合、ユーザーが電子メールを**送信**できないようにする既定の警告ポリシーは、電子メール通知を " **tenantadmins** (**グローバル管理者**)" グループのメンバーに送信します。 これらの通知を受信するユーザーを構成するには、「制限され[たユーザーの通知設定を確認](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)する」を参照してください。 また、電子メールの送信の**制限**を指定した既定の警告ポリシーと、電子メールの送信**パターンが検出さ**れた場合は、 **tenantadmins** (**Global admins**) グループのメンバーに電子メール通知が送信されます。 アラート ポリシーの詳細については、「[セキュリティ/コンプライアンス センターでのアラート ポリシー](../../compliance/alert-policies.md)」を参照してください。
+- **組み込み通知の使用**: ユーザーが [サービス](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) または [送信スパムポリシー](configure-the-outbound-spam-policy.md) の制限を超え、電子メールの送信が制限されている場合、ユーザーが電子メールを **送信** できないようにする既定の警告ポリシーは、電子メール通知を " **tenantadmins** (**グローバル管理者**)" グループのメンバーに送信します。 これらの通知を受信するユーザーを構成するには、「制限され [たユーザーの通知設定を確認](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)する」を参照してください。 また、電子メールの送信の **制限** を指定した既定の警告ポリシーと、電子メールの送信 **パターンが検出さ** れた場合は、 **tenantadmins** (**Global admins**) グループのメンバーに電子メール通知が送信されます。 アラート ポリシーの詳細については、「[セキュリティ/コンプライアンス センターでのアラート ポリシー](../../compliance/alert-policies.md)」を参照してください。
 
 - **サードパーティの電子メールプロバイダーからスパムの苦情を確認**する: Outlook.com、YAHOO、AOL などの多くの電子メールサービスは、フィードバックループを提供します。このような場合、サービスのユーザーが Microsoft 365 からスパムとして電子メールをマークすると、メッセージがパッケージ化され、レビューのために弊社に送り戻されます。 Outlook.com の送信者のサポートの詳細については、「」を参照 <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> してください。
 
 ## <a name="how-eop-controls-outbound-spam"></a>EOP が送信スパムを制御する方法
 
-- **送信メールトラフィックの分離**: サービスを通じて送信されたすべての送信メッセージがスパムでスキャンされます。 メッセージがスパムであると判断された場合、そのメッセージは_高リスク配信プール_という、信頼度の低いセカンダリ IP アドレスプールから配信されます。 詳細については、「[送信メッセージ用の高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。
+- **送信メールトラフィックの分離**: サービスを通じて送信されたすべての送信メッセージがスパムでスキャンされます。 メッセージがスパムであると判断された場合、そのメッセージは _高リスク配信プール_という、信頼度の低いセカンダリ IP アドレスプールから配信されます。 詳細については、「[送信メッセージにおける危険度の高い配信プール](high-risk-delivery-pool-for-outbound-messages.md)」を参照してください。
 
 - **送信元 ip アドレスの評価**: Microsoft 365 では、さまざまなサードパーティの ip 禁止一覧を照会します。 送信電子メールに使用する IP アドレスのいずれかがこれらのリストに表示される場合は、アラートが生成されます。 これにより、スパムによる評価が低下した場合に迅速に対応することができます。 通知が生成されると、ブロックリストから IP アドレスの削除 (delisted) を取得する方法の概要を示す内部ドキュメントがあります。
 
@@ -48,7 +51,7 @@ Exchange online または exchange online メールボックスを使用しな�
 
 - **送信するメール**の数が速すぎるアカウントを無効にする <sup>\*</sup> : スパムとしてマークされているメッセージを検索する制限に加えて、送信メッセージの verdict に関係なく、送信メッセージの制限に達した場合にアカウントをブロックする制限もあります。 セキュリティ侵害されたアカウントは、スパムフィルターによって欠落したゼロ (以前に認識されていない) スパムを送信することができます。 正当な大量のメーリングキャンペーンとスパムキャンペーンを識別するのは困難になる可能性があるため、これらの制限は、潜在的な損害を最小限に抑えるために役立ちます。
 
-<sup>\*</sup>スパム送信者がシステムをゲームできないように正確な制限を通知するわけではありません。そのため、必要に応じて制限を増減させることができます。 この制限は、平均のビジネスユーザーがそれを超えないようにするために十分であり、スパム送信者による損害を抑えるために十分な余裕がありません。
+<sup>\*</sup> スパム送信者がシステムをゲームできないように正確な制限を通知するわけではありません。そのため、必要に応じて制限を増減させることができます。 この制限は、平均のビジネスユーザーがそれを超えないようにするために十分であり、スパム送信者による損害を抑えるために十分な余裕がありません。
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>EOP を介して大量のメールを送信することを希望するお客様向けの推奨事項
 

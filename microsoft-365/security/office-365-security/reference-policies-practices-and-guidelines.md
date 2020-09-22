@@ -16,14 +16,17 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft は、さまざまなポリシー、手順を開発し、業界のベストプラクティスをいくつか採用して、ユーザーを不適切な迷惑メールや悪意のあるメールから保護しています。
-ms.openlocfilehash: 5b815678fc7462df5448447624d6f7c0c63d6eb6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949658"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202377"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>リファレンス: ポリシー、プラクティス、ガイドライン
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Microsoft は、Web 上におけるユーザー エクスペリエンスの信頼性を高めるための支援に取り組んでいます。 そのため、さまざまなポリシー、手順を作成し、業界のいくつものベスト プラクティスを採用して、ユーザーが不適切で望ましくない、または悪意のあるメールから保護されるよう取り組んできました。 送信者は、ユーザーに電子メールを送信しようとしていることを確認し、この記事のガイダンスに従って、配信の問題が発生しないようにする必要があります。
 

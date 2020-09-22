@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection のキャンペーン ビューについて説明します。
-ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173310"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203481"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP のキャンペーン ビュー
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [キャンペーンビュー] は、Advanced Threat Protection (ATP) プラン2の機能です (たとえば、Microsoft 365 E5 や、ATP プラン2アドオンがある組織など)。 セキュリティ & コンプライアンスセンターの [キャンペーン] ビューサービスのフィッシング攻撃を特定して分類します。 キャンペーン ビューは、次の目的に使用できます。
 

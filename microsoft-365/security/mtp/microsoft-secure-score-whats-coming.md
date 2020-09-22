@@ -17,20 +17,23 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: c6643b30327b7f362c4649c2be1b1eea81ff3523
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289665"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203633"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコア
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 弊社では、セキュリティ上の姿勢をより良いものにするために、近日中に変更を行っており、利便性を向上 [さ](microsoft-secure-score.md) せています。 スコアと可能な最大スコアは変わる可能性があります。
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-### <a name="september-2020"></a>2020年9月
+### <a name="september-2020"></a>2020 年 9 月
 - 変更は計画されていません
 
 ## <a name="related-resources"></a>関連リソース

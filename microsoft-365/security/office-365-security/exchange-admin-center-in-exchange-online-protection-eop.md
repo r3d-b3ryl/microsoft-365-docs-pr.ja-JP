@@ -16,14 +16,17 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: スタンドアロン Exchange Online Protection (EOP) の web 管理インターフェイスについて説明します。
-ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652911"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202953"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>スタンドアロン EOP の Exchange 管理者センター
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange 管理センター (EAC) は、スタンドアロンの Exchange Online Protection (EOP) 用の web ベースの管理コンソールです。
 
@@ -35,15 +38,15 @@ Exchange 管理センター (EAC) は、スタンドアロンの Exchange Online
 
 - **Microsoft 365 管理センターから**:
 
-  1. に移動し <https://admin.microsoft.com> 、[**すべて表示**] をクリックします。
+  1. に移動し <https://admin.microsoft.com> 、[ **すべて表示**] をクリックします。
 
      ![Microsoft 365 管理センターで [すべて表示] をクリックする](../../media/m365-center-show-all.png)
 
-  2. 表示される [**管理センター** ] セクションで、[**すべての管理センター**] をクリックします。
+  2. 表示される [ **管理センター** ] セクションで、[ **すべての管理センター**] をクリックします。
 
      ![Microsoft 365 管理センターの [すべての管理センター] をクリックします。](../../media/m365-center-select-all-admin-centers.png)
 
-  3. 表示される [**すべての管理センター** ] ページで、[ **Exchange Online Protection**] をクリックします。
+  3. 表示される [ **すべての管理センター** ] ページで、[ **Exchange Online Protection**] をクリックします。
 
 - に直接移動 `https://admin.protection.outlook.com/ecp/` します。
 
@@ -66,11 +69,11 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 - **保護**: これにより、マルウェア対策ポリシー、既定の接続フィルターポリシー、および dkim を管理できます。
 
   > [!NOTE]
-  > セキュリティ & コンプライアンスセンターで、マルウェア対策ポリシーと既定の接続フィルターポリシーを管理する必要があります。 詳細については、「 [EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」および「 [configure CONNECTION filtering in EOP](configure-the-connection-filter-policy.md)」を参照してください。
+  > セキュリティ & コンプライアンスセンターで、マルウェア対策ポリシーと既定の接続フィルターポリシーを管理する必要があります。 詳細については、「 [EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md) 」および「 [configure CONNECTION filtering in EOP](configure-the-connection-filter-policy.md)」を参照してください。
 
 - **メールフロー**: メールフロールール (トランスポートルールとも呼ばれます)、承認済みドメイン、コネクタ、および [メッセージ追跡の実行] に移動できる場所を管理します。
 
-- **ハイブリッド**:[ハイブリッド構成ウィザード](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)を実行して、 [Exchange Online の PowerShell モジュール](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)をインストールすることができます。
+- **ハイブリッド**: [ハイブリッド構成ウィザード](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)を実行して、 [Exchange Online の PowerShell モジュール](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)をインストールすることができます。
 
 ### <a name="tabs"></a>タブ
 
@@ -82,7 +85,7 @@ EAC で実行する多くのタスクで、これがナビゲーションの第 
 
 ****
 
-|Icon|Name|アクション|
+|Icon|名前|Action|
 |---|---|---|
 |![[追加] アイコン](../../media/ITPro-EAC-AddIcon.gif)|追加、新規|このアイコンを使用して、新しいオブジェクトを作成します。これらの一部のアイコンには下方向キーが関連付けられており、これをクリックして、作成可能な追加のオブジェクトを表示できます。|
 |![編集アイコン](../../media/ITPro-EAC-EditIcon.gif)|編集|このアイコンを使用してオブジェクトを編集します。|
