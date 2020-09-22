@@ -19,60 +19,63 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 50ca606a6bef9cec528b6b0ef78142f050e37c51
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844908"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195493"
 ---
-# <a name="microsoft-threat-protection-prerequisites"></a><span data-ttu-id="bdcb9-104">Microsoft Threat Protection の前提条件</span><span class="sxs-lookup"><span data-stu-id="bdcb9-104">Microsoft Threat Protection prerequisites</span></span>
+# <a name="microsoft-threat-protection-prerequisites"></a><span data-ttu-id="dadb9-104">Microsoft Threat Protection の前提条件</span><span class="sxs-lookup"><span data-stu-id="dadb9-104">Microsoft Threat Protection prerequisites</span></span>
 
-<span data-ttu-id="bdcb9-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="bdcb9-105">**Applies to:**</span></span>
-- <span data-ttu-id="bdcb9-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="bdcb9-106">Microsoft Threat Protection</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="bdcb9-107">プロビジョニングおよび[Microsoft の脅威保護](microsoft-threat-protection.md)の使用に関するライセンスおよびその他の要件について説明します。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-107">Learn about licensing and other requirements for provisioning and using [Microsoft Threat Protection](microsoft-threat-protection.md).</span></span>
 
-## <a name="licensing-requirements"></a><span data-ttu-id="bdcb9-108">ライセンスの要件</span><span class="sxs-lookup"><span data-stu-id="bdcb9-108">Licensing requirements</span></span>
-<span data-ttu-id="bdcb9-109">これらのライセンスのいずれかを使用すると、追加のコストを必要とせずに Microsoft 365 セキュリティセンターの Microsoft の脅威保護機能にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-109">Any of these licenses gives you access to Microsoft Threat Protection features in Microsoft 365 security center without additional cost:</span></span>
+<span data-ttu-id="dadb9-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="dadb9-105">**Applies to:**</span></span>
+- <span data-ttu-id="dadb9-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="dadb9-106">Microsoft Threat Protection</span></span>
 
-- <span data-ttu-id="bdcb9-110">Microsoft 365 E5 または A5</span><span class="sxs-lookup"><span data-stu-id="bdcb9-110">Microsoft 365 E5 or A5</span></span>
-- <span data-ttu-id="bdcb9-111">Microsoft 365 E5 セキュリティまたは A5 セキュリティ</span><span class="sxs-lookup"><span data-stu-id="bdcb9-111">Microsoft 365 E5 Security or A5 Security</span></span>
-- <span data-ttu-id="bdcb9-112">Windows 10 Enterprise E5 または A5</span><span class="sxs-lookup"><span data-stu-id="bdcb9-112">Windows 10 Enterprise E5 or A5</span></span>
-- <span data-ttu-id="bdcb9-113">Enterprise Mobility + Security (EMS) E5 または A5</span><span class="sxs-lookup"><span data-stu-id="bdcb9-113">Enterprise Mobility + Security (EMS) E5 or A5</span></span> 
-- <span data-ttu-id="bdcb9-114">Office 365 E5 または A5</span><span class="sxs-lookup"><span data-stu-id="bdcb9-114">Office 365 E5 or A5</span></span>
-- <span data-ttu-id="bdcb9-115">Microsoft Defender Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="bdcb9-115">Microsoft Defender Advanced Threat Protection</span></span>
-- <span data-ttu-id="bdcb9-116">Azure Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="bdcb9-116">Azure Advanced Threat Protection</span></span> 
-- <span data-ttu-id="bdcb9-117">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="bdcb9-117">Microsoft Cloud App Security</span></span>
-- <span data-ttu-id="bdcb9-118">Office 365 Advanced Threat Protection (プラン 2)</span><span class="sxs-lookup"><span data-stu-id="bdcb9-118">Office 365 Advanced Threat Protection (Plan 2)</span></span>
+<span data-ttu-id="dadb9-107">プロビジョニングおよび [Microsoft の脅威保護](microsoft-threat-protection.md)の使用に関するライセンスおよびその他の要件について説明します。</span><span class="sxs-lookup"><span data-stu-id="dadb9-107">Learn about licensing and other requirements for provisioning and using [Microsoft Threat Protection](microsoft-threat-protection.md).</span></span>
+
+## <a name="licensing-requirements"></a><span data-ttu-id="dadb9-108">ライセンスの要件</span><span class="sxs-lookup"><span data-stu-id="dadb9-108">Licensing requirements</span></span>
+<span data-ttu-id="dadb9-109">これらのライセンスのいずれかを使用すると、追加のコストを必要とせずに Microsoft 365 セキュリティセンターの Microsoft の脅威保護機能にアクセスできます。</span><span class="sxs-lookup"><span data-stu-id="dadb9-109">Any of these licenses gives you access to Microsoft Threat Protection features in Microsoft 365 security center without additional cost:</span></span>
+
+- <span data-ttu-id="dadb9-110">Microsoft 365 E5 または A5</span><span class="sxs-lookup"><span data-stu-id="dadb9-110">Microsoft 365 E5 or A5</span></span>
+- <span data-ttu-id="dadb9-111">Microsoft 365 E5 セキュリティまたは A5 セキュリティ</span><span class="sxs-lookup"><span data-stu-id="dadb9-111">Microsoft 365 E5 Security or A5 Security</span></span>
+- <span data-ttu-id="dadb9-112">Windows 10 Enterprise E5 または A5</span><span class="sxs-lookup"><span data-stu-id="dadb9-112">Windows 10 Enterprise E5 or A5</span></span>
+- <span data-ttu-id="dadb9-113">Enterprise Mobility + Security (EMS) E5 または A5</span><span class="sxs-lookup"><span data-stu-id="dadb9-113">Enterprise Mobility + Security (EMS) E5 or A5</span></span> 
+- <span data-ttu-id="dadb9-114">Office 365 E5 または A5</span><span class="sxs-lookup"><span data-stu-id="dadb9-114">Office 365 E5 or A5</span></span>
+- <span data-ttu-id="dadb9-115">Microsoft Defender Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="dadb9-115">Microsoft Defender Advanced Threat Protection</span></span>
+- <span data-ttu-id="dadb9-116">Azure Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="dadb9-116">Azure Advanced Threat Protection</span></span> 
+- <span data-ttu-id="dadb9-117">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="dadb9-117">Microsoft Cloud App Security</span></span>
+- <span data-ttu-id="dadb9-118">Office 365 Advanced Threat Protection (プラン 2)</span><span class="sxs-lookup"><span data-stu-id="dadb9-118">Office 365 Advanced Threat Protection (Plan 2)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bdcb9-119">Office 365 の試用版ライセンスは現在、Microsoft の脅威保護へのアクセスを提供していません。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-119">Trial licenses for Office 365 currently do not provide access to Microsoft Threat Protection.</span></span>
+> <span data-ttu-id="dadb9-119">Office 365 の試用版ライセンスは現在、Microsoft の脅威保護へのアクセスを提供していません。</span><span class="sxs-lookup"><span data-stu-id="dadb9-119">Trial licenses for Office 365 currently do not provide access to Microsoft Threat Protection.</span></span>
 
-<span data-ttu-id="bdcb9-120">詳細については、 [Microsoft 365 Enterprise service プランを参照して](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)ください。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-120">For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).</span></span>
+<span data-ttu-id="dadb9-120">詳細については、 [Microsoft 365 Enterprise service プランを参照して](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)ください。</span><span class="sxs-lookup"><span data-stu-id="dadb9-120">For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).</span></span>
 
-> <span data-ttu-id="bdcb9-121">まだライセンスを持っていませんか?</span><span class="sxs-lookup"><span data-stu-id="bdcb9-121">Don't have license yet?</span></span> [<span data-ttu-id="bdcb9-122">Microsoft 365 サブスクリプションを試用する/購入する</span><span class="sxs-lookup"><span data-stu-id="bdcb9-122">Try or buy a Microsoft 365 subscription</span></span>](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> <span data-ttu-id="dadb9-121">まだライセンスを持っていませんか?</span><span class="sxs-lookup"><span data-stu-id="dadb9-121">Don't have license yet?</span></span> [<span data-ttu-id="dadb9-122">Microsoft 365 サブスクリプションを試用する/購入する</span><span class="sxs-lookup"><span data-stu-id="dadb9-122">Try or buy a Microsoft 365 subscription</span></span>](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
-### <a name="check-your-existing--licenses"></a><span data-ttu-id="bdcb9-123">既存のライセンスを確認する</span><span class="sxs-lookup"><span data-stu-id="bdcb9-123">Check your existing  licenses</span></span>
-<span data-ttu-id="bdcb9-124">Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com/)) に移動して、既存のライセンスを表示します。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-124">Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses.</span></span> <span data-ttu-id="bdcb9-125">管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-125">In the admin center, go to **Billing** > **Licenses**.</span></span>
+### <a name="check-your-existing--licenses"></a><span data-ttu-id="dadb9-123">既存のライセンスを確認する</span><span class="sxs-lookup"><span data-stu-id="dadb9-123">Check your existing  licenses</span></span>
+<span data-ttu-id="dadb9-124">Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com/)) に移動して、既存のライセンスを表示します。</span><span class="sxs-lookup"><span data-stu-id="dadb9-124">Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses.</span></span> <span data-ttu-id="dadb9-125">管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。</span><span class="sxs-lookup"><span data-stu-id="dadb9-125">In the admin center, go to **Billing** > **Licenses**.</span></span>
 
 >[!NOTE]
-> <span data-ttu-id="bdcb9-126">ライセンス情報を表示するには、 [AZURE AD の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)**課金管理者**または**グローバル閲覧**者の役割のいずれかが割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-126">You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information.</span></span> <span data-ttu-id="bdcb9-127">アクセスの問題が発生した場合は、グローバル管理者に連絡してください。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-127">If you encounter access problems, contact a global admin.</span></span>
+> <span data-ttu-id="dadb9-126">ライセンス情報を表示するには、 [AZURE AD の](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)**課金管理者**または**グローバル閲覧**者の役割のいずれかが割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="dadb9-126">You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information.</span></span> <span data-ttu-id="dadb9-127">アクセスの問題が発生した場合は、グローバル管理者に連絡してください。</span><span class="sxs-lookup"><span data-stu-id="dadb9-127">If you encounter access problems, contact a global admin.</span></span>
 
-## <a name="required-permissions"></a><span data-ttu-id="bdcb9-128">必要なアクセス許可</span><span class="sxs-lookup"><span data-stu-id="bdcb9-128">Required permissions</span></span>
-<span data-ttu-id="bdcb9-129">Microsoft の脅威保護を有効にするには、Azure Active Directory の**グローバル管理者**または**セキュリティ管理者**である必要があります。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-129">You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft Threat Protection.</span></span> <span data-ttu-id="bdcb9-130">Microsoft の脅威保護を使用するために必要な役割の一覧と、データへのアクセスを規制する方法については、「 [microsoft の脅威保護へのアクセスの管理](mtp-permissions.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-130">For the list of roles required to use Microsoft Threat Protection and information on how access to data is regulated, read about [managing access to Microsoft Threat Protection](mtp-permissions.md).</span></span>
+## <a name="required-permissions"></a><span data-ttu-id="dadb9-128">必要なアクセス許可</span><span class="sxs-lookup"><span data-stu-id="dadb9-128">Required permissions</span></span>
+<span data-ttu-id="dadb9-129">Microsoft の脅威保護を有効にするには、Azure Active Directory の **グローバル管理者** または **セキュリティ管理者** である必要があります。</span><span class="sxs-lookup"><span data-stu-id="dadb9-129">You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft Threat Protection.</span></span> <span data-ttu-id="dadb9-130">Microsoft の脅威保護を使用するために必要な役割の一覧と、データへのアクセスを規制する方法については、「 [microsoft の脅威保護へのアクセスの管理](mtp-permissions.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="dadb9-130">For the list of roles required to use Microsoft Threat Protection and information on how access to data is regulated, read about [managing access to Microsoft Threat Protection](mtp-permissions.md).</span></span>
 
-## <a name="browser-requirements"></a><span data-ttu-id="bdcb9-131">ブラウザー要件</span><span class="sxs-lookup"><span data-stu-id="bdcb9-131">Browser requirements</span></span>
-<span data-ttu-id="bdcb9-132">Microsoft Edge、Internet Explorer 11、または任意の HTML 5 準拠の web ブラウザーを使用して、microsoft 365 セキュリティセンターの Microsoft 脅威保護にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-132">Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.</span></span>
+## <a name="browser-requirements"></a><span data-ttu-id="dadb9-131">ブラウザー要件</span><span class="sxs-lookup"><span data-stu-id="dadb9-131">Browser requirements</span></span>
+<span data-ttu-id="dadb9-132">Microsoft Edge、Internet Explorer 11、または任意の HTML 5 準拠の web ブラウザーを使用して、microsoft 365 セキュリティセンターの Microsoft 脅威保護にアクセスします。</span><span class="sxs-lookup"><span data-stu-id="dadb9-132">Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.</span></span>
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a><span data-ttu-id="bdcb9-133">米国 GCC、GCC 高、その他の米国政府機関向けの可用性</span><span class="sxs-lookup"><span data-stu-id="bdcb9-133">Availability to US GCC, GCC High, and other US government institutions</span></span>
-<span data-ttu-id="bdcb9-134">現時点では、Microsoft の脅威保護は次の場合には使用でき*ません*。</span><span class="sxs-lookup"><span data-stu-id="bdcb9-134">Currently, Microsoft Threat Protection is *not* available to:</span></span>
-- <span data-ttu-id="bdcb9-135">米国政府機関向けコミュニティクラウド (GCC)</span><span class="sxs-lookup"><span data-stu-id="bdcb9-135">US Government Community Cloud (GCC)</span></span>
-- <span data-ttu-id="bdcb9-136">米国政府機関向けコミュニティクラウド高 (GCC 高)</span><span class="sxs-lookup"><span data-stu-id="bdcb9-136">US Government Community Cloud High (GCC High)</span></span>
-- <span data-ttu-id="bdcb9-137">米国国防総省</span><span class="sxs-lookup"><span data-stu-id="bdcb9-137">US Department of Defense</span></span>
-- <span data-ttu-id="bdcb9-138">市販のライセンスを持つ米国の全行政機関</span><span class="sxs-lookup"><span data-stu-id="bdcb9-138">All US government institutions with commercial licenses</span></span>
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a><span data-ttu-id="dadb9-133">米国 GCC、GCC 高、その他の米国政府機関向けの可用性</span><span class="sxs-lookup"><span data-stu-id="dadb9-133">Availability to US GCC, GCC High, and other US government institutions</span></span>
+<span data-ttu-id="dadb9-134">現時点では、Microsoft の脅威保護は次の場合には使用でき *ません* 。</span><span class="sxs-lookup"><span data-stu-id="dadb9-134">Currently, Microsoft Threat Protection is *not* available to:</span></span>
+- <span data-ttu-id="dadb9-135">米国政府機関向けコミュニティクラウド (GCC)</span><span class="sxs-lookup"><span data-stu-id="dadb9-135">US Government Community Cloud (GCC)</span></span>
+- <span data-ttu-id="dadb9-136">米国政府機関向けコミュニティクラウド高 (GCC 高)</span><span class="sxs-lookup"><span data-stu-id="dadb9-136">US Government Community Cloud High (GCC High)</span></span>
+- <span data-ttu-id="dadb9-137">米国国防総省</span><span class="sxs-lookup"><span data-stu-id="dadb9-137">US Department of Defense</span></span>
+- <span data-ttu-id="dadb9-138">市販のライセンスを持つ米国の全行政機関</span><span class="sxs-lookup"><span data-stu-id="dadb9-138">All US government institutions with commercial licenses</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="bdcb9-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="bdcb9-139">Related topics</span></span>
-- [<span data-ttu-id="bdcb9-140">Microsoft Threat Protection の概要</span><span class="sxs-lookup"><span data-stu-id="bdcb9-140">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
-- [<span data-ttu-id="bdcb9-141">Microsoft Threat Protection を有効にする</span><span class="sxs-lookup"><span data-stu-id="bdcb9-141">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
-- [<span data-ttu-id="bdcb9-142">アクセスとアクセス許可を管理する</span><span class="sxs-lookup"><span data-stu-id="bdcb9-142">Manage access and permissions</span></span>](mtp-permissions.md)
+## <a name="related-topics"></a><span data-ttu-id="dadb9-139">関連項目</span><span class="sxs-lookup"><span data-stu-id="dadb9-139">Related topics</span></span>
+- [<span data-ttu-id="dadb9-140">Microsoft Threat Protection の概要</span><span class="sxs-lookup"><span data-stu-id="dadb9-140">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
+- [<span data-ttu-id="dadb9-141">Microsoft Threat Protection を有効にする</span><span class="sxs-lookup"><span data-stu-id="dadb9-141">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
+- [<span data-ttu-id="dadb9-142">アクセスとアクセス許可を管理する</span><span class="sxs-lookup"><span data-stu-id="dadb9-142">Manage access and permissions</span></span>](mtp-permissions.md)

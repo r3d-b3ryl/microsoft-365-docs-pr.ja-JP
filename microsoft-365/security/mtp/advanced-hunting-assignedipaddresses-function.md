@@ -17,51 +17,54 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949314"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198249"
 ---
-# <a name="assignedipaddresses"></a><span data-ttu-id="b6dc5-104">AssignedIPAddresses()</span><span class="sxs-lookup"><span data-stu-id="b6dc5-104">AssignedIPAddresses()</span></span>
+# <a name="assignedipaddresses"></a><span data-ttu-id="30616-104">AssignedIPAddresses()</span><span class="sxs-lookup"><span data-stu-id="30616-104">AssignedIPAddresses()</span></span>
 
-<span data-ttu-id="b6dc5-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="b6dc5-105">**Applies to:**</span></span>
-- <span data-ttu-id="b6dc5-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="b6dc5-106">Microsoft Threat Protection</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="b6dc5-107">関数を使用して、 `AssignedIPAddresses()` デバイスに割り当てられている最新の IP アドレスをすばやく取得します。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-107">Use the `AssignedIPAddresses()` function to quickly obtain the latest IP addresses that have been assigned to a device.</span></span> <span data-ttu-id="b6dc5-108">Timestamp 引数を指定すると、この関数は指定された時刻に最新の IP アドレスを取得します。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-108">If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.</span></span> 
 
-<span data-ttu-id="b6dc5-109">この関数は、次の列を持つテーブルを返します。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-109">This function returns a table with the following columns:</span></span>
+<span data-ttu-id="30616-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="30616-105">**Applies to:**</span></span>
+- <span data-ttu-id="30616-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="30616-106">Microsoft Threat Protection</span></span>
 
-| <span data-ttu-id="b6dc5-110">Column</span><span class="sxs-lookup"><span data-stu-id="b6dc5-110">Column</span></span> | <span data-ttu-id="b6dc5-111">データ型</span><span class="sxs-lookup"><span data-stu-id="b6dc5-111">Data type</span></span> | <span data-ttu-id="b6dc5-112">説明</span><span class="sxs-lookup"><span data-stu-id="b6dc5-112">Description</span></span> |
+<span data-ttu-id="30616-107">関数を使用して、 `AssignedIPAddresses()` デバイスに割り当てられている最新の IP アドレスをすばやく取得します。</span><span class="sxs-lookup"><span data-stu-id="30616-107">Use the `AssignedIPAddresses()` function to quickly obtain the latest IP addresses that have been assigned to a device.</span></span> <span data-ttu-id="30616-108">Timestamp 引数を指定すると、この関数は指定された時刻に最新の IP アドレスを取得します。</span><span class="sxs-lookup"><span data-stu-id="30616-108">If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.</span></span> 
+
+<span data-ttu-id="30616-109">この関数は、次の列を持つテーブルを返します。</span><span class="sxs-lookup"><span data-stu-id="30616-109">This function returns a table with the following columns:</span></span>
+
+| <span data-ttu-id="30616-110">Column</span><span class="sxs-lookup"><span data-stu-id="30616-110">Column</span></span> | <span data-ttu-id="30616-111">データ型</span><span class="sxs-lookup"><span data-stu-id="30616-111">Data type</span></span> | <span data-ttu-id="30616-112">説明</span><span class="sxs-lookup"><span data-stu-id="30616-112">Description</span></span> |
 |------------|-------------|-------------|
-| `Timestamp` | <span data-ttu-id="b6dc5-113">日付型</span><span class="sxs-lookup"><span data-stu-id="b6dc5-113">datetime</span></span> | <span data-ttu-id="b6dc5-114">デバイスが IP アドレスを使用して観測された最新時刻</span><span class="sxs-lookup"><span data-stu-id="b6dc5-114">Latest time when the device was observed using the IP address</span></span> |
-| `IPAddress` | <span data-ttu-id="b6dc5-115">string</span><span class="sxs-lookup"><span data-stu-id="b6dc5-115">string</span></span> | <span data-ttu-id="b6dc5-116">デバイスによって使用される IP アドレス</span><span class="sxs-lookup"><span data-stu-id="b6dc5-116">IP address used by the device</span></span> |
-| `IPType` | <span data-ttu-id="b6dc5-117">string</span><span class="sxs-lookup"><span data-stu-id="b6dc5-117">string</span></span> | <span data-ttu-id="b6dc5-118">IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します</span><span class="sxs-lookup"><span data-stu-id="b6dc5-118">Indicates whether the IP address is a public or private address</span></span> |
-| `NetworkAdapterType` | <span data-ttu-id="b6dc5-119">int</span><span class="sxs-lookup"><span data-stu-id="b6dc5-119">int</span></span> | <span data-ttu-id="b6dc5-120">IP アドレスが割り当てられているデバイスによって使用されるネットワークアダプターの種類。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-120">Network adapter type used by the device that has been assigned the IP address.</span></span> <span data-ttu-id="b6dc5-121">可能な値については、[この列挙型](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-121">For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span></span> |
-| `ConnectedNetworks` | <span data-ttu-id="b6dc5-122">int</span><span class="sxs-lookup"><span data-stu-id="b6dc5-122">int</span></span> | <span data-ttu-id="b6dc5-123">割り当てられた IP アドレスを持つアダプターがに接続されているネットワーク。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-123">Networks that the adapter with the assigned IP address is connected to.</span></span> <span data-ttu-id="b6dc5-124">各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれています。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-124">Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet</span></span> |
+| `Timestamp` | <span data-ttu-id="30616-113">日付型</span><span class="sxs-lookup"><span data-stu-id="30616-113">datetime</span></span> | <span data-ttu-id="30616-114">デバイスが IP アドレスを使用して観測された最新時刻</span><span class="sxs-lookup"><span data-stu-id="30616-114">Latest time when the device was observed using the IP address</span></span> |
+| `IPAddress` | <span data-ttu-id="30616-115">文字列</span><span class="sxs-lookup"><span data-stu-id="30616-115">string</span></span> | <span data-ttu-id="30616-116">デバイスによって使用される IP アドレス</span><span class="sxs-lookup"><span data-stu-id="30616-116">IP address used by the device</span></span> |
+| `IPType` | <span data-ttu-id="30616-117">文字列</span><span class="sxs-lookup"><span data-stu-id="30616-117">string</span></span> | <span data-ttu-id="30616-118">IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します</span><span class="sxs-lookup"><span data-stu-id="30616-118">Indicates whether the IP address is a public or private address</span></span> |
+| `NetworkAdapterType` | <span data-ttu-id="30616-119">int</span><span class="sxs-lookup"><span data-stu-id="30616-119">int</span></span> | <span data-ttu-id="30616-120">IP アドレスが割り当てられているデバイスによって使用されるネットワークアダプターの種類。</span><span class="sxs-lookup"><span data-stu-id="30616-120">Network adapter type used by the device that has been assigned the IP address.</span></span> <span data-ttu-id="30616-121">可能な値については、[この列挙型](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)を参照してください。</span><span class="sxs-lookup"><span data-stu-id="30616-121">For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span></span> |
+| `ConnectedNetworks` | <span data-ttu-id="30616-122">int</span><span class="sxs-lookup"><span data-stu-id="30616-122">int</span></span> | <span data-ttu-id="30616-123">割り当てられた IP アドレスを持つアダプターがに接続されているネットワーク。</span><span class="sxs-lookup"><span data-stu-id="30616-123">Networks that the adapter with the assigned IP address is connected to.</span></span> <span data-ttu-id="30616-124">各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれています。</span><span class="sxs-lookup"><span data-stu-id="30616-124">Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet</span></span> |
 
-## <a name="syntax"></a><span data-ttu-id="b6dc5-125">構文</span><span class="sxs-lookup"><span data-stu-id="b6dc5-125">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="30616-125">構文</span><span class="sxs-lookup"><span data-stu-id="30616-125">Syntax</span></span>
 
 ```kusto
 AssignedIPAddresses(x, y)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="b6dc5-126">引数</span><span class="sxs-lookup"><span data-stu-id="b6dc5-126">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="30616-126">引数</span><span class="sxs-lookup"><span data-stu-id="30616-126">Arguments</span></span>
 
-- <span data-ttu-id="b6dc5-127">**x** `DeviceId` または `DeviceName` デバイスを識別する値</span><span class="sxs-lookup"><span data-stu-id="b6dc5-127">**x**—`DeviceId` or `DeviceName` value identifying the device</span></span>
-- <span data-ttu-id="b6dc5-128">**y**- `Timestamp` (datetime) 値は、指定した時刻から最新の IP アドレスを取得するように関数に指示します。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-128">**y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time.</span></span> <span data-ttu-id="b6dc5-129">指定しない場合、関数は最新の IP アドレスを返します。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-129">If not specified, the function returns the latest IP addresses.</span></span>
+- <span data-ttu-id="30616-127">**x** `DeviceId` または `DeviceName` デバイスを識別する値</span><span class="sxs-lookup"><span data-stu-id="30616-127">**x**—`DeviceId` or `DeviceName` value identifying the device</span></span>
+- <span data-ttu-id="30616-128">**y**- `Timestamp` (datetime) 値は、指定した時刻から最新の IP アドレスを取得するように関数に指示します。</span><span class="sxs-lookup"><span data-stu-id="30616-128">**y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time.</span></span> <span data-ttu-id="30616-129">指定しない場合、関数は最新の IP アドレスを返します。</span><span class="sxs-lookup"><span data-stu-id="30616-129">If not specified, the function returns the latest IP addresses.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b6dc5-130">例</span><span class="sxs-lookup"><span data-stu-id="b6dc5-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="30616-130">例</span><span class="sxs-lookup"><span data-stu-id="30616-130">Examples</span></span>
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a><span data-ttu-id="b6dc5-131">デバイスによって使用される IP アドレスの一覧を取得する24時間前</span><span class="sxs-lookup"><span data-stu-id="b6dc5-131">Get the list of IP addresses used by a device 24 hours ago</span></span>
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a><span data-ttu-id="30616-131">デバイスによって使用される IP アドレスの一覧を取得する24時間前</span><span class="sxs-lookup"><span data-stu-id="30616-131">Get the list of IP addresses used by a device 24 hours ago</span></span>
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a><span data-ttu-id="b6dc5-132">デバイスによって使用される IP アドレスを取得し、それと通信するデバイスを検出する</span><span class="sxs-lookup"><span data-stu-id="b6dc5-132">Get IP addresses used by a device and find devices communicating with it</span></span>
-<span data-ttu-id="b6dc5-133">このクエリは、関数を使用して、 `AssignedIPAddresses()` デバイス () に割り当てられている IP アドレスを `example-device-name` 特定の日付 () に対して取得 `example-date` します。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-133">This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`).</span></span> <span data-ttu-id="b6dc5-134">その後、IP アドレスを使用して、他のデバイスによって開始されたデバイスへの接続を検索します。</span><span class="sxs-lookup"><span data-stu-id="b6dc5-134">It then uses the IP addresses to find connections to the device initiated by other devices.</span></span> 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a><span data-ttu-id="30616-132">デバイスによって使用される IP アドレスを取得し、それと通信するデバイスを検出する</span><span class="sxs-lookup"><span data-stu-id="30616-132">Get IP addresses used by a device and find devices communicating with it</span></span>
+<span data-ttu-id="30616-133">このクエリは、関数を使用して、 `AssignedIPAddresses()` デバイス () に割り当てられている IP アドレスを `example-device-name` 特定の日付 () に対して取得 `example-date` します。</span><span class="sxs-lookup"><span data-stu-id="30616-133">This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`).</span></span> <span data-ttu-id="30616-134">その後、IP アドレスを使用して、他のデバイスによって開始されたデバイスへの接続を検索します。</span><span class="sxs-lookup"><span data-stu-id="30616-134">It then uses the IP addresses to find connections to the device initiated by other devices.</span></span> 
 
 ```kusto
 let Date = datetime(example-date);
@@ -75,7 +78,7 @@ AssignedIPAddresses(DeviceName, Date)
 | where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="b6dc5-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="b6dc5-135">Related topics</span></span>
-- [<span data-ttu-id="b6dc5-136">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="b6dc5-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="b6dc5-137">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="b6dc5-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="b6dc5-138">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="b6dc5-138">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+## <a name="related-topics"></a><span data-ttu-id="30616-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="30616-135">Related topics</span></span>
+- [<span data-ttu-id="30616-136">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="30616-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="30616-137">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="30616-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="30616-138">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="30616-138">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
