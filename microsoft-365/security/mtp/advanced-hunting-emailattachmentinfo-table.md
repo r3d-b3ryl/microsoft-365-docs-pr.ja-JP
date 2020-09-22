@@ -17,41 +17,44 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2f050885d731563c27100b2d14a3c32cd1a84df1
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: ce80b68784392f5e74f18378e7f074b8273fe73b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648911"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198099"
 ---
-# <a name="emailattachmentinfo"></a><span data-ttu-id="5936b-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="5936b-104">EmailAttachmentInfo</span></span>
+# <a name="emailattachmentinfo"></a><span data-ttu-id="5a01a-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="5a01a-104">EmailAttachmentInfo</span></span>
 
-<span data-ttu-id="5936b-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="5936b-105">**Applies to:**</span></span>
-- <span data-ttu-id="5936b-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="5936b-106">Microsoft Threat Protection</span></span>
-
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="5936b-107">[高度な捜索](advanced-hunting-overview.md)スキーマの `EmailAttachmentInfo` テーブルには、Office 365 ATP によって処理されるメールの添付ファイルに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5936b-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP.</span></span> <span data-ttu-id="5936b-108">このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。</span><span class="sxs-lookup"><span data-stu-id="5936b-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="5a01a-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="5a01a-105">**Applies to:**</span></span>
+- <span data-ttu-id="5a01a-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="5a01a-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="5936b-109">高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5936b-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="5936b-110">列名</span><span class="sxs-lookup"><span data-stu-id="5936b-110">Column name</span></span> | <span data-ttu-id="5936b-111">データ型</span><span class="sxs-lookup"><span data-stu-id="5936b-111">Data type</span></span> | <span data-ttu-id="5936b-112">説明</span><span class="sxs-lookup"><span data-stu-id="5936b-112">Description</span></span> |
+
+<span data-ttu-id="5a01a-107">[高度な捜索](advanced-hunting-overview.md)スキーマの `EmailAttachmentInfo` テーブルには、Office 365 ATP によって処理されるメールの添付ファイルに関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="5a01a-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP.</span></span> <span data-ttu-id="5a01a-108">このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。</span><span class="sxs-lookup"><span data-stu-id="5a01a-108">Use this reference to construct queries that return information from this table.</span></span>
+
+<span data-ttu-id="5a01a-109">高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5a01a-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+
+| <span data-ttu-id="5a01a-110">列名</span><span class="sxs-lookup"><span data-stu-id="5a01a-110">Column name</span></span> | <span data-ttu-id="5a01a-111">データ型</span><span class="sxs-lookup"><span data-stu-id="5a01a-111">Data type</span></span> | <span data-ttu-id="5a01a-112">説明</span><span class="sxs-lookup"><span data-stu-id="5a01a-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="5936b-113">日付型</span><span class="sxs-lookup"><span data-stu-id="5936b-113">datetime</span></span> | <span data-ttu-id="5936b-114">イベントが記録された日付と時刻</span><span class="sxs-lookup"><span data-stu-id="5936b-114">Date and time when the event was recorded</span></span> |
-| `AttachmentId` | <span data-ttu-id="5936b-115">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-115">string</span></span> | <span data-ttu-id="5936b-116">一意のメール添付ファイルの識別子</span><span class="sxs-lookup"><span data-stu-id="5936b-116">Unique email attachment identifier</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="5936b-117">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-117">string</span></span> | <span data-ttu-id="5936b-118">Microsoft 365 によって生成される電子メールの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="5936b-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `SenderFromAddress` | <span data-ttu-id="5936b-119">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-119">string</span></span> | <span data-ttu-id="5936b-120">受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス</span><span class="sxs-lookup"><span data-stu-id="5936b-120">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
-| `RecipientEmailAddress` | <span data-ttu-id="5936b-121">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-121">string</span></span> | <span data-ttu-id="5936b-122">受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス</span><span class="sxs-lookup"><span data-stu-id="5936b-122">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
-| `FileName` | <span data-ttu-id="5936b-123">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-123">string</span></span> | <span data-ttu-id="5936b-124">記録されたアクションが適用されたファイルの名前</span><span class="sxs-lookup"><span data-stu-id="5936b-124">Name of the file that the recorded action was applied to</span></span> |
-| `FileType` | <span data-ttu-id="5936b-125">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-125">string</span></span> | <span data-ttu-id="5936b-126">ファイル拡張子の種類</span><span class="sxs-lookup"><span data-stu-id="5936b-126">File extension type</span></span> |
-| `SHA256` | <span data-ttu-id="5936b-127">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-127">string</span></span> | <span data-ttu-id="5936b-128">記録されたアクションが適用されたファイルの SHA-256</span><span class="sxs-lookup"><span data-stu-id="5936b-128">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="5936b-129">このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。</span><span class="sxs-lookup"><span data-stu-id="5936b-129">This field is usually not populated — use the SHA1 column when available.</span></span> |
-| `MalwareFilterVerdict` | <span data-ttu-id="5936b-130">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-130">string</span></span> | <span data-ttu-id="5936b-131">メールにマルウェアが含まれているかどうかに関する、メールのフィルター処理スタックの判定 (マルウェア、マルウェア以外)</span><span class="sxs-lookup"><span data-stu-id="5936b-131">Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware</span></span> |
-| `MalwareDetectionMethod` | <span data-ttu-id="5936b-132">文字列型</span><span class="sxs-lookup"><span data-stu-id="5936b-132">string</span></span> | <span data-ttu-id="5936b-133">メールでマルウェアを検出するために使用される方法 (マルウェア対策エンジン、ファイル評価、ATP の安全な添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="5936b-133">Method used to detect malware in the email: Antimalware engine, File reputation, ATP Safe Attachments</span></span> |
+| `Timestamp` | <span data-ttu-id="5a01a-113">日付型</span><span class="sxs-lookup"><span data-stu-id="5a01a-113">datetime</span></span> | <span data-ttu-id="5a01a-114">イベントが記録された日付と時刻</span><span class="sxs-lookup"><span data-stu-id="5a01a-114">Date and time when the event was recorded</span></span> |
+| `AttachmentId` | <span data-ttu-id="5a01a-115">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-115">string</span></span> | <span data-ttu-id="5a01a-116">一意のメール添付ファイルの識別子</span><span class="sxs-lookup"><span data-stu-id="5a01a-116">Unique email attachment identifier</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="5a01a-117">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-117">string</span></span> | <span data-ttu-id="5a01a-118">Microsoft 365 によって生成される電子メールの一意識別子。</span><span class="sxs-lookup"><span data-stu-id="5a01a-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `SenderFromAddress` | <span data-ttu-id="5a01a-119">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-119">string</span></span> | <span data-ttu-id="5a01a-120">受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス</span><span class="sxs-lookup"><span data-stu-id="5a01a-120">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
+| `RecipientEmailAddress` | <span data-ttu-id="5a01a-121">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-121">string</span></span> | <span data-ttu-id="5a01a-122">受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス</span><span class="sxs-lookup"><span data-stu-id="5a01a-122">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
+| `FileName` | <span data-ttu-id="5a01a-123">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-123">string</span></span> | <span data-ttu-id="5a01a-124">記録されたアクションが適用されたファイルの名前</span><span class="sxs-lookup"><span data-stu-id="5a01a-124">Name of the file that the recorded action was applied to</span></span> |
+| `FileType` | <span data-ttu-id="5a01a-125">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-125">string</span></span> | <span data-ttu-id="5a01a-126">ファイル拡張子の種類</span><span class="sxs-lookup"><span data-stu-id="5a01a-126">File extension type</span></span> |
+| `SHA256` | <span data-ttu-id="5a01a-127">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-127">string</span></span> | <span data-ttu-id="5a01a-128">記録されたアクションが適用されたファイルの SHA-256</span><span class="sxs-lookup"><span data-stu-id="5a01a-128">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="5a01a-129">このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。</span><span class="sxs-lookup"><span data-stu-id="5a01a-129">This field is usually not populated — use the SHA1 column when available.</span></span> |
+| `MalwareFilterVerdict` | <span data-ttu-id="5a01a-130">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-130">string</span></span> | <span data-ttu-id="5a01a-131">メールにマルウェアが含まれているかどうかに関する、メールのフィルター処理スタックの判定 (マルウェア、マルウェア以外)</span><span class="sxs-lookup"><span data-stu-id="5a01a-131">Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware</span></span> |
+| `MalwareDetectionMethod` | <span data-ttu-id="5a01a-132">文字列型</span><span class="sxs-lookup"><span data-stu-id="5a01a-132">string</span></span> | <span data-ttu-id="5a01a-133">メールでマルウェアを検出するために使用される方法 (マルウェア対策エンジン、ファイル評価、ATP の安全な添付ファイル)</span><span class="sxs-lookup"><span data-stu-id="5a01a-133">Method used to detect malware in the email: Antimalware engine, File reputation, ATP Safe Attachments</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="5936b-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="5936b-134">Related topics</span></span>
-- [<span data-ttu-id="5936b-135">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="5936b-135">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="5936b-136">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="5936b-136">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="5936b-137">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="5936b-137">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="5936b-138">デバイス、メール、アプリ、および id の間でのハント</span><span class="sxs-lookup"><span data-stu-id="5936b-138">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="5936b-139">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="5936b-139">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="5936b-140">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="5936b-140">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="5a01a-134">関連項目</span><span class="sxs-lookup"><span data-stu-id="5a01a-134">Related topics</span></span>
+- [<span data-ttu-id="5a01a-135">高度な検出の概要</span><span class="sxs-lookup"><span data-stu-id="5a01a-135">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="5a01a-136">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="5a01a-136">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="5a01a-137">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="5a01a-137">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="5a01a-138">デバイス、メール、アプリ、ID 間での捜索</span><span class="sxs-lookup"><span data-stu-id="5a01a-138">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="5a01a-139">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="5a01a-139">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="5a01a-140">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="5a01a-140">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
