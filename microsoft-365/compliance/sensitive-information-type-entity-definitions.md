@@ -18,16 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: d29732051f2a7c023992287a131f3bb68bd28a4d
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
+ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104501"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177125"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
 コンプライアンスセンターのデータ損失防止 (DLP) には、DLP ポリシーで使用できる、さまざまな機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。 機密情報の種類はパターンで定義され、正規表現または関数で識別できます。 機密情報の種類はさらに、キーワードやチェックサムなどの確証的な証拠を使用して識別することもできます。 また、評価プロセスでは信頼度や近接度も使用されます。
+
+機密情報の種類には、次のいずれかのサブスクリプションが必要です。
+- Microsoft 365 E3
+- Microsoft 365 E5
+
+機密情報の種類は、次のように使用できます。
+- データ損失防止ポリシー
+- コミュニケーションコンプライアンスのトポロジ
+- 情報ガバナンス
+- レコード管理
+- Microsoft cloud app security
+
   
 ## <a name="aba-routing-number"></a>ABA ルーティング番号
 
@@ -129,7 +141,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- ID 
+- Identity 
 - 識別国の Id カード 
 - DNI 
 - 個人の NIC National レジストリ 
