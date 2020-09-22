@@ -18,14 +18,17 @@ search.appverid:
 description: このソリューションは、Microsoft 365 で最も一般的な cybersecurity 攻撃の内容と、それらに対する応答方法を示します。
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818797"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198705"
 ---
 # <a name="security-incident-response"></a>セキュリティインシデントへの対応
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **概要:** このソリューションは、Office 365 の最も一般的な cybersecurity 攻撃に対するインジケーター、特定の攻撃を確実に確認する方法、およびそれに対応する方法を示します。
 
@@ -59,7 +62,7 @@ ms.locfileid: "44818797"
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>サイバー セキュリティの専門家のように、Microsoft 365 のセキュリティを強化する
 
-Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。  Microsoft 365 のセキュリティロードマップを使用して、[最初の30日間、90日間、](security-roadmap.md) Microsoft の microsoft 365 組織をセキュリティで保護するためのベストプラクティスを実装することをお勧めします。
+Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。  Microsoft 365 のセキュリティロードマップを使用して、 [最初の30日間、90日間、](security-roadmap.md) Microsoft の microsoft 365 組織をセキュリティで保護するためのベストプラクティスを実装することをお勧めします。
 
 - 最初の30日間に実行するタスク。  これらはすぐに影響を受け、ユーザーにとって影響が小さくなります。
 

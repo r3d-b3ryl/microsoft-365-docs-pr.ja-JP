@@ -11,14 +11,17 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、新しいユーザーを使用して、組織内のユーザーが新しいドメインにメッセージを転送している場合に、メールの洞察をセキュリティ & コンプライアンスセンターで転送する方法を学習できます。
-ms.openlocfilehash: 4d8c88cef182ab1c521d23970797e4746e188916
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357368"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200657"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで新しいユーザーが電子メールの洞察を転送する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 組織内の新しいユーザーアカウントが、突然電子メールメッセージを外部ドメインに転送し始めたときに、疑わしいことがあります。
 
@@ -94,7 +97,7 @@ ms.locfileid: "47357368"
 
 - **Name**: これは、送信者の電子メールアドレス ([ **データの表示: 新しい転送ユーザービュー]** ) または送信者の電子メールドメイン ([ **データの表示元: 新しい転送ドメインビュー]** ) のいずれかです。
 - **転送の種類**
-- **[受信者]**
+- **Recipient**
 - **詳細**
 - **Count**
 - **開始日**

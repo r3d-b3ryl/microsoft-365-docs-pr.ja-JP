@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Azure Information Protection の保護機能に展開される変更点について説明します。
-ms.openlocfilehash: c2f386e17d3c0da74f360a7b1262a2f32dbf92cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 070b0d1af0576391ce5f22a827975d1541646454
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616736"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203601"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>既存のテナントにロールアウトする Azure Information Protection の保護機能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 情報を保護するための最初の手順を説明するために、2018年7月に、Azure Information Protection の対象となるすべてのテナントに、Azure Information protection の保護機能が既定で有効になります。 以前は Office 365 では、Azure Information Protection の保護機能が Rights Management または Azure RMS と呼ばれていました。 組織に Office E3 service プランまたはより高いサービスプランがある場合は、これらの機能をロールアウトする際に、Azure Information Protection を使用して情報の保護を開始することになります。
 
@@ -39,7 +42,7 @@ ms.locfileid: "44616736"
 
 - Office 365 の各ユーザー利点を活用するには、この機能の対象となるライセンスが必要です。
 
-- 完全なリストについては、「Office 365 Message Encryption」の「 [Exchange Online サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)」を参照してください。
+- 完全なリストについては、「Office 365 Message Encryption」の「 [Exchange Online サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) 」を参照してください。
 
 テナント管理者は、Office 365 管理者ポータルで保護の状態を確認できます。
 
@@ -85,7 +88,7 @@ ADSI Edit を使用して、Active Directory で発行された SCP があるか
 
 ## <a name="what-can-i-expect-after-this-change-has-been-made"></a>この変更を行った後に予想されることは何ですか。
 
-これを有効にしていない場合は、 [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801)で発表された新しいバージョンの Office 365 Message Encryption の使用を開始して、Azure Information protection の暗号化および保護機能を活用することができます。
+これを有効にしていない場合は、 [Microsoft Ignite 2017](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Email-Encryption-and-Rights-Protection/ba-p/110801) で発表された新しいバージョンの Office 365 Message Encryption の使用を開始して、Azure Information protection の暗号化および保護機能を活用することができます。
 
 ![Web 上の Outlook で OME 保護されたメッセージを示すスクリーンショット。](../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png)
 

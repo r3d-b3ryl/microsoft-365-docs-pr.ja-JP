@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5bc49ddfa93a06bc8f3d84ce7b8492681ee65cb7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 20133e0f5dda3abc583adf66cc20a1d8fde190cf
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950929"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198003"
 ---
 # <a name="handle-advanced-hunting-errors"></a>詳細な検索エラーを処理する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 高度な検索構文ミスを通知するエラーと、クエリが [定義済みの制限](advanced-hunting-limits.md)をヒットしたときに表示されるエラーを表示します。 エラーを解決または回避する方法に関するヒントについては、以下の表を参照してください。 
 

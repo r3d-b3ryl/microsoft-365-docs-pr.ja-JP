@@ -17,21 +17,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e3fbe29076d541df68dc39754960386fe935c7bc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: aaba01f5970c9abf55f5fae760d1ba1fed8ba914
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950951"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199879"
 ---
 # <a name="advanced-hunting-service-limits"></a>高度な検索サービスの制限
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
 
 サービスのパフォーマンスと応答性を向上させるために、高度な検索は、クエリのさまざまな制限を手動で実行し、 [カスタムの検出ルール](custom-detection-rules.md)を設定します。 これらの制限事項については、次の表を参照してください。
 
-| 極限 | Size | 更新サイクル | Description |
+| 極限 | Size | 更新サイクル | 説明 |
 |--|--|--|--|
 | データ範囲 | 30 日間 | すべてのクエリ | 各クエリは、過去30日間のデータを検索できます。 |
 | 結果セット | 1万行 | すべてのクエリ | 各クエリは最大1万レコードを返すことができます。 |

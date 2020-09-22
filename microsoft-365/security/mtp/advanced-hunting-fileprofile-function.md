@@ -17,37 +17,40 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797784"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196979"
 ---
 # <a name="fileprofile"></a>FileProfile()
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
 
 この `FileProfile()` 関数は、クエリによって検出されたファイルに次のデータを追加する、 [高度な](advanced-hunting-overview.md) 検索のエンリッチメント関数です。
 
-| 列 | データ型 | 説明 |
+| Column | データ型 | 説明 |
 |------------|-------------|-------------|
 | SHA1 | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| SHA256 | string | 記録された操作が適用されたファイルの256 |
-| MD5 | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
+| SHA256 | 文字列 | 記録された操作が適用されたファイルの256 |
+| MD5 | 文字列 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
 | FileSize | int | ファイルのサイズ (バイト数) |
 | GlobalPrevalence | int | Microsoft によってグローバルに監視されたエンティティのインスタンスの数 |
 | GlobalFirstSeen | 日付型 | エンティティが最初に Microsoft によって監視された日付と時刻 |
 | GlobalLastSeen | 日付型 | エンティティが最後に Microsoft によって監視された日付と時刻 |
-| 署名者 | string | ファイルの署名者に関する情報 |
-| 発行者 | string | 発行元の証明機関 (CA) に関する情報 |
-| SignerHash | string | 署名者を識別する一意のハッシュ値 |
-| IsCertificateValid | ブール値 | ファイルへの署名に使用された証明書が有効かどうか |
-| IsRootSignerMicrosoft | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します |
-| IsExecutable | ブール値 | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
-| Mail.threatname です | string | 検出されたマルウェアまたは他の脅威の検出名 |
-| Publisher | string | ファイルを発行した組織の名前 |
+| 署名者 | 文字列 | ファイルの署名者に関する情報 |
+| 発行者 | 文字列 | 発行元の証明機関 (CA) に関する情報 |
+| SignerHash | 文字列 | 署名者を識別する一意のハッシュ値 |
+| IsCertificateValid | boolean | ファイルへの署名に使用された証明書が有効かどうか |
+| IsRootSignerMicrosoft | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します |
+| IsExecutable | boolean | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
+| Mail.threatname です | 文字列 | 検出されたマルウェアまたは他の脅威の検出名 |
+| Publisher | 文字列 | ファイルを発行した組織の名前 |
 | SoftwareName | string | ソフトウェア製品の名前 |
 
 ## <a name="syntax"></a>構文
@@ -83,7 +86,7 @@ DeviceFileEvents
 | where GlobalPrevalence < 15
 ```
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)

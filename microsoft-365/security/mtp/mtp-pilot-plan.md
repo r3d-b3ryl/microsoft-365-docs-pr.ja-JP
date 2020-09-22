@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 601e81fc5265fe2ec5f41009b6c4fa43c0c8233d
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962611"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195653"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>パイロット Microsoft の脅威保護プロジェクトを計画する 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -48,7 +51,7 @@ ms.locfileid: "47962611"
 
 評価するオペレーティングシステムの種類も、組織の編成に基づいて定義する必要があります。 これには次のようなものがあります: [Mac エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements)、 [Linux サーバー](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements)、 [windows 10 エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)、 [windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)。
 
-## <a name="use-cases"></a>ユース ケース
+## <a name="use-cases"></a>使用例
 
 ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 例:
 - SOC アナリストとして、ネットワーク内のデバイス、ユーザー、およびメールボックス全体でアラートとイベントを表示、関連付け、評価、および管理する必要があります。 [インシデント管理]
@@ -75,12 +78,12 @@ ms.locfileid: "47962611"
 
 |**ユースケース**|**要件**|**構成要件**|**テスト計画**|**予想結果**|**テストの状態**|**スコア**|**注**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|インシデント管理|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃をシミュレートする](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
-|自動赤外線|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃をシミュレートする](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |通知とインシデントは、Microsoft の脅威保護によって自動的に修復されます。||||
+|インシデント管理|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
+|自動赤外線|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |通知とインシデントは、Microsoft の脅威保護によって自動的に修復されます。||||
 |高度な検出|-Microsoft の脅威保護 </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。|[高度な検索のシナリオ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |調査担当者は、高度な検索、影響を受けるエンティティへのピボット、およびカスタム検出の作成によってデータを検索できます。||||
 
 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 |![準備フェーズ](../../media/prepare.png) <br>[準備フェーズ](prepare-mtpeval.md) | Microsoft の脅威保護パイロット環境の準備
 |:-------|:-----|

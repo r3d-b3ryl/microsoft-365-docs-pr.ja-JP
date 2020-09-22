@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88074de8792124557c65b5be074e3b02bfec2511
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d9d3ffad156d5a27f1931c3b6ec295b022dea296
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797888"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198015"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -39,13 +42,13 @@ ms.locfileid: "46797888"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `EventId` | string | イベントの一意識別子 |
-| `NetworkMessageId` | string | Microsoft 365 によって生成される電子メールの一意識別子。 |
+| `EventId` | 文字列 | イベントの一意識別子 |
+| `NetworkMessageId` | 文字列 | Microsoft 365 によって生成される電子メールの一意識別子。 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `Action` | string | エンティティに対して実行されたアクション |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類: 手動による修復、フィッシング ZAP、マルウェアの ZAP |
-| `ActionTrigger` | string | アクションが管理者によってトリガーされたかどうか (手動または保留中の自動アクションの承認)、または ZAP または動的配信などの特別なメカニズムによって発生したかどうかを示します。 |
-| `ActionResult` | string | アクションの結果 |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類: 手動による修復、フィッシング ZAP、マルウェアの ZAP |
+| `ActionTrigger` | 文字列 | アクションが管理者によってトリガーされたかどうか (手動または保留中の自動アクションの承認)、または ZAP または動的配信などの特別なメカニズムによって発生したかどうかを示します。 |
+| `ActionResult` | 文字列 | アクションの結果 |
 | `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 
@@ -56,7 +59,7 @@ ms.locfileid: "46797888"
 - **フィッシング ZAP** – [ゼロ時間自動削除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) は、配信後にフィッシング電子メールに対してアクションを実行しました。
 - **マルウェア ZAP** –ゼロ時間自動削除 (ZAP) は、配信後にマルウェアを含む電子メールメッセージに対してアクションを実行しました。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 86212bdecb58b2e79a94d0129a0a531ef22bd6e4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 2919e03ddf229b1aa4a2d725daf020e37a6f02f8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797842"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196835"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -42,31 +45,31 @@ ms.locfileid: "46797842"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
-| `LogonType` | string | ログオンセッションの種類。具体的には次のとおりです。<br><br> - **Interactive** -ユーザーがローカルのキーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート対話 (RDP) ログオン** -ユーザーがリモートデスクトップ、ターミナルサービス、リモートアシスタンス、またはその他の RDP クライアントを使用してリモートでコンピューターと対話する<br><br> - PsExec を使用してコンピューターにアクセスするとき、またはプリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに、**ネットワーク**セッションが開始されます。<br><br> - スケジュールされたタスクによって開始された**バッチ**セッション<br><br> - **サービス** -開始時にサービスによって開始されたセッション |
-| `Application` | string | 記録されたアクションを実行したアプリケーション |
-| `Protocol` | string | 使用されるネットワークプロトコル |
-| `FailureReason` | string | 記録された操作が失敗した理由を説明する情報 |
-| `AccountName` | string | アカウントのユーザー名 |
-| `AccountDomain` | string | アカウントのドメイン |
-| `AccountUpn` | string | アカウントのユーザープリンシパル名 (UPN) |
-| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | string | Azure AD でのアカウントの一意識別子 |
-| `AccountDisplayName` | string | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
-| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
-| `DeviceType` | string | デバイスの種類 |
-| `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
+| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `LogonType` | 文字列 | ログオンセッションの種類。具体的には次のとおりです。<br><br> - **Interactive** -ユーザーがローカルのキーボードと画面を使用してコンピューターと物理的に対話する<br><br> - **リモート対話 (RDP) ログオン** -ユーザーがリモートデスクトップ、ターミナルサービス、リモートアシスタンス、またはその他の RDP クライアントを使用してリモートでコンピューターと対話する<br><br> - PsExec を使用してコンピューターにアクセスするとき、またはプリンターや共有フォルダーなどのコンピューター上の共有リソースにアクセスするときに、**ネットワーク**セッションが開始されます。<br><br> - スケジュールされたタスクによって開始された**バッチ**セッション<br><br> - **サービス** -開始時にサービスによって開始されたセッション |
+| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
+| `Protocol` | 文字列 | 使用されるネットワークプロトコル |
+| `FailureReason` | 文字列 | 記録された操作が失敗した理由を説明する情報 |
+| `AccountName` | 文字列 | アカウントのユーザー名 |
+| `AccountDomain` | 文字列 | アカウントのドメイン |
+| `AccountUpn` | 文字列 | アカウントのユーザープリンシパル名 (UPN) |
+| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
+| `AccountObjectId` | 文字列 | Azure AD でのアカウントの一意識別子 |
+| `AccountDisplayName` | 文字列 | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
+| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
+| `DeviceType` | 文字列 | デバイスの種類 |
+| `OSPlatform` | 文字列 | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。 |
 | `IPAddress` | string | エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス |
-| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
-| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
-| `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
-| `TargetAccountDisplayName` | string | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
-| `Location` | string | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
-| `Isp` | string | エンドポイントの IP アドレスに関連付けられているインターネットサービスプロバイダー (ISP) |
+| `DestinationDeviceName` | 文字列 | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | 文字列 | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
+| `TargetDeviceName` | 文字列 | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
+| `TargetAccountDisplayName` | 文字列 | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
+| `Location` | 文字列 | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
+| `Isp` | 文字列 | エンドポイントの IP アドレスに関連付けられているインターネットサービスプロバイダー (ISP) |
 | `ReportId` | long | イベントの一意識別子 |
-| `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
+| `AdditionalFields` | 文字列 | エンティティまたはイベントに関するその他の情報 |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

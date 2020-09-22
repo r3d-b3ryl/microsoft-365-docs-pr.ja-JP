@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、コネクタ (メールフローインテリジェンスとも呼ばれます) を使用したメッセージ配信に関連付けられているエラーコードについて理解できます。
-ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307919"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198505"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange online メールボックスを使用しない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、通常、コネクタを使用して、EOP から社内の電子メール環境に電子メールメッセージをルーティングします。 また、コネクタを使用して、Microsoft 365 からパートナー組織にメッセージをルーティングすることもできます。 Microsoft 365 は、これらのメッセージをコネクタ経由で配信できない場合、Microsoft 365 でキューに登録されています。 Microsoft 365 は、24時間、各メッセージの配信を再試行し続けます。 24時間後、キューに入れられたメッセージは期限切れになり、配信不能レポート (NDR またはバウンスメッセージとも呼ばれる) で元の送信者にメッセージが返されます。
 

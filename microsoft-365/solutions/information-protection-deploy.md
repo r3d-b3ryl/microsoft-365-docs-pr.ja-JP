@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 情報を保護し、データのプライバシー規制に準拠するように、セキュリティとサービスインフラストラクチャを構成します。
-ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522291"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195641"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Microsoft 365 を使用して、データプライバシー規制の情報保護を展開する
 
@@ -30,7 +30,7 @@ ms.locfileid: "46522291"
 
 Microsoft 365 のデータの種類の例には、Microsoft Teams のチャットセッション、Exchange の電子メール、および SharePoint および OneDrive のファイルが含まれています。 このソリューションでは、データプライバシーの規制の対象となる Microsoft 365 services に格納されている個人データについて、データのプライバシーインシデントを特定、特定、保護、制御、および対応する方法についてのガイダンスを提供します。
 
-![データプライバシー規制のための情報の展開保護](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+![データ プライバシー規制用の情報保護の展開](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
 
 また、データのプライバシーのニーズに合わせて Microsoft 365 の id、デバイス、および脅威保護の制御を使用する場合にも、追加情報が提供されます。 
 
@@ -38,8 +38,7 @@ Microsoft 365 のデータの種類の例には、Microsoft Teams のチャッ�
 
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
-| コンプライアンス マネージャー | Microsoft Service Trust Portal のワークフローベースのリスク評価ツールを使用して、Microsoft のクラウド サービスに関連する組織の規制準拠の取り組みを管理します。 | Microsoft 365 E3、E5 |
-| コンプライアンス スコア (プレビュー) | Microsoft 365 コンプライアンス センターで、現在のコンプライアンス構成の全体のスコアと改善のための推奨事項を確認しましょう。 | Microsoft 365 E3、E5 |
+| コンプライアンス マネージャー | 法令遵守のアクティビティを管理し、現在のコンプライアンス構成の全体的なスコアを取得し、このワークフローベースのリスク評価ツールでの改善に関する推奨事項を Microsoft 365 コンプライアンスセンターで見つけることができます。 | Microsoft 365 E3、E5 |
 | Office Advanced Threat Protection (ATP) | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 | Microsoft 365 E3、E5 | 
 | 秘密度ラベル | メール、ファイル、サイトに様々な保護レベルを持ったラベルを適用することで、ユーザーの生産性や共同作業機能を妨げることなく、組織のデータを分類して保護します。 | Microsoft 365 E3、E5 |
 | データ損失防止 (DLP) | 内部や外部での個人情報を含むデータの共有などの危険な共有、偶発的な共有、不適切な共有を検出し、警告し、ブロックします。 | Microsoft 365 E3、E5 | 
@@ -51,7 +50,7 @@ Microsoft 365 のデータの種類の例には、Microsoft Teams のチャッ�
 
 1つまたは複数のプライバシー関連の規制の対象となる個人データの識別、管理、制御、監視に使用できる Microsoft 365 ツールの理解を助けるために、このガイダンスはセクションで構成されています。
  
-![データプライバシー規制のための情報の展開保護](../media/information-protection-deploy/information-protection-deploy-grid.png)
+![データ プライバシー規制用の情報保護の展開](../media/information-protection-deploy/information-protection-deploy-grid.png)
 
 これらの各セクションは、このソリューションの個別の記事に対応しています。
 
@@ -66,21 +65,21 @@ Microsoft 365 のデータの種類の例には、Microsoft Teams のチャッ�
 
 お客様の組織が対象となるデータのプライバシーに関する規制とリスクは、Microsoft 365 構成を通じて実現可能なものを含む、改善の実装を開始する前に行う重要な最初の手順です。 これには、全体的な準備状況の評価、または組織が準拠する必要がある規制統制の対象となる特定の機密情報の種類の確認、および Microsoft 365 環境でのそれらの発生の確認が含まれます。
 
-詳細については、「[データプライバシーのリスクを評価し、機密性の高いアイテムを識別](information-protection-deploy-assess.md)する」を参照してください。
+詳細については、「 [データプライバシーのリスクを評価し、機密性の高いアイテムを識別](information-protection-deploy-assess.md)する」を参照してください。
 
-## <a name="track-use-compliance-score-and-compliance-manager"></a>追跡: コンプライアンススコアとコンプライアンスマネージャーを使用する 
+## <a name="track-use-compliance-manager"></a>追跡: コンプライアンスマネージャーを使用する
 
-コンプライアンススコア/コンプライアンスマネージャー Microsoft 365 コンプライアンス管理センターおよびサービス信頼ポータルで使用可能な一連のツールを統合して提供します。 これらのツールによって、強化された操作全体を追跡して管理することができます。また、対象とする複数のデータプライバシー規制に関連するものも提供します。
+Microsoft 365 コンプライアンスセンターで提供されるコンプライアンスマネージャーには、強化アクション全体を追跡および管理するための組み込みの機能と、ユーザーに適用される複数のデータプライバシー規制に関連する機能が用意されています。
 
-また、このツールを使用すると、各規制に固有の組み込みの評価テンプレートを活用することができます。ここでは、選択された各評価テンプレートのアクションアイテムを追跡し、特定の規制統制を表示し、特定のアクションに関連付けることができます。
+各規制に固有の組み込みの評価テンプレートを活用して、選択した各評価テンプレートのアクションアイテムを追跡したり、特定の規制統制を表示したり、特定のアクションに関連付けたりすることができます。
 
-詳細については、「[コンプライアンススコアとコンプライアンスマネージャーを使用して改善アクションを管理する](information-protection-deploy-compliance.md)」を参照してください。
+詳細については、「 [コンプライアンスマネージャーを使用して改善アクションを管理する](information-protection-deploy-compliance.md)」を参照してください。
 
 ## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>回避方法: id、デバイス、および脅威保護にデータプライバシー規制を使用します。
 
 Microsoft 365 は、id、デバイス、および脅威の保護に関するさまざまな機能を提供します。これを使用すると、データプライバシーに関する法令遵守に準拠することができます。 
 
-詳細については、「[データプライバシー規制の id、デバイス、および脅威保護を使用する](information-protection-deploy-identity-device-threat.md)」を参照してください。
+詳細については、「 [データプライバシー規制の id、デバイス、および脅威保護を使用する](information-protection-deploy-identity-device-threat.md)」を参照してください。
 
 この記事では、一般的にこれらの分野でのデータプライバシー規制について説明し、関連する Microsoft 365 ソリューションの一覧を示します。また、実装要件に対処するための詳細情報へのリンクも掲載しています。 
 
@@ -88,7 +87,7 @@ Microsoft 365 は、id、デバイス、および脅威の保護に関するさ�
 
 データプライバシーに関する規制では、GDPR のサンプルセットに含まれる4つのデータプライバシー規制、HIPAA (米国の医療保険法)、HIPAA データ保護法 (LGPD) での4つのデータプライバシー規制に関する情報を保護することができる40、さまざまな個人情報保護の制御があります。
 
-詳細については、「[組織のデータプライバシー規制に関する情報を保護する](information-protection-deploy-protect-information.md)」を参照してください。
+詳細については、「 [組織のデータプライバシー規制に関する情報を保護する](information-protection-deploy-protect-information.md)」を参照してください。
 
 この記事では、組織内のデータプライバシーに関する情報保護のニーズに対処するために使用できる主要な制御スキームについて説明します。
 
@@ -96,7 +95,7 @@ Microsoft 365 は、id、デバイス、および脅威の保護に関するさ�
 
 データプライバシーに関する規制 GDPR のサンプルセットに含まれる4つのデータプライバシー規則 (CCPA、HIPAA、および LGPD) について、24個を超えるコントロールを含む、個人情報ガバナンスの統制についてご連絡ください。
 
-詳細については、「[組織のデータプライバシー規制に関する情報を管理する](information-protection-deploy-govern.md)」を参照してください。
+詳細については、「 [組織のデータプライバシー規制に関する情報を管理する](information-protection-deploy-govern.md)」を参照してください。
 
 意図的の保存、削除、アーカイブなどの情報ガバナンスに関しては、データプライバシーに関する規制をあいまいにすることができますが、 &mdash; &mdash; この記事では、組織内のデータのプライバシーに関する情報ガバナンスのニーズを解決するために使用できる主要な制御スキームについて説明します。
 
@@ -106,4 +105,4 @@ Operationalize 関連の機能を使用して、組織内のデータプライ�
 
 これらのプロセス、手順、およびその他のドキュメントに関するその他のドキュメントは、規制機関に準拠していることを示すために重要な場合があります。
 
-詳細については、「[組織内のデータプライバシーインシデントを監視および応答する](information-protection-deploy-monitor-respond.md)」を参照してください。
+詳細については、「 [組織内のデータプライバシーインシデントを監視および応答する](information-protection-deploy-monitor-respond.md)」を参照してください。

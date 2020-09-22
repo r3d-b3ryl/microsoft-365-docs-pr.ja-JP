@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 でのエンドユーザー スパム通知
+title: Microsoft 365 でのエンドユーザースパム通知
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,39 +19,42 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) の検疫済みメッセージに対するエンドユーザー スパム通知について学習できます。
-ms.openlocfilehash: 9e9c95fafe3610e0ad945f18aa85ff13342d8d65
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: 管理者は、Exchange Online Protection (EOP) で検疫されたメッセージのエンドユーザースパム通知について知ることができます。
+ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195821"
 ---
-# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>ユーザーのスパム通知を使って検疫済みメッセージを解放して報告する
+# <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>ユーザースパム通知を使用して、検疫済みメッセージを解放して報告する
 
-Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については [、EOP の検疫済みメッセージを参照してください](quarantine-email-messages.md)。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-既定では、エンドユーザーのスパム通知はスパム対策ポリシーで無効になっています。 管理者がエンド [ユーザー向けスパム通知を有効にすると、](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)受信者 (自動マッピングが有効になっている共有メールボックスを含む) は、スパム、バルク メール、(2020 年 4 月に) フィッシングとして検疫されたメッセージに関する定期的な通知を受信します。
 
-共有メールボックスでは、エンド ユーザーのスパム通知は、共有メールボックスへの FullAccess アクセス許可が付与されたユーザーに対してのみサポートされます。 詳細については [、「EAC を使用して共有メールボックスの委任を編集する」を参照してください](https://docs.microsoft.com/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)。
+Exchange Online のメールボックスを使用している Microsoft 365 組織または Exchange Online のメールボックスを使用していないスタンドアロンの Exchange Online Protection (EOP) 組織では、危険な可能性があるメッセージまたは不要なメッセージは検疫済みメッセージとして保留されます。 詳細については、「 [EOP での検疫済みメッセージ](quarantine-email-messages.md)」を参照してください。
 
-エンド ユーザー スパム通知は、グループではサポートされていません。
+既定では、エンドユーザーのスパム通知はスパム対策ポリシーで無効になっています。 管理者が [エンドユーザーのスパム通知を有効](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)にすると、受信者 (自動マッピングが有効になっている共有メールボックスを含む) は、スパム、バルクメール、または (2020 年4月の) フィッシングとして検疫されたメッセージに関する定期的な通知を受信します。
+
+共有メールボックスの場合、エンドユーザーのスパム通知は、共有メールボックスに対する FullAccess アクセス許可を付与されたユーザーに対してのみサポートされます。 詳細については、「 [EAC を使用して共有メールボックスの委任を編集する](https://docs.microsoft.com/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation)」を参照してください。
+
+エンドユーザーのスパム通知は、グループに対してはサポートされていません。
 
 > [!NOTE]
-> 高信頼フィッシング、マルウェア、またはメール フロー ルール (別名: トランスポート ルール) によって検疫されたメッセージは、管理者のみが使用できます。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
+> 高信頼フィッシング、マルウェア、またはメールフロールール (トランスポートルールとも呼ばれます) として検疫されたメッセージは、管理者のみが使用できます。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 
-エンド ユーザー向けスパム通知には、検疫された各メッセージについて次の情報が含まれます。
+エンドユーザーのスパム通知には、検疫済みメッセージごとに次の情報が含まれています。
 
-- **送信者**: 検疫されたメッセージの送信名と電子メール アドレス。
+- **Sender**: 検疫されたメッセージの送信者名と電子メールアドレス。
 
-- **件**名: 検疫済みメッセージの件名行テキスト。
+- **Subject**: 検疫されたメッセージの件名のテキスト。
 
 - **日付**: メッセージが検疫された日付と時刻 (UTC)。
 
-- **[受信拒否**] : このリンクをクリックして、その送信者を受信拒否リストに追加します。 詳細については、「メールの送信者 [をブロックする」を参照してください](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- [**送信者のブロック**]: このリンクをクリックして、受信拒否リストに送信者を追加します。 詳細については、「 [メールの送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
-- **リリース**: スパム (フィッシングでない) メッセージに関しては、セキュリティ センターのセキュリティ センターを検疫しなくても、メッセージ&解放できます。
+- **Release**: スパム (フィッシング詐欺ではない) メッセージに対して、セキュリティ & コンプライアンスセンターの検疫を行わずに、ここでメッセージを解放することができます。
 
-- **[Review](** 確認): このリンクをクリックしてセキュリティ & コンプライアンス センターの [検疫] に移動します。このセンターは、(メッセージが検疫された理由によって異なる) ビュー、解放、または報告できます。 詳細については、「EOP でユーザーとして [検疫済みメッセージを検索して解放する」を参照してください](find-and-release-quarantined-messages-as-a-user.md)。
+- **レビュー**: このリンクをクリックすると、セキュリティ & コンプライアンスセンターの [検疫] に移動します (メッセージが検疫された理由によっては、検疫済みメッセージの表示、リリース、削除、または報告を行うことができます)。 詳細については、「 [EOP でユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。
 
-![エンド ユーザー向けスパム通知の例](../../media/end-user-spam-notification.png)
+![エンドユーザーのスパム通知の例](../../media/end-user-spam-notification.png)

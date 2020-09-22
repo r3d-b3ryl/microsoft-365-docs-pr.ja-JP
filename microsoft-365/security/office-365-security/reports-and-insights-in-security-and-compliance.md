@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ & コンプライアンスセンターで利用できるスマートレポートと分析情報、およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 7f8094c46868118bb88858dab6cd12b2427382be
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652779"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196337"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートとインサイト
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 組織の Microsoft 365 for business security team の一部であり、 [セキュリティ & コンプライアンスセンターで必要なアクセス許可が割り当てら](permissions-in-the-security-and-compliance-center.md)れている場合は、スマートレポートや分析情報などのさまざまなレポートにアクセスできます。 この記事では、これらのレポートと分析情報の概要と、特定のレポートについての詳細情報を参照してください。
 

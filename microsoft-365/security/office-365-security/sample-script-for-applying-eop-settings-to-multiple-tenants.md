@@ -1,5 +1,5 @@
 ---
-title: EOP 設定のスクリプトのサンプル - 複数のテナント
+title: EOP の設定のサンプルスクリプト-複数のテナント
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,15 +13,18 @@ localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: この記事では、PowerShell を使用して、保護 (EOP) でテナントに構成設定を適用する方法についてMicrosoft Exchange Onlineします。
-ms.openlocfilehash: 46b7c756171da7687568e5135974841d828f45bd
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: この記事では、PowerShell を使用して Microsoft Exchange Online Protection (EOP) のテナントに構成設定を適用する方法について説明します。
+ms.openlocfilehash: 6e33ceb6a9daa88bfefd4ec08ac9f2a9f34a942f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827459"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198681"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>EOP 設定を複数のテナントに適用するスクリプトのサンプル
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 以下のサンプル スクリプトにより、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Windows PowerShell を使用して構成設定をテナントに適用できます。
 
@@ -33,7 +36,7 @@ ms.locfileid: "46827459"
 
 3. .csv ファイルの各行で、テナントの管理者名を UserName 列に追加し、そのテナントのために実行するコマンドレットを Cmdlet 列に追加します。例えば、admin@contoso.com と Get-AcceptedDomain を使用します。
 
-4. ファイル [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) メモ帳にコピーし、見つけやすい場所 (c:\scripts など) にファイルを保存します。
+4. [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1)スクリプトをメモ帳にコピーし、見つけやすい場所 (c:\scripts など) にファイルを保存します。
 
 5. 次の構文を使用して、スクリプトを実行します。
 
@@ -47,7 +50,7 @@ ms.locfileid: "46827459"
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. 各テナントがログオンして、スクリプトが実行されます。
+6. 各テナントはにログオンされ、スクリプトが実行されます。
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 

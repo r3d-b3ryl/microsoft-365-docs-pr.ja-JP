@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで SMTP 認証の洞察とレポートを使用して、組織内で、認証済みの SMTP (SMTP AUTH) を使用して電子メールメッセージを送信する電子メール送信者を監視する方法を学習できます。
-ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357436"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199243"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの SMTP 認証クライアントの洞察とレポート
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [メールフローのダッシュボード](mail-flow-insights-v2.md)と、[セキュリティ & コンプライアンスセンター](https://protection.office.com)で報告される smtp auth**クライアントの**[レポート](#smtp-auth-clients-report)では、組織内のユーザーまたはシステムアカウントによる smtp auth クライアント送信プロトコルの使用が強調されています。 この従来のプロトコル (エンドポイント smtp.office365.com を使用します) は基本認証のみを提供し、侵害されたアカウントが電子メールを送信するために使用されやすくなります。 洞察とレポートを使用すると、SMTP 認証の電子メールの送信に関する異常な動作を確認できます。 また、SMTP 認証を使用するクライアントまたはデバイスの TLS 使用状況データも表示されます。
 

@@ -17,14 +17,17 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Microsoft 365 クラウドサービスおよびアプリケーションとのセキュリティ情報およびイベント管理 (SIEM) サーバーの統合の概要を理解する
-ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 6d657990417cab2a8cbb1b03b8b79a65c095d1a5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653576"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202211"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 のサービスおよびアプリケーションとの統合
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="summary"></a>概要
 
@@ -37,9 +40,9 @@ ms.locfileid: "46653576"
 
 SIEM サーバーが必要かどうかは、組織のセキュリティ要件やデータの格納場所など、さまざまな要因によって異なります。 Microsoft 365 には、SIEM サーバーのような追加のサーバーを使用せずに、多くの組織のセキュリティニーズに合ったさまざまなセキュリティ機能が含まれています。 組織によっては、SIEM サーバーの使用を必要とする特別な状況があります。 次に、いくつかの例を示します:
 
-- *Fabrikam*には、オンプレミスのコンテンツとアプリケーションがあります。クラウドには、ハイブリッドクラウド展開があります。 すべてのコンテンツとアプリケーションでセキュリティレポートを取得するために、Fabrikam は SIEM サーバーを実装しています。
+- *Fabrikam* には、オンプレミスのコンテンツとアプリケーションがあります。クラウドには、ハイブリッドクラウド展開があります。 すべてのコンテンツとアプリケーションでセキュリティレポートを取得するために、Fabrikam は SIEM サーバーを実装しています。
 
-- *Contoso 社*は、特に厳しいセキュリティ要件を持つ金融サービス組織です。 SIEM サーバーを環境に追加して、必要な追加のセキュリティ保護を利用しています。
+- *Contoso 社* は、特に厳しいセキュリティ要件を持つ金融サービス組織です。 SIEM サーバーを環境に追加して、必要な追加のセキュリティ保護を利用しています。
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM server と Microsoft 365 の統合
 
@@ -61,9 +64,9 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプ
 
 SIEM サーバーの統合を構成する前に、監査ログが有効になっていることを確認してください。
 
-- SharePoint Online、OneDrive for Business、および Azure Active Directory で[は、セキュリティ & コンプライアンスセンターで監査ログが有効になっ](../../compliance/turn-audit-log-search-on-or-off.md)ています。
+- SharePoint Online、OneDrive for Business、および Azure Active Directory で [は、セキュリティ & コンプライアンスセンターで監査ログが有効になっ](../../compliance/turn-audit-log-search-on-or-off.md)ています。
 
-- Exchange Online の場合は、「[メールボックスの監査を管理](../../compliance/enable-mailbox-auditing.md)する」を参照してください。
+- Exchange Online の場合は、「 [メールボックスの監査を管理](../../compliance/enable-mailbox-auditing.md)する」を参照してください。
 
 ## <a name="more-resources"></a>その他のリソース
 

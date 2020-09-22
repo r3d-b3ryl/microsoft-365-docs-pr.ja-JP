@@ -17,28 +17,31 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07c010a78d297a4a3c932c0d9a0e32cce0c43bfa
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 66e978b28f03e30cc2157aae2508874b73b01a40
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560909"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197979"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>高度な検索範囲を適切な設定で拡張する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
 
-[高度な](advanced-hunting-overview.md)検索は、デバイス、Office 365 ワークスペース、azure AD、azure ATP など、さまざまなソースから取得されるデータに依存します。 最も包括的なデータを取得するには、対応するデータソースの設定が正しいことを確認してください。
+[高度な](advanced-hunting-overview.md) 検索は、デバイス、Office 365 ワークスペース、azure AD、azure ATP など、さまざまなソースから取得されるデータに依存します。 最も包括的なデータを取得するには、対応するデータソースの設定が正しいことを確認してください。
 
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Windows デバイスの高度なセキュリティ監査
 これらの高度な監査設定を有効にして、ローカルアカウント管理、ローカルセキュリティグループの管理、サービスの作成など、デバイス上のアクティビティに関するデータを確実に取得します。
 
 | データ | 説明 | スキーマテーブル | 構成する方法 |
 | --- | --- | --- | --- |
-| アカウント管理 | `ActionType`ローカルアカウントの作成、削除、その他のアカウント関連のアクティビティを示す、さまざまな値として取得されたイベント | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -高度なセキュリティ監査ポリシーを展開する:[監査ユーザーアカウントの管理](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [高度なセキュリティ監査ポリシーについて説明します。](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
-| セキュリティグループの管理 | `ActionType`ローカルセキュリティグループの作成とその他のローカルグループ管理アクティビティを示すさまざまな値として取得されたイベント | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -高度なセキュリティ監査ポリシーを展開する:[監査セキュリティグループの管理](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [高度なセキュリティ監査ポリシーについて説明します。](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
-| サービスのインストール | `ActionType`値 `ServiceInstalled` (サービスが作成されたことを示す) でキャプチャされたイベント | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -高度なセキュリティ監査ポリシーを展開する:[セキュリティシステムの拡張の監査](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [高度なセキュリティ監査ポリシーについて説明します。](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| アカウント管理 | `ActionType`ローカルアカウントの作成、削除、その他のアカウント関連のアクティビティを示す、さまざまな値として取得されたイベント | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -高度なセキュリティ監査ポリシーを展開する: [監査ユーザーアカウントの管理](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-user-account-management)<br> - [高度なセキュリティ監査ポリシーについて説明します。](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| セキュリティグループの管理 | `ActionType`ローカルセキュリティグループの作成とその他のローカルグループ管理アクティビティを示すさまざまな値として取得されたイベント | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -高度なセキュリティ監査ポリシーを展開する: [監査セキュリティグループの管理](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [高度なセキュリティ監査ポリシーについて説明します。](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
+| サービスのインストール | `ActionType`値 `ServiceInstalled` (サービスが作成されたことを示す) でキャプチャされたイベント | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -高度なセキュリティ監査ポリシーを展開する: [セキュリティシステムの拡張の監査](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [高度なセキュリティ監査ポリシーについて説明します。](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
 
 ## <a name="azure-atp-sensor-on-the-domain-controller"></a>ドメインコントローラーの Azure ATP センサー
 オンプレミスの Active Directory を実行している場合は、Azure ATP のデータを取得するために、ドメインコントローラーに Azure ATP センサーをインストールする必要があります。 このデータは、をインストールして適切に構成すると、Azure ATP によって高度な検索にも追加され、ネットワーク内の id 情報とイベントの全体的な図が提供されます。 また、このデータは、高度な検索によっても対象となる関連のアラートを Azure ATP が生成する機能を拡張します。 

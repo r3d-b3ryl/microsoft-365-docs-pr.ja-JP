@@ -14,19 +14,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: クリックしたときに Teams が安全なリンクにアクセスできるようになります。 1対1のチャット、グループ間、またはチャネル内のチャットを使用しているかどうか、および Office 365 ATP へのサブスクリプションがある場合は、このセーフティ機能を有効にして使用することができます。
-ms.openlocfilehash: d7586dba86c7ec9f43457b5510a1255e06bb6bf9
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 362fb37b352a77aea07b899b707dbf4ac3d440d5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588278"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198753"
 ---
 <!--06/21/2019-->
 
 # <a name="safe-links-in-teams"></a>Teams の安全なリンク
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 > [!IMPORTANT]
-> この機能は、2020年2月28日の Microsoft Teams テクノロジ導入プログラム (タップ) にあるお客様向けの**パブリックプレビュー**です。 このメモは、Teams の安全なリンクがより幅広く利用できる場合に記事から削除されます。
+> この機能は、2020年2月28日の Microsoft Teams テクノロジ導入プログラム (タップ) にあるお客様向けの **パブリックプレビュー** です。 このメモは、Teams の安全なリンクがより幅広く利用できる場合に記事から削除されます。
 
 Microsoft Teams は、Microsoft のクラウドベースのアプリケーションである仕事を管理するために、既に安全な添付ファイル (Office 365) を使用していますが、これでクリック時に安全なリンクにアクセスできるようになります。 Office 365 ATP へのサブスクリプションがある場合、チャット、グループチャット、チャネル、またはタブを使用しているかどうかにかかわらず、この安全手段を有効にして使用することができます。 ライセンス要件の詳細については、「[Microsoft 365 テナントレベル サービスのライセンスに関するガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。
 
@@ -48,7 +51,7 @@ Microsoft Teams は、Microsoft のクラウドベースのアプリケーショ
 
 ![Teams ページの安全なリンクは、悪意のあるリンクを報告し、ページへの送信をブロックします。](/microsoft-365/media/TP_SafelinksForTeams_Malicious.png)
 
-Teams で、このページの [*戻る*] ボタンをクリックすると、そのページが閉じます (または、ユーザーが空白のページが閉じられる可能性があります)。 ただし、リンクをもう一度クリックすると、このページが表示されるように、サイトの評価が reassessment されます。
+Teams で、このページの [ *戻る* ] ボタンをクリックすると、そのページが閉じます (または、ユーザーが空白のページが閉じられる可能性があります)。 ただし、リンクをもう一度クリックすると、このページが表示されるように、サイトの評価が reassessment されます。
 
 > [!NOTE]
-> 一部の Microsoft 365 管理者は、[ブロック] ページで**続行**するかどうかのメッセージを有効にします。 ただし、安全なリンクによってサイトの評価が測定され、不足している場合は、これ以上のクリックスルーを行う必要はありません。 ユーザーが安全対策を省略することはお勧めしません。 続行する前に、この点を考慮に入れてください。
+> 一部の Microsoft 365 管理者は、[ブロック] ページで **続行** するかどうかのメッセージを有効にします。 ただし、安全なリンクによってサイトの評価が測定され、不足している場合は、これ以上のクリックスルーを行う必要はありません。 ユーザーが安全対策を省略することはお勧めしません。 続行する前に、この点を考慮に入れてください。

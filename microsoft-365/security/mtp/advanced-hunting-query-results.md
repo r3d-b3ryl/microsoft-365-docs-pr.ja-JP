@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9650811a264992c20a1ed88939e06694373b25c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649381"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197705"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を操作する
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -41,7 +44,7 @@ ms.locfileid: "46649381"
 ## <a name="view-query-results-as-a-table-or-chart"></a>クエリ結果を表またはグラフとして表示する
 既定では、高度な検索では、クエリ結果が表形式データとして表示されます。 同じデータをグラフとして表示することもできます。 高度な検索では、次のビューがサポートされます。
 
-| ビューの種類 | 内容 |
+| ビューの種類 | 説明 |
 | -- | -- |
 | **表** | クエリの結果を表形式で表示します。 |
 | **縦棒グラフ** | X 軸に一連の一意のアイテムを垂直バーとしてレンダリングし、高さが別のフィールドの数値を表すようにします。 |
@@ -113,17 +116,17 @@ AppFileEvents
 
 
 ## <a name="export-tables-and-charts"></a>テーブルとグラフをエクスポートする
-クエリを実行した後、[**エクスポート**] を選択して結果をローカルファイルに保存します。 選択したビューによって、結果のエクスポート方法が決まります。
+クエリを実行した後、[ **エクスポート** ] を選択して結果をローカルファイルに保存します。 選択したビューによって、結果のエクスポート方法が決まります。
 
 - **テーブルビュー** -クエリ結果は、Microsoft Excel ブックとして表形式でエクスポートされます。
-- **任意のグラフ**-クエリ結果は、レンダリングされたグラフの JPEG イメージとしてエクスポートされます。
+- **任意のグラフ** -クエリ結果は、レンダリングされたグラフの JPEG イメージとしてエクスポートされます。
 
 ## <a name="drill-down-from-query-results"></a>クエリ結果からドリルダウンする
-クエリ結果のレコードをすばやく検査するには、対応する行を選択して [**レコードの検査**] パネルを開きます。 パネルには、選択したレコードに基づいて次の情報が表示されます。
+クエリ結果のレコードをすばやく検査するには、対応する行を選択して [ **レコードの検査** ] パネルを開きます。 パネルには、選択したレコードに基づいて次の情報が表示されます。
 
-- **アセット**: レコードに含まれているメインアセット (メールボックス、デバイス、ユーザー) の要約されたビューで、リスクや露出レベルなどの利用可能な情報で拡充されています。
+- **アセット** : レコードに含まれているメインアセット (メールボックス、デバイス、ユーザー) の要約されたビューで、リスクや露出レベルなどの利用可能な情報で拡充されています。
 - **プロセスツリー** —プロセス情報を含むレコードに対して生成され、使用可能なコンテキスト情報を使用して拡充されます。一般に、クエリが多くの列を返すと、より豊富なプロセスツリーになることがあります。
-- **すべての詳細**: レコード内の列のすべての値  
+- **すべての詳細** : レコード内の列のすべての値  
 
 ![レコードを検査するためのパネルがある、選択されたレコードのイメージ](../../media/mtp-ah/inspect-record.png)
 
@@ -151,7 +154,7 @@ AppFileEvents
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)
-- [デバイス、メール、アプリ、および id の間でのハント](advanced-hunting-query-emails-devices.md)
+- [デバイス、メール、アプリ、ID 間での捜索](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
 - [カスタム検出の概要](custom-detections-overview.md)

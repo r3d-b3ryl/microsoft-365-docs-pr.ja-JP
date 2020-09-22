@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 が DNS で Sender Policy Framework (SPF) TXT レコードを使用して、宛先の電子メールシステムがカスタムドメインから送信されたメッセージを信頼していることを確認する方法について説明します。
-ms.openlocfilehash: 702c5de90c53388a3d55ad752010fbaa04b5556b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c437793a63f3869573b023cbcd9420e4d3c3b554
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307651"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196109"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 において Sender Policy Framework (SPF) を使用して、スプーフィングを防止する方法
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **概要:** この記事では、Microsoft 365 が DNS で Sender Policy Framework (SPF) TXT レコードを使用して、カスタムドメインから送信されたメッセージを宛先の電子メールシステムが信頼するようにする方法について説明します。 これは、Microsoft 365 から送信される送信メールに適用されます。 Microsoft 365 から Microsoft 365 内部の受信者に送信されるメッセージは、常に SPF に合格します。
 

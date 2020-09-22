@@ -17,21 +17,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 28d6cca20c8b386d5e6f7f39b80264a39f88ec55
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498353"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199467"
 ---
 # <a name="custom-detections-overview"></a>カスタム検出の概要
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
 
 カスタム検出を使用すると、疑いのある違反のアクティビティや不適切なエンドポイントを含む、さまざまなイベントやシステム状態を事前に監視して応答することができます。 これは、通知を自動的にトリガーするカスタマイズ可能な検出ルール、および応答アクションによって可能になります。
 
-カスタム検出は[高度な](advanced-hunting-overview.md)検索を使用して動作します。これにより、さまざまなイベントおよびシステム情報をネットワークからカバーする強力で柔軟なクエリ言語が提供されます。 それらを定期的に実行するように設定して、一致するものがある場合は警告を生成し、応答アクションを実行することができます。
+カスタム検出は [高度な](advanced-hunting-overview.md)検索を使用して動作します。これにより、さまざまなイベントおよびシステム情報をネットワークからカバーする強力で柔軟なクエリ言語が提供されます。 それらを定期的に実行するように設定して、一致するものがある場合は警告を生成し、応答アクションを実行することができます。
 
 カスタム検出の提供:
 - 高度な検索クエリから構築されたルールベースの検出に関する警告

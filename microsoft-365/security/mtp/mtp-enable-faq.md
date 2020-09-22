@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9dcfeb5616afc8953e862d6d1a542d694582b157
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 6b0d8d9be0cc84e61a3228f79fc14f1bfc9f8a83
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845072"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198841"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-threat-protection"></a>Microsoft の脅威保護を有効にする際によく寄せられる質問
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -44,13 +47,13 @@ ms.locfileid: "44845072"
 - Microsoft Cloud App Security
 - Office 365 Advanced Threat Protection (プラン 2)
  
-サポートされているライセンスの完全な一覧については、[ライセンス要件を参照](prerequisites.md#licensing-requirements)してください。
+サポートされているライセンスの完全な一覧については、 [ライセンス要件を参照](prerequisites.md#licensing-requirements)してください。
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-threat-protection"></a>Microsoft の脅威保護の使用を開始するには、何をインストールまたは展開する必要がありますか。
 
 いいえ。 Microsoft の脅威保護は、既に展開されている Microsoft 365 セキュリティサービスからのデータを統合します。 オンにすると、インシデント、自動化、および検索のエクスペリエンスは、展開された製品の範囲内で動作し始めます。 これらの製品のいずれも適切に展開されていない場合、Microsoft の脅威保護ではデータは表示されず、操作を行うことはできません。
 
-Microsoft の脅威保護エクスペリエンスを最適化するために、サポートされている*すべて*の[microsoft 365 セキュリティ製品とサービス](deploy-supported-services.md)を展開することをお勧めします。
+Microsoft の脅威保護エクスペリエンスを最適化するために、サポートされている *すべて* の [microsoft 365 セキュリティ製品とサービス](deploy-supported-services.md)を展開することをお勧めします。
 
 ## <a name="where-does-microsoft-threat-protection-process-and-store-my-data"></a>Microsoft の脅威保護のプロセスとデータの保存場所
 Microsoft の脅威保護は、統合されたデータを処理および保存するデータセンターの最適な場所を自動的に選択します。 Microsoft Defender ATP がある場合は、Microsoft Defender ATP で使用されているものと同じ場所を選択します。
@@ -58,7 +61,7 @@ Microsoft の脅威保護は、統合されたデータを処理および保存�
 >[!NOTE]
 >Microsoft Defender ATP は、Azure セキュリティセンターを使用してオンにした場合に、欧州連合 (EU) のデータセンターで自動的にプロビジョニングされます。 Microsoft の脅威保護は、Microsoft Defender ATP をこの方法でプロビジョニングしたお客様に対して、同じ EU データセンターで自動的にプロビジョニングされます。 
 
-データセンターの場所は、Microsoft Threat Protection (**設定 > Microsoft Threat protection**) の設定ページで、サービスの準備が完了する前と後に表示されます。 別のデータセンターの場所を使用する場合は、microsoft 365 セキュリティセンターの microsoft サポートに問い合わせて、[**ヘルプが必要ですか?** ] を選択します。
+データセンターの場所は、Microsoft Threat Protection (**設定 > Microsoft Threat protection**) の設定ページで、サービスの準備が完了する前と後に表示されます。 別のデータセンターの場所を使用する場合は、microsoft 365 セキュリティセンターの microsoft サポートに問い合わせて、[ **ヘルプが必要ですか?** ] を選択します。
 
 ## <a name="where-can-i-access-microsoft-threat-protection"></a>Microsoft の脅威保護にはどこでアクセスできますか?
 

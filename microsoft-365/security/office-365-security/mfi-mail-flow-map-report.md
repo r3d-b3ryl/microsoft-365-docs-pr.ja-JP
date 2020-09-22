@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローのダッシュボードにあるメールフローマップを使用して、コネクタ経由のメールフローと、コネクタを使用せずに組織との間で送受信されるメールフローを視覚的に追跡する方法を学習できます。
-ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358592"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199373"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターのメールフローマップ
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [セキュリティ & コンプライアンスセンター](https://protection.office.com)の[メールフローダッシュボード](mail-flow-insights-v2.md)の**メールフローマップ**は、組織内のメールフローについての洞察を提供します。 この情報を使用すると、パターンを学習し、異常を特定し、発生した問題を解決できます。
 
@@ -53,7 +56,7 @@ ms.locfileid: "47358592"
 レポートビューで [ **詳細テーブルの表示** ] をクリックすると、次の情報が表示されます。
 
 - **Date**
-- **分類**
+- **カテゴリ**
 - **コネクタ/サードパーティのサービスプロバイダー**
 - **送信者/受信者ドメイン**
 - **メッセージ数**

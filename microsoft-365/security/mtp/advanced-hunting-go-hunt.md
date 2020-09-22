@@ -17,23 +17,26 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9afecb3d0efce93ae5d5725bba71d8d9719d17f
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 496deff5d2fda47b7ffac4bc87e98bf28e90ea50
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430413"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196967"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>ゴーハントを使用してエンティティまたはイベントの情報をすばやく探します。
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
 
 *[ハントハント*] アクションを使用すると、強力なクエリベースの[高度な](advanced-hunting-overview.md)検索機能を使用して、イベントやさまざまなエンティティの種類をすばやく調査できます。 この操作により、選択したイベントまたはエンティティに関する関連情報を検索する高度な検索クエリが自動的に実行されます。
 
-イベントまたはエンティティの詳細が表示されている場合は、セキュリティセンターのさまざまなセクションで [*ハントの移動*] アクションを使用できます。 たとえば、 *[ハント*] を使用するには、次のセクションを参照してください。
+イベントまたはエンティティの詳細が表示されている場合は、セキュリティセンターのさまざまなセクションで [ *ハントの移動* ] アクションを使用できます。 たとえば、 *[ハント* ] を使用するには、次のセクションを参照してください。
 
-- [[インシデント] ページ](investigate-incidents.md#incident-overview)では、インシデントに関連付けられているユーザー、デバイス、およびその他の多くのエンティティに関する詳細を確認できます。 エンティティを選択すると、その entitity に対して実行できるさまざまなアクションに加えて、追加の情報が得られます。 次の例では、メールボックスが選択されており、メールボックスの詳細と、メールボックスに関する詳細情報を確認するオプションが表示されます。
+- [ [インシデント] ページ](investigate-incidents.md#incident-overview)では、インシデントに関連付けられているユーザー、デバイス、およびその他の多くのエンティティに関する詳細を確認できます。 エンティティを選択すると、その entitity に対して実行できるさまざまなアクションに加えて、追加の情報が得られます。 次の例では、メールボックスが選択されており、メールボックスの詳細と、メールボックスに関する詳細情報を確認するオプションが表示されます。
 
     ![メールボックスの詳細が表示された状態の [ハント] オプションを含む画像](../../media/mtp-ah/go-hunt-email.png)
 
@@ -65,7 +68,7 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>サポートされるエンティティの種類
-次のいずれかのエンティティの種類を選択した後、 *[ハント*] を使用できます。
+次のいずれかのエンティティの種類を選択した後、 *[ハント* ] を使用できます。
 
 - ファイル
 - メール

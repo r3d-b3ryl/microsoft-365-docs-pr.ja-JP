@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 62852dfe75794d5d0e33453f978967fff40813e1
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 202a5900dedece865f1aa328735477293a8a19c0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816939"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201773"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Microsoft の脅威保護の試用ラボまたはパイロット環境を作成する 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用対象:**
 - Microsoft Threat Protection
@@ -77,6 +80,6 @@ Microsoft の脅威保護のテスト環境を作成して展開するには、3
 -   Microsoft の脅威保護と統合される可能性があるサードパーティ製のソリューションの構成
 -   運用環境でのペネトレーションテスト
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 ![フェーズ 1: 準備](../../media/prepare.png) <br>[フェーズ 1: 準備](prepare-mtpeval.md) 
 <br> Microsoft の脅威保護の試用ラボまたはパイロット環境の準備

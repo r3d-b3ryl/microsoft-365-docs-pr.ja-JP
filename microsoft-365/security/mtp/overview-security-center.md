@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f831e952b20d04796f69a6c3c00ba4d69d332951
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 425956ebd4c3badc54f074b779997d530e2ee1a5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867235"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200993"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 ビジネスのセキュリティを管理して、発展を続ける脅威の状況を保護するには、多くの課題があります。 さまざまな場所で多くのセキュリティソリューションを構成して、多数のコントロールを構成している可能性があります。 どのコントロールが最も効果的で、従業員に新たな課題をもたらすかを知ることが困難な場合があります。 セキュリティチームにとって、セキュリティと生産性の適切なバランスを見つけるのが困難な場合があります。
 
