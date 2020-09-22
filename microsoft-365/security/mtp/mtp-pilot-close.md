@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f2ba1b63b3c1a986b3e811b3495bb4de85f93223
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: d6e9dbc214cdbb7aaf6bf8922ca4eaf986f8a91c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956528"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173286"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Microsoft の脅威保護パイロットの終了および概要  
 
 **適用対象:**
 - Microsoft Threat Protection
 
-ドメインコントローラーでリモートでコードを実行する、高度なメモリのみ攻撃をシミュレートしています。 Stealthy 悪意のあるアクティビティについて、Microsoft Defender ATP および Azure ATP が検出し、通知する方法を確認しました。 また、さまざまなソースからのアラートが、Microsoft Threat Protection ポータルの1つのインシデントに、他のコンテキスト情報と共に配信され、SOC アナリストが調査して必要なアクションを実行できるようにする方法についても説明しました。 また、ユーザーが添付ファイルを開いたときや保存したときに、そのクエリに基づいて検出を作成した受信メールを識別する高度な検索クエリも作成されています。
+ドメインコントローラーでリモートでコードを実行する、高度なメモリのみ攻撃をシミュレートしています。 Stealthy 悪意のあるアクティビティについて、Microsoft Defender ATP および Azure ATP が検出し、通知する方法を確認しました。 また、Microsoft 365 セキュリティセンターポータルでは、さまざまなソースからのアラートが他のコンテキスト情報と共に1つのインシデントに配信され、SOC アナリストが調査して必要なアクションを実行できるようにしています。 また、ユーザーが添付ファイルを開いたときや保存したときに、そのクエリに基づいて検出を作成した受信メールを識別する高度な検索クエリも作成されています。
 
 すべてのテストが終了した後、プロセスの最後に到達しました。
 
@@ -43,7 +43,7 @@ ms.locfileid: "47956528"
 このシミュレーションを楽しんでいただき、学んだことを実装し始めることをお勧めします。
 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 ||
 |:-------|
 |[Microsoft 365 ソリューションとアーキテクチャセンター](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)を参照して、組織に適したソリューションとアーキテクチャを設計する方法について理解します。

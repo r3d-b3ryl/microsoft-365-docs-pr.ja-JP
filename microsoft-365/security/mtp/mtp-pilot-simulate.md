@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 518afae2d241cca5fdff054faeb07d25e37eb585
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: aa4767deac30641e39880c2eeb001c2dc884540a
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956586"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173322"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Microsoft の脅威保護攻撃のシミュレーションを実行する  
 
@@ -33,9 +33,9 @@ ms.locfileid: "47956586"
 
 このシミュレーションでは、サンプルシナリオは PowerShell スクリプトで始まります。 ユーザーがスクリプトを実行するように設定されている可能性があります。 または、このスクリプトは、以前に感染したデバイスからの別のコンピューターへのリモート接続から実行される可能性があります。これは、攻撃者がネットワーク内で laterally を移動しようとしています。 さまざまな管理作業を実行するために、管理者がスクリプトをリモートで実行することもよくあるため、これらのスクリプトを検出するのは困難な場合があります。
 
-シミュレーションの間、攻撃はシェルコードを一見無害なプロセスに挿入します。 このシナリオでは、notepad.exe を使用します。 シミュレーションではこのプロセスを選択しましたが、攻撃者は svchost.exe などの長時間実行されているシステムプロセスを対象としている可能性が高くなります。 次に、シェルコードによって、攻撃者のコマンドとコントロール (C2) サーバーとの間の連絡を受け、処理を進める手順を受信します。 また、スクリプトは、ドメインコントローラー (DC) に対して偵察クエリの実行を試行します。 これにより、攻撃者は最近のユーザーログイン情報に関する情報を取得できます。 攻撃者は、この情報を入手すると、ネットワーク内の laterally を移動して特定の機密アカウントにアクセスできるようになります。
-
 ![Fileless PowerShell アタックとプロセスインジェクションおよび SMB reconnaisance 攻撃図](../../media/mtp/mtpdiydiagram.png)
+
+シミュレーションの間、攻撃はシェルコードを一見無害なプロセスに挿入します。 このシナリオでは、notepad.exe を使用します。 シミュレーションではこのプロセスを選択しましたが、攻撃者は svchost.exe などの長時間実行されているシステムプロセスを対象としている可能性が高くなります。 次に、シェルコードによって、攻撃者のコマンドとコントロール (C2) サーバーとの間の連絡を受け、処理を進める手順を受信します。 また、スクリプトは、ドメインコントローラー (DC) に対して偵察クエリの実行を試行します。 これにより、攻撃者は最近のユーザーログイン情報に関する情報を取得できます。 攻撃者は、この情報を入手すると、ネットワーク内の laterally を移動して特定の機密アカウントにアクセスできるようになります。
 
 >[!IMPORTANT]
 >最適な結果を得るには、攻撃のシミュレーション手順に従ってください。
@@ -109,9 +109,9 @@ ran NetSessionEnum against [DC Name] with return code result 0
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-SOC アナリストの視点に切り替えると、Microsoft の脅威保護ポータルで攻撃の調査を開始できるようになります。 
+SOC アナリストの視点に切り替えると、Microsoft 365 セキュリティセンターポータルで攻撃の調査を開始できるようになります。 
 
-1.  任意のデバイスから [Microsoft Threat Protection ポータル](https://security.microsoft.com/incidents) インシデントキューを開きます。
+1.  [Microsoft 365 セキュリティセンターポータル](https://security.microsoft.com/incidents)のインシデントのキューを任意のデバイスから開きます。
 
 2.  メニューから [ **インシデント** ] に移動します。 
 
@@ -230,7 +230,7 @@ Microsoft Defender ATP の検出は、多くの場合、攻撃手法の最も一
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Microsoft Threat Protection ポータルのインシデントに移動します。 [**インシデント**] ページの [**調査**] タブには、Azure ATP および Microsoft Defender atp によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、Microsoft Defender ATP がトリガーする自動調査のみを示しています。 既定では、Microsoft Defender ATP は、修復が必要なキューにある成果物を自動的に remediates します。
+Microsoft 365 セキュリティセンターポータルで、インシデントに移動します。 [**インシデント**] ページの [**調査**] タブには、Azure ATP および Microsoft Defender atp によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、Microsoft Defender ATP がトリガーする自動調査のみを示しています。 既定では、Microsoft Defender ATP は、修復が必要なキューにある成果物を自動的に remediates します。
 
 ![インシデントに関連する自動調査のスクリーンショット](../../media/mtp/fig14.png)
 
@@ -255,7 +255,7 @@ Microsoft Threat Protection ポータルのインシデントに移動します�
 
 [ **インシデントの管理**] をクリックします。 [ **インシデントを解決** する] の状態を設定し、関連する分類を選択します。
 
-インシデントが解決されると、Microsoft の脅威保護と関連するポータルで、関連付けられているすべての警告が閉じられます。
+インシデントが解決されると、Microsoft 365 セキュリティセンターおよび関連するポータルで、関連付けられているすべての警告が閉じられます。
 
 ![開いている [インシデントの管理] パネルがある [インシデント] ページのスクリーンショット。インシデントを解決するためにスイッチをクリックできます。](../../media/mtp/fig16.png) 
 
@@ -289,7 +289,7 @@ Microsoft Threat Protection ポータルのインシデントに移動します�
 1.  Security.microsoft.com ポータルを開きます。
 2.  [検索] **> [詳細**] を探します。
 
-    ![M365 セキュリティポータルのナビゲーションバーでの高度な検索のスクリーンショット](../../media/mtp/fig17.png) 
+    ![M365 セキュリティセンターポータルのナビゲーションバーでの高度な検索のスクリーンショット](../../media/mtp/fig17.png) 
 
 3.  電子メールイベントを収集することによって開始するクエリを作成します。
     a.  [クエリ] ウィンドウで、[新規] を選択します。
@@ -438,7 +438,7 @@ EmailEvents
 | エピソード 3: データの集約、ピボット、および視覚化|これで、データのフィルター処理、操作、および結合を行うことができるようになり、集約、定量化、ピボット、可視化を開始する時間になります。 このエピソードでは、高度な検索スキーマで追加のテーブルを準備する際に実行できる集計演算子と計算のいくつかについて説明します。 分析を向上させるために、データセットをグラフに変換します。 | [MP4](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [エピソード 3: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | エピソード 4: ご利用いただけます。 KQL をインシデント追跡に適用する|攻撃者の活動を追跡する時間。 このエピソードでは、Microsoft の脅威保護の KQL と advanced の詳細な理解を強化し、攻撃を追跡するために使用します。 Cybersecurity の ABCs やインシデントへの対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントのいくつかについて説明します。 | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 |![決算および概要フェーズ](../../media/mtp/close.png) <br>[決算および概要フェーズ](mtp-pilot-close.md) | Microsoft の脅威保護パイロットの結果を分析し、ステークホルダーに提示して、次の手順を実行します。
 |:-----|:-----|
 
