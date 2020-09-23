@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: a92f835658bdeedbc64d3d4f2349900e30ec6dda
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: c56f71032ccf154e5d9f416b42df1345da03d9a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427026"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199018"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>ファイルプランを使用して保持ラベルを管理する
 
@@ -81,6 +81,7 @@ Microsoft 365 コンプライアンスセンターで、もしも既に**情報�
 - **レコード**は、ラベルが適用されたときに、アイテムがレコードとしてマークされているかどうかを識別します。 有効な値:
     - 不要
     - はい
+    - はい (法的)
 
 - **保持期間** は、保持期間を識別します。 有効な値:
     - 日数

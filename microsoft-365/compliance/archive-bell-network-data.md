@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、TeleMessage コネクタを設定して、ベルネットワークから SMS および MMS データをインポートおよびアーカイブできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 975053c589b0c5ff36df1fa49f14d5d0452053d1
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: ad4b8a51e88e6477d9d4408c9faee1d83590eaa9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362058"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200576"
 ---
-# <a name="set-up-a-connector-to-archive-bell-network-data-preview"></a>ベルネットワークデータをアーカイブするためのコネクタの設定 (プレビュー)
+# <a name="set-up-a-connector-to-archive-bell-network-data"></a>ベルネットワークデータをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、ベルネットワークからの短いメッセージングサービス (SMS) メッセージとマルチメディアメッセージングサービス (MMS) メッセージのインポートとアーカイブを行います。 コネクタをセットアップして構成した後は、組織のベルネットワークに毎日接続し、SMS および MMS メッセージを Microsoft 365 のメールボックスにインポートします。
 
@@ -88,4 +87,4 @@ Bell Network データをアーカイブするために必要な実装手順の�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 '
+description: セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547253"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197350"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
 
@@ -298,19 +298,125 @@ ms.locfileid: "47547253"
 
 特定の表に移動するには、次のいずれかのリンクをクリックしてください。
 
-||||
-|:-----|:-----|:-----|
-|[ファイル アクティビティとページ アクティビティ](#file-and-page-activities)|[フォルダー アクティビティ](#folder-activities)|[SharePoint リスト アクティビティ](#sharepoint-list-activities)|
-|[共有アクティビティとアクセス要求アクティビティ](#sharing-and-access-request-activities)|[同期アクティビティ](#synchronization-activities)|[サイトの権限のアクティビティ](#site-permissions-activities)|
-|[サイト管理アクティビティ](#site-administration-activities)|[Exchange メールボックスのアクティビティ](#exchange-mailbox-activities)|[ユーザー管理アクティビティ](#user-administration-activities)|
-|[Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities)|[アプリケーション管理アクティビティ](#application-administration-activities)|[役割管理アクティビティ](#role-administration-activities)|
-|[ディレクトリ管理アクティビティ](#directory-administration-activities)|[電子情報開示アクティビティ](#ediscovery-activities)|[Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)|
-|[Power BI アクティビティ](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|[Microsoft Teams アクティビティ](#microsoft-teams-activities)|
-|[Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)|[Microsoft Teams Shifts アクティビティ](#microsoft-teams-shifts-activities)|[Yammer アクティビティ](#yammer-activities)|
-|[Microsoft Power Automate のアクティビティ](#microsoft-power-automate-activities)|[Microsoft Power Apps のアクティビティ](#microsoft-power-apps-activities)|[Microsoft Stream アクティビティ](#microsoft-stream-activities)|
-|[コンテンツ エクスプローラー アクティビティ](#content-explorer-activities)|[検疫アクティビティ](#quarantine-activities)|[Microsoft Forms アクティビティ](#microsoft-forms-activities)|
-|[機密ラベル アクティビティ](#sensitivity-label-activities)|[アイテム保持ポリシーと保持ラベルのアクティビティ](#retention-policy-and-retention-label-activities)|[Exchange 管理アクティビティ](#exchange-admin-audit-log)
-|||
+:::row:::
+    :::column:::
+        [ファイル アクティビティとページ アクティビティ](#file-and-page-activities)
+    :::column-end:::
+    :::column:::
+        [フォルダー アクティビティ](#folder-activities)
+    :::column-end:::
+    :::column:::
+        [SharePoint リスト アクティビティ](#sharepoint-list-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [共有アクティビティとアクセス要求アクティビティ](#sharing-and-access-request-activities)
+    :::column-end:::
+    :::column:::
+        [同期アクティビティ](#synchronization-activities)
+    :::column-end:::
+    :::column:::
+        [サイトの権限のアクティビティ](#site-permissions-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [サイト管理アクティビティ](#site-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange メールボックスのアクティビティ](#exchange-mailbox-activities)
+    :::column-end:::
+    :::column:::
+        [ユーザー管理アクティビティ](#user-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Azure AD グループ管理アクティビティ](#azure-ad-group-administration-activities)
+    :::column-end:::
+    :::column:::
+        [アプリケーション管理アクティビティ](#application-administration-activities)
+    :::column-end:::
+    :::column:::
+        [役割管理アクティビティ](#role-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [ディレクトリ管理アクティビティ](#directory-administration-activities)
+    :::column-end:::
+    :::column:::
+        [電子情報開示アクティビティ](#ediscovery-activities)
+    :::column-end:::
+    :::column:::
+        [Advanced eDiscovery アクティビティ](#advanced-ediscovery-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Power BI アクティビティ](#power-bi-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams アクティビティ](#microsoft-teams-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Teams 医療活動アクティビティ](#microsoft-teams-healthcare-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams Shifts アクティビティ](#microsoft-teams-shifts-activities)
+    :::column-end:::
+    :::column:::
+        [Yammer アクティビティ](#yammer-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Power Automate のアクティビティ](#microsoft-power-automate-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Power Apps のアクティビティ](#microsoft-power-apps-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Stream アクティビティ](#microsoft-stream-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [コンテンツ エクスプローラー アクティビティ](#content-explorer-activities)
+    :::column-end:::
+    :::column:::
+        [検疫アクティビティ](#quarantine-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Forms アクティビティ](#microsoft-forms-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [機密ラベル アクティビティ](#sensitivity-label-activities)
+    :::column-end:::
+    :::column:::
+        [アイテム保持ポリシーと保持ラベルのアクティビティ](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange 管理アクティビティ](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
 
 ### <a name="file-and-page-activities"></a>ファイル アクティビティとページ アクティビティ
 

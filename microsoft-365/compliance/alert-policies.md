@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: セキュリティ/コンプライアンスセンターのアラートポリシーを Office 365 および Microsoft 365 に作成し、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: 5f4c715058c7fd9a98dc268b18cc487af4c1ae10
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962678"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200586"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>セキュリティ/コンプライアンス センターのアラート ポリシー
 
@@ -205,7 +205,7 @@ Microsoft は、Exchange 管理者のアクセス許可の悪用、マルウェ�
 
 既定の通知ポリシーが割り当てられているカテゴリを確認するには、[ [既定の警告ポリシー](#default-alert-policies) ] セクションの表を参照してください。
 
-|&nbsp;|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
+|ロール|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |監査ログ|||||||
 |ケース管理|||||||
