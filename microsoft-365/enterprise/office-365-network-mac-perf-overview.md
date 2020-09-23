@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214917"
+ms.locfileid: "48235540"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターでのネットワーク接続 (プレビュー)
 
@@ -30,6 +30,11 @@ Microsoft 365 管理センターには、Microsoft 365 テナントから収集�
 **ネットワーク評価** と **ネットワーク Insights** は、Microsoft 365 管理センターの [ **正常性] の下に表示されます。接続**。
 
 ![ネットワークパフォーマンスページ](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+
+>[!NOTE]
+>ネットワーク接続テストツールは、世界各地の商用およびドイツのテナントをサポートしていますが、GCC のモデレート、GCC High、DoD、中国ではサポートされていません。
+
+最初に [ネットワークパフォーマンス] ページに移動すると、グローバルネットワークパフォーマンスのマップ、テナント全体を対象としたネットワーク評価、現在の問題の一覧を含む概要ウィンドウが表示されます。 概要から、特定のネットワークパフォーマンス指標と問題を場所別に表示することができます。 詳細については、 [Microsoft 365 管理センターの「ネットワークパフォーマンスの概要](#network-connectivity-overview-in-the-microsoft-365-admin-center)」を参照してください。
 
 組織に代わって、この機能のパブリックプレビューに参加するように求められる場合があります。 通常、承諾はすぐに行われた後、[ネットワーク接続] ページが表示されます。 
 

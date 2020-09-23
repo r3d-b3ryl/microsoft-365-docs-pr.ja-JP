@@ -3,7 +3,7 @@ title: PowerShell を使用して Microsoft 365 ユーザーアカウントを�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: この記事では、PowerShell を使用してユーザーアカウントまたは Microsoft 365 の複数のユーザーアカウントを作成する方法について説明します。
-ms.openlocfilehash: 53077352862b6d0df6bb569300e2d8bc2475df91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00ae8806e786eada092704febd65c72c72382788
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691995"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235596"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントを作成する
 
@@ -42,9 +42,12 @@ Microsoft 365 の PowerShell を使用すると、ユーザーアカウント、
 |**LicenseAssignment** <br/> |いいえ  <br/> |これは、使用可能なライセンスがユーザーアカウントに割り当てられているライセンスプラン (ライセンスプランまたは SKU とも呼ばれます) です。 ライセンスでは、アカウントで利用可能な Microsoft 365 サービスが定義されています。 アカウントの作成時にライセンスをユーザーに割り当てる必要はありませんが、そのアカウントには Microsoft 365 サービスにアクセスするためのライセンスが必要です。 ユーザー アカウントにライセンスを割り当てる期間は作成後 30 日です。 |
 |**Password** <br/> |いいえ  <br/> | パスワードを指定しない場合、ランダムなパスワードがユーザー アカウントに割り当てられ、パスワードはコマンドの結果に表示されます。パスワードを指定する場合、小文字、大文字、数字、記号のうちの 3 つの種類の文字を使った 8 から 16 文字の ASCII テキスト文字にする必要があります。 <br/> |
 |**UsageLocation** <br/> |いいえ  <br/> |これは有効な ISO 3166-1 alpha 国コードです。 たとえば、米国は US、フランスは FR です。 一部の Microsoft 365 サービスは特定の国では利用できないため、この値を指定することは重要です。そのため、アカウントにこの値が設定されていない限り、ユーザーアカウントにライセンスを割り当てることはできません。 詳細については、「 [ライセンス制限につい](https://go.microsoft.com/fwlink/p/?LinkId=691730)て」を参照してください。  <br/> |
-   
 
-## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph モジュールの Azure Active Directory PowerShell を使用する
+>[!Note]
+>Microsoft 365 管理センターを使用して[ユーザーアカウントを作成する方法について説明](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
+>   
+
+## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
 最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
 

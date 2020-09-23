@@ -3,7 +3,7 @@ title: PowerShell を使用して Microsoft 365 ユーザーアカウントに�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: この記事では、Microsoft 365 の PowerShell を使用してユーザーアカウントに役割を割り当てる方法について説明します。
-ms.openlocfilehash: 4726dcea109490ff28299002bc5263aa15dca949
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691664"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235432"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントに役割を割り当てる
 
@@ -34,7 +34,7 @@ ms.locfileid: "46691664"
 Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役割をすばやく簡単に割り当てることができます。
 
 >[!Note]
->Microsoft 365 管理センターを使用してユーザーアカウントに役割を割り当てるには、 [次の手順](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)を参照してください。
+>Microsoft 365 管理センターを使用して、[ユーザーアカウントに役割を割り当てる方法について説明](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する

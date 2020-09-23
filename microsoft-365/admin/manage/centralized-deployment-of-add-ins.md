@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用して Office アドインを展開できるようにします。
-ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131736"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235420"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -45,7 +45,7 @@ ms.locfileid: "48131736"
   
 ## <a name="requirements"></a>Requirements
 
-アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise (組織の ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
+アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise または Microsoft 365 Business Premium (および組織 ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
 以下の Office および Exchange の特定の要件を確認することも、[集中展開の互換性チェック](#centralized-deployment-compatibility-checker)を使用することもできます。
 
 一元展開は、次の機能をサポートしていません。
@@ -61,11 +61,11 @@ ms.locfileid: "48131736"
 ### <a name="office-requirements"></a>Office の要件
 
 - Word、Excel、PowerPoint のアドインでは、ユーザーが次のいずれかを使用している必要があります。
-  - Windows デバイスでは、バージョン1704以降の Microsoft 365 Apps for enterprise。
+  - Windows デバイスで、バージョン1704以降の Microsoft 365 Apps for enterprise、または Microsoft 365 Business Premium。
   - Mac では、バージョン15.34 以降。
 
 - Outlook の場合、ユーザーは次のいずれかを使用する必要があります。 
-  - バージョン1701以降の Microsoft 365 Apps for enterprise。
+  - バージョン1701以降の Microsoft 365 Apps for enterprise、または Microsoft 365 Business Premium。
   - バージョン1808以降の Office Professional Plus 2019 または Office Standard 2019。
   - 16.0.4494.1000 以降のバージョンの Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI)\*
   - 15.0.4937.1000 以降のバージョンの Office Professional Plus 2013 (MSI) または Office Standard 2013 (MSI)\*

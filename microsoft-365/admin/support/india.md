@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7026dcc09207ce1b6fa911bf20683e4e642eee5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 757da7f0fb3089c358333ac5f49140d965476945
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397600"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235408"
 ---
 # <a name="contact-support-for-india"></a>インドのサポートに問い合わせる
 
@@ -26,6 +26,8 @@ ms.locfileid: "44397600"
 
 ## <a name="phone-number"></a>電話番号
 000 800 440 2038
+
+地域のフリーダイヤル
 
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:

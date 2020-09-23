@@ -3,7 +3,7 @@ title: PowerShell を使用して Microsoft 365 グループメンバーシッ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: PowerShell を使用して Microsoft 365 グループのメンバーシップを管理する方法について説明します。
-ms.openlocfilehash: 61bdcb96433f4f384033768debf416900a305624
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 464ebcebe87fcd7ce081de85e75acf76cd6d5a46
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692114"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235632"
 ---
 # <a name="maintain-microsoft-365-group-membership-with-powershell"></a>PowerShell を使用して Microsoft 365 グループメンバーシップを管理する
 
@@ -34,6 +34,10 @@ Microsoft 365 の PowerShell を microsoft 365 管理センターの代わりと
 
 > [!TIP]
 > ユーザーアカウントとグループ名を指定して、すぐに実行できる PowerShell コマンドを生成するには、この [グループメンテナンス Microsoft Excel ブック](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx)を使用します。 
+
+>[!Note]
+>Microsoft 365 グループメンバーシップを Microsoft 365 管理センターで[管理する方法について説明](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。

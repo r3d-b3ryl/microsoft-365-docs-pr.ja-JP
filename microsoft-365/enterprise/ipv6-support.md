@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: '概要: Microsoft Office 365 コンポーネントおよび Office 365 government 製品の IPv6 サポートについて説明します。'
-ms.openlocfilehash: c4ecd2ef26ecf660eb1d172b1951907724d2238a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f671e8caf868ebbed628a155b73ce6fe413949a9
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691780"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235608"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 サービスでの IPv6 サポート
 
@@ -50,6 +50,10 @@ SharePoint Online への接続に使用するプログラムが IPv6 をサポ�
 ### <a name="skype-for-business-and-ipv6"></a>Skype for Business および IPv6
 
 Skype for Business では IPv6 がサポートされておらず、有効にできないことに注意してください。
+
+### <a name="microsoft-teams-and-ipv6"></a>Microsoft Teams および IPV6
+
+Microsoft Teams の直接ルーティングでは、IPv4 のみがサポートされます。 Microsoft Teams サービスおよびクライアントは、IPv4 と IPv6 の両方をサポートしています。 Microsoft Teams への通信を制御する場合は、Office 365 の IP アドレスの範囲 [と ip アドレス範囲](urls-and-ip-address-ranges.md)を使用します。
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection および IPv6
 
