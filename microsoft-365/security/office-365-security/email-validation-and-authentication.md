@@ -18,20 +18,23 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
-ms.openlocfilehash: 0f4eb15df218050f7e582b1cc727522c04da594b
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949870"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202977"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 すべての Microsoft 365 組織では、EOP は次の基準を使用して受信メールを検証します。
 
-- [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
+- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
 
-- [DKIM](support-for-validation-of-dkim-signed-messages.md)
+- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -204,4 +207,12 @@ Microsoft 365 は、会社のインフラストラクチャからの受信メー
 
 プラットフォームから送信されたメールを認証していても Microsoft への配信が可能であることが保証されるわけではありませんが、少なくとも、認証されていないという理由で Microsoft がそのメールを迷惑メールとして処理することはなくなります。
 
-サービス プロバイダーのベスト プラクティスについては、「[M3AAWG Mobile Messaging Best Practices for Service Providers](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf)」を参照してください。
+## <a name="related-links"></a>関連リンク
+
+サービス プロバイダーのベスト プラクティスについては、「[サービス プロバイダー向けの M3AAWG モバイル メッセージングのベスト プラクティス](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf)」を参照してください。
+
+Office 365 が SPF を使用し、DKIM 検証をサポートする方法について説明します。
+
+- [SPF の詳細](how-office-365-uses-spf-to-prevent-spoofing.md)
+
+- [DKIM の詳細](support-for-validation-of-dkim-signed-messages.md)
