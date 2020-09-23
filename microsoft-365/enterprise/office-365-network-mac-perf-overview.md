@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200799"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214917"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターでのネットワーク接続 (プレビュー)
 
@@ -33,7 +33,7 @@ Microsoft 365 管理センターには、Microsoft 365 テナントから収集�
 
 組織に代わって、この機能のパブリックプレビューに参加するように求められる場合があります。 通常、承諾はすぐに行われた後、[ネットワーク接続] ページが表示されます。 
 
-[ネットワーク接続] ページに移動すると、グローバルネットワークのパフォーマンスのマップ、テナント全体を対象としたネットワーク評価、現在の問題の一覧が含まれる概要ウィンドウが表示されます。 このページにアクセスするには、Microsoft 365 内の組織の管理者である必要があります。 レポートリーダー管理者の役割には、この情報に対する読み取りアクセス権があります。 ネットワーク接続の場所とその他の要素を構成するには、管理者がサービスサポート管理者の役割などのサーバー管理者の役割の一部である必要があります。 概要から、特定のネットワークパフォーマンス指標と問題を場所別に表示することができます。 詳細については、 [Microsoft 365 管理センターの「ネットワークパフォーマンスの概要](#network-connectivity-overview-in-the-microsoft-365-admin-center)」を参照してください。
+[ネットワーク接続] ページに移動すると、グローバルネットワークのパフォーマンスのマップ、テナント全体を対象としたネットワーク評価、現在の問題の一覧が含まれる概要ウィンドウが表示されます。 このページにアクセスするには、Microsoft 365 内の組織の管理者である必要があります。 レポートリーダー管理者の役割には、この情報に対する読み取りアクセス権があります。 ネットワーク接続の場所とその他の要素を構成するには、管理者がサービスサポート管理者の役割などのサーバー管理者の役割の一部である必要があります。 概要から、特定のネットワークパフォーマンス指標と問題を場所別に表示することができます。 詳細については、 [Microsoft 365 管理センターの「ネットワーク接続の概要](#network-connectivity-overview-in-the-microsoft-365-admin-center)」を参照してください。
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>ネットワーク接続の評価が表示される前提条件
 

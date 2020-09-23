@@ -3,7 +3,7 @@ title: Office 365 向け VPN スプリット トンネリングの実装
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171424"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214876"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -37,7 +37,7 @@ ms.locfileid: "48171424"
 
 分けられていたり、パフォーマンスに敏感なクラウド アプリケーションへの接続に強制トンネリングされた VPN を使用することは、とても適切とは言えませんが、セキュリティの観点から現状を維持するために、そのマイナスの影響も一部の企業では受け入れられてきたのかもしれません。 このシナリオの例となる図を次に示します。
 
-![スプリット トンネル VPN 構成](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![スプリット トンネル VPN 構成](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 この問題は年々増加しており、多くの企業がネットワークのトラフィック パターンの大きな変化を訴えています。 現在の状態を維持するために使用されていたトラフィックは、外部のクラウドエンドポイントに接続します。 Microsoft ユーザーの多くから、以前はネットワーク トラフィックの約 80 ％は内部ソース (上記の図の点線で示した部分) に送られるものだったという報告があります。 2020 年には、主要な作業領域をクラウドに移行したことにより、その割合は約 20 ％以下になりました。この傾向は他の企業でも珍しいことではありません。 クラウドへの移行の旅を進めていくほど、上記のモデルはますます扱いにくく、持続不可能になり、組織がすばやくクラウド ファーストの世界へ足を踏み入れることを妨げます。
 
@@ -95,7 +95,7 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 
 次の図は、推奨している VPN スプリット トンネリング ソリューションのしくみを示しています。
 
-![スプリット トンネリング VPN ソリューションの詳細](../media/vpn-split-tunneling/vpn-split-detail.png)
+![スプリット トンネリング VPN ソリューションの詳細](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 最適化するエンドポイントを決める
 
@@ -109,9 +109,6 @@ Microsoft は、お客様や幅広い業界と長年にわたって緊密に連�
 - 帯域幅や遅延の影響を受けやすい
 - 必要なセキュリティ要素をネットワーク上で、インラインではなくサービスで提供することができる
 - Office 365 サービスへのトラフィック量の約 70 - 80% を対象としたアカウント
-
->[!NOTE]
->Microsoft は、少なくとも **2020 年 6 月 30 日**までは、Office 365向けの**最適化**エンドポイントの変更を中断することを約束しており、お客様が当初実装したエンドポイントのホワイトリストを維持するのではなく、他の課題に集中できるようにしています。 当記事は、今後の変更を反映して更新されます。
 
 Office 365 エンドポイント、およびその分類と管理方法の詳細については、「[Office 365 エンドポイントを管理する](managing-office-365-endpoints.md)」の記事を参照してください。
 
