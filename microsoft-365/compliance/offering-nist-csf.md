@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: be40c207f5f09c97d1a0a4da5cf56e2caf2c51b7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417089"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208169"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>米国標準技術局 (NIST) Cybersecurity Framework (CSF)
 
@@ -80,7 +80,7 @@ FedRAMP 認定のためにサードパーティによって作成された正式
 
 **組織に Microsoft のコンプライアンスを使用できますか?**
 
-はい、できます。 マイクロソフトが Microsoft クラウドサービスのセキュリティとプライバシーを維持するために実装した統制の有効性に関する、独立したサードパーティのコンプライアンスレポート。 Microsoft のお客様は、これらの関連するレポートで説明されている監査対象の制御を、独自の FedRAMP と、NIST のリスク分析および認定の取り組みの一部として使用することができます。
+はい。 マイクロソフトが Microsoft クラウドサービスのセキュリティとプライバシーを維持するために実装した統制の有効性に関する、独立したサードパーティのコンプライアンスレポート。 Microsoft のお客様は、これらの関連するレポートで説明されている監査対象の制御を、独自の FedRAMP と、NIST のリスク分析および認定の取り組みの一部として使用することができます。
 
 **重要なインフラストラクチャであると見なされるのは米国政府機関の組織ですか。**
 
@@ -97,9 +97,9 @@ NIST CSF 認定のスコープ内サービスには、Exchange Online のアー�
 
 Microsoft は、その他のクラウドサービスプロバイダーと比較して、最も包括的な製品を提供しています。 地域や業界にわたる幅広いコンプライアンスサービスに対応するために、市場需要、お客様からのフィードバック、製品のライフサイクルに基づく保証作業の範囲にサービスを含めます。 特定のコンプライアンスオファリングの現在のスコープにサービスが含まれていない場合、お客様の組織は、コンプライアンスの義務に基づいてリスクを評価し、そのサービスでデータを処理する方法を決定する責任を負っています。 お客様からのフィードバックを継続的に収集し、規制や監査担当者と協力してコンプライアンスを拡大し、セキュリティおよびコンプライアンスのニーズを満たすことができます。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[NIST CSF テンプレート](https://go.microsoft.com/fwlink/?linkid=2117917)を選択して、組織がこの規制の要件を満たすことができるようにします。
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

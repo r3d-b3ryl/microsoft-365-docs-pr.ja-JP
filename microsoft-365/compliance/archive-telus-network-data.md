@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、TeleMessage コネクタをセットアップして、Microsoft 365 の TELUS ネットワークから SMS データをインポートおよびアーカイブすることができます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: cfb15d7f7c6783d2a155587342e9224f4648d2cc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 49178d50550df64df77f92dfa5725ec02432aab7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361842"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196724"
 ---
-# <a name="set-up-a-connector-to-archive-telus-network-data-preview"></a>TELUS ネットワークデータをアーカイブするためのコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-telus-network-data"></a>TELUS ネットワークデータをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、組織の TELUS ネットワークからの短いメッセージングサービス (SMS) データのインポートとアーカイブを行います。 コネクタをセットアップして構成した後は、組織の TELUS ネットワークに毎日接続し、SMS データを Microsoft 365 のメールボックスにインポートします。
 
@@ -88,4 +87,4 @@ TELUS ネットワークデータをアーカイブするために必要ない�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

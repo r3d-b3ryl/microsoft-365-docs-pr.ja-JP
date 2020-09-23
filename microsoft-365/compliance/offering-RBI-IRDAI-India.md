@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: aac61dc6686e318d21a6aa6cb1ee86704879f51b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416073"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208199"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>[インド of インド (RBI)] および [インドの保険法規および開発機関 (IRDAI)] の予約銀行
 
@@ -31,7 +31,7 @@ ms.locfileid: "47416073"
 
 - 金融サービス (rbi) に[よる金融サービスのアウトソーシングにおけるリスクと行動コードの管理に関するガイドライン](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf)は、金融サービスをアウトソーシングし、アウトソーシングが rbi のスーパーバイザーの役割を阻害しないようにするために、規制された銀行が公開するリスクに対処するためのものです。 RBI では、金融サービスのアウトソーシングを求める銀行の事前の承認は必要ありません。ただし、内部監査やコンプライアンス機能などのコアバンキング機能はアウトソーシングしないでください。
 - [情報セキュリティ、電子銀行、テクノロジリスク管理、およびサイバー Frauds](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (rbi) に関するガイドライン。 金融機関は、活動の規模と性質が重要であるか、インド外のサービスプロバイダーとの広範なデータ共有を必要とするアウトソーシングの手配を報告する必要があります。 このガイダンスは、運用データがインドの外部で保存または処理される場合に特に適用されます。
-- [インド Insurers 規制 (IRDAI) によるアクティビティのアウトソーシング](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) 。 毎年、保険会社は、会計年度の決算から45日以内に、中心的な活動の特定のサポート機能の IRDAI へのアウトソーシングを報告する必要があります。 (Microsoft [チェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) の7ページ」では、「コアアクティビティのサポート機能」について説明しています。
+- [インド Insurers 規制 (IRDAI) によるアクティビティのアウトソーシング](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) 。 毎年、保険会社は、会計年度の決算から45日以内に、中心的な活動の特定のサポート機能の IRDAI へのアウトソーシングを報告する必要があります。 (Microsoft [チェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) のページ7では、コアアクティビティのサポート機能について説明します。
 
 クラウドサービスを使用する金融企業は、 [情報技術 (適切なセキュリティのベストプラクティスと手順、機密性の高い個人データまたは情報) ルール](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) である 2011 (meity) を含む、プライバシールールに準拠している必要があります。 インドのデータ保護法を強化するために開発されたものであり、機密の個人データの保護と処理を規定しています。
 
@@ -63,6 +63,10 @@ ms.locfileid: "47416073"
 **クラウド サービス プロバイダーについて、契約に含める必要がある必須条項はありますか?**
 
 はい。 上記のガイドラインは、金融機関がクラウドサービス契約に組み込む必要のある特定のポイントを規定しています。 [チェックリスト](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)のパート 2 (ページ 70) は、これらを Microsoft の契約書に記載されているセクションに対応しています。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

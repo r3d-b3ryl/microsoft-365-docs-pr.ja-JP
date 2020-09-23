@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Reuters Eikon データを Microsoft 365 の Globanet からインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: ec5df821bcfbb772879fea5e8568e7090ce54aae
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c9e63896d333d7f94d01b6ec3af565f476fac39e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405478"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196776"
 ---
-# <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>コネクタを Reuters Eikon data にアーカイブするように設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>Reuters Eikon データをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、Reuters Eikon プラットフォームから Microsoft 365 組織のユーザーメールボックスにデータをインポートし、アーカイブします。 Globanet では、サードパーティのデータソースからアイテムを取得するように構成された [Reuters Eikon](https://globanet.com/eikon/) connector が提供されています (定期的に)。これらのアイテムを Microsoft 365 にインポートします。 コネクタは、個人のメッセージ、グループのチャット、添付ファイル、免責事項などのコンテンツをユーザーの Reuters Eikon アカウントから電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
@@ -90,4 +89,4 @@ Reuters Eikon コネクタを作成した後、Microsoft 365 コンプライア�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

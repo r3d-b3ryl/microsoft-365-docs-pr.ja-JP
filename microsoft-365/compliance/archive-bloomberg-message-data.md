@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Bloomberg メッセージ電子メールツールから Microsoft 365 にデータをインポートしてアーカイブするためのデータコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: cc14bd9d76e04fe3e285f63b5dce9dbb1f680794
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358293"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200230"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>Bloomberg メッセージデータをアーカイブするコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Bloomberg メッセージデータをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターのデータコネクタを使用して、 [Bloomberg メッセージ](https://www.bloomberg.com/professional/product/collaboration/) コラボレーションツールから金融サービスの電子メールデータをインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の Bloomberg secure FTP (SFTP) サイトに毎日一度接続し、メールアイテムを Microsoft 365 のメールボックスにインポートします。
 

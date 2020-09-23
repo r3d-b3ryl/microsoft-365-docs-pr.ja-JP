@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Microsoft 365 の Globanet の Webex Teams コネクタからデータをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 3d9693fd1baf990ba3ca956c8a24d8d796e80995
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405446"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196566"
 ---
-# <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>Webex Teams データをアーカイブするコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-webex-teams-data"></a>Webex Teams データをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、Webex Teams のデータを Microsoft 365 組織のユーザーのメールボックスにインポートし、アーカイブします。 Globanet には、webex Teams のコミュニケーションアイテムをキャプチャして Microsoft 365 にインポートするために構成された [Webex teams](https://globanet.com/webex-teams/) コネクタが用意されています。 このコネクタは、Webex Teams (1:1 チャット、グループ会話、チャネル会話、添付ファイルなど) からのコンテンツを電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
@@ -94,4 +93,4 @@ Webex Teams コネクタを作成した後、Microsoft 365 コンプライアン
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

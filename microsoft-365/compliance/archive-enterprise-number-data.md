@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、TeleMessage Enterprise 番号 Archiver から SMS および MMS データをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: d2e871f6d2515ac49018c6710689517a7bde0985
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1152c5e1d658e33e3056873d2230f6f94e58adc1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362036"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200164"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data-preview"></a>エンタープライズ番号データをアーカイブするようにコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>エンタープライズ数値データをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、短いメッセージングサービス (SMS) およびマルチメディアメッセージングサービス (MMS) メッセージ、チャットメッセージ、音声通話、音声通話の記録をエンタープライズ番号の Archiver からインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の TeleMessage アカウントに毎日接続し、TeleMessage エンタープライズ番号 Archiver を使用して従業員のモバイル通信データを Microsoft 365 のメールボックスにインポートします。
 
@@ -82,4 +81,4 @@ TeleMessage Enterprise Number Archiver connector データがユーザーのメ�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

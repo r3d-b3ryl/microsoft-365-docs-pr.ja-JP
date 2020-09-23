@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 59e11a5e0142647003ea4b0e9f1876ebedb37d00
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417341"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208449"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食品および医薬品管理の CFR Title 21 パート11
 
@@ -71,17 +71,21 @@ FDA CFR Title 21 パート11は、研究、臨床研究、メンテナンス、�
 
 Microsoft によって実装される監査対象のコントロールは、データの機密性、整合性、および可用性を確保し、Microsoft の責任として識別された、Title 21 Part 11 で定義されている該当する規制要件に対応します。 Azure および Office 365 の資格ガイドラインは、Microsoft 監査コントロールがこれらの要件に対応する方法を詳しく説明しています。
 
-**監査人の報告書のコピーはどのようにして入手できますか ?**
+**監査者のレポートのコピーを取得するには、どうすればよいですか。**
 
 [Service Trust Portal](https://aka.ms/stphelp) では、中立的な監査によるコンプライアンス レポートを提供しています。 ポータルを使用して監査レポートを要求することにより、監査者が Microsoft のクラウドサービスの結果を、自分の法律および規制要件と比較できるようにすることができます。
 
 **組織の証明プロセスに Microsoft のコンプライアンスを使用できますか?**
 
-はい、できます。 IEC/ISO 27001、ISO/IEC 27018、SOC 1、および SOC 2 標準に関する、Microsoft の統制の有効性に関する独立したサードパーティのコンプライアンスレポート。 Microsoft enterprise cloud のお客様は、これらの関連するレポートで説明されている監査された制御を、独自の CFR Title 21 Part 11 のリスク分析と認定の取り組みの一部として使用できます。 FDA の規制の対象となるアプリケーションを構築および展開するお客様は、アプリケーションが FDA の要件を満たしていることを確認する責任があります。
+はい。 IEC/ISO 27001、ISO/IEC 27018、SOC 1、および SOC 2 標準に関する、Microsoft の統制の有効性に関する独立したサードパーティのコンプライアンスレポート。 Microsoft enterprise cloud のお客様は、これらの関連するレポートで説明されている監査された制御を、独自の CFR Title 21 Part 11 のリスク分析と認定の取り組みの一部として使用できます。 FDA の規制の対象となるアプリケーションを構築および展開するお客様は、アプリケーションが FDA の要件を満たしていることを確認する責任があります。
 
-**この標準に準拠して管理するための Microsoft の責任は何ですか。**
+**この標準への準拠を維持するうえで Microsoft にはどのような責任がありますか?**
 
 Microsoft は、そのエンタープライズクラウドサービスが、管理 [オンラインサービス用語](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) および該当するサービスレベル契約 (sla) で定義された用語を満たしていることを保証します。 これにより、システムをセキュリティで保護して監視するのに十分な制御を実装および維持する責任が定義されます。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

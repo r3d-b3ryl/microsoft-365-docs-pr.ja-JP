@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bf1297fb955a2f66de0d6e5677668952c8808c5c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416347"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208379"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>米内部収益サービス発行1075
 
@@ -75,6 +75,10 @@ Microsoft は、セキュリティ、プライバシー、運用の各コント�
 **Azure または Office 365 のパブリッククラウド環境を使用できますが、IRS 1075 に準拠しているかどうか。**
 
 いいえ。 FTI が保存および処理できる唯一の環境は、Azure Government または Office 365 米国政府です。 政府機関のお客様は、これらの環境を使用するための資格要件を満たす必要があります。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

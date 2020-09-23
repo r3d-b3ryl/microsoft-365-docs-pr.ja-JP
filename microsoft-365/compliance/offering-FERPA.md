@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417351"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208459"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家族教育機関/プライバシーに関する法律 (お客様)
 
@@ -68,6 +68,10 @@ Microsoft がお客様のデータに「合法的な趣味」を持つ ' school 
 - [連邦レジスタ: という最終規則](https://aka.ms/ferpa-reg) (12 月 2011)
 - [親のための、大き PA の一般的なガイダンス](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
 
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
+
 ## <a name="resources"></a>リソース
 
 - [家族教育の権利とプライバシーに関する法律](https://www.ed.gov/policy/gen/guid/fpco/ferpa/index.html)
@@ -75,5 +79,5 @@ Microsoft がお客様のデータに「合法的な趣味」を持つ ' school 
 - [連邦レジスタ: お金の最終ルール](https://aka.ms/ferpa-reg)
 - [Microsoft Azure 用の、お持ちの Microsoft Azure 向けの実装ガイド](https://aka.ms/azureferpa)
 - [Azure の PA コンプライアンスフレームワークマッピング](https://aka.ms/AzureFERPAMapping)
-- [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)
+- [マイクロソフト オンライン サービス条件](https://aka.ms/Online-Services-Terms)
 - [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

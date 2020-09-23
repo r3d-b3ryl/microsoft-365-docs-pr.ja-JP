@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54d188aa84cd6bc2614489dbbc3a969d30b40342
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417039"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208419"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>Health Information Trust アライアンス (HITRUST) Common Security Framework (CSF)
 
@@ -74,7 +74,7 @@ HITRUST MyCSF ツールで、Azure の完全に継承または共有の責任の
 
 **Azure HITRUST コンプライアンスを使用して組織の証明プロセスに基づいて構築できますか?**
 
-はい、できます。 Microsoft サービスに展開された実装のための HITRUST 証明書が必要な場合は、コンプライアンス評価を実施する際に、Azure HITRUST への準拠に基づいて構築できます。 ただし、組織内の HITRUST の要件と制御を評価する責任があります。
+はい。 Microsoft サービスに展開された実装のための HITRUST 証明書が必要な場合は、コンプライアンス評価を実施する際に、Azure HITRUST への準拠に基づいて構築できます。 ただし、組織内の HITRUST の要件と制御を評価する責任があります。
 
 **HITRUST 証明書のコピーを取得するにはどうすればよいですか?**
 
@@ -102,6 +102,10 @@ Office 365 のような SaaS にデータを格納すると、Microsoft と組�
 **Microsoft と連携するにはどうすればよいですか?**
 
 HITRUST MyCSF®ツールにログインして、Microsoft Azure でホストされているソリューションの評価を事前に設定します。これには、完全に継承された Azure または共有責任のコントロールがあります。 Microsoft HITRUST 管理者は、MyCSF®ツールで自分のアカウントを使用して、評価の各部分を完了します。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

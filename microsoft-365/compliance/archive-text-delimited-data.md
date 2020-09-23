@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet から Microsoft 365 にテキスト区切りのデータをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 6a7c8a23fdf78ccac21e1cae68dbc6b971bd6486
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 854e678067a26fd5fa1f89eb4b2f4f0327eac7a0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405608"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196576"
 ---
-# <a name="set-up-a-connector-to-archive-text-delimited-data-preview"></a>テキスト区切りのデータをアーカイブするようにコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-text-delimited-data"></a>テキスト区切りのデータをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、テキスト区切りのデータを Microsoft 365 組織のユーザーのメールボックスにインポートおよびアーカイブします。 [Globanet](https://globanet.com/merge1/) には、サードパーティのデータソースからアイテムを取得するように構成されたテキスト区切りコネクタがあり (定期的に)、それらのアイテムを Microsoft 365 にインポートします。 コネクタは、コンテンツをテキスト区切りデータソースから電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
@@ -92,4 +91,4 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

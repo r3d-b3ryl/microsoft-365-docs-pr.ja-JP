@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132171"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198360"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -91,9 +91,9 @@ Microsoft 365 ソリューションカタログにアクセスするには、に
 
 既存のコンプライアンスソリューションを探しており、Microsoft 365 コンプライアンスセンターでは利用できない場合は、にアクセスすることで、既存のセキュリティコンプライアンスセンターのソリューションにいつでもアクセスでき &amp; [https://protection.office.com](https://protection.office.com) ます。 または、Microsoft 365 コンプライアンスセンターの左側のナビゲーションにある [ **その他のリソース** ] タブをクリックして、Office 365 セキュリティ/コンプライアンスセンターカードを選択することもできます。  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-- お客様の組織での重要な標準および規制への準拠状況を理解するために役立つ、個人のリスクベースのスコアである**Microsoft のコンプライアンススコアを確認**します。 コンプライアンスの全体的な姿勢を強化するために推奨されるアクションを提供し、それらのアクションを効率的に実行できるようにするためのワークフロー機能を提供します。 詳細については、「 [コンプライアンススコア (プレビュー)](compliance-score.md)」を参照してください。
+- **Microsoft コンプライアンスマネージャーにアクセス**して、組織の重要な標準および規制へのコンプライアンスの状態を理解することができます。 コンプライアンスの全体的な姿勢を強化するために推奨されるアクションを提供し、それらのアクションを効率的に実行できるようにするためのワークフロー機能を提供します。 詳細については、「 [コンプライアンスマネージャー](compliance-manager.md)」を参照してください。
 
 - 内部のリスクを最小限に抑えるために**insider リスク管理ポリシーを構成**し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理](insider-risk-management.md)」を参照してください。
 

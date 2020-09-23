@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet の Merge1 サイトにアーカイブされた Facebook からのデータを Microsoft 365 にインポートしてアーカイブするためのコネクタを設定できます。 コネクタを設定するには、Globanet を使用する必要があります。このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、およびアイテム保持ポリシーなどのコンプライアンス機能を使用して組織のサードパーティデータを管理することができます。
-ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: cea8f7549bbf1ed19bc3de6fe4d1e1c63f1be4cd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405488"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195584"
 ---
-# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>Facebook データからワークプレースをアーカイブするようにコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Facebook データからワークプレースをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、Facebook から Microsoft 365 組織のユーザーのメールボックスにデータをインポートし、アーカイブします。 Globanet は、サードパーティのデータソースからアイテムを取得するように構成された [Facebook](https://globanet.com/workplace/) コネクタ (定期的に) を提供し、それらのアイテムを Microsoft 365 にインポートします。 コネクタは、職場からのチャット、添付ファイル、投稿、ビデオなどのコンテンツを電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーメールボックスにインポートします。
 
@@ -94,4 +93,4 @@ Facebook コネクタから Workplace を作成した後、Microsoft 365 コン�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

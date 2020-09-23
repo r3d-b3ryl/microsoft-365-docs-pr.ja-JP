@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet から Microsoft 365 に EML データをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 99b32960b46853ed4766c255e36df05c8fe9086a
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c11d66774a61fa20a533b5c906b3c8601659c1fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405598"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200220"
 ---
-# <a name="set-up-a-connector-to-archive-eml-data-preview"></a>EML データをアーカイブするようにコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-eml-data"></a>EML データをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、EML データを Microsoft 365 組織のユーザーのメールボックスにインポートおよびアーカイブします。 EML は、ファイルに保存される電子メールメッセージのファイル拡張子です。 コネクタは、アイテムのコンテンツをソース形式から電子メールメッセージ形式に変換し、そのアイテムをユーザーメールボックスにインポートします。
 
@@ -90,4 +89,4 @@ EML コネクタを作成した後、Microsoft 365 コンプライアンスセ�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

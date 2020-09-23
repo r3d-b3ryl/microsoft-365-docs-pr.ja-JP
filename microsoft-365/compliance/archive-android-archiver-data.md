@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Android 携帯電話から SMS、MMS、音声通話をインポートしてアーカイブするための TeleMessage コネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: 2284e09b3f04bf135435407a842f3e2c3f0648fa
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 35ff69ec3b8f0af5ed86350862bb7b0917a98909
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362100"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200262"
 ---
-# <a name="set-up-a-connector-to-archive-android-mobile-data-preview"></a>Android mobile データをアーカイブするためのコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-android-mobile-data"></a>Android モバイルデータをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、SMS、MMS、音声通話、および通話ログを Android 携帯電話からインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の TeleMessage アカウントに毎日接続し、TeleMessage Android Archiver を使用して従業員のモバイルコミュニケーションを Microsoft 365 のメールボックスにインポートします。
 
@@ -84,4 +83,4 @@ Android の通信データをアーカイブするために必要ないくつか
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

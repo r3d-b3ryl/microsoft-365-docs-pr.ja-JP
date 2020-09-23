@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1bdd6770c033abe7a2bf714029b2a4075fada249
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415739"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208128"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>カリフォルニア州消費者プライバシー法 (CCPA)
 
@@ -68,7 +68,7 @@ CCPA の旅を開始するには、情報の検出に重点を置き、個人情
 
 **GDPR と CCPA の違いは何ですか?**
 
-さまざまな違いがあります。 次のような類似点があります。
+さまざまな違いがあります。 次のような類似点に注目することが容易になります。
 
 - 透明性/暴露義務、
 - データのコピーに対するアクセス、削除、および受信のためのコンシューマー権限
@@ -93,9 +93,9 @@ CCPA には、次のように、個人情報を収集、転送、販売する規
 - CCPA は、13 歳未満の子供に対して、児童オンラインプライバシー保護法 (COPPA) と一致する、保護者による同意の義務を導入しています。
 - 16歳から16歳の子供の場合、CCPA は子からオプトイン同意を得るための新しい責務を課しています。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[ccpa テンプレート](https://go.microsoft.com/fwlink/?linkid=2118004)を選択して、組織がこの規制の要件を満たすことができるようにします。
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

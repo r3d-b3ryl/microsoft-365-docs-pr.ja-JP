@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、ICE チャットツールから Microsoft 365 にデータをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: b6b31c0ef9b083aa6432e35029fc14be1a817733
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358229"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196370"
 ---
-# <a name="set-up-a-connector-to-archive-ice-chat-data-preview"></a>コネクタを設定してアーカイブ ICE チャットデータ (プレビュー)
+# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>ICE チャットデータをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターのネイティブコネクタを使用して、ICE チャットコラボレーションツールから金融サービスチャットデータのインポートとアーカイブを行います。 コネクタをセットアップして構成した後は、組織の ICE チャットセキュリティで保護された FTP (SFTP) サイトに毎日接続して、チャットメッセージの内容を電子メールメッセージの形式に変換してから、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
@@ -59,7 +59,7 @@ ICE チャットデータをアーカイブするために必要な実装手順�
 
 1. [https://compliance.microsoft.com](https://compliance.microsoft.com)左側のナビゲーションに移動し、[**データコネクタ**] をクリックします。
 
-2. [ **データコネクタ] (プレビュー)** ページの [ **着氷チャット**] で、[ **表示**] をクリックします。
+2. [ **データコネクタ** ] ページの [ **着氷チャット**] で、[ **表示**] をクリックします。
 
 3. [ **ICE チャット** ] ページで、[ **コネクタの追加**] をクリックします。
 

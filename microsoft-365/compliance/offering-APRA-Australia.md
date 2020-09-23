@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 079fb69eb4d8fd41b9493d8bf992084640f2835a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417751"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208659"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>オーストラリア Prudential 規制機関 (APRA)
 
@@ -86,7 +86,11 @@ APRA の規制に準拠して、データとワークロードを Azure に移�
 
 **オーストラリア外のデータの転送は許可されていますか?**
 
-はい、できます。 一般的なプライバシーに関する法律 (金融機関だけでなく、すべてのセクターに適用されます) では、特定の条件下でオーストラリア外での転送が許可されます。 Microsoft は、Microsoft クラウドサービスを使用するときにオーストラリア外のデータの転送が許可されるように、オーストラリアのプライバシー原則に基づいて用語を契約することに同意します。 しかし、オーストラリアの金融サービスを利用しているお客様の多くは、オーストラリアの地域で利用できるクラウドサービスを活用しています。これにより、rest に関するデータのカテゴリをオーストラリアの地域に格納するために、特定の契約上のコミットメントを得ることができます。 これらのコミットメントについては、 [コンプライアンスチェックリスト](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)でさらに詳しく説明されています。
+はい。 一般的なプライバシーに関する法律 (金融機関だけでなく、すべてのセクターに適用されます) では、特定の条件下でオーストラリア外での転送が許可されます。 Microsoft は、Microsoft クラウドサービスを使用するときにオーストラリア外のデータの転送が許可されるように、オーストラリアのプライバシー原則に基づいて用語を契約することに同意します。 しかし、オーストラリアの金融サービスを利用しているお客様の多くは、オーストラリアの地域で利用できるクラウドサービスを活用しています。これにより、rest に関するデータのカテゴリをオーストラリアの地域に格納するために、特定の契約上のコミットメントを得ることができます。 これらのコミットメントについては、 [コンプライアンスチェックリスト](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)でさらに詳しく説明されています。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

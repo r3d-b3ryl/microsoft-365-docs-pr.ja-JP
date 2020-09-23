@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、TeleMessage コネクタを設定して、Microsoft 365 で WhatsApp データをインポートおよびアーカイブすることができます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: fbd0e30cf8016da9479d5f1e24715d2e2aaa628c
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361872"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199160"
 ---
-# <a name="set-up-a-connector-to-archive-whatsapp-data-preview"></a>WhatsApp データをアーカイブするためのコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-whatsapp-data"></a>WhatsApp データをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、WhatsApp 通話、チャット、添付ファイル、ファイル、および削除されたメッセージのインポートとアーカイブを行います。 コネクタをセットアップして構成した後は、組織の TeleMessage アカウントに毎日接続し、Microsoft 365 の TeleMessage WhatsApp 電話アーカイバまたは TeleMessage WhatsApp Cloud Archiver を使用して従業員のモバイルコミュニケーションをインポートします。
 
@@ -86,4 +85,4 @@ WhatsApp 通信データをアーカイブするために必要ないくつか�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

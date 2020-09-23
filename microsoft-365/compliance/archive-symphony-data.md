@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet Symphony から Microsoft 365 にデータをインポートしてアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 でサードパーティのデータソースからデータをアーカイブできるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: ade08b0f6f82bb2c76cdaf033e276909b5ec2122
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: fd44575aa34ea6f6180c5eabdbb286a3b8380d33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405532"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196734"
 ---
-# <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>Symphony データをアーカイブするためのコネクタを設定する (プレビュー)
+# <a name="set-up-a-connector-to-archive-symphony-data"></a>Symphony データをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、Symphony データを Microsoft 365 組織のユーザーのメールボックスにインポートおよびアーカイブします。 Symphony は、金融サービス業界で使用されるメッセージングおよびコラボレーションのプラットフォームです。 Globanet は、Microsoft 365 コンプライアンスセンターで、サードパーティのデータソースからアイテムを取得するように構成できる [Symphony データコネクタ](https://globanet.com/symphony) を (定期的に) 提供し、それらのアイテムをユーザーのメールボックスにインポートします。 コネクタは、アイテムのコンテンツを Symphony アカウントから電子メールメッセージ形式に変換し、そのアイテムを Microsoft 365 のメールボックスにインポートします。
 
@@ -90,4 +89,4 @@ Symphony コネクタを作成した後、Microsoft 365 コンプライアンス
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

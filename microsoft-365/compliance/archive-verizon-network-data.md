@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Microsoft 365 の Verizon ネットワークから SMS および MMS データをインポートしてアーカイブするための TeleMessage コネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: c088adbd0e0a5d4a46b3f7ddb3d64d3f8c32c8dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361832"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196556"
 ---
-# <a name="set-up-a-connector-to-archive-verizon-network-data-preview"></a>コネクタを設定して Verizon ネットワークデータをアーカイブする (プレビュー)
+# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>Verizon ネットワークデータをアーカイブするためのコネクタの設定
 
 Microsoft 365 コンプライアンスセンターの TeleMessage コネクタを使用して、Verizon ネットワークからの短いメッセージングサービス (SMS) およびマルチメディアメッセージングサービス (MMS) データのインポートとアーカイブを行います。 コネクタをセットアップして構成した後は、組織の Verizon ネットワークに毎日接続し、SMS および MMS データを Microsoft 365 のメールボックスにインポートします。
 
@@ -88,4 +87,4 @@ Verizon ネットワークデータをアーカイブするために必要ない
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。

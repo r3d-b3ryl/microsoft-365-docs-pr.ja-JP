@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 03a48dc757b8028fe0391bdc8f0469b8632f0f61
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417331"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208649"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>オーストラリア自治体情報セキュリティ登録された査定者プログラム (IRAP)
 
@@ -50,7 +50,7 @@ Microsoft の Azure、Dynamics 365 CRM、および Office 365 は、未分類の
 
 Microsoft は、Microsoft の IT 運用チーム、物理データセンター、侵入検知、暗号化、クロスドメインおよびネットワークセキュリティ、アクセス制御、および情報セキュリティリスク管理 (スコープ内サービス) によって使用されるセキュリティ制御とプロセスを調査する、ACSC 認定の IRAP 評価者を参加しています。 IRAP 評価では、Microsoft システムアーキテクチャがサウンドセキュリティ原則に基づいており、適用されているオーストラリア政府情報セキュリティマニュアル (ISM) コントロールが適切に設定されており、評価されたサービス内で完全に有効になっていることがわかりました。
 
-ISM で使用されるリスク管理フレームワークは、 [米国国立標準技術者 (NIST) 特別文書 (SP) 800-37 リビジョンの](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)セキュリティとプライバシーのためのシステムライフサイクル手法の1つである、「情報システムと組織のリスク管理フレームワーク」からのものです。 このリスク管理フレームワークでは、さまざまなリスク管理基準 [(国際標準化機構 (ISO) 31000:2018、リスク管理-ガイドライン](https://www.iso.org/standard/65694.html)など) を使用して、リスクおよびセキュリティ制御の選択を特定できます。 広く使用されているリスク管理フレームワークには、次の6つの手順が含まれています。
+ISM で使用されるリスク管理フレームワークは、 [米国国立標準および技術 (NIST) 特別な文書 (SP) 800-37](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)のリスク管理フレームワークから、セキュリティとプライバシーを保護するためのシステムライフサイクルアプローチを示しています。 このリスク管理フレームワークでは、さまざまなリスク管理基準 [(国際標準化機構 (ISO) 31000:2018、リスク管理ガイドライン](https://www.iso.org/standard/65694.html)など) を使用して、リスクおよびセキュリティ制御の選択を特定できます。 広く使用されているリスク管理フレームワークには、次の6つの手順が含まれています。
 
 - システムを定義する
 - セキュリティコントロールを選択する
@@ -76,7 +76,7 @@ IRAP は、クラウドサービスを使用するすべてのオーストラリ
 
 **組織のリスク評価および承認プロセスにおいて、Microsoft のコンプライアンスを使用できますか。**
 
-はい、できます。 組織で、ISM を使用して運用するための承認を必要とする場合、またはその要求を求める場合は、リスク評価で Azure と Office 365 の IRAP セキュリティ評価を使用できます。 できます。しかし、Microsoft のプラットフォームに展開された実装を評価するための査定官と、自分の組織内の統制およびプロセスについて評価する責任を担います。
+はい。 組織で、ISM を使用して運用するための承認を必要とする場合、またはその要求を求める場合は、リスク評価で Azure と Office 365 の IRAP セキュリティ評価を使用できます。 できます。しかし、Microsoft のプラットフォームに展開された実装を評価するための査定官と、自分の組織内の統制およびプロセスについて評価する責任を担います。
 
 **組織のリスク評価と、運用の承認については、どこから始めますか?**
 
@@ -86,9 +86,9 @@ IRAP は、クラウドサービスを使用するすべてのオーストラリ
 - [IRAP トレーニングを提供するのは誰ですか?](https://acsc.gov.au/infosec/irap/training.htm)
 - [コンプライアンスおよびコンプライアンス違反の要件情報](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[irap テンプレート](https://go.microsoft.com/fwlink/?linkid=2117913)を選択して、組織がこの規制の要件を満たすのを支援します。
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

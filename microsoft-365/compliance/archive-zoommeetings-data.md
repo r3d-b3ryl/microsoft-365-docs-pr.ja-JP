@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Globanet の会議から Microsoft 365 にデータをインポートしてアーカイブするためのコネクタを設定できます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: c7052e7f51108cac93ad8d87402a07acd12df28a
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: a94d0a776af05b609816d3fdbfede869018fa30a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956234"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196360"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>アーカイブへのコネクタの設定アーカイブ会議データ (プレビュー)
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>会議データをアーカイブするためのコネクタを設定するズームする
 
 Microsoft 365 コンプライアンスセンターの Globanet コネクタを使用して、ズーム会議のデータを Microsoft 365 組織のユーザーのメールボックスにインポートし、アーカイブします。 Globanet では、サードパーティのデータソースからアイテムを取得するように構成された (定期的に)、そのアイテムをズームするための [会議](https://globanet.com/zoom/) コネクタが用意されており、それらのアイテムを Microsoft 365 にインポートします。 コネクタは会議のコンテンツ (チャット、記録されたファイル、およびメタデータを含む) を電子メールメッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザーメールボックスにインポートします。
 
@@ -40,7 +39,7 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 4. このコネクタは、手順3で説明されているように、 *電子メール* プロパティの値と自動ユーザーマッピングを使用して、変換された会議アイテムを特定のユーザーのメールボックスにインポートします。 ユーザーのメールボックスには、" **ズーム会議** " という名前の受信トレイフォルダーに新しいサブフォルダーが作成され、会議アイテムはそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用してこれを実行します。 すべての会議アイテムには、会議のすべての参加者の電子メールアドレスが設定されたこのプロパティが含まれています。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft コネクタ用の Globanet Merge1 アカウントを作成します。 これを行うには、 [Globanet カスタマーサポート](https://globanet.com/ms-connectors-contact)にお問い合わせください。 手順1でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
@@ -102,6 +101,6 @@ Microsoft 365 コンプライアンスセンターの Globanet コネクタを�
 
 ## <a name="known-issues"></a>既知の問題
 
-- 現時点では、10 MB を超える添付ファイルのインポートをサポートしていませんが、より大きいアイテムのサポートは後日提供されます。
+- 現時点では、10 MB を超える添付ファイルやアイテムのインポートはサポートされていません。 より大きいアイテムのサポートは、後日提供されます。
 
 - 会議のズームコネクタを機能させるには、ズーム会議を設定するときに録画を有効にする必要があります。

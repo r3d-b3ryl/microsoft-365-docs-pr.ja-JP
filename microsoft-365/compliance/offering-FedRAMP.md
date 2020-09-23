@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c91c71f199ef36c1c9a0da023c7b26d6cb64282e
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415781"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208439"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Federal Risk and Authorization Management Program (FedRAMP)
 
@@ -70,7 +70,7 @@ Dynamics 365 米国政府機関は、米国の米国国防省、都市開発 (HU
 - Intune
 - [Office 365 および Office 365 U.S. Governmen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 米国防総省
-- Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに組み込まれているサービス)
+- スタンドアロン サービスとして、または Office 365 ブランドのプランまたはスイートとして含まれる Power BI クラウド サービス
 - Microsoft Defender ATP
 
 > [!NOTE]
@@ -107,11 +107,11 @@ FISMA は、FISMA 要件に準拠している組織からのみ情報システ�
 
 **代理店の承認プロセスで Microsoft のコンプライアンスを使用できますか?**
 
-はい、できます。 連邦政府機関からの ATO を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書を使用することができます。 ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
+はい。 連邦政府機関からの ATO を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書を使用することができます。 ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンススコアを設定](compliance-score-setup.md)した後、[**テンプレート**] ドロップダウンメニューから事前に構成された[fedramp テンプレート](https://go.microsoft.com/fwlink/?linkid=2118102)を選択して、組織がこの規制の要件を満たすのを支援します。
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 

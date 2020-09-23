@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416419"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208619"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事司法 Information Services (CJIS) セキュリティポリシー
 
@@ -77,6 +77,10 @@ Microsoft は、状態 CJIS Systems Agency (CSA) を使用して、情報契約�
 **エージェンシーのコンプライアンスの取り組みはどこで開始しますか?**
 
 [Cjis セキュリティポリシー](https://aka.ms/cjis-security-policy) には、CJI を保護するためにエージェンシーが講じる必要のある対策が含まれています。 さらに、Microsoft アカウント担当者は、管轄区の要件を熟知したユーザーと連絡を取ります。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
 
 ## <a name="resources"></a>リソース
 
