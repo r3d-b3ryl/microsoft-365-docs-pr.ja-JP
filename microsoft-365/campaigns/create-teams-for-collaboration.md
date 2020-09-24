@@ -1,8 +1,8 @@
 ---
-title: 共同作業のためのチームの作成
+title: 共同作業のためのチームを作成する
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: samanro
 author: samanro
 manager: scotv
 ms.audience: Admin
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams を使用してチームのコラボレーションスペースを作成します。
-ms.openlocfilehash: c5c484b2787bf3e819a723a3b5648106dcf75602
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 7a07b7b90f5c89f6b1c6a6dd17145ca11af5dfa6
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079787"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245847"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Microsoft Teams での共同作業のためのチームの作成
 
@@ -48,8 +48,8 @@ Microsoft Teams は、任意のデバイスから、スタッフが開催し、�
 
 チームを作成する場合は、次のように作成します。
 
-- 新しい[Microsoft 365 グループ](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- チームファイルを保存するための[SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)サイトとドキュメントライブラリ
+- 新しい [Microsoft 365 グループ](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- チームファイルを保存するための [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) サイトとドキュメントライブラリ
 - [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)の共有メールボックスと予定表
 - OneNote ノートブック
 - Planner や Power BI などの他の Office 365 アプリに結びつける

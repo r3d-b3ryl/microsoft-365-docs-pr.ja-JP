@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: '[安全なリンク] 機能を使用すると、Office ドキュメントや電子メールメッセージ内のハイパーリンクの時間を確認できます。 ATP の安全なリンクのしくみについては、この記事をお読みください。'
-ms.openlocfilehash: 09357b20173e2609587137764737c8aba044190e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e19d3a1f93d11cd9873e6b5fad9952b018e0a481
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201470"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245883"
 ---
 # <a name="how-atp-safe-links-works"></a>ATP の安全なリンク機能のしくみ
 
@@ -30,7 +30,7 @@ ms.locfileid: "48201470"
 > [!IMPORTANT] 
 > Office 365 の ATP の安全なリンクが正しく動作するためには、すべてのサービスが同じバージョンになっている必要があります。
          
-## <a name="how-atp-safe-links-works"></a>ATP の安全なリンク機能のしくみ
+## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP の安全なリンクが電子メール内の Url と連携する方法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
  メール内の Url
@@ -57,10 +57,7 @@ ms.locfileid: "48201470"
     
    - URL が安全であると判断された場合は、web サイトが開きます。
     
-## <a name="how-atp-safe-links-works"></a>ATP の安全なリンク機能のしくみ
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
- Office ドキュメント内の Url の場合 
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Office ドキュメントの Url で ATP の安全なリンクが機能するしくみ
 
 高レベルでは、エンタープライズまたはビジネスプレミアムアプリケーション用の Microsoft 365 アプリ (Windows、Mac、またはブラウザー、iOS または Android デバイス上の Office アプリ、ブラウザーでの OneNote) の Url に対して、 [ATP の安全なリンク](atp-safe-links.md) 保護がどのように機能するかについて説明します。
   
