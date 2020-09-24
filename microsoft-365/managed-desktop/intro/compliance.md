@@ -9,18 +9,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5314cf21d94513cfab664279d11438e86e67231e
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 7674777214cb5684bb02039f739458352bc701ad
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530189"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262281"
 ---
 # <a name="compliance"></a>コンプライアンス
 
 Microsoft マネージドデスクトップをサービスとして使用すると、Microsoft によってコンプライアンスの包括的な一連のサービスが提供されます。 この取り組みにより、組織はさまざまなコンプライアンス要件に準拠します。
 
-## <a name="compliance-offerings"></a>コンプライアンス認証
+## <a name="compliance-coverage"></a>コンプライアンスの適用範囲
 
 Microsoft マネージドデスクトップでは、次の資格が得られました。
 
@@ -38,11 +38,11 @@ Microsoft マネージドデスクトップでは、次の資格が得られま�
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>監査者レポートとコンプライアンス証明書
 
-[Service Trust Portal (STP)](https://servicetrust.microsoft.com/)には、Microsoft クラウドサービスの提供に関する情報を提供する中心的なリポジトリであるコントロールと技術の要件を含む、関連情報を見つけることができます。 [監査レポート]、[コンプライアンス証明書] など、STP の [[監査レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)] セクションからダウンロードできます。
+[Service Trust Portal (STP)](https://servicetrust.microsoft.com/)には、Microsoft クラウドサービスの提供に関する情報を提供する中心的なリポジトリであるコントロールと技術の要件を含む、関連情報を見つけることができます。 [監査レポート]、[コンプライアンス証明書] など、STP の [ [監査レポート](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) ] セクションからダウンロードできます。
 
 > [!NOTE]
 > Microsoft マネージドデスクトップは Azure 上で実行されるため、関連するドキュメントには、通常、"Microsoft Azure, Dynamics 365 やその他のオンラインサービス" などのファイル名が含まれています。 これらのドキュメントでは、通常、"Microsoft Online Services" または "Monitoring + Management" というカテゴリの下に Microsoft Managed Desktop を検索できます。
 
 ## <a name="shared-responsibility"></a>共有の責任
 
-クラウドサービスのコンプライアンスは、クラウドサービスプロバイダーとお客様との間で共有される責任があります。 詳細については、TechNet ギャラリーの「[クラウドコンピューティングの共有責任](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91)」を参照してください。
+クラウドサービスのコンプライアンスは、クラウドサービスプロバイダーとお客様との間で共有される責任があります。 詳細については、TechNet ギャラリーの「 [クラウドコンピューティングの共有責任](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91) 」を参照してください。

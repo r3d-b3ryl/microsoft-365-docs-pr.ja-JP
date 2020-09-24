@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289711"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262219"
 ---
 # <a name="device-configuration"></a>デバイス構成
 
@@ -42,7 +42,7 @@ Microsoft Managed デスクトップ推奨セキュリティテンプレート |
 従量制課金接続 | 既定では、従量制課金接続 (LTE ネットワークなど) での更新はオフになっていますが、各ユーザーは **[設定 > 更新 > プログラム] の [詳細オプション]** でこの機能を個別に有効にすることができます。 すべてのユーザーが従量制課金接続での更新を有効にできるようにするには、 [変更要求を送信](../working-with-managed-desktop/admin-support.md)します。これにより、すべてのデバイスに対してこの設定が有効になります。
 | デバイスのポリシー準拠 | これらのポリシーは、すべての Microsoft マネージドデスクトップデバイスに対して構成されます。 デバイスは、必要なセキュリティ構成から drifts されている場合に、準拠していないと報告されます。
 
-## <a name="diagnostic-data"></a>診断ログ
+## <a name="windows-diagnostic-data"></a>Windows 診断データ
 
  デバイスは、既知の商用識別子の下に拡張診断データを Microsoft に提供するように設定されます。 Microsoft マネージドデスクトップの一部として、IT 管理者はこれらの設定を変更できません。 一般的なデータ保護規則 (GDPR) 地域のお客様の場合、ユーザーは提供される診断データのレベルを下げることができますが、サービスが減少します。 たとえば、Microsoft マネージドデスクトップでは、パフォーマンスとセキュリティのニーズを満たすために、設定とポリシーを反復処理するために必要なデータを収集することはできません。 詳細については、「[組織で Windows 診断データを構成する](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)」を参照してください。
 
