@@ -498,6 +498,8 @@
               href: ./office-365-security/attack-simulator.md
             - name: Office 365 ATP の安全なドキュメント
               href: ./office-365-security/safe-docs.md
+            - name: Office 365 ATP のユーザー タグ
+              href: ./office-365-security/user-tags.md
             - name: 脅威エクスプローラー (およびリアルタイムの検出)
               href: ./office-365-security/threat-explorer.md
               items:
