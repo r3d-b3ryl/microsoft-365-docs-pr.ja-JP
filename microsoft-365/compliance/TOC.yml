@@ -14,6 +14,8 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Office 365 でセキュリティとコンプライアンスを計画する
       href: plan-for-security-and-compliance.md
+    - name: コンプライアンス拡張性
+      href: compliance-extensibility.md
 - name: インサイダー リスクを管理する
   items:
     - name: インサイダー リスクの管理
@@ -258,6 +260,8 @@
               href: retention-policies-sharepoint.md
             - name: Microsoft Teams の保持
               href: retention-policies-teams.md
+            - name: Yammer の保持
+              href: retention-policies-yammer.md
             - name: Exchange の保持
               href: retention-policies-exchange.md
         - name: 保持の概要
@@ -310,8 +314,52 @@
               href: archive-instant-bloomberg-data.md
             - name: LinkedIn
               href: archive-linkedin-data.md
+            - name: 物理的 バッジデータ
+              href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
+        - name: Globanet データコネクタ
+          items:
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX 接続
+              href: archive-fxconnect-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: 余裕期間
+              href: archive-slack-data.md
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: 区切られたテキスト
+              href: archive-text-delimited-data.md
+            - name: Webex チーム
+              href: archive-webexteams-data.md
+            - name: Facebookからの職場
+              href: archive-workplacefromfacebook-data.md
+            - name: Zoom会議
+              href: archive-zoommeetings-data.md
+            - name: 余裕期間
+              href: archive-slack-data.md
+            - name: Zoom会議
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage データコネクタ
+          items:
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: AT&T のネットワーク
+              href: archive-att-network-archiver-data.md
+            - name: Bell ネットワーク
+              href: archive-bell-network-data.md
+            - name: エンタープライズ番号
+              href: archive-enterprise-number-data.md
+            - name: O2 ネットワーク
+              href: archive-o2-network-data.md
+            - name: TELUS ネットワーク
+              href: archive-telus-network-data.md
+            - name: Verizon ネットワーク
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: パートナーと共同作業して、サード パーティのデータをアーカイブする
           href: work-with-partner-to-archive-third-party-data.md
         - name: サード パーティ データを検索する
@@ -794,31 +842,30 @@
       href: alert-policies.md
 - name: コンプライアンス リスクの管理
   items:
+    - name: コンプライアンス マネージャー
+      items:
+        - name: コンプライアンスマネージャーの詳細
+          href: compliance-manager.md
+        - name: コンプライアンスマネージャー用クイックスタート
+          href: compliance-manager-quickstart.md
+        - name: コンプライアンス マネージャーの使用を開始する
+          href: compliance-manager-setup.md
+        - name: 評価の作成と管理
+          href: compliance-manager-assessments.md
+        - name: 評価テンプレートの使用
+          href: compliance-manager-templates.md
+        - name: コンプライアンスマネージャーテンプレートの一覧
+          href: compliance-manager-templates-list.md
+        - name: 改善アクションの割り当てと完了
+          href: compliance-manager-improvement-actions.md
+        - name: コンプライアンススコアの計算方法
+          href: compliance-score-calculation.md
+        - name: よく寄せられる質問 (FAQ)
+          href: compliance-manager-faq.md
+        - name: コンプライアンス マネージャー (クラシック)
+          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: コンプライアンス スコアおよびコンプライアンス マネージャー (プレビュー)
-      items:
-        - name: コンプライアンス スコア (プレビュー)
-          href: compliance-score.md
-        - name: コンプライアンス スコアを設定する
-          href: compliance-score-setup.md
-        - name: 評価を使用してコンプライアンス スコアをカスタマイズする
-          href: compliance-score-assessments.md
-        - name: 改善アクションを割り当てて作業を実行する
-          href: compliance-score-improvement-actions.md
-        - name: スコアの計算方法
-          href: compliance-score-methodology.md
-        - name: よく寄せられる質問 (FAQ)
-          href: compliance-score-faq.md
-        - name: コンプライアンス マネージャー (プレビュー)
-          href: compliance-manager-overview.md
-          items:
-            - name: コンプライアンス マネージャーの新機能 (プレビュー)
-              href: compliance-manager-release-notes.md
-            - name: コンプライアンス マネージャーと共同作業する (プレビュー)
-              href: working-with-compliance-manager.md
-            - name: コンプライアンス マネージャー (クラシック)
-              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR データ主体の要求ツール
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: GDPR のための Office 365 の情報保護
