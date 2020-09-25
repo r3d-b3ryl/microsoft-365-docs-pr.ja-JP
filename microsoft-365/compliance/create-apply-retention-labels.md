@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順
-ms.openlocfilehash: 2394ee4534ef837488503aae2558964924b2de6b
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 478a0d9952d8e8e33ef88926ba2415276338c193
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816916"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198516"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> このシナリオは、 [法的レコード](records-management.md#records)を含むすべての保持ラベル構成に対してサポートされています。
 
 以下の情報を参考に [保持ラベル](retention.md) を作成して発行し、ドキュメントやメールに適用します。
 
@@ -68,7 +71,7 @@ ms.locfileid: "47816916"
     
     - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
     
-    - 保持ラベルを使用して[レコード](records-management.md#records)を宣言するには、[**アイテムをレコードとしてマークする**] オプションを有効にします。
+    - 保持ラベルを使用してレコードを宣言するには、 **アイテムをレコードとしてマーク**、または**規制レコードとしてマーク**を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
 
 3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[**今すぐラベルを保存する**] を選択し、[**完了**] を選択します。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、Microsoft 365 で電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する論理的な境界を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8aaa1128788ba8f2f4ece7fb54f886595770c01
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357769"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269396"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -55,7 +55,7 @@ ms.locfileid: "47357769"
 [手順 4: コンプライアンスの境界を適用するための検索アクセス許可フィルターを作成する](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [手順 5: エージェンシー内の調査用に電子情報開示ケースを作成する](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
-  
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>手順 1: ユーザー属性を識別して、機関を定義する
 
 最初の手順として、を使用する Azure Active Directory 属性を選択して、その機関を定義します。 この属性は、この属性に特定の値が割り当てられているユーザーのコンテンツの場所のみを検索するように電子情報開示マネージャーを制限する検索アクセス許可フィルターを作成するために使用されます。 たとえば、Contoso 社が **Department** 属性の使用を決定したとします。 4番目のコーヒー子会社のユーザーのこの属性の値は  `FourthCoffee`  となり、Coho のユーザーの値はとなり `CohoWinery` ます。 手順4では、この  `attribute:value`  ペア (たとえば、 *Department: 4 thコーヒー*) を使用して、電子情報開示マネージャーが検索できるユーザーのコンテンツの場所を制限します。 

@@ -15,17 +15,19 @@ search.appverid:
 - MET150
 description: Microsoft コンプライアンスマネージャーが、リスクに対処するために行われた処置に基づいて個人のスコアを計算する方法を理解し、コンプライアンスの姿勢を改善します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fd71b4953dc40a3c1e7601f42f595488fcef98b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204409"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262270"
 ---
 # <a name="compliance-score-calculation"></a>コンプライアンススコアの計算
 
+**この記事の内容** コンプライアンスマネージャーが組織のコンプライアンススコアを計算する方法について説明します。 この記事では、 **スコアを解釈**する方法、 **データ保護の基準評価** に含まれるもの、 **継続的な監視**方法、および **各種のアクションを管理および採点**する方法について説明します。
+
 > [!IMPORTANT]
-> コンプライアンスマネージャーからの推奨事項は、コンプライアンスの保証として解釈されないようにする必要があります。 お客様は、お客様の規制環境に応じて、カスタマーコントロールの有効性を評価および検証することができます。 これらのサービスは、 [オンラインサービスの用語](https://go.microsoft.com/fwlink/?linkid=2108910)の条件に従います。 [セキュリティとコンプライアンスのための Microsoft 365 ライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)も参照してください。
+> コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 お客様は、お客様の規制環境に応じて、カスタマーコントロールの有効性を評価および検証することができます。 これらのサービスは、 [オンラインサービスの用語](https://go.microsoft.com/fwlink/?linkid=2108910)の条件に従います。 [セキュリティとコンプライアンスのための Microsoft 365 ライセンスガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)も参照してください。
 
 ## <a name="how-to-read-your-compliance-score"></a>コンプライアンススコアの確認方法
 
@@ -108,7 +110,7 @@ ms.locfileid: "48204409"
   
 各アクションは、次のリスクに基づいてコンプライアンスマネージャーで割り当てられた値を持ちます。
 
-|**型**|**割り当てられたスコア**|
+|**Type**|**割り当てられたスコア**|
 |:-----|:-----|
 | 予防必須 | 27 |
 | 予防的裁量 | 9  |

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーの評価を構築して、組織にとって重要な規制や証明書の要件を満たすことができるようにします。
-ms.openlocfilehash: 5bbdba66d2288c173827062aade3bbd196d77040
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204457"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262292"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンスマネージャーで評価を作成および管理する
 
@@ -206,6 +206,9 @@ ms.locfileid: "48204457"
 3. 評価を完全に削除するかどうかを確認するウィンドウが表示されます。 [ **評価の削除** ] を選択してウィンドウを閉じます。 評価がコンプライアンスマネージャーから削除されたことを示す確認ウィンドウが表示されます。
 
 グループ内の唯一の評価を削除した場合、そのグループはコンプライアンスマネージャーからも削除されます。
+
+> [!NOTE]
+> すべての評価を削除することはできません。 組織が適切に機能するには、少なくとも1つのコンプライアンスマネージャーの評価が必要です。 削除する評価が1つだけの場合は、他の評価を削除する前に、別の評価を追加します。
 
 ## <a name="monitor-assessment-progress-and-controls"></a>評価の進行状況と管理を監視する
 

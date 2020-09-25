@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132137"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197340"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -31,6 +31,7 @@ ms.locfileid: "48132137"
 ほとんどの組織では、電子メール、ドキュメント、インスタント メッセージなどのデータの量と複雑さが日々増しています。次の必要性から、これらの情報を効果的に管理することが重要です。
   
 - **最小限の期間コンテンツを保持することを要求する業界の規制や内部ポリシーを積極的に遵守する**: たとえば、米国企業改革法により、特定の種類のコンテンツを 7 年間保持することが求められる場合があります。 
+
 - **訴訟やセキュリティ違反が発生した場合にリスクを軽減する**: このために、保持する必要がなくなった古いコンテンツは完全に削除します。 
     
 - **組織内での効率的な知識の共有と迅速な対応に役立てる**: このために、ユーザーは現時点で関連性のあるコンテンツのみを対象に作業するようにします。 
@@ -58,7 +59,7 @@ ms.locfileid: "48132137"
 
 - Exchange メールボックスの場合: コピーは、**[回復可能なアイテム]** フォルダーに保持されます。 
 
-- Teams のチャネルおよびチャット メッセージの場合: **SubstrateHolds**という名前の隠しフォルダーに Exchange**回復可能アイテム**フォルダー内のサブフォルダーとして保存されます。
+- TeamsとYammerのメッセージ： **SubstrateHolds**という名前の隠しフォルダーに Exchange**回復可能アイテム**フォルダー内のサブフォルダーとして保存されます。
 
 > [!NOTE]
 > アイテム保管ライブラリは、サイトのストレージ クォータから除外されていないストレージを消費します。 SharePoint グループや Microsoft 365 グループに対して保持設定を使用する場合は、ストレージを増やすことが必要な場合があります。
@@ -69,6 +70,7 @@ ms.locfileid: "48132137"
 
 - [SharePoint と OneDrive の保持の詳細](retention-policies-sharepoint.md)
 - [Microsoft Teams の保持の詳細](retention-policies-teams.md)
+- [Yammerの保持の詳細](retention-policies-yammer.md)
 - [Exchange の保持の詳細](retention-policies-exchange.md)
 
 ## <a name="retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベル
@@ -102,6 +104,8 @@ ms.locfileid: "48132137"
 - Exchange パブリック フォルダー
 - チームのチャネル メッセージ
 - Teams のチャット
+- Yammer コミュニティのメッセージ
+- Yammer の個人用メッセージ
 
 複数の場所にも特定の場所やユーザーにも、1 つのポリシーを非常に効率的に適用できます。
     
@@ -214,7 +218,7 @@ SharePoint のドキュメントのデータ損失防止 (DLP) ポリシーの�
    
 Exchange の自動適用保持ラベルは、新しく送信されたメッセージ (転送中のデータ) のみに適用され、現在メールボックスにあるすべてのアイテム (保存データ) には適用されません。 また、機密情報の種類やトレーニング可能な分類子の自動適用保持ラベルはすべてのメールボックスのみに適用でき、特定のメールボックスを選択することはできません。
   
-Exchange パブリック フォルダー、Skype、および Teams チャネルのメッセージとチャットは、保持ラベルをサポートしていません。 これらの場所のコンテンツを保持または削除するには、代わりにアイテム保持ポリシーを使用します。
+Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージは保持ラベルをサポートしていません。 これらの場所のコンテンツを保持または削除するには、代わりにアイテム保持ポリシーを使用します。
 
 #### <a name="only-one-retention-label-at-a-time"></a>一度に 1 つの保持ラベルのみ
 
@@ -265,7 +269,7 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ  |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリ、トレーニング可能な分類子| 不要 | はい |
 |保持の手動適用 | いいえ | はい |

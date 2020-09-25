@@ -8,10 +8,10 @@ f1.keywords:
 - NOCSH
 ms.openlocfilehash: 5a28a77785e7221e309eada149507c32774dc40e
 ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/22/2020
 ms.locfileid: "48195381"
 ---
 > [!IMPORTANT]
-> Microsoft **365 Defender**へようこそ。 **microsoft Threat Protection**の新しい名前です。 この記事とその他の更新プログラムの詳細について [は、こちら](https://www.microsoft.com/security/blog/?p=91813)を参照してください。  近い将来、製品とドキュメントの名前を更新します
+> **Microsoft Threat Protection** の新しい名前である **Microsoft 365 Defender** へようこそ。 Microsoft 365 Defender と他の更新プログラムに関する詳細情報は、[こちら](https://www.microsoft.com/security/blog/?p=91813) をご覧ください。  製品およびドキュメントの名前は、近いうちに更新される予定です
