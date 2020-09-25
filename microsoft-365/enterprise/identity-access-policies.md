@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 6a8ab25a1bce4355e63482b8450412884a9f0faf
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950800"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269407"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -170,6 +170,8 @@ Suppport モダン認証を実行する Microsoft 365 のクライアントの�
 
 ポリシーをテストするには、[ [対象](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) ] ツールを使用することを検討してください。
 
+Exchange Online の場合は、認証ポリシーを使用して [基本認証を無効](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)にすることができます。これにより、すべてのクライアントアクセス要求で先進認証を使用することが強制されます。
+
 ## <a name="high-risk-users-must-change-password"></a>高リスク ユーザーはパスワードを変更する必要がある
 
 すべての危険度の高いユーザーが侵害されたアカウントが、サインイン時にパスワードの変更を強制的に実行するようにするには、次のポリシーを適用する必要があります。
@@ -282,7 +284,7 @@ Intune でコンプライアンスポリシーを作成する詳細な手順に�
 
 **デバイスの > 正常性構成証明サービスの評価ルール**については、次の表を参照してください。
 
-|プロパティ|Value|Action|
+|プロパティ|値|Action|
 |:---------|:-----|:----|
 |BitLocker を必須にする|必須| Select |
 |デバイスでセキュアブートが有効になっていることが必要|必須| Select |
@@ -295,29 +297,29 @@ Intune でコンプライアンスポリシーを作成する詳細な手順に�
 
 **システムセキュリティ**については、次の表を参照してください。
 
-|型|[プロパティ]|Value|Action|
+|型|[プロパティ]|値|Action|
 |:---|:---------|:-----|:----|
 |Password|モバイルデバイスのロックを解除するためのパスワードを要求する|必須| Select |
 ||単純なパスワード|ブロック|Select|
 ||パスワードの種類|既定のデバイス|Select|
-||パスワードの最小文字数|6 |種類|
-||パスワードが必要になるまでの最大非アクティブ時間 (分)|15 |種類 <br>この設定は、Android バージョン4.0 以降、または KNOX 4.0 以降でサポートされています。 IOS デバイスでは、iOS 8.0 以降でサポートされています。|
-||パスワードの有効期限 (日)|41|種類|
-||再利用を防止するための以前のパスワードの数|5 |種類|
+||パスワードの最小文字数|6 |型|
+||パスワードが必要になるまでの最大非アクティブ時間 (分)|15 |型 <br>この設定は、Android バージョン4.0 以降、または KNOX 4.0 以降でサポートされています。 IOS デバイスでは、iOS 8.0 以降でサポートされています。|
+||パスワードの有効期限 (日)|41|型|
+||再利用を防止するための以前のパスワードの数|5 |型|
 ||デバイスがアイドル状態から戻るときにパスワードを要求する (Mobile および Holographic)|必須|Windows 10 以降で使用可能|
 |暗号化|デバイス上のデータストレージの暗号化|必須|Select|
 |デバイスのセキュリティ|ウォール|必須|Select|
 ||ウイルス対策|必須|Select|
 ||ウェア|必須|Select <br> この設定には、Windows セキュリティセンターに登録されたスパイウェア対策ソリューションが必要です。|
 |守護|Microsoft Defender マルウェア対策|必須|Select|
-||Microsoft Defender マルウェア対策の最小バージョン||種類 <br> Windows 10 デスクトップでのみサポートされています。 Microsoft では、最新バージョン以降のバージョンを5つ以下にすることをお勧めします。|
+||Microsoft Defender マルウェア対策の最小バージョン||型 <br> Windows 10 デスクトップでのみサポートされています。 Microsoft では、最新バージョン以降のバージョンを5つ以下にすることをお勧めします。|
 ||Microsoft Defender マルウェア対策の署名が最新の状態になっています|必須|Select|
 ||リアルタイム保護|必須|Select <br>Windows 10 デスクトップでのみサポートされています。|
 |||||
 
 **Microsoft Defender ATP**
 
-|型|[プロパティ]|Value|Action|
+|型|[プロパティ]|値|Action|
 |:---|:---------|:-----|:----|
 |Microsoft Defender Advanced Threat Protection ルール|デバイスがコンピューターのリスクスコアの下または下にある必要があります。|中|Select|
 |||||
