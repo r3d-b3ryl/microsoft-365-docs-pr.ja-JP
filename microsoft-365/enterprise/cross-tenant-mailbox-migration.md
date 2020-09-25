@@ -1,5 +1,5 @@
 ---
-title: テナント間のメールボックスの移行
+title: テナント間でのメールボックスの移行
 description: Microsoft 365 または Office 365 テナント間でメールボックスを移動する方法について説明します。
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f649a72dc5569e8aec46347df295aa3ff9d93613
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177173"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277484"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間のメールボックスの移行 (プレビュー)
 
@@ -57,12 +57,12 @@ ms.locfileid: "48177173"
 
 プロセスのしくみを次に示します。
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="メールボックスの移行のテナントの準備。":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="メールボックスの移行のテナントの準備。":::
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg).
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>テナントの準備
@@ -110,7 +110,7 @@ ms.locfileid: "48177173"
     | -CertificateSubject                         | Azure Key Vault 証明書のサブジェクト名 (CN = contoso_fabrikam など)。 | 必須 |
     | -ExistingApplicationId                      | メール移行アプリケーションが既に作成されている場合に使用します。 | 省略可能 |
     | -AzureAppPermissions                        | メールボックス移行アプリケーションに必要なアクセス許可 (Exchange または MSGraph (メールボックスを移動するための Exchange) など)。また、このアプリケーションを使用して、リソーステナントへの同意リンクの招待を送信するための MSGraph を提供します。 | 必須 |
-    | -UseAppAndCertGeneratedForSendingInvitation | 移行用に作成されたアプリケーションを使用して、ソーステナントの管理者に同意リンクの招待状を送信するために使用するパラメーター。このパラメーターを指定しない場合、Azure に接続するためのターゲット管理者の資格情報を求めるメッセージが表示され、招待を対象の管理者として送信します。 | 省略可能 |
+    | -UseAppAndCertGeneratedForSendingInvitation | 移行用に作成されたアプリケーションを使用して、ソーステナントの管理者に同意リンクの招待状を送信するために使用するパラメーター。このパラメーターを指定しない場合、Azure に接続するためのターゲット管理者の資格情報を求めるメッセージが表示され、招待を対象の管理者として送信します。 | オプション |
     | -KeyVaultAuditStorageAccountName            | キーヴォールトの監査ログが格納されるストレージアカウント。 | 省略可能 |
     | -KeyVaultAuditStorageResourceGroup          | キーコンテナーの監査ログを格納するためのストレージアカウントを含むリソースグループ。 | 省略可能 |
     ||||
@@ -162,11 +162,11 @@ ms.locfileid: "48177173"
 
 1.  セットアップ時に、ターゲット管理者によって指定された ResourceTenantAdminEmail として、メールボックスにサインインします。 ターゲットテナントから電子メール招待状を検索し、[ **開始** ] ボタンを選択します。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="Invided のダイアログボックスが表示されます。":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="[招待されました] ダイアログボックス":::
 
 2. [ **承諾** ] を選択して招待状を承諾します。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="Permissons を受け入れるためのダイアログボックス":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="アクセス許可を受け入れるためのダイアログボックス":::
 
    > [!NOTE]
    > このメールを受信できない場合、または見つからない場合は、ターゲットテナント管理者に対して、招待を受け入れるために付与される直接 URL が提供されています。 URL は、ターゲットテナント管理者のリモート PowerShell セッションの「トランスクリプト」に記載されている必要があります。

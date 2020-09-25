@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f7d00575a0a5757f0662c07e727d7166d571e2ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201197"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277542"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Microsoft の脅威保護攻撃のシミュレーションを実行する  
 
@@ -48,7 +48,7 @@ ms.locfileid: "48201197"
 
 準備段階で既にパイロット環境を構成してあるので、このシナリオでは、テストデバイスとドメインコントローラーという2つのデバイスがあることを確認してください。
 
-1.  テナントに [保護](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)があることを確認します。
+1.  テナントで microsoft [Threat Microsoft Threat Protection が有効になっ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)ていることを確認します。
 2.  テストドメインコントローラーの構成を確認します。
     - デバイスは Windows Server 2008 R2 以降のバージョンで実行されます。
     - テストドメインコントローラーを [Azure Advanced Threat Protection に設定](https://docs.microsoft.com/azure/security-center/security-center-wdatp) し、 [リモート管理](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)を有効にします。    
@@ -57,9 +57,9 @@ ms.locfileid: "48201197"
 
 3.  テストデバイスの構成を確認します。
     <br>
-    a.  デバイスは Windows 10 バージョン1903またはそれ以降のバージョンで実行されます。
+    a.   デバイスは Windows 10 バージョン1903またはそれ以降のバージョンで実行されます。
     <br>
-    b.  テストデバイスはテストドメインに参加しています。
+    b.   テストデバイスはテストドメインに参加しています。
     <br>
     c.   [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、この [トラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
     <br>
@@ -277,9 +277,9 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 1.  テナントが [Microsoft の脅威保護を有効](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)にしていることを確認します。
 2.  電子メールの受信に使用するターゲットメールボックスを識別します。
-    a.  このメールボックスは、Office 365 ATP b で監視する必要があります。  要件3のデバイスがこのメールボックスにアクセスする必要がある
+    a.   このメールボックスは、Office 365 ATP b で監視する必要があります。  要件3のデバイスがこのメールボックスにアクセスする必要がある
 3.  テストデバイスを構成する: a。  Windows 10 バージョン1903以降のバージョンを使用していることを確認してください。
-    b.  テストデバイスをテストドメインに参加させる。
+    b.   テストデバイスをテストドメインに参加させる。
     c.   [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、 [このトラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
     d.   [Microsoft Defender Advanced Threat Protection (MDATP) にオンボード](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
@@ -295,8 +295,8 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
     ![M365 セキュリティセンターポータルのナビゲーションバーでの高度な検索のスクリーンショット](../../media/mtp/fig17.png) 
 
 3.  電子メールイベントを収集することによって開始するクエリを作成します。
-    a.  [クエリ] ウィンドウで、[新規] を選択します。
-    b.  [EmailEvents] テーブルをスキーマからダブルクリックします。
+    a.   [クエリ] ウィンドウで、[新規] を選択します。
+    b.   [EmailEvents] テーブルをスキーマからダブルクリックします。
 
 ```
 EmailEvents 
@@ -441,7 +441,7 @@ EmailEvents
 | エピソード 3: データの集約、ピボット、および視覚化|これで、データのフィルター処理、操作、および結合を行うことができるようになり、集約、定量化、ピボット、可視化を開始する時間になります。 このエピソードでは、高度な検索スキーマで追加のテーブルを準備する際に実行できる集計演算子と計算のいくつかについて説明します。 分析を向上させるために、データセットをグラフに変換します。 | [MP4](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [エピソード 3: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | エピソード 4: ご利用いただけます。 KQL をインシデント追跡に適用する|攻撃者の活動を追跡する時間。 このエピソードでは、Microsoft の脅威保護の KQL と advanced の詳細な理解を強化し、攻撃を追跡するために使用します。 Cybersecurity の ABCs やインシデントへの対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントのいくつかについて説明します。 | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 |![決算および概要フェーズ](../../media/mtp/close.png) <br>[決算および概要フェーズ](mtp-pilot-close.md) | Microsoft の脅威保護パイロットの結果を分析し、ステークホルダーに提示して、次の手順を実行します。
 |:-----|:-----|
 
