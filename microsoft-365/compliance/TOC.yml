@@ -246,6 +246,8 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
           href: how-dlp-works-between-admin-centers.md
+        - name: 'DLP ポリシー(プレビュー)で感度ラベルを条件として使用する '
+          href: dlp-sensitivity-label-as-condition.md
 - name: 情報ガバナンスの管理
   items:
     - name: データを統制する
