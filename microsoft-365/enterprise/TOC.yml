@@ -115,8 +115,6 @@
               href: azure-expressroute.md
             - name: Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
               href: modern-auth-for-office-2013-and-2016.md
-        - name: テナント間コラボレーション
-          href: microsoft-365-inter-tenant-collaboration.md
         - name: クライアント アプリのサポート
           items:
             - name: 証明書ベースの認証
@@ -273,6 +271,12 @@
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
         - name: セットアップ ガイド
           href: setup-guides-for-microsoft-365.md
+    - name: 複数のテナント
+      items:
+        - name: テナント間コラボレーション
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: テナント間でのメールボックスの移行
+          href: cross-tenant-mailbox-migration.md
     - name: Multi-Geo
       items:
         - name: Microsoft 365 Multi-Geo
@@ -353,36 +357,40 @@
         - name: クラウド専用 ID
           href: cloud-only-identities.md
         - name: ハイブリッド ID
-          href: prepare-for-directory-synchronization.md
-        - name: ディレクトリ同期のために非ルーティング ドメインの準備を整える
-          href: prepare-a-non-routable-domain-for-directory-synchronization.md
-        - name: ディレクトリの同期をセットアップする
-          href: set-up-directory-synchronization.md
-        - name: ハイブリッド ソリューション
           items:
-            - name: 概要
-              href: hybrid-solutions.md
-            - name: SharePoint Server 2016 認証に Azure Active Directory を使用する
-              href: using-azure-ad-for-sharepoint-server-authentication.md
-            - name: オンプレミス ネットワークを Azure 仮想ネットワークに接続する
-              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
-            - name: Azure IaaS でディレクトリ同期サーバーを展開する
-              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
-            - name: Azure に高可用性フェデレーション認証を展開する
-              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+            - name: ディレクトリ同期を準備する
+              href: prepare-for-directory-synchronization.md
+            - name: ディレクトリ同期のために非ルーティング ドメインの準備を整える
+              href: prepare-a-non-routable-domain-for-directory-synchronization.md
+            - name: ディレクトリの同期をセットアップする
+              href: set-up-directory-synchronization.md
+            - name: ハイブリッド ソリューション
               items:
-                - name: フェーズ 1 - Azure を構成する
-                  href: high-availability-federated-authentication-phase-1-configure-azure.md
-                - name: フェーズ 2 - ドメイン コントローラーを構成する
-                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                - name: フェーズ 3 - AD FS サーバーを構成する
-                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                - name: フェーズ 4 - Web アプリケーション プロキシを構成する
-                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                - name: フェーズ 5 - フェデレーション認証を構成する
-                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
-            - name: Microsoft Azure での SharePoint Server 2013 の障害復旧
-              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+                - name: 概要
+                  href: hybrid-solutions.md
+                - name: SharePoint Server 2016 認証に Azure Active Directory を使用する
+                  href: using-azure-ad-for-sharepoint-server-authentication.md
+                - name: オンプレミス ネットワークを Azure 仮想ネットワークに接続する
+                  href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+                - name: Azure IaaS でディレクトリ同期サーバーを展開する
+                  href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+                - name: Azure に高可用性フェデレーション認証を展開する
+                  href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+                  items:
+                    - name: フェーズ 1 - Azure を構成する
+                      href: high-availability-federated-authentication-phase-1-configure-azure.md
+                    - name: フェーズ 2 - ドメイン コントローラーを構成する
+                      href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                    - name: フェーズ 3 - AD FS サーバーを構成する
+                      href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                    - name: フェーズ 4 - Web アプリケーション プロキシを構成する
+                      href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                    - name: フェーズ 5 - フェデレーション認証を構成する
+                      href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+                - name: Microsoft Azure での SharePoint Server 2013 の障害復旧
+                  href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+        - name: 安全なユーザー サインイン
+          href: microsoft-365-secure-sign-in.md
     - name: 管理
       items:
         - name: ユーザー アカウントにライセンスを割り当てる
@@ -561,7 +569,7 @@
               href: block-user-accounts-with-microsoft-365-powershell.md
         - name: ライセンスおよびサービス
           items:
-            - name: 表示
+            - name: ライセンスおよびサービスを確認する
               href: view-licenses-and-services-with-microsoft-365-powershell.md
             - name: ライセンスのあるユーザーとライセンスのないユーザーを表示する
               href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
@@ -569,6 +577,8 @@
               href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
             - name: アカウントのライセンスとサービスの詳細を表示する
               href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: ユーザー アカウントからライセンスを削除する
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
             - name: サービスへのアクセスを無効にする
               href: disable-access-to-services-with-microsoft-365-powershell.md
               items:
@@ -576,8 +586,6 @@
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
                 - name: ユーザー ライセンスを割り当てる間、サービスへのアクセスを無効にする
                   href: disable-access-to-services-while-assigning-user-licenses.md
-                - name: ユーザー アカウントからライセンスを削除する
-                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
         - name: グループ
           items:
             - name: グループ メンバーシップを管理する
