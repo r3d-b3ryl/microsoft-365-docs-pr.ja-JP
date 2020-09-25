@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 56f01880e3e2f381d85ed386ac413d4dbff38ff4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415617"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208599"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>クラウド セキュリティ アライアンス (CSA) STAR 証明
 
@@ -68,6 +68,10 @@ Azure の [CSA STAR 証明](https://aka.ms/CSASTAR-Attestation) は CSA 登録�
 - **Level 1**: **CSA STAR 自己診断**: Azure、Microsoft Dynamics 365、Microsoft Office 365。 [自己評価](offering-csa-star-self-assessment.md)は、クラウド サービス プロバイダーにより提供される無償のサービスで、顧客がサービスのセキュリティを評価できるよう、プロバイダーが自社のセキュリティ制御を文書化したものです。
 - **Level 2**: **CSA STAR 認定資格**: Azure、Microsoft Cloud App Security、Intune、Microsoft Power BI。 STAR 認証は、ISO/IEC 27001 認証の取得および CCM に規定されている基準への適合に基づきます。 この認証は、クラウド サービス プロバイダーにおけるセキュリティの制御と取り組みについて、第三者による厳格な評価を経て付与されます。
 - **レベル 2**: **CSA STAR 評価証明**: Azure および Intune。 CSA と AICPA が協力して、CPA が SOC 2 の作成業務を行う際に使用できるガイドラインを提供しています。このガイドラインは、AICPA (Trust Service Principles, AT 101) および CSA CCM の基準に基づいています。 [STAR 評価証明](offering-CSA-STAR-Attestation.md)はこれらのガイドラインに基づくもので、クラウド プロバイダーに対する独立機関による厳格な評価を経て付与されます。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

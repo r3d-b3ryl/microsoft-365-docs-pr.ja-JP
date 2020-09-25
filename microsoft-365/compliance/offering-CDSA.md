@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c87d00e76ac71be3527e9db741aea6ee7a741f4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d57c725f471e5197f269270eca19c863a7f79555
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417311"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208629"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>Content Delivery &amp; Security Association (CDSA) の Content Protection &amp; Security (CPS) 標準
 
@@ -67,7 +67,11 @@ Microsoft は CDSA CPS 認定の 6 か月間の更新を無事に終え、Azure 
 
 **Microsoft のコンプライアンスを私の組織の認定プロセスに利用できますか?**
 
-はい。 Azure のセキュリティ機能や暗号化機能を利用することで、お客様自身の CPS 認定の構成要素として Azure の CPS 認定を利用できます。
+はい、できます。 Azure のセキュリティ機能や暗号化機能を利用することで、お客様自身の CPS 認定の構成要素として Azure の CPS 認定を利用できます。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

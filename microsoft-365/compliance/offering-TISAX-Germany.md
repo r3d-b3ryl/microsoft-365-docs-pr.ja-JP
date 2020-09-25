@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fe9186b45268fee11d011d6a941e244071e31a42
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417541"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208119"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>信頼された情報セキュリティ アセスメント交換 (TISAX) ドイツ
 
@@ -72,6 +72,10 @@ ENX に登録されている業界の代表者は、[ENX ポータル](https://p
 **Microsoft TISAX 証明書のコピーが表示されないのはなぜですか ?**
 
 ENX は、ENX ポータルを通じて登録された業界の代表者にのみ認証確認を提供します。 手順の詳細については、上記の “監査、レポート、証明書” セクションを参照してください。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

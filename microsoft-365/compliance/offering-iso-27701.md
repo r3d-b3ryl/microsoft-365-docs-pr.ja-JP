@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b46a1996d1a86601efe21ec71b19adfc9fa02c61
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417215"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208139"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 プライバシー情報管理システム (PIMS)
 
@@ -77,7 +77,7 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 - Microsoft Healthcare Bot
 - Intune
 - Microsoft マネージド デスクトップ
-- Power Automate (旧称 Microsoft Flow) 
+- Power Automate (旧称 Microsoft Flow)
 - PowerApps
 - Power BI
 - Power BI Embedded
@@ -86,15 +86,14 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 - Microsoft 脅威エキスパート
 - Windows Defender Advanced Threat Protection
 
-
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
 - [Azure、Dynamics 365、Online Services:ISO27701 の証明書](https://aka.ms/azureiso27701cert)
 - [Azure、Dynamics 365、Online Services:ISO27701 の評価レポート](https://aka.ms/azureiso27701report)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>Microsoft コンプライアンス スコアを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス スコア](compliance-score.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)のプレビュー機能で、組織のコンプライアンスの状況を把握し、リスクを軽減するための処置を実行できるようにします。 [コンプライアンス スコアの設定](compliance-score-setup.md)後、[**テンプレート**] ドロップダウン メニューから事前に構成された [ISO 27701 テンプレート](https://go.microsoft.com/fwlink/?linkid=2117915)を選択してこの規制の要件を満たすようにします。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

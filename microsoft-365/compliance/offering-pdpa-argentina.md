@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 24820526b6ba58c82c2412ed3d0902eecb60b5b6
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417059"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208109"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>個人データ保護法 (PDPA) アルゼンチン
 
@@ -27,7 +27,7 @@ ms.locfileid: "47417059"
 
 アルゼンチン憲法に従い、[個人データ保護法第 25.326 号](http://www.jus.gob.ar/media/3201023/personal_data_protection_act25326.pdf) (PDPA) ([Ley de Protección de los Datos Personales](http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/norma.htm)) が 2,000 年に執行されたことで、個人データのプライバシーが保護され、公共データベース、私的データベース、レジストリに保管されているすべての情報に個人がアクセスできるようになりました。 内閣官房長官下の、アルゼンチンの公開情報へのアクセス機関 ([Agencia de Acceso a la Información Pública](https://www.argentina.gob.ar/aaip)、AAIP) がこの法の執行を管轄します。
 
-PDPA は、データ プライバシーを保護するために欧州の立法モデルに準拠しており、アルゼンチンは中南米で初めて欧州からのデータ転送に関する適性な必要条件を満たした国です。
+PDPA は、データ プライバシーを保護するために欧州の立法モデルに準拠しており、アルゼンチンは中南米で初めて欧州からのデータ転送に関する適性な資格を満たした国です。
 
 2016 年に、AAIP は新たな規則 [条項 60-E/2016](http://servicios.infoleg.gob.ar/infolegInternet/anexos/265000-269999/267922/norma.htm) (スペイン語) を発表し、国境を越える個人データの転送を管理しています。 このルールでは、データ管理者とデータ処理者へのデータの転送にひな型 (一部は欧州のデータ転送モデルに基づいています) を認可しています。
 
@@ -37,7 +37,7 @@ Microsoft は、[Microsoft オンライン サービス条件](https://www.micro
 
 法人向けクラウド サービスで実施される技術的および組織的なセキュリティ対策は、データ主体の個人データの二次利用の禁止や、保護レベルが適正水準を満たしていない国への個人データの転送の禁止など、PDPA のその他のルールもサポートします。
 
-Microsoft のデータ移転契約は、オンライン サービス条件のデータ処理条件への修正 (改正 ID M314) です。 この修正は次のような重要な義務を追加します。Microsoft が個人データを開示する場合には、お客様に法的拘束力のある要求を通知する。お客様の要求に応じて、お客様かもしくは独立した第三者機関によって、データ処理機関を監査へ提出する。下請け業者を利用する場合には、文書による事前承諾を得る。
+Microsoft のデータ移転契約は、オンライン サービス条件のデータ処理条件への修正 (改正 ID M314) です。 この修正は次のような重要な確約を追加します。Microsoft が個人データを開示する場合には、お客様に法的拘束力のある要求について通知する。お客様の要求に応じて、お客様かもしくは独立した第三者機関によって、お客様の要請で監査をデータ処理機関に提出する。下請け業者を利用する場合には、文書による事前承諾を得る。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -56,7 +56,11 @@ Microsoft のデータ移転契約は、オンライン サービス条件のデ
 
 2018 年後期、アルゼンチンではまだ GDPR 関連の規制は制定されていませんでしたが、新たなデータ保護の法案が起草されました。すでに行政権によって国会に提出され、このデータ保護法が GDPR として制定されるよう下院で改正中です。 これにより、データ主体の定義の違いや、国境を越える個人情報の転送に関する懸念に対処することができます。
 
-## <a name="resources"></a>関連情報
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
+
+## <a name="resources"></a>リソース
 
 - [Microsoft におけるプライバシー](https://privacy.microsoft.com)
 - [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)

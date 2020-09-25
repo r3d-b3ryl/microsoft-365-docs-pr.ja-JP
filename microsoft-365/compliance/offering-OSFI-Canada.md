@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4250d2d79bb00c4179e39969ad992011d3fc2d4f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: b22eebd00ee168f576a673f74ce0a39d250f9542
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417871"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208249"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>カナダの金融機関監督官局 (OSFI)
 
@@ -27,7 +27,7 @@ ms.locfileid: "47417871"
 
 「[金融機関監督官局](https://www.osfi-bsif.gc.ca/Eng/Pages/default.aspx)」 (OSFI) は、プルーデンス規制およびカナダの連邦制によって規制された金融機関と年金制度の監督に対して責任を負うカナダ政府の独立機関です。
 
-その監督の役割において、OSFI では、「[ビジネスのアクティビティ、機能、およびプロセスのアウトソーシング](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)」に適した B-10 ガイドラインを発行しました。 同局では、ビジネスをサービス プロバイダーにアウトソーシングすることに関連するリスクを評価したり管理したりするために、連邦制で規制された金融機関向けの “プルーデンスの実践、手続き、または基準” を構築しました。 その後の OSFI 覚書である [新しい技術を基盤としたアウトソーシング要件](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)では、B-10 ガイドラインが依然として現在通用するものであり、重大なアウトソーシングに関する取り決めに対する OSFI の要請に応える必要があることをそれらの機関に思い出させています。
+その監督の役割において、OSFI では、「[ビジネスのアクティビティ、機能、およびプロセスのアウトソーシング](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/b10.aspx)」に適した B-10 ガイドラインを発行しました。 彼らは、ビジネスをサービス プロバイダーにアウトソーシングすることに関連するリスクを評価したり管理したりするために、連邦制で規制された金融機関向けの “プルーデンスの実践、手続き、または基準” を構築しました。 その後の OSFI 覚書である [新しい技術を基盤としたアウトソーシング要件](https://www.osfi-bsif.gc.ca/Eng/fi-if/rg-ro/gdn-ort/gl-ld/Pages/cldcmp.aspx)では、B-10 ガイドラインが依然として現在通用するものであり、重大なアウトソーシングに関する取り決めに対する OSFI の要請に応える必要があることをそれらの機関に思い出させています。
 
 さらに、金融機関によるクラウド サービスの使用では、[個人情報保護および電子文書に関する法律](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/)、および場合によっては州のデータ プライバシー法に準拠する必要があります。
 
@@ -66,6 +66,10 @@ Microsoft チェックリストでは、カナダの金融機関による Micros
 **クラウド サービス プロバイダーについて、契約に含める必要がある必須条項はありますか?**
 
 はい。しかし、アウトソーシングに関する取り決めが、重大なアウトソーシングに関する取り決めであるか、それにクラウド サービス プロバイダーに対する何かしらの個人情報の転送が含まれる場合のみです。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

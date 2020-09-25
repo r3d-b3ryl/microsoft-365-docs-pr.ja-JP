@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c2c1e516e0d2c338104d36bb227e877d490ecb7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416163"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208639"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>クラウド コンピューティング コンプライアンス コントロール カタログ (C5)
 
@@ -59,6 +59,10 @@ IT-Grundschutz は、IT システムのセキュリティ対策の決定と実�
 **Microsoft Cloud Germany とは何ですか?**
 
 Microsoft Cloud Germany は、ドイツに物理的拠点を置き、ドイツのプライバシー法の要件に準拠しています。この法律は、他国への個人データの移転を制限し、国内法に違反する可能性のある他の管轄区域当局によるアクセスからデータを保護します。 Azure Germany は、ドイツをデータ所在地とするドイツのデータセンターから Azure サービスを提供します。ドイツ法に準拠した固有のデータ トラスティ モデルによって、データのアクセスと制御に厳格に対処します。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

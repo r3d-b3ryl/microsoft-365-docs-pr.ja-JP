@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422455"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208813"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 
@@ -56,6 +56,10 @@ GDPR 基準を満たすには、次のタスクが必要です。 実装に関�
 - **[データ保護影響評価 (DPIA)](gdpr-data-protection-impact-assessments.md)**。 データ管理者は、GDPR に基づいて「自然人の権利と自由を危険にさらす可能性が高い」データ操作に関して DPIA を準備する必要があります。
 
 上記で説明したように、GDPR の推奨アクション プランとアカウンタビリティ対応準備チェックリストでは、Microsoft の製品とサービスの使用において GDPR 準拠を実装または評価するためのガイドが提供されています。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーは、Enterprise E5 をご利用のお客様を対象として、事前に組み込まれた評価を行います。 評価の作成に使用するテンプレートについては、コンプライアンスマネージャーの [ **評価テンプレート** ] を参照してください。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="data-subject-request-dsr"></a>データ主体の要求 (DSR)
 
@@ -178,7 +182,7 @@ Microsoft は、お客様に速やかに通知するためのポリシーと手�
 
 ## <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR に関するアカウンタビリティ対応準備チェックリスト
 
-これらの[チェックリスト](gdpr-arc.md)は、Microsoft 製品の使用において、GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。 [Microsoft コンプライアンス スコア](compliance-score.md)で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、チェックリスト項目を管理できます。
+これらの[チェックリスト](gdpr-arc.md)は、Microsoft 製品の使用において、GDPR をサポートしなければならない可能性のある情報にアクセスする便利な方法を提供します。 [Microsoft コンプライアンスマネージャー](compliance-manager.md)で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、チェックリスト項目を管理できます。
 
 ## <a name="gdpr-faqs"></a>GDPR についてよく寄せられる質問
 

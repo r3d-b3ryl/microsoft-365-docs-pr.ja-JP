@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7001a17af7932a7aafa7cceac207b772b42b55d9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417165"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208179"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>北米電力信頼度協議会 (North American Electric Reliability Corporation: NERC)
 
@@ -40,7 +40,7 @@ Azure および Azure Government は、BCSI ワークロードなど、NERC CIP 
 - 『[NERC CIP 基準とクラウドコンピューティング (NERC CIP Standards and Cloud Computing)](https://aka.ms/AzureNERC)』は、FedRAMP などのクラウド サービス プロバイダーに適用される、確立されたサードパーティ監査に基づいて NERC CIP 要件へ準拠するための考慮事項を説明するホワイト ペーパーです。 クラウド運用担当者の背景スクリーニングの他、登録エンティティが知る必要がある論理的分離やマルチテナントに関するよくある質問への回答が網羅されています。 オンプレミスとクラウド展開におけるセキュリティに関する考慮事項も説明されています。
 - 『[NERC 監査用クラウド実装ガイド (Cloud Implementation Guide for NERC Audits)](https://aka.ms/AzureNERCGuide)』は、NERC CIP 基準の現行の要件と FedRAMP の元となっている [NIST SP 800-53 Rev 4](https://nvd.nist.gov/800-53/Rev4) との間でのコントロール マッピングを提供するガイダンス ドキュメントです。 クラウドに展開されている資産における CIP のコンプライアンス要件への登録エンティティの対応を支援するための技術的なハウツー ガイダンスとして作られています。 Azure 制御によるNERC CIP 要件への対応方法を説明する事前入力された[信頼性基準監査ワークシート (Reliability Standard Audit Worksheets: RSAWs)](https://www.nerc.com/pa/comp/Pages/Reliability-Standard-Audit-Worksheets-\(RSAWs\).aspx) に関する説明および、所有する制御を Azure サービスで実装する方法に関する登録エンティティ向けガイダンスが含まれています。
 
-NERC ERO エンタープライズは、[実践ガイド](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)『コンプライアンス監視執行プログラム (Compliance Monitoring and Enforcement Program: CMEP) 』を[公開しました](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)。これは、指定された BCSI の保存場所へのアクセスおよび登録エンティティが実装したすべてのアクセス制御に関するエンティティにおける承認プロセスを評価する際のガイダンスを ERO エンタープライズ CMEP 担当者に提供するものです。 NERC はまた、NERC CIP-004-6 基準および CIP-011-2 基準に関連する Azure 制御の実装の詳細および FedRAMP 監査の証拠のうち、BCSI に該当するものについてレビューを行いました。 ERO が発行する実践ガイドおよび登録エンティティにおけるデータの暗号化を確認するためのレビューが行われた FedRAMP 制御に基づき、登録エンティティが BCSI および関連ワークロードをクラウドで展開するのに追加のガイダンスまたは説明は必要ありません。 ただし、登録エンティティは、各エンティティにおける実情や状況に応じて、NERC CIP 基準への準拠に対して最終的な責任を負います。 登録エンティティは、Azure および Azure Government における BCSI の暗号化暗号キーの管理を含む、BCSI 保存場所への電子アクセスを承認するのに使用した各自のプロセスおよび証拠を記録化するために、『[NERC 監査用クラウド実装ガイド](https://aka.ms/AzureNERCGuide)』を確認する必要があります。
+NERC ERO エンタープライズは、[実践ガイド](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)『コンプライアンス監視執行プログラム (Compliance Monitoring and Enforcement Program: CMEP) 』を[公開しました](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)。これは、指定された BCSI の保存場所へのアクセスおよび登録エンティティが実施したすべてのアクセス制御に関するエンティティにおける承認プロセスを評価する際のガイダンスを ERO エンタープライズ CMEP 担当者に提供するものです。 NERC はまた、NERC CIP-004-6 基準および CIP-011-2 基準に関連する Azure 制御の実装の詳細および FedRAMP 監査の証拠のうち、BCSI に該当するものについてレビューを行いました。 ERO が発行する実践ガイドおよび登録エンティティにおけるデータの暗号化を確認するためのレビューが行われた FedRAMP 制御に基づき、登録エンティティが BCSI および関連ワークロードをクラウドで展開するのに追加のガイダンスまたは説明は必要ありません。 ただし、登録エンティティは、各エンティティにおける実情や状況に応じて、NERC CIP 基準への準拠に対して最終的な責任を負います。 登録エンティティは、Azure および Azure Government における BCSI の暗号化暗号キーの管理を含む、BCSI 保存場所への電子アクセスを承認するのに使用した各自のプロセスおよび証拠を記録化するために、『[NERC 監査用クラウド実装ガイド](https://aka.ms/AzureNERCGuide)』を確認する必要があります。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -79,7 +79,11 @@ NERC CIP 基準の対象のワークロードへの Azure および Azure Govern
 
 [NERC CIP 基準](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf)および[用語集](https://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf)では、BES サイバー資産は BES の監視および制御においてリアルタイム機能を実行し、障害が発生した場合は 15 分以内に BES の運用の信頼性に影響を与えるとしています。 クラウド コンピューティングの BES サイバー資産および保護されたサイバー資産に適切に対応するには、NERC CIP 基準の現在の定義を[改訂する必要があります](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx)。 しかし、BES サイバー システム情報 (BCSI) とう大分類を含め、CIP の対象となるデータを取り扱い、15 分ルールの適用外のワークロードが多くあります。
 
-NERC ERO エンタープライズは、[実践ガイド](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)『コンプライアンス監視執行プログラム (Compliance Monitoring and Enforcement Program: CMEP) 』を[公開しました](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)。これは、指定された BCSI の保存場所へのアクセスおよび登録エンティティが実装したすべてのアクセス制御に関するエンティティにおける承認プロセスを評価する際のガイダンスを ERO エンタープライズ CMEP 担当者に提供するものです。 NERC はまた、NERC CIP-004-6 基準および CIP-011-2 基準に関連する Azure 制御の実装の詳細および FedRAMP 監査の証拠のうち、BCSI に該当するものについてレビューを行いました。 ERO が発行する実践ガイドおよび登録エンティティにおけるデータの暗号化を確認するためのレビューが行われた FedRAMP 制御に基づき、登録エンティティが BCSI および関連ワークロードをクラウドで展開するのに追加のガイダンスまたは説明は必要ありません。 ただし、登録エンティティは、各エンティティにおける実情や状況に応じて、NERC CIP 基準への準拠に対して最終的な責任を負います。
+NERC ERO エンタープライズは、[実践ガイド](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)『コンプライアンス監視執行プログラム (Compliance Monitoring and Enforcement Program: CMEP) 』を[公開しました](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)。これは、指定された BCSI の保存場所へのアクセスおよび登録エンティティが実施したすべてのアクセス制御に関するエンティティにおける承認プロセスを評価する際のガイダンスを ERO エンタープライズ CMEP 担当者に提供するものです。 NERC はまた、NERC CIP-004-6 基準および CIP-011-2 基準に関連する Azure 制御の実装の詳細および FedRAMP 監査の証拠のうち、BCSI に該当するものについてレビューを行いました。 ERO が発行する実践ガイドおよび登録エンティティにおけるデータの暗号化を確認するためのレビューが行われた FedRAMP 制御に基づき、登録エンティティが BCSI および関連ワークロードをクラウドで展開するのに追加のガイダンスまたは説明は必要ありません。 ただし、登録エンティティは、各エンティティにおける実情や状況に応じて、NERC CIP 基準への準拠に対して最終的な責任を負います。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

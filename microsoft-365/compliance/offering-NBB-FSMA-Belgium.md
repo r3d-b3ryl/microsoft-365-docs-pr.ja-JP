@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad72be958e8d028ff40dcbd483accd0dbe5c0527
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d35e9893c54367bc62de65300613853408070c33
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415761"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208269"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>ベルギー国立銀行 (NBB) と Financial Services and Markets Authority (FSMA)
 
@@ -29,7 +29,7 @@ ms.locfileid: "47415761"
 
 NBB は、信用機関、保険会社、株式仲買人、その他の金融機関を慎重に監視しています。 NBB はベルギーの中央銀行として、ベルギーの金融政策を実施し、その金融システムの安定に貢献しています。 NBB とともに、FSMA はベルギーの金融市場、投資会社を含む金融サービス事業者、および補足年金を監督しています。 その作業には、企業が配布する財務情報と消費者に提供する製品の監視、および業務遂行規則への遵守が含まれます。
 
-NBB と FSMA は、欧州銀行監督局 (EBA) と協力して活動しており、“欧州の銀行セクター全体で効果的で一貫性のある健全な規制および監督を確保するために活動する独立機関です。” そのため、EBA は、EU 圏内の金融機関によるクラウド コンピューティングの使用に対する包括的なアプローチ、[クラウド サービス プロバイダーへのアウトソーシングに関する推奨事項](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362)の概要を示しています。
+NBB と FSMA は、欧州銀行監督局 (EBA) と協力して活動しており、“欧州の銀行セクター全体で効果的で一貫性のある健全な規制および監督を確保するために活動するEUの独立機関です。” そのため、EBA は、EU 圏内の金融機関によるクラウド コンピューティングの使用に対する包括的なアプローチ、[クラウド サービス プロバイダーへのアウトソーシングに関する推奨事項](https://eba.europa.eu/documents/10180/2170121/Final+draft+Recommendations+on+Cloud+Outsourcing+%28EBA-Rec-2017-03%29.pdf/5fa5cdde-3219-4e95-946d-0c0d05494362)の概要を示しています。
 
 ベルギーの金融機関には、次のようなビジネス機能をクラウドに移行するときに通知する必要があるいくつかの要件およびガイドラインがあります。
 
@@ -64,11 +64,15 @@ Microsoft チェックリストでは、ベルギー金融機関による Micros
 
 **規制当局の承認が必要ですか?**
 
-いいえ。 ただし、金融機関は、業務の運営、評判、または収益性に重大な影響を及ぼす可能性のあるアウトソーシングの取り決めに混乱が生じた場合、NBB および FSMA に通知する必要があります。
+いいえ。 ただし、金融機関は、業務の運営、評判、または収益性、またはリスクを管理し適用される法規制に準拠する能力に重大な影響を及ぼす可能性のあるアウトソーシングの取り決めに混乱が生じた場合、NBB および FSMA に通知する必要があります。
 
 **クラウド サービス プロバイダーについて、契約に含める必要がある必須条項はありますか?**
 
 はい。 金融機関がクラウド サービス契約に組み込んでおく必要がある特定のポイントがあります。 Microsoft [チェックリスト](https://aka.ms/FinServ-Guide-Belgium) (49 頁) のパート 2 では、それらに対応する Microsoft の契約書のセクションを背景にしてそれらを対応づけています。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 
