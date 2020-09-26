@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: データ調査 (プレビュー) における説明、インデックス作成、検索、エクスポート、およびダウンロードの制限についての情報を検索できます。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 53c71e50dd83332ebd1bb1076b3dbf5dd304b927
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 30d8b26493fcd0d5059238876abe5b8209429670
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358505"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285913"
 ---
-# <a name="data-investigations-preview-limits"></a>データ調査 (プレビュー) の制限
+# <a name="limits-in-data-investigations-preview"></a>データ調査の制限 (プレビュー)
 
 この記事では、データ調査 (プレビュー) の制限について説明します。
 

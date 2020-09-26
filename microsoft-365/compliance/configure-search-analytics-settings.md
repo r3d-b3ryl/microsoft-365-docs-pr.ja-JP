@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: データ調査を管理するときに、ほぼ重複、電子メールスレッド、テーマなどの検索と分析設定を構成する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ebc04e68c4d8854c91ceae75b164cc061e77aad4
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527353"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277075"
 ---
-# <a name="configure-search-and-analytics-settings"></a>検索と分析の設定を構成する
+# <a name="configure-search-and-analytics-settings-in-data-investigations"></a>データ調査で検索と分析の設定を構成する
 
 ## <a name="near-duplicates-and-email-threading"></a>準重複と電子メールスレッド
 
@@ -38,7 +38,7 @@ ms.locfileid: "46527353"
 
 - 最小/最大単語数: 重複および電子メールスレッド処理は、少なくとも単語の最小数が少なく、最大で単語数が多いドキュメントに対してのみ実行されます。
 
-詳細については、「[重複の検出](near-duplicates.md)と[電子メールのスレッド処理](email-threading.md)」を参照してください。
+詳細については、「 [重複の検出](near-duplicates.md) と [電子メールのスレッド処理](email-threading.md)」を参照してください。
 
 ## <a name="themes"></a>テーマ
 

@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サードパーティのデータコネクタと Microsoft Graph Api を使用して、Microsoft 365 コンプライアンスソリューションを拡張する方法について説明します。
-ms.openlocfilehash: 284125db8243b10f5c8de7e0a37c1b7284709c28
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204399"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285743"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 コンプライアンス拡張機能
 
@@ -77,7 +77,7 @@ Microsoft Teams では、[データ損失防止 (DLP)](dlp-microsoft-teams.md)�
 
 これら2つの Api は、Teams DLP 用の Microsoft Graph API を形成しています。 最初に、 [サンプルアプリ](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)を試してみることができます。 Microsoft Teams メッセージングの webhooks の詳細については、 [ドキュメント](https://docs.microsoft.com/graph/api/subscription-post-subscriptions)を参照してください。
 
-Teams DLP のライセンス要件については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)」を参照してください。
+Teams DLP のライセンス要件については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)」を参照してください。
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>電子情報開示のための Microsoft Graph API (プレビュー)
 

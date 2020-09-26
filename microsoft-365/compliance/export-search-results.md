@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'セキュリティ & コンプライアンスセンターのコンテンツ検索からローカルコンピューターに検索結果をエクスポートします。 電子メールの結果は PST ファイルとしてエクスポートされます。 SharePoint と OneDrive for Business サイトのコンテンツは、ネイティブの Office ドキュメントとしてエクスポートされます。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a809a5880a247c66cd96daf7ae44efea13c04704
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269597"
+ms.locfileid: "48277467"
 ---
 # <a name="export-content-search-results"></a>コンテンツ検索の結果をエクスポートする
 
@@ -317,7 +317,7 @@ ms.locfileid: "48269597"
 
   ![電子情報開示エクスポートツール](../media/eDiscoveryExportTool.png)
 
-  [キーのエクスポート] ボックスをクリックし、を押して `CTRL + V` export キーを貼り付けます (スクリプトはエクスポートキーをクリップボードにコピーして、このボックスに貼り付けます)。 [ **参照** ] をクリックして、検索結果ファイルをダウンロードする場所を指定し、ダウンロードを開始します。
+  [キーのエクスポート] ボックスをクリックし、を押して `CTRL + V` export キーを貼り付けます (スクリプトは、エクスポートキーをクリップボードにコピーします)。 [ **参照** ] をクリックして、ファイルをダウンロードする場所を指定し、ダウンロードを開始します。
 
   前述したように、ディスクの処理量が多い (読み取りおよび書き込み) ため、検索結果をローカルディスクドライブにダウンロードすることをお勧めします。 マップされたネットワークドライブまたは他のネットワークの場所に検索結果をダウンロードしないでください。
 

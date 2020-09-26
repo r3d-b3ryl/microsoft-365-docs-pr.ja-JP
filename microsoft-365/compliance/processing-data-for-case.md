@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Office 365 の高度な電子情報開示ツールで各種のデータを処理する方法の概要を確認します。
-ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: 高度な電子情報開示でさまざまな形式のデータを処理する方法について説明します。
+ms.openlocfilehash: c82363a846334ccf47fc28cf0aaa25e92f2bbea9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527407"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285243"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>高度な電子情報開示で処理エラーを処理する
 
-*処理*とは、ファイルの識別、埋め込まれた文書と添付ファイルの拡張、画像ファイルのテキスト抽出、OCR (光学式文字認識) の処理で、その後のコンテンツのインデックス作成の処理です。  
+*処理* とは、画像ファイルのファイル識別、埋め込みドキュメントと添付ファイルの拡張、テキスト抽出、およびその後のコンテンツのインデックス作成の処理です。  
 
 保管担当者および保管担当者以外のデータソースを [ **sources** ] タブのケースに追加すると、Microsoft 365 からすべてのインデックスが作成されたアイテムが完全に検索可能になるように処理されます。 同様に、Microsoft 365 と Microsoft 以外の365データソースの両方からのレビューセットにコンテンツが追加されると、このコンテンツも処理されます。
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Microsoft 365 コンプライアンスを使用して Microsoft Information Protection (MIP) 機能を実装することで、機密情報がどこに存在している場合でも機密情報を検出、分類、保護することができます。
-ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d69395523cb656d23e44b577f01338eb78c7b386
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131967"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277524"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft の microsoft Information Protection (365)
 
@@ -52,7 +52,7 @@ MIP 機能は、Microsoft 365 コンプライアンスに含まれており、 [
 |:------|:------------|---------------------|:----------------------------|
 |[機密ラベル](sensitivity-labels.md)| アプリケーション、サービス、およびデバイスにまたがる単一のソリューション。データをラベル付けして、組織の内外で転送する際にデータを保護します。 <br /><br />シナリオ例: [POWER BI で機密ラベルを適用および表示し、エクスポート時にデータを保護する](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ 機密ラベルの概要](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| Windows コンピューターの場合は、すべてのファイルの種類のラベル付けと保護をファイルエクスプローラーと PowerShell から行うことができる追加の機能の機密ラベルを拡張します。<br /><br /> その他の機能 [の例: Azure Information Protection の統合されたラベル付けクライアントのカスタム構成](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection 統合されたラベル付けされたクライアント管理者ガイド](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[二重キー暗号化](double-key-encryption.md)| すべての状況において、保護されたコンテンツを復号化するか、または規制要件に応じて、暗号化キーを地理的な境界内に保持する必要があります。 | [二重キー暗号化の展開](double-key-encryption.md#deploy-double-key-encryption)|
+|[二重キー暗号化](double-key-encryption.md)| すべての状況において、保護されたコンテンツを復号化するか、または規制要件に応じて、暗号化キーを地理的な境界内に保持する必要があります。 | [二重キー暗号化の展開](double-key-encryption.md)|
 |[Office 365 メッセージの暗号化](ome.md) (OME)| 任意のデバイスで任意のユーザーに送信される電子メールメッセージと添付ドキュメントを暗号化します。これにより、承認済みの受信者のみがメールの情報を読むことができます。  <br /><br />シナリオ例: [高度なメッセージ暗号化によって暗号化された電子メールを取り消す](revoke-ome-encrypted-mail.md) | [Office 365 のメッセージの暗号化を開始する](set-up-new-message-encryption-capabilities.md)|
 |[カスタマー キーによるサービスの暗号化](customer-key-overview.md) | 許可されていないシステムまたは個人によるデータの表示を防止し、Microsoft データセンターの BitLocker ディスク暗号化を補完します。 | [Office 365 のカスタマー キーを設定する](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|ユーザーがドキュメントをチェックアウトするときに、ダウンロードしたファイルが保護されるように、指定したポリシーに従って、承認されたユーザーのみがファイルを表示して使用できるようにします。 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|

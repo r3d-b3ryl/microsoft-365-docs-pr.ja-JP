@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: サポートされているファイルの種類と、データ調査で閲覧できる閲覧者 (プレビュー) を一覧にした表。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc4b8efb7c4212261e16f1e307c6ca05fea064ec
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: ca4dab40f5c3098d05323edec0ddbab54ac29273
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817140"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285273"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>データ調査でサポートされているファイルの種類 (プレビュー)
 

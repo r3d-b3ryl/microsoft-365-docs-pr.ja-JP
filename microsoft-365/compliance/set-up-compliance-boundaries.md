@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンスの境界を使用して、Microsoft 365 で電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する論理的な境界を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269396"
+ms.locfileid: "48277105"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のためにコンプライアンスの境界を設定する
 
@@ -70,7 +70,10 @@ ms.locfileid: "48269396"
 
 - 事業所
 
-- C (2 文字の国コード)
+- C (2 桁の国コード) <sup>*</sup>
+
+  > [!NOTE]
+  > <sup>*</sup> この属性は、Exchange Online PowerShell で **ユーザー** コマンドレットを実行することによって返される CountryOrRegion プロパティにマップされます。 このコマンドレットは、ローカライズされた国名を返します。これは、2文字の国コードから変換されます。 詳細については、「CountryOrRegion [」コマンドレット](https://docs.microsoft.com/powershell/module/exchange/set-user) リファレンスの記事の「パラメーターの説明」を参照してください。
 
 他のユーザー属性も使用できますが (特に Exchange メールボックスの場合)、上記の属性は OneDrive で現在サポートされているものだけです。
   
@@ -243,7 +246,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>SharePoint ハブサイトのコンプライアンス境界の使用
 
-[SharePoint ハブサイト](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) は、多くの場合、電子情報開示のコンプライアンスの境界と同じ地理的または省庁の境界に沿っています。 これは、ハブサイトのサイト ID プロパティを使用して、コンプライアンスの境界を作成できることを意味します。 これを行うには、SharePoint Online PowerShell で [get-spohubsite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite?view=sharepoint-ps#examples) コマンドレットを使用してハブサイトの SiteId を取得し、次にその値を department ID プロパティに使用して、検索アクセス許可フィルターを作成します。
+[SharePoint ハブサイト](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) は、多くの場合、電子情報開示のコンプライアンスの境界と同じ地理的または省庁の境界に沿っています。 これは、ハブサイトのサイト ID プロパティを使用して、コンプライアンスの境界を作成できることを意味します。 これを行うには、SharePoint Online PowerShell で [get-spohubsite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) コマンドレットを使用してハブサイトの SiteId を取得し、次にその値を department ID プロパティに使用して、検索アクセス許可フィルターを作成します。
 
 SharePoint ハブサイトの検索アクセス許可フィルターを作成するには、次の構文を使用します。
 

@@ -1,5 +1,5 @@
 ---
-title: 電子メールスレッド処理-電子情報開示
+title: 高度な電子情報開示での電子メールスレッド
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: 高度な電子情報開示分析を実行するとき、電子メールスレッドは電子メール会話を解析し、各メッセージを異なるカテゴリに分割します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e6072650a07f634b8dc19a013907eb36469c443b
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527675"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285563"
 ---
-# <a name="email-threading"></a>電子メールスレッド
+# <a name="email-threading-in-advanced-ediscovery"></a>高度な電子情報開示での電子メールスレッド
 
 しばらくの間、電子メールでの会話を検討してください。 ほとんどの場合、スレッドの最後のメールには、先行するすべてのメールの内容が含まれます。最後のメールを確認すると、スレッドで発生した会話のコンテキストが完全にわかります。 電子メールスレッドでは、このような電子メールを識別して、校閲者が収集されたドキュメントの一部をコンテキストを失わずに確認できるようにします。
 

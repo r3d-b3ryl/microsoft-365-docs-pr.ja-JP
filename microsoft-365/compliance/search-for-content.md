@@ -13,14 +13,14 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: セキュリティ & コンプライアンスセンターのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス、SharePoint サイトと OneDrive の場所にあるドキュメント、および Skype for Business でのインスタントメッセージングの会話をすばやく見つけることができます。
-ms.openlocfilehash: 2b874181fdfc5bce69227acc279e12bffe70c069
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c02bcf627cec46b52ba9ff449a0d39b185ce4a0a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632922"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285983"
 ---
-# <a name="search-for-content"></a>コンテンツを検索する
+# <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索する
 
 セキュリティ/コンプライアンス センターのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールを使用して、Microsoft Teams や Microsoft 365 グループなどのコラボレーションツールで、電子メール、ドキュメント、インスタントメッセージの会話を検索することができます。
   
@@ -30,11 +30,11 @@ ms.locfileid: "43632922"
   
 - コンテンツ検索を[作成して実行](content-search.md)する 
     
-- [検索クエリを作成し、条件を使用](keyword-queries-and-search-conditions.md)して検索を絞り込む 
+- [検索クエリを作成し、条件を使用](keyword-queries-and-search-conditions.md) して検索を絞り込む 
     
 - 電子情報開示管理者が組織内のメールボックスまたはサイトのサブセットのみを検索できるように、[検索アクセス許可フィルターを構成](permissions-filtering-for-content-search.md)する 
     
-- [ID リスト検索を実行](csv-file-for-an-id-list-content-search.md)して特定の電子メールメッセージを検索する 
+- [ID リスト検索を実行](csv-file-for-an-id-list-content-search.md) して特定の電子メールメッセージを検索する 
     
 - Microsoft 365 でオンプレミスのユーザーの[クラウドベースのメールボックスを検索](search-cloud-based-mailboxes-for-on-premises-users.md)する
 
@@ -46,16 +46,16 @@ ms.locfileid: "43632922"
     
 - コンテンツ[検索を再試行](retry-failed-content-search.md)してコンテンツの場所のエラーを解決する
 
-- [Bcc の受信者を保持](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)して検索できるようにする 
+- [Bcc の受信者を保持](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) して検索できるようにする 
 
 
 ## <a name="perform-actions-on-content-you-find"></a>検索したコンテンツに対してアクションを実行する
 
 検索を実行し、必要に応じて絞り込みを行うと、次の手順は検索で返された結果を使用して何らかの処理を行います。 結果をローカルコンピューターにエクスポートしてダウンロードできます。または、組織で電子メールを攻撃した場合は、ユーザーのメールボックスから検索結果を削除することができます。
   
-- [コンテンツ検索の結果をエクスポート](export-search-results.md)して、ローカルコンピューターにダウンロードする 
+- [コンテンツ検索の結果をエクスポート](export-search-results.md) して、ローカルコンピューターにダウンロードする 
     
-- [電子メールメッセージの検索と削除](search-for-and-delete-messages-in-your-organization.md)(ウイルスに感染したメッセージ、危険な添付ファイルまたはフィッシングメッセージなど) 
+- [電子メールメッセージの検索と削除](search-for-and-delete-messages-in-your-organization.md) (ウイルスに感染したメッセージ、危険な添付ファイルまたはフィッシングメッセージなど) 
     
 - 実際の結果をエクスポートせずに、コンテンツ検索の結果に関する[レポートをエクスポートする](export-a-content-search-report.md) 
     
@@ -65,9 +65,9 @@ ms.locfileid: "43632922"
 
 コンテンツ検索は簡単に使用できますが、強力なツールでもあります。 舞台裏では、多くのことが進行しています。 It の理解を深め、その動作とその制限を理解すると、組織の検索と調査のニーズに合わせて使用できるようになりました。 以下について調べます。
   
-- [Exchange と SharePoint の部分的にインデックス](partially-indexed-items-in-content-search.md)が作成されたアイテム、および検索結果をエクスポートおよびダウンロードするときにそれらを含めるか除外するかを指定します。 
+- [Exchange と SharePoint の部分的にインデックス](partially-indexed-items-in-content-search.md) が作成されたアイテム、および検索結果をエクスポートおよびダウンロードするときにそれらを含めるか除外するかを指定します。 
     
-- [部分的にインデックス](investigating-partially-indexed-items-in-ediscovery.md)が作成されたアイテムを調べて、組織のリスクを確認する 
+- [部分的にインデックス](investigating-partially-indexed-items-in-ediscovery.md) が作成されたアイテムを調べて、組織のリスクを確認する 
     
 - [コンテンツ検索ツールの制限](limits-for-content-search.md)(一度に実行できる検索の最大数、および単一の検索に含めることができるコンテンツの場所の最大数など) 
     
@@ -81,10 +81,10 @@ ms.locfileid: "43632922"
   
 - ケースに応答するアイテムがそのフォルダー内にあることを確信している場合は、[特定のメールボックスおよびサイトフォルダー](use-content-search-for-targeted-collections.md) (*対象のコレクション*と呼ばれます) を検索します。 
     
-- [メールボックスおよび OneDrive の場所](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)でユーザーの一覧を検索する 
+- [メールボックスおよび OneDrive の場所](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) でユーザーの一覧を検索する 
     
-- [複数の検索を作成、レポート、および削除](create-report-on-and-delete-multiple-content-searches.md)して、検索データを迅速かつ効率的に識別し、選別する 
+- [複数の検索を作成、レポート、および削除](create-report-on-and-delete-multiple-content-searches.md) して、検索データを迅速かつ効率的に識別し、選別する 
     
-- [コンテンツ検索を複製](clone-a-content-search.md)し、同じコンテンツの場所で実行されるさまざまなキーワード検索クエリの結果をすばやく比較します。または、新しい検索を作成するときに大量のコンテンツの場所を再入力する必要がないため、スクリプトを使用して時間を節約することができます。 
+- [コンテンツ検索を複製](clone-a-content-search.md) し、同じコンテンツの場所で実行されるさまざまなキーワード検索クエリの結果をすばやく比較します。または、新しい検索を作成するときに大量のコンテンツの場所を再入力する必要がないため、スクリプトを使用して時間を節約することができます。 
     
 

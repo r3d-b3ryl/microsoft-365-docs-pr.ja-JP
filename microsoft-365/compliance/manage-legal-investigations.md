@@ -17,18 +17,18 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 のセキュリティ & コンプライアンスセンターで電子情報開示ケースを使用して、組織の法的調査を管理します。
-ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: edc9835cdbefa611af4c0906be5d3e1d0404c635
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815504"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285653"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 
 組織には、組織内の特定の役員または他の従業員に関連する訴訟に対応する理由が多数あります。 これにより、電子メール、ドキュメント、インスタントメッセージの会話、ユーザーが毎日の作業タスクで使用したその他のコンテンツの場所について、調査に関する詳細情報をすばやく見つけて保持することができます。 セキュリティ/コンプライアンスセンターの電子情報開示ケースツールを使用すると、このような他の多くの操作を実行できます。
   
-**Microsoft が電子情報開示の調査を管理する方法を知りたいですか。** 同じ検索および調査ツールを使用して内部電子情報開示ワークフローを管理する方法について説明する[テクニカルホワイトペーパー](https://go.microsoft.com/fwlink/?linkid=852161)をダウンロードすることができます。
+**Microsoft が電子情報開示の調査を管理する方法を知りたいですか。** 同じ検索および調査ツールを使用して内部電子情報開示ワークフローを管理する方法について説明する [テクニカルホワイトペーパー](https://go.microsoft.com/fwlink/?linkid=852161) をダウンロードすることができます。
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>電子情報開示ケースを使用して法的調査を管理する
 
@@ -36,9 +36,9 @@ ms.locfileid: "44815504"
   
 - 組織が行う必要のあるすべての法的調査に対して電子情報開示のケースを作成して使用することによって[、電子情報開示ワークフローを管理](ediscovery-cases.md)する 
     
-- [電子情報開示のアクセス許可を割り当て](assign-ediscovery-permissions.md)て、組織内で電子情報開示ケースを作成および管理できるユーザーを制御します。 
+- [電子情報開示のアクセス許可を割り当て](assign-ediscovery-permissions.md) て、組織内で電子情報開示ケースを作成および管理できるユーザーを制御します。 
     
-- [コンプライアンスの境界を設定](tagging-and-assessment-in-advanced-ediscovery.md)して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する 
+- [コンプライアンスの境界を設定](tagging-and-assessment-in-advanced-ediscovery.md) して、電子情報開示マネージャーが検索できるユーザーコンテンツの場所を制御する 
     
 - 組織内の[コンテンツを検索する](search-for-content.md) 
     
@@ -58,13 +58,13 @@ Microsoft 365 の高度な電子情報開示ソリューションは、Office 36
 
 高度な電子情報開示における組み込みワークフローの概要を次に示します。 詳細については、「 [Advanced eDiscovery ワークフローを調査する](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow)」を参照してください。
 
-- [ケースを作成](create-new-ediscovery-case.md)して開始する
+- [ケースを作成](create-new-ediscovery-case.md) して開始する
 
-- [保管担当者を管理](managing-custodians.md)するには、それらをケースに追加し、自分のメールボックス、OneDrive アカウント、およびそれらのメンバーである Microsoft Teams のコンテンツに法的情報を含めることによって行います。
+- [保管担当者を管理](managing-custodians.md) するには、それらをケースに追加し、自分のメールボックス、OneDrive アカウント、およびそれらのメンバーである Microsoft Teams のコンテンツに法的情報を含めることによって行います。
 
 - 法的情報保留通知プロセスを自動化して保管担当者との[通信を管理](managing-custodian-communications.md)する
 
-- [保管担当者データをインデックス](processing-data-for-case.md)化し、インデックス作成エラーを修正して、調査のためにデータを効果的に収集できるようにする
+- [保管担当者データをインデックス](processing-data-for-case.md) 化し、インデックス作成エラーを修正して、調査のためにデータを効果的に収集できるようにする
 
 - ケースの[データを収集](collecting-data-for-ediscovery.md)して、さらに調査するために[レビューセットに追加する](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set)
 
