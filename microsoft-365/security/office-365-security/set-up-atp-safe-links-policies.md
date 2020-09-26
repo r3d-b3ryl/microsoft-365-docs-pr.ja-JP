@@ -17,24 +17,23 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 安全なリンクポリシーを設定して、Word、Excel、PowerPoint、および Visio ファイル内の悪意のあるリンクや、電子メールメッセージだけで組織を保護します。
-ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201761"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279583"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Office 365 の ATP の安全なリンクポリシーを設定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
 > この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。 Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-[Atp の安全なリンク](atp-safe-links.md)は、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) の機能で、フィッシングやその他の攻撃で使用されている悪意のあるリンクから組織を保護するのに役立ちます。 [セキュリティ & コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)がある場合は、ユーザーが web アドレス (url) をクリックしたときに組織が保護されるようにするために、ATP の安全なリンクポリシーを設定することができます。 ATP の安全なリンクポリシーを構成して、Office ドキュメント内の電子メールと Url の Url をスキャンできます。
+[Atp の安全なリンク](atp-safe-links.md) は [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) の機能であり、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護するのに役立ちます。 [セキュリティ & コンプライアンスセンターに必要なアクセス許可](permissions-in-the-security-and-compliance-center.md)がある場合は、ユーザーが web アドレス (url) をクリックしたときに組織が保護されるようにするために、ATP の安全なリンクポリシーを設定することができます。 ATP の安全なリンクポリシーを構成して、Office ドキュメント内の電子メールと Url の Url をスキャンできます。 ATP の安全なリンクは、既知の悪意のあるハイパーリンクやマルウェアを含む添付ファイルの受信メールをスキャンします。 この機能は、スキャンした Url を Microsoft の標準 URL 形式プレフィックスに書き換え <https://nam01.safelinks.protection.outlook.com> ます。 リンクが書き換えられると、悪意のある可能性のあるコンテンツがあるかどうかが分析されます。 ATP の安全なリンクが有効になっている場合、ユーザーが電子メール内のリンクをクリックすると、その URL が組織のカスタムブロックされた URL リストによってブロックされるか、URL が悪意のあるものと判断されると、警告ページが表示されます。
 
-ATP の安全なリンクが有効になっている場合、ユーザーが電子メール内のリンクをクリックすると、その URL が組織のカスタムブロックされた URL リストによってブロックされるか、URL が悪意のあるものと判断されると、警告ページが表示されます。
+ATP の安全なリンクによって URL が書き換えられると、メッセージが転送または返信されたときに、URL は書き換えられたままになります。 返信または転送するメッセージに追加されたリンクは書き換えられません。
 
 [新機能は ATP に継続的に追加](office-365-atp.md#new-features-in-office-365-atp)されています。 新機能が追加されたときに、既存の ATP の安全なリンクポリシーを調整する必要がある場合があります。
 

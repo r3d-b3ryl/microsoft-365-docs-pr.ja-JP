@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 1ad83dbf323e431e1694b408e09e581ff5b76348
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104572"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279560"
 ---
 # <a name="register-existing-devices-yourself"></a>既存のデバイスをj自分で登録する
 
@@ -146,14 +146,14 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 1. [ **ファイルのアップロード**] で、以前に作成した CSV ファイルへのパスを指定します。
 
-1. [ **デバイスの登録**] を選択します。 デバイスは、 **AutopilotRegistrationRequested**としてマークされているデバイス**ブレード**上のデバイスの一覧に追加されます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは **ユーザーのための** 準備完了として表示され、ユーザーが使用を開始するのを待っています。
+1. [ **デバイスの登録**] を選択します。 システムによってデバイス **ブレード**上のデバイスの一覧にデバイスが追加され、[ **登録保留中**] としてマークされます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは **ユーザーのための** 準備完了として表示され、ユーザーが使用を開始するのを待っています。
 
 
 メインページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
 
-| State | 説明 |
+| 状態 | 説明 |
 |---------------|-------------|
-| AutopilotRegistrationRequested | 登録はまだ行われていません。 後でもう一度確認してください。 |
+| 登録保留中 | 登録はまだ行われていません。 後でもう一度確認してください。 |
 | 登録の失敗 | 登録を完了できませんでした。 詳細については、「 [device registration のトラブルシューティング](#troubleshooting-device-registration) 」を参照してください。 |
 | ユーザーの準備完了 | 登録が成功し、デバイスをユーザーに配信する準備ができました。 Microsoft マネージドデスクトップでは、初めてセットアップを実行することができます。したがって、これ以上の準備を行う必要はありません。 |
 | Active | デバイスはユーザーに配信され、テナントに登録されています。 これは、デバイスを定期的に使用していることも示しています。 |
