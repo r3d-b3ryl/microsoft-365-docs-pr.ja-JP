@@ -15,14 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 05aacce9605e17dd45afed8eb3bf16b8784a2316
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ROBOTS: NOINDEX, NOFOLLOW
+description: データ調査 (プレビュー) で、証拠ドキュメントに注釈を付けて墨消しすることができます。
+ms.openlocfilehash: c88750ca23a2bb8e1c689bdd6a05bd8cd0726aa6
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42079924"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285553"
 ---
-# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="94d3b-102">証拠でドキュメントに注釈を付けて墨消しする</span><span class="sxs-lookup"><span data-stu-id="94d3b-102">Annotate and redact documents in evidence</span></span>
+# <a name="annotate-and-redact-documents-in-evidence"></a><span data-ttu-id="8f7c6-103">証拠でドキュメントに注釈を付けて墨消しする</span><span class="sxs-lookup"><span data-stu-id="8f7c6-103">Annotate and redact documents in evidence</span></span>
 
-<span data-ttu-id="94d3b-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="94d3b-103">Content coming soon.</span></span>
+<span data-ttu-id="8f7c6-104">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="8f7c6-104">Content coming soon.</span></span>

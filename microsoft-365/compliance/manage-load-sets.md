@@ -1,5 +1,5 @@
 ---
-title: ロード セットの管理
+title: データ調査でロードセットを管理する (プレビュー)
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,15 +14,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: ''
-ms.openlocfilehash: 658b5263bdfb918d36a184832e41af01b9b63e31
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ROBOTS: NOINDEX, NOFOLLOW
+description: データ調査でのロードセットの管理 (プレビュー) について説明します。
+ms.openlocfilehash: add4aae0ddfba7f3fc94c6da2278ed586d65f0f9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42071634"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285613"
 ---
-# <a name="manage-load-sets"></a><span data-ttu-id="920fc-102">ロード セットの管理</span><span class="sxs-lookup"><span data-stu-id="920fc-102">Manage load sets</span></span>
+# <a name="manage-load-sets-in-data-investigations-preview"></a><span data-ttu-id="67d69-103">データ調査でロードセットを管理する (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="67d69-103">Manage load sets in Data Investigations (preview)</span></span>
 
-<span data-ttu-id="920fc-103">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="920fc-103">Content coming soon.</span></span>
+<span data-ttu-id="67d69-104">コンテンツ準備中です。</span><span class="sxs-lookup"><span data-stu-id="67d69-104">Content coming soon.</span></span>
