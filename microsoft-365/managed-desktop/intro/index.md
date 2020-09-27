@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a126627a4c4d96b2b6918cefb0630801b3674383
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b877a35133be13cd6783659f1e5d981633338be8
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950498"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269375"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップとは
 
@@ -44,7 +44,7 @@ Microsoft のポリシーとセキュリティ ベースラインは、ユーザ
 - Microsoft マネージド デスクトップのデバイスのブート時間は、約 4 分の 1です。
 - バッテリ寿命は少なくとも 2 倍
 - デバイスのクラッシュは年間約 3 分の 1
-- [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview) を介したデバイス モビリティ。どのデバイスにサインインしても、同じ操作性が得られます。
+- [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview) を介したデバイス モビリティにより、ユーザーはサインインするデバイスに関係なく同じ操作性を得られます。
 
 IT 管理者は、次の機能を利用できます。
 
