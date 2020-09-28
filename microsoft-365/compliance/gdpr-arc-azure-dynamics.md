@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2083b7b6ed208f5681f4e19c276c1d7425999854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422465"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201524"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>GDPR に関する Azure および Dynamics 365 アカウンタビリティ対応準備チェックリスト
 
@@ -33,7 +33,7 @@ ms.locfileid: "47422465"
 - [ISO/IEC CD 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) セキュリティ技術の要件。
 - プライバシー管理要件に関連する [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472)。
 
-コンプライアンス スコア [[16](gdpr-arc-Azure.md#16)] で、GDPR タイル内の顧客管理のコントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。 GDPR をサポートするために Microsoft Azure および Dynamics 365 が実装する内部コントロールのプレゼンテーションを編成するためにもこのコントロール構造は使用されます ([Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) でダウンロードすることができます)。
+コンプライアンス マネージャー [[16](gdpr-arc-Azure.md#16)] で、GDPR タイル内の顧客管理コントロールの下にあるコントロール ID とコントロール タイトルを参照することによって、このチェックリストの項目を管理できます。 GDPR をサポートするために Microsoft Azure および Dynamics 365 が実装する内部コントロールのプレゼンテーションを編成するためにもこのコントロール構造は使用されます ([Service Trust Center](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) でダウンロードすることができます)。
 
 [GDPR をサポートするために Microsoft Dynamics 365 が実装する内部コントロール](https://aka.ms/gdprcontrols)のプレゼンテーションを編成するためにもこのコントロール構造は使用されます。
 

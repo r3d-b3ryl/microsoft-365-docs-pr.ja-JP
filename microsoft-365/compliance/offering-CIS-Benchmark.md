@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d8b24885b1d1a80380d0e9ad5c7942bb31ba054c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 398fdb66623fb668bfc95e8a8a8f8fae44c8163e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416721"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208609"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>Center for Internet Security (CIS) ベンチマーク
 
@@ -85,6 +85,10 @@ CIS ベンチマークは、対象となる Microsoft 製品およびサービ�
 **Microsoft CIS ベンチマークの開発に貢献したのは誰ですか ?**
 
 CIS は、"ベンチマークは内容領域専門家、テクノロジ ベンダー、パブリックおよびプライベートの CIS ベンチマーク コミュニティ メンバー、および CIS ベンチマーク開発チームの惜しみないボランティア活動によって開発されています。" と述べています。 たとえば、「[CIS Microsoft Azure 基礎ベンチマーク v1.0.0 が公開されました (CIS Microsoft Azure Foundations Benchmark v1.0.0 Now Available)](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/)」に、Azure の貢献者の一覧が記載されています。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 

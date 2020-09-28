@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8440d510e5f6f2e1e90e4f3e9a7368cd00f0f802
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417921"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208279"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>MPAA
 
@@ -59,6 +59,10 @@ MPAA ガイドラインは、デジタル資産の作成、処理、保存、配
 **自分の組織は MPAA 監査を受ける必要がありますか? それとも Azure 監査で十分ですか?**
 
 製作施設、視覚効果スタジオ、およびその他のサービス パートナーは、製作責任者やディレクターと協力して、新しいセキュリティ要件について理解し、正式な MPAA 監査が必要かどうかを確認する必要があります。 MPAA への準拠は任意ですが、メディア関連のお客様がコンテンツのセキュリティと Azure の保護機能を安心して利用できるように、マイクロソフトでは個別に評価を実施しています。 ただし、Azure ではお客様のクラウド環境を個別に管理しません。これは MPAA の追加規制の対象となる可能性があるため、お客様独自の環境監査によって対応することをお勧めします。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 

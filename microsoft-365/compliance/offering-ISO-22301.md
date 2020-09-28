@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2e470972e1d1549bff5cce107666a930a9b29969
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29af3729260d3d87f0cf17b83beec70da6fb7931
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416235"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208389"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 ビジネス継続性管理標準
 
@@ -70,6 +70,10 @@ ISO 22301 は、企業や政府組織が使用する認証であり、ビジネ�
 **Microsoft サービスの ISO 22301 コンプライアンスを自分の組織の認証として利用できますか?**
 
 はい。 お客様の会社で、Microsoft サービス上に展開する実装に対して ISO 22301 認証が必要な場合は、お客様のコンプライアンス評価で Azure および Office 365 の認証を利用できます。 ただし、お客様の組織内または目的の用途における ISO 22301 へのコンプライアンスのための制御、プロセス、実装は、お客様の責任において評価者に評価させる必要があります。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
+
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 

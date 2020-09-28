@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778293"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198942"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -60,7 +60,7 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|
-|組織または Microsoft 365 サービスにより、保持アクションと削除アクションを効率的に設定する <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 グループ <br />- Skype for Business  <br />- Microsoft Teams  |[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)|
+|組織または Microsoft 365 サービスにより、保持アクションと削除アクションを効率的に設定する <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 グループ <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer ネットワーク |[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)|
 |管理者とユーザーが、ドキュメントやメールに対して保持アクションと削除アクションのセットを手動で適用できるようにする <br />-  SharePoint <br />- OneDrive <br />- Outlook および Outlook on the web|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
 |サイト管理者が、SharePoint ライブラリ、フォルダー、ドキュメント セット内のすべてのコンテンツに既定の保持ラベルを設定できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
 |ユーザーが、Outlook のルールを使用して、メールに保持ラベルを自動的に適用できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
