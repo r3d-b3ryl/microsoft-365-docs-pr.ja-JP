@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 電子メールや Skype for Business Online などのサービスが独自のドメイン名を使用するように、Microsoft 365 にドメインを追加してセットアップする方法について説明します。
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662234"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295060"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>任意のドメインレジストラーで Microsoft 365 をセットアップするためにネームサーバーを変更する
 
@@ -122,8 +122,8 @@ Microsoft 365 のドメインのセットアップウィザードの最後の手
 |:-----|:-----|
 |1 番目のネーム サーバー  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |2 番目のネーム サーバー  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|3 番目のネームサーバー  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|4 番目のネームサーバー  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|3 番目のネームサーバー  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|4 番目のネームサーバー  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > 4つすべてのレコードを追加することをお勧めしますが、レジストラーで2つだけをサポートする場合は、 **ns1.bdm.microsoftonline.com** と **ns2.bdm.microsoftonline.com**を追加します。 
@@ -170,7 +170,7 @@ Microsoft 365 のドメインのセットアップウィザードの最後の手
 
 4. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. その後、自分のドメインで使用できるように、Microsoft メールとその他のサービスがすべて設定されます。 

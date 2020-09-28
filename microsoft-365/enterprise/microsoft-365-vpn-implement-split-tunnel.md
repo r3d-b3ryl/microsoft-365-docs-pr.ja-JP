@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Office 365 向けに VPN スプリット トンネリングを実装する方法
-ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214876"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295276"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>Office 365 向け VPN スプリット トンネリングの実装
 
@@ -325,6 +325,10 @@ Azure Virtual Network への直接アクセスを許可する方法について�
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>この内容は、Office 365 のワールドワイド インスタンスを使用している中国のユーザーにも適用されますか？
 
 **いいえ**、されません。  上記内容で 1 つ注意していただきたいことは、ワールドワイド Office 365 インスタンスに接続している PRC のユーザーです。 この地域ではクロスボーダー ネットワークの混雑が頻繁に発生するため、直接のインターネットの下りのパフォーマンスは変動する可能性があります。 当地域のほとんどのユーザーは、VPN を使用して企業ネットワークにトラフィックを取り込み、許可された MPLS 回線などを利用し、最適化されたパスを介して国外への送信を行っています。 これについては、[中国ユーザー向けのOffice 365 パフォーマンス最適化](microsoft-365-networking-china.md)の記事で詳しく説明しています。
+
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>ブラウザーで実行されている Teams の分割トンネル構成は機能しますか?
+
+**いいえ**、されません。  Microsoft Teams クライアントバージョン1.3.00.13565 以上でのみ動作します。 このバージョンには、クライアントが利用可能なネットワークパスを検出する方法が改善されています。
 
 ## <a name="related-topics"></a>関連項目
 

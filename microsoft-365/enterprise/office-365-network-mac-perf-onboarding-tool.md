@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク接続テストツール (プレビュー)
-ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200819"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295528"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 ネットワーク接続テストツール (プレビュー)
 
@@ -205,7 +205,7 @@ SharePoint サービスのフロントドアから、15Mb ファイルのダウ�
 
 クライアントから Microsoft Teams サービスのフロントドアへの、10秒テストの音声呼び出しで測定された UDP パケット損失を示します。 この値は、パスの **1.00%** 未満である必要があります。
 
-### <a name="latency"></a>遅延
+#### <a name="latency"></a>遅延
 
 測定された UDP 待機時間を示します。これは **100 ミリ秒**より小さくなければなりません。
 
@@ -265,7 +265,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 インターネット出口の場所は、ネットワークトラフィックがエンタープライズネットワークから出てインターネットに接続する場所です。 これは、ネットワークアドレス変換 (NAT) デバイスがあり、通常はインターネットサービスプロバイダー (ISP) を使用して接続する場所としても識別されます。 場所とインターネット出口の場所の間に長距離の距離がある場合は、WAN のバックアウトが非常に重要であることがわかります。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [Microsoft 365 管理センターでのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
 description: Microsoft 365 セキュリティセンターで Microsoft セキュリティスコアを向上させるための処置を行う方法について説明します。
-keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュア スコア、セキュリティ センター、改善のための処置
+keywords: microsoft secure score、secure score、office 365 のセキュリティスコア、microsoft セキュリティスコア、microsoft 365 セキュリティセンター、改善アクション
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7049845b4c1b240c5ecc72b4f2ebac1acecfbaf6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203685"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295130"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
 

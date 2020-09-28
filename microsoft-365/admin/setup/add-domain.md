@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: Dns レコードを DNS ホストに追加して、365 Microsoft 365 の microsoft にドメインを追加します。 これらの手順を案内するウィザードがあります。
-ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 09a66b9ac4f97a076d71dd7f259678181378ae48
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775161"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295024"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
@@ -118,7 +118,7 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 
 5. 追加する DNS レコードの種類を選択し、新しいレコードの情報を入力します。
     
-6. [**保存**] を選択します。
+6. **[保存]** を選択します。
 
 ## <a name="registrars-with-domain-connect"></a>レジストラーとドメイン接続
 
@@ -135,7 +135,7 @@ Web サイトまたはサードパーティサービスのカスタムレコー�
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
+- [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy 販売店)

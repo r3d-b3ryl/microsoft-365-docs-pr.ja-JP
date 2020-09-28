@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: Azure Active Directory に参加している Windows 10 デバイスから、基幹業務アプリケーション、ファイル共有、プリンターなどのオンプレミスのリソースにアクセスする方法について説明します。
-ms.openlocfilehash: 9b83781afee746b06bbdf90962de0f55ffbcb118
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2144268f5cbab67c39d5902622c61c0c35e6481c
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307495"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295312"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の Azure AD に参加しているデバイスからオンプレミスのリソースにアクセスする
 
@@ -36,9 +36,6 @@ Azure Active Directory に参加している Windows 10 デバイスはすべて
 
 詳細については、「 [Azure Active Directory でのデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」を参照してください。
 手順の概要についても、以下のセクションで説明します。
-
-> [!IMPORTANT]
-> この手順は、OAuth および NTLM にのみ適用されます。 Kerberos はサポートされていません。
  
 ## <a name="run-azure-ad-connect"></a>Azure AD Connect を実行する
 

@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: グループとそのアクティビティについて知るために、Microsoft 365 groups レポートを取得します。
-ms.openlocfilehash: 1d329efa4fe7cdf12b6c7452b6480d237fb3d5c1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948990"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295096"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターの microsoft 365 レポート-Microsoft 365 グループ
 
@@ -37,8 +37,8 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 
-    
-2. [**レポートの選択**] ドロップダウンから、[**Office 365**] \> [**グループのアクティビティ**] の順に選択します。
+2. オプションで、[**アクティブなユーザー] の**下にある [**詳細表示**] を選択します。 Microsoft 365 Services。
+3. [**レポートの選択**] ドロップダウンから、[**Office 365**] \> [**グループのアクティビティ**] の順に選択します。
   
 ## <a name="interpret-the-groups-report"></a>グループ レポートを解釈する
 
@@ -61,4 +61,3 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 |11.  <br/> |また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。  <br/> |
 |||
    
-

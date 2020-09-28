@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Office 365 E3 から Microsoft 365 Business Premium にビジネスを移行する方法について説明します。
-ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785930"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295292"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Office 365 E3 から Microsoft 365 Business Premium への移行 
 
@@ -69,7 +69,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 
 ## <a name="migration"></a>移行
 
-サブスクリプションを移行するには、「[プランを手動で変更](../commerce/subscriptions/change-plans-manually.md)する」を参照してください。一部のユーザーのみを Microsoft 365 Business Premium に移行する場合は、手順を確認してください。 また、[すべてのユーザーを自動的にアップグレード](../commerce/subscriptions/upgrade-to-different-plan.md)したり、パートナーと協力して、E3 サブスクリプションとライセンスを Microsoft 365 Business Premium サブスクリプションに移行したりすることもできます。
+サブスクリプションを移行するには、「 [プランを手動で変更](../commerce/subscriptions/change-plans-manually.md) する」を参照してください。一部のユーザーのみを Microsoft 365 Business Premium に移行する場合は、手順を確認してください。 また、 [すべてのユーザーを自動的にアップグレード](../commerce/subscriptions/upgrade-to-different-plan.md)したり、パートナーと協力して、E3 サブスクリプションとライセンスを Microsoft 365 Business Premium サブスクリプションに移行したりすることもできます。
 次のセクションでは、移行後に行う必要のある変更点について説明します。
 
 ### <a name="office-365-e3-subscription-configuration-and-data"></a>Office 365 E3 サブスクリプションの構成とデータ
@@ -82,24 +82,24 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 
 ### <a name="windows-10"></a>Windows 10
 
-Windows Pro Creator の更新プログラムを適用していない場合は、windows pro Creator update[にアップグレード](upgrade-to-windows-pro-creators-update.md)してください。
+Windows Pro Creator の更新プログラムを適用していない場合は、windows pro Creator update [にアップグレード](upgrade-to-windows-pro-creators-update.md)してください。
 
 ### <a name="set-up-policies-to-protect-user-devices-and-files"></a>ユーザーのデバイスとファイルを保護するためのポリシーを設定する
 
 > [!NOTE]
-> Office 365 MDM ポリシーおよびデバイスをセットアップすると、これらのデバイスは Microsoft 365 管理センターの [**デバイス**] ページに一覧表示されます。 セットアップしたポリシーはすべて、 [Intune ポータル](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)の従来のポリシーの一覧に表示されます。
+> Office 365 MDM ポリシーおよびデバイスをセットアップすると、これらのデバイスは Microsoft 365 管理センターの [ **デバイス** ] ページに一覧表示されます。 セットアップしたポリシーはすべて、 [Intune ポータル](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)の従来のポリシーの一覧に表示されます。
 
 Microsoft 365 Business Premium にライセンスを割り当てたら、ユーザーのデバイスとファイルの保護を開始できます。
 
-組織内のすべてのユーザーを Microsoft 365 Business Premium にアップグレードした場合は、ホームページにセットアップウィザードが表示され、[セットアップウィザードの手順で [Microsoft 365 Business Premium](set-up.md)のセットアップ] を使用してファイルとモバイルデバイスを保護することができます。
+組織内のすべてのユーザーを Microsoft 365 Business Premium にアップグレードした場合は、ホームページにセットアップウィザードが表示され、 [セットアップウィザードの手順で [Microsoft 365 Business Premium](set-up.md) のセットアップ] を使用してファイルとモバイルデバイスを保護することができます。
 
 [デバイス] ページでは、次の手順を実行することもできます。
   
-1. 管理センターの左側のナビゲーションで、[**デバイス** \> **ポリシー**] に移動します。
+1. 管理センターの左側のナビゲーションで、[ **デバイス** \> **ポリシー**] に移動します。
     
-2. [**デバイスポリシー** ] ページで、[**追加**] を選択します。
+2. [ **デバイスポリシー** ] ページで、[ **追加**] を選択します。
     
-3. [**ポリシーの追加**] ウィンドウで、ポリシーの名前を指定し、ドロップダウンから**ポリシーの種類**を選択します。 
+3. [ **ポリシーの追加** ] ウィンドウで、ポリシーの名前を指定し、ドロップダウンから **ポリシーの種類** を選択します。 
     
      Android および iPhone デバイス上のファイルを保護するためのアプリケーションポリシーおよび Windows 10 を設定し、会社が所有する Windows 10 デバイスのデバイス構成ポリシーを設定できます。 詳細については、次のリンクを参照してください。
     
@@ -111,14 +111,19 @@ Microsoft 365 Business Premium にライセンスを割り当てたら、ユー�
   
 4. ポリシーを設定すると、従業員はデバイスをセットアップできるようになります。
     
-  - Windows デバイスの手順については、「 [Microsoft 365 Business Premium ユーザー向けに windows デバイスをセットアップする](set-up-windows-devices.md)」を参照してください。 
+  - Windows デバイスの手順については、「 [Microsoft 365 Business Premium ユーザー向けに windows デバイスをセットアップする](set-up-windows-devices.md) 」を参照してください。 
     
-  - Android フォンおよび iPhones の手順については、「 [Microsoft 365 Business Premium ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
+  - Android フォンおよび iPhones の手順については、「 [Microsoft 365 Business Premium ユーザー向けのモバイルデバイスのセットアップ](set-up-mobile-devices.md) 」を参照してください。 
+  
+### <a name="mailbox-size"></a>メールボックスのサイズ
+
+Microsoft 365 Business Premium では、Exchange Online プラン1を使用しているため、50 GB の記憶域の制限があります。 Microsoft 365 Business Premium に移行する際に、ユーザーのいずれかが 50 GB を超えるメールボックスストレージを超えている場合は、このユーザーを Exchange Online プラン2に割り当て、Exchange Online プラン1を削除することをお勧めします。両方を割り当てることはできません。
+
 
 ### <a name="threat-protection"></a>脅威保護
 
-Microsoft 365 Business Premium に移行した後、Office 365 ATP がインストールされています。 概要については、「 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 」を参照してください。 セットアップするには、「 [atp の安全なリンクを設定](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)する」、「atp の安全な[添付ファイルを設定](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)する」、および「 [atp のフィッシング対策を設定](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)する」を参照してください。
+Microsoft 365 Business Premium に移行した後、Office 365 ATP がインストールされています。 概要については、「 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 」を参照してください。 セットアップするには、「 [atp の安全なリンクを設定](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)する」、「atp の安全な [添付ファイルを設定](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)する」、および「 [atp のフィッシング対策を設定](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)する」を参照してください。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-機密ラベルの使用を開始するには、機密ラベル[の概要](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)と、[機密ラベルの作成と管理](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)に関するビデオを参照してください。
+機密ラベルの使用を開始するには、機密ラベル [の概要](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) と、 [機密ラベルの作成と管理](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) に関するビデオを参照してください。
