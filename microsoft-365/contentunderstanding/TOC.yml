@@ -1,22 +1,44 @@
 - name: コンテンツの概要
   items:
+    - name: Microsoft SharePoint の同期について
+      href: microsoft-sharepoint-syntex-overview.md
     - name: ドキュメント理解の概要
       href: document-understanding-overview.md
     - name: フォーム処理の概要
       href: form-processing-overview.md
     - name: ドキュメントの理解とフォーム処理モデルの違い
       href: difference-between-document-understanding-and-form-processing-model.md
+    - name: サンプルモデルを使用したモデルについて
+      href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: コンテンツセンターを作成する
       href: create-a-content-center.md
     - name: 分類子を作成する
       href: create-a-classifier.md
     - name: 抽出器を作成する
       href: create-an-extractor.md
+    - name: 説明の種類の概要
+      href: explanation-types-overview.md
     - name: モデルを適用する
       href: apply-a-model.md
     - name: フォーム処理モデルを作成する
       href: create-a-form-processing-model.md
-- name: セットアップの概要
+    - name: 保持ラベルを適用する
+      href: apply-a-retention-label-to-a-model.md
+    - name: モデル使用状況分析
+      href: model-usage-analytics.md
+- name: セットアップと管理
   items:
     - name: コンテンツの理解を設定する
       href: set-up-content-understanding.md
+    - name: 画像へのタグ付け
+      href: image-tagging.md
+- name: コンテンツ サービス
+  items:
+    - name: SKOS を使用したインポート
+      href: import-term-set-skos.md
+    - name: SKOS 書式設定のリファレンス
+      href: skos-format-reference.md
+    - name: コンテンツタイプをハブにプッシュ
+      href: push-content-type-to-hub.md
+    - name: 用語ストアレポート
+      href: term-store-analytics.md
