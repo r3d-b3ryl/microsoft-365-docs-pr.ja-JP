@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを非常に効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948175"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198494"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -50,11 +50,14 @@ ms.locfileid: "47948175"
 - Exchange パブリック フォルダー
 - チームのチャネル メッセージ
 - Teams のチャット
+- Yammer コミュニティのメッセージ
+- Yammer の個人用メッセージ
 
-アイテム保持ポリシーを作成するときに Teams の場所のいずれかを選択すると、他の場所は自動的に除外されます。 したがって、従うべき手順は、Teams の場所を含める必要があるかどうかによって異なります。
+アイテム保持ポリシーを作成するときに Teams か Yammer の場所を選択する場合、他の場所は自動的に除外されます。 したがって、従うべき手順は、Teams か Yammer の場所を含める必要があるかどうかによって異なります。
 
 - [Teams の場所のアイテム保持ポリシーの説明](#retention-policy-for-teams-locations)
-- [Teams 以外の場所のアイテム保持ポリシーの説明](#retention-policy-for-locations-other-than-teams)
+- [Yammer の場所のアイテム保持ポリシーの説明](#retention-policy-for-yammer-locations)
+- [Teams や Yammer 以外の場所のアイテム保持ポリシーの説明](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 複数のアイテム保持ポリシーがあり、保持ラベルも使用する場合は、「[保持の原則、すなわち優先順位について](retention.md#the-principles-of-retention-or-what-takes-precedence)」を参照して、複数の保持設定が同じコンテンツに適用された場合の結果を理解してください。
 
@@ -93,7 +96,56 @@ Teams は、単なるチャットやチャネルメッセージを送るだけ�
 
 Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに適用されているアイテム保持ポリシーにより、Teams のチャットやチャネル メッセージで参照されているファイルが、それらのメッセージが削除されるよりも先に削除される場合があります。 このような場合、そのファイルは Teams のメッセージに引き続き表示されますが、ユーザーがファイルをクリックすると、"ファイルが見つかりません" というエラーが表示されます。 この動作はアイテム保持ポリシーに固有のものではなく、ユーザーが SharePoint または OneDrive から手動でファイルを削除した場合にも発生する可能性があります。
 
-### <a name="retention-policy-for-locations-other-than-teams"></a>Teams 以外の場所のアイテム保持ポリシー
+### <a name="retention-policy-for-yammer-locations"></a>Yammer の場所のアイテム保持ポリシー
+
+> [!NOTE]
+> Yammer の保持ポリシーがプレビューで展開されています。 まだ Yammer の新しい場所が表示されていない場合は、数日後にもう一度お試しください。
+>
+> この機能を使用するには、ご利用の Yammer ネットワークがハイブリッド モードではなく、[ネイティブ モード](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)になっている必要があります。
+
+1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
+
+2. 新しいアイテム保持ポリシーを作成するには、[**新しいアイテム保持ポリシー**] を選択します。
+
+3. ウィザードの [**コンテンツを保持するか、削除するか、またはその両方を行うかを決定する**] ページで、コンテンツを保持および削除するための構成オプションを指定します。 
+    
+    削除せずにコンテンツを保持するだけのアイテム保持ポリシーを作成し、指定した期間が経過した後に保持してから削除するか、指定した期間が経過した後にコンテンツを削除するだけです。 詳細については、このページの「[コンテンツを保持および削除するための設定](#settings-for-retaining-and-deleting-content)」を参照してください。
+    
+    このオプションは Teams の場所ではサポートされていないため、[**保存期間の詳細設定を使用する**] を選択しないでください。 
+
+4. [**場所の選択**] ページで、[**特定の場所を選択**] を選択します。 その後、Yammer の場所の 1 つまたは両方をオンに切り替えます: **Yammer コミュニティのメッセージ**と **Yammer の個人用メッセージ**。
+    
+    既定ではすべてのコミュニティとユーザーが選択されていますが、コミュニティやユーザーを含めるか、または除外するかを指定することで、これを絞り込むことができます。
+    
+    Yammer の個人用メッセージの場合: 
+    - 規定値を**すべて**のままにしておくと、Azure B2B のゲスト ユーザーは含まれません。 
+    - [**ユーザーの選択**] を選択した場合、外部ユーザーのアカウントがわかっている場合は、外部ユーザーに保持ポリシーを適用できます。
+
+5. ウィザードを完了して、設定を保存します。
+
+Yammer 向けに機能する保持ポリシーの仕組みに関する詳細情報については、「[Yammer の保持の詳細](retention-policies-yammer.md)」を参照してください。
+
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>Yammer をサポートするのに必要な追加のアイテム保持ポリシー
+
+Yammer に備わっているのは、コミュニティのメッセージや個人用メッセージだけではありません。 Yammer ネットワークのメール メッセージを保持したり削除したりするには、**Office 365 グループ**の場所を使用して、Yammer で使用されている任意の Microsoft 365 グループを含む追加の保持ポリシーを構成します。 
+
+Yammer に保存されているファイルを保持したり削除したりするためには、**SharePoint サイト**や **OneDrive アカウント**の場所を含むアイテム保持ポリシーが必要です。
+
+- 個人用メッセージ内で共有されるファイルは、ファイルを共有したユーザーの OneDrive アカウントに保存されます。 
+
+- コミュニティにアップロードされたファイルは、Yammer コミュニティの SharePoint 内に保存されます。
+
+SharePoint サイトや OneDrive アカウントに適用されているアイテム保持ポリシーにより、Yammer メッセージで参照されているファイルが、それらのメッセージが削除されるよりも先に削除される場合があります。 このような場合、そのファイルは Yammer のメッセージに引き続き表示されますが、ユーザーがファイルをクリックすると、"ファイルが見つかりません" というエラーが表示されます。 この動作はアイテム保持ポリシーに固有のものではなく、ユーザーが SharePoint または OneDrive から手動でファイルを削除した場合にも発生する可能性があります。
+
+### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Teams や Yammer 以外の場所のアイテム保持ポリシー
+
+これらのサービスのいずれかに適用されるアイテム保持ポリシーについては、次の手順をご利用ください。
+
+- Exchange: メールとパブリック フォルダー
+- SharePoint: サイト
+- OneDrive: アカウント
+- Microsoft 365 グループ
+- Skype for Business
 
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、[**ポリシー**] > [**保持**] の順に選択します。
 
