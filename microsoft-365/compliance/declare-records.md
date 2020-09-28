@@ -17,43 +17,64 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: 841c5197addff704016e344ba7ae44355c872f72
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817110"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198926"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-ドキュメントとメールをレコードとして宣言するには、アイテムをレコードとしてマークする[保持ラベル](retention.md#retention-labels)を使用します。 それらの保持ラベルを発行してユーザーや管理者が手動でコンテンツに適用できるようにするか、レコードとしてマークするコンテンツにそれらのラベルを自動的に適用することができます。
+ドキュメントとメールを[レコード](records-management.md#records)として宣言するには、コンテンツを**レコード**または**規制レコード**としてマークする[保持ラベル](retention.md#retention-labels)を使用します。
+
+> [!NOTE]
+> 規制レコードは、現在プレビュー中です。
+
+レコードと規制レコードのどちらを使用すればよいかわからない場合は、「[許可またはブロックされているアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。 規制レコードを使用する必要がある場合は、次のセクションで説明するように、まず PowerShell コマンドを実行する必要があります。
+
+その後、ユーザーや管理者がラベルをコンテンツに適用できるように保持ラベル ポリシーでラベルを公開するか、アイテムをレコード (規制レコードではない) としてマークするラベルの場合は、レコードとして宣言するコンテンツにラベルを自動適用することができます。
+
+## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>規制レコードとしてコンテンツをマークするオプションを表示する方法
+
+>[!NOTE] 
+> 次の手順は、監査ログの [[アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)] セクションの [**保持ラベルの規制レコード オプションを有効にする**] をログに記録する監査可能なアクションです。
+
+既定では、コンテンツを規制レコードとしてマークするための保持ラベル オプションは、保持ラベル ウィザードには表示されません。 このオプションを表示するには、まず PowerShell コマンドを実行する必要があります。
+
+1. [Office 365 セキュリティ センターとコンプライアンス センターの PowerShell への接続](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+
+2. 次のコマンドレットを実行します。
+    
+    ```powershell
+    Set-RegulatoryComplianceUI -Enabled $true
+    ````
+    確認のためのメッセージが表示されることはなく、設定はすぐに有効になります。
+
+保持ラベル ウィザードでのこのオプションの表示に関して気が変わった場合には、同じコマンドレットを **False** 値で実行することで、このオプションを再び非表示にすることができます: `Set-RegulatoryComplianceUI -Enabled $false`  
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>保持ラベルを構成してレコードを宣言する
 
-保持ラベルを作成または構成するときに、そのアイテムをレコードとしてマークするオプションを選択します。
+Microsoft 365 コンプライアンス センターの**レコード管理**ソリューションから保持ラベルを作成または編集する場合、アイテムをレコードとしてマークするオプションがあります。 前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。
 
->[!NOTE] 
-> Microsoft 365 コンプライアンスセンターで **情報 ガバナンス**から保持ラベルを作成または構成する場合、コンテンツをレコードとしてマークするオプションは利用できません。 代わりに **レコード管理**を使用する必要があります。
+例:
 
-コンテンツをレコードとしてマークする新しい保持ラベルを作成するには、次の操作を行います。
+![保持ラベルを構成して、コンテンツをレコードまたは規制レコードとしてマークする](../media/recordversioning6.png)
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com)で、**レコードの管理** \> **ファイル プラン**に移動します。 [**ファイルプラン**] ページで、[**ラベルの作成**] を選びます。
+この保持ラベルを使用することで、ラベルを必要に応じて SharePoint や OneDrive のドキュメントまたは Exchange のメールに適用できるようになりました。 
 
-2. ウィザードの [**保持設定の定義**] ページで、アイテムをレコードとしてマークするオプションを選択します:
-    
-   ![アイテムをレコードとしてマークする保持設定を選択する](../media/recordversioning6.png)
+詳細な手順については、以下を参照してください。
 
-3. 必要に応じて、SharePoint や OneDrive のドキュメントと Exchange メールに保持ラベルを適用します。 手順については、以下を参照してください。
-    
-    - [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
-    
-    - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
+- [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
+
+- [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md) (規制レコードはサポート対象外です)
+
 
 ## <a name="applying-the-configured-retention-label-to-content"></a>コンテンツに構成した保持ラベルを適用する
 
-保持ラベルは、コンテンツをレコードとしてマークする場合、ユーザーが以下のようにアプリ内でそれを適用できるようになります。
+アイテムをレコードや規制レコードとしてマークする保持ラベルをユーザーがアプリ内で適用できるようにする場合:
 
 - Exchange の場合、メールボックスへの書き込みアクセス権を持つすべてのユーザーは、これらのラベルを適用できます。 
 - SharePoint および OneDrive の場合、既定のメンバー グループ (投稿アクセス許可レベル) のすべてのユーザーがこれらのラベルを適用できます。

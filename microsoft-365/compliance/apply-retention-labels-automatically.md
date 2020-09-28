@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルを作成して自動発行します。
-ms.openlocfilehash: 088a521089d34e74865c94b3cd147b02f8d812cb
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816970"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196380"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> このシナリオは、[規制レコード](records-management.md#records)についてはサポートしていません。
 
 [保持ラベル](retention.md)の最も強力な機能の 1 つは、指定した条件に一致したコンテンツに自動的にラベルを適用することです。 この場合、組織内のユーザーが保持ラベルを適用する必要はありません。 Microsoft 365 が行います。
   
@@ -38,7 +41,10 @@ ms.locfileid: "47816970"
     
 - ユーザーはデータ ガバナンス ポリシーについて把握する必要がなくなるので、仕事に集中できる。
     
-コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-getting-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
+コンテンツに機密情報、キーワード、検索可能なプロパティ、または[トレーニング可能な分類子](classifier-get-started-with.md)のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
+
+> [!TIP]
+> プレビューでは、検索可能なプロパティを使用して [Teams 会議のレコーディング](#microsoft-teams-meeting-recordings)を特定できるようになりました。
 
 保持ラベルを自動的に適用するプロセスは、次の条件に基づいています。
 
@@ -80,7 +86,7 @@ ms.locfileid: "47816970"
     
     - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
     
-    - 保持ラベルを使用して[レコード](records-management.md#records)を宣言するには、[**アイテムをレコードとしてマークする**] オプションを有効にします。
+    - 保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または**アイテムを規制レコードとしてマーク**を選択します。 詳細については、「 [保持ラベルを構成してレコードを宣言する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
 
 3. ラベルを作成し、ラベルの公開、ラベルの自動適用、またはラベルの保存のオプションが表示されたら、[**このラベルを特定の種類のコンテンツに自動適用する**] を選択してから、[**完了**] を選択すると、次の手順の手順 2 に直接進む自動ラベル作成ウィザードが起動します。
 
@@ -163,6 +169,29 @@ ms.locfileid: "47816970"
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
+##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 会議のレコーディング
+
+> [!NOTE]
+> Teams 会議のレコーディングを保持したり削除したりする機能はプレビューで展開されていますが、レコーディングを OneDrive や SharePoint に保存する前には機能しません。 詳細については、「[OneDrive for Business と SharePoint または Stream を使用して会議の記録を行う](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)」を参照してください。
+
+ユーザーの OneDrive アカウントまたは SharePoint に保存されている Microsoft Teams 会議のレコーディングを特定するには、**キーワード クエリ エディター**で次のように指定します。
+
+``` 
+ProgID:Media AND ProgID:Meeting
+```
+
+この保持ラベルについては、ラベル ポリシーを作成して関連ユーザーの OneDrive アカウントや SharePoint サイトに対しても公開する必要があります。 会議のレコーディングは OneDrive に保存されている場合がほとんどですが、チャネル会議の場合は SharePoint に保存されています。
+
+自動適用ポリシーを保存した場合:
+
+1. [**ラベル ポリシー**] タブ、[**ラベルの発行**] の順に選択します
+
+2. ラベルの選択を求めるメッセージが表示されたら、KQL クエリで作成したラベルを選択し、Teams 会議のレコーディングを特定します。
+
+3. 場所の入力を求めるメッセージが表示されたら、**SharePoint サイト**と **OneDrive アカウント**を選択します。 その後は、既定値の**すべて**を維持したり、特定の OneDrive アカウントを含めたり除外したりするなどの個々の場所の指定を行ったりすることができます。
+
+4. ウィザードを完了し、このラベル ポリシーを保存します。
+
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
 
 トレーニング可能な分類子のオプションを選択すると、組み込み分類子またはカスタム分類子のいずれかを選択できます。 組み込み分類子には、**履歴書**、**ソース コード**、**個人を標的にしたハラスメント**、**冒とく**、および**脅威**が含まれます。
@@ -174,9 +203,10 @@ ms.locfileid: "47816970"
 
 このオプションを使用してラベルを自動的に適用するには、SharePoint サイトとメールボックスには少なくとも 10 MB のデータが必要です。
 
-トレーニング可能な分類子の詳細については、「[トレーニング可能な分類子 (プレビュー) の概要](classifier-getting-started-with.md)」を参照してください。
+トレーニング可能な分類子の詳細については、「[トレーニング可能な分類子の詳細 (プレビュー)](classifier-learn-about.md)」を参照してください。
 
-構成の例については、「[組み込みの分類子を準備して使用する方法](classifier-using-a-ready-to-use-classifier.md#how-to-verify-that-a-built-in-classifier-will-meet-your-needs)」を参照してください。
+> [!TIP]
+> Exchange でトレーニング可能な分類子を使用している場合は、最近リリースされた「[コンテンツ エクスプローラーで分類子を再トレーニングする方法 (プレビュー)](classifier-how-to-retrain-content-explorer.md)」を参照してください。
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保持ラベルが有効になるまでの所要時間
 
