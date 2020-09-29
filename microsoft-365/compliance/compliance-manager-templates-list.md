@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーには、国内、地域、および業界の規制、標準、法律に沿った評価を作成するためのテンプレートが用意されています。
-ms.openlocfilehash: 548844e3850757484f9ee1d455d6ecd18bcb939c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9bce625bd8733570a62e3b5f7685cace84005b69
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204433"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294799"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
@@ -134,13 +134,8 @@ ms.locfileid: "48204433"
 - インドネシア-法律 11/2008 (Microsoft 365)
 - インドネシア-Peraturan Pemerintah No. 82 Tahun 2012-政府規制-データ保護規制 (Microsoft 365)
 - [IRS-P1075](offering-irs-1075.md) (Microsoft 365)
-- ISO 15489 (Microsoft 365)
-- [ISO 22301:2019](offering-iso-22301.md) (Microsoft 365)
-- ISO 27005:2018 (Microsoft 365)
 - [ISO 27017:2015](offering-iso-27017.md) (Microsoft 365)
-- ISO 31000:2018 (Microsoft 365)
 - [ISO/IEC 27018:2014](offering-iso-27018.md)
-- [ISO/IEC 27701:2019](offering-iso-27701.md) (Microsoft 365)
 - イスラエル-プライバシー保護 (海外のデータベースへのデータの転送) 規制 (Microsoft 365)
 - 1052 Information Security Management Framework (Microsoft 365)
 - 日本-承認されていないコンピューターアクセスの禁止 on on (Microsoft 365)
