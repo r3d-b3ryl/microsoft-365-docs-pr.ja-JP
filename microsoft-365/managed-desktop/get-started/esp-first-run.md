@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d4083e48033787ca46ad2374ea461b4a77d21e0d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
+ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296006"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299241"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>自動操縦と登録の状態ページでの初回実行時の動作
 
@@ -46,9 +46,10 @@ Microsoft マネージドデスクトップでは、ユーザーのデバイス�
 |ユーザーアカウントの種類     |  Standard       |
 |白色のグローブ OOBE を許可する     |  はい       |
 |デバイス名テンプレートの適用     | はい        |
-|名前を入力してください     | MMD-% RAND: 7%        |
+|名前を入力してください     | MMD-% RAND: 11%        |
 
-
+> [!NOTE]
+> "白の手袋" rovisioning は、ESP が有効になっているお客様に対してのみ有効になっていますが、Microsoft マネージドデスクトップでは現在サポートされていません。
 
 ## <a name="enrollment-status-page-settings"></a>登録の状態ページの設定
 
