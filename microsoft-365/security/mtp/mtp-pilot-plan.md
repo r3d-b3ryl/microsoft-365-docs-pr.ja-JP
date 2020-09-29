@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195653"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305368"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>パイロット Microsoft の脅威保護プロジェクトを計画する 
 
@@ -53,7 +53,7 @@ ms.locfileid: "48195653"
 
 ## <a name="use-cases"></a>使用例
 
-ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 例:
+ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 以下に例を示します。
 - SOC アナリストとして、ネットワーク内のデバイス、ユーザー、およびメールボックス全体でアラートとイベントを表示、関連付け、評価、および管理する必要があります。 [インシデント管理]
 - SOC アナリストとして、ネットワーク内の悪意のあるイベントを自動的に調査して応答するためのツールとプロセスを用意する必要があります。 [自動赤外線]
 - SOC アナリストとして、環境からデータを検索し、既知の脅威と潜在的な脅威、および疑わしいアクティビティを見つける必要があります。 [高度な検索]
@@ -76,14 +76,14 @@ ms.locfileid: "48195653"
 
 プランのすべての要素をまとめる1つの方法は、スコアカードを作成することです。 以下のサンプルスコアカードを参照してください。
 
-|**ユースケース**|**要件**|**構成要件**|**テスト計画**|**予想結果**|**テストの状態**|**スコア**|**注**|
+|**ユースケース**|**要件**|**構成要件**|**テスト計画**|**予想結果**|**テストの状態**|**スコア**|**メモ**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|インシデント管理|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
+|インシデント管理|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
 |自動赤外線|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |通知とインシデントは、Microsoft の脅威保護によって自動的に修復されます。||||
 |高度な検出|-Microsoft の脅威保護 </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。|[高度な検索のシナリオ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |調査担当者は、高度な検索、影響を受けるエンティティへのピボット、およびカスタム検出の作成によってデータを検索できます。||||
 
 
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 |![準備フェーズ](../../media/prepare.png) <br>[準備フェーズ](prepare-mtpeval.md) | Microsoft の脅威保護パイロット環境の準備
 |:-------|:-----|

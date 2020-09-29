@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: コンテンツの理解をプロジェクト Cortex で設定する
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294867"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304782"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint の同期 Tex をセットアップする
 
@@ -107,27 +107,7 @@ SharePoint の同期 Tex を構成した後、フォーム処理を使用する�
 
 [Ai ビルダー電卓](https://powerapps.microsoft.com/ai-builder-calculator)で、適切な ai ビルダーの容量を見積もることができます。
 
-1. [電源プラットフォーム管理センター](https://admin.powerplatform.microsoft.com/resources/capacity)に移動して、クレジットと使用状況を確認します。
-
-    > [!NOTE]
-    > SharePoint ドキュメントライブラリでこの設定を有効にしても、ライブラリに適用されている既存のモデル、またはドキュメントを認識するモデルをライブラリに適用する機能には影響しません。 
-    
-2. [ **コンテンツセンターの作成** ] ページで、ユーザーがドキュメントを作成および管理できる SharePoint コンテンツセンターサイトを作成できます。 </br>
-    a.  [ **サイト名**] に、コンテンツセンターサイトに付ける名前を入力します。</br>
-    b.  サイト **アドレス** には、サイト名に基づいてサイトの URL が表示されます。</br>
-
-    > [!NOTE] 
-    > サポートされている言語を選択することはできますが、モデルを理解しているのは英語の場合に限られます。</br>
-
-      ![コンテンツセンターを作成する](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. [**次へ**] を選択します。
-
-4. [ **完了と確認** ] ページで、選択した設定を確認し、変更を行うように選択します。 選択内容に問題がなければ、[ **アクティブ化**] を選択します。
-
-5. **コンテンツはアクティブ化**されたページを理解しており、システムがフォーム処理の設定を追加し、コンテンツセンターサイトを作成したことを確認します。 [**完了**] を選択します。
-
-6. **コンテンツの自動理解**ページに戻ります。 このページでは、[ **管理** ] を選択して構成設定に変更を加えることができます。 
+[電源プラットフォーム管理センター](https://admin.powerplatform.microsoft.com/resources/capacity)に移動して、クレジットと使用状況を確認します。
 
 ## <a name="see-also"></a>関連項目
 

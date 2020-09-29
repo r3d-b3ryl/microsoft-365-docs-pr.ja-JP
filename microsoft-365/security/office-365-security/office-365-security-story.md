@@ -6,6 +6,7 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -13,12 +14,12 @@ search.appverid:
 ms.collection:
 - microsoft-365-docs-pr
 description: Office 365 のセキュリティ。 EOP から ATP プラン1および2、標準と厳密なセキュリティ構成の比較を行い、プロパティをセキュリティで保護する方法を理解できるようにします。
-ms.openlocfilehash: 66a83d99197b8af98ef191b348b1303a8233a990
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 680066f58850f59523ae6fb8a8168459dd813fc1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299306"
+ms.locfileid: "48304848"
 ---
 # <a name="office-365-security-outline"></a>Office 365 セキュリティアウトライン
 
@@ -50,7 +51,7 @@ Office 365 は、EOP によって提供される中心的な保護に基づい�
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP と ATP、およびそれらの関係と、サービス重視による相互関係 (電子メール認証に関するメモを含む)。":::
+:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="Placeholder graphic":::
 
 これらのサービスはそれぞれ、保護、検出、調査、応答の中から特定の目標を重視していますが、 ***すべて*** のサービスが、保護、検出、調査、応答の ***いずれか*** の目標を達成できます。
 
@@ -65,7 +66,7 @@ Office 365 E3 以降がある場合は、EOP がありますが、アップグ�
 
 ## <a name="the-office-365-security-ladder-from-eop-to-atp"></a>EOP から ATP への Office 365 セキュリティのはしご
 
-:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="EOP と ATP、およびそれぞれに特有の長所。これはそれぞれ、保護と検出から、調査と応答に進みます。また、電子メール認証の構成については、EOP の後で必要に応じて表示されます。":::
+:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="Placeholder graphic":::
 
 > [!IMPORTANT]
 > これらのページの詳細については、「 [Exchange Online protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide)」および [「Advanced Threat protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)」を参照してください。

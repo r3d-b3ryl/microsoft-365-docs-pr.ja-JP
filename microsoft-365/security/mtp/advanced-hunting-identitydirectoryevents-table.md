@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4a698bc0d6a7c1ebadec44357b932e9b56dc0a3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196847"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305284"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -31,8 +31,6 @@ ms.locfileid: "48196847"
 
 **適用対象:**
 - Microsoft Threat Protection
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 `IdentityDirectoryEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表に、ACTIVE Directory (AD) を実行しているオンプレミスのドメインコントローラーに関連するイベントが含まれています。 このテーブルは、パスワードの変更、パスワードの有効期限、ユーザープリンシパル名 (UPN) の変更など、さまざまな id 関連イベントをキャプチャします。 また、タスクのスケジューリングや PowerShell アクティビティなど、ドメインコントローラーのシステムイベントもキャプチャします。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
@@ -44,30 +42,30 @@ ms.locfileid: "48196847"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
-| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
-| `TargetAccountUpn` | 文字列 | 記録されたアクションが適用されたアカウントのユーザープリンシパル名 (UPN) |
-| `TargetAccountDisplayName` | 文字列 | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
-| `TargetDeviceName` | 文字列 | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
-| `DestinationDeviceName` | 文字列 | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
-| `DestinationIPAddress` | 文字列 | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
-| `DestinationPort` | 文字列 | アクティビティの宛先ポート |
-| `Protocol` | 文字列 | 通信中に使用されるプロトコル |
-| `AccountName` | 文字列 | アカウントのユーザー名 |
-| `AccountDomain` | 文字列 | アカウントのドメイン |
-| `AccountUpn` | 文字列 | アカウントのユーザープリンシパル名 (UPN) |
-| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | 文字列 | Azure AD でのアカウントの一意識別子 |
-| `AccountDisplayName` | 文字列 | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
-| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
-| `IPAddress` | 文字列 | 通信中にデバイスに割り当てられた IP アドレス |
-| `Port` | 文字列 | 通信中に使用される TCP ポート |
-| `Location` | 文字列 | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
-| `ISP` | 文字列 | IP アドレスに関連付けられているインターネットサービスプロバイダー |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `Application` | string | 記録されたアクションを実行したアプリケーション |
+| `TargetAccountUpn` | string | 記録されたアクションが適用されたアカウントのユーザープリンシパル名 (UPN) |
+| `TargetAccountDisplayName` | string | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
+| `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
+| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
+| `DestinationPort` | string | アクティビティの宛先ポート |
+| `Protocol` | string | 通信中に使用されるプロトコル |
+| `AccountName` | string | アカウントのユーザー名 |
+| `AccountDomain` | string | アカウントのドメイン |
+| `AccountUpn` | string | アカウントのユーザープリンシパル名 (UPN) |
+| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
+| `AccountObjectId` | string | Azure Active Directory のアカウントの一意識別子 |
+| `AccountDisplayName` | string | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `IPAddress` | string | 通信中にデバイスに割り当てられた IP アドレス |
+| `Port` | string | 通信中に使用される TCP ポート |
+| `Location` | string | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
+| `ISP` | string | IP アドレスに関連付けられているインターネットサービスプロバイダー |
 | `ReportId` | long | イベントの一意識別子 |
-| `AdditionalFields` | 文字列 | エンティティまたはイベントに関するその他の情報 |
+| `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

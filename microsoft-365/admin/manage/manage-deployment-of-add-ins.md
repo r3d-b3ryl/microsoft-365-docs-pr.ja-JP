@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 5806b2a33446a8e273c2aaf78e082c6fd753bbe4
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 20ebdfd2072c49fabadcbaf66dead54e75f9becd
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171282"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304794"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
 
@@ -61,7 +61,7 @@ Office アドインは、ドキュメントをカスタマイズしたり、Web 
 
 作業を開始する前に、「 [組織でアドインの一元展開が機能するかどうかを判断](centralized-deployment-of-add-ins.md)する」を参照してください。
   
-1. 管理センターで、[**設定**] [アドイン] ページに移動し \> **Add-ins**ます。
+1. 管理センターで、[**設定**] [アドイン] ページに移動し \> **Add-ins**ます。 **アドイン**ページが表示されない場合は、[**設定**] [ \> **統合アプリ** \> **アドイン**] ページに移動します。
     
 2. ページの上部にある [ **アドインの展開** ] を選択し、[ **次へ**] を選択します。
  

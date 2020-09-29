@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d5a7cc491b0a8547848f4e341a605ae0c4b87cc9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8b9176fea67583fbdce647b2a3c37cf1d6fde7ed
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201282"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304860"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft Threat Protection の新機能
 
@@ -34,12 +34,13 @@ RSS フィード: このページが更新されたときに通知を取得す�
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
 ## <a name="september-2020"></a>2020 年 9 月
-- [AssignedIPAddresses () 関数](advanced-hunting-assignedipaddresses-function.md) <br> この関数を [高度な](advanced-hunting-overview.md) 検索クエリで使用して、デバイスに割り当てられている最新の ip アドレスや、指定した時点からの最新の ip アドレスをすばやく取得します。
+- [Identity Directoryevents テーブル](advanced-hunting-identitydirectoryevents-table.md) <br> Active Directory (AD) を実行しているオンプレミスのドメインコントローラーを含むイベントを検索します。 この [高度な](advanced-hunting-overview.md) 検索スキーマテーブルは、ドメインコントローラー上の id 関連イベントとシステムイベントの範囲をカバーしています。
+- [AssignedIPAddresses () 関数](advanced-hunting-assignedipaddresses-function.md) <br> 詳細な検索クエリでこの関数を使用して、デバイスに割り当てられている最新の IP アドレスまたは特定の時刻からの最新の IP アドレスをすばやく取得します。
 
 ## <a name="july-2020"></a>2020 年7 月
 - [FileProfile () 関数](advanced-hunting-fileprofile-function.md) <br> 高度な検索のクエリでこの関数を使用して、包括的なファイル情報を使用して結果を充実させます。
 - [Id とアプリのテーブル](advanced-hunting-schema-tables.md)<br> 高度な検索スキーマで、認証イベント、Active Directory クエリ、アプリに関連するアクティビティの可視性を取得します。これには、詳細な検索スキーマのイベントテーブル[、イベント](advanced-hunting-identityqueryevents-table.md)[テーブル、および](advanced-hunting-identitylogonevents-table.md) [appfileevents](advanced-hunting-appfileevents-table.md)テーブルが含まれます。
-- [検出する](advanced-hunting-go-hunt.md)<br> クエリベースの高度な検索機能を使用して、特定のイベント、ユーザー、デバイス、またはその他のエンティティの種類を調べることによって、インシデントの調査からすばやくピボットできます。
+- [検出する](advanced-hunting-go-hunt.md)<br> 高度な検索の際に、特定のイベント、ユーザー、デバイス、またはその他のエンティティの種類を調査するインシデントの調査からすばやくピボットします。
 
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter フィード <br> 最新のセキュリティ研究、脅威インテリジェンス、製品ニュース、およびダッシュボード内部の詳細を取得します。
