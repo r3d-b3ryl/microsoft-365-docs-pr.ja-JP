@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。
+description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197350"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286043"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで監査ログを検索する
+# <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
-ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 その場合は、セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 なぜ統合監査ログが必要なのでしょうか。 Office 365 で以下の種類の[ユーザーおよび管理アクティビティ](#audited-activities)を検索できるためです:
+ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 その場合は、セキュリティ/コンプライアンス センターを使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 なぜ統合監査ログが必要なのでしょうか。 Microsoft 365 で以下の種類の[ユーザーおよび管理アクティビティ](#audited-activities)を検索できるためです:
 
 - SharePoint Online および OneDrive for Business 内のユーザー アクティビティ
 
@@ -36,7 +36,7 @@ ms.locfileid: "48197350"
 
 - SharePoint Online 内の管理者アクティビティ
 
-- Azure Active Directory (Office 365 のディレクトリ サービス) 内の管理者アクティビティ
+- Azure Active Directory (Microsoft 365 のディレクトリ サービス) 内の管理者アクティビティ
 
 - Exchange Online 内の管理者アクティビティ (Exchange 管理者監査ログ)
 
