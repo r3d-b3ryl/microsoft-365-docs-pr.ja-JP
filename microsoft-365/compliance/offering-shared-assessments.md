@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 22518473a8caf038a0f0f1ef89085c50f4483d5b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: fcb5f3b96ab62dec8926e2638866775beeb8206b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416681"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304771"
 ---
 # <a name="shared-assessments-program"></a>共有評価プログラム
 
@@ -52,6 +52,6 @@ Azure コンプライアンスは、CSP が CSA 関連の評価を公開する�
 
 ## <a name="resources"></a>リソース
 
-- [情報要求に対する Azure の標準応答](https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6)
+- [情報要求に対する Azure の標準応答](https://azure.microsoft.com/resources/azure-standard-response-to-rfi-on-security-privacy-and-compliance/)
 - [Microsoft および CSA STAR 自己評価](offering-csa-star-self-assessment.md)
 - [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

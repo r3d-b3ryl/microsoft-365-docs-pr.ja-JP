@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1c12618b92a84cb7861d1df243a689cd1cf8a17c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208119"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304837"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>信頼された情報セキュリティ アセスメント交換 (TISAX) ドイツ
 
 ## <a name="about-tisax"></a>TISAX について
 
-自動車産業で増え続ける接続性を確保するために、ドイツ自動車工業会 ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html)、VDA) は情報セキュリティを評価するための基準の目録を開発しました。 VDA 情報セキュリティ アセスメント ([ドイツ語](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html)および[英語](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) は、自動車業界に適合した国際的な ISO/IEC 27001 および 27002 規格の基礎に基づいています。 2017年には、クラウド サービスの使用に関する規制をカバーするように更新されました。
+自動車産業で増え続ける接続性を確保するために、ドイツ自動車工業会 ([Verband der Automobilindustrie](https://www.vda.de)、VDA) は情報セキュリティを評価するための基準の目録を開発しました。 VDA 情報セキュリティ アセスメント ([ドイツ語](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html)および[英語](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) は、自動車業界に適合した国際的な ISO/IEC 27001 および 27002 規格の基礎に基づいています。 2017年には、クラウド サービスの使用に関する規制をカバーするように更新されました。
 
 VDA のメンバー企業は内部のセキュリティ評価、およびサプライヤー、サービス プロバイダー、および代わりに機密情報を処理するその他のパートナーの評価の両方にこのツールを使用しました。 ただし、これらの評価は各企業が個別に処理したため、パートナーに負担がかかり、VDA メンバー側で作業が重複していました。
 
@@ -75,7 +75,7 @@ ENX は、ENX ポータルを通じて登録された業界の代表者にのみ
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 
