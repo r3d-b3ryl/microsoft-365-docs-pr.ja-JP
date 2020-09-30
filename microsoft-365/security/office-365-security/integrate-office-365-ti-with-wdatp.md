@@ -1,11 +1,12 @@
 ---
-title: Office 365 の ATP と Microsoft Defender ATP を統合する
+title: エンドポイントの Microsoft Defender と Office 365 の Microsoft Defender を併用する
 f1.keywords:
 - NOCSH
+keywords: 統合、Microsoft Defender、ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/08/2020
+ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,66 +14,65 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
-ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
-description: Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合し、より詳細な脅威管理情報を表示します。
+description: Microsoft defender Advanced Threat Protection を使用して、Microsoft defender for Office 365 を使用して、デバイスや電子メールコンテンツに対する脅威に関する詳細な情報を取得します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0906b8b44922084a65999dd9ab10a09c827605c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2c95e15c3cf16547843f9d2976dbf9df0d5747c0
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201973"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309239"
 ---
-# <a name="integrate-office-365-advanced-threat-protection-with-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="47bd8-103">Microsoft Defender Advanced Threat Protection を使用して Office 365 Advanced Threat Protection を統合する</span><span class="sxs-lookup"><span data-stu-id="47bd8-103">Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection</span></span>
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="13089-104">Microsoft Defender Advanced Threat Protection を使用した Office 365 と Microsoft Defender の併用</span><span class="sxs-lookup"><span data-stu-id="13089-104">Use Microsoft Defender for Office 365 together with Microsoft Defender Advanced Threat Protection</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-<span data-ttu-id="47bd8-104">[Office 365 Advanced Threat protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (OFFICE 365 atp) は、 [Microsoft Defender advanced threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (microsoft defender atp) で動作するように構成できます。</span><span class="sxs-lookup"><span data-stu-id="47bd8-104">[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP) can be configured to work with [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) (Microsoft Defender ATP).</span></span>
+<span data-ttu-id="13089-105">Microsoft defender [For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)は、[エンドポイントの microsoft defender](https://docs.microsoft.com/windows/security/threat-protection)と連携するように構成できます。</span><span class="sxs-lookup"><span data-stu-id="13089-105">[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) can be configured to work with [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection).</span></span>
 
-<span data-ttu-id="47bd8-105">Microsoft Defender ATP を使用して Office 365 ATP を統合することにより、ユーザーのデバイスが危険にさらされている場合に、セキュリティ運用チームが迅速に監視してアクションを実行できるようになります。</span><span class="sxs-lookup"><span data-stu-id="47bd8-105">Integrating Office 365 ATP with Microsoft Defender ATP can help your security operations team monitor and take action quickly if users' devices are at risk.</span></span> <span data-ttu-id="47bd8-106">たとえば、統合が有効になると、セキュリティ運用チームは、検出された電子メールメッセージによって影響を受ける可能性があるデバイス、およびそれらのデバイスが Microsoft Defender ATP で保持している最近の通知の数を表示できるようになります。</span><span class="sxs-lookup"><span data-stu-id="47bd8-106">For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts those devices have in Microsoft Defender ATP.</span></span> 
+<span data-ttu-id="13089-106">Microsoft defender for Office 365 とエンドポイントの Microsoft Defender を統合することで、ユーザーのデバイスが危険にさらされている場合に、セキュリティ運用チームが迅速に監視し、アクションを実行することができます。</span><span class="sxs-lookup"><span data-stu-id="13089-106">Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint can help your security operations team monitor and take action quickly if users' devices are at risk.</span></span> <span data-ttu-id="13089-107">たとえば、統合が有効になると、セキュリティ運用チームは、検出された電子メールメッセージによって影響を受ける可能性があるデバイスを確認したり、エンドポイント用 Microsoft Defender のデバイスに対して生成された最近の通知の数を表示したりできます。</span><span class="sxs-lookup"><span data-stu-id="13089-107">For example, once integration is enabled, your security operations team will be able to see the devices that are potentially affected by a detected email message, as well as how many recent alerts were generated for those devices in Microsoft Defender for Endpoint.</span></span> 
 
-<span data-ttu-id="47bd8-107">次の図は、Microsoft Defender ATP の統合が有効になっている **デバイス** タブの外観を示しています。</span><span class="sxs-lookup"><span data-stu-id="47bd8-107">The following image depicts what the **Devices** tab looks like have Microsoft Defender ATP integration enabled:</span></span>
+<span data-ttu-id="13089-108">次の図は、エンドポイントの統合を有効にした状態で、[ **デバイス** ] タブがどのようなものかを示しています。</span><span class="sxs-lookup"><span data-stu-id="13089-108">The following image depicts what the **Devices** tab looks like have Microsoft Defender for Endpoint integration enabled:</span></span>
   
-![Microsoft Defender ATP が有効になっている場合は、アラートがあるデバイスの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
+![エンドポイントの Microsoft Defender が有効になっている場合は、アラートがあるデバイスの一覧を表示できます。](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
   
-<span data-ttu-id="47bd8-109">この例では、検出された電子メールメッセージの受信者に4つのデバイスがあり、1つに通知があることがわかります。</span><span class="sxs-lookup"><span data-stu-id="47bd8-109">In this example, you can see that the recipients of the detected email message have four devices and one has an alert.</span></span> <span data-ttu-id="47bd8-110">デバイスのリンクをクリックすると、Microsoft Defender セキュリティセンター () にそのページが表示さ [https://securitycenter.windows.com](https://securitycenter.windows.com) れます。</span><span class="sxs-lookup"><span data-stu-id="47bd8-110">Clicking the link for a device opens its page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).</span></span>
+<span data-ttu-id="13089-110">この例では、検出された電子メールメッセージの受信者に4つのデバイスがあり、1つに通知があることがわかります。</span><span class="sxs-lookup"><span data-stu-id="13089-110">In this example, you can see that the recipients of the detected email message have four devices and one has an alert.</span></span> <span data-ttu-id="13089-111">デバイスのリンクをクリックすると、Microsoft Defender セキュリティセンター () にそのページが表示さ [https://securitycenter.windows.com](https://securitycenter.windows.com) れます。</span><span class="sxs-lookup"><span data-stu-id="13089-111">Clicking the link for a device opens its page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="47bd8-111">Microsoft Defender セキュリティセンター (Microsoft Defender ATP ポータルとも呼ばれます)**[の詳細については、こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="47bd8-111">**[Learn more about the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (also referred to as the Microsoft Defender ATP portal.)</span></span>
+> <span data-ttu-id="13089-112">Microsoft Defender セキュリティセンター (Microsoft Defender ATP ポータルとも呼ばれます)**[の詳細については、こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="13089-112">**[Learn more about the Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (also referred to as the Microsoft Defender ATP portal.)</span></span>
   
-## <a name="requirements"></a><span data-ttu-id="47bd8-112">Requirements</span><span class="sxs-lookup"><span data-stu-id="47bd8-112">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="13089-113">Requirements</span><span class="sxs-lookup"><span data-stu-id="13089-113">Requirements</span></span>
 
-- <span data-ttu-id="47bd8-113">組織では、Office 365 ATP Plan 2 (または Office 365 E5) と Microsoft Defender ATP を所有している必要があります。</span><span class="sxs-lookup"><span data-stu-id="47bd8-113">Your organization must have Office 365 ATP Plan 2 (or Office 365 E5) and Microsoft Defender ATP.</span></span>
+- <span data-ttu-id="13089-114">組織には、Microsoft Defender for Office 365 (または Office 365 E5) および Microsoft Defender for Endpoint が必要です。</span><span class="sxs-lookup"><span data-stu-id="13089-114">Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.</span></span>
     
-- <span data-ttu-id="47bd8-114">[セキュリティ/ &amp; コンプライアンスセンター](https://protection.office.com)では、全体管理者であるか、セキュリティ管理者の役割 (セキュリティ管理者など) が割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="47bd8-114">You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security &amp; Compliance Center](https://protection.office.com).</span></span> <span data-ttu-id="47bd8-115">( [セキュリティ &amp; コンプライアンスセンターのアクセス許可を](permissions-in-the-security-and-compliance-center.md)参照)</span><span class="sxs-lookup"><span data-stu-id="47bd8-115">(See [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))</span></span>
+- <span data-ttu-id="13089-115">[セキュリティ/ &amp; コンプライアンスセンター](https://protection.office.com)では、全体管理者であるか、セキュリティ管理者の役割 (セキュリティ管理者など) が割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="13089-115">You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in the [Security &amp; Compliance Center](https://protection.office.com).</span></span> <span data-ttu-id="13089-116">( [セキュリティ &amp; コンプライアンスセンターのアクセス許可を](permissions-in-the-security-and-compliance-center.md)参照)</span><span class="sxs-lookup"><span data-stu-id="13089-116">(See [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md))</span></span>
     
-- <span data-ttu-id="47bd8-116">セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方の [エクスプローラー (またはリアルタイム検出)](threat-explorer.md) にアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="47bd8-116">You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.</span></span>
+- <span data-ttu-id="13089-117">セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方の [エクスプローラー (またはリアルタイム検出)](threat-explorer.md) にアクセスできる必要があります。</span><span class="sxs-lookup"><span data-stu-id="13089-117">You must have access to both [Explorer (or real-time detections)](threat-explorer.md) in the Security & Compliance Center and the Microsoft Defender Security Center.</span></span>
     
-## <a name="to-integrate-office-365-atp-with-microsoft-defender-atp"></a><span data-ttu-id="47bd8-117">Microsoft Defender ATP を使用して Office 365 ATP を統合するには</span><span class="sxs-lookup"><span data-stu-id="47bd8-117">To integrate Office 365 ATP with Microsoft Defender ATP</span></span>
+## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a><span data-ttu-id="13089-118">Microsoft defender for Office 365 とエンドポイントの microsoft defender を統合するには</span><span class="sxs-lookup"><span data-stu-id="13089-118">To integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint</span></span>
 
-<span data-ttu-id="47bd8-118">Microsoft Defender ATP との Office 365 ATP の統合は、セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方を使用してセットアップされています。</span><span class="sxs-lookup"><span data-stu-id="47bd8-118">Integrating Office 365 ATP with Microsoft Defender ATP is set up by using both the Security & Compliance Center AND the Microsoft Defender Security Center.</span></span>
+<span data-ttu-id="13089-119">Microsoft defender for Office 365 とエンドポイントの Microsoft Defender との統合は、セキュリティ & コンプライアンスセンターと Microsoft Defender セキュリティセンターの両方を使用して行います。</span><span class="sxs-lookup"><span data-stu-id="13089-119">Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up by using both the Security & Compliance Center AND the Microsoft Defender Security Center.</span></span>
   
-1. <span data-ttu-id="47bd8-119">グローバル管理者またはセキュリティ管理者として、に移動して、に [https://protection.office.com](https://protection.office.com) サインインします。</span><span class="sxs-lookup"><span data-stu-id="47bd8-119">As a global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in.</span></span> <span data-ttu-id="47bd8-120">(これにより、Office 365 セキュリティ & コンプライアンスセンターに移動します。)</span><span class="sxs-lookup"><span data-stu-id="47bd8-120">(This takes you to the Office 365 Security & Compliance Center.)</span></span>
+1. <span data-ttu-id="13089-120">グローバル管理者またはセキュリティ管理者として、に移動して、に [https://protection.office.com](https://protection.office.com) サインインします。</span><span class="sxs-lookup"><span data-stu-id="13089-120">As a global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in.</span></span> <span data-ttu-id="13089-121">(これにより、Office 365 セキュリティ & コンプライアンスセンターに移動します。)</span><span class="sxs-lookup"><span data-stu-id="13089-121">(This takes you to the Office 365 Security & Compliance Center.)</span></span>
     
-2. <span data-ttu-id="47bd8-121">ナビゲーションウィンドウで、[**脅威管理**エクスプローラー] を選択し  >  **Explorer**ます。</span><span class="sxs-lookup"><span data-stu-id="47bd8-121">In the navigation pane, choose **Threat management** > **Explorer**.</span></span><br><span data-ttu-id="47bd8-122">![脅威管理メニューのエクスプローラー](../../media/ThreatMgmt-Explorer-nav.png)</span><span class="sxs-lookup"><span data-stu-id="47bd8-122">![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)</span></span><br>
+2. <span data-ttu-id="13089-122">ナビゲーションウィンドウで、[**脅威管理**エクスプローラー] を選択し  >  **Explorer**ます。</span><span class="sxs-lookup"><span data-stu-id="13089-122">In the navigation pane, choose **Threat management** > **Explorer**.</span></span><br><span data-ttu-id="13089-123">![脅威管理メニューのエクスプローラー](../../media/ThreatMgmt-Explorer-nav.png)</span><span class="sxs-lookup"><span data-stu-id="13089-123">![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)</span></span><br>
     
-3. <span data-ttu-id="47bd8-123">画面の右上にある [ **Wdatp 設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="47bd8-123">In the upper right corner of the screen, choose **WDATP Settings**.</span></span>
+3. <span data-ttu-id="13089-124">画面の右上にある [ **Wdatp 設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="13089-124">In the upper right corner of the screen, choose **WDATP Settings**.</span></span>
     
-4. <span data-ttu-id="47bd8-124">[Microsoft Defender ATP 接続] ダイアログボックスで、[ **WINDOWS ATP への接続**] をオンにします。</span><span class="sxs-lookup"><span data-stu-id="47bd8-124">In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.</span></span><br><span data-ttu-id="47bd8-125">![Microsoft Defender ATP 接続](../../media/Explorer-WDATPConnection-dialog.png)</span><span class="sxs-lookup"><span data-stu-id="47bd8-125">![Microsoft Defender ATP connection](../../media/Explorer-WDATPConnection-dialog.png)</span></span><br>
+4. <span data-ttu-id="13089-125">[エンドポイントの接続のための Microsoft Defender 接続] ダイアログボックスで、[ **WINDOWS ATP への接続**] をオンにします。</span><span class="sxs-lookup"><span data-stu-id="13089-125">In the Microsoft Defender for Endpoint connection dialog box, turn on **Connect to Windows ATP**.</span></span><br><span data-ttu-id="13089-126">![エンドポイント接続のための Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)</span><span class="sxs-lookup"><span data-stu-id="13089-126">![Microsoft Defender for Endpoint connection](../../media/Explorer-WDATPConnection-dialog.png)</span></span><br>
     
-5. <span data-ttu-id="47bd8-126">Microsoft Defender セキュリティセンター () に移動 [https://securitycenter.windows.com](https://securitycenter.windows.com) します。</span><span class="sxs-lookup"><span data-stu-id="47bd8-126">Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).</span></span>
+5. <span data-ttu-id="13089-127">Microsoft Defender セキュリティセンター () に移動 [https://securitycenter.windows.com](https://securitycenter.windows.com) します。</span><span class="sxs-lookup"><span data-stu-id="13089-127">Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).</span></span>
 
-6. <span data-ttu-id="47bd8-127">ナビゲーションバーで、[ **設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="47bd8-127">In the navigation bar, choose **Settings**.</span></span> <span data-ttu-id="47bd8-128">[ **全般**] で、[ **高度な機能**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="47bd8-128">Then, under **General**, choose **Advanced features**.</span></span>
+6. <span data-ttu-id="13089-128">ナビゲーションバーで、[ **設定**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="13089-128">In the navigation bar, choose **Settings**.</span></span> <span data-ttu-id="13089-129">[ **全般**] で、[ **高度な機能**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="13089-129">Then, under **General**, choose **Advanced features**.</span></span>
 
-7. <span data-ttu-id="47bd8-129">[ **Office 365 の脅威インテリジェンス接続**] まで下にスクロールし、接続をオンにします。</span><span class="sxs-lookup"><span data-stu-id="47bd8-129">Scroll down to **Office 365 Threat Intelligence connection**, and turn the connection on.</span></span><br/><span data-ttu-id="47bd8-130">![Office 365 脅威インテリジェンス接続](../../media/mdatp-oatptoggle.png)</span><span class="sxs-lookup"><span data-stu-id="47bd8-130">![Office 365 threat intelligence connection](../../media/mdatp-oatptoggle.png)</span></span><br>
+7. <span data-ttu-id="13089-130">[ **Office 365 の脅威インテリジェンス接続**] まで下にスクロールし、接続をオンにします。</span><span class="sxs-lookup"><span data-stu-id="13089-130">Scroll down to **Office 365 Threat Intelligence connection**, and turn the connection on.</span></span><br/><span data-ttu-id="13089-131">![Office 365 脅威インテリジェンス接続](../../media/mdatp-oatptoggle.png)</span><span class="sxs-lookup"><span data-stu-id="13089-131">![Office 365 threat intelligence connection](../../media/mdatp-oatptoggle.png)</span></span><br>
 
-## <a name="related-articles"></a><span data-ttu-id="47bd8-131">関連記事</span><span class="sxs-lookup"><span data-stu-id="47bd8-131">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="13089-132">関連記事</span><span class="sxs-lookup"><span data-stu-id="13089-132">Related articles</span></span>
 
-[<span data-ttu-id="47bd8-132">Office 365 の脅威の調査および応答機能</span><span class="sxs-lookup"><span data-stu-id="47bd8-132">Threat investigation and response capabilities in Office 365</span></span>](office-365-ti.md)
+[<span data-ttu-id="13089-133">Office 365 の脅威の調査および応答機能</span><span class="sxs-lookup"><span data-stu-id="13089-133">Threat investigation and response capabilities in Office 365</span></span>](office-365-ti.md)
   
-[<span data-ttu-id="47bd8-133">Office 365 Advanced Threat Protection</span><span class="sxs-lookup"><span data-stu-id="47bd8-133">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
+[<span data-ttu-id="13089-134">Microsoft Defender for Office 365</span><span class="sxs-lookup"><span data-stu-id="13089-134">Microsoft Defender for Office 365</span></span>](office-365-atp.md)
   
-[<span data-ttu-id="47bd8-134">Microsoft Defender ATP</span><span class="sxs-lookup"><span data-stu-id="47bd8-134">Microsoft Defender ATP</span></span>](https://docs.microsoft.com/windows/security/threat-protection)
+[<span data-ttu-id="13089-135">エンドポイントの Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="13089-135">Microsoft Defender for Endpoint</span></span>](https://docs.microsoft.com/windows/security/threat-protection)
