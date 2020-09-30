@@ -1,6 +1,6 @@
 ---
 title: 自動化された調査と対応によるカスタムレポートソリューションの使用
-keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
+keywords: SIEM、API、AIR、自動赤外線、ATP、自動調査、統合、カスタムレポート
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,19 +15,22 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 自動化された調査と応答を、カスタムまたはサードパーティのレポートソリューションと統合する方法について説明します。
-ms.openlocfilehash: 2ff0ef995fc8418c3d57895f00ea96f05b0aaa97
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.date: 09/29/2020
+ms.custom:
+- air
+ms.openlocfilehash: 08502516ae03dc7c6e7b58aa77939723e7532ef0
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195607"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308922"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>カスタムまたはサードパーティのレポートソリューションに管理アクティビティ API を使用する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を使用すると、[自動調査に関する詳細情報](air-view-investigation-results.md)を取得できます。 ただし、組織によっては、カスタムまたはサードパーティのレポートソリューションを使用する場合もあります。 このようなソリューションで自動調査に関する情報を統合する必要がある組織では、Office 365 Management Activity API を使用できます。
+[Office 365 の Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)では、[自動調査に関する詳細情報](air-view-investigation-results.md)を入手できます。 ただし、組織によっては、カスタムまたはサードパーティのレポートソリューションを使用する場合もあります。 このようなソリューションで自動調査に関する情報を統合する必要がある組織では、Office 365 Management Activity API を使用できます。
 
 これを設定するには、次のリソースを使用します。
 
@@ -41,8 +44,8 @@ ms.locfileid: "48195607"
 |[Office 365 管理アクティビティ API のスキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|Office 365 Management Activity API を通じて使用できる特定の種類のデータについて理解するために、 [共通スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) と [OFFICE 365 の ATP および脅威の調査および応答スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) の概要を説明します。|
 |
 
-## <a name="related-articles"></a>関連記事
+## <a name="see-also"></a>関連項目
 
-- [Office 365 Advanced Threat Protection](office-365-atp.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
 
-- [Microsoft の脅威保護の自動化された調査と対応について説明します。](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 365 Defender での自動調査と応答](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

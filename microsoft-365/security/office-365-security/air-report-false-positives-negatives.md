@@ -1,6 +1,6 @@
 ---
-title: Office 365 の誤検知または誤検知を報告する方法自動調査と応答
-description: Office 365 Advanced Threat Protection によって失われた、または誤って検出されたものがあるか。 分析のために誤検知または誤検知を Microsoft に送信する方法について説明します。
+title: Microsoft Defender for Office 365 で自動調査を行った後の誤検知または誤否定を報告する方法
+description: Office 365 の Microsoft Defender で、何らかの問題があるか、空軍によって誤って検出されましたか? 分析のために誤検知または誤検知を Microsoft に送信する方法について説明します。
 keywords: 自動化、調査、警告、トリガー、アクション、修復、誤検知、false 負
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,21 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.custom: autoir
-ms.openlocfilehash: 66b81a474ff81df57c0b2a59672b17061f7235cb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.custom:
+- autoir
+ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196081"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308934"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
 
@@ -32,7 +33,7 @@ ms.locfileid: "48196081"
 
 
 **適用対象:**
-- Office 365 Advanced Threat Protection
+- Microsoft Defender for Office 365
 
 [Office 365 ミスの自動化された調査と応答 (AIR) 機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 以下のことを実行できます。
 - [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
@@ -43,7 +44,7 @@ ms.locfileid: "48196081"
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>False 正/負の値を分析のために Microsoft に報告する
 
-Office 365 AIR で不在着信した電子メールメッセージ、電子メールの添付ファイル、電子メールメッセージ内の URL、または Office ファイル内の URL は、 [フィッシングのスパム、、url、およびファイルを Microsoft For office 365 のスキャンに送信](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)できます。
+Microsoft Defender for Office 365 で、電子メールメッセージ、電子メールの添付ファイル、電子メールメッセージ内の URL、または Office ファイルの URL のいずれかが失われた場合は、 [フィッシング、url、およびファイルを microsoft For office 365 のスキャンに送信](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)できます。
 
 また [、マルウェア分析のために Microsoft にファイルを送信](https://www.microsoft.com/wdsi/filesubmission)することもできます。
 
@@ -51,7 +52,7 @@ Office 365 AIR で不在着信した電子メールメッセージ、電子メ�
 
 正当な使用によって警告がトリガーされた場合、または警告が不正確な場合は、 [Cloud App Security ポータルで通知を管理](https://docs.microsoft.com/cloud-app-security/managing-alerts)できます。
 
-Office 365 に加えて、組織で [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection) を使用していて、ファイル、IP アドレス、URL、またはドメインがデバイスでマルウェアとして扱われている場合、そのファイル、IP アドレス、URL、またはドメインは、安全であっても、 [デバイスの "許可" アクションを含むカスタムインジケーターを作成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)できます。
+Office 365 に加えて、 [エンドポイントに Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection) を使用している組織で、ファイル、IP アドレス、URL、またはドメインがデバイスでマルウェアとして扱われている場合は、そのデバイス [の "許可" アクションを使用してカスタムインジケーターを作成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)できます。
 
 ## <a name="undo-a-remediation-action"></a>修復アクションを元に戻す
 
@@ -90,6 +91,6 @@ Office 365 に加えて、組織で [Microsoft Defender Advanced Threat Protecti
 
 ## <a name="related-articles"></a>関連記事
 
-[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[Office 365 で自動調査と応答 (AIR) の使用を開始する](office-365-air.md)
+[Microsoft Defender for Office 365 の空気](office-365-air.md)

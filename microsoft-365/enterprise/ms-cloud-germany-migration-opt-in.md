@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '概要: '
-ms.openlocfilehash: a4252a357891fc978d8b40747c5ad5741786b290
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2e5e5053ff1539b3fa92175115c8c9db3abc81ce
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691593"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309049"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Microsoft Cloud Germany (Microsoft Cloud Deutschland) から新しいドイツのデータセンター リージョンの Office 365 サービスへの移行をオプトインする方法
 
 >[!Note]
->この記事は、該当する Microsoft Cloud Germany/Deutschland のお客様にのみ適用されます。
+>この記事は、Microsoft Cloud ドイツ (Microsoft Cloud Deut上陸陸上) のお客様にのみ適用されます。
 >
 
 ## <a name="how-to-request-migration"></a>移行を要求する方法
 
-Microsoft Cloud German でプロビジョニングされたサービスをご利用のお客様には、Microsoft 365 管理センターに、お客様のテナント管理者が移行をオプトインできるページが表示されます。
+Microsoft Cloud ドイツでサービスを提供している対象ユーザー (Microsoft Cloud Deut上陸) には、Microsoft 365 管理センターのページが表示され、お客様のテナント管理者は移行のためにオプトインすることができます。
 
 Microsoft 365 管理センター のページにアクセスするには、左側のナビゲーション ウィンドウで [**設定**] を展開し、[**組織プロファイル**] をクリックします。
 
@@ -54,7 +54,13 @@ Microsoft 365 管理センター のページにアクセスするには、左�
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>移行をオプトインした後はどうなりますか?
 
-Microsoft 主導のアプローチにオプトインした組織の場合、2020 年に移行が行われる予定です。  移行の結果、主要な顧客データおよびサブスクリプションは新しいドイツ リージョンへと移動します。  Microsoft は、メッセージ センターの移行プロセス全体を通じて更新プログラムを送信します。
+移行は、Microsoft による方法にオプトインされる組織では、2021年10月 2021 29 日に microsoft クラウドドイツ (Microsoft Cloud Deut上陸陸) の退職前に完了するようになります。  移行の結果、主要な顧客データおよびサブスクリプションは新しいドイツ リージョンへと移動します。  Microsoft は、メッセージ センターの移行プロセス全体を通じて更新プログラムを送信します。  詳細については、以下の記事を参照してください。
+
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>お客様のテナント管理者が管理センターで移行をオプトインしていない場合はどうなりますか?
+
+Microsoft の365、Dynamics 365、および Power BI データとサブスクリプションを microsoft クラウドの新しいデータセンターに移行できるようにする用語が含まれるように、オンラインサービスの用語が変更されました。 これらの用語は、2020年5月1日以降に更新されたすべての Microsoft Cloud ドイツ語 (Microsoft Cloud Deut上陸陸地) サブスクリプションで有効になります。  お客様のテナント管理者は、電子メールで通知を受け取り、メッセージセンターで移行のオプトインが自動的に選択され、Microsoft による移行が行われることが通知されます。 この通知は、自動オプトインの30日以上前に送信されます。  移行のオプトイン後は、すべての通信と状態の更新がメッセージセンターの顧客のテナント管理者に送信されます。
+
+お客様とパートナーのテナント管理者は、移行プロセスをできるだけ早く開始できるように、管理センターで移行をオプトインすることをお勧めします。
 
 ## <a name="more-information"></a>詳細情報
 

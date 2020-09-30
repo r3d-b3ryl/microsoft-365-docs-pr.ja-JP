@@ -8,27 +8,29 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 09/29/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の使用を開始します。
-ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: adee64461d06b46f467682835a493a7eebe89aef
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Office 365 の Microsoft Defender で自動調査および応答機能の使用を開始します。
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.openlocfilehash: b844e4817bc77d7f6f4e99df53fc4b14c7e7110c
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202653"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308889"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Office 365 で自動調査と応答 (AIR) の使用を開始する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-[Office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) Plan 2 には、強力な自動化された調査と応答 (航空) 機能が含まれており、セキュリティ運用チームの時間と労力を節約できます。 アラートがトリガーされると、その通知をレビュー、優先度設定、応答するためのセキュリティ運用チームが必要になります。 受信通知の音量を維持することは非常に困難です。 これを自動化することによって役立つことがあります。 AIR を使用すると、セキュリティ運用チームは、トリガーされた通知を失うことなく、優先度の高いタスクに集中できます。
+[Microsoft Defender For Office 365 に](office-365-atp.md) は、セキュリティ運用チームの時間と労力を節約できる強力な自動化された調査および応答 (AIR) 機能が含まれています。 アラートがトリガーされると、その通知をレビュー、優先度設定、応答するためのセキュリティ運用チームが必要になります。 受信通知の音量を維持することは非常に困難です。 これを自動化することによって役立つことがあります。 AIR を使用すると、セキュリティ運用チームは、トリガーされた通知を失うことなく、優先度の高いタスクに集中できます。
 
 この記事には、以下の問題が含まれます。
 - 空気の [全体的な流れ](#the-overall-flow-of-air) 。
@@ -73,7 +75,7 @@ ms.locfileid: "48202653"
 
 ## <a name="how-to-get-air"></a>AIR の入手方法
 
-Office 365 の航空機能は、 [office 365 Advanced Threat Protection プラン 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)に含まれています。 ただし、Office 365 の ATP ポリシーは、エアが期待どおりに動作するように [構成する必要があり](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) ます。 さらに、組織の [通知ポリシー](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)を確認し、必要に応じて構成する必要があります。 
+AIR 機能は、 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)に含まれています。 ただし、必要に応じてエアを機能させるために、 [ポリシーを構成する必要があり](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) ます。 さらに、組織の [通知ポリシー](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)を確認し、必要に応じて構成する必要があります。 
 
 Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マルウェアのアクティビティ、外部および内部の脅威、および情報ガバナンスのリスクを特定するのに役立つ、多くの組み込み通知ポリシーが用意されています。 [既定の通知ポリシー](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies)のいくつかでは、自動調査をトリガーできます。 これらには次のコマンドレットがあります。
 
@@ -100,12 +102,12 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 |エア機能を設定するには |次のいずれかの役割: <br/>-全体管理者<br/>-セキュリティ管理者 <br/>これらのロールは、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) または [セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)で割り当てることができます。 |
 |推奨されるアクションを承認または拒否するには|[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)または[セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)で割り当てられている次のいずれかの役割。<br/>-全体管理者 <br/>-セキュリティ管理者<br/>-セキュリティリーダ <br/>--- さらに ---<br/>-検索と削除 (この役割は [セキュリティ & コンプライアンスセンター](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)のみで割り当てられます。 そこで新しい役割グループを作成し、その新しい役割グループに検索役割と削除役割を追加する必要がある場合があります。
 
-[Office 365 ATP Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) ライセンスは次のものに割り当てる必要があります。
+[Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) ライセンスは次のものに割り当てる必要があります。
 - セキュリティ管理者 (全体管理者を含む)
 - 組織のセキュリティ運用チーム (セキュリティ閲覧者と、検索と削除の役割を含む)
 - エンド ユーザー
 
-さらに、 [Office 365 の ATP ポリシー](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) を定義して適用し、保護を適切に行う必要があります。
+さらに、保護を適切に行うために、 [Microsoft Defender For Office 365 ポリシー](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) を定義して適用する必要があります。
 
 ## <a name="next-steps"></a>次の手順
 
@@ -115,6 +117,6 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 
 ## <a name="related-articles"></a>関連記事
 
-- [Microsoft Defender Advanced Threat Protection の自動化された調査と修復](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [エンドポイントの Microsoft Defender での自動化された調査と修復](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Microsoft Threat Protection での自動調査および対応](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 365 Defender での自動調査と応答](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
