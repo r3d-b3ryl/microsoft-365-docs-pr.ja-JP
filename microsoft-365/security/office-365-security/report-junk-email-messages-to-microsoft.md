@@ -16,17 +16,16 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 管理者は、正常なメッセージと悪いメッセージおよびファイルを分析のために Microsoft に報告するさまざまな方法について説明します。
-ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203657"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318191"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 Exchange online またはスタンドアロンの exchange Online Protection (EOP) 組織にメールボックスがあり、Exchange online メールボックスを使用していない場合、ユーザーと管理者の両方に、電子メールメッセージやファイルを Microsoft に報告するためのさまざまな方法が用意されています。365
 
@@ -43,6 +42,5 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 |[メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|ユーザーが分析のためにメッセージを報告したときに通知するメールフロールール (トランスポートルールとも呼ばれます) を作成する方法について説明します。
 |||
 |[マルウェアおよびマルウェアでないものを分析のために Microsoft に提出する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Microsoft セキュリティインテリジェンスサイトを使用して、添付ファイルやその他のファイルを送信します。|
-|
 
 スパムまたはフィッシングメッセージが配信されずに検疫された場合、ユーザーはセキュリティ & コンプライアンスセンターの検疫ポータルから Microsoft にメッセージを報告できます。 詳細については、「 [Microsoft 365 のユーザーとして、検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。

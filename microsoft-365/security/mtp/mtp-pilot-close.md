@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199711"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318207"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Microsoft の脅威保護パイロットの終了および概要  
 
@@ -37,6 +37,7 @@ ms.locfileid: "48199711"
 すべてのテストが終了した後、プロセスの最後に到達しました。
 
 最終的な出力は次のようになります。
+
 - 完了したスコアカード
 - パイロットの結果についての詳細なレポート
 - 前方へ移動する方法の決定
@@ -45,9 +46,8 @@ ms.locfileid: "48199711"
 
 このシミュレーションを楽しんでいただき、学んだことを実装し始めることをお勧めします。
 
+## <a name="next-step"></a>次の手順
 
-## <a name="next-step"></a>次のステップ
-||
-|:-------|
-|[Microsoft 365 ソリューションとアーキテクチャセンター](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)を参照して、組織に適したソリューションとアーキテクチャを設計する方法について理解します。
+****
 
+[Microsoft 365 ソリューションとアーキテクチャセンター](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)を参照して、組織に適したソリューションとアーキテクチャを設計する方法について理解します。

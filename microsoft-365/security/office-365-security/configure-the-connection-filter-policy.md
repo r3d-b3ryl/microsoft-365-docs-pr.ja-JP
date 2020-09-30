@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、電子メールサーバーからのメールを許可またはブロックするように接続フィルターを構成する方法について説明します。
-ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203373"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318254"
 ---
 # <a name="configure-connection-filtering"></a>接続フィルターの構成
 
@@ -203,7 +203,6 @@ IP 許可一覧内の電子メールサーバーからのメッセージは、�
 
 ## <a name="new-to-microsoft-365"></a>Microsoft 365 の新機能
 
-|<!-- a -->|
-|---|
-|![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される **管理者と IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。|
-|
+****
+
+![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される **Microsoft 365 管理者および IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。

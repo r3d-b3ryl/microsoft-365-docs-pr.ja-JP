@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のメッセージに適用されるスパム信頼レベル (SCL) について学ぶことができます。
-ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 51d00b36ae826676f436c0a74617ddbbadf7a30a
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202235"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318242"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼度 (SCL)
 
@@ -50,6 +50,6 @@ SCL 2、3、4、7、および8は、スパムフィルター処理によって�
 
 SCL と同じように、バルク苦情レベル (BCL) は、不適切なバルクメール ( _灰色のメール_) を特定します。 BCL が高いほど、バルク メール メッセージが好ましくない内容である可能性が高い (したがって、スパムである可能性が高い) ことを示します。 「スパム対策ポリシー」で、BCL のしきい値を構成します。 詳細については、「 [EOP のスパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)」、「 [EOP でのバルク苦情レベル (BCL)](bulk-complaint-level-values.md)」、および「 [迷惑メールとバルクメールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md)」を参照してください。
 
-|<!-- -->|
-|---|
-|![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される **Microsoft 365 管理者および IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。|
+****
+
+![LinkedIn Learning の短いアイコンは、 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **Microsoft 365 に新しいものですか?** LinkedIn ラーニングによって提供される **Microsoft 365 管理者および IT プロフェッショナル**向けの無料のビデオコースを見つけることができます。
