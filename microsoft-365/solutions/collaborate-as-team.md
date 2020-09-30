@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Teams のゲストとの共同作業のためにチームをセットアップするために必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: f22404ea412085ed697f76219509c1382318e7d4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797772"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322179"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
@@ -105,7 +105,7 @@ Microsoft 365 グループのゲスト設定を設定するには
 SharePoint 組織レベルの共有設定を設定するには
 
 1. Microsoft 365 管理センターで、左側のナビゲーションの [ **管理センター**] の下にある [ **SharePoint**] をクリックします。
-2. SharePoint 管理センターの左側のナビゲーションで、**[共有]** をクリックします。
+2. SharePoint 管理センターの左側のナビゲーションで、[ **ポリシー** ] を展開し、[ **共有**] をクリックします。
 3. SharePoint の外部共有が [ **すべてのユーザー** ] または **[既存のゲスト**] に設定されていることを確認します。
 4. 変更を加えた場合は、[**保存**] をクリックします。
 
@@ -131,7 +131,7 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 2. [ **ファイルとフォルダーのリンク**] で、使用する既定の共有リンクを選択します。
 3. 変更を加えた場合は、[**保存**] をクリックします。
 
-## <a name="create-a-team"></a>チームを作成する
+## <a name="create-a-team"></a>チームの作成
 
 次の手順では、ゲストとの共同作業に使用する予定のチームを作成します。
 
