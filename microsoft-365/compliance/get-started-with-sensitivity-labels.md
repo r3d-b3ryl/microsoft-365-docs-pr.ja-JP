@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルの実装を開始する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 7892eabdea3d92e9720b23efc708a99c7154ab7b
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 94edcb2e430b01ca423e6bb2a7baf51a407a52df
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262302"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295221"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -88,7 +88,7 @@ ms.locfileid: "48262302"
 |特定の感度ラベルを持つファイルまたはメールをユーザーが共有しないように、または警告します。 |[DLP ポリシー(プレビュー)で感度ラベルを条件として使用する](dlp-sensitivity-label-as-condition.md) |
 |オンプレミスのデータ ストアに保存されているファイルを検出、ラベル付け、保護する |[ファイルを自動的に分類および保護するための Azure Information Protection スキャナーを展開する](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |クラウドのデータ ストアに保存されているファイルを検出、ラベル付け、保護する|[クラウドに保存されている規制対象および機密データを検出、分類、ラベル付け、保護する](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Power BI で秘密度ラベルを適用して表示し、データのエクスポート時にデータを保護します。|[Power BI でのデータ保護](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|Power BI で秘密度ラベルを適用して表示し、データのエクスポート時にデータを保護します。|[Power BI に秘密度ラベルを適用する](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |組織で秘密度ラベルがどのように使用されているかを監視し、理解する|[データを把握する - データ分類の概要](data-classification-overview.md) <br /><br /> [ラベル分析によるラベル使用状況を表示する](label-analytics.md)|
 |秘密度ラベルの適用をサード パーティ製アプリやサービスに拡大する|[Microsoft 情報保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
 

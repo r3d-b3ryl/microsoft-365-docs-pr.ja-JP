@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f944933be4ce4d3a755ba54dd68856362bba9a0b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208803"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304871"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -55,6 +55,9 @@ Insider リスク管理ポリシーに含まれるユーザーには、上記の
 | **Insider リスク管理管理者** | この役割グループは、最初に insider リスク管理を構成し、後で insider リスク管理者を定義済みグループに分離するために使用します。  この役割グループのユーザーは、インサイダー リスク管理ポリシー、グローバル設定、および役割グループの割り当てを作成、読み取り、更新、および削除できます。 |
 | **Insider リスク管理アナリスト** | このグループを使用して、インサイダー リスク ケース アナリストとして機能するユーザーに権限を割り当てます。 この役割グループのユーザーは、すべてのインサイダー リスク管理アラート、ケース、および通知テンプレートにアクセスできます。 インサイダー リスク コンテンツ エクスプローラーにアクセスできません。 |
 | **Insider リスク管理の調査官** | このグループを使用して、インサイダー リスク データ調査担当者として機能するユーザーに権限を割り当てます。 この役割グループのユーザーは、すべての insider リスク管理通知、ケース、通知テンプレート、およびコンテンツエクスプローラーにアクセスできます。 |
+
+> [!NOTE]
+> これらの役割グループは、現在、特権 Id 管理 (PIM) ではサポートされていません。 PIM の詳細については、「 [Privileged Identity Management で AZURE AD の役割を割り当てる](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)」を参照してください。
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>Insider リスク管理役割グループにユーザーを追加する
 
@@ -199,7 +202,7 @@ Insider リスク管理は、物理的な制御およびアクセスプラット
 11. [ **次** へ] を選択して続行します。
 12. [ **レビュー** ] ページで、ポリシーに対して選択した設定を確認します。 [ **編集** ] を選択してポリシー値を変更するか、[ **Submit** ] を選択してポリシーを作成してアクティブ化します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 最初の insider リスク管理ポリシーを作成するための手順を完了すると、約24時間後にアクティビティインジケーターから通知を受信することが開始されます。 この記事の手順4のガイダンスまたは「 [新しい insider リスクポリシーの作成](insider-risk-management-policies.md#create-a-new-policy)」の手順に従って、必要に応じて追加のポリシーを構成します。
 

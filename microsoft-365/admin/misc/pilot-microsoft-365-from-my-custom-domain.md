@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 2つのテストアカウントのみを使用して、カスタムドメインから Microsoft 365 メールボックスに電子メール機能をパイロットする方法について説明します。
-ms.openlocfilehash: bfcb2bda4d560ab629ddebed88ac1d55e6224c05
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45186049"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295036"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
 
@@ -101,7 +101,48 @@ Microsoft 365 では、スパム保護に Exchange Online Protection（EOP） �
 
 5. **を選択し、** > **を作成し、** を閉じます。
 
-### <a name="step-6-update-dns-records-at-your-dns-hosting-provider"></a>手順 6: DNS ホスティング プロバイダーで DNS レコードを更新する
+### <a name="step-6-configure-mail-to-flow-from-microsoft-365-or-office-365-to-email-server"></a>手順 6: **Microsoft 365 または Office 365 からメール サーバーに流れるようにメールを構成する
+
+次の 2 つの手順を実行します。
+
+1. Microsoft 365 または Office 365 環境を構成します。
+
+2. Microsoft 365 または Office 365 からメール サーバーへのコネクタを設定します。
+
+### <a name="1-configure-your-microsoft-365-or-office-365-environment"></a>1. Microsoft 365 または Office 365 環境を構成する
+
+Microsoft 365 または Office365 で次の手順が完了したことを確認してください。
+
+1. コネクタを設定するには、開始する前にアクセス許可を割り当てる必要があります。 必要なアクセス許可を確認するには、「[EOP の機能のアクセス許可](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop)」トピックの「Microsoft 365 および Office 365 コネクタ」の項目を参照してください。
+
+2. EOP か ExchangeOnline でメール サーバーからインターネットにメールを中継する場合は、次のいずれかの方法を実行します。
+
+   - Microsoft 365 または Office 365 の承認済みドメインと一致するサブジェクト名で構成されている証明書を使用します。 証明書の共通名、またはサブジェクトの別名を組織のプライマリ SMTP ドメインと一致させることをお勧めします。 詳細については、「[オンプレミスのメール環境の前提条件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)」を参照してください。
+
+   または
+
+   - 組織の送信者のドメインとサブドメインがすべて Microsoft 365 または Office 365 の承認済みドメインとして構成されていることを確認します。
+
+   承認済みドメインの定義に関する詳細は、「[Exchange Online で承認済みドメインを管理する](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)」および「[Exchange Online でサブドメインのメール フローを有効にする](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)」をご覧ください。
+
+3. Microsoft 365 または Office 365 からメール サーバーへとメールを配信するのに、メール フロー ルール (トランスポート ルールとも呼ばれます) を使用するか、ドメイン名を使用するかを決定します。 ほとんどの企業は、すべての承認済みドメインにメールを配信することを選択します。 詳細については、「[シナリオ: Exchange Online での条件付きメール ルーティング](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。
+
+> [!NOTE]
+> 「[Exchange Online でのメール フロー ルールの処理](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」の説明に従って、メール フロー ルールを設定できます。 たとえば、現在メールが配布リストを介して複数のサイトに送信されている場合は、コネクタ付きのメール フロー ルールを使用できます。
+
+### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Microsoft 365 または Office 365 からメール サーバーへのコネクタを設定します。
+
+Microsoft 365 または Office 365 にコネクタを作成するには、**[管理者]** をクリックし、そして **[Exchange]** をクリックして Exchange 管理センターへ移動します。 次に、**[メール フロー]** をクリックし、**[コネクタ]** をクリックします。
+
+ウィザードを使用してコネクタを設定します。
+
+ウィザードを起動するには、プラス記号 **+** をクリックします。 最初の画面で、**From** Office 365 および **To** 組織のメール サーバーを選択します。
+
+**[次へ]** をクリックして、ウィザードの指示に従います。 詳細情報については、**[ヘルプ]** または **[詳細情報]** リンクをクリックします。 ウィザードに従って設定を行います。 最後に、コネクタが検証されたことを確認します。 コネクタが検証されない場合は、表示されているメッセージをダブルクリックして詳細を表示させ、問題の解決のために「[コネクタを検証する](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)」を参照します。
+
+
+
+### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>手順 7: DNS ホスティング プロバイダーで DNS レコードを更新する
 
 DNS ホスティングプロバイダーの Web サイトにサインインし、「[DNS レコードを追加してドメインに接続する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)」の手順に従います。
 
@@ -115,7 +156,7 @@ DNS ホスティングプロバイダーの Web サイトにサインインし�
 
     SPFレコードがない場合は、Microsoft 365 で推奨されているレコードを変更して、現在の電子メールプロバイダーのドメインを含め、spf.protection.outlook.com を追加します。 これにより、両方の電子メールシステムからの送信メッセージが承認されます。
 
-### <a name="step-7-set-up-email-forwarding-at-your-current-provider"></a>手順 7: 現在のプロバイダーで電子メールの転送をセットアップする
+### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>手順 8: 現在のプロバイダーで電子メールの転送をセットアップする
 
 現在の電子メール プロバイダーで、onmicrosoft.com domain ドメインへの転送を管理するユーザーの電子メール アカウントで設定します。
 
@@ -130,7 +171,7 @@ DNS ホスティングプロバイダーの Web サイトにサインインし�
 > 現在の電子メール プロバイダーでメッセージのコピーを保持する必要はありません。<br/>
 > 大半のプロバイダーは、返信が元の送信者に送信されるように、送信者の返信先アドレスをそのままにして電子メールを転送します。
 
-### <a name="step-8-test-mail-flow"></a>手順 8: メール フローをテストする
+### <a name="step-9-test-mail-flow"></a>手順 9: メール フローをテストする
 
 1. ユーザー A の資格情報を使用して Outlook Web App にサインインします。
 
@@ -142,10 +183,10 @@ DNS ホスティングプロバイダーの Web サイトにサインインし�
 
     - 外部アカウントまたは既存の電子メールシステムの従業員の電子メールアカウントから転送が正しく設定されていることを確認します。 例えば、ユーザー C の元のサーバーアカウントまたは Hotmail アカウントから、ユーザー A に電子メールを送信し、それがユーザー A の Microsoft 365 メールボックスに届くことを確認します。
 
-### <a name="step-9-move-mailbox-contents"></a>手順 9: メールボックスのコンテンツを移動する
+### <a name="step-10-move-mailbox-contents"></a>手順 10: メールボックスのコンテンツを移動する
 
 2 名のテストユーザーのみを移動し、ユーザー A とユーザー B の両方が Outlook を使用しているため、新しいOutlookプロファイルで古い .PST ファイルを開き、メッセージ、カレンダーアイテム、連絡先などをコピーすることで、電子メールを移動できます。  詳細については、「[Outlook の .pst ファイルからメール、連絡先、カレンダーをインポートする](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)」をご覧ください。
 
 それらが Microsoft 365 メールボックスの適切な場所にインポートされると、アイテムはどこのどのデバイスからでもアクセスできるようになります。
 
-より多くのメールボックスが関係する場合、または従業員が Outlook を使用していない場合は、Exchange 管理センターで利用可能な移行ツールを使用できます。 開始するには、Exchange 管理センターに移動し、[IMAP サーバーから Exchange Online メールボックスへのメールの移行-新しい記事のリソースが必要です]の指示に従います。
+より多くのメールボックスが関係する場合、または従業員が Outlook を使用していない場合は、Exchange 管理センターで利用可能な移行ツールを使用できます。 開始するには、Exchange 管理センターに移動し、「[IMAP サーバーから Exchange Online メールボックスへのメールの移行](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)」の指示に従います。

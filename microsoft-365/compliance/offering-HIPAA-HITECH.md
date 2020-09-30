@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 37da9f692b3556bf887d742ece3b99cdc1da60a2
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: a6605f7d8561532121e54f02b579de26879baa1a
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208409"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305241"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>医療保険の携行性と責任に関する法律と HITECH 法 (Health Insurance Portability and Accountability (HIPAA) & HITECH Acts)
 
@@ -59,7 +59,7 @@ Microsoft クラウドがお客様の HIPAA および HITECH 要件への準拠�
 - Microsoft Stream
 - Microsoft Professional Services: Azure、Dynamics 365、Intune と、Microsoft 365 for business の Medium Business および Enterprise のお客様への Premier およびオンプレミス サポート
 - [Dynamics 365、Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Power Automate (旧称 Microsoft Flow) スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービスとしてのクラウド サービス
+- Power Automate (以前の Microsoft Flow) クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Intune
 - [Office 365、Office 365 U.S. Government、Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 や Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
@@ -70,7 +70,7 @@ Microsoft クラウドがお客様の HIPAA および HITECH 要件への準拠�
 
 Azure のセキュリティとコンプライアンスのブループリント (HIPAA/HITRUST 健康データおよび AI) を使用して、健康データ ソリューション向けのクラウドの利点を活用する上での有利なスタートを切りましょう。 このブループリントは、HIPAA/HITRUST ソリューションの構築を今日から始めるためのツールとガイダンスを提供します。
 
-「[Start using the Azure HIPAA/HITRUST Blueprint (Azure HIPAA/HITRUST ブループリントの使用を開始する)](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)」
+「[Start using the Azure HIPAA/HITRUST Blueprint (Azure HIPAA/HITRUST ブループリントの使用を開始する)](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust-9-2)」
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -102,9 +102,9 @@ Microsoft のサービスはすべての顧客に対して一貫しているた�
 - 「[Practical guide to designing secure health solutions using Microsoft Azure (Microsoft Azure を使用して安全な健康ソリューションを設計するための実践ガイド)](https://aka.ms/azureindustrysecurity)」は、クラウド サービスを安全な方法で適切に導入するために必要なことをよりよく理解するために役立ちます。
 - 「[Microsoft クラウドでの HIPAA セキュリティおよびプライバシー要件への対応](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)」では、規制要件の概要を説明しています。 また、これらの要件に対応する方法論を使用して Microsoft のクラウドサービスがどのように構築されたかについての詳細な分析と、コンプライアンス対応のソリューションを構築する方法のガイダンスを提供します。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 
