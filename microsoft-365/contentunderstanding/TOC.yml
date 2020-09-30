@@ -1,4 +1,4 @@
-- name: コンテンツの概要
+- name: Microsoft SharePoint の同期を開始する
   items:
     - name: Microsoft SharePoint の同期について
       href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
       href: create-a-classifier.md
     - name: 抽出器を作成する
       href: create-an-extractor.md
-    - name: 説明の種類の概要
+    - name: 説明の種類
       href: explanation-types-overview.md
     - name: モデルを適用する
       href: apply-a-model.md
@@ -26,9 +26,11 @@
       href: apply-a-retention-label-to-a-model.md
     - name: モデル使用状況分析
       href: model-usage-analytics.md
+    - name: 抽出器を作成するときに用語ストアの分類を活用する
+      href: leverage-term-store-taxonomy.md
 - name: セットアップと管理
   items:
-    - name: コンテンツの理解を設定する
+    - name: コンテンツの理解をセットアップする
       href: set-up-content-understanding.md
     - name: 画像へのタグ付け
       href: image-tagging.md
