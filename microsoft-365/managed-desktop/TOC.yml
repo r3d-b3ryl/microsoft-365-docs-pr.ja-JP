@@ -95,6 +95,8 @@
               href: get-started/register-reused-devices-self.md
         - name: ユーザーがデバイスを使えるようにする
           href: get-started/get-started-devices.md
+        - name: Autopilot と登録ステータス ページの初回実行時エクスペリエンス
+          href: get-started/esp-first-run.md
         - name: アプリ制御の使用を開始する
           href: get-started/get-started-app-control.md
         - name: アプリを展開する
