@@ -388,8 +388,6 @@
           href: restore-an-inactive-mailbox.md
         - name: 非アクティブなメールボックスを削除する
           href: delete-an-inactive-mailbox.md
-    - name: データ ガバナンス チームによるビデオ
-      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: レコード管理
       items:
         - name: レコード管理の詳細
