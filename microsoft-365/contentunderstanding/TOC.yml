@@ -28,6 +28,10 @@
       href: model-usage-analytics.md
     - name: 抽出器を作成するときに用語ストアの分類を活用する
       href: leverage-term-store-taxonomy.md
+- name: 導入
+  items:
+    - name: 導入を始める
+      href: adoption-getstarted.md
 - name: セットアップと管理
   items:
     - name: コンテンツの理解をセットアップする
