@@ -334,12 +334,14 @@
           href: during-and-after-your-data-move.md
         - name: データ移行についての一般的な FAQ
           href: data-move-faq.md
-        - name: 'Microsoft Cloud Deutschland: Office 365 移行プログラム'
-          href: ms-cloud-germany-transition.md
-        - name: 'Microsoft Cloud Deutschland: 移行のオプト イン'
-          href: ms-cloud-germany-migration-opt-in.md
         - name: 顧客データの保存場所
           href: o365-data-locations.md
+        - name: Microsoft Cloud Deutschland
+          items:
+            - name: 概要
+              href: ms-cloud-germany-transition.md
+            - name: 移行のオプトイン
+              href: ms-cloud-germany-migration-opt-in.md
 - name: ID
   items:
     - name: ロードマップ

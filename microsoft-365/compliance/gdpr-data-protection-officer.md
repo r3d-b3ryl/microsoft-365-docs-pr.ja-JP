@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 140d66c48feed0534c377fb03673bb575e62527d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 440d8756e68b022b3b5e7bb4513e2cb3c199f335
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417941"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305047"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft のデータ保護責任者
 
@@ -29,11 +29,11 @@ Microsoft は、自社のエンジニアリング グループとビジネス �
 
 ## <a name="qualifications"></a>資格
 
-DPO 役割の候補者は、その地位に適任と認められるために、7 年以上の専門的なデータ保護の経験または合わせて 10 年のデータ保護、セキュリティ、および企業リスク管理の経験を有している必要があります。加えて、候補者は、国際的なデータ保護の法律や慣行に関する確かな専門知識を有している必要があります。 
+DPO 役割の候補者は、その地位に適任と認められるために、7 年以上の専門的なデータ保護の経験、または合わせて 10 年のデータ保護、セキュリティ、および企業リスク管理の経験を有している必要があります。加えて、候補者は、国際的なデータ保護の法律や慣行に関する確かな専門知識を有している必要があります。 
 
 ## <a name="nature-of-the-role"></a>役割の特性
 
-DPO は、個人データの保護に関するすべての主要な問題に適切かつ適時に関与します。これは、Microsoft が作成したすべての Data Protection Impact Assessments (DPIA) に対する審査と助言における DPO の役割によってある程度達成されます。DPIA プログラムは Microsoft でのすべての個人データ処理を収集するように設計されているため、DPO は会社全体を調査し、Microsoft の個人データ処理に関して GDPR に規定された義務を Microsoft に通知および助言する機会が与えられています。これと同じメカニズムを使用して、DPO は、GDPR を含む、適用可能なデータ保護規則への Microsoft のコンプライアンスだけでなく、Microsoft の社内ポリシーとコントロールも監視することができます。 
+DPO は、個人データの保護に関するすべての主要な問題に適切かつ適時に関与します。これは、Microsoft が作成したすべての データ保護影響評価 (DPIA) に対する審査と助言における DPO の役割によってある程度達成されます。DPIA プログラムは Microsoft でのすべての個人データ処理を収集するように設計されているため、DPO は会社全体を調査し、Microsoft の個人データ処理に関して GDPR に規定された義務を Microsoft に通知および助言する機会が与えられています。これと同じメカニズムを使用して、DPO は、GDPR を含む適用可能なデータ保護規則への Microsoft のコンプライアンスだけでなく、Microsoft の社内ポリシーとコントロールも監視することができます。 
 
 ## <a name="position-of-the-data-protection-officer"></a>データ保護責任者の位置づけ
 

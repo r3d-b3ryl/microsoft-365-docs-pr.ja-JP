@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2408445598ab1e474ac1967be6e13f19887144a8
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 942097033fe5ed97449dbf3be93e8153f91a7961
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417901"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305027"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>データ保護影響評価: Microsoft Office 365 を利用するデータ管理者向けガイダンス 
 
@@ -29,7 +29,7 @@ ms.locfileid: "47417901"
 
 このドキュメントの目的は、データ管理者に対し、DPIA が必要であるかどうかを判断し、必要な場合には DPIA に含める詳細情報を決定する上で役立つ Office 365 に関する情報を提供することです。ドキュメントは Office 365 アプリケーションやサービスに適用され、Exchange Online、SharePoint Online、OneDrive for Business、Yammer、Skype for Business、Power BI などが含まれますが、これらに限定はされません。(含まれるアプリケーションやサービスについては、たとえば「Office 365 のデータ主体要求ガイド」の表 1 と表 2 をご覧いただけます。) 
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>パート 1 — DPIA が必要であるかどうかの判断
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>パート 1: DPIA が必要であるかどうかの判断
 
 GDPR の第 35 条では、「特に新たな技術を用いるなどのある種の処理が、その性質、範囲、文脈および処理の目的を考慮して、自然人の権利や自由に高リスクを生じさせる可能性がある場合」に、データ管理者がデータ保護影響評価を実施することが義務付けられています。さらにこの条項には、このような高リスクを示す特定の要素が記載されています。これらを次の表に示します。DPIA が必要であるかどうかを判断する際には、データ管理者が、管理者固有の Office 365 の導入と用途の観点から、これらの要素とその他の関連要素をすべて考慮する必要があります。
 
@@ -44,7 +44,7 @@ GDPR の第 35 条では、「特に新たな技術を用いるなどのある�
 >[!Note]
 ><sup>1</sup>「大規模」な処理という条件に関して、GDPR の前文 91 では次のように説明しています。「個人データの処理は、処理が個々の医師、他の医療専門家、または弁護士の患者または依頼主に関するものである場合、大規模な処理とはみなされない。 その場合、データ保護影響評価は必須ではない」。
 
-## <a name="part-2--contents-of-a-dpia"></a>パート 2 - DPIA の内容
+## <a name="part-2-contents-of-a-dpia"></a>パート 2: DPIA の内容
 
 第 35 条(7) は、データ保護影響評価において処理の目的を特定し、想定される処理の体系的な説明を行うことを義務付けています。  Microsoft の DPIA では、こうした体系的な説明には、処理するデータの種類、データの保存期間、データの保存場所と移動先、およびデータへのアクセス権を持つサードパーティの要素が含まれています。  また、DPIA には次のものを含める必要があります:
 

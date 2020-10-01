@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f4394a66242a981ab179b07f45e82132f68968d7
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208179"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305357"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>北米電力信頼度協議会 (North American Electric Reliability Corporation: NERC)
 
@@ -83,11 +83,12 @@ NERC ERO エンタープライズは、[実践ガイド](https://www.nerc.com/pa
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 
 - [NERC コンプライアンス ガイダンス](https://www.nerc.com/pa/comp/guidance/)
+- [NERC サイバー セキュリティ - サプライ チェーン リスク管理](https://www.nerc.com/pa/Stand/Pages/CIP0131RI.aspx)
 - [NERC コンプライアンスと執行](https://www.nerc.com/pa/comp/Pages/default.aspx)
 - [NERC 組織と認定](https://www.nerc.com/pa/comp/Pages/Registration.aspx)
 - [Microsoft と FedRAMP](offering-fedramp.md)
