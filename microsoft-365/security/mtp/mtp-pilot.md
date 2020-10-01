@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 88d92558d86e0aa2e90ef04d88a3cd4676386f15
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 250c125648f734a13899a58dd22ee3bffb0921a9
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195629"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333736"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>パイロットの Microsoft 脅威保護プロジェクトを実行する 
 
@@ -56,7 +56,7 @@ Microsoft の脅威保護パイロットの実行には、次の4つのフェー
 |フェーズ | 説明 | 
 |:-------|:-----|
 | ![計画](../../media/mtp/plan.png)<br>[計画](mtp-pilot-plan.md)| Microsoft の脅威保護パイロットプロジェクトを実行する前に考慮する必要のある事項について説明します。 <br><br>-スコープ <br> -ユースケース <br>- 要件 <br>-テスト計画 <br> -成功の条件 <br> -スコアカード 
-| ![準備](../../media/prepare.png) <br>[準備](mtp-evaluation.md)|  Microsoft 365 セキュリティセンターにアクセスして、Microsoft の脅威保護パイロット環境をセットアップします。 次のようなガイドが表示されます。<br><br>-パイロットの関係者を特定し、承認を求める <br> -環境に関する考慮事項 <br>-アクセス <br>-Azure Active Directory のセットアップ <br> -構成の順序 <br> -Microsoft 365 E5 試用版にサインアップする <br> -ドメインの構成 <br>-Microsoft 365 E5 ライセンスを割り当てる <br> -ポータルのセットアップウィザードを完了します。|
+| ![準備](../../media/mtp/prep.png) <br>[準備](mtp-evaluation.md)|  Microsoft 365 セキュリティセンターにアクセスして、Microsoft の脅威保護パイロット環境をセットアップします。 次のようなガイドが表示されます。<br><br>-パイロットの関係者を特定し、承認を求める <br> -環境に関する考慮事項 <br>-アクセス <br>-Azure Active Directory のセットアップ <br> -構成の順序 <br> -Microsoft 365 E5 試用版にサインアップする <br> -ドメインの構成 <br>-Microsoft 365 E5 ライセンスを割り当てる <br> -ポータルのセットアップウィザードを完了します。|
 | ![攻撃シミュレーション](../../media/mtp/run-sim.png) <br>[攻撃シミュレーション](mtp-pilot-simulate.md) | 攻撃をシミュレートするには、次のように指導します。<br><br>-テスト環境の要件を確認する <br>-シミュレーションを実行する <br>-インシデントを調査する <br>-インシデントを解決する 
 | ![決算と概要](../../media/mtp/close.png) <br>[決算と概要](mtp-pilot-close.md) | プロセスの最後に達すると、次のようになります。<br><br>-最終出力に進む<br>-利害関係者への出力を提示する <br>-フィードバックを提供する <br>-次の手順を実行します。 
 

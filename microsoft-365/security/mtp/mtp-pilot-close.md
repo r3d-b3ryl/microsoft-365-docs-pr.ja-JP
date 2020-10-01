@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: d820b360f189425cc3913c6d92afc8965a7d1eee
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318207"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333616"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Microsoft の脅威保護パイロットの終了および概要  
 
@@ -31,6 +31,48 @@ ms.locfileid: "48318207"
 
 **適用対象:**
 - Microsoft Threat Protection
+
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" >
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="パイロットを計画する Microsoft の脅威保護プロジェクト" />
+      <br/>計画 </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境の準備" />
+      <br/>作る </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Microsoft の脅威保護攻撃のシミュレーションを実行する" />
+      <br/>攻撃をシミュレートする </a><br>
+    </td>
+    <td align="center"bgcolor="#d5f5e3">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Microsoft の脅威保護パイロットの終了と概要" />
+      <br/>閉じて概要をまとめる </a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
+
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+現在、決算フェーズと要約段階になっています。
 
 ドメインコントローラーでリモートでコードを実行する、高度なメモリのみ攻撃をシミュレートしています。 Stealthy 悪意のあるアクティビティについて、Microsoft Defender ATP および Azure ATP が検出し、通知する方法を確認しました。 また、Microsoft 365 セキュリティセンターポータルでは、さまざまなソースからのアラートが他のコンテキスト情報と共に1つのインシデントに配信され、SOC アナリストが調査して必要なアクションを実行できるようにしています。 また、ユーザーが添付ファイルを開いたときや保存したときに、そのクエリに基づいて検出を作成した受信メールを識別する高度な検索クエリも作成されています。
 
@@ -46,8 +88,9 @@ ms.locfileid: "48318207"
 
 このシミュレーションを楽しんでいただき、学んだことを実装し始めることをお勧めします。
 
-## <a name="next-step"></a>次の手順
-
-****
-
-[Microsoft 365 ソリューションとアーキテクチャセンター](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)を参照して、組織に適したソリューションとアーキテクチャを設計する方法について理解します。
+## <a name="next-step"></a>次のステップ
+Microsoft Threat Protection の柱の詳細については、次の対話型のガイドを参照してください。
+- [Microsoft Defender for Office 365 を使用して組織を保護する](https://aka.ms/O365ATP-Interactive-Guide)
+- [身元を確認するために Microsoft Defender を使用して疑わしいアクティビティおよび潜在的な攻撃を検出する](https://aka.ms/AATP-Interactive-Guide)
+- [Microsoft Cloud App Security を使用して脅威を検出し、アラートを管理する](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [エンドポイントの Microsoft Defender を使用して脅威を調査および修復する](https://aka.ms/MDATP-IR-Interactive-Guide)

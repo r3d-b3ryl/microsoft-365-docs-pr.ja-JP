@@ -1,22 +1,24 @@
-- name: Microsoft SharePoint の同期を開始する
+- name: Microsoft SharePoint の同期 Tex について
   items:
-    - name: Microsoft SharePoint の同期について
-      href: microsoft-sharepoint-syntex-overview.md
+    - name: SharePoint の同期について
+      href: index.md
     - name: ドキュメント理解の概要
       href: document-understanding-overview.md
     - name: フォーム処理の概要
       href: form-processing-overview.md
     - name: ドキュメントの理解とフォーム処理モデルの違い
       href: difference-between-document-understanding-and-form-processing-model.md
+- name: モデルの使用を開始する
+  items:
     - name: サンプルモデルを使用したモデルについて
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: コンテンツセンターを作成する
       href: create-a-content-center.md
     - name: 分類子を作成する
       href: create-a-classifier.md
-    - name: 抽出器を作成する
+    - name: エクストラクターを作成する
       href: create-an-extractor.md
-    - name: 説明の種類
+    - name: 説明のタイプ
       href: explanation-types-overview.md
     - name: モデルを適用する
       href: apply-a-model.md

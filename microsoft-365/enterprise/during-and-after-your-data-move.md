@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: データの移動は、Microsoft がテナントのサービスと関連データを新しいデータセンター geo に移動するときに発生するバックエンドの操作です。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950274"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333702"
 ---
 # <a name="during-and-after-your-data-move"></a>データの移行中および移行後
 
@@ -30,8 +30,7 @@ ms.locfileid: "47950274"
 > [!NOTE]
 > 移動はサービスごとに、異なる時間に行われます。結果として、サービスごとに異なる時間に、説明されているような機能制限がかかります。 
   
-Exchange Online、SharePoint Online、Teams、および Skype for Business の各移行が完了したら、Microsoft 365 メッセージセンターで確認を行います。 次の表に示されているように、特定の geo 内のすべてのお客様について、要求されたすべてのデータの移動を完了するには、登録期間の終了後、最大 24 か月かかることがあります。 移行後にテナントに問題がある場合は、サポートに連絡して [サポート](https://go.microsoft.com/fwlink/p/?LinkID=522459) を受けてください。 
-  
+Exchange Online、SharePoint Online、Teams チャットサービスのそれぞれについて移行が完了したら、Microsoft 365 メッセージセンターで確認を行います。 次の表に示されているように、登録期間が終了してから最大24か月を経過して、新しいデータセンター geo に移動中のコア顧客データを完成させることができます。   
 
 |**国がサインアップしているお客様**|**完了したすべての移動**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ Exchange Online、SharePoint Online、Teams、および Skype for Business の�
 |南アフリカ  <br/> |2022年7月1日  <br/> |
 |スイス、リヒテンシュタイン  <br/> |2022年7月1日  <br/> |
 |ノルウェー  <br/> |2022年11月1日  <br/> |
-|ドイツ  <br/> |計画  <br/> |
+|ドイツ  <br/> |2023年4月1日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -67,13 +66,9 @@ SharePoint Online を移行すると、以下のサービスのデータも移�
   
 - One Drive for Business
     
-- Project Online
-    
-- Microsoft 365 のプロジェクト
-    
 - Microsoft 365 Video services
     
-- S ブラウザーの Office
+- ブラウザー内の Office
     
 - Microsoft 365 Apps for enterprise
     
@@ -109,7 +104,7 @@ SharePoint Online データを移行する過程で、検索インデックス�
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Microsoft は、Exchange Online、SharePoint Online、OneDrive for Business に加えて、Teams データをローカルデータセンターに移行します。
+Microsoft は、Exchange Online、SharePoint Online、OneDrive for Business に加えて、Teams chat service のデータをローカルデータセンターに移行します。
 
 - Teams のチャットメッセージ (プライベートメッセージやチャネルメッセージを含む)。
 - チャットで使用される Teams 画像。
@@ -118,20 +113,7 @@ Teams ファイルは SharePoint Online に格納され、Teams チャットフ�
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business の移動は、オーストラリア、日本、インド、カナダ、英国、および南韓国で利用できます。
-
-カットオーバーの際、すべてのユーザーは Skype for Business クライアント ソフトウェアからサインアウトされます。自動サインインによって、2 分以内にユーザーは再接続されます。
-  
-|**全体の移動中に利用できる機能**|**移動中は機能が制限される場合があります**|
-|:-----|:-----|
-| インスタント メッセージングおよび音声呼び出し  <br/>  ユーザーは、連絡先の追加、連絡先グループの追加、会議の追加、自分の場所の設定、[今日はどんなことがありますか] の変更を実行できます。  <br/>  電話会議プロバイダー (ACP) の設定は、対象のデータセンター geo にコピーされます。ACP プロバイダーが対象データセンター内に存在する場合は動作しますが、対象データセンター内に存在しない場合は動作しません。  <br/> | 管理者は、テナント管理者 TRPS (テナントのリモート PowerShell) を使用してセッションを作成できません。  <br/>  管理者は、テナント管理者 LAC を使用してサインインおよびユーザー設定の変更は行えません。  <br/> |
-   
-|**移行後**|
-|:-----|
-| 会議データ (アップロードされたプレゼンテーションなど) は移動されないため、再アップロードする必要があります。  <br/>  Lync 2010 クライアントや Lync for Mac 2011 クライアントなど、以前の Lync クライアントでは、サービスへの DNS 情報のキャッシュに起因するサインインの問題が発生することが確認されています。 ユーザーが最新の Skype for Business Windows クライアントではない場合、DNS キャッシュのクリアが必要になる可能性があります。 「 [Office 365 の Skype For Business Online の DNS 構成に関する問題のトラブルシューティング」を](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue)参照してください。 Lync for Mac クライアントのユーザーは、[このリンクの手順](https://support.microsoft.com/kb/2629861)に従う必要があります。  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>サードパーティの電話会議プロバイダーを含む Skype for Business の移動
-新しい geo 固有のデータセンターのユーザーは、Skype for Business 用のサードパーティの電話会議プロバイダーのアドオン サービスを使用することができません。  サードパーティの電話会議プロバイダーを使用している既存のお客様は、新しい geo 固有のデータセンターへの移動を要求する必要はありません。  新しい geo 固有のデータセンターの新規のお客様は、サードパーティの電話会議プロバイダーを使用するために、地域データセンターへの移動を要求する必要があります。
+Skype for Business の移動は利用できなくなりました。  [Skype For Business Online は](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) 、2021年7月31日に廃止されます。 その時間が過ぎると、サービスにアクセスできなくなります。 
   
 ## <a name="related-topics"></a>関連項目 
  

@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 Advanced Threat Protection (Office 365 ATP) を使用して組織で使用できる高度なフィッシング対策ポリシーを作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328073"
+ms.locfileid: "48333548"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>ATP フィッシング詐欺対策ポリシーを設定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 ATP のフィッシング対策ポリシーは、 [Office 365 Advanced Threat Protection](office-365-atp.md)の一部です。 ATP のフィッシング対策ポリシーは、悪意のある偽造ベースのフィッシング攻撃やその他の種類のフィッシング攻撃から組織を保護するのに役立ちます。 Exchange Online Protection (EOP) と ATP のフィッシング対策ポリシーにおけるフィッシング対策ポリシーの相違点の詳細については、「 [フィッシング対策保護](anti-phishing-protection.md)」を参照してください。
 
@@ -63,7 +62,7 @@ Exchange Online の PowerShell では、ポリシーとルールを個別に管�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- このトピックの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。
+- この記事に記載されている手順を実行するには、事前にアクセス許可を割り当てる必要があります。
 
   - ATP のフィッシング対策ポリシーを追加、変更、および削除するには、次のいずれかの役割グループのメンバーである必要があります。
 
@@ -176,6 +175,8 @@ ATP のフィッシング対策ポリシーを変更するには、次の手順�
 
      - **自分が所有するドメインを自動的に追加**する: 既定値は **Off**です。 これをオンにするには、トグルを **[オン**] にします。
      - **カスタムドメインを含める**: 既定値は **Off**です。 これをオンにするには、トグルを **[オン**] にして、[ **ドメインの追加** ] ボックスにドメイン名 (contoso.com など) を入力し、enter キーを押して、必要に応じて繰り返します。
+
+       **注**: セキュリティ & コンプライアンスセンターでは、最大20個のドメインを入力できます。 Exchange Online の PowerShell では、最大50のドメインを入力できます。
 
    - **アクション**: [**編集**] をクリックします。
 

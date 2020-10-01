@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 21e6e3294b8fe722214d567963223b9e62737e34
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305368"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333680"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>パイロット Microsoft の脅威保護プロジェクトを計画する 
 
@@ -31,8 +31,49 @@ ms.locfileid: "48305368"
 
 **適用対象:**
 - Microsoft Threat Protection
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="パイロットを計画する Microsoft の脅威保護プロジェクト" />
+      <br/>計画</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境の準備" />
+      <br/>準備</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Microsoft の脅威保護攻撃のシミュレーションを実行する" />
+     <br/>攻撃のシミュレーション</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Microsoft の脅威保護パイロットの終了と概要" />
+     <br/>閉じて要約する</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
 
-パイロットプロジェクトが成功したかどうかを確認するには、最初に利害関係者に対して綿密な計画を行い、承認を得ることが重要です。 計画の要素には、範囲の特定、ユースケース、要件、および成功の条件が含まれます。 
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+現在、計画段階になっています。
+
+パイロットプロジェクトが成功したかどうかを確認するには、最初に利害関係者に対して綿密な計画を行い、承認を得ることが重要です。 計画の要素には、範囲の識別、ユースケース、要件、および成功の条件が含まれます。
 
 このガイドでは、パイロットプロジェクトを計画する方法について説明します。 
 
@@ -60,7 +101,7 @@ ms.locfileid: "48305368"
 
 これらのユースケースは、定義されたスコープのパラメーター内で作成する必要があることに注意してください。 たとえば、テストの範囲に Microsoft Cloud App Security などのツールの評価が含まれていない場合は、データソースを作成しないで、これに依存するユースケースを使用します。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 ユースケースのリストから、要件の作成を開始できます。 要件には、ツールがユースケースを満たすために必要な機能が含まれます。 これらの要件は、構成と保守、統合のサポート、探している機能やカスタム通知の作成機能などの機能固有の要件に分類できます。
 
@@ -76,7 +117,7 @@ ms.locfileid: "48305368"
 
 プランのすべての要素をまとめる1つの方法は、スコアカードを作成することです。 以下のサンプルスコアカードを参照してください。
 
-|**ユースケース**|**要件**|**構成要件**|**テスト計画**|**予想結果**|**テストの状態**|**スコア**|**メモ**|
+|**ユースケース**|**要件**|**構成要件**|**テスト計画**|**予想結果**|**テストの状態**|**スコア**|**注**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |インシデント管理|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
 |自動赤外線|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |通知とインシデントは、Microsoft の脅威保護によって自動的に修復されます。||||
@@ -84,6 +125,6 @@ ms.locfileid: "48305368"
 
 
 
-## <a name="next-step"></a>次の手順
-|![準備フェーズ](../../media/prepare.png) <br>[準備フェーズ](prepare-mtpeval.md) | Microsoft の脅威保護パイロット環境の準備
+## <a name="next-step"></a>次のステップ
+|![準備フェーズ](../../media/mtp/prep.png) <br>[準備フェーズ](prepare-mtpeval.md) | Microsoft の脅威保護パイロット環境の準備
 |:-------|:-----|

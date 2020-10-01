@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: be6bf277926cffb77dfcde425ef08a688fb0cf34
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277542"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333980"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Microsoft の脅威保護攻撃のシミュレーションを実行する  
 
@@ -31,6 +31,47 @@ ms.locfileid: "48277542"
 
 **適用対象:**
 - Microsoft Threat Protection
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" >
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="パイロットを計画する Microsoft の脅威保護プロジェクト" />
+      <br/>計画 </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境の準備" />
+      <br/>作る </a><br>
+    </td>
+    <td align="center"bgcolor="#d5f5e3">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Microsoft の脅威保護攻撃のシミュレーションを実行する" />
+      <br/>攻撃をシミュレートする </a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Microsoft の脅威保護パイロットの終了と概要" />
+      <br/>閉じて概要をまとめる </a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
+
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+現在、攻撃のシミュレーションフェーズになっています。
 
 パイロット環境を準備した後は、Microsoft の脅威保護インシデントの管理および自動調査と修復の機能をテストする時間です。 高度な技術を活用して、検出から隠すことができるように、高度な攻撃をシミュレートするのに役立ちます。 この攻撃は、ドメインコントローラーで開かれているサーバーメッセージブロック (SMB) セッションを列挙し、ユーザーのデバイスの最近の IP アドレスを取得します。 通常、このカテゴリの攻撃には、犠牲者のデバイスで削除されたファイルは含まれません。メモリ内でのみ発生します。 既存のシステムおよび管理ツールを使用して "地上からの生放送" を行い、そのコードをシステムプロセスに挿入して実行を非表示にし、それらのコードを回避検出してデバイス上で保持できるようにします。
 
@@ -57,11 +98,11 @@ ms.locfileid: "48277542"
 
 3.  テストデバイスの構成を確認します。
     <br>
-    a.   デバイスは Windows 10 バージョン1903またはそれ以降のバージョンで実行されます。
+    a.  デバイスは Windows 10 バージョン1903またはそれ以降のバージョンで実行されます。
     <br>
-    b.   テストデバイスはテストドメインに参加しています。
+    b.  テストデバイスはテストドメインに参加しています。
     <br>
-    c.   [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、この [トラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
+    c.  [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、この [トラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
     <br>
     d.   テストデバイスが [Microsoft Defender Advanced Threat Protection (MDATP) に利用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)していることを確認します。
 
@@ -277,10 +318,10 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 1.  テナントが [Microsoft の脅威保護を有効](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)にしていることを確認します。
 2.  電子メールの受信に使用するターゲットメールボックスを識別します。
-    a.   このメールボックスは、Office 365 ATP b で監視する必要があります。  要件3のデバイスがこのメールボックスにアクセスする必要がある
+    a.  このメールボックスは、Office 365 ATP b で監視する必要があります。  要件3のデバイスがこのメールボックスにアクセスする必要がある
 3.  テストデバイスを構成する: a。  Windows 10 バージョン1903以降のバージョンを使用していることを確認してください。
-    b.   テストデバイスをテストドメインに参加させる。
-    c.   [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、 [このトラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
+    b.  テストデバイスをテストドメインに参加させる。
+    c.  [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、 [このトラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
     d.   [Microsoft Defender Advanced Threat Protection (MDATP) にオンボード](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
@@ -295,14 +336,14 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
     ![M365 セキュリティセンターポータルのナビゲーションバーでの高度な検索のスクリーンショット](../../media/mtp/fig17.png) 
 
 3.  電子メールイベントを収集することによって開始するクエリを作成します。
-    a.   [クエリ] ウィンドウで、[新規] を選択します。
-    b.   [EmailEvents] テーブルをスキーマからダブルクリックします。
+    a.  [クエリ] ウィンドウで、[新規] を選択します。
+    b.  [EmailEvents] テーブルをスキーマからダブルクリックします。
 
 ```
 EmailEvents 
 ```                                        
 
-   c.    時間枠を過去24時間に変更します。 上記のシミュレーションを実行したときに送信した電子メールが過去24時間であったとして、そうでない場合は、時間枠を変更します。
+   c.   時間枠を過去24時間に変更します。 上記のシミュレーションを実行したときに送信した電子メールが過去24時間であったとして、そうでない場合は、時間枠を変更します。
    ![タイムフレームを変更できる場所のスクリーンショット。 ドロップダウンメニューを開いて、時間枠オプションの範囲から選択する](../../media/mtp/fig18.png) 
 
 
@@ -441,7 +482,7 @@ EmailEvents
 | エピソード 3: データの集約、ピボット、および視覚化|これで、データのフィルター処理、操作、および結合を行うことができるようになり、集約、定量化、ピボット、可視化を開始する時間になります。 このエピソードでは、高度な検索スキーマで追加のテーブルを準備する際に実行できる集計演算子と計算のいくつかについて説明します。 分析を向上させるために、データセットをグラフに変換します。 | [MP4](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [エピソード 3: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | エピソード 4: ご利用いただけます。 KQL をインシデント追跡に適用する|攻撃者の活動を追跡する時間。 このエピソードでは、Microsoft の脅威保護の KQL と advanced の詳細な理解を強化し、攻撃を追跡するために使用します。 Cybersecurity の ABCs やインシデントへの対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントのいくつかについて説明します。 | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 |![決算および概要フェーズ](../../media/mtp/close.png) <br>[決算および概要フェーズ](mtp-pilot-close.md) | Microsoft の脅威保護パイロットの結果を分析し、ステークホルダーに提示して、次の手順を実行します。
 |:-----|:-----|
 
