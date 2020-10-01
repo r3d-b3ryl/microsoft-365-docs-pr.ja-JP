@@ -1,5 +1,5 @@
 ---
-title: Trainable 分類子 (プレビュー) について
+title: トレーニング可能な分類子の詳細 (プレビュー)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 トレーニング可能な分類子は、陽性と陰性のサンプルを提供することによって、さまざまなタイプのコンテンツを認識するトレーニング ツールです。 分類子がトレーニングされると、その結果が正しいことを確認します。 次に、それを使用して組織のコンテンツを検索し、分類して保持または秘密度ラベルを適用するか、データ損失防止 (DLP) または保持ポリシーに含めます。
-ms.openlocfilehash: 9a628eec748681e0a22911bf7cf3774895b10ead
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 8b086690faba23e1331e02d8844503c44e7617c0
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132396"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322190"
 ---
 # <a name="learn-about-classifiers-preview"></a>分類子 (プレビュー) について
 
@@ -75,10 +75,8 @@ Microsoft 365 には、事前にトレーニングされた分類子が5つあ�
     - C++
     - Clojure
     - CoffeeScript
-    - CSS
     - Go
     - Haskell
-    - HTML
     - Java
     - JavaScript
     - Lua

@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,20 +15,29 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: 6c8f58e54ae21b4a5e1566dc72673e1d69152863
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132247"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327428"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Microsoft 365 テナントへのユーザー サインインの保護
 
 ユーザー サインインのセキュリティを強化するには：
 
+- Windows Hello for Business を使用する
 - Azure Active Directory（Azure AD）パスワード保護を使用する
 - 多要素認証 (MFA) を使用する
-- ID とデバイス アクセス ポリシーを展開する
+- ID とデバイスのアクセス構成を展開する
+- Azure AD Identity Protection で資格情報を侵害から保護する
+
+## <a name="windows-hello-for-business"></a>Windows Hello for Business
+
+Windows 10 Enterprise の Windows Hello for Business では、Windows デバイスにサインオンするときのパスワードを強力な 2 要素認証に置き換えます。 この 2 要素認証は、デバイスと生体認証または PIN に関連付けられる新しい種類のユーザー資格情報です。
+
+詳しくは、「[Windows Hello for Business の概要](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)」をご覧ください。
+
 
 ## <a name="azure-ad-password-protection"></a>Azure AD パスワード保護
 
@@ -44,7 +53,7 @@ MFA では、ユーザーのサインインは、ユーザー アカウントの
 
 MFA を使用するための最初の手順は、***すべての管理者アカウント（特権アカウント）に MFA を要求する***ことです。
 
-この最初の手順以外にも、マイクロソフトはすべてのユーザーに MFA を強くお勧めします。
+この最初の手順以外にも、Microsoft はすべてのユーザーに MFA をお勧めします。
 
 Microsoft 365 プランに基づき管理者またはユーザーに MFA の使用を要求する方法は3つあります。
 
@@ -63,7 +72,7 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 
 セキュリティの既定値では、すべての組織が、既定で有効になっているユーザー サインインの基本レベルのセキュリティを確保しています。 条件付きアクセス ポリシーを使用する MFA を優先して、または個々のアカウントに対して、セキュリティの既定値を無効にすることができます。
 
-詳細については、こちらの「[セキュリティの既定値の概要](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
+詳細については、「[セキュリティの既定値の概要](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
 
 ### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
 
@@ -77,7 +86,7 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 
 条件付きアクセスには、Microsoft 365 E3 および E5 に含まれている Azure AD Premium P1 ライセンスが必要です。
 
-詳細については、こちらの[条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)を参照してください。
+詳細については、「[条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)」 を参照してください。
 
 ### <a name="using-these-methods-together"></a>これらの方法を組み合わせて使用する
 
@@ -96,7 +105,7 @@ Microsoft 365 プランに基づき管理者またはユーザーに MFA の使�
 | **条件付きアクセス ポリシー** | いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます  | MFA 登録中にユーザーが指定  |
 ||||
 
-## <a name="identity-and-device-access-policies"></a>ID とデバイスのアクセス ポリシー
+## <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
 ID とデバイス アクセスの設定とポリシーとは、特定のアクセス要求を許可するかどうか、およびどのような条件下で許可するかを決定する条件付きアクセス、Intune、およびAzure AD Identity Protection ポリシーと組み合わせて推奨される必須機能とその設定です。 この決定は、サインインのユーザーアカウント、使用しているデバイス、ユーザーがアクセスに使用しているアプリ、アクセス要求が行われた場所、および要求のリスクの評価に基づいています。 この機能により、承認されたユーザーとデバイスのみが重要なリソースにアクセスできるようになります。
 
@@ -114,27 +123,22 @@ ID とデバイスのアクセス ポリシーは、3つの層で使用するよ
 
 マイクロソフトは、Microsoft Teams、Exchange Online、SharePointの特定の設定を含む、組織内のID とデバイスのアクセス ポリシーを構成および展開することを強くお勧めします。 詳細については、[ID とデバイスのアクセス設定](microsoft-365-policies-configurations.md)を参照してください。
 
-<!--
+## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-## Let your users reset their own passwords
+このセクションでは、資格情報が侵害されないように保護するポリシーを構成する方法を学習します。攻撃者は組織のクラウド サービスとデータにアクセスするため、ユーザーのアカウント名とパスワードを突き止めて、資格情報を侵害しようとします。 Azure AD Identity Protection は、攻撃者によるユーザー アカウントの資格情報の侵害を防ぐさまざまな方法を提供します。
 
-Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+Azure AD Identity Protection では次の作業を実行できます。
 
-## Sign in to SaaS apps with Azure AD
+|機能|説明|
+|:---------|:---------|
+| 組織の ID における潜在的な脆弱性の洗い出しと対処 | Azure AD では機械学習を使用して、サインインやサインイン後のアクティビティなどの異常や不審なアクティビティを検出します。 このデータを使用して、Azure AD Identity Protection でレポートとアラートを生成すると、ユーザーによる問題の評価と措置に役立ちます。|
+|組織の ID に関連する不審なアクションの検出と自動対応|特定のリスク レベルに到達すると自動的に検出された問題に対処するよう、リスクベースのポリシーを構成できます。 Azure AD および Microsoft Intune で提供されている他の条件付きアクセス コントロールにこれらのポリシーが加わると、その次のサインイン用のパスワードのリセットや Azure Multi-Factor Authentication を含め、自動的にアクセスをブロックしたり、修正処置を取ったりすることができます。 |
+| 不審なインシデントを調査し、管理操作によって解決する | セキュリティ インシデントに関する情報を使用して、リスク イベントを調査できます。調査の追跡と修復処理 (パスワードのリセットなど) の開始のための基本的なワークフローを利用できます。 |
+|||
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for your users to discover the applications they need and sign into them securely.
+[Azure AD Identity Protection の詳細情報](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)を参照してください。
 
-## Results of deployment of secure sign-ins
-
-After deployment of MFA, your users:
-
-- Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and are using MFA for all sign-ins.
-- Can use SSPR to reset their own passwords.
-
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
-
---> 
+[Azure AD Identity Protection を有効にする手順](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)を参照してください。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>MFA と安全なサインインのための管理技術リソース
 
@@ -144,3 +148,6 @@ After deployment of MFA, your users:
 - [Azure 多要素認証の登録ポリシーの構成](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [ID とデバイスのアクセス構成](microsoft-365-policies-configurations.md)
 
+## <a name="next-step"></a>次のステップ
+
+[ユーザー アカウントを管理する](manage-microsoft-365-accounts.md)
