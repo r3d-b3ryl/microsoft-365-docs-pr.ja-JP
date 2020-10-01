@@ -19,95 +19,149 @@ ms.collection:
 - SPO_Content
 description: 検出されたファイルに対して通知を設定する方法など、SharePoint、OneDrive、Teams の ATP を有効にする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c8c8d0f3caa3e717f8193a3c0d6b7bb1d40dab6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1cd345ae74b81c23f92b9e9b7d712efa8b875503
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201593"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326903"
 ---
-# <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="ab2d8-103">SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする</span><span class="sxs-lookup"><span data-stu-id="ab2d8-103">Turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
+# <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="262b7-103">SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする</span><span class="sxs-lookup"><span data-stu-id="262b7-103">Turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="262b7-104">Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsoft Teams は、悪意のあるファイルを誤って共有することから組織を保護します。</span><span class="sxs-lookup"><span data-stu-id="262b7-104">Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.</span></span> <span data-ttu-id="262b7-105">詳細については、「 [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-105">For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="ab2d8-104">この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="ab2d8-105">Outlook の安全なリンクに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-105">If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
+<span data-ttu-id="262b7-106">この記事には、SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にして構成するための手順が含まれています。</span><span class="sxs-lookup"><span data-stu-id="262b7-106">This article contains the steps for enabling and configuring ATP for SharePoint, OneDrive, and Microsoft Teams.</span></span>
 
-<span data-ttu-id="ab2d8-106">[Office 365 ATP For SharePoint、OneDrive、Microsoft Teams では](atp-for-spo-odb-and-teams.md) 、組織が悪意のあるファイルを誤って共有することを防止します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-106">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from inadvertently sharing malicious files.</span></span> <span data-ttu-id="ab2d8-107">悪意のあるファイルが検出されると、そのファイルはブロックされるようになり、組織のセキュリティチームによって追加の操作が行われるまで、そのファイルを開いたり、コピー、移動、または共有することができなくなります。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-107">When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team.</span></span> <span data-ttu-id="ab2d8-108">この記事では、SharePoint、OneDrive、Teams の ATP を有効にし、検出されたファイルについて通知する通知を設定し、次の手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-108">Read this article to turn on ATP for SharePoint, OneDrive, and Teams, set up alerts to be notified about detected files, and take your next steps.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="262b7-107">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="262b7-107">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="ab2d8-109">ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-109">To define (or edit) ATP policies, you must be assigned an appropriate role.</span></span> <span data-ttu-id="ab2d8-110">次の表では、いくつかの例について説明します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-110">Some examples are described in the following table:</span></span>
+- <span data-ttu-id="262b7-108"><https://protection.office.com> でセキュリティ/コンプライアンス センターを開きます。</span><span class="sxs-lookup"><span data-stu-id="262b7-108">You open the Security & Compliance Center at <https://protection.office.com>.</span></span> <span data-ttu-id="262b7-109">[ATP の安全な **添付ファイル** ] ページに直接移動するには、を開き <https://protection.office.com/safeattachmentv2> ます。</span><span class="sxs-lookup"><span data-stu-id="262b7-109">To go directly to the **ATP Safe Attachments** page, open <https://protection.office.com/safeattachmentv2>.</span></span>
 
-****
+- <span data-ttu-id="262b7-110">SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にするには、セキュリティ & コンプライアンスセンターの [ **組織の管理** ] または [ **セキュリティ管理者** ] の役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="262b7-110">To turn on ATP for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center.</span></span> <span data-ttu-id="262b7-111">詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-111">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-|<span data-ttu-id="ab2d8-111">役割</span><span class="sxs-lookup"><span data-stu-id="ab2d8-111">Role</span></span>|<span data-ttu-id="ab2d8-112">参照先/割り当て方法</span><span class="sxs-lookup"><span data-stu-id="ab2d8-112">Where/how assigned</span></span>|
-|---|---|
-|<span data-ttu-id="ab2d8-113">グローバル管理者</span><span class="sxs-lookup"><span data-stu-id="ab2d8-113">global administrator</span></span>|<span data-ttu-id="ab2d8-114">Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-114">The person who signs up to buy Microsoft 365 is a global admin by default.</span></span> <span data-ttu-id="ab2d8-115">(詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) てを参照してください)。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-115">(See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)</span></span>|
-|<span data-ttu-id="ab2d8-116">セキュリティ管理者</span><span class="sxs-lookup"><span data-stu-id="ab2d8-116">Security Administrator</span></span>|<span data-ttu-id="ab2d8-117">Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))</span><span class="sxs-lookup"><span data-stu-id="ab2d8-117">Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))</span></span>|
-|<span data-ttu-id="ab2d8-118">Exchange Online 組織の管理</span><span class="sxs-lookup"><span data-stu-id="ab2d8-118">Exchange Online Organization Management</span></span>|<span data-ttu-id="ab2d8-119">Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp))</span><span class="sxs-lookup"><span data-stu-id="ab2d8-119">Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp))</span></span> <br><span data-ttu-id="ab2d8-120">または</span><span class="sxs-lookup"><span data-stu-id="ab2d8-120">or</span></span> <br>  <span data-ttu-id="ab2d8-121">PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="ab2d8-121">PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))</span></span>|
-|
+- <span data-ttu-id="262b7-112">SharePoint Online の PowerShell を使用して、悪意のあるファイルがダウンロードされないようにするには、Azure AD の [全体管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) または [sharepoint 管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) ロールのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="262b7-112">To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or [SharePoint Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) roles in Azure AD.</span></span>
 
-## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="ab2d8-122">SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする</span><span class="sxs-lookup"><span data-stu-id="ab2d8-122">Turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
+- <span data-ttu-id="262b7-113">組織の監査ログが有効になっていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="262b7-113">Verify that audit logging is enabled for your organization.</span></span> <span data-ttu-id="262b7-114">詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="262b7-114">For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).</span></span>
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+- <span data-ttu-id="262b7-115">設定が有効になるまで最大30分間待ちます。</span><span class="sxs-lookup"><span data-stu-id="262b7-115">Allow up to 30 minutes for the settings to take effect.</span></span>
 
+## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="262b7-116">手順 1: セキュリティ & コンプライアンスセンターを使用して、SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする</span><span class="sxs-lookup"><span data-stu-id="262b7-116">Step 1: Use the Security & Compliance Center to turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
 
-<span data-ttu-id="ab2d8-123">**この手順を開始する前に、Microsoft 365 環境の監査ログが既に有効になっていることを確認して**ください。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-123">**Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**.</span></span> <span data-ttu-id="ab2d8-124">これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-124">This is typically done by someone who has the Audit Logs role assigned in Exchange Online.</span></span> <span data-ttu-id="ab2d8-125">詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-125">For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).</span></span>
+1. <span data-ttu-id="262b7-117">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動し、[ **グローバル設定**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262b7-117">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, and click **Global settings**.</span></span>
 
-1. <span data-ttu-id="ab2d8-126">に移動 <https://protection.office.com> し、職場または学校のアカウントでサインインします。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-126">Go to <https://protection.office.com>, and sign in with your work or school account.</span></span>
+2. <span data-ttu-id="262b7-118">[ **グローバル設定** ] が表示されたら、 **[SharePoint、OneDrive、MICROSOFT Teams の ATP を有効** にする] 設定に移動します。</span><span class="sxs-lookup"><span data-stu-id="262b7-118">In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting.</span></span> <span data-ttu-id="262b7-119">右にトグルをオンにして、 ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にします。</span><span class="sxs-lookup"><span data-stu-id="262b7-119">Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.</span></span>
 
-2. <span data-ttu-id="ab2d8-127">[セキュリティ & コンプライアンスセンター] の左側のナビゲーションウィンドウで、[ **脅威の管理**] の下にある [ **ポリシー**の \> **安全な添付ファイル**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-127">In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.</span></span>
+   <span data-ttu-id="262b7-120">完了したら、**[保存]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262b7-120">When you're finished, click **Save**.</span></span>
 
-   ![[セキュリティ & コンプライアンスセンター] で、[脅威管理ポリシー] を選択します。 \>](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+### <a name="use-exchange-online-powershell-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="262b7-121">Exchange Online の PowerShell を使用して、SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする</span><span class="sxs-lookup"><span data-stu-id="262b7-121">Use Exchange Online PowerShell to turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
 
-3. <span data-ttu-id="ab2d8-129">**[SharePoint、OneDrive、および Microsoft Teams に対して ATP を有効にする]** をオンにします。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-129">Select **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**.</span></span>
+<span data-ttu-id="262b7-122">PowerShell を使用して、SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする場合は、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) して次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="262b7-122">If you'd rather use PowerShell to turn on ATP for SharePoint, OneDrive, and Microsoft Teams, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:</span></span>
 
-   ![SharePoint Online、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にします。](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+```powershell
+Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
+```
 
-4. <span data-ttu-id="ab2d8-131">[**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-131">Click **Save**.</span></span>
+<span data-ttu-id="262b7-123">構文およびパラメーターの詳細については、「 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-123">For detailed syntax and parameter information, see [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).</span></span>
 
-5. <span data-ttu-id="ab2d8-132">組織の [安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md) と [安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認し、必要に応じて編集します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-132">Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).</span></span>
+## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a><span data-ttu-id="262b7-124">手順 2: (推奨) SharePoint Online PowerShell を使用して、ユーザーが悪意のあるファイルをダウンロードできないようにする</span><span class="sxs-lookup"><span data-stu-id="262b7-124">Step 2: (Recommended) Use SharePoint Online PowerShell to prevent users from downloading malicious files</span></span>
 
-6. <span data-ttu-id="ab2d8-133">勧めグローバル管理者または SharePoint Online 管理者として、 _DisallowInfectedFileDownload_パラメーターを*true*に設定して**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-133">(Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to *true*.</span></span>
+<span data-ttu-id="262b7-125">既定では、ユーザーは ATP によって検出された悪意のあるファイルを開く、移動、コピー、または共有することはできません。</span><span class="sxs-lookup"><span data-stu-id="262b7-125">By default, users can't open, move, copy, or share malicious files that are detected by ATP.</span></span> <span data-ttu-id="262b7-126">ただし、悪意のあるファイルを削除してダウンロードすることはできます。</span><span class="sxs-lookup"><span data-stu-id="262b7-126">However, they can delete and download malicious files.</span></span>
 
-   - <span data-ttu-id="ab2d8-134">このパラメーターを *true* に設定すると、検出されたファイルのすべてのアクション (削除を除く) がブロックされます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-134">Setting the parameter to *true* blocks all actions (except Delete) for detected files.</span></span> <span data-ttu-id="ab2d8-135">ユーザーは、検出されたファイルを開いたり、移動、コピー、または共有したりできません。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-135">People cannot open, move, copy, or share detected files.</span></span>
+<span data-ttu-id="262b7-127">ユーザーが悪意のあるファイルをダウンロードできないようにするには、 [SharePoint Online PowerShell に接続](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) し、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="262b7-127">To prevent users from downloading malicious files, [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and run the following command:</span></span>
 
-   - <span data-ttu-id="ab2d8-136">パラメーターを *false* に設定すると、削除とダウンロード以外のすべてのアクションがブロックされます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-136">Setting the parameter to *false* blocks all actions except Delete and Download.</span></span> <span data-ttu-id="ab2d8-137">ユーザーは、リスクを容認し、検出されたファイルをダウンロードすることを選択できます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-137">People can choose to accept the risk and download a detected file.</span></span>
+```powershell
+Set-SPOTenant -DisallowInfectedFileDownload $true
+```
 
-7. <span data-ttu-id="ab2d8-138">変更がすべての Microsoft 365 データセンターに蔓延するまで最大30分かかります。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-138">Allow up to 30 minutes for your changes to spread to all Microsoft 365 datacenters.</span></span>
+<span data-ttu-id="262b7-128">**注**:</span><span class="sxs-lookup"><span data-stu-id="262b7-128">**Notes**:</span></span>
 
-8. <span data-ttu-id="ab2d8-139">勧め検出されたファイルの通知の設定に進みます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-139">(Recommended) Proceed to set up alerts for detected files.</span></span>
+- <span data-ttu-id="262b7-129">この設定は、ユーザーと管理者の両方に影響します。</span><span class="sxs-lookup"><span data-stu-id="262b7-129">This setting affects both users and admins.</span></span>
+- <span data-ttu-id="262b7-130">ユーザーは悪意のあるファイルを削除できます。</span><span class="sxs-lookup"><span data-stu-id="262b7-130">People can still delete malicious files.</span></span>
 
-<span data-ttu-id="ab2d8-140">Microsoft 365 での PowerShell の使用の詳細については、「 [Manage microsoft 365 With powershell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-140">To learn more about using PowerShell with Microsoft 365, see [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).</span></span>
+<span data-ttu-id="262b7-131">構文およびパラメーターの詳細については、「 [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-131">For detailed syntax and parameter information, see [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).</span></span>
 
-<span data-ttu-id="ab2d8-141">ファイルが悪意のあるものとして検出された場合のユーザーの操作の詳細については、「 [SharePoint Online、OneDrive、または Microsoft Teams で悪意のあるファイルが検出された場合の対処](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)方法」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-141">To learn more about the user experience when a file has been detected as malicious, see [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).</span></span>
+## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a><span data-ttu-id="262b7-132">手順 3 (推奨) セキュリティ & コンプライアンスセンターを使用して、検出されたファイルの通知ポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="262b7-132">Step 3 (Recommended) Use the Security & Compliance Center to create an alert policy for detected files</span></span>
 
-## <a name="set-up-alerts-for-detected-files"></a><span data-ttu-id="ab2d8-142">検出されたファイルの通知を設定する</span><span class="sxs-lookup"><span data-stu-id="ab2d8-142">Set up alerts for detected files</span></span>
+<span data-ttu-id="262b7-133">SharePoint、OneDrive、Microsoft Teams 用の ATP が悪意のあるファイルを検出したときに通知する通知ポリシーを作成できます。</span><span class="sxs-lookup"><span data-stu-id="262b7-133">You can create an alert policy that notifies you and other admins when ATP for SharePoint, OneDrive, and Microsoft Teams detects a malicious file.</span></span> <span data-ttu-id="262b7-134">通知の詳細については、「 [セキュリティ & コンプライアンスセンターでアクティビティ警告を作成](../../compliance/create-activity-alerts.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-134">To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).</span></span>
 
-<span data-ttu-id="ab2d8-143">SharePoint Online、OneDrive for Business、または Microsoft Teams のファイルが悪意のあるものとして識別された場合に通知を受け取るには、警告を設定します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-143">To receive notification when a file in SharePoint Online, OneDrive for Business, or Microsoft Teams has been identified as malicious, you can set up an alert.</span></span>
+1. <span data-ttu-id="262b7-135">[ [セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[ **alerts** \> **Alert policies** ] または [open] に移動し <https://protection.office.com/alertpolicies> ます。</span><span class="sxs-lookup"><span data-stu-id="262b7-135">In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.</span></span>
 
-1. <span data-ttu-id="ab2d8-144">[[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、 **[通知の**管理] を選択し \> **Manage alerts**ます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-144">In the [Security & Compliance Center](https://protection.office.com), choose **Alerts** \> **Manage alerts**.</span></span>
+2. <span data-ttu-id="262b7-136">[ **通知ポリシー** ] ページで、[ **新しいアラートポリシー**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262b7-136">On the **Alert policies** page, click **New alert policy**.</span></span>
 
-2. <span data-ttu-id="ab2d8-145">[ **新しい通知ポリシー**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-145">Choose **New alert policy**.</span></span>
+3. <span data-ttu-id="262b7-137">**新しい通知ポリシー**ウィザードがフライアウトで開きます。[**通知の名前**を指定してください] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="262b7-137">The **New alert policy** wizard opens in a fly out. On the **Name your alert** page, configure the following settings:</span></span>
 
-3. <span data-ttu-id="ab2d8-146">通知の名前を指定します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-146">Specify a name for the alert.</span></span> <span data-ttu-id="ab2d8-147">たとえば、ライブラリに悪意のあるファイルを入力することができます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-147">For example, you could type Malicious Files in Libraries.</span></span>
+   - <span data-ttu-id="262b7-138">[**名前**]: わかりやすい一意の名前を入力します。</span><span class="sxs-lookup"><span data-stu-id="262b7-138">**Name**: Type a unique and descriptive name.</span></span> <span data-ttu-id="262b7-139">たとえば、ライブラリ内の悪意のあるファイル。</span><span class="sxs-lookup"><span data-stu-id="262b7-139">For example, Malicious Files in Libraries.</span></span>
+   - <span data-ttu-id="262b7-140">**説明**: 省略可能な説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="262b7-140">**Description**: Type an optional description.</span></span> <span data-ttu-id="262b7-141">たとえば、SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出されたときに管理者に通知します。</span><span class="sxs-lookup"><span data-stu-id="262b7-141">For example, Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams.</span></span>
+   - <span data-ttu-id="262b7-142">**重要度**: 既定値の [ **低** ] を選択したままにするか、[ **中** ] または [ **高**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="262b7-142">**Severity**: Leave the default value **Low** selected, or select **Medium** or **High**.</span></span>
+   - <span data-ttu-id="262b7-143">**カテゴリを選択**します。 [ **脅威管理**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="262b7-143">**Select a category**: Select **Threat management**.</span></span>
 
-4. <span data-ttu-id="ab2d8-148">通知の説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-148">Type a description for the alert.</span></span> <span data-ttu-id="ab2d8-149">たとえば、SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出されたときに管理者に通知を入力できます。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-149">For example, you could type Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams.</span></span>
+   <span data-ttu-id="262b7-144">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262b7-144">When you're finished, click **Next**.</span></span>
 
-5. <span data-ttu-id="ab2d8-150">[ **この通知を送信するタイミング** ] セクションで、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-150">In the **Send this alert when...** section, do the following:</span></span>
+4. <span data-ttu-id="262b7-145">[ **通知設定の作成** ] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="262b7-145">On the **Create alert settings** page, configure the following settings:</span></span>
 
-   <span data-ttu-id="ab2d8-151">a.</span><span class="sxs-lookup"><span data-stu-id="ab2d8-151">a.</span></span> <span data-ttu-id="ab2d8-152">[ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-152">In the **Activities** list, choose **Detected malware in file**.</span></span>
+   - <span data-ttu-id="262b7-146">通知対象を選択してください。**アクティビティは**次のとおりです。 [**ファイルに検出されたマルウェア**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="262b7-146">**What do you want to alert on?: Activity is**: Select **Detected malware in file**.</span></span>
+   - <span data-ttu-id="262b7-147">**通知をどのようにトリガーしますか?**: アクティビティが選択した **ルールと一致** するたびに、既定値をそのまま使用します。</span><span class="sxs-lookup"><span data-stu-id="262b7-147">**How do you want the alert to be triggered?**: Leave the default value **Every time an activity matches the rule** selected.</span></span>
 
-   <span data-ttu-id="ab2d8-153">b.</span><span class="sxs-lookup"><span data-stu-id="ab2d8-153">b.</span></span> <span data-ttu-id="ab2d8-154">[ **ユーザー** ] フィールドは空のままにします。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-154">Leave the **Users** field empty.</span></span>
+   <span data-ttu-id="262b7-148">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262b7-148">When you're finished, click **Next**.</span></span>
 
-6. <span data-ttu-id="ab2d8-155">[ **この通知を送信する** ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-155">In the **Send this alert to...** section, select one or more global administrators, security administrators, or security readers who should receive notification when a malicious file is detected.</span></span>
+5. <span data-ttu-id="262b7-149">[ **受信者の設定** ] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="262b7-149">On the **Set your recipients** page, configure the following settings:</span></span>
 
-7. <span data-ttu-id="ab2d8-156">[**保存**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-156">Click **Save**.</span></span>
+   - <span data-ttu-id="262b7-150">**電子メール通知の送信**: この設定が選択されていることを確認します。</span><span class="sxs-lookup"><span data-stu-id="262b7-150">**Send email notifications**: Verify this setting is selected.</span></span> <span data-ttu-id="262b7-151">[ **電子メールの宛先** ] ボックスで、悪意のあるファイルが検出されたときに通知を受信する必要がある1人以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。</span><span class="sxs-lookup"><span data-stu-id="262b7-151">In the **Email recipients** box, select one or more global administrators, security administrators, or security readers who should receive notification when a malicious file is detected.</span></span>
+   - <span data-ttu-id="262b7-152">[**毎日の通知制限数**: 既定値のままにします。 (**制限なし**)。</span><span class="sxs-lookup"><span data-stu-id="262b7-152">**Daily notification limit**: Leave the default value **No limit** selected.</span></span>
 
-<span data-ttu-id="ab2d8-157">通知の詳細については、「 [セキュリティ & コンプライアンスセンターでアクティビティ警告を作成](../../compliance/create-activity-alerts.md)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="ab2d8-157">To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).</span></span>
+   <span data-ttu-id="262b7-153">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262b7-153">When you're finished, click **Next**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="ab2d8-158">次の手順</span><span class="sxs-lookup"><span data-stu-id="ab2d8-158">Next steps</span></span>
+6. <span data-ttu-id="262b7-154">[ **設定の確認** ] ページで設定を確認し、いずれかのセクションの [ **編集** ] をクリックして変更を加えます。</span><span class="sxs-lookup"><span data-stu-id="262b7-154">On the **Review your settings** page, review the settings, and click **Edit** in any of the sections to make changes.</span></span>
 
-1. [<span data-ttu-id="ab2d8-159">SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する</span><span class="sxs-lookup"><span data-stu-id="ab2d8-159">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>](malicious-files-detected-in-spo-odb-or-teams.md)
+   <span data-ttu-id="262b7-155">[ポリシーをすぐ **に有効** にしますか?] セクションで、既定値の **[はい] を** 選択し、[すぐにオン] を選択します。</span><span class="sxs-lookup"><span data-stu-id="262b7-155">In the **Do you want to turn the policy on right away?** section, leave the default value **Yes, turn it on right away** selected.</span></span>
 
-2. [<span data-ttu-id="ab2d8-160">Microsoft 365 で管理者として検疫済みメッセージおよびファイルを管理する</span><span class="sxs-lookup"><span data-stu-id="ab2d8-160">Manage quarantined messages and files as an administrator in Microsoft 365</span></span>](manage-quarantined-messages-and-files.md)
+   <span data-ttu-id="262b7-156">完了したら、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="262b7-156">When you're finished, click **Finish**.</span></span>
+
+### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a><span data-ttu-id="262b7-157">セキュリティ & コンプライアンス PowerShell を使用して、検出されたファイルの通知ポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="262b7-157">Use Security & Compliance PowerShell to create an alert policy for detected files</span></span>
+
+<span data-ttu-id="262b7-158">PowerShell を使用して、前のセクションで説明したのと同じアラートポリシーを作成する場合は、「 [Security & コンプライアンスセンター PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) し、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="262b7-158">If you'd rather use PowerShell to create the same alert policy as described in the previous section, [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and run the following command:</span></span>
+
+```powershell
+New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
+```
+
+<span data-ttu-id="262b7-159">**注**: 既定の _重要度_ の値は低くなっています。</span><span class="sxs-lookup"><span data-stu-id="262b7-159">**Note**: The default _Severity_ value is Low.</span></span> <span data-ttu-id="262b7-160">中または高を指定するには、コマンドに _Severity_ パラメーターと値を含めます。</span><span class="sxs-lookup"><span data-stu-id="262b7-160">To specify Medium or High, include the _Severity_ parameter and value in the command.</span></span>
+
+<span data-ttu-id="262b7-161">構文およびパラメーターの詳細については、「 [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-161">For detailed syntax and parameter information, see [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).</span></span>
+
+### <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="262b7-162">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="262b7-162">How do you know these procedures worked?</span></span>
+
+- <span data-ttu-id="262b7-163">SharePoint、OneDrive、Microsoft Teams の ATP が正常に有効化されたことを確認するには、次のいずれかの手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="262b7-163">To verify that you've successfully turned on ATP for SharePoint, OneDrive, and Microsoft Teams, use either of the following steps:</span></span>
+
+  - <span data-ttu-id="262b7-164">[セキュリティ & コンプライアンスセンター](https://protection.office.com)で、[脅威の**管理** \> **ポリシー]** \> ATP の [安全な**添付ファイル**] に移動し、[**グローバル設定**] を選択して、 **[SharePoint、OneDrive、および Microsoft Teams の**設定] の設定値を確認します。</span><span class="sxs-lookup"><span data-stu-id="262b7-164">In the [Security & Compliance Center](https://protection.office.com), go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, select **Global settings**, and verify the value of the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting.</span></span>
+
+  - <span data-ttu-id="262b7-165">Exchange Online PowerShell で次のコマンドを実行して、プロパティの設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="262b7-165">In Exchange Online PowerShell, run the following command to verify the property setting:</span></span>
+
+    ```powershell
+    Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
+    ```
+
+    <span data-ttu-id="262b7-166">構文およびパラメーターの詳細については、「 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-166">For detailed syntax and parameter information, see [Get-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365).</span></span>
+
+- <span data-ttu-id="262b7-167">ユーザーが悪意のあるファイルをダウンロードできないようにしたことを確認するには、SharePoint Online PowerShell を開き、次のコマンドを実行してプロパティの値を確認します。</span><span class="sxs-lookup"><span data-stu-id="262b7-167">To verify that you've successfully blocked people from downloading malicious files, open SharePoint Online PowerShell, and run the following command to verify the property value:</span></span>
+
+  ```powershell
+  Get-SPOTenant | Format-List DisallowInfectedFileDownload
+  ```
+
+  <span data-ttu-id="262b7-168">構文およびパラメーターの詳細については、「 [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-168">For detailed syntax and parameter information, see [Get-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).</span></span>
+
+- <span data-ttu-id="262b7-169">検出されたファイルのアラートポリシーが正常に構成されたことを確認するには、次のいずれかの手順を使用します。</span><span class="sxs-lookup"><span data-stu-id="262b7-169">To verify that you've successfully configured an alert policy for detected files, use any of the following steps:</span></span>
+
+  - <span data-ttu-id="262b7-170">セキュリティ & コンプライアンスセンターで、[アラートの**アラート**ポリシー] に移動して \> **Alert policies** \> 通知ポリシーを選択し、設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="262b7-170">In the Security & Compliance Center, go to **Alerts** \> **Alert policies** \> select the alert policy, and verify the settings.</span></span>
+
+  - <span data-ttu-id="262b7-171">セキュリティ & コンプライアンスセンターの PowerShell で、を \<AlertPolicyName\> アラートポリシーの名前に置き換え、次のコマンドを実行して、プロパティの値を確認します。</span><span class="sxs-lookup"><span data-stu-id="262b7-171">In Security & Compliance Center PowerShell, replace \<AlertPolicyName\> with the name of the alert policy, run the following command, and verify the property values:</span></span>
+
+    ```powershell
+    Get-ActivityAlert -Identity "<AlertPolicyName>"
+    ```
+
+    <span data-ttu-id="262b7-172">構文およびパラメーターの詳細については、「 [取得-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="262b7-172">For detailed syntax and parameter information, see [Get-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert).</span></span>
+
+- <span data-ttu-id="262b7-173">[脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)を使用して、SharePoint、OneDrive、Microsoft Teams の検出されたファイルに関する情報を表示します。</span><span class="sxs-lookup"><span data-stu-id="262b7-173">Use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to view information about detected files in SharePoint, OneDrive, and Microsoft Teams.</span></span> <span data-ttu-id="262b7-174">具体的には、[ **データの表示方法: コンテンツ \> マルウェア** ] ビューを使用できます。</span><span class="sxs-lookup"><span data-stu-id="262b7-174">Specifically, you can use the **View data by: Content \> Malware** view.</span></span>

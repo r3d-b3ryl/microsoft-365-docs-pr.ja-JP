@@ -1,13 +1,12 @@
 ---
-title: Office 365 の ATP の安全な添付ファイルのポリシーを設定する
+title: Office 365 の ATP で安全な添付ファイルポリシーを設定する
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/06/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,101 +17,431 @@ ms.collection:
 - M365-security-compliance
 description: 電子メールで悪意のあるファイルから組織を保護する安全な添付ファイルポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f9f1a6cc250fdd336e48c19c6cb5d73e9a05800
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e50e5e961e1a45b0b6535995727029222539ff03
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197225"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326963"
 ---
-# <a name="set-up-office-365-atp-safe-attachments-policies"></a><span data-ttu-id="f7ea9-103">Office 365 の ATP の安全な添付ファイルのポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-103">Set up Office 365 ATP Safe Attachments policies</span></span>
+# <a name="set-up-safe-attachments-policies-in-office-365-atp"></a><span data-ttu-id="0f49b-103">Office 365 の ATP で安全な添付ファイルポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="0f49b-103">Set up Safe Attachments policies in Office 365 ATP</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
-> <span data-ttu-id="f7ea9-104">この記事は、[Office 365 Advanced Threat Protection](office-365-atp.md) をご利用の法人のお客様を対象としています。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="f7ea9-105">Outlook での安全な添付ファイルに関する情報をお探しのホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-105">If you are a home user looking for information about Safe Attachments in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
+> <span data-ttu-id="0f49b-104">この記事は、 [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md)を使用しているビジネスお客様を対象としています。</span><span class="sxs-lookup"><span data-stu-id="0f49b-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md).</span></span> <span data-ttu-id="0f49b-105">Outlook で添付ファイルのスキャンに関する情報を探しているホームユーザーの場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-105">If you're a home user looking for information about attachment scanning in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
 
-<span data-ttu-id="f7ea9-106">ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを日常的に送信、受信、共有します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-106">People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more.</span></span> <span data-ttu-id="f7ea9-107">電子メールメッセージを見るだけで、添付ファイルが安全か悪意かを知ることは常に容易ではありません。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-107">It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message.</span></span> <span data-ttu-id="f7ea9-108">最後に必要なのは、組織にとって wreaking 危害を受ける、悪意のある添付ファイルです。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-108">And the last thing you want is a malicious attachment to get through, wreaking havoc for your organization.</span></span> <span data-ttu-id="f7ea9-109">さいわい、 [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) は役立ちます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-109">Fortunately, [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) can help.</span></span> <span data-ttu-id="f7ea9-110">組織が安全でない電子メールの添付ファイルによる攻撃から保護されるようにするために、 [ATP の安全な添付ファイル](atp-safe-attachments.md) ポリシーを設定できます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-110">You can set up [ATP Safe Attachments](atp-safe-attachments.md) policies to help ensure that your organization is protected against attacks by unsafe email attachments.</span></span>
+<span data-ttu-id="0f49b-106">「安全な添付ファイル」は、 [Exchange Online protection (EOP) でマルウェア対策保護](anti-malware-protection.md)によってスキャンされた後、受信者に配信される前に、仮想環境を使用して受信電子メールメッセージの添付ファイルをチェックする、 [Office 365 Advanced THREAT Protection (ATP)](office-365-atp.md)の機能です。</span><span class="sxs-lookup"><span data-stu-id="0f49b-106">Safe Attachments is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that uses a virtual environment to check attachments in inbound email messages after they've been scanned by [anti-malware protection in Exchange Online Protection (EOP)](anti-malware-protection.md), but before delivery to recipients.</span></span> <span data-ttu-id="0f49b-107">詳細については、「 [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-107">For more information, see [Safe Attachments in Office 365 ATP](atp-safe-attachments.md).</span></span>
 
-## <a name="what-to-do"></a><span data-ttu-id="f7ea9-111">操作</span><span class="sxs-lookup"><span data-stu-id="f7ea9-111">What to do</span></span>
+<span data-ttu-id="0f49b-108">組み込みまたは既定の安全な添付ファイルポリシーはありません。</span><span class="sxs-lookup"><span data-stu-id="0f49b-108">There's no built-in or default Safe Attachments policy.</span></span> <span data-ttu-id="0f49b-109">電子メールメッセージの添付ファイルの安全な添付ファイルのスキャンを取得するには、この記事で説明されているように、1つ以上の安全な添付ファイルポリシーを作成する必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f49b-109">To get Safe Attachments scanning of email message attachments, you need to create one or more Safe Attachments policies as described in this article.</span></span>
 
-1. <span data-ttu-id="f7ea9-112">前提条件を確認する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-112">Review the prerequisites</span></span>
+<span data-ttu-id="0f49b-110">セキュリティで保護された添付ファイルのポリシーを構成するには、セキュリティ & コンプライアンスセンターまたは PowerShell (exchange online にメールボックスを持つ対象の Microsoft 365 組織用の Exchange Online PowerShell、exchange Online メールボックスを持たない組織の場合はスタンドアロンの EOP PowerShell、および Office 365 ATP アドオンサブスクリプション) を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-110">You can configure Safe Attachments policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Office 365 ATP add-on subscriptions).</span></span>
 
-2. <span data-ttu-id="f7ea9-113">ATP の安全な添付ファイルポリシーを設定する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-113">Set up an ATP Safe Attachments policy</span></span>
+<span data-ttu-id="0f49b-111">安全添付ファイルポリシーの基本的な要素は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="0f49b-111">The basic elements of a Safe Attachments policy are:</span></span>
 
-3. <span data-ttu-id="f7ea9-114">ATP の安全な添付ファイルポリシーのオプションについて</span><span class="sxs-lookup"><span data-stu-id="f7ea9-114">Learn about ATP Safe Attachments policy options</span></span>
+- <span data-ttu-id="0f49b-112">**安全添付ファイルポリシー**: 不明なマルウェアの検出のアクション、マルウェアの添付ファイル付きのメッセージを指定された電子メールアドレスに送信するかどうか、および安全な添付ファイルのスキャンを完了できない場合にメッセージを配信するかどうかを指定します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-112">**The safe attachment policy**: Specifies the actions for unknown malware detections, whether to send messages with malware attachments to a specified email address, and whether to deliver messages if Safe Attachments scanning can't complete.</span></span>
+- <span data-ttu-id="0f49b-113">**安全な添付ファイルルール**: 優先順位と受信者フィルター (ポリシーが適用されるユーザー) を指定します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-113">**The safe attachment rule**: Specifies the priority and recipient filters (who the policy applies to).</span></span>
 
-## <a name="step-1-review-the-prerequisites"></a><span data-ttu-id="f7ea9-115">手順 1: 前提条件を確認する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-115">Step 1: Review the prerequisites</span></span>
+<span data-ttu-id="0f49b-114">セキュリティ & コンプライアンスセンターで安全な添付ファイルポリシーを管理する場合、この2つの要素の違いは明白ではありません。</span><span class="sxs-lookup"><span data-stu-id="0f49b-114">The difference between these two elements isn't obvious when you manage Safe Attachments polices in the Security & Compliance Center:</span></span>
 
-- <span data-ttu-id="f7ea9-116">組織に [Office 365 Advanced Threat Protection](office-365-atp.md)があることを確認します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-116">Make sure that your organization has [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span>
+- <span data-ttu-id="0f49b-115">安全添付ファイルポリシーを作成する場合、実際には、両方に同じ名前を使用して、安全な添付ファイルルールと関連する安全添付ファイルポリシーを同時に作成しています。</span><span class="sxs-lookup"><span data-stu-id="0f49b-115">When you create a Safe Attachments policy, you're actually creating a safe attachment rule and the associated safe attachment policy at the same time using the same name for both.</span></span>
+- <span data-ttu-id="0f49b-116">安全添付ファイルポリシーを変更する場合、名前、優先度、有効または無効に関連する設定、および受信者フィルターは、安全な添付ファイルルールを変更します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-116">When you modify a Safe Attachments policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe attachment rule.</span></span> <span data-ttu-id="0f49b-117">他のすべての設定は、関連する安全添付ファイルポリシーを変更します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-117">All other settings modify the associated safe attachment policy.</span></span>
+- <span data-ttu-id="0f49b-118">安全添付ファイルポリシーを削除すると、安全な添付ファイルルールと、それに関連付けられた安全添付ファイルポリシーが削除されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-118">When you remove a Safe Attachments policy, the safe attachment rule and the associated safe attachment policy are removed.</span></span>
 
-- <span data-ttu-id="f7ea9-117">必要なアクセス許可を持っていることを確認してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-117">Make sure that you have the necessary permissions.</span></span> <span data-ttu-id="f7ea9-118">ATP ポリシーを定義 (または編集) するには、Exchange Online 組織の管理役割 (既定では、グローバル管理者がこの役割に割り当てられます) または Exchange Online の検疫管理およびセキュリティ管理者の役割のいずれかが割り当てられている必要があります。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-118">To define (or edit) ATP policies, you must be assigned either an Exchange Online Organization Management role (global administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles.</span></span> <span data-ttu-id="f7ea9-119">詳細については、次の表を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-119">For more details, see the following table:</span></span>
+<span data-ttu-id="0f49b-119">Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-119">In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately.</span></span> <span data-ttu-id="0f49b-120">詳細については、この記事で後述 [する「Exchange Online の powershell またはスタンドアロンの EOP powershell を使用して安全な添付ファイルポリシーを構成する](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) 」セクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-120">For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) section later in this article.</span></span>
 
-  ****
+> [!NOTE]
+> <span data-ttu-id="0f49b-121">[安全な添付ファイル] 設定の [グローバル設定] 領域では、安全な添付ファイルポリシーに依存しない機能を構成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-121">In the global settings area of Safe Attachments settings, you configure features that are not dependent on Safe Attachments policies.</span></span> <span data-ttu-id="0f49b-122">手順については、「 [microsoft 365 E5](safe-docs.md)の「 [SharePoint、OneDrive、Microsoft Teams および安全なドキュメントの ATP を有効にする](turn-on-atp-for-spo-odb-and-teams.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-122">For instructions see [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md) and [Safe Documents in Microsoft 365 E5](safe-docs.md).</span></span>
 
-  |<span data-ttu-id="f7ea9-120">役割</span><span class="sxs-lookup"><span data-stu-id="f7ea9-120">Role</span></span>|<span data-ttu-id="f7ea9-121">参照先/割り当て方法</span><span class="sxs-lookup"><span data-stu-id="f7ea9-121">Where/how assigned</span></span>|
-  |---|---|
-  |<span data-ttu-id="f7ea9-122">グローバル管理者</span><span class="sxs-lookup"><span data-stu-id="f7ea9-122">global administrator</span></span> |<span data-ttu-id="f7ea9-123">Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-123">The person who signs up to buy Microsoft 365 is a global admin by default.</span></span> <span data-ttu-id="f7ea9-124">(詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) てを参照してください)。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-124">(See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)</span></span>|
-  |<span data-ttu-id="f7ea9-125">セキュリティ管理者</span><span class="sxs-lookup"><span data-stu-id="f7ea9-125">Security Administrator</span></span> |<span data-ttu-id="f7ea9-126">Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))</span><span class="sxs-lookup"><span data-stu-id="f7ea9-126">Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))</span></span>|
-  |<span data-ttu-id="f7ea9-127">Exchange Online 組織の管理、Exchange Online の検疫管理</span><span class="sxs-lookup"><span data-stu-id="f7ea9-127">Exchange Online Organization Management, Exchange Online Hygiene Management</span></span> |<span data-ttu-id="f7ea9-128">Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp))</span><span class="sxs-lookup"><span data-stu-id="f7ea9-128">Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp))</span></span> <br><span data-ttu-id="f7ea9-129">または</span><span class="sxs-lookup"><span data-stu-id="f7ea9-129">or</span></span> <br>  <span data-ttu-id="f7ea9-130">PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)</span><span class="sxs-lookup"><span data-stu-id="f7ea9-130">PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))</span></span>|
-  |
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="0f49b-123">はじめに把握しておくべき情報</span><span class="sxs-lookup"><span data-stu-id="0f49b-123">What do you need to know before you begin?</span></span>
 
-  <span data-ttu-id="f7ea9-131">役割とアクセス許可の詳細については、「 [セキュリティ/ &amp; コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-131">To learn more about roles and permissions, see [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="0f49b-124"><https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-124">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="0f49b-125">[ATP の安全な **添付ファイル** ] ページに直接移動するには、を使用 <https://protection.office.com/safeattachmentv2> します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-125">To go directly to the **ATP Safe Attachments** page, use <https://protection.office.com/safeattachmentv2>.</span></span>
 
-- <span data-ttu-id="f7ea9-132">[ATP の安全な添付ファイルのポリシーオプション (この記事) について説明](#step-3-learn-about-atp-safe-attachments-policy-options) します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-132">[Learn about ATP Safe Attachments policy options](#step-3-learn-about-atp-safe-attachments-policy-options) (in this article).</span></span> <span data-ttu-id="f7ea9-133">モニターまたは置換オプションなどの一部のオプションでは、添付ファイルがスキャンされている間、電子メールの多少の遅延が生じることがあります。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-133">Some options, such as the Monitor or Replace options, can result in a minor delay of email while attachments are scanned.</span></span> <span data-ttu-id="f7ea9-134">メッセージの遅延を回避するには、 [動的配信とプレビュー](dynamic-delivery-and-previewing.md)を使用することを検討してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-134">To avoid message delays, consider using [Dynamic Delivery and previewing](dynamic-delivery-and-previewing.md).</span></span>
+- <span data-ttu-id="0f49b-126">Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-126">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="0f49b-127">スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-127">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
-- <span data-ttu-id="f7ea9-135">新規または更新されたポリシーがすべての Microsoft 365 データセンターに蔓延するまで最大30分かかります。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-135">Allow up to 30 minutes for your new or updated policy to spread to all Microsoft 365 datacenters.</span></span>
+- <span data-ttu-id="0f49b-128">安全な添付ファイルポリシーを表示、作成、変更、削除するには、次のいずれかの役割グループのメンバーである必要があります。</span><span class="sxs-lookup"><span data-stu-id="0f49b-128">To view, create, modify, and delete Safe Attachments policies, you need to be a member of one of the following role groups:</span></span>
 
-## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a><span data-ttu-id="f7ea9-136">手順 2: ATP の安全な添付ファイルポリシーを設定 (または編集) する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-136">Step 2: Set up (or edit) an ATP Safe Attachments policy</span></span>
+  - <span data-ttu-id="0f49b-129">**組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。</span><span class="sxs-lookup"><span data-stu-id="0f49b-129">**Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+  - <span data-ttu-id="0f49b-130">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)での**組織の管理**。</span><span class="sxs-lookup"><span data-stu-id="0f49b-130">**Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
 
-1. <span data-ttu-id="f7ea9-137">[https://protection.office.com](https://protection.office.com) に移動し、職場または学校のアカウントでサインインします。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-137">Go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account.</span></span>
+- <span data-ttu-id="0f49b-131">「安全な添付ファイル」ポリシーの推奨設定については、「安全な添付 [ファイルの設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-131">For our recommended settings for Safe Attachments policies, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).</span></span>
 
-2. <span data-ttu-id="f7ea9-138">セキュリティ &amp; /コンプライアンスセンターの左側のナビゲーションウィンドウで、[ **脅威の管理**] の下にある [ **ポリシー**の \> **安全な添付ファイル**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-138">In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.</span></span>
+- <span data-ttu-id="0f49b-132">新規または更新されたポリシーが適用されるまで最大30分かかります。</span><span class="sxs-lookup"><span data-stu-id="0f49b-132">Allow up to 30 minutes for a new or updated policy to be applied.</span></span>
 
-3. <span data-ttu-id="f7ea9-139">**[SharePoint、OneDrive、Microsoft Teams に対して ATP を有効**にする] が表示されている場合は、このオプションを選択することをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-139">If you see **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**, we recommend that you select this option.</span></span> <span data-ttu-id="f7ea9-140">これにより、Microsoft 365 環境の [SharePoint、OneDrive、Microsoft Teams で Office 365 Advanced Threat Protection](atp-for-spo-odb-and-teams.md) が有効になります。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-140">This will enable [Office 365 Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) for your Microsoft 365 environment.</span></span>
+## <a name="use-the-security--compliance-center-to-create-safe-attachments-policies"></a><span data-ttu-id="0f49b-133">セキュリティ & コンプライアンスセンターを使用して安全添付ファイルポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="0f49b-133">Use the Security & Compliance Center to create Safe Attachments policies</span></span>
 
-4. <span data-ttu-id="f7ea9-141">[ **新規** ] を選択します (新しいボタンはプラス記号 () に似て **+** います)。ポリシーの作成を開始します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-141">Choose **New** (the New button resembles a plus sign ( **+**)) to start creating your policy.</span></span>
+<span data-ttu-id="0f49b-134">セキュリティ & コンプライアンスセンターでのカスタムの安全な添付ファイルポリシーの作成両方の同じ名前を使用して、安全な添付ファイルルールと関連する安全添付ファイルポリシーを同時に作成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-134">Creating a custom Safe Attachments policy in the Security & Compliance Center creates the safe attachment rule and the associated safe attachment policy at the same time using the same name for both.</span></span>
 
-5. <span data-ttu-id="f7ea9-142">ポリシーの名前、説明、および設定を指定します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-142">Specify the name, description, and settings for the policy.</span></span><br/><br/><span data-ttu-id="f7ea9-143">**例:** すべてのユーザーのメッセージを直ちに配信する "遅延なし" というポリシーを設定し、スキャン後に添付ファイルを再び添付するには、次の設定を指定できます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-143">**Example:** To set up a policy called "no delays" that delivers everyone's messages immediately and then reattaches attachments after they're scanned, you might specify the following settings:</span></span>
+1. <span data-ttu-id="0f49b-135">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-135">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.</span></span>
 
-   - <span data-ttu-id="f7ea9-144">[ **名前** ] ボックスに、「遅延」と入力します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-144">In the **Name** box, type no delays.</span></span>
+2. <span data-ttu-id="0f49b-136">[ **安全な添付ファイル** ] ページで、[ **作成**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-136">On the **Safe Attachments** page, click **Create**.</span></span>
 
-   - <span data-ttu-id="f7ea9-145">[ **説明** ] ボックスに、次のような説明を入力します。スキャン後にメッセージを直ちに送信して、添付ファイルを再度添付します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-145">In the **Description** box, type a description like, Delivers messages immediately and reattaches attachments after scanning.</span></span>
+3. <span data-ttu-id="0f49b-137">[ **安全な添付ファイルポリシーの新規作成** ] ウィザードが開きます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-137">The **New Safe Attachments policy** wizard opens.</span></span> <span data-ttu-id="0f49b-138">[ **ポリシーに名前** をつける] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-138">On the **Name your policy** page, configure the following settings:</span></span>
 
-   - <span data-ttu-id="f7ea9-146">[応答] セクションで、[ **動的配信** ] オプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-146">In the response section, choose the **Dynamic Delivery** option.</span></span> <span data-ttu-id="f7ea9-147">([動的配信と、ATP の安全な添付ファイルを使用したプレビューの詳細について説明](dynamic-delivery-and-previewing.md)します)。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-147">([Learn more about Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).)</span></span>
+   - <span data-ttu-id="0f49b-139">**[名前]**: わかりやすい一意のポリシー名を入力します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-139">**Name**: Enter a unique, descriptive name for the policy.</span></span>
 
-   - <span data-ttu-id="f7ea9-148">[ **添付ファイルのリダイレクト** ] セクションで、[リダイレクトを有効にする] オプションを選択し、悪意のある添付ファイルを調査する全体管理者、セキュリティ管理者、またはセキュリティアナリストの電子メールアドレスを入力します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-148">In the **Redirect attachment** section, select the option to enable redirect and type the email address of your global administrator, security administrator, or security analyst who will investigate malicious attachments.</span></span>
+   - <span data-ttu-id="0f49b-140">**[説明]**: ポリシーについての説明を入力します (オプション)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-140">**Description**: Enter an optional description for the policy.</span></span>
 
-   - <span data-ttu-id="f7ea9-149">[ **適用先** ] セクションで、[ **受信者ドメイン**] を選択して、ドメインを選択します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-149">In the **Applied To** section, choose **The recipient domain is**, and then select your domain.</span></span> <span data-ttu-id="f7ea9-150">[ **追加**] を選択し、[ **OK]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-150">Choose **Add**, and then choose **OK**.</span></span>
+   <span data-ttu-id="0f49b-141">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-141">When you're finished, click **Next**.</span></span>
 
-6. <span data-ttu-id="f7ea9-151">**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-151">Choose **Save**.</span></span>
+4. <span data-ttu-id="0f49b-142">表示される [ **設定** ] ページで、次の設定を構成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-142">On the **Settings** page that appears, configure the following settings:</span></span>
 
-<span data-ttu-id="f7ea9-152">組織に複数の ATP の安全な添付ファイルポリシーをセットアップすることを検討してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-152">Consider setting up multiple ATP Safe Attachments policies for your organization.</span></span> <span data-ttu-id="f7ea9-153">これらのポリシーは、[ **ATP Safe Attachments** ] ページに表示されている順序で適用されます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-153">These policies will be applied in the order they're listed on the **ATP Safe Attachments** page.</span></span> <span data-ttu-id="f7ea9-154">ポリシーを定義または編集した後、ポリシーが Microsoft データセンター全体で有効になるまで、少なくとも30分待ってください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-154">After a policy has been defined or edited, allow at least 30 minutes for the polices to take effect throughout Microsoft datacenters.</span></span>
+   - <span data-ttu-id="0f49b-143">**安全な添付ファイルの不明なマルウェア応答**: 次のいずれかの値を選択します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-143">**Safe Attachments unknown malware response**: Select one of the following values:</span></span>
 
-## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a><span data-ttu-id="f7ea9-155">手順 3: ATP の安全な添付ファイルポリシーのオプションについて学習する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-155">Step 3: Learn about ATP Safe Attachments policy options</span></span>
+     - <span data-ttu-id="0f49b-144">**Off**: 通常、この値は推奨されていません。</span><span class="sxs-lookup"><span data-stu-id="0f49b-144">**Off**: Typically, we don't recommend this value.</span></span>
+     - <span data-ttu-id="0f49b-145">**モニター**</span><span class="sxs-lookup"><span data-stu-id="0f49b-145">**Monitor**</span></span>
+     - <span data-ttu-id="0f49b-146">[**ブロック**]: これは既定値であり、標準および厳密な設定済みの[セキュリティポリシー](preset-security-policies.md)で推奨される値です。</span><span class="sxs-lookup"><span data-stu-id="0f49b-146">**Block**: This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).</span></span>
+     - <span data-ttu-id="0f49b-147">**Replace**</span><span class="sxs-lookup"><span data-stu-id="0f49b-147">**Replace**</span></span>
+     - <span data-ttu-id="0f49b-148">**動的配信 (プレビュー機能)**</span><span class="sxs-lookup"><span data-stu-id="0f49b-148">**Dynamic Delivery (Preview Feature)**</span></span>
 
-<span data-ttu-id="f7ea9-156">ATP の安全な添付ファイルのポリシーを設定するときは、Monitor、Block、Replace、動的配信など、さまざまなオプションから選択します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-156">As you set up your ATP Safe Attachments policies, you choose from among many options, including Monitor, Block, Replace, Dynamic Delivery, and so on.</span></span> <span data-ttu-id="f7ea9-157">これらのオプションの機能について疑問がある場合は、次の表で各オプションとその影響について要約しています。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-157">In case you're wondering about what these options do, the following table summarizes each and its effect.</span></span>
+     <span data-ttu-id="0f49b-149">これらの値については、「 [安全な添付ファイルのポリシー設定](atp-safe-attachments.md#safe-attachments-policy-settings)」で説明します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-149">These values are explained in [Safe Attachments policy settings](atp-safe-attachments.md#safe-attachments-policy-settings).</span></span>
 
-****
+   - <span data-ttu-id="0f49b-150">**添付ファイルを次の電子メールアドレスに送信**します。操作の値 **ブロック**、 **監視**、または **置換**の場合は、[ **リダイレクトの有効化** ] を選択して、マルウェアの添付ファイルを含むメッセージを、指定した内部または外部の電子メールアドレスに送信して分析および調査することができます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-150">**Send the attachment to the following email address**: For the action values **Block**, **Monitor**, or **Replace**, you can select **Enable redirect** to send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.</span></span>
 
-|<span data-ttu-id="f7ea9-158">オプション</span><span class="sxs-lookup"><span data-stu-id="f7ea9-158">Option</span></span>|<span data-ttu-id="f7ea9-159">効果</span><span class="sxs-lookup"><span data-stu-id="f7ea9-159">Effect</span></span>|<span data-ttu-id="f7ea9-160">次の場合に使用します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-160">Use when you want to:</span></span>|
-|---|---|---|
-|<span data-ttu-id="f7ea9-161">**オフ**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-161">**Off**</span></span>|<span data-ttu-id="f7ea9-162">マルウェアの添付ファイルをスキャンしない</span><span class="sxs-lookup"><span data-stu-id="f7ea9-162">Does not scan attachments for malware</span></span>  <br/> <span data-ttu-id="f7ea9-163">メッセージ配信を遅延しない</span><span class="sxs-lookup"><span data-stu-id="f7ea9-163">Does not delay message delivery</span></span>|<span data-ttu-id="f7ea9-164">選択した受信者のスキャンをオフにします。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-164">Turn scanning off for selected recipients.</span></span>  <br/> <span data-ttu-id="f7ea9-165">内部メールのルーティングで不必要な遅延が発生しないようにします。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-165">Prevent unnecessary delays in routing internal mail.</span></span>  <br/> <span data-ttu-id="f7ea9-166">**このオプションは、ほとんどのユーザーには推奨されていません。このオプションは、信頼できる差出人からの電子メールのみを取得する受信者に対して、ATP の安全な添付ファイルのスキャンを無効にする場合にのみ使用してください。**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-166">**This option is not recommended for most users. You should only use this option to turn off ATP Safe Attachments scanning for recipients who only get emails from trusted senders.**</span></span>|
-|<span data-ttu-id="f7ea9-167">**モニター**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-167">**Monitor**</span></span>|<span data-ttu-id="f7ea9-168">添付ファイル付きのメッセージを配信し、検出されたマルウェアの発生を追跡します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-168">Delivers messages with attachments and then tracks what happens with detected malware</span></span>|<span data-ttu-id="f7ea9-169">検出されたマルウェアが組織内で通過する場所を確認する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-169">See where detected malware goes in your organization</span></span>|
-|<span data-ttu-id="f7ea9-170">**Block**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-170">**Block**</span></span>|<span data-ttu-id="f7ea9-171">検出されたマルウェア添付ファイルのメッセージを処理できないようにする</span><span class="sxs-lookup"><span data-stu-id="f7ea9-171">Prevents messages with detected malware attachments from proceeding</span></span>  <br/> <span data-ttu-id="f7ea9-172">検出されたマルウェアを持つメッセージを [Office 365 で検疫](manage-quarantined-messages-and-files.md) に送信します。これにより、セキュリティ管理者またはアナリストは、これらのメッセージを確認および解放 (または削除) できます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-172">Sends messages with detected malware to [quarantine in Office 365](manage-quarantined-messages-and-files.md) where a security administrator or analyst can review and release (or delete) those messages</span></span>  <br/> <span data-ttu-id="f7ea9-173">今後のメッセージと添付ファイルを自動的にブロックする</span><span class="sxs-lookup"><span data-stu-id="f7ea9-173">Blocks future messages and attachments automatically</span></span>|<span data-ttu-id="f7ea9-174">同じマルウェアの添付ファイルを使用して、組織を繰り返しの攻撃から保護する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-174">Safeguard your organization from repeated attacks using the same malware attachments</span></span>|
-|<span data-ttu-id="f7ea9-175">**Replace**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-175">**Replace**</span></span>|<span data-ttu-id="f7ea9-176">検出されたマルウェアの添付ファイルを削除する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-176">Removes detected malware attachments</span></span>  <br/> <span data-ttu-id="f7ea9-177">添付ファイルが削除されたことを受信者に通知します</span><span class="sxs-lookup"><span data-stu-id="f7ea9-177">Notifies recipients that attachments have been removed</span></span>  <br/> <span data-ttu-id="f7ea9-178">検出されたマルウェアを持つメッセージを [Office 365 で検疫](manage-quarantined-messages-and-files.md) に送信します。これにより、セキュリティ管理者またはアナリストは、これらのメッセージを確認および解放 (または削除) できます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-178">Sends messages with detected malware to [quarantine in Office 365](manage-quarantined-messages-and-files.md) where a security administrator or analyst can review and release (or delete) those messages</span></span>|<span data-ttu-id="f7ea9-179">検出されたマルウェアが原因で添付ファイルが削除された受信者に表示を昇格させる</span><span class="sxs-lookup"><span data-stu-id="f7ea9-179">Raise visibility to recipients that attachments were removed because of detected malware</span></span>|
-|<span data-ttu-id="f7ea9-180">**動的配信**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-180">**Dynamic Delivery**</span></span>|<span data-ttu-id="f7ea9-181">メッセージを即時配信</span><span class="sxs-lookup"><span data-stu-id="f7ea9-181">Delivers messages immediately</span></span>  <br/> <span data-ttu-id="f7ea9-182">スキャンが完了するまで添付ファイルをプレースホルダーファイルに置き換え、マルウェアが検出されない場合は添付ファイルを再び添付します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-182">Replaces attachments with a placeholder file until scanning is complete, and then reattaches the attachments if no malware is detected</span></span>  <br/> <span data-ttu-id="f7ea9-183">スキャン時に、ほとんどの Pdf および Office ファイルの添付ファイルのプレビュー機能が含まれます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-183">Includes attachment previewing capabilities for most PDFs and Office files during scanning</span></span>  <br/> <span data-ttu-id="f7ea9-184">検出されたマルウェアを含むメッセージを、セキュリティ管理者またはアナリストが確認および解放 (または削除) できる検疫に送信します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-184">Sends messages with detected malware to Quarantine where a security administrator or analyst can review and release (or delete) those messages</span></span>  <br/> [<span data-ttu-id="f7ea9-185">ATP の安全な添付ファイルを使用した動的配信とプレビューについて</span><span class="sxs-lookup"><span data-stu-id="f7ea9-185">Learn about Dynamic Delivery and previewing with ATP Safe Attachments</span></span>](dynamic-delivery-and-previewing.md) <br/> |<span data-ttu-id="f7ea9-186">悪意のあるファイルから受信者を保護するときにメッセージの遅延を回避する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-186">Avoid message delays while protecting recipients from malicious files</span></span>  <br/> <span data-ttu-id="f7ea9-187">受信者がスキャンの実行中にセーフモードで添付ファイルをプレビューできるようにする</span><span class="sxs-lookup"><span data-stu-id="f7ea9-187">Enable recipients to preview attachments in safe mode while scanning is taking place</span></span>|
-|<span data-ttu-id="f7ea9-188">**リダイレクトを有効にする**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-188">**Enable redirect**</span></span>|<span data-ttu-id="f7ea9-189">[モニター、ブロック、または置換] オプションを選択したときに適用されます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-189">Applies when the Monitor, Block, or Replace option is chosen</span></span>  <br/> <span data-ttu-id="f7ea9-190">セキュリティ管理者またはアナリストが調査できる指定された電子メールアドレスに添付ファイルを送信します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-190">Sends attachments to a specified email address where security administrators or analysts can investigate</span></span>|<span data-ttu-id="f7ea9-191">セキュリティ管理者とアナリストが疑わしい添付ファイルを調査できるようにする</span><span class="sxs-lookup"><span data-stu-id="f7ea9-191">Enable security administrators and analysts to research suspicious attachments</span></span>|
-|<span data-ttu-id="f7ea9-192">**マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合に上記の選択を適用する**</span><span class="sxs-lookup"><span data-stu-id="f7ea9-192">**Apply the above selection if malware scanning for attachments times out or error occurs**</span></span>|<span data-ttu-id="f7ea9-193">安全でない添付ファイルに対して構成されたアクションを、スキャンできない添付ファイル (タイムアウトまたはエラーのため) に適用します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-193">Applies the action configured for unsafe attachments to the attachments that cannot be scanned (due to time out or error)</span></span>|
-|
+     <span data-ttu-id="0f49b-151">標準および厳密なポリシー設定に関する推奨事項は、リダイレクトを有効にすることです。</span><span class="sxs-lookup"><span data-stu-id="0f49b-151">The recommendation for Standard and Strict policy settings is to enable redirection.</span></span> <span data-ttu-id="0f49b-152">詳細については、「 [安全な添付ファイルの設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-152">For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings).</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="f7ea9-194">次の手順</span><span class="sxs-lookup"><span data-stu-id="f7ea9-194">Next steps</span></span>
+   - <span data-ttu-id="0f49b-153">**マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合は、上記の選択を適用**します。安全な添付ファイルのスキャンが完了していなくても、メッセージに対して [ **不明なマルウェア応答** があります。</span><span class="sxs-lookup"><span data-stu-id="0f49b-153">**Apply the above selection if malware scanning for attachments times out or error occurs**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete.</span></span> <span data-ttu-id="0f49b-154">[ **有効なリダイレクト**] を選択した場合は、常にこのオプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-154">Always select this option if you select **Enabled redirect**.</span></span> <span data-ttu-id="0f49b-155">そうしないと、メッセージが失われる可能性があります。</span><span class="sxs-lookup"><span data-stu-id="0f49b-155">Otherwise, messages might be lost.</span></span>
 
-<span data-ttu-id="f7ea9-195">ATP の安全な添付ファイルのポリシーを設定すると、レポートを表示することによって、ATP が組織でどのように機能しているかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-195">Once your ATP Safe Attachments policies are in place, you can see how ATP is working for your organization by viewing reports.</span></span> <span data-ttu-id="f7ea9-196">詳細については、以下のリソースを参照してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-196">See the following resources to learn more:</span></span>
+   <span data-ttu-id="0f49b-156">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-156">When you're finished, click **Next**.</span></span>
 
-- [<span data-ttu-id="f7ea9-197">Office 365 Advanced Threat Protection のレポートを表示する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-197">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+5. <span data-ttu-id="0f49b-157">表示される [ **適用先** ] ページで、ポリシーが適用される内部の受信者を特定します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-157">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
 
-- [<span data-ttu-id="f7ea9-198">セキュリティ/コンプライアンス センターでエクスプローラーを使用する</span><span class="sxs-lookup"><span data-stu-id="f7ea9-198">Use Explorer in the Security & Compliance Center</span></span>](threat-explorer.md)
+   <span data-ttu-id="0f49b-158">各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-158">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="0f49b-159">同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-159">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="0f49b-160">a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-160">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
 
-<span data-ttu-id="f7ea9-199">ATP に関する新機能を常に活用してください。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-199">Stay on top of new features coming to ATP.</span></span> <span data-ttu-id="f7ea9-200">[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)にアクセスし、 [ATP に追加](office-365-atp.md#new-features-in-office-365-atp)されている新機能について説明します。</span><span class="sxs-lookup"><span data-stu-id="f7ea9-200">visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) and learn about [new features that are being added to ATP](office-365-atp.md#new-features-in-office-365-atp).</span></span>
+   <span data-ttu-id="0f49b-161">[ **条件の追加] を**クリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-161">Click **Add a condition**.</span></span> <span data-ttu-id="0f49b-162">表示されるドロップダウンで、[適用済みの **場合**] の条件を選択します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-162">In the dropdown that appears, select a condition under **Applied if**:</span></span>
+
+   - <span data-ttu-id="0f49b-163">**受信者は**次のとおりです。組織内で1つ以上のメールボックス、メールユーザー、またはメール連絡先を指定します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-163">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
+   - <span data-ttu-id="0f49b-164">**受信者が次のメンバーの**場合: 組織内の1つまたは複数のグループを指定します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-164">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
+   - <span data-ttu-id="0f49b-165">**[受信者のドメインが次の値である]**: 組織内で構成済みの 1 つ以上の承認済みドメイン内の受信者を指定します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-165">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in your organization.</span></span>
+
+   <span data-ttu-id="0f49b-166">条件を選択すると、対応するドロップ **ダウンボックスが** 表示されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-166">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
+
+   - <span data-ttu-id="0f49b-167">ボックス内をクリックし、値の一覧をスクロールして選択します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-167">Click in the box and scroll through the list of values to select.</span></span>
+   - <span data-ttu-id="0f49b-168">ボックス内をクリックして入力を開始し、リストにフィルターを適用して値を選択します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-168">Click in the box and start typing to filter the list and select a value.</span></span>
+   - <span data-ttu-id="0f49b-169">その他の値を追加するには、ボックスの空の領域をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-169">To add additional values, click in an empty area in the box.</span></span>
+   - <span data-ttu-id="0f49b-170">個々のエントリを削除するには、その値の [削除] アイコン **をクリックし** ![ ](../../media/scc-remove-icon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-170">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
+   - <span data-ttu-id="0f49b-171">条件全体を削除するには、条件の [削除] アイコン **をクリックし** ![ ](../../media/scc-remove-icon.png) ます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-171">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
+
+   <span data-ttu-id="0f49b-172">別の条件を追加するには、[ **条件の追加** ] をクリックし、[ **適用**時] で残りの値を選択します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-172">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
+
+   <span data-ttu-id="0f49b-173">例外を追加するには、[ **条件の追加** ] をクリックし、 **Except if**で例外を選択します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-173">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="0f49b-174">設定と動作は、条件とまったく同じです。</span><span class="sxs-lookup"><span data-stu-id="0f49b-174">The settings and behavior are exactly like the conditions.</span></span>
+
+   <span data-ttu-id="0f49b-175">完了したら、**[次へ]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-175">When you're finished, click **Next**.</span></span>
+
+6. <span data-ttu-id="0f49b-176">表示される [ **設定の確認** ] ページで、設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-176">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="0f49b-177">各設定で [ **編集** ] をクリックして、変更を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-177">You can click **Edit** on each setting to modify it.</span></span>
+
+   <span data-ttu-id="0f49b-178">完了したら、 **[完了]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-178">When you're finished, click **Finish**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a><span data-ttu-id="0f49b-179">セキュリティ & コンプライアンスセンターを使用して、安全な添付ファイルポリシーを表示する</span><span class="sxs-lookup"><span data-stu-id="0f49b-179">Use the Security & Compliance Center to view Safe Attachments policies</span></span>
+
+1. <span data-ttu-id="0f49b-180">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-180">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.</span></span>
+
+2. <span data-ttu-id="0f49b-181">[ **安全な添付ファイル** ] ページで、一覧からポリシーを選択してクリックします (チェックボックスをオンにしないでください)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-181">On the **Safe Attachments** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+   <span data-ttu-id="0f49b-182">ポリシーの詳細がフライアウトに表示される</span><span class="sxs-lookup"><span data-stu-id="0f49b-182">The policy details appear in a fly out</span></span>
+
+## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a><span data-ttu-id="0f49b-183">セキュリティ & コンプライアンスセンターを使用して安全添付ファイルポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="0f49b-183">Use the Security & Compliance Center to modify Safe Attachments policies</span></span>
+
+1. <span data-ttu-id="0f49b-184">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-184">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.</span></span>
+
+2. <span data-ttu-id="0f49b-185">[ **安全な添付ファイル** ] ページで、一覧からポリシーを選択してクリックします (チェックボックスをオンにしないでください)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-185">On the **Safe Attachments** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="0f49b-186">[ポリシーの詳細] が表示されたら、[ **ポリシーの編集**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-186">In the policy details fly out that appears, click **Edit policy**.</span></span>
+
+<span data-ttu-id="0f49b-187">スライドインで使用可能な設定は、「 [セキュリティ & コンプライアンスセンターを使用して安全添付ファイルポリシーを作成する](#use-the-security--compliance-center-to-create-safe-attachments-policies) 」セクションに記載されている設定と同じです。</span><span class="sxs-lookup"><span data-stu-id="0f49b-187">The available settings in the fly out that appears are identical to those described in the [Use the Security & Compliance Center to create Safe Attachments policies](#use-the-security--compliance-center-to-create-safe-attachments-policies) section.</span></span>
+
+<span data-ttu-id="0f49b-188">ポリシーを有効または無効にしたり、ポリシーの優先順位を設定したりするには、以下のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-188">To enable or disable a policy or set the policy priority order, see the following sections.</span></span>
+
+### <a name="enable-or-disable-safe-attachments-policies"></a><span data-ttu-id="0f49b-189">安全添付ファイルポリシーを有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="0f49b-189">Enable or disable Safe Attachments policies</span></span>
+
+1. <span data-ttu-id="0f49b-190">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-190">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.</span></span>
+
+2. <span data-ttu-id="0f49b-191">[ **状態** ] 列の値に注目してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-191">Notice the value in the **Status** column:</span></span>
+
+   - <span data-ttu-id="0f49b-192">トグルを左に移動する</span><span class="sxs-lookup"><span data-stu-id="0f49b-192">Move the toggle to the left</span></span> ![ポリシーをオフにする](../../media/scc-toggle-off.png) <span data-ttu-id="0f49b-194">ポリシーを無効にします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-194">to disable the policy.</span></span>
+
+   - <span data-ttu-id="0f49b-195">トグルを右に移動する</span><span class="sxs-lookup"><span data-stu-id="0f49b-195">Move the toggle to the right</span></span> ![ポリシーを有効にする](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) <span data-ttu-id="0f49b-197">ポリシーを有効にします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-197">to enable the policy.</span></span>
+
+### <a name="set-the-priority-of-safe-attachments-policies"></a><span data-ttu-id="0f49b-198">安全な添付ファイルポリシーの優先度を設定する</span><span class="sxs-lookup"><span data-stu-id="0f49b-198">Set the priority of Safe Attachments policies</span></span>
+
+<span data-ttu-id="0f49b-199">既定では、[安全な添付ファイル] ポリシーには、作成された順序に基づく優先度が与えられます (新しいポリシーは、以前のポリシーよりも優先度が低いです)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-199">By default, Safe Attachments policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies).</span></span> <span data-ttu-id="0f49b-200">優先度番号が小さいほど、ポリシーの優先度が高くなる (0 が最優先) ことを意味し、ポリシーは優先順位に従って処理されます (優先度の高いポリシーは、優先度の低いポリシーよりも先に処理されます)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-200">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="0f49b-201">2つのポリシーが同じ優先順位を持つことはできません。最初のポリシーが適用されると、ポリシーの処理は停止します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-201">No two policies can have the same priority, and policy processing stops after the first policy is applied.</span></span>
+
+<span data-ttu-id="0f49b-202">優先順位と複数のポリシーを評価し適用する方法の詳細については、「[メール保護の優先順位](how-policies-and-protections-are-combined.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-202">For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
+
+<span data-ttu-id="0f49b-203">「安全な添付ファイル」ポリシーは、処理順に表示されます (最初のポリシーの **優先度** 値は0です)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-203">Safe Attachments policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span>
+
+<span data-ttu-id="0f49b-204">**注**: セキュリティ & コンプライアンスセンターでは、安全な添付ファイルのポリシーの作成後にのみ、優先度を変更できます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-204">**Note**: In the Security & Compliance Center, you can only change the priority of the Safe Attachments policy after you create it.</span></span> <span data-ttu-id="0f49b-205">PowerShell では、安全な添付ファイルルールを作成するときに既定の優先順位を上書きできます (既存のルールの優先度に影響する場合があります)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-205">In PowerShell, you can override the default priority when you create the safe attachment rule (which can affect the priority of existing rules).</span></span>
+
+<span data-ttu-id="0f49b-206">ポリシーの優先度を変更するには、リスト内で上下に移動させます (セキュリティ/コンプライアンス センター内で直接、**優先順位**番号を変更することはできません)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-206">To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span>
+
+1. <span data-ttu-id="0f49b-207">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-207">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.</span></span>
+
+2. <span data-ttu-id="0f49b-208">[ **安全な添付ファイル** ] ページで、一覧からポリシーを選択してクリックします (チェックボックスをオンにしないでください)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-208">On the **Safe Attachments** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="0f49b-209">[ポリシーの詳細] が表示されたら、[利用可能な優先順位] ボタンをクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-209">In the policy details fly out that appears, click the available priority button.</span></span>
+
+   - <span data-ttu-id="0f49b-210">**優先度**の値が**0**の安全な添付ファイルポリシーには、[**優先度を下げる**] ボタンのみが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-210">The Safe Attachments policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
+
+   - <span data-ttu-id="0f49b-211">最も低い **優先度** の値 (たとえば **3**) を持つ安全な添付ファイルのポリシーには、[ **優先度を上げる** ] ボタンだけが使用できます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-211">The Safe Attachments policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
+
+   - <span data-ttu-id="0f49b-212">3つ以上の安全な添付ファイルポリシーを持っている場合、最高の優先度と最も低い優先度の値の間のポリシーでは、[優先度を **上げる** ] ボタンと [ **優先度を下げる** ] ボタンの両方を使用できる</span><span class="sxs-lookup"><span data-stu-id="0f49b-212">If you have three or more Safe Attachments policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
+
+4. <span data-ttu-id="0f49b-213">[優先 **度を上げる** ] または [ **優先度を下げる** ] をクリックし、 **優先度** の値を変更します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-213">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
+
+5. <span data-ttu-id="0f49b-214">完了したら、**[閉じる]** をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-214">When you're finished, click **Close**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a><span data-ttu-id="0f49b-215">セキュリティ & コンプライアンスセンターを使用して安全添付ファイルポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="0f49b-215">Use the Security & Compliance Center to remove Safe Attachments policies</span></span>
+
+1. <span data-ttu-id="0f49b-216">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-216">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.</span></span>
+
+2. <span data-ttu-id="0f49b-217">[ **安全な添付ファイル** ] ページで、一覧からポリシーを選択してクリックします (チェックボックスをオンにしないでください)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-217">On the **Safe Attachments** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="0f49b-218">[ポリシーの詳細] が表示されたら、[ **ポリシーの削除**] をクリックし、表示される警告ダイアログで [ **はい** ] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-218">In the policy details fly out that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
+
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a><span data-ttu-id="0f49b-219">Exchange Online の PowerShell またはスタンドアロンの EOP PowerShell を使用して、安全な添付ファイルのポリシーを構成する</span><span class="sxs-lookup"><span data-stu-id="0f49b-219">Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies</span></span>
+
+<span data-ttu-id="0f49b-220">前述したように、安全な添付ファイルポリシーは、安全な添付ファイルポリシーと安全な添付ファイルルールで構成されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-220">As previously described, a Safe Attachments policy consists of a safe attachment policy and a safe attachment rule.</span></span>
+
+<span data-ttu-id="0f49b-221">PowerShell では、安全な添付ファイルのポリシーと安全な添付ファイルの規則の違いが明らかです。</span><span class="sxs-lookup"><span data-stu-id="0f49b-221">In PowerShell, the difference between safe attachment policies and safe attachment rules is apparent.</span></span> <span data-ttu-id="0f49b-222">\*\* \* -Safeattachmentpolicy**コマンドレットを使用して、安全な添付ファイルポリシーを管理し、 \*\* \* -new-safeattachmentrule**コマンドレットを使用して安全な添付ファイルルールを管理します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-222">You manage safe attachment policies by using the **\*-SafeAttachmentPolicy** cmdlets, and you manage safe attachment rules by using the **\*-SafeAttachmentRule** cmdlets.</span></span>
+
+- <span data-ttu-id="0f49b-223">PowerShell では、まず安全な添付ファイルポリシーを作成し、次に、ルールが適用されるポリシーを識別する安全な添付ファイルルールを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-223">In PowerShell, you create the safe attachment policy first, then you create the safe attachment rule that identifies the policy that the rule applies to.</span></span>
+- <span data-ttu-id="0f49b-224">PowerShell では、安全な添付ファイルポリシーと安全な添付ファイルルールの設定を個別に変更します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-224">In PowerShell, you modify the settings in the safe attachment policy and the safe attachment rule separately.</span></span>
+- <span data-ttu-id="0f49b-225">安全な添付ファイルのポリシーを PowerShell から削除しても、対応する安全な添付ファイルルールは自動的には削除されません。また、その逆も同様です。</span><span class="sxs-lookup"><span data-stu-id="0f49b-225">When you remove a safe attachment policy from PowerShell, the corresponding safe attachment rule isn't automatically removed, and vice versa.</span></span>
+
+### <a name="use-powershell-to-create-safe-attachments-policies"></a><span data-ttu-id="0f49b-226">PowerShell を使用して安全添付ファイルポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="0f49b-226">Use PowerShell to create Safe Attachments policies</span></span>
+
+<span data-ttu-id="0f49b-227">PowerShell での安全な添付ファイルポリシーの作成は、次の2つの手順からなるプロセスです。</span><span class="sxs-lookup"><span data-stu-id="0f49b-227">Creating a Safe Attachments policy in PowerShell is a two-step process:</span></span>
+
+1. <span data-ttu-id="0f49b-228">安全添付ファイルポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-228">Create the safe attachment policy.</span></span>
+2. <span data-ttu-id="0f49b-229">ルールを適用する安全な添付ファイルポリシーを指定する安全な添付ファイルルールを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-229">Create the safe attachment rule that specifies the safe attachment policy that the rule applies to.</span></span>
+
+ <span data-ttu-id="0f49b-230">**注**:</span><span class="sxs-lookup"><span data-stu-id="0f49b-230">**Notes**:</span></span>
+
+- <span data-ttu-id="0f49b-231">新しい安全な添付ファイルルールを作成して、既存の関連付けられていない安全な添付ファイルポリシーをそれに割り当てることができます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-231">You can create a new safe attachment rule and assign an existing, unassociated safe attachment policy to it.</span></span> <span data-ttu-id="0f49b-232">安全な添付ファイルルールは、複数の安全な添付ファイルポリシーに関連付けることはできません。</span><span class="sxs-lookup"><span data-stu-id="0f49b-232">A safe attachment rule can't be associated with more than one safe attachment policy.</span></span>
+
+- <span data-ttu-id="0f49b-233">ポリシーを作成するまで、セキュリティ & コンプライアンスセンターでは使用できない PowerShell の新しい安全な添付ファイルポリシーでは、次の設定を構成できます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-233">You can configure the following settings on new safe attachment policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
+  - <span data-ttu-id="0f49b-234">新しいポリシーを無効として_Enabled_作成し `$false` ます ( **new-safeattachmentrule**コマンドレットでは有効)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-234">Create the new policy as disabled (_Enabled_ `$false` on the **New-SafeAttachmentRule** cmdlet).</span></span>
+  - <span data-ttu-id="0f49b-235">New-safeattachmentrule コマンドレットで、作成中にポリシーの優先度を設定します (_優先度_ _\<Number\>_ )。 **New-SafeAttachmentRule**</span><span class="sxs-lookup"><span data-stu-id="0f49b-235">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-SafeAttachmentRule** cmdlet).</span></span>
+
+- <span data-ttu-id="0f49b-236">PowerShell で作成した新しい安全な添付ファイルポリシーは、そのポリシーを安全な添付ファイルルールに割り当てるまで、セキュリティ & コンプライアンスセンターに表示されません。</span><span class="sxs-lookup"><span data-stu-id="0f49b-236">A new safe attachment policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a safe attachment rule.</span></span>
+
+#### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a><span data-ttu-id="0f49b-237">手順 1: PowerShell を使用して安全添付ファイルポリシーを作成する</span><span class="sxs-lookup"><span data-stu-id="0f49b-237">Step 1: Use PowerShell to create a safe attachment policy</span></span>
+
+<span data-ttu-id="0f49b-238">安全添付ファイルポリシーを作成するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-238">To create a safe attachment policy, use this syntax:</span></span>
+
+```PowerShell
+New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
+```
+
+<span data-ttu-id="0f49b-239">この例では、次の値を使用して Contoso All という名前の安全な添付ファイルポリシーを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-239">This example creates a safe attachment policy named Contoso All with the following values:</span></span>
+
+- <span data-ttu-id="0f49b-240">マルウェアを含んでいることが検出されたメッセージを安全なドキュメントスキャンでブロックする ( _Action_ パラメーターは使用していません。既定値はです `Block` )。</span><span class="sxs-lookup"><span data-stu-id="0f49b-240">Block messages that are found to contain malware by Safe Documents scanning (we aren't using the _Action_ parameter, and the default value is `Block`).</span></span>
+- <span data-ttu-id="0f49b-241">リダイレクトが有効になっており、マルウェアが含まれていることが検出されたメッセージは、分析および調査のために sec-ops@contoso.com に送信されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-241">Redirection is enabled, and messages that are found to contain malware are sent to sec-ops@contoso.com for analysis and investigation.</span></span>
+- <span data-ttu-id="0f49b-242">安全な添付ファイルのスキャンができない場合、またはエラーが発生した場合は、メッセージを配信しません ( _Actiononerror_ パラメーターは使用していません。既定値はです `$true` )。</span><span class="sxs-lookup"><span data-stu-id="0f49b-242">If Safe Attachments scanning isn't available or encounters errors, don't deliver the message (we aren't using the _ActionOnError_ parameter, and the default value is `$true`).</span></span>
+
+```PowerShell
+New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
+```
+
+<span data-ttu-id="0f49b-243">構文およびパラメーターの詳細については、「 [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-243">For detailed syntax and parameter information, see [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy).</span></span>
+
+#### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a><span data-ttu-id="0f49b-244">手順 2: PowerShell を使用して安全な添付ファイルルールを作成する</span><span class="sxs-lookup"><span data-stu-id="0f49b-244">Step 2: Use PowerShell to create a safe attachment rule</span></span>
+
+<span data-ttu-id="0f49b-245">安全な添付ファイルルールを作成するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-245">To create a safe attachment rule, use this syntax:</span></span>
+
+```PowerShell
+New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
+```
+
+<span data-ttu-id="0f49b-246">この例では、次の条件で Contoso All という名前の安全な添付ファイルルールを作成します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-246">This example creates a safe attachment rule named Contoso All with the following conditions:</span></span>
+
+- <span data-ttu-id="0f49b-247">ルールは Contoso All という名前の安全な添付ファイルポリシーに関連付けられています。</span><span class="sxs-lookup"><span data-stu-id="0f49b-247">The rule is associated with the safe attachment policy named Contoso All.</span></span>
+- <span data-ttu-id="0f49b-248">ルールは、contoso.com ドメイン内のすべての受信者に適用されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-248">The rule applies to all recipients in the contoso.com domain.</span></span>
+- <span data-ttu-id="0f49b-249">_Priority_パラメーターを使用していないので、既定の優先度が使用されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-249">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
+- <span data-ttu-id="0f49b-250">ルールが有効になっています ( _enabled_ パラメーターは使用していません。既定値はです `$true` )。</span><span class="sxs-lookup"><span data-stu-id="0f49b-250">The rule is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
+
+```powershell
+New-SafeAttachmentRule -Name "Contoso All" -SafeAttachmentPolicy "Contoso All" -RecipientDomainIs contoso.com
+```
+
+<span data-ttu-id="0f49b-251">構文およびパラメーターの詳細については、「 [new-safeattachmentrule](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-251">For detailed syntax and parameter information, see [New-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentrule).</span></span>
+
+### <a name="use-powershell-to-view-safe-attachment-policies"></a><span data-ttu-id="0f49b-252">PowerShell を使用して安全な添付ファイルポリシーを表示する</span><span class="sxs-lookup"><span data-stu-id="0f49b-252">Use PowerShell to view safe attachment policies</span></span>
+
+<span data-ttu-id="0f49b-253">既存の安全添付ファイルポリシーを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-253">To view existing safe attachment policies, use the following syntax:</span></span>
+
+```PowerShell
+Get-SafeAttachmentPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+<span data-ttu-id="0f49b-254">この例では、すべての安全な添付ファイルポリシーの要約リストが返されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-254">This example returns a summary list of all safe attachment policies.</span></span>
+
+```PowerShell
+Get-SafeAttachmentPolicy
+```
+
+<span data-ttu-id="0f49b-255">この例では、Contoso 重役という名前の安全な添付ファイルポリシーの詳細情報を返します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-255">This example returns detailed information for the safe attachment policy named Contoso Executives.</span></span>
+
+```PowerShell
+Get-SafeAttachmentPolicy -Identity "Contoso Executives" | Format-List
+```
+
+<span data-ttu-id="0f49b-256">構文およびパラメーターの詳細については、「 [取得-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentpolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-256">For detailed syntax and parameter information, see [Get-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentpolicy).</span></span>
+
+### <a name="use-powershell-to-view-safe-attachment-rules"></a><span data-ttu-id="0f49b-257">PowerShell を使用して安全な添付ファイルルールを表示する</span><span class="sxs-lookup"><span data-stu-id="0f49b-257">Use PowerShell to view safe attachment rules</span></span>
+
+<span data-ttu-id="0f49b-258">既存の安全添付ファイルルールを表示するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-258">To view existing safe attachment rules, use the following syntax:</span></span>
+
+```PowerShell
+Get-SafeAttachmentRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+<span data-ttu-id="0f49b-259">この例では、すべての安全な添付ファイルルールの要約リストが返されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-259">This example returns a summary list of all safe attachment rules.</span></span>
+
+```PowerShell
+Get-SafeAttachmentRule
+```
+
+<span data-ttu-id="0f49b-260">ルールを有効または無効にしてリストをフィルター処理するには、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-260">To filter the list by enabled or disabled rules, run the following commands:</span></span>
+
+```PowerShell
+Get-SafeAttachmentRule -State Disabled
+```
+
+```PowerShell
+Get-SafeAttachmentRule -State Enabled
+```
+
+<span data-ttu-id="0f49b-261">この例では、Contoso 重役という名前の安全な添付ファイルルールの詳細情報を返します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-261">This example returns detailed information for the safe attachment rule named Contoso Executives.</span></span>
+
+```PowerShell
+Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
+```
+
+<span data-ttu-id="0f49b-262">構文およびパラメーターの詳細については、「 [new-safeattachmentrule](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-262">For detailed syntax and parameter information, see [Get-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentrule).</span></span>
+
+### <a name="use-powershell-to-modify-safe-attachment-policies"></a><span data-ttu-id="0f49b-263">PowerShell を使用して安全な添付ファイルポリシーを変更する</span><span class="sxs-lookup"><span data-stu-id="0f49b-263">Use PowerShell to modify safe attachment policies</span></span>
+
+<span data-ttu-id="0f49b-264">PowerShell で安全な添付ファイルポリシーの名前を変更することはできません ( **Set-SafeAttachmentPolicy** コマンドレットに _Name_ パラメーターがありません)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-264">You can't rename a safe attachment policy in PowerShell (the **Set-SafeAttachmentPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="0f49b-265">セキュリティ & コンプライアンスセンターで安全な添付ファイルポリシーの名前を変更する場合は、安全な添付ファイル _ルール_の名前のみを変更することになります。</span><span class="sxs-lookup"><span data-stu-id="0f49b-265">When you rename a Safe Attachments policy in the Security & Compliance Center, you're only renaming the safe attachment _rule_.</span></span>
+
+<span data-ttu-id="0f49b-266">それ以外の場合は、この記事の「 [手順 1: PowerShell を使用して安全な添付ファイルポリシーを作成する](#step-1-use-powershell-to-create-a-safe-attachment-policy) 」の説明に従って、安全な添付ファイルポリシーを作成するときに同じ設定を使用できます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-266">Otherwise, the same settings are available when you create a safe attachment policy as described in the [Step 1: Use PowerShell to create a safe attachment policy](#step-1-use-powershell-to-create-a-safe-attachment-policy) section earlier in this article.</span></span>
+
+<span data-ttu-id="0f49b-267">安全添付ファイルポリシーを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-267">To modify a safe attachment policy, use this syntax:</span></span>
+
+```PowerShell
+Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
+```
+
+<span data-ttu-id="0f49b-268">構文およびパラメーターの詳細については、「 [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentpolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-268">For detailed syntax and parameter information, see [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentpolicy).</span></span>
+
+### <a name="use-powershell-to-modify-safe-attachment-rules"></a><span data-ttu-id="0f49b-269">PowerShell を使用して安全な添付ファイルルールを変更する</span><span class="sxs-lookup"><span data-stu-id="0f49b-269">Use PowerShell to modify safe attachment rules</span></span>
+
+<span data-ttu-id="0f49b-270">PowerShell で安全な添付ファイルルールを変更しても利用できない唯一の設定は、無効にされたルールを作成できる _有効_ なパラメーターです。</span><span class="sxs-lookup"><span data-stu-id="0f49b-270">The only setting that's not available when you modify a safe attachment rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="0f49b-271">既存の安全添付ファイルルールを有効または無効にするには、次のセクションを参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-271">To enable or disable existing safe attachment rules, see the next section.</span></span>
+
+<span data-ttu-id="0f49b-272">それ以外の場合は、この記事で前述した「 [手順 2: PowerShell を使用して安全な添付ファイルルールを作成する](#step-2-use-powershell-to-create-a-safe-attachment-rule) 」に記載されている方法で、同じ設定を使用できます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-272">Otherwise, the same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create a safe attachment rule](#step-2-use-powershell-to-create-a-safe-attachment-rule) section earlier in this article.</span></span>
+
+<span data-ttu-id="0f49b-273">安全な添付ファイルルールを変更するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-273">To modify a safe attachment rule, use this syntax:</span></span>
+
+```PowerShell
+Set-SafeAttachmentRule -Identity "<RuleName>" <Settings>
+```
+
+<span data-ttu-id="0f49b-274">構文およびパラメーターの詳細については、「 [new-safeattachmentrule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-274">For detailed syntax and parameter information, see [Set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule).</span></span>
+
+### <a name="use-powershell-to-enable-or-disable-safe-attachment-rules"></a><span data-ttu-id="0f49b-275">PowerShell を使用して安全な添付ファイルルールを有効または無効にする</span><span class="sxs-lookup"><span data-stu-id="0f49b-275">Use PowerShell to enable or disable safe attachment rules</span></span>
+
+<span data-ttu-id="0f49b-276">PowerShell で安全な添付ファイルルールを有効または無効にすると、安全な添付ファイルのポリシー (安全な添付ファイルルールおよび割り当てられた安全な添付ファイルポリシー) 全体が有効または無効になります。</span><span class="sxs-lookup"><span data-stu-id="0f49b-276">Enabling or disabling a safe attachment rule in PowerShell enables or disables the whole Safe Attachments policy (the safe attachment rule and the assigned safe attachment policy).</span></span>
+
+<span data-ttu-id="0f49b-277">PowerShell で安全な添付ファイルルールを有効または無効にするには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-277">To enable or disable a safe attachment rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+<Enable-SafeAttachmentRule | Disable-SafeAttachmentRule> -Identity "<RuleName>"
+```
+
+<span data-ttu-id="0f49b-278">この例では、Marketing Department という名前の安全な添付ファイルルールを無効にします。</span><span class="sxs-lookup"><span data-stu-id="0f49b-278">This example disables the safe attachment rule named Marketing Department.</span></span>
+
+```PowerShell
+Disable-SafeAttachmentRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f49b-279">この例では、同じルールを有効化します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-279">This example enables same rule.</span></span>
+
+```PowerShell
+Enable-SafeAttachmentRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f49b-280">構文およびパラメーターの詳細については、「 [new-safeattachmentrule](https://docs.microsoft.com/powershell/module/exchange/enable-safeattachmentrule) 」および「 [Disable-new-safeattachmentrule](https://docs.microsoft.com/powershell/module/exchange/disable-safeattachmentrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-280">For detailed syntax and parameter information, see [Enable-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/enable-safeattachmentrule) and [Disable-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/disable-safeattachmentrule).</span></span>
+
+### <a name="use-powershell-to-set-the-priority-of-safe-attachment-rules"></a><span data-ttu-id="0f49b-281">PowerShell を使用して安全な添付ファイルルールの優先度を設定する</span><span class="sxs-lookup"><span data-stu-id="0f49b-281">Use PowerShell to set the priority of safe attachment rules</span></span>
+
+<span data-ttu-id="0f49b-282">ルールに設定できる優先度の最高値値は 0 です。</span><span class="sxs-lookup"><span data-stu-id="0f49b-282">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="0f49b-283">設定できる最低値はルールの数に依存します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-283">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="0f49b-284">たとえば、ルールが五つある場合、使用できる優先度の値は 0 から 4 です。</span><span class="sxs-lookup"><span data-stu-id="0f49b-284">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="0f49b-285">既存の一つのルールの優先度を変更すると、他のルールにも連鎖的な影響が起こりえます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-285">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="0f49b-286">たとえば、カスタム ルールが 5 つあって (優先度 0 から 4)、1 つのルールの優先度を 2 に変更した場合には、既存の優先度 2 のルールは優先度 3 に変更され、優先度 3 は優先度 4 に変更されます。</span><span class="sxs-lookup"><span data-stu-id="0f49b-286">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
+
+<span data-ttu-id="0f49b-287">PowerShell で安全な添付ファイルルールの優先度を設定するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-287">To set the priority of a safe attachment rule in PowerShell, use the following syntax:</span></span>
+
+```PowerShell
+Set-SafeAttachmentRule -Identity "<RuleName>" -Priority <Number>
+```
+
+<span data-ttu-id="0f49b-p123">この例では、Marketing Department というルールの優先度を 2 に設定しています。優先度が 2 以下のすべての既存のルールは、優先度が 1 ずつ下がります (優先度番号が 1 ずつ増加します)。</span><span class="sxs-lookup"><span data-stu-id="0f49b-p123">This example sets the priority of the rule named Marketing Department to 2. All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
+
+```PowerShell
+Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
+```
+
+<span data-ttu-id="0f49b-290">**注**: 作成時に新しいルールの優先度を設定するには、代わりに**new-safeattachmentrule**コマンドレットで_priority_パラメーターを使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-290">**Note**: To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-SafeAttachmentRule** cmdlet instead.</span></span>
+
+<span data-ttu-id="0f49b-291">構文およびパラメーターの詳細については、「 [new-safeattachmentrule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-291">For detailed syntax and parameter information, see [Set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule).</span></span>
+
+### <a name="use-powershell-to-remove-safe-attachment-policies"></a><span data-ttu-id="0f49b-292">PowerShell を使用して安全な添付ファイルポリシーを削除する</span><span class="sxs-lookup"><span data-stu-id="0f49b-292">Use PowerShell to remove safe attachment policies</span></span>
+
+<span data-ttu-id="0f49b-293">PowerShell を使用して安全添付ファイルポリシーを削除しても、対応する安全な添付ファイルルールは削除されません。</span><span class="sxs-lookup"><span data-stu-id="0f49b-293">When you use PowerShell to remove a safe attachment policy, the corresponding safe attachment rule isn't removed.</span></span>
+
+<span data-ttu-id="0f49b-294">PowerShell で安全な添付ファイルポリシーを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-294">To remove a safe attachment policy in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-SafeAttachmentPolicy -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="0f49b-295">この例では、Marketing Department という名前の安全な添付ファイルポリシーを削除します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-295">This example removes the safe attachment policy named Marketing Department.</span></span>
+
+```PowerShell
+Remove-SafeAttachmentPolicy -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f49b-296">構文およびパラメーターの詳細については、「 [削除-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentpolicy)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-296">For detailed syntax and parameter information, see [Remove-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentpolicy).</span></span>
+
+### <a name="use-powershell-to-remove-safe-attachment-rules"></a><span data-ttu-id="0f49b-297">PowerShell を使用して安全な添付ファイルルールを削除する</span><span class="sxs-lookup"><span data-stu-id="0f49b-297">Use PowerShell to remove safe attachment rules</span></span>
+
+<span data-ttu-id="0f49b-298">PowerShell を使用して安全な添付ファイルルールを削除しても、対応する安全添付ファイルポリシーは削除されません。</span><span class="sxs-lookup"><span data-stu-id="0f49b-298">When you use PowerShell to remove a safe attachment rule, the corresponding safe attachment policy isn't removed.</span></span>
+
+<span data-ttu-id="0f49b-299">PowerShell で安全な添付ファイルルールを削除するには、次の構文を使用します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-299">To remove a safe attachment rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-SafeAttachmentRule -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="0f49b-300">この例では、Marketing Department という名前の安全な添付ファイルルールを削除します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-300">This example removes the safe attachment rule named Marketing Department.</span></span>
+
+```PowerShell
+Remove-SafeAttachmentRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="0f49b-301">構文およびパラメーターの詳細については、「 [new-safeattachmentrule](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentrule)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-301">For detailed syntax and parameter information, see [Remove-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentrule).</span></span>
+
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="0f49b-302">正常な動作を確認する方法</span><span class="sxs-lookup"><span data-stu-id="0f49b-302">How do you know these procedures worked?</span></span>
+
+<span data-ttu-id="0f49b-303">安全な添付ファイルポリシーが正常に作成、変更、または削除されたことを確認するには、次のいずれかの手順を実行します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-303">To verify that you've successfully created, modified, or removed Safe Attachments policies, do any of the following steps:</span></span>
+
+- <span data-ttu-id="0f49b-304">セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-304">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**.</span></span> <span data-ttu-id="0f49b-305">ポリシーの一覧、その **状態** の値、およびその **優先度** の値を確認します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-305">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="0f49b-306">詳細を表示するには、一覧からポリシーを選択し、スライドアウトして詳細を表示します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-306">To view more details, select the policy from the list, and view the details in the fly out.</span></span>
+
+- <span data-ttu-id="0f49b-307">Exchange Online PowerShell または Exchange Online Protection PowerShell で、を \<Name\> ポリシーまたはルールの名前に置き換えて、次のコマンドを実行し、設定を確認します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-307">In Exchange Online PowerShell or Exchange Online Protection PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:</span></span>
+
+  ```PowerShell
+  Get-SafeAttachmentPolicy -Identity "<Name>" | Format-List
+  ```
+
+  ```PowerShell
+  Get-SafeAttachmentRule -Identity "<Name>" | Format-List
+  ```
+
+<span data-ttu-id="0f49b-308">安全な添付ファイルがメッセージをスキャンしていることを確認するには、利用可能な Advanced Threat Protection レポートを確認します。</span><span class="sxs-lookup"><span data-stu-id="0f49b-308">To verify that Safe Attachments is scanning messages, check the available Advanced Threat Protection reports.</span></span> <span data-ttu-id="0f49b-309">詳細については、「 [View reports For Office 365 ATP](view-reports-for-atp.md) 」および「 [Security & コンプライアンスセンターのエクスプローラーを使用する](threat-explorer.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0f49b-309">For more information, see [View reports for Office 365 ATP](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).</span></span>
