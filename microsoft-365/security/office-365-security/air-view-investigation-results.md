@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Microsoft 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
 ms.date: 09/29/2020
-ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 4be5f3814ed798a0e7fd42285ed2884a5cc29461
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309108"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327701"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 
@@ -247,7 +247,7 @@ ms.locfileid: "48309108"
 |送信マルウェアおよびスパムの異常調査|組織内のユーザーから送信された、組織内のマルウェア、フィッシング、またはスパムを検出する|
 |送信者ドメインの調査|[Microsoft のインテリジェントセキュリティグラフ](https://www.microsoft.com/security/operations/intelligence)および外部の脅威インテリジェンスソースからのドメイン評価のオンデマンドチェック|
 |送信者の IP 調査| [Microsoft のインテリジェントセキュリティグラフ](https://www.microsoft.com/security/operations/intelligence)および外部の脅威インテリジェンスソースからの IP 評価のオンデマンドチェック|
-|URL クリックの調査| [Office 365](atp-safe-links.md)で保護されたユーザーからのクリックを調査する組織内の ATP の安全なリンク|
+|URL クリックの調査| 組織の「安全なリンクで保護されたユーザーからの、 [Office 365 ATP」](atp-safe-links.md) のクリックを調べる|
 |URL 評価の調査|[Microsoft のインテリジェントセキュリティグラフ](https://www.microsoft.com/security/operations/intelligence)および外部の脅威インテリジェンスソースからの URL 評価のオンデマンドチェック|
 |ユーザーアクティビティの調査|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)でのユーザーアクティビティの異常を分析する|
 |ユーザーによって報告された電子メール指標の抽出|[ユーザーが報告した電子メール](enable-the-report-message-add-in.md)のヘッダー、本文、およびコンテンツから、調査のために指標を抽出する|
@@ -271,6 +271,6 @@ ms.locfileid: "48309108"
 
 ## <a name="next-steps"></a>次の手順
 
-- [保留中のアクションを確認して承認する](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [保留中のアクションを確認して承認する](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [Microsoft の脅威保護の自動化された調査と対応について説明します。](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 description: 脅威エクスプローラおよびリアルタイム検出レポートを使用して、セキュリティコンプライアンスセンターで脅威を調査し、対応する方法について説明し &amp; ます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1310baec402d9053e93b7166ca38cfcab11d73b2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200109"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326999"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーのビューとリアルタイムの検出
 
@@ -140,7 +140,7 @@ ms.locfileid: "48200109"
 
 ![ATP 分析の結果のみを表示するようにエクスプローラーによってフィルター処理されます。](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-このビューでは、 [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)によって分析されたファイルのデータを調べています。 チャートの下には、ATP の安全な添付ファイルによって検出された添付ファイルがある特定の電子メールメッセージに関する詳細が表示されます。
+このビューでは、 [安全な添付](atp-safe-attachments.md)ファイルによって分析されたファイルのデータを参照しています。 グラフの下に、安全な添付ファイルによって検出された添付ファイルがある特定の電子メールメッセージに関する詳細が表示されます。
 
 ![検出された添付ファイルを含む電子メールメッセージに関する具体的な詳細情報](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

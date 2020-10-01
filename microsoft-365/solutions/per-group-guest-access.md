@@ -14,16 +14,16 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 特定のグループに対してゲスト ユーザーをブロックする
-ms.openlocfilehash: 923a9e5cd09d232f377f55fd6a9f499f8f536a84
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 2e9c9cae13932a33b8c486148f93901904e80006
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662715"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328019"
 ---
-# <a name="block-guest-users-from-a-specific-group"></a>特定のグループに対してゲスト ユーザーをブロックする
+# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>特定の Microsoft 365 グループまたは Microsoft Teams チームからゲストユーザーをブロックする
 
-ほとんどのグループへのゲストアクセスを許可し、ゲストアクセスを禁止する場所がある場合は、個々のグループのゲストアクセスをブロックすることができます。
+ほとんどのグループおよびチームへのゲストアクセスを許可するが、ゲストアクセスを禁止する場所がある場合は、個々のグループおよびチームのゲストアクセスをブロックすることができます。 (チームへのゲストアクセスをブロックするには、関連するグループへのゲストアクセスをブロックすることによって行います)。
 
 組織で機密ラベルを使用する場合は、グループごとのゲストアクセスを制御するためにそれらを使用することをお勧めします。 これを行う方法については、「 [機密ラベルを使用して Microsoft Teams、microsoft 365 グループ、および SharePoint サイトのコンテンツを保護する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」を参照してください。 これが推奨アプローチです。
 

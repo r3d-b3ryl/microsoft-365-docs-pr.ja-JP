@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/14/2020
+ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b6e961dc8e7de6bfaf16508fa6c70f8a90fa4080
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131580"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327440"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -32,7 +32,7 @@ ms.locfileid: "48131580"
 
 このシリーズの記事では、id およびデバイスアクセスの前提条件となる構成のセット、および azure Active Directory (Azure AD) の条件付きアクセス、Microsoft Intune、および Azure AD Application Proxy で公開されているその他の SaaS サービス、およびオンプレミスアプリケーションに対する Microsoft 365 へのアクセスを保護するためのポリシーについて説明します。
 
-Id とデバイスのアクセスの設定とポリシーは3層で推奨されます。ベースライン保護、機密保護、および厳しいデータを持つ環境の保護。 これらの層とそれに対応する構成により、データ、id、デバイスの間で一貫したレベルの保護が提供されます。
+Id とデバイスのアクセスの設定とポリシーは3層で推奨されます。ベースライン保護、機密保護、および厳しいデータを持つ環境の保護。 これらの層とそれに対応する構成は、データ、ID、およびデバイス全体で一貫したレベルの保護を提供します。
 
 これらの機能と推奨事項:
 
@@ -115,7 +115,7 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 | [デバイスの登録](/azure/active-directory/devices/overview) | デバイスの id を作成するために、デバイスを Azure AD に登録します。 この id は、ユーザーがサインインして、ドメインに参加しているか、準拠している Pc を必要とする条件付きアクセスポリシーを適用するときに、デバイスを認証するために使用されます。 このガイダンスでは、device enrollment を使用して、ドメインに参加している Windows コンピューターを自動的に登録します。 デバイスの登録は、Intune を使用してデバイスを管理するための前提条件です。 | Microsoft 365 E3 または E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | 組織の id に影響を及ぼす可能性のある脆弱性を検出し、自動修復ポリシーを低、中、高のサインインリスクとユーザーのリスクに構成できます。 このガイダンスは、このリスク評価に基づいて、多要素認証の条件付きアクセスポリシーを適用します。 このガイダンスには、アカウントに対して高リスクのアクティビティが検出された場合にユーザーにパスワードの変更を要求する条件付きアクセスポリシーも含まれています。 | Microsoft 365 E5、Microsoft 365 E3 with Identity & Threat Protection アドオン、EMS E5、または Azure Premium P2 ライセンス |
 | [セルフサービスによるパスワードのリセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | 管理者が制御できる複数の認証方法を確認することにより、ユーザーがパスワードを安全に、かつヘルプデスクの介入なしにリセットできるようにします。 | Microsoft 365 E3 または E5 |
-| [Azure AD パスワード保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 既知の脆弱なパスワードとその亜種、および組織に固有のその他の弱い用語を検出およびブロックします。 既定のグローバル禁止パスワードリストは、Azure AD テナント内のすべてのユーザーに自動的に適用されます。 カスタム禁止パスワードリストには、追加のエントリを定義できます。 ユーザーがパスワードを変更または再設定すると、これらの禁止されたパスワードの一覧がチェックされ、強力なパスワードの使用が強制されます。 |  Microsoft 365 E3 または E5 |
+| [Azure AD パスワード保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 既知の脆弱なパスワードとその亜種、および組織に固有のその他の弱い用語を検出およびブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。 |  Microsoft 365 E3 または E5 |
 ||||
 
 ![Id とデバイスのアクセスのコンポーネント。](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
@@ -162,6 +162,25 @@ Windows 10 for Microsoft 365 enterprise for enterprise は、Pc に推奨され�
 上記の表には、組織が所有するデバイスを混在させるための多くの組織の傾向と、従業員を超えたモバイル生産性を実現するための個人または BYODs の傾向が反映されています。 Intune アプリ保護ポリシーは、組織が所有するデバイスと BYODs の両方で、電子メールが Outlook mobile アプリおよびその他の Office モバイルアプリから exfiltrating から保護されるようにします。  
 
 組織所有のデバイスは、追加の保護と制御を適用するために、Intune またはドメインに参加して管理することをお勧めします。 データの機密性に応じて、特定のユーザー人口または特定のアプリに対しては、を使用しないようにすることもできます。
+
+## <a name="deployment-and-your-apps"></a>展開とアプリ
+
+Azure AD 統合アプリの id とデバイスのアクセス構成を構成してロールアウトする前に、次のことを行う必要があります。 
+
+- 保護する組織で使用されているアプリを決定します。 
+- このアプリの一覧を分析して、適切なレベルの保護を提供するポリシーのセットを決定します。 
+
+  アプリの管理が煩雑になる可能性があるため、アプリごとに個別のポリシーセットを作成しないでください。 Microsoft では、同じユーザーに対して同じ保護要件を持つアプリをグループ化することをお勧めします。 
+
+  たとえば、すべてのユーザーのベースライン保護用のすべての Microsoft 365 アプリと、人事や財務部門で使用されているすべての機密アプリケーションに対する2番目のポリシーセットを含むポリシーセットがあり、それらをそれらのグループに適用することができます。 
+
+セキュリティで保護するアプリケーションのポリシーセットを決定したら、そのポリシーをユーザーに段階的にロールアウトして、その問題に対処します。  
+
+たとえば、exchange Online 用のすべての Microsoft 365 アプリで使用されるポリシーを構成し、Exchange に追加の変更を加えます。 これらのポリシーをユーザーにロールアウトして、問題を解決します。 その後、追加の変更を加えて Teams を追加し、それをユーザーにロールアウトします。 その後、追加の変更を加えて、SharePoint を追加します。 これらのベースラインポリシーを確実に構成して、すべての Microsoft 365 アプリを含めることができるようになるまで、残りのアプリの追加を続行します。 
+
+同様に、機密性の高いアプリについては、ポリシーのセットを作成して、一度に1つのアプリを追加し、すべての問題を処理する必要があります。これらはすべて、機密のアプリケーションポリシーセットに含まれます。 
+
+Microsoft では、意図しない構成が発生する可能性があるため、すべてのアプリに適用されるポリシーセットを作成しないことをお勧めします。 たとえば、すべてのアプリをブロックするポリシーにより、Azure portal から管理者をロックアウトし、Microsoft Graph などの重要なエンドポイントに対して除外を構成することはできません。 
 
 ## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>Id とデバイスのアクセスを構成するプロセスの手順
 

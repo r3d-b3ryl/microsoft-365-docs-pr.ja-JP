@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: Microsoft 365、Active Directory ドメインサービスクリーンアップ、および Azure Active Directory Connect ツールとのディレクトリ同期について説明します。
-ms.openlocfilehash: 2d3161fb835073a22743ea4f3b00ac508479f0f2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691873"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327381"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のハイブリッド id とディレクトリ同期
 
@@ -143,9 +143,5 @@ PTA は、組織に対して、オンプレミスのユーザーアカウント�
 
 ## <a name="next-step"></a>次の手順
 
-ハイブリッド id を展開する準備ができたら、「 [ユーザーをプロビジョニングするための準備](prepare-for-directory-synchronization.md)」を参照してください。
+ハイブリッド id を展開する準備ができたら、「 [ディレクトリ同期の準備](prepare-for-directory-synchronization.md)」を参照してください。
   
-## <a name="see-also"></a>関連項目
-
-[Microsoft 365 Enterprise の概要](microsoft-365-overview.md)
-

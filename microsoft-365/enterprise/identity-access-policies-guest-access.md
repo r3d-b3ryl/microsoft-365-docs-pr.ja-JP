@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6d6562f528b36acdfbc28da9647d3356a0f585af
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 3afc818f9461ad0cc5ca65ea86d5e90f61f64d9b
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132160"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327869"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>ゲストおよび外部の B2B アクセスを許可するためのポリシー
 
@@ -40,7 +40,7 @@ Azure AD B2B アカウントを使用してゲストおよび外部アクセス�
 
 次の表に、作成および更新する必要があるポリシーを示します。 共通のポリシーは、 [一般的な id とデバイスアクセスポリシー](identity-access-policies.md) の記事に記載されている関連する構成手順にリンクしています。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|Policies|詳細情報|
 |:---------------|:-------|:----------------|
 |**Baseline**|[ゲストおよび外部ユーザーに対して MFA を常に要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいポリシーを作成し、以下を構成します。 <ul><li> **> > ユーザーとグループの割り当て**については、[**ユーザーとグループの選択**] を選択し、[すべての**ゲストおよび外部ユーザー**] を選択します。 </li><li> **> > の割り当て**については、「多要素認証 (MFA) を常に適用するために、すべてのオプションをオフにしておきます。</li>|
 |        |[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ゲストユーザーと外部ユーザーを除外するには、このポリシーを変更します。|
@@ -65,16 +65,6 @@ Microsoft Teams では、以下を定義します。
 条件付きアクセスポリシーは、対応する Azure AD B2B アカウントがあるため、Teams でのゲストアクセスにのみ適用されます。
 
 Teams の id およびデバイスアクセスポリシーの保護の詳細については、「 [teams のチャット、グループ、ファイルを保護するためのポリシーの推奨事項](teams-access-policies.md) 」を参照してください。
-
-<!--
-ount treats guest and external users that have an Azure AD B2B account differently than external access  .
-
-
-to a meeting, call, or chat with
-
-
-differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
---> 
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>ゲストおよび外部ユーザーに対して MFA を常に要求する
 このポリシーにより、ゲストがホームテナントで MFA に登録されているかどうかにかかわらず、テナント内の MFA を登録するように求められます。 テナント内のリソースにアクセスするとき、ゲストユーザーと外部ユーザーはすべての要求に対して MFA を使用する必要があります。 

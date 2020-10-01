@@ -1,11 +1,11 @@
 ---
-title: Microsoft 365 の id ロードマップ
+title: Microsoft 365 の ID ロードマップ
 f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 のロードマップ情報。
-ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 997df19ca71b67d3fa579b9feaf3e1a61bc7a358
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775125"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327773"
 ---
-# <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の id ロードマップ
+# <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の ID ロードマップ
 
 Microsoft 365 for enterprise では、十分に計画され、実行された id インフラストラクチャにより、生産性のワークロードへのアクセスと、認証されたユーザーとデバイスのみへのデータへのアクセス制限を含む、セキュリティを強化する方法が入念されています。
 
-Microsoft 365 for enterprise の id モデルと認証の概要については、次のビデオをご覧ください。
+Microsoft 365 for enterprise の id モデルと認証の概要については、このビデオをご覧ください。
 
 <p> </p>
 
@@ -38,7 +38,7 @@ Microsoft 365 for enterprise の id モデルと認証の概要については�
 
 この2ページのポスターを参照して、Microsoft 365 for enterprise の id の概念と構成をすばやく増やします。
 
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)することもできます。 レター、リーガル、またはタブロイド (11 x 17) 形式で印刷できます。
+[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)して、レター、リーガル、またはタブロイド (11 x 17) 形式で印刷することもできます。
 
 ## <a name="plan"></a>計画
 
@@ -66,10 +66,14 @@ Id の実装を展開するには、次のようにします。
 
 ## <a name="manage"></a>管理
 
-Id の実装を管理するには、次のようにします。
+Microsoft 365 identity の展開を管理するには、以下を参照してください。
 
-- [ライセンスの割り当てとユーザーアカウントの管理](assign-licenses-to-user-accounts.md)
-- [ディレクトリ同期を監視する](view-directory-synchronization-status.md)
+- [ユーザー アカウント](manage-microsoft-365-accounts.md)
+- [ライセンス](assign-licenses-to-user-accounts.md)
+- [パスワード](manage-microsoft-365-passwords.md)
+- [グループ](manage-microsoft-365-groups.md)
+- [ガバナンス](manage-microsoft-365-identity-governance.md)
+- [ディレクトリ同期](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Microsoft が Microsoft 365 の id を識別する方法
 

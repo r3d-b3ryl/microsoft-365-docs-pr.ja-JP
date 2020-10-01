@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 Advanced Threat Protection (Office 365 ATP) を使用して組織で使用できる高度なフィッシング対策ポリシーを作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: a4b5dc5beac23e267f6b0e5070d91301b589ad4c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203385"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328073"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>ATP フィッシング詐欺対策ポリシーを設定する
 
@@ -75,7 +75,7 @@ Exchange Online の PowerShell では、ポリシーとルールを個別に管�
     - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
     - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
 
-- ATP のフィッシング対策ポリシーの推奨設定については、「 [OFFICE ATP のフィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)」を参照してください。
+- ATP のフィッシング対策ポリシーの推奨設定については、「 [atp のフィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings)」を参照してください。
 
 - 新規または更新されたポリシーが適用されるまで最大30分かかります。
 

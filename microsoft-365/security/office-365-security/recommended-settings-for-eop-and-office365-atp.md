@@ -16,17 +16,16 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 012bccb265f6b587176eec8f8bed94ce4bf4f211
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202713"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328029"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 **Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のある電子メールが従業員の受信トレイに届かないようにするために使用します。 しかし、毎日新しい高度な攻撃が発生すると、多くの場合、保護が強化されます。 **Office 365 Advanced Threat Protection (ATP)** ATP プラン1または ATP Plan 2 には、管理者によるセキュリティ、統制、調査の層をさらに強化する追加機能が含まれています。
 
@@ -153,7 +152,7 @@ Office 365 ATP には、悪意のある添付ファイルを含む電子メー�
 
 EOP に Office 365 ATP サブスクリプションを追加した場合は、次の構成を設定します。
 
-### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP のフィッシング対策ポリシー設定
+### <a name="atp-anti-phishing-policy-settings"></a>ATP のフィッシング対策ポリシー設定
 
 EOP のお客様は、前述したように基本的なフィッシング対策を行いますが、Office 365 ATP には、攻撃を防止、検出、修復するのに役立つ機能と制御が追加されています。 これらのポリシーを作成して構成するには、「 [Office 365 で ATP のフィッシング対策ポリシーを構成](configure-atp-anti-phishing-policies.md)する」を参照してください。
 
@@ -203,27 +202,31 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |---|---|---|---|
 |**高度なフィッシングしきい値** <br/><br/> _PhishThresholdLevel_|**2-アグレッシブ** <br/><br/> `2`|**3つ以上のアグレッシブ** <br/><br/> `3`||
 
-### <a name="atp-safe-links-policy-settings"></a>ATP の安全なリンクポリシー設定
+### <a name="safe-links-settings"></a>安全なリンクの設定
 
-これらの設定を構成するには、「 [Office 365 ATP Safe Links ポリシーを](set-up-atp-safe-links-policies.md)セットアップする」を参照してください。
+「Office 365 の安全なリンク」では、アクティブな安全なリンクポリシーに含まれるすべてのユーザーに適用されるグローバル設定と、各安全リンクポリシーに固有の設定が含まれています。 詳細については、「 [Office 365 ATP」の「安全なリンク](atp-safe-links.md)」を参照してください。
 
-#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>すべてのユーザーの既定のポリシーの [安全なリンク] ポリシー設定
+#### <a name="global-settings-for-safe-links"></a>安全なリンクのグローバル設定
 
-**注**: PowerShell では、これらの設定には [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) コマンドレットを使用します。
+これらの設定を構成するには、「 [Office 365 ATP で安全なリンクのグローバル設定を構成](configure-global-settings-for-safe-links.md)する」を参照してください。
+
+PowerShell では、これらの設定には [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) コマンドレットを使用します。
 
 ****
 
 |セキュリティ機能の名前|Standard|Strict|コメント|
 |---|---|---|---|
-|**安全なリンクの使用: Office 365 アプリケーション** <br/><br/> _EnableSafeLinksForO365Clients_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Office 365 デスクトップおよびモバイル (iOS および Android) クライアントでは、ATP の安全なリンクを使用します。|
-|**安全なリンクの使用: Office Web Access コンパニオン** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Office Web Apps で ATP の安全なリンクを使用します。 この設定は構成できないことに注意してください。|
-|**ユーザーが [安全なリンク] をクリックしたときに追跡しない** <br/><br/> _トラッククリック_|オフ <br/><br/> `$true`|オフ <br/><br/> `$true`||
-|**ユーザーが元の URL への安全なリンクをクリックできないようにする** <br/><br/> _AllowClickThrough スルー_|オン <br/><br/> `$false`|オン <br/><br/> `$false`||
+|**安全なリンクの使用: Office 365 アプリケーション** <br/><br/> _EnableSafeLinksForO365Clients_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|サポートされている Office 365 デスクトップおよびモバイル (iOS および Android) アプリでは、ATP の安全なリンクを使用します。 詳細については、「 [Office 365 アプリの安全なリンク設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。|
+|**ユーザーが [安全なリンク] をクリックしたときに追跡しない** <br/><br/> _トラッククリック_|オフ <br/><br/> `$true`|オフ <br/><br/> `$true`|この設定は、サポートされている Office 365 アプリでのユーザークリックの追跡に関連しています。|
+|**ユーザーが元の URL への安全なリンクをクリックできないようにする** <br/><br/> _AllowClickThrough スルー_|オン <br/><br/> `$false`|オン <br/><br/> `$false`|この設定は、サポートされている Office 365 アプリでをクリックすることに関連しています。|
+|安全なリンクの使用: Office Web Access コンパニオン <br/><br/> _EnableSafeLinksForWebAccessCompanion_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|Office Web Apps で安全なリンクを使用します。 この設定は構成できないことに注意してください。|
 |
 
-#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>特定のユーザーのためのカスタムポリシーの安全なリンクポリシー設定
+#### <a name="safe-links-policy-settings"></a>安全リンクポリシーの設定
 
-**注**: PowerShell では、これらの設定に [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) および [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) コマンドレットを使用します。
+これらの設定を構成するには、「 [Office 365 ATP で安全なリンクポリシーをセットアップ](set-up-atp-safe-links-policies.md)する」を参照してください。
+
+PowerShell では、これらの設定に [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) および [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) コマンドレットを使用します。
 
 ****
 
@@ -238,13 +241,15 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |**ユーザーが元の URL への安全なリンクをクリックできないようにする** <br/><br/> _/クリックスルー_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |
 
-### <a name="atp-safe-attachments-policy-settings"></a>ATP の安全な添付ファイルのポリシー設定
+### <a name="safe-attachments-settings"></a>安全な添付ファイルの設定
 
-これらの設定を構成するには、「 [Office 365 ATP の安全な添付ファイルのポリシー](set-up-atp-safe-attachments-policies.md)をセットアップする」を参照してください。
+Office 365 の安全な添付ファイルには、アクティブな安全添付ファイルポリシーに含まれるすべてのユーザーに適用されるグローバル設定と、各安全リンクポリシーに固有の設定が含まれています。 詳細については、「 [Office 365 ATP の安全な添付ファイル](atp-safe-attachments.md)」を参照してください。
 
-#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>すべてのユーザーの既定のポリシーの [安全な添付ファイル] ポリシー設定
+#### <a name="global-settings-for-safe-attachments"></a>安全な添付ファイルのグローバル設定
 
-**注**: PowerShell では、これらの設定には [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) コマンドレットを使用します。
+これらの設定を構成するには、 [microsoft 365 E5](safe-docs.md)の「 [SharePoint、OneDrive、Microsoft Teams および安全なドキュメントの ATP を有効](turn-on-atp-for-spo-odb-and-teams.md)にする」を参照してください。
+
+PowerShell では、これらの設定には [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) コマンドレットを使用します。
 
 ****
 
@@ -252,19 +257,21 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 |---|---|---|---|
 |**SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする** <br/><br/> _EnableATPForSPOTeamsODB_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |**Office クライアントの安全なドキュメントを有効にする**<bt/><br/> _EnableSafeDocs_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||この設定は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティライセンスでのみ使用できます。 詳細については、「 [Office 365 Advanced Threat Protection」の「Safe Documents](safe-docs.md)」を参照してください。|
-|**安全なドキュメントが悪意のあるファイルとして識別された場合でも、保護されたビューのクリックをユーザーに許可**する <bt/><br/> _AllowSafeDocsOpen_|オフ <br/><br/> `$false`|オフ <br/><br/> `$false`||
+|**安全なドキュメントが悪意のあるファイルとして識別された場合でも、保護されたビューのクリックをユーザーに許可**する <bt/><br/> _AllowSafeDocsOpen_|オフ <br/><br/> `$false`|オフ <br/><br/> `$false`|この設定は、安全なドキュメントに関連しています。|
 |
 
-#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>特定のユーザーのためのカスタムポリシーの安全な添付ファイルのポリシー設定
+#### <a name="safe-attachments-policy-settings"></a>安全な添付ファイルのポリシー設定
 
-**注**: PowerShell では、これらの設定に対して、 [新しい-safeattachmentpolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) および [Set-safeattachmentpolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) コマンドレットを使用します。
+これらの設定を構成するには、「 [Office 365 ATP で安全な添付ファイルポリシーをセットアップ](set-up-atp-safe-attachments-policies.md)する」を参照してください。
+
+PowerShell では、これらの設定に対して、 [新しい-safeattachmentpolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) および [Set-safeattachmentpolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) コマンドレットを使用します。
 
 ****
 
 |セキュリティ機能の名前|Standard|Strict|コメント|
 |---|---|---|---|
 |**安全な添付ファイルの不明なマルウェア応答** <br/><br/> _操作_|ブロック <br/><br/> `Block`|ブロック <br/><br/> `Block`||
-|**検出時に接続をリダイレクト****する: リダイレクトを有効にする** <br/><br/> _リダイレクトする_ <br/><br/> _RedirectAddress_|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|メッセージをセキュリティ管理者にレビュー用にリダイレクトします。|
+|**検出時に接続をリダイレクト****する: リダイレクトを有効にする** <br/><br/> _リダイレクト_ <br/><br/> _RedirectAddress_|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|メッセージをセキュリティ管理者にレビュー用にリダイレクトします。|
 |**マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合は、上記の選択を適用します。** <br/><br/> _ActionOnError_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |
 

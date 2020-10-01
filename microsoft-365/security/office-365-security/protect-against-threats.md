@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、Microsoft 365 の脅威保護について学習し、組織での使用方法を構成することができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202581"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326557"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -54,7 +54,7 @@ Advanced Threat Protection の構成をチャンクに分割するクイック�
 |スパム対策保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |ゼロ時間自動削除 (電子メール用)|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子メールおよび Office ドキュメント内の悪意のある Url やファイルからの保護 (安全なリンクと安全な添付ファイル)|[Office 365 Advanced Threat Protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**)|
-|SharePoint、OneDrive、Microsoft Teams のワークロードに対して ATP を有効にする| [ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)|
+|SharePoint、OneDrive、Microsoft Teams のワークロードに対して ATP を有効にする|[ATP](atp-for-spo-odb-and-teams.md)|
 |高度なフィッシング対策保護|[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>ロールと権限
@@ -90,7 +90,7 @@ ATP ポリシーを構成するには、 [セキュリティ & コンプライ�
 
     - [ **一般的な添付ファイルの種類のフィルター** ] セクションで、 **[オン**] を選択します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 マルウェア対策ポリシーオプションの詳細については、「 [マルウェア対策ポリシーを構成](configure-anti-malware-policies.md)する」を参照してください。
 
@@ -146,94 +146,82 @@ ATP ポリシーを構成するには、 [セキュリティ & コンプライ�
 
    - [ **許可するリスト** ] セクションで、許可された送信者とドメインを確認 (または編集) します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 スパム対策ポリシーオプションの詳細については、「 [CONFIGURE EOP」の「スパム対策ポリシーを構成](configure-your-spam-filter-policies.md)する」を参照してください。
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments"></a>パート 4-悪意のある Url およびファイルからの保護 (安全なリンクと安全な添付ファイル)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-office-365-atp"></a>パート 4-悪意のある Url およびファイルからの保護 (Office 365 ATP の安全なリンクと安全な添付ファイル)
 
-悪意のある Url やファイルからのクリック時の保護は、 [Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) を含むサブスクリプションで利用できます。 これは、Atp の [安全な添付ファイル](atp-safe-attachments.md) と [atp の安全なリンク](atp-safe-links.md) ポリシーによって設定されます。
+[Office 365 Advanced Threat protection](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) を含むサブスクリプションで、悪意のある url やファイルからのクリック時保護を利用できます。 これは、安全な [添付ファイル](atp-safe-attachments.md) と [安全なリンク](atp-safe-links.md) のポリシーによって設定されます。
 
-### <a name="atp-safe-attachments-policies"></a>ATP の安全な添付ファイルポリシー
+### <a name="safe-attachments-policies-in-office-365-atp"></a>Office 365 の [安全な添付ファイルのポリシーの分析
 
-[Atp の安全な添付ファイル](atp-safe-attachments.md)を設定するには、少なくとも1つの Atp の安全な添付ファイルポリシーを定義する必要があります。
+[安全な添付ファイル](atp-safe-attachments.md)を設定するには、少なくとも1つの安全なリンクポリシーを作成します。
 
-1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP 安全添付ファイル**] を選択します。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP 安全添付ファイル**] を選択し、[**作成**] をクリックします。
 
-2. [ **SharePoint、OneDrive、Microsoft Teams の ATP を有効にする**] オプションを選択します。
+2. 表示される **新しい安全な添付ファイルポリシー** ウィザードで、次の設定を構成します。
 
-3. [ **電子メールの添付ファイルを保護** する] セクションで、プラス記号 () をクリックし **+** ます。
+   - [ **名前** ] ボックスに「 `Block malware` 」と入力し、[ **次へ**] をクリックします。
 
-4. 次の設定を指定します。
+   - [ **設定** ] ページで、次の設定を構成します。
+     - [ **安全な添付ファイルの不明なマルウェアの応答** ] セクションで、[ **ブロック**] を選択します。
+     - [ **添付ファイルのリダイレクト** ] セクションで、[ **リダイレクトを有効にする**] オプションを選択します。 組織のセキュリティ管理者またはオペレーターの電子メールアドレスを指定して、検出されたファイルを確認します。
 
-   - [ **名前** ] ボックスに「」と入力 `Block malware` します。
+     [**次へ**] をクリックします。
 
-   - [応答] セクションで、[ **ブロック**] を選択します。
+3. [ **適用先** ] ページで、[ **条件の追加**] をクリックし、[次の場合は適用] を選択し **ます。受信者のドメインが**である場合は、[ **追加**] をクリックし、ドメインまたはドメインを選択し、[ **追加**] **をクリックし**、[ **次へ**] をクリックします。
 
-   - [ **添付ファイルのリダイレクト** ] セクションで、[ **リダイレクトを有効にする**] オプションを選択します。 組織のセキュリティ管理者またはオペレーターの電子メールアドレスを指定して、検出されたファイルを確認します。
+4. 設定内容を確認し、[ **完了**] をクリックします。
 
-   - [ **適用先** ] セクションで、[ **受信者ドメイン**] を選択します。 次に、ドメインを選択し、[ **追加**] を選択して、[ **OK]** をクリックします。
+### <a name="safe-links-policies-in-office-365-atp"></a>Office 365 の「安全なリンク」ポリシーの ATP
 
-5. **保存**します。
+[安全なリンク](atp-safe-links.md)を設定するには、安全なリンクのためのグローバル設定を確認して編集し、少なくとも1つの安全なリンクポリシーを作成します。
 
-6. (**推奨の追加手順**)グローバル管理者または SharePoint Online 管理者は、 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行して、Microsoft 365 環境の **DisallowInfectedFileDownload** パラメーターを  *true* に設定します。 (これにより、ユーザーが悪意を持って検出されたファイルを開く、移動、コピー、または共有できなくなります)。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP セーフリンク**] を選択し、[**グローバル設定**] をクリックして、次の設定を構成します。
 
-詳細については、「 [office 365 の atp の安全な添付ファイルのポリシーをセットアップ](set-up-atp-safe-attachments-policies.md) する」および「 [SharePoint、OneDrive、Microsoft Teams 用の office 365 ATP を有効](turn-on-atp-for-spo-odb-and-teams.md)にする」を参照してください。
+   - **「安全なリンクの使用」** を確認してください。 Office 365 アプリケーションはオンになっています。オン ![ に ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) します。
+   - **ユーザーが [安全なリンク] をクリックしたときに追跡しない**: この設定をオフにして、ユーザーのクリックを追跡します: ![ トグルオフ ](../../media/scc-toggle-off.png) 。
+   - **ユーザーが安全なリンクをクリックして元の URL に移動できないようにする**: この設定がオンになっていることを確認します。オン ![ にし ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) ます。
 
-### <a name="atp-safe-links-policies"></a>ATP の安全なリンクポリシー
+   完了したら、**[保存]** をクリックします。
 
-[ATP の安全なリンク](atp-safe-links.md)を設定するには、既定のポリシーを確認して編集し、特定のユーザーのポリシーを追加します。
+2. [信頼できるメインリンク] ページに戻り、[ **作成**] をクリックします。
 
-1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP セーフリンク**] を選択します。
+3. [ **安全なリンクの作成] ポリシー** ウィザードが表示されたら、次の設定を構成します。
 
-2. [ **既定** のポリシー] をダブルクリックします。
+   - [ **名前** ] ボックスに、などの名前を入力し、 `Safe Links` [ **次へ**] をクリックします。
 
-3. [ **安全なリンクの使用** ] セクションで、[ **Microsoft 365 Apps for enterprise]、[Office for IOS**、および Android] のオプションを選択し、[ **保存**] をクリックします。
-
-4. [ **特定の受信者に適用されるポリシー** ] セクションで、プラス記号 () をクリックし **+** ます。
-
-5. 次の設定を指定します。
-
-   - [ **名前** ] ボックスに、などの名前を入力し `Safe Links` ます。
-
-   - **[アクションの選択**] セクションで、[**オン**] を選択します。
-
-   - 次のオプションを選択します。
-
-     - **安全な添付ファイルを使用してダウンロード可能なコンテンツをスキャンする**
-
+   - [ **設定** ] ページで、次の設定を構成します。
+     - [**メッセージ内の不明な悪意のある url に対するアクション** **: 選択]** を選択します。
+     - **Microsoft Teams 内の不明または悪意のある url に対するアクションを選択**します。 **[選択] を選択し**ます。
      - **組織内で送信される電子メールメッセージに安全なリンクを適用する**
+     - **メッセージを配信する前に URL スキャンが完了するまで待機する**
+     - **組織内で送信される電子メールメッセージに安全なリンクを適用する**
+     - **ユーザーが元の URL にクリックできないようにする**
 
-     - **ユーザーが元の URL への安全なリンクをクリックできないようにする**
+     [ **次へ**] をクリックします。
 
-   - [ **適用先** ] セクションで、[ **受信者ドメイン**] を選択します。 次に、ドメインを選択し、[ **追加**] を選択して、[ **OK]** をクリックします。
+4. [ **適用先** ] ページで、[ **条件の追加**] をクリックし、[次の場合は適用] を選択し **ます。受信者のドメインが**である場合は、[ **追加**] をクリックし、ドメインまたはドメインを選択し、[ **追加**] **をクリックし**、[ **次へ**] をクリックします。
 
-6. **保存**します。
+5. 設定内容を確認し、[ **完了**] をクリックします。
 
-詳細については、「[Office 365 ATP の安全なリンク ポリシーを設定する](set-up-atp-safe-links-policies.md)」をご覧ください。
+詳細については、「 [安全なリンクポリシーをセットアップ](set-up-atp-safe-links-policies.md)する」を参照してください。
 
-## <a name="part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads"></a>パート 5-SharePoint、OneDrive、Microsoft Teams のワークロードに対して ATP を有効にする
+## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>パート 5-SharePoint、OneDrive、Microsoft Teams の ATP が有効になっていることを確認する
 
-SharePoint、OneDrive、Teams などのワークロードは、共同作業のために構築されています。 ATP を使用すると、チームサイトやドキュメントライブラリで悪意のあるファイルが検出された場合に、そのファイルをブロックおよび検出することができます。 この機能の詳細については、 [こちら](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-worldwide)を参照してください。
+SharePoint、OneDrive、Teams などのワークロードは、共同作業のために構築されています。 ATP を使用すると、チームサイトやドキュメントライブラリで悪意のあるファイルが検出された場合に、そのファイルをブロックおよび検出することができます。 この機能の詳細については、 [こちら](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)を参照してください。
 
 > [!IMPORTANT]
 > **この手順を開始する前に、Microsoft 365 環境の監査ログが既に有効になっていることを確認して**ください。 これは、通常、Exchange Online で監査ログの役割が割り当てられているユーザーによって行われます。 詳細については、「 [監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」を参照してください。
 
-1. に移動 <https://protection.office.com> し、職場または学校のアカウントでサインインします。
+1. [[セキュリティ & コンプライアンスセンター](https://protection.office.com)] で、[**脅威管理**  >  **ポリシー**  >  **ATP 安全添付ファイル**] を選択し、[**グローバル設定**] をクリックします。
 
-2. [セキュリティ & コンプライアンスセンター] の左側のナビゲーションウィンドウで、[ **脅威の管理**] の下にある [ **ポリシー**の \> **安全な添付ファイル**] を選択します。
+2. [ **SharePoint、OneDrive、および Microsoft Teams の ATP をオン** にする] のオン/オフを確認し、[オン] をクリックして、 ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) [ **保存**] をクリックします。
 
-   ![[セキュリティ & コンプライアンスセンター] で、[脅威管理ポリシー] を選択します。 \>](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+3. 組織の [安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md) と [安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認し、必要に応じて編集します。
 
-3. **[SharePoint、OneDrive、および Microsoft Teams に対して ATP を有効にする]** をオンにします。
-
-   ![SharePoint Online、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にします。](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
-
-4. **保存**します。
-
-5. 組織の [安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md) と [安全なリンクのポリシー](set-up-atp-safe-links-policies.md)を確認し、必要に応じて編集します。
-
-6. 勧めグローバル管理者または SharePoint Online 管理者として、 _DisallowInfectedFileDownload_パラメーターをに設定して**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行し `$true` ます。
+4. 勧めグローバル管理者または SharePoint Online 管理者として、 _DisallowInfectedFileDownload_パラメーターをに設定して**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** コマンドレットを実行し `$true` ます。
 
    - `$true` 検出されたファイルのすべてのアクション (削除を除く) をブロックします。 ユーザーは、検出されたファイルを開いたり、移動、コピー、または共有したりできません。
    - `$false` 削除とダウンロード以外のすべてのアクションをブロックします。 ユーザーは、リスクを容認し、検出されたファイルをダウンロードすることを選択できます。
@@ -241,7 +229,7 @@ SharePoint、OneDrive、Teams などのワークロードは、共同作業の�
    > [!TIP]
    > Microsoft 365 での PowerShell の使用の詳細については、「 [Manage microsoft 365 With powershell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)」を参照してください。
 
-7. 変更がすべての Microsoft 365 データセンターに蔓延するまで最大30分かかります。
+5. 変更がすべての Microsoft 365 データセンターに蔓延するまで最大30分かかります。
 
 ### <a name="now-set-up-alerts-for-detected-files"></a>検出されたファイルの通知を設定する
 
@@ -257,9 +245,9 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 5. [ **この通知を送信するタイミング** ] セクションで、次のように設定します。
 
-   a. [ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。
+   a.  [ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。
 
-   b. [ **ユーザー** ] フィールドは空のままにします。
+   b.  [ **ユーザー** ] フィールドは空のままにします。
 
 6. [ **この通知を送信する** ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。
 
@@ -270,9 +258,10 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 > [!NOTE]
 > 構成が完了したら、次のリンクを使用してワークロード調査を開始します。
 >
-> - [SharePoint、OneDrive、Microsoft Teams で検出された悪意のあるファイルに関する情報を表示する](malicious-files-detected-in-spo-odb-or-teams.md)
-> - [SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出された場合の対処方法](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [Microsoft 365 で管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
+>- [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
+>- [セキュリティ & コンプライアンスセンターを使用して検疫されたファイルを管理する](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [SharePoint Online、OneDrive、Microsoft Teams で悪意のあるファイルが検出された場合の対処方法](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+>- [Microsoft 365 で管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>パート 6-構成する追加設定
 
@@ -299,4 +288,4 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 |レポートを表示して、組織の脅威保護機能がどのように機能するかを確認する|[セキュリティダッシュボード](security-dashboard.md)<br/>[電子メールセキュリティレポート](view-email-security-reports.md)<br/>[Office 365 ATP のレポート](view-reports-for-atp.md)<br/>[脅威エクスプローラー](threat-explorer.md)|
 |必要に応じて脅威保護ポリシーを定期的にレビューし、改訂する|[セキュリティ スコア](../mtp/microsoft-secure-score.md)<br/>[スマートレポートと分析情報](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 脅威の調査と応答機能](keep-users-safe-with-office-365-ti.md)|
 |新機能とサービス更新を見る|[標準および対象のリリースオプション](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[Message Center](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|EOP および ATP の推奨される標準および厳密なセキュリティ構成の詳細について説明します。 | [EOP および Office 365 の ATP セキュリティに関する推奨設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) |
+|EOP および ATP の推奨される標準および厳密なセキュリティ構成の詳細について説明します。|[EOP および Office 365 の ATP セキュリティに関する推奨設定](recommended-settings-for-eop-and-office365-atp.md)|

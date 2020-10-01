@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理者は、フィッシングメッセージが Microsoft 365 でどのように表示されるのか、および今後のフィッシングメッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201677"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328061"
 ---
 # <a name="tune-anti-phishing-protection"></a>フィッシング対策保護の調整
 
@@ -32,11 +32,11 @@ Microsoft 365 には、既定で有効になっているさまざまなフィッ
 
 サブスクリプションに Advanced Threat Protection (ATP) が含まれている場合は、 [Office 365 脅威インテリジェンス](office-365-ti.md) を使用して、フィッシングメッセージを受信した他のユーザーを識別できます。 フィッシングメッセージをブロックするための追加のオプションがあります。
 
-- [ATP の安全なリンク](set-up-atp-safe-links-policies.md)
+- [Office 365 ATP の安全なリンク](set-up-atp-safe-links-policies.md)
 
-- [ATP の安全な添付ファイル機能](set-up-atp-safe-attachments-policies.md)
+- [Office 365 ATP の安全な添付ファイル](set-up-atp-safe-attachments-policies.md)
 
-- [Microsoft 365 の ATP のフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)。 ポリシーの **高度なフィッシングしきい値** は、 **標準** から **アグレッシブ** **、アグレッシブ**、または **最も積極的**なものに一時的に増やすことができます。
+- [Office 365 ATP のフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)。 ポリシーの **高度なフィッシングしきい値** は、 **標準** から **アグレッシブ** **、アグレッシブ**、または **最も積極的**なものに一時的に増やすことができます。
 
 これらの ATP 機能が有効になっていることを確認します。
 

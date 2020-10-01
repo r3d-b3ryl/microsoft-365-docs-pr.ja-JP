@@ -3,7 +3,7 @@ title: ハイブリッド ソリューション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: Microsoft Azure に Office Server ワークロードを展開する際に役立つ情報へのリンクの一覧を示します。
-ms.openlocfilehash: bb43b2cc72a8f314b9f3ded007f126f41c5ebffc
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ba294b437d815c81c7747f60b2a82ca0bef05e7a
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692188"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327917"
 ---
 # <a name="hybrid-solutions"></a>ハイブリッド ソリューション
 
@@ -52,8 +52,6 @@ Azure の Microsoft 365 id インフラストラクチャの場合:
 
 [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
   
-[エンタープライズアーキテクトのための Microsoft cloud の図](../solutions/cloud-architecture-models.md)
-  
-[Microsoft 365 for enterprise のテストラボガイド (TLGs)](m365-enterprise-test-lab-guides.md)
+[エンタープライズ アーキテクト向け Microsoft クラウドのイラスト](../solutions/cloud-architecture-models.md)
   
 [SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

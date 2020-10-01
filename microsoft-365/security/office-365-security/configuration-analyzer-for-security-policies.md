@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、構成アナライザーを使用して、標準保護と厳格な保護の事前設定セキュリティポリシーの下にあるセキュリティポリシーを検索して修正する方法を学習できます。
-ms.openlocfilehash: d2d37d937f42587ad99e4145d3a9f9fbc6a5a0f4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ac70b7fa2b2d0ecc65cf81ea4e5e5f2e807f2467
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203433"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326581"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>EOP および Office 365 ATP の保護ポリシーの構成アナライザー
 
@@ -50,9 +50,9 @@ ms.locfileid: "48203433"
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [高度なフィッシングしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - 「[安全なリンク」ポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users)。
+  - 「[安全なリンク」ポリシー](set-up-atp-safe-links-policies.md)。
 
-  - [安全な添付ファイルのポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)。
+  - [安全な添付ファイルのポリシー](set-up-atp-safe-attachments-policies.md)。
 
 ベースラインとして使用される **標準** および **厳密** なポリシー設定値については、「 [EOP and Office 365 ATP security の推奨設定](recommended-settings-for-eop-and-office365-atp.md)」を参照してください。
 
@@ -132,7 +132,7 @@ ms.locfileid: "48203433"
 - **更新者**
 - **設定名**
 - **ポリシー**
-- **型**
+- **Type**
 
 結果をフィルター処理するには、**[フィルター]** をクリックします。 表示される [ **フィルター** ] ポップアップでは、次のフィルターから選択できます。
 

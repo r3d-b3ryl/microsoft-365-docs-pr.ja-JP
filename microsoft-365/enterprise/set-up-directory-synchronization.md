@@ -3,7 +3,7 @@ title: Microsoft 365 のディレクトリ同期をセットアップする
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Microsoft 365 とオンプレミスの Active Directory との間のディレクトリ同期をセットアップする方法について説明します。
-ms.openlocfilehash: 3a846a6c558f221c1869dce6da27e3d34680f75d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 308774dcdbaffc1096ab6ad144484e6920accdfa
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691679"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327095"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Microsoft 365 のディレクトリ同期をセットアップする
 
@@ -35,7 +35,7 @@ ms.locfileid: "46691679"
 
 Microsoft 365 では、Azure Active Directory (Azure AD) テナントを使用して、クラウドベースのリソースにアクセスするための id を認証およびアクセス許可用に保存および管理します。 
 
-オンプレミスの Active Directory ドメインサービス (AD DS) がある場合は、AD DS のユーザーアカウント、グループ、および連絡先を Microsoft 365 サブスクリプションの Azure AD テナントと同期させることができます。 これは、Microsoft 365 のハイブリッド id です。 そのコンポーネントは次のとおりです。
+オンプレミスの Active Directory ドメインサービス (AD DS) ドメインまたはフォレストがある場合は、AD DS のユーザーアカウント、グループ、および連絡先を Microsoft 365 サブスクリプションの Azure AD テナントと同期させることができます。 これは、Microsoft 365 のハイブリッド id です。 そのコンポーネントは次のとおりです。
 
 ![Microsoft 365 のディレクトリ同期のコンポーネント](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -51,7 +51,7 @@ Azure AD Connect はオンプレミスのサーバー上で実行され、AD DS 
 
 - フェデレーション認証
 
-  Azure AD は、別の id プロバイダーに接続するための認証を要求しているクライアントコンピューターをリダイレクトします。
+  Azure AD は、別の id プロバイダーへの認証を要求しているクライアントコンピューターを参照します。
 
 詳細については、「 [ハイブリッド id](plan-for-directory-synchronization.md) 」を参照してください。
   

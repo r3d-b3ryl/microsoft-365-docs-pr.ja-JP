@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295540"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327011"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -61,13 +61,13 @@ ms.locfileid: "48295540"
 
 - **作成時刻**
 - **[ユーザー ID]**
-- **Action**
+- **操作**
 
 レポートビューに戻るには、[ **レポートの表示**] をクリックします。
 
 ## <a name="encryption-report"></a>暗号化レポート
 
-**暗号化レポート**は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 例:
+**暗号化レポート**は、EOP (exchange online またはスタンドアロン EOP の exchange online メールボックスなしのメールボックスを使用したサブスクリプション) で利用できます。 組織のセキュリティチームは、このレポートの情報を使用して、パターンを識別し、機密性の高い電子メールメッセージのポリシーを事前に適用または調整することができます。 次に、例を示します。
 
 - ユーザーによって大量の電子メールメッセージが暗号化されている場合、暗号化ポリシーを追加して、特定のユースケースの暗号化を自動化することができます。 詳細については、「 [Microsoft 365 で電子メールメッセージを暗号化するためのメールフロールールを定義する](../../compliance/define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
@@ -224,7 +224,7 @@ ms.locfileid: "48295540"
 - **[送信者のアドレス]**
 - **受信者のアドレス**
 - **イベントの種類**
-- **Action**
+- **操作**
 - **Subject**
 
 詳細テーブルで [ **フィルター** ] をクリックすると、次のフィルターを使用して結果を変更できます。
@@ -263,16 +263,16 @@ ms.locfileid: "48295540"
 - **スプーフィングされた送信者**
 - **True 送信者**
 - [**Sender IP (送信者の IP)**]
-- **Action**
+- **操作**
 - **メッセージ数**
 
 レポートビューに戻るには、[ **レポートの表示**] をクリックします。
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-**脅威保護の状態**レポートは、EOP と OFFICE 365 ATP の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint Online、OneDrive、Microsoft Teams で検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報は表示できません。
+**脅威保護の状態**レポートは、EOP と OFFICE 365 ATP の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint、OneDrive、Microsoft Teams 用の ATP によって検出された悪意のあるファイル](atp-for-spo-odb-and-teams.md)に関する情報は表示できません。
 
-このレポートでは、マルウェア対策エンジンによってブロックされたファイルや web サイトアドレス (Url)、 [ゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)、Atp の [安全なリンク](atp-safe-links.md)、Atp の [安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](set-up-anti-phishing-policies.md)など、さまざまなコンテンツを含む電子メールメッセージの数が提供されます。 この情報を使用して、傾向を特定したり、組織のポリシーを調整する必要があるかどうかを判断したりできます。 メッセージが5人の受信者に送信される場合は、メッセージを5つの異なるメッセージとしてカウントし、1つのメッセージではないことを理解しておくことが重要です。
+レポートには、マルウェア対策エンジンによってブロックされたファイルや web サイトアドレス (Url)、 [ゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)、および [安全なリンク](atp-safe-links.md)、 [安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](set-up-anti-phishing-policies.md)などの atp 機能によってブロックされた電子メールメッセージの数が表示されます。 この情報を使用して、傾向を特定したり、組織のポリシーを調整する必要があるかどうかを判断したりできます。 メッセージが5人の受信者に送信される場合は、メッセージを5つの異なるメッセージとしてカウントし、1つのメッセージではないことを理解しておくことが重要です。
 
 レポートを表示するには、[セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[**レポート**] ダッシュボードに移動し \> **Dashboard**て、[**脅威保護の状態**] を選択します。 レポートに直接移動するには、次のいずれかの Url を開きます。
 
@@ -366,7 +366,7 @@ ms.locfileid: "48295540"
 - **開始日** と **終了日**
 - **検出**
 - **保護対象**: **ATP** または **EOP**
-- **タグ**: タグでフィルター処理して、特定のタグが適用されたユーザーまたはグループを返します。 ユーザータグの詳細については、「 [user tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)」を参照してください。
+- **タグ**: タグでフィルター処理して、特定のタグが適用されたユーザーまたはグループを返します。 ユーザータグの詳細については、「 [user tags](user-tags.md)」を参照してください。
 - **ドメイン**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ ms.locfileid: "48295540"
 - **開始日** と **終了日**
 - **検出**
 - **保護者** (OFFICE 365 ATP のみ): **ATP** または **EOP**
-- **タグ**: タグでフィルター処理して、特定のタグが適用されたユーザーまたはグループを返します。 ユーザータグの詳細については、「 [user tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)」を参照してください。
+- **タグ**: タグでフィルター処理して、特定のタグが適用されたユーザーまたはグループを返します。 ユーザータグの詳細については、「 [user tags](user-tags.md)」を参照してください。
 - **ドメイン**
 - **受信者** (このフィルター処理可能なプロパティは、詳細テーブルビューでのみ使用可能であることに注意してください)
 
@@ -472,7 +472,7 @@ ms.locfileid: "48295540"
 
 レポートにデータが表示されない場合は、ポリシーが正しく設定されているかどうかを再確認してください。 詳細については、「 [脅威からの保護](protect-against-threats.md)」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [EOP でのスパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
 

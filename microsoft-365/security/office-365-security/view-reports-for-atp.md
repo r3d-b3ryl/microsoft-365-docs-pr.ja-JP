@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ/コンプライアンスセンターで Office 365 Advanced Threat Protection のレポートを検索して使用し &amp; ます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 16fef101f722a23b3a64d91c85c2f946c67036f0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196587"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328037"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Office 365 Advanced Threat Protection のレポートを表示する
 
@@ -36,7 +36,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 
 ## <a name="advanced-threat-protection-file-types-report"></a>Advanced Threat Protection ファイルの種類レポート
 
-**Advanced Threat Protection のファイルの種類レポート**レポートには、 [ATP の安全な添付](atp-safe-attachments.md)ファイルによって検出されたファイルの種類が表示されます。
+**Advanced Threat Protection のファイルの種類レポート**レポートには、[安全な添付](atp-safe-attachments.md)ファイルによって悪意のあるファイルとして検出されたファイルの種類が表示されます。
 
  レポートの集計ビューでは90日間のフィルター処理が可能になりますが、詳細ビューでは10日間のフィルター処理のみが可能です。
 
@@ -62,7 +62,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
   - **悪意のある実行可能ファイルの添付ファイル**
   - **Others**
 
-  特定の日 (データポイント) にカーソルを移動すると、EOP での [ATP の安全な添付](atp-safe-attachments.md) ファイルと [マルウェア対策保護](anti-malware-protection.md)によって検出された悪意のあるファイルの種類の内訳を確認できます。
+  特定の日 (データポイント) にカーソルを移動すると、EOP で [安全な添付](atp-safe-attachments.md) ファイルと [マルウェア対策保護](anti-malware-protection.md)によって検出された悪意のあるファイルの種類の内訳が表示されます。
 
   ![ATP ファイルの種類レポートのファイルビュー](../../media/atp-file-types-report-file-view.png)
 
@@ -76,7 +76,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
   - **アクセスをブロックする**
   - **置き換えられるメッセージ**
   - **監視されたメッセージ**
-  - **動的な電子メール配信に置き換え**ます。詳細については、「 [動的配信と、ATP の安全な添付ファイルを使用したプレビュー](dynamic-delivery-and-previewing.md)」を参照してください。
+  - **動的な電子メール配信に置き換え**ます。詳細については、「 [安全な添付ファイルのポリシーでの動的配信](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)」を参照してください。
 
   ![ATP ファイルの種類レポートのメッセージビュー](../../media/atp-file-types-report-message-view.png)
 
@@ -109,7 +109,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
   - **File**
-  - **[件名]**
+  - **Subject**
 
   [ **フィルター**] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -138,7 +138,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
   - **アクセスをブロックする**
   - **置き換えられるメッセージ**
   - **監視されたメッセージ**
-  - **動的な電子メール配信に置き換え**ます。詳細については、「 [動的配信と、ATP の安全な添付ファイルを使用したプレビュー](dynamic-delivery-and-previewing.md)」を参照してください。
+  - **動的な電子メール配信に置き換え**ます。詳細については、「 [安全な添付ファイルのポリシーでの動的配信](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)」を参照してください。
 
   ![ATP ファイルの種類レポートのメッセージビュー](../../media/atp-file-types-report-message-view.png)
 
@@ -158,7 +158,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
   - **悪意のある実行可能ファイルの添付ファイル**
   - **Others**
 
-  特定の日 (データポイント) にカーソルを移動すると、EOP での [ATP の安全な添付](atp-safe-attachments.md) ファイルと [マルウェア対策保護](anti-malware-protection.md)によって検出された悪意のあるファイルの種類の内訳を確認できます。
+  特定の日 (データポイント) にカーソルを移動すると、EOP で [安全な添付](atp-safe-attachments.md) ファイルと [マルウェア対策保護](anti-malware-protection.md)によって検出された悪意のあるファイルの種類の内訳が表示されます。
 
   ![ATP ファイルの種類レポートのファイルビュー](../../media/atp-file-types-report-file-view.png)
 
@@ -178,7 +178,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
   - **[送信者のアドレス]**
   - **[メッセージ ID]**
   - **File**
-  - **[件名]**
+  - **Subject**
 
   [ **フィルター**] をクリックすると、次のフィルターを使用して結果を変更できます。
 
@@ -206,7 +206,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 
 ## <a name="url-threat-protection-report"></a>URL の脅威保護レポート
 
-**Url 脅威保護レポート**には、検出された脅威と、 [ATP の安全なリンク](atp-safe-links.md)の一部として、URL クリックに対して行われた操作の概要と傾向のビューが表示されます。 このレポートには、安全なリンクポリシーが適用されているユーザーのクリックデータがありません。 [ユーザーのクリックを **追跡** しない] オプションが選択されています。
+**Url 脅威保護レポート**には、検出された脅威の概要と傾向ビュー、および[安全なリンク](atp-safe-links.md)の一部として、URL クリックに対して行われたアクションが表示されます。 このレポートには、安全なリンクポリシーが適用されているユーザーのクリックデータがありません。 [ユーザーのクリックを **追跡** しない] オプションが選択されています。
 
 レポートを表示するには、 [セキュリティ & コンプライアンスセンター](https://protection.office.com)を開き、[ **レポート** \> **ダッシュボード** ] に移動して、[ **URL 保護レポート**] を選択します。 レポートに直接移動するには、を開き <https://protection.office.com/reportv2?id=URLProtectionActionReport> ます。
 
@@ -234,7 +234,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 
   ![URL URL の脅威保護レポートにある [保護アクション表示] をクリックします。](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **Url [アプリケーションごと]**: OFFICE 365 ATP の安全なリンクをサポートしているアプリケーションによる url クリックの数を表示します。
+- **Url [アプリケーション別] をクリック**: 安全なリンクをサポートするアプリケーションによる url クリックの数を表示します。
 
   - **電子メール クライアント**
   - **PowerPoint**
@@ -255,7 +255,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 [ **詳細テーブルの表示**] をクリックすると、このレポートでは、過去7日間の組織内で発生したすべてのクリックが、次のようなほぼリアルタイムで表示されます。
 
 - **[時刻] をクリック**
-- **User**
+- **ユーザー**
 - **URL**
 - **操作**
 - **App**
@@ -275,7 +275,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 |**エクスプローラー** (atp plan 2) または **リアルタイム検出** (atp プラン 1)|[脅威エクスプローラー (およびリアルタイムの検出)](threat-explorer.md)|
 |上位の送信者と受信者レポート、スプーフィングメールレポート、スパム検出レポートなどの**電子メールセキュリティレポート**。|[セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)|
 |転送レポート、メールフロー状態レポート、上位の送信者と受信者レポートなどの**メールフローレポート**。|[セキュリティ & コンプライアンスセンターでメールフローレポートを表示する](view-mail-flow-reports.md)|
-|**ATP の安全なリンクの URL トレース** (PowerShell のみ)。 このコマンドレットの出力では、過去7日間の ATP の安全なリンクアクションの結果が表示されます。|[取得-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**安全なリンクの URL トレース** (PowerShell のみ)。 このコマンドレットの出力では、過去7日間の安全なリンクアクションの結果が表示されます。|[取得-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**EOP および ATP のメールトラフィック結果** (PowerShell のみ)。 このコマンドレットの出力には、ドメイン、日付、イベントの種類、方向、アクション、およびメッセージ数に関する情報が含まれています。|[Get-mailtrafficatpreport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**EOP および ATP の検出に関するメール詳細レポート** (PowerShell のみ)。 このコマンドレットの出力には、悪意のあるファイルまたは Url、フィッシングの試行、偽装、その他の電子メールやファイルの潜在的な脅威に関する詳細が記載されています。|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -306,7 +306,7 @@ Office 365 Advanced Threat Protection (ATP) 組織 (たとえば、Microsoft 365
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートでデータが表示されない場合はどうなりますか。
 
-ATP レポートにデータが表示されない場合は、ポリシーが正しく設定されていることを再確認してください。 組織で atp の [安全なリンクポリシー](set-up-atp-safe-links-policies.md) と [atp の安全な添付ファイルのポリシー](set-up-atp-safe-attachments-policies.md) が定義されている必要があります。これは、atp 保護を適切に実行するためです。 また、「 [スパム対策およびマルウェア対策保護 (Office 365](anti-spam-and-anti-malware-protection.md))」を参照してください。
+ATP レポートにデータが表示されない場合は、ポリシーが正しく設定されていることを再確認してください。 組織では、ATP 保護を適用するために、 [安全なリンクポリシー](set-up-atp-safe-links-policies.md) と [安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md) が定義されている必要があります。 また、 [スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)についても参照してください。
 
 ## <a name="related-topics"></a>関連項目
 

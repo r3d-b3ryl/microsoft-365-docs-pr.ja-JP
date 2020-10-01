@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。
-ms.openlocfilehash: 6643228a3f71ba3c0c993577ba60b8e365b3d3df
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 754f3eac884128e0707a02c15d4d3766f5fa4ca5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318230"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327797"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -100,14 +100,13 @@ Office 365 ATP:
 
 グローバル管理者は、次の保護を構成できます。
 
-- [ATP の安全なリンクの設定](office-365-security/set-up-atp-safe-links-policies.md)
-- [ATP の安全な添付ファイル機能のポリシーを設定する](office-365-security/set-up-atp-safe-attachments-policies.md)
-- [「書き換えない」URL のカスタム リストを設定する](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [ブロックする URL のカスタム リストを設定する](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
+- [安全なリンク ポリシーを設定する](office-365-security/set-up-atp-safe-links-policies.md)
+- [安全なリンクのグローバル設定を構成する](office-365-security/configure-global-settings-for-safe-links.md)
+- [安全添付ファイルポリシーをセットアップする](office-365-security/set-up-atp-safe-attachments-policies.md)
 
 これらのワークロードに対して ATP を構成するには、Exchange Online 管理者および SharePoint Online 管理者と協力する必要があります。
 
-- [SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
+- [SharePoint、OneDrive、Microsoft Teams 用の ATP](office-365-security/atp-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-azure-advanced-threat-protection"></a>4: Azure Advanced Threat Protection を構成する
 

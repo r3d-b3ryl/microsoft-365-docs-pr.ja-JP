@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、ゼロ時間自動削除 (ZAP) を使用して、Exchange Online メールボックス内の配信されたメッセージを迷惑メールフォルダーに移動する方法、またはスパムまたはフィッシングとして検出された検疫について調べることができます。
-ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202641"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327977"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online でのゼロ時間自動削除 (ZAP)
 
@@ -83,7 +83,7 @@ ZAP アクションはユーザーにとってシームレスです。メッセ�
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Office 365 Advanced Threat Protection の ZAP に関する考慮事項 (Office 365 ATP)
 
-ZAP は、 [動的配信](dynamic-delivery-and-previewing.md) スキャンのプロセス内のメッセージを検疫しません。または、マルウェアフィルターによって添付ファイルが **マルウェアアラート Text.txt** ファイルに置き換えられています。 これらの種類のメッセージに対してフィッシングまたはスパムのシグナルを受信し、スパム対策ポリシーのフィルター verdict がメッセージに対して何らかのアクションを実行するように設定されている場合 ([迷惑メールに移動] に移動します)、ZAP は既定で [迷惑メールに移行] アクションになります。
+ZAP は、安全な添付ファイルのスキャンで [動的配信](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) のプロセスに含まれるメッセージを検疫しません。または、EOP マルウェアフィルターによって添付ファイルが **マルウェアアラート Text.txt** ファイルに置き換えられています。 これらの種類のメッセージに対してフィッシングまたはスパムのシグナルを受信し、スパム対策ポリシーのフィルター verdict がメッセージに対して何らかのアクションを実行するように設定されている場合 (迷惑メール、リダイレクト、削除、または検疫に移動する)、ZAP は既定で [迷惑メールに移動] アクションになります。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>ZAP がメッセージを移動したかどうかを確認する方法
 

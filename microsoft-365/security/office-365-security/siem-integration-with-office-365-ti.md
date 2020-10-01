@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の SIEM サーバーと Office 365 Advanced Threat Protection および関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203655"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327167"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>高度な脅威保護との SIEM の統合
 
@@ -46,7 +46,6 @@ Office 365 Activity Management API は、組織の Microsoft 365 および Azure
 
 SIEM サーバーまたはその他の同様のシステムが監査をポーリングして、検出イベントにアクセスし **ます** 。 詳細については、「 [Office 365 管理 api の使用を開始](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)する」を参照してください。 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>列挙値: AuditLogRecordType - 型: Edm.Int32
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
@@ -56,7 +55,7 @@ SIEM サーバーまたはその他の同様のシステムが監査をポーリ
 |値|メンバ名|説明|
 |---|---|---|
 |個|ThreatIntelligence|Exchange Online Protection および Office 365 ATP からのフィッシングとマルウェアのイベント。|
-|41|ThreatIntelligenceUrl|ATP の安全なリンクの時間帯とブロックは、Office 365 ATP からのイベントを無視します。|
+|41|ThreatIntelligenceUrl|[安全なリンク] Office 365 ATP からのブロック時間とブロックの上書きイベント。|
 |47|ThreatIntelligenceAtpContent|Office 365 ATP からの、SharePoint Online、OneDrive for Business、Microsoft Teams のファイルのフィッシングとマルウェアのイベント。|
 |64|AIR 調査|Office 365 ATP Plan 2 から、調査の詳細や関連する成果物などの自動化された調査および応答イベント。|
 |

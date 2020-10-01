@@ -3,7 +3,7 @@ title: Microsoft 365 クラウドのみの id
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: Microsoft 365 サブスクリプションがクラウド専用の id を使用しているときに、ユーザーとグループを作成する方法について説明します。
-ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547760"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327929"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 クラウドのみの id
 
@@ -41,7 +41,7 @@ ms.locfileid: "47547760"
  
 ![クラウド専用の id の基本コンポーネント](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-組織内のユーザーとユーザーアカウントは、さまざまな方法で分類できます。 たとえば、一部は従業員で、恒久的な状態になっています。 一部のベンダー、請負業者、またはパートナーは、一時的な状態になっています。 ユーザーアカウントを持たない外部ユーザーも、対話とコラボレーションをサポートするために特定のサービスやリソースへのアクセスを引き続き付与する必要があります。 例:
+組織内のユーザーとユーザーアカウントは、さまざまな方法で分類できます。 たとえば、一部は従業員で、恒久的な状態になっています。 一部のベンダー、請負業者、またはパートナーは、一時的な状態になっています。 ユーザーアカウントを持たない外部ユーザーも、対話とコラボレーションをサポートするために特定のサービスやリソースへのアクセスを引き続き付与する必要があります。 次に、例を示します。
 
 - テナント アカウントは、組織内でクラウド サービスのライセンスを付与したユーザーを表します。
 
@@ -58,17 +58,9 @@ Azure AD のグループは、クラウド環境の管理を簡素化するい�
 - サービスとしてのソフトウェア (SaaS) アプリケーションのユーザーを自動的にプロビジョニングし、多要素認証 (MFA) やその他の条件付きアクセスポリシーを使用してそれらのアプリケーションへのアクセスを保護します。
 - SharePoint Online チームサイトのアクセス許可とアクセス許可のレベルをプロビジョニングします。
 
-次の方法で新しい ***ユーザー*** を作成します。
+## <a name="next-steps-for-cloud-only-identity"></a>クラウド専用の id の次の手順
 
-- [Microsoft 365 管理センター](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [PowerShell for Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
-
-次のものを使用して、新しい ***グループ*** を作成します。
-
-- [Microsoft 365 管理センター](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [PowerShell for Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
-
-## <a name="next-step-for-cloud-only-identity"></a>クラウド専用の id の次の手順
-
-[ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)
+- [ユーザー アカウントを管理する](manage-microsoft-365-accounts.md)
+- [ユーザー アカウントにライセンスを割り当てる](assign-licenses-to-user-accounts.md)
+- [グループとグループメンバーシップを管理する](manage-microsoft-365-groups.md)
+- [ユーザーアカウントのパスワードを管理する](manage-microsoft-365-passwords.md)

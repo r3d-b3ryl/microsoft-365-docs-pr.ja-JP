@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (ATP) の保護機能において標準ポリシー設定と厳密なポリシー設定を適用する方法を学習できます。
-ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202605"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326545"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP および Office 365 ATP の事前設定されたセキュリティポリシー
 
@@ -35,7 +35,7 @@ ms.locfileid: "48202605"
 事前設定されたセキュリティポリシーは、次の要素で構成されます。
 
 - プロファイル
-- ポリシー
+- Policies
 - ポリシー設定
 
 また、複数の事前設定されたセキュリティポリシーやその他のポリシーが同じユーザーに適用される場合は、優先順位が重要です。
@@ -75,9 +75,9 @@ ms.locfileid: "48202605"
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [高度なフィッシングしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [安全なリンク]**標準の事前設定**されたセキュリティポリシーと**厳密な事前設定セキュリティポリシー**という名前の[ポリシー](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users) 。
+  - [安全なリンク]**標準の事前設定**されたセキュリティポリシーと**厳密な事前設定セキュリティポリシー**という名前の[ポリシー](set-up-atp-safe-links-policies.md) 。
 
-  - [[安全な添付ファイル](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)]**標準の既定のセキュリティポリシー**と、厳密に設定された**セキュリティポリシー**という名前のポリシー。
+  - [[安全な添付ファイル](set-up-atp-safe-attachments-policies.md)]**標準の既定のセキュリティポリシー**と、厳密に設定された**セキュリティポリシー**という名前のポリシー。
 
 EOP の保護は、ATP の保護とは別のユーザーに適用することができることに注意してください。
 

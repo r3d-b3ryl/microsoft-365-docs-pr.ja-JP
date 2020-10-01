@@ -14,15 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- M365initiative-CoreDeploy
 f1.keywords:
 - NOCSH
 description: Office 365 で VPN スプリット トンネリングを使用して、リモート ユーザーの Office 365 の接続を最適化する方法のガイダンスです。
-ms.openlocfilehash: cda9333c7edbcc323544290c2ba946a8464f9c57
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: fd914a1bb9c5ad905bd94766f3e90d63f7a8bdc3
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214768"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327416"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する
 <!---

@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: このトピックでは、Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について手順を追って説明します。
-ms.openlocfilehash: 72040469f802c2cb5a4fac132ff1c3cd8999e124
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9e36c85b74a237a8b14904839aad55ac676dcaf4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202021"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326927"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Office 365 テナントを構成する 
 
@@ -47,8 +47,8 @@ Microsoft 365 セキュリティセンターには、環境を保護する機能
 |---|---|---|
 |**フィッシング対策**|はい|カスタムドメインがある場合は、既定のフィッシング対策ポリシーを構成して、CEO などの最も重要なユーザーの電子メールアカウントを保護し、ドメインを保護します。 [Office 365 のフィッシング対策ポリシー](set-up-anti-phishing-policies.md)を確認し、「configure フィッシング対策ポリシーを[EOP に構成する](configure-anti-phishing-policies-eop.md)か、「 [Office 365 で ATP のフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)」を参照してください。|
 |**マルウェア対策エンジン**|はい| 既定のポリシーを編集します。 <br/> &ensp;&ensp;* 一般的な添付ファイルの種類のフィルター— [オン] <br/><br/> また、カスタムマルウェアフィルターポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することもできます。 <br/><br/> 詳しくは、以下の資料を参照してください。 <br/> &ensp;&ensp;* [マルウェア対策保護](anti-malware-protection.md) <br/> &ensp;&ensp;* [マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
-|**ATP の安全な添付ファイル機能**|いいえ| 「安全な添付ファイル」のメインページで、このボックスをオンにして、SharePoint、OneDrive、Microsoft Teams のファイルを保護します。 <br/> &ensp;&ensp;* SharePoint、OneDrive、Microsoft Teams の ATP を有効にする <br/><br/> 次の設定を使用して、新しい安全な添付ファイルポリシーを追加します。 <br/> &ensp;&ensp;* ブロック-検出されたマルウェアを使用して、現在の電子メールと添付ファイルをブロックします (このオプションを選択します) <br/> &ensp;&ensp;* リダイレクトを有効にする-(このボックスをオンにして、管理者や検疫アカウントなどの電子メールアドレスを入力してください) <br/> &ensp;&ensp;* 添付ファイルのマルウェアスキャンがタイムアウトまたはエラーが発生した場合は、上記の選択を適用します (このチェックボックスをオンにします)。 <br/> &ensp;&ensp;* 適用対象-受信者ドメインは (ドメインを選択します) <br/><br/>詳細情報: [Office 365 の ATP の安全な添付ファイルのポリシーを設定](set-up-atp-safe-attachments-policies.md)する|
-|**ATP の安全なリンク**|はい| この設定を組織全体の既定のポリシーに追加します。 <br/> &ensp;&ensp;* 安全なリンクの使用: Microsoft 365 Apps for enterprise、Office for iOS、Office (このオプションを選択します)。 <br/><br/>特定の受信者に推奨されるポリシー: <br/> &ensp;&ensp;* ユーザーがリンクをクリックしたときに、既知の悪意のあるリンクの一覧に対して、Url が書き換えられ、チェックされます (このオプションを選択します)。 <br/> &ensp;&ensp;* 安全な添付ファイルを使用して、ダウンロード可能なコンテンツをスキャンします (このチェックボックスをオンにします)。 <br/> &ensp;&ensp;* 適用対象-受信者ドメインは (ドメインを選択します)。 <br/><br/> 詳細については、「 [Office 365 の ATP の安全なリンク](atp-safe-links.md)」を参照してください。|
+|**Office 365 ATP の安全な添付ファイル**|いいえ|安全な添付ファイルのメインページで、[ **グローバル設定** ] をクリックし、この設定をオンにします。 <br/> &ensp;&ensp;**SharePoint、OneDrive、Microsoft Teams の ATP を有効にする** <br/><br/> 次の設定を使用して、安全な添付ファイルポリシーを作成します。 <br/> &ensp;&ensp;* **ブロック**: 不明なマルウェア応答として [ **ブロック** ] を選択します。 <br/> &ensp;&ensp;* **リダイレクトを有効にする**: このボックスをオンにして、管理者や検疫アカウントなどの電子メールアドレスを入力します。 <br/> &ensp;&ensp;* **マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合は、上記の選択を適用**します。このチェックボックスをオンにします。 <br/> &ensp;&ensp;* **適用先**: **受信者ドメインは、** \> ドメインを選択します。 <br/><br/> 詳細情報: [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)を行い、[安全な添付ファイルポリシーを設定](set-up-atp-safe-attachments-policies.md)する|
+|**Office 365 ATP の安全なリンク**|はい|[安全なリンク] のメインページで、[ **グローバル設定**] をクリックします。 <br/> &ensp;&ensp;* **安全なリンクの使用: Office 365 applications**: この設定が有効になっていることを確認します。 <br/> &ensp;&ensp;* **ユーザーが [安全なリンク] をクリックしたときに追跡しない**: この設定をオフにして、ユーザーのクリックを追跡します。<br/><br/>次の設定を使用して、安全なリンクポリシーを作成します。 <br/> &ensp;&ensp;* **[メッセージ内の不明な潜在的な悪意のある url に対するアクション]**: この設定が **オンに**なっていることを確認します。 <br/> &ensp;&ensp;* **Microsoft Teams 内の不明または悪意のある url に対するアクションを選択**します。この設定が **オンに**なっていることを確認します。 <br/> &ensp;&ensp;* **疑わしいリンクおよびファイルを指すリンクのリアルタイム URL スキャンを適用**します。このチェックボックスをオンにします。 <br/> &ensp;&ensp;&ensp;&ensp;* **メッセージを配信する前に、URL のスキャンが完了するまで待機**します。このチェックボックスをオンにします。 <br/> &ensp;&ensp;* **[組織内で送信された電子メールメッセージに安全なリンクを適用する**]: このチェックボックスをオンにします。 <br/> &ensp;&ensp;* **ユーザーが元の URL に移動できないようにし**ます。このチェックボックスをオンにします。 <br/> &ensp;&ensp;* **適用先**: **受信者ドメインは、** \> ドメインを選択します。 <br/><br/> 詳細については、「 [安全なリンクポリシーを](set-up-atp-safe-links-policies.md)セットアップする」を参照してください。|
 |**スパム対策 (メールフィルター)**|はい| 監視対象: <br/> &ensp;&ensp;* スパムが多すぎます-カスタム設定を選択し、既定のスパムフィルターポリシーを編集します。 <br/> &ensp;&ensp;* スプーフィングインテリジェンス—ドメインをスプーフィングしている送信者を確認します。 これらの送信者を禁止または許可します。 <br/><br/>詳細については [、「Microsoft 365 電子メールのスパム対策保護](anti-spam-protection.md)」を参照してください。|
 |***電子メール認証***|はい|電子メール認証は、ドメインネームシステム (DNS) を使用して、電子メールの送信者に関する検証可能な情報を電子メールメッセージに追加します。 Microsoft 365 では、既定のドメイン (onmicrosoft.com) に対して電子メール認証を設定していますが、Microsoft 365 管理者はカスタムドメインに対して電子メール認証を使用することもできます。 3つの認証方法が使用されます。 <br/><br/> &ensp;&ensp;* Sender Policy Framework (または SPF)。<br/>&ensp;&ensp;&ensp;&ensp;-セットアップの場合は、「 [Microsoft 365 での SPF の設定」を](set-up-spf-in-office-365-to-help-prevent-spoofing.md)参照して、スプーフィングを防止してください。 <br/> &ensp;&ensp;* DomainKeys で識別されたメール (DKIM)。 <br/> &ensp;&ensp;&ensp;&ensp;-「 [DKIM を使用して、カスタムドメインから送信される送信電子メールを検証する」を](use-dkim-to-validate-outbound-email.md)参照してください。 <br/>&ensp;&ensp;&ensp;&ensp;-DKIM を構成した後、セキュリティセンターでそれを有効にします。<br/> &ensp;&ensp;* ドメインベースのメッセージ認証、レポート、および準拠 (DMARC)。 <br/> &ensp;&ensp;&ensp;&ensp;-DMARC セットアップの場合は、 [DMARC を使用して Microsoft 365 で電子メールを検証](use-dmarc-to-validate-email.md)します。|
 |

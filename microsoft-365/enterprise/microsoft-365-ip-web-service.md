@@ -11,6 +11,7 @@ localization_priority: Priority
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365initiative-CoreDeploy
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
-ms.openlocfilehash: abcf6eb8ab963749b451e1f0eeef91d963b76b89
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 55ad3330e1d75b2d52af63076840bc6db7294884
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696241"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327523"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Office 365 IP アドレスと URL の Web サービス
 

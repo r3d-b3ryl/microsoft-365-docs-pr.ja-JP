@@ -1,12 +1,12 @@
 ---
-title: ATP の安全な添付ファイル機能
+title: 安全な添付ファイル
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 05/17/2019
+ms.date: ''
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,63 +17,119 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
-description: この記事では、Office 365 用の ATP の安全な添付ファイル機能と、サブスクリプションの機能を取得する方法について説明します。
-ms.openlocfilehash: 1ff7021f1c9fa64d3f04cbcac7231733399ad2b8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 管理者は、Office 365 Advanced Threat Protection (ATP) の安全な添付ファイル機能について学習できます。
+ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198777"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326533"
 ---
-# <a name="atp-safe-attachments"></a>ATP の安全な添付ファイル機能
+# <a name="safe-attachments-in-office-365-atp"></a>Office 365 ATP の安全な添付ファイル
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+Office 365 の安全な添付ファイル。 [Advanced Threat protection (ATP)](office-365-atp.md) は、 [Exchange ONLINE protection (EOP) のマルウェア対策保護](anti-malware-protection.md)によって既にスキャンされている電子メール添付ファイルに対して、追加の保護レイヤーを提供します。 具体的には、安全な添付ファイルは、仮想環境を使用して、受信者に配信される前に電子メールメッセージ内の添付ファイルをチェックします ( _分析_と呼ばれるプロセス)。
 
-## <a name="overview-of-office-365-atp-safe-attachments"></a>Office 365 の ATP の安全な添付ファイルの概要
+電子メールメッセージの安全な添付ファイルの保護は、安全な添付ファイルポリシーによって制御されます。 既定の安全な添付ファイルポリシーはありません。 **したがって、安全な添付ファイルの保護を得るには、1つ以上の安全な添付ファイルポリシーを作成する必要があり**ます。 手順については、「 [ATP で安全な添付ファイルポリシーをセットアップ](set-up-atp-safe-attachments-policies.md)する」を参照してください。
 
-ATP の安全な添付ファイル ( [atp の安全なリンク](atp-safe-links.md)と共に) は、 [Office 365 Advanced Threat Protection](office-365-atp.md) (atp) の一部です。 ATP の安全な添付ファイル機能は、電子メールの添付ファイルが悪意のあるものがないかどうかを確認し、組織を保護するアクションを実行します。 ATP の安全な添付ファイル機能は、グローバルまたはセキュリティ管理者によって設定された [ATP の安全な添付ファイルポリシー](set-up-atp-safe-attachments-policies.md) に従って組織を保護します。
-
-ATP の保護は、SharePoint Online、OneDrive for Business、Microsoft Teams のファイルに拡張することもできます。 詳細については、「 [Office 365 Advanced Threat Protection For SharePoint、OneDrive、Microsoft Teams](atp-for-spo-odb-and-teams.md)」を参照してください。
-
-## <a name="how-to-get-atp-safe-attachments"></a>ATP の安全な添付ファイルを取得する方法
-
-最初に、サブスクリプションに [Advanced Threat Protection](office-365-atp.md)が含まれていることを確認します。 ATP は、「 [microsoft 365 e5](https://www.microsoft.com/microsoft-365/enterprise/home)」、「 [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business)」、「office 365 E5」、「office 365 A5」などのサブスクリプションに含まれています。Office 365 ATP を含まない Microsoft 365 サブスクリプションが組織にある場合は、ATP をアドオンとして購入する可能性があります。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection) 」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
-
-次に、ATP の安全な添付ファイルポリシーが定義されていることを確認します。 (「 [Office 365 ATP の安全な添付ファイルのポリシーを](set-up-atp-safe-attachments-policies.md)セットアップする」を参照してください)ATP の安全な添付ファイル機能は、次の場合にアクティブになります。
-
-- ATP の安全な添付ファイルポリシーはセットアップされています。 (「 [Office 365 で ATP の安全な添付ファイルのポリシーを設定](set-up-atp-safe-attachments-policies.md)する」を参照してください)。
-
-- ユーザーが職場または学校のアカウントを使用してサインインしている。 (「 [Office へのサインイン」を](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)参照してください)。
-
-ATP ポリシーを定義 (または編集) するには、適切な役割が割り当てられている必要があります。 次の表では、いくつかの例について説明します。
-
-|役割|参照先/割り当て方法|
-|---|---|
-|グローバル管理者|Microsoft 365 の購入にサインアップするユーザーは、既定ではグローバル管理者になります。 (詳細については、 [Microsoft 365 管理者の役割につい](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) てを参照してください)。|
-|セキュリティ管理者|Azure Active Directory 管理センター ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織の管理|Exchange 管理センター ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>または <br>  PowerShell コマンドレット (「[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」を参照してください)|
-|
-
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>ATP の安全な添付ファイルの保護が適切かどうかを確認する方法
-
-[ATP の安全な添付ファイルポリシーを定義 (またはレビュー)](set-up-atp-safe-attachments-policies.md)した後、サービスがどのように機能しているかを確認するために、 [Advanced Threat Protection のレポートを表示](view-reports-for-atp.md)することをお勧めします。
-
-次の表に、いくつかのシナリオの例を示します。 これらのすべての場合において、高度な脅威保護を含む Microsoft 365 サブスクリプションが組織にあると想定しています。
+次の表では、ATP を含む Microsoft 365 および Office 365 組織の安全な添付ファイルのシナリオについて説明します (つまり、ライセンスの不足が例では問題になることはありません)。
 
 ****
 
-|シナリオ例|この場合、ATP の安全な添付ファイルの保護が適用されますか。|
+|シナリオ|結果|
 |---|---|
-|Pat の組織には Office 365 E5 がありますが、ATP の安全な添付ファイルに関するポリシーが定義されている人はいません。|いいえ。 この機能は使用できますが、ATP の安全な添付ファイルの保護を有効にするためには、少なくとも1つの ATP の安全な添付ファイルポリシーを定義する必要があります。|
-|Lee は、Contoso 社の販売部門の従業員です。 Lee の組織には、財務部門の従業員にのみ適用される ATP の安全な添付ファイルポリシーがあります。|いいえ。 この場合、財務の従業員は ATP の安全な添付ファイルの保護を行いますが、販売部門を含むその他の従業員は、これらのグループを含むポリシーが定義されるまではありません。|
-|昨日、田中の組織の管理者は、すべての従業員に適用される ATP の安全な添付ファイルポリシーを設定します。 今日以前は、田中は添付ファイルを含む電子メールメッセージを受信しました。|はい。 この例では、田中に Advanced Threat Protection のライセンスがあり、田中を含む ATP の安全な添付ファイルポリシーが定義されています。 通常、新しいポリシーがデータセンター間で有効になるまでには約30分かかります。このケースでは、1日以上経過しているため、ポリシーが有効になっている必要があります。|
-|Chris の組織は、組織内のすべてのユーザーに対して、ATP の安全な添付ファイルポリシーが設定された Office 365 E5 を持っています。 Chris は添付ファイルを持つ電子メールを受信し、組織外の他のユーザーにメッセージを転送します。|ATP の安全な添付ファイルの保護は、Chris が受信するメッセージに対して行われます。 受信者の組織が ATP の安全な添付ファイルポリシーを適切に設定している場合は、転送されたメッセージが到着したときに、小川が転送するメッセージはそのポリシーの対象となります。|
-|森さんの組織には、ATP の安全な添付ファイルポリシーが設定されており、 [SharePoint、OneDrive、Microsoft Teams の atp](atp-for-spo-odb-and-teams.md) が有効になっています。 久保田さんは、SharePoint Online のすべてのファイルがスキャンされており、開いているか、または安全であることを前提としています。|ATP の安全な添付ファイルの保護は、定義されているポリシーに従って行われます。ただし、これは、SharePoint Online、OneDrive for Business、または Microsoft Teams のすべてのファイルがスキャンされるという意味ではありません。 (詳細については、「 [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)」を参照してください)。|
+|Pat の Microsoft 365 E5 組織には、安全な添付ファイルポリシーが構成されていません。|Pat は、安全な添付ファイルによって保護されていません。 <br/><br/> 管理者は、安全な添付ファイルの保護を有効にするために、少なくとも1つの安全な添付ファイルポリシーを作成する必要があります。 また、ポリシーの条件には、Pat が安全な添付ファイルによって保護されている場合は、Pat を含める必要があります。|
+|Lee の組織には、財務部門の従業員にのみ適用される安全な添付ファイルポリシーがあります。 Lee は、営業部門のメンバーです。|Lee は、安全な添付ファイルによって保護されていません。 <br/><br/> 財務従業員は安全な添付ファイルで保護されていますが、販売社員 (およびその他の従業員) はありません。|
+|昨日、田中の組織の管理者は、すべての従業員に適用される安全な添付ファイルポリシーを作成しました。 今日以前は、田中は添付ファイルが含まれている電子メールメッセージを受信しました。|田中は、安全な添付ファイルによって保護されています。 <br/><br/> 通常は、新しいポリシーが有効になるまでに約30分かかります。|
+|Chris の組織には、組織内のすべてのユーザーに対して、長期にわたる安全な添付ファイルポリシーがあります。 Chris は添付ファイルを持つ電子メールを受信し、外部の受信者にメッセージを転送します。|Chis は、安全な添付ファイルによって保護されています。 <br/><br/> 外部の受信者にも、組織内の安全な添付ファイルポリシーがある場合、転送されるメッセージはそれらのポリシーの対象となります。|
 |
+
+安全な添付ファイルのスキャンは、Microsoft 365 データが存在する地域と同じ地域で行われます。 データセンター地理の詳細について[は、「データの保存場所](https://products.office.com/where-is-your-data-located?geo=All)」を参照してください。
+
+> [!NOTE]
+> 次の機能は、セキュリティ & コンプライアンスセンターの [安全な添付ファイル] ポリシーですが、これらの設定はグローバルに有効または無効になっており、安全な添付ファイルポリシーは必要ありません。
+>
+> - [SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)。
+>
+> - [Microsoft 365 E5 の安全なドキュメント](safe-docs.md)
+
+## <a name="safe-attachments-policy-settings"></a>安全な添付ファイルのポリシー設定
+
+このセクションでは、安全な添付ファイルポリシーの設定について説明します。
+
+- [**安全な添付ファイルの不明なマルウェア応答**]: この設定は、電子メールメッセージにおける安全な添付ファイルのマルウェアスキャンのアクションを制御します。 次の表では、使用可能なオプションについて説明します。
+
+  ****
+
+  |オプション|効果|次の場合に使用します。|
+  |---|---|---|
+  |**オフ**|添付ファイルは、安全な添付ファイルによってマルウェア用にスキャンされません。 [EOP でマルウェア対策保護](anti-malware-protection.md)によってマルウェアのスキャンがまだ行われています。|選択した受信者のスキャンをオフにします。 <br/><br/> 内部メールのルーティングで不必要な遅延が発生しないようにします。 <br/><br/> **このオプションは、ほとんどのユーザーには推奨されていません。このオプションは、信頼できる差出人からのメッセージのみを受信する受信者に対して、安全な添付ファイルのスキャンを無効にする場合にのみ使用してください。**|
+  |**モニター**|添付ファイル付きのメッセージを配信し、検出されたマルウェアの発生を追跡します。 <br/><br/> 安全なメッセージの配信は、安全な添付ファイルのスキャンによって遅延する可能性があります。|検出されたマルウェアが組織に存在する場所を確認します。|
+  |**Block**|検出されたマルウェア添付ファイルのメッセージが配信されないようにします。 <br/><br/> メッセージが [検疫](manage-quarantined-messages-and-files.md) されるのは、管理者 (エンドユーザーではない) のみがメッセージをレビュー、解放、または削除できるようになるためです。 <br/><br/> メッセージと添付ファイルの今後のインスタンスを自動的にブロックします。 <br/><br/> 安全なメッセージの配信は、安全な添付ファイルのスキャンによって遅延する可能性があります。|同じマルウェアの添付ファイルを使用して、組織を繰り返しの攻撃から保護します。 <br/><br/> これは既定値であり、標準および厳密な [設定済みセキュリティポリシー](preset-security-policies.md)の推奨値です。|
+  |**Replace**|検出されたマルウェアの添付ファイルを削除します。 <br/><br/> 添付ファイルが削除されたことを受信者に通知します。 <br/><br/>  メッセージが [検疫](manage-quarantined-messages-and-files.md) されるのは、管理者 (エンドユーザーではない) のみがメッセージをレビュー、解放、または削除できるようになるためです。 <br/><br/> 安全なメッセージの配信は、安全な添付ファイルのスキャンによって遅延する可能性があります。|検出されたマルウェアが原因で添付ファイルが削除されたことを受信者に表示します。|
+  |**動的配信**|メッセージはすぐに配信されますが、安全添付ファイルのスキャンが完了するまで、添付ファイルはプレースホルダーに置き換えられます。 <br/><br/> 詳細については、このトピックで後述する「 [安全な添付ファイルのポリシー](#dynamic-delivery-in-safe-attachments-policies) 」セクションの「動的配信」を参照してください。|悪意のあるファイルから受信者を保護するときにメッセージの遅延を回避する <br/> <br/> 受信者がスキャンの実行中にセーフモードで添付ファイルをプレビューできるようにする|
+  |
+
+- **[検出時に添付ファイルをリダイレクトする]: リダイレクトを有効** にして、 **添付ファイルを次の電子メールアドレスに送信**します。 **ブロック**、 **監視**、または **置換** アクションの場合は、マルウェアの添付ファイルを含むメッセージを、指定した内部または外部の電子メールアドレスに送信して、分析と調査を行います。
+
+  標準および厳密なポリシー設定に関する推奨事項は、リダイレクトを有効にすることです。 詳細については、「 [安全な添付ファイルの設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)」を参照してください。
+
+- **マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合は、上記の選択を適用**します。安全な添付ファイルのスキャンが完了していなくても、メッセージに対して [ **不明なマルウェア応答** があります。 [ **リダイレクトを有効に**する] を選択した場合は、常にこのオプションを選択します。 そうしないと、メッセージが失われる可能性があります。
+
+- **受信者フィルター**: ポリシーの適用先を決定する受信者の条件と例外を指定する必要があります。 条件や例外には次のプロパティを使用できます。
+
+  - **受信者が次の場合**
+  - **受信者のドメインが**
+  - **受信者が次のメンバーの場合**
+
+  各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
+
+- **優先度**: 複数のポリシーを作成する場合は、適用する順序を指定できます。 2つのポリシーが同じ優先順位を持つことはできません。最初のポリシーが適用されると、ポリシーの処理は停止します。
+
+  優先順位と複数のポリシーを評価し適用する方法の詳細については、「[メール保護の優先順位](how-policies-and-protections-are-combined.md)」を参照してください。
+
+### <a name="dynamic-delivery-in-safe-attachments-policies"></a>安全添付ファイルポリシーでの動的配信
+
+> [!NOTE]
+> 動的配信は、Exchange Online メールボックスに対してのみ機能します。
+
+[安全な添付ファイルのポリシーの動的配信アクションは、安全な添付ファイルのスキャンによって発生する可能性のある電子メール配信の遅延を排除することを目指しています。 電子メールメッセージの本文は、添付ファイルごとのプレースホルダーと共に受信者に配信されます。 このプレースホルダーは、添付ファイルが安全であることが確認されるまで残っています。その後、添付ファイルを開いたりダウンロードしたりできるようになります。
+
+添付ファイルが悪意のあるものとして検出されると、メッセージは検疫されます。 「安全な添付ファイル」のスキャンによって検疫されたメッセージをレビュー、リリース、または削除できるのは、管理者 (エンドユーザーではない) だけです。 詳細については、「 [管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
+
+安全な添付ファイルのスキャンが進行している間は、ほとんどの Pdf および Office ドキュメントをセーフモードでプレビューできます。 添付ファイルが動的配信プレビューに対応していない場合、受信者には、安全な添付ファイルのスキャンが完了するまで、添付ファイルのプレースホルダーが表示されます。
+
+モバイルデバイスを使用していて、モバイルデバイスの動的配信プレビューアーで Pdf が表示されていない場合は、モバイルブラウザーを使用して、web 上の Outlook (旧称 Outlook Web App) でメッセージを開いてみてください。
+
+動的配信および転送されるメッセージに関するいくつかの考慮事項を以下に示します。
+
+- 転送された受信者が、[動的配信] オプションを使用する安全な添付ファイルポリシーによって保護されている場合、受信者には、互換性のあるファイルをプレビューできるプレースホルダーが表示されます。
+
+- 転送される受信者が安全な添付ファイルポリシーによって保護されていない場合、メッセージと添付ファイルは、安全な添付ファイルのスキャンまたは添付ファイルのプレースホルダーなしで配信されます。
+
+## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>安全な添付ファイルがメッセージをスキャンしないシナリオ
+
+安全な添付ファイルがメッセージをスキャンできないシナリオがあります。
+
+- パブリックフォルダー内のメッセージ。
+
+- カスタムルールを使用して、ユーザーのメールボックスにルーティングされ、その後に戻ってきたメッセージ。
+
+- クラウドメールボックスを、アーカイブフォルダーを含む他の場所に (自動または手動で) 移動したメッセージ。
+
+- メッセージを削除しました。
+
+- ユーザーのメールボックス検索フォルダーがエラー状態にあります。
+
+- Exclaimer が有効になっている Exchange Online 組織。 この解決方法については、「 [KB4014438](https://support.microsoft.com/help/4014438)」を参照してください。
+
+- [S/MIME)](s-mime-for-message-signing-and-encryption.md) 暗号化されたメッセージ。
+
+- 安全な添付ファイルポリシーで動的配信アクションを構成しましたが、受信者が動的配信をサポートしていません (たとえば、受信者がオンプレミスの Exchange 組織内のメールボックスの場合)。 ただし、 [office 365 の「安全なリンク」で](set-up-atp-safe-links-policies.md) は、url を含む office ファイル添付ファイルをスキャンできます (安全なリンクの構成方法によって異なります)。
 
 ## <a name="submitting-files-for-malware-analysis"></a>マルウェア分析のためのファイルの送信
 
-- Microsoft に分析を求めるファイルを受信した場合は、「 [マルウェア分析用のファイルを送信](https://aka.ms/wdsi/submit)する」を参照してください。
+- 分析のために Microsoft に送信するファイルを受信した場合は、「 [マルウェアと非マルウェアを分析のために microsoft に提出](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)する」を参照してください。
 
 - Microsoft に送信する電子メールメッセージ (添付ファイルの有無にかかわらず) を受信した場合は、「 [レポートメッセージとファイルを microsoft に報告](report-junk-email-messages-to-microsoft.md)する」を参照してください。

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
-ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195917"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326939"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
@@ -30,7 +30,7 @@ ms.locfileid: "48195917"
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 
-ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 例:
+ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 次に、例を示します。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -220,4 +220,4 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
 
 - **4-最も積極的**な状態: 低、中、高のいずれかの信頼度を持つフィッシングとして識別されたメッセージは、非常に高い信頼度で識別された場合と同様に扱われます。
 
-この設定値を大きくすると、誤検知 (不良としてマークされている正常なメッセージ) の可能性が高くなります。 推奨される設定の詳細については、「 [OFFICE ATP のフィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)」を参照してください。
+この設定値を大きくすると、誤検知 (不良としてマークされている正常なメッセージ) の可能性が高くなります。 推奨される設定の詳細については、「 [ATP のフィッシング対策ポリシー設定](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings)」を参照してください。

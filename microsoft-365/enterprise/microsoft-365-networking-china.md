@@ -12,16 +12,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- M365initiative-CoreDeploy
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: この記事では、グローバルな Microsoft 365 テナントの中国ユーザーのネットワークパフォーマンスを最適化するためのガイダンスを提供します。
-ms.openlocfilehash: 94de83a94bf6cdf5470b66970efb62094bdc4343
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1f5f51991c5950d46c9d835a98bea86bcb354366
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691758"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327511"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>中国ユーザー向けの Microsoft 365 グローバルテナントのパフォーマンスの最適化
 

@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection のキャンペーン ビューについて説明します。
-ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203481"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326593"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP のキャンペーン ビュー
 
@@ -87,7 +87,7 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
 
 - **型**: この値は、 **フィッシング** または **マルウェア**です。
 
-- **Subtype**: この値には、キャンペーンの詳細が含まれます。 例:
+- **Subtype**: この値には、キャンペーンの詳細が含まれます。 次に、例を示します。
 
   - **フィッシング**: 使用可能な場合は、このキャンペーンによって phished されているブランド。 たとえば、、、、、 `Microsoft` `365` 、など `Unknown` `Outlook` `DocuSign` です。
 
@@ -129,7 +129,7 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
   - **送信者**
   - **受信者**
   - **送信元ドメイン**
-  - **[件名]**
+  - **Subject**
   - **添付ファイルの名前**
   - **マルウェアファミリ**
   - **配信アクション**
@@ -137,7 +137,7 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
   - **Tags**
   - **システムの上書き**
 
-- 詳細情報
+- 詳細設定
 
   - **インターネットメッセージ id**: メッセージヘッダーの **メッセージ id** ヘッダーフィールドで使用できます。 値の例を次に示し `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` ます (角かっこに注意してください)。
   
@@ -264,9 +264,9 @@ Microsoft Defender ATP サブスクリプションをお持ちの場合は、[ *
 
 - **可**
 
-- **Blockpage**: 受信者がペイロード URL をクリックしたが、悪意のある web サイトへのアクセスが組織内の [ATP Safe Links](atp-safe-links.md) ポリシーによってブロックされた。
+- **Blockpage**: 受信者がペイロード URL をクリックしたが、悪意のある web サイトへのアクセスが組織内の [安全なリンク](atp-safe-links.md) ポリシーによってブロックされた。
 
-- **Blockpageoverride**: 受信者がメッセージ内のペイロード URL をクリックしました。 ATP Safe Links は停止しようとしましたが、そのブロックを上書きすることが許可されていました。 「 [安全なリンク」ポリシー](set-up-atp-safe-links-policies.md) を調べて、ユーザーが安全なリンクの verdict を上書きできる理由を確認し、悪意のある web サイトを続行します。
+- **Blockpageoverride**: 受信者がメッセージ内のペイロード URL をクリックしました。安全なリンクは停止しようとしましたが、ブロックを上書きすることが許可されていました。 「 [安全なリンク」ポリシー](set-up-atp-safe-links-policies.md) を調べて、ユーザーが安全なリンクの verdict を上書きできる理由を確認し、悪意のある web サイトを続行します。
 
 - **PendingDetonationPage**: Office 365 の安全な添付ファイルは、仮想コンピューター環境でペイロード URL を開いて調査するプロセスです。
 

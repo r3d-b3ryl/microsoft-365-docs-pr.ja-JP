@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: クラウドのみまたはハイブリッドの id モデルを使用して、Microsoft 365 の Azure AD ユーザー id サービスを管理する方法について説明します。
-ms.openlocfilehash: d91e14f678e487365805b024e4025e9a39db0c2c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6b5b80584408671a1925e32df1fbf458b7c16139
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692202"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327953"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 identity モデルと Azure Active Directory
 
@@ -37,6 +37,8 @@ ms.locfileid: "46692202"
 Microsoft 365 では、Azure Active Directory (Azure AD) を使用して、microsoft 365 サブスクリプションに含まれているクラウドベースのユーザー id と認証サービスを使用して、Microsoft 365 の id と認証を管理しています。 Id インフラストラクチャを正しく構成することは、組織の Microsoft 365 のユーザーアクセスとアクセス許可を管理するために不可欠です。
 
 開始する前に、Microsoft 365 の ID モデルと認証の概要についてこのビデオをご覧ください。
+
+<p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -58,7 +60,7 @@ Microsoft 365 では、Azure Active Directory (Azure AD) を使用して、micro
 
 ## <a name="cloud-only-identity"></a>クラウド専用 ID
 
-クラウド専用の id は、Azure AD のみに存在するユーザーアカウントを使用します。 クラウド id は、通常、オンプレミスサーバーを持たない小規模な組織、または AD DS を使用してローカル id を管理しない小規模な組織で使用されます。 
+クラウド専用の id は、Azure AD のみに存在するユーザーアカウントを使用します。 クラウドのみの id は、通常、オンプレミスサーバーを持たない小規模な組織、または AD DS を使用してローカル id を管理しない小規模な組織で使用されます。 
 
 ここでは、クラウド専用の id の基本的なコンポーネントを示します。
  
@@ -67,7 +69,7 @@ Microsoft 365 では、Azure Active Directory (Azure AD) を使用して、micro
 オンプレミスとリモート (オンライン) の両方のユーザーは、Azure AD のユーザーアカウントとパスワードを使用して、Microsoft 365 クラウドサービスにアクセスします。 Azure AD は、保存されたユーザーアカウントとパスワードに基づいてユーザー資格情報を認証します。
 
 ### <a name="administration"></a>管理
-ユーザーアカウントは Azure AD にのみ格納されるので、 [Microsoft 365 管理センター](https://admin.microsoft.com) や [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)などのツールを使用してクラウド id を管理します。 
+ユーザーアカウントは Azure AD にのみ格納されるので、 [Microsoft 365 管理センター](https://docs.microsoft.com/microsoft-365/admin/add-users/) や [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)などのツールを使用してクラウド id を管理します。 
 
 ## <a name="hybrid-identity"></a>ハイブリッド ID
 
@@ -89,7 +91,7 @@ Azure AD テナントには、AD DS アカウントのコピーがあります�
 
 ### <a name="administration"></a>管理
 
-元のユーザーアカウントと権限のあるユーザーアカウントは、オンプレミスの AD DS に格納されるので、Active Directory ユーザーおよびコンピューターツールなどの AD DS と同じツールを使用して id を管理します。 
+元のユーザーアカウントと権限のあるユーザーアカウントは、オンプレミスの AD DS に格納されているので、AD DS を管理するのと同じツールを使用して id を管理します。 
 
 Microsoft 365 管理センターまたは Microsoft 365 の PowerShell を使用して、Azure AD で同期されたユーザーアカウントを管理することはありません。
 

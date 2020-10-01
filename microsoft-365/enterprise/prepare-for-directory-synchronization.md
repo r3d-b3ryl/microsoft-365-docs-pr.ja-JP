@@ -3,7 +3,7 @@ title: Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へ
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Microsoft 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269419"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327287"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
@@ -43,9 +43,9 @@ ms.locfileid: "48269419"
 - オプションでシングルサインオンのシナリオを有効にする
 - Microsoft 365 でのアカウントの変更の自動化
 
-ディレクトリ同期を使用する利点の詳細については、「 [Microsoft 365 の](plan-for-directory-synchronization.md)[ディレクトリ同期のロードマップ]( https://go.microsoft.com/fwlink/p/?LinkId=525398)」および「ハイブリッド id」を参照してください。
+ディレクトリ同期を使用する利点の詳細については、「 [Azure Active directory (AZURE AD) を使用したハイブリッド id](https://go.microsoft.com/fwlink/p/?LinkId=525398) 」および「 [Microsoft 365 のハイブリッド id](plan-for-directory-synchronization.md)」を参照してください。
 
-ただし、ディレクトリ同期では、Active Directory ドメインサービス (AD DS) が、少なくとも1つのエラーを含む Microsoft 365 サブスクリプションの Azure Active Directory (Azure AD) テナントに同期されるように計画と準備を行う必要があります。
+ただし、ディレクトリ同期では、Active Directory ドメインサービス (AD DS) が、少なくとも1つのエラーを含む Microsoft 365 サブスクリプションの Azure AD テナントに同期するように計画と準備を行う必要があります。
 
 最適な結果を得るために、以下の手順を実行します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "48269419"
 AD DS を Azure AD テナントと同期する前に、AD DS をクリーンアップする必要があります。
 
 > [!IMPORTANT]
-> 同期する前に AD DS のクリーンアップを実行しない場合は、展開プロセスに著しい悪影響を及ぼす可能性があります。 ディレクトリ同期のサイクルを経て、エラーを特定し、再同期を実行するまでに、数日または数週間かかる場合があります。
+> 同期する前に AD DS のクリーンアップを実行しないと、展開プロセスに重大な悪影響を与える可能性があります。 ディレクトリ同期のサイクルを経て、エラーを特定し、再同期を実行するまでに、数日または数週間かかる場合があります。
 
 AD DS で、Microsoft 365 ライセンスが割り当てられる各ユーザーアカウントに対して次のクリーンアップタスクを実行します。
 
