@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループメンバーの追加、電子メールアドレス、グループ名、説明の編集、グループの動作のカスタマイズなど、Microsoft 365 グループを管理する方法について説明します。
-ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307303"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343273"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを管理する
 
@@ -196,10 +196,10 @@ ms.locfileid: "47307303"
 
 [Microsoft 365 グループへのゲストアクセスを管理する](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Microsoft 365 グループを作成するときに使用するドメインを選択する](choose-domain-to-create-groups.md)
+[Microsoft 365 グループを作成するときに使用するドメインを選択する](../../solutions/choose-domain-to-create-groups.md)
 
-[メンバーが Microsoft 365 グループの代理として送信または送信できるようにする](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[メンバーが Microsoft 365 グループの代理として送信または送信できるようにする](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [配布リストを Microsoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 
-[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[PowerShell を使用して Microsoft 365 グループを管理する](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
