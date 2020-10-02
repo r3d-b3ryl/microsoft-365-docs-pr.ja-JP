@@ -439,8 +439,6 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: セキュリティ ダッシュボードの概要
               href: ./office-365-security/security-dashboard.md
-            - name: 悪意のあるファイルの情報を表示する
-              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items:
@@ -452,19 +450,23 @@
               items:
                 - name: グローバル管理者のセットアップ タスク
                   items:
-                    - name: ATP の安全なリンク機能のポリシーを設定する
-                      href: ./office-365-security/set-up-atp-safe-links-policies.md
-                    - name: ATP の安全な添付ファイル機能のポリシーを設定する
+                    - name: Office 365 ATP で安全な添付ファイルに関するポリシーを設定する
                       href: ./office-365-security/set-up-atp-safe-attachments-policies.md
-                    - name: 「書き換えない」URL のカスタム リストを設定する
-                      href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
-                    - name: ブロックする URL のカスタム リストを設定する
-                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
+                    - name: Office 365 ATP で安全なリンクに関するポリシーを設定する
+                      href: ./office-365-security/set-up-atp-safe-links-policies.md
+                    - name: Office 365 ATP で安全なリンクのグローバル設定を構成する
+                      href: ./office-365-security/configure-global-settings-for-safe-links.md
                 - name: 役割管理者のセットアップ タスク
                   items:
                     - name: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: キャンペーン ビュー
+            - name: Office 365 ATP の安全な添付ファイル
+              href: ./office-365-security/atp-safe-attachments.md
+            - name: SharePoint、OneDrive、Microsoft Teams 用の ATP
+              href: ./office-365-security/atp-for-spo-odb-and-teams.md
+            - name: Office 365 ATP の安全なリンク
+              href: ./office-365-security/atp-safe-links.md
+            - name: Office 365 ATP のキャンペーン ビュー
               href: ./office-365-security/campaigns.md
             - name: 自動調査および対応
               items:
@@ -490,8 +492,6 @@
               href: ./office-365-security/view-reports-for-atp.md
             - name: 脅威の分析によって最新の攻撃行動を理解する
               href: ./mtp/latest-attack-campaigns.md
-            - name: ATP の安全なリンク機能の警告ページとは?
-              href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: 脅威トラッカーを使用する
               href: ./office-365-security/threat-trackers.md
             - name: Office 365 ATP の攻撃シミュレータ
@@ -515,14 +515,6 @@
               items:
                 - name: 自動調査および対応のしくみ
                   href: ./office-365-security/automated-investigation-response-office.md
-                - name: ATP の安全なリンク機能のしくみ
-                  href: ./office-365-security/how-atp-safe-links-works.md
-                - name: ATP の安全な添付ファイル機能のしくみ
-                  href: ./office-365-security/how-atp-safe-attachments-works.md
-                - name: 動的配信と詳細のプレビュー
-                  href: ./office-365-security/dynamic-delivery-and-previewing.md
-                - name: SharePoint、OneDrive、Microsoft Teams 用の ATP
-                  href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: 脅威の調査および対応のしくみ
                   href: ./office-365-security/office-365-ti.md
         - name: セキュリティ インシデントの管理

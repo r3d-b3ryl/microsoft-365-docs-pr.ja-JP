@@ -1,6 +1,6 @@
 ---
-title: 用語ストアレポート
-description: 用語ストアのアクティビティについてレポートを作成する方法について説明します。
+title: 用語ストア レポート
+description: 用語ストアの利用状況に関するレポートを作成する方法を説明します。
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,36 +8,35 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07b472eac9eba55f7a0a972ec818e0fbcb300552
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 75bd60aab424bdf391038a95055a6660ef2ceecc
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296069"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322213"
 ---
-# <a name="term-store-reports"></a>用語ストアレポート
+# <a name="term-store-reports"></a>用語ストア レポート
 
-SharePoint 管理センターで、用語ストアのレポートにアクセスできます。 [ **レポート**] を展開し、[ **Content services**] をクリックします。
+SharePoint 管理センターで用語ストアのレポートにアクセスできます。 **レポート**を展開し、[**コンテンツサービス**をクリックします。
 
-次のレポートを使用できます。
+次の利用状況レポートを使用できます。
 
 ### <a name="term-store-operations"></a>用語ストアの操作
 
-用語ストア内で実行された上位の操作を15日以内に表示し、その期間内の毎日のボリュームの傾向を確認します。 これは、用語ストアでの変更の性質を高レベルで理解し、操作のボリュームで予期しない傾向を特定する場合に役立ちます。 
+15日間の期間で用語ストアで実行された重要な操作を表示し、その期間の日々のボリュームの傾向を確認します。 これは、用語ストアでの変更の性質を大まかに把握し、操作量の予想外の傾向を特定する場合に便利です。 
 
 ### <a name="term-store-composition"></a>用語ストアの構成
 
-正規の管理用語とエンタープライズキーワードの間で、用語の種類の配布を表示します。 必要に応じて、複数のキーワードを管理用語に移動します。 これは、ユーザーがキーワードを積極的に使用しているかどうかを特定する場合に便利です。 これらの項目を確認して、管理された用語の潜在的な候補を特定できます。
+定期的に管理されている用語とエンタープライズキーワードの間で、用語の種類の分布 必要に応じて、複数のキーワードを管理用語に移動します。 これは、ユーザーがキーワードを活発に使用しているかどうかを確認する場合に便利です。 これらを確認して、管理対象期間の候補を特定できます。
 
-### <a name="open-and-closed-term-sets"></a>オープンおよびクローズされた用語セット
+### <a name="open-and-closed-term-sets"></a>開いて閉じた用語セット
 
-オープンおよびクローズされた用語セットの配布を表示します。 これは、ユーザーが用語を追加できる用語セットの数を把握する場合に便利です。 必要に応じて、たとえばボリュームが予期せず増加している場合は、それらをクローズに変換できます。 
+開いている、および閉じている用語セットの配布を表示します。 これは、ユーザーが用語を追加できる用語セットの数を把握する場合に便利です。 もしボリュームが予期せず増大している場合は、それらを [クローズ] に変換できます。 
 
-### <a name="terms-without-synonyms"></a>同義語のない用語
+### <a name="terms-without-synonyms"></a>類義語のない用語
 
-同義語が定義されていない、追加された各作業言語の用語の数を表示します。 これは、同義語を定義する言語を特定するのに役立ちます。 同義語は、エンドユーザーがコンテンツをタグ付けするための適切な用語を明確に検索するのに役立ちます。
+類義語が定義されていない、追加された作業言語の用語の数を表示します。 これは、類義語を定義する言語を特定するのに役立ちます。 類義語は、エンドユーザーが明確に理解して、正しい用語を見つけるのに役立ち、コンテンツをタグ付けします。
 
 ## <a name="see-also"></a>関連項目
 
