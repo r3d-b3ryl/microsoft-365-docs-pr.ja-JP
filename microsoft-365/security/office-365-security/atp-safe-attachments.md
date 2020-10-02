@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 管理者は、Office 365 Advanced Threat Protection (ATP) の安全な添付ファイル機能について学習できます。
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326533"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337207"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Office 365 ATP の安全な添付ファイル
 
@@ -108,9 +108,7 @@ Office 365 の安全な添付ファイル。 [Advanced Threat protection (ATP)](
 
 - 転送される受信者が安全な添付ファイルポリシーによって保護されていない場合、メッセージと添付ファイルは、安全な添付ファイルのスキャンまたは添付ファイルのプレースホルダーなしで配信されます。
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>安全な添付ファイルがメッセージをスキャンしないシナリオ
-
-安全な添付ファイルがメッセージをスキャンできないシナリオがあります。
+動的配信がメッセージ内の添付ファイルを置き換えることができないシナリオがあります。 これらのシナリオには、次のものがあります。
 
 - パブリックフォルダー内のメッセージ。
 
@@ -126,7 +124,7 @@ Office 365 の安全な添付ファイル。 [Advanced Threat protection (ATP)](
 
 - [S/MIME)](s-mime-for-message-signing-and-encryption.md) 暗号化されたメッセージ。
 
-- 安全な添付ファイルポリシーで動的配信アクションを構成しましたが、受信者が動的配信をサポートしていません (たとえば、受信者がオンプレミスの Exchange 組織内のメールボックスの場合)。 ただし、 [office 365 の「安全なリンク」で](set-up-atp-safe-links-policies.md) は、url を含む office ファイル添付ファイルをスキャンできます (安全なリンクの構成方法によって異なります)。
+- 安全な添付ファイルポリシーで動的配信アクションを構成しましたが、受信者が動的配信をサポートしていません (たとえば、受信者がオンプレミスの Exchange 組織内のメールボックスの場合)。 ただし、 [office 365](set-up-atp-safe-links-policies.md) の「安全なリンク」では、url を含む office ファイル添付ファイルをスキャンできます ( [安全なリンクのためのグローバル設定](configure-global-settings-for-safe-links.md) の構成方法によって異なります)。
 
 ## <a name="submitting-files-for-malware-analysis"></a>マルウェア分析のためのファイルの送信
 

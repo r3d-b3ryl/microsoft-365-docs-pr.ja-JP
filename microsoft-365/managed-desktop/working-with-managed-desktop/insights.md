@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104390"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337183"
 ---
 # <a name="work-with-insights"></a>分析情報を操作する
 
@@ -31,9 +31,9 @@ Microsoft マネージドデスクトップには、テナントの管理者が�
 - デバイス上のセキュリティ更新プログラムの現在の状態は何ですか。
 - デバイスの95% が最新のセキュリティ更新プログラムで最新の状態になるまでにどのくらいの時間がかかりましたか?
 
-[Microsoft Endopint マネージャー](https://endpoint.microsoft.com/)からこれらのビューにアクセスするには、ページの [Microsoft Managed Desktop] タブにある nvaigate を選択し、[**レポート**] 領域で [**詳細の表示**] を選択します。
+[Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)からこれらのビューにアクセスするには、ホームページの [Microsoft Managed Desktop] タブに移動して、[**レポート**] 領域で [**詳細の表示**] を選択します。
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>使用状況の分析情報
@@ -54,7 +54,6 @@ Microsoft マネージドデスクトップには、テナントの管理者が�
 [詳細につい](battery-insights.md)ては、「」を参照してください。
 
 ## <a name="windows-security-update-insights"></a>Windows セキュリティ更新プログラムの分析情報
-
-このビューには、Microsoft マネージドデスクトップデバイスのセキュリティ更新プログラムの状態に関する情報が表示されます。 この情報を表示するには、[ **Windows セキュリティ** ] タブを選択します。
+このビューには、Microsoft マネージドデスクトップデバイスのセキュリティ更新プログラムの状態に関する情報が表示されます。 この情報を表示するには、[ **Windows セキュリティの更新** ] タブを選択します。
 
 [セキュリティ更新プログラム](security-update-insights.md)の詳細について説明します。

@@ -11,22 +11,22 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 83da50b3772b6adcb7977425bfcaa1b437bc6a68
-ms.sourcegitcommit: bf21a4caae0c01d93281744838f0aa50e1fb2a22
+ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48324299"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337231"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint の同期のための導入: 作業の開始
 
-Microsoft SharePoint の同期 Tex で利用可能なインテリジェントコンテンツサービスは3つの部分で構成されています。
+SharePoint の同期 Tex で利用可能なインテリジェントコンテンツサービスは3つの部分で構成されています。
 
 - **コンテンツの理解:** コードなしの AI モデルを作成してコンテンツから情報を分類および抽出して、ナレッジの検出と再利用のためにメタデータを自動的に適用します。 詳細については、 [コンテンツの理解](document-understanding-overview.md)をご覧ください。
 - **コンテンツ処理:** 電力の自動処理を使用して、コンテンツのキャプチャ、取り込み、分類を自動化し、コンテンツ中心のプロセスを効率化します。 [コンテンツ処理](form-processing-overview.md)の詳細について説明します。
 - **コンテンツコンプライアンス:** Microsoft Information Protection との統合により、セキュリティとガバナンスを向上させるためのコンテンツの管理と管理を行います。
 
-新しい AI サービスと機能を使用すると、Microsoft SharePoint の同期 Tex を使用してコンテンツの理解と分類のアプリをコンテンツ管理フローに直接作成できます。
+新しい AI サービスと機能を使用すると、SharePoint の Syntex を使用してコンテンツの理解と分類のアプリをコンテンツ管理フローに直接作成できます。
 
 |手動入力| フォームの処理 | ドキュメントについて |
 |:-------|:--------|:--------|
@@ -34,7 +34,7 @@ Microsoft SharePoint の同期 Tex で利用可能なインテリジェントコ
 | Interactive   | 事前に作成された自動   | カスタム、支援   | カスタム、準拠 |
 | 作業を行うユーザー | 該当分野の専門家 (Sme) による学習。 コントラクト、履歴書、その他の非構造化ドキュメントからコンテンツタイプとメタデータを取得します。 | Sme の関与は少なくなります。 発注書、アプリケーション、その他の半構造化ドキュメント、構造化ドキュメント |
 
-次の表では、Microsoft SharePoint の同期 Tex を使用した場合に得られることを説明します。
+次の表では、SharePoint の同期 Tex を使用する際に得られることを説明します。
 
 | フォームの処理 | ドキュメントについて |
 |:-------|:-------|
@@ -46,14 +46,14 @@ Microsoft SharePoint の同期 Tex で利用可能なインテリジェントコ
 
 | フォームの処理 | ドキュメントについて |
 |:-------|:-------|
-| ドキュメントライブラリから作成 | コンテンツセンターで作成された Microsoft SharePoint の同期 Tex の一部 |
+| ドキュメントライブラリから作成 | コンテンツセンターで作成された SharePoint の同期の一部 |
 | AI ビルダーで作成されたモデル | ネイティブインターフェイスで作成されたモデル |
 | 半構造化ファイル形式に使用されます。 | 非構造化ファイル形式で使用されます。 |
 | 設定可能分類子 | オプションの抽出機能を備えた Trainable クラシファイア |
 | 1つのライブラリに制限 | 複数のライブラリに適用できます。 |
 | PDF、JPG、PNG 形式、合計 50 MB/500 ページをトレーニングする | 5-10 PDF、Office、または電子メールファイル (負の例を含む) をトレーニングする |
 
-Microsoft SharePoint の同期 Tex は、次のような Microsoft 365 のコンプライアンス機能と統合されるようになります。
+SharePoint の同期 Tex は、次のような Microsoft 365 のコンプライアンス機能と統合されるようになります。
 
 - ドキュメントの保存期間または外部イベントに基づいてレコードポリシーを定義する保持ラベル。
 - DLP、暗号化、共有、および条件付きアクセスポリシーを設定する機密ラベル。
@@ -62,12 +62,12 @@ Microsoft SharePoint の同期 Tex は、次のような Microsoft 365 のコン
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>最適化のためのパイロットビジネスシナリオを特定する
 
-組織で Microsoft SharePoint の同期 Tex を使用するための準備をするには、まず、有用なシナリオについて理解する必要があります。 必要なモデルを決定するのに役立つ理由と、モデルが適用される場所に基づいて組織を構造化する方法について説明します。 次のシナリオでは、組織のためにドキュメントを理解することができます。
+組織で SharePoint の同期 Tex を使用するための準備をするには、まず、それが役に立つシナリオを理解する必要があります。 必要なモデルを決定するのに役立つ理由と、モデルが適用される場所に基づいて組織を構造化する方法について説明します。 次のシナリオでは、組織のためにドキュメントを理解することができます。
 
 - コンテンツ処理: 契約、作業ステートメント、およびその他のフォーム形式のドキュメントを処理します。 フォームを使い、フィールドを理解してマップするためのモデルを学習し、データを自動的に収集するためにフォームを実行します。 詳細については、「 [フォーム処理の概要](form-processing-overview.md)」を参照してください。
 - 請求書の分析: 請求書から関連する詳細を取得し、ポリシーに準拠しているか、または適切に処理されていることを確認します。
 
-Microsoft SharePoint の Syntex が組織を支援する方法について考えてみましょう。
+SharePoint の Syntex が組織を支援する方法について考えてみましょう。
 
 - ビジネスプロセスを自動化する
 - 検索精度を向上させる
@@ -75,7 +75,7 @@ Microsoft SharePoint の Syntex が組織を支援する方法について考え
 
 ### <a name="form-processing-scenario-example"></a>フォーム処理シナリオの例
 
-たとえば、Microsoft SharePoint の Syntex および Power 自動化機能を使用して、請求書を追跡および監視するプロセスをセットアップできます。
+たとえば、SharePoint の Syntex および Power 自動化機能を使用して、請求書を追跡および監視するプロセスをセットアップできます。
 
 1. 請求書ドキュメントを格納するライブラリを設定します。
 1. ドキュメント内のフィールドを認識するようにモデルをトレーニングします。
@@ -85,7 +85,7 @@ Microsoft SharePoint の Syntex が組織を支援する方法について考え
     - 請求書が期日を過ぎています。
     - 請求書は、自動承認金額より大きい金額を対象としています。
 
-![Microsoft SharePoint の同期 Tex および電源自動化を使用して請求書を追跡および監視する](../media/content-understanding/process-invoices-flow.png)
+![SharePoint の同期を追跡および監視する (請求書とパワー自動化)](../media/content-understanding/process-invoices-flow.png)
 
 このシナリオを自動化すると、次のことが可能になります。
 
@@ -102,7 +102,7 @@ Microsoft SharePoint の Syntex が組織を支援する方法について考え
 1. モデルが完成したら、コントラクトをアップロードできるライブラリにモデルを適用します。
 1. 保持ラベルを日付フィールドに適用して、組織が契約に必要とする時間の期間、ライブラリ内に契約が保持されるようにします。
 
-![Microsoft SharePoint の同期 Tex および保持ラベルを使用して契約を追跡および監視する](../media/content-understanding/process-contracts-flow.png)
+![SharePoint の同期 Tex および保持ラベルを使用して、コントラクトを追跡および監視する](../media/content-understanding/process-contracts-flow.png)
 
 このシナリオを自動化すると、次のことが可能になります。
 
@@ -140,7 +140,7 @@ Microsoft SharePoint の Syntex が組織を支援する方法について考え
 
 ## <a name="strategic-positioning"></a>戦略的ポジショニング
 
-関係者と協力して、Microsoft SharePoint の同期 Tex を使用するための戦略に沿っていることを確認します。 この位置付けを支援するために、以下のリソースを調査して提供します。
+ステークホルダーと協力して、SharePoint の同期 Tex を使用するための戦略に沿っていることを確認します。 この位置付けを支援するために、以下のリソースを調査して提供します。
 
 - ビジネスの成果:
   - 考えられる会計成果
@@ -170,7 +170,7 @@ Microsoft SharePoint の Syntex が組織を支援する方法について考え
 
 ## <a name="readiness-checklist"></a>準備チェックリスト
 
-Microsoft SharePoint の同期 Tex (プレビュー) を実装する準備をするには、次のことを行う必要があります。
+SharePoint の同期を実装するための準備をするには、次のことを行う必要があります。
 
 ![コンテンツを理解するための準備](../media/content-understanding/cu-adoption-readinesschecklist.png)
 

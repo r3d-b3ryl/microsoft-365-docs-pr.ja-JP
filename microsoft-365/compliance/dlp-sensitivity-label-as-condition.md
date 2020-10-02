@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 秘密度ラベルを DLP ポリシーの条件として使用できるサービスやアイテムの種類について説明します。
-ms.openlocfilehash: bb06ed6919a396bef1e5d1f1cb04731fa11267ae
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235724"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321112"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>秘密度ラベルを DLP ポリシーの条件として使用する (プレビュー)
 
@@ -53,13 +53,13 @@ ms.locfileid: "48235724"
 |SharePoint Online     |SharePoint Online 内のアイテム         |はい         |はい         |
 |OneDrive for Business     |アイテム         |はい         |はい         |
 |Teams     |Teams とチャネル メッセージ         |該当なし         |該当なし         |
-|Teams     |添付ファイル         |はい **         |はい **         |
+|Teams     |attachments         |はい **         |はい **         |
 |Windows 10 デバイス (プレビュー)     |アイテム         |はい         |はい         |
 |MCAS (プレビュー) |アイテム         |はい         |はい         |
 
 \* メールの秘密度ラベルの DLP 検出がサポートされました。 秘密度ラベル付きのメールの添付ファイルの DLP 検出はサポートされていません。
 
-\** 1:1 チャットまたはチャネルを介して Teams で送信された添付ファイルは、One drive for business や SharePoint に自動的にアップロードされます。 そのため、SharePoint Online や One Drive for Business が DLP ポリシー内の場所として含まれている場合、Teams で送信されたラベル付きの添付ファイルは自動的にこの条件の範囲に含まれます。 場所としての Teams は、DLP ポリシーで選択する必要はありません。
+\** 1:1 チャットまたはチャネルを介して Teams で送信された添付ファイルは、OneDrive for Business や SharePoint に自動的にアップロードされます。 そのため、SharePoint Online や OneDrive for Business が DLP ポリシー内の場所として含まれている場合、Teams で送信されたラベル付きの添付ファイルは自動的にこの条件の範囲に含まれます。 場所としての Teams は、DLP ポリシーで選択する必要はありません。
 
 ### <a name="supported-scenarios"></a>サポートされるシナリオ
 

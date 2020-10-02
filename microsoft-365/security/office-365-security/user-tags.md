@@ -1,5 +1,5 @@
 ---
-title: ユーザータグ
+title: Office 365 ATP のユーザー タグ
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Oiffce 365 ATP Plan 2 でユーザータグを持つユーザーの特定のグループを特定する方法を学習できます。 タグフィルターは、Office 365 ATP のアラート、レポート、および調査に対して利用でき、タグ付きユーザーをすばやく識別できます。
-ms.openlocfilehash: d47c5c00e3cf0362c44aebc18d11db4bba68a149
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+description: 管理者は、Office 365 ATP Plan 2 でユーザータグを使用して特定のユーザーグループを特定する方法について説明します。 タグフィルターは、Office 365 ATP のアラート、レポート、および調査に対して利用でき、タグ付きユーザーをすばやく識別できます。
+ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48210032"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337255"
 ---
-# <a name="user-tags-in-the-microsoft-security-center"></a>Microsoft セキュリティセンターのユーザータグ
+# <a name="user-tags-in-office-365-atp"></a>Office 365 ATP のユーザー タグ
 
 ユーザータグは、 [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md)のユーザーグループの識別子です。 [優先度アカウント](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) は、ユーザータグの一種です。 組織で Office 365 ATP Plan 2 (サブスクリプションに含まれているかアドオンとして含まれる) がある場合は、[優先度のアカウント] タグを使用するだけでなく、カスタムのユーザータグを作成することもできます。
 
@@ -33,11 +33,11 @@ ms.locfileid: "48210032"
 - [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
 - [キャンペーン ビュー](campaigns.md)
 
-この記事では、セキュリティセンターでユーザータグを構成する方法について説明します。
+この記事では、セキュリティ & コンプライアンスセンターでユーザータグを構成する方法について説明します。 セキュリティ & コンプライアンスセンターでユーザータグを管理するためのコマンドレットはありません。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- のセキュリティセンターを開き <https://security.microsoft.com/> ます。 [ **ユーザータグ** ] ページに直接移動するには、を開き <https://security.microsoft.com/securitysettings/userTags> ます。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ **ユーザータグ** ] ページに直接移動するには、を開き <https://protection.office.com/userTags> ます。
 
 - ユーザータグを作成、変更、または削除するには、セキュリティ & コンプライアンスセンターの [ **組織の管理** ] または [ **セキュリティ管理者** ] 役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
@@ -45,7 +45,7 @@ ms.locfileid: "48210032"
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>セキュリティセンターを使用してユーザータグを作成する
 
-1. セキュリティセンターで、[ **設定**] [ \> **電子メール & グループ作業** \> **ユーザータグ**] に移動します。
+1. セキュリティセンターで、[ **脅威管理** \> **ユーザータグ**] に移動します。
 
 2. 表示される [ **ユーザータグ** ] ページで、[ **タグの作成**] をクリックします。
 
@@ -79,7 +79,7 @@ ms.locfileid: "48210032"
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>セキュリティセンターを使用してユーザータグを表示する
 
-1. セキュリティセンターで、[ **設定**] [ \> **電子メール & グループ作業** \> **ユーザータグ**] に移動します。
+1. セキュリティセンターで、[ **脅威管理** \> **ユーザータグ**] に移動します。
 
 2. 表示される [ **ユーザータグ** ] ページで、表示するユーザータグを選択します (チェックボックスをクリックしないでください)。
 
@@ -89,7 +89,7 @@ ms.locfileid: "48210032"
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>セキュリティセンターを使用してユーザータグを変更する
 
-1. セキュリティセンターで、[ **設定**] [ \> **電子メール & グループ作業** \> **ユーザータグ**] に移動します。
+1. セキュリティセンターで、[ **脅威管理** \> **ユーザータグ**] に移動します。
 
 2. 表示される [ **user tags** ] ページで、表示するユーザータグを選択し、[タグの **編集**] をクリックします。
 
@@ -101,6 +101,6 @@ ms.locfileid: "48210032"
 
 **注**: 組み込みの **優先度の account** タグを削除することはできません。
 
-1. セキュリティセンターで、[ **設定**] [ \> **電子メール & グループ作業** \> **ユーザータグ**] に移動します。
+1. セキュリティセンターで、[ **脅威管理** \> **ユーザータグ**] に移動します。
 
 2. 表示される [ **ユーザータグ** ] ページで、削除するユーザータグを選択し、[ **タグの削除**] をクリックしてから、[ **はい、削除** ] を選択します。この警告が表示されます。

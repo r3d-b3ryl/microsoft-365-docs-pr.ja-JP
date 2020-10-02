@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループについて説明します。
-ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307267"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337171"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -76,7 +76,7 @@ Microsoft 365 グループには、次の制限が適用されます。
 |ユーザーが作成できるグループ|250|
 |管理者が作成できるグループ|既定のテナント数の上限は 500,000|
 |メンバー数 |1,000 人を超えます。ただし、グループ会話に同時にアクセスできるのは 1,000 人のみです。 <br>Outlook で非常に大規模なグループの予定表や会話にアクセスする場合に、ユーザーが遅延を感じることがあります。|
-|ユーザーがメンバーになれるグループの数|1,000|
+|ユーザーがメンバーになれるグループの数|7000|
 |ファイルの記憶域|各サブスクライブ ユーザーに 1 TB + 10 GB と、購入した追加記憶域。 追加の記憶域は無制限で購入できます。|
 |グループ メールボックスのサイズ|50 GB|
 
@@ -84,7 +84,7 @@ Microsoft 365 グループには、次の制限が適用されます。
 
 グループの使用に関する操作可能な情報を持っている場合は、Microsoft 365 グループを管理する方が効率的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については [、「管理センターの Microsoft 365 レポート](../activity-reports/office-365-groups.md) 」を参照してください。
 
-## <a name="sensitivity-labels"></a>秘密度ラベル
+## <a name="sensitivity-labels"></a>機密ラベル
 
 組織内のユーザーが Microsoft 365 グループを作成するときに設定できる機密ラベルを作成できます。 機密ラベルを使用すると、次のものを構成できます。 
 
