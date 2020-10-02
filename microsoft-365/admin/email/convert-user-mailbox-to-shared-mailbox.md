@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '個人用メールボックスを、複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521031"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341194"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -49,50 +49,11 @@ ms.locfileid: "46521031"
 
 3. ユーザー メールボックスを選択します。 **[共有メールボックスに変換]** で **[変換]** を選択します。
 
-4. メールボックスが 50 GB より小さい場合は、[ユーザーからライセンス](../manage/remove-licenses-from-users.md)を削除して、その支払いを停止することができます。 ユーザーのアカウントは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「 [Microsoft 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
+4. メールボックスが 50 GB より小さい場合は、 [ユーザーからライセンス](../manage/remove-licenses-from-users.md)を削除して、その支払いを停止することができます。 ユーザーのアカウントは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「 [Microsoft 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
     
-5. 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
+> [!NOTE]
+> メールボックスの変換中にユーザーのパスワードをリセットする必要はありません。 ただし、パスワードがリセットされない場合、メールボックスの変換が終了した後も **元のユーザー名とパスワードは引き続き機能します**。
 
-## <a name="use-the-microsoft-365-admin-center-to-convert-a-mailbox"></a>Microsoft 365 管理センターを使用して、メールボックスを変換する
-
-::: moniker range="o365-worldwide"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-2. メールボックスを変換するユーザーの名前を選択します。
-
-3. ユーザーのパスワードをリセットします。
-
-   > [!NOTE]
-   > メールボックスの変換中にユーザーのパスワードをリセットする必要はありません。 ただし、パスワードがリセットされない場合、メールボックスの変換が終了した後も **元のユーザー名とパスワードは引き続き機能します**。
-
-4. **[メール]** タブで、**[その他の操作]** の **[共有メールボックスに変換]** を選択します。 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-2. メールボックスを変換するユーザーを選択します。
-
-3. 右側のウィンドウで、**[メール設定]** を展開します。 **[詳細設定]** の横にある **[共有メールボックスに変換する]** を選択します。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
-
-2. メールボックスを変換するユーザーを選択します。
-
-3. 右側のウィンドウで、**[メール設定]** を展開します。 **[詳細設定]** の横にある **[共有メールボックスに変換する]** を選択します。
-
-::: moniker-end
-
-
-メールボックスが 50 GB より小さい場合は、[ユーザーからライセンスを削除](../manage/remove-licenses-from-users.md)して、その支払いを停止することができます。 ユーザーの古いメールボックスは削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「 [Microsoft 365 から元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
-    
 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 
 > [!NOTE]

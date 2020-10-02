@@ -1,6 +1,6 @@
 ---
 title: SKOS ベースの形式を使用して用語セットをインポートする
-description: SKOS ベースの形式を使用して用語セットをインポートする方法について説明します。
+description: SKOS ベースのフォーマットを使用して用語セットをインポートする方法を学ぶ
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,38 +9,37 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aaed88463f690853672780b48a8ee3857a956847
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 318497b8b1815b281eff7d781820616c9be9d5ed
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296078"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321243"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS ベースの形式を使用して用語セットをインポートする
 
-SKOS ベースの形式を使用して用語セットをインポートすることができます。 形式の詳細については、「 [SharePoint 分類 SKOS 形式リファレンス](skos-format-reference.md)」を参照してください。
+SKOS ベースの形式を使用して用語セットをインポートできます。 形式の詳細については、[SharePoint 分類 SKOS フォーマットのリファレンス](skos-format-reference.md)を参照してください。
 
-インポートファイルの保存期間は2万未満にすることをお勧めします。 ファイルが大きいほど、検証とインポートにかかる時間が長くなる可能性があります。
+インポートファイルは 20,000 語未満に保つことをお勧めします。 ファイルが大きいと、検証とインポートにかかる時間が長くなる場合があります。
 
-1. SharePoint 管理センターで、 **Content services**を展開し、[ **用語ストア**] をクリックします。
+1. SharePoint 管理センターで、[**コンテンツサービス**] を展開し、**用語ストア**をクリックします。
 
 2. 用語セットをインポートする用語グループを選択します。
 
-3. コマンドバーで、[ **用語セットのインポート**] をクリックします。
+3. コマンドバーで、[**用語セットのインポート**] をクリックします。
  
-4.  テンプレートとして使用するサンプルファイルをダウンロードする場合は、 **sample-metadata** をクリックして、skos ベースの形式を使用するサンプルファイルを取得します。
+4.  テンプレートとして使用するサンプルファイルをダウンロードする場合は、**sample-metadata.ttl** をクリックして、SKOS ベースの形式を使用するサンプル ファイルを取得します。
  
-5.  インポートする用語セット & 用語セットを含むインポートファイルを作成します。
+5.  インポートする用語セットと、用語を含むインポートファイルを作成します。
 
-6.  [ **ファイル形式**] で [ **skos (* ttl)**] を選択します。
+6.  [**ファイル形式**]で、[**SKOS (*.ttl)**]を選択します。
 
-7.  [ **参照** ] をクリックし、インポートファイルに移動して追加します。
+7.  [**参照**] をクリックして、インポートファイルに移動して追加します。
 
 8.  [**インポート**] をクリックします。 インポートが完了するまでパネルを閉じないでください。
 
-ファイルが正常にインポートされると、成功メッセージが表示され、用語ストアが更新され、新しく作成された用語セットに移動できるようになります。
+ファイルのインポートが成功すると、成功メッセージが表示され、用語ストアが更新され、新しく作成された用語セットに移動できます。
 
 ## <a name="see-also"></a>関連項目
 
@@ -48,4 +47,4 @@ SKOS ベースの形式を使用して用語セットをインポートするこ
 
 [ドキュメント理解の概要](document-understanding-overview.md)
 
-[用語セットのインポート (サイトレベル)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
+[用語セット (サイトレベル) をインポートする](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)

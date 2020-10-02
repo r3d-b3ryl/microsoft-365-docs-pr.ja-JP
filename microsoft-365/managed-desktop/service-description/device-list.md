@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bd621ec2b80d308ecd14c9bbbb782e371d3e460a
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 751cafe1993db151ff27ac4a66780a0ce10d69ee
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338363"
+ms.locfileid: "48341392"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -56,14 +56,14 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 | モデル    | 最小仕様  | 追加要件    | アーカイブ日付   | 定年後の日付   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [HP EliteBook 830/840/850 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB/Intel i5/8 GB RAM | 5VS01AV の SKU | 2021年11月30日 | 2024年11月30日 |
-| [HP EliteBook x360 830 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB/Intel i5/8 GB RAM | 5VS01AV の SKU | 2021年11月30日 | 2024年11月30日 |
+| [HP EliteBook 830/840/850 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB/Intel i5/8 GB RAM | 9MZ21AV の SKU | 2021年11月30日 | 2024年11月30日 |
+| [HP EliteBook x360 830 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB/Intel i5/8 GB RAM | 9MZ21AV の SKU | 2021年11月30日 | 2024年11月30日 |
 | [HP のエリート x2 G4 タブレット](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB/Intel i5/8 GB RAM | 5VS03AV の SKU | 2021年7月31日 | 2024年7月31日 |
-| [HP EliteBook x360 1030 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB/Intel i5/8 GB RAM | 5VS01AV の SKU | 2021年8月31日 | 2024年8月31日 |
-| [HP EliteBook x360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB/Intel i5/8 GB RAM | 5VS01AV の SKU| 2021年8月31日 | 2024年8月31日 |
+| [HP EliteBook x360 1030 G7 ノートブック PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB/Intel i5/8 GB RAM | 8XW08AV を含む SKU | 2021年8月31日 | 2024年8月31日 |
+| [HP EliteBook x360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB/Intel i5/8 GB RAM | 8XW08AV を含む SKU| 2021年8月31日 | 2024年8月31日 |
 | [HP エリート DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB RAM | 9MZ21AV の SKU | 2021年3月31日 | 2024年3月31日 |
 | [HP Z2 ミニ G5 ワークステーション](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB/Intel i5/8 GB RAM | 8QR48AV の SKU| 2021年12月31日 | 2024年12月31日 |
-| [HP ZBook 14u/15u G6 モバイルワークステーション](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB RAM | 5VS02AV、IR カメラが必要な SKU | 2020年11月30日 | 2023年11月30日 |
+| [HP ZBook 14u/15u G6 モバイルワークステーション](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB RAM | 9JD63AV を使用する SKU、IR カメラが必要 | 2020年11月30日 | 2023年11月30日 |
 
 ### <a name="microsoft"></a>Microsoft
 

@@ -1,53 +1,49 @@
 ---
-title: サンプルモデルを使用したドキュメント理解モデルについて
+title: サンプル モデルを使用したドキュメント理解モデルについての詳細情報
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: サンプルモデルを使用したドキュメント理解モデルについて
-ms.openlocfilehash: c27d50df69c2555b1720e3e919f786076ab1e3fb
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: サンプル モデルを使用したドキュメント理解モデルについての詳細情報
+ms.openlocfilehash: 75e17c8075fa381c68b6f85e0dfbe96e5d2ad557
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296117"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321267"
 ---
-# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>サンプルモデルを使用したドキュメントの理解モデルについて
+# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>サンプル モデルを通じてドキュメント理解モデルについて学ぶ
 
-Microsoft SharePoint の Syntex では、サンプルモデルを使用して、独自のモデルの作成方法をより深く理解することができます。 サンプルモデルを使用すると、モデルコンポーネント (分類子、抽出器、説明など) を調べることもできます。 サンプルファイルを使用してモデルを学習することもできます。
+Microsoft SharePoint Syntex は、調査に使用できるサンプル モデルを提供し、独自のモデルを作成する方法をよりよく理解できるようにします。 サンプルモデルでは、分類子、抽出子、説明などのモデル コンポーネントを調べることもできます。 サンプル ファイルを使用して、モデルをトレーニングすることもできます。
 
-## <a name="import-the-sample-model"></a>サンプルモデルをインポートする
+## <a name="import-the-sample-model"></a>サンプルモ デルをインポートする
 
-サンプルモデルにアクセスするには、まず、コンテンツセンターにモデルをインポートする必要があります。
+サンプルモデルにアクセスするには、最初にモデルをコンテンツ センターにインポートする必要があります。
 
-1. コンテンツセンターで、[ **モデル** ] を選択してモデルリストを表示します。</br>
-2. [ **モデル** ] ページで、[ **サンプルモデルのインポート**] を選択します。</br>
+1. コンテンツ センターから[**モデル**]を選択して、モデルリストを表示します。</br>
+2. [**モデル**]ページで、[**サンプルモデルのインポート**]を選択します。</br>
 
-    ![サンプルモデルのインポート](../media/content-understanding/import-sample-model.png) </br>
+    ![サンプル モデルのインポート](../media/content-understanding/import-sample-model.png) </br>
 
-3. [モデル] リストに表示される *BenefitsChangeNotice* という名前のサンプルモデルを探します。</br>
+3. インポートが完了すると、**BenefitsChangeNotice** モデルのホーム ページが開きます。 今後サンプル モデルを開く必要がある場合は、コンテンツ センターのモデル リストから開くことができます。 </br>
 
-    ![サンプルモデル](../media/content-understanding/sample-model.png) </br>
+     ![サンプル ホーム ページ](../media/content-understanding/sample-home-page.png)</br>
 
-4. *BenefitsChangeNotice*を選択して、モデルのホームページを開きます。</br>
-  
-     ![サンプルホームページ](../media/content-understanding/sample-home-page.png)
+サンプル モデルを分析してモデルがどのように構築されているかをよりよく理解するだけでなく、作業モデルとしてさらに進んで、次のようなことを行うことができます。
 
-5. モデルのホームページで、モデルがどのように作成されたかを詳しく調べてください。
- 
-- モデルの学習に使用されるサンプルファイルを表示します。
-- モデルのエンティティ抽出機能を詳しく調べて、サンプルモデルが説明を構成した方法を確認します。
+- 別の抽出子を追加します。 たとえば、*割引料金*を抽出するものを追加します。
+- モデルをドキュメント ライブラリに適用し、トレーニング ファイルの一部をアップロードして、モデルがファイルを分類し、ファイルからデータを抽出する方法を確認します。
 
-   ![サンプルモデルエクストラクター](../media/content-understanding/entity-extractors.png)  
 
 ## <a name="see-also"></a>関連項目
-[分類子を作成する](create-a-classifier.md)</br>
-[抽出器を作成する](create-an-extractor.md)</br>
-[ドキュメント理解の概要](document-understanding-overview.md)</br>
+[分類子を作成する](create-a-classifier.md)
+
+[抽出子を作成する](create-an-extractor.md)
+
+[ドキュメント理解の概要](document-understanding-overview.md)
+
 [フォーム処理モデルを作成する](create-a-form-processing-model.md)  
