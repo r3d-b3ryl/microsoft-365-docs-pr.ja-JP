@@ -16,16 +16,18 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mip
+- m365initiative-compliance
 description: Microsoft 情報保護フレームワークの秘密度ラベルを使用して、機密性の高いコンテンツを暗号化と透かしで分類して保護します。
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 55f3f9a37d8ce51c263c3b83cf31d838204c285a
-ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+ms.openlocfilehash: 349adfd181a86d04b8188d8bf76df8ae9dc5c3a6
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46564048"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338558"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 

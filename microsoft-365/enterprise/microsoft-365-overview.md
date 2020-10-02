@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: b5064d78a1681a3331248f3d17d389c46b1da314
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: fa076517b071efbe3a5002d6a48418a796e38ca4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949918"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327475"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -32,7 +32,7 @@ Microsoft 365 for Enterprise は以下で構成されています。
 
 |サービス|説明|
 |---|---|
-|ローカルおよびクラウド ベースのアプリと生産性サービス|Microsoft 365 Apps for enterprise、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。|
+|ローカル アプリおよびクラウド ベースのアプリと生産性サービス|Microsoft 365 Apps for enterprise、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。|
 |Windows 10 Enterprise|大規模と中規模の組織のニーズを満たします。 これは、ユーザーにとって最も生産的かつ安全なバージョンの Windows です。 IT プロフェッショナルに対しては、包括的な展開、デバイス、アプリの管理も提供します。|
 |デバイス管理と高度なセキュリティ サービス|Microsoft Intune が含まれています。これは、クラウドベースのエンタープライズ モビリティ管理 サービスであり、組織のデータを保護しながら、従業員の生産性を高めるのに役立ちます。|
 |||
