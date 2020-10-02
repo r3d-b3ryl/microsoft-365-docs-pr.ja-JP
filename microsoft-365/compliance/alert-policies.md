@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: セキュリティ/コンプライアンスセンターのアラートポリシーを Office 365 および Microsoft 365 に作成し、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200586"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338430"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>セキュリティ/コンプライアンス センターのアラート ポリシー
 
@@ -109,10 +109,11 @@ Microsoft は、Exchange 管理者のアクセス許可の悪用、マルウェ�
 
 また、この表は、それぞれに必要な Office 365 Enterprise および Office 365 US 自治体プランを示しています。 組織が E1/F1/G1 または E3/G3 サブスクリプションに加えて適切なアドオンサブスクリプションを持っている場合は、一部の既定の通知ポリシーを使用できます。
 
-|**既定の通知ポリシー**|**説明**|**Category**|**Office 365 Enterprise サブスクリプション**|
+| 既定の通知ポリシー | 説明 | カテゴリ | Office 365 Enterprise サブスクリプション |
 |:-----|:-----|:-----|:-----|
 |**悪意のある可能性がある URL のクリックが検出されました**|組織内の [Office 365 の ATP Safe リンク](../security/office-365-security/atp-safe-links.md) によって保護されているユーザーが悪意のあるリンクをクリックしたときにアラートを生成します。 このイベントは、URL verdict の変更が Office 365 ATP によって識別された場合、またはユーザーが Office 365 ATP Safe Links ページを上書きした場合に発生します (組織の Microsoft 365 for business ATP Safe Links ポリシーに基づいています)。 このアラートポリシーには、 **高い** 重要度が設定されています。 Office 365 ATP P2、E5、G5 のお客様の場合、このアラートは [office 365 で自動調査と応答](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)を自動的にトリガーします。 このアラートをトリガーするイベントの詳細については、「 [Office 365 ATP セーフリンクポリシーの設定](../security/office-365-security/set-up-atp-safe-links-policies.md)」を参照してください。|脅威の管理|E5/G5 または Office 365 ATP P2 アドオンサブスクリプション|
 |**管理者送信の結果が完了**|[管理者](../security/office-365-security/admin-submission.md)による提出で、送信されたエンティティの再スキャンが完了したときにアラートを生成します。 再スキャン結果が管理者送信からレンダリングされるたびに、警告がトリガーされます。 これらのアラートは、 [以前の送信の結果を確認](https://protection.office.com/reportsubmission)し、ユーザーが報告したメッセージを送信して最新のポリシーチェックおよび再スキャンを行うように通知することを目的としており、組織内のフィルターポリシーが意図した影響を verdicts ているかどうかを判断するのに役立ちます。 このポリシーには重要度の **低い** 設定があります。|脅威の管理|E1/F1、E3、または E5|
+|**メールの手動調査をトリガーした管理者**|管理者が脅威エクスプローラーから電子メールの手動調査をトリガーしたときにアラートを生成します。 詳細については、「セキュリティ管理者が脅威エクスプローラーから調査を開始する」 (を参照して https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) ください。 この通知は、調査が開始されたことを組織に通知します。 アラートは、その通知をトリガーしたユーザーに関する情報を提供し、調査へのリンクを含めます。 このポリシーには、 **情報** が含まれる重要度の設定があります。|脅威の管理| E5/G5 または Office 365 ATP P2 アドオンサブスクリプション| 
 |**転送/リダイレクトルールの作成**|組織内のユーザーが自分のメールボックスの受信トレイルールを作成し、別の電子メールアカウントにメッセージを転送またはリダイレクトしたときに通知を生成します。 このポリシーでは、web 上の Outlook (旧称 Outlook Web App) または Exchange Online PowerShell を使用して作成された受信トレイルールのみを追跡します。 このポリシーには重要度の **低い** 設定があります。 受信トレイルールを使用して Outlook on the web で電子メールを転送およびリダイレクトする方法の詳細については、「Use rules in Outlook on the web」を参照してください。 [メッセージを別のアカウントに自動的に転送](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)します。|脅威の管理|E1/F1/G1、E3/G3、または E5/G5|
 |**電子情報開示検索の開始またはエクスポート**|ユーザーがセキュリティ/コンプライアンスセンターでコンテンツ検索ツールを使用したときに通知を生成します。 次のコンテンツ検索アクティビティが実行されると、アラートがトリガーされます。 <br/><br/>* コンテンツ検索が開始されました<br/>* コンテンツ検索の結果はエクスポートされます。<br/>* コンテンツ検索レポートはエクスポートされます。<br/><br/>また、以前のコンテンツ検索アクティビティが電子情報開示ケースに関連して実行された場合にも、アラートがトリガーされます。 このポリシーには、 **中程度** の重要度が設定されています。 コンテンツ検索アクティビティの詳細については、「 [監査ログで電子情報開示アクティビティを検索](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)する」を参照してください。|脅威の管理|E1/F1/G1、E3/G3、または E5/G5|
 |**Exchange 管理者特権の昇格**|ユーザーが Exchange Online 組織で管理者権限を割り当てられたときに通知を生成します。 たとえば、Exchange Online の組織の管理役割グループにユーザーが追加されたとき。 このポリシーには重要度の **低い** 設定があります。|アクセス許可|E1/F1/G1、E3/G3、または E5/G5|
@@ -205,7 +206,7 @@ Microsoft は、Exchange 管理者のアクセス許可の悪用、マルウェ�
 
 既定の通知ポリシーが割り当てられているカテゴリを確認するには、[ [既定の警告ポリシー](#default-alert-policies) ] セクションの表を参照してください。
 
-|ロール|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
+|役割|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |監査ログ|||||||
 |ケース管理|||||||
@@ -238,17 +239,18 @@ Microsoft は、Exchange 管理者のアクセス許可の悪用、マルウェ�
 |表示のみの保持管理|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**ヒント:** 各既定の役割グループに割り当てられている役割を表示するには、セキュリティ & コンプライアンスセンターの PowerShell で次のコマンドを実行します。
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-セキュリティ & コンプライアンスセンターで、役割グループに割り当てられている役割を表示することもできます。 [ **権限** ] ページに移動して、役割グループを選択します。 割り当てられた役割は、フライアウトページに表示されます。
+> [!TIP]
+> 各既定の役割グループに割り当てられている役割を表示するには、セキュリティ & コンプライアンスセンターの PowerShell で次のコマンドを実行します。
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> セキュリティ & コンプライアンスセンターで、役割グループに割り当てられている役割を表示することもできます。 [ **権限** ] ページに移動して、役割グループを選択します。 割り当てられた役割は、フライアウトページに表示されます。
 
 ## <a name="managing-alerts"></a>通知の管理
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196979"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338419"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -46,9 +46,9 @@ ms.locfileid: "48196979"
 | 署名者 | 文字列 | ファイルの署名者に関する情報 |
 | 発行者 | 文字列 | 発行元の証明機関 (CA) に関する情報 |
 | SignerHash | 文字列 | 署名者を識別する一意のハッシュ値 |
-| IsCertificateValid | boolean | ファイルへの署名に使用された証明書が有効かどうか |
-| IsRootSignerMicrosoft | boolean | ルート証明書の署名者が Microsoft であるかどうかを示します |
-| IsExecutable | boolean | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
+| IsCertificateValid | ブール値 | ファイルへの署名に使用された証明書が有効かどうか |
+| IsRootSignerMicrosoft | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します |
+| IsExecutable | ブール値 | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
 | Mail.threatname です | 文字列 | 検出されたマルウェアまたは他の脅威の検出名 |
 | Publisher | 文字列 | ファイルを発行した組織の名前 |
 | SoftwareName | string | ソフトウェア製品の名前 |
@@ -61,8 +61,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>引数
 
-- **x** —使用するファイル ID 列: `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` または `InitiatingProcessSHA256` 関数が `SHA1` 未指定の場合に使用します。
-- **y** —強化するレコード数を1-1000 に制限します。関数は、未指定の場合は100を使用します。
+- **x**—使用するファイル ID 列: `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` 、または `InitiatingProcessSHA256` 関数が `SHA1` 未指定の場合に使用します。
+- **y**—強化するレコード数を1-1000 に制限します。関数は、未指定の場合は100を使用します。
 
 ## <a name="examples"></a>例
 

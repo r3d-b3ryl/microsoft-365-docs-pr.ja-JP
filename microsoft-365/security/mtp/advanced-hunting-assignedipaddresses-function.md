@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ea6b65e5e6d676c5efb2622193197bae5b9ba1b2
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198249"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338547"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -32,15 +32,15 @@ ms.locfileid: "48198249"
 **適用対象:**
 - Microsoft Threat Protection
 
-関数を使用して、 `AssignedIPAddresses()` デバイスに割り当てられている最新の IP アドレスをすばやく取得します。 Timestamp 引数を指定すると、この関数は指定された時刻に最新の IP アドレスを取得します。 
+`AssignedIPAddresses()`[高度な](advanced-hunting-overview.md)検索クエリの関数を使用して、デバイスに割り当てられている最新の IP アドレスをすばやく取得します。 Timestamp 引数を指定すると、この関数は指定された時刻に最新の IP アドレスを取得します。 
 
 この関数は、次の列を持つテーブルを返します。
 
 | Column | データ型 | 説明 |
 |------------|-------------|-------------|
 | `Timestamp` | 日付型 | デバイスが IP アドレスを使用して観測された最新時刻 |
-| `IPAddress` | 文字列 | デバイスによって使用される IP アドレス |
-| `IPType` | 文字列 | IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します |
+| `IPAddress` | string | デバイスによって使用される IP アドレス |
+| `IPType` | string | IP アドレスがパブリックまたはプライベートアドレスであるかどうかを示します |
 | `NetworkAdapterType` | int | IP アドレスが割り当てられているデバイスによって使用されるネットワークアダプターの種類。 可能な値については、[この列挙型](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)を参照してください。 |
 | `ConnectedNetworks` | int | 割り当てられた IP アドレスを持つアダプターがに接続されているネットワーク。 各 JSON 配列には、ネットワーク名、カテゴリ (パブリック、プライベート、またはドメイン)、説明、およびインターネットにパブリックに接続されているかどうかを示すフラグが含まれています。 |
 
