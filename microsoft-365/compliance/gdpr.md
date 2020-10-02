@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208813"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304817"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般データ保護規則の概要
 
@@ -59,7 +59,7 @@ GDPR 基準を満たすには、次のタスクが必要です。 実装に関�
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーは、Enterprise E5 をご利用のお客様を対象として、事前に組み込まれた評価を行います。 評価の作成に使用するテンプレートについては、コンプライアンスマネージャーの [ **評価テンプレート** ] を参照してください。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、Enterprise E5 のお客様向けにこの規制に関する事前に作成された評価があります。 評価の作成に使用するテンプレートについては、コンプライアンス マネージャーの **評価テンプレート** のページを参照してください。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="data-subject-request-dsr"></a>データ主体の要求 (DSR)
 

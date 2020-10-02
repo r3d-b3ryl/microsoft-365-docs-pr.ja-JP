@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49d61a7bbc376121f5a91c1692f292b83abea779
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197340"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308945"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -230,7 +230,7 @@ Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージ
     
 - コンテンツに発行済みの保持ラベルが割り当てられている場合は、このラベルを自動適用ラベルで置き換えることはできません。
     
-- 自動適用ラベルを割り当てるルールが複数あり、コンテンツが複数のルールの条件を満たしている場合、最も古いルールの保持ラベルが割り当てられます。
+- 自動適用ラベルを割り当てるルールが複数あり、コンテンツが複数のルールの条件を満たしている場合、最も古いルール (作成日順) の保持ラベルが割り当てられます。
     
 保持ラベルが別の保持ラベルではなくどのように適用されるかを理解するには、ラベルを明示的に割り当てることと、ラベルを暗黙的に割り当てることの違いを理解することが役立ちます。
 
