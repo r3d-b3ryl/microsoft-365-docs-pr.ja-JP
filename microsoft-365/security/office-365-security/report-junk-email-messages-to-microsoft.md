@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 管理者は、正常なメッセージと悪いメッセージおよびファイルを分析のために Microsoft に報告するさまざまな方法について説明します。
-ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 294f74daf8dcbb94c9416f3fa1bb799ebd974c60
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318191"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48351025"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>メッセージとファイルを Microsoft に報告する
 
@@ -34,10 +34,10 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 |メソッド|説明|
 |---|---|
 |[管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する](admin-submission.md)|Exchange Online メールボックスを使用する組織での管理者に推奨される報告方法 (スタンドアロン EOP では利用できません)。|
-|[レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)|Outlook、Outlook for Mac、および web 上の Outlook (旧称 Outlook Web App) と共に動作し、推奨されるアドインです。 <br/><br/> サブスクリプションに応じて、ユーザーがアドインで報告したメッセージが、 [管理者提出ポータル](admin-submission.md)で利用できるようになります。また、自動化された [調査と応答 (航空) の結果](air-view-investigation-results.md)、 [ユーザーが報告したメッセージレポート](view-email-security-reports.md#user-reported-messages-report)、および [脅威エクスプローラー](threat-explorer-views.md#email--submissions)が使用できます。 <br/><br/> 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [ユーザーがスパムおよびフィッシングメッセージを EOP で送信するためのメールボックスを指定](user-submission.md)する」を参照してください。|
+|[レポート メッセージ アドインを有効にする](enable-the-report-message-add-in.md)|Outlook、Outlook for Mac、および web 上の Outlook (旧称 Outlook Web App) と共に動作し、推奨されるアドインです。 <br/><br/> サブスクリプションに応じて、ユーザーがアドインで報告したメッセージが、 [管理者提出ポータル](admin-submission.md)で利用できるようになります。また、自動化された [調査と応答 (航空) の結果](air-view-investigation-results.md)、 [ユーザーが報告したメッセージレポート](view-email-security-reports.md#user-reported-messages-report)、および [脅威エクスプローラー](threat-explorer-views.md#email--submissions)が使用できます。 <br/><br/> 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [ユーザーの送信ポリシー](user-submission.md)」を参照してください。|
 |[Microsoft Outlook 用迷惑メール報告アドインをインストールして使用する](junk-email-reporting-add-in-for-microsoft-outlook.md)|Outlook でのみ動作します。|
-|[Outlook on the web で迷惑メールとフィッシング詐欺メールを報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Exchange Online のメールボックスを使用する組織では、web 上の Outlook の組み込み機能を使用します (スタンドアロン EOP では使用できません)。 <br/><br/> ユーザーがレポートするメッセージは [、管理者提出ポータル](admin-submission.md)で利用できます。 <br/><br/> 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [Exchange online でスパムおよびフィッシングメッセージをユーザーに送信するためのメールボックスを指定](user-submission.md)する」を参照してください。|
-|[IOS および Android 用の Outlook で迷惑メールとフィッシング詐欺メールを報告する](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Exchange Online メールボックス (スタンドアロン EOP では使用できません) を使用している組織用の Outlook の Outlook の組み込み機能を使用します。 <br/><br/> ユーザーがレポートするメッセージは [、管理者提出ポータル](admin-submission.md)で利用できます。 <br/><br/> 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [Exchange online でスパムおよびフィッシングメッセージをユーザーに送信するためのメールボックスを指定](user-submission.md)する」を参照してください。|
+|[Outlook on the web で迷惑メールとフィッシング詐欺メールを報告する](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Exchange Online のメールボックスを使用する組織では、web 上の Outlook の組み込み機能を使用します (スタンドアロン EOP では使用できません)。 <br/><br/> ユーザーがレポートするメッセージは [、管理者提出ポータル](admin-submission.md)で利用できます。 <br/><br/> 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [ユーザーの送信ポリシー](user-submission.md)」を参照してください。|
+|[IOS および Android 用の Outlook で迷惑メールとフィッシング詐欺メールを報告する](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Exchange Online メールボックス (スタンドアロン EOP では使用できません) を使用している組織用の Outlook の Outlook の組み込み機能を使用します。 <br/><br/> ユーザーがレポートするメッセージは [、管理者提出ポータル](admin-submission.md)で利用できます。 <br/><br/> 指定したメールボックスに、レポートされたメッセージをコピーまたはリダイレクトするように構成できます。 詳細については、「 [ユーザーの送信ポリシー](user-submission.md)」を参照してください。|
 |[分析のためにメッセージを手動で Microsoft に送信する](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|スパムやフィッシングではなく、特定の Microsoft 電子メールアドレスに、添付されたメッセージを手動で送信します。|
 |[メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|ユーザーが分析のためにメッセージを報告したときに通知するメールフロールール (トランスポートルールとも呼ばれます) を作成する方法について説明します。
 |||

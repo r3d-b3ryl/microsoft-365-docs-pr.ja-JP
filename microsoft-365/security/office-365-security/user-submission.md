@@ -1,5 +1,5 @@
 ---
-title: ユーザーがスパムおよびフィッシングメッセージを送信するためのメールボックスを指定する
+title: ユーザー送信ポリシー
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、ユーザーによって報告されたスパムやフィッシング電子メールを収集するようにメールボックスを構成する方法について説明します。
-ms.openlocfilehash: 6ae534278f4471f98f2d3bdd2318c687cea9f1d3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: bffa70184a9307869ce6170ba1ea05ae3f084ccf
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195809"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350283"
 ---
-# <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>Exchange Online でスパムおよびフィッシングメッセージをユーザーが送信するためのメールボックスを指定する
+# <a name="user-submissions-policies"></a>ユーザー送信ポリシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,6 +41,24 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 また、指定したメールボックスにメッセージを転送するように、サードパーティ製のメッセージレポートツールを構成することもできます。
 
 ユーザーが報告したメッセージを Microsoft に直接送信する代わりにカスタムメールボックスに配信することにより、管理者は、 [管理者送信](admin-submission.md)を使用してメッセージを選択的に、手動で microsoft に報告できます。
+
+## <a name="custom-mailbox-prerequisites"></a>カスタムメールボックスの前提条件
+
+次の記事を使用して、ユーザーがレポートされたメッセージをカスタムメールボックスに移動するために必要な前提条件を構成します。
+
+- スパムの信頼度を設定する exchange メールフロールールを作成して、スパムフィルタリングをスキップします。 SCL を **-1**に設定する[メッセージの scl を設定するメールフロールールを作成するには、EAC を使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)してください。
+
+- マルウェア用の添付ファイルのスキャンを無効にします。 [ [設定] (または [編集])](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) を使用して、[事前に安全な添付ファイルを作成する] ポリシーを作成します。このポリシーは、 **マルウェアが有効になっている場合、添付ファイルはスキャンされません** 。
+
+- メッセージに対する URL スキャンを無効にします。 [すべてのまたは特定の電子メールの受信者に適用される、追加 (または編集) の ATP の安全なリンク](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients)ポリシーを使用して、安全なリンクポリシーを作成します。 **[メッセージ内の不明な悪意のある url に対するアクション] を [** **オフ**] に設定します。
+
+- マルウェア対策ポリシーを作成して、マルウェアのゼロ時間の自動削除を無効にします。 **マルウェアのゼロ時間自動削除**を**オフ**に設定するに[は、「セキュリティ & コンプライアンスセンターを使用してマルウェア対策ポリシーを作成する」を](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies)参照してください。
+
+- スパム ZAP およびフィッシング ZAP のゼロ時間自動削除 (ZAP) を無効にするスパムフィルターポリシーを作成します。 「 [セキュリティ & コンプライアンスセンターを使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) してスパム対策ポリシーを作成 **し、スパム** zap およびフィッシング ZAP のチェックボックスをオフにする」を参照してください。
+
+- 迷惑メールルールを無効にします。 迷惑メールルールを無効にするには、 [Exchange Online メールボックスで迷惑メールの設定を構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) します。 無効にした場合、EOP は、迷惑メールフォルダーにメッセージを移動することはできません verdict アクションによる迷惑メール **フォルダーへのメッセージの移動** またはメールボックス上のセーフリストコレクションへのメッセージの移動。
+
+メールボックスが適用可能なすべての前提条件を満たしていることを確認したら、 [セキュリティ & コンプライアンスセンターを使用して、ユーザー送信メールボックスを構成](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) します (この記事で説明します)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
