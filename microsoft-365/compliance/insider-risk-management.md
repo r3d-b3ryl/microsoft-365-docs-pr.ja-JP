@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 92b8802325ea6d80241d59bd506051ad048b8422
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 6045adec673313514243b023dc6ab688387f78d8
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208679"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341403"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 での Insider リスク管理
 
@@ -58,7 +61,7 @@ Insider リスク管理ワークフローは、組織内の内部リスクを特
 
 ![インサイダーリスク管理ワークフロー](../media/insider-risk-workflow.png)
 
-### <a name="policies"></a>ポリシー
+### <a name="policies"></a>Policies
 
 [内部のリスク管理ポリシー](insider-risk-management-policies.md) は、定義済みのテンプレートを使用して作成され、組織内で調査されるトリガーイベントとリスクインジケーターを定義するポリシー条件を使用して作成されます。 これらの条件には、通知に対してリスクインジケーターを使用する方法、ポリシーに含めるユーザー、優先度を指定するサービス、および監視期間を含めることが含まれます。
 
@@ -108,7 +111,7 @@ Insider リスク管理ワークフローは、組織内の内部リスクを特
 
 ![Insider リスク管理の調査](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>Action
+### <a name="action"></a>アクション
 
 ケースを調査した後、レビューアーは迅速に行動を取ることができ、組織内の他のリスク関係者と共同作業を行うことができます。 ユーザーが誤って、または誤ってポリシー条件を違反した場合、組織に合わせてカスタマイズできる通知テンプレートからユーザーに簡単な通知通知を送信できます。 これらの通知は簡単な通知として機能する場合もあれば、将来の危険な行動を防ぐためにトレーニングやガイダンスをリフレッシャーにしたい場合があります。 詳細については、「 [Insider リスク管理の通知テンプレート](insider-risk-management-notices.md)」を参照してください。
 

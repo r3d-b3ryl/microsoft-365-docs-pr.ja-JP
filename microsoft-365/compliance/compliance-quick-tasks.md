@@ -9,15 +9,16 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- m365-security-compliance
+- m365initiative-compliance
 localization_priority: Normal
 description: Microsoft 365 のコンプライアンスをすばやく始めるのに役立つタスクについて説明します。
-ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200840"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341183"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -129,7 +130,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 アクティビティエクスプローラーを使用する詳細な手順については、「 [アクティビティエクスプローラーの概要](data-classification-activity-explorer.md)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 これで、組織のコンプライアンス管理の基本が構成されました。機密情報を保護し、その他の insider のリスクを検出して操作するために役立つ、Microsoft 365 の以下のコンプライアンスソリューションを検討してください。
 

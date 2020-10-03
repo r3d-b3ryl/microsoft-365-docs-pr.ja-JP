@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214906"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341225"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider リスク管理設定の概要
 
@@ -189,7 +192,7 @@ Api を使用して、内部のリスクの警告情報を確認するには、�
 - ID
 - RecordType
 - CreationTime
-- 操作
+- 操作​​
 - OrganizationId
 - UserType
 - UserKey
