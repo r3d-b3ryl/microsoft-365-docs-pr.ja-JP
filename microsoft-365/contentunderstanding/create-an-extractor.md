@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321811"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338651"
 ---
-# <a name="create-an-extractor-preview"></a>エクストラクターを作成する
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
 
 </br>
@@ -122,9 +122,20 @@ ms.locfileid: "48321811"
 
 ## <a name="test-your-model"></a>モデルをテストする
 
-ラベル付きのサンプルファイルに対して一致が返された場合は、ラベルの付いていないその他のファイルの例でモデルをテストできます。 これは、モデルを使用する前に、モデルが処理したことのないファイルでテストすることによって、モデルの「健全さ」をチェックし準備ができたかどうかを評価するのに便利な手順です。
+ラベル付きのサンプルファイルに対して一致が返された場合は、ラベルの付いていないその他のファイルの例でモデルをテストできます。 これはオプションのですが、モデルを使用する前に、モデルが処理したことのないファイルでテストすることによって、モデルの「健全さ」をチェックし準備ができたかどうかを評価するのに便利な手順です。
 
 1. [モデルのホーム] ページで、[ **テスト** ] タブを選択します。 ラベル付けのされていないサンプルファイル上でモデルが実行されます。
 2. [ **テストファイル** ] の一覧で、サンプルファイルから必要な情報が抽出されているかどうかが表示されます。 この情報を使用して、ドキュメントを特定するときの分類子の有効性を判断します。
 
     ![ファイルに対してテストする](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>関連項目
+[分類子を作成する](create-a-classifier.md)
+
+[説明の種類](explanation-types-overview.md)
+
+[エクストラクターの作成時に用語ストアの分類を活用する](leverage-term-store-taxonomy.md)
+
+[ドキュメント理解の概要](document-understanding-overview.md)
+
+[モデルを適用する](apply-a-model.md) 

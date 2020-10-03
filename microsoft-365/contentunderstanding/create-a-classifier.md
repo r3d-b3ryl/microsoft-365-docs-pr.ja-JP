@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 分類子を作成する方法を説明します
-ms.openlocfilehash: 1225a4e57969b507ddd2ca7260050605c0db955e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321859"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338639"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexで分類子を作成する
 
@@ -131,7 +131,7 @@ ms.locfileid: "48321859"
 
 ## <a name="test-your-model"></a>モデルをテストする
 
-ラベル付きのサンプルファイルに対して一致が返された場合は、このモデルがまだ扱っていないその他のラベルのないサンプルファイルで、モデルをテストできます。  この手順は省略できます。
+ラベル付きのサンプルファイルに対して一致が返された場合は、このモデルがまだ扱っていないその他のラベルのないサンプルファイルで、モデルをテストできます。  これはオプションのですが、モデルを使用する前に、モデルが処理したことのないファイルでテストすることによって、モデルの「健全さ」をチェックし準備ができたかどうかを評価するのに便利な手順です。
 
 1. [モデルのホーム] ページで、[ **テスト** ] タブを選択します。 ラベルなしのサンプルファイル上でモデルが実行されます。
 2. [ **テストファイル** ] の一覧では、サンプルファイルが表示され、モデルがポジティブかネガティブであるかを予測します。 この情報を使用して、ドキュメントを特定するときの分類子の有効性を判断します。
@@ -143,6 +143,6 @@ ms.locfileid: "48321859"
 
 [ドキュメント理解の概要](document-understanding-overview.md)
 
-[フォーム処理モデルを作成する](create-a-form-processing-model.md)
+[説明の種類](explanation-types-overview.md)
 
 [モデルを適用する](apply-a-model.md) 
