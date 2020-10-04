@@ -16,13 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mig
+- m365initiative-compliance
 description: アイテム保持ポリシーと保持ラベルを実装して組織のデータを管理しようと思っても、どこから始めればよいかかわりませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198942"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338386"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの使用を開始する
 
@@ -60,16 +62,17 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 |必要な作業...|ドキュメント|
 |----------------|---------------|
-|組織または Microsoft 365 サービスにより、保持アクションと削除アクションを効率的に設定する <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 グループ <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer ネットワーク |[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)|
-|管理者とユーザーが、ドキュメントやメールに対して保持アクションと削除アクションのセットを手動で適用できるようにする <br />-  SharePoint <br />- OneDrive <br />- Outlook および Outlook on the web|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
-|サイト管理者が、SharePoint ライブラリ、フォルダー、ドキュメント セット内のすべてのコンテンツに既定の保持ラベルを設定できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
-|ユーザーが、Outlook のルールを使用して、メールに保持ラベルを自動的に適用できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
-|ドキュメントやメールに対して保持アクションと削除アクションのセットを自動的に適用する |[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)|
+|以下の Microsoft 365 サービスによる保持および削除アクションを効率的に設定します。 <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 グループ <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer ネットワーク |[アイテム保持ポリシーを作成して構成する](create-retention-policies.md)|
+|管理者とユーザーが、以下でドキュメントと電子メールの保持および削除アクションを手動で適用できるようにする <br />-  SharePoint <br />- OneDrive <br />- Outlook および Outlook on the web|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
+|サイト管理者が、SharePoint ライブラリ、フォルダー、またはドキュメントセット内のすべてのコンテンツの既定の保持および削除アクションを設定できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
+|Outlook のルールを使用して、ユーザーが電子メールの保持および削除アクションを自動的に適用できるようにする|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
+|管理者が保持アクションと削除アクションをドキュメント理解モデルに適用できるようにして、SharePoint ライブラリで識別されたドキュメントにこれらが自動的に適用されるようにします。|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
+|ドキュメントと電子メールに保持および削除アクションを自動的に適用する |[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)|
 |次のようなイベントが発生したときに保持期間を開始する  <br />- 従業員が退職する <br />- 契約満了 <br />- 製品の有効期間の終了| [イベントの発生時に保持を開始する](event-driven-retention.md)|
 |SharePoint で各種ドキュメントのライフサイクルを管理する| [保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)|
 |SEC Rule 17a-4 に準拠する|[Exchange Online およびセキュリティ/コンプライアンス センターを使用して SEC Rule 17a-4 に準拠する](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|保持期間の終了時にコンテンツが削除される前に、誰かがレビューと承認を行うようにする|[廃棄確認](disposition.md#disposition-reviews) |
-| 保持ラベルが適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
+|保持期間の終了時にコンテンツが完全に削除される前に、誰かがレビューして承認することを確認する|[廃棄確認](disposition.md#disposition-reviews) |
+| 保持および削除設定がアイテムに適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
 |ドキュメントとメールに対して 1 つのレコード管理ソリューションを使用する |[レコード管理の詳細](records-management.md) |
 
 レコード管理用の保持ラベルを使用する場合、コンテンツをレコードとしてマークする保持ラベルに固有の追加のシナリオがあります。 「[レコード管理の一般的なシナリオ](get-started-with-records-management.md#common-scenarios-for-records-management)」を参照してください。
