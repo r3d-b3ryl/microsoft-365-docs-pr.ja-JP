@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Microsoft SharePoint Syntexの説明のタイプの詳細については、こちらを参照してください。
-ms.openlocfilehash: 4fe13a35757807e08638f68259ccd24a59a97460
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338663"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350305"
 ---
 # <a name="introduction-to-explanation-types"></a>説明の種類の概要
 
