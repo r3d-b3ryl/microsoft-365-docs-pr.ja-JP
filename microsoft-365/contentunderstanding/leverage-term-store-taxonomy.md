@@ -1,56 +1,61 @@
 ---
-title: 抽出器を作成するときに用語ストアの分類を活用する
+title: 抽出子の作成時に用語ストアの分類を活用する
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: ドキュメントに抽出器を作成するときに用語ストアの分類を活用する Microsoft SharePoint の同期 Tex のモデルを理解する。
-ms.openlocfilehash: 94f7a0389d2f06e0f8c1a60a341a02e43dfb2071
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: Microsoft SharePoint Syntex のドキュメント理解モデルで抽出子を作成するときに、用語ストアの分類法を活用します。
+ms.openlocfilehash: f7219f6facc1d29242f7bd52743da92e13de3b89
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296013"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337279"
 ---
-# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>抽出器を作成するときに用語ストアの分類を活用する
-
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+# <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>抽出子の作成時に用語ストアの分類を活用する
 
 </br>
 
-ドキュメント内で抽出器を作成する SharePoint の同期について理解すると、 [Managed Metadata service](https://docs.microsoft.com/sharepoint/managed-metadata#terms) の用語ストア分類を活用して、抽出するデータに適した用語を表示することができます。  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJJ]  
 
-例として、モデルは、ドキュメントライブラリにアップロードされたすべての **契約** ドキュメントを識別して分類します。  さらに、このモデルでは、契約 **サービス** の値を各コントラクトから抽出し、ライブラリビューの列に表示します。 契約のさまざまな契約サービスの値の中には、会社で使用されなくなって名前が変更された古い値がいくつかあります。 たとえば、[ *設計*]、[ *グラフィックス*]、または [ *地形* ] の各契約サービスへのすべての参照は、 *クリエイティブ*と呼ばれるようになりました。 モデルでは、契約ドキュメントから古くなった用語のいずれかを抽出するときに、ライブラリビューに現在の用語クリエイティブを表示することをお勧めします。 次の例では、モデルを学習する際に、1つのサンプルドキュメントに、古い *設計*用語が含まれています。
+</br>
+
+
+SharePoint Syntex のドキュメント理解モデルで抽出子を作成する場合、[マネージド メタデータ サービス](https://docs.microsoft.com/sharepoint/managed-metadata#terms)の用語ストア分類を利用して、抽出するデータの優先用語を表示できます。  
+
+例として、モデルは、ドキュメント ライブラリにアップロードされているすべての**契約**ドキュメントを識別して分類します。  さらに、モデルは各契約から**契約サービス**値も抽出し、ライブラリ ビューの列に表示します。 契約内のさまざまな契約サービス値の中には、会社が使用しなくなって名前が変更された古い値がいくつかあります。 たとえば、契約サービスでの *Design*、*Graphics*、*Topography* という用語への参照はすべて、*Creative* と呼ばれる必要があります。 モデルが契約ドキュメントから過去の条件の 1 つを抽出するときは必ず、ライブラリ ビューに現在の条件 (Creative) を表示する必要があります。 以下の例では、モデルのトレーニング中に、1 つのサンプル ドキュメントに古い用語である *Design* が含まれていることがわかります。
 
    ![用語ストア](../media/content-understanding/design.png)</br>
 
 
-## <a name="term-set-synonyms"></a>用語セットのシノニム 
+## <a name="use-a-managed-metadata-column-in-your-extractor"></a>抽出子で管理されたメタデータ列を使用する
 
-用語セットは、SharePoint 管理センターの Managed Metadata service 用語ストアで構成されます。 次の例では、 *契約サービス*の [用語セット](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) が、 *クリエイティブ*を含むいくつかの用語を含むように構成されています。  この用語の詳細には、用語に3つの類義語 (*デザイン*、 *グラフィックス*、および *地形*) があり、類義語を *クリエイティブ*に変換する必要があることが示されています。
+用語セットは、SharePoint 管理センターの 管理されたメタデータ サービス 用語ストアで構成されます。 以下の例では、*契約サービス*の[用語セット](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)は、*Creative* などのいくつかの用語を含むように構成されています。  詳細は、この用語に 3 つの同義語 (*Design*、*Graphics*、*Topography*) があり、これらの同義語を *Creative* に翻訳する必要があることを示しています。 
 
    ![用語セット](../media/content-understanding/term-store.png)</br>
 
-これを説明する方法がわからない場合は、Mike <してください。  「Contract Services」列を抽出して表示する抽出器を作成すると、その列はクリエイティブサービスの管理メタデータ用語セットを使用するように "マークされています。" という処理をモデルに指示します。 >
+用語セットで同義語を使用する理由はいくつか考えられます。 たとえば、古い用語、名前が変更された用語、または名前付けに関する組織部門間のバリエーションがある可能性があります。
 
-## <a name="configure-your-document-library-site-column-for-a-managed-metadata-field"></a>管理されたメタデータフィールドのドキュメントライブラリサイト列を構成する
+モデルで抽出子を作成するときに管理メタデータ フィールドを選択できるようにするには、それを[管理メタデータ サイト列として追加する](https://support.microsoft.com/office/8fad9e35-a618-4400-b3c7-46f02785d27f)必要があります。 サイト列を追加すると、モデルの抽出子を作成するときに選択できるようになります。
+
+   ![契約サービス](../media/content-understanding/contract-services.png)</br>
 
 
-   ![管理されたメタデータを作成する](../media/content-understanding/creative.png)</br>
+モデルをドキュメント ライブラリに適用した後、ドキュメントがライブラリにアップロードされると、抽出子が同義語の値 (*Design*、*Graphics*、*Topography*) のいずれかを検出すると、*Creative Services* 列に優先用語 (*Creative*) が表示されます。
+
+   ![契約サービス列](../media/content-understanding/creative.png)</br>
+
 
 ## <a name="see-also"></a>関連項目
-[管理されたメタデータの概要](https://docs.microsoft.com/sharepoint/managed-metadata#terms)</br>
-[抽出器を作成する](create-an-extractor.md)</br>
-[管理メタデータ列を作成する](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)</br>
+[管理されたメタデータの概要](https://docs.microsoft.com/sharepoint/managed-metadata#terms)
+
+[抽出子を作成する](create-an-extractor.md)
+
+[管理メタデータ列を作成する](https://support.microsoft.com/office/create-a-managed-metadata-column-8fad9e35-a618-4400-b3c7-46f02785d27f?redirectSourcePath=%252farticle%252fc2a06717-8105-4aea-890d-3082853ab7b7&ui=en-US&rs=en-US&ad=US)
 
 
 

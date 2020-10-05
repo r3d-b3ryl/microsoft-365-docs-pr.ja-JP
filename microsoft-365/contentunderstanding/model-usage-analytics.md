@@ -1,56 +1,58 @@
 ---
-title: モデル使用状況分析についてのドキュメント
+title: ドキュメント理解モデルの利用状況分析
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: ドキュメントに保持ラベルを適用する方法について説明します。モデルを理解する
-ms.openlocfilehash: a07e60d575e616b3a2765011a4fba84b4cff21ff
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: 保持ラベルをドキュメント理解モデルに適用する方法を学ぶ
+ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48296194"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337243"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>モデル使用状況分析についてのドキュメント
+# <a name="document-understanding-model-usage-analytics"></a>ドキュメント理解モデルの利用状況分析
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
 
 </br>
 
-Microsoft SharePoint の同期 Tex コンテンツセンターは、モデル使用状況分析を提供して、コンテンツセンターから公開されたモデルの使用方法に関する詳細情報を提供します。 これには、次の情報が含まれています。
 
-- モデルが適用されている場所
-- 時間の経過とともに処理されているファイルの数
+Microsoft SharePoint Syntex　コンテンツ　センターは、モデル使用分析を提供して、コンテンツ　センターから公開されたモデルがどのように使用されているかに関する詳細情報を提供します。 これには、次の情報のロールアップが含まれます。
 
- ![Model analytics](../media/content-understanding/model-analytics.png) </br>
+- モデルが適用される場所
+- 時間の経過に伴って処理されるファイルの数
 
-## <a name="total-model-percentage"></a>モデルの合計の割合
+ ![モデル分析](../media/content-understanding/model-analytics.png) </br>
 
-   ![モデルの合計の割合](../media/content-understanding/total-model-percentage.png) </br>
+## <a name="total-model-percentage"></a>合計モデル パーセンテージ
 
-[ **総合モデル比率** 円グラフの場合、コンテンツセンターのすべての公開モデルによって処理された総ファイル数の割合として、各公開モデルが表示されます。
+   ![合計モデル パーセンテージ](../media/content-understanding/total-model-percentage.png) </br>
 
-各モデルには、モデルによって正常に分析されたアップロード済みファイルの割合 ( **完全なレート**) も表示されます。 完全性率が低い場合は、分析対象のモデルまたはファイルのいずれかに問題があることを意味します。
+**合計モデル パーセンテージ** 円グラフは、コンテンツセンターですべての公開モデルによって処理された合計ファイルのパーセンテージとして、公開された各モデルを表示します。
 
-## <a name="files-processed-over-time"></a>時間の経過によって処理されるファイル
+各モデルには、モデルによって正常に分析されたアップロードファイルの割合である**完了率**も表示されます。 完了率が低い場合、分析中のモデルまたはファイルのいずれかに問題があることを意味している可能性があります。
+
+## <a name="files-processed-over-time"></a>時間の経過とともに処理されたファイル
 
    ![処理されたファイル](../media/content-understanding/files-processed-over-time.png) </br>
 
-タイムバーグラフ **で処理** されたファイルは、各モデルで時間の経過と共に処理されるファイルの数だけでなく、モデルが適用されたドキュメントライブラリも表示します。
+**時間の経過とともに処理されたファイル**の棒グラフには、各モデルの時間の経過とともに処理されたファイルの数だけでなく、モデルが適用されたドキュメントライブラリも表示されます。
 
-   ![縦棒グラフ](../media/content-understanding/bar-chart-models.png) </br>
+   ![棒グラフ](../media/content-understanding/bar-chart-models.png) </br>
 
 ## <a name="see-also"></a>関連項目
-[分類子を作成する](create-a-classifier.md)</br>
-[抽出器を作成する](create-an-extractor.md)</br>
-[ドキュメント理解の概要](document-understanding-overview.md)</br>
+[分類子を作成する](create-a-classifier.md)
+
+[抽出子を作成する](create-an-extractor.md)
+
+[ドキュメント理解の概要](document-understanding-overview.md)
+
 [フォーム処理モデルを作成する](create-a-form-processing-model.md)  
