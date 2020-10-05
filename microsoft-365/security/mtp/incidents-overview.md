@@ -19,40 +19,43 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200019"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357844"
 ---
-# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="f722c-104">Microsoft Threat Protection のインシデントの概要</span><span class="sxs-lookup"><span data-stu-id="f722c-104">Incidents overview in Microsoft Threat Protection</span></span>
+# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="2acd3-104">Microsoft Threat Protection のインシデントの概要</span><span class="sxs-lookup"><span data-stu-id="2acd3-104">Incidents overview in Microsoft Threat Protection</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="f722c-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="f722c-105">**Applies to:**</span></span>
-- <span data-ttu-id="f722c-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="f722c-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="2acd3-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="2acd3-105">**Applies to:**</span></span>
+- <span data-ttu-id="2acd3-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="2acd3-106">Microsoft Threat Protection</span></span>
 
 
 
-<span data-ttu-id="f722c-107">すべてのインシデントの基本はアラートです。</span><span class="sxs-lookup"><span data-stu-id="f722c-107">The basis of all incidents are alerts.</span></span> <span data-ttu-id="f722c-108">アラートは、ネットワーク上で悪意のあるイベントまたはアクティビティが検出されたときに作成されます。</span><span class="sxs-lookup"><span data-stu-id="f722c-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="f722c-109">個々のアラートは、個々のイベントまたはエンティティで何が起こっているかについての貴重なヒントを提供します。</span><span class="sxs-lookup"><span data-stu-id="f722c-109">Individual alerts provide valuable clues in what's happening on individual events or entities.</span></span> <span data-ttu-id="f722c-110">ただし、攻撃は通常、さまざまな攻撃ベクトルを使用して侵害を実行します。</span><span class="sxs-lookup"><span data-stu-id="f722c-110">However, attacks typically employ various attack vectors to carry out a breach.</span></span> <span data-ttu-id="f722c-111">個々のヒントを組み合わせることは、困難で時間のかかる作業です。</span><span class="sxs-lookup"><span data-stu-id="f722c-111">Piecing individual clues together can be a challenging and time-consuming task.</span></span> 
+<span data-ttu-id="2acd3-107">インシデントは、関連するアラートに基づいています。</span><span class="sxs-lookup"><span data-stu-id="2acd3-107">Incidents are based on related alerts.</span></span> <span data-ttu-id="2acd3-108">アラートは、ネットワーク上で悪意のあるイベントまたはアクティビティが検出されたときに作成されます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="2acd3-109">個々のアラートは、進行中の攻撃に関する有益な手がかりを提供します。</span><span class="sxs-lookup"><span data-stu-id="2acd3-109">Individual alerts provide valuable clues about an on-going attack.</span></span> <span data-ttu-id="2acd3-110">ただし、攻撃では通常、違反を実行するためのさまざまなベクターと手法が使用されます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-110">However, attacks typically employ various vectors and techniques to carry out a breach.</span></span> <span data-ttu-id="2acd3-111">Piecing 個別のヒントを一緒に使用することは困難で時間がかかることがあります。</span><span class="sxs-lookup"><span data-stu-id="2acd3-111">Piecing individual clues together can be challenging and time-consuming.</span></span>
 
-<span data-ttu-id="f722c-112">Microsoft Threat Protection は、個々のアラートを集めて全容を明らかにします。</span><span class="sxs-lookup"><span data-stu-id="f722c-112">Microsoft Threat Protection connects the dots on individual alerts.</span></span> <span data-ttu-id="f722c-113">次のエンティティでの悪意のあるイベントは、Microsoft 365 セキュリティ センターに表示されます。</span><span class="sxs-lookup"><span data-stu-id="f722c-113">Malicious events on the following entities are surfaced in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="f722c-114">デバイス</span><span class="sxs-lookup"><span data-stu-id="f722c-114">Devices</span></span>
-- <span data-ttu-id="f722c-115">ユーザー</span><span class="sxs-lookup"><span data-stu-id="f722c-115">Users</span></span>
-- <span data-ttu-id="f722c-116">メールボックス</span><span class="sxs-lookup"><span data-stu-id="f722c-116">Mailboxes</span></span>
+<span data-ttu-id="2acd3-112">この短いビデオは、Microsoft の脅威保護のインシデントの概要を示しています。</span><span class="sxs-lookup"><span data-stu-id="2acd3-112">This short video gives an overview of incidents in Microsoft Threat Protection.</span></span>
+<br>
 
-<span data-ttu-id="f722c-117">大規模な攻撃の一部である特性を示す疑わしいイベントがインシデントに集計されます。</span><span class="sxs-lookup"><span data-stu-id="f722c-117">Suspicious events that show characteristics of being part of a larger attack are aggregated into an incident.</span></span> 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-<span data-ttu-id="f722c-118">攻撃が開始された場所や、攻撃の範囲を正確に把握できるその他の詳細情報が得られます。</span><span class="sxs-lookup"><span data-stu-id="f722c-118">You'll know exactly where an attack started and other details to help you see the extent of the attack.</span></span>
+<span data-ttu-id="2acd3-113">インシデントとは、攻撃のストーリーを構成する、相互に関連する警告のコレクションのことです。</span><span class="sxs-lookup"><span data-stu-id="2acd3-113">An incident is a collection of correlated alerts that make up the story of an attack.</span></span> <span data-ttu-id="2acd3-114">ネットワーク内のさまざまなデバイス、ユーザー、およびメールボックスエンティティにある悪意のある疑わしいイベントは、Microsoft の脅威保護によって自動的に集計されます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-114">Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft Threat Protection.</span></span> <span data-ttu-id="2acd3-115">関連するアラートをインシデントにグループ化することにより、セキュリティ defenders が攻撃の包括的なビューになります。</span><span class="sxs-lookup"><span data-stu-id="2acd3-115">Grouping related alerts into an incident gives security defenders a comprehensive view of an attack.</span></span> 
 
-<span data-ttu-id="f722c-119">このプラットフォームは、セキュリティの防御側に正しいビジュアルとデータ表現を提供し、複雑なエンティティ間の脅威を理解し、対処できるようにします。</span><span class="sxs-lookup"><span data-stu-id="f722c-119">The platform provides security defenders with the right visuals and data representations to understand and address complex cross-entity threats.</span></span> 
+<span data-ttu-id="2acd3-116">たとえば、セキュリティ defenders は、攻撃がどこで開始されたか、どのような戦術を使用したか、およびその攻撃がネットワークにどのくらいの時間が経過したかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-116">For instance, security defenders can see where the attack started, what tactics were used, and how far the attack has gone into the network.</span></span> <span data-ttu-id="2acd3-117">また、デバイス、ユーザー、メールボックスの数、影響の深刻度、影響を受けるエンティティに関するその他の詳細など、攻撃の範囲を確認することもできます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-117">They can also see the scope of the attack, like how many devices, users, and mailboxes were impacted, how severe the impact was, and other details about affected entities.</span></span>
 
-<span data-ttu-id="f722c-120">攻撃の範囲を把握できるだけでなく、インシデントを阻止するための戦術的な手順を実行できるサービスも利用できます。</span><span class="sxs-lookup"><span data-stu-id="f722c-120">Not only will you have visibility on the scope of an attack, but you'll also have access to services that will allow you to take tactical steps to contain an incident.</span></span>
+<span data-ttu-id="2acd3-118">有効にした場合、Microsoft の脅威保護は自動化および人工知能によって個々の通知を自動的に調査および解決できます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-118">If enabled, Microsoft Threat Protection can automatically investigate and resolve the individual alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="2acd3-119">セキュリティ defenders は、インシデントビューから直接攻撃を解決するために、追加の修復手順を実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-119">Security defenders can also perform additional remediation steps to resolve the attack straight from the incidents view.</span></span> 
+
+<span data-ttu-id="2acd3-120">過去30日間のインシデントは、インシデントキューに表示されます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-120">Incidents from the last 30 days are shown in the incident queue.</span></span> <span data-ttu-id="2acd3-121">ここから、セキュリティ defenders は、リスクレベルやその他の要因に基づいて、どのインシデントに優先度を設定する必要があるかを確認できます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-121">From here, security defenders can see which incidents should be prioritized based on risk level and other factors.</span></span> 
+
+<span data-ttu-id="2acd3-122">セキュリティ defenders は、インシデントの名前を変更したり、インシデントに対して個別のアナリストに割り当てたり、インシデントにタグを追加したりすることもできます。</span><span class="sxs-lookup"><span data-stu-id="2acd3-122">Security defenders can also rename incidents, assign them to individual analysts, classify, and add tags to incidents for a better and more customized incident management experience.</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="f722c-121">関連項目</span><span class="sxs-lookup"><span data-stu-id="f722c-121">Related topics</span></span>
-- [<span data-ttu-id="f722c-122">インシデントの優先度設定</span><span class="sxs-lookup"><span data-stu-id="f722c-122">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="f722c-123">インシデントの調査</span><span class="sxs-lookup"><span data-stu-id="f722c-123">Investigate incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="f722c-124">インシデントの管理</span><span class="sxs-lookup"><span data-stu-id="f722c-124">Manage incidents</span></span>](manage-incidents.md)
+
+## <a name="see-also"></a><span data-ttu-id="2acd3-123">関連項目</span><span class="sxs-lookup"><span data-stu-id="2acd3-123">See also</span></span>
+- [<span data-ttu-id="2acd3-124">インシデントの優先度設定</span><span class="sxs-lookup"><span data-stu-id="2acd3-124">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="2acd3-125">インシデントの調査</span><span class="sxs-lookup"><span data-stu-id="2acd3-125">Investigate incidents</span></span>](investigate-incidents.md)
+- [<span data-ttu-id="2acd3-126">インシデントの管理</span><span class="sxs-lookup"><span data-stu-id="2acd3-126">Manage incidents</span></span>](manage-incidents.md)
