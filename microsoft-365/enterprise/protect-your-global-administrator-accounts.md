@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365initiative-coredeploy
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: この記事では、グローバル管理者のアクセスを Microsoft 365 サブスクリプションに保護する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b234c0e5c0ca352f26ff30213f22d59e07de274
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bcc1a09ca8e7c57d4d6c69400925df3531c53c4f
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327251"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357808"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Microsoft 365 のグローバル管理者アカウントを保護する
 
@@ -170,7 +172,7 @@ PIM は、Microsoft 365 E5 に含まれている Azure Active Directory Premium 
 
 サーバー上での SIEM ソフトウェア実行では、アプリケーションとネットワークハードウェアによって作成されたセキュリティ通知とイベントのリアルタイム分析を実行します。 SIEM サーバーに Microsoft 365 のセキュリティの警告とイベントを分析およびレポート機能に含めることができるようにするには、Azure AD をお客様の SEIM に統合します。 「 [Azure ログ統合の概要」を](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 Microsoft 365 サブスクリプションの id を設定している場合は、次を参照してください。
 

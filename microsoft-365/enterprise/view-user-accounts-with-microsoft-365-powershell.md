@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: PowerShell を使用して、Microsoft 365 ユーザーアカウントをさまざまな方法で表示、一覧表示、または表示する方法について説明します。
-ms.openlocfilehash: ea631d12a95ca813ebf9da3286e36d724d51a2f7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dba05ce440ec0d395fda58a12df3e9f751bb469
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696277"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357900"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントを表示する
 
@@ -99,6 +99,21 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
+
+### <a name="view-account-synchronization-status"></a>アカウントの同期状態を表示する
+
+ユーザーアカウントには2つのソースがあります。Windows Server Active Directory (AD) は、オンプレミス AD からクラウドに、またはクラウドで直接作成されたアカウントである Azure AD に同期するアカウントです。
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+```
+このコマンドは、 **Dirsyncenabled** 属性が True に設定されているすべてのユーザーを取得するように PowerShell に指示します。 これを使用して、オンプレミス AD からのアカウント同期を取得できます。
+
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+```
+このコマンドは、属性 **Dirsyncenabled** が False に設定されているすべてのユーザーを取得するように PowerShell に指示します。 クラウドのみのアカウントを取得するために使用できます。
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>共通プロパティに基づいて一部のアカウントを表示する
 
@@ -305,4 +320,3 @@ Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipa
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)
-

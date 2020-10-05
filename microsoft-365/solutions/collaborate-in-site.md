@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: ゲストを使用したグループ作業のために SharePoint サイトをセットアップするために必要な Microsoft 365 構成手順について説明します。
-ms.openlocfilehash: cb3cfc52191be4bacfb9d84672131149082ee80e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277569"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357996"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>サイトでゲストと共同で作業する
 
@@ -146,3 +146,5 @@ SharePoint 組織レベルの共有設定を設定するには
 [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)
+
+[Azure AD B2B を使用した SharePoint と OneDrive の統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

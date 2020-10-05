@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: Microsoft 365 用のテナントをセットアップするためのロードマップ。
-ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775149"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357912"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 のテナントロードマップ
 
@@ -34,7 +36,6 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 
 - [サブスクリプション、ライセンス、および Azure Active Directory (Azure AD) テナントについて理解する](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [サードパーティの SSL 証明書の使用方法を理解する](plan-for-third-party-ssl-certificates.md)
-- [Microsoft 365 管理センターでのセットアップガイドへのアクセス](setup-guides-for-microsoft-365.md)
 - [Microsoft 365 テナントを Azure AD サービスと統合する方法を理解する](integrated-apps-and-azure-ads.md)
 - [クライアントアプリのサポートを計画する](microsoft-365-client-support-certificate-based-authentication.md)
 - [ハイブリッド先進認証の使用方法を決定する](hybrid-modern-auth-overview.md)
@@ -44,7 +45,7 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 
 ## <a name="deploy"></a>展開
 
-テナントを展開するには、組織の [DNS ドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) します。
+テナントを展開するには、組織の [DNS ドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) し、 [Microsoft 365 管理センターのセットアップガイド](setup-guides-for-microsoft-365.md)を使用します。
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>複数の地理的な場所を持つテナント
 
@@ -58,7 +59,7 @@ Microsoft は、Microsoft 365 services の新しいデータセンターの地�
 
 Geo データの移動を要求する方法を含む、Microsoft 365 データセンター geo の詳細について [は、ここから開始](moving-data-to-new-datacenter-geos.md)してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [サブスクリプション、ライセンス、アカウント、テナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)を使用して、テナントの計画を開始します。
 

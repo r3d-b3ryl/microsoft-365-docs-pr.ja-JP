@@ -13,14 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
+- M365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 のロードマップ情報。
-ms.openlocfilehash: 997df19ca71b67d3fa579b9feaf3e1a61bc7a358
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327773"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357832"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の ID ロードマップ
 
@@ -87,6 +88,6 @@ Microsoft の IT エキスパートが [ID を管理し、アクセスをセキ�
 
 架空の多国籍組織が Microsoft 365 cloud services のハイブリッド id インフラストラクチャを展開する方法の例については、「 [Contoso Corporation の id](contoso-identity.md)」を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 Id [モデル](about-microsoft-365-identity.md)を使用して id の計画を開始します。

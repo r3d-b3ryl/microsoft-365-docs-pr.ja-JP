@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Teams のゲストとの共同作業のためにチームをセットアップするために必要な Microsoft 365 の構成手順について説明します。
-ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322179"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357796"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>チームでゲストと共同で作業する
 
@@ -184,3 +184,5 @@ SharePoint 組織レベルの既定のリンク設定を設定するには
 [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
 [管理されたゲストで B2B エクストラネットを作成する](b2b-extranet.md)
+
+[Azure AD B2B を使用した SharePoint と OneDrive の統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
