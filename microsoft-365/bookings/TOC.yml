@@ -9,6 +9,8 @@
           href: enter-business-information.md
         - name: サービスの提供内容を定義する
           href: define-service-offerings.md
+        - name: スタッフを予約に追加する
+          href: add-staff.md
         - name: 休業日と終了時間をスケジュールする
           href: schedule-closures-time-off-vacation.md
         - name: スケジュール ポリシーを設定する
