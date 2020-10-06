@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 既存の Office 365 のお客様は、お住まいの国が新しい geo に Microsoft 365 サービスデータを移動する前に、要求を提出する必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333886"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361941"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -31,7 +31,7 @@ ms.locfileid: "48333886"
   
 ## <a name="when-can-i-request-a-move"></a>いつ移行をリクエストできますか?
 
-|**国がサインアップしているお客様**|**リクエスト期間の開始**|**リクエストの期限**|
+| 国がサインアップしているお客様 | リクエスト期間の開始 | リクエストの期限 |
 |:-----|:-----|:-----|
 |日本  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
 |オーストラリア、ニュージーランド、フィジー  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
@@ -44,7 +44,7 @@ ms.locfileid: "48333886"
 |南アフリカ  <br/> |2019 年 7 月 25 日  <br/> |2020 年 6 月 30 日  <br/> |
 |スイス、リヒテンシュタイン  <br/> |2019 年 12 月 10 日  <br/> |2020 年 6 月 30 日  <br/> |
 |ノルウェー  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
-|ドイツ  <br/> |2020年10月1日  <br/> |2021年3月31日  <br/> |
+|ドイツ  <br/> |計画  <br/> |計画  <br/> |
 
 ## <a name="how-to-request-a-move"></a>移行をリクエストする方法
 

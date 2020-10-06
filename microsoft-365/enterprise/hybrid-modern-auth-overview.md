@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/15/2020
+ms.date: 08/25/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: この記事では、ハイブリッド先進認証と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件について説明します。
-ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546446"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361929"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要とオンプレミスの Skype for Business および Exchange サーバーで使用する前提条件
 
@@ -143,18 +143,22 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、[Get-Cs
   - Exchange Server 2013 を使用している場合は、少なくとも 1 つのサーバーに、メールボックスとクライアント アクセス サーバーの役割がインストールされている必要があります。 メールボックスの役割とクライアント アクセスの役割を別々のサーバーにインストールすることもできますが、信頼性を高め、パフォーマンスの向上を図るには、同じサーバーに両方の役割をインストールすることを強くお勧めします。
   - Exchange Server 2016 以降のバージョンを使用している場合は、少なくとも 1 つのサーバーに、メールボックス サーバーの役割がインストールされている必要があります。
   - ハイブリッド環境に Exchange Server 2007 または 2010 はありません。
-  - すべての Exchange サーバーには、最新の累積更新プログラムがインストールされている必要があります。[「最新の累積更新プログラムで Exchange をアップグレードする」](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) を参照して、利用可能なすべての更新プログラムを見つけて管理してください。
+  - すべての Exchange サーバーには、最新の累積更新プログラムがインストールされている必要があります。[「最新の累積更新プログラムで Exchange をアップグレードする」](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) を参照して、利用可能なすべての更新プログラムを見つけて管理してください。
 
 - **Exchange クライアントとプロトコルの要件**
 
-  - 次のクライアントは先進認証をサポートします:
+    先進認証の可用性は、クライアント、プロトコル、および構成の組み合わせによって決まります。 クライアント、プロトコル、または構成で先進認証がサポートされていない場合、クライアントは従来の認証を引き続き利用します。
+  
+    環境で先進認証が有効になっている場合、次のクライアントとプロトコルは、オンプレミスの Exchange で先進認証をサポートします。
 
   |**クライアント**|**プライマリ プロトコル**|**メモ**|
   |:-----|:-----|:-----|
-  |Outlook 2013、Outlook 2016  <br/> |MAPI over HTTP  <br/> |これらのクライアントで先進認証を利用にするには、Exchange 内で MAPI over HTTP を有効にする必要があります (通常、Exchange 2013 Service Pack 1 以降の新規インストールでは有効または True です)。詳細については、[「Office 2013 および Office 2016 クライアント アプリの先進認証のしくみ」](modern-auth-for-office-2013-and-2016.md) を参照してください。  <br/> Outlook の最小限必要なビルドを実行していることを確認します。[「Windows インストーラー (MSI) を使用する Outlook のバージョンの最新の更新プログラム」](https://docs.microsoft.com/officeupdates/outlook-updates-msi) を参照してください。  <br/> |
-  |Outlook 2016 for Mac  <br/> |Exchange Web サービス  <br/> |  <br/> |
-  |iOS および Android 用の Outlook  <br/> |  <br/> |詳細については、[「iOS および Android 用の Outlook でのハイブリッド先進認証の使用」](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) を参照してください。  <br/> |
+  |Outlook 2013 以降  <br/> |MAPI over HTTP  <br/> |これらのクライアントで先進認証を利用にするには、Exchange 内で MAPI over HTTP を有効にする必要があります (通常、Exchange 2013 Service Pack 1 以降の新規インストールでは有効または True です)。詳細については、[「Office 2013 および Office 2016 クライアント アプリの先進認証のしくみ」](modern-auth-for-office-2013-and-2016.md) を参照してください。  <br/> Outlook の最小限必要なビルドを実行していることを確認します。[「Windows インストーラー (MSI) を使用する Outlook のバージョンの最新の更新プログラム」](https://docs.microsoft.com/officeupdates/outlook-updates-msi) を参照してください。  <br/> |
+  |Outlook 2016 for Mac 以降  <br/> |Exchange Web サービス  <br/> |  <br/> |
+  |iOS および Android 用の Outlook  <br/> | Microsoft sync テクノロジ <br/> |詳細については、[「iOS および Android 用の Outlook でのハイブリッド先進認証の使用」](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) を参照してください。  <br/> |
   |Exchange ActiveSync クライアント (例: iOS11 メール)  <br/> |Exchange ActiveSync  <br/> |先進認証をサポートしている Exchange ActiveSync クライアントの場合、基本認証から先進認証に切り替えるには、プロファイルを再作成する必要があります。  <br/> |
+
+    一覧に表示されていないクライアントやプロトコル (POP3 など) は、オンプレミスの Exchange で先進認証をサポートせず、環境内で先進認証が有効にされた後も従来の認証メカニズムを引き続き利用します。
 
 - **一般的な前提条件**
   - AD FS を使用している場合、フェデレーションには Windows 2012 R2 AD FS 3.0 以上が必要です。
