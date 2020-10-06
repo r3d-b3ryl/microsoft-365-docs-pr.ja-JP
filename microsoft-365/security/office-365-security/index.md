@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Office 365 のセキュリティ。 EOP から ATP プラン1および2、標準と厳密なセキュリティ構成の比較を行い、プロパティをセキュリティで保護する方法を理解できるようにします。
-ms.openlocfilehash: bfce840aa05eaebecc1ec227c6c29bd11cb0a823
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+description: Office 365 のセキュリティ。 EOP から ATP プラン1および2、標準セキュリティ構成の比較など 現在の状況と、プロパティをセキュリティで保護する方法について理解します。
+ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
+ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338734"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48359155"
 ---
 # <a name="office-365-security-overview"></a>Office 365 のセキュリティの概要
 
@@ -53,9 +53,9 @@ Office 365 は、EOP によって提供される中心的な保護に基づい�
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
 
-これらのサービスはそれぞれ、保護、検出、調査、応答の中から特定の目標を重視していますが、 ***すべて*** のサービスが、保護、検出、調査、応答の ***いずれか*** の目標を達成できます。
+これらのサービスはそれぞれ、保護、検出、調査、応答の中から目標を強調していますが、 ***すべて*** のサービスが、保護、検出、調査、応答の ***いずれか*** の目標を達成できます。
 
-Office 365 セキュリティの中核となるのは、EOP 保護です。 ATP P1 には EOP が含まれています。 ATP P2 には、P1 と EOP が含まれています。 この構造体は累積されています。 そのため、ATP を構成する場合は、EOP から始めて、レイヤー全体で作業する必要があります。
+Office 365 セキュリティの中核となるのは、EOP 保護です。 ATP P1 には EOP が含まれています。 ATP P2 には、P1 と EOP が含まれています。 この構造体は累積されています。 この製品を構成する際には、EOP から開始し、ATP に作業する必要があります。
 
 電子メール認証の構成はパブリック DNS で行われますが、この機能を構成してスプーフィングを防止することが重要です。 *EOP を使用している場合は、* ***[電子メール認証を構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)する必要があり***ます。
 
@@ -138,11 +138,11 @@ ATP P1 と P2 の詳細を確認するには、 **[この記事に移動](https:
 - 現在のサブスクリプションに Office 365 ATP が含まれておらず、これを使用する場合は、 [販売に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、atp が組織内でどのように動作するかを確認してください。
 
 > [!TIP]
-> ***Insider ヒント***。 EOP と ATP の詳細については、docs.microsoft.com の目次を参照してください。 [Office 365 のセキュリティ](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)記事に移動すると、目次組織が評価と展開 (移行を含む) で開始され、予防、検出、調査、および応答が続くことがわかります。 <p> この構造体は、 **セキュリティ管理** のトピックの後に **セキュリティの運用** に関するトピックが表示されるように分割されています。 いずれかのジョブロールの新しいメンバーである場合は、スペースの理解に役立つように、このヒントのリンクと目次の情報を使用します。 *フィードバックリンク*を必ず使用し、*記事*を参照してください。 フィードバックは、弊社が提供するものを改善するのに役立つ情報です。
+> ***Insider ヒント***。 EOP と ATP の詳細については、docs.microsoft.com の目次を参照してください。 このページに戻ると、 [Office 365 のセキュリティの概要](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)が表示されます。この目次は、サイドバーにあることがわかります。 展開 (移行を含む) が開始され、予防、検出、調査、応答が続きます。 <p> この構造体は、 **セキュリティ管理** のトピックの後に **セキュリティの運用** に関するトピックが表示されるように分割されています。 いずれかのジョブロールの新しいメンバーである場合は、スペースの理解に役立つように、このヒントのリンクと目次の情報を使用します。 *フィードバックリンク*を必ず使用し、*記事*を参照してください。 フィードバックは、弊社が提供するものを改善するのに役立つ情報です。
 
 ## <a name="where-to-go-next"></a>[次へ]
 
-セキュリティ管理者である場合は、メールに対して DKIM または DMARC を構成し、優先ユーザーに対して「Strict」セキュリティプリセットをロールアウトするか、製品の新機能を探す必要があります。 セキュリティ対策を行っている場合は、リアルタイム検出または脅威エクスプローラーを活用して、調査と応答を行うか、エンドユーザー検出をアタックシミュレータでトレーニングすることができます。 次に、その他の推奨事項について説明します。
+セキュリティ管理者の場合は、メールの DKIM または DMARC の構成が必要になることがあります。 優先度の高いユーザーに対しては、「厳しい」セキュリティプリセットをロールアウトするか、製品の新機能を検索することができます。 または、セキュリティ対策を使用している場合は、リアルタイム検出または脅威エクスプローラーを活用して、攻撃シミュレータを使用したエンドユーザー検出の調査と対応を行うこともできます。 いずれにしても、次に説明する必要がある追加の推奨事項があります。
 
 [SPF、DKIM、DMARC を含む電子メール認証 (すべての3つのセットアップへのリンクが含まれています)](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
