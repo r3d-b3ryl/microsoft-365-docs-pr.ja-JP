@@ -15,14 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 43facffde9c31dc33445de87997d2b91cba6a9f1
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 79e141ad85eecab827e0caa98fe022f88335c671
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277553"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368151"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>試用ラボまたはパイロット環境用の Microsoft 脅威保護の柱を構成する
 
@@ -104,19 +106,19 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 
    ![Image of_Office 365 Security & SharePoint、OneDrive、Microsoft Teams の ATP を有効にするためのコンプライアンスセンターページ](../../media/mtp-eval-36.png)
 
-6. [+] アイコンをクリックして、新しい安全な添付ファイルポリシーを作成し、ドメインに受信者ドメインとして適用します。 [**保存**] をクリックします。
+6. [+] アイコンをクリックして、新しい安全な添付ファイルポリシーを作成し、ドメインに受信者ドメインとして適用します。 **[保存]** をクリックします。
 
    ![Image of_Office 365 Security & コンプライアンスセンターページ新しい安全な添付ファイルポリシーを作成する](../../media/mtp-eval-37.png)
  
 7. 次に、 **ATP の安全なリンク** ポリシーを選択し、鉛筆アイコンをクリックして既定のポリシーを編集します。
 
-8. **[ユーザーが安全なリンクをクリックしたときに追跡**しない] オプションが選択されていない状態で、残りのオプションがオンになっていることを確認します。 詳細については、「 [安全なリンク設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 」を参照してください。 [**保存**] をクリックします。 
+8. **[ユーザーが安全なリンクをクリックしたときに追跡**しない] オプションが選択されていない状態で、残りのオプションがオンになっていることを確認します。 詳細については、「 [安全なリンク設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 」を参照してください。 **[保存]** をクリックします。 
 
    ![Image of_Office 365 Security & コンプライアンスセンター] ページで、ユーザーが [セーフ] が選択されていないときに、オプションが追跡されないことを示します。](../../media/mtp-eval-38.png)
 
 9. 次に、 **マルウェア対策** ポリシーを選択し、既定値を選択して、鉛筆アイコンを選択します。
 
-10. [ **設定** ] をクリックし、[はい] を選択して、 **既定の通知テキストを使用** して **マルウェア検出応答**を有効にします。 **一般的な添付ファイルの種類のフィルター**を有効にします。 [**保存**] をクリックします。
+10. [ **設定** ] をクリックし、[はい] を選択して、 **既定の通知テキストを使用** して **マルウェア検出応答**を有効にします。 **一般的な添付ファイルの種類のフィルター**を有効にします。 **[保存]** をクリックします。
 
     ![イメージ of_Office 365 セキュリティ & コンプライアンスセンターで、マルウェア検出応答が既定の通知で有効になっており、一般的な添付ファイルの種類フィルターが有効になっていることを示します。](../../media/mtp-eval-39.png)
   
@@ -173,7 +175,7 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 
     ![Image of_Azure Advanced Threat Protection Azure ATP センサーウィザードインストールの完了 [完了] ボタンをクリックする必要があります。](../../media/mtp-eval-51.png)
  
-11. [ [Azure AZURE atp](https://go.microsoft.com/fwlink/?linkid=2040449) の設定] セクションで、[ **Windows Defender atp**] を選択し、切り替えをオンにします。 [**保存**] をクリックします。 
+11. [ [Azure AZURE atp](https://go.microsoft.com/fwlink/?linkid=2040449) の設定] セクションで、[ **Windows Defender atp**] を選択し、切り替えをオンにします。 **[保存]** をクリックします。 
 
     ![Image of_the [Azure Azure ATP 設定] ページで、Windows Defender ATP のオン/オフを切り替える必要があります。](../../media/mtp-eval-52.png)
 
@@ -204,7 +206,7 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
    > [!NOTE]
    > 新しい Azure ATP インスタンスの場合、この統合トグルは自動的にオンになります。 次の手順に進む前に、Azure ATP 統合が有効になっていることを確認します。
  
-4. [クラウド検出の設定] で、[ **Microsoft DEFENDER ATP 統合**] を選択し、統合を有効にします。 [**保存**] をクリックします。
+4. [クラウド検出の設定] で、[ **Microsoft DEFENDER ATP 統合**] を選択し、統合を有効にします。 **[保存]** をクリックします。
 
    ![Image of_the Microsoft defender atp 統合の [承認されていないアプリをブロックする] チェックボックスがオンになっている Microsoft Defender ATP ページ。 [保存] をクリックします。](../../media/mtp-eval-56.png)
 
@@ -304,6 +306,6 @@ Microsoft の脅威保護は、4つの柱から構成されます。 1つの柱�
 
 次に、攻撃をシミュレートし、製品間の機能を検出して通知を作成し、エンドポイントへの fileless 攻撃に自動的に応答する方法を確認できます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 |![アタックシミュレーションフェーズ](../../media/mtp/run-sim.png) <br>[アタックシミュレーションフェーズ](mtp-pilot-simulate.md) | Microsoft の脅威保護パイロット環境のアタックシミュレーションを実行します。
 |:-------|:-----|

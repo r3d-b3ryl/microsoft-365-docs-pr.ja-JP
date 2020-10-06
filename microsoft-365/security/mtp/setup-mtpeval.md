@@ -13,14 +13,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: a0997c107e78104619e1e05b8d1073e8690a3667
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 94045834f63569bc2910b1faa02f47ebfebead19
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195561"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368083"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>Microsoft の脅威保護のテスト環境をセットアップする 
 
@@ -140,7 +142,7 @@ Microsoft 365 E5 ライセンスにサインアップするために使用でき
 5. [ **今すぐ試行** ] をクリックして、Microsoft 365 E5 試用版を確認します。
 <br>![Image of_Microsoft 365 E5 [無料試用版の開始] ページで、[今すぐ試行] ボタンを開始する必要があります。](../../media/mtp-eval-27.png) <br>
  
-6. **Microsoft 365 管理センター**  >  **ユーザー**の  >  **アクティブユーザー**に移動します。 ユーザーアカウントを選択し、[ **製品ライセンスの管理**] を選択してから、ライセンスを Office 365 E5 から **Microsoft 365 e5**にスワップします。 [**保存**] をクリックします。
+6. **Microsoft 365 管理センター**  >  **ユーザー**の  >  **アクティブユーザー**に移動します。 ユーザーアカウントを選択し、[ **製品ライセンスの管理**] を選択してから、ライセンスを Office 365 E5 から **Microsoft 365 e5**にスワップします。 **[保存]** をクリックします。
 ![Image of_Microsoft 365 管理センター] ページで、Microsoft 365 E5 ライセンスを選択できます。](../../media/mtp-eval-28.png) <br>
  
 7. グローバル管理者アカウントをもう一度選択し、[ **ユーザー名の管理**] をクリックします。

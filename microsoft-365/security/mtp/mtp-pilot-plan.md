@@ -15,14 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 21e6e3294b8fe722214d567963223b9e62737e34
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333680"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367979"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>パイロット Microsoft の脅威保護プロジェクトを計画する 
 
@@ -37,7 +39,7 @@ ms.locfileid: "48333680"
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
         <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="パイロットを計画する Microsoft の脅威保護プロジェクト" />
-      <br/>計画</a><br>
+      <br/>プラン</a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
@@ -94,7 +96,7 @@ ms.locfileid: "48333680"
 
 ## <a name="use-cases"></a>使用例
 
-ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 以下に例を示します。
+ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 例:
 - SOC アナリストとして、ネットワーク内のデバイス、ユーザー、およびメールボックス全体でアラートとイベントを表示、関連付け、評価、および管理する必要があります。 [インシデント管理]
 - SOC アナリストとして、ネットワーク内の悪意のあるイベントを自動的に調査して応答するためのツールとプロセスを用意する必要があります。 [自動赤外線]
 - SOC アナリストとして、環境からデータを検索し、既知の脅威と潜在的な脅威、および疑わしいアクティビティを見つける必要があります。 [高度な検索]
