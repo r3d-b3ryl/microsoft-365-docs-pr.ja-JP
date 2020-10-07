@@ -15,38 +15,38 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
-- m365solution-overview
+- m365solution-scenario
 ms.custom: ''
 description: ユーザーをトレーニングして、問題にすばやく対処できるようにします。
-ms.openlocfilehash: 1954a3768d2a35c3193aa523d6383b7b8257a6a0
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: b1dd55febcd23f6bb8413b0aa5c625f4b785babb
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521435"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377071"
 ---
-# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a><span data-ttu-id="99e10-103">ステップ 6: リモートワーカーをトレーニングし、使用状況のフィードバックに対処する</span><span class="sxs-lookup"><span data-stu-id="99e10-103">Step 6: Train remote workers and address usage feedback</span></span>
+# <a name="step-6-train-remote-workers-and-address-usage-feedback"></a><span data-ttu-id="2e7e1-103">ステップ 6: リモートワーカーをトレーニングし、使用状況のフィードバックに対処する</span><span class="sxs-lookup"><span data-stu-id="2e7e1-103">Step 6: Train remote workers and address usage feedback</span></span>
 
-<span data-ttu-id="99e10-104">リモート ワーカーを以下の内容についてトレーニングします。</span><span class="sxs-lookup"><span data-stu-id="99e10-104">Train your remote workers on:</span></span>
+<span data-ttu-id="2e7e1-104">リモート ワーカーを以下の内容についてトレーニングします。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-104">Train your remote workers on:</span></span>
 
-- <span data-ttu-id="99e10-105">MFA を使用して、追加の検証方法を登録するなど、正しいサインインの手順。</span><span class="sxs-lookup"><span data-stu-id="99e10-105">Proper sign-in procedures using MFA, including registering an additional verification method.</span></span>
-- <span data-ttu-id="99e10-106">デバイスの使用と、エンドポイント管理ポリシーを使用して非準拠デバイスのアクセスをブロックする方法。</span><span class="sxs-lookup"><span data-stu-id="99e10-106">The use of devices and how endpoint management policies can be used to block access for non-compliant devices.</span></span>
-- <span data-ttu-id="99e10-107">許可されたアプリの使用と、エンドポイント管理アプリケーション ポリシーを使用してアプリの使用をブロックする方法。</span><span class="sxs-lookup"><span data-stu-id="99e10-107">The use of allowed apps and how endpoint management application polices can be used to block the use of apps.</span></span>
-- <span data-ttu-id="99e10-108">Windows 10 Enterprise のセキュリティ機能。</span><span class="sxs-lookup"><span data-stu-id="99e10-108">Windows 10 Enterprise security features.</span></span>
-- <span data-ttu-id="99e10-109">[Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) を使用してチャット、ビデオベースの会議、ドキュメント共有、およびスレッド形式の会話を行う方法。</span><span class="sxs-lookup"><span data-stu-id="99e10-109">How to use [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.</span></span>
-- <span data-ttu-id="99e10-110">メールとスケジュール設定に [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) を使用する方法。</span><span class="sxs-lookup"><span data-stu-id="99e10-110">How to use [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) for email and scheduling.</span></span>
-- <span data-ttu-id="99e10-111">[SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) チームまたはコミュニケーション サイトと [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) フォルダーを使用して、ユーザーのライブラリおよびグループに属するファイルを閲覧および共同作業する方法。</span><span class="sxs-lookup"><span data-stu-id="99e10-111">How to use [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) team or communication sites and [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) folders to browse and collaborate on files in a user's library and those belonging to a group.</span></span>
+- <span data-ttu-id="2e7e1-105">MFA を使用して、追加の検証方法を登録するなど、正しいサインインの手順。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-105">Proper sign-in procedures using MFA, including registering an additional verification method.</span></span>
+- <span data-ttu-id="2e7e1-106">デバイスの使用と、エンドポイント管理ポリシーを使用して非準拠デバイスのアクセスをブロックする方法。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-106">The use of devices and how endpoint management policies can be used to block access for non-compliant devices.</span></span>
+- <span data-ttu-id="2e7e1-107">許可されたアプリの使用と、エンドポイント管理アプリケーション ポリシーを使用してアプリの使用をブロックする方法。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-107">The use of allowed apps and how endpoint management application polices can be used to block the use of apps.</span></span>
+- <span data-ttu-id="2e7e1-108">Windows 10 Enterprise のセキュリティ機能。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-108">Windows 10 Enterprise security features.</span></span>
+- <span data-ttu-id="2e7e1-109">[Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) を使用してチャット、ビデオベースの会議、ドキュメント共有、およびスレッド形式の会話を行う方法。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-109">How to use [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.</span></span>
+- <span data-ttu-id="2e7e1-110">メールとスケジュール設定に [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) を使用する方法。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-110">How to use [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) for email and scheduling.</span></span>
+- <span data-ttu-id="2e7e1-111">[SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) チームまたはコミュニケーション サイトと [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) フォルダーを使用して、ユーザーのライブラリおよびグループに属するファイルを閲覧および共同作業する方法。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-111">How to use [SharePoint](https://support.office.com/article/sharepoint-online-video-training-cb8ef501-84db-4427-ac77-ec2009fb8e23) team or communication sites and [OneDrive](https://support.office.com/article/onedrive-video-training-1f608184-b7e6-43ca-8753-2ff679203132) folders to browse and collaborate on files in a user's library and those belonging to a group.</span></span>
 
-<span data-ttu-id="99e10-112">このトレーニングには、従業員が上記の機能とその結果を体感できるように、実践的な演習を組み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="99e10-112">This training should include hands-on exercises so that your workers can experience these capabilities and their results.</span></span>
+<span data-ttu-id="2e7e1-112">このトレーニングには、従業員が上記の機能とその結果を体感できるように、実践的な演習を組み込む必要があります。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-112">This training should include hands-on exercises so that your workers can experience these capabilities and their results.</span></span>
 
-<span data-ttu-id="99e10-113">トレーニング後の数週間、次のことを行います。</span><span class="sxs-lookup"><span data-stu-id="99e10-113">In the weeks after training:</span></span>
+<span data-ttu-id="2e7e1-113">トレーニング後の数週間、次のことを行います。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-113">In the weeks after training:</span></span>
 
-- <span data-ttu-id="99e10-114">リモート ワーカーのフィードバックに迅速に対応し、ポリシーと構成を微調整します。</span><span class="sxs-lookup"><span data-stu-id="99e10-114">Quickly address remote worker feedback and fine tune policies and configurations.</span></span>
-- <span data-ttu-id="99e10-115">Teams、メール、SharePoint サイト、および OneDrive フォルダーの使用状況を分析し、予想される使用状況と比較します。</span><span class="sxs-lookup"><span data-stu-id="99e10-115">Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with usage expectations.</span></span>
+- <span data-ttu-id="2e7e1-114">リモート ワーカーのフィードバックに迅速に対応し、ポリシーと構成を微調整します。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-114">Quickly address remote worker feedback and fine tune policies and configurations.</span></span>
+- <span data-ttu-id="2e7e1-115">Teams、メール、SharePoint サイト、および OneDrive フォルダーの使用状況を分析し、予想される使用状況と比較します。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-115">Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with usage expectations.</span></span>
 
-<span data-ttu-id="99e10-116">それから、必要に応じてユーザーの再トレーニングを行います。</span><span class="sxs-lookup"><span data-stu-id="99e10-116">Then, retrain your users as needed.</span></span>
+<span data-ttu-id="2e7e1-116">それから、必要に応じてユーザーの再トレーニングを行います。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-116">Then, retrain your users as needed.</span></span>
 
-## <a name="results-of-step-6"></a><span data-ttu-id="99e10-117">ステップ 6 の結果</span><span class="sxs-lookup"><span data-stu-id="99e10-117">Results of Step 6</span></span>
+## <a name="results-of-step-6"></a><span data-ttu-id="2e7e1-117">ステップ 6 の結果</span><span class="sxs-lookup"><span data-stu-id="2e7e1-117">Results of Step 6</span></span>
 
-<span data-ttu-id="99e10-118">リモートワーカーはトレーニングを受けており、また、リモートアクセスおよび生産性のアプリやサービスについてフィードバックを提供したり、問題に応答するオープンフォーラムが用意されています。</span><span class="sxs-lookup"><span data-stu-id="99e10-118">Your remote workers are trained and there is a responsive and open forum for them to provide feedback and post issues with remote access and productivity apps and services.</span></span>
+<span data-ttu-id="2e7e1-118">リモートワーカーはトレーニングを受けており、また、リモートアクセスおよび生産性のアプリやサービスについてフィードバックを提供したり、問題に応答するオープンフォーラムが用意されています。</span><span class="sxs-lookup"><span data-stu-id="2e7e1-118">Your remote workers are trained and there is a responsive and open forum for them to provide feedback and post issues with remote access and productivity apps and services.</span></span>
 
