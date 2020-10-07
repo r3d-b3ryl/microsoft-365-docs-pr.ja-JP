@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5294b63744ec64f9be566a4a447c56ccd7456136
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208128"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370303"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>カリフォルニア州消費者プライバシー法 (CCPA)
 
@@ -53,7 +53,7 @@ OST で設定されているように、Microsoft は、オンラインサービ
 
 CCPA の準備をするために必要ないくつかの手順を以下に示します。
 
-- CCPA プライバシープログラムの一環として、 [コンプライアンススコア](compliance-score.md) の GDPR 評価の活用を開始します。
+- 「 [コンプライアンスマネージャー](compliance-manager.md) での GDPR 評価を ccpa のプライバシープログラムの一部として活用することを開始します。
 - データ主体要求ツールを使用して、データ主体のアクセス要求 (DSARs) に効率よく応答するためのプロセスを確立します。
 - ラベルとポリシーを設定し、Microsoft Information Protection を使用して機密データを検索、分類、保護します。
 - メールの暗号化機能を使用して、機密情報をさらに管理します。
@@ -93,9 +93,9 @@ CCPA には、次のように、個人情報を収集、転送、販売する規
 - CCPA は、13 歳未満の子供に対して、児童オンラインプライバシー保護法 (COPPA) と一致する、保護者による同意の義務を導入しています。
 - 16歳から16歳の子供の場合、CCPA は子からオプトイン同意を得るための新しい責務を課しています。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 
@@ -103,4 +103,4 @@ CCPA には、次のように、個人情報を収集、転送、販売する規
 - [CCPA ガイドの概要](https://info.microsoft.com/ww-landing-Five-tips-to-help-you-prepare-for-the-California-Consumer-Privacy-Act.html)
 - [データ主体要求と GDPR](gdpr-data-subject-requests.md)
 - [カリフォルニア州消費者プライバシー法 (CCPA) の FAQ](ccpa-faq.md)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

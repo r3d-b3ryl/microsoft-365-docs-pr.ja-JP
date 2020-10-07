@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の Exchange Online メールボックスに配置できるさまざまな種類の保留リストを特定する方法について説明します。
-ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c0f5d11066169181b524632c7a1340c54f0061f0
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816826"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370337"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -78,7 +78,7 @@ Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
 |電子情報開示の保留     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   *InPlaceHolds プロパティ*には、セキュリティ/コンプライアンスセンターの電子情報開示ケースに関連付けられている保留リストの GUID が含まれています。 GUID は `UniH` プレフィックス (統合された保持を示す) で始まっているため、これが電子情報開示の保留であることを伝えることができます。      |
 |インプレース ホールド     |     `c0ba3ce811b6432a8751430937152491` <br/> または <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     *InPlaceHolds*プロパティには、メールボックスに配置されたインプレースホールドの GUID が含まれています。 GUID がプレフィックスで始まっていないか、プレフィックスで始まっていないため、これはインプレースホールドであると判断でき `cld` ます。     |
 |メールボックスに特に適用される Microsoft 365 アイテム保持ポリシー     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> または <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     InPlaceHolds プロパティには、メールボックスに適用される特定の場所保持ポリシーの Guid が含まれています。 GUID はまたはプレフィックスで始まっているため、アイテム保持ポリシーを識別でき `mbx` `skp` ます。 プレフィックスは、 `skp` アイテム保持ポリシーがユーザーのメールボックス内の Skype For business の会話に適用されることを示します。    |
-|組織全体の Microsoft 365 保持ポリシーから除外されます。     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     メールボックスが組織全体の Microsoft 365 アイテム保持ポリシーから除外されている場合、メールボックスが除外されるアイテム保持ポリシーの GUID は InPlaceHolds プロパティに表示され、接頭辞で識別され `-mbx` ます。    |
+|組織全体の Microsoft 365 保持ポリシーから除外されます。     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     メールボックスが組織全体の Microsoft 365 アイテム保持ポリシーから除外されている場合、そのメールボックスが除外されるアイテム保持ポリシーの GUID が InPlaceHolds プロパティに表示され、プレフィックスで識別され `-mbx` ます。    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
 **メールボックスの取得**コマンドレットを実行したときに*InPlaceHolds*プロパティが空の場合、依然として、1つ以上の組織全体の Microsoft 365 保持ポリシーがメールボックスに適用されている可能性があります。 Exchange Online PowerShell で次のコマンドを実行して、組織全体の Microsoft 365 保持ポリシーの Guid の一覧を取得します。
@@ -201,7 +201,7 @@ Get-Mailbox <username> | FL *HoldApplied*
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-または、
+または
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -215,7 +215,7 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-または、
+または
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -236,7 +236,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 メールボックスに適用されている保留リストを特定した後は、保留の期間の変更、一時的または完全に保持の削除、または Microsoft 365 のアイテム保持ポリシーから非アクティブなメールボックスを除外するなどのタスクを実行できます。 保留に関連するタスクの実行の詳細については、以下のいずれかのトピックを参照してください。
 
-- セキュリティ & コンプライアンスセンターの PowerShell で、組織全体の Microsoft 365 保持ポリシーからメールボックスを除外するには、 [new-retentioncompliancepolicy-AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)コマンドを実行します。 このコマンドは、 *Exchangelocation* プロパティの値がと等しいアイテム保持ポリシーにのみ使用でき `All` ます。
+- セキュリティ & コンプライアンスセンターの PowerShell で、組織全体の Microsoft 365 保持ポリシーからメールボックスを除外するには、 [new-retentioncompliancepolicy-Identity \<Policy Name> -addexchangelocationexception \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)コマンドを実行します。 このコマンドは、 *Exchangelocation* プロパティの値がと等しいアイテム保持ポリシーにのみ使用でき `All` ます。
 
 - Exchange Online PowerShell で[ExcludeFromOrgHolds \<hold GUID without prefix or suffix> ](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)コマンドを実行して、組織全体の Microsoft 365 保持ポリシーから非アクティブなメールボックスを除外します。
 

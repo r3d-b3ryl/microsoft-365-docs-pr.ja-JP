@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 自動拡張アーカイブについて説明します。これにより、Exchange Online メールボックスには無制限のアーカイブストレージが提供されます。
-ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
-ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
+ms.openlocfilehash: 5481fd14f281c132475613228c835c72592d2f59
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44534919"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370425"
 ---
 # <a name="overview-of-unlimited-archiving"></a>無制限アーカイブの概要
 
 Office 365 のアーカイブ メールボックスは、ユーザーに追加のメールボックス記憶領域を提供します。 ユーザーのアーカイブ メールボックスを有効にすると、最大 100 GB の追加記憶域を使用できます。 以前は、100 GB の記憶域クォータに達したとき、組織は、Microsoft に問い合わせてアーカイブ メールボックス用の追加記憶領域を要求する必要がありました。 このようなことはもうなくなります。
 
-Microsoft 365 の無制限アーカイブ機能 (*自動拡張アーカイブ*と呼ばれます) は、アーカイブメールボックスに追加の記憶域を提供します。 アーカイブメールボックスの格納域の制限に達すると、Microsoft 365 によってアーカイブのサイズが自動的に増加します。つまり、ユーザーはメールボックスの記憶域を使用しなくなり、管理者はアーカイブメールボックスに追加の記憶域を要求する必要がなくなります。
+Microsoft 365 の無制限アーカイブ機能 ( *自動拡張アーカイブ*と呼ばれます) は、アーカイブメールボックスに追加の記憶域を提供します。 アーカイブメールボックスの格納域の制限に達すると、Microsoft 365 によってアーカイブのサイズが自動的に増加します。つまり、ユーザーはメールボックスの記憶域を使用しなくなり、管理者はアーカイブメールボックスに追加の記憶域を要求する必要がなくなります。
 
 自動拡張アーカイブを有効にするための詳細な手順については、「 [Enable 無制限アーカイブを有効にする](enable-unlimited-archiving.md)」を参照してください。
 
@@ -112,4 +112,4 @@ Outlook または Outlook on the web を使って自動拡張アーカイブに�
 
 ## <a name="more-information"></a>詳細情報
 
-自動拡張アーカイブの技術的な詳細については、「 [Microsoft 365: 自動拡張アーカイブ](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)に関する FAQ」を参照してください。
+自動拡張アーカイブの技術的な詳細については、「 [Microsoft 365: 自動拡張アーカイブ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784)に関する FAQ」を参照してください。

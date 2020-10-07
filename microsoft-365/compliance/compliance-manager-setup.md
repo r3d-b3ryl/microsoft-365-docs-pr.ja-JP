@@ -9,19 +9,22 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーのユーザー権限とロールを設定し、アクションの自動化されたテストを構成します。 ユーザー履歴を管理し、ダッシュボードビューにフィルターを適用します。
-ms.openlocfilehash: ead4fe60a11bcf78a318601c1de6d72f2490c567
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 043a52e2817e770671c2ef8876049f6bbe0285ee
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204438"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368140"
 ---
-# <a name="get-started-with-compliance-manager"></a>コンプライアンスマネージャーの使用を開始する
+# <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
 **この記事の内容** この記事は、コンプライアンスマネージャーの設定に役立てることができます。 コンプライアンスマネージャーに **アクセス** する方法、 **役割と権限を設定**する方法、および **改善アクションの自動テスト**を構成する方法について説明します。 **コンプライアンスマネージャーダッシュボードに**ついて説明し、主なページである「向上アクション」ページ、「ソリューション」ページ、「評価ページ」、および「評価テンプレート」ページについて説明します。
 
@@ -70,7 +73,7 @@ Microsoft 365 コンプライアンスセンター内でアクセス許可を設
 
 アクセス許可の詳細について [は、「Office 365 セキュリティ & コンプライアンスセンター」を](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)参照してください。
 
-Office 365 セキュリティ/コンプライアンスセンターにアクセスできない場合や、Microsoft Service Trust Portal でコンプライアンスマネージャーのクラシックバージョンにアクセスする必要がある場合は、サービス信頼ポータルの管理設定を使用して、役割を割り当てたり ([表示手順](/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?view=o365-worldwide.md#assigning-compliance-manager-roles-to-users)) することができます。 このような役割は、機能が制限されることに注意してください。
+Office 365 セキュリティ/コンプライアンスセンターにアクセスできない場合や、Microsoft Service Trust Portal でコンプライアンスマネージャーのクラシックバージョンにアクセスする必要がある場合は、サービス信頼ポータルの管理設定を使用して、役割を割り当てたり ([表示手順](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)) することができます。 このような役割は、機能が制限されることに注意してください。
 
 ##### <a name="more-about-azure-ad"></a>Azure AD の詳細
 
