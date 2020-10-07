@@ -1,5 +1,5 @@
 ---
-title: 最初にガバナンスを行う
+title: 最初にガバナンス
 ms.reviewer: mmclean
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -10,18 +10,19 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 最初にガバナンスを行う
-ms.openlocfilehash: 6d0a275f8b459199fe0444f2de127778e1da40b3
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+description: 最初にガバナンス
+ms.openlocfilehash: 7f6104997028434b9c8aeab946ac6e1f06a61c84
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662705"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377427"
 ---
-# <a name="governance-first"></a>最初にガバナンスを行う
+# <a name="governance-first"></a>最初にガバナンス
 
 明確なビジョンを使用して、Microsoft 365 への移行を開始することを常にお勧めします。
 

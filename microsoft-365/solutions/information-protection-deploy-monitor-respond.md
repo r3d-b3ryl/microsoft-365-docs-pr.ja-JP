@@ -14,20 +14,21 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: 監査およびアラートポリシーとデータ主体要求を使用して、個人データインシデントを監視して応答します。
-ms.openlocfilehash: 8fdba5799ca9ee97a013c1322e5e79f6bf38764a
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 296220ac8b34d9ce10c783194b78ca344e746b84
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522075"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377201"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>組織内のデータプライバシーインシデントを監視して応答する
 
 Microsoft 365 の機能は、operationalize 関連の機能を使用して、組織内のデータプライバシーインシデントの監視、調査、および対応に役立てることができます。 これらのプロセス、手順、およびその他のドキュメントについては、規制機関に準拠していることを示すためにも重要な場合があります。
 
-これには次のものが含まれます。 
+これには、次のものが含まれます。 
 
 - 監査と警告ポリシー
 - データ主体要求 (コンテンツ検索と電子情報開示を含む)
@@ -46,7 +47,7 @@ Microsoft 365 の機能は、operationalize 関連の機能を使用して、組
 - HIPAA のエコー (45 C.F.R. 164.312 (b))
 - CCPA (1798.105 (c))
 
-詳細については、「[データプライバシーのリスクを評価し、機密情報を識別](information-protection-deploy-assess.md)する」を参照してください。
+詳細については、「 [データプライバシーのリスクを評価し、機密情報を識別](information-protection-deploy-assess.md)する」を参照してください。
 
 データのプライバシーに関する規制では、通常、次のものが監視と対応のために呼び出されます。
 
@@ -71,11 +72,11 @@ Microsoft 365 の機能は、operationalize 関連の機能を使用して、組
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のデータ主体要求
 
-Microsoft 365 での DSR への対応については[、「GDPR および CCPA のデータ主体要求](../compliance/gdpr-dsr-office365.md)」を参照してください。
+Microsoft 365 での DSR への対応については [、「GDPR および CCPA のデータ主体要求](../compliance/gdpr-dsr-office365.md) 」を参照してください。
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Microsoft Stream で削除されたユーザーを管理する
 
-Microsoft Stream の場合、ユーザーが Azure Active Directory (Azure AD) から削除されると、そのユーザーの名前がその時点より前のポストされたストリームビデオに関連付けられていた場合、そのユーザーの電子メールアドレスはビデオと関連付けられたままになります。 削除するには、「 [Microsoft Stream から削除されたユーザーを管理](https://docs.microsoft.com/stream/managing-deleted-users)する」を参照してください。
+Microsoft Stream の場合、ユーザーが Azure Active Directory (Azure AD) から削除されると、そのユーザーの名前がその時点より前のポストされたストリームビデオに関連付けられていた場合、そのユーザーの電子メールアドレスはビデオと関連付けられたままになります。 削除するには、「 [Microsoft Stream から削除されたユーザーを管理](https://docs.microsoft.com/stream/managing-deleted-users) する」を参照してください。
 
 ## <a name="additional-investigative-tools"></a>その他の調査ツール
 

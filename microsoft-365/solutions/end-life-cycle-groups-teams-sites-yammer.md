@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: グループ、teams、Yammer のライフサイクルの終了オプション。
-ms.openlocfilehash: ab06f06cc65614ee313892a026c2f482d641791f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662703"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377177"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>グループ、teams、Yammer のライフサイクルの終了オプション
 
@@ -32,7 +33,7 @@ Microsoft 365 グループと Microsoft Teams は、接続されたさまざま�
 |サービス|コンテンツの種類|
 |:------|:---------------|
 |Teams|チャネル会話、チャネル内のファイル|
-|Forms|アンケートの構造と結果|
+|フォーム|アンケートの構造と結果|
 |OneNote|ノートブック|
 |Outlook|メールと予定表|
 |Planner|プロジェクトの進捗状況およびタスク情報|
@@ -100,7 +101,7 @@ SharePoint サイトでは、表示された変更はありません。ただし
 - ストリーミングでビデオをアップロード、変更、削除することができます。
 - パワー自動処理でのフローは、作成、変更、削除、および実行が続行されます (アーカイブされたチームのチャネルにメッセージを投稿するために必要な場合は失敗します)。
 
-## <a name="forms"></a>Forms
+## <a name="forms"></a>フォーム
 
 フォームを個別のアカウントからグループに移動することはできますが、グループ間で移動またはコピーすることはできません。 チームを削除すると、フォームに使用できるオプションが3つあります。
 

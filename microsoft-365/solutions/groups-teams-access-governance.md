@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、Teams、SharePoint でのアクセス管理について説明します。
-ms.openlocfilehash: 8b58016ffa421328e3c1442d4ed2364f2eedc37b
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662723"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377571"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 グループ、Teams、SharePoint でのアクセスの管理
 
@@ -27,7 +28,7 @@ ms.locfileid: "46662723"
 
 次の表に、Microsoft 365 で利用可能なアクセス制御のクイックリファレンスを示します。 詳細については、以下のセクションを参照してください。
 
-|カテゴリ|説明|リファレンス|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |メンバーシップ|||
 ||プライベートチームの検出|[Microsoft Teams でプライベートチームの検出を管理する](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)|

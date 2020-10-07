@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Microsoft 365 グループ、チーム、および SharePoint コラボレーションのコンプライアンスオプションについて説明します。
-ms.openlocfilehash: cc8f7391b03cc65ba66cca6cf010137e3843ab05
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662721"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377535"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 グループ、チーム、および SharePoint コラボレーションのコンプライアンスオプション
 
@@ -27,7 +28,7 @@ Microsoft 365 は、ユーザーが共同作業する際にコンプライアン
 
 次の表に、Microsoft 365 で利用できるコンプライアンスコントロールのクイックリファレンスを示します。 詳細については、以下のセクションを参照してください。
 
-|カテゴリ|説明|リファレンス|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |情報の保存|||
 ||グループのメールと SharePoint のコンテンツを保持する|[SharePoint と OneDrive のアイテム保持ポリシーの詳細](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)|

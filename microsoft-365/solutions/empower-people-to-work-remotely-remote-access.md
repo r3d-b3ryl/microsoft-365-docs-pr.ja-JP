@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
+- m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 クラウド サービスへのアクセスを最適化しながら、リモート ワーカーがオンプレミスのリソースにアクセスできることを確認します。
-ms.openlocfilehash: 7c928718a4d0f0d47fb601e6ab6e51f25c88a04a
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52a338822c28f6ae044f13f60664d66816d6ce5c
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308393"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377249"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>手順 2.  オンプレミスのアプリとサービスへのリモート アクセスを提供します。
 
@@ -60,7 +61,7 @@ Microsoft 365 クラウドリソースへのアクセスを最適化するには
 
 これにより、VPN クライアントは、インターネット経由で、または Microsoft ネットワークへの最も近いエントリポイントに、重要な Microsoft 365 クラウド サービスのトラッフィックを送受信できます。
 
-詳細とガイダンスについては、「[VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??)」をご覧ください。
+詳細とガイダンスについては、「[VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)」をご覧ください。
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>すべてのアプリが Web アプリであり、ハイブリッド ID がある場合にリモート アクセスを展開する
 
@@ -116,7 +117,7 @@ P2S VPN 接続は、Azure 仮想ネットワークを介してリモート ワ�
 ## <a name="admin-technical-resources-for-remote-access"></a>リモート アクセスのための管理技術リソース
 
 - [リモート社員の Office 365 トラフィックをすぐに最適化し、インフラストラクチャの負担を軽減する方法](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
-- [VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
+- [VPN スプリット トンネリングを使用してリモート ユーザーの Office 365 の接続を最適化する](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
 
 ## <a name="results-of-step-2"></a>手順 2 の結果
 

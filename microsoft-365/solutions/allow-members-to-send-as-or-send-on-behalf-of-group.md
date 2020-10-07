@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: メンバーが Microsoft 365 グループとしてメールを送信できるようにする方法、または Microsoft 365 グループの代理としてメールを送信できるようにする方法について説明します。
-ms.openlocfilehash: b660131798e60182435a69f479411cdec948bc99
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662707"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377595"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>メンバーがグループに代わって送信または送信できるようにする
 
@@ -50,7 +50,7 @@ ms.locfileid: "46662707"
     
 4. [ **送信** ] セクションで、 **+** グループとして送信するユーザーを追加するための署名を選択します。 
     
-    ![プラス記号を選択して、Microsoft 365 グループとして送信するユーザーを追加します。](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![[送信] ダイアログボックスのスクリーンショット](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 [ **OK]** を選択して、 **保存**します。
     
@@ -68,7 +68,7 @@ ms.locfileid: "46662707"
     
 4. [代理人として送信する] セクションで、 **+** グループとして送信するユーザーを追加するための署名を選択します。 
     
-    ![プラス記号を選択して、Microsoft 365 グループとして送信するユーザーを追加します。](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![[代理送信] ダイアログのスクリーンショット](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. ユーザーを入力して検索するか、一覧からユーザーを選択します。 [ **OK]** を選択して、 **保存**します。
     

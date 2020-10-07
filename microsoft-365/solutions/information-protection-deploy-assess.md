@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: データプライバシーの規則、関連するシナリオ、準備状況、および Microsoft 365 環境の機密情報の種類を決定します。
-ms.openlocfilehash: 237039bfd853c0f58276926f29bda26981df6b8c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c2f8bd6587e399fd1e928575b3cd9dfb2a4565eb
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195749"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377117"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Microsoft 365 を使用してデータのプライバシーリスクを評価し、機密アイテムを識別する
 

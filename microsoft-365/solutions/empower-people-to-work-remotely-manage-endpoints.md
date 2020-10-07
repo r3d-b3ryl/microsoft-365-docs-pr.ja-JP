@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
+- m365solution-scenario
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 0f13d36a2943367e751123c724cda28b503a51d2
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 5c6e433918709a55f03d786891ec0fd7ac62a26b
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521543"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377237"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 

@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: コミュニケーションガバナンスのグループ作業のシナリオについて説明します。
-ms.openlocfilehash: 3d64733e14bb46230abda80ccd559fde492da12a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 05644b5d86fc3ca83e7d140a73666a172937bd54
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662722"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377523"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>コラボレーションシナリオのためのコミュニケーションガバナンス
 
@@ -27,7 +28,7 @@ Microsoft 365 では、メッセージングおよび会議の設定を含む、
 
 次の表に、Microsoft 365 で利用可能なコミュニケーションコントロールのクイックリファレンスを示します。 詳細については、以下のセクションを参照してください。
 
-|カテゴリ|説明|リファレンス|
+|カテゴリ|説明|参照|
 |:-------|:----------|:--------|
 |メッセージング |||
 ||Teams でのメッセージング中にユーザーが実行できる操作を管理します。|[Teams のメッセージング ポリシーを管理する](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams)|
