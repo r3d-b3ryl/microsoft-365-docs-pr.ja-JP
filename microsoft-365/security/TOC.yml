@@ -495,7 +495,7 @@
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md
             - name: Outlook on the web で迷惑メールとフィッシングを報告する
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-            - name: Outlook for iOS と Outlook for Android で迷惑メールとフィッシングを報告する
+            - name: Outlook for iOS と Outlook for Android で迷惑メールとフィッシング詐欺を報告する
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: スタンドアロン EOP で管理者の役割グループ レポートを実行する
               href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
