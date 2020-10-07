@@ -13,16 +13,35 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a483a03fc913a019f58e80fb2713bb0367a6db44
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546272"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370414"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft マネージド デスクトップのドキュメントの変更履歴
 
 この記事では、 [Microsoft マネージドデスクトップドキュメント](index.yml)の新規および更新された記事の一覧を示します。 「更新された」記事は、マテリアルが追加または修正されたものであり、誤入力、スタイル、書式設定の問題の修正などのマイナー修正がリストされていません。 [GitHub 上のリポジトリ](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)にアクセスすることによって、特定のコミット (変更の詳細を含む) の履歴をいつでも表示できます。
+
+
+## <a name="september-2020"></a>2020 年 9 月
+新規または変更された記事 | 説明
+--- | ---
+[プライバシーおよび個人データ](service-description/privacy-personal-data.md) | 新しい記事
+[Microsoft マネージド デスクトップ用に、マップされたドライブを準備する](get-ready/mapped-drives.md) | 更新された記事
+[ユーザーのヘルプ](working-with-managed-desktop/end-user-support.md) | 更新された記事
+[構成可能な設定のリファレンス-Microsoft マネージドデスクトップ](working-with-managed-desktop/config-setting-ref.md) | 更新された記事
+[構成可能な設定を展開および追跡する-Microsoft マネージドデスクトップ](working-with-managed-desktop/config-setting-deploy.md) | 更新された記事
+[Microsoft マネージド デスクトップの管理者サポート](working-with-managed-desktop/admin-support.md) | 更新された記事
+[Microsoft Teams](get-started/teams.md) | 新しい記事
+[管理ポータルにアクセスする](get-started/access-admin-portal.md) | 新しい記事
+[Microsoft マネージド デスクトップ用に、印刷リソースを準備する](get-ready/printing.md) | 更新された記事
+[Autopilot と登録ステータス ページの初回実行時エクスペリエンス](get-started/esp-first-run.md) | 更新された記事
+[新しいデバイスをユーザー自身が登録する](get-started/register-devices-self.md) | 更新された記事
+[Microsoft マネージド デスクトップ用に証明書とネットワーク プロファイルを準備する](get-ready/certs-wifi-lan.md) | 更新された記事
+[Microsoft マネージド デスクトップの前提条件](get-ready/prerequisites.md) | 更新された記事
+[分析情報を操作する](working-with-managed-desktop/insights.md) | 更新された記事
 
 ## <a name="august-2020"></a>2020 年 8 月
 新規または変更された記事 | 説明

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: Microsoft 365 identity ガバナンス機能の使用方法について説明します。
-ms.openlocfilehash: d5bcafb5b452e693bf3ff706c436a9986eeeae76
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e4c537e7fa3ac099caf8b7dbc44327308751c8f5
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328512"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370348"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>Microsoft 365 identity ガバナンスを管理する
 
@@ -46,8 +46,6 @@ Azure AD のアクセスレビューを使用すると、ユーザーのアク�
 これは、ユーザー アカウントに過剰なアクセス権があるかどうかを判断するために、組織がセキュリティ監査の対象になる場合に特に重要です。業界や地域の規制に違反した場合、罰金が発生する可能性があります。
 
 詳細については、「 [access のレビューの概要](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)」を参照してください。
-
-Azure AD Privileged Identity Management (PIM) により、Azure AD、Azure、およびその他の Microsoft クラウド サービスの全体で、リソースに対するアクセス権のセキュリティ保護に合わせた管理を追加することができます。 Azure AD PIM には、会社のリソース (ディレクトリ、Office 365、Azure リソースの役割など) のセキュリティを確保するために、包括的なガバナンス管理のセットが用意されています。 他のアクセス方法と同様、組織では、アクセス レビューを使用して、管理者の役割に属するすべてのユーザーの定期的なアクセス再認定を構成できます。 Azure AD PIM は、Microsoft 365 Enterprise の E5 バージョンでのみ使用できます。
 
 さまざまなアクセス レビューの種類を構成するには、次の記事を参照してください。
 
