@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 4ae0491699f2ffa60245d502bb691b2c79b34133
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305379"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357891"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -76,7 +76,7 @@ ms.locfileid: "48305379"
 
 この新しい [**サイトとグループの設定**] ページで、設定を構成します。
 
-- **Office 365 グループに接続されたチーム サイトのプライバシー**: このラベルが適用されているチーム サイトまたはグループに組織内の誰もがアクセスできるようにする場合は、既定の [**公開 - 組織内のすべてのユーザーがサイトにアクセスできます**] に設定します。
+- **Microsoft 365 グループに接続されたチーム サイトのプライバシー**: 既定の**パブリック - 組織内のすべてのユーザーがサイトにアクセスできる**を維持すると、組織内のすべてのユーザーが、このラベルが適用されているチーム サイトやグループにアクセスできます。
 
   組織内の承認されたメンバーのみにアクセスを制限する場合は、[**プライベート**] を選択します。
 
