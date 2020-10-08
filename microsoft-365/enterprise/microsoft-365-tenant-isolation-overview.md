@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: この記事には、microsoft 365 などのクラウドサービスでのテナントの分離の適用方法の概要が記載されています。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aca35fc61d03e94225375fcf67970e13dd691c9
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: c9af522c71f3b089c8f2f198f861bcac8a0011a2
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332690"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384942"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Microsoft 365 でのテナントの分離
 
@@ -39,7 +39,7 @@ Microsoft 365 には複数の形式の保護が実装されており、お客様
 - Microsoft 365 サービス用の各テナント内の顧客コンテンツの論理的分離は、Azure Active Directory の承認と役割ベースのアクセス制御によって実現されます。
 - SharePoint Online は、データ分離メカニズムをストレージレベルで提供します。
 - Microsoft は、厳密な物理的なセキュリティ、背景審査、および複数層の暗号化戦略を使用して、顧客のコンテンツの機密性と整合性を保護しています。 すべての Microsoft 365 データセンターには、バイオメトリクスアクセスコントロールがあり、ほとんどの場合、物理的なアクセスを得るために palm 印刷が要求されています。 また、米国のすべての Microsoft の従業員は、雇用プロセスの一環として、標準のバックグラウンドチェックを正常に完了する必要があります。 Microsoft 365 での管理アクセスに使用されるコントロールの詳細については、「 [microsoft 365 管理アクセス制御](microsoft-365-administrative-access-controls-overview.md)」を参照してください。
-- Microsoft 365 は、BitLocker、ファイル暗号化、トランスポート層セキュリティ (TLS)、およびインターネットプロトコルセキュリティ (IPsec) を含む、お客様のコンテンツを保存し、送信中で暗号化するサービス側のテクノロジを使用しています。 Microsoft 365 での暗号化の詳細については、「 [microsoft 365 のデータ暗号化テクノロジ](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)」を参照してください。
+- Microsoft 365 は、BitLocker、ファイル暗号化、トランスポート層セキュリティ (TLS)、およびインターネットプロトコルセキュリティ (IPsec) を含む、お客様のコンテンツを保存し、送信中で暗号化するサービス側のテクノロジを使用しています。 Microsoft 365 での暗号化の詳細については、「 [microsoft 365 のデータ暗号化テクノロジ](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)」を参照してください。
 
 これらの保護によって、物理的な分離だけで提供される脅威の保護と軽減対策を提供する、堅牢な論理的分離コントロールが提供されます。
 

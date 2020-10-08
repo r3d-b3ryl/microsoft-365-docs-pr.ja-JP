@@ -3,7 +3,6 @@ title: Microsoft 365 および Office 365 サービスのセットアップ ガ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,22 +21,22 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: セットアップガイドを使用して、Microsoft 365 または Office 365 の計画と構成を促進します。
-ms.openlocfilehash: 106a659dd75ae14d38c393a9547b84630e458337
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 67e24ae41806b4dc112387526177cb4bd84d0779
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357984"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384918"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
-Microsoft 365 および Office 365 のセットアップガイドを使用すると、管理者は、アプリとサービスを展開するためのガイダンスとリソースをカスタマイズできます。 これらのガイドは同じベストプラクティスを使用して作成されています。これは、個々の対話において、オンボードの専門家の共有を FastTrack しており、Microsoft 365 管理センター内のすべての管理者が使用できます。 これにより、製品のセットアップ、セキュリティ機能の有効化、コラボレーションツールの展開、高度な展開を高速化するためのスクリプトの提供に関する情報が得られます。
+「Microsoft 365 および Office 365 セットアップガイド」では、テナント、アプリ、およびサービスの計画と展開について、調整されたガイダンスとリソースが提供されています。 これらのガイドは、 [microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) の作業可能なスペシャリストが個々の対話で共有するのと同じベストプラクティスを使用して作成され、microsoft 365 管理センター内のすべての管理者が使用できます。 これにより、製品のセットアップ、セキュリティ機能の有効化、コラボレーションツールの展開、高度な展開を高速化するためのスクリプトの提供に関する情報が得られます。
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでのセットアップガイドへのアクセス方法
 
 セットアップガイドは、Microsoft 365 管理センターの [セットアップガイダンス](https://aka.ms/setupguidance) ページからアクセスできます。 進捗状況を追跡して、ガイドを完成させるためのオプションをいつでも取得できます。 **セットアップガイダンス**ページにアクセスするには、次のようにします。
 
-1. [管理センター](https://admin.microsoft.com/)で、**ホーム**ページに移動します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com/)で、**ホーム**ページに移動します。
 
 2. **トレーニング & ガイド**カードを検索します。 
 
@@ -52,11 +51,11 @@ Microsoft 365 および Office 365 のセットアップガイドを使用する
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでのセットアップガイドの動作について
 
-各ガイドには、手順を追って説明する、リソース、記事、および必要に応じて、構成の変更を行うために使用できるスクリプトが記載されています。 これらのガイドでは、小規模および大規模な組織の特定のニーズを反映する選択肢について説明します。 また、提供されるガイダンスには、経験豊富な管理者のためのサポートが含まれています。
+各ガイドには、手順を追って説明する、リソース、記事、および必要に応じて、構成の変更を行うために使用できるスクリプトが記載されています。 これらのガイドでは、小規模および大規模な組織の特定のニーズを反映する選択肢について説明します。 さらに、経験豊富な管理者のためのサポートが含まれています。
 
 ![セットアップガイドの例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
-ガイドを使用すると、計画段階の特定の Microsoft 365 および Office 365 機能の詳細について説明したり、設定を変更する展開を完了した後にそれらを見直すことができます。
+ガイドを使用すると、計画段階での特定の Microsoft 365 および Office 365 の機能の詳細について説明し、展開とロールアウトの間に、または設定を変更する展開を完了した後にそれらを見直すことができます。
 
 ## <a name="guides-for-initial-setup"></a>初期セットアップのガイド
 
@@ -74,7 +73,7 @@ Gmail ユーザーのメールボックスを Microsoft 365 に移行すると�
 
 ### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 展開アドバイザー
 
-[Microsoft 365 展開アドバイザー](https://aka.ms/microsoft365setupguide)は、生産性ツール、セキュリティポリシー、およびデバイス管理機能を設定する際のガイダンスとして、商用のお客様を提供します。 Microsoft 365 Business Premium または Microsoft 365 Enterprise サブスクリプションでは、このアドバイザーを使用して組織のデバイスをセットアップおよび構成できます。 
+[Microsoft 365 展開アドバイザー](https://aka.ms/microsoft365setupguide)は、生産性ツール、セキュリティポリシー、およびデバイス管理機能を設定する際のガイダンスを提供します。 Microsoft 365 Business Premium または Microsoft 365 for enterprise サブスクリプションを使用すると、このアドバイザーを使用して組織のデバイスをセットアップおよび構成することができます。 
 
 クラウドサービスを有効にし、サポートされている最新バージョンの Windows 10 にデバイスを更新し、デバイスを Azure Active Directory (Azure AD) に参加させるためのガイダンスとアクセス方法について説明します。
 
@@ -83,7 +82,7 @@ Gmail ユーザーのメールボックスを Microsoft 365 に移行すると�
 
 [リモート作業セットアップガイド](https://aka.ms/remoteworksetup)は、ユーザーがリモートで正常に作業できるようにするために必要なヒントとリソースを組織に提供し、データをセキュリティで保護し、ユーザーの資格情報を保護します。 
 
-リモートワーカーのデバイストラフィックをクラウド内の Microsoft 365 リソースと組織のネットワークの両方に最適化するガイダンスを受け取ります。これにより、VPN インフラストラクチャの負荷が軽減されます。 
+リモートアクセス VPN インフラストラクチャの負荷が軽減されるように、クラウド内の Microsoft 365 リソースと組織のネットワークの両方に対して、リモートワーカーのデバイストラフィックを最適化するガイダンスを受け取ります。 
 
 ### <a name="windows-virtual-desktop-setup-guide"></a>Windows 仮想デスクトップセットアップガイド
 
@@ -97,15 +96,19 @@ Windows 仮想デスクトップは、クラウドで実行される包括的な
 
 [AZURE AD セットアップガイド](https://aka.ms/aadpguidance)には、組織に強力なセキュリティ基盤があることを確認するための情報が記載されています。 このガイドでは、管理者向けの Azure の役割ベースのアクセス制御 (Azure RBAC)、オンプレミスのディレクトリの Azure AD Connect、および Azure AD Connect の正常性などの初期機能をセットアップして、自動同期時にハイブリッド id の正常性を監視できるようにします。 
 
-また、オプションの高度な ID 保護、ユーザープロビジョニングの自動化を含む、セルフサービスのパスワードのリセット、条件付きアクセス、および統合されたサードパーティのサインオンを有効にする方法についても説明します。
+また、オプションの高度な id 保護とユーザープロビジョニングの自動化を含む、セルフサービスのパスワードのリセット、条件付きアクセス、および統合されたサードパーティのサインオンを有効にする方法についても説明します。
 
 ### <a name="plan-your-passwordless-deployment"></a>パスワードの展開を計画する
 
-ユーザーがデバイスに安全にアクセスできるようにするための代替サインイン方法にアップグレードします。 Windows Hello for Business、Microsoft Authenticator アプリ、セキュリティキーのいずれかのパスワードを使用します。 
+ユーザーがデバイスに安全にアクセスできるようにするための代替サインイン方法にアップグレードします。パスワードを次のようにします。以下のいずれかの認証方法を使用します。 
+
+- Windows Hello for Business
+- Microsoft Authenticator アプリ
+- セキュリティキー 
 
 [パスワードを使用しない [] 展開ウィザード](https://aka.ms/passwordlesssetup) を使用して、適切な passwordless の認証方法を見つけ、それらの展開方法に関するガイダンスを受けることができます。 
 
-### <a name="plan-your-self-service-password-reset-deployment"></a>セルフサービスによるパスワードのリセットの展開を計画する
+### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>セルフサービスによるパスワードのリセット (SSPR) の展開を計画する
 
 ユーザーに対して、自分のアカウントがロックされている場合は、自分のパスワードを変更または再設定することができます。または、ヘルプデスクエンジニアに連絡する必要なしに、パスワードを忘れることがあります。 
 
@@ -187,4 +190,3 @@ Office [をリモートユーザー](https://aka.ms/officeremoteinstall) とし�
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Configuration Manager を使用して Microsoft 365 アプリを展開および更新する
 
 構成マネージャーを使用している組織の場合は、「 [Deploy and Update microsoft 365 apps With Configuration manager advisor](https://aka.ms/oppinstall) 」を使用して、fasttrack エンジニアに推奨されるベストプラクティスを使用して Microsoft 365 アプリの展開を自動的に構成するスクリプトを生成できます。 このガイドを使用して、展開グループを構築し、Office アプリと機能をカスタマイズし、動的またはリーンインストールを構成した後、スクリプトを実行して、展開の対象とする必要があるアプリケーション、自動展開ルール、およびデバイスコレクションを作成します。 
-

@@ -3,7 +3,6 @@ title: Office 2007 または2010のサーバーとクライアントからのア
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,40 +16,41 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、Office 2007 または Office 2010 を使用してアップグレードを計画するユーザー向けのリソースが含まれています。
-ms.openlocfilehash: 0ad90235bf7ad862a1f0162f87dca7ee2df3d799
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691869"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384560"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス [のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 
+以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス [のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 Office 2010 製品およびサービスの場合:
 
 - Office 2010 および Exchange 2010 は、**2020年10月13日** にサポートが終了します。 
 - SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサポートが終了します。 
 
-開始するには、この記事のリソースを使用します。
+詳細については、「 [Upgrade From Office 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md)」を参照してください。
 
-詳細については [、「Office 2010 のサーバーとクライアントからのアップグレード](upgrade-from-office-2010-servers-and-products.md) 」を参照してください。
+この記事のリソースを使用して、アップグレードを開始します。
 
-## <a name="what-is-microsoft-365"></a>Microsoft 365とは
+## <a name="what-is-microsoft-365"></a>Microsoft 365 とは
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) は、より多くのことを実現するために設計された革新的な Office アプリ、インテリジェントクラウドサービス、および世界最高クラスのセキュリティの組み合わせです。
 
 Microsoft 365 には、組織が最新の Windows オペレーティングシステムで動作していること、およびお客様のデバイス (Windows、iOS、Android を含む) が登録され、認証とデータ保護を必要とするポリシーでセキュリティ保護されていることを確認するためのライセンスと機能が含まれています。 さらに、Windows 10 と Microsoft 365 Apps for enterprise (旧称 Office 365 ProPlus) クライアントソフトウェアは、最新の機能とセキュリティ更新プログラムが含まれるように、継続的に更新されています。
   
 Microsoft 365 は、絶えず改善されたデバイスと生産性のエクスペリエンスを使用して、Microsoft クラウドで有効にし、セキュリティで保護されたビジネスをデジタルに変換する方法です。
-  
-|**Resource**|**説明**|
+ 
+| 関連情報 | 説明 |
 |:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |Microsoft 365 のさまざまなバージョンに関する情報を取得します。  <br/> |
-|[Microsoft 365 Business ドキュメント](https://docs.microsoft.com/microsoft-365/business/) <br/> |Smb (中小企業) 向けの Microsoft 365 のバージョンに関する詳細情報を入手できます。  <br/> |
-|[Microsoft 365 教育に関するドキュメント](https://docs.microsoft.com/microsoft-365/education/) <br/> |教育機関向けの Microsoft 365 のバージョンに関する詳細情報を取得します。  <br/> |
-|[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |エンタープライズ組織の Microsoft 365 のバージョンに関する詳細情報を取得します。  <br/> |
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> | Microsoft 365 のさまざまなバージョンに関する情報を取得します。  <br/> |
+|[Microsoft 365 Business ドキュメント](https://docs.microsoft.com/microsoft-365/business/) <br/> | Smb (中小企業) 向けの Microsoft 365 のバージョンに関する詳細情報を入手できます。  <br/> |
+|[Microsoft 365 教育に関するドキュメント](https://docs.microsoft.com/microsoft-365/education/) <br/> | 教育機関向けの Microsoft 365 のバージョンに関する詳細情報を取得します。  <br/> |
+|[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> | エンタープライズ組織の Microsoft 365 のバージョンに関する詳細情報を取得します。  <br/> |
+|||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>アップグレードしない場合はどうなりますか?
 
@@ -94,7 +94,7 @@ Office 2007 または Office 2010 を自宅で使用している場合は、次�
 
 - **Microsoft 365 をご利用ください。** 自宅に [Microsoft 365 ファミリ](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) を使用します。 試用版を開始し、Microsoft 365 ファミリの動作を確認します。 Microsoft 365 ファミリでは、クラウドストレージを OneDrive で利用できます。
 
-   [2020 年1月14日に windows 7 のサポートを終了](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)すると、のバージョンの Word、Excel、PowerPoint、Outlook、Publisher、および windows 7 デバイス上で実行されている Office 365 Home または Office 365 Personal には、セキュリティ更新プログラムは提供されますが、機能の更新プログラムは受け取りません。 これらのアプリケーションの機能更新プログラムの受信を続行するには、 [windows 7 デバイスを windows 10 にアップグレード](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)します。
+   [2020 年1月14日に windows 7 のサポートを終了](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)すると、のバージョンの Word、Excel、PowerPoint、Outlook、Publisher、および windows 7 デバイス上で実行されている Office 365 Home または office の365にアクセスすることができますが、セキュリティ更新プログラムは受け取りませんが、機能の更新はありません。 これらのアプリケーションの機能更新プログラムの受信を続行するには、 [windows 7 デバイスを windows 10 にアップグレード](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)します。
     
 - **Office Home &amp; の学生を購入します。** このオプションを選択する場合は、1回限りの購入を行い、Windows PC または Mac に Office をインストールします。 これはサブスクリプションではありません。1台のコンピューターに対して1回限りの永続的なライセンスを使用します。 [要件](https://office.com/systemrequirements)を確認してから、使用するバージョンを選択します。
 
@@ -102,11 +102,11 @@ Office 2007 または Office 2010 を自宅で使用している場合は、次�
 
     - Windows 7、8、または8.1 を実行していて、現時点で Windows 10 にアップグレードしていない場合は、承認された販売店から Office Home & Student 2016 (または他のエディションの Microsoft Office) を入手することを検討してください。
      
-     - Windows 7 のサポートは、 [2020 年1月14日に終了](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)します。その後、Microsoft はセキュリティ更新プログラムまたはサポートを提供しなくなります。 継続的なセキュリティおよび機能の更新プログラムおよび継続的なサポートを行うために、Windows 7 デバイスを Windows 10 にアップグレードします。
+     - Windows 7 のサポートは、 [2020 年1月14日に終了](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)します。その後、Microsoft はセキュリティ更新プログラムまたはサポートを提供しなくなります。 継続的なセキュリティおよび機能の更新プログラムおよび継続的なサポートを行うために、Windows 7 デバイスを Windows 10 にアップグレードします。
 
-この時点では、アップグレードしないことを選択することもできます。 Office アプリは引き続き実行されます。 Office サポート日付のタイムラインは [こちらで](https://go.microsoft.com/fwlink/p/?linkid=2085724)入手できます。 ただし、アップグレードでは、セキュリティ更新プログラムまたは新機能と強化された機能が提供されます。
+この時点では、アップグレードしないことを選択することもできます。 Office アプリは引き続き実行されます。 Office サポート日付のタイムラインは [こちらで](https://support.microsoft.com/lifecycle/search/13615)入手できます。 ただし、アップグレードでは、セキュリティ更新プログラムまたは新機能と強化された機能が提供されます。
    
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [Office 2007 サーバー/クライアントからアップグレードする](upgrade-from-office-2007-servers-and-products.md)
 

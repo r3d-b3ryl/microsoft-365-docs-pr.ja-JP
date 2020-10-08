@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f904512f9fd07e2065f3d27a5bd5adc56a3565d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199747"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384789"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Microsoft の脅威保護で自動調査および応答機能を構成する
 
@@ -52,8 +52,6 @@ Microsoft Threat Protection には、強力な自動化された [調査と応�
 
 自動調査が実行されるかどうか、および修復アクションが自動で行われるか、またはデバイスの承認時にのみ適用されるかは、組織のデバイスグループポリシーなどの特定の設定によって決まります。 デバイスグループポリシーに設定されている自動化レベルを確認します。
 
-### <a name="to-review-or-change-your-device-group-policies"></a>デバイスのグループポリシーを確認または変更するには
-
 1. Microsoft Defender セキュリティセンター () に移動し、 [https://securitycenter.windows.com](https://securitycenter.windows.com) サインインします。
 
 2. [**設定**]  >  **アクセス許可**  >  **デバイスグループ**に移動します。 
@@ -69,8 +67,6 @@ Microsoft Threat Protection には、強力な自動化された [調査と応�
 Microsoft は、特定のリスクを特定するのに役立つ組み込みの [通知ポリシー](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) を提供しています。 これらのリスクには、Exchange 管理者権限の悪用、マルウェア活動、外部および内部の脅威、および情報ガバナンスのリスクがあります。 一部 [の通知では、Office 365 で自動調査と応答](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)がトリガーされることがあります。 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)機能が正しく構成されていることを確認してください。
 
 特定の警告およびセキュリティポリシーで自動調査を開始することはできますが、電子メールとコンテンツに対しては修復処理は自動的に行われません。 代わりに、電子メールと電子メールコンテンツのすべての修復アクションは、 [アクションセンター](mtp-action-center.md)のセキュリティ運用チームによる承認を受けます。
-
-### <a name="to-view-or-change-your-security-and-alert-policies-in-office-365"></a>Office 365 でセキュリティと警告のポリシーを表示または変更するには
 
 Office 365 のセキュリティ設定電子メールとコンテンツの保護に役立ちます。 これらの設定を表示または変更するには、「 [脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」のガイダンスに従ってください。
 
@@ -94,7 +90,9 @@ Office 365 のセキュリティ設定電子メールとコンテンツの保護
 
 1. Microsoft 365 セキュリティセンター () に移動し、 [https://security.microsoft.com](https://security.microsoft.com) サインインします。
 
-2. ナビゲーションウィンドウで、次の図に示すように、 **インシデント**、 **アクションセンター** **、および検索を探し**ます。<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP オン":::
+2. ナビゲーションウィンドウで、次の図に示すように、 **インシデント**、 **アクションセンター** **、および検索を探し**ます。
+
+   :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP オン":::
 
    - **インシデント**、**アクションセンター**、および**探し**ているものが表示されている場合は、Microsoft Threat Protection が有効になっています。 次の手順に進む [か、デバイスグループの自動化レベルを確認または変更](#review-or-change-the-automation-level-for-device-groups)します。
 

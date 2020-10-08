@@ -3,7 +3,6 @@ title: Microsoft 365 テナント間のコラボレーション
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Microsoft 365 コラボレーションがテナントと組織の間でどのように動作するかについて説明します。これにより、さまざまな組織が安全に共同作業できる
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214801"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384829"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 テナント間のコラボレーション
 
@@ -78,7 +77,7 @@ Microsoft 365 のテナント間コラボレーションオプションには、
 |共有の目的|管理操作|使い方に関する情報|
 |:-----|:-----|:-----|
 |組織外のユーザーと Teams でコラボレーションを行う | Microsoft 365 テナントへの招待のグローバル管理者は、Teams での外部コラボレーションを有効にする必要があります。 グローバル管理者とチームの所有者は、Teams でコラボレーションを行うために、メール アドレスを持つすべてのユーザーを招待できるようになります。  <br/> 管理者は、既にテナント内にいるゲストを管理して編集することもできます。 |  <ul><li> [ゲスト アクセスを認証する](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [Teams でゲスト アクセスをオンまたはオフにする](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [PowerShell を使用してゲスト アクセスを制御する](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [ゲスト アクセスのチェックリスト](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [ゲスト ユーザーを表示する](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [ゲスト ユーザー情報を編集する](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|チームの所有者は、ゲストを招待し、ゲストがチーム内でコラボレーションを行う方法を管理することができる。  </li><li> |チームの所有者は、自分のチーム内でゲストが実行できる操作をさらに制御することができます。 |  <ul><li> [ゲストを追加する](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [チームにゲストを追加する](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Teams でのゲスト アクセスを管理する](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [チームまたはチャネルにいるユーザーを確認する](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|チームの所有者は、ゲストを招待し、ゲストがチーム内でコラボレーションを行う方法を管理することができる。  |チームの所有者は、自分のチーム内でゲストが実行できる操作をさらに制御することができます。 |  <ul><li> [ゲストを追加する](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [チームにゲストを追加する](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [Teams でのゲスト アクセスを管理する](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [チームまたはチャネルにいるユーザーを確認する](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |他のテナントからのゲストは、Teams 内のコンテンツを表示し、他のメンバーとコラボレーションすることができる | なし。 | [ゲストのエクスペリエンスについて](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Power BI のコラボレーション オプション
@@ -93,18 +92,18 @@ Microsoft 365 のテナント間コラボレーションオプションには、
 
 各組織は、独自のユーザー アカウント、ID、セキュリティ グループ、サブスクリプション、ライセンス、および記憶域を保持しています。 ユーザーは Microsoft 365 のグループ作業機能を使用して、会社の資産の管理を維持しながら、必要な情報にアクセスできるようにすることができます。
   
-- **ユーザー アカウント:** アカウントを共有することはできません。また、アカウントはオンプレミスの Active Directory Directory Services のテナント間またはパーティション間で重複させることはできません。 
+- **ユーザーアカウント:** オンプレミスの Active Directory ドメインサービスのテナントまたはパーティション間でアカウントを共有または複製することはできません。 
     
 - **ライセンス &amp; サブスクリプション:** microsoft 365 では、ライセンスプラン (Sku または Microsoft 365 プランとも呼ばれる) からのライセンスが、これらのプランに対して定義されている Microsoft 365 サービスにアクセスできるようにします。 
     
-- **ストレージ:** Microsoft 365 プランでは、SharePoint Online のソフトウェアの境界と制限は、メールボックスの格納域の制限とは別に管理されます。 メールボックスの保存制限は、Exchange Online を使用して設定および管理されます。 両方のシナリオでは、記憶域をテナント間で共有することはできません。 
+- **ストレージ:** Microsoft 365 のライセンスプランでは、ソフトウェアの境界および SharePoint Online の制限は、メールボックスの格納域の制限とは別に管理されます。 メールボックスの保存制限は、Exchange Online を使用して設定および管理されます。 どちらのシナリオでも、テナント間で記憶域を共有することはできません。 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>Microsoft 365 テナント間でドメイン名前空間を共有できますか。
 
-いいえ。 fabrikam.com や tailspintoys.com などのバニティ ドメインは、一度に 1 つのテナントにのみ関連付けられ、使用することができます。 各テナントには独自の名前空間が必要です。UPN、SMTP、SIP の名前空間をテナント間で共有することはできません。
+いいえ。 Fabrikam.com や tailspintoys.com などの組織のドメイン名は、1つの Microsoft 365 テナントでのみ関連付けおよび使用できます。 各テナントは独自の名前空間を持っている必要があります。 UPN、SMTP、および SIP の名前空間をテナント間で共有することはできません。
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>ハイブリッドコンポーネントと Microsoft 365 のテナント間のコラボレーションについて
 
 Exchange 組織や Azure AD Connect などのオンプレミスのハイブリッド コンポーネントは、複数のテナント間で分割することはできません。
-  
+ 
 

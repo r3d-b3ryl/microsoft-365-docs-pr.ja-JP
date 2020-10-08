@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: Microsoft 365 のデバイス管理をセットアップするためのロードマップ。
-ms.openlocfilehash: bb19c38d5cf92cfc04ac83bc29573ea24c93ef30
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 0efe7098f90064184f222acb671ae6f96c1b38d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775173"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384762"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 のデバイス管理のロードマップ
 
@@ -35,17 +35,22 @@ Microsoft 365 for enterprise では、組織内のデバイスとアプリを管
 
 Microsoft Intune を使用して、モバイルデバイス管理またはモバイルアプリケーション管理を使用して、組織へのアクセスを管理できます。 モバイルデバイスの管理は、ユーザーが Intune にデバイスを登録するときに行います。 登録されたデバイスは、管理されたデバイスです。そのため、組織のポリシー、ルール、および設定を受信することができます。 たとえば、特定のアプリをインストールしたり、パスワードポリシーを作成したり、VPN 接続をインストールしたりできます。
 
-独自の個人用デバイスを使用しているユーザーは、自分のデバイスを登録したり、Intune および組織のポリシーによって管理したりすることは望まない場合があります。 ただし、組織のリソースとデータを保護する必要がある場合もあります。 このシナリオでは、モバイルアプリケーション管理を使用してアプリを保護することができます。 たとえば、モバイルアプリケーション管理ポリシーを使用して、ユーザーがデバイス上の Microsoft SharePoint にアクセスするときに PIN を入力するよう要求することができます。
+独自の個人用デバイスを使用しているユーザーは、自分のデバイスを登録したり、Intune および組織のポリシーによって管理したりすることは望まない場合があります。 ただし、組織のリソースとデータを保護する必要がある場合もあります。 このシナリオでは、モバイルアプリケーション管理を使用してアプリを保護することができます。 たとえば、モバイルアプリケーション管理ポリシーを使用して、ユーザーがデバイス上の SharePoint Online にアクセスするときに PIN を入力するよう要求することができます。
 
 また、個人デバイスおよび組織所有のデバイスを管理する方法を決定します。 使用方法に応じて、デバイスを異なる方法で扱うことができます。
-
-Intune を使用してデバイスを管理するには、 [ここ](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)から開始してください。
 
 ## <a name="basic-mobility-and-security"></a>基本的なモビリティとセキュリティ
 
 これは Microsoft 365 に組み込まれており、iPhones、Ipad、Androids、Windows phone などのユーザーのモバイルデバイスをセキュリティで保護し、管理することができます。 デバイスのセキュリティ ポリシーを作成および管理したり、リモートでデバイスをワイプしたり、詳細なデバイス レポートを参照できます。
 
-基本的なモビリティとセキュリティを使用してデバイスを管理するには、 [ここ](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)から開始してください。
+## <a name="choose-between-the-two-options"></a>2つのオプションのどちらかを選択する
+
+どのデバイス管理オプションが最適かを判断するために、「 [基本モビリティセキュリティと Intune の選択](https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune)」を参照してください。
+
+評価に基づき、次のものを使用してデバイスの管理を始めることができます。
+
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)。
+- [基本的なモビリティとセキュリティ](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)。
  
 ## <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 

@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 のシングルサインオンをサポートするプラットフォーム、クライアント、および Powershell モジュールについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d0a45c30ffe736cf67e811bce6eb029d6fb50674
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546412"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384805"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 クライアントアプリケーションのサポート-シングルサインオン
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-シングルサインオン (SSO) を使用すると、ユーザーが Azure Active Directory (Azure AD) のアプリケーションにサインオンするときに、セキュリティと利便性が向上します。 シングルサインオンを使用すると、ユーザーは1つのアカウントでサインインし、ドメインに参加しているデバイス、会社のリソース、サービス (SaaS) アプリケーション、および web アプリケーションにアクセスできます。
+シングルサインオン (SSO) を使用すると、ユーザーが Azure Active Directory (Azure AD) のアプリケーションにサインオンするときに、セキュリティと利便性が向上します。 シングルサインオンを使用すると、ユーザーは1回サインインするだけで、オンプレミスの Active Directory ドメインサービス (AD DS)、ドメインに参加しているデバイス、サービス (SaaS) アプリケーションとしてのソフトウェア、web アプリケーションにアクセスできます。
 
 [シングルサインオン](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)の詳細については、こちらを参照してください。
 
@@ -40,7 +40,7 @@ ms.locfileid: "47546412"
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-Microsoft 365 でのプラットフォームサポートの詳細については、「 [microsoft 365 のシステム要件](https://products.office.com/office-system-requirements)」を参照してください。
+Microsoft 365 でのプラットフォームサポートの詳細については、「 [microsoft 365 のシステム要件](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)」を参照してください。
 
 ## <a name="supported-clients"></a>サポートされるクライアント
 
@@ -52,7 +52,7 @@ Microsoft 365 でのプラットフォームサポートの詳細については
 | ![Kaizala アイコン](../media/o365-kaizala-64x64.png) <br> [Kaizala<sup>1</sup>](https://products.office.com/en/business/microsoft-kaizala) | ![Office.com アイコン](../media/o365-office-64x64.png) <br> [Office.com](https://www.office.com/) | ![レンズアイコン](../media/o365-lens-64x64.png) <br> [Office Lens](https://www.microsoft.com/p/office-lens/9wzdncrfj3t8?activetab=pivot%3Aoverviewtab) | ![OneDrive for Business アイコン](../media/o365-OneDrive-64x64.png) <br> [OneDrive](https://products.office.com/onedrive-for-business/online-cloud-storage) | ![OneNote アイコン](../media/o365-OneNote-64x64.png) <br> [OneNote<sup>2</sup>](https://products.office.com/onenote) 
 | ![Outlook アイコン](../media/o365-outlook-64x64.png) <br> [Outlook<sup>4</sup>](https://products.office.com/outlook) | ![Planner アイコン](../media/o365-planner-64x64.png) <br> [Planner](https://products.office.com/business/task-management-software) | ![電源の自動化アイコン](../media/o365-flow-64x64.png) <br> [電源の <br> 自動化](https://flow.microsoft.com) | ![PowerBI アイコン](../media/o365-powerbi-64x64.png) <br> [Power BI<sup>2</sup>](https://powerbi.microsoft.com)| ![PowerPoint アイコン](../media/o365-powerpoint-64x64.png) <br> [PowerPoint](https://products.office.com/powerpoint) 
 | ![Project アイコン](../media/o365-project-64x64.png) <br> [Project](https://products.office.com/project) | ![Publisher アイコン](../media/o365-publisher-64x64.png) <br> [Publisher](https://products.office.com/publisher) | ![SharePoint アイコン](../media/o365-sharepoint-64x64.png) <br> [Sharepoint](https://products.office.com/sharepoint) | ![付箋アイコン](../media/o365-stickynotes-64x64.png) <br> [付箋](https://www.microsoft.com/p/microsoft-sticky-notes/9nblggh4qghw)  | ![Sway アイコン](../media/o365-sway-64x64.png) <br> [Sway](https://sway.com) 
-| ![Teams アイコン](../media/o365-teams-64x64.png) <br> [Teams<sup>2、4</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![To Do アイコン](../media/o365-todo-64x64.png) <br> [To Do](https://todo.microsoft.com) | ![Visio アイコン](../media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Whiteboard アイコン](../media/o365-whiteboard-64x64.png) <br> [ホワイトボード<sup>3</sup>](https://whiteboard.microsoft.com/) | ![Word アイコン](../media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) 
+| ![Teams アイコン](../media/o365-teams-64x64.png) <br> [Teams<sup>2、4</sup>](https://products.office.com/microsoft-teams/group-chat-software) | ![To Do アイコン](../media/o365-todo-64x64.png) <br> [やるべきこと](https://todo.microsoft.com) | ![Visio アイコン](../media/o365-visio-64x64.png) <br> [Visio](https://products.office.com/visio/flowchart-software) | ![Whiteboard アイコン](../media/o365-whiteboard-64x64.png) <br> [ホワイトボード<sup>3</sup>](https://whiteboard.microsoft.com/) | ![Word アイコン](../media/o365-word-64x64.png) <br> [Word](https://products.office.com/word) 
 | ![Yammer アイコン](../media/o365-yammer-64x64.png) <br> [Yammer<sup>2</sup>](https://products.office.com/yammer/yammer-overview) |
 
 ## <a name="supported-powershell-modules"></a>サポートされている PowerShell モジュール
