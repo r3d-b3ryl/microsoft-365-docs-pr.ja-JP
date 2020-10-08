@@ -12,17 +12,19 @@ ms.date: 04/23/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 主なパターン、英数字、信頼度など、データ損失防止 (DLP) のカスタム機密情報の種類の概要について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b3e30c75641dde16726e1d98c8f12c4437b0df6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d21d0be23847a8fbd27b6082ca28cdca2d4eed05
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685477"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379172"
 ---
 # <a name="custom-sensitive-information-types"></a>カスタムの機密情報の種類
 
@@ -58,16 +60,16 @@ Microsoft 365 には機密情報の種類が多数組み込まれており、[�
 
 > [!NOTE]
 > Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
-> - 中国語（簡体字）
+> - 中国語 (簡体字)
 > - 中国語 (繁体字)
 > - 韓国語
 > - 日本語
 > 
->このプレビューは、商用クラウドにのみ表示されます。ロールアウトは以下に限られます：
+>このプレビューは、商用クラウドにのみ表示され、ロールアウトは以下に限られます。
 > - 日本
 > - 韓国
 > - 中国
-> - 香港
+> - 香港特別行政区
 > - マカオ
 > - 台湾
 >

@@ -15,17 +15,19 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 全体で組織の機密情報を識別、監視、および自動的に保護する方法について説明します。
-ms.openlocfilehash: fc2287743bbe0239442e9507464dda4599880eb0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9e201b7adcde638cc87f57c7c28180420b9e8125
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546217"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379287"
 ---
 # <a name="overview-of-data-loss-prevention"></a>データ損失防止の概要
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->

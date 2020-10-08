@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: 7fb5998729c9f11902f8fdfaffa62b160928077c
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321351"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367933"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -43,11 +43,9 @@ Microsoft 365管理センターでの最初のセットアップの後でも設�
 
 ## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
-1. Microsoft 365 管理センターで、[ **設定**] を選択し、 **組織のナレッジ** セクションを表示します。
+1. Microsoft 365 管理センターで、**[設定]** を選択し、**[ファイルとコンテンツ]** セクションを表示します。
 
-2. [**組織ナレッジ** ]のセクションで、[**コンテンツを自動的に理解する**選択します。<br/>
-
-    ![組織ナレッジの設定ページ](../media/content-understanding/admin-org-knowledge-options.png)</br>
+2. **[ファイルとコンテンツ]** セクションで、**[コンテンツを自動的に理解する]** を選択します。<br/>
 
 3. [ **自動化コンテンツ理解世帯** ]の ページで、[ **使用を開始する**] をクリックして、セットアッププロセスを確認します。<br/>
 

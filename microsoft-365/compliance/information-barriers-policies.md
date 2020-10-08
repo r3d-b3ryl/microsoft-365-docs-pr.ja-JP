@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: Microsoft Teams の情報障壁に関するポリシーを定義する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcf7fd496098032bad075c1679f0081ddf29caef
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f7e1fbb0f1d468f8e1b79f9cc414fdb87a224283
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547445"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379186"
 ---
 # <a name="define-information-barrier-policies"></a>情報バリア ポリシーの定義
 
@@ -55,7 +57,7 @@ ms.locfileid: "47547445"
 |(必要な場合) [セグメントまたはポリシーを編集する](information-barriers-edit-segments-policies.md)    |-セグメントを編集する<br/>-ポリシーを編集または削除する<br/>-ポリシーアプリケーションを再実行します。<br/>-ポリシーの状態を表示する         |
 |(必要な場合) [トラブルシューティング](information-barriers-troubleshooting.md)|-期待どおりに動作しない場合に処理を実行する|
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 [必要なライセンスとアクセス許可](information-barriers.md#required-licenses-and-permissions)に加えて、次の要件が満たされていることを確認してください。 
      
@@ -258,7 +260,7 @@ PowerShell を使用すると、次の表に示すように、ユーザーアカ
 |多角形     |**コマンドレットを使用**します。<p>文 `Get-OrganizationSegment` <p>これにより、組織に定義されているすべてのセグメントの一覧が表示されます。         |
 |情報バリアポリシー     |**InformationBarrierPolicy**コマンドレットを使用します。 <p> 文 `Get-InformationBarrierPolicy` <p>これにより、定義された情報バリアポリシーの一覧とその状態が表示されます。       |
 |最新情報バリアポリシーアプリケーション     | **InformationBarrierPoliciesApplicationStatus**コマンドレットを使用します。 <p>文 `Get-InformationBarrierPoliciesApplicationStatus`<p>    これにより、ポリシーの適用が完了したか、失敗したか、または進行中であるかに関する情報が表示されます。       |
-|すべての情報バリアポリシーアプリケーション|使え `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>これにより、ポリシーの適用が完了したか、失敗したか、または進行中であるかに関する情報が表示されます。|
+|すべての情報バリアポリシーアプリケーション|`Get-InformationBarrierPoliciesApplicationStatus -All $true` を使う<p>これにより、ポリシーの適用が完了したか、失敗したか、または進行中であるかに関する情報が表示されます。|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
