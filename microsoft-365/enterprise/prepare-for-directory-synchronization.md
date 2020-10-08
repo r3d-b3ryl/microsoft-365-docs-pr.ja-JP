@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Microsoft 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327287"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390175"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
@@ -158,6 +158,7 @@ AD DS と Microsoft 365 の間のディレクトリ同期を正常に行うに�
   - アットマーク (@) の前にあるユーザー名の最大文字数:64
   - アットマーク記号 (@) の後に続くドメイン名の最大文字数:48
   - 無効な文字: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
+  - 使用可能な文字: A ~ Z、a ~ z、0 ~ 9、'。 - _ ! # ^ ~
   - ウムラウトは、無効な文字でもあります。
   - 各 **userPrincipalName** 値には @ 文字が必要です。
   - 各 **userPrincipalName** 値の先頭文字に @ 文字を使用することはできません。

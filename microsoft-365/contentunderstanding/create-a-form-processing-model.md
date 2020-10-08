@@ -9,15 +9,20 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Microsoft SharePoint Syntexでフォーム処理モデルを作成します。
-ms.openlocfilehash: 27e80a7b3626170e45ceaa55f1269e50d8fdab9e
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 784a3e0a918424e599e87852d2a36b613867f62e
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337267"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390187"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでフォーム処理モデルを作成する
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
 
 [AI ビルダー](https://docs.microsoft.com/ai-builder/overview)-Microsoft PowerApps の a 機能-SharePoint Syntex のユーザーは、SharePoint ドキュメントライブラリから直接 [フォームプ処理モデル](form-processing-overview.md)を作成できます。 
 
@@ -30,13 +35,6 @@ ms.locfileid: "48337267"
  - 手順 6: モデルを使う
 
 ## <a name="requirements"></a>要件
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
-
-</br>
-
 
 フォームを作成するには、それが有効になっている SharePoint ドキュメントライブラリを使用する必要があります。 フォームの処理が有効になっている場合は、ドキュメントライブラリの **自動化** メニューの [**フォームの処理モデルを作成する** "**AI ビルダー**が表示されます。  ドキュメントライブラリで処理を有効にする必要がある場合は、SharePoint 管理者にお問い合わせください。
 
