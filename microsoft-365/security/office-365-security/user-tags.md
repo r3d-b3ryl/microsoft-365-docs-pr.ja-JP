@@ -15,18 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 ATP Plan 2 でユーザータグを使用して特定のユーザーグループを特定する方法について説明します。 タグフィルターは、Office 365 ATP のアラート、レポート、および調査に対して利用でき、タグ付きユーザーをすばやく識別できます。
-ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337255"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399387"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Office 365 ATP のユーザー タグ
 
-ユーザータグは、 [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md)のユーザーグループの識別子です。 [優先度アカウント](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) は、ユーザータグの一種です。 組織で Office 365 ATP Plan 2 (サブスクリプションに含まれているかアドオンとして含まれる) がある場合は、[優先度のアカウント] タグを使用するだけでなく、カスタムのユーザータグを作成することもできます。
+ユーザータグは、 [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md)のユーザーグループの識別子です。 ユーザータグには、次の2種類があります。
 
-タグを特定のユーザーに適用した後、それらのタグをアラート、レポート、および調査のフィルターとして使用できます。
+- **システムタグ**: 現時点では、 [優先度のアカウント](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) のみがシステムタグの種類です。
+- **カスタムタグ**: これらのユーザータグは自分で作成します。
+
+組織で Office 365 ATP Plan 2 (サブスクリプションに含まれているかアドオンとして含まれる) がある場合は、[優先度のアカウント] タグを使用するだけでなく、カスタムのユーザータグを作成することもできます。
+
+システムタグまたはカスタムタグをユーザーに適用した後、それらのタグを警告、レポート、および調査のフィルターとして使用できます。
 
 - [セキュリティ & コンプライアンスセンターのアラート](alerts.md)
 - [脅威エクスプローラーとリアルタイム検出](threat-explorer.md)
@@ -39,9 +44,11 @@ ms.locfileid: "48337255"
 
 - <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 [ **ユーザータグ** ] ページに直接移動するには、を開き <https://protection.office.com/userTags> ます。
 
-- ユーザータグを作成、変更、または削除するには、セキュリティ & コンプライアンスセンターの [ **組織の管理** ] または [ **セキュリティ管理者** ] 役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
+- **カスタムユーザータグ**を作成、変更、または削除するには、セキュリティ & コンプライアンスセンターの [**組織の管理**] または [**セキュリティ管理者**] 役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-- また、Microsoft 365 管理センターで優先アカウントを管理および監視することもできます。 手順については、「 [優先度のアカウントの管理と監視](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)」を参照してください。
+- 優先アカウント (システムタグ) を構成するには、 [全体管理](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 者または [Exchange 管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)である必要があります。
+
+  また、Microsoft 365 管理センターで優先アカウントを管理および監視することもできます。 手順については、「 [優先度のアカウントの管理と監視](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)」を参照してください。
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>セキュリティセンターを使用してユーザータグを作成する
 

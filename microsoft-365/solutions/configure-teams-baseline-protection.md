@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527862"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398867"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -31,7 +31,7 @@ ms.locfileid: "46527862"
 
 ## <a name="initial-protections"></a>初期保護
 
-最初のステップとして、基本的な ID とデバイス アクセス ポリシーの構成をお勧めします。 詳細については、「[Policy recommendations for securing Teams chats, groups, and files (Teams チャット、グループ、ファイルをセキュリティで保護するためのポリシーの推奨事項)](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies)」を参照してください。
+最初のステップとして、基本的な ID とデバイス アクセス ポリシーの構成をお勧めします。 詳細については、「[Policy recommendations for securing Teams chats, groups, and files (Teams チャット、グループ、ファイルをセキュリティで保護するためのポリシーの推奨事項)](../security/office-365-security/teams-access-policies.md)」を参照してください。
 
 また、ドキュメント、添付ファイル、リンクなどに含まれているマルウェアから保護するために、基本的な Advanced Threat Protection 機能をオンにすることもお勧めします。 次の表の各オプションをオンにすることをお勧めします。
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社がトップシークレットプロジェクトのセキュリティ分離を備えたチームを使用して、新しいスイートの製品とサービスを開発する方法について説明します。'
-ms.openlocfilehash: ba9a66d2419e81aeb1eac026b16c0475ac6d0614
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778592"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399491"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation のトップシークレットプロジェクトの分離されたチーム
 
@@ -40,7 +40,7 @@ Contoso IT スタッフは、Project 2X の [セキュリティ分離を備え�
 
 ## <a name="step-1-created-a-private-team"></a>手順 1: プライベートチームを作成する
 
-最初に、チームの基礎となる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が [推奨する sharepoint アクセスポリシー](../enterprise/sharepoint-file-access-policies.md)を構成しました。
+最初に、チームの基礎となる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が [推奨する sharepoint アクセスポリシー](../security/office-365-security/sharepoint-file-access-policies.md)を構成しました。
 
 次に Contoso IT 管理者は、Project 2X という名前の新しいプライベートチームを作成し、Project 2X スタッフのユーザーアカウントをメンバーとして追加しました。 また、Project 2X チームの所有者のみがプライベートチャネルを作成できるように、チームを構成しました。
 
@@ -51,7 +51,7 @@ Contoso IT スタッフは、Project 2X の [セキュリティ分離を備え�
 Contoso admins は、 **Project 2x** という名前の新しい機密ラベルを作成しました。次のようになります。
 
 - 暗号化を有効にしました。
-- Project 2X Microsoft 365 グループに対して共同編集者権限が許可されている。
+- Project 2X Microsoft 365 グループのアクセス許可 Co-Author 許可されます。
 - 上級指導者グループに対して許可されたビューアーのアクセス許可。
 - 非管理対象デバイスへのアクセスをブロックしました。
 
@@ -64,7 +64,7 @@ Contoso admins は、 **Project 2x** という名前の新しい機密ラベル�
 
 ## <a name="step-3-configured-the-underlying-sharepoint-site"></a>手順 3: 基になる SharePoint サイトを構成する
 
-最初に、チームの基礎となる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が [推奨する sharepoint アクセスポリシー](../enterprise/sharepoint-file-access-policies.md)を構成しました。
+最初に、チームの基礎となる SharePoint サイトへのアクセスを保護するために、Contoso IT 管理者が [推奨する sharepoint アクセスポリシー](../security/office-365-security/sharepoint-file-access-policies.md)を構成しました。
 
 次に、サイトに対する追加のアクセス許可の設定を構成しました。
 
@@ -100,7 +100,7 @@ Contoso のセキュリティスタッフは、次の手順に従ってステッ
 
 Teams のグループ作業環境と Microsoft 365 のセキュリティ機能により、project 2X の詳細はプロジェクトの期間中に機密情報として保持されていました。 Contoso 社はプランを発表し、新しい製品とサービスを顧客や投資家の成功および競合他社の chagrin に展開する過程にあります。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 組織内で[セキュリティの分離を使用してチームを展開](secure-teams-security-isolation.md)します。
 

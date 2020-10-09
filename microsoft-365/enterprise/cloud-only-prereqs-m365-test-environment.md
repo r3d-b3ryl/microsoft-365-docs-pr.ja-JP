@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: クラウド専用の認証用の前提条件で ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: a8025a2543a53a229be13d19c246165fe88ad433
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: aa18e1a9943ec12465737f6c3f2e12c1fa49e2a3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685786"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398879"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境のクラウド専用の ID およびデバイス アクセスの前提条件
 
 *このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
 
-[Id およびデバイスアクセス構成](microsoft-365-policies-configurations.md) は、Azure Active Directory (azure AD) と統合されたすべてのサービスへのアクセスを保護するための一連の構成および条件付きアクセスポリシーです。
+[Id およびデバイスアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md) は、Azure Active Directory (azure AD) と統合されたすべてのサービスへのアクセスを保護するための一連の構成および条件付きアクセスポリシーです。
 
-この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
+この記事では、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たす Microsoft 365 テスト環境を構成する方法を説明します。
 
 このテスト環境は、次に示す 7 つのフェーズで設定します。
 
@@ -106,7 +106,7 @@ Skype for Business Online については、
   Get-CsOAuthConfiguration
   ```
 
-上述の手順により、ID とデバイス アクセス用の[クラウド専用の前提条件構成](identity-access-prerequisites.md#prerequisites)に関する要件を満たすテスト環境が作成されます。 
+上述の手順により、ID とデバイス アクセス用の[クラウド専用の前提条件構成](../security/office-365-security/identity-access-prerequisites.md#prerequisites)に関する要件を満たすテスト環境が作成されます。 
 
 ## <a name="next-step"></a>次の手順
 

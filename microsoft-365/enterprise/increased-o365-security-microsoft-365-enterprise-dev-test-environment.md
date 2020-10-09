@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、その他の Microsoft 365 セキュリティ設定を Microsoft 365 for enterprise テスト環境に対して有効にします。
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686804"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398951"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Microsoft 365 for enterprise テスト環境の Microsoft 365 セキュリティの強化
 
@@ -47,7 +47,7 @@ ms.locfileid: "46686804"
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>先進認証をサポートしていないアプリをブロックするように SharePoint Online を構成する
 
-モダン認証をサポートしていないアプリには、 [id とデバイスのアクセス構成](microsoft-365-policies-configurations.md) を適用できません。これは、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティ保護するための重要な要素です。 
+モダン認証をサポートしていないアプリには、 [id とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md) を適用できません。これは、Microsoft 365 サブスクリプションとそのデジタル資産をセキュリティ保護するための重要な要素です。 
 
 1. Microsoft 365 管理センター () に移動 [https://portal.microsoft.com](https://portal.microsoft.com) し、全体管理者アカウントを使用して microsoft 365 テストラボサブスクリプションにサインインします。
     

@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ID とデバイスのアクセスをテストするための Microsoft 365 環境を作成します。
-ms.openlocfilehash: 84af7747fc1d0e80e933397f4f0f96018ed246c3
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: b8e91a58bb6e1c00013b963c77151080a419b836
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327809"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398809"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>Microsoft 365 テスト環境の ID およびデバイス
 
 *このテストラボガイドは、エンタープライズテスト環境の Microsoft 365 にのみ使用できます。*
 
-[Id およびデバイスアクセスの構成](microsoft-365-policies-configurations.md) は、Azure Active Directory (azure AD) と統合されたすべてのサービスへのアクセスを保護する一連の機能と条件付きアクセスポリシーです。
+[Id およびデバイスアクセスの構成](../security/office-365-security/microsoft-365-policies-configurations.md) は、Azure Active Directory (azure AD) と統合されたすべてのサービスへのアクセスを保護する一連の機能と条件付きアクセスポリシーです。
 
 共通の id とデバイスのアクセス構成を備えたテスト環境を作成するには、次のようにします。
 

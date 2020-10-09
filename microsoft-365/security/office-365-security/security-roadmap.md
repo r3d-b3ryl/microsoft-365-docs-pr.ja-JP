@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft の cybersecurity チームからの、Microsoft 365 環境を保護するためのセキュリティ機能の実装に関する主な推奨事項。 '
-ms.openlocfilehash: 9bdddbbfbb20900a4645d2e17cf298ed018f4c6d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aae103b93409b2f7fee635b832fce8f10c3d9437
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197431"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399411"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>セキュリティロードマップ-最初の30日間、90日以降の優先度
 
@@ -82,7 +82,7 @@ ms.locfileid: "48197431"
 |---|---|
 |セキュリティ管理|* お使いの環境で推奨されるアクションについては、「Secure Score」を確認 [https://securescore.office.com](https://securescore.office.com) してください ()。  <br/>  * Microsoft 365 セキュリティセンター、Cloud App Security、および SIEM ツールで定期的にダッシュボードとレポートを確認してください。 <br/> * ソフトウェア更新プログラムを検索して実装します。 <br/> * [アタックシミュレータ](attack-simulator.md) を使用して、スピアーフィッシング、パスワードスプレー、ブルートフォースパスワード攻撃に対する攻撃のシミュレーションを行います ( [Office 365 の脅威インテリジェンス](office-365-ti.md)に含まれています)。  <br/> * Cloud App Security ([調査] タブ) の組み込みレポートを確認して、共有のリスクを探します。 <br/> * お客様の組織に適用される規制の状態を確認するには、 [コンプライアンスマネージャー](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) に確認してください (GDPR、NIST 800-171 など)。|
 |脅威保護| 管理者アカウントの強化された保護を実装します。 <br/> * 管理者アクティビティ用に [特権アクセスワークステーション](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAWs) を構成します。 <br/> * [AZURE AD 特権 Id 管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)を構成します。 <br/> * セキュリティ情報およびイベント管理 (SIEM) ツールを構成して、Office 365、Cloud App Security、およびその他のサービス (AD FS を含む) からログデータを収集します。 監査ログには、90日のみのデータが格納されます。 このデータを SIEM ツールで取得すると、長期間にデータを格納することができます。|
-|ID およびアクセス管理|* すべてのユーザーに対して MFA を有効にし、適用します。 <br/> * [条件付きアクセスと関連ポリシー](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)のセットを実装します。 |
+|ID およびアクセス管理|* すべてのユーザーに対して MFA を有効にし、適用します。 <br/> * [条件付きアクセスと関連ポリシー](microsoft-365-policies-configurations.md)のセットを実装します。 |
 |情報保護| 情報保護ポリシーを調整して実装します。 これらのリソースには例があります。 <br/> * [GDPR の Office 365 情報保護](https://aka.ms/o365gdpr) <br/> * [3層の保護を使用して Teams を構成する](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> Microsoft 365 のデータ損失防止ポリシーおよび監視ツールを使用して、Microsoft 365 に保存されたデータ (Cloud App Security ではない) を使用します。 <br><br>高度な警告機能 (データ損失防止) については、Microsoft 365 で Cloud App Security を使用します。|
 |
 

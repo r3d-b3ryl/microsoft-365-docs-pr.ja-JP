@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522279"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399399"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>Sail オーバーする可能性があるセキュリティ上の課題-1 つのアーキテクトの視点
 
-この記事では、Microsoft の Cybersecurity アーキテクト[Garrett](https://www.linkedin.com/in/kozeta-garrett-53013a6/)について説明し、企業組織で発生する主なセキュリティ上の課題とこれらの問題を sailing するためのアプローチを推奨します。 
+この記事では、Microsoft の Cybersecurity アーキテクト [Garrett](https://www.linkedin.com/in/kozeta-garrett-53013a6/)について説明し、企業組織で発生する主なセキュリティ上の課題とこれらの問題を sailing するためのアプローチを推奨します。 
 
 ## <a name="about-the-author"></a>筆者について
 
@@ -49,7 +49,7 @@ Microsoft では、組織がセキュリティ上の姿勢をすぐに向上さ�
 
 次に、ゼロ信頼アーキテクチャアプローチを採用します。 これは、id ベースのモダンセキュリティ境界を作成することから始まります。 オンプレミスまたはクラウドのすべてのアクセス試行が信頼されているかどうかを確認するセキュリティアーキテクチャを設計します。「信頼しない」、「常に確認」というようにします。 この設計方法によって、セキュリティと生産性が向上するだけでなく、ユーザーが任意のデバイスタイプを使用してどこからでも作業できるようになります。 Microsoft 365 に含まれる洗練されたクラウドコントロールは、ユーザーの id を保護し、ユーザーのリスクレベルに基づいて貴重なリソースへのアクセスを制御するのに役立ちます。
 
-推奨される構成については、「 [id とデバイスのアクセス構成](../enterprise/microsoft-365-policies-configurations.md)」を参照してください。 
+推奨される構成については、「 [id とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。 
 
 ## <a name="transition-security-controls-to-the-cloud"></a>セキュリティ制御をクラウドに移行する
 
@@ -77,7 +77,7 @@ Cybersecurity のバックグラウンドと経験が長いため、すぐに使
 これらの問題を明確にするために、Microsoft では、セキュリティ戦略と実装に対して系統的なアプローチを実現するために設計されたいくつかのリソースを合わせしています。 
 
 
-|Resource   |詳細情報  |
+|リソース   |詳細情報  |
 |---------|---------|
 |[自宅での作業をサポートするセキュリティ チームの主なタスク](../security/top-security-tasks-for-remote-work.md)      | 在宅勤務中の労働者を突然サポートしている場合は、この記事を参考にして、セキュリティを迅速に向上させることができます。 ライセンスプランに基づく上位の推奨タスクが含まれています。    |
 |[Microsoft 365 のビジネス上の意思決定者向けのセキュリティ](../security/Microsoft-365-security-for-bdm.md)    | より包括的な計画のための時間がある場合、この記事には、Microsoft 365 にまたがる推奨事項と、攻撃の範囲による優先順位が設定されています。 また、ライセンスとエリア (id、脅威の保護、監視など) での並べ替えに使用できるスプレッドシートも付属しています。  |

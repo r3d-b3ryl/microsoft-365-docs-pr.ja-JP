@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 非推奨のデスクトップ展開センターと同等のリソースにアクセスする方法。
-ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 1b930bae76c510108556947977aa1393ae9bd86b
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898018"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398833"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>デスクトップ展開センター (非推奨)
 
@@ -27,9 +27,9 @@ ms.locfileid: "46898018"
 これらのリソースを使用してモダンデスクトップを展開します。
 
 - [Windows 10 の展開](https://docs.microsoft.com/windows/deployment/)
-- [Microsoft 365 アプリを展開する](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+- [Microsoft 365 Apps の展開](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
-- [ID とデバイスのアクセス ポリシー](microsoft-365-policies-configurations.md)
+- [ID とデバイスのアクセス ポリシー](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 [Microsoft の力学から、デスクトップ展開シリーズのビデオ](https://www.aka.ms/watchhowtoshift)を表示することもできます。
 

@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c6e973e05f9a73736410c9bfedfa2ef73bb583ce
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377403"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399351"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を構成する
 
@@ -40,13 +40,13 @@ Microsoft は、すべての SaaS アプリケーション (特に Microsoft 365
 
 ![ベースライン保護を展開するためのプロセス](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Azure Id 保護を含む、前提条件を構成](../enterprise/identity-access-prerequisites.md)します。
-2. ベースライン保護用の[一般的な id およびデバイスアクセスポリシーを構成](../enterprise/identity-access-policies.md)します。
-3. [ゲストユーザー](../enterprise/identity-access-policies-guest-access.md)、 [Microsoft Teams](../enterprise/teams-access-policies.md)、 [Exchange Online](../enterprise/secure-email-recommended-policies.md)、および[SharePoint online と OneDrive](../enterprise/sharepoint-file-access-policies.md)のポリシーを構成します。
+1. [Azure Id 保護を含む、前提条件を構成](../security/office-365-security/identity-access-prerequisites.md)します。
+2. ベースライン保護用の[一般的な id およびデバイスアクセスポリシーを構成](../security/office-365-security/identity-access-policies.md)します。
+3. [ゲストユーザー](../security/office-365-security/identity-access-policies-guest-access.md)、 [Microsoft Teams](../security/office-365-security/teams-access-policies.md)、 [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)、および[SharePoint online と OneDrive](../security/office-365-security/sharepoint-file-access-policies.md)のポリシーを構成します。
 
 ### <a name="more-information-about-protecting-identities"></a>Id の保護に関する詳細情報
 
-- [ID とデバイスのアクセス構成](../enterprise/microsoft-365-policies-configurations.md)
+- [ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Azure MFA のセキュリティガイダンス](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>手順 2: Azure Advanced Threat Protection を構成する

@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 のロードマップ情報。
-ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357832"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398773"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の ID ロードマップ
 
@@ -60,10 +60,10 @@ Id の実装を展開するには、次のようにします。
 
 ### <a name="identity-and-device-access-recommendations"></a>ID とデバイスのアクセスに関する推奨事項
 
-セキュリティで保護された生産性の高い労働力を確保するために、Microsoft は [id とデバイスへのアクセス](microsoft-365-policies-configurations.md)に関する推奨事項のセットを提供しています。 Identity の場合は、以下の記事の推奨事項と設定を使用します。
+セキュリティで保護された生産性の高い労働力を確保するために、Microsoft は [id とデバイスへのアクセス](../security/office-365-security/microsoft-365-policies-configurations.md)に関する推奨事項のセットを提供しています。 Identity の場合は、以下の記事の推奨事項と設定を使用します。
 
-- [前提条件](identity-access-prerequisites.md)
-- [共通 ID とデバイスのアクセス ポリシー](identity-access-policies.md)
+- [前提条件](../security/office-365-security/identity-access-prerequisites.md)
+- [共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>管理
 
