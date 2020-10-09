@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: このランディングページには、Office 365 のセキュリティとコンプライアンスのリンクと計画に関する情報が記載されています。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086658"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399036"
 ---
 # <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを計画する &amp;
 
@@ -46,7 +46,7 @@ Microsoft 365 データおよびサービスへのアクセスを保護するこ
   
 - [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
     
-- [セキュリティで保護された電子メールポリシーと構成](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [セキュリティで保護された電子メールポリシーと構成](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -70,9 +70,9 @@ Microsoft 365 データおよびサービスへのアクセスを保護するこ
 
 これらの推奨される構成は、エンタープライズ規模または洗練されたアクセスセキュリティシナリオの開始点として使用します。
   
-- [セキュリティで保護された電子メールポリシーと構成](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [セキュリティで保護された電子メールポリシーと構成](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Microsoft Cloud の Contoso](https://aka.ms/cloudarchcontoso)
+- [Microsoft Cloud の Contoso](../enterprise/contoso-case-study.md)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理センターとダッシュボード
 

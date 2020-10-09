@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df78fb05c9f7ed942b532231074ba5188be38be5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8c3786a6a9bf93b3aaf2970d97fd57cc225e2ee8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198964"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398682"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -55,7 +55,7 @@ GDPR では、欧州連合 (EU) 内の人々に商品やサービスを提供す
 |**領域**|**タスク**|
 |:-----|:-----|
 | **Microsoft 365 データ ガバナンスとコンプライアンスの機能を使用してコンプライアンス要件の実装を開始します。** |• [Microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)内の [Microsoft コンプライアンス マネージャー](compliance-manager.md)を使用して、GDPR コンプライアンスを管理します。<br>* Exchange メール、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループの分類スキーマと関連する Office 365 ラベルを使用して、ユーザーが GDPR で定義されているとおりに個人データを識別および分類できるようにします。 「[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)」を参照してください。|
-| **Microsoft 365 のセキュリティ機能を使用して、データ侵害を防止し、個人データの保護を実装します。** |* すべてのユーザー アカウントに対して[多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)を有効にし、すべてのアプリに対して[先進認証](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)を有効にすることで、Microsoft Cloud の管理者とエンド ユーザーの認証を改善します。 推奨されるポリシー構成については、「[ID とデバイスのアクセス構成](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)」を参照してください。<br>* 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) を展開します。<br>* すべての Exchange メールボックスに対して [監査ログ記録](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)と[メールボックス監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)を有効にして、潜在的な悪意のあるアクティビティを監視し、データ侵害のフォレンジック分析を可能にします。<br>* 金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)するための [Office 365 Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) ポリシーを構成、テスト、展開します。<br>* [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (ATP) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
+| **Microsoft 365 のセキュリティ機能を使用して、データ侵害を防止し、個人データの保護を実装します。** |* すべてのユーザー アカウントに対して[多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)を有効にし、すべてのアプリに対して[先進認証](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)を有効にすることで、Microsoft Cloud の管理者とエンド ユーザーの認証を改善します。 推奨されるポリシー構成については、「[ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。<br>* 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) を展開します。<br>* すべての Exchange メールボックスに対して [監査ログ記録](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)と[メールボックス監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)を有効にして、潜在的な悪意のあるアクティビティを監視し、データ侵害のフォレンジック分析を可能にします。<br>* 金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)するための [Office 365 Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) ポリシーを構成、テスト、展開します。<br>* [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (ATP) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 日以上 — 継続的なセキュリティ、データ管理、および報告
 
@@ -63,7 +63,7 @@ GDPR では、欧州連合 (EU) 内の人々に商品やサービスを提供す
 
 |**領域**|**タスク**|
 |:-----|:-----|
-| **Microsoft 365 の高度なデータ ガバナンス ツールと情報保護を使用して、個人データの継続的な管理プログラムを実装します。** |* [Office 365 アドバンスト データ ガバナンス](https://docs.microsoft.com/microsoft-365/compliance/apply-labels-to-personal-data-in-office-365)を使用して、Office 365 ラベルを自動的に適用することによって、ドキュメントおよびメール内の個人情報を特定します。<br>* Microsoft Intune を展開することにより、組織全体のデバイスに保存された個人データを保護します。<br>* Microsoft Intune を使用して [AAD 条件付きアクセス ポリシー](https://docs.microsoft.com/intune/conditional-access)を実装し、社内ポリシーに従って機密の個人情報を確実に保存しアクセスするようにします。 推奨されるポリシー構成については、「[ID とデバイスのアクセス構成](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)」を参照してください。<br>* Office 365 ラベル、アドバンスト データ ガバナンス、保持ポリシーを使用してデータ保持ポリシーを実装して、法的に必要な期間だけ個人データを保持します。|
+| **Microsoft 365 の高度なデータ ガバナンス ツールと情報保護を使用して、個人データの継続的な管理プログラムを実装します。** |* [Office 365 アドバンスト データ ガバナンス](https://docs.microsoft.com/microsoft-365/compliance/apply-labels-to-personal-data-in-office-365)を使用して、Office 365 ラベルを自動的に適用することによって、ドキュメントおよびメール内の個人情報を特定します。<br>* Microsoft Intune を展開することにより、組織全体のデバイスに保存された個人データを保護します。<br>* Microsoft Intune を使用して [AAD 条件付きアクセス ポリシー](https://docs.microsoft.com/intune/conditional-access)を実装し、社内ポリシーに従って機密の個人情報を確実に保存しアクセスするようにします。 推奨されるポリシー構成については、「[ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。<br>* Office 365 ラベル、アドバンスト データ ガバナンス、保持ポリシーを使用してデータ保持ポリシーを実装して、法的に必要な期間だけ個人データを保持します。|
 | **Microsoft 365 やその他のクラウド アプリケーション間で継続的にコンプライアンスに合致しているか監視します。EU の個人データのデータ所在地要件に対処することを検討してください。** |* [Office 365 アラート ポリシー、データ損失防止レポート、Microsoft Cloud App Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data) を使用して、クラウド アプリケーションの使用状況を監視し、ヒューリスティックおよびユーザー アクティビティに基づいて高度なアラート ポリシーを実装します。<br>* 組織、地域、ローカルのデータ所在地要件に対処しつつ、[Exchange Online メールボックス](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-capabilities-in-exchange-online)、[OneDrive for Business サイト、SharePoint Online サイト](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365)に Microsoft の複数地域機能を使用することで 1 つのグローバル組織として構成します。|
 
 ## <a name="learn-more"></a>詳細情報

@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341414"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399502"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信コンプライアンスを使用して開始する
 
@@ -57,7 +57,7 @@ ms.locfileid: "48341414"
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>手順 1 (必須): 通信のコンプライアンスのためのアクセス許可を有効にする
 
 >[!Important]
->既定では、全体管理者は通信コンプライアンス機能にアクセスできません。 この手順で割り当てられる役割は、通信コンプライアンス機能がアクセス可能になる前に必要です。
+>既定では、全体管理者は通信コンプライアンス機能にアクセスできません。 この手順で割り当てられる役割は、通信コンプライアンス機能がアクセス可能になる前に必要です。 役割グループを構成した後、組織全体で割り当てられているユーザーに役割グループのアクセス許可が適用されるまで、最大で30分かかる場合があります。
 
 通信コンプライアンス機能を管理するためのアクセス許可を構成するために使用される、5つの役割グループがあります。 Microsoft 365 コンプライアンスセンターのメニューオプションとして **通信のコンプライアンス** を可能にし、これらの構成手順を続行するには、 *コミュニケーションコンプライアンス* または *通信コンプライアンス管理者* 役割グループに割り当てられている必要があります。 初期構成後に通信コンプライアンス機能にアクセスして管理するには、ユーザーは少なくとも1つの通信コンプライアンス役割グループのメンバーである必要があります。
 

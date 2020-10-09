@@ -10,18 +10,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-aed
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: この記事では、Microsoft 365 でアドバンスト電子情報開示の使用を開始する方法について説明します。 いくつかの簡単な手順を完了したら、Advanced eDiscovery ツールを使用する準備ができました。 最初の手順として、ケースを作成し、高度な電子情報開示の機能と機能の使用を開始します。
-ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 64c8681a47c21a7a6bfa9d67677405f74d75a96f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405423"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398496"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>Advanced eDiscoveryを開始する
 

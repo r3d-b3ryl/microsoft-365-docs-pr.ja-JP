@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416801"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398486"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>GDPR のための情報保護と Microsoft 365 の機能
 
@@ -49,7 +49,7 @@ Azure Active Directory とその他の Microsoft 365 機能は、ID やデバイ
 
 Microsoft は、開始点として使用できる推奨設定を提供しています。
 
-- [ID とデバイスのアクセス構成](../enterprise/microsoft-365-policies-configurations.md): 3 層保護 (ベースライン、機密、高度な規制) を実現する推奨ポリシー構成。このガイダンスでは、Exchange Online および SharePoint Online (OneDrive for Business を含む) のための推奨ポリシーを記載します。
+- [ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md): 3 層保護 (ベースライン、機密、高度な規制) を実現する推奨ポリシー構成。このガイダンスでは、Exchange Online および SharePoint Online (OneDrive for Business を含む) のための推奨ポリシーを記載します。
 - [政治キャンペーン、非営利団体、その他のアジャイル組織のセキュリティに関するガイダンス](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o): これには同じポリシーのセットが含まれていますが、BYOD 環境と B2B アカウントのための追加のガイダンスを提供します。
 
 ## <a name="threat-protection"></a>脅威保護

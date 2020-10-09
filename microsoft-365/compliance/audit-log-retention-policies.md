@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dba14d5a4132bc9c883c531ceeb83a2a8ff3c6cd
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199541"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398728"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -82,8 +82,6 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
    6. **ポリシー:** この値は、組織内の監査ログの保持ポリシーが処理される順序を決定します。 値が高いほど、高い優先度を示します。 たとえば、優先度の値が **5** のポリシーは、優先度の値が **0** のポリシーよりも優先されます。 前述のとおり、カスタム監査ログの保持ポリシーは、組織の既定ポリシーよりも優先されます。
 
 4. [**保存**] をクリックして新しい監査ログの保持ポリシーを作成します。
-
-新しい監査保持ポリシーは、[**監査保持ポリシー**] タブに一覧表示されています。
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>PowerShell で監査ログの保持ポリシーを作成する
 

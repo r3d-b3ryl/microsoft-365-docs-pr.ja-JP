@@ -12,16 +12,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-audit
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: bd92d8d471af07d6be252390f0be0764e6b320f7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c63280825c04d401c0cdc44d7128031c3b7ffdd8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200323"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398558"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 

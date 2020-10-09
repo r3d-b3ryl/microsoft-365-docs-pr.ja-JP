@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4fcfec889b4b5005a172037a0df674b45a9e7281
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341435"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399172"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -47,6 +47,9 @@ Insider リスク管理ポリシーに含まれるユーザーには、上記の
 既存の Microsoft 365 Enterprise E5 プランを持っておらず、insider リスク管理を試みる場合は、既存のサブスクリプションに [microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) するか、Microsoft 365 Enterprise E5 の [試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise) してください。
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>手順 1: insider リスク管理のアクセス許可を有効にする
+
+>[!Important]
+>役割グループを構成した後、組織全体で割り当てられているユーザーに役割グループのアクセス許可が適用されるまで、最大で30分かかる場合があります。
 
 内部のリスク管理機能を管理するためのアクセス許可を構成するには、4つの役割グループが使用されます。 これらの構成手順を続行するには、テナント管理者が最初に **Insider リスク管理** または **Insider リスク管理管理者** 役割グループに割り当てる必要があります。 初期構成後に insider リスク管理機能にアクセスして管理するには、ユーザーは少なくとも1つの insider リスク管理役割グループのメンバーである必要があります。
 
