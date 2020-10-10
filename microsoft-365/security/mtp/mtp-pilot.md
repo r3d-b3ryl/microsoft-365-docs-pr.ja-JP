@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-overview
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 3d7156dfe65e9479f2505d196790800c6afd1f2a
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: af47f45ca4f3d14e835a39a334a9400002ac8560
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367967"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418075"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>パイロットの Microsoft 脅威保護プロジェクトを実行する 
 
@@ -39,7 +40,7 @@ Microsoft の脅威保護 (MTP) のメリットと導入を効果的に決定す
 
 ## <a name="how-to-use-this-pilot-playbook"></a>このパイロットプレイブックの使用方法
 
-このガイドでは、パイロットプロジェクトをセットアップする方法について、Microsoft の脅威保護とステップバイステップガイドの概要を説明します。 
+このガイドでは、パイロットプロジェクトをセットアップする方法について、Microsoft の脅威保護と詳しい手順の概要を説明します。 
 
 ![Microsoft の脅威保護パイロットを実行するフェーズ](../../media/pilotphases.png)
 

@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: この記事では、管理者は、Office 365 Advanced Threat Protection (ATP) の安全なリンク保護について学習し、悪意のある Url を使用するフィッシングやその他の攻撃から組織を保護することができます。
-ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 7b10a941d63fd654a61c6d6ec78869f4bafb3edd
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414120"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417269"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Office 365 ATP の安全なリンク
 
@@ -150,7 +150,7 @@ ms.locfileid: "48414120"
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Microsoft Teams の安全なリンクの設定
 
 > [!IMPORTANT]
-> この機能は2020年3月に公開されており、Microsoft Teams テクノロジ導入プログラム (タップ) のメンバーのみが利用できます。
+> この機能は2020年3月に公開されており、Microsoft Teams テクノロジ導入プログラム (タップ) のメンバーのみが利用できます。 リリーススケジュールの詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)をご覧ください。
 
 「安全なリンク」ポリシーで、Microsoft Teams の安全なリンク保護を有効または無効にします。 具体的には、 **[Microsoft Teams 内の不明または悪意のある url に対し** て、このアクションを選択する] 設定を使用します。 推奨値は **On**です。
 

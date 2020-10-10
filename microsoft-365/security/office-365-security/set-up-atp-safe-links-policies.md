@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 Advanced Threat Protection (ATP) での安全なリンクポリシーおよびグローバルな安全リンクの設定を表示、作成、変更、および削除する方法を学習できます。
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350721"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417254"
 ---
 # <a name="set-up-safe-links-policies-in-office-365-atp"></a>Office 365 ATP で安全なリンクに関するポリシーを設定する
 
@@ -88,9 +88,9 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 4. 表示される [ **設定** ] ページで、次の設定を構成します。
 
-   - [**メッセージ内の不明な悪意のある url に対するアクション** **:] を**選択します。
+   - [**メッセージ内の不明な悪意のある url に対するアクション]**: [**オン] を選択して**、電子メールメッセージ内のリンクの安全なリンク保護を有効にします。
 
-   - [**メッセージ内の不明な悪意のある url に対するアクション** **: オン] または**[既定値を選択] のまま**にします**。
+   - [ **Microsoft teams 内の不明または悪意のある url に対するアクション]**: [**オン] を**選択して、Teams 内のリンクの安全なリンク保護を有効にします。
 
    - [**ファイルを参照する不審なリンクおよびリンクのリアルタイム URL スキャンを適用**する]: 電子メールメッセージ内のリンクをリアルタイムでスキャンできるようにするには、この設定を選択します。
 

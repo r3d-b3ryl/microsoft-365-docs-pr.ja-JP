@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec8e630c3669b3eb7af8cb012a0ca361f8c77f1e
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368015"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418099"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Microsoft の脅威保護パイロットの終了および概要  
 
@@ -76,7 +77,7 @@ ms.locfileid: "48368015"
 
 現在、決算フェーズと要約段階になっています。
 
-ドメインコントローラーでリモートでコードを実行する、高度なメモリのみ攻撃をシミュレートしています。 Stealthy 悪意のあるアクティビティについて、Microsoft Defender ATP および Azure ATP が検出し、通知する方法を確認しました。 また、Microsoft 365 セキュリティセンターポータルでは、さまざまなソースからのアラートが他のコンテキスト情報と共に1つのインシデントに配信され、SOC アナリストが調査して必要なアクションを実行できるようにしています。 また、ユーザーが添付ファイルを開いたときや保存したときに、そのクエリに基づいて検出を作成した受信メールを識別する高度な検索クエリも作成されています。
+ドメインコントローラー上でコードをリモートで実行する、高度なメモリのみのアタックシミュレーションが実行されました。 Microsoft Defender ATP と Azure ATP が stealthy 悪意のあるアクティビティについての通知を検出して作成する方法について説明してきました。 また、Microsoft 365 セキュリティセンターポータルでは、さまざまなソースからのアラートが他のコンテキスト情報と共に1つのインシデントに配信される方法についても説明してきました。 このような統合が発生すると、SOC アナリストが調査し、必要なアクションを実行できるようになります。 また、ユーザーが添付ファイルを開いたときや保存したときに、そのクエリに基づいて検出を作成した受信メールを識別する高度な検索クエリも作成されています。
 
 すべてのテストが終了した後、プロセスの最後に到達しました。
 
@@ -86,9 +87,9 @@ ms.locfileid: "48368015"
 - パイロットの結果についての詳細なレポート
 - 前方へ移動する方法の決定
 
-この情報は、社内関係者 ( [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 段階で特定したもの) と Microsoft の連絡先の両方に提供する必要があります。 これにより、すべてのフィードバックを使用して製品とドキュメントを向上させることができます。
+最終出力からのレポート ( [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) フェーズで識別した) と Microsoft の連絡先の両方を提示します。 このような作業により、製品やドキュメントを改善するためにフィードバックを確実に使用できるようになります。
 
-このシミュレーションを楽しんでいただき、学んだことを実装し始めることをお勧めします。
+このシミュレーションを楽しんでいただければ幸いです。 組織内の大規模なスケールで学んだ内容の実装を開始して、統合セキュリティソリューションを最大限に活用してください。
 
 ## <a name="next-step"></a>次のステップ
 Microsoft Threat Protection の柱の詳細については、次の対話型のガイドを参照してください。

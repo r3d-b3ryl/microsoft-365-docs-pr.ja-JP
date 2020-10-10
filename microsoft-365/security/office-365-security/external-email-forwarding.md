@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202881"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417230"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Office 365 で外部電子メール転送を構成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202881"
 
 外部転送は、発信の *スパム対策ポリシー* によって制御され、構成された設定に基づいてユーザーのスコープを設定します。 現在、3つの設定がサポートされています。
 
-- **Automatic** -このモードでは、転送されたメッセージが許可されているかどうかをシステムが判断します。  これは既定のモードで、このモードでは、システムによって自動的に外部転送がブロックされます。
+- **自動** : これはシステムで制御されます。送信スパムフィルターを使用して、外部電子メールの自動転送を制御することができます。 これは、既定の設定です。
 
 - **オン** -自動外部転送が許可されていて、制限されていません。
 
@@ -37,7 +37,7 @@ ms.locfileid: "48202881"
 これらの設定を構成する方法の詳細については、「 [EOP で送信スパムフィルターを構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) する」を参照してください。
 
 > [!NOTE]
-> また、自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルールも可能になります。
+> また、自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルールも無効になります。
 
 ## <a name="controlling-external-email-forwarding"></a>外部メール転送を制御する
 

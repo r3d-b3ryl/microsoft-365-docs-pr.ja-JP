@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 ATP Plan 2 でユーザータグを使用して特定のユーザーグループを特定する方法について説明します。 タグフィルターは、Office 365 ATP のアラート、レポート、および調査に対して利用でき、タグ付きユーザーをすばやく識別できます。
-ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399387"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417278"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Office 365 ATP のユーザー タグ
+
+> [!NOTE]
+> ユーザータグ機能はプレビューでは、すべてのユーザーが利用できるわけではなく、変更される可能性があります。 リリーススケジュールの詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)をご覧ください。
 
 ユーザータグは、 [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md)のユーザーグループの識別子です。 ユーザータグには、次の2種類があります。
 

@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: e62b4ec0ee6c9d05321accf269406e8127019f5b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367979"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418111"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>パイロット Microsoft の脅威保護プロジェクトを計画する 
 
@@ -39,7 +40,7 @@ ms.locfileid: "48367979"
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
         <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="パイロットを計画する Microsoft の脅威保護プロジェクト" />
-      <br/>プラン</a><br>
+      <br/>計画</a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
@@ -119,7 +120,7 @@ ms.locfileid: "48367979"
 
 プランのすべての要素をまとめる1つの方法は、スコアカードを作成することです。 以下のサンプルスコアカードを参照してください。
 
-|**ユースケース**|**要件**|**構成要件**|**テスト計画**|**予想結果**|**テストの状態**|**スコア**|**注**|
+| ユースケース | 要件 | 構成要件 | テスト計画 | 予想結果 | テストの状態 | スコア | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |インシデント管理|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
 |自動赤外線|-Microsoft の脅威保護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |通知とインシデントは、Microsoft の脅威保護によって自動的に修復されます。||||

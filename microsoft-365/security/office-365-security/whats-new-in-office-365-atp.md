@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413260"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417293"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -47,7 +47,8 @@ ms.locfileid: "48413260"
 - [テナントの許可/ブロックリストを使用してフィルター verdicts を手動で上書きする](tenant-allow-block-list.md)
 - [上位の対象ユーザー、トランスポートルール、コネクタを含む脅威エクスプローラーの拡張機能](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP Plan 2)
 - [脅威エクスプローラー](threat-explorer.md)での提示情報 (電子メールは、テナント/ユーザーポリシーによって許可/ブロックされました)
-- [脅威エクスプローラー](threat-explorer.md)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none) 
+- [脅威エクスプローラー](threat-explorer.md#threats-in-urls)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none) 
+- 脅威、追加の操作、配信場所、更新されたタイムラインビューを中心とした更新による、探している[脅威エクスプローラーの機能強化](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming)
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 

