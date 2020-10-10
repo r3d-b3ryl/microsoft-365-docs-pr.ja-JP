@@ -15,50 +15,52 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 78878593e345cd6744af54b54356ab7de9864ccf
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d8858fe9acd8183ad0d8644a9d5e4d70d32990a6
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196999"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413224"
 ---
-# <a name="devicetvmsoftwareinventoryvulnerabilities"></a><span data-ttu-id="c5c88-104">DeviceTvmSoftwareInventoryVulnerabilities</span><span class="sxs-lookup"><span data-stu-id="c5c88-104">DeviceTvmSoftwareInventoryVulnerabilities</span></span>
+# <a name="devicetvmsoftwareinventoryvulnerabilities"></a><span data-ttu-id="7988a-104">DeviceTvmSoftwareInventoryVulnerabilities</span><span class="sxs-lookup"><span data-stu-id="7988a-104">DeviceTvmSoftwareInventoryVulnerabilities</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="c5c88-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="c5c88-105">**Applies to:**</span></span>
-- <span data-ttu-id="c5c88-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="c5c88-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="7988a-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="7988a-105">**Applies to:**</span></span>
+- <span data-ttu-id="7988a-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="7988a-106">Microsoft Threat Protection</span></span>
 
 
 
-<span data-ttu-id="c5c88-107">高度な検索スキーマの `DeviceTvmSoftwareInventoryVulnerabilities` のテーブルには、お使いのデバイス上のソフトウェアの [ の脅威および脆弱性管理 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) のインベントリと、これらのソフトウェア製品の既知の脆弱性に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="c5c88-107">The `DeviceTvmSoftwareInventoryVulnerabilities` table in the advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products.</span></span> <span data-ttu-id="c5c88-108">このテーブルには、オペレーティング システム情報、CVE ID、および脆弱性の重要度の情報も含まれます。</span><span class="sxs-lookup"><span data-stu-id="c5c88-108">This table also includes operating system information, CVE IDs, and vulnerability severity information.</span></span> <span data-ttu-id="c5c88-109">このテーブルの情報を返すクエリを作成するには、この参照を使用できます。</span><span class="sxs-lookup"><span data-stu-id="c5c88-109">Use this reference to construct queries that return information from the table.</span></span>
+<span data-ttu-id="7988a-107">高度な検索スキーマの `DeviceTvmSoftwareInventoryVulnerabilities` のテーブルには、お使いのデバイス上のソフトウェアの [ の脅威および脆弱性管理 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) のインベントリと、これらのソフトウェア製品の既知の脆弱性に関する情報が含まれています。</span><span class="sxs-lookup"><span data-stu-id="7988a-107">The `DeviceTvmSoftwareInventoryVulnerabilities` table in the advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products.</span></span> <span data-ttu-id="7988a-108">このテーブルには、オペレーティング システム情報、CVE ID、および脆弱性の重要度の情報も含まれます。</span><span class="sxs-lookup"><span data-stu-id="7988a-108">This table also includes operating system information, CVE IDs, and vulnerability severity information.</span></span> <span data-ttu-id="7988a-109">このテーブルの情報を返すクエリを作成するには、この参照を使用できます。</span><span class="sxs-lookup"><span data-stu-id="7988a-109">Use this reference to construct queries that return information from the table.</span></span>
 
-<span data-ttu-id="c5c88-110">高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="c5c88-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="7988a-110">高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。</span><span class="sxs-lookup"><span data-stu-id="7988a-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="c5c88-111">列名</span><span class="sxs-lookup"><span data-stu-id="c5c88-111">Column name</span></span> | <span data-ttu-id="c5c88-112">データ型</span><span class="sxs-lookup"><span data-stu-id="c5c88-112">Data type</span></span> | <span data-ttu-id="c5c88-113">説明</span><span class="sxs-lookup"><span data-stu-id="c5c88-113">Description</span></span> |
+| <span data-ttu-id="7988a-111">列名</span><span class="sxs-lookup"><span data-stu-id="7988a-111">Column name</span></span> | <span data-ttu-id="7988a-112">データ型</span><span class="sxs-lookup"><span data-stu-id="7988a-112">Data type</span></span> | <span data-ttu-id="7988a-113">説明</span><span class="sxs-lookup"><span data-stu-id="7988a-113">Description</span></span> |
 |-------------|-----------|-------------|
-| `DeviceId` | <span data-ttu-id="c5c88-114">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-114">string</span></span> | <span data-ttu-id="c5c88-115">コンピューターの一意識別子</span><span class="sxs-lookup"><span data-stu-id="c5c88-115">Unique identifier for the machine in the service</span></span> |
-| `DeviceName` | <span data-ttu-id="c5c88-116">文字列</span><span class="sxs-lookup"><span data-stu-id="c5c88-116">string</span></span> | <span data-ttu-id="c5c88-117">コンピューターの完全修飾ドメイン名 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="c5c88-117">Fully qualified domain name (FQDN) of the machine</span></span> |
-| `OSPlatform` | <span data-ttu-id="c5c88-118">文字列</span><span class="sxs-lookup"><span data-stu-id="c5c88-118">string</span></span> | <span data-ttu-id="c5c88-119">コンピューターで実行されているオペレーティング システムのプラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="c5c88-119">Platform of the operating system running on the machine.</span></span> <span data-ttu-id="c5c88-120">これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。</span><span class="sxs-lookup"><span data-stu-id="c5c88-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span> |
-| `OSVersion` | <span data-ttu-id="c5c88-121">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-121">string</span></span> | <span data-ttu-id="c5c88-122">コンピューターで実行されているオペレーティング システムのバージョンです。</span><span class="sxs-lookup"><span data-stu-id="c5c88-122">Version of the operating system running on the machine</span></span> |
-| `OSArchitecture` | <span data-ttu-id="c5c88-123">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-123">string</span></span> | <span data-ttu-id="c5c88-124">コンピューターで実行されているオペレーティング システムのアーキテクチャです。</span><span class="sxs-lookup"><span data-stu-id="c5c88-124">Architecture of the operating system running on the machine</span></span> |
-| `SoftwareVendor` | <span data-ttu-id="c5c88-125">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-125">string</span></span> | <span data-ttu-id="c5c88-126">ソフトウェアベンダーの名前</span><span class="sxs-lookup"><span data-stu-id="c5c88-126">Name of the software vendor</span></span> |
-| `SoftwareName` | <span data-ttu-id="c5c88-127">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-127">string</span></span> | <span data-ttu-id="c5c88-128">ソフトウェア製品の名前</span><span class="sxs-lookup"><span data-stu-id="c5c88-128">Name of the software product</span></span> |
-| `SoftwareVersion` | <span data-ttu-id="c5c88-129">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-129">string</span></span> | <span data-ttu-id="c5c88-130">ソフトウェア製品のバージョン番号</span><span class="sxs-lookup"><span data-stu-id="c5c88-130">Version number of the software product</span></span> |
-| `CveId` | <span data-ttu-id="c5c88-131">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-131">string</span></span> | <span data-ttu-id="c5c88-132">共通脆弱性識別子 (CVE) システムでセキュリティの脆弱性に割り当てられている一意の識別子 </span><span class="sxs-lookup"><span data-stu-id="c5c88-132">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
-| `VulnerabilitySeverityLevel` | <span data-ttu-id="c5c88-133">string</span><span class="sxs-lookup"><span data-stu-id="c5c88-133">string</span></span> | <span data-ttu-id="c5c88-134">CVSS スコアと脅威の度合いの影響を受ける動的要因に基づいて、セキュリティの脆弱性に割り当てられている重大度レベル</span><span class="sxs-lookup"><span data-stu-id="c5c88-134">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
+| `DeviceId` | <span data-ttu-id="7988a-114">string</span><span class="sxs-lookup"><span data-stu-id="7988a-114">string</span></span> | <span data-ttu-id="7988a-115">コンピューターの一意識別子</span><span class="sxs-lookup"><span data-stu-id="7988a-115">Unique identifier for the machine in the service</span></span> |
+| `DeviceName` | <span data-ttu-id="7988a-116">string</span><span class="sxs-lookup"><span data-stu-id="7988a-116">string</span></span> | <span data-ttu-id="7988a-117">コンピューターの完全修飾ドメイン名 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="7988a-117">Fully qualified domain name (FQDN) of the machine</span></span> |
+| `OSPlatform` | <span data-ttu-id="7988a-118">string</span><span class="sxs-lookup"><span data-stu-id="7988a-118">string</span></span> | <span data-ttu-id="7988a-119">コンピューターで実行されているオペレーティング システムのプラットフォームです。</span><span class="sxs-lookup"><span data-stu-id="7988a-119">Platform of the operating system running on the machine.</span></span> <span data-ttu-id="7988a-120">これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。</span><span class="sxs-lookup"><span data-stu-id="7988a-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span> |
+| `OSVersion` | <span data-ttu-id="7988a-121">string</span><span class="sxs-lookup"><span data-stu-id="7988a-121">string</span></span> | <span data-ttu-id="7988a-122">コンピューターで実行されているオペレーティング システムのバージョンです。</span><span class="sxs-lookup"><span data-stu-id="7988a-122">Version of the operating system running on the machine</span></span> |
+| `OSArchitecture` | <span data-ttu-id="7988a-123">string</span><span class="sxs-lookup"><span data-stu-id="7988a-123">string</span></span> | <span data-ttu-id="7988a-124">コンピューターで実行されているオペレーティング システムのアーキテクチャです。</span><span class="sxs-lookup"><span data-stu-id="7988a-124">Architecture of the operating system running on the machine</span></span> |
+| `SoftwareVendor` | <span data-ttu-id="7988a-125">string</span><span class="sxs-lookup"><span data-stu-id="7988a-125">string</span></span> | <span data-ttu-id="7988a-126">ソフトウェアベンダーの名前</span><span class="sxs-lookup"><span data-stu-id="7988a-126">Name of the software vendor</span></span> |
+| `SoftwareName` | <span data-ttu-id="7988a-127">string</span><span class="sxs-lookup"><span data-stu-id="7988a-127">string</span></span> | <span data-ttu-id="7988a-128">ソフトウェア製品の名前</span><span class="sxs-lookup"><span data-stu-id="7988a-128">Name of the software product</span></span> |
+| `SoftwareVersion` | <span data-ttu-id="7988a-129">string</span><span class="sxs-lookup"><span data-stu-id="7988a-129">string</span></span> | <span data-ttu-id="7988a-130">ソフトウェア製品のバージョン番号</span><span class="sxs-lookup"><span data-stu-id="7988a-130">Version number of the software product</span></span> |
+| `CveId` | <span data-ttu-id="7988a-131">string</span><span class="sxs-lookup"><span data-stu-id="7988a-131">string</span></span> | <span data-ttu-id="7988a-132">共通脆弱性識別子 (CVE) システムでセキュリティの脆弱性に割り当てられている一意の識別子 </span><span class="sxs-lookup"><span data-stu-id="7988a-132">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
+| `VulnerabilitySeverityLevel` | <span data-ttu-id="7988a-133">string</span><span class="sxs-lookup"><span data-stu-id="7988a-133">string</span></span> | <span data-ttu-id="7988a-134">CVSS スコアと脅威の度合いの影響を受ける動的要因に基づいて、セキュリティの脆弱性に割り当てられている重大度レベル</span><span class="sxs-lookup"><span data-stu-id="7988a-134">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="c5c88-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="c5c88-135">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="7988a-135">関連項目</span><span class="sxs-lookup"><span data-stu-id="7988a-135">Related topics</span></span>
 
-- [<span data-ttu-id="c5c88-136">積極的に脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="c5c88-136">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="c5c88-137">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="c5c88-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="c5c88-138">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="c5c88-138">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="c5c88-139">デバイス、メール、アプリ、ID 間での捜索</span><span class="sxs-lookup"><span data-stu-id="c5c88-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="c5c88-140">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="c5c88-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="c5c88-141">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="c5c88-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
-- [<span data-ttu-id="c5c88-142">脅威および脆弱性管理の概要</span><span class="sxs-lookup"><span data-stu-id="c5c88-142">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="7988a-136">積極的に脅威を捜索する</span><span class="sxs-lookup"><span data-stu-id="7988a-136">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="7988a-137">クエリ言語の説明</span><span class="sxs-lookup"><span data-stu-id="7988a-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="7988a-138">共有クエリを使用する</span><span class="sxs-lookup"><span data-stu-id="7988a-138">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="7988a-139">デバイス、メール、アプリ、ID 間での捜索</span><span class="sxs-lookup"><span data-stu-id="7988a-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="7988a-140">スキーマを理解する</span><span class="sxs-lookup"><span data-stu-id="7988a-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="7988a-141">クエリのベスト プラクティスを適用する</span><span class="sxs-lookup"><span data-stu-id="7988a-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+- [<span data-ttu-id="7988a-142">脅威および脆弱性管理の概要</span><span class="sxs-lookup"><span data-stu-id="7988a-142">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
