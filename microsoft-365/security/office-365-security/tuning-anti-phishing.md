@@ -1,5 +1,5 @@
 ---
-title: フィッシング対策保護の調整
+title: フィッシング対策保護を調整する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -9,17 +9,20 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
+search.appverid: ''
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 - MET150
 description: 管理者は、フィッシングメッセージが Microsoft 365 でどのように表示されるのか、および今後のフィッシングメッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: ca1030141dd18797c7672b95ccae60b86fe9b7f2
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328061"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414156"
 ---
-# <a name="tune-anti-phishing-protection"></a>フィッシング対策保護の調整
+# <a name="tune-anti-phishing-protection"></a>フィッシング対策保護を調整する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

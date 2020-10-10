@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328085"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414264"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -47,9 +48,9 @@ ms.locfileid: "48328085"
 - [エクスプローラーのビューから自動化された調査と応答プロセスを開始](#start-automated-investigation-and-response) する (ATP プラン2のみ)
 - ...[悪意のある電子メールの調査など](#more-ways-to-use-explorer-or-real-time-detections)
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーおよびリアルタイム検出の機能が向上しました。
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーと Real-Time 検出の機能が向上しました。
 
-探しているプロセスの改善の一環として、脅威エクスプローラーとリアルタイム検出にいくつかの更新プログラムを適用しました。 これらの機能が向上しており、探し方がより一貫しています。 これらの変更について、以下に説明します。
+探しているプロセスの改善の一環として、脅威エクスプローラーと Real-Time 検出にいくつかの更新が加えられています。 これらの機能が向上しており、探し方がより一貫しています。 これらの変更について、以下に説明します。
 
 - [タイムゾーンの向上](#timezone-improvements)
 - [更新プロセスでの更新](#update-in-the-refresh-process)
@@ -103,7 +104,7 @@ ETR の検索と名前の可用性は、自分に割り当てられている特�
 - AAD または EXO-Security Admin: All
 - AAD または EXO-Security Reader: All
 - EXO Only-トランスポートルール: すべて
-- EXO Only-表示のみの構成: すべて
+- EXO Only-View-Only 構成: すべて
 
 次に示すように、電子メールグリッド、詳細ポップアップ、およびエクスポートされた CSV 内で、Etr に Name/GUID が表示されます。
 

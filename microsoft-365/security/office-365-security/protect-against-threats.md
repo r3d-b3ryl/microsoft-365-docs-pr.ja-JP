@@ -16,14 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: 管理者は、Microsoft 365 の脅威保護について学習し、組織での使用方法を構成することができます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bb28decf459035c238c61b12f65abf45128e527c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326557"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413592"
 ---
 # <a name="protect-against-threats"></a>脅威から保護する
 
@@ -35,7 +36,7 @@ Advanced Threat Protection の構成をチャンクに分割するクイック�
 > [!IMPORTANT]
 > **ポリシーの種類ごとに最初に推奨される設定が含まれています。ただし、多くのオプションを使用できます。また、特定の組織のニーズに合わせて設定を調整することもでき**ます。 使用しているポリシーまたは変更がデータセンターによって処理されるまで約30分間待機します。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 ### <a name="subscriptions"></a>サブスクリプション
 
@@ -206,7 +207,7 @@ ATP ポリシーを構成するには、 [セキュリティ & コンプライ�
 
 5. 設定内容を確認し、[ **完了**] をクリックします。
 
-詳細については、「 [安全なリンクポリシーをセットアップ](set-up-atp-safe-links-policies.md)する」を参照してください。
+詳細については、「[安全なリンク ポリシーを設定する](set-up-atp-safe-links-policies.md)」をご覧ください。
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>パート 5-SharePoint、OneDrive、Microsoft Teams の ATP が有効になっていることを確認する
 
@@ -245,9 +246,9 @@ SharePoint Online、OneDrive for Business、または Microsoft Teams のファ�
 
 5. [ **この通知を送信するタイミング** ] セクションで、次のように設定します。
 
-   a.  [ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。
+   a. [ **アクティビティ** ] リストで、[ **検出されたマルウェア (ファイル内**)] を選択します。
 
-   b.  [ **ユーザー** ] フィールドは空のままにします。
+   b. [ **ユーザー** ] フィールドは空のままにします。
 
 6. [ **この通知を送信する** ユーザー...] セクションで、悪意のあるファイルが検出されたときに通知を受信する必要がある1つ以上のグローバル管理者、セキュリティ管理者、またはセキュリティ閲覧者を選択します。
 

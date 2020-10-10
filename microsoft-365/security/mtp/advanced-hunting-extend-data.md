@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 66e978b28f03e30cc2157aae2508874b73b01a40
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 39beff1ea5e983af53cdb954783c11f13569a022
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197979"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413952"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>高度な検索範囲を適切な設定で拡張する
 
