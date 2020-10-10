@@ -14,15 +14,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターの送信ポータルを使用して、疑わしいメール、疑わしいフィッシングメール、スパム、その他の潜在的な有害なメッセージ、Url、およびその他の潜在的な問題を報告する方法について説明します。
-ms.openlocfilehash: 85251e82166279c25f009728dd5e5f0ff3c3f2ea
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5165761b96eefe85437743968502dada51bc297f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201257"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412024"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -203,7 +204,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 フィルター条件を変更するには、[ **送信者** ] ボタンをクリックし、次のいずれかの値を選択します。
 
 - **送信元ドメイン**
-- **[件名]**
+- **Subject**
 - **提出者**
 - **送信の種類**
 - [**Sender IP (送信者の IP)**]

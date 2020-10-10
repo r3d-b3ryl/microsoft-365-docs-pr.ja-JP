@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 3b2459d0d90f6160bcbac7efbb5c0cc0683ae8c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d6650a36d07427df6148d43894cc8aaa845faf05
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196811"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412708"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -42,28 +44,28 @@ ms.locfileid: "48196811"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
-| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
-| `QueryType` | 文字列 | クエリの種類 (QueryGroup、Querygroup、EnumerateUsers など) |
-| `QueryTarget` | 文字列 | ユーザー、グループ、デバイス、ドメイン、またはその他のクエリ対象のエンティティ型の名前 |
-| `Query` | 文字列 | クエリの実行に使用される文字列 |
-| `Protocol` | 文字列 | 通信中に使用されるプロトコル |
-| `AccountName` | 文字列 | アカウントのユーザー名 |
-| `AccountDomain` | 文字列 | アカウントのドメイン |
-| `AccountUpn` | 文字列 | アカウントのユーザープリンシパル名 (UPN) |
-| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | 文字列 | Azure AD でのアカウントの一意識別子 |
-| `AccountDisplayName` | 文字列 | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
-| `DeviceName` | 文字列 | エンドポイントの完全修飾ドメイン名 (FQDN) |
-| `IPAddress` | 文字列 | エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス |
-| `DestinationDeviceName` | 文字列 | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
-| `DestinationIPAddress` | 文字列 | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
-| `TargetDeviceName` | 文字列 | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
-| `TargetAccountUpn` | 文字列 | 記録されたアクションが適用されたアカウントのユーザープリンシパル名 (UPN) |
-| `TargetAccountDisplayName` | 文字列 | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
-| `Location` | 文字列 | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `Application` | string | 記録されたアクションを実行したアプリケーション |
+| `QueryType` | string | クエリの種類 (QueryGroup、Querygroup、EnumerateUsers など) |
+| `QueryTarget` | string | ユーザー、グループ、デバイス、ドメイン、またはその他のクエリ対象のエンティティ型の名前 |
+| `Query` | string | クエリの実行に使用される文字列 |
+| `Protocol` | string | 通信中に使用されるプロトコル |
+| `AccountName` | string | アカウントのユーザー名 |
+| `AccountDomain` | string | アカウントのドメイン |
+| `AccountUpn` | string | アカウントのユーザープリンシパル名 (UPN) |
+| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
+| `AccountObjectId` | string | Azure AD でのアカウントの一意識別子 |
+| `AccountDisplayName` | string | アドレス帳に表示されるアカウントユーザーの名前。 通常、指定された名前または名、ミドルネーム、姓の組み合わせです。 |
+| `DeviceName` | string | エンドポイントの完全修飾ドメイン名 (FQDN) |
+| `IPAddress` | string | エンドポイントに割り当てられ、関連するネットワーク通信中に使用される IP アドレス |
+| `DestinationDeviceName` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの名前 |
+| `DestinationIPAddress` | string | 記録されたアクションを処理したサーバーアプリケーションを実行しているデバイスの IP アドレス |
+| `TargetDeviceName` | string | 記録されたアクションが適用されたデバイスの完全修飾ドメイン名 (FQDN) |
+| `TargetAccountUpn` | string | 記録されたアクションが適用されたアカウントのユーザープリンシパル名 (UPN) |
+| `TargetAccountDisplayName` | string | 記録済みのアクションが適用されたアカウントの名前を表示します。 |
+| `Location` | string | イベントに関連付けられている市区町村、国、またはその他の地理的な場所 |
 | `ReportId` | long | イベントの一意識別子 |
-| `AdditionalFields` | 文字列 | エンティティまたはイベントに関するその他の情報 |
+| `AdditionalFields` | string | エンティティまたはイベントに関するその他の情報 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d9650811a264992c20a1ed88939e06694373b25c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5d620a1c30466553470eec49d4f5ff8242d060bd
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197705"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412600"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を操作する
 
@@ -46,7 +48,7 @@ ms.locfileid: "48197705"
 
 | ビューの種類 | 説明 |
 | -- | -- |
-| **表** | クエリの結果を表形式で表示します。 |
+| **Table** | クエリの結果を表形式で表示します。 |
 | **縦棒グラフ** | X 軸に一連の一意のアイテムを垂直バーとしてレンダリングし、高さが別のフィールドの数値を表すようにします。 |
 | **積み上げ縦棒グラフ** | X 軸上の一連の一意のアイテムを、1つまたは複数の他のフィールドからの数値で表される垂直な積み上げ縦棒グラフで描画します。 |
 | **円グラフ** | 一意のアイテムを表す、断面パイをレンダリングします。 各円グラフのサイズは、別のフィールドの数値を表します。 |

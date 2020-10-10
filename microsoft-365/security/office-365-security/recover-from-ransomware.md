@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Microsoft 365 管理者は、ランサムウェア攻撃から回復する方法について学ぶことができます。
-ms.openlocfilehash: c362ffcbb83e8b0fb7ae89bbbf835165e23b8e83
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fd975c8708bcd6731c356ccc3307f5cdebd13bdb
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201961"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413402"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365 のランサムウェア攻撃からの回復
 
@@ -81,7 +82,7 @@ OneDrive for business のファイルの復元を使用すると、OneDrive 全�
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除済みメールを復元する
 
-ランサムウェアによってすべての電子メールが削除された場合は、削除済みアイテムを回復できる場合があります。 詳細については、以下を参照してください:
+ランサムウェアによってすべての電子メールが削除された場合は、削除済みアイテムを回復できる場合があります。 詳細については、以下を参照してください。
 
 - [ユーザーのメールボックス内の削除済みメッセージを復元する](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 

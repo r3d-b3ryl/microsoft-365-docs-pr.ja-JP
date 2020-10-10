@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: dd49cc0bab2013a0f786266aa87d5575e2b4a2fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fbe00c3ee33fd1e0f333447b2092d052fbb48834
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198237"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412228"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -45,51 +47,51 @@ ms.locfileid: "48198237"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `DeviceId` | 文字列 | コンピューターの一意識別子 |
-| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
+| `DeviceId` | string | コンピューターの一意識別子 |
+| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類。 詳細については、 [ポータル内のスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を参照してください。 |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `MD5` | 文字列型 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
-| `AccountDomain` | 文字列 | アカウントのドメイン |
-| `AccountName` | 文字列 | アカウントのユーザー名 |
-| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
+| `AccountDomain` | string | アカウントのドメイン |
+| `AccountName` | string | アカウントのユーザー名 |
+| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `RemoteDeviceName` | 文字列 | 影響を受けるコンピューターでリモート操作を実行したコンピューターの名前。 報告されるイベントによっては、この名前は完全修飾ドメイン名 (FQDN)、NetBIOS 名、またはドメイン情報のないホスト名の場合があります。 |
 | `ProcessId` | int | 新しく作成されたプロセスのプロセス ID (PID) |
-| `ProcessCommandLine` | 文字列 | 新しいプロセスを作成するために使用されるコマンドライン |
+| `ProcessCommandLine` | string | 新しいプロセスを作成するために使用されるコマンドライン |
 | `ProcessCreationTime` | 日付型 | プロセスが作成された日付と時刻 |
-| `ProcessTokenElevation` | 文字列 | 新たに作成されたプロセスに適用されたユーザーアクセス制御 (UAC) 権限昇格が存在するかどうかを示すトークンの種類 |
-| `LogonId` | 文字列 | ログオンセッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
-| `RegistryKey` | 文字列 | 記録済みのアクションが適用されたレジストリキー |
-| `RegistryValueName` | 文字列 | 記録されたアクションが適用されたレジストリ値の名前 |
-| `RegistryValueData` | 文字列 | 記録された操作が適用されたレジストリ値のデータ |
+| `ProcessTokenElevation` | string | 新たに作成されたプロセスに適用されたユーザーアクセス制御 (UAC) 権限昇格が存在するかどうかを示すトークンの種類 |
+| `LogonId` | string | ログオンセッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
+| `RegistryKey` | string | 記録済みのアクションが適用されたレジストリキー |
+| `RegistryValueName` | string | 記録されたアクションが適用されたレジストリ値の名前 |
+| `RegistryValueData` | string | 記録された操作が適用されたレジストリ値のデータ |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemotePort` | int | 接続先のリモートデバイスの TCP ポート |
-| `LocalIP` | 文字列 | 通信時に使用されるローカルコンピューターに割り当てられた IP アドレス |
+| `LocalIP` | string | 通信時に使用されるローカルコンピューターに割り当てられた IP アドレス |
 | `LocalPort` | int | 通信時に使用されるローカルコンピューターの TCP ポート |
-| `FileOriginUrl` | 文字列 | ファイルのダウンロード元の URL |
-| `FileOriginIP` | 文字列 | ファイルのダウンロード元の IP アドレス |
-| `AdditionalFields` | 文字列 | JSON 配列形式でのイベントに関する追加情報 |
-| `InitiatingProcessSHA1` | 文字列 | イベントを開始したプロセス (画像ファイル) の SHA-1 |
-| `InitiatingProcessSHA256` | 文字列 | イベントを開始したプロセス (イメージファイル) の256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
+| `FileOriginUrl` | string | ファイルのダウンロード元の URL |
+| `FileOriginIP` | string | ファイルのダウンロード元の IP アドレス |
+| `AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
+| `InitiatingProcessSHA1` | string | イベントを開始したプロセス (画像ファイル) の SHA-1 |
+| `InitiatingProcessSHA256` | string | イベントを開始したプロセス (イメージファイル) の256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |
 | `InitiatingProcessFileName` | 文字列型 | イベントを開始したプロセスの名前 |
-| `InitiatingProcessFolderPath` | 文字列 | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
+| `InitiatingProcessFolderPath` | string | イベントを開始したプロセス (画像ファイル) を含むフォルダー |
 | `InitiatingProcessId` | int | イベントを開始したプロセスのプロセス ID (PID) |
-| `InitiatingProcessCommandLine` | 文字列 | イベントを開始したプロセスを実行するために使用されるコマンドライン |
+| `InitiatingProcessCommandLine` | string | イベントを開始したプロセスを実行するために使用されるコマンドライン |
 | `InitiatingProcessCreationTime` | 日付型 | イベントを開始したプロセスが開始された日付と時刻 |
 | `InitiatingProcessParentId` | int | イベントを担当するプロセスを発生させる親プロセスのプロセス ID (PID) |
-| `InitiatingProcessParentFileName` | 文字列 | イベントを処理するプロセスを生成した親プロセスの名前 |
+| `InitiatingProcessParentFileName` | string | イベントを処理するプロセスを生成した親プロセスの名前 |
 | `InitiatingProcessParentCreationTime` | 日付型 | イベントを担当するプロセスの親が開始された日時 |
-| `InitiatingProcessMD5` | 文字列 | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
-| `InitiatingProcessAccountDomain` | 文字列 | イベントを担当するプロセスを実行したアカウントのドメイン |
-| `InitiatingProcessAccountName` | 文字列 | イベントを担当するプロセスを実行したアカウントのユーザー名 |
-| `InitiatingProcessAccountSid` | 文字列 | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
-| `InitiatingProcessLogonId` | 文字列 | イベントを開始したプロセスのログオンセッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
+| `InitiatingProcessMD5` | string | イベントを開始したプロセス (画像ファイル) の MD5 ハッシュ |
+| `InitiatingProcessAccountDomain` | string | イベントを担当するプロセスを実行したアカウントのドメイン |
+| `InitiatingProcessAccountName` | string | イベントを担当するプロセスを実行したアカウントのユーザー名 |
+| `InitiatingProcessAccountSid` | string | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
+| `InitiatingProcessLogonId` | string | イベントを開始したプロセスのログオンセッションの識別子。 この識別子は、再起動の間にのみ同じコンピューター上で一意です。 |
 | `ReportId` | long | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName および Timestamp 列と組み合わせて使用する必要があります。 |
-| `AppGuardContainerId` | 文字列 | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
+| `AppGuardContainerId` | string | Application Guard がブラウザーのアクティビティを分離するために使用する仮想化されたコンテナーの識別子 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

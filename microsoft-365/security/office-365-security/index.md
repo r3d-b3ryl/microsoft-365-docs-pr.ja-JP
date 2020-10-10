@@ -13,20 +13,21 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Office 365 のセキュリティ。 EOP から ATP プラン1および2、標準セキュリティ構成の比較など 現在の状況と、プロパティをセキュリティで保護する方法について理解します。
-ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
-ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
+ms.openlocfilehash: d650a02faa21ac6ade39506d2c423dd319951bef
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48359155"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413056"
 ---
 # <a name="office-365-security-overview"></a>Office 365 のセキュリティの概要
 
 この記事では、クラウド内の新しいセキュリティプロパティについて説明します。 セキュリティ操作センターの一部であるかどうかにかかわらず、セキュリティ管理者はこのスペースを利用しているか、またはリフレッシャーを使用したいと考えています。
 
 > [!CAUTION]
-> こんにちは。 **Outlook.com**、 **microsoft 365 ファミリ**、または**microsoft 365 Personal**を使用していて *、安全なリンク*または安全な*添付ファイル*の情報を必要とする場合は、***このリンクをクリックし***てください。 [Microsoft 365 サブスクライバーの高度な Outlook.com セキュリティ](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。 よろしく!
+> **Outlook.com**、 **microsoft 365 ファミリ**、または**microsoft 365 Personal**を使用していて *、安全なリンク*または安全な*添付ファイル*の情報を必要とする場合は、***このリンクをクリックし***てください。 [Microsoft 365 サブスクライバーの高度な Outlook.com セキュリティ](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="office-365-security-spelled-out"></a>Office 365 のセキュリティに関する綴り
 
@@ -83,7 +84,7 @@ ATP プランを追加することによって、純粋な EOP threat management
 **Exchange Online Protection**以降:
 <p>
 
-|防止/検出  |調査  |Respond  |
+|防止/検出  |調査  |返信  |
 |---------|---------|---------|
 | テクノロジは次のとおりです。<ul><li>スパム</li><li>フィッシング</li><li>ウェア</li><li>バルクメール</li><li>スプーフィングインテリジェンス</li><li>偽装の検出</li><li>管理者検疫</li><li>誤検知と誤検知の管理者およびユーザーの送信</li><li>Url とファイルの許可/ブロック</li><li>レポート</li></u1>|<li>監査ログ検索</li><li>メッセージの追跡</li>|<li>ゼロ時間自動削除 (ZAP)</li><li>許可リストと禁止リストの絞り込みとテスト</li>|
 
@@ -94,7 +95,7 @@ EOP に移動する場合は、 **[この記事に移動](https://review.docs.mi
 **Advanced Threat Protection**を使用した利点: プラン 1 (終了):
 <p>
 
-|防止/検出  |調査  |Respond  |
+|防止/検出  |調査  |返信  |
 |---------|---------|---------|
 | EOP に含まれるテクノロジには、次のようなものがあります。<u1><li>安全な添付ファイル</li><li>安全なリンク<li>ワークロードの ATP 保護 (例 SharePoint Online、Teams、OneDrive for Business)</li><li>電子メール、Office クライアント、および Teams でのクリック時の保護</li><li>ATP のフィッシング対策</li><li>ユーザーおよびドメインの偽装保護</li><li>通知の SIEM 統合 API</li>|<li>検出のための SIEM 統合 API</li><li>**リアルタイム検出ツール**</li><li>URL トレース</li>|<li>同じ</li></u1>
 
@@ -105,7 +106,7 @@ ATP P1 では **、調査のリアルタイム検出** も追加されていま�
 **Advanced Threat Protection**を使用した利点: プラン 2 (終了):
 <p>
 
-|防止/検出  |調査  |Respond  |
+|防止/検出  |調査  |返信  |
 |---------|---------|---------|
 | EOP には、次のようなテクノロジが含まれています。<u1><li>同じ</li>|<li>**脅威エクスプローラー**</li><li>脅威トラッカー</li><li>キャンペーンビュー</li>|<li>自動化された調査と応答 (AIR)</li><li>脅威エクスプローラからの空気</li><li>侵害されたユーザーのための空気</li><li>自動調査用の SIEM 統合 API</li>
 

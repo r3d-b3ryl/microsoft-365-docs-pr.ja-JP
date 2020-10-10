@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 496deff5d2fda47b7ffac4bc87e98bf28e90ea50
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e381793caf49318074bcd096e4301cdf49d12e88
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196967"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412192"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>ゴーハントを使用してエンティティまたはイベントの情報をすばやく探します。
 
@@ -70,7 +72,7 @@ and DeviceName == deviceName
 ### <a name="supported-entity-types"></a>サポートされるエンティティの種類
 次のいずれかのエンティティの種類を選択した後、 *[ハント* ] を使用できます。
 
-- ファイル
+- Files
 - メール
 - 電子メールクラスター
 - メールボックス

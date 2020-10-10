@@ -11,19 +11,19 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: acdca0a70fb28b10f053da8f79b4e37c9c7632f5
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 4bfda869972c5650a99395a5fd16c6ad7ddb4f11
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529925"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409026"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
 最高のユーザー環境を確保するために、Microsoft マネージドデスクトップでは特定の時点でのデバイスのサポートが廃止されています。 このトピックでは、今後数年間に廃止されたデバイスを一覧表示し、「アーカイブ」と呼んでいます。 既に所有しているデバイスを使用して Microsoft マネージドデスクトップを使い始める場合は、この一覧を慎重に確認する必要があります。
 
 >[!IMPORTANT]
->今でもこれらのデバイスを登録することはできますが、サービスライフサイクルは Microsoft マネージドデスクトップと比べて短くなります。 新しいデバイスを購入している場合は、[アクティブなデバイスのリスト](./device-list.md)からモデルを使用する必要があります。
+>今でもこれらのデバイスを登録することはできますが、サービスライフサイクルは Microsoft マネージドデスクトップと比べて短くなります。 新しいデバイスを購入している場合は、 [アクティブなデバイスのリスト](./device-list.md)からモデルを使用する必要があります。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -42,13 +42,17 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 | Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2023年1月9日** |
 | Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB RAM   | 必要な赤外線カメラ | **2023年1月9日** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年2月15日** |
+|HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年11月30日** |
 |HP エリート x2 1013 G3| 256 GB/Intel i5/8 GB RAM | 5VS03AV、IR カメラが必要な SKU |**2023年5月14日** |
-|HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU |**2023年5月14日** |
+|HP EliteBook x360 1030 G5| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU |**2023年5月14日** |
+|HP EliteBook x360 1030 G6| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU |**2023年11月30日** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | **2023年10月23日** |
+|HP EliteBook x360 1040 G6| 256 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラが必要な SKU | **2023年11月30日** |
 |HP ProBook x360 440 G1| 128 GB/Intel i3/8 GB RAM | 5VS04AV、IR カメラまたは指紋リーダが必要な SKU | **2023年6月6日** |
 |HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | **2023年7月18日** |
 |HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB RAM | 5VS04AV の SKU | **2023年7月18日** |
 |AIO の HP EliteOne 800 G4 23.8 |128 GB/Intel i3/8 GB RAM |5VS04AV の SKU| **2023年7月18日** |
+|HP ZBook 14u/15u G6 モバイルワークステーション |256 GB/Intel i5/8 GB RAM |5VS04AV、IR カメラが必要な SKU| **2023年11月30日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | なし | **2022年11月16時** |
 |Surface Go| 128 GB/Intel 44 15Y/8GB RAM | なし | **2023年8月2時** |
 |Surface のノートブック| 256 GB/Intel i5/8 GB RAM | なし | **2022年5月20時** |

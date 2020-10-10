@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: a89622206917c6b343ce47638c443b789513367b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338419"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412180"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -37,20 +39,20 @@ ms.locfileid: "48338419"
 | Column | データ型 | 説明 |
 |------------|-------------|-------------|
 | SHA1 | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
-| SHA256 | 文字列 | 記録された操作が適用されたファイルの256 |
-| MD5 | 文字列 | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
+| SHA256 | string | 記録された操作が適用されたファイルの256 |
+| MD5 | string | 記録されたアクションが適用されたファイルの MD5 ハッシュ |
 | FileSize | int | ファイルのサイズ (バイト数) |
 | GlobalPrevalence | int | Microsoft によってグローバルに監視されたエンティティのインスタンスの数 |
 | GlobalFirstSeen | 日付型 | エンティティが最初に Microsoft によって監視された日付と時刻 |
 | GlobalLastSeen | 日付型 | エンティティが最後に Microsoft によって監視された日付と時刻 |
-| 署名者 | 文字列 | ファイルの署名者に関する情報 |
-| 発行者 | 文字列 | 発行元の証明機関 (CA) に関する情報 |
-| SignerHash | 文字列 | 署名者を識別する一意のハッシュ値 |
+| 署名者 | string | ファイルの署名者に関する情報 |
+| 発行者 | string | 発行元の証明機関 (CA) に関する情報 |
+| SignerHash | string | 署名者を識別する一意のハッシュ値 |
 | IsCertificateValid | ブール値 | ファイルへの署名に使用された証明書が有効かどうか |
 | IsRootSignerMicrosoft | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します |
 | IsExecutable | ブール値 | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
-| Mail.threatname です | 文字列 | 検出されたマルウェアまたは他の脅威の検出名 |
-| Publisher | 文字列 | ファイルを発行した組織の名前 |
+| Mail.threatname です | string | 検出されたマルウェアまたは他の脅威の検出名 |
+| 発行者 | string | ファイルを発行した組織の名前 |
 | SoftwareName | string | ソフトウェア製品の名前 |
 
 ## <a name="syntax"></a>構文

@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d9d3ffad156d5a27f1931c3b6ec295b022dea296
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 65cd02f4277cf3694d85eac92392899b140c9f74
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198015"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412144"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -42,13 +44,13 @@ ms.locfileid: "48198015"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `EventId` | 文字列 | イベントの一意識別子 |
-| `NetworkMessageId` | 文字列 | Microsoft 365 によって生成される電子メールの一意識別子。 |
+| `EventId` | string | イベントの一意識別子 |
+| `NetworkMessageId` | string | Microsoft 365 によって生成される電子メールの一意識別子。 |
 | `InternetMessageId` | string | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `Action` | string | エンティティに対して実行されたアクション |
-| `ActionType` | 文字列 | イベントをトリガーしたアクティビティの種類: 手動による修復、フィッシング ZAP、マルウェアの ZAP |
-| `ActionTrigger` | 文字列 | アクションが管理者によってトリガーされたかどうか (手動または保留中の自動アクションの承認)、または ZAP または動的配信などの特別なメカニズムによって発生したかどうかを示します。 |
-| `ActionResult` | 文字列 | アクションの結果 |
+| `ActionType` | string | イベントをトリガーしたアクティビティの種類: 手動による修復、フィッシング ZAP、マルウェアの ZAP |
+| `ActionTrigger` | string | アクションが管理者によってトリガーされたかどうか (手動または保留中の自動アクションの承認)、または ZAP または動的配信などの特別なメカニズムによって発生したかどうかを示します。 |
+| `ActionResult` | string | アクションの結果 |
 | `RecipientEmailAddress` | string | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 

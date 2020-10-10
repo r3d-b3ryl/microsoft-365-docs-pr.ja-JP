@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: a7e2eca147bb956606380b9ac97a91b898830dd0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ec6fe3d080efb396ce0ecacadd3d5d9a8fa9f8d1
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197271"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413200"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -39,32 +41,32 @@ ms.locfileid: "48197271"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | 日付型 | イベントが記録された日付と時刻 |
-| `AlertId` | 文字列 | アラートの一意識別子 |
-| `ServiceSource` | 文字列 | 通知情報を提供した製品またはサービス |
-| `EntityType` | 文字列 | オブジェクトの種類 (ファイル、プロセス、デバイス、ユーザーなど) |
-| `EvidenceRole` | 文字列 | エンティティが通知に関与する方法。そのエンティティが影響を受けているか、または単に関連しているかを示します。 |
-| `EvidenceDirection` | 文字列 | エンティティがネットワーク接続のソースまたは宛先であるかどうかを示します |
+| `AlertId` | string | アラートの一意識別子 |
+| `ServiceSource` | string | 通知情報を提供した製品またはサービス |
+| `EntityType` | string | オブジェクトの種類 (ファイル、プロセス、デバイス、ユーザーなど) |
+| `EvidenceRole` | string | エンティティが通知に関与する方法。そのエンティティが影響を受けているか、または単に関連しているかを示します。 |
+| `EvidenceDirection` | string | エンティティがネットワーク接続のソースまたは宛先であるかどうかを示します |
 | `FileName` | 文字列 | 記録されたアクションが適用されたファイルの名前 |
 | `FolderPath` | 文字列 | 記録されたアクションが適用されたファイルを含むフォルダ |
 | `SHA1` | 文字列 | 記録されたアクションが適用されたファイルの SHA-1 |
 | `SHA256` | 文字列 | 記録されたアクションが適用されたファイルの SHA-256 このフィールドには通常、値が設定されていません。使用可能な場合は SHA1 列を使用します。 |
 | `FileSize` | int | ファイルのサイズ (バイト数) |
-| `ThreatFamily` | 文字列 | 疑わしいまたは悪意のあるファイルまたはプロセスが分類されたマルウェアファミリ |
+| `ThreatFamily` | string | 疑わしいまたは悪意のあるファイルまたはプロセスが分類されたマルウェアファミリ |
 | `RemoteIP` | 文字列 | に接続されていた IP アドレス |
 | `RemoteUrl` | 文字列 | に接続されていた URL または完全修飾ドメイン名 (FQDN) |
 | `AccountName` | 文字列 | アカウントのユーザー名 |
-| `AccountDomain` | 文字列 | アカウントのドメイン |
-| `AccountSid` | 文字列 | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | 文字列 | Azure Active Directory のアカウントの一意識別子 |
-| `DeviceId` | 文字列 | サービス内のデバイスの一意識別子 |
-| `DeviceName` | 文字列 | コンピューターの完全修飾ドメイン名 (FQDN) |
-| `LocalIP` | 文字列 | 通信時に使用されるローカルデバイスに割り当てられた IP アドレス |
+| `AccountDomain` | string | アカウントのドメイン |
+| `AccountSid` | string | アカウントのセキュリティ識別子 (SID) |
+| `AccountObjectId` | string | Azure Active Directory のアカウントの一意識別子 |
+| `DeviceId` | string | サービス内のデバイスの一意識別子 |
+| `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
+| `LocalIP` | string | 通信時に使用されるローカルデバイスに割り当てられた IP アドレス |
 | `NetworkMessageId` | string | Office 365 により生成されたメールの一意の識別子 |
 | `EmailSubject` | string | メールの件名 |
 | `ApplicationId` | string | アプリケーションの一意識別子 |
-| `Application` | 文字列 | 記録されたアクションを実行したアプリケーション |
-| `ProcessCommandLine` | 文字列 | 新しいプロセスを作成するために使用されるコマンドライン |
-| `AdditionalFields` | 文字列 | JSON 配列形式でのイベントに関する追加情報 |
+| `Application` | string | 記録されたアクションを実行したアプリケーション |
+| `ProcessCommandLine` | string | 新しいプロセスを作成するために使用されるコマンドライン |
+| `AdditionalFields` | string | JSON 配列形式でのイベントに関する追加情報 |
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

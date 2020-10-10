@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 3960d877ed1807d2e8ac13512f9bdbb1625fc371
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f2642a46f952d3324cec4936aeb813d4ee5507d1
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198123"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412996"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -41,12 +43,12 @@ ms.locfileid: "48198123"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | 特定の構成の一意の識別子 |
-| `ConfigurationImpact` | 文字列 | 構成が全体の構成スコアに与える影響の評価 (1-10) |
+| `ConfigurationImpact` | string | 構成が全体の構成スコアに与える影響の評価 (1-10) |
 | `ConfigurationName` | string | 構成の表示名 |
 | `ConfigurationDescription` | string | 構成の説明 |
 | `RiskDescription` | string | 関連するリスクの説明 |
 | `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|
-| `ConfigurationSubcategory` | 文字列 |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationSubcategory` | string |構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationBenchmarks` | string | 同じ構成または類似した構成を推奨する業界ベンチマークの一覧 |
 | `RelatedMitreTechniques` | string | 構成に関連する Mitre ATT&CK フレームワーク テクニックの一覧 |
 | `RelatedMitreTactics ` | string | 構成に関連する Mitre ATT&CK フレームワーク戦術の一覧 |

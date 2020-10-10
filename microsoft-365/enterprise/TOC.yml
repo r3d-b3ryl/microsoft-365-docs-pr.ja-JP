@@ -113,8 +113,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-            - name: Office 2013 クライアント アプリと Office 2016 クライアント アプリでの先進認証のしくみ
-              href: modern-auth-for-office-2013-and-2016.md
         - name: クライアント アプリのサポート
           items:
             - name: 証明書ベースの認証
@@ -137,6 +135,8 @@
               href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: Skype for Business と Exchange の削除または無効化
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: Office 2013、Office 2016、および Office 2019のクライアントアプリ
+              href: modern-auth-for-office-2013-and-2016.md
         - name: アップグレードの計画
           href: plan-upgrade-previous-versions-office.md
           items:
