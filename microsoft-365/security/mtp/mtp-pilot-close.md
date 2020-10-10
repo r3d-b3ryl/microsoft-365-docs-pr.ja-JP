@@ -17,22 +17,23 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec8e630c3669b3eb7af8cb012a0ca361f8c77f1e
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368015"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418099"
 ---
-# <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a><span data-ttu-id="839ba-104">Microsoft の脅威保護パイロットの終了および概要</span><span class="sxs-lookup"><span data-stu-id="839ba-104">Closing and summarizing your Microsoft Threat Protection pilot</span></span>  
+# <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a><span data-ttu-id="e8c7f-104">Microsoft の脅威保護パイロットの終了および概要</span><span class="sxs-lookup"><span data-stu-id="e8c7f-104">Closing and summarizing your Microsoft Threat Protection pilot</span></span>  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="839ba-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="839ba-105">**Applies to:**</span></span>
-- <span data-ttu-id="839ba-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="839ba-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="e8c7f-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="e8c7f-105">**Applies to:**</span></span>
+- <span data-ttu-id="e8c7f-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="e8c7f-106">Microsoft Threat Protection</span></span>
 
 <br>
 <table border="0" width="100%" align="center">
@@ -40,22 +41,22 @@ ms.locfileid: "48368015"
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
         <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="パイロットを計画する Microsoft の脅威保護プロジェクト" />
-      <br/><span data-ttu-id="839ba-108">計画 </a></span><span class="sxs-lookup"><span data-stu-id="839ba-108">Plan </a></span></span><br>
+      <br/><span data-ttu-id="e8c7f-108">計画 </a></span><span class="sxs-lookup"><span data-stu-id="e8c7f-108">Plan </a></span></span><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
         <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境の準備" />
-      <br/><span data-ttu-id="839ba-110">作る </a></span><span class="sxs-lookup"><span data-stu-id="839ba-110">Prepare </a></span></span><br>
+      <br/><span data-ttu-id="e8c7f-110">作る </a></span><span class="sxs-lookup"><span data-stu-id="e8c7f-110">Prepare </a></span></span><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
         <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Microsoft の脅威保護攻撃のシミュレーションを実行する" />
-      <br/><span data-ttu-id="839ba-112">攻撃をシミュレートする </a></span><span class="sxs-lookup"><span data-stu-id="839ba-112">Simulate attack </a></span></span><br>
+      <br/><span data-ttu-id="e8c7f-112">攻撃をシミュレートする </a></span><span class="sxs-lookup"><span data-stu-id="e8c7f-112">Simulate attack </a></span></span><br>
     </td>
     <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
         <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Microsoft の脅威保護パイロットの終了と概要" />
-      <br/><span data-ttu-id="839ba-114">閉じて概要をまとめる </a></span><span class="sxs-lookup"><span data-stu-id="839ba-114">Close and summarize </a></span></span><br>
+      <br/><span data-ttu-id="e8c7f-114">閉じて概要をまとめる </a></span><span class="sxs-lookup"><span data-stu-id="e8c7f-114">Close and summarize </a></span></span><br>
     </td>
   </tr>
   <tr>
@@ -74,25 +75,25 @@ ms.locfileid: "48368015"
   </tr>
 </table>
 
-<span data-ttu-id="839ba-115">現在、決算フェーズと要約段階になっています。</span><span class="sxs-lookup"><span data-stu-id="839ba-115">You're currently in the closing and summarizing phase.</span></span>
+<span data-ttu-id="e8c7f-115">現在、決算フェーズと要約段階になっています。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-115">You're currently in the closing and summarizing phase.</span></span>
 
-<span data-ttu-id="839ba-116">ドメインコントローラーでリモートでコードを実行する、高度なメモリのみ攻撃をシミュレートしています。</span><span class="sxs-lookup"><span data-stu-id="839ba-116">You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller.</span></span> <span data-ttu-id="839ba-117">Stealthy 悪意のあるアクティビティについて、Microsoft Defender ATP および Azure ATP が検出し、通知する方法を確認しました。</span><span class="sxs-lookup"><span data-stu-id="839ba-117">You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity.</span></span> <span data-ttu-id="839ba-118">また、Microsoft 365 セキュリティセンターポータルでは、さまざまなソースからのアラートが他のコンテキスト情報と共に1つのインシデントに配信され、SOC アナリストが調査して必要なアクションを実行できるようにしています。</span><span class="sxs-lookup"><span data-stu-id="839ba-118">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="839ba-119">また、ユーザーが添付ファイルを開いたときや保存したときに、そのクエリに基づいて検出を作成した受信メールを識別する高度な検索クエリも作成されています。</span><span class="sxs-lookup"><span data-stu-id="839ba-119">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
+<span data-ttu-id="e8c7f-116">ドメインコントローラー上でコードをリモートで実行する、高度なメモリのみのアタックシミュレーションが実行されました。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-116">You’ve just ran an advanced memory-only attack simulation that executed code remotely on a domain controller.</span></span> <span data-ttu-id="e8c7f-117">Microsoft Defender ATP と Azure ATP が stealthy 悪意のあるアクティビティについての通知を検出して作成する方法について説明してきました。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-117">You’ve seen how Microsoft Defender ATP and Azure ATP detect and create alerts on stealthy malicious activity.</span></span> <span data-ttu-id="e8c7f-118">また、Microsoft 365 セキュリティセンターポータルでは、さまざまなソースからのアラートが他のコンテキスト情報と共に1つのインシデントに配信される方法についても説明してきました。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-118">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal.</span></span> <span data-ttu-id="e8c7f-119">このような統合が発生すると、SOC アナリストが調査し、必要なアクションを実行できるようになります。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-119">Experiencing such integration enables SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="e8c7f-120">また、ユーザーが添付ファイルを開いたときや保存したときに、そのクエリに基づいて検出を作成した受信メールを識別する高度な検索クエリも作成されています。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-120">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
 
-<span data-ttu-id="839ba-120">すべてのテストが終了した後、プロセスの最後に到達しました。</span><span class="sxs-lookup"><span data-stu-id="839ba-120">You’ve reached the end of the process after all tests have concluded.</span></span>
+<span data-ttu-id="e8c7f-121">すべてのテストが終了した後、プロセスの最後に到達しました。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-121">You’ve reached the end of the process after all tests have concluded.</span></span>
 
-<span data-ttu-id="839ba-121">最終的な出力は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="839ba-121">The final output should be:</span></span>
+<span data-ttu-id="e8c7f-122">最終的な出力は次のようになります。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-122">The final output should be:</span></span>
 
-- <span data-ttu-id="839ba-122">完了したスコアカード</span><span class="sxs-lookup"><span data-stu-id="839ba-122">A completed scorecard</span></span>
-- <span data-ttu-id="839ba-123">パイロットの結果についての詳細なレポート</span><span class="sxs-lookup"><span data-stu-id="839ba-123">A detailed report of the findings of the pilot</span></span>
-- <span data-ttu-id="839ba-124">前方へ移動する方法の決定</span><span class="sxs-lookup"><span data-stu-id="839ba-124">A decision on how to move forward</span></span>
+- <span data-ttu-id="e8c7f-123">完了したスコアカード</span><span class="sxs-lookup"><span data-stu-id="e8c7f-123">A completed scorecard</span></span>
+- <span data-ttu-id="e8c7f-124">パイロットの結果についての詳細なレポート</span><span class="sxs-lookup"><span data-stu-id="e8c7f-124">A detailed report of the findings of the pilot</span></span>
+- <span data-ttu-id="e8c7f-125">前方へ移動する方法の決定</span><span class="sxs-lookup"><span data-stu-id="e8c7f-125">A decision on how to move forward</span></span>
 
-<span data-ttu-id="839ba-125">この情報は、社内関係者 ( [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 段階で特定したもの) と Microsoft の連絡先の両方に提供する必要があります。</span><span class="sxs-lookup"><span data-stu-id="839ba-125">This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts.</span></span> <span data-ttu-id="839ba-126">これにより、すべてのフィードバックを使用して製品とドキュメントを向上させることができます。</span><span class="sxs-lookup"><span data-stu-id="839ba-126">This ensures that any feedback can be used to improve products and documentation.</span></span>
+<span data-ttu-id="e8c7f-126">最終出力からのレポート ( [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) フェーズで識別した) と Microsoft の連絡先の両方を提示します。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-126">Present the reports from your final output both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts.</span></span> <span data-ttu-id="e8c7f-127">このような作業により、製品やドキュメントを改善するためにフィードバックを確実に使用できるようになります。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-127">Such an effort ensures that any feedback can be used to improve products and documentation.</span></span>
 
-<span data-ttu-id="839ba-127">このシミュレーションを楽しんでいただき、学んだことを実装し始めることをお勧めします。</span><span class="sxs-lookup"><span data-stu-id="839ba-127">We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.</span></span>
+<span data-ttu-id="e8c7f-128">このシミュレーションを楽しんでいただければ幸いです。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-128">We hope you enjoyed this simulation.</span></span> <span data-ttu-id="e8c7f-129">組織内の大規模なスケールで学んだ内容の実装を開始して、統合セキュリティソリューションを最大限に活用してください。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-129">Start implementing what you've learned on a larger scale in your organization to get the most out of the integrated security solution.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="839ba-128">次のステップ</span><span class="sxs-lookup"><span data-stu-id="839ba-128">Next step</span></span>
-<span data-ttu-id="839ba-129">Microsoft Threat Protection の柱の詳細については、次の対話型のガイドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="839ba-129">Learn more about the Microsoft Threat Protection pillars through the following interactive guides:</span></span>
-- [<span data-ttu-id="839ba-130">Microsoft Defender for Office 365 を使用して組織を保護する</span><span class="sxs-lookup"><span data-stu-id="839ba-130">Safeguard your organization with Microsoft Defender for Office 365</span></span>](https://aka.ms/O365ATP-Interactive-Guide)
-- [<span data-ttu-id="839ba-131">身元を確認するために Microsoft Defender を使用して疑わしいアクティビティおよび潜在的な攻撃を検出する</span><span class="sxs-lookup"><span data-stu-id="839ba-131">Detect suspicious activities and potential attacks with Microsoft Defender for Identity</span></span>](https://aka.ms/AATP-Interactive-Guide)
-- [<span data-ttu-id="839ba-132">Microsoft Cloud App Security を使用して脅威を検出し、アラートを管理する</span><span class="sxs-lookup"><span data-stu-id="839ba-132">Detect threats and manage alerts with Microsoft Cloud App Security</span></span>](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
-- [<span data-ttu-id="839ba-133">エンドポイントの Microsoft Defender を使用して脅威を調査および修復する</span><span class="sxs-lookup"><span data-stu-id="839ba-133">Investigate and remediate threats with Microsoft Defender for Endpoint</span></span>](https://aka.ms/MDATP-IR-Interactive-Guide)
+## <a name="next-step"></a><span data-ttu-id="e8c7f-130">次のステップ</span><span class="sxs-lookup"><span data-stu-id="e8c7f-130">Next step</span></span>
+<span data-ttu-id="e8c7f-131">Microsoft Threat Protection の柱の詳細については、次の対話型のガイドを参照してください。</span><span class="sxs-lookup"><span data-stu-id="e8c7f-131">Learn more about the Microsoft Threat Protection pillars through the following interactive guides:</span></span>
+- [<span data-ttu-id="e8c7f-132">Microsoft Defender for Office 365 を使用して組織を保護する</span><span class="sxs-lookup"><span data-stu-id="e8c7f-132">Safeguard your organization with Microsoft Defender for Office 365</span></span>](https://aka.ms/O365ATP-Interactive-Guide)
+- [<span data-ttu-id="e8c7f-133">身元を確認するために Microsoft Defender を使用して疑わしいアクティビティおよび潜在的な攻撃を検出する</span><span class="sxs-lookup"><span data-stu-id="e8c7f-133">Detect suspicious activities and potential attacks with Microsoft Defender for Identity</span></span>](https://aka.ms/AATP-Interactive-Guide)
+- [<span data-ttu-id="e8c7f-134">Microsoft Cloud App Security を使用して脅威を検出し、アラートを管理する</span><span class="sxs-lookup"><span data-stu-id="e8c7f-134">Detect threats and manage alerts with Microsoft Cloud App Security</span></span>](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [<span data-ttu-id="e8c7f-135">エンドポイントの Microsoft Defender を使用して脅威を調査および修復する</span><span class="sxs-lookup"><span data-stu-id="e8c7f-135">Investigate and remediate threats with Microsoft Defender for Endpoint</span></span>](https://aka.ms/MDATP-IR-Interactive-Guide)
