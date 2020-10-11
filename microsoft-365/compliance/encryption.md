@@ -17,13 +17,15 @@ ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
+- m365solution-mip
+- m365initiative-compliance
 description: Office 365 では、使用可能な暗号化、プロトコル、およびテクノロジが最強の状態で、コンテンツが保存され、転送中に暗号化されます。 Office 365 の暗号化の概要について説明します。
-ms.openlocfilehash: d3977902dfc1ee726fac696ae8b9cc0470e7dda8
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 28a5b55e63c3b66725aaa4a21e5dc750105c7c5a
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306436"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408597"
 ---
 # <a name="encryption"></a>暗号化
 
@@ -70,6 +72,8 @@ Microsoft 365 では、Office 365 でのボリューム暗号化、ファイル�
 
 - [Office 365 のカスタマー キーによるサービスの暗号化](customer-key-overview.md)
 
+- [Microsoft 365 の二重キー暗号化](double-key-encryption.md)
+
 ## <a name="how-do-i"></a>方法
 
 |**このタスクを実行するには**|**次のリソースを参照**|
@@ -81,7 +85,7 @@ Microsoft 365 では、Office 365 でのボリューム暗号化、ファイル�
 |文書から暗号化を削除する  <br/> |[文書、ブック、またはプレゼンテーションの保護を追加または削除する](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> [ **保護の削除** ] セクションを選択し、[ **パスワード暗号化の解除**] をクリックします。  |
 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 のセキュリティおよび情報保護機能を計画する](plan-for-security-and-compliance.md)
 

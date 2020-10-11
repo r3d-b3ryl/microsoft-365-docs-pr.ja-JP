@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がインスタント Bloomberg チャットツールから Microsoft 365 にデータをインポートしてアーカイブするためのデータコネクタをセットアップして使用する方法について説明します。
-ms.openlocfilehash: 4df1a67ae9e372efe5c6e8c654f1a6821b5cb30d
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 3a00e74d138810c4f9bc2ca851696a8c39b9f082
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358239"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408757"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
 Microsoft 365 コンプライアンスセンターのネイティブコネクタを使用して、 [インスタント Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) コラボレーションツールから金融サービスチャットデータをインポートおよびアーカイブします。 コネクタをセットアップして構成した後は、組織の Bloomberg secure FTP サイト (SFTP) に毎日接続して、チャットメッセージの内容を電子メールメッセージの形式に変換した後、それらのアイテムを Microsoft 365 のメールボックスにインポートします。
 
-ユーザーのメールボックスにインスタント Bloomberg データが格納された後、訴訟ホールド、コンテンツ検索、インプレースアーカイブ、監査、通信コンプライアンス、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能をインスタント Bloomberg データに適用することができます。 たとえば、コンテンツ検索を使用してインスタント Bloomberg チャットメッセージを検索したり、インスタント Bloomberg データを含むメールボックスを高度な電子情報開示ケースの保管担当者に関連付けることができます。 Microsoft 365 でインスタント Bloomberg コネクタを使用してデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
+ユーザーのメールボックスにインスタント Bloomberg データが格納された後、訴訟ホールド、コンテンツ検索、In-Place アーカイブ、監査、通信コンプライアンス、Microsoft 365 保持ポリシーなどの Microsoft 365 コンプライアンス機能をインスタント Bloomberg データに適用することができます。 たとえば、コンテンツ検索を使用してインスタント Bloomberg チャットメッセージを検索したり、インスタント Bloomberg データを含むメールボックスを高度な電子情報開示ケースの保管担当者に関連付けることができます。 Microsoft 365 でインスタント Bloomberg コネクタを使用してデータをインポートおよびアーカイブすることにより、組織は政府および規制ポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>インスタント Bloomberg データのアーカイブの概要
 
@@ -42,7 +42,7 @@ Microsoft 365 コンプライアンスセンターのネイティブコネクタ
 
 4. コネクタは、特定のユーザーのメールボックスにチャットメッセージアイテムをインポートします。 InstantBloomberg という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress* プロパティの値を使用してこれを実行します。 すべてのチャットメッセージには、このプロパティが含まれており、チャットメッセージのすべての参加者の電子メールアドレスが設定されます。 *CorporateEmailAddress*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 このマッピングファイルには、各ユーザーの Bloomberg UUID および対応する Microsoft 365 メールボックスアドレスが含まれている必要があります。 自動ユーザーマッピングを有効にし、カスタムマッピングを指定すると、コネクタはまずカスタムマッピングファイルを参照します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャットアイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタが、カスタムマッピングファイルまたはチャットアイテムの *CorporateEmailAddress* プロパティに有効な Microsoft 365 ユーザーを見つけられない場合、そのアイテムはインポートされません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 インスタント Bloomberg データをアーカイブするために必要ないくつかの実装手順は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
 

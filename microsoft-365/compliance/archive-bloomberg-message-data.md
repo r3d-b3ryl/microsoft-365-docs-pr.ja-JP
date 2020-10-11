@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理者は、Bloomberg メッセージ電子メールツールから Microsoft 365 にデータをインポートしてアーカイブするためのデータコネクタをセットアップできます。 これにより、Microsoft 365 でサードパーティのデータソースのデータをアーカイブできるようになるため、法的情報保留、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティデータを管理できます。
-ms.openlocfilehash: cc14bd9d76e04fe3e285f63b5dce9dbb1f680794
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8cb5575c4565153f2819e745fedc9608963299e4
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200230"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408955"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>Bloomberg メッセージデータをアーカイブするためのコネクタの設定
 
@@ -41,7 +41,7 @@ Bloomberg メッセージデータがユーザーのメールボックスに保�
 
    コネクタは、CorporateEmailAddress プロパティの値を使用してこれを実行します。 すべての電子メールメッセージにはこのプロパティが含まれており、電子メールメッセージのすべての参加者の電子メールアドレスが設定されます。 *CorporateEmailAddress*プロパティの値を使用した自動ユーザーマッピングに加えて、CSV マッピングファイルをアップロードしてカスタムマッピングを定義することもできます。 このマッピングファイルには、組織内の各ユーザーの Bloomberg UUID と、対応する Microsoft 365 メールボックスアドレスが含まれています。 自動ユーザーマッピングを有効にしてカスタムマッピングを指定すると、コネクタはまずカスタムマッピングファイルを調べます。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタは電子メールアイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタが、カスタムマッピングファイルまたは電子メールアイテムの *CorporateEmailAddress* プロパティに有効な Microsoft 365 ユーザーを見つけられない場合、アイテムはインポートされません。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 Bloomberg メッセージデータをアーカイブするために必要な実装手順の一部は、Microsoft 365 の外部にあり、コンプライアンスセンターでコネクタを作成する前に完了する必要があります。
 

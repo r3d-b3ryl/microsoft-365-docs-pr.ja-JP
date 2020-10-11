@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6990b93bba7456ecceea5bfa52be55dc29c2cddc
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 88986168a66a31eda49c3e22d12e1dae6a3446ed
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202258"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398660"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -59,7 +59,7 @@ ISO/IEC 27001 は、情報セキュリティ管理システム (ISMS) を実装�
 |||
 |:-----|:-----|
 |**領域**|**タスク**|
-|Microsoft 365 のセキュリティ機能を使用して環境へのアクセスを制御し、定義した標準業務手順書 (SOP) に従って組織の情報と資産を保護します。|• すべてのユーザー アカウントで多要素認証 (MFA) を有効にし、すべてのアプリで先進認証を有効にするなど、[ID とデバイス アクセス ポリシー](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)を実装することによって、管理者とエンド ユーザーのアカウントを保護します。<br>• ユーザー アカウントの資格情報を管理および保護するための[強力なパスワード ポリシー](https://www.microsoft.com/research/publication/password-guidance)を確立します。<br>• 機密データをメールで送信する際にエンド ユーザーが組織の SOP に準拠できるように [Office 365 Message Encryption (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome) を設定します。<br>• 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) を展開します。<br>• 金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)するための[データ損失防止 (DLP)](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) ポリシーを構成、テスト、展開します。<br>• [ポリシー ヒント](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)を設定することで、悪意あるメッセージを送信する前でも、メール送信者に対してポリシーに違反する可能性があることを自動通知することができます。 ポリシーヒントは、Outlook、Outlook on the web、デバイス用 OWA に短いメモとして表示するよう設定でき、メール送信者がメッセージ作成中にポリシーに違反する可能性があることを通知します。<br>• [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
+|Microsoft 365 のセキュリティ機能を使用して環境へのアクセスを制御し、定義した標準業務手順書 (SOP) に従って組織の情報と資産を保護します。|• すべてのユーザー アカウントで多要素認証 (MFA) を有効にし、すべてのアプリで先進認証を有効にするなど、[ID とデバイス アクセス ポリシー](../security/office-365-security/microsoft-365-policies-configurations.md)を実装することによって、管理者とエンド ユーザーのアカウントを保護します。<br>• ユーザー アカウントの資格情報を管理および保護するための [強力なパスワード ポリシー](https://www.microsoft.com/research/publication/password-guidance) を確立します。<br>• 機密データをメールで送信する際にエンド ユーザーが組織の SOP に準拠できるように [Office 365 Message Encryption (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome) を設定します。<br>• 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) を展開します。<br>• 金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)するための[データ損失防止 (DLP)](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) ポリシーを構成、テスト、展開します。<br>• [ポリシー ヒント](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)を設定することで、悪意あるメッセージを送信する前でも、メール送信者に対してポリシーに違反する可能性があることを自動通知することができます。 ポリシーヒントは、Outlook、Outlook on the web、デバイス用 OWA に短いメモとして表示するよう設定でき、メール送信者がメッセージ作成中にポリシーに違反する可能性があることを通知します。<br>• [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
 
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 日以上 – 継続的なセキュリティ、データ管理、および報告

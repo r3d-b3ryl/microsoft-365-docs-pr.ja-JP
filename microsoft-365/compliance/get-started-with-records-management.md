@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333853"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390164"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
@@ -85,6 +85,6 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 レコード管理に使用されている保持ラベルは、Microsoft 365 アプリで UI に存在します。 保持ラベルを運用ネットワークに展開する前に、エンド ユーザーとヘルプ デスクに必ずガイダンスを提供してください。
 
-最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ただし、基本的な手順については次の情報を使用できます。
+最も効果的なエンド ユーザー向けのドキュメントは、選択した保持ラベル名と構成に関するカスタマイズされたガイダンスと手順です。 ユーザーのトレーニングと導入の促進に使用できるダウンロード パッケージについては、次の投稿を参照してください: [M365 の保持ラベルのエンド ユーザー トレーニング – 導入を加速する方法](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861)。
 
-- [保持ラベルを手動で適用する](create-apply-retention-labels.md#manually-apply-retention-labels)
+また、次のセクションでは、基本的なユーザーの手順について説明します: [保持ラベルを手動で適用する](create-apply-retention-labels.md#manually-apply-retention-labels)。

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織の従来のファイルを Office 365 Message Encryption (OME) に移行する方法について説明します。
-ms.openlocfilehash: 06c0e41d6c3b7cbf7d06bf6aae82742211bd2542
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: ecf4723df9afdf09d63150a3ec7564df44dd9808
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306506"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408995"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
@@ -61,13 +61,108 @@ Office 365 Message Encryption は、Microsoft Azure Rights Management (Azure RMS
   
 ## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>新しい OME 機能を使用しない Office 365 メッセージ暗号化のメールフロールールを定義する
 
-新しい機能を使用せずに Office 365 メッセージの暗号化を有効にするには、exchange Online および Exchange Online Protection 管理者が Exchange メールフロールールを定義します。 これらのルールは、電子メールメッセージを暗号化する条件、およびメッセージの暗号化を削除する条件を決定します。 暗号化アクションをルールで設定すると、そのルールの条件を満たすすべてのメッセージが送信前に暗号化されます。
-  
+新しい機能を使用せずに Office 365 メッセージの暗号化を有効にするには、exchange Online および Exchange Online Protection 管理者が Exchange メールフロールールを定義します。 これらのルールは、電子メールメッセージを暗号化する条件、およびメッセージの暗号化を削除する条件を決定します。 ルールに対して暗号化アクションが設定されている場合、メッセージを送信する前に、ルールの条件に一致するすべてのメッセージに対してこのサービスによってアクションが実行されます。
+
 メール フロー ルールは柔軟であるため条件を組み合わせることができ、1 つのルールで特定のセキュリティ要件を満たすことができます。 たとえば、指定したキーワードを含み、外部の受信者に宛てられたすべてのメッセージを暗号化するルールを作成できます。 Office 365 Message Encryption は、暗号化された電子メールの受信者からの返信を暗号化することもできます。また、電子メールユーザーにとって便利なように、これらの返信を復号化するルールを作成することができます。 このようにすると、組織内のユーザーは、返信を表示するために暗号化ポータルにサインインする必要がなくなります。
   
 Exchange メールフロールールの作成方法の詳細については、「 [Define rules For Office 365 Message Encryption](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
   
-## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>暗号化されたメール メッセージの送信、表示、および返信
+### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>EAC を使用して、新しい OME 機能を使用せずに電子メールメッセージを暗号化するためのメールフロールールを作成する
+
+1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
+
+2. [ **管理** ] タイルを選択します。
+
+3. Microsoft 365 管理センターで、[**管理センター** ] [Exchange] を選択し \> **Exchange**ます。
+
+4. EAC で、[**メールフロー** ] [ルール] に移動し、 \> **Rules** [新しい**New** ![ 新規作成] アイコンを選択して ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールを作成**します。 EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
+
+5. [ **名前**] にルールの名前 (DrToniRamos@hotmail.com のメールの暗号化など) を入力します。
+
+6. **[次の場合、このルールを適用する]** で条件を選択し、必要に応じて値を入力します。たとえば、DrToniRamos@hotmail.com 宛のメッセージを暗号化するには、以下のようにします。
+
+   1. **[次の場合、このルールを適用する]** で、**[受信者]** を選択します。
+
+   2. 連絡先リストから既存の名前を選択するか、**[名前の確認]** ボックスに新しい電子メール アドレスを入力します。
+
+      - 既存の名前を選択する場合は、一覧から名前を選択してから **[OK]** をクリックします。
+
+      - 新しい名前を入力するには、[ **名前の確認** ] ボックスに電子メールアドレスを入力し、[ **名前の確認** \> **]** を選択します。
+
+7. さらに条件を追加するには、[ **その他のオプション** ] を選択し、[ **条件の追加** ] を選択してリストから選択します。
+
+   たとえば、受信者が組織の外部にいる場合にのみルールを適用するには、[**条件の追加**] を選択し、[**受信者が外部/内部**の \> **組織外**にある] を選択し \> **OK**ます。
+
+8. 新しい OME 機能を使用せずに暗号化を有効にするには、 **次の操作を行い**ます。 [ **メッセージセキュリティを変更**する] [ \> **前のバージョンの OME を適用**する]、[ **保存**] の順に選択します。
+
+   IRM ライセンスが有効になっていないというエラーが表示される場合は、従来の OME を使用していません。
+
+9. オプション別のアクションを指定するには、[ **アクションの追加** ] を選択します。
+
+### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Exchange Online の PowerShell を使用して、新しい OME 機能なしで電子メールメッセージを暗号化するためのメールフロールールを作成する
+
+1. Exchange Online PowerShell に接続します。 詳細については、「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+
+2. **New-transportrule**コマンドレットを使用してルールを作成し、 _ApplyOME_パラメーターをに設定し `$true` ます。
+
+   この例では、DrToniRamos@hotmail.com に送信されるすべての電子メールメッセージが暗号化されている必要があります。
+
+   ```powershell
+   New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
+   ```
+
+   ここで
+
+   - 新しいルールの一意の名前は、"Dr Toni Ramos の暗号化ルール" です。
+   - パラメーター _に_ は、メッセージの受信者を指定します (名前、電子メールアドレス、識別名などで識別されます)。 この例では、受信者は電子メールアドレス "DrToniRamos@hotmail.com" によって識別されます。
+   - /は、メッセージの受信者の場所を _指定します_ 。 この例では、受信者のメールボックスは hotmail にあり、組織の一部ではないため、値 `NotInOrganization` が使用されます。
+
+   詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)」を参照してください。
+
+### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>新しい OME 機能を使用せずに暗号化された電子メールの返信から暗号化を削除する
+
+電子メール ユーザーが暗号化メッセージを送信した場合、これらのメッセージの受信者は、暗号化された返信で応答することができます。 メールフロールールを作成して、返信からの暗号化を自動的に削除することで、組織内の電子メールユーザーが暗号化ポータルにサインインして表示されないようにすることができます。 これらのルールは、EAC または Windows PowerShell コマンドレットを使用して定義できます。 組織内から送信されたメッセージ、または組織内から送信されたメッセージに返信するメッセージの暗号化を解除することができます。 組織外からの暗号化されたメッセージを解読することはできません。
+
+#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>EAC を使用して、新しい OME 機能を使用せずに暗号化された電子メールの返信からの暗号化を削除するためのルールを作成する
+
+1. Web ブラウザーで、管理者のアクセス許可が付与されている職場または学校のアカウントを使用して、 [Office 365 にサインイン](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)します。
+
+2. [ **管理** ] タイルを選択します。
+
+3. Microsoft 365 管理センターで、[**管理センター** ] [Exchange] を選択し \> **Exchange**ます。
+
+4. EAC で、[**メールフロー** ] [ルール] に移動し、 \> **Rules** [新しい**New** ![ 新規作成] アイコンを選択して ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **新しいルールを作成**します。 EAC の使用方法の詳細については、「exchange [Online の exchange 管理センター](https://docs.microsoft.com/exchange/exchange-admin-center)」を参照してください。
+
+5. [ **名前**] にルールの名前を入力します。たとえば、[受信メールからの暗号化の削除] などです。
+
+6. [ **次の場合、このルールを適用** する] [ **受信者が** \> **組織内**にある] など、メッセージから暗号化を削除する条件を選択します。
+
+7. [ **実行する処理**] で、[ **メッセージのセキュリティを変更する**] を選択し \> ます。 **以前のバージョンの OME を削除**します。
+
+8. **[保存]** を選択します。
+
+#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Exchange Online PowerShell を使用して、新しい OME 機能なしで暗号化された電子メールの返信から暗号化を削除するルールを作成する
+
+1. Exchange Online PowerShell に接続します。 詳細については、「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+
+2. **New-transportrule**コマンドレットを使用してルールを作成し、 _RemoveOME_パラメーターをに設定し `$true` ます。
+
+   この例では、組織内の受信者に送信されるすべてのメールから暗号化を削除します。
+
+   ```powershell
+   New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
+   ```
+
+   ここで
+
+   - 新しいルールの一意の名前は、"受信メールから暗号化を削除する" です。
+   - /は、メッセージの受信者の場所を _指定します_ 。 この例では、値の `InOrganization` 値が使用されています。これは、次のいずれかを示しています。
+     - 受信者が組織内のメールボックス、メールユーザー、グループ、またはメールが有効なパブリックフォルダーである。
+     - 受信者の電子メールアドレスが、組織内の権限のあるドメインまたは内部の中継ドメインとして構成さ _れている_ 承認済みドメイン内にあり、認証された接続を介してメッセージが送信または受信された。
+
+詳細な構文とパラメーターについては、「[New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)」を参照してください。
+
+## <a name="sending-viewing-and-replying-to-messages-encrypted-without-the-new-capabilities"></a>新しい機能を使用せずに暗号化されたメッセージの送信、表示、および返信
 
 Office 365 メッセージの暗号化では、管理者が定義したルールに基づいて電子メールメッセージが自動的に暗号化されます。 暗号化されたメッセージを含む電子メールが、添付の HTML ファイルと共に受信者の受信トレイに到着します。
   
@@ -76,7 +171,7 @@ Office 365 メッセージの暗号化では、管理者が定義したルール
 ## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>Office 365 メッセージの暗号化を使用して暗号化されたメッセージをカスタマイズする
 
 Exchange Online および Exchange Online Protection 管理者は、暗号化されたメッセージをカスタマイズできます。 たとえば、会社のブランドとロゴを追加したり、概要を指定したり、暗号化されたメッセージや、受信者が暗号化されたメッセージを表示するポータルで、免責事項のテキストを追加したりすることができます。 Windows PowerShell のコマンドレットを使用して、暗号化された電子メール メッセージが受信者に表示される際の以下の側面をカスタマイズできます。
-  
+
 - 暗号化メッセージを含む電子メールの導入部のテキスト
 
 - 暗号化メッセージを含む電子メールの免責事項のテキスト
@@ -91,26 +186,26 @@ Exchange Online および Exchange Online Protection 管理者は、暗号化さ
   
 ![暗号化メッセージ ページの表示例](../media/TA-OME-3attachment2.jpg)
   
- **暗号化の電子メールメッセージと暗号化ポータルを組織のブランドでカスタマイズするには**
+**暗号化の電子メールメッセージと暗号化ポータルを組織のブランドでカスタマイズするには**
   
 1. 「リモート [Powershell を使用して Exchange online に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」の説明に従って、リモート powershell を使用して exchange online に接続します。
 
-2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用します。この場合、ガイダンスについ [ては、](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 次の表を参照してください。
+2. 以下の説明に従って、Set-OMEConfiguration コマンドレットを使用します。この場合、ガイダンスについ [ては、](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 次の表を参照してください。
 
    **暗号化のカスタマイズ オプション**
 
-|**カスタマイズする暗号化エクスペリエンスの特性**|**使用する Windows PowerShell コマンド**|
+**カスタマイズする暗号化エクスペリエンスの特性**|**使用する Windows PowerShell コマンド**|
 |:-----|:-----|
 |暗号化された電子メール メッセージに付けられる既定のテキスト  <br/> 暗号化メッセージの表示手順の上に表示される既定のテキスト  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **例:** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
 |暗号化メッセージを含む電子メールの免責文  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **例:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |暗号化メールの表示ポータルの最上部に表示されるテキスト  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **例:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
 |ロゴ  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **例:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> サポートされているファイル形式: .png、.jpg、.bmp、.tiff  <br/> ロゴ ファイルの最適なサイズ:40 KB 未満  <br/> 最適なロゴ画像のサイズ:170x70 ピクセル  <br/> |
 
- **暗号化の電子メールメッセージおよび暗号化ポータルからブランドのカスタマイズを削除するには**
+**暗号化の電子メールメッセージおよび暗号化ポータルからブランドのカスタマイズを削除するには**
   
 1. 「リモート [Powershell を使用して Exchange online に接続する](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)」の説明に従って、リモート powershell を使用して exchange online に接続します。
 
-2. 次の説明に従って、OMEConfiguration 設定コマンドレットを使用し[ます。](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 組織のブランド化されたカスタマイズを DisclaimerText、EmailText、および PortalText の値から削除するには、値を空の文字列に設定し  `""` ます。 ロゴなどのすべてのイメージ値について、値をに設定  `"$null"` します。
+2. 次の説明に従って Set-OMEConfiguration コマンドレットを使用し[ます。](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 組織のブランド化されたカスタマイズを DisclaimerText、EmailText、および PortalText の値から削除するには、値を空の文字列に設定し  `""` ます。 ロゴなどのすべてのイメージ値について、値をに設定  `"$null"` します。
 
    **暗号化のカスタマイズ オプション**
 
@@ -155,7 +250,7 @@ Microsoft 365 の暗号化されたメッセージを受信する組織外の受
   
  **Q. 暗号化された電子メール メッセージを独自のブランドでカスタマイズすることはできますか。**
   
-はい、できます。 Windows PowerShell コマンドレットを使用して、暗号化された電子メール メッセージの上に表示する既定のテキスト、免責事項テキスト、および電子メール メッセージや暗号化ポータルに使用するロゴをカスタマイズできます。 詳細については、「[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
+はい。 Windows PowerShell コマンドレットを使用して、暗号化された電子メール メッセージの上に表示する既定のテキスト、免責事項テキスト、および電子メール メッセージや暗号化ポータルに使用するロゴをカスタマイズできます。 詳細については、「[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
   
  **Q. このサービスは組織内のすべてのユーザーに対して 1 つのライセンスが必要ですか。**
   
@@ -195,7 +290,7 @@ Office 365 メッセージの暗号化は、暗号化インフラストラクチ
 
 詳細については、「 [AD RMS 暗号化モード](https://go.microsoft.com/fwlink/p/?LinkId=398616)」を参照してください。
   
- **Q。暗号化されたメッセージが Office365@messaging.microsoft.com から送られたことを示しているのはなぜ** ですか?
+**Q。暗号化されたメッセージが Office365@messaging.microsoft.com から送られたことを示しているのはなぜ** ですか?
   
 暗号化された返信が暗号ポータルから、または OME ビューアー アプリを介して送信されるとき、送信元電子メール アドレスは Office365@messaging.microsoft.com に設定されます。暗号化メッセージは Microsoft エンドポイントを介して送信されるためです。これにより、暗号化されたメッセージがスパムとしてマークされるのを回避できます。このラベルがあるため、暗号化ポータル内の電子メールとアドレスの表示名が変更されることはありません。また、このラベルが適用されるのは、ポータルを介して送信されるメッセージだけで、他の電子メール クライアントを介して送信されるメッセージには適用されません。
   
@@ -205,7 +300,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
  **Q.Office 365 メッセージの暗号化をサポートするために、組織のファイアウォール内の Url、IP アドレス、またはポートを開く必要がありますか。**
   
-はい、できます。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Microsoft 365 の url と IP アドレスの範囲](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)」を参照してください。
+はい。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online の Url の一覧については、「 [Microsoft 365 の url と IP アドレスの範囲](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)」を参照してください。
   
  **Q.Microsoft 365 で暗号化されたメッセージを送信できる受信者の数**
   
@@ -223,7 +318,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
   
 [Office 365 Messaging Encryption ポータルのプライバシー](https://privacy.microsoft.com/privacystatement)に関する声明では、Microsoft が個人情報に対して実行する操作と行わないことについての詳細情報が提供されています。
 
-## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>要求した後に1回限りのパスコードを受け取っていない場合はどうすればよいですか。
+**Q.要求した後に1回限りのパスコードを受け取っていない場合はどうすればよいですか。**
 
 最初に、電子メールクライアントの迷惑メールまたはスパムフォルダーを確認します。 組織の DKIM および DMARC の設定により、これらの電子メールがスパムとしてフィルター処理されることがあります。
 

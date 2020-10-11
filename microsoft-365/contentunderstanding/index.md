@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Microsoft SharePoint Syntex に関するリソースの検索方法について説明します。
-ms.openlocfilehash: 5d375b27fe3cd58069851f12c459460ac605da83
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 9580a2db62fc8ddef16e79817498eebe9feef6bb
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350775"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390121"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の概要
 
@@ -26,6 +26,12 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 - コンテンツを知識に変える
 
 このページに記載されているリソースでは、組織での SharePoint Syntex の学習と使い方について説明します。
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+
+</br>
 
 ## <a name="get-started"></a>はじめに
 
@@ -64,7 +70,7 @@ Microsoft SharePoint Syntex は、次のような組織支援をする Office 36
 | この情報を探している場合: | 参照先: |
 |:-----|:-----|
 |モデルの使用方法についての詳細情報|[コンテンツ センターを作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[分類子を作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[エクストラクターを作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[フォーム処理モデルを作成する](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[説明の種類](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[ドキュメント理解モデルの適用](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[サンプル モデルを使用したドキュメント理解モデルについての詳細情報](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|モデルに保持ラベルを適用する|[ドキュメントの理解とフォーム処理モデルの違い](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|モデルに保持ラベルを適用する|[保持ラベルをドキュメント理解モデルに適用する](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |エクストラクターの作成時に、 Managed Metadata Service の用語ストアの分類を使用する|[エクストラクターの作成時に用語ストアの分類を活用する](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |モデルに関するデータを表示する方法|[モデルの利用分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
 

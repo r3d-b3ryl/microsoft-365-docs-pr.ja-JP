@@ -9,20 +9,20 @@
         - name: BDM のための Microsoft 365 セキュリティ
           href: Microsoft-365-security-for-bdm.md
     - name: ID とデバイスのアクセス構成
-      href: ../enterprise/microsoft-365-policies-configurations.md
+      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
         - name: 事前に必要な作業
-          href: ../enterprise/identity-access-prerequisites.md
+          href: ./office-365-security/identity-access-prerequisites.md
         - name: 共通 ID とデバイスのアクセス ポリシー
-          href: ../enterprise/identity-access-policies.md
+          href: ./office-365-security/identity-access-policies.md
         - name: ゲスト ユーザーと外部ユーザーのポリシー
-          href: ../enterprise/identity-access-policies-guest-access.md
+          href: ./office-365-security/identity-access-policies-guest-access.md
         - name: 推奨されるチーム アクセス ポリシー
-          href: ../enterprise/teams-access-policies.md
+          href: ./office-365-security/teams-access-policies.md
         - name: 推奨される Exchange Online のアクセス ポリシー
-          href: ../enterprise/secure-email-recommended-policies.md
+          href: ./office-365-security/secure-email-recommended-policies.md
         - name: 推奨される SharePoint Online のアクセス ポリシー
-          href: ../enterprise/sharepoint-file-access-policies.md
+          href: ./office-365-security/sharepoint-file-access-policies.md
     - name: Microsoft セキュア スコア
       items:
         - name: セキュア スコアの概要
@@ -422,6 +422,8 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: 選挙運動用の開発/テスト環境でチーム サイトを作成する
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: Office 365 ATP のユーザー タグ
+              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items:

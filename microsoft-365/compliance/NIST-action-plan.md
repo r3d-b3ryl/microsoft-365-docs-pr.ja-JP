@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f123dbe96f2c8e395a6ae8b6e2d6ccc77200e865
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7b1f577cc17a1d8337441ddc13e079495d41c649
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195618"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398506"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -50,7 +50,7 @@ Microsoft はクラウド セキュリティの業界リーダーとして認識
 |**領域**|**タスク**|
 |NIST 800-53 要件を理解して、Microsoft のアドバイザリ パートナーと連携することを検討します。|•    Microsoft のパートナーと協力して、組織の NIST 800-53 コンプライアンスのギャップ分析を実施し、コンプライアンスへの行程を図化するロードマップを作成します。 <br>•   [Microsoft コンプライアンス マネージャー](compliance-manager.md)のガイダンスを使用して、アクセス制御と、情報の共有についてポリシーと手順を定義し文書化します。それは、目的、範囲、役割、責任、組織エンティティ間の調整、およびコンプライアンスに対処するものです。|
 |Microsoft 365 に組み込みの防御戦略について確認し、理解します。|•   [コンプライアンスマネージャー](compliance-manager.md)を使用して、コンプライアンスのリスクを評価および管理し、組織の NIST 800-53 評価を実行します。リスクの管理と緩和のために、 Microsoft 365 セキュリティ制御を評価の結果に合わせます。 <br>•    [Microsoft セキュア スコア](/security/office-365-security/office-365-secure-score.md)を利用して、Office 365 と Windows 10 デスクトップの両方で組織の Microsoft 365 セキュリティ機能の使用状況を時間経過と共に追跡します。 <br>•  [Office 365 のデータ暗号化](encryption.md)を提供するために使用される Microsoft のテクノロジと戦略、および Microsoft Cloud の[サービス拒否攻撃からの保護](https://docs.microsoft.com/office365/enterprise/office-365-defending-against-denial-of-service-attacks-overview)の戦略について確認します。|
-|ユーザーと管理者の Office 365 へのアクセスを保護します。|• [強力な資格情報の管理](https://docs.microsoft.com/azure/security/azure-ad-secure-steps#step-1---strengthen-your-credentials)を確立し、ユーザー アカウントの資格情報を保護します。 <br> •  Office 365 サービスの[推奨される ID とデバイス アクセス ポリシー](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)について確認します。<br> • [Office 365 の管理者ロール](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a)を使用して、管理機能へのロールベースのアクセスを実装し、管理業務の分離を可能にします。メモ: Office 365 の多くの管理者ロールには、Exchange Online、SharePoint Online、Skype for Business Online で対応するロールがあります。1 人の管理者が必要以上に大きなアクセス権を持たないように、アクセス許可を分割します。|
+|ユーザーと管理者の Office 365 へのアクセスを保護します。|• [強力な資格情報の管理](https://docs.microsoft.com/azure/security/azure-ad-secure-steps#step-1---strengthen-your-credentials)を確立し、ユーザー アカウントの資格情報を保護します。 <br> •  Office 365 サービスの[推奨される ID とデバイス アクセス ポリシー](../security/office-365-security/microsoft-365-policies-configurations.md)について確認します。<br> • [Office 365 の管理者ロール](https://support.office.com/article/understanding-administrative-roles-52f29955-6a60-435f-aba9-eb69c898606a) を使用して、管理機能へのロールベースのアクセスを実装し、管理業務の分離を可能にします。メモ: Office 365 の多くの管理者ロールには、Exchange Online、SharePoint Online、Skype for Business Online で対応するロールがあります。1 人の管理者が必要以上に大きなアクセス権を持たないように、アクセス許可を分割します。|
 |組織の監査ポリシーとアカウンタビリティ ポリシーに従って、システムへのすべてのアクセスが監査されることを確認します。|[監査ログ記録](search-the-audit-log-in-security-and-compliance.md)と[メールボックス監査](enable-mailbox-auditing.md)を (すべての Exchange メールボックスに対して) 有効にして、潜在的な悪意のあるアクティビティがないか Office 365 を監視し、データ侵害のフォレンジック分析を可能にします。|
 |||
 
@@ -61,7 +61,7 @@ Microsoft はクラウド セキュリティの業界リーダーとして認識
 |:-----|:-----|
 |**領域**|**タスク**|
 |マルウェア対策、パッチ適用、および構成管理プログラムを強化します。|•   組織に [Windows Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/deploy-windows-defender-antivirus)を展開し、有効にして、Windows 10 との緊密な統合を利用して企業の資産とデスクトップを保護します。<br>•   検疫済みのウイルスに感染したシステムを追跡し、修復の手順を実行するまで破損がさらに拡がらないようにします。<br>•   Microsoft 365 の厳格な標準変更管理プロセスを利用して、信頼できる更新プログラムや修正プログラムを適用します。|
-|Microsoft 365 のセキュリティ機能を使用して環境へのアクセスを制御し、組織の情報と資産を保護します。|•   [推奨される ID とデバイス アクセス ポリシー](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)を実装して、ユーザーと管理者アカウントを保護します。 <br>• 機密データをメールで送信する際にユーザーが組織のポリシーに準拠できるようにするために、[Office 365 Message Encryption (OME)](ome.md) 機能を実装します。<br>• 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) を展開します。<br>•  金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](apply-protection-to-personal-data-in-office-365.md)するためのポリシーを構成、テスト、展開します。<br>•   [ポリシー ヒント](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)を設定することで、ポリシーに抵触するメッセージを送信する前に、メールの送信者にポリシーの 1 つに違反している可能性があることを自動的に通知します。ポリシー ヒントは、メッセージの作成時に可能性のあるポリシー違反に関する情報を示す簡単なメモを表示するように設定できます (Outlook、Outlook on the web、デバイス用 OWA で表示されます)。<br>• [SharePoint Online と OneDrive for Business の外部共有](https://docs.microsoft.com/onedrive/manage-sharing)のコントロールを実装することで、企業の機密データを保護し、組織の情報を共有するためのポリシーに対処します。認証された外部ユーザーのみが企業のデータにアクセスできることを確認します。|
+|Microsoft 365 のセキュリティ機能を使用して環境へのアクセスを制御し、組織の情報と資産を保護します。|•   [推奨される ID とデバイス アクセス ポリシー](../security/office-365-security/microsoft-365-policies-configurations.md)を実装して、ユーザーと管理者アカウントを保護します。 <br>• 機密データをメールで送信する際にユーザーが組織のポリシーに準拠できるようにするために、[Office 365 Message Encryption (OME)](ome.md) 機能を実装します。<br>• 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) を展開します。<br>•  金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](apply-protection-to-personal-data-in-office-365.md)するためのポリシーを構成、テスト、展開します。<br>•   [ポリシー ヒント](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)を設定することで、ポリシーに抵触するメッセージを送信する前に、メールの送信者にポリシーの 1 つに違反している可能性があることを自動的に通知します。ポリシー ヒントは、メッセージの作成時に可能性のあるポリシー違反に関する情報を示す簡単なメモを表示するように設定できます (Outlook、Outlook on the web、デバイス用 OWA で表示されます)。<br>• [SharePoint Online と OneDrive for Business の外部共有](https://docs.microsoft.com/onedrive/manage-sharing)のコントロールを実装することで、企業の機密データを保護し、組織の情報を共有するためのポリシーに対処します。認証された外部ユーザーのみが企業のデータにアクセスできることを確認します。|
 |組み込みの監査機能を利用して、Office 365 内の機密情報やリスクの高いアクティビティを監視します。|•   Microsoft 365 セキュリティ/コンプライアンス センターの[アラート ポリシー](alert-policies.md)を有効にして、ユーザーのアカウント権限が昇格したり、機密データにアクセスしたりするなど機密性の高いアクティビティが発生した場合に自動通知が発生するようにします。 特権のある機能はすべて監査および監視する必要があります。<br>• 通常のスケジュールで、セキュリティ/コンプライアンス センターから[監査ログを検索](search-the-audit-log-in-security-and-compliance.md)し、テナントの構成設定に加えられた変更を確認します。<br>• 監査ログ データを長期間保存するには、Office 365 マネージメント アクティビティ API リファレンスを使用して、セキュリティ情報およびイベント管理 (SIEM) ツールと統合します。|
 |電子メールと Office ドキュメントのリンクと添付ファイルの両方に、Advanced Threat Protection を展開します。|[Office 365 Advanced Threat Protection (ATP)](/security/office-365-security/office-365-atp) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
 |||
