@@ -15,7 +15,7 @@ ms.collection:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: Microsoft 365 顧客データの世界中の保存場所を決定します。
+description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
 ms.openlocfilehash: 9f651cf2bf042a59efcfc9b76fd4349c839e7423
 ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
@@ -27,13 +27,13 @@ ms.locfileid: "48384769"
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
-# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
+# <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 の顧客データの保存場所
 
 >[!Note]
->この記事の更新プログラムは、Microsoft が厳密に管理しています。 直接編集することはできません。 変更等のご提案は、この記事の最後でフィードバックを送信してください。
+>この記事の更新は、Microsoft が厳密に管理しています。 直接編集することはできません。 変更のご提案は、この記事の最後でフィードバックとして送信してください。
 >
 
-次の表は、Microsoft のすべてのグローバル クラウドの場所で、Microsoft 365 サービスの顧客データが保存されている場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
+次の表は、Microsoft のすべてのグローバル クラウド ロケーション全体で、Microsoft 365 サービスの顧客データが保存されている場所を示します。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
 
 顧客は、**[設定] | [組織設定] | [組織プロファイル]  [データ場所]** の [Office 365 管理センター] で、テナント固有データの場所情報を閲覧します。
 
@@ -112,7 +112,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 
 ### <a name="can-i-edit-the-information-in-this-article"></a>この記事の情報を編集できますか?
 
-いいえ。 この記事の更新プログラムは、Microsoft が厳密に管理しています。 直接編集することはできません。 変更等のご提案は、この記事の最後でフィードバックを送信してください。
+いいえ。 この記事の更新は、Microsoft が厳密に管理しています。 直接編集することはできません。 変更のご提案は、この記事の最後でフィードバックとして送信してください。
 
 ## <a name="data-center-locations"></a>データ センターの場所
 

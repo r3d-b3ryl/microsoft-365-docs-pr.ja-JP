@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1be64f98def6676e27e1e0c1b3f7e031b31cba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196622"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408627"
 ---
-# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する 
+# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
@@ -68,7 +68,6 @@ ms.locfileid: "48196622"
 
 ![暗号化用の秘密度ラベルのオプション](../media/encrytion-options-sensitivity-label.png)
 
-
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>ラベルが適用された場合の既存の暗号化への影響
 
 暗号化されていないコンテンツに秘密度ラベルを適用する場合、選択可能な暗号化オプションを適用した場合の結果は、オプションの名前通りのものとなります。 たとえば、暗号化を [**None**] (なし) に設定した場合、コンテンツでは暗号化されていない状態が続きます。
@@ -88,6 +87,7 @@ ms.locfileid: "48196622"
 |**管理者定義によるアクセス許可が適用されたラベル**|元の暗号化が削除されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
 
 新しいラベルの暗号化が適用された場合、または元の暗号化が削除された場合にそれが実際に実行されるのは、このアクションをサポートする次の使用権限または役割が、ラベルの適用を行うユーザーに付与されている場合のみです。
+
 - 「エクスポート」または「フル コントロール」の[使用権限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
 - [Rights Management 発行者または Rights Management 所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)の役割、または[スーパー ユーザー](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
 
@@ -99,7 +99,7 @@ ms.locfileid: "48196622"
 
 メール メッセージが何らかの方法で暗号化されている場合、そのメールに添付されている暗号化されていないドキュメントでは、自動的に同じ暗号化設定が継承されます。
 
-既に暗号化されているドキュメントが添付ファイルとして追加された場合は常に、元の暗号化がそのドキュメントで維持されます。 
+既に暗号化されているドキュメントが添付ファイルとして追加された場合は常に、元の暗号化がそのドキュメントで維持されます。
 
 ## <a name="configure-encryption-settings"></a>暗号化設定を構成する
 
@@ -112,10 +112,9 @@ ms.locfileid: "48196622"
 
 一方、「**業務契約**」という名前の機密ラベルがあり、組織のワークフローの規定によりこのコンテンツに関して従業員と外部ユーザーの間でアドホック ベースで共同作業を行う必要がある場合は、従業員がラベルを割り当てる際に、アクセス許可を誰に付与するかを従業員が決定できるようにすることができます。 この柔軟性により、ユーザーの生産性が向上し、特定のシナリオに対処するために管理者に新しい機密度ラベルを更新または作成を要求することを減らすことができます。
 
-[Choosing whether to assign permissions now] (アクセス許可を今すぐ割り当てる) または [Let users assign permissions] (アクセス許可の割り当てをユーザーに許可する) の選択: 
+[Choosing whether to assign permissions now] (アクセス許可を今すぐ割り当てる) または [Let users assign permissions] (アクセス許可の割り当てをユーザーに許可する) の選択:
 
 ![ユーザーまたは管理者が定義したアクセス許可を追加するオプション](../media/sensitivity-label-user-or-admin-defined-permissions.png)
-
 
 ## <a name="assign-permissions-now"></a>アクセス許可を今すぐ割り当てる
 
@@ -162,7 +161,7 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 - Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 グループは、静的メンバーシップまたは[動的メンバーシップ](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)を持つことができます。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) を使用することはできません。
 
 - 任意のメール アドレスまたはドメイン。 この組織の任意のドメイン名を入力して、Azure AD を使用する別の組織のすべてのユーザーを指定するには、このオプションを使用します。 **gmail.com**、**hotmail.com**、**outlook.com** などのドメイン名を入力することにより、ソーシャル プロバイダーに対してこのオプションを使用することもできます。
-    
+
     > [!NOTE]
     > Azure AD を使用する組織のドメインを指定した場合、その特定のドメインへのアクセスを制限することはできません。 代わりに、Azure AD の検証済みドメインはすべて、指定したドメイン名を所有するテナントに自動的に含まれます。
 
@@ -175,6 +174,7 @@ Azure Rights Management サービスの暗号化で保護されたドキュメ�
 この設定では、ラベルによって暗号化されているコンテンツにアクセスできるユーザーは制限されませんが、コンテンツの暗号化は実行され、コンテンツの使用 (アクセス許可) およびコンテンツへのアクセス (有効期限とオフライン アクセス) を制限するオプションが提供されます。 ただし、暗号化されたコンテンツを開くために使用するアプリケーションでは、使用する認証方法がサポートされている必要があります。 このため、Google などのフェデレーションされたソーシャル プロバイダーやワンタイム パスコード認証はメールに対してのみ動作し、動作するのは Exchange Online を使用した場合のみになります。 Microsoft アカウントは、Office 365 アプリおよび [Azure Information Protection ビューアー](https://portal.azurerms.com/#/download)で使用できます。
 
 いずれの認証ユーザー設定の場合も、一般的なシナリオとして次のようなものがあります。
+
 - コンテンツの閲覧者は制限しないが、コンテンツの使用方法を制限したい。 たとえば、コンテンツの編集、コピー、または印刷を制限したい場合がこれに該当します。
 - コンテンツにアクセスするユーザーは制限しないが、コンテンツを開くユーザーを確認したい。
 - コンテンツの保存時と送信時の暗号化を要求する要件があるが、コンテンツに対するアクセス制御が必要ない場合。
@@ -223,10 +223,11 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
 - Outlook では、ユーザーは選択した受信者に対して [[転送不可](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)] オプションと同等の制限を選択することができます。
 
-- Word、PowerPoint、Excel で、ユーザーは特定のユーザー、グループ、または組織に対して任意のアクセス許可を選択するよう求められます。 
+- Word、PowerPoint、Excel で、ユーザーは特定のユーザー、グループ、または組織に対して任意のアクセス許可を選択するよう求められます。
+
     > [!NOTE]
     > Word、PowerPoint、Excel 用のこのオプションは、Azure Information Protection 統合ラベル付けクライアントでサポートされています。 組み込みのラベル付けを使用するアプリの場合は、[どのアプリがそれをサポートしているかを確認します](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)。
-    > 
+    >
     > このオプションが選択されているもののユーザーのアプリでサポートされていない場合、そのラベルはユーザーに表示されないか、または一貫性のためにラベルは表示されますが、ユーザーへの説明メッセージとともに適用はされません。
 
 選択するオプションがサポートされている場合に、秘密度ラベルがユーザーに表示されるどうかについて、次の表で確認できます。
@@ -272,7 +273,6 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 - MacOS: [**校閲**] タブ > [**保護**] > [**アクセス許可**] > [**制限アクセス**]
 
-
 ## <a name="example-configurations-for-the-encryption-settings"></a>暗号化の設定の構成例
 
 以下の各例では、[機密ラベルを作成または編集する](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)ときに、ウィザードの **[暗号化]** ページから構成を行います。 最初に、**[暗号化]** が **[適用]** に設定されていることを確認します。
@@ -281,18 +281,17 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>例 1: 暗号化されたメールを Gmail アカウントに送信するために [転送不可] を適用するラベル
 
-このラベルは Outlook および Outlook on the web でのみ表示され、Exchange Online を使用する必要があります。 Gmail アカウント (または組織外の他のメール アカウント) を使用しているユーザーに暗号化されたメールを送信する必要がある場合、このラベルを選択するようユーザーに指示します。 
+このラベルは Outlook および Outlook on the web でのみ表示され、Exchange Online を使用する必要があります。 Gmail アカウント (または組織外の他のメール アカウント) を使用しているユーザーに暗号化されたメールを送信する必要がある場合、このラベルを選択するようユーザーに指示します。
 
-ユーザーは、**[宛先]** ボックスに Gmail のメール アドレスを入力します。  次に、ラベルを選択すると、メールに [転送不可] オプションが自動的に追加されます。 その結果、受信者は、**[名前を付けて保存]** オプションを使用してメールを転送、印刷、コピー、またはメールボックス外に保存することができなくなります。 
+ユーザーは、**[宛先]** ボックスに Gmail のメール アドレスを入力します。  次に、ラベルを選択すると、メールに [転送不可] オプションが自動的に追加されます。 その結果、受信者は、**[名前を付けて保存]** オプションを使用してメールを転送、印刷、コピー、またはメールボックス外に保存することができなくなります。
 
 1. **[暗号化]** ページで: **[アクセス許可を今すぐ割り当てるか、それともユーザーに決定させますか?]** で、**[ラベルを適用するときに、ユーザーがアクセス許可を割り当てることができる]** を選択します。
 
-3. **[Outlook で、[転送不可] オプションと同等の制限を適用する]** チェックボックスを選択します。
+2. **[Outlook で、[転送不可] オプションと同等の制限を適用する]** チェックボックスを選択します。
 
-4. **[Word、PowerPoint、Excel で、ユーザーにアクセス許可を指定するように求める]** が選択されている場合、チェックボックスをオフにします。
+3. **[Word、PowerPoint、Excel で、ユーザーにアクセス許可を指定するように求める]** が選択されている場合、チェックボックスをオフにします。
 
-5. **[次へ]** を選択してウィザードを完了します。
-
+4. **[次へ]** を選択してウィザードを完了します。
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>例 2: 別の組織のすべてのユーザーを読み取り専用アクセス許可に制限するラベル
 
@@ -302,22 +301,21 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 1. **[暗号化]** ページで: **[アクセス許可を今すぐ割り当てるか、それともユーザーに決定させますか?]** で、**[アクセス許可を今すぐ割り当てる]** を選択します。
 
-3. **[オフライン アクセスの許可]** で、**[使用しない]** を選択します。
+2. **[オフライン アクセスの許可]** で、**[使用しない]** を選択します。
 
-4. **[アクセス許可の割り当て]** を選択します。
+3. **[アクセス許可の割り当て]** を選択します。
 
-3. **[アクセス許可の割り当て]** ウィンドウで、**[特定のメール アドレスまたはドメインを追加]** を選択します。
+4. **[アクセス許可の割り当て]** ウィンドウで、**[特定のメール アドレスまたはドメインを追加]** を選択します。
 
-4. テキスト ボックスに、他の組織のドメイン名を入力します (例: **fabrikam.com**)。 次に **[追加]** を選択します。
+5. テキスト ボックスに、他の組織のドメイン名を入力します (例: **fabrikam.com**)。 次に **[追加]** を選択します。
 
-5. **[アクセス許可の選択]** を選択します。
+6. **[アクセス許可の選択]** を選択します。
 
-6. **[アクセス許可の選択]** ウィンドウで、ドロップダウン ボックスを選択し、**[ビューアー]** を選択し、**[保存]** を選択します。
+7. **[アクセス許可の選択]** ウィンドウで、ドロップダウン ボックスを選択し、**[ビューアー]** を選択し、**[保存]** を選択します。
 
-6. **[アクセス許可の割り当て]** ウィンドウに戻り、**[保存]** を選択します。
+8. **[アクセス許可の割り当て]** ウィンドウに戻り、**[保存]** を選択します。
 
-7. **[暗号化]** ページで、**[次へ]** を選択してウィザードを完了します。
-
+9. **[暗号化]** ページで、**[次へ]** を選択してウィザードを完了します。
 
 ### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>例 3: コンテンツを暗号化する既存のラベルに外部ユーザーを追加する
 
@@ -339,10 +337,9 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 8. **[暗号化]** ページで、**[次へ]** を選択してウィザードを完了します。
 
-
 ### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>例 4: コンテンツを暗号化するが、誰がアクセスできるかについては制限をしないラベル
 
-この構成には、メールまたはドキュメントを暗号化するためにユーザー、グループ、またはドメインを指定する必要がないという利点があります。 コンテンツは引き続き暗号化され、使用権限、有効期限、オフライン アクセスを指定できます。 
+この構成には、メールまたはドキュメントを暗号化するためにユーザー、グループ、またはドメインを指定する必要がないという利点があります。 コンテンツは引き続き暗号化され、使用権限、有効期限、オフライン アクセスを指定できます。
 
 保護されたドキュメントまたはメールを開くことができるユーザーを制限する必要がない場合にのみ、この構成を使用してください。 [この設定の詳細情報](#requirements-and-limitations-for-add-any-authenticated-users)
 
@@ -352,8 +349,8 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 3. **[アクセス許可の割り当て]** を選択します。
 
-4. **[アクセス許可の割り当て]** ウィンドウで、**[すべての認証されたユーザーの追加]** を選択します。 
-    
+4. **[アクセス許可の割り当て]** ウィンドウで、**[すべての認証されたユーザーの追加]** を選択します。
+
     **[ユーザーとグループ]** については、自動的に追加された **Authenticated Users** を確認します。 この値を削除することはできますが、変更はできません。削除すると、**[すべての認証されたユーザーの追加]** の選択がキャンセルされます。
 
 5. **[アクセス許可の選択]** を選択します。
@@ -369,26 +366,26 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 重要なドキュメントやメールを暗号化することにより、許可されたユーザーのみがそのデータにアクセスできるようになります。 ただし、考慮すべき点がいつくかあります。
 
 - [SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md) 機能が組織でまだ有効になっていない場合:
-    
-    - 暗号化されたファイルに対して、検索、電子情報開示、Delve は動作しません。
-    - DLP ポリシーは、これらの暗号化されたファイルのメタデータ (保持ラベルの情報など) に対しては機能しますが、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) に対しては機能しません。
-    - ユーザーは、暗号化されたファイルを Web 用 Office で開くことはできません。 SharePoint および OneDrive 内の Office ファイルの秘密度ラベルが有効化されている場合、ユーザーは有効化されたファイルを Web 用 Office で開くことができますが、次のようないつくつかの[制限](sensitivity-labels-sharepoint-onedrive-files.md#limitations)があります: オンプレミス キー ("Hold Your Own Key" または HYOK と呼ばれます)を使用して適用された暗号化、[二重キー暗号化](#double-key-encryption)、秘密度ラベルとは別に適用された暗号化。
+
+  - 暗号化されたファイルに対して、検索、電子情報開示、Delve は動作しません。
+  - DLP ポリシーは、これらの暗号化されたファイルのメタデータ (保持ラベルの情報など) に対しては機能しますが、これらのファイルのコンテンツ (ファイル内のクレジット カード番号など) に対しては機能しません。
+  - ユーザーは、暗号化されたファイルを Web 用 Office で開くことはできません。 SharePoint および OneDrive 内の Office ファイルの秘密度ラベルが有効化されている場合、ユーザーは有効化されたファイルを Web 用 Office で開くことができますが、次のようないつくつかの[制限](sensitivity-labels-sharepoint-onedrive-files.md#limitations)があります: オンプレミス キー ("Hold Your Own Key" または HYOK と呼ばれます)を使用して適用された暗号化、[二重キー暗号化](#double-key-encryption)、秘密度ラベルとは別に適用された暗号化。
 
 - 暗号化されたファイルを複数のユーザーが同時に編集するには、全員が Web 用 Office を使用する必要があります。 この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
-    
-    - Office アプリ (Windows、Mac、Android、iOS)で、[**使用中のファイル**] メッセージがファイルをチェック アウトしているユーザーの名前とともにユーザーに表示されます。 その場合、ユーザーは読み取り専用コピーの閲覧またはそのコピーの保存と編集を行うことが可能で、他のユーザーによるファイルの使用が終了したときに通知を受け取ることができます。
-    - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。 その場合は、[**閲覧表示で開く**] を選択できます。
+
+  - Office アプリ (Windows、Mac、Android、iOS)で、[**使用中のファイル**] メッセージがファイルをチェック アウトしているユーザーの名前とともにユーザーに表示されます。 その場合、ユーザーは読み取り専用コピーの閲覧またはそのコピーの保存と編集を行うことが可能で、他のユーザーによるファイルの使用が終了したときに通知を受け取ることができます。
+  - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。 その場合は、[**閲覧表示で開く**] を選択できます。
 
 - Office アプリ (Windows、Mac、Android、iOS) の[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能は、暗号化されたファイルに対しては無効になっています。 自動保存を有効にする前に削除する必要があるアクセスの制限がファイルに適用されているというメッセージがユーザーに表示されます。
 
 - 暗号化されたファイルは、Office アプリ (Windows、Mac、Android、iOS) で開くのに時間がかかる場合があります。
 
 - 暗号化されたファイルに対する次の操作は Office アプリ (Windows、Mac、Android、iOS) ではサポートされておらず、問題が発生したことを示すエラー メッセージがユーザーに表示されます。 ただし、代替手段として SharePoint 機能を使用できます。
-    
-    - 以前のバージョンのコピーの表示、復元、および保存。 代替方法として、[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)と、Web 用 Office でこれらの操作を行えます。 
-    - ファイルの名前または場所の変更。 代替方法として、[ドキュメント ライブラリ内のファイル、フォルダー、またはリンクの名前を SharePoint で変更](https://support.microsoft.com/ja-JP/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)することができます。
 
-秘密度ラベルを使用して暗号化されたファイルでの共同作業環境を最適化するには、[SharePoint および OndeDrive 内の Office ファイル用秘密度ラベル](sensitivity-labels-sharepoint-onedrive-files.md)および Web 用 Office を使用することをお勧めします。 
+  - 以前のバージョンのコピーの表示、復元、および保存。 代替方法として、[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)と、Web 用 Office でこれらの操作を行えます。
+  - ファイルの名前または場所の変更。 代替方法として、[ドキュメント ライブラリ内のファイル、フォルダー、またはリンクの名前を SharePoint で変更](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)することができます。
+
+秘密度ラベルを使用して暗号化されたファイルでの共同作業環境を最適化するには、[SharePoint および OndeDrive 内の Office ファイル用秘密度ラベル](sensitivity-labels-sharepoint-onedrive-files.md)および Web 用 Office を使用することをお勧めします。
 
 ## <a name="important-prerequisites"></a>重要な前提条件
 
@@ -401,10 +398,10 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 ### <a name="configure-exchange-for-azure-information-protection"></a>Azure Information Protection 用に Exchange を構成する
 
 ユーザーは、Azure Information Protection 用に Exchange を構成していなくても、Outlook でラベルを適用してメールを暗号化できます。 ただし、Exchange が Azure Information Protection 用に構成されるまで、Azure Rights Management 保護を使用する機能の一部を Exchange で利用できません。
- 
-たとえば、暗号化された電子メールを携帯電話や Outlook on the web で表示すること、暗号化された電子メールの検索用インデックスの作成、Rights Management 保護用に Exchange Online DLP を構成することなどは行えません。 
+
+たとえば、暗号化された電子メールを携帯電話や Outlook on the web で表示すること、暗号化された電子メールの検索用インデックスの作成、Rights Management 保護用に Exchange Online DLP を構成することなどは行えません。
 
 このような追加のシナリオを Exchange でサポートする場合は、次の項目を参照してください。
 
 - Exchange Online の場合は、「[Exchange Online: IRM 構成](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)」の説明を参照してください。
-- Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)必要があります。 
+- Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)必要があります。
