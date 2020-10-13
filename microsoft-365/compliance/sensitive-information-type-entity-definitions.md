@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235573"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430434"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -133,7 +133,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- Identity 
+- ID 
 - 識別国の Id カード 
 - DNI 
 - 個人の NIC National レジストリ 
@@ -146,7 +146,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-6から twn の数字、銀行の州の支店番号なし
+6桁から10桁の数字、銀行の州の支店番号なし
 
 ### <a name="pattern"></a>パターン
 
@@ -808,7 +808,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - reisepassnummer
 - reisepasse
-- Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -1621,8 +1621,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - レジスタ
 - registrationsnumme
 - registrierung
-- social security number
-
+- 社会保障番号
 - ssn#
 - ssn
 - steuernummer
@@ -1702,7 +1701,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - paspoortnummers
 - Passeport 個別
 - Passeport livre
-- パス-Nr
+- Pass-Nr
 - Passnummer
 - reisepass kein
 
@@ -2162,8 +2161,7 @@ national id
 - 個人情報なし
 - 個人番号
 - personalidnumber#
-- social security number
-
+- 社会保障番号
 - ssn#
 - ssn
 - uniform 民事 id
@@ -3096,7 +3094,7 @@ master cards
 
 - carte blanche
 - carteblanche
-- credit card
+- クレジットカード
 - ]#
 - cc #:
 - 有効期限
@@ -4037,8 +4035,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - rodnéčíslo
 - ssn
 - ssn#
-- social security number
-
+- 社会保障番号
 - tax id
 
 - 税 id 番号
@@ -4305,8 +4302,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - kskの sk
 - nummer の sk
 - skattenummer
-- social security number
-
+- 社会保障番号
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5321,8 +5317,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - personalidnumber#
 - personbeteckning
 - personnummer
-- social security number
-
+- 社会保障番号
 - sosiaaliturvatunnus
 - tax id
 
@@ -6027,20 +6022,20 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
 
 - Nr-Führerschein 
-- Nr-Futex 
-- "Nr" という Futex 
-- Führerschein 
-- (Futex なし) 
-- その他の Ehの場合 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein 
 - N の Futex 
 - N 桁の Ehた ehのリリース
 - Nr-Führerschein 
-- Nr-Futex 
-- "Nr" という Futex 
-- Führerschein 
-- (Futex なし) 
-- その他の Ehの場合 
+- Nr-Fuhrerschein 
+- Nr-Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein 
 - N の Futex 
 - N 桁の Ehた ehのリリース 
@@ -6161,7 +6156,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - reisepasse
 - reisepassnummer
-- Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -7193,7 +7188,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-なし
+None
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Diseases の国際分類 (ICD-10-CM)
@@ -8550,8 +8545,7 @@ national id
 registration number
 - 収益番号
 - 社会保険番号
-- social security number
-
+- 社会保障番号
 - 都道府県税コード
 - 税ファイル番号
 - tax id
@@ -11276,8 +11270,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - rč
 - rodne cislo
 - rodnéčíslo
-- social security number
-
+- 社会保障番号
 - ssn#
 - ssn
 - személyi igazolvány szám
@@ -11979,7 +11972,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-なし
+None
 
 ## <a name="spain-tax-identification-number"></a>スペインの税識別番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -12631,8 +12624,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - pid
 - 保険番号
 - パーソナル id no#
-- social security number
-
+- 社会保障番号
 - 個人 id 番号
 - 個人識別番号
 - insuranceno#
@@ -13133,8 +13125,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 - protection act
 - 金
-- social security number
-
+- 社会保障番号
 - insurance application
 
 - medical application
