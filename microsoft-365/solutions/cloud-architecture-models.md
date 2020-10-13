@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 08b899582e6401c0950a1c7349b73130ee62acb4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 355d933c98bba284302c94e0dc9f54ba7ca52762
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308209"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446513"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>エンタープライズ アーキテクト向け Microsoft クラウドのイラスト
 
@@ -64,18 +64,25 @@ Microsoft のサービスとプラットフォーム用のハイブリッド ク
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>エンタープライズ アーキテクトのための Microsoft クラウドのセキュリティ
 
-Microsoft クラウド サービスおよびプラットフォームにおけるセキュリティについて IT アーキテクトが知る必要のある事柄。
+>[!Note]
+>このモデルを改訂しています。 更新されたバージョンについては、後でこの記事を確認してください。
+>
+
+<!--
+
+What IT architects need to know about security in Microsoft cloud services and platforms.
   
-|**アイテム**|**説明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Microsoft クラウドのセキュリティ モデルのサムネイル画像](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=48121) <br/>2018年12月更新 | このモデルには次のものが含まれています。 <ul><li>安全なサービスとプラットフォームを提供することにおける Microsoft の役割</li><li>セキュリティ上のリスクを軽減するというお客様側の責任</li><li>最高位のセキュリティ認定 </li><li>Microsoft コンサルティング サービスが提供するセキュリティ サービス </ul><br/>|
+|[![Thumb image for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+
+--> 
 
 
 <a name="attacks"></a>
-### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>一般的な攻撃と、組織を保護する Microsoft の機能
-最も一般的なサイバー攻撃と、攻撃の各段階で Microsoft が組織を支援する方法について説明します。 
+### 一般的な攻撃と、組織を保護する Microsoft の機能は、最も一般的なサイバー攻撃と、攻撃の各段階で Microsoft が組織を支援する方法について説明しています。 
 
-|**アイテム**|**説明**|
+|**Item**|**説明**|
 |:-----|:-----|
 |[![一般的な攻撃ポスターのサムネイル画像。](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> 2017年8月更新 | このポスターは、一般的な攻撃の経路を示し、攻撃の各段階で攻撃者を阻止する機能について説明します。 <br/>|
 

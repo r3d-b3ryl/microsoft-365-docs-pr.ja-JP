@@ -2,9 +2,9 @@
 title: 共有メールボックスの問題を解決する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスに問題が発生した場合は、これらのソリューションを試してみてください。
-ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445509"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>共有メールボックスの問題を解決する
 
@@ -35,7 +35,7 @@ ms.locfileid: "44400018"
 ## <a name="error-when-creating-shared-mailboxes"></a>共有メールボックスの作成時のエラー
 <a name="bkmk_Fix"> </a>
 
-エラーメッセージが表示された場合は、**プロキシアドレス "smtp: <共有メールボックス名 \> " が、プロキシアドレスまたは LegacyExchangeDN "" によって既に使用されてい \<name> ます。別のプロキシアドレスを選択してください**。これは、共有メールボックスに既に使用されている名前を付けようとしていることを意味します。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 これを行うには 2 つの方法があります。
+エラーメッセージが表示された場合は、 **プロキシアドレス "smtp: <共有メールボックス名 \> " が、プロキシアドレスまたは LegacyExchangeDN "" によって既に使用されてい \<name> ます。別のプロキシアドレスを選択してください**。これは、共有メールボックスに既に使用されている名前を付けようとしていることを意味します。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 これを行うには 2 つの方法があります。
 
   - Windows PowerShell を使用します。 手順:[異なるドメインで同じエイリアスを使用して共有メールボックスを作成する](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)方法については、次のブログ投稿を参照してください。
     

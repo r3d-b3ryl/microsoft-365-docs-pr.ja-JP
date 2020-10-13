@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368003"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446733"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Microsoft の脅威保護の試用ラボまたはパイロット環境の準備
 
@@ -75,7 +76,7 @@ Microsoft の脅威保護の試用ラボまたはパイロット環境を作成�
 Microsoft の脅威保護をプロビジョニングおよび使用するためのライセンス、ハードウェア要件、ソフトウェア要件、およびその他の構成設定について説明します。 [Microsoft の脅威保護](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)、 [microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [OFFICE 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)、 [Azure atp](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)、 [microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)の最小要件を参照してください。
 
 ## <a name="stakeholders-and-sign-off"></a>関係者と承認
-次のセクションでは、プロジェクトに関係するすべての関係者を特定し、評価のために、またはパイロットを実行しているかどうかにかかわらず、サインオフ、レビュー、または通知を受ける必要がある可能性があるすべての関係者を識別します。
+評価またはパイロットプロジェクトを実行しているかどうかにかかわらず、プロジェクトに関係するすべての関係者と、承認、レビュー、情報を入手する必要がある可能性がある情報を特定します。
 
 >[!NOTE]
 >組織によっては、このような役割を持つセキュリティ組織の成熟度を持たない場合があります。 このような場合は、レビューと承認の責任について指導者チームと相談してください。
@@ -88,13 +89,13 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 
 -   I = このプロジェクトの通知を受けた
 
-| Name                 | 役割                                                                                                                                                                                                          | アクション |
+| 氏名                 | Role                                                                                                                                                                                                          | アクション |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 名前と電子メールを入力する | **最高情報セキュリティ責任者 (CISO)** *新しいテクノロジの展開について組織の内部スポンサーとしての役割を果たすエグゼクティブの代表者。*                                                  | だから     |
 | 名前と電子メールを入力する | **サイバー防衛運用センター (cdoc) の本社**は、 *この変更がお客様のセキュリティ運用チームのプロセスとどのように連携するかを定義することを担当しています。*       | だから     |
 | 名前と電子メールを入力する | **セキュリティアーキテクト**セキュリティ *チームは、この変更が組織内のコアセキュリティアーキテクチャとどのように連携するかを定義することを担当しています。*                         | R      |
 | 名前と電子メールを入力する | **Workplace アーキテクト** *IT チームの代表者は、この変更が組織内のコアワークプレースアーキテクチャとどのように連携するかを定義すること*を担当します。                             | R      |
-| 名前と電子メールを入力する | **セキュリティアナリスト***この変更によって、検出機能、ユーザーの操作、およびこの変更の全体的な有用性に関する情報を提供できる、cdoc チームからの担当者は、セキュリティ運用の観点から、この変更に関する情報を提供できます。* | I      |
+| 名前と電子メールを入力する | **セキュリティアナリスト** *cdoc チームの代表者が、セキュリティ運用の観点からの、検出機能、ユーザーの操作、およびこの変更の全体的な有用性に関するフィードバックを提供することができます。* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>Azure Active Directory の準備
 オンプレミスの Active Directory と Azure Active Directory との間の同期を既に有効にしている場合は、この手順をスキップします。 Azure Active Directory からの既存のベストプラクティスドキュメントを確認します。 次の手順は、パイロット Microsoft の脅威保護プロジェクトを評価または実行するために最適化されています。
@@ -127,13 +128,13 @@ Microsoft の脅威保護をプロビジョニングおよび使用するため�
 
 
 ## <a name="configuration-order"></a>構成の順序
-次の表は、試用ラボまたはパイロット環境の展開に Microsoft の脅威保護コンポーネントを構成するために Microsoft が推奨する順序を示しています。
+次の表は、試用ラボやパイロット環境の展開に Microsoft の脅威保護コンポーネントを構成する場合に Microsoft が推奨する順序を示しています。
 
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 構成順序のランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 Advanced Threat Protection| Office 365 ATP は、電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 <br> [詳細情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
-|Azure Advanced Threat Protection|Azure ATP では、Active Directory のシグナルを使用して、高度な脅威、侵害された id、および組織に向けた悪意のある insider 操作を識別、検出、調査します。 <br> [詳細については、こちらを参照してください](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 2  |
-|Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで稼働するクラウドアクセスセキュリティブローカー (CASB) です。 これにより、豊富な可視性、データ移動の制御、および高度な分析が提供され、すべてのクラウドサービスにわたる脅威を特定し、戦闘することができます。 <br> [詳細については、こちらを参照してください](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+| Office 365 Advanced Threat Protection| Office 365 ATP は、電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 <br> [詳細情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1-d                   |
+|Azure Advanced Threat Protection|Azure ATP では、Active Directory のシグナルを使用して、高度な脅威、侵害された id、および組織に向けた悪意のある insider 操作を識別、検出、調査します。 <br> [詳細については、こちらを参照してください](https://docs.microsoft.com/azure-advanced-threat-protection/)。| pbm-2 |
+|Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで稼働するクラウドアクセスセキュリティブローカー (CASB) です。 これにより、豊富な可視性、データ移動の制御、および高度な分析が提供され、すべてのクラウドサービスにわたる脅威を特定し、戦闘することができます。 <br> [詳細については、こちらを参照してください](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |1/3                   |
 |Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP エンドポイント検出および対応機能により、高度な攻撃のほとんどリアルタイムで実用的な検出が実現されます。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>次のステップ

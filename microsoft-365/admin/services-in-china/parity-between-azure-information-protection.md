@@ -1,5 +1,5 @@
 ---
-title: 21Vianet が運用している Office 365
+title: 21Vianet が運用している Office 365 の Azure Information Protection 間のパリティ
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 description: 21Vianet が運用している Office 365 の Azure Information Protection と、中国のお客様に対して構成する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 1f5d73f5c421a545ea0085f018a2c2a703b0b374
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ca30811e77f686b92b8cdd13d624182eb0d3039e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399040"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445581"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet が運用している Office 365 の Azure Information Protection 間のパリティ
 
 21Vianet が運用している Office 365 の Azure Information Protection を使用して、中国のお客様にすべての商用機能と機能を提供することを目標としていますが、いくつかの不足している機能を強調したいと考えています。
 
-次に示すのは、21Vianet が運用している Office 365 用の Azure Information Protection と、2007年 7 2019 月の商用オファーリングの間の既存のギャップです。
+次の一覧には、21Vianet が運用している Office 365 用の Azure Information Protection と、2007 2019 年7月の商用オファーリングの間の既存のギャップが記載されています。
 
 - Information Rights Management (IRM) は、Microsoft 365 Apps for enterprise (ビルド11731.10000 以降) に対してのみサポートされています。 Office 2010、Office 2013、およびその他の Office 2016 バージョンはサポートされていません。
 

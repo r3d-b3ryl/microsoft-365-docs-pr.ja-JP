@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターの送信ポータルを使用して、疑わしいメール、疑わしいフィッシングメール、スパム、その他の潜在的な有害なメッセージ、Url、およびその他の潜在的な問題を報告する方法について説明します。
-ms.openlocfilehash: 5165761b96eefe85437743968502dada51bc297f
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 4bb0cd95daecfcba18ca1560e4c4780455b40157
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412024"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446721"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 

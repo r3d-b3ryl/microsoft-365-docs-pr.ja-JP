@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: b9f037e3e6d798122b8d3c7ffd3476e34bd5a76b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 101747fa1121c675938610b9681f98c6e39b7d75
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411964"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446617"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
 
@@ -36,7 +36,7 @@ ms.locfileid: "48411964"
 **適用対象:**
 - Microsoft Defender for Office 365
 
-[Office 365 ミスの自動化された調査と応答 (AIR) 機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 以下のことを実行できます。
+[Office 365 ミスの自動化された調査と応答 (AIR) 機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 次の操作を実行できます。
 - [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
 - [通知を調整し](#adjust-an-alert-to-prevent-false-positives-from-recurring) ます (必要な場合)。そして 
 - [実行された修復操作を元に戻し](#undo-a-remediation-action)ます。 

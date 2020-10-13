@@ -12,15 +12,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: it-pro
 description: Microsoft 365 用のテナントをセットアップするためのロードマップ。
-ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 0f1fa91bb81fd6cc87820f2b2d48e00e1b75a0c4
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357912"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446009"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 のテナントロードマップ
 
@@ -43,7 +43,7 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 - [テナントの分離について](microsoft-365-tenant-isolation-overview.md)
 - [Microsoft 365 サービスアシュアランスの詳細を取得する](https://docs.microsoft.com/microsoft-365/compliance/service-assurance)
 
-## <a name="deploy"></a>展開
+## <a name="deploy"></a>展開する
 
 テナントを展開するには、組織の [DNS ドメインを追加](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) し、 [Microsoft 365 管理センターのセットアップガイド](setup-guides-for-microsoft-365.md)を使用します。
 

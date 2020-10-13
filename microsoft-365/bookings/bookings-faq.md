@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft の予約についてよく寄せられる質問。
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545718"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445453"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 予約のよく寄せられる質問
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545718"
 
 ### <a name="what-is-microsoft-bookings"></a>Microsoft 予約とは
 
-Microsoft の予約は、予定のスケジュール設定と管理を簡単に行う Microsoft 365 アプリです。 予約 incudes Web ベースの予約予定表を使用して、従業員の予定表を最適化するために Outlook と統合し、お客様にとって最適な時間を提供できるようにお客様に柔軟性を提供します。 自動化された通知メールは、何も表示しないようにするため、組織は時間を節約し、繰り返しスケジュールタスクを減らすことができます。 予約は、Skype または Microsoft Teams を使用して仮想の予定を簡単に実行できるようにするもので、Teams で予約アプリを使用して日常のスケジュール管理に役立てることができます。 組み込みのカスタマイズ機能により、予約は組織の複数のパーツのニーズを満たすように設計されています。
+Microsoft の予約は、予定のスケジュール設定と管理を簡単に行う Microsoft 365 アプリです。 予約には、Web ベースの予約予定表が含まれており、従業員の予定表を最適化するために Outlook と統合し、お客様にとって最適な時間を提供できるようにお客様に柔軟性を持たせることができます。 自動化された通知メールは、何も表示しないようにするため、組織は時間を節約し、繰り返しスケジュールタスクを減らすことができます。 予約は、Skype または Microsoft Teams を使用して仮想の予定を簡単に実行できるようにするもので、Teams で予約アプリを使用して日常のスケジュール管理に役立てることができます。 組み込みのカスタマイズ機能により、予約は組織の複数のパーツのニーズを満たすように設計されています。
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>Microsoft の予約を使用するにはどうすればよいですか?
 
@@ -174,7 +174,7 @@ Skype または Microsoft Teams クライアントを使用している場合、
 
 すべての時刻は、既定では、勤務時間領域 (ローカルタイムゾーン) にあります。 これは、勤務時間などの予約カレンダーに対して構成したすべての設定がこのタイムゾーンに表示されることを意味します。 セルフサービスページには、すべての予定時間をエンドユーザーのタイムゾーンで表示する機能があり、必要に応じてオフにすることができます。[予約ページ] タブの [ **常に勤務時間帯にタイムスロットを表示する** ] チェックがオフになっている場合、ページを訪れたユーザーには、自分のローカルタイムゾーンのタイムスロットが表示されます。
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="予約地域とタイムゾーンの設定":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="予約のスケジューリング":::
 
 予約にスタッフのタイムゾーンを設定するためのプロビジョニングはありません。 スタッフのタイムゾーン、つまり営業時間帯は、ビジネスタイムゾーンになります。
 
@@ -202,7 +202,7 @@ Skype または Microsoft Teams クライアントを使用している場合、
 
 はい。 Web アプリの [予約ページ] タブにあるチェックボックス: **Microsoft 365 または Office 365 アカウントを組織から予約する必要**があります。 このチェックボックスをオンにすると、セルフサービスページアクセスがテナント内のユーザーにのみ制限されます。 Web アプリの作成と管理に含まれる予約予定表は、管理者または閲覧者の役割を持つページにスタッフとして追加された個人のみがアクセスできます。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のページのアクセス制御":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のスケジューリング":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>ホームページの更新頻度
 
@@ -214,7 +214,7 @@ Web アプリが読み込まれるたびに、ホームページにリンクさ�
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>予定表を複製または複製することができます。また、簡単に拡張できるように templatized できますか?
 
-ページを複製する機能は、現在 PowerShell を介して利用できます。 このプロセスでは、Graph API を使用してメールボックスの詳細を取得し、その詳細を使用して新しいメールボックスを作成します。 API ドキュメントは [こちら](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)です。
+このプロセスでは、Graph API を使用してメールボックスの詳細を取得し、その詳細を使用して新しいメールボックスを作成します。 API ドキュメントは [こちら](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)です。
 
 ### <a name="what-reporting-is-available-in-bookings"></a>予約ではどのようなレポートを利用できますか?
 
@@ -250,7 +250,7 @@ Web アプリが読み込まれるたびに、ホームページにリンクさ�
 
 予約 Web アプリへのアクセスには、通常の Azure Active Directory (AAD) 認証による認証が伴います。 セルフサービス予約ページは、[Web ページ] リンクを使用してすべてのユーザーが利用できるようにすることができます。 ただし、 **[microsoft 365 または Office 365 アカウントを組織に必要** とする] 設定が選択されている場合、ページは microsoft 365 テナント内でのみ使用することができます (AAD 認証を使用)。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のページのアクセス制御":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="予約のスケジューリング":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>お客様のデータは何らかの理由で運用システムから出ますか?
 

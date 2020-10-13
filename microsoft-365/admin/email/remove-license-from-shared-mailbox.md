@@ -2,8 +2,8 @@
 title: 共有メールボックスからライセンスを削除する
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '共有メールボックスからライセンスを削除して、別のユーザーに割り当てます。 '
-ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432221"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445497"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。
 
 ::: moniker-end
 
@@ -51,58 +51,58 @@ ms.locfileid: "44432221"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
    > [!NOTE]
    > [アクティブなユーザー] ページからライセンスを削除する必要があります。 ライセンスはユーザー設定なので、共有メールボックスページからライセンスを削除することはできません。 
   
 2. 共有メールボックスを選択します。
 
-3. [**ライセンスとアプリ**] タブで、[**ライセンス**] を展開し、削除するライセンスのボックスをオフにします。
+3. [ **ライセンスとアプリ** ] タブで、[ **ライセンス** ] を展開し、削除するライセンスのボックスをオフにします。
 
 4. [**変更の保存**] を選択します。
 
-5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
+5. [ **アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は **ライセンス**されません。
 
-6. ライセンスの支払いはまだ完了していません。 その支払いを停止するには、[サブスクリプションからライセンスを削除](../../commerce/licenses/remove-licenses-from-subscription.md)します。
+6. ライセンスの支払いはまだ完了していません。 その支払いを停止するには、 [サブスクリプションからライセンスを削除](../../commerce/licenses/remove-licenses-from-subscription.md)します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
-   > [!NOTE]
-   > [アクティブなユーザー] ページからライセンスを削除する必要があります。 ライセンスはユーザー設定なので、共有メールボックスページからライセンスを削除することはできません。
+    > [!NOTE]
+    > [アクティブなユーザー] ページからライセンスを削除する必要があります。 ライセンスはユーザー設定なので、共有メールボックスページからライセンスを削除することはできません。
 
 2. 共有メールボックスを選択し、[**製品ライセンス**] の横にある [**編集**] を選択します。
 
-3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
+3. [ **製品ライセンス** ] ページで、削除するライセンスのトグルを [ **オフ** ] に設定します。
 
 4. [**保存**] を選択します。
 
-5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
+5. [ **アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は **ライセンス**されません。
 
-6. ライセンスの支払いはまだ完了していません。 その支払いを停止するには、[サブスクリプションからライセンスを削除](../../commerce/licenses/remove-licenses-from-subscription.md)します。
+6. ライセンスの支払いはまだ完了していません。 その支払いを停止するには、 [サブスクリプションからライセンスを削除](../../commerce/licenses/remove-licenses-from-subscription.md)します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+ 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
-   > [!NOTE]
-   > [アクティブなユーザー] ページからライセンスを削除する必要があります。 ライセンスはユーザー設定なので、共有メールボックスページからライセンスを削除することはできません。
+    > [!NOTE]
+    > [アクティブなユーザー] ページからライセンスを削除する必要があります。 ライセンスはユーザー設定なので、共有メールボックスページからライセンスを削除することはできません。
 
 2. 共有メールボックスを選択し、[**製品ライセンス**] の横にある [**編集**] を選択します。
 
-3. [**製品ライセンス**] ページで、削除するライセンスのトグルを [**オフ**] に設定します。
+3. [ **製品ライセンス** ] ページで、削除するライセンスのトグルを [ **オフ** ] に設定します。
 
 4. [**保存**] を選択します。
 
-5. [**アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は**ライセンス**されません。
+5. [ **アクティブなユーザー** ] ページに戻ると、共有メールボックスの状態は **ライセンス**されません。
 
-6. ライセンスの支払いはまだ完了していません。 その支払いを停止するには、[サブスクリプションからライセンスを削除](../../commerce/licenses/remove-licenses-from-subscription.md)します。
+6. ライセンスの支払いはまだ完了していません。 その支払いを停止するには、 [サブスクリプションからライセンスを削除](../../commerce/licenses/remove-licenses-from-subscription.md)します。
 
 ::: moniker-end 
 

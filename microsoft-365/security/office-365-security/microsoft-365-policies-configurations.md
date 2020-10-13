@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 502ceb47a110dd7cd743281d518e542451413672
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e07c1455cc2799481bc31871d2c3ee07b10492b9
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399695"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446185"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -118,7 +118,9 @@ Azure AD には、id 管理機能の完全なスイートが用意されてい�
 | [Azure AD パスワード保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 既知の脆弱なパスワードとその亜種、および組織に固有のその他の弱い用語を検出およびブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。 |  Microsoft 365 E3 または E5 |
 ||||
 
-![Id とデバイスのアクセスのコンポーネント。](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+ここでは、Intune および Azure AD オブジェクト、設定、および subservices を含む、id およびデバイスアクセスのコンポーネントを示します。
+
+![Id とデバイスのアクセスのコンポーネント](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Threat Protection を評価する
-description: Microsoft の脅威保護の試用ラボまたはパイロット環境をセットアップして、デバイス、id、データ、およびアプリケーションを保護するために設計された調整脅威保護ソリューションが組織にどのように役立つかを確認します。
+description: 組織内のデバイス、id、データ、およびアプリケーションを保護するために設計されたセキュリティソリューションを体験して、Microsoft の脅威保護の試用ラボまたはパイロット環境を設定します。
 keywords: Microsoft threat Protection の試用版、microsoft threat protection の評価、microsoft の脅威保護の評価ラボ、microsoft の脅威保護のパイロット、サイバーセキュリティ、高度な脅威、企業のセキュリティ、デバイス、デバイス、id、ユーザー、データ、アプリケーション、インシデント、自動化された調査と修復、高度な検索
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 489ce48be4d995d7e91e2559311d7e619530ba4c
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: d3f63c8ac4ba82a80c365dce564bbd8d3dd4da4b
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418087"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447121"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>Microsoft の脅威保護の試用ラボまたはパイロット環境を作成する 
 
@@ -35,9 +35,9 @@ ms.locfileid: "48418087"
 **適用対象:**
 - Microsoft Threat Protection
 
-この試用版またはパイロット環境を作成する目的は、Microsoft の脅威保護に関する総合的かつ統合されたインテリジェントな機能を示しています。これは、組織で使用できる検出、防止、調査、および応答に関するものです。 
+この試用版またはパイロット環境を作成する目的は、包括的かつ統合された Microsoft の脅威保護機能を理解することです。 このインテリジェントセキュリティソリューションが組織に対する高度な脅威を検出、阻止、自動調査、および応答する方法について説明します。 
 
-このガイドでは、推奨される展開パスに基づいて Microsoft の脅威保護評価を開始する手順について説明します。 目標は、完全なライセンスを使用している場合に、試用版のアカウントを使用するとき、または運用環境で試験環境で統合された Microsoft Threat Protection サービスをセットアップするのに役立ちます。 の結果は、組織内のセキュリティソリューションの意思決定者にセキュリティ操作のユースケースを提示するのに役立ちます。 攻撃のシミュレーションを実行し、結果に問題がなければ、組織内の Microsoft テクニカルセールス担当者または専門家と協力して、組織内で operationalize it を完全に展開し、それを確認することができます。 
+このガイドでは、推奨される展開パスに基づいて Microsoft の脅威保護評価を開始する手順について説明します。 ここでの目的は、試用版アカウントを使用したラボ環境で、または完全ライセンスを使用した運用環境で、セキュリティソリューションをセットアップできるようにすることです。 試用ラボまたはパイロット環境の準備は、組織の意思決定者にセキュリティ操作の使用ケースを提示するのに役立ちます。 攻撃のシミュレーションの実行が完了し、結果に問題がなければ、組織内の Microsoft テクニカルセールス担当者または専門家と協力して、組織内で operationalize it を完全に展開し、その結果を得ることができます。 
 
 このガイドは、次のことを支援します。
 - ラボサーバーとコンピューターをセットアップする

@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Office 365 の Microsoft Defender で自動調査を行った後の修復アクションについて説明します。
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: a868b5e55bcc46c7134494172d05fb4a34075a0c
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411940"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446709"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の自動調査に続く修復アクション
 
@@ -67,7 +67,7 @@ ms.locfileid: "48411940"
 |User|異常メール送信 <br/>(ユーザーが以前の7-10 日より多くの電子メールを送信しました)。|自動調査を実行しても、特定の保留中のアクションは発生しません。 <br/><br/>多くの電子メールを送信することは、それ自体では悪意がありません。ユーザーは、1つのイベントについて大量の受信者グループに電子メールを送信しただけの場合があります。 調査するには、[メールフローのマップレポート](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-mail-flow-map-report)を含む[メールフローインサイト](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-insights-v2)を使用して、何が起こっているのかを特定し、処理を行います。|
 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft Defender for Office 365 の自動調査の詳細と結果を表示する](air-view-investigation-results.md)
 

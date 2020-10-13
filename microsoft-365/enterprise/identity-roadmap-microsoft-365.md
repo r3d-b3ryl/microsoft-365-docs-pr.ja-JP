@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 のロードマップ情報。
-ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398773"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446289"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 の ID ロードマップ
 
@@ -48,7 +48,7 @@ Id の実装を計画するには、次のようにします。
 - [さまざまな id モデルを理解する](about-microsoft-365-identity.md)
 - [ハイブリッド id とディレクトリ同期を計画する](plan-for-directory-synchronization.md)
 
-## <a name="deploy"></a>展開
+## <a name="deploy"></a>展開する
 
 Id の実装を展開するには、次のようにします。
 

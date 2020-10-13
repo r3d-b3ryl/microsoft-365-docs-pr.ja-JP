@@ -12,15 +12,15 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 - MET150
 description: 管理者は、フィッシングメッセージが Microsoft 365 でどのように表示されるのか、および今後のフィッシングメッセージを回避するために何を行う必要があるかを特定する方法について説明します。
-ms.openlocfilehash: ca1030141dd18797c7672b95ccae60b86fe9b7f2
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414156"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446467"
 ---
 # <a name="tune-anti-phishing-protection"></a>フィッシング対策保護を調整する
 

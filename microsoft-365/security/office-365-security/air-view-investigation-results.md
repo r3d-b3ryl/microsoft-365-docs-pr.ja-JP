@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Microsoft 365 の自動調査の最中および実行後に、結果と主要な結果を表示することができます。
 ms.date: 09/29/2020
-ms.openlocfilehash: f3070cb0760cfa4405a7f6a7e20680c3e304275d
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 18da168615ce7e570bcdc9149ac14fe72b8eda4f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412012"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447061"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 
@@ -271,7 +271,7 @@ ms.locfileid: "48412012"
 - 結果の CSV ファイルへのエクスポート。
 - ビューのフィルタリング。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [保留中のアクションを確認して承認する](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 

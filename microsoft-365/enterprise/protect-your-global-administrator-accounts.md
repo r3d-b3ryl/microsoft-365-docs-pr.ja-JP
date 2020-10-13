@@ -10,7 +10,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: この記事では、グローバル管理者のアクセスを Microsoft 365 サブスクリプションに保護する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bcc1a09ca8e7c57d4d6c69400925df3531c53c4f
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 15c497e02b139ea6af4aabba9f3e9ab65a1205be
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357808"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445409"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Microsoft 365 のグローバル管理者アカウントを保護する
 
@@ -48,7 +48,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
 > [!Note]
 > この記事ではグローバル管理者アカウントに重点を置いていますが、電子情報開示管理者やセキュリティまたはコンプライアンス管理者アカウントなど、さまざまな範囲のアクセス許可を持つその他のアカウントを同じ方法で保護する必要があるかどうかを検討する必要があります。 <br > グローバル管理者アカウントは、ライセンスを追加することなく作成できます。
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1. 専用の Microsoft 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>手順 1.  専用の Microsoft 365 グローバル管理者アカウントを作成し、必要な場合にのみ使用する
 
 グローバル管理者特権を必要とする、ユーザーアカウントへの役割の割り当てなど、比較的少数の管理タスクがあります。 そのため、グローバル管理者の役割が割り当てられている日常のユーザーアカウントを使用する代わりに、次の手順を実行します。
   
@@ -91,7 +91,7 @@ Microsoft は、組織を保護するための機能を提供していますが�
 > [!NOTE]
 > これには、日常のユーザーアカウントとしてサインアウトし、専用のグローバル管理者アカウントでサインインするための追加の手順が必要になります。 ただし、この操作を実行する必要があるのは、全体管理者の操作の場合だけです。 グローバル管理者アカウント違反がある場合は、さらに多くの手順を実行する必要があるため、Microsoft 365 サブスクリプションを復元することを検討してください。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>手順 2. 専用の Microsoft 365 グローバル管理者アカウントに対して多要素認証を構成する
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>手順 2.  専用の Microsoft 365 グローバル管理者アカウントに対して多要素認証を構成する
 
 多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365 では、次の追加の検証方法がサポートされています。
   

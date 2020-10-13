@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: Office 365 Advanced Threat Protection プラン2の自動調査および応答機能の修復アクションについて説明します。
-ms.openlocfilehash: 29a3c2f59ba85c2c5d9965c0c7f262dcba1ecda7
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 1df963a77054e1adc9a290e976be5998d6298436
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411988"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446629"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>Office 365 の自動調査の後に、保留中または完了した修復アクションを表示する
 
@@ -53,7 +53,7 @@ ms.locfileid: "48411988"
    - **承認** は修復を開始することを許可します。
    - **却下** にはその他のアクションはありません
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Office 365 の自動調査の詳細と結果](air-view-investigation-results.md)
 

@@ -15,15 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab691e88c8450e4f1ab898fe6a9d75d6682370a5
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: bd437141f80b80370abeec7585596892f2434655
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417395"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446572"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -127,7 +127,7 @@ ms.locfileid: "48417395"
 Focussed to URL と URL クリックデータに関する改良点のセットは、次のとおりです。
 
 -   Url のポップアップセクションのクリックセクション内に、完全にクリックされた URL (URL の一部であるすべてのクエリパラメーターを含む) を表示します。 現在、URL ドメインとパスがタイトルバーに表示されています。 この情報を拡張して、完全な URL を表示しています。
--   Url フィルター (url、url ドメイン、URL ドメイン、パス) にわたる修正: URL を含むメッセージを検索し、[verdict] をクリックして更新を行いました。 その一環として、プロトコルに依存しない検索のサポートが有効になっています (つまり、http を使用せずに URL を直接検索できます)。 既定では、URL 検索は明示的に指定されていない限り、http にマップされます。 例:
+-   Url フィルター (url、url ドメイン、URL ドメイン、パス) にわたる修正: URL を含むメッセージを検索し、[verdict] をクリックして更新を行いました。 その一環として、プロトコルに依存しない検索のサポートが有効になっています (つまり、http を使用せずに URL を直接検索できます)。 既定では、URL 検索は明示的に指定されていない限り、http にマップされます。 次に、例を示します。
 
   a.    `http://`"Url"、"URL ドメイン"、および "url のドメインとパス" の各フィルターフィールドで、プレフィックスの有無にかかわらず検索します。 この動作は一貫しており、同じ結果を表示する必要があります。
   b.    `https://`"URL" でプレフィックスを検索します。 指定しない場合、 `http://` プレフィックスが想定されます。

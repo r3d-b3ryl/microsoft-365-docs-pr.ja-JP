@@ -2,9 +2,9 @@
 title: ユーザー メールボックスを共有メールボックスに変換する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '個人用メールボックスを、複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341194"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445689"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -57,7 +57,7 @@ ms.locfileid: "48341194"
 共有メールボックスに関して知っておく必要のあるその他の情報については、「[共有メールボックスの詳細](about-shared-mailboxes.md)」および「[共有メールボックスを作成する](create-a-shared-mailbox.md)」を参照してください。
 
 > [!NOTE]
-> 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、インプレースアーカイブを有効にするか、または共有メールボックスにインプレースホールドまたは訴訟ホールドを設定する場合は、メールボックスに exchange online アーカイブまたは Exchange online Plan 2 ライセンスを持つ Exchange Online プラン1を割り当てる必要があります。
+> 共有メールボックスには、別途ライセンスが必要ではありません。 ただし、共有メールボックスに In-Place アーカイブを有効にする場合、または In-Place ホールドまたは訴訟ホールドを設定する場合は、exchange online のプラン1を exchange online アーカイブまたは Exchange online Plan 2 ライセンスを使用してメールボックスに割り当てる必要があります。
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>削除済みユーザーのメールボックスを変換する

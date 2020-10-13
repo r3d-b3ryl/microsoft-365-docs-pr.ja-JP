@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 keywords: インシデント対応、調査、修復、脅威保護の自動化
 ms.date: 09/29/2020
 description: Microsoft Defender for Office 365 の自動調査および応答機能の概要を取得する
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 850291966c2f2da51782d8e70de23ff4f06d6136
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413964"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447109"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の自動調査と応答 (AIR) の概要
 
@@ -145,7 +145,7 @@ Microsoft Defender for Office 365 の空気機能には、セキュリティ運�
 
 たとえば、組織では、既に AIR によって処理されたユーザーレポートフィッシング通知をセキュリティ運用チームが表示する方法を設定しています。 これらのソリューションは、関連するアラートを組織の SIEM サーバーおよびそのケース管理システムと統合します。 このソリューションは、セキュリティ運用チームが実際の脅威に時間と労力を集中できるように、誤検知の数を大幅に減らします。 このカスタムソリューションの詳細については、「 [Tech Community blog: Office 365 ATP および O365 管理 API を使用した SOC の有効性を向上させる](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [空気の使用を開始する](office-365-air.md)
 
