@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 description: Office 365 の Microsoft Defender で自動調査および応答機能の使用を開始します。
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: c2ce99a2a7033c7cdcf435e237b46438259f37e4
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 340fc4851043ff917eaff6f237c3ad7d5810a4cb
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412960"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430921"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Office 365 で自動調査と応答 (AIR) の使用を開始する
 
@@ -111,7 +111,7 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 
 さらに、保護を適切に行うために、 [Microsoft Defender For Office 365 ポリシー](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) を定義して適用する必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [自動化された調査の詳細と結果を参照する](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

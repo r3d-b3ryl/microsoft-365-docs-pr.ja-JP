@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 16dd0ffa6ac07832196e6672e811c64902d96cf4
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: c98ce94bfa327b3e09cc1042717571de325a244e
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414348"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429673"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft Threat Protection
 
@@ -87,7 +87,7 @@ Microsoft の脅威保護の製品間の機能には、次のようなものが�
 - **クロス積脅威** 検索-セキュリティチームは、さまざまな保護製品によって収集された生データに対して独自のカスタムクエリを作成することによって、組織の独自の知識を活用して、侵害の兆候を探すことができます。 Microsoft の脅威保護では、エンドポイントと Office 365 の ATP データに対して、30日間の履歴生信号およびアラートデータに対するクエリベースのアクセスが提供されています。 
 
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>概要
 Microsoft 365 セキュリティセンターの [security.microsoft.com](https://security.microsoft.com)でサービスを有効にするには、Microsoft の脅威保護ライセンスの要件を満たす必要があります。 詳細については、以下を参照してください。
 - [ライセンス要件](prerequisites.md#licensing-requirements)
 - [Microsoft Threat Protection を有効にする](mtp-enable.md)

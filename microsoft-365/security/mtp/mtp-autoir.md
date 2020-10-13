@@ -16,17 +16,17 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: ee5616f79df35ebff2713538bae7fb42fd755287
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 32bf5f1ada91ae67f72bd26c7fe68fe91897be7c
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413580"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429361"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Microsoft Threat Protection での自動調査および対応
 
@@ -80,7 +80,7 @@ Microsoft の脅威保護では、自動調査と自己復旧機能による応�
 > すべてのアラートが自動化された調査をトリガーするわけではなく、自動修復処理で調査結果がすべて行われるわけではありません。これは、組織で自動化された調査と応答の構成方法によって異なります。 「 [Configure 自動調査および応答機能を Microsoft の脅威保護に構成する](mtp-configure-auto-investigation-response.md)」を参照してください。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [Microsoft の脅威保護における自動調査と応答の前提条件を参照してください。](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
 - [組織の自動化された調査と応答を構成する](mtp-configure-auto-investigation-response.md)

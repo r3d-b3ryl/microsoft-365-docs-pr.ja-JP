@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 371656168f32db86ff32f187736d59dbd5dbe749
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: d457c4b96e47485eee041b72a1cf24e96a13bf18
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529697"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430189"
 ---
-# <a name="install-intune-company-portal-on-on-devices"></a>Intune ポータル サイトをデバイスにインストールする
+# <a name="install-intune-company-portal-on-devices"></a>デバイスに Intune Company Portal をインストールする
 
 Microsoft マネージドデスクトップでは、IT 管理者が Microsoft マネージドデスクトップデバイスを使用してユーザーに Intune ポータルサイトをインストールする必要があります。 組織にとって次のような利点があります。
 - ユーザーは、利用可能なアプリケーションを参照してインストールする場所が1つあります。 
@@ -44,7 +44,7 @@ Microsoft マネージドデスクトップでのサポート要求の送信の�
 
 ## <a name="step-3---communicate-change-to-your-users"></a>手順 3-ユーザーに変更を伝達する
 組織の IT 管理者として、組織内の会社のポータルの使用方法をユーザーに知らせることが重要です。 Microsoft マネージドデスクトップの推奨事項:
-- 会社のポータルからアプリケーションをインストールする手順について説明します。 詳細については、「[デバイスにアプリをインストールして共有](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)する」を参照してください。
+- 会社のポータルからアプリケーションをインストールする手順について説明します。 詳細については、「 [デバイスにアプリをインストールして共有](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows)する」を参照してください。
 - 現在利用できないアプリケーションについて、IT 管理者に要求を送信する方法。 詳細については、「 [app for 職場または学校を要求する](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows#request-an-app-for-work-or-school)」を参照してください。  
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップの使用を開始する手順

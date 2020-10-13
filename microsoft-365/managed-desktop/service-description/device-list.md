@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 99bda752edf46c5e446e393b5f185b3f18eff974
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 37a43717ebb003c10a65e14da46012dab164916d
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390153"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429385"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft マネージドデスクトップデバイス 
 
@@ -37,20 +37,16 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 | モデル    | 最小仕様  | 追加要件    | アーカイブ日付   | 定年後の日付   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Dell Precision 3530](https://www.dell.com/en-us/work/shop/cty/pdp/spd/precision-15-3530-laptop?cid=265720&st=dell%2Bprecision%2B3530&VEN1=ihEzXzFB,73667408703289,901q5c14135,c,,%7BProductid%7D&VEN2=be,dell%2Bprecision%2B3530&lid=42076560130&dgc=st&dgseg=so&acd=12309152537461020&VEN3=112504543746142297) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2020年5月22日  | 2023年5月22日 |
-| [Dell Latitude 5300](https://www.dell.com/en-us/work/shop/laptops/13-5300/spd/latitude-13-5300-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年6月1日  | 2024年6月1日  |
-| **\*[Dell Latitude 5300 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/13-5300-2-in-1/spd/latitude-13-5300-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
-| [Dell Latitude 5400](https://www.dell.com/en-us/work/shop/laptops/14-5400/spd/latitude-14-5400-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年6月1日  | 2024年6月1日  |
-| [Dell Latitude 5500](https://www.dell.com/en-us/work/shop/laptops/15-5500/spd/latitude-15-5500-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年6月1日  | 2024年6月1日  |
-| [Dell Latitude 7200 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/12-7200-2-in-1/spd/latitude-12-7200-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
-| **\*[Dell Latitude 7210 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/new-12-7210/spd/latitude-12-7210-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月19日  | 2025年5月19日  |
-| [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
-| [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
-| [Dell Latitude 7400 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2021年5月1  | 2024年5月1  |
-| **\*[Dell Latitude 7410](https://www.dell.com/en-us/work/shop/laptops/new-14-7410/spd/latitude-14-7410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月19日  | 2025年5月19日  |
-| **\*[Dell Latitude 7410 2-イン-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月19日 | 2025年5月19日
-| **\*[Dell Latitude 9410 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月19日  | 2025年5月19日  |
-| [Dell Optiplex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop) | 128 GB/Intel i3/8 GB RAM | なし | 2022年5月1  | 2025年5月1  |
+| **\*[Dell Precision 5310 2-イン-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年4月28日  | 2025年4月28日 |
+| **\*[Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年4月28日 | 2025年4月28日  |
+| **\*[Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年4月28日 | 2025年4月28日 |
+| **\*[Dell Latitude 7310/7310 2-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月4時  | 2025年5月4時  |
+| [Dell Latitude 7410/7410 2-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月19日  | 2025年5月19日  |
+| [Dell Latitude 9410 2-イン-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月5時  | 2025年5月5時  |
+| **\*[Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | 2022年5月5時  | 2025年5月5時  |
+| **\*[Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop)** | 128 GB/Intel i3/8 GB RAM | None | 2022年5月27日  | 2025年5月27日  |
+| **\*[Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio)** | 128 GB/Intel i3/8 GB RAM | None | 2022年5月15日  | 2025年5月15日  |
+| **\*[デル5550ワークステーション](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop)** | 256 GB/Intel i5/8 GB RAM | None | 2022年5月27日  | 2025年5月27日  |
 
 ### <a name="hp"></a>HP
 
@@ -69,17 +65,17 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 | モデル    | 最小仕様  | 追加要件    | アーカイブ日付   | 定年後の日付   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB/Intel i5/8GB RAM | なし | 2022年5月21日 | 2027年5月21日 |
-| **\*[Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 GB/Intel Core M3/8 GB RAM | なし | 2022年5月21日 | 2027年5月21日 |
-| [Surface Pc Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | なし | 2022年10月12時 | 2025年10月12時 |
-| [Surface Pc 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | なし | 10月 16 2020 | 10月 16 2023 |
-| [Surface Pc 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | なし | 2021年10月22日 | 2024年10月22日 |
-| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | なし | 10月 16 2020 | 10月 16 2023 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | なし | 2021年10月22日 | 2024年10月22日 |
+| **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB/Intel i5/8GB RAM | None | 2022年5月21日 | 2027年5月21日 |
+| **\*[Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 GB/Intel Core M3/8 GB RAM | None | 2022年5月21日 | 2027年5月21日 |
+| [Surface Pc Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | None | 2022年10月12時 | 2025年10月12時 |
+| [Surface Pc 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | None | 10月 16 2020 | 10月 16 2023 |
+| [Surface Pc 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | None | 2021年10月22日 | 2024年10月22日 |
+| [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | None | 10月 16 2020 | 10月 16 2023 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | None | 2021年10月22日 | 2024年10月22日 |
 
 また、デバイスは次の条件を満たしている必要があります。     
 
-- Microsoft マネージドデスクトップによって承認されたイメージがあること。 デバイスを注文するときは、Microsoft マネージドデスクトップで使用されていることを確認してください。
+- 特定の SKU がデバイスの要件に記載されている場合は、その SKU を使用していることをご確認ください。 これにより、デバイスは Microsoft マネージデスクトップソフトウェア要件に準拠します。 
 - Windows 初回実行時の動作が完了していません。
 - [デバイス登録](https://aka.ms/mmddrhelp)機能を使用して Microsoft マネージドデスクトップに登録する
 

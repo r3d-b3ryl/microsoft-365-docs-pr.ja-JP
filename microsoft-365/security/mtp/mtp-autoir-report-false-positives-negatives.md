@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: f8d741cbc7215c18d096573fe6555dfe7709c58b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ecfd1bb9e5ff548c08aea322d12d626fa7fb6120
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413640"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429637"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査と応答機能で誤検知/否定を処理する
 
@@ -36,7 +36,7 @@ ms.locfileid: "48413640"
 **適用対象:**
 - Microsoft Threat Protection
 
-Microsoft の脅威保護ミスの自動化された [調査と応答機能](mtp-autoir.md) を、誤って検出しましたか? この問題を解決するには、以下の手順を実行します。 以下のことを実行できます。
+Microsoft の脅威保護ミスの自動化された [調査と応答機能](mtp-autoir.md) を、誤って検出しましたか? この問題を解決するには、以下の手順を実行します。 次の操作を実行できます。
 
 - [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
 

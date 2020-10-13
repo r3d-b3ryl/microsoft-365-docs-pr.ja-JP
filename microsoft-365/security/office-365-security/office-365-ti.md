@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 Advanced Threat Protection プランの脅威の調査および応答機能について説明します。
-ms.openlocfilehash: d3ebf1d2e425eb3699f972692c6b632f8f405019
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 4d51a172c3b6fb8641648ecd7a33e320b0a42b24
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414312"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48431137"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
@@ -116,7 +116,7 @@ Office 365 Advanced Threat Protection は、役割ベースのアクセス制御
 |Office 365 Advanced Threat Protection プラン2と Microsoft Defender Advanced Threat Protection の統合  <br/><br/> Office 365 Advanced Threat Protection プラン2を SIEM サーバーと統合する|**グローバル管理者**または Azure Active Directory () または Microsoft 365 admin center () のいずれかに割り当てられている**セキュリティ管理者**の役割 [https://portal.azure.com](https://portal.azure.com) [https://admin.microsoft.com](https://admin.microsoft.com) 。<br/>--- **plus** ---<br/>追加のアプリケーション ( [Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 、SIEM サーバーなど) で割り当てられている適切な役割|
 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [脅威のトラッカーについて-新知識と注目](threat-trackers.md)
 
