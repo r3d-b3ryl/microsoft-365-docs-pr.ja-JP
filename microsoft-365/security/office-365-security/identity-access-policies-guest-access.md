@@ -15,12 +15,14 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2e81b17b96b532f8ae26ae1750e884988f116203
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 4a0eb530df2709294bf1c9aa0cf285e59c9fd1f8
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399673"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464206"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>ゲストおよび外部の B2B アクセスを許可するためのポリシー
 
@@ -40,7 +42,7 @@ Azure AD B2B アカウントを使用してゲストおよび外部アクセス�
 
 次の表に、作成および更新する必要があるポリシーを示します。 共通のポリシーは、 [一般的な id とデバイスアクセスポリシー](identity-access-policies.md) の記事に記載されている関連する構成手順にリンクしています。
 
-|保護レベル|Policies|詳細情報|
+|保護レベル|Policies|詳細|
 |:---------------|:-------|:----------------|
 |**Baseline**|[ゲストおよび外部ユーザーに対して MFA を常に要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|この新しいポリシーを作成し、以下を構成します。 <ul><li> **> > ユーザーとグループの割り当て**については、[**ユーザーとグループの選択**] を選択し、[すべての**ゲストおよび外部ユーザー**] を選択します。 </li><li> **> > の割り当て**については、「多要素認証 (MFA) を常に適用するために、すべてのオプションをオフにしておきます。</li>|
 |        |[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|ゲストユーザーと外部ユーザーを除外するには、このポリシーを変更します。|
@@ -50,7 +52,7 @@ Azure AD B2B アカウントを使用してゲストおよび外部アクセス�
 
 ![ゲストおよび外部ユーザーを除外するためのコントロールの画面キャプチャ](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 ### <a name="guest-and-external-access-with-microsoft-teams"></a>Microsoft Teams を使用したゲストおよび外部アクセス
 

@@ -16,12 +16,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1ad8f643741626c4cbb8534b4ed5ed7591010fe0
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399678"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464076"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -48,7 +50,7 @@ ms.locfileid: "48399678"
 
 これらのタスクを実行するための時間を提供するために、この表に記載されている順序で基準ポリシーを実装することをお勧めします。 ただし、機密性が高く規制された保護レベルの MFA ポリシーは、いつでも実装できます。
 
-|保護レベル|Policies|詳細情報|
+|保護レベル|Policies|詳細|
 |:---------------|:-------|:----------------|
 |**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](#require-mfa-based-on-sign-in-risk)| |
 |        |[先進認証をサポートしないクライアントはブロックする](#block-clients-that-dont-support-modern-authentication)|モダン認証を使用していないクライアントは、条件付きアクセスポリシーをバイパスすることがあるため、これらをブロックすることが重要です。|
@@ -216,7 +218,7 @@ Exchange Online の場合は、認証ポリシーを使用して [基本認証�
 
 [Id とデバイスのアクセス構成](microsoft-365-policies-configurations.md)で説明されている原則を使用して、ベースラインおよび機密保護層がレベル2エンタープライズ拡張データ保護設定と緊密にマッピングされます。 高度な規制保護層は、レベル3エンタープライズ高データ保護設定に厳密にマップされます。
 
-|保護レベル |アプリ保護ポリシー  |詳細情報  |
+|保護レベル |アプリ保護ポリシー  |詳細  |
 |---------|---------|---------|
 |基準     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。         |
 |機密     | [レベル2強化されたデータ保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | レベル2で適用されるポリシー設定には、レベル1に推奨されているすべてのポリシー設定が含まれています。さらに、レベル1よりも多くのコントロールとより高度な構成を実装するために、以下のポリシー設定のみを追加または更新します。        |
@@ -299,7 +301,7 @@ Intune でコンプライアンスポリシーを作成する詳細な手順に�
 
 |型|[プロパティ]|値|アクション|
 |:---|:---------|:-----|:----|
-|パスワード|モバイルデバイスのロックを解除するためのパスワードを要求する|必須| Select |
+|Password|モバイルデバイスのロックを解除するためのパスワードを要求する|必須| Select |
 ||単純なパスワード|ブロック|Select|
 ||パスワードの種類|既定のデバイス|Select|
 ||パスワードの最小文字数|6 |型|

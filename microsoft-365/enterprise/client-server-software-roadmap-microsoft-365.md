@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 用のクライアントおよびサーバーソフトウェアをセットアップするためのロードマップ。
-ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950570"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464410"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 のクライアントおよびサーバーソフトウェアのロードマップ
 
@@ -60,7 +60,7 @@ Microsoft 365 Apps for enterprise は更新プログラムを自動的にイン�
 
 ### <a name="office-2010"></a>Office 2010
 
-Office 2010 でリリースした Office バージョンの場合、サポートの終了は**2020 年 10 月 13 日**です。 詳細については、[Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)を参照してください。
+Office 2010 リリースの Office のバージョンでは、サポートは **2020 年10月 13**日に終了しました。 詳細については、[Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)を参照してください。
 
 Office 2010 を実行しているコンピューターを Office 2013 または Office 2016 (両方とも手動で更新する必要があります) にアップグレードするのではなく、以下を行うことを検討してください。
 
@@ -117,7 +117,7 @@ Office 2007 リリースのサーバー製品を Office 2010、Office 2013、ま
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-[Exchange Server 2010](exchange-2010-end-of-support.md) のサポートは、**2020 年 10 月 13 日**に終了します。
+[Exchange Server 2010](exchange-2010-end-of-support.md)のサポートは **、2020年10月 13**日に終了しました。
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) のサポートは、**2021 年 4 月 13 日**に終了します。
 

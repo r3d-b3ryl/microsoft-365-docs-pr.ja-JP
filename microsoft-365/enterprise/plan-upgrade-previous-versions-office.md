@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、Office 2007 または Office 2010 を使用してアップグレードを計画するユーザー向けのリソースが含まれています。
-ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 257f66ab2f542f18c0a1eb2d503e0bf87e13d184
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384560"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464422"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
@@ -29,7 +29,7 @@ ms.locfileid: "48384560"
 
 以前のバージョンの Office 製品とサーバーを使用している組織では、これはアップグレードの計画を開始するのに非常に時間がかかる場合があります。 Office 2007 製品とサービス [のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 Office 2010 製品およびサービスの場合:
 
-- Office 2010 および Exchange 2010 は、**2020年10月13日** にサポートが終了します。 
+- Office 2010 と Exchange 2010 **が2020年10月 13**日にサポート終了に達しました。 
 - SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサポートが終了します。 
 
 詳細については、「 [Upgrade From Office 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md)」を参照してください。

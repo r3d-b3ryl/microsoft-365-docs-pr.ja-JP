@@ -3,7 +3,6 @@ title: Exchange 2010 のサポート終了のロードマップ
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 は、サポート終了間近に近づいています。 この計画ロードマップは、Exchange Online またはオンプレミスの Exchange Server の新しいバージョンへのアップグレードを準備するためのガイドとして使用してください。
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950822"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464254"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 のサポート終了のロードマップ
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-**2020 年10月 13**日に、Exchange Server 2010 はサポート終了までに到達します。 Exchange 2010 から Microsoft 365、Office 365、または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。
+Exchange Server 2010 **は、2020年10月 13**日にサポート終了に達しました。 Exchange 2010 から Microsoft 365、Office 365、または Exchange 2016 への移行をまだ開始していない場合は、計画を開始する時間になります。
 
 ## <a name="what-does-end-of-support-mean"></a>サポートが終了するとどうなるのか
 
-Exchange Server は、ほぼすべての Microsoft 製品と同様に、新機能、バグ修正、セキュリティ修正プログラムなどを提供するためのライフサイクルを備えています。 このライフサイクルは通常、製品の最初のリリースから10年後に持続し、このライフサイクルの最後は製品のサポート終了と呼ばれます。 Exchange 2010 が2020年10月13日にサポートを終了すると、Microsoft から提供されなくなります。
+Exchange Server は、ほぼすべての Microsoft 製品と同様に、新機能、バグ修正、セキュリティ修正プログラムなどを提供するためのライフサイクルを備えています。 このライフサイクルは通常、製品の最初のリリースから10年後に持続し、このライフサイクルの最後は製品のサポート終了と呼ばれます。 Exchange 2010 は、2020年10月13日にサポートが終了してから、Microsoft が提供することはなくなりました。
 
 - 発生する可能性のある問題のテクニカルサポート。
 - 検出された問題についてバグ修正を行い、サーバーの安定性と有用性に影響を与える可能性があります。
@@ -41,7 +40,7 @@ Exchange 2010 のインストールは、この日付以降も引き続き実行
 
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-Exchange 2010 がサポートの終了に到達すると、これは、オプションを調べて移行計画を準備するのに非常に時間がかかることになります。 以下のことを実行できます。
+Exchange 2010 がサポートの終了に到達すると、これは、オプションを調べて移行計画を準備するのに非常に時間がかかることになります。 次の操作を実行できます。
 
 - 完全に Microsoft 365 に移行します。 カットオーバー、最小ハイブリッド、または完全なハイブリッド移行を使用してメールボックスを移行し、オンプレミスの Exchange サーバーと Active Directory を削除します。
 - オンプレミスサーバー上の exchange 2010 サーバーを Exchange 2016 に移行します。
@@ -50,7 +49,7 @@ Exchange 2010 がサポートの終了に到達すると、これは、オプシ
 > メールボックスを Microsoft 365 に移行することを選択したものの、DirSync または Azure AD Connect を使用してオンプレミスの Active Directory からのユーザーアカウントの管理を続行する予定の場合は、少なくとも1つの Exchange server をオンプレミスで保持する必要があります。 最後の Exchange サーバーが削除された場合、exchange Online の Exchange 受信者を変更することはできません。 これは、権限のソースがオンプレミスの Active Directory に残っており、そこに変更を加える必要があるためです。 このシナリオでは、次のオプションを使用できます。
 
 - (**推奨**)メールボックスを Microsoft 365 に移行して、サーバーを2020年10月13日にアップグレードできる場合は、Exchange 2010 を使用して Microsoft 365 に接続し、メールボックスを移行します。 次に、exchange 2010 を Exchange 2016 に移行し、残りの Exchange 2010 サーバーをすべて使用停止にします。
-- 2020年10月13日に、メールボックスの移行とオンプレミスサーバーのアップグレードを完了できない場合は、オンプレミスの Exchange 2010 サーバーを最初に Exchange 2016 にアップグレードしてから、Exchange 2016 を使用して Microsoft 365 に接続し、メールボックスを移行します。
+- 2020年10月13日に、メールボックスの移行とオンプレミスサーバーのアップグレードを完了できなかった場合は、オンプレミスの Exchange 2010 サーバーを最初に Exchange 2016 にアップグレードしてから、Exchange 2016 を使用して Microsoft 365 に接続し、メールボックスを移行します。
 
 > [!NOTE]
 > もう少し複雑ですが、オンプレミスの Exchange 2010 サーバーを Exchange 2016 に移行する際に、メールボックスを Microsoft 365 に移行することもできます。
@@ -65,7 +64,7 @@ Exchange Server 2010 のサポート終了を回避するために実行でき�
 
 メールを Microsoft 365 に移行することは、Exchange 2010 の展開を廃止するのに役立つ最良かつ最も簡単なオプションです。 Microsoft 365 への移行により、次のように、古いテクノロジから、次のような最新の機能までの単一ホップを作成できます。
 
-- アイテム保持ポリシー、インプレースおよび訴訟ホールド、インプレース電子情報開示などのコンプライアンス機能。
+- 保持ポリシー、In-Place および訴訟ホールド、インプレース電子情報開示などのコンプライアンス機能。
 - Microsoft Teams
 - Power BI
 - 優先受信トレイ

@@ -18,14 +18,14 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: 2020年10月13日の両方のエンドのサポートとして、SharePoint 2010 および Sharepoint Server 2010 からアップグレードするための情報とリソースを見つけます。
+description: 2021年4月13日の両方のエンドのサポートとして、SharePoint 2010 および Sharepoint Server 2010 からアップグレードするための情報とリソースを見つけます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88970c83f2497f029635cb987b6b613ea662dc07
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f406c30befbd1202fa6590352bd32f6d3102ae60
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948022"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464278"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からのアップグレード
 

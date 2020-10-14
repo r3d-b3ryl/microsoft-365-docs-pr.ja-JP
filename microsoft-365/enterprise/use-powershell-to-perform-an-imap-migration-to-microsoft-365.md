@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: PowerShell を使用して、Microsoft 365 へのインターネットメールアクセスプロトコル (IMAP) の移行を実行する方法について説明します。
-ms.openlocfilehash: 6eb422455d0bdf31fa1859bd0231b68e5568748c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 67621ecfca7ec323a73b91a530f848dd7571f9b2
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692040"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464446"
 ---
 # <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>Microsoft 365 への IMAP 移行に PowerShell を使用する
 
@@ -103,7 +103,7 @@ paulc@contoso.edu,paul.cannon,3281986
   
  **Microsoft Exchange:**
   
-Microsoft Exchange の IMAP 実装から電子メールを移行する場合、CSV ファイルでは **UserName** 属性に **Domain/Admin_UserName/User_UserName** という形式を使用します。Terry Adams、Ann Beebe、および Paul Cannon の電子メールを Exchange から移行するとします。メールの管理者アカウントは、ユーザー名は **mailadmin** 、パスワードは **P@ssw0rd** とします。CSV ファイルは次のようになります。
+Microsoft Exchange の IMAP 実装から電子メールを移行する場合、CSV ファイルでは **UserName** 属性に **Domain/Admin_UserName/User_UserName** という形式を使用します。 たとえば、Terry Adams さん、Ann Beebe さん、Paul Cannon さんのメールを Exchange から移行するとします。 メール管理者アカウントがあります。ユーザー名は **である mailadmin** で、パスワードは **P \@ ssw0rd**です。 CSV ファイルは次のようになります。
   
 ```powershell
 EmailAddress,UserName,Password
@@ -114,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot:**
   
-Simple Authentication and Security Layer (SASL) をサポートしている IMAP サーバー (Dovecot IMAP サーバーなど) では、**User_UserName*Admin_UserName** の形式を使用します。ここで、アスタリスク (*) は、構成可能な区切り文字です。たとえば、管理者の資格情報 ( **mailadmin** と **P@ssw0rd** ) を使用して、上記の同じユーザーの電子メールを Dovecot IMAP サーバーから移行するとします。CSV ファイルは次のようになります。
+Dovecot IMAP サーバーなどの単純な認証およびセキュリティ層 (SASL) をサポートする IMAP サーバーの場合は、アスタリスク (*) が構成可能な区切り文字である **User_UserName * Admin_UserName**の形式を使用します。 管理者の資格情報 **である mailadmin** と **P \@ ssw0rd**を使用して、dovecot IMAP サーバーから同じユーザーのメールを移行しているとします。 この場合、CSV ファイルは次のようになります。
   
 ```powershell
 EmailAddress,UserName,Password
@@ -125,7 +125,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
  **Mirapoint:**
   
-Mirapoint Message Server から電子メールを移行する場合は、管理者の資格情報に **#user@domain#Admin_UserName#** の形式を使用します。管理者の資格情報である **mailadmin** と **P@ssw0rd** を使用して Mirapoint から電子メールを移行する場合、CSV ファイルは次のようになります。
+Mirapoint メッセージサーバーから電子メールを移行する場合は、管理者の資格情報として **#user \@ ドメイン # Admin_UserName #** の形式を使用します。 Mirapoint からメールを移行するには、管理者の資格情報 **である mailadmin** と **P \@ ssw0rd**を使用します。 CSV ファイルは次のようになります。
   
 ```powershell
 EmailAddress,UserName,Password
@@ -208,9 +208,9 @@ Get-MigrationBatch -Identity IMAPBatch1 | Format-List Status
 ### <a name="step-5-route-your-email-to-microsoft-365"></a>手順 5: Microsoft 365 に電子メールをルーティングする
 <a name="BK_Step5"> </a>
 
-電子メール システムは、MX レコードという DNS レコードを使用して、電子メールの配信先を見つけ出します。 電子メールの移行プロセス中、MX レコードの宛先は移行元の電子メール システムでした。 これで、Microsoft 365 への電子メールの移行が完了したので、MX レコードを Microsoft 365 にポイントします。 これにより、電子メールが Microsoft 365 メールボックスに配信されるようになります。 MX レコードを移動することによって、準備ができたら古い電子メール システムをオフにすることもできます。 
+電子メール システムでは、電子メールを配信する場所を知るために、MX レコードと呼ばれる DNS レコードを使用します。 電子メールの移行プロセス中、MX レコードの宛先は移行元の電子メール システムでした。 これで、Microsoft 365 への電子メールの移行が完了したので、MX レコードを Microsoft 365 にポイントします。 これにより、電子メールが Microsoft 365 メールボックスに配信されるようになります。 MX レコードを移動することによって、準備ができたら古い電子メール システムをオフにすることもできます。 
   
-多くの DNS プロバイダー向けに、MX レコードの変更の具体的な説明があります。 DNS プロバイダーが含まれていない場合や、全般的な方向を把握したい場合は、「[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成する](https://go.microsoft.com/fwlink/?LinkId=397449)」も用意されています。
+多くの DNS プロバイダーについては、MX レコードを変更するための具体的な手順があります。 DNS プロバイダーが含まれていない場合や、全般的な方向を把握したい場合は、「[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成する](https://go.microsoft.com/fwlink/?LinkId=397449)」も用意されています。
   
 御社のお客様およびパートナーの電子メール システムが MX レコードの変更を認識するまでに最大 72 時間かかることがあります。次の作業に進むまで、72 時間以上待ちます。手順 6: IMAP 移行バッチを削除する。 
   
