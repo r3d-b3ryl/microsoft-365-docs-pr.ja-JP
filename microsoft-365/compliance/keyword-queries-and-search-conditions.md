@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 セキュリティ & コンプライアンスセンターで検索できる電子メールとファイルのプロパティについて説明します。
-ms.openlocfilehash: fb3d0b9d941658f2613344d00984dbe7846565a6
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662301"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446196"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
 
@@ -54,11 +54,11 @@ ms.locfileid: "46662301"
   
 |**プロパティ**|**プロパティの説明**|**例**|**例で返される検索結果**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|annualreport.ppt という名前の添付ファイルのあるメッセージ。 2 番目の例では、ワイルドカードを使用して、添付ファイルのファイル名に「annual」の語が含まれるメッセージを返します。 3　番目の例は、ファイルの拡張子が pptx のすべての添付ファイルを返します。|
+|AttachmentNames|メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |annualreport.ppt という名前の添付ファイルのあるメッセージ。 2 番目の例では、ワイルドカードを使用して、添付ファイルのファイル名に「annual」の語が含まれるメッセージを返します。 3　番目の例は、ファイルの拡張子が pptx のすべての添付ファイルを返します。|
 |Bcc|メール メッセージの Bcc フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。|
 |カテゴリ| 検索するカテゴリ。 カテゴリは、ユーザーが Outlook または Outlook on the web (旧称: Outlook Web App) を使用して定義できます。 値は次のいずれかです。  <br/><br/>  青  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
 |Cc|メール メッセージの Cc フィールド。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|どちらの例も、Cc フィールドに "Pilar Pinilla" が指定されたメッセージ。|
-|Folderid|特定のメールボックス フォルダーのフォルダー ID (GUID)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するメールボックスを検索するようにします。 指定したフォルダーのみが検索されます。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使う必要があります。  <br/> Folderid プロパティを検索する方法と、スクリプトを使用して特定のメールボックスのフォルダー Id を取得する方法の詳細については、「 [対象コレクションのコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定したメールボックス フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したメールボックス フォルダー内で garthf@contoso.com によって送信または受信されたすべてのアイテムが返されます。|
+|Folderid|特定のメールボックス フォルダーのフォルダー ID (GUID)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するメールボックスを検索するようにします。 指定したフォルダーのみが検索されます。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使用する必要があります。  <br/> Folderid プロパティを検索する方法と、スクリプトを使用して特定のメールボックスのフォルダー Id を取得する方法の詳細については、「 [対象コレクションのコンテンツ検索を使用](use-content-search-for-targeted-collections.md)する」を参照してください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定したメールボックス フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したメールボックス フォルダー内で garthf@contoso.com によって送信または受信されたすべてのアイテムが返されます。|
 |送信元|メール メッセージの送信者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定されたユーザーによって送信された、または指定されたドメインから送信されたメッセージ。|
 |HasAttachment|メッセージに添付ファイルがあるかどうかを示します。 値 **true** または **false** を使用します。|`from:pilar@contoso.com AND hasattachment:true`|指定したユーザーによって送信された添付ファイルを含むメッセージ。|
 |Importance|送信者がメッセージを送信するときに指定できる電子メール メッセージの重要度。既定では、送信者が重要度を **high** または **low** に設定していない限り、メッセージは普通の重要度で送信されます。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|高重要度、中重要度、または低重要度とマークされているメッセージ。|
@@ -75,7 +75,18 @@ ms.locfileid: "46662301"
 |||||
    
 > [!NOTE]
-> <sup>1</sup> recipient プロパティの値には、メール アドレス (*ユーザー プリンシパル名*または UPN とも呼ばれます)、表示名、またはエイリアスを使用してユーザーを指定できます。 たとえば、ユーザー Ann Beebe を指定するために、annb@contoso.com、annb、または "Ann Beebe" を使用できます。<br/><br/>受信者のプロパティ (From、To、Cc、Bcc、参加者、および受信者) を検索すると、Microsoft 365 は Azure Active Directory でそのユーザーを検索して、各ユーザーの id を拡張しようとします。  ユーザーが Azure Active Directory で見つかった場合はクエリが拡張され、そのユーザーのメール アドレス (または UPN)、エイリアス、表示名、LegacyExchangeDN が含まれるようになります。<br/><br/>たとえば、`participants:ronnie@contoso.com` などのクエリは、`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` に拡張されます。<br/><br/>受信者の拡張を防ぐには、検索クエリでメール アドレスの末尾にワイルドカード文字 (アスタリスク) を追加することができます。例: `participants:ronnie@contoso.com*`
+> <sup>1</sup> recipient プロパティの値には、メール アドレス (*ユーザー プリンシパル名*または UPN とも呼ばれます)、表示名、またはエイリアスを使用してユーザーを指定できます。 たとえば、ユーザー Ann Beebe を指定するために、annb@contoso.com、annb、または "Ann Beebe" を使用できます。
+
+### <a name="recipient-expansion"></a>受信者の拡張
+
+受信者のプロパティ (From、To、Cc、Bcc、参加者、および受信者) を検索すると、Microsoft 365 は Azure Active Directory (Azure AD) で検索して各ユーザーの id を拡張しようとします。  ユーザーが Azure AD で見つかった場合、そのユーザーの電子メールアドレス (または UPN)、エイリアス、表示名、および LegacyExchangeDN を含むようにクエリが拡張されます。 たとえば、`participants:ronnie@contoso.com` などのクエリは、`participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` に拡張されます。
+
+受信者を拡張しないようにするには、電子メールアドレスの末尾にワイルドカード文字 (アスタリスク) を追加して、縮小されたドメイン名を使用します。たとえば、 `participants:"ronnie@contoso*"` 電子メールアドレスを二重引用符で囲むようにしてください。
+
+ただし、検索クエリで受信者が拡張されると、検索結果に関連アイテムが返されない可能性があることに注意してください。 Exchange の電子メールメッセージは、受信者フィールドにさまざまなテキスト形式で保存できます。 受信者の拡張は、さまざまなテキスト形式が含まれる可能性のあるメッセージを返すことで、この事実を軽減することを目的としています。 このため、受信者の拡張によって検索クエリが検索結果に関連している可能性があるすべてのアイテムが返されないことがあります。
+
+> [!NOTE]
+> 受信者の展開によって検索クエリによって返されるアイテムを確認または削減する必要がある場合は、Advanced eDiscovery の使用を検討してください。 メッセージを検索し、受信者の拡張機能を活用して、それらをレビューセットに追加した後、レビューセットのクエリまたはフィルターを使用して、結果を確認または絞り込むことができます。 詳細については、「 [データを収集](collecting-data-for-ediscovery.md) して [レビューセット内のデータを照会](review-set-search.md)する」を参照してください。
 
 ## <a name="searchable-site-properties"></a>検索可能なサイト プロパティ
 
@@ -206,7 +217,7 @@ ms.locfileid: "46662301"
 |送信者/作成者|メールの場合、メッセージの送信者。 ドキュメントの場合、Office ドキュメントから作成者フィールドに示されている人。 カンマで区切って、複数の名前を入力することができます。 2 つ以上の値は、**OR** 演算子によって論理的に結合されます。|
 |サイズ (バイト単位)|メールとドキュメントのいずれの場合も、アイテムのサイズ (バイト単位)。|
 |件名/タイトル|メールの場合、メッセージの件名行のテキスト。 ドキュメントの場合、ドキュメントのタイトル。 前述したように、Title プロパティは Microsoft Office ドキュメントに指定されたメタデータです。 複数の件名とタイトルをコンマで区切って入力できます。 2 つ以上の値は、**OR** 演算子によって論理的に結合されます。|
-|コンプライアンス ラベル|電子メールとドキュメントの両方について、自動ラベルポリシーまたはユーザーによって手動で割り当てられたアイテム保持ラベルを使用して、メッセージやドキュメントに自動的に割り当てられたアイテム保持ラベル。 保持ラベルは、ラベルによって定義された設定に基づいて、情報ガバナンスおよび保持ルールのためにメールとドキュメントを分類するために使われます。 保持ラベル名の一部を入力してワイルドカードを使うことも、完全なラベル名を入力することもできます。 保持ラベルの詳細については、「 [アイテム保持ポリシーと保持ラベルについ](retention.md)て」を参照してください。|
+|コンプライアンス ラベル|電子メールとドキュメントの両方について、autolabel ポリシーまたはユーザーによって手動で割り当てられた保持ラベルによってメッセージとドキュメントに自動的に割り当てられたアイテム保持ラベル。 保持ラベルは、ラベルによって定義された設定に基づいて、情報ガバナンスおよび保持ルールのためにメールとドキュメントを分類するために使われます。 保持ラベル名の一部を入力してワイルドカードを使うことも、完全なラベル名を入力することもできます。 保持ラベルの詳細については、「 [アイテム保持ポリシーと保持ラベルについ](retention.md)て」を参照してください。|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>メール プロパティの条件

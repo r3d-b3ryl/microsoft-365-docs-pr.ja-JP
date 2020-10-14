@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンスセンターに新しい新しいソリューションを追加したり、フィードバックに基づいて既存の機能を更新したり、最新のドキュメントを展開したりすることができるかどうかにかかわらず、Microsoft 365 は、変更されたコンプライアンスの状況を常に把握するのに役立つ情報を用意しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398528"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446560"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -43,7 +43,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 
 今月の公開プレビューには、いくつかの新機能と強化された機能があります。
 
-**Insider リスク管理**
+**インサイダー リスクの管理**
 
 - 6つの新しい [ポリシーテンプレート](insider-risk-management-policies.md#policy-templates)を確認してください。
     - 優先度の高いユーザーによるデータリーク
@@ -88,7 +88,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 
 保持に関連する管理者アクティビティが記録され、監査ログで確認できるようになりました。 完全なリストについては、「[アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)」を参照してください。
 
-### <a name="advanced-ediscovery"></a>高度な電子情報開示
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
 - [コレクションを校閲セットに追加](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)するときに、モダン添付ファイル ("クラウド添付ファイル" とも呼ばれる) と SharePoint ドキュメントのバージョンを含めることができます。
 - 新しい [直接ダウンロード](export-documents-from-review-set.md)によるエクスポートの手順。ケースの内容をダウンロードするために Azure Storage Explorer を使用する必要がなくなります。
@@ -170,7 +170,7 @@ Insider リスクポリシーによって検出されたユーザーアクティ
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>機密ラベル: 新しいプライバシーオプション
 
-ラベルの [サイトとグループの設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) を構成するときに、プライバシーオプションを [なし] に設定し、 **ユーザーがサイトにアクセスできるユーザーを選択**できるようにすることができます。 これは、機密ラベルを使用してコンテナー内のコンテンツを保護するが、ユーザーが自分でプライバシー設定を構成できるようにする場合に便利です。
+ラベルの [サイトとグループの設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) を構成するときに、プライバシーオプションを [なし] に設定し、 **ユーザーがサイトにアクセスできるユーザーを選択**できるようにすることができます。 これは、機密ラベルを使用してコンテナー内のコンテンツを保護するが、ユーザーが自分でプライバシー設定を構成できるようにする場合に便利です。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -338,7 +338,7 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 
 |**機能**|**Office 365 セキュリティ/コンプライアンス センター**|**Microsoft 365 コンプライアンス センター**|**詳細情報**|
 |:-----|:-----|:-----|:-----|
-|高度な電子情報開示|電子情報開示 > の高度な電子情報開示 <br/> https://protection.office.com/advancedediscoverycases |電子情報開示 > の詳細 <br/> https://compliance.microsoft.com/advancedediscovery | [Microsoft 365 の高度な電子情報開示ソリューションの概要](overview-ediscovery-20.md) |
+|Advanced eDiscovery|電子情報開示 > の高度な電子情報開示 <br/> https://protection.office.com/advancedediscoverycases |電子情報開示 > の詳細 <br/> https://compliance.microsoft.com/advancedediscovery | [Microsoft 365 の高度な電子情報開示ソリューションの概要](overview-ediscovery-20.md) |
 |ポリシーを通知する|通知 > 警告ポリシー <br/> https://protection.office.com/alertpolicies |現時点では、アラートポリシーは Office 365 セキュリティ & コンプライアンスセンターでのみ管理されます。 |[セキュリティ/コンプライアンス センターのアラート ポリシー](alert-policies.md) |
 |アラート|通知 > 表示する通知 <br/> https://protection.office.com/viewalerts |アラート <br/> https://compliance.microsoft.com/compliancealerts |[通知の表示](alert-policies.md#viewing-alerts)|
 |アーカイブ|情報ガバナンス > アーカイブ <br/> https://protection.office.com/archiving |情報ガバナンス > [アーカイブ] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[アーカイブ メールボックスの有効化](enable-archive-mailboxes.md)|
