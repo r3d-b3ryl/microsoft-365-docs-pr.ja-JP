@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 管理センターで管理者の電話番号とメールアドレスを更新します。 自分の管理者パスワードをリセットする場合は、この情報が必要になります。
-ms.openlocfilehash: ed7e8152ffdf05d94068e6bdb81697dee737ea01
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 7387ffe693abf0e52d647e35827a9f55bd1d70df
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429956"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456333"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメールアドレスを更新する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 この記事では、管理者が Microsoft 365 の勤務先電話と電子メールアドレスを変更する方法について説明します。
@@ -41,13 +41,13 @@ ms.locfileid: "45429956"
   
 ## <a name="to-update-your-name-phone-number-and-email-address"></a>名前、電話番号、メール アドレスを更新するには
 
-[**設定とプライバシー** ] ページを使用して、名前、携帯電話番号、および連絡用メールアドレスを変更します。 代替電子メールアドレスは、管理者パスワード (コンピューターの管理者パスワードではない) のリセットなど、重要な通知に使用されます。 
+[ **設定とプライバシー** ] ページを使用して、名前、携帯電話番号、および連絡用メールアドレスを変更します。 代替電子メールアドレスは、管理者パスワード (コンピューターの管理者パスワードではない) のリセットなど、重要な通知に使用されます。 
   
 1. Microsoft 365 管理センターに移動します。
 
 2. ヘッダーで、自分のプロファイルアイコン \> **[自分のアカウント** \> **設定とプライバシー**] を選択します。
 
-3. [**連絡先の設定**] セクションで、[管理] を選択し、[連絡先の設定] を**展開**します。 携帯電話、電話、および連絡用メールアドレスを更新します。 お客様の連絡用メールアドレスには、Microsoft のメールアドレスとは別のものを使用してください。
+3. [**連絡先の設定**] の下にある [**プライバシー** ] タブで、[**管理者のみに連絡先の設定を行う**] を選択します。 携帯電話、電話、および連絡用メールアドレスを更新します。 お客様の連絡用メールアドレスには、Microsoft のメールアドレスとは別のものを使用してください。
 
     > [!IMPORTANT]
     > 管理者パスワード (コンピューターの管理者パスワードではない) をリセットするには、連絡用メールアドレスと携帯電話番号が必要です。

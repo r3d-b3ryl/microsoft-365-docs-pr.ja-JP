@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: e0b9ba6afcad0c683aaa7386998a621f279aa9eb
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: c579d0bbfdc72e56d99558ffa7e6812d00098c0d
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379239"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430682"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpoint Data Loss Prevention (プレビュー) を開始する
 
@@ -81,7 +81,7 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 
 これらの要件を満たすために、Endpoint DLP の導入を計画している Windows 10 デバイスを確認してください。
 
-1. Windows 10 ビルド1809 以降を実行していなければなりません。
+1. Windows 10 x64 ビルド 1809 以降を実行している必要があります。
 2. すべてのデバイスは[Azure Active Directory (AAD) に参加する ](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)か、Hybrid Azure AD に参加する必要があります。
 3. エンドポイント デバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドへのアップロード アクティビティのポリシー アクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 

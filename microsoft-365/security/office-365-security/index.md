@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Office 365 のセキュリティ。 EOP から ATP プラン1および2、標準セキュリティ構成の比較など 現在の状況と、プロパティをセキュリティで保護する方法について理解します。
-ms.openlocfilehash: 94fce99d029d21524bc60af4622fda7ee38980e7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430694"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456473"
 ---
 # <a name="office-365-security-overview"></a>Office 365 のセキュリティの概要
 
@@ -88,7 +88,7 @@ ATP プランを追加することによって、純粋な EOP threat management
 |---------|---------|---------|
 | テクノロジは次のとおりです。<ul><li>スパム</li><li>フィッシング</li><li>ウェア</li><li>バルクメール</li><li>スプーフィングインテリジェンス</li><li>偽装の検出</li><li>管理者検疫</li><li>誤検知と誤検知の管理者およびユーザーの送信</li><li>Url とファイルの許可/ブロック</li><li>レポート</li></u1>|<li>監査ログ検索</li><li>メッセージの追跡</li>|<li>ゼロ時間自動削除 (ZAP)</li><li>許可リストと禁止リストの絞り込みとテスト</li>|
 
-EOP に移動する場合は、 **[この記事に移動](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)** してください。
+EOP に移動する場合は、 **[この記事に移動](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)** してください。
 
 これらの製品は累積的なので、ATP P1 を評価してサブスクライブする場合は、これらの機能を追加します。
 

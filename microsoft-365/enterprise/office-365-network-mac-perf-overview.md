@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: Microsoft 365 管理センターでのネットワーク接続の概要 (プレビュー)
-ms.openlocfilehash: d3ca55a4d8357d10b79bd8e87ddc3350efa2845e
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326879"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456425"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理センターでのネットワーク接続 (プレビュー)
 
@@ -53,13 +53,13 @@ Windows Location Service は、コンピューター上で同意である必要�
 
 この方法では、都市の解像度で自動的に識別されるので、管理センターに場所を追加する必要はありません。 Windows ロケーションサービスを使用して、1つの都市内に複数のオフィスの場所を表示することはできません。 場所情報は、より正確な位置情報にアクセスできないように、アップロードされる前に、最も近い300メートル (300 メートル) に丸められます。
 
-コンピューターには、イーサネットケーブルではなく、Wi-fi ネットワークが必要です。 イーサネットケーブルを使用しているコンピューターには、正確な場所情報がありません。
+コンピューターはイーサネットケーブルではなく Wi-Fi ネットワークを備えている必要があります。 イーサネットケーブルを使用しているコンピューターには、正確な場所情報がありません。
 
 これらの前提条件が満たされていない場合、測定サンプルと office の場所は24時間表示されるはずです。
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. 場所を追加し、LAN サブネット情報を提供する
 
-このオプションでは、Windows ロケーションサービスも Wi-fi も必須ではありません。 OneDrive for Windows バージョン **20.161** または上記の場所の各コンピューターにインストールされている必要があります。
+このオプションでは、Windows ロケーションサービスも Wi-Fi は必要ありません。 OneDrive for Windows バージョン **20.161** または上記の場所の各コンピューターにインストールされている必要があります。
 
 また、[管理センターネットワーク接続] ページで場所を追加したり、CSV ファイルからインポートしたりする必要もあります。 追加する場所には、office LAN のサブネット情報が含まれている必要があります。
 

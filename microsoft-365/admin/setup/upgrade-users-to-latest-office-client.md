@@ -20,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: ユーザーを最新の Office クライアントにアップグレードする方法について説明します。
-ms.openlocfilehash: 7cddf1554a5892ddac510fc77238529194c1a2a0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545730"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456332"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Microsoft 365 for business ユーザーを最新の Office クライアントにアップグレードする
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 がサポート終了に到達した
 
-Office 2010 は、2020年10月13日にサポート終了日に到達します。 Office 2010 がサポートの終了に達すると、Microsoft は次のものを提供しなくなります。
+Office 2010 は、2020年10月13日にサポート終了に達しました。 Microsoft は、次のものを提供しなくなります。
 
 - 問題のテクニカルサポート
 
@@ -39,7 +39,7 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
 
 - 検出された脆弱性に対するセキュリティ修正プログラム
 
-詳細については、「 [Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap) 」を参照してください。
+詳細については、「 [Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) 」を参照してください。
 
  **これは適切なトピックですか。**
   
@@ -57,7 +57,7 @@ Office 2010 は、2020年10月13日にサポート終了日に到達します。
   
 ## <a name="step-1---check-system-requirements"></a>手順 1 - システム要件の確認
 
-Office の[システム要件をチェック](https://products.office.com/office-system-requirements)して、デバイスが最新バージョンの office と互換性があることを確認してください。 たとえば、Windows XP または Windows Vista を実行しているコンピューターに新しいバージョンの Office をインストールすることはできません。
+Office の[システム要件をチェック](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)して、デバイスが最新バージョンの office と互換性があることを確認してください。 たとえば、Windows XP または Windows Vista を実行しているコンピューターに新しいバージョンの Office をインストールすることはできません。
   
 > [!TIP]
 > 組織内のユーザーが Pc またはラップトップで以前のバージョンの Windows を実行している場合は、Windows 10 にアップグレードすることをお勧めします。 Windows 7 のサポートが終了しました。 詳細については、「 [2020 年1月の Windows 7 のサポート」](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) を参照してください。

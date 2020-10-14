@@ -23,18 +23,18 @@ f1.keywords:
 - NOCSH
 description: Office 2010 サーバーおよびクライアントアプリケーションのアップグレードの計画を開始します。サポートは間もなく終了し、カスタムサポート契約は利用できません。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d45075431e23bf3aae0b6052b1db708e704134f
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 879aae71f703d8a26b3d6e640eff6d30a81febac
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384853"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456353"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>Office 2010 サーバー/クライアントからのアップグレードに役立つリソース
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Office 2010 および Exchange 2010 は、**2020年10月13日** にサポートが終了します。
+Office 2010 と Exchange 2010 **が2020年10月 13**日にサポート終了に達しました。
 
 SharePoint 2010 および Project Server 2010 は、**2021年4月13日** にサポートが終了します。
 
