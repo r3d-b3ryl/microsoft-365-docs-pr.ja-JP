@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408627"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446158"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -43,34 +43,39 @@ ms.locfileid: "48408627"
 最後に、管理者は、暗号化に適用する秘密度ラベルを構成するときに、次のいずれかを選択できます。
 
 - **アクセス許可を割り当てます**。これにより、どのユーザーがそのラベルのコンテンツにどのアクセス許可を取得するかを正確に決定します。
-- ラベルをコンテンツに適用するときに、**ユーザーがアクセス許可を割り当てる**ことができます。 このようにして、組織内のユーザーに、共同作業を行って作業を完了するために必要な柔軟性を与えることができます。
+- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
 暗号化の設定は、Microsoft 365 コンプライアンス センター、Microsoft 365 セキュリティ センター、またはセキュリティ/コンプライアンス センターで[秘密度ラベルを作成](create-sensitivity-labels.md)するときに使用できます。
 
 ## <a name="understand-how-the-encryption-works"></a>暗号化のしくみを理解する
 
-暗号化では、Azure Information Protection の Azure Rights Management サービス (Azure RMS) が使用されます。 この保護ソリューションでは、暗号化ポリシー、ID ポリシー、および認識ポリシーが使用されます。 詳細については、 Azure Information Protection ドキュメントの「[Azure Rights Management とは](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)」を参照してください。 
+Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
-暗号化ソリューションを使用すると、**スーパー ユーザー**機能により、認証されたユーザーとサービスが、組織のために暗号化されたデータの閲覧と検査を常に行えるようにできます。 必要に応じて、暗号化を削除または変更することができます。 詳細については、「[Azure Information Protection および検索サービスまたはデータ回復用のスーパー ユーザーの構成](https://docs.microsoft.com/azure/information-protection/configure-super-users)」を参照してください。
+When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>暗号化のラベルを構成する方法
 
-[秘密度ラベル を作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ウィザードの [**暗号化**] ページで、次のいずれかのオプションを選択します。
+1. 一般的な手順に従って、[機密度ラベルを作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ラベルのスコープとして **[ファイルとメール]** が選択されていることを確認します。 
+    
+    ![ファイルとメールの機密度ラベルス コープ オプション](../media/filesandemails-scope-options-sensitivity-label.png)
 
-- [**None**] (なし): 新しいラベルの既定の設定です。 新規の暗号化は適用されません。
-- [**Apply**] (適用): 暗号化が有効になります。管理者は暗号化の設定を指定します。
-- [**Remove**] (削除): ドキュメントまたはメールが暗号化されている場合は、暗号化が削除されます。
+2. 次に、**[ファイルとメールの保護設定の選択]** ページで、**[ファイルとメールの暗号化]** を選択していることを確認します。
+    
+    ![ファイルとメールの機密度ラベル保護オプション](../media/protection-options-sensitivity-label.png)
 
-> [!NOTE]
-> [**Remove**] (削除) オプションは、Azure Information Protection 統合ラベル付けクライアントでのみサポートされています。 組み込みのラベル付け機能を使用した場合、同オプションのラベルが Office アプリとサービスに表示されますが、これを選択した場合の暗号化の動作は、[**None**] (なし) の動作と同じになります。
-
-暗号化オプションの構成:
-
-![暗号化用の秘密度ラベルのオプション](../media/encrytion-options-sensitivity-label.png)
+4.  ウィザードの **[暗号化]** ページで、次のいずれかのオプションを選択します。
+    
+    - **ファイルが暗号化されている場合は暗号化を削除する**: このシナリオの詳細については、「[ラベルが適用された場合の既存の暗号化への影響](#what-happens-to-existing-encryption-when-a-labels-applied)」セクションを参照してください。 この設定により、ユーザーが十分な権限を持っていない場合に適用できない機密度ラベルが作成される可能性があることを理解することが重要です。
+    
+    - **暗号化設定の構成**: 暗号化をオンにして、暗号化設定を表示します。
+        
+        ![暗号化用の秘密度ラベルのオプション](../media/encrytion-options-sensitivity-label.png)
+        
+        これらの設定の手順は、次の「[暗号化設定の構成](#configure-encryption-settings)」セクションにあります。
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>ラベルが適用された場合の既存の暗号化への影響
 
-暗号化されていないコンテンツに秘密度ラベルを適用する場合、選択可能な暗号化オプションを適用した場合の結果は、オプションの名前通りのものとなります。 たとえば、暗号化を [**None**] (なし) に設定した場合、コンテンツでは暗号化されていない状態が続きます。
+暗号化されていないコンテンツに秘密度ラベルを適用する場合、選択可能な暗号化オプションを適用した場合の結果は、オプションの名前通りのものとなります。 たとえば、**[ファイルとメールを暗号化する]** を選択しなかった場合、コンテンツは暗号化されません。
 
 ただし、コンテンツが既に暗号化されている場合があります。 たとえば、別のユーザーにより次のようなアクセス許可などが適用されている場合があります。
 
@@ -80,7 +85,7 @@ ms.locfileid: "48408627"
 
 そのようなコンテンツに秘密度ラベルが適用された際の既存の暗号化への影響を次の表に示します。
 
-| |**暗号化: None (なし)**|**暗号化: Apply (適用)**|**暗号化: Remove (削除)**|
+| |**暗号化: 選択されていない**|**暗号化: 構成されている**|**暗号化: Remove (削除)**|
 |:-----|:-----|:-----|:-----|
 |**ユーザーによって指定されたアクセス許可**|元の暗号化が維持されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
 |**保護テンプレート**|元の暗号化が維持されます|新しいラベルの暗号化が適用されます|元の暗号化が削除されます|
@@ -103,7 +108,7 @@ ms.locfileid: "48408627"
 
 ## <a name="configure-encryption-settings"></a>暗号化設定を構成する
 
-秘密度ラベルを作成または編集するためにウィザードの [**Encryption**] (暗号化) ページで [**Apply**] (適用) を選択するときは、次のいずれかを選択します。
+ウィザードの **[暗号化]** ページで **[暗号化設定の構成]** を選択して機密度ラベルを作成または編集する場合は、次のいずれかのオプションを選択します。
 
 - [**Assign permissions now**] (アクセス許可を今すぐ割り当てる): ラベルが適用されているコンテンツに対し、どのアクセス許可をどのユーザーに付与するかを正確に決められます。 詳細については、次のセクション「[アクセス許可を今すぐ割り当てる](#assign-permissions-now)」を参照してください。
 - [**Let users assign permissions**] (アクセス許可の割り当てをユーザーに許可する): ユーザーがラベルをコンテンツに適用するときに、ユーザーがアクセス許可を割り当てることを許可します。 このオプションを使用した場合、共同作業や業務を行う上で必要な柔軟性を組織内のユーザーに与えることができます。 詳細については、このページのセクション「[ユーザーがアクセス許可を割り当てる](#let-users-assign-permissions)」を参照してください。
@@ -275,7 +280,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>暗号化の設定の構成例
 
-以下の各例では、[機密ラベルを作成または編集する](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)ときに、ウィザードの **[暗号化]** ページから構成を行います。 最初に、**[暗号化]** が **[適用]** に設定されていることを確認します。
+以下の各例では、「**機密度ラベルを作成または編集する]** が選択されているときに、ウィザードの **[暗号化]** ページから構成を行います。
 
 ![機密ラベル ウィザードで暗号化オプションを適用する](../media/apply-encryption-option.png)
 
@@ -391,17 +396,18 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 暗号化を使用するには、構成作業をいくつか行う必要がある場合があります。
 
-### <a name="activate-protection-from-azure-information-protection"></a>Azure Information Protection の保護を有効にする
+- Azure Information Protection の保護を有効にする
+    
+    秘密度ラベルが暗号化を適用するには、Azure Information Protection の保護サービス (Azure Rights Management) をテナントに対して有効にする必要があります。  新しいテナントの場合はこれが既定の設定になっていますが、サービスを手動で有効にする必要がある場合があります。 詳細については、「[Azure Information Protection の保護サービスのアクティブ化](https://docs.microsoft.com/azure/information-protection/activate-service)」を参照してください。
 
-秘密度ラベルが暗号化を適用するには、Azure Information Protection の保護サービス (Azure Rights Management) をテナントに対して有効にする必要があります。  新しいテナントの場合はこれが既定の設定になっていますが、サービスを手動で有効にする必要がある場合があります。 詳細については、「[Azure Information Protection の保護サービスのアクティブ化](https://docs.microsoft.com/azure/information-protection/activate-service)」を参照してください。
+- Azure Information Protection 用に Exchange を構成する
+    
+    ユーザーは、Azure Information Protection 用に Exchange を構成していなくても、Outlook でラベルを適用してメールを暗号化できます。 ただし、Exchange が Azure Information Protection 用に構成されるまで、Azure Rights Management 保護を使用する機能の一部を Exchange で利用できません。
+    
+    たとえば、暗号化された電子メールを携帯電話や Outlook on the web で表示すること、暗号化された電子メールの検索用インデックスの作成、Rights Management 保護用に Exchange Online DLP を構成することなどは行えません。 
+    
+    このような追加のシナリオを Exchange でサポートする場合は、次の項目を参照してください。
+    
+    - Exchange Online の場合は、「[Exchange Online: IRM 構成](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)」の説明を参照してください。
+    - Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)必要があります。 
 
-### <a name="configure-exchange-for-azure-information-protection"></a>Azure Information Protection 用に Exchange を構成する
-
-ユーザーは、Azure Information Protection 用に Exchange を構成していなくても、Outlook でラベルを適用してメールを暗号化できます。 ただし、Exchange が Azure Information Protection 用に構成されるまで、Azure Rights Management 保護を使用する機能の一部を Exchange で利用できません。
-
-たとえば、暗号化された電子メールを携帯電話や Outlook on the web で表示すること、暗号化された電子メールの検索用インデックスの作成、Rights Management 保護用に Exchange Online DLP を構成することなどは行えません。
-
-このような追加のシナリオを Exchange でサポートする場合は、次の項目を参照してください。
-
-- Exchange Online の場合は、「[Exchange Online: IRM 構成](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)」の説明を参照してください。
-- Exchange On-Premises の場合は、[RMS コネクタを展開して Exchange サーバーを構成する](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)必要があります。

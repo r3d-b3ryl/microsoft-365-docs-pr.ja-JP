@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化する方法と、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にする理由について説明します。
-ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 0bfbeac6fb8069e846ddad3c5b618687ba3c2260
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131944"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456331"
 ---
 # <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
 
@@ -103,7 +103,7 @@ Microsoft 365 パスワードの詳細については、これらの[関連記�
   
 ### <a name="ban-common-passwords"></a>よく使われるパスワードを禁止する
 
-ユーザーがパスワードを作成するときに認識させる最も重要なパスワード要件は、パスワードの総当たり攻撃に対する組織の脆弱性を減らすためによく使われるパスワードの使用を禁止することです。よく使われるユーザー パスワードには、 **abdcefg**、 **password**、 **monkey** などがあります。
+ユーザーがパスワードを作成するときに認識させる最も重要なパスワード要件は、パスワードの総当たり攻撃に対する組織の脆弱性を減らすためによく使われるパスワードの使用を禁止することです。よく使われるユーザー パスワードには、 **abdcefg**、**password**、**monkey** などがあります。
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>組織のパスワードを他の場所で再利用しないようにユーザーを教育する
 

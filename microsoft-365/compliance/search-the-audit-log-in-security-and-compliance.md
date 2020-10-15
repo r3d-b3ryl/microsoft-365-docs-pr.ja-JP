@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f1f2201d847001a5a9df4a367268f1f764367574
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286043"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446640"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -456,6 +456,24 @@ ms.locfileid: "48286043"
 |クライアントが表示をシグナル|ClientViewSignaled|ユーザーのクライアント (Web サイトやモバイル アプリなど) が、示されるページをユーザーが表示したことをシグナルしました。 多くの場合、ページでの PagePrefetched イベントに続いてこのアクティビティがログに記録されます。 <br/><br/>**注**: ClientViewSignaled イベントはサーバーではなくクライアントによりシグナルされるため、イベントがサーバーによってログに記録されず、監査ログに表示されない場合があります。 また、監査レコードの情報の信頼性が低い可能性もあります。 ただし、ユーザーの ID はシグナルの作成に使用されたトークンによって検証されるため、対応する監査レコードに記載されているユーザーの ID は正確です。 |
 |(なし)|PagePrefetched|示されるページにユーザーがアクセスした際のパフォーマンスを上げるため、ユーザーのクライアント (Web サイトやモバイル アプリなど) がそのページを要求しました。 このイベントは、ページの内容がユーザーのクライアントに配信されたことを示すため、ログに記録されます。 このイベントは、ユーザーがページに移動したことをはっきりと示します。 <br/><br/> (ユーザーの要求に従って) ページのコンテンツがクライアントによってレンダリングされると、ClientViewSignaled イベントが生成されます。 プレフェッチの指摘はすべてのクライアントでサポートされているわけではないため、プレフェッチされた一部のアクティビティは PageViewed イベントとしてログ記録される可能性があります。|
 ||||
+
+#### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>FileAccessed および FilePreviewed イベントに関するよくある質問
+
+**ユーザー以外のアクティビティによって、「OneDriveMpc-Transform_Thumbnail」などのユーザー エージェントを含む FilePreviewed 監査レコードがトリガーされる可能性はありますか?**
+
+ユーザー以外の操作がこのようなイベントを生成するシナリオは認識していません。 ユーザー プロファイル カードを開く (Outlook on the web のメッセージで名前またはメール アドレスをクリックする) などのユーザー操作は、同様のイベントを生成します。
+
+**OneDriveMpc-Transform_Thumbnail の呼び出しは、常にユーザーによって意図的にトリガーされていますか?**
+
+いいえ。 ただし、ブラウザーの事前取得の結果として、同様のイベントがログに記録される可能性があります。
+
+**Microsoft が登録した IP アドレスからの FilePreviewed イベントが表示された場合、それはプレビューがユーザーのデバイスの画面に表示されたことを意味しますか?**
+
+いいえ。 ブラウザーの事前取得の結果として、イベントがログに記録された可能性があります。
+
+**ドキュメントをプレビューしているユーザーが FileAccessed イベントを生成するシナリオはありますか?**
+
+FilePreviewed イベントと FileAccessed イベントの両方が、ユーザーの呼び出しがファイルの読み取り (またはファイルのサムネイル レンダリングの読み取り) につながったことを示します。 これらのイベントはプレビューとアクセスの意図を一致させることを目的としていますが、イベントの区別はユーザーの意図を保証するものではありません。
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>監査レコード内の app\@sharepoint ユーザー
 
