@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: この記事では、PowerShell を使用して、ライセンスのないユーザーに Microsoft 365 ライセンスを割り当てる方法について説明します。
-ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235620"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580942"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ライセンスをユーザーアカウントに割り当てる
 
@@ -34,9 +34,13 @@ ms.locfileid: "48235620"
 
 ユーザーがライセンスプランからライセンスを割り当てられるまで、Microsoft 365 サービスを使用することはできません。 PowerShell を使用すると、ライセンスのないアカウントにライセンスをすばやく割り当てることができます。 
 
->[!Note]
->ユーザーアカウントには、場所を割り当てる必要があります。 これを行うには、Microsoft 365 管理センターまたは PowerShell からユーザーアカウントのプロパティを使用します。
->
+ユーザーアカウントには、最初に場所を割り当てる必要があります。 場所を指定することは、 [Microsoft 365 管理センター](../admin/add-users/add-users.md)で新しいユーザーアカウントを作成するために必要な部分です。 
+
+オンプレミスの Active Directory ドメインサービスから同期されたアカウントには、既定では場所が指定されていません。 これらのアカウントの場所を構成するには、次の手順を実行します。
+
+- Microsoft 365 管理センター
+ - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - [Azure portal](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **ユーザー** > ユーザーアカウント >**プロファイル**  >  **連絡先情報**  >  **国または地域**)。
 
 >[!Note]
 >Microsoft 365 管理センターを使用して、[ユーザーアカウントにライセンスを割り当てる方法について説明](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
@@ -111,7 +115,7 @@ Get-MsolUser -All | where {$_.UsageLocation -eq $null}
 Set-MsolUser -UserPrincipalName "<Account>" -UsageLocation <CountryCode>
 ```
 
-例:
+以下に例を示します。
 
 ```powershell
 Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US

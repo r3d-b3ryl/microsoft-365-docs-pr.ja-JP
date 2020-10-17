@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: Microsoft SharePoint Syntex でのフォーム処理について学ぶ
-ms.openlocfilehash: 9b5b9b1c54220037e1c10f2722a641b526592f84
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338615"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493675"
 ---
 # <a name="form-processing-overview"></a>フォーム処理の概要
 
@@ -33,13 +33,9 @@ AI Builder フォーム処理を使用して、機械学習テクノロジーを
 
 ![ドキュメント ライブラリ ビュー](../media/content-understanding/doc-lib-done.png)</br>  
 
-サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義することもできます。 ドキュメントのレイアウトは、モデルをトレーニングすることで学習されます。また、フォーム内の同様の場所からデータを抽出することも学習します。これは、ドキュメントのレイアウトが類似しているためです。 
+サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義します。 文書のレイアウトは、モデルをトレーニングすることで学習されます。 開始するのに必要なフォーム ドキュメントは5つだけです。 AI Builderは、サンプル ファイルを分析してキーと値のペアを探します。また、検出されなかった可能性のあるファイルを手動で特定することもできます。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
 
 開始するには、少なくとも5つのフォームドキュメントが必要です。 AI ビルディングは、サンプルファイルでキーと値のペアを分析し、検出されなかった可能性のあるファイルを手動で識別します。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
-
-モデルをトレーニングして公開したら、それを使用して、ファイルが SharePoint ドキュメントライブラリにアップロードされた後に実行される [Power Automate フロー](https://docs.microsoft.com/power-automate/getting-started)を作成します。 次に、モデルで識別されたデータを抽出します。 抽出されたデータは、モデルのドキュメント ライブラリ ビューの列に表示されます。
-
-サンプルファイルを使用してモデルをトレーニングし、フォームから抽出する情報を定義します。 文書のレイアウトは、モデルをトレーニングすることで学習されます。 開始するのに必要なフォーム ドキュメントは5つだけです。 AI Builderは、サンプル ファイルを分析してキーと値のペアを探します。また、検出されなかった可能性のあるファイルを手動で特定することもできます。  AI ビルダーを使用すると、サンプルファイルでモデルの精度をテストできます。
 
 モデルをトレーニングして公開すると、モデルは [Power Automate フロー](https://docs.microsoft.com/power-automate/getting-started)を作成します。 フローは、ファイルが SharePoint ドキュメントライブラリにアップロードされたときに実行され、モデルで識別されたデータを抽出します。 抽出されたデータは、モデルのドキュメント ライブラリ ビューの列に表示されます。
 

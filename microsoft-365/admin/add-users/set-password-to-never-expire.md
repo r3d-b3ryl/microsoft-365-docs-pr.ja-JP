@@ -2,8 +2,8 @@
 title: 個別のユーザーのパスワードを無期限に設定する
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: mnirkhe
 audience: Admin
 ms.topic: article
@@ -22,20 +22,20 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: Windows PowerShell を使用して、一部のユーザーパスワードを期限切れにしないように設定する方法について説明します。
-ms.openlocfilehash: 01817aba0de1f5ca5f0b9bdf7feb1d03d72f6a24
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e778ad8a020a6767934d51f8bc227bfc39b13a9b
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361751"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580918"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
 この記事では、個々のユーザーのパスワードを期限切れにならないように設定する方法について説明します。 これらの手順は、PowerShell を使用して完了する必要があります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md) 
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは](../admin-overview/admin-overview.md)。 
 
 これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。
 
@@ -48,7 +48,7 @@ Microsoft クラウドサービスのグローバル管理者は、 [Azure Activ
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>パスワードの有効期限ポリシーを確認する方法
 
-AzureAD モジュールの Set-azureaduser コマンドの詳細については、「 [set-azureaduser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)」という参照記事を参照してください。
+AzureAD モジュールの Get-AzureADUser コマンドの詳細については、「 [set-azureaduser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)」という参照記事を参照してください。
 
 次のいずれかのコマンドを実行します：
 
@@ -60,7 +60,7 @@ AzureAD モジュールの Set-azureaduser コマンドの詳細については�
     }
     ```
 
-    例:
+    例: 
 
     ```powershell
     Get-AzureADUser -ObjectId userUPN@contoso.com | Select-Object UserprincipalName,@{

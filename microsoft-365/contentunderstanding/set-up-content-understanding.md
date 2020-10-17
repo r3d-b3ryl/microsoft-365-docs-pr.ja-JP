@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: Project Cortex のコンテンツ理解をセットアップする
-ms.openlocfilehash: 43ce7809237d32fb9d2da73e9e00bed9b9a8193e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464064"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469723"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -41,13 +41,14 @@ Microsoft 365管理センターでの最初のセットアップの後でも設�
 
 ## <a name="to-set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
-1. Microsoft 365 管理センターで、[ **設定**] を選択し、 **組織のナレッジ** セクションを表示します。
+1. Microsoft 365 管理センターで、**[設定]** を選択し、**[ファイルとコンテンツ]** セクションを表示します。
 
 2. **[ファイルとコンテンツ]** セクションで、**[コンテンツを自動的に理解する]** を選択します。<br/>
 
 3. [ **自動化コンテンツ理解世帯** ]の ページで、[ **使用を開始する**] をクリックして、セットアッププロセスを確認します。<br/>
 
-    ![セットアップを開始する](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > [!div class="mx-imgBorder"]
+    > ![セットアップを開始する](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. [ **フォーム処理の構成**] ページで、特定の SharePoint ドキュメントライブラリにユーザーがフォーム処理モデルを作成できるようにするかどうかを選択できます。 ドキュメントライブラリのリボンには、メニューオプションが用意されています。これを有効にしている SharePoint ドキュメントライブラリで  **フォーム処理モデルを作成**します。
  
@@ -56,18 +57,22 @@ Microsoft 365管理センターでの最初のセットアップの後でも設�
       - **[選択したサイトのライブラリのみ]**、使用可能にするサイトを選択するか、最大50サイトのリストをアップロードします。</br>
       - **SharePointライブラリはなし**どのサイトも使用できるようにしたくない場合(セットアップ後に変更できます)。
 
-   ![フォームの処理を構成する](../media/content-understanding/admin-configforms.png)
+   > [!div class="mx-imgBorder"]
+   > ![フォームの処理を構成する](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 含まれているサイトを削除しても、そのサイトのライブラリに適用されている既存のモデルには影響しません。また、ドキュメント理解モデルをライブラリに適用する機能もありません。 
     
-5. **コンテンツセンターの作成 ** ページで、ユーザーがドキュメント理解モデルを作成して管理することができるように、SharePoint コンテンツセンターサイトを作成できます。 </br>
-    a. [ **サイト名**に、コンテンツセンターサイトの名前を入力します。</br>
-    b. [ **サイトアドレス** には、サイト名に選択した内容に基づいて、サイトの URL が表示されます。 変更する場合は、[ **編集**] をクリックします。</br>
+5. **コンテンツセンターの作成 ** ページで、ユーザーがドキュメント理解モデルを作成して管理することができるように、SharePoint コンテンツセンターサイトを作成できます。
 
-      ![コンテンツ センターを作成する](../media/content-understanding/admin-cu-create-cc.png)</br>
+    1. [**サイト名**] に、コンテンツ センター サイトの名前を入力します。
+    
+    1. [ **サイトアドレス** には、サイト名に選択した内容に基づいて、サイトの URL が表示されます。 変更する場合は、[ **編集**] をクリックします。
 
-    [**次へ**] を選択します。
+       > [!div class="mx-imgBorder"]
+       > ![コンテンツ センターを作成する](../media/content-understanding/admin-cu-create-cc.png)</br>
+
+       [**次へ**] を選択します。
 
 6. [ **確認と完了**] ページで、選択した設定を確認して、変更を行うことができます。 選択内容に問題がない場合は、[**ライセンス認証 **]を行います。
 
@@ -89,7 +94,8 @@ SharePoint Syntex を構成したら、SharePoint Syntex機能を使用するユ
 
 4. [ **インテリジェントコンテンツサービス**] を選択します。 [**アプリ**] の下で、**インテリジェントコンテンツサービスのためのコモンコンテンツサービス** と **インテリジェントコンテンツサービス**の両方が選択されていることを確認します。
 
-    ![Microsoft 365 管理センターのSharePoint Syntexライセンス](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft 365 管理センターの SharePoint Syntex ライセンス](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. **[変更の保存]** をクリックします。
 

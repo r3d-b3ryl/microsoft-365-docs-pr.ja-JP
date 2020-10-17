@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: セットアップガイドを使用して、Microsoft 365 または Office 365 の計画と構成を促進します。
-ms.openlocfilehash: fd9d9a3b65f3a4e47604299c47a85d8c5e551149
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446941"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493699"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -90,6 +90,17 @@ Windows 仮想デスクトップは、クラウドで実行される包括的な
 
 [Windows 仮想デスクトップセットアップガイド](https://aka.ms/wvdsetupguide)は、管理者に、リソースの計画と、展開、セットアップのガイダンス、およびその他のリソースに関する前提条件を提供します。 
 
+### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge 展開アドバイザー
+
+Microsoft Edge は、世界クラスの互換性とパフォーマンス、必要なセキュリティとプライバシー、および web を最高にするために設計された新しい機能を提供するために、地上から再構築されています。
+
+[Microsoft Edge 展開アドバイザー](https://aka.ms/edgeadvisor)は、エンタープライズサイト探索を構成して、組織内でアクセスされるサイトが IE モードを使用する必要があるかどうかを確認し、重要なセキュリティ機能を確認して構成し、組織の要件を満たすためにプライバシーポリシーおよび追加のポリシーを構成し、デバイスで web アクセスを管理するのに役立ちます。 Microsoft Edge は個別のデバイスにダウンロードできます。または、構成マネージャーまたは Microsoft Intune を使用して、組織内の複数のユーザーに展開する方法について説明します。
+Windows 仮想デスクトップは、クラウドで実行される包括的なデスクトップおよびアプリケーション仮想化サービスです。 これは、簡略化された管理、マルチセッション Windows 10、Microsoft 365 アプリの最適化、およびリモートデスクトップサービス (RDS) 環境のサポートを提供する唯一の仮想デスクトップインフラストラクチャ (VDI) です。 Windows デスクトップとアプリを数分で Azure に展開して拡張し、組み込みのセキュリティ機能とコンプライアンス機能を利用できます。 
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune 構成マネージャーの共同管理のセットアップガイド
+
+組織が Microsoft Intune と構成マネージャーの両方を使用して共同管理する既存の Configuration Manager クライアントデバイスと新しいインターネットベースのデバイスについては、 [Intune 構成マネージャーの共同管理セットアップガイド](https://aka.ms/comanagementsetup) を使用してください。 この共同管理の展開ガイドを使用すると、Windows 10 デバイスを管理して、両方のソリューションのメリットを受けながら、組織のデバイスに新しい機能を追加できます。
+
 ## <a name="guides-for-authentication-and-access"></a>認証とアクセスのガイド
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD セットアップガイド
@@ -97,6 +108,10 @@ Windows 仮想デスクトップは、クラウドで実行される包括的な
 [AZURE AD セットアップガイド](https://aka.ms/aadpguidance)には、組織に強力なセキュリティ基盤があることを確認するための情報が記載されています。 このガイドでは、管理者向けの Azure の役割ベースのアクセス制御 (Azure RBAC)、オンプレミスのディレクトリの Azure AD Connect、および Azure AD Connect の正常性などの初期機能をセットアップして、自動同期時にハイブリッド id の正常性を監視できるようにします。 
 
 また、オプションの高度な id 保護とユーザープロビジョニングの自動化を含む、セルフサービスのパスワードのリセット、条件付きアクセス、および統合されたサードパーティのサインオンを有効にする方法についても説明します。
+
+### <a name="sync-users-from-your-orgs-directory"></a>組織のディレクトリからユーザーを同期する
+
+「 [組織のディレクトリ同期」ウィザードからユーザーを同期](https://aka.ms/directorysyncsetup) すると、ディレクトリ同期が有効になります。 これにより、オンプレミスとクラウドの id が統合されて、簡単にアクセスして管理できるようになります。 シングルサインオン、セルフサービスオプション、アカウントの自動プロビジョニング、条件付きアクセス制御、コンプライアンスポリシーなど、新しい機能のロックを解除します。 これにより、ユーザーはどこからでも必要なリソースにアクセスできるようになります。
 
 ### <a name="plan-your-passwordless-deployment"></a>パスワードの展開を計画する
 

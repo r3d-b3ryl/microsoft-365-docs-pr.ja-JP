@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: 122df0f81200462f85d52985ccf3e42ce5d925f7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: ca5774c027eebaedd42bcca23292b89d92f1e102
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446825"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487746"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -38,7 +38,7 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 ![Microsoft 365 でリモート ワーカーを支援する](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 このビデオでは、展開プロセスの手順の概要について説明します。
-
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
 このソリューションは、次の主要な機能を提供します。

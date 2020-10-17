@@ -18,36 +18,36 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 以下のテスト ラボ ガイドを使用して、Microsoft 365 Enterprise 向けのデモ、概念実証、または開発/テスト環境を設定します。
-ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686768"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487472"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 Enterprise のテスト ラボ ガイド
 
 *これは、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-テスト ラボ ガイド (TLG) を活用すれば、Microsoft 製品の概要をいち早く把握することができます。テスト ラボ ガイドは、簡単ではあるものの代表的なテスト環境を構成する方法を説明しています。これらの環境は、試用期間または有料サブスクリプションの期間内に、デモ、カスタマイズ、概念の複合的な証拠の作成に使用できます。 
+テスト ラボ ガイド (TLG) を活用すれば、Microsoft 製品の概要をいち早く把握することができます。テスト ラボ ガイドは、簡単ではあるものの代表的なテスト環境を構成する方法を説明しています。これらの環境は、試用期間または有料サブスクリプションの期間内に、デモ、カスタマイズ、概念の複合的な証拠の作成に使用できます。
 
-TLG はモジュラーとして機能するように設計されています。TLG は、テストしてみたい内容やそのテストに必要な要件にできるだけ一致するように、複数の構成を行える仕組みになっています。この実地体験型ガイドにより、新しい製品やシナリオの展開要件を理解し、運用環境でホストする計画を立てやすくなります。
+TLGs はモジュール化するように設計されています。互いに連携して、学習またはテスト構成のニーズにより近い複数の構成を作成します。「自分で作成したものと it が正常に機能する」という実践的な体験により、運用環境へのホスティングをより適切に計画できるようになります。
 
-また、TLG を使用すると、アプリケーションの開発およびテスト用の典型的な環境を作成することもできます。これは、開発/テスト環境とも呼ばれます。
+また、TLGs を使用して、開発/テストアプリケーション (開発/テスト環境とも呼ばれる) を開発およびテストするための典型的な環境を作成することもできます。
   
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-[テスト ラボ ガイド スタック](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)に移動して、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事へのビジュアル マップを確認してください。
+Microsoft 365 for enterprise のテストラボガイドスタックに含まれるすべての記事のビジュアルマップについては、次の図を展開するか、「 [microsoft 365 for enterprise のテストラボガイドスタック](../downloads/Microsoft365EnterpriseTLGStack.pdf)」にアクセスしてください。
 
-[![The Microsoft 365 Enterprise のテスト ラボ ガイド スタック](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+[![The Microsoft 365 Enterprise のテスト ラボ ガイド スタック](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本構成
 
 最初に、 [Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)のテスト環境を作成します。2つの異なる種類の基本構成を作成できます。
 
-- オンプレミスのコンポーネントを含まないクラウド専用の環境で、Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合には、[軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)を使用します。
+- [軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md) -エンタープライズの機能に対して、オンプレミスのコンポーネントを含まないクラウドのみの環境で、Microsoft 365 を構成してデモを行う場合に使用します。
 
-- Active Directory Domain Services (AD DS) ドメインなどのオンプレミスのコンポーネントを使用するハイブリッド クラウド環境で Microsoft 365 Enterprise の機能を構成しデモンストレーションする場合には、[シミュレートされたエンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)を使用します。
+- シミュレートされた[エンタープライズ基本構成](simulated-ent-base-configuration-microsoft-365-enterprise.md)-エンタープライズ機能に対して Microsoft 365 を構成してデモンストレーションする場合は、Active Directory ドメインサービス (AD DS) ドメインなどのオンプレミスのコンポーネントを使用するハイブリッドクラウド環境で、これを使用します。
 
 試用版または運用テスト環境に Microsoft 365 E5 ライセンスを追加することなく、Office 365 E5 のテスト環境を作成することもできます。
     
@@ -69,14 +69,14 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [Azure AD シームレス シングル サインオン](single-sign-on-m365-ent-test-environment.md)
   
-   Azure AD シームレス シングル サインオン (SSO) を AD DS ドメイン コントローラーで有効にしてテストします。
+   AD DS ドメインコントローラーを使用して Azure AD のシームレスなシングルサインオン (シームレスな SSO) を有効にしてテストします。
 
 - [多要素認証](multi-factor-authentication-microsoft-365-test-environment.md)
   
    特定のユーザー アカウントで、スマートフォンによる多要素認証を有効にしてテストします。
 
 - [全体管理者アカウントを保護する](protect-global-administrator-accounts-microsoft-365-test-environment.md)
- 
+
    条件付きアクセス ポリシーを使用してグローバル管理者アカウントをロックする。
 
 - [パスワード ライトバック](password-writeback-m365-ent-test-environment.md)
@@ -85,7 +85,7 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
 - [パスワードのリセット](password-reset-m365-ent-test-environment.md)
 
-   セルフサービスによるパスワードのリセット (SSPR) を使用して、パスワードをリセットします。
+   セルフサービスによるパスワードのリセットを使用して、パスワードをリセットします。
 
 - [ライセンスとグループ メンバーシップの自動管理](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
@@ -99,7 +99,6 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 
    お勧めする ID、デバイス アクセスの構成、および条件付きアクセス ポリシーをテストするための環境を作成します。
 
-
 ## <a name="mobile-device-management"></a>モバイル デバイス管理
 
 モバイル デバイス管理に関連する機能や能力のデモンストレーションは、以下を参照してください。
@@ -111,7 +110,6 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 - [iOS および Android デバイスの登録](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
    iOS または Android デバイスを登録し、それらをリモートで管理します。
-
 
 ## <a name="information-protection"></a>情報保護
 
@@ -128,5 +126,3 @@ ID に関連する機能や能力のデモンストレーションは、以下�
 - [特権アクセスの管理](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    組織の昇格されたタスクと特権タスクへの Just-In-Time アクセスを可能にするため、特権アクセス管理を構成します。
-
-

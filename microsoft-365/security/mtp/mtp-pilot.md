@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f49f1afe5461a4f2eff0a3049f1d14d1892f70ce
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446869"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477022"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>パイロットの Microsoft 脅威保護プロジェクトを実行する 
 
@@ -41,6 +41,16 @@ Microsoft の脅威保護 (MTP) のメリットと導入を効果的に決定す
 ## <a name="how-to-use-this-pilot-playbook"></a>このパイロットプレイブックの使用方法
 
 このガイドでは、パイロットプロジェクトをセットアップする方法について、Microsoft の脅威保護と詳しい手順の概要を説明します。 
+
+Microsoft Threat Protection は、統合された事前違反のエンタープライズ防御スイートであり、エンドポイント、id、電子メール、およびアプリケーション間の応答をネイティブに調整し、高度な攻撃から統合された保護を提供します。 そのためには、次の機能を結合して、単一のセキュリティソリューションにオーケストレーションします。
+  - エンドポイントの microsoft Defender。 Microsoft Defender Advanced Threat Protection (エンドポイント) の新しい名前
+  - Microsoft Defender for Office 365、Office 365 ATP (電子メール) の新しい名前 
+  - Id の Microsoft Defender。 Azure ATP (identity) の新しい名前 
+  - Microsoft Cloud App Security (apps)
+
+![画像 of_Microsoft ユーザーのための脅威保護ソリューション、Azure Advanced Threat Protection、エンドポイントの Microsoft Defender Advanced Threat Protection、クラウドアプリ、Microsoft Cloud App Security、およびデータについては、Office 365 Advanced Threat Protection  ](../../media/mtp/m365pillars.png)
+
+統合された Microsoft の脅威保護ソリューションを使用すると、セキュリティ担当者は、Microsoft Defender Advanced Threat Protection、Office 365 ATP、Azure ATP、および Microsoft Cloud App Security receive を使用して、脅威の完全な範囲と影響、どのように環境を入力したか、どのように影響を受けるか、どのように組織をどのように影響して Microsoft の脅威保護は、攻撃を阻止または停止したり、影響を受けるメールボックス、エンドポイント、ユーザー id を自己回復させるための自動操作を行います。 詳細については、 [Microsoft の脅威保護の概要](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) を参照してください。
 
 ![Microsoft の脅威保護パイロットを実行するフェーズ](../../media/pilotphases.png)
 

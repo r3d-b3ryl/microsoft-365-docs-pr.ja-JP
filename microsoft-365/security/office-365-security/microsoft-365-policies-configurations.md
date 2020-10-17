@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 6037d997f43abfaf1f2d6b7fd55143fb0332dbe3
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6d0f090f9931e88566e37b038cc30375657019c3
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464434"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487674"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -157,7 +157,7 @@ Windows 10 for Microsoft 365 enterprise for enterprise は、Pc に推奨され�
 |:-------------------|:-------|:--------|:---------------|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を強制する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
-|**Intune アプリケーション保護を強制する**|はい|はい|必要|
+|**Intune アプリケーション保護を強制する**|はい|はい|はい|
 |**組織が所有するデバイスの Intune 登録を強制する**|PC に準拠しているか、ドメインに参加している必要がありますが、独自のデバイス (BYOD) の電話とタブレットを許可します。|準拠しているまたはドメインに参加しているデバイスを必要とする|準拠しているまたはドメインに参加しているデバイスを必要とする|
 
 ## <a name="device-ownership"></a>デバイスの所有権
@@ -193,6 +193,10 @@ Microsoft では、意図しない構成が発生する可能性があるため�
 2. 共通 id を構成し、条件付きアクセスポリシーにアクセスします。
 3. ゲストユーザーと外部ユーザーの条件付きアクセスポリシーを構成します。
 4. Microsoft Teams、Exchange Online、SharePoint などの Microsoft 365 クラウドアプリの条件付きアクセスポリシーを構成します。
+
+<!--
+After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
+--> 
 
 ## <a name="next-step"></a>次のステップ
 

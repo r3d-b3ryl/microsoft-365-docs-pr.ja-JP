@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 84b7f5959d3bd8c13476059655113ea78495862a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 07309131e9be4ef8149ca71dfd4fc6bc5ecf845d
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417721"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487437"
 ---
 # <a name="health-data-hosting-hds-france"></a>健康データ ホスティング (HDS) フランス
 
@@ -58,18 +58,18 @@ HDS 証明書は、プレビューまたはプレリリースの Microsoft オ�
 
 HDS 認証は 3 年間有効です。
 
-- HDS: 2018: [ASIP SANTÉ](https://esante.gouv.fr/) および [BSI Group](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
+- HITACHI: 2018: [ASIP SANTÉ](https://esante.gouv.fr/)
+- [BSI グループ](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
 
 ## <a name="how-to-implement"></a>実装方法
 
-**契約条件—フランス公衆保健条例では、健康データ ホスティング サービスまたはクラウド サービス プロバイダーとその顧客の間で特定の契約条件を実施する必要があります。 資格のあるお客様は Microsoft オンライン サービス上で健康個人データをホストする前に、Microsoft のライセンス窓口に連絡してこれらの特定の契約条件を締結する必要があります。
-
-[健康とライフ サイエンス — ケースの概要、ソリューションガイド、チュートリアル、および Azure ソリューションの構築に役立つその他のリソース。
+- **契約条件**—フランス公衆保健条例では、健康データ ホスティング サービスまたはクラウド サービス プロバイダーとその顧客の間で特定の契約条件を実施する必要があります。 資格のあるお客様は Microsoft オンライン サービス上で健康個人データをホストする前に、Microsoft のライセンス窓口に連絡してこれらの特定の契約条件を締結する必要があります。
+- **健康とライフ サイエンス** — ケースの概要、ソリューションガイド、チュートリアル、および Azure ソリューションの構築に役立つその他のリソース。
 
 ## <a name="resources"></a>リソース
 
 - [マイクロソフト オンライン サービス条件](https://aka.ms/Online-Services-Terms)
-- [Microsoft HDS 認証のブログ](https://news.microsoft.com/fr-fr/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)
+- [Microsoft HDS 認証のブログ](https://news.microsoft.com/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)
 - [Azure フランス](https://azure.microsoft.com/global-infrastructure/france/)
 - [保険向け Azure](https://azure.microsoft.com/industries/healthcare/)
 - [Microsoft のセキュリティ](https://www.microsoft.com/security)

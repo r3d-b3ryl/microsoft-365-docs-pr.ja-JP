@@ -3,7 +3,6 @@ title: PowerShell を使用して Microsoft 365 ユーザーアカウントの�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: '概要: microsoft 365 の PowerShell を使用して、Microsoft 365 テナント内の個別のまたは複数のユーザーアカウントのプロパティを構成します。'
-ms.openlocfilehash: 6a435b3981efa8d8c2be7f6d983a1d062237f0db
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ae797d67b47c637dc95176b92fad8090f8a7ab37
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691584"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580930"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントのプロパティを構成する
 
@@ -34,7 +33,7 @@ Microsoft 365 管理センターを使用して、Microsoft 365 テナントの�
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
-Graph モジュールの Azure Active Directory PowerShell を使用してユーザーアカウントのプロパティを構成するには、 [set-azureaduser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) コマンドレットを使用して、設定または変更するプロパティを指定します。 
+Graph モジュールの Azure Active Directory PowerShell を使用してユーザーアカウントのプロパティを構成するには、 [set-azureaduser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) コマンドレットを使用して、設定または変更するプロパティを指定します。 
 
 最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
    
@@ -74,8 +73,11 @@ Graph モジュールの Azure Active Directory PowerShell を使用してユー
     
     これは、ISO 3166-1 alpha-2 (A2) の 2 文字の国/地域コードです。
     
-その他のパラメーターについては、[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) を参照してください。
+その他のパラメーターについては、[Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) を参照してください。
 
+>[!Note]
+>ユーザーアカウントにライセンスを割り当てるには、その前に、利用状況の場所を割り当てる必要があります。
+>
 
 ユーザー アカウントのユーザー プリンシパル名を表示するには、次のコマンドを実行します。
   
@@ -264,7 +266,7 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 - Department プロパティが "Accounting" に設定されているすべてのユーザーアカウントを検索し**ます (Where {$ _)。Department-eq "Accounting"}**) を行い、結果の情報を次のコマンドに送信し **|** ます ()。
     
 - ユーザーの所在地をフランスに設定します (**get-msoluser-@ location "FR"**)。
-    
+
 
 ## <a name="see-also"></a>関連項目
 

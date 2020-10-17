@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430141"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477007"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -56,7 +56,7 @@ ms.locfileid: "48430141"
 
 - 拍の数が**含まれている**-単語内のサブ文字列を不必要に検索しないようにするには、ではなく演算子を使用し `has` `contains` ます。 [文字列演算子について](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **[特定の列を検索**する]: すべての列で全文検索を実行するのではなく、特定の列を参照します。 すべての `*` 列のチェックには使用しないでください。
-- **大文字**と小文字を区別します。大文字と小文字を区別する検索はより具体的で、一般的にパフォーマンスが高くなります。 大文字と小文字が区別された [文字列演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)の名前 ( `has_cs` および `contains_cs` は通常、で終わる) `_cs` 。 また、ではなく、大文字と小文字を区別する等値演算子を使用することもでき `==` `~=` ます。
+- **大文字**と小文字を区別します。大文字と小文字を区別する検索はより具体的で、一般的にパフォーマンスが高くなります。 大文字と小文字が区別された [文字列演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)の名前 ( `has_cs` および `contains_cs` は通常、で終わる) `_cs` 。 また、ではなく、大文字と小文字を区別する等値演算子を使用することもでき `==` `=~` ます。
 - **Parse (抽出しない**): 可能であれば、 [parse 演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) または [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)のような解析関数を使用します。 `matches regex`文字列演算子または[extract () 関数](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)を使用しないでください。両方で正規表現を使用します。 より複雑なシナリオのために正規表現の使用を予約します。 [解析関数の詳細を参照してください。](#parse-strings)
 - [**テーブルに式**を適用しない]: テーブルの列にフィルターを適用する場合は、集計列に対してフィルターを適用しません。
 - **3 文字の用語はありません**。3文字以下の用語を使用して、比較またはフィルターを適用しないでください。 これらの用語はインデックス付けされず、一致するリソースが必要になります。
@@ -253,7 +253,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ### <a name="parse-strings"></a>文字列を解析する
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。 
 
-| String | 関数 | 使用例 |
+| 文字列 | 関数 | 使用例 |
 |--|--|--|
 | コマンドライン | [parse_command_line ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 | 
 | Paths | [parse_path ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | ファイルまたはフォルダーのパスのセクションを抽出します。 |

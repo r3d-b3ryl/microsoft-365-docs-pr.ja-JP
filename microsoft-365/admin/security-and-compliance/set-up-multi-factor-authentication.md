@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 320c66e6c9db7827c22cab67df57d75375f009d4
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153679"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464016"
 ---
 # <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
   
@@ -96,12 +96,11 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 1. 多要素認証ページで、各ユーザーを選択し、その多要素認証ステータスを **[無効]** に設定します。
 
 ## <a name="next-steps"></a>次の手順
-
 - [追加の検証手法を登録する方法](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [機能: 多要素認証](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [登録後のサインインの方法](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [追加の検証手法を変更する方法](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [新しいスマートフォンのような状況に対処する方法](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-- [MFA のサインインのトラブルシューティング](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
 
 
 

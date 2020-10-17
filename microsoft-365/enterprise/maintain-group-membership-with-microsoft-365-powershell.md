@@ -3,7 +3,6 @@ title: PowerShell を使用して Microsoft 365 グループメンバーシッ�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +18,18 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: PowerShell を使用して Microsoft 365 グループのメンバーシップを管理する方法について説明します。
-ms.openlocfilehash: 464ebcebe87fcd7ce081de85e75acf76cd6d5a46
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 7763f4275ff31f3dc26aa7fecba93e545f7c7644
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235632"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580976"
 ---
 # <a name="maintain-microsoft-365-group-membership-with-powershell"></a>PowerShell を使用して Microsoft 365 グループメンバーシップを管理する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
 Microsoft 365 の PowerShell を microsoft 365 管理センターの代わりとして使用して、Microsoft 365 のグループメンバーシップを維持することができます。 
-
-> [!TIP]
-> ユーザーアカウントとグループ名を指定して、すぐに実行できる PowerShell コマンドを生成するには、この [グループメンテナンス Microsoft Excel ブック](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx)を使用します。 
 
 >[!Note]
 >Microsoft 365 グループメンバーシップを Microsoft 365 管理センターで[管理する方法について説明](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。

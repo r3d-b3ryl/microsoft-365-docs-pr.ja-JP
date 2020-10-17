@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: e56ba8933947c37db3e558ef36dd6d305915040f
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418099"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487626"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>Microsoft の脅威保護パイロットの終了および概要  
 
@@ -87,7 +87,7 @@ ms.locfileid: "48418099"
 - パイロットの結果についての詳細なレポート
 - 前方へ移動する方法の決定
 
-最終出力からのレポート ( [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) フェーズで識別した) と Microsoft の連絡先の両方を提示します。 このような作業により、製品やドキュメントを改善するためにフィードバックを確実に使用できるようになります。
+最終的な出力からのレポートを、社内関係者 ( [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 段階で確認したもの) と Microsoft の連絡先に提示します。 このような作業により、製品やドキュメントを改善するためにフィードバックを確実に使用できるようになります。
 
 このシミュレーションを楽しんでいただければ幸いです。 組織内の大規模なスケールで学んだ内容の実装を開始して、統合セキュリティソリューションを最大限に活用してください。
 

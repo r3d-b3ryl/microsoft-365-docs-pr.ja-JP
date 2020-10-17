@@ -15,69 +15,74 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: このテストラボガイドを使用して、Microsoft 365 for enterprise テスト環境の特権アクセス管理を有効にします。
-ms.openlocfilehash: d8d92aa86076e323e4b5bb5c8eb1385edcac420c
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 24ca7a6408a4290c54dd2bcd7c3f6061eb8f6c05
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545944"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487590"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>Microsoft 365 用のエンタープライズテスト環境の特権アクセス管理
 
 *このテストラボガイドは、Microsoft 365 for enterprise および Office 365 エンタープライズテスト環境の両方で使用できます。*
 
-この記事の手順に従って、Microsoft 365 for enterprise テスト環境のセキュリティを強化する特権アクセス管理を構成します。
+この記事では、Microsoft 365 for enterprise テスト環境のセキュリティを強化するために、特権アクセス管理を構成する方法について説明します。
+
+Priviledged アクセス管理を構成するには、3つのフェーズが含まれます。
+- [フェーズ 1: Microsoft 365 for enterprise テスト環境を構築する](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [フェーズ 2: 特権アクセス管理を構成する](#phase-2-configure-privileged-access-management)
+- [フェーズ 3: 昇格された権限のあるタスクに承認が必要であることを確認する](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
 
 ![Microsoft クラウドのテスト ラボ ガイド](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
->[!TIP]
->[ここ](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)をクリックして、Microsoft 365 Enterprise のテスト ラボ ガイド スタックに含まれるすべての記事へのビジュアル マップを確認してください。
+> [!TIP]
+> Microsoft 365 for enterprise のテストラボガイドスタックに含まれるすべての記事のビジュアルマップについては、「 [microsoft 365 for enterprise のテストラボガイドスタック](../downloads/Microsoft365EnterpriseTLGStack.pdf)」を参照してください。
   
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>フェーズ 1: Microsoft 365 for enterprise テスト環境を構築する
 
-最低限の要件を持つ軽量な方法で特権アクセス管理を構成する場合は、「 [軽量な基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
+最低限の要件を持つ軽量な方法で特権アクセス管理を構成する場合は、「軽量な [基本構成](lightweight-base-configuration-microsoft-365-enterprise.md)」の手順に従ってください。
   
 シミュレートされたエンタープライズで特権アクセス管理を構成する場合は、 [パススルー認証](pass-through-auth-m365-ent-test-environment.md)の手順に従います。
   
 >[!NOTE]
->権限のあるアクセス管理をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと AD DS フォレストのディレクトリ同期が含まれます。 この記事は、一般的な組織を表す環境で、特権アクセス管理をテストしてテストできるようにするためのオプションとして提供されています。 
+>特権アクセス管理をテストするには、シミュレートされたエンタープライズテスト環境を必要としません。これには、インターネットに接続されたシミュレートされたイントラネットと、Active Directory ドメインサービスフォレストのディレクトリ同期が含まれます。 この記事はオプションとして提供されており、一般的な組織を表す環境で、特権アクセス管理をテストし、それを試してみることができます。
 
 ## <a name="phase-2-configure-privileged-access-management"></a>フェーズ 2: 特権アクセス管理を構成する
 
 このフェーズでは、承認者グループを構成し、Microsoft 365 for enterprise テスト環境の特権アクセス管理を有効にします。 その他の詳細と、特権アクセス管理の概要については、「 [特権アクセス管理](../compliance/privileged-access-management-overview.md)」を参照してください。
 
-次の手順に従って、組織内で特権アクセスを設定して使用します。
+組織で特権アクセスを設定して使用するには、次の手順を実行します。
 
-- [手順 1: 承認者のグループを作成する](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
+#### <a name="step-1-create-an-approvers-group"></a>[手順 1: 承認者のグループを作成する](../compliance/privileged-access-management-configuration.md#step-1-create-an-approvers-group)
 
-    特権アクセスの使用を開始する前に、昇格されたタスクと特権タスクへのアクセスのための受信要求に対して、誰がだれに承認権限を付与するかを決定します。 承認者グループの一部であるユーザーは、アクセス要求を承認できます。 これは、Microsoft 365 でメールが有効なセキュリティグループを作成することによって有効になります。 テスト環境に「特権アクセス承認者」という名前の新しいセキュリティグループを作成し、以前のテストラボガイドの手順で作成した「User 3」を追加します。
+特権アクセスの使用を開始する前に、昇格されたタスクと特権タスクへのアクセスのための受信要求に対して、誰がだれに承認権限を付与するかを決定します。 承認者グループの一部であるすべてのユーザーは、アクセス要求を承認できます。 特権アクセスを使用するには、Microsoft 365 でメールが有効なセキュリティグループを作成する必要があります。 テスト環境で、新しいセキュリティグループに「権限のあるアクセス承認者」という名前を指定し、以前のテストラボガイドの手順で作成した「User 3」を追加します。
 
-- [手順 2: 特権アクセスを有効にする](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
+#### <a name="step-2-enable-privileged-access"></a>[手順 2: 特権アクセスを有効にする](../compliance/privileged-access-management-configuration.md#step-2-enable-privileged-access)
 
-    既定の承認者グループを使用して、Microsoft 365 で特権アクセスを明示的に有効にする必要があります。また、特権アクセス管理アクセス制御から除外する必要があるシステムアカウントのセットを含める必要があります。 このガイドのフェーズ3を開始する前に、必ず組織で特権アクセスを有効にしてください。
+既定の承認者グループを使用して Microsoft 365 で特権アクセスを明示的に有効にする必要があります。また、特権アクセス管理アクセス制御から除外する必要のあるシステムアカウントのセットが含まれている必要があります。 このガイドのフェーズ3を開始する前に、必ず組織で特権アクセスを有効にしてください。
 
 ## <a name="phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks"></a>フェーズ 3: 昇格された権限のあるタスクに承認が必要であることを確認する
 
-このフェーズでは、特権アクセスポリシーが機能していること、および定義された昇格した権限のあるタスクを実行する承認がユーザーに必要であることを確認します。
+このフェーズでは、特権アクセスポリシーが機能していること、および定義された昇格した権限のあるタスクを実行するためにユーザーに承認が必要であることを確認します。
 
-### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義されていないタスクを実行するためのテスト機能
+### <a name="test-the-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義されていないタスクを実行する機能をテストする
 
 最初に、テスト環境で全体管理者として構成されているユーザーの資格情報を使用して Exchange 管理 PowerShell に接続し、新しいジャーナルルールを作成します。 [New-journalrule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule)タスクは、現在、組織の特権アクセスポリシーでは定義されていません。
 
-1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation**microsoft exchange online**リモート powershell モジュールの exchange online リモート powershell モジュールにサインインします。
+1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation の exchange online リモート powershell モジュールにサインインし、microsoft**exchange online**リモート powershell モジュールにサインインします。
 
-2. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
+1. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
 
-```ExchangeManagementPowerShell
-New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
-```
+   ```ExchangeManagementPowerShell
+   New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -JournalEmailAddress barbara@adatum.com -Scope Global -Enabled $true
+   ```
 
-4. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
+1. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>New-journalrule タスクの新しい特権アクセスポリシーを作成する
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>New-JournalRule タスクの新しい特権アクセスポリシーを作成する
 
 >[!NOTE]
->このガイドのフェーズ2の手順1と2をまだ完了していない場合は、「権限アクセス承認者」という名前の承認者のグループを作成し、テスト環境で特権アクセスを有効にする手順に従ってください。
+>このガイドのフェーズ2の手順1と2をまだ完了していない場合は、「権限アクセス承認者」という名前の承認者グループを作成する手順に従って、テスト環境での特権アクセスを有効にしてください。
 
 1. 資格情報を使用して [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。テスト環境のグローバル管理者アカウントです。
 
@@ -85,7 +90,7 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
 3. [ **アクセスポリシーと要求の管理**] を選択します。
 
-4. [ **ポリシーの構成** ] を選択し、[ **ポリシーの追加**] を選択します。
+4. [ **構成ポリシー**] を選択し、[ **ポリシーの追加**] を選択します。
 
 5. ドロップダウンフィールドで、次の値を選択または入力します。
 
@@ -99,29 +104,29 @@ New-JournalRule -Name "JournalRule1" -Recipient joe@contoso.onmicrosoft.com -Jou
 
     **承認グループ**: 特権アクセス承認者
 
-6. [ **作成** ] を選択し、[ **閉じる**] をクリックします。 ポリシーが完全に構成され、有効になるまでに数分かかる場合があります。 次の手順で承認の要件をテストする前に、ポリシーが完全に有効になるまでの時間を確保してください。
+6. [ **作成**] を選択し、[ **閉じる**] を選択します。 ポリシーが完全に構成され、有効になるまでに数分かかる場合があります。 次の手順で承認の要件をテストする前に、ポリシーが完全に有効になるまでの時間を確保してください。
 
-### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義された New-journalrule タスクのテスト承認要件
+### <a name="test-approval-requirement-for-the-new-journalrule-task-defined-in-a-privileged-access-policy"></a>特権アクセスポリシーで定義された New-JournalRule タスクのテスト承認要件
 
-1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation**microsoft exchange online リモート**powershell モジュールの exchange online リモート powershell モジュールにサインインします。
+1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation の exchange online リモート powershell モジュールを開き、microsoft**exchange online リモート**powershell モジュールにサインインします。
 
 2. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
 
-```ExchangeManagementPowerShell
-New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
-```
+   ```ExchangeManagementPowerShell
+   New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
+   ```
 
-3. Exchange 管理 PowerShell で "十分な権限がありません" というエラーを表示します。
+3. Exchange 管理 PowerShell で "権限が不足しています" というエラーを表示します。
 
-```ExchangeManagementPowerShell
-Insufficient permissions. Please raise an elevated access request for this task.
-    + CategoryInfo          : NotSpecified: (:) [], LocalizedException
-    + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
-    7:38:34 PM] [FailureCategory=Cmdlet-LocalizedException] 882BD051
-    + PSComputerName        : outlook.office365.com
-```
+   ```ExchangeManagementPowerShell
+   Insufficient permissions. Please raise an elevated access request for this task.
+       + CategoryInfo          : NotSpecified: (:) [], LocalizedException
+       + FullyQualifiedErrorId : [Server=CY1PR00MB0220,RequestId=7b8c7470-ddd0-4528-a01e-5e20ecc9bd54,TimeStamp=9/19/2018
+       7:38:34 PM] [FailureCategory=Cmdlet-LocalizedException] 882BD051
+       + PSComputerName        : outlook.office365.com
+   ```
 
-### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>New-journalrule タスクを使用して新しいジャーナルルールを作成するためのアクセス権を要求する
+### <a name="request-access-to-create-a-new-journal-rule-using-the-new-journalrule-task"></a>New-JournalRule タスクを使用して新しいジャーナルルールを作成するためのアクセス権を要求する
 
 1. テスト環境のグローバル管理者アカウントを使用して、 [Microsoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
@@ -141,7 +146,7 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
     **コメント**: 新しいジャーナルルールを作成するためのアクセス許可を要求する
 
-5. [ **保存** ] を選択し、[ **閉じる**] をクリックします。 要求は、電子メールを介して承認者のグループに送信されます。
+5. [ **保存**] を選択し、[ **閉じる**] を選択します。 要求は、電子メールを介して承認者のグループに送信されます。
 
 ### <a name="approve-privileged-access-request-for-the-creation-of-a-new-journal-rule"></a>新しいジャーナルルールの作成に関する特権アクセス要求を承認する
 
@@ -151,21 +156,21 @@ Insufficient permissions. Please raise an elevated access request for this task.
 
 3. [ **アクセスポリシーと要求の管理**] を選択します。
 
-4. 保留中の要求を選択し、[ **承認** ] を選択して、新しいジャーナルルールを作成するためのグローバル管理者アカウントへのアクセス権を付与します。 承認が付与されたことを確認する通知メールは、グローバル管理者アカウント (要求元ユーザー) に送信されます。  
+4. 保留中の要求を選択し、[ **承認** ] を選択して、新しいジャーナルルールを作成するためのグローバル管理者アカウントへのアクセス権を付与します。 グローバル管理者アカウント (要求元のユーザー) は、承認が付与されたことを確認する電子メールを受信します。
 
-### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>New-journalrule タスクの特権アクセスが承認された新しいジャーナルルールを作成するテスト
+### <a name="test-creating-a-new-journal-rule-with-privileged-access-approved-for-the-new-journalrule-task"></a>New-JournalRule タスクに対する特権アクセスが承認された新しいジャーナルルールを作成するテスト
 
-1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation**microsoft exchange online**リモート powershell モジュールの exchange online リモート powershell モジュールにサインインします。
+1. ローカルコンピューターで、 **Microsoft Corporation**  >  テスト環境のグローバル管理者アカウントを使用して、microsoft Corporation の exchange online リモート powershell モジュールにサインインし、microsoft**exchange online**リモート powershell モジュールにサインインします。
 
-2. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
+1. Exchange 管理 PowerShell で、組織の新しいジャーナルルールを作成します。
 
-```ExchangeManagementPowerShell
-New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
-```
+   ```ExchangeManagementPowerShell
+   New-JournalRule -Name "JournalRule2" -Recipient user1@<your subscription domain> -JournalEmailAddress user1@<your subscription domain> -Scope Global -Enabled $true
+   ```
 
-3. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
+1. Exchange 管理 PowerShell で新しいジャーナルルールが正常に作成されたことを表示します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 テスト環境でのその他の [情報保護](m365-enterprise-test-lab-guides.md#information-protection) 機能と機能について説明します。
 

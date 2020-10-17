@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: '概要: PowerShell を使用して、ポリシーを使用して Skype for Business Online のユーザーアカウントのプロパティを管理します。'
-ms.openlocfilehash: 7657dae6fa1b27299e4cbc0cf6a311380cb90e9e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692076"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477043"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
@@ -30,19 +30,22 @@ Skype for Business Online のユーザーアカウントの多数のプロパテ
 ## <a name="before-you-begin"></a>はじめに
 
 次の手順にしたがってコマンドを実行するためのセットアップを行います (すでに終わっている場合はこれらの手順は省略可能です)。
-  
-1. [Skype for Business Online Connector モジュール](https://www.microsoft.com/download/details.aspx?id=39366)をダウンロードしてインストールします。
+
+  > [!Note]
+  > 現時点では、Skype for Business Online Connector は、最新の Teams PowerShell モジュールに含まれています。 最新の Teams PowerShell 公開リリースを使用している場合は、Skype for Business Online Connector をインストールする必要はありません。
+
+1. [Teams PowerShell モジュール](https://docs.microsoft.com/microsoftteams/teams-powershell-install)をインストールします。
     
 2. Windows PowerShell コマンド プロンプトを開いて次のコマンドを実行します: 
-    
-```powershell
-Import-Module SkypeOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-  ```
 
-ダイアログ ボックスが表示されたら、Skype for Business Online 管理者のアカウント名とパスワードを入力します。
+   ```powershell
+   Import-Module MicrosoftTeams
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
+
+   ダイアログ ボックスが表示されたら、Skype for Business Online 管理者のアカウント名とパスワードを入力します。
     
 ## <a name="manage-user-account-policies"></a>ユーザー アカウント ポリシーの管理
 

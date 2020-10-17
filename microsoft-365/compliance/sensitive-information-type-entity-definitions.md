@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430434"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487495"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -232,7 +232,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -292,7 +292,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -341,12 +341,12 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 2桁の数字 
 - 5桁の数字または文字 (大文字小文字を区別しない)
 
-OR
+または
 
 - 1 ~ 2 個の省略可能な文字 (大文字小文字を区別しない) 
 - 4 ~ 9 桁の数字
 
-OR
+または
 
 - 9桁の数字または文字 (大文字小文字を区別しない)
 
@@ -494,7 +494,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -617,7 +617,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -670,36 +670,155 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
 - 正規表現は、  `Regex_austria_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_austria_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` 見つかりました。 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- driver's licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - futex
-- futex (futex) republik osterreich
+- führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>オーストリアの id カード
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -831,7 +950,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -892,7 +1011,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -971,7 +1090,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1501,41 +1620,163 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_belgium_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_belgium_eu_driver's_license_number` が見つかりました。
+- またはのキーワードが `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` 見つかりました。
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-**Keywords__belgium_eu_driver ' s_license_number**
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
 - dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver ' s_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- führerschein
 - führerscheinnummer
+- füehrerscheinnummer
+- futex
+- futex の ehのリリース
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein-nr
-- futex の eh/Nr
-- futex の eh/nr
+- 
+permis de conduire
+- numéro permis conduire
+
 
 ## <a name="belgium-national-number"></a>ベルギーの国番号
 
@@ -1554,7 +1795,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1718,7 +1959,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -1794,7 +2035,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 
 ### <a name="definition"></a>定義
@@ -1856,7 +2097,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1919,7 +2160,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -1996,7 +2237,7 @@ Registro de 識別子 Dade (RIC) (新しい形式):
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2055,38 +2296,155 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_bulgaria_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_bulgaria_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### <a name="keywords"></a>キーワード
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
 - dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## <a name="bulgaria-uniform-civil-number"></a>ブルガリアの一様な民事訴訟番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -2111,7 +2469,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -2740,7 +3098,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2824,7 +3182,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -2884,7 +3242,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3316,35 +3674,152 @@ número do cartão
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
 - 正規表現は、  `Regex_croatia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_croatia_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` 見つかりました。 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## <a name="croatia-identity-card-number"></a>クロアチアの id カード番号
@@ -3481,7 +3956,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -3557,7 +4032,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -3622,34 +4097,152 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_cyprus_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_cyprus_eu_driver's_license_number` が見つかりました。
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` 見つかりました。
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## <a name="cyprus-identity-card"></a>キプロス id カード
@@ -3852,7 +4445,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 8つの文字と数字:
   
-- 2桁の文字 (大文字小文字を区別しない)
+- 文字 ' E ' (大文字と小文字を区別しない)
+- レター
 - スペース (省略可能)
 - 6桁の数字
 
@@ -3864,37 +4458,153 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_czech_republic_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_czech_republic_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` 見つかりました。 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>チェコのパスポート番号
@@ -3975,7 +4685,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4075,7 +4785,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -4131,40 +4841,155 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+いいえ
   
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_denmark_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_denmark_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
 
-- | dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - kørekort
 - kørekortnummer
 
@@ -4240,7 +5065,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4361,7 +5186,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -4417,7 +5242,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -4461,35 +5286,153 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_estonia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_estonia_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- 運転免許証番号
-- dlno#
-- permis de conduire
+--permis de conduire
+- juhilubade numbrid
+- juhiloa 番号
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>エストニア個人識別コード
@@ -4515,7 +5458,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -4645,7 +5588,7 @@ eesti kodaniku pass passi number passinumbrid document number document dokumendi
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5142,15 +6085,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-10桁の数字 (ハイフンを含む)
+10桁の数字とハイフンを含む文字
   
 ### <a name="pattern"></a>パターン
 
-ハイフンを含む10桁の数字:
+ハイフンを含む10桁の数字と文字:
   
 - 6桁の数字 
 - ハイフン1つ
-- 4桁の数字 
+- 3桁の数字 
+- 1桁の数字または文字
     
 ### <a name="checksum"></a>チェックサム
 
@@ -5160,35 +6104,159 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_finland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_finland_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - ajokortti
+- permis de conduire
+- ajokortin numero
+- kuljettaja lic。
+- körkort
+- körkortnummer
+- förare lic。
+- ajokortit
+- ajokortin numerot
 
 
 ## <a name="finland-european-health-insurance-number"></a>フィンランドの欧州医療保険番号
@@ -5267,7 +6335,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5426,7 +6494,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -5496,36 +6564,154 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_french_drivers_license は、このパターンに一致するコンテンツを検索します。
-- 少なくとも次のいずれかが当てはまります。
 - Keyword_french_drivers_license からのキーワードが見つかりました。
-- 関数 Func_eu_date は、日付を正しい日付形式で検索します。
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
-- drivers licence
-- drivers license
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
 - driving licence
-- driving license
-- permis de conduire
-- licence number
-- license number
-- licence numbers
-- license numbers
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+- 
+permis de conduire
+- 
+licence number
+- ライセンス番号
+- 
+licence numbers
+- 
+
+license numbers
+- numéros de ライセンス
 
 
 ## <a name="france-health-insurance-number"></a>フランスの健康保険番号
@@ -5701,7 +6887,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5785,7 +6971,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -5866,7 +7052,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -5923,130 +7109,183 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_german_drivers_license がパターンに一致するコンテンツを検出した。
-- 次の条件のうち 1 つ以上に該当する:
-    - Keyword_german_drivers_license_number のキーワードを検出した。
-    - Keyword_german_drivers_license_collaborative のキーワードを検出した。
-    - Keyword_german_drivers_license のキーワードを検出した。
+- Keyword_german_drivers_license_number のキーワードを検出した。
 - チェックサムが渡される。
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- Führerschein
-- Futex
-- Futex の ehのリリース
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein- 
-- Futex (中) 
-- Futex の ehのリリース 
-- FührerscheinnummerNr
-- Futex がある Hていません Einnumnr
-- Futex の Ehの再リリース/Einnumnr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein- Nr
-- Fuhrerschein- Nr
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse
-- FührerscheinnummerNr 
-- Futex がある Hていません Einnumnr 
-- Futex の Ehの再リリース/Einnumnr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein- Nr 
-- Fuhrerschein- Nr 
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse 
-- DL 
-- DL
-- Driv Lic 
-- Driv Licen 
-- Driv License
-- Driv Licenses 
-- Driv Licence 
-- Driv Licences 
-- Driv Lic 
-- Driver Licen 
-- Driver License 
-- Driver Licenses 
-- Driver Licence 
-- Driver Licences 
-- Drivers Lic 
-- Drivers Licen 
-- Drivers License 
-- Drivers Licenses 
-- Drivers Licence 
-- Drivers Licences 
-- Driver's Lic 
-- Driver's Licen 
-- Driver's License 
-- Driver's Licenses 
-- Driver's Licence 
-- Driver's Licences 
-- Driving Lic 
-- Driving Licen 
-- Driving License 
-- Driving Licenses 
-- Driving Licence 
-- Driving Licences
-
-#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N の Futex 
-- N 桁の Ehた ehのリリース
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N の Futex 
-- N 桁の Ehた ehのリリース 
-
-#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- 
+ausstellende behöde
+- 
+ausstellende behorde
+- 
+
+ausstellende behoerde
+- führerschein
+- futex
+- futex の ehのリリース
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein- 
+- futex (中) 
+- futex の ehのリリース 
+- führerscheinnummernr
+- futex がある hていません einnumnr
+- futex の ehの再リリース/einnumnr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- nr-führerschein
+- nr-futex
+- "nr" という futex
+- führerschein
+- (futex なし)
+- その他の ehの場合
+- n-führerschein
+- n の futex
+- n 桁の ehた ehのリリース
+- 
+permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dlno
 
 
 ## <a name="germany-identity-card-number"></a>ドイツの id カード番号
@@ -6122,7 +7361,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -6185,7 +7424,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -6266,7 +7505,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -6321,36 +7560,154 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_greece_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_greece_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
 
-- ライブラリ#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## <a name="greece-national-id-card"></a>ギリシャの国民 ID カード
@@ -6553,7 +7910,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -6646,35 +8003,152 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
 - 正規表現は、  `Regex_hungary_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_hungary_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>ハンガリーの個人識別番号
@@ -6700,7 +8174,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -6814,7 +8288,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -6885,7 +8359,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -6967,7 +8441,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7025,7 +8499,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7068,7 +8542,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7169,7 +8643,7 @@ ad、ae、al、at、az、ba、be、bg、bh、ch、cr、cy、cz、de、dk、do、
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7188,7 +8662,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Diseases の国際分類 (ICD-10-CM)
@@ -7362,36 +8836,152 @@ IPv6 の場合、DLP ポリシーは、抽出した約 300 文字が次の条件
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
   
 - 正規表現は、  `Regex_ireland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_ireland_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - ceadúnas tiomána
-
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>アイルランドのパスポート番号
 
@@ -7480,7 +9070,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7617,7 +9207,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7654,10 +9244,10 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-- 10個の文字と数字の組み合わせ:
+10個の文字と数字の組み合わせ:
 - 1文字 (大文字小文字を区別しない) 
 - 文字 "A" または "V" (大文字小文字の区別なし) 
-- 7つの文字 (大文字小文字を区別しない)、数字、またはアンダースコア文字 
+- 7桁の数字
 - 1文字 (大文字小文字を区別しない)
 
 ### <a name="checksum"></a>チェックサム
@@ -7686,8 +9276,11 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- numero di patente
 - patente di guida 
+- patente guida
+- patenti di guida
+- patenti guida
 
 ## <a name="italy-fiscal-code"></a>イタリアの会計年度コード
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -7714,7 +9307,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -7862,7 +9455,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -7981,36 +9574,24 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-- 口座番号を当座預金口座の確認 
-- #アカウントの確認、勘定番号の確認 
-- #勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## <a name="japan-drivers-license-number"></a>日本の運転免許証番号
 
@@ -8046,31 +9627,41 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- dl# 
-- DL 
-- dl# 
-- DL 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver's license 
-- drivers licenses 
-- driver's licenses 
-- driving licence 
-- そして# 
-- そして 
-- lics# 
-- state id 
-- state identification 
-- state identification number 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- 製品の使用許諾
+- ドライバのライセンス
+- このライセンス
+- ドライバのライセンス
+- driverlicenses
+- dl#
+- dl#
+- そして#
+- lics#
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証#
+- 運転免許#
+- 免許証#
+- 免許#
 
 
 ## <a name="japan-my-number---corporate"></a>日本の電話番号-会社
@@ -8094,7 +9685,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8158,7 +9749,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -8232,10 +9823,22 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- サインアウト
+- パスポート番号
+- パスポート番号
+- Passport #
+
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート#
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- 旅券番号♯
+- 旅券ナンバー
+
 
 ## <a name="japan-residence-card-number"></a>居住地のカード番号 (日本)
 
@@ -8278,6 +9881,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 住居カードなし
 - 住居カード#
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## <a name="japan-resident-registration-number"></a>日本の居住登録番号
 
@@ -8314,16 +9919,15 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number 
 - Residents Basic Registry Number 
 - Resident Registration No. 
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## <a name="japan-social-insurance-number-sin"></a>日本の社会保険番号 (SIN)
@@ -8375,8 +9979,22 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Social Insurance No. 
 - Social Insurance Num 
 - Social Insurance Number 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## <a name="latvia-drivers-license-number"></a>ラトビアドライバーのライセンス番号
 この機密情報の種類エンティティは、EU ドライバーのライセンス番号の機密情報の種類でのみ使用できます。
@@ -8400,35 +10018,153 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_latvia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_latvia_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## <a name="latvia-personal-code"></a>ラトビアの個人コード
 
@@ -8456,7 +10192,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -8646,35 +10382,153 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_lithuania_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_lithuania_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - vエア uotojo pažymėjimas
+- vエア uotojo pažymėjimo numeris
+- vエア uotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>リトアニアの個人コード
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -8699,7 +10553,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -8839,35 +10693,152 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_luxemburg_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_luxemburg_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - fahて fabnis
+- Führerschäin
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>ルクセンブルク national 識別番号 (自然人数)
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -9005,7 +10976,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -9168,35 +11139,153 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_malta_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_malta_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` 見つかりました。 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - liċenzja tas-sewqan
+- liċenzji tas-sewwieq
+
 
 ## <a name="malta-identity-card-number"></a>マルタの id カード番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -9425,7 +11514,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -9489,37 +11578,156 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_netherlands_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_netherlands_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- rijbewijs nummer
+- rijbewijsnummers
 
 
 ## <a name="netherlands-passport-number"></a>オランダのパスポート番号
@@ -9583,7 +11791,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -9675,7 +11883,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -9738,7 +11946,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -9754,7 +11962,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -9794,7 +12002,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -9913,7 +12121,7 @@ international driving permit
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -9961,7 +12169,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10016,7 +12224,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10067,7 +12275,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10174,35 +12382,152 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_poland_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_poland_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - prawo jazdy
+- prawa jazdy
 
 ## <a name="poland-identity-card"></a>ポーランドの id カード
 
@@ -10216,7 +12541,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10262,7 +12587,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10316,7 +12641,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10367,7 +12692,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -10428,7 +12753,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -10540,17 +12865,24 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="format"></a>フォーマット
 
-指定したパターンの2文字の後に7桁の数字
+2つのパターン-2 文字の後に特殊文字の5-8 数字
   
 ### <a name="pattern"></a>パターン
 
-2つの文字の後に特殊文字を含む7個の数字。
-  
-- 2桁の文字 (大文字小文字を区別しない) 
-- ハイフン1つ
-- 6桁の数字
+パターン 1: 2 文字の後に、特殊文字を含む5/6 が続きます。
+- 2桁の文字 (大文字小文字を区別しない)
+- ハイフン 1 つ 
+- 5桁または6桁の数字
 - スペース
-- 1桁の数字
+- 1 桁の数字
+
+パターン 2: 1 文字の後に、特殊文字を6/8 数字の後に続けます。
+- 1文字 (大文字小文字を区別しない)
+- ハイフン 1 つ 
+- 6桁または8桁の数字
+- スペース
+- 1 桁の数字
+
     
 ### <a name="checksum"></a>チェックサム
 
@@ -10560,35 +12892,160 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_portugal_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_portugal_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - carteira de motorista
+- carteira motorista
+- carteira de habilitação
+- carteira habilitação
+- número de licença
+- número licença
+- permissão de condução
+- permissão condução
+- Licença condução ポルトガル
+- carta de condução
 
 ## <a name="portugal-passport-number"></a>ポルトガルのパスポート番号
 この機密情報の種類エンティティは、EU のパスポート番号機密情報の種類でのみ使用できます。
@@ -10671,7 +13128,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -10734,7 +13191,6 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 ### <a name="pattern"></a>パターン
 
 1文字の後に8桁の数字。
-  
 - 1文字 (大文字小文字を区別しない) または数字 
 - 8桁の数字
     
@@ -10746,35 +13202,156 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_romania_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_romania_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>ルーマニアの個人数値コード (CNP)
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -10797,7 +13374,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -11108,7 +13685,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -11169,35 +13746,154 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_slovakia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_slovakia_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>スロバキアの個人番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -11220,7 +13916,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -11372,35 +14068,155 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_slovenia_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_slovenia_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
-- ドライバー lic
-- drivers license
-- drivers licence
-- driver's license 
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- dlno#
 - vozniško dovoljenje
+- vozniška številka ライセンス
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>スロベニア固有マスタ市民番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -11425,7 +14241,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -11563,7 +14379,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
   
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -11632,7 +14448,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -11677,7 +14493,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -11729,62 +14545,184 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、85% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数を  `Func_spain_eu_DL_and_NI_number_citizen` 返し `Func_spain_eu_DL_and_NI_number_foreigner` ます。または、パターンに一致するコンテンツを検索します。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` 見つかりました。 
+
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
-- 関数は、  `Func_spain_eu_driver's_license_number` パターンに一致するコンテンツを検索します。 
-- From キーワード  `Keywords_spain_eu_driver's_license_number` が見つかりました。 
+- 関数を  `Func_spain_eu_DL_and_NI_number_citizen` 返し `Func_spain_eu_DL_and_NI_number_foreigner` ます。または、パターンに一致するコンテンツを検索します。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- ドライバー lic
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
+- dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
 
-- dlno#
-- dl#
-- ドライバー lic
-- ドライバーのライセンス
-- driver license
-- drivers licence
-- drivers license
-- driver's licence
-- driver's license
-- driving licence
-- driving license
-- ドライバーライセンス番号
-- 運転免許証番号
-- ドライバーライセンス番号
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
-- ライセンス番号の運転
-- 運転免許証番号
-- 許可の推進
-- 許可番号の運転
 - permiso de conducción
 - permiso conducción
-- número/encia conducir
-- número デカーネット de conducir
-- número carnet conducir
+- /暗号化 ia de conducir
 - /暗号化 ia conducir
-- número de permiso de conducir
-- número de permiso conducir
-- número permiso conducir
 - permiso conducir
-- -encia de manejo
-- el carnet de conducir
+- permiso de conducir
+- permisos de conducir
+- permisos conducir
 - carnet conducir
+- carnet de conducir
+- -encia de manejo
+- /暗号化 ia manejo
 
 ## <a name="spain-dni"></a>スペイン DNI
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -11808,7 +14746,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -11953,7 +14891,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -11972,7 +14910,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
 ## <a name="spain-tax-identification-number"></a>スペインの税識別番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -12019,7 +14957,7 @@ Foreigner の識別番号のない Foreigners
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -12184,35 +15122,161 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 正規表現は、  `Regex_sweden_eu_driver's_license_number` パターンに一致するコンテンツを検出します。 
-- From キーワード  `Keywords_sweden_eu_driver's_license_number` が見つかりました。 
+- またはのキーワードが  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` 見つかりました。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
-**Keywords_sweden_eu_driver ' s_license_number**
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- dl#
-- driver license
-- 運転免許証番号
-- ドライバーのライセンス
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - ドライバー lic
-- drivers license
-- drivers licence
-- driver's license
-- 運転免許証番号
-- ドライバーのライセンス番号
-- 運転免許証番号
+- ドライバー lics
+- ドライバーライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driverslic
+- driverslics
+- その他のライセンス
+- driverslicences
+- 製品の使用許諾
+- このライセンス
+- ドライバー lic
+- ドライバー lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーライセンス
+- driver' lic
+- driver' lics
+- driver' ライセンス
+- driver' ライセンス
+- driver' ライセンス
+- driver'licences
+- ドライバー ' lic
+- ドライバー ' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバー ' ライセンス
+- ドライバー ' ライセンス
+- driver' slic
+- driver' slics
+- ドライバのライセンス
+- ドライバのライセンス
+- ドライバ ' スライスの持続性
+- driver'slicences
+- ドライバーの lic
+- ドライバーの lics
+- 運転免許証
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- dl#
+- dl#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driverslic#
+- driverslics#
+- 製品の使用許諾#
+- このライセンス#
+- その他のライセンス#
+- driverslicences#
+- ドライバー lic#
+- ドライバー lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーライセンス#
+- driver' lic#
+- driver' lics#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver' ライセンス#
+- driver'licences#
+- ドライバー ' lic#
+- ドライバー ' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバー ' ライセンス#
+- ドライバー ' ライセンス#
+- driver' slic#
+- driver' slics#
+- ドライバのライセンス#
+- ドライバのライセンス#
+- ドライバ ' スライスの持続性#
+- driver'slicences#
+- ドライバーの lic#
+- ドライバーの lics#
+- 運転免許証#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+ 
+- ライセンスの駆動
 - dlno#
+- driv lic
+- driv のライセンス
+- driv ライセンス
+- driv のライセンス
+- driv ライセンス
+- driv ライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- lic を推進する
+- ライセンスの駆動
+- ライセンスの駆動
+- driving licence
+
+- driving licences
+
+- 許可の推進
+- dl いいえ
+- dlno
+- dl 番号
+
+
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver ' s_license_number
+
+- ajokortti
+- permis de conducere
+- ajokortin numero
+- kuljettajat lic。
+- drivere lic。
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- förare lic。
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>スウェーデンの国民 ID
 
@@ -12230,7 +15294,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12369,7 +15433,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -12436,7 +15500,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
     
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
   
 ### <a name="definition"></a>定義
 
@@ -12532,38 +15596,53 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- international organization for standardization 9362 
-- iso 9362 
-- iso9362 
-- 実現\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift code 
-- swift number # 
-- swift routing number 
-- bic number 
-- bic code 
-- bic \# 
-- bic\# 
-- bank identifier code 
-- 標準化9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rapide \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# BIC 
-- code identificateur de banque 
+- international organization for standardization 9362
 
+- iso 9362
+- iso9362
+- 実現#
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- swift コード
+- swift number #
+
+- swift routing number
+
+- bic number
+
+- bic code
+
+- bic #
+- bic#
+- bank identifier code
+
+- Organisation internationale de normalisation 9362
+
+- rapide #
+
+- code SWIFT
+
+- le numéro de swift
+
+- swift numéro d'acheminement
+
+- le numéro BIC
+
+- # <a name="bic"></a>BIC
+- code identificateur de banque
+
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- SWIFT コード
+- SWIFT 番号
+- BIC 番号
+- BIC コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>スイスの SSN AHV 番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -12591,7 +15670,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12655,7 +15734,7 @@ numéro de sécurité sociale
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12810,7 +15889,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12857,7 +15936,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -12908,7 +15987,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13006,7 +16085,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="checksum"></a>チェックサム
 
-はい
+必要
 
 ### <a name="definition"></a>定義
 
@@ -13071,7 +16150,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 6桁の数字
 - 「A」、「B」、「C」、または「d」 (プレフィックスと同様に、サフィックスには特定の文字のみ指定できます。大文字と小文字は区別されません)
 
-OR
+または
 
 - 2文字
 - スペースまたはダッシュ
@@ -13095,24 +16174,18 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
 - 関数 Func_uk_nino がパターンに一致するコンテンツを検出した。
-- Keyword_uk_nino のキーワードを検出しなかった。
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード

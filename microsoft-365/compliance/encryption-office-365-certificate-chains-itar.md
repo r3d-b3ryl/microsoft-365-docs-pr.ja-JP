@@ -1,11 +1,11 @@
 ---
-title: Office 365 暗号化チェーン - DOD および GCC High
+title: Microsoft 365 暗号化チェーン-DOD および GCC 高
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/24/2020
+ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,34 +16,36 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Office 365 の DOD および GCC 高ルート証明書と証明機関 (CAs) の完全な一覧を表示します。
-ms.openlocfilehash: 19f164669392372c99c562f55cfb05487d9f7ed2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+description: Microsoft 365 の DOD および GCC 高ルート証明書と証明機関 (CAs) の完全な一覧を表示します。
+ms.openlocfilehash: a933acc14f0984e4935ff6e56ccccd3aed1f16cf
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308280"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493654"
 ---
-# <a name="office-365-encryption-chains---dod-and-gcc-high"></a>Office 365 暗号化チェーン - DOD および GCC High
+# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 暗号化チェーン-DOD および GCC 高
 
-Office 365 は、いくつかの異なる証明書プロバイダーを活用しています。 以下は、 **DOD および GCC が多くのお客様** が Office 365 へのアクセス時に遭遇する既知の Office 365 ルート証明書の完全なリストを示しています。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については、「 [Plan for サードパーティ SSL certificates For Office 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)」を参照してください。
+Microsoft 365 は、いくつかの異なる証明書プロバイダーを活用しています。 以下に、Microsoft 365 へのアクセス時に **DOD と GCC が高レベルのお客様** に発生する既知の microsoft 365 ルート証明書の完全な一覧を示します。 独自のインフラストラクチャにインストールする必要がある証明書の詳細については、「 [Microsoft 365 のサードパーティ SSL 証明書を計画](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)する」を参照してください。
 
 次の証明書情報は、 **すべての DOD および GCC 高のお客様**に適用されます。
 
+最終更新日: **10/16/2020**
+
 >[!NOTE]
->**世界中のお客様**に適用される証明書情報については、「 [Office 365 暗号化チェーン](encryption-office-365-certificate-chains.md)」を参照してください。
+>**世界中のお客様**に適用される証明書情報については、「 [Microsoft 365 暗号化チェーン](encryption-office-365-certificate-chains.md)」を参照してください。
 
 | **証明書の種類** | **P7b ダウンロード** | **CRL エンドポイント** | **OCSP エンドポイント** |
 | --- | --- | --- | --- | --- |
-| 公的に信頼されたルートおよび中間証明書 | [Office 365 ITAR 証明書バンドル (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/O365_Chain_Certs_ITAR20200304.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
+| 公的に信頼されたルートおよび中間証明書 | [Microsoft 365 ITAR 証明書バンドル (P7B)](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 証明書プロバイダーの詳細については、以下のセクションを展開して、その他の詳細を確認してください。
 
-## <a name="office-365-certificate-details"></a>**Office 365 証明書の詳細**
+## <a name="microsoft-365-certificate-details"></a>**Microsoft 365 証明書の詳細**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **[件名]** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
+| **Subject** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | --- | --- |
 | **シリアル番号** | 02:00:00: B9 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -57,7 +59,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
 
-| **[件名]** | CN = DigiCert Cloud Services CA-1<br>O = DigiCert Inc<br>C = US |
+| **Subject** | CN = DigiCert Cloud Services CA-1<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **発行者** | CN = DigiCert グローバルルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | **シリアル番号** | 01: 9E: C1: C6: BD: 3F:59: 7B: B2: 0C:33:38: E5:51: D8:77 |
@@ -73,9 +75,26 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 | **CRL Url** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP の Url** | http://ocsp.digicert.com |
 
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert Cloud Services CA-1**
+
+| **Subject** | CN = DigiCert Cloud Services CA-1<br>O = DigiCert Inc<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert Global Root CA, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 0F:17: 1A:48: C6: F2:23:80:92:18: CD: 2E: D6: DD: C0: E8 |
+| **公開キーの長さ** | RSA 2048 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **有効期限以前** | 木曜日、24月24日、2020 5:00 PM |
+| **有効期限が切れるまで** | 24月24日火曜日、2030 4:59 PM |
+| **サブジェクトキー識別子** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
+| **権限キー識別子** | キー Id:03: de:50:35:56: d1: 4c: bb:66: f0: a3: e2: 1b: 1b: c3:97: b2: 3d: d1:55 |
+| **拇印 (SHA-1)** | B3F6B64A07BB9611F47174407841F564FB991F29 |
+| **拇印 (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
 ### <a name="digicert-global-root-ca"></a>**DigiCert グローバルルート CA**
 
-| **[件名]** | CN = DigiCert グローバルルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
+| **Subject** | CN = DigiCert グローバルルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **シリアル番号** | 08: 3B: E0:56:90:42:46: B1: A1:75: 6A: C9:59:91: C7: 4A |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -88,9 +107,24 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 | **拇印 (SHA-256)** | 4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161 |
 | **Pin (SHA-256)** | r/mIkG3eEpVdm + u/ko-kr/cwxzOMo1bk4TyHIlByibiA5E = |
 
+### <a name="digicert-global-root-g2"></a>**DigiCert グローバルルート G2**
+
+| **Subject** | CN = DigiCert グローバルルート G2<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert グローバルルート G2, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 03: 3A: F1: E6: A7:11: A9: A0: BB:28:64: B1: 1D:09: FA: E5 |
+| **公開キーの長さ** | RSA 2048 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **有効期限以前** | 木曜日、8月1日、2013 5:00 AM |
+| **有効期限が切れるまで** | 金曜日、2038年1月15日午前4:00 時 |
+| **サブジェクトキー識別子** | 4E2254201895E6E36EE60FFAFAB912ED06178F39 |
+| **権限キー識別子** | キー Id: 4e:22:54:20:18:95: e6: e3: 6e: e6: 0f::: b9:12: ed:06:17: 8f:39 |
+| **拇印 (SHA-1)** | DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 |
+| **拇印 (SHA-256)** | CB3CCBB76031E5E0138F8DD39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F |
+
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert の高保証 EV ルート CA**
 
-| **[件名]** | CN = DigiCert 高保証 EV ルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
+| **Subject** | CN = DigiCert 高保証 EV ルート CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **シリアル番号** | 02: AC: 5C:26: 6A: 0B:40: 9B: 8F: 0B:79: F2: AE:46:25:77 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -105,7 +139,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 Extended Validation Server CA**
 
-| **[件名]** | CN = DigiCert SHA2 Extended Validation Server CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
+| **Subject** | CN = DigiCert SHA2 Extended Validation Server CA<br>OU = digicert<br>O = DigiCert Inc<br>C = US |
 | --- | --- |
 | **シリアル番号** | 0C:79: A9:44: B0: 8C:11:95:20:92:61: 5F: E2: 6B: 1D:83 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -117,9 +151,60 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 | **拇印 (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
 | **拇印 (SHA-256)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
 
+### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
+
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert Global Root CA, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 01: FD: A3: EB: 6E: CA:75: C8:88:43: 8B:72: 4B: CF:91 |
+| **公開キーの長さ** | RSA 2048 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **有効期限以前** | 金曜日、2013年3月8日、4:00 AM |
+| **有効期限が切れるまで** | 水曜日、2023年3月8日、4:00 AM |
+| **サブジェクトキー識別子** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
+| **権限キー識別子** | キー Id:03: de:50:35:56: d1: 4c: bb:66: f0: a3: e2: 1b: 1b: c3:97: b2: 3d: d1:55 |
+| **拇印 (SHA-1)** | 1FB86B1168EC743154062E8C9CC5B171A4B7CCB4 |
+| **拇印 (SHA-256)** | 154C433C491929C5EF686E838E323664A00E6A0D822CCC958FB4DAB03E49A08F |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
+### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
+
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert Global Root CA, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 02:74: 2E: AA:17: CA: 8E:21: C7:17: BB: 1F: FC: FD: 0C: A0 |
+| **公開キーの長さ** | RSA 2048 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **有効期限以前** | 2020年9月22日、5:00 PM |
+| **有効期限が切れるまで** | 日曜日、2030年9月22日、4:59 PM |
+| **サブジェクトキー識別子** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
+| **権限キー識別子** | キー Id:03: de:50:35:56: d1: 4c: bb:66: f0: a3: e2: 1b: 1b: c3:97: b2: 3d: d1:55 |
+| **拇印 (SHA-1)** | 626D44E704D1CEABE3BF0D53397464AC8080142C |
+| **拇印 (SHA-256)** | C1AD7778796D20BCA65C889A2655021156528BB62FF5FA43E1B8E5A83E3D2EAA |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
+### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
+
+| **Subject** | CN = DigiCert TLS RSA SHA256 2020 CA1<br>O = DigiCert Inc<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert Global Root CA, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 0A:35:08: D5: 5C:29: 2B:01: 7D: F8: AD:65: C0: 0F: F7: E4 |
+| **公開キーの長さ** | RSA 2048 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **有効期限以前** | (水) 年9月23日、2020 5:00 PM |
+| **有効期限が切れるまで** | 月曜日、2030年9月23日、4:59 PM |
+| **サブジェクトキー識別子** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
+| **権限キー識別子** | キー Id:03: de:50:35:56: d1: 4c: bb:66: f0: a3: e2: 1b: 1b: c3:97: b2: 3d: d1:55 |
+| **拇印 (SHA-1)** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
+| **拇印 (SHA-256)** | 25768713D3B459F9382D2A594F85F34709FD2A8930731542A4146FFB246BEC69 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
 ### <a name="entrust-root-certification-authority"></a>**Entrust ルート証明機関**
 
-| **[件名]** | CN = Entrust ルート証明機関<br>OU = "(c) 2006 Entrust, Inc"<br>OU = entrust/CPS はリファレンスに組み込まれています。<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
+| **Subject** | CN = Entrust ルート証明機関<br>OU = "(c) 2006 Entrust, Inc"<br>OU = entrust/CPS はリファレンスに組み込まれています。<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **シリアル番号** | 45: 6B:50:54 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -133,7 +218,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust ルート証明機関-G2**
 
-| **[件名]** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
+| **Subject** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **シリアル番号** | 4A:53: 8C:28 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -147,7 +232,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **[件名]** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 s liab.)<br>O = Entrust |
+| **Subject** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 s liab.)<br>O = Entrust |
 | --- | --- |
 | **シリアル番号** | 38:63: DE: F8 |
 | **公開キーの長さ** | RSA 2048 ビット (e 65537) |
@@ -161,7 +246,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1c"></a>**Entrust 証明機関-L1C**
 
-| **[件名]** | CN = Entrust 証明機関-L1C<br>OU = &quot; (c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O = &quot; Entrust, Inc&quot;<br>C = US |
+| **Subject** | CN = Entrust 証明機関-L1C<br>OU = &quot; (c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
 | **シリアル番号** | 4C: 0E: 8C:39 |
@@ -179,7 +264,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1e"></a>**Entrust 証明機関-L1E**
 
-| **[件名]** | CN = Entrust 証明機関-L1E<br>OU = &quot; (c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O = &quot; Entrust, Inc&quot;<br>C = US |
+| **Subject** | CN = Entrust 証明機関-L1E<br>OU = &quot; (c) 2009 Entrust, Inc&quot;<br>OU = entrust/rpa はリファレンスに組み込まれています。<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **発行者** | CN = Entrust 証明機関 (2048)<br>OU = (c) 1999 Entrust.net 制限付き<br>OU = entrust/CPS \_ 2048 incorp。 ref で。 (制限 liab.)<br>O = Entrust |
 | **シリアル番号** | 4C: 0E: C9:18 |
@@ -196,7 +281,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust 証明機関-L1K**
 
-| **[件名]** | CN = Entrust 証明機関-L1K<br>OU = &quot; (c) 2012 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
+| **Subject** | CN = Entrust 証明機関-L1K<br>OU = &quot; (c) 2012 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **発行者** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | **シリアル番号** | 0E: E9: 4C: C3:00:00:00:00:51: D3:77:85 |
@@ -214,7 +299,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="entrust-certification-authority---l1m"></a>**Entrust 証明機関-L1M**
 
-| **[件名]** | CN = Entrust サーティフィケーション Authority-L1M, OU = &quot; (c) 2014 Entrust, Inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
+| **Subject** | CN = Entrust サーティフィケーション Authority-L1M, OU = &quot; (c) 2014 Entrust, Inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | --- | --- |
 | **発行者** | CN = Entrust ルート証明機関-G2<br>OU = &quot; (c) 2009 Entrust, inc.-承認済みの使用のみ&quot;<br>OU = 「www.entrust.net/legal-terms」を参照<br>O = &quot; Entrust, Inc&quot;<br>C = US |
 | **シリアル番号** | 61: A1: E7: D2:00:00:00:00:51: D3:66: A6 |
@@ -229,9 +314,77 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 | **CRL Url** | http://crl.entrust.net/g2ca.crl |
 | **OCSP の Url** | http://ocsp.entrust.net |
 
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS 発行 CA 01**
+
+| **Subject** | CN = Microsoft Azure TLS 発行 CA 01<br>O = Microsoft Corporation<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert グローバルルート G2, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 0A: AF: A6: C5: CA:63: C4:51:41: EA: 3B: E1: F7: C7:53:17 |
+| **公開キーの長さ** | RSA 4096 ビット |
+| **署名アルゴリズム** | sha384RSA |
+| **有効期限以前** | 水曜日、2020年7月29日、5:30 AM |
+| **有効期限が切れるまで** | 木曜日、6月27日、2024 4:59 PM |
+| **サブジェクトキー識別子** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
+| **権限キー識別子** | キー Id: 4e:22:54:20:18:95: e6: e3: 6e: e6: 0f::: b9:12: ed:06:17: 8f:39 |
+| **拇印 (SHA-1)** | 2F2877C5D778C31E0F29C7E371DF5471BD673173 |
+| **拇印 (SHA-256)** | 24C7299864E0A2A6964F551C0E8DF2461532FA8C48E4DBBB6080716691F190E5 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS 発行 CA 02**
+
+| **Subject** | CN = Microsoft Azure TLS 発行 CA 02<br>O = Microsoft Corporation<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert グローバルルート G2, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 0C: 6A: E9: 7C: CE: D5:99:83:86:90: A0: 0A: 9E: A5:32:14 |
+| **公開キーの長さ** | RSA 4096 ビット |
+| **署名アルゴリズム** | sha384RSA |
+| **有効期限以前** | 水曜日、2020年7月29日、5:30 AM |
+| **有効期限が切れるまで** | 木曜日、6月27日、2024 4:59 PM |
+| **サブジェクトキー識別子** | 00AB91FC216226979AA8791B61419060A96267FD |
+| **権限キー識別子** | キー Id: 4e:22:54:20:18:95: e6: e3: 6e: e6: 0f::: b9:12: ed:06:17: 8f:39 |
+| **拇印 (SHA-1)** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AA |
+| **拇印 (SHA-256)** | 15A98761EBE011554DA3A46D206B0812CB2EB69AE87AAA11A6DD4CB84ED5142A |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS 発行 CA 05**
+
+| **Subject** | CN = Microsoft Azure TLS 発行 CA 05<br>O = Microsoft Corporation<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert グローバルルート G2, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 0D: 7B: ED: E9: 7D:82:09:96: 7A:52:63: 1B: 8B: DD:18: BD |
+| **公開キーの長さ** | RSA 4096 ビット |
+| **署名アルゴリズム** | sha384RSA |
+| **有効期限以前** | 水曜日、2020年7月29日、5:30 AM |
+| **有効期限が切れるまで** | 木曜日、6月27日、2024 4:59 PM |
+| **サブジェクトキー識別子** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
+| **権限キー識別子** | キー Id: 4e:22:54:20:18:95: e6: e3: 6e: e6: 0f::: b9:12: ed:06:17: 8f:39 |
+| **拇印 (SHA-1)** | 6C3AF02E7F269AA73AFD0EFF2A88A4A1F04ED1E5 |
+| **拇印 (SHA-256)** | D6831BA43607F5AC19778D627531562AF55145F191CAB5EFAFA0E0005442B302 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS 発行 CA 06**
+
+| **Subject** | CN = Microsoft Azure TLS 発行 CA 06<br>O = Microsoft Corporation<br>C = US |
+| --- | --- |
+| **発行者** | CN = DigiCert グローバルルート G2, OU = DigiCert, O = DigiCert Inc, C = US |
+| **シリアル番号** | 02: E7:91:71: FB:80:21: E9: 3F: E2: D9:83:83: 4C:50: C0 |
+| **公開キーの長さ** | RSA 4096 ビット |
+| **署名アルゴリズム** | sha384RSA |
+| **有効期限以前** | 水曜日、2020年7月29日、5:30 AM |
+| **有効期限が切れるまで** | 木曜日、6月27日、2024 4:59 PM |
+| **サブジェクトキー識別子** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
+| **権限キー識別子** | キー Id: 4e:22:54:20:18:95: e6: e3: 6e: e6: 0f::: b9:12: ed:06:17: 8f:39 |
+| **拇印 (SHA-1)** | 30E01761AB97E59A06B41EF20AF6F2DE7EF4F7B0 |
+| **拇印 (SHA-256)** | 48FF8B494668C752304B48BFE818758987DEF6582E5F09B921F4B60BB3D6A8DD |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **[件名]** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **Subject** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 08: B8: 7A:50: 1B: BE: 9C: DA: 2D:16: 4D: 3E:39:43: BF:55 |
@@ -249,7 +402,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **[件名]** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **Subject** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 0F: 2C:10: C9: 5B:06: C0:93: 7F: B8: D4:49: F8: 3E:85:69 |
@@ -267,7 +420,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **[件名]** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **Subject** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 0B: 6A: B3: B0: 3E:、B1: A9: F6: C4:60:92: 6A: A8: CD: FE: B3 |
@@ -285,7 +438,7 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **[件名]** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
+| **Subject** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = ワシントン<br>C = US |
 | --- | --- |
 | **発行者** | CN = ボルチモア CyberTrust Root<br>OU = CyberTrust<br>O = ボルチモア<br>C = IE |
 | **シリアル番号** | 08:88: CD:52: 5F:19:24:44: 4D:14: A5:82:91: DE: B9:52 |
@@ -298,5 +451,39 @@ Office 365 は、いくつかの異なる証明書プロバイダーを活用し
 | **拇印 (SHA-1)** | AD898AC73DF333EB60AC1F5FC6C4B2219DDB79B7 |
 | **拇印 (SHA-256)** | F0EE5914ED94C7252D058B4E39808AEE6FA8F62CF0974FB7D6D2A9DF16E3A87F |
 | **Pin (SHA-256)** | RCbqB + W8nwjznTeP4O6VjqcwdxIgI79eBpnBKRr32gc = |
+| **CRL Url** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
+
+| **Subject** | CN = Microsoft RSA TLS CA 01<br>O = Microsoft Corporation<br>C = US |
+| --- | --- |
+| **発行者** | CN = ボルチモア CyberTrust Root, OU = CyberTrust, O = ボルチモア, C = IE |
+| **シリアル番号** | 0F:14:96: 5F:20:20:69:99: 4F: D5: C7: AC:78:89:52: E2 |
+| **公開キーの長さ** | RSA 4096 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **有効期限以前** | 火曜日、2020年7月21日、4:00 PM |
+| **有効期限が切れるまで** | 2004年10月8日火曜日、2024 12:00 AM |
+| **サブジェクトキー識別子** | B5760C3011CEC792424D4CC75C2CC8A90CE80B64 |
+| **権限キー識別子** | キー Id: e5: 9d:59:30:82:47:58: cc: ac: fa:08:54:36:86:82: 3a: b5:04: 4d: f0 |
+| **拇印 (SHA-1)** | 703D7A8F0EBF55AAA59F98EAF4A206004EB2516A |
+| **拇印 (SHA-256)** | 04EEEA8E50B4775B3C24797262917EE50002EC4C75B56CDF3EE1C18CFCA5BA52 |
+| **CRL Url** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP の Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
+
+| **Subject** | CN = Microsoft RSA TLS CA 02<br>O = Microsoft Corporation<br>C = US |
+| --- | --- |
+| **発行者** | CN = ボルチモア CyberTrust Root, OU = CyberTrust, O = ボルチモア, C = IE |
+| **シリアル番号** | 0F: A7:47:22: C5: 3D:88: C8: 0F:58: 9E: FB: 1F: 9E: 4A: 3A |
+| **公開キーの長さ** | RSA 4096 ビット |
+| **署名アルゴリズム** | sha256RSA |
+| **有効期限以前** | 火曜日、2020年7月21日、4:00 PM |
+| **有効期限が切れるまで** | 2004年10月8日火曜日、2024 12:00 AM |
+| **サブジェクトキー識別子** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
+| **権限キー識別子** | キー Id: e5: 9d:59:30:82:47:58: cc: ac: fa:08:54:36:86:82: 3a: b5:04: 4d: f0 |
+| **拇印 (SHA-1)** | B0C2D2D13CDD56CDAA6AB6E2C04440BE4A429C75 |
+| **拇印 (SHA-256)** | 05E4005DB0C382F3BD66B47729E9011577601BF6F7B287E9A52CED710D258346 |
 | **CRL Url** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP の Url** | http://ocsp.digicert.com |

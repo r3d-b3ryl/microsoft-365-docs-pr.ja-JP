@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順
-ms.openlocfilehash: 7e434f2c878259099cf50882706198aafa99be11
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 8b43c225c6ea5ecd0de02250d341572704fb4482
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333969"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477114"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -128,7 +128,7 @@ Exchange Online では、7 日ごとにプロセスが実行され、保持ラ�
    ```
 
    ```powershell
-   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}   ```
+   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
 
 In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the system last processed your mailbox. If it has not happened since the time you created the policy, the labels are not going to appear. To force processing, run  `Start-ManagedFolderAssistant -Identity <user>`.
     

@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: この記事では、ハイブリッド先進認証と、オンプレミスの Skype for Business および Exchange サーバーで使用するための前提条件について説明します。
-ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361929"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487722"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>ハイブリッド先進認証の概要とオンプレミスの Skype for Business および Exchange サーバーで使用する前提条件
 
@@ -161,6 +161,7 @@ Get-CsOAuthConfiguration コマンドレットの詳細については、[Get-Cs
     一覧に表示されていないクライアントやプロトコル (POP3 など) は、オンプレミスの Exchange で先進認証をサポートせず、環境内で先進認証が有効にされた後も従来の認証メカニズムを引き続き利用します。
 
 - **一般的な前提条件**
+  - リソースフォレストのシナリオでは、ハイブリッド先進認証要求時に適切な SID 参照が実行されるように、アカウントフォレストとの双方向信頼が必要になります。 
   - AD FS を使用している場合、フェデレーションには Windows 2012 R2 AD FS 3.0 以上が必要です。
   - ID の構成は、パスワード ハッシュ同期、パススルー認証、Office 365 でサポートされるオンプレミス STS など、Azure AD Connect でサポートされるタイプのいずれかです。
   - ユーザー レプリケーションと同期のために、Azure AD Connect が構成され機能しています。
