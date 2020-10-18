@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 53cc91a2b5e756fcf4ec8fcc5371795bcfb8342c
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464350"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487154"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -104,21 +104,21 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 
 ## <a name="plan-for-and-deploy"></a>計画と展開
 
-Microsoft 365 for Enterprise の製品、機能、およびコンポーネントの展開を計画するには、3 つの方法があります。
+Microsoft 365 for Enterprise の製品、機能、コンポーネントの展開を計画するには、3 つの方法があります。
 
-- FastTrack との提携：
+- FastTrack との提携
 
    Microsoft のエンジニアは FastTrack を使用して、自分のペースでクラウドに移行できます。 「[Microsoft 365 の FastTrack](https://fasttrack.microsoft.com/microsoft365)」を参照してください。
 
-- Microsoft コンサルティング サービスまたは [Microsoft パートナー](https://partner.microsoft.com/)を使用すると：
+- Microsoft コンサルティング サービスまたは [Microsoft パートナー](https://partner.microsoft.com/)を使用する場合
 
    コンサルタントは、ご使用の現在のインフラストラクチャを分析し、Microsoft 365 for Enterprise のすべてのソフトウェアとサービスを組み込む計画の開発を支援できます。
 
-- お客様自身による導入です：
+- お客様自身による導入
 
    [ネットワーク ロードマップ](networking-roadmap-microsoft-365.md)から始めて、既存のインフラストラクチャと生産性ワークロードを構築または検証します。
 
-架空の代表的な多国籍企業である[Contoso Corporation](contoso-overview.md) のMicrosoft 365 for enterprise の展開方法をご覧ください。
+架空ではあるものの代表的な多国籍企業が、どのようにして Microsoft 365 for Enterprise を展開したかについては、「[Contoso Corporation のケース スタディ](contoso-overview.md)」を参照してください。
 
 ## <a name="additional-microsoft-365-products"></a>追加の Microsoft 365 製品
 

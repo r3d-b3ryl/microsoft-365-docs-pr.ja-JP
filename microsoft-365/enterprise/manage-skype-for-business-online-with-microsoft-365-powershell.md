@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: PowerShell for Microsoft 365 を使用して、Skype for Business Online ポリシー、ユーザー単位ポリシー、会議の設定を管理します。
-ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ff35463dc0c2e16106432c393b10e31e6bf0a5d2
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430036"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477103"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>PowerShell を使用して Skype for Business Online を管理する
 
@@ -29,21 +29,24 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
 
 ## <a name="before-you-start"></a>始める前に
 
-[Skype for Business Online Windows PowerShell モジュール](https://www.microsoft.com/download/details.aspx?id=39366)をダウンロードしてインストールし、コンピューターを再起動します。
+  > [!Note]
+   > Skype for Business Online Connector は現在、最新の Teams PowerShell モジュールに含まれています。 最新の Teams PowerShell パブリック リリースをご利用の場合は、Skype for Business Online Connector をインストールする必要はありません。
+   
+[Teams PowerShell モジュール](https://docs.microsoft.com/microsoftteams/teams-powershell-install)をインストールします。
 
 
-## <a name="connect-using-skype-for-business-online-admin-credentials"></a>Skype for Business Online の管理者資格情報を使用して接続する
+## <a name="connect-using-admin-credentials"></a>管理者の資格情報を使用して接続する
 
-1. Windows PowerShell コマンド プロンプト ウィンドを開いて次のコマンドを実行します:
+1. Windows PowerShell コマンド プロンプト ウィンドを開き、次のコマンドを実行します:
     
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $userCredential = Get-Credential
    $sfbSession = New-CsOnlineSession -Credential $userCredential
    Import-PSSession $sfbSession
    ```
 
-2. [**Windows PowerShell 資格情報の要求**] ダイアログ ボックスに Skype for Business Online 管理者のアカウント名とパスワードを入力し、[**OK**] を選択します。
+2. [**Windows PowerShell 資格情報の要求**] ダイアログ ボックスに管理者のアカウント名とパスワードを入力し、[**OK**] を選択します。
 
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>多要素認証の管理者アカウントを使用して接続する
@@ -51,7 +54,7 @@ Skype for Business Online 管理者は、ポリシーの管理を担当します
 1. Windows PowerShell コマンド プロンプト ウィンドを開いて次のコマンドを実行します:
 
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $sfbSession = New-CsOnlineSession
    Import-PSSession $sfbSession
    ```
