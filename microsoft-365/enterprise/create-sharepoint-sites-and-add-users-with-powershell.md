@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: '概要: PowerShell を使用して新しい SharePoint Online サイトを作成し、それらのサイトにユーザーとグループを追加します。'
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691775"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594920"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>PowerShell を使用して SharePoint Online サイトを作成し、ユーザーを追加する
 
@@ -43,6 +43,9 @@ PowerShell を使用して複数のサイトを作成し、指定されたコー
 PowerShell コマンドレットは .csv ファイルをインポートして、ファイルの最初の行を列の見出しとして読み取る波かっこ内のループにパイプ処理します。 PowerShell コマンドレットは、残りのレコードを反復処理し、各レコードに対して新しいサイトコレクションを作成し、列ヘッダーに従ってサイトコレクションのプロパティを割り当てます。
 
 ### <a name="create-a-csv-file"></a>.csv ファイルの作成
+
+> [!NOTE]
+> Resource quota パラメーターは、クラシックサイトでのみ機能します。 モダンサイトでこのパラメーターを使用すると、推奨されていないことを示す警告メッセージが表示されることがあります。 
 
 1. メモ帳を開き、次のテキスト ブロックを貼り付けます。<br/>
 
@@ -164,4 +167,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [PowerShell で Microsoft 365を管理する](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Microsoft 365 用 PowerShell の使用を開始する](getting-started-with-microsoft-365-powershell.md)
-
