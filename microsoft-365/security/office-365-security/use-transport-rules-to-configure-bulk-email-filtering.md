@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者は、メールフロールール (トランスポートルール) を使用して、Exchange Online Protection (EOP) で大量メール (灰色のメール) を識別し、フィルター処理する方法を学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c6a8ad5dd2752f86c0ff9ec96dafe621804b4856
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197305"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600311"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>メール フロー ルールを使用して EOP でバルク メールをフィルタリングする
 
@@ -79,7 +79,7 @@ Exchange online または exchange online メールボックスを使用しな�
        - `If you are unable to view the content of this email\, please`
        - `\>(safe )?unsubscribe( here)?\</a\>`
        - `If you do not wish to receive further communications like this\, please`
-       - `<img height="?1"? width="?1"? sr\c=.?http\://`
+       - `<img height="?1"? width="?1"? src=.?http\://`
        - `To stop receiving these+emails\:http\://`
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
@@ -134,7 +134,7 @@ New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>"
 この例では、メッセージを **スパム**として設定するために、前述したものと同じ正規表現のリストを使用する "バルクメールフィルター-RegEx" という名前の新しいルールを作成します。
 
 ```powershell
-New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? sr\c=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
+New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? src=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
 ```
 
 この例では、「バルクメールフィルター-単語」という名前の新しいルールを作成して、このトピックの前の部分と同じ単語リストを使用して、メッセージを **高精度のスパム**として設定します。

@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、ユーザーによって報告されたスパムやフィッシング電子メールを収集するようにメールボックスを構成する方法について説明します。
-ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446929"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600483"
 ---
-# <a name="user-submissions-policies"></a>ユーザー送信ポリシー
+# <a name="user-submissions-policy"></a>ユーザー送信ポリシー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -76,7 +76,7 @@ Exchange Online メールボックスを使用している Microsoft 365 組織�
 
 2. 表示される [ **ユーザーの送信** ] ページで、次のいずれかのオプションを選択します。
 
-   a. **Outlook のレポートメッセージ機能を有効にする (推奨)**: レポートメッセージアドインまたは outlook on the web の組み込みのレポートを使用して、次の設定を構成する場合は、このオプションを選択します。
+   1. **Outlook のレポートメッセージ機能を有効にする (推奨)**: レポートメッセージアドインまたは outlook on the web の組み込みのレポートを使用して、次の設定を構成する場合は、このオプションを選択します。
 
       - **エンドユーザーの確認メッセージをカスタマイズする**: このリンクをクリックします。 [ **確認メッセージのカスタマイズ** ] ポップアップが表示されたら、次の設定を構成します。
 

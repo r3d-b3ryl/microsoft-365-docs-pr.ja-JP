@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: 組織の SIEM サーバーと Office 365 Advanced Threat Protection および関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327167"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600555"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>高度な脅威保護との SIEM の統合
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-組織でセキュリティインシデントおよびイベント管理 (SIEM) サーバーを使用している場合は、Office 365 Advanced Threat Protection (Office 365 ATP) を SIEM サーバーに統合できます。 この統合は、 [Office 365 アクティビティ管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用してセットアップできます。 
+組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合は、Office 365 Advanced Threat Protection (Office 365 ATP) を SIEM サーバーに統合できます。 この統合は、 [Office 365 アクティビティ管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用してセットアップできます。 
 
 SIEM の統合により、SIEM サーバーのレポートで、Office 365 ATP によって検出されたマルウェアやフィッシングなどの情報を表示できます。 
 
@@ -68,5 +68,4 @@ SIEM サーバーまたはその他の同様のシステムが監査をポーリ
 [Office 365 脅威の調査および対応](office-365-ti.md)
 
 [Office 365 での自動調査および対応 (AIR)](automated-investigation-response-office.md)
-
 

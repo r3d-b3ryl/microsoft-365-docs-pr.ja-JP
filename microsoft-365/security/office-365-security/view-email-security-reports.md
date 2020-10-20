@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594887"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600567"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -297,8 +297,8 @@ ms.locfileid: "48594887"
 
 - **データの表示方法: コンテンツ \> マルウェア**<sup>1</sup>: 次の情報は、Office 365 ATP 組織で表示されます。
 
-  - **マルウェア対策エンジン**
-  - **ファイル分析**
+  - **マルウェア対策エンジン**: マルウェア対策によって Sharepoint Online、OneDrive、Teams の悪意のあるファイルをキャッチします。
+  - **ファイル分析**: 安全な添付ファイルによる、Sharepoint Online、OneDrive、Teams 内の悪意のあるファイルの分析。
 
   ![脅威保護状態レポートのコンテンツマルウェアビュー](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ ms.locfileid: "48594887"
 
 - **下に移動: 検出テクノロジ** と **View data: Email \> フィッシング**: 次の情報が表示されます。
 
-  - **ATP で生成された URL 評価**<sup>1</sup>
-  - **高度なフィッシングフィルター**
-  - **スプーフィング防止: DMARC エラー**
-  - **スプーフィング対策: 組織内**
-  - **スプーフィング防止: 外部ドメイン**
-  - **ブランド偽装**
-  - **ドメイン偽装**<sup>1</sup>
-  - **EOP URL 評価**
-  - **一般的なフィッシングフィルター**
+  - **Atp が生成した url 評価**<sup>1</sup>: 他の atp 顧客の atp detonations から生成された悪意のある url 評価。
+  - **Advanced フィッシング filter**: コンピューター学習に基づくフィッシング信号。
+  - **DMARC の失敗**: メッセージの DMARC 認証が失敗した。
+  - **組織内のスプーフィング**: Sender が受信者ドメインのスプーフィングを試行しています。
+  - **スプーフィング防止-外部ドメイン**: 送信者が他のドメインのスプーフィングを試行しています。
+  - **ブランド偽装**: 送信者に基づく既知のブランドの偽装。
+  - **ドメイン偽装**<sup>1</sup>: お客様が所有または定義しているドメインの偽装。
+  - **EOP url 評価**: 悪意のある url の評価。
+  - **General フィッシング filter**: アナリストルールに基づいたフィッシング信号。 
   - **Others**
-  - **フィッシング ZAP**<sup>2</sup>
+  - **フィッシング ZAP**<sup>2</sup>: 0 時間自動削除フィッシングメッセージ。
   - **URL 分析**<sup>1</sup>
-  - **ユーザー偽装**<sup>1</sup>
+  - **ユーザー偽装**<sup>1</sup>: 管理者によって定義されたユーザーの偽装またはメールボックスインテリジェンスによる学習。
 
   ![脅威保護状態レポートのフィッシング電子メールの検出テクノロジビュー](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **分割ダウン: 検出テクノロジ** と **データの表示者: 電子メール \> マルウェア**: 次の情報が表示されます。
 
-  - **ATP で生成されたファイル評価**<sup>1</sup>
-  - **マルウェア対策エンジン**<sup>1</sup>
-  - **マルウェア対策ポリシーファイルの種類ブロック**
-  - **ファイル分析**<sup>1</sup>
+  - **Atp で生成されたファイル評価**<sup>1</sup>: atp detonations によって生成されたすべての悪意のあるファイルの評価。
+  - **マルウェア対策エンジン**<sup>1</sup>: マルウェア対策エンジンからの検出。
+  - **マルウェア対策ポリシーファイルの種類のブロック**: これらは、メッセージで特定された悪意のあるファイルの種類によってフィルター処理された電子メールメッセージです。
+  - **ファイル分析**<sup>1</sup>: ファイル分析は、安全な添付ファイルによってキャッチされます。  
   - **悪意のあるファイルの評価**
   - **マルウェアの ZAP**<sup>2</sup>
   - **Others**

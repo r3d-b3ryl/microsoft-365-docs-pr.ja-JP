@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 個々のユーザーまたは組織全体で、Outlook および outlook on the web 用のレポートメッセージアドインを有効にする方法について説明します。
-ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350625"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600371"
 ---
 # <a name="enable-the-report-message-add-in"></a>レポート メッセージ アドインを有効にする
 
@@ -41,9 +41,9 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
 個人ユーザーの場合は、 [レポートメッセージアドインを自分自身に対して有効に](#get-the-report-message-add-in-for-yourself)することができます。
 
-グローバル管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、 [組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。 これで、レポートメッセージアドインが [一元展開](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)によって利用可能になりました。
+グローバル管理者または Exchange Online 管理者であり、Exchange が OAuth 認証を使用するように構成されている場合は、 [組織に対してレポートメッセージアドインを有効](#get-and-enable-the-report-message-add-in-for-your-organization)にすることができます。 レポートメッセージ Add-In は、 [一元展開](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)によって使用できるようになりました。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - レポートメッセージアドインは、ほとんどの Microsoft 365 サブスクリプションと、次の製品で機能します。
 
@@ -91,7 +91,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 > [!NOTE]
 > 組織にアドインが表示されるまで、最大で12時間かかる場合があります。
 
-1. Microsoft 365 管理センターで、[ **Services & アドイン** ] ページに移動し、 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> [ **アドインの展開**] をクリックします。
+1. Microsoft 365 管理センターで、[ **設定]、[統合アプリ & アドイン** ] ページに移動し、 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> [アドインの **展開**] をクリックします。
 
    ![Microsoft 365 管理センターの [サービスとアドイン] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -151,7 +151,7 @@ Outlook 用のレポートメッセージアドインと web 上の Outlook (旧
 
 1. Microsoft 365 管理センターで、[ **Services & アドイン** ] ページに移動 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> します。
 
-   ![新しい Microsoft 365 管理センターの [サービスとアドイン] ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![新しい Microsoft 365 管理センターのサービスと Add-Ins ページ](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. **レポートメッセージ**アドインを検索して選択します。
 

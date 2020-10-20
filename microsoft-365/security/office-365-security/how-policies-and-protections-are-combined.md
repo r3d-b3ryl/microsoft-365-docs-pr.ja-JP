@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) での保護の順序、および保護ポリシーの優先度の値によってどのようなポリシーが適用されるかを調べることができます。
-ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6b17a524fb9dfbf5e33604c2ec26a678befc8834
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196049"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600287"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
@@ -41,13 +41,13 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
   |Priority|電子メール保護|カテゴリ|管理対象|
   |---|---|---|---|
   |1-d|マルウェア|CAT: 男性 W|[EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)|
-  |2 |フィッシング|CAT: PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |pbm-2|フィッシング|CAT: PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |1/3|高確度スパム|CAT: HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |4 |スプーフィング|CAT: スプーフィング|[EOP でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)|
-  |5 |スパム|CAT: SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |6 |バルク|CAT: BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
-  |7<sup>\*</sup>|ドメイン偽装 (保護されたユーザー)|DIMP|[ATP フィッシング詐欺対策ポリシーを設定する](configure-atp-anti-phishing-policies.md)|
-  |~<sup>\*</sup>|ユーザー偽装 (保護されたドメイン)|UIMP|[ATP フィッシング詐欺対策ポリシーを設定する](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|ユーザー偽装 (保護されたドメイン)|UIMP|[ATP フィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
+  |シックス<sup>\*</sup>|ドメイン偽装 (保護されたユーザー)|DIMP|[ATP フィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
+  |7 |スパム|CAT: SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
+  |8 |バルク|CAT: BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> これらの機能は、ATP のフィッシング対策ポリシーでのみ利用可能です。
@@ -63,7 +63,7 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
   |ATP のフィッシング対策ポリシー|Priority|ユーザー偽装|スプーフィング対策|
   |---|---|---|---|
   |ポリシー A|1-d|オン|オフ|
-  |ポリシー B|2 |オフ|オン|
+  |ポリシー B|pbm-2|オフ|オン|
   |
 
 1. スプーフィングは、ユーザー偽装 (8) よりも優先度が高いため、メッセージはスプーフィングとしてマークされ、スプーフィングとして扱われます。

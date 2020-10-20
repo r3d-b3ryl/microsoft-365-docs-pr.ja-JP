@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で検疫されたメッセージのエンドユーザースパム通知について知ることができます。
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195821"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600299"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>ユーザースパム通知を使用して、検疫済みメッセージを解放して報告する
 
@@ -58,3 +58,6 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 - **レビュー**: このリンクをクリックすると、セキュリティ & コンプライアンスセンターの [検疫] に移動します (メッセージが検疫された理由によっては、検疫済みメッセージの表示、リリース、削除、または報告を行うことができます)。 詳細については、「 [EOP でユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。
 
 ![エンドユーザーのスパム通知の例](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> 受信拒否リストでは、まだメールを送信できます。 この送信者からメールボックスに送信されるメッセージは、すぐに [迷惑メール] フォルダーに移動されます。 この送信者からの将来のメッセージは、[迷惑メール] フォルダーまたはエンドユーザーの検疫に送られます。 これらのメッセージを検疫するのではなく、到着時に削除する場合は、 [メールフロールール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (トランスポートルールとも呼ばれます) を使用して、到着時にメッセージを削除します。

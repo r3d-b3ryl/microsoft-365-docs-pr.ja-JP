@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 85813659d952fe936c8e8b41f2dc103a60116641
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 55a5ec4a2bfd562b581be9565022483d227f68be
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447073"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600507"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP の新機能
 
@@ -46,9 +46,9 @@ ms.locfileid: "48447073"
 - [構成アナライザーを使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
 - [テナントの許可/ブロックリストを使用してフィルター verdicts を手動で上書きする](tenant-allow-block-list.md)
 - [上位の対象ユーザー、トランスポートルール、コネクタを含む脅威エクスプローラーの拡張機能](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP Plan 2)
-- [脅威エクスプローラー](threat-explorer.md)での提示情報 (電子メールは、テナント/ユーザーポリシーによって許可/ブロックされました)
-- [脅威エクスプローラー](threat-explorer.md#threats-in-urls)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none) 
-- 脅威、追加の操作、配信場所、更新されたタイムラインビューを中心とした更新による、探している[脅威エクスプローラーの機能強化](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming)
+- [脅威エクスプローラー](threat-explorer.md)での提示情報 (電子メールはテナント/ユーザーポリシーによって許可/ブロックされました) (OFFICE 365 ATP Plan 2)
+- [脅威エクスプローラ](threat-explorer.md#threats-in-urls)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none) (OFFICE 365 ATP Plan 2)
+- 脅威、追加の操作、配信場所、更新されたタイムラインビュー (Office 365 ATP Plan 2) に関連する更新プログラムを使用した、探しているアプリ[エクスプローラーの機能強化](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming)
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 
@@ -111,4 +111,3 @@ Office 365 ATP は2つのプランで利用できることをご存知ですか�
 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-

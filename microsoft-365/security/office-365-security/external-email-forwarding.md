@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417230"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600531"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>Office 365 で外部電子メール転送を構成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "48417230"
 
 外部転送は、発信の *スパム対策ポリシー* によって制御され、構成された設定に基づいてユーザーのスコープを設定します。 現在、3つの設定がサポートされています。
 
-- **自動** : これはシステムで制御されます。送信スパムフィルターを使用して、外部電子メールの自動転送を制御することができます。 これは、既定の設定です。
+- **自動** : 自動外部転送がブロックされます。 メッセージの内部自動転送は引き続き機能します。 これは、既定の設定です。
 
 - **オン** -自動外部転送が許可されていて、制限されていません。
 
