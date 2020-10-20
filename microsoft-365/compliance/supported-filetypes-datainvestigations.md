@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: サポートされているファイルの種類と、データ調査で閲覧できる閲覧者 (プレビュー) を一覧にした表。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca4dab40f5c3098d05323edec0ddbab54ac29273
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 826ad69b1fb0074cd0c8bc1b3b0208bb8e77d528
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285273"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600416"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>データ調査でサポートされているファイルの種類 (プレビュー)
 
@@ -47,7 +47,7 @@ ms.locfileid: "48285273"
 |openxmlformats-officedocument (アプリケーション/vnd) | 文書 | はい | はい | はい | いいえ | . potx |
 | apadsheet ml シート | 文書 | はい | はい | はい | いいえ | .xlsx |
 |application/vnd. openxmlformats-officedocument | 文書 | はい | はい | はい | いいえ | 。 xltx |
-|application/vnd.openxmlformats-officedocument.wordproessingml.document | 文書 | はい | はい | はい | いいえ | .docx |
+|application/vnd.openxmlformats-officedocument.wordprocessingml.document | 文書 | はい | はい | はい | いいえ | .docx |
 |application/vnd. openxmlformats-officedocument | 文書 | はい | はい | はい | いいえ | .dotx |
 |アプリケーション/vnd visio | 文書 | はい | はい | はい | いいえ | .vsd |
 |アプリケーション/x-7z-圧縮 | Archive/Container | いいえ | いいえ | いいえ | はい | . 7z |

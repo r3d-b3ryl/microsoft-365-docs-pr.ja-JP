@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377272"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600382"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider リスク管理設定の概要
 
@@ -59,7 +59,7 @@ Insider リスクポリシーテンプレートは、検出して調査するリ
 ポリシーインジケーターは、次の領域に分かれています。 Insider リスクポリシーを作成するときに、インジケーターレベルごとにインジケーターイベント制限をアクティブ化してカスタマイズするための指標を選択できます。
 
 - **Office インジケーター**: これらには、SharePoint サイト、チーム、および電子メールメッセージングのポリシーインジケーターが含まれています。
-- **デバイスインジケーター**: これには、ネットワークやデバイスを使用してファイルを共有するなどのアクティビティのポリシー指標が含まれます。 インジケーターには、Microsoft Office ファイルに関連するアクティビティが含まれます。CSV ファイル、および。PDF ファイル。 **デバイスインジケーター**を選択すると、Windows 10 ビルド1809以上のデバイスに対してのみアクティビティが処理されます。 Insider のリスクと統合するためのデバイスの構成の詳細については、「 [エンドポイント DLP の](endpoint-dlp-getting-started.md)概要」を参照してください。
+- **デバイスインジケーター**: これには、ネットワークやデバイスを使用してファイルを共有するなどのアクティビティのポリシー指標が含まれます。 インジケーターには、Microsoft Office ファイルに関連するアクティビティが含まれます。CSV ファイル、および。PDF ファイル。 **デバイスインジケーター**を選択すると、Windows 10 ビルド1809以上のデバイスに対してのみアクティビティが処理されます。 Insider のリスクと統合するためのデバイスの構成の詳細については、「 [デバイスインジケーターとオンボードデバイスを有効にする](insider-risk-management-settings.md#OnboardDevices) 」セクションを参照してください。
 - **セキュリティポリシー違反インジケーター**: 許可されていない、または悪意のあるソフトウェアのインストールやセキュリティ制御のバイパスに関連する MICROSOFT Defender ATP のインジケーターが含まれます。 Insider リスク管理で通知を受信するには、アクティブな Microsoft Defender ATP ライセンスと insider のリスク統合が有効になっている必要があります。 Microsoft Defender ATP for insider リスク管理統合の構成の詳細については、「 [Microsoft DEFENDER atp の高度な機能を構成する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)」を参照してください。
 - **リスクスコアブースター**: これには、異常なアクティビティや過去のポリシー違反のリスクスコアが発生することが含まれます。 リスクスコアブースターを有効にすると、リスクスコアが増加し、これらの種類のアクティビティに対する警告が発生する可能性が高くなります。 リスクスコアブースターは、上の1つ以上のインジケーターが選択されている場合にのみ選択できます。
 
@@ -71,6 +71,73 @@ Insider リスクポリシーテンプレートは、検出して調査するリ
 
 >[!NOTE]
 >新たに手動で追加したユーザーが **ユーザーダッシュボード**に表示されるまで数時間かかる場合があります。 これらのユーザーの過去90日間のアクティビティは、表示に最大24時間かかる場合があります。 手動で追加されたユーザーのアクティビティを表示するには、ユーザー **ダッシュボード** でユーザーを選択し、詳細ウィンドウの [ **ユーザーアクティビティ** ] タブを開きます。
+
+### <a name="enable-device-indicators-and-onboard-devices"></a>デバイスインジケーターとオンボードデバイスを有効にする
+<a name="OnboardDevices"> </a>
+
+デバイス上のリスクアクティビティの監視を有効にし、これらのアクティビティのポリシーインジケーターを含めるには、デバイスが次の要件を満たしている必要があります。また、次の手順を実行する必要があります。
+
+#### <a name="step-1-prepare-your-endpoints"></a>手順 1: エンドポイントを準備する
+
+Insider リスク管理のレポートで計画している Windows 10 デバイスがこれらの要件を満たしていることを確認してください。
+
+1. Windows 10 x64 ビルド 1809 以降を実行している必要があります。
+2. すべてのデバイスは[Azure Active Directory (AAD) に参加する ](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)か、Hybrid Azure AD に参加する必要があります。
+3. エンドポイントデバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドアップロードアクティビティのアクションを監視します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
+
+#### <a name="step-2-onboarding-devices"></a>手順 2: オンボードデバイス
+<a name="OnboardStep2"> </a>
+
+デバイスで insider リスク管理アクティビティを監視する前に、デバイスの監視を有効にしてエンドポイントをオンにする必要があります。 これらのアクションはどちらも Microsoft 365 コンプライアンスポータルで行われます。
+
+利用されていないデバイスを使用する場合は、次の手順で説明するように、適切なスクリプトをダウンロードして展開します。
+
+既に [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) にオンボーディングされているデバイスがある場合、それらは管理対象デバイスのリストに表示されます。 次のセクションの「 [手順 3: エンドポイントの Microsoft Defender に利用デバイスがある場合](insider-risk-management-settings.md#OnboardStep3) 」に従います。
+
+この展開シナリオでは、まだ利用されていないデバイスをオンにし、Windows 10 デバイスでの insider のリスクアクティビティを監視するだけで済みます。
+
+1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
+2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。
+
+   > [!NOTE]
+   > 通常、デバイスのオンボーディングが有効になるまで約60秒かかりますが、Microsoft サポートに連絡するまでに最大 30 分かかります。
+
+3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 デバイスをオンボードするまで、リストは空になります。
+4. オンボーディングプロセスを開始するには、[**オンボーディング**]を選択します。
+5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、**パッケージをダウンロード**します。
+6. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
+    - グループポリシーを使用した Windows 10 マシンのオンボード
+    - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
+    - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
+    - ローカルスクリプトを使用した Windows 10 マシンのオンボード
+    - 非永続的な仮想デスクトップインフラストラクチャ (VDI) マシンをオンボーディングします。
+
+完了してエンドポイントが利用されると、そのエンドポイントはデバイスリストに表示され、エンドポイントは監査アクティビティログの報告を insider リスク管理に開始します。
+
+> [!NOTE]
+> これは、ライセンス執行時でのエクスペリエンスです。 必要なライセンスがないと、データは表示されず、アクセスできません。
+
+#### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>手順 3: エンドポイントの Microsoft Defender に利用デバイスがある場合
+<a name="OnboardStep3"> </a>
+
+エンドポイントの Microsoft Defender が既に展開されていて、エンドポイントが報告されている場合は、これらすべてのエンドポイントが管理対象デバイスの一覧に表示されます。 [ [ステップ 2: オンボードデバイス](insider-risk-management-settings.md#OnboardStep2) ] セクションを使用すると、新しいデバイスを insider リスク管理で継続的に拡張して、カバレッジを拡張することができます。
+
+1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
+2. コンプライアンスセンターの設定ページを開き、[**デバイスの監視を有効にする**]を選択します。
+3. [**デバイス管理**]を選択して、[**デバイス**]リストを開きます。 既に Microsoft Defender for Endpoint にレポートしているデバイスのリストが表示されます。
+4. 追加のデバイスをオンボードする必要がある場合は、[**オンボーディング**]を選択します。
+5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、[**パッケージをダウンロード**]します。
+6. 「[Windows 10 マシンのオンボーディングツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。 このリンクをクリックすると、手順 5 で選択した導入パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
+    - グループポリシーを使用した Windows 10 マシンのオンボード
+    - Microsoft Endpoint Configuration Manager を使用した Windows 10 マシンのオンボード
+    - モバイルデバイス管理ツールを使用した Windows 10 マシンのオンボード
+    - ローカルスクリプトを使用した Windows 10 マシンのオンボード
+    - 非永続的な仮想デスクトップインフラストラクチャ (VDI) マシンをオンボーディングします。
+
+完了してエンドポイントが利用されると、[ **Devices** ] テーブルの下に表示され、エンドポイントは監査アクティビティログの報告を insider リスク管理に開始します。
+
+> [!NOTE]
+>これは、ライセンス執行時でのエクスペリエンスです。 必要なライセンスがないと、データは表示されず、アクセスできません。
 
 ### <a name="indicator-level-settings-preview"></a>インジケーターレベルの設定 (プレビュー)
 
@@ -177,7 +244,7 @@ Api を使用して、内部のリスクの警告情報を確認するには、�
 | AlertType | 通知の種類は *カスタム*です。  |
 | AlertId | 通知の GUID。 Insider リスク管理警告は変更可能です。 アラート状態が変化すると、同じ AlertID を持つ新しいログが生成されます。 この AlertID を使用して、アラートの更新を関連付けることができます。 |
 | カテゴリ | 通知のカテゴリは *InsiderRiskManagement*です。 このカテゴリは、他のセキュリティ & コンプライアンス通知と区別するために使用できます。 |
-| コメント | 通知の既定のコメント。 値は *新しい通知* (通知が作成されたときに記録されます) と *アラートの更新* (警告の更新が発生した場合に記録されます)。 AlertID を使用して、アラートの更新を関連付けます。 |
+| Comments | 通知の既定のコメント。 値は *新しい通知* (通知が作成されたときに記録されます) と *アラートの更新* (警告の更新が発生した場合に記録されます)。 AlertID を使用して、アラートの更新を関連付けます。 |
 | データ | 通知のデータには、ユーザーがポリシーにトリガーされたときに、一意のユーザー ID、ユーザープリンシパル名、日付と時刻 (UTC) が含まれます。 |
 | 名前 | 通知を生成した insider リスク管理ポリシーのポリシー名。 |
 | PolicyId | 通知をトリガーした insider リスク管理ポリシーの GUID。 |
@@ -189,10 +256,10 @@ Api を使用して、内部のリスクの警告情報を確認するには、�
 次のフィールドと値は、 [Office 365 Management ACTIVITY API 共通スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)の insider リスク管理通知用にエクスポートされます。
 
 - UserId
-- ID
+- Id
 - RecordType
 - CreationTime
-- 操作​​
+- Operation
 - OrganizationId
 - UserType
 - UserKey

@@ -21,33 +21,32 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Office 365 セキュリティ & コンプライアンスセンターで検索できる電子メールとファイルのプロパティについて説明します。
-ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Microsoft 365 の検索および電子情報開示ツールを使用して検索できる電子メールとファイルのプロパティについて説明します。
+ms.openlocfilehash: 4ca444c7e1d7b90f76e8c3f1b23afc7edad8e44b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446196"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600450"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search"></a>コンテンツ検索のキーワード クエリと検索条件
+# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>コンテンツ検索と電子情報開示のキーワードクエリと検索条件
 
-このトピックでは、コンプライアンス センターのコンテンツ検索機能を使って、ExchangeOnline のメール アイテムおよび SharePoint と OneDrive for Business のサイトに保存されているドキュメントで検索できるメールとドキュメントのプロパティについて説明します。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 このトピックでは以下についても説明します。   
+このトピックでは、Microsoft 365 コンプライアンスセンターのコンテンツ検索機能を使用して、Exchange Online の電子メールアイテムで検索したり、SharePoint および OneDrive for Business サイトに保存されているドキュメントで検索したりできる電子メールおよびドキュメントプロパティについて説明します。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 このトピックでは以下についても説明します。
   
 - ブール検索演算子、検索条件、およびその他の検索クエリ技法を使用して、検索結果を絞り込む。
-    
-- SharePoint および OneDrive for Business で機密情報の種類およびカスタムの機密情報の種類を検索する。
-    
-- 組織外のユーザーと共有されているサイトのコンテンツを検索する
-    
-コンテンツ検索を作成するための詳しい手順については、「[Office 365 のコンテンツ検索](content-search.md)」を参照してください。
 
-  
+- SharePoint および OneDrive for Business で機密情報の種類およびカスタムの機密情報の種類を検索する。
+
+- 組織外のユーザーと共有されているサイトのコンテンツを検索する
+
+コンテンツ検索を作成する方法の詳細な手順については、「 [Content search](content-search.md)」を参照してください。
+
 > [!NOTE]
-> セキュリティ/コンプライアンスセンターのコンテンツ検索およびそれに対応するセキュリティ/コンプライアンスセンター PowerShell の **\*-ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) が使用されます。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](https://go.microsoft.com/fwlink/?LinkId=269603)」を参照してください。 
+> Microsoft 365 コンプライアンスセンターのコンテンツ検索と、セキュリティ & コンプライアンスセンター PowerShell での対応する** \* -new-compliancesearch**コマンドレットは、キーワードクエリ言語 (kql) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](https://go.microsoft.com/fwlink/?LinkId=269603)」を参照してください。 
   
 ## <a name="searchable-email-properties"></a>検索可能なメール プロパティ
 
-次の表には、セキュリティ/コンプライアンス センター のコンテンツ検索機能か、**New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使って検索できる、メール メッセージのプロパティが一覧表示されています。 表には、各プロパティの  _property:value_ 構文の例、およびその例で返される検索結果の説明が含まれています。 コンテンツ検索のキーワード ボックスに、これらの  `property:value` ペアを入力できます。 
+次の表は、Microsoft 365 コンプライアンスセンターのコンテンツ検索機能を使用するか、 **new-compliancesearch** または **new-compliancesearch** コマンドレットを使用して検索できる電子メールメッセージプロパティの一覧です。 表には、各プロパティの  _property:value_ 構文の例、およびその例で返される検索結果の説明が含まれています。 コンテンツ検索のキーワード ボックスに、これらの  `property:value` ペアを入力できます。 
 
 > [!NOTE]
 > メール プロパティを検索するときは、指定されたプロパティが空のアイテムを検索することはできません。 たとえば、件名が空のメール メッセージを検索するときに**subject:""** という*プロパティと値*の組み合わせを使用した場合、結果は返されません。 これは、サイトと連絡先のプロパティの検索時にも当てはまります。
@@ -112,13 +111,13 @@ ms.locfileid: "48446196"
 |Size|アイテムのサイズ (バイト数)。|`size>=1`  <br/> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
 |Title|ドキュメントのタイトル。 Title プロパティは、Microsoft Office ドキュメントに 指定されているメタデータです。 ドキュメントのファイル名とは異なります。|`title:"communication plan"`|Office ドキュメントの Title メタデータ プロパティに "communication plan" という語句が含まれるすべてのドキュメント。|
 |||||
-   
+
 ## <a name="searchable-contact-properties"></a>検索可能な連絡先プロパティ
 
 次の表では、インデックスが設定されていてコンテンツ検索を使って検索できる連絡先のプロパティを示します。 これらは、ユーザーのメールボックスの個人用アドレス帳内にある連絡先 (個人の連絡先とも呼ばれます) に対してユーザーが構成できるプロパティです。 連絡先を検索するには、検索対象のメールボックスを選び、キーワード クエリで 1 つまたは複数の連絡先プロパティを使います。
   
 > [!TIP]
-> スペースまたは特殊文字を含む値を検索するには、二重引用符 ("  ") で語句を囲みます。例: `businessaddress:"123 Main Street"` 
+> スペースまたは特殊文字を含む値を検索するには、二重引用符 ("") を使用して語句を入力します。たとえば、のように `businessaddress:"123 Main Street"` なります。
   
 |**プロパティ**|**プロパティの説明**|
 |:-----|:-----|
@@ -154,18 +153,19 @@ ms.locfileid: "48446196"
 
 ## <a name="searchable-sensitive-data-types"></a>検索可能な機密情報の種類
 
-セキュリティ/コンプライアンス センターのコンテンツ検索機能を使って、SharePoint と OneDrive for Business のサイト上のドキュメントに保存されているクレジット カード番号や社会保障番号などの機密性の高いデータを検索することができます。 これを行うには、 `SensitiveType` プロパティと機密情報の種類の名前をキーワード クエリで使います。 たとえば、クエリ  `SensitiveType:"Credit Card Number"` はクレジット カード番号を含むドキュメントを返します。 クエリ  `SensitiveType:"U.S. Social Security Number (SSN)"` は米国の社会保障番号を含むドキュメントを返します。 検索できる機密情報の種類の一覧は、セキュリティ/コンプライアンス センターの [**分類**] \> [**機密情報の種類**] で確認できます。 または、セキュリティ/コンプライアンス センター PowerShell で **Get-DlpSensitiveInformationType** コマンドレット使用する方法でも機密情報の種類の一覧を表示できます。 
-  
-また、 `SensitiveType` プロパティを使って、組織で自分 (または別の管理者) が作成したカスタムの機密情報の種類の名前を検索することもできます。 セキュリティ/コンプライアンス センターの [**機密情報の種類**] ページの [**発行元**] 列 (または PowerShell の **Publisher** プロパティ) を使って、組み込みの機密情報の種類とカスタムの機密情報の種類を区別できます。 詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」をご覧ください。
+コンプライアンスセンターのコンテンツ検索機能を使用して、SharePoint および OneDrive for Business サイトのドキュメントに格納されている機密データ (クレジットカード番号や社会保障番号など) を検索できます。 これを行うには、 `SensitiveType` キーワードクエリで、プロパティと機密情報の種類の名前を使用します。 たとえば、クエリは、 `SensitiveType:"Credit Card Number"` クレジットカード番号が含まれるドキュメントを返します。 クエリ  `SensitiveType:"U.S. Social Security Number (SSN)"` は米国の社会保障番号を含むドキュメントを返します。 検索可能な機密性の高いデータ型の一覧を表示するには、Microsoft 365 コンプライアンスセンターの [ **データ分類** \> **機密情報の種類** ] に移動します。 または、セキュリティ & コンプライアンスセンターの PowerShell で **set-dlpsensitiveinformationtype** コマンドレットを使用して、機密情報の種類の一覧を表示することもできます。
   
 `SensitiveType` プロパティを使用したクエリの作成の詳細については、「[サイトに保存されている機密データを検索するクエリを作成する](form-a-query-to-find-sensitive-data-stored-on-sites.md)」を参照してください。
 
-> [!NOTE]
-> 機密性の高いデータ型と `SensitiveType` 検索プロパティは、Exchange Online メールボックスに保管されている気密性の高いデータの検索には使用できません。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密性の高いメール データを保護できます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」と「[個人データの検索](search-for-and-find-personal-data.md)」を参照してください。
+### <a name="limitations-for-searching-sensitive-data-types"></a>機密データ型を検索する際の制限事項
+
+- このプロパティは、 `SensitiveType` 組み込みの機密情報データ型を検索する場合にのみ使用できます。 組織に対して作成したカスタムの機密データ型を検索することはできません。 組み込みおよびカスタムの機密情報の種類を区別するには、コンプライアンスセンター (または PowerShell の**Publisher**プロパティ) の [**機密情報の種類**] タブで、[**発行元**] 列を使用します。 組み込みの機密データ型は、 **publisher**の列の**Microsoft Corporation**の値で識別されます。
+  
+- 機密情報のデータ型と検索プロパティを使用して、 `SensitiveType` Exchange Online メールボックス内の保存されていない機密データを検索することはできません。 ただし、データ損失防止 (DLP) ポリシーを使用して、送信中の機密性の高い電子メールデータを保護することができます。 詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」と「[個人データの検索](search-for-and-find-personal-data.md)」を参照してください。
   
 ## <a name="search-operators"></a>検索演算子
 
-**AND**、**OR**、**NOT** などのブール演算子は、検索クエリで特定の語を含めたり除去したりすることにより、検索をより詳細に定義するために役立ちます。 プロパティ演算子 (\>= や .. など)、引用符、かっこ、ワイルドカードを使用するといった他の技法も、検索クエリを調整するのに役立ちます。 検索結果を絞り込んだり、その範囲を広げたりするために使用できる演算子を次の表に示します。 
+**AND**、**OR**、**NOT** などのブール演算子は、検索クエリで特定の語を含めたり除去したりすることにより、検索をより詳細に定義するために役立ちます。 プロパティ演算子 (またはなど)、引用符、かっこ、ワイルドカードなどのその他の手法を使用して、 `>=` `..` 検索クエリを絞り込むことができます。 検索結果を絞り込んだり、その範囲を広げたりするために使用できる演算子を次の表に示します。 
   
 |**演算子**|**使用法**|**説明**|
 |:-----|:-----|:-----|

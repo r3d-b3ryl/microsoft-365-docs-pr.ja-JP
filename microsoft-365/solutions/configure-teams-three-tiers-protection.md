@@ -3,7 +3,7 @@ title: 3 層の保護を使ってチームを構成する
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Microsoft Teams 内のファイルを保護するために推奨されている構成を取り上げます。
-ms.openlocfilehash: 2e432c37642db7247f670dfd8d2d72da6df428bb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ec598bede2419abc19db2dbe3fd3ff63d8f583
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377391"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594932"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>3 層の保護を使ってチームを構成する
 
@@ -61,7 +61,7 @@ ms.locfileid: "48377391"
 
 高機密性オプションのバリエーションである、[セキュリティ分離によるチーム](secure-teams-security-isolation.md)では、1 つのチームに固有の秘密度ラベルを使用します。これにより、セキュリティが強化されます。 このラベルを使用すると、ファイルを暗号化できます。また、そのチームのメンバーだけがファイルを読み取ることができます。
 
-基準の保護には、パブリック チームとプライベート チームが含まれます。 パブリック チームは、組織内のだれでも検出およびアクセスできます。 プライベート チームは、チームのメンバーのみが検出とアクセスを行うことができます。 これらの構成はいずれも、関連付けられている SharePoint サイトの共有をチームの所有者に制限し、アクセス許可の管理に役立ちます。
+ベースライン保護には、パブリック チームとプライベート チームが含まれます。 パブリック チームは、組織内のだれでも検出およびアクセスできます。 プライベート チームは、チームのメンバーのみが検出とアクセスを行うことができます。 これらの構成はいずれも、関連付けられている SharePoint サイトの共有をチームの所有者に制限し、アクセス許可の管理に役立ちます。
 
 機密保護および高機密保護に対するチームは、プライベート チームであり、関連するサイトの共有およびアクセス要求が制限されており、ゲスト共有、デバイス アクセス、コンテンツの暗号化に関するポリシーを設定するために、秘密度ラベルが使用されます。
 
