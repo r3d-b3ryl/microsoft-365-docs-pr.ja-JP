@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 26a2aa8790e3952874680b1e5ebf6970113676cb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ee59c03eedcbe214be96457d18b96a53819818d6
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404072"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649273"
 ---
 # <a name="payment-information-for-mexico"></a>メキシコの支払い情報
 
@@ -29,7 +29,7 @@ ms.locfileid: "44404072"
 ## <a name="electronic-funds-transfer"></a>電子資金移動
 
 **Bank:** Citibank/Banamex  
-**分岐:** Act.RoMedellin 800、P.B. Sur、段サンタ Fe、メキシコシティ C.P. 01210、メキシコ  
+**分岐:** Medellin 800, P.B. への Act Sur、段サンタ Fe、メキシコシティ C.P. 01210、メキシコ  
 **SWIFT コード:** BNMXMM  
 **CLABE** 002180002337160225  
 **アカウント番号:** 0233716022  

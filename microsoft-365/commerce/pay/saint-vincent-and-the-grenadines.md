@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5a4cf5165c0512cee25087735117858c0d4b208f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b39113d31b08eb60a72a2dbd21d2a4fd25473ab9
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403820"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648697"
 ---
 # <a name="payment-information-for-saint-vincent-and-the-grenadines"></a>セントビンセントおよびグレナディーン諸島の支払い情報
 
@@ -29,7 +29,7 @@ ms.locfileid: "44403820"
 ## <a name="electronic-funds-transfer"></a>電子資金移動
 
 **Bank:** 米国の銀行  
-**Branch**営業  
+**Branch** 営業  
 **SWIFT コード:** BOFAUS3N  
 **アカウント番号:** 4426587954  
 **アカウント名:** 製  

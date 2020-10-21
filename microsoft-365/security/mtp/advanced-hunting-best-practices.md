@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477007"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649669"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477007"
 
 これらの推奨事項を適用して、結果を迅速に取得し、複雑なクエリの実行中にタイムアウトを回避します。 クエリのパフォーマンスを向上させる方法の詳細については、「[Kusto クエリのベスト プラクティス](https://docs.microsoft.com/azure/kusto/query/best-practices)」を参照してください。
 
-## <a name="understand-cpu-resource-limits"></a>CPU リソースの制限を理解する
-各テナントは、そのサイズに応じて、高度な検索クエリの実行に割り当てられた CPU リソースの設定済み容量にアクセスできます。 さまざまなサービス制限の詳細については、 [「アドバンス検索の制限について](advanced-hunting-limits.md)」を参照してください。
+## <a name="understand-cpu-resource-quotas"></a>CPU リソースの制限について
+各テナントは、そのサイズに応じて、高度な検索クエリの実行に割り当てられた CPU リソースの設定済み容量にアクセスできます。 さまざまなサービス制限の詳細については、 [「高度な検索クォータと使用状況パラメーターについて](advanced-hunting-limits.md)」を参照してください。
 
-複数のクエリを定期的に実行する必要がある場合は、この記事の最適化ガイダンスを使用して、制限を超えたことによる影響を最小限に抑える必要があります。
+複数のクエリを定期的に実行する必要がある場合は、使用量を追跡し、この記事の最適化のガイダンスを適用して、クォータまたは使用状況のパラメーターの超過による影響を最小限に抑えます。
 
 ## <a name="general-optimization-tips"></a>一般的な最適化のヒント
 
@@ -253,7 +253,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ### <a name="parse-strings"></a>文字列を解析する
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。 
 
-| 文字列 | 関数 | 使用例 |
+| String | 関数 | 使用例 |
 |--|--|--|
 | コマンドライン | [parse_command_line ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 | 
 | Paths | [parse_path ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | ファイルまたはフォルダーのパスのセクションを抽出します。 |
@@ -265,7 +265,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 
 ## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語ドキュメント](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [サービスの制限](advanced-hunting-limits.md)
+- [クォータと使用法のパラメーター](advanced-hunting-limits.md)
 - [詳細な検索エラーを処理する](advanced-hunting-errors.md)
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

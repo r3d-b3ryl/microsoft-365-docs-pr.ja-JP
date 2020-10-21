@@ -15,59 +15,59 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が microsoft 365 で microsoft Intune を使用して、自社のデバイスおよびそれらに対して実行されているアプリを管理する方法について説明します。
-ms.openlocfilehash: 40d9473bcadfa636f6fd2b2c6c861c27dae8497c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685844"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649647"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 社のモバイル デバイス管理
 
-Microsoft 365 for enterprise には、モバイルデバイスとアプリケーションの管理とセキュリティをサポートするための、Intune および Azure サービスのセットが含まれています。
+Microsoft 365 for enterprise には、モバイルデバイスとアプリケーションの管理とセキュリティをサポートする Intune および Azure サービスのセットが含まれています。
 
-Contoso 社にはモバイル端末を使用する従業員が多く在籍しており、Contoso 社の場所にオフィスがある者もいれば、オフィスを持たない者もいます。Contoso 社では、従業員の生産性を高めつつ、デバイス、デバイスに保存される Contoso 社のデータ、およびアプリケーションの動作に関して何らかの方法でセキュリティを維持する必要があります。
+Contoso 社には、多くのモバイル対応従業員がいます。Contoso 社の場所にオフィスがあり、一部にはオフィスがありません。Contoso 社は従業員の生産性を有効にする方法を必要としましたが、デバイス、これらのデバイスに格納されている Contoso データ、およびアプリケーションの動作を安全に保つ必要がありました。
 
-## <a name="plan"></a>計画
+## <a name="plan"></a>プラン
 
-Microsoft 365 for enterprise のモバイルデバイス管理の分析の初期段階では、Contoso 社は次の Intune ユースケースを特定しました。
+Contoso 社は、Microsoft 365 for enterprise のモバイルデバイス管理の次の Intune ユースケースを特定しました。
 
-- Exchange Online のメールとデータを保護し、モバイル デバイスから安全にアクセスできるようにします。
-- Contoso 社の従業員向けに、BYOD (Bring your own Device) プログラムを実装します。
-- Contoso 社の従業員向けに、組織が所有するスマート フォンや、用途が限定された共有タブレットを支給します。
+- Exchange Online の電子メールとデータを保護して、モバイルデバイスから安全にアクセスできるようにします。
+- Contoso 社の従業員向けのデバイス (BYOD) プログラムを実装します。
+- Contoso 社の従業員に対して、組織が所有する電話と制限付きのタブレットを使用します。
 
-Contoso 社は、次の用途では Intune を使用しません。
+Contoso 社は Intune を使用して次のことを行いません。
 
-- 従業員が管理されていないパブリックキオスクから Microsoft 365 に安全にアクセスできるようにする
-- オンプレミスの Microsoft Exchange サーバーがなくなったことに伴い、オンプレミスのメールとデータを保護し、モバイル デバイスからこれらに安全にアクセスできるようにする。
+- 従業員が、管理されていないパブリックキオスクから Microsoft 365 に安全にアクセスできるようにします。
+- オンプレミスの Microsoft Exchange サーバーが存在しないため、モバイルデバイスから安全にアクセスできるように、オンプレミスの電子メールとデータを保護します。
 
 ## <a name="deploy"></a>展開
 
 Contoso 社は、次のようにモバイル デバイス管理インフラストラクチャをセットアップしています。
 
-- Intune をモバイル デバイス管理 (MDM) 機関として設定し、Azure 上で Intune を使用してコンテンツとデバイスを管理しています。
-- 登録するデバイス用の Azure AD グループ、および Intune 設定とデバイスベースの条件付きアクセス ポリシーを作成しています。
+- モバイルデバイス管理 (MDM) 機関として Intune を設定し、Azure で Intune を使用してコンテンツを管理し、デバイスを管理する
+- 登録および Intune の設定およびデバイスベースの条件付きアクセスポリシー用のデバイス用に、Azure Active Directory (Azure AD) グループを作成しました。
 
-  詳細については、「[Contoso 社の条件付きアクセス ポリシー](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)」を参照してください。
+  詳細については、「 [Contoso Conditional Access policies](contoso-identity.md#conditional-access-policies-for-identity-and-device-access)」を参照してください。
 
-- iPad、iMac、iPhone、および会社所有の iPhone ベースの電話を使用する従業員をサポートするため、Apple デバイス プラットフォームを有効にしています。
+- Ipad、iMacs、および iPhones、および企業所有の iPhones を備えた従業員をサポートするための Apple デバイスプラットフォームを有効にしました。
 - Contoso 社では、独自の使用条件ポリシーを作成しており、Contoso 社の会社ポータルをモバイル デバイスにインストールする時に表示されるようになっています。
-- 登録されていないデバイスの場合、Microsoft 365 サービスへのアクセスの認証を必要とするモバイルアプリケーション管理 (MAM) ポリシーのセット
+- 登録されていないデバイスの場合は、Microsoft 365 サービスへのアクセスの認証を必要とする一連のモバイルアプリケーション管理 (MAM) ポリシーを実装します。
 - 以下のための Intune ポリシーが作成されています。
-  - 許可されているアプリ
-  - 不正アクセスを防止するためのデバイスの暗号化
-  - 6 桁の暗証番号 (PIN) またはパスワード
-  - 休止状態によるタイムアウト時間
-  - Windows 10 デバイス上で Windows Defender を使用した、ウイルス対策とマルウェア保護、および署名の更新
-  - 最新のセキュリティ更新プログラムを含む Windows 10 デバイス上の自動更新
-  - 管理対象デバイスへの証明書のプッシュ
+  - 許可されたアプリ。
+  - 許可されていないアクセスを防止するためのデバイスの暗号化。
+  - 6桁の PIN またはパスワード。
+  - 非アクティブなタイムアウト時間。
+  - Windows 10 デバイス上で Windows Defender を使用して、ウイルス対策およびマルウェア対策および署名の更新を行います。
+  - 最新のセキュリティ更新プログラムが含まれている Windows 10 デバイスでの自動更新。
+  - 管理対象デバイスへの証明書のプッシュ。
   - ビジネス データと個人データの明確な分離。ユーザーまたは管理者は、画像、個人用メール アカウント、個人用ファイルなどの個人データはそのままにして、デバイスから会社のデータを選択的に消去できます。
 
-これらの展開後に、Contoso 社は PC や会社所有のスマートフォンとタブレットを適切な Intune デバイス グループに追加して登録し、従業員向けに BYOD プログラムをロールアウトして従業員が個人用デバイスを登録できるようにしました。登録されたデバイスには Intune ポリシーが適用され、デバイスとそのアプリケーションは管理対象としてセキュリティ保護されています。未登録デバイスにはモバイル アプリケーション管理 (MAM) ポリシーが適用され、許可されているアプリケーションが指定されます。
+Contoso 社は、適切な Intune デバイスグループに追加することによって、展開済みの Pc と会社所有のスマートフォンおよびタブレットを登録しました。 また、従業員が個人デバイスを登録するための BYOD プログラムも設定しました。 登録済みデバイスは Intune ポリシーを受信します。これにより、管理対象およびセキュリティで保護されたデバイスとそのアプリケーションが生成されます。 登録されていないデバイスには、許可されたアプリケーションを指定するモバイルアプリケーション管理 (MAM) ポリシーがあります。
 
-次に Contoso 社のモバイル デバイス管理展開アーキテクチャを示します。
+ここでは、Contoso モバイルデバイス管理の展開アーキテクチャについて説明します。
 
-![Contoso 社のモバイル デバイス管理展開インフラストラクチャ](../media/contoso-mdm/contoso-mdm-fig1.png)
+![Contoso モバイルデバイス管理の展開インフラストラクチャ](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## <a name="next-step"></a>次の手順
 
@@ -77,7 +77,7 @@ Contoso 社が Microsoft 365 の情報保護機能を使用して、企業全体
 
 [Microsoft 365 のデバイス管理](device-management-roadmap-microsoft-365.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 
