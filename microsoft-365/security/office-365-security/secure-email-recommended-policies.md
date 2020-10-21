@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 5e7156a884093ca12fff7020bb045da30882547d
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464338"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646813"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -33,7 +33,7 @@ ms.locfileid: "48464338"
 
 これらの推奨事項では、ユーザーがモバイルデバイスの iOS および Android 用の Outlook を含むモダンメールクライアントを使用する必要があります。 IOS および Android 用の Outlook は、Office 365 の最適な機能をサポートします。 これらのモバイル Outlook アプリは、モバイル使用をサポートし、他の Microsoft クラウドセキュリティ機能と連携するセキュリティ機能を備えた設計も行われています。 詳細については、「 [iOS および Android 用の OUTLOOK FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)」を参照してください。
 
-## <a name="updating-common-policies-to-include-email"></a>電子メールを含めるための共通ポリシーの更新
+## <a name="update-common-policies-to-include-email"></a>一般的なポリシーを更新して電子メールを含める
 
 電子メールを保護するために、次の図は、共通 id およびデバイスアクセスポリシーから更新するポリシーを示しています。
 
@@ -64,6 +64,41 @@ Exchange Online の新しいポリシーを追加して、ActiveSync クライ�
 - 「 [シナリオ 1: Office 365 アプリは、アプリ保護ポリシーを使用して承認済みアプリを必要](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)とする」の「手順 2: exchange Online の Azure AD 条件付きアクセスポリシーを構成する」を参照してください。これにより、exchange ActiveSync クライアントは、基本認証を活用して exchange online に接続することができなくなります。
 
 認証ポリシーを使用して [基本認証を無効](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)にすることもできます。これにより、すべてのクライアントアクセス要求で先進認証を使用することが強制されます。
+
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Web 上の Outlook から Exchange Online へのアクセスを制限する
+
+ユーザーが umnanaged デバイス上の Outlook on the web から添付ファイルをダウンロードする機能を制限できます。 これらのデバイスのユーザーは、ファイルをリークしてデバイスに格納することなく、Office Online を使用してこれらのファイルを表示および編集できます。 また、ユーザーが管理されていないデバイスで添付ファイルを表示することを禁止することもできます。
+
+それらのステップは次のとおりです。
+
+1. [Exchange Online リモート PowerShell セッションに接続](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)します。
+2. OWA メールボックスポリシーをまだ持っていない場合は、 [新しい-Owam/boxpolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy) コマンドレットを使用して作成します。
+3. 添付ファイルの表示を許可するが、ダウンロードしない場合は、次のコマンドを使用します。
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
+   ```
+
+4. 添付ファイルをブロックする場合は、次のコマンドを使用します。
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
+   ```
+
+4. Azure ポータルで、次の設定を使用して新しい条件付きアクセスポリシーを作成します。
+
+   **割り当て > ユーザーとグループ**: 該当するユーザーとグループを選択して、含めるか除外します。
+
+   クラウドアプリ**または > アクション > クラウドアプリまたはアクションを含む割り当て。アプリの選択 > >** を選択してください。 **Office 365 Exchange Online**を選択する
+
+   **Access controls > Session**: **Use app 強制制限**の選択
+
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>IOS および Android デバイスで Outlook を使用する必要があることを要求する
+
+IOS および Android デバイスのユーザーが、iOS および Android 用の Outlook を使用して、職場または学校のコンテンツにのみアクセスできるようにするには、それらの可能性のあるユーザーを対象とする条件付きアクセスポリシーが必要です。
+
+このポリシーを構成する手順については、「 [iOS および Android 用の Outlook を使用して、メッセージのグループ作業アクセスを管理]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)する」を参照してください。
+
 
 ## <a name="set-up-message-encryption"></a>メッセージの暗号化をセットアップする
 

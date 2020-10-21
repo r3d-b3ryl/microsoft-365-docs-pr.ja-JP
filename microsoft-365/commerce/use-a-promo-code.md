@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,16 +24,16 @@ search.appverid:
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
 description: プロモーションコードを Microsoft 365 サブスクリプションに適用して価格を下げる方法、およびエラーが発生した場合にプロモーションコードのトラブルシューティングを行う方法について説明します。
-ms.openlocfilehash: 791565e29d8456e6c3c2c90b88cb2c6612e2d2cc
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403116"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646741"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>プロモーションコードを使用して価格を下げる
 
-サブスクリプションを購入した場合は、プロモーションコードを使用して価格を減らすことができます。 この記事では、プロモーションコードをサブスクリプションに適用し、[プロモーションコードの用語](#promo-code-terms)について理解し、プロモーションコードの[トラブルシューティング](#troubleshooting-promo-codes)を行う方法について説明します。
+サブスクリプションを購入した場合は、プロモーションコードを使用して価格を減らすことができます。 この記事では、プロモーションコードをサブスクリプションに適用し、 [プロモーションコードの用語](#promo-code-terms)について理解し、プロモーションコードの [トラブルシューティング](#troubleshooting-promo-codes)を行う方法について説明します。
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>プロモーション コードをサブスクリプションに適用する
 
@@ -41,11 +41,11 @@ ms.locfileid: "44403116"
     
 2. チェックアウトするときに、[* *] プロモーションまたは割引コードがあるかどうかを選択し、ボックスにコードを入力します。 
   
-3. [**プロモーションコードの適用**] を選択します。 正常に適用されたことを確認するメッセージが表示されます。 別のメッセージが表示される場合は、「[プロモーション コードのトラブルシューティング](#troubleshooting-promo-codes)」で原因を確認します。 
+3. [ **プロモーションコードの適用**] を選択します。 正常に適用されたことを確認するメッセージが表示されます。 別のメッセージが表示される場合は、「[プロモーション コードのトラブルシューティング](#troubleshooting-promo-codes)」で原因を確認します。 
     
 4. チェックアウトを続行します。[注文の確認] ページには、その金額に含まれる割引コードが表示されます。 
     
-購入が完了すると、プロモーション コードによる割引が請求書に表示されます。 詳細については、「を[表示](billing-and-payments/view-your-bill-or-invoice.md)する」を参照してください。
+購入が完了すると、プロモーション コードによる割引が請求書に表示されます。 詳細については、「を [表示](billing-and-payments/view-your-bill-or-invoice.md)する」を参照してください。
   
 ## <a name="promo-code-terms"></a>プロモーション コードの用語
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Office 365 のサインアッププロセスを開始する前に把握しておくべき情報について説明します。 '
-ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0e5e4d89811807bfdb1bb71fb213973bdba075e2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780519"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646633"
 ---
 # <a name="how-to-sign-up---admin-help"></a>管理者向けのサインアップヘルプ
 
@@ -72,7 +72,7 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
 
-選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての[製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。
+選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての [製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。
   
 ::: moniker-end
 
@@ -81,16 +81,16 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 
 購入する前に、サインアップする計画についてご検討ください。 これにより、後で発生する問題を防ぐことができます。
   
-選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての[製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。 
+選択についてのヘルプが必要ですか? セールスコンサルタントは、ご質問にお答えすることができます。 「すべての [製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して、ページの左側に表示される連絡サポートオプションのいずれかを選択します。 
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
 
-「[すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して購入したいプランを選択し、サインアップウィザードを開始します。 
+「 [すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して購入したいプランを選択し、サインアップウィザードを開始します。 
   
-無料試用版を使用して開始した場合は、[後で購入](../../commerce/buy-a-subscription-from-your-free-trial.md)できます。 すべてのユーザーと試用版のデータは削除されません。
+無料試用版を使用して開始した場合は、 [後で購入](../../commerce/buy-a-subscription-from-your-free-trial.md)できます。 すべてのユーザーと試用版のデータは削除されません。
   
 試用版をキャンセルする必要はありません。 試用版サブスクリプションを購入しない場合は、試用期間の終了時に自動的に期限切れになり、すべての情報が完全に削除されます。
 
@@ -103,9 +103,9 @@ Microsoft 365 for business プランの選択に関する短いビデオをご�
 ::: moniker range="o365-germany"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>無料試用版にサインアップするか、サブスクリプションを購入する準備ができましたか?
 
-「[すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2)する」に移動して購入したいプランを選択し、サインアップウィザードを開始します。 
+「 [すべての製品を比較](https://products.office.com/compare-all-microsoft-office-products?tab=2) する」に移動して購入したいプランを選択し、サインアップウィザードを開始します。 
   
-無料試用版を使用して開始した場合は、[後で購入](../../commerce/buy-a-subscription-from-your-free-trial.md)できます。 すべてのユーザーと試用版のデータは削除されません。
+無料試用版を使用して開始した場合は、 [後で購入](../../commerce/buy-a-subscription-from-your-free-trial.md)できます。 すべてのユーザーと試用版のデータは削除されません。
   
 試用版をキャンセルする必要はありません。 試用版サブスクリプションを購入しない場合は、試用期間の終了時に自動的に期限切れになり、すべての情報が完全に削除されます。
   
