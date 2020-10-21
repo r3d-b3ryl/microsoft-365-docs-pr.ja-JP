@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,77 +24,77 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Microsoft 365 の DNS レコードを作成するために必要な値と情報を検索する方法について説明します。 '
-ms.openlocfilehash: fddd1180f2dd80ffeec2aeec49ed821055dd5f15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399910"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645313"
 ---
-# <a name="gather-the-information-you-need-to-create-dns-records"></a><span data-ttu-id="9d61a-103">DNS レコードの作成に必要な情報を収集する</span><span class="sxs-lookup"><span data-stu-id="9d61a-103">Gather the information you need to create DNS records</span></span>
+# <a name="gather-the-information-you-need-to-create-dns-records"></a><span data-ttu-id="0613e-103">DNS レコードの作成に必要な情報を収集する</span><span class="sxs-lookup"><span data-stu-id="0613e-103">Gather the information you need to create DNS records</span></span>
 
- <span data-ttu-id="9d61a-104">探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="9d61a-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="0613e-104">探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。</span><span class="sxs-lookup"><span data-stu-id="0613e-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
   
-### <a name="step-1-find-the-txt-record-value-and-verify"></a><span data-ttu-id="9d61a-105">手順 1: TXT レコード値を検索して確認する</span><span class="sxs-lookup"><span data-stu-id="9d61a-105">Step 1: Find the TXT record value and verify</span></span>
+### <a name="step-1-find-the-txt-record-value-and-verify"></a><span data-ttu-id="0613e-105">手順 1: TXT レコード値を検索して確認する</span><span class="sxs-lookup"><span data-stu-id="0613e-105">Step 1: Find the TXT record value and verify</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="9d61a-106">Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-106">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0613e-106">Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="0613e-106">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="9d61a-107">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-107">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0613e-107">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="0613e-107">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="9d61a-108">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-108">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0613e-108">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="0613e-108">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="9d61a-109">[**ドメイン**] ページで、ドメインを選択し、[**セットアップの開始**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-109">On the **Domains** page, select your domain, then select **Start setup**.</span></span> <span data-ttu-id="9d61a-110">追加する必要がある特定の値を確認するには、ドメインのセットアップ ウィザードに戻ります。</span><span class="sxs-lookup"><span data-stu-id="9d61a-110">You'll go back to the domains setup wizard to see the specific value you need to add.</span></span>
+2. <span data-ttu-id="0613e-109">[ **ドメイン** ] ページで、ドメインを選択し、[ **セットアップの開始**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="0613e-109">On the **Domains** page, select your domain, then select **Start setup**.</span></span> <span data-ttu-id="0613e-110">追加する必要がある特定の値を確認するには、ドメインのセットアップ ウィザードに戻ります。</span><span class="sxs-lookup"><span data-stu-id="0613e-110">You'll go back to the domains setup wizard to see the specific value you need to add.</span></span>
     
-3. <span data-ttu-id="9d61a-111">[**ドメインの確認**] ページで、[**代わりに TXT レコードを追加する**] を選択し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-111">On the **Verify domain** page, select **Add a TXT record instead**, then select **Next**.</span></span>
+3. <span data-ttu-id="0613e-111">[ **ドメインの確認** ] ページで、[ **代わりに TXT レコードを追加する**] を選択し、[ **次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="0613e-111">On the **Verify domain** page, select **Add a TXT record instead**, then select **Next**.</span></span>
     
-4. <span data-ttu-id="9d61a-112">表示されている**TXT 値**をコピーします。</span><span class="sxs-lookup"><span data-stu-id="9d61a-112">Copy the **TXT value** shown.</span></span> <span data-ttu-id="9d61a-113">次のようになります。 **MS = msXXXXXXXX**。</span><span class="sxs-lookup"><span data-stu-id="9d61a-113">It looks like this: **MS=msXXXXXXXX**.</span></span> 
+4. <span data-ttu-id="0613e-112">表示されている **TXT 値** をコピーします。</span><span class="sxs-lookup"><span data-stu-id="0613e-112">Copy the **TXT value** shown.</span></span> <span data-ttu-id="0613e-113">次のようになります。 **MS = msXXXXXXXX**。</span><span class="sxs-lookup"><span data-stu-id="0613e-113">It looks like this: **MS=msXXXXXXXX**.</span></span> 
     
-5. <span data-ttu-id="9d61a-114">「[任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動し、レジストラーのリストから dns ホストを選択し、手順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-114">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and select your DNS host from the list of registrars to see the step-by-step instructions.</span></span>
+5. <span data-ttu-id="0613e-114">「 [任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動し、レジストラーのリストから dns ホストを選択し、手順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="0613e-114">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and select your DNS host from the list of registrars to see the step-by-step instructions.</span></span>
     
-6. <span data-ttu-id="9d61a-115">DNS ホストで TXT レコード (または MX レコード) を作成する手順に従い、Microsoft 365 でドメインを再度確認します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-115">Follow the steps for creating the TXT record (or MX record) at your DNS host, then verify the domain back in Microsoft 365.</span></span>
+6. <span data-ttu-id="0613e-115">DNS ホストで TXT レコード (または MX レコード) を作成する手順に従い、Microsoft 365 でドメインを再度確認します。</span><span class="sxs-lookup"><span data-stu-id="0613e-115">Follow the steps for creating the TXT record (or MX record) at your DNS host, then verify the domain back in Microsoft 365.</span></span>
 
-7. <span data-ttu-id="9d61a-116">Microsoft 365 でドメインが検証されたら、DNS ホストから TXT レコード (または MX レコード) を削除します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-116">Remove the TXT record (or MX record) from your DNS host once the domain is verified in Microsoft 365.</span></span>
+7. <span data-ttu-id="0613e-116">Microsoft 365 でドメインが検証されたら、DNS ホストから TXT レコード (または MX レコード) を削除します。</span><span class="sxs-lookup"><span data-stu-id="0613e-116">Remove the TXT record (or MX record) from your DNS host once the domain is verified in Microsoft 365.</span></span>
     
-### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a><span data-ttu-id="9d61a-117">手順 2: メールの MX レコード値を検索する</span><span class="sxs-lookup"><span data-stu-id="9d61a-117">Step 2: Find the MX record value for email and more</span></span>
+### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a><span data-ttu-id="0613e-117">手順 2: メールの MX レコード値を検索する</span><span class="sxs-lookup"><span data-stu-id="0613e-117">Step 2: Find the MX record value for email and more</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="9d61a-118">Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-118">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0613e-118">Microsoft 365 管理センターで、[ドメインの**セットアップ** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="0613e-118">In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="9d61a-119">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-119">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0613e-119">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="0613e-119">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="9d61a-120">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-120">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="0613e-120">管理センターで、[ドメインの**セットアップ** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="0613e-120">In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="9d61a-121">[ **ドメイン**] ページで、ドメインを選びます。</span><span class="sxs-lookup"><span data-stu-id="9d61a-121">On the **Domains** page, select your domain.</span></span> 
+2. <span data-ttu-id="0613e-121">[ **ドメイン**] ページで、ドメインを選びます。</span><span class="sxs-lookup"><span data-stu-id="0613e-121">On the **Domains** page, select your domain.</span></span> 
     
-3. <span data-ttu-id="9d61a-122">[ **必要な DNS 設定**] に、追加する DNS レコードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9d61a-122">Under **Required DNS settings**, you'll see the DNS records to add.</span></span>
+3. <span data-ttu-id="0613e-122">[ **必要な DNS 設定**] に、追加する DNS レコードが表示されます。</span><span class="sxs-lookup"><span data-stu-id="0613e-122">Under **Required DNS settings**, you'll see the DNS records to add.</span></span>
     
-    <span data-ttu-id="9d61a-123">DNS ホストで変更を行う際もこの情報を使用できるように、値をコピーして貼り付けることができます。</span><span class="sxs-lookup"><span data-stu-id="9d61a-123">You'll want to keep this information available while you make changes at your DNS host, so you can copy and paste the values.</span></span>
+    <span data-ttu-id="0613e-123">DNS ホストで変更を行う際もこの情報を使用できるように、値をコピーして貼り付けることができます。</span><span class="sxs-lookup"><span data-stu-id="0613e-123">You'll want to keep this information available while you make changes at your DNS host, so you can copy and paste the values.</span></span>
     
-    <span data-ttu-id="9d61a-124">このページにリストされる DNS レコードのグループは、[ **ドメインの目的**] における選択によって変わります。</span><span class="sxs-lookup"><span data-stu-id="9d61a-124">The groups of DNS records that are listed on the page depend on your choices listed under **Domain purpose**.</span></span>
+    <span data-ttu-id="0613e-124">このページにリストされる DNS レコードのグループは、[ **ドメインの目的**] における選択によって変わります。</span><span class="sxs-lookup"><span data-stu-id="0613e-124">The groups of DNS records that are listed on the page depend on your choices listed under **Domain purpose**.</span></span>
     
-4. <span data-ttu-id="9d61a-125">「[任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動して、レジストラーのリストから dns ホストを選択し、その dns ホストの web サイトにレコードを追加するための手順を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-125">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and then select your DNS host from the list of registrars to see step-by-step instructions for adding records at that DNS host's website.</span></span>
+4. <span data-ttu-id="0613e-125">「 [任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動して、レジストラーのリストから dns ホストを選択し、その dns ホストの web サイトにレコードを追加するための手順を順を追って説明します。</span><span class="sxs-lookup"><span data-stu-id="0613e-125">Go to [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md), and then select your DNS host from the list of registrars to see step-by-step instructions for adding records at that DNS host's website.</span></span>
     
-5. <span data-ttu-id="9d61a-126">手順に従って、DNS ホストでレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="9d61a-126">Follow the steps for creating the records at your DNS host.</span></span>
+5. <span data-ttu-id="0613e-126">手順に従って、DNS ホストでレコードを作成します。</span><span class="sxs-lookup"><span data-stu-id="0613e-126">Follow the steps for creating the records at your DNS host.</span></span>
