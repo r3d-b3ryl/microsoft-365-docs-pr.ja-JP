@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202845"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600347"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -100,6 +100,11 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
      - **[スパム]**
 
      - **フィッシング**
+     
+   - **ポリシーの種類**: 次のポリシーの種類ごとに、メッセージをフィルター処理します。
+     - **フィッシング対策ポリシー**
+     - **ホストされているコンテンツ フィルター ポリシー**
+     
 
    フィルターをクリアするには、**[クリア]** をクリックします。 フィルターのポップアップを非表示にするには、**[フィルター]** をもう一度クリックします。
 
@@ -108,6 +113,8 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
    - **[メッセージ ID]**: メッセージのグローバル一意識別子。 一覧でメッセージを選択すると、表示される **[詳細]** ポップアップ ウィンドウに **[メッセージ ID]** 値が表示されます。 管理者は、[メッセージ追跡](message-trace-scc.md)を使用して、メッセージとそれに対応する [メッセージ ID] 値を検索できます。
 
    - **[送信者のメール アドレス]**: 単一の送信者のメール アドレス。
+   
+   - **ポリシー名**: メッセージのポリシー名全体を使用します。 この検索では大文字と小文字は区別されません。
 
    - **[受信者のメール アドレス]**: 単一の受信者のメール アドレス。
 

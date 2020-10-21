@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 中国でのセキュリティで保護された信頼性と拡張性の高いクラウドサービスのニーズを満たすように設計された、21Vianet が運用している Office 365 の詳細について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 5906bf961e246f1d707b030ffb4c788da353200c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079739"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644653"
 ---
 # <a name="office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365
 
@@ -49,18 +49,18 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 以下のセクションでは、各サービスの相違点に焦点を当てます。 最終的には、グローバルサービスでパリティを達成することを目標としています。 ただし、中国内のデータセンターからのパートナーによって運用されている中国のサービスには固有の性質があるため、まだ有効になっていない機能がいくつかあります。 お客様は、段階的にサービスの完全な機能をご利用いただけるようになります。 21Vianet が運用している各 Office 365 プランで利用できるサービスの詳細については、「 [office 365 サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)」を参照してください。
   
     
-一般的な Office 365 サービスの使用を開始する方法については、「[はじめ](../admin-overview/get-started-with-office-365.md)に」を参照してください。
+一般的な Office 365 サービスの使用を開始する方法については、「 [はじめ](../admin-overview/get-started-with-office-365.md)に」を参照してください。
   
 ## <a name="office-365-suite"></a>Office 365 スイート
 
 |||
 |:-----|:-----|
-|カスタム ドメイン  <br/> |管理者は、中国語固有のドメインプロバイダーによって登録されたカスタムドメインを作成または使用することができます。 カスタムドメインを持っていない場合は、ドメイン名レジストラーから[ドメイン名を購入する方法](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)を指定できます。 既に所有している場合は、[ドメインレジストラーまたは DNS ホスティングプロバイダーを見つけて](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)ください。  <br/> また、Office 365 SharePoint Online サービスを使用してパブリック web サイトを作成する場合、中国のインターネットコンプライアンスポリシーでは、インターネットコンテンツプロバイダー (ICP) 番号を取得する必要があります。  **注:** ユーザー設定ドメイン名の許可されていない単語の自動検証は使用できません。           |
+|カスタム ドメイン  <br/> |管理者は、中国語固有のドメインプロバイダーによって登録されたカスタムドメインを作成または使用することができます。 カスタムドメインを持っていない場合は、ドメイン名レジストラーから [ドメイン名を購入する方法](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name) を指定できます。 既に所有している場合は、 [ドメインレジストラーまたは DNS ホスティングプロバイダーを見つけて](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)ください。  <br/> また、Office 365 SharePoint Online サービスを使用してパブリック web サイトを作成する場合、中国のインターネットコンプライアンスポリシーでは、インターネットコンテンツプロバイダー (ICP) 番号を取得する必要があります。  **注:** ユーザー設定ドメイン名の許可されていない単語の自動検証は使用できません。           |
 |サブスクリプション、課金、技術サポート  <br/> |21Vianet によって提供されます。 サポートに連絡する方法については、「 [365 Office 365 for business サポートへのお問い合わせ](../contact-support-for-business-products.md)」を参照してください。  <br/> |
-|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用して[いる Office 365 でパスワードを変更または再設定する](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
+|セルフサービスによるパスワードのリセット  <br/> |管理者のみが利用できます。 詳細については、「21Vianet が運用して [いる Office 365 でパスワードを変更または再設定する](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)」を参照してください。  <br/> |
 |セキュリティ、プライバシー、コンプライアンス、サポートのレベルに関する詳細情報  <br/> |21Vianet によって提供されます。  <br/> |
 |Office デスクトップのセットアップ  <br/> |Office デスクトップのセットアップは、Office 2010 および Office 2007 では使用できません。 ただし、管理者は、 [office 365 で動作するように現在の office デスクトップアプリケーションを構成](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)できます。  <br/> |
-|モバイルとデバイスのサポート\*  <br/> | 近日中には、次のモバイル機能が提供されます。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイス、または研究インモーション (縁、BlackBerry ワイヤレス電子メールソリューション) のオファーリングを使用して Blackberry Enterprise Server (BE) を実行できます。  <br/>  モバイルサポートの詳細については、「[ユーザー用にモバイルアクセスをセットアップおよび管理](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)する」を参照してください。  <br/> |
+|モバイルとデバイスのサポート\*  <br/> | 近日中には、次のモバイル機能が提供されます。  <br/>  モバイル デバイス管理 (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) は利用できませんが、Exchange ActiveSync デバイス、または研究インモーション (縁、BlackBerry ワイヤレス電子メールソリューション) のオファーリングを使用して Blackberry Enterprise Server (BE) を実行できます。  <br/>  モバイルサポートの詳細については、「 [ユーザー用にモバイルアクセスをセットアップおよび管理](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)する」を参照してください。  <br/> |
 |Office Lens  <br/> |使用できません。  <br/> |
 |Microsoft Planner  <br/> |もうすぐです。  <br/> |
 |Microsoft Teams  <br/> |注意事項なし。  <br/> |
@@ -85,7 +85,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 |自動的にホストされるアプリ  <br/> |SharePoint と SQL Azure を使用するプロバイダーホスト型アプリを展開できます。 詳細については、「 [SharePoint 用の基本的なプロバイダー向けのホスト型アプリを作成する](https://msdn.microsoft.com/library/office/apps/fp142381.aspx)」を参照してください。 近日中に、自動ホスト型 web サイトを使用するアプリを開発者が展開できるようになります。  <br/> |
 |InfoPath  <br/> |使用できません。  <br/> |
 |SharePoint ストア  <br/> |Office アプリ ストアと SharePoint アプリ ストアは、Microsoft Corporation または Microsoft の世界中の施設の関連会社によって運営されるオプションのサービスです。 ストアで入手できるアプリは、さまざまなアプリ発行者から提供されており、アプリ発行者の使用条件とプライバシーに関する声明の対象となります。 これらのアプリを使用すると、アプリ発行者、関連会社、またはサービス プロバイダーが施設を保持している国で、データの転送、保存、または処理が行われる場合があります。 そのようなアプリをダウンロードして使用する前に、アプリ発行元の使用条件とプライバシーに関する声明をよく確認してください。  <br/> |
-|Office 365 開発者向けサイト: 販売者ダッシュボードを使用して SharePoint ストアに発行する\*  <br/> |21Vianet が運用している Office 365 のユーザーに配布するために[SharePoint 用アプリを提出するための要件](https://go.microsoft.com/fwlink/?LinkId=518102)について説明します。  <br/> |
+|Office 365 開発者向けサイト: 販売者ダッシュボードを使用して SharePoint ストアに発行する\*  <br/> |21Vianet が運用している Office 365 のユーザーに配布するために [SharePoint 用アプリを提出するための要件](https://go.microsoft.com/fwlink/?LinkId=518102) について説明します。  <br/> |
    
 \*Microsoft によって直接提供されるオプションサービスです。 Microsoft のサービス利用条件とプライバシーに関する声明の対象となります。
   
@@ -99,7 +99,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 |予定表の共有  <br/> |社内メールボックスと Exchange Online メールボックス間での予定表の共有が可能です。  <br/> |
 |連絡先の共有  <br/> |もうすぐです。  <br/> |
 |メッセージ追跡  <br/> |もうすぐです。  <br/> |
-|Apps  <br/> |もうすぐです。  <br/> |
+|アプリ  <br/> |もうすぐです。  <br/> |
 |プレース機能  <br/> |この機能は、電子メール内の住所のマップを表示します。国外のデータが許可されている可能性があるため、使用できません。  <br/> |
 |接続されているアカウント  <br/> |Hotmail (Outlook.com) などの他のアカウントへの接続は、近日中に公開されます。  <br/> |
    
@@ -157,7 +157,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 | 2013前の CU5 サーバーのうち少なくとも1つ  <br/> | サポート<sup>2</sup> <br/> | 非サポート  <br/> | 非サポート <br/> | サポート  <br/> | サポート <br/> |
 |||
 
-<sup>1</sup>社内および Exchange Online のメールボックスでは、個別に検索する必要があります。  <br/> <sup>2</sup> mrm の移動ポリシーは、EXCHANGE 2013 CU5 以上のサーバー上にあるメールボックスで使用できます。 
+<sup>1</sup> 社内および Exchange Online のメールボックスでは、個別に検索する必要があります。  <br/> <sup>2</sup> mrm の移動ポリシーは、EXCHANGE 2013 CU5 以上のサーバー上にあるメールボックスで使用できます。 
 
 21Vianet によってホストされている Office 365 テナントとのハイブリッド展開の構成の詳細については、以下のトピックを参照してください。 
 - [ハイブリッド展開の前提条件](https://go.microsoft.com/fwlink/?LinkId=506764)
@@ -170,7 +170,7 @@ Microsoft は、サービス自体を運用していません。 21Vianet は、
 |||  
 |---|---|
 |共存と空き時間情報の共有|複数のオンプレミスの Exchange 組織間で予定表の空き時間情報を共有したり、2人の 21Vianet Office 365 テナント間で共有したりすることはサポートされていません。 この機能は近日中に公開されます。 | 
-|予定表の共有|Exchange 2013 SP1 以降では、他の社内 Exchange または Exchange Online 組織とのインターネット予定表の共有を手動で構成することがサポートされています。 この機能を手動で構成する方法の詳細については、「[インターネット予定表の公開を有効にする](https://go.microsoft.com/fwlink/?LinkId=506769)」を参照してください。 | 
+|予定表の共有|Exchange 2013 SP1 以降では、他の社内 Exchange または Exchange Online 組織とのインターネット予定表の共有を手動で構成することがサポートされています。 この機能を手動で構成する方法の詳細については、「 [インターネット予定表の公開を有効にする](https://go.microsoft.com/fwlink/?LinkId=506769)」を参照してください。 | 
 Apple モバイルデバイスでの Exchange の連絡先データの Apple iCloud への共有。 |この設定または機能は既定で有効になっています。 管理者はこの機能をオフにして、ユーザーが組織外で Exchange データを共有できないようにする必要があります。 |
 |Exchange によってホストされる電子メールの暗号化  |注意事項なし。  |
 |Office 365 Message Encryption  |もうすぐです。  |
@@ -187,7 +187,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 
 |||
 |:-----|:-----|
-|アカウントを管理する (Office クライアント内から)  <br/> |この機能と、Office 365 ポータルにアクセスしようとしている他のユーザーは、現在、ワールドワイドの Office 365 ポータルをポイントしており、21Vianet が運用している Office 365 を使用してサインインすることはできません。 これは既知の問題であり、修正されています。 その間、URL を使用し https://portal.partner.microsoftonline.cn/ てアカウントにサインインし、そこから設定を管理することができます。 詳細については、21Vianet が運用して[いる 365 Office のエンタープライズアカウント用に Microsoft 365 アプリを管理](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)する」を参照してください。  <br/> |
+|アカウントを管理する (Office クライアント内から)  <br/> |この機能と、Office 365 ポータルにアクセスしようとしている他のユーザーは、現在、ワールドワイドの Office 365 ポータルをポイントしており、21Vianet が運用している Office 365 を使用してサインインすることはできません。 これは既知の問題であり、修正されています。 その間、URL を使用し https://portal.partner.microsoftonline.cn/ てアカウントにサインインし、そこから設定を管理することができます。 詳細については、21Vianet が運用して [いる 365 Office のエンタープライズアカウント用に Microsoft 365 アプリを管理](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)する」を参照してください。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
@@ -211,7 +211,7 @@ Apple モバイルデバイスでの Exchange の連絡先データの Apple iCl
 
 |||
 |:-----|:-----|
-|Skype for Business をサポートするドメインプロバイダー  <br/> |SRV レコードをサポートする中国固有のドメインプロバイダーを使用して、ドメインを登録する必要があります。 ドメインの登録方法の詳細については、「[ドメインレジストラーまたは DNS ホスティングプロバイダーを検索](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)する」を参照してください。  <br/> |
+|Skype for Business をサポートするドメインプロバイダー  <br/> |SRV レコードをサポートする中国固有のドメインプロバイダーを使用して、ドメインを登録する必要があります。 ドメインの登録方法の詳細については、「 [ドメインレジストラーまたは DNS ホスティングプロバイダーを検索](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)する」を参照してください。  <br/> |
 |ダイヤルイン会議 (コンピューターにアクセスできないユーザーのために、会議への電話アクセスを追加する機能)  <br/> |ダイヤルイン会議およびプロバイダーの場合、Skype for business と Skype for Business 管理センターのオプションが表示されることがありますが、これらの機能はまだ利用できません。 これらは近日中に公開されます。  <br/> |
 |Skype for Business のデスクトップヘルプ  <br/> |[ここで](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)は、Skype for business デスクトップのヘルプを参照できます。 ただし、Office クイック実行を使用していない限り、この製品からデスクトップヘルプを利用することはできません。  <br/> |
 |Lync 2010  <br/> |注意事項なし。  <br/> |
@@ -232,6 +232,6 @@ GDPR は、個人データの処理に関連する特定の権限 (またはデ�
     
 - 21Vianet が運用している Microsoft サービスのシステム生成ログは、データログのエクスポートを使用してテナント管理者がエクスポートできます。
     
-詳細と手順については、「[データ主体要求 (DSR) FOR GDPR](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)」を参照してください。
+詳細と手順については、「 [データ主体要求 (DSR) FOR GDPR](https://www.trustcenter.cn/privacy/gdpr-office365.mdl)」を参照してください。
   
 

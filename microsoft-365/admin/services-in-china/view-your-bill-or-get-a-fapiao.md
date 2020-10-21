@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,19 +21,19 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: 中国で21Vianet が運営する Office 365 に関する請求明細書または請求書を表示します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: d22c9b6e479eaf11f90333b5f7ed973bcf756337
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 7a8380f74331822a25f846312aa3dd9bfb11d586
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432359"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644629"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365 の請求書を表示するか、Fapiao を取得する
 
 > [!NOTE]
 > 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
-21Vianet サブスクリプション料金で運用されている Office 365 に関する情報について、請求明細書または請求書を表示することができます。 Fapiao (購入の最終証明書) を取得することもできます。 Fapiao 要求は、ご購入後3日間、 [fapiao 管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465)に提出できます。 
+21Vianet サブスクリプション料金で運用されている Office 365 に関する情報について、請求明細書または請求書を表示することができます。 Fapiao (購入の最終証明書) を取得することもできます。 Fapiao 要求は、ご購入後3日間、 [fapiao 管理システム](https://go.microsoft.com/fwlink/p/?linkid=837465) に提出できます。 
   
 ## <a name="find-your-billing-statement-or-request-a-fapiao"></a>請求明細書を検索するか、Fapiao を申請する
 

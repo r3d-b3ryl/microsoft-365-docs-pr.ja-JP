@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: 中国で21Vianet が運用している既存の Office 365 アカウントに対して Office 365 サブスクリプションを試用または購入したり、サブスクリプションを追加したり、アドオンを入手したりする方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: d1ad668a5eb22ab38ac458fa7b1867941e1d6612
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b20233190b117b4b2562bc2e47774541e6e2d3f8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399088"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644833"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365 のサブスクリプションを購入または試用する
 
@@ -37,9 +37,9 @@ ms.locfileid: "44399088"
 
 サブスクリプションはすぐに購入できます。または、最大30日間 Office 365 を試すことができます。 ご希望の場合は、試用版サブスクリプションを購入し、試用版で設定したドメイン、データ、および構成を保持することができます。
 
-1. 「 [Office 365 をビジネスプランと比較](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409)する」に移動して、購入するプランの名前を選択します。 [**今すぐ購入**] を選択します。
+1. 「 [Office 365 をビジネスプランと比較](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409) する」に移動して、購入するプランの名前を選択します。 [ **今すぐ購入**] を選択します。
 
-2. [詳細] ページ**のみ**に入力して、アカウントを作成します。
+2. [詳細] ページ **のみ** に入力して、アカウントを作成します。
 
 3. 指示に従って、30日間の試用版をセットアップするか、購入を完了します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "44399088"
 
 1. [管理センター](https://go.microsoft.com/fwlink/p/?linkid=850627)で、[**請求** \> **書購入サービス**] ページに移動します。
 
-2. 購入したいサービスを選択し、[**購入**] を選択して、[**今すぐチェックアウト**] を選択します。
+2. 購入したいサービスを選択し、[ **購入**] を選択して、[ **今すぐチェックアウト**] を選択します。
 
 3. 指示に従って購入を完了します。
 
@@ -80,7 +80,7 @@ ms.locfileid: "44399088"
 
 - Alipay または中国 UnionPay を使用したオンライン支払
 
-支払いの証明は、Fapiaos の形式で提供されます。 Fapiao 要求は、有料の[fapiao システム](https://go.microsoft.com/fwlink/p/?LinkId=395314)に3日以内に提出できます。 詳細については、「 [21vianet が運用する Office 365 の Fapiao に適用する](apply-for-a-fapiao.md)」を参照してください。
+支払いの証明は、Fapiaos の形式で提供されます。 Fapiao 要求は、有料の [fapiao システム](https://go.microsoft.com/fwlink/p/?LinkId=395314) に3日以内に提出できます。 詳細については、「 [21vianet が運用する Office 365 の Fapiao に適用する](apply-for-a-fapiao.md)」を参照してください。
 
 > [!NOTE]
 >  国際クレジットカードは受け付けられません。

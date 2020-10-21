@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: ビジネスへの影響が大きいアカウントによって送受信された、失敗した電子メールメッセージと遅延した電子メールメッセージを監視します。
-ms.openlocfilehash: 053246da7f57c46045bfc777bc4de981ce51c6e5
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: ce78316290f18f06337adc0e78a1b8992be7b425
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794201"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644593"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>優先度アカウントを管理および監視する
 
@@ -69,7 +69,7 @@ Microsoft 365 組織の管理者として、CEO のようなビジネスへの�
 
 ## <a name="email-issues-for-priority-accounts"></a>優先度アカウントの電子メールの問題
 
-優先度の高いアカウントの電子メールの問題を追跡するには、Exchange 管理センターで [ **優先度の高いアカウントの電子メールの問題点** レポートにアクセスします。 詳細については、「 [優先度のアカウントの電子メールの問題](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda)」をご覧ください。
+優先度の高いアカウントの電子メールの問題を追跡するには、Exchange 管理センターで [ **優先度の高いアカウントの電子メールの問題点** レポートにアクセスします。 詳細については、「 [優先度のアカウントの電子メールの問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)」をご覧ください。
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>優先順位のアカウントリストからユーザーを削除する
 

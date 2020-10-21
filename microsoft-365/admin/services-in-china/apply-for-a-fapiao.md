@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 中国の21Vianet が運用している Office 365 で支払いを行った後に、21Vianet Fapiao 管理システムに Fapiao 要求を提出する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4503226d50a719e169e9112538e7d0dcd172197e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ebaec639c7eccbfef848c1cd8a4857a5a9a77443
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432405"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644893"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>21Vianet が運用している Office 365 用の Fapiao に適用する
 
@@ -56,7 +56,7 @@ Fapiao には、次の2つの方法を適用できます。
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management system</a>に移動します。
 
-2. 登録フォームで、注文番号、電子メールアドレス、パスワードを入力し、[**登録**] を選択します。
+2. 登録フォームで、注文番号、電子メールアドレス、パスワードを入力し、[ **登録**] を選択します。
 
     ![21Vianet Fapioa 管理システム登録ページ。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
@@ -66,24 +66,24 @@ Fapiao には、次の2つの方法を適用できます。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao 管理システム</a>にログインします。
 
-2. 請求書レコードを選択し、[**請求書の適用**] を選択します。
+2. 請求書レコードを選択し、[ **請求書の適用**] を選択します。
 
     > [!NOTE]
     > 支払いシステムはサードパーティのプラットフォーム上にあり、注文と支払いの記録を同期するために3日間かかります。
   
     ![[Fapiao management system] ページには、最近の注文が表示されます。](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
   
-3. Fapiao の種類を選択し、必要な情報を入力して、[**次へ**] を選択します。
+3. Fapiao の種類を選択し、必要な情報を入力して、[ **次へ**] を選択します。
 
     ![Fapiao の種類を選択した Fapiao 要求フォーム。](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
     > - 通常の VAT Fapiao の場合、購入者の名前のみを入力する必要があります。
-    > - 必要に応じて、タイトルが異なる Fapiao に適用することができます。 ただし、システム内の1つの請求書に適用できる Fapiao タイトルは1つだけです。 Fapiao を異なる量またはタイトルに分割する場合は、<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">管理センターで要求を送信</a>してください。
+    > - 必要に応じて、タイトルが異なる Fapiao に適用することができます。 ただし、システム内の1つの請求書に適用できる Fapiao タイトルは1つだけです。 Fapiao を異なる量またはタイトルに分割する場合は、 <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">管理センターで要求を送信</a>してください。
     > - Fapiao に対して次に適用されるときに、以前の Fapiao 情報が自動的に表示されます。
     > - 購入証明書または払戻が必要な場合は、支払人名と Fapiao タイトルが一致している必要があります。
 
-4. 送付方法を選択し、郵送情報を入力します。 Yunda または SF (運送料収集) を選択できます。 21Vianet の上海の分岐に移動して、Fapiao を取得することもできます。 [**次へ**] を選択します。
+4. 送付方法を選択し、郵送情報を入力します。 Yunda または SF (運送料収集) を選択できます。 21Vianet の上海の分岐に移動して、Fapiao を取得することもできます。 [ **次へ**] を選択します。
 
     ![Fapiao 要求フォームで、メーリング情報が表示されます。](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
@@ -95,7 +95,7 @@ Fapiao には、次の2つの方法を適用できます。
 
     021-28986102 の qin qin
 
-5. 情報が正しいことを確認し、[**確認**] を選択します。
+5. 情報が正しいことを確認し、[ **確認**] を選択します。
 
     ![Fapiao 要求フォームの確認ページ。](../../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
   
@@ -103,7 +103,7 @@ Fapiao には、次の2つの方法を適用できます。
 
 アプリケーションは自動的に21Vianet サービスセンターに転送され、2営業日以内に完了します。
   
-アプリケーションを送信した後は、いつでも進捗状況を確認できます。 「**発行**済みまたは**メール送信**済み」のように、アプリケーションの状態を更新します。
+アプリケーションを送信した後は、いつでも進捗状況を確認できます。 「 **発行** 済みまたは **メール送信**済み」のように、アプリケーションの状態を更新します。
   
 ![要求の状態を表示する 21Vianet Fapiao 管理システムページ。](../../media/6cd696ec-d630-4fce-9f27-935a0d5f0ebe.png)
   
@@ -117,7 +117,7 @@ Fapiao が使用されていない場合は、システムに通知が表示さ�
 
 Fapiao 要求の進行状況を確認し、Fapiao を受信していない理由を調べることができます。
   
-Fapiao タイトルを変更する場合は、fapiao を microsoft に送信してください。この後、Fapiao を再発行します。 要求は<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">管理センター</a>から送信できます。
+Fapiao タイトルを変更する場合は、fapiao を microsoft に送信してください。この後、Fapiao を再発行します。 要求は <a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">管理センター</a>から送信できます。
   
 ![タイトルの変更を要求するために Fapiao を送信するために使用される管理センターのサポートフォーム。](../../media/2a413e9e-f30b-4f26-adbf-6287cc217a0f.png)
   
@@ -145,7 +145,7 @@ Fapiao タイトルを変更する場合は、fapiao を microsoft に送信し�
   
 ### <a name="what-if-i-dont-receive-an-activation-email"></a>ライセンス認証メールを受信しない場合はどうなりますか?
 
-登録後24時間以内にアカウントライセンス認証のメールを受信しない場合は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management システム</a>に移動して、メールアドレスを入力し、[**ライセンス認証メールの送信**] を選択します。 システムは、登録された電子メールアドレスにアカウントアクティブ化メールを再送信します。
+登録後24時間以内にアカウントライセンス認証のメールを受信しない場合は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao information management システム</a>に移動して、メールアドレスを入力し、[ **ライセンス認証メールの送信**] を選択します。 システムは、登録された電子メールアドレスにアカウントアクティブ化メールを再送信します。
   
 ![21Vianet Fapioa 管理システム登録ページ。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   

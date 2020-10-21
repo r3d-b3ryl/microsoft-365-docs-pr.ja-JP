@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3f9308b51517c88325dfb56c1fae5f853f4b6c6c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e65db4250ea1c81d3c51fb611575817db15e8db
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398596"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644101"
 ---
 # <a name="contact-support-for-bahrain-kingdom-of"></a>バーレーン、王国のサポートへのお問い合わせ
 
@@ -30,12 +30,12 @@ ms.locfileid: "44398596"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-アラビア語: Thu 10 AM-6 PM
+アラビア語: 午前10時から午後6時まで Sun-Thu
 
-英語: 月曜日から金曜日の午前10時から午後6時
+英語: 午前6時から午後6時まで Mon-Fri
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-アラビア語: Thu 10 AM-6 PM
+アラビア語: 午前10時から午後6時まで Sun-Thu
 
 英語: 24 時間年中無休
