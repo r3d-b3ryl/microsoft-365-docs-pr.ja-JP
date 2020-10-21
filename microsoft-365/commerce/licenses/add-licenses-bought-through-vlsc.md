@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,43 +23,43 @@ search.appverid:
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
 description: サードパーティパートナー経由で購入された Microsoft 365 サブスクリプションにライセンスを追加する方法について説明します。 Microsoft が認識しています。
-ms.openlocfilehash: a1761f01383e2321ca86c91bf0b998b697c566e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7670a7eb8fffbb3aef8cc3e20f2170c1b2674bd4
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402132"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638245"
 ---
-# <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a><span data-ttu-id="cc5b2-103">ボリューム ライセンス サービス センター (VLSC) 経由で購入したサブスクリプションにライセンスを追加する</span><span class="sxs-lookup"><span data-stu-id="cc5b2-103">Add licenses to a subscription purchased through the Volume Licensing Service Center</span></span>
+# <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a><span data-ttu-id="065f3-103">ボリューム ライセンス サービス センター (VLSC) 経由で購入したサブスクリプションにライセンスを追加する</span><span class="sxs-lookup"><span data-stu-id="065f3-103">Add licenses to a subscription purchased through the Volume Licensing Service Center</span></span>
 
-<span data-ttu-id="cc5b2-104">サードパーティのパートナーを通じて Microsoft 365 for business または Office 365 エンタープライズプランを購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-104">If you purchased your Microsoft 365 for business or Office 365 Enterprise plan through a third party partner, you must buy additional licenses through that partner.</span></span> <span data-ttu-id="cc5b2-105">サブスクリプションの購入元のパートナーが、Microsoft に知られているパートナーである場合は、以下の手順に従って、パートナーの連絡先を調べることができます。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-105">If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.</span></span>
+<span data-ttu-id="065f3-104">サードパーティのパートナーを通じて Microsoft 365 for business または Office 365 エンタープライズプランを購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。</span><span class="sxs-lookup"><span data-stu-id="065f3-104">If you purchased your Microsoft 365 for business or Office 365 Enterprise plan through a third party partner, you must buy additional licenses through that partner.</span></span> <span data-ttu-id="065f3-105">サブスクリプションの購入元のパートナーが、Microsoft に知られているパートナーである場合は、以下の手順に従って、パートナーの連絡先を調べることができます。</span><span class="sxs-lookup"><span data-stu-id="065f3-105">If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.</span></span>
 
 ::: moniker range="o365-worldwide"
   
-1. <span data-ttu-id="cc5b2-106">管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-106">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="065f3-106">管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="065f3-106">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
-2. <span data-ttu-id="cc5b2-107">ライセンスを追加するサブスクリプションを選択し、**ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-107">Select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
+2. <span data-ttu-id="065f3-107">ライセンスを追加するサブスクリプションを選択し、 **ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="065f3-107">Select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
 
-3. <span data-ttu-id="cc5b2-108">購入を完了するには、VLSC で次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-108">Follow the steps in the VLSC to complete your purchase.</span></span>
+3. <span data-ttu-id="065f3-108">購入を完了するには、VLSC で次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="065f3-108">Follow the steps in the VLSC to complete your purchase.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="cc5b2-109">管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-109">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
+1. <span data-ttu-id="065f3-109">管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="065f3-109">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
 
-2. <span data-ttu-id="cc5b2-110">[サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、**ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-110">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
+2. <span data-ttu-id="065f3-110">[サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、 **ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="065f3-110">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
 
-3. <span data-ttu-id="cc5b2-111">購入を完了するには、VLSC で次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-111">Follow the steps in the VLSC to complete your purchase.</span></span> 
+3. <span data-ttu-id="065f3-111">購入を完了するには、VLSC で次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="065f3-111">Follow the steps in the VLSC to complete your purchase.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="cc5b2-112">管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-112">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
+1. <span data-ttu-id="065f3-112">管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="065f3-112">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
 
-2. <span data-ttu-id="cc5b2-113">[サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、**ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-113">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
+2. <span data-ttu-id="065f3-113">[サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、 **ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。</span><span class="sxs-lookup"><span data-stu-id="065f3-113">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
 
-3. <span data-ttu-id="cc5b2-114">購入を完了するには、VLSC で次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="cc5b2-114">Follow the steps in the VLSC to complete your purchase.</span></span>
+3. <span data-ttu-id="065f3-114">購入を完了するには、VLSC で次の手順に従います。</span><span class="sxs-lookup"><span data-stu-id="065f3-114">Follow the steps in the VLSC to complete your purchase.</span></span>
 
 ::: moniker-end
