@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: ドメインを確認し、電子メール、Skype for Business Online、および GoDaddy のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 95bc9e1ca522796111bbf5146c93686bbbac1a3d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 995e579e21a185084d9ee64a7ee462930d845844
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400463"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646129"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Microsoft の GoDaddy で DNS レコードを作成する
 
@@ -59,7 +59,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. [**追加**] を選択します。
+3. **[追加]** を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -67,7 +67,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
     |**Record type** |**Host**|**TXT Value**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (テキスト)|@|MS=ms *XXXXXXXX*<br>**注**: これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 時間  <br>(ドロップダウンリストから値を選択します。)|
+    |TXT (テキスト)|@|MS=ms *XXXXXXXX*<br>**注**: これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|1 hour  <br>(ドロップダウンリストから値を選択します。)|
 
       ![GoDaddy-検証-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
@@ -110,7 +110,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. [**追加**] を選択します。
+3. **[追加]** を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -122,9 +122,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     (ドロップダウンリストから [ **TTL** ] の値を選びます。)
 
-    |**Record type**|**ホスト**|**Points to**|**Priority**|**TTL**|
+    |**Record type**|**Host**|**Points to**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1 hour  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1 hour  <br/> |
 
 6. **[保存]** を選択します。
 
@@ -141,7 +141,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. [**追加**] を選択します。
+3. **[追加]** を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -156,12 +156,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     (ドロップダウンリストから [ **TTL** ] の値を選びます。)
 
-    |**Record type**|**ホスト**|**Points to**|**TTL**|
+    |**Record type**|**Host**|**Points to**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 時間  <br/> |
+    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 hour  <br/> |
     |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 時間  <br/> |
-    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 時間  <br/> |
-    |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 時間  <br/> |
+    |CNAME (Alias)  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 hour  <br/> |
+    |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
     |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 時間  <br/> |
 
 
@@ -172,7 +172,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
 
 以下の手順に従います。
 
@@ -184,7 +184,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. [**追加**] を選択します。
+3. **[追加]** を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -218,7 +218,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     ![GoDaddy-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. [**追加**] を選択します。
+3. **[追加]** を選択します。
 
     ![GoDaddy-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -234,8 +234,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
     |**Record type**|**Name**|**Target**|**Protocol**|**Service**|**Priority**|**Weight**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 hour  <br/> |
-    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 時間  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1-d  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV (Service)  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |1 時間  <br/> |
 
     ![GoDaddy-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 

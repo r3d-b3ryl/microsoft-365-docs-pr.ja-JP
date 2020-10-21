@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: ドメインを確認し、電子メール、Skype for Business Online、および Register365 のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: e580779ce674375564c1b3ab6123ef1b19f50be0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400318"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645769"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>Microsoft の Register365 で DNS レコードを作成する
 
@@ -65,17 +65,17 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 2. [ **ダッシュボード**] ページで、更新しているドメインの名前を見つけ、ドロップダウン リストで [ **DNS Settings**] を選択します。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![一覧で DNS 設定を選択する](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     |**ホスト名**|**種類**|**結果**|
     |:-----|:-----|:-----|
@@ -85,7 +85,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 4. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[保存] を選択します。](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
   
@@ -121,23 +121,23 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **ダッシュボード**] ページで、更新しているドメインの名前を見つけ、ドロップダウン リストで [ **DNS Settings**] を選択します。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![一覧で DNS 設定を選択する](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. [ **Add/Modify DNS Zone**] ページの [ **Mail exchange records**] セクションにある新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
-    |**ホスト名**|**Priority**|**結果**|
+    |**ホスト名**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)     |
+    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![[DNS ゾーンの追加/変更] ページで値を入力する](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
 4. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[保存] を選択します。](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
   
@@ -147,7 +147,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[保存] を選択します。](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
   
@@ -160,13 +160,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **ダッシュボード**] ページで、更新しているドメインの名前を見つけ、ドロップダウン リストで [ **DNS Settings**] を選択します。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![一覧で DNS 設定を選択する](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. [ **Add/Modify DNS Zone**] ページの [ **A, CNAME, AAAA, TXT and NS records**] セクションにある新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
     
@@ -182,7 +182,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
    
     ![[DNS ゾーンの追加/変更] ページで値を入力する](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
     
     ![[保存] を選択します。](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
@@ -190,7 +190,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
 1. まず、[このリンク](https://admin.register365.com/dns/)を使って Register365 でドメイン ページにアクセスします。 最初にログインするように求められます。
     
@@ -198,17 +198,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **ダッシュボード**] ページで、更新しているドメインの名前を見つけ、ドロップダウン リストで [ **DNS Settings**] を選択します。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![一覧で DNS 設定を選択する](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     |**ホスト名**|**種類**|**結果**|
     |:-----|:-----|:-----|
@@ -218,7 +218,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[保存] を選択します。](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
   
@@ -231,7 +231,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **ダッシュボード**] ページで、更新しているドメインの名前を見つけ、ドロップダウン リストで [ **DNS Settings**] を選択します。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![一覧で DNS 設定を選択する](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
@@ -239,16 +239,16 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (下へスクロールしなければならないことがあります。)
     
-    |**Name**|**Priority**|**Weight**|**Port**|**結果**|
+    |**Name**|**Priority**|**Weight**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![[サービスレコード] セクションに値を入力する](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
 4. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[保存] を選択します。](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
   

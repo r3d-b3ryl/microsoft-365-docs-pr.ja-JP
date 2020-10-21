@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 新しい Microsoft 365 for business サブスクリプションに切り替える方法について説明します。
-ms.openlocfilehash: 299de3618046d7bbf4f9e852f9c623bc02638715
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818637"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647749"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>別の一般法人向け Microsoft 365 プランに切り替える
 
@@ -50,23 +50,23 @@ ms.locfileid: "44818637"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**課金**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
 
-2. 使用可能な新しいプランの一覧を表示するには、[**プランの切り替え**] を選択します。
+2. 使用可能な新しいプランの一覧を表示するには、[ **プランの切り替え** ] を選択します。
 
     [[プランの切り替え] ボタンがない](#the-switch-plans-button-isnt-there) | [目的のプランが表示されない](#i-dont-see-the-plan-i-want)
 
@@ -80,7 +80,7 @@ ms.locfileid: "44818637"
 
 ## <a name="the-switch-plans-button-isnt-there"></a>[プランの切り替え] ボタンがない
 
-[**プランの切り替え**] ボタンが使用できない場合は、[プランを手動で切り替える](switch-plans-manually.md)か、[サポートに連絡](../../admin/contact-support-for-business-products.md)してください。 詳細については、「[プランを切り替えることができない理由](why-can-t-i-switch-plans.md)」を参照してください。
+[ **プランの切り替え** ] ボタンが使用できない場合は、 [プランを手動で切り替える](switch-plans-manually.md) か、 [サポートに連絡](../../admin/contact-support-for-business-products.md)してください。 詳細については、「[プランを切り替えることができない理由](why-can-t-i-switch-plans.md)」を参照してください。
   
 これが発生する理由は次のとおりです。
   
@@ -92,9 +92,9 @@ ms.locfileid: "44818637"
 
 [ **プランの切り替え**] ボタンを使用するときは、現在のプランのサービスに基づいて、切り替えが可能なプランが表示されます。同じデータ関連サービスが含まれるプランまたはそれらの上位バージョンに切り替える場合のみ、[ **プランの切り替え**] ボタンを使用できます。これで、ユーザーが切り替え中にそれらのサービスに関連するデータを失う心配がなくなります。
   
-切り替え前にプランを比較するには、 [Microsoft 365 for business 製品比較](https://go.microsoft.com/fwlink/p/?linkid=842056)ページを参照してください。 技術仕様については、「 [Microsoft 365 サービスの説明](https://go.microsoft.com/fwlink/p/?linkid=842275)」を参照してください。
+切り替え前にプランを比較するには、 [Microsoft 365 for business 製品比較](https://go.microsoft.com/fwlink/p/?linkid=842056) ページを参照してください。 技術仕様については、「 [Microsoft 365 サービスの説明](https://go.microsoft.com/fwlink/p/?linkid=842275)」を参照してください。
   
-サービス数の少ないプランに切り替える場合は、プランを手動で[切り替える](switch-plans-manually.md)か、 [Microsoft サポート](../../admin/contact-support-for-business-products.md)にお問い合わせください。
+サービス数の少ないプランに切り替える場合は、プランを手動で [切り替える](switch-plans-manually.md)か、 [Microsoft サポート](../../admin/contact-support-for-business-products.md) にお問い合わせください。
   
 ## <a name="why-some-switches-take-longer"></a>一部の切り替えに時間がかかる理由
 

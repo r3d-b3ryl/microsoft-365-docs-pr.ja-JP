@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: ドメインを確認し、電子メール、Skype for Business Online、および Dnsat の他のサービスの DNS レコードを Microsoft にとって簡単にセットアップする方法について説明します。
-ms.openlocfilehash: 07cf79b86e02fa79d59882fa51402cccc922c2b6
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 266f5e8460395ae10b9c430cf66e1f443126ff64
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307105"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646213"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Microsoft にとって簡単に DNS レコードを Dnsで作成する
 
@@ -110,7 +110,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**サーバー**|**MX レベル**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから**取得\<*domain-key*\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1800  <br/> |
+    |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから**取得\<*domain-key*\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |1800  <br/> |
    
     ![Dnsの簡単な設定-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -214,8 +214,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Name**|**Priority**|**Weight**|**Port**|**Host**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1800  <br/> |
    
     ![Dnsの簡単な設定-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   

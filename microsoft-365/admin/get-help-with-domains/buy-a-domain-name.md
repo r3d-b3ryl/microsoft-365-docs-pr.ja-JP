@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,19 +24,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Microsoft 365 でドメイン名を購入する方法について説明します。
-ms.openlocfilehash: c9b4ac4cff7ad8166caa28b89e1195d98b3f6d27
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: f636b9e6afc1e910a6b0c01a58a4e69127c80772
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814458"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645517"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -44,45 +44,45 @@ ms.locfileid: "46814458"
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして、[設定ドメイン \> を \> 購入する] に移動する
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして [設定] のドメイン \> \> でドメインを購入する
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
-3. **[Domains] ページ**で **、[Buy domain] を選択します**。
+3. [ **ドメイン** ] ページで、[ **ドメインの購入**] を選択します。
     
 次のトップレベル ドメインからドメインを選ぶことができます。
   
-- .biz
+- . ビジネス
     
 - .com
     
-- .info
+- . info
     
-- .me
+- . me
     
-- .mobi
+- . mobi
     
 - .net
     
 - .org
     
-- .tv
+- 。テレビ
     
-- .co.uk
+- . co.uk
     
 - org.uk
     
 
 > [!NOTE]
-> テナントを購入 **または管理する**Microsoft パートナーによって Microsoft パートナーが行っていなけら、ドメインを購入する場合は [ドメインを購入] を選び、Microsoft パートナーの Web サイトにリダイレクトされる可能性があります。
+> [ドメインの **購入**] を選択すると、microsoft パートナーから購入/管理されたテナントがある場合は、microsoft パートナーの web サイトにリダイレクトされることがあります。
 
-### <a name="domain-privacy"></a>ドメイン プライバシー
-ドメインを購入した場合は、無料のドメイン プライバシー サブスクリプションを提供します。 これにより、ICANN プライベートでドメインの登録に含む連絡先情報が保持されます。 [詳細情報](https://whois.icann.org/en/privacy-and-proxy-services)
+### <a name="domain-privacy"></a>ドメインのプライバシー
+ドメインの購入には、無料のドメインのプライバシーサブスクリプションが提供されます。 これにより、連絡先情報は、ICANN private を使用してドメインの登録に添付されたままになります。 [詳細情報](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>別のドメイン レジストラーからドメインを購入する
-[GoDaddy](https://www.godaddy.com)以外のドメイン レジストラーからドメインを購入する場合は、自動セットアップ (ドメイン接続) をサポートする以下のレジストラーを使用する方法をお勧めします。 
+[GoDaddy](https://www.godaddy.com)以外のドメインレジストラーからドメインを購入する場合は、自動セットアップ (ドメイン接続) をサポートする以下のいずれかを使用することをお勧めします。 
   
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [1 &amp; IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
@@ -102,21 +102,21 @@ ms.locfileid: "46814458"
 
 専用ドメインをまだ持っていない場合は、ドメイン名レジストラー、ドメイン リセラー、現在のインターネット プロバイダーなどからオンラインで簡単に購入できます。21Vianet が運営する Office 365 にサインアップすると、たとえば、contoso.partner.onmschina.cn のようなドメイン名を与えられますが、fourthcoffee.com のようなカスタム ドメイン名を使うこともできます。
   
-Microsoft 365 でドメインをセットアップするには、ドメインを所有している必要があります。また、ドメインの DNS レコードの一部を変更することはできません。
+Microsoft 365 でドメインをセットアップするには、ドメインを所有しており、ドメインの DNS レコードの一部を変更する必要があります。
   
 > [!CAUTION]
-> ドメイン レジストラーや DNS ホスティング プロバイダーによっては、Microsoft 365 で必要なすべての DNS レコードを作成できない場合があります。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
+> 一部のドメインレジストラーまたは DNS ホスティングプロバイダーでは、Microsoft 365 に必要なすべての DNS レコードの作成が許可されていません。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
   
-ドメイン レジストラーでドメインを登録した後は、Microsoft 365 に管理者としてサインインし、ドメインをセットアップして、メール アドレスや他のサービスで使用できます。
+ドメイン (ドメインレジストラー) を登録した後、Microsoft 365 を管理者としてサインインし、ドメインをセットアップして、メールアドレスやその他のサービスで使用できるようにします。.
   
 > [!NOTE]
-> The SharePoint Online Public Website information in this article only applies if your organization purchased Microsoft 365 prior to March 9, 2015. 
+> この記事に記載されている SharePoint Online のパブリック Web サイトの情報は、組織が2015年3月9日より前に Microsoft 365 を購入した場合にのみ適用されます。 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365 に必要なすべての DNS レコードをサポートするドメイン レジストラー
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365 に必要なすべての DNS レコードをサポートするドメインレジストラー
 
 - [Oray](https://oray.com/)
     
-- [中国](https://www.hichina.com/)
+- [HiChina](https://www.hichina.com/)
     
 - [east.net](http://www.east.net/)
     
@@ -130,4 +130,4 @@ Microsoft 365 でドメインをセットアップするには、ドメインを
 
 [ドメイン FAQ](../setup/domains-faq.md)
 
-[DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持します](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)。
+[DNS レコードを更新して、web サイトを現在のホスティングプロバイダーに保持](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)します。

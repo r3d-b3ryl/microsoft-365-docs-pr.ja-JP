@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Power BI と、組織内のユーザーがこのビジネス分析サービスをどのように使用できるかについて説明します。
-ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 633052889a2ca5c5c4db4c3b3c9334b396148e2a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432173"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644929"
 ---
 # <a name="power-bi-in-your-organization"></a>組織内の Power BI
 
@@ -61,7 +61,7 @@ Power BI コンプライアンスの詳細については、「 [Microsoft Trust
 Power BI を使うために組織が行うべき管理作業は何もありません。
   
 > [!IMPORTANT]
-> 組織にメール ドメインが複数あり、すべてのメール アドレスの拡張子を同じテナントに含める場合は、ユーザーがプライマリ テナントを作成する前に、そのテナントにすべてのメール アドレス ドメインを追加します。 テナントが作成された後で、ユーザーをテナント間で自動的に移動する方法は、サポートされていません。 このプロセスの詳細については、「[複数のドメインが存在する場合、ユーザーが追加されるテナントを制御](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to)する方法」を参照してください。この記事の後半で、「 [Office 365 online にドメインを追加](../setup/add-domain.md)する」を参照してください。 
+> 組織にメール ドメインが複数あり、すべてのメール アドレスの拡張子を同じテナントに含める場合は、ユーザーがプライマリ テナントを作成する前に、そのテナントにすべてのメール アドレス ドメインを追加します。 テナントが作成された後で、ユーザーをテナント間で自動的に移動する方法は、サポートされていません。 このプロセスの詳細については、「 [複数のドメインが存在する場合、ユーザーが追加されるテナントを制御](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) する方法」を参照してください。この記事の後半で、「 [Office 365 online にドメインを追加](../setup/add-domain.md) する」を参照してください。 
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>組織側での現在のユーザー ID の管理方法は、どのように変わりますか?
 
@@ -105,7 +105,7 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
     
     ![管理者アプリが強調表示されたアプリ起動ツール](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
-5. [**管理者になる**] ページの手順を読んで、[**はい、管理者にする]** を選択します。
+5. [ **管理者になる** ] ページの手順を読んで、[ **はい、管理者にする]** を選択します。
     
     > [!NOTE]
     >  このオプションが表示されない場合は、管理者が既に存在します。 
@@ -130,9 +130,9 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
   
 これらの手順では、Windows PowerShell を使う必要があります。 Windows PowerShell を使い始める場合は、「[PowerShell ファースト ステップ ガイド](https://go.microsoft.com/fwlink/p/?LinkID=286814)」を参照してください。
   
-次の手順を実行するには、最新の64ビットバージョンの[Azure Active Directory V2 PowerShell モジュール](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)をインストールする必要があります。
+次の手順を実行するには、最新の64ビットバージョンの [Azure Active Directory V2 PowerShell モジュール](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)をインストールする必要があります。
   
-リンクを選択した後、[**実行**] を選択してインストーラーパッケージを実行します。 
+リンクを選択した後、[ **実行** ] を選択してインストーラーパッケージを実行します。 
   
  **テナントの自動参加を無効にする**: 新規ユーザーが管理対象テナントに参加できないようにするには、次に示す Windows PowerShell コマンドを使います。
   
@@ -141,7 +141,7 @@ Microsoft によってテナントが作成されたら、次の手順に従っ�
 新規ユーザーに対してテナントの自動参加を有効にする場合:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> このブロックの設定で、組織の新しいユーザーは Power BI にサインアップできなくなります。 組織内の新しいサインアップを無効にする前に Power BI にサインアップしていたユーザーは、それ以降もライセンスを与えられたままになります。 以前にサインアップしたことがあるユーザーの power bi へのアクセスを削除する方法については、「サインアップし[たユーザーの POWER bi を削除する方法](#how-do-i-remove-power-bi-for-users-that-already-signed-up)」を参照してください。 
+> このブロックの設定で、組織の新しいユーザーは Power BI にサインアップできなくなります。 組織内の新しいサインアップを無効にする前に Power BI にサインアップしていたユーザーは、それ以降もライセンスを与えられたままになります。 以前にサインアップしたことがあるユーザーの power bi へのアクセスを削除する方法については、「サインアップし [たユーザーの POWER bi を削除する方法](#how-do-i-remove-power-bi-for-users-that-already-signed-up) 」を参照してください。 
   
 ## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>ユーザーが既存のテナントに参加できるようにするにはどうすればよいですか?
 
@@ -172,11 +172,11 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 
 ::: moniker range="o365-worldwide"
   
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
     
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
     
-3. [**ライセンスとアプリ**] タブで、[ **Microsoft Power BI** ] チェックボックスをオフにします。
+3. [ **ライセンスとアプリ** ] タブで、[ **Microsoft Power BI** ] チェックボックスをオフにします。
     
 4. [**変更の保存**] を選択します。
 
@@ -189,7 +189,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
     
-3. [**製品ライセンス**] の横にある [**編集**] を選択します。 
+3. [ **製品ライセンス**] の横にある [ **編集**] を選択します。 
     
 4. [ **Microsoft POWER BI** ] オプションをオフにします。
     
@@ -203,11 +203,11 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 
 2. ライセンスを削除するユーザーを見つけて、そのユーザーの名前を選択します。
     
-3. [**製品ライセンス**] の横にある [**編集**] を選択します。 
+3. [ **製品ライセンス**] の横にある [ **編集**] を選択します。 
     
 4. [ **Microsoft POWER BI** ] オプションをオフにします。
     
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 ::: moniker-end 
 
@@ -216,7 +216,7 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 
 このプログラムの一員として、あなたのテナントに参加したユーザーには、一意のライセンスが割り当てられます。このライセンスは、管理者ダッシュボードの [アクティブ ユーザー] ウィンドウでフィルタリングできます。
   
-この新しいビューを作成するには、管理センターで、「 [create a custom user view](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)」の手順を実行します。 [**割り当てられた製品ライセンス**] で、[ **Microsoft Power BI**] を選択します。 新しいビューが作成されると、このプログラムに登録したテナント内のすべてのユーザーを表示できるようになります。
+この新しいビューを作成するには、管理センターで、「 [create a custom user view](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)」の手順を実行します。 [ **割り当てられた製品ライセンス**] で、[ **Microsoft Power BI**] を選択します。 新しいビューが作成されると、このプログラムに登録したテナント内のすべてのユーザーを表示できるようになります。
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>事前に準備しておく必要のあるものが、他にもありますか?
 

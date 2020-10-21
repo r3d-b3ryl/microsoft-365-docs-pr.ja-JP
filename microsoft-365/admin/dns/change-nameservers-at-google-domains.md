@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: Google ドメインでカスタムドメインの DNS レコードを管理するように Microsoft をセットアップする方法について説明します。
-ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400655"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646429"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>Google ドメインで Microsoft をセットアップするためにネームサーバーを変更する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ[て、すべての DNS レコードを Google ドメインで管理](create-dns-records-at-google-domains.md)できます。)
+Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、すべての DNS レコードを Google ドメインで管理](create-dns-records-at-google-domains.md)できます。)
   
     
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
@@ -42,23 +42,23 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 >  このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
   
-1. 開始するには、[このリンク](https://domains.google.com/registrar)を使用して Google domains のドメインページにアクセスしてください。 You'll be prompted to sign in. To do so:
+1. 開始するには、 [このリンク](https://domains.google.com/registrar)を使用して Google domains のドメインページにアクセスしてください。 You'll be prompted to sign in. To do so:
     
-1. [**サインイン**] を選択します。
+1. [**サインイン**] を選びます。
     
-2. ログイン資格情報を入力して、もう一度 [**サインイン**] を選択します。
+2. ログイン資格情報を入力して、もう一度 [ **サインイン**] を選択します。
     
-2. [ドメイン **] ページの**[**ドメイン**] セクションで、編集するドメインの [ **DNS の構成**] を選択します。 
+2. [**ドメイン**] ページの [**ドメイン**] セクションで、編集するドメインの [**DNS の構成**] を選択します。 
     
-3. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+3. [**Custom resource records**] セクションにある新規レコードのボックスに、次の表の値を入力するかコピーして貼り付けます。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**名前** <br/> |**Type** <br/> |**TTL** <br/> |**Data** <br/> |
+|**名前** <br/> |**Type** <br/> |**TTL** <br/> |**データ** <br/> |
 |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. [**追加**] を選択します。
@@ -86,18 +86,18 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ など*your_domain。*  この変更を行った後、com) は Microsoft に送られ始めます。 
+> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ など *your_domain。*  この変更を行った後、com) は Microsoft に送られ始めます。 
   
 > [!IMPORTANT]
 > 次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、正しいネームサーバーを追加する方法を説明します。 > このセクションの手順を完了すると、次の4つのネームサーバーのみが表示されます。 
   
 1. まず、[このリンク](https://domains.google.com/registrar)を使って Google Domains でドメイン ページにアクセスします。 サインインするように求められます。 そのためには、次の操作を行います。
     
-1. [**サインイン**] を選択します。
+1. [**サインイン**] を選びます。
     
-2. ログイン資格情報を入力してから、もう一度 [**サインイン**] を選択します。
+2. ログイン資格情報を入力してから、[**サインイン**] をもう一度選択します。
     
-2. [ドメイン **] ページの**[**ドメイン**] セクションで、編集するドメインの [ **DNS の構成**] を選択します。 
+2. [**ドメイン**] ページの [**ドメイン**] セクションで、編集するドメインの [**DNS の構成**] を選択します。 
     
 3. [ **ドメイン**] ページの [ **ネームサーバー**] セクションで、[ **カスタム ネームサーバーを使用**] を選びます。
     
@@ -130,7 +130,7 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
   
 3. 他の 3 つのネームサーバー レコードを追加します。
     
-    [**カスタムの名前サーバーを使用**する] セクションで、表の次の行の値を使用してレコードを作成し、[ **+ (追加)** ] コントロールを選択して別の行を追加します。 
+    [ **カスタムの名前サーバーを使用** する] セクションで、表の次の行の値を使用してレコードを作成し、[ **+ (追加)** ] コントロールを選択して別の行を追加します。 
     
     4 つのネームサーバー レコードの作成がすべて完了するまで、このプロセスを繰り返します。
     
@@ -143,7 +143,7 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
   
 ### <a name="if-there-are-nameservers-already-listed"></a>既に一覧表示されているネームサーバーがある場合
 
-1. 他のネームサーバーが表示されている場合は、[**編集**] を選択します。
+1. 他のネームサーバーが表示されている場合は、[ **編集**] を選択します。
     
     > [!CAUTION]
     > Follow these steps only if you have existing nameservers other than the four correct nameservers. (つまり、 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、または**ns4.bdm.microsoftonline.com**という名前が付いて*いない*現在のネームサーバーのみを削除します)。 
@@ -171,7 +171,7 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
   
 5. 他の 2 つのネームサーバー レコードを追加します。
     
-    [**カスタムの名前サーバーを使用**する] セクションで、表の次の行の値を使用してレコードを作成し、[ **+ (追加)** ] コントロールを選択して別の行を追加します。 
+    [ **カスタムの名前サーバーを使用** する] セクションで、表の次の行の値を使用してレコードを作成し、[ **+ (追加)** ] コントロールを選択して別の行を追加します。 
     
     4 つのネームサーバー レコードの作成がすべて完了するまで、このプロセスを繰り返します。
     

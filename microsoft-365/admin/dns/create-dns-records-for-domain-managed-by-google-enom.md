@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: '[Google Domains] ページを使用して、eNom にアクセスし、DNS を作成する方法について説明します。'
-ms.openlocfilehash: 6c6698f3d11f42cd0298bdb66710ec3c62bac5ca
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 37fa8836b7511d51ef2dcb137f36d62eebc36443
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400258"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645613"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>Google がドメインを管理している場合に DNS レコードを作成する (eNom)
 
@@ -44,11 +44,11 @@ ms.locfileid: "44400258"
     
     ![Google-Apps-Configure-1-1-0](../../media/37a6e9f6-319e-4c02-aa18-d8d06df7953d.png)
   
-2. ドメイン名を入力し、[**移動**] を選択します。
+2. ドメイン名を入力し、[ **移動**] を選択します。
     
     ![Google-Apps-Configure-1-1-1](../../media/2caf8dcb-4d40-4cfa-bc40-d634e454e699.png)
   
-3. ページの下部にある [**その他のコントロール**] を選択します。
+3. ページの下部にある [ **その他のコントロール**] を選択します。
     
     ![Google-Apps-Configure-1-2-0](../../media/1518ff78-035b-423e-85a3-c16d7faa0968.png)
   
@@ -56,14 +56,14 @@ ms.locfileid: "44400258"
     
     ![Google-Apps-Configure-1-2-1](../../media/c2972c06-9bca-43bd-9876-2cee63043bf1.png)
   
-5. [**ドメイン**] ページで、[**ドメインの追加と削除**] を選択します。
+5. [ **ドメイン** ] ページで、[ **ドメインの追加と削除**] を選択します。
     
     ![Google-Apps-Configure-1-2-2](../../media/07b8068f-9a05-40aa-a041-fc495c729a18.png)
   
-6. [**ドメイン**] ページで、[ **Advanced DNS settings**] を選択します。
+6. [ **ドメイン** ] ページで、[ **Advanced DNS settings**] を選択します。
     
     > [!NOTE]
-    > **Google Apps for Work** アカウントへのサインアップ時に Google 経由でドメイン名を購入しなかった場合は、[ **Domains**] ページで [ **Advanced DNS settings**] を使用できません。 代わりに、ユーザーがドメインのホストの Web サイトに直接移動し、DNS 設定にアクセスして、この手順と次の手順に従う必要があります。 詳細については[、「G Suite ドメイン設定にアクセス](https://support.google.com/a/answer/54693?hl=en)する」を参照してください。 
+    > **Google Apps for Work** アカウントへのサインアップ時に Google 経由でドメイン名を購入しなかった場合は、[ **Domains**] ページで [ **Advanced DNS settings**] を使用できません。 代わりに、ユーザーがドメインのホストの Web サイトに直接移動し、DNS 設定にアクセスして、この手順と次の手順に従う必要があります。 詳細については [、「G Suite ドメイン設定にアクセス](https://support.google.com/a/answer/54693?hl=en) する」を参照してください。 
   
     ![Google-アプリ-eNom-Configure-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
   
@@ -75,7 +75,7 @@ ms.locfileid: "44400258"
     
     ![Google-アプリ-eNom-Configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
   
-9. [ ***Domain_name*** ] ページの [**ホストレコード**] セクションで、[**編集**] を選択します。
+9. ** _Domain_name_*_ ページ*の [_ Host Records** ] セクションで、[ **Edit**] を選択します。
     
     ![Google-アプリ-eNom-Configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
   

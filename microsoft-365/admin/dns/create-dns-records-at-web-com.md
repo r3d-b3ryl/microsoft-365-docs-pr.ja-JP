@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: ドメインを確認し、電子メール、Skype for Business Online、および web.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 2a9162c1ca6fc6a00e564e8f004768fac49bd3e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 25df88e05e96e2394628bf89c8cc07af2d0eac1e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400306"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645757"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Microsoft の web.com で DNS レコードを作成する
 
@@ -46,7 +46,7 @@ DNS ホスティングプロバイダーが web.com の場合は、この記事�
 > [!IMPORTANT]
 > この手順は、ドメインを購入して登録したドメイン レジストラーで実行する必要があります。 
   
-Web.com にサインアップしたときに、web.com**セットアップ**プロセスを使用してドメインを追加しました。 
+Web.com にサインアップしたときに、web.com **セットアップ** プロセスを使用してドメインを追加しました。 
   
 Microsoft でドメインの DNS レコードを確認および作成するには、最初にドメインレジストラーでネームサーバーを変更して、web .com のネームサーバーを使用する必要があります。
   
@@ -77,9 +77,9 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
   
-1. まず、[このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
+1. まず、 [このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
   
-2. [**アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
+2. [ **アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
   
 3. [* * Manage * my domain * * *] で、[ **ADVANCED DNS レコードの編集**] を選択します。
 
@@ -91,7 +91,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     |@  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. [**続行**] を選択します。
+5. [ **続行**] を選択します。
   
   
 6. 新しい TXT レコードが確認されるまで数分待ってから、作成したレコードがインターネットを介して更新できるようにします。
@@ -121,32 +121,32 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにする
 <a name="BKMK_add_MX"> </a>
 
-1. まず、[このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
+1. まず、 [このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
   
-2. [**アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
+2. [ **アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
   
 3. [* * Manage * my domain * * *] で、[ **ADVANCED DNS レコードの編集**] を選択します。
 
-4. [**メールサーバー (Mx records)**] で、[ **Mx レコードの編集**] をクリックし、次の表の値を選択します。 
+4. [ **メールサーバー (Mx records)**] で、[ **Mx レコードの編集**] をクリックし、次の表の値を選択します。 
     
     |**Priority**|**TTL**|**メール サーバー**|
     |:-----|:-----|:-----|
-    |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> |*\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |
+    |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. **[保存]** を選択します。
   
-6. その他の MX レコードが [ **Mx records** ] セクションに表示されている場合は、[**削除**] でそのレコードの横にあるチェックボックスをオンにして、[**保存**] を選択します。 
+6. その他の MX レコードが [ **Mx records** ] セクションに表示されている場合は、[ **削除**] でそのレコードの横にあるチェックボックスをオンにして、[ **保存**] を選択します。 
   
-7. 確認画面で、[**変更の保存**] を選択します。 
+7. 確認画面で、[ **変更の保存**] を選択します。 
 
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な6つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
-1. まず、[このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインするように求められます。
+1. まず、 [このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインするように求められます。
      
-2. [**アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
+2. [ **アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
   
 3. [* * Manage * my domain * * *] で、[ **ADVANCED DNS レコードの編集**] を選択します。
 
@@ -165,7 +165,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |msoid  <br/> |3600  <br/> |@ (なし)  <br/> |clientconfig.microsoftonline-p.net  <br/> |
     
   
-5. [**続行**] を選択します。
+5. [ **続行**] を選択します。
   
 6. 他の 5 つの CNAME レコードをそれぞれ追加します。
 
@@ -174,12 +174,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
-1. まず、[このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
+1. まず、 [このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
     
   
-2. [**アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
+2. [ **アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
   
 3. [* * Manage * my domain * * *] で、[ **ADVANCED DNS レコードの編集**] を選択します。
 
@@ -191,7 +191,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     |@  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。   |
 
  
-5. [**続行**] を選択します。
+5. [ **続行**] を選択します。
 
 6. [**変更の保存**] を選択します。
     
@@ -203,25 +203,25 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 > [!IMPORTANT]
 > Web.com は、この機能を使用できるようにする責任があることに注意してください。 次の手順と現在の web.com GUI (グラフィカルユーザーインターフェイス) の間に矛盾がある場合は、 [Web.com コミュニティ](https://community.web.com.com/)を活用してください。 
 
-1. まず、[このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
+1. まず、 [このリンク](https://checkout.web.com/manage-it/index.jsp)を使って web.com でドメインページにアクセスします。 最初にログインします。
       
-2. [**アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
+2. [ **アカウントマネージャー** ] ページで、[ **My Domain Names**] を選びます。 
   
 3. [* * Manage * my domain * * *] で、[ **ADVANCED DNS レコードの編集**] を選択します。
   
 4. 2 つの SRV レコードの最初のレコードを追加します。
 
-    [**サービス (Srv レコード)**] で、[ **Srv レコードの編集**] をクリックし、次の表の値を選択します。 
+    [ **サービス (Srv レコード)**] で、[ **Srv レコードの編集**] をクリックし、次の表の値を選択します。 
         
     |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1-d |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1-d |5061 | sipfed.online.lync.com |
 
   
 5. 表の2行目の値を選択して、他の SRV レコードを追加します。 
   
-6. [**続行**] を選択します。
+6. [ **続行**] を選択します。
 
 7. [**変更の保存**] を選択します。
 

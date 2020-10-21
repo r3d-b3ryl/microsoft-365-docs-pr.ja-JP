@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Windows ベースの DNS で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: f0c2b8c4aaaa1012e0f11e3778c7ca6b092c053f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306949"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645577"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Windows ベースの DNS を使用して Microsoft の DNS レコードを作成する
 
@@ -49,7 +49,7 @@ MX レコードを追加して、自分のドメインのメールが Microsoft 
 - Microsoft の [DNS レコードの追加] ページの [Exchange Online] セクションの [MX] 行で、[point to アドレス] の下に表示されている値をコピーします。 この値は、このタスクで作成しているレコードで使用します。 
 - ドメインの [DNS マネージャー] ページで、[**アクション**  >  **メールエクスチェンジャー (MX)**] に移動します。 ドメインのこのページを見つけるには、「 [Windows ベースの dns で dns レコードを検索](#find-your-dns-records-in-windows-based-dns)する」を参照してください。  
 - [ **新しいリソースレコード** ] ダイアログボックスで、フィールドに次の値が正確に設定されていることを確認します。 
-    - Host Name:  
+    - ホスト名: 
     - @Address: Microsoft からコピーしたのと同じ値にポイントを貼り付けます。  
     - Pref: 
 - [ **Save Changes**] を選びます。

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,18 +22,18 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: ドメイン接続が有効なレジストラーを使用して、ドメインを Microsoft 365 に追加する方法について説明します。
-ms.openlocfilehash: fb3f9315ed8ae056cadd2fd6a83f13f6713347f3
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: e907317ec5b606c2fe73232a73c9abdfce26feea
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079981"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645349"
 ---
 # <a name="using-domain-connect"></a>ドメイン接続の使用
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。
   
-[ドメイン接続](https://www.domainconnect.org/)が有効な登録機関は、数分かかる3つのステップのプロセスで、ドメインを Microsoft 365 に追加することができます。 
+[ドメイン接続 ](https://www.domainconnect.org/) が有効な登録機関は、数分かかる3つのステップのプロセスで、ドメインを Microsoft 365 に追加することができます。 
   
 このウィザードでは、ドメインを所有していることを確認し、ドメインのレコードを自動的に設定することを確認します。そのため、Microsoft 365 およびその他の Microsoft 365 サービス (Teams など) が自分のドメインで作業します。
   

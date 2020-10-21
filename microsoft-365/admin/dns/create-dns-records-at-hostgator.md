@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Hostgator にあるその他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 103da87956beae868cda84b727a3401dfd9991d9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f8cfc417a7ff9821fd40b33c8dfe9932dd454d18
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306973"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645997"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>Microsoft の Hostgator で DNS レコードを作成する
 
@@ -92,7 +92,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     |||||
     |:-----|:-----|:-----|:-----|
     |**名前** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |*Domain_name*を使用します。 (for example, fourthcoffee.com.)  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |1-d  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. [ **Add Record** ] を選択します。
     
@@ -131,7 +131,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
  
 3. [ **Email Routing**] 領域で、[ **Remote Mail Exchanger**] を選びます。
 
-4. [ **変更**] を選択します。
+4. [**変更**] を選択します。
   
 5. [ **新しいレコードの追加** ] 領域にある新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 
     
@@ -235,8 +235,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**名前**|**TTL**|**Type**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls。 *domain_name*します。 (たとえば、_sip. _tls] など)。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp。 *domain_name*します。 (たとえば、_sipfederationtls. _tcp] など)。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _sip._tls。 *domain_name*します。 (たとえば、() () を使用します。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _sipfederationtls._tcp。 *domain_name*します。 (たとえば、_sipfederationtls を _tcp します。)  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. [ **Add Record** ] を選択します。

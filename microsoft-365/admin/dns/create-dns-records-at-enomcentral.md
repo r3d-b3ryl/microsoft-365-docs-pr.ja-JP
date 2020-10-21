@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の eNomCentral のその他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: 94b0648e03d756f429094a6d35f03d5596a272f4
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434193"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646165"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>Microsoft の eNomCentral で DNS レコードを作成する
 
@@ -71,7 +71,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 
    ![eNom-BP-検証-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
-5. [**保存**] を選択します。
+5. [ **保存**] を選択します。
 
    ![eNom-BP-検証-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
@@ -117,11 +117,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    |ホスト名|Address|Pref|
    |---|---|---|
-   |@| *\<domain-key\>*. mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|10   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。|
+   |@| *\<domain-key\>*  . mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)|10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。|
 
    ![eNom-BP-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
-6. [**保存**] を選択します。
+6. [ **保存**] を選択します。
 
    ![eNom-BP-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
 
@@ -129,7 +129,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    ![eNom-BP-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. [**削除] チェック**ボックスをオンにします。
+8. [ **削除] チェック**ボックスをオンにします。
 
    ![eNom-BP-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
@@ -150,7 +150,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    ![eNom-BP-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. [**新しい行**] を選択します。
+4. [ **新しい行**] を選択します。
 
    ![eNom-BP-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
 
@@ -168,7 +168,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    ![eNom-BP-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
 
-6. [**保存**] を選択します。
+6. [ **保存**] を選択します。
 
    ![eNom-BP-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
 
@@ -176,7 +176,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
 
 次の手順を実行するか、[ビデオ (5 分 12 秒から開始) を参照](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)してください。
 
@@ -202,7 +202,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
    ![eNom-BP-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
 
-5. [**保存**] を選択します。
+5. [ **保存**] を選択します。
 
    ![eNom-BP-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
 
@@ -229,7 +229,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 5. 2 つの新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
 
-   |サービス|プロトコル|優先度|太さ|ポート|ターゲット (ホスト名)|
+   |サービス|プロトコル|Priority|太さ|ポート|ターゲット (ホスト名)|
    |---|---|---|---|---|---|
    |_sip|_tls|100|1-d|443|sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません**|
    |_sipfederationtls|_tcp|100|1-d|5061|sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません**|

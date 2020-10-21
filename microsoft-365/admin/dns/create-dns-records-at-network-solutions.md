@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft のネットワークソリューションでその他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 25e85bf30527b49ada711af9ba5c418409acd24c
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780339"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645949"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Microsoft のネットワークソリューションで DNS レコードを作成する
 
@@ -63,7 +63,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 次の手順を実行するか、[ビデオ (47 秒から開始) を参照](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)してください。
   
-1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。 ログインするように求められます。
+1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
     > [**ログイン**] ボタンを選択する前に、[ **Log in to** ] ドロップダウンリストで [ **Manage My Domain Names** ] を選びます。 
@@ -80,11 +80,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 4. [ **Manage ADVANCED DNS Records**] を選びます。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[Manage Advanced DNS Records] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [**テキスト (Txt レコード)** ] セクションまでスクロールしてから、[ **Txt レコードの編集**] を選択します。
+5. [ **テキスト (Txt レコード)** ] セクションまでスクロールしてから、[ **Txt レコードの編集**] を選択します。
     
     ![[TXT レコードの編集] を選択する](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -96,7 +96,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
        
     ![新しいレコードのボックスに値を入力するか貼り付けます。](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. [**続行**] を選択します。
+7. [ **続行**] を選択します。
     
     ![[続行] を選択する](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
@@ -132,7 +132,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 次の手順を実行するか、[ビデオ (3 分 51 秒から開始) を参照](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)してください。
   
-1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。 ログインするように求められます。
+1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
     > [**ログイン**] ボタンを選択する前に、[ **Log in to** ] ドロップダウンリストで [ **Manage My Domain Names** ] を選びます。 
@@ -149,7 +149,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. [ **Manage ADVANCED DNS Records**] を選びます。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[Manage Advanced DNS Records] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -161,11 +161,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**[優先度]**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> | *\<domain-key\>*. mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![新しいレコードのボックスに値を入力するか貼り付けます。](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
-7. [**続行**] を選択します。
+7. [ **続行**] を選択します。
     
     ![[続行] を選択する](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
@@ -177,7 +177,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Select the Delete check box for other MX records](../../media/709d6133-9f5d-490a-a91e-95e21ca94695.png)
   
-10. すべてが選択されたら、[**続行**] を選択します。
+10. すべてが選択されたら、[ **続行**] を選択します。
     
     ![[続行] を選択する](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
@@ -190,7 +190,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 
 次の手順を実行するか、[ビデオ (4 分 43 秒から開始) を参照](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)してください。
   
-1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。 ログインするように求められます。
+1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
     > [**ログイン**] ボタンを選択する前に、[ **Log in to** ] ドロップダウンリストで [ **Manage My Domain Names** ] を選びます。 
@@ -207,7 +207,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. [ **Manage ADVANCED DNS Records**] を選びます。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[Manage Advanced DNS Records] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
@@ -219,15 +219,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Alias**|**TTL**|**Refers to Host Name**|**Other Host          ([ **Other Host**] オプション ボタンを選びます)**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |3600  <br/> |(設定しない)  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |3600  <br/> |(設定しない)  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
-    |lyncdiscover  <br/> |3600  <br/> |(設定しない)  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |autodiscover  <br/> |3600  <br/> |(設定しない)  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |sip  <br/> |3600  <br/> |(設定しない)  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |lyncdiscover  <br/> |3600  <br/> |(設定しない)  <br/> |webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
     |enterpriseregistration  <br/> |3600  <br/> |(設定しない)  <br/> |enterpriseregistration.windows.net  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
-    |enterpriseenrollment  <br/> |3600  <br/> |(設定しない)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |3600  <br/> |(設定しない)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
     
     ![新しいレコードの値を入力するか貼り付けます。](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. 必要な CNAME レコードをすべて追加したら、[**続行**] を選択します。
+7. 必要な CNAME レコードをすべて追加したら、[ **続行**] を選択します。
     
     ![[続行] を選択する](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
@@ -239,11 +239,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
 次の手順を実行するか、[ビデオ (5 分 35 秒から開始) を参照](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)してください。
   
-1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。 ログインするように求められます。
+1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。ログインするように求められます。
     
     > [!IMPORTANT]
     > [**ログイン**] ボタンを選択する前に、[ **Log in to** ] ドロップダウンリストで [ **Manage My Domain Names** ] を選びます。 
@@ -260,11 +260,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. [ **Manage ADVANCED DNS Records**] を選びます。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[Manage Advanced DNS Records] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [**テキスト (Txt レコード)** ] セクションまでスクロールしてから、[ **Txt レコードの編集**] を選択します。
+5. [ **テキスト (Txt レコード)** ] セクションまでスクロールしてから、[ **Txt レコードの編集**] を選択します。
     
     ![[テキスト] の下の [TXT レコードの編集] を選択する](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
@@ -276,7 +276,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![新しいレコードの値を入力するか貼り付けます。](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
-7. [**続行**] を選択します。
+7. [ **続行**] を選択します。
     
     ![[続行] を選択する](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
@@ -306,11 +306,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 4. [ **Manage ADVANCED DNS Records**] を選びます。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[Manage Advanced DNS Records] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [**サービス (Srv records)** ] セクションまでスクロールし、[ **Edit SRV records**] を選びます。
+5. [ **サービス (Srv records)** ] セクションまでスクロールし、[ **Edit SRV records**] を選びます。
     
     ![[サービス] の [SRV レコードの編集] を選択します。](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
@@ -320,12 +320,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
        
     ![新しいレコードの値を入力するか貼り付けます。](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
-7. [**続行**] を選択します。
+7. [ **続行**] を選択します。
     
     ![[続行] を選択する](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   

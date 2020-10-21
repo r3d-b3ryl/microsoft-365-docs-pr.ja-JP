@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: 'DNS レコードを管理する場合は、microsoft カスタムドメインとネットワークソリューションをセットアップする方法について説明します。 '
-ms.openlocfilehash: 502699cf3760460a13ee067b07737037f31fa4ee
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 1cb5cd3cc8628a629fb6d7044063914e37adfac2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079879"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646405"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>ネットワークソリューションを使用して Microsoft をセットアップするためにネームサーバーを変更する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ[て、すべての MICROSOFT DNS レコードをネットワークソリューションで管理](create-dns-records-at-network-solutions.md)できます。)
+Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、すべての MICROSOFT DNS レコードをネットワークソリューションで管理](create-dns-records-at-network-solutions.md)できます。)
   
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>Network Solutions で TXT レコードを追加して、ドメインを所有していることを確認する
@@ -61,11 +61,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 4. [ **Manage ADVANCED DNS Records**] を選びます。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![[Manage Advanced DNS Records] を選択します。](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. [**テキスト (Txt レコード)** ] セクションまでスクロールしてから、[ **Txt レコードの編集**] を選択します。
+5. [ **テキスト (Txt レコード)** ] セクションまでスクロールしてから、[ **Txt レコードの編集**] を選択します。
     
     ![[TXT レコードの編集] を選択する](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -78,7 +78,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
    ![新しいレコードのボックスに値を入力するか貼り付けます。](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. [**続行**] を選択します。
+7. [ **続行**] を選択します。
     
     ![[続行] を選択する](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
@@ -115,12 +115,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*など) は、この変更を行った後に Microsoft に送られ始めます。
+> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*  など) は、この変更を行った後に Microsoft に送られ始めます。
   
 Microsoft がドメインをセットアップできるように、NS レコードを変更する準備はできましたか? 次の手順を実行するか、[ビデオ (2 分 23 秒から開始) を参照](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)してください。
   
 > [!IMPORTANT]
->  このセクションの手順を完了すると、次の4つのネームサーバー*のみ*が一覧表示されます。 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、および**ns4.bdm.microsoftonline.com**。 次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、 *正しい*  ネームサーバーを追加する方法を説明します。 
+>  このセクションの手順を完了すると、次の4つのネームサーバー  *のみ*  が一覧表示されます。 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**、および **ns4.bdm.microsoftonline.com**。 次の手順では、他の不要なネームサーバーを一覧から削除する方法、および上記のネームサーバーが一覧に表示されていない場合に、 *正しい*  ネームサーバーを追加する方法を説明します。 
   
 1. まず、[このリンク](https://www.networksolutions.com/manage-it)を使って Network Solutions でドメイン ページにアクセスします。 ログインするように求められます。
     
@@ -149,7 +149,7 @@ Microsoft がドメインをセットアップできるように、NS レコー�
     
 ### <a name="if-there-are-no-nameservers-already-listed"></a>既に一覧表示されているネームサーバーがない場合
 
-1. [**ドメイン**] ページの [ **Domain Name servers の指定**] セクションで、[さらに**ネームサーバーを追加**] を選択します。
+1. [ **ドメイン** ] ページの [ **Domain Name servers の指定** ] セクションで、[さらに **ネームサーバーを追加**] を選択します。
     
     ![NetworkSolutionsBP-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
@@ -185,7 +185,7 @@ Microsoft がドメインをセットアップできるように、NS レコー�
     
     ![NetworkSolutions-BP-Redelegate-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
-2. [**その他のネームサーバーを追加**] を選択します。
+2. [ **その他のネームサーバーを追加**] を選択します。
     
     ![NetworkSolutionsBP-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   

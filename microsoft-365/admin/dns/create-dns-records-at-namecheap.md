@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Namecheap の他のサービスの DNS レコードをセットアップする方法について説明します。
-ms.openlocfilehash: 2aae667428aba5ea22ab210c47aa9c994a9acf14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 25b40dad0eb47c190df9496d5df4f061d8fdba6d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400390"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645925"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Microsoft の Namecheap で DNS レコードを作成する
 
@@ -57,7 +57,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. [**ドメインリスト**] ページで、編集するドメインの名前を見つけて、[**管理**] を選択します。
+3. [ **ドメインリスト** ] ページで、編集するドメインの名前を見つけて、[ **管理**] を選択します。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -65,7 +65,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. [**ホストレコード**] セクションで、[**新しいレコードの追加**] を選択します。
+5. [ **ホストレコード** ] セクションで、[ **新しいレコードの追加**] を選択します。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -80,13 +80,13 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     (ドロップダウンリストから [ **TTL** ] の値を選びます。) 
     
-    |**Type**|**Host**|**値**|**TTL**|
+    |**Type**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |MS=ms *XXXXXXXX*  <br/>**注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |30 分  <br/> |
        
     ![Namecheap-BP-検証-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
-8. [**変更の保存**] (チェックマーク) コントロールを選択します。 
+8. [ **変更の保存** ] (チェックマーク) コントロールを選択します。 
     
     ![Namecheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
@@ -127,7 +127,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. [**ドメインリスト**] ページで、編集するドメインの名前を見つけて、[**管理**] を選択します。
+3. [ **ドメインリスト** ] ページで、編集するドメインの名前を見つけて、[ **管理**] を選択します。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -151,21 +151,21 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Type**|**Host**|**Value**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX レコード  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |30 分  <br/> |
+    |MX レコード  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。  [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |.0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |30 分  <br/> |
        
     ![Namecheap-BP-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
-8. [**変更の保存**] (チェックマーク) コントロールを選択します。 
+8. [ **変更の保存** ] (チェックマーク) コントロールを選択します。 
     
     ![Namecheap-BP-Configure-2-3](../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png)
   
 9. これ以外の MX レコードがある場合は、次の 2 段階のプロセスに従って、それぞれのレコードを削除します。
     
-    最初に、削除するレコードの [**削除] アイコン**(ごみ箱) を選択します。 
+    最初に、削除するレコードの [ **削除] アイコン** (ごみ箱) を選択します。 
     
     ![Namecheap-BP-Configure-2-4](../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
   
-    次に、[**はい]** を選択して削除を確認します。 
+    次に、[ **はい]** を選択して削除を確認します。 
     
     ![Namecheap-BP-Configure-2-5](../../media/85ebc0c7-8787-43ee-9e7b-647375b3345c.png)
   
@@ -185,7 +185,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. [**ドメインリスト**] ページで、編集するドメインの名前を見つけて、[**管理**] を選択します。
+3. [ **ドメインリスト** ] ページで、編集するドメインの名前を見つけて、[ **管理**] を選択します。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -193,7 +193,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. [**ホストレコード**] セクションで、[**新しいレコードの追加**] を選択します。
+5. [ **ホストレコード** ] セクションで、[ **新しいレコードの追加**] を選択します。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -206,17 +206,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 7. 新しいレコードの空のボックスで、[ **Record Type**] に [ **CNAME**] を選び、次の表の 1 行目の値を入力するか、コピーして貼り付けます。
     
-    |**種類**|**Host**|**値**|**TTL**|
+    |**種類**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
+    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |3600  <br/> |
        
     ![Namecheap-BP-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
-8. [**変更の保存**] (チェックマーク) コントロールを選択します。 
+8. [ **変更の保存** ] (チェックマーク) コントロールを選択します。 
     
     ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
@@ -227,7 +227,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
 
 以下の手順に従います。
   
@@ -237,7 +237,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. [**ドメインリスト**] ページで、編集するドメインの名前を見つけて、[**管理**] を選択します。
+3. [ **ドメインリスト** ] ページで、編集するドメインの名前を見つけて、[ **管理**] を選択します。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -245,7 +245,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. [**ホストレコード**] セクションで、[**新しいレコードの追加**] を選択します。
+5. [ **ホストレコード** ] セクションで、[ **新しいレコードの追加**] を選択します。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -266,7 +266,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
        
     ![Namecheap-BP-4-2](../../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
   
-8. [**変更の保存**] (チェックマーク) コントロールを選択します。 
+8. [ **変更の保存** ] (チェックマーク) コントロールを選択します。 
     
     ![Namecheap-BP-Configure-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
@@ -281,7 +281,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. [**ドメインリスト**] ページで、編集するドメインの名前を見つけて、[**管理**] を選択します。
+3. [ **ドメインリスト** ] ページで、編集するドメインの名前を見つけて、[ **管理**] を選択します。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -289,7 +289,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. [**ホストレコード**] セクションで、[**新しいレコードの追加**] を選択します。
+5. [ **ホストレコード** ] セクションで、[ **新しいレコードの追加**] を選択します。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
@@ -304,12 +304,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Service**|**Protocol**|**Priority**|**Weight**|**Port**|**対象**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |30 分  <br/> |
        
     ![Namecheap-BP-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   
-8. [**変更の保存**] (チェックマーク) コントロールを選択します。 
+8. [ **変更の保存** ] (チェックマーク) コントロールを選択します。 
     
     ![Namecheap-BP-Configure-5-3](../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
   

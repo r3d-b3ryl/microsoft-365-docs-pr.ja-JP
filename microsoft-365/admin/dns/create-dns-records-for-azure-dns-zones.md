@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: ドメインを確認して、Microsoft の Azure DNS ゾーンで、電子メール、Skype for Business Online、その他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: fcc3ea42b7414cdd5fc0c34bfae91104287d2379
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 40fadb81ebd0ae5385bbbdad727b1c579142b227
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400270"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645673"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>Azure DNS ゾーンの DNS レコードを作成する
 
@@ -92,7 +92,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
   
-1. まず、[このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
+1. まず、 [このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
     
     ![Azure-BP-構成-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
@@ -100,17 +100,17 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![Azure-BP-構成-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. ドメインの [**設定**] ページの [ **DNS ゾーン**] 領域で、[ **+ Record set**] を選択します。
+3. ドメインの [ **設定** ] ページの [ **DNS ゾーン** ] 領域で、[ **+ Record set**] を選択します。
     
     ![Azure-BP-構成-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. [ **Add record set** ] 領域の新規レコードセットのボックスで、次の表の値を選択します。 
     
-    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位**] の値を選びます。) 
+    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位** ] の値を選びます。) 
     
     |**名前**|**Type**|**TTL**|**TTL 単位**|**値**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1   <br/> |時間  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |TXT  <br/> |1-d  <br/> |時間  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Azure-BP-検証-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
@@ -142,25 +142,25 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにする
 <a name="BKMK_add_MX"> </a>
 
-1. まず、[このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
+1. まず、 [このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
     
     ![Azure-BP-構成-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. [**ダッシュボード**] ページの [**すべてのリソース**] 領域で、更新するドメインを選択します。 
+2. [ **ダッシュボード** ] ページの [ **すべてのリソース** ] 領域で、更新するドメインを選択します。 
     
     ![Azure-BP-構成-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. ドメインの [**設定**] ページの [ **DNS ゾーン**] 領域で、[ **+ Record set**] を選択します。
+3. ドメインの [ **設定** ] ページの [ **DNS ゾーン** ] 領域で、[ **+ Record set**] を選択します。
     
     ![Azure-BP-構成-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
 4. [ **Add record set** ] 領域の新規レコードセットのボックスで、次の表の値を選択します。 
     
-    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位**] の値を選びます。) 
+    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位** ] の値を選びます。) 
     
     |**名前**|**Type**|**TTL**|**TTL 単位**|**Preference**|**メール交換**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> |時間  <br/> |10    <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md)  
+    |@  <br/> |MX  <br/> |1-d  <br/> |時間  <br/> |10    <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。   [確認する方法](../get-help-with-domains/information-for-dns-records.md)  
    
     ![Azure-BP-構成-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
@@ -170,7 +170,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. その他の MX レコードが [ **Mx records** ] セクションに一覧表示されている場合は、それらを削除する必要があります。 
     
-    最初に、[ **DNS ゾーン**] 領域で**MX レコードセット**を選択します。
+    最初に、[ **DNS ゾーン** ] 領域で **MX レコードセット**を選択します。
     
     ![Azure-BP-構成-2-3](../../media/9890da61-6fcd-4c61-888e-ccbb84f80cd0.png)
   
@@ -189,15 +189,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 ## <a name="add-the-four-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な4つの CNAME レコードを追加する
 <a name="BKMK_add_CNAME"> </a>
 
-1. まず、[このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
+1. まず、 [このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
     
     ![Azure-BP-構成-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. [**ダッシュボード**] ページの [**すべてのリソース**] 領域で、更新するドメインを選択します。 
+2. [ **ダッシュボード** ] ページの [ **すべてのリソース** ] 領域で、更新するドメインを選択します。 
     
     ![Azure-BP-構成-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. ドメインの [**設定**] ページの [ **DNS ゾーン**] 領域で、[ **+ Record set**] を選択します。
+3. ドメインの [ **設定** ] ページの [ **DNS ゾーン** ] 領域で、[ **+ Record set**] を選択します。
     
     ![Azure-BP-構成-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -205,13 +205,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     [ **Add record set** ] 領域にある新規レコードセットのボックスに、次の表の最初の行の値を入力するか、コピーして貼り付けます。 
     
-    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位**] の値を選びます。) 
+    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位** ] の値を選びます。) 
     
     |**名前**|**Type**|**TTL**|**TTL 単位**|**Alias**|
     |:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |1   <br/> |時間  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |1   <br/> |時間  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |1   <br/> |時間  <br/> |webdir.online.lync.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |1-d  <br/> |時間  <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |1-d  <br/> |時間  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |1-d  <br/> |時間  <br/> |webdir.online.lync.com  <br/> |
     
    
     ![Azure-BP-構成-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
@@ -233,20 +233,20 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 |**名前**|**Type**|**TTL**|**TTL 単位**|**Alias**|
 |:-----|:-----|:-----|:-----|:-----|
-|enterpriseregistration  <br/> |CNAME  <br/> |1   <br/> |時間  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |CNAME  <br/> |1   <br/> |時間  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+|enterpriseregistration  <br/> |CNAME  <br/> |1-d  <br/> |時間  <br/> |enterpriseregistration.windows.net  <br/> |
+|enterpriseenrollment  <br/> |CNAME  <br/> |1-d  <br/> |時間  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
-1. まず、[このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
+1. まず、 [このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
     
     ![Azure-BP-構成-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. [**ダッシュボード**] ページの [**すべてのリソース**] 領域で、更新するドメインを選択します。 
+2. [ **ダッシュボード** ] ページの [ **すべてのリソース** ] 領域で、更新するドメインを選択します。 
     
     ![Azure-BP-構成-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
@@ -254,13 +254,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Azure-BP-構成-4-1](../../media/03095196-5010-4072-8503-79b812084dbf.png)
   
-4. [**レコードセットのプロパティ**] 領域の新規レコードセットのボックスで、次の表の値を選択します。 
+4. [ **レコードセットのプロパティ** ] 領域の新規レコードセットのボックスで、次の表の値を選択します。 
     
-    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位**] の値を選びます。) 
+    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位** ] の値を選びます。) 
     
     |**名前**|**Type**|**TTL**|**TTL 単位**|**値**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |TXT  <br/> |1   <br/> |時間  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           
+    |@  <br/> |TXT  <br/> |1-d  <br/> |時間  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           
 
     ![Azure-BP-構成-4-2](../../media/78e84c43-e0ce-433f-8e74-9157fb093cca.png)
   
@@ -271,15 +271,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 <a name="BKMK_add_SRV"> </a>
 
-1. まず、[このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
+1. まず、 [このリンク](https://portal.azure.com )を使用して Azure でドメインページにアクセスします。 最初にログインするように求められます。
     
     ![Azure-BP-構成-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. [**ダッシュボード**] ページの [**すべてのリソース**] 領域で、更新するドメインを選択します。 
+2. [ **ダッシュボード** ] ページの [ **すべてのリソース** ] 領域で、更新するドメインを選択します。 
     
     ![Azure-BP-構成-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
-3. ドメインの [**設定**] ページの [ **DNS ゾーン**] 領域で、[ **+ Record set**] を選択します。
+3. ドメインの [ **設定** ] ページの [ **DNS ゾーン** ] 領域で、[ **+ Record set**] を選択します。
     
     ![Azure-BP-構成-1-3](../../media/b04db89a-3dbc-4cd2-aaca-af17fda53a60.png)
   
@@ -287,12 +287,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     [ **Add record set** ] 領域の新規レコードセットのボックスで、次の表の最初の行の値を選択します。 
     
-    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位**] の値を選びます。) 
+    (ドロップダウンリストから [ **Type** ] と [ **TTL の単位** ] の値を選びます。) 
     
     |**名前**|**Type**|**TTL**|**TTL 単位**|**Priority**|**Weight**|**Port**|**対象**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |SRV  <br/> |1   <br/> |時間  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |SRV  <br/> |1   <br/> |時間  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
+    |_sip._tls  <br/> |SRV  <br/> |1-d  <br/> |時間  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |1-d  <br/> |時間  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> 
 
     ![Azure-BP-構成-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: 'Microsoft 365 の DNS レコードを作成するために必要な値と情報を検索する方法について説明します。 '
-ms.openlocfilehash: fddd1180f2dd80ffeec2aeec49ed821055dd5f15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399910"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645313"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードの作成に必要な情報を収集する
 
@@ -55,13 +55,13 @@ ms.locfileid: "44399910"
 
 ::: moniker-end
     
-2. [**ドメイン**] ページで、ドメインを選択し、[**セットアップの開始**] を選択します。 追加する必要がある特定の値を確認するには、ドメインのセットアップ ウィザードに戻ります。
+2. [ **ドメイン** ] ページで、ドメインを選択し、[ **セットアップの開始**] を選択します。 追加する必要がある特定の値を確認するには、ドメインのセットアップ ウィザードに戻ります。
     
-3. [**ドメインの確認**] ページで、[**代わりに TXT レコードを追加する**] を選択し、[**次へ**] を選択します。
+3. [ **ドメインの確認** ] ページで、[ **代わりに TXT レコードを追加する**] を選択し、[ **次へ**] を選択します。
     
-4. 表示されている**TXT 値**をコピーします。 次のようになります。 **MS = msXXXXXXXX**。 
+4. 表示されている **TXT 値** をコピーします。 次のようになります。 **MS = msXXXXXXXX**。 
     
-5. 「[任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動し、レジストラーのリストから dns ホストを選択し、手順を追って説明します。
+5. 「 [任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動し、レジストラーのリストから dns ホストを選択し、手順を追って説明します。
     
 6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従い、Microsoft 365 でドメインを再度確認します。
 
@@ -95,6 +95,6 @@ ms.locfileid: "44399910"
     
     このページにリストされる DNS レコードのグループは、[ **ドメインの目的**] における選択によって変わります。
     
-4. 「[任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動して、レジストラーのリストから dns ホストを選択し、その dns ホストの web サイトにレコードを追加するための手順を順を追って説明します。
+4. 「 [任意の dns ホスティングプロバイダーで dns レコードを作成](create-dns-records-at-any-dns-hosting-provider.md)する」に移動して、レジストラーのリストから dns ホストを選択し、その dns ホストの web サイトにレコードを追加するための手順を順を追って説明します。
     
 5. 手順に従って、DNS ホストでレコードを作成します。

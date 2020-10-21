@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: Yahoo! で、ドメインを確認し、電子メール、Skype for Business Online、およびその他のサービスの DNS レコードを設定する方法について説明します。 Microsoft の中小企業。
-ms.openlocfilehash: c44ad1cde79fdc401f1cd7411a4019d31ade6d02
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3c6bc44baef4924133ea2308189662dd53399689
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400282"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645601"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>Yahoo! Small Business for Microsoft
 
@@ -41,15 +41,15 @@ Aabaco にアカウントを作成するには、この記事の手順を実行�
   
 ## <a name="create-an-aabaco-small-business-account"></a>Aabaco Small Business アカウントを作成する
 
-1. まず、[このリンク](https://www.luminate.com/services/)を使用して Aabaco のドメインページに移動し、[ **Aabaco Small Business アカウントをセットアップ**する] を選択します。
+1. まず、 [このリンク](https://www.luminate.com/services/)を使用して Aabaco のドメインページに移動し、[ **Aabaco Small Business アカウントをセットアップ**する] を選択します。
     
     ![[Aabaco Small Business アカウントをセットアップする] を選択します。](../../media/d708f272-d42f-40a1-9aaf-d05d8cfd55cf.png)
   
-2. Yahoo! を提供する Small Business の**電子メール/YAHOO ID**。 [**ロボット**ではない] を選択します。
+2. Yahoo! を提供する Small Business の **電子メール/YAHOO ID**。 [ **ロボット**ではない] を選択します。
     
     ![Select I am not a robot](../../media/ded4b5dd-4e04-4baa-ae31-8426b5799151.png)
   
-3. [**開始**] を選択します。
+3. [ **開始**] を選択します。
     
     ![[開始] を選択します。](../../media/6674707d-c222-4f0d-bec4-229d39ab2499.png)
   
@@ -60,7 +60,7 @@ Aabaco にアカウントを作成するには、この記事の手順を実行�
   
     ![The You've got mail page](../../media/2e02fc30-6cca-40d6-bb64-131a41b4a369.png)
   
-5. [Aabaco の**電子メールアドレスを確認してセットアップを続行する**] メールメッセージで、[**電子メールの確認**] を選択します。
+5. [Aabaco の **電子メールアドレスを確認してセットアップを続行する** ] メールメッセージで、[ **電子メールの確認**] を選択します。
     
     ![[電子メールの確認] を選択する](../../media/eb5f5526-6f90-4a10-83a7-5249a1ebd562.png)
   
@@ -71,7 +71,7 @@ Aabaco にアカウントを作成するには、この記事の手順を実行�
   
     ![The Choose your password page](../../media/cc592345-72d1-4a41-9410-a1f3345cfd1d.png)
   
-7. [使用条件**に同意**します] を選択し、[**パスワードの作成**] を選択します。
+7. [使用条件 **に同意**します] を選択し、[ **パスワードの作成**] を選択します。
     
     ![[パスワードの作成] を選択します。](../../media/434aa6a3-076e-4abf-a9cf-31145786e819.png)
   
@@ -82,7 +82,7 @@ Aabaco にアカウントを作成するには、この記事の手順を実行�
   
     ![The You're almost done page](../../media/1a4142a3-e140-48a8-9c80-aa126ff08179.png)
   
-9. Aabaco でほとんどの電子メールメッセージ**が表示**されたら、[**アカウントのアクティブ化**] を選択します。
+9. Aabaco でほとんどの電子メールメッセージ **が表示** されたら、[ **アカウントのアクティブ化**] を選択します。
     
     ![[アカウントのアクティブ化] を選択する](../../media/e76d5edc-d8ba-4d8d-872d-d916716c3618.png)
   

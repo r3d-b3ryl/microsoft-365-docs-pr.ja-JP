@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: ドメインを確認し、電子メール、Skype for Business Online、および Dreamhost のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 4b321138892cb4a7b5f67c37ed66f3baf0f6c45a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ab617fd5d63b292a85289d2d51a0ae0fd3b26be
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400511"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646201"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>Microsoft の Dreamhost で DNS レコードを作成する
 
@@ -52,11 +52,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. [**ダッシュボード**] ページで、[ **domains**] を選択してから、**ドメインを管理**します。
+2. [ **ダッシュボード** ] ページで、[ **domains**] を選択してから、 **ドメインを管理**します。
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. [ドメインの**管理**] ページの [**ドメイン**] セクションで、編集するドメインの [ **DNS** ] を選択します。 
+3. [ドメインの **管理** ] ページの [ **ドメイン** ] セクションで、編集するドメインの [ **DNS** ] を選択します。 
     
     ![Dreamhost-BP-Configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
@@ -64,7 +64,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     (You may have to scroll down.)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
@@ -111,11 +111,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. [**ダッシュボード**] ページで、[**メール**] を選択してから、[**カスタム MX**] を選択します。
+2. [ **ダッシュボード** ] ページで、[ **メール**] を選択してから、[ **カスタム MX**] を選択します。
     
     ![Dreamhost-BP-Configure-2-1](../../media/58478679-4018-49cc-9d83-371dc5fa4a22.png)
   
-3. [**メール配信の管理**] セクションの [**操作**] 列で、編集するドメインの [**編集**] を選択します。 
+3. [ **メール配信の管理** ] セクションの [ **操作** ] 列で、編集するドメインの [ **編集** ] を選択します。 
     
     ![Dreamhost-BP-Configure-2-2](../../media/6eed0be2-6477-4f49-9f90-39e190499a53.png)
   
@@ -127,7 +127,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**MX レコード (必須)**|
     |:-----|
-    |*\<domain-key\>* mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> 0 は、MX 優先度の値です。 この値を MX 値の先頭に追加して、スペースで他の値から分離します。  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Dreamhost-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
@@ -153,27 +153,27 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. [**ダッシュボード**] ページで、[ **domains**] を選択してから、**ドメインを管理**します。
+2. [ **ダッシュボード** ] ページで、[ **domains**] を選択してから、 **ドメインを管理**します。
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. [ドメインの**管理**] ページの [**ドメイン**] セクションで、編集するドメインの [ **DNS** ] を選択します。 
+3. [ドメインの **管理** ] ページの [ **ドメイン** ] セクションで、編集するドメインの [ **DNS** ] を選択します。 
     
     ![Dreamhost-BP-Configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
 4. [ **Add a custom DNS record**] セクションにある新規レコードのボックスに、次の表の最初の行の値を入力するか、コピーして貼り付けます。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
-    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
+    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
    
     ![Dreamhost-3-1](../../media/0c4cc587-ea24-47f2-8dc6-a35735b250e6.png)
   
@@ -188,7 +188,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
   
 以下の手順に従います。
   
@@ -196,19 +196,19 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. [**ダッシュボード**] ページで、[ **domains**] を選択してから、**ドメインを管理**します。
+2. [ **ダッシュボード** ] ページで、[ **domains**] を選択してから、 **ドメインを管理**します。
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. [ドメインの**管理**] ページの [**ドメイン**] セクションで、編集するドメインの [ **DNS** ] を選択します。 
+3. [ドメインの **管理** ] ページの [ **ドメイン** ] セクションで、編集するドメインの [ **DNS** ] を選択します。 
     
     ![Dreamhost-BP-Configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
 4. [ **Add a custom DNS record**] セクションにある新規レコードのボックスに、次の表の最初の行の値を入力するか、コピーして貼り付けます。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
@@ -232,24 +232,24 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dreamhost-BP-Configure-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. [**ダッシュボード**] ページで、[ **domains**] を選択してから、**ドメインを管理**します。
+2. [ **ダッシュボード** ] ページで、[ **domains**] を選択してから、 **ドメインを管理**します。
     
     ![Dreamhost-BP-Configure-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. [ドメインの**管理**] ページの [**ドメイン**] セクションで、編集するドメインの [ **DNS** ] を選択します。 
+3. [ドメインの **管理** ] ページの [ **ドメイン** ] セクションで、編集するドメインの [ **DNS** ] を選択します。 
     
     ![Dreamhost-BP-Configure-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
 4. [ **Add a custom DNS record**] セクションにある新規レコードのボックスに、次の表の最初の行の値を入力するか、コピーして貼り付けます。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |**名前**|**Type**|**値**|**コメント**|
     |:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
-    |_sipfederationtls _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
+    |_sip._tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |(このフィールドは省略可能です。)  <br/> |
    
     ![Dreamhost-5-1](../../media/934eb79f-3617-4b72-802c-c42c7d165283.png)
   

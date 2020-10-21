@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: ドメインを確認し、電子メール、Skype for Business Online、およびその他の Microsoft 用のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 87a2a731a253fdc0593a1aae8020e615dca63c4a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400342"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645817"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Microsoft 用の「Excel で DNS レコードを作成する」
 
@@ -72,7 +72,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. [**エントリを追加する**] を選択します。
+4. [ **エントリを追加する**] を選択します。
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -80,13 +80,13 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![[すべて選択] TXT エントリ](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [**個人用**] を選択し、テキストボックスに値を入力します。 
+6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [ **個人用** ] を選択し、テキストボックスに値を入力します。 
     
     |**Record type**|**サブドメイン**|**TTL**|**値**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(空白のまま)  <br/> |3600 (秒)  <br/> |MS=msxxxxxxxx  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. [**確認**] を選択します。 
+7. **[確認]** を選択します。 
     
     ![OVH confirm TXT for verification](../../media/bde45596-9a55-4634-b5e7-16d7cde6e1b8.png)
   
@@ -128,7 +128,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. [**エントリを追加する**] を選択します。
+4. [ **エントリを追加する**] を選択します。
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -136,7 +136,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH MX record type](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [**個人用**] を選択し、テキストボックスに値を入力します。 
+6. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [ **個人用** ] を選択し、テキストボックスに値を入力します。 
     
     > [!NOTE]
     > 既定では、移動先の相対表記を使用します。これにより、ターゲットレコードの末尾にドメイン名が追加されます。 絶対表記を代わりに使用するには、次の表に示すように、ターゲット レコードにドットを追加します。 
@@ -151,15 +151,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH MX record select Next](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
-8. [**確認**] を選択します。
+8. **[確認]** を選択します。
     
     ![OVH MX record select Confirm](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
   
-9. MX レコードが他にもある場合は、[ **DNS zone** ] ページですべて削除します。 各レコードを選択し、[**アクション**] 列で [ごみ箱-**削除**可能] アイコンを選択します。 
+9. MX レコードが他にもある場合は、[ **DNS zone** ] ページですべて削除します。 各レコードを選択し、[ **アクション** ] 列で [ごみ箱- **削除** 可能] アイコンを選択します。 
     
     ![OVH delete MX record](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
-10. [**確認**] を選択します。
+10. **[確認]** を選択します。
     
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な CNAME レコードを追加する
 <a name="bkmk_cname"> </a>
@@ -176,7 +176,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. [**エントリを追加する**] を選択します。
+4. [ **エントリを追加する**] を選択します。
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -186,15 +186,15 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 1 番目の CNAME レコードを作成します。
     
-    新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [**個人用**] を選択し、テキストボックスに値を入力します。 
+    新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [ **個人用** ] を選択し、テキストボックスに値を入力します。 
     
     |**Record type**|**サブドメイン**|**ターゲット**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com。  <br/> |3,600 秒  <br/> |
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com。  <br/> |3,600 秒  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> |3,600 秒  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> |3,600 秒  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> |3,600 秒  <br/> |
+    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |3,600 秒  <br/> |
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |3,600 秒  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> |3,600 秒  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |3,600 秒  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |3,600 秒  <br/> |
    
     !["はい" CNAME レコード](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
@@ -202,7 +202,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH Add CNAME values and select Next](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
-8. [**確認**] を選択します。
+8. **[確認]** を選択します。
     
 9. 前の手順を繰り返し、他の 5 つの CNAME レコードを作成します。
     
@@ -212,7 +212,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
 1. まず、[このリンク](https://www.ovh.com/manager/)を使って OVH でドメイン ページにアクセスします。ログインするように求められます。
     
@@ -226,7 +226,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. [**エントリを追加する**] を選択します。
+4. [ **エントリを追加する**] を選択します。
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -244,7 +244,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![[追加] SPF の TXT レコードを追加し、[次へ] を選択します。](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
-8. [**確認**] を選択します。
+8. **[確認]** を選択します。
     
     ![OVH Add TXT record for SPF and Confirm](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
@@ -263,7 +263,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. [**エントリを追加する**] を選択します。
+4. [ **エントリを追加する**] を選択します。
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
@@ -273,12 +273,12 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. 1 番目の SRV レコードを作成します。
     
-    新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [**個人用**] を選択し、テキストボックスに値を入力します。 
+    新規レコードのボックスに、次の表の 1 行目の値を入力するか、コピーして貼り付けます。 TTL 値を割り当てるには、ドロップダウンリストから [ **個人用** ] を選択し、テキストボックスに値を入力します。 
     
     |**Record type**|**サブドメイン**|**Priority**|**Weight**|**Port**|**TTL**|**ターゲット**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (秒)  <br/> |sipdir.online.lync.com。  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (秒)  <br/> |sipfed.online.lync.com。  <br/> |
+    |SRV (Service)  <br/> |_sip._tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |3600 (秒)  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |3600 (秒)  <br/> |sipfed.online.lync.com。  <br/> |
        
     !["はい" SRV レコード](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
@@ -286,7 +286,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![OVH SRV record select Next](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   
-8. [**確認**] を選択します。
+8. **[確認]** を選択します。
     
 9. 上記の手順を繰り返し、他の SRV レコードを作成します。2 番目のレコードのボックスに、上の表の 2 行目の値を入力するかコピーして貼り付けます。
     

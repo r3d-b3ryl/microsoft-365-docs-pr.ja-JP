@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: 'Bluehost で DNS レコードを管理するために Microsoft をセットアップする方法について説明します。 '
-ms.openlocfilehash: 56ebeab025984f0ecfefa579c8060578a2299073
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c15ba11e0df57deaef61309f5bc6d1b2a60645b8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400667"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646465"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>Bluehost を使用して Microsoft をセットアップするためにネームサーバーを変更する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ[て、すべての DNS レコードを Bluehost で管理](create-dns-records-at-bluehost.md)できます。)
+Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、すべての DNS レコードを Bluehost で管理](create-dns-records-at-bluehost.md)できます。)
   
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
 
@@ -47,11 +47,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     (下へスクロールしなければならないことがあります。) 
     
-3. [ **Domain_name** ] 領域の**dns ゾーンエディタ**行で、[ **dns レコードの管理**] を選択します。
+3. [ **Domain_name** ] 領域の **dns ゾーンエディタ** 行で、[ **dns レコードの管理**] を選択します。
     
 4. On the **DNS Zone Editor** page, in the Add DNS Record area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
 |||||
 |:-----|:-----|:-----|:-----|
@@ -84,18 +84,18 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、プライマリおよびセカンダリのネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*など) は、この変更を行った後に Microsoft に送られ始めます。 
+> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*  など) は、この変更を行った後に Microsoft に送られ始めます。 
   
 > [!IMPORTANT]
 >  次の手順では、リストからその他の不要なネームサーバーを削除する方法と、正しいネームサーバーが表示されていない場合には追加する方法について説明します。 > このセクションの手順を完了すると、次の4つのネームサーバーのみが表示されます。 > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
 1. まず、[このリンク](https://my.bluehost.com/cgi/dm)を使って Bluehost でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**ドメイン**] ページの [ **domain_name** ] 領域で、ドメインのチェックボックスをオンにして、[**ネームサーバー**] を選択します。
+2. [ **ドメイン** ] ページの [ **domain_name** ] 領域で、ドメインのチェックボックスをオンにして、[ **ネームサーバー**] を選択します。
     
     ![Bluehost-BP-Redelegate-1-1](../../media/8f384386-197c-4272-9675-82037922dac4.png)
   
-3. [ **Domain_name** ] 領域で、[**カスタムネームサーバーを使用する**] を選択します。
+3. [ **Domain_name** ] 領域で、[ **カスタムネームサーバーを使用する**] を選択します。
     
     ![Bluehost-BP-Redelegate-1-2](../../media/9fb47d21-c4ce-4eee-af90-c9569870a329.png)
   
@@ -116,7 +116,7 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
    
    ![Bluehost-BP-Redelegate-1-3-1](../../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
   
-2. [**行の追加**] を選択します。
+2. [ **行の追加**] を選択します。
     
     ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
@@ -127,9 +127,9 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
 |**3 つ目の空の行** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**4 つ目の空の行** <br/> |ns4.bdm.microsoftonline.com  <br/> |
   
-4. 4番目のネームサーバーレコードを追加するには、[**行の追加**] をもう一度選択し、上記の表の最後の行の値を使用してレコードを作成します。 
+4. 4番目のネームサーバーレコードを追加するには、[ **行の追加** ] をもう一度選択し、上記の表の最後の行の値を使用してレコードを作成します。 
     
-5. [**ネームサーバー設定の保存**] を選択します。
+5. [ **ネームサーバー設定の保存**] を選択します。
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
@@ -154,7 +154,7 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
    
    ![Bluehost-BP-Redelegate-1-3](../../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
   
-3. [**行の追加**] を選択します。
+3. [ **行の追加**] を選択します。
     
     ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
@@ -167,9 +167,9 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
    
    ![Bluehost-BP-Redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
-5. 4番目のネームサーバーレコードを追加するには、[**行の追加**] をもう一度選択し、上記の表の最後の行の値を使用してレコードを作成します。 
+5. 4番目のネームサーバーレコードを追加するには、[ **行の追加** ] をもう一度選択し、上記の表の最後の行の値を使用してレコードを作成します。 
     
-6. [**ネームサーバー設定の保存**] を選択します。
+6. [ **ネームサーバー設定の保存**] を選択します。
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: 'Amazon Web サービス (AWS) で DNS レコードを管理するように Microsoft をセットアップする方法について説明します。 '
-ms.openlocfilehash: 6efe06400652783ffbc6732b5c6327067c5c484c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9f5bfd54020dfb793bbaad9aa8e081e87abc5ce8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400679"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646489"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-amazon-web-services-aws"></a>Amazon Web サービスを使用して Microsoft をセットアップするためにネームサーバーを変更する (AWS)
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.md)** を参照してください。 
   
-Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ[て、すべての MICROSOFT DNS レコードを AWS で管理](create-dns-records-at-aws.md)できます。)
+Microsoft が DNS レコードを管理する場合は、次の手順に従ってください。 (必要に応じ [て、すべての MICROSOFT DNS レコードを AWS で管理](create-dns-records-at-aws.md)できます。)
   
     
 ## <a name="add-a-txt-record-for-verification"></a>確認のための TXT レコードを追加する
@@ -44,7 +44,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**リソース**] ページで、[ **Hosted Zones**] を選択します。
+2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
     
 3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
     
@@ -62,7 +62,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 |**名前** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
 |(このフィールドは空のままにします)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)  <br/>  |Simple <br/> |
    
-6. **[作成]** を選択します。
+6. [**作成**] を選択します。
     
 7. 数分待つと、続行できます。この間、作成したレコードがインターネット全体で更新されます。
     
@@ -87,14 +87,14 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 Microsoft によるドメインの設定を完了するには、ドメインレジストラーでドメインの NS レコードを変更して、Microsoft プライマリネームサーバーとセカンダリネームサーバーをポイントするようにします。 これにより、ドメインの DNS レコードが更新されるように Microsoft が設定されます。 メール、Skype for Business Online、一般向け Web サイトをドメインで利用できるようにすべてのレコードを追加し、すべての設定を完了します。
   
 > [!CAUTION]
-> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*など) は、この変更を行った後に Microsoft に送られ始めます。 
+> ドメインの NS レコードを変更して Microsoft ネームサーバーをポイントすると、現在ドメインに関連付けられているすべてのサービスが影響を受けます。 たとえば、ドメインに送信されるすべての電子メール (rob@ *your_domain*  など) は、この変更を行った後に Microsoft に送られ始めます。 
   
 > [!IMPORTANT]
 >  次の手順では、リストからその他の不要なネームサーバーを削除する方法と、正しいネームサーバーが表示されていない場合には追加する方法について説明します。 > このセクションの手順を完了すると、次の4つのネームサーバーのみが表示されます。 > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
 1. まず、[このリンク](https://console.aws.amazon.com/route53/home)を使って AWS でドメイン ページにアクセスします。 最初にログインするように求められます。
     
-2. [**リソース**] ページで、[ **Hosted Zones**] を選択します。
+2. [ **リソース** ] ページで、[ **Hosted Zones**] を選択します。
     
 3. [ **Hosted Zones** ] ページの [ **domain Name** ] 列で、編集するドメインの名前を選択します。 
     
@@ -120,8 +120,8 @@ Microsoft によるドメインの設定を完了するには、ドメインレ�
   
 |||
 |:-----|:-----|
-|**第 1 行** <br/> |ns1.bdm.microsoftonline.com。  <br/> **This value MUST end with a period (.)** <br/> |
-|**第 2 行** <br/> |ns2.bdm.microsoftonline.com。  <br/> **This value MUST end with a period (.)** <br/> |
+|**第 1 行** <br/> |ns1.bdm.microsoftonline.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+|**第 2 行** <br/> |ns2.bdm.microsoftonline.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
 |**第 3 行** <br/> |ns3.bdm.microsoftonline.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
 |**第 4 行** <br/> |ns4.bdm.microsoftonline.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
    

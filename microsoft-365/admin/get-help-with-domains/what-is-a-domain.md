@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ description: ドメインとは何か、ドメインを購入する方法、ま�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9104c77218c483b61c57a38e37e8e2661db1aa15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399862"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645121"
 ---
 # <a name="what-is-a-domain"></a>ドメインとは
 
@@ -45,7 +45,7 @@ Microsoft 365 を使用して新しいドメインを購入する-すべてが�
   
  **既に所有しているドメインを使用する:**
   
-You@yourcompany のようなドメインを既に所有している場合 *。 <span>com*これを追加して OneDrive や Microsoft アプリをすぐに使用することができます。 メールと Skype for Business はわずか数分でセットアップできます。 
+You@yourcompany のようなドメインを既に所有している場合  *。 <span>com*  これを追加して OneDrive や Microsoft アプリをすぐに使用することができます。 メールと Skype for Business はわずか数分でセットアップできます。 
   
 > [!TIP]
 > ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)
@@ -56,6 +56,6 @@ You@yourcompany のようなドメインを既に所有している場合 *。 <
   
 ## <a name="feeling-stuck"></a>困ったときは
 
-Microsoft サポートに連絡[する-ドメインの設定に関するヘルプを取得する](../contact-support-for-business-products.md)
+Microsoft サポートに連絡 [する-ドメインの設定に関するヘルプを取得する](../contact-support-for-business-products.md)
   
 

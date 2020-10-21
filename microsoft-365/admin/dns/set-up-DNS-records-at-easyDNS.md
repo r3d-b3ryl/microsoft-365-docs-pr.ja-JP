@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: ドメインを確認し、電子メール、Skype for Business Online、および easyDNS のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400234"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645553"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>Microsoft の easyDNS で DNS レコードを作成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "44400234"
 
 1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
-2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
+2. [ **すべてのドメイン** ] 見出しの下で、[dns] を選択し **ます。**
     
 3. [ **TXT records** ] の見出しの下で、編集ボタン (レンチアイコン) を選択します。 
     
@@ -49,9 +49,9 @@ ms.locfileid: "44400234"
     |:-----|:-----|
     |@  <br/> |MS: msXXXXXXXX (管理センターの [ドメイン] ページでユーザーに提供された値を使用します)  <br/> |
    
-5. [**次へ**] を選択します。 
+5. [ **次へ**] を選択します。 
     
-6. レコードが正しいことを確認してから、[**確認**] を選択してください。 
+6. レコードが正しいことを確認してから、[ **確認**] を選択してください。 
     
 7. 数分待ってから続行すると、作成したレコードがインターネット経由で伝達され、Microsoft によって検出されるようになります。
     
@@ -61,7 +61,7 @@ ms.locfileid: "44400234"
     
 10. **[ドメイン]** ページで、確認するドメインを選択します。 
     
-11. [**セットアップ**] ページで、[セットアップの開始] を選択し**ます。**
+11. [ **セットアップ** ] ページで、[セットアップの開始] を選択し **ます。**
     
 12. **[ドメインの確認]** ページで、**[確認]** を選択します。 
     
@@ -69,7 +69,7 @@ ms.locfileid: "44400234"
 
 1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
-2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
+2. [ **すべてのドメイン** ] 見出しの下で、[dns] を選択し **ます。**
     
 3. [ **MX records** ] の見出しの下で、編集ボタン (レンチアイコン) を選択します。 
     
@@ -81,15 +81,15 @@ ms.locfileid: "44400234"
    
 2. バックアップのために他の MX レコードを保存する場合は、その MX レコードを任意の場所にコピーします。 に進む前に、ここで他のすべての MX レコードを削除します。
     
-5. [**次へ**] を選択します。 
+5. [ **次へ**] を選択します。 
     
-6. レコードが正しいことを確認してから、[**確認**] を選択してください。 
+6. レコードが正しいことを確認してから、[ **確認**] を選択してください。 
     
 ## <a name="add-the-required-cname-records"></a>必要な CNAME レコードを追加する
 
 1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
-2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
+2. [ **すべてのドメイン** ] 見出しの下で、[dns] を選択し **ます。**
     
 3. [ **CNAME/Alias records** ] の見出しで、編集ボタン (レンチアイコン) を選択します。 
     
@@ -98,21 +98,21 @@ ms.locfileid: "44400234"
 
     |**ホスト**|**Address (末尾に "." を指定する必要があります)**|
     |:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com。  <br/> |
-    |sip  <br/> |sipdir.online.lync.com。  <br/> |
-    |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> |
-    |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> |
-    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> |
+    |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |
+    |sip  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> |
+    |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |
    
-5. [**次へ**] を選択します。 
+5. [ **次へ**] を選択します。 
     
-6. レコードが正しいことを確認してから、[**確認**] を選択してください。 
+6. レコードが正しいことを確認してから、[ **確認**] を選択してください。 
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>迷惑メールの防止に役立つ、SPF の TXT レコードを追加する
 
 1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
-2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
+2. [ **すべてのドメイン** ] 見出しの下で、[dns] を選択し **ます。**
     
 3. [ **TXT records** ] の見出しの下で、編集ボタン (レンチアイコン) を選択します。 
     
@@ -122,9 +122,9 @@ ms.locfileid: "44400234"
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
-5. [**次へ**] を選択します。 
+5. [ **次へ**] を選択します。 
     
-6. レコードが正しいことを確認してから、[**確認**] を選択してください。 
+6. レコードが正しいことを確認してから、[ **確認**] を選択してください。 
     
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Microsoft で必要な 2 つの SRV レコードを追加する
 
@@ -132,7 +132,7 @@ ms.locfileid: "44400234"
   
 1. に移動 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) して、資格情報でログインします。 
     
-2. [**すべてのドメイン**] 見出しの下で、[dns] を選択し**ます。**
+2. [ **すべてのドメイン** ] 見出しの下で、[dns] を選択し **ます。**
     
 3. [ **SRV records** ] の見出しの下で、[編集] ボタン (レンチアイコン) を選択します。 
     
@@ -140,11 +140,11 @@ ms.locfileid: "44400234"
     
     |**サービス**|**MASK**|**ホスト**|**度**|**WGT**|**ポート**|**TARGET (末尾に "." を指定する必要があります)**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |
    
-5. [**次へ**] を選択します。 
+5. [ **次へ**] を選択します。 
     
-6. レコードが正しいことを確認してから、[**確認**] を選択してください。 
+6. レコードが正しいことを確認してから、[ **確認**] を選択してください。 
     
 

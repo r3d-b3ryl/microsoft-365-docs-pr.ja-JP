@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: ドメインを確認し、電子メール、Skype for Business Online、および Dyn.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 91ac642a43ba48845ec79d7d13d4bce6afbb716d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 91dbd3fbde8417764a01eb285b267f3981b2f139
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400499"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646141"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>Microsoft の Dyn.com で DNS レコードを作成する
 
@@ -48,9 +48,9 @@ ms.locfileid: "44400499"
   
 2. [ **Zone Level Services** ] ページで、編集するドメインの [ **Dyn Standard DNS Service** ] を選択します。 
     
-3. ドメインの [ **DNS** ] ページで、[**プレファレンス**] を選択します。
+3. ドメインの [ **DNS** ] ページで、[ **プレファレンス**] を選択します。
     
-4. [**エキスパートインターフェイスを有効にする**] を選択します。
+4. [ **エキスパートインターフェイスを有効にする**] を選択します。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -99,9 +99,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **Zone Level Services** ] ページで、編集するドメインの [ **Dyn Standard DNS Service** ] を選択します。 
     
-3. ドメインの [DNS] ページで、[**プレファレンス**] を選択します。
+3. ドメインの [DNS] ページで、[ **プレファレンス**] を選択します。
     
-4. [**エキスパートインターフェイスを有効にする**] を選択します。
+4. [ **エキスパートインターフェイスを有効にする**] を選択します。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -109,7 +109,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Host**|**TTL**|**Type**|**データ**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10 *\<domain-key\>* mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **10** は MX 優先度の値です。 MX 値の先頭に追加して、スペースで値の残りの部分から区切ってください。  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)      <br>    優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **10** は MX 優先度の値です。 MX 値の先頭に追加して、スペースで値の残りの部分から区切ってください。  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)      <br>    優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
    
     ![Dyn-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
@@ -121,7 +121,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Dyn-BP-Configure-2-3](../../media/f24f02cc-c0b7-42cf-a2ff-4d0fc203e4de.png)
   
-8. [**変更の適用**] を選択します。
+8. [ **変更の適用**] を選択します。
     
     ![Dyn-BP-Configure-2-4](../../media/0cc23c2b-b6f2-4f58-af20-4c6506de7b43.png)
   
@@ -134,9 +134,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **Zone Level Services** ] ページで、編集するドメインの [ **Dyn Standard DNS Service** ] を選択します。 
     
-3. ドメインの [ **DNS** ] ページで、[**プレファレンス**] を選択します。
+3. ドメインの [ **DNS** ] ページで、[ **プレファレンス**] を選択します。
     
-4. [**エキスパートインターフェイスを有効にする**] を選択します。
+4. [ **エキスパートインターフェイスを有効にする**] を選択します。
     
 5. 6 つの CNAME レコードの最初のレコードを追加します。
     
@@ -144,13 +144,13 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [ **Type**] の値を選びます。) 
     
-    |**Host**|**TTL**|**Type**|**Data**|
+    |**Host**|**TTL**|**Type**|**データ**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |600  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |600  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |600  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |autodiscover  <br/> |600  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |sip  <br/> |600  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |lyncdiscover  <br/> |600  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |enterpriseregistration  <br/> |600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
+    |enterpriseenrollment  <br/> |600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> |
    
     ![Dyn-3-1](../../media/1fd80695-d3d7-4298-9ebe-97a69f46f1b2.png)
   
@@ -168,7 +168,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
   
 1. まず、[このリンク](https://account.dyn.com/dns/)を使って Dyn.com でドメイン ページにアクセスします。最初にログインするように求められます。
     
@@ -176,9 +176,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **Zone Level Services** ] ページで、編集するドメインの [ **Dyn Standard DNS Service** ] を選択します。 
     
-3. ドメインの [ **DNS** ] ページで、[**プレファレンス**] を選択します。
+3. ドメインの [ **DNS** ] ページで、[ **プレファレンス**] を選択します。
     
-4. [**エキスパートインターフェイスを有効にする**] を選択します。
+4. [ **エキスパートインターフェイスを有効にする**] を選択します。
     
 5. In the **Add DNS Record** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -203,9 +203,9 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 2. [ **Zone Level Services** ] ページで、編集するドメインの [ **Dyn Standard DNS Service** ] を選択します。 
     
-3. ドメインの [ **DNS** ] ページで、[**プレファレンス**] を選択します。
+3. ドメインの [ **DNS** ] ページで、[ **プレファレンス**] を選択します。
     
-4. [**エキスパートインターフェイスを有効にする**] を選択します。
+4. [ **エキスパートインターフェイスを有効にする**] を選択します。
     
 5. 2 つの SRV レコードの最初のレコードを追加します。
     
@@ -213,10 +213,10 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [ **Type**] の値を選びます。) 
     
-    |**Host**|**TTL**|**Type**|**Data**|
+    |**Host**|**TTL**|**Type**|**データ**|
     |:-----|:-----|:-----|:-----|
-    |_sip _tls|600|SRV|100 1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**<br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
-    |_sipfederationtls _tcp|600|SRV|100 1 5061 sipfed.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |_sip._tls|600|SRV|100 1 443 sipdir.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |_sipfederationtls._tcp|600|SRV|100 1 5061 sipfed.online.lync.com. **この値は、末尾がピリオド (.) でなければなりません**<br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
     ![Dyn-5-1](../../media/a6873411-f4ce-4327-9145-02d435930976.png)
   

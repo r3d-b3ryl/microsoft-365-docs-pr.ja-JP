@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: ドメインを確認し、電子メール、Skype for Business Online、および Names.co.uk のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3a3e68558efc3857d343b3298c3c01f0e8d8802
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400378"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645865"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>Microsoft の Names.co.uk で DNS レコードを作成する
 
@@ -61,11 +61,11 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
         
     |**ホスト名**|**種類**|**結果**|
     |:-----|:-----|:-----|
@@ -75,7 +75,7 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
   
 4. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![NamesUK-BP-検証-1-2](../../media/40e991f9-2209-4210-8762-981cca670d70.png)
   
@@ -117,17 +117,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 3. [ **Add/Modify DNS Zone**] ページの [ **Mail exchange records**] セクションにある新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。 
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
-    |**ホスト名**|**Priority**|**結果**|
+    |**ホスト名**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |(このフィールドは空のままにします。)  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> > [!NOTE]*\<domain-key\>* Microsoft アカウントから> 取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |(このフィールドは空のままにします。)  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]*\<domain-key\>* Microsoft アカウントから> 取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
 4. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![NamesUK-BP-2-2](../../media/01e6c801-daa2-40ca-84f9-dcac6422257c.png)
   
@@ -137,7 +137,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 6. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![NamesUK-BP-2-4](../../media/cd705919-d0bd-408f-82be-b54e732cb05c.png)
   
@@ -156,11 +156,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
     
-    (下へスクロールしなければならないことがあります)。
+    (下へスクロールしなければならないことがあります。)
     
     |**Host Name**|**Type**|**Result**|
     |:-----|:-----|:-----|
@@ -180,7 +180,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。
   
 1. まず、[このリンク](https://account.names.co.uk/dashboard#/)を使って Names.co.uk でドメイン ページにアクセスします。最初にログインするように求められます。
     
@@ -192,17 +192,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![NamesUK-BP-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. [**アカウントの DNS ゾーン**] ページの [**ドメイン名**] 列で、更新するドメインの名前を選択します。 
+3. [ **アカウントの DNS ゾーン** ] ページの [ **ドメイン名** ] 列で、更新するドメインの名前を選択します。 
     
     ![NamesUK-BP-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
 4. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     (行を追加する必要がある場合は、[ **a/CNAME レコードの追加] (+)** を選択します)。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     |**ホスト名**|**種類**|**結果**|
     |:-----|:-----|:-----|
@@ -212,7 +212,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
   
 5. **[保存]** を選択します。
     
-    (You may have to scroll down.)
+    (下へスクロールしなければならないことがあります。)
     
     ![NamesUK-BP-4-2](../../media/b4d445a1-09c0-46c3-8141-672cc2831a9b.png)
   
@@ -233,10 +233,10 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (下へスクロールしなければならないことがあります。)
     
-    |**Name**|**Priority**|**Weight**|**Port**|**結果**|
+    |**Name**|**Priority**|**Weight**|**Port**|**Result**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1-d  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1-d  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   

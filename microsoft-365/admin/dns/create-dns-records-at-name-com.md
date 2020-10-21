@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: ドメインを確認し、電子メール、Skype for Business Online、および name.com のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400402"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645889"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>Microsoft の name.com で DNS レコードを作成する
 
@@ -52,22 +52,22 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**マイドメイン**] の下で、変更するドメインの名前を選択します。
+2. [ **マイドメイン**] の下で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. [**詳細**] 列で、[ **DNS レコード**] を選択します。 
+3. [ **詳細** ] 列で、[ **DNS レコード**] を選択します。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**種類** <br/> |**Host** <br/> |**応答** <br/> |**TTL** <br/> |
-    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
+    |**Type** <br/> |**Host** <br/> |**応答** <br/> |**TTL** <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **注:** これは例です。 この表から **[宛先またはポイント先のアドレス]** の値を指定してください。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |既定値 (300) を使用します。  <br/> |
    
     ![名前-BP-検証-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
@@ -105,21 +105,21 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**マイドメイン**] の下で、変更するドメインの名前を選択します。
+2. [ **マイドメイン**] の下で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. [**詳細**] 列で、[ **DNS レコード**] を選択します。 
+3. [ **詳細** ] 列で、[ **DNS レコード**] を選択します。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    |**種類**|**Host**|**応答**|**TTL**|**優先度**|
+    |**Type**|**Host**|**応答**|**TTL**|**優先度**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*. mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
+    |MX  <br/> |(このフィールドは空のままにします。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注:***\<domain-key\>* Microsoft アカウントからを取得します。           [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |既定値 (300) を使用します。  <br/> |.0  <br/> 優先度の詳細については、「[MX 優先度とは何ですか?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -146,11 +146,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**マイドメイン**] の下で、変更するドメインの名前を選択します。
+2. [ **マイドメイン**] の下で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. [**詳細**] 列で、[ **DNS レコード**] を選択します。 
+3. [ **詳細** ] 列で、[ **DNS レコード**] を選択します。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -160,7 +160,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     (ドロップダウン リストから [ **Type**] の値を選びます。) 
     
-    |**種類**|**Host**|**応答**|**TTL**|
+    |**Type**|**Host**|**応答**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |既定値 (300) を使用します。  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |既定値 (300) を使用します。  <br/> |
@@ -184,25 +184,25 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
   
 1. まず、[このリンク](https://www.name.com/account/domain)を使って name.com でドメイン ページにアクセスします。最初にログインするように求められます。
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**マイドメイン**] の下で、変更するドメインの名前を選択します。
+2. [ **マイドメイン**] の下で、変更するドメインの名前を選択します。
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. [**詳細**] 列で、[ **DNS レコード**] を選択します。 
+3. [ **詳細** ] 列で、[ **DNS レコード**] を選択します。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 新規レコードのボックスに、次の表の値を入力するか、コピーして貼り付けます。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (ドロップダウン リストから [**Type**] の値を選びます。) 
     
-    |**種類**|**Host**|**応答**|**TTL**|
+    |**Type**|**Host**|**応答**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |Use the default value (300).  <br/> |
    
@@ -219,11 +219,11 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. [**マイドメイン**] の下で、変更するドメインの名前を選択します。
+2. [ **マイドメイン**] の下で、変更するドメインの名前を選択します。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. [**詳細**] 列で、[ **DNS レコード +**] を選択します。 
+3. [ **詳細** ] 列で、[ **DNS レコード +**] を選択します。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -235,8 +235,8 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Type**|**サービス**|**加重**|**TTL**|**優先度**|**プロトコル**|**ポート**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |既定値 (300) を使用します。|100|tls|443|sipdir.online.lync.com <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
-    |SRV|sipfederationtls|1 |既定値 (300) を使用します。|100|tcp|5061|sipfed.online.lync.com <br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |SRV|sip|1-d|既定値 (300) を使用します。|100|tls|443|sipdir.online.lync.com <br> **注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
+    |SRV|sipfederationtls|1-d|既定値 (300) を使用します。|100|tcp|5061|sipfed.online.lync.com <br>**注:** スペースも正しく入力されるように、この値をコピーして貼り付けることをお勧めします。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

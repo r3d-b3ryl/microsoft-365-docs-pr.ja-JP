@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: ドメインを確認し、電子メール、Skype for Business Online、および123-reg.co.uk のその他のサービスの DNS レコードを Microsoft 用にセットアップする方法について説明します。
-ms.openlocfilehash: 51542e1f00153a87ca06ec540d391de6ca621bab
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c7a6db51bd1c2b2af06a1dde8c317850db0d9e35
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307033"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646362"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>Microsoft の123-reg.co.uk で DNS レコードを作成する
 
@@ -102,7 +102,7 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  . mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから**取得\<domain-key\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1-d  <br/> 優先度の詳細については、「[MX 優先度とは何か](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)」を参照してください。 <br/> | *\<domain-key\>*  . mail.protection.outlook.com。  <br/> **この値は、末尾がピリオド (.) でなければなりません** <br/> **注: Microsoft アカウントから**取得\<domain-key\> します。 [確認する方法](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![テーブルの値をコピーして貼り付ける](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   

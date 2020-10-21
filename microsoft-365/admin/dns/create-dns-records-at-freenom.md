@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: ドメインを確認し、電子メール、Skype for Business Online、および Microsoft の Freenom の他のサービスの DNS レコードを設定する方法について説明します。
-ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2fc2407193d41d6e0526aacad0b2b558f1b21bdb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400475"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646189"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>Microsoft の Freenom で DNS レコードを作成する
 
@@ -49,15 +49,15 @@ Microsoft のドメインを使うには、ドメインを所有しているこ�
 > [!NOTE]
 > このレコードは、ドメインを所有していることを確認するためだけに使用されます。その他には影響しません。 必要に応じて、後で削除することができます。 
   
-1. まず、[このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
+1. まず、 [このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. [**サービス**] を選択し、[**マイドメイン**] を選択します。
+2. [ **サービス**] を選択し、[ **マイドメイン**] を選択します。
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 編集するドメインの場合は、[ドメインの**管理**] を選択します。
+3. 編集するドメインの場合は、[ドメインの **管理**] を選択します。
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
@@ -108,23 +108,23 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>MX レコードを追加して、自分のドメインのメールが Microsoft に届くようにする
 <a name="bkmk_mx"> </a>
 
-1. まず、[このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
+1. まず、 [このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. [**サービス**] を選択し、[**マイドメイン**] を選択します。
+2. [ **サービス**] を選択し、[ **マイドメイン**] を選択します。
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 編集するドメインの場合は、[ドメインの**管理**] を選択します。
+3. 編集するドメインの場合は、[ドメインの **管理**] を選択します。
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. ドメインの名前機能を既定の Freenom ネームサーバーに設定します。 [**管理ツール**] を選択し、[**ネーム**サーバー] を選択します。
+4. ドメインの名前機能を既定の Freenom ネームサーバーに設定します。 [ **管理ツール**] を選択し、[ **ネーム**サーバー] を選択します。
     
     ![Freenom Nameservers setting](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
-5. [既定のネームサーバーを**使用する**] が選択されていることを確認し、[ネームサーバーの**変更**] を選択します
+5. [既定のネームサーバーを **使用する** ] が選択されていることを確認し、[ネームサーバーの **変更**] を選択します
     
     ![Freenom Change Nameservers](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
@@ -148,20 +148,20 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
     
     ![Freenom MX record Save Changes](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
-10. その他の MX レコードがある場合は、すべてを削除します。 レコードごとに [**削除**] を選択します。 メッセージを**本当に削除したい場合は**、[ **OK**] を選択します。
+10. その他の MX レコードがある場合は、すべてを削除します。 レコードごとに [ **削除**] を選択します。 メッセージを **本当に削除したい場合は** 、[ **OK**] を選択します。
     
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Microsoft に必要な CNAME レコードを追加する
 <a name="bkmk_cname"> </a>
 
-1. まず、[このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
+1. まず、 [このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. [**サービス**] を選択し、[**マイドメイン**] を選択します。
+2. [ **サービス**] を選択し、[ **マイドメイン**] を選択します。
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 編集するドメインの場合は、[ドメインの**管理**] を選択します。
+3. 編集するドメインの場合は、[ドメインの **管理**] を選択します。
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
@@ -197,17 +197,17 @@ Microsoft で正しい TXT レコードが見つかった場合、ドメイン�
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む*1 つ*の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
+> 1 つのドメインで、SPF に複数の TXT レコードを設定することはできません。 1 つのドメインに複数の SPF レコードがあると、メール、配信の分類、迷惑メールの分類で問題が発生することがあります。 使用しているドメインに既に SPF レコードがある場合は、Microsoft 用に新しいレコードを作成しないでください。 代わりに、値のセットを含む  *1 つ*  の SPF レコードがあるように、現在のレコードに必要な Microsoft の値を追加します。 
 
-1. まず、[このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
+1. まず、 [このリンク](https://my.freenom.com/)を使って Freenom のドメインページにアクセスします。 ログインするように求められます。
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. [**サービス**] を選択し、[**マイドメイン**] を選択します。
+2. [ **サービス**] を選択し、[ **マイドメイン**] を選択します。
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 編集するドメインの場合は、[ドメインの**管理**] を選択します。
+3. 編集するドメインの場合は、[ドメインの **管理**] を選択します。
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
