@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,25 +20,25 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: '職場または学校のメールを使用して、IT 部門を伴わずに Microsoft online services にサインアップする方法について説明します。 '
-ms.openlocfilehash: c602ba52e3cca1b031e2e772355a84c06b779b5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399268"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644869"
 ---
-# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a><span data-ttu-id="2ee9b-103">ドメインは、他のユーザーがサインアップした場合に使用されている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="2ee9b-103">Your domain may be in use if someone else signed up with it</span></span>
+# <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a><span data-ttu-id="60091-103">ドメインは、他のユーザーがサインアップした場合に使用されている可能性があります。</span><span class="sxs-lookup"><span data-stu-id="60091-103">Your domain may be in use if someone else signed up with it</span></span>
 
-<span data-ttu-id="2ee9b-p101">仕事用または学校のメールを使用するユーザーは、IT 部門に対応を依頼しなくても、[一部の Microsoft Online Services にサインアップ](self-service-sign-up.md)できます。 使用できるのは、Office 365、Power BI、Rights Management Services などのサービスです。 セルフサービス サインアップ (仕事用または学校のメール アドレスで登録します) を完了すると、サービスで提供される機能を利用できるようになります。ただし、(ユーザーの追加、ライセンスの追加、ドメインの管理など) サービスの管理はできません。</span><span class="sxs-lookup"><span data-stu-id="2ee9b-p101">Users with a work or school email can [sign up for some Microsoft online services](self-service-sign-up.md) without involving their IT department. For example, services like Office 365, Power BI, and Rights Management Services. By completing self-service signup, which they do by providing their work or school email address, they have access to functionality included in the service but they can't administer the service (add users, add licenses, manage the domain, and so on).</span></span> 
+<span data-ttu-id="60091-p101">仕事用または学校のメールを使用するユーザーは、IT 部門に対応を依頼しなくても、[一部の Microsoft Online Services にサインアップ](self-service-sign-up.md)できます。 使用できるのは、Office 365、Power BI、Rights Management Services などのサービスです。 セルフサービス サインアップ (仕事用または学校のメール アドレスで登録します) を完了すると、サービスで提供される機能を利用できるようになります。ただし、(ユーザーの追加、ライセンスの追加、ドメインの管理など) サービスの管理はできません。</span><span class="sxs-lookup"><span data-stu-id="60091-p101">Users with a work or school email can [sign up for some Microsoft online services](self-service-sign-up.md) without involving their IT department. For example, services like Office 365, Power BI, and Rights Management Services. By completing self-service signup, which they do by providing their work or school email address, they have access to functionality included in the service but they can't administer the service (add users, add licenses, manage the domain, and so on).</span></span> 
   
-<span data-ttu-id="2ee9b-p102">環境を管理したいときは、資格のある管理者であれば、[アカウントを制御](become-the-admin.md)できます。 セルフサービス サインアップは、ユーザーがサインアップに使用した仕事や学校のメール アドレスに含まれているドメインを所有していることを確認して登録を行います。場合によっては、サービスのライセンスを購入することもあります。</span><span class="sxs-lookup"><span data-stu-id="2ee9b-p102">To get the ability to administer the environment, an eligible admin can [take over control of the account](become-the-admin.md). They do this by verifying that they own the domain that was included in the work or school email addresses people used when they signed up and, in some cases, buying licenses for the service.</span></span>
+<span data-ttu-id="60091-p102">環境を管理したいときは、資格のある管理者であれば、[アカウントを制御](become-the-admin.md)できます。 セルフサービス サインアップは、ユーザーがサインアップに使用した仕事や学校のメール アドレスに含まれているドメインを所有していることを確認して登録を行います。場合によっては、サービスのライセンスを購入することもあります。</span><span class="sxs-lookup"><span data-stu-id="60091-p102">To get the ability to administer the environment, an eligible admin can [take over control of the account](become-the-admin.md). They do this by verifying that they own the domain that was included in the work or school email addresses people used when they signed up and, in some cases, buying licenses for the service.</span></span>
   
-## <a name="how-does-the-self-service-signup-work"></a><span data-ttu-id="2ee9b-109">セルフサービス サインアップの仕組み</span><span class="sxs-lookup"><span data-stu-id="2ee9b-109">How does the self-service signup work?</span></span>
+## <a name="how-does-the-self-service-signup-work"></a><span data-ttu-id="60091-109">セルフサービス サインアップの仕組み</span><span class="sxs-lookup"><span data-stu-id="60091-109">How does the self-service signup work?</span></span>
 
- <span data-ttu-id="2ee9b-110">ある人が、sato@contoso.com のような仕事または学校で使用するメール アドレスを使ってサインアップを行った場合、そのメール アドレスのドメイン部分 (この例では、contoso.com) が Office 365 ドメイン名として使われます。</span><span class="sxs-lookup"><span data-stu-id="2ee9b-110">When someone signs up using a work or school-related email address, such as sara@contoso.com, the domain portion of that email address (contoso.com, in this example) is used as their Office 365 domain name.</span></span> 
+ <span data-ttu-id="60091-110">ある人が、sato@contoso.com のような仕事または学校で使用するメール アドレスを使ってサインアップを行った場合、そのメール アドレスのドメイン部分 (この例では、contoso.com) が Office 365 ドメイン名として使われます。</span><span class="sxs-lookup"><span data-stu-id="60091-110">When someone signs up using a work or school-related email address, such as sara@contoso.com, the domain portion of that email address (contoso.com, in this example) is used as their Office 365 domain name.</span></span> 
   
-<span data-ttu-id="2ee9b-111">同じドメインのメール アドレスでサインアップしたユーザーはすべて (たとえば、ota@contoso.com など) 同じアカウントに追加されます。</span><span class="sxs-lookup"><span data-stu-id="2ee9b-111">All other users who sign up with an email address on that same domain (say, rob@contoso.com) are added to the same account.</span></span>
+<span data-ttu-id="60091-111">同じドメインのメール アドレスでサインアップしたユーザーはすべて (たとえば、ota@contoso.com など) 同じアカウントに追加されます。</span><span class="sxs-lookup"><span data-stu-id="60091-111">All other users who sign up with an email address on that same domain (say, rob@contoso.com) are added to the same account.</span></span>
   
-<span data-ttu-id="2ee9b-p103">この場合、佐藤さんも太田さんもサインアップしたサービスを使用できますが、サービスの管理はできません。 たとえば、ライセンスを追加で購入したり、新規ユーザーの追加、別のユーザーへのポリシーの適用といったことはできません。</span><span class="sxs-lookup"><span data-stu-id="2ee9b-p103">Both Sara and Rob can use the service they signed up for, but they can't manage the service. For example, they can't purchase more licenses, add new users, or enforce policies on other users.</span></span>
+<span data-ttu-id="60091-p103">この場合、佐藤さんも太田さんもサインアップしたサービスを使用できますが、サービスの管理はできません。 たとえば、ライセンスを追加で購入したり、新規ユーザーの追加、別のユーザーへのポリシーの適用といったことはできません。</span><span class="sxs-lookup"><span data-stu-id="60091-p103">Both Sara and Rob can use the service they signed up for, but they can't manage the service. For example, they can't purchase more licenses, add new users, or enforce policies on other users.</span></span>
   
 
