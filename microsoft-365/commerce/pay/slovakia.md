@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,24 +13,24 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8d2f02bd3cc52e07df4993b3edbbef2c24a26132
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6f020052fe450920ddb9a3b790bdda25fdb18f45
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403736"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648577"
 ---
-# <a name="payment-information-for-slovakia"></a><span data-ttu-id="5d277-103">スロバキアの支払い情報</span><span class="sxs-lookup"><span data-stu-id="5d277-103">Payment information for Slovakia</span></span>
+# <a name="payment-information-for-slovakia"></a><span data-ttu-id="69cbf-103">スロバキアの支払い情報</span><span class="sxs-lookup"><span data-stu-id="69cbf-103">Payment information for Slovakia</span></span>
 
-<span data-ttu-id="5d277-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="5d277-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="69cbf-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="69cbf-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="5d277-105">EUR のみに支払い、請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="5d277-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="69cbf-105">EUR のみに支払い、請求書番号を参照してください。</span><span class="sxs-lookup"><span data-stu-id="69cbf-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="5d277-106">電子資金移動</span><span class="sxs-lookup"><span data-stu-id="5d277-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="69cbf-106">電子資金移動</span><span class="sxs-lookup"><span data-stu-id="69cbf-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="5d277-107">**Bank:** Citibank、London</span><span class="sxs-lookup"><span data-stu-id="5d277-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="5d277-108">**SWIFT コード/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="5d277-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="5d277-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="5d277-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="5d277-110">**並べ替えコード:** 185008</span><span class="sxs-lookup"><span data-stu-id="5d277-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="5d277-111">**アカウント番号:** 12207591</span><span class="sxs-lookup"><span data-stu-id="5d277-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="5d277-112">**アカウント名:** 製</span><span class="sxs-lookup"><span data-stu-id="5d277-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="69cbf-107">**Bank:** Citibank、London</span><span class="sxs-lookup"><span data-stu-id="69cbf-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="69cbf-108">**SWIFT コード/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="69cbf-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="69cbf-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="69cbf-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="69cbf-110">**並べ替えコード:** 185008</span><span class="sxs-lookup"><span data-stu-id="69cbf-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="69cbf-111">**アカウント番号:** 12207591</span><span class="sxs-lookup"><span data-stu-id="69cbf-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="69cbf-112">**アカウント名:** 製</span><span class="sxs-lookup"><span data-stu-id="69cbf-112">**Account Name:** MICROSOFT</span></span>

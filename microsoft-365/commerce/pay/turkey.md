@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,23 +13,23 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: サブスクリプションを支払う送金先について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: dae4ac2290e63500d642738339ed279533df16c5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ded6bbd9603f1faab9c1ca6339e9cbeea50e6ed1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400788"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648277"
 ---
-# <a name="payment-information-for-turkey"></a><span data-ttu-id="f9a4f-103">トルコの支払い情報</span><span class="sxs-lookup"><span data-stu-id="f9a4f-103">Payment information for Turkey</span></span>
+# <a name="payment-information-for-turkey"></a><span data-ttu-id="69ad6-103">トルコの支払い情報</span><span class="sxs-lookup"><span data-stu-id="69ad6-103">Payment information for Turkey</span></span>
 
-<span data-ttu-id="f9a4f-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="f9a4f-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="69ad6-104">[別の国または地域を検索します](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="69ad6-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="f9a4f-105">支払いについては、「TRY only」と「請求書番号を参照してください」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="f9a4f-105">Please pay in TRY only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="69ad6-105">支払いについては、「TRY only」と「請求書番号を参照してください」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="69ad6-105">Please pay in TRY only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="f9a4f-106">電子資金移動</span><span class="sxs-lookup"><span data-stu-id="f9a4f-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="69ad6-106">電子資金移動</span><span class="sxs-lookup"><span data-stu-id="69ad6-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="f9a4f-107">**Bank:** Citibank A.S.、イスタンブール</span><span class="sxs-lookup"><span data-stu-id="f9a4f-107">**Bank:** Citibank A.S., Istanbul</span></span>  
-<span data-ttu-id="f9a4f-108">**SWIFT コード:** CITITRIX</span><span class="sxs-lookup"><span data-stu-id="f9a4f-108">**SWIFT Code:** CITITRIX</span></span>  
-<span data-ttu-id="f9a4f-109">**IBAN:** TR420009200000000092407039</span><span class="sxs-lookup"><span data-stu-id="f9a4f-109">**IBAN:** TR420009200000000092407039</span></span>  
-<span data-ttu-id="f9a4f-110">**アカウント番号:** 92407039</span><span class="sxs-lookup"><span data-stu-id="f9a4f-110">**Account Number:** 92407039</span></span>  
-<span data-ttu-id="f9a4f-111">**アカウント名:** Microsoft の支払い</span><span class="sxs-lookup"><span data-stu-id="f9a4f-111">**Account Name:** Microsoft Payments</span></span>  
+<span data-ttu-id="69ad6-107">**Bank:** Citibank A.S.、イスタンブール</span><span class="sxs-lookup"><span data-stu-id="69ad6-107">**Bank:** Citibank A.S., Istanbul</span></span>  
+<span data-ttu-id="69ad6-108">**SWIFT コード:** CITITRIX</span><span class="sxs-lookup"><span data-stu-id="69ad6-108">**SWIFT Code:** CITITRIX</span></span>  
+<span data-ttu-id="69ad6-109">**IBAN:** TR420009200000000092407039</span><span class="sxs-lookup"><span data-stu-id="69ad6-109">**IBAN:** TR420009200000000092407039</span></span>  
+<span data-ttu-id="69ad6-110">**アカウント番号:** 92407039</span><span class="sxs-lookup"><span data-stu-id="69ad6-110">**Account Number:** 92407039</span></span>  
+<span data-ttu-id="69ad6-111">**アカウント名:** Microsoft の支払い</span><span class="sxs-lookup"><span data-stu-id="69ad6-111">**Account Name:** Microsoft Payments</span></span>  
