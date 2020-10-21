@@ -1,5 +1,5 @@
 ---
-title: 特定のグループに対してゲスト ユーザーをブロックする
+title: ゲストユーザーを特定のグループに追加できないようにする
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,21 +14,23 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 特定のグループに対してゲスト ユーザーをブロックする
-ms.openlocfilehash: 17e5f8f9ab4107a12a0607dca3795d54b7be012c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: ゲストユーザーが特定のグループに追加されないようにする方法について説明します。
+ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377314"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651352"
 ---
-# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>特定の Microsoft 365 グループまたは Microsoft Teams チームからゲストユーザーをブロックする
+# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>ゲストユーザーが特定の Microsoft 365 グループまたは Microsoft Teams チームに追加されないようにする
 
-ほとんどのグループおよびチームへのゲストアクセスを許可するが、ゲストアクセスを禁止する場所がある場合は、個々のグループおよびチームのゲストアクセスをブロックすることができます。 (チームへのゲストアクセスをブロックするには、関連するグループへのゲストアクセスをブロックすることによって行います)。
+ほとんどのグループおよびチームへのゲストアクセスを許可するが、ゲストアクセスを禁止する場所がある場合は、個々のグループおよびチームのゲストアクセスをブロックすることができます。 (チームへのゲストアクセスをブロックするには、関連するグループへのゲストアクセスをブロックすることによって行います)。これにより、新しいゲストは追加されませんが、グループまたはチームに既に存在するゲストは削除されません。
 
 組織で機密ラベルを使用する場合は、グループごとのゲストアクセスを制御するためにそれらを使用することをお勧めします。 これを行う方法については、「 [機密ラベルを使用して Microsoft Teams、microsoft 365 グループ、および SharePoint サイトのコンテンツを保護する](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)」を参照してください。 これが推奨アプローチです。
 
-Microsoft PowerShell を使用して個々のグループへのゲストアクセスをブロックすることもできます。
+## <a name="change-group-settings-using-microsoft-powershell"></a>Microsoft PowerShell を使用してグループ設定を変更する
+
+PowerShell を使用して、個々のグループに新しいゲストを追加することを禁止することもできます。
 
 グループレベルのゲストアクセス設定を変更するには、 [Graph 用の Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (モジュール名 **AzureADPreview**) のプレビューバージョンを使用する必要があります。
 

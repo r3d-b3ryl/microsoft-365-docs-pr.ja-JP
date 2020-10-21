@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,61 +23,61 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認して、Microsoft 365 for business サブスクリプションを手動で切り替えます。
-ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3712f01502362e68d05e6a2eadfcac588f6092b7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403200"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647761"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>Microsoft 365 for business プランを手動で切り替える
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> この記事は、古い管理センターに適用されます。 新しい管理センターに関する記事を表示するには、「[プランを手動で変更](change-plans-manually.md)する」を参照してください。 新しい管理センターは、Microsoft 365 のすべての管理者が利用でき、ホームページの上部にある [**新しい管理センター**の切り替え] を選択して選択することができます。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
+> この記事は、古い管理センターに適用されます。 新しい管理センターに関する記事を表示するには、「 [プランを手動で変更](change-plans-manually.md)する」を参照してください。 新しい管理センターは、Microsoft 365 のすべての管理者が利用でき、ホームページの上部にある [ **新しい管理センター** の切り替え] を選択して選択することができます。 詳細については、「[新しい Microsoft 365 管理センターについて](../../admin/microsoft-365-admin-center-preview.md)」を参照してください。
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>手順 1: プランを切り替える方法を決定する
 
-すべてのユーザーを1つのプランから別のプランに切り替えるには、[[プランの切り替え] ボタン](switch-to-a-different-plan.md#use-the-switch-plans-button)を使用するのが最善の方法です。 この方法は使用できない場合があります。 代わりに、手動で切り替えます。
+すべてのユーザーを1つのプランから別のプランに切り替えるには、[ [プランの切り替え] ボタン](switch-to-a-different-plan.md#use-the-switch-plans-button)を使用するのが最善の方法です。 この方法は使用できない場合があります。 代わりに、手動で切り替えます。
   
 - [ **プランの切り替え**] ボタンがない。
 
-- [**プランの切り替え**] ボタンを選択すると、必要なプランが一覧に表示されません。
+- [ **プランの切り替え** ] ボタンを選択すると、必要なプランが一覧に表示されません。
 
 - すべてのユーザーを同じ方法で切り替えたくない場合。 一部の企業では、さまざまなユーザーを異なるプランに加入させる必要があります。 このためには、手動で切り替えます。
 
-手動スイッチを続行するには、このトピックの「[手順 2: 新しいサブスクリプションを購入](#step-2-buy-a-new-subscription)する」を参照してください。
+手動スイッチを続行するには、このトピックの「 [手順 2: 新しいサブスクリプションを購入](#step-2-buy-a-new-subscription) する」を参照してください。
   
 ## <a name="step-2-buy-a-new-subscription"></a>手順 2: 新しいサブスクリプションを購入する
 
- **購入済みですか?** ユーザーを移動するサブスクリプションが既にある場合は、この手順を省略して、このトピックの「[新しいサブスクリプションとライセンスを確認](#step-3-check-your-new-subscription-and-licenses)する」に進みます。
+ **購入済みですか?** ユーザーを移動するサブスクリプションが既にある場合は、この手順を省略して、このトピックの「 [新しいサブスクリプションとライセンスを確認](#step-3-check-your-new-subscription-and-licenses) する」に進みます。
   
 - または
   
- **新しいサブスクリプションとライセンスを購入します。**「[別の Microsoft 365 for business サブスクリプションを購入](../buy-another-subscription.md)する」の手順に従って、新しいサブスクリプションを購入します。
+ **新しいサブスクリプションとライセンスを購入します。** 「 [別の Microsoft 365 for business サブスクリプションを購入](../buy-another-subscription.md) する」の手順に従って、新しいサブスクリプションを購入します。
   
 必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動するユーザーの電子メールアドレスを確認します。 そのメール アドレスに @contoso.com が含まれている場合、contoso.com の新しいサブスクリプションを購入する必要があります。 移動する各ユーザーのライセンスを含めます。
   
- **プランの選択についてサポートが必要な場合**は、 [Microsoft 365 for business 製品の比較](https://go.microsoft.com/fwlink/p/?linkid=842056)ページ、またはサポートへのお[問い合わせ](../../admin/contact-support-for-business-products.md)を参照してください。
+ **プランの選択についてサポートが必要な場合**は、 [Microsoft 365 for business 製品の比較](https://go.microsoft.com/fwlink/p/?linkid=842056) ページ、またはサポートへのお [問い合わせ](../../admin/contact-support-for-business-products.md)を参照してください。
   
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>手順 3: 新しいサブスクリプションとライセンスを確認する
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
 ::: moniker-end
 
@@ -89,7 +89,7 @@ ms.locfileid: "44403200"
 
     各ユーザーには、サブスクリプションと一致するライセンスが必要です。 そのため、10人のユーザーを Microsoft 365 Business Premium に移行する場合は、10個のライセンスが利用可能であることを確認する必要があります。 
 
-4. **新しいサブスクリプションのライセンスがさらに必要ですか?** [**サブスクリプション**] ページに移動し、 [Microsoft 365 for business サブスクリプションのライセンスを購入](../licenses/buy-licenses.md)します。
+4. **新しいサブスクリプションのライセンスがさらに必要ですか?** [ **サブスクリプション** ] ページに移動し、 [Microsoft 365 for business サブスクリプションのライセンスを購入](../licenses/buy-licenses.md)します。
   
     [古いライセンスの処理](#what-about-the-old-licenses)」を参照してください。
 
@@ -99,7 +99,7 @@ ms.locfileid: "44403200"
 
 - **2 つのサブスクリプションを購入し、両方とも一覧に表示されない場合** 、異なる組織 (異なるドメイン) 用に購入した可能性があります。サブスクリプションは組織の境界を超えることはできません。
 
-- **追加のサブスクリプションがあることがわかっ**ており、ここにリストされていない場合、または [**アクティブ**] の下にリストされていない場合は、[サポート] を[呼び出し](../../admin/contact-support-for-business-products.md)ます。
+- **追加のサブスクリプションがあることがわかっ**ており、ここにリストされていない場合、または [ **アクティブ**] の下にリストされていない場合は、[サポート] を [呼び出し](../../admin/contact-support-for-business-products.md)ます。
 
 ### <a name="what-about-the-old-licenses"></a>古いライセンスの処理
 
@@ -111,32 +111,32 @@ ms.locfileid: "44403200"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] > [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
 2. [ **アクティブなユーザー**] ページで、ライセンスを割り当てるユーザーの名前の横にあるボックスをオンにします。
 
-3. 右側の [**製品ライセンス**] 行で、[**編集**] を選択します。
+3. 右側の [ **製品ライセンス** ] 行で、[ **編集**] を選択します。
 
 4. [ **製品のライセンス**] ウィンドウで、このユーザーに割り当てるライセンスを [ **オン**] の位置に切り替えます。既定では、そのライセンスに関連付けられているすべてのサービスがユーザーに自動的に割り当てられます。
 
     > [!TIP]
     > ユーザーが使用できるサービスを制限するには、そのユーザーで削除するサービスを [ **オフ**] の位置に切り替えます。たとえば、Skype for Business Online 以外のすべてのサービスにユーザーがアクセスできるようにするには、Skype for Business Online サービスを [ **オフ**] の位置に切り替えます。
   
-5. このユーザーが不要になったライセンスを**オフ**の位置に切り替えます。
+5. このユーザーが不要になったライセンスを **オフ** の位置に切り替えます。
 
 6. [**製品ライセンス**] ウィンドウの下部で、[クローズクローズを**割り当てる**] を選択し \> **Close** \> **Close**ます。
 
@@ -144,19 +144,19 @@ ms.locfileid: "44403200"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**ユーザー**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a> ] ページに移動します。
+1. 管理センターで、[ **ユーザー**の \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a> ] ページに移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> ページの順に移動します。
 
 ::: moniker-end
 
