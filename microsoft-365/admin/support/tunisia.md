@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 256656e33438f7d90546fccb1aaef20cce526e38
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b5b82f1df6a794fac78332eb4b16b6dbcfa14aef
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401848"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639109"
 ---
 # <a name="contact-support-for-tunisia"></a>チュニジアのサポートに問い合わせる
 
@@ -36,17 +36,17 @@ ms.locfileid: "44401848"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-アラビア語: Thu 9 AM-5 PM
+アラビア語: 午前9時から午後5時 Sun-Thu
 
-フランス語: 月曜日から金曜日 (午前9時 ~ 午後5時)
+フランス語: 午前9時から午後5時 Mon-Fri
 
-英語: 月曜日から金曜日9時午前5時
+英語: 午前9時 Mon-Fri 午後5時
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-アラビア語: Thu 9 AM-5 PM
+アラビア語: 午前9時から午後5時 Sun-Thu
 
-フランス語: 月曜日から金曜日の午前8時9時
+フランス語: 午前8時から午後9時 Mon-Fri
 
 英語: 24 時間年中無休
 

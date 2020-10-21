@@ -1,10 +1,10 @@
 ---
-title: Leste のサポート情報
+title: Timor-Leste のサポート情報
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,14 +13,14 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1a0db9a54188fefe107c526e1b2ba821b8207527
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3154c0a84e4f9efe947a57a4ac646d916dc6c13a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401620"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639205"
 ---
-# <a name="contact-support-for-timor-leste"></a>Leste のサポートに問い合わせる
+# <a name="contact-support-for-timor-leste"></a>Timor-Leste のサポートに問い合わせる
 
 [別の国または地域を検索します](../contact-support-for-business-products.md)。
 
@@ -30,9 +30,9 @@ ms.locfileid: "44401620"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-ポルトガル語: 月曜日から金曜日の午前9時から午後5時
+ポルトガル語: Mon-Fri 9 時午後5時
 
-英語: 月曜日から金曜日9時から午後5時
+英語: Mon-Fri 9 PM-5 AM
 
 ### <a name="technical-support"></a>テクニカル サポート:
 

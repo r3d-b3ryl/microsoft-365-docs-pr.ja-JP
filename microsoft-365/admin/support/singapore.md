@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e014908c6a9ef0f461e89c8500de5ba91c3712c1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: aa74f60ab87bccacefb11822edd02c75b5bdacc9
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388379"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639805"
 ---
 # <a name="contact-support-for-singapore"></a>シンガポールのサポートへのお問い合わせ
 
@@ -30,7 +30,7 @@ ms.locfileid: "44388379"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-英語: 月曜日から金曜日9時午前6時
+英語: 午前9時から午後6時 Mon-Fri
 
 ### <a name="technical-support"></a>テクニカル サポート:
 

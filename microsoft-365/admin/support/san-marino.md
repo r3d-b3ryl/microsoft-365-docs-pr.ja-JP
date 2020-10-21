@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 57c9f31f6d25637c9325e7006de943c14e6d9113
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d6ea0c0f89d1d9a5cdaf48f6e7bcfad62495f886
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44389255"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639889"
 ---
 # <a name="contact-support-for-san-marino"></a>サンマリノサポートへのお問い合わせ
 
@@ -30,13 +30,13 @@ ms.locfileid: "44389255"
 ## <a name="hours"></a>時間
 ### <a name="billing-support"></a>課金サポート:
 
-イタリア語: 月曜日から金曜日の午前10時から午後6時
+イタリア語: 午前10時から午後6時まで Mon-Fri
 
-英語: 月曜日から金曜日の午前10時から午後6時
+英語: 午前6時から午後6時まで Mon-Fri
 
 ### <a name="technical-support"></a>テクニカル サポート:
 
-イタリア語: 月曜日から金曜日の午前9時から午後10時
+イタリア語: 午前9時から午後10時まで Mon-Fri
 
 英語: 24 時間年中無休
 
