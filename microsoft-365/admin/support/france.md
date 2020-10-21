@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,33 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: お住まいの国または地域のサポートに連絡する方法を説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f202f7fd71b917cce4b1f3ca255dcec36008c238
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ec908b6e70ee4580829ac7c483c638907700eaca
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397912"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642721"
 ---
-# <a name="contact-support-for-france"></a><span data-ttu-id="1e809-103">フランスのサポートに問い合わせる</span><span class="sxs-lookup"><span data-stu-id="1e809-103">Contact support for France</span></span>
+# <a name="contact-support-for-france"></a><span data-ttu-id="7a7e6-103">フランスのサポートに問い合わせる</span><span class="sxs-lookup"><span data-stu-id="7a7e6-103">Contact support for France</span></span>
 
-<span data-ttu-id="1e809-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="1e809-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="7a7e6-104">[別の国または地域を検索します](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="7a7e6-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1e809-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="1e809-105">Phone number</span></span>
-<span data-ttu-id="1e809-106">0805 540 594</span><span class="sxs-lookup"><span data-stu-id="1e809-106">0805 540 594</span></span>
+## <a name="phone-number"></a><span data-ttu-id="7a7e6-105">電話番号</span><span class="sxs-lookup"><span data-stu-id="7a7e6-105">Phone number</span></span>
+<span data-ttu-id="7a7e6-106">0805 540 594</span><span class="sxs-lookup"><span data-stu-id="7a7e6-106">0805 540 594</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1e809-107">時間</span><span class="sxs-lookup"><span data-stu-id="1e809-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1e809-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="1e809-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="7a7e6-107">時間</span><span class="sxs-lookup"><span data-stu-id="7a7e6-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="7a7e6-108">課金サポート:</span><span class="sxs-lookup"><span data-stu-id="7a7e6-108">Billing Support:</span></span>
 
-<span data-ttu-id="1e809-109">フランス語: 月曜日から金曜日 (午前9時 ~ 午後5時)</span><span class="sxs-lookup"><span data-stu-id="1e809-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="7a7e6-109">フランス語: 午前9時から午後5時 Mon-Fri</span><span class="sxs-lookup"><span data-stu-id="7a7e6-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="1e809-110">英語: 月曜日から金曜日9時午前5時</span><span class="sxs-lookup"><span data-stu-id="1e809-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="7a7e6-110">英語: 午前9時 Mon-Fri 午後5時</span><span class="sxs-lookup"><span data-stu-id="7a7e6-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1e809-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="1e809-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="7a7e6-111">テクニカル サポート:</span><span class="sxs-lookup"><span data-stu-id="7a7e6-111">Technical Support:</span></span>
 
-<span data-ttu-id="1e809-112">フランス語: 月曜日から金曜日の午前8時9時</span><span class="sxs-lookup"><span data-stu-id="1e809-112">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="7a7e6-112">フランス語: 午前8時から午後9時 Mon-Fri</span><span class="sxs-lookup"><span data-stu-id="7a7e6-112">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="1e809-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="1e809-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="7a7e6-113">英語: 24 時間年中無休</span><span class="sxs-lookup"><span data-stu-id="7a7e6-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="1e809-114">代替電話番号:01 57 32 42 97</span><span class="sxs-lookup"><span data-stu-id="1e809-114">Alternative Phone Number: 01 57 32 42 97</span></span>
+<span data-ttu-id="7a7e6-114">代替電話番号:01 57 32 42 97</span><span class="sxs-lookup"><span data-stu-id="7a7e6-114">Alternative Phone Number: 01 57 32 42 97</span></span>
 
-<span data-ttu-id="1e809-115">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="1e809-115">Local call charges apply</span></span>
+<span data-ttu-id="7a7e6-115">国内通話料金がかかります</span><span class="sxs-lookup"><span data-stu-id="7a7e6-115">Local call charges apply</span></span>
