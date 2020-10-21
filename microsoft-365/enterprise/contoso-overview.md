@@ -15,72 +15,69 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 402c8c1cbb1484d8a0ad2ce4159b90107856167d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686454"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637081"
 ---
-# <a name="overview-of-the-contoso-corporation"></a>Contoso Corporation の概要
+# <a name="overview-of-contoso-corporation"></a>Contoso Corporation の概要
 
 ![Contoso 社](../media/contoso-overview/contoso-icon.png)
 
-Contoso Corporation は、フランスのパリに本社を持つ多国籍企業であり、100,000 を超える製品を製造、販売、およびサポートする複合組織です。
+Contoso Corporation は、パリに本社がある多国籍企業です。同社は、10万を超える製品を使用した製造、販売、サポートの組織です。
 
 ## <a name="contoso-around-the-world"></a>世界の Contoso
 
-図 1 は、パリにある本社と、さまざまな大陸にある地域ハブおよびサテライト オフィスを示しています。
+図1は、パリ、地域ハブ、およびさまざまな大陸のサテライトオフィスの本社を示しています。
 
-![世界各国の Contoso 社のオフィス](../media/contoso-overview/contoso-overview-fig1.png)
+![世界各地の Contoso 支社](../media/contoso-overview/contoso-overview-fig1.png)
 
-**図 1:世界各国の Contoso 社のオフィス**
+**図 1: 世界各地の Contoso 支社**
  
-世界各国の Contoso 社のオフィスは、3 層設計に従っています。
+Contoso には、次の3つのオフィスの層があります。
 
 - 本社
 
-  Contoso Corporation の本社は、管理、エンジニアリング、および製造設備のための数十の建物を持つパリ郊外の大規模な企業キャンパスです。Contoso 社のすべてのデータセンターおよびインターネット プレゼンスはパリ本社内に存在します。
+  Contoso 本社は、パリの outskirts にある企業キャンパスで、多数の建物を管理、エンジニアリング、製造施設に備えています。Contoso データセンターとそのインターネットプレゼンスは、すべてパリ本社に収納されています。
 
   本社には 25,000 人のワーカーがいます。
 
 - 地域ハブ
 
-  地域ハブ オフィスでは、60% の販売およびサポート スタッフが世界の特定の地域にサービスを提供しています。各地域のハブは、高帯域幅の WAN リンクでパリの本社に接続されています。 
+  ハブオフィスは、世界の特定の地域 (60% の売上とサポートスタッフ) を提供します。各地域ハブは、広帯域 WAN リンクを介してパリ本社に接続されています。
 
-  各地域ハブには平均 2,000 人のワーカーがいます。
+  地域ハブには、平均2000ワーカーがあります。
 
 - サテライト オフィス
 
-  サテライト オフィスには 80% の販売およびサポート スタッフがいて、主要都市または地区で Contoso 社の顧客にオンサイトのプレゼンスを提供します。各サテライト オフィスは、高帯域幅の WAN リンクで地域ハブに接続されています。
+  サテライトオフィスには、80% の売上およびサポートスタッフが含まれています。これにより、重要都市または subregions の Contoso お客様のためのオンサイトプレゼンスが提供されます。各サテライトオフィスは、広帯域 WAN リンクを介して地域のハブに接続されています。
 
-  各サテライト オフィスには平均 250 人のワーカーがいます。
+  サテライトオフィスには、平均で250ワーカーがあります。
 
-Contoso 社の要員の 25% はモバイル専門であり、地域ハブ オフィスおよびサテライト オフィスではモバイル専門のワーカーの割合がさらに高くなります。モバイル専門のワーカーにより良いサポートを提供することが、Contoso 社の重要なビジネス目標です。
+Contoso の従業員の約25% は、モバイルのみです。 これらのワーカーの数は、地域ハブとサテライトオフィスの割合が高くなります。 モバイル専門のワーカーにより良いサポートを提供することが、Contoso 社の重要なビジネス目標です。
 
 ## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Microsoft 365 for enterprise の設計上の考慮事項
 
-Contoso 社の IT アーキテクトは、エンタープライズ向けの Microsoft 365 を展開するときに、以下の設計要件と考慮事項を特定しました。 
+Contoso 社の IT アーキテクトは、エンタープライズ向けの Microsoft 365 を展開するための以下の設計要件を特定しました。
 
 - 地理的に複数の場所にあり、地域に応じた規制とコンプライアンスの要件がある
-- 本社オフィスに中央イントラネット データセンターがあり、地域のアプリケーション サーバーで内部の基幹業務アプリケーションをホストしている
+- 本社オフィスの中央イントラネットデータセンターと、内部の基幹業務アプリケーションをホストする地域のアプリケーションサーバー
 - 既存の Microsoft Endpoint Configuration Manager インフラストラクチャ
-- クライアント コンピューティング デバイスは Windows、Mac、Linux など各種混合
+- Windows、Mac、Linux を実行するクライアントコンピューティングデバイスの組み合わせ
 - iOS (iPhone と iPad) や Android のスマートフォンやタブレットを含め、個人および会社が所有するモバイル デバイスは各種混合
 - リモートおよびモバイルのワーカーが多数
 - ビジネス パートナーが多数
-- 顧客情報と個人を特定できる情報の量が多い
+- 顧客やその他の機密情報を管理および保護するための、多くの機密情報
 - 製品の設計仕様、および製造上の機密情報の形式で、重要な知的財産の量が多い
 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社のオンプレミスの IT インフラストラクチャと、ビジネスニーズが Microsoft 365 for enterprise でどのように扱われているかについて[説明](contoso-infra-needs.md)します。
+Contoso 社のオンプレミスの IT インフラストラクチャと、企業のビジネスニーズが Microsoft 365 for enterprise でどのように扱われるかについて[説明](contoso-infra-needs.md)します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
-
-
-

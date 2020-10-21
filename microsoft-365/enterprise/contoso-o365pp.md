@@ -15,76 +15,76 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Microsoft 365 Apps for enterprise を展開する方法について説明します。
-ms.openlocfilehash: de6a5348a49a490afa3c3ac632e66026966e2ef3
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695160"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637165"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 社の Microsoft 365 Apps for enterprise の展開
 
-Contoso 社では自社の PC を Windows 10 Enterprise と Microsoft 365 Apps for enterprise にアップグレードして、これまで以上に効果的な共同作業、セキュリティの向上、および最新のデスクトップ エクスペリエンスを実現しました。インフラストラクチャとビジネス ニーズを評価した後、Contoso 社は展開に向けて、以下の重要な要件を特定しました。
+Contoso 社は Pc を Windows 10 Enterprise にアップグレードし、エンタープライズ向け Microsoft 365 アプリを使用することで、より効果的なコラボレーション、セキュリティの向上、およびよりモダンなデスクトップ環境を実現しています。インフラストラクチャとビジネスのニーズを評価した後、Contoso は展開に関して次の主要な要件を特定しました。
 
-- すべての PC が Microsoft 365 Apps for enterprise を実行する必要があります
-- 可能な場合は、既存の管理ツールとインフラストラクチャを使用します
-- 展開はエンドユーザーのデバイス上で複数の言語と既存のアーキテクチャをサポートする必要があります
-- PC は、IT 管理コストとエンドユーザーに与える影響を最小限に抑えながら、安全で最新の状態に保ちます
+- すべての Pc で、Microsoft 365 Apps for enterprise を実行する必要があります。
+- 展開では、可能な場合は既存の管理ツールおよびインフラストラクチャを使用する必要があります。
+- 展開では、ユーザーのデバイス上に複数の言語と既存のアーキテクチャがサポートされている必要があります。
+- Pc は、最小限の IT 管理コストとユーザーへの影響を最小限に抑えて、最新の状態に保たれます。
 
 ## <a name="deployment-tools"></a>展開ツール
 
-Contoso 社では自社の要件に基づいて、Configuration Manager (Current Branch) を使用した Windows 10 Enterprise と Microsoft 365 Apps for enterprise の展開を選択しました。Configuration Manager は大規模環境向けに拡張され、インストール、更新、設定に対する幅広い管理が可能です。また、Office の展開と管理をより簡単で効率的にするために、以下の機能も組み込まれています。
+Contoso 社は、要件に基づいて、構成マネージャー (Current Branch) を使用して、Windows 10 Enterprise と Microsoft 365 Apps for enterprise を展開することを選択しました。構成マネージャーは大規模な環境に合わせて拡張され、インストール、更新、および設定を詳細に制御します。また、次のような Office をより簡単かつ効率的に展開および管理する機能が組み込まれています。
 
-- ピア キャッシュ。遠隔地のデバイスに展開する際にネットワーク キャパシティが限られている場合に役立ちます
-- Office クライアント管理ダッシュボード。Office の展開と更新の監視を容易にし、管理者が最新の展開と管理機能にアクセスできるようにします
-- 高度な言語パックの展開。オペレーティング システムと同じ言語の自動展開を含みます
-- 展開時にクライアントから既存のバージョンの Office を削除する方法を完全にサポートし、簡単に使用できるようにします
+- ピアキャッシュ。これは、リモートの場所にあるデバイスに展開するときに、制限されたネットワーク容量で役立ちます。
+- Office クライアント管理ダッシュボードを使用すると、Office の展開と更新の監視が容易になり、管理者は最新の展開および管理機能にアクセスできるようになります。
+- インテリジェント言語パックの展開 (オペレーティングシステムと同じ言語の自動展開を含む)。
+- 展開時にクライアントから既存のバージョンの Office を削除するための完全にサポートされた、使いやすい方法。
 
-Configuration Manager のほかに、Contoso 社では[準備ツールキット](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)も使用しました。これは、Office マクロとアドインとの互換性の問題を評価する Microsoft の無料ツールです。
+構成マネージャーに加えて、Contoso 社では [office アドインの準備ツールキットと VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)を使用して、office マクロやアドインとの互換性の問題を評価しています。
 
-## <a name="managing-the-deployment-and-updates"></a>展開および更新プログラムの管理
+## <a name="managing-deployment-and-updates"></a>展開と更新を管理する
 
-Microsoft 365 Apps for enterprise には、サービスとしての Office という新しいリリース モデルがあります。このサービス モデルにより、容易に新機能を最新のものにできますが、新リリースの展開やテストの方法に関する IT 部門のアプローチに対して、頻繁に変更が求められることになります。互換性の問題を最小限に抑え、コンピューターの最新状態を維持するため、Contoso 社では Windows と Office を次の 2 段階で展開しました。 
+Microsoft 365 enterprise 用アプリには、サービスとしての Office という新しいリリースモデルがあります。サービスモデルを使用すると、新機能に関する最新情報を簡単に入手できます。しかし、多くの場合、IT 部門が新しいリリースを展開してテストする方法を変更する必要があります。互換性の問題を最小限に抑え、コンピューターが最新の状態に保たれるようにするために、Contoso 社は Windows と Office を2段階で展開しています。
 
-- 最初の段階では、組織全体にわたって、少数の代表的なデバイスに Microsoft 365 Apps for enterprise を展開しました。このパイロット グループは、Microsoft 365 Apps for enterprise でのアプリ、アドイン、およびハードウェアのテストに使用されました。
-- 4 か月後、パイロット グループのアプリ、アドイン、ハードウェアに関する重要な問題を解決した後、Contoso 社では Microsoft 365 Apps for enterprise を組織内の残り (広範グループ) のデバイスに展開しました。 
+- 最初に、企業向けの Microsoft 365 アプリを組織全体の少数の代表的なデバイスに展開しました。 このパイロットグループは、Microsoft 365 Apps for enterprise を使用してアプリ、アドイン、およびハードウェアをテストするために使用されました。
+- 4 か月後、パイロット グループのアプリ、アドイン、ハードウェアに関する重要な問題を解決した後、Contoso 社では Microsoft 365 Apps for enterprise を組織内の残り (広範グループ) のデバイスに展開しました。
 
-Configuration Manager を使用して Office の更新を管理する代わりに、Contoso 社ではクラウドからの自動更新を有効にしました。クラウドベースの更新は、デバイスを最新の状態に保ちながら、管理上のオーバーヘッドを削減しました。 
+構成マネージャーを使用して Office の更新プログラムを管理する代わりに、クラウドからの Contoso 社による自動更新を有効にします。 クラウドベースの更新プログラムは、デバイスを最新の状態に保つ一方で、管理上のオーバーヘッドを軽減します。
 
-Contoso 社では Office の展開に使用した 2 段階アプローチ、つまりパイロット グループ内のデバイスが組織の残り (広範グループ) のデバイスよりも 4 か月早く機能の更新を受け取る方法と同じアプローチを機能の更新にも使用しました。これを Office で可能にするために、Contoso 社では 2 つの推奨される[更新チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels)を使用しました。 
+Contoso 社は、Office の展開に使用した機能更新プログラムに対して同じ2段階のアプローチを採用しています。パイロットグループ received 機能の更新プログラムは、組織の他の部分 (広範なグループ) のデバイスよりも4か月早く更新されています。 これを Office で可能にするために、Contoso 社では 2 つの推奨される[更新チャネル](https://docs.microsoft.com/DeployOffice/overview-update-channels)を使用しました。
 
-- パイロット グループへの更新向け半期エンタープライズ チャネル (プレビュー) 
-- 広範グループ用の半期エンタープライズ チャネル。 
+- パイロット グループへの更新向け半期エンタープライズ チャネル (プレビュー)
+- 広範なグループに対する更新に対してエンタープライズチャネルを Semi-Annual
 
-エンタープライズ チャネル (プレビュー) は半期エンタープライズ チャネルよりも 4 か月早いバージョンの Microsoft 365 Apps for enterprise をリリースするため、Contoso 社は更新プログラムを管理する必要なしに、それらを検証する時間があります。 
+エンタープライズ チャネル (プレビュー) は半期エンタープライズ チャネルよりも 4 か月早いバージョンの Microsoft 365 Apps for enterprise をリリースするため、Contoso 社は更新プログラムを管理する必要なしに、それらを検証する時間があります。
 
 ## <a name="deployment-process"></a>展開プロセス
 
 Office の展開を完了するために、Contoso 社では Microsoft のベスト プラクティスの推奨事項を含む次のプロセスを実装しました。
 
-1. 展開の前に準備ツールキットを使用して、アプリと Office アドインをテストし、Microsoft 365 Apps for enterprise との互換性を評価しました。
-2. Configuration Manager では、Contoso 社はクライアント デバイス上でピア キャッシュを有効にしました。これは遠隔地にあるクライアントのデバイスに展開する際にネットワーク キャパシティが限られている場合に役立ちます。 
-3. Configuration Manager で、パイロット グループと広範グループの 2 つの展開グループをデバイス コレクションとして定義しました。パイロットグループ (組織全体にわたる少数の代表的なデバイスを含む) は、Windows 10 Enterprise と Microsoft 365 Apps for enterprise を使用してアプリ、アドイン、およびハードウェアの追加テストを行うために使用されました。 
-4. Office クライアント管理ダッシュボードと Office 365 インストーラー ウィザード (いずれも Configuration Manager コンソールの一部) を使用して、Office の展開パッケージを作成しました。2 つの Microsoft 365 Apps for enterprise パッケージを作成しました (1 つは半期エンタープライズ チャネル (プレビュー) のパイロット グループ用、1 つは半期エンタープライズ チャネルの広範グループ用)。 
-5. 各 Office パッケージの一部として、英語、フランス語、ドイツ語の言語パックが含まれていました。デバイスに、Office パッケージに含まれていない言語が必要な場合は、Office コンテンツ配信ネットワーク (CDN) から自動的にダウンロードされました。
-6. Office パッケージの組み込み機能を使用して、Microsoft 365 Apps for enterprise のインストール前に既存の MSI バージョンの Office をすべて自動的に削除しました。
-7. Configuration Manager では、Windows と Office パッケージをネットワーク上の配布ポイントに展開し、Configuration Manager の展開タスク シーケンスを実行して、パイロットの Microsoft 365 Apps for enterprise パッケージをパイロット グループに展開しました。
-8. パイロット グループとの互換性問題を解決した後、Contoso 社ではタスク シーケンスを実行して、さまざまな Microsoft 365 Apps for enterprise パッケージを広範囲のグループに展開しました。
+1. 展開前に、Contoso 社は Office アドインと VBA の準備ツールキットを使用して、アプリと Office アドインをテストし、Microsoft 365 Apps for enterprise との互換性を評価していました。
+1. 構成マネージャーでは、クライアントデバイスのピアキャッシュを有効にします。これにより、リモートの場所にクライアントデバイスに展開する際にネットワークの容量が制限されます。 
+1. Contoso 社は、構成マネージャーでのデバイスコレクションとして、2つの展開グループを定義しています。パイロットグループと広範なグループ。 パイロットグループには、組織全体の代表的なデバイスのセットが含まれていました。アプリ、アドイン、およびハードウェアの追加テストには、Windows 10 Enterprise および Microsoft 365 Apps for enterprise が使用されていました。
+1. Office クライアント管理ダッシュボードと office 365 インストーラウィザードを使用して、Office の展開パッケージを作成しました。これは、Configuration Manager コンソールの一部です。 エンタープライズパッケージ用に2つの Microsoft 365 アプリが構築されています。1つは Semi-Annual エンタープライズチャネル (プレビュー) のパイロットグループ用、もう1つは Semi-Annual エンタープライズチャネルの広範なグループ用です。
+2. 各 Office パッケージには、英語、フランス語、ドイツ語の言語パックが含まれていました。 デバイスに Office パッケージに含まれていない言語が必要な場合、その言語パックは Office コンテンツ配信ネットワーク (CDN) から自動的にダウンロードされていました。
+3. Office パッケージの組み込み機能を使用して、Microsoft 365 Apps for enterprise のインストール前に既存の MSI バージョンの Office をすべて自動的に削除しました。
+4. 構成マネージャーでは、ネットワークを介して配布ポイントに Windows および Office パッケージを展開しました。 その後、構成マネージャーの展開タスクシーケンスを実行して、パイロットグループにエンタープライズパッケージのパイロット Microsoft 365 アプリを展開しました。
+5. パイロットグループとの互換性の問題に対処した後、Contoso 社はタスクシーケンスを実行して、エンタープライズパッケージ用の Microsoft 365 アプリを広範なグループに展開しました。
 
-Contoso 社ではクラウドからデバイスを自動的に更新するよう選択しているため、Configuration Manger でプロセスを管理する必要はありませんでした。 デバイスは、最初の展開の一部として定義された更新チャネルに基づいて、直接クラウドから自動的に更新されます。 
+Contoso 社ではクラウドからデバイスを自動的に更新するよう選択しているため、Configuration Manger でプロセスを管理する必要はありませんでした。 これらのデバイスは、最初の展開で定義された更新プログラムチャネルで、クラウドベースから直接更新されます。
 
-次に Contoso 社の Microsoft 365 Apps for enterprise のインストール、および進行中の更新プログラムの展開アーキテクチャを示します。
+ここでは、Contoso Microsoft 365 Apps for enterprise のインストールと継続的な更新プログラムの展開アーキテクチャについて説明します。
 
-![Contoso 社の Microsoft 365 Apps for enterprise の展開インフラストラクチャ](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![Microsoft 365 Apps for enterprise の Contoso 展開インフラストラクチャ](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## <a name="next-step"></a>次の手順
 
-Contoso 社が microsoft 365 で microsoft Intune を使用して、自社のデバイスおよびそれらのデバイス上で実行されるアプリを管理する方法に[ついて説明](contoso-mdm.md)します。
+Contoso 社が microsoft 365 で microsoft Intune を使用して、自社のデバイスと、組織全体で実行されるアプリを管理する方法に[ついて説明](contoso-mdm.md)します。
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams デバイスの使用状況
+title: 管理センターの microsoft 365 レポート-Microsoft Teams デバイスの使用状況
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 レポートから Microsoft Teams アプリの使用状況レポートを取得することによって、組織で使用される Microsoft Teams アプリの洞察を得ることができます。
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949080"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636975"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>管理センターの microsoft 365 レポート-Microsoft Teams デバイスの使用状況
 
@@ -51,7 +51,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 |アイテム|説明|
 |:-----|:-----|
 |**測定基準**|**定義**|
-|ユーザー名  <br/> |ユーザーの表示名。 [表示名] をクリックすると、Microsoft Teams 管理センターのユーザーの設定ページに移動できます。  <br/> |
+|ユーザー名  <br/> |ユーザーの表示名。  <br/> |
 |Windows  <br/> |ユーザーが Windows ベースのコンピューター上の Teams デスクトップクライアントでアクティブだった場合に選択されます。  <br/> |
 |Mac  <br/> |ユーザーが macOS コンピューターの Teams デスクトップクライアントでアクティブだった場合に選択されます。  <br/> |
 |iOS  <br/> |ユーザーが iOS 用の Teams モバイルクライアント上でアクティブだった場合に選択されます。  <br/> |
@@ -61,4 +61,5 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 |Web  <br/> |ユーザーがデバイス上の Teams web クライアントでアクティブだった場合に選択されます。|
 |最後のアクティビティの日付 (UTC)  <br/> |ユーザーが Teams アクティビティに参加した最後の日付 (UTC)。  <br/> |
 |ライセンスされている|ユーザーが Teams を使用するライセンスを持っている場合に選択されます。|
+|Teams の合計アクティビティ|選択した期間における Teams アクティビティの合計数です。 |
 |||

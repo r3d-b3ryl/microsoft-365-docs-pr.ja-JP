@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: ac6af4d82b3da507f1fe0081041b347b9f5e4a94
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7f8337d368c5c9de7cf1d9ff90831777c0811b87
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446854"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600472"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -99,7 +99,7 @@ ms.locfileid: "48446854"
 
 4. **[デバイス アクセスと外部共有設定]** を選択した場合は、次の設定を構成します。
     
-    - **非管理対象デバイスからのアクセス**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 2 - 4 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
+    - **非管理対象デバイスからのアクセス**: このオプションでは、Azure ADの条件付きアクセスを使用して、管理されていないデバイスからの SharePoint および OneDrive コンテンツへのアクセスをブロックまたは制限する SharePoint 機能を使用します。 詳細については、SharePoint ドキュメントの「[非管理対象デバイスからのアクセスの制御](/sharepoint/control-access-from-unmanaged-devices)」を参照してください。 このラベル設定を指定するオプションは、SharePoint の手順から「[特定の SharePoint サイトまたは OneDrive からのアクセスをブロックまたは制限する](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)」セクションの手順 3 - 5 で説明しているように、サイトの PowerShell コマンドを実行することと同じです。
         
         追加情報については、このセクションの最後にある「[非管理対象デバイス オプションの依存関係に関する詳細情報](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)」を参照してください。
 

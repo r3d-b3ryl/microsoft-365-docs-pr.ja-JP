@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: Microsoft 365 for business の請求先住所を更新する方法について説明します。請求通知の受信に使用される電子メールアドレスを更新することもできます。
-ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: d6083a170adddc6bd389e5f33a1050a7e048ad31
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324354"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638485"
 ---
 # <a name="change-your-billing-addresses"></a>請求先住所を変更する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -130,8 +130,8 @@ ms.locfileid: "47324354"
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-2. [ **製品** ] タブで、変更するサブスクリプションを選択します。
-3. [サブスクリプションの詳細] ページの [ **サービス利用アドレス** ] セクションで、[ **サービス利用状況のアドレスの編集**] を選択します。
+2. **[製品]** タブで、変更するサブスクリプションを選択します。
+3. [サブスクリプションの詳細] ページの **[サービスの利用先住所]** セクションで、**[サービスの利用先住所の編集]** を選択します。
 4. [ **サービス使用法のアドレスの編集** ] ウィンドウで、アドレスを更新し、[ **保存**] を選択します。
 
 ::: moniker-end

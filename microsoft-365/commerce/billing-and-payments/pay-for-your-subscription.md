@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 778906219c03e8cc79ccebb368b84642639a8467
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407958"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638437"
 ---
 # <a name="pay-for-your-subscription"></a>サブスクリプションを支払う
 
@@ -48,7 +48,7 @@ ms.locfileid: "44407958"
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>クレジット カードまたは銀行口座引き落としで支払う
 
-クレジット カードまたは銀行口座引き落としで支払う場合、請求日の翌日からサブスクリプション有効期限の最終日まで、サブスクリプションの費用が自動請求されます。 必要に応じて[支払い方法を管理](manage-payment-methods.md)できます。 また、[請求明細書のコピーをメールで受け取る](#receive-a-copy-of-your-billing-statement-in-email)選ぶこともできます。
+クレジット カードまたは銀行口座引き落としで支払う場合、請求日の翌日からサブスクリプション有効期限の最終日まで、サブスクリプションの費用が自動請求されます。 いつでも必要なときに[支払い方法を管理する](manage-payment-methods.md)ことができます。 また、[請求明細書のコピーをメールで受け取る](#receive-a-copy-of-your-billing-statement-in-email)選ぶこともできます。
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>クレジット カードが拒否され、支払い期日を過ぎてしまった場合はどうなりますか?
 
@@ -59,7 +59,7 @@ ms.locfileid: "44407958"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
 2. 未払い残高のあるサブスクリプションを見つけます。 **[課金]** セクションで、**[サブスクリプションの支払期限が過ぎています]** の横にある **[残高の決済]** をクリックします。
 
@@ -109,7 +109,7 @@ ms.locfileid: "44407958"
 残念ながら、サブスクリプションが請求書で支払うように設定されている場合、Microsoft は直接オンライン決済を受け入れることはできません。ただし、[支払い方法をクレジットカードに変更することができます](change-payment-method.md)。請求額は各サービスの提供期間後、カードに自動請求されます。Azure の場合、「[Azure サブスクリプションの支払いに使用するクレジット カードを変更する方法](https://go.microsoft.com/fwlink/p/?LinkId=718057)」を参照してください。
 
 > [!NOTE]
-> クレジット カードでの自動支払いに切り替える場合、最初に必ずすべての未払い残高をお支払いください。 請求明細書の支払いオプションと手順を確認してください。 詳細については、「請求[書につい](understand-your-invoice2.md)て」を参照してください。
+> クレジット カードでの自動支払いに切り替える場合、最初に必ずすべての未払い残高をお支払いください。 請求明細書の支払いオプションと手順を確認してください。 詳細については、「請求 [書につい](understand-your-invoice2.md)て」を参照してください。
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>小切手または EFT の送信はどこでできますか?
 

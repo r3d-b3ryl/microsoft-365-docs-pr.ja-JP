@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Microsoft 365 for business のサブスクリプションとライセンスについて説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 9f8576b00b942c4b38d6192770bd2128afb4b104
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 51d07e777fd5a9e44c864ea11bb00ddc8c1c70d1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015961"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638197"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Microsoft 365 for business のサブスクリプションとライセンスについて
 
-Microsoft 365 for business のサブスクリプションを購入した場合は、月単位または年単位で支払いを行うアプリとサービスのセットにサインアップします。 サブスクリプションの一部として受信するアプリケーションとサービスは、Microsoft 365 for business または Microsoft 365 Business Standard など、購入した製品によって異なります。 各製品については、「 [小規模および中規模企業」ページの Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)で確認できます。
+Microsoft 365 for business のサブスクリプションを購入した場合は、月単位または年単位で支払いを行うアプリとサービスのセットにサインアップします。 サブスクリプションの一部として受信するアプリケーションとサービスは、Microsoft 365 for business または Microsoft 365 Business Standard など、購入した製品によって異なります。 各製品については、「 [小規模および中規模企業」ページの Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) で確認できます。
 
 サブスクリプションを購入する場合、組織の人数に基づいて、必要なライセンス数を指定します。 サブスクリプションを購入した後、組織内のユーザーのアカウントを作成し、各ユーザーにライセンスを割り当てます。 組織のニーズの変化に応じて、新しいユーザーに対応するためにライセンスを追加購入したり、組織を離れるユーザーのライセンスを他のユーザーに再割り当てしたりできます。
 
@@ -78,13 +78,13 @@ Microsoft 365 for business のサブスクリプションを購入した場合�
 |:-----|:-----|:-----|:-----|:-----|
 |課金管理者  <br/> |いいえ  <br/> |いいえ  <br/> |はい  <br/> |いいえ  <br/> |
 |グローバル管理者  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |はい  <br/> |
-|ライセンス管理者 <br/> |はい <br/>|はい <br/> |不要 <br/> |いいえ <br/> |
-|サービスサポート管理者  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |
+|ライセンス管理者 <br/> |はい <br/>|はい <br/> |いいえ <br/> |いいえ <br/> |
+|サービス サポート管理者  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |いいえ  <br/> |
 |ユーザー管理者  <br/> |はい  <br/> |はい  <br/> |いいえ  <br/> |はい  <br/> |
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[ビジネス向けサブスクリプションのライセンスを購入または削除](buy-licenses.md)する (記事) \
-[ユーザーへのライセンスの割り当て](../../admin/manage/assign-licenses-to-users.md)(記事) \
-[ユーザーからのライセンスの割り当てを解除](../../admin/manage/remove-licenses-from-users.md)する (記事) \
-[共有メールボックスからライセンスを削除する](../../admin/email/remove-license-from-shared-mailbox.md)(記事)
+[ビジネス向けサブスクリプションのライセンスを購入または削除](buy-licenses.md) する (記事) \
+[ユーザーへのライセンスの割り当て](../../admin/manage/assign-licenses-to-users.md) (記事) \
+[ユーザーからライセンスの割り当てを解除する](../../admin/manage/remove-licenses-from-users.md) (記事)\
+[共有メールボックスからライセンスを削除する](../../admin/email/remove-license-from-shared-mailbox.md) (記事)

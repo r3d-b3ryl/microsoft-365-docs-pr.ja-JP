@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ description: 小売店で購入した Microsoft 365 Business Standard プロダ�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818581"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638365"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクトキーを入力する
 
@@ -44,18 +44,18 @@ ms.locfileid: "44818581"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">Office.com/setupkey</a>に移動します。
 
-2. プロダクトキーを入力し、[**次へ**] を選択します。
+2. プロダクトキーを入力し、[ **次へ**] を選択します。
 
-3. 名前、勤務先のメールアドレス、会社の電話番号、会社名、国または地域を入力し、[**次へ**] を選択します。
+3. 名前、勤務先のメールアドレス、会社の電話番号、会社名、国または地域を入力し、[ **次へ**] を選択します。
 
 4. 電話番号を入力して、id を確認するためのテキストまたは呼び出しを受信します。
 
 5. 新しいドメインを取得するか、既に所有しているドメイン名を使用するか、または後でドメインを追加することができます。 この手順はさまざまな場合があるため、どちらのオプションを選択するかに応じて、プロンプトに従ってください。
 
     > [!NOTE]
-    > サブスクリプションがその用語の最後に自動的に拡張されるようにするには、クレジットカードを追加してから、そのサブスクリプションに対して[定期的な課金を有効](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)にします。
+    > サブスクリプションがその用語の最後に自動的に拡張されるようにするには、クレジットカードを追加してから、そのサブスクリプションに対して [定期的な課金を有効](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) にします。
 
-6. 完了したら、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>に移動してサブスクリプションを管理します。
+6. 完了したら、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a> に移動してサブスクリプションを管理します。
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>有効期限を延長するか、既存のサブスクリプションにライセンスを追加する
 

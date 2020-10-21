@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: 台湾の Microsoft 365 for business e 請求書について説明します。
-ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2cdc3f6fe4b87f92b16355f10416fa99712c6fcb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401788"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638473"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>Microsoft 365 for business の電子請求書について理解する (台湾)
 
-電子請求書は、台湾税務当局の電子請求書の要件に従って購入後に販売者が発行した電子請求書です。 情報は、レコード保持のために、台湾税務当局の電子請求書クラウドに送信されます。 台湾の e-請求書関連情報については、ここを参照してください:<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
+電子請求書は、台湾税務当局の電子請求書の要件に従って購入後に販売者が発行した電子請求書です。 情報は、レコード保持のために、台湾税務当局の電子請求書クラウドに送信されます。 台湾の e-請求書関連情報については、ここを参照してください: <a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
 以下に、電子請求書のサンプルコピーが含まれています。
   
@@ -52,21 +52,21 @@ Microsoft は、現在の最新の請求書を電子請求書で、 **9 月 15**
 
 オンボードの時点で、または管理センターを介して VAT ID を更新することができます。
   
-アカウントの作成時に、**ステップ 1**、ウェルカム**ページ**、「ここで使用することはできますか?」**の後で**、8桁の**VAT ID**を追加することができます。 VAT ID がない場合は、「00000000」と入力してください。
+アカウントの作成時に、 **ステップ 1**、ウェルカム **ページ**、「ここで使用することはできますか?」 **の後で** 、8桁の **VAT ID**を追加することができます。 VAT ID がない場合は、「00000000」と入力してください。
   
 アカウントを作成したら、次の手順に従って、管理センターを使用して VAT ID を更新することができます。
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
     
-2. サブスクリプションを選択して、[**その他のアクション**] を選択します。
+2. サブスクリプションを選択して、[ **その他のアクション**] を選択します。
     
-3. [ **Update Service Recipient Address**] を選択し、[**税 ID**情報を更新します。 
+3. [ **Update Service Recipient Address**] を選択し、[ **税 ID** 情報を更新します。 
     
 ## <a name="how-do-i-request-an-e-invoice-paper-copy"></a>電子請求書の用紙コピーを要求するにはどうすればよいですか?
 
 領収書が運を獲得した場合 (VAT ID を持たない顧客のみが利用可能)、登録済みのメールによってファイルのアドレスにハードコピーが直接送信されます。
   
-または、電子請求書の公式コピーが必要な場合は、[サポートにお問い合わせ](../../admin/contact-support-for-business-products.md)ください。 要求を受け取った後、電子請求書の紙コピーをファイルのアドレスに送信します。
+または、電子請求書の公式コピーが必要な場合は、 [サポートにお問い合わせ](../../admin/contact-support-for-business-products.md)ください。 要求を受け取った後、電子請求書の紙コピーをファイルのアドレスに送信します。
   
 ## <a name="more-questions"></a>その他の質問
 

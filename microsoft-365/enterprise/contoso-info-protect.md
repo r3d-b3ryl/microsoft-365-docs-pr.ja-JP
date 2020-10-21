@@ -15,72 +15,72 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 の情報保護機能を使用して、クラウド内のデジタルアセットをセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399243"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637237"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
-Contoso 社では、情報のセキュリティと保護を重視しています。たとえば、製品のデザインや独自の製造技術を説明する知的財産の漏洩や破壊は、それらを競争面で不利な立場に置くことになります。
+Contoso 社は情報セキュリティに関して深刻なものです。製品設計と独自の製造手法を説明する知的財産を漏洩または破壊することによって、競合の不利になります。
 
-機密扱いの最も貴重なデジタル資産をクラウドに移行する前に、社内の情報の分類と保護要件がサポートされており、Microsoft 365 for enterprise のクラウドベースのサービスに実装されていることを確認しました。
+機密のデジタル資産をクラウドに移行する前に、Contoso 社は社内の情報の分類と保護要件が、Microsoft 365 for enterprise のクラウドベースのサービスによってサポートされていることを確認しました。
 
-## <a name="contosos-data-security-classification"></a>Contoso 社のデータ セキュリティの分類
+## <a name="contoso-data-security-classification"></a>Contoso データセキュリティの分類
 
-Contoso 社では自社のデータの分析を行い、次に示すレベルを決定しました。
+Contoso 社は、データの分析を行い、次の分類レベルを決定しました。
 
 | レベル 1: ベースライン | レベル 2: 機密 | レベル 3: 厳しく規制 |
 |:-------|:-----|:-----|
-| データは暗号化され、認証されたユーザーのみが使用できます。 <BR> <BR> オンプレミスとクラウドベースのストレージおよびワークロードに格納されているすべてのデータに対して提供されます。データは、サービス内に存在し、サービスとクライアントデバイス間で転送される間は暗号化されます。 <BR><BR> レベル 1 のデータの例には、通常のビジネス通信 (電子メール) や、管理、販売、およびサポート ワーカー用のファイルがあります。 | レベル 1 以上の強力な認証とデータ損失保護。 <BR> <BR> 強力な認証には、SMS 検証を使用した Azure 多要素認証 (MFA) が含まれています。 データ損失の防止により、機密情報または重要な情報が Microsoft クラウドの外部に漏出しないようにします。 <BR><BR> レベル 2 のデータの例には、財務情報や法的情報、新製品の研究開発データがあります。 | レベル 2 以上の最高レベルの暗号化、認証、監査。 <BR> <BR>  保存データおよびクラウド内のデータに対する最高レベルの暗号化。地域の規制に準拠し、スマート カードや詳細な監査と警告を使用する MFA と組み合わされています。 <BR> <BR> レベル 3 のデータの例には、顧客およびパートナーの個人を特定できる情報、製品のエンジニアリング仕様、および独自の製造技術があります。  |
+| データは暗号化され、認証されたユーザーのみが使用できます。<BR> <BR> オンプレミスとクラウドベースのストレージおよびワークロードに格納されているすべてのデータに対して提供されます。データは、サービス内に存在し、サービスとクライアントデバイス間で転送される間は暗号化されます。 <BR><BR>レベル 1 のデータの例には、通常のビジネス通信 (電子メール) や、管理、販売、およびサポート ワーカー用のファイルがあります。 | レベル 1 以上の強力な認証とデータ損失保護。<BR> <BR> 強力な認証には、SMS 検証を使用した Azure 多要素認証 (MFA) が含まれています。 データ損失防止は、機密情報または重要な情報が Microsoft クラウドの外部では転送されないようにすることを保証します。<BR><BR>レベル 2 のデータの例には、財務情報や法的情報、新製品の研究開発データがあります。 | レベル 2 以上の最高レベルの暗号化、認証、監査。<BR><BR>保存データおよびクラウド内のデータに対する最高レベルの暗号化。地域の規制に準拠し、スマート カードや詳細な監査と警告を使用する MFA と組み合わされています。<BR> <BR>レベル3のデータの例としては、顧客およびパートナーの個人情報、製品エンジニアリング仕様、独自の製造技術があります。  |
 ||||
 
-## <a name="contosos-information-policies"></a>Contoso 社の情報ポリシー
+## <a name="contoso-information-policies"></a>Contoso 情報ポリシー
 次の表に、Contoso 社の情報ポリシーを示します。
 
 
 | 値 | Access | データ保存期間 | 情報保護 |
 |:-------|:-----|:-----|:-----|
-| 低いビジネス価値 (レベル 1: ベースライン) | すべてのユーザーに対してアクセスを許可  | 6 か月 | 暗号化を使用します。 |
-| 中程度のビジネス価値 (レベル 2: 機密) | Contoso 社の従業員、下請業者、パートナーに対してアクセスを許可 <BR> <BR> MFA、トランスポート層セキュリティ (TLS)、およびモバイル アプリケーション管理 (MAM) を使用します。 | 2 年  | データ整合性のためにハッシュ値を使用します。  |
+| 低いビジネス価値 (レベル 1: ベースライン) | すべてへのアクセスを許可します。  | 6 か月 | 暗号化を使用します。 |
+| 中程度のビジネス価値 (レベル 2: 機密) | Contoso 社の従業員、下請け業者、パートナーにアクセスできるようにします。 <BR><BR> MFA、トランスポート層セキュリティ (TLS)、およびモバイル アプリケーション管理 (MAM) を使用します。 | 2 年  | データ整合性のためにハッシュ値を使用します。  |
 | 高度なビジネス価値 (レベル 3: 厳しく規制) | エグゼクティブ、およびエンジニアリングと製造の潜在顧客に対してアクセスを許可します。 <BR> <BR> 管理されたネットワーク デバイスのみの Rights Management System (RMS) です。  | 7 年  | 否認防止のためにデジタル署名を使用します。  |
 |||||
 
-## <a name="contosos-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Microsoft 365 for enterprise を使用した Contoso 社の情報保護へのパス
+## <a name="the-contoso-path-to-information-protection-with-microsoft-365-for-enterprise"></a>Microsoft 365 for enterprise を使用した情報保護への Contoso のパス
 
-Contoso 社は、次の手順を使用して、情報保護要件に応じて Microsoft 365 for enterprise を準備していました。
+Contoso 社は、次の手順に従って、情報保護の要件に応じて Microsoft 365 for enterprise を準備します。
 
-1. 保護する情報を特定した
+1. 保護する情報を特定する
 
-   Contoso 社は、オンプレミスの SharePoint サイトとファイル共有にある既存のデジタル資産を広範囲にわたって再調査して、それぞれを分類しました。
+   Contoso 社は、オンプレミスの SharePoint サイトとファイル共有にある既存のデジタル資産を広範囲にわたってレビューし、各資産に分類されました。
 
-2. 各データ レベルに応じてアクセス ポリシー、保持ポリシー、情報保護ポリシーを決定した
+2. 各データ レベルについてアクセス、保持、情報保護ポリシーを決定する
 
    データ レベルに基づいて、Contoso 社は詳細なポリシー要件を決定しました。この要件は、クラウドへの移行時に既存のデジタル資産を保護するために使用されました。
 
-3. さまざまな情報のレベルに応じた機密ラベルとその設定を作成した
+3. さまざまなレベルの情報について、機密ラベルとその設定を作成する
 
    Contoso 社では、データのレベルに応じた機密ラベルを作成しました。「厳しく規制」のラベルで、暗号化、アクセス許可、透かしなどが含まれます。
 
-4.  オンプレミスの SharePoint サイトとファイル共有のデータを新しい SharePoint サイトに移動した
+4.  オンプレミスの SharePoint サイトとファイル共有から新しい SharePoint サイトにデータを移動する
 
     新しい SharePoint サイトに移行したファイルには、そのサイトに割り当てられた既定の保持ラベルを継承させました。
 
-5.  新しいドキュメントに機密ラベルを使用する方法、新しい SharePoint サイトの作成時に Contoso 社の IT 部門と応対する方法、およびデジタル資産は必ず SharePoint サイトに保管することについて従業員を教育しました
+5.  従業員に新しいドキュメントの機密ラベルを使用する方法、新しい SharePoint サイトを作成するときに Contoso IT と対話する方法、および常に SharePoint サイトにデジタルアセットを格納する方法を学習します。
 
-    クラウドに向けた情報保護の変化で最も難しい部分であると考えられることから、Contoso 社の IT 部門と経営陣は、クラウド上のデジタル資産には必ずラベルを付けて保存し、オンプレミスのファイル共有を控え、サード パーティのクラウド ストレージ サービスや USB ドライブは決して使用しないように、組織の従業員の情報保管に関する悪習慣を改めることが必要でした。
+    不適切なワーカー情報の変更-ストレージ習慣は、クラウドの情報保護移行の最も難しい部分と見なされることがよくあります。 Contoso IT and management 従業員がデジタルアセットを常にクラウドにラベル付けして保存し、オンプレミスのファイル共有を使用しないで、サードパーティ製のクラウドストレージサービスまたは USB ドライブを使用しないようにする必要があります。
 
 ## <a name="conditional-access-policies-for-information-protection"></a>情報保護のための条件付きアクセス ポリシー
 
-ID とモバイル デバイスの管理インフラストラクチャと共に、Exchange Online と SharePoint のロールアウトの一環として、Contoso 社は、次に示す条件付きアクセス ポリシーのセットを構成して、そのポリシーを該当するグループに適用しました。
+Contoso 社は、Exchange Online と SharePoint の展開の一環として、次の条件付きアクセスポリシーのセットを構成し、適切なグループに適用しました。
 
 - [デバイスで管理されるアプリケーション アクセスと管理されないアプリケーション アクセスのポリシー](../security/office-365-security/identity-access-policies.md)
 - [Exchange Online アクセス ポリシー](../security/office-365-security/secure-email-recommended-policies.md)
 - [SharePoint アクセス ポリシー](../security/office-365-security/sharepoint-file-access-policies.md)
 
-以下は、Contoso 社の情報保護に応じた結果としてのポリシーのセットです。
+情報保護のための Contoso ポリシーの結果として、次のようなセットが表示されます。
 
 ![デバイス、Exchange Online、および SharePoint の条件付きアクセス ポリシー](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
@@ -90,24 +90,24 @@ ID とモバイル デバイスの管理インフラストラクチャと共に�
 
 これらのポリシーでは、次のことを確実にします。
 
-- 許可されるアプリと、そのアプリで組織のデータに対して実行できる操作は、アプリ保護ポリシーによって定義される。
+- 許可されているアプリと、組織のデータによって実行できるアクションは、アプリ保護ポリシーによって定義されます。
 - PC とモバイル デバイスが必ず準拠している。
 - Exchange Online では、Exchange Online の Office 365 message encryption (OME) を使用します。
-- SharePoint は、アプリによって適用される制限を使用する。
+- SharePoint では、アプリ強制の制限が使用されます。
 - SharePoint は、ブラウザー専用のアクセスにアクセス制御ポリシーを使用して、管理されていないデバイスのアクセスはブロックする。
 
-## <a name="mapping-microsoft-365-for-enterprise-features-to-contosos-data-levels"></a>エンタープライズ機能に関する Microsoft 365 の Contoso 社のデータレベルへのマッピング
+## <a name="mapping-microsoft-365-for-enterprise-features-to-contoso-data-levels"></a>エンタープライズ機能に関する Microsoft 365 の Contoso データレベルへのマッピング
 
-次の表では、Contoso 社のデータレベルを、Microsoft 365 for enterprise の情報保護機能にマッピングします。
+次の表は、Microsoft 365 for enterprise の情報保護機能への Contoso データレベルのマッピングを示しています。
 
 | レベル | Microsoft 365 クラウドサービス | Windows 10 および Microsoft 365 Apps for enterprise | セキュリティとコンプライアンス |
 |:-------|:-----|:-----|:-----|
 | レベル 1: ベースライン  | SharePoint および Exchange Online の条件付きアクセス ポリシー <BR> SharePoint サイトのアクセス許可 | 機密ラベル <BR> BitLocker <BR> Windows 情報保護 | デバイスの条件付きアクセス ポリシーとモバイル アプリケーション管理ポリシー |
 | レベル 2: 機密 | レベル 1 プラス: <BR> <BR> 秘密度ラベル <BR> SharePoint サイトの Microsoft 365 保持ラベル <BR> SharePoint および Exchange Online 用のデータ損失防止 <BR> 分離した SharePoint サイト  | レベル 1 プラス: <BR> <BR> デジタル資産の機密ラベル  | レベル 1 |
-| レベル 3: 厳しく規制 | レベル 2 プラス: <BR><BR> 営業秘密情報の BYOK (Bring Your Own Key) 暗号化と保護 <BR> Microsoft 365 サービスと対話する基幹業務アプリケーションの Azure Key Vault | レベル 2 | レベル 1 |
+| レベル 3: 厳しく規制 | レベル 2 プラス: <BR><BR> 秘密情報の暗号化と保護を独自のキー (BYOK) にする <BR> Microsoft 365 サービスと対話する基幹業務アプリケーションの Azure キーヴォールト | レベル 2 | レベル 1 |
 |||||
 
-以下は、Contoso 社の結果として得られる情報保護構成です。
+結果として得られる Contoso の情報保護構成を次に示します。
 
 ![Contoso 社の結果として得られる情報保護構成](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
@@ -119,8 +119,6 @@ Id およびアクセス管理、脅威保護、情報保護、およびセキ�
 
 [セキュリティのロードマップ](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
-
-

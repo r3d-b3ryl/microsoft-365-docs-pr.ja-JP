@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
 description: サードパーティパートナー経由で購入された Microsoft 365 サブスクリプションにライセンスを追加する方法について説明します。 Microsoft が認識しています。
-ms.openlocfilehash: a1761f01383e2321ca86c91bf0b998b697c566e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7670a7eb8fffbb3aef8cc3e20f2170c1b2674bd4
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402132"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638245"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>ボリューム ライセンス サービス センター (VLSC) 経由で購入したサブスクリプションにライセンスを追加する
 
@@ -36,9 +36,9 @@ ms.locfileid: "44402132"
 
 ::: moniker range="o365-worldwide"
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+1. 管理センターで、**[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
 
-2. ライセンスを追加するサブスクリプションを選択し、**ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。
+2. ライセンスを追加するサブスクリプションを選択し、 **ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。
 
 3. 購入を完了するには、VLSC で次の手順に従います。
 
@@ -46,9 +46,9 @@ ms.locfileid: "44402132"
 
 ::: moniker range="o365-germany"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
-2. [サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、**ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。
+2. [サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、 **ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。
 
 3. 購入を完了するには、VLSC で次の手順に従います。 
 
@@ -56,9 +56,9 @@ ms.locfileid: "44402132"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[サブスクリプション]</a> ページに移動します。
+1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
-2. [サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、**ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。
+2. [サブスクリプション] ページで、ライセンスを追加するサブスクリプションを選択してから、 **ボリュームライセンスサービスセンター (VLSC)** のリンクを選択します。
 
 3. 購入を完了するには、VLSC で次の手順に従います。
 

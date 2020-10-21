@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft 365 管理センターでサードパーティ製アプリをアクティブ化および管理する方法について説明します。
-ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: c1565f0edb2f78302c0186aa3bd89d1ff5a51e5c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429992"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638173"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>組織のサードパーティ製アプリのサブスクリプションを管理する
 
@@ -28,7 +28,7 @@ ms.locfileid: "45429992"
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更されました。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
@@ -39,16 +39,16 @@ ms.locfileid: "45429992"
 
 サードパーティ製アプリを購入するには、いくつかの方法があります。
 
-- **直接購入**–お客様は、 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)または[appsource](https://www.appsource.com/)からサブスクリプションを直接購入できます。
-- **パートナー購入**–パートナーと協力してサブスクリプションを購入します。
-- **Microsoft 提案**: サードパーティ製のアプリを含む microsoft Sales からの提案に対応します。
+- **直接購入** –お客様は、 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)または [appsource](https://www.appsource.com/)からサブスクリプションを直接購入できます。
+- **パートナー購入** –パートナーと協力してサブスクリプションを購入します。
+- **Microsoft 提案** : サードパーティ製のアプリを含む microsoft Sales からの提案に対応します。
 
 お客様は、お客様がアプリを購入し、microsoft のカスタマーアグリーメントに同意すると、Microsoft 365 管理センターまたは Microsoft Store for Business でそれらを管理することができます。
 
 アプリプロバイダーは、フラットなレートで、またはユーザーのライセンスを購入することで、アプリを販売します。
 
-- **一律レート**–サイトベースの価格とも呼ばれ、アプリの価格は月または年間の価格になります。 [アプリ] ページで、ライセンスの数量が無制限に一覧表示されます。
-- **ライセンス**–アプリの価格はライセンスによるものです。 顧客が組織内の各ユーザーにライセンスを割り当てる
+- **一律レート** –サイトベースの価格とも呼ばれ、アプリの価格は月または年間の価格になります。 [アプリ] ページで、ライセンスの数量が無制限に一覧表示されます。
+- **ライセンス** –アプリの価格はライセンスによるものです。 顧客が組織内の各ユーザーにライセンスを割り当てる
 
 ## <a name="supported-regions"></a>サポートされる地域
 
@@ -73,7 +73,7 @@ ms.locfileid: "45429992"
 
 1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
-3. [**設定 & アクション**] で、[**パブリッシャーのポータルで管理**] を選択します。
+3. [ **設定 & アクション**] で、[ **パブリッシャーのポータルで管理**] を選択します。
 
 アプリをアクティブ化できるアプリの発行元のサイトが表示されます。
 
@@ -91,7 +91,7 @@ ms.locfileid: "45429992"
 
 ## <a name="assign-licenses"></a>ライセンスを割り当てる
 
-管理者は、ユーザーに割り当てる前に、サードパーティ製のアプリをアクティブ化する必要があります。 これらは、サードパーティの発行元のポータルでアクティブ化されています。 [アプリ] ページの [**設定 & アクション**] で、ライセンスを割り当てるリンクを選択します。
+管理者は、ユーザーに割り当てる前に、サードパーティ製のアプリをアクティブ化する必要があります。 これらは、サードパーティの発行元のポータルでアクティブ化されています。 [アプリ] ページの [ **設定 & アクション**] で、ライセンスを割り当てるリンクを選択します。
 
 1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
@@ -103,25 +103,25 @@ ms.locfileid: "45429992"
 
 1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
-3. [**ライセンス数量の変更**] を選択します。
+3. [ **ライセンス数量の変更**] を選択します。
 
 ## <a name="manage-payment-methods"></a>支払方法を管理する
 
 サービスとしてのソフトウェアアプリにはそれぞれ、請求プロファイルが割り当てられています。 請求プロファイルを使用すると、請求書に含める製品をカスタマイズしたり、請求書に支払いを行ったりすることができます。 これには、次のものが含まれます。
 
-- **支払い方法**–クレジットカードまたは小切手/ワイヤ転送
-- **連絡先情報**-請求先住所と連絡先の名前
-- **役割**–請求プロファイルを変更したり、支払いを行ったり、購入するために請求書プロファイルの支払い方法を使用したりできるようにする役割。
+- **支払い方法** –クレジットカードまたは小切手/ワイヤ転送
+- **連絡先情報** -請求先住所と連絡先の名前
+- **役割** –請求プロファイルを変更したり、支払いを行ったり、購入するために請求書プロファイルの支払い方法を使用したりできるようにする役割。
 
-請求プロファイルの詳細については、「[課金プロファイル](https://docs.microsoft.com/microsoft-store/billing-profile)について」を参照してください。
+請求プロファイルの詳細については、「 [課金プロファイル](https://docs.microsoft.com/microsoft-store/billing-profile)について」を参照してください。
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>サービスとしてのソフトウェアアプリサブスクリプションの課金プロファイルを変更する
 
 1. 管理センターで、[製品アプリの**課金**] ページに移動し  >  **Your products**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a>ます。
 2. 管理するアプリを検索して選択します。
-3. [**課金プロファイル**] の横にある [**編集**] を選択します。
+3. [ **課金プロファイル**] の横にある [ **編集**] を選択します。
 
-請求書の詳細について[は、「bill または請求書](billing-and-payments/understand-your-invoice.md)について」を参照してください。
+請求書の詳細について [は、「bill または請求書](billing-and-payments/understand-your-invoice.md)について」を参照してください。
 
 ## <a name="cancel-a-software-as-a-service-app-subscription"></a>サービスとしてのソフトウェアアプリのサブスクリプションをキャンセルする
 

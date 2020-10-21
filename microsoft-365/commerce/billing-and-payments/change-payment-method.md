@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 一般法人向けサブスクリプションの支払い方法を更新する方法について説明します。
-ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 0c739597253db8b54b12cacfbaf55fce9cb36dd2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432417"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638605"
 ---
 # <a name="change-your-payment-method"></a>支払方法を変更する
 
@@ -43,7 +43,7 @@ ms.locfileid: "44432417"
 > [!IMPORTANT]
 > 一部の国または地域では、銀行口座引き落としによる支払いを利用できません。
 
- **クレジット カードまたは銀行口座の情報だけを変更する場合** 「[支払い方法の管理](manage-payment-methods.md)」を参照してください。
+ **クレジット カードまたは銀行口座の情報だけを変更する場合** 「 [支払い方法の管理](manage-payment-methods.md)」を参照してください。
 
  **課金される頻度だけを変更する場合** 「[支払い頻度を変更する](change-payment-frequency.md)」を参照してください。
   
@@ -65,9 +65,9 @@ ms.locfileid: "44432417"
 > [!NOTE]
 > 支払方法の切り替え後、ユーザーのライセンス割り当ては以前と同じになります。
   
- **支払い頻度を変更する** サブスクリプションの支払い頻度を変更する場合は、年次から月次、または月次から年次に変更する必要があります。そのためには、 [Microsoft サポートに連絡](../../admin/contact-support-for-business-products.md)する必要があります。
+ **支払い頻度を変更する** サブスクリプションの支払い頻度を変更する場合は、年次から月次、または月次から年次に変更する必要があります。そのためには、 [Microsoft サポートに連絡](../../admin/contact-support-for-business-products.md) する必要があります。
   
- **クレジット カードまたは銀行口座の情報だけを変更する場合** 「[支払い方法の管理](manage-payment-methods.md)」を参照してください。
+ **クレジット カードまたは銀行口座の情報だけを変更する場合** 「 [支払い方法の管理](manage-payment-methods.md)」を参照してください。
   
  **未払額がある場合、どうなりますか。**
   
@@ -114,7 +114,7 @@ ms.locfileid: "44432417"
   
 請求書払いからクレジット カード払いに変更すると、自動的に新しいサブスクリプションが作成され、ユーザーが新しいサブスクリプションに移動します。その後、古いサブスクリプションが無効になります。ユーザーはサービスの中断に気付かないので、心配は無用です。すべての情報は新しいサブスクリプションで利用できます。
 
-1. 管理センターの [**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 変更するサブスクリプションを見つけます。 [**お支払いの詳細**] セクションで、[**お支払いの詳細の変更**] を選択します。
   
@@ -147,7 +147,7 @@ ms.locfileid: "44432417"
 1. <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>に移動し、現在のサブスクリプションと同じサブスクリプションを購入します。 チェックアウト時に、請求書による支払いオプションを選択します。
 
     > [!IMPORTANT]
-    > 管理センターの [**製品**] ページを使用してサブスクリプションを購入することはできません。 <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>を使用する必要があります。
+    > 管理センターの [ **製品** ] ページを使用してサブスクリプションを購入することはできません。 <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>を使用する必要があります。
 
 2. 購入が完了したら、元のサブスクリプションをキャンセルします。 ユーザーが自動的に新しいサブスクリプションに移動します。
 
@@ -178,7 +178,7 @@ ms.locfileid: "44432417"
 > [!NOTE]
 > 請求書で支払うオプションは、サブスクリプションの料金が一定の金額を超えた場合に限られます (サービスの提供場所によって異なります)。請求書支払いの金額が大きい場合、与信審査が必要になることがあります。詳細については、「[サブスクリプションを支払う方法](pay-for-your-subscription.md)」を参照してください。
 
-1. 管理センターの [**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターの **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[サブスクリプション]</a> ページに移動します。
 
 2. 変更するサブスクリプションを見つけます。 [**支払い方法**] セクションで、[**お支払いの詳細の変更**] を選択します。
   

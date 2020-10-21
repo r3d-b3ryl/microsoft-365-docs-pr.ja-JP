@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: 2019年9月14日以降に、欧州経済地域の31国の銀行は、支払いを処理する前にオンライン購入を行うユーザーの身元を確認する必要があります。
 keywords: 支払いサービスディレクティブ2、強力な顧客認証、多要素認証
-ms.openlocfilehash: 571664736ac4c6e825398a076597bf4b69ec31a8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402216"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638425"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>一般法人向けお客様向けのお支払いサービス指令2および強力な顧客認証
 
 2019年9月14日以降に、欧州経済地域の31国の銀行は、支払いを処理する前にオンライン購入を行うユーザーの身元を確認する必要があります。 この検証では、オンライン購入が安全で保護されていることを確認するために、多要素認証が必要になります。 この検証要件の日付は、一部の国では遅延されます。 
 
-詳細については、「Microsoft FAQ」を参照してください。[支払いサービスディレクティブ2と強力な顧客認証について説明](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)します。
+詳細については、「Microsoft FAQ」を参照してください。 [支払いサービスディレクティブ2と強力な顧客認証について説明](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)します。
 
 ## <a name="when-is-multi-factor-authentication-required"></a>多要素認証が必要になるのはいつですか?
 

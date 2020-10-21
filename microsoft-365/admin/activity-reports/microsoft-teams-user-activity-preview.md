@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ユーザーアクティビティレポートを取得して、組織内の Teams アクティビティを把握する方法について説明します。
-ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104512"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637069"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ
 
@@ -37,14 +37,14 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 2. ダッシュボードのホームページから、Microsoft Teams のアクティビティカードの [ **詳細表示** ] ボタンをクリックします。
-  
+
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Microsoft Teams ユーザー アクティビティ レポートを解釈する
 
 [ **ユーザーアクティビティ** ] タブを選択すると、Teams レポートでユーザーアクティビティを表示できます。 <br/>![Microsoft 365 レポート-Microsoft Teams ユーザーアクティビティ。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
 レポートに列を追加または削除するには、[ **列の選択** ] を選択します。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 **音声時間**、**ビデオ時間**、および**スクリーン共有時間**のエクスポート形式は、日付形式に従います。
+また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 **音声時間**、**ビデオ時間**、**スクリーン共有時間**のエクスポート形式は、[形式の形式に従っています。
 
 |アイテム|説明|
 |:-----|:-----|

@@ -15,74 +15,74 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686036"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637249"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
-Microsoftは、Azure Active Directory（Azure AD）を使用して、自社のクラウド製品にIDaaS (Identity as a Service)を提供します。 Microsoft 365 for enterprise を採用するために、Contoso 社の IDaaS ソリューションは社内 id プロバイダーを活用する必要がありましたが、既存の信頼できるサードパーティ id プロバイダーとのフェデレーション認証を含める必要がありました。
+Microsoft は、Azure Active Directory (Azure AD) を通じて、クラウド製品全体で Id (IDaaS) をサービスとして提供します。 企業向けの Microsoft 365 を採用するために、Contoso IDaaS ソリューションは社内 id プロバイダーを使用し、信頼できる既存のサードパーティ id プロバイダーとのフェデレーション認証を含める必要がありました。
 
-## <a name="contosos-active-directory-domain-services-forest"></a>ContosoのActive Directoryドメイン　サービス フォレスト
+## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory ドメインサービスフォレスト
 
-Contosoは、contoso.comに1つのActive Directoryドメインサービス（AD DS）フォレストを使用し、7つのサブドメイン（世界中の各地域に1つ）を使用します。 本社、地域ハブ オフィス、サテライト オフィスには、ローカルの認証と承認のためのドメイン コントローラーが含まれています。
+Contoso 社では \. 、世界の地域ごとに1つずつ、7つのサブドメインを持つ contoso com に対して1つの Active Directory ドメインサービス (AD DS) フォレストを使用しています。 本社、地域ハブ オフィス、サテライト オフィスには、ローカルの認証と承認のためのドメイン コントローラーが含まれています。
 
-これは、地域ハブを含む世界のさまざまな地域の地域ドメインを持つ Contoso フォレストです。
+地域ハブを含む世界のさまざまな部分については、地域ドメインを含む Contoso フォレストを参照してください。
 
 ![Contoso 社の世界中のフォレストとドメイン](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contosoは、contoso.comフォレストのアカウントとグループをMicrosoft 365の作業とサービスの認証・承認に使用したいと考えていました。
+Contoso 社は、 \. Microsoft 365 のワークロードおよびサービスの認証と承認のために、contoso com フォレスト内のアカウントとグループを使用することを決定しました。
 
-## <a name="contosos-federated-authentication-infrastructure"></a>Contoso 社のフェデレーション認証インフラストラクチャ
+## <a name="the-contoso-federated-authentication-infrastructure"></a>Contoso 社のフェデレーション認証インフラストラクチャ
 
 Contoso 社では次のことが可能です。
 
-- 顧客は Microsoft、Facebook、または Google のメール アカウントを使用してパブリック Web サイトにサインインできます。
-- ベンダーおよびパートナーは、LinkedIn、Salesforce、または Google のメール アカウントを使用してパートナー エクストラネットにサインインできます。
+- お客様は、Microsoft、Facebook、または Google のメールアカウントを使用して、会社のパブリック web サイトにサインインします。
+- ベンダーおよびパートナーは、自分の LinkedIn、Salesforce、または Google のメールアカウントを使用して、会社のパートナーエクストラネットにサインインします。
 
-これは、公開 Web サイト、パートナーのエクストラネット、および Active Directory フェデレーション サービス (AD FS) サーバーのセットを含む Contoso 社の DMZ です。DMZ は、顧客、パートナー、およびインターネット サービスを含むインターネットに接続されています。
+ここでは、パブリック web サイト、パートナーエクストラネット、および AD FS サーバーのセットを含む Contoso DMZ を示します。DMZ は、顧客、パートナー、インターネットサービスを含むインターネットに接続されています。
 
-![Contoso 社の顧客とパートナー向けのフェデレーション認証のサポート](../media/contoso-identity/contoso-identity-fig2.png)
+![顧客とパートナーのフェデレーション認証の Contoso サポート](../media/contoso-identity/contoso-identity-fig2.png)
  
-DMZ の AD FS サーバーは、ID のプロバイダーが提供しパブリック Web サイトにアクセスするための顧客資格情報、およびパートナー エクストラネットにアクセスするためのパートナー資格情報の認証を容易にします。
+DMZ の AD FS サーバーは、パブリック web サイトにアクセスし、パートナーエクストラネットにアクセスするためのパートナー資格情報を提供するために、id プロバイダーによる顧客資格情報の認証を容易にします。
 
-Contoso 社は、このインフラストラクチャを維持し、顧客とパートナーの認証専用で使用することに決定しました。Contoso 社の ID 設計者は、このインフラストラクチャから Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) および [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) ソリューションへの変換を調査中です。
+Contoso 社は、このインフラストラクチャを維持し、顧客とパートナーの認証に専念することを決定しました。Contoso 社の id 設計者は、このインフラストラクチャから Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) および [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) ソリューションへの変換について調査しています。
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>クラウドベース認証のためのパスワードハッシュ同期によるハイブリッドID
 
-Contosoは、自社運用のAD DSフォレストをMicrosoft 365クラウドリソースへの認証に活用したいと考えていました。 ここから、パスワードハッシュ同期（PHS）が誕生しました。
+Contoso 社は、オンプレミスの AD DS フォレストを使用して、Microsoft 365 cloud resources への認証を希望しています。 パスワードハッシュ同期 (PHS) の使用を決定しました。
 
-PHS は、オンプレミスの AD DS フォレストを、Microsoft 365 for enterprise サブスクリプションの Azure AD テナントと同期し、ユーザーアカウントとグループアカウント、およびハッシュされたバージョンのユーザーアカウントパスワードをコピーします。 
+PHS は、オンプレミスの AD DS フォレストを、Microsoft 365 for enterprise サブスクリプションの Azure AD テナントと同期し、ユーザーアカウントとグループアカウント、およびハッシュされたバージョンのユーザーアカウントパスワードをコピーします。
 
-継続的なディレクトリ同期を実行するために、ContosoはAzure AD 連携ツールをパリのデータセンター内のサーバーに展開しました。 
+ディレクトリ同期を実行するために、Contoso 社では、パリデータセンター内のサーバーに Azure AD Connect ツールを展開しました。
 
-これは、変更のために Contoso AD DS フォレストをポーリングし、それらの変更を Azure AD テナントと同期する Azure AD Connect を実行しているサーバーです。
+Azure ad Connect を実行しているサーバーは、変更については Contoso AD DS フォレストをポーリングしてから、それらの変更を Azure AD テナントと同期します。
 
-![Contoso 社の PHS ディレクトリ同期インフラストラクチャ](../media/contoso-identity/contoso-identity-fig4.png)
+![Contoso PHS ディレクトリ同期インフラストラクチャ](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>ID およびデバイス アクセスの条件付きアクセス ポリシー
 
 Contosoは、3 つの保護レベルに対して Azure AD と Intune の[条件付きアクセス ポリシー](identity-access-policies.md)セットを作成しました。
 
-- **ベースライン**保護はすべてのユーザーアカウントに適用されます。
-- **選定**保護が上級幹部および幹部職員に適用されます。
-- **高規制**保護は、高度に規制されたデータにアクセスできる財務、法務、および研究部門の特定のユーザーに適用されます。
+- *ベースライン* の保護は、すべてのユーザーアカウントに適用されます。
+- *重要* な保護は、シニアリーダーシップおよび経営スタッフに適用されます。
+- *高度* な規制による保護は、厳しく規制されたデータにアクセスできる財務、法律、研究部門の特定のユーザーに適用されます。
 
-これが、Contoso 社が結果として得られる ID およびデバイスの条件付きアクセス ポリシーのセットです。
+Contoso identity とデバイスの条件付きアクセスポリシーの結果セットを次に示します。
 
 ![Contoso 社の ID およびデバイスの条件付きアクセス ポリシー](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>次の手順
 
-Contoso 社が Configuration Manager インフラストラクチャを利用して、現在の Windows 10 Enterprise を組織全体に展開し、維持する方法について[説明](contoso-win10.md)します。
+Contoso 社が Microsoft エンドポイント構成マネージャーインフラストラクチャを使用して、組織全体に現在の Windows 10 Enterprise を展開し、維持する方法に[ついて説明](contoso-win10.md)します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 の id ロードマップ](identity-roadmap-microsoft-365.md)
+[Microsoft 365 の ID ロードマップ](identity-roadmap-microsoft-365.md)
 
-[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
