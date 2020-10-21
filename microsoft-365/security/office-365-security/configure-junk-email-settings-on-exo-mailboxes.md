@@ -1,5 +1,5 @@
 ---
-title: Exchange Online のメールボックスで迷惑メール設定を構成する
+title: Exchange Online メールボックスで迷惑メール設定を構成する
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -16,14 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online メールボックスの迷惑メール設定を構成する方法について説明します。 これらの設定の多くは、Outlook または web 上の Outlook でユーザーが使用できます。
-ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203349"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626157"
 ---
-# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online のメールボックスで迷惑メール設定を構成する
+# <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online メールボックスで迷惑メール設定を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,7 +36,7 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織では、�
 
   - スパム**対策ポリシーに基づいて、メッセージを [迷惑メール] フォルダーに移動する**: スパムフィルター verdict の [**メッセージを迷惑メールフォルダーに移動する**] アクションを使用してスパム対策ポリシーを構成した場合、迷惑メールフィルタールールは、メッセージがメールボックスに配信された後に、そのメッセージを迷惑メールフォルダーに移動します。 スパムフィルター処理の詳細については、「verdicts」の「スパム [対策ポリシーの構成 EOP](configure-your-spam-filter-policies.md)」を参照してください。 同様に、0時間の自動削除 (ZAP) によって配信されたメッセージがスパムまたはフィッシングであると判断された場合、迷惑メールフィルタールールはメッセージを迷惑メールフォルダースパムフィルター verdict アクション **に移動** するための迷惑メールフォルダーに移動します。 ZAP の詳細については、「 [Exchange Online のゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)」を参照してください。
 
-  - **ユーザーが outlook または web 上の outlook で自分自身に対して構成する迷惑メール設定**: セーフリスト _コレクション_ は、各メールボックスの差出人セーフリスト、宛先セーフリスト、および受信拒否リストです。 これらのリストのエントリは、迷惑メールルールがメッセージを受信トレイまたは迷惑メールフォルダーに移動するかどうかを決定します。 ユーザーは、Outlook または web 上の Outlook (旧称 Outlook Web App) で自分のメールボックスのセーフリストコレクションを構成できます。 管理者は、任意のユーザーのメールボックスでセーフリストコレクションを構成できます。
+  - **ユーザーが outlook または web 上の outlook で自分自身に対して構成する迷惑メール設定**: セーフリスト _コレクション_ は、各メールボックスの [信頼できる差出人のリスト]、[宛先セーフリスト]、および [受信拒否リスト] の一覧です。 これらのリストのエントリは、迷惑メールルールがメッセージを受信トレイまたは迷惑メールフォルダーに移動するかどうかを決定します。 ユーザーは、Outlook または web 上の Outlook (旧称 Outlook Web App) で自分のメールボックスのセーフリストコレクションを構成できます。 管理者は、任意のユーザーのメールボックスでセーフリストコレクションを構成できます。
 
 メールボックスで迷惑メールルールが有効になっている場合、EOP は迷惑メールフォルダーにメッセージを移動することができます。これにより、スパムフィルター処理 verdict アクションに基づいて、メールボックスの迷惑メールフォルダーにメッセージを **移動** したり、受信拒否リストに含まれるメッセージを迷惑メールフォルダーに配信することができなくなります。
 
@@ -104,7 +104,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 ****
 
-|Set-mailboxjunkemailconfiguration のパラメーター|Outlook on the web の設定|
+|パラメーター Set-MailboxJunkEmailConfiguration|Outlook on the web の設定|
 |---|---|
 |_BlockedSendersAndDomains_|**次の送信者またはドメインからのメールを [迷惑メール] フォルダーに移動する**|
 |_ContactsTrusted_|**自分の連絡先からのメールを信頼する**|
