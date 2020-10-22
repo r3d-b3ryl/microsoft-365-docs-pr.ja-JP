@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: 情報バリアを使用して、組織内の Microsoft Teams を使用して通信のコンプライアンスを確保します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379198"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636964"
 ---
 # <a name="information-barriers"></a>情報バリア
 
@@ -35,7 +35,7 @@ Microsoft Teams、SharePoint Online、OneDrive for Business では、情報バ�
 - 研究チームは、製品開発チームとの通話またはオンラインチャットのみを行います。
 
 > [!IMPORTANT]
-> 情報の障壁は、2つの方法の制限 ***のみをサポート*** します。 マーケティングなどの1つの方法の制限は、マーケティングとは通信できませんが、営業 ***はサポート***されていません。
+> 情報バリア ***は**、2つの方法の制限のみをサポートしています。 マーケティングなどの1つの方法の制限は、マーケティングとの通信はサポートされて_い_ません。
 
 これらのすべてのシナリオ例 (およびその他) については、Microsoft Teams での通信を禁止または許可するように情報バリアポリシーを定義できます。 このようなポリシーを使用すると、ユーザーが不要な通話やチャットを行うことができなくなり、Microsoft Teams 内の特定のグループとのみ通信できるようになります。 情報バリアポリシーが有効になっていると、そのポリシーの対象となっているユーザーが Microsoft Teams 内の他のユーザーと通信しようとするたびに、チェックが行われて、通信 (情報バリアポリシーによって定義されている) を回避 (または許可) します。 情報の障壁に関するユーザーの作業の詳細については、「 [Microsoft Teams の情報障壁](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)」を参照してください。
 
@@ -85,7 +85,7 @@ Microsoft Teams、SharePoint Online、OneDrive for Business では、情報バ�
 
 情報バリアポリシーを定義、検証、または編集するには、PowerShell コマンドレットを熟知している必要があります。 [「How to](information-barriers-policies.md)」の記事では PowerShell コマンドレットの例をいくつか示していますが、パラメーターなどの追加の詳細については、組織のために知っておく必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Microsoft Teams の情報障壁の詳細を知る](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 - [情報バリアポリシーに使用できる属性を参照してください。](information-barriers-attributes.md)

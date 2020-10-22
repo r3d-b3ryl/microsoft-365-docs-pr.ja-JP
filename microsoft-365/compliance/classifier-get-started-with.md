@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を向上させる方法について説明します。
-ms.openlocfilehash: 30f3c45945b4879be17eadfe04e8ccb8526df16a
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379255"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636986"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -70,7 +70,7 @@ UI の分類子にアクセスするには、次のようにします。
 
 ### <a name="overall-workflow"></a>全体的なワークフロー
 
-カスタム trainable 分類子を作成する全体的なワークフローの詳細については、「 [customer trainable 分類子を作成するためのプロセスフロー](classifier-learn-about.md#process-flow-for-creating-custom-classifiers) 」を参照してください。
+カスタム trainable 分類子を作成する全体的なワークフローの詳細については、「 [customer trainable 分類子を作成するためのプロセスフロー](classifier-learn-about.md#process-flow-for-creating-custom-classifiers)」を参照してください。
 
 ### <a name="seed-content"></a>Seed コンテンツ
 
@@ -81,7 +81,7 @@ Trainable 分類子を個別に特定のカテゴリのコンテンツにする�
 
 ### <a name="testing-content"></a>コンテンツのテスト
 
-Trainable クラシファイアが、予測モデルを構築するのに十分な正のサンプルを処理したら、その分類をテストして、分類項目に一致する項目と、それに一致しないアイテムを正しく区別できるかどうかを確認する必要があります。 これを行うには、より大きなユーザーが選択したコンテンツセットを別のものにします。これは、カテゴリとサンプルに分類される必要のあるサンプルで構成されます。 それらを処理した後、結果を手動で調べ、各予測が正しいかどうか、または確認できないかどうかを確認します。 Trainable 分類子は、このフィードバックを使用して予測モデルを改善します。
+Trainable クラシファイアが、予測モデルを構築するのに十分な正のサンプルを処理したら、その分類をテストして、分類項目に一致する項目と、それに一致しないアイテムを正しく区別できるかどうかを確認する必要があります。 これを行うには、多くの場合、より大きなユーザー選択コンテンツセットを選択します。これは、カテゴリとサンプルに含まれるサンプルで構成されています。 最初に提供した最初のシードデータとは異なるデータを使用してテストする必要があります。 それらを処理した後、結果を手動で調べ、各予測が正しいかどうか、または確認できないかどうかを確認します。 Trainable 分類子は、このフィードバックを使用して予測モデルを改善します。
 
 > [!TIP]
 > 最良の結果を得るには、正と負の一致が均等に分配されたテストサンプルセットに、少なくとも200のアイテムが含まれている必要があります。
@@ -90,24 +90,24 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 
 1. 50-500 の seed コンテンツ項目の間で収集します。 これらは、trainable 分類子が分類カテゴリに含まれるコンテンツの種類を厳密に表すサンプルである必要があります。 サポートされているファイルの種類については、「 [SharePoint Server での既定のクロール対象ファイル名拡張子および解析済みファイルの種類](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 」を参照してください。
 
-> [!IMPORTANT]
-> シードおよびテストサンプルアイテムは、暗号化する必要があり、英語である必要があります。
+   > [!IMPORTANT]
+   > シードおよびテストサンプルアイテムは、暗号化する必要があり、英語である必要があります。
 
-> [!IMPORTANT]
-> Seed セット内のアイテムがカテゴリの **強力な** 例であることを確認してください。 Trainable 分類子は、最初にそのモデルをシードしたものに基づいてモデルを作成します。 この分類子は、すべてのシードサンプルが強力なものであることを前提としていますが、サンプルがカテゴリに対して弱いまたは否定的一致であるかどうかを知ることはできません。
+   > [!IMPORTANT]
+   > Seed セット内のアイテムがカテゴリの **強力な** 例であることを確認してください。 Trainable 分類子は、最初にそのモデルをシードしたものに基づいてモデルを作成します。 この分類子は、すべてのシードサンプルが強力なものであることを前提としていますが、サンプルがカテゴリに対して弱いまたは否定的一致であるかどうかを知ることはできません。
 
 2. Seed *コンテンツを保持する*専用の SharePoint Online フォルダーにシードコンテンツを配置します。 サイト、ライブラリ、およびフォルダーの URL をメモしておきます。
 
-> [!TIP]
-> Seed データ用の新しいサイトとフォルダーを作成する場合は、そのシードデータを使用する trainable 分類子を作成する前に、少なくとも1時間、その場所にインデックスを作成するようにしてください。
+   > [!TIP]
+   > Seed データ用の新しいサイトとフォルダーを作成する場合は、そのシードデータを使用する trainable 分類子を作成する前に、少なくとも1時間、その場所にインデックスを作成するようにしてください。
 
-3. コンプライアンス管理者またはセキュリティ管理者の役割アクセスを使用して microsoft 365 コンプライアンスセンターにサインインし、 **microsoft 365 コンプライアンスセンター**または**microsoft 365 セキュリティセンター**の  >  **データ分類**を開く
+3. コンプライアンス管理者またはセキュリティ管理者の役割アクセスを使用して microsoft 365 コンプライアンスセンターにサインインし、 **microsoft 365 コンプライアンスセンター**または**microsoft 365 セキュリティセンター**の  >  **データ分類**を開きます。
 
 4. [ **Trainable 分類子** ] タブを選択します。
 
 5. [ **Create trainable クラシファイア**] を選択します。
 
-6. `Name` `Description` この trainable 分類子で識別するアイテムのカテゴリのフィールドに適切な値を入力します。
+6. `Name` `Description` この trainable クラシファイアで識別するアイテムのカテゴリのフィールドとフィールドに適切な値を入力します。
 
 7. 手順2で、seed コンテンツサイトの SharePoint Online サイト、ライブラリ、およびフォルダーの URL を選択します。 [] を選択 `Add` します。
 
@@ -117,18 +117,18 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 
 10. 分類子を選択することによって、[詳細] ページを表示できるようになりました。
 
-
-![テストの準備が整った trainable クラシファイア](../media/classifier-trainable-ready-to-test-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![テストの準備が整った trainable クラシファイア](../media/classifier-trainable-ready-to-test-detail.png)
 
 11. 最良の結果を得るために、少なくとも200のテストコンテンツ項目 (1万 max) を収集します。 これらのアイテムは、強力な陽性、強力なネガ、およびそれらの性質上の明確にわかりにくい項目を組み合わせたものにする必要があります。 サポートされているファイルの種類については、「 [SharePoint Server での既定のクロール対象ファイル名拡張子および解析済みファイルの種類](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) 」を参照してください。
 
-> [!IMPORTANT]
-> サンプルアイテムは、暗号化する必要がなく、英語でなければなりません。
+    > [!IMPORTANT]
+    > サンプルアイテムは、暗号化する必要がなく、英語でなければなりません。
 
 12. テストコンテンツ *のみ*を保持する専用の SharePoint Online フォルダーにテストコンテンツを配置します。 SharePoint Online のサイト、ライブラリ、およびフォルダーの URL をメモしておきます。
 
-> [!TIP]
-> テストデータ用に新しいサイトとフォルダーを作成する場合は、そのシードデータを使用する trainable 分類子を作成する前に、少なくとも1時間、その場所にインデックスを設定するようにしてください。
+    > [!TIP]
+    > テストデータ用に新しいサイトとフォルダーを作成する場合は、そのシードデータを使用する trainable 分類子を作成する前に、少なくとも1時間、その場所にインデックスを設定するようにしてください。
 
 13. [] を選択 `Add items to test` します。
 
@@ -138,17 +138,20 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 
 16. Trainable クラシファイアがテストファイルの処理を完了すると、詳細ページの状態はに変わり `Ready to review` ます。 テストサンプルサイズを増やす必要がある場合は、 `Add items to test` trainable クラシファイアが追加のアイテムを処理することを選択して許可します。
 
-![スクリーンショットを確認する準備ができました](../media/classifier-trainable-ready-to-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![スクリーンショットを確認する準備ができました](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. [ `Tested items to review` タブ] を選択してアイテムを確認します。
 
 18. Microsoft 365 は、一度に30個のアイテムを提示します。 それらを確認し、 `We predict this item is "Relevant". Do you agree?` ボックスで、またはのどちらかを選択し `Yes` `No` `Not sure, skip to next item` ます。 モデル精度は30アイテムごとに自動的に更新されます。
 
-![[アイテムの確認] ボックス](../media/classifier-trainable-review-detail.png)
+    > [!div class="mx-imgBorder"]
+    > ![[アイテムの確認] ボックス](../media/classifier-trainable-review-detail.png)
 
 19. *少なく*とも200のアイテムを確認します。 精度スコアが安定すると、[ **発行** ] オプションが使用可能になり、分類子の状態が表示され `Ready to use` ます。
 
-![精度スコアと発行の準備ができている](../media/classifier-trainable-review-ready-to-publish.png)
+    > [!div class="mx-imgBorder"]
+    > ![精度スコアと発行の準備ができている](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. 分類子を発行します。
 
@@ -159,10 +162,15 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 この手順を使用して、ユーザー設定の trainable 分類子をトレーニング、レビュー、調整する権限を他のユーザーに付与します。  
  
 1. グローバル管理者または電子情報開示管理者は、分類子の作成者として、「 [connect To Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true)」の手順に従って、PowerShell を使用してコンプライアンスセンターに接続します。
-2. 次に示すコマンドを実行します。
-```powershell
-Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-```
-例: `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
 
-このコマンドは複数回実行して複数のユーザーを追加することができます。 Exchange Online Protection (EOP) の役割グループのみを追加でき、Azure の役割グループは追加できないことに注意してください。
+2. 次に示すコマンドを実行します。
+
+   ```powershell
+   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
+   ```
+   
+   次に、例を示します。
+   
+   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
+
+   このコマンドは複数回実行して複数のユーザーを追加することができます。 Exchange Online Protection (EOP) の役割グループのみを追加でき、Azure の役割グループは追加できないことに注意してください。

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 以外のクラウドアプリで dlp ポリシーを使用する方法について説明します。
-ms.openlocfilehash: dd5a7a4bc0725d0785daec6b7635047cd91f20a2
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: 0b588bf27738a0f9a8078999311294f74e5193c0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422759"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649658"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Microsoft 以外のクラウドアプリのデータ損失防止ポリシーを使用する (プレビュー)
 
@@ -45,7 +45,7 @@ Microsoft 以外のクラウドアプリへの DLP ポリシーの使用を開�
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>クラウドアプリのセキュリティ環境を準備する
 
-Microsoft 以外のクラウドアプリへの DLP ポリシーは、Cloud App Security DLP 機能を使用します。 これを使用するには、Cloud App Security 環境を準備する必要があります。 手順については、「 [Set isntant visibility, protection, and ガバナンスの操作](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)」を参照してください。
+Microsoft 以外のクラウドアプリへの DLP ポリシーは、Cloud App Security DLP 機能を使用します。 これを使用するには、Cloud App Security 環境を準備する必要があります。 手順については、「 [アプリのためのインスタント表示、保護、ガバナンスのアクションを設定](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)する」を参照してください。
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Microsoft 以外のクラウドアプリを接続する
 

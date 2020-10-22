@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Microsoft 365 のコンプライアンスをすばやく始めるのに役立つタスクについて説明します。
-ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: a8fd5d72fd87fdbf9c8c3c6da094a58544efd6e8
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341183"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651363"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスを開始するためのクイック タスク
 
@@ -68,13 +68,7 @@ Microsoft では、管理者アクセス許可の悪用、マルウェアアク�
 
 カスタム通知ポリシーを作成するためのステップバイステップのガイダンスについて [は、「セキュリティ/コンプライアンスセンターのアラートポリシー](alert-policies.md)」を参照してください。
 
-## <a name="task-5-configure-just-in-time-access-for-your-administrators"></a>作業 5: 管理者に対してジャストインタイムアクセスを構成する
-
-一部のユーザーに機密情報や重要なネットワーク構成設定へのアクセスを許可することは、侵害されたアカウントまたは内部の脅威のアクティビティに対して潜在的な経路です。 [特権アクセス管理](privileged-access-management-overview.md) は、機密データへのアクセスを制限したり、重要な構成設定にアクセスしたりすることによって、違反から組織を保護し、コンプライアンスのベストプラクティスに準拠するために役に立ちます。 管理者が継続的にアクセスするのではなく、管理者特権を必要とするタスクに対してジャストインタイムのアクセスルールが実装されています。 Microsoft 365 で特権アクセス管理を有効にすることで、組織はゼロに立った権限で運用し、管理者アクセスの脆弱性に対する防御層を提供できます。
-
-特権アクセス管理を構成するためのステップごとのガイダンスについては、「 [特権アクセス管理の概要](privileged-access-management-configuration.md)」を参照してください。 特権アクセス管理のライセンス情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365)」を参照してください。
-
-## <a name="task-6-classify-and-protect-sensitive-data"></a>作業 6: 機密データを分類して保護する
+## <a name="task-5-classify-and-protect-sensitive-data"></a>作業 5: 機密データを分類して保護する
 
 組織の従業員は、業務を行うために組織内外の関係者と共同作業を行います。このためコンテンツはファイアウォールの内側だけでなく、さまざまなデバイス、アプリ、サービスを越えて存在することになります。この場合、組織のビジネス ポリシーとコンプライアンス ポリシーを満たす安全な方法でコンテンツを保護することが必要です。
 
@@ -82,7 +76,7 @@ Microsoft では、管理者アクセス許可の悪用、マルウェアアク�
 
 機密ラベルを構成して使用するための詳細なガイダンスについては、「まず、 [機密ラベルの概要](get-started-with-sensitivity-labels.md)」を参照してください。 機密ラベルライセンス情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)」を参照してください。
 
-## <a name="task-7-configure-a-retention-policy"></a>タスク 7: アイテム保持ポリシーを構成する
+## <a name="task-6-configure-a-retention-policy"></a>タスク 6: アイテム保持ポリシーを構成する
 
 [アイテム保持ポリシー](retention.md)を使用すると、コンテンツを保持するか、コンテンツを削除するか、またはその両方を事前に決定して、指定した保持期間の最後にコンテンツを保持して削除することができます。 これらのアクションは、業界の規制や内部ポリシーに準拠し、訴訟やセキュリティ違反の発生時にリスクを軽減するために必要な場合があります。
 
@@ -92,7 +86,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 アイテム保持ポリシーを構成する詳細な手順については、「 [アイテム保持ポリシーを作成および構成](create-retention-policies.md)する」を参照してください。 Microsoft 365 で保持を構成するのが初めての場合は、「[アイテム保持ポリシーと保持ラベルの使用を開始する](get-started-with-retention.md)」を参照してください。
 
-## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>タスク 8: 機密情報と不快な言語ポリシーを構成する
+## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>タスク 7: 機密情報と不快な言語ポリシーを構成する
 
 機密情報の保護と workplace 嫌がらせインシデントの検出と処理は、内部ポリシーおよび標準への準拠の重要な部分です。 Microsoft 365 の[コミュニケーションコンプライアンス](communication-compliance-feature-reference.md)では、電子メールと Microsoft Teams 通信の修復措置を迅速に検出、取得、および実行できるようにすることで、これらのリスクを最小限に抑えることができます。 これには、プロファニティ、脅威、嫌がらせ、および組織の内部および外部の機密情報を共有する通信を含む不適切なコミュニケーションが含まれます。
 
@@ -102,7 +96,7 @@ Exchange メール、SharePoint サイト、OneDrive アカウント、Microsoft
 
 通信のコンプライアンスを計画して構成するための詳細なガイダンスについては、「 [plan for communication コンプライアンス](communication-compliance-plan.md) 」と「 [コミュニケーションを開始](communication-compliance-configure.md)する」を参照してください。 通信コンプライアンスライセンスの情報については、「 [Microsoft 365 licensing ガイダンス for security & 法令遵守](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)」を参照してください。
 
-## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>タスク 9: 機密アイテムの処理状況を確認する
+## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>タスク 8: 機密アイテムの処理状況を確認する
 
 機密ラベル、機密情報の種類、アイテム保持ラベル、および trainable 分類子を使用すると、前のタスクで見たように、Exchange、SharePoint、OneDrive 間で機密アイテムの分類とラベル付けを行うことができます。 クイックタスクへの移行の最後の手順では、ラベル付けされたアイテム、およびそれらの機密アイテムに対してユーザーが実行しているアクションを確認します。 この可視性は、[コンテンツエクスプローラー](data-classification-content-explorer.md)と[アクティビティエクスプローラー](data-classification-activity-explorer.md)によって提供されます。
 

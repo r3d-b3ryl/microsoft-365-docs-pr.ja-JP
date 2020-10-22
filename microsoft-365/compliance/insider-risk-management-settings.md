@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 5b0353546a9bb923559ebd125393890180257baf
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600382"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651441"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Insider リスク管理設定の概要
 
@@ -81,7 +81,7 @@ Insider リスクポリシーテンプレートは、検出して調査するリ
 
 Insider リスク管理のレポートで計画している Windows 10 デバイスがこれらの要件を満たしていることを確認してください。
 
-1. Windows 10 x64 ビルド 1809 以降を実行している必要があります。
+1. Windows 10 x64 ビルド1809以降を実行している必要があり、 [windows 10 更新プログラム (OS ビルド 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) を2020年2月20日からインストールしている必要があります。
 2. すべてのデバイスは[Azure Active Directory (AAD) に参加する ](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)か、Hybrid Azure AD に参加する必要があります。
 3. エンドポイントデバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドアップロードアクティビティのアクションを監視します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
 
@@ -244,7 +244,7 @@ Api を使用して、内部のリスクの警告情報を確認するには、�
 | AlertType | 通知の種類は *カスタム*です。  |
 | AlertId | 通知の GUID。 Insider リスク管理警告は変更可能です。 アラート状態が変化すると、同じ AlertID を持つ新しいログが生成されます。 この AlertID を使用して、アラートの更新を関連付けることができます。 |
 | カテゴリ | 通知のカテゴリは *InsiderRiskManagement*です。 このカテゴリは、他のセキュリティ & コンプライアンス通知と区別するために使用できます。 |
-| Comments | 通知の既定のコメント。 値は *新しい通知* (通知が作成されたときに記録されます) と *アラートの更新* (警告の更新が発生した場合に記録されます)。 AlertID を使用して、アラートの更新を関連付けます。 |
+| コメント | 通知の既定のコメント。 値は *新しい通知* (通知が作成されたときに記録されます) と *アラートの更新* (警告の更新が発生した場合に記録されます)。 AlertID を使用して、アラートの更新を関連付けます。 |
 | データ | 通知のデータには、ユーザーがポリシーにトリガーされたときに、一意のユーザー ID、ユーザープリンシパル名、日付と時刻 (UTC) が含まれます。 |
 | 名前 | 通知を生成した insider リスク管理ポリシーのポリシー名。 |
 | PolicyId | 通知をトリガーした insider リスク管理ポリシーの GUID。 |
@@ -364,6 +364,9 @@ Microsoft 365 の物理バッジデータコネクタを有効にして、物理
 [Microsoft Power オートメーション](https://docs.microsoft.com/power-automate/getting-started) は、アプリケーションとサービス間のアクションを自動化するワークフローサービスです。 テンプレートからのフローを使用するか、手動で作成することによって、これらのアプリケーションやサービスに関連する一般的なタスクを自動化することができます。 Insider リスク管理のための Power オートメーションフローを有効にすると、ケースやユーザーにとって重要なタスクを自動化することができます。 ユーザー、警告、およびケースの情報を取得し、この情報を関係者や他のアプリケーションと共有し、ケースメモへの投稿など、insider のリスク管理の操作を自動化するように、電源自動化フローを構成することができます。 電源自動化フローは、ポリシーの範囲内のケースおよびユーザーに適用されます。
 
 Insider リスク管理を含む Microsoft 365 サブスクリプションを使用しているお客様には、追加のパワー自動化ライセンスは必要ありません。これを使用して、推奨される insider リスク管理パワー自動化のテンプレートを使用します。 これらのテンプレートをカスタマイズして、組織をサポートし、コア insider リスク管理シナリオをカバーすることができます。 これらのテンプレートでプレミアムパワー自動化機能を使用することを選択した場合、Microsoft 365 コンプライアンスコネクタを使用してカスタムテンプレートを作成するか、Microsoft 365 の他のコンプライアンス領域に対して Power オートメーションテンプレートを使用する場合は、追加のパワー自動化ライセンスが必要になることがあります。
+
+>[!IMPORTANT]
+>パワー自動化フローをテストするときに、追加のライセンス検証を求めるメッセージが表示されますか。 組織がこのプレビュー機能のサービス更新をまだ受信していない可能性があります。 更新プログラムが展開され、Microsoft 365 サブスクリプションを使用するすべての組織に insider リスク管理を含むすべての組織は、推奨されるパワー自動化テンプレートから、2020年10月30日までに作成されたフローのライセンスサポートを持っている必要があります。
 
 次の電力自動化テンプレートは、insider リスク管理のユーザーおよびケースに対するプロセスの自動化をサポートするためにお客様に提供されます。
 

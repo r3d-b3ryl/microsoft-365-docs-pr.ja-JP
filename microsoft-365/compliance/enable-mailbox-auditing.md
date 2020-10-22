@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: メールボックス監査ログは、Microsoft 365 では既定で有効になっています (既定では、既定のメールボックスの監査またはメールボックスの監査とも呼ばれます)。 これは、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録されることを意味します。このログでは、メールボックスに対して実行されたアクティビティを検索できます。
-ms.openlocfilehash: 7c0a4417496bcf18362dbcfe53b751c549ef98b9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545843"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649626"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "47545843"
 
 - 監査対象のメールボックスアクションを管理する必要はありません。 事前に定義された一連のメールボックスアクションは、既定では、各ログオンの種類 (管理者、代理人、および所有者) に対して監査されます。
 
-- Microsoft が新しいメールボックスアクションをリリースした場合 (特に組織を保護し、フォレンジック調査を支援するためのアクション)、既定で監査されるメールボックスの操作の一覧に、このアクションが自動的に追加されます。 これは、メールボックスに新しいアクションを追加することを監視する必要がないことを意味します。
+- Microsoft が新しいメールボックスのアクションを解放すると、既定で監査されるメールボックスの操作 (適切なライセンスを持っているユーザーの場合) の一覧に、アクションが自動的に追加される場合があります。 これは、メールボックスに新しいアクションを追加することを監視する必要がないことを意味します。
 
 - 組織全体で一貫したメールボックスの監査ポリシーを使用している (すべてのメールボックスに対して同じアクションを監査しているため)。
 
@@ -90,7 +90,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
     - コンプライアンスセンターでの電子情報開示または高度な電子情報開示。
 
-    - Exchange Online のインプレース電子情報開示。
+    - Exchange Online の電子情報開示を In-Place します。
 
   - メールボックスは、Microsoft Exchange Server MAPI エディターを使用してアクセスします。
 
@@ -317,7 +317,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 現時点では、既定によるメールボックス監査の有効化が組織でオンになっている場合は、特定のメールボックスでメールボックス監査を無効にできません。 たとえば、 *Auditenabled* mailbox プロパティを **False** に設定することは無視されます。
 
-ただし、Exchange Online PowerShell で **set-mailboxauditbypassassociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定されたユーザーによる *すべて* のメールボックスの操作をログに記録しないようにすることができます。 例:
+ただし、Exchange Online PowerShell で **set-mailboxauditbypassassociation** コマンドレットを使用して、アクションが発生した場所に関係なく、指定されたユーザーによる *すべて* のメールボックスの操作をログに記録しないようにすることができます。 次に、例を示します。
 
 - バイパスユーザーが実行したメールボックスの所有者のアクションは記録されません。
 
@@ -339,7 +339,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 値 **True** は、ユーザーのメールボックス監査ログがバイパスされることを示します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - 既定では、すべての組織に対してメールボックス監査ログ記録が有効になっていますが、E5 ライセンスを持つユーザーのみが [、セキュリティ & コンプライアンスセンター](search-the-audit-log-in-security-and-compliance.md) または [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用し **て既定で**、メールボックス監査ログイベントを返すことができます。
 
