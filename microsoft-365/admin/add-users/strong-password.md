@@ -1,5 +1,5 @@
 ---
-title: ユーザーに強力なパスワード要件を設定する
+title: ユーザーの強力なパスワード要件を無効にする
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Windows PowerShell を使用して、ユーザーに強力なパスワード要件を設定する方法について説明します。
-ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646621"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655737"
 ---
-# <a name="set-strong-password-requirement-for-users"></a>ユーザーに強力なパスワード要件を設定する
+# <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件を無効にする
 
 この記事では、ユーザーの強力なパスワード要件を無効にする方法について説明します。 Microsoft 365 for business 組織では、強力なパスワード要件が既定で有効になっています。 組織に強力なパスワードを無効にするための要件がある場合があります。 強力なパスワード要件を無効にするには、次の手順を実行します。 これらの手順は、PowerShell を使用して完了する必要があります。
 

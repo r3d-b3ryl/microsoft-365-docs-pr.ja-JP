@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487154"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655973"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -75,13 +75,11 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 for Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](../downloads/transition-org-to-m365.pdf)をご覧ください。
+組織全体を Microsoft 365 for Enterprise の製品とサービスに移行する方法をより良く理解するためには、[移行のポスター](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)をご覧ください。
 
-[![「Microsoft 365への移行」ポスターの画像](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![「Microsoft 365への移行」ポスターの画像](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 この2ページのポスターをご覧になると、既存のインフラストラクチャを簡単にインベントリできます。 これを見ると、ガイダンスが見つかり、Microsoft 365 for enterprise の対応する製品またはサービスに移行するのに役立ちます。 Windows と Office の製品、その他のインフラストラクチャ、それから、デバイス管理、ID、情報および脅威保護などのセキュリティ要素が含まれます。
-
-[このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf)して、レター形式、リーガル形式、またはタブロイド形式 (11 x 17) で印刷することもできます。
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 および Office 2010 のクライアントとサーバーのサポート終了
 

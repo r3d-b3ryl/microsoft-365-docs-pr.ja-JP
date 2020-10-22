@@ -19,22 +19,22 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: この記事では、Microsoft 365 の PowerShell を使用してユーザーアカウントに役割を割り当てる方法について説明します。
-ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: この記事では、Microsoft 365 の PowerShell を使用して、ユーザーアカウントに管理者の役割を割り当てる方法について説明します。
+ms.openlocfilehash: 1486c86172cd34e6e88f8cd02d003967518bcdb7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235432"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655949"
 ---
-# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントに役割を割り当てる
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントに管理者ロールを割り当てる
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役割をすばやく簡単に割り当てることができます。
+Microsoft 365 の PowerShell を使用して、管理者の役割をユーザーアカウントにすばやく簡単に割り当てることができます。
 
 >[!Note]
->Microsoft 365 管理センターを使用して、[ユーザーアカウントに役割を割り当てる方法について説明](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
+>Microsoft 365 管理センターで[管理者の役割をユーザーアカウントに割り当てる方法について説明](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
@@ -43,7 +43,7 @@ Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役
   
 次に、ロールに追加するユーザー アカウントのサインイン名を判別します (例: fredsm@contoso.com)。サインイン名はユーザー プリンシパル名 (UPN) とも呼ばれます。
 
-次に、ロールの名前を決めます。 [Azure Active Directoryでこの管理者ロールのアクセス許可の一覧](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)を使用します。
+次に、管理者ロールの名前を指定します。 [Azure Active Directoryでこの管理者ロールのアクセス許可の一覧](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)を使用します。
 
 >[!Note]
 >この記事のメモに注意してください。 Azure AD PowerShellでは一部のロール名が異なります。 たとえば、Microsoft 365管理センターの "SharePoint Administrator"ロールは、Azure AD PowerShellでは "SharePoint Service Administrator"という異なった名前がついています。
@@ -53,7 +53,7 @@ Microsoft 365 の PowerShell を使用して、ユーザーアカウントに役
   
 ```powershell
 $userName="<sign-in name of the account>"
-$roleName="<role name>"
+$roleName="<admin role name>"
 $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 if ($role -eq $null) {
 $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
@@ -77,7 +77,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-特定のロールのユーザー名の一覧を表示するには、次のコマンドを使用します。
+特定の管理者の役割についてユーザー名の一覧を表示するには、次のコマンドを使用します。
 
 ```powershell
 $roleName="<role name>"
@@ -118,17 +118,17 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
     
 - 割り当てるロール。
     
-    ユーザー アカウントに割り当てることができるロールの一覧を表示するには、次のコマンドを使用します。
+    ユーザーアカウントに割り当てることができる利用可能な管理者の役割の一覧を表示するには、次のコマンドを使用します。
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-アカウントの表示名とロールの名前を判別した後、次のコマンドを使用してアカウントにロールを割り当てます。
+アカウントの表示名と管理者の役割の名前を特定したら、次のコマンドを使用してアカウントに役割を割り当てます。
   
 ```powershell
 $dispName="<The Display Name of the account>"
-$roleName="<The role name you want to assign to the account>"
+$roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 

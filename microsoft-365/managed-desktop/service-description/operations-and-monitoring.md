@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 01a43b35d272aaebce4c6866e3edfb04664b1801
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529447"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655725"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft マネージドデスクトップの操作と監視
 
@@ -72,7 +72,7 @@ ms.locfileid: "46529447"
 **グローバル管理者のアクションが必要** | 時々 |  まれに |    まれに 
 **アクションの種類** | 設定の変更 | ユーザーへの変更の伝達 | 管理設定の変更     
 **テストが必要** | リモートアクセスサービスを含むビジネスアプリケーションを確認する |  時々 - プロセスまたはカスタマイズに対する修正プログラムのテスト |   まれに 
-**変更の例** | -機能の更新: IT 管理者ポータルのサポートチケット送信とレビューの簡略化<br>-新機能またはアプリケーション: 半期版の Windows 10 機能更新プログラム | お客様によって報告されたバグに基づく修正プログラム |  
+**変更の例** | -機能の更新: IT 管理者ポータルのサポートチケット送信とレビューの簡略化<br>-新機能またはアプリケーション: Windows 10 機能更新プログラムのリリース Semi-Annual | お客様によって報告されたバグに基づく修正プログラム |  
 
 
 ## <a name="standard-operating-procedures"></a>標準的な運用手順
@@ -81,15 +81,15 @@ Microsoft Managed Desktop service は、microsoft クラウドインスタンス
 
 オンプレミスの製品の場合、組織では、セットアップを管理する責任と、構成および運用のアクティビティを行います。
 
-カテゴリ |    Microsoft は | お客様は
+Categories |    Microsoft は | お客様は
 --- | --- | ---
 ネットワーク (プロキシ、パケット検査、VPN)  | お客様との間で、ビジネスユーザーに対するリスクを最小限に抑えるためのアドバイスと計画を行います。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。
 サービス アカウント |-資格情報を実装し、安全に保存および管理します。<br> -許可されていないアクセスまたはこれらの資格情報の使用をセキュリティ運用チームに通知します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-ポリシー、多要素認証、条件付きアクセス、またはアプリケーション展開を Microsoft 管理されたデスクトップサービスアカウントに割り当てません。<br>-パスワードをリセットしたり、資格情報を使用したりしません。<br>-これらのサービスアカウントに関連する、不審なアクティビティが Intune または Azure の監査ログで検出された場合は、Microsoft マネージドデスクトップ操作に対する重大度 C サポート要求を開きます。
-デバイスグループ | -Microsoft マネージドデスクトップグループ内のデバイスのメンバーシップを実装および管理します。<br>-Microsoft マネージドデスクトップグループを使用して、構成の割り当てとリリースおよびデバイスに対する更新を管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft マネージドデスクトップグループのメンバーシップを変更しません。<br>-VPN、Windows Hello for Business または電子メールの暗号化、または企業の Wi-fi プロファイルの構成などのサービスの企業証明書を割り当てるには、グループを使用します。<br>-共同管理が存在する場合は、構成マネージャークライアントを展開するときに、すべての Microsoft 管理対象デスクトップグループを明示的に除外します。
-ポリシー |  -サービス内のデバイスの構成状態を制御する Microsoft マネージドデスクトップポリシーを実装および管理します。<br>-更新プログラムをポリシーまたは Windows に展開し、デバイスグループを徐々に使用します。<br> -Microsoft 以外の管理対象ではないデスクトップグループを明示的に除外します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft managed Desktop service で管理されていないデバイスまたはユーザーに対して、Microsoft 管理対象のデスクトップポリシーを編集または割り当てないようにします。
+デバイスグループ | -Microsoft マネージドデスクトップグループ内のデバイスのメンバーシップを実装および管理します。<br>-Microsoft マネージドデスクトップグループを使用して、構成の割り当てとリリースおよびデバイスに対する更新を管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft マネージドデスクトップグループのメンバーシップを変更しません。<br>-VPN、Windows Hello for Business または電子メールの暗号化、または企業 Wi-Fi プロファイルの構成などのサービスの企業証明書を割り当てるには、グループを使用します。<br>-共同管理が存在する場合は、構成マネージャークライアントを展開するときに、すべての Microsoft 管理対象デスクトップグループを明示的に除外します。
+Policies |  -サービス内のデバイスの構成状態を制御する Microsoft マネージドデスクトップポリシーを実装および管理します。<br>-更新プログラムをポリシーまたは Windows に展開し、デバイスグループを徐々に使用します。<br> -Microsoft 以外の管理対象ではないデスクトップグループを明示的に除外します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft managed Desktop service で管理されていないデバイスまたはユーザーに対して、Microsoft 管理対象のデスクトップポリシーを編集または割り当てないようにします。
 Microsoft Defender Advanced Threat Protection   | Microsoft Managed Desktop service の範囲内のデバイスを監視および調査します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用する
 ビジネス向け Microsoft Store |  Microsoft マネージドデスクトップサービスの Windows 自動操縦プロファイルを構成して管理します。 | -構成の詳細、スコープ、タイムライン、および Microsoft が確認するその他の関連する詳細を含む、計画された構成変更の情報を要求するサポート要求を作成します。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-Microsoft Managed Desktop Windows 自動操縦プロファイルの構成を変更したり、割り当てられたデバイスを追加または削除したりしません。
-証明書 | | -証明書が期限切れになるまでのサポート60要求を作成し、計画された構成の変更に関する情報を要求します。これには、構成の詳細、スコープ、タイムライン、および Microsoft が確認するためのその他の関連情報が含まれます。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-証明書プロファイル、VPN プロファイル、および Wi-fi プロファイルを構成するために必要なすべての証明書を更新します。
+証明書 | | -証明書が期限切れになるまでのサポート60要求を作成し、計画された構成の変更に関する情報を要求します。これには、構成の詳細、スコープ、タイムライン、および Microsoft が確認するためのその他の関連情報が含まれます。<br>-Microsoft Managed Desktop 操作が評価され、推奨された後にのみ変更を適用します。<br>-証明書プロファイル、VPN プロファイル、および Wi-Fi プロファイルを構成するために必要なすべての証明書を更新します。
 
 
 
@@ -118,4 +118,4 @@ Microsoft Managed Desktop Operations Team は、必要に応じてサービス�
 
 BitLocker は、このプロセスにおけるデータセキュリティの主要なコンポーネントです。 Microsoft マネージドデスクトップデバイス上の BitLocker 暗号化では、デバイスが工場でリセットされた後も、ドライブ上のデータはセキュリティ保護されたままになります。 ドライブ上のデータは、デバイスの次のユーザーが使用できなくなります。 詳細については、「 [BitLocker の概要](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)」を参照してください。
 
-詳細については、「[デバイスの出荷時のリセット](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)」を参照してください。 
+詳細については、「 [デバイスの出荷時のリセット](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)」を参照してください。 

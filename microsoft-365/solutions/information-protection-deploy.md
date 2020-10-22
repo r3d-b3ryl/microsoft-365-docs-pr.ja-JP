@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 情報を保護し、データのプライバシー規制に準拠するように、セキュリティとサービスインフラストラクチャを構成します。
-ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4296e2f08d9dada62cc45226885d9519a33e6532
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195641"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655815"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Microsoft 365 を使用して、データプライバシー規制の情報保護を展開する
 
 組織は、オンプレミスとクラウドの両方を含む、IT インフラストラクチャに格納されている個人情報に関する権限と制御を保護、管理、提供する必要がある地域データのプライバシー規制の対象となる場合があります。 データプライバシー規制の最も良い例は、欧州連合の一般的なデータ保護規則 (GDPR) です。 データプライバシー規制への準拠に失敗すると、膨大な罰金を得られることがあります。
 
-Microsoft 365 のデータの種類の例には、Microsoft Teams のチャットセッション、Exchange の電子メール、および SharePoint および OneDrive のファイルが含まれています。 このソリューションでは、データプライバシーの規制の対象となる Microsoft 365 services に格納されている個人データについて、データのプライバシーインシデントを特定、特定、保護、制御、および対応する方法についてのガイダンスを提供します。
+Microsoft 365 のデータの種類の例には、Microsoft Teams のチャットセッション、Exchange の電子メール、および SharePoint および OneDrive のファイルが含まれています。 このソリューションでは、データのプライバシーに関する規制の対象となる Microsoft 365 services に格納されている個人データについて、リスクを評価し、情報の識別、データの保護、管理、および応答を行う方法についてのガイダンスを提供します。
 
-![データ プライバシー規制用の情報保護の展開](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+![データプライバシー規制に関する情報保護とは](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
 
 また、データのプライバシーのニーズに合わせて Microsoft 365 の id、デバイス、および脅威保護の制御を使用する場合にも、追加情報が提供されます。 
 
@@ -50,7 +50,7 @@ Microsoft 365 のデータの種類の例には、Microsoft Teams のチャッ�
 
 1つまたは複数のプライバシー関連の規制の対象となる個人データの識別、管理、制御、監視に使用できる Microsoft 365 ツールの理解を助けるために、このガイダンスはセクションで構成されています。
  
-![データ プライバシー規制用の情報保護の展開](../media/information-protection-deploy/information-protection-deploy-grid.png)
+![データプライバシー規制に関する情報保護を実装するための手順](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 これらの各セクションは、このソリューションの個別の記事に対応しています。
 
@@ -61,13 +61,13 @@ Microsoft 365 のデータの種類の例には、Microsoft Teams のチャッ�
 >このガイダンスに従うことで、特に、機能のコンテキストの範囲外で必要とされる手順の数を考慮して、データプライバシー規制に準拠しているわけではありません。 お客様は、コンプライアンスを保証し、法務/コンプライアンスチームを参照したり、コンプライアンスを専門とするサードパーティのガイダンスやアドバイスを求めたりする責任を負います。
 >
 
-## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>計画: データのプライバシーリスクを評価し、機密アイテムを識別する 
+## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>計画: データのプライバシーリスクを評価し、機密アイテムを識別する
 
 お客様の組織が対象となるデータのプライバシーに関する規制とリスクは、Microsoft 365 構成を通じて実現可能なものを含む、改善の実装を開始する前に行う重要な最初の手順です。 これには、全体的な準備状況の評価、または組織が準拠する必要がある規制統制の対象となる特定の機密情報の種類の確認、および Microsoft 365 環境でのそれらの発生の確認が含まれます。
 
 詳細については、「 [データプライバシーのリスクを評価し、機密性の高いアイテムを識別](information-protection-deploy-assess.md)する」を参照してください。
 
-## <a name="track-use-compliance-manager"></a>追跡: コンプライアンスマネージャーを使用する
+## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>追跡: リスク評価を実行し、コンプライアンススコアを確認する
 
 Microsoft 365 コンプライアンスセンターで提供されるコンプライアンスマネージャーには、強化アクション全体を追跡および管理するための組み込みの機能と、ユーザーに適用される複数のデータプライバシー規制に関連する機能が用意されています。
 
@@ -75,7 +75,7 @@ Microsoft 365 コンプライアンスセンターで提供されるコンプラ
 
 詳細については、「 [コンプライアンスマネージャーを使用して改善アクションを管理する](information-protection-deploy-compliance.md)」を参照してください。
 
-## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>回避方法: id、デバイス、および脅威保護にデータプライバシー規制を使用します。
+## <a name="prevent-protect-personal-data"></a>禁止: 個人データを保護する
 
 Microsoft 365 は、id、デバイス、および脅威の保護に関するさまざまな機能を提供します。これを使用すると、データプライバシーに関する法令遵守に準拠することができます。 
 
@@ -99,7 +99,7 @@ Microsoft 365 は、id、デバイス、および脅威の保護に関するさ�
 
 意図的の保存、削除、アーカイブなどの情報ガバナンスに関しては、データプライバシーに関する規制をあいまいにすることができますが、 &mdash; &mdash; この記事では、組織内のデータのプライバシーに関する情報ガバナンスのニーズを解決するために使用できる主要な制御スキームについて説明します。
 
-## <a name="investigate-monitor-and-respond-subject-to-data-privacy-regulation"></a>調査: データプライバシー規制を監視し、件名に対応する
+## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>調査: データプライバシーインシデントの監視、調査、および対応
 
 Operationalize 関連の機能を使用して、組織内のデータプライバシーインシデントの監視、調査、および対応に役立てることができる Microsoft 365 の機能があります。 
 

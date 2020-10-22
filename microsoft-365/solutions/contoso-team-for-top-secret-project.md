@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: '概要: Contoso 社がトップシークレットプロジェクトのセキュリティ分離を備えたチームを使用して、新しいスイートの製品とサービスを開発する方法について説明します。'
-ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399491"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656071"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation のトップシークレットプロジェクトの分離されたチーム
 
@@ -77,7 +77,7 @@ Contoso admins は、 **Project 2x** という名前の新しい機密ラベル�
 
 以下に、セキュリティ分離を使用した Project 2X チームの構成結果を示します。
 
-![プロジェクト2チームの最終的な構成](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![プロジェクト2チームの最終的な構成](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>手順 4: トレーニングを受けた Project 2X チームメンバー
 
@@ -92,7 +92,7 @@ Contoso のセキュリティスタッフは、次の手順に従ってステッ
 
 以下は、プロジェクト2x 機密ラベルが割り当てられた、基になる Project 2X サイトに保存されているファイルの例です。
 
-![基になる Project 2X サイトに保存されているファイルの例](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![基になる Project 2X サイトに保存されているファイルの例](../media/contoso-team-for-top-secret-project-example.png)
 
 いくつかのインスタンスでは、Project 2X のチームメンバーは、オフライン作業のために Project 2X ラベルで保護されたファイルをローカルドライブにダウンロードしていました。 
 
@@ -100,7 +100,7 @@ Contoso のセキュリティスタッフは、次の手順に従ってステッ
 
 Teams のグループ作業環境と Microsoft 365 のセキュリティ機能により、project 2X の詳細はプロジェクトの期間中に機密情報として保持されていました。 Contoso 社はプランを発表し、新しい製品とサービスを顧客や投資家の成功および競合他社の chagrin に展開する過程にあります。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 組織内で[セキュリティの分離を使用してチームを展開](secure-teams-security-isolation.md)します。
 
