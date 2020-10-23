@@ -634,6 +634,8 @@
               href: attorney-privilege-detection.md
             - name: 会話レビュー セット
               href: conversation-review-sets.md
+            - name: CJK 言語サポート
+              href: ediscovery-cjk-support.md
             - name: 電子情報開示のアクセス許可を割り当てる
               href: assign-ediscovery-permissions.md
             - name: キーワード クエリと検索条件
