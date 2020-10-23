@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7699b31052ecc1bda33630fcf97e9d43875f4ae3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399351"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681592"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を構成する
 
@@ -194,5 +194,5 @@ Microsoft 365 には、組織内のユーザーに通知するための以下の
 - Windows 10 および Mac Pc でセキュリティ機能を有効にする (管理されていないデバイスの場合)
     
 また、次の記事で推奨されている操作を実行して、ユーザーが個人のメールアカウントを保護することをお勧めします。
-- [Outlook.com メールアカウントを保護する](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Outlook.com メールアカウントを保護する](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [2段階認証を使用して Gmail アカウントを保護する](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

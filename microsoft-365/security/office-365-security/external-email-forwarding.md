@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/01/2020
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,49 +14,57 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600531"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681734"
 ---
-# <a name="configuring-external-email-forwarding-in-office-365"></a>Office 365 で外部電子メール転送を構成する
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365 での自動外部電子メール転送の制御
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+管理者は、外部の受信者 (組織外の受信者) に自動的に転送されるメッセージを制限または制御するために、会社の要件を持つ場合があります。 メールの転送は便利ですが、情報が漏洩する可能性があるため、セキュリティ上のリスクが生じる可能性があります。 攻撃者は、この情報を使用して組織またはパートナーに攻撃を仕掛けることができます。
 
-外部転送は、発信の *スパム対策ポリシー* によって制御され、構成された設定に基づいてユーザーのスコープを設定します。 現在、3つの設定がサポートされています。
+Microsoft 365 では、次の種類の自動転送を使用できます。
 
-- **自動** : 自動外部転送がブロックされます。 メッセージの内部自動転送は引き続き機能します。 これは、既定の設定です。
+- ユーザーは、メッセージを外部の送信者に自動的に転送するように [受信トレイルール](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) を構成できます (故意または侵害されたアカウントの結果として)。
 
-- **オン** -自動外部転送が許可されていて、制限されていません。
+- 管理者は、外部の受信者にメッセージを自動的に転送するように、 [メールボックス転送](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (SMTP 転送とも呼ばれます) を構成できます。
 
-- **Off** -自動外部転送が無効になり、エンドユーザーに配信不能レポート (NDR) が生成されます。
+送信スパムフィルターポリシーを使用して、外部の受信者への自動転送を制御することができます。 次の3つの設定を使用できます。
 
-これらの設定を構成する方法の詳細については、「 [EOP で送信スパムフィルターを構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) する」を参照してください。
+- **Automatic**: 自動外部転送がブロックされます。 メッセージの内部自動転送は引き続き機能します。 これは、既定の設定です。
+- **オン**: 外部の自動転送が許可されており、制限されていません。
+- **Off**: 自動外部転送が無効になり、送信者に配信不能レポート (NDR またはバウンスメッセージとも呼ばれます) が発生します。
 
-> [!NOTE]
-> また、自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルールも無効になります。
+これらの設定を構成する方法については、「 [EOP で送信スパムフィルターを構成](configure-the-outbound-spam-policy.md)する」を参照してください。
 
-## <a name="controlling-external-email-forwarding"></a>外部メール転送を制御する
+**注**:
 
-組織の管理者として、組織外の受信トレイルールまたは SMTP 転送を使用して電子メールを自動的に転送できるユーザーを制限または制御するには、会社の要件があります。 メールの転送は便利な機能ですが、組織またはパートナーを攻撃するために利用できる攻撃者に情報を提供することによっても、情報の漏洩によってリスクが生じる可能性があります。
+- また、自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルールも無効になります。
 
-Office 365 では、受信トレイルールまたはメールボックス構成のいずれかを使用した自動の外部転送を許可しません。これは、セキュリティで保護された既定のポリシーです。 ただし、管理者は組織内のすべてのユーザーまたは一部のユーザーについてこれらの設定を変更できます。 内部ユーザー間でのメッセージ転送は、このような変更による影響を受けません。
+- 内部ユーザー間でのメッセージの自動転送は、送信スパムフィルターポリシーの設定の影響を受けません。
 
-> [!NOTE]
-> Office 365 で外部アドレスへの自動転送を無効にすると、 [メッセージセンター](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) の投稿によって伝達された詳細をフェーズ内でロールアウトすることができます。 管理者がこれらの変更を準備するには、事前にポリシーを変更して、ユーザーに混乱が発生しないようにする必要があります。
+- 自動転送された [メッセージレポート](mfi-auto-forwarded-messages-report.md)で、外部の受信者にメッセージを自動的に転送するユーザーに関する情報を確認できます。
 
-組織内の自動転送 (受信トレイルールまたは SMTP 転送) を使用しているユーザーの詳細については、「 [自動転送](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true)されたメッセージ」レポートを参照してください。
+## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパムフィルターポリシーの設定が他の自動メール転送コントロールとどのように機能するか
 
-## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>このポリシーが他の自動転送コントロールとどのように連動するか
+管理者は、電子メールの自動転送を許可またはブロックするように、既に他のコントロールを構成している場合があります。 次に、例を示します。
 
-管理者として、 [リモートドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) での自動転送をブロックしたり、Exchange トランスポートルール (etr) を使用したりするなど、他の種類のコントロールが既に存在する可能性があります。 これらのコントロールは、この特定の機能に依存しません。たとえば、リモートドメインへの自動転送を許可し、送信スパムポリシーによる自動転送をブロックすると、自動的に転送されるメッセージがブロックされます。 同様に、送信スパムポリシーで自動転送を許可していて、それを ETR またはリモートドメインでブロックする場合、メッセージはこれらのコントロールのいずれかによってブロックされます。 これにより、たとえば、送信スパムポリシーで自動転送を許可したり、リモートドメインを利用して、ユーザーがメッセージを自動的に転送できるドメインを制御したりすることができます。
+- [リモートドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) によって、一部またはすべての外部ドメインへの自動電子メール転送を許可またはブロックすることができます。
+- Exchange [メールフロールール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (トランスポートルールとも呼ばれます) 内の条件とアクションは、外部の受信者に自動的に転送されるメッセージを検出してブロックします。
 
+リモートドメインの設定とメールフロールールは、送信スパムフィルターポリシーの設定とは独立しています。 次に、例を示します。
+
+- リモートドメインへの自動転送を許可するが、送信スパムフィルターポリシーの自動転送をブロックする。 この例では、自動的に転送されるメッセージがブロックされます。
+- 送信スパムフィルターポリシーでの自動転送を許可しますが、自動的に転送された電子メールをブロックするには、メールフロールールまたはリモートドメイン設定を使用します。 この例では、メールフロールールまたはリモートドメインの設定は、自動的に転送されるメッセージをブロックします。
+
+この機能の独立性により、送信スパムフィルターポリシーの自動転送を許可することができますが、リモートドメインを使用して、ユーザーがメッセージを転送できる外部ドメインを制御することができます。
 
 ## <a name="the-blocked-email-forwarding-message"></a>ブロックされたメール転送メッセージ
 
-メッセージが自動的に転送されると検出され、組織 *のポリシーに* よって **配信不能レポート (NDR)** がエンドユーザーに返されます。 レポートには、メッセージが配信されなかったことが示されます。 NDR の形式は次のとおりです。 
+メッセージが自動的に転送されると検出され、組織のポリシーによってそのアクティビティが *ブロック* されると、次の情報を含む NDR でメッセージが送信者に返されます。
 
-`5.7.520 Access Denied – Your administrator has disabled external forwarding – AS(XXXX)`
+`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`
