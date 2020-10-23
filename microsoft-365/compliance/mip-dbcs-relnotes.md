@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 2 バイト文字セットをサポートするためのリリース ノートです。
-ms.openlocfilehash: 13bac873f2ba18bc166451ea73ec0d569fb30f68
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695263"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681503"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>2 バイト文字セットのリリース ノート向けサポート (プレビュー)
 
@@ -29,15 +29,6 @@ ms.locfileid: "46695263"
 - 中国語 (繁体字)
 - 韓国語
 - 日本語
-
-このプレビューは、商用クラウドにのみ表示され、ロールアウトは以下に限られます。
-
-- 日本
-- 韓国
-- 中国
-- 香港特別行政区
-- マカオ
-- 台湾
 
 このサポートは、機密情報の種類とキーワード ディクショナリで使用でき、データ損失防止、通信コンプライアンス、Exchange Online、SharePoint Online、OneDrive for Business、および Teams ソリューションに反映されます。
 

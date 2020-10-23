@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: 7fe425a1f8ac954c6c24752927b218fc7e6f37c7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e6f6043efd4c5f38b7e9fa2a92c4fcb7ceb91e45
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547011"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681637"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
@@ -35,14 +35,6 @@ ms.locfileid: "47547011"
 > - 中国語 (繁体字)
 > - 韓国語
 > - 日本語
-> 
->このプレビューは、商用クラウドにのみ表示され、ロールアウトは以下に限られます。
-> - 日本
-> - 韓国
-> - 中国
-> - 香港特別行政区
-> - マカオ
-> - 台湾
 >
 >このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (プレビュー) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
 

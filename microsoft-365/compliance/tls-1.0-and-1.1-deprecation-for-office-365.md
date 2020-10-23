@@ -17,16 +17,16 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 270d04974cec9c36fa31a77bda401375fdac0471
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: ab3685883ac08522ab9ea1ee0cf194ba263d9166
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148149"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681691"
 ---
 # <a name="tls-10-and-11-deprecation-for-office-365"></a>Office 365 の TLS 1.0 および1.1の 廃止
 > [!IMPORTANT]
-> 商用のお客様のために TLS 1.0 および1.1 の推奨されていない強制を一時的に停止していますが、サプライチェーンが調整され、特定の国が開いたときに、10月15日の2020を開始するように TLS の強制をリセットしています。 
+> 民間のお客様のために TLS 1.0 および1.1 の非推奨の強制を一時的に停止していますが、サプライチェーンが調整され、特定の国が開かれると、10月 2020 15 日に開始するように TLS の強制をリセットしています。 
 
 2018年10月31日の時点で、Office 365 サービスのトランスポート層セキュリティ (TLS) 1.0 および1.1 プロトコルは使用されなくなりました。 エンドユーザーへの影響は最小限に抑える必要があります。 この変更は、2年以上にわたって公表されており、最初のパブリックアナウンスは2017年12月に行われています。 この記事は、office 365 のローカルクライアントを Office 365 サービスに関連するものだけを対象としていますが、Office および Office Online Server/Office Web Apps のオンプレミスの TLS の問題にも適用できます。
 
@@ -40,18 +40,18 @@ Office クライアントは、Windows web サービス (WINHTTP) に依存し�
 
 ### <a name="on-windows-7"></a>Windows 7
 
-TLS 1.1 および1.2 プロトコルは、 [KB 3140245](https://support.microsoft.com/help/3140245)の更新プログラムがないと使用できません。 この更新プログラムはこの問題に対処し、次のレジストリサブキーを追加します。
+TLS 1.1 および1.2 プロトコルは、 [KB 3140245](https://support.microsoft.com/help/3140245) の更新プログラムがないと使用できません。 この更新プログラムはこの問題に対処し、次のレジストリサブキーを追加します。
 
 ```console
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp
 ```
 
 > [!NOTE]
-> この更新プログラムをインストールしていない Windows 7 ユーザーは、2018年10月31日の時点で影響を受けます。 [KB 3140245](https://support.microsoft.com/help/3140245)は、WINHTTP 設定を変更して TLS プロトコルを有効にする方法についての詳細を示しています。
+> この更新プログラムをインストールしていない Windows 7 ユーザーは、2018年10月31日の時点で影響を受けます。 [KB 3140245](https://support.microsoft.com/help/3140245) は、WINHTTP 設定を変更して TLS プロトコルを有効にする方法についての詳細を示しています。
 
-#### <a name="more-information"></a>詳細情報
+#### <a name="more-information"></a>詳細
 
-KB の記事に記載されている**Defaultsecureprotocols**レジストリキーの値は、どのネットワークプロトコルを使用できるかを決定します。
+KB の記事に記載されている **Defaultsecureprotocols** レジストリキーの値は、どのネットワークプロトコルを使用できるかを決定します。
 
 |DefaultSecureProtocols の値|プロトコルの有効化|
 |-|-|
@@ -75,7 +75,7 @@ KB の記事に記載されている**Defaultsecureprotocols**レジストリキ
 |TLS 1.2|0x00000800|
 
 > [!IMPORTANT]
-> SSL 2.0 および3.0 プロトコルを使用することはお勧めしません。これは、 **Defaultsecureprotocols**キーを使用して設定することもできます。 SSL 2.0 および3.0 は、非推奨プロトコルと見なされます。 最善の方法は、SSL 2.0 および SSL 3.0 の使用を終了することですが、これを最終的に決定することは、製品のニーズに最も適した内容によって決まります。 SSL 3.0 の脆弱性の詳細については、「 [KB 3009008](https://support.microsoft.com/help/3009008)」を参照してください。
+> SSL 2.0 および3.0 プロトコルを使用することはお勧めしません。これは、 **Defaultsecureprotocols** キーを使用して設定することもできます。 SSL 2.0 および3.0 は、非推奨プロトコルと見なされます。 最善の方法は、SSL 2.0 および SSL 3.0 の使用を終了することですが、これを最終的に決定することは、製品のニーズに最も適した内容によって決まります。 SSL 3.0 の脆弱性の詳細については、「 [KB 3009008](https://support.microsoft.com/help/3009008)」を参照してください。
 
 既定の Windows 電卓をプログラマモードで使用して、同じ参照レジストリキーの値を設定することができます。 詳細については、「 [KB 3140245 更新プログラム」を参照して、Windows の WinHTTP で既定のセキュリティ保護されたプロトコルとして tls 1.1 と tls 1.2 を有効](https://support.microsoft.com/help/3140245)にします。
 

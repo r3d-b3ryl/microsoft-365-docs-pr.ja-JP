@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: セキュリティ/コンプライアンス センターのグラフィカル ユーザー インターフェイスで DLP のカスタム機密情報の種類を作成、変更、削除、およびテストする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 59d16ed662ff1b577bbb6c8388c5d27836832c1f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686661"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681723"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する
@@ -35,18 +35,10 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
 > [!NOTE]
 > Microsoft 365 の情報保護は、次のような場合に2バイト文字セットの言語をpreviewでサポートしています。
-> - 中国語（簡体字）
+> - 中国語 (簡体字)
 > - 中国語 (繁体字)
 > - 韓国語
 > - 日本語
-> 
->このプレビューは、商用クラウドにのみ表示されます。ロールアウトは以下に限られます：
-> - 日本
-> - 韓国
-> - 中国
-> - 香港
-> - マカオ
-> - 台湾
 >
 >このサポートは、機密情報の種類で使用できます。 詳細については、「[2バイト文字セットのリリースノート (preview) についての情報保護サポート](mip-dbcs-relnotes.md)」を参照してください。
 

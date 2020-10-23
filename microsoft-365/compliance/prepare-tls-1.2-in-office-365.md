@@ -13,16 +13,16 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: b76854442fd74dddddcef778ae03a9d76ceb3cc6
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: 4cc1fc739ee7fbcc4b976ae6e3f220713a53a007
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372500"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681659"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Office 365 および Office 365 GCC での TLS 1.2 の準備
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 お客様へ最高クラスの暗号化機能を提供するために、マイクロソフトは Office 365 および Office 365 GCC のトランスポート層セキュリティ (TLS) バージョン 1.0 および 1.1 を廃止することを計画しています。 お客様のデータに対するセキュリティの重要性を理解すると共に、お客様が利用しているサービスに影響を及ぼす可能性のある変更については、その情報を公開することをお約束いたします。
 
@@ -32,7 +32,7 @@ TLS 1.0 および 1.1 の依存関係を削除する方法については、次�
 
 ## <a name="more-information"></a>詳細
 
-2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用のお客様の場合、TLS 1.0 および1.1 の廃止は、2020年10月15日に開始されます。
+2020 年 1 月の時点で、TLS 1.0 および 1.1 の廃止が開始されました。 DoD または GCC High インスタンスで TLS 1.0 または 1.1 を介して Office 365 に接続するクライアント、デバイス、またはサービスはサポートされていません。 Office 365 の商用のお客様の場合、TLS 1.0 および1.1 の廃止は、2020年10月15日に開始され、展開は次の週および月を超えて続行されます。 
 
 Office 365 サービスへの接続を維持するためには、クライアントとサーバー間、ブラウザーとサーバー間のすべての組み合わせで TLS バージョン 1.2 (またはそれ以降のバージョン) を使用することをお勧めします。 クライアントとサーバー間、ブラウザーとサーバー間の特定の組み合わせについては、更新が必要になる場合があります。
 
@@ -70,7 +70,7 @@ Microsoft Teams ルームと Surface Hub 製品の TLS 1.2 のサポートも、
 - Office 365 に接続する Windows 7 クライアントの場合、TLS 1.2 が Windows の WinHTTP の既定の安全なプロトコルであることを確認してください。 詳細については、「 [KB 3140245-Update to enable TLS 1.1」および「TLS 1.2 as a default secure protocol in Windows](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)」を参照してください。
 - TLS 1.0 および 1.1 の依存関係を削除することで脆弱な TLS への対処を開始するには、「[マイクロソフトにおける TLS 1.2 のサポート (英語)](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)」をご参照ください。
 - [IIS の新機能](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)を使用すると、脆弱なセキュリティ プロトコルを使用してサービスに接続している [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) や [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) のクライアントを容易に確認できます。
-- TLS 1.0 の問題に関する詳細については、「 [TLS 1.0 の問題の解決](https://www.microsoft.com/download/details.aspx?id=55266)」を参照してください。
+- [TLS 1.0 の問題を解決](https://www.microsoft.com/download/details.aspx?id=55266)する方法に関する詳細情報を入手します。
 - セキュリティに対するマイクロソフトのアプローチについての公開情報をご覧になるには、[Office 365 セキュリティ センター](https://www.microsoft.com/trustcenter/cloudservices/office365)へアクセスしてください。
 - [TLS 1.0/1.1 の廃止の準備 - Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
 - [Exchange サーバー TLS ガイダンス、パート 1: TLS 1.2 の準備](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
