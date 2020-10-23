@@ -20,21 +20,24 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除された Microsoft 365 グループを復元する方法について説明します。
-ms.openlocfilehash: 8fb2cb3afdf390efae7854a040bb56df731cceaf
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307189"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681648"
 ---
 # <a name="restore-a-deleted-group"></a>削除されたグループを復元する
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
+
+> [!NOTE]
+> この記事では、Microsoft 365 グループのみを復元する方法について説明します。 他のすべてのグループは、削除された後に復元することはできません。
 
 グループを削除した場合、既定では30日間保持されます。 この30日の期間は、引き続きグループを復元できるため、"ソフト削除" と見なされます。 30日後、グループとそれに関連するコンテンツは完全に削除され、復元することはできません。
 

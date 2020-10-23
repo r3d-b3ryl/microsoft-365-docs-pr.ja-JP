@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用して Office アドインを展開できるようにします。
-ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464052"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681626"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>組織でアドインの一元展開が機能するかどうかを判断する
 
@@ -45,7 +45,7 @@ ms.locfileid: "48464052"
   
 ## <a name="requirements"></a>要件
 
-アドインを一元展開するには、ユーザーが Microsoft 365 Apps for enterprise または Microsoft 365 Business Premium (および組織 ID を使用して Office にサインインしている) を使用しており、Exchange Online および Exchange Online の Exchange Online メールボックスを持っている必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
+アドインを一元展開するには、ユーザーが microsoft 365 365 Apps for enterprise、microsoft 365 for business (および組織 ID を使用して Office にサインインしている)、および Exchange Online と Exchange Online の Exchange Online メールボックスを使用している必要があります。 サブスクリプションディレクトリは、に含まれているか、Azure Active Directory にフェデレーションされている必要があります。
 以下の Office および Exchange の特定の要件を確認することも、 [集中展開の互換性チェック](#centralized-deployment-compatibility-checker)を使用することもできます。
 
 一元展開は、次の機能をサポートしていません。
@@ -61,11 +61,11 @@ ms.locfileid: "48464052"
 ### <a name="office-requirements"></a>Office の要件
 
 - Word、Excel、PowerPoint のアドインでは、ユーザーが次のいずれかを使用している必要があります。
-  - Windows デバイスで、バージョン1704以降の Microsoft 365 Apps for enterprise、または Microsoft 365 Business Premium。
+  - Windows デバイスで、バージョン1704以降の Microsoft 365 アプリ 365 for enterprise、または Microsoft 365 for business。
   - Mac では、バージョン15.34 以降。
 
 - Outlook の場合、ユーザーは次のいずれかを使用する必要があります。 
-  - バージョン1701以降の Microsoft 365 Apps for enterprise、または Microsoft 365 Business Premium。
+  - Microsoft 365 for enterprise、または Microsoft 365 for business のバージョン1701以降の Microsoft 365 アプリ。
   - バージョン1808以降の Office Professional Plus 2019 または Office Standard 2019。
   - 16.0.4494.1000 以降のバージョンの Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI)\*
   - 15.0.4937.1000 以降のバージョンの Office Professional Plus 2013 (MSI) または Office Standard 2013 (MSI)\*

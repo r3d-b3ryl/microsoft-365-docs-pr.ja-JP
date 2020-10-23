@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Office 365 Advanced Threat Protection (Office 365 ATP) で使用可能なフィッシング対策ポリシーについて学習できます。
-ms.openlocfilehash: 1aeff889f5ced6429e7721518527e6f6725bb18b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f8e00c6162a40d6d81a0ef72f0ec655a4234a588
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399207"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681670"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
@@ -30,7 +30,7 @@ ms.locfileid: "48399207"
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックスを使用しないスタンドアロンの Exchange Online Protection (EOP) 組織、および Office 365 Advanced Threat Protection (Office 365 ATP) 組織で使用できます。
 
-ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 次に例を示します。
+ATP のフィッシング対策ポリシーは、Office 365 ATP がインストールされている組織でのみ使用できます。 次に、例を示します。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -164,6 +164,9 @@ ATP のフィッシング対策ポリシーは、Office 365 ATP がインスト�
   リストを **保護するユーザー** に内部または外部の電子メールアドレスを追加すると、それらの **送信者** からのメッセージは、偽装保護チェックの対象になります。 ポリシーが適用される**受信者**にメッセージが送信される**場合**、メッセージは偽装をチェックします (既定のポリシーのすべての受信者)。カスタムポリシーの受信者**に適用さ**れます)。 偽装が送信者の電子メールアドレスで検出された場合、ユーザーの偽装保護アクションがメッセージに適用されます (メッセージの処理、および偽装ユーザー安全ヒントを表示するかどうかなど)。
 
 - **保護するドメイン**: 指定されたドメインが、 **メッセージの送信者のドメインで**偽装されないようにします。 たとえば、所有しているすべてのドメイン ([承認済みドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) または特定のドメイン (自分が所有しているドメインまたはパートナードメイン)。 偽装から保護されているこの**送信者ドメイン**の一覧は、ポリシーが適用される**受信者**の一覧 (既定のポリシーのすべての受信者、[[ポリシーの設定](#policy-settings)] セクションの [**適用先**] に設定されている特定の受信者) とは異なります。
+
+  > [!NOTE]
+  > すべてのフィッシング対策ポリシーで定義できる、保護されたドメインの最大数は50です。 つまり、50で保護されたドメインを1つのポリシー、10個の保護されたドメインを5ポリシーにすることなどができます。
 
   既定では、を **保護する**ためにドメインの偽装保護用に構成されている送信者ドメインはありません。 したがって、既定では、既定のポリシーまたはカスタムポリシーのどちらでも、偽装保護の対象となる送信者ドメインはありません。
 
