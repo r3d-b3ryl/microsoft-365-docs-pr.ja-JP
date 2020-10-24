@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft 365 の情報保護機能を使用して、クラウド内のデジタルアセットをセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637237"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754607"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation の情報保護
 
@@ -54,7 +54,7 @@ Contoso 社は、次の手順に従って、情報保護の要件に応じて Mi
 
 1. 保護する情報を特定する
 
-   Contoso 社は、オンプレミスの SharePoint サイトとファイル共有にある既存のデジタル資産を広範囲にわたってレビューし、各資産に分類されました。
+   Contoso 社は、オンプレミスの SharePoint サイトとファイル共有に配置されている既存のデジタル資産を幅広くレビューし、各資産に分類しました。
 
 2. 各データ レベルについてアクセス、保持、情報保護ポリシーを決定する
 
@@ -113,12 +113,12 @@ Contoso 社は、Exchange Online と SharePoint の展開の一環として、�
 
 ## <a name="next-step"></a>次の手順
 
-Id およびアクセス管理、脅威保護、情報保護、およびセキュリティ管理については、「Contoso 社が Microsoft 365 のセキュリティ機能を使用する方法[」を参照してください](contoso-security-summary.md)。
+Contoso 社が、id およびアクセス管理、脅威保護、情報保護、およびセキュリティ管理のために [Microsoft 365 for enterprise のセキュリティ機能](contoso-security-summary.md) を使用する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 
 [セキュリティのロードマップ](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

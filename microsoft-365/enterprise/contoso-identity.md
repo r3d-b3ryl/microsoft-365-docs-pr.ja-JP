@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社で、IDaaS (Identity as a Service) を活用して、従業員向けのクラウド ベース認証や、パートナーと顧客向けのフェデレーション認証を提供している方法を説明します。
-ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637249"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754643"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso 社の ID
 
@@ -43,7 +42,7 @@ Contoso 社では次のことが可能です。
 - お客様は、Microsoft、Facebook、または Google のメールアカウントを使用して、会社のパブリック web サイトにサインインします。
 - ベンダーおよびパートナーは、自分の LinkedIn、Salesforce、または Google のメールアカウントを使用して、会社のパートナーエクストラネットにサインインします。
 
-ここでは、パブリック web サイト、パートナーエクストラネット、および AD FS サーバーのセットを含む Contoso DMZ を示します。DMZ は、顧客、パートナー、インターネットサービスを含むインターネットに接続されています。
+ここでは、パブリック web サイト、パートナーエクストラネット、および Active Directory フェデレーションサービス (AD FS) サーバーのセットを含む Contoso DMZ を示します。DMZ は、顧客、パートナー、インターネットサービスを含むインターネットに接続されています。
 
 ![顧客とパートナーのフェデレーション認証の Contoso サポート](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -77,12 +76,12 @@ Contoso identity とデバイスの条件付きアクセスポリシーの結果
  
 ## <a name="next-step"></a>次の手順
 
-Contoso 社が Microsoft エンドポイント構成マネージャーインフラストラクチャを使用して、組織全体に現在の Windows 10 Enterprise を展開し、維持する方法に[ついて説明](contoso-win10.md)します。
+Contoso 社が Microsoft エンドポイント構成マネージャーインフラストラクチャを使用して、組織全体に [現在の Windows 10 Enterprise を展開し、維持](contoso-win10.md) する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 の ID ロードマップ](identity-roadmap-microsoft-365.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

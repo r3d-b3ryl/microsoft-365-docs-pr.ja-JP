@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,14 +14,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空の代表的なグローバル組織が、企業の Microsoft 365 を採用する方法。
-ms.openlocfilehash: 87dd725612ad3dfe422293b28d9643a50f9b1e05
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637225"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754670"
 ---
-# <a name="microsoft-365-for-enterprise-for-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 for enterprise
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 for enterprise
 
 Microsoft 365 for enterprise は、ローカルおよびクラウドベースの生産性向上アプリとサービスを Windows 10 Enterprise および高度なセキュリティ機能と組み合わせる Microsoft プレミアクラウドサービスです。 これは、すべてのユーザーが独創的かつ安全に共同作業できるようにする完全なインテリジェントソリューションです。
 
@@ -36,7 +35,9 @@ Contoso Corporation は架空のグローバル製造な企業製造で、その
 
   Contoso 社は、10万を超える製品を使用したグローバルな製造、販売、およびサポートの組織です。
 
-- [CONTOSO IT インフラストラクチャとニーズ](contoso-infra-needs.md) Contoso 社は、オンプレミスの集中管理された IT インフラストラクチャから、クラウドベースの個人生産性のワークロード、アプリケーション、およびハイブリッドシナリオを組み込んだクラウドを含むセットアップに移行しています。
+- [Contoso 社の IT インフラストラクチャおよびニーズ](contoso-infra-needs.md)
+
+  Contoso 社は、オンプレミスの集中管理された IT インフラストラクチャから、クラウドベースの個人生産性のワークロード、アプリケーション、およびハイブリッドシナリオを組み込んだクラウドを含むセットアップに移行しています。
 
 - [ネットワーク](contoso-networking.md)
 
@@ -48,11 +49,11 @@ Contoso Corporation は架空のグローバル製造な企業製造で、その
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  Contoso 社の Windows 10 Enterprise インフラストラクチャは、企業のプライマリ PC およびデバイスオペレーティングシステムを実行しているデバイスの更新プログラムを展開し、自動的にインストールします。
+  Windows 10 Enterprise の Contoso インフラストラクチャは、会社の主要な PC とデバイスのオペレーティングシステムを実行しているデバイスの更新プログラムを自動的に展開し、インストールします。
 
 - [Microsoft 365 Apps for enterprise](contoso-o365pp.md)
 
-  エンタープライズ向けの Contoso Microsoft 365 アプリのインフラストラクチャが展開され、Microsoft Office スイートの生産性ソフトウェア用の更新プログラムが自動的にインストールされます。
+  エンタープライズ向けの Contoso infrastructure 365 インフラストラクチャは、Microsoft Office スイートの生産性ソフトウェアの更新プログラムを自動的に展開し、インストールします。
 
 - [モバイル デバイス管理](contoso-mdm.md)
 
@@ -74,13 +75,13 @@ Contoso Corporation は架空のグローバル製造な企業製造で、その
 
   Contoso 社がオンプレミスのユーザーを Microsoft Teams に移行して、ユニファイドコミュニケーション、コラボレーション、および音声を移行する方法について説明します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-Contoso Corporation について、および Microsoft 365 for enterprise を展開したときに対処された設計上の考慮事項について[説明](contoso-overview.md)します。
+[Contoso Corporation について](contoso-overview.md)、および Microsoft 365 for enterprise を展開したときに対処された設計上の考慮事項について説明します。
 
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

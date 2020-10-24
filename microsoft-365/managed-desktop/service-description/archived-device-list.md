@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 4bfda869972c5650a99395a5fd16c6ad7ddb4f11
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 4b2c53ee8535c2e99acb83060a2ee04d8f5033db
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409026"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754518"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft マネージドデスクトップのアーカイブされたデバイス
 
@@ -38,9 +38,13 @@ Microsoft Managed Desktop に登録するには、デバイスは次のモデル
 
 | モデル  | 最小仕様  | 追加要件   | 定年後の日付 |
 |---------|---------|---------|---------|
-| Dell Precision 3530| 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2023年5月22日** |
-| Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2023年1月9日** |
-| Dell Latitude 7390 7390 2-in-1/7490 | 256 GB/Intel i5/8 GB RAM   | 必要な赤外線カメラ | **2023年1月9日** |
+|Dell Precision 3530| 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2023年5月22日** |
+|Dell Latitude 5300/5300 2-1/5400/5500 | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2024年6月1日**  |
+|Dell Latitude 5490 | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2023年1月9日** |
+|Dell Latitude 7200 2-イン-1 | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2024年5月1** |
+|Dell Latitude 7300/7400/7400 2-1 | 256 GB/Intel i5/8 GB RAM | 必要な赤外線カメラ | **2024年5月1**  |
+|Dell Latitude 7390/7390 2-1/7490 | 256 GB/Intel i5/8 GB RAM   | 必要な赤外線カメラ | **2023年1月9日** |
+|Dell Optiplex 3070 | 128 GB/Intel i3/8 GB RAM | なし | **2025年5月1**  |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年2月15日** |
 |HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB RAM | 5VS01AV、IR カメラまたは指紋センサーを必要とする SKU  | **2023年11月30日** |
 |HP エリート x2 1013 G3| 256 GB/Intel i5/8 GB RAM | 5VS03AV、IR カメラが必要な SKU |**2023年5月14日** |

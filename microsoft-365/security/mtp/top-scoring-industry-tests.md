@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e518f91b264680e3d356b1e6158f4b9740ed52a2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d2973bd3cc2da909d7129192f2b9f9a29226de34
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196097"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754494"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップスコア
 
@@ -50,13 +50,15 @@ Microsoft Defender ウイルス対策は、 [Microsoft DEFENDER ATP Windows 10 �
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>最新テストでの AV-テスト: 6.0/6.0 の保護スコア
 
-AV TEST Product Review and サーティフィケーション Report は、3つのカテゴリ (保護、パフォーマンス、およびユーザビリティ) についてテストします。 次のスコアは、2つのスコアを持つ保護カテゴリに対応しています。現実的なテストと AV テストのリファレンスセット (「蔓延したマルウェア」)。
+AV TEST Product Review and サーティフィケーション Report は、3つのカテゴリ (保護、パフォーマンス、およびユーザビリティ) についてテストします。 次のスコアは、2つのスコアを持つ保護カテゴリ (Real-World テストと AV テスト参照セット ("蔓延したマルウェア" と呼ばれます) を対象としています。
 
-**最新の透明度レポート: [AV-テスト結果の調査 (2020 年1月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ))**
+**最新の透明度レポートをダウンロードする: [AV-テスト結果の調査、January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- 5月-2020 年6月の AV-テストビジネスユーザーテスト: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**最新**</sup>
+- 7月 (2020 年8月)-テストビジネスユーザーテスト: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**最新**</sup>
 
-    Microsoft Defender ウイルス対策は、6.0/6.0 の完全な保護スコア (5 月と6月で 100%) を達成しました。 22190マルウェアサンプルが使用されました。
+    Microsoft Defender ウイルス対策は、6.0/6.0 の完全な保護スコアを達成し、7月と8月に100% を使用しました。 13941マルウェアサンプルが使用されました。
+
+- 5月-2020 年6月の AV-テストビジネスユーザーテスト: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
 - 3月2020年4月の AV-テストビジネスユーザーテスト: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
@@ -68,19 +70,15 @@ AV TEST Product Review and サーティフィケーション Report は、3つ�
 
 - 7月 (2019 年8月)-テストビジネスユーザーテスト: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- 5月-2019 年6月の AV-テストビジネスユーザーテスト: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-Comparatives: 最新テストでの99.7% の保護レベル
 
-ビジネスセキュリティテストは、次の3つの主要な部分で構成されています。リアルタイムの保護テストは、オンラインのマルウェア攻撃を模倣します。マルウェア対策テストは、インターネットの外部 (USB など) からシステムに侵入した場合のパフォーマンステスト、およびシステムのパフォーマンスへの影響を確認するパフォーマンステストです。
+ビジネスセキュリティテストは、次の3つの主要な部分で構成されます。オンラインマルウェア攻撃を模倣した Real-World 保護テスト、マルウェア保護テスト (例: USB など)、およびシステムのパフォーマンスへの影響を確認するパフォーマンステストです。
 
 - Business Security Test 2020 (3 月-6 月): [実世界での保護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**最新**</sup>
 
-    Microsoft Defender ウイルス対策は、過去1年間の実際の保護率 (最新のテストでは 99.7%) を常に高いスコアで評価しています。
+    Microsoft Defender ウイルス対策では、過去1年間の Real-World 保護率が一貫して高く、最新のテストに99.7% のスコアが与えられています。
 
 - Business Security Test 2019 (8 月11日): [実世界の保護率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
-
-- Business Security Test 2019 Factsheet (8 月9日):[現実世界の保護率 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 - ビジネスセキュリティテスト 2019 (3 月-6 月):[現実の保護率 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -88,11 +86,13 @@ AV TEST Product Review and サーティフィケーション Report は、3つ�
 
 SE Labs は、製品およびサービスによって使用される幅広いソリューションをテストして、攻撃から検出したり保護したりします。 エンドポイントソフトウェア、ネットワークアプライアンス、およびクラウドサービスが含まれています。
 
-**最新の透過性レポートをダウンロードします。 [SE Labs テストの結果を調査](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)します。2020年1月**
+**最新の透過性レポートをダウンロードする: [SE Labs テスト結果を調査します。 January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+
+- エンタープライズエンドポイントの保護 (7 月) (2020 年9月): [AAA 賞](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)<sup>**最新**</sup>
+
+    Microsoft の次世代の保護製品は、すべての対象を絞った攻撃を停止しましたが、いくつかの公開された脅威には失敗しました。
 
 - エンタープライズエンドポイント保護4月-2020 年6月: [AAA 賞](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
-
-    Microsoft の次世代保護は、1つの主要な製品に対して、すべての一般および対象となる攻撃から保護されていました。 Microsoft Defender ウイルス対策は、悪意のある Url をブロックし、悪用を処理し、正当なアプリケーションや web サイトを適切に分類する機能によって実現されました。
 
 - エンタープライズエンドポイント保護 (1 月)-2020 年3月: [AAA 賞](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>の  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
@@ -100,9 +100,6 @@ SE Labs は、製品およびサービスによって使用される幅広いソ
 
 - エンタープライズエンドポイントの保護 (7 月) (2019 年9月): [AAA 賞](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>の  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- エンタープライズエンドポイント保護4月 (2019 年6月): [AAA 賞](https://selabs.uk/download/enterprise/epp/2019/apr-jun-2019-enterprise.pdf) <sup>**pdf**</sup>の  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
-- エンタープライズエンドポイント保護 (1 月)-2019 年3月: [AAA 賞](https://selabs.uk/download/enterprise/epp/2019/jan-mar-2019-enterprise.pdf) <sup>**pdf**</sup>の  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ## <a name="endpoint-detection--response"></a>エンドポイント検出 & 応答
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社では、Microsoft 365 for enterprise のセキュリティ機能を使用する方法について説明します。
-ms.openlocfilehash: 635336b70318acdd4ed013a2705691d160926e84
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649703"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754234"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズセキュリティのための Microsoft 365 の概要
 

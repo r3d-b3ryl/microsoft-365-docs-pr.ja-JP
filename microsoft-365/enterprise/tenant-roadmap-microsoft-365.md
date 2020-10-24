@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,27 +14,26 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Microsoft 365 用のテナントをセットアップするためのロードマップ。
-ms.openlocfilehash: db0f9552fce460ca6d25ee74ea2031bea388b8dc
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656009"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753968"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 のテナントロードマップ
 
-Microsoft 365 テナントは、組織に割り当てられた一連のサービスです。 通常、このテナントは1つ以上の DNS ドメイン名に関連付けられており、さまざまなサブスクリプションのための中央のコンテナーとして機能し、ユーザーアカウントに割り当てられているライセンスに含まれています。 詳細については、「 [Microsoft のクラウドサービスのサブスクリプション、ライセンス、アカウント、およびテナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)」を参照してください。
+Microsoft 365 テナントは、組織に割り当てられた一連のサービスです。 通常、このテナントは1つ以上のパブリック DNS ドメイン名に関連付けられており、さまざまなサブスクリプションと、ユーザーアカウントに割り当てられたライセンスの間の中央および分離されたコンテナーとして機能します。 詳細については、「 [Microsoft のクラウドサービスのサブスクリプション、ライセンス、アカウント、およびテナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)」を参照してください。
 
 Microsoft 365 テナントを作成するときは、特定の地理的な場所に割り当てます。 また、複数の地理的な場所を持つテナントを作成し、テナントをある場所から別の場所に移動することもできます。
 
-テナントの id を取得できるようにするには、テナントの構成を慎重に計画して実行することが重要です。
-
+テナントのユーザー、グループ、ライセンス、およびクラウドアプリを使用できるようにするには、テナントの構成を慎重に計画して実行することが重要です。
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Microsoft 365 テナントをセットアップする
 
 オンプレミスとリモートの両方のワーカーに対して Microsoft 365 へのアクセスのためにネットワークを最適化することを確認した後、次の大きなタスクでは、DNS ドメイン名、一般的なサービス、およびセキュリティで保護されたユーザーのサインインをサポートするその id インフラストラクチャに対して Microsoft 365 テナントを計画し、構成します。
 
-## <a name="plan"></a>プラン
+### <a name="plan"></a>計画
 
 テナントの実装を計画するには、次のようにします。
 
@@ -46,7 +44,6 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 - [ハイブリッド先進認証の使用方法を決定する](hybrid-modern-auth-overview.md)
 - [Office 2007 および Office 2010 のアップグレードを計画する](plan-upgrade-previous-versions-office.md)
 - [テナントの分離について](microsoft-365-tenant-isolation-overview.md)
-- [Microsoft 365 サービスアシュアランスの詳細を取得する](microsoft-365-administrative-access-controls-overview.md)
 
 ### <a name="deploy"></a>展開
 
@@ -69,17 +66,16 @@ Microsoft 365 Multi-Geo を使用すれば、組織はその組織の Microsoft 
 
 詳細については、「 [Microsoft 365 複数地域](microsoft-365-multi-geo.md)」を参照してください。
 
-## <a name="manage-multiple-microsoft-365-tenancies"></a>複数の Microsoft 365 テナンシーを管理する 
+## <a name="manage-multiple-microsoft-365-tenant"></a>複数の Microsoft 365 テナントを管理する 
 
-Oガントの作成に単一のテナントがあると理想的ですが、複数のテナンシーを持つ多くの組織のうちの1つである場合があります。 複数のテナンシーを使用する理由には、合併と買収、管理上の分離が必要である、または分散化が必要な場合があります。
+Oガントの作成に単一のテナントがあると理想的ですが、複数のテナントを持つ多くの組織のうちの1つである場合があります。 その理由として、合併や買収、管理上の分離が必要な場合、または分散化を行う場合があります。
 
-Microsoft 365 テナンシーが複数ある場合は、次の記事を参照してください。
+Microsoft 365 テナントが複数ある場合は、次の記事を参照してください。
 
 - [テナント間コラボレーション](microsoft-365-inter-tenant-collaboration.md)
 - [テナント間でのメールボックスの移行](cross-tenant-mailbox-migration.md)
 - [テナントからテナントへの移行](microsoft-365-tenant-to-tenant-migrations.md)
 
-
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [サブスクリプション、ライセンス、アカウント、テナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)を使用して、テナントの計画を開始します。

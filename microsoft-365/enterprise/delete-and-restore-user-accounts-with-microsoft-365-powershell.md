@@ -19,40 +19,42 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: この記事では、PowerShell で各種モジュールを使用して、Microsoft 365 ユーザーアカウントを削除する方法について説明します。
-ms.openlocfilehash: 0c13b57c13fb3d01d648438a5d6973fea8b9db67
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: PowerShell で各種モジュールを使用して、Microsoft 365 ユーザーアカウントを削除する方法について説明します。
+ms.openlocfilehash: 39bf57fe7e7aad1bdc9915e503107ad799515030
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235444"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754542"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザーアカウントを削除する
 
 Microsoft 365 の PowerShell を使用して、ユーザーアカウントを削除および復元することができます。
 
 >[!Note]
->Microsoft 365 管理センターを使用して[ユーザーアカウントを復元する方法について説明](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
+>Microsoft 365 管理センターを使用して [ユーザーアカウントを復元](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user) する方法について説明します。
+>
+>その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュールを使用する
 
 最初に、 [Microsoft 365 テナントに接続](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
 
-接続したら、以下の構文を使用してユーザー アカウントを個別に削除します。
+接続した後、次の構文を使用して個々のユーザーアカウントを削除します。
   
 ```powershell
 Remove-AzureADUser -ObjectID <sign-in name>
 ```
 
-この例では、ユーザー アカウント fabricec@litwareinc.com を削除します。
+この例では、ユーザーアカウント *fabricec \@ litwareinc.com*を削除します。
   
 ```powershell
 Remove-AzureADUser -ObjectID fabricec@litwareinc.com
 ```
 
 > [!NOTE]
-> **Set-azureaduser**コマンドレットの **-ObjectID**パラメーターは、アカウントのサインイン名 (ユーザープリンシパル名とも呼ばれる)、またはアカウントのオブジェクト ID のいずれかを受け入れます。
+> **Set-azureaduser**コマンドレットの *-ObjectID*パラメーターは、アカウントのサインイン名 (ユーザープリンシパル名またはアカウントのオブジェクト ID とも呼ばれます) のいずれかを受け入れます。
   
 ユーザーの名前に基づいてアカウント名を表示するには、以下のコマンドを使用します。
   
@@ -61,7 +63,7 @@ $userName="<User name>"
 Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipalName
 ```
 
-この例では、Caleb Sills という名前のユーザーのアカウント名を表示します。
+次の使用例は、ユーザー *Caleb/ls*のアカウント名を表示します。
   
 ```powershell
 $userName="Caleb Sills"
@@ -88,10 +90,10 @@ Remove-MsolUser -UserPrincipalName <sign-in name>
 ```
 
 >[!Note]
->PowerShell Core は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールと、名前に **Msol** が含まれるコマンドレットをサポートしていません。 これらのコマンドレットを引き続き使用するには、Windows PowerShell から実行する必要があります。
+>PowerShell Core は、Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュールと、名前に *Msol* を指定したコマンドレットをサポートしていません。 これらのコマンドレットを Windows PowerShell から実行します。
 >
 
-この例では、ユーザー アカウント BelindaN@litwareinc.com を削除します。
+この例では、ユーザーアカウント *BelindaN@litwareinc.com*を削除します。
   
 ```powershell
 Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
@@ -103,21 +105,20 @@ Remove-MsolUser -UserPrincipalName belindan@litwareinc.com
 Restore-MsolUser -UserPrincipalName <sign-in name>
 ```
 
-この例では、削除されたユーザー アカウント BelindaN@litwareinc.com を復元します。
+この例では、削除されたアカウントの * \@ litwareinc.com*を復元します。
   
 ```powershell
 Restore-MsolUser -UserPrincipalName BelindaN@litwareinc.com
 ```
 
- **メモ:**
-  
-- 復元できる削除されたユーザーの一覧を表示するには、次のコマンドを実行します。
-    
-  ```powershell
-  Get-MsolUser -All -ReturnDeletedUsers
-  ```
-
-- ユーザーアカウントの元のユーザープリンシパル名が別のアカウントで使用されている場合、ユーザーアカウントを復元するときに別のユーザープリンシパル名を指定するには、 _UserPrincipalName_の代わりに_newuserprincipalname_パラメーターを使用します。
+>[!Note]
+> 復元できる削除されたユーザーの一覧を表示するには、次のコマンドを実行します。
+>    
+> ```powershell
+> Get-MsolUser -All -ReturnDeletedUsers
+> ```
+>
+> ユーザーアカウントの元のユーザープリンシパル名が別のアカウントで使用されている場合、ユーザーアカウントを復元するときに別のユーザープリンシパル名を指定するには、 _UserPrincipalName_の代わりに_newuserprincipalname_パラメーターを使用します。
 
 
 ## <a name="see-also"></a>関連項目

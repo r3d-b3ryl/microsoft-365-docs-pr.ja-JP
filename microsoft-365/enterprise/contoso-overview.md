@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: ビジネスとしての Contoso Corporation について、さらに同社の世界規模のオフィスの階層構造について説明します。
-ms.openlocfilehash: 402c8c1cbb1484d8a0ad2ce4159b90107856167d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b0c00ed5657d914851f28278a2f4cf80660b53b0
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637081"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754270"
 ---
 # <a name="overview-of-contoso-corporation"></a>Contoso Corporation の概要
 
-![Contoso 社](../media/contoso-overview/contoso-icon.png)
-
-Contoso Corporation は、パリに本社がある多国籍企業です。同社は、10万を超える製品を使用した製造、販売、サポートの組織です。
+Contoso Corporation は、パリに本社がある多国籍企業です。 同社は、10万を超える製品を使用した製造、販売、サポートの組織です。
 
 ## <a name="contoso-around-the-world"></a>世界の Contoso
 
@@ -38,21 +35,21 @@ Contoso Corporation は、パリに本社がある多国籍企業です。同社
  
 Contoso には、次の3つのオフィスの層があります。
 
-- 本社
+- Headquarters
 
-  Contoso 本社は、パリの outskirts にある企業キャンパスで、多数の建物を管理、エンジニアリング、製造施設に備えています。Contoso データセンターとそのインターネットプレゼンスは、すべてパリ本社に収納されています。
+  Contoso 本社は、パリの outskirts にある企業キャンパスで、多数の建物を管理、エンジニアリング、製造施設に備えています。 Contoso データセンターとそのインターネットプレゼンスは、すべてパリ本社に収納されています。
 
   本社には 25,000 人のワーカーがいます。
 
 - 地域ハブ
 
-  ハブオフィスは、世界の特定の地域 (60% の売上とサポートスタッフ) を提供します。各地域ハブは、広帯域 WAN リンクを介してパリ本社に接続されています。
+  ハブオフィスは、世界の特定の地域 (60% の売上とサポートスタッフ) を提供します。 各地域ハブは、広帯域 WAN リンクを介してパリ本社に接続されています。
 
   地域ハブには、平均2000ワーカーがあります。
 
 - サテライト オフィス
 
-  サテライトオフィスには、80% の売上およびサポートスタッフが含まれています。これにより、重要都市または subregions の Contoso お客様のためのオンサイトプレゼンスが提供されます。各サテライトオフィスは、広帯域 WAN リンクを介して地域のハブに接続されています。
+  サテライトオフィスには、80% の売上およびサポートスタッフが含まれています。 これにより、重要都市または subregions の Contoso お客様のためのオンサイトプレゼンスが提供されます。 各サテライトオフィスは、広帯域 WAN リンクを介して地域のハブに接続されています。
 
   サテライトオフィスには、平均で250ワーカーがあります。
 
@@ -74,10 +71,10 @@ Contoso 社の IT アーキテクトは、エンタープライズ向けの Micr
 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社のオンプレミスの IT インフラストラクチャと、企業のビジネスニーズが Microsoft 365 for enterprise でどのように扱われるかについて[説明](contoso-infra-needs.md)します。
+Contoso 社の [オンプレミスの IT インフラストラクチャ](contoso-infra-needs.md) と、企業のビジネスニーズが Microsoft 365 for enterprise でどのように扱われるかについて説明します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順
-ms.openlocfilehash: 8b43c225c6ea5ecd0de02250d341572704fb4482
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 0587e868d8e9d54d0e5025d02fdbd5a5dfc0f430
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477114"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740281"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -110,6 +110,16 @@ Exchange にラベルを発行する場合、エンド ユーザーにこれら�
   
 ![手動ラベルが有効になるタイミングの図](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
+
+ラベルが 7 日経っても表示されない場合は、コンプライアンスセンターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ （エラー）** の状態が表示され、場所の詳細に、ポリシーの展開 （SharePoint の場合） またはポリシーの再展開 （OneDrive の場合） に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+
+2. 次のコマンドを実行します:
+    
+    ``` PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+   ```
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>Exchange に発行された保持ラベルの状態を確認する方法
 
@@ -224,7 +234,7 @@ Then, create one or more label policies that contain the labels and policy setti
 
 This method requires retention labels to be published to a retention label policy.
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label.
+In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location inherit the default retention label.
   
 For a document library, this is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: ユーザーがデスクトップ、モバイル、および web 用の Office アプリで機密ラベルを操作する方法と、機密ラベルをサポートするアプリについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5207d0e3e7e6272ab4a498d1cd68ad1fe3865c39
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 238dc5c0b54d09258f2f679bff5467052d3448f3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309209"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754565"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -59,6 +59,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 |[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[変数を含む動的マーキング](#dynamic-markings-with-variables)                                              | プレビュー: [ベータチャネルおよび現在のチャネル (プレビュー)](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | レビュー |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上          | 16.21 +     | 2.21以上 | 16.0.11231以上 | [はい-オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [現在のチャネル](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 以降) | 16.35 +   | レビュー   | レビュー         | レビュー                                                        |
 |[ラベル分析を使用](label-analytics.md) してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー            | レビュー        | レビュー   | レビュー         | レビュー                                                        |
@@ -76,6 +77,7 @@ IOS および Android の場合: これらの最小バージョンが表示さ�
 |[ラベルを変更する場合は、根拠を設定する必要があります。](sensitivity-labels.md#what-label-policies-can-do)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
 |[カスタムヘルプページへのヘルプリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
 |[コンテンツをマークする](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
+|[変数を含む動的マーキング](#dynamic-markings-with-variables)                                              | レビュー                     | レビュー                 | レビュー         | レビュー           | レビュー               |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
 |[ユーザーがアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910以上                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 必要               |
 |[ラベル分析を使用](label-analytics.md) してラベルの使用を表示し、管理者向けにデータを送信する                      | レビュー                       | レビュー                    | レビュー           | レビュー               | レビュー               |
@@ -134,7 +136,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 - ドキュメントの場合:**ファイル**  >  **情報**  >  **保護ドキュメント**に  >  **よるアクセスの制限**
 - 電子メールの場合: [**オプション**] タブから [**暗号化**] を > 
   
-ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 以下に例を示します。
+ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 次に例を示します。
 
 - ユーザーが **機密 \ All Employees** ラベルをドキュメントに適用します。このラベルは、組織内のすべてのユーザーの暗号化設定を適用するように構成されています。 このユーザーは、組織外のユーザーへのアクセスを制限するように IRM 設定を手動で構成します。 最終的には、" **社外秘** " というラベルが付けられた文書が作成されますが、組織内のユーザーは意図したとおりに開くことができません。
 
@@ -144,7 +146,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ドキュメントまたは電子メールに既にラベルが付けられている場合、ユーザーはこれらの操作を実行できます。コンテンツが暗号化されていない場合、または [利用状況](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) のエクスポートまたはフルコントロールがある場合です。 
 
-有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 以下に例を示します。
+有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 次に例を示します。
 
 - ユーザーが自分のアクセス許可を割り当てる必要がある例外の場合は、 [ユーザーが自分のアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)ためのラベルを提供します。 
 
@@ -235,6 +237,27 @@ Office アプリの外部に機密ラベルを適用する方法には、次の�
 - Microsoft Cloud App Security
 
 これらのシナリオでは、Office アプリを使用することにより、組み込みのラベルを持つユーザーは、一時的に現在のラベルを削除または置換してから、元のラベルを再適用することで、ラベルのコンテンツマーキングを適用できます。
+
+### <a name="dynamic-markings-with-variables"></a>変数を含む動的マーキング
+
+> [!IMPORTANT]
+> 現時点では、すべてのプラットフォームのすべてのアプリが、ヘッダー、フッター、およびウォーターマークに指定できる動的コンテンツマーキングをサポートしているわけではありません。 この機能をサポートしていないアプリでは、変数を解決するのではなく、ラベル構成で指定された元のテキストとしてマーキングを適用します。
+> 
+> Azure Information Protection の統合されたラベルクライアントは、動的マーキングをサポートします。 Office に組み込まれているラベルの場合は、このページの [ [機能](#support-for-sensitivity-label-capabilities-in-apps) ] セクションの表を参照してください。
+
+コンテンツマーキングの機密ラベルを構成する場合は、ヘッダー、フッター、またはウォーターマークのテキスト文字列で次の変数を使用できます。
+
+| 変数 | 説明 | ラベルの適用例 |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | 現在のラベルの表示名 | **全般**|
+| `${Item.Name}` | 現在のファイル名またはメールの件名 | **Sales.docx** |
+| `${Item.Location}` | ドキュメントの現在のパスとファイル名、または電子メールの電子メールの件名 | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | 現在のユーザーの表示名  | **Richard が1つだけ簡略化します** |
+| `${User.PrincipalName}` | 現在のユーザー Azure AD ユーザープリンシパル名 (UPN) | **rシム one \@ contoso.com** |
+| `${Event.DateTime}` | ローカルタイムゾーンの現在の日付と時刻 | **8/10/2020 1:30 PM** |
+
+> [!NOTE]
+> これらの変数の構文は大文字と小文字を区別します。
 
 ## <a name="end-user-documentation"></a>エンドユーザードキュメント
 

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が Microsoft Endpoint Configuration Manager を使用して Microsoft 365 Apps for enterprise を展開する方法について説明します。
-ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637165"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754358"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 社の Microsoft 365 Apps for enterprise の展開
 
@@ -40,7 +39,7 @@ Contoso 社は、要件に基づいて、構成マネージャー (Current Branc
 - インテリジェント言語パックの展開 (オペレーティングシステムと同じ言語の自動展開を含む)。
 - 展開時にクライアントから既存のバージョンの Office を削除するための完全にサポートされた、使いやすい方法。
 
-構成マネージャーに加えて、Contoso 社では [office アドインの準備ツールキットと VBA](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)を使用して、office マクロやアドインとの互換性の問題を評価しています。
+構成マネージャーに加えて、Contoso 社は [office アドインと VBA の準備ツールキット](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)を使用して、Microsoft の無料ツールである office マクロやアドインとの互換性の問題を評価していました。
 
 ## <a name="managing-deployment-and-updates"></a>展開と更新を管理する
 
@@ -77,14 +76,14 @@ Contoso 社ではクラウドからデバイスを自動的に更新するよう
 
 ![Microsoft 365 Apps for enterprise の Contoso 展開インフラストラクチャ](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-Contoso 社が microsoft 365 で microsoft Intune を使用して、自社のデバイスと、組織全体で実行されるアプリを管理する方法に[ついて説明](contoso-mdm.md)します。
+Contoso 社が microsoft 365 で microsoft [Intune を使用して](contoso-mdm.md) 、自社のデバイスと、組織全体で実行されるアプリを管理する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の PowerShell の使用を開始する
+title: Microsoft 365 用 PowerShell の使用を開始する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: '概要: Microsoft 365 の PowerShell の価値を理解し、Microsoft 365 テナントに接続し、ヘルプを取得します。'
-ms.openlocfilehash: 3a57e5188dd4161442ee722a14c2546ef28ccb01
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: '概要: Microsoft 365 の PowerShell の価値、Microsoft 365 テナントに接続する方法、およびヘルプを入手する方法について説明します。'
+ms.openlocfilehash: 850d3eea1aa23937bf30795784405119ef6c167c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429976"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754458"
 ---
-# <a name="get-started-with-powershell-for-microsoft-365"></a>Microsoft 365 の PowerShell の使用を開始する
+# <a name="get-started-with-powershell-for-microsoft-365"></a>Microsoft 365 用 PowerShell の使用を開始する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 の PowerShell でコマンドとスクリプトを使用して、Microsoft 365 を管理し、日常業務を合理化することができます。 Microsoft 365 を365管理するために microsoft の PowerShell が重要である理由について説明します。 microsoft 365 サブスクリプションに接続してレポートを作成する方法と、Microsoft の365コミュニティから詳細情報を入手する方法について説明します。
+Microsoft 365 の PowerShell でコマンドとスクリプトを使用して、Microsoft 365 を管理し、日常業務を合理化することができます。 次の情報を参照して、microsoft 365 の PowerShell を365管理することが重要である理由について説明します。 microsoft 365 サブスクリプションに接続してレポートを作成する方法と、Microsoft 365 コミュニティから詳細情報を取得する場所について説明します。
   
 次のトピックを選択します。
   
@@ -54,7 +54,7 @@ Microsoft 365 の PowerShell でコマンドとスクリプトを使用して、
     
 - [**PowerShell の Microsoft 365 コミュニティリソース**](microsoft-365-powershell-community-resources.md)
     
-    PowerShell コミュニティに接続し、Microsoft 365 の PowerShell の使用に関するヘルプまたは詳細情報を入手するには、ここから開始してください。
+    PowerShell コミュニティに接続するには、ここから開始して、Microsoft 365 の PowerShell の使用に関する詳細情報を入手してください。
     
 ## <a name="related-topics"></a>関連項目
 

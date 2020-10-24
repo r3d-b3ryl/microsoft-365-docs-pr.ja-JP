@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本構造と、企業のビジネスニーズが Microsoft 365 for enterprise によってどのように満たされるかについて説明します。
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637177"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754588"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT インフラストラクチャとビジネスニーズ
 
@@ -30,12 +29,10 @@ Contoso 社は、オンプレミスの集中管理された IT インフラス�
 
 Contoso 社では、ほとんど集中管理されたオンプレミスの IT インフラストラクチャを使用しており、アプリケーション データセンターはパリ本社に位置します。
 
-図1は、本社とアプリケーションデータセンター、DMZ、およびインターネットを示しています。
+ここでは、アプリケーションデータセンター、DMZ、およびインターネットを使用した本社オフィスについて説明します。
 
 ![既存の Contoso IT インフラストラクチャ](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**図 1: 既存の Contoso IT infrastructure**
- 
 オンプレミス アプリケーション データセンターのホストは次のとおりです: 
 
 - SQL Server およびその他の Linux データベースを使用するカスタムの基幹業務アプリケーション。
@@ -135,15 +132,15 @@ Contoso 社の IT 部門は、展開する前に、次のビジネスニーズ�
 | コンプライアンス |  |  |
 |  | 地域の規制要件に準拠する | Microsoft 365 の GDPR 機能 |
 | 管理 |  |  |
-|  | クライアント更新プログラムをインストールするための IT オーバーヘッドを軽減する | 展開リング <BR> Windows 10 Enterprise の更新プログラム <BR> Microsoft 365 Apps for enterprise の更新プログラム |
+|  | クライアント更新プログラムをインストールするための IT オーバーヘッドを軽減する | Windows 10 Enterprise の更新プログラム <BR> Microsoft 365 Apps for enterprise の更新プログラム |
 ||||
 
 ## <a name="next-step"></a>次の手順
 
-Contoso 社のオンプレミスネットワークについて、および Microsoft 365 クラウドベースのリソースへのアクセスと遅延に対してどのように最適化されたかについて[説明](contoso-networking.md)します。
+Contoso 社 [のオンプレミスネットワーク](contoso-networking.md) について、および Microsoft 365 クラウドベースのリソースへのアクセスと遅延に対してどのように最適化されたかについて説明します。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)

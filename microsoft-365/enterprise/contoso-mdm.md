@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社が microsoft 365 で microsoft Intune を使用して、自社のデバイスおよびそれらに対して実行されているアプリを管理する方法について説明します。
-ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649647"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753999"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 社のモバイル デバイス管理
 
@@ -28,7 +27,7 @@ Microsoft 365 for enterprise には、モバイルデバイスとアプリケー
 
 Contoso 社には、多くのモバイル対応従業員がいます。Contoso 社の場所にオフィスがあり、一部にはオフィスがありません。Contoso 社は従業員の生産性を有効にする方法を必要としましたが、デバイス、これらのデバイスに格納されている Contoso データ、およびアプリケーションの動作を安全に保つ必要がありました。
 
-## <a name="plan"></a>プラン
+## <a name="plan"></a>計画
 
 Contoso 社は、Microsoft 365 for enterprise のモバイルデバイス管理の次の Intune ユースケースを特定しました。
 
@@ -69,15 +68,15 @@ Contoso 社は、適切な Intune デバイスグループに追加すること�
 
 ![Contoso モバイルデバイス管理の展開インフラストラクチャ](../media/contoso-mdm/contoso-mdm-fig1.png)
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-Contoso 社が Microsoft 365 の情報保護機能を使用して、企業全体で重要なデジタル資産を分類、識別、保護する方法に[ついて説明](contoso-info-protect.md)します。
+Contoso 社が Microsoft 365 の [情報保護機能](contoso-info-protect.md) を使用して、企業全体で重要なデジタル資産を分類、識別、保護する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 のデバイス管理](device-management-roadmap-microsoft-365.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
 

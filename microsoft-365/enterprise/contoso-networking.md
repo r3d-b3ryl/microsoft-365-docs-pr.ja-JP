@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のネットワークインフラストラクチャと、企業が Microsoft 365 for enterprise cloud services に最適なネットワークパフォーマンスを得るために、その SD テクノロジをどのように使用するかについて説明します。
-ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637189"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754016"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation のネットワーク
 
@@ -115,14 +114,14 @@ Contoso ユーザーによるエンタープライズサービスへの Microsof
 
    各コンピューターは、最新のオペレーティングシステムの更新プログラムがインストールされていて、エンドポイントのセキュリティ監視がすべてのクライアントでアクティブであったことを確認するためにチェックされました。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-Contoso 社が、どのようにクラウド内のオンプレミスの Active Directory ドメイン サービス (AD DS) を従業員向けに利用し、どのように顧客やビジネス パートナー向けのフェデレーション認証を活用しているかについて[説明](contoso-identity.md)します。
+Contoso 社が、従業員向けの [クラウドで社内 Active Directory ドメインサービスを利用](contoso-identity.md) する方法と、顧客やビジネスパートナーに対するフェデレーション認証について説明します。
 
 ## <a name="see-also"></a>関連項目
 
 [Microsoft 365 のネットワークロードマップ](networking-roadmap-microsoft-365.md)
 
-[Microsoft 365 for Enterprise の概要](microsoft-365-overview.md)
+[Microsoft 365 for enterprise の概要](microsoft-365-overview.md)
 
 [テスト ラボ ガイド](m365-enterprise-test-lab-guides.md)
