@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104453"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637009"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -102,15 +102,23 @@ ms.locfileid: "48104453"
   
 - [Microsoft 365 グループ](office-365-groups.md)
   
-- [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity.md)
-  
-- [OneDrive for Business の利用状況](onedrive-for-business-usage.md)
+- [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)
+
+- [米国政府の OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity.md)
+
+- [OneDrive for Business の利用状況](onedrive-for-business-usage-ww.md)
+
+- [米国政府の OneDrive for Business の利用状況](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps の使用法](microsoft365-apps-usage.md)
   
-- [SharePoint サイトの利用状況](sharepoint-site-usage.md)
+- [SharePoint サイトの利用状況](sharepoint-site-usage-ww.md)
+
+- [米国政府の SharePoint サイトの利用状況](sharepoint-site-usage.md)
   
-- [SharePoint のアクティビティ](sharepoint-activity.md)
+- [SharePoint のアクティビティ](sharepoint-activity-ww.md)
+
+- [米国政府の SharePoint のアクティビティ](sharepoint-activity.md)
   
 - [Skype for Business Online のアクティビティ](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   

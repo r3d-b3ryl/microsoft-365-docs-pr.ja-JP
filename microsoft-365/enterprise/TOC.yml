@@ -269,6 +269,10 @@
       items:
         - name: ドメインの追加
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: 管理
+      items:
+        - name: Microsoft 365 サービス正常性の状態
+          href: microsoft-365-service-health.md
         - name: セットアップ ガイド
           href: setup-guides-for-microsoft-365.md
     - name: 複数のテナント
@@ -571,7 +575,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: プロパティの構成
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: 役割を割り当てる
+            - name: 管理者ロールを割り当てる
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: 削除および復元
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
@@ -719,8 +723,6 @@
       href: contoso-info-protect.md
     - name: セキュリティの概要
       href: contoso-security-summary.md
-- name: Microsoft 365 サービス正常性の状態
-  href: microsoft-365-service-health.md
 - name: Microsoft 365 コンプライアンス
   href: ../compliance/index.yml
 - name: Microsoft 365 セキュリティ

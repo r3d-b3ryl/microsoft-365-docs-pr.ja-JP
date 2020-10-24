@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Microsoft 365 で共有を制限または無効にするオプションについて説明します。
-ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361907"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651420"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Microsoft 365 の共有を制限する
 
@@ -64,7 +64,7 @@ Teams のゲスト共有をオフにするには
 Microsoft 365 グループのゲスト アクセスを禁止する場合は、Microsoft 365 管理センターでグループのゲスト アクセス設定をオフにします。
 
 Microsoft 365 グループのゲスト共有をオフにするには
-1. Microsoft 365 管理センターで、**[設定]** をクリックしてから **[設定]** をクリックします。
+1. Microsoft 365 管理センターで、**[設定]** をクリックしてから **[組織の設定]** をクリックします。
 2. **[サービス]** タブで、**[Microsoft 365 Groups](Microsoft 365 グループ)** をクリックします。
 3. チェックボックスの **[組織外のグループ メンバーがグループ コンテンツにアクセスできるようにします]** と **[グループの所有者が組織外のユーザーをグループに追加できるようにします]** をオフにします。
 4. **[変更の保存]** をクリックします。

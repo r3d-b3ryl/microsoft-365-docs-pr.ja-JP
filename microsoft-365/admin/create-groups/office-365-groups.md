@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 グループについて説明します。
-ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: f3114fdd6eefae0fe226e25907716101dcb6a51f
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337171"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753267"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>管理者向け Microsoft 365 グループの概要
 
@@ -84,7 +84,7 @@ Microsoft 365 グループには、次の制限が適用されます。
 
 グループの使用に関する操作可能な情報を持っている場合は、Microsoft 365 グループを管理する方が効率的です。 Microsoft 365 管理センターには、ストレージの使用状況、アクティブなグループの数、ユーザーがグループをどのように使用しているかなどの項目を表示できるレポートツールが用意されています。 詳細については [、「管理センターの Microsoft 365 レポート](../activity-reports/office-365-groups.md) 」を参照してください。
 
-## <a name="sensitivity-labels"></a>機密ラベル
+## <a name="sensitivity-labels"></a>秘密度ラベル
 
 組織内のユーザーが Microsoft 365 グループを作成するときに設定できる機密ラベルを作成できます。 機密ラベルを使用すると、次のものを構成できます。 
 
@@ -108,7 +108,7 @@ Exchange Online および SharePoint Online を備えた Microsoft 365 サブス
 
 Exchange のみのプランを使用している場合でも、Outlook で共有の受信トレイと共有の予定表機能を取得することはできますが、ドキュメントライブラリ、Planner、その他の機能は取得できません。
 
-Microsoft 365 グループは、Azure Active Directory (AAD) で動作します。 取得するグループ機能は、使用している Azure Active Directory サブスクリプション、およびグループの開催者に割り当てられているライセンスによって異なります。
+Microsoft 365 グループは Azure Active Directory で動作します。 取得するグループ機能は、使用している Azure Active Directory サブスクリプション、およびグループの開催者に割り当てられているライセンスによって異なります。
 
 > [!IMPORTANT]
 > すべてのグループ機能について、Azure AD Premium サブスクリプションを所有している場合、ユーザーは AAD P1 ライセンスが割り当てられているかどうかにかかわらず、グループに参加できます。 ライセンスは適用されません。

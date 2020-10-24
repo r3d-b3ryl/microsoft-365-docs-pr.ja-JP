@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard サブスクリプションのセットアップ方法について説明します。
-ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324448"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644557"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Microsoft Business Standard をセットアップする
 
@@ -40,7 +40,7 @@ Microsoft 365 Business Standard のセットアップに関する短いビデオ
 
 このビデオが役に立った場合には、「[complete training series for small businesses and those new to Microsoft 365 (小規模企業および Microsoft 365 を初めて使用する企業向けのトレーニング シリーズ)](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)」をご覧ください。
   
- *次の手順は、**[Microsoft 365 Business Standard プラン](https://go.microsoft.com/fwlink/p/?LinkId=627220)** を所有する企業および[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を対象としています。*
+ 次の手順は、**[Microsoft 365 Business Standard プラン](https://go.microsoft.com/fwlink/p/?LinkId=627220)** を所有する企業および[非営利団体](https://go.microsoft.com/fwlink/p/?LinkId=627221)を対象としています。_
 
 Microsoft 365 Business Standard (旧称: Office 365 Business Premium) のセットアップに関する短いビデオをご覧ください。<br><br>
 
@@ -56,7 +56,7 @@ Microsoft 365 Business Standard を購入するときに、所有するドメイ
 
 1. グローバル管理者の資格情報を使用して、[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
 
-2. [**セットアップに移動**] を選択して、ウィザードを開始します。
+2. _[*セットアップに移動*]* を選択して、ウィザードを開始します。
 
 3. [**Office アプリのインストール**] ページでは、オプションで自分のコンピューターにアプリをインストールすることができます。
     

@@ -1,10 +1,10 @@
 ---
-title: 削除したグループを復元する
+title: 削除された Microsoft 365 グループを復元する
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,24 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除された Microsoft 365 グループを復元する方法について説明します。
-ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681648"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753245"
 ---
-# <a name="restore-a-deleted-group"></a>削除されたグループを復元する
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
-
-::: moniker-end
-
-> [!NOTE]
-> この記事では、Microsoft 365 グループのみを復元する方法について説明します。 他のすべてのグループは、削除された後に復元することはできません。
+# <a name="restore-a-deleted-microsoft-365-group"></a>削除された Microsoft 365 グループを復元する
 
 グループを削除した場合、既定では30日間保持されます。 この30日の期間は、引き続きグループを復元できるため、"ソフト削除" と見なされます。 30日後、グループとそれに関連するコンテンツは完全に削除され、復元することはできません。
 
@@ -59,7 +49,12 @@ ms.locfileid: "48681648"
 
 - Yammer グループとグループのコンテンツ (Yammer から Microsoft 365 グループが作成されている場合)
 
-## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>Outlook on the web を使用して自分が所有するグループを復元する
+> [!NOTE]
+> この記事では、Microsoft 365 グループのみを復元する方法について説明します。 他のすべてのグループは、削除された後に復元することはできません。
+
+## <a name="restore-a-group"></a>グループを復元する
+
+# <a name="outlook"></a>[Outlook](#tab/outlook)
 
 Microsoft 365 グループの所有者である場合は、次の手順に従って、そのグループを web 上の Outlook で自分で復元することができます。
 
@@ -69,7 +64,7 @@ Microsoft 365 グループの所有者である場合は、次の手順に従っ
 
 削除されたグループがここに表示されない場合は、管理者に問い合わせてください。
 
-## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを復元する
+# <a name="admin-center"></a>[管理センター](#tab/admin-center)
 
 グローバル管理者またはグループ管理者の場合は、次のように、削除されたグループを Microsoft 365 管理センターで復元できます。
 
@@ -79,28 +74,9 @@ Microsoft 365 グループの所有者である場合は、次の手順に従っ
 
 > [!NOTE]
 > 場合によっては、グループとそのすべてのデータが復元されるまでに24時間かかることがあります。 
-  
-## <a name="permanently-delete-a-microsoft-365-group"></a>Microsoft 365 グループを完全に削除する
 
-場合によっては、30日間のソフト削除期間が経過するのを待たずに、グループを完全に削除する必要があります。 それを行うには、PowerShell を起動し、次のコマンドを実行して、グループのオブジェクト ID を取得します。
-  
-```
-Get-AzureADMSDeletedGroup
-```
+---
 
-完全に削除するグループまたはグループのオブジェクト ID を書き留めておきます。
-  
-> [!CAUTION]
-> グループを削除すると、グループとそのデータが永久に削除されます。 
-  
-グループを削除するには、PowerShell で次のコマンドを実行します。
-  
-```
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
-```
-
-グループが正常に削除されたことを確認するには、 *Get AzureADMSDeletedGroup*  コマンドレットをもう一度実行して、グループが論理的に削除されたグループの一覧に表示されなくなったことを確認します。グループとそのすべてのデータが完全に削除されるまで 24 時間ほどかかる場合があります。 
-  
 ## <a name="got-questions-about-microsoft-365-groups"></a>Microsoft 365 グループに関する質問
 
 Microsoft [技術コミュニティ](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) にアクセスして、microsoft 365 グループに関する質問を投稿し、会話に参加してください。 

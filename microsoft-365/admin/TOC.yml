@@ -82,7 +82,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection パリティ
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: ユーザーとグループを管理する
+    - name: ユーザー、グループ、パスワードを管理する
       href: add-users/index.yml
       items:
         - name: ユーザー
@@ -109,14 +109,6 @@
               href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: ユーザーを復元する
               href: add-users/restore-user.md
-            - name: パスワードをリセットする
-              href: add-users/reset-passwords.md
-            - name: パスワードを無期限に設定する
-              href: add-users/set-password-to-never-expire.md
-            - name: ユーザーのパスワードをリセットする
-              href: add-users/let-users-reset-passwords.md
-            - name: ユーザーのパスワードを再送信する
-              href: add-users/resend-user-password.md
             - name: テンプレートを作成してユーザーを追加する
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: 最新のアプリにユーザーをアップグレードする
@@ -137,6 +129,20 @@
               href: create-groups/restore-deleted-group.md
             - name: グループへのゲスト アクセスを管理する
               href: create-groups/manage-guest-access-in-groups.md
+        - name: パスワード
+          items:
+            - name: パスワードをリセットする
+              href: add-users/reset-passwords.md
+            - name: ユーザーのパスワードをリセットする
+              href: add-users/let-users-reset-passwords.md
+            - name: パスワードを無期限に設定する
+              href: add-users/set-password-to-never-expire.md
+            - name: ユーザーのパスワードを再送信する
+              href: add-users/resend-user-password.md
+            - name: 強力なパスワードをオフにする
+              href: add-users/strong-password.md
+            - name: パスワードの有効期限ポリシーを設定する
+              href: manage/set-password-expiration-policy.md
     - name: メールと予定表を管理する
       href: email/index.yml
       items:
