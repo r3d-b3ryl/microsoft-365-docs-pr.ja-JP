@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,108 +20,108 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Microsoft 365 グループを作成および削除する方法、グループメンバーを追加および削除する方法、およびグループの動作をカスタマイズする方法について説明します。
-ms.openlocfilehash: f6023188df1ae796badbf05b85ebaa1afdd914e5
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 9d836e8bb3af297e972c4f252808c551b349fb67
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780447"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753291"
 ---
-# <a name="create-a-group-in-the-microsoft-365-admin-center"></a><span data-ttu-id="2f9f3-103">Microsoft 365 管理センターでグループを作成する</span><span class="sxs-lookup"><span data-stu-id="2f9f3-103">Create a group in the Microsoft 365 admin center</span></span>
+# <a name="create-a-group-in-the-microsoft-365-admin-center"></a><span data-ttu-id="e25c7-103">Microsoft 365 管理センターでグループを作成する</span><span class="sxs-lookup"><span data-stu-id="e25c7-103">Create a group in the Microsoft 365 admin center</span></span>
   
-<span data-ttu-id="2f9f3-104">ユーザーは、Outlook またはその他のアプリから、管理者として Microsoft 365 グループを作成できますが、グループの作成または削除、メンバーの追加または削除、および動作方法のカスタマイズが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-104">While users can create a Microsoft 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work.</span></span> <span data-ttu-id="2f9f3-105">これを行うには、「Microsoft 365 管理センター」をご記入ください。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-105">The Microsoft 365 admin center is the place to do this.</span></span> 
+<span data-ttu-id="e25c7-104">ユーザーは、Outlook またはその他のアプリから、管理者として Microsoft 365 グループを作成できますが、グループの作成または削除、メンバーの追加または削除、および動作方法のカスタマイズが必要になる場合があります。</span><span class="sxs-lookup"><span data-stu-id="e25c7-104">While users can create a Microsoft 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work.</span></span> <span data-ttu-id="e25c7-105">これを行うには、「Microsoft 365 管理センター」をご記入ください。</span><span class="sxs-lookup"><span data-stu-id="e25c7-105">The Microsoft 365 admin center is the place to do this.</span></span> 
 
 > [!TIP]
-> <span data-ttu-id="2f9f3-106">Microsoft 365 connected Yammer グループは Yammer で作成する必要がありますが、他の Microsoft の365グループと同様に、Microsoft 365 管理センターで管理することができます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-106">Microsoft 365 connected Yammer groups must be created in Yammer, but can be managed in the Microsoft 365 admin center like other Microsoft 365 groups.</span></span> <span data-ttu-id="2f9f3-107">詳細については、「 [Yammer And Microsoft 365 groups](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-107">To learn more, see [Yammer and Microsoft 365 groups](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups).</span></span> 
+> <span data-ttu-id="e25c7-106">Microsoft 365 connected Yammer グループは Yammer で作成する必要がありますが、他の Microsoft の365グループと同様に、Microsoft 365 管理センターで管理することができます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-106">Microsoft 365 connected Yammer groups must be created in Yammer, but can be managed in the Microsoft 365 admin center like other Microsoft 365 groups.</span></span> <span data-ttu-id="e25c7-107">詳細については、「 [Yammer And Microsoft 365 groups](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e25c7-107">To learn more, see [Yammer and Microsoft 365 groups](https://docs.microsoft.com/yammer/manage-yammer-groups/yammer-and-office-365-groups).</span></span> 
 
-## <a name="create-a-microsoft-365-group"></a><span data-ttu-id="2f9f3-108">Microsoft 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="2f9f3-108">Create a Microsoft 365 group</span></span>
+## <a name="create-a-microsoft-365-group"></a><span data-ttu-id="e25c7-108">Microsoft 365 グループを作成する</span><span class="sxs-lookup"><span data-stu-id="e25c7-108">Create a Microsoft 365 group</span></span>
 
-1. <span data-ttu-id="2f9f3-109">管理センターで、[**グループ**] を展開し、[**グループ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-109">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
+1. <span data-ttu-id="e25c7-109">管理センターで、[ **グループ**] を展開し、[ **グループ**] をクリックします。</span><span class="sxs-lookup"><span data-stu-id="e25c7-109">In the admin center, expand **Groups**, and then click **Groups**.</span></span>
 
-2. <span data-ttu-id="2f9f3-110">[**グループの追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-110">Select **Add a group**.</span></span>
+2. <span data-ttu-id="e25c7-110">[ **グループの追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-110">Select **Add a group**.</span></span>
   
-3. <span data-ttu-id="2f9f3-111">[**グループの種類の選択**] ページで、[ **Office 365**] を選択し、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-111">On the **Choose a group type** page, select **Office 365**, and select **Next**.</span></span>
+3. <span data-ttu-id="e25c7-111">[ **グループの種類の選択** ] ページで、[ **Office 365**] を選択し、[ **次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-111">On the **Choose a group type** page, select **Office 365**, and select **Next**.</span></span>
 
-4. <span data-ttu-id="2f9f3-112">[**基本**] ページで、グループの名前を入力し、必要に応じて説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-112">On the **Basics** page, type a name for the group, and, optionally, a description.</span></span> <span data-ttu-id="2f9f3-113">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-113">Select **Next**.</span></span>
+4. <span data-ttu-id="e25c7-112">[ **基本** ] ページで、グループの名前を入力し、必要に応じて説明を入力します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-112">On the **Basics** page, type a name for the group, and, optionally, a description.</span></span> <span data-ttu-id="e25c7-113">[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-113">Select **Next**.</span></span>
     
-5. <span data-ttu-id="2f9f3-114">[**設定の編集**] ページで、グループの一意の電子メールアドレスを入力し、プライバシーオプションを選択し、Microsoft Teams を追加するかどうかを選択して、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-114">On the **Edit settings** page, type a unique email address for the group, choose a privacy option and whether you want to add Microsoft Teams, and then select**Next**.</span></span>
+5. <span data-ttu-id="e25c7-114">[ **設定の編集** ] ページで、グループの一意の電子メールアドレスを入力し、プライバシーオプションを選択し、Microsoft Teams を追加するかどうかを選択して、[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-114">On the **Edit settings** page, type a unique email address for the group, choose a privacy option and whether you want to add Microsoft Teams, and then select**Next**.</span></span>
     
-6. <span data-ttu-id="2f9f3-115">[**所有者**] グループを管理するように指定された1人以上のユーザーの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-115">On the **Owners** choose the name of one or more people who will be designated to manage the group.</span></span> <span data-ttu-id="2f9f3-116">グループの所有者のみが、グループの受信トレイからメールを削除できます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-116">Anyone who is a group owner will be able to delete email from the Group inbox.</span></span> <span data-ttu-id="2f9f3-117">他のメンバーはグループの受信トレイからメールを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-117">Other members won't be able to delete email from the Group inbox.</span></span> <span data-ttu-id="2f9f3-118">**[次へ]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-118">Select **Next**.</span></span>
+6. <span data-ttu-id="e25c7-115">[ **所有者** ] グループを管理するように指定された1人以上のユーザーの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-115">On the **Owners** choose the name of one or more people who will be designated to manage the group.</span></span> <span data-ttu-id="e25c7-116">グループの所有者のみが、グループの受信トレイからメールを削除できます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-116">Anyone who is a group owner will be able to delete email from the Group inbox.</span></span> <span data-ttu-id="e25c7-117">他のメンバーはグループの受信トレイからメールを削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="e25c7-117">Other members won't be able to delete email from the Group inbox.</span></span> <span data-ttu-id="e25c7-118">[**次へ**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-118">Select **Next**.</span></span>
     
-7. <span data-ttu-id="2f9f3-119">設定を確認して変更を加えると、[**グループの作成**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-119">After reviewing your settings and making any changes, select **Create group**.</span></span>
+7. <span data-ttu-id="e25c7-119">設定を確認して変更を加えると、[ **グループの作成**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-119">After reviewing your settings and making any changes, select **Create group**.</span></span>
 
-8. <span data-ttu-id="2f9f3-120">**[閉じる]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-120">Select **Close**.</span></span>
+8. <span data-ttu-id="e25c7-120">**[閉じる]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-120">Select **Close**.</span></span>
     
-## <a name="add-members-to-the-group"></a><span data-ttu-id="2f9f3-121">グループにメンバーを追加する</span><span class="sxs-lookup"><span data-stu-id="2f9f3-121">Add members to the group</span></span>
+## <a name="add-members-to-the-group"></a><span data-ttu-id="e25c7-121">グループにメンバーを追加する</span><span class="sxs-lookup"><span data-stu-id="e25c7-121">Add members to the group</span></span>
 
-<span data-ttu-id="2f9f3-122">グループが作成されたら、メンバーを追加し、その他の設定を構成できます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-122">Once the group has been created, you can add members and configure additional settings.</span></span>
+<span data-ttu-id="e25c7-122">グループが作成されたら、メンバーを追加し、その他の設定を構成できます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-122">Once the group has been created, you can add members and configure additional settings.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-<span data-ttu-id="2f9f3-123">ユーザーは[自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-123">Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.</span></span>
+<span data-ttu-id="e25c7-123">ユーザーは [自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-123">Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.</span></span>
 
-1. <span data-ttu-id="2f9f3-124">管理センターで、新しいグループが表示されるようにページを更新し、メンバーを追加するグループの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-124">In the admin center, refresh the page so your new group appears, and then select the name of the group that you want to add members to.</span></span>
+1. <span data-ttu-id="e25c7-124">管理センターで、新しいグループが表示されるようにページを更新し、メンバーを追加するグループの名前を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-124">In the admin center, refresh the page so your new group appears, and then select the name of the group that you want to add members to.</span></span>
     
-2. <span data-ttu-id="2f9f3-125">[**メンバー**] タブで [**すべてのメンバーの表示と管理**] を選択します。 </span><span class="sxs-lookup"><span data-stu-id="2f9f3-125">On the **Members** tab, select **View all and manage members**.</span></span>
+2. <span data-ttu-id="e25c7-125">[**メンバー**] タブで [**すべてのメンバーの表示と管理**] を選択します。 </span><span class="sxs-lookup"><span data-stu-id="e25c7-125">On the **Members** tab, select **View all and manage members**.</span></span>
 
-3. <span data-ttu-id="2f9f3-126">[**メンバーを追加する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-126">Select **Add members**.</span></span>
+3. <span data-ttu-id="e25c7-126">[**メンバーを追加する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-126">Select **Add members**.</span></span>
     
-4. <span data-ttu-id="2f9f3-127">追加するユーザーを選択し、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-127">Select the users you want to add, and then select **Save**.</span></span>
+4. <span data-ttu-id="e25c7-127">追加するユーザーを選択し、[ **保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-127">Select the users you want to add, and then select **Save**.</span></span>
     
-5. <span data-ttu-id="2f9f3-128">**[閉じる]** を 3 回選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-128">Select **Close** three times.</span></span> 
+5. <span data-ttu-id="e25c7-128">**[閉じる]** を 3 回選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-128">Select **Close** three times.</span></span> 
     
-<span data-ttu-id="2f9f3-129">グループが、割り当てられたメンバーと共に Outlook に表示されます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-129">The group will appear in Outlook with members assigned to it.</span></span>
+<span data-ttu-id="e25c7-129">グループが、割り当てられたメンバーと共に Outlook に表示されます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-129">The group will appear in Outlook with members assigned to it.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="2f9f3-130">ユーザーは[自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-130">Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.</span></span>
-1. <span data-ttu-id="2f9f3-131">管理センターで、新しいグループが表示されるようにページを更新し、[**グループ**グループ] を選択して、 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>メンバーを追加するグループを選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-131">In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.</span></span>
+<span data-ttu-id="e25c7-130">ユーザーは [自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-130">Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.</span></span>
+1. <span data-ttu-id="e25c7-131">管理センターで、新しいグループが表示されるようにページを更新し、[**グループ**グループ] を選択して、 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>メンバーを追加するグループを選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-131">In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.</span></span>
     
-2. <span data-ttu-id="2f9f3-132">[**メンバー**] の横にある [**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-132">Next to **Members**, select **Edit**.</span></span>
-3. <span data-ttu-id="2f9f3-133">[**メンバーを追加する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-133">Select **Add members**.</span></span>
+2. <span data-ttu-id="e25c7-132">[ **メンバー**] の横にある [ **編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-132">Next to **Members**, select **Edit**.</span></span>
+3. <span data-ttu-id="e25c7-133">[**メンバーを追加する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-133">Select **Add members**.</span></span>
     
-4. <span data-ttu-id="2f9f3-134">追加するユーザーを選択し、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-134">Select the users you want to add, and then select **Save**.</span></span>
+4. <span data-ttu-id="e25c7-134">追加するユーザーを選択し、[ **保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-134">Select the users you want to add, and then select **Save**.</span></span>
     
-5. <span data-ttu-id="2f9f3-135">**[閉じる]** を 3 回選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-135">Select **Close** three times.</span></span> 
+5. <span data-ttu-id="e25c7-135">**[閉じる]** を 3 回選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-135">Select **Close** three times.</span></span> 
     
-<span data-ttu-id="2f9f3-136">グループが、割り当てられたメンバーと共に Outlook に表示されます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-136">The group will appear in Outlook with members assigned to it.</span></span>
+<span data-ttu-id="e25c7-136">グループが、割り当てられたメンバーと共に Outlook に表示されます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-136">The group will appear in Outlook with members assigned to it.</span></span>
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-<span data-ttu-id="2f9f3-137">ユーザーは[自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-137">Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.</span></span>
-1. <span data-ttu-id="2f9f3-138">管理センターで、新しいグループが表示されるようにページを更新し、[**グループ**グループ] を選択して、 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>メンバーを追加するグループを選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-138">In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.</span></span>
+<span data-ttu-id="e25c7-137">ユーザーは [自分で自分を追加](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)したり、承認を要求したりできます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-137">Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.</span></span>
+1. <span data-ttu-id="e25c7-138">管理センターで、新しいグループが表示されるようにページを更新し、[**グループ**グループ] を選択して、 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>メンバーを追加するグループを選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-138">In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.</span></span>
     
-2. <span data-ttu-id="2f9f3-139">[**メンバー**] の横にある [**編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-139">Next to **Members**, select **Edit**.</span></span>
-3. <span data-ttu-id="2f9f3-140">[**メンバーを追加する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-140">Select **Add members**.</span></span>
+2. <span data-ttu-id="e25c7-139">[ **メンバー**] の横にある [ **編集**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-139">Next to **Members**, select **Edit**.</span></span>
+3. <span data-ttu-id="e25c7-140">[**メンバーを追加する**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-140">Select **Add members**.</span></span>
     
-4. <span data-ttu-id="2f9f3-141">追加するユーザーを選択し、[**保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-141">Select the users you want to add, and then select **Save**.</span></span>
+4. <span data-ttu-id="e25c7-141">追加するユーザーを選択し、[ **保存**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-141">Select the users you want to add, and then select **Save**.</span></span>
     
-5. <span data-ttu-id="2f9f3-142">**[閉じる]** を 3 回選択します。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-142">Select **Close** three times.</span></span> 
+5. <span data-ttu-id="e25c7-142">**[閉じる]** を 3 回選択します。</span><span class="sxs-lookup"><span data-stu-id="e25c7-142">Select **Close** three times.</span></span> 
     
-<span data-ttu-id="2f9f3-143">グループが、割り当てられたメンバーと共に Outlook に表示されます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-143">The group will appear in Outlook with members assigned to it.</span></span>
+<span data-ttu-id="e25c7-143">グループが、割り当てられたメンバーと共に Outlook に表示されます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-143">The group will appear in Outlook with members assigned to it.</span></span>
   
 ::: moniker-end
 
-## <a name="who-can-delete-email-from-the-group-inbox"></a><span data-ttu-id="2f9f3-144">グループの受信トレイからメールを削除できるのは誰ですか?</span><span class="sxs-lookup"><span data-stu-id="2f9f3-144">Who can delete email from the Group inbox?</span></span>
+## <a name="who-can-delete-email-from-the-group-inbox"></a><span data-ttu-id="e25c7-144">グループの受信トレイからメールを削除できるのは誰ですか?</span><span class="sxs-lookup"><span data-stu-id="e25c7-144">Who can delete email from the Group inbox?</span></span>
 
-<span data-ttu-id="2f9f3-145">グループの所有者は、最初の作成者であるかどうかに関係なく、グループの受信トレイから任意のメールを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-145">The Group owner can delete any emails from the Group Inbox, regardless of whether they were the initial author.</span></span>
+<span data-ttu-id="e25c7-145">グループの所有者は、最初の作成者であるかどうかに関係なく、グループの受信トレイから任意のメールを削除することができます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-145">The Group owner can delete any emails from the Group Inbox, regardless of whether they were the initial author.</span></span>
   
-<span data-ttu-id="2f9f3-146">メンバーは、Outlook on the web を使用して受信者が開始した場合にのみ、グループの受信トレイから電子メールの会話を削除することができます (電子メールを右クリックし、[**削除**] を選択します)。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-146">A member can delete an email conversation from the Group inbox if they initiated it, and only using Outlook on the web (right-click the email, then choose **Delete**).</span></span> <span data-ttu-id="2f9f3-147">Outlook アプリ (Outlook 2016) から削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-147">They can't do it from the Outlook app (Outlook 2016).</span></span>
+<span data-ttu-id="e25c7-146">メンバーは、Outlook on the web を使用して受信者が開始した場合にのみ、グループの受信トレイから電子メールの会話を削除することができます (電子メールを右クリックし、[ **削除**] を選択します)。</span><span class="sxs-lookup"><span data-stu-id="e25c7-146">A member can delete an email conversation from the Group inbox if they initiated it, and only using Outlook on the web (right-click the email, then choose **Delete**).</span></span> <span data-ttu-id="e25c7-147">Outlook アプリ (Outlook 2016) から削除することはできません。</span><span class="sxs-lookup"><span data-stu-id="e25c7-147">They can't do it from the Outlook app (Outlook 2016).</span></span>
   
-<span data-ttu-id="2f9f3-148">グループメールボックスからメールを削除しても、グループのメンバーの個人用メールボックスから削除されることはありません。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-148">When an email is deleted from the group mailbox, it is not deleted from any of the group members' personal mailboxes.</span></span>
+<span data-ttu-id="e25c7-148">グループメールボックスからメールを削除しても、グループのメンバーの個人用メールボックスから削除されることはありません。</span><span class="sxs-lookup"><span data-stu-id="e25c7-148">When an email is deleted from the group mailbox, it is not deleted from any of the group members' personal mailboxes.</span></span>
 
-## <a name="next-step-manage-your-group"></a><span data-ttu-id="2f9f3-149">次の手順: グループを管理する</span><span class="sxs-lookup"><span data-stu-id="2f9f3-149">Next step: manage your group</span></span>
+## <a name="next-step-manage-your-group"></a><span data-ttu-id="e25c7-149">次の手順: グループを管理する</span><span class="sxs-lookup"><span data-stu-id="e25c7-149">Next step: manage your group</span></span>
 
-<span data-ttu-id="2f9f3-150">新しいグループを作成してメンバーを追加すると、グループをさらに構成できます。たとえば、グループ名や説明の編集、所有者またはメンバーの変更、外部の送信者がグループに電子メールを送信できるかどうかの指定、およびグループスレッドのコピーをメンバーに送信するかどうかの指定を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-150">After creating a new group and adding members, you can further configure your group, such as editing the group name or description, changing owners or members, and specifying whether external senders can email the group and whether to send copies of group conversations to members.</span></span> <span data-ttu-id="2f9f3-151">詳細について[は、「Microsoft 365 グループを管理する](manage-groups.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="2f9f3-151">See [Manage a Microsoft 365 group](manage-groups.md) for information.</span></span>
+<span data-ttu-id="e25c7-150">新しいグループを作成してメンバーを追加すると、グループをさらに構成できます。たとえば、グループ名や説明の編集、所有者またはメンバーの変更、外部の送信者がグループに電子メールを送信できるかどうかの指定、およびグループスレッドのコピーをメンバーに送信するかどうかの指定を行うことができます。</span><span class="sxs-lookup"><span data-stu-id="e25c7-150">After creating a new group and adding members, you can further configure your group, such as editing the group name or description, changing owners or members, and specifying whether external senders can email the group and whether to send copies of group conversations to members.</span></span> <span data-ttu-id="e25c7-151">詳細について [は、「Microsoft 365 グループを管理する](manage-groups.md) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="e25c7-151">See [Manage a Microsoft 365 group](manage-groups.md) for information.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="2f9f3-152">関連記事</span><span class="sxs-lookup"><span data-stu-id="2f9f3-152">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="e25c7-152">関連記事</span><span class="sxs-lookup"><span data-stu-id="e25c7-152">Related articles</span></span>
 
-[<span data-ttu-id="2f9f3-153">Microsoft 365 グループへのゲストアクセスを管理する</span><span class="sxs-lookup"><span data-stu-id="2f9f3-153">Manage guest access to Microsoft 365 groups</span></span>](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[<span data-ttu-id="e25c7-153">Microsoft 365 グループへのゲストアクセスを管理する</span><span class="sxs-lookup"><span data-stu-id="e25c7-153">Manage guest access to Microsoft 365 groups</span></span>](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[<span data-ttu-id="2f9f3-154">Microsoft 365 グループを作成するときに使用するドメインを選択する</span><span class="sxs-lookup"><span data-stu-id="2f9f3-154">Choose the domain to use when creating Microsoft 365 groups</span></span>](choose-domain-to-create-groups.md)
+[<span data-ttu-id="e25c7-154">Microsoft 365 グループを作成するときに使用するドメインを選択する</span><span class="sxs-lookup"><span data-stu-id="e25c7-154">Choose the domain to use when creating Microsoft 365 groups</span></span>](choose-domain-to-create-groups.md)
 
-[<span data-ttu-id="2f9f3-155">配布リストを Microsoft 365 グループにアップグレードする</span><span class="sxs-lookup"><span data-stu-id="2f9f3-155">Upgrade distribution lists to Microsoft 365 groups</span></span>](../manage/upgrade-distribution-lists.md)
+[<span data-ttu-id="e25c7-155">配布リストを Microsoft 365 グループにアップグレードする</span><span class="sxs-lookup"><span data-stu-id="e25c7-155">Upgrade distribution lists to Microsoft 365 groups</span></span>](../manage/upgrade-distribution-lists.md)
