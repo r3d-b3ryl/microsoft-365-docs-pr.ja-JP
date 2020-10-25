@@ -37,7 +37,7 @@ ms.locfileid: "48681755"
     
 これらのすべてのレポートでは、Exchange、SharePoint、OneDrive for Business からラベル付けされたコンテンツを表示します。
   
-これらのレポートは、セキュリティ &amp; コンプライアンス センター \> **情報ガバナンス** \> [**ダッシュボード**](https://protection.office.com/datamanagement/dashboard) で確認できます。
+これらのレポートは、[セキュリティ &amp; コンプライアンス センター] \> [**情報ガバナンス**] \> [[**ダッシュボード**](https://protection.office.com/datamanagement/dashboard)] で確認できます。
   
 ![過去 90 日間のラベルの傾向を示すグラフ](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
