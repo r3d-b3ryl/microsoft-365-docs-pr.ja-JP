@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445967"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681482"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
 リモート ワーカーは、増え続ける個人用デバイスをサポートする必要があります。 エンドポイント管理は、デバイスでのリソースへのアクセスを許可する前に特定の基準に準拠する必要があるセキュリティに対するポリシーベースのアプローチです。 Microsoft エンドポイント マネージャーは、クラウドとオンプレミスでデータを安全に保つための最新の管理機能を提供します。 
 
-エンドポイント マネージャーは、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
+[Microsoft エンドポイント マネージャー](https://docs.microsoft.com/mem/endpoint-manager-overview)は、モバイル デバイス、デスクトップ コンピューター、仮想マシン、組み込みデバイス、およびサーバーを管理できるサービスおよびツールを提供します。これは、すでに使用している可能性のある次のサービスを組み合わせて使用します。
 
-![エンドポイント管理のコンポーネント](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Microsoft 365 のエンドポイント管理のコンポーネント](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -58,7 +58,7 @@ Configuration Manager は、ネットワークまたはインターネットベ�
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
-Desktop Analytics は、Configuration Manager と統合し、分析情報とインテリジェンスを提供するクラウドベースのサービスであり、Windows クライアントに関する情報に基づいて意思決定を行うことができます。 組織のデータと、Microsoft クラウド サービスに接続されている数百万のデバイスから収集されたデータを組み合わせます。 
+Desktop Analytics は、Configuration Manager と統合し、分析情報とインテリジェンスを提供するクラウドベースのサービスであり、Windows クライアントに関する情報に基づいて意思決定を行うことができます。 組織のデータと、Microsoft クラウド サービスに接続されている他の数百万のデバイスから収集されたデータを組み合わせます。 
 
 Desktop Analytics では、次のことができます。
 
@@ -83,9 +83,7 @@ Windows Autopilot で、IT 部門は管理するインフラストラクチャ�
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>エンドポイント管理のための管理技術リソース
 
-- [リモート ワーカー向けの Windows 10 デバイスの管理についてのビデオ パート 3](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [リモート ワーカー向けの ユーザーのデスクトップとブラウザーの管理についてのビデオ パート 5](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [Microsoft 365 のモビリティ インフラストラクチャを展開する](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Microsoft 365 のデバイス管理ロードマップ](../enterprise/device-management-roadmap-microsoft-365.md)
 - [モバイル デバイス管理のためにさまざまな種類のデバイスを登録する方法](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [Microsoft Intune についてエンド ユーザーを教育する方法](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  

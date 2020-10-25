@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: この記事では、Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成するために使用できるオプションについて説明します。
-ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d80dd00369b851768849e846449799ff443957f3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527932"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681572"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -165,7 +165,7 @@ Azure AD のアクセス レビューを使用すると、さまざまなチー�
 9. **[クラウド アプリまたはアクション]** ブレードで、**[完了]** をクリックします。
 10. **[割り当て]** の下の **[条件]** をクリックします。
 11. **[条件]** ブレードで、**[クライアント アプリ]** をクリックします。
-12. **[クライアント アプリ]** ブレードで、**[構成する]** の **[はい]** をクリックし、**[モバイル アプリとデスクトップ クライアント]** と **[先進認証クライアント]** の設定を選択します。</br>
+12. **[クライアント アプリ]** ブレードで、**[構成する]** の **[はい]** をクリックし、**[モバイル アプリとデスクトップ クライアント]** の設定を選択します。</br>
     ![Azure AD の条件付きアクセス クライアント アプリ設定のスクリーンショット](../media/azure-ad-conditional-access-client-mobile.png)
 13. **[完了]** をクリックし、**[条件]** ブレードでもう一度 **[完了]** をクリックします。
 14. **[アクセス制御]** で、**[許可]** をクリックします。

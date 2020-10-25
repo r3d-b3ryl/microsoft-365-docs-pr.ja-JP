@@ -238,6 +238,8 @@
           href: create-test-tune-dlp-policy.md
         - name: DLP ポリシーで通知とポリシー ヒントを使用する
           href: use-notifications-and-policy-tips.md
+        - name: DLP ポリシーの警告を構成および表示する (プレビュー)
+          href: dlp-configure-view-alerts-policies.md
         - name: DLP ポリシー テンプレートに含まれるもの
           href: what-the-dlp-policy-templates-include.md
         - name: FCI または他のプロパティを使用したドキュメントを保護する DLP ポリシーを作成する

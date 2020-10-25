@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスのサービスを使用して、リモート ワーカー向けにお客様のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: 36abe8b8dbd84a883d829308fc970258e7551f2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445887"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681470"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>手順 3: リモート ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -39,6 +39,8 @@ ms.locfileid: "48445887"
 - 情報の漏洩の防止
 - 地域のデータ規制への準拠
 
+リモート ワーカーにセキュリティとコンプライアンス サービスを提供する Microsoft 365 の機能は次のとおりです。
+
 ![これらの Microsoft 365 サービスを使用して、セキュリティによる保護とコンプライアンスを維持します](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>セキュリティ
@@ -54,7 +56,7 @@ Microsoft 365 のこれらのセキュリティ機能を使用して、アプリ
 | Azure AD Identity Protection  | ID ベースのリスクを自動的に検出して修正します。 <br><br>リスクベースの条件付きアクセス ポリシーを作成し、危険なサインインに対して多要素認証 (MFA) を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 |
 ||||
 
-詳細については、「[Microsoft 365 コンプライアンスを開始するためのクイック タスク](../compliance/compliance-quick-tasks.md)」を参照してください。
+詳細については、「[在宅勤務をサポートするセキュリティ チームのための最も重要な 12 のタスク](../security/top-security-tasks-for-remote-work.md)」を参照してください。
 
 ## <a name="compliance"></a>コンプライアンス
 
@@ -73,16 +75,16 @@ Microsoft 365 のこれらのコンプライアンス機能を使用して、内
 | インサイダー リスク管理 |  組織内の悪意のある不測の活動を検出および調査し、対処します。 Microsoft 365 は、ワーカーが管理されていないデバイスを使用している場合でも、これらの種類のリスクを検出できます。 | コンプライアンスまたは Insider のリスク管理アドオンを備えた Microsoft 365 E5 または Microsoft 365 E3  |
 ||||
 
-詳細については、「[在宅勤務をサポートするセキュリティ チームのための最も重要な 12 のタスク](../security/top-security-tasks-for-remote-work.md)」を参照してください。
+詳細については、「[Microsoft 365 コンプライアンスを開始するためのクイック タスク](../compliance/compliance-quick-tasks.md)」を参照してください。
 
 ## <a name="results-of-step-3"></a>手順 3 の結果
 
 リモートワーカーのために、次のものを実装しました。
 
-- セキュリティ:
+- セキュリティ
   - リモート ワーカーがコミュニケーションや共同作業を行うために使用するアプリやデータへのアクセス制御
   - クラウド サービスのデータ、メール、Windows 10 デバイスのマルウェア対策 
-- コンプライアンス:
+- コンプライアンス
   - 秘密度や保護のレベルに応じた一貫性のあるラベル付け
   - 情報漏洩を防止するためのポリシー
   - 地域のデータ規制への準拠

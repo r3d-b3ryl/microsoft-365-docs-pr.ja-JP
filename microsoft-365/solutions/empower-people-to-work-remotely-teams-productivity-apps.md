@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Teams、Exchange、SharePoint、その他の Microsoft 365 サービスを利用することで、ユーザーの生産性を向上できます。
-ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445836"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681410"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>手順 5.  リモートワーカー向けの生産性向上アプリとサービスを展開する
 
@@ -39,9 +39,9 @@ ms.locfileid: "48445836"
 
 Teams を使うことで、チャット、会議、通話、共同作業をすべて 1 つの場所で行えます。 何百万人ものユーザーが毎日 Teams で仕事をこなしています。Teams には、リモート ワークに必要なすべてのものが、チームワーク用のハブにまとめられているのです。 
 
-Teams を使用してリモート ワーカーをサポートする方法については、[こちらの記事](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)をご覧ください。 
+詳細なガイドについては、「[Microsoft Teams を使用してリモート ワーカーをサポートする](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)」を参照してください。 
 
-リモート ワークでの Teams の使い方に関するガイダンスとデモについては、[Part 1 のビデオ](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)をご覧ください。
+Teams をリモート ワークに使用するためのガイダンスとデモについては、「[Microsoft Teams Web キャストによるハイブリッド作業の有効化](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)」をご覧ください。
 
 ### <a name="chat-and-conversations"></a>チャットと会話
 
@@ -82,14 +82,14 @@ SharePoint Online と OneDrive を保護するには、推奨される ID とデ
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>Microsoft 365 アプリを使用した、コンテンツの作成と共同作業
 
-Microsoft 365 アプリは、従業員がいつでもどこからでもシームレスに共同作業できる、エンタープライズ向けの最も生産的かつ安全な Office 環境です。 リモート ワーカーは、1 つのドキュメントに対して複数のユーザーと同時に共同作業したり、リアル タイムで編集や変更を確認したり、ノート PC、PC、モバイル デバイスで他のユーザーと共有編集したりできます。
+Microsoft 365 アプリは、従業員がいつでもどこからでもシームレスに共同作業できる、エンタープライズ向けの生産的かつ安全な Office 環境です。 リモート ワーカーは、1 つのドキュメントに対して複数のユーザーと同時に共同作業したり、リアル タイムで編集や変更を確認したり、ノート PC、PC、モバイル デバイスで他のユーザーと共有編集したりできます。
 
-社内環境で Microsoft 365 Apps の計画、展開、管理を行うには、[こちらの記事](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)を参照してください。
+詳細については、「[Microsoft 365 Apps の展開ガイド](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)」をご覧ください。
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>生産性向上アプリとサービスに関する管理技術リソース
 
 - [Microsoft Teams を使用してリモート ワーカーをサポートする](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [リモートワーカー向けの Teams についてのパート 1 ビデオ](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [Microsoft Teams Web キャストによるハイブリッド作業の有効化](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams Customer Success Kit のダウンロード](https://www.microsoft.com/download/details.aspx?id=54244)
 - [導入を推進するためのツール](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Microsoft Teams の変更管理戦略を作成する](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)

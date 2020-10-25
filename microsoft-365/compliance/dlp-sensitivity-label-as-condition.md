@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 秘密度ラベルを DLP ポリシーの条件として使用できるサービスやアイテムの種類について説明します。
-ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321112"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649636"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>秘密度ラベルを DLP ポリシーの条件として使用する (プレビュー)
 
@@ -38,7 +38,12 @@ ms.locfileid: "48321112"
 
 秘密度ラベルは、**コンテンツに含まれている**一覧にオプションとして表示されます。
 
-![条件としての秘密度ラベル](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![条件としての秘密度ラベル](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> DLP ポリシーを適用する場所として **Teams チャットとチャネル メッセージ**を選択している場合、条件としての**秘密度ラベル**は使用できません。
+
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>サポートされているアイテム、シナリオ、ポリシー ヒント
 
@@ -64,16 +69,20 @@ ms.locfileid: "48321112"
 ### <a name="supported-scenarios"></a>サポートされるシナリオ
 
 - DLP 管理者が 1 つ以上の秘密度ラベルを条件として含めることを選択すると、DLP 管理者はテナント内のすべての秘密度ラベルの一覧を表示することができます。
+
 - 秘密度ラベルの条件としての使用は、上記のサポートのマトリックスで示されているように、すべてのワークロードでサポートされています。
+
 - DLP ポリシーのヒントは、秘密度ラベルを条件として含む DLP ポリシーのワークロード (Outlook Win32 を除く) 全体で表示され続けます。
+
 - 秘密度ラベルを条件として持つ DLP ポリシーが一致した場合、秘密度ラベルはインシデント レポート メールの一部としても表示されます。
+
 - 秘密度ラベルの詳細情報は、秘密度ラベルを条件として含む DLP ポリシーの一致の DLP ルール一致監査ログにも表示されます。
 
 
 ### <a name="support-policy-tips"></a>ポリシー ヒントのサポート
 
 
-|ワークロード  |ポリシーヒントのサポートあり/サポートなし  |
+|ワークロード  |ポリシー ヒントのサポートあり/サポートなし  |
 |---------|---------|
 |OWA |    サポート対象     |
 |Outlook Win 32    |  サポートなし       |

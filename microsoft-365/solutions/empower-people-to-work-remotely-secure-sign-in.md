@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: リモート ワーカーが多要素認証 (MFA) でサインインすることを要求します。
-ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445930"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681458"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>手順 1. MFA を使用してリモート ワーカーのサインイン セキュリティを強化する
 
@@ -38,12 +38,12 @@ Microsoft 365 プランに基づいてユーザーに MFA の使用を要求す�
 |---------|---------|
 |Microsoft 365 のすべてのプラン (Azure AD Premium P1 または P2 ライセンスなし)     |[Azure AD でセキュリティの既定値を有効にします](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。   |
 |Microsoft 365 E3 (Azure AD Premium P1 ライセンスを含む)     | [一般的な条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br>- [管理者に MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [すべてのユーザーに MFA を要求する](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [従来の認証をブロックする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (Azure AD Premium P2 ライセンスを含む)     | Azure AD Identity Protection を活用して、次の 2 つのポリシーを作成することで、Microsoft の[条件付きアクセスと関連ポリシーの推奨セット](../security/office-365-security/identity-access-policies.md)の実装を開始します。<br> - [サインインのリスクが中、または高のときに MFA を要求する](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [先進認証をサポートしないクライアントはブロックする](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高リスク ユーザーはパスワードを変更する必要がある](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 (Azure AD Premium P2 ライセンスを含む)     | Azure AD Identity Protection を活用して、次のポリシーを作成することで、Microsoft の[条件付きアクセスと関連ポリシーの推奨セット](../security/office-365-security/identity-access-policies.md)の実装を開始します。<br> - [サインインのリスクが中、または高のときに MFA を要求する](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [先進認証をサポートしないクライアントはブロックする](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高リスク ユーザーはパスワードを変更する必要がある](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>セキュリティの既定値
 
-セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションではセキュリティの既定値がオンになっており、***すべてのユーザーが Microsoft Authenticator アプリで MFA を使用する必要があります***。
+セキュリティの既定値は、2019 年 10 月 21 日以降に作成された Microsoft 365 および Office 365 の有料または試用版サブスクリプションの新機能です。 これらのサブスクリプションではセキュリティの既定値がオンになっており、***すべてのユーザーが Microsoft Authenticator アプリで MFA を使用する必要があります**_。
  
 ユーザーは、スマートフォンから Microsoft Authenticator アプリを使用して MFA に 14 日間登録できます。これは、セキュリティの既定値が有効になった後、初めてサインインしたときから始まります。 14 日が経過すると、ユーザーは MFA 登録が完了するまでサインインできなくなります。
 
@@ -75,7 +75,10 @@ Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azu
 
 詳細については、「[Risk-based Conditional Access (リスク ベースの条件付きアクセス)](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users)」を参照してください。
 
-## <a name="using-these-methods-together"></a>これらの方法を一緒に使用する
+Azure AD Identity Protection を使用すると、ユーザーに MFA への登録を要求するポリシーを作成することもできます。 詳細については、「[Azure 多要素認証の登録ポリシーの構成](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)」を参照してください。
+
+
+## <a name="using-these-methods-together"></a>これらの方法を組み合わせて使用する
 
 以下の点にご注意ください。
 
@@ -88,13 +91,13 @@ Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azu
 
 | メソッド | Enabled | 無効 | 追加の認証方法 |
 |:-------|:-----|:-------|:-------|
-| **セキュリティの既定値**  | 条件付きアクセス ポリシーを使用できない | 条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
+| _*セキュリティの既定値**  | 条件付きアクセス ポリシーを使用できない | 条件付きアクセス ポリシーを使用できる | Microsoft Authenticator アプリ |
 | **条件付きアクセス ポリシー** | いずれかが有効になっている場合、セキュリティの既定値を有効にすることはできません | すべてが無効になっている場合は、セキュリティの既定値を有効にすることができます  | MFA 登録中にユーザーが指定  |
 ||||
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
-セルフサービスによるパスワードのリセット (SSPR) は、IT スタッフに影響を与えることなく、ユーザーが自分のパスワードをリセットできるようにします。 ユーザーは、いつでもどこからでも自分のパスワードをすばやくリセットすることができます。 SSPR のセットアップについては、[このビデオ](https://go.microsoft.com/fwlink/?linkid=2128524)をご覧ください。
+セルフサービスによるパスワードのリセット (SSPR) は、IT スタッフに影響を与えることなく、ユーザーが自分のパスワードをリセットできるようにします。 ユーザーは、いつでもどこからでも自分のパスワードをすばやくリセットすることができます。 詳細については、「[Azure AD のセルフサービスによるパスワードのリセットの展開を計画する](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)」を参照してください。
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Azure AD で SaaS アプリにサインインする
 
@@ -102,12 +105,9 @@ Azure AD Identity Protection には、Microsoft 365 E5 に含まれている Azu
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>MFA と ID のための管理技術リソース
 
-- [MFA for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [Azure AD がリモート作業を可能にするのに役立つ 5 つの方法](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
 - [Microsoft 365 の ID ロードマップ](../enterprise/identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD トレーニング ビデオ](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Azure 多要素認証の登録ポリシーの構成](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Azure AD のセルフサービスによるパスワードのリセットの展開を計画する](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
 
 ## <a name="results-of-step-1"></a>手順 1 の結果
 

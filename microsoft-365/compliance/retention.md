@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 6dedb3209d16d5d9f18c1277821270f973cc16a6
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398984"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651431"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -276,7 +276,7 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリ、トレーニング可能な分類子| 不要 | はい |
 |保持の手動適用 | いいえ | はい |
 |エンド ユーザー向け UI の存在 | いいえ | はい |
-|コンテンツが移動された場合の保持 | いいえ | はい (Microsoft 365 内) |
+|コンテンツが移動された場合の保持 | いいえ | はい (Microsoft 365 テナント内で) |
 |レコードとしてアイテムを宣言| 不要 | はい |
 |ラベル作成時またはイベント発生時に保持期間を開始 | 不要 | はい |
 |処理確認 | いいえ| はい |
@@ -353,27 +353,50 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>アイテム保持ポリシーと保持ラベルまたは電子情報開示用の保留を使用する場合
+
+保持の設定と[電子情報開示ケースを使用して作成した保留](create-ediscovery-holds.md)は、両方ともデータが完全に削除されるのを防ぐことができますが、さまざまなシナリオに対応できるように設計されています。 違いを理解し、どちらを使用するかを決定するために、以下のガイダンスをご利用ください。
+
+- アイテム保持ポリシーや保持ラベルで指定する保持の設定は、コンプライアンス要件に合わせてデータを保持または削除する長期的な情報ガバナンス戦略のために設計されています。 その範囲は通常、個々のユーザーよりも場所やコンテンツに焦点を合わせた幅広いものとなっています。 保持期間の開始日と終了日は構成可能で、追加の管理者が介入することなくコンテンツを自動的に削除できるオプションがあります。
+
+- 電子情報開示 (コア電子情報開示または Advanced eDiscovery ケース) のための保留は、法的な調査のためにデータを保存する限られた期間のために設計されています。 範囲については、特定のユーザーが所有するコンテンツに限定されます。 保持期間の開始日と終了日は構成できませんが、個々の管理者の操作に依存し、保留が解除されたときにコンテンツを自動的に削除するオプションはありません。
+
+保持と保留を比較するための概要
+
+|考慮事項|保持 |電子情報開示の保留|
+|:-----|:-----|:-----|:-----|
+|ビジネス ニーズ: |コンプライアンス |法務 |
+|時間の範囲: |長期 |短期 |
+|フォーカス: |広範囲、コンテンツベース |限定的、ユーザーベース |
+|開始日と終了日の構成が可能: |必要 |いいえ |
+|コンテンツの削除 |はい (オプション) |いいえ |
+|管理費: |低い |高い |
+
+コンテンツが保持の設定と電子情報開示の保留の両方の対象になっている場合、電子情報開示の保留のためのコンテンツの保存が常に優先されます。 このように、管理者が手動で保留を解除するまでデータは保持されるため、[保持の原則](#the-principles-of-retention-or-what-takes-precedence)は電子情報開示の保留にまで拡張されます。 ただし、このような優先順位があるにもかかわらず、長期的な情報ガバナンスのために電子情報開示の保留を使用することはできません。 データの自動削除について心配がある場合は、アイテムを無期限に保持するように保持の設定を構成したり、保持ラベルを用いて[処理確認](disposition.md#disposition-reviews)を使用したりすることができます。
+
+古い電子情報開示ツールを使用してデータを保存している場合は、以下のリソースを参照してください。
+
+- Exchange: 
+    - [インプレース保持と訴訟ホールド](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [Exchange Online メールボックスに適用されている保留の種類を特定する方法](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint と OneDrive 
+    - [電子情報開示センターでのコンテンツのケースへの追加とソースの保留リストへの配置](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+
+- [従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)
+
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用する
 
-情報ガバナンスを目的として、Microsoft 365 のコンテンツをプロアクティブに保持または削除する必要がある場合は、次に示す以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用することをお勧めします。 
-  
+情報ガバナンスを目的として、Microsoft 365 のコンテンツをプロアクティブに保持または削除する必要がある場合は、次に示す以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用することをお勧めします。
+
 これらの以前の機能を現在使用している場合、それらもアイテム保持ポリシーおよび保持ラベルと並行して機能し続けます。 ただし、今後はアイテム保持ポリシーと保持ラベルを使用することをお勧めします。 それらは、Microsoft 365 全体でコンテンツの保持と削除の両方を集中管理する単一のメカニズムを提供します。
 
 **Exchange Online の古い機能:**
 
-- [インプレース ホールドと訴訟ホールド](https://go.microsoft.com/fwlink/?linkid=846124) (電子情報開示の保留リスト) 
-
-- [Exchange Online メールボックスに適用されている保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [メッセージング レコード管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) とも呼ばれる、[保持タグおよびアイテム保持ポリシー](https://go.microsoft.com/fwlink/?linkid=846125) (削除のみ)
-    
-「[従来の電子情報開示ツールの廃止](legacy-ediscovery-retirement.md)」も参照してください。
-
 
 **SharePoint と OneDrive の古い機能:**
 
-- [電子情報開示センターでのコンテンツのケースへの追加とソースの保留リストへの配置](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (電子情報開示の保留リスト) 
-    
 - [ドキュメント削除ポリシーの概要](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (削除のみ)
     
 - [インプレース レコード管理の構成](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (保持のみ) 
@@ -382,10 +405,6 @@ Office 365 セキュリティ/コンプライアンス センターには、**�
     
 - [情報管理ポリシー](intro-to-info-mgmt-policies.md) (削除のみ)
      
-以前に情報ガバナンスを目的として電子情報開示の保留のいずれかを使用したことがある場合は、予防的なコンプライアンスのために、代わりにアイテム保持ポリシーを使用します。 電子情報開示は、保留リストのみに使用します。
-  
-### <a name="retention-policies-and-sharepoint-content-type-policies-or-information-management-policies"></a>アイテム保持ポリシーと SharePoint コンテンツ タイプ ポリシーまたは情報管理ポリシー
-
 コンテンツ タイプ ポリシーまたは情報管理ポリシーの SharePoint サイトを構成して、リストまたはライブラリのコンテンツを保持している場合は、前者のポリシーは無視され、保持ポリシーが有効になります。 
 
 ## <a name="related-information"></a>関連情報

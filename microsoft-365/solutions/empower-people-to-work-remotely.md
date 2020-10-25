@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: ca5774c027eebaedd42bcca23292b89d92f1e102
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 60467f0ed3cf7aa75481cb3bb49f954c32bf2e7d
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487746"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681398"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -48,6 +48,7 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
   世界中のどこからでも、いつでも、リモート ワーカーは以下にアクセスできます。 
 
   - Microsoft 365 サブスクリプションのクラウドベースのサービスとデータ。 
+
   - オンプレミスのアプリケーション データセンターで提供されるような組織のリソース。
 
 - セキュリティ保護
@@ -61,15 +62,18 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 - 共同作業と生産性
 
   リモート ワーカーは、次の高度な共同作業の手法により、オンプレミスと同じように生産性を高めることができます。
+
   - Teams を使用したオンライン会議とチャット セッション。 
+
   - SharePoint と OneDrive を使用してグローバルなアクセシビリティとリアルタイムの共同作業を実現する、クラウドベースのファイル ストレージ用の共有ワークスペース。
+
   - 作業を分割して完了するための共有タスクとワークフロー。 
 
 シームレスなサインイン エクスペリエンスを実現するには、オンプレミスの Active Directory ドメイン サービス (AD DS) のユーザー アカウントを Azure Active Directory (Azure AD) と同期する必要があります。 Windows 10 デバイスを保護するには、そのデバイスを Intune に登録する必要があります。 インフラストラクチャの概要を次に示します。
 
 ![リモート ワーカー向けの Microsoft 365 の基本インフラストラクチャ](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-リモート ワーカーの基準を満たすには、次の Microsoft 365 機能を使用します。
+リモート ワーカーに対して Microsoft 365 の機能を有効にするには、これらの Microsoft 365 機能を使用します。
 
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
@@ -86,7 +90,7 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 | 構成マネージャーを使用するための | デバイスでのソフトウェアのインストール、更新、設定を管理します | 別の Configuration Manager ライセンスが必要 |
 | Desktop Analytics | Windows クライアントの更新プログラムの準備状況を確認します。   | 別の Configuration Manager ライセンスが必要 |
 | Windows Autopilot | 生産的に使用するために、新しいWindows 10デバイスをセットアップして事前構成します。   | Microsoft 365 E3 または E5 |
-| Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer、Power Apps | 作成、連絡、共同作業を行います。 | Microsoft 365 E3 または E5 |
+| Microsoft Teams、Exchange Online、SharePoint Online、OneDrive、Microsoft 365 アプリ、Microsoft Power Platform、Yammer | 作成、連絡、共同作業を行います。 | Microsoft 365 E3 または E5 |
 ||||
 
 セキュリティとコンプライアンスの基準については、「[リモート ワーカーのためのセキュリティとコンプライアンスの展開](empower-people-to-work-remotely-security-compliance.md)」を参照してください。
@@ -97,7 +101,7 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 このポスターを [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) でダウンロードして、レター、リーガル、タブロイド (11 x 17) のサイズの紙に印刷することもできます。
 
-次の手順を実行することにより、組織のサーバー、データ、クラウド サービスへのアクセスをセキュリティで保護して最適化し、従業員の生産性を最大限に高めることができます。
+次の手順を実行することにより、組織のサーバー、クラウド サービスへのアクセスをセキュリティで保護して最適化し、リモート ワーカーの生産性を最大限に高めることができます。
 
 1. [MFA を使用してリモート ワーカーのサインイン セキュリティを強化する](empower-people-to-work-remotely-secure-sign-in.md)
 2. [オンプレミスのアプリとサービスへのリモート アクセスを提供する](empower-people-to-work-remotely-remote-access.md)
@@ -108,4 +112,4 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 [![Microsoft 365 でリモート ワーカーを支援するための手順](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-リモート ワーカーのサポートに関する Microsoft の最新情報については、「[Enabling remote work Tech Community site (リモート ワークを可能にする技術コミュニティ サイト)](https://resources.techcommunity.microsoft.com/enabling-remote-work/)」を参照してください。
+リモート ワーカーのサポートに関する Microsoft の最新情報については、「[Microsoft Teams サイトとのハイブリッド作業の有効化](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)」を参照してください。
