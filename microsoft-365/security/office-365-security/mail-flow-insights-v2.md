@@ -12,70 +12,70 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで使用できる洞察およびレポートについて学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198483"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769020"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a><span data-ttu-id="d5b84-103">セキュリティ/コンプライアンス センター のメール フロー インサイト</span><span class="sxs-lookup"><span data-stu-id="d5b84-103">Mail flow insights in the Security & Compliance Center</span></span>
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a><span data-ttu-id="03e98-103">セキュリティ/コンプライアンス センターのメール追跡の分析情報</span><span class="sxs-lookup"><span data-stu-id="03e98-103">Mail flow insights in the Security & Compliance Center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-<span data-ttu-id="d5b84-104">管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードを使用して、組織内のメールフローに関連する問題を解決するための傾向、洞察、アクションの実行を検索できます。</span><span class="sxs-lookup"><span data-stu-id="d5b84-104">Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.</span></span>
+<span data-ttu-id="03e98-104">管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードを使用して、組織内のメールフローに関連する問題を解決するための傾向、洞察、アクションの実行を検索できます。</span><span class="sxs-lookup"><span data-stu-id="03e98-104">Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.</span></span>
 
 ![セキュリティ & コンプライアンスセンターのメールフローダッシュボード](../../media/mail-flow-dashboard-v2.png)
 
-<span data-ttu-id="d5b84-106">利用可能な洞察は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="d5b84-106">The available insights are:</span></span>
+<span data-ttu-id="03e98-106">利用可能な洞察は次のとおりです。</span><span class="sxs-lookup"><span data-stu-id="03e98-106">The available insights are:</span></span>
 
-- [<span data-ttu-id="d5b84-107">自動転送されたメッセージのインサイト</span><span class="sxs-lookup"><span data-stu-id="d5b84-107">Auto-forwarded messages insight</span></span>](mfi-auto-forwarded-messages-report.md)
+- [<span data-ttu-id="03e98-107">自動転送されたメッセージの分析情報</span><span class="sxs-lookup"><span data-stu-id="03e98-107">Auto-forwarded messages insight</span></span>](mfi-auto-forwarded-messages-report.md)
 
-- <span data-ttu-id="d5b84-108">[使用可能なメールループの洞察](mfi-mail-loop-insight.md)<sup>1</sup>を修正する</span><span class="sxs-lookup"><span data-stu-id="d5b84-108">[Fix possible mail loop insight](mfi-mail-loop-insight.md)<sup>1</sup></span></span>
+- <span data-ttu-id="03e98-108">[使用可能なメールループの洞察](mfi-mail-loop-insight.md)<sup>1</sup>を修正する</span><span class="sxs-lookup"><span data-stu-id="03e98-108">[Fix possible mail loop insight](mfi-mail-loop-insight.md)<sup>1</sup></span></span>
 
-- <span data-ttu-id="d5b84-109">[低速メールフロールールの見通しを修正](mfi-slow-mail-flow-rules-insight.md)する<sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="d5b84-109">[Fix slow mail flow rules insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup></span></span>
+- <span data-ttu-id="03e98-109">[低速メールフロールールの見通しを修正](mfi-slow-mail-flow-rules-insight.md)する<sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="03e98-109">[Fix slow mail flow rules insight](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup></span></span>
 
-- [<span data-ttu-id="d5b84-110">メール フローのマップ</span><span class="sxs-lookup"><span data-stu-id="d5b84-110">Mail flow map</span></span>](mfi-mail-flow-map-report.md)
+- [<span data-ttu-id="03e98-110">メール フローのマップ</span><span class="sxs-lookup"><span data-stu-id="03e98-110">Mail flow map</span></span>](mfi-mail-flow-map-report.md)
 
-- <span data-ttu-id="d5b84-111">[転送される新しいドメインメールの洞察](mfi-new-domains-being-forwarded-email.md)<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="d5b84-111">[New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup></span></span>
+- <span data-ttu-id="03e98-111">[転送される新しいドメインメールの洞察](mfi-new-domains-being-forwarded-email.md)<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="03e98-111">[New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md)<sup>2</sup></span></span>
 
-- <span data-ttu-id="d5b84-112">[新しいユーザーの転送メールの洞察](mfi-new-users-forwarding-email.md)<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="d5b84-112">[New users forwarding email insight](mfi-new-users-forwarding-email.md)<sup>2</sup></span></span>
+- <span data-ttu-id="03e98-112">[新しいユーザーの転送メールの洞察](mfi-new-users-forwarding-email.md)<sup>2</sup></span><span class="sxs-lookup"><span data-stu-id="03e98-112">[New users forwarding email insight](mfi-new-users-forwarding-email.md)<sup>2</sup></span></span>
 
-- [<span data-ttu-id="d5b84-113">承認されていないドメインのレポート</span><span class="sxs-lookup"><span data-stu-id="d5b84-113">Non-accepted domain report</span></span>](mfi-non-accepted-domain-report.md)
+- [<span data-ttu-id="03e98-113">承認されていないドメインのレポート</span><span class="sxs-lookup"><span data-stu-id="03e98-113">Non-accepted domain report</span></span>](mfi-non-accepted-domain-report.md)
 
-- [<span data-ttu-id="d5b84-114">配信不能レポート</span><span class="sxs-lookup"><span data-stu-id="d5b84-114">Non-delivery report</span></span>](mfi-non-delivery-report.md)
+- [<span data-ttu-id="03e98-114">配信不能レポート</span><span class="sxs-lookup"><span data-stu-id="03e98-114">Non-delivery report</span></span>](mfi-non-delivery-report.md)
 
-- [<span data-ttu-id="d5b84-115">送信および受信メール フローのインサイト</span><span class="sxs-lookup"><span data-stu-id="d5b84-115">Outbound and inbound mail flow insight</span></span>](mfi-outbound-and-inbound-mail-flow.md)
+- [<span data-ttu-id="03e98-115">送信および受信メール フローのインサイト</span><span class="sxs-lookup"><span data-stu-id="03e98-115">Outbound and inbound mail flow insight</span></span>](mfi-outbound-and-inbound-mail-flow.md)
 
-- [<span data-ttu-id="d5b84-116">キューのインサイト</span><span class="sxs-lookup"><span data-stu-id="d5b84-116">Queues insight</span></span>](mfi-queue-alerts-and-queues.md)
+- [<span data-ttu-id="03e98-116">キューの分析情報</span><span class="sxs-lookup"><span data-stu-id="03e98-116">Queues insight</span></span>](mfi-queue-alerts-and-queues.md)
 
-- [<span data-ttu-id="d5b84-117">SMTP Auth クライアントのインサイトとレポート</span><span class="sxs-lookup"><span data-stu-id="d5b84-117">SMTP Auth clients insight and report</span></span>](mfi-smtp-auth-clients-report.md)
+- [<span data-ttu-id="03e98-117">SMTP Auth クライアントの分析情報とレポート</span><span class="sxs-lookup"><span data-stu-id="03e98-117">SMTP Auth clients insight and report</span></span>](mfi-smtp-auth-clients-report.md)
 
-- <span data-ttu-id="d5b84-118">[トップドメインのメール フローの状態洞察](mfi-domain-mail-flow-status-insight.md)　</span><span class="sxs-lookup"><span data-stu-id="d5b84-118">[Top domain mail flow status insight](mfi-domain-mail-flow-status-insight.md)</span></span>
+- <span data-ttu-id="03e98-118">[トップドメインのメール フローの状態洞察](mfi-domain-mail-flow-status-insight.md)　</span><span class="sxs-lookup"><span data-stu-id="03e98-118">[Top domain mail flow status insight](mfi-domain-mail-flow-status-insight.md)</span></span>
 
-<span data-ttu-id="d5b84-119"><sup>1</sup> この洞察は、問題が検出された後にのみ、メールフローダッシュボードの **お勧め** の領域に表示されます。</span><span class="sxs-lookup"><span data-stu-id="d5b84-119"><sup>1</sup> This insight appears in the **Recommended for you** area of the Mail flow dashboard only after the issue is detected.</span></span> <span data-ttu-id="d5b84-120">それ以外の場合は、表示されません。</span><span class="sxs-lookup"><span data-stu-id="d5b84-120">Otherwise, you won't see it.</span></span>
+<span data-ttu-id="03e98-119"><sup>1</sup> この洞察は、問題が検出された後にのみ、メールフローダッシュボードの **お勧め** の領域に表示されます。</span><span class="sxs-lookup"><span data-stu-id="03e98-119"><sup>1</sup> This insight appears in the **Recommended for you** area of the Mail flow dashboard only after the issue is detected.</span></span> <span data-ttu-id="03e98-120">それ以外の場合は、表示されません。</span><span class="sxs-lookup"><span data-stu-id="03e98-120">Otherwise, you won't see it.</span></span>
 
-<span data-ttu-id="d5b84-121"><sup>2</sup> この洞察はメールフローダッシュボードには表示されませんが、問題が検出された後、 [転送レポート](view-mail-flow-reports.md#forwarding-report) ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="d5b84-121"><sup>2</sup> This insight doesn't appear on the Mail flow dashboard, but is visible on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page after the issue is detected.</span></span> <span data-ttu-id="d5b84-122">それ以外の場合は、表示されません。</span><span class="sxs-lookup"><span data-stu-id="d5b84-122">Otherwise, you won't see it.</span></span>
+<span data-ttu-id="03e98-121"><sup>2</sup> この洞察はメールフローダッシュボードには表示されませんが、問題が検出された後、 [転送レポート](view-mail-flow-reports.md#forwarding-report) ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="03e98-121"><sup>2</sup> This insight doesn't appear on the Mail flow dashboard, but is visible on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page after the issue is detected.</span></span> <span data-ttu-id="03e98-122">それ以外の場合は、表示されません。</span><span class="sxs-lookup"><span data-stu-id="03e98-122">Otherwise, you won't see it.</span></span>
 
-## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a><span data-ttu-id="d5b84-123">メールフローダッシュボードを表示するために必要なアクセス許可</span><span class="sxs-lookup"><span data-stu-id="d5b84-123">Permissions required to view the Mail flow dashboard</span></span>
+## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a><span data-ttu-id="03e98-123">メールフローダッシュボードを表示するために必要なアクセス許可</span><span class="sxs-lookup"><span data-stu-id="03e98-123">Permissions required to view the Mail flow dashboard</span></span>
 
-<span data-ttu-id="d5b84-124">メールフローダッシュボードは、次のルートグループのメンバーが使用できます。</span><span class="sxs-lookup"><span data-stu-id="d5b84-124">The Mail flow dashboard is available to members of the following route groups:</span></span>
+<span data-ttu-id="03e98-124">メールフローダッシュボードは、次の役割グループのメンバーが使用できます。</span><span class="sxs-lookup"><span data-stu-id="03e98-124">The Mail flow dashboard is available to members of the following role groups:</span></span>
 
-- <span data-ttu-id="d5b84-125">セキュリティ & コンプライアンスセンター (グローバル管理者) での**組織の管理**。</span><span class="sxs-lookup"><span data-stu-id="d5b84-125">**Organization Management** in the Security & Compliance Center (global admins).</span></span>
+- <span data-ttu-id="03e98-125">セキュリティ & コンプライアンスセンター (グローバル管理者) での **組織の管理** 。</span><span class="sxs-lookup"><span data-stu-id="03e98-125">**Organization Management** in the Security & Compliance Center (global admins).</span></span>
 
-- <span data-ttu-id="d5b84-126">Azure AD の**[Exchange 管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。</span><span class="sxs-lookup"><span data-stu-id="d5b84-126">**[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure AD.</span></span>
+- <span data-ttu-id="03e98-126">Azure Active Directory の **[Exchange 管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。</span><span class="sxs-lookup"><span data-stu-id="03e98-126">**[Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.</span></span>
 
-- <span data-ttu-id="d5b84-127">セキュリティ & コンプライアンスセンターの**メールフロー管理者**: この役割グループのメンバーが全体管理者または Exchange 管理者の役割グループのメンバーでもない場合は、次の問題と要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="d5b84-127">**MailFlow Administrator** in the Security & Compliance Center: If a member of this role group is not also a member of the global administrator or Exchange administrator role groups, then note the following issues and requirements:</span></span>
+- <span data-ttu-id="03e98-127">セキュリティ & コンプライアンスセンターの **メールフロー管理者** : この役割グループのメンバーが全体管理者または Exchange 管理者の役割グループのメンバーでもない場合は、次の問題と要件を確認してください。</span><span class="sxs-lookup"><span data-stu-id="03e98-127">**MailFlow Administrator** in the Security & Compliance Center: If a member of this role group is not also a member of the global administrator or Exchange administrator role groups, then note the following issues and requirements:</span></span>
 
-  - <span data-ttu-id="d5b84-128">ユーザーは、セキュリティ & コンプライアンスセンターに直接ログインする必要があり <https://protection.office.com> ます。</span><span class="sxs-lookup"><span data-stu-id="d5b84-128">The user must log in to the Security & Compliance Center directly at <https://protection.office.com>.</span></span>
-  - <span data-ttu-id="d5b84-129">ユーザーには、メールフローダッシュボードに対する読み取り専用アクセス許可のみが付与されます。</span><span class="sxs-lookup"><span data-stu-id="d5b84-129">The user will only have read-only permission to the Mail flow dashboard.</span></span>
-  - <span data-ttu-id="d5b84-130">ユーザーは、Microsoft 365 管理センターへのアクセス権を持ちません。</span><span class="sxs-lookup"><span data-stu-id="d5b84-130">The user won't have access to the Microsoft 365 admin center.</span></span>
+  - <span data-ttu-id="03e98-128">ユーザーは、セキュリティ & コンプライアンスセンターに直接ログインする必要があり <https://protection.office.com> ます。</span><span class="sxs-lookup"><span data-stu-id="03e98-128">The user must log in to the Security & Compliance Center directly at <https://protection.office.com>.</span></span>
+  - <span data-ttu-id="03e98-129">ユーザーには、メールフローダッシュボードに対する読み取り専用アクセス許可のみが付与されます。</span><span class="sxs-lookup"><span data-stu-id="03e98-129">The user will only have read-only permission to the Mail flow dashboard.</span></span>
+  - <span data-ttu-id="03e98-130">ユーザーは、Microsoft 365 管理センターへのアクセス権を持ちません。</span><span class="sxs-lookup"><span data-stu-id="03e98-130">The user won't have access to the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="d5b84-131">セキュリティ & コンプライアンスセンターでのアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md) 」を参照し、 [セキュリティ & コンプライアンスセンターへのアクセス権をユーザーに付与](grant-access-to-the-security-and-compliance-center.md)します。</span><span class="sxs-lookup"><span data-stu-id="d5b84-131">For more information about permissions in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).</span></span>
+<span data-ttu-id="03e98-131">セキュリティ & コンプライアンスセンターでのアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md) 」を参照し、 [セキュリティ & コンプライアンスセンターへのアクセス権をユーザーに付与](grant-access-to-the-security-and-compliance-center.md)します。</span><span class="sxs-lookup"><span data-stu-id="03e98-131">For more information about permissions in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).</span></span>
 
-## <a name="where-to-find-the-mail-flow-dashboard"></a><span data-ttu-id="d5b84-132">メールフローダッシュボードの検索先</span><span class="sxs-lookup"><span data-stu-id="d5b84-132">Where to find the Mail flow dashboard</span></span>
+## <a name="where-to-find-the-mail-flow-dashboard"></a><span data-ttu-id="03e98-132">メールフローダッシュボードの検索先</span><span class="sxs-lookup"><span data-stu-id="03e98-132">Where to find the Mail flow dashboard</span></span>
 
-<span data-ttu-id="d5b84-133">[セキュリティ & コンプライアンスセンター] <https://protection.office.com> を開き、[ **メールフロー**] を展開して、[ **ダッシュボード**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d5b84-133">Open the Security & Compliance Center at <https://protection.office.com>, expand **Mail flow**, and then select **Dashboard**.</span></span>
+<span data-ttu-id="03e98-133">[セキュリティ & コンプライアンスセンター] <https://protection.office.com> を開き、[ **メールフロー** ] を展開して、[ **ダッシュボード** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="03e98-133">Open the Security & Compliance Center at <https://protection.office.com>, expand **Mail flow** , and then select **Dashboard** .</span></span>
 
-<span data-ttu-id="d5b84-134">メールフローダッシュボードに直接移動するには、を開き <https://protection.office.com/mailflow/dashboard> ます。</span><span class="sxs-lookup"><span data-stu-id="d5b84-134">To go directly to the Mail flow dashboard, open <https://protection.office.com/mailflow/dashboard>.</span></span>
+<span data-ttu-id="03e98-134">メールフローダッシュボードに直接移動するには、を開き <https://protection.office.com/mailflow/dashboard> ます。</span><span class="sxs-lookup"><span data-stu-id="03e98-134">To go directly to the Mail flow dashboard, open <https://protection.office.com/mailflow/dashboard>.</span></span>
