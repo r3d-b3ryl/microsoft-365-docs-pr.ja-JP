@@ -20,58 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 964724ad92c1ae29095b7368167b771b1632b003
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295072"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769032"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュリティスコアの新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
 
 ## <a name="august-2020"></a>2020 年 8 月
 
-### <a name="update-improvement-action-for-azure-active-directory"></a>Azure Active Directory の更新プログラムの向上アクション
+### <a name="updated-improvement-action-for-azure-active-directory"></a>Azure Active Directory の改善アクションを更新しました
 
 - レガシ認証をブロックするポリシーを有効にする
-
-## <a name="july-2020"></a>2020 年7 月
-
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection の改善アクションを追加する
-
-- 危険性のある横移動パス
-- 安全でないアカウントの属性
-- Active Directory 信頼でセキュリティ機能を有効にする
-- セキュリティ保護のない SID 履歴属性をエンティティから削除する
-
-## <a name="june-2020"></a>2020 年 6 月
-
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションを削除しました
-
-* Attack Surface Reduction ルールを有効にする
-
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションが追加されました
-
-* Adobe Reader が子プロセスを作成するのをブロックする
-* ランサムウェアに対する高度な保護の使用
-* すべての Office アプリケーションで子プロセスを作成することを禁止する
-* Office アプリケーションで実行可能なコンテンツを作成することを禁止する
-* JavaScript または VBScript がダウンロードされた実行可能コンテンツを起動するのをブロックする
-* 難読化する可能性のあるスクリプトの実行をブロックする
-* 電子メールクライアントおよび webmail からの実行可能ファイルのコンテンツをブロックする
-* Office コミュニケーションアプリケーションによる子プロセスの作成を禁止する
-* USB から実行される信頼できないおよび署名されていないプロセスをブロックする
-* WMI イベントサブスクリプション経由の永続化をブロックする
-* Office アプリケーションが他のプロセスにコードを挿入するのをブロックする
-* 実行可能ファイルが、流行、年齢、または信頼できるリストの条件を満たしていない限り、実行を禁止する
-* PSExec および WMI コマンドからのプロセス作成をブロックする
-* Windows ローカルセキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)
-* Office マクロからの Win32 API 呼び出しをブロックする
 
 ## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Id のセキュリティで保護されたスコアとグラフ API の非互換性
 

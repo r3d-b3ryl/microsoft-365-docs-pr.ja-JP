@@ -19,24 +19,27 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: f57fc83f9102e5eeea61deaaadc17203bad030ac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8992efdd79295b6b56b8f033bd97b10f59a7a4d5
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195537"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769677"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターで ServiceNow チケットを作成および追跡する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!CAUTION]
+>**ServiceNow コネクタのプレビュー期間は終了しています**<br>
+>この機能は、2020年11月末までは利用できなくなります。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
 
 [Microsoft 365 セキュリティセンター](overview-security-center.md)は、ServiceNow のチケットをネイティブに作成および追跡する機能によって強化されました。 [ServiceNow の詳細情報](https://www.servicenow.com/)
 
 セキュリティセンターでは、セキュリティ管理者が Microsoft のセキュリティ [で保護されたスコア](microsoft-secure-score.md) 向上アクションを ServiceNow に直接送信して、チケットを作成することができます。 インシデント管理チケットと変更管理チケットの両方を作成できます。 セキュリティセンターのホームページと ServiceNow のチケットを追跡します。
 
 - [**前提条件、データ交換、およびトラブルシューティングについて説明します。**](tickets.md)
-- **コンプライアンスセンターで ServiceNow チケットを管理する** (近日中)
+- **コンプライアンスセンターで ServiceNow チケットを管理する** (利用不可)
 
 ## <a name="connect-microsoft-365-security-center-to-servicenow"></a>Microsoft 365 セキュリティセンターを ServiceNow に接続する
 
@@ -57,7 +60,7 @@ Microsoft 365 セキュリティセンターのホームページに移動して
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>タスクを作成して ServiceNow に共有する
 
-統合がセットアップされたら、特定の [Microsoft セキュリティスコア](microsoft-secure-score.md) 向上アクションに基づいて ServiceNow タスクを作成します。 Microsoft 365 セキュリティセンターの [セキュリティで保護されたスコアの改善] アクションに移動し、[ **共有**] を選択します。 ドロップダウンオプションの1つは ServiceNow です。
+統合がセットアップされたら、特定の [Microsoft セキュリティスコア](microsoft-secure-score.md) 向上アクションに基づいて ServiceNow タスクを作成します。 Microsoft 365 セキュリティセンターの [セキュリティで保護されたスコアの改善] アクションに移動し、[ **共有** ] を選択します。 ドロップダウンオプションの1つは ServiceNow です。
 
 タスクが生成され、優先度を設定して、名前、説明、または期限を編集できます。 すべての必須フィールドが入力されたら、そのタスクを ServiceNow に送信します。
 

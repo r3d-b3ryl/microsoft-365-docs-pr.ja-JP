@@ -17,16 +17,16 @@ f1.keywords:
 - NOCSH
 description: SharePoint Online でのデータ削除の動作について説明します。たとえば、削除されたコンテンツが保存される場所や、期間について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e914e84f3679483e5030b7f2a06913cb052e5411
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 888ee807e6cd4ddc435c1df86a63502a617d6cb8
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332726"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769044"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365 での SharePoint Online データの削除
 
-SharePoint Online は、オブジェクトをアプリケーションデータベース内に抽象化されたコードとして格納します。 ユーザーがファイルを SharePoint Online にアップロードすると、そのファイルは逆アセンブルされ、複数のデータベースにわたって複数のテーブルに格納されて、アプリケーションコードに変換されます。 SharePoint Online では、お客様がアップロードしたすべてのコンテンツがチャンクに分割され、暗号化 (複数の AES 256 ビットキーを使用している可能性があります) され、データセンター全体に分散されます。 チャンク処理と暗号化プロセスの詳細については、「 [Microsoft Cloud での暗号化](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)」を参照してください。 
+SharePoint Online は、オブジェクトをアプリケーションデータベース内に抽象化されたコードとして格納します。 ユーザーがファイルを SharePoint Online にアップロードすると、そのファイルは逆アセンブルされ、複数のデータベースにわたって複数のテーブルに格納されて、アプリケーションコードに変換されます。 SharePoint Online では、お客様がアップロードしたすべてのコンテンツがチャンクに分割され、暗号化 (1 つ以上の AES 256 ビットキーを使用) され、データセンター全体に分散されます。 
 
 SharePoint Online では、アイテムは元の場所から削除した時点から93日後に保持されます。 これらのユーザーは、そこから削除したりごみ箱を空にしたりしない限り、すべての時間をサイトのごみ箱に保持します。 その場合、アイテムはサイトコレクションのごみ箱に移動されます。その後、残りの93日間は保持されます。 削除済みアイテムの復元の詳細については、「 [SharePoint サイトのごみ箱のアイテムを復元](https://support.office.com/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
 ) する」と「 [削除済みのアイテムをサイトコレクションのごみ箱から復元](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b)する」を参照してください。 ごみ箱の保存期間は、SharePoint Online では構成できません。

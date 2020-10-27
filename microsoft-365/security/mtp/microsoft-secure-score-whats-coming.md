@@ -17,25 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e4a9e5f1606b91e4cd41f29b37db2707f4c7df17
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 5465d1a6dc806cb4f76a34801dee2feb87146ad3
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295084"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769270"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 弊社では、セキュリティ上の姿勢をより良いものにするために、近日中に変更を行っており、利便性を向上 [さ](microsoft-secure-score.md) せています。 スコアと可能な最大スコアは変わる可能性があります。
 
 ## <a name="proposed-changes"></a>Proposed changes
 
-### <a name="october-2020"></a>2020年10月
+### <a name="november-2020"></a>2020年11月
 
-#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection の改善アクションを削除する
+> ServiceNow を共有することによって、セキュリティで保護されたスコアで ServiceNow チケットを作成する機能を削除します。
+
+- ServiceNow コネクタのプレビュー期間が終了します。 この機能は2020の終わりまでは利用できなくなります。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
+
+### <a name="october-2020"></a>2020 年 10 月
+
+Microsoft Defender Advanced Threat Protection に関連する改善アクションを削除します。
+
 - Microsoft Defender SmartScreen Windows ストアアプリの web コンテンツチェックを設定して警告を発する
 
 ## <a name="related-resources"></a>関連リソース

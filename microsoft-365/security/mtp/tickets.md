@@ -19,19 +19,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a2650efbac0966b84e6fbfd6ce78cb732f4933b3
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196121"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769655"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>ServiceNow チケットを Microsoft 365 セキュリティセンターおよびコンプライアンスセンターに統合する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-[!include[Prerelease information](../includes/prerelease.md)]
+>[!CAUTION]
+>**ServiceNow コネクタのプレビュー期間は終了しています**<br>
+>この機能は、2020年11月末までは利用できなくなります。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
 
 ServiceNow は、企業がエンタープライズ運用のためにデジタルワークフローを管理するのに役立つ、よく使用されるクラウドコンピューティングプラットフォームです。 現在、プラットフォームは IT ワークフロー、従業員ワークフロー、および顧客ワークフローを備えています。 [ServiceNow の詳細情報](https://www.servicenow.com/)
 
@@ -40,7 +41,7 @@ Microsoft は、お客様が ServiceNow と提携して、IT 管理者が両方�
 - [**セキュリティセンターで ServiceNow チケットを管理する**](tickets-security-center.md)
 - **コンプライアンスセンターで ServiceNow チケットを管理する** (近日中)
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 Microsoft 365 セキュリティセンターまたはコンプライアンスセンターと、次のものを含む ServiceNow インスタンスへのアクセス権を持っている必要があります。  
 
@@ -77,7 +78,7 @@ Microsoft 365 セキュリティセンターまたはコンプライアンスセ
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>インストールチェックリストの最初のステップでエラーが表示される (OAuth の作成)
 
-**エラーメッセージ**: 範囲 ' x_mioms_m365ticket ' から ' oauth_entity ' に対する読み取り操作が拒否されました。テーブルのスコープ間のアクセスポリシーが原因です。
+**エラーメッセージ** : 範囲 ' x_mioms_m365ticket ' から ' oauth_entity ' に対する読み取り操作が拒否されました。テーブルのスコープ間のアクセスポリシーが原因です。
 
 アプリでは、ServiceNow インスタンスの管理者が OAuth エンティティを作成して読み取ることができると想定しています。 このエラーは、OAuth エンティティを作成または読み取ることができるユーザーを制限する ServiceNow のインスタンスのカスタマイズによって発生する可能性があります。
 
@@ -92,7 +93,7 @@ Microsoft 365 セキュリティセンターまたはコンプライアンスセ
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>Microsoft 365 Security & コンプライアンスコネクタ用に作成された OAuth エンティティを検証する方法
 
-ServiceNow で、[アプリケーション**レジストリ] テーブル (メニュー > System OAuth > アプリケーションレジストリ**) に移動します。 自分で作成した OAuth エンティティを、割り当てた名前で検索します。
+ServiceNow で、[アプリケーション **レジストリ] テーブル (メニュー > System OAuth > アプリケーションレジストリ** ) に移動します。 自分で作成した OAuth エンティティを、割り当てた名前で検索します。
 
 ### <a name="signing-in-as-the-integration-user"></a>統合ユーザーとしてのサインイン
 
@@ -106,7 +107,7 @@ Microsoft 365 セキュリティセンターと ServiceNow 間の接続を承認
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>Microsoft 365 Security & コンプライアンスコネクタのインストールチェックリストで作成した統合ユーザーを検証する方法
 
-ServiceNow でユーザーテーブル **(メニュー > ユーザー管理 > ユーザー**) に移動し、自分で作成した統合ユーザーを割り当てた名前で検索します。
+ServiceNow でユーザーテーブル **(メニュー > ユーザー管理 > ユーザー** ) に移動し、自分で作成した統合ユーザーを割り当てた名前で検索します。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>お客様の会社では、シングルサインオンが有効になっています。これにより、Microsoft 365 セキュリティセンターから ServiceNow に接続できなくなります。
 
