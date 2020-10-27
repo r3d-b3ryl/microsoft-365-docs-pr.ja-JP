@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 E5 または Microsoft 365 E5 セキュリティの安全なドキュメントについて説明します。
-ms.openlocfilehash: cc63143d61065bc9528677ff4aec7d3433236ce0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195333"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773951"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
@@ -29,9 +29,11 @@ ms.locfileid: "48195333"
 
 「安全なドキュメント」は、microsoft [Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) を使用して、 [保護ビュー](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)で開かれたドキュメントやファイルをスキャンする、microsoft 365 e5 または microsoft 365 E5 セキュリティの機能です。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - セーフドキュメントは、 *microsoft 365 E5* または *Microsoft 365 E5 セキュリティ* ライセンスを持つユーザーのみが利用できます。 これらのライセンスは、Office 365 Advanced Threat Protection (ATP) プランに含まれていません。
+
+- 「安全なドキュメント」は、Microsoft 365 for enterprise (旧称 Office 365 ProPlus) version 2004 以降でサポートされています。
 
 - <https://protection.office.com> でセキュリティ/コンプライアンス センターを開きます。 [ATP の安全な **添付ファイル** ] ページに直接移動するには、を開き <https://protection.office.com/safeattachmentv2> ます。
 
@@ -47,15 +49,15 @@ Safe ドキュメントによって送信されたファイルは、分析に必
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>セキュリティ & コンプライアンスセンターを使用して安全なドキュメントを構成する
 
-1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動し、[ **グローバル設定**] をクリックします。
+1. [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル** ] に移動し、[ **グローバル設定** ] をクリックします。
 
 2. [ **グローバル設定** ] が表示されたら、次の設定を構成します。
 
-   - **Office クライアントに対して安全なドキュメントを有効**にします。トグルを右に移動して、機能をオンにします。オン ![ に ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) します。
+   - **Office クライアントに対して安全なドキュメントを有効** にします。トグルを右に移動して、機能をオンにします。オン ![ に ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) します。
 
-   - **安全なドキュメントが悪意のあるファイルを識別している場合でも、保護されたビューのクリックをユーザーに許可**します。このオプションはオフのままにしておくことをお勧めします (トグルオフのままにし ![ ](../../media/scc-toggle-off.png) ます)。
+   - **安全なドキュメントが悪意のあるファイルを識別している場合でも、保護されたビューのクリックをユーザーに許可** します。このオプションはオフのままにしておくことをお勧めします (トグルオフのままにし ![ ](../../media/scc-toggle-off.png) ます)。
 
-   完了したら、**[保存]** をクリックします。
+   完了したら、 **[保存]** をクリックします。
 
    ![[ATP Safe Attachments] ページでグローバル設定を選択した後の、安全なドキュメントの設定。](../../media/safe-docs.png)
 
@@ -67,8 +69,8 @@ Safe ドキュメントによって送信されたファイルは、分析に必
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
-- _Enablesafedocs_パラメーターは、組織全体に対して安全なドキュメントを有効または無効にします。
-- _Allowsafedocsopen_パラメーターを使用すると、ドキュメントが悪意のあるものとして識別された場合に、保護されたビュー (ドキュメントを開く操作) をユーザーが終了できないようにすることができます。
+- _Enablesafedocs_ パラメーターは、組織全体に対して安全なドキュメントを有効または無効にします。
+- _Allowsafedocsopen_ パラメーターを使用すると、ドキュメントが悪意のあるものとして識別された場合に、保護されたビュー (ドキュメントを開く操作) をユーザーが終了できないようにすることができます。
 
 この例では、組織全体に対して安全なドキュメントを有効にし、保護されたビューから悪意があると識別されたドキュメントをユーザーが開くことができないようにします。
 
@@ -82,7 +84,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 安全なドキュメントを有効にして構成したことを確認するには、次のいずれかの手順を実行します。
 
-- [セキュリティ & コンプライアンスセンター] で、[**脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル**] に移動し、[**グローバル設定**] をクリックし、[ **Office クライアントの安全なドキュメントを有効**にする] をオンにして、**安全なドキュメントでファイルが悪意のある設定として識別される場合でも、[保護されたビューを使用してクリックできる**
+- [セキュリティ & コンプライアンスセンター] で、[ **脅威管理** \> **ポリシー** \> **ATP 安全添付ファイル** ] に移動し、[ **グローバル設定** ] をクリックし、[ **Office クライアントの安全なドキュメントを有効** にする] をオンにして、 **安全なドキュメントでファイルが悪意のある設定として識別される場合でも、[保護されたビューを使用してクリックできる**
 
 - Exchange Online PowerShell で次のコマンドを実行し、プロパティの値を確認します。
 
