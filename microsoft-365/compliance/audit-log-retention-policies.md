@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、Microsoft 365 の新しい高度な監査機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: dba14d5a4132bc9c883c531ceeb83a2a8ff3c6cd
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: c2449ab90d04fd44909999d25b940ee4d2758b15
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398728"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753336"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -36,7 +36,7 @@ ms.locfileid: "48398728"
 
 ## <a name="default-audit-log-retention-policy"></a>既定の監査ログの保持ポリシー
 
-Microsoft 365 の高度な監査には、すべての組織の既定の監査ログの保持ポリシーが用意されています。 このポリシーでは、Exchange、SharePoint、および Azure Active Directory の監査レコードを 1 年間保持します。 この既定のポリシーは、**ワークロード** プロパティ (アクティビティが発生したサービス) の **AzureActiveDirectory**、**Exchange**、または **SharePoint** の値を含む監査レコードを保持します。 既定のポリシーは変更できません。 既定のポリシーに含まれている各ワークロードのレコード種類の一覧については、この記事の「[詳細情報](#more-information)」を参照してください。
+Microsoft 365 の高度な監査には、すべての組織の既定の監査ログの保持ポリシーが用意されています。 このポリシーでは、Exchange、SharePoint、および Azure Active Directory の監査レコードを 1 年間保持します。 この既定のポリシーは、 **ワークロード** プロパティ (アクティビティが発生したサービス) の **AzureActiveDirectory** 、 **Exchange** 、または **SharePoint** の値を含む監査レコードを保持します。 既定のポリシーは変更できません。 既定のポリシーに含まれている各ワークロードのレコード種類の一覧については、この記事の「[詳細情報](#more-information)」を参照してください。
 
 > [!NOTE]
 > 既定の監査ログの保持ポリシーは、Office 365 または Microsoft 365 E5 ライセンスが割り当てられているユーザー、または Microsoft 365 E5 コンプライアンスまたは Microsoft 365 E5 eDiscovery and Audit アドオン ライセンスを持つユーザーが実行したアクティビティの監査レコードにのみ適用されます。 組織に E5 以外のユーザーがいる場合、対応する監査レコードは 90 日間保持されます。
@@ -55,13 +55,13 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
 1. [https://compliance.microsoft.com](https://compliance.microsoft.com) に移動し、セキュリティ/コンプライアンス センターで組織構成の役割が割り当てられているユーザー アカウントでサインインします。
 
-2. Microsoft 365 コンプライアンス センターの左側のウィンドウで、[**すべてを表示**] をクリックし、[**監査**] をクリックします。
+2. Microsoft 365 コンプライアンス センターの左側のウィンドウで、[ **すべてを表示** ] をクリックし、[ **監査** ] をクリックします。
 
-    [**監査**] ページが表示されます。
+    [ **監査** ] ページが表示されます。
 
     ![コンプライアンス センターの監査ログの検索ページ](../media/AuditLogRetentionPolicy1.png)
 
-3. [**監査保持ポリシーの作成**] をクリックし、ポップアップ ページの次のフィールドに入力します。
+3. [ **監査保持ポリシーの作成** ] をクリックし、ポップアップ ページの次のフィールドに入力します。
 
     ![監査保持ポリシーのポップアップ ページ](../media/AuditLogRetentionPolicy2.png)
 
@@ -69,11 +69,11 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
    2. **説明:** 省略可能ですが、レコードの種類やワークロード、ポリシーで指定されたユーザー、期間など、ポリシーに関する情報を提供するのに役立ちます。
 
-   3. **ユーザー:** ポリシーを適用する 1 人以上のユーザーを選択します。 このボックスを空白のままにすると、ポリシーがすべてのユーザーに適用されます。 **レコードの種類**を空白のままにする場合は、ユーザーを選択する必要があります。
+   3. **ユーザー:** ポリシーを適用する 1 人以上のユーザーを選択します。 このボックスを空白のままにすると、ポリシーがすべてのユーザーに適用されます。 **レコードの種類** を空白のままにする場合は、ユーザーを選択する必要があります。
 
-   4. **レコードの種類:** ポリシーの適用対象となる監査レコードの種類です。 このプロパティを空白のままにする場合は、[**ユーザー**] ボックスでユーザーを選択する必要があります。 1 つまたは複数のレコードの種類を選択できます。
+   4. **レコードの種類:** ポリシーの適用対象となる監査レコードの種類です。 このプロパティを空白のままにする場合は、[ **ユーザー** ] ボックスでユーザーを選択する必要があります。 1 つまたは複数のレコードの種類を選択できます。
 
-   - 単一のレコードの種類を選択した場合は、[**アクティビティ**] フィールドが動的に表示されます。 ドロップダウン リストを使用して、選択したレコードの種類からポリシーを適用するアクティビティを選択できます。 特定のアクティビティを選択しない場合は、選択したレコードの種類のすべてのアクティビティにポリシーが適用されます。
+   - 単一のレコードの種類を選択した場合は、[ **アクティビティ** ] フィールドが動的に表示されます。 ドロップダウン リストを使用して、選択したレコードの種類からポリシーを適用するアクティビティを選択できます。 特定のアクティビティを選択しない場合は、選択したレコードの種類のすべてのアクティビティにポリシーが適用されます。
 
    - 複数のレコードの種類を選択した場合、アクティビティを選択することはできません。 選択したレコードの種類のすべてのアクティビティにポリシーが適用されます。
 
@@ -81,7 +81,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
    6. **ポリシー:** この値は、組織内の監査ログの保持ポリシーが処理される順序を決定します。 値が高いほど、高い優先度を示します。 たとえば、優先度の値が **5** のポリシーは、優先度の値が **0** のポリシーよりも優先されます。 前述のとおり、カスタム監査ログの保持ポリシーは、組織の既定ポリシーよりも優先されます。
 
-4. [**保存**] をクリックして新しい監査ログの保持ポリシーを作成します。
+4. [ **保存** ] をクリックして新しい監査ログの保持ポリシーを作成します。
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>PowerShell で監査ログの保持ポリシーを作成する
 
@@ -99,7 +99,7 @@ Microsoft 365 の高度な監査には、すべての組織の既定の監査ロ
 
    - ポリシーの説明。
 
-   - Microsoft Teams のすべてのアクティビティ (*RecordType* パラメーターで定義) を保持します。
+   - Microsoft Teams のすべてのアクティビティ ( *RecordType* パラメーターで定義) を保持します。
 
    - Microsoft Teams 監査ログを 10 年間保持します。
 
@@ -122,15 +122,19 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 ```
 
 > [!NOTE]
-> 現時点では、**Get-UnifiedAuditLogRetentionPolicy** コマンドレットは、組織の既定の監査ログのポリシーを返しません。
+> 現時点では、 **Get-UnifiedAuditLogRetentionPolicy** コマンドレットは、組織の既定の監査ログのポリシーを返しません。
 
 詳細については、「[Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy)」を参照してください。
 
+## <a name="some-audit-log-retention-policies-not-supported-in-the-ui"></a>UI でサポートされていない一部の監査ログの保持ポリシー
+
+**New-UnifiedAuditLogRetentionPolicy** コマンドレットを使用すると、Microsoft 365 コンプライアンス センターの **[監査保持ポリシーの作成]** ツールでは使用できないレコードの種類またはアクティビティの監査ログ保持ポリシーを作成できます。 この場合、コンプライアンス センターの **[監査保持ポリシー]** タブからポリシーを編集 (保持期間の変更やアクティビティの追加と削除など) することはできません。 コンプライアンス センターでは、ポリシーを表示したり、削除したりすることはできません。 ポリシーを編集するには、セキュリティ/コンプライアンス センターの PowerShell で **Set-UnifiedAuditLogRetentionPolicy** コマンドレットを使用します。
+
 ## <a name="more-information"></a>詳細情報
 
-- セキュリティ センターとコンプライアンス センターの PowerShell で**Set-UnifiedAuditLogRetentionPolicy** コマンドレットを使用して、既存の監査ログの保持ポリシーを変更します。 詳細については、「[Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy)」を参照してください。
+- セキュリティ センターとコンプライアンス センターの PowerShell で **Set-UnifiedAuditLogRetentionPolicy** コマンドレットを使用して、既存の監査ログの保持ポリシーを変更します。 詳細については、「[Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy)」を参照してください。
 
-- セキュリティ センターとコンプライアンス センターの PowerShell で**Remove-UnifiedAuditLogRetentionPolicy** コマンドレットを使用して、監査ログの保持ポリシーを削除します。 ポリシーが削除されるまで、最大 30 分かかる場合があります。 詳細については、「[Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)」を参照してください。
+- セキュリティ センターとコンプライアンス センターの PowerShell で **Remove-UnifiedAuditLogRetentionPolicy** コマンドレットを使用して、監査ログの保持ポリシーを削除します。 ポリシーが削除されるまで、最大 30 分かかる場合があります。 詳細については、「[Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)」を参照してください。
 
 - 前に説明したように、Azure Active Directory、Exchange、および SharePoint の運用に関する監査レコードは 1 年間保持されます。 次の表に、既定の監査ログの保持ポリシーに含まれるすべてのレコードの種類 (これらのサービスごと) を示します。 つまり、特定のレコードの種類、動作、またはユーザーに対してカスタム監査ログの保持ポリシーが優先されない限り、このレコードの種類の動作の監査ログは 1 年間保持されます。 各レコードの種類の Enum 値 (監査レコード内の RecordType プロパティの値として表示される) はかっこ内に表示されます。
 
