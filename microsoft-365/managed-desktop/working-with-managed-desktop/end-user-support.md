@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104414"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787536"
 ---
 # <a name="getting-help-for-users"></a>ユーザーのヘルプ
 
@@ -25,7 +25,7 @@ ms.locfileid: "48104414"
 
 ## <a name="get-help-app"></a>ヘルプアプリを取得する
 
-ユーザーにサポートを提供するために推奨される方法は、ユーザーデバイスに組み込まれた使いやすいインターフェイスを備えた **ヘルプ**を利用することです。  
+ユーザーにサポートを提供するために推奨される方法は、ユーザーデバイスに組み込まれた使いやすいインターフェイスを備えた **ヘルプ** を利用することです。  
 
 ![ヘルプアプリアイコンを取得する](../../media/get-help.png)
 
@@ -34,7 +34,10 @@ ms.locfileid: "48104414"
 - ユーザーは、指定された電話番号へのコールバックまたはサービス担当者とのチャットオンラインの要求を行うことができます。
 - Microsoft マネージドデスクトップサポートの範囲外にある要求は、電話を使用して、ローカルの IT ヘルプデスクにリダイレクトされます。
 
-### <a name="prerequisites"></a>前提条件
+> [!NOTE]
+> ユーザーがデバイスを設定するときに別の言語を選択した場合でも、ヘルプアプリの表示言語は英語のみです。 
+
+### <a name="prerequisites"></a>必要条件
 ユーザーがアプリでヘルプを利用できるようにするには、これらの前提条件が満たされていることを確認してください。
 
 - デバイスは、「 [Microsoft マネージドデスクトップデバイス](../get-started/set-up-devices.md)のセットアップ ( [新しいデバイスの登録](../get-started/register-devices-self.md)など)」の方法のいずれかを使用して、microsoft managed desktop に登録する必要があります。
@@ -68,7 +71,7 @@ Microsoft マネージドデスクトップデバイスを使用しているユ�
 >[!NOTE]
 >Id を確認するために、を呼び出すときに、組織のメールアドレスを準備しておく必要があります。 
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>補足資料
 - [Microsoft マネージドデスクトップの管理者サポート](admin-support.md)。 
 - [Microsoft マネージドデスクトップのサポート](../service-description/support.md)。
-- Microsoft マネージドデスクトップに対して既に加入している場合は、microsoft の[エンドポイントマネージャー](https://endpoint.microsoft.com/)の**テナント管理**メニューの [microsoft managed desktop] セクションにある**オンラインリソース**の「microsoft managed desktop Admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を参照してください。
+- Microsoft マネージドデスクトップに対して既に加入している場合は、microsoft の [エンドポイントマネージャー](https://endpoint.microsoft.com/)の **テナント管理** メニューの [microsoft managed desktop] セクションにある **オンラインリソース** の「microsoft managed desktop Admin Guide」に記載されている詳細な手順、処理フロー、作業手順、および faq を参照してください。

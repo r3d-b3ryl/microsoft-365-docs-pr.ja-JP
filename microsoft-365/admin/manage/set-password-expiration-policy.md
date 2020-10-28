@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで組織のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: 59e9f4e36843d7c5d977a49d42ae0a11e9a2db25
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362111"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787524"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)」を参照してください。
 
 ::: moniker-end
 
@@ -56,14 +56,14 @@ ms.locfileid: "47362111"
 > [!IMPORTANT]
 > [グローバル管理者](../add-users/about-admin-roles.md)のみ次の手順を実行できます。
   
-1. 管理センターで、[**設定**] \> [**組織の設定**] の順に移動します。
+1. 管理センターで、[ **設定** ] \> [ **組織の設定** ] の順に移動します。
 
 2. [<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">セキュリティとプライバシー</a>] ページに移動します。
  グローバル管理者でない場合は、[セキュリティとプライバシー] オプションは表示されません。
   
-3. [**パスワードの有効期限ポリシー**] を選択します。
+3. [ **パスワードの有効期限ポリシー** ] を選択します。
   
-4. ユーザーがパスワードを変更する必要がないようにするには、[**数日後にユーザーのパスワードが期限切れになるように設定する**] の横のチェックボックスを選択します。
+4. ユーザーがパスワードを変更する必要がないようにするには、[ **数日後にユーザーのパスワードが期限切れになるように設定する** ] の横のチェックボックスを選択します。
   
 5. パスワードの有効期限が切れる頻度を入力します。 14 〜 730 の日数を選択します。
   
@@ -72,12 +72,8 @@ ms.locfileid: "47362111"
 7. ユーザーのパスワードの有効期限が切れた場合は、画面の右下隅に通知が表示されます。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>パスワードの有効期限機能に関する重要事項
-
-2018 年 1 月現在、この機能については以下の点にご留意ください。
   
 - Outlook アプリのみを使用するユーザーには、キャッシュで有効期限が切れるまで Microsoft 365 パスワードのリセットは強制されません。これは、実際に期限が切れた日から数日経過することがあります。管理者レベルでは、これに対する回避策はありません。
-
-- ユーザーには、X 日後にパスワードの有効期限が切れる旨のメール通知が送られません。この機能は必要ですか? **[ここで投票してください。](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
 
 ## <a name="prevent-last-password-from-being-used-again"></a>最後に使用したパスワードの再使用を禁止する
 
