@@ -17,20 +17,20 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 の高度なメッセージ暗号化を使用して、カスタムブランド化されたテンプレートを使用して電子メールの有効期限を設定することにより、電子メールのセキュリティを拡張します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546161"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769167"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
 
 Office 365 の高度なメッセージの暗号化は、 [microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 (非営利団体の価格)、Office 365 Enterprise E5 (非営利スタッフの価格)、office の365教育用 A5 に含まれています。 Office 365 Advanced Message Encryption が含まれていないサブスクリプションが組織にある場合は、microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格)、または Microsoft 365 E3、Microsoft 365 E3 (非営利スタッフ価格)、または Office の 365 Sku で、Microsoft 365 E5 コンプライアンス SKU アドオンを使用して購入できます。
 
-OME ポータルを使用して暗号化された電子メールにアクセスする外部の受信者に送信するユーザーが電子メールでメッセージの有効期限を使用できます。 受信者が OME ポータルを使用して、組織によって送信される暗号化された電子メールを、Windows Powershell で有効期限を指定するカスタムブランド化テンプレートを使用して表示および返信できるようにします。
+OME ポータルを使用して暗号化された電子メールにアクセスする外部の受信者に送信するユーザーが電子メールでメッセージの有効期限を使用できます。 受信者が OME ポータルを使用して、組織によって送信される暗号化された電子メールを、Windows PowerShell で有効期限を指定するカスタムブランド化テンプレートを使用して表示および返信できるようにします。
 
-O365 全体管理者は、組織の電子メールメッセージの外観をカスタマイズするために会社のブランドを適用するときに、これらの電子メールメッセージの有効期限を指定することもできます。 Office 365 Advanced Message Encryption を使用すると、組織から発信される暗号化された電子メール用に複数のテンプレートを作成できます。 テンプレートを使用すると、受信者がユーザーによって送信されたメールにアクセスできる期間を制御できます。
+Office 365 全体管理者として、会社のブランドを適用して組織の電子メールメッセージの外観をカスタマイズする場合は、これらの電子メールメッセージの有効期限を指定することもできます。 Office 365 Advanced Message Encryption を使用すると、組織から発信される暗号化された電子メール用に複数のテンプレートを作成できます。 テンプレートを使用すると、受信者がユーザーによって送信されたメールにアクセスできる期間を制御できます。
 
 エンドユーザーが有効期限が設定されたメールを受信すると、ユーザーにはラッパーの電子メールの有効期限が表示されます。 ユーザーが期限切れメールを開こうとすると、OME ポータルにエラーが表示されます。
 
@@ -42,11 +42,11 @@ Office 365 Advanced Message Encryption では、カスタムブランドを適�
 
 1. 組織のグローバル管理者のアクセス許可を持つアカウントを使用して、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)します。
 
-2. OMEConfiguration 新しいコマンドレットを実行します。
+2. New-OMEConfiguration コマンドレットを実行します。
 
-     ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
-     ```
+    ```powershell
+    New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+    ```
 
 ここで、
 
