@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: ディレクトリ同期を使用して Microsoft 365 にユーザーをプロビジョニングするための準備方法と、この方法を使用する長期的な利点について説明します。
-ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464242"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773987"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>Prepare for directory synchronization to Microsoft 365 (Microsoft 365 へのディレクトリ同期を準備する)
 
@@ -58,11 +58,11 @@ AD DS を Azure AD テナントと同期する前に、AD DS をクリーンア�
 
 AD DS で、Microsoft 365 ライセンスが割り当てられる各ユーザーアカウントに対して次のクリーンアップタスクを実行します。
 
-1. **ProxyAddresses**属性に、有効な一意の電子メールアドレスを指定します。
+1. **ProxyAddresses** 属性に、有効な一意の電子メールアドレスを指定します。
 
-2. **ProxyAddresses**属性の重複する値を削除します。
+2. **ProxyAddresses** 属性の重複する値を削除します。
 
-3. 可能であれば、ユーザーの**ユーザー**オブジェクトの**userPrincipalName**属性の有効な一意の値を確認してください。 最適な同期処理を行うには、AD DS UPN が Azure AD UPN に一致していることを確認してください。 ユーザーが **userPrincipalName** 属性の値を持っていない場合は、 **ユーザー** オブジェクトに **sAMAccountName** 属性の有効な一意の値が含まれている必要があります。 **UserPrincipalName**属性の重複する値を削除します。
+3. 可能であれば、ユーザーの **ユーザー** オブジェクトの **userPrincipalName** 属性の有効な一意の値を確認してください。 最適な同期処理を行うには、AD DS UPN が Azure AD UPN に一致していることを確認してください。 ユーザーが **userPrincipalName** 属性の値を持っていない場合は、 **ユーザー** オブジェクトに **sAMAccountName** 属性の有効な一意の値が含まれている必要があります。 **UserPrincipalName** 属性の重複する値を削除します。
 
 4. グローバルアドレス一覧 (GAL) を最適に使用するには、AD DS ユーザーアカウントの次の属性の情報が正しいことを確認してください。
 
@@ -135,7 +135,7 @@ AD DS と Microsoft 365 の間のディレクトリ同期を正常に行うに�
   - この属性の値は、ディレクトリ内で一意である必要があります。
   - 無効な文字: [\ "|,/: \< \> + =;? \* ']
   - ユーザーの **sAMAccountName** 属性が無効で、 **userPrincipalName** 属性が有効な場合、ユーザーアカウントは Microsoft 365 で作成されます。
-  - **SAMAccountName**と**userPrincipalName**の両方が無効な場合は、AD DS **userPrincipalName**属性を更新する必要があります。
+  - **SAMAccountName** と **userPrincipalName** の両方が無効な場合は、AD DS **userPrincipalName** 属性を更新する必要があります。
 
 - **sn** (姓)
 
@@ -153,11 +153,11 @@ AD DS と Microsoft 365 の間のディレクトリ同期を正常に行うに�
 
 - **userPrincipalName**
 
-  - **UserPrincipalName**属性は、ユーザー名の後にアットマーク記号 (@) とドメイン名が続く、インターネットスタイルのサインイン形式にする必要があります。たとえば、user@contoso.com のようにします。 すべての簡易メール転送プロトコル (SMTP) アドレスは、電子メールメッセージング標準に準拠している必要があります。
-  - **UserPrincipalName**属性の最大文字数は113です。 アットマーク (@) の前後には、次のように特定の文字数が許可されます。
+  - **UserPrincipalName** 属性は、ユーザー名の後にアットマーク記号 (@) とドメイン名が続く、インターネットスタイルのサインイン形式にする必要があります。たとえば、user@contoso.com のようにします。 すべての簡易メール転送プロトコル (SMTP) アドレスは、電子メールメッセージング標準に準拠している必要があります。
+  - **UserPrincipalName** 属性の最大文字数は113です。 アットマーク (@) の前後には、次のように特定の文字数が許可されます。
   - アットマーク (@) の前にあるユーザー名の最大文字数:64
   - アットマーク記号 (@) の後に続くドメイン名の最大文字数:48
-  - 無効な文字: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] " '
+  - 無効な文字: \% &amp; \* +/=? { } | \< \> ( ) ; : , [ ] "
   - 使用可能な文字: A ~ Z、a ~ z、0 ~ 9、'。 - _ ! # ^ ~
   - ウムラウト、アクセント、ティルダなどのアクセント記号の付いた文字は、無効な文字です。
   - 各 **userPrincipalName** 値には @ 文字が必要です。
@@ -170,9 +170,9 @@ AD DS と Microsoft 365 の間のディレクトリ同期を正常に行うに�
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. userPrincipalName 属性を準備する
 
-Active Directory は、組織内のエンドユーザーが **sAMAccountName** または **userPrincipalName**のいずれかを使用してディレクトリにサインインできるように設計されています。 同様に、エンドユーザーは、職場または学校のアカウントのユーザープリンシパル名 (UPN) を使用して、Microsoft 365 にサインインできます。 ディレクトリ同期では、AD DS 内の同じ UPN を使用して、Azure Active Directory で新しいユーザーを作成しようとしています。 UPN は、電子メールアドレスのように書式設定されます。
+Active Directory は、組織内のエンドユーザーが **sAMAccountName** または **userPrincipalName** のいずれかを使用してディレクトリにサインインできるように設計されています。 同様に、エンドユーザーは、職場または学校のアカウントのユーザープリンシパル名 (UPN) を使用して、Microsoft 365 にサインインできます。 ディレクトリ同期では、AD DS 内の同じ UPN を使用して、Azure Active Directory で新しいユーザーを作成しようとしています。 UPN は、電子メールアドレスのように書式設定されます。
 
-Microsoft 365 では、UPN は電子メールアドレスの生成に使用される既定の属性です。 **UserPrincipalName** (ad DS および Azure ad) と**proxyAddresses**のプライマリ電子メールアドレスは、異なる値に設定するのが簡単です。 複数の値が設定されている場合、管理者とエンドユーザーに混乱が生じることがあります。
+Microsoft 365 では、UPN は電子メールアドレスの生成に使用される既定の属性です。 **UserPrincipalName** (ad DS および Azure ad) と **proxyAddresses** のプライマリ電子メールアドレスは、異なる値に設定するのが簡単です。 複数の値が設定されている場合、管理者とエンドユーザーに混乱が生じることがあります。
 
 これらの属性を調整して混乱を軽減することをお勧めします。 Active Directory フェデレーションサービス (AD FS) 2.0 を使用したシングルサインオンの要件を満たすには、Azure Active Directory と AD DS の Upn が一致し、有効なドメイン名前空間を使用していることを確認する必要があります。
 
