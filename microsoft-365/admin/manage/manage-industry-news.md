@@ -15,28 +15,26 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: お客様の組織からの業界や情報に関する最新のニュースヘッドラインをユーザーに提供します。ニュースサービスを使用して、組織のためにカスタマイズされたニュースフィードを有効にします。
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779180"
+ms.locfileid: "48791824"
 ---
 # <a name="manage-industry-news"></a>業界ニュースを管理する
 
 組織の業界や情報に関する最新のニュースヘッドラインをユーザーに提供するには、 [ニュース](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) サービスを使用して、組織のためにカスタマイズされたニュースフィードを有効にします。Bing ホームページおよび Microsoft Edge の新しいタブページの設定を管理することもできます (エッジ87のリリース以降)。
 
 ## <a name="what-your-users-will-see"></a>ユーザーに表示される内容
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Microsoft 検索業界の更新プログラムのロールアップ":::
  
 Bing ホームページに届くサインインしたユーザーには、自分の組織の個人情報の下にニュースフィードが表示されます。
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Microsoft 検索業界の更新プログラムのロールアップ":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Web からの業界ニュースを含むイメージカルーセルのスクリーンショット":::
 
 また、Microsoft Edge の [新しいタブ] ページで、会社、業界、および社内のニュースまたは個人向けの仕事情報を確認することもできます。 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft 検索業界の更新プログラムのロールアップ":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Web からの業界ニュースを含むイメージカルーセルのスクリーンショット":::
 
 ## <a name="news-settings"></a>ニュースの設定
 
