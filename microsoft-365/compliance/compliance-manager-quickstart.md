@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンスマネージャーのクイックスタートガイドを使用すると、コンプライアンスマネージャーの理解、設定、および使用についての移行に役立てることができます。
-ms.openlocfilehash: 9fd86550652860b1c89be414f4c0b55c28a817e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204441"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791793"
 ---
-# <a name="compliance-manager-quickstart"></a>コンプライアンスマネージャーのクイックスタート
+# <a name="compliance-manager-quickstart"></a>コンプライアンスマネージャー用クイックスタート
 
 **この記事の内容** このクイックスタートガイドを使用すると、Microsoft コンプライアンスマネージャーを使用して、組織の規制、ポリシー、標準への準拠を管理することが容易になります。
 
@@ -39,7 +39,7 @@ ms.locfileid: "48204441"
 
 - [コンプライアンススコアを理解する](compliance-manager.md#understanding-your-compliance-score)
 - [主要な要素の概要: 統制、評価、テンプレート、改善アクション](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [コンプライアンスマネージャーダッシュボードを理解する](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [コンプライアンスマネージャーダッシュボードを理解する](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [ダッシュボードビューにフィルターを適用する](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [改善アクションについて](compliance-manager-setup.md#improvement-actions-page)
 - [評価を理解する](compliance-manager.md#assessments)
@@ -55,7 +55,7 @@ ms.locfileid: "48204441"
 
 ## <a name="scaling-up-use-advanced-functionality-to-meet-your-custom-needs"></a>スケールアップ: 高度な機能を使用してカスタムのニーズを満たす
 
-コンプライアンスマネージャーの評価の管理に慣れている場合は、テンプレートを使用して、コンプライアンスマネージャーの評価を独自のアクションやコントロールで変更することができます。 独自のカスタム評価を作成することもできます。 カスタム評価は、次のような場合に役立ちます。
+コンプライアンスマネージャーでの評価を快適に管理するために、テンプレートを操作して、コンプライアンスマネージャーの評価を独自のアクションやコントロールで変更することができます。 独自のカスタム評価を作成することもできます。 カスタム評価は、次のような場合に役立ちます。
 
 - サードパーティ製のアプリやサービス、社内アプリケーション、その他のアセットなど、Microsoft 以外の365製品のコンプライアンスを管理します。
 - 独自のカスタムまたはビジネス固有のコンプライアンスコントロールを管理する。

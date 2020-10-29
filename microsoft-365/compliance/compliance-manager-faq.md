@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーに関してよく寄せられる質問への回答を検索します。これにより、組織はリスク評価を簡略化および自動化できます。
-ms.openlocfilehash: 3e1b6cdbcafd0cb4af4545cb258dab2ce082a2d8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204449"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791783"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>コンプライアンスマネージャーのよく寄せられる質問
 
@@ -27,7 +27,7 @@ ms.locfileid: "48204449"
 
 コンプライアンスマネージャーは、1つのソリューションだけで済みます。 このセクションでは、以下の基本的な概要から始まる移行手順について説明します。 また、次のセクションのいずれかに直接移動すると役立つ場合があります。
 
-- [組織は、Microsoft Service Trust Portal にあるコンプライアンスマネージャー (クラシック版またはパブリックプレビュー版) を主に使用していました。](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [組織は、Microsoft Service Trust Portal にあるコンプライアンスマネージャー (クラシック版またはパブリックプレビュー版) を主に使用していました。](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [お客様の組織では、Microsoft 365 コンプライアンスセンターにある、主にコンプライアンススコア (パブリックプレビュー) を使用していました。](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -41,7 +41,7 @@ Microsoft 365 コンプライアンスセンター (年 9 2020 月) のコンプ
 
 コンプライアンスマネージャーの GA リリースの新機能の詳細については、この [ブログ投稿](https://aka.ms/compliancemanager/GAblog) をお読みください。
 
-#### <a name="your-organization-regularly-used-compliance-manger-in-the-service-trust-portal"></a>組織がサービス信頼ポータルで定期的にコンプライアンスマネージャーを使用している
+#### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>組織がサービス信頼ポータルで定期的にコンプライアンスマネージャーを使用している
 
 Service Trust Portal でコンプライアンスマネージャーを使用していた場合、組織のすべてのデータは、Microsoft 365 コンプライアンスセンターのコンプライアンスマネージャーに現在存在して https://compliance.microsoft.com/compliancemanager います。 コンプライアンスマネージャーが新しい場所で作業を再開するために必要な操作はありません。以前の場所にあるブックマークを更新する方法はありません。 評価とその他のデータはすべてお客様に提供されています。
 
@@ -51,7 +51,7 @@ Service Trust Portal でコンプライアンスマネージャーを使用し�
 
 役に立つリソースを以下に示します。
 
-- [新しいコンプライアンスマネージャーの経験を理解する](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [新しいコンプライアンスマネージャーの経験について理解を深める](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [新しいホームでコンプライアンスマネージャーのアクセス許可とその他のセットアップ情報を検索する](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [Microsoft 365 コンプライアンスセンターの詳細情報](microsoft-365-compliance-center.md)
 

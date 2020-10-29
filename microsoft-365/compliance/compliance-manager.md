@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーを使用すると、組織はリスク評価を簡略化および自動化し、リスクに対処するための推奨される処置を提案します。
-ms.openlocfilehash: d26d187277b021e278667b6e0ae19a0772b34f03
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368130"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791809"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンスマネージャー
 
@@ -83,9 +83,9 @@ ms.locfileid: "48368130"
 
 コンプライアンスマネージャーは、次の種類のコントロールを追跡します。
 
-1. **Microsoft managed controls**: microsoft クラウドサービスのコントロール (microsoft が実装する責任者)
-2. 顧客管理コントロールと呼ばれることもあり**ます。これらのコントロールは**、組織によって実装および管理されます。
-3. **共有コントロール**: これらのコントロールは、組織と Microsoft 共有の両方が責任を負うことになります。
+1. **Microsoft managed controls** : microsoft クラウドサービスのコントロール (microsoft が実装する責任者)
+2. 顧客管理コントロールと呼ばれることもあり **ます。これらのコントロールは** 、組織によって実装および管理されます。
+3. **共有コントロール** : これらのコントロールは、組織と Microsoft 共有の両方が責任を負うことになります。
 
 ##### <a name="learn-more"></a>詳細情報
 
@@ -99,11 +99,11 @@ ms.locfileid: "48368130"
 
 評価にはいくつかのコンポーネントがあります。
 
-- **スコープ内サービス**: 評価に適用可能な Microsoft サービスの特定のセット
-- **Microsoft managed controls**: microsoft がお客様の代わりに実装する microsoft クラウドサービスのコントロール
-- 顧客管理コントロールと呼ばれることもあり**ます。これらのコントロールは**、組織によって実装および管理されます。
-- **共有コントロール**: これらのコントロールは、組織と Microsoft 共有の両方が責任を負うことになります。
-- **評価スコア**: 組織で管理されている、Microsoft によって管理されている評価内のアクションからの総ポイントを実現するための進行状況を示します。
+- **スコープ内サービス** : 評価に適用可能な Microsoft サービスの特定のセット
+- **Microsoft managed controls** : microsoft がお客様の代わりに実装する microsoft クラウドサービスのコントロール
+- 顧客管理コントロールと呼ばれることもあり **ます。これらのコントロールは** 、組織によって実装および管理されます。
+- **共有コントロール** : これらのコントロールは、組織と Microsoft 共有の両方が責任を負うことになります。
+- **評価スコア** : 組織で管理されている、Microsoft によって管理されている評価内のアクションからの総ポイントを実現するための進行状況を示します。
 
 評価を作成する場合は、それらをグループに割り当てます。 組織にとって最も論理的な方法でグループを構成できます。 たとえば、監査年、地域、ソリューション、組織内のチーム、またはその他の方法で評価をグループ化することができます。 グループを作成すると、 [コンプライアンスマネージャーダッシュボードをフィルター処理](compliance-manager-setup.md#filtering-your-dashboard-view) して、1つまたは複数のグループでスコアを表示することができます。
 
