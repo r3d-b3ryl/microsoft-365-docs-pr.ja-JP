@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 生産性スコアによるプライバシーの保護
-ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 62ff3a9f0434421cbe1115f13376e92bd9f3cac9
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770037"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794979"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生産性スコアのプライバシー制御
 
@@ -55,7 +55,21 @@ ms.locfileid: "48770037"
 
 変更の管理と採用を担当するすべてのユーザーにレポート閲覧者の役割を割り当てます。 この役割により、テナントレベルの指標とユーザーごとのレベルの詳細を含む完全な環境にアクセスできるようになります。
 
-ユーザーエクスペリエンスレポートには、カテゴリ詳細ページごとのユーザーごとのアクティビティの詳細が含まれています。 ユーザーエクスペリエンスの集約指標のみにアクセスできるようにするには、利用状況の概要レポート閲覧者 (2020 年10月10日開始) と呼ばれるカスタムロールを割り当てます。
+ユーザーエクスペリエンスレポートには、カテゴリ詳細ページごとのユーザーごとのアクティビティの詳細が含まれています。 ユーザーエクスペリエンスの集約指標のみにアクセスできるようにするには、利用状況の概要レポート閲覧者 (2020 年10月10日開始) と呼ばれるカスタムロールを割り当てます。 この役割は、11/15/2020 の Microsoft 管理センターから割り当てが可能になるまで、PowerShell コマンドレットを通じて割り当てる必要があります。
+
+PowerShell で利用状況の概要レポートの閲覧者の役割を割り当てるには、次のようにします。
+
+- 次の PowerShell を実行します。
+
+```powershell
+Connect-AzureAD
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
+
+</br>
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="生産性レポートの [通信] ページ":::
 

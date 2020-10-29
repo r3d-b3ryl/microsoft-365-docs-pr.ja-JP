@@ -9,18 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c574be6d171a230479d8b6c96e2e0a1dec8a87ac
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656142"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795107"
 ---
 # <a name="readiness-assessment-tool"></a>準備状況評価ツール
 
 Microsoft マネージドデスクトップに登録するときに、よりスムーズに実行できるようにするには、事前に設定しなければならない設定やその他のパラメーターがいくつかあります。 このツールを使用すると、これらの設定を確認して、適切でないものを修正するための詳細な手順を得ることができます。
 
-このツールは、microsoft のマネージドデスクトップで機能することを確認するために、Microsoft エンドポイントマネージャー (特に、Microsoft Intune)、Azure Active Directory (Azure AD)、および Microsoft 365 の設定をチェックします。 Microsoft マネージドデスクトップは、前回 Azure AD 組織 (テナント) でチェックを実行してから12か月間、これらのチェックに関連付けられているデータを保持します。  12か月を過ぎると、そのフォームは重複して識別された形式で保持されます。  収集するデータを削除することもできます。
+このツールは、microsoft のマネージドデスクトップで機能することを確認するために、Microsoft エンドポイントマネージャー (特に、Microsoft Intune)、Azure Active Directory (Azure AD)、および Microsoft 365 の設定をチェックします。 Microsoft マネージドデスクトップは、前回 Azure AD 組織 (テナント) でチェックを実行してから12か月間、これらのチェックに関連付けられているデータを保持します。 12か月を過ぎると、そのフォームは重複して識別された形式で保持されます。  収集するデータを削除することもできます。
+
+少なくとも Intune 管理者の役割を持つすべてのユーザーはこのツールを実行できますが、3つのチェック ([証明書コネクタ](readiness-assessment-fix.md#certificate-connectors)、 [多要素認証](readiness-assessment-fix.md#multi-factor-authentication)、および [セルフサービスのパスワードリセット](readiness-assessment-fix.md#self-service-password-reset)) には追加のアクセス許可が必要です。
  
 評価ツールは、次の項目をチェックします。
 
@@ -68,11 +70,12 @@ Microsoft マネージドデスクトップに登録するときに、よりス�
 |OneDrive for Business     | OneDrive for Business がサポートされない設定を使用しているかどうかを確認します。        |
 
 
-チェックが行われるたびに、ツールは次の3つの結果のいずれかを報告します。
+チェックが行われるたびに、ツールは次の4つの結果のいずれかを報告します。
 
 
 |結果  |意味  |
 |---------|---------|
 |準備完了     | 登録を完了する前に、何もする必要はありません。        |
 |アドバイザリ    | 登録とユーザーのための最適な手順については、このツールの手順を実行してください。 登録は完了 *でき* ますが、最初のデバイスを展開する前に、これらの問題を修正する必要があります。        |
-|使用不可能 | これらの問題を修正しない場合、*登録は失敗*します。 ツールの手順に従って解決します。        |
+|使用不可能 | これらの問題を修正しない場合、 *登録は失敗* します。 ツールの手順に従って解決します。        |
+|Error | 使用している Azure Active Director (AD) の役割には、このチェックを実行するための十分な権限がありません。 |

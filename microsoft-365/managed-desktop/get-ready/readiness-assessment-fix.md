@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c9638dc7b8c6d095b87cf81114f3812c8362597
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656141"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795119"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールによって検出された問題を修正します。
 
-チェックが行われるたびに、ツールは次の3つの結果のいずれかを報告します。
+チェックが行われるたびに、ツールは次の4つの結果のいずれかを報告します。
 
 
 |結果  |意味  |
@@ -26,6 +26,7 @@ ms.locfileid: "48656141"
 |準備完了     | 登録を完了する前にアクションを実行する必要はありません。        |
 |アドバイザリ    | このツールまたはこの記事の手順に従って、登録とユーザーのための最適な操作を行います。 登録は完了 *でき* ますが、最初のデバイスを展開する前に、これらの問題を修正する必要があります。        |
 |使用不可能 | *これらの問題を修正しない場合、登録は失敗します。* このツールまたはこの記事に記載されている手順に従って解決してください。        |
+|Error | 使用している Azure Active Director (AD) の役割には、このチェックを実行するための十分な権限がありません。 |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune の設定
 
@@ -70,7 +71,17 @@ Azure AD 組織の条件付きアクセスポリシーで、Microsoft 管理デ�
 
 **アドバイザリ**
 
-**モダンワークプレースサービスアカウント**の Azure AD グループを除外している条件付きアクセスポリシーがあることを確認してください。 手順については、「 [条件付きアクセスを調整](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)する」を参照してください。 **モダン Workplace Service Accounts** Azure AD group は、登録時にサービスに対して作成する動的なグループです。 登録後にこのグループを除外するには、戻る必要があります。 これらのサービスアカウントの詳細については、「 [標準の運用手順](../service-description/operations-and-monitoring.md#standard-operating-procedures)」を参照してください。
+**モダンワークプレースサービスアカウント** の Azure AD グループを除外している条件付きアクセスポリシーがあることを確認してください。 手順については、「 [条件付きアクセスを調整](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)する」を参照してください。 **モダン Workplace Service Accounts** Azure AD group は、登録時にサービスに対して作成する動的なグループです。 登録後にこのグループを除外するには、戻る必要があります。 これらのサービスアカウントの詳細については、「 [標準の運用手順](../service-description/operations-and-monitoring.md#standard-operating-procedures)」を参照してください。
+
+**Error**
+
+Intune 管理者の役割には、このチェックに十分な権限がありません。 このチェックを実行するには、次のいずれかの Azure AD 役割が割り当てられている必要もあります。
+
+- セキュリティ閲覧者
+- セキュリティ管理者
+- 条件付きアクセス管理者
+- グローバル閲覧者
+- デバイス管理者
 
 
 ### <a name="device-compliance-policies"></a>デバイスコンプライアンスポリシー
@@ -107,7 +118,7 @@ Microsoft マネージドデスクトップデバイスでは、Intune への登
 
 **使用不可能**
 
-「 [登録の制限を設定](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) する」の手順に従って、設定を [ **許可**] に変更します。
+「 [登録の制限を設定](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) する」の手順に従って、設定を [ **許可** ] に変更します。
 
 
 ### <a name="enrollment-status-page"></a>登録の状態ページ
@@ -116,7 +127,7 @@ Microsoft マネージドデスクトップデバイスでは、Intune への登
 
 **使用不可能**
 
-**アプリケーションとプロファイルの構成の進行状況を示す**ように、ESP の既定のプロファイルが設定されている。 [ [登録の状態の設定] ページ](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)の手順に従って、この設定を無効にします。
+**アプリケーションとプロファイルの構成の進行状況を示す** ように、ESP の既定のプロファイルが設定されている。 [ [登録の状態の設定] ページ](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)の手順に従って、この設定を無効にします。
 
 **アドバイザリ**
 
@@ -128,7 +139,7 @@ Azure AD 組織の Windows 10 デバイスは、自動的に Intune に登録す
 
 **使用不可能**
 
-Azure AD 組織のユーザーは、Microsoft Intune に自動的に登録されません。 MDM ユーザースコープを **一部** または **すべて**に変更します。 を選びます。 何らかの * * 登録後に戻ってきて、**グループ**の**モダンワークプレースすべて**の Azure AD グループを選択します。
+Azure AD 組織のユーザーは、Microsoft Intune に自動的に登録されません。 MDM ユーザースコープを **一部** または **すべて** に変更します。 **一部** を選択した場合は、登録した後に戻って、 **グループ** の **モダンワークプレースすべて** の Azure AD グループを選択します。
 
 
 ### <a name="microsoft-store-for-business"></a>ビジネス向け Microsoft Store
@@ -150,8 +161,17 @@ Microsoft Store for Business が有効になっていないか、Intune と同�
 
 **アドバイザリ**
 
-MFA を必要とする条件付きアクセスポリシーが、 **モダンワークプレースすべて** の Azure AD グループを除外していることを確認してください。 詳細については、「 [条件付きアクセスポリシー](#conditional-access-policies) と [条件付きアクセス: すべてのユーザーに MFA を必須にする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)」を参照してください。 **モダンワークプレースすべて**の Azure AD グループは、Microsoft マネージドデスクトップに登録するときに作成する動的なグループです。そのため、登録後にこのグループを除外する必要があります。
+MFA を必要とする条件付きアクセスポリシーが、 **モダンワークプレースすべて** の Azure AD グループを除外していることを確認してください。 詳細については、「 [条件付きアクセスポリシー](#conditional-access-policies) と [条件付きアクセス: すべてのユーザーに MFA を必須にする](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)」を参照してください。 **モダンワークプレースすべて** の Azure AD グループは、Microsoft マネージドデスクトップに登録するときに作成する動的なグループです。そのため、登録後にこのグループを除外する必要があります。
 
+**Error**
+
+Intune 管理者の役割には、このチェックに十分な権限がありません。 このチェックを実行するには、次のいずれかの Azure AD 役割が割り当てられている必要もあります。
+
+- セキュリティ閲覧者
+- セキュリティ管理者
+- 条件付きアクセス管理者
+- グローバル閲覧者
+- デバイス管理者
 
 
 ### <a name="powershell-scripts"></a>PowerShell スクリプト
@@ -185,7 +205,7 @@ Azure AD 組織が配置されている1つ以上の国が Microsoft マネー�
 
 **アドバイザリ**
 
-Microsoft マネージドデスクトップデバイスを除外しているセキュリティベースラインポリシーがあることを確認してください。 手順については、「 [セキュリティ基準を使用して Intune で Windows 10 デバイスを構成する](https://docs.microsoft.com/mem/intune/protect/security-baselines)」を参照してください。 **モダン Workplace Devices-すべて**の Azure AD グループは、Microsoft マネージドデスクトップに登録するときに作成する動的グループであるため、登録後にこのグループを除外する必要があります。
+Microsoft マネージドデスクトップデバイスを除外しているセキュリティベースラインポリシーがあることを確認してください。 手順については、「 [セキュリティ基準を使用して Intune で Windows 10 デバイスを構成する](https://docs.microsoft.com/mem/intune/protect/security-baselines)」を参照してください。 **モダン Workplace Devices-すべて** の Azure AD グループは、Microsoft マネージドデスクトップに登録するときに作成する動的グループであるため、登録後にこのグループを除外する必要があります。
 
 
 ### <a name="windows-apps"></a>Windows アプリ
@@ -222,7 +242,7 @@ Intune の "Windows 10 update ring" ポリシーで、Microsoft マネージド�
 
 **アドバイザリ**
 
-**モダンワークプレースのすべて**の Azure AD グループを除外しているすべての更新リングポリシーを確認してください。 手順については、「 [Intune で Windows 10 ソフトウェアの更新プログラムを管理](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)する」を参照してください。 **モダン Workplace Devices-すべて**の Azure AD グループは、Microsoft マネージドデスクトップに登録するときに作成する動的グループであるため、登録後にこのグループを除外する必要があります。
+**モダンワークプレースのすべて** の Azure AD グループを除外しているすべての更新リングポリシーを確認してください。 手順については、「 [Intune で Windows 10 ソフトウェアの更新プログラムを管理](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)する」を参照してください。 **モダン Workplace Devices-すべて** の Azure AD グループは、Microsoft マネージドデスクトップに登録するときに作成する動的グループであるため、登録後にこのグループを除外する必要があります。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
@@ -234,7 +254,7 @@ Intune の "Windows 10 update ring" ポリシーで、Microsoft マネージド�
 
 **アドバイザリ**
 
-**AllowAdHocSubscriptions**が**True**に設定されていることを確認します。 それ以外の場合、エンタープライズ状態ローミングは機能しない可能性があります。 詳細については、「 [set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)」を参照してください。
+**AllowAdHocSubscriptions** が **True** に設定されていることを確認します。 それ以外の場合、エンタープライズ状態ローミングは機能しない可能性があります。 詳細については、「 [set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)」を参照してください。
 
 
 ### <a name="enterprise-state-roaming"></a>Enterprise State Roaming
@@ -297,6 +317,11 @@ Azure Active Directory のセキュリティの既定値を使用すると、Mic
 **アドバイザリ**
 
 [SSPR] **選択** した設定に、Microsoft Managed Desktop デバイスが含まれていることを確認してください。
+
+**Error**
+
+Intune 管理者の役割には、このチェックに十分な権限がありません。 このチェックを実行するには、レポートリーダー Azure AD 役割が割り当てられている必要もあります。
+
 
 ### <a name="standard-user-role"></a>標準ユーザーの役割
 
