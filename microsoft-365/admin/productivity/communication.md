@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: コミュニケーションについてのユーザーの生産性スコアの詳細。
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795038"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804657"
 ---
 # <a name="communication--people-experiences"></a>コミュニケーション–ユーザーエクスペリエンス
 
@@ -160,3 +159,12 @@ Microsoft 365 では、複数のモードを提供することにより、すべ
 - **電子メールで @mention 使用された日数:** 過去28日以内に @mention が含まれている電子メールをユーザーが送信した日数。
 
 [エクスポートエクスポート **] ボタン** のリンクを選択して、レポートデータを Excel の .csv ファイルにエクスポートすることもできます。 [ **列の選択]** をクリックした後で、必要な列を選択することで、ビュー内の列のセットをカスタマイズできることに注意してください。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Microsoft 365 アプリの正常性–テクノロジエクスペリエンス](apps-health.md) (記事) \
+[コンテンツコラボレーション–ユーザーエクスペリエンス](content-collaboration.md) (記事) \
+[会議– People エクスペリエンス](meetings.md) (記事) \
+[モビリティ–ユーザーエクスペリエンス](mobility.md) (記事) \
+[生産性スコアのプライバシー統制](privacy.md) (記事) \
+[チームワーク–ユーザーエクスペリエンス](teamwork.md) (記事)

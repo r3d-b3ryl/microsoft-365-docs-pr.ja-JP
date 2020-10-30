@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 apps health-テクノロジエクスペリエンスの生産性スコアの詳細。
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795456"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804771"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 アプリの正常性–テクノロジエクスペリエンス
 
@@ -112,3 +111,12 @@ Microsoft 365 アプリの正常性スコアは、推奨チャネルおよび最
 - **状態:**   Microsoft 365 アプリは、現在のチャネルとバージョンに基づくデバイスの状態をサポートしています。
 - **バージョン:**  デバイス上の現在の Microsoft 365 アプリのバージョン。
 - **デバイス数:**  デバイスの数。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[コミュニケーション–ユーザーエクスペリエンス](communication.md) (記事) \
+[コンテンツコラボレーション–ユーザーエクスペリエンス](content-collaboration.md) (記事) \
+[会議– People エクスペリエンス](meetings.md) (記事) \
+[モビリティ–ユーザーエクスペリエンス](mobility.md) (記事) \
+[生産性スコアのプライバシー統制](privacy.md) (記事) \
+[チームワーク–ユーザーエクスペリエンス](teamwork.md) (記事)

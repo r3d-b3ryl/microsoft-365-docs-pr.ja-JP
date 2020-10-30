@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: コンテンツコラボレーションの詳細-ユーザーが生産性スコアを感じます。
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795526"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804599"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツコラボレーション–ユーザーエクスペリエンス
 
@@ -202,4 +201,13 @@ Microsoft OneDrive for Business および SharePoint を使用すると、ユー
 - 外部で共有している **ファイル:** OneDrive または SharePoint 上のオンラインファイルの数。過去28日以内に組織外の他のユーザーと共有しているユーザー。
 - **メール添付ファイル:** ユーザーが最近28日以内に添付ファイルとして電子メールを送信した (OneDrive または SharePoint にはない) かどうかを示すブール値。
 - **メールオンライン添付ファイル:** ユーザーが過去28日間の添付ファイルとしてオンラインファイル (OneDrive または SharePoint 上) へのリンクを電子メールで送信したかどうかを示すブール値。
-- **オンラインファイルへのリンクを埋め込む:** 過去28日以内に電子メールの本文に埋め込まれたオンラインファイル (OneDrive または SharePoint の場合) へのリンクを電子メールで送信したユーザーを示すブール値
+- **オンラインファイルへのリンクを埋め込む:** ユーザーが最近28日以内に電子メール本文に埋め込まれたオンラインファイル (OneDrive または SharePoint 上) へのリンクを電子メールで送信したかどうかを示すブール値。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Microsoft 365 アプリの正常性–テクノロジエクスペリエンス](apps-health.md) (記事) \
+[コミュニケーション–ユーザーエクスペリエンス](communication.md) (記事) \
+[会議– People エクスペリエンス](meetings.md) (記事) \
+[モビリティ–ユーザーエクスペリエンス](mobility.md) (記事) \
+[生産性スコアのプライバシー統制](privacy.md) (記事) \
+[チームワーク–ユーザーエクスペリエンス](teamwork.md) (記事)

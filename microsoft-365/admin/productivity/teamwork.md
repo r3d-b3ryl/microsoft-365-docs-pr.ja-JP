@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: チームワークの詳細。ユーザーの生産性スコアが発生します。
-ms.openlocfilehash: d76447a187003aa3d3e87ec293cf4550ced2fc74
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: d7edd5685c8e818e08faf4ac227f3eb1a416c94c
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795475"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804795"
 ---
 # <a name="teamwork--people-experiences"></a>チームワーク–ユーザーエクスペリエンス
 
@@ -193,3 +192,12 @@ ms.locfileid: "48795475"
 - チームワークは、組織内のユーザーの契約を測定します。 外部メンバーのアクティビティを取得&#39;ことはありません。
 - チームワークに含まれるチャネルメッセージには、Microsoft Teams モバイルクライアント経由で送信されるメッセージは含まれません。
 - 解決のために作業しているコミュニケーションカテゴリとチームワークカテゴリ間で、電子メール指標とチャネルメッセージの間に軽微な違いがある可能性があります。
+
+## <a name="related-content"></a>関連コンテンツ
+
+[Microsoft 365 アプリの正常性–テクノロジエクスペリエンス](apps-health.md) (記事) \
+[コミュニケーション–ユーザーエクスペリエンス](communication.md) (記事) \
+[コンテンツコラボレーション–ユーザーエクスペリエンス](content-collaboration.md) (記事) \
+[会議– People エクスペリエンス](meetings.md) (記事) \
+[モビリティ–ユーザーエクスペリエンス](mobility.md) (記事) \
+[生産性スコアのプライバシー統制](privacy.md) (記事)
