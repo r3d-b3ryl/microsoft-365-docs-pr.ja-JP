@@ -20,12 +20,12 @@ description: 'さまざまな地域の Microsoft 365 for business サブスク�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464098"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806602"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -99,21 +99,21 @@ Microsoft 365 製品とサービスを購入した場合、支払う税額は、
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
 
-欧州連合で Microsoft 365 サービスを購入すると、この購入は Value-Added 税 (VAT) の対象となります。
+EMEA 地域で Microsoft 365 services を購入すると、この購入は Value-Added 税 (VAT) の対象となる場合があります。
   
-- 欧州連合のメンバーの状態にあり、有効なローカル VAT ID を提供していない場合、Microsoft アイルランドの Operations Ltd. は、お客様のアカウントが設定されている請求国に基づいて現在のローカル VAT レートを適用します。
+- 欧州連合のメンバー状態、アルメニア、ベラルーシ、ノルウェー、トルコ、またはアラブ首長国連邦の場合、有効なローカル VAT ID が提供されていない場合、Microsoft アイルランドの Operations Ltd. は、自分のアカウントが設定されている請求国に基づいて現在のローカル VAT レートを適用します。
 
-- 購入者がスイスまたはリヒテンシュタインに所在している場合は、VAT ID 提示の有無にかかわらず、その時点のスイスの VAT 税率が適用されます。
+- リヒテンシュタイン、ロシア、セルビア、南アフリカ、またはスイスに住んでいる場合は、vat ID を提供するかどうかにかかわらず、VAT が適用されます。
 
-- 通常、欧州連合とスイス/リヒテンシュタインの外部にある EMEA 国に居住している場合、VAT は Microsoft アイルランドの Operations Ltd. によって請求されません。
-
-- Microsoft が購入者の VAT ID を確認できるのは、その ID が VAT Information Exchange System (VIES) で確認できる状態である場合に限られます。 VAT ID を確認できない場合は、最寄りの税務当局にお問い合わせください。
+- EU のお客様の場合、VAT ID を検証するには、その前に vat 情報交換システム (VIES) で検証できるようにする必要があります。 VAT ID を確認できない場合は、最寄りの税務当局にお問い合わせください。
 
 次の場合には、VAT ゼロ格付けに該当する場合があります。
   
 - **欧州連合のメンバーの状態がアイルランドの外にある場合:** 有効なローカル VAT ID を指定できます。 これにより、Microsoft アイルランド運用 Ltd. がトランザクションを VAT 0 rate することができます。 ただし、地域の VAT 会計義務がある場合があります。 問題がある場合は、納税 advisers にご確認ください。 手順については、「 [VAT ID を追加する](#add-your-vat-id)」を参照してください。
 
 - **アイルランドにいて、関連する有効な VAT 免税資格を持っている。** Microsoft アイルランド運用 Ltd. は、VAT からのトランザクションを免除する資格がある場合があります。 指定しない場合、Microsoft アイルランドの運用 Ltd. は、VAT ID を指定するかどうかにかかわらず、現在のアイルランド VAT レートを適用します。
+
+- アルメニア語、ベラルーシ語、 **ノルウェー語、トルコ語、またはアラブ首長国連邦で使用しています。** ローカルの VAT ID を提供することができます。 これにより、Microsoft アイルランド運用 Ltd. はトランザクションを税率0にします。 ただし、地域の VAT 会計義務がある場合があります。ご質問がある場合は、納税 advisers にご確認ください。 手順については、「 [VAT ID を追加する](#add-your-vat-id)」を参照してください。
 
 ## <a name="asia-pacific-countries-apac"></a>アジア太平洋地域 (APAC)
 
@@ -135,17 +135,17 @@ Microsoft Corporation ([請求書を参照](view-your-bill-or-invoice.md)) に�
 
 ## <a name="add-your-vat-id"></a>VAT ID を追加する
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-2. [ **製品** ] タブで、更新するサブスクリプションを選択します。
-3. [サブスクリプションの詳細] ページの [ **サービス利用アドレス** ] セクションで、[ **サービス利用状況のアドレスの編集**] を選択します。
-4. [ **サービス利用状況のアドレスの編集** ] ウィンドウの [ **vat 番号** ] ボックスに、接頭辞を含む、スペースを含まない vat ID を入力します。
-5. [**保存**] を選択します。
+1. 管理センターで、 **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+2. **[製品]** タブで、更新するサブスクリプションを選択します。
+3. [サブスクリプションの詳細] ページの **[サービスの利用先住所]** セクションで、 **[サービスの利用先住所の編集]** を選択します。
+4. [ **サービス使用法のアドレスの編集** ] ウィンドウの [ **vat 番号** ] ボックスに、プレフィックスとスペースを含めずに、vat ID を入力します。
+5. [ **保存** ] を選択します。
 
 ## <a name="how-taxes-are-calculated"></a>税の計算方法
 
 売上税は、単価に対して計算されてから集計されます。
 
-例:
+以下に例を示します。
 
 >*(単価 X 税率)X 数量 = 総売上税*
 

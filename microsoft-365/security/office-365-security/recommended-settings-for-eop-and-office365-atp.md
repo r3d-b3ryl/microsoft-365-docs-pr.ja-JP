@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) と Advanced Threat Protection (ATP) のセキュリティ設定のベストプラクティスについて 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 Advanced Threat Protection (ATP) も使用している場合、どのようなエクストラを利用できますか?
-ms.openlocfilehash: fd2d680e093289aa5fc2dbcac127e35caf50098b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 4afd662be28c047d5f738dc0f70f0254e7a7a83f
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430659"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806774"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP および Office 365 の ATP セキュリティに関する推奨設定
 
@@ -30,11 +30,12 @@ ms.locfileid: "48430659"
 
 **Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のある電子メールが従業員の受信トレイに届かないようにするために使用します。 しかし、毎日新しい高度な攻撃が発生すると、多くの場合、保護が強化されます。 **Office 365 Advanced Threat Protection (ATP)** ATP プラン1または ATP Plan 2 には、管理者によるセキュリティ、統制、調査の層をさらに強化する追加機能が含まれています。
 
-セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP と Office 365 ATP には、 **標準** と **Strict**の2つのセキュリティレベルがあります。 お客様の環境とニーズはそれぞれ異なりますが、これらのレベルのフィルター処理によって、ほとんどの状況で、不要なメールが従業員の受信トレイに到達するのを防ぐことができると考えられます。
+セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP と Office 365 ATP には、 **標準** と **Strict** の2つのセキュリティレベルがあります。 お客様の環境とニーズはそれぞれ異なりますが、これらのレベルのフィルター処理によって、ほとんどの状況で、不要なメールが従業員の受信トレイに到達するのを防ぐことができると考えられます。
 
 標準設定または厳密な設定をユーザーに自動的に適用するには、「 [EOP And Office 365 ATP」の「事前にセキュリティポリシー](preset-security-policies.md)を設定する」を参照してください。
 
-**注**: フィルター処理を正しく動作させるには、メールボックスで迷惑メールルールを有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合は、それをチェックする必要があります。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
+> [!NOTE]
+> フィルター処理を正しく動作させるには、メールボックスで迷惑メールルールを有効にする必要があります。 これは既定で有効になっていますが、フィルターが機能していないように見える場合は、それをチェックする必要があります。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
 この記事では、ユーザーを保護するための既定の設定と、推奨される標準および厳密な設定について説明します。
 
@@ -62,7 +63,7 @@ ms.locfileid: "48430659"
 |検疫の保存期間 <br/><br/> _QuarantineRetentionPeriod_|15 日|30 日間|30 日間||
 |**安全性に関するヒント** <br/><br/> _InlineSafetyTipsEnabled_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |許可された送信者 <br/><br/> _AllowedSenders_|なし|なし|なし||
-|許可される送信者ドメイン <br/><br/> _AllowedSenderDomains_|なし|なし|なし|許可された送信者の一覧に自分が所有する (_承認済みドメイン_) ドメインを追加することは、非常に悪い考えです。 攻撃者は、他の方法ではフィルターを適用しない電子メールを送信することができます。 <br/><br/> [**スパム対策設定**] ページの [セキュリティ & コンプライアンスセンター] で[スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の電子メールドメインにある送信者の電子メールアドレスをスプーフィングしている、または外部ドメインの送信者の電子メールアドレスをスプーフィングしているすべての送信者を確認します。|
+|許可される送信者ドメイン <br/><br/> _AllowedSenderDomains_|なし|なし|なし|許可された送信者の一覧にドメインを追加するのは、非常にわかりません。 攻撃者は、他の方法ではフィルターを適用しない電子メールを送信することができます。 <br/><br/> [ **スパム対策設定** ] ページの [セキュリティ & コンプライアンスセンター] で [スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の電子メールドメインにある送信者の電子メールアドレスをスプーフィングしている、または外部ドメインの送信者の電子メールアドレスをスプーフィングしているすべての送信者を確認します。|
 |受信拒否リスト <br/><br/> _BlockedSenders_|なし|なし|なし||
 |受信拒否された送信者ドメイン <br/><br/> _BlockedSenderDomains_|なし|なし|なし||
 |**[エンド ユーザーのスパム通知を有効にする]**  このポリシーでエンド ユーザーのスパム通知を有効にするには、このチェック ボックスをオンにします。 <br/><br/> _EnableEndUserSpamNotifications_|無効 <br/><br/> `$false`|有効 <br/><br/> `$true`|有効 <br/><br/> `$true`||
@@ -74,27 +75,27 @@ ms.locfileid: "48430659"
 
 使用されなくなっているスパム対策ポリシーには、他にもいくつかの高度なスパムフィルター (ASF) 設定があります。 これらの機能の減価償却のタイムラインの詳細については、この記事の外部に連絡してください。
 
-**標準**レベルと**厳密**なレベルの両方で、これらの ASF 設定を**オフ**にすることをお勧めします。 ASF 設定の詳細については、「 [Office 365 の高度なスパムフィルター (ASF) 設定](advanced-spam-filtering-asf-options.md)」を参照してください。
+**標準** レベルと **厳密** なレベルの両方で、これらの ASF 設定を **オフ** にすることをお勧めします。 ASF 設定の詳細については、「 [Office 365 の高度なスパムフィルター (ASF) 設定](advanced-spam-filtering-asf-options.md)」を参照してください。
 
 ****
 
 |セキュリティ機能の名前|コメント|
 |---|---|
-|**リモートサイトへの画像リンク** (_IncreaseScoreWithImageLinks_)||
-|**URL の数値の IP アドレス** (_IncreaseScoreWithNumericIps_)||
-|**UL リダイレクト (その他のポート** ) (_IncreaseScoreWithRedirectToOtherPort_)||
-|**.Url または info web サイトへの URL** (_IncreaseScoreWithBizOrInfoUrls_)||
-|**空のメッセージ** (_MarkAsSpamEmptyMessages_)||
-|**HTML の JavaScript または VBScript** (_MarkAsSpamJavaScriptInHtml_)||
-|**HTML の Frame または IFrame タグ** (_MarkAsSpamFramesInHtml_)||
-|**HTML のオブジェクトタグ** (_MarkAsSpamObjectTagsInHtml_)||
-|**HTML にタグを埋め込む** (_MarkAsSpamEmbedTagsInHtml_)||
-|**HTML の Form タグ** (_MarkAsSpamFormTagsInHtml_)||
-|**HTML での Web バグ** (_MarkAsSpamWebBugsInHtml_)||
-|**機密単語リストを適用** する (_MarkAsSpamSensitiveWordList_)||
-|**SPF レコード: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
-|**条件付き送信者 ID フィルター: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
-|**NDR バック散布** (_MarkAsSpamNdrBackscatter_)||
+|**リモートサイトへの画像リンク** ( _IncreaseScoreWithImageLinks_ )||
+|**URL の数値の IP アドレス** ( _IncreaseScoreWithNumericIps_ )||
+|**UL リダイレクト (その他のポート** ) ( _IncreaseScoreWithRedirectToOtherPort_ )||
+|**.Url または info web サイトへの URL** ( _IncreaseScoreWithBizOrInfoUrls_ )||
+|**空のメッセージ** ( _MarkAsSpamEmptyMessages_ )||
+|**HTML の JavaScript または VBScript** ( _MarkAsSpamJavaScriptInHtml_ )||
+|**HTML の Frame または IFrame タグ** ( _MarkAsSpamFramesInHtml_ )||
+|**HTML のオブジェクトタグ** ( _MarkAsSpamObjectTagsInHtml_ )||
+|**HTML にタグを埋め込む** ( _MarkAsSpamEmbedTagsInHtml_ )||
+|**HTML の Form タグ** ( _MarkAsSpamFormTagsInHtml_ )||
+|**HTML での Web バグ** ( _MarkAsSpamWebBugsInHtml_ )||
+|**機密単語リストを適用** する ( _MarkAsSpamSensitiveWordList_ )||
+|**SPF レコード: hard fail** ( _MarkAsSpamSpfRecordHardFail_ )||
+|**条件付き送信者 ID フィルター: hard fail** ( _MarkAsSpamFromAddressAuthFail_ )||
+|**NDR バック散布** ( _MarkAsSpamNdrBackscatter_ )||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 送信スパムポリシーの設定
@@ -124,8 +125,8 @@ ms.locfileid: "48430659"
 |**受信者にメッセージが検疫されたことを通知するかどうか。** <br/><br/> _操作_|いいえ <br/><br/> _DeleteMessage_|いいえ <br/><br/> _DeleteMessage_|いいえ <br/><br/> _DeleteMessage_|電子メールの添付ファイルでマルウェアが検出されると、メッセージは検疫され、管理者のみが解放できるようになります。|
 |**一般的な添付ファイルの種類のフィルター** <br/><br/> _EnableFileFilter_|オフ <br/><br/> `$false`|オン <br/><br/> `$true`|オン <br/><br/> `$true`|この設定では、添付ファイルの内容に関係なく、実行可能な添付ファイルが含まれているファイルの種類に基づいてメッセージを検疫します。|
 |**マルウェアのゼロ時間の自動削除** <br/><br/> _ZapEnabled_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
-|配信されていないメッセージの**内部送信者に通知**する <br/><br/> _EnableInternalSenderNotifications_|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`||
-|配信されていないメッセージの**外部送信者に通知**する <br/><br/> _EnableExternalSenderNotifications_|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`||
+|配信されていないメッセージの **内部送信者に通知** する <br/><br/> _EnableInternalSenderNotifications_|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`||
+|配信されていないメッセージの **外部送信者に通知** する <br/><br/> _EnableExternalSenderNotifications_|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`|無効 <br/><br/> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP の既定のフィッシング対策ポリシー設定
@@ -167,9 +168,9 @@ EOP のお客様は、前述したように基本的なフィッシング対策�
 
 |セキュリティ機能の名前|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
-|保護されたユーザー: **保護するユーザーを追加する** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|オフ <br/><br/> `$false` <br/><br/> なし|オン <br/><br/> `$true` <br/><br/> \<list of users\>|オン <br/><br/> `$true` <br/><br/> \<list of users\>|組織によっては、主な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は CEO、CFO、その他のシニアリーダーである場合があります。 外部では、保護された送信者は協議会のメンバーまたは取締役会を含めることができます。|
+|保護されたユーザー: **保護するユーザーを追加する** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|オフ <br/><br/> `$false` <br/><br/> none|オン <br/><br/> `$true` <br/><br/> \<list of users\>|オン <br/><br/> `$true` <br/><br/> \<list of users\>|組織によっては、主な役割にユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は CEO、CFO、その他のシニアリーダーである場合があります。 外部では、保護された送信者は協議会のメンバーまたは取締役会を含めることができます。|
 |保護されたドメイン: **自分が所有しているドメインを自動的に追加する** <br/><br/> _Enable組織 Domainsprotection_|オフ <br/><br/> `$false`|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
-|保護されたドメイン: **カスタムドメインを含める** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|オフ <br/><br/> `$false` <br/><br/> なし|オン <br/><br/> `$true` <br/><br/> \<list of domains\>|オン <br/><br/> `$true` <br/><br/> \<list of domains\>|組織によっては、所有していないが頻繁に操作するドメイン (送信者ドメイン) を追加することをお勧めします。|
+|保護されたドメイン: **カスタムドメインを含める** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|オフ <br/><br/> `$false` <br/><br/> none|オン <br/><br/> `$true` <br/><br/> \<list of domains\>|オン <br/><br/> `$true` <br/><br/> \<list of domains\>|組織によっては、所有していないが頻繁に操作するドメイン (送信者ドメイン) を追加することをお勧めします。|
 |保護されたユーザー: **偽装ユーザーによって電子メールが送信される場合** <br/><br/> _され_|**どの操作も適用しない** <br/><br/> `NoAction`|**メッセージを検疫する** <br/><br/> `Quarantine`|**メッセージを検疫する** <br/><br/> `Quarantine`||
 |保護されたドメイン: **偽装ドメインによって電子メールが送信される場合** <br/><br/> _TargetedDomainProtectionAction_|**どの操作も適用しない** <br/><br/> `NoAction`|**メッセージを検疫する** <br/><br/> `Quarantine`|**メッセージを検疫する** <br/><br/> `Quarantine`||
 |**偽装ユーザーのヒントを表示する** <br/><br/> _Enablesimilarユーザーヒント Etytips_|オフ <br/><br/> `$false`|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
@@ -231,7 +232,8 @@ PowerShell では、これらの設定には [AtpPolicyForO365](https://docs.mic
 
 PowerShell では、これらの設定に [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) および [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) コマンドレットを使用します。
 
-**注**: 前述のように、既定の安全なリンクポリシーはありません。 [既定] 列の値は、作成する新しい安全なリンクポリシーの既定値です。
+> [!NOTE]
+> 前述したように、既定の安全なリンクポリシーはありません。 [既定] 列の値は、作成する新しい安全なリンクポリシーの既定値です。
 
 ****
 
@@ -262,7 +264,7 @@ PowerShell では、これらの設定には [AtpPolicyForO365](https://docs.mic
 |---|:---:|:---:|:---:|---|
 |**SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする** <br/><br/> _EnableATPForSPOTeamsODB_|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |**Office クライアントの安全なドキュメントを有効にする**<bt/><br/> _EnableSafeDocs_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|この設定は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティライセンスでのみ使用できます。 詳細については、「 [Office 365 Advanced Threat Protection」の「Safe Documents](safe-docs.md)」を参照してください。|
-|**安全なドキュメントが悪意のあるファイルとして識別された場合でも、保護されたビューのクリックをユーザーに許可**する <bt/><br/> _AllowSafeDocsOpen_|オフ <br/><br/> `$false`|オフ <br/><br/> `$false`|この設定は、安全なドキュメントに関連しています。|
+|**安全なドキュメントが悪意のあるファイルとして識別された場合でも、保護されたビューのクリックをユーザーに許可** する <bt/><br/> _AllowSafeDocsOpen_|オフ <br/><br/> `$false`|オフ <br/><br/> `$false`|この設定は、安全なドキュメントに関連しています。|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>安全な添付ファイルのポリシー設定
@@ -271,23 +273,24 @@ PowerShell では、これらの設定には [AtpPolicyForO365](https://docs.mic
 
 PowerShell では、これらの設定に対して、 [新しい-safeattachmentpolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) および [Set-safeattachmentpolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) コマンドレットを使用します。
 
-**注**: 前述のように、既定の安全な添付ファイルポリシーはありません。 [既定] 列の値は、作成する新しい安全な添付ファイルポリシーの既定値です。
+> [!NOTE]
+> 前述したように、既定の安全な添付ファイルポリシーはありません。 [既定] 列の値は、作成する新しい安全な添付ファイルポリシーの既定値です。
 
 ****
 
 |セキュリティ機能の名前|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**安全な添付ファイルの不明なマルウェア応答** <br/><br/> _操作_|ブロック <br/><br/> `Block`|ブロック <br/><br/> `Block`|ブロック <br/><br/> `Block`||
-|**検出時に接続をリダイレクト****する: リダイレクトを有効にする** <br/><br/> _リダイレクト_ <br/><br/> _RedirectAddress_|Off で、電子メールアドレスが指定されていません。 <br/><br/> `$true` <br/><br/> なし|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|メッセージをセキュリティ管理者にレビュー用にリダイレクトします。|
+|**検出時に接続をリダイレクト****する: リダイレクトを有効にする** <br/><br/> _リダイレクトする_ <br/><br/> _RedirectAddress_|Off で、電子メールアドレスが指定されていません。 <br/><br/> `$true` <br/><br/> none|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|で、電子メールアドレスを指定します。 <br/><br/> `$true` <br/><br/> 電子メールアドレス|メッセージをセキュリティ管理者にレビュー用にリダイレクトします。|
 |**マルウェアスキャンによる添付ファイルのタイムアウトまたはエラーが発生した場合は、上記の選択を適用します。** <br/><br/> _ActionOnError_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|オン <br/><br/> `$true`||
 |
 
 ## <a name="related-articles"></a>関連記事
 
-- **Exchange メールフロールール (トランスポートルールとも呼ば**れます) のベストプラクティスについては、こちらを参照してください。 「 [Exchange Online でメールフロールールを構成するためのベストプラクティス」を](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)参照してください。
+- **Exchange メールフロールール (トランスポートルールとも呼ば** れます) のベストプラクティスについては、こちらを参照してください。 「 [Exchange Online でメールフロールールを構成するためのベストプラクティス」を](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)参照してください。
 
 - 管理者とユーザーは、誤検知 (不良としてマークされている正常なメール) と誤検知 (無効な電子メールを許可) を分析のために Microsoft に送信できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-- [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を**セットアップする方法**、および[Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を**構成**する方法に関する情報については、次のリンクを使用してください。 「[Office 365 での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ手順を忘れないでください。
+- [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を **セットアップする方法** 、および [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を **構成** する方法に関する情報については、次のリンクを使用してください。 「[Office 365 での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ手順を忘れないでください。
 
-- **Windows のセキュリティベースライン** は、「GPO/オンプレ [ミスのオプション](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) 」および「Intune ベースのセキュリティ」に記載さ [れてい](https://docs.microsoft.com/intune/protect/security-baselines) ます。 最後に、Microsoft Defender Advanced Threat Protection (ATP) と Microsoft Intune セキュリティベースラインの比較は [こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)でご確認いただけます。
+- **Windows のセキュリティベースライン** は、次の場所にあります。 [セキュリティベースラインを取得できますか](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) 。また、セキュリティベースラインを使用して intune で intune ベースセキュリティ用の [Windows 10 デバイスを構成する](https://docs.microsoft.com/intune/protect/security-baselines) ことができます。 最後に、microsoft defender の Advanced Threat Protection (ATP) と Microsoft Intune のセキュリティベースラインの比較は、 [Microsoft DEFENDER ATP と Windows intune セキュリティベースラインの比較](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)で利用できます。

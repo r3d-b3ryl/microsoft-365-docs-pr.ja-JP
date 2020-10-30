@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774095"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806632"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365 での自動外部電子メール転送の制御
 
@@ -31,7 +31,7 @@ Microsoft 365 では、次の種類の自動転送を使用できます。
 
 - ユーザーは、メッセージを外部の送信者に自動的に転送するように [受信トレイルール](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) を構成できます (故意または侵害されたアカウントの結果として)。
 
-- 管理者は、外部の受信者にメッセージを自動的に転送するように、 [メールボックス転送](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (SMTP 転送とも呼ばれます) を構成できます。
+- 管理者は、外部の受信者にメッセージを自動的に転送するように、 [メールボックス転送](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) ( _SMTP 転送_ とも呼ばれます) を構成できます。
 
 送信スパムフィルターポリシーを使用して、外部の受信者への自動転送を制御することができます。 次の3つの設定を使用できます。
 
@@ -45,9 +45,9 @@ Microsoft 365 では、次の種類の自動転送を使用できます。
 
 > [!NOTE]
 > 
-> - また、自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルールも無効になります。
+> - 自動転送を無効にすると、メッセージを外部アドレスにリダイレクトする受信トレイルール (ユーザー) またはメールボックス転送 (管理者) が無効になります。
 > 
->   Office 365 では、受信トレイルールまたはメールボックス構成による自動外部転送を許可しません。これにより、セキュリティで保護された既定のポリシーが提供されます。 ただし、管理者は組織内のすべてのユーザーまたは一部のユーザーについてこれらの設定を変更できます。 [送信スパムポリシー](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies)を作成し、[自動転送] セクションを変更して、ユーザーによる外部送信者への自動電子メール転送を制御します。 これは、ポリシーが適用される内部送信者に後で適用することができます。 内部ユーザー間でのメッセージ転送は、このような変更による影響を受けません。
+> - 内部ユーザー間でのメッセージの自動転送は、送信スパムフィルターポリシーの設定の影響を受けません。
 > 
 > - 自動転送された [メッセージレポート](mfi-auto-forwarded-messages-report.md)で、外部の受信者にメッセージを自動的に転送するユーザーに関する情報を確認できます。
 
