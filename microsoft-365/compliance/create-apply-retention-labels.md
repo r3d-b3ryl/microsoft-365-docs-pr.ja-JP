@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順
-ms.openlocfilehash: a9105b404dbeef0ff6ef247ce613f4257c3d3b2a
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: e1504bf4dda8ee2e9f78f84c147bb4f3ebc22887
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755556"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773998"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -37,9 +37,9 @@ ms.locfileid: "48755556"
 
 組織内のユーザーが保持ラベルを使用できるようにして、コンテンツを分類できるようにするプロセスは 2 段階です。 
 
-1. Create the retention labels.
+1. 保持ラベルを作成します。
 
-2. Publish the retention labels by using a retention label policy.
+2. 保持ラベル ポリシーを使用して保持ラベルを発行します。
   
 ![ラベルの役割とタスクの図](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
@@ -60,24 +60,24 @@ ms.locfileid: "48755556"
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
     - レコード管理を使用している場合:
-        - [**ソリューション**] > [**レコード管理**] > [**ファイル計画**] タブ > [**+ラベルを作成**] > [**保持ラベル**]
+        - [ **ソリューション** ] > [ **レコード管理** ] > [ **ファイル計画** ] タブ > [ **+ラベルを作成** ] > [ **保持ラベル** ]
         
     - レコード管理を使用していない場合:
-       - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル**] タブ > + [**ラベルを作成**]
+       - [ **ソリューション** ] > [ **情報ガバナンス** ] > [ **ラベル** ] タブ > + [ **ラベルを作成** ]
     
-    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
+    すぐにオプションが表示されませんか? 最初に [ **すべて表示** ] を選択します。 
 
 2. ウィザードでプロンプトに従います。 レコード管理を使用している場合:
     
     - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
     
-    - 保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または**アイテムを規制レコードとしてマーク**を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
+    - 保持ラベルを使用してレコードを宣言するには、 **アイテムをレコードとしてマーク** 、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
 
-3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[**今すぐラベルを保存する**] を選択し、[**完了**] を選択します。
+3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[ **今すぐラベルを保存する** ] を選択し、[ **完了** ] を選択します。
 
 4. さらにラベルを作成するには、これらの手順を繰り返します。
 
-既存のラベルを編集するには、そのラベルを選択してから [**ラベルの編集**] オプションを選択し、手順 2 からラベルの説明や[有効な設定](#updating-retention-labels-and-their-policies)を変更するための保持の編集ウィザードを開始します。
+既存のラベルを編集するには、そのラベルを選択してから [ **ラベルの編集** ] オプションを選択し、手順 2 からラベルの説明や [有効な設定](#updating-retention-labels-and-their-policies)を変更するための保持の編集ウィザードを開始します。
 
 ### <a name="step-2-publish-retention-labels"></a>手順 2: 保持ラベルを発行する
 
@@ -86,18 +86,18 @@ SharePoint や Outlook などのアプリでユーザーが適用できるよう
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
     - レコード管理を使用している場合:
-        - [**ソリューション**] > [**レコード管理**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
+        - [ **ソリューション** ] > [ **レコード管理** ] > [ **ラベル ポリシー** ] タブ > [ **ラベルの発行** ]
     
     - レコード管理を使用していない場合:
-        - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
+        - [ **ソリューション** ] > [ **情報ガバナンス** ] > [ **ラベル ポリシー** ] タブ > [ **ラベルの発行** ]
     
-    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
+    すぐにオプションが表示されませんか? 最初に [ **すべて表示** ] を選択します。 
 
 2. ウィザードでプロンプトに従います。
     
     保持ラベルでサポートされている場所については、「[保持ラベルと場所](retention.md#retention-label-policies-and-locations)」のセクションをご覧ください。 
 
-既存の保持ラベル ポリシー (ポリシーの種類は [**公開**]) を編集するには、それを選択してから、[**編集**] オプションを選択して、[保持ポリシーの編集] を開始します。 このウィザードでは、手順 2 のポリシーの説明と[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
+既存の保持ラベル ポリシー (ポリシーの種類は [ **公開** ]) を編集するには、それを選択してから、[ **編集** ] オプションを選択して、[保持ポリシーの編集] を開始します。 このウィザードでは、手順 2 のポリシーの説明と[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>保持ラベルが適用できるようになったとき
@@ -111,9 +111,9 @@ Exchange にラベルを発行する場合、エンド ユーザーにこれら�
 ![手動ラベルが有効になるタイミングの図](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-ラベルが 7 日経っても表示されない場合は、コンプライアンスセンターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ （エラー）** の状態が表示され、場所の詳細に、ポリシーの展開 （SharePoint の場合） またはポリシーの再展開 （OneDrive の場合） に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
-1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [セキュリティ/コンプライアンス センター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. 次のコマンドを実行します:
     
@@ -222,7 +222,7 @@ For SharePoint, but not OneDrive, you can create a view of the library that cont
 
 When you publish retention labels to Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), the retention labels appear in both the group site and group mailbox in Outlook on the web. The experience of applying a retention label to content is identical to that for email and documents.
 
-To retain content for a Microsoft 365 group, use the **Office 365 groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes.
+To retain content for a Microsoft 365 group, use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
   
