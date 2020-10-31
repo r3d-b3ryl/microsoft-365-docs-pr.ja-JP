@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理者は、検疫タグを使用して、検疫済みメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819229"
+ms.locfileid: "48819742"
 ---
 # <a name="quarantine-tags"></a>検疫タグ
 
@@ -477,7 +477,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 差出人セーフリストの詳細については、「 [信頼された送信者からのブロックを禁止](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) する」と「 [Exchange Online PowerShell を使用してメールボックスのセーフリストコレクションを構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)」を参照してください。
 
-### <a name="block-sender-permission"></a>送信者のアクセス許可をブロックする
+#### <a name="block-sender-permission"></a>送信者のアクセス許可をブロックする
 
 **送信者のブロック** アクセス許可 ( _Permissiontoblocksender_ ) は、ユーザーが検疫済みメッセージ送信者を受信拒否リストに簡単に追加できるようにするボタンへのアクセスを制御します。
 
@@ -491,7 +491,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 受信拒否リストの詳細については、「 [ユーザーからのメッセージをブロック](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) する」と「 [Exchange Online の PowerShell を使用してメールボックスのセーフリストコレクションを構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)」を参照してください。
 
-### <a name="delete-permission"></a>削除のアクセス許可
+#### <a name="delete-permission"></a>削除のアクセス許可
 
 **Delete** アクセス許可 ( _PermissionToDelete_ ) は、検疫からユーザーが自分のメッセージ (ユーザーが受信者であるメッセージ) を削除する機能を制御します。
 
@@ -501,7 +501,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 - **エンドユーザーのスパム通知** : 効果なし。
 
-### <a name="preview-permission"></a>プレビューのアクセス許可
+#### <a name="preview-permission"></a>プレビューのアクセス許可
 
 **プレビュー** アクセス許可 ( _permissiontopreview_ ) は、ユーザーが検疫でメッセージをプレビューできるかどうかを制御します。
 
