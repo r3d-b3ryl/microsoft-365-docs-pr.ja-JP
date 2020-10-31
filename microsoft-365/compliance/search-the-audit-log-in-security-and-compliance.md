@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e427cb2eaa282ebac46b47c6dd97718039c12cb8
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753346"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787583"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -672,6 +672,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |メールボックスからのメッセージの消去|HardDelete|メッセージが回復可能なアイテム フォルダーから削除されました (メールボックスから完全に削除されました)。|
 |代理メールボックス アクセス許可の削除|Remove-MailboxPermission|管理者がユーザーのメールボックスから FullAccess アクセス許可 (代理人に割り当て済み) を削除しました。FullAccess アクセス許可が削除されると、代理人は、他のユーザーのメールボックスを開くことも、その内容にアクセスすることもできません。|
 |フォルダーからアクセス許可が削除されました|RemoveFolderPermissions|フォルダーのアクセス許可が削除されました。 フォルダーのアクセス許可では、メールボックス内のフォルダーとそれらのフォルダーに格納されているメッセージにアクセスできる組織内のユーザーを制限します。|
+|送信済メッセージ|Send|メッセージが送信、返信、または転送されました。 このアクティビティは、Office 365 または Microsoft 365 E5 ライセンスを持つユーザーのみに記録されます。 詳細については、「[高度な監査](advanced-audit.md#access-to-crucial-events-for-investigations)」の「調査のための重要なイベントへのアクセス」セクションを参照してください。|
 |送信者権限を使ったメッセージの送信|SendAs|SendAs アクセス許可を使用してメッセージが送信されました。 つまり、別のユーザーがこのメールボックスの所有者を装ってメッセージを送信したということです。|
 |代理送信権限を使ったメッセージの送信|SendOnBehalf|SendOnBehalf アクセス許可を使用してメッセージが送信されました。 つまり、別のユーザーがこのメールボックスの所有者の代理人としてメッセージを送信したということです。 このメッセージは、代わりにメッセージが送信されたユーザーと実際にメッセージを送信したユーザーを受信者に示します。|
 |Outlook クライアントの受信トレイ ルールの更新|UpdateInboxRules|メールボックスの所有者またはメールボックスにアクセスできる別のユーザーが、Outlook クライアントで受信トレイ ルールを変更しました。|

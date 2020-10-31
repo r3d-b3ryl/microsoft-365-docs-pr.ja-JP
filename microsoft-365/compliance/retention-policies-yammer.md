@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yammer に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 84db671b475a9dade039136380cef0bc5bde7282
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 3e4cfd5c9e5ef8c28ecd069f3474764b966d6c9a
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754705"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795002"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer の保持の詳細
 
@@ -61,7 +61,7 @@ Yammer メッセージのアイテム保持ポリシーが構成されると、E
 
 図内の 2 つのパスの場合:
 
-1. 保持期間中にユーザーによって **Yammer メッセージが編集または削除された場合** 、元のメッセージは直ちに SubstrateHolds フォルダーにコピー (編集の場合) または移動 (削除の場合) されてます。 メッセージは保存期間が終了するまで保存され、その後直ちに完全に削除されます。
+1. 保持期間中にユーザーによって **Yammer メッセージが編集または削除された場合** 、元のメッセージは SubstrateHolds フォルダーにコピー (編集の場合) または移動 (削除の場合) されてます。 メッセージは保存期間が終了するまで保存され、その後直ちに完全に削除されます。
 
 2. **Yammer メッセージが削除されない場合** 、および編集した後の現在のメッセージの場合は、保持期間満了後にメッセージは SubstructateHolds フォルダに移動されます。 このアクションには、有効期限から最大で 7 日かかります。 メッセージが SubstrateHolds フォルダにある場合は、直ちに完全に削除されます。 
 
@@ -72,7 +72,7 @@ Yammer メッセージのアイテム保持ポリシーが構成されると、E
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>アイテム保持ポリシーが保持のみのコンテンツ パス
 
-1. **Yammer メッセージが編集または削除された場合** 、元のメッセージのコピーは直ちに SubstrateHolds フォルダに作成され、保持期間が満了するまでそこに保持されます。 その後直ちに、メッセージは SubstrateHolds フォルダから完全に削除されます。
+1. **Yammer メッセージが編集または削除された場合** 、元のメッセージのコピーは SubstrateHolds フォルダに作成され、保持期間が満了するまでそこに保持されます。 その後直ちに、メッセージは SubstrateHolds フォルダから完全に削除されます。
 
 2. **Yammer メッセージが変更または削除されていない場合** 、および保持期間中に編集した後の現在のメッセージの場合は、保持期間の前後には何も起こらず、メッセージは元の場所に残ります。
 
@@ -80,7 +80,7 @@ Yammer メッセージのアイテム保持ポリシーが構成されると、E
 
 1. 保持期間中に **Yammer メッセージが削除されない場合** 、保持期間の終了時にメッセージは SubstrateHolds フォルダーに移動されます。 このアクションには、有効期限から最大で 7 日かかります。 その後直ちに、メッセージは SubstrateHolds フォルダから完全に削除されます。
 
-2. 期間中に **ユーザーが Yammer メッセージを削除した場合** 、そのアイテムは直ちに SubstrateHolds フォルダーに移動され、完全に削除されます。
+2. 期間中に **ユーザーが Yammer メッセージを削除した場合** 、そのアイテムは SubstrateHolds フォルダーに移動され、完全に削除されます。
 
 
 ## <a name="messages-and-external-users"></a>メッセージと外部ユーザー

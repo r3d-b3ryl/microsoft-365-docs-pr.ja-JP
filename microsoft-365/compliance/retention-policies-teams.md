@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: 32656dc91350e5082171eb4fadd91d3a6287b9b7
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 85f272c5c663a95c749f7971b6e23c178dab2b94
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754063"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795096"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -38,7 +38,7 @@ ms.locfileid: "48754063"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
-チャットおよびチャネル メッセージの Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます。
+チャットおよび埋め込み画像を含むチャネル メッセージの Teams アイテムは、Teams のアイテム保持ポリシーを使用して保持および削除できます。
 
 プライベート チャネルの Teams メッセージは含まれず、絵文字の形で他の人からの反応は含まれません。
 

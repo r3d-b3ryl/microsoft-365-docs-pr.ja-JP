@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637009"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779122"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -41,24 +41,24 @@ ms.locfileid: "48637009"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
+1. 管理センターで、[ **レポート** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[**レポート**] \> [**使用状況**] ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理センター</a>で、[ **レポート** ] \> [ **使用状況** ] ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[**レポート**] \> [**使用状況**] ページの順に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理センター</a>で、[ **レポート** ] \> [ **使用状況** ] ページの順に移動します。
 
 ::: moniker-end
 
-2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [**その他を表示**] ボタンをクリックします。 サービスに関するさまざまなレポートがタブに表示されます。 <br/>![利用状況ダッシュボード](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. レポートの詳細ページを表示するには、サービス (メール、OneDrive など) の概要アクティビティ カードから [ **その他を表示** ] ボタンをクリックします。 サービスに関するさまざまなレポートがタブに表示されます。 <br/>![利用状況ダッシュボード](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>レポートを閲覧できるユーザー
 
@@ -130,19 +130,37 @@ ms.locfileid: "48637009"
   
 ::: moniker range="o365-worldwide"
 
-- [Yammer アクティビティ](yammer-activity-report.md)
+- [Yammer アクティビティ](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer デバイスの使用状況](yammer-device-usage-report.md)
+- [米国政府の Yammer のアクティビティ](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer のグループ アクティビティ レポート](yammer-groups-activity-report.md)
+- [Yammer デバイスの使用状況](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [米国政府の Yammer のデバイスの利用状況](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer のグループ アクティビティ レポート](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [米国政府の Yammer のグループ アクティビティ レポート](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
@@ -172,9 +190,9 @@ ms.locfileid: "48637009"
 
 ## <a name="how-to-view-licensing-information"></a>ライセンス情報を表示する方法
 
-- 割り当て済みおよび未割り当てのライセンスの数を表示するには、管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] の順に移動します。 
+- 割り当て済みおよび未割り当てのライセンスの数を表示するには、管理センターで、[ **課金** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] の順に移動します。 
     
-- ライセンスのあるユーザー、ライセンスのないユーザー、またはゲストを表示するには、管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。 
+- ライセンスのあるユーザー、ライセンスのないユーザー、またはゲストを表示するには、管理センターで、[ **ユーザー** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。 
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>特定のユーザーの使用状況の情報を表示する方法
 
@@ -186,11 +204,11 @@ ms.locfileid: "48637009"
 
 レポートを生成するときに、ユーザー レベルの情報を非表示にする場合は、管理センターで簡単に変更することができます。
   
-1. 管理センターで、 [**設定**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービス&amp;アドイン</a>] ページの順に移動します。
+1. 管理センターで、 [ **設定** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">サービス&amp;アドイン</a>] ページの順に移動します。
 
-2. [**レポート**] を選択します。 
+2. [ **レポート** ] を選択します。 
   
-3. [**レポート**] ウィンドウで、必要なオプションを選択し、変更を保存します。
+3. [ **レポート** ] ウィンドウで、必要なオプションを選択し、変更を保存します。
   
 ユーザー リストは次のように表示されます。
   

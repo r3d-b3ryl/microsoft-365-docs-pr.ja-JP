@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを非常に効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 43bfe1b51b730dd41342f95a069645ff15a03437
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6b30c5689981adaf3eb7f4893a8acf0398ca2339
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755576"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774034"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -83,7 +83,7 @@ Teams のアイテム保持ポリシーの詳細については、「[Microsoft 
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Teams をサポートするのに必要な追加のアイテム保持ポリシー
 
-Teams は、単なるチャットやチャネルメッセージを送るだけのツールではありません。 Microsoft 365 グループ (以前の Office 365 グループ) から作成されたチームがある場合は、 **Office 365 グループ** の場所を使用して、その Microsoft 365 グループを含むアイテム保持ポリシーを追加で構成する必要があります。 このアイテム保持ポリシーは、グループのメールボックス、サイト、およびドキュメントのコンテンツに適用されます。
+Teams は、単なるチャットやチャネルメッセージを送るだけのツールではありません。 Microsoft 365 グループ (以前の Office 365 グループ) から作成されたチームがある場合は、 **Microsoft 365 グループ** の場所を使用して、その Microsoft 365 グループを含むアイテム保持ポリシーを追加で構成する必要があります。 このアイテム保持ポリシーは、グループのメールボックス、サイト、およびドキュメントのコンテンツに適用されます。
 
 チーム サイトが Microsoft 365 グループに接続されていない場合に、Teams 内のファイルを保持および削除するためには、 **SharePoint サイト** または **OneDrive アカウント** の場所を含むアイテム保持ポリシーが必要です。
 
@@ -127,7 +127,7 @@ Yammer 向けに機能する保持ポリシーの仕組みに関する詳細情�
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>Yammer をサポートするのに必要な追加のアイテム保持ポリシー
 
-Yammer に備わっているのは、コミュニティのメッセージや個人用メッセージだけではありません。 Yammer ネットワークのメール メッセージを保持したり削除したりするには、 **Office 365 グループ** の場所を使用して、Yammer で使用されている任意の Microsoft 365 グループを含む追加の保持ポリシーを構成します。 
+Yammer に備わっているのは、コミュニティのメッセージや個人用メッセージだけではありません。 Yammer ネットワークのメール メッセージを保持したり削除したりするには、 **Microsoft 365 グループ** の場所を使用して、Yammer で使用されている任意の Microsoft 365 グループを含む追加の保持ポリシーを構成します。 
 
 Yammer に保存されているファイルを保持したり削除したりするためには、 **SharePoint サイト** や **OneDrive アカウント** の場所を含むアイテム保持ポリシーが必要です。
 
@@ -156,7 +156,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
     場所固有の情報:
     - [Exchange メールと Exchange パブリック フォルダー](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [SharePoint サイトと OneDrive アカウント](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Office 365 グループ](#configuration-information-for-microsoft-365-groups)
+    - [Microsoft 365 グループ](#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](#configuration-information-for-skype-for-business)
 
 4. ウィザードの [ **コンテンツを保持するか、削除するか、またはその両方を行うかを決定する** ] ページで、コンテンツを保持および削除するための構成オプションを指定します。
@@ -171,13 +171,13 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 
 次のメール アイテムが含まれます: メール メッセージ (下書きを含む) 、添付ファイル、タスク、予定表アイテム、終了日、メモ。 連絡先、および終了日が設定されていないタスクおよび予定表アイテムは含まれません。 Skype や Teams の保存済みメッセージなど、メールボックスに保存されているその他のアイテムは、この場所には含まれません。 これらのアイテムには、独自の保存場所があります。
 
-Microsoft 365 グループには Exchange メールボックスがありますが、 **Exchange メール** の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 これらのメールボックスのコンテンツを保持するには、 **Office 365 グループ** の場所を選択します。
+Microsoft 365 グループには Exchange メールボックスがありますが、 **Exchange メール** の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 これらのメールボックスのコンテンツを保持するには、 **Microsoft 365 グループ** の場所を選択します。
 
 **Exchange パブリック フォルダー** の場所は保持設定をすべてのパブリック フォルダーに適用し、フォルダーまたはメールボックス レベルでは適用できません。
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint サイトと OneDrive アカウントの構成情報
 
-[ **SharePoint サイト** ] の場所を選択すると、アイテム保持ポリシーでは、SharePoint​​ コミュニケーション サイト、Office 365 グループによって接続されていないチーム サイト、クラシック サイトのドキュメントを保持および削除することができます。 Office 365 グループによって接続されているチーム サイトは、このオプションでサポートされていないため、代わりにグループのメールボックス、サイト、ファイル内のコンテンツに適用されている [ **Office 365 グループ** ] の場所を使用します。
+[ **SharePoint サイト** ] の場所を選択すると、アイテム保持ポリシーでは、SharePoint​​ コミュニケーション サイト、Microsoft 365 グループによって接続されていないチーム サイト、クラシック サイトのドキュメントを保持および削除することができます。 Microsoft 365 グループによって接続されているチーム サイトは、このオプションでサポートされていないため、代わりにグループのメールボックス、サイト、ファイル内のコンテンツに適用されている [ **Microsoft 365 グループ** ] の場所を使用します。
 
 アイテム保持ポリシーはサイト レベルで適用されますが、保持設定が適用されるのはドキュメントのみです。 保持設定は、サイト内のライブラリ、リスト、およびフォルダーを含む組織構造には適用されません。
 
@@ -194,7 +194,7 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 グループの構成情報
 
-Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、 **Office 365 グループ** の場所を使用する必要があります。 Microsoft 365 グループには Exchange メールボックスがありますが、 **Exchange メール** の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 また、最初は **Exchange メール** の場所でグループ メールボックスを含めるか除外するかを指定できますが、アイテム保持ポリシーを保存しようとすると、Exchange の場所では「RemoteGroupMailbox」を選択できないことを示すエラーを受け取ります。
+Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、 **Microsoft 365 グループ** の場所を使用する必要があります。 Microsoft 365 グループには Exchange メールボックスがありますが、 **Exchange メール** の場所全体が含まれるアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。 また、最初は **Exchange メール** の場所でグループ メールボックスを含めるか除外するかを指定できますが、アイテム保持ポリシーを保存しようとすると、Exchange の場所では「RemoteGroupMailbox」を選択できないことを示すエラーを受け取ります。
 
 もし、teamsサイトがグループ作成時に選択されたか、後でグループに追加された場合は、Microsoft 365グループに適用される保持ポリシーにはグループメールボックスとteamsのサイトも含まれます。 teamsサイトに保存されているファイルは、この場所に含まれますが、独自のアイテム保持ポリシーの場所を持つTeamsのチャットまたはTeamsチャネルメッセージは含まれません。
 
