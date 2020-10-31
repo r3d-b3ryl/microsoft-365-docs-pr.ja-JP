@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: セキュリティ/コンプライアンスセンターのデータ損失防止 (DLP) には、 &amp; dlp ポリシーで使用できる、80の機密情報の種類が含まれています。 このトピックでは、機密情報の種類をすべて一覧表示し、各種類を検出したときに DLP ポリシーが調査する内容を示します。
-ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
+ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656054"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819117"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>機密情報の種類のエンティティ定義
 
@@ -3162,9 +3162,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 7 ~ 8 桁の数字と区切り記号:
 - 1 ~ 2 桁の数字 
-- ピリオド 
+- 省略可能な期間 
 - 3桁の数字 
-- ピリオド 
+- 省略可能な期間 
 - 3桁の数字 
 - ダッシュ 
 - チェックディジットの1桁の数字または文字 (大文字小文字の区別なし)
@@ -3201,18 +3201,40 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
-- National Identification Number 
-- Identity card 
-- ID 
-- Fim 
-- Rol Único Nacional 
-- 実行 
-- Rol Único Tributario 
-- 類型 
-- Cédula de Identidad 
-- Número De Identificación Nacional 
-- Tarjeta de identificación 
-- Identificación 
+- cédula de (dad)
+- identificación
+- national identification
+- national identification number
+- national id
+- número de identificación nacional
+- rol único nacional
+- rol único tributario
+- 実行
+- 類型
+- tarjeta de identificación
+- Rol/Nacional
+- Rol/Tributario
+- 実行#
+- 類型#
+- nationaluniqueroleID#
+- nacional 識別子 (dad)
+- número identificación
+- dad número の識別子
+- numero 識別子
+- dad numero の識別子
+- チリ id 番号
+- チリの id 番号
+- チリ identity#
+- 一意の納税レジストリ
+- 一意の Tributary ロール
+- 一意の税の役割
+- 一意の Tributary 番号
+- 一意の国内番号
+- 固有の国の役割
+- 自国固有の役割
+- チリ id 番号
+- チリの id 番号
+- チリ id#
 
    
 ## <a name="china-resident-identity-card-prc-number"></a>中国の居住アイデンティティカード (PRC) 番号
@@ -8558,7 +8580,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Diseases の国際分類 (ICD-10-CM)
@@ -12044,7 +12066,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="pattern"></a>パターン
 
-3文字 (大文字小文字を区別しない) スペース (省略可能)、4桁の数字
+- ' I ' と ' O ' 以外の3文字 (大文字小文字を区別しない)
+- スペース (省略可能) 
+- 4桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -12057,27 +12081,38 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - Keyword_nz_terms のキーワードを検出した。
 - チェックサムが渡される。
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、75% の確証を持ってそれがこの種類の機密情報であると特定します。
+- 関数 Func_new_zealand_ministry_of_health_number がパターンに一致するコンテンツを検出した。
+- チェックサムが渡される。
+
 ```xml
-<!-- New Zealand Health Number -->
-<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- New Zealand Health Number -->
+    <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
-        <Any minMatches="1">
           <Match idRef="Keyword_nz_terms" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+       </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>キーワード
 
 #### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
-- NHI 
-- New Zealand 
-- 正常性 
-- 処理 
-
+- NHI
+- New Zealand
+- 正常性
+- 処理
+- 国内正常性インデックス番号
+- nhi 番号
+- nhi no。
+- NHI#
+- 国内正常性インデックス番号
+- 国内正常性インデックス Id
+- 国内正常性インデックス#
 
 ## <a name="new-zealand-social-wlefare-number"></a>ニュージーランドソーシャル wlefare 番号
 この機密情報の種類は、で使用する場合にのみ使用できます。
@@ -14761,7 +14796,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keywords"></a>キーワード
 
-None
+なし
 
 ## <a name="spain-tax-identification-number"></a>スペインの税識別番号
 この機密情報の種類は、で使用する場合にのみ使用できます。

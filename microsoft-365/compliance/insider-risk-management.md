@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774050"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816862"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 での Insider リスク管理
 
@@ -111,7 +111,7 @@ Insider リスク管理ワークフローは、組織内の内部リスクを特
 
 ![Insider リスク管理の調査](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>アクション
+### <a name="action"></a>Action
 
 ケースを調査した後、レビューアーは迅速に行動を取ることができ、組織内の他のリスク関係者と共同作業を行うことができます。 ユーザーが誤って、または誤ってポリシー条件を違反した場合、組織に合わせてカスタマイズできる通知テンプレートからユーザーに簡単な通知通知を送信できます。 これらの通知は簡単な通知として機能する場合もあれば、将来の危険な行動を防ぐためにトレーニングやガイダンスをリフレッシャーにしたい場合があります。 詳細については、「 [Insider リスク管理の通知テンプレート](insider-risk-management-notices.md)」を参照してください。
 
@@ -122,7 +122,7 @@ Insider リスク管理ワークフローは、組織内の内部リスクを特
 - **Office 365 Management api の統合 (プレビュー)** : Insider リスク管理は、Office 365 管理 api を使用して、通知情報をセキュリティ情報およびイベント管理 (SIEM) サービスにエクスポートすることをサポートしています。 プラットフォームのアラート情報へのアクセスを許可する組織のリスクプロセスに最適な場合は、リスクアクティビティをより柔軟に行動できるようになります。 Office 365 管理 Api を使用した通知情報のエクスポートの詳細については、「 [Export alerts](insider-risk-management-settings.md#export-alerts-preview)」を参照してください。
 
 >[!NOTE]
->ServiceNow preview は 30 2020 年11月に終了し、続行されません。 次の手順を決定していますので、フィードバックとサポートをご利用いただきありがとうございます。
+>ServiceNow コネクタのプレビュー中にフィードバックとサポートをご利用いただき、ありがとうございます。 ServiceNow コネクタのプレビューを終了することを決定し、2020年11月30日に insider リスク管理のサポートを中止することにしました。 Microsoft は、お客様に、insider リスク管理での ServiceNow 統合を提供する代替手段を積極的に評価しています。
 
 ## <a name="scenarios"></a>シナリオ
 
