@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: 511e04e69dae03caafd7c7828dd24cea6e7a8832
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 18587fc6a718955cd5a752954b614c4d6fa5ee22
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769343"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779262"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -124,9 +124,7 @@ DLP ルールを作成するには
 
 12. **[保存]** をクリックし、 **[次へ]** をクリックします。
 13. テスト オプションを選択し、 **[次へ]** をクリックします。
-14. **[送信]** をクリックし、 **[完了]** をクリックします。
-
-limit-accidental-exposure-dlp-anyone-links.png
+14. **[送信]** をクリックし、次に **[完了]** をクリックします。
 
 ## <a name="protect-against-malicious-files"></a>悪意のあるファイルから保護する
 
