@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787583"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816760"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -893,7 +893,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 |:-----|:-----|:-----|
 |コメントが作成される|CreateComment|フォーム所有者がコメントまたはスコアをクイズに追加する。|
 |フォームが作成される|CreateForm|フォーム所有者が新しいフォームを作成する。|
-|フォームが編集される|EditForm|フォーム所有者が質問の作成、削除、編集など、フォームを編集する。 <br><br>プロパティ EditOperation:string は、編集操作名を示します。 これに含まれる操作: CreateQuestion、CreateQuestionChoice、DeleteQuestion、DeleteQuestionChoice、DeleteFormImage、DeleteQuestionImage、UpdateQuestion、UpdateQuestionChoice、UploadFormImage/Bing/Onedrive、UploadQuestionImage、および ChangeTheme  <br><br>ほとんどの操作名は、特に説明を必要としないはずです。 <br><br>FormImage には、クエリ内や背景テーマなど、ユーザーが画像をアップロードできるフォーム内のすべての場所が含まれます。|
+|フォームが編集される|EditForm|フォーム所有者が質問の作成、削除、編集など、フォームを編集する。 プロパティ *EditOperation:string* は、編集操作名を示します。 次の操作を実行できます。<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage には、クエリ内や背景テーマなど、ユーザーが画像をアップロードできるフォーム内のすべての場所が含まれます。|
 |フォームが移動される|MoveForm|フォーム所有者がフォームを移動する。 <br><br>プロパティ DestinationUserId:string は、フォームを移動したユーザーのユーザー ID を示します。 プロパティ NewFormId:string は、新たにコピーされたフォームの新しい ID です。|
 |フォームが削除される|DeleteForm|フォーウ所有者がフォームを削除する。 これには、SoftDelete (削除オプションが使用され、フォームがごみ箱に移動されます) と HardDelete (ごみ箱が空になります) が含まれます。|
 |フォームが表示される (デザイン時)|ViewForm|フォーム所有者が既存のフォームを編集するために開く。|
@@ -912,7 +912,8 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 |1 件の回答が表示される|ViewResponse|フォーム所有者が特定の 1 件の回答を表示する。 <br><br>プロパティ ResponseId:string とプロパティ ResponderId:string は、どの結果が表示されたかを示します。 <br><br>匿名回答者の場合、ResponderId プロパティは null となります。|
 |概要リンクが作成される|GetSummaryLink|結果を共有するための概要結果リンクをフォーム所有者が作成する。|
 |概要リンクが削除される|DeleteSummaryLink|フォーム所有者が概要結果リンクを削除する。|
-|フォームのフィッシング状態が更新される|UpdatePhishingStatus|このイベントは、内部セキュリティ状態の詳細値が変更されたとき、この変更により最終的なセキュリティの状態 (たとえば、現在フォームは「終了済み」または「開始済み」) が変更されたかどうかに関わらずログに記録されます。 つまり、最終的なセキュリティ状態が変更されない場合でも、重複するイベントが表示されることがあります。|
+|フォームのフィッシング状態が更新される|UpdatePhishingStatus|このイベントは、内部セキュリティ状態の詳細値が変更されたとき、この変更により最終的なセキュリティの状態 (たとえば、現在フォームは「終了済み」または「開始済み」) が変更されたかどうかに関わらずログに記録されます。 つまり、最終的なセキュリティ状態が変更されない場合でも、重複するイベントが表示されることがあります。 このイベントの可能な状態の値は次のとおりです。<br/>- 削除 <br/>- 管理者による削除 <br/>- 管理者のブロック解除 <br/>- 自動ブロック <br/>- 自動ブロック解除 <br/>- 顧客から報告 <br/>- 顧客からの報告をリセット|
+|ユーザーのフィッシング状態が更新される|UpdateUserPhishingStatus|このイベントは、ユーザーのセキュリティ状態の値が変更されるたびにログに記録されます。 監査レコードのユーザー状態の値は、ユーザーが Microsoft Online の安全チームによって削除されたフィッシング フォームを作成したときに、 **フィッシング詐欺師として確認されました** 。 管理者がユーザーのブロックを解除すると、ユーザーの状態の値は **[通常のユーザーとしてリセット]** に設定されます。|
 |Forms Pro の招待が送信される|ProInvitation|ユーザーがクリックして Pro の試用版をアクティブにする。|
 |フォームの設定が更新される|UpdateFormSetting|フォーム所有者がフォームの設定を更新する。 <br><br>プロパティ FormSettingName:string は、設定名と新しい値を示します。|
 |ユーザー設定が更新される|UpdateUserSetting|フォーム所有者がユーザー設定を更新する。 <br><br>プロパティ UserSettingName:string は、設定名と新しい値を示します。|
@@ -922,7 +923,7 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ
 
-Forms は、フォームの設計時および回答の分析時の協同作業をサポートします。 フォームの協力者は、 *共同作成者* として知られています。 共同作成者は、フォームの削除または移動を除き、フォームの所有者が実行できるすべての操作を実行できます。 また、Forms を使用すると、匿名で回答できるフォームを作成できます。 これは、フォームに回答するためにレスポンダーが組織にサインインする必要がないことを意味します。 
+Forms は、フォームの設計時および回答の分析時の協同作業をサポートします。 フォームの協力者は、 *共同作成者* として知られています。 共同作成者は、フォームの削除または移動を除き、フォームの所有者が実行できるすべての操作を実行できます。 また、Forms を使用すると、匿名で回答できるフォームを作成できます。 これは、フォームに回答するためにレスポンダーが組織にサインインする必要がないことを意味します。
 
 次の表は、共同作成者と匿名のレスポンダーによって実行されたアクティビティの監査アクティビティおよび監査レコードの情報を示しています。
 
@@ -944,9 +945,9 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 |:-----|:-----|:-----|
 |サイトに適用された機密ラベル|SensitivityLabelApplied|機密ラベルが SharePoint または Teams サイトに適用されました。|
 |サイトから削除された機密ラベル|SensitivityLabelRemoved|SharePoint または Teams サイトから機密ラベルが削除されました。|
-|ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Office on the web または自動ラベル付けポリシーを使用して、機密ラベルがドキュメントに適用されました。|
-|ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged|Office on the web または自動ラベル付けポリシーを使用して、異なる機密ラベルがドキュメントに適用されました。|
-|ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Office on the web または自動ラベル付けポリシーを使用して、機密ラベルがドキュメントから削除されました。|
+|ファイルに適用された機密ラベル|FileSensitivityLabelApplied|Office on the web または自動ラベル付けポリシーを使用して、秘密度ラベルがドキュメントに適用されました。|
+|ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged|Office on the web または自動ラベル付けポリシーを使用して、異なる秘密度ラベルがドキュメントに適用されました。|
+|ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Office on the web または自動ラベル付けポリシーを使用して、秘密度ラベルがドキュメントから削除されました。|
 ||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>アイテム保持ポリシーと保持ラベルのアクティビティ
