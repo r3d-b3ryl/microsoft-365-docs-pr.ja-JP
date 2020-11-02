@@ -43,17 +43,17 @@ ms.locfileid: "48770075"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `DeviceId` | string | サービス内のデバイスの一意識別子 |
-| `DeviceName` | 文字列 | デバイスの完全修飾ドメイン名 (FQDN) |
-| `OSPlatform` | 文字列 | デバイス上で実行されているオペレーティングシステムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
+| `DeviceName` | string | デバイスの完全修飾ドメイン名 (FQDN) |
+| `OSPlatform` | string | デバイス上で実行されているオペレーティングシステムのプラットフォーム。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティング システムを示します。|
 | `Timestamp` | datetime | レコードが作成された日付と時刻 |
 | `ConfigurationId` | 文字列 | 特定の構成の一意の識別子 |
-| `ConfigurationCategory` | 文字列 | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
-| `ConfigurationSubcategory` | 文字列 | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
+| `ConfigurationCategory` | string | 構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御 |
+| `ConfigurationSubcategory` | string | 構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。 |
 | `ConfigurationImpact` | 文字列 | 構成の評価が全体の構成スコア (1-10) に及ぼす影響 |
 | `IsCompliant` | ブール値 | 構成やポリシーが正しく構成されているかどうかを示します |
-| `IsApplicable` | boolean | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
-| `Context` | 文字列 | 構成またはポリシーに関するその他のコンテキスト情報 |
-| `IsExpectedUserImpactCompliant` | boolean | 構成またはポリシーが適用されている場合にユーザーに影響があるかどうかを示します。 |
+| `IsApplicable` | ブール値 | 構成またはポリシーがデバイスに適用されるかどうかを示します。 |
+| `Context` | string | 構成またはポリシーに関するその他のコンテキスト情報 |
+| `IsExpectedUserImpactCompliant` | ブール値 | 構成またはポリシーが適用されている場合にユーザーに影響があるかどうかを示します。 |
 
 ## <a name="related-topics"></a>関連項目
 
