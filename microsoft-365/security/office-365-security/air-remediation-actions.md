@@ -20,12 +20,12 @@ description: Office 365 の Microsoft Defender で自動調査を行った後の
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c178655d60b45e45680a86c3973317e63c354f17
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446709"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844538"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の自動調査に続く修復アクション
 
@@ -53,7 +53,7 @@ ms.locfileid: "48446709"
 |カテゴリ|脅威/リスク|修復アクション|
 |---|---|---|
 |メール|マルウェア|ソフト削除電子メール/クラスター <br/><br/>クラスター内のメールメッセージの数が多く、マルウェアが含まれている場合、クラスターは悪意のあるものと見なされます。|
-|メール|悪意のある URL<br/>(悪意のある URL は、 [Office 365 ATP の安全なリンク](atp-safe-links.md)によって検出されました。|ソフト削除電子メール/クラスター <br/><br/>悪意のある URL を含む電子メールは、悪意のあるものと見なされます。|
+|メール|悪意のある URL<br/>(悪意のある URL は、 [Microsoft Defender For Office 365 では安全なリンク](atp-safe-links.md)によって検出されました。|ソフト削除電子メール/クラスター <br/><br/>悪意のある URL を含む電子メールは、悪意のあるものと見なされます。|
 |メール|フィッシング|ソフト削除電子メール/クラスター <br/><br/>1つのクラスター内に多数の電子メールメッセージが含まれていると、そのクラスターはフィッシングと見なされます。|
 |メール|Zapped フィッシング <br/>(電子メールメッセージが配信され、 [zapped](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)。)|ソフト削除電子メール/クラスター <br/><br/>Zapped メッセージを表示するためにレポートを使用できます。 [ZAP がメッセージと faq を移動したかどうかを確認](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message)します。|
 |メール|ユーザーによって [報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) された不在フィッシング電子メール|[ユーザーのレポートによってトリガーされる自動化された調査](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
@@ -67,7 +67,7 @@ ms.locfileid: "48446709"
 |User|異常メール送信 <br/>(ユーザーが以前の7-10 日より多くの電子メールを送信しました)。|自動調査を実行しても、特定の保留中のアクションは発生しません。 <br/><br/>多くの電子メールを送信することは、それ自体では悪意がありません。ユーザーは、1つのイベントについて大量の受信者グループに電子メールを送信しただけの場合があります。 調査するには、[メールフローのマップレポート](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-mail-flow-map-report)を含む[メールフローインサイト](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-insights-v2)を使用して、何が起こっているのかを特定し、処理を行います。|
 |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Office 365 の自動調査の詳細と結果を表示する](air-view-investigation-results.md)
 

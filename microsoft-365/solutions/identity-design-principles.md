@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547800"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845254"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Id とそれ以外の場合: 1 つの設計者の視点
 
@@ -132,11 +132,11 @@ Azure AD のポリシーエンジンは、 [条件付きアクセスポリシー
 
 この拡張された認証定義に同意する場合は、追加のソリューションを実装する必要があります。 どのソリューションを実装するかは、ポリシーの動的な方法と、優先度を設定する必要のある脅威によって決まります。 そのようなシステムの例を次に示します。
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
-- [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/) (azure ATP)
-- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (MICROSOFT defender ATP)
-- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (OFFICE 365 ATP)
+- [Id の Microsoft Defender](https://docs.microsoft.com/azure-advanced-threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) (mcas)
-- [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
+- [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
 - [Microsoft Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information?view=o365-worldwide) (MIP)
 - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/) 
@@ -187,7 +187,7 @@ Outlook クライアントを見ると、Exchange だけでなく、この機能
 
 ### <a name="multi-geo"></a>Multi-Geo 
 
-複数 [地域に](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) する場合、または複数地域にしない場合は、この質問が該当します。 Office 365 複数地域を使用すると、 [データ常駐](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations) の要件を満たすように選択した地理的な場所に、保存データをプロビジョニングして保存することができます。 この機能については、多くの misconceptions があります。 以下の点に注意します。 
+複数 [地域に](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) する場合、または複数地域にしない場合は、この質問が該当します。 Office 365 複数地域を使用すると、 [データ常駐](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations) の要件を満たすように選択した地理的な場所に、保存データをプロビジョニングして保存することができます。 この機能については、多くの misconceptions があります。 以下の点にご注意ください。 
 - パフォーマンス上のメリットは提供されません。 [ネットワーク設計](https://aka.ms/office365networking)が適切でない場合は、パフォーマンスが悪くなる可能性があります。 Microsoft ネットワークに対して "閉じる" デバイスを取得する (必ずしもデータには使用しないでください)。
 - [GDPR コンプライアンス](https://www.microsoft.com/trust-center/privacy/gdpr-overview)のソリューションではありません。 GDPR は、データ主権または保存場所にフォーカスしません。 そのためのコンプライアンスフレームワークは他にもあります。
 - この方法では、管理の委任 (下の図を参照) または [情報バリア](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)は解決されません。
@@ -208,7 +208,7 @@ Outlook クライアントを見ると、Exchange だけでなく、この機能
 
 すべてを委任することはできません (ただし、ギャップは減少します)。つまり、グローバル管理者の役割を使用する必要がある場合があります。 この役割のメンバーではなく、コードとしての構成と自動化を考慮する必要があります。
 
-**注**: Microsoft 365 管理センターには、ユーザーフレンドリなインターフェイスがありますが、Azure AD 管理者の環境と比較して機能のサブセットがあります。 両方のポータルは同じ Azure AD の役割を使用するので、変更は同じ場所で行われます。 ヒント: Azure の低優先管理 UI をすべて非表示にしたい場合は、を使用 [https://aad.portal.azure.com](https://aad.portal.azure.com) します。 
+**注** : Microsoft 365 管理センターには、ユーザーフレンドリなインターフェイスがありますが、Azure AD 管理者の環境と比較して機能のサブセットがあります。 両方のポータルは同じ Azure AD の役割を使用するので、変更は同じ場所で行われます。 ヒント: Azure の低優先管理 UI をすべて非表示にしたい場合は、を使用 [https://aad.portal.azure.com](https://aad.portal.azure.com) します。 
 
 名前の種類 役割の名前から仮定しないでください。 言語は、非常に正確なツールではありません。 目標は、必要な役割を確認する前に委任する必要がある操作を定義することです。 "Security Reader" 役割に他のユーザーを追加しても、すべてのユーザーのセキュリティ設定が表示されることはありません。 
 
@@ -242,27 +242,27 @@ Outlook クライアントを見ると、Exchange だけでなく、この機能
 
 - **Exchange Online** - [https://docs.microsoft.com/exchange/permissions-exo/permissions-exo](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 
 - **SharePoint Online** - [https://docs.microsoft.com/sharepoint/manage-site-collection-administrators](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators) 
-- **Microsoft Teams**  - [https://docs.microsoft.com/microsoftteams/itadmin-readiness ](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
+- **Microsoft Teams**  - [https://docs.microsoft.com/microsoftteams/itadmin-readiness](https://docs.microsoft.com/microsoftteams/itadmin-readiness )
 - **情報** - [https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions](https://docs.microsoft.com/microsoft-365/compliance/) 
-  + **アクセス許可のフィルター処理**  - [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search ](https://docs.microsoft.com/microsoft-365/compliance/)
-  + **コンプライアンスの境界**  - [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries ](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
-  + **高度な電子情報開示**  - [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 ](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
+  + **アクセス許可のフィルター処理**  - [https://docs.microsoft.com/microsoft-365/compliance/permissions-filtering-for-content-search](https://docs.microsoft.com/microsoft-365/compliance/)
+  + **コンプライアンスの境界**  - [https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries )
+  + **高度な電子情報開示**  - [https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20 )
 - **Yammer** - [https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-admins) 
 - **複数地域** - [https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin](https://docs.microsoft.com/microsoft-365/enterprise/add-a-sharepoint-geo-admin) 
 - **Dynamics 365** - [https://docs.microsoft.com/dynamics365/](https://docs.microsoft.com/dynamics365/) <br>
   注: このリンクは、ドキュメントのルートに関連しています。 管理/委任モデルには、さまざまな種類のサービスがあります。
-- **電源プラットフォーム**  - [https://docs.microsoft.com/power-platform/admin/admin-documentation ](https://docs.microsoft.com/power-platform/admin/admin-documentation )
-  + **パワーアプリ**  - [https://docs.microsoft.com/power-platform/admin/wp-security ](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
+- **電源プラットフォーム**  - [https://docs.microsoft.com/power-platform/admin/admin-documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation )
+  + **パワーアプリ**  - [https://docs.microsoft.com/power-platform/admin/wp-security](https://docs.microsoft.com/power-platform/admin/wp-security ) <br>
     注: 管理/委任モデルにはバリエーションがある複数の種類があります。
-  + **電源の自動化**  - [https://docs.microsoft.com/power-automate/environments-overview-admin ](https://docs.microsoft.com/power-automate/environments-overview-admin )
-  + **PowerBI**  - [https://docs.microsoft.com/power-bi/service-admin-governance ](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
+  + **電源の自動化**  - [https://docs.microsoft.com/power-automate/environments-overview-admin](https://docs.microsoft.com/power-automate/environments-overview-admin )
+  + **PowerBI**  - [https://docs.microsoft.com/power-bi/service-admin-governance](https://docs.microsoft.com/power-bi/service-admin-governance ) <br>
 メモ: データプラットフォームのセキュリティと委任 (Power BI がコンポーネントである) は、複雑な領域です。
-- **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control ](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
-- **Microsoft DEFENDER ATP**  - [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
-- **Microsoft の脅威保護** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
+- **MEM/Intune**  - [https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control )
+- **エンドポイント**  -  の Microsoft Defender [https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles )
+- **Microsoft 365 Defender** - [https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions)
 - **Microsoft Cloud App Security** - [https://docs.microsoft.com/cloud-app-security/manage-admins](https://docs.microsoft.com/cloud-app-security/manage-admins)
-- **Stream**  - [https://docs.microsoft.com/stream/assign-administrator-user-role ](https://docs.microsoft.com/stream/assign-administrator-user-role )
-- **情報の障壁**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers ](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
+- **Stream**  - [https://docs.microsoft.com/stream/assign-administrator-user-role](https://docs.microsoft.com/stream/assign-administrator-user-role )
+- **情報の障壁**  - [https://docs.microsoft.com/microsoft-365/compliance/information-barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers )
 
 Rest に関しては、ドキュメント内の検索は最近有効になってい [https://docs.microsoft.com/](https://docs.microsoft.com/microsoft-365/compliance/information-barriers) ます。 
 
@@ -273,9 +273,9 @@ Office 365 には、 [統合監査ログ](https://docs.microsoft.com/microsoft-3
 他の API を通じてアクセスされる Microsoft 365 ログの例には、次のようなものがあります。
 - [AZURE AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (Office 365 に関連付けられていないアクティビティ)
 - [Exchange メッセージ追跡](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
-- 前述の脅威/UEBA システム (たとえば、Azure AD Identity Protection、Microsoft Cloud App Security、Microsoft Defender ATP など)
+- 前述の脅威/UEBA システム (たとえば、Azure AD Identity Protection、Microsoft Cloud App Security、エンドポイントの Microsoft Defender など)
 - [Microsoft information protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
-- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 最初に、セキュリティおよびコンプライアンスプログラムに必要なすべてのログソースを特定することが重要です。 また、ログごとに、オンラインの保存期間の制限が異なることにも注意してください。 
@@ -292,7 +292,7 @@ Office 365 には、 [統合監査ログ](https://docs.microsoft.com/microsoft-3
 
 ログを1か所のみに指示する必要はありません。 また、 [POWER BI](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide)の Microsoft Cloud App Security またはカスタムの RBAC モデル[に Office 365 ログ](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)を統合することが有益な場合もあります。 さまざまなリポジトリには、さまざまな利点と対象ユーザーがあります。
 
-[Microsoft の脅威保護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)と呼ばれるサービスには、セキュリティ、脅威、脆弱性などに対して豊富な機能が組み込まれていることに注意してください。
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)と呼ばれるサービスには、セキュリティ、脅威、脆弱性などに対して豊富な機能が組み込まれていることに注意してください。
 
 多くの大規模なお客様は、このログデータをサードパーティ製システム (たとえば、SIEM) に転送することを希望しています。 この方法にはさまざまな方法がありますが、一般的な [Azure イベントハブ](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) および [グラフ](https://docs.microsoft.com/graph/security-integration) は、開始点としては適しています。
 
@@ -305,13 +305,13 @@ Office 365 には、 [統合監査ログ](https://docs.microsoft.com/microsoft-3
 -   承認プロセスを使用して、それぞれの1つを送信する (パワープラットフォーム)
 -   すべてのコンポーネントが承認されると、これらを統合された成果物 (Azure) [Microsoft GRAPH API](https://docs.microsoft.com/azure/active-directory/develop/microsoft-graph-intro) にまとめることができます。  これは不可能ですが、 [複数のテナント](https://docs.microsoft.com/azure/active-directory/develop/single-and-multi-tenant-apps)にまたがるソリューションを設計することは非常に複雑です。
 
-Azure の役割ベースのアクセス制御 (RBAC) により、Azure の詳細なアクセス管理が可能になります。 RBAC を使用すると、ユーザーがジョブを実行するのに必要な最小限のアクセス許可を付与することで、リソースへのアクセスを管理できます。 詳細はこのドキュメントの範囲外ですが、RBAC の詳細については、「 [Azure での役割ベースのアクセス制御 (rbac) とは](https://docs.microsoft.com/azure/role-based-access-control/overview)」を参照してください。 RBAC は重要ですが、Azure のガバナンスに関する考慮事項の一部にすぎません。 詳細については、「[クラウド導入フレームワーク](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/)」を参照してください。 私の友人、Andres Ravinet は、お客様が方法を決定するためにさまざまなコンポーネントについてのステップバイステップで説明しています。 さまざまな要素の高レベルのビュー (実際の顧客モデルに到達するプロセスとしては適していません) は、次のようなものです。
+Azure Role-Based アクセス制御 (RBAC) を使用すると、詳細に設定された Azure のアクセス管理が有効になります。 RBAC を使用すると、ユーザーがジョブを実行するのに必要な最小限のアクセス許可を付与することで、リソースへのアクセスを管理できます。 詳細はこのドキュメントの範囲外ですが、RBAC の詳細については、「 [Azure での役割ベースのアクセス制御 (rbac) とは](https://docs.microsoft.com/azure/role-based-access-control/overview)」を参照してください。 RBAC は重要ですが、Azure のガバナンスに関する考慮事項の一部にすぎません。 詳細については、「[クラウド導入フレームワーク](https://docs.microsoft.com/azure/cloud-adoption-framework/govern/)」を参照してください。 私の友人、Andres Ravinet は、お客様が方法を決定するためにさまざまなコンポーネントについてのステップバイステップで説明しています。 さまざまな要素の高レベルのビュー (実際の顧客モデルに到達するプロセスとしては適していません) は、次のようなものです。
 
 ![委任された管理のための Azure コンポーネントの高レベルのビュー](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
 上記の図からわかるように、他の多くのサービスは設計の一部として考慮する必要があります (例: [Azure ポリシー](https://docs.microsoft.com/azure/governance/policy/overview)、 [azure 青写真](https://docs.microsoft.com/azure/governance/blueprints/overview)、 [管理グループ](https://docs.microsoft.com/azure/governance/management-groups/)など)。
 
-## <a name="conclusion"></a>終わりに
+## <a name="conclusion"></a>まとめ
 短時間の概要として開始されましたが、予想よりも長くなっています。  これで、組織の委任モデルの作成の詳細を紹介する準備ができました。  この会話は、お客様とよく似ています。 すべてのユーザーに対して動作するモデルは1つありません。 お客様に対して表示される一般的なパターンを文書化する前に、Microsoft エンジニアリングからいくつかの改善された改良を待ってください。 それまでは、Microsoft アカウントチームと協力して、最も近い [Microsoft テクノロジセンター](https://www.microsoft.com/mtc)へのアクセスを手配することができます。  こちらを参照してください。
 
 

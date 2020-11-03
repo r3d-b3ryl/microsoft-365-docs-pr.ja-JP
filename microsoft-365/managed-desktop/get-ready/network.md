@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ee93840cb6855d776d8fd3007bc6ec7c7f44fa29
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 28f438c80f2da5740f7fcd0a2927fede1af6eb50
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308065"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844070"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft マネージド デスクトップのネットワーク構成
 
@@ -60,7 +60,7 @@ Windows 10 Enterprise (Windows Update for Business) | [Windows 10 バージョ�
 Microsoft 365 | [Microsoft 365 の URL と IP アドレスの範囲](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [ハイブリッド id 必要なポートとプロトコル](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) 、 [Active directory および Active directory ドメインサービスのポートの要件](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune ネットワーク構成の要件](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune のネットワークエンドポイント](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
-Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Microsoft Defender for Endpoint | [エンドポイント要件の Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Windows 自動操縦のネットワーク要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---

@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769378"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845689"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
-組織で [office 365 Advanced Threat Protection](office-365-atp.md) (OFFICE 365 ATP) を使用しており、 [必要なアクセス許可](#required-licenses-and-permissions)がある場合は、 **Explorer** または **リアルタイムの検出** (以前の *リアルタイムのレポート* - [新機能を参照](#new-features-in-threat-explorer-and-real-time-detections)) があります。 [セキュリティ & コンプライアンスセンター] で、[ **脅威の管理** ] に移動してから、[ **エクスプローラー** ] _または_ [ **リアルタイムの検出** ] を選択します。
+組織が [Microsoft Defender For Office 365](office-365-atp.md)を所有していて、 [必要なアクセス許可](#required-licenses-and-permissions)を持っている場合は、 **Explorer** または **リアルタイムの検出** (以前の *リアルタイムのレポート* - [新機能を参照してください](#new-features-in-threat-explorer-and-real-time-detections)) があります。 [セキュリティ & コンプライアンスセンター] で、[ **脅威の管理** ] に移動してから、[ **エクスプローラー** ] _または_ [ **リアルタイムの検出** ] を選択します。
 
-|ATP プラン2を使用すると、次のように表示されることになります。|ATP プラン1では、次のように表示されることがあります。|
+|Microsoft Defender for Office 365 プラン2については、以下を参照してください。|Microsoft Defender for Office 365 プラン1を使用すると、次のように表示されることがあります。|
 |---|---|
 |![脅威エクスプローラー](../../media/threatmgmt-explorer.png)|![リアルタイムの検出](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,27 +42,27 @@ ms.locfileid: "48769378"
 
 - [Microsoft 365 セキュリティ機能によって検出されたマルウェアを参照](#see-malware-detected-in-email-by-technology)
 - [フィッシング Url に関するデータを表示し、[verdict] をクリックします。](#view-data-about-phishing-urls-and-click-verdict)
-- [エクスプローラーのビューから自動化された調査と応答プロセスを開始](#start-automated-investigation-and-response) する (ATP プラン2のみ)
+- [エクスプローラーのビューから自動化された調査と応答プロセスを開始](#start-automated-investigation-and-response) する (Defender for Office 365 プラン2のみ)
 - ...[悪意のある電子メールの調査など](#more-ways-to-use-explorer-or-real-time-detections)
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーおよびリアルタイム検出の機能が向上しました。
 
-## <a name="tags-in-threat-explorer"></a>脅威エクスプローラーのタグ
+### <a name="tags-in-threat-explorer"></a>脅威エクスプローラーのタグ
 
 > [!NOTE]
 > ユーザータグ機能はプレビューでは、すべてのユーザーが利用できるわけではなく、変更される可能性があります。 リリーススケジュールの詳細については、Microsoft 365 ロードマップをご覧ください。
 
-ユーザータグとは、Office 365 の Microsoft Defender で特定のユーザーグループの識別子です。 タグの詳細については、「ライセンスと構成タグの詳細」を参照してください。 [Office 365 ATP のユーザータグ](user-tags.md)。
+ユーザータグとは、Office 365 の Microsoft Defender で特定のユーザーグループの識別子です。 タグの詳細、ライセンスの取得と構成タグの詳細については、「 [Office 365 の Defender のユーザータグ](user-tags.md)」を参照してください。
 
-脅威エクスプローラーでは、次のような場合に、ユーザータグに関する情報を表示できます。
+脅威エクスプローラーでは、次のような場合に、ユーザータグに関する情報を確認できます。
 
 #### <a name="email-grid-view"></a>メールグリッドビュー
 
 [電子メール] グリッドに表示される [タグ] 列には、送信者または受信者のメールボックスに適用されているすべてのタグが含まれています。 既定では、優先度のアカウントなどのシステムタグが最初に表示されます。
 
 > [!div class="mx-imgBorder"]
-> ![タグのフィルター](../../media/tags-grid.png)
+> ![メールグリッドビューでのタグのフィルター処理](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>フィルター処理
 これで、優先度の高いアカウント、または特定のユーザータグシナリオにわたってタグが表示されるようになりました。また、この環境の一部として特定のタグを含む結果を除外することもできます。 このような他の複数のフィルターを組み合わせて使用することで、調査の範囲を絞ることができます。
@@ -196,6 +196,16 @@ URL と URL をクリックすると、次のような機能が強化されま�
 - [更新プロセスでの更新](#update-in-the-refresh-process)
 - [フィルターに追加するグラフのドリルダウン](#chart-drilldown-to-add-to-filters)
 - [製品情報の更新](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>ユーザータグによるフィルター
+
+システムまたはカスタムユーザータグを使用して並べ替えとフィルター処理を行うことで、脅威の範囲をすばやく把握できるようになりました。 詳細については、「 [Office 365 ATP のユーザータグ](user-tags.md) 」を参照してください。
+
+> [!IMPORTANT]
+> ユーザータグによるフィルター処理と並べ替えは、現在、パブリックプレビュー表示されています。
+> 商用リリース前に大幅に変更されている可能性があります。 Microsoft は、提供された情報に関して、明示的または黙示的な保証を行いません。
+
+![Explorer の [Tags] 列](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>タイムゾーンの向上
 
@@ -375,7 +385,7 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 2. [ **表示** ] メニューの [ **電子メール** フィッシング] をクリックし  >  **Phish** ます。
 
    > [!div class="mx-imgBorder"]
-   > ![エクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![フィッシングコンテキストでのエクスプローラーの [表示] メニュー](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. [ **送信者** ] をクリックし、[ **url** ] を選択して、  >  **[verdict] をクリック** します。
 
@@ -422,7 +432,7 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 2. [ **表示** ] メニューの [ **電子メール** の送信] を選択し  >  **Submissions** ます。
 
    > [!div class="mx-imgBorder"]
-   > ![エクスプローラーの [表示] メニュー](../../media/explorer-view-menu-email-user-reported.png)
+   > ![エクスプローラーの電子メール用の [表示] メニュー](../../media/explorer-view-menu-email-user-reported.png)
 
 3. [ **送信者** ] をクリックし、[ **基本** レポートの種類] を選択し  >  **Report type** ます。
 
@@ -431,12 +441,12 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
    > [!div class="mx-imgBorder"]
    > ![ユーザーによって報告されるフィッシング](../../media/EmailUserReportedReportType.png)
 
-レポートが更新され、組織内のユーザーがフィッシングとして報告した電子メールメッセージに関するデータが表示されます。 この情報を使用して、さらに分析を行い、必要に応じて、 [ATP のフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を調整することができます。
+レポートが更新され、組織内のユーザーがフィッシングとして報告した電子メールメッセージに関するデータが表示されます。 この情報を使用してさらに分析を行い、必要に応じて、 [Microsoft Defender For Office 365 のフィッシング対策ポリシー](configure-atp-anti-phishing-policies.md)を調整することができます。
 
 ## <a name="start-automated-investigation-and-response"></a>自動調査と応答の開始
 
 > [!NOTE]
-> 自動化された調査および応答機能は、 **office 365 ATP Plan 2** および **office 365 E5** で利用できます。
+> 自動調査および応答機能は、 **Microsoft Defender For office 365 プラン 2** および **office 365 E5** で利用できます。
 
 (新)自動化された [調査と応答](automated-investigation-response-office.md) によって、セキュリティ運用チームの時間と労力を節約し、cyberattacks を調査および軽減することができます。 セキュリティプレイブックをトリガーできる通知を構成するだけでなく、エクスプローラーのビューから自動化された調査および応答プロセスを開始できます。
 
@@ -454,11 +464,11 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 ## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
 
-エクスプローラーまたはリアルタイムの検出を取得するには、 [Office 365 ATP](office-365-atp.md) が必要です。
+エクスプローラーまたはリアルタイムの検出を取得するには、 [Microsoft Defender For Office 365](office-365-atp.md) が必要です。
 
-- Explorer は Office 365 ATP Plan 2 に含まれています。
-- リアルタイム検出レポートは、Office 365 ATP Plan 1 に含まれています。
-- Office 365 ATP で保護する必要があるすべてのユーザーにライセンスを割り当てることを計画します。 (エクスプローラーまたはリアルタイムの検出は、ライセンスが付与されたユーザーの検出データを示します)。
+- Explorer は、Office 365 プラン2の Defender に含まれています。
+- リアルタイムの検出レポートは、Office 365 プラン1の Defender に含まれています。
+- Office 365 の Defender で保護する必要があるすべてのユーザーにライセンスを割り当てることを計画します。 (エクスプローラーまたはリアルタイムの検出は、ライセンスが付与されたユーザーの検出データを示します)。
 
 エクスプローラーまたはリアルタイム検出を表示して使用するには、セキュリティ管理者やセキュリティリーダーに付与されている権限など、適切なアクセス許可を持っている必要があります。
 
@@ -482,9 +492,9 @@ Microsoft 365 テクノロジを使用して、電子メールで検出された
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出の相違点
 
-- **リアルタイムの検出** レポートは OFFICE 365 atp plan 1 で利用できますが、 **脅威エクスプローラー** は office 365 atp plan 2 で利用できます。
+- **リアルタイムの検出** レポートは、Office 365 プラン1の defender で利用できますが、 **脅威エクスプローラー** は office 365 プラン2の defender で利用できます。
 - **リアルタイムの検出** レポートを使用すると、検出がリアルタイムで表示されます。 **脅威エクスプローラー** も同様ですが、特定の攻撃に関する追加の詳細を表示することもできます。
 - **すべての電子メール** ビューは、 **脅威エクスプローラー** で使用できます ( **リアルタイムの検出** レポートには含まれません)。
 - 他のフィルター処理機能および使用可能なアクションは、 **脅威エクスプローラー** に含まれています。
 
-詳細については、「 [Office 365 Atp サービスの説明: Advanced Threat Protection (ATP) プランで利用できる機能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
+詳細については、「 [Microsoft defender For office 365 Service Description: defender For office 365 プランの機能の可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。

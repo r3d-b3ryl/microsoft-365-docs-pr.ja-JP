@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: ランサムウェア、フィッシング、悪意のある添付ファイルを含む、サイバーの脅威からビジネスメールとデータを保護します。
-ms.openlocfilehash: c72090bebe92ea61d99772eccde041d011c05580
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e91d2c6fc3df7cbcd7fedc198747838d470ab7d8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398649"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845422"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅からの作業をサポートするためのセキュリティチームのトップ12タスク
 
@@ -40,11 +40,11 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 
 |手順|タスク|すべての Office 365 Enterprise プラン|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1 |[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[脅威からの保護](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Office 365 Advanced Threat Protection を構成する](#3-configure-office-365-advanced-threat-protection)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4 |[Azure Advanced Threat Protection (ATP) を構成する](#4-configure-azure-advanced-threat-protection)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[Microsoft Threat Protection を有効にする](#5-turn-on-microsoft-threat-protection)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1-d|[Azure 多要素認証 (MFA) を有効にする](#1-enable-azure-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|pbm-2|[脅威からの保護](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1/3|[Microsoft Defender for Office 365 を構成する](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4 |[Id 用に Microsoft Defender を構成する](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[Microsoft 365 Defender をオンにする](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[電話とタブレットの Intune モバイルアプリ保護を構成する](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Intune アプリ保護を含むゲストの MFA および条件付きアクセスを構成する](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Pc をデバイス管理に登録し、準拠している Pc を必要とする](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -86,17 +86,17 @@ Microsoft のビジネスプランのいずれかを使用している小規模�
 
 開始点として使用できるガイダンスについては、「 [Office 365 の脅威から保護](office-365-security/protect-against-threats.md) する」を参照してください。
 
-## <a name="3-configure-office-365-advanced-threat-protection"></a>3: Office 365 Advanced Threat Protection を構成する
+## <a name="3-configure-microsoft-defender-for-office-365"></a>3: Microsoft Defender for Office 365 を構成する
 
-Office 365 Advanced Threat Protection (ATP) は、Microsoft 365 E5 および Office 365 E5 に含まれており、電子メールメッセージ、リンク (Url) およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 これには、を構成するのに数時間かかる場合があります。
+Microsoft Defender for Office 365 は、Microsoft 365 E5 および Office 365 E5 に含まれており、電子メールメッセージ、リンク (Url) およびコラボレーションツールによってもたらされる悪意のある脅威から組織を保護します。 これには、を構成するのに数時間かかる場合があります。
 
-Office 365 ATP:
+Microsoft Defender for Office 365:
 
 - 悪意のあるコンテンツの添付ファイルとリンクを検査するインテリジェントシステムを使用して、組織をリアルタイムで不明な電子メールの脅威から保護します。 これらの自動化されたシステムには、堅牢な分析プラットフォーム、ヒューリスティック、およびマシン学習モデルが含まれています。
 - チームサイトおよびドキュメントライブラリ内の悪意のあるファイルを特定してブロックすることによって、ユーザーがファイルを共同したり、共有したりするときに、組織を保護します。
 - コンピューターの学習モデルと高度な偽装検出アルゴリズムを avert フィッシング攻撃に適用します。
 
-プランの概要を含む概要については、「 [Office 365 Advanced Threat Protection](office-365-security/office-365-atp.md)」を参照してください。
+プランの概要を含む概要については、「 [Defender For Office 365](office-365-security/office-365-atp.md)」を参照してください。
 
 グローバル管理者は、次の保護を構成できます。
 
@@ -104,25 +104,25 @@ Office 365 ATP:
 - [安全なリンクのグローバル設定を構成する](office-365-security/configure-global-settings-for-safe-links.md)
 - [安全添付ファイルポリシーをセットアップする](office-365-security/set-up-atp-safe-attachments-policies.md)
 
-これらのワークロードに対して ATP を構成するには、Exchange Online 管理者および SharePoint Online 管理者と協力する必要があります。
+これらのワークロードについては、Exchange Online 管理者および SharePoint Online 管理者と協力して、Office 365 の Defender を構成する必要があります。
 
 - [SharePoint、OneDrive、Microsoft Teams 用の ATP](office-365-security/atp-for-spo-odb-and-teams.md)
 
-## <a name="4-configure-azure-advanced-threat-protection"></a>4: Azure Advanced Threat Protection を構成する
+## <a name="4-configure-microsoft-defender-for-identity"></a>4: Id 用に Microsoft Defender を構成する
 
-[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (azure ATP) は、クラウドベースのセキュリティソリューションであり、オンプレミスの Active Directory シグナルを活用して、組織に向けた高度な脅威、侵害された id、および悪意のある insider 操作を識別、検出、調査します。 オンプレミスとクラウドインフラストラクチャを保護し、依存関係または前提条件を持たず、すぐにメリットを得ることができるため、このことに注目してください。
+[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) は、クラウドベースのセキュリティソリューションであり、オンプレミスの Active Directory シグナルを活用して、組織に向けた高度な脅威、侵害された id、および悪意のある insider 操作を識別、検出、調査します。 オンプレミスとクラウドインフラストラクチャを保護し、依存関係または前提条件を持たず、すぐにメリットを得ることができるため、このことに注目してください。
 
-- セットアップをすばやく取得するには、「 [AZURE ATP クイックスタート](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 」を参照してください。
-- [ビデオを見る: AZURE ATP の概要](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- [AZURE ATP 展開の3つのフェーズ](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)を確認する
+- セットアップをすばやく取得するには、 [Id クイックスタートの Microsoft Defender](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) を参照してください。
+- [ビデオを見る: Identity の Microsoft Defender の概要](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- [Id 展開のための Microsoft Defender の3つのフェーズ](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)を確認する
 
-## <a name="5-turn-on-microsoft-threat-protection"></a>5: Microsoft の脅威保護を有効にする
+## <a name="5-turn-on-microsoft-365-defender"></a>5: Microsoft 365 Defender をオンにする
 
-Office 365 ATP と Azure ATP が構成されたので、これらの機能の組み合わせた信号を1つのダッシュボードで表示できます。 [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) により、アラート、インシデント、自動化された調査と応答、およびワークロード全体にわたる高度な検索が実現されます (Azure ATP、OFFICE 365 Atp、MICROSOFT Defender ATP、および Microsoft Cloud App Security) は、 [security.microsoft.com](https://security.microsoft.com)の単一のウィンドウに表示されます。
+これで、Microsoft Defender for Office 365 と Microsoft Defender で Id が構成されました。これで、これらの機能の組み合わせた信号を1つのダッシュボードで表示できます。 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) は、アラート、インシデント、自動化された調査と応答、およびワークロード全体にわたる高度な検索 [を行います](https://security.microsoft.com)(id は microsoft defender、Office 365 は microsoft Defender 用、microsoft Cloud App Security は microsoft Cloud App Security)。
 
 ![MTP ダッシュボードの図](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
-1つ以上の advanced threat protection サービスを構成した後、MTP を有効にします。 新機能は、継続的に MTP に追加されます。プレビュー機能を受信するには、をオプトインすることを検討してください。
+Office 365 サービスの1つ以上の Defender を構成した後、MTP を有効にします。 新機能は、継続的に MTP に追加されます。プレビュー機能を受信するには、をオプトインすることを検討してください。
 
 - [MTP の詳細情報](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [MTP を有効にする](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
@@ -173,7 +173,7 @@ Microsoft 365 E5 プランを使用していて、リスクベースの MFA に�
 
 デバイスを登録した後、 [一般的な id およびデバイスアクセスポリシー](./office-365-security/identity-access-policies.md) のガイダンスを使用して、これらのポリシーを作成します。
 
-- [デバイスコンプライアンスポリシーの定義](./office-365-security/identity-access-policies.md#define-device-compliance-policies) : Windows 10 の推奨設定では、ウイルス対策保護が必要になります。 Microsoft 365 E5 がある場合は、Microsoft Defender Advanced Threat Protection を使用して従業員のデバイスの正常性を監視します。 他のオペレーティングシステムのコンプライアンスポリシーには、ウイルス対策保護とエンドポイント保護ソフトウェアが含まれていることを確認してください。
+- [デバイスコンプライアンスポリシーの定義](./office-365-security/identity-access-policies.md#define-device-compliance-policies) : Windows 10 の推奨設定では、ウイルス対策保護が必要になります。 Microsoft 365 E5 がある場合は、エンドポイントとして Microsoft Defender を使用して、従業員のデバイスの正常性を監視します。 他のオペレーティングシステムのコンプライアンスポリシーには、ウイルス対策保護とエンドポイント保護ソフトウェアが含まれていることを確認してください。
 - 準拠している[pc を必要と](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)する—これは、デバイスコンプライアンスポリシーを強制する Azure AD の条件付きアクセスルールです。
 
 1つの組織のみがデバイスを管理できるので、Azure AD の条件付きアクセスルールからゲストアカウントを除外するようにしてください。 デバイスコンプライアンスを必要とするポリシーからゲストおよび外部ユーザーを除外しない場合、これらのポリシーによってこれらのユーザーがブロックされます。 詳細については、「 [一般ポリシーを更新してゲストおよび外部アクセスを許可および保護する](./office-365-security/identity-access-policies-guest-access.md)」を参照してください。
@@ -247,6 +247,6 @@ Microsoft 365 には、状態を監視し、適切な操作を実行するいく
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます! 最も重要なセキュリティ保護の一部を迅速に実装し、組織のセキュリティをさらに強化しています。 これで、脅威保護機能 (Microsoft Defender Advanced Threat Protection を含む)、データ分類と保護機能、および管理アカウントの保護をさらに進める準備ができました。 Microsoft 365 のセキュリティに関する推奨事項の詳細については、「 [microsoft 365 security For Business 意思決定者 (bdm)](Microsoft-365-security-for-bdm.md)」を参照してください。
+おめでとうございます。 最も重要なセキュリティ保護の一部を迅速に実装し、組織のセキュリティをさらに強化しています。 これで、脅威保護機能 (エンドポイントの Microsoft Defender を含む)、データ分類と保護機能、および管理アカウントの保護をさらに進める準備ができました。 Microsoft 365 のセキュリティに関する推奨事項の詳細については、「 [microsoft 365 security For Business 意思決定者 (bdm)](Microsoft-365-security-for-bdm.md)」を参照してください。
 
 また、 [docs.microsoft.com/security](https://docs.microsoft.com/security)の Microsoft の新しいセキュリティセンターにアクセスしてください。

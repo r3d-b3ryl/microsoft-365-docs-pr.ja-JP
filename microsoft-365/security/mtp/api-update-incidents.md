@@ -1,6 +1,6 @@
 ---
 title: インシデント API の更新
-description: Microsoft 脅威保護 API を使用してインシデントを更新する方法について説明します。
+description: Microsoft 365 Defender API を使用してインシデントを更新する方法について説明します。
 keywords: update、api、incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203634"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844838"
 ---
 # <a name="update-incidents-api"></a>インシデント API の更新
 
@@ -32,7 +32,7 @@ ms.locfileid: "48203634"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -49,7 +49,7 @@ ms.locfileid: "48203634"
 
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法を含む詳細については、「 [Microsoft の脅威保護 api にアクセス](api-access.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法を含む詳細については、「 [Microsoft 365 Defender Api へのアクセス](api-access.md)」を参照してください。
 
 アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
 :---|:---|:---
@@ -69,10 +69,10 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前 | 種類 | 説明
+名前 | 型 | 説明
 :---|:---|:---
-Authorization | String | ベアラー {token}。 **必須**。
-Content-Type | 文字列 | application/json. **必須**。
+Authorization | String | ベアラー {token}。 **必須** 。
+Content-Type | 文字列 | application/json. **必須** 。
 
 
 ## <a name="request-body"></a>要求本文
@@ -80,10 +80,10 @@ Content-Type | 文字列 | application/json. **必須**。
 <br>要求本文に含まれない既存のプロパティは、以前の値のままになるか、他のプロパティ値の変化に基づいて再計算されます。 
 <br>最適なパフォーマンスを得るために、変更されていない既存の値を含めないでください。
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 :---|:---|:---
 status | 列挙 | 通知の現在の状態を指定します。 可能な値は ```Active``` 、、、 ```Resolved``` ```Redirected``` です。
-assignedTo | 文字列 | インシデントの所有者。
+assignedTo | string | インシデントの所有者。
 classification | 列挙 | 通知の仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。
 決定 | 列挙 | 通知の決定を指定します。 可能な値は、```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware```、```Other``` です。
 tags | 文字列リスト | インシデントタグのリスト。

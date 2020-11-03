@@ -1,6 +1,6 @@
 ---
-title: Microsoft Threat Protection の新機能
-description: Microsoft の脅威保護の新機能の一覧を掲載しています。
+title: Microsoft 365 Defender の新機能
+description: Microsoft 365 Defender の新機能の一覧を示します。
 keywords: microsoft の脅威保護、ga、一般提供される機能、利用可能な新機能、新規
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 1b3cc273b61fcdff3c01b30c9ef64619a0e7a368
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430399"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844706"
 ---
-# <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft Threat Protection の新機能
+# <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Microsoft の脅威保護の最新リリースでは、次の機能が一般公開 (GA) されています。
+Microsoft 365 Defender の最新リリースでは、次の機能が一般公開 (GA) されています。
 
 RSS フィード: このページが更新されたときに通知を取得するには、次の URL をフィードリーダーにコピーして貼り付けます。
 ```http

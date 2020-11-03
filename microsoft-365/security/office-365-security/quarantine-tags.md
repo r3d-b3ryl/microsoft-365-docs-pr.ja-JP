@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理者は、検疫タグを使用して、検疫済みメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
-ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
-ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
+ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819742"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845698"
 ---
 # <a name="quarantine-tags"></a>検疫タグ
 
@@ -89,7 +89,7 @@ EOP は、従来、 [検疫](find-and-release-quarantined-messages-as-a-user.md)
        - **受信者が検疫から解放されるメッセージを要求できるようにする**
 
      - **受信者が検疫済みメッセージに対して実行できる追加のアクションを選択** します。以下のいずれかの値を選択します。
-       - **削除**
+       - **Delete**
        - **プレビュー**
        - **送信者を許可する**
        - **受信拒否**
@@ -229,7 +229,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |機能|検疫タグはサポートされていますか?|使用される既定の検疫タグ|
 |---|:---:|---|
 |[スパム対策ポリシー](configure-your-spam-filter-policies.md): <ul><li>**スパム** ( _SpamAction_ )</li><li>**信頼度の高いスパム** ( _HighConfidenceSpamAction_ )</li><li>**フィッシング電子メール** ( _PhishSpamAction_ )</li><li>**高信頼フィッシング電子メール** ( _HighConfidencePhishAction_ )</li><li>**バルクメール** ( _BulkSpamAction_ )</li></ul>|はい|<ul><li>DefaultSpamTag (フルアクセス)</li><li>DefaultHighConfSpamTag (フルアクセス)</li><li>DefaultPhishTag (フルアクセス)</li><li>DefaultHighConfPhishTag (アクセス不可)</li><li>DefaultBulkTag (フルアクセス)</li></ul>
-|フィッシング対策ポリシー: <ul><li>[スプーフィングインテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) ( _authenticationfailaction_ )</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies):<sup>\*</sup> <ul><li>**偽装ユーザーによって電子メールが送信される場合** ( _targeteduserprotectionaction_ )</li><li>**偽装ドメインによって電子メールが送信される場合** ( _targeteddomainprotectionaction_ )</li><li>**メールボックスインテリジェンス** \>**偽装ユーザーによって電子メールが送信される場合** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|いいえ|該当なし|
+|フィッシング対策ポリシー: <ul><li>[スプーフィングインテリジェンス保護](set-up-anti-phishing-policies.md#spoof-settings) ( _authenticationfailaction_ )</li><li>[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365):<sup>\*</sup> <ul><li>**偽装ユーザーによって電子メールが送信される場合** ( _targeteduserprotectionaction_ )</li><li>**偽装ドメインによって電子メールが送信される場合** ( _targeteddomainprotectionaction_ )</li><li>**メールボックスインテリジェンス** \>**偽装ユーザーによって電子メールが送信される場合** ( _MailboxIntelligenceProtectionAction_ )</li></ul></li></ul></ul>|いいえ|該当なし|
 |[マルウェア対策ポリシー](configure-anti-malware-policies.md): 検出されたすべてのメッセージが常に検疫されます。|いいえ|該当なし|
 |[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)|いいえ|該当なし|
 |アクションを使用した [メールフロールール](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)(トランスポートルールとも呼ばれる): ホストされた検疫 ( _検疫_ ) **にメッセージを配信** します。|いいえ|該当なし|

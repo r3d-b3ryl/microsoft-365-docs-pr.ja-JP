@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for キャンペーンがユーザーに与える影響について説明します。
-ms.openlocfilehash: fc10e3521b9e165d0a6efd6d1ed37b53a5abf74f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: c9cbb64a5585aae4db8f878afcfc19c98711518b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527020"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845194"
 ---
 # <a name="how-microsoft-365-for-campaigns-affects-your-users"></a>Microsoft 365 for キャンペーンがユーザーに与える影響
 
@@ -40,15 +40,15 @@ Microsoft 365 for キャンペーンでは、ハッカーが自分の環境に�
 ## <a name="use-secure-email-practices"></a>セキュリティで保護された電子メールプラクティスの使用
 メールの安全性を確保するために、すべてのユーザーは、これらのメールプラクティスを認識して使用する必要があります。
 - 認証アプリで多要素認証を使用するように電子メールをセットアップします。
-- 正当な電子メールを確認し、ATP Advanced フィッシング対策からの安全なヒントを探します。
-- ATP の安全なリンクと ATP の安全な添付ファイルによって確認されたとおりに、安全なリンクと添付ファイルのみを開きます。
+- 正当な電子メールを確認し、Office 365 保護のための Defender の Advanced フィッシングからの安全なヒントを探します。
+- 「安全なリンク」と「安全な添付ファイル」で確認されているように、安全なリンクと添付ファイルのみを開きます。
 
 [フィッシングやその他の攻撃の](m365-campaigns-phishing-and-attacks.md)詳細について説明します。 
 
-ユーザーのためのヒントと、キャンペーンチームのメンバーに関する[インフォグラフィック](m365-campaigns-protect-campaign-infographic.md)をダウンロードします。
+ユーザーのためのヒントと、キャンペーンチームのメンバーに関する [インフォグラフィック](m365-campaigns-protect-campaign-infographic.md) をダウンロードします。
 
 ## <a name="set-up-iphones-and-android-devices"></a>IPhones と Android デバイスをセットアップする
-環境に追加するすべてのユーザーは、安全に機能するように[iPhones および Android デバイスをセットアップ](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)するのに数分かかる必要があります。
+環境に追加するすべてのユーザーは、安全に機能するように [iPhones および Android デバイスをセットアップ](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) するのに数分かかる必要があります。
 - オーセンティケータアプリで多要素認証を使用するようにデバイスを設定します。
 - Microsoft モバイルアプリ (Outlook Mobile、Word、OneDrive、その他の Microsoft アプリをアプリストアから使用) を使用します。 IPhones および Android デバイスに含まれるネイティブメールアプリはサポートされていません。 
 - ユーザーがデバイスのロックを解除するために PIN を要求します。
@@ -69,10 +69,10 @@ Microsoft 365 for キャンペーンでは、ハッカーが自分の環境に�
 ||**Windows 10**|**Mac**|
 |セキュリティ機能|BitLocker デバイス保護を有効にする<p><p> Windows Defender をオンのままにしておく <p>Windows ファイアウォールを有効にする| FileVault を使用して Mac ディスクを暗号化する <p><p>信頼できるウイルス対策ソフトウェアを使用する <p>ファイアウォール保護を有効にする|
 
-これらの推奨事項の詳細については、「[ハッカーやマルウェアからのアカウントとデバイスの保護](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)」を参照してください。
+これらの推奨事項の詳細については、「 [ハッカーやマルウェアからのアカウントとデバイスの保護](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10)」を参照してください。
 
 ## <a name="collaborate-using-microsoft-teams-onedrive-sharepoint-online-and-other-tools"></a>Microsoft Teams、OneDrive、SharePoint Online、その他のツールを使用して共同作業を行う
-ユーザーは、Microsoft 365 以外の場所に組織のファイルを共有し、保存しようとする場合があります。 Microsoft 365 を使用すると、簡単に共同作業し、安全に共有できます。 ファイル[とビデオ](share-files-and-videos.md)は、Microsoft Teams、OneDrive、Stream、またはファイル内からも直接共有できます。 これらのツール内から共有することで、データがリークしないようにすることができます。 機密データに保護を追加して、組織外での共有を防ぐことができます。 
+ユーザーは、Microsoft 365 以外の場所に組織のファイルを共有し、保存しようとする場合があります。 Microsoft 365 を使用すると、簡単に共同作業し、安全に共有できます。 ファイル [とビデオ](share-files-and-videos.md) は、Microsoft Teams、OneDrive、Stream、またはファイル内からも直接共有できます。 これらのツール内から共有することで、データがリークしないようにすることができます。 機密データに保護を追加して、組織外での共有を防ぐことができます。 
 
 
 ## <a name="set-up-managed-windows-10-devices"></a>管理された Windows 10 デバイスをセットアップする

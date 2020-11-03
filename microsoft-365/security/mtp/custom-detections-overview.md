@@ -1,5 +1,5 @@
 ---
-title: Microsoft の脅威保護のカスタム検出の概要
+title: Microsoft 365 Defender のカスタム検出の概要
 description: 高度な検索を使用してユーザー設定の検出を作成し、通知を生成する方法について説明します。
 keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、カスタム検出、スキーマ、kusto、microsoft 365、Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 28d6cca20c8b386d5e6f7f39b80264a39f88ec55
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fe2b9f1b52fa2c8d9031bb58597992f3dda91520
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199467"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843914"
 ---
 # <a name="custom-detections-overview"></a>カスタム検出の概要
 
@@ -30,7 +30,7 @@ ms.locfileid: "48199467"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 カスタム検出を使用すると、疑いのある違反のアクティビティや不適切なエンドポイントを含む、さまざまなイベントやシステム状態を事前に監視して応答することができます。 これは、通知を自動的にトリガーするカスタマイズ可能な検出ルール、および応答アクションによって可能になります。
 

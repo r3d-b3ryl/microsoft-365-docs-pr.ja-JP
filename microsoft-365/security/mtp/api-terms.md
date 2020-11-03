@@ -1,6 +1,6 @@
 ---
-title: Microsoft の脅威保護 Api のライセンスと使用条件
-description: Microsoft の脅威保護で使用されているライセンスおよび Api の使用条件の説明
+title: Microsoft 365 Defender Api のライセンスと使用条件
+description: Microsoft 365 Defender のライセンスと Api の使用条件の説明
 keywords: api、api、ライセンス、使用条件、api、法律、通知、倫理規定
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d76992108fb3cda82bd9ad9886a2886f70695788
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203675"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844898"
 ---
-#  <a name="microsoft-threat-protection-apis-license-and-terms-of-use"></a>Microsoft の脅威保護 Api のライセンスと使用条件
+#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender Api のライセンスと使用条件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -39,7 +39,7 @@ ms.locfileid: "48203675"
 
 ## <a name="apis"></a>API
 
- Microsoft の脅威保護 Api は、 [MICROSOFT API のライセンスと使用条件](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)によって制御されます。
+ Microsoft 365 Defender Api は、 [MICROSOFT API のライセンスと使用条件](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)によって制御されます。
 
 ### <a name="throttling-limits"></a>制限の調整
 

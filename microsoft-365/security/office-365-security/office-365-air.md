@@ -21,12 +21,12 @@ description: Office 365 の Microsoft Defender で自動調査および応答機
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 340fc4851043ff917eaff6f237c3ad7d5810a4cb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 54dbd419380c18e23119887c93a71885c6f9ce7d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430921"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845806"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>Office 365 で自動調査と応答 (AIR) の使用を開始する
 
@@ -34,7 +34,7 @@ ms.locfileid: "48430921"
 
 [Microsoft Defender For Office 365 に](office-365-atp.md) は、セキュリティ運用チームの時間と労力を節約できる強力な自動化された調査および応答 (AIR) 機能が含まれています。 アラートがトリガーされると、その通知をレビュー、優先度設定、応答するためのセキュリティ運用チームが必要になります。 受信通知の音量を維持することは非常に困難です。 これを自動化することによって役立つことがあります。 AIR を使用すると、セキュリティ運用チームは、トリガーされた通知を失うことなく、優先度の高いタスクに集中できます。
 
-この記事には、以下の問題が含まれます。
+この文書には、以下の内容が含まれます。
 - 空気の [全体的な流れ](#the-overall-flow-of-air) 。
 - [エアを入手する方法](#how-to-get-air)そして 
 - AIR 機能を構成または使用するために [必要なアクセス許可](#required-permissions-to-use-air-capabilities) 。 
@@ -62,7 +62,7 @@ ms.locfileid: "48430921"
     保留中の修復操作が承認 (却下) されると、自動調査が完了します。
 
 > [!NOTE]
-> Office 365 ATP では、修復アクションは自動的には実行されません。 修復処理は、組織のセキュリティ チームが承認した場合にのみ実行されます。 
+> Microsoft Defender for Office 365 では、修復アクションは自動的には実行されません。 修復処理は、組織のセキュリティ チームが承認した場合にのみ実行されます。 
 
 自動化された調査プロセスにおいて、セキュリティチームは次のことを行うことができます。
 
@@ -111,7 +111,7 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 
 さらに、保護を適切に行うために、 [Microsoft Defender For Office 365 ポリシー](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) を定義して適用する必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [自動化された調査の詳細と結果を参照する](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 

@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: SharePoint Online、OneDrive for Business、Microsoft Teams でのファイル用 Office 365 Advanced Threat Protection についての詳細情報。
-ms.openlocfilehash: e536809c74abbe87e1250acda3f3922180cfae97
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
-ms.translationtype: HT
+description: SharePoint Online、OneDrive for Business、Microsoft Teams のファイル用の Microsoft Defender for Office 365 について説明します。
+ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446265"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844334"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) での SharePoint、OneDrive、Microsoft Teams の ATP は、[Microsoft 365 の共通のウイルス検出エンジン](virus-detection-in-spo.md) によってアップロード時に既にスキャンされているファイルに対して、追加の保護レイヤーを提供します。 SharePoint、OneDrive、および Microsoft Teams 用の ATP は、チーム サイトとドキュメント ライブラリに悪意があると特定されたファイルを検出してブロックします。
+Microsoft [Defender For Office 365](office-365-atp.md) の SharePoint、OneDrive、microsoft Teams 用の ATP は、 [microsoft 365 の一般的なウイルス検出エンジン](virus-detection-in-spo.md)によるアップロード時に既にスキャンされているファイルを保護するための追加のレイヤーを提供します。 SharePoint、OneDrive、および Microsoft Teams 用の ATP は、チーム サイトとドキュメント ライブラリに悪意があると特定されたファイルを検出してブロックします。
 
 規定では、SharePoint、OneDrive、Microsoft Teams の ATP は有効になっていません。 有効にするには、[[SharePoint、OneDrive、および Microsoft Teams 用の ATP を有効にする]](turn-on-atp-for-spo-odb-and-teams.md) を参照してください。
 
@@ -59,14 +59,14 @@ SharePoint Online 管理者は、ユーザーが悪意のあるファイルを�
 
 ## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP によって検出された悪意のあるファイルに関する情報を表示する
 
-ATP によって悪意があると識別されたファイルは、「[Office 365 Advanced Threat Protection のレポート](view-reports-for-atp.md)」と、「[エクスプローラー (およびリアルタイム検出) ](threat-explorer.md) に表示されます。
+Microsoft Defender for Office 365 によって悪意のあるファイルが検出された場合は、 [Microsoft defender For office 365](view-reports-for-atp.md) および [エクスプローラー (およびリアルタイム検出)](threat-explorer.md)に関するレポートが表示されます。
 
-2018 年 5 月の時点では、ファイルが ATP によって悪意のあるものと識別されると、ファイルは検疫でも利用することができます。 詳細については、「[セキュリティ/コンプライアンス センターを使用して検疫済みファイルを管理する](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)」を参照してください。
+2018年5月の時点で、Microsoft Defender for Office 365 のファイルが悪意のあるファイルとして識別されると、ファイルは検疫でも利用できます。 詳細については、「[セキュリティ/コンプライアンス センターを使用して検疫済みファイルを管理する](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)」を参照してください。
 
 ## <a name="keep-these-points-in-mind"></a>留意事項
 
-- ATP は、SharePoint Online、OneDrive for Business、または Microsoft Teams のすべてのファイルを 1 つずつスキャンするわけではありません。 これは仕様によるものです。 ファイルは非同期でスキャンされます。 このプロセスは、スマート ヒューリスティックおよび脅威のシグナルと共に、共有とゲストのアクティビティ イベントを使用して、悪質なファイルを特定します。 
+- Office 365 の Defender は、SharePoint Online、OneDrive for Business、または Microsoft Teams のすべての単一ファイルをスキャンしません。 これは仕様によるものです。 ファイルは非同期でスキャンされます。 このプロセスは、スマート ヒューリスティックおよび脅威のシグナルと共に、共有とゲストのアクティビティ イベントを使用して、悪質なファイルを特定します。 
 
-- SharePoint サイトが[モダンな環境](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)を使用するために構成されていることを確認します。 ATP 保護は、モダンな環境、またはクラシック表示のどちらかが使用されるように適用しますが、ファイルがブロックされている視覚的インジケーターは、モダンな環境でのみ使用できます。
+- SharePoint サイトが[モダンな環境](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)を使用するために構成されていることを確認します。 Defender for Office 365 保護は、モダンな表示とクラシック表示のどちらを使用するかを適用します。ただし、ファイルがブロックされているという視覚インジケーターは、モダンな環境でのみ利用可能です。
 
-- SharePoint、OneDrive、Microsoft Teams 用の ATP は、組織の全体的な脅威保護戦略の一部であり、Exchange Online Protection (EOP) でスパム対策やマルウェア保護対策、そしておよび Office 365 ATP の安全なリンクと安全な添付ファイルが含まれます。 詳細については、「[Office 365 で脅威から保護する](protect-against-threats.md)」をご覧ください。
+- SharePoint、OneDrive、Microsoft Teams 用の ATP は、組織の全体的な脅威保護戦略に含まれています。これには、Exchange Online Protection (EOP) のスパム対策とマルウェア対策保護、および Microsoft Defender for Office 365 の安全なリンクと安全な添付ファイルが含まれます。 詳細については、「[Office 365 で脅威から保護する](protect-against-threats.md)」をご覧ください。

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429421"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844802"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
@@ -44,7 +44,7 @@ Microsoft 365 セキュリティセンター () を参照してください [htt
 
 ## <a name="lets-take-a-closer-look"></a>詳しく見てみましょう。
 
-**ホーム**ページには、セキュリティチームが必要とする多くの一般的なカードが表示されます。 カードとデータの構成は、ユーザーの役割によって異なります。 Microsoft 365 セキュリティセンターでは、役割ベースのアクセス制御を使用しているため、役割ごとに、日常業務にとってより有意義なカードが表示されます。  
+**ホーム** ページには、セキュリティチームが必要とする多くの一般的なカードが表示されます。 カードとデータの構成は、ユーザーの役割によって異なります。 Microsoft 365 セキュリティセンターでは、役割ベースのアクセス制御を使用しているため、役割ごとに、日常業務にとってより有意義なカードが表示されます。  
 
 この情報は、組織内の最新のアクティビティを把握するのに役立つ情報を示しています。 Microsoft 365 セキュリティセンターは、さまざまなソースからの信号を統合して、Microsoft 365 環境の全体的なビューを表示します。
 
@@ -52,7 +52,7 @@ Microsoft 365 セキュリティ センターには以下のものが含まれ�
 
 * **自宅** –組織の全体的なセキュリティの健全性を一目で確認できます。
 * **インシデント** -エンティティの個々の通知に表示されるドットを接続することによって、より広範な攻撃のストーリーを参照できます。 攻撃が開始された場所、影響を受けたデバイス、および脅威が発生した場所を正確に把握できます。
-* **アラート** – Microsoft 365 環境全体のすべてのアラートをより詳細に把握できます。 Microsoft Cloud App Security、Office 365 ATP、Azure Active Directory、Azure ATP、Microsoft Defender ATP からの通知が含まれています。 E3 および E5 のお客様が使用できます。  
+* **アラート** – Microsoft 365 環境全体のすべてのアラートをより詳細に把握できます。 Microsoft Cloud App Security、Microsoft Defender for Office 365、Azure Active Directory、Id の microsoft defender、エンドポイントの Microsoft Defender に関する通知が含まれています。 E3 および E5 のお客様が使用できます。  
 * **アクションセンター** -セキュリティチームが手動で対処する必要のあるアラートの量を減らし、セキュリティ運用チームがより高度な脅威やその他の高価値イニシアティブに集中できるようにします。
 * **レポート** –ユーザー、デバイス、アプリなどをより適切に保護するために必要な詳細情報と情報を取得します。
 * **セキュア スコア** - Microsoft セキュア スコアを使用して、全体的なセキュリティ体制を改善します。 このページには、有効にしたさまざまなセキュリティ機能の概要と、改善するための推奨事項が記載されています。

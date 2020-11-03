@@ -1,6 +1,6 @@
 ---
-title: Microsoft Threat Protection API のインシデントリソースの種類
-description: Microsoft Threat Protection の Incident リソースタイプのメソッドとプロパティについて説明します。
+title: Microsoft 365 Defender API のインシデントリソースの種類
+description: Microsoft 365 Defender の Incident リソースタイプのメソッドとプロパティについて説明します。
 keywords: インシデント、インシデント、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68bee647cdd5687dbaad08ce3cd01b427dabf030
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201305"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844022"
 ---
 # <a name="incident-resource-type"></a>インシデントリソースの種類
 
@@ -32,7 +32,7 @@ ms.locfileid: "48201305"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -47,14 +47,14 @@ ms.locfileid: "48201305"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ |    種類    |    説明
+プロパティ |    型    |    説明
 :---|:---|:---
 インシデント識別子 d | long | インシデントの一意の ID。
 Redirectインシデント識別子 d | null 許容長 | 現在のインシデントが結合されたインシデント ID。
-incidentName | 文字列 | インシデントの名前。
+incidentName | string | インシデントの名前。
 createdTime | DateTimeOffset | インシデントが作成された日付と時刻 (UTC)。
 lastUpdateTime | DateTimeOffset | インシデントが最後に更新された日付と時刻 (UTC)。
-assignedTo | 文字列 | インシデントの所有者。
+assignedTo | string | インシデントの所有者。
 severity | 列挙 | インシデントの重大度。 可能な値は ```UnSpecified``` 、、、 ```Informational``` ```Low``` 、 ```Medium``` ```High``` です。
 status | 列挙 | インシデントの現在の状態を指定します。 可能な値は ```Active``` 、、、 ```Resolved``` ```Redirected``` です。
 classification | 列挙 | インシデントの仕様。 可能な値は ```Unknown```、```FalsePositive```、```TruePositive``` です。

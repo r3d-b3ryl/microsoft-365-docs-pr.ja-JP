@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP の安全なドキュメント
+title: Microsoft Defender for Office 365 の安全なドキュメント
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,23 +15,23 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 E5 または Microsoft 365 E5 セキュリティの安全なドキュメントについて説明します。
-ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773951"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845482"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 の安全なドキュメント
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-「安全なドキュメント」は、microsoft [Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) を使用して、 [保護ビュー](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)で開かれたドキュメントやファイルをスキャンする、microsoft 365 e5 または microsoft 365 E5 セキュリティの機能です。
+[安全なドキュメント] は、 [エンドポイントに Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) を使用して、 [保護さ](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)れたビューで開かれたドキュメントやファイルをスキャンする、microsoft 365 e5 または microsoft 365 E5 セキュリティの機能です。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- セーフドキュメントは、 *microsoft 365 E5* または *Microsoft 365 E5 セキュリティ* ライセンスを持つユーザーのみが利用できます。 これらのライセンスは、Office 365 Advanced Threat Protection (ATP) プランに含まれていません。
+- セーフドキュメントは、 *microsoft 365 E5* または *Microsoft 365 E5 セキュリティ* ライセンスを持つユーザーのみが利用できます。 これらのライセンスは、Microsoft Defender for Office 365 プランには含まれていません。
 
 - 「安全なドキュメント」は、Microsoft 365 for enterprise (旧称 Office 365 ProPlus) version 2004 以降でサポートされています。
 
@@ -43,7 +43,7 @@ ms.locfileid: "48773951"
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft はどのようにデータを処理していますか?
 
-保護された状態を維持するために、安全なドキュメントは、分析のために [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) クラウドにファイルを送信します。 Microsoft Defender ATP がデータをどのように処理するかの詳細については、「 [Microsoft DEFENDER atp データの保存とプライバシー](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)」を参照してください。
+保護された状態を維持するために、安全なドキュメントは、分析のために [エンドポイントクラウドのファイルを Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) に送信します。 エンドポイントの Microsoft Defender がデータを処理する方法の詳細については、「 [エンドポイントのデータの保存とプライバシーに関する Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)」を参照してください。
 
 Safe ドキュメントによって送信されたファイルは、分析に必要な時間 (通常は24時間未満) を超えて、Defender に保持されません。
 
@@ -59,7 +59,7 @@ Safe ドキュメントによって送信されたファイルは、分析に必
 
    完了したら、 **[保存]** をクリックします。
 
-   ![[ATP Safe Attachments] ページでグローバル設定を選択した後の、安全なドキュメントの設定。](../../media/safe-docs.png)
+   ![[安全な添付ファイル] ページでグローバル設定を選択した後の、安全なドキュメントの設定。](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>Exchange Online PowerShell を使用して安全なドキュメントを構成する
 

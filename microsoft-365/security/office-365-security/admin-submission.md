@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターの送信ポータルを使用して、疑わしいメール、疑わしいフィッシングメール、スパム、その他の潜在的な有害なメッセージ、Url、およびその他の潜在的な問題を報告する方法について説明します。
-ms.openlocfilehash: 5d4123acaf3c9891f9aeb8028173f3071c260935
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 1ca1dc5e740aa5aa03a4c8b0c138eadb55c08a20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806762"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844646"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>管理者送信を使用して、疑いがあるスパム、フィッシング、URL、ファイルを Microsoft に提出する
 
@@ -74,7 +74,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 の組織�
 
 4. 送信時のポリシーによってフィルターがバイパスされた場合は、そのポリシーに関する情報が表示されます。
 
-   1つまたは複数のポリシーによってフィルターがバイパスされていない場合、スキャンは数分で完了します。 [状態] リンクをクリックすると、送信に関する追加情報が表示されます。 これには、ポリシーチェックの結果と rescan verdict が含まれます。 メモこれにより、Office 365 ATP の完全なフィルター処理スタックからメールが再度実行されることはありませんが、メール、URL、またはファイルの特定の属性に基づいて、部分的な再スキャンが実行されます。
+   1つまたは複数のポリシーによってフィルターがバイパスされていない場合、スキャンは数分で完了します。 [状態] リンクをクリックすると、送信に関する追加情報が表示されます。 これには、ポリシーチェックの結果と rescan verdict が含まれます。 メモこれにより、Microsoft Defender for Office 365 の完全なフィルタリングスタックを経由して電子メールを実行することはありませんが、メール、URL、またはファイルの特定の属性に基づいて、部分的な再スキャンが実行されます。
 
 5. 完了したら、[ **送信** ] ボタンをクリックします。
 

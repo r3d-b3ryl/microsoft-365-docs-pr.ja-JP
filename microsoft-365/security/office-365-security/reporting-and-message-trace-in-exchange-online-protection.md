@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Microsoft Exchange Online Protection (EOP) 管理者が利用できるレポートとトラブルシューティングツールについて説明します。
-ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196401"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845554"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP でのレポート作成とメッセージ追跡
 
@@ -30,13 +30,13 @@ Exchange online メールボックスを使用しない Exchange Online また�
 
 ## <a name="usage-reports"></a>利用状況レポート
 
-**Microsoft 365 groups activity**: 作成および使用されている microsoft 365 グループの数に関する情報を表示します。
+**Microsoft 365 groups activity** : 作成および使用されている microsoft 365 グループの数に関する情報を表示します。
 
-**電子メールアクティビティ**: 組織全体で送受信されたメッセージの数と、特定のユーザーに関する情報を表示します。
+**電子メールアクティビティ** : 組織全体で送受信されたメッセージの数と、特定のユーザーに関する情報を表示します。
 
-**電子メールアプリの使用状況**: 使用されている電子メールアプリに関する情報を表示します。 これには、各アプリの合計接続数、および接続している Outlook のバージョンが含まれます。
+**電子メールアプリの使用状況** : 使用されている電子メールアプリに関する情報を表示します。 これには、各アプリの合計接続数、および接続している Outlook のバージョンが含まれます。
 
-**メールボックスの使用状況**: メールボックスの使用済み記憶域、クォータ消費、アイテム数、最後のアクティビティ (送信または読み取りアクティビティ) に関する情報を表示します。
+**メールボックスの使用状況** : メールボックスの使用済み記憶域、クォータ消費、アイテム数、最後のアクティビティ (送信または読み取りアクティビティ) に関する情報を表示します。
 
 詳細については、以下のリソースを参照してください。
 
@@ -52,11 +52,11 @@ Exchange online メールボックスを使用しない Exchange Online また�
 
 これらの拡張されたレポートは EOP 管理者向けの対話型レポート エクスペリエンスを提供します。これには概要情報、および詳細についてドリルダウンする機能が含まれます。
 
-**Advanced Threat Protection (atp)**: atp の一部である安全なリンクと安全な添付ファイルに関する情報を表示します。
+**Office 用 Defender defender 365** : Microsoft Defender for office 365 の一部である安全なリンクと安全な添付ファイルに関する情報を表示します。
 
-**EOP**: マルウェアの検出、スプーフィングされたメール、スパム検出、組織との間のメールフローに関する情報を表示します。
+**EOP** : マルウェアの検出、スプーフィングされたメール、スパム検出、組織との間のメールフローに関する情報を表示します。
 
-[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
+[Defender for Office 365 のレポートの表示](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>Microsoft Graph を使用するカスタムレポート
 

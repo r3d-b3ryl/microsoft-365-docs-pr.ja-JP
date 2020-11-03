@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) で、スパム対策保護についてよく寄せられる質問と回答を参照できます。
-ms.openlocfilehash: 2bf2808cc0da6124a0377b52dc46f88b2c8a69e0
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445737"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844466"
 ---
 # <a name="anti-spam-protection-faq"></a>スパム対策保護に関する FAQ
 
@@ -59,7 +59,7 @@ ms.locfileid: "48445737"
 
 詳細については、次のトピックをご覧ください。
 
-[EOP および Office 365 の ATP セキュリティに関する推奨設定](recommended-settings-for-eop-and-office365-atp.md)
+[EOP および Microsoft Defender for Office 365 のセキュリティに関する推奨設定](recommended-settings-for-eop-and-office365-atp.md)
 
 [EOP で接続フィルターを構成する](configure-the-connection-filter-policy.md)
 
@@ -105,9 +105,9 @@ Exchange Online のお客様: [Exchange online での監視、レポート、メ
 
 はい。 MX レコードを Microsoft に指定することをお勧めしますが、Microsoft 以外の場所に電子メールをルーティングする正当な業務上の理由があることを認識しています。
 
-- **Inbound**: サードパーティプロバイダーをポイントするように MX レコードを変更し、追加の処理のためにメッセージを EOP にリダイレクトします。 詳細については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
+- **Inbound** : サードパーティプロバイダーをポイントするように MX レコードを変更し、追加の処理のためにメッセージを EOP にリダイレクトします。 詳細については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
-- **送信**: Microsoft 365 から送信先のサードパーティプロバイダーにスマートホストルーティングを構成します。
+- **送信** : Microsoft 365 から送信先のサードパーティプロバイダーにスマートホストルーティングを構成します。
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>マイクロソフトには、フィッシング詐欺から自分を守る方法に関するドキュメントはありますか。
 
@@ -165,7 +165,7 @@ Exchange Online のお客様: [Exchange online での監視、レポート、メ
 
   登録解除オプションは次のように表示されるはずです:
 
-  > このメッセージは、sender@fabrikam.com から example@contoso.com に送信されました。 プロファイルの更新/メールアドレス |**Safeunsubscribe**を使用した即時削除 &trade; |プライバシーポリシー
+  > このメッセージは、sender@fabrikam.com から example@contoso.com に送信されました。 プロファイルの更新/メールアドレス | **Safeunsubscribe** を使用した即時削除 &trade; |プライバシーポリシー
 
 - **バルク メールを送信する場合、ダブル オプトインを使用してリスト取得を実行する必要があります。バルク メールの送信者にとって、ダブル オプトインは業界のベスト プラクティスです。**
 

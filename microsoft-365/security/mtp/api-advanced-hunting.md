@@ -1,6 +1,6 @@
 ---
 title: 高度な検索 Api
-description: Microsoft の脅威保護 API を使用して高度な検索クエリを実行する方法について説明します。
+description: Microsoft 365 Defender API を使用して高度な検索クエリを実行する方法について説明します。
 keywords: 高度な検索、Api、api、MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dd7b02200e370588bbb9470a3d7e897b30234ead
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197811"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844034"
 ---
 # <a name="advanced-hunting-apis"></a>高度な検索 Api
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197811"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -46,7 +46,7 @@ ms.locfileid: "48197811"
 
 
 ## <a name="permissions"></a>アクセス許可
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法を含む詳細については、「 [Microsoft の脅威保護 api にアクセス](api-access.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法を含む詳細については、「 [Microsoft 365 Defender Api へのアクセス](api-access.md)」を参照してください。
 
 アクセス許可の種類 |   アクセス許可  |   アクセス許可の表示名
 :---|:---|:---
@@ -67,22 +67,22 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ヘッダー | 値 
 :---|:---
-Authorization | ベアラー {token}。 **必須**。
+Authorization | ベアラー {token}。 **必須** 。
 Content-Type    | application/json
 
 ## <a name="request-body"></a>要求本文
 要求本文で、次のパラメーターを使用して JSON オブジェクトを指定します。
 
-パラメーター | 種類    | 説明
+パラメーター | 型    | 説明
 :---|:---|:---
-クエリ | テキスト |  実行するクエリを示します。 **必須**。
+クエリ | テキスト |  実行するクエリを示します。 **必須** 。
 
 ## <a name="response"></a>応答
 成功した場合、このメソッドは 200 OK を返し、応答本文で _Queryresponse_ オブジェクトを返します。 <br><br>
 
 Response オブジェクトは3つの部分 (プロパティ) に分かれています。<br>
 1) ```Stats``` -クエリパフォーマンス統計。<br>
-2) ```Schema``` -応答のスキーマ。各列の名前の種類のペアのリスト。 <br>
+2) ```Schema``` -応答のスキーマ。各列の Name-Type のペアのリスト。 <br>
 3) ```Results``` -高度な検索イベントのリスト。
 
 ## <a name="example"></a>例
@@ -168,4 +168,4 @@ Response オブジェクトは3つの部分 (プロパティ) に分かれてい
 ```
 
 ## <a name="related-topic"></a>関連トピック
-- [Microsoft の脅威保護 Api にアクセスする](api-access.md)
+- [Microsoft 365 Defender Api にアクセスする](api-access.md)

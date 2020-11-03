@@ -1,6 +1,6 @@
 ---
-title: サポートされている Microsoft Threat Protection API
-description: サポートされている Microsoft Threat Protection API
+title: サポートされている Microsoft 365 Defender Api
+description: サポートされている Microsoft 365 Defender Api
 keywords: MTP、Api、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203697"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844962"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>サポートされている Microsoft Threat Protection API 
+# <a name="supported-microsoft-365-defender-apis"></a>サポートされている Microsoft 365 Defender Api 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.

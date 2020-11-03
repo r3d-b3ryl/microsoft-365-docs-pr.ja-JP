@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 43a5c0f2e207274574c3c08eadd2804b9c241bb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208439"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845067"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>Federal Risk and Authorization Management Program (FedRAMP)
 
@@ -71,7 +71,7 @@ Dynamics 365 米国政府機関は、米国の米国国防省、都市開発 (HU
 - [Office 365 および Office 365 U.S. Governmen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 米国防総省
 - スタンドアロン サービスとして、または Office 365 ブランドのプランまたはスイートとして含まれる Power BI クラウド サービス
-- Microsoft Defender ATP
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > Azure Government で Azure Active Directory を使用するには、azure パブリッククラウドに Azure Government の外部に展開されているコンポーネントを使用する必要があります。
@@ -109,9 +109,9 @@ FISMA は、FISMA 要件に準拠している組織からのみ情報システ�
 
 はい。 連邦政府機関からの ATO を必要とするプログラムまたはイニシアチブの基礎として、Microsoft クラウドサービスの証明書を使用することができます。 ただし、これらのサービスの外部にあるコンポーネントについては、独自の承認を得る必要があります。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
 
 ## <a name="resources"></a>リソース
 

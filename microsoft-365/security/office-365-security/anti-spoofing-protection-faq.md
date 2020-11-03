@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Exchange Online Protection (EOP) のスプーフィング対策保護についてよく寄せられる質問と回答を参照できます。
-ms.openlocfilehash: 3b1a30541c46383284203eee61d8b6679ac3b493
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445713"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844394"
 ---
 # <a name="anti-spoofing-protection-faq"></a>スプーフィング対策保護に関する FAQ
 
@@ -45,11 +45,9 @@ Microsoft が2018でこの機能を有効にすると、誤検知が発生しま
 
 Microsoft は、お客様への展開を開始する前に、新しい電子メール認証要件を数週間、初めて採用しています。 最初のうちは混乱もありましたが、それも次第に収まりました。
 
-## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>ATP がない場合、Microsoft 365 のお客様はスプーフィングインテリジェンスを利用できますか?
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>Microsoft 365 のお客様は、Office 365 の Defender を使用せずに、スプーフィングインテリジェンスを利用できますか?
 
 はい。 2018年10月の時点で、Exchange Online にメールボックスを持つすべての組織と、Exchange Online メールボックスがないスタンドアロン EOP 組織では、スプーフィングインテリジェンスを使用できます。
-
-初期段階では、Office 365 Advanced Threat Protection でのみ、スプーフィング対策テクノロジを利用できました。 たとえば、Microsoft E5 サブスクリプションまたは ATP アドオンがあります。
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>スパムまたは非スパムのメッセージについて、どのように Microsoft に報告すればよいですか
 
@@ -73,12 +71,12 @@ Microsoft は、お客様への展開を開始する前に、新しい電子メ�
 
 ほぼすべての大規模な電子メールサービスは、従来の SPF、DKIM、DMARC のチェックを実装しています。 一部のサービスでは、他の厳密なチェックが行われますが、認証されていない電子メールをブロックし、それらをスプーフィングされたメッセージとして処理することはほとんどありません EOP。 しかし、特にフィッシングの問題により、認証されていない電子メールに関する問題について、業界はより多くの情報を把握してきています。
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>まだスプーフィング対策を有効にしている場合は、高度なスパムフィルター設定 "SPF レコード: hard fail" (_MarkAsSpamSpfRecordHardFail_) を有効にする必要がありますか?
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>まだスプーフィング対策を有効にしている場合は、高度なスパムフィルター設定 "SPF レコード: hard fail" ( _MarkAsSpamSpfRecordHardFail_ ) を有効にする必要がありますか?
 
-いいえ。 この ASF 設定は不要になりました。 スプーフィング対策保護では、SPF に障害が発生した場合と、非常に幅広い条件セットがあると見なされます。 スプーフィング対策を有効にしているときに、**SPF レコード: Hard Fail** (_MarkAsSpamSpfRecordHardFail_) も有効にすると、誤検出が多くなる可能性があります。
+いいえ。 この ASF 設定は不要になりました。 スプーフィング対策保護では、SPF に障害が発生した場合と、非常に幅広い条件セットがあると見なされます。 スプーフィング対策を有効にしているときに、 **SPF レコード: Hard Fail** ( _MarkAsSpamSpfRecordHardFail_ ) も有効にすると、誤検出が多くなる可能性があります。
 
 この機能を無効にすることをお勧めします。これにより、スパムやフィッシングメッセージを検出するための追加のメリットはほとんど提供されず、その代わりに、ほとんどが誤検知を生成することになります。 詳細については、「 [Advanced Spam Filter (ASF) settings IN EOP](advanced-spam-filtering-asf-options.md)」を参照してください。
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>送信者の書き換えスキームは転送された電子メールの修正に役立ちますか?
 
-SRS は転送された電子メールの問題を部分的にしか解決しません。 SMTP **メールをから**再書き込みすることで、SRS は転送されたメッセージが次の宛先に SPF を通過することを保証できます。 ただし、スプーフィング対策は、 **差出人** アドレスと (または他の信号の) **from** または dkim 署名ドメイン (またはその他の信号) との組み合わせに基づいているため、SRS で転送された電子メールがスプーフィングとしてマークされることを防ぐだけではありません。
+SRS は転送された電子メールの問題を部分的にしか解決しません。 SMTP **メールをから** 再書き込みすることで、SRS は転送されたメッセージが次の宛先に SPF を通過することを保証できます。 ただし、スプーフィング対策は、 **差出人** アドレスと (または他の信号の) **from** または dkim 署名ドメイン (またはその他の信号) との組み合わせに基づいているため、SRS で転送された電子メールがスプーフィングとしてマークされることを防ぐだけではありません。

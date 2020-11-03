@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: セットアップガイドを使用して、Microsoft 365 または Office 365 の計画と構成を促進します。
-ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493699"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844094"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -34,15 +34,15 @@ ms.locfileid: "48493699"
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでのセットアップガイドへのアクセス方法
 
-セットアップガイドは、Microsoft 365 管理センターの [セットアップガイダンス](https://aka.ms/setupguidance) ページからアクセスできます。 進捗状況を追跡して、ガイドを完成させるためのオプションをいつでも取得できます。 **セットアップガイダンス**ページにアクセスするには、次のようにします。
+セットアップガイドは、Microsoft 365 管理センターの [セットアップガイダンス](https://aka.ms/setupguidance) ページからアクセスできます。 進捗状況を追跡して、ガイドを完成させるためのオプションをいつでも取得できます。 **セットアップガイダンス** ページにアクセスするには、次のようにします。
 
-1. [Microsoft 365 管理センター](https://admin.microsoft.com/)で、**ホーム**ページに移動します。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com/)で、 **ホーム** ページに移動します。
 
-2. **トレーニング & ガイド**カードを検索します。 
+2. **トレーニング & ガイド** カードを検索します。 
 
    ![Microsoft 365 管理センターのトレーニング & ガイドカード](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. カスタマイズした **セットアップガイダンス**を選択します。
+3. カスタマイズした **セットアップガイダンス** を選択します。
 
    ![Microsoft 365 管理センターのセットアップガイダンスページのスクリーンショット](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
@@ -135,12 +135,12 @@ Windows 仮想デスクトップは、クラウドで実行される包括的な
 
 ## <a name="guides-for-security-and-compliance"></a>セキュリティとコンプライアンスのガイド
 
-### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender Advanced Threat Protection (ATP) advisor
+### <a name="microsoft-defender-for-endpoint-advisor"></a>エンドポイントアドバイザーの Microsoft Defender
 
-[Microsoft Defender Advanced Threat Protection advisor](https://aka.ms/mdatpsetup)は、企業ネットワークが高度な脅威を防止、検出、調査、および応答する際に役立つ手順を提供します。 組織の脆弱性に関する情報が得られた評価を行い、最適な展開パッケージと構成方法を決定します。 
+[エンドポイントアドバイザーの Microsoft Defender](https://aka.ms/mdatpsetup)には、企業ネットワークが高度な脅威の防止、検出、調査、および応答を行う際に役立つ手順が記載されています。 組織の脆弱性に関する情報が得られた評価を行い、最適な展開パッケージと構成方法を決定します。 
 
 >[!NOTE]
->Microsoft Defender ATP には、Microsoft ボリュームライセンスが必要です。
+>エンドポイントの Microsoft Defender には、Microsoft ボリュームライセンスが必要です。
 
 ### <a name="exchange-online-protection-setup-guide"></a>Exchange Online Protection のセットアップガイド
 
@@ -148,9 +148,9 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 
 [Exchange Online Protection セットアップガイド](https://aka.ms/EOPguidance)を使用して、オンプレミスメールボックスの3つの展開シナリオ &mdash; 、ハイブリッド (オンプレミスとクラウドの混在) メールボックスのどちらを選択するか、またはすべてのクラウドメールボックスを組織に適合させるかを選択して、EOP を設定し &mdash; ます。 このガイドでは、ユーザーのライセンスを設定して確認し、Microsoft 365 管理センターでアクセス許可を割り当て、セキュリティ & コンプライアンスセンターで組織のマルウェア対策とスパムポリシーを構成するための情報とリソースを提供します。 
 
-### <a name="office-365-advanced-threat-protection-advisor"></a>Office 365 Advanced Threat Protection advisor
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender for Office 365 advisor
 
-[Office 365 Advanced Threat Protection advisor](https://aka.ms/oatpsetup)は、電子メールメッセージ、リンク、およびサードパーティのコラボレーションツールを使用して、お客様の環境で発生する可能性のある悪意のある脅威から組織を保護します。 このガイドには、高度な脅威保護計画を準備して、組織のニーズに合わせて識別するのに役立つリソースと情報が記載されています。 
+[Microsoft Defender For Office 365 advisor](https://aka.ms/oatpsetup)は、電子メールメッセージ、リンク、およびサードパーティのコラボレーションツールを使用して、お客様の環境で発生する可能性のある悪意のある脅威から組織を保護します。 このガイドでは、組織のニーズに合わせて Office 365 プランの Defender を準備および識別するのに役立つリソースと情報について説明します。 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Microsoft information protection セットアップガイド
 

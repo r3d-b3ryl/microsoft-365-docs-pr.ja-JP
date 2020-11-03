@@ -1,6 +1,6 @@
 ---
-title: Microsoft の脅威保護で高度な検索クエリの結果を操作する
-description: Microsoft の脅威保護で高度な検索によって返されるクエリ結果の大部分を作成する
+title: Microsoft 365 Defender で高度な検索クエリ結果を操作する
+description: Microsoft 365 Defender で高度な検索によって返されるクエリ結果の大部分を作成する
 keywords: 高度な検索、脅威の検索、サイバー脅威の検出、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、カスタム検出、スキーマ、kusto、microsoft 365、Microsoft Threat Protection、視覚エフェクト、グラフ、フィルター、ドリルダウン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e19859189b57bbc9a6a4bbfb87fb224b2735331b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431077"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844130"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度な検索クエリの結果を操作する
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431077"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -70,7 +70,7 @@ AlertInfo
 結果を表示するときに、縦棒グラフにそれぞれの重要度の値が個別の列として表示されます。
 
 ![重要度別のアラートの列グラフクエリ結果として表示されている高度な検索クエリ結果の画像 ](../../media/advanced-hunting-column-chart.jpg)
- *列のグラフとして表示され*ます。
+ *列のグラフとして表示され* ます。
 
 #### <a name="alert-severity-by-operating-system"></a>オペレーティングシステムによるアラートの重要度
 また、演算子を使用して、 `summarize` 複数のフィールドからのグラフ値の結果を準備することもできます。 たとえば、オペレーティングシステム (OS) 間でアラートの重大度がどのように分散されているかを理解する必要があるかもしれません。 
@@ -86,7 +86,7 @@ AlertInfo
 これらの結果は、積み上げ縦棒グラフを使用するのが最適です。
 
 ![拡張 ](../../media/advanced-hunting-stacked-chart.jpg)
- *グラフとして表示される OS と重要度によって*、高度な検索クエリ結果が積み上げグラフクエリ結果として表示される画像
+ *グラフとして表示される OS と重要度によって* 、高度な検索クエリ結果が積み上げグラフクエリ結果として表示される画像
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>上位10人の送信者ドメインでのフィッシング電子メール
 限定されていない値のリストを処理する場合は、演算子を使用して、 `Top` インスタンスが最も多い値のみをグラフ化できます。 たとえば、最もフィッシング詐欺メールで上位10個の送信者ドメインを取得するには、次のクエリを使用します。
@@ -100,7 +100,7 @@ EmailEvents
 [円グラフ] ビューを使用して、上位ドメイン間の分散を効果的に表示します。
 
 ![](../../media/advanced-hunting-pie-chart.jpg)
-*上位の送信者ドメイン間でのフィッシング電子メールの配布を示す*円グラフとして表示される高度な検索クエリ結果の画像
+*上位の送信者ドメイン間でのフィッシング電子メールの配布を示す* 円グラフとして表示される高度な検索クエリ結果の画像
 
 #### <a name="file-activities-over-time"></a>時間の経過に伴うファイルアクティビティ
 `summarize`関数で演算子を使用 `bin()` すると、特定のインジケーターに関係するイベントを時間の経過とともに確認できます。 次のクエリは、ファイルに関連するイベントを `invoice.doc` 30 分間隔でカウントし、そのファイルに関連するアクティビティのスパイクを示します。
@@ -114,7 +114,7 @@ AppFileEvents
 下の行は、次のようなアクティビティを伴う期間を明確に強調してい `invoice.doc` ます。 
 
 ![](../../media/advanced-hunting-line-chart.jpg)
-*時間の経過に伴うファイルに関連するイベントの数を示す*折れ線グラフの折れ線グラフとして表示される高度な検索クエリ結果の画像
+*時間の経過に伴うファイルに関連するイベントの数を示す* 折れ線グラフの折れ線グラフとして表示される高度な検索クエリ結果の画像
 
 
 ## <a name="export-tables-and-charts"></a>テーブルとグラフをエクスポートする
