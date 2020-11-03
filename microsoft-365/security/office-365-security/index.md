@@ -1,5 +1,5 @@
 ---
-title: Office 365 Security、Office 365 ATP、EOP、ATP、MSDO
+title: Office 365 セキュリティ、Microsoft Defender for Office 365、EOP、MSDO
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -14,37 +14,37 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Office 365 のセキュリティ。 EOP から ATP プラン1および2、標準セキュリティ構成の比較など 現在の状況と、プロパティをセキュリティで保護する方法について理解します。
-ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: Office 365 のセキュリティ。 Office 365 プラン1および2では、EOP から Defender に、標準のセキュリティ構成と厳密に比較します。 現在の状況と、プロパティをセキュリティで保護する方法について理解します。
+ms.openlocfilehash: 90900251c4c965d72d24b4a6bf2dceb1819f90c4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456473"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842394"
 ---
 # <a name="office-365-security-overview"></a>Office 365 のセキュリティの概要
 
 この記事では、クラウド内の新しいセキュリティプロパティについて説明します。 セキュリティ操作センターの一部であるかどうかにかかわらず、セキュリティ管理者はこのスペースを利用しているか、またはリフレッシャーを使用したいと考えています。
 
 > [!CAUTION]
-> **Outlook.com**、 **microsoft 365 ファミリ**、または**microsoft 365 Personal**を使用していて *、安全なリンク*または安全な*添付ファイル*の情報を必要とする場合は、***このリンクをクリックし***てください。 [Microsoft 365 サブスクライバーの高度な Outlook.com セキュリティ](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> **Outlook.com** 、 **microsoft 365 ファミリ** 、または **microsoft 365 Personal** を使用していて *、安全なリンク* または安全な *添付ファイル* の情報を必要とする場合は、 **[このリンク** _: [Microsoft 365 サブスクライバーの高度な Outlook.com セキュリティ](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)] をクリックします。
 
 ## <a name="office-365-security-spelled-out"></a>Office 365 のセキュリティに関する綴り
 
 すべての Office 365 サブスクリプションには、セキュリティ機能が付属しています。 実行できる目標と操作は、これらの異なるサブスクリプションの焦点に依存します。 Office 365 のセキュリティでは、サブスクリプションの種類に関連付けられている3つの主要なセキュリティサービス (製品) があります。
 
 1. Exchange Online Protection (EOP)
-1. Advanced Threat Protection、Plan 1 (ATP P1)
-1. Advanced Threat Protection、Plan 2 (ATP P2)
+1. Microsoft Defender for Office 365 プラン 1 (Defender for Office P1)
+1. Microsoft Defender for Office 365 プラン 2 (Defender for Office P2)
 
 > [!NOTE]
-> サブスクリプションを購入し、セキュリティ機能を *今すぐ*展開する必要がある場合は、「 [脅威から保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) する」の手順に進んでください。 ご利用のお客様がご自身のサブスクリプションを初めてご利用になる場合は、 [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/#/homepage)の製品 > 請求先を参照してください。
+> サブスクリプションを購入し、セキュリティ機能 _right 今すぐ展開する必要がある場合は、「 [脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) 」の手順に進んでください。 ご利用のお客様がご自身のサブスクリプションを初めてご利用になる場合は、 [Microsoft 365 管理センター](https://admin.microsoft.com/AdminPortal/#/homepage)の製品 > 請求先を参照してください。
 
 Office 365 は、EOP によって提供される中心的な保護に基づいて構築されています。 EOP は、Exchange Online メールボックスが存在する任意のサブスクリプションに存在します (ここで説明するすべてのセキュリティ製品はクラウドベースであることに注意してください)。
 
 この方法で説明した3つのコンポーネントについては、よく見られます。
 
-|EOP  | ATP P1 | ATP P2  |
+|EOP  | Microsoft Defender for Office 365 P1 | Microsoft Defender for Office 365 P2  |
 |---------|---------|---------|
 |ボリュームベースの広範な既知の攻撃を防止します。    |  ゼロ日のマルウェア、フィッシング、およびビジネスメールの侵害から電子メールとコラボレーションを保護します。       | 事後違反の調査、探し、応答、自動化、シミュレーション (トレーニング用) を追加します。         |
 
@@ -52,36 +52,36 @@ Office 365 は、EOP によって提供される中心的な保護に基づい�
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
+:::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="EOP および Microsoft Defender for Office 365 と、サービス強調を使用した相互関係 (電子メール認証に関するメモを含む)。":::
 
-これらのサービスはそれぞれ、保護、検出、調査、応答の中から目標を強調していますが、 ***すべて*** のサービスが、保護、検出、調査、応答の ***いずれか*** の目標を達成できます。
+これらのサービスはそれぞれ、保護、検出、調査、応答の中から目標を強調していますが、* **all** _ サービスは、保護、検出、調査、応答の _*_いずれか_*_ の目標を達成できます。
 
-Office 365 セキュリティの中核となるのは、EOP 保護です。 ATP P1 には EOP が含まれています。 ATP P2 には、P1 と EOP が含まれています。 この構造体は累積されています。 この製品を構成する際には、EOP から開始し、ATP に作業する必要があります。
+Office 365 セキュリティの中核となるのは、EOP 保護です。 Microsoft Defender for Office 365 P1 に EOP が含まれています。 Office の Defender 365 P2 には、P1 と EOP が含まれています。 この構造体は累積されています。 この製品を構成する場合は、EOP から始めて、Office 365 の Defender に対して作業を開始する必要があります。
 
-電子メール認証の構成はパブリック DNS で行われますが、この機能を構成してスプーフィングを防止することが重要です。 *EOP を使用している場合は、* ***[電子メール認証を構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)する必要があり***ます。
+電子メール認証の構成はパブリック DNS で行われますが、この機能を構成してスプーフィングを防止することが重要です。 _EOP がある場合、* * **[電子メール認証を構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)する必要があり**_ ます。
 
-Office 365 E3 以降がある場合は、EOP がありますが、アップグレードを通じてスタンドアロン ATP P1 を購入するオプションがあります。 Office 365 E5 がインストールされている場合は、既に ATP P2 があります。
+Office 365 E3 以降がある場合は、EOP がありますが、アップグレードのためにスタンドアロン Defender for Office 365 P1 を購入するというオプションがあります。 Office 365 E5 がインストールされている場合は、既に Office 365 P2 の Defender があります。
 
 > [!TIP]
-> サブスクリプションが Office 365 E3 または E5 のどちらでもない場合でも、ATP P1 にアップグレードするオプションがあるかどうかを確認することができます。 関心がある場合は、 [この web ページ](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) に ATP P1 upgrade の対象となるサブスクリプションが一覧表示されます (詳細については、ページの最後をチェックしてください)。
+> サブスクリプションが Office 365 E3 または E5 のどちらでもない場合でも、Microsoft Defender for Office 365 P1 にアップグレードするオプションがあるかどうかを確認することができます。 関心がある場合、 [この web ページ](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) には、Microsoft Defender for Office 365 P1 upgrade の対象となるサブスクリプションが表示されます (詳細については、ページの最後をチェックしてください)。
 
-## <a name="the-office-365-security-ladder-from-eop-to-atp"></a>EOP から ATP への Office 365 セキュリティのはしご
+## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>Office 365 セキュリティは、EOP から Microsoft Defender for Office 365 にはしごされています。
 
 <br/>
 
-![EOP と ATP、およびそれらのセキュリティ重視は、保護と検出から、調査と応答に進みます。メール認証の構成 (少なくとも DKIM および DMARC) は、EOP と up に対して設定する必要があります。](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
+![EOP および Microsoft Defender for Office 365 と、セキュリティ上の強調。保護と検出から、調査と応答に進みます。 メール認証の構成 (少なくとも DKIM および DMARC) は、EOP と up に対して設定する必要があります。](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 
 > [!IMPORTANT]
-> これらのページの詳細については、「 [Exchange Online protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview)」および [「Advanced Threat protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)」を参照してください。
+> これらのページの詳細については、「 [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview)」および「 [Office 365 用の Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)」を参照してください。
 
-ATP プランを追加することによって、純粋な EOP threat management の利点が一目でわかります。 アップグレードパスが組織に適しているかどうかを判断するには、各製品の機能を次のように確認してみましょう。
+Microsoft Defender for Office 365 を追加することによって、純粋な EOP 脅威管理の利点を最初にわかりやすくすることが困難になります。 アップグレードパスが組織に適しているかどうかを判断するには、各製品の機能を次のように確認してみましょう。
 
  - 脅威の防止と検出
  - うち
  - 応答
 
-**Exchange Online Protection**以降:
+_ * Exchange Online Protection * * で開始します。
 <p>
 
 |防止/検出  |調査  |返信  |
@@ -90,56 +90,56 @@ ATP プランを追加することによって、純粋な EOP threat management
 
 EOP に移動する場合は、 **[この記事に移動](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)** してください。
 
-これらの製品は累積的なので、ATP P1 を評価してサブスクライブする場合は、これらの機能を追加します。
+これらの製品は累積的なものであるため、Microsoft Defender for Office 365 P1 を評価してそれにサブスクライブすることを決定した場合、これらの機能を追加します。
 
-**Advanced Threat Protection**を使用した利点: プラン 1 (終了):
+**Office 365 の Defender** によるメリット: プラン 1 (終了):
 <p>
 
 |防止/検出  |調査  |返信  |
 |---------|---------|---------|
-| EOP に含まれるテクノロジには、次のようなものがあります。<u1><li>安全な添付ファイル</li><li>安全なリンク<li>ワークロードの ATP 保護 (例 SharePoint Online、Teams、OneDrive for Business)</li><li>電子メール、Office クライアント、および Teams でのクリック時の保護</li><li>ATP のフィッシング対策</li><li>ユーザーおよびドメインの偽装保護</li><li>通知の SIEM 統合 API</li>|<li>検出のための SIEM 統合 API</li><li>**リアルタイム検出ツール**</li><li>URL トレース</li>|<li>同じ</li></u1>
+| EOP に含まれるテクノロジには、次のようなものがあります。<u1><li>安全な添付ファイル</li><li>安全なリンク<li>Microsoft Defender for Office 365 のワークロードの保護 (例) SharePoint Online、Teams、OneDrive for Business)</li><li>電子メール、Office クライアント、および Teams でのクリック時の保護</li><li>Office 365 の Defender でのフィッシング対策</li><li>ユーザーおよびドメインの偽装保護</li><li>通知の SIEM 統合 API</li>|<li>検出のための SIEM 統合 API</li><li>**リアルタイム検出ツール**</li><li>URL トレース</li>|<li>同じ</li></u1>
 
-そのため、ATP P1 は家の ***予防*** 側を拡張し、 ***検出***のための追加のフォームを追加します。
+そのため、Microsoft Defender for Office 365 P1 は、家の * *_防止_* _ 側に展開され、さらにさまざまな形式の _*_検出_*_ が追加されています。
 
-ATP P1 では **、調査のリアルタイム検出** も追加されています。 この脅威の探すツールの名前は、ATP P1 があることを *知る* ことが明確であるため、太字になっています。 ATP P2 では表示されません。
+Microsoft Defender for Office 365 P1 でも、調査のために *リアルタイム検出 * が* 追加されています。 この脅威の探すツールの名前は、Office 365 P1 の Defender があることを *知ら* せる明確なものであるため、太字になっています。 Office 365 P2 の Defender には表示されません。
 
-**Advanced Threat Protection**を使用した利点: プラン 2 (終了):
+**Office 365 の Defender の利点: プラン 2** (終了):
 <p>
 
 |防止/検出  |調査  |返信  |
 |---------|---------|---------|
-| EOP には、次のようなテクノロジが含まれています。<u1><li>同じ</li>|<li>**脅威エクスプローラー**</li><li>脅威トラッカー</li><li>キャンペーンビュー</li>|<li>自動化された調査と応答 (AIR)</li><li>脅威エクスプローラからの空気</li><li>侵害されたユーザーのための空気</li><li>自動調査用の SIEM 統合 API</li>
+| テクノロジには、EOP のすべてが含まれており、Microsoft Defender for Office 365 P1 plus が含まれています。<u1><li>同じ</li>|<li>**脅威エクスプローラー**</li><li>脅威トラッカー</li><li>キャンペーンビュー</li>|<li>自動化された調査と応答 (AIR)</li><li>脅威エクスプローラからの空気</li><li>侵害されたユーザーのための空気</li><li>自動調査用の SIEM 統合 API</li>
 
-そのため、ATP P2 は、住宅の ***調査と応答*** 側を拡張し、新しい探しの強さを追加します。 自動化。
+そのため、Microsoft Defender for Office 365 P2 は、社内の * *_調査と応答_* の _ 側で拡張され、新しいお探しの強度が追加されています。 自動化。
 
-ATP P2 では、プライマリの探しているツールは、リアルタイムの検出ではなく、[ **脅威エクスプローラー** ] と呼ばれます。 セキュリティセンターに移動したときに脅威エクスプローラーが表示された場合は、ATP P2 にいます。
+Microsoft Defender for Office 365 P2 では、プライマリの探しているツールは、リアルタイムの検出ではなく、_ *Threat Explorer* * と呼ばれます。 セキュリティセンターに移動したときに脅威エクスプローラーが表示される場合は、Microsoft Defender for Office 365 P2 にお客ください。
 
-ATP P1 と P2 の詳細を確認するには、 **[この記事に移動](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** します。
+Microsoft Defender for Office 365 P1 と P2 の詳細については、 **[この記事に移動](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)** してください。
 
 > [!TIP]
-> また、EOP と ATP は、エンドユーザーに関しても異なります。 EOP と ATP P1 では、フォーカスは *認識*されます。この2つのサービスには、ユーザーが疑わしいと思われる電子メールを報告して詳細な分析を行うことができるようにするための *レポートメッセージ Outlook アドイン* が含まれています。 <p> ATP P2 (EOP および P1 のすべての内容が含まれています) では、フォーカスがエンドユーザーのための *追加トレーニング* に移り、セキュリティ操作センターが強力な *脅威シミュレータ* ツールと、それが提供するエンドユーザー指標にアクセスできるようになります。
+> エンドユーザーに関しては、EOP と Microsoft Defender for Office 365 も異なります。 EOP および Defender for Office 365 P1 では、フォーカスは *認識* されます。この2つのサービスには、ユーザーが疑わしいと思われるメールを報告して詳細な分析を行うことができるようにするための *レポートメッセージ Outlook アドイン* が含まれています。 <p> Office 365 P2 の Defender (EOP および P1 のすべての内容が含まれています) では、フォーカスがエンドユーザーのための *トレーニング* に移り、セキュリティ操作センターが強力な *脅威シミュレータ* ツールと、それが提供するエンドユーザー指標にアクセスできるようになります。
 
-## <a name="office-365-atp-plan-1-vs-plan-2-cheat-sheet"></a>Office 365 ATP プラン1対計画2カンニングペーパー
+## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Microsoft Defender for Office 365 プラン1およびプラン2のカンニングペーパー
 
-このクイックリファレンスは、各 ATP サブスクリプションで提供される機能について理解するのに役立ちます。 EOP の機能についての知識と組み合わせることにより、ビジネス意思決定者がニーズに最も適した ATP を判断できるようになります。
+このクイックリファレンスは、Office 365 サブスクリプションの各 Microsoft Defender に付属する機能について理解するのに役立ちます。 EOP の機能についての知識と組み合わせることにより、ビジネスの意思決定者が自分のニーズに最適な Microsoft Defender Office 365 を決定するのに役立ちます。
 
-|Office 365 ATP プラン 1|Office 365 ATP プラン 2|
+|Office 用 Defender 365 プラン1|Office 用 Defender 365 プラン2|
 |---|---|
-|<br/>構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[ATP のフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Office 365 ATP プラン 1 の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:</li><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
+|<br/>構成、保護、および検出機能: <ul><li>[添付ファイル保護](atp-safe-attachments.md)</li><li>[リンク保護](atp-safe-links.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の ATP](atp-for-spo-odb-and-teams.md)</li><li>[Office 365 の Defender でのフィッシング対策保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[リアルタイムの検出](threat-explorer.md)</li></ul>|Office 用 Defender (365 プラン 1) の機能<br/>--- プラスのもの ---<br/>自動化、調査、修復、教育の機能:</li><li>[脅威トラッカー](threat-trackers.md)</li><li>[脅威エクスプローラー](threat-explorer.md)</li><li>[自動調査および対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[攻撃シミュレータ](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 ATP プラン 2 は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。
+- Microsoft Defender for Office 365 プラン2は、Office 365 E5、Office 365 A5、および Microsoft 365 E5 に含まれています。
 
-- Office 365 ATP プラン 1 は、Microsoft 365 Business Premium に含まれています。
+- Microsoft Defender for Office 365 プラン1は、Microsoft 365 Business Premium に含まれています。
 
-- Office 365 ATP プラン 1 および Office 365 ATP プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして使用できます。 詳細については、次のリンク [機能が ATP プラン全体で利用可能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)です。
+- Microsoft Defender for Office 365 プラン1および Defender for Office 365 プラン2は、それぞれ特定のサブスクリプションのアドオンとして利用できます。 詳細については、 [office 365 プランの Microsoft Defender で利用できる](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)もう1つのリンク機能を参照してください。
 
-- [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Office 365 ATP プランには含まれません) を持つユーザーのみが利用できます。
+- [ [安全なドキュメント](safe-docs.md) ] 機能は、Microsoft 365 e5 または Microsoft 365 E5 セキュリティライセンスを持つユーザーのみが使用できます (microsoft Defender for Office 365 プランには含まれていません)。
 
-- 現在のサブスクリプションに Office 365 ATP が含まれておらず、これを使用する場合は、 [販売に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、atp が組織内でどのように動作するかを確認してください。
+- 現在のサブスクリプションに Microsoft Defender for Office 365 が含まれておらず、これを必要としている場合は、 [販売に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)し、microsoft Defender for office 365 が組織内でどのように動作するかを確認してください。
 
 > [!TIP]
-> ***Insider ヒント***。 EOP と ATP の詳細については、docs.microsoft.com の目次を参照してください。 このページに戻ると、 [Office 365 のセキュリティの概要](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)が表示されます。この目次は、サイドバーにあることがわかります。 展開 (移行を含む) が開始され、予防、検出、調査、応答が続きます。 <p> この構造体は、 **セキュリティ管理** のトピックの後に **セキュリティの運用** に関するトピックが表示されるように分割されています。 いずれかのジョブロールの新しいメンバーである場合は、スペースの理解に役立つように、このヒントのリンクと目次の情報を使用します。 *フィードバックリンク*を必ず使用し、*記事*を参照してください。 フィードバックは、弊社が提供するものを改善するのに役立つ情報です。
+> ***Insider tip** _。 Docs.microsoft.com の目次を使用して、EOP と Microsoft Defender for Office 365 について学ぶことができます。 このページに戻ると、 [Office 365 のセキュリティの概要](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)が表示されます。この目次は、サイドバーにあることがわかります。 展開 (移行を含む) が開始され、予防、検出、調査、応答が続きます。 <p> この構造体は、_ *Security Administration* * トピックの後に **セキュリティ運用** に関するトピックが表示されるように分割されています。 いずれかのジョブロールの新しいメンバーである場合は、スペースの理解に役立つように、このヒントのリンクと目次の情報を使用します。 *フィードバックリンク* を必ず使用し、 *記事* を参照してください。 フィードバックは、弊社が提供するものを改善するのに役立つ情報です。
 
 ## <a name="where-to-go-next"></a>[次へ]
 
@@ -149,8 +149,8 @@ ATP P1 と P2 の詳細を確認するには、 **[この記事に移動](https:
 
 [特定の推奨される「ゴールデン」](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 構成を参照し、 [推奨される事前設定を使用してセキュリティポリシーを迅速に構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/preset-security-policies)
 
-[Office 365 ATP の新機能 (EOP 開発を含む)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)をキャッチアップ
+[Microsoft Defender For Office 365 の新機能 (EOP 開発を含む)](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)をキャッチアップする
 
 [脅威エクスプローラーまたはリアルタイム検出を使用する](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)
 
-[Office 365 ATP でのアタックシミュレータの](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)使用
+[Microsoft Defender For Office 365 でのアタックシミュレータ](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)の使用

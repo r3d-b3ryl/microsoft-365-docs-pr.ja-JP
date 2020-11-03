@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Business Premium に関するよく寄せられる質問 
-description: 小規模および中規模の企業 (SMB) 向けに設計された新しいソリューションである Microsoft 365 Business について、よく寄せられる質問に対する回答を示します。 
+title: Microsoft 365 Business Premium に関するよく寄せられる質問
+description: 小規模および中規模の企業 (SMB) 向けに設計された新しいソリューションである Microsoft 365 Business について、よく寄せられる質問に対する回答を示します。
 author: Sirkkuw
 f1.keywords:
 - NOCSH
@@ -10,15 +10,15 @@ ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
 ms.custom: AdminSurgePortfolio
 localization_priority: Normal
-audience: microsoft-business 
+audience: microsoft-business
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, よく寄せられる質問, 回答, ビジネス
 ms.date: 07/21/2020
-ms.openlocfilehash: a8547240a2733a10730d0f8fb62fe8e8c7ef971c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b117f0aecb76dc3b30a30e067c37328865eb0fdf
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948570"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842112"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 Business Premium に関するよく寄せられる質問
 
@@ -27,15 +27,15 @@ ms.locfileid: "47948570"
 ### <a name="what-is-microsoft-365-business-premium"></a>Microsoft 365 Business Premium とは
 Microsoft 365 は、小規模から中規模企業向けの、クラス最高の生産性ツール、セキュリティ、およびデバイス管理機能をまとめた統合ソリューションです。 内容は以下のとおりです。
 
-**ビジネス生産性とコラボレーションツールのセット**:
+**ビジネス生産性とコラボレーションツールのセット** :
 
 - Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access
 - Exchange、OneDrive、Skype for Business、Microsoft Teams、SharePoint。
 - Office のビジネスアプリ (Bookings, MileIQ<sup>[1](#footnote1)</sup>)。
 
-**エンタープライズレベルのデバイス管理およびセキュリティ機能**:
+**エンタープライズレベルのデバイス管理およびセキュリティ機能** :
 
-- Office 365 Advanced Threat Protection プラン1および Microsoft Defender Exploit Guard を使用して、フィッシングや高度なマルウェアなどの外部の脅威からの保護を提供します。
+- Microsoft Defender for Office 365 プラン1および Microsoft Defender Exploit Guard を使用して、フィッシングや高度なマルウェアなどの外部の脅威からの保護を提供します。
 - データ損失防止ポリシーおよび Azure Information Protection プラン1で、機密情報へのアクセスや送信の方法を制御し、管理することができます。
 - Exchange Online のアーカイブ機能を使用して、データの保護、保存、バックアップを行います。
 - Office やその他のモバイル アプリでの Intune アプリ保護機能によるアプリ保護。
@@ -43,14 +43,14 @@ Microsoft 365 は、小規模から中規模企業向けの、クラス最高の
 - 多要素認証、セルフサービスによるパスワードのリセット、および条件付きアクセスを使用した ID保護。
 - デバイス間での一貫したセキュリティ構成 &mdash; 。複数のデバイス間で企業データを保護します。Microsoft Defender ウイルス対策。常に最新の状態になっています。
 
-簡略化された**デバイスの展開とユーザーのセットアップ**:
+簡略化された **デバイスの展開とユーザーのセットアップ** :
 
 - 1 つの管理コンソールでユーザーとデバイスをセットアップと管理
 - Windows 10 PC での Office アプリの自動インストール。
 - 常に最新の Office と Windows 10。
 - Windows AutoPilot による PC のスムーズな展開。
 
-**その他の資格**:
+**その他の資格** :
 
 - Microsoft 365 Business Premium のお客様は、Windows Virtual Desktop およびOffice 共有コンピューターのライセンス認証機能にもアクセスできます。 詳細については、[「Microsoft 365 Business Premium のブログ」](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) を参照してください。 [Microsoft 365 for business サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)も参照してください。
 
@@ -70,7 +70,7 @@ Microsoft 365 Business Premium は、[Microsoft パートナー](https://www.mic
 
 ### <a name="how-much-does-microsoft-365-business-premium-cost"></a>Microsoft 365 Business Premium のコストはどの程度ですか。
 
-Microsoft 365 Business Premium は、Microsoft から直接購入した場合、_年間契約_に基づいて USD$20.00/月/ユーザーで提供されます。 Microsoft パートナー経由で購入した場合、価格はパートナーが提供するサービスや、Microsoft 365 Business Premium の価格モデルによって異なる可能性があります。
+Microsoft 365 Business Premium は、Microsoft から直接購入した場合、 _年間契約_ に基づいて USD$20.00/月/ユーザーで提供されます。 Microsoft パートナー経由で購入した場合、価格はパートナーが提供するサービスや、Microsoft 365 Business Premium の価格モデルによって異なる可能性があります。
 
 ### <a name="is-there-a-cap-to-how-many-microsoft-365-business-premium-seats-a-customer-can-have"></a>Microsoft 365 Business Premium では、利用可能なシート数に上限はありますか。
 
@@ -110,7 +110,7 @@ Windows 7、8、8.1 Professional のライセンスがあるデバイスを使�
 
 Microsoft 365 Business Premium は、従業員が個人のデバイスを業務に使用できるようにする一方で、企業には従業員のデバイスでのビジネス情報へのアクセス、保持、共有を防止する機能を提供する、シンプルかつ強力な手段を提供します。 具体的な機能は次のとおりです。
 
-- **Office モバイル用のアプリ保護**により、アプリで iOS および Android モバイル デバイス上の Office データ (メール、カレンダー、連絡先、ドキュメントなど) を保護できます。そのために、一定期間サービスに接続しなかった場合のビジネス データの自動削除、OneDrive for Business のみへの情報の保存の要求、Office アプリへのアクセス時の暗証番号 (PIN)/指紋検証の要求、Office アプリから個人アプリへの会社のデータのコピーの防止などのポリシーを適用します。 Microsoft 365 Business Premium サブスクライバーは、Intune を介して他のモバイル アプリのアプリケーション管理も行えます。
+- **Office モバイル用のアプリ保護** により、アプリで iOS および Android モバイル デバイス上の Office データ (メール、カレンダー、連絡先、ドキュメントなど) を保護できます。そのために、一定期間サービスに接続しなかった場合のビジネス データの自動削除、OneDrive for Business のみへの情報の保存の要求、Office アプリへのアクセス時の暗証番号 (PIN)/指紋検証の要求、Office アプリから個人アプリへの会社のデータのコピーの防止などのポリシーを適用します。 Microsoft 365 Business Premium サブスクライバーは、Intune を介して他のモバイル アプリのアプリケーション管理も行えます。
 
 - **Windows 10 pc のデバイス管理** を使用すると、Microsoft Defender Antivirus protection for マルウェア、自動更新、指定された時間後に画面をオフにするなどの機能を設定し、適用することを選択できます。 さらに、Windows 10 デバイスを紛失したり盗まれたりした場合は、管理センターを使用して業務アプリケーションとデータの完全にワイプすることができます。
 
@@ -156,7 +156,7 @@ Microsoft 365 Business Premium の展開を成功させる一番の近道は、M
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 Business Premium には、Microsoft Intune のすべての機能が含まれていますか。
 
-はい、Microsoft 365 Business Premium サブスクライバーは、iOS、Android、macOS、その他のクロスプラットフォームデバイス管理のための完全な Intune 機能を使用するライセンスを持っています。 サードパーティのアプリ管理、Wi-fi プロファイルの構成、VPN 証明書など、Microsoft 365 Business Premium の簡略化された管理コンソールで利用できない機能は、完全な Intune コンソールで管理できます。
+はい、Microsoft 365 Business Premium サブスクライバーは、iOS、Android、macOS、その他のクロスプラットフォームデバイス管理のための完全な Intune 機能を使用するライセンスを持っています。 サードパーティのアプリ管理、Wi-Fi プロファイルの構成、VPN 証明書など、Microsoft 365 Business Premium の簡略化された管理コンソールで利用できない機能は、完全な Intune コンソールで管理できます。
 
 ### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory (Azure AD) Premium P1 には、Microsoft 365 Business Premium が付属していますか?
 
@@ -180,9 +180,9 @@ Microsoft 365 Business Standard に追加できるすべてのアドオンは、
 
 はい。ビジネス音声サブスクリプションを購入することができます。 [ビジネス voip](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) は、電話システム、電話会議、国内通話プランなどをバンドルした、最大300ユーザーの中小企業向けに設計されたテレフォニーソリューションです。 利用可能な電話システムの機能には、ボイスメール、発信者番号、コールパーク、着信の転送、自動応答、通話キューなどがあります。 <br> お住まいの国または地域でビジネス Voip が利用可能かどうかを確認するには、「 [Business voice の国と地域の可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)」を参照してください。 価格情報については、「 [ビジネス音声の価格設定](https://go.microsoft.com/fwlink/?linkid=2127221)」を参照してください。
 
-### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 Business Premium のお客様は Microsoft Defender Advanced Threat Protection を使用できますか?
+### <a name="can-microsoft-365-business-premium-customers-use-microsoft-defender-for-endpoint"></a>Microsoft 365 Business Premium のお客様はエンドポイントに Microsoft Defender を使用できますか?
 
-はい。 microsoft の [クラウドソリューションプロバイダー](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)から購入した場合、Microsoft Defender Advanced Threat Protection は Microsoft 365 Business Premium へのアドオンとして利用できます。
+はい。 microsoft の [クラウドソリューションプロバイダー](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)から購入した場合、エンドポイントの microsoft Defender を Microsoft 365 Business Premium のアドオンとして利用できます。
 
 ## <a name="partner-opportunity"></a>パートナーのビジネス チャンス
 
@@ -224,7 +224,7 @@ Microsoft 365 Business Premium では、非正規版の Windows を正規版に�
 
 ### <a name="what-is-the-gdpr-and-how-does-microsoft-365-business-premium-help-customers-with-their-compliance-obligations"></a>GDPR とは何ですか。Microsoft 365 Business Premium では、顧客のコンプライアンスの義務をどのように支援しますか。
 
-一般データ保護規則 (GDPR) は、欧州連合 (EU) の居住者が各自の "個人データ" をより細かく管理できるようにする包括的な新しいプライバシー法であり、組織はその個人データの整合性を維持する必要があります。 GDPR では、EU 居住者に関連付けられている個人データを管理、つまり処理する組織が、GDPR の個人データ処理の要件を満たしたサード パーティ製データ プロセッサのみを使用することを求めています。 2017 年 3 月、Microsoft は、これらの保証を提供する契約上の保証を利用できるようにしました。 追加の GDPR の義務を果たすことを Microsoft がどのように支援できるかについて不明な点がある場合は、たとえば、Azure Information Protection、データ損失防止、Advanced Threat Protection などMicrosoft 365 Business Premium や Microsoft 365 Enterprise E5 などのその他のスイートで利用可能な、高度なコンプライアンスおよびセキュリティ機能について学習する必要があります。 詳細については、 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr) を参照してください。
+一般データ保護規則 (GDPR) は、欧州連合 (EU) の居住者が各自の "個人データ" をより細かく管理できるようにする包括的な新しいプライバシー法であり、組織はその個人データの整合性を維持する必要があります。 GDPR では、EU 居住者に関連付けられている個人データを管理、つまり処理する組織が、GDPR の個人データ処理の要件を満たしたサード パーティ製データ プロセッサのみを使用することを求めています。 2017 年 3 月、Microsoft は、これらの保証を提供する契約上の保証を利用できるようにしました。 Microsoft が追加の GDPR 義務をどのように支援するかについての質問があるお客様は、Microsoft 365 Business Premium (たとえば、Azure Information Protection、データ損失防止、Defender for Office 365 など) とその他のスイート (たとえば、Microsoft 365 Enterprise E5) で利用可能な高度なコンプライアンスおよびセキュリティ機能について学習する必要があります。 詳細については、 [www.microsoft.com/gdpr](https://www.microsoft.com/gdpr) を参照してください。
 
 ## <a name="footnotes"></a>脚注
 

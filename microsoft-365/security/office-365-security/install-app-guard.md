@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: ハードウェアベースの分離の最新情報を取得します。 悪用または悪意のあるリンクのような最新の攻撃や、従業員の生産性や企業のセキュリティを阻止できないようにします。
-ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3b31ef639667c7ef761d1d5fa0295f5d767e0c48
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197575"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843008"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>管理者向けの Office 用アプリケーションガード (パブリックプレビュー)
 
@@ -40,15 +40,15 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
 ### <a name="minimum-hardware-requirements"></a>ハードウェアの最小要件
 
-* **CPU**:64 ビット、4コア (物理または仮想)、仮想化拡張機能 (Intel VT-x または AMD-V)、コア i5 同等またはそれ以上推奨
-* **物理メモリ**: 8 GB の RAM
-* **ハードディスク**: システムドライブに 10 GB の空き領域 (SSD を推奨)
+* **CPU** :64 ビット、4コア (物理または仮想)、仮想化拡張機能 (Intel VT-x または AMD-V)、コア i5 同等またはそれ以上推奨
+* **物理メモリ** : 8 GB の RAM
+* **ハードディスク** : システムドライブに 10 GB の空き領域 (SSD を推奨)
 
 ### <a name="minimum-software-requirements"></a>最小ソフトウェア要件
 
-* **Windows 10**: Windows 10 Enterprise Edition、クライアントビルドバージョン 2004 (20H1) ビルド19041
-* **Office**: Office ベータチャネルビルドバージョン 2008 16.0.13212 以降
-* **更新プログラムパッケージ**: 毎月の Windows 10 累積セキュリティ更新プログラム [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
+* **Windows 10** : Windows 10 Enterprise Edition、クライアントビルドバージョン 2004 (20H1) ビルド19041
+* **Office** : Office ベータチャネルビルドバージョン 2008 16.0.13212 以降
+* **更新プログラムパッケージ** : 毎月の Windows 10 累積セキュリティ更新プログラム [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 システム要件の詳細については、「 [Microsoft Defender Application Guard のシステム要件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)」を参照してください。 Office Insider Preview ビルドの詳細については、「 [Office insider ビルドの展開の](https://insider.office.com/business/deploy)概要」を参照してください。
 
@@ -59,7 +59,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
 ### <a name="enable-application-guard-for-office"></a>Office 用 Application Guard を有効にする
 
-1.  **Windows 10 累積された毎月のセキュリティ更新プログラム KB4571756**をダウンロードしてインストールします。 
+1.  **Windows 10 累積された毎月のセキュリティ更新プログラム KB4571756** をダウンロードしてインストールします。 
 
 2.  [Windows の機能] の下にある [ **Microsoft Defender Application Guard** ] を選択し、[ **OK]** を選択します。 Application Guard 機能を有効にすると、システムの再起動が求められます。 今すぐ再起動するか、手順3の後で再起動するかを選択できます。
 
@@ -71,7 +71,7 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-3.  「 **コンピューターの構成 \\ 管理用テンプレート \\ Windows コンポーネント \\ microsoft defender application guard**」にある「管理モードグループポリシー」の「microsoft defender application Guard」を参照してください。 [オプション] の値を **2** または **3** に設定し、[ **OK]** または [ **適用**] を選択して、このポリシーを有効にします。
+3.  「 **コンピューターの構成 \\ 管理用テンプレート \\ Windows コンポーネント \\ microsoft defender application guard** 」にある「管理モードグループポリシー」の「microsoft defender application Guard」を参照してください。 [オプション] の値を **2** または **3** に設定し、[ **OK]** または [ **適用** ] を選択して、このポリシーを有効にします。
 
     ![管理モードで AG を有効にする](../../media/ag04-deploy.png)
   
@@ -92,11 +92,11 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) �
 
     ![[スタート] メニュー](../../media/ag05-diagnostic.png)
 
-2.  [ **Windows の設定**] で、[ **プライバシー**] を選択します。
+2.  [ **Windows の設定** ] で、[ **プライバシー** ] を選択します。
 
     ![[Windows の設定] メニュー](../../media/ag06-diagnostic.png)
 
-3.  [プライバシー] で [ **診断 &** ] を選択し、[ **オプションの診断データ**] を選択します。
+3.  [プライバシー] で [ **診断 &** ] を選択し、[ **オプションの診断データ** ] を選択します。
 
     ![[診断とフィードバック] メニュー](../../media/ag07a-diagnostic.png)
 
@@ -158,19 +158,19 @@ Office の Application Guard を起動するときに問題が発生した場合
 
 3.  [フィードバックを **要約** する] ボックスに入力します (まだ入力されていない場合)。
 
-4.  発生した問題についての詳細な説明と必要な手順を記入し **て、[** **次へ**] を選択します。
+4.  発生した問題についての詳細な説明と必要な手順を記入し **て、[** **次へ** ] を選択します。
 
-5.  [問題] の横にある [バブル] を選択します。 選択したカテゴリが [ **セキュリティとプライバシー] \> Microsoft Defender Application Guard – Office**] であることを確認して、[ **次へ**] を選択します。
+5.  [問題] の横にある [バブル] を選択します。 選択したカテゴリが [ **セキュリティとプライバシー] \> Microsoft Defender Application Guard – Office** ] であることを確認して、[ **次へ** ] を選択します。
 
-6.  [ **新しいフィードバック**] を選択し、[ **次へ**] をクリックします。
+6.  [ **新しいフィードバック** ] を選択し、[ **次へ** ] をクリックします。
 
 7.  次の問題に関するトレースを収集します。
 
-    1. **[問題の再作成**] タイルを展開します。
+    1. **[問題の再作成** ] タイルを展開します。
 
     2.  Application Guard の実行中に発生している問題が発生した場合は、Application Guard インスタンスを開きます。 これにより、Application Guard コンテナー内から追加のトレースを収集できます。
 
-    3.  [ **録音を開始** する] を選択し、タイルが回転を停止するのを待ち、 *録音を停止*します。
+    3.  [ **録音を開始** する] を選択し、タイルが回転を停止するのを待ち、 *録音を停止* します。
 
     4.  問題を Application Guard に完全に再現します。 これには、Application Guard インスタンスを起動し、障害が発生するまで待機する、または実行中の Application Guard インスタンスで問題を再現しようとする場合があります。
 
@@ -188,13 +188,13 @@ Office の Application Guard を起動するときに問題が発生した場合
 
 Office ドキュメントを Application Guard で開いたときに問題が発生した場合は、Office からフィードバックを送信することもできます。 フィードバックを送信するには、「 [Office Insider ハンドブック](https://insider.office.com/handbook) 」を参照してください。
 
-## <a name="integration-with-microsoft-defender-atp-and-office-atp"></a>Microsoft Defender ATP および Office ATP との統合
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>エンドポイントと microsoft Defender for Office 365 の統合
 
-Office 用 Application Guard は Microsoft Defender 前貸し脅威保護 (ATP) と統合されており、分離環境で発生する悪意のあるアクティビティについての監視と警告を提供します。
+Office 用 Application Guard は、エンドポイントの Microsoft Defender と統合されており、分離された環境で発生した悪意のあるアクティビティについての監視と警告を提供します。
 
-Microsoft Defender ATP は、企業ネットワークによる、高度な脅威の防止、検出、調査、応答を支援するように設計されたセキュリティプラットフォームです。 このプラットフォームの詳細については、 [Microsoft Defender Advanced Threat Protection](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) ページを参照してください。 オンボードデバイスのこのプラットフォームへのオンボードデバイスの詳細について [は、「Microsoft DEFENDER ATP サービス」を](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)参照してください。
+エンドポイント用 Microsoft Defender は、企業ネットワークによる、高度な脅威の防止、検出、調査、応答を支援するように設計されたセキュリティプラットフォームです。 このプラットフォームの詳細については、「 [エンドポイントの Microsoft Defender](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) 」ページを参照してください。 エンドポイントデバイスのこのプラットフォームへのオンボードデバイスの詳細について [は、「Microsoft Defender For Endpoint service」を](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)参照してください。
 
-また、Microsoft Defender ATP を使用するように Office 365 ATP を構成することもできます。 [Microsoft DEFENDER atp を使用した Office 365 atp の統合](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide)を参照してください。
+エンドポイントの Defender と連携するように Microsoft Defender for Office 365 を構成することもできます。 [エンドポイントに Microsoft defender を使用した Office 365 の統合 Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide)を参照してください。
 
 ## <a name="limitations-and-considerations"></a>制限事項と考慮事項
 

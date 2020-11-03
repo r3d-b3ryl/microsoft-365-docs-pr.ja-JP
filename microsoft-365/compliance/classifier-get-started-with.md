@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を向上させる方法について説明します。
-ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636986"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841234"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -44,7 +44,7 @@ Microsoft 365 trainable クラシファイアは、さまざまな種類のコ�
 UI の分類子にアクセスするには、次のようにします。 
 
 - グローバル管理者は、カスタム分類子を作成するためにテナントを選択する必要があります。
-- 分類子を教育するには、コンプライアンス管理者ロールまたはコンプライアンスデータ管理者が必要です。
+- 分類子を教育するには、コンプライアンス管理者の役割、データ調査の役割、またはコンプライアンスデータ管理者が必要です。
 
 次のシナリオでは、分類子を使用するために、以下のアクセス許可を持つアカウントが必要になります。
 
@@ -74,7 +74,7 @@ UI の分類子にアクセスするには、次のようにします。
 
 ### <a name="seed-content"></a>Seed コンテンツ
 
-Trainable 分類子を個別に特定のカテゴリのコンテンツにする必要がある場合は、まず、カテゴリに含まれるコンテンツの種類の多くのサンプルを提示する必要があります。 Trainable 分類子へのこのサンプルのフィードは、 *シード*と呼ばれます。 Seed コンテンツは人間が選択し、コンテンツのカテゴリを表すことを判断します。
+Trainable 分類子を個別に特定のカテゴリのコンテンツにする必要がある場合は、まず、カテゴリに含まれるコンテンツの種類の多くのサンプルを提示する必要があります。 Trainable 分類子へのこのサンプルのフィードは、 *シード* と呼ばれます。 Seed コンテンツは人間が選択し、コンテンツのカテゴリを表すことを判断します。
 
 > [!TIP]
 > 少なくとも50の正のサンプルと最大500が必要です。 Trainable 分類子は、最新の作成済みサンプル (ファイル作成日時スタンプ) を500まで処理します。 指定したサンプル数が多いほど、分類子が実行する予測がより正確になります。
@@ -96,16 +96,16 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
    > [!IMPORTANT]
    > Seed セット内のアイテムがカテゴリの **強力な** 例であることを確認してください。 Trainable 分類子は、最初にそのモデルをシードしたものに基づいてモデルを作成します。 この分類子は、すべてのシードサンプルが強力なものであることを前提としていますが、サンプルがカテゴリに対して弱いまたは否定的一致であるかどうかを知ることはできません。
 
-2. Seed *コンテンツを保持する*専用の SharePoint Online フォルダーにシードコンテンツを配置します。 サイト、ライブラリ、およびフォルダーの URL をメモしておきます。
+2. Seed *コンテンツを保持する* 専用の SharePoint Online フォルダーにシードコンテンツを配置します。 サイト、ライブラリ、およびフォルダーの URL をメモしておきます。
 
    > [!TIP]
    > Seed データ用の新しいサイトとフォルダーを作成する場合は、そのシードデータを使用する trainable 分類子を作成する前に、少なくとも1時間、その場所にインデックスを作成するようにしてください。
 
-3. コンプライアンス管理者またはセキュリティ管理者の役割アクセスを使用して microsoft 365 コンプライアンスセンターにサインインし、 **microsoft 365 コンプライアンスセンター**または**microsoft 365 セキュリティセンター**の  >  **データ分類**を開きます。
+3. コンプライアンス管理者またはセキュリティ管理者の役割アクセスを使用して microsoft 365 コンプライアンスセンターにサインインし、 **microsoft 365 コンプライアンスセンター** または **microsoft 365 セキュリティセンター** の  >  **データ分類** を開きます。
 
 4. [ **Trainable 分類子** ] タブを選択します。
 
-5. [ **Create trainable クラシファイア**] を選択します。
+5. [ **Create trainable クラシファイア** ] を選択します。
 
 6. `Name` `Description` この trainable クラシファイアで識別するアイテムのカテゴリのフィールドとフィールドに適切な値を入力します。
 
@@ -125,7 +125,7 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
     > [!IMPORTANT]
     > サンプルアイテムは、暗号化する必要がなく、英語でなければなりません。
 
-12. テストコンテンツ *のみ*を保持する専用の SharePoint Online フォルダーにテストコンテンツを配置します。 SharePoint Online のサイト、ライブラリ、およびフォルダーの URL をメモしておきます。
+12. テストコンテンツ *のみ* を保持する専用の SharePoint Online フォルダーにテストコンテンツを配置します。 SharePoint Online のサイト、ライブラリ、およびフォルダーの URL をメモしておきます。
 
     > [!TIP]
     > テストデータ用に新しいサイトとフォルダーを作成する場合は、そのシードデータを使用する trainable 分類子を作成する前に、少なくとも1時間、その場所にインデックスを設定するようにしてください。
@@ -148,7 +148,7 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
     > [!div class="mx-imgBorder"]
     > ![[アイテムの確認] ボックス](../media/classifier-trainable-review-detail.png)
 
-19. *少なく*とも200のアイテムを確認します。 精度スコアが安定すると、[ **発行** ] オプションが使用可能になり、分類子の状態が表示され `Ready to use` ます。
+19. *少なく* とも200のアイテムを確認します。 精度スコアが安定すると、[ **発行** ] オプションが使用可能になり、分類子の状態が表示され `Ready to use` ます。
 
     > [!div class="mx-imgBorder"]
     > ![精度スコアと発行の準備ができている](../media/classifier-trainable-review-ready-to-publish.png)
@@ -163,13 +163,13 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
  
 1. グローバル管理者または電子情報開示管理者は、分類子の作成者として、「 [connect To Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true)」の手順に従って、PowerShell を使用してコンプライアンスセンターに接続します。
 
-2. 次に示すコマンドを実行します。
+2. 次のコマンドを実行します。
 
    ```powershell
    Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
    ```
    
-   次に、例を示します。
+   例:
    
    `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
 

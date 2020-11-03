@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196859"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843854"
 ---
 # <a name="device-profile-page"></a>デバイスプロファイルページ
 
@@ -27,9 +27,9 @@ ms.locfileid: "48196859"
 Microsoft 365 セキュリティポータルはデバイスプロファイルページを提供するので、ネットワーク上のデバイスの正常性と状態をすばやく評価できます。
 
 > [!IMPORTANT]
-> デバイスが Microsoft Defender ATP、Azure ATP、またはその両方に登録されているかどうかによって、デバイスプロファイルページがわずかに異なる場合があります。
+> デバイスが、エンドポイントの Microsoft Defender に登録されているか、Id 用 Microsoft Defender であるか、またはその両方であるかによって、デバイスプロファイルページがわずかに異なる場合があります。
 
-デバイスが Microsoft Defender ATP に登録されている場合は、[デバイスプロファイル] ページを使用して、いくつかの一般的なセキュリティタスクを実行することもできます。
+エンドポイントの Microsoft Defender にデバイスが登録されている場合は、[デバイスプロファイル] ページを使用していくつかの一般的なセキュリティタスクを実行することもできます。
 
 ## <a name="navigating-the-device-profile-page"></a>デバイスプロファイルページのナビゲーション
 
@@ -41,7 +41,7 @@ Microsoft 365 セキュリティポータルはデバイスプロファイルペ
 
 メインコンテンツ領域 (2) には、デバイスに関するさまざまな種類の情報を表示するために切り替えることができるタブが含まれています。
 
-デバイスが Microsoft Defender ATP に登録されている場合は、応答アクションの一覧も表示されます (3)。 応答アクションを使用すると、セキュリティ関連の一般的なタスクを実行できます。
+エンドポイントの Microsoft Defender にデバイスが登録されている場合は、応答アクションの一覧も表示されます (3)。 応答アクションを使用すると、セキュリティ関連の一般的なタスクを実行できます。
 
 ## <a name="sidebar"></a>サイドバー
 
@@ -51,15 +51,15 @@ Microsoft 365 セキュリティポータルはデバイスプロファイルペ
 
 サイドバーには、デバイスの完全な名前と露出レベルが一覧表示されます。 また、以下のように、次のようないくつかの重要な基本的な情報を、開いた場合と閉じて設定したサブセクションで提供することもできます。
 
-* **タグ** -デバイスに関連付けられている MICROSOFT Defender Atp、Azure atp、またはカスタムタグ。 Azure ATP からのタグは編集できません。
-* **セキュリティ情報** -インシデントとアクティブなアラートを開きます。 Microsoft Defender ATP に登録されているデバイスには、露出レベルとリスクレベルも表示されます。
+* **タグ** -エンドポイントの microsoft Defender、Id の microsoft defender、またはデバイスに関連付けられているカスタムタグ。 Id の Microsoft Defender からのタグは編集できません。
+* **セキュリティ情報** -インシデントとアクティブなアラートを開きます。 エンドポイントの Microsoft Defender に登録されているデバイスには、露出レベルとリスクレベルも表示されます。
 
 > [!TIP]
 > 露出レベルは、デバイスがセキュリティ上の推奨事項とどの程度準拠しているかに関係していますが、リスクレベルは、アクティブな通知の種類や重要度など、さまざまな要因に基づいて計算されます。
 
-* **デバイスの詳細** -デバイスが最初に表示されたときのドメイン、OS、タイムスタンプ、IP アドレス、リソース。 Microsoft Defender ATP に登録されているデバイスには、正常性の状態も表示されます。 Azure ATP に登録されたデバイスは、最初にデバイスが作成されたときの SAM 名とタイムスタンプを表示します。
+* **デバイスの詳細** -デバイスが最初に表示されたときのドメイン、OS、タイムスタンプ、IP アドレス、リソース。 エンドポイントの Microsoft Defender に登録されているデバイスには、正常性の状態も表示されます。 Id に対して Microsoft Defender に登録されているデバイスには、そのデバイスが最初に作成されたときの SAM 名とタイムスタンプが表示されます。
 * **ネットワークアクティビティ** -最初の時点でのタイムスタンプ、およびデバイスがネットワーク上で最後に表示された時刻。
-* **ディレクトリデータ** (*Azure ATP に登録されているデバイス専用*)- [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) のフラグ、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)、およびグループメンバーシップ。
+* **ディレクトリデータ** ( *id に対して Microsoft Defender に登録されているデバイスの場合のみ* )- [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) のフラグ、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)、およびグループメンバーシップ。
 
 ## <a name="response-actions"></a>応答アクション
 
@@ -68,18 +68,18 @@ Microsoft 365 セキュリティポータルはデバイスプロファイルペ
 ![デバイスプロファイルのアクションバーの画像](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * [応答アクション](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) は、デバイスが MICROSOFT Defender ATP に登録されている場合にのみ使用できます。
-> * Microsoft Defender ATP に登録されているデバイスでは、デバイスの OS とバージョン番号に基づいて、異なる数の応答アクションが表示されることがあります。
+> * [応答アクション](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) は、エンドポイントの Microsoft Defender にデバイスが登録されている場合にのみ使用できます。
+> * エンドポイントの Microsoft Defender に登録されているデバイスでは、デバイスの OS とバージョン番号に基づいて異なる数の応答アクションが表示されることがあります。
 
 [デバイスプロファイル] ページで使用可能なアクションは次のとおりです。
 
 * **タグの管理** -このデバイスに適用したカスタムタグを更新します。
-* **デバイスの分離** -Microsoft Defender Advanced Threat Protection に接続された状態を維持したまま、組織のネットワークからデバイスを分離します。 通信目的で、デバイスが分離されている間、Outlook、Teams、および Skype for Business を実行することを選択できます。
+* **デバイスの分離** -エンドポイントの Microsoft Defender に接続された状態を維持したまま、組織のネットワークからデバイスを分離します。 通信目的で、デバイスが分離されている間、Outlook、Teams、および Skype for Business を実行することを選択できます。
 * **アクションセンター** -送信されたアクションの状態を表示します。 別のアクションが既に選択されている場合にのみ使用できます。
 * **アプリの実行を制限** する-Microsoft によって署名されていないアプリケーションが実行されないようにします。
 * **ウイルス対策スキャンを実行** する-Windows Defender ウイルス対策の定義を更新し、すぐにウイルス対策スキャンを実行します。 クイックスキャンまたはフルスキャンのどちらかを選択します。
 * **収集調査パッケージ** -デバイスに関する情報を収集します。 調査が完了したら、ダウンロードすることができます。
-* [ **Live Response Session を開始**する-[詳細なセキュリティ調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)のためにデバイス上のリモートシェルをロードします。
+* [ **Live Response Session を開始** する- [詳細なセキュリティ調査](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)のためにデバイス上のリモートシェルをロードします。
 * **自動化** された調査を開始します。脅威を自動的に調査 [し、remediates](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)します。 自動調査を手動でトリガーしてこのページから実行することもできますが、 [特定のアラートポリシーによっ](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) て自動的に調査がトリガーされます。
 * **アクションセンター** -現在実行されているすべての応答アクションに関する情報を表示します。
 
@@ -87,21 +87,21 @@ Microsoft 365 セキュリティポータルはデバイスプロファイルペ
 
 [デバイスプロファイル] タブを使用すると、デバイスに関するセキュリティ詳細の概要と、通知のリストを含むテーブルを切り替えることができます。
 
-Microsoft Defender ATP に登録されているデバイスには、タイムラインを機能するタブ、セキュリティに関する推奨事項の一覧、ソフトウェアインベントリ、検出された脆弱性の一覧、および KBs (セキュリティ更新プログラム) が表示されます。
+エンドポイントの Microsoft Defender に登録されているデバイスにも、タイムラインを機能するタブ、セキュリティ推奨事項の一覧、ソフトウェアインベントリ、検出された脆弱性の一覧、および KBs (セキュリティ更新プログラム) が表示されます。
 
 ### <a name="overview-tab"></a>[概要] タブ
 
-既定のタブは **概要**です。 これにより、デバイスに関する最も重要なセキュリティの事実をすばやく確認できます。
+既定のタブは **概要** です。 これにより、デバイスに関する最も重要なセキュリティの事実をすばやく確認できます。
 
 ![デバイスプロファイルの [概要] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
 ここでは、デバイスのアクティブな通知と、現在ログオンしているユーザーを簡単に確認できます。
 
-デバイスが Microsoft Defender ATP に登録されている場合は、デバイスのリスクレベルとセキュリティ評価に関する利用可能なデータも表示されます。 セキュリティ評価では、デバイスの公開レベルについて説明し、セキュリティに関する推奨事項を提示し、影響を受けるソフトウェアと検出された脆弱性を一覧表示します。
+エンドポイントの Microsoft Defender にデバイスが登録されている場合は、デバイスのリスクレベルとセキュリティ評価に関する利用可能なデータも表示されます。 セキュリティ評価では、デバイスの公開レベルについて説明し、セキュリティに関する推奨事項を提示し、影響を受けるソフトウェアと検出された脆弱性を一覧表示します。
 
 ### <a name="alerts-tab"></a>[通知] タブ
 
-[ **通知** ] タブには、Azure Atp と MICROSOFT Defender atp の両方から、デバイス上で発生した通知の一覧が含まれています。
+[ **通知** ] タブには、デバイス上で発生した通知の一覧が含まれています。これは、microsoft Defender と id の両方とエンドポイントの microsoft defender の両方からです。
 
 ![デバイスプロファイルの [通知] タブの画像](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -179,7 +179,7 @@ Microsoft Defender ATP に登録されているデバイスには、タイムラ
 
 ## <a name="related-topics"></a>関連項目
 
-* [Microsoft Threat Protection の概要](microsoft-threat-protection.md)
-* [Microsoft Threat Protection を有効にする](mtp-enable.md)
+* [Microsoft 365 Defender の概要](microsoft-threat-protection.md)
+* [Microsoft 365 Defender をオンにする](mtp-enable.md)
 * [Live response を使用してデバイスのエンティティを調査する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Office 365 での自動調査および対応 (AIR)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

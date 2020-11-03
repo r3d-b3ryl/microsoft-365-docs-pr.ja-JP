@@ -1,5 +1,5 @@
 ---
-title: スプーフィング インテリジェンスを設定する
+title: スプーフィング インテリジェンスを構成する
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、特定のスプーフィングされた送信者を許可またはブロックする Exchange Online Protection (EOP) のスプーフィングインテリジェンスについて学ぶことができます。
-ms.openlocfilehash: 86771397f0175d389a69c1008e0ac5471697afc5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4ebc32a6c87c58edcceb0d57ee8d55be43f2dd20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199603"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841830"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>EOP でスプーフィングインテリジェンスを構成する
 
@@ -53,7 +53,7 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。 **フィッシング対策**ページに直接移動するには、を使用 <https://protection.office.com/antiphishing> します。
+- <https://protection.office.com/> でセキュリティ/コンプライアンス センターを開きます。 **[スパム対策の設定]** ページに直接移動するには、<https://protection.office.com/antispam> を使用します。 **フィッシング対策** ページに直接移動するには、を使用 <https://protection.office.com/antiphishing> します。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -61,24 +61,24 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 
   - スプーフィングインテリジェンスポリシーを変更したり、スプーフィングインテリジェンスを有効または無効にしたりするには、次のいずれかの役割グループのメンバーである必要があります。
 
-    - **組織の管理**または[セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ管理者**。
-    - **組織の管理**または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**検疫管理**。
+    - **組織の管理** または [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ管理者** 。
+    - **組織の管理** または [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **検疫管理** 。
 
   - スプーフィングインテリジェンスポリシーへの読み取り専用アクセスでは、次のいずれかの役割グループのメンバーである必要があります。
 
-    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の**セキュリティ閲覧者**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の**表示限定の組織管理**。
+    - [セキュリティ/コンプライアンス センター](permissions-in-the-security-and-compliance-center.md)の **セキュリティ閲覧者** 。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) の **表示限定の組織管理** 。
 
 - スプーフィングインテリジェンスに推奨される設定については、「 [EOP default フィッシング対策ポリシーの設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)」を参照してください。
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>セキュリティ & コンプライアンスセンターを使用してスプーフィングされた送信者を管理する
 
 > [!NOTE]
-> Microsoft 365 Enterprise E5 サブスクリプションを使用している場合、または Office 365 Advanced Threat Protection (Office 365 ATP) アドオンを個別に購入した場合は、 [スプーフィングインテリジェンスの洞察](walkthrough-spoof-intelligence-insight.md)を通じてドメインをスプーフィングしている送信者を管理することもできます。
+> Microsoft 365 Enterprise E5 サブスクリプションを使用している場合、または Microsoft Defender for Office 365 アドオンを別途購入している場合は、 [スプーフィングインテリジェンスの洞察](walkthrough-spoof-intelligence-insight.md)を通じてドメインをスプーフィングしている送信者を管理することもできます。
 
-1. セキュリティ/コンプライアンス センターで、**[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
+1. セキュリティ/コンプライアンス センターで、 **[脅威の管理]** \> **[ポリシー]** \> **[迷惑メール対策]** に移動します。
 
-2. [ **スパム対策設定** ] ページで、[ ![ 展開] アイコンをクリックして [ ](../../media/scc-expand-icon.png) **スプーフィングインテリジェンスポリシー**] を展開します。
+2. [ **スパム対策設定** ] ページで、[ ![ 展開] アイコンをクリックして [ ](../../media/scc-expand-icon.png) **スプーフィングインテリジェンスポリシー** ] を展開します。
 
    ![スプーフィングインテリジェンスポリシーを選択する](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -89,51 +89,51 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 
 4. 表示される [ユーザー] ポップアップの **スプーフィングを許可するかどう** かを決定するには、次のタブのいずれかを選択します。
 
-   - **ドメイン**: 送信者が内部ドメイン内のユーザーを偽装します。
-   - **外部ドメイン**: 送信者は外部ドメインのユーザーを偽装します。
+   - **ドメイン** : 送信者が内部ドメイン内のユーザーを偽装します。
+   - **外部ドメイン** : 送信者は外部ドメインのユーザーを偽装します。
 
-5. [ ![ ](../../media/scc-expand-icon.png) **スプーフィングが許可さ** れていますか?] 列の [展開] アイコンをクリックします。 スプーフィングされた送信者を許可する場合は [ **はい]** を選択し、メッセージをスプーフィングとしてマークする場合は [ **いいえ** ] を選択します。 このアクションは、既定のフィッシング対策ポリシーまたはカスタムの ATP のフィッシング対策ポリシーによって制御されます (既定値は **[迷惑メールフォルダーにメッセージを移動**します)]。 詳細については、「 [フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
+5. [ ![ ](../../media/scc-expand-icon.png) **スプーフィングが許可さ** れていますか?] 列の [展開] アイコンをクリックします。 スプーフィングされた送信者を許可する場合は [ **はい]** を選択し、メッセージをスプーフィングとしてマークする場合は [ **いいえ** ] を選択します。 このアクションは、既定のフィッシング対策ポリシーまたはカスタムのマルウェア対策ポリシーによって制御されます (既定値は **[迷惑メールフォルダーにメッセージを移動** します)]。 詳細については、「 [フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。
 
    ![スプーフィングされた送信者のポップアップと、送信者がスプーフィングを許可するかどうかを示すスクリーンショット](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    表示される列と値については、次の一覧で説明します。
 
-   - **偽装ユーザー**: スプーフィングされているユーザーアカウント。 これは、 `5322.From` 電子メールクライアントに表示される差出人アドレス (アドレスとも呼ばれます) のメッセージ送信者です。 このアドレスの有効性は、SPF によってチェックされません。
+   - **偽装ユーザー** : スプーフィングされているユーザーアカウント。 これは、 `5322.From` 電子メールクライアントに表示される差出人アドレス (アドレスとも呼ばれます) のメッセージ送信者です。 このアドレスの有効性は、SPF によってチェックされません。
 
-     - [**自分のドメイン**] タブの値に1つの電子メールアドレスが含まれている場合、または送信元の電子メールサーバーが複数のユーザーアカウントを偽装している場合は、複数のユーザーアカウントが含ま**れています。**
+     - [ **自分のドメイン** ] タブの値に1つの電子メールアドレスが含まれている場合、または送信元の電子メールサーバーが複数のユーザーアカウントを偽装している場合は、複数のユーザーアカウントが含ま **れています。**
 
      - [ **外部ドメイン** ] タブの値には、完全な電子メールアドレスではなく、偽装されたユーザーのドメインが含まれています。
 
-   - [**インフラストラクチャの送信**]: 送信元の電子メールサーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) にあるドメイン、またはソースに PTR レコードがない場合は ip アドレス。
+   - [ **インフラストラクチャの送信** ]: 送信元の電子メールサーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) にあるドメイン、またはソースに PTR レコードがない場合は ip アドレス。
 
      メッセージソースとメッセージ送信者の詳細については、「 [電子メールメッセージの標準の概要](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)」を参照してください。
 
-   - **メッセージ数**: 過去30日間に、指定したスプーフィングされた送信者または送信者を含む組織への送信インフラストラクチャからのメッセージの数。
+   - **メッセージ数** : 過去30日間に、指定したスプーフィングされた送信者または送信者を含む組織への送信インフラストラクチャからのメッセージの数。
 
-   - **ユーザーの苦情**: 過去30日間にこの送信者に対してユーザーが提出した苦情。 通常、苦情は Microsoft への迷惑メール送信の形式です。
+   - **ユーザーの苦情** : 過去30日間にこの送信者に対してユーザーが提出した苦情。 通常、苦情は Microsoft への迷惑メール送信の形式です。
 
-   - **認証結果**: 次のいずれかの値です。
+   - **認証結果** : 次のいずれかの値です。
 
-      - **成功**: 送信者が送信者の電子メール認証チェック (SPF または dkim) を通過しました。
-      - **失敗**しました。送信者は EOP の認証チェックに失敗しました。
-      - **Unknown**: これらのチェックの結果は不明です。
+      - **成功** : 送信者が送信者の電子メール認証チェック (SPF または dkim) を通過しました。
+      - **失敗** しました。送信者は EOP の認証チェックに失敗しました。
+      - **Unknown** : これらのチェックの結果は不明です。
 
-   - **Decision set by**: 送信インフラストラクチャがユーザーのスプーフィングを許可されているかどうかを示します。
+   - **Decision set by** : 送信インフラストラクチャがユーザーのスプーフィングを許可されているかどうかを示します。
 
        - **スプーフィングインテリジェンスポリシー** (自動)
        - **管理者** (手動)
 
-   - **最終表示**日: 偽装されたユーザーを含む送信元インフラストラクチャからメッセージが受信された最後の日付。
+   - **最終表示** 日: 偽装されたユーザーを含む送信元インフラストラクチャからメッセージが受信された最後の日付。
 
-   - **スプーフィングが許可されますか?**: ここに表示される値は次のとおりです。
+   - **スプーフィングが許可されますか?** : ここに表示される値は次のとおりです。
 
-     - **Yes**: スプーフィングされたユーザーと送信インフラストラクチャの組み合わせからのメッセージが許可され、スプーフィングされた電子メールとして扱われることはありません。
+     - **Yes** : スプーフィングされたユーザーと送信インフラストラクチャの組み合わせからのメッセージが許可され、スプーフィングされた電子メールとして扱われることはありません。
 
-     - **いいえ**: スプーフィングされたユーザーと送信元インフラストラクチャの組み合わせからのメッセージは、スプーフィングとしてマークされます。 このアクションは、既定のフィッシング対策ポリシーまたはカスタムの ATP のフィッシング対策ポリシーによって制御されます (既定値は **[迷惑メールフォルダーにメッセージを移動**します)]。 詳細については、次のセクションを参照してください。
+     - **いいえ** : スプーフィングされたユーザーと送信元インフラストラクチャの組み合わせからのメッセージは、スプーフィングとしてマークされます。 このアクションは、既定のフィッシング対策ポリシーまたはカスタムのマルウェア対策ポリシーによって制御されます (既定値は **[迷惑メールフォルダーにメッセージを移動** します)]。 詳細については、次のセクションを参照してください。
 
-     - **一部のユーザー** ([**自分のドメイン** ] タブのみ): 送信元のインフラストラクチャは複数のユーザーをスプーフィングしています。これには、一部のスプーフィングされたユーザーが許可されています。 特定のアドレスを表示するには、[ **詳細** ] タブを使用します。
+     - **一部のユーザー** ([ **自分のドメイン** ] タブのみ): 送信元のインフラストラクチャは複数のユーザーをスプーフィングしています。これには、一部のスプーフィングされたユーザーが許可されています。 特定のアドレスを表示するには、[ **詳細** ] タブを使用します。
 
-6. ページの下部にある [**保存**] をクリックします。
+6. ページの下部にある [ **保存** ] をクリックします。
 
 ## <a name="use-powershell-to-manage-spoofed-senders"></a>PowerShell を使用してスプーフィングされた送信者を管理する
 
@@ -181,13 +181,13 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 - [EOP でフィッシング対策ポリシーを構成](configure-anti-phishing-policies-eop.md)します。
 
-- [Microsoft 365 で ATP のフィッシング対策ポリシーを構成](configure-atp-anti-phishing-policies.md)します。
+- Microsoft [Defender 365 の Microsoft Defender でのフィッシング対策ポリシーを microsoft 365 で構成](configure-atp-anti-phishing-policies.md)します。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
 許可されている送信者とスプーフィングが許可されていない送信者、およびスプーフィングインテリジェンスの設定が構成済みであるというスプーフィングインテリジェンスが構成されていることを確認するには、次のいずれかの手順を使用します。
 
-- [セキュリティ & コンプライアンスセンター] で、[**脅威の管理**ポリシーのスパム対策]、 \> **Policy** \> **Anti-spam** \> [**スプーフィングインテリジェンスポリシー**の選択] の \> 順**に**選択します \> 。 [**ドメイン**または**外部ドメイン**] タブを選択し、[**スプーフィングを許可する**] の値を確認します。
+- [セキュリティ & コンプライアンスセンター] で、[ **脅威の管理** ポリシーのスパム対策]、 \> **Policy** \> **Anti-spam** \> [ **スプーフィングインテリジェンスポリシー** の選択] の \> 順 **に** 選択します \> 。 [ **ドメイン** または **外部ドメイン** ] タブを選択し、[ **スプーフィングを許可する** ] の値を確認します。
 
 - PowerShell で、次のコマンドを実行して、許可されている、またはスプーフィングが許可されていない送信者を表示します。
 
@@ -204,10 +204,10 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- セキュリティ & コンプライアンスセンターで、[**脅威管理** \> **ポリシー** \> の**フィッシング対策**] または [ **ATP のフィッシング対策**] に移動して、次のいずれかの手順を実行します。  
+- セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **ポリシー** \> の **フィッシング対策** ] または [ **ATP のフィッシング対策** ] に移動して、次のいずれかの手順を実行します。  
 
-  - リストからポリシーを選択します。 表示されたポップアップで、[ **スプーフ** ] セクションの値を確認します。
-  - [ **既定のポリシー**] をクリックします。 表示されたポップアップで、[ **スプーフ** ] セクションの値を確認します。
+  - 一覧からポリシーを選択します。 表示されたポップアップで、[ **スプーフ** ] セクションの値を確認します。
+  - [ **既定のポリシー** ] をクリックします。 表示されたポップアップで、[ **スプーフ** ] セクションの値を確認します。
 
 - Exchange Online PowerShell で、 \<Name\> Office365 フィッシング対策 Default またはカスタムポリシーの名前に置き換え、次のコマンドを実行して設定を確認します。
 
@@ -219,7 +219,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 スプーフィングとフィッシングの保護については、入念に行ってください。 ここでは、ドメインをスプーフィングしている送信者をチェックして、組織の損害を防ぐ方法について説明します。
 
-- **スプーフィングメールレポート**を確認します。 このレポートは多くの場合、スプーフィングされた送信者を表示して管理するために使用できます。 詳細については、「 [スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
+- **スプーフィングメールレポート** を確認します。 このレポートは多くの場合、スプーフィングされた送信者を表示して管理するために使用できます。 詳細については、「 [スプーフィング検出レポート](view-email-security-reports.md#spoof-detections-report)」を参照してください。
 
 - Sender Policy Framework (SPF) 構成を確認します。 SPF の概要と SPF を迅速に構成する方法については、「[スプーフィングを防止するために Microsoft 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。 Office 365 における SPF の使用方法についての詳細や、ハイブリッド展開などの非標準の展開のトラブルシューティングについては、「[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)」をご確認ください。
 

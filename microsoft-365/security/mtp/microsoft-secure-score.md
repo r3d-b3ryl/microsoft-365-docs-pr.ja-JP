@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294786"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843842"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 
@@ -46,7 +46,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ![セキュリティで保護されたスコアホームページ](../../media/secure-score/secure-score-homepage-new.png)
 
-## <a name="how-it-works"></a>動作のしくみ
+## <a name="how-it-works"></a>メカニズム
 
 ここでは、次のアクションのポイントを指定します。
 
@@ -76,7 +76,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ### <a name="products-included-in-secure-score"></a>セキュア スコアに含まれる製品
 
-現時点では、Microsoft 365 (Exchange Online を含む)、Azure Active Directory、Microsoft Defender ATP、Azure ATP、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日リリース予定です。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅しているわけではありませんが、適切な基準になっています。 また、強化された機能をサードパーティの対象としてマークしたり、別の軽減対策にマークしたりすることもできます。
+現時点では、Microsoft 365 (Exchange Online)、Azure Active Directory、Microsoft Defender for Endpoint、microsoft Defender for Identity、および Cloud App Security に関する推奨事項があります。 その他のセキュリティ製品の推奨事項は近日リリース予定です。 推奨事項は、各製品に関連付けられているすべての攻撃対象を網羅しているわけではありませんが、適切な基準になっています。 また、強化された機能をサードパーティの対象としてマークしたり、別の軽減対策にマークしたりすることもできます。
 
 ### <a name="security-defaults"></a>セキュリティの既定値
 

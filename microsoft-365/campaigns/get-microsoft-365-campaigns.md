@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: キャンペーンを cybersecurity の脅威から電子メール、データ、コミュニケーションに保護できるように、Microsoft 365 をキャンペーンに対して取得します。
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131978"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843236"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>キャンペーンに Microsoft 365 を入手する
 
@@ -43,11 +43,11 @@ Microsoft 365 Business Premium を使用しているすべての人がこのガ�
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Microsoft 365 のキャンペーンには、どのようなものがありますか?
 Microsoft 365 Business Premium のこの構成には、スタッフが安全に共同作業するために役立つ簡単なコントロールが含まれています。 
-- **ユーザー id を保護**する: 電子メールの送信またはファイルへのアクセス (多元的な認証) を行うときに、ユーザーがサインインした本人であることを確認します。
-- **機密情報を保護**する: 機密情報を保護して、組織外で共有される情報 (データ損失防止) を監視します。
-- **モバイルデバイスを保護**する: モバイルデバイス上のデータを保護します (モバイルアプリ保護ポリシー)。
-- **悪意のあるコンテンツからの保護**: 電子メールの添付ファイルをスキャンして悪意のあるコンテンツにアクセスできないようにします (advanced threat protection)。
-- **パスワードを保護**する: パスワードを無期限に設定すると、セキュリティが強化され、職場の stoppages (パスワードポリシー) の防止に役立てることができます。 
+- **ユーザー id を保護** する: 電子メールの送信またはファイルへのアクセス (多元的な認証) を行うときに、ユーザーがサインインした本人であることを確認します。
+- **機密情報を保護** する: 機密情報を保護して、組織外で共有される情報 (データ損失防止) を監視します。
+- **モバイルデバイスを保護** する: モバイルデバイス上のデータを保護します (モバイルアプリ保護ポリシー)。
+- **悪意のあるコンテンツからの保護** : 電子メールの添付ファイルをスキャンすることで悪意のあるコンテンツにアクセスできないようにする (Defender for Office 365)。
+- **パスワードを保護** する: パスワードを無期限に設定すると、セキュリティが強化され、職場の stoppages (パスワードポリシー) の防止に役立てることができます。 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>It コスト、必要なユーザー、およびコミットメントについて

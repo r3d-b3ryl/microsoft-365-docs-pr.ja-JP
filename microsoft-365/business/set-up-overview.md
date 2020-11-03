@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Microsoft 365 Business Premium のセットアップ手順、サブスクライブ、ドメインおよびユーザーの追加、セキュリティポリシーの設定などについて説明します。
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841143"
+ms.locfileid: "48842132"
 ---
 # <a name="overview-of-setup"></a>セットアップの概要
 
@@ -61,7 +61,7 @@ Microsoft 365 Business Premium セットアップに関する短いビデオを�
   セットアップウィザードのセキュリティ設定に加えて、次の設定を追加することによって、セキュリティを向上させることができます。
 
 - **メールマルウェア対策**
-- **ATP のフィッシング対策**
+- **Office 365 の Defender でのフィッシング対策**
 - **Exchange Online Archiving**
 - **Azure Information Protection (Plan1** )
 

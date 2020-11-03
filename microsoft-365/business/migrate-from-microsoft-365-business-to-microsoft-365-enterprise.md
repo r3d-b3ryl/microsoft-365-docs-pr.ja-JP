@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business Premium から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 874da0d35759c8af4c3ee2ca4a1bdfa90a91627c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195521"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842202"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Microsoft 365 Business Premium から Microsoft 365 E3 への移行
 
@@ -40,7 +40,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 アップグレードは簡単です。 [管理センターから](../commerce/subscriptions/upgrade-to-different-plan.md)アップグレードを開始できます。 現在のサブスクリプションのすべてのデータと構成が保持されます。 移行を準備するために実行する必要はありません。その後は、新しい機能を利用する以外に何もする必要はありません。
 
 >[!Note]
->また、Microsoft 365 Business Premium サブスクリプションを最大300の席で使用することもできます。また、Microsoft 365 E3 サブスクリプションは、300さらに多くのユーザーを対象としています。 ただし、Office 365 ATP は Microsoft 365 E3 には含まれていません。 引き続き脅威を保護するには、office 365 ATP のライセンスを追加して、Office 365 ATP ポリシーの範囲内のすべてのユーザーがライセンスを持つようにする必要があります。
+>また、Microsoft 365 Business Premium サブスクリプションを最大300の席で使用することもできます。また、Microsoft 365 E3 サブスクリプションは、300さらに多くのユーザーを対象としています。 ただし、Microsoft Defender for Office 365 は、Microsoft 365 E3 には含まれていません。 引き続き脅威を保護するには、office 365 ライセンス用の追加の Defender を追加して、Defender for Office 365 ポリシーの範囲内にあるすべてのユーザーがライセンスを付与されるようにする必要があります。
 >
 
 ## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Microsoft 365 Business Premium と Microsoft 365 Enterprise の相違点
@@ -60,12 +60,12 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 | Outlook カスタマーマネージャー、ミル Eiq    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | | 
 | **脅威保護**        | | | 
 | 攻撃対象領域の削減機能    | [このリストを表示する](#threat-protection) | Microsoft Edge のハードウェアベースの分離のエンタープライズ管理 | 
-| Office 365 Advanced Threat Protection (ATP) プラン1 | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
+| Office 用 Defender 365 プラン1 | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
 | **ID 管理**        | | | 
 | ハイブリッド Azure Active Directory (Azure AD) アカウントのセルフサービスによるパスワードのリセット、Azure 多要素認証 (MFA)、条件付きアクセス、オンプレミス id のパスワードの書き戻し|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | Cloud App Discovery、Azure AD Connect Health    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
-| Azure AD Office 365 apps シングルサインオン (SSO): ユーザーごとに10個のアプリ (Salesforce などのギャラリー SaaS アプリ) * | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO: 制限なし (Azure AD アプリケーションプロキシと、セルフサービスアプリ統合テンプレートを使用したギャラリー以外のアプリを使用したオンプレミスアプリ)    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Azure AD Office 365 apps Single Sign-On (SSO): ユーザーあたり10個のアプリ (Salesforce などのギャラリー SaaS アプリ) * | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO: 制限なし (Self-Service アプリ統合テンプレートを使用した、Azure AD アプリケーションプロキシおよび非ギャラリーアプリからのオンプレミスアプリ)    |     | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | **デバイスとアプリの管理**        | | | 
 | Microsoft Intune、Windows 自動操縦|     ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 |仮想デスクトップアクセス (VDA)    |  |     ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
@@ -129,7 +129,7 @@ Windows 10 Business には次のような保護が含まれています。
 Windows 10 Enterprise E3 には、Microsoft Edge のハードウェアベースの分離のエンタープライズ管理も含まれています。
 
 >[!Note]
->Microsoft 365 E3 に移行されるユーザーには、継続的な脅威保護のために Office 365 ATP ライセンスが必要になります。 Office 365 ATP ポリシーの範囲内のすべてのユーザーがライセンスを受けられるように、追加の Office 365 ATP ライセンスを購入してください。 
+>Microsoft 365 E3 に移行されるユーザーは、引き続き脅威を防止するために Microsoft Defender for Office 365 ライセンスが必要です。 Office 365 ライセンスを使用する 365 Defender のすべてのユーザーにライセンスが付与されるように、Office の追加の Defender を購入してください。 
 >
 
 ### <a name="device-management-with-intune"></a>Intune を使用したデバイス管理

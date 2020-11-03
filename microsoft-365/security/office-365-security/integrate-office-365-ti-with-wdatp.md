@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Microsoft defender Advanced Threat Protection を使用して、Microsoft defender for Office 365 を使用して、デバイスや電子メールコンテンツに対する脅威に関する詳細な情報を取得します。
+description: エンドポイントとして microsoft defender for Office 365 を使用して、デバイスや電子メールコンテンツに対する脅威に関する詳細な情報を取得します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c95e15c3cf16547843f9d2976dbf9df0d5747c0
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 6b8bec8d3ebe52de9b4e1b919b2aceee20b5b5b0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309239"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842358"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection を使用した Office 365 と Microsoft Defender の併用
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender と Office 365 の Microsoft Defender を併用する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,7 +41,7 @@ Microsoft defender for Office 365 とエンドポイントの Microsoft Defender
 この例では、検出された電子メールメッセージの受信者に4つのデバイスがあり、1つに通知があることがわかります。 デバイスのリンクをクリックすると、Microsoft Defender セキュリティセンター () にそのページが表示さ [https://securitycenter.windows.com](https://securitycenter.windows.com) れます。
 
 > [!TIP]
-> Microsoft Defender セキュリティセンター (Microsoft Defender ATP ポータルとも呼ばれます)**[の詳細については、こちら](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** を参照してください。
+> **[Microsoft Defender セキュリティセンター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (エンドポイントポータルの microsoft defender とも呼ばれます) の詳細については、こちらを参照してください。
   
 ## <a name="requirements"></a>Requirements
 
@@ -57,17 +57,17 @@ Microsoft defender for Office 365 とエンドポイントの Microsoft Defender
   
 1. グローバル管理者またはセキュリティ管理者として、に移動して、に [https://protection.office.com](https://protection.office.com) サインインします。 (これにより、Office 365 セキュリティ & コンプライアンスセンターに移動します。)
     
-2. ナビゲーションウィンドウで、[**脅威管理**エクスプローラー] を選択し  >  **Explorer**ます。<br>![脅威管理メニューのエクスプローラー](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. ナビゲーションウィンドウで、[ **脅威管理** エクスプローラー] を選択し  >  **Explorer** ます。<br>![脅威管理メニューのエクスプローラー](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
-3. 画面の右上にある [ **Wdatp 設定**] を選択します。
+3. 画面の右上隅で、[ **エンドポイント設定] に [Defender** ] を選択します。
     
-4. [エンドポイントの接続のための Microsoft Defender 接続] ダイアログボックスで、[ **WINDOWS ATP への接続**] をオンにします。<br>![エンドポイント接続のための Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. [エンドポイントの接続の Microsoft defender] ダイアログボックスで、[ **エンドポイントの Microsoft defender への接続** ] をオンにします。<br>![エンドポイント接続のための Microsoft Defender](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. Microsoft Defender セキュリティセンター () に移動 [https://securitycenter.windows.com](https://securitycenter.windows.com) します。
 
-6. ナビゲーションバーで、[ **設定**] を選択します。 [ **全般**] で、[ **高度な機能**] を選択します。
+6. ナビゲーションバーで、[ **設定** ] を選択します。 [ **全般** ] で、[ **高度な機能** ] を選択します。
 
-7. [ **Office 365 の脅威インテリジェンス接続**] まで下にスクロールし、接続をオンにします。<br/>![Office 365 脅威インテリジェンス接続](../../media/mdatp-oatptoggle.png)<br>
+7. [ **Office 365 の脅威インテリジェンス接続** ] まで下にスクロールし、接続をオンにします。<br/>![Office 365 脅威インテリジェンス接続](../../media/mdatp-oatptoggle.png)<br>
 
 ## <a name="related-articles"></a>関連記事
 
@@ -75,4 +75,4 @@ Microsoft defender for Office 365 とエンドポイントの Microsoft Defender
   
 [Microsoft Defender for Office 365](office-365-atp.md)
   
-[エンドポイントの Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)

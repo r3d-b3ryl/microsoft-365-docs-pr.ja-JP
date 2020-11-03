@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection の高度な検索クエリのベストプラクティス
+title: Microsoft 365 Defender の高度な検索クエリのベストプラクティス
 description: 高度な検索を使用して迅速、効率的、およびエラーのない脅威を探すためのクエリを作成する方法について説明します。
 keywords: 高度な検索、脅威の探し、サイバーの脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ、kusto、timeout、コマンドライン、プロセス id、最適化、ベストプラクティス、解析、参加、要約
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2b2ac519e63e5a7cba648dba67d2780bb7600e14
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649669"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843074"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -32,7 +32,7 @@ ms.locfileid: "48649669"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 これらの推奨事項を適用して、結果を迅速に取得し、複雑なクエリの実行中にタイムアウトを回避します。 クエリのパフォーマンスを向上させる方法の詳細については、「[Kusto クエリのベスト プラクティス](https://docs.microsoft.com/azure/kusto/query/best-practices)」を参照してください。
 
@@ -43,8 +43,8 @@ ms.locfileid: "48649669"
 
 ## <a name="general-optimization-tips"></a>一般的な最適化のヒント
 
-- **新しいクエリのサイズ**変更-クエリが大きな結果セットを返すことが疑われる場合は、まず [count 演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)を使用して評価します。 大きな結果セットを使用しないように [制限](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) またはシノニムを使用し `take` ます。
-- **事前にフィルターを適用**する-タイムフィルターとその他のフィルターを適用してデータセットを縮小します。特に、変換関数と解析関数 ( [substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)、 [replace ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)、 [trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction)、 [toupper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)、または [parse_json () など)](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)を使用する前に行います。 次の例では、フィルター演算子を使用してレコード数を減らした後、解析関数 [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) を使用しています。
+- **新しいクエリのサイズ** 変更-クエリが大きな結果セットを返すことが疑われる場合は、まず [count 演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)を使用して評価します。 大きな結果セットを使用しないように [制限](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) またはシノニムを使用し `take` ます。
+- **事前にフィルターを適用** する-タイムフィルターとその他のフィルターを適用してデータセットを縮小します。特に、変換関数と解析関数 ( [substring ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)、 [replace ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)、 [trim ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction)、 [toupper ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)、または [parse_json () など)](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)を使用する前に行います。 次の例では、フィルター演算子を使用してレコード数を減らした後、解析関数 [extractjson ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) を使用しています。
 
     ```kusto
     DeviceEvents
@@ -54,13 +54,13 @@ ms.locfileid: "48649669"
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- 拍の数が**含まれている**-単語内のサブ文字列を不必要に検索しないようにするには、ではなく演算子を使用し `has` `contains` ます。 [文字列演算子について](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
-- **[特定の列を検索**する]: すべての列で全文検索を実行するのではなく、特定の列を参照します。 すべての `*` 列のチェックには使用しないでください。
-- **大文字**と小文字を区別します。大文字と小文字を区別する検索はより具体的で、一般的にパフォーマンスが高くなります。 大文字と小文字が区別された [文字列演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)の名前 ( `has_cs` および `contains_cs` は通常、で終わる) `_cs` 。 また、ではなく、大文字と小文字を区別する等値演算子を使用することもでき `==` `=~` ます。
-- **Parse (抽出しない**): 可能であれば、 [parse 演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) または [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)のような解析関数を使用します。 `matches regex`文字列演算子または[extract () 関数](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)を使用しないでください。両方で正規表現を使用します。 より複雑なシナリオのために正規表現の使用を予約します。 [解析関数の詳細を参照してください。](#parse-strings)
-- [**テーブルに式**を適用しない]: テーブルの列にフィルターを適用する場合は、集計列に対してフィルターを適用しません。
-- **3 文字の用語はありません**。3文字以下の用語を使用して、比較またはフィルターを適用しないでください。 これらの用語はインデックス付けされず、一致するリソースが必要になります。
-- **選択的**に表示する: 必要な列だけを射影して、結果をわかりやすくします。 [Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator)または同様の操作を実行する前に特定の列を予測することも、パフォーマンスの向上に貢献します。
+- 拍の数が **含まれている** -単語内のサブ文字列を不必要に検索しないようにするには、ではなく演算子を使用し `has` `contains` ます。 [文字列演算子について](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **[特定の列を検索** する]: すべての列で全文検索を実行するのではなく、特定の列を参照します。 すべての `*` 列のチェックには使用しないでください。
+- **大文字** と小文字を区別します。大文字と小文字を区別する検索はより具体的で、一般的にパフォーマンスが高くなります。 大文字と小文字が区別された [文字列演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)の名前 ( `has_cs` および `contains_cs` は通常、で終わる) `_cs` 。 また、ではなく、大文字と小文字を区別する等値演算子を使用することもでき `==` `=~` ます。
+- **Parse (抽出しない** ): 可能であれば、 [parse 演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) または [parse_json ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)のような解析関数を使用します。 `matches regex`文字列演算子または[extract () 関数](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)を使用しないでください。両方で正規表現を使用します。 より複雑なシナリオのために正規表現の使用を予約します。 [解析関数の詳細を参照してください。](#parse-strings)
+- [ **テーブルに式** を適用しない]: テーブルの列にフィルターを適用する場合は、集計列に対してフィルターを適用しません。
+- **3 文字の用語はありません** 。3文字以下の用語を使用して、比較またはフィルターを適用しないでください。 これらの用語はインデックス付けされず、一致するリソースが必要になります。
+- **選択的** に表示する: 必要な列だけを射影して、結果をわかりやすくします。 [Join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator)または同様の操作を実行する前に特定の列を予測することも、パフォーマンスの向上に貢献します。
 
 ## <a name="optimize-the-join-operator"></a>演算子を最適化する `join`
 [Join 演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator)は、指定した列の値を一致させることによって、2つのテーブルの行を結合します。 この演算子を使用するクエリを最適化するには、以下のヒントを適用します。
@@ -80,7 +80,7 @@ ms.locfileid: "48649669"
     on AccountSid
     ```
 
-- **内部結合のフレーバーを使用**します。既定の [結合フレーバー](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) または [innerunique-](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) join は、左側のテーブルの行を返す前に、結合キーを使用して、右のテーブルと一致する行を返します。 左側のテーブルにキーに同じ値を持つ複数の行がある場合 `join` 、これらの行は、一意の値ごとに単一のランダムな行を残すように deduplicated されます。
+- **内部結合のフレーバーを使用** します。既定の [結合フレーバー](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) または [innerunique-](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) join は、左側のテーブルの行を返す前に、結合キーを使用して、右のテーブルと一致する行を返します。 左側のテーブルにキーに同じ値を持つ複数の行がある場合 `join` 、これらの行は、一意の値ごとに単一のランダムな行を残すように deduplicated されます。
 
     この既定の動作により、役に立つ洞察を提供できる左側の表から重要な情報が残らないことがあります。 たとえば、次のクエリは、同じ添付ファイルが複数のメールメッセージを使用して送信された場合でも、特定の添付ファイルを含む1つの電子メールのみを表示します。
 
@@ -99,7 +99,7 @@ ms.locfileid: "48649669"
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
-- **時間枠からレコードを結合**する: セキュリティイベントを調査する際に、アナリストは、同じ期間に発生する関連イベントを検索します。 同じ方法を使用する場合は、 `join` 確認するレコードの数を減らして、パフォーマンスを向上させることもできます。
+- **時間枠からレコードを結合** する: セキュリティイベントを調査する際に、アナリストは、同じ期間に発生する関連イベントを検索します。 同じ方法を使用する場合は、 `join` 確認するレコードの数を減らして、パフォーマンスを向上させることもできます。
     
     次のクエリは、悪意のあるファイルを受信してから30分以内にログオンイベントをチェックします。
 
@@ -115,7 +115,7 @@ ms.locfileid: "48649669"
     ) on AccountName 
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
-- **両方の側に時間フィルターを適用**します。特定のタイムウィンドウを調査していない場合でも、左と右の両方のテーブルで時間フィルターを適用すると、確認してパフォーマンスを向上させるためのレコード数を減らすことができ `join` ます。 次のクエリは両方のテーブルに適用され、 `Timestamp > ago(1h)` 過去1時間のレコードのみが結合されるようにします。
+- **両方の側に時間フィルターを適用** します。特定のタイムウィンドウを調査していない場合でも、左と右の両方のテーブルで時間フィルターを適用すると、確認してパフォーマンスを向上させるためのレコード数を減らすことができ `join` ます。 次のクエリは両方のテーブルに適用され、 `Timestamp > ago(1h)` 過去1時間のレコードのみが結合されるようにします。
 
     ```kusto
     EmailAttachmentInfo
@@ -124,7 +124,7 @@ ms.locfileid: "48649669"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```  
 
-- **ヒントを使用してパフォーマンスを向上**させる: `join` リソース集中型の操作を実行するときに負荷を分散するようにバックエンドに指示するには、オペレーターとのヒントを使用します。 [結合ヒントの詳細情報](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+- **ヒントを使用してパフォーマンスを向上** させる: `join` リソース集中型の操作を実行するときに負荷を分散するようにバックエンドに指示するには、オペレーターとのヒントを使用します。 [結合ヒントの詳細情報](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
     たとえば、次のクエリのように、長いカーディナリティを持つキーを使用してテーブルを結合する場合は、 **[シャッフルヒント](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** によってクエリパフォーマンスが向上し `AccountObjectId` ます。
 
@@ -149,7 +149,7 @@ ms.locfileid: "48649669"
 ## <a name="optimize-the-summarize-operator"></a>演算子を最適化する `summarize`
 [集約演算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator)は、テーブルの内容を集約します。 この演算子を使用するクエリを最適化するには、以下のヒントを適用します。
 
-- **Distinct 値を検索**する一般的に、を使用し `summarize` て、繰り返し可能な個別の値を検索します。 繰り返し値を持たない列を集計するために使用する必要はありません。
+- **Distinct 値を検索** する一般的に、を使用し `summarize` て、繰り返し可能な個別の値を検索します。 繰り返し値を持たない列を集計するために使用する必要はありません。
 
     1つの電子メールは複数のイベントの一部にすることができますが、次の例では、個々の電子メールのネットワークメッセージ ID には常に固有の送信者アドレスが含まれるため、を使用するのは効率的では _ありません_ `summarize` 。
  
@@ -173,7 +173,7 @@ ms.locfileid: "48649669"
     | summarize by SenderFromAddress, RecipientEmailAddress   
     ```
 
-- **クエリをシャッフル**する- `summarize` 繰り返しの値を持つ列で使用するのに適していますが、同じ列に _基数_ または大量の一意の値が含まれている場合もあります。 演算子と同様に、 `join` 処理の負荷を分散するために、を使用して [シャッフルヒント](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) を適用し、 `summarize` カーディナリティを使用して列を操作するときにパフォーマンスを向上させることもできます。
+- **クエリをシャッフル** する- `summarize` 繰り返しの値を持つ列で使用するのに適していますが、同じ列に _基数_ または大量の一意の値が含まれている場合もあります。 演算子と同様に、 `join` 処理の負荷を分散するために、を使用して [シャッフルヒント](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) を適用し、 `summarize` カーディナリティを使用して列を操作するときにパフォーマンスを向上させることもできます。
 
     次のクエリは、 `summarize` 個別の受信者の電子メールアドレスをカウントするために使用します。これは、大規模な組織では数十万数の組織で実行できます。 パフォーマンスを向上させるために、次の組み込みが組み込まれてい `hint.shufflekey` ます。
 
@@ -208,7 +208,7 @@ InitiatingProcessCreationTime, InitiatingProcessFileName
 
 コマンドラインを中心とした永続的なクエリを作成するには、以下の手順を適用します。
 
-- コマンドライン自体にフィルターを適用するのではなく、ファイル名のフィールドに一致することによって、既知のプロセス ( *net.exe* 、 *psexec.exe*など) を特定します。
+- コマンドライン自体にフィルターを適用するのではなく、ファイル名のフィールドに一致することによって、既知のプロセス ( *net.exe* 、 *psexec.exe* など) を特定します。
 - [Parse_command_line () 関数](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line)を使用してコマンドラインセクションを解析する 
 - コマンドライン引数をクエリする際は、関連性のない複数の引数で完全な一致を特定の順序で検索しないようにします。 代わりに、正規表現を使用するか、複数の個別の contains 演算子を使用します。
 - 大文字と小文字を区別しない一致を使用します。 たとえば、、、、、、、を使用し `=~` `in~` `contains` `==` `in` `contains_cs` ます。
@@ -265,7 +265,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 
 ## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語ドキュメント](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [クォータと使用法のパラメーター](advanced-hunting-limits.md)
+- [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [詳細な検索エラーを処理する](advanced-hunting-errors.md)
 - [高度な検出の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)

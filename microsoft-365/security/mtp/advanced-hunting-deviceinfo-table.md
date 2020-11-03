@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 966f329d1d3ce374cc3eed9eccb6c337071f4ee1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430081"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842716"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430081"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
@@ -46,7 +46,7 @@ ms.locfileid: "48430081"
 | `DeviceId` | string | コンピューターの一意識別子 |
 | `DeviceName` | string | コンピューターの完全修飾ドメイン名 (FQDN) |
 | `ClientVersion` | string | コンピューター上で実行されているエンドポイントエージェントまたはセンサーのバージョン |
-| `PublicIP` | string | Microsoft Defender ATP サービスに接続するために利用コンピューターによって使用されるパブリック IP アドレス。 これは、マシン自体、NAT デバイス、またはプロキシの IP アドレスである場合があります。 |
+| `PublicIP` | string | エンドポイントサービスの Microsoft Defender に接続するために利用コンピューターによって使用されるパブリック IP アドレス。 これは、マシン自体、NAT デバイス、またはプロキシの IP アドレスである場合があります。 |
 | `OSArchitecture` | string | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `OSPlatform` | string | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 10 や Windows 7 などの同じファミリ内のバリエーションを含む、特定のオペレーティングシステムを示します。 |
 | `OSBuild` | string | コンピューター上で実行されているオペレーティングシステムのビルドバージョン |

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779242"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843818"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュリティスコアの新機能
 
@@ -35,7 +35,7 @@ Microsoft のセキュリティの評価をより良いものにするには、�
 
 ## <a name="october-2020"></a>2020 年 10 月
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection に関連する向上アクションを削除する
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender に関連する向上アクションを削除する
 
 - Microsoft Defender SmartScreen Windows ストアアプリの web コンテンツチェックを設定して警告を発する
 
@@ -54,8 +54,8 @@ Microsoft Secure Score の最近のリリースでは、向上したスコアリ
 ## <a name="updated-improvement-actions"></a>更新された改善アクション
 
 - Azure Active Directory の改善アクションを追加しました
-- Azure Advanced Threat Protection の向上アクションを追加しました
-- Microsoft Defender ATP の [脅威 & 脆弱性管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) のセキュリティに関する推奨事項のサポート
+- Id の改善アクションのために Microsoft Defender を追加しました
+- エンドポイントの脅威に対する Microsoft Defender のサポート [& 脆弱性管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) のセキュリティに関する推奨事項
     - リリースされた TVM で提供されるすべてのセキュリティの推奨事項を使用できるようになりました。
 
 ## <a name="updated-interface-and-functionality"></a>更新されたインターフェイスと機能

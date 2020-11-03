@@ -1,5 +1,5 @@
 ---
-title: Microsoft の脅威保護で高度な検索クエリ結果に対してアクションを実行する
+title: Microsoft 365 Defender で高度な検索クエリ結果に対してアクションを実行する
 description: 高度な検索のクエリ結果の脅威と影響を受ける資産を迅速に解決する
 keywords: 高度な検索、脅威の探し、サイバーの脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、take action
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7250feffa69cc1a6cc37908a599dff0fab6c5e6c
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 506af82ec08ad6cd8dbeece5c1c2741e09e4817a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429657"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842466"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>高度な検索クエリ結果に対してアクションを実行する
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429657"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "48429657"
 - ファイルの検疫
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-高度な検索を通じてアクションを実行できるようにするには、 [デバイスで修復操作を送信するためのアクセス許可](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)を持つ MICROSOFT Defender ATP の役割が必要です。 アクションを実行できない場合は、次のアクセス許可の取得について全体管理者に問い合わせてください。
+高度な検索を通じてアクションを実行できるようにするには、 [デバイスで修復操作を送信するためのアクセス許可](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)を持つエンドポイントに対する Microsoft Defender の役割が必要です。 アクションを実行できない場合は、次のアクセス許可の取得について全体管理者に問い合わせてください。
 
 *アクティブな修復アクション > 脅威と脆弱性の管理-修復処理*
 
@@ -55,10 +55,10 @@ ms.locfileid: "48429657"
 - デバイスとその他の影響を受けるデバイス上の脅威をチェックおよび修復するための自動化された調査を開始します。
 - Microsoft 署名済みの実行可能ファイルのみにアプリの実行を制限し、マルウェアまたは他の信頼されていない実行可能ファイルからの後続の脅威を防止します。
 
-Microsoft Defender ATP を使用してこれらの応答アクションを実行する方法の詳細については、「 [デバイスに対する応答アクションについて](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)」を参照してください。
+エンドポイントの Microsoft Defender を使用してこれらの応答アクションを実行する方法の詳細については、「 [デバイスに対する応答アクションについて](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)」を参照してください。
    
 ## <a name="quarantine-files"></a>ファイルの検疫
-*検疫*アクションをファイルに展開して、検出時に自動的に検疫されるようにすることができます。 このアクションを選択する場合、次の列から選択して、クエリ結果のどのファイルを検疫するかを指定できます。
+*検疫* アクションをファイルに展開して、検出時に自動的に検疫されるようにすることができます。 このアクションを選択する場合、次の列から選択して、クエリ結果のどのファイルを検疫するかを指定できます。
 
 - `SHA1` —最も高度な検索テーブルの場合、これは、記録された操作の影響を受けたファイルの SHA-1 です。 たとえば、ファイルがコピーされた場合、これはコピーされたファイルになります。
 - `InitiatingProcessSHA1` —最も高度な検索テーブルの場合、これは、記録されたアクションを開始するためのファイルです。 たとえば、子プロセスが起動された場合、これは親プロセスになります。 
@@ -71,12 +71,12 @@ Microsoft Defender ATP を使用してこれらの応答アクションを実行
 >ファイルを検索し、それらを検疫するために、クエリ結果には `DeviceId` デバイス識別子として値も含める必要があります。  
 
 ## <a name="take-action"></a>アクションを実行する
-上記の操作のいずれかを実行するには、クエリ結果で1つ以上のレコードを選択し、[ **アクションを実行**] を選択します。 ウィザードに従って、優先する操作を選択して送信するプロセスを実行できます。
+上記の操作のいずれかを実行するには、クエリ結果で1つ以上のレコードを選択し、[ **アクションを実行** ] を選択します。 ウィザードに従って、優先する操作を選択して送信するプロセスを実行できます。
 
 ![レコードを検査するためのパネルがある、選択されたレコードのイメージ](../../media/mtp-ah/ah-take-actions.png)
 
 ## <a name="review-actions-taken"></a>実行されたアクションを確認する
-各アクションは、アクション**センター**の[action center](mtp-action-center.md)  >  **履歴**([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) の下にあるアクションセンターに個別に記録されます。 アクションセンターに移動して、各アクションの状態を確認します。
+各アクションは、アクション **センター** の [action center](mtp-action-center.md)  >  **履歴** ( [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) の下にあるアクションセンターに個別に記録されます。 アクションセンターに移動して、各アクションの状態を確認します。
  
 ## <a name="related-topics"></a>関連項目
 - [高度な検出の概要](advanced-hunting-overview.md)

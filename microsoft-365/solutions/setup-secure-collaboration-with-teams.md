@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: 機密に基づいてデータを保護するために Teams をセットアップする方法について説明します。
-ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527710"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843542"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Microsoft 365 とセキュリティで保護された共同作業を設定する
 
@@ -62,10 +62,10 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 | 製品またはコンポーネント | 機能 | ライセンス |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection | SPO、OneDrive、Teams のための ATP の安全な添付ファイル。ATP の安全なドキュメントTeams の ATP の安全なリンク    | Microsoft 365 E1、E3、E5 |
+| Microsoft Defender for Office 365 | SPO、OneDrive、Teams の安全な添付ファイル。安全なドキュメント。Teams の安全なリンク    | Microsoft 365 E1、E3、E5 |
 | SharePoint    | サイトとファイルの共有のポリシー、サイトの共有のアクセス許可、共有リンク、アクセスの要求、サイトのゲスト共有設定 | Microsoft 365 E1、E3、E5 |
 | Microsoft Teams   | ゲストアクセス、プライベートチーム、プライベートチャネル | Microsoft 365 E1、E3、E5 |
-| Microsoft 365 コンプライアンス  | 秘密度ラベル    | Microsoft 365 E3、E5 |
+| Microsoft 365 コンプライアンス  | 機密ラベル    | Microsoft 365 E3、E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>すべての種類のデータに Teams を使用する
 
@@ -74,7 +74,7 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 ![Teams の論理的なアーキテクチャ ポスターのサムネイル](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-次の表に示すよう*に、これら*の*階層によって、過度**な共有*や情報漏洩を防止するための保護が徐々に増加します。
+次の表に示すよう *に、これら* の *階層によって、過度**な共有* や情報漏洩を防止するための保護が徐々に増加します。
 
 ||**ベースライン層**|**機密層**|**非常に機密性の高い層**|
 |:--|:-----------|:------------|:-------------------|
@@ -90,16 +90,16 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 
 - Teams でゲストアクセスおよびプライベートチャネルの設定を構成する
 - 内部およびゲストの共有、アクセスの要求、および共有リンクについて、チームの関連付けられた SharePoint サイトの設定を構成する
-- *機密性*の*高い機密*層に対して、チームを分類するための機密ラベルを構成し、管理されていないデバイスからゲストの共有とアクセスを制御する
-- 非常に*機密性の高い*層の場合は、機密ラベルを構成して、適用されるドキュメントを暗号化します。
+- *機密性* の *高い機密* 層に対して、チームを分類するための機密ラベルを構成し、管理されていないデバイスからゲストの共有とアクセスを制御する
+- 非常に *機密性の高い* 層の場合は、機密ラベルを構成して、適用されるドキュメントを暗号化します。
 
-ベースライン層から始め、必要に応じて*機密*および*機密性の高い*階層を使用する teams を追加して、組織内の情報を保護します。 開始するには、次のリソースを参照してください。
+ベースライン層から始め、必要に応じて *機密* および *機密性の高い* 階層を使用する teams を追加して、組織内の情報を保護します。 開始するには、次のリソースを参照してください。
 
 - [ベースライン保護を使用してチームを構成する](configure-teams-baseline-protection.md)
 - [機密データに対する保護機能を使用してチームを構成する](configure-teams-sensitive-protection.md)
 - [機密データに対する保護機能を使用してチームを構成する](configure-teams-highly-sensitive-protection.md)
 
-組織内でも、共有に対する追加の保護を必要とする非常に機密性の高いプロジェクトがある場合は、チームのメンバーだけがファイルを読むことができるように、独自の機密ラベルを使用してファイルを暗号化するようにチームを構成できます。 詳細について[は、「セキュリティの分離を使用してチームを構成](secure-teams-security-isolation.md)する」をご覧ください。
+組織内でも、共有に対する追加の保護を必要とする非常に機密性の高いプロジェクトがある場合は、チームのメンバーだけがファイルを読むことができるように、独自の機密ラベルを使用してファイルを暗号化するようにチームを構成できます。 詳細について [は、「セキュリティの分離を使用してチームを構成](secure-teams-security-isolation.md) する」をご覧ください。
 
 ### <a name="sharing-with-people-outside-your-organization"></a>組織外のユーザーとの共有
 
@@ -117,7 +117,7 @@ Microsoft 365 では、次のようなさまざまな構成を使用して Teams
 - [組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する](share-limit-accidental-exposure.md)
 - [セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
 
-パートナー組織との主要なプロジェクトがある場合は、プロジェクトに対して設定したチームで、Azure の資格管理を使用してその組織からゲストを管理できます。 詳細について[は、「管理されたゲストでの B2B エクストラネットの作成](b2b-extranet.md)」を参照してください。
+パートナー組織との主要なプロジェクトがある場合は、プロジェクトに対して設定したチームで、Azure の資格管理を使用してその組織からゲストを管理できます。 詳細について [は、「管理されたゲストでの B2B エクストラネットの作成](b2b-extranet.md) 」を参照してください。
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>セキュリティで保護されたコラボレーションソリューションを展開する
 

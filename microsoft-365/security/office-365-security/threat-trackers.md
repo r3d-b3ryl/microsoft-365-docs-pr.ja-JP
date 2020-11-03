@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 新しい注目すべきトラッカーを含む脅威のトラッカーについて説明します。これにより、組織はセキュリティ上の問題に常に役立てることができます。
-ms.openlocfilehash: a810dca8dd556d91196d48f387c799bbf89ef869
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: df544da7bfc5abebd45b0861c29f9e49632cdcd8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446491"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842322"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>脅威トラッカー - 新機能とNoteworthy 機能 
 
@@ -32,7 +32,7 @@ ms.locfileid: "48446491"
 [Office 365 の脅威調査と応答](office-365-ti.md) 機能を使用すると、組織のセキュリティチームが cybersecurity の脅威を検出し、行動を取ることができます。 Office 365 の脅威の調査と応答の機能には、注目すべきトラッカーを含む脅威の追跡機能が含まれています。 これらの新機能と次の手順の概要を確認するには、この記事をお読みください。 
 
 > [!IMPORTANT]
-> Office 365 脅威インテリジェンスは Office 365 Advanced Threat Protection プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [office 365 Advanced Threat protection プランと価格設定](https://products.office.com/exchange/advance-threat-protection) 」および「 [Office 365 Advanced threat Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
+> Office 365 の脅威インテリジェンスは、Microsoft Defender for Office 365 プラン2に加えて、追加の脅威保護機能と共に提供されるようになりました。 詳細については、「 [Microsoft defender For office 365 プランと料金](https://products.office.com/exchange/advance-threat-protection) 」および「 [Microsoft defender For office 365 サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)」を参照してください。
   
 ## <a name="what-are-threat-trackers"></a>脅威のトラッカーとは
 
@@ -44,9 +44,9 @@ ms.locfileid: "48446491"
   
 ![エクスプローラーでのキャンペーン情報の例](../../media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-トラッカーは、 [Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)で取得する多くの優れた機能のほんの一部に過ぎません。 脅威のトラッカーには、 [注意を価値トラッカー](#noteworthy-trackers)、 [傾向分析](#trending-trackers)、 [追跡クエリ](#tracked-queries)、および [保存されたクエリ](#saved-queries)が含まれます。
+トラッカーは、 [Microsoft Defender For Office 365 プラン 2](office-365-ti.md)で入手できる、多くの重要な機能のほんの一部に過ぎません。 脅威のトラッカーには、 [注意を価値トラッカー](#noteworthy-trackers)、 [傾向分析](#trending-trackers)、 [追跡クエリ](#tracked-queries)、および [保存されたクエリ](#saved-queries)が含まれます。
   
-組織の脅威のトラッカーを表示して使用するには、セキュリティ &amp; コンプライアンスセンター () に移動して、 [https://protection.office.com](https://protection.office.com) [ **脅威管理**の \> **脅威の追跡ツール**] を選択します。
+組織の脅威のトラッカーを表示して使用するには、セキュリティ &amp; コンプライアンスセンター () に移動して、 [https://protection.office.com](https://protection.office.com) [ **脅威管理** の \> **脅威の追跡ツール** ] を選択します。
   
 > [!NOTE]
 > 脅威のトラッカーを使用するには、全体管理者、セキュリティ管理者、またはセキュリティリーダーである必要があります。 [セキュリティ/ &amp; コンプライアンスセンターの「アクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。 
@@ -83,26 +83,26 @@ ms.locfileid: "48446491"
 
 メール、コンテンツ、または Office アクティビティ (近日中) をレビューしているかどうかにかかわらず、エクスプローラーとトラッカーは連携して、セキュリティリスクと脅威を調査および追跡するのに役立ちます。 これらのすべての機能により、新しい、注目されたよく検索される問題を強調することで、ユーザーを保護するための情報が提供されます。これにより、クラウドに移行する際のビジネスの保護が向上します。
   
-また、[セキュリティ & コンプライアンスセンターの概要](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)の右下にある [**フィードバック**] ボタンをクリックすることで、このまたはその他の Microsoft 365 のセキュリティ機能に関するフィードバックをいつでも提供できることに注意してください。
+また、 [セキュリティ & コンプライアンスセンターの概要](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)の右下にある [ **フィードバック** ] ボタンをクリックすることで、このまたはその他の Microsoft 365 のセキュリティ機能に関するフィードバックをいつでも提供できることに注意してください。
   
 ![セキュリティ/コンプライアンス センター](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
-## <a name="trackers-and-office-365-advanced-threat-protection"></a>トラッカーおよび Office 365 Advanced Threat Protection
+## <a name="trackers-and-microsoft-defender-for-office-365"></a>トラッカーおよび Microsoft Defender for Office 365
 
-Inaugural の注目すべき脅威から、 [安全な添付ファイル](atp-safe-attachments.md)によって検出された高度なマルウェアの脅威を強調しています。 Office 365 Enterprise E5 のお客様で、 [office 365 Advanced Threat Protection](office-365-atp.md) (ATP) を使用していない場合は、サブスクリプションに含まれています。 ATP は、Office 365 サービスでメールフローをフィルタリングする他のセキュリティツールを使用している場合でも、価値を提供します。 ただし、スパム対策機能と [安全なリンク](atp-safe-links.md) 機能は、メインの電子メールセキュリティソリューションが Office 365 を使用している場合に最適です。
+Inaugural の注目すべき脅威から、 [安全な添付ファイル](atp-safe-attachments.md)によって検出された高度なマルウェアの脅威を強調しています。 Office 365 Enterprise E5 のお客様で、 [Microsoft Defender For office 365](office-365-atp.md)を使用していない場合は、サブスクリプションに含まれています。 Office 365 の Defender には、Office 365 サービスでメールフローをフィルタリングする他のセキュリティツールがある場合でも、値が提供されます。 ただし、スパム対策機能と [安全なリンク](atp-safe-links.md) 機能は、メインの電子メールセキュリティソリューションが Office 365 を使用している場合に最適です。
   
-![セキュリティ/ &amp; コンプライアンスセンターの ATP](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![セキュリティ/コンプライアンスセンターの Microsoft Defender for Office 365 &amp;](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-今日の riddled world では、従来のマルウェア対策スキャンのみを実行することは、攻撃に対して十分に保護されていないことを意味します。 今日の高度な攻撃者は、一般的に使用可能なツールを使用して、従来の署名ベースのマルウェア対策エンジンで認識されない新しい、難読化された、または遅延した攻撃を作成します。 安全な添付ファイル機能は、電子メールの添付ファイルを取得し、それを仮想環境で分析して、それらが安全か悪意があるかを判断します。 この分析プロセスは、仮想コンピューター環境で各ファイルを開き、ファイルが開かれた後の処理を監視します。 PDF、圧縮ファイル、または Office ドキュメントであるかどうかにかかわらず、悪意のあるコードはファイル内で非表示にすることができます。アクティブ化するには、ユーザーが自分のコンピューターでそのコードを開いている必要があります。 メールフローでファイルを detonating および分析することで、Office 365 ATP 機能は、動作、ファイルの評価、およびいくつかのヒューリスティックルールに基づいてこれらの脅威を発見します。
+今日の riddled world では、従来のマルウェア対策スキャンのみを実行することは、攻撃に対して十分に保護されていないことを意味します。 今日の高度な攻撃者は、一般的に使用可能なツールを使用して、従来の署名ベースのマルウェア対策エンジンで認識されない新しい、難読化された、または遅延した攻撃を作成します。 安全な添付ファイル機能は、電子メールの添付ファイルを取得し、それを仮想環境で分析して、それらが安全か悪意があるかを判断します。 この分析プロセスは、仮想コンピューター環境で各ファイルを開き、ファイルが開かれた後の処理を監視します。 PDF、圧縮ファイル、または Office ドキュメントであるかどうかにかかわらず、悪意のあるコードはファイル内で非表示にすることができます。アクティブ化するには、ユーザーが自分のコンピューターでそのコードを開いている必要があります。 Detonating を使用して電子メールフロー内のファイルを分析することで、Office 365 の機能に対する Defender は、動作、ファイルの評価、およびいくつかのヒューリスティックルールに基づいてこれらの脅威を検出します。
   
 新しい注目すべき脅威フィルターは、安全な添付ファイルによって最近検出されたアイテムを強調表示します。 これらの検出は、電子メールフローまたは他のお客様の電子メールのいずれかで、Microsoft 365 によって以前検出されていない新しい悪意のあるファイルであるアイテムを表します。 注目すべき脅威追跡ツールの項目に注目し、それらのユーザーが対象としているユーザーを確認し、[詳細な分析] タブ (エクスプローラーで電子メールの件名をクリックすると表示されます) に示されている分析の詳細を確認します。 メモこのタブは、安全な添付ファイル機能によって検出された電子メールにのみ表示されます。この注目すべきトラッカーには、フィルターが含まれていますが、そのフィルターをエクスプローラーで他の検索に使用することもできます。
   
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - 組織にこれらの Office 365 脅威の調査および応答機能がまだない場合は、「 [office 365 の脅威の調査および応答機能を入手する方法](office-365-ti.md)」を参照してください。
 
 - セキュリティチームに適切な役割とアクセス許可が割り当てられていることを確認してください。 セキュリティ/コンプライアンスセンターでは、全体管理者であるか、セキュリティ管理者または検索および削除の役割が割り当てられている必要があり &amp; ます。 [セキュリティ/ &amp; コンプライアンスセンターの「アクセス許可」を](permissions-in-the-security-and-compliance-center.md)参照してください。
 
-- 新しいトラッカーが Microsoft 365 環境に表示されることを確認してください。 利用可能な場合は、 [ここで](https://protection.office.com/)トラッカーを見つけてください。 **脅威管理**の脅威の \> **トラッカー**に移動します。
+- 新しいトラッカーが Microsoft 365 環境に表示されることを確認してください。 利用可能な場合は、 [ここで](https://protection.office.com/)トラッカーを見つけてください。 **脅威管理** の脅威の \> **トラッカー** に移動します。
 
-- まだ行っていない場合は、「[安全なリンク](atp-safe-links.md)」や「[安全な添付ファイル](atp-safe-attachments.md)」を含む、 [Office 365 Advanced Threat Protection](office-365-atp.md)の詳細について説明し、組織のために構成します。
+- お客様の組織については、「[安全なリンク](atp-safe-links.md)」や「[安全な添付ファイル](atp-safe-attachments.md)」を含む、 [Microsoft Defender for Office 365 の](office-365-atp.md)詳細と構成を行っていない場合は、こちらを参照してください。

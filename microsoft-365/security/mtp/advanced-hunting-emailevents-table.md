@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429457"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842634"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429457"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-[高度な検索スキーマ](advanced-hunting-overview.md)の `EmailEvents` テーブルには、Office 365 ATP 上のメールの処理に関するイベントについての情報が含まれています。 このテーブルの情報を返すクエリを作成するには、この参照を使用できます。
+`EmailEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、Microsoft Defender for Office 365 の電子メールの処理に関連するイベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、この参照を使用できます。
 
 >[!TIP]
 > テーブルでサポートされているイベントの種類 (値) の詳細については、 `ActionType` セキュリティセンターで利用可能な [組み込みスキーマリファレンス](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) を使用してください。
@@ -62,9 +62,9 @@ ms.locfileid: "48429457"
 | `DeliveryAction` | string | メールの配信アクション: Delivered、Junked、Blocked、または Replaced |
 | `DeliveryLocation` | string | メールの配信場所: 受信トレイ/フォルダー、オンプレミス/外部、迷惑メール、検疫、失敗、中断、削除済みアイテム |
 | `PhishFilterVerdict` | string | メールがフィッシングであるかどうかに関する、メール フィルタリング スタックの判定: Phish または Not Phish |
-| `PhishDetectionMethod` | string | フィッシングとしてメールを検出するために使用される方法: 悪意のある URL の評価、ATP の安全なリンク URL デトネーション、高度なフィッシング詐欺フィルター、一般的なフィッシング詐欺フィルター、スプーフィング対策: 組織内、スプーフィング対策: 外部ドメイン、ドメインの偽装、ユーザーの偽装、ブランドの偽装 |
+| `PhishDetectionMethod` | string | フィッシングとして電子メールを検出するために使用される方法: 悪意のある URL 評価、安全なリンク URL 分析、高度なフィッシングフィルター、一般フィッシングフィルター、スプーフィング防止: 組織内、ドメイン偽装、ユーザー偽装、ブランド偽装 |
 | `MalwareFilterVerdict` | string | メールにマルウェアが含まれているかどうかに関する、メールのフィルター処理スタックの判定 (マルウェア、マルウェア以外) |
-| `MalwareDetectionMethod` | string | メールでマルウェアを検出するために使用される方法: マルウェア対策エンジン、ファイルの評価、ATP の安全な添付ファイル |
+| `MalwareDetectionMethod` | string | 電子メール内のマルウェアを検出するために使用される方法: マルウェア対策エンジン、ファイルの評価、安全な添付ファイル |
 | `FinalEmailAction` | string | フィルターの判定、ポリシー、ユーザー アクションに基づいてメールに対して実行される最終的なアクション: メッセージを迷惑メール フォルダーに移動、X-ヘッダーの追加、件名の変更、メッセージのリダイレクト、メッセージの削除、検疫フォルダーへの配信、アクションなし、Bcc メッセージ |
 | `FinalEmailActionPolicy` | string | 適用されたアクション ポリシー: 高信頼度のスパム対策、スパム対策、バルク メール スパム対策、フィッシング スパム対策、ドメイン偽装フィッシング対策、ユーザー偽装フィッシング対策、スプーフィング フィッシング対策、グラフ偽装フィッシング対策、マルウェア対策、安全な添付ファイル、Enterprise Transport Rules (ETR) |
 | `FinalEmailActionPolicyGuid` | string | メールに対する最終アクションを決定したポリシーの一意の識別子 |

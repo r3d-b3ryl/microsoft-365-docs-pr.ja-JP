@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection で高度な捜索のクエリ言語について学習する
+title: Microsoft 365 Defender の高度な検索クエリ言語について
 description: 最初の脅威の捜索クエリを作成し、一般的な演算子と高度な捜索クエリ言語の他の側面について学習する
 keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、language、advanced、first query、テレメトリ、イベント、テレメトリ、カスタム検出、スキーマ、kusto、operators、データ型、powershell ダウンロード、クエリの例
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 09f0a5437c3ae3b54fa086d93e475e4881c2d4bf
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bb3caff642e752cb6d3941b697820fbad69ae23c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431053"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841978"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431053"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 高度な捜索は、[Kusto クエリ言語](https://docs.microsoft.com/azure/kusto/query/)に基づいています。 Kusto 演算子およびステートメントを使用して、特定の [スキーマ](advanced-hunting-schema-tables.md)で情報を検索するクエリを作成できます。 これらの概念をよりよく理解するために、最初のクエリを実行します。
 
@@ -137,7 +137,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `makeset` |  Expr がグループ内でとる個別の値のセットの動的 (JSON) 配列を返します。 |
 | `find` | テーブルのセットで述語と一致する行を検索します。 |
 
-これらの演算子の実際の例を見るには、高度な捜索の [**はじめに**] セクションから実行します。
+これらの演算子の実際の例を見るには、高度な捜索の [ **はじめに** ] セクションから実行します。
 
 ## <a name="understand-data-types"></a>データ型について理解する
 
@@ -155,21 +155,21 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="get-help-as-you-write-queries"></a>クエリを記述するときにヘルプを参照する
 次の機能を利用して、クエリをより速く記述します。
-- **Autosuggest**: クエリを作成すると、高度な検索によって IntelliSense から候補が表示されます。 
-- **スキーマツリー**-テーブルとその列のリストを含むスキーマ表現は、作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
-- **[スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**: テーブルと列の説明、およびサポートされるイベントの種類 ( `ActionType` 値) とサンプルクエリを含むポータル内のリファレンス
+- **Autosuggest** : クエリを作成すると、高度な検索によって IntelliSense から候補が表示されます。 
+- **スキーマツリー** -テーブルとその列のリストを含むスキーマ表現は、作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
+- **[スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : テーブルと列の説明、およびサポートされるイベントの種類 ( `ActionType` 値) とサンプルクエリを含むポータル内のリファレンス
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>エディターで複数のクエリを操作する
 クエリエディターを使用して、複数のクエリを試すことができます。 複数のクエリを使用するには
 
 - 各クエリは空の行で区切ります。
-- クエリの任意の部分にカーソルを置き、クエリを実行する前に選択します。 これは、選択したクエリのみを実行します。 別のクエリを実行するには、必要に応じてカーソルを移動して、[ **クエリの実行**] を選択します。
+- クエリの任意の部分にカーソルを置き、クエリを実行する前に選択します。 これは、選択したクエリのみを実行します。 別のクエリを実行するには、必要に応じてカーソルを移動して、[ **クエリの実行** ] を選択します。
 
 ![複数のクエリを使用したクエリエディターのイメージ](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>サンプル クエリを使用する
 
-[**はじめに**] セクションでは、一般的に使用されている演算子を使用した簡単なクエリーをいくつか提供します。 これらのクエリを実行して、少し変更してみてください。
+[ **はじめに** ] セクションでは、一般的に使用されている演算子を使用した簡単なクエリーをいくつか提供します。 これらのクエリを実行して、少し変更してみてください。
 
 ![高度な捜索ウィンドウの画像](../../media/advanced-hunting-get-started.png)
 

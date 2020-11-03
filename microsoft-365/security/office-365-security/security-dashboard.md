@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 新しいセキュリティダッシュボードを使用して、Office 365 の脅威保護の状態を確認し、セキュリティの警告を表示して操作します。
-ms.openlocfilehash: 1bef6d0496c39d5157bbc40893d2710e89d1c734
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f7576de9db1403c3c010b2fd826866ec11a7e20a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200075"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843626"
 ---
 # <a name="security-dashboard"></a>セキュリティダッシュボード
 
@@ -40,7 +40,7 @@ ms.locfileid: "48200075"
 
 組織のサブスクリプションに含まれるものに応じて、セキュリティダッシュボードには、次のセクションで説明するように、脅威管理の概要、脅威の保護の状態、グローバルな週次の脅威の検出、マルウェアなど、いくつかのウィジェットが含まれています。
 
-セキュリティダッシュボードを表示するには、[セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)で、[**脅威管理**] ダッシュボードに移動し \> **Dashboard**ます。
+セキュリティダッシュボードを表示するには、 [セキュリティ & コンプライアンスセンター](../../compliance/go-to-the-securitycompliance-center.md)で、[ **脅威管理** ] ダッシュボードに移動し \> **Dashboard** ます。
 
 > [!NOTE]
 > セキュリティダッシュボードを表示するには、全体管理者、セキュリティ管理者、またはセキュリティリーダーである必要があります。 一部のウィジェットには、表示するための追加のアクセス許可が必要です。 詳細については、「 [セキュリティ & コンプライアンスセンター」の「アクセス許可](permissions-in-the-security-and-compliance-center.md)」を参照してください。
@@ -57,7 +57,7 @@ ms.locfileid: "48200075"
 |---|---|
 |ブロックされるマルウェアメッセージ<br/>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br><br><br><br>|ブロックされるマルウェアメッセージ<br>ブロックされたフィッシングメッセージ<br>ユーザーによって報告されるメッセージ<br>ゼロ日のマルウェアがブロックされる<br>検出された高度なフィッシングメッセージ<br>ブロックされた悪意のある Url|
 
-脅威管理の概要ウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するためのアクセス許可を持っている必要があります。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。
+脅威管理の概要ウィジェットを表示またはアクセスするには、Office 365 レポートの Defender を表示するためのアクセス許可が必要です。 詳細については、「 [Office 365 の Defender のレポートを表示するために必要なアクセス許可に](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)ついて」を参照してください。
 
 ## <a name="threat-protection-status"></a>脅威保護の状態
 
@@ -65,14 +65,14 @@ ms.locfileid: "48200075"
 
 ![脅威保護状態ウィジェット](../../media/tpswidget.png)
 
-詳細は、Microsoft 365 サブスクリプションに[Office 365 Advanced Threat protection](office-365-atp.md) (ATP) を含むかどうかに関する[Exchange Online Protection](exchange-online-protection-overview.md) (EOP) が含まれているかどうかによって異なります。
+この詳細は、Microsoft 365 サブスクリプションに、 [Office 365 用の Microsoft Defender](office-365-atp.md)を使用しているかどうかにかかわらず、 [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) が含まれているかどうかによって異なります。
 
 |サブスクリプションに含まれるもの|これらの詳細が表示できます。|
 |---|---|
-|EOP ではないが、Office 365 ATP|EOP によって検出およびブロックされた悪意のある電子メール。<br><br> 「 [脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。|
-|Office 365 ATP|EOP および Office 365 ATP により、悪意のあるコンテンツや悪意のある電子メールが検出されブロックされる<br><br>マルウェア対策エンジン、 [ゼロ時間自動削除](zero-hour-auto-purge.md)、atp 機能 ( [安全なリンク](atp-safe-links.md)、 [安全な添付ファイル](atp-safe-attachments.md)、 [atp のフィッシング対策](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)など) によってブロックされた一意の電子メールメッセージの集計数。<br><br>「 [脅威保護の状態レポート (ATP)](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。|
+|EOP (Microsoft Defender for Office 365 以外)|EOP によって検出およびブロックされた悪意のある電子メール。<br><br> 「 [脅威保護の状態レポート (EOP)](view-email-security-reports.md#threat-protection-status-report)」を参照してください。|
+|Microsoft Defender for Office 365|悪意のあるコンテンツと悪意のある電子メールが検出され、EOP および Defender for Office 365 によってブロックされる<br><br>マルウェア対策エンジン、 [ゼロ時間自動削除](zero-hour-auto-purge.md)、および office 365 機能の defender (「 [安全なリンク](atp-safe-links.md)」、「 [安全な添付ファイル](atp-safe-attachments.md)」、および「 [defender For office 365」の「フィッシング対策](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)」を含む) によってブロックされた、悪意のあるコンテンツを含む一意の電子メールメッセージの合計数。<br><br>「 [脅威保護の状態レポート](view-reports-for-atp.md#threat-protection-status-report)」を参照してください。|
 
-脅威保護状態ウィジェットを表示またはアクセスするには、Advanced Threat Protection レポートを表示する権限が必要です。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。
+脅威保護状態ウィジェットを表示またはアクセスするには、Office 365 の Defender のレポートを表示するアクセス許可が必要です。 詳細については、「 [Defender For Office 365 レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)」を参照してください。
 
 ## <a name="global-weekly-threat-detections"></a>グローバルな毎週の脅威の検出
 
@@ -86,7 +86,7 @@ ms.locfileid: "48200075"
 |---|---|
 |スキャンされたメッセージ|スキャンされた電子メールメッセージの数を受信者の数で乗算した数|
 |停止した脅威|マルウェアが含まれていると識別された電子メールメッセージの数が受信者数を乗算した回数|
-|[ATP](office-365-atp.md)によるブロック|ATP によってブロックされた電子メールメッセージの数が受信者数に乗じる|
+|[Office 365 の Defender](office-365-atp.md)によってブロックされました。|Defender が Office 365 によってブロックされた電子メールメッセージの数を受信者の数で乗算した数|
 |配信後に削除|[0 時間の自動削除](zero-hour-auto-purge.md)によって削除されたメッセージの数が、受信者の数で乗算された数|
 
 ## <a name="malware"></a>マルウェア
@@ -105,7 +105,7 @@ ms.locfileid: "48200075"
 
 ## <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
-組織のサブスクリプションに  [Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度な脅威調査および応答ツールを含むセクションがあります。 これらのツールには [、自動調査と応答機能](automated-investigation-response-office.md)が含まれます。 自動調査と応答は、侵害された [ユーザーアカウントを迅速に解決](address-compromised-users-quickly.md)するなどのシナリオで役立ちます。
+組織のサブスクリプションに  [Microsoft Defender For Office 365 プラン 2](office-365-ti.md)が含まれている場合、セキュリティダッシュボードには、高度な脅威の調査および応答ツールを含むセクションがあります。 これらのツールには [、自動調査と応答機能](automated-investigation-response-office.md)が含まれます。 自動調査と応答は、侵害された [ユーザーアカウントを迅速に解決](address-compromised-users-quickly.md)するなどのシナリオで役立ちます。
 
 詳細については、「 [Office 365 の自動調査と応答 (AIR) の使用を開始](office-365-air.md)する」を参照してください。
 
@@ -115,9 +115,9 @@ ms.locfileid: "48200075"
 
 ![[傾向] セクションには、組織の電子メールフローの傾向が要約されています。](../../media/trends.png)
 
-また、組織のサブスクリプションに [Office 365 Advanced Threat Protection プラン 2](office-365-ti.md)が含まれている場合は、セキュリティチームが優先度の高いセキュリティ警告を表示してアクションを実行できるようにする、 **最近の脅威管理通知** レポートもこのセクションにあります。
+また、組織のサブスクリプションに [Office 365 プラン2の Defender](office-365-ti.md)が含まれている場合は、セキュリティチームが優先度の高いセキュリティ警告を表示してアクションを実行できるようにするための、 **最新の脅威管理通知** レポートもこのセクションにあります。
 
-送信および受信した電子メールウィジェットを表示またはアクセスするには、高度な脅威保護レポートを表示するアクセス許可を持っている必要があります。 詳細については、「 [ATP レポートを表示するために必要なアクセス許可](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)」を参照してください。
+送信および受信した電子メールウィジェットを表示またはアクセスするには、Office 365 レポートの Defender を表示するためのアクセス許可が必要です。 詳細については、「 [Office 365 の Defender のレポートを表示するために必要なアクセス許可に](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)ついて」を参照してください。
 
 最近の脅威管理通知 widget を表示またはアクセスするには、通知を表示するためのアクセス許可が必要です。 詳細については、「 [通知の表示に必要な RBAC アクセス許可](../../compliance/alert-policies.md#rbac-permissions-required-to-view-alerts)」を参照してください。
 
@@ -125,8 +125,8 @@ ms.locfileid: "48200075"
 
 [セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)
 
-[Office 365 Advanced Threat Protection のレポートを表示する](view-reports-for-atp.md)
+[Microsoft Defender for Office 365 のレポートを表示する](view-reports-for-atp.md)
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+[Office 365 の Defender](office-365-atp.md)
 
 [Office 365 の脅威の調査と対応](office-365-ti.md)

@@ -1,5 +1,5 @@
 ---
-title: 高度な脅威保護との SIEM の統合
+title: Office 365 用の Microsoft Defender との SIEM の統合
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,33 +16,33 @@ ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 ms.date: 08/21/2020
 ms.collection:
 - M365-security-compliance
-description: 組織の SIEM サーバーと Office 365 Advanced Threat Protection および関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
+description: 組織の SIEM サーバーを Microsoft Defender for Office 365 に、関連する脅威イベントを Office 365 アクティビティ管理 API に統合します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 185e6e816cfff4131d7b5af11c4e3ea9cf94b338
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600555"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843578"
 ---
-# <a name="siem-integration-with-advanced-threat-protection"></a>高度な脅威保護との SIEM の統合
+# <a name="siem-integration-with-microsoft-defender-for-office-365"></a>Office 365 用の Microsoft Defender との SIEM の統合
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合は、Office 365 Advanced Threat Protection (Office 365 ATP) を SIEM サーバーに統合できます。 この統合は、 [Office 365 アクティビティ管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用してセットアップできます。 
+組織でセキュリティ情報およびイベント管理 (SIEM) サーバーを使用している場合は、Microsoft Defender for Office 365 を SIEM サーバーと統合することができます。 この統合は、 [Office 365 アクティビティ管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用してセットアップできます。 
 
-SIEM の統合により、SIEM サーバーのレポートで、Office 365 ATP によって検出されたマルウェアやフィッシングなどの情報を表示できます。 
+SIEM の統合により、SIEM サーバーのレポートで、Microsoft Defender for Office 365 によって検出されたマルウェアやフィッシングなどの情報を表示できます。 
 
-- Office 365 ATP との SIEM の統合の例については、「 [Tech Community blog: office 365 ATP および O365 管理 API を使用した SOC の有効性を向上させる](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)」を参照してください。
+- Microsoft Defender for Office 365 との SIEM の統合の例については、「 [Tech Community blog: office 365 および O365 管理 API の defender で SOC の有効性を向上させる](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)」を参照してください。
 
 - Office 365 管理 Api の詳細については、「 [office 365 管理 api の概要](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)」を参照してください。
 
 ## <a name="how-siem-integration-works"></a>SIEM 統合のしくみ
 
-Office 365 Activity Management API は、組織の Microsoft 365 および Azure Active Directory のアクティビティログから、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を取得します。 組織に Office 365 ATP プラン1または2、あるいは Office 365 E5 がある場合は、 [office 365 atp スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)を使用できます。  
+Office 365 Activity Management API は、組織の Microsoft 365 および Azure Active Directory のアクティビティログから、ユーザー、管理者、システム、およびポリシーのアクションとイベントに関する情報を取得します。 組織に Microsoft Defender for Office 365 プラン1または2、あるいは Office 365 E5 がある場合は、 [Microsoft defender For office 365 スキーマ](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)を使用することができます。  
 
-最近、 [office 365](office-365-atp.md#office-365-atp-plan-1-and-plan-2) の自動調査および応答機能からのイベントが、Office 365 MANAGEMENT Activity API に追加されました。 API には、ID、名前、状態などの主要な調査の詳細に関するデータだけでなく、調査のアクションとエンティティについての詳細な情報も含まれています。
+最近では、 [Microsoft Defender For office 365 プラン2の](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) 自動調査および応答機能からのイベントが Office 365 MANAGEMENT Activity API に追加されました。 API には、ID、名前、状態などの主要な調査の詳細に関するデータだけでなく、調査のアクションとエンティティについての詳細な情報も含まれています。
 
 SIEM サーバーまたはその他の同様のシステムが監査をポーリングして、検出イベントにアクセスし **ます** 。 詳細については、「 [Office 365 管理 api の使用を開始](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)する」を参照してください。 
 
@@ -50,18 +50,18 @@ SIEM サーバーまたはその他の同様のシステムが監査をポーリ
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
 
-次の表は、Office 365 ATP イベントに関連する **AuditLogRecordType** の値の概要を示しています。
+次の表は、Microsoft Defender for Office 365 イベントに関連する **AuditLogRecordType** の値の概要を示しています。
 
 |値|メンバ名|説明|
 |---|---|---|
-|個|ThreatIntelligence|Exchange Online Protection および Office 365 ATP からのフィッシングとマルウェアのイベント。|
-|41|ThreatIntelligenceUrl|[安全なリンク] Office 365 ATP からのブロック時間とブロックの上書きイベント。|
-|47|ThreatIntelligenceAtpContent|Office 365 ATP からの、SharePoint Online、OneDrive for Business、Microsoft Teams のファイルのフィッシングとマルウェアのイベント。|
-|64|AIR 調査|Office 365 ATP Plan 2 から、調査の詳細や関連する成果物などの自動化された調査および応答イベント。|
+|個|ThreatIntelligence|Exchange Online Protection からのフィッシングとマルウェアのイベント、および Office 365 の Microsoft Defender。|
+|41|ThreatIntelligenceUrl|Office 365 の Microsoft Defender では、ブロック時間とブロックを上書きするための安全なリンク。|
+|47|ThreatIntelligenceAtpContent|Microsoft Defender for Office 365 の、SharePoint Online、OneDrive for Business、Microsoft Teams のファイルのフィッシングとマルウェアのイベント。|
+|64|AIR 調査|Microsoft Defender for Office 365 プラン2から、調査の詳細や関連する成果物などの自動化された調査と応答イベント。|
 |
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection との SIEM の統合をセットアップするには、全体管理者であるか、セキュリティ & コンプライアンスセンターに対してセキュリティ管理者の役割が割り当てられている必要があります。<br/>Microsoft 365 環境では、監査ログを有効にする必要があります。 この問題に関するヘルプを表示するには、「 [監査ログの検索を有効または無効](../../compliance/turn-audit-log-search-on-or-off.md)にする」を参照してください。
+> SIEM と Microsoft Defender for Office 365 の統合をセットアップするには、全体管理者であるか、セキュリティ & コンプライアンスセンターに対してセキュリティ管理者の役割が割り当てられている必要があります。<br/>Microsoft 365 環境では、監査ログを有効にする必要があります。 この問題に関するヘルプを表示するには、「 [監査ログの検索を有効または無効](../../compliance/turn-audit-log-search-on-or-off.md)にする」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

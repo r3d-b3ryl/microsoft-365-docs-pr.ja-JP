@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 4e63badee2ca031bdd3ea7682396353d1658981b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: c2772d0fc77e563bc80b0f29815349d1bfb3e2ea
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430411"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842514"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な検索に関するエキスパートトレーニングを受ける
 
@@ -32,14 +32,14 @@ ms.locfileid: "48430411"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-新しいセキュリティアナリストおよび熟練した脅威 hunters について、敵対者を _追跡_することで、高度な検索に関する知識を迅速に向上させることができます。 このシリーズでは、独自の高度なクエリを作成するための基本的な手順を説明します。 基本的な最初のビデオから始めて、より高度なビデオにジャンプします。
+新しいセキュリティアナリストおよび熟練した脅威 hunters について、敵対者を _追跡_ することで、高度な検索に関する知識を迅速に向上させることができます。 このシリーズでは、独自の高度なクエリを作成するための基本的な手順を説明します。 基本的な最初のビデオから始めて、より高度なビデオにジャンプします。
 
 
 | Title | 説明 | ウォッチ | クエリ | 
 |--|--|--|--|
-| エピソード 1: KQL の基礎 | このエピソードでは、Microsoft の脅威保護における高度な検索の基本事項について説明します。 使用できる高度な検索データと基本的な KQL 構文および演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| エピソード 1: KQL の基礎 | このエピソードでは、Microsoft 365 Defender での高度な検索の基本事項について説明します。 使用できる高度な検索データと基本的な KQL 構文および演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | エピソード 2: 結合 | 高度な検索でデータについて学習を続け、テーブルを結合する方法について説明します。 、、、およびの結合について説明 `inner` `outer` し、既定の `unique` `semi` kusto join の微妙な違いについて理解し `innerunique` ます。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | エピソード 3: データの集約、ピボット、および視覚化 | データをフィルター処理、操作、および結合する方法が習得できたので、次に、概要、定量化、ピボット、可視化の時間を示します。 このエピソードでは、演算子とさまざまな計算について説明し、 `summarize` スキーマに追加のテーブルを導入します。 また、データセットをグラフに変換して、洞察を深めることができるようにする方法についても説明します。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | エピソード 4: ご利用いただけます。 KQL をインシデント追跡に適用する | このエピソードでは、攻撃者のアクティビティを追跡する方法について説明します。 弊社では、Kusto と高度な検索についての強化された理解を活用して、攻撃を追跡しています。 Cybersecurity の ABCs や、インシデントへの対応に適用する方法など、フィールドで使用されている実際のヒントについて説明します。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
@@ -51,7 +51,7 @@ CSL ファイルからの次の抜粋は、でコメントとしてマークさ�
 
 ```kusto
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto
@@ -60,14 +60,14 @@ CSL ファイルからの次の抜粋は、でコメントとしてマークさ�
 // - Timestamp
 ```
 
-同じ CSL ファイルには、次に示すように、コメントの前と後にクエリが含まれています。 [エディターで複数のクエリ](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)を使用して特定のクエリを実行するには、そのクエリにカーソルを移動して、[**クエリの実行**] を選択します。   
+同じ CSL ファイルには、次に示すように、コメントの前と後にクエリが含まれています。 [エディターで複数のクエリ](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)を使用して特定のクエリを実行するには、そのクエリにカーソルを移動して、[ **クエリの実行** ] を選択します。   
 
 ```kusto
 DeviceLogonEvents
 | count
 
 // DeviceLogonEvents
-// A table containing a row for each logon a device enrolled in Defender ATP
+// A table containing a row for each logon a device enrolled in Microsoft Defender for Endpoint
 // Contains
 // - Account information associated with the logon
 // - The device which the account logged onto

@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Exchange Online Protection (EOP) によって、オンプレミスの電子メール組織がスタンドアロン環境およびハイブリッド環境で保護される方法について説明します。
-ms.openlocfilehash: f99954ec280eeb8c84e6183cea9ad0b9fee63507
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202905"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842406"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -28,9 +28,9 @@ ms.locfileid: "48202905"
 
 Exchange Online Protection (EOP) は、組織をスパムやマルウェアから保護するために役立つクラウドベースのフィルタリングサービスです。 EOP は、Exchange Online メールボックスを使用するすべての Microsoft 365 組織に含まれています。 ただし、EOP は、次のオンプレミスのシナリオでも使用できます。
 
-- **スタンドアロンのシナリオで**は、EOP は、オンプレミスの Exchange 組織またはその他の社内 SMTP 電子メールソリューションに対して、クラウドベースの電子メール保護を提供します。
+- **スタンドアロンのシナリオで** は、EOP は、オンプレミスの Exchange 組織またはその他の社内 SMTP 電子メールソリューションに対して、クラウドベースの電子メール保護を提供します。
 
-- **ハイブリッド展開で**は、社内メールボックスとクラウドメールボックスが混在している場合に、電子メール環境を保護し、メールルーティングを制御するように EOP を構成できます。
+- **ハイブリッド展開で** は、社内メールボックスとクラウドメールボックスが混在している場合に、電子メール環境を保護し、メールルーティングを制御するように EOP を構成できます。
 
 このようなシナリオでは、EOP を使用してメール環境の管理を簡素化し、社内のハードウェアおよびソフトウェアの維持に伴う負荷の多くを軽減することができます。
 
@@ -58,11 +58,11 @@ EOP の仕組みを理解すると、受信メールの処理方法がわかり�
 
 利用可能な EOP サブスクリプションプランは次のとおりです。
 
-- **EOP スタンドアロン**: 社内の電子メール組織を保護するために EOP に登録します。
+- **EOP スタンドアロン** : 社内の電子メール組織を保護するために EOP に登録します。
 
-- **Exchange online の EOP 機能**: exchange online (スタンドアロンまたは Microsoft 365 の一部) を含むサブスクリプションは、EOP を使用して exchange online メールボックスを保護します。
+- **Exchange online の EOP 機能** : exchange online (スタンドアロンまたは Microsoft 365 の一部) を含むサブスクリプションは、EOP を使用して exchange online メールボックスを保護します。
 
-- **Exchange ENTERPRISE cal With services**: 追加の EXCHANGE enterprise Cal をサービスライセンスと共に購入したオンプレミスの exchange 組織がある場合、EOP は含まれているサービスの一部です。
+- **Exchange ENTERPRISE cal With services** : 追加の EXCHANGE enterprise Cal をサービスライセンスと共に購入したオンプレミスの exchange 組織がある場合、EOP は含まれているサービスの一部です。
 
 すべての EOP サブスクリプションプランでの要件、重要な制限、および機能の可用性の詳細については、「 [Exchange Online Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)」を参照してください。
 
@@ -80,7 +80,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 - ヨーロッパ、中東、およびアフリカ (EMEA) では、すべての Exchange Online メールボックスが EMEA データセンターに配置され、すべてのメッセージが EOP フィルター処理のために EMEA データセンター経由でルーティングされます。
 
-- アジア太平洋 (APAC) では、すべての Exchange Online メールボックスが APAC データセンターに配置されており、現在、メッセージは EOP フィルター処理のために APAC データセンター経由でルーティングされます。
+- Asia-Pacific (APAC) では、すべての Exchange Online メールボックスが APAC データセンターに配置されており、現在メッセージは EOP フィルター処理のために APAC データセンター経由でルーティングされます。
 
 - 南北アメリカでは、サービスは次の場所に配布されます。
 
@@ -96,7 +96,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリで構成されます。
 
-- [EOP, Day 1, For office 365 の ATP 管理者](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide): Office 365 Advanced Threat protection のコアで EOP 保護および検出ツールを構成します。
+- Microsoft defender for office 365 のコアで EOP 保護と検出ツールを構成する[365 ための EOP、1日目を構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)します。
 
 - [EOP features](eop-features.md): EOP で使用できる機能の一覧を示します。
 

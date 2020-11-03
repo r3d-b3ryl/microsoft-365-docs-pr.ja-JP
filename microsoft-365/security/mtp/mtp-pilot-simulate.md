@@ -1,6 +1,6 @@
 ---
-title: Microsoft の脅威保護攻撃のシミュレーションを実行する
-description: Microsoft の脅威保護パイロットプロジェクトに対して攻撃のシミュレーションを実行して、が展開がどのように改善されるかを確認します。
+title: Microsoft 365 Defender 攻撃のシミュレーションを実行する
+description: Microsoft 365 Defender パイロットプロジェクトに対して攻撃シミュレーションを実行して、が展開とその迅速な修復方法を確認します。
 keywords: Microsoft Threat Protection パイロット攻撃シミュレーション、Microsoft Threat protection パイロット攻撃シミュレーション、microsoft の脅威保護、Microsoft Threat Protection パイロットプロジェクト、サイバーセキュリティ、高度な脅威、エンタープライズセキュリティ、デバイス、デバイス、id、ユーザー、データ、アプリケーション、インシデント、自動化された調査と修復、高度な検索
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,41 +20,41 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 50b74cf46999c3ad52f536ba0dfe07508c993a39
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447085"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842064"
 ---
-# <a name="run-your-microsoft-threat-protection-attack-simulations"></a>Microsoft の脅威保護攻撃のシミュレーションを実行する  
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Microsoft 365 Defender 攻撃のシミュレーションを実行する  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="パイロットを計画する Microsoft の脅威保護プロジェクト" />
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="パイロットを計画する Microsoft 365 Defender プロジェクト" />
       <br/>計画 </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="Microsoft の脅威保護の試用ラボまたはパイロット環境の準備" />
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Microsoft 365 Defender 試用ラボまたはパイロット環境の準備" />
       <br/>作る </a><br>
     </td>
     <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="Microsoft の脅威保護攻撃のシミュレーションを実行する" />
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Microsoft 365 Defender 攻撃のシミュレーションを実行する" />
       <br/>攻撃をシミュレートする </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="Microsoft の脅威保護パイロットの終了と概要" />
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Microsoft 365 Defender パイロットの終了と概要" />
       <br/>閉じて概要をまとめる </a><br>
     </td>
   </tr>
@@ -76,7 +76,7 @@ ms.locfileid: "48447085"
 
 現在、攻撃のシミュレーションフェーズになっています。
 
-パイロット環境を準備した後は、Microsoft の脅威保護インシデントの管理および自動調査と修復の機能をテストする時間です。 高度な技術を活用して、検出から隠すことができる高度な攻撃をシミュレートするのに役立ちます。 この攻撃は、ドメインコントローラーで開かれているサーバーメッセージブロック (SMB) セッションを列挙し、ユーザーのデバイスの最近の IP アドレスを取得します。 通常、このカテゴリの攻撃には、犠牲者のデバイスで削除されたファイルは含まれません。メモリ内でのみ発生します。 既存のシステムおよび管理ツールを使用して、そのコードをシステムプロセスに挿入して実行を非表示にすることによって、"陸地から離れた" ままにします。このような動作によって、回避が検出され、デバイス上で保持されます。
+パイロット環境の準備が完了したら、Microsoft 365 Defender インシデント管理および自動調査と修復の機能をテストします。 高度な技術を活用して、検出から隠すことができる高度な攻撃をシミュレートするのに役立ちます。 この攻撃は、ドメインコントローラーで開かれているサーバーメッセージブロック (SMB) セッションを列挙し、ユーザーのデバイスの最近の IP アドレスを取得します。 通常、このカテゴリの攻撃には、犠牲者のデバイスで削除されたファイルは含まれません。メモリ内でのみ発生します。 既存のシステムおよび管理ツールを使用して、そのコードをシステムプロセスに挿入して実行を非表示にすることによって、"陸地から離れた" ままにします。このような動作によって、回避が検出され、デバイス上で保持されます。
 
 このシミュレーションでは、サンプルシナリオは PowerShell スクリプトで始まります。 ユーザーがスクリプトを実行するように設定されている可能性があります。 または、このスクリプトは、以前に感染したデバイスからの別のコンピューターへのリモート接続から実行される可能性があります。これは、攻撃者がネットワーク内で laterally を移動しようとしています。 さまざまな管理作業を実行するために、管理者がスクリプトをリモートで実行することもよくあるため、これらのスクリプトを検出するのは困難な場合があります。
 
@@ -92,13 +92,13 @@ ms.locfileid: "48447085"
 
 準備段階で既にパイロット環境を構成してあるので、このシナリオでは、テストデバイスとドメインコントローラーという2つのデバイスがあることを確認してください。
 
-1.  テナントで microsoft [Threat Microsoft Threat Protection が有効になっ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)ていることを確認します。
+1.  テナントで [Microsoft 365 Defender が有効になっ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)ていることを確認します。
 
 2.  テストドメインコントローラーの構成を確認します。
 
     - デバイスは Windows Server 2008 R2 以降のバージョンで実行されます。
-    - テストドメインコントローラーを [Azure Advanced Threat Protection に設定](https://docs.microsoft.com/azure/security-center/security-center-wdatp) し、 [リモート管理](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)を有効にします。    
-    - [AZURE ATP と Microsoft Cloud App Security 統合](https://docs.microsoft.com/cloud-app-security/aatp-integration)が有効になっていることを確認します。
+    - [Id 用の Microsoft Defender への](https://docs.microsoft.com/azure/security-center/security-center-wdatp)テストドメインコントローラー、および[リモート管理](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)を有効にします。    
+    - [Microsoft Defender For Identity と Microsoft Cloud App Security 統合](https://docs.microsoft.com/cloud-app-security/aatp-integration)が有効になっていることを確認します。
     - ドメインにテストユーザーが作成されます。管理者のアクセス許可は必要ありません。
 
 3.  テストデバイスの構成を確認します。
@@ -109,7 +109,7 @@ ms.locfileid: "48447085"
     
     1.  [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、この [トラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
     
-    1.  テストデバイスが [Microsoft Defender Advanced Threat Protection (MDATP) に利用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)していることを確認します。
+    1.  テストデバイスが [エンドポイントの Microsoft Defender に利用](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)していることを確認します)。
 
 既存のテナントを使用し、デバイスグループを実装する場合は、テストデバイス用の専用デバイスグループを作成し、構成 UX の最上位レベルにプッシュします。
 
@@ -175,7 +175,7 @@ SOC アナリストの視点に切り替えると、Microsoft 365 セキュリ�
 
 ### <a name="investigate-the-attack-as-a-single-incident"></a>1つのインシデントとしての攻撃を調査する
 
-Microsoft の脅威保護は、分析を相互に関連付けて、さまざまな製品からのすべての通知と調査を1つのインシデントエンティティに集約します。 これにより、Microsoft の脅威保護によって、広範な攻撃ストーリーが表示されます。これにより、SOC アナリストは複雑な脅威について理解し、対応することができます。
+Microsoft 365 Defender は、分析を関連付け、さまざまな製品に関するすべての関連アラートと調査を1つのインシデントエンティティに集約します。 これにより、Microsoft 365 Defender はより広範な攻撃ストーリーを示し、SOC アナリストが複雑な脅威について理解し、それに対応できるようにします。
 
 このシミュレーション中に生成されたアラートは同じ脅威に関連付けられているため、1つのインシデントとして自動的に集約されます。
 
@@ -189,11 +189,11 @@ Microsoft の脅威保護は、分析を相互に関連付けて、さまざま�
 
     ![シミュレーション中に生成されたアラートが集約されるインシデントページのスクリーンショット](../../media/mtp/fig4.png)
 
-    ダッシュボードに表示される通知は、サービスリソースに基づいてフィルターできます。 Azure ATP、Microsoft Cloud App Security、Microsoft Defender ATP、Microsoft Threat Protection、および Office ATP。  
+    ダッシュボードに表示される通知は、サービスリソースに基づいてフィルターできます。 Id には Microsoft Defender、microsoft Cloud App Security、エンドポイントの場合は microsoft defender、microsoft 365 Defender、Microsoft Defender for Office 365 があります。  
 
 3.  [ **インシデントを開く] ページ** を選択して、インシデントに関する詳細情報を取得します。
 
-    [ **インシデント** ] ページには、インシデントに関連するすべてのアラートと情報が表示されます。 この情報には、アラートに関連するエンティティとアセット、アラートの検出ソース (Azure ATP、EDR)、およびそれらがリンクされた理由が含まれます。 [インシデント] アラートリストの確認は、攻撃の進行状況を示します。 このビューでは、個々の通知を確認して調べることができます。
+    [ **インシデント** ] ページには、インシデントに関連するすべてのアラートと情報が表示されます。 情報には、アラートに関係するエンティティとアセット、アラートの検出ソース (Microsoft Defender for Identity、EDR)、およびそれらがリンクされた理由が含まれます。 [インシデント] アラートリストの確認は、攻撃の進行状況を示します。 このビューでは、個々の通知を確認して調べることができます。
 
     また、右側のメニューから [ **インシデントの管理** ] をクリックして、インシデントをタグ付けし、自分に割り当て、コメントを追加することもできます。
 
@@ -207,23 +207,23 @@ Microsoft の脅威保護は、分析を相互に関連付けて、さまざま�
 シミュレートされた攻撃で生成されるアラートのいくつかを見てみましょう。
 
 >[!NOTE]
->ここでは、シミュレートされた攻撃の際に生成される警告のうちのいくつかについて説明します。 テストデバイス上で実行されている Windows のバージョンと Microsoft の脅威保護製品によっては、順序が若干異なるアラートが表示されることがあります。
+>ここでは、シミュレートされた攻撃の際に生成される警告のうちのいくつかについて説明します。 テストデバイスで実行されている Windows のバージョンと Microsoft 365 Defender 製品によっては、順序が若干異なるアラートが表示されることがあります。
 
 ![生成されたアラートのスクリーンショット](../../media/mtp/fig6.png) 
 
 
-**通知: 不審なプロセスの挿入が監視 (ソース: Microsoft Defender ATP EDR)**
+**通知: 疑わしいプロセスインジェクション (ソース: エンドポイントのための Microsoft Defender EDR)**
 
 高度な攻撃者は、高度で stealthy のメソッドを使用して、メモリ内に保持し、検出ツールから非表示にします。 一般的な方法の1つは、悪意のある実行可能ファイルではなく、信頼されたシステムプロセス内から操作することです。これにより、検出ツールおよびセキュリティ操作が悪意のあるコードを特定するのを困難にします。
 
-SOC アナリストがこれらの高度な攻撃を検出できるようにするために、Microsoft Defender ATP の詳細なメモリセンサーは、クラウドサービスにさまざまなプロセス間のコード注入技術を従来にわたって見やすいものにします。 次の図は、 <i>notepad.exe</i>にコードを挿入しようとしたときに MICROSOFT Defender ATP が検出され、警告が表示されることを示しています。
+SOC アナリストがこれらの高度な攻撃をキャッチできるようにするために、エンドポイントの Microsoft Defender の深いメモリセンサーを使用すると、さまざまなプロセス間のコード注入手法について、従来のクラウドサービスの可視性を実現できます。 次の図は、 <i>notepad.exe</i>にコードを挿入しようとしたときに、エンドポイントの要求が検出およびアラートになる方法を示しています。
 
 ![悪意のある可能性のあるコードの挿入に関する警告のスクリーンショット](../../media/mtp/fig7.png) 
 
 
-**警告: コマンドライン引数を指定せずにプロセスを実行すると、予期しない動作が行われます (Source: Microsoft Defender ATP EDR)**
+**警告: コマンドライン引数を指定せずにプロセスを実行すると予期しない動作が行われます (Source: Microsoft Defender for Endpoint EDR)**
 
-Microsoft Defender ATP の検出は、多くの場合、攻撃手法の最も一般的な属性を対象としています。 この方法により、耐久性が確保され、攻撃者が新しい戦術に切り替えるための水準が上がります。
+エンドポイントの検出に関する Microsoft Defender は、多くの場合、攻撃手法の最も一般的な属性を対象としています。 この方法により、耐久性が確保され、攻撃者が新しい戦術に切り替えるための水準が上がります。
 
 大規模な学習アルゴリズムを使用して、組織内および世界中の共通プロセスの通常の動作を確立し、これらのプロセスが異常な動作を示しているかを監視します。 このような異常動作は、多くの場合、余分なコードが導入され、それ以外の信頼できるプロセスで実行されていることを示します。
 
@@ -242,17 +242,17 @@ Microsoft Defender ATP の検出は、多くの場合、攻撃手法の最も一
 ![IP アドレスの詳細ページのスクリーンショット](../../media/mtp/fig9.png)
 
 
-**通知: ユーザーおよび IP アドレス偵察 (SMB) (ソース: Azure ATP)**
+**通知: ユーザーおよび IP アドレス偵察 (SMB) (ソース: Id 用 Microsoft Defender)**
 
 列挙サーバーメッセージブロック (SMB) プロトコルを使用して、laterally がネットワークを介して特定の機密性の高いアカウントにアクセスするのに役立つ、最新のユーザーログオン情報を取得することを攻撃者に許可します。
 
 この検出では、SMB セッション列挙がドメインコントローラーに対して実行されたときにアラートがトリガーされます。
 
-![ユーザーおよび IP アドレスの偵察に関する Azure ATP 通知のスクリーンショット](../../media/mtp/fig10.png) 
+![ユーザーおよび IP アドレスの偵察に関する Id アラートの Microsoft Defender のスクリーンショット](../../media/mtp/fig10.png) 
 
 
-### <a name="review-the-device-timeline-microsoft-defender-atp"></a>デバイスのタイムラインを確認する [Microsoft Defender ATP]
-このインシデントのさまざまなアラートを調査した後、前に調査したインシデントページに戻ります。 [インシデント] ページの [ **デバイス** ] タブを選択して、MICROSOFT Defender Atp および Azure atp で報告された、このインシデントに関連するデバイスを確認します。
+### <a name="review-the-device-timeline-microsoft-defender-for-endpoint"></a>デバイスのタイムラインを確認する [エンドポイントの Microsoft Defender]
+このインシデントのさまざまなアラートを調査した後、前に調査したインシデントページに戻ります。 このインシデントに関係するデバイスを確認するには、インシデントページの [ **デバイス** ] タブを選択します。
 
 攻撃が実施されたデバイスの名前を選択し、その特定のデバイスのエンティティページを開きます。 そのページには、トリガーされた通知と関連するイベントが表示されます。
 
@@ -262,7 +262,7 @@ Microsoft Defender ATP の検出は、多くの場合、攻撃手法の最も一
 
 重要な動作の一部を展開すると、プロセスツリーなどの有用な情報を得られます。
 
-たとえば、 **疑わしいプロセスインジェクション**のアラートイベントが見つかるまで下にスクロールします。 下の ** プロセスイベント notepad.exe に挿入** されたpowershell.exe を選択し、この動作の完全なプロセスツリーを作業ウィンドウの [ **event entities** ] グラフに表示します。 必要に応じて、検索バーを使用してフィルター処理を行います。
+たとえば、 **疑わしいプロセスインジェクション** のアラートイベントが見つかるまで下にスクロールします。 下の **プロセスイベント notepad.exe に挿入** されたpowershell.exe を選択し、この動作の完全なプロセスツリーを作業ウィンドウの [ **event entities** ] グラフに表示します。 必要に応じて、検索バーを使用してフィルター処理を行います。
 
 ![選択した PowerShell ファイル作成動作のプロセスツリーのスクリーンショット](../../media/mtp/fig12.png)
 
@@ -281,7 +281,7 @@ Microsoft Defender ATP の検出は、多くの場合、攻撃手法の最も一
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Microsoft 365 セキュリティセンターポータルで、インシデントに移動します。 [**インシデント**] ページの [**調査**] タブには、Azure ATP および Microsoft Defender atp によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、Microsoft Defender ATP がトリガーする自動調査のみを示しています。 既定では、Microsoft Defender ATP はキューにある成果物を自動的に remediates ます。これにより、修復が必要になります。
+Microsoft 365 セキュリティセンターポータルで、インシデントに移動します。 **インシデント** ページの [ **調査** ] タブには、microsoft Defender For Identity およびエンドポイントの microsoft defender によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、エンドポイントの Defender によってトリガーされた自動調査のみを示しています。 既定では、エンドポイントの Defender は、キューにある成果物を自動的に remediates ます。これにより、修復が必要になります。
 
 ![インシデントに関連する自動調査のスクリーンショット](../../media/mtp/fig14.png)
 
@@ -296,7 +296,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 ![調査の詳細ページのスクリーンショット](../../media/mtp/fig15.png)
 
-自動調査の間、Microsoft Defender ATP は、修復を必要とする成果物の1つとして挿入された notepad.exe プロセスを特定しました。 Microsoft Defender ATP は自動修復の一部として、不審なプロセスインジェクションを自動的に停止します。 
+自動化された調査の間、エンドポイントの Microsoft Defender は notepad.exe プロセスを特定しました。これは、修復が必要な成果物の1つとして挿入されています。 エンドポイントの Defender は自動修復の一部として、不審なプロセスインジェクションを自動的に停止します。 
 
 テストデバイス上の実行中のプロセスの一覧から <i>notepad.exe</i> が表示されなくなります。
 
@@ -304,7 +304,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 調査が完了し、修復が確認されたら、インシデントを閉じます。
 
-[ **インシデントの管理**] を選択します。 [ **インシデントを解決** する] の状態を設定し、関連する分類を選択します。
+[ **インシデントの管理** ] を選択します。 [ **インシデントを解決** する] の状態を設定し、関連する分類を選択します。
 
 インシデントが解決されると、Microsoft 365 セキュリティセンターおよび関連するポータルで、関連付けられているすべての警告が閉じられます。
 
@@ -323,13 +323,13 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 ### <a name="hunting-environment-requirements"></a>探している環境の要件
 このシナリオでは、1つの内部メールボックスとデバイスが必要です。 テストメッセージを送信するには、外部の電子メールアカウントも必要です。
 
-1.  テナントが [Microsoft の脅威保護を有効](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)にしていることを確認します。
+1.  テナントで [Microsoft 365 Defender が有効になっ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)ていることを確認します。
 2.  電子メールの受信に使用するターゲットメールボックスを識別します。
-    a.  このメールボックスは、Office 365 ATP b で監視する必要があります。  要件3のデバイスがこのメールボックスにアクセスする必要がある
+    a.  このメールボックスは、Microsoft Defender for Office 365 b で監視する必要があります。  要件3のデバイスがこのメールボックスにアクセスする必要がある
 3.  テストデバイスを構成する: a。  Windows 10 バージョン1903以降のバージョンを使用していることを確認してください。
     b.  テストデバイスをテストドメインに参加させる。
     c.  [Windows Defender ウイルス対策を有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)にします。 Windows Defender ウイルス対策を有効にする際に問題が発生した場合は、 [このトラブルシューティングのトピック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)を参照してください。
-    d.   [Microsoft Defender Advanced Threat Protection (MDATP) にオンボード](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+    d.   [エンドポイントの Microsoft Defender にオンボード](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
 1.  外部の電子メールアカウントから、「テスト環境の要件」セクションのステップ2で識別されたメールボックスに電子メールを送信します。 既存の電子メールフィルターポリシーを使用して許可される添付ファイルを含めます。  このファイルは、悪意または実行可能である必要はありません。 推奨されるファイルの種類は、 <i>.pdf</i>、 <i>.exe</i> (許可されている場合)、または Word ファイルなどの Office ドキュメントです。
@@ -339,7 +339,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 **検索を探す**
 1.  Security.microsoft.com ポータルを開きます。
 
-2.  [検索] **> [詳細**] を探します。
+2.  [検索] **> [詳細** ] を探します。
 
     ![M365 セキュリティセンターポータルのナビゲーションバーでの高度な検索のスクリーンショット](../../media/mtp/fig17.png) 
 
@@ -382,7 +382,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
    
         ![高度な検索結果が選択されたときに開く、[レコードの検査] パネルのスクリーンショット](../../media/mtp/fig21.png) 
 
-4.  これで、電子メールが表示されることを確認できたので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべての電子メールにフォーカスします。 このシナリオでは、受信メールに焦点を絞り、環境から送信されるものではありません。 追加したフィルターを削除してメッセージを見つけ、"|" を追加します。**attachmentcount > 0**および**emaildirection**"  ==  **Inbound" "**
+4.  これで、電子メールが表示されることを確認できたので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべての電子メールにフォーカスします。 このシナリオでは、受信メールに焦点を絞り、環境から送信されるものではありません。 追加したフィルターを削除してメッセージを見つけ、"|" を追加します。 **attachmentcount > 0** および **emaildirection** "  ==  **Inbound" "**
 
     次のクエリは、すべての電子メールイベントの最初のクエリよりも短い一覧で結果を表示します。
 
@@ -392,7 +392,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
     ```
 
-5.  次に、添付ファイルについての情報 (ファイル名、ハッシュなど) を結果セットに追加します。 これを行うには、 **Emailattachmentinfo** テーブルに参加します。 この場合、参加に使用する共通のフィールドは、 **Networkmessageid** と **RecipientObjectId**です。
+5.  次に、添付ファイルについての情報 (ファイル名、ハッシュなど) を結果セットに追加します。 これを行うには、 **Emailattachmentinfo** テーブルに参加します。 この場合、参加に使用する共通のフィールドは、 **Networkmessageid** と **RecipientObjectId** です。
 
 次のクエリにも追加行 "|" が含まれています。 **プロジェクト-** 電子メールアドレスと、次の手順で追加するファイル操作に関連したタイムスタンプに関連するタイムスタンプを識別するのに役立つ、電子メールの名前を変更します。
 
@@ -403,9 +403,9 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
     | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
     ```
 
-6.  次に、 **Emailattachmentinfo**テーブルの**SHA256**値を使用して、そのハッシュの**devicefileevents** (エンドポイントで発生したファイルアクション) を検索します。  ここに示す共通のフィールドは、添付ファイルの SHA256 ハッシュです。
+6.  次に、 **Emailattachmentinfo** テーブルの **SHA256** 値を使用して、そのハッシュの **devicefileevents** (エンドポイントで発生したファイルアクション) を検索します。  ここに示す共通のフィールドは、添付ファイルの SHA256 ハッシュです。
 
-    生成されたテーブルにはエンドポイント (Microsoft Defender ATP) の詳細が含まれるようになりました (この場合は、FileCreated イベントのみを対象としてフィルター処理された)、ファイルが保存されていたこと プロセスに関連付けられているアカウント名も含まれます。
+    結果の表に、デバイス名、実行された操作 (この例では、FileCreated イベントのみが含まれます)、ファイルが格納されている場所などのエンドポイント (エンドポイントの Microsoft Defender) の詳細が含まれるようになりました。 プロセスに関連付けられているアカウント名も含まれます。
 
     ```console
     EmailEvents 
@@ -438,7 +438,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 カスタム検出は、設定した頻度に従ってクエリを実行し、クエリの結果によって、選択した影響を受ける影響を受けたリソースに基づいてセキュリティ警告が作成されます。 これらのアラートは、インシデントに関連付けられ、いずれかの製品によって生成された他のセキュリティ警告としてトリアージできます。
 
-1.  [クエリ] ページで、「検索」の手順7で追加した7行と8行を削除し、[ **検出ルールの作成**] をクリックします。 
+1.  [クエリ] ページで、「検索」の手順7で追加した7行と8行を削除し、[ **検出ルールの作成** ] をクリックします。 
     
     ![高度な検索ページの [検出ルールの作成] をクリックできる場所のスクリーンショット](../../media/mtp/fig22.png) 
 
@@ -452,7 +452,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
     この検出ルールのアラートについて次のユーザーに情報を提供できるように、わかりやすいようにフィールドに記入してください。 
 
-3.  この通知で影響を受けるエンティティを選択します。 この場合は、[ **デバイス** と **メールボックス**] を選択します。
+3.  この通知で影響を受けるエンティティを選択します。 この場合は、[ **デバイス** と **メールボックス** ] を選択します。
 
     ![影響を受けるエンティティのパラメータを選択できる [検出ルールの作成] ページのスクリーンショット](../../media/mtp/fig24.png)
  
@@ -461,7 +461,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
     ![脅威に対処するためにアラートがトリガーされたときにウイルス対策スキャンを実行できる [検出ルールの作成] ページのスクリーンショット](../../media/mtp/fig25.png) 
 
-5.  通知ルールの範囲を選択します。 このクエリはデバイスに関係しているため、デバイスグループは Microsoft Defender ATP コンテキストに基づいてこのカスタム検出に関連しています。  影響を受けるエンティティとしてデバイスを含まないカスタム検出を作成する場合、範囲は適用されません。  
+5.  通知ルールの範囲を選択します。 このクエリはデバイスに関係しているため、このカスタム検出ではエンドポイントコンテキストの Microsoft Defender に従ってデバイスグループが関連しています。 影響を受けるエンティティとしてデバイスを含まないカスタム検出を作成する場合、範囲は適用されません。  
 
     ![通知ルールのスコープを設定できる [検出ルールの作成] ページのスクリーンショットに表示される結果に対する期待を管理する](../../media/mtp/fig26.png) 
 
@@ -479,19 +479,19 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>その他の高度な検索ウォークスルー演習
 
-高度な検索の詳細については、次の web キャストを参照してください。 Microsoft の脅威保護 (MTP) 内での高度な検索機能を使用して、クロス柱のクエリを作成し、エンティティにピボットし、カスタムの検出と修復アクションを作成します。
+高度な検索の詳細については、次の web キャストを参照してください。 Microsoft 365 Defender での高度な検索機能を使用して、クロス柱のクエリを作成し、エンティティにピボットし、カスタムの検出と修復アクションを作成します。
 
 >[!NOTE]
 >パイロットテストラボ環境で検索クエリを実行するには、独自の GitHub アカウントを用意してください。  
 
 |  Title  |  説明  |  MP4 のダウンロード  |  YouTube の鑑賞  |  使用する CSL ファイル  |
 |:-----|:-----|:-----|:-----|:-----|
-| エピソード 1: KQL の基礎 | Microsoft の脅威保護の高度な検索機能の基本事項について説明します。 使用できる高度な検索データと基本的な KQL 構文および演算子について説明します。 | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [エピソード 1: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| エピソード 1: KQL の基礎 | Microsoft 365 Defender の高度な検索機能の基本事項について説明します。 使用できる高度な検索データと基本的な KQL 構文および演算子について説明します。 | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [エピソード 1: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | エピソード 2: 結合 | 高度な検索でデータについて学習を続け、テーブルを結合する方法について説明します。 インナー、outer、unique、および半結合、および既定の Kusto innerunique join のニュアンスについて説明します。 | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [エピソード 2: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | エピソード 3: データの集約、ピボット、および視覚化|これで、データのフィルター処理、操作、および結合を行うことができるようになり、集約、定量化、ピボット、可視化を開始する時間になります。 このエピソードでは、高度な検索スキーマで追加のテーブルを準備する際に実行できる集計演算子と計算のいくつかについて説明します。 分析を向上させるために、データセットをグラフに変換します。 | [MP4](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [エピソード 3: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
-| エピソード 4: ご利用いただけます。 KQL をインシデント追跡に適用する|攻撃者の活動を追跡する時間。 このエピソードでは、Microsoft の脅威保護の KQL と advanced の詳細な理解を強化し、攻撃を追跡するために使用します。 Cybersecurity の ABCs やインシデントへの対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントのいくつかについて説明します。 | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
+| エピソード 4: ご利用いただけます。 KQL をインシデント追跡に適用する|攻撃者の活動を追跡する時間。 このエピソードでは、Microsoft 365 Defender での KQL および advanced の高度な検索について強化されたことを使用して、攻撃を追跡します。 Cybersecurity の ABCs やインシデントへの対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントのいくつかについて説明します。 | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
 ## <a name="next-step"></a>次のステップ
-|![決算および概要フェーズ](../../media/mtp/close.png) <br>[決算および概要フェーズ](mtp-pilot-close.md) | Microsoft の脅威保護パイロットの結果を分析し、ステークホルダーに提示して、次の手順を実行します。
+|![決算および概要フェーズ](../../media/mtp/close.png) <br>[決算および概要フェーズ](mtp-pilot-close.md) | Microsoft 365 Defender パイロットの結果を分析し、ステークホルダーに提示して、次の手順を実行します。
 |:-----|:-----|
 

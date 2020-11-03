@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection の高度な捜索スキーマのデータ テーブル
+title: Microsoft 365 Defender の高度な検索スキーマのデータテーブル
 description: 高度な捜索スキーマのテーブルについて学習し、脅威の捜索クエリを実行できるデータを理解します。
 keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、table、データ
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: c23637f2a26f62e3fa1ca50e9f8c75edb7c2b50a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d267219cfa36987c7372a42572d00f4441ccd0cd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429656"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842490"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429656"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "48429656"
 ## <a name="get-schema-information-in-the-security-center"></a>セキュリティセンターでスキーマ情報を取得する
 クエリを作成する際には、組み込みスキーマ参照を使用して、スキーマ内の各テーブルに関する以下の情報をすばやく取得します。
 
-- [**テーブルの説明**]: テーブルに格納されているデータの種類と、そのデータのソース。
+- [ **テーブルの説明** ]: テーブルに格納されているデータの種類と、そのデータのソース。
 - **列** -表のすべての列。
 - **アクションの種類** -列で、 `ActionType` テーブルでサポートされているイベントの種類を表す値を指定できます。 これは、イベント情報を含むテーブルに対してのみ提供されます。
 - **サンプルクエリ** -テーブルを使用する方法を示すクエリの例です。
@@ -57,7 +57,7 @@ ms.locfileid: "48429656"
 | テーブル名 | 説明 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | アラートに関連付けられているファイル、IP アドレス、Url、ユーザー、またはデバイス |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 重要な情報や脅威の分類など、Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からの通知  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | エンドポイントに関する Microsoft Defender、Microsoft Defender for Office 365、Microsoft Cloud App Security、および Id (重要度情報や脅威の分類を含む) に関する microsoft defender からの通知  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | クラウドアプリとサービスのファイル関連アクティビティ |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント  |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | エンドポイントの証明書検証イベントから取得された署名済みファイルの証明書情報 |
