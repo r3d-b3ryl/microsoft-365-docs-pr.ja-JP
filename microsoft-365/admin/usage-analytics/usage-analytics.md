@@ -19,29 +19,28 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織が Microsoft 365 サービスを採用して通信および共同作業を行う方法の概要について説明します。
-ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948630"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841389"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
----
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析の概要
 
-Power BI 内の Microsoft 365 usage analytics を使用して、組織が Microsoft 365 内で通信および共同作業を行うさまざまなサービスをどのように採用しているかを把握します。 Microsoft 365 使用状況データの視覚化と分析、カスタムレポートの作成、組織内での insights の共有、および特定の地域または部署がどのように Microsoft 365 を利用しているかを把握することができます。
+Power BI 内の Microsoft 365 usage analytics を使用して、組織が Microsoft 365 内でさまざまなサービスをどのように採用しているかについての洞察を得ます。 Microsoft 365 使用状況データを視覚化および分析し、カスタムレポートを作成して、組織内でその洞察を共有できます。 特定の地域または部門が Microsoft 365 をどのように使用しているかについての洞察を得ることもできます。
   
-Microsoft 365 usage analytics は、過去12か月間のクロス積ビューを提供し、多数の事前に作成されたレポートを含む、作成済みのダッシュボードへのアクセスを提供するテンプレートアプリです。 各レポートからは、特定の利用状況に関する洞察が得られます。 ユーザー固有情報は最後の暦月全体に対して利用できます。
+Microsoft 365 usage analytics を使用すると、過去12か月間のクロス積ビューを提供し、多数の事前に作成されたレポートを含む、作成済みのダッシュボードにアクセスできます。 各レポートからは、特定の利用状況に関する洞察が得られます。 ユーザー固有の情報は、最後の全暦の月に対して使用できます。
   
-テンプレートアプリを構成する [データモデル](usage-analytics-data-model.md) には、Active Directory からのユーザー属性が含まれているため、特定のレポートでピボットすることができます。 Active Directory 属性の場所、部署、組織が含まれます。 
+テンプレートアプリを構成する [データモデル](usage-analytics-data-model.md) には、Active Directory からのユーザー属性が含まれているため、特定のレポートでピボットすることができます。 Active Directory の次の属性が含まれています。場所、部門、および組織。 
   
 データ収集を開始する方法については、[Microsoft 365 利用状況分析の有効化](enable-usage-analytics.md)に関するページを参照してください。 
   
 Microsoft 365 usage analytics には、以下のセクションで説明するいくつかのレポートが含まれています。 
 
-データテーブルを選択すると、各エリアの詳細なレポートにアクセスできます。 レポートを表示した後、サイトの下部にあるタブを選択することで、事前に作成されたすべてのレポートを表示できます。 詳細な手順については、「 [microsoft 365 usage analytics」の「レポートへの移動と利用](navigate-and-utilize-reports.md) 」、および「 [microsoft 365 usage analytics でのレポートのカスタマイズ](customize-reports.md)」を参照してください。
+データテーブルを選択すると、各エリアの詳細なレポートにアクセスできます。 事前に作成されたすべてのレポートを表示するには、サイトの下部にあるタブを選択します。 詳細な手順については、「 [ナビゲーションに](navigate-and-utilize-reports.md) アクセスしてレポートを [カスタマイズ](customize-reports.md)する」を参照してください。
 
 ## <a name="executive-summary"></a>エグゼクティブの概要
 
@@ -83,7 +82,7 @@ Microsoft 365 の概要レポートには、次のレポートが含まれてい
 
 ユーザーアクティビティレポートは、特定の個別のサービスで使用できます。 これらのレポートは、Active Directory 属性で結合されたユーザーレベルの詳細な利用状況データを提供します。 また、部署導入レポートを使用すると、Active Directory の属性によってスライスすることができます。これにより、すべての個別のサービスにわたってアクティブなユーザーが表示されます。 すべての指標は、最新の完全な月を集計しています。
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>このテンプレートアプリは購入によって利用できるようになりますか。または無料ですか。
 
@@ -93,7 +92,7 @@ Microsoft 365 の概要レポートには、次のレポートが含まれてい
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>誰が Microsoft 365 利用状況分析に接続できますか。
 
-テンプレートアプリへの接続を確立するには、 **グローバル管理者**、 **Exchange 管理**者、 **Skype for business 管理者**、 **SharePoint 管理者**、 **グローバルリーダー** 、または **レポートリーダー** のいずれかである必要があります。 詳細については、「 [管理者ロールについ](../add-users/about-admin-roles.md) て」を参照してください。
+テンプレートアプリへの接続を確立するには、 **グローバル管理者** 、 **Exchange 管理** 者、 **Skype for business 管理者** 、 **SharePoint 管理者** 、 **グローバルリーダー** 、または **レポートリーダー** のいずれかである必要があります。 詳細については、「 [管理者ロールについ](../add-users/about-admin-roles.md) て」を参照してください。
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>利用状況分析レポートをカスタマイズできるユーザー
 

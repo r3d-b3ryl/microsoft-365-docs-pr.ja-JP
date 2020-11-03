@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 apps health-テクノロジエクスペリエンスの生産性スコアの詳細。
-ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804771"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841191"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 アプリの正常性–テクノロジエクスペリエンス
 
-生産性スコアは、ユーザーが Microsoft 365 アプリを使用する方法と、テクノロジエクスペリエンスをサポートする方法について測定基準を使用して作業を行う方法を変革するのに役立ちます。 スコアは、ユーザーとテクノロジの分野のための組織&#39;のパフォーマンスを反映し、自分のスコアを自分のような組織と比較します。 チームワークカテゴリは、ユーザーエクスペリエンスの下にある測定値の一部です。 詳細については、「 [生産性スコアの概要](productivity-score.md) 」を参照してください。
+生産性スコアは、ユーザーが Microsoft 365 アプリを使用する方法と、テクノロジエクスペリエンスをサポートする方法について測定基準を使用して作業を行う方法を変革するのに役立ちます。 スコアは、ユーザーとテクノロジの分野のための組織&#39;のパフォーマンスを反映し、自分のスコアを自分のような組織と比較します。 アプリの正常性カテゴリは、ユーザーエクスペリエンスの下にある測定値の一部です。 詳細については、「 [生産性スコアの概要](productivity-score.md) 」を参照してください。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>組織&#39;Microsoft 365 アプリの正常性スコアが重要である理由
 
