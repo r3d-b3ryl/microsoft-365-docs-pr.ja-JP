@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: この記事では、PowerShell での Microsoft 365 グループの一般的な管理タスクの実行方法について説明します。
-ms.openlocfilehash: c1aa551597644b7f41c3445a791ea27579464f7b
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 1cad2aa39a6b106cbb4dbfbafa995899b2442ed1
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277475"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830617"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell を使用して Microsoft 365 グループを管理する
 
@@ -39,7 +39,7 @@ ms.locfileid: "48277475"
 
 ユーザーが [Outlook でグループを作成または編集](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx)するときに、組織での使用に関するガイドラインへのリンクをそのユーザーに表示することができます。 たとえば、グループ名に特定のプレフィックスまたはサフィックスを追加する必要がある場合があります。
 
-Azure Active Directory (Azure AD) PowerShell を使用して、Microsoft 365 グループの組織の使用ガイドラインをユーザーに示します。 「[グループの設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?LinkID=827484)」の「**ディレクトリ レベルでの設定の作成**」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 AAD コマンドレットを実行すると、ユーザーが Outlook でグループを作成または編集するときに、ガイドラインへのリンクが表示されます。
+Azure Active Directory (Azure AD) PowerShell を使用して、Microsoft 365 グループの組織の使用ガイドラインをユーザーに示します。 「 [グループの設定を構成するための Azure Active Directory コマンドレット](https://go.microsoft.com/fwlink/?LinkID=827484)」の「 **ディレクトリ レベルでの設定の作成** 」の手順に従って、使用ガイドラインのハイパーリンクを定義します。 AAD コマンドレットを実行すると、ユーザーが Outlook でグループを作成または編集するときに、ガイドラインへのリンクが表示されます。
 
 ![使用ガイドラインのリンクがある新しいグループを作成する](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 
@@ -62,7 +62,7 @@ $groupsRecipientDetails = Get-Recipient -RecipientTypeDetails groupmailbox -Iden
 Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAlias -AccessRights SendAs
 ```
 
-コマンドレットが実行されると、**From** フィールドにグループ メール アドレスを追加することにより、ユーザーが Outlook または Outlook on the web に移動して、グループとして送信することができます。
+コマンドレットが実行されると、 **From** フィールドにグループ メール アドレスを追加することにより、ユーザーが Outlook または Outlook on the web に移動して、グループとして送信することができます。
 
 ## <a name="create-classifications-for-microsoft-365-groups-in-your-organization"></a>組織内の Microsoft 365 グループの分類を作成する
 
@@ -73,7 +73,7 @@ Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAli
 
 以前のグループ分類機能を使用することもできます。 組織内のユーザーが Microsoft 365 グループを作成するときに設定できる分類を作成できます。 たとえば、作成するグループにユーザーが「標準」、「機密」、「極秘」といった分類を設定できるようにすることができます。 グループの分類は既定では設定されていないので、ユーザーに分類を設定させるには、分類を作成する必要があります。 Azure Active Directory PowerShell を使用して、Microsoft 365 グループの組織の使用ガイドラインをユーザーに示します。
 
-[グループ設定を構成するための Azure Active Directory コマンドレット](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)をチェックアウトし、「**ディレクトリレベルで設定を作成**する」の手順に従って、Microsoft 365 グループの分類を定義します。
+[グループ設定を構成するための Azure Active Directory コマンドレット](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)をチェックアウトし、「 **ディレクトリレベルで設定を作成** する」の手順に従って、Microsoft 365 グループの分類を定義します。
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
@@ -107,14 +107,14 @@ New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -Ac
 
 Exchange Online PowerShell の使用の詳細については、「[Exchange Online による PowerShell の使用](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)」および「[Exchange Online PowerShell への接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-これらの設定を有効にした後、グループの所有者は、Outlook on the web および Outlook​​ のドロップダウン メニューから分類を選択し、[**編集**] グループ ページから分類を保存できるようになります。
+これらの設定を有効にした後、グループの所有者は、Outlook on the web および Outlook​​ のドロップダウン メニューから分類を選択し、[ **編集** ] グループ ページから分類を保存できるようになります。
 
 ![Microsoft 365 グループの分類を選択する](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
 ## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>Microsoft 365 グループをグローバルアドレス一覧から非表示にします。
 <a name="BKMK_CreateClassification"> </a>
 
-Microsoft 365 グループを、組織内のグローバルアドレス一覧 (GAL) およびその他のリストに表示するかどうかを指定できます。 たとえば、アドレス一覧に表示したくない法務部門のグループがある場合は、そのグループが GAL に表示されないようにすることができます。 次のように、Set 統合グループコマンドレットを実行して、アドレス一覧からグループを非表示にします。
+Microsoft 365 グループを、組織内のグローバルアドレス一覧 (GAL) およびその他のリストに表示するかどうかを指定できます。 たとえば、アドレス一覧に表示したくない法務部門のグループがある場合は、そのグループが GAL に表示されないようにすることができます。 Set-Unified Group コマンドレットを実行して、次のようにアドレス一覧からグループを非表示にします。
 
 ```powershell
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -150,7 +150,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>Microsoft 365 グループの表示名を変更する
 
-[表示名] には、Microsoft 365 グループの名前を指定します。 この名前は、exchange 管理センターまたは Microsoft 365 管理センターで確認できます。 Set-unifiedgroup コマンドを実行すると、グループの表示名を編集したり、既存の Microsoft 365 グループに表示名を割り当てることができます。
+[表示名] には、Microsoft 365 グループの名前を指定します。 この名前は、exchange 管理センターまたは Microsoft 365 管理センターで確認できます。 Set-UnifiedGroup コマンドを実行すると、グループの表示名を編集したり、既存の Microsoft 365 グループに表示名を割り当てることができます。
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -181,16 +181,16 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 |:-----|:-----|
 |[Get-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |このコマンドレットを使用して、既存の Microsoft 365 グループを検索し、グループオブジェクトのプロパティを表示します。  <br/> |
 |[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |特定の Microsoft 365 グループのプロパティを更新する  <br/> |
-|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |新しい Microsoft 365 グループを作成します。 このコマンドレットは、最小限のパラメーターセットを提供します。 拡張プロパティの値を設定するには、新しいグループを作成した後で Set-unifiedgroup を使用します。  <br/> |
+|[New-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |新しい Microsoft 365 グループを作成します。 このコマンドレットは、最小限のパラメーターセットを提供します。 拡張プロパティの値を設定するには、新しいグループを作成した後に Set-UnifiedGroup を使用します。  <br/> |
 |[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |既存の Microsoft 365 グループを削除する  <br/> |
 |[Get-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |Microsoft 365 グループのメンバーシップと所有者の情報を取得する  <br/> |
-|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |数百または数千のユーザー、または新しい所有者を既存の Microsoft 365 グループに追加する  <br/> |
+|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |既存の Microsoft 365 グループにメンバー、所有者、およびサブスクライバーを追加する <br/> |
 |[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |既存の Microsoft 365 グループから所有者とメンバーを削除する  <br/> |
 |[Get-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |アカウントと関連付けられたユーザーの写真について情報を表示します。 パスワードは Active Directory に格納されます。  <br/> |
 |[Set-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |ユーザーの写真をアカウントに関連付けるために使用します。 パスワードは Active Directory に格納されます。  <br/> |
 |[Remove-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |Microsoft 365 グループの写真を削除する  <br/> |
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [配布リストを Microsoft 365 グループにアップグレードする](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
