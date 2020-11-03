@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262219"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846230"
 ---
 # <a name="device-configuration"></a>デバイス構成
 
@@ -53,5 +53,5 @@ Microsoft Managed デスクトップ推奨セキュリティテンプレート |
  ### <a name="additional-security-policies"></a>その他のセキュリティポリシー
 
  これらのポリシーは、規制の厳しい業界のセキュリティを強化するために追加されています。 
- - **セキュリティの監視**: Microsoft [Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)を使用してデバイスを監視します。 脅威が検出された場合、Microsoft はお客様に通知し、デバイスを分離して、問題をリモートで修正します。 
- - **Powershell V2 を無効にする**: Microsoft は、2017年8月に powershell v2 を削除しました。 この機能は、Microsoft マネージドデスクトップのすべてのデバイスで無効になっています。 この変更の詳細については、「 [Windows PowerShell 2.0 の廃止](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)」を参照してください。
+ - **セキュリティの監視** : [エンドポイントに対して microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)を使用してデバイスを監視します。 脅威が検出された場合、Microsoft はお客様に通知し、デバイスを分離して、問題をリモートで修正します。 
+ - **Powershell V2 を無効にする** : Microsoft は、2017年8月に powershell v2 を削除しました。 この機能は、Microsoft マネージドデスクトップのすべてのデバイスで無効になっています。 この変更の詳細については、「 [Windows PowerShell 2.0 の廃止](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)」を参照してください。

@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f4af346877b41b03c07750508ff93661cc642ec4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289107"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846242"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージド デスクトップのテクノロジ
 
@@ -42,7 +42,7 @@ Web アプリケーション |  Yammer、browser 内の Office、Delve、Flow、
  |
  --- | ---
 Application Virtualization (App-v) |    ユーザーは、Intune Win32 app management クライアントを使用して App-v パッケージを展開できます。
-Microsoft Defender Advanced Threat Protection |  Microsoft マネージドデスクトップは、これを使用してデバイスのセキュリティを監視します。 
+Microsoft Defender for Endpoint |    Microsoft マネージドデスクトップは、これを使用してデバイスのセキュリティを監視します。 
 
 ## <a name="enterprise-mobility--security-e5"></a>Enterprise Mobility + Security E5
 

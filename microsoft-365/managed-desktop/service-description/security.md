@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289485"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846206"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティテクノロジ
 
@@ -39,7 +39,7 @@ Microsoft マネージドデスクトップは、すべての管理対象デバ�
 --- | ---
 ウイルス対策 | Microsoft Defender AV がインストールされ、構成されている<br>Microsoft Defender の AV 定義が最新のものである
 完全なボリューム暗号化 |    Windows BitLocker は、Microsoft マネージドデスクトップデバイス用のボリューム暗号化ソリューションです。<br><br>組織がサービスに利用されると、デバイスは Windows BitLocker を組み込み信頼プラットフォームモジュール (TPM) を使用して暗号化されます。これにより、デバイスがスリープモードまたはオフのときに、ローカルデータへの権限のないアクセスを防ぐことができます。 
-監視 |    Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) は、Microsoft マネージドデスクトップデバイスすべてにわたるセキュリティ脅威監視に使用されます。 Microsoft Defender ATP を使用すると、企業のネットワークで高度な脅威を検出、調査、応答することができます。 詳細については、「 [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 」を参照してください。 
+監視 |    エンドポイントの microsoft Defender は、Microsoft が管理するすべてのデスクトップデバイスでセキュリティ脅威を監視するために使用されます。 エンドポイントの Defender を使用すると、企業のネットワークで高度な脅威を検出、調査、応答することができます。 詳細については、「[エンドポイントの Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 」を参照してください。 
 オペレーティングシステムの更新プログラム |  Microsoft マネージドデスクトップデバイスは、常に最新のセキュリティ更新プログラムでセキュリティ保護されています。
 セキュリティで保護されたデバイス構成 |   Microsoft マネージドデスクトップは、Microsoft セキュリティベースラインを実装します。 詳細については、「 [Windows セキュリティベースライン](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)」を参照してください。
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online メールボックスの迷惑メール設定を構成する方法について説明します。 これらの設定の多くは、Outlook または web 上の Outlook でユーザーが使用できます。
-ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 59106567e18895f5983b692bbdd03c6853b92341
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626157"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845842"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Exchange Online メールボックスで迷惑メール設定を構成する
 
@@ -32,11 +32,11 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織では、�
 
 ただし、管理者が Exchange Online の個々のメールボックスで構成できる特定のスパム対策設定もあります。
 
-- **迷惑メールルールを有効または無効**にする: 迷惑メールルールは、すべてのメールボックスで既定で有効になっている迷惑メールルールという名前の非表示の受信トレイルールです。 迷惑メールルールは、次の機能を制御します。
+- **迷惑メールルールを有効または無効** にする: 迷惑メールルールは、すべてのメールボックスで既定で有効になっている迷惑メールルールという名前の非表示の受信トレイルールです。 迷惑メールルールは、次の機能を制御します。
 
-  - スパム**対策ポリシーに基づいて、メッセージを [迷惑メール] フォルダーに移動する**: スパムフィルター verdict の [**メッセージを迷惑メールフォルダーに移動する**] アクションを使用してスパム対策ポリシーを構成した場合、迷惑メールフィルタールールは、メッセージがメールボックスに配信された後に、そのメッセージを迷惑メールフォルダーに移動します。 スパムフィルター処理の詳細については、「verdicts」の「スパム [対策ポリシーの構成 EOP](configure-your-spam-filter-policies.md)」を参照してください。 同様に、0時間の自動削除 (ZAP) によって配信されたメッセージがスパムまたはフィッシングであると判断された場合、迷惑メールフィルタールールはメッセージを迷惑メールフォルダースパムフィルター verdict アクション **に移動** するための迷惑メールフォルダーに移動します。 ZAP の詳細については、「 [Exchange Online のゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)」を参照してください。
+  - スパム **対策ポリシーに基づいて、メッセージを [迷惑メール] フォルダーに移動する** : スパムフィルター verdict の [ **メッセージを迷惑メールフォルダーに移動する** ] アクションを使用してスパム対策ポリシーを構成した場合、迷惑メールフィルタールールは、メッセージがメールボックスに配信された後に、そのメッセージを迷惑メールフォルダーに移動します。 スパムフィルター処理の詳細については、「verdicts」の「スパム [対策ポリシーの構成 EOP](configure-your-spam-filter-policies.md)」を参照してください。 同様に、0時間の自動削除 (ZAP) によって配信されたメッセージがスパムまたはフィッシングであると判断された場合、迷惑メールフィルタールールはメッセージを迷惑メールフォルダースパムフィルター verdict アクション **に移動** するための迷惑メールフォルダーに移動します。 ZAP の詳細については、「 [Exchange Online のゼロ時間自動削除 (ZAP)](zero-hour-auto-purge.md)」を参照してください。
 
-  - **ユーザーが outlook または web 上の outlook で自分自身に対して構成する迷惑メール設定**: セーフリスト _コレクション_ は、各メールボックスの [信頼できる差出人のリスト]、[宛先セーフリスト]、および [受信拒否リスト] の一覧です。 これらのリストのエントリは、迷惑メールルールがメッセージを受信トレイまたは迷惑メールフォルダーに移動するかどうかを決定します。 ユーザーは、Outlook または web 上の Outlook (旧称 Outlook Web App) で自分のメールボックスのセーフリストコレクションを構成できます。 管理者は、任意のユーザーのメールボックスでセーフリストコレクションを構成できます。
+  - **ユーザーが outlook または web 上の outlook で自分自身に対して構成する迷惑メール設定** : セーフリスト _コレクション_ は、各メールボックスの [信頼できる差出人のリスト]、[宛先セーフリスト]、および [受信拒否リスト] の一覧です。 これらのリストのエントリは、迷惑メールルールがメッセージを受信トレイまたは迷惑メールフォルダーに移動するかどうかを決定します。 ユーザーは、Outlook または web 上の Outlook (旧称 Outlook Web App) で自分のメールボックスのセーフリストコレクションを構成できます。 管理者は、任意のユーザーのメールボックスでセーフリストコレクションを構成できます。
 
 メールボックスで迷惑メールルールが有効になっている場合、EOP は迷惑メールフォルダーにメッセージを移動することができます。これにより、スパムフィルター処理 verdict アクションに基づいて、メールボックスの迷惑メールフォルダーにメッセージを **移動** したり、受信拒否リストに含まれるメッセージを迷惑メールフォルダーに配信することができなくなります。
 
@@ -45,13 +45,13 @@ Exchange Online にメールボックスを持つ Microsoft 365 組織では、�
 管理者は、Exchange Online PowerShell を使用して、メールボックスの迷惑メールルールの状態を無効、有効にし、表示することができます。 管理者は、Exchange Online PowerShell を使用して、メールボックス (差出人セーフリスト、宛先セーフリスト、および受信拒否リスト) のセーフリストコレクションのエントリを構成することもできます。
 
 > [!NOTE]
-> ユーザーが自分の信頼できる差出人のリストに追加した送信者からのメッセージは、EOP の一部として接続フィルター処理をスキップします (SCL は-1 です)。 ユーザーが Outlook の差出人セーフリストにエントリを追加できないようにするには、このトピックで後述する「  [outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook) 」のセクションに記載されているように、グループポリシーを使用します。 ポリシーフィルター、コンテンツフィルター、および Advanced Threat Protection (ATP) のチェックは、引き続きメッセージに適用されます。
+> ユーザーが自分の信頼できる差出人のリストに追加した送信者からのメッセージは、EOP の一部として接続フィルター処理をスキップします (SCL は-1 です)。 ユーザーが Outlook の差出人セーフリストにエントリを追加できないようにするには、このトピックで後述する「  [outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook) 」のセクションに記載されているように、グループポリシーを使用します。 ポリシーフィルター、コンテンツフィルター、および Office 365 チェックの Defender は、引き続きメッセージに適用されます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - これらの手順を実行するには、Exchange Online PowerShell のみを使用できます。 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- これらの手順を実行する前に、アクセス許可を割り当てる必要があります。 具体的には、 **メール受信者** の役割 (既定では、 **組織の管理**、 **受信者の管理**、およびカスタムの **メール受信者** の役割グループに割り当てられます) または **ユーザーオプション** の役割 (既定では、 **組織の管理** と **ヘルプデスク** の役割グループに割り当てられます) が必要です。 Exchange Online の役割グループにユーザーを追加するには、「 [Exchange online で役割グループを変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)する」を参照してください。 既定のアクセス許可を持つユーザーは、 [Exchange Online PowerShell へのアクセス](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)権を持っている限り、自分のメールボックスでこれらの手順を実行できることに注意してください。
+- これらの手順を実行する前に、アクセス許可を割り当てる必要があります。 具体的には、 **メール受信者** の役割 (既定では、 **組織の管理** 、 **受信者の管理** 、およびカスタムの **メール受信者** の役割グループに割り当てられます) または **ユーザーオプション** の役割 (既定では、 **組織の管理** と **ヘルプデスク** の役割グループに割り当てられます) が必要です。 Exchange Online の役割グループにユーザーを追加するには、「 [Exchange online で役割グループを変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)する」を参照してください。 既定のアクセス許可を持つユーザーは、 [Exchange Online PowerShell へのアクセス](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)権を持っている限り、自分のメールボックスでこれらの手順を実行できることに注意してください。
 
 - EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「[迷惑メール フォルダーにスパムを配信するようにスタンドアロン EOP を構成する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。
 
@@ -112,11 +112,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 |_TrustedSendersAndDomains_<sup>\*</sup>|**これらの送信者からのメールを [迷惑メール] フォルダーに移動しない**|
 |
 
-<sup>\*</sup>**メモ**:
+<sup>\*</sup>**メモ** :
 
-- Exchange Online では、差出人セーフリストまたは_TrustedSendersAndDomains_パラメーターの**ドメインエントリ**は認識されないため、電子メールアドレスのみを使用します。 スタンドアロン EOP でディレクトリ同期を使用すると、ドメインエントリは既定で同期されませんが、ドメインの同期を有効にすることができます。 詳細については、「 [KB3019657](https://support.microsoft.com/help/3019657)」を参照してください。
+- Exchange Online では、差出人セーフリストまたは _TrustedSendersAndDomains_ パラメーターの **ドメインエントリ** は認識されないため、電子メールアドレスのみを使用します。 スタンドアロン EOP でディレクトリ同期を使用すると、ドメインエントリは既定で同期されませんが、ドメインの同期を有効にすることができます。 詳細については、「 [KB3019657](https://support.microsoft.com/help/3019657)」を参照してください。
 
-- **Set-mailboxjunkemailconfiguration**コマンドレットを使用して、宛先セーフリストを直接変更することはできません ( _TrustedRecipientsAndDomains_パラメーターは機能しません)。 信頼できる差出人のリストを変更し、それらの変更が信頼できる宛先のリストに同期されます。
+- **Set-mailboxjunkemailconfiguration** コマンドレットを使用して、宛先セーフリストを直接変更することはできません ( _TrustedRecipientsAndDomains_ パラメーターは機能しません)。 信頼できる差出人のリストを変更し、それらの変更が信頼できる宛先のリストに同期されます。
 
 メールボックスにセーフリスト コレクションを構成するには、次の構文を使用します。
 
@@ -152,7 +152,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 >
 > - 迷惑メールルールがメールボックスで無効になっている場合でも、セーフリストコレクションを構成することができます。また、Outlook の迷惑メールフィルターは、受信トレイまたは迷惑メールフォルダーにメッセージを移動できます。 詳細については、このトピックの「[Outlook での迷惑メール設定について](#about-junk-email-settings-in-outlook)」セクションを参照してください。
 >
-> - Outlook の迷惑メールフィルターには、追加のセーフリストのコレクション設定があります (たとえば、 **電子メールが [差出人セーフリスト] に自動的に追加**されます)。 詳細については、「 [迷惑メールフィルターを使用して表示するメッセージを制御する](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077)」を参照してください。
+> - Outlook の迷惑メールフィルターには、追加のセーフリストのコレクション設定があります (たとえば、 **電子メールが [差出人セーフリスト] に自動的に追加** されます)。 詳細については、「 [迷惑メールフィルターを使用して表示するメッセージを制御する](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077)」を参照してください。
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
@@ -174,7 +174,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 Outlook で使用できる、クライアント側の迷惑メール フィルター設定を有効にしたり、無効ににしたり、構成したりするには、グループ ポリシーを使用します。 詳細については、「 [Microsoft 365 Apps for enterprise、office 2019、および office 2016」の「管理用テンプレートファイル (ADMX/ADML) と Office カスタマイズツール](https://www.microsoft.com/download/details.aspx?id=49030) 」、および「 [グループポリシーを使用して差出人セーフリスト」などの迷惑メール設定を展開する方法](https://support.microsoft.com/help/2252421)」を参照してください。
 
-Outlook の迷惑メールフィルターで、[**ホーム**迷惑メール] オプションの [オート**フィルターなし**] オプションが既定値に設定されている場合 \> **Junk** \> **Junk E-Mail Options** \> **Options**、outlook は massages をスパムとして分類しませんが、セーフリストコレクション (差出人セーフリスト、宛先セーフリスト、受信拒否リスト) を使用して、メッセージを配信後に迷惑メールフォルダーに移動します。 これらの設定の詳細については、「 [迷惑メールフィルターの概要](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。
+Outlook の迷惑メールフィルターで、[ **ホーム** 迷惑メール] オプションの [オート **フィルターなし** ] オプションが既定値に設定されている場合 \> **Junk** \> **Junk E-Mail Options** \> **Options** 、outlook は massages をスパムとして分類しませんが、セーフリストコレクション (差出人セーフリスト、宛先セーフリスト、受信拒否リスト) を使用して、メッセージを配信後に迷惑メールフォルダーに移動します。 これらの設定の詳細については、「 [迷惑メールフィルターの概要](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)」を参照してください。
 
 Outlook の迷惑メール フィルターが **[低]** または **[高]** に設定されている場合、Outlook の迷惑メール フィルターでは、独自の SmartScreen フィルター テクノロジを使用して、迷惑メールを識別し、[迷惑メール] フォルダーに移動します。 このスパム分類は、EOP によって決定されるスパム信頼レベル (SCL) とは別のものです。 実際には、Outlook は EOP の SCL を無視します (スパムフィルターをスキップするようにメッセージにマークされている場合を除きます)。また、そのメッセージがスパムであるかどうかを判断するために、独自の条件を使用します。 当然のことですが、スパム verdict から EOP と Outlook を同じにすることもできます。 これらの設定の詳細については、「 [迷惑メールフィルターの保護レベルを変更](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)する」を参照してください。
 
@@ -218,4 +218,4 @@ Outlook と Web 上の Outlook の両方で、セーフリスト コレクショ
 ご覧のとおり、 **[連絡先からの電子メールを信頼** する] 設定を有効にすると、同期可能な差出人と安全な受信者の数が少なくなります。 このことが問題になる場合は、グループポリシーを使用してこの機能をオフにすることをお勧めします。
 
 - ファイル名: outlk16 ax
-- ポリシー設定:**連絡先からの電子メールを信頼**する
+- ポリシー設定: **連絡先からの電子メールを信頼** する

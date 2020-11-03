@@ -12,20 +12,20 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199773"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846275"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
 
-組織で[insider リスク管理](insider-risk-management.md)を開始する前に、お客様の情報技術およびコンプライアンス管理チームが検討する必要がある重要なアクティビティと考慮事項があります。 以下の領域での展開を十分に理解し、計画することによって、insider リスク管理機能の実装と使用がスムーズに進み、ソリューションのベストプラクティスに沿ったものになります。
+組織で [insider リスク管理](insider-risk-management.md) を開始する前に、お客様の情報技術およびコンプライアンス管理チームが検討する必要がある重要なアクティビティと考慮事項があります。 以下の領域での展開を十分に理解し、計画することによって、insider リスク管理機能の実装と使用がスムーズに進み、ソリューションのベストプラクティスに沿ったものになります。
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>組織内の関係者と連携する
 
-組織内の適切なステークホルダーを特定して、insider リスク管理の通知やケースに対してアクションを実行することができます。 最初の計画とエンドツーエンドの[insider リスク管理ワークフロー](insider-risk-management.md#workflow)については、組織の次の分野に属するユーザーを考慮することをお勧めします。
+組織内の適切なステークホルダーを特定して、insider リスク管理の通知やケースに対してアクションを実行することができます。 最初の計画とエンドツーエンドの [insider リスク管理ワークフロー](insider-risk-management.md#workflow) については、組織の次の分野に属するユーザーを考慮することをお勧めします。
 
 - 情報技術
 - コンプライアンス
@@ -38,7 +38,7 @@ ms.locfileid: "45199773"
 
 地域や組織の領域によっては、コンプライアンスとプライバシーの要件が組織の他の分野とは異なる場合があります。 これらの領域の関係者と協力して、insider リスク管理のコンプライアンスとプライバシーの統制を理解し、組織のさまざまな分野でそれらをどのように使用するかを確認します。 一部のシナリオでは、コンプライアンスとプライバシーの要件によっては、ユーザーまたは地域の規制またはポリシーの要件に基づいて、一部の関係者を調査およびケースから指定または制限するポリシーが必要になることがあります。
 
-特定の地域、役割、または部門のユーザーに関係する調査ケースについて特定のステークホルダーの要件がある場合は、異なる地域および人口を対象とした、独立した (まったく同じ) [insider リスク管理ポリシー](insider-risk-management-policies.md)を実装する必要があります。 この構成により、適切な関係者が各自の役割や地域に関連するケースを優先順位付けし、管理することが容易になります。 また、調査担当者とレビューアーがユーザーと同じ言語を話す地域のプロセスとポリシーを作成して、insider のリスク管理の通知やケースのエスカレーションプロセスを合理化することをお勧めします。
+特定の地域、役割、または部門のユーザーに関係する調査ケースについて特定のステークホルダーの要件がある場合は、異なる地域および人口を対象とした、独立した (まったく同じ) [insider リスク管理ポリシー](insider-risk-management-policies.md) を実装する必要があります。 この構成により、適切な関係者が各自の役割や地域に関連するケースを優先順位付けし、管理することが容易になります。 また、調査担当者とレビューアーがユーザーと同じ言語を話す地域のプロセスとポリシーを作成して、insider のリスク管理の通知やケースのエスカレーションプロセスを合理化することをお勧めします。
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>レビューと調査のワークフローを計画する
 
@@ -57,16 +57,16 @@ ms.locfileid: "45199773"
 
 Insider リスク管理ポリシーの実装方法に応じて、適切な Microsoft 365 ライセンスサブスクリプションを用意し、いくつかのソリューション前提条件を理解し、計画する必要があります。
 
-**ライセンス:** Insider リスク管理は、Microsoft 365 ライセンスサブスクリプションの幅広い選択の一部として利用できます。 詳細については、「 [insider リスク管理の概要](insider-risk-management-configure.md#before-you-begin)」の記事を参照してください。
+**ライセンス:** Insider リスク管理は、Microsoft 365 ライセンスサブスクリプションの幅広い選択の一部として利用できます。 詳細については、「 [insider リスク管理の概要](insider-risk-management-configure.md#before-you-begin) 」の記事を参照してください。
 
-既存の Microsoft 365 Enterprise E5 プランを持っておらず、insider リスク管理を試みる場合は、既存のサブスクリプションに[microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)してください。
+既存の Microsoft 365 Enterprise E5 プランを持っておらず、insider リスク管理を試みる場合は、既存のサブスクリプションに [microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) するか、Microsoft 365 Enterprise E5 の [試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise) してください。
 
 **ポリシーテンプレートの要件:** 選択するポリシーテンプレートによっては、組織で insider リスク管理を構成する前に理解し、計画する必要がある要件があります。
 
-- ユーザーテンプレートを使用し**てデータを盗用**する場合は、組織内のユーザーの resignation および解雇日情報を定期的にインポートするように MICROSOFT 365 HR connector を構成する必要があります。 組織のための Microsoft 365 HR コネクタを構成する手順については、「[人事コネクタでデータをインポート](import-hr-data.md)する」の記事を参照してください。
-- **データリーク**テンプレートを使用する場合は、少なくとも1つのデータ損失防止 (DLP) ポリシーを構成して、組織内の機密情報を定義したり、高レベルの DLP ポリシー通知に関する insider のリスクアラートを受信したりする必要があります。 組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md)」を参照してください。
-- **セキュリティポリシー違反**テンプレートを使用する場合は、セキュリティ違反の警告をインポートするために、Microsoft Defender Advanced Threat PROTECTION (ATP) を、Defender セキュリティセンターで内部の insider リスク管理統合に対して有効にする必要があります。 Microsoft Defender ATP の内部リスク管理との統合を有効にする手順については、「 [Microsoft defender の高度な機能を構成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features)する」の記事を参照してください。
-- 不満のある**ユーザー**テンプレートを使用する場合は、組織内のユーザーのパフォーマンスまたは降格状態情報を定期的にインポートするように MICROSOFT 365 HR connector を構成する必要があります。 組織のための Microsoft 365 HR コネクタを構成する手順については、「[人事コネクタでデータをインポート](import-hr-data.md)する」の記事を参照してください。
+- ユーザーテンプレートを使用し **てデータを盗用** する場合は、組織内のユーザーの resignation および解雇日情報を定期的にインポートするように MICROSOFT 365 HR connector を構成する必要があります。 組織のための Microsoft 365 HR コネクタを構成する手順については、「 [人事コネクタでデータをインポート](import-hr-data.md) する」の記事を参照してください。
+- **データリーク** テンプレートを使用する場合は、少なくとも1つのデータ損失防止 (DLP) ポリシーを構成して、組織内の機密情報を定義したり、高レベルの DLP ポリシー通知に関する insider のリスクアラートを受信したりする必要があります。 組織の DLP ポリシーを構成する手順については、「 [dlp ポリシーの作成、テスト、およびチューニング](create-test-tune-dlp-policy.md) 」を参照してください。
+- **セキュリティポリシー違反** テンプレートを使用する場合は、セキュリティ違反の警告をインポートするために、Defender セキュリティセンターで insider リスク管理統合のための Microsoft Defender を有効にする必要があります。 内部のリスク管理とエンドポイントの統合を行うために Defender を有効にする手順については、「 [Microsoft defender の高度な機能を構成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) する」の記事を参照してください。
+- 不満のある **ユーザー** テンプレートを使用する場合は、組織内のユーザーのパフォーマンスまたは降格状態情報を定期的にインポートするように MICROSOFT 365 HR connector を構成する必要があります。 組織のための Microsoft 365 HR コネクタを構成する手順については、「 [人事コネクタでデータをインポート](import-hr-data.md) する」の記事を参照してください。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>実稼働環境の少数のユーザーグループでテストする
 
@@ -74,7 +74,7 @@ Insider リスク管理ポリシーの実装方法に応じて、適切な Micro
 
 このテスト中に、ツール内でプライバシーを維持するために、このテスト中に、匿名化機能をポリシー設定で有効にした状態で、insider リスク管理コンソールで匿名化ユーザー表示名にします。 この設定は、ポリシーが一致しているユーザーのプライバシーを保護するのに役立ちます。また、データの調査と、insider のリスクの通知に関する分析のレビューで objectivity を促進するのに役立ちます。
 
-Insider リスク管理ポリシーの構成直後に通知が表示されない場合は、最小リスクしきい値がまだ満たされていないことを意味する場合があります。 ポリシーがトリガーされ、意図したとおりに動作しているかどうかを確認するに**は、ユーザーのページに**ポリシーが適用されているかどうかを確認することをお勧めします。
+Insider リスク管理ポリシーの構成直後に通知が表示されない場合は、最小リスクしきい値がまだ満たされていないことを意味する場合があります。 ポリシーがトリガーされ、意図したとおりに動作しているかどうかを確認するに **は、ユーザーのページに** ポリシーが適用されているかどうかを確認することをお勧めします。
 
 ## <a name="resources-for-stakeholders"></a>関係者のためのリソース
 
@@ -91,4 +91,4 @@ Insider リスク管理に関するドキュメントを、管理および修復
 組織の内部リスク管理を構成する準備はできましたか? 次の記事を確認してください。
 
 - グローバルポリシー設定を構成するために、 [insider リスク管理設定を使用して作業を開始](insider-risk-management-settings.md)します。
-- [Insider リスク管理を開始して](insider-risk-management-configure.md)、前提条件を構成し、ポリシーを作成し、通知の受信を開始します。
+- [Insider リスク管理を開始して](insider-risk-management-configure.md) 、前提条件を構成し、ポリシーを作成し、通知の受信を開始します。

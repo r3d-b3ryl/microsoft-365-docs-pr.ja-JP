@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 83a897438b9da88287574ff576fab9b2f6b30236
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430801"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846510"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動化された調査の詳細と結果
 
@@ -34,9 +34,9 @@ ms.locfileid: "48430801"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-自動調査が Microsoft Threat Protection で実行された際は、自動調査プロセスの実行中および実行後に調査の詳細を確認できます。 [必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 調査の詳細ビューでは最新の状態が表示され、保留中のアクションを承認する機能が提供されます。 
+Microsoft 365 Defender で自動調査が行われると、その調査に関する詳細が自動調査プロセスの間で利用可能になります。 [必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、調査の詳細ビューでこれらの詳細を表示できます。 調査の詳細ビューでは最新の状態が表示され、保留中のアクションを承認する機能が提供されます。 
 
 ![調査の詳細](../../media/mtp-air-investdetails.png)
 
@@ -48,13 +48,13 @@ ms.locfileid: "48430801"
 
 ### <a name="select-an-item-in-the-action-center"></a>アクション センターでアイテムを選択する
 
-アクション センターを使用して、承認が保留中のアクション ([**保留中**] タブで) または既に承認されているアクション ([**履歴**] タブで) を表示します。 
+アクション センターを使用して、承認が保留中のアクション ([ **保留中** ] タブで) または既に承認されているアクション ([ **履歴** ] タブで) を表示します。 
 
 1. [https://security.microsoft.com](https://security.microsoft.com) にアクセスし、サインインします。 
 
-2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
+2. ナビゲーション ウィンドウで、[ **アクション センター** ] を選択します。 
 
-3. [**保留中**] タブまたは [**履歴**] タブのいずれかでアイテムを選択します。 [必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、保留中のアクションを承認 (または拒否) できます。
+3. [ **保留中** ] タブまたは [ **履歴** ] タブのいずれかでアイテムを選択します。 [必要なアクセス許可](mtp-action-center.md#required-permissions-for-action-center-tasks)を持っている場合は、保留中のアクションを承認 (または拒否) できます。
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>インシデントの詳細ページから調査を開く
 
@@ -62,11 +62,11 @@ ms.locfileid: "48430801"
 
 1. [https://security.microsoft.com](https://security.microsoft.com) にアクセスし、サインインします。 
 
-2. ナビゲーション ウィンドウで、[**インシデント**] を選択します。 
+2. ナビゲーション ウィンドウで、[ **インシデント** ] を選択します。 
 
 3. リスト内のアイテムを選択してインシデントの詳細ビューを開きます。<br/>![インシデントの詳細](../../media/mtp-incidentdetails-tabs.png)
 
-4. [**調査**] タブで、一覧から調査を選択します。
+4. [ **調査** ] タブで、一覧から調査を選択します。
 
 ## <a name="investigation-details"></a>調査の詳細
 
@@ -74,11 +74,11 @@ ms.locfileid: "48430801"
 
 ![調査の詳細](../../media/mtp-air-investdetails.png)
 
-調査の詳細ビューでは、次の表で説明する [**Investigation graph (調査のグラフ)**]、[**Alerts (警告)**]、[**Device (デバイス)**]、[**Identities (ID)**]、[**Key findings (主な検出事項)**]、[**Entities (エンティティ)**]、[**Log (ログ)**]、[**Pending actions (保留中のアクション)**] の各タブに情報が表示されます。
+調査の詳細ビューでは、次の表で説明する [ **Investigation graph (調査のグラフ)** ]、[ **Alerts (警告)** ]、[ **Device (デバイス)** ]、[ **Identities (ID)** ]、[ **Key findings (主な検出事項)** ]、[ **Entities (エンティティ)** ]、[ **Log (ログ)** ]、[ **Pending actions (保留中のアクション)** ] の各タブに情報が表示されます。
 
 |タブ    |説明 |
 |--------|--------|
-|Investigation graph (調査グラフ)    |調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムをクリックすると、詳細が表示されます。 たとえば、[**Threats found (見つかった脅威)**] アイコンをクリックすると、[**Key findings (主な検出事項)**] タブに移動します。 |
+|Investigation graph (調査グラフ)    |調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上のアイテムをクリックすると、詳細が表示されます。 たとえば、[ **Threats found (見つかった脅威)** ] アイコンをクリックすると、[ **Key findings (主な検出事項)** ] タブに移動します。 |
 |Alerts (警告) |調査に関連する警告を一覧表示します。 警告は、ユーザーのコンピューター上または Office アプリ内の脅威対策機能、Cloud App Security、その他の Microsoft 365 Threat Protection 機能により出されます。|
 |Devices (デバイス)|調査に含まれるコンピューターと修復レベルを一覧表示します。|
 |Key findings (主な検出事項)   |調査の結果と共に、状態と実行または保留されているアクションを一覧表示します。 このタブでは、デバイスおよび ID に対する保留中のアクションを承認できます。|

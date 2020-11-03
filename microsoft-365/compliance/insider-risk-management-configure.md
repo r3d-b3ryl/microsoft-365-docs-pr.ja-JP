@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e8d30706895774986bc68936bd84c303a6460ece
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 684e21a8288aee72f6170d54ffc86af3bcb0ece0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787513"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846265"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -31,7 +31,7 @@ Insider リスク管理ポリシーを使用して、組織内のリスクの通
 
 組織内でのリスク管理に関して insider リスクポリシーがどのように役立つかの詳細については、「 [Microsoft 365 の「insider リスク管理](insider-risk-management.md)」を参照してください。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 Insider リスク管理を開始する前に、 [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) とアドオンを確認する必要があります。 Insider リスク管理にアクセスして使用するには、組織が次のいずれかのサブスクリプションまたはアドオンを所有している必要があります。
 
@@ -165,7 +165,7 @@ Insider リスク管理は、物理的な制御およびアクセスプラット
     - [異常検出](insider-risk-management-settings.md#anomaly-detections)
     - [不快な言葉の検出](insider-risk-management-settings.md#offensive-language-detections)
     - [警告音量レベル](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft 365 Defender Advanced Threat Protection のアラートの状態](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [エンドポイント警告状態の Microsoft Defender](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [ドメインの設定](insider-risk-management-settings.md#domains-preview)
 6. [ **通知のエクスポート** ] ページで、必要に応じて、Office 365 管理 api を使用して insider のリスクの通知情報をエクスポートできるようにします。
 7. **手順 3** で作成していない場合は、[ **優先度ユーザーグループ** ] ページで、優先度ユーザーグループを作成し、ユーザーを追加します。

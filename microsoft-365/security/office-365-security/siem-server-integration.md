@@ -17,19 +17,19 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Microsoft 365 クラウドサービスおよびアプリケーションとのセキュリティ情報およびイベント管理 (SIEM) サーバーの統合の概要を理解する
-ms.openlocfilehash: 6d657990417cab2a8cbb1b03b8b79a65c095d1a5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e582333615d11c500b114225435903cea386ade
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202211"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846402"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 のサービスおよびアプリケーションとの統合
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-## <a name="summary"></a>概要
+## <a name="summary"></a>要約
 
 組織は、セキュリティ情報およびイベント管理 (SIEM) サーバーの取得を使用または計画していますか。 Microsoft 365 または Office 365 との統合について疑問があるかもしれません。 この記事では、SIEM サーバーと Microsoft 365 のサービスおよびアプリケーションを統合するために使用できるリソースの一覧を示します。
 
@@ -52,13 +52,13 @@ SIEM サーバーは、さまざまな Microsoft 365 サービスおよびアプ
 
 |Microsoft 365 サービスまたはアプリケーション|SIEM サーバーの入力/メソッド|追加情報|
 |---|---|---|
-|[Office 365 Advanced Threat Protection](office-365-atp.md)|監査ログ|[Office 365 Advanced Threat Protection との SIEM の統合](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/)|Azure でホストされている HTTPS エンドポイント <br/>REST API|[SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender for Office 365](office-365-atp.md)|監査ログ|[Office 365 用の Microsoft Defender との SIEM の統合](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|Azure でホストされている HTTPS エンドポイント <br/>REST API|[SIEM ツールに通知を取得する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|ログの統合|[SIEM と Microsoft Cloud App Security との統合](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)を見てみましょう。 Azure Sentinel には、Microsoft ソリューション用のコネクタが付属しています。 これらのコネクタは、"すぐに使用可能" となり、リアルタイム統合のために提供されます。 Microsoft の脅威保護ソリューションおよび Microsoft 365 サービスでは、Office 365、Azure AD、Azure ATP、Microsoft Cloud App Security などを含む Azure Sentinel を使用できます。
+> [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)を見てみましょう。 Azure Sentinel には、Microsoft ソリューション用のコネクタが付属しています。 これらのコネクタは、"すぐに使用可能" となり、リアルタイム統合のために提供されます。 Azure Sentinel は、Microsoft 365 Defender ソリューションおよび Microsoft 365 サービスで使用できます。これには、Office 365、Azure AD、Id の Microsoft Defender、Microsoft Cloud App Security などが含まれます。
 
 ### <a name="audit-logging-must-be-turned-on"></a>監査ログを有効にする必要がある
 
@@ -70,6 +70,6 @@ SIEM サーバーの統合を構成する前に、監査ログが有効になっ
 
 ## <a name="more-resources"></a>その他のリソース
 
-[Azure セキュリティセンターでのセキュリティソリューションの統合](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Azure Defender でのセキュリティソリューションの統合 *](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Microsoft Graph Security API の警告と SIEM の統合](https://docs.microsoft.com/graph/security-integration)

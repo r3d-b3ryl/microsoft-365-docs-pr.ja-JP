@@ -1,6 +1,6 @@
 ---
-title: ユーザーなしで Microsoft の脅威保護にアクセスするアプリを作成する
-description: ユーザーなしで Microsoft の脅威保護にアクセスするアプリを作成する方法について説明します。
+title: ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する
+description: ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する方法について説明します。
 keywords: アプリ、アクセス、api、作成
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,70 +19,70 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 57ba0eb77ccb855cc0c0224b5321f11809e21ae8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 446db803cc47bfd519642928a4a0257c4b3d57c8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201421"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846070"
 ---
-# <a name="create-an-app-to-access-microsoft-threat-protection-without-a-user"></a>ユーザーなしで Microsoft の脅威保護にアクセスするアプリを作成する
+# <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>ユーザーなしで Microsoft 365 Defender にアクセスするアプリを作成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-このページでは、ユーザーなしで Microsoft の脅威保護へのプログラムによるアクセスを可能にするアプリケーションを作成する方法について説明します。 ユーザーに代わって Microsoft の脅威保護にプログラムによってアクセスする必要がある場合は、「 [Get access with user context](api-create-app-user-context.md)」を参照してください。 必要なアクセス権がわからない場合は、「 [はじめ](api-access.md)に」を参照してください。
+このページでは、ユーザーなしで Microsoft 365 Defender へのプログラムによるアクセスを実現するアプリケーションを作成する方法について説明します。 ユーザーに代わって Microsoft 365 Defender にプログラムでアクセスする必要がある場合は、「 [Get access with user context](api-create-app-user-context.md)」を参照してください。 必要なアクセス権がわからない場合は、「 [はじめ](api-access.md)に」を参照してください。
 
-Microsoft の脅威保護は、プログラム Api のセットを使用して、そのデータおよびアクションの多くを公開します。 これらの Api は、Microsoft の脅威保護機能に基づいて、ワークフローとイノベーションを自動化するのに役立ちます。 API へのアクセスには、OAuth 2.0 認証が必要です。 詳細については、「 [OAuth 2.0 認証コードフロー](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)」を参照してください。
+Microsoft 365 Defender は、一連のプログラム Api を使用して、そのデータおよびアクションの多くを公開します。 これらの Api は、Microsoft 365 Defender の機能に基づいて作業フローとイノベーションを自動化するのに役立ちます。 API へのアクセスには、OAuth 2.0 認証が必要です。 詳細については、「 [OAuth 2.0 認証コードフロー](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)」を参照してください。
 
 一般に、Api を使用するには、次の手順を実行する必要があります。
 - Azure Active Directory (Azure AD) アプリケーションを作成します。
 - このアプリケーションを使用してアクセストークンを取得します。
-- トークンを使用して、Microsoft の脅威保護 API にアクセスします。
+- トークンを使用して、Microsoft 365 Defender API にアクセスします。
 
-この記事では、Azure AD アプリケーションを作成し、Microsoft の脅威保護へのアクセストークンを取得し、トークンを検証する方法について説明します。
+この記事では、Azure AD アプリケーションを作成し、Microsoft 365 Defender へのアクセストークンを取得し、トークンを検証する方法について説明します。
 
 ## <a name="create-an-app"></a>アプリを作成する
 
-1. **グローバル管理者**の役割を持つユーザーを使用して[Azure](https://portal.azure.com)にログオンします。
+1. **グローバル管理者** の役割を持つユーザーを使用して [Azure](https://portal.azure.com)にログオンします。
 
-2. **Azure Active Directory**  >  **アプリ登録**  >  の**新しい登録**に移動します。 
+2. **Azure Active Directory**  >  **アプリ登録**  >  の **新しい登録** に移動します。 
 
    ![Microsoft Azure のイメージとアプリケーション登録へのナビゲーション](../../media/atp-azure-new-app2.png)
 
-3. 登録フォームで、アプリケーションの名前を選択し、[ **登録**] を選択します。
+3. 登録フォームで、アプリケーションの名前を選択し、[ **登録** ] を選択します。
 
-4. アプリが Microsoft の脅威保護にアクセスできるようにして、it アクセス許可を割り当てるには、アプリケーションページで、[ **API アクセス**許可 api を追加する] [  >  **Add permission**  >  **組織は**> を使用します] を選択し、「 **microsoft threat protection**」と入力して、[ **microsoft threat protection**] を選択します。
+4. アプリが Microsoft 365 defender にアクセスして、it アクセス許可を割り当てることができるようにするには、アプリケーションページで、[ **API アクセス** 許可 api を追加する] [  >  **Add permission**  >  **組織** が > を使用します] を選択し、「 **microsoft 365 defender** 」と入力して、[ **microsoft 365 defender** ] を選択します。
 
    > [!NOTE]
-   > Microsoft の脅威保護は、元のリストには表示されません。 テキストボックスに名前を記述して、表示されることを確認する必要があります。
+   > Microsoft 365 Defender は、元のリストには表示されません。 テキストボックスに名前を記述して、表示されることを確認する必要があります。
 
    ![API アクセスと API 選択の画像](../../media/apis-in-my-org-tab.PNG)
 
-   - [ **アプリケーションの権限** ] を選択します。たとえば、 **インシデント**に関連するアクセス許可を選択し、[ **アクセス許可の追加**] を選択します。 >。
+   - [ **アプリケーションの権限** ] を選択します。たとえば、 **インシデント** に関連するアクセス許可を選択し、[ **アクセス許可の追加** ] を選択します。 >。
 
    ![API アクセスと API 選択の画像](../../media/request-api-permissions.PNG)
 
     >[!NOTE]
     >シナリオに関連するアクセス許可を選択する必要があります。 **「すべてのインシデントの読み取り」** は例にすぎません。 必要なアクセス許可を確認するには、呼び出したい API の [ **Permissions** ] セクションを参照してください。
 
-5. [ **同意を許可**する] を選択します。
+5. [ **同意を許可** する] を選択します。
 
      > [!NOTE]
      > アクセス許可を追加するたびに、新しいアクセス許可を有効にするには、[ **同意の付与** ] を選択する必要があります。
 
     ![許可権限の画像](../../media/grant-consent.PNG)
 
-6. アプリケーションにシークレットを追加するには、[ **証明書 & シークレット**] を選択し、シークレットに説明を追加して、[ **追加**] を選択します。
+6. アプリケーションにシークレットを追加するには、[ **証明書 & シークレット** ] を選択し、シークレットに説明を追加して、[ **追加** ] を選択します。
 
     > [!NOTE]
-    > [ **追加**] を選択した後、[ **生成されたシークレットの値をコピー**する] を選択します。 その後、この値を取得することはできません。
+    > [ **追加** ] を選択した後、[ **生成されたシークレットの値をコピー** する] を選択します。 その後、この値を取得することはできません。
 
     ![アプリキーを作成する画像](../../media/webapp-create-key2.png)
 
@@ -90,13 +90,13 @@ Microsoft の脅威保護は、プログラム Api のセットを使用して�
 
    ![作成されたアプリ id の画像](../../media/app-and-tenant-ids.png)
 
-8. **Microsoft の脅威保護パートナーの場合のみ**。 [こちらの手順に従って](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access)ください。 アプリをテナント (同意した後、すべてのテナントで利用可能) に設定します。 これは、サードパーティ製のアプリ (たとえば、複数の顧客のテナントで実行するためのアプリを作成する場合など) に **必要** です。 テナントのみで実行するサービスを作成する場合は、この操作は **必要ありません** (たとえば、独自のデータと対話する独自の使用法用のアプリケーションを作成する場合)。 アプリをテナントに設定するには、次のようにします。
+8. **Microsoft 365 Defender パートナーの場合のみ** 。 [こちらの手順に従って](https://docs.microsoft.com/microsoft-365/security/mtp/api-partner-access)ください。 アプリをテナント (同意した後、すべてのテナントで利用可能) に設定します。 これは、サードパーティ製のアプリ (たとえば、複数の顧客のテナントで実行するためのアプリを作成する場合など) に **必要** です。 テナントのみで実行するサービスを作成する場合は、この操作は **必要ありません** (たとえば、独自のデータと対話する独自の使用法用のアプリケーションを作成する場合)。 アプリをテナントに設定するには、次のようにします。
 
-    - [ **認証**] に移動し https://portal.azure.com て、 **リダイレクト URI**としてを追加します。
+    - [ **認証** ] に移動し https://portal.azure.com て、 **リダイレクト URI** としてを追加します。
 
-    - ページの下部にある [ **サポートされるアカウントの種類**] で、マルチテナントアプリの **組織ディレクトリ** アプリケーションの同意にあるアカウントを選択します。
+    - ページの下部にある [ **サポートされるアカウントの種類** ] で、マルチテナントアプリの **組織ディレクトリ** アプリケーションの同意にあるアカウントを選択します。
 
-    アプリケーションは、その使用を予定している各テナントで承認される必要があります。 これは、アプリケーションがお客様の代わりに Microsoft の脅威保護に作用するからです。
+    アプリケーションは、その使用を予定している各テナントで承認される必要があります。 これは、アプリケーションがお客様の代わりに Microsoft 365 Defender に対して対話するためです。
 
     (または、サードパーティ製アプリを作成しているお客様) は、同意リンクを選択してアプリを承認する必要があります。 Active Directory の管理者権限を持つユーザーとの同意を行う必要があります。
 
@@ -115,7 +115,7 @@ Microsoft の脅威保護は、プログラム Api のセットを使用して�
 
 Azure AD トークンの詳細については、「 [AZURE ad チュートリアル](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)」を参照してください。
 
-### <a name="use-powershell"></a>PowerShell の使用
+### <a name="use-powershell"></a>PowerShell を使う
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -204,8 +204,8 @@ aadToken = jsonResponse["access_token"]
 
 1. コマンドプロンプトを開き、CLIENT_ID を Azure アプリケーション ID に設定します。
 1. Azure アプリケーションシークレットに CLIENT_SECRET を設定します。
-1. アプリを使用して Microsoft の脅威保護にアクセスするお客様の Azure テナント ID に TENANT_ID を設定します。
-1. 次のコマンドを実行します。
+1. アプリを使用して Microsoft 365 Defender にアクセスする必要があるお客様の Azure テナント ID に TENANT_ID を設定します。
+1. 次のコマンドを実行します:
 
 ```
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
@@ -227,15 +227,15 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 ![トークン検証のイメージ](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-microsoft-threat-protection-api"></a>トークンを使用して Microsoft の脅威保護 API にアクセスする
+## <a name="use-the-token-to-access-microsoft-365-defender-api"></a>トークンを使用して Microsoft 365 Defender API にアクセスする
 
-1. 使用する API を選択します。 詳細については、「 [サポートされる Microsoft Threat Protection api](api-supported.md)」を参照してください。
+1. 使用する API を選択します。 詳細については、「 [サポートされている Microsoft 365 Defender api](api-supported.md)」を参照してください。
 
 2. "ベアラー {token}" に送信する http 要求の承認ヘッダーを設定します (ベアラーは認証スキームです)。
 
 3. トークンの有効期限は1時間です。 同じトークンを使用して、複数の要求を送信できます。
 
-次に、 **C# を使用して**、インシデントのリストを取得するための要求を送信する例を示します。 
+次に、 **C# を使用して** 、インシデントのリストを取得するための要求を送信する例を示します。 
 
 ```
     var httpClient = new HttpClient();
@@ -250,6 +250,6 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 ```
 
 ## <a name="related-topics"></a>関連項目
-- [Microsoft の脅威保護 Api にアクセスする](api-access.md)
-- [アプリケーションコンテキストを使用して Microsoft の脅威保護にアクセスする](api-create-app-web.md)
-- [ユーザーコンテキストを使用して Microsoft の脅威保護にアクセスする](api-create-app-user-context.md)
+- [Microsoft 365 Defender Api にアクセスする](api-access.md)
+- [アプリケーションコンテキストを使用して Microsoft 365 Defender にアクセスする](api-create-app-web.md)
+- [ユーザーコンテキストを使用して Microsoft 365 Defender にアクセスする](api-create-app-user-context.md)

@@ -1,6 +1,6 @@
 ---
-title: 一般的な Microsoft Threat Protection REST API のエラーコード
-description: 一般的な Microsoft Threat Protection REST API エラーコードについて
+title: 一般的な Microsoft 365 Defender REST API のエラーコード
+description: 一般的な Microsoft 365 Defender REST API のエラーコードについて
 keywords: api、error、コード、一般的なエラー、mtp、api のエラーコード
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,25 +19,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81375b919b52ff895e5ec7014feb747b1a0eae65
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201341"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846010"
 ---
-# <a name="common-microsoft-threat-protection-rest-api-error-codes"></a>一般的な Microsoft Threat Protection REST API のエラーコード
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>一般的な Microsoft 365 Defender REST API のエラーコード
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一部の情報は、市販される前に大幅に変更される可能性がある prereleased 製品に関連しています。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-次の表に記載されているエラーコードは、Microsoft の脅威保護 Api のいずれかの操作によって返される場合があります。
+次の表に示すエラーコードは、Microsoft 365 Defender Api のいずれかの操作によって返される場合があります。
 
 エラー応答ごとにエラーメッセージが含まれています。これは、この問題を解決するのに役立ちます。
 
@@ -70,7 +70,7 @@ InternalServerError | 内部サーバーエラー (500) | (エラーメッセー
 ## <a name="body-parameters-are-case-sensitive"></a>本文のパラメーターでは大文字と小文字が区別される
 
 送信される本文パラメーターは、現在、大文字と小文字が区別されます。
-<br>**Invalidrequestbody**または**MissingRequiredParameter**のエラーが発生した場合は、パラメーターの大文字または小文字が正しくないことが原因である可能性があります。
+<br>**Invalidrequestbody** または **MissingRequiredParameter** のエラーが発生した場合は、パラメーターの大文字または小文字が正しくないことが原因である可能性があります。
 <br>API ドキュメントページを参照して、送信されたパラメーターが関連する例と一致していることを確認することをお勧めします。
 
 ## <a name="correlation-request-id"></a>関連付け要求 ID

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 21b8832010cab30f1834c4c6a94b4542c3b2b6a7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430093"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846150"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430093"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 `DeviceFileEvents`[高度な](advanced-hunting-overview.md)検索スキーマの表には、ファイルの作成、変更、およびその他のファイルシステムイベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 

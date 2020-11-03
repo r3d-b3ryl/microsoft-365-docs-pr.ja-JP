@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8787bf212db342c84f13f8522e8853310e00c0ce
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429409"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846630"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのアプリの監視とレポート
 
@@ -53,7 +53,7 @@ ms.locfileid: "48429409"
 
 ## <a name="understand-which-cloud-apps-are-used"></a>使用されているクラウドアプリを理解する
 
-検出された**クラウドアプリ (カテゴリ)** は、組織で使用されているアプリの種類を示します。 Cloud App Security の Cloud Discovery dashboard にリンクします。 詳細については、「 [クイックスタート: 検出されたアプリの操作](https://docs.microsoft.com/cloud-app-security/discovered-apps)」を参照してください。  
+検出された **クラウドアプリ (カテゴリ)** は、組織で使用されているアプリの種類を示します。 Cloud App Security の Cloud Discovery dashboard にリンクします。 詳細については、「 [クイックスタート: 検出されたアプリの操作](https://docs.microsoft.com/cloud-app-security/discovered-apps)」を参照してください。  
 
 ![検出されたクラウドアプリのカテゴリカード](../../media/discovered-cloud-apps-categories.png)
 
@@ -65,10 +65,10 @@ ms.locfileid: "48429409"
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>インフラストラクチャの負荷の状態を監視する
 
-**インフラストラクチャの状態** Azure セキュリティセンターのインフラストラクチャワークロードの正常性状態アラートを表示します。
+**インフラストラクチャの状態** Azure Defender * のインフラストラクチャワークロードの正常性状態アラートを表示します。
 
-Azure セキュリティセンターでは、オンプレミスとクラウドのワークロード全体にわたる統合セキュリティ管理と高度な脅威保護が提供されます。 ファイアウォールやその他のパートナーソリューションを含む、さまざまなソースからのセキュリティデータを収集、検索、および分析することができます。
+Azure Defender * は、社内およびクラウドのワークロード全体にわたり Office 365 用の統合セキュリティ管理および Defender を提供します。 ファイアウォールやその他のパートナーソリューションを含む、さまざまなソースからのセキュリティデータを収集、検索、および分析することができます。
 
-詳細については、「 [Azure セキュリティセンターのドキュメント](https://docs.microsoft.com/azure/security-center/)」を参照してください。
+詳細については、「 [Azure Defender * ドキュメント](https://docs.microsoft.com/azure/security-center/)」を参照してください。
 
 ![インフラストラクチャ正常性カード](../../media/infrastructure-health.png)

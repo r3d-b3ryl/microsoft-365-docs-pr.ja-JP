@@ -25,26 +25,26 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: この記事では、管理者は、Office 365 Advanced Threat Protection (ATP) の安全なリンク保護について学習し、悪意のある Url を使用するフィッシングやその他の攻撃から組織を保護することができます。
-ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: この記事では、管理者は Office 365 の Defender の安全なリンク保護について学習し、悪意のある Url を使用するフィッシングやその他の攻撃から組織を保護することができます。
+ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806728"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846058"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Office 365 ATP の安全なリンク
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンク
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> この記事は、 [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md)を使用しているビジネスお客様を対象としています。 Outlook.com、Microsoft 365 ファミリ、または Microsoft 365 Personal を使用していて、Outlook で Safelinks に関する情報を探している場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は [、Microsoft Defender For Office 365 を](office-365-atp.md)使用しているビジネスのお客様を対象としています。 Outlook.com、Microsoft 365 ファミリ、または Microsoft 365 Personal を使用していて、Outlook で Safelinks に関する情報を探している場合は、「 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
 
-「安全なリンク」とは、 [Office 365 Advanced Threat Protection](office-365-atp.md) の機能の1つで、メールフローでの受信電子メールメッセージのスキャンとリライト、および電子メールメッセージやその他の場所での url とリンクのクリック時間の確認を行います。 [安全なリンク] スキャンは、Exchange Online Protection (EOP) の受信電子メールメッセージでの通常の [スパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md) に加えて実行されます。 安全なリンクスキャンは、フィッシングやその他の攻撃で使用されている悪意のあるリンクから組織を保護するのに役立ちます。
+「安全なリンク」は、メールフローでの受信電子メールメッセージのスキャンと再書き込み、および電子メールメッセージやその他の場所での Url とリンクのクリック時の検証を行う、 [Office 365 の Defender](office-365-atp.md) の機能です。 [安全なリンク] スキャンは、Exchange Online Protection (EOP) の受信電子メールメッセージでの通常の [スパム対策およびマルウェア対策保護](anti-spam-and-anti-malware-protection.md) に加えて実行されます。 安全なリンクスキャンは、フィッシングやその他の攻撃で使用されている悪意のあるリンクから組織を保護するのに役立ちます。
 
 安全なリンク保護は、次の場所で利用できます。
 
-- **電子メールメッセージ** : 「安全なリンク」電子メールメッセージ内のリンクの保護は、安全なリンクのポリシーによって制御されます。 既定の安全なリンクポリシーはありません。 **そのため、電子メールメッセージ内の安全なリンクを保護するには、1つ以上の安全なリンクポリシーを作成する必要があり** ます。 手順については、「 [ATP で安全なリンクポリシーを設定](set-up-atp-safe-links-policies.md)する」を参照してください。
+- **電子メールメッセージ** : 「安全なリンク」電子メールメッセージ内のリンクの保護は、安全なリンクのポリシーによって制御されます。 既定の安全なリンクポリシーはありません。 **そのため、電子メールメッセージ内の安全なリンクを保護するには、1つ以上の安全なリンクポリシーを作成する必要があり** ます。 手順については、「 [Set Up Safe Links policies In office 365](set-up-atp-safe-links-policies.md)」を参照してください。
 
   電子メールメッセージの安全なリンク保護の詳細については、この記事で後述する「 [電子メールメッセージの安全なリンクの設定](#safe-links-settings-for-email-messages) 」を参照してください。
 
@@ -52,7 +52,7 @@ ms.locfileid: "48806728"
 
   Teams での安全なリンク保護の詳細については、このトピックで後述する「 [Microsoft Teams の安全なリンクの設定](#safe-links-settings-for-microsoft-teams) 」を参照してください。
 
-- **Office 365 apps** : office 365 アプリの安全なリンク保護は、サポートされているデスクトップ、モバイル、および web aps で利用できます。 「安全なリンクの保護」を、「安全なリンク」ポリシーの **外部** にあるグローバル設定の Office 365 アプリに対して **構成** します。 手順については、「 [Office 365 ATP の安全なリンクのグローバル設定を構成する](configure-global-settings-for-safe-links.md)」を参照してください。
+- **Office 365 apps** : office 365 アプリの安全なリンク保護は、サポートされているデスクトップ、モバイル、および web aps で利用できます。 「安全なリンクの保護」を、「安全なリンク」ポリシーの **外部** にあるグローバル設定の Office 365 アプリに対して **構成** します。 手順については、 [Microsoft Defender For Office 365 の「安全なリンクのグローバル設定を構成する](configure-global-settings-for-safe-links.md)」を参照してください。
 
   ただし、Office 365 アプリの安全なリンク保護は、アクティブな安全リンクポリシーに含まれているユーザーにのみ **適用** されます。 ユーザーがアクティブな安全リンクポリシーに含まれていない場合、ユーザーはサポートされている Office 365 アプリで安全なリンク保護を受けられません。
 
@@ -71,7 +71,7 @@ ms.locfileid: "48806728"
   - [Office 365 アプリの安全なリンク設定](#safe-links-settings-for-office-365-apps)
   - [「安全なリンク」の「次の Url をブロックする」リスト](#block-the-following-urls-list-for-safe-links)
 
-次の表では、ATP を含む Microsoft 365 と Office 365 組織の安全なリンクのシナリオについて説明します (つまり、ライセンスの不足が例では問題になることはありません)。
+次の表では、Office 365 の Defender を含む Microsoft 365 および Office 365 組織の場合のシナリオについて説明します (つまり、ライセンスの不足が例では問題になることはありません)。
 
 ****
 
@@ -180,7 +180,7 @@ Microsoft Teams 内の Url に対して安全なリンク保護がどのよう�
 
 1. ユーザーが Teams アプリを開始します。
 
-2. Microsoft 365 は、ユーザーの組織に Office 365 ATP が含まれていることと、Microsoft Teams の保護が有効になっているアクティブな安全なリンクポリシーにユーザーが含まれていることを確認します。
+2. Microsoft 365 は、ユーザーの組織に Microsoft Defender for Office 365 が含まれていることと、Microsoft Teams の保護が有効になっているアクティブな安全なリンクポリシーにユーザーが含まれていることを確認します。
 
 3. Url は、チャット、グループチャット、チャネル、およびタブ内のユーザーのクリック時に検証されます。
 

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Exchange Online Protection (EOP) のベストプラクティス推奨事項に従って、成功を設定し、一般的な構成エラーを回避します。
-ms.openlocfilehash: b734fe87b82c243531944bbd9cf53d22d5b42f53
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: abf68e361293b2a55cd0a382cc376cbfe21236e7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414036"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845950"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>スタンドアロン EOP を構成するためのベストプラクティス
 
@@ -35,7 +35,7 @@ Exchange Online Protection (EOP) のベストプラクティス推奨事項に�
 
 ## <a name="recommended-settings"></a>推奨設定
 
-セキュリティ管理者は、組織のニーズを満たすようにセキュリティ設定をカスタマイズすることができます。 原則として、EOP と Office 365 ATP には、標準と Strict の2つのセキュリティレベルがあります。 これらの設定は、 [EOP および Office 365 ATP security の推奨設定](recommended-settings-for-eop-and-office365-atp.md)に記載されています。
+セキュリティ管理者は、組織のニーズを満たすようにセキュリティ設定をカスタマイズすることができます。 原則として、EOP には2つのセキュリティレベルがあり、推奨されるのは Microsoft Defender for Office 365 です。標準と厳密です。 これらの設定については、「 [EOP の推奨設定」および「Microsoft Defender For Office 365 のセキュリティ](recommended-settings-for-eop-and-office365-atp.md)」に記載されています。
 
 ### <a name="miscellaneousnon-policy-settings"></a>その他/ポリシー外の設定
 

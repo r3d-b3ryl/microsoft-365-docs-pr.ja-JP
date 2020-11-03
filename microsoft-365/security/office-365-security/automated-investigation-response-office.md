@@ -21,12 +21,12 @@ description: Microsoft Defender for Office 365 の自動調査および応答機
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447109"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845974"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の自動調査と応答 (AIR) の概要
 
@@ -62,7 +62,7 @@ AIR により、セキュリティ運用チームがより効率的かつ効果�
 > [!NOTE]
 > アスタリスク () のマークが付いたアラートに `*` は、電子メール通知がオフになっている Microsoft 365 セキュリティセンター内のそれぞれのアラートポリシーの *情報* 重要度が割り当てられます。 メール通知は、[アラート ポリシーの構成](../../compliance/alert-policies.md#alert-policy-settings)で有効にすることができます。 
 
-アラートを表示するには、セキュリティ/コンプライアンス センターで、[**アラート**]  >  [**アラートの表示**] の順に選択します。 詳細情報を表示するアラートを選択し、通知を選択して詳細を表示します。次に、[**調査を表示**] リンクを使用して当該[調査](air-view-investigation-results.md#investigation-graph)に移動します。  
+アラートを表示するには、セキュリティ/コンプライアンス センターで、[ **アラート** ]  >  [ **アラートの表示** ] の順に選択します。 詳細情報を表示するアラートを選択し、通知を選択して詳細を表示します。次に、[ **調査を表示** ] リンクを使用して当該 [調査](air-view-investigation-results.md#investigation-graph)に移動します。  
 
 > [!NOTE]
 > 情報通知は、既定では通知ビューに表示されません。 それらを表示するには、通知フィルターを変更して情報通知を含めます。
@@ -73,7 +73,7 @@ AIR により、セキュリティ運用チームがより効率的かつ効果�
 
 ## <a name="security-playbooks"></a>セキュリティ プレイブック
 
-セキュリティプレイブックは、Microsoft Defender for Office 365 と Microsoft の脅威保護の中核となるバックエンドポリシーです。 AIR で提供されるセキュリティプレイブックは、現実の一般的なセキュリティシナリオに基づいており、セキュリティ運用チームからのフィードバックに基づいて開発されています。 組織内で特定のアラートがトリガーされると、セキュリティによるプレイブックが自動的に開始されます。 アラートがトリガーされると、関連付けられたプレイブックは自動調査および応答システムによって実行されます。 この調査では、特定のアラートのプレイブックに基づいてアラートを分析し、関連するすべてのメタデータ (電子メールメッセージ、ユーザー、件名、送信者などを含む) を確認します。 調査の調査結果に基づいて、組織のセキュリティチームが脅威を制御し、軽減するために実行できる一連の操作を航空で推奨します。 
+セキュリティプレイブックは、Microsoft Defender for Office 365 および Microsoft 365 Defender の自動化の中核となるバックエンドポリシーです。 AIR で提供されるセキュリティプレイブックは、現実の一般的なセキュリティシナリオに基づいており、セキュリティ運用チームからのフィードバックに基づいて開発されています。 組織内で特定のアラートがトリガーされると、セキュリティによるプレイブックが自動的に開始されます。 アラートがトリガーされると、関連付けられたプレイブックは自動調査および応答システムによって実行されます。 この調査では、特定のアラートのプレイブックに基づいてアラートを分析し、関連するすべてのメタデータ (電子メールメッセージ、ユーザー、件名、送信者などを含む) を確認します。 調査の調査結果に基づいて、組織のセキュリティチームが脅威を制御し、軽減するために実行できる一連の操作を航空で推奨します。 
 
 空気で得られるセキュリティプレイブックは、組織が現在直面している電子メールの最も頻繁な脅威に取り組むように設計されています。 これらは、Microsoft とお客様の資産を保護する人を含む、セキュリティ運用チームとインシデント対応チームからの入力に基づいています。
 
@@ -118,7 +118,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 - 同様の電子メールメッセージは、電子メールクラスター検索によって識別されます。
 - このシグナルは、 [エンドポイントの Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)など、他のプラットフォームと共有されます。
 - 不審なメール メッセージ内の悪意のあるリンクをユーザーがクリックしたかどうかが判断されます。
-- チェックは、Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) および Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) に対して実行され、ユーザーによって報告された他の類似メッセージがあるかどうかを確認します。
+- チェックは、Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) および ([Microsoft Defender for Office 365](office-365-atp.md)) で行われ、ユーザーによって報告された他の類似メッセージがあるかどうかを確認します。
 - ユーザーに対する侵害があったかどうかがチェックされます。 このチェックは、Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)、および [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)の間の信号を活用して、関連するすべてのユーザーアクティビティの異常を関連付けます。
 
 捜索フェーズでは、リスクと脅威がさまざまな捜索手順に割り当てられます。 
@@ -133,7 +133,7 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 ![選択されたメッセージを含むエクスプローラー](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-[ **Actions** ] メニューを使用して、 **トリガー調査**を選択できます。
+[ **Actions** ] メニューを使用して、 **トリガー調査** を選択できます。
 
 ![選択されたメッセージの [アクション] メニュー](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
@@ -143,9 +143,9 @@ AIR では、各セキュリティ プレイブックに含まれるものは次
 
 Microsoft Defender for Office 365 の空気機能には、セキュリティ運用チームが脅威を監視および解決するために使用できる [詳細 & のレポート](air-view-investigation-results.md) が含まれています。 ただし、他のソリューションには空気の機能を統合することもできます。 例としては、セキュリティ情報およびイベント管理 (SIEM) システム、ケース管理システム、カスタムレポートソリューションなどがあります。 これらの種類の統合は、 [Office 365 Management ACTIVITY API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)を使用して行うことができます。 
 
-たとえば、組織では、既に AIR によって処理されたユーザーレポートフィッシング通知をセキュリティ運用チームが表示する方法を設定しています。 これらのソリューションは、関連するアラートを組織の SIEM サーバーおよびそのケース管理システムと統合します。 このソリューションは、セキュリティ運用チームが実際の脅威に時間と労力を集中できるように、誤検知の数を大幅に減らします。 このカスタムソリューションの詳細については、「 [Tech Community blog: Office 365 ATP および O365 管理 API を使用した SOC の有効性を向上させる](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)」を参照してください。
+たとえば、組織では、既に AIR によって処理されたユーザーレポートフィッシング通知をセキュリティ運用チームが表示する方法を設定しています。 これらのソリューションは、関連するアラートを組織の SIEM サーバーおよびそのケース管理システムと統合します。 このソリューションは、セキュリティ運用チームが実際の脅威に時間と労力を集中できるように、誤検知の数を大幅に減らします。 このカスタムソリューションの詳細については、「Tech Community blog」を参照してください。 [Microsoft Defender For Office 365 および O365 管理 API を使用して SOC の効果を向上させる](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [空気の使用を開始する](office-365-air.md)
 
