@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection データのセキュリティとプライバシー
+title: Microsoft 365 Defender データのセキュリティとプライバシー
 description: サービスのプライバシーとデータのセキュリティについて説明します。
 keywords: プライバシー、データ、セキュリティ、トラスト センター、情報コレクション
 search.product: eADQiWindows 10XVcnh
@@ -19,27 +19,27 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 90e889928e9bb49c5325036b22d7caacc76f362f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8ed9c4c2601e0026d074aeb05964a8282239b55e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199443"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843902"
 ---
-# <a name="microsoft-threat-protection-data-security-and-privacy"></a><span data-ttu-id="05ad4-104">Microsoft Threat Protection データのセキュリティとプライバシー</span><span class="sxs-lookup"><span data-stu-id="05ad4-104">Microsoft Threat Protection data security and privacy</span></span>
+# <a name="microsoft-365-defender-data-security-and-privacy"></a><span data-ttu-id="84e8a-104">Microsoft 365 Defender データのセキュリティとプライバシー</span><span class="sxs-lookup"><span data-stu-id="84e8a-104">Microsoft 365 Defender data security and privacy</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="05ad4-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="05ad4-105">**Applies to:**</span></span>
-- <span data-ttu-id="05ad4-106">Microsoft Threat Protection</span><span class="sxs-lookup"><span data-stu-id="05ad4-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="84e8a-105">**適用対象:**</span><span class="sxs-lookup"><span data-stu-id="84e8a-105">**Applies to:**</span></span>
+- <span data-ttu-id="84e8a-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="84e8a-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="05ad4-107">Microsoft の脅威保護は、Microsoft Azure データセンター (欧州連合、英国、および米国) で運用されます。</span><span class="sxs-lookup"><span data-stu-id="05ad4-107">Microsoft Threat Protection operates in Microsoft Azure data centers in the European Union, The United Kingdom, and the United States.</span></span> <span data-ttu-id="05ad4-108">サービスによって収集された顧客データは、プロビジョニング時に識別されたテナントの地理的な場所 (a) と、そのようなデータを処理するために別の Microsoft online services を使用している場合は (b) 他のオンラインサービスのデータストレージルールによって定義された位置情報に格納されます。</span><span class="sxs-lookup"><span data-stu-id="05ad4-108">Customer data collected by the service is stored at rest in (a) the geographic location of the tenant as identified during provisioning or, (b) if Microsoft Threat Protection uses another Microsoft online service to process such data, the geolocation as defined by the data storage rules of that other online service.</span></span>
+<span data-ttu-id="84e8a-107">Microsoft 365 Defender は、Microsoft Azure データセンター (欧州連合、英国、および米国) で動作します。</span><span class="sxs-lookup"><span data-stu-id="84e8a-107">Microsoft 365 Defender operates in Microsoft Azure data centers in the European Union, The United Kingdom, and the United States.</span></span> <span data-ttu-id="84e8a-108">サービスによって収集された顧客データは、プロビジョニング時に識別されたテナントの地理的な場所、または (b) Microsoft 365 Defender が、そのようなデータを処理するために別の Microsoft online サービスを使用する場合は、その他のオンラインサービスのデータストレージルールによって定義された地理位置情報です。</span><span class="sxs-lookup"><span data-stu-id="84e8a-108">Customer data collected by the service is stored at rest in (a) the geographic location of the tenant as identified during provisioning or, (b) if Microsoft 365 Defender uses another Microsoft online service to process such data, the geolocation as defined by the data storage rules of that other online service.</span></span>
 
-<span data-ttu-id="05ad4-109">仮名化フォーム内の顧客データは、米国の中央ストレージおよび処理システムに格納されることもあります。</span><span class="sxs-lookup"><span data-stu-id="05ad4-109">Customer data in pseudonymized form might also be stored in central storage and processing systems in the United States.</span></span>
+<span data-ttu-id="84e8a-109">仮名化フォーム内の顧客データは、米国の中央ストレージおよび処理システムに格納されることもあります。</span><span class="sxs-lookup"><span data-stu-id="84e8a-109">Customer data in pseudonymized form might also be stored in central storage and processing systems in the United States.</span></span>
 
 
-<span data-ttu-id="05ad4-110">特定の製品のデータ ストレージとプライバシーの詳細については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="05ad4-110">For more information on the data storage and privacy information of the specific products see:</span></span>
-- [<span data-ttu-id="05ad4-111">Microsoft Defender ATP のデーター ストレージとプライバシー</span><span class="sxs-lookup"><span data-stu-id="05ad4-111">Microsoft Defender ATP data storage and privacy</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
-- [<span data-ttu-id="05ad4-112">Microsoft Cloud App Security のデータ セキュリティとプライバシー</span><span class="sxs-lookup"><span data-stu-id="05ad4-112">Microsoft Cloud App Security data security and privacy</span></span>](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [<span data-ttu-id="05ad4-113">Microsoft 365 のプライバシー、セキュリティ、および透過性</span><span class="sxs-lookup"><span data-stu-id="05ad4-113">Microsoft 365 privacy, security, and transparency</span></span>](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+<span data-ttu-id="84e8a-110">特定の製品のデータストレージとプライバシー情報の詳細については、以下を参照してください。</span><span class="sxs-lookup"><span data-stu-id="84e8a-110">For more information on the data storage and privacy information of the specific products, see:</span></span>
+- [<span data-ttu-id="84e8a-111">エンドポイントのデータの保存とプライバシーを確保するための Microsoft Defender</span><span class="sxs-lookup"><span data-stu-id="84e8a-111">Microsoft Defender for Endpoint data storage and privacy</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [<span data-ttu-id="84e8a-112">Microsoft Cloud App Security のデータ セキュリティとプライバシー</span><span class="sxs-lookup"><span data-stu-id="84e8a-112">Microsoft Cloud App Security data security and privacy</span></span>](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
+- [<span data-ttu-id="84e8a-113">Microsoft 365 のプライバシー、セキュリティ、および透過性</span><span class="sxs-lookup"><span data-stu-id="84e8a-113">Microsoft 365 privacy, security, and transparency</span></span>](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
