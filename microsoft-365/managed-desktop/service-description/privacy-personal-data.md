@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950486"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847770"
 ---
 # <a name="privacy-and-personal-data"></a>プライバシーおよび個人データ
 
@@ -56,7 +56,7 @@ Microsoft マネージドデスクトップでは、次のデータが使用さ�
 |---------|---------|
 |Azure Active Directory データ     | テナント管理者用に作成されたレポートで使用されます。これは、Microsoft Managed Desktop 管理ポータルで利用できます。        |
 |Intune データ     | テナント管理者用に作成されたレポートで使用されます。これは、Microsoft Managed Desktop 管理ポータルで利用できます。        |
-|Microsoft Defender Advanced Threat Protection (ATP)     |  Microsoft マネージドデスクトップのセキュリティ操作センター (SOC) によって検出されたセキュリティ上の脅威に対処するために使用します。  |
+|Microsoft Defender for Endpoint     |  Microsoft マネージドデスクトップのセキュリティ操作センター (SOC) によって検出されたセキュリティ上の脅威に対処するために使用します。  |
 |Windows 診断データ     |管理対象デバイスの更新状況を判断したり、Microsoft Managed Desktop's a Service (ITaaS) オファーリングを提供および改善したりするために使用されます。         |
 |管理者の連絡先データ     | テナント管理者と通信するために Microsoft マネージドデスクトップによって使用されます。        |
 
@@ -73,7 +73,7 @@ Microsoft マネージドデスクトップは、次のエンティティを処�
 - テナントデータ
 - Azure Active Directory のリソース
 - ポリシーおよび構成データ
-- Microsoft Defender ATP のメタデータ
+- エンドポイントメタデータの Microsoft Defender
 - Windows 診断データ
 - 製品およびサービスの利用状況データ
 
@@ -87,9 +87,9 @@ Azure がデータ記憶域に使用する地域の詳細については、「 [
 
 Intune データは、ヨーロッパ北部 (アイルランド) やヨーロッパ西部 (オランダ) など、いくつかの異なる地域に格納できます。 IT 管理者は、テナントアカウントを作成し、Intune サービスに最初に登録するときにデータを格納する国を選択します。 Intune で使用されるデータセンターの場所の一覧については、「 [Microsoft intune-お客様のデータはどこ](http://intunedatacentermap.azurewebsites.net/)にありますか?」を参照してください。 データストレージの詳細と Intune での使用の詳細については、「 [intune でのデータ収集](https://docs.microsoft.com/intune/privacy-data-collect)」を参照してください。
 
-### <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender Advanced Threat Protection
+### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-Microsoft Defender Advanced Threat Protection (ATP) のデータは、いくつかの異なる地域に格納できます。 このため、microsoft Defender ATP は、microsoft [DEFENDER atp](http://intunedatacentermap.azurewebsites.net/)に記載されているように、欧州連合、英国、および米国の microsoft Azure データセンターで運用されます。 データストレージの詳細と Microsoft Defender ATP での使用方法については、「 [Microsoft DEFENDER atp が収集するデータ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)」を参照してください。
+エンドポイントデータの Microsoft Defender は、いくつかの異なる地域に格納できます。 このため、エンドポイントの Defender は、microsoft Azure の欧州連合、英国、および米国で規定されているように、microsoft の [エンドポイント用のデータストレージの場所](http://intunedatacentermap.azurewebsites.net/)によって運営されています。 エンドポイントのデータストレージの詳細と、Defender によるエンドポイントの使用方法については、「[エンドポイント収集に関する Microsoft Defender のデータ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)」を参照してください。
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -138,5 +138,5 @@ Microsoft マネージドデスクトップでは、プロファイル、広告�
 
 - [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender ATP](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [エンドポイントの Microsoft Defender](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)

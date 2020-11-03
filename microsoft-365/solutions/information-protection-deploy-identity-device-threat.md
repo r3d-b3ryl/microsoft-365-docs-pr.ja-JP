@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 の id、デバイス、および脅威保護サービスによる個人データ漏洩を防止します。
-ms.openlocfilehash: e084036860f5d15a14ca6c75305583b86a5fc53f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398693"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847180"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>データプライバシー規制に id、デバイス、および脅威保護を使用する
 
@@ -46,7 +46,7 @@ Microsoft 365 には、組織がデータプライバシー関連のコンプラ
  
 これらの4つの主要なデータプライバシー規制のセット全体でこれらを選択した場合、コンプライアンスマネージャーは90の改善アクションを指定します。ほとんどの場合、スコアは "27" です。 このような大規模な番号は、これらのカテゴリのコンプライアンスマネージャーによって呼び出されているため、参考として、いくつかの一般的なものがここに記載されています。
 
-Id と**コントロールアクセス**カテゴリに[azure Active DIRECTORY (azure AD)](https://azure.microsoft.com/services/active-directory/)を使用します。これには、次の操作を実行できます。
+Id と **コントロールアクセス** カテゴリに [azure Active DIRECTORY (azure AD)](https://azure.microsoft.com/services/active-directory/)を使用します。これには、次の操作を実行できます。
 
 - リプレイ対策認証を実装する ("Man-in-the-middle" 攻撃を防ぐため)
 - レガシ認証をブロックする
@@ -70,12 +70,12 @@ Id と**コントロールアクセス**カテゴリに[azure Active DIRECTORY (
 - モバイルデバイスが非アクティブ時にロックされるようにする。
 - 複数のサインインエラーについてモバイルデバイスをワイプする必要があります。
 
-[Exchange Online Protection と Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp.md)を使用して、[**脅威からの保護**] カテゴリを使用します。これには次のことができます。
+「 **脅威からの保護** 」カテゴリで、 [Exchange Online Protection と Microsoft Defender for Office 365](../security/office-365-security/office-365-atp.md)を使用します。これには、次のことを行うことができます。
 
 - 送信者の認証を有効にします (SPF、DMARC、および DKIM)。
-- Office 365 Advanced Threat Protection (ATP) フィッシング対策ポリシーをセットアップします。
-- ATP の安全な添付ファイルを実装します。
-- ATP の安全なリンクを実装します。
+- Microsoft Defender for Office 365 のフィッシング対策ポリシーをセットアップします。
+- 安全な添付ファイルを実装します。
+- 安全なリンクを実装します。
 - マルウェアの検出と応答のポリシーを実装します。
 - 送信および受信スパムポリシーを実装します。
 
@@ -83,6 +83,6 @@ Id と**コントロールアクセス**カテゴリに[azure Active DIRECTORY (
 
 - [共通 ID とデバイスのアクセス ポリシー](../security/office-365-security/identity-access-policies.md)
 - [Office 365 で脅威から保護する](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [ATP の安全な添付ファイル機能](../security/office-365-security/atp-safe-attachments.md)
-- [ATP の安全なリンク](../security/office-365-security/atp-safe-links.md)
-- [ATP の安全なドキュメント](../security/office-365-security/safe-docs.md)
+- [添付ファイル保護](../security/office-365-security/atp-safe-attachments.md)
+- [リンク保護](../security/office-365-security/atp-safe-links.md)
+- [安全なドキュメント](../security/office-365-security/safe-docs.md)

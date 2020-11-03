@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection の高度な検索でエラーを処理する
+title: Microsoft 365 Defender の高度な検索でエラーを処理する
 description: 高度な検索を使用したときに表示されるエラーを理解する
 keywords: 高度な検索、脅威の探し、サイバーの脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ、kusto、timeout、resources、errors、unknown error、limits、quota、parameter、allocation
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636895"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846894"
 ---
 # <a name="handle-advanced-hunting-errors"></a>詳細な検索エラーを処理する
 
@@ -45,6 +45,6 @@ ms.locfileid: "48636895"
 
 ## <a name="related-topics"></a>関連項目
 - [高度な検索のベストプラクティス](advanced-hunting-best-practices.md)
-- [クォータと使用法のパラメーター](advanced-hunting-limits.md)
+- [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [Kusto クエリ言語の概要](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

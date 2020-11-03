@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 用のクライアントおよびサーバーソフトウェアをセットアップするためのロードマップ。
-ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: d51aead9a50df3acace94526824cfa08fc083a01
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655961"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847156"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 のクライアントおよびサーバーソフトウェアのロードマップ
 
@@ -31,7 +31,7 @@ ms.locfileid: "48655961"
 - デバイス上の Windows 7 および Windows 8.1 から Windows 10 Enterprise
 
 >[!Note]
->Windows 7 は、**2020 年 1 月 14 日**にサポートが終了しました。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
+>Windows 7 は、 **2020 年 1 月 14 日** にサポートが終了しました。 詳細については、[こちら](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)をクリックしてください。
 >
 
 時間の経過とともにこれらの移行をすべて実行することにより、 [最新のワークプレース](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)に近い組織が、組織内のチームワークや創造性のロックを解除する安全で統合された環境を実現します。これは、Microsoft 365 for enterprise によって有効になり、機能します。
@@ -60,7 +60,7 @@ Microsoft 365 Apps for enterprise は更新プログラムを自動的にイン�
 
 ### <a name="office-2010"></a>Office 2010
 
-Office 2010 リリースの Office のバージョンでは、サポートは **2020 年10月 13**日に終了しました。 詳細については、[Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)を参照してください。
+Office 2010 リリースの Office のバージョンでは、サポートは **2020 年10月 13** 日に終了しました。 詳細については、[Office 2010 のサポート終了ロードマップ](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)を参照してください。
 
 Office 2010 を実行しているコンピューターを Office 2013 または Office 2016 (両方とも手動で更新する必要があります) にアップグレードするのではなく、以下を行うことを検討してください。
 
@@ -89,7 +89,7 @@ Microsoft 365 Apps for enterprise はセキュリティと新機能の両方の�
 - 最新のセキュリティ更新プログラムとサポート修正プログラムで更新する必要があります。場合によっては、これらの更新プログラムは毎月リリースされます。
 - Microsoft クラウド テクノロジを活用しビジネスをデジタルに変換するうえで、最適ではありません。
 - Microsoft Teams などの新しい生産性向上アプリケーションは含まれません。
-- Exchange Advanced Threat Protection などの最新のセキュリティ機能は含まれません。
+- 最新のセキュリティ機能 (Exchange や Defender for Office 365 など) は含めないでください。
 
 Microsoft 365 for enterprise には、web ブラウザーや Outlook クライアントなど、オンプレミスバージョンの Office server ソフトウェアと同じツールを使用する、クラウドベースのバージョンの Office server サービスが含まれています。 これらのサービスは、IT を関与させることなくセキュリティのために継続的に更新されるため、オンプレミス サーバーの管理と更新にかかる時間を短縮できます。 これらのサービスには、Office サーバー ソフトウェアにはない新しい拡張機能も含まれています。
 
@@ -117,9 +117,9 @@ Office 2007 リリースのサーバー製品を Office 2010、Office 2013、ま
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-[Exchange Server 2010](exchange-2010-end-of-support.md)のサポートは **、2020年10月 13**日に終了しました。
+[Exchange Server 2010](exchange-2010-end-of-support.md)のサポートは **、2020年10月 13** 日に終了しました。
 
-[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) のサポートは、**2021 年 4 月 13 日**に終了します。
+[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) のサポートは、 **2021 年 4 月 13 日** に終了します。
 
 Office 2010 リリースのこれらのサーバー製品を Office 2013 または Office 2016 リリースのサーバー製品にアップグレードするのではなく、以下を行うことを検討してください。
 
@@ -145,7 +145,7 @@ Office 2016 リリースのサーバー製品については、サポートの�
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 および 8.1 の移行
 
-Windows 7 は、**2020 年 1 月 14 日**にサポートが終了しました。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、一括アップグレードを実行することができます。
+Windows 7 は、 **2020 年 1 月 14 日** にサポートが終了しました。 Windows 7 または Windows 8.1 を実行しているデバイスを移行するには、一括アップグレードを実行することができます。
 
 その他の方法については、「[Windows 10 展開のシナリオ](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)」をご覧ください。 自分で[Windows 10 の展開を計画](https://aka.ms/planforwin10deployment)することもできます。
 

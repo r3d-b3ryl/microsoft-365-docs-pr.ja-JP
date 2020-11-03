@@ -1,6 +1,6 @@
 ---
-title: Microsoft Threat Protection のインシデントに優先順位を付ける
-description: Microsoft Threat Protection のインシデント キューからインシデントに優先順位を付ける方法の詳細
+title: Microsoft 365 Defender でインシデントの優先度を設定する
+description: Microsoft 365 Defender でインシデントキューからインシデントの優先順位を設定する方法について説明します。
 keywords: インシデント、キュー、概要、デバイス、ID、ユーザー、メールボックス、メール、インシデント
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,27 +21,27 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 382cfd374c40d0c5a0dd7d7705281bd56263d8b8
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430825"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846714"
 ---
-# <a name="prioritize-incidents-in-microsoft-threat-protection"></a>Microsoft Threat Protection のインシデントに優先順位を付ける
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデントの優先度を設定する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-Microsoft Threat Protection は、相関分析を適用し、さまざまな製品からのすべての関連する通知と調査を 1 つのインシデントに集約します。 また、Microsoft Threat Protection は、Microsoft Threat Protection が資産全体および製品スイート全体にわたってエンドツーエンドの可視性を備えているため、悪意があると識別できるアクティビティにのみ一意の警告をトリガーします。 そうすることで、Microsoft Threat Protection はより広範な攻撃事例を説明し、セキュリティ運用アナリストが組織全体の複雑な脅威を理解して対処できるようにします。
+Microsoft 365 Defender は、関連付け分析を適用し、さまざまな製品からのすべての関連アラートと調査を1つのインシデントに集約します。 また、microsoft 365 Defender は、Microsoft 365 Defender が不動産および製品スイート全体で使用するエンドツーエンドの可視性を与えられた悪意のあるアクティビティに対して、固有のアラートをトリガーします。 これにより、Microsoft 365 Defender narrates によって、より広範な攻撃ストーリーが実現されます。これにより、セキュリティ運用アナリストは、組織全体にわたる複雑な脅威を理解し、扱うことができます。
 
 
-**インシデント キュー**には、デバイス、ユーザー、メールボックス全体からフラグが付けられたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。
+**インシデント キュー** には、デバイス、ユーザー、メールボックス全体からフラグが付けられたインシデントのコレクションが表示されます。 これにより、インシデントを分類して優先順位を付け、情報に基づいたサイバーセキュリティ対応の決定を作成できます。
 
 
 ![インシデント キューの画像](../../media/incidents-queue.png) 
@@ -52,7 +52,7 @@ Microsoft Threat Protection は、相関分析を適用し、さまざまな製�
 
 わかりやすくするために、自動インシデントの名前付けは、影響を受けるエンドポイント数、影響を受けるユーザー、検出ソースまたはカテゴリなどのアラート属性に基づいて、インシデント名を生成します。 これにより、インシデントの範囲をすばやく理解することができます。
 
-例: 複数の*ソースによって報告された複数のエンドポイントのマルチステージインシデント*。
+例: 複数の *ソースによって報告された複数のエンドポイントのマルチステージインシデント* 。
 
 > [!NOTE]
 > 自動インシデントの名前の公開前に存在していたインシデントは、名前が変更されません。
@@ -75,7 +75,7 @@ Microsoft Threat Protection は、相関分析を適用し、さまざまな製�
 
 
 ### <a name="multiple-service-sources"></a>複数のサービス ソース 
-さまざまなソース (Microsoft Defender ATP、Microsoft Cloud App Security、Azure ATP、Office 365 ATP) からのアラートを含むインシデントのみを表示するようにフィルター処理する
+フィルターによって、さまざまなソースからのアラートを含むインシデントのみが表示されます (エンドポイントの Microsoft Defender、Microsoft Cloud App Security、Microsoft defender for Identity、microsoft Defender for Office 365)
 ### <a name="service-sources"></a>サービス ソース
 特定のソースを選択すると、選択したソースから 1 つ以上のアラートを含むインシデントに焦点を当てることができます。 
 

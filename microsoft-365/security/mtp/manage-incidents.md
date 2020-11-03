@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection でインシデントを管理する
+title: Microsoft 365 Defender でインシデントを管理する
 description: 状態の割り当てと更新を行う方法について説明します。
 keywords: インシデント、インシデント、警告、関連付けられた警告、割り当て、更新、状態、管理、分類、microsoft、365、m365
 search.product: eADQiWindows 10XVcnh
@@ -21,27 +21,27 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c599343233e7e29589bc4e3d1cda01da505b16f1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430563"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846654"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a>Microsoft Threat Protection でインシデントを管理する
+# <a name="manage-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデントを管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 
 
-インシデントの管理は、脅威を封じ込めて対処する上でとても重要です。 Microsoft Threat Protection では、デバイス、ユーザー、およびメールボックスにおけるインシデントを管理できます。 
+インシデントの管理は、脅威を封じ込めて対処する上でとても重要です。 Microsoft 365 Defender では、デバイス、ユーザー、およびメールボックスのインシデントの管理にアクセスできます。 
 
 
-インシデントを管理するには、**インシデント キュー**からインシデントを選択します。 
+インシデントを管理するには、 **インシデント キュー** からインシデントを選択します。 
 
 インシデントの名前を編集し、インシデントを解決し、インシデントの分類と判定を設定できます。 インシデントを自分に割り当てたり、インシデント タグやコメントを追加したりすることもできます。
 
@@ -50,7 +50,7 @@ ms.locfileid: "48430563"
 ## <a name="edit-incident-name"></a>インシデント名を編集する
 インシデントには、影響を受けたエンドポイント数、影響を受けたユーザー、検出ソースまたはカテゴリなどのアラート属性に基づいて、自動的に名前が割り当てられます。 これにより、インシデントの範囲をすばやく理解することができます。
 
-例: 複数の*ソースによって報告された複数のエンドポイントのマルチステージインシデント*。
+例: 複数の *ソースによって報告された複数のエンドポイントのマルチステージインシデント* 。
 
 インシデント名は、組織での命名規則に準拠するよう変更できます。
 
@@ -60,11 +60,11 @@ ms.locfileid: "48430563"
 
 
 ## <a name="assign-incidents"></a>インシデントを割り当てる
-インシデントがまだ割り当てられていない場合、[**Assign to me (自分に割り当て)**] を選択してインシデントを自分に割り当てることができます。 これにより、インシデントの所有権だけでなくそのインシデントと関連するすべての警告の所有権が自分に割り当てられます。
+インシデントがまだ割り当てられていない場合、[ **Assign to me (自分に割り当て)** ] を選択してインシデントを自分に割り当てることができます。 これにより、インシデントの所有権だけでなくそのインシデントと関連するすべての警告の所有権が自分に割り当てられます。
 
 ## <a name="set-status-and-classification"></a>状態と分類を設定する
 ### <a name="incident-status"></a>インシデントの状態
-インシデントは、調査の進捗に合わせて状態を変更することにより、**Active (アクティブ)** または **Resolved (解決済み)** に分類できます。 こうすることで、チームでのインシデントへの対応方法を整理して管理できます。
+インシデントは、調査の進捗に合わせて状態を変更することにより、 **Active (アクティブ)** または **Resolved (解決済み)** に分類できます。 こうすることで、チームでのインシデントへの対応方法を整理して管理できます。
 
 たとえば、組織の SOC アナリストは、当日の緊急の **Active (アクティブ)** インシデントを確認して、調査のためにそれらを自分に割り当てることができます。
 

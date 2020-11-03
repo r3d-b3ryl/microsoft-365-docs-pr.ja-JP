@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48fd80aca01ab3bf5665a53e5538cc450320cf6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8590f73b32e452c9d34d179db12c4db978df8e4d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197919"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846702"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>脅威分析に関する最新の攻撃キャンペーンおよび手法を理解する 
 
@@ -31,4 +31,4 @@ ms.locfileid: "48197919"
 
 **脅威分析** は、新しい手法、攻撃キャンペーン、マルウェアの感染が検出されたときに、近日中に公開される対話型レポートのセットです。 このレポートでは、脅威が環境に及ぼす影響を評価し、組織の復元性を向上させ、特定の脅威を防止するための推奨措置を提供します。
 
-[Microsoft DEFENDER ATP の脅威分析の詳細について説明](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)します。  
+[エンドポイントの Microsoft Defender の脅威分析について説明](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)します。  

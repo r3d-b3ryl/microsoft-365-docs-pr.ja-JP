@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社のオンプレミスの IT インフラストラクチャの基本構造と、企業のビジネスニーズが Microsoft 365 for enterprise によってどのように満たされるかについて説明します。
-ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754588"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847132"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT インフラストラクチャとビジネスニーズ
 
@@ -121,10 +121,10 @@ Contoso 社の IT 部門は、展開する前に、次のビジネスニーズ�
 |  | リモート ワーカーとモバイル ワーカーの生産性を向上させる | Microsoft 365 のワークロードとクラウドベースのデータ |
 |  | 独創性と革新性を向上させる | Windows Ink、職場の Cortana、PowerPoint |
 | セキュリティ |  |  |
-|  | ID およびアクセス管理 | Azure 多要素認証 (MFA) と Azure Active Directory の特権 Id 管理 (PIM) を使用した専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Advanced Threat Protection <BR> Office 365 Advanced Threat Protection <BR> Microsoft 365 脅威の調査と応答 <BR> |
+|  | ID およびアクセス管理 | Azure 多要素認証 (MFA) および Azure AD Privileged Identity Management (PIM) 付きの専用のグローバル管理者アカウント <BR> すべてのユーザー アカウントの MFA <BR> 条件付きアクセス <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 脅威保護 | Advanced Threat Analytics <BR> Windows Defender <BR> Office 365 の Defender <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 脅威の調査と応答 <BR> |
 |  | 情報保護 | Azure Information Protection <BR> データ損失防止 (DLP) <BR> Windows 情報保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | セキュリティ管理 | Azure Security Center  <BR> Windows Defender セキュリティ センター |
+|  | セキュリティ管理 | Azure Defender *  <BR> Windows Defender セキュリティ センター |
 | リモート/モバイル アクセスおよびビジネス パートナー |  |  |
 |  | リモート ワーカーとモバイル ワーカーのセキュリティを強化する | Microsoft Intune |
 |  | 従業員のリモート アクセス インフラストラクチャを縮小する | Microsoft 365 のワークロードとクラウドベースのデータ |

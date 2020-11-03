@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6c758c05a64cd7ce84a2b021fe32f9e5ce5c1090
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431065"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847346"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、および id 間の脅威を探します。
 
@@ -32,12 +32,12 @@ ms.locfileid: "48431065"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Microsoft の脅威保護での[高度な](advanced-hunting-overview.md)検索では、次のような脅威を事前に確認できます。
-- Microsoft Defender ATP で管理されているデバイス
+Microsoft 365 Defender での[高度な](advanced-hunting-overview.md)検索では、次のような脅威を事前にハントできます。
+- エンドポイントの Microsoft Defender で管理されているデバイス
 - Microsoft 365 によって処理された電子メール
-- Microsoft Cloud App Security と Azure ATP によって追跡される cloud app アクティビティ、認証イベント、およびドメインコントローラアクティビティ
+- Microsoft Cloud App Security と Microsoft Defender Identity によって追跡される cloud app アクティビティ、認証イベント、およびドメインコントローラアクティビティ
 
 この可視性レベルにより、電子メールや web で受信した高度な侵入を含む、ネットワークの一部を通過する脅威をすばやく確認できます。また、ローカルの権限を取得し、権限のあるドメインの資格情報を取得したり、デバイス間で laterally を移動したりすることができます。 
 

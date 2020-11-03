@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7f6a4f7592e6a8fde0b7ae6269f07ce7f76a5730
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 549eed005e06a7d52ce2f881820ae9fdeffdfea7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430165"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847682"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -32,9 +32,9 @@ ms.locfileid: "48430165"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-`AlertEvidence`[高度な](advanced-hunting-overview.md)検索スキーマの表には、さまざまなエンティティ (ファイル、IP アドレス、url、ユーザー、またはデバイス) に関する情報が含まれています。この情報には、microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security、および Azure ATP からのアラートに関連付けられています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+`AlertEvidence`[高度な](advanced-hunting-overview.md)検索スキーマの表には、各種エンティティ (ファイル、IP アドレス、url、ユーザー、またはデバイス) に関する情報が含まれています。この情報には、エンドポイントの Microsoft Defender、Microsoft defender for Office 365、Microsoft Cloud App Security、および id の microsoft defender に関連付けられています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 

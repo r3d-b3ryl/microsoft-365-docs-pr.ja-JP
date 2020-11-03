@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277484"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847120"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間のメールボックスの移行 (プレビュー)
 
@@ -110,7 +110,7 @@ ms.locfileid: "48277484"
     | -CertificateSubject                         | Azure Key Vault 証明書のサブジェクト名 (CN = contoso_fabrikam など)。 | 必須 |
     | -ExistingApplicationId                      | メール移行アプリケーションが既に作成されている場合に使用します。 | 省略可能 |
     | -AzureAppPermissions                        | メールボックス移行アプリケーションに必要なアクセス許可 (Exchange または MSGraph (メールボックスを移動するための Exchange) など)。また、このアプリケーションを使用して、リソーステナントへの同意リンクの招待を送信するための MSGraph を提供します。 | 必須 |
-    | -UseAppAndCertGeneratedForSendingInvitation | 移行用に作成されたアプリケーションを使用して、ソーステナントの管理者に同意リンクの招待状を送信するために使用するパラメーター。このパラメーターを指定しない場合、Azure に接続するためのターゲット管理者の資格情報を求めるメッセージが表示され、招待を対象の管理者として送信します。 | オプション |
+    | -UseAppAndCertGeneratedForSendingInvitation | 移行用に作成されたアプリケーションを使用して、ソーステナントの管理者に同意リンクの招待状を送信するために使用するパラメーター。このパラメーターを指定しない場合、Azure に接続するためのターゲット管理者の資格情報を求めるメッセージが表示され、招待を対象の管理者として送信します。 | 省略可能 |
     | -KeyVaultAuditStorageAccountName            | キーヴォールトの監査ログが格納されるストレージアカウント。 | 省略可能 |
     | -KeyVaultAuditStorageResourceGroup          | キーコンテナーの監査ログを格納するためのストレージアカウントを含むリソースグループ。 | 省略可能 |
     ||||
@@ -141,7 +141,7 @@ ms.locfileid: "48277484"
 
 7. URL がリモート PowerShell セッションに表示されます。 テナントの同意のために提供されたリンクをコピーして、Web ブラウザーに貼り付けます。
 
-8. グローバル管理者の資格情報を使用してサインインします。 次の画面が表示されたら、[ **同意**する] を選択します。
+8. グローバル管理者の資格情報を使用してサインインします。 次の画面が表示されたら、[ **同意** する] を選択します。
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="[アクセス許可の承諾] ダイアログボックス":::
     
@@ -289,7 +289,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
       - TargetAddress/ExternalEmailAddress – MailUser は、ソーステナントでホストされているユーザーの現在のメールボックスを参照します (たとえば、user@contoso.onmicrosoft.com)。 この値を割り当てるときは、PrimarySMTPAddress も割り当てられているか、またはこの値によって PrimarySMTPAddress が設定され、移動エラーが発生します。 
       - 移行元メールボックスからメールユーザーを移動するために従来の smtp プロキシアドレスを追加することはできません。 たとえば、fabrikam.onmicrosoft.com テナントオブジェクトの MEU で contoso.com を管理することはできません。 ドメインは、1つの Azure AD または Exchange Online テナントにのみ関連付けられます。
  
-    **ターゲット**mailuser オブジェクトの例:
+    **ターゲット** mailuser オブジェクトの例:
  
     | 属性             | 値                                                                                                                    |
     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -308,7 +308,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
     |                       | SMTP: Lara \. Newton@northwind.com                                                                                           |
     |||
 
-   **ソース**メールボックスオブジェクトの例:
+   **ソース** メールボックスオブジェクトの例:
 
    | 属性             | 値                                                                    |
    |-----------------------|--------------------------------------------------------------------------|
@@ -405,7 +405,7 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
  
 #### <a name="update-on-premises-mailusers"></a>オンプレミスのメールユーザーを更新する
 
-メールボックスが移行元から移行先に移動したら、ソースとターゲットの両方の社内メールユーザーが新しい targetAddress で更新されるようにする必要があります。 この例では、移動で使用される targetDeliveryDomain は **contoso \. onmicrosoft.com**です。 この targetAddress を使用してメールユーザーを更新します。
+メールボックスが移行元から移行先に移動したら、ソースとターゲットの両方の社内メールユーザーが新しい targetAddress で更新されるようにする必要があります。 この例では、移動で使用される targetDeliveryDomain は **contoso \. onmicrosoft.com** です。 この targetAddress を使用してメールユーザーを更新します。
  
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
  
@@ -504,7 +504,7 @@ Exchange メールボックスの移動先オブジェクトの電子メール�
 
 - 代理人として送信 (AD: publicDelegates) は、代理人としてユーザーのメールボックスにアクセスできる受信者の DN を格納します。 この値は Active Directory に格納され、現在、メールボックスの移行の一部としては移動しません。 送信元メールボックスに publicDelegates が設定されている場合は、コマンドを使用して、対象の環境で MEU からメールボックスへの変換が完了した後、宛先メールボックスに対して publicDelegates を再度スタンプする必要があり `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` ます。 
  
-- メールボックスに格納されているメールボックスのアクセス許可は、プリンシパルと代理人の両方が移動先のシステムに移動されたときに、メールボックスと共に移動します。 たとえば、ユーザー TestUser_7 には、テナント SourceCompany.onmicrosoft.com の TestUser_8 メールボックスに対する FullAccess が許可されています。 メールボックスの移動が TargetCompany.onmicrosoft.com に完了すると、ターゲットディレクトリにも同じアクセス許可が設定されます。 *Add-mailboxpermission*を使用したソースおよびターゲットテナントの TestUser_7 の例を次に示します。 Exchange コマンドレットの先頭には、source と target が付けられます。 
+- メールボックスに格納されているメールボックスのアクセス許可は、プリンシパルと代理人の両方が移動先のシステムに移動されたときに、メールボックスと共に移動します。 たとえば、ユーザー TestUser_7 には、テナント SourceCompany.onmicrosoft.com の TestUser_8 メールボックスに対する FullAccess が許可されています。 メールボックスの移動が TargetCompany.onmicrosoft.com に完了すると、ターゲットディレクトリにも同じアクセス許可が設定されます。 *Add-mailboxpermission* を使用したソースおよびターゲットテナントの TestUser_7 の例を次に示します。 Exchange コマンドレットの先頭には、source と target が付けられます。 
  
 移動前のメールボックスアクセス許可の出力例を次に示します。 
 
@@ -533,7 +533,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
 - **問題: 非所有の smtp proxyAddress ブロックを持つクラウドメールユーザーが背景を移動します。** ターゲットテナントの MailUser オブジェクトを作成する場合は、すべての SMTP プロキシアドレスがターゲットテナントの組織に属していることを確認する必要があります。 ローカルテナントに属していない宛先メールユーザーに SMTP proxyAddress が存在する場合、MailUser から Mailbox への変換は行われません。 これは、microsoft がメールボックスオブジェクトが権限を持つ (テナントによって要求された) ドメインからメールを送信できることを保証するためです。 
 - 
-   - Azure AD Connect を使用してオンプレミスのユーザーを同期する場合は、ExternalEmailAddress を使用してオンプレミスの MailUser オブジェクトをプロビジョニングします。これには、メールボックスが存在するソーステナント (laran@contoso \. onmicrosoft.com) を指定し、PrimarySMTPAddress をターゲットテナント (Newton@northwind Lara com) に存在するドメインとしてスタンプし \. ます。 これらの値は、テナントに同期し、適切なメールユーザーがプロビジョニングされ、移行の準備ができています。 オブジェクトの例を次に示します。
+   - Azure AD Connect を使用してオンプレミスのユーザーを同期する場合は、ExternalEmailAddress を使用してオンプレミスの MailUser オブジェクトをプロビジョニングします。このオブジェクトには、メールボックスが存在するソーステナント (laran@contoso \. onmicrosoft.com) を指定し、PrimarySMTPAddress をターゲットテナント (Lara.Newton@northwind com) に存在するドメインとしてスタンプし \. ます。 これらの値は、テナントに同期し、適切なメールユーザーがプロビジョニングされ、移行の準備ができています。 オブジェクトの例を次に示します。
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -644,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Business Center                         |
    | Microsoft MyAnalytics (フル機能)                      |
    | Office 365 Advanced eDiscovery                    |
-   | Office 365 Advanced Threat Protection (プラン 1)    |
-   | Office 365 Advanced Threat Protection (プラン 2)    |
+   | Microsoft Defender for Office 365 (プラン 1)    |
+   | Microsoft Defender for Office 365 (プラン 2)    |
    | Office 365 Privileged Access Management           |
    | Outlook Customer Manager                          |
    | Office 365 でのプレミアム暗号化                  |

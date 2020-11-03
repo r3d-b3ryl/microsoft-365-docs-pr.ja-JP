@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: このテストラボガイドを使用して、その他の Microsoft 365 セキュリティ設定を Microsoft 365 for enterprise テスト環境に対して有効にします。
-ms.openlocfilehash: 7c3300111f5999714b87a176087207a1651cdcaf
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d385688a6e59ee500442bcf1b815dfd165102242
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487402"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847002"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>Microsoft 365 for enterprise テスト環境の Microsoft 365 セキュリティの強化
 
@@ -55,22 +55,22 @@ ms.locfileid: "48487402"
     
   - シミュレートされたエンタープライズ Microsoft 365 テスト環境を使用している場合は、 [Azure portal](https://portal.azure.com) を使用して client1 仮想マシンに接続し、client1 からサインインします。
  
-2. 新しい **Microsoft 365 管理センター** のタブで、左側のナビゲーションウィンドウの [ **管理センター** ] の下にある [ **SharePoint**] をクリックします。
-3. [新しい **SharePoint 管理センター** ] タブで、[ **ポリシー > アクセス制御**] をクリックします。
-4. [ **モダン認証をサポートしていないアプリ**] をクリックし、[ **アクセスをブロック**する] を選択して、[ **保存**] をクリックします。
+2. 新しい **Microsoft 365 管理センター** のタブで、左側のナビゲーションウィンドウの [ **管理センター** ] の下にある [ **SharePoint** ] をクリックします。
+3. [新しい **SharePoint 管理センター** ] タブで、[ **ポリシー > アクセス制御** ] をクリックします。
+4. [ **モダン認証をサポートしていないアプリ** ] をクリックし、[ **アクセスをブロック** する] を選択して、[ **保存** ] をクリックします。
 
 
-### <a name="enable-advanced-threat-protection-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>SharePoint、OneDrive for Business、Microsoft Teams の Advanced Threat Protection を有効にする
+### <a name="enable-defender-for-office-365-for-sharepoint-onedrive-for-business-and-microsoft-teams"></a>SharePoint、OneDrive for Business、Microsoft Teams の Office 365 に対して Defender を有効にする
 
-Office 365 Advanced Threat Protection (ATP) for SharePoint、OneDrive、Microsoft Teams は、悪意のあるファイルを誤って共有することから組織を保護します。
+SharePoint、OneDrive、Microsoft Teams 用の Defender for Office 365 は、悪意のあるファイルを誤って共有することから組織を保護します。
 
 1. [セキュリティ & コンプライアンスセンター](https://protection.office.com)に移動し、全体管理者アカウントでサインインします。
 
-2. 左側のナビゲーションウィンドウで、[ **脅威の管理**] の下の [ **ポリシー**] をクリックし、[ATP の **安全な添付ファイル**] をクリックします。 
+2. 左側のナビゲーションウィンドウで、[ **脅威の管理** ] の下の [ **ポリシー** ] をクリックし、[ **安全な添付ファイル** ] をクリックします。 
 
-3. [ **SharePoint、OneDrive、Microsoft Teams のファイルを保護**する] で。 [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする**] を選択します。
+3. [ **SharePoint、OneDrive、Microsoft Teams のファイルを保護** する] で。 [ **SharePoint、OneDrive、Microsoft Teams に対して ATP を有効にする** ] を選択します。
 
-4. [**保存**] をクリックします。
+4. **[保存]** をクリックします。
 
 
 ### <a name="enable-anti-malware"></a>マルウェア対策を有効にする
@@ -82,10 +82,10 @@ Microsoft 365 には、受信および送信メッセージを悪意のあるソ
 一般的な添付ファイルの種類を持つファイルに対してマルウェア対策処理が実行されることを確認するには、次のようにします。
 
 1. ブラウザーの [戻る] ボタンをクリックすると、[ **ポリシー** ] ページに戻ります。
-2. [ **マルウェア対策**] をクリックします。
-3. **Default**という名前のポリシーをダブルクリックします。
-4. [ **マルウェア対策ポリシー** ] ウィンドウで、[ **設定**] をクリックします。
-4. [ **一般的な添付ファイルの種類のフィルター**] で、 **[オン] を選択し**、[ **保存**] をクリックします。
+2. [ **マルウェア対策** ] をクリックします。
+3. **Default** という名前のポリシーをダブルクリックします。
+4. [ **マルウェア対策ポリシー** ] ウィンドウで、[ **設定** ] をクリックします。
+4. [ **一般的な添付ファイルの種類のフィルター** ] で、 **[オン] を選択し** 、[ **保存** ] をクリックします。
 
 
 ## <a name="phase-3-examine-the-security-dashboard"></a>フェーズ 3: セキュリティダッシュボードを検証する
@@ -96,7 +96,7 @@ Microsoft 365 の脅威管理は、組織のデータへのモバイルデバイ
 
 1. 必要に応じて、 [セキュリティ & コンプライアンスセンター](https://protection.office.com) に移動し、全体管理者アカウントでサインインします。
 
-2. 左側のナビゲーションウィンドウで、[ **脅威の管理**] の下の [ **ダッシュボード**] をクリックします。
+2. 左側のナビゲーションウィンドウで、[ **脅威の管理** ] の下の [ **ダッシュボード** ] をクリックします。
 
 ダッシュボードのすべてのカードをよく見て、提供されている情報について理解してください。
 
@@ -107,7 +107,7 @@ Microsoft 365 の脅威管理は、組織のデータへのモバイルデバイ
 
 Microsoft Secure Score は、お客様のサブスクリプションで利用可能な機能に対する現在のレベルを示す数値として、セキュリティの姿勢を示します。 また、スコアを向上させるために実行できる改善アクションの一覧も提供します。
 
-1. ブラウザーで新しいタブを作成し、 [Microsoft 365 セキュリティセンター](https://security.microsoft.com/)に移動して、[ **セキュリティで保護されたスコア**] をクリックします。
+1. ブラウザーで新しいタブを作成し、 [Microsoft 365 セキュリティセンター](https://security.microsoft.com/)に移動して、[ **セキュリティで保護されたスコア** ] をクリックします。
 2. [ **概要**  ] タブで、現在のセキュリティスコアと、それが同じ数のライセンスを持つグローバルな平均およびサブスクリプションと比較されることに注意してください。
 3. [ **改善アクション** ] タブで、スコアを増やすために実行できるアクションの一覧を確認します。
 

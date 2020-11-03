@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社では、Microsoft 365 for enterprise のセキュリティ機能を使用する方法について説明します。
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754234"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847108"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズセキュリティのための Microsoft 365 の概要
 
@@ -89,9 +89,9 @@ Contoso 社は、次の手順に従って、Microsoft 365 for enterprise の展�
 
   Contoso 社では、Windows 10 Enterprise を実行する PC とデバイスのマルウェア対策およびマルウェア対策の管理に [Windows Defender ウイルス対策](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)を使用しています。
 
-- Office 365 Advanced Threat Protection を使用した安全な電子メールのフローとメールボックス監査ログ 
+- Microsoft Defender for Office 365 を使用した、セキュリティで保護されたメールフローとメールボックス監査ログ 
 
-  Contoso 社では、電子メール経由で送信される不明なマルウェア、ウイルス、悪意のある URL からの保護を目的として、Exchange Online Protection と [Office 365 Advanced Threat Protection (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) を使用しています。
+  Contoso 社では、Exchange Online Protection と [Defender For Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) を使用して、電子メールで送信された不明なマルウェア、ウイルス、および悪意のある url から保護しています。
 
   Contoso 社では、メールボックス監査ログを有効にして、ユーザーメールボックスにログインしたり、メッセージを送信したり、メールボックス所有者、委任されたユーザー、または管理者によって実行されたその他のアクティビティを識別したりしました。
 
@@ -127,9 +127,9 @@ Contoso 社は、次の手順に従って、Microsoft 365 for enterprise の展�
 
 ## <a name="security-management"></a>セキュリティ管理
 
-- Azure Security Center を使用した中心となる IT 用のセキュリティ ダッシュボード
+- Azure Defender による IT の中央セキュリティダッシュボード
 
-  Contoso 社では、 [Azure セキュリティセンター](https://azure.microsoft.com/services/security-center/) を使用して、セキュリティと脅威保護の統一されたビューを提供し、そのワークロード全体にわたるセキュリティポリシーを管理し、cyberattacks に応答します。
+  Contoso 社では、 [Azure Defender *](https://azure.microsoft.com/services/security-center/) を使用して、セキュリティと脅威保護の統一されたビューを提示し、そのワークロード全体にわたるセキュリティポリシーを管理し、cyberattacks に応答します。
 
 - Windows Defender セキュリティ センターを使用したユーザー向けの中心となるセキュリティ ダッシュボード
 

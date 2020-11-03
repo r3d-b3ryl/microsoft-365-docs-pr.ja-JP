@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 15a62da1222fc55d50dfd4c3b2f0e7ba4a0554eb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778621"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847718"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Microsoft マネージドデスクトップのセキュリティ操作
 
@@ -41,4 +41,4 @@ SOC は、次のサービスを提供します。
     - 回復
     - インシデント後のアクティビティ
 - Microsoft マネージドデスクトップのお客様は、Microsoft の脅威の専門家サービスに登録する資格があります。 SOC スポンサーは、このサービスを使用して、組織に影響を与える複雑な脅威 (アラートの照会、侵害される可能性のあるデバイス、疑わしいネットワーク接続の根本的な原因、および継続的な高度な脅威のキャンペーンに関する追加の脅威インテリジェンス) を理解します。 詳細については、「 [マイクロソフトの脅威の専門家](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)」を参照してください。
-- SOC の脅威と脆弱性管理プロセスは、Microsoft のいくつかのサービスを使用して、組織が脅威から保護するための推奨事項について通知します。 SOC は、Microsoft Defender Advanced Threat Protection セキュリティセンターと、Microsoft の内外にある関連する脆弱性データソースからデータを使用して、脆弱性と誤りを発見し、操作可能なレポートを提供します。
+- SOC の脅威と脆弱性管理プロセスは、Microsoft のいくつかのサービスを使用して、組織が脅威から保護するための推奨事項について通知します。 SOC は、エンドポイントセキュリティセンターと、Microsoft の内外にある関連する脆弱性データソースからのデータを使用して、脆弱性と誤りを発見し、操作可能なレポートを提供します。

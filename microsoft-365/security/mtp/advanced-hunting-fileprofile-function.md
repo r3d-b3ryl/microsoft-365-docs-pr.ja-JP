@@ -1,5 +1,5 @@
 ---
-title: Microsoft の脅威保護のための高度な検索の FileProfile () 関数
+title: Microsoft 365 Defender の高度な検索での FileProfile () 関数
 description: FileProfile () を使用して、高度な検索クエリ結果のファイルに関する情報を表示する方法について説明します。
 keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、FileProfile、file profile、function、エンリッチメント
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e99e545b5578b5eff8c19345dc672f735e4f7bd2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430587"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847454"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430587"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 この `FileProfile()` 関数は、クエリによって検出されたファイルに次のデータを追加する、 [高度な](advanced-hunting-overview.md) 検索のエンリッチメント関数です。
 
@@ -52,7 +52,7 @@ ms.locfileid: "48430587"
 | IsRootSignerMicrosoft | ブール値 | ルート証明書の署名者が Microsoft であるかどうかを示します |
 | IsExecutable | ブール値 | ファイルが移植可能な実行可能 (PE) ファイルであるかどうか |
 | Mail.threatname です | string | 検出されたマルウェアまたは他の脅威の検出名 |
-| 発行者 | string | ファイルを発行した組織の名前 |
+| Publisher | string | ファイルを発行した組織の名前 |
 | SoftwareName | string | ソフトウェア製品の名前 |
 
 ## <a name="syntax"></a>構文
@@ -63,8 +63,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>引数
 
-- **x**—使用するファイル ID 列: `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` 、または `InitiatingProcessSHA256` 関数が `SHA1` 未指定の場合に使用します。
-- **y**—強化するレコード数を1-1000 に制限します。関数は、未指定の場合は100を使用します。
+- **x** —使用するファイル ID 列: `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` 、または `InitiatingProcessSHA256` 関数が `SHA1` 未指定の場合に使用します。
+- **y** —強化するレコード数を1-1000 に制限します。関数は、未指定の場合は100を使用します。
 
 ## <a name="examples"></a>例
 

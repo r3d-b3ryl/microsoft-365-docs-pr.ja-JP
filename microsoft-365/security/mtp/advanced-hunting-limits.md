@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection の高度な検索クォータと使用法のパラメーター
+title: Microsoft 365 Defender の高度な検索クォータと使用法のパラメーター
 description: 高度な検索サービスの応答性を維持するさまざまなクォータおよび使用法のパラメーター (サービス制限) について理解します。
 keywords: 高度な検索、脅威の検索、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ、kusto、CPU 制限、クエリ制限、リソース、最大結果、クォータ、パラメーター、割り当て
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 192fb47aafdd20bd5e1f0774a64ec3215f1203d1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bab63d9e5939f87f6a1edbf62d256b82552e4fe9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636907"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847370"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高度な検索クォータと使用法のパラメーター
 
@@ -32,7 +32,7 @@ ms.locfileid: "48636907"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 サービスのパフォーマンスと応答性を向上させるために、高度な検索はさまざまなクォータと使用状況パラメーター ("サービス制限" とも呼ばれます) を設定します。 これらのクォータとパラメーターは、手動で実行されるクエリ、および [カスタムの検出ルール](custom-detection-rules.md)に適用されます。 複数のクエリを定期的に実行する場合は、使用量を追跡し、 [最適化のベストプラクティスを適用](advanced-hunting-best-practices.md) して、中断を最小限に抑える必要があります。
 

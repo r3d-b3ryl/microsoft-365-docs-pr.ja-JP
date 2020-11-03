@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンスセンターに新しい新しいソリューションを追加したり、フィードバックに基づいて既存の機能を更新したり、最新のドキュメントを展開したりすることができるかどうかにかかわらず、Microsoft 365 は、変更されたコンプライアンスの状況を常に把握するのに役立つ情報を用意しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446560"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847803"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -34,7 +34,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 
 
 > [!TIP]
-> 他の管理センターでは何が起こっているのでしょうか。 次の記事をご覧ください。<br>[Microsoft 365 管理センターの新機能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft Threat Protection の新機能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> 他の管理センターでは何が起こっているのでしょうか。 次の記事をご覧ください。<br>[Microsoft 365 管理センターの新機能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender の新機能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 また、 [microsoft 365 ロードマップ](https://www.microsoft.com/en-us/microsoft-365/roadmap) を参照して、起動された、展開中の、開発中である、キャンセルされた、または既にリリースされた microsoft 365 の機能について説明します。
 
 ## <a name="august-2020"></a>2020 年 8 月
@@ -53,10 +53,10 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
     - 優先度が高いユーザーによるセキュリティポリシー違反
     - 不満のあるユーザーによるセキュリティポリシー違反
 
-- [Microsoft DEFENDER atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)との統合により、新しいセキュリティ違反ポリシーテンプレートから作成されたポリシーによって検出されたアクティビティの MICROSOFT defender atp 通知のインポートとフィルター処理を行うことができます。 また、Microsoft Defender ATP の警告トリアージの状態に基づいて、セキュリティの警告を内部のリスク管理にインポートすることを選択できる、関連する [内部リスク設定](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) もあります。
+- [エンドポイントの Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)との統合により、新しいセキュリティ違反ポリシーテンプレートから作成されたポリシーによって検出されたアクティビティのエンドポイント通知に対して microsoft defender のインポートとフィルター処理を行うことができます。 また、エンドポイント通知のトリアージの状態に関する Microsoft Defender に基づいて、セキュリティの警告を内部のリスク管理にインポートすることを選択できる、関連する [内部リスク設定](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) もあります。
 
     > [!NOTE]
-    > Microsoft Defender ATP 統合 (新しいセキュリティポリシー違反テンプレートを含む) を利用するには、組織内に Microsoft Defender ATP を構成する必要があります。 [Microsoft DEFENDER atp の拡張機能を構成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)することによって、MICROSOFT defender atp を insider のリスク管理統合にも有効にする必要があります。
+    > エンドポイント統合 (新しいセキュリティポリシー違反テンプレートを含む) に Microsoft Defender を利用するには、組織で構成されたエンドポイントの Microsoft Defender を所有している必要があります。 [エンドポイントの Microsoft defender の高度な機能を構成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)することにより、microsoft defender で insider のリスク管理統合を有効にする必要もあります。
  
 - [ポリシーの作成](insider-risk-management-policies.md#create-a-new-policy)時にインジケーターのしきい値をカスタマイズします。
 - [重要度ユーザーグループ](insider-risk-management-settings.md#priority-user-groups-preview)を設定して、役職、機密情報へのアクセスのレベル、リスク履歴などの要因に基づいて、アクティビティの詳細な調査が必要になるように組織内のユーザーを定義します。
@@ -71,7 +71,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 - 成人、racy、および gory の画像を検出するための新しい [分類子](communication-compliance-feature-reference.md#classifiers) 。
 - [通知内のメッセージを確認](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details)するときに表示される新しい ' パターンが検出された ' 通知により、ユーザーが同じ動作を繰り返し発生させるインスタンスについて知ることができます。
 
-### <a name="sensitivity-labels"></a>秘密度ラベル
+### <a name="sensitivity-labels"></a>機密ラベル
 
 - 米国政府テナント (GCC、GCC-H、DoD) 向けの場合、秘密度ラベルが現在サポートされているのは、Azure Information Protection の統合ラベル付けクライアントおよびスキャナーのみです。 詳細については、[Azure Information Protection Premium の米国政府機関向けのサービスの説明](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)を参照してください。
 - [セキュリティ & コンプライアンスセンターの PowerShell を使用](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies)して、ラベル付けされた管理センターで表示されるすべての設定を作成して構成できるようになりました。 これは、ラベル管理センターでは使用できない設定に対して PowerShell を使用することに加えて、機密ラベルと機密ラベルポリシーの作成と保守を完全にスクリプトで実行できることを意味します。
@@ -170,7 +170,7 @@ Insider リスクポリシーによって検出されたユーザーアクティ
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>機密ラベル: 新しいプライバシーオプション
 
-ラベルの [サイトとグループの設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) を構成するときに、プライバシーオプションを [なし] に設定し、 **ユーザーがサイトにアクセスできるユーザーを選択**できるようにすることができます。 これは、機密ラベルを使用してコンテナー内のコンテンツを保護するが、ユーザーが自分でプライバシー設定を構成できるようにする場合に便利です。
+ラベルの [サイトとグループの設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) を構成するときに、プライバシーオプションを [なし] に設定し、 **ユーザーがサイトにアクセスできるユーザーを選択** できるようにすることができます。 これは、機密ラベルを使用してコンテナー内のコンテンツを保護するが、ユーザーが自分でプライバシー設定を構成できるようにする場合に便利です。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -312,7 +312,7 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 
 #### <a name="new-compliance-solutions"></a>新しいコンプライアンスソリューション
 
-*ソリューション*について疑問があるかもしれません。 クラウドがビジネスを遂行する方法によって革命になるにつれて、データの盗用や不正行為の新たな方法や、必要とされる新しい規制についても、このドアを開くことができます。 コンプライアンスソリューションは、これらの進化したコンプライアンス要件を管理するのに役立つ統合された機能の集合です。 ソリューションの機能には、ポリシー、警告、レポートなどの組み合わせが含まれることがあります。
+*ソリューション* について疑問があるかもしれません。 クラウドがビジネスを遂行する方法によって革命になるにつれて、データの盗用や不正行為の新たな方法や、必要とされる新しい規制についても、このドアを開くことができます。 コンプライアンスソリューションは、これらの進化したコンプライアンス要件を管理するのに役立つ統合された機能の集合です。 ソリューションの機能には、ポリシー、警告、レポートなどの組み合わせが含まれることがあります。
 
 ここでは、次のような新しいソリューションについて概要を説明します。 近日中に他のユーザーが閲覧できるようにしておきます。
 
@@ -352,7 +352,7 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 |ファイル計画|レコード管理 > ファイル計画 <br/> https://protection.office.com/fileplan |レコード管理 > ファイル計画] タブ <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[ファイルプランを使用して保持ラベルを管理する](file-plan-manager.md)|
 |PST ファイルのインポート|情報ガバナンス > PST ファイルのインポート <br/> https://protection.office.com/importV2 |情報ガバナンス > インポート] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[組織の PST ファイルのインポートの概要](importing-pst-files-to-office-365.md)|
 |ラベルアクティビティエクスプローラー|情報ガバナンス > ラベルアクティビティエクスプローラー <br/> https://protection.office.com/labelexplorer |データ分類 > アクティビティエクスプローラータブ <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[ラベル付きコンテンツのアクティビティを表示する (プレビュー)](data-classification-activity-explorer.md)|
-|保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | 「[保持ラベルの概要](retention.md)」を参照してください。|
+|保持ラベルとラベルポリシー |[ラベル] タブと [ラベルポリシー] タブ > の > 保持ラベルの分類 <br/> https://protection.office.com/retentionlabels |情報ガバナンス > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保持ラベルの概要](retention.md)|
 |アイテム保持ポリシー|情報ガバナンス > の保持 <br/> https://protection.office.com/retention |情報ガバナンス > [保持] タブ <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[アイテム保持ポリシーと保持ラベルの詳細](retention.md)|
 |機密情報の種類|機密情報の種類 > 分類 <br/> https://protection.office.com/sensitivetypes |データ分類 > 機密情報の種類] タブ <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)|
 |機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[秘密度ラベルの詳細](sensitivity-labels.md) |
@@ -366,7 +366,7 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 ### <a name="new-encryption-options-for-sensitivity-labels"></a>機密ラベルの新しい暗号化オプション 
 
 機密ラベルの暗号化を構成する場合、次の2つのオプションがあるので、ユーザーはラベルを電子メールやドキュメントに手動で適用するときにアクセス許可を割り当てることができます。<br>
-- **Outlook 電子メール**にラベルを適用する場合、ユーザーは [転送不可] オプションに相当する制限を適用できます。 受信者は、メッセージを読み取ることはできますが、コンテンツを転送、印刷、またはコピーすることはできません。
-- **Word、PowerPoint、Excel**の各ファイルにラベルを適用すると、ユーザーは特定のユーザーやグループにアクセス許可を割り当てるように求められます。
+- **Outlook 電子メール** にラベルを適用する場合、ユーザーは [転送不可] オプションに相当する制限を適用できます。 受信者は、メッセージを読み取ることはできますが、コンテンツを転送、印刷、またはコピーすることはできません。
+- **Word、PowerPoint、Excel** の各ファイルにラベルを適用すると、ユーザーは特定のユーザーやグループにアクセス許可を割り当てるように求められます。
 
 詳細については、「 [機密ラベルを使用してコンテンツへのアクセスを制限](encryption-sensitivity-labels.md#let-users-assign-permissions) する」を参照し、暗号化を適用してください。

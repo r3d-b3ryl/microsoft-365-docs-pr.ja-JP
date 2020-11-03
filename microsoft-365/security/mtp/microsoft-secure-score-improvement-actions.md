@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295130"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846642"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
 
@@ -38,7 +38,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 * Identity (Azure Active Directory アカウント & の役割)
 * データ (Microsoft Information Protection)
-* デバイス (Microsoft Defender ATP、 [デバイスの Microsoft セキュリティスコア](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)と呼ばれる)
+* デバイス (エンドポイントの Microsoft Defender ( [microsoft のデバイスのセキュリティで保護されたスコア](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)と呼ばれる))
 * アプリ (Office 365 や Microsoft Cloud App Security を含む、メール アプリとクラウド アプリ)
 * インフラストラクチャ (現在のところ、改善のための処置はありません)
 
@@ -51,15 +51,15 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 ## <a name="check-your-current-score"></a>現在のスコアを確認する
 
-現在のスコアを確認するには、Microsoft の [セキュリティスコアの概要] ページに移動して、 **セキュリティで保護さ**れたスコアを示すタイルを探します。 スコアは、パーセンテージとして表示され、総ポイント数で得られたポイント数として表示されます。
+現在のスコアを確認するには、Microsoft の [セキュリティスコアの概要] ページに移動して、 **セキュリティで保護さ** れたスコアを示すタイルを探します。 スコアは、パーセンテージとして表示され、総ポイント数で得られたポイント数として表示されます。
 
 また、スコアの横にある [ **追加** ] ボタンを選択すると、スコアのさまざまなビューを選択できます。 これらの異なるスコア表示は、スコアタイルおよび点の内訳グラフのグラフに表示されます。
 
 次のスコアは、全体的なスコアの表示に追加して、全体的なスコアをより正確に把握することができます。
 
-- **予定スコア**: 計画されたアクションが完了したときに予想されるスコアを表示する
-- **現在のライセンススコア**: 現在の Microsoft ライセンスで達成できるスコアを表示する
-- **実現**可能なスコア: Microsoft のライセンスと現在のリスクの受け入れによって得られるスコアを表示します。
+- **予定スコア** : 計画されたアクションが完了したときに予想されるスコアを表示する
+- **現在のライセンススコア** : 現在の Microsoft ライセンスで達成できるスコアを表示する
+- **実現** 可能なスコア: Microsoft のライセンスと現在のリスクの受け入れによって得られるスコアを表示します。
 
 このビューは、次のように表示されます。すべてのスコアの表示が含まれている場合は、以下のようになります。
 
@@ -107,7 +107,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 「 **ひとめで** 」というセクションでは、カテゴリ、保護できる攻撃、および製品について説明します。
 
-**ユーザーへの影響**は、改善アクションが実行された場合にユーザーが**受ける**影響を示しています。
+**ユーザーへの影響** は、改善アクションが実行された場合にユーザーが **受ける** 影響を示しています。
 
 ### <a name="implement-the-improvement-action"></a>向上アクションを実装する
 

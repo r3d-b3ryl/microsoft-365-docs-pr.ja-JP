@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 82a7d1c9eec13d87fa45b12b072e9712ccd267c2
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816862"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847813"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 での Insider リスク管理
 
@@ -146,7 +146,7 @@ Insider リスク管理は、次の一般的なシナリオにおいて、組織
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>意図的または意図しないセキュリティポリシー違反 (プレビュー)
 
-通常、ユーザーはモダンワークプレースでデバイスを管理するときに、非常に高いレベルの制御があります。 これには、業務の遂行に必要なアプリケーションをインストールまたはアンインストールするためのアクセス許可や、デバイスのセキュリティ機能を一時的に無効にする機能が含まれる場合があります。 このアクティビティが不注意、偶発的、または悪意のあるものであるかどうかにかかわらず、この操作によって組織のリスクが生じ、最小化を識別して実行することが重要になります。 これらのリスクのあるセキュリティアクティビティを識別するために、次の insider リスク管理セキュリティポリシー違反テンプレートは、セキュリティリスク指標をスコアし、Microsoft Defender Advanced Threat Protection (ATP) の警告を使用してセキュリティ関連のアクティビティを把握します。
+通常、ユーザーはモダンワークプレースでデバイスを管理するときに、非常に高いレベルの制御があります。 これには、業務の遂行に必要なアプリケーションをインストールまたはアンインストールするためのアクセス許可や、デバイスのセキュリティ機能を一時的に無効にする機能が含まれる場合があります。 このアクティビティが不注意、偶発的、または悪意のあるものであるかどうかにかかわらず、この操作によって組織のリスクが生じ、最小化を識別して実行することが重要になります。 これらのリスクのあるセキュリティアクティビティを識別するために、次の insider リスク管理セキュリティポリシー違反テンプレートは、セキュリティリスク指標をスコアし、Microsoft Defender をエンドポイント通知に使用して、セキュリティ関連のアクティビティに関する洞察を提供します。
 
 - [一般的なセキュリティポリシー違反 (プレビュー)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [ユーザーが出発するセキュリティポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

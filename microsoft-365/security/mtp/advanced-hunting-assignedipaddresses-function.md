@@ -1,5 +1,5 @@
 ---
-title: AssignedIPAddresses () 関数の詳細については、「Microsoft の脅威保護」をお探しください。
+title: AssignedIPAddresses () 関数の詳細については、Microsoft 365 Defender をお探しください。
 description: AssignedIPAddresses () 関数を使用して、デバイスに割り当てられている最新の IP アドレスを取得する方法について説明します。
 keywords: 高度な検索、脅威の探し、サイバー脅威の検索、microsoft threat protection、microsoft 365、mtp、m365、search、query、テレメトリ、スキーマ参照、kusto、FileProfile、file profile、function、エンリッチメント
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 462a4884e2b17f9ae75ea3bdc1531b180dcc5934
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: cb9dffca148c95f284a6a7e920f3a08a839b748d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430129"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847646"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430129"
 
 
 **適用対象:**
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
 `AssignedIPAddresses()`[高度な](advanced-hunting-overview.md)検索クエリの関数を使用して、デバイスに割り当てられている最新の IP アドレスをすばやく取得します。 Timestamp 引数を指定すると、この関数は指定された時刻に最新の IP アドレスを取得します。 
 
@@ -55,7 +55,7 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>引数
 
 - **x** `DeviceId` または `DeviceName` デバイスを識別する値
-- **y**- `Timestamp` (datetime) 値は、指定した時刻から最新の IP アドレスを取得するように関数に指示します。 指定しない場合、関数は最新の IP アドレスを返します。
+- **y** - `Timestamp` (datetime) 値は、指定した時刻から最新の IP アドレスを取得するように関数に指示します。 指定しない場合、関数は最新の IP アドレスを返します。
 
 ## <a name="examples"></a>例
 

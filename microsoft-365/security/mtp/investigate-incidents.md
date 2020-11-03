@@ -1,5 +1,5 @@
 ---
-title: Microsoft Threat Protection のインシデントを調査する
+title: Microsoft 365 Defender でインシデントを調査する
 description: デバイス、ユーザー、メールボックスに関連するインシデントを分析します。
 keywords: インシデント、コンピューター、デバイス、ユーザー、ID、メール、電子メール、メールボックス、調査、グラフ、証拠
 search.product: eADQiWindows 10XVcnh
@@ -21,33 +21,33 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7a4e901c016d55115eb79001ff2fc42d2340f8f2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: a6cdf55b33c91a33675bb4909c0cb08e8561d212
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430599"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846750"
 ---
-# <a name="investigate-incidents-in-microsoft-threat-protection"></a>Microsoft Threat Protection のインシデントを調査する
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデントを調査する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用対象:**
 
-- Microsoft Threat Protection
+- Microsoft 365 Defender
 
-Microsoft Threat Protection は、すべてのデバイス、ユーザー、およびメールボックスを対象に、関連するすべてのアラート、資産、調査、エビデンスを集計して、あらゆる攻撃を総合的に把握できるようにします。
+Microsoft 365 Defender は、デバイス、ユーザー、およびメールボックス全体に関連するすべてのアラート、資産、調査、および証拠を集約して、広範な攻撃を包括的に把握できるようにします。
 
 効果的な修復計画を考案できるようにするために、ネットワークに影響するアラートを調査し、その意味を理解し、インシデントに関連する証拠を照合します。
 
 ## <a name="investigate-an-incident"></a>インシデントの調査
 
-1. インシデント キューからインシデントを選択します。 <BR> これにより、サイドパネルが開き、状態、重要度、カテゴリ、影響を受けるエンティティなどの重要な情報のプレビューが表示されます。
+1. インシデント キューからインシデントを選択します。 <BR> サイドパネルが開き、状態、重大度、カテゴリ、影響を受けるエンティティなどの重要な情報のプレビューが表示されます。
 
     ![インシデント サイドパネルの画像](../../media/incident-side-panel.png)
 
-2. [**インシデント ページを開く**] を選択します。 <BR> これにより、インシデント ページが開き、インシデントの詳細、コメントとアクション、タブ (概要、アラート、デバイス、ユーザー、調査、証拠) が表示されます。
+2. [ **インシデント ページを開く** ] を選択します。 <BR> これにより、インシデントの詳細、コメント、およびアクション、タブ (概要、警告、デバイス、ユーザー、調査、証拠) の詳細が確認できます。
 
 3. インシデントに関連するアラート、デバイス、ユーザー、その他のエンティティを確認します。
 
@@ -57,7 +57,7 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 
 ![インシデントの概要ページの画像](../../media/incidents-overview.png)
 
-攻撃のカテゴリでは、キルチェーンに対する攻撃の状況を視覚的に、そして数値で確認できます。 他の Microsoft セキュリティ製品と同様に、Microsoft Threat Protection は、[MITRE ATT&CK&trade;](https://attack.mitre.org/) フレームワークに準拠します。
+攻撃カテゴリは、kill チェインに対して高度な攻撃が行われたことを視覚的および数値で確認できるようにします。 Microsoft の他のセキュリティ製品と同様に、Microsoft 365 Defender は[MITRE ATT&の &trade; の皿](https://attack.mitre.org/)フレームワークに沿っています。
 
 範囲セクションでは、このインシデントの一部である最も影響を受ける資産の一覧が表示されます。 この資産に関する特定の情報 (リスク レベル、調査の優先順位、資産のタグ付けなど) がある場合は、その情報もこのセクションに表示されます。
 
@@ -69,11 +69,11 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 
 ## <a name="alerts"></a>アラート
 
-インシデントに関連するすべてのアラートを表示することができます。重要度、アラートに関係したエンティティ、アラートのソース (Azure ATP、Microsoft Defender ATP、Office 365 ATP)、およびそれらのアラートが相互にリンクされた理由などの情報も確認できます。
+インシデントに関連付けられているすべての警告と、重要度、警告に関係していたエンティティ、アラートのソース (Id の microsoft defender、エンドポイントの microsoft defender、microsoft defender for Office 365)、およびそれらが相互にリンクされた理由に関する情報を表示することができます。
 
 ![インシデント アラート ページの画像](../../media/incident-alerts.png)
 
-既定では、アラートは発生順に並べ替えられています。これにより、発生した攻撃を時系列で確認できます。 各アラートをクリックすると、関連するアラート ページが表示され、そのアラートについて詳細な調査を行うことができます。
+既定では、アラートは発生順に並べ替えられています。これにより、発生した攻撃を時系列で確認できます。 各アラートをクリックすると、該当するアラートページが表示され、その通知の詳細な調査を行うことができます。
 
 ## <a name="devices"></a>デバイス
 
@@ -95,21 +95,21 @@ Microsoft Threat Protection は、すべてのデバイス、ユーザー、お�
 
 ## <a name="mailboxes"></a>メールボックス
 
-インシデントに関連すると識別されたメールボックスを調査します。 メール関連アラートを選択し Office 365 Advanced Threat Protection を開くと、修復アクションを実行でき、さらに調査を行うことができます。
+インシデントに関連すると識別されたメールボックスを調査します。 さらに調査作業を行うために、メール関連の警告を選択すると、Microsoft Defender for Office 365 が開き、修復処理を実行できます。
 
 ![インシデントの [メールボックス] タブの画像](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>調査
 
-[ **調査** ] を選択すると、このインシデントで通知によってトリガーされたすべての自動調査が表示されます。 調査は、Microsoft Defender ATP および Office 365 Advanced Threat Protection での自動調査の実行をどのように構成したかによって、修復アクションを実行するか、またはアナリストからのアクションの承認を待ちます。
+[ **調査** ] を選択すると、このインシデントで通知によってトリガーされたすべての自動調査が表示されます。 この調査では、エンドポイントのための自動調査の構成方法や、Office 365 の Defender 用の Defender での自動調査を実行するように、修復アクションが実行されるか、アナリストの承認が行われます。
 
 ![インシデントの [調査] タブの画像](../../media/incident-investigations.png)
 
-調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。 調査の一部として承認待ちのアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを行います。
+調査を選択して [調査の詳細] ページに移動すると、調査と修復状況に関する詳細情報が表示されます。 調査の一環として承認待ちのアクションがある場合は、[保留中のアクション] タブに表示されます。インシデント修復の一環としてアクションを実行します。
 
 ## <a name="evidence"></a>証拠
 
-Microsoft Threat Protection は、アラート内のすべてのインシデントのサポートされているイベントおよび不審なエンティティを自動的に調査し、自動応答や重要なファイル、プロセス、サービス、メールなどに関する情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
+Microsoft 365 Defender は、通知内のすべてのインシデントのサポートされているイベントと疑わしいエンティティを自動的に調査して、autoresponse と重要なファイル、プロセス、サービス、メールなどに関する情報を提供します。 これにより、インシデントの潜在的な脅威をすばやく検出してブロックできます。
 
 ![インシデントの [証拠] タブの画像](../../media/incident-evidence.png)
 
