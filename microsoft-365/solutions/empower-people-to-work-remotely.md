@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-remotework
 - m365solution-overview
 - M365initiative-coredeploy
-ms.custom: ''
-description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: 23ec0ef33294bb532229c8f736ab5b6a5d000d4e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.custom: seo-marvel-jun2020
+description: リモート ワーカーの生産性を最大化して、サーバー、データ、およびクラウドへの安全なアクセスを維持するために、Microsoft 365 のすべての機能が有効になっていることを確認します。
+ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845242"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906741"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
