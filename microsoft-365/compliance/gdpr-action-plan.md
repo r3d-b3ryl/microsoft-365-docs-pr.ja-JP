@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c3786a6a9bf93b3aaf2970d97fd57cc225e2ee8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 65721f6ae43819a36adf664ba0268b791059a965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398682"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843183"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR のアクション プラン - 最初の 30 日間、90 日間、およびそれ以降の優先事項
 
@@ -55,9 +55,9 @@ GDPR では、欧州連合 (EU) 内の人々に商品やサービスを提供す
 |**領域**|**タスク**|
 |:-----|:-----|
 | **Microsoft 365 データ ガバナンスとコンプライアンスの機能を使用してコンプライアンス要件の実装を開始します。** |• [Microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)内の [Microsoft コンプライアンス マネージャー](compliance-manager.md)を使用して、GDPR コンプライアンスを管理します。<br>* Exchange メール、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループの分類スキーマと関連する Office 365 ラベルを使用して、ユーザーが GDPR で定義されているとおりに個人データを識別および分類できるようにします。 「[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)」を参照してください。|
-| **Microsoft 365 のセキュリティ機能を使用して、データ侵害を防止し、個人データの保護を実装します。** |* すべてのユーザー アカウントに対して[多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)を有効にし、すべてのアプリに対して[先進認証](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)を有効にすることで、Microsoft Cloud の管理者とエンド ユーザーの認証を改善します。 推奨されるポリシー構成については、「[ID とデバイスのアクセス構成](../security/office-365-security/microsoft-365-policies-configurations.md)」を参照してください。<br>* 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) を展開します。<br>* すべての Exchange メールボックスに対して [監査ログ記録](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)と[メールボックス監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)を有効にして、潜在的な悪意のあるアクティビティを監視し、データ侵害のフォレンジック分析を可能にします。<br>* 金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)するための [Office 365 Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) ポリシーを構成、テスト、展開します。<br>* [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (ATP) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
+| **Microsoft 365 のセキュリティ機能を使用して、データ侵害を防止し、個人データの保護を実装します。** |* すべてのユーザー アカウントに対して[多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)を有効にし、すべてのアプリに対して[先進認証](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)を有効にすることで、Microsoft Cloud の管理者とエンド ユーザーの認証を改善します。 推奨されるポリシー構成については、「[ID とデバイスのアクセス構成](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)」を参照してください。<br>* 悪意のあるコードからの保護とデータ侵害の防止と対応のために、すべてのデスクトップに [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) を展開します。<br>* すべての Exchange メールボックスに対して [監査ログ記録](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)と[メールボックス監査](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)を有効にして、潜在的な悪意のあるアクティビティを監視し、データ侵害のフォレンジック分析を可能にします。<br>* 金融、医療など、個人を特定できる情報を含むドキュメントやメール内の 80 種類を超える一般的な機密データを特定、監視、[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)するための [Office 365 Data Loss Prevention (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) ポリシーを構成、テスト、展開します。<br>* [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) を実装し、フィッシング メールや悪意のあるリンクや添付ファイルを含む Office ドキュメントなど、最も一般的な攻撃ベクトルを防止します。|
 
-## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 日以上 — 継続的なセキュリティ、データ管理、および報告
+## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 日以上 – 継続的なセキュリティ、データ管理、および報告
 
 保存中および送信中の個人データをセキュリティ保護し、データ侵害の検出および対応を行い、セキュリティ対策の定期的なテストを容易にします。 これらの構成は、これまでの作業に基づいて構築された重要なセキュリティ対策です。  
 
