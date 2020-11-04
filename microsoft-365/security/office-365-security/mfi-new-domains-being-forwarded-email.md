@@ -2,7 +2,7 @@
 title: 新しいドメインにメールが転送されていますのインサイト
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,34 +11,34 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、新しい Exchange 管理センターで転送された新しいドメインを使用して、組織内のユーザーが転送されていない外部ドメインにメッセージを転送していることを調査する方法を学習できます。
-ms.openlocfilehash: 62e254e324322aec55d692cfe3128e8e4dd60e4b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7dfdd63a9358b1057313962bc21424a325d7bc52
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200737"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877743"
 ---
-# <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a><span data-ttu-id="a5f99-103">転送される新しいドメインセキュリティ & コンプライアンスセンターでのメールに関する洞察</span><span class="sxs-lookup"><span data-stu-id="a5f99-103">New domains being forwarded email insight in the Security & Compliance Center</span></span>
+# <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a><span data-ttu-id="111d1-103">転送される新しいドメインセキュリティ & コンプライアンスセンターでのメールに関する洞察</span><span class="sxs-lookup"><span data-stu-id="111d1-103">New domains being forwarded email insight in the Security & Compliance Center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-<span data-ttu-id="a5f99-104">電子メールメッセージを特定のドメインの外部の受信者に転送するのに有効なビジネス上の理由があるかもしれませんが、組織内のユーザーが外部ドメインへのメッセージ転送を突然開始したときに、組織内のユーザーがそのドメインにメッセージを転送していない場合 (新しいドメイン) は疑わしいことがあります。</span><span class="sxs-lookup"><span data-stu-id="a5f99-104">Although you might have valid business reasons to forward email messages to external recipients in specific domains, it's suspicious when users in your organization suddenly start forwarding messages to external domains, and no one in the organization has ever forwarded messages to those domains before (new domains).</span></span> <span data-ttu-id="a5f99-105">この条件は、ユーザーアカウントが侵害されていることを示している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="a5f99-105">This condition could indicate the user accounts are compromised.</span></span> <span data-ttu-id="a5f99-106">アカウントが侵害されている疑いがある場合は、「 [危害を受けた電子メールアカウントへの対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5f99-106">If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).</span></span>
+<span data-ttu-id="111d1-104">電子メールメッセージを特定のドメインの外部の受信者に転送するのに有効なビジネス上の理由があるかもしれませんが、組織内のユーザーが外部ドメインへのメッセージ転送を突然開始したときに、組織内のユーザーがそのドメインにメッセージを転送していない場合 (新しいドメイン) は疑わしいことがあります。</span><span class="sxs-lookup"><span data-stu-id="111d1-104">Although you might have valid business reasons to forward email messages to external recipients in specific domains, it's suspicious when users in your organization suddenly start forwarding messages to external domains, and no one in the organization has ever forwarded messages to those domains before (new domains).</span></span> <span data-ttu-id="111d1-105">この条件は、ユーザーアカウントが侵害されていることを示している可能性があります。</span><span class="sxs-lookup"><span data-stu-id="111d1-105">This condition could indicate the user accounts are compromised.</span></span> <span data-ttu-id="111d1-106">アカウントが侵害されている疑いがある場合は、「 [危害を受けた電子メールアカウントへの対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="111d1-106">If you suspect the accounts have been compromised, see [Responding to a compromised email account](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account).</span></span>
 
-<span data-ttu-id="a5f99-107">**転送される新しいドメインメール**の[セキュリティ & コンプライアンスセンター](https://protection.office.com)では、組織内のユーザーが新しいドメインにメッセージを転送している場合に通知します。</span><span class="sxs-lookup"><span data-stu-id="a5f99-107">The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when users in your organization are forwarding messages to new domains.</span></span>
+<span data-ttu-id="111d1-107">**転送される新しいドメインメール** の [セキュリティ & コンプライアンスセンター](https://protection.office.com)では、組織内のユーザーが新しいドメインにメッセージを転送している場合に通知します。</span><span class="sxs-lookup"><span data-stu-id="111d1-107">The **New domains being forwarded email** insight in the [Security & Compliance Center](https://protection.office.com) notifies you when users in your organization are forwarding messages to new domains.</span></span>
 
-<span data-ttu-id="a5f99-108">この洞察は、問題が検出されたときにのみ表示され、 [転送レポート](view-mail-flow-reports.md#forwarding-report) ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="a5f99-108">This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.</span></span>
+<span data-ttu-id="111d1-108">この洞察は、問題が検出されたときにのみ表示され、 [転送レポート](view-mail-flow-reports.md#forwarding-report) ページに表示されます。</span><span class="sxs-lookup"><span data-stu-id="111d1-108">This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.</span></span>
 
 ![新しいドメインにメールが転送されていますのインサイト](../../media/mfi-new-domains-being-forwarded.png)
 
-<span data-ttu-id="a5f99-110">ウィジェットをクリックすると、転送されたメッセージの詳細を確認できるポップアップが表示されます。これには、 [転送レポート](view-mail-flow-reports.md#forwarding-report)へのリンクも含まれています。</span><span class="sxs-lookup"><span data-stu-id="a5f99-110">When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link back to the [Forwarding report](view-mail-flow-reports.md#forwarding-report).</span></span>
+<span data-ttu-id="111d1-110">ウィジェットをクリックすると、転送されたメッセージの詳細を確認できるポップアップが表示されます。これには、 [転送レポート](view-mail-flow-reports.md#forwarding-report)へのリンクも含まれています。</span><span class="sxs-lookup"><span data-stu-id="111d1-110">When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link back to the [Forwarding report](view-mail-flow-reports.md#forwarding-report).</span></span>
 
 ![転送される新しいドメインをクリックした後に表示される詳細ポップアップ、電子メールの洞察](../../media/mfi-new-domains-being-forwarded-details.png)
 
-<span data-ttu-id="a5f99-112">また、[詳細] を選択した後に [詳細] を選択すると、[詳細] を選択した後に、[詳細] を選択したときに、この詳細ページ**を表示でき**ます (**レポート**ダッシュボードまたは) の [**上位の分析 &** \> **Dashboard** <https://protection.office.com/insightdashboard></span><span class="sxs-lookup"><span data-stu-id="a5f99-112">You can also get to this details page when you select the insight after you click **View all** in the **Top insights & recommendations** area on (**Reports** \> **Dashboard** or <https://protection.office.com/insightdashboard>).</span></span>
+<span data-ttu-id="111d1-112">また、[詳細] を選択した後に [詳細] を選択すると、[詳細] を選択した後に、[詳細] を選択したときに、この詳細ページ **を表示でき** ます ( **レポート** ダッシュボードまたは) の [ **上位の分析 &** \> **Dashboard** <https://protection.office.com/insightdashboard></span><span class="sxs-lookup"><span data-stu-id="111d1-112">You can also get to this details page when you select the insight after you click **View all** in the **Top insights & recommendations** area on ( **Reports** \> **Dashboard** or <https://protection.office.com/insightdashboard>).</span></span>
 
-<span data-ttu-id="a5f99-113">外部ドメインへの自動メッセージ転送を禁止するには、一部またはすべての外部ドメインに対してリモートドメインを構成します。</span><span class="sxs-lookup"><span data-stu-id="a5f99-113">To prevent automatic message forwarding to external domains, configure a remote domain for some or all external domains.</span></span> <span data-ttu-id="a5f99-114">詳細については、「 [Manage remote domains In Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5f99-114">For more information, see [Manage remote domains in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).</span></span>
+<span data-ttu-id="111d1-113">外部ドメインへの自動メッセージ転送を禁止するには、一部またはすべての外部ドメインに対してリモートドメインを構成します。</span><span class="sxs-lookup"><span data-stu-id="111d1-113">To prevent automatic message forwarding to external domains, configure a remote domain for some or all external domains.</span></span> <span data-ttu-id="111d1-114">詳細については、「 [Manage remote domains In Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="111d1-114">For more information, see [Manage remote domains in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="a5f99-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="a5f99-115">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="111d1-115">関連項目</span><span class="sxs-lookup"><span data-stu-id="111d1-115">Related topics</span></span>
 
-<span data-ttu-id="a5f99-116">メールフローダッシュボードの他の洞察の詳細については、「 [セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a5f99-116">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="111d1-116">メールフローダッシュボードの他の洞察の詳細については、「 [セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="111d1-116">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
