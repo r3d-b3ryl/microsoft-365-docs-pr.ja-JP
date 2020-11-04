@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Microsoft 365 Multi-Geo 複数地域、複数地域のしくみ、およびデータ ストレージに使用できる地理的な場所について説明します。
-ms.openlocfilehash: 1924141b86ba3e1c16e4760e0f40d61b6f47ce69
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691872"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877233"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 Multi-Geo の計画
 
@@ -30,7 +30,7 @@ ms.locfileid: "46691872"
 
 この構成の基本的な概念についての理解を助けるために、複数地域に関するいくつかの主要な用語を示します。
 
--   **テナント** - Microsoft 365 における組織の表現。通常、1 つ以上のドメインが関連付けられています (例: https://contoso.sharepoint.com))。 
+-   **テナント** - Microsoft 365 における組織の表現。通常、1 つ以上のドメインが関連付けられています (例: https://contoso.sharepoint.com))。 
 
 -   **地理的な場所** – Microsoft 365 テナントのデータをホストできる地理的な場所。
 
@@ -40,7 +40,7 @@ ms.locfileid: "46691872"
 
 複数地域の有効化に必要になる主な 4 つの手順は次のとおりです。
 
-1.  アカウント チームと協力して、_Microsoft 365 の複数地域機能_をサービス プランに追加します。
+1.  アカウント チームと協力して、 _Microsoft 365 の複数地域機能_ をサービス プランに追加します。
 
 2.  サテライトの場所を選択して、その場所をテナントに追加します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "46691872"
 
 テスト用ユーザーでのテストが完了したら、新しい地域の場所で最初に OneDrive および Exchange を使用するパイロット グループを IT 部門 (など) から選択します。 この最初のグループには、OneDrive をまだ所有していないユーザーを選択します。 この初期グループのユーザーは 5 人未満にして、バッチ ロールアウトのアプローチに従って段階的に増員していきます。
 
-各ユーザーには*優先するデータの場所* (PDL) を設定しておく必要があります。これにより、それぞれのユーザーの OneDrive をプロビジョニングする地域の場所を Microsoft 365 が判断できるようになります。ユーザーの優先するデータの場所は、選択したサテライトの場所のいずれか、または中央の場所と一致する必要があります。PDL フィールドは必須ではありませんが、すべてのユーザーの PDL を設定することをお勧めします。PDL のないユーザーのワークロードは中央の場所にプロビジョニングされます。
+各ユーザーには *優先するデータの場所* (PDL) を設定しておく必要があります。これにより、それぞれのユーザーの OneDrive をプロビジョニングする地域の場所を Microsoft 365 が判断できるようになります。ユーザーの優先するデータの場所は、選択したサテライトの場所のいずれか、または中央の場所と一致する必要があります。PDL フィールドは必須ではありませんが、すべてのユーザーの PDL を設定することをお勧めします。PDL のないユーザーのワークロードは中央の場所にプロビジョニングされます。
 
 ユーザーのリストを作成して、ユーザー プリンシパル名 (UPN) と適切な優先するデータの場所の地域コードを含めます。テスト用ユーザーと初期パイロット グループを含めて開始します。このリストは、構成の手順で必要になります。
 
@@ -73,7 +73,7 @@ ms.locfileid: "46691872"
 
 複数地域テナントの管理は、複数地域ではないテナントの管理と異なることがあり、SharePoint および OneDrive の設定と機能の多くが複数地域に対応しています。構成を進める前に、「[複数地域環境の管理](administering-a-multi-geo-environment.md)」を確認することをお勧めします。
 
-複数地域環境でのエンド ユーザーのエクスペリエンスの詳細については、「[複数地域環境でのユーザー エクスペリエンス](multi-geo-user-experience.md)」を参照してください。
+複数地域環境でのエンドユーザーの作業の詳細については、「複数地域環境での [ユーザー環境](multi-geo-user-experience.md) の読み取り」を参照してください。
 
 Microsoft 365 の複数地域テナントにおける Teams エクスペリエンスの詳細については、「[Microsoft 365 OneDrive および SharePoint Online Multi-Geo 対応テナントでの Teams のエクスペリエンス](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)」を参照してください。
 

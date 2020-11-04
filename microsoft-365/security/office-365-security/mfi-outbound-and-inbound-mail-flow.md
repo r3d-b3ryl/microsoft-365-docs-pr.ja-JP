@@ -2,7 +2,7 @@
 title: メールフローダッシュボードでの送信および受信メールフローの洞察
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの送信および受信メールフローの洞察について理解できます。
-ms.openlocfilehash: 33bfe3882c274fa655d17c80aba007e8d246b250
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cff7c3a14b62475903729f4528652f192c2da09f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199303"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877671"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターにおける送信および受信メールフローの洞察
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[セキュリティ & コンプライアンスセンター](https://protection.office.com)の[メールフローダッシュボード](mail-flow-insights-v2.md)に記載されている**送信および受信メールフロー**の洞察は、[コネクタレポート](view-mail-flow-reports.md#connector-report)と以前の**TLS 概要レポート**の情報を1つの場所にまとめたものです。
+[セキュリティ & コンプライアンスセンター](https://protection.office.com)の [メールフローダッシュボード](mail-flow-insights-v2.md)に記載されている **送信および受信メールフロー** の洞察は、 [コネクタレポート](view-mail-flow-reports.md#connector-report)と以前の **TLS 概要レポート** の情報を1つの場所にまとめたものです。
 
 ウィジェットには、組織との間でメッセージが配信されるときに接続に使用される TLS 暗号化が表示されます。 他の電子メールサービスで確立された接続は、両方の側で TLS が提供されるときに TLS によって暗号化されます。 このウィジェットは、メールフローの最終週のスナップショットを提供します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "48199303"
 
 ただし、 [コネクタ](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) を使用して、電子メールサーバーと Microsoft 365 との間で送信されるメッセージに最適な TLS 保護を確保することができます。 Microsoft 365 と、パートナーに属する独自の電子メールサーバーまたはサーバー間のメールフローは、通常のメッセージよりも重要で重要なものなので、追加のセキュリティと警戒をこれらのメッセージに適用する必要があります。
 
-独自の電子メールサーバーをアップグレードまたは修正して、使用されている TLS 暗号化を改善したり、パートナーに接続して同じ操作を実行したりすることができます。 **コネクタレポート**には、Microsoft 365 コネクタを使用するメッセージのメールフローボリュームと TLS 暗号化の両方が表示されます。
+独自の電子メールサーバーをアップグレードまたは修正して、使用されている TLS 暗号化を改善したり、パートナーに接続して同じ操作を実行したりすることができます。 **コネクタレポート** には、Microsoft 365 コネクタを使用するメッセージのメールフローボリュームと TLS 暗号化の両方が表示されます。
 
 [ **コネクタレポート** ] リンクをクリックすると、 [コネクタレポート](view-mail-flow-reports.md#connector-report)に移動できます。 関連付けられている条件が検出された場合、次の洞察が **コネクタレポート** ページに表示されることがあります。
 

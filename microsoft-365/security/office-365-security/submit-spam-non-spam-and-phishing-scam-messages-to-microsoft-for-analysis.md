@@ -2,7 +2,7 @@
 title: 分析のためにメッセージを手動で Microsoft に送信する
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理者とエンドユーザーは、分析用に Microsoft に電子メールメッセージ (不良または無効なメールが許可されたメール) を送信する方法を学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6673dc7e7ac263ea9f734c002d0ffac410fadc07
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202202"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877707"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>分析のためにメッセージを手動で Microsoft に送信する
 
@@ -48,9 +48,9 @@ ms.locfileid: "48202202"
 
 1. 次のいずれかの受信者を使用して、新しい空の電子メールメッセージを作成します。
 
-   - **迷惑メール**: `junk@office365.microsoft.com`
+   - **迷惑メール** : `junk@office365.microsoft.com`
 
-   - **フィッシング**: `phish@office365.microsoft.com`
+   - **フィッシング** : `phish@office365.microsoft.com`
 
 2. 迷惑メールまたはフィッシングメッセージを新しいメッセージにドラッグアンドドロップします。 これにより、迷惑メールまたはフィッシングメッセージは新しいメッセージの添付ファイルとして保存されます。 メッセージの内容をコピーして貼り付けたり、メッセージを転送したりしないでください (メッセージヘッダーを検査できるように、元のメッセージが必要です)。
 
@@ -62,7 +62,7 @@ ms.locfileid: "48202202"
    >
    > - 添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。
 
-3. 完了したら、[ **送信**] をクリックします。
+3. 完了したら、[ **送信** ] をクリックします。
 
 > [!TIP]
 > 管理者は、スパムとして misidentified されている特定のメッセージをブロックするいくつかの方法を用意しています。 詳細については、「 [EOP でブロックされる送信者のリストを作成する](create-block-sender-lists-in-office-365.md)」を参照してください。
@@ -86,7 +86,7 @@ ms.locfileid: "48202202"
    >
    > - 添付されたメッセージについては、.msg (既定の Outlook 形式) または .eml (既定の Outlook on the Web format) の形式を使用します。
 
-3. 完了したら、[ **送信**] をクリックします。
+3. 完了したら、[ **送信** ] をクリックします。
 
 > [!TIP]
 > 管理者は、特定のメッセージがスパムフィルタリングをスキップできるようにするいくつかの方法があります。 詳細については、「 [EOP での安全な送信者リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。

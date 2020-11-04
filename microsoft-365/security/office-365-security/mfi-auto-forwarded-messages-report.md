@@ -1,8 +1,8 @@
 ---
-title: 自動転送されたメッセージのインサイト
+title: 自動転送されたメッセージの分析情報
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -11,19 +11,19 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの自動転送メッセージレポートについて説明します。
-ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245949"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877791"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの自動転送メッセージの洞察
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[セキュリティ & コンプライアンスセンター](https://protection.office.com)の[メールフローダッシュボード](mail-flow-insights-v2.md)に表示される**自動転送メッセージ**には、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
+[セキュリティ & コンプライアンスセンター](https://protection.office.com)の [メールフローダッシュボード](mail-flow-insights-v2.md)に表示される **自動転送メッセージ** には、組織から外部ドメインの受信者に自動的に転送されるメッセージに関する情報が表示されます。
 
 ![セキュリティ & コンプライアンスセンターの自動転送メッセージウィジェット](../../media/mfi-auto-forwarded-messages.png)
 
@@ -31,14 +31,14 @@ ms.locfileid: "48245949"
 
 ウィジェット内のメッセージ数をクリックすると、自動的に転送されるメッセージに関する詳細情報を示すフライアウトウィンドウが表示されます。
 
-- **転送方法による自動転送メッセージ**:
+- **転送方法による自動転送メッセージ** :
 
   - **メールフロールール**
   - **受信トレイルール**
-  - **SMTP 転送で**は、管理者がメールボックス [のメール転送を構成](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)するに説明されているように、メールボックスに対して自動転送を行います。
+  - **SMTP 転送で** は、管理者がメールボックス [のメール転送を構成](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)するに説明されているように、メールボックスに対して自動転送を行います。
   - 詳細については、 [転送レポート](view-mail-flow-reports.md#forwarding-report) へのリンクを参照してください。
 
-- **ドメインおよびユーザーによる自動転送メッセージ**:
+- **ドメインおよびユーザーによる自動転送メッセージ** :
 
   - **上位5ドメイン転送先**
   - **新しいドメイン (先週)**

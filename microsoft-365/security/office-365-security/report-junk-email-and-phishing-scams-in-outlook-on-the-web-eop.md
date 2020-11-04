@@ -2,7 +2,7 @@
 title: Outlook on the web で迷惑メールとフィッシング詐欺メールを報告する
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Exchange Online の Outlook on the web (Outlook Web App) に組み込まれている迷惑メール報告オプションとフィッシング電子メールレポートオプション、およびこれらのレポートオプションをユーザーに対して無効にする方法について説明しています。
-ms.openlocfilehash: 076f2858e84359d788714dc5d7e8bdb972b2c2ee
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48351079"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877375"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>Outlook on the web on the Exchange Online で迷惑メールとフィッシング詐欺メールを報告する
 
@@ -44,13 +44,13 @@ Exchange Online にメールボックスを持つ Microsoft 365 の組織では�
 
 1. 受信トレイまたは迷惑メール以外の他の電子メールフォルダー内のメッセージの場合は、次のいずれかの方法を使用して、スパムメッセージとフィッシングメッセージを報告します。
 
-   - メッセージを選択し、ツールバーの [ **迷惑メール** ] をクリックして、[ **迷惑メール** または **フィッシング詐欺**] を選択します。
+   - メッセージを選択し、ツールバーの [ **迷惑メール** ] をクリックして、[ **迷惑メール** または **フィッシング詐欺** ] を選択します。
 
      ![リボンから迷惑メールまたはフィッシング詐欺メールを報告する](../../media/owa-report-junk.png)
 
-   - 1つ以上のメッセージを選択し、右クリックして、[ **迷惑メールにマーク**] を選択します。
+   - 1つ以上のメッセージを選択し、右クリックして、[ **迷惑メールにマーク** ] を選択します。
 
-2. 表示されるダイアログで、[ **レポート**] をクリックします。 気が変わった場合は、[ **レポートしない**] をクリックします。
+2. 表示されるダイアログで、[ **レポート** ] をクリックします。 気が変わった場合は、[ **レポートしない** ] をクリックします。
 
    |迷惑メール|フィッシング|
    |:---:|:---:|
@@ -62,13 +62,13 @@ Exchange Online にメールボックスを持つ Microsoft 365 の組織では�
 
 1. [迷惑メール] フォルダーで、次のいずれかの方法を使用して、スパム誤検知またはフィッシングメッセージを報告します。
 
-   - メッセージを選択し、ツールバーの [ **迷惑メール** ではない] をクリックし、[ **迷惑メール** ではない] または [ **フィッシング詐欺**] を選択します。
+   - メッセージを選択し、ツールバーの [ **迷惑メール** ではない] をクリックし、[ **迷惑メール** ではない] または [ **フィッシング詐欺** ] を選択します。
 
      ![リボンから迷惑メールまたはフィッシング詐欺メールを報告する](../../media/owa-report-not-junk.png)
 
-   - 1つ以上のメッセージを選択して右クリックし、[ **迷惑メールではないメールとしてマーク**] を選択します。
+   - 1つ以上のメッセージを選択して右クリックし、[ **迷惑メールではないメールとしてマーク** ] を選択します。
 
-2. 表示されるダイアログで、情報を読み、[ **レポート**] をクリックします。 気が変わった場合は、[ **レポートしない**] をクリックします。
+2. 表示されるダイアログで、情報を読み、[ **レポート** ] をクリックします。 気が変わった場合は、[ **レポートしない** ] をクリックします。
 
    |迷惑メールではないメール|フィッシング詐欺|
    |:---:|:---:|
@@ -84,11 +84,11 @@ Exchange Online にメールボックスを持つ Microsoft 365 の組織では�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
-- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、**組織の管理**役割グループおよび**受信者管理**役割グループに既定で割り当てられる Exchange Online の**受信者ポリシー**または**メール受信者**の役割が必要です。 Exchange Online の役割グループの詳細については、「 [Exchange online で役割グループを変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)する」を参照してください。
+- これらの手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。 具体的には、 **組織の管理** 役割グループおよび **受信者管理** 役割グループに既定で割り当てられる Exchange Online の **受信者ポリシー** または **メール受信者** の役割が必要です。 Exchange Online の役割グループの詳細については、「 [Exchange online で役割グループを変更](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)する」を参照してください。
 
 - すべての組織には、Owam社内 Boxpolicy-Default という名前の既定のポリシーがありますが、カスタムポリシーを作成することができます。 カスタムポリシーは、既定のポリシーよりも前に、スコープを指定したユーザーに適用されます。 Outlook on the web メールボックスポリシーの詳細については、「 [outlook on the web mailbox policies In Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)」を参照してください。
 
-- 迷惑メール報告を無効にしても、Outlook on the web で迷惑メールや迷惑メールではないメッセージとしてマークする機能は削除されません。 [迷惑メール] フォルダー内のメッセージを選択し、[迷惑メールではない迷惑メールを受信しない] **をクリックし**て \> も、メッセージは受信トレイに再び移動 **さ** れます。 他の電子メールフォルダーでメッセージを選択し、 **[迷惑メール] をクリックし**ても、 \> **Junk**メッセージは [迷惑メール] フォルダーに移動されます。 Microsoft にメッセージを報告するオプションとして、使用できなくなりました。
+- 迷惑メール報告を無効にしても、Outlook on the web で迷惑メールや迷惑メールではないメッセージとしてマークする機能は削除されません。 [迷惑メール] フォルダー内のメッセージを選択し、[迷惑メールではない迷惑メールを受信しない] **をクリックし** て \> も、メッセージは受信トレイに再び移動 **さ** れます。 他の電子メールフォルダーでメッセージを選択し、 **[迷惑メール] をクリックし** ても、 \> **Junk** メッセージは [迷惑メール] フォルダーに移動されます。 Microsoft にメッセージを報告するオプションとして、使用できなくなりました。
 
 ### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>Exchange Online PowerShell を使用して Outlook on the web で迷惑メール報告を無効または有効にする
 
@@ -128,13 +128,13 @@ Outlook on the web で迷惑メール報告が正常に有効または無効に�
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- 影響を受けるユーザーのメールボックスを web 上の Outlook で開きます。受信トレイでメッセージを選択し、[迷惑メール]**をクリックし**、 \> **Junk**メッセージを Microsoft に報告するかどうかを確認するメッセージが表示されないことを確認します。<sup>\*</sup>
+- 影響を受けるユーザーのメールボックスを web 上の Outlook で開きます。受信トレイでメッセージを選択し、[迷惑メール] **をクリックし** 、 \> **Junk** メッセージを Microsoft に報告するかどうかを確認するメッセージが表示されないことを確認します。 <sup>\*</sup>
 
-- 影響を受けるユーザーのメールボックスを web 上の Outlook で開きます。 [迷惑メール] フォルダーでメッセージを選択し、 **[迷惑メール] をクリックし**、メッセージを \> **Junk** Microsoft に報告するかどうかを確認するメッセージが表示されているかどうかを確認します。<sup>\*</sup>
+- 影響を受けるユーザーのメールボックスを web 上の Outlook で開きます。 [迷惑メール] フォルダーでメッセージを選択し、 **[迷惑メール] をクリックし** 、メッセージを \> **Junk** Microsoft に報告するかどうかを確認するメッセージが表示されているかどうかを確認します。 <sup>\*</sup>
 
 <sup>\*</sup> ユーザーはメッセージを報告するメッセージを非表示にすることができます。 Outlook on the web でこの設定を確認するには、次のようにします。
 
-1. [ **Settings** ![ Web 設定] アイコンの [outlook の設定] をクリックし ](../../media/owa-settings-icon.png) \> ます。**すべての outlook 設定**の \> **迷惑メール**を表示します。
-2. [ **レポート** ] セクションで、[ **レポートを送信する前にメッセージ**を表示する] の値を確認します。
+1. [ **Settings** ![ Web 設定] アイコンの [outlook の設定] をクリックし ](../../media/owa-settings-icon.png) \> ます。 **すべての outlook 設定** の \> **迷惑メール** を表示します。
+2. [ **レポート** ] セクションで、[ **レポートを送信する前にメッセージ** を表示する] の値を確認します。
 
    ![Outlook on the web 迷惑メールの報告設定](../../media/owa-junk-email-reporting-options.png)

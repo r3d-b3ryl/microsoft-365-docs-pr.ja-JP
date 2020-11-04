@@ -2,7 +2,7 @@
 title: IOS および Android 用の Outlook で迷惑メールとフィッシング詐欺メールを報告する
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理者は、iOS および Android 用の Outlook に組み込まれている迷惑メールと迷惑メールの報告オプションについて説明しています。
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350857"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877293"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Exchange Online で iOS および Android 用の Outlook で迷惑メールとフィッシング詐欺メールを報告する
 
@@ -50,11 +50,11 @@ ms.locfileid: "48350857"
 
    ![[アクション] メニューから迷惑メールまたはフィッシング詐欺メールを報告する](../../media/Android-report-as-junk-dialog.png)
 
-3. [ **迷惑メールを報告** ] をタップしてから、[ **迷惑メール** または **フィッシング詐欺**] を選択
+3. [ **迷惑メールを報告** ] をタップしてから、[ **迷惑メール** または **フィッシング詐欺** ] を選択
 
    ![迷惑メールまたはフィッシング詐欺メールを報告する](../../media/Android-report-junk-or-phishing.png)
 
-4. 表示されるダイアログで、[ **レポート** ] または [ **いいえ**] を選択できます。 [ **いいえ**] を選択した場合、[ **迷惑** メール] をタップすると、メッセージは [迷惑メール] フォルダーに移動します。 **フィッシング** をタップすると、メッセージは [削除済みアイテム] フォルダーに移動します。 [ **レポート** ] を選択して、メッセージのコピーも Microsoft に送信します。
+4. 表示されるダイアログで、[ **レポート** ] または [ **いいえ** ] を選択できます。 [ **いいえ** ] を選択した場合、[ **迷惑** メール] をタップすると、メッセージは [迷惑メール] フォルダーに移動します。 **フィッシング** をタップすると、メッセージは [削除済みアイテム] フォルダーに移動します。 [ **レポート** ] を選択して、メッセージのコピーも Microsoft に送信します。
 
    ![迷惑メールまたはフィッシング詐欺メールレポートのオプションを報告する](../../media/Android-junk-email-reporting-options.png)
 
@@ -69,6 +69,6 @@ ms.locfileid: "48350857"
 
    ![[アクション] メニューから迷惑メールではないことを報告する](../../media/Android-not-junk-email.png)
 
-3. **迷惑メールではない**をタップします。
+3. **迷惑メールではない** をタップします。
 
 トースト通知は、電子メールが受信トレイに移動されたことを示します。 気が変わった場合は、トースト通知で [ **元に戻す** ] を選択します。 電子メールは、迷惑メールフォルダーに残ります。

@@ -2,7 +2,7 @@
 title: ユーザー送信ポリシー
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、ユーザーによって報告されたスパムやフィッシング電子メールを収集するようにメールボックスを構成する方法について説明します。
-ms.openlocfilehash: d39614c2cafd3469625c4a01bdc63a1e60fead85
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: edef506074faa1c2104069e6042ee58111d5e367
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842906"
+ms.locfileid: "48877479"
 ---
 # <a name="user-submissions-policy"></a>ユーザー送信ポリシー
 

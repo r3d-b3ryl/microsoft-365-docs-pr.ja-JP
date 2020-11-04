@@ -2,7 +2,7 @@
 title: メールフローのインテリジェンス
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理者は、コネクタ (メールフローインテリジェンスとも呼ばれます) を使用したメッセージ配信に関連付けられているエラーコードについて理解できます。
-ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198505"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877803"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP でのメール フロー インテリジェンス
 
@@ -27,7 +27,7 @@ ms.locfileid: "48198505"
 
 Exchange online メールボックスを使用しない Exchange Online またはスタンドアロンの Exchange Online Protection (EOP) 組織内にメールボックスを持つ Microsoft 365 組織では、通常、コネクタを使用して、EOP から社内の電子メール環境に電子メールメッセージをルーティングします。 また、コネクタを使用して、Microsoft 365 からパートナー組織にメッセージをルーティングすることもできます。 Microsoft 365 は、これらのメッセージをコネクタ経由で配信できない場合、Microsoft 365 でキューに登録されています。 Microsoft 365 は、24時間、各メッセージの配信を再試行し続けます。 24時間後、キューに入れられたメッセージは期限切れになり、配信不能レポート (NDR またはバウンスメッセージとも呼ばれる) で元の送信者にメッセージが返されます。
 
-Microsoft 365 は、コネクタを使用してメッセージを配信できない場合にエラーを生成します。 最も一般的なエラーとその解決策について、このトピックで説明します。 コネクタ経由で送信された配信不能メッセージのキューイングおよび通知エラーは、 _メールフローインテリジェンス_と呼ばれます。
+Microsoft 365 は、コネクタを使用してメッセージを配信できない場合にエラーを生成します。 最も一般的なエラーとその解決策について、このトピックで説明します。 コネクタ経由で送信された配信不能メッセージのキューイングおよび通知エラーは、 _メールフローインテリジェンス_ と呼ばれます。
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>エラー コード:450 4.4.312 DNS クエリに失敗しました
 
@@ -71,17 +71,17 @@ Microsoft 365 は、コネクタを使用してメッセージを配信できな
 
   - [Exchange 管理センター (EAC)](https://docs.microsoft.com/Exchange/exchange-admin-center)で、Microsoft 365 からオンプレミスの電子メール環境に電子メールを配信するコネクタを無効にするか、削除します。
 
-    1. EAC で、[**メールフロー**コネクタ] に移動し \> **Connectors**ます。
+    1. EAC で、[ **メールフロー** コネクタ] に移動し \> **Connectors** ます。
 
     2. [ **差出人** ] の値が **Office 365** で、[ **宛先** ] が **組織の電子メールサーバー** の値であるコネクタを選択し、次の手順のいずれかを実行します。
 
        - **[削除] [削除** ![ ] アイコンをクリックしてコネクタを削除する](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - [編集] 編集アイコン**Edit**をクリックしてコネクタを無効にし、 ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **[有効にする**] をオフにします。
+       - [編集] 編集アイコン **Edit** をクリックしてコネクタを無効にし、 ![ ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **[有効にする** ] をオフにします。
 
-  - オンプレミスの電子メール環境に関連付けられている Microsoft 365 の承認済みドメインを、 **内部の中継** から **権限**のあるドメインに変更します。 手順については、「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
+  - オンプレミスの電子メール環境に関連付けられている Microsoft 365 の承認済みドメインを、 **内部の中継** から **権限** のあるドメインに変更します。 手順については、「 [Exchange Online で承認済みドメインを管理](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)する」を参照してください。
 
-  **注**: 通常、これらの変更は30分から1時間かかり、有効になります。 1時間後に、エラーが表示されなくなったことを確認します。
+  **注** : 通常、これらの変更は30分から1時間かかり、有効になります。 1時間後に、エラーが表示されなくなったことを確認します。
 
 - エラーがパートナー組織 (たとえば、サード パーティのクラウド サービス プロバイダー) によるものの場合は、そのパートナーに連絡して問題を解決する必要があります。
 
@@ -135,6 +135,6 @@ Microsoft 365 は、コネクタを使用してメッセージを配信できな
 
 ## <a name="other-error-codes"></a>その他のエラー コード
 
-Microsoft 365 は、社内またはパートナーの電子メールサーバーにメッセージを配信する際に問題が発生しています。 エラーに含まれる **宛先サーバー**の情報を確認して、ご使用の環境の問題を調べるか、構成エラーがあった場合はコネクタを変更します。
+Microsoft 365 は、社内またはパートナーの電子メールサーバーにメッセージを配信する際に問題が発生しています。 エラーに含まれる **宛先サーバー** の情報を確認して、ご使用の環境の問題を調べるか、構成エラーがあった場合はコネクタを変更します。
 
 エラーがパートナー組織 (たとえば、サード パーティのクラウド サービス プロバイダー) によるものである場合、そのパートナーに連絡して問題を解決する必要があります。
