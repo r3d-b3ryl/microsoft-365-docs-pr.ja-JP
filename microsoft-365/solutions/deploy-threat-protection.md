@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d1316927124b1ce03910190922fa0804853ae4b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845278"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906753"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>Microsoft 365 で脅威保護機能を展開する
 
@@ -77,5 +77,3 @@ Microsoft 365 E5 では、脅威保護機能は既定で統合されています
 脅威保護機能は並行して構成できるため、複数のネットワークセキュリティチームが異なるサービスを担当している場合は、組織の保護機能を同時に構成することができます。 次の図は、脅威保護機能を展開するための大まかなプロセスを示しています。 
 
 ![脅威保護機能を展開するためのプロセス](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305181"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843151"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 違反の通知
 
@@ -36,10 +36,10 @@ ms.locfileid: "48305181"
 
 このドキュメントで使用されている GDPR 用語の役に立つ定義:
 
-- *データ コントローラー (コントローラー)*: 法人、公的機関、団体、その他の組織。単独または他者と協力して、個人データの処理の目的と方法を決定します。  
-- *個人データ*と*データ主体*: 特定されたまたは特定可能な自然人 (データ主体) に関連するあらゆる情報。特定可能な自然人とは、直接または間接的に特定することができる者のことです。  
-- *処理者*: コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
-- *顧客データ*: ビジネス運営における日々の業務で作成および保存されるデータ。
+- *データ コントローラー (コントローラー)* : 法人、公的機関、団体、その他の組織。単独または他者と協力して、個人データの処理の目的と方法を決定します。  
+- *個人データ* と *データ主体* : 特定されたまたは特定可能な自然人 (データ主体) に関連するあらゆる情報。特定可能な自然人とは、直接または間接的に特定することができる者のことです。  
+- *処理者* : コントローラーに代わって個人データを処理する自然人または法人、公的機関、団体、その他の組織。  
+- *顧客データ* : ビジネス運営における日々の業務で作成および保存されるデータ。
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft と違反の通知
 
@@ -61,14 +61,14 @@ Microsoft では、一般データ保護規則 (GDPR) の下での義務を重�
 2. **[Azure および Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft には、Microsoft Azure および Dynamics 365 に対する攻撃の影響緩和を目的とした、24 時間 365 日体制のインシデント対応サービスがあります。
 
-    - *侵害の検出*: Microsoft とお客様の両方にセキュリティに関する義務があるため、Azure サービスでは、セキュリティと運用の説明責任を定義した共有責任モデルが導入されています。 Microsoft は、お客様の責任範囲内にあるセキュリティ インシデントの監視または対応は行いません。 適切なサービス契約であれば、お客様のインシデントの場合には、Azure [カスタマー サポート](https://azure.microsoft.com/support/options/)と共同で対応することができます。 また、Microsoft Azure には、お客様がセキュリティ インシデント対応の開発と管理に活用できる、さまざまなサービス ([Azure Security Center](https://azure.microsoft.com/services/security-center/) など) が用意されています。
+    - *侵害の検出* : Microsoft とお客様の両方にセキュリティに関する義務があるため、Azure サービスでは、セキュリティと運用の説明責任を定義した共有責任モデルが導入されています。 Microsoft は、お客様の責任範囲内にあるセキュリティ インシデントの監視または対応は行いません。 適切なサービス契約であれば、お客様のインシデントの場合には、Azure [カスタマー サポート](https://azure.microsoft.com/support/options/)と共同で対応することができます。 また、Microsoft Azure には、お客様がセキュリティ インシデント対応の開発と管理に活用できる、さまざまなサービス ([Azure Defender*](https://azure.microsoft.com/services/security-center/) など) が用意されています。
 
         Microsoft Azure で侵害の調査をトリガーするイベントの一覧については、「[潜在的なデータ侵害の検出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches)」を参照してください。 「[Azure と GDPR の下での違反の通知](gdpr-breach-azure-dynamics.md)」では、Azure 内で発生するセキュリティ インシデントをどのように Microsoft が調査、管理、対応するかを詳しく述べています。
 
-    - *データ侵害への対応*: Microsoft は、インシデントの機能的影響、回復性、情報の影響を調査し、その侵害の適切な優先度と重大度を判別します。 優先度と重大度は、新しい調査結果と判定に基づき、調査の過程で変わる場合があります。
+    - *データ侵害への対応* : Microsoft は、インシデントの機能的影響、回復性、情報の影響を調査し、その侵害の適切な優先度と重大度を判別します。 優先度と重大度は、新しい調査結果と判定に基づき、調査の過程で変わる場合があります。
     法的義務およびお客様へのコミットメントに基づいた調査が確実に行われるように、Microsoft のセキュリティ レスポンス チームが世界各国の法律顧問と緊密に連携します。 これらのプロセスの詳細については、「[Azure のデータ侵害対応](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response)」を参照してください。
 
-    - *お客様への通知*: Microsoft Azure は、必要に応じてデータ侵害をお客様と規制当局に通知します。 次の場合を除き、お客様への通知は、侵害の発生を認識してから 72 時間以内に行われます。
+    - *お客様への通知* : Microsoft Azure は、必要に応じてデータ侵害をお客様と規制当局に通知します。 次の場合を除き、お客様への通知は、侵害の発生を認識してから 72 時間以内に行われます。
 
         - Microsoft が、通知を実行すると他のユーザーにとってリスクが増大する判断した場合。
         - 72 時間以内にインシデントの詳細がいくつか分かりそうな場合。 これらの詳細は、調査が進むにつれて入手できます。
@@ -80,7 +80,7 @@ Microsoft では、一般データ保護規則 (GDPR) の下での義務を重�
 
 ## <a name="breach-notification-admin-tools"></a>違反の通知管理ツール
 
-- **組織のプライバシー連絡先の設定**: テナント管理者は [Azure Active Directory 管理ポータル](https://go.microsoft.com/fwlink/p/?linkid=2052736)を使用して、Microsoft が連絡を取る必要がある組織のプライバシー連絡先を定義できます。
+- **組織のプライバシー連絡先の設定** : テナント管理者は [Azure Active Directory 管理ポータル](https://go.microsoft.com/fwlink/p/?linkid=2052736)を使用して、Microsoft が連絡を取る必要がある組織のプライバシー連絡先を定義できます。
 
 ## <a name="learn-more"></a>詳細情報
 

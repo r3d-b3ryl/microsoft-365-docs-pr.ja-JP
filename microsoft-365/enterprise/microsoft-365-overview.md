@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655973"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846966"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -44,7 +44,7 @@ Microsoft 365 for Enterprise には 3 つのプランがあります。
 |プラン名|機能|
 |---|---|
 |E3|Microsoft 365 の主要な製品と機能にアクセスして、安全に職場の生産性を高め、イノベーションを推進します。|
-|E5|Microsoft 365 の最新の製品と機能にアクセスします。 これには、高度な脅威保護、セキュリティツール、および共同作業ツールが含まれます。 このプランには、E3 のすべての機能に加えて、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。|
+|E5|Microsoft 365 の最新の製品と機能にアクセスします。 これには、Defender for Office 365、セキュリティ ツール、および共同作業ツールが含まれます。 このプランには、E3 のすべての機能に加えて、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。|
 |F3|現場の最前線で働く従業員が最高の仕事をできるように、彼らが使え役に立つ専用のツールやリソースを通じて従業員とつながります。|
 |||
 
@@ -83,14 +83,14 @@ Microsoft 365 E3の ユーザーは、これらのアドオンを使用して、
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 および Office 2010 のクライアントとサーバーのサポート終了
 
-[Windows 7](https://aka.ms/win7upgrade) は、**2020 年 1 月 14 日**にサポートが終了しました。
+[Windows 7](https://aka.ms/win7upgrade) は、 **2020 年 1 月 14 日** にサポートが終了しました。
 
-これらの製品は、**2020 年 10 月 13 日** にサポートが終了しました:
+これらの製品は、 **2020 年 10 月 13 日** にサポートが終了しました:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
-[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) は、**2021 年 4 月 13 日**にサポートが終了します。
+[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) は、 **2021 年 4 月 13 日** にサポートが終了します。
 
 これらの製品のアップグレード、移行、およびクラウドへの移行オプションを視覚的にまとめたものとしては、[サポート終了ポスター](../downloads/Office2010Windows7EndOfSupport.pdf)をご覧ください。
 

@@ -21,48 +21,48 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: サブスクリプションの有効期限が切れたとき、または Microsoft が無効にされた場合、または途中でキャンセルした場合に、サブスクリプションを再アクティブ化する方法について説明します。
-ms.openlocfilehash: cbd5fbc5bd6423f6583701682e63ed93206b562e
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: サブスクリプションの有効期限が切れたとき、無効になったとき、または取り消されたときに、サブスクリプションを再アクティブ化する方法について
+ms.openlocfilehash: 36d82699f6eb0c1cd4a1c404d7b030a865111d03
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324294"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906777"
 ---
 # <a name="reactivate-your-subscription"></a>サブスクリプションを再度有効にする
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここに表示されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
 
 ::: moniker-end
 
-サブスクリプションの有効期限が切れた場合、または Microsoft によって無効にされた場合、またはサブスクリプション期間の途中で解約した場合は、管理センターでサブスクリプションを再アクティブ化できます。
+次の場合は、管理センターでサブスクリプションを再アクティブ化できます。サブスクリプションの有効期限が切れた場合、Microsoft によって無効にされた場合、またはサブスクリプション期間の途中でキャンセルした場合です。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 サブスクリプションを再アクティブ化するには、グローバルまたは課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
-**管理者ではない場合**: サブスクリプションを再アクティブ化するには、管理者に問い合わせてください。
+**管理者ではない場合** : サブスクリプションを再アクティブ化するには、管理者に問い合わせてください。
 
 ## <a name="reactivate-a-subscription"></a>サブスクリプションを再アクティブ化する
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
-2. [ **製品** ] タブで、再アクティブ化するサブスクリプションを見つけます。 [ **その他のアクション** (3 つのドット)] を選択し、[ **このサブスクリプションの再アクティブ化**] を選択します。
-    [ **このサブスクリプションの再アクティブ化**] が表示されない場合は、 [サポートにお問い合わせ](../../admin/contact-support-for-business-products.md)ください。
-3. [ **このサブスクリプションの再アクティブ化** ] ウィンドウで、ドロップダウンリストから支払い方法を選択するか、[ **支払い方法の追加**] を選択します。
+1. 管理センターで、 **[課金]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+2. **[製品]** タブで、再アクティブにするサブスクリプションを見つけます。 [ **その他のアクション** (3 つのドット)] を選択し、[ **このサブスクリプションの再アクティブ化** ] を選択します。
+    [ **このサブスクリプションの再アクティブ化** ] が表示されない場合は、 [サポートにお問い合わせ](../../admin/contact-support-for-business-products.md)ください。
+3. **[このサブスクリプションを再アクティブ化する]** ウィンドウで、ドロップダウン リストから支払い方法を選択するか、 **[支払い方法を追加する]** を選択します。
 4. **[保存]** を選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターで、[ **課金情報** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">サブスクリプション</a>] ページに移動します。
 
-2. 再アクティブ化するサブスクリプションを検索し、[ **再アクティブ化**] を選択します。
+2. 再アクティブ化するサブスクリプションを検索し、[ **再アクティブ化** ] を選択します。
 
     ![[再有効化] ボタンを使用して、無効になっていて機能が制限されているサブスクリプションカードのクローズアップ。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
@@ -81,9 +81,9 @@ ms.locfileid: "47324294"
 
 ::: moniker range="o365-21vianet"
   
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
+1. 管理センターで、[ **課金情報** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">サブスクリプション</a>] ページに移動します。
 
-2. 再アクティブ化するサブスクリプションを検索し、[ **再アクティブ化**] を選択します。
+2. 再アクティブ化するサブスクリプションを検索し、[ **再アクティブ化** ] を選択します。
 
     ![[再有効化] ボタンを使用して、無効になっていて機能が制限されているサブスクリプションカードのクローズアップ。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 697124400ab869825a0d7e46357566c82b1583b3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208139"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845045"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 プライバシー情報管理システム (PIMS)
 
@@ -33,9 +33,9 @@ ms.locfileid: "48208139"
 
 PIMS に対する認定をベンダーに期待することは、組織の規模に関係なく、サプライヤーおよびパートナーによる責任あるプライバシー慣行を確立するのに効果的です。 ISO/IEC 27701 は、3 つの主要なコンプライアンスの課題に対処します。
 
-- **扱う規制要件が多すぎる**: ユニバーサルな一連の運用管理を使用して複数の規制要件を調整することで、効率的で一貫した実装が可能になります。
-- **規制ごとの監査をするには費用がかかりすぎる**: 内部監査員および第三者監査員の両方が、単一の監査サイクル内でユニバーサルな一連の運用管理を使用して規制遵守を評価できます。
-- **裏付けのないコンプライアンスの約束は潜在的に危険である**: 個人情報の移動を含む商業協定は、コンプライアンスの認証を保証する場合があります。
+- **扱う規制要件が多すぎる** : ユニバーサルな一連の運用管理を使用して複数の規制要件を調整することで、効率的で一貫した実装が可能になります。
+- **規制ごとの監査をするには費用がかかりすぎる** : 内部監査員および第三者監査員の両方が、単一の監査サイクル内でユニバーサルな一連の運用管理を使用して規制遵守を評価できます。
+- **裏付けのないコンプライアンスの約束は潜在的に危険である** : 個人情報の移動を含む商業協定は、コンプライアンスの認証を保証する場合があります。
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>扱う規制要件が多すぎる
 
@@ -84,7 +84,7 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 - Power Virtual Agents
 - Microsoft Stream
 - Microsoft 脅威エキスパート
-- Windows Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 
@@ -93,7 +93,7 @@ ISO/IEC 27001 および PIMS のキー ポイント:
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 547d79093b65fba37a020781fbfce938d122c943
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398486"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846379"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>GDPR のための情報保護と Microsoft 365 の機能
 
@@ -58,7 +58,7 @@ Microsoft 365 サービス間での脅威保護を確立します。作業を開
 
 - [Office 365 のセキュリティ ロードマップ: 最初の 30 日間、90 日間、およびそれ以後の優先事項](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)。このロードマップには、機能を実装するための推奨事項を記載します。 
 - [Office 365 で脅威から保護します](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。 Microsoft 365 セキュリティ センターで実行できる保護のためのアクションについて説明します。
-- [Windows の脅威保護](https://docs.microsoft.com/windows/security/threat-protection/)。Windows Defender Advanced Threat Protection とその他の Windows 10 の機能の詳細について説明します。
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) Microsoft Defender for Endpoint と Windows 10 のその他の機能の詳細については、こちらを参照してください。
 
 ## <a name="learn-more"></a>詳細情報
 

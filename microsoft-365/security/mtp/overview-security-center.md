@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 セキュリティ センターの概要
-description: Microsoft の id、データ、デバイス、およびアプリのセキュリティを監視および管理するための新しいホームについて説明します。
+title: 概要-Microsoft 365 セキュリティセンター
+description: Microsoft 365 セキュリティを使用して、Microsoft id、データ、デバイス、およびアプリ全体のセキュリティを監視および管理する方法について説明します。
 keywords: セキュリティ、マルウェア、Microsoft 365、M365、セキュリティセンター、モニター、レポート、id、データ、デバイス、アプリ
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -16,12 +16,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.custom: seo-marvel-jun2020
+ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844802"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906852"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 

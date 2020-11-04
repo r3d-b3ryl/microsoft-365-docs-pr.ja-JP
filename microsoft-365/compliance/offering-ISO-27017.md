@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 3c57f608a8abdb9ce08efa663b7a88d9e4a684aa
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208299"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843363"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 情報セキュリティ コントロールの実施基準
 
@@ -46,7 +46,7 @@ ISO/IEC 27017 は、クラウド サービス プロバイダーとクラウド 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - [Dynamics 365、Dynamics 365、Dynamics 365 ドイツ](https://aka.ms/d365-compliance-list)
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune
@@ -87,7 +87,7 @@ Azure、Intune、Power BI の [ISO/IEC 27017:2015 認定証](https://aka.ms/azur
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[ Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンスマネージャーの**評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンスマネージャーで評価をする方法](compliance-manager-assessments.md)について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b9faa64baf5a361c9b4836ed78ed188b552b37e6
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e7a08e8536e4e4493c9f093774db0a20ef95b788
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416285"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843405"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 IT サービス マネジメント
 
@@ -39,7 +39,7 @@ ISO 20000-1:2011 認証を取得することは、Microsoft Azure にとって�
 
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune

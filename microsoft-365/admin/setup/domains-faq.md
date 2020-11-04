@@ -1,5 +1,5 @@
 ---
-title: ドメインに関する FAQ
+title: ドメインに関してよく寄せられる質問
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: ドメインの詳細については、よく寄せられる質問への回答を検索してください。
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: FAQ にある質問に対する回答を検索することによって、ドメイン (onmicrosoft ドメインと転送ドメイン) の詳細を確認してください。
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644586"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906479"
 ---
 # <a name="domains-faq"></a>ドメイン FAQ
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。
+> 管理センターは変更中です。 エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview)」を参照してください。
 
 ::: moniker-end
 
@@ -73,7 +74,7 @@ ms.locfileid: "48644586"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>SPF レコードはどうやって検証できますか?
 
-**SPF の TXT レコードを1つだけ**持っているか作成しておくことが重要です。 既に SPF レコードがある場合は、新しい Microsoft 365 値を作成するのではなく、新しい Microsoft 値を追加する必要があります。 Microsoft メールの SPF レコードを追加または更新した後、次のいずれかのツールを使用して構文が正しいことを確認してください。 
+**SPF の TXT レコードを1つだけ** 持っているか作成しておくことが重要です。 既に SPF レコードがある場合は、新しい Microsoft 365 値を作成するのではなく、新しい Microsoft 値を追加する必要があります。 Microsoft メールの SPF レコードを追加または更新した後、次のいずれかのツールを使用して構文が正しいことを確認してください。 
   
 - [SPF レコード テスト ツール](http://www.kitterman.com/spf/validate.html)
     
@@ -85,7 +86,7 @@ ms.locfileid: "48644586"
 
 ドメインとは、メール アドレスの **@** 記号の後や、Web アドレスの **www.** の後に表示される固有の名前です。通常は、  *yourbusiness.com*  や  *stateuniversity.edu*  のように、組織の名前と標準的なインターネット サフィックスの形式を取ります。 
   
-Microsoft 365 で "**渡 \@ contoso.com**" のようなカスタムドメインを使用すると、ブランドの信頼性と認識を構築するのに役立ちます。 
+Microsoft 365 で " **渡 \@ contoso.com** " のようなカスタムドメインを使用すると、ブランドの信頼性と認識を構築するのに役立ちます。 
   
 [Microsoft 365 でドメインを購入し、自動的に設定](../get-help-with-domains/buy-a-domain-name.md)することも、ドメインレジストラーで購入したり、既に所有しているドメインを購入したりすることもできます。
     
@@ -125,25 +126,25 @@ Microsoft 365 で "**渡 \@ contoso.com**" のようなカスタムドメイン�
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
+1. 管理センターで、 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
+1. 管理センターで、 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。
+1. 管理センターで、 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[ドメイン]</a> ページの順に移動します。
 
 ::: moniker-end
     
-2. [**ドメイン**] ページで、新しいメール アドレスの既定として設定するドメインを選択します。 
+2. [ **ドメイン** ] ページで、新しいメール アドレスの既定として設定するドメインを選択します。 
     
-3. [**既定に設定**] を選択します。
+3. [ **既定に設定** ] を選択します。
     
 ::: moniker range="o365-worldwide"
 
@@ -200,15 +201,15 @@ Microsoft 365 に複数のドメインを追加する場合は、追加した任
 
 ドメインを移行する手順については、「 [Microsoft から別のホストへのドメインの移行](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host)」を参照してください。
 
-## <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタムドメインから Microsoft 365 をパイロットする
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>カスタム ドメインから Microsoft 365 をパイロットする
 
 Microsoft 365 の電子メール機能をカスタムドメインから Microsoft 365 メールボックスにパイロットする手順については、「 [カスタムドメインからの microsoft 365 のパイロット](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain)」を参照してください。
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>"onmicrosoft.com" ドメインがあるのはなぜですか?
 
-Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.com*などのドメインを作成します。 サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.com*のようなドメインが含まれています。 
+Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.com* などのドメインを作成します。 サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.com* のようなドメインが含まれています。 
   
- ***Alan \@ contoso.com*のように電子メールを表示する場合**は[、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「[ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。 
+ ***Alan \@ contoso.com* のように電子メールを表示する場合** は [、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「 [ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。 
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません** 。 たとえば、選んだ初期ドメインが fourthcoffee.onmicrosoft.com の場合、fabrikam.onmicrosoft.com に変更することはできません。 別の onmicrosoft.com ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。 
     
@@ -223,9 +224,9 @@ Microsoft 365 は、サービスにサインアップするときに、 *contoso
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>"onmicrosoft.de" ドメインがあるのはなぜですか?
 
-Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.de*などのドメインを作成します。 サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de*のようなドメインが含まれています。 
+Microsoft 365 は、サービスにサインアップするときに、 *contoso.onmicrosoft.de* などのドメインを作成します。 サインアップ時に作成するユーザー ID には、 *alan@contoso.onmicrosoft.de* のようなドメインが含まれています。 
   
- ***Alan@contoso.de*のように電子メールを表示する場合**は[、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「[ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。 
+ ***Alan@contoso.de* のように電子メールを表示する場合** は [、ドメインを購入](../get-help-with-domains/buy-a-domain-name.md)するか、既に所有している場合は「 [ユーザーとドメインを Microsoft 365 に追加](add-domain.md)する」の手順に従ってください。 
   
 - **サインアップ後に onmicrosoft ドメインの名前は変更できません** 。 たとえば、選択した初期ドメインが fourthcoffee.onmicrosoft.de の場合、fabrikam.onmicrosoft.de に変更することはできません。 別の onmicrosoft.de ドメインを使用するには、Microsoft 365 で新しいサブスクリプションを開始する必要があります。 
     
@@ -239,7 +240,7 @@ Microsoft 365 は、サービスにサインアップするときに、 *contoso
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>非営利団体または教育機関のステータスを確認するにはどうすればよいですか?
 
-1. [管理センター](https://docs.microsoft.com/microsoft-365/admin/admin-home)で [**セットアップ**] を選択してウィザードを開始します。 (必ず Microsoft 365 にサインインしてください)。 
+1. [管理センター](https://docs.microsoft.com/microsoft-365/admin/admin-home)で [ **セットアップ** ] を選択してウィザードを開始します。 (必ず Microsoft 365 にサインインしてください)。 
     
 2. 学校の管理者になるには、Microsoft 365 で [  **管理者になる** ] オプションを選択します。 
     

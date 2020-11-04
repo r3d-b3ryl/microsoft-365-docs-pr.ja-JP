@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 29af3729260d3d87f0cf17b83beec70da6fb7931
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1d1756a6f5872fb639bca5f2597b1abac55726f4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208389"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843395"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 ビジネス継続性管理標準
 
@@ -38,7 +38,7 @@ Microsoft は、ビジネス継続性に関する ISO 22301 認証を取得し�
 - [Azure、Azure Government、Azure Germany](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - Dynamics 365、Dynamics 365 Government、Dynamics 365 ドイツ
-- Microsoft Defender Advanced Threat Protection
+- Microsoft Defender for Endpoint
 - Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune

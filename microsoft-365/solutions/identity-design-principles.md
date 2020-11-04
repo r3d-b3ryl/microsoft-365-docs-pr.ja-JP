@@ -1,6 +1,6 @@
 ---
-title: 'Id とそれ以外の場合: 1 つの設計者の視点'
-description: 説明
+title: Microsoft 365 エンタープライズリソース計画-セキュリティアーキテクチャ
+description: Microsoft の Alex Shteynberg、技術プリンシパルアーキテクトからの Microsoft Enterprise アーキテクチャの設計上の主要な戦略について説明します。
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845254"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906897"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>Id とそれ以外の場合: 1 つの設計者の視点
 
@@ -284,7 +285,7 @@ Office 365 には、 [統合監査ログ](https://docs.microsoft.com/microsoft-3
 
 高レベルの図:
 
-![ログフローの高レベルの図](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![セキュリティおよびコンプライアンスプログラムのログソースの図](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 上記の図は、イベントハブや Azure ストレージ、または Azure ログ分析にログを送信する組み込みの機能を示しています。 このまますぐに使えるすべてのシステムが含まれるわけではありません。 しかし、これらのログを同じリポジトリに送信する方法は他にもあります。 例については、「 [Teams を Azure Sentinel で保護](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)する」を参照してください。
 

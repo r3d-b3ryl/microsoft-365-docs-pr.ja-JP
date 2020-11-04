@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -26,25 +27,25 @@ search.appverid:
 - MOL140
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
-description: 'Gmail または別のメールプロバイダーからの連絡先、予定表、メールを Microsoft 365 にインポートする方法について説明します。 '
-ms.openlocfilehash: 4cc7a68929bdcc4cb79f3c7b78e07023a8952f81
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Gmail または別の電子メールプロバイダーから連絡先、予定表、および電子メールをインポートし、それらを Microsoft 365 に移行する方法について説明します。
+ms.openlocfilehash: eb82711bc8fb431c6e29272b601b898566446f02
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779011"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906383"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
-Gmail または別の電子メールプロバイダーからのメールを、Microsoft 365 にインポートまたはコピーします。
+Gmail または別の電子メールプロバイダーから Microsoft 365 にメールをインポートまたは移行します。
   
- **ヘルプを表示するにはどうすればよいですか?**  [ビジネスサポートについては、Microsoft 365 にお問い合わせ](../contact-support-for-business-products.md)ください。 
+ **ヘルプを表示するにはどうすればよいですか?**  [ビジネスサポートについては、Microsoft 365 にお問い合わせ](../contact-support-for-business-products.md) ください。 
   
-この作業には、デスクトップにインストールされるバージョンの Outlook を使用する必要があります。 Outlook は、ほとんどの Microsoft 365[プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
+この作業には、デスクトップにインストールされるバージョンの Outlook を使用する必要があります。 Outlook は、ほとんどの Microsoft 365 [プラン](https://go.microsoft.com/fwlink/p/?LinkId=723731)に含まれています。
   
-### <a name="import-from-gmail"></a>Gmail からのインポート
+### <a name="migrate-gmail-to-microsoft-365"></a>Gmail を Microsoft 365 に移行する
 
-Gmail からメール、連絡先、予定表を Microsoft 365 を使用して Outlook にインポートするには、次の手順を実行します。
+次の手順に従って、Microsoft 365 を使用して Gmail からメール、連絡先、予定表を Outlook にインポートまたは移行します。
   
 - [Gmail を Outlook にインポートする](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
@@ -54,7 +55,7 @@ Gmail からメール、連絡先、予定表を Microsoft 365 を使用して O
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-from-outlook-desktop"></a>Outlook からのインポート (デスクトップ)
+### <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Outlook pst ファイルを Microsoft 365 (デスクトップ) にインポートする
 
 メール、連絡先、予定表を Outlook から .pst ファイルにエクスポートし、そのファイルを Microsoft 365 を使用して Outlook にインポートするには、次の手順を実行します。
   
@@ -88,6 +89,4 @@ Outlook にアカウント (個人用 Gmail アカウントなど) を追加し�
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>複数のメールボックス: 管理者は、電子メール、連絡先、予定表を Microsoft 365 に一括インポートできます。
 
-インポート元のメール システムによっては、いくつかの一括移行処理方法を選択できます。 [複数の電子メールアカウントを Microsoft 365 に移行](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)して、どの方法が機能するかを決定する方法を確認します。 
-  
-
+インポート元のメール システムによっては、いくつかの一括移行処理方法を選択できます。 [複数の電子メールアカウントを Microsoft 365 に移行](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)して、どの方法が機能するかを決定する方法を確認します。

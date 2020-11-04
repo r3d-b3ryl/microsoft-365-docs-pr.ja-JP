@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online でのファイルの保存と共有のためのチームサイトのカスタマイズ
+title: SharePoint チームサイトをカスタマイズしてファイルの保存と共有を行う
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,19 +17,20 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: この記事では、ファイルの保存と共有に関してチームサイトをカスタマイズ、整理、および管理する方法について説明します。
-ms.openlocfilehash: f2c59607d006cd6e5529d9e5ffb3d2f6eead6edf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: SharePoint チームサイトをドキュメントライブラリ、リスト、およびハブを使用してカスタマイズ、整理、および管理する方法について説明します。
+ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644569"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906491"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>ファイルの保存と共有についてチームサイトをカスタマイズする
 
@@ -39,7 +40,7 @@ ms.locfileid: "48644569"
   
 [SharePoint でチーム サイトを作成する](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-チームサイトのカスタマイズ、整理、および管理に役立ついくつかのアイデアとリンクを以下に示します。 
+チームサイトのカスタマイズ、整理、および管理に役立ついくつかのアイデアとリンクを以下に示します。
   
  
 ## <a name="customize-your-team-site"></a>チーム サイトをカスタマイズする
@@ -60,7 +61,7 @@ ms.locfileid: "48644569"
   
 ## <a name="work-with-document-libraries"></a>ドキュメントライブラリを操作する
 
-チームサイトには、すぐに使用を開始できるドキュメントライブラリが含まれています。 
+チームサイトには、ファイルストレージとドキュメント管理のためにすぐに使用できるドキュメントライブラリが含まれています。
 
 アップロードを開始するには、「[ドキュメントライブラリへのフォルダーまたはファイルのアップロード](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)」を参照してください。
    
@@ -70,7 +71,7 @@ ms.locfileid: "48644569"
   
 ## <a name="work-with-lists-to-organize-data"></a>リストを操作してデータを整理する
 
-SharePoint には、サイトに追加できるリスト (リンクの一覧、予定表、連絡先、タスクなど) のテンプレートが多数含まれています。 
+SharePoint には、サイトに追加できるリスト (リンクの一覧、予定表、連絡先、タスクなど) のテンプレートが多数含まれています。
   
 [SharePoint でリストを作成](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online)する方法について説明します。
   
@@ -82,7 +83,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
 
 ## <a name="organize-sites-into-hubs"></a>サイトをハブに編成する
 
-チームサイトは、サイトに関連付けられたグループのすべてのメンバーとほぼすべての情報を共有します。 特定の顧客に対して別のサイトを使用する場合は、追加のチームサイトを作成し、それらを SharePoint ハブサイトを使用して管理します。 詳細については、以下を参照してください。 
+チームサイトは、サイトに関連付けられたグループのすべてのメンバーとほぼすべての情報を共有します。 特定の顧客に対して別のサイトを使用する場合は、追加のチームサイトを作成し、それらを SharePoint ハブサイトを使用して管理します。 詳細については、以下を参照してください。
   
 ハブサイトを使用すると、サイトを追加して関連付けることができます。 詳細について [は、「SharePoint ハブサイトとは](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)」を参照してください。
   
@@ -92,7 +93,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 ## <a name="sharing-files-with-the-team"></a>チームでファイルを共有する
 
-ストレージと整理は最初に行いますが、チームや外部クライアントとの共有も重要です。 ここでは、ユーザーを管理し、データを共有するのに役立つトピックへのリンクを示します。 
+ファイルストレージとドキュメントの管理は開始ですが、チームや外部クライアントとの共有も重要です。 ここでは、ユーザーを管理し、データを共有するのに役立つトピックへのリンクを示します。
   
 チームとのファイル共有については、「 [Microsoft 365 で SharePoint ファイルまたはフォルダーを共有](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)する」を参照してください。
   
@@ -100,7 +101,7 @@ SharePoint には、サイトに追加できるリスト (リンクの一覧、�
   
 ## <a name="managing-users-and-groups"></a>ユーザーおよびグループを管理する
 
-チームサイトを管理するときに、ユーザーを追加または削除することが必要な場合があります。 ここでは、チームサイトでのユーザーの理解、追加、管理に役立つ情報について説明します。 
+チームサイトを管理するときに、ユーザーを追加または削除することが必要な場合があります。 ここでは、チームサイトでのユーザーの理解、追加、管理に役立つ情報について説明します。
   
 [グループについて理解し、管理](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)するためのビデオを表示します。 
   
@@ -119,6 +120,3 @@ Microsoft 365 グループにユーザーを追加するには、「 [ユーザ�
   - [Microsoft 365 を使用して Windows Phone で Office をセットアップする](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [作業ファイルの保存、同期、共有を行う (OneDrive for Business)](https://go.microsoft.com/fwlink/?LinkID=511458)
-    
-
-

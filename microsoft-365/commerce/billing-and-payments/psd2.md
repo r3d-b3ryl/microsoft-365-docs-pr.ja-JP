@@ -14,18 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 2019年9月14日以降に、欧州経済地域の31国の銀行は、支払いを処理する前にオンライン購入を行うユーザーの身元を確認する必要があります。
+description: 2019年9月14日の場合、この金額を処理する前に、オンライン購入を行うユーザーの id を確認するには、欧州経済地域の31国の銀行が必要になります。
 keywords: 支払いサービスディレクティブ2、強力な顧客認証、多要素認証
-ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638425"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906611"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>一般法人向けお客様向けのお支払いサービス指令2および強力な顧客認証
 
-2019年9月14日以降に、欧州経済地域の31国の銀行は、支払いを処理する前にオンライン購入を行うユーザーの身元を確認する必要があります。 この検証では、オンライン購入が安全で保護されていることを確認するために、多要素認証が必要になります。 この検証要件の日付は、一部の国では遅延されます。 
+2019年9月14日の場合、この金額を処理する前に、オンライン購入を行うユーザーの id を確認するには、欧州経済地域の31国の銀行が必要です。 この検証では、オンライン購入が安全で保護されていることを確認するために、多要素認証が必要になります。 この検証要件の日付は、一部の国では遅延されます。
 
 詳細については、「Microsoft FAQ」を参照してください。 [支払いサービスディレクティブ2と強力な顧客認証について説明](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)します。
 

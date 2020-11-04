@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b4767b9cc3d267020fee1c44876bf47442d0cea2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 61744c9c9d8bd5a7bb94cf9ab3599be0c2889efc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415495"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843109"
 ---
 # <a name="european-union-model-clauses"></a>欧州連合モデル条項
 
@@ -51,7 +51,7 @@ Microsoft は、監査と承認のために標準契約条項を EU の第 29 �
 - Power Apps クラウド サービス (スタンドアロン サービス、または Office 365 および Dynamics 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Power BI クラウド サービス (スタンドアロン サービス、または Office 365 ブランド プランあるいはスイートに搭載されているサービス)
 - Azure DevOps Services
-- Windows Defender Advanced Threat Protection は、次のクラウドサービス部分を対象としています。エンドポイント検出 & 応答、自動調査 & 改善されたスコア。
+- Microsoft Defender for Endpoint は、次のクラウド サービス部分を対象としています。エンドポイント検出 & 応答、自動調査 & 修復、セキュリティで保護されたスコア。
 
 ## <a name="audits-reports-and-certificates"></a>監査、レポート、証明書
 

@@ -17,21 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを使用してレコードを宣言する。
-ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 34b5272a8bed9be01c3965dae258c88facec0145
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198926"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830606"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>保持ラベルを使用してレコードを宣言する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
 
-ドキュメントとメールを[レコード](records-management.md#records)として宣言するには、コンテンツを**レコード**または**規制レコード**としてマークする[保持ラベル](retention.md#retention-labels)を使用します。
-
-> [!NOTE]
-> 規制レコードは、現在プレビュー中です。
+ドキュメントとメールを [レコード](records-management.md#records)として宣言するには、コンテンツを **レコード** または **規制レコード** としてマークする [保持ラベル](retention.md#retention-labels)を使用します。
 
 レコードと規制レコードのどちらを使用すればよいかわからない場合は、「[許可またはブロックされているアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。 規制レコードを使用する必要がある場合は、次のセクションで説明するように、まず PowerShell コマンドを実行する必要があります。
 
@@ -40,7 +37,7 @@ ms.locfileid: "48198926"
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>規制レコードとしてコンテンツをマークするオプションを表示する方法
 
 >[!NOTE] 
-> 次の手順は、監査ログの [[アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)] セクションの [**保持ラベルの規制レコード オプションを有効にする**] をログに記録する監査可能なアクションです。
+> 次の手順は、監査ログの [ [アイテム保持ポリシーと保持ラベルのアクティビティ](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)] セクションの [ **保持ラベルの規制レコード オプションを有効にする** ] をログに記録する監査可能なアクションです。
 
 既定では、コンテンツを規制レコードとしてマークするための保持ラベル オプションは、保持ラベル ウィザードには表示されません。 このオプションを表示するには、まず PowerShell コマンドを実行する必要があります。
 
@@ -57,7 +54,7 @@ ms.locfileid: "48198926"
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>保持ラベルを構成してレコードを宣言する
 
-Microsoft 365 コンプライアンス センターの**レコード管理**ソリューションから保持ラベルを作成または編集する場合、アイテムをレコードとしてマークするオプションがあります。 前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。
+Microsoft 365 コンプライアンス センターの **レコード管理** ソリューションから保持ラベルを作成または編集する場合、アイテムをレコードとしてマークするオプションがあります。 前のセクションで実行した PowerShell コマンドを実行した場合、代わりに規制レコードとしてアイテムをマークすることができます。
 
 例:
 

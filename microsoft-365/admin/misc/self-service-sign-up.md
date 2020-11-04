@@ -1,5 +1,5 @@
 ---
-title: 組織でのセルフサービス サインアップの使用
+title: 組織でのセルフサービスサインアップの使用
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: Microsoft 365 セルフサービスのサインアップと、Microsoft Power Apps、Microsoft Flow、Dynamics 365 for Finance などの利用可能なセルフサービスプログラムについて説明します。
-ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 21e41661141a817a1751c80608035d839d2e3952
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324482"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906575"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービス サインアップの使用
+# <a name="using-self-service-sign-up-in-your-organization"></a>組織でのセルフサービスサインアップの使用
 
-セルフサービスサインアップにより、組織内のユーザーが Microsoft のオンラインサービスにサインアップするのが容易になります。 ユーザーはサブスクリプションによって支払われるサービスを使用するようにサインアップすることができます。または、自分に代わってアクションを実行するよう求められずに、無料サービスを使用することができます。
+セルフサービスによるサインアップにより、組織内のユーザーが Microsoft のオンラインサービスにサインアップするのが容易になります。 このサインアッププロセスは、ユーザーが自分のサブスクリプションによって支払われるサービスを使用するようにサインアップすることができます。または、自分に代わってアクションを実行することを求められずに、無料のサービスを使用することができます。
   
-## <a name="how-self-service-sign-up-works"></a>セルフサービス サインアップのしくみ
+## <a name="how-self-service-sign-up-works"></a>セルフサービスによるサインアップのしくみ
 
 次の例は、学校の場合のセルフサービス サインアップのしくみを説明しています。テナントでセルフサービス プログラムを有効にしているどの組織の場合も、同じプロセスを使用できます。
   
@@ -42,11 +42,10 @@ ms.locfileid: "47324482"
 
 ## <a name="available-self-service-programs"></a>利用可能なセルフサービス プログラム
 
-以下は、現在利用可能なセルフサービス プログラムです。この一覧は、新しいプログラムが追加されるたびに更新されます。
+以下は、現在利用可能なセルフサービス プログラムです。 この一覧は、新しいプログラムが追加されるたびに更新されます。
   
-|||||
+| プログラム <br/> | 説明 <br/> | その他の情報 <br/> | セルフサービスサインアップ用の web サイト <br/> |
 |:-----|:-----|:-----|:-----|
-|**プログラム** <br/> |**説明** <br/> |**追加情報** <br/> |****セルフサービス サインアップ用の Web サイト**** <br/> |
 |Office 365 A1 * * * * <br/> |任意の学生または教師は、学校の電子メールアドレスを使用して無料の Office 365 にサインアップし、web 用の Office アプリを取得できます。また、1 TB の OneDrive クラウドストレージと SharePoint Online を、クラス、チーム、およびプロジェクトサイトで利用できます。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1 Plus** <br/> |対象とする学生と教師は、Office 365 A1 Plus にサインアップできます。これには、上記のすべての機能と Microsoft 365 Apps for enterprise が含まれます。 Microsoft 365 enterprise 用アプリは、デスクトップまたはラップトップコンピューターにインストールされている Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access、Skype for Business などの生産性向上ソフトウェアです。  <br/> |[Office 365 Education についてよく寄せられる技術的な質問](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 Education](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI を使用すると、ユーザーはデータを表示したり、探索を共有したり、直観的な新しい方法で共同作業したりできます。 <br/> 組織が既に加入している場合は、「Power BI Pro ユーザーの試用版」のライセンスが追加されている可能性があります。これは、ユーザーが限定的で、高度な機能へのアクセスを無料で提供しています。  <br/> |[組織内の Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
@@ -54,7 +53,7 @@ ms.locfileid: "47324482"
 |**Microsoft Power Apps** <br/> |PowerApps では、管理者が作成したアプリ、または他のユーザーが作成して共有したアプリを実行することで組織データを管理することができます。アプリはスマートフォンなどのモバイル デバイスで動作します。または Dynamics 365 を開くことによって、ブラウザで実行することもできます。無限の多様性を備えるアプリを作成することができます。すべて、C# などのプログラミング言語は必要ありません。  <br/> |[PowerApps のセルフサービス サインアップ](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**Dynamics 365 for Financials** <br/> |中小企業向けの完全なビジネス ソリューションおよび財務管理ソリューションを提供します。Dynamics 365 for Financials を使用することで、使用開始の 1 日目から注文、販売、請求書やレポートの作成が容易になります。  <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[Microsoft Dynamics 365 for Financials](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**Microsoft Dynamics 365 for Operations** <br/> |ビジネスのスピードを加速できます。Dynamics 365 for Operations の完全な ERP ツールは、グローバルなスケーラビリティとデジタル インテリジェンスを提供し、企業のペースに応じた成長をサポートします。  <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[Microsoft Dynamics 365 for Operations](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
-|**Microsoft AppSource** <br/> |Microsoft AppSource は、Microsoft クラウド プラットフォーム上に構築された SaaS (サービスとしてのソフトウェア) のビジネス アプリを対象としています。AppSource では、Azure、Dynamics 365、Office 365、Power BI などの Microsoft 製品の機能を拡張する数百のアプリ、アドオン、コンテンツ パックを扱っています。  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
+|**Microsoft AppSource** <br/> |Microsoft AppSource は、Microsoft クラウド プラットフォーム上に構築された SaaS (サービスとしてのソフトウェア) のビジネス アプリを対象としています。 AppSource には、Azure、Dynamics 365、Office 365、Power BI などの Microsoft 製品の機能を拡張する数百種類のアプリ、アドオン、およびコンテンツパックが用意されています。  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
 |**Microsoft パートナー インセンティブ** <br/> |Microsoft パートナー ネットワークでは、3 種類のメンバーシップを提供しています。各メンバーシップでは、ビジネスの成長をサポートするさまざまな特典をご用意しています。目標の実現に向けて、お客様の固有のニーズに合ったレベルのプログラムにご参加いただき、より多くの特典を得て、Microsoft やネットワーク内のその他のパートナーとの関係を深めてください。  <br/> |[Microsoft パートナー インセンティブ](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |[Microsoft パートナー インセンティブ](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |
 |**Microsoft Business Center** <br/> |Microsoft ビジネスセンターは、Microsoft 製品とサービス契約 (MPSA) を通じて購入したお客様のためのポータルです。 <br/> |[クイック スタート: Microsoft Business Center への登録](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsoft ボリュームライセンスサービスセンター** <br/> |Microsoft ボリュームライセンスサービスセンターには、Enterprise で購入したライセンス、選択、教育 (キャンパスまたは学校)、オープン価値、オープンライセンス、ISV ロイヤリティアグリーメントが表示されます。  <br/> |[VLSC のトレーニングとリソース](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[ボリュームライセンスサービスセンター](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
