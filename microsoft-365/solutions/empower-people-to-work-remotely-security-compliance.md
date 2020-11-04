@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスのサービスを使用して、リモート ワーカー向けにお客様のアプリケーション、データ、およびデバイスを保護します。
-ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681470"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845230"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>手順 3: リモート ワーカーのためのセキュリティとコンプライアンスの展開
 
@@ -49,9 +49,9 @@ Microsoft 365 のこれらのセキュリティ機能を使用して、アプリ
 
 | 機能 | 説明 | ライセンス |
 |:-------|:-----|:-------|
-| Office 365 Advanced Threat Protection (ATP) | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 <br><br> Office ATP はアプリからのシグナルを収集して分析し、セキュリティ リスクの検出、調査、修復を行い、メール メッセージ、リンク (URL)、共同作業のツールによってもたらされる悪意のある脅威から組織を保護します。 | Microsoft 365 E3 または E5 | 
+| Microsoft Defender for Office 365 | メール メッセージ、Office ドキュメント、共同作業のツールなど、Microsoft 365 のアプリやデータを攻撃から保護します。 <br><br> Microsoft Defender for Office 365 はアプリからのシグナルを収集して分析し、セキュリティ リスクの検出、調査、修復を行い、メール メッセージ、リンク (URL)、共同作業のツールによってもたらされる悪意のある脅威から組織を保護します。 | Microsoft 365 E3 または E5 | 
 | マルウェア対策 | Microsoft Defender ウイルス対策と Device Guard は、デバイスベースのマルウェア対策を提供します。 <br><br> SharePoint Online では、既知のマルウェアのファイル アップロードを自動的にスキャンします。 ‎<br><br> Exchange Online Protection (EOP) は、クラウド メールボックスを保護します。 | Microsoft 365 E3 または E5 |
-| Microsoft Defender ATP | サイバー攻撃の脅威やデータ侵害から組織のデバイスを保護し、高度な脅威を検出し、調査し、それらに対応します。 | Microsoft 365 E5 |
+| Microsoft Defender for Endpoint | サイバー攻撃の脅威やデータ侵害から組織のデバイスを保護し、高度な脅威を検出し、調査し、それらに対応します。 | Microsoft 365 E5 |
 | Cloud App Security | Microsoft 365 やその他の SaaS アプリなどのクラウドベースのサービスを攻撃から保護します。 | Microsoft 365 E5 または個別のクラウド アプリのセキュリティ ライセンス |
 | Azure AD Identity Protection  | ID ベースのリスクを自動的に検出して修正します。 <br><br>リスクベースの条件付きアクセス ポリシーを作成し、危険なサインインに対して多要素認証 (MFA) を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 |
 ||||

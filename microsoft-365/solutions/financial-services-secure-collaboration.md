@@ -8,16 +8,16 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-ms.custom: ''
+ms.custom: seo-marvel-jun2020
 localization_priority: Priority
-description: 金融サービスがデータとシステムをセキュリティで保護し、規制を遵守しつつ、最新のコラボレーション プラットフォームに移行する際に Microsoft 365 がどのように役立つかを説明します
+description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
-ms.openlocfilehash: ba8feb12dbd9e7b82a2c85b0a1d8d26110e10140
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844190"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906909"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 

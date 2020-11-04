@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: ワーカーがいつでもどこからでもリモートで作業できるようにするセキュリティとサービスのインフラストラクチャを構成します。
-ms.openlocfilehash: 60467f0ed3cf7aa75481cb3bb49f954c32bf2e7d
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 23ec0ef33294bb532229c8f736ab5b6a5d000d4e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681398"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845242"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -79,7 +79,7 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 |:-------|:-----|:-------|
 | セキュリティの既定値が適用されている MFA   | サインインには、2 つ目の認証形式を要求することで、ID とデバイスを侵害から保護します。セキュリティの既定値では、すべてのユーザー アカウントに MFA が必要です。   | Microsoft 365 E3 または E5 |
 | 条件付きアクセスが適用されている MFA| 条件付きアクセス ポリシーを使用したサインインのプロパティに基づいて MFA を要求します。    | Microsoft 365 E3 または E5 | 
-| リスクベースの条件付きアクセスが適用されている MFA   | Azure Advanced Threat Protection によるユーザー サインインのリスクに基づいて MFA を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 | 
+| リスクベースの条件付きアクセスが適用されている MFA   | ユーザーが Microsoft Defender for Identity でサインインするリスクに基づいて MFA を要求します。 | Azure AD Premium P2 ライセンスを含む Microsoft 365 E5 または E3 | 
 | セルフサービスによるパスワードのリセット (SSPR)    | ユーザーによるパスワードまたはアカウントのリセットまたはロック解除を許可します。  | Microsoft 365 E3 または E5 |
 | Azure AD アプリケーション プロキシ    | イントラネット サーバーでホストされている Web ベースのアプリケーションに安全なリモート アクセスを提供します。   | 別の有料 Azure サブスクリプションが必要 |
 | Azure ポイント対サイト VPN   | Azure 仮想ネットワークを介してリモート ワーカーのデバイスからイントラネットへの安全な接続を作成します。   | 別の有料 Azure サブスクリプションが必要 |

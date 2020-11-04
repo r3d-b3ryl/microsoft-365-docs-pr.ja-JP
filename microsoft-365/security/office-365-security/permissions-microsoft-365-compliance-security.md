@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 セキュリティ センターまたは Microsoft 365 コンプライアンス センターを使用すると、セキュリティまたはコンプライアンスに関連するすべてのタスクについて、アクセス許可を一元的に管理できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c98e0b710f5b88c17e089fd974e924728f27f3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9ad17933592b860fb81e469fd55a454c90b71320
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202677"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845758"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 コンプライアンス センターと Microsoft 365 セキュリティ センターのアクセス許可
 
@@ -97,14 +97,14 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |---|---|
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|Microsoft 365 サービス全体のセキュリティ関連ポリシーの監視。 <br/><br/>  セキュリティの脅威とアラートの管理。 <br/><br/> レポートの表示。 <br/><br/> 機密ラベルの管理。|
 |**Identity Protection Center**|セキュリティ閲覧者ロールができるすべてのことに加え、パスワードの再設定以外のすべての Identity Protection Center の操作の実行。|
-|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> Azure AD ロールの割り当てまたは設定を管理することは**できません**。|
+|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> Azure AD ロールの割り当てまたは設定を管理することは **できません** 。|
 |[**セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|セキュリティ ポリシーの管理。 <br/><br/> セキュリティの脅威の表示、調査、対応 <br/><br/> レポートの表示。 <br/><br/> 機密ラベルの管理。|
-|**Azure Advanced Threat Protection**|疑わしいセキュリティ アクティビティの監視と対応。|
-|**Windows Defender ATP および EDR**|ロールの割り当て。 <br/><br/> コンピューター グループの管理。 <br/><br/> エンドポイントの脅威の検出と自動修復の構成。 <br/><br/> アラートの表示、調査、対応。|
-|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
+|**Microsoft Defender for Identity**|疑わしいセキュリティ アクティビティの監視と対応。|
+|**Microsoft Defender for Endpoint および EDR**|ロールの割り当て。 <br/><br/> コンピューター グループの管理。 <br/><br/> エンドポイントの脅威の検出と自動修復の構成。 <br/><br/> アラートの表示、調査、対応。|
+|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは **できません** 。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|管理者の追加、ポリシーと設定の追加、ログのアップロード、ガバナンス アクションの実行。|
-|[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (準備中)|セキュリティ ポリシーの表示、セキュリティ状態の表示、セキュリティ ポリシーの編集、アラートと推奨事項の表示、アラートと推奨事項の却下。|
-|[**Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
+|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (近日公開)|セキュリティ ポリシーの表示、セキュリティ状態の表示、セキュリティ ポリシーの編集、アラートと推奨事項の表示、アラートと推奨事項の却下。|
+|[_ *Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
 |
 
 ### <a name="security-operator"></a>セキュリティ オペレーター
@@ -119,8 +119,8 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |**Identity Protection Center** (近日対応予定)|セキュリティ閲覧者ロールができるすべてのこと。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|セキュリティ閲覧者ロールができるすべてのこと。|
 |[**セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> セキュリティの脅威の表示、調査、対応|
-|**Windows Defender ATP および EDR**|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> アラートの表示、調査、対応。|
-|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
+|**Microsoft Defender for Endpoint および EDR**|セキュリティ閲覧者ロールができるすべてのこと。 <br/><br/> アラートの表示、調査、対応。|
+|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは **できません** 。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|セキュリティ閲覧者ロールができるすべてのことに加え、アラートの表示および破棄。|
 |[**Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
 |
@@ -134,14 +134,14 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 |このサービスにおいて|セキュリティ閲覧者ができること|
 |---|---|
 |[**Microsoft 365 セキュリティ センター**](https://security.microsoft.com/)|Microsoft 365 サービス全体のセキュリティ関連ポリシーの表示。 <br/><br/> セキュリティの脅威とアラートの表示。 <br/><br/> レポートの表示。|
-|**Identity Protection Center**|各セキュリティ機能の全セキュリティ レポートと設定情報の閲覧: スパム対策、暗号化、データ損失防止 (DLP)、マルウェア対策、Advanced Threat Protection (ATP)、フィッシング詐欺対策、メール フロー ルール (トランスポート ルールとも呼ばれる)。|
-|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|読み取り専用アクセスを使用した Azure AD PIM に記載されているすべての情報の表示: Azure AD ロールの割り当てに関するポリシーとレポート、セキュリティレビュー、および将来的には Azure AD ロールの割り当て以外のシナリオでのポリシー データとレポート。 <br/><br/> Azure AD PIM へのサインアップおよび Azure AD PIM の変更を行うことは**できません**。 このロールのユーザーは、追加のロール (グローバル管理者や特権ロール管理者など) の資格がある場合、PIM ポータルまたは PowerShell からそれらのロールを有効化することができます。|
+|**Identity Protection Center**|各セキュリティ機能の全セキュリティ レポートと設定情報の閲覧: スパム対策、暗号化、データ損失防止 (DLP)、マルウェア対策、Defender for Office 365、フィッシング詐欺対策、メール フロー ルール (トランスポート ルールとも呼ばれる)。|
+|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|読み取り専用アクセスを使用した Azure AD PIM に記載されているすべての情報の表示: Azure AD ロールの割り当てに関するポリシーとレポート、セキュリティレビュー、および将来的には Azure AD ロールの割り当て以外のシナリオでのポリシー データとレポート。 <br/><br/> Azure AD PIM へのサインアップおよび Azure AD PIM の変更を行うことは **できません** 。 このロールのユーザーは、追加のロール (グローバル管理者や特権ロール管理者など) の資格がある場合、PIM ポータルまたは PowerShell からそれらのロールを有効化することができます。|
 |[**セキュリティ/コンプライアンス センター**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|セキュリティ ポリシーの表示。 <br/><br/> セキュリティの脅威の表示および調査。 <br/><br/> レポートの表示。|
-|**Windows Defender ATP および EDR**|アラートの表示と調査。|
-|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは**できません**。|
+|**Microsoft Defender for Endpoint および EDR**|アラートの表示と調査。|
+|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|ユーザー、デバイス、登録、構成、アプリケーション情報の表示。 <br/><br/> Intune に変更を加えることは **できません** 。|
 |[**Cloud App Security**](https://docs.microsoft.com/cloud-app-security/manage-admins)|読み取り専用アクセス許可を使用して情報を表示する。 <br/><br/> 通知の管理。|
-|[**Azure Security Center**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|推奨事項とアラートの表示。 <br/><br/> セキュリティ ポリシーの表示。 <br/><br/> セキュリティの状態を表示することはできますが、変更することはできません。|
-|[**Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
+|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|推奨事項とアラートの表示。 <br/><br/> セキュリティ ポリシーの表示。 <br/><br/> セキュリティの状態を表示することはできますが、変更することはできません。|
+|[_ *Office 365 サービス正常性**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|Office 365 サービスの正常性の表示。|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>全体管理者は Azure Active Directory のロール管理が可能
@@ -160,9 +160,9 @@ Microsoft 365 コンプライアンス センターと Microsoft 365 セキュ�
 
 ### <a name="breaking-inheritance"></a>継承の解除
 
-Azure Active Directoryでこれらのロールを管理するときは、**すべて**の Microsoft 365 サービスを一元的に管理しているということを理解しておくことが重要です。 ただし、セキュリティ/コンプライアンス センターなどの特定のサービスでロールを管理する場合は、その特定のサービスにおけるロール**のみ**を管理しています。 サービスにおけるロールの割り当てとアクセス許可は、Azure Active Directory のロールに与えられているアクセス許可より優先されます。
+Azure Active Directoryでこれらのロールを管理するときは、 **すべて** の Microsoft 365 サービスを一元的に管理しているということを理解しておくことが重要です。 ただし、セキュリティ/コンプライアンス センターなどの特定のサービスでロールを管理する場合は、その特定のサービスにおけるロール **のみ** を管理しています。 サービスにおけるロールの割り当てとアクセス許可は、Azure Active Directory のロールに与えられているアクセス許可より優先されます。
 
-これは、たとえば、セキュリティ管理者ロールに割り当てられているユーザーが、インシデントを管理するためのアクセス許可を持っていない場合に便利です。 ただし、Windows Defender Advanced Threat Protection でアクセス許可を使用して、そのサービスのインシデント管理に特定のアクセス許可を与えることができます。
+これは、たとえば、セキュリティ管理者ロールに割り当てられているユーザーが、インシデントを管理するためのアクセス許可を持っていない場合に便利です。 ただし、Microsoft Defender for Endpoint でアクセス許可を使用して、そのサービスのインシデント管理に特定のアクセス許可を与えることができます。
 
 ## <a name="where-to-find-role-information-for-each-microsoft-365-service"></a>Microsoft 365 の各サービスのロール情報の場所
 
@@ -174,7 +174,7 @@ Azure Active Directoryでこれらのロールを管理するときは、**す�
 |---|---|
 |Office 365 と Microsoft 365 for business での管理者ロール|[Microsoft 365 管理者ロール](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
 |Azure Active Directory (Azure AD) および Azure AD Identity Protection|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Azure Advanced Threat Protection|[Azure ATP ロール グループ](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
+|Microsoft Defender for Identity|[Microsoft Defender for Identity の役割グループ](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |コンプライアンス マネージャー|[コンプライアンス マネージャー](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Exchange のロール ベースのアクセス制御](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
@@ -186,7 +186,7 @@ Azure Active Directoryでこれらのロールを管理するときは、**す�
 |セキュリティ スコア|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |SharePoint Online|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <br/><br/> [Office 365 での SharePoint 管理者ロールについて](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)|
 |Teams/Skype for Business|[Azure AD 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Windows Defender Advanced Threat Protection|[Windows Defender ATP のロール ベースのアクセス制御](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)|
+|Microsoft Defender for Endpoint|[Microsoft Defender for Endpoint の役割ベースのアクセス制御](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)|
 |
 
 ## <a name="what-is-coming-soon"></a>まもなく提供される機能

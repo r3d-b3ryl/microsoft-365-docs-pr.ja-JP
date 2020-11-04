@@ -266,6 +266,8 @@
           href: dlp-sensitivity-label-as-condition.md
         - name: Microsoft 以外のクラウド アプリにはデータ損失防止ポリシーを使用する
           href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: DLP ポリシーの条件と例外 (プレビュー)
+          href: dlp-conditions-and-exceptions.md
 - name: 情報ガバナンスの管理
   items:
     - name: データを統制する

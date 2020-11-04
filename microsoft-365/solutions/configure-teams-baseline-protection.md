@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: ベースライン レベルの保護を使用してチームを展開する方法について説明します。
-ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398867"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845302"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>ベースライン保護を使用してチームを構成する
 
@@ -33,13 +33,13 @@ ms.locfileid: "48398867"
 
 最初のステップとして、基本的な ID とデバイス アクセス ポリシーの構成をお勧めします。 詳細については、「[Policy recommendations for securing Teams chats, groups, and files (Teams チャット、グループ、ファイルをセキュリティで保護するためのポリシーの推奨事項)](../security/office-365-security/teams-access-policies.md)」を参照してください。
 
-また、ドキュメント、添付ファイル、リンクなどに含まれているマルウェアから保護するために、基本的な Advanced Threat Protection 機能をオンにすることもお勧めします。 次の表の各オプションをオンにすることをお勧めします。
+また、ドキュメント、添付ファイル、リンクなどに含まれているマルウェアから保護するために、基本的な Defender for Office 365 機能をオンにすることもお勧めします。 次の表の各オプションをオンにすることをお勧めします。
 
 |オプション|情報|
 |:------|:-----------|
-|SPO、OneDrive、Teams 用の ATP の安全な添付ファイル機能|[Office 365 の ATP の安全な添付ファイル](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[SharePoint、OneDrive、Microsoft Teams 用の Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|ATP の安全なドキュメント|[Office 365 Advanced Threat Protection の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Teams 用の ATP の安全なリンク機能|[Teams での Office 365 の安全なリンク](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Office 365 ATP の安全なリンク](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|SPO、OneDrive、Teams 用の安全な添付ファイル機能|[添付ファイル保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender for Office 365 - SharePoint、OneDrive、Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
+|安全なドキュメント|[Microsoft Defender for Office 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
+|Teams 用の安全なリンク|[Teams での Office 365 の安全なリンク](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[リンク保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 
 ## <a name="teams-guest-sharing"></a>Teams ゲスト共有
 
@@ -50,11 +50,11 @@ ms.locfileid: "48398867"
 Teams ゲスト アクセスの設定を行うには
 
 1. [https://admin.microsoft.com](https://admin.microsoft.com) で、Microsoft 365 管理センターにログインします。
-2. 左側のナビゲーションで [**すべて表示**] をクリックします。
-3. [**管理センター**] で、[**Teams**] をクリックします。
-4. Teams 管理センターの左側のナビゲーションで、[**組織全体の設定**] を展開して [**ゲスト アクセス**] をクリックします。
-5. [**Teams でのゲスト アクセスを許可する**] が [**オン**] に設定されていることを確認します。
-6. 追加のゲスト設定に必要な変更を加えて、[**保存**] をクリックします。
+2. 左側のナビゲーションで [ **すべて表示** ] をクリックします。
+3. [ **管理センター** ] で、[ **Teams** ] をクリックします。
+4. Teams 管理センターの左側のナビゲーションで、[ **組織全体の設定** ] を展開して [ **ゲスト アクセス** ] をクリックします。
+5. [ **Teams でのゲスト アクセスを許可する** ] が [ **オン** ] に設定されていることを確認します。
+6. 追加のゲスト設定に必要な変更を加えて、[ **保存** ] をクリックします。
 
 > [!NOTE]
 > Teams のゲスト設定をオンにした後、有効になるまでには、最大で 24 時間かかる場合があります。
@@ -63,13 +63,13 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 
 ## <a name="site-and-file-sharing"></a>サイトとファイル共有
 
-誤って組織外のユーザーとファイルやフォルダを共有してしまうリスクを減らすために、SharePoint の既定の共有リンクを [*自分の組織内のユーザーのみ*] に変更することをお勧めします。 (ユーザーが外部との共有を行う必要があり、ゲスト共有を有効にしている場合、ユーザーは共有時にリンクの種類を変更することができます。)
+誤って組織外のユーザーとファイルやフォルダを共有してしまうリスクを減らすために、SharePoint の既定の共有リンクを [ *自分の組織内のユーザーのみ* ] に変更することをお勧めします。 (ユーザーが外部との共有を行う必要があり、ゲスト共有を有効にしている場合、ユーザーは共有時にリンクの種類を変更することができます。)
 
 既定の共有リンクを変更するには
 1. [SharePoint 管理センター](https://admin.microsoft.com/sharepoint)を開きます。
-2. [**ポリシー**] で、[**共有**] をクリックします。
-3. [**ファイルとフォルダーのリンク**] で、[**自分の組織内のユーザーのみ**] を選択します。
-4. [**保存**] をクリックします。
+2. [ **ポリシー** ] で、[ **共有** ] をクリックします。
+3. [ **ファイルとフォルダーのリンク** ] で、[ **自分の組織内のユーザーのみ** ] を選択します。
+4. [ **保存** ] をクリックします。
 
 最高のゲスト共有エクスペリエンスのために、[SharePoint および OneDrive の Azure AD B2B との統合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)を有効にすることもお勧めします。
 
@@ -84,11 +84,11 @@ Office 365 グループや SharePoint では既定でゲスト共有がオンに
 アクセス許可の管理をサポートするために、関連付けられたサイトを構成して、所有者のみがサイトを単独で共有できるようにすることをお勧めします。 これにより、アクセス許可の管理が簡素化され、チームの所有者が知らないユーザーによるアクセスを防ぐことができます。 ベースライン保護を必要とするチームごとに、この操作を行います。
 
 サイト共有設定を更新するには
-1. チームのツール バーで、[**ファイル**] をクリックします。
-2. [**SharePoint で開く**] をクリックします。
-3. SharePoint サイトのツール バーで、設定アイコンをクリックしてから、[**サイトの権限**] をクリックします。
-4. [**サイトの権限**] ウィンドウで、[**共有設定**] の [**共有設定の変更**] をクリックします。
-5. [**共有アクセス許可**] で、[**サイトの所有者とメンバー、および編集権限を持つユーザーはファイルとフォルダを共有できますが、サイトを共有できるのはサイト所有者だけです**] を選択し、[**保存**] をクリックします。
+1. チームのツール バーで、[ **ファイル** ] をクリックします。
+2. [ **SharePoint で開く** ] をクリックします。
+3. SharePoint サイトのツール バーで、設定アイコンをクリックしてから、[ **サイトの権限** ] をクリックします。
+4. [ **サイトの権限** ] ウィンドウで、[ **共有設定** ] の [ **共有設定の変更** ] をクリックします。
+5. [ **共有アクセス許可** ] で、[ **サイトの所有者とメンバー、および編集権限を持つユーザーはファイルとフォルダを共有できますが、サイトを共有できるのはサイト所有者だけです** ] を選択し、[ **保存** ] をクリックします。
 
 ## <a name="additional-protections"></a>追加の保護
 

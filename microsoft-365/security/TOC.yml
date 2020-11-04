@@ -410,6 +410,8 @@
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: ユーザー送信ポリシー
               href: ./office-365-security/user-submission.md
+            - name: Office 365 ATP のユーザー タグ
+              href: ./office-365-security/user-tags.md
             - name: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: DKIM を使用して、送信メールを検証する
@@ -487,6 +489,8 @@
           items:
             - name: 脅威トラッカーを使用する
               href: ./office-365-security/threat-trackers.md
+            - name: 警告を表示する
+              href: ../compliance/alert-policies.md
             - name: セキュリティ/コンプライアンス センターのスマート レポートと分析情報
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: レポート メッセージ アドインを有効にする

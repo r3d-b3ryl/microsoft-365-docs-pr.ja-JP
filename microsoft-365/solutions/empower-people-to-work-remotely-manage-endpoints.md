@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft エンドポイント マネージャーを使用して、管理デバイス、PC、その他のエンドポイントを管理します。
-ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681482"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845266"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>手順 4. デバイス、PC、およびその他のエンドポイントのエンドポイント管理を展開する
 
@@ -44,7 +44,7 @@ Microsoft Intune は、Microsoft 365 に付属しているモバイル デバイ
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
-Configuration Manager は、ネットワークまたはインターネットベースのデスクトップ、サーバー、ノート PC を管理できるオンプレミスの管理ソリューションです。 Configuration Manager を使用して、アプリ、ソフトウェアの更新、およびオペレーティング システムを展開します。 また、コンプライアンスの状況を監視し、リアルタイムでクライアントに対してクエリの実行と操作を行うことができます。 クラウド対応にして、Intune、Azure AD、Microsoft Defender ATP、およびその他のクラウド サービスと統合できます。 
+Configuration Manager は、ネットワークまたはインターネットベースのデスクトップ、サーバー、ノート PC を管理できるオンプレミスの管理ソリューションです。 Configuration Manager を使用して、アプリ、ソフトウェアの更新、およびオペレーティング システムを展開します。 また、コンプライアンスの状況を監視し、リアルタイムでクライアントに対してクエリの実行と操作を行うことができます。 クラウド対応にして、Intune、Azure AD、Microsoft Defender for Endpoint、およびその他のクラウド サービスと統合できます。 
 
 詳細については、この「[Configuration Manager の概要](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)」をご覧ください。
 

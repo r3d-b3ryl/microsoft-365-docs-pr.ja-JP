@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を向上させる方法について説明します。
-ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841234"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906348"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -44,7 +44,7 @@ Microsoft 365 trainable クラシファイアは、さまざまな種類のコ�
 UI の分類子にアクセスするには、次のようにします。 
 
 - グローバル管理者は、カスタム分類子を作成するためにテナントを選択する必要があります。
-- 分類子を教育するには、コンプライアンス管理者の役割、データ調査の役割、またはコンプライアンスデータ管理者が必要です。
+- 分類子を教育するには、コンプライアンス管理者またはデータ調査の役割が必要です。
 
 次のシナリオでは、分類子を使用するために、以下のアクセス許可を持つアカウントが必要になります。
 
@@ -169,7 +169,7 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
    Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
    ```
    
-   例:
+   以下に例を示します。
    
    `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
 
