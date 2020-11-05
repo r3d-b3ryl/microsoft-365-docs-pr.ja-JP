@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のエンドポイントのデータ損失防止について説明する
+title: 'Microsoft 365 のエンドポイントのデータ損失防止について学ぶ (プレビュー) '
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 エンドポイントのデータ損失防止は、、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: d9260da3e007885821441c8217e01650823eb8b4
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: cbf4a53658885102226d2b874180f5cc5f264a91
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768965"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841863"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Microsoft 365 のエンドポイントのデータ損失防止について学ぶ (プレビュー) 
 
 Microsoft 365 のデータ損失防止 (DLP) を使用すると、機密があると判断されたアイテムに対して、発生しているアクションを監視し、それらのアイテムの意図しない共有を防ぐことができます。 DLP の詳細については、「[データ損失防止ポリシーの概要](data-loss-prevention-policies.md)」を参照してください。
 
@@ -69,7 +69,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 
  デバイスをオンボードにするには、[Microsoft 365 エンドポイント DLPの使用を開始する](endpoint-dlp-getting-started.md)の手順を使用します。
 
-[Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)を通して、デバイスをオンボーディングしている場合、これらのデバイスは自動的にデバイスの一覧に表示されます。
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) を通して、デバイスをオンボーディングしている場合、これらのデバイスは自動的にデバイスの一覧に表示されます。
 
 ![デバイスリストを管理する](../media/endpoint-dlp-learn-about-2-device-list.png)
 
@@ -142,5 +142,5 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 - [データ損失防止の概要](data-loss-prevention-policies.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) ](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [インサイダー リスク管理](insider-risk-management.md)

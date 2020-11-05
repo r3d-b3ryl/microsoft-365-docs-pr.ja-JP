@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: d7deb2068db9f15f31a04c45564b966af90d2e2b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816760"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846302"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -112,7 +112,7 @@ ms.locfileid: "48816760"
 
   |Microsoft 365 サービスまたは機能|30 分|24 時間|
   |:-----|:-----:|:-----:|
-  |Advanced Threat Protection および脅威インテリジェンス|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Defender for Office 365 および脅威インテリジェンス|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (ユーザー ログイン イベント)||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory (管理イベント)||![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |データ損失防止|![チェック マーク](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -139,6 +139,9 @@ ms.locfileid: "48816760"
 
 ## <a name="search-the-audit-log"></a>監査ログの検索
 
+> [!NOTE]
+> 現在、監査ログ検索ツールで Azure AD のアクティビティが利用できない問題を調査中です。 この問題は 2020 年 10 月 26 日頃に始まりました。 これらのアクティビティには、Azure AD ユーザー管理アクティビティ、グループ管理アクティビティ、アプリケーション管理アクティビティ、役割管理アクティビティ、およびディレクトリ管理アクティビティが含まれます。 問題が解決したら、更新プログラムを提供します。
+    
 以下に、Office 365 で監査ログを検索するためのプロセスを示します。
 
 [手順 1: 監査ログの検索を実行する](#step-1-run-an-audit-log-search)
@@ -996,7 +999,7 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 
 **現在監査対象となっている Microsoft 365 サービスは何ですか?**
 
-Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、Advanced Threat Protection、Power BI など、特に使用頻度の高いサービスが監査されます。 監査対象のサービスのリストについては、[この記事の冒頭](search-the-audit-log-in-security-and-compliance.md)を参照してください。
+Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、Defender for Office 365、Power BI など、特に使用頻度の高いサービスが監査されます。 監査対象のサービスのリストについては、[この記事の冒頭](search-the-audit-log-in-security-and-compliance.md)を参照してください。
 
 **Office 365 の監査サービスでは、どんなアクティビティが監視されますか?**
 

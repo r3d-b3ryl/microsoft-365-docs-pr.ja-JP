@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止 (DLP) ポリシーを構成する方法について知り、Microsoft 365 エンドポイントデータ損失防止 (EPDLP) の場所を使用します。
-ms.openlocfilehash: 682996c084f4dce888aaff517ad84d335ed92206
-ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
+ms.openlocfilehash: 95c470a3dfc90f9c7b9a36d282c016781e4e13a8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769666"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847191"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>エンドポイント データ損失防止 (プレビュー) を使用する
 
@@ -203,7 +203,7 @@ DLP うるさすぎ、関心のあるファイルが含まれないので、デ�
 - [データ損失防止の概要](data-loss-prevention-policies.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) ](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Windows 10 マシン用のオンボーディングツールとメソッド](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) が参加しました](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
