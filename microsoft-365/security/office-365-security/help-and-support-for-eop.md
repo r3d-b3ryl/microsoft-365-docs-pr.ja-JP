@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft は、サポート サービスやアシスト サービスを含め、さまざまな場所と方法で EOP のヘルプを提供しています。
-ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202725"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920432"
 ---
 # <a name="help-and-support-for-eop"></a>EOP のヘルプとサポート
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202725"
 
 ## <a name="self-support-options"></a>サポート サービス オプション
 
-ログイン時に、Microsoft 365 管理センターは、組織のサービスの状態に関する情報を提供します。 また、サービスの正常性セクションには、サービスの現在の状態、サービスの中断と停止の詳細、保守の計画時間の一覧が表示されます。 また、Microsoft 365 管理センターは、既知の問題と予想される解決策に関する情報も提供します。 サービス全体のイベントによる影響を受けている場合は、通信アラートが (通常はベルのアイコンと共に) 表示されます。 その項目を参照して、適切に対応することをお勧めします。 [サービス正常性] 領域の詳細については、「 [サービスの正常性と継続性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」を参照してください。 ここに記載されているツール、フォーラム、およびコミュニティ サイトを使用すれば、さらに役立つ情報が見つかる場合があります。
+ログイン時に、Microsoft 365 管理センターは、組織のサービスの状態に関する情報を提供します。 また、サービスの正常性セクションには、サービスの現在の状態、サービスの中断と停止の詳細、保守の計画時間の一覧が表示されます。 また、Microsoft 365 管理センターは、既知の問題と予想される解決策に関する情報も提供します。 サービス全体のイベントによる影響を受けている場合は、通信アラートが (通常はベルのアイコンと共に) 表示されます。 その項目を参照して、適切に対応することをお勧めします。 [サービス正常性] 領域の詳細については、「 [サービスの正常性と継続性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)」を参照してください。 ここにリストされているツール、フォーラム、およびコミュニティサイトを使用すれば、より多くのヘルプをお客様自身で見つけることができます。
 
 [Exchange Online Protection の製品概要](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -42,7 +42,7 @@ ms.locfileid: "48202725"
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft のアシスト サポート
 
-Microsoft からサポートを受けられるようにするには、Microsoft 365 管理センター内で新しいサービスリクエストを開始するか、電話で電話をかけることができます。 プレミア サポートのサブスクライバーには、この他にもサポート オプションがあります。
+Microsoft からサポートを受けられるようにするには、Microsoft 365 管理センター内で新しいサービスリクエストを開始するか、電話で電話をかけることができます。 プレミアサポートのサブスクライバーには、特別なサポートオプションがあります。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft プレミア サポート サブスクライバーのサポート
 
@@ -62,7 +62,7 @@ EOP のユーザーで、Microsoft プレミア サポート契約もしてい�
 
 1. Microsoft 365 管理センターにログインします。
 
-2. 一般的な製品の問題の場合は、 **[サポート]** \> **[カスタマー サポートを要求する]** \> **[テクニカル サポートに電話する]** の順に移動します。
+2. 一般的な製品の問題については、 **サポート** に \> 連絡し **て、カスタマーサポートへの** \> **電話テクニカルサポート** に問い合わせてください。
 
    EOP を購入する前の質問、または請求およびやサブスクリプションに関する質問の場合は、 **[サポート]** \> **[カスタマー サポートを要求する]** \> **[請求およびサブスクリプション サポートに電話する]** の順に移動します。
 

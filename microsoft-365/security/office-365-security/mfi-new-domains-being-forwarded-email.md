@@ -10,20 +10,22 @@ ms.topic: conceptual
 ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
-description: 管理者は、新しい Exchange 管理センターで転送された新しいドメインを使用して、組織内のユーザーが転送されていない外部ドメインにメッセージを転送していることを調査する方法を学習できます。
-ms.openlocfilehash: 7dfdd63a9358b1057313962bc21424a325d7bc52
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで転送される新しいドメインを使用して、ユーザーが転送されていない外部ドメインにメッセージを転送していることを調査する方法を学習できます。
+ms.openlocfilehash: f2d8c9229062cbef0ad90b3d0fd843d6588a08dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877743"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920570"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>転送される新しいドメインセキュリティ & コンプライアンスセンターでのメールに関する洞察
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-電子メールメッセージを特定のドメインの外部の受信者に転送するのに有効なビジネス上の理由があるかもしれませんが、組織内のユーザーが外部ドメインへのメッセージ転送を突然開始したときに、組織内のユーザーがそのドメインにメッセージを転送していない場合 (新しいドメイン) は疑わしいことがあります。 この条件は、ユーザーアカウントが侵害されていることを示している可能性があります。 アカウントが侵害されている疑いがある場合は、「 [危害を受けた電子メールアカウントへの対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)」を参照してください。
+電子メールメッセージを特定のドメインの外部の受信者に転送するには、ビジネス上の正当な理由があります。 ただし、組織内のユーザーがまだメッセージを転送していないドメイン (新しいドメイン) を組織内のユーザーが突然転送し始めた場合は、疑わしいことがあります。
+
+この状態は、ユーザーアカウントが侵害されたことを示している可能性があります。 アカウントが侵害されている疑いがある場合は、「 [危害を受けた電子メールアカウントへの対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)」を参照してください。
 
 **転送される新しいドメインメール** の [セキュリティ & コンプライアンスセンター](https://protection.office.com)では、組織内のユーザーが新しいドメインにメッセージを転送している場合に通知します。
 

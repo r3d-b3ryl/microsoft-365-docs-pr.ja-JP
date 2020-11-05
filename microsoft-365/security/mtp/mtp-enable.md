@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b5bb99ed4b8cee7ea920679e20f69c7a0e002d26
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843638"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920504"
 ---
-# <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender をオンにする
+# <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -69,7 +69,7 @@ Microsoft 365 Defender は、 [エンドポイントとして Microsoft Defender
 Microsoft 365 セキュリティセンターの microsoft サポートに連絡して、異なるデータセンターの場所に Microsoft 365 Defender をプロビジョニングする方法については、[ **ヘルプが必要ですか?** ] を選択します。 
 
 >[!NOTE]
->エンドポイントの Microsoft Defender は、Azure Defender * を使用してオンにした場合に、欧州連合 (EU) のデータセンターで自動的にプロビジョニングされます。 Microsoft 365 Defender は、この方法でエンドポイント用の Defender をプロビジョニングしたお客様に対して、同じ EU データセンターで自動的にプロビジョニングを行います。 
+>エンドポイントの Microsoft Defender は、Azure Defender を使用してオンにした場合に、欧州連合 (EU) のデータセンターで自動的にプロビジョニングされます。 Microsoft 365 Defender は、この方法でエンドポイント用の Defender をプロビジョニングしたお客様に対して、同じ EU データセンターで自動的にプロビジョニングを行います。 
 
 ### <a name="confirm-that-the-service-is-on"></a>サービスが有効になっていることを確認する
 サービスがプロビジョニングされると、次の機能が追加されます。
@@ -100,7 +100,7 @@ Microsoft サポートスタッフは、テナントのサービスおよび関�
 
 - [よく寄せられる質問](mtp-enable-faq.md)
 - [ライセンス要件およびその他の前提条件](prerequisites.md)
-- [サポートされるサービスを展開する](deploy-supported-services.md)
+- [サポートされているサービスを展開する](deploy-supported-services.md)
 - [Microsoft 365 Defender の概要](microsoft-threat-protection.md)
 - [エンドポイントの Microsoft Defender の概要](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Office 365 の Defender の概要](../office-365-security/office-365-atp.md)

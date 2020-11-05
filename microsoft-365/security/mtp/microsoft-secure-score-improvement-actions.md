@@ -20,24 +20,23 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846642"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920538"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft セキュリティスコアを使用してセキュリティの姿勢を評価する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 Microsoft セキュア スコアは組織のセキュリティ体制を測定する数値であり、数値が高いほどより多くの改善のための処置が実行されたことを示しています。 この点については https://security.microsoft.com/securescore 、「 [Microsoft 365 セキュリティセンター](overview-security-center.md)」を参照してください。
 
 必要な情報を迅速に把握できるように、Microsoft の改善のための処置は次のグループに分類されています。
 
 * Identity (Azure Active Directory アカウント & の役割)
-* データ (Microsoft Information Protection)
+* データ (現時点では改善アクションを行わない)
 * デバイス (エンドポイントの Microsoft Defender ( [microsoft のデバイスのセキュリティで保護されたスコア](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)と呼ばれる))
 * アプリ (Office 365 や Microsoft Cloud App Security を含む、メール アプリとクラウド アプリ)
 * インフラストラクチャ (現在のところ、改善のための処置はありません)

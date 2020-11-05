@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードでの自動転送メッセージレポートについて説明します。
-ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 28cb593d56d0b0054c8c8cbe4596d4f7df6442ab
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877791"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920598"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの自動転送メッセージの洞察
 
@@ -35,7 +35,7 @@ ms.locfileid: "48877791"
 
   - **メールフロールール**
   - **受信トレイルール**
-  - **SMTP 転送で** は、管理者がメールボックス [のメール転送を構成](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)するに説明されているように、メールボックスに対して自動転送を行います。
+  - **SMTP 転送によって** : このメソッドは [、「メールボックスの電子メール転送を構成する](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)」で説明されているように、管理者がメールボックスに対して構成できる自動転送を示します。
   - 詳細については、 [転送レポート](view-mail-flow-reports.md#forwarding-report) へのリンクを参照してください。
 
 - **ドメインおよびユーザーによる自動転送メッセージ** :

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 26cba70070fdb08c715ea38ca35a8ed8cd26096a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 83385b2f3df4b1763de6b6c11da35923d6157c1b
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844790"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919755"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティポータルと管理センター
 
@@ -42,7 +42,7 @@ ms.locfileid: "48844790"
 | Microsoft 365 セキュリティ センター | [Microsoft 365 Defender](microsoft-threat-protection.md)を使用して、id、電子メール、データ、エンドポイント、およびアプリ間の脅威のアクティビティを監視して対応し、セキュリティを強化します。 | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender セキュリティセンター | [エンドポイントの Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)で提供される機能を使用して、エンドポイントの脅威アクティビティを監視して応答する | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
 | セキュリティ/コンプライアンス センター | メールおよびコラボレーションサービスを保護し、さまざまなデータ処理規則へのコンプライアンスを確保するために、 [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide) と [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) を管理します。 | [protection.office.com](https://protection.office.com) |
-| Azure Defender * ポータル | [Azure Defender *](https://docs.microsoft.com/azure/security-center/security-center-intro)を使用して、クラウド内のデータセンターとハイブリッドワークロードのセキュリティに関する姿勢を強化する | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
+| Azure Defender ポータル | [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-intro)を使用して、クラウド内のデータセンターとハイブリッドワークロードのセキュリティに関する姿勢を強化する | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Id ポータルの Microsoft Defender | Active Directory のシグナルを使用して、 [id に対して Microsoft Defender](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)を使用して、高度な脅威、侵害された id、および悪意のある insider 操作を識別、検出、調査します。 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security ポータル | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)を使用して、高度な可視性、データ移動の制御、および高度な分析を行うことにより、クラウドサービスの脅威を特定して対処します。 | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
 | Microsoft Defender セキュリティインテリジェンスポータル | エンドポイントのための Microsoft Defender のセキュリティインテリジェンス更新を取得し、サンプルを提出して、脅威の百科事典を探索する | [microsoft.com/wdsi](https://microsoft.com/wdsi) |

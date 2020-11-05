@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846630"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920516"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティセンターでのアプリの監視とレポート
 
@@ -65,10 +65,10 @@ ms.locfileid: "48846630"
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>インフラストラクチャの負荷の状態を監視する
 
-**インフラストラクチャの状態** Azure Defender * のインフラストラクチャワークロードの正常性状態アラートを表示します。
+**インフラストラクチャの状態** Azure Defender のインフラストラクチャワークロードの正常性状態の警告を表示します。
 
-Azure Defender * は、社内およびクラウドのワークロード全体にわたり Office 365 用の統合セキュリティ管理および Defender を提供します。 ファイアウォールやその他のパートナーソリューションを含む、さまざまなソースからのセキュリティデータを収集、検索、および分析することができます。
+Azure Defender は、オンプレミスとクラウドのワークロードで Office 365 の統合セキュリティ管理および Defender を提供します。 ファイアウォールやその他のパートナーソリューションを含む、さまざまなソースからのセキュリティデータを収集、検索、および分析することができます。
 
-詳細については、「 [Azure Defender * ドキュメント](https://docs.microsoft.com/azure/security-center/)」を参照してください。
+詳細については、「 [Azure Defender のドキュメント](https://docs.microsoft.com/azure/security-center/)」を参照してください。
 
 ![インフラストラクチャ正常性カード](../../media/infrastructure-health.png)

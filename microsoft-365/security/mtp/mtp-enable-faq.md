@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842418"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920492"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Microsoft 365 Defender をオンにする際によく寄せられる質問
 
@@ -43,7 +43,7 @@ ms.locfileid: "48842418"
 次の E5 以外のライセンスを持つお客様は、Microsoft 365 Defender を使用できます。
 
 - Microsoft Defender for Endpoint
-- Id の Microsoft Defender
+- Microsoft Defender for Identity
 - Microsoft Cloud App Security
 - Office 365 の Defender (プラン 2)
  
@@ -59,7 +59,7 @@ Microsoft 365 Defender エクスペリエンスを最適化するために、サ
 Microsoft 365 Defender は、統合データを処理および保存するデータセンターの最適な場所を自動的に選択します。 エンドポイントに Microsoft Defender がある場合は、エンドポイントとして Defender で使用されているものと同じ場所を選択します。
 
 >[!NOTE]
->エンドポイントの Microsoft Defender は、Azure Defender * を使用してオンにした場合に、欧州連合 (EU) のデータセンターで自動的にプロビジョニングされます。 Microsoft 365 Defender は、この方法でエンドポイントとして Microsoft Defender をプロビジョニングしたお客様に対して、同じ EU データセンターで自動的にプロビジョニングを行います。 
+>エンドポイントの Microsoft Defender は、Azure Defender を使用してオンにした場合に、欧州連合 (EU) のデータセンターで自動的にプロビジョニングされます。 Microsoft 365 Defender は、この方法でエンドポイントとして Microsoft Defender をプロビジョニングしたお客様に対して、同じ EU データセンターで自動的にプロビジョニングを行います。 
 
 データセンターの場所は、Microsoft 365 Defender の [設定] ページでサービスが準備される前と後に表示されます ( **設定 > microsoft 365 defender** )。 別のデータセンターの場所を使用する場合は、microsoft 365 セキュリティセンターの microsoft サポートに問い合わせて、[ **ヘルプが必要ですか?** ] を選択します。
 
@@ -100,5 +100,5 @@ Microsoft では、次のようなさまざまなチャネルで情報を定期�
 - [Microsoft 365 Defender の概要](microsoft-threat-protection.md)
 - [Microsoft 365 Defender をオンに](mtp-enable.md)します。
 - [ライセンス要件およびその他の前提条件](prerequisites.md)
-- [サポートされるサービスを展開する](deploy-supported-services.md)
+- [サポートされているサービスを展開する](deploy-supported-services.md)
 - [プレビュー機能を有効にする](preview.md)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 社では、Microsoft 365 for enterprise のセキュリティ機能を使用する方法について説明します。
-ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847108"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920420"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation のエンタープライズセキュリティのための Microsoft 365 の概要
 
@@ -127,9 +127,9 @@ Contoso 社は、次の手順に従って、Microsoft 365 for enterprise の展�
 
 ## <a name="security-management"></a>セキュリティ管理
 
-- Azure Defender による IT の中央セキュリティダッシュボード
+- Azure Defender を使用した IT の中央セキュリティダッシュボード
 
-  Contoso 社では、 [Azure Defender *](https://azure.microsoft.com/services/security-center/) を使用して、セキュリティと脅威保護の統一されたビューを提示し、そのワークロード全体にわたるセキュリティポリシーを管理し、cyberattacks に応答します。
+  Contoso 社では、 [Azure Defender](https://azure.microsoft.com/services/security-center/) を使用して、セキュリティと脅威保護の統一されたビューを提供し、そのワークロード全体にわたるセキュリティポリシーを管理し、cyberattacks に応答します。
 
 - Windows Defender セキュリティ センターを使用したユーザー向けの中心となるセキュリティ ダッシュボード
 

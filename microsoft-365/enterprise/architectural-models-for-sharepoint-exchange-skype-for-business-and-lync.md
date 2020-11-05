@@ -19,176 +19,166 @@ ms.custom:
 ms.assetid: 5b49fa68-f8f2-4705-af96-5f5475e8539a
 search.appverid:
 - MET150
-description: '概要: アーキテクチャ モデル、展開、および SharePoint、Exchange、Skype for Business、および Lync のプラットフォーム オプションについて説明している IT ポスターを取得します。'
-ms.openlocfilehash: 67f1018c70dfc86306b0d1e7ceb6061a166b3db8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: SharePoint、Exchange、Skype for Business、Lync のアーキテクチャモデル、展開、およびプラットフォームのオプションについて説明している IT ポスターを取得します。
+ms.openlocfilehash: 6d5cda89fb67f5c41dcf161abe7258c4600ee8ce
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46692025"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919822"
 ---
 # <a name="architectural-models-for-sharepoint-exchange-skype-for-business-and-lync"></a>SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデル
 
-これらの IT ポスターは、SharePoint、Exchange、Skype for Business、Lync のアーキテクチャ モデルと展開オプションについて説明し、Microsoft Azure で SharePoint を展開するための設計情報を提供します。
+この記事の IT ポスターでは、SharePoint、Exchange、Skype for Business、Lync のアーキテクチャモデルと展開オプションについて説明しています。 また、Microsoft Azure に SharePoint を展開するための設計情報も提供します。
   
-Microsoft 365 では、クラウドベースのサービスとしてユーザーが使い慣れた共同作業とコミュニケーションのサービスを提供できます。 いくつかの例外があります。オンプレミスの展開を行っている場合でも、Microsoft 365 を使用している場合でも、ユーザー エクスペリエンスは変わりません。 この統合されたユーザー エクスペリエンスにより、それぞれの作業負荷の配置決定はより複雑になり、次のような疑問が生じます:
+Microsoft 365 を使用すると、クラウドを通じて、一般的なコラボレーションとコミュニケーションサービスを提供できます。 いくつかの例外を除き、オンプレミスの展開を維持している場合も、Microsoft 365 を使用している場合も、ユーザーの利便性は変わりません。 
+
+この統合されたユーザーの環境では、それぞれのワークロードをどこに配置するかが決定されます。 また、次の質問も発生します。
   
-- 個々のワークロードに対して選択するプラットフォーム オプションをどのように決定するか。
+- 個々のワークロードのプラットフォームを選択するには、どうすればよいですか?
     
 - オンプレミスのサービスを残すことに意味はあるか。
     
-- どのようなシナリオではハイブリッド展開が適切か。
+- ハイブリッド展開の適切なシナリオは何ですか。
     
-- Microsoft Azure は図にどのように適合するか。
+- Azure が画像にどのように適合するか
     
-- Azure の Office Server ワークロードでサポートされている構成はどのようなものか。
+- Azure がサポートしている Office server ワークロードの構成
     
 > [!TIP]
-> このページのポスターのほとんどは、中国語、英語、フランス語、ドイツ語、イタリア語、日本語、韓国語、ポルトガル語、ロシア語、スペイン語を含む複数の言語で提供されています。これらの言語のいずれかのポスターをダウンロードするには、ポスターの **[その他の言語]** リンクをクリックします。
+> この記事のほとんどのポスターは、複数の言語で提供されています。 利用可能な言語には、中国語、英語、フランス語、ドイツ語、イタリア語、日本語、韓国語、ポルトガル語、ロシア語、スペイン語があります。 これらの言語のいずれかでポスターをダウンロードするには、ポスターのサムネイル画像の下で、[ **その他の言語** ] を選択します。
   
-ご意見を電子メールで [cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com) 宛てにお送りください。 
+ご意見をお知らせください。 [Cloudadopt@microsoft.com](mailto:cloudadopt@microsoft.com)で電子メールを送信します。 
   
-このページには次のポスターへのリンクがあります。
+必要なポスターを取得するには、次のリンクを使用します。
   
-- **アーキテクチャ モデルのポスター** これらのリソースを使用して、SharePoint 2016 および Skype for Business 2015 用の理想的なプラットフォームと構成を決定することができます。
+- **アーキテクチャモデル** : これらのリソースを使用して、SharePoint 2016 と Skype for business 2015 の理想的なプラットフォームと構成を決定します。
     
-  - [Microsoft SharePoint 2016 アーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
+  - [Microsoft SharePoint 2016 アーキテクチャモデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_ArchModel)
     
   - [SharePoint Server 2016 データベース](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2016_Databases)
     
-  - [Microsoft Skype for Business 2015 アーキテクチャ モデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SfB2015_ArchModel)
+  - [Microsoft Skype for Business 2015 アーキテクチャモデル](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SfB2015_ArchModel)
     
-- **プラットフォーム オプションのポスター** これらのリソースを使用して、SharePoint 2013、Exchange 2013、Lync 2013 用の理想的なプラットフォームと構成を決定することができます。
+- **プラットフォーム** : これらのリソースを使用して、SharePoint 2013、Exchange 2013、Lync 2013 の理想的なプラットフォームと構成を決定します。
     
-  - [SharePoint 2013 プラットフォーム オプション](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2013_Options)
+  - [SharePoint 2013 プラットフォームオプション](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#SP2013_Options)
     
-  - [Exchange 2013 プラットフォーム オプション](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Exch2013_options)
+  - [Exchange 2013 プラットフォームオプション](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Exch2013_options)
     
-  - [Lync 2013 プラットフォーム オプション](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Lync2013_Options)
+  - [Lync 2013 プラットフォームオプション](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Lync2013_Options)
     
-- **Azure の SharePoint Server 2013 のソリューションのポスター** これらの IT ポスターを使用して、Azure インフラストラクチャ サービスの SharePoint Server 2013 ワークロード用の設計および構成を決定することができます。
+- **Azure の Sharepoint server 2013** : これらの IT ポスターを使用して、azure インフラストラクチャサービスの sharepoint server 2013 ワークロードを設計および構成します。
     
-  - [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Azure_sharepoint2013)
+  - [SharePoint Server 2013 を使用した Azure のインターネットサイト](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#Azure_sharepoint2013)
     
-  - [設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#DesignSampleInternetSites)
+  - [設計サンプル: SharePoint 2013 用の Azure のインターネットサイト](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#DesignSampleInternetSites)
     
-  - [Microsoft Azure に対する SharePoint の障害復旧](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#sharepoint_recovery_Azure)
+  - [Azure に対する SharePoint の障害復旧](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md#sharepoint_recovery_Azure)
     
 ## <a name="architectural-models-posters"></a>アーキテクチャ モデルのポスター
 
-これらの SharePoint 2016 および Skype for Business 2015 向けの新しい IT ポスターは、印刷しやすい形式で、さまざまな展開の方法を比較する手段を提供します。各ポスターは利用可能な構成またはプラットフォーム オプションすべての一覧を示し、オプションごとに次の情報を説明します。
+SharePoint 2016 および Skype for Business 2015 の IT ポスターは、展開方法を簡単に印刷形式で比較する方法を提供します。 [ポスター] の一覧には、すべての構成オプションまたはプラットフォームオプションが表示されます。 各オプションには、次の情報が提供されます。
   
-- **概要** 概念図などの、プラットフォームの簡単な要約です。
+- **概要** : 概念図を含む、プラットフォームの簡単な概要。
     
-- **最適シナリオ** 特定のプラットフォームが最適な、一般的なシナリオです。
+- **ベスト** : プラットフォームに最適な一般的なシナリオ。
     
-- **ライセンス要件** 展開に必要なライセンスです。
+- **ライセンス要件** : 展開に必要なライセンス。
     
-- **アーキテクチャ タスク** 事業計画担当が下す必要がある決定です。
+- **アーキテクチャタスク** : アーキテクトとして行う必要のある決定。
     
-- **IT 技術者のタスクまたは業務** IT スタッフが計画する必要がある毎日の業務です。
+- It 担当者の **タスクまたは責任** : it スタッフが計画する必要がある日常業務。
     
 <a name="SP2016_ArchModel"> </a>
-### <a name="microsoft-sharepoint-2016-architectural-models"></a>Microsoft SharePoint 2016 のアーキテクチャ モデル
+### <a name="microsoft-sharepoint-server-2016-architectural-models"></a>Microsoft SharePoint Server 2016 のアーキテクチャ モデル
 
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![SharePoint 2016 アーキテクチャ モデル ポスターのサムネイル](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=52650) <br/> | この IT ポスターでは、ビジネスの意思決定者とソリューション設計担当者が知っておく必要のある SharePoint Online、Microsoft Azure、SharePoint のオンプレミス構成について説明しています。 <br/><br/> - **SharePoint Online (SaaS)** - サービスとしてのソフトウェア (SaaS) サブスクリプション モデルを介して SharePoint を使用します。 <br/> - **SharePoint ハイブリッド** - 自分のペースで SharePoint サイトとアプリをクラウドに移動します。 <br/> - **Azure での SharePoint (IaaS)** - オンプレミス環境を Microsoft Azure に拡張して、そこに SharePoint 2016 Server を展開します (これは高可用性/障害復旧環境や開発/テスト環境の場合に推奨されます)。<br/> - **オンプレミスの SharePoint** - 保守しているデータセンター内で SharePoint 環境の計画、展開、保守、カスタマイズを行います。 <br/> |
+|アイテム|説明|
+|---|---|
+|[![SharePoint Server 2016 アーキテクチャモデルポスターのサムネイル。](../media/7d3e590c-1f3b-42cf-920d-9edac8fa3e04.png)          ](https://www.microsoft.com/download/details.aspx?id=52650) <br/> [PDF](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.pdf)  \| [Visio](https://download.microsoft.com/download/4/F/A/4FA0F94B-EE2F-41DB-A047-D9864FEF41E9/SharePoint2016ArchitecturalModels.vsdx)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=52650)|この IT ポスターでは、ビジネスの意思決定者とソリューション設計担当者が知っておく必要のある SharePoint Online、Azure、および SharePoint のオンプレミスの構成について説明します。 <br/><br/> - **Sharepoint Online (saas)** : サービスとしてのソフトウェア (saas) サブスクリプションモデルを使用して sharepoint を使用します。 <br/> - **Sharepoint ハイブリッド** : 自分のペースで sharepoint サイトとアプリをクラウドに移行します。 <br/> - **Azure の SharePoint (IaaS)** : オンプレミス環境を azure に拡張し、sharepoint 2016 サーバーを展開します。 (高可用性または障害復旧環境、および開発/テスト環境では、このモデルをお勧めします)。 <br/> - **Sharepoint オンプレミス** : 管理するデータセンターで sharepoint 環境を計画、展開、保守、およびカスタマイズします。|
    
 <a name="SP2016_Databases"> </a>
 ### <a name="sharepoint-server-2016-databases"></a>SharePoint Server 2016 Database
 
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![SharePoint Server 2016 Database のポスターのサムネイル](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)          ](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=55041) <br/> | この IT ポスターは、SharePoint Server 2016 データベースのクイック リファレンス ガイドです。各データベースには、以下の詳細情報があります。 <br/><br/> - サイズ <br/> - 拡大縮小のガイド <br/> - I/O パターン <br/> - 要件 <br/><br/>  最初のページには、SharePoint システム データベースと、データベースが複数存在するサービス アプリケーションが含まれています。2 番目のページには、1 つのデータベースを持つサービス アプリケーションのすべてが表示されます。<br/><br/>  SharePoint Server 2016 データベースの詳細については、「[データベースの種類と説明 (SharePoint Server 2016)](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions)」を参照してください。 <br/> |
+|アイテム|説明|
+|---|---|
+|[![SharePoint Server 2016 データベースのポスターのサムネイル。](../media/c53e9de7-3bf8-446d-8766-e6700c8dd8e1.png)](https://www.microsoft.com/download/details.aspx?id=55041) <br/> [PDF](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.pdf)  \| [Visio](https://download.microsoft.com/download/D/5/D/D5DC1121-8BC5-4953-834F-1B5BB03EB691/DBrefguideSPS2016_tabloid.vsdx)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=55041)|この IT ポスターは、SharePoint Server 2016 データベースのクイックリファレンスです。 各データベースの詳細については、以下を参照してください。 <br/><br/> - サイズ <br/> - 拡大縮小のガイド <br/> - I/O パターン <br/> - 要件 <br/><br/>  最初のページには、SharePoint システムデータベースと、複数のデータベースを持つサービスアプリケーションが表示されます。 2 番目のページには、1 つのデータベースを持つサービス アプリケーションのすべてが表示されます。 <br/><br/>  詳細については、「 [データベースの種類と説明 (SharePoint Server 2016](https://docs.microsoft.com/SharePoint/technical-reference/database-types-and-descriptions))」を参照してください。|
    
 <a name="SfB2015_ArchModel"> </a>
 ### <a name="microsoft-skype-for-business-2015-architectural-models"></a>Microsoft Skype for Business 2015 のアーキテクチャ モデル
 
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Skype for Business アーキテクチャ モデル ポスターのサムネイル](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)          ](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=55022) <br/> |このポスターでは、ビジネスの意思決定者とソリューション設計担当者が知っておく必要のある Skype for Business Online、オンプレミス、ハイブリッド、クラウド PBX、ならびに Exchange および SharePoint との統合の構成について説明しています。 <br/><br/> これは、Skype for Business Online およびオンプレミスの Skype for Business を利用するための異なる基本的なアーキテクチャ モデルに対する IT 担当者の意識を高めることを目的としています。 <br/><br/>組織のニーズおよび将来の計画に最も適した構成から開始します。必要に応じて、他の構成を考慮して使用します。たとえば、Exchange および SharePoint との統合、または Microsoft のクラウド PBX を活用したソリューションを検討する必要がある場合があります。  <br/> |
+|アイテム|説明|
+|---|---|
+|[![Skype for Business アーキテクチャモデルポスターのサムネイル。](../media/132288c0-6ae4-4394-88ab-b57dae367714.png)](https://www.microsoft.com/download/details.aspx?id=55022) <br/> [PDF](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.pdf)  \| [Visio](https://download.microsoft.com/download/7/7/4/7741262C-A60D-41F7-863B-99BF5964FBFE/Skype%20for%20Business%20Architectural%20Models.vsd)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=55022)|このポスターでは、Skype for Business Online、オンプレミス、ハイブリッド、およびクラウド構内交換 (PBX) について説明します。 また、ビジネスの意思決定者とソリューション設計担当者が知っておく必要のある Exchange と SharePoint の構成との統合についても説明します。 <br/><br/> このポスターは、IT 担当者が、オンプレミスの Skype for business Online と Skype for business を使用することによって、基本的なアーキテクチャモデルを認識することを目的としています。 <br/><br/>組織のニーズと計画に最適な構成を開始します。 必要に応じて他の構成を検討し、使用します。 たとえば、Exchange と SharePoint との統合、または Microsoft クラウド PBX オファーリングを活用するソリューションについて検討したいと考えている場合があります。|
    
 ## <a name="platform-options-posters"></a>プラットフォーム オプションのポスター
 
-SharePoint 2013、Exchange 2013 および Lync 2013 向けのこれらの IT ポスターは、大きなポスターの形式で、一目でさまざまな展開の方法を比較する手段を提供します。各ポスターは利用可能な構成またはプラットフォーム オプションすべての一覧を示し、オプションごとに次の情報を説明します。
+SharePoint 2013、Exchange 2013、Lync 2013 の IT ポスターは、展開方法を一目で比較できるようになります。 各ポスターには、すべての構成またはプラットフォームオプションが一覧表示されます。 各オプションに関する次の情報が提供されます。
   
-- **概要** 概念図などの、プラットフォームの簡単な要約です。
+- **概要** : 概念図を含む、プラットフォームの簡単な概要。
     
-- **最適シナリオ** 特定のプラットフォームが最適な、一般的なシナリオです。
+- **ベスト** : プラットフォームに最適な一般的なシナリオ。
     
-- **ライセンス要件** 展開に必要なライセンスです。
+- **ライセンス要件** : 展開に必要なライセンス。
     
-- **アーキテクチャ タスク** 事業計画担当が下す必要がある決定です。
+- **アーキテクチャタスク** : アーキテクトとして行う必要のある決定。
     
-- **IT 技術者のタスクまたは業務** IT スタッフが計画する必要がある毎日の業務です。
+- It 担当者の **タスクまたは責任** : it スタッフが計画する必要がある日常業務。
     
 <a name="SP2013_Options"> </a>
 ## <a name="sharepoint-2013-platform-options"></a>SharePoint 2013 プラットフォーム オプション
 
-****
-
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![SharePoint 2013 プラットフォーム オプションのサムネイル イメージ](../media/SP-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=40332) <br/> |このモデルは、ビジネス上の意思決定者 (BDM) やアーキテクトを対象にして、SharePoint 2013、Microsoft 365 の SharePoint、Microsoft 365 とのオンプレミス ハイブリッド、Azure、およびオンプレミスのみの展開に使用する、プラットフォーム オプションを示します。 これには、各アーキテクチャの概要、推奨事項、ライセンス要件、各プラットフォームのアーキテクトおよび IT 担当者向けタスクのリストが含まれています。 Azure 上のいくつかの SharePoint ソリューションが強調表示されています。 <br/> |
+|アイテム|説明|
+|---|---|
+|[![SharePoint 2013 プラットフォームオプションポスターのサムネイル画像。](../media/SP-PlatformOptions.jpg)](https://www.microsoft.com/download/details.aspx?id=40332) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=324594)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=324593)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=40332)|ビジネス意思決定者およびアーキテクトにとって、このポスターは、microsoft 365、Azure、およびオンプレミスの展開を使用したオンプレミスハイブリッドの SharePoint 2013 の sharepoint 365 のプラットフォームオプションを示しています。 各アーキテクチャ、推奨事項、ライセンス要件、および各プラットフォームのアーキテクトおよび IT 担当者向けタスクの概要を示しています。 ポスターには、Azure のいくつかの SharePoint ソリューションが強調表示されています。|
    
 <a name="Exch2013_options"> </a>
 ## <a name="exchange-2013-platform-options"></a>Exchange 2013 プラットフォーム オプション
 
-****
-
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Exchange プラットフォーム オプションのサムネイル イメージ](../media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=42676) <br/> |このモデルでは、BDM やアーキテクトを対象にして、Exchange 2013 で利用可能なプラットフォームのオプションについて説明します。 お客様は Microsoft 365 による Exchange Online、Hybrid Exchange、オンプレミス Exchange Server、Hosted Exchange から選択できます。 ポスターには、それぞれに最も理想的なシナリオ、ライセンスの要件、IT プロフェッショナルの責任など、アーキテクチャーに関するオプションの詳細が含まれています。 <br/> |
+|アイテム|説明|
+|---|---|
+|[![Exchange プラットフォームオプションポスターのサムネイルイメージ。](../media/ITPro-Other-Exchange2013PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=42676) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=398740)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=398742)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=42676)|ビジネス意思決定者およびアーキテクトにとって、このポスターでは Exchange 2013 のプラットフォームオプションについて説明します。 お客様は、Microsoft 365、ハイブリッド Exchange、オンプレミス、およびホストされた Exchange を使用して、Exchange Online から選択できます。 ポスターには、それぞれのアーキテクチャオプション、ライセンス要件、および IT 担当者の責任についての詳細が含まれています。|
    
 <a name="Lync2013_Options"> </a>
 ## <a name="lync-2013-platform-options"></a>Lync 2013 プラットフォーム オプション
 
-****
-
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Lync プラットフォーム オプションのサムネイル イメージ](../media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41677) <br/> |このモデルでは、BDM やアーキテクトを対象にして、Lync 2013 で利用可能なプラットフォームのオプションについて説明します。 お客様は Microsoft 365 による Lync Online、Hybrid Lync、オンプレミス Lync Server、Hosted Lync から選択できます。 IT ポスターには、それぞれに最も理想的なシナリオ、ライセンスの要件、IT プロフェッショナルの責任など、アーキテクチャーに関するオプションの詳細が含まれています。  <br/> |
+|アイテム|説明|
+|---|---|
+|[![Lync 2013 プラットフォームオプションポスターのサムネイルイメージ。](../media/Lync-PlatformOptions.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41677) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkID=391837)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkID=391839)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41677)|ビジネス意思決定者およびアーキテクトにとって、このポスターでは Lync 2013 のプラットフォームオプションについて説明します。 お客様は、Microsoft 365、ハイブリッド Lync、Lync Server オンプレミス、およびホストされている Lync で Lync Online から選択できます。 IT ポスターには、各アーキテクチャオプションの詳細が含まれています。これには、それぞれの理想的なシナリオ、ライセンス要件、および IT 担当者の責任があります。|
    
 <a name="Lync2013_Options"> </a>
 ## <a name="sharepoint-in-azure-solutions-posters"></a>Azure の SharePoint のソリューションのポスター
 
-これらの IT ポスターは、大きなポスターの形式で、SharePoint Server 2013 を使用する Azure ベースのソリューションを示します。
+Azure の SharePoint 用の IT ポスターは、SharePoint Server 2013 を使用する Azure ベースのソリューションを示しています。
   
 <a name="Azure_sharepoint2013"> </a>
-### <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト
+### <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>SharePoint Server 2013 を使用した Microsoft Azure のインターネットサイト
 
-****
-
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![SharePoint を使用した Azure のインターネット サイトのイメージ](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41992) <br/> |このポスターは、Azure のインターネット接続サイト用の主な設計活動および推奨アーキテクチャ選択の概要を示しています。  <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|アイテム|説明|
+|---|---|
+|[![SharePoint Server 2013 ポスターを使用した Azure のインターネットサイトのイメージ。](../media/MS-AZ-SPInternetSites.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41992) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392552)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392551)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41992)|このポスターは、Azure でのインターネットに接続されたサイトの主要な設計作業と推奨されるアーキテクチャについて概説します。  <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用した Azure のインターネットサイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 用 Azure アーキテクチャ2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="DesignSampleInternetSites"> </a>
-### <a name="design-sample-internet-sites-in-microsoft-azure-for-sharepoint-2013"></a>設計サンプル: SharePoint 2013 のための Microsoft Azure のインターネット サイト
+### <a name="internet-sites-in-azure-for-sharepoint-2013"></a>SharePoint 用の Azure のインターネットサイト2013
 
-****
-
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![設計サンプルのイメージ: Microsoft Azure for SharePoint 2013 のインターネット サイト](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41991) <br/> |SharePoint Server 2013 を使用した Azure のインターネット接続サイトの独自アーキテクチャ用の開始点としてこの設計サンプルを使用してください。 <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用した Microsoft Azure のインターネット サイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|アイテム|説明|
+|---|---|
+|[![Microsoft Azure for SharePoint Server 2013 ポスターのインターネットサイトのイメージ。](../media/MS-AZ-InternetSitesDesignSample.jpg)          ](https://www.microsoft.com/download/details.aspx?id=41991) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392549)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392548)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41991)|この設計サンプルは、SharePoint Server 2013 を使用した Azure のインターネットに直接接続されたサイトの独自のアーキテクチャの開始点として使用します。 <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [SharePoint Server 2013 を使用した Azure のインターネットサイト](internet-sites-in-microsoft-azure-using-sharepoint-server-2013.md) <br/> - [SharePoint 用 Azure アーキテクチャ2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 <a name="sharepoint_recovery_Azure"> </a>
 ### <a name="sharepoint-disaster-recovery-to-microsoft-azure"></a>Microsoft Azure に対する SharePoint の障害復旧
 
-****
-
-|**アイテム**|**説明**|
-|:-----|:-----|
-|[![Azure への SharePoint 障害回復プロセス](../media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41993) <br/> |この IT ポスターは、Azure の障害復旧環境のためのアーキテクチャ原則を示しています。 <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [Microsoft Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 2013 用の Microsoft Azure アーキテクチャ](microsoft-azure-architectures-for-sharepoint-2013.md) <br/> |
+|アイテム|説明|
+|---|---|
+|[![Azure に対する SharePoint の障害復旧プロセスのポスターのイメージ。](../media/SP-DR-Azure.png)          ](https://www.microsoft.com/download/details.aspx?id=41993) <br/> [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)  \| [その他の言語](https://www.microsoft.com/download/details.aspx?id=41993)|この IT ポスターは、Azure の障害復旧環境のためのアーキテクチャ原則を示しています。 <br/><br/> 詳細については、次の記事を参照してください。  <br/><br/> - [Azure での SharePoint Server 2013 の障害復旧](sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md) <br/> - [SharePoint 用 Azure アーキテクチャ2013](microsoft-azure-architectures-for-sharepoint-2013.md)|
    
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
+- [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/solution-architecture-center.md)
   
-[エンタープライズアーキテクトのための Microsoft cloud の図](../solutions/cloud-architecture-models.md)
+- [Microsoft クラウド アーキテクチャ モデル](../solutions/cloud-architecture-models.md)
   
-[Microsoft 365 テストラボガイド](m365-enterprise-test-lab-guides.md)
+- [Microsoft 365 テストラボガイド](m365-enterprise-test-lab-guides.md)
   
-[ハイブリッド ソリューション](hybrid-solutions.md)
+- [ハイブリッド ソリューション](hybrid-solutions.md)
 

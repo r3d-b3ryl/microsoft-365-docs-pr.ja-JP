@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Microsoft Defender for Office 365 で利用可能なフィッシング対策ポリシーについて学ぶことができます。
-ms.openlocfilehash: 5c3b79dcf462dbab4fc67b75952ca0ef39b80e75
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844298"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919778"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
@@ -30,7 +30,7 @@ ms.locfileid: "48844298"
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックス、スタンドアロン Exchange Online Protection (EOP) 組織、Exchange Online メールボックスを使用しない組織、Microsoft Defender for Office 365 組織で使用できます。
 
-Microsoft Defender for Office 365 のフィッシング対策ポリシーは、Office 365 の Defender を所有する組織でのみ使用できます。 例:
+Microsoft Defender for Office 365 のフィッシング対策ポリシーは、Office 365 の Defender を所有する組織でのみ使用できます。 次に例を示します。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -57,7 +57,7 @@ Office 365 用の Microsoft Defender での EOP とフィッシング対策ポ�
 
 - [EOP でフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)
 
-- [Microsoft Defender でのマルウェア対策ポリシーの構成 Microsoft 365 の Office 365](configure-atp-anti-phishing-policies.md)
+- [Office 365 の Microsoft Defender でフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)
 
 この記事の残りの部分では、EOP および Office 365 の Defender でフィッシング対策ポリシーで使用可能な設定について説明します。
 

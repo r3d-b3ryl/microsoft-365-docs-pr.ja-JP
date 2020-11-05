@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: how-to
+ms.article: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -14,25 +14,29 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365 管理者は、ランサムウェア攻撃から回復する方法について学ぶことができます。
-ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845542"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920610"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365 のランサムウェア攻撃からの回復
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-組織を保護するためにすべての予防措置を講じたとしても、 [ランサムウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻撃に被害を与えることができます。 ランサムウェアは大規模なものであり、攻撃は高度なものとなっています。
+組織を保護するためにすべての予防措置を講じたとしても、 [ランサムウェア](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻撃に被害を与えることができます。 ランサムウェアは大規模で、攻撃は非常に巧妙になっています。
 
-このトピックの手順に従って、ランサムウェアによって暗号化されたデータを復元する機会が最善になり、組織内での感染拡大を止めることができます。 開始する前に、次の項目を考慮する必要があります。
+この記事の手順では、データを復元し、感染の内部蔓延を停止するための最適な方法を提供します。 開始する前に、次の項目を考慮する必要があります。
 
-- Ransom からファイルへのアクセスが返される保証はありません。 実際には、ransom を支払うことで、ランサムウェアをさらに確保することができます。 既に有料になっていても、攻撃者の解決策を使用せずにファイルを正常に復元できた場合は、銀行に電話して、トランザクションをブロックできるかどうかを確認する必要があります。 また、このトピックの後半で説明するように、ランサムウェア攻撃を司法機関、詐欺報告用 web サイト、および Microsoft に報告することをお勧めします。
+- Ransom からファイルへのアクセスが返される保証はありません。 実際には、ransom を支払うことで、ランサムウェアをさらに確保することができます。
 
-- 攻撃とその影響に迅速に対応することが非常に重要です。 待機時間が長くなるほど、影響を受けるデータを回復できる可能性が低くなります。
+  既に支払いを行っているが、攻撃者の解決策を使用せずに回復した場合は、銀行に連絡して、取引をブロックできるかどうかを確認してください。
+
+  また、この記事の後半で説明するように、ランサムウェア攻撃を司法機関、詐欺報告用 web サイト、Microsoft に報告することをお勧めします。
+
+- 攻撃とその影響に迅速に対応することが重要です。 待機時間が長くなるほど、影響を受けるデータを回復できる可能性が低くなります。
 
 ## <a name="step-1-verify-your-backups"></a>手順 1: バックアップを確認する
 
@@ -40,13 +44,13 @@ ms.locfileid: "48845542"
 
 バックアップがない場合、またはバックアップがランサムウェアの影響を受けている場合は、この手順を省略できます。
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>手順 2: ActiveSync と OneDrive の同期を無効にする
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>手順 2: Exchange ActiveSync および OneDrive sync を無効にする
 
 ここで重要な点は、ランサムウェアによるデータ暗号化の拡散を停止することです。
 
-メールが対象になると考えられる場合は、メールボックスへのユーザーアクセスを一時的に無効にする必要があります。 Exchange ActiveSync は、モバイルデバイスがデバイスと Exchange Online メールボックスの間でデータを同期するために使用されます。
+ランサムウェアの暗号化の対象として電子メールの疑いがある場合は、メールボックスへのユーザーアクセスを一時的に無効にします。 Exchange ActiveSync は、デバイスと Exchange Online メールボックスの間でデータを同期します。
 
-メールボックスの ActiveSync を無効にする方法については、「 [Exchange Online でユーザーの Exchange activesync を無効にする方法](https://support.microsoft.com/help/2795303)」を参照してください。
+メールボックスの Exchange ActiveSync を無効にする方法については、「exchange [Online でユーザーの Exchange activesync を無効にする方法](https://support.microsoft.com/help/2795303)」を参照してください。
 
 メールボックスへの他の種類のアクセスを無効にするには、以下を参照してください。
 
@@ -58,7 +62,9 @@ OneDrive 同期を一時停止すると、潜在的に感染しているデバ�
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>手順 3: 影響を受けたデバイスからマルウェアを削除する
 
-すべての疑いのあるコンピューターおよびデバイスで最新の更新プログラムを使用して完全なウイルス対策スキャンを実行し、ランサムウェアに関連付けられているペイロードを検出して削除します。 データを同期しているデバイス、またはマップされたネットワークドライブのターゲット (それらのコンピューターとデバイスもスキャンする必要がある) を忘れないようにしてください。
+すべての疑いのあるコンピューターおよびデバイスで、完全に最新のウイルス対策スキャンを実行して、ランサムウェアに関連付けられているペイロードを検出して削除します。
+
+データを同期しているデバイス、またはマップされたネットワークドライブのターゲットをスキャンすることを忘れないでください。
 
 [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)は、 [Windows Defender](https://www.microsoft.com/windows/comprehensive-security)または (古いクライアントの場合) を使用できます。
 
@@ -90,7 +96,7 @@ OneDrive for business のファイルの復元を使用すると、OneDrive 全�
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>手順 7: Exchange ActiveSync と OneDrive の同期を再度有効にする
 
-コンピューターとデバイスを消去してデータを回復したら、 [手順 2](#step-2-disable-activesync-and-onedrive-sync)で以前に無効にした ActiveSync と OneDrive の同期を再度有効にすることができます。
+コンピューターとデバイスを消去してデータを回復した後、 [手順 2](#step-2-disable-exchange-activesync-and-onedrive-sync)で以前無効にした Exchange ActiveSync と OneDrive 同期を再度有効にすることができます。
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>手順 8 (オプション): 特定のファイル拡張子に対して OneDrive 同期をブロックする
 
@@ -126,7 +132,7 @@ OneDrive for business のファイルの復元を使用すると、OneDrive 全�
 
 ### <a name="submit-email-messages-to-microsoft"></a>Microsoft に電子メールメッセージを送信する
 
-複数の方法のいずれかを使用して、ランサムウェアを含むフィッシングメッセージを報告できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
+ランサムウェアを含むフィッシングメッセージは、いくつかの方法のいずれかを使用して報告できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

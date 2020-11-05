@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、セキュリティ & コンプライアンスセンターにある [低速なメールフロールールの詳細を修正する] を使用して、組織内の非効率的または壊れたメールフロールール (トランスポートルールとも呼ばれます) を特定して修正する方法を学習できます。
-ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f51c5a577fc6d9c52e35a5217cae4ae94c546c9d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877539"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920550"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターでの低速メールフロールールの洞察を修正する
 
@@ -32,7 +32,9 @@ ms.locfileid: "48877539"
 - 複合正規表現 (regex) パターンマッチングを使用する条件。
 - 添付ファイルのコンテンツチェックを使用する条件。
 
-「セキュリティの **低速メール** フロールール」では、 [セキュリティ & コンプライアンスセンター](https://protection.office.com)のメール [フローダッシュボード](mail-flow-insights-v2.md)の **推奨事項につい** て理解しています。メールフロールールの完了に時間がかかりすぎた場合に通知します。 この洞察は、条件が検出された後にのみ表示されます (メールループがない場合は、洞察は見られません)。
+「セキュリティの **低速メール** フロールール」では、 [セキュリティ & コンプライアンスセンター](https://protection.office.com)のメール [フローダッシュボード](mail-flow-insights-v2.md)の **推奨事項につい** て理解しています。メールフロールールの完了に時間がかかりすぎた場合に通知します。
+
+この洞察は、条件が検出された後にのみ表示されます (メールループがない場合は、洞察は見られません)。
 
 メールフローの遅延を減らすために、この通知を使用して、メールフロールールを識別し、微調整することができます。
 
@@ -47,8 +49,8 @@ ms.locfileid: "48877539"
 
 ![[Fix the details mail flow rules] の [詳細の表示] をクリックした後に表示される詳細ポップアップ](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-Exchange Online のメールフロールールにおける条件と例外の詳細については、「 [Exchange online のメールフロールールの条件と例外 (述語)](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
+メール フロー ルールにおける条件と例外の詳細については、「[Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="see-also"></a>関連項目
 
 メールフローダッシュボードの他の洞察の詳細については、「 [セキュリティ & コンプライアンスセンター」の「mail flow insights](mail-flow-insights-v2.md)」を参照してください。

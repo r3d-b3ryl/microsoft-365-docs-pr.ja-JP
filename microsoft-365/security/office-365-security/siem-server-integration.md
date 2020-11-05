@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: Microsoft 365 クラウドサービスおよびアプリケーションとのセキュリティ情報およびイベント管理 (SIEM) サーバーの統合の概要を理解する
-ms.openlocfilehash: 0e582333615d11c500b114225435903cea386ade
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846402"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919766"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>セキュリティ情報およびイベント管理 (SIEM) サーバーと Microsoft 365 のサービスおよびアプリケーションとの統合
 
@@ -70,6 +70,6 @@ SIEM サーバーの統合を構成する前に、監査ログが有効になっ
 
 ## <a name="more-resources"></a>その他のリソース
 
-[Azure Defender でのセキュリティソリューションの統合 *](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[Azure Defender でセキュリティソリューションを統合する](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [Microsoft Graph Security API の警告と SIEM の統合](https://docs.microsoft.com/graph/security-integration)

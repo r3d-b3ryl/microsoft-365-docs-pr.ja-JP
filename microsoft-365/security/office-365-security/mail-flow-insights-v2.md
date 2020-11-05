@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理者は、セキュリティ & コンプライアンスセンターのメールフローダッシュボードで使用できる洞察およびレポートについて学習できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877779"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920010"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのメール追跡の分析情報
 
@@ -66,13 +66,12 @@ ms.locfileid: "48877779"
 
 - Azure Active Directory の **[Exchange 管理者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。
 
-- セキュリティ & コンプライアンスセンターの **メールフロー管理者** : この役割グループのメンバーが全体管理者または Exchange 管理者の役割グループのメンバーでもない場合は、次の問題と要件を確認してください。
-
-  - ユーザーは、セキュリティ & コンプライアンスセンターに直接ログインする必要があり <https://protection.office.com> ます。
+- セキュリティ & コンプライアンスセンターの **メールフロー管理者** 。 アカウントが組織の管理役割グループまたは Exchange 管理者役割グループのメンバーでもない場合は、次の点を考慮してください。
+  - ユーザーは、セキュリティ & コンプライアンスセンターに直接サインインする必要があり <https://protection.office.com> ます。
   - ユーザーには、メールフローダッシュボードに対する読み取り専用アクセス許可のみが付与されます。
   - ユーザーは、Microsoft 365 管理センターへのアクセス権を持ちません。
 
-セキュリティ & コンプライアンスセンターでのアクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md) 」を参照し、 [セキュリティ & コンプライアンスセンターへのアクセス権をユーザーに付与](grant-access-to-the-security-and-compliance-center.md)します。
+アクセス許可の詳細については、「 [セキュリティ & コンプライアンスセンターのアクセス許可](permissions-in-the-security-and-compliance-center.md) 」を参照して、 [ユーザーにセキュリティ & コンプライアンスセンターにアクセスできるように](grant-access-to-the-security-and-compliance-center.md)します。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>メールフローダッシュボードの検索先
 
