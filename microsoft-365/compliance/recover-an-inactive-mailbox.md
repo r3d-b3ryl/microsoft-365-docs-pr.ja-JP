@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: Office 365 の非アクティブなメールボックスのコンテンツを、非アクティブなメールボックスのコンテンツを含む新しいメールボックスに変換することによって復元する方法について説明します。
-ms.openlocfilehash: 41096df9fe4c2ae78b07e06ebf8bd8384a83f4fa
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: ab5b3265cd9d3b1bab539d45e5daf0e6b4110f9a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655748"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920053"
 ---
 # <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
 
@@ -54,7 +54,7 @@ ms.locfileid: "48655748"
 
 ## <a name="recover-inactive-mailboxes"></a>非アクティブなメールボックスを回復する
 
-*InactiveMailbox*パラメーターを指定して**新しいメールボックス**コマンドレットを使用して、非アクティブなメールボックスを回復します。
+*InactiveMailbox* パラメーターを指定して **新しいメールボックス** コマンドレットを使用して、非アクティブなメールボックスを回復します。
 
 1. 非アクティブなメールボックスのプロパティを含む変数を作成します。
 
@@ -65,7 +65,7 @@ ms.locfileid: "48655748"
    > [!IMPORTANT]
    > 上記のコマンドでは、 **DistinguishedName** または **ExchangeGUID** プロパティの値を使用して非アクティブなメールボックスを識別します。これらのプロパティは組織内の各メールボックスに対して一意ですが、アクティブなメールボックスと非アクティブなメールボックスとでプライマリ SMTP アドレスが等しい可能性があります。
 
-2. 次の例では、上記のコマンドで取得したプロパティを使用して、ユーザー Ann Beebe のために非アクティブなメールボックスをアクティブなメールボックスに回復します。 *Name*および*MicrosoftOnlineServicesID*パラメーターに指定する値が組織内で一意であることを確認してください。
+2. 次の例では、上記のコマンドで取得したプロパティを使用して、ユーザー Ann Beebe のために非アクティブなメールボックスをアクティブなメールボックスに回復します。 *Name* および *MicrosoftOnlineServicesID* パラメーターに指定する値が組織内で一意であることを確認してください。
 
    ```powershell
    New-Mailbox -InactiveMailbox $InactiveMailbox.DistinguishedName -Name annbeebe -FirstName Ann -LastName Beebe -DisplayName "Ann Beebe" -MicrosoftOnlineServicesID Ann.Beebe@contoso.com -Password (ConvertTo-SecureString -String 'P@ssw0rd' -AsPlainText -Force) -ResetPasswordOnNextLogon $true
@@ -87,7 +87,7 @@ ms.locfileid: "48655748"
 
     - **インプレース保持** In-Place 保持は、回復したメールボックスから削除されます。 これは、回復されたメールボックスが、In-Place ホールドまたは In-Place 電子情報開示検索からソースメールボックスとして削除されることを意味します。
 
-    - **保持ロック付きの Microsoft 365 アイテム保持ポリシー。** 非アクティブなメールボックスが保持ポリシー (ロックされた *保持ポリシー*と呼ばれます) に割り当てられている場合、回復したメールボックスは同じロックされた保持ポリシーに割り当てられます。 ロックされた保持ポリシーの詳細については、「 [保持ロックを使用して規制要件を遵守する](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)」を参照してください。
+    - **保持ロック付きの Microsoft 365 アイテム保持ポリシー。** 非アクティブなメールボックスが保持ポリシー (ロックされた *保持ポリシー* と呼ばれます) に割り当てられている場合、回復したメールボックスは同じロックされた保持ポリシーに割り当てられます。 ロックされた保持ポリシーの詳細については、「保持[ロックを使用して、アイテム保持ポリシーおよび保持ラベルポリシーへの変更を制限する](retention-preservation-lock.md)」を参照してください。
 
     - **ロックを保持しない Microsoft 365 アイテム保持ポリシー。** 非アクティブなメールボックスは、そのメールボックスに適用されていた、ロックされていない Microsoft 365 保持ポリシーから削除されます。 ただし、回復されたメールボックスで訴訟ホールドが有効になっている場合は、特定の保存期間よりも古いコンテンツを削除する組織全体のアイテム保持ポリシーに基づいてメールボックスのコンテンツが削除されないようにします。 訴訟ホールドを保持するか、削除することができます。 詳細については、「 [訴訟ホールドを作成する](create-a-litigation-hold.md)」を参照してください。
 
@@ -107,6 +107,6 @@ ms.locfileid: "48655748"
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
   ```
 
-  **ExternalDirectoryObjectId** プロパティの値が存在しない場合は、メールボックスの保存期間の期限が切れているので、 **New-Mailbox -InactiveMailbox** コマンドを実行することにより非アクティブなメールボックスを回復できます。 **Externaldirectoryobjectid**プロパティの値がある場合、回復可能な削除によって削除されたメールボックスの保持期間は期限が切れていないため、ユーザーアカウントを復元することによってメールボックスを回復する必要があります。 詳細については、「[組織からユーザーを削除する](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)」を参照してください。
+  **ExternalDirectoryObjectId** プロパティの値が存在しない場合は、メールボックスの保存期間の期限が切れているので、 **New-Mailbox -InactiveMailbox** コマンドを実行することにより非アクティブなメールボックスを回復できます。 **Externaldirectoryobjectid** プロパティの値がある場合、回復可能な削除によって削除されたメールボックスの保持期間は期限が切れていないため、ユーザーアカウントを復元することによってメールボックスを回復する必要があります。 詳細については、「[組織からユーザーを削除する](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)」を参照してください。
 
 - **非アクティブなメールボックスを回復した後に、アーカイブ メールボックスを有効にすることを検討する。** これにより、復帰したユーザーや新しい従業員が古いメッセージ アーカイブ メールボックスに移動できるようになります。 アイテム保持ホールドの期限が切れると、Exchange Online メールボックスに割り当てられた既定の Exchange アイテム保持ポリシーの一部であるアーカイブ ポリシーが、2 年以上経過しているアイテムをアーカイブ メールボックスに移動します。 アーカイブ メールボックスを有効にしない場合は、2 年以上経過しているアイテムがユーザーのプライマリ メールボックスに残ります。 詳細については、「 [アーカイブメールボックスを有効にする](enable-archive-mailboxes.md)」を参照してください。

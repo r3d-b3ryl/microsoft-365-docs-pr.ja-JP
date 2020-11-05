@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 73d52a91620bc0bd50a310c4085fa821fab80da2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bff804e726a62563621b11932e590ffcb631835a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416357"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920399"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品計画取引委員会 (CFTC) ルール 1.31 (c-d) 米国
 
@@ -41,7 +41,7 @@ CFTC Rule 1.31 (c-d) に準拠した Azure コンプライアンスを評価す�
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-CFTC Rule 1.31 (c-d) に対する Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化した、Covington & の気流を含む独立した法律事務所を参加しています。 結果のレポート、 [Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンス](https://go.microsoft.com/fwlink/?linkid=830440)において、Covington では、 [Office 365 に保持ロック](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) が設定されていることを検証しています。これにより、規制を適用している顧客は、レコード保持のための cftc 要件に準拠するための方法でデータを保存できます。
+CFTC Rule 1.31 (c-d) に対する Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化した、Covington & の気流を含む独立した法律事務所を参加しています。 結果のレポート、 [Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンス](https://go.microsoft.com/fwlink/?linkid=830440)において、Covington では、 [Office 365 に保持ロック](retention-preservation-lock.md) が設定されていることを検証しています。これにより、規制を適用している顧客は、レコード保持のための cftc 要件に準拠するための方法でデータを保存できます。
 
 Office 365 のアーカイブは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役に立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
 

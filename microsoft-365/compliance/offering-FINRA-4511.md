@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b70393bfff32d855e49c74bab340379cdaf488f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415871"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919691"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融業界の法令当局 (FINRA) ルール 4511 (c) 米国
 
@@ -47,7 +47,7 @@ Cohasset では、ポリシーロックオプションを使用して [Azure 不
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-4511 (c) を使用して Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化し、Covington & の気流を含む、主要な独立した法律事務所を保持しています。 生成されたレポート、Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンスにおいて、 [365](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) Covington は、ブローカーディーラーを含む規制対象の顧客がデータを保存できるようにするアーカイブ機能が含まれています。これらの機能を使用して、レコード保持に関する finra 要件に準拠するために役立つ方法があります。
+4511 (c) を使用して Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化し、Covington & の気流を含む、主要な独立した法律事務所を保持しています。 生成されたレポート、Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンスにおいて、 [365](retention-preservation-lock.md) Covington は、ブローカーディーラーを含む規制対象の顧客がデータを保存できるようにするアーカイブ機能が含まれています。これらの機能を使用して、レコード保持に関する finra 要件に準拠するために役立つ方法があります。
 
 Office 365 のアーカイブでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持することができます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
 
@@ -68,9 +68,9 @@ Office 365 のアーカイブでは、電子メール、ボイスメール、共
 
 ## <a name="how-to-implement"></a>実装方法
 
-- **金融サービスの規制**: クラウドコンピューティングおよび Microsoft online services の主要な US 規制原則のコンプライアンスマップ。 [詳細情報](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **リスク評価およびコンプライアンス ガイド**: Microsoft クラウド サービスのリスク評価および規制機関の通知のガバナンス モデルを作成します。 [詳細情報](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **金融ユース ケース**: 金融サービス向けの Azure ソリューションを構築するためのユース ケースの概要、チュートリアル、およびその他のリソース。 [詳細情報](https://docs.microsoft.com/azure/industry/financial/)
+- **金融サービスの規制** : クラウドコンピューティングおよび Microsoft online services の主要な US 規制原則のコンプライアンスマップ。 [詳細情報](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- **リスク評価およびコンプライアンス ガイド** : Microsoft クラウド サービスのリスク評価および規制機関の通知のガバナンス モデルを作成します。 [詳細情報](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **金融ユース ケース** : 金融サービス向けの Azure ソリューションを構築するためのユース ケースの概要、チュートリアル、およびその他のリソース。 [詳細情報](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>リソース
 
