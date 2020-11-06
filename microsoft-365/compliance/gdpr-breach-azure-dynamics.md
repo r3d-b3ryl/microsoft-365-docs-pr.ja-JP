@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c420e5a8fd94a9fb549cb6683f46c4bc5457632a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0cdd3a2d8e158800cef534a1488df0f25e3d232f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843173"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920263"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>GDRP の下での Azure および Dynamics 365 の侵害通知
 
@@ -32,9 +32,9 @@ Microsoft では Microsoft Azure に対する攻撃の影響を軽減するた�
 
 ## <a name="detection-of-potential-breaches"></a>潜在的な侵害の検出
 
-最新のクラウド コンピューティングの性質上、お客様のクラウド環境で発生するすべてのデータ侵害に Microsoft Azure サービスが関与しているわけではありません。 Microsoft では Azure サービスに責任共有モデルを導入することで、セキュリティ上および運用上の責任範囲を定義しています。 クラウド サービス プロバイダーとお客様の双方がクラウド セキュリティの特定部分に対して責任を負っているため、クラウド サービスのセキュリティは、共同責任の考えに基づいて検討する必要があります。
+Due to the nature of modern cloud computing, not all data breaches occurring in a customer cloud environment involve Microsoft Azure services. Microsoft employs a shared responsibility model for Azure services to define security and operational accountabilities. Shared responsibility is important when discussing security of a cloud service, because both the cloud services provider and the customer are accountable for portions of cloud security.
 
-Microsoft は、お客様の責任領域内で発生するセキュリティ インシデントの監視や対応措置を行うことはありません。特定のお客様のみに発生した侵害は Azure セキュリティ インシデントとして扱われず、お客様のテナントでその対応策を講じていただく必要があります。お客様のインシデント対応では、適切なサービス契約の下で Microsoft Azure [カスタマー サポート](https://azure.microsoft.com/support/options/)の支援をご利用いただける場合があります。また、お客様は Microsoft Azure のさまざまなサービス ([Azure Defender*](https://azure.microsoft.com/services/security-center/) など) をご利用いただくことで、セキュリティ インシデント対応を開発し、管理することができます。
+Microsoft does not monitor for or respond to security incidents within the customer's realm of responsibility. A customer-only security compromise would not be processed as an Azure security incident and would require the customer tenant to manage the response effort. Customer incident response may involve collaboration with Microsoft Azure [customer support](https://azure.microsoft.com/support/options/), given appropriate service contracts. また、Microsoft Azure は、 (例えば[Azure Defender](https://azure.microsoft.com/services/security-center/)など) お客様がセキュリティ インシデント 対応の開発と管理に活用できる、さまざまなサービスも提供します。
 
 Microsoft Azure インシデント管理計画に含まれるセキュリティ インシデント対応プロセスに従い、Azure は潜在的なデータ侵害に対処します。Azure のセキュリティ インシデント対応は 5 段階のプロセス (検出、評価、診断、安定化、クローズ) で実装されています。セキュリティ インシデント対応チームは、調査の進捗に合わせて診断ステージと安定化ステージの間で切り替えをすることがあります。セキュリティ インシデント対応プロセスの概要は次のとおりです:
 
@@ -42,7 +42,7 @@ Microsoft Azure インシデント管理計画に含まれるセキュリティ 
 | ------- | ------------- |
 | **_1 — 検出_* _ | 潜在的なインシデントの最初の兆候です。 |
 | _*_2 — 評価_*_ | 待機中のインシデント対応チーム メンバーがイベントの影響度と重大度を評価します。証拠に基づき、この評価をセキュリティ対応チームにエスカレートするかどうか判断されます。 |
-| _*_3 — 診断_*_ | セキュリティ対応チームの専門家がテクニカルまたはフォレンシックな調査を行い、封じ込め、移行、回避のストラテジーを特定します。 不正な目的を持つ個人や無許可の個人に顧客データが漏洩した可能性があるとセキュリティ チームが判断した場合には、カスタマー インシデント通知プロセスが並行して開始されます。 |
+| _*_3 — 診断_*_ | Security response experts conduct the technical or forensic investigation, identify containment, mitigation, and workaround strategies. If the security team believes that customer data may have become exposed to an unlawful or unauthorized individual, execution of the Customer Incident Notification process begins in parallel. |
 | _*_4 — 安定化と回復_*_ | インシデント対応チームは問題を軽減するための回復計画を作成します。リスク封じ込めステップ (影響を受けたシステムの隔離など) を診断と並行してただちに開始する場合があります。当面のリスクが過ぎ去った後の長期的な軽減計画を立てる場合もあります。 |
 | _*_5 — クローズと事後分析_*_ | インシデント対応チームはインシデントの詳細を示す事後分析を作成します。その目的は、ポリシー、手順、プロセスを改訂してイベントの再発を防ぐことです。 |
 
@@ -50,16 +50,16 @@ Microsoft Azure インシデント管理計画に含まれるセキュリティ 
 
 Microsoft Azure で使われる検出プロセスの目的は、Azure サービスの機密保持性、整合性、可用性にとってリスクとなるイベントを検出することです。次のようなイベントにより、調査が開始する可能性があります:
 
-- 内部監視および警告フレームワークによる自動システム警告。 これらの警告はマルウェア対策、侵入検知などのシグネチャ ベースのアラームとして出されることも、または予期されるアクティビティをプロファイル化して異常があれば警告を発するアルゴリズムを介して出されることもあります。
+- Automated system alerts via internal monitoring and alerting frameworks. These alerts could come in the way of signature-based alarms such as anti-malware, intrusion detection or via algorithms designed to profile expected activity and alert upon anomalies.
 - Microsoft Azure および Azure Government で実行されている Microsoft サービスからの第一者レポート。
-- セキュリティ脆弱性が [secure@microsoft.com](mailto:secure@microsoft.com) 経由で [Microsoft Security Response Center (MSRC)](https://technet.microsoft.com/security/dn440717) に報告されます。 MSRC は世界各地のパートナーやセキュリティ調査員と連携してセキュリティ インシデントの防止と Microsoft 製品のセキュリティ向上に努めています。
+- Security vulnerabilities are reported to the [Microsoft Security Response Center (MSRC)](https://technet.microsoft.com/security/dn440717) via [secure@microsoft.com](mailto:secure@microsoft.com). MSRC works with partners and security researchers around the world to help prevent security incidents and to advance Microsoft product security.
 - [カスタマー サポート ポータル](https://www.windowsazure.com/support/contact/)または Microsoft Azure および Azure Government 管理ポータルを介して提出される、(お客様の責任範囲内で生じるアクティビティではなく) Azure インフラストラクチャに帰属する疑わしいアクティビティを記述するお客様レポート。
-- セキュリティの[レッド チームとブルー チーム](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/)のアクティビティ。 この戦略では、高度な技術を持つ攻撃担当の Microsoft のセキュリティ専門家からなるレッド チームが Azure の潜在的弱点を見つけ出して攻撃します。 セキュリティ対応担当のブルー チームは、レッド チームのアクティビティを検知して防御しなければなりません。 レッド チームとブルー チームの両方のアクティビティを使用して、セキュリティ インシデントが Azure のセキュリティ対応措置により効果的に管理されているかどうかが検証されます。 セキュリティ レッド チームとブルー チームのアクティビティは交戦規定の下に実施されるため、お客様のデータは確実に保護されます。
-- Azure サービス オペレーターによるエスカレーション。 Microsoft スタッフは潜在的なセキュリティ問題を特定してエスカレーションする訓練を受けています。
+- Security [Red Team and Blue Team](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) activity. This strategy uses a highly skilled Red Team of offensive Microsoft security experts to uncover and attack potential weaknesses in Azure. The security response Blue Team must detect and defend against the Red Team's activity. Both Red and Blue Team actions are used to verify that Azure security response efforts are effectively managing security incidents. Security Red Team and Blue Team activities are operated under rules of engagement to help ensure the protection of customer data.
+- Azure サービス オペレーターによるエスカレーション。Microsoft スタッフは潜在的なセキュリティ問題を見分けてエスカレートできるように訓練を受けています。
 
 ## <a name="azures-data-breach-response"></a>Azure のデータ侵害対応措置
 
-Microsoft はインシデントによる機能上の影響、回復可能性、情報に対する影響を判断することで、適切な優先度と重大度レベルを調査に対して割り当てます。 調査が進むにつれて、新たな発見や結論に応じて優先度と重大度が変更されることがあります。 お客様データに対する緊急または確定されたリスクを伴うセキュリティ イベントは重大度「高」として扱われ、24 時間体制でその解決に努めます。 
+Microsoft assigns the investigation appropriate priority and severity levels by determining the functional impact, recoverability, and information impact of the incident. Both the priority and severity may change over the course of the investigation, based on new findings and conclusions. Security events involving imminent or confirmed risk to customer data are treated as high severity and worked around the clock to resolution. 
 
 Microsoft Azure では、情報に対するインシデントの影響度を以下の侵害カテゴリに分類します:
 
@@ -72,32 +72,32 @@ Microsoft Azure では、情報に対するインシデントの影響度を以�
 
 セキュリティ対応チームは Microsoft Azure セキュリティ エンジニアおよび SME と協力し、証拠から得られたデータに基づいてイベントを分類します。セキュリティ イベントは次のように分類されます:
 
-- _*誤検知**: 検出基準を満たしているが、正常な業務プロセスの一部であることが判明し、場合によってはフィルタリングする必要があるイベント。 サービス チームは誤検知の根本原因を特定し、体系的な方法でそれに対処します (必要に応じて検出ソースを使用したり微調整したりします)。
+- _*False Positive**: An event that meets detection criteria but is found to be part of a normal business practice and may need to be filtered. The service team identifies the root cause for false positives and will address them in a systematic way using detection sources and fine-tuning them as needed.
 - **セキュリティ インシデント** : Microsoft の機器や設備に保管された何らかの顧客データまたはサポート データへの不正アクセス、またはそのような機器や設備への無許可アクセスが発生した結果、顧客データまたはサポート データが喪失、開示、または改変されたインシデント。
 - **お客様報告対象セキュリティ/プライバシー インシデント (CRSPI)** : Microsoft のシステム、機器、または設備に対する不正/無許可アクセスまたはその使用によってもたらされる顧客データの開示、改変、または喪失。
-- **プライバシーの侵害** : 個人データに関わるセキュリティ インシデントのサブタイプ。 処理方法は、セキュリティインシデントと同様です。
+- **Privacy Breach** : A subtype of Security Incident involving personal data. Handling procedures are no different than a security incident.
 
-CRSPI を宣言するには、顧客データへの無許可アクセスが発生した (またはその可能性が高い) および/または通知が行われる必要がある法的責任または契約責任があると Microsoft により判断される必要があります。 お客様への影響、リソースへのアクセス、修復ステップを具体的に判明させることが望ましいものの、必須ではありません。 一般的にインシデントで CRSPI が宣言されるのは、セキュリティ インシデントの診断ステージの完了後です。 ただし、該当するすべての情報を入手できた時点で宣言される可能性があります。 セキュリティ インシデント管理者は、カスタマー インシデント通知プロセスの実行を開始する前に、報告対象イベントが生じたことに対する合理的な疑いの余地のない証拠を得ておく必要があります。
+For a CRSPI to be declared, Microsoft must determine that unauthorized access to customer data has or has likely occurred and/or that there is a legal or contractual commitment that notification must occur. It is desired, but not required, that specific customer impact, resource access, and repair steps be known. An incident is generally declared a CRSPI after the conclusion of the Diagnose stage of a security incident. However, the declaration may happen at any point that all pertinent information is available. The security incident manager must establish evidence beyond reasonable doubt that a reportable event has occurred to begin execution of the Customer Incident Notification Process.
 
 調査期間中、セキュリティ対応チームは全世界の法律顧問と協力し、法的義務およびお客様への責任に基づいて捜査を確実に行います。また、さまざまな運用環境でシステム データや顧客データの閲覧と処理がかなり制限されます。該当するインシデント チケットに記録されたインシデント管理者による明確な書面の同意なしで、機密データおよび顧客データが運用環境から外部に移送されることはありません。
 
 Microsoft はお客様にとってのリスクと業務上のリスクが適切に抑止され、是正措置が実施されていることを検証します。必要に応じて、イベントに関連する当座のセキュリティ リスクを解決するための緊急軽減ステップを実施します。
 
-Microsoft では、データ侵害に関する社内向けの事後分析も行います。 この検証の一環として、対応および運用手順が充分であったかどうかを評価し、セキュリティインシデント対応の SOP または関連するプロセスに必要な更新プログラムを特定し、実装します。 データ侵害の内部事後分析は、非常に機密性の高い社外秘の記録であり、顧客には公開されません。 ただし、事後分析は要約の上、他の顧客のイベント通知に含めることができます。 これらのレポートは、Azure の日常的な監査サイクルの一部として確認するために外部監査者に提供されます。
+Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the Security Incident Response SOP or related processes are identified and implemented. Internal postmortems for data breaches are highly confidential records not available to customers. Postmortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of Azure's routine audit cycle.
 
 ## <a name="customer-notification"></a>お客様への通知
 
 Microsoft Azure では必要に応じてデータ侵害についてお客様や規制機関に通知いたします。Microsoft では Azure の運用において社内の本格的な区画化を採用しています。またデータ フロー ログも堅牢です。このような設計により、ほとんどのインシデントの範囲を特定のお客様層に限定できます。データが侵害されたときに、影響を受けたお客様に対して正確かつアクション可能な通知をタイムリーに提供することを目標としています。
 
-CRSPI の宣言後の通知は、出来るだけ迅速に行われますが、その一方で、迅速に対応するリスクも検討しています。 通常、通知の作成プロセスは、インシデントの調査中に実行されます。 次の場合を *除き* 、お客様への通知は、Microsoft が侵害の発生を宣言してから 72 時間以内に行われます。
+After the declaration of a CRSPI, the notification process takes place as expeditiously as possible while still considering the security risks of moving quickly. Generally, the process of drafting notifications occurs as the incident investigation is ongoing. Customer notices are delivered in no more than 72 hours from the time we declared a breach *except* in the following circumstances:
 
-- Microsoft では、通知を実行すると他のユーザーへのリスクが増大すると考えています。 たとえば、通知をすることにより悪意のある相手にも情報を与え、修正不能になる可能性があります。
+- Microsoft believes that the act of performing a notification increases the risk to other customers. For example, the act of notifying may tip off an adversary causing an inability to remediate.
 - Microsoft の法務部である Corporate External and Legal Affairs (CELA) およびエグゼクティブ インシデント マネージャーによって精査される、他の通常と異なる状況または極端な状況。
-- 72 時間以内にインシデントの詳細が一部判明する場合があります。 そうした詳細情報は、調査の進捗に合わせてお客様と規制当局に提供されます。
+- The 72-hour timeline may leave some incident details available. These are provided to customers and regulatory authorities as the investigation proceeds.
 
 Microsoft Azure は、お客様が内部調査を行ってエンド ユーザーへの責務を果たせるよう、詳細な情報をお客様に提供すると同時に、通知プロセスを不必要に遅らせないようにします。
 
-個人データの侵害についての通知は、メールなど Microsoft が選択した方法で、お客様に送信されます。 データが侵害されたときの通知は、Azure Defender *で提供されているセキュリティ連絡先のリストに配信されます。これは、[実装ガイドライン](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)に従って構成できます。Azure Defender* に連絡先情報が提供されていない場合、Azure サブスクリプションの1人以上の管理者に通知が送信されます。 通知が正常に配信されるようにするには、該当する各サブスクリプションおよびオンライン サービス ポータルに関する管理者の連絡先情報が正しいことを、お客様の責任において確認する必要があります。
+個人データ侵害の通知は、Microsoft が選択する任意の方法 (電子メールなど) でお客様に送られます。データ侵害の通知は Azure Defender 内にあるセキュリティ連絡先一覧に向けて配信され、[実装ガイドライン](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)に従ってこれを構成できます。連絡先情報が Azure Defender に提供されていない場合、Azure サブスクリプションの 1 人以上の管理者に通知が送られます。通知を確実に受け取るには、お客様に該当する各サブスクリプションおよびオンライン サービス ポータルで管理者の連絡先情報を正しく指定していただく必要があります。
 
 さらに Microsoft Azure または Azure Government チームは、カスタマー サービス (CSS) などの追加の Microsoft スタッフ、およびお客様のアカウント マネージャー (AM) やテクニカル アカウント マネージャー (TAM) にも通知することを選択する場合があります。 多くの場合、これらのスタッフはお客様と緊密な関係にあり、迅速な修復をサポートさせていただきます。
 

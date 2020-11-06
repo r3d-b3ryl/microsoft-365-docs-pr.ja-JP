@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルを作成して自動発行します。
-ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877304"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920021"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -224,8 +224,6 @@ ProgID:Media AND ProgID:Meeting
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-
-
 ## <a name="updating-retention-labels-and-their-policies"></a>保持ラベルとそのポリシーの更新
 
 保持ラベルや自動適用ポリシーを編集すると、その保持ラベルが既にコンテンツに適用されている場合、新しく識別されるコンテンツに加えて、そのコンテンツにも更新された設定が自動的に適用されます。
@@ -233,6 +231,10 @@ ProgID:Media AND ProgID:Meeting
 ラベルやポリシーを作成して保存した後には変更できない設定があり、それらは以下のものを含みます。
 - 作成日時に基づいてコンテンツを保持または削除するようにラベルを構成していない場合を除いた、保持期間以外の保持設定。
 - アイテムをレコードとしてマークするオプション。
+
+## <a name="locking-the-policy-to-prevent-changes"></a>変更を防ぐためにポリシーをロックする
+
+ポリシーを無効にしたり、ポリシーを削除する、または制限を緩和したりできないようにする必要がある場合は、「[保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する](retention-preservation-lock.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

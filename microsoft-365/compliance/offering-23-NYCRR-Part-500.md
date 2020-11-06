@@ -14,42 +14,42 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 623b78946eae36849da8e1b139e2df4a9dff7742
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fa76fefbeea2c8fc0226a85d5b12599839eba8ca
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845149"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920409"
 ---
 # <a name="title-23-nycrr-part-500"></a>Title 23 NYCRR Part 500
 
 ## <a name="title-23-nycrr-part-500-overview"></a>Title 23 NYCRR Part 500 の概要
 
-深刻で、増加の一途をたどる情報や財務システムのサイバーセキュリティに対する脅威に対応するために、ニューヨーク州金融サービス局は 2017 年に、州内での業務の免許または承認を受けている金融機関に対して新しいサイバーセキュリティ要件を適用しました。 この規制は 「Title 23 New York Codes, Rules, and Regulation Part 500: Cybersecurity Requirements for Financial Services Companies (金融サービス会社向けサイバーセキュリティ要件)」と呼ばれ、州政府の認可を受けた、民間、または国際的な銀行、住宅ローン ブローカー、保険会社などの顧客データおよび IT システムを保護することを目的としています。
+In response to the significant and ever-increasing threats to the cybersecurity of information and financial systems, in 2017, the State of New York Department of Financial Services imposed a new set of cybersecurity requirements on financial institutions that are licensed or authorized to do business in the state. This regulation — Title 23 New York Codes, Rules, and Regulation Part 500: Cybersecurity Requirements for Financial Services Companies — is designed to protect customer data and the information technology systems of financial institutions such as state-chartered, private, and international banks, mortgage brokers, and insurance companies.
 
 ## <a name="microsoft-and-title-23-nycrr-part-500"></a>Microsoft と Title 23 NYCRR Part 500
 
-Microsoft では、Title 23 NYCRR Part 500 の規制を受ける金融サービスに対して、包括的ガイド[『Microsoft クラウド サービス: NYDFS サイバーセキュリティ要件への準拠支援』(Microsoft Cloud Services: Supporting Compliance with NYDFS Cybersecurity Requirements)](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7e56dc6-4e52-4e9a-af06-aa41d5851d36&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) を提供しています。 規制の要求事項へ準拠が Azure、Office 365、Power BI の各クラウド サービスでサポートされる方法ついて詳しく説明しています。 世界の金融の中心地であるニューヨークでの操業を希望する金融機関はこれらの要求事項を満たす必要があるため、多くの機関にとってコンプライアンスは重要課題です。
+Microsoft provides a comprehensive guide, [Microsoft Cloud Services: Supporting Compliance with NYDFS Cybersecurity Requirements](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7e56dc6-4e52-4e9a-af06-aa41d5851d36&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides), for financial services regulated under Title 23 NYCRR Part 500. It explains in depth how Azure, Office 365, and Power BI cloud services support compliance with the requirements. Financial institutions that seek to operate in the global financial center of New York must meet them, so compliance is critical for many institutions.
 
 ガイダンス『Microsoft クラウド サービス: [NYDFS サイバーセキュリティ要件への準拠支援](https://go.microsoft.com/fwlink/p/?linkid=2098969)』に従うことで、Title 23 NYCRR Part 500 への準拠を加速させることができます。
 
 ニューヨーク州の規制では、各金融機関に対して以下の活動が要求されます。
 
-- **強力なサイバーセキュリティ プログラムの整備と維持** : 最初に機関固有のリスク プロファイルの評価を行い、次にそれに対処するためのプログラムを設計します。 [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332) は、Microsoft クラウド サービスを使用する際のリスクを金融サービス企業が評価できるようにするために作られました。 このサービスには、Microsoft のエンジニアや企業リスク責任者への直接の相談や Microsoft のコンプライアンスとセキュリティの専門家へのアクセスが含まれています。
-- **包括的なサイバーセキュリティ ポリシーの実施** : 情報のセキュリティ、データ ガバナンスと分類、アクセス制御、事業継続性などに対応するポリシーを実施します。 Microsoft では、このポリシーを整備するためのガイダンスを提供しています。これには、認定とリスク評価、事業継続性と障害復旧指標、ログと監査に関する診断のそれぞれについての詳細情報が含まれます。
-- **最高情報セキュリティ責任者 (CISO) の任命** : サイバーセキュリティ プログラムの管理およびポリシーの適用における最高責任者です。 CISO を支援するために、Microsoft では Microsoft のクラウド展開に関する詳細なサイバーセキュリティ情報を [Azure Defender*](https://azure.microsoft.com/services/security-center/?v=17.23h)、[Office 365 Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/)、および [Power BI セキュリティ](https://go.microsoft.com/fwlink/?LinkId=829185)を通して提供しています。
-- **サイバーセキュリティ プログラムの有効性の監視とテスト** : Microsoft では、継続的な監視、定期的な侵入テスト、脆弱性評価などを含む、Microsoft によるサイバーセキュリティ活動の監査結果情報を提供しています。 お客様は、Microsoft からの事前の許可なしに独自のテストを実施できます。
-- **監査証跡の管理** :  お客様は、Azure、Office 365、および Power BI の組み込みの監査機能を使用して、財務取引の再現に使用できる情報の生成や監査証跡情報の整備を行えます。
+- **Develop and maintain a robust cybersecurity program** starting with an assessment of the institution’s specific risk profile and then designing a program that addresses them. The [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332) was created to help financial services assess the risks of using Microsoft cloud services. It includes direct engagement with our engineers and corporate risk officers and access to our compliance and security experts.
+- **Implement a comprehensive cybersecurity policy** that addresses information security, data governance and classification, access controls, business continuity, and the like. Microsoft offers guidance for developing this policy with in-depth information about our certifications and risk assessments; business continuity and disaster recovery metrics; and diagnostics for logging and auditing.
+- **最高情報セキュリティ責任者 (CISO) の任命** :サイバーセキュリティ プログラムの管理およびポリシーの適用の最高責任者です。CISO を支援するために、Microsoft では Microsoft のクラウド展開に関する詳細なサイバーセキュリティ情報を[Azure Defender*](https://azure.microsoft.com/services/security-center/?v=17.23h)、[Office 365 Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/)、および[Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185)を通して提供しています。
+- **Monitor and test the effectiveness of its cybersecurity program** : Microsoft provides information from audits of its cybersecurity practices that include continuous monitoring, periodic penetration testing, and vulnerability assessments. Customers can conduct their own tests without advance permission from Microsoft.
+- **Maintain an audit trail.** Built-in audit functionalities of Azure, Office 365, and Power BI customers generate information that can be used to reconstruct financial transactions and develop audit trail information.
 - **非公開情報が含まれる情報システムへのアクセスの制限** : Azure、Office 365、および Power BI で提供されている対策で、各サービス固有の役割ベースのアクセス制御 (RBAC) プロセス、すべての Microsoft 管理者に対する厳格なセキュリティとアクセス要件、およびすべての昇格されたアクセス権の要求に対する監査が含まれます。
 - **外部で開発されたアプリケーションのセキュリティの評価とテスト** : Visual Studio を使用する開発者の場合、管理コードのための [セキュリティ ルール](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code)を使用すると、コードの展開前にアプリケーションのサイバーセキュリティの脅威を検出し、軽減できます。
-- **定期的なリスク評価を使用した、サイバーセキュリティプログラムの設計と強化** : Microsoft はお客様のために、セキュリティの脅威に関する情報をまとめ、変更管理のロードマップを提供し、委託先会社に関する情報を定期的に更新します。 また、Microsoft では Microsoft 自体のサービスのリスク評価を定期的に実施し、評価結果をお客様に提供します。
-- **有資格担当者によるサイバーセキュリティのリスク管理とサイバーセキュリティ機能の監視** : Microsoft では、Microsoft の従業員による顧客データへのアクセスに対して厳密な手順を適用しています。 Microsoft が下請け業者を使用する場合、サービスの提供に対して Microsoft が責任を持ち、機密情報の取り扱い要件、身辺調査、機密保持契約を含む、Microsoft のプライバシーとセキュリティに関するコミットメントへの完全な準拠を下請け業者に対して要求します。
+- **Use periodic risk assessments to design and enhance cybersecurity programs** : For customers, Microsoft aggregates information about security threats, provides roadmaps of change management, and regularly updates information about subcontractors. Microsoft also regularly conducts risk assessments of its own services, the results of which are available to customers.
+- **Use qualified personnel to manage cybersecurity risks and oversee cybersecurity functions** : Microsoft employs stringent procedures for our employee access to your customer data. If we hire subcontractors, we remain responsible for service delivery, and ensure that subcontractors fully comply with Microsoft privacy and security commitments, including requirements for handling sensitive data, background checks, and non-disclosure agreements.
 - **サードパーティ サービス プロバイダーが保持する情報のセキュリティを確保するためのポリシーと手順の適用** : Azure、Office 365、および Power BI では、会社のネットワークへのすべての受信接続で多要素認証が利用でき、外部ネットワークで転送中または保管中の非公開情報を保護するための暗号化を含む制御が実装され、顧客通知、インシデント調査、およびセキュリティ インシデントのリスク軽減を提供する [Microsoft オンライン サービス条件](https://aka.ms/Online-Services-Terms)が提供されます。
 - **データの保持と削除のポリシーと手順の実装** : Azure、Office 365、および Power BI に保存されている顧客データにいつでもアクセスし、抽出できます。
-- **承認されたユーザーのアクティビティの監視、許可されていないアクセスの検出、従業員へのサイバーセキュリティに関する定期的な意識向上研修の提供** : Azure、Office 365、および Power BI では、外部からの内部の監視によるインシデント警告機能およびログ記録と監査のための広範な診断機能が提供されています。 [Microsoft Virtual Academy](https://mva.microsoft.com/): Microsoft クラウド サービスを取り扱うオンライン トレーニングを提供します。
-- **サイバーセキュリティ インシデントでの対応と復旧に関する計画の整備** : Microsoft では、セキュリティ侵害を発生前に検出、予測、および回避する防御戦略を使用して、サイバーセキュリティ インシデントへの準備をお手伝いします。 独自の計画を整備する際でも、Microsoft のインシデント管理プランを参考にして、サイバーセキュリティ侵害に対応することができます。
+- **Monitor the activity of authorized users, detect unauthorized access, and offer regular cybersecurity awareness training to employees** : Azure, Office 365, and Power BI include outside-in monitoring to raise alerts about incidents, and extensive diagnostics for logging and auditing. [Microsoft Virtual Academy](https://mva.microsoft.com/) offers online training that covers the cybersecurity of Microsoft cloud services.
+- **Develop plans to respond to and recover from cybersecurity incidents** : Microsoft helps you prepare for cybersecurity incidents using a defensive strategy to detect, predict, and prevent security breaches before they occur. When developing your own plans, you can draw on our incident management plan for responding to cybersecurity breaches.
 
-## <a name="microsoft-in-scope-cloud-services"></a>対象 Microsoft クラウド サービス
+## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune

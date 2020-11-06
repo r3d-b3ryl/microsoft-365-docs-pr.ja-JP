@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390164"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919855"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
@@ -30,13 +30,13 @@ ms.locfileid: "48390164"
 
 Microsoft 365 のレコード管理ソリューションを使用して、組織内の法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツの管理を開始する準備はできましたか? 開始するために、次の高水準なガイダンスを参考にできます。
 
-1. **レコード管理ソリューションの理解**と、ドキュメントやメールがレコード宣言される場合にどのようなアクションが許可されたり禁止されたりするかについて説明します。[レコード管理に関する詳細情報](records-management.md)。 
+1. **レコード管理ソリューションの理解** と、ドキュメントやメールがレコード宣言される場合にどのようなアクションが許可されたり禁止されたりするかについて説明します。 [レコード管理に関する詳細情報](records-management.md)。 
 
-2. 保持ラベルはレコード宣言に使用されるため、SharePoint および Exchange 向けの**アイテム保持レベルや保持の機能を理解してください**。[保持ポリシーおよび保持ラベルに関する詳細情報](retention.md)
+2. 保持ラベルはレコード宣言に使用されるため、SharePoint および Exchange 向けの **アイテム保持レベルや保持の機能を理解してください** 。 [保持ポリシーおよび保持ラベルに関する詳細情報](retention.md)
 
-3. 既存のプランをお持ちの場合は、[既存のプランをインポート](file-plan-manager.md#import-retention-labels-into-your-file-plan )することで**保持設定およびアクションのためのファイルプランを作成**するか、[レコード宣言する新しい保持ラベル](declare-records.md)を作成します。
+3. 既存のプランをお持ちの場合は、 [既存のプランをインポート](file-plan-manager.md#import-retention-labels-into-your-file-plan )することで **保持設定およびアクションのためのファイルプランを作成** するか、 [レコード宣言する新しい保持ラベル](declare-records.md)を作成します。
 
-4. **保持ラベルを発行して適用**します。 保持ラベルは複数のポリシーで使用できる再利用可能な文書パーツで、ユーザーのワークフローに組み込むことができます。 
+4. **保持ラベルを発行して適用** します。 保持ラベルは複数のポリシーで使用できる再利用可能な文書パーツで、ユーザーのワークフローに組み込むことができます。 
     
     - [アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)
     - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
@@ -49,9 +49,9 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 
 ## <a name="permissions-required-for-records-management"></a>レコード管理に必要なアクセス許可
 
-レコード管理を担当するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。この制限された管理に権限を付与するには、ユーザーを **RecordManagement** 役割を付与する [**レコード管理**] の管理者役割グループに追加することをお勧めします。
+レコード管理を担当するコンプライアンス チームのメンバーには、[Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)へのアクセス許可が必要です。 既定により、テナント管理者 (グローバル管理者) はこの場所にアクセスでき、コンプライアンス責任者やその他のユーザーにテナント管理者のすべての権限を与えることなくアクセスできます。この制限された管理に権限を付与するには、ユーザーを **RecordManagement** 役割を付与する [ **レコード管理** ] の管理者役割グループに追加することをお勧めします。
 
-この役割グループに含まれる権限には、[処理確認と検証](disposition.md)に必要な権限が含まれていません。また、既定では、全体管理者にもこの権限はありません。 処理を管理するには、カスタムの役割グループを作成するか、この役割を含む既定の役割グループ (**コンプライアンス管理者**など) を使用して、**処理管理**の役割を使用します。
+この役割グループに含まれる権限には、[処理確認と検証](disposition.md)に必要な権限が含まれていません。また、既定では、全体管理者にもこの権限はありません。 処理を管理するには、カスタムの役割グループを作成するか、この役割を含む既定の役割グループ ( **コンプライアンス管理者** など) を使用して、 **処理管理** の役割を使用します。
 
 これらの役割グループと役割の詳細については、「[セキュリティ/コンプライアンス センターの権限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)」を参照してください。
 
@@ -76,10 +76,11 @@ Microsoft 365 コンプライアンス機能のメリットを得られるよう
 |管理者が保持アクションと削除アクションをドキュメント理解モデルに適用できるようにして、SharePoint ライブラリで識別されたドキュメントにこれらが自動的に適用されるようにします。|[アイテム保持ラベルを作成してアプリに適用する](create-apply-retention-labels.md)|
 |ドキュメントと電子メールに保持および削除アクションを自動的に適用する |[保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)|
 |次のようなイベントが発生したときに保持期間を開始する  <br />- 従業員が退職する <br />- 契約満了 <br />- 製品の有効期間の終了| [イベントの発生時に保持を開始する](event-driven-retention.md)|
+|ポリシーの変更を制限して規制要件を満たす、または不正な管理者から保護する| [保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する](retention-preservation-lock.md)
 |SharePoint で各種ドキュメントのライフサイクルを管理する| [保持ラベルを使用して、SharePoint に保存されているドキュメントのライフサイクルを管理する](auto-apply-retention-labels-scenario.md)|
-|保持期間の終了時にコンテンツが完全に削除される前に、誰かがレビューして承認することを確認する|[廃棄確認](disposition.md#disposition-reviews) |
+|保持期間の終了時にコンテンツが削除される前に、誰かがレビューと承認を行うようにする|[廃棄確認](disposition.md#disposition-reviews) |
 |保存期間の終了時に完全に削除されたコンテンツの廃棄の証拠を取得する|[レコードの廃棄](disposition.md#disposition-of-records) |
-|保持および削除設定がアイテムに適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
+| 保持および削除設定がアイテムに適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>レコードに関するエンド ユーザー向けのドキュメント
 

@@ -17,20 +17,20 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a671fc9234f76c63ff7336369c87e680a4432cc3
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843151"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920291"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 違反の通知
 
-一般データ保護規則 (GDPR) では、欧州連合 (EU) 内の人々に商品やサービスを提供する、または EU 居住者向けのデータの収集と分析を実行する会社に対して、新しい規則を導入します。GDPR は、個人やその企業がどの場所にあるかに関係なく適用されます。 詳細については、「[GDPR 概要トピック](gdpr.md)」を参照してください。 このドキュメントは、Microsoft の製品とサービスの使用における、GDPR に基づく違反の通知の完了に関する情報を提供します。
+The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). This document leads you to information on the completion of Breach Notifications under the GDPR using Microsoft products and services.
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>GDPR における個人データ侵害とは?
 
-個人データは、個人に関連する情報のうち、直接的または間接的に個人を特定するために使用できるものを意味します。 個人データ違反とは、「送信、保管またはその他の方法で処理される個人データに対して偶発的または違法な破壊、消失、改変、無断公開、またはアクセスを引き起こすセキュリティ違反」のことです。
+Personal data means any information related to an individual that can be used to identify them directly or indirectly. A personal data breach is 'a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed'.
 
 ## <a name="terminology"></a>用語
 
@@ -43,40 +43,39 @@ ms.locfileid: "48843151"
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft と違反の通知
 
-Microsoft では、一般データ保護規則 (GDPR) の下での義務を重く受け止めています。 セキュリティ インシデント/データ侵害とは、Microsoft の機器あるいは Microsoft の施設に保存されている顧客のデータへの違法なアクセス、または顧客データの損失、漏洩、改変を引き起こす可能性のあるものへの不正アクセスなどのイベントを指します。
+Microsoft takes its obligations under the General Data Protection Regulation (GDPR) seriously. A security incident/data breach refers to events such as unlawful access to customer's data stored on Microsoft equipment or in Microsoft facilities, or unauthorized access to such that has the potential to result in the loss, disclosure, or alteration of customer data.
 
-データ処理者として、Microsoft は必ずお客様がデータ管理者として GDPR の違反通知要求を満たせるようにしています。 Microsoft からの通知は、その評価に必要な情報を提供しています。 Microsoft は、個人データが判読不能であると確認された場合 (たとえば、キーの整合性が確認された、暗号化されたデータ) を除き、お客様に個人データ侵害に関する通知を行います。
+As a data processor, Microsoft ensures that service customers are able to meet the GDPR's breach notification requirements as data controllers. Our notification provides the information needed to make that assessment. Microsoft notifies customers of any personal data breach, except for those cases where personal data is confirmed to be unintelligible (for example, encrypted data where integrity of the keys is confirmed).
 
-データ管理者は、データ プライバシーに対するリスクを評価し、お客様の DPA に通知する必要がある違反かどうかを判断する責任があります。 Microsoft は、GDPR コンプライアンス ポリシーに沿って、その評価を行うために必要な情報を提供します。
+Data controllers are responsible for assessing risks to data privacy and determining whether a breach requires notification of a customer's DPA. Microsoft provides the information needed, along with your GDPR compliance policy, to make that assessment.
 
-最初の通知には、侵害の種類、ユーザーへのおおよその影響、緩和手順 (該当する場合) の説明が記載されています。 最初の通知の時点で Microsoft の調査が完了していない場合は、今後の連絡のための次の手順とスケジュールをお知らせします。 マイクロソフトが個人データの侵害を検出して対応する方法の詳細については、Service Trust Portal の [GDPR の下でのデータ侵害の通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach)を参照してください。
+Initial notification includes a description of the nature of the breach, approximate user impact, and mitigation steps (if applicable). If our investigation is not complete at the time of initial notification, we will indicate next steps and timelines for subsequent communication. For more information about how Microsoft detects and responds to a breach of personal data, see [Data Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) in the Service Trust Portal.
 
 特定の Microsoft 製品およびサービスに関する侵害の通知の詳細は、以下の通りです。
   
 1. **[Office 365](gdpr-breach-Office365.md)**  
-    Microsoft は、個人データ漏洩の可能性を低く抑え、侵害が生じた場合は迅速に検出して被害を軽減するために、システム、プロセス、担当者に対する大きな投資を行っています。 詳細については、「[Office 365 におけるデータ セキュリティに対する投資](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-office365#office-365-investments-in-data-security)」を参照してください。
+    Microsoft invests extensively in systems, processes, and personnel to reduce the likelihood of personal data breach and to quickly detect and mitigate consequence of breach if it does occur. Additional details can be read at [Office 365 Investments in Data Security](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-office365#office-365-investments-in-data-security).
 
-    お客様が侵害に気付いた場合は、Microsoft に問い合わせることができます。 その場合は、Microsoft サポートに連絡してください。Microsoft サポートが、エンジニアリング チームと連携して詳細を確認します。
+    A customer may become aware of a breach and wish to contact Microsoft. In this case, notify Microsoft Support, which will then interface with engineering teams for more information.
 
 2. **[Azure および Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft には、Microsoft Azure および Dynamics 365 に対する攻撃の影響緩和を目的とした、24 時間 365 日体制のインシデント対応サービスがあります。
 
-    - *侵害の検出* : Microsoft とお客様の両方にセキュリティに関する義務があるため、Azure サービスでは、セキュリティと運用の説明責任を定義した共有責任モデルが導入されています。 Microsoft は、お客様の責任範囲内にあるセキュリティ インシデントの監視または対応は行いません。 適切なサービス契約であれば、お客様のインシデントの場合には、Azure [カスタマー サポート](https://azure.microsoft.com/support/options/)と共同で対応することができます。 また、Microsoft Azure には、お客様がセキュリティ インシデント対応の開発と管理に活用できる、さまざまなサービス ([Azure Defender*](https://azure.microsoft.com/services/security-center/) など) が用意されています。
+    - *Detection of Breaches* : Since both Microsoft and the customer have security obligations, Azure services employ a shared responsibility model to define security and operational accountabilities. Microsoft does not monitor or respond to security incidents within the customer's realm of responsibility. Customer incident response may involve collaboration with Azure [customer support](https://azure.microsoft.com/support/options/), given appropriate service contracts. Microsoft Azure also offers various services (for example, [Azure Defender](https://azure.microsoft.com/services/security-center/)) that customers can utilize for developing and managing security incident response.
 
-        Microsoft Azure で侵害の調査をトリガーするイベントの一覧については、「[潜在的なデータ侵害の検出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches)」を参照してください。 「[Azure と GDPR の下での違反の通知](gdpr-breach-azure-dynamics.md)」では、Azure 内で発生するセキュリティ インシデントをどのように Microsoft が調査、管理、対応するかを詳しく述べています。
+        For a list of events that trigger a breach investigation in Microsoft Azure, see [Detection of Potential Breaches](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). [Azure and Breach Notification under the GDPR](gdpr-breach-azure-dynamics.md) further details how Microsoft investigates, manages, and responds to security incidents within Azure.
 
-    - *データ侵害への対応* : Microsoft は、インシデントの機能的影響、回復性、情報の影響を調査し、その侵害の適切な優先度と重大度を判別します。 優先度と重大度は、新しい調査結果と判定に基づき、調査の過程で変わる場合があります。
-    法的義務およびお客様へのコミットメントに基づいた調査が確実に行われるように、Microsoft のセキュリティ レスポンス チームが世界各国の法律顧問と緊密に連携します。 これらのプロセスの詳細については、「[Azure のデータ侵害対応](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response)」を参照してください。
+    - *Data Breach Response* : Microsoft determines appropriate priority and severity levels of a breach by investigating the functional impact, recoverability, and information impact of the incident. Priority and severity may change over the course of the investigation, based on new findings and conclusions. Microsoft's security response team works closely with global legal advisors to help ensure that forensics are performed in accordance with legal obligations and commitments to customers. These processes are detailed in [Azure's Data Breach Response](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response).
 
-    - *お客様への通知* : Microsoft Azure は、必要に応じてデータ侵害をお客様と規制当局に通知します。 次の場合を除き、お客様への通知は、侵害の発生を認識してから 72 時間以内に行われます。
+    - *Customer Notification* : Microsoft Azure notifies customers and regulatory authorities of data breaches as required. Customer notices are delivered in no more than 72 hours from the time we declared a breach except for the following circumstances:
 
         - Microsoft が、通知を実行すると他のユーザーにとってリスクが増大する判断した場合。
-        - 72 時間以内にインシデントの詳細がいくつか分かりそうな場合。 これらの詳細は、調査が進むにつれて入手できます。
+        - The 72-hour timeline may leave some incident details available. These details will be provided to you as the investigation proceeds.
 
         詳細については、「[お客様への通知](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification)」を参照してください。
 
 3. **[Microsoft サポート/プロフェッショナル サービス](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
-    プロフェッショナル サービスの性質上、一部のデータ保護のインシデントについてはお客様の責任の範囲内に含まれる場合があります。 Microsoft Professional Services によってデータ保護のインシデントと判断された場合は、「[データ保護のインシデント対応プロセスの範囲と制限](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process)」で説明されている文書化された業界標準対応計画に基づいて、インシデント対応が行われます。
+    The nature of professional services means that some data protection incidents may fall within the customer's realm of responsibility. When Microsoft Professional Services identifies a data protection incident, it follows documented industry standard response plan as outlined in [Scope & Limits of Data Protection Incident Response Process](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
 
 ## <a name="breach-notification-admin-tools"></a>違反の通知管理ツール
 
