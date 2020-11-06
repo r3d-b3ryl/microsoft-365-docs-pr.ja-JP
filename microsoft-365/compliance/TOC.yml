@@ -296,8 +296,8 @@
           href: create-apply-retention-labels.md
         - name: 保持ラベルをコンテンツに自動的に適用する
           href: apply-retention-labels-automatically.md
-        - name: SEC Rule 17a-4 に準拠する
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: ポリシーをロックして変更を制限する
+          href: retention-preservation-lock.md
         - name: PowerShell で保持ラベルを作成する
           href: bulk-create-publish-labels-using-powershell.md
         - name: イベントの発生時に保持を開始する
@@ -426,6 +426,8 @@
           href: declare-records.md
         - name: レコードのバージョン管理を使用する
           href: record-versioning.md
+        - name: 規制要件の参照資料
+          href: retention-regulatory-requirements.md
 - name: eDiscovery の管理
   items:
     - name: Microsoft 365のeDiscovery in
@@ -531,6 +533,8 @@
               href: data-spillage-scenariosearch-and-purge.md
             - name: BCC の受信者を保持する
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: 電子情報開示ツールでの復号化
+              href: ediscovery-decryption.md
             - name: 電子情報開示に関する一般的な問題のトラブルシューティング
               href: ediscovery-troubleshooting-common-issues.md
             - name: 失敗した検索の再試行
@@ -660,6 +664,8 @@
               href: permissions-filtering-for-content-search.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
+            - name: 電子情報開示ツールでの復号化
+              href: ediscovery-decryption.md
             - name: 監査ログで電子情報開示アクティビティを検索する
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: AzCopy のトラブルシューティング
