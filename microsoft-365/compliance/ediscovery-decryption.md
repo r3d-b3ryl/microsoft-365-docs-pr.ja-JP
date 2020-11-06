@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 eDiscovery ツールが電子メールメッセージに添付された暗号化ドキュメントを処理する方法について説明します。
-ms.openlocfilehash: 89e6457015289055c56278f5f8650ce022ecf081
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b7c1dc20b8e400b9880cc00a88a2d23a4b6d1979
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920732"
+ms.locfileid: "48925587"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 電子情報開示ツールの復号化
 
@@ -31,9 +31,6 @@ ms.locfileid: "48920732"
 今日、Microsoft 365 の電子情報開示ワークフローで暗号化されたコンテンツを管理するには、使用されている暗号化の種類とワークフローの特定の段階に応じて、暗号化されたアイテムを特別に処理する必要があります。 これは主に、コンテンツ検索、コア電子情報開示ケース、および高度な電子情報開示ケースからエクスポートされたときに電子メールメッセージのコンテンツを復号化することによって実現されました。 Microsoft 暗号化テクノロジで暗号化されたコンテンツは、エクスポートされるまでプレビューできませんでした。 高度な電子情報開示では、暗号化されたコンテンツに処理エラーがフラグが付けられ、暗号化されたアイテムをダウンロードして復号化し、復号化されたファイルをレビューセットにアップロードする必要がありました。
 
 電子情報開示ワークフローで暗号化されたコンテンツを管理しやすくするために、Microsoft 365 eDiscovery ツールでは、電子メールメッセージに添付され、Exchange Online で送信される暗号化ファイルの暗号化を解除することができます。 この新しい機能の前に、rights management で保護された電子メールメッセージのコンテンツのみ (添付ファイルではない) の暗号化が解除されました。 これで、Microsoft 暗号化テクノロジを使用して暗号化されたファイルが検索条件に一致する電子メールメッセージに添付されている場合、その暗号化ファイルは、検索結果がプレビュー用に準備されたときに復号化されます。 これにより、電子情報開示マネージャーは、検索結果をプレビューする際に、暗号化された電子メール添付ファイルの内容を表示できます。
-
-> [!NOTE]
-> 2021年1月以降、Microsoft 365 eDiscovery ツールは、SharePoint Online と OneDrive for Business に格納されている暗号化されたドキュメントをサポートします。
 
 ## <a name="supported-encryption-technologies"></a>サポートされる暗号化テクノロジ
 

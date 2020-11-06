@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 042555cfcbe231f370c07ee3887e6b7f6b3701b8
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208619"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925594"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事司法 Information Services (CJIS) セキュリティポリシー
 
@@ -56,11 +56,11 @@ FBI では、CJIS 要件に対する Microsoft コンプライアンスの証明
 
 [Microsoft CJIS のクラウドの要件](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>米国での CJIS の状態 (9/23/2019 の時点での現在の状態)
+## <a name="cjis-status-in-the-united-states-current-as-of-1152020"></a>米国での CJIS の状態 (11/5/2020 の時点での現在の状態)
 
-37の状態と、管理契約を含むコロンビアの地域。グリーンのマップで強調表示されているものは次のとおりです。
+44の状態と、管理契約を含むコロンビアの地域。グリーンのマップで強調表示されているものは次のとおりです。
 
-Alabama、アラスカ、Arkansas、アリゾナ、カリフォルニア、コロラド、フロリダ、ジョージア、ハワイ、イリノイ、インディアナ、アイオワ、カンザス、ケンタッキー、ミシガン、モンタナ、、、ミネソタ、ミズーリ、ネバダ、オクラホマ、、ロード、、テネシー、バーモント、オレゴン、ペンシルバニア、ウィスコンシン諸島、、バージニア、、テキサス、ユタ、、バージニア、ワシントン、ワシントン D.C.、West バージニア、。
+Alabama、アラスカ、アリゾナ、Arkansas、カリフォルニア、コロラド、コネチカット、フロリダ、ジョージア、ハワイ、Idaho、イリノイ、インディアナ、アイオワ、カンザス、ケンタッキー、Maine、マサチューセッツ、ミシガン、ミネソタ、ミシシッピ、ミズーリ、モンタナ、ネブラスカ、ネバダ、新しいニューハンプシャー、ニュージャージー州、ニューヨーク、ペンシルバニア、オクラホマ島、ノースダコタ、ロード、オレゴン、ユタ、テネシー島、サウスカロライナ州、バーモント、テキサス州、ユタ、ウィスコンシン、バージニア、ワシントン、West バージニア、、およびコロンビアの地域
 
 適用可能な CJIS 規制統制に準拠した Microsoft のコミットメントにより、犯罪司法機関はクラウドベースのソリューションを実装し、CJIS Security Policy v2.0 に準拠することができます。
 
@@ -78,9 +78,9 @@ Microsoft は、状態 CJIS Systems Agency (CSA) を使用して、情報契約�
 
 [Cjis セキュリティポリシー](https://aka.ms/cjis-security-policy) には、CJI を保護するためにエージェンシーが講じる必要のある対策が含まれています。 さらに、Microsoft アカウント担当者は、管轄区の要件を熟知したユーザーと連絡を取ります。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンスマネージャーを使用してリスクを評価する
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンスマネージャー](compliance-manager.md) は、 [microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md) の機能であり、組織のコンプライアンスの状況を理解し、リスクを軽減するためのアクションを実行するのに役立ちます。 コンプライアンスマネージャーには、この規制の評価を構築するためのプレミアムテンプレートが用意されています。 [コンプライアンスマネージャー] の [ **評価テンプレート** ] ページでテンプレートを検索します。 [コンプライアンスマネージャーで評価を作成](compliance-manager-assessments.md)する方法について説明します。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md) は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md) の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。 コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。 コンプライアンス マネージャーの **評価テンプレート** ページでテンプレートを見つけます。 [コンプライアンス マネージャーで評価をする方法](compliance-manager-assessments.md) について説明します。
 
 ## <a name="resources"></a>リソース
 
