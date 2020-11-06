@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795119"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931914"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールによって検出された問題を修正します。
 
@@ -127,7 +127,7 @@ Microsoft マネージドデスクトップデバイスでは、Intune への登
 
 **使用不可能**
 
-**アプリケーションとプロファイルの構成の進行状況を示す** ように、ESP の既定のプロファイルが設定されている。 [ [登録の状態の設定] ページ](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)の手順に従って、この設定を無効にします。
+**アプリケーションとプロファイルの構成の進行状況を示す** ように、ESP の既定のプロファイルが設定されている。 この設定を無効にするか、[ [登録状態の設定] ページ](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)の手順に従って、Azure AD グループへの割り当てに Microsoft Managed Desktop デバイスが含まれないようにします。
 
 **アドバイザリ**
 
@@ -137,9 +137,9 @@ Microsoft マネージドデスクトップデバイスでは、Intune への登
 
 Azure AD 組織の Windows 10 デバイスは、自動的に Intune に登録する必要があります。
 
-**使用不可能**
+**アドバイザリ**
 
-Azure AD 組織のユーザーは、Microsoft Intune に自動的に登録されません。 MDM ユーザースコープを **一部** または **すべて** に変更します。 **一部** を選択した場合は、登録した後に戻って、 **グループ** の **モダンワークプレースすべて** の Azure AD グループを選択します。
+MDM ユーザースコープが **一部** または **すべて** に設定されていることを確認し、 **[なし** ] をオンにします。 **一部** を選択した場合は、登録した後に戻って、 **グループ** の **モダンワークプレースすべて** の Azure AD グループを選択します。
 
 
 ### <a name="microsoft-store-for-business"></a>ビジネス向け Microsoft Store
@@ -180,7 +180,7 @@ Windows PowerShell スクリプトは、Microsoft マネージドデスクトッ
 
 **アドバイザリ**
 
-Azure AD 組織の Windows PowerShell スクリプトが、Microsoft 管理デスクトップデバイスまたはユーザーを対象としないようにしてください。 詳細については、「 [Windows 10 デバイスでの Intune での PowerShell スクリプトの使用](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)」を参照してください。
+Azure AD 組織の Windows PowerShell スクリプトが、Microsoft 管理デスクトップデバイスまたはユーザーを対象としないようにしてください。 PowerShell スクリプトを割り当てないでください。すべてのユーザー、すべてのデバイス、またはその両方を対象とします。 Microsoft マネージドデスクトップデバイスを一切含まない特定の Azure AD グループを対象とする割り当てを使用するようにポリシーを変更します。 詳細については、「 [Windows 10 デバイスでの Intune での PowerShell スクリプトの使用](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)」を参照してください。
 
 ### <a name="region"></a>地域
 
@@ -308,19 +308,11 @@ Azure Active Directory のセキュリティの既定値を使用すると、Mic
 
 ### <a name="self-service-password-reset"></a>セルフサービスによるパスワードのリセット
 
-セルフサービスのパスワードのリセット (SSPR) を有効にする必要があります。
-
-**使用不可能**
-
-すべてのユーザーに対して SSPR を有効にする必要があります。 そうでない場合、Microsoft マネージドデスクトップサービスアカウントは動作しません。 詳細については、「 [チュートリアル: ユーザーがアカウントのロックを解除するか、Azure Active Directory のセルフサービスによるパスワードのリセットを使用してパスワードをリセットする](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
+セルフサービスのパスワードのリセット (SSPR) がすべてのユーザーに対して有効になっている必要があります。 そうでない場合、Microsoft マネージドデスクトップサービスアカウントは動作しません。 詳細については、「 [チュートリアル: ユーザーがアカウントのロックを解除するか、Azure Active Directory のセルフサービスによるパスワードのリセットを使用してパスワードをリセットする](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
 
 **アドバイザリ**
 
 [SSPR] **選択** した設定に、Microsoft Managed Desktop デバイスが含まれていることを確認してください。
-
-**Error**
-
-Intune 管理者の役割には、このチェックに十分な権限がありません。 このチェックを実行するには、レポートリーダー Azure AD 役割が割り当てられている必要もあります。
 
 
 ### <a name="standard-user-role"></a>標準ユーザーの役割
