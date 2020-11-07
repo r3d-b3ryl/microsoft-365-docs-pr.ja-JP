@@ -15,19 +15,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、Office 365 プラン2の Microsoft Defender でユーザータグを使用して、ユーザーの特定のグループを特定する方法について説明します。 タグフィルターは、Microsoft Defender for Office 365 のアラート、レポート、および調査に対して利用でき、タグ付きユーザーをすばやく識別できます。
-ms.openlocfilehash: fcc13a04ed603712bb2a45ccaadbaf161702c502
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842882"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945320"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のユーザータグ
 
 > [!NOTE]
 > ユーザータグ機能はプレビューでは、すべてのユーザーが利用できるわけではなく、変更される可能性があります。 リリーススケジュールの詳細については、 [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)をご覧ください。
 
-ユーザータグは、 [Office 365 の Defender](office-365-atp.md)にある特定のユーザーグループの識別子です。 ユーザータグには、次の2種類があります。
+ユーザータグとは、 [office 365 の Microsoft Defender](office-365-atp.md)で特定のユーザーグループの識別子です。 ユーザータグには、次の2種類があります。
 
 - **システムタグ** : 現時点では、 [優先度のアカウント](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) のみがシステムタグの種類です。
 - **カスタムタグ** : これらのユーザータグは自分で作成します。
