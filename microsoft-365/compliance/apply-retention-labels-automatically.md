@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、必要でないものを削除するためにラベルを自動的に適用できるように、保持ラベルを作成して自動発行します。
-ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920021"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931981"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -174,25 +174,16 @@ ms.locfileid: "48920021"
 > [!NOTE]
 > Teams 会議のレコーディングを保持したり削除したりする機能はプレビューで展開されていますが、レコーディングを OneDrive や SharePoint に保存する前には機能しません。 詳細については、「[OneDrive for Business と SharePoint または Stream を使用して会議の記録を行う](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)」を参照してください。
 
-ユーザーの OneDrive アカウントまたは SharePoint に保存されている Microsoft Teams 会議のレコーディングを特定するには、 **キーワード クエリ エディター** で次のように指定します。
+ユーザーの OneDrive アカウントや SharePoint に保存されている Microsoft Teams 会議のレコーディングを特定するには、 **キーワード クエリ エディター** で次のように指定します。
 
 ``` 
 ProgID:Media AND ProgID:Meeting
 ```
 
-この保持ラベルについては、ラベル ポリシーを作成して関連ユーザーの OneDrive アカウントや SharePoint サイトに対しても公開する必要があります。 会議のレコーディングは OneDrive に保存されている場合がほとんどですが、チャネル会議の場合は SharePoint に保存されています。
+ほとんどの場合、会議のレコーディングは OneDrive に保存されます。 ただしチャネル会議については、SharePoint に保存されます。
 
-自動適用保持ラベル ポリシーを保存した場合:
 
-1. [ **ラベル ポリシー** ] タブ、[ **ラベルの発行** ] の順に選択します
-
-2. ラベルを選択するように求められたら、Teams 会議の記録を識別する自動適用ポリシーに選択したものと同じラベルを選択します。
-
-3. 場所の入力を求めるメッセージが表示されたら、 **SharePoint サイト** と **OneDrive アカウント** を選択します。 その後は、既定値の **すべて** を維持したり、特定の OneDrive アカウントを含めたり除外したりするなどの個々の場所の指定を行ったりすることができます。
-
-4. ウィザードを完了し、このラベル ポリシーを保存します。
-
-#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
+#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動適用する
 
 トレーニング可能な分類子のオプションを選択すると、組み込み分類子またはカスタム分類子のいずれかを選択できます。 組み込み分類子には、 **履歴書** 、 **ソース コード** 、 **個人を標的にしたハラスメント** 、 **冒とく** 、および **脅威** が含まれます。
 
@@ -216,9 +207,9 @@ ProgID:Media AND ProgID:Meeting
 
 予期されるラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、自動適用ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-2. 次のコマンドを実行します:
+2. 次のコマンドを実行します。
     
     ``` PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -232,9 +223,9 @@ ProgID:Media AND ProgID:Meeting
 - 作成日時に基づいてコンテンツを保持または削除するようにラベルを構成していない場合を除いた、保持期間以外の保持設定。
 - アイテムをレコードとしてマークするオプション。
 
-## <a name="locking-the-policy-to-prevent-changes"></a>変更を防ぐためにポリシーをロックする
+## <a name="locking-the-policy-to-prevent-changes"></a>変更を防止するためにポリシーをロックする
 
-ポリシーを無効にしたり、ポリシーを削除する、または制限を緩和したりできないようにする必要がある場合は、「[保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する](retention-preservation-lock.md)」を参照してください。
+ポリシーをオフにしたり、ポリシーを削除したり、制限を緩和したりすることができないようにする必要がある場合は、「[保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する](retention-preservation-lock.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

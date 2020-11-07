@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース。
-ms.openlocfilehash: 47fa49f1253ee5e5b5ee4546a7243a529b6105a1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 2aa413400d9d60b759b35d04175b674cedb0a733
+ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920712"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48930190"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>情報ガバナンスおよびレコード管理の規制要件
 
@@ -28,17 +28,17 @@ ms.locfileid: "48920712"
 
 このページのリソースは、Microsoft 365 の情報ガバナンスおよびレコード管理に関する特定の規制要件を満たすのに役立ちます。 このドキュメントの各セクションでは、1 つ以上の関連する規制に重点を置いています。また、各セクションには、概説した要件を満たすのに役立つ、Microsoft 365 を構成する方法に関する既存のガイダンスまたはサードパーティの評価が含まれています。
 
-これらのリソースは、Service Trust Portal の「[データ保護のリソース、FAQ、およびホワイトペーパー](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)」ページからダウンロードできます。
+これらのリソースは、Service Trust Portal の「[データ保護のリソース、FAQ、およびホワイトペーパー](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)」ページからダウンロードできます。
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f)、FINRA 4511(c)、CFTC 1.31(c)-(d)
 
-**Cohasset Assessment - Microsoft 365 - SEC Rule 17a-4(f) - Immutable Storage for SharePoint, OneDrive, Teams, Exchange, and Skype**
+**Cohasset アセスメント - Microsoft 365 - SEC ルール 17a-4(f) - SharePoint、OneDrive、Teams、Exchange、Skype 用の不変ストレージ** - [アセスメントのダウンロード](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 適用可能なワークロード: SharePoint、OneDrive、Teams、Exchange、Skype for Business
 
-2020 年 11 月にリリースされました。このレポートは Cohasset Associates, Inc. (Cohasset) と共同で作成されたもので、Microsoft 365 サービスの機能が、以下によって指定される、電子記録を記録、保存、および管理するための要件に照らして評価されます。  
+2020 年 10 月にリリースされたこのレポートは Cohasset Associates, Inc. (Cohasset) と共同で作成されたもので、Microsoft 365 サービスの機能が、以下で指定されている、電子記録を記録、保存、管理するための要件について評価されています。  
 
-- 米国証券取引委員会 (SEC) 17 CFR § 240.17a-4(f)。証券取引メンバー、ブローカー、ディーラーを規制します。  
+- 17 CFR § 240.17a-4(f) の米国証券取引委員会 (SEC)。証券取引のメンバー、ブローカー、ディーラーを規制します。  
 
 - 米国金融取引業規制機構 (FINRA) Rule 4511(c)。SEC Rule 17a-4(f) の形式とメディア要件に従います。  
 
