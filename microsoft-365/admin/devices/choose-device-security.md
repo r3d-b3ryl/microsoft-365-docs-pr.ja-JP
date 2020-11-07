@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 異なる MDM メソッドまたは MAM メソッドのどちらかを選択します。
-ms.openlocfilehash: 6231b7c82f280a60ae9d30bcf27697dc131b2471
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 2866aa8cf172361b2b5f5055932717154cd6ddd1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930284"
+ms.locfileid: "48941299"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>デバイスとアプリデータを保護するためのオプション
 
@@ -37,8 +37,6 @@ Microsoft 365 for business および enterprise を使用して、組織のデ�
 - Microsoft 365 Enterprise プランでは、高度なセキュリティと脅威保護を備えています。
 
 ## <a name="device-management-options"></a>デバイス管理のオプション
-
-![どのサブスクリプションで MDM および MAM メソッドを使用する必要があるかを示す図。](../../m365-mam-mdm.png)
 
 - **基本的なモビリティとセキュリティ** は、ほとんどの microsoft 365 プランで提供されており、Microsoft 365 business Standard および Microsoft 365 business Basic に対して提供されている唯一の組み込みの選択肢です。 詳細については、「 [availability Of Basic Mobility And Security](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)」を参照してください。 
 

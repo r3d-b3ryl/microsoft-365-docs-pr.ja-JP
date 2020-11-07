@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845689"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941489"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -53,7 +53,7 @@ ms.locfileid: "48845689"
 > [!NOTE]
 > ユーザータグ機能はプレビューでは、すべてのユーザーが利用できるわけではなく、変更される可能性があります。 リリーススケジュールの詳細については、Microsoft 365 ロードマップをご覧ください。
 
-ユーザータグとは、Office 365 の Microsoft Defender で特定のユーザーグループの識別子です。 タグの詳細、ライセンスの取得と構成タグの詳細については、「 [Office 365 の Defender のユーザータグ](user-tags.md)」を参照してください。
+ユーザータグとは、Office 365 の Microsoft Defender で特定のユーザーグループの識別子です。 タグの詳細については、「 [ユーザータグ](user-tags.md)」を参照してください。
 
 脅威エクスプローラーでは、次のような場合に、ユーザータグに関する情報を確認できます。
 
@@ -199,7 +199,7 @@ URL と URL をクリックすると、次のような機能が強化されま�
 
 ### <a name="filter-by-user-tags"></a>ユーザータグによるフィルター
 
-システムまたはカスタムユーザータグを使用して並べ替えとフィルター処理を行うことで、脅威の範囲をすばやく把握できるようになりました。 詳細については、「 [Office 365 ATP のユーザータグ](user-tags.md) 」を参照してください。
+システムまたはカスタムユーザータグを使用して並べ替えとフィルター処理を行うことで、脅威の範囲をすばやく把握できるようになりました。 詳細については、「 [ユーザータグ](user-tags.md) 」を参照してください。
 
 > [!IMPORTANT]
 > ユーザータグによるフィルター処理と並べ替えは、現在、パブリックプレビュー表示されています。

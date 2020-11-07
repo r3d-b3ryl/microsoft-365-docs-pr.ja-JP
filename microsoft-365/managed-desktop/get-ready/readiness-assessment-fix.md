@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931914"
+ms.locfileid: "48941411"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールによって検出された問題を修正します。
 
@@ -308,20 +308,20 @@ Azure Active Directory のセキュリティの既定値を使用すると、Mic
 
 ### <a name="self-service-password-reset"></a>セルフサービスによるパスワードのリセット
 
-セルフサービスのパスワードのリセット (SSPR) がすべてのユーザーに対して有効になっている必要があります。 そうでない場合、Microsoft マネージドデスクトップサービスアカウントは動作しません。 詳細については、「 [チュートリアル: ユーザーがアカウントのロックを解除するか、Azure Active Directory のセルフサービスによるパスワードのリセットを使用してパスワードをリセットする](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
+Microsoft Managed Desktop service アカウントを除くすべてのユーザーに対して、セルフサービスのパスワードのリセット (SSPR) を有効にする必要があります。 詳細については、「 [チュートリアル: ユーザーがアカウントのロックを解除するか、Azure Active Directory のセルフサービスによるパスワードのリセットを使用してパスワードをリセットする](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
 
 **アドバイザリ**
 
-[SSPR] **選択** した設定に、Microsoft Managed Desktop デバイスが含まれていることを確認してください。
+SSPR が **選択** した設定に、Microsoft managed desktop デバイスは含まれていますが、Microsoft managed desktop service アカウントを除外していることを確認してください。 SSPR が有効になっている場合、Microsoft マネージドデスクトップサービスアカウントは期待どおりに機能しません。  
 
 
 ### <a name="standard-user-role"></a>標準ユーザーの役割
 
-Microsoft Managed Desktop ユーザーは、ローカル管理者権限を持たない標準ユーザーである必要があります。 これらのユーザーには、Microsoft マネージドデスクトップデバイスを開始するときに、標準のユーザー役割が割り当てられます。
+グローバル管理者およびデバイス管理者の Azure AD ロールを割り当てられているユーザー以外は、Microsoft Managed Desktop ユーザーは、ローカル管理者特権を持たない標準ユーザーになります。 他のすべてのユーザーには、Microsoft マネージドデスクトップデバイスを起動するときに、標準のユーザー役割が割り当てられます。
 
 **アドバイザリ**
 
-Microsoft マネージドデスクトップユーザーには、登録する前にローカル管理者の権限が必要です。
+Microsoft マネージドデスクトップのユーザーには、登録後の Microsoft マネージドデスクトップデバイスに対するローカル管理者権限がありません。
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 

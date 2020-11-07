@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Power BI の Microsoft 365 Usage Analytics テンプレートアプリを使用して、テナントのデータの収集を開始する方法について説明します。
-ms.openlocfilehash: 0817e6441540086bf679c6533b1bad2e4087b4b9
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841459"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941333"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
@@ -56,12 +56,7 @@ Power BI をまだ持っていない場合は、 [POWER Bi Pro にサインア�
   
 ### <a name="enable-the-template-app"></a>テンプレートアプリを有効にする
 
-テンプレートアプリを有効にするには、次のいずれかである必要があります。 
-- **全体管理者**
-- **レポート閲覧者**
-- **Exchange 管理者**
-- **Skype for Business 管理者**
-- **SharePoint 管理者** 
+テンプレートアプリを有効にするには、 **全体管理者** である必要があります。
   
 詳細については、「 [管理者ロールについ](../add-users/about-admin-roles.md) て」を参照してください。 
   

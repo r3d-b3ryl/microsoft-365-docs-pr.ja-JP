@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841874"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941477"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -336,7 +336,7 @@ ms.locfileid: "48841874"
 
 - **分割ダウン: 検出テクノロジ** と **データの表示者: 電子メール \> マルウェア** : 次の情報が表示されます。
 
-  - **Atp で生成されたファイル評価**<sup>1</sup>: atp detonations によって生成されたすべての悪意のあるファイルの評価。
+  - **ATP で生成されたファイル評価**<sup>1</sup>: Defender が Office 365 detonations に対して生成した悪意のあるファイルの評価。
   - **マルウェア対策エンジン**<sup>1</sup>: マルウェア対策エンジンからの検出。
   - **マルウェア対策ポリシーファイルの種類のブロック** : これらは、メッセージで特定された悪意のあるファイルの種類によってフィルター処理された電子メールメッセージです。
   - **ファイル分析**<sup>1</sup>: ファイル分析は、安全な添付ファイルによってキャッチされます。  

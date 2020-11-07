@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950369"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941443"
 ---
 # <a name="windows-security-update-insights"></a>Windows セキュリティ更新プログラムの分析情報
 このビューには、Microsoft マネージドデスクトップデバイスのセキュリティ更新プログラムの状態の概要が表示されます。 
@@ -23,11 +23,11 @@ ms.locfileid: "47950369"
 
 ## <a name="device-status"></a>デバイスの状態
 
-Windows Update によってデバイスが更新されるようにするには、インターネットに接続して、少なくとも6時間は休止しないようにする必要があります。2つは連続している必要があります。 デバイスが接続され、休止状態ではない限り、"使用中" と見なされます。 これらの要件を満たしていないデバイスは更新される可能性がありますが、それに対応するデバイスが更新される可能性が高いことを示しています。 
+Windows Update によってデバイスが更新されるようにするには、インターネットに接続して、少なくとも6時間は休止しないようにする必要があります。2つは連続している必要があります。 これらの要件を満たしていないデバイスは更新される可能性がありますが、それに対応するデバイスが更新される可能性が高いことを示しています。 
 
 Windows Update のコンテキストで、次の用語を使用してデバイスアクティビティを分類します。
 
-- <strong>アクティブ:</strong> 最新のセキュリティ更新プログラムのリリースに対して少なくとも6時間 (連続) 使用されているデバイス。少なくとも5日ごとに Microsoft Intune を使用してチェックインしたデバイス
+- <strong>アクティブ:</strong> 最新のセキュリティ更新プログラムのリリースに対して最小の動作条件 (6 時間、連続) が満たされていて、少なくとも5日ごとに Microsoft Intune でチェックインされているデバイス
 - <strong>同期済み:</strong> 過去28日以内に Intune でチェックインされたデバイス
 - <strong>同期がありません:</strong> 過去28日間に Intune でチェックイン <i>されていない</i> デバイス
 

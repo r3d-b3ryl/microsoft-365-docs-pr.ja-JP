@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 の自動調査と応答の概要
+title: Microsoft Defender for Office 365 の自動調査と応答
 keywords: AIR、自動赤外線、ATP、自動化、調査、応答、修復、脅威、高度、脅威、保護
 f1.keywords:
 - NOCSH
@@ -21,14 +21,14 @@ description: Office 365 の Microsoft Defender で自動調査および応答機
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5796cdf21f9dd12c35a2f84422f03503433755b0
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 5a7995e0aeba0f29efb1a085a04a299b1e709b1f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931938"
+ms.locfileid: "48941465"
 ---
-# <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Office 365 の Microsoft Defender で自動調査と応答 (AIR) の使用を開始する
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の自動調査と応答 (AIR)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -134,7 +134,7 @@ Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マル
 - エンド ユーザー
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [自動化された調査の詳細と結果を参照する](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#view-details-of-an-investigation)
 
