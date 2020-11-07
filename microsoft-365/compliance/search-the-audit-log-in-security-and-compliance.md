@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7deb2068db9f15f31a04c45564b966af90d2e2b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846302"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941454"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -438,7 +438,7 @@ ms.locfileid: "48846302"
 |ファイルの削除|FileDeleted|ユーザーがサイトからドキュメントを削除しました。|
 |ごみ箱からのファイルの削除|FileDeletedFirstStageRecycleBin|ユーザーがサイトのごみ箱からファイルを削除しました。|
 |第 2 段階のごみ箱からのファイルの削除|FileDeletedSecondStageRecycleBin|ユーザーがサイトの第 2 段階のごみ箱からファイルを削除しました。|
-|削除されたレコードのコンプライアンス ポリシー ラベル|ComplianceRecordDelete|レコードとしてマークされたドキュメントが削除されました。 ドキュメントがレコードとしてみなされるのは、ドキュメントをレコードとしてマークする保持ラベルがドキュメントに適用されている場合です。|
+|レコードとしてマークされたファイルの削除|RecordDelete|レコードとしてマークされたドキュメントが削除されました。 ドキュメントがレコードとしてみなされるのは、ドキュメントをレコードとしてマークする保持ラベルがドキュメントに適用されている場合です。|
 |検出されたドキュメントの秘密度の不一致|DocumentSensitivityMismatchDetected|ユーザーが、機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも優先度が高くなっています。 たとえば、「社外秘」というラベルの付いたドキュメントが、「一般」というラベルの付いたサイトにアップロードされている場合です。 <br/><br/> ドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも優先度が低い場合、このイベントは発生しません。 たとえば、「一般」というラベルの付いたドキュメントが、「社外秘」というラベルの付いたサイトにアップロードされている場合です。 機密ラベルの優先度の詳細については、「[ラベルの優先度 (順序の問題)](sensitivity-labels.md#label-priority-order-matters)」を参照してください。|
 |ファイルでのマルウェアの検出|FileMalwareDetected|SharePoint ウイルス対策エンジンにより、ファイル内でマルウェアが検出されました。|
 |ファイル チェックアウトの破棄|FileCheckOutDiscarded|ユーザーは、チェックアウトしたファイルを破棄します (または元に戻します)。つまり、チェックアウト時にファイルに加えた変更はすべて破棄され、ドキュメント ライブラリ内のドキュメントのバージョンには保存されないということです。|
