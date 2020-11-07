@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の高度な監査では、組織におけるフォレンシックおよびコンプライアンスの調査に役立つ新しい監査機能を提供します。
-ms.openlocfilehash: c63280825c04d401c0cdc44d7128031c3b7ffdd8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398558"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925617"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 の高度な監査
 
@@ -36,7 +36,7 @@ Microsoft 365 の[統合監査機能](search-the-audit-log-in-security-and-compl
 
 ## <a name="long-term-retention-of-audit-logs"></a>監査ログの長期保持
 
-高度な監査では、Exchange、SharePoint、および Azure Active Directory の監査レコードが 1 年間保持されます。 これは、アクティビティが発生したサービスを示す**ワークロード** プロパティの**Exchange**、**SharePoint**、または **AzureActiveDirectory** の値を含む任意の監査レコードを 1 年間保持する既定の監査ログの保持ポリシーによって実現されます。 監査レコードの長期間にわたる保持は、継続的なフォレンジック調査やコンプライアンス調査に役立ちます。 詳細については、「[監査ログの保持ポリシーの管理](audit-log-retention-policies.md#default-audit-log-retention-policy)」の「既定の監査ログの保持ポリシー」セクションを参照してください。
+高度な監査では、Exchange、SharePoint、および Azure Active Directory の監査レコードが 1 年間保持されます。 これは、アクティビティが発生したサービスを示す **ワークロード** プロパティの **Exchange** 、 **SharePoint** 、または **AzureActiveDirectory** の値を含む任意の監査レコードを 1 年間保持する既定の監査ログの保持ポリシーによって実現されます。 監査レコードの長期間にわたる保持は、継続的なフォレンジック調査やコンプライアンス調査に役立ちます。 詳細については、「[監査ログの保持ポリシーの管理](audit-log-retention-policies.md#default-audit-log-retention-policy)」の「既定の監査ログの保持ポリシー」セクションを参照してください。
 
 また、監査ログを 10 年間保持する機能もリリースしています。 監査ログを 10 年間保持することで、長期間にわたる調査や、規制、法律、社内の義務への対応をサポートします。
 
@@ -81,7 +81,7 @@ MailItemsAccessed メールボックス アクションは、Exchange Online の
 
 MailItemsAccessed アクティビティの監査レコードの詳細については、「[高度な監査を使用して、侵害されたアカウントを調査する](mailitemsaccessed-forensics-investigations.md)」を参照してください。
 
-MailItemsAccessed 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで**メールボックス アイテムへのアクセス** アクティビティを検索できます。
+MailItemsAccessed 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **メールボックス アイテムへのアクセス** アクティビティを検索できます。
 
 ![監査ログ検索ツールで MailItemsAccessed アクションを検索する](../media/AdvAudit_MailItemsAccessed.png)
 
@@ -99,7 +99,7 @@ Send イベントもメールボックス監査アクションであり、ユー
 
 調査担当者は Send イベントを使用して、侵害されたアカウントから送信されたメールを特定することができます。 Send イベントの監査レコードには、メッセージが送信された日時、InternetMessage ID、件名、メッセージに添付ファイルが含まれているかどうかなどのメッセージに関連する情報が含まれています。 この監査情報は、調査担当者が侵害されたアカウントから送信された、または攻撃者によって送信されたメール メッセージに関連する情報を特定するのに役立ちます。 さらに、調査担当者は Microsoft 365 の電子情報開示ツールを使用して (件名やメッセージ ID を使用して) メッセージを検索し、メッセージの送信先である受信者と送信されたメッセージの実際の内容を特定することができます。
 
-Send 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで**送信済みメッセージ** アクティビティを検索できます。
+Send 監査レコードを検索するには、Microsoft 365 コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **Exchange メールボックス アクティビティ** ドロップダウン リストで **送信済みメッセージ** アクティビティを検索できます。
 
 ![監査ログ検索ツールでの送信済みメッセージ アクションの検索](../media/AdvAudit_SentMessage.png)
 
@@ -107,9 +107,9 @@ Exchange Online PowerShell で [Search-UnifiedAuditLog -Operations Send](https:/
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-SearchQueryInitiatedExchange イベントは、ユーザーが Outlook または Outlook on the web の検索バーを使用してメールボックス内のアイテムを検索するときにトリガーされます。 調査担当者は SearchQueryInitiatedExchange イベントを使用し、アカウントを侵害した可能性のある攻撃者がメールボックス内の機密情報を探したり、アクセスしようとしたかどうかを判断することができます。 SearchQueryInitiatedExchange イベントの監査レコードには、実際の検索クエリのテキストや、検索が Outlook デスクトップ クライアントや Outlook on the web 上で実行されたかどうかなどの情報が含まれます。 攻撃者が実行した可能性のある検索クエリを調査することで、調査担当者は検索されたメール データの意図をより深く理解することができます。
+SearchQueryInitiatedExchange イベントは、ユーザーが Outlook on the web (OWA) の検索バーを使用してメールボックス内のアイテムを検索するときにトリガーされます。 調査担当者は SearchQueryInitiatedExchange イベントを使用し、アカウントを侵害した可能性のある攻撃者がメールボックス内の機密情報を探したり、機密情報にアクセスしようとしたかどうかを判断することができます。 SearchQueryInitiatedExchange イベントの監査レコードには、検索クエリの実際のテキストなどの情報が含まれています。 攻撃者が実行した可能性のある検索クエリを調査することで、調査担当者は検索されたメール データの意図をより深く理解することができます。
 
-SearchQueryInitiatedExchange 監査レコードを検索するには、コンプライアンス センター内の[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の**検索アクティビティ** ドロップダウン リストで**実行されたメール検索**アクティビティを検索できます。
+SearchQueryInitiatedExchange 監査レコードを検索するには、コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **検索アクティビティ** ドロップダウン リストで **実行されたメール検索** アクティビティを検索できます。
 
 ![監査ログ検索ツールでの実行されたメール検索アクションの検索](../media/AdvAudit_SearchExchange.png)
 
@@ -120,9 +120,9 @@ SearchQueryInitiatedExchange 監査レコードを検索するには、コンプ
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-メールボックス アイテムの検索と同様に、組織内の SharePoint ホーム サイト、Teams サイト、コラボレーション サイト、ハブ サイト内のアイテムをユーザーが検索すると、SearchQueryInitiatedSharePoint イベントがトリガーされます。 調査担当者は SearchQueryInitiatedSharePoint イベントを使用し、攻撃者が SharePoint 内の機密情報を見つけようとした (そしてアクセスした可能性がある) かどうかを判断することができます。 SearchQueryInitiatedSharePoint イベントの監査レコードには、実際の検索クエリのテキストも含まれています。 攻撃者が実行した可能性のある検索クエリを調査することで、調査担当者は検索されたファイル データの意図や範囲をより深く理解することができます。
+メールボックス アイテムの検索と同様に、組織の SharePoint ホーム サイト内のアイテムをユーザーが検索すると、SearchQueryInitiatedSharePoint イベントがトリガーされます。 調査担当者は、SearchQueryInitiatedSharePoint イベントを使用して攻撃者が SharePoint 内の機密情報を見つけようとした (そしてアクセスした可能性がある) かどうかを判断することができます。 SearchQueryInitiatedSharePoint イベントの監査レコードには、検索クエリの実際のテキストも含まれています。 攻撃者が実行した可能性のある検索クエリを調査することで、調査担当者は検索されたファイル データの意図や範囲をより深く理解することができます。
 
-SearchQueryInitiatedSharePoint 監査レコードを検索するには、コンプライアンス センター内の[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の**検索アクティビティ** ドロップダウン リストで**実行された SharePoint 検索**アクティビティを検索できます。
+SearchQueryInitiatedSharePoint 監査レコードを検索するには、コンプライアンス センター内の [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)の **検索アクティビティ** ドロップダウン リストで **実行された SharePoint 検索** アクティビティを検索できます。
 
 ![監査ログ検索ツールでの実行された SharePoint 検索アクションの検索](../media/AdvAudit_SearchSharePoint.png)
 

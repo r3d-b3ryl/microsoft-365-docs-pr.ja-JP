@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 のエンドポイントのデータ損失防止について学ぶ (プレビュー) '
+title: Microsoft 365 のエンドポイントのデータ損失防止についての詳細情報 (プレビュー)
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,13 +18,13 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 エンドポイントのデータ損失防止は、、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに拡張します。 Microsoft 365 のコンプライアンスソリューションでファイルが表示されます '
-ms.openlocfilehash: cbf4a53658885102226d2b874180f5cc5f264a91
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。 ファイルは、Microsoft 365 コンプライアンス ソリューションで表示されます。 '
+ms.openlocfilehash: 3dedf8f3134dbdd00c45e6b0aed741a3b3173984
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841863"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931971"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>Microsoft 365 のエンドポイントのデータ損失防止について学ぶ (プレビュー) 
 
@@ -55,27 +55,30 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 
 デバイス管理は、デバイスからテレメトリを収集できる機能です。これは、エンドポイント DLP や [インサイダー リスク管理](insider-risk-management.md)などの 365 Microsoft のコンプライアンスソリューションに導入する機能です。 DLP ポリシーの場所として使用するすべてのデバイスをオンボードする必要があります。
 
-![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> [!div class="mx-imgBorder"]
+> ![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-オンボードとオフボードは、デバイス管理センターからダウンロードするスクリプトを通して処理されます。 センターには、次の展開方法ごとにカスタムスクリプトがあります：
+オンボードとオフボードは、デバイス管理センターからダウンロードするスクリプトを介して処理されます。 センターには、次の展開方法ごとにカスタムスクリプトがあります：
 
 - ローカルスクリプト (最大10台のマシン)
 - グループ ポリシー
 - System Center Configuration Manager （ バージョン 1610以降 ）
 - Mobile Device Management/Microsoft Intune
-- 非永続的マシン用の VDI のオンボードスクリプト
+- 非永続的コンピューター用の VDI オンボード スクリプト
 
-![デバイスオンボーディングページ](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> [!div class="mx-imgBorder"]
+> ![デバイス オンボード ページ](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
- デバイスをオンボードにするには、[Microsoft 365 エンドポイント DLPの使用を開始する](endpoint-dlp-getting-started.md)の手順を使用します。
+ デバイスをオンボードするには、「[Microsoft 365 エンドポイント DLP の使用を開始する](endpoint-dlp-getting-started.md)」の手順を使用します。
 
-[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) を通して、デバイスをオンボーディングしている場合、これらのデバイスは自動的にデバイスの一覧に表示されます。
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) を介してデバイスをオンボードした場合、それらのデバイスは自動的にデバイスの一覧に表示されます。
 
-![デバイスリストを管理する](../media/endpoint-dlp-learn-about-2-device-list.png)
+> [!div class="mx-imgBorder"]
+> ![管理対象デバイスの一覧](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### <a name="viewing-endpoint-dlp-data"></a>エンドポイント DLP データの表示
 
- エンドポイント DLP は、MIME タイプに基づいてアクティビティを監視するため、ファイル拡張子が変更された場合でもアクティビティがキャプチャされます。 パブリックプレビューでは、すべてが監視されます:
+ エンドポイント DLP は MIME タイプに基づいてアクティビティを監視するため、ファイルの拡張子が変更されてもアクティビティはキャプチャされます。 パブリック プレビューでは、以下のすべてが監視されます。
 
 - Word ファイル
 - PowerPoint ファイル
@@ -83,21 +86,24 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 - PDF ファイル
 - .csv ファイル
 - .tsv ファイル
-- c ファイル
-- クラス ファイル
-- cpp ファイル
-- cs ファイル
-- h ファイル
-- java ファイル
+- .txt ファイル
+- .rtf ファイル
+- .c ファイル
+- .class ファイル
+- .cpp ファイル
+- .cs ファイル
+- .h ファイル
+- .java ファイル
 
 > [!NOTE]
-> .txt とソースコードのファイルは既定では監査されません。 DLP は、適用されたポリシーに対して DLP を評価し、それに従って、ユーザーのアクションを監査またはブロックします。
+> エンドポイント DLP は、上記すべての種類のファイルを DLP ポリシーに対して評価し、それに応じた保護アクションを適用します。 DLP ポリシーに一致するすべてのファイルは、たとえブロックされていなくても、サポートされているすべてのアクションについて監査されます。 さらに、Word、PowerPoint、Excel、PDF、.csv ファイルに対して実行されたファイル アクティビティについては、DLP ポリシーの存在やこれらのファイル対する一致に関係なく、既定で監査されます。
 
-デバイスがオンボードされると、場所としてデバイスを使用する DLP ポリシーを構成し、展開する前でも、監査されたアクティビティに関する情報がアクティビティエクスプローラーに流れます。
+デバイスを場所として持つ DLP ポリシーを構成して展開する前であっても、デバイスがオンボードされると、監査済みアクティビティに関する情報がアクティビティ エクスプローラーに流入します。
 
-![アクティビティ エクスプローラーでのエンドポイント dlp イベント](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> [!div class="mx-imgBorder"]
+> ![アクティビティ エクスプローラーでのエンドポイント DLP イベント](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
-エンドポイント DLP は、監査済みアクティビティに関する広範囲にわたる情報を収集します。
+エンドポイント DLP は、監査済みアクティビティに関する広範な情報を収集します。
 
 たとえば、ファイルがリムーバブル USB メディアにコピーされた場合、アクティビティの詳細に次の属性が表示されます：
 
@@ -124,9 +130,10 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 - Microsoft Defender for Endpoint デバイス ID (該当する場合)
 - リムーバブルメディアデバイスの製造元
 - リムーバブルメディアデバイスのモデル
-- リムーバブルメディアデバイスのシリアル番号
+- リムーバブル メディア デバイスのシリアル番号
 
-![usb アクティビティ属性にコピーする](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> [!div class="mx-imgBorder"]
+> ![USB アクティビティ属性へのコピー](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## <a name="next-steps"></a>次の手順
 
