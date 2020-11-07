@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 環境の組織が現在直面している最も一般的な脅威と攻撃のシナリオ、およびこれらのリスクを軽減するために推奨される処置。
-ms.openlocfilehash: b359b16042d419a06096a48ddcbc50affbcc4cd6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 64f4491db3dc4ef18411b166fb23c4388383dae2
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843130"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944306"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 セキュリティ (ビジネス意思決定者向け) (Bdm)
 
@@ -30,6 +30,8 @@ ms.locfileid: "48843130"
 [![サムネイルの画像 Microsoft 365 BDM セキュリティに関する推奨事項のスプレッドシート](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft は、定期的な活動に基づいてセキュリティの状況を自動的に分析したり、スコアを割り当てたり、セキュリティ向上の推奨事項を提供したりするために、テナント内のセキュリティスコアツールを提供しています。 この記事で推奨されている操作を行う前に、現在のスコアと推奨事項をご確認ください。 この記事で推奨されている操作を実行すると、スコアが向上します。 目標は最大スコアを達成することではなく、ユーザーの生産性に悪影響を及ぼすことがないように環境を保護する機会に注意する必要があります。 「 [Microsoft セキュリティスコア](mtp/microsoft-secure-score.md)」を参照してください。
+
+![ビジネスに対するリスクを軽減するには、次の手順に従います。](../media/security/security-for-bdms-overview.png)
 
 開始する前にもう一度考えてみましょう。 . . [監査ログ](../compliance/search-the-audit-log-in-security-and-compliance.md)を必ずオンにしてください。 インシデントまたは違反を調査する必要がある場合は、このデータが後で必要になります。 
 
