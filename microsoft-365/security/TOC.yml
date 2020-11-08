@@ -292,6 +292,8 @@
       items:
         - name: 概要
           items:
+            - name: セキュリティのロードマップ
+              href: ./office-365-security/security-roadmap.md
             - name: Exchange Online Protection
               items:
                 - name: Exchange Online Protection の概要
@@ -318,8 +320,6 @@
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: 新しい Microsoft 365 セキュリティ センター
               href: ./mtp/overview-security-center.md
-            - name: セキュリティのロードマップ
-              href: ./office-365-security/security-roadmap.md
             - name: 脅威エクスプローラー (およびリアルタイムの検出)
               href: ./office-365-security/threat-explorer.md
             - name: AIR の概要
@@ -376,7 +376,9 @@
               href: ./office-365-security/siem-server-integration.md
             - name: SIEM と Defender for Office 365 の統合
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: フィッシング対策ポリシーを構成する
+            - name: 既定のセキュリティ保護
+              href: ./office-365-security/secure-by-default.md
+            - name: ATP フィッシング対策ポリシーを構成する
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: マルウェア対策ポリシーを構成する
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -461,7 +463,13 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Defender for Office 365 の攻撃シミュレータ
               href: ./office-365-security/attack-simulator.md
-            - name: EOP および Office 365 ATP セキュリティを構成するための推奨設定
+            - name: 攻撃シミュレーション トレーニングでフィッシング攻撃のシュミレーション
+              href: ./office-365-security/attack-simulation-training.md
+            - name: 攻撃シミュレーショントレーニングのカスタム ペイロードを作成する
+              href: ./office-365-security/attack-simulation-training-payloads.md
+            - name: 攻撃シミュレーション トレーニングを通して洞察を得る
+              href: ./office-365-security/attack-simulation-training-insights.md
+            - name: EOP および Defender for Office 365 のセキュリティを構成するための推奨設定
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: EOP を構成するためのベスト プラクティス
               href: ./office-365-security/best-practices-for-configuring-eop.md
