@@ -68,6 +68,11 @@
           items:
             - name: Microsoft コンサルティング サービスを使用する
               href: get-ready/apps-MCS.md
+        - name: 準備評価ツールの使用
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: 準備評価ツールで見つかった問題を修正する
+              href: get-ready/readiness-assessment-fix.md
     - name: Microsoft マネージド デスクトップの使用を開始する
       href: get-started/index.md
       items:
