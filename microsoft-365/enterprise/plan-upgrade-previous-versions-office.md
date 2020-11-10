@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事には、Office 2007 または Office 2010 を使用してアップグレードを計画するユーザー向けのリソースが含まれています。
-ms.openlocfilehash: 4fa340f2dfa8091aba962da475f5ffb883ba4e3f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920269"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951141"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>Office 2007 または Office 2010 サーバー/クライアントからアップグレードする計画を立てる
 
-*この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
+*この記事は、Microsoft 365 for Enterprise および Office 365 for Enterprise の両方に適用されます。*
 
 以前のバージョンの Office 製品とサーバーを使用している組織では、アップグレードの計画を開始する絶好の時間です。 Office 2007 製品とサービス [のサポートが終了](upgrade-from-office-2007-servers-and-products.md)しました。 Office 2010 製品およびサービスの場合:
 
@@ -40,16 +40,16 @@ ms.locfileid: "48920269"
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) は、より多くのことを実現するために設計された革新的な Office アプリ、インテリジェントクラウドサービス、および世界最高クラスのセキュリティの組み合わせです。
 
-Microsoft 365 には、組織が最新の Windows オペレーティングシステムで動作していることを確認するためのライセンスと機能が含まれています。 また、Windows、iOS、および Android デバイスが、認証とデータ保護を必要とするポリシーによって確実に登録され、セキュリティで保護されます。 さらに、Windows 10 および Microsoft 365 Apps for enterprise (旧称 Office 365 ProPlus) クライアントソフトウェアは、最新の機能とセキュリティ更新プログラムが含まれるように、継続的に更新されています。
+Microsoft 365 には、組織が最新の Windows オペレーティングシステムで動作していることを確認するためのライセンスと機能が含まれています。 また、Windows、iOS、および Android デバイスが、認証とデータ保護を必要とするポリシーによって確実に登録され、セキュリティで保護されます。 さらに、Windows 10 および Microsoft 365 Apps for Enterprise (旧称 Office 365 ProPlus) クライアントソフトウェアは、最新の機能とセキュリティ更新プログラムが含まれるように、継続的に更新されています。
   
 Microsoft 365 は、Microsoft クラウドによって有効になっていてセキュリティで保護されたデバイスと生産性のエクスペリエンスを常に向上させて、ビジネスをデジタル的に変換する方法です。
  
 |関連情報|説明|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Microsoft 365 のバージョンに関する情報を取得します。|
-|[Microsoft 365 Business ドキュメント](https://docs.microsoft.com/microsoft-365/business/)|小規模および中規模企業向けの Microsoft 365 のバージョンに関する詳細情報を取得します。|
-|[Microsoft 365 教育に関するドキュメント](https://docs.microsoft.com/microsoft-365/education/)|教育機関向けの Microsoft 365 のバージョンに関する詳細情報を取得します。|
-|[Microsoft 365 Enterprise のドキュメントとリソース](https://docs.microsoft.com/microsoft-365/enterprise/)|エンタープライズ組織の Microsoft 365 のバージョンに関する詳細情報を取得します。|
+|[Microsoft 365 for Business のドキュメント](https://docs.microsoft.com/microsoft-365/business/)|小規模および中規模企業向けの Microsoft 365 のバージョンに関する詳細情報を取得します。|
+|[教育機関向けドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365/education/)|教育機関向けの Microsoft 365 のバージョンに関する詳細情報を取得します。|
+|[エンタープライズドキュメントの Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/)|エンタープライズ組織の Microsoft 365 のバージョンに関する詳細情報を取得します。|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>アップグレードしない場合はどうなりますか?
@@ -112,6 +112,6 @@ Office 2007 または Office 2010 を自宅で使用している場合は、次�
 - [Office 2007 サーバー/クライアントからアップグレードする](upgrade-from-office-2007-servers-and-products.md)
 - [Office 2010 サーバー/クライアントからアップグレードする](upgrade-from-office-2010-servers-and-products.md)
    
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
   
 [Microsoft のライフサイクル ポリシー](https://go.microsoft.com/fwlink/?linkid=865200)

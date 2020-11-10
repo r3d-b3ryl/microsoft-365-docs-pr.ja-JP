@@ -1,5 +1,5 @@
 ---
-title: 攻撃シミュレーショントレーニングを通じて洞察を得る
+title: 攻撃シミュレーション トレーニングを通して洞察を得る
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -10,15 +10,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Microsoft 365 セキュリティセンターエフェクトの従業員による攻撃シミュレーションのトレーニングと、シミュレーションおよびトレーニングの結果についての洞察を得ることができます。
-ms.openlocfilehash: 180ddc773b5a299692e40ddc558d3b3a89f4093b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+description: Microsoft 365 セキュリティセンターの攻撃シミュレーショントレーニングが従業員にどのように影響し、シミュレーションおよびトレーニングの結果から得られるかについて説明します。
+ms.openlocfilehash: 80b8c275d1d64dd3dbd6509309fb88cd641734e3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944470"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950985"
 ---
-# <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーショントレーニングを通じて洞察を得る
+# <a name="gain-insights-through-attack-simulation-training"></a>攻撃シミュレーション トレーニングを通して洞察を得る
 
 攻撃シミュレーショントレーニングの範囲内では、シミュレーションの結果と、従業員が出てきたトレーニングに基づいて、Microsoft が洞察を提供しています。 これらの洞察は、従業員が脅威への対応についての進行状況を把握するのに役立つだけでなく、従業員やお客様の攻撃に備えた環境をより適切に準備するための次のステップも提供します。
 
@@ -38,14 +38,20 @@ ms.locfileid: "48944470"
 
 さらに、 `<number> less susceptible to phishing` 攻撃によって侵害された実際の従業員数と予想される妥協率の違いを反映しています。 この数人の従業員は今後同様の攻撃によって侵害される可能性が低くなりますが、 `<percent%> better than predicted rate` 予想される妥協率と比較して従業員全体がどのように影響を受けたかを示します。
 
-![攻撃に影響を与える動作のシミュレーショントレーニングの概要](../../media/attack-sim-preview-behavior-impact-card.png)
+> [!div class="mx-imgBorder"]
+> ![攻撃に影響を与える動作のシミュレーショントレーニングの概要](../../media/attack-sim-preview-behavior-impact-card.png)
 
 詳細なレポートを表示するには、シミュレーション手法や対象ユーザー総数など、シミュレーション自体からの追加コンテキストに関する情報を提供する [ **シミュレーションとトレーニングの有効性の表示] レポート** をクリックします。
 
 ## <a name="recommended-actions"></a>推奨処理
 
-[シミュレーション [ **Simulations** ] タブ](https://security.microsoft.com/attacksimulator?viewid=simulations)でシミュレーションのいずれかを選択すると、シミュレーションの詳細が表示されます。 ここでは、[ **推奨** されるアクション] セクションについて説明します。
+[シミュレーション [ **Simulations** ] タブ](https://security.microsoft.com/attacksimulator?viewid=simulations)で、シミュレーションのいずれかを選択すると、シミュレーションの詳細が表示されます。 ここでは、[ **推奨** されるアクション] セクションについて説明します。
 
 「推奨されるアクション」セクションでは、 [Microsoft セキュリティスコア](../mtp/microsoft-secure-score.md)で利用できる推奨事項について説明します。 これらの推奨事項は、シミュレーションで使用されるペイロードに基づいており、従業員や環境を保護するのに役立ちます。 各改善アクションをクリックすると、その詳細が表示されます。
 
-![アタックシミュレーショントレーニングの推奨事項のセクション](../../media/attack-sim-preview-recommended-actions.png)
+> [!div class="mx-imgBorder"]
+> ![アタックシミュレーショントレーニングの推奨事項のセクション](../../media/attack-sim-preview-recommended-actions.png)
+
+## <a name="related-links"></a>関連リンク
+
+**アタックシミュレータ**[フィッシング攻撃シミュレーションを作成](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide)し、 [ユーザーをトレーニングするためのペイロードを作成](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)する

@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: このロードマップを使用して、Microsoft 365 用のクライアントおよびサーバーソフトウェアをセットアップします。
-ms.openlocfilehash: 2fb63f73ad49c68cbeb6c92497835c36f9faf737
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7ebb48eb474991feae325cab00ebc2a0e9348db8
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920444"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950963"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 のクライアントおよびサーバーソフトウェアのロードマップ
 
-ほとんどのエンタープライズ組織には、オペレーティングシステム、クライアントソフトウェア、およびサーバーソフトウェアの複数のリリースが含まれる異種環境があります。 Microsoft 365 Enterprise には、IT インフラストラクチャの主要なコンポーネントの最も安全なバージョンが含まれています。 また、クラウドテクノロジを利用するように設計された生産性機能も含まれます。
+ほとんどのエンタープライズ組織には、オペレーティングシステム、クライアントソフトウェア、およびサーバーソフトウェアの複数のリリースが含まれる異種環境があります。 Microsoft 365 for Enterprise には、IT インフラストラクチャの主要コンポーネントの最も安全なバージョンが含まれています。 また、クラウドテクノロジを利用するように設計された生産性機能も含まれます。
 
-製品の Microsoft 365 Enterprise の統合スイートのビジネス価値を最大化するには、次のソフトウェアのリリースを移行するための戦略を計画および導入してください。
+エンタープライズ統合スイートの Microsoft 365 のビジネス価値を最大化するには、次の製品のリリースを移行するための戦略の計画と実装を開始します。
 
 - コンピューターにインストールされている Office クライアントが、Microsoft 365 Apps for enterprise にインストールされている。
 - サーバーにインストールされている Office サーバーは、Microsoft 365 の同等のサービスにインストールされます。
@@ -34,7 +34,7 @@ ms.locfileid: "48920444"
 >Windows 7 のサポートは *、2020年1月14日* に終了しました。 詳細については、 [サポート終了の詳細](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)を参照してください。
 >
 
-時間の経過とともにこれらの移行を実行すると、 [モダンワークプレース](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)の構想に近い組織になります。 このセキュリティで保護された統合環境を使用すると、組織内のチームワークや創造性を最大限に活用できます。 Microsoft 365 Enterprise を使用すると、すべてのことができるようになります。
+時間の経過とともにこれらの移行を実行すると、 [モダンワークプレース](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)の構想に近い組織になります。 このセキュリティで保護された統合環境を使用すると、組織内のチームワークや創造性を最大限に活用できます。 Microsoft 365 for Enterprise を使用すると、すべてのことができるようになります。
 
 ## <a name="migration-for-office-client-products"></a>Office クライアント製品の移行
 
@@ -44,7 +44,7 @@ ms.locfileid: "48920444"
 - は、Microsoft のクラウドテクノロジを使用してお客様のデジタル変換を支援するように最適化されていません。
 - 最新の機能を提供しないでください。
 
-Microsoft 365 Enterprise には、エンタープライズ向けの Microsoft 365 アプリが含まれています。 このバージョンの Office クライアント製品は、Microsoft 365 Enterprise ライセンスで提供されています。 これは、Microsoft クラウドにインストールされ、更新されます。 Microsoft 365 Apps for enterprise には、セキュリティ更新プログラムおよび最新機能が含まれます。 詳細については、「 [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)」を参照してください。
+Microsoft 365 for Enterprise には、エンタープライズ向けの Microsoft 365 アプリが含まれています。 このバージョンの Office クライアント製品は、Microsoft 365 for Enterprise ライセンスで提供されています。 これは、Microsoft クラウドにインストールされ、更新されます。 Microsoft 365 Apps for enterprise には、セキュリティ更新プログラムおよび最新機能が含まれます。 詳細については、「 [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)」を参照してください。
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -72,7 +72,7 @@ Microsoft 365 enterprise 用アプリは、セキュリティ更新プログラ�
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 および Office 2016
 
-Office 2013 および Office 2016 のサポート終了ロードマップはまだ決定されていません。 これらのバージョン (Office 2010 など) でも、 [セキュリティ更新プログラムをインストール](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)する必要があります。 組織の規模によっては、このタスクは十分に拡大できない場合があります。
+[Office 2013 のサポート終了ロードマップを](https://docs.microsoft.com/lifecycle/products/microsoft-office-2013)参照してください。 Office 2016 のサポート終了はまだ決定されていません。 これらのバージョン (Office 2010 など) でも、 [セキュリティ更新プログラムをインストール](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)する必要があります。 組織の規模によっては、このタスクは十分に拡大できない場合があります。
 
 Office 2013 または Office 2016 用の最新のセキュリティ更新プログラムでコンピューターを最新の状態に維持するのではなく、コンピューターを office 2013 から Office 2016 に更新する場合は、次の手順を実行することを検討してください。
 
@@ -91,7 +91,7 @@ Microsoft 365 enterprise 用アプリは、セキュリティ更新プログラ�
 - Microsoft Teams などの新しい生産性向上アプリケーションは含めないでください。
 - Exchange や Office 365 用の Defender など、最新のセキュリティ機能は含めないでください。
 
-Microsoft 365 Enterprise には、web ブラウザーや Outlook クライアントなど、オンプレミスバージョンの Office server ソフトウェアと同じツールを使用する、クラウドベースのバージョンの Office server サービスが含まれています。 これらのサービスは、セキュリティに対して自動的に更新されます。 IT 担当者は、オンプレミスサーバーのメンテナンスと更新にかかる時間を節約できます。 これらのサービスは、Office server ソフトウェアには存在しない新しい機能拡張も提供します。
+Microsoft 365 for Enterprise には、web ブラウザーや Outlook クライアントなど、オンプレミスバージョンの Office server ソフトウェアと同じツールを使用する、クラウドベースのバージョンの Office server サービスが含まれています。 これらのサービスは、セキュリティに対して自動的に更新されます。 IT 担当者は、オンプレミスサーバーのメンテナンスと更新にかかる時間を節約できます。 これらのサービスは、Office server ソフトウェアには存在しない新しい機能拡張も提供します。
 
 特定の Microsoft 365 ワークロードのユーザーとデータを移行する方法については、以下のリソースを参照してください。
 
@@ -155,21 +155,21 @@ Office 2010 のクライアントおよびサーバーおよび Windows 7 のア
 
 [![Office 2010 のクライアントおよびサーバーと Windows 7 のサポート終了のオプションを示す図。](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-このワンページポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポート終了を管理するために取ることができるパスを簡単に理解する方法を示しています。 推奨パスは、Microsoft 365 Enterprise でサポートされています。
+このワンページポスターは、Office 2010 のクライアントおよびサーバー製品と Windows 7 のサポート終了を管理するために取ることができるパスを簡単に理解する方法を示しています。 推奨パスは、Microsoft 365 for Enterprise でサポートされています。
 
 [このポスターをダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf)して、レターサイズ、リーガルサイズ、またはタブロイド (11 x 17) サイズで印刷できます。
 
 ## <a name="transition-your-entire-organization"></a>組織全体の移行
 
-組織全体を Microsoft 365 Enterprise の製品とサービスに移行する方法をより深く理解するには、次の移行ポスターをダウンロードしてください。
+組織全体を Microsoft 365 for Enterprise の製品とサービスに移行する方法をより深く理解するには、次の移行ポスターをダウンロードしてください。
 
 [![Microsoft 365 ポスターへの移行を示す画像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-この2ページのポスターをご覧になると、既存のインフラストラクチャを簡単にインベントリできます。 これは、Microsoft 365 Enterprise の製品またはサービスに移行するためのガイダンスを取得するために使用します。 この図は、Windows および Office 製品と、デバイスの管理、id と脅威の保護、情報およびコンプライアンス保護などのその他のインフラストラクチャとセキュリティ要素を示しています。
+この2ページのポスターをご覧になると、既存のインフラストラクチャを簡単にインベントリできます。 これは、Microsoft 365 for Enterprise の製品またはサービスに移行するためのガイダンスを取得するために使用します。 この図は、Windows および Office 製品と、デバイスの管理、id と脅威の保護、情報およびコンプライアンス保護などのその他のインフラストラクチャとセキュリティ要素を示しています。
 
-## <a name="how-microsoft-migrated-to-microsoft-365-enterprise"></a>Microsoft 365 Enterprise に移行した方法
+## <a name="how-microsoft-migrated-to-microsoft-365-for-enterprise"></a>Microsoft によるエンタープライズ向け Microsoft 365 への移行方法
 
-Microsoft の IT 専門家が Microsoft 365 Enterprise に移行した方法を参照してください。
+Microsoft の IT 担当者が企業を Microsoft 365 に移行した方法を参照してください。
 
 - [エンタープライズ向け Microsoft 365 アプリの展開と更新](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft では 150,000 のメールボックスを Exchange Online に移行](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)

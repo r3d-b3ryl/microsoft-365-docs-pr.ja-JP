@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Microsoft Defender for Office 365 を使用する組織での管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫されたファイルを管理することもできます。
-ms.openlocfilehash: b6f6f47dc227d3bada425d02784a8aff5da8b3d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842930"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951049"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -127,14 +127,6 @@ Microsoft Defender for Office 365 を使用する組織での管理者は、Shar
    検索条件を入力したら、![[更新] ボタン](../../media/scc-quarantine-refresh.png) **[更新]** をクリックすると、結果がフィルター処理されます。
 
 特定の検疫済みメッセージを見つけたら、そのメッセージを選択して詳細を表示し、処理を実行します (メッセージの表示、解放、ダウンロード、または削除など)。
-
-#### <a name="export-message-results"></a>メッセージ結果をエクスポートする
-
-1. 目的のメッセージを選択し、 **[結果のエクスポート]** をクリックします。
-
-2. ブラウザー ウィンドウを開いたままにするように警告する確認メッセージで、 **[はい]** をクリックします。
-
-3. エクスポートの準備ができたら、.csv ファイルに名前を付けて、ダウンロード場所を選択できます。
 
 #### <a name="view-quarantined-message-details"></a>検疫済みメッセージの詳細を表示する
 
@@ -255,14 +247,6 @@ Office 365 の Defender を使用する組織では、管理者は SharePoint On
    - **[ポリシーの種類]**
 
 特定の検疫済みファイルを見つけたら、そのファイルを選択して、そのファイルに関する詳細を表示し、操作を行います (たとえば、メッセージの表示、リリース、ダウンロード、または削除)。
-
-#### <a name="export-file-results"></a>ファイルエクスポートの結果
-
-1. 目的のファイルを選択し、[結果の **エクスポート** ] をクリックします。
-
-2. ブラウザー ウィンドウを開いたままにするように警告する確認メッセージで、 **[はい]** をクリックします。
-
-3. エクスポートの準備ができたら、.csv ファイルに名前を付けて、ダウンロード場所を選択できます。
 
 #### <a name="view-quarantined-file-details"></a>検疫されたファイルの詳細の表示
 
