@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 レポートから Microsoft Teams アプリの使用状況レポートを取得することによって、組織で使用される Microsoft Teams アプリの洞察を得ることができます。
-ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636975"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988530"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>管理センターの microsoft 365 レポート-Microsoft Teams デバイスの使用状況
 
@@ -37,7 +37,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>Microsoft Teams アプリの使用状況レポートを取得する手順
 
-1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
+1. 管理センターで、[ **レポート** ] \> [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
 2. ダッシュボードのホームページから、Microsoft Teams のアクティビティカードの [ **詳細表示** ] ボタンをクリックします。
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>Microsoft Teams アプリの使用状況レポートを解釈する
@@ -46,7 +46,7 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 
 レポートに列を追加または削除するには、[ **列の選択** ] を選択します。  <br/> ![Teams ユーザーデバイスレポート-列の選択](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
-また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+また、[ **エクスポート** ] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
   
 |アイテム|説明|
 |:-----|:-----|
@@ -61,5 +61,4 @@ Microsoft 365 **Reports** dashboard には、組織内の製品全体にわた�
 |Web  <br/> |ユーザーがデバイス上の Teams web クライアントでアクティブだった場合に選択されます。|
 |最後のアクティビティの日付 (UTC)  <br/> |ユーザーが Teams アクティビティに参加した最後の日付 (UTC)。  <br/> |
 |ライセンスされている|ユーザーが Teams を使用するライセンスを持っている場合に選択されます。|
-|Teams の合計アクティビティ|選択した期間における Teams アクティビティの合計数です。 |
 |||

@@ -11,19 +11,19 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906967"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988832"
 ---
 # <a name="topic-center-overview-preview"></a>トピックセンターの概要 (プレビュー)
 
 > [!Note] 
 > この記事の内容は、Project Cortex のプライベートプレビュー用です。 [Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)
 
-トピックセンターは、組織のナレッジセンターとして機能する最新の SharePoint サイトです。 これは、Microsoft 365 管理センターの [ナレッジマネージメントのセットアップ](set-up-knowledge-network.md) 時に作成されます。
+トピックセンターは、組織のナレッジセンターとして機能する最新の SharePoint サイトです。 これは、Microsoft 365 管理センターの [ナレッジマネージメントのセットアップ](set-up-topic-experiences.md) 時に作成されます。
 
 トピックセンターには、接続されている、または接続が提案されているトピックを確認できる既定のホームページがあります。 適切なアクセス許可を持つユーザーも、次のことを行うことができます。
 
@@ -36,7 +36,7 @@ ms.locfileid: "48906967"
 
 ## <a name="where-is-the-topic-center"></a>トピックセンターの場所
 
-トピックセンターは、ナレッジ管理のセットアップ時に作成されます。 セットアップが完了すると、管理者は [ [ナレッジセンターの管理] ページ](manage-knowledge-network.md)で URL を見つけることができます。
+トピックセンターは、ナレッジ管理のセットアップ時に作成されます。 セットアップが完了すると、管理者は [ [ナレッジセンターの管理] ページ](topic-experiences-discovery.md)で URL を見つけることができます。
 
 1. Microsoft 365 管理センターで、ナビゲーションウィンドウの [ **設定** ] を選択し、[ **組織ナレッジ** ] セクションで、[ **ユーザーをナレッジに接続する** ] を選択します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "48906967"
 
 ## <a name="home-page"></a>ホーム ページ
 
-トピックセンターを表示するには、トピックとトピックのエクスペリエンスを表示するためのアクセス許可を持っている必要があります。 管理者は、 [ナレッジマネージメントのセットアップ](set-up-knowledge-network.md)中にこれらのアクセス許可をユーザーに割り当てることができます。または、管理者が Microsoft 365 管理センターを使用して、新しいユーザーを [追加](give-user-permissions-to-the-topic-center.md) することもできます。
+トピックセンターを表示するには、トピックとトピックのエクスペリエンスを表示するためのアクセス許可を持っている必要があります。 管理者は、 [ナレッジマネージメントのセットアップ](set-up-topic-experiences.md)中にこれらのアクセス許可をユーザーに割り当てることができます。または、管理者が Microsoft 365 管理センターを使用して、新しいユーザーを [追加](give-user-permissions-to-the-topic-center.md) することもできます。
 
 [ホーム] ページ 
 - **トピックを表示** する: トピックの表示エクスペリエンス。 そのため、組織内のトピックを参照し、接続されているトピックについてのフィードバックを提供できます。
@@ -59,7 +59,7 @@ ms.locfileid: "48906967"
 
 ## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>トピックの管理機能のトピックセンターを使用するためのアクセス許可
 
-トピックセンターの [トピックの管理] セクションで作業するには、必要なアクセス許可を持っている必要があります。 管理者は、 [ナレッジマネージメントのセットアップ](set-up-knowledge-network.md)中にこれらのアクセス許可をユーザーに割り当てることができます。または、管理者が Microsoft 365 管理センターを使用して、新しいユーザーを [追加](give-user-permissions-to-the-topic-center.md) することもできます。
+トピックセンターの [トピックの管理] セクションで作業するには、必要なアクセス許可を持っている必要があります。 管理者は、 [ナレッジマネージメントのセットアップ](set-up-topic-experiences.md)中にこれらのアクセス許可をユーザーに割り当てることができます。または、管理者が Microsoft 365 管理センターを使用して、新しいユーザーを [追加](give-user-permissions-to-the-topic-center.md) することもできます。
 
 トピックセンターのユーザーには、次の2つのアクセス許可のセットを与えることができます。
 

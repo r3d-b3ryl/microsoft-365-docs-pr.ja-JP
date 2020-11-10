@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
-ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906909"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988716"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -164,7 +164,7 @@ Microsoft 365 では、組み合わされた強力な機能により、組織内
 * **Microsoft Information Protection (MIP)** は、機密データをユーザー ベースで分類、および自動的に分類します。
 * **Office 365 データ損失防止 (DLP)** は、機密データの種類 (つまり、正規表現) とキーワード、およびポリシー適用を使用して、機密データを自動的に特定します。
 
-**[Microsoft Information Protection (MIP)](../compliance/protect-information.md)** を使用すると、組織は秘密度ラベルを使用してドキュメントやメールをインテリジェントに分類できます。 秘密度ラベルは、ユーザーが Microsoft Office アプリケーションのドキュメントや Outlook のメールに手動で適用できます。 ラベルは、ドキュメントのマーク付け、暗号化による保護、権限管理の実施を自動的に適用できます。 また、機密データを自動的に見つけて分類するためのキーワードや機密データの種類 (クレジット カード番号、社会保険番号、ID 番号など) を使用するポリシーを構成することにより、秘密度ラベルを自動的に適用することもできます。
+**[Microsoft Information Protection (MIP)](../compliance/information-protection.md)** を使用すると、組織は秘密度ラベルを使用してドキュメントやメールをインテリジェントに分類できます。 秘密度ラベルは、ユーザーが Microsoft Office アプリケーションのドキュメントや Outlook のメールに手動で適用できます。 ラベルは、ドキュメントのマーク付け、暗号化による保護、権限管理の実施を自動的に適用できます。 また、機密データを自動的に見つけて分類するためのキーワードや機密データの種類 (クレジット カード番号、社会保険番号、ID 番号など) を使用するポリシーを構成することにより、秘密度ラベルを自動的に適用することもできます。
 
 さらに、単純なパターン マッチングやコンテンツ内の要素ではなく、コンテンツに基づいて機密データを特定するために機械学習モデルを使用する、"トレーニング可能な分類子" も提供されています。 分類するコンテンツの大量の例を分類子に教えることにより、コンテンツの種類を特定する方法を学習させます。 分類子をトレーニングするには、まず特定のカテゴリのコンテンツの例を与えます。 これらの例から学習した後に、一致する例と一致しない例を混ぜたものをモデルに与えて、モデルをテストします。 分類子は、与えられた例がそのカテゴリに該当するかどうかを予測します。 その後、人が結果を確認し、陽性、陰性、偽陽性、偽陰性に仕分けし、分類子の予測の正確性を高めます。 トレーニングされた分類子が公開されると、分類子は Microsoft SharePoint Online、Exchange Online、OneDrive for Business のコンテンツを処理し、コンテンツを自動的に分類します。
 

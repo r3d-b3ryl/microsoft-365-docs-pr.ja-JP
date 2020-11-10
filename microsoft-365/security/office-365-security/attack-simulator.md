@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、アタックシミュレータを使用して、Microsoft 365 E5 または Microsoft Defender for Office 365 プラン2の組織で、シミュレートされたフィッシングおよびパスワード攻撃を実行する方法を学習できます。
-ms.openlocfilehash: b7d04b3c81791bfc107b48176373ffc84fc8f6c5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845998"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988566"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のアタックシミュレータ
 
@@ -35,6 +35,9 @@ ms.locfileid: "48845998"
 
 > [!NOTE]
 > アタックシミュレーションおよびトレーニング関連データは、Microsoft 365 サービスの他の顧客データと共に保存されます。 詳細については、「 [Microsoft 365 データの保存場所](/microsoft-365/enterprise/o365-data-locations)」を参照してください。
+
+> [!TIP]
+> 攻撃シミュレーショントレーニングは、Microsoft 365 セキュリティセンターのパブリックプレビューで利用できます。 詳細について [は、「Microsoft Defender For Office 365 を使用してフィッシング攻撃をシミュレート](attack-simulation-training.md) する」をご覧ください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 

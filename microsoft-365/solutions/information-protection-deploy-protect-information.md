@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンスの機能を展開し、個人情報を保護します。
-ms.openlocfilehash: 97c34ca236ea4be98b9412518788630732259d5a
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f17568c5a19446644cfb7ee64aac3e0f9eae5793
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377153"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988484"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>情報をデータプライバシーの規則に従って保護する
 
@@ -65,7 +65,7 @@ Microsoft 365 で情報保護スキームの使用を開始するには、次の
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>Microsoft 365 で情報保護を管理する
 
-Microsoft [情報保護ソリューション](../compliance/protect-information.md) には、microsoft 365、microsoft Azure、および microsoft Windows にわたるさまざまな統合機能が含まれています。 Microsoft 365 では、情報保護ソリューションには次のものが含まれています。
+Microsoft [情報保護ソリューション](../compliance/information-protection.md) には、microsoft 365、microsoft Azure、および microsoft Windows にわたるさまざまな統合機能が含まれています。 Microsoft 365 では、情報保護ソリューションには次のものが含まれています。
 
 - [カスタマー キーによるサービスの暗号化](../compliance/customer-key-overview.md)
 - [機密情報の種類](../compliance/what-the-sensitive-information-types-look-for.md) (「 [データプライバシーのリスクを評価し機密アイテムを識別](information-protection-deploy-assess.md)する」の記事を参照)
@@ -144,7 +144,7 @@ Microsoft 365 コンプライアンスセンターで [機密ラベル](../compl
 これらのコンテナーのコンテンツを保護するには、次のラベル設定を使用します。
 
 - Microsoft 365 グループに接続されたチームサイトのプライバシー (公開または非公開)
-- 外部ユーザーアクセス
+- 外部ユーザーのアクセス
 - 非管理対象デバイスからのアクセス
 
 データのプライバシーを保護するために、機密性の高い個人データを含むコンテンツを格納するために使用されるコンテナーの外部共有を禁止するには、データを含むファイルをプライベートとしてマークし、管理されたデバイスを必要とします。

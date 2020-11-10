@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906921"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988740"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>トピックセンターのトピックを操作する (プレビュー)
 
@@ -28,7 +28,7 @@ ms.locfileid: "48906921"
 
 ## <a name="requirements"></a>Requirements
 
-トピックセンターで作業するには、必要なアクセス許可を持っている必要があります。 管理者は、 [ナレッジ管理のセットアップ](set-up-knowledge-network.md)時に、ユーザーを追加したり、 [後](give-user-permissions-to-the-topic-center.md)で新しいユーザーを追加したりできます。
+トピックセンターで作業するには、必要なアクセス許可を持っている必要があります。 管理者は、 [ナレッジ管理のセットアップ](set-up-topic-experiences.md)時に、ユーザーを追加したり、 [後](give-user-permissions-to-the-topic-center.md)で新しいユーザーを追加したりできます。
 
 トピックセンターのユーザーには、次の2つのアクセス許可のセットを与えることができます。
 
@@ -72,7 +72,7 @@ ms.locfileid: "48906921"
 3. 拒否することもできます。
 
 ## <a name="review-published-topics"></a>公開されたトピックを確認する
-公開されたトピックを編集して、speific 情報がページの encountrs の方に常に表示されるようにしました。 手動で作成したトピックはここに表示されます。
+公開されたトピックは、ページを見つけた人に対して特定の情報が常に表示されるように編集されています。 手動で作成したトピックはここに表示されます。
 
    
 ## <a name="create-a-new-topic"></a>新しいトピックを作成する

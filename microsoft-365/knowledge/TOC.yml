@@ -11,6 +11,6 @@
 - name: セットアップの概要
   items:
     - name: ナレッジ管理の設定
-      href: set-up-knowledge-network.md
+      href: set-up-topic-experiences.md
     - name: ナレッジマネージメントネットワークを管理する
-      href: manage-knowledge-network.md
+      href: topic-experiences-discovery.md

@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Project Cortex のナレッジ管理の概要。
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906943"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988844"
 ---
 # <a name="knowledge-management-overview-preview"></a>ナレッジ管理の概要 (プレビュー)
 
@@ -75,7 +75,7 @@ Microsoft 365 管理センターの管理者コントロールを使用すると
 - トピックセンターでトピックを確認または拒否することができるユーザーを制御します。
 - トピックセンターでトピックを作成および編集できるユーザーを制御します。
 
-詳細については [、「ナレッジネットワークの管理](manage-knowledge-network.md) 」を参照してください。 
+詳細については [、「ナレッジネットワークの管理](topic-experiences-discovery.md) 」を参照してください。 
 
 ## <a name="topic-curation--feedback"></a>トピック curation フィードバック
 
@@ -87,5 +87,5 @@ AI は、環境内で変更が発生したときに、トピックを改善す�
 
 
 ## <a name="see-also"></a>関連項目
-[ナレッジ管理の設定](set-up-knowledge-network.md)</br>
+[ナレッジ管理の設定](set-up-topic-experiences.md)</br>
 [トピックセンターの概要](topic-center-overview.md)
