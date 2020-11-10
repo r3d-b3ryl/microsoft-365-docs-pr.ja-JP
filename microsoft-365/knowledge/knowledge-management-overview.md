@@ -11,81 +11,81 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Project Cortex のナレッジ管理の概要。
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906943"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988844"
 ---
-# <a name="knowledge-management-overview-preview"></a><span data-ttu-id="a9a4b-103">ナレッジ管理の概要 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="a9a4b-103">Knowledge management Overview (Preview)</span></span>
+# <a name="knowledge-management-overview-preview"></a><span data-ttu-id="56c19-103">ナレッジ管理の概要 (プレビュー)</span><span class="sxs-lookup"><span data-stu-id="56c19-103">Knowledge management Overview (Preview)</span></span>
 
 > [!Note] 
-> <span data-ttu-id="a9a4b-104">この記事の内容は、Project Cortex のプライベートプレビュー用です。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="a9a4b-105">[Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)</span><span class="sxs-lookup"><span data-stu-id="a9a4b-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+> <span data-ttu-id="56c19-104">この記事の内容は、Project Cortex のプライベートプレビュー用です。</span><span class="sxs-lookup"><span data-stu-id="56c19-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="56c19-105">[Project Cortexについてもっと理解しよう](https://aka.ms/projectcortex)</span><span class="sxs-lookup"><span data-stu-id="56c19-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
 
-<span data-ttu-id="a9a4b-106">ナレッジ管理では、microsoft AI テクノロジ、Microsoft 365、Delve、検索、およびその他のコンポーネントとサービスを使用して、Microsoft 365 環境でナレッジネットワークを構築します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-106">Knowledge management uses Microsoft AI technology, Microsoft 365, Delve, Search, and other components and services to build a knowledge network in your Microsoft 365 environment.</span></span> 
+<span data-ttu-id="56c19-106">ナレッジ管理では、microsoft AI テクノロジ、Microsoft 365、Delve、検索、およびその他のコンポーネントとサービスを使用して、Microsoft 365 環境でナレッジネットワークを構築します。</span><span class="sxs-lookup"><span data-stu-id="56c19-106">Knowledge management uses Microsoft AI technology, Microsoft 365, Delve, Search, and other components and services to build a knowledge network in your Microsoft 365 environment.</span></span> 
 
    ![ナレッジ管理フロー](../media/content-understanding/knowledge-management-flowchart.png) </br> 
 
-<span data-ttu-id="a9a4b-108">これは、Outlook、Teams、SharePoint など、毎日使用するアプリでユーザーに情報を配信することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-108">It's goal is to deliver information to you users in apps they use everyday, such as Outlook, Teams, and SharePoint.</span></span>
+<span data-ttu-id="56c19-108">これは、Outlook、Teams、SharePoint など、毎日使用するアプリでユーザーに情報を配信することを目的としています。</span><span class="sxs-lookup"><span data-stu-id="56c19-108">It's goal is to deliver information to you users in apps they use everyday, such as Outlook, Teams, and SharePoint.</span></span>
 
-<span data-ttu-id="a9a4b-109">たとえば、ユーザーの電子メール、SharePoint サイト、または Teams の会話に、わかりやすい用語が表示されるようにします。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-109">For example, users see unfamiliar terms in their emails, SharePoint sites, or in Teams conversations, that they want to know more about.</span></span> <span data-ttu-id="a9a4b-110">ナレッジ管理は、AI を使用してこれらの **トピック** を自動的に検索して識別し、それらに関する情報 (短い説明、トピックの対象者の専門家、およびそれに関連するサイト、ファイル、ページなど) をコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-110">Knowledge management uses AI to automatically searches for and identifies these **topics** , and compiles information about them, such as a short description, subject matter experts on the topic, and sites, files, and pages that are related to it.</span></span> <span data-ttu-id="a9a4b-111">必要に応じて、トピック情報を更新するように選択できます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-111">You can choose to update the topic information as needed.</span></span> <span data-ttu-id="a9a4b-112">その後、ユーザーがトピックを利用できるようにすることができます。つまり、Outlook、Teams、SharePoint などのアプリに表示されるトピックのすべてのインスタンスについて、テキストが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-112">You can then make the topics available to your users, which means that for every instance of the topic that appears in apps such as Outlook, Teams, and SharePoint, the text will be highlighted.</span></span> <span data-ttu-id="a9a4b-113">トピックの詳細については、トピックを選択して詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-113">Users can choose to select the topic to learn more about it through the topic details.</span></span>
-
-
-## <a name="topic-indexing"></a><span data-ttu-id="a9a4b-114">トピックのインデックス作成</span><span class="sxs-lookup"><span data-stu-id="a9a4b-114">Topic indexing</span></span>
-
-<span data-ttu-id="a9a4b-115">ナレッジ管理では、Microsoft AI テクノロジを使用して Office 365 環境の **トピック** を識別します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-115">Knowledge Management uses Microsoft AI technology to identify **topics** in your Office 365 environment.</span></span>
-
-<span data-ttu-id="a9a4b-116">トピックは、意味のある、または重要な語句または用語です。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-116">A topic is a phrase or term that is organizationally significant or important.</span></span> <span data-ttu-id="a9a4b-117">組織にとっては特定の意味があります。また、それに関連するリソースがあります。これにより、ユーザーはそれを理解し、より詳細な情報を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-117">It has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it.</span></span>
-
-<span data-ttu-id="a9a4b-118">トピックが特定されると、トピックのインデックス作成によって収集された情報を含むトピック **ページ** が作成されます。たとえば、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-118">When a topic is identified, a **topic page** is created for it that contains information that was gathered through topic indexing, such as:</span></span>
-
-- <span data-ttu-id="a9a4b-119">代替名または頭字語。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-119">Alternate names and/or acronyms.</span></span>
-- <span data-ttu-id="a9a4b-120">トピックの簡単な説明。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-120">A short description of the topic.</span></span>
-- <span data-ttu-id="a9a4b-121">トピックについて精通している可能性があるユーザー。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-121">Users who might be knowledgeable about the topic.</span></span>
-- <span data-ttu-id="a9a4b-122">トピックに関連するファイル、ページ、およびサイト。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-122">Files, pages, and sites that are related to the topic.</span></span>
+<span data-ttu-id="56c19-109">たとえば、ユーザーの電子メール、SharePoint サイト、または Teams の会話に、わかりやすい用語が表示されるようにします。</span><span class="sxs-lookup"><span data-stu-id="56c19-109">For example, users see unfamiliar terms in their emails, SharePoint sites, or in Teams conversations, that they want to know more about.</span></span> <span data-ttu-id="56c19-110">ナレッジ管理は、AI を使用してこれらの **トピック** を自動的に検索して識別し、それらに関する情報 (短い説明、トピックの対象者の専門家、およびそれに関連するサイト、ファイル、ページなど) をコンパイルします。</span><span class="sxs-lookup"><span data-stu-id="56c19-110">Knowledge management uses AI to automatically searches for and identifies these **topics** , and compiles information about them, such as a short description, subject matter experts on the topic, and sites, files, and pages that are related to it.</span></span> <span data-ttu-id="56c19-111">必要に応じて、トピック情報を更新するように選択できます。</span><span class="sxs-lookup"><span data-stu-id="56c19-111">You can choose to update the topic information as needed.</span></span> <span data-ttu-id="56c19-112">その後、ユーザーがトピックを利用できるようにすることができます。つまり、Outlook、Teams、SharePoint などのアプリに表示されるトピックのすべてのインスタンスについて、テキストが強調表示されます。</span><span class="sxs-lookup"><span data-stu-id="56c19-112">You can then make the topics available to your users, which means that for every instance of the topic that appears in apps such as Outlook, Teams, and SharePoint, the text will be highlighted.</span></span> <span data-ttu-id="56c19-113">トピックの詳細については、トピックを選択して詳細を確認できます。</span><span class="sxs-lookup"><span data-stu-id="56c19-113">Users can choose to select the topic to learn more about it through the topic details.</span></span>
 
 
-## <a name="topic-discovery"></a><span data-ttu-id="a9a4b-123">トピックの検出</span><span class="sxs-lookup"><span data-stu-id="a9a4b-123">Topic discovery</span></span>
-<span data-ttu-id="a9a4b-124">トピックについては、「SharePoint ニュースとページのコンテンツ」に記載されているように、強調表示されています。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-124">When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted.</span></span> <span data-ttu-id="a9a4b-125">強調表示からトピックの概要を開きます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-125">Open the topic summary from the highlight.</span></span> <span data-ttu-id="a9a4b-126">概要のタイトルからトピックの詳細を開きます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-126">Open the topic details from the title of the summary.</span></span> <!--(msg for Efren: not sure if I should use discovery for this; we use discovered in-product for indexing?)--> <span data-ttu-id="a9a4b-127">前述のトピックは、ページの作成者によるトピックへの直接参照を使用して、自動的に識別されるか、ページに追加されています。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-127">The mentioned topic could be identified automatically or have been added to the page with a direct reference to the topic by the page author.</span></span>
+## <a name="topic-indexing"></a><span data-ttu-id="56c19-114">トピックのインデックス作成</span><span class="sxs-lookup"><span data-stu-id="56c19-114">Topic indexing</span></span>
 
-<span data-ttu-id="a9a4b-128">Microsoft Search を使用してトピックを検出することもできます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-128">You can also discover topics through Microsoft Search.</span></span>
+<span data-ttu-id="56c19-115">ナレッジ管理では、Microsoft AI テクノロジを使用して Office 365 環境の **トピック** を識別します。</span><span class="sxs-lookup"><span data-stu-id="56c19-115">Knowledge Management uses Microsoft AI technology to identify **topics** in your Office 365 environment.</span></span>
 
+<span data-ttu-id="56c19-116">トピックは、意味のある、または重要な語句または用語です。</span><span class="sxs-lookup"><span data-stu-id="56c19-116">A topic is a phrase or term that is organizationally significant or important.</span></span> <span data-ttu-id="56c19-117">組織にとっては特定の意味があります。また、それに関連するリソースがあります。これにより、ユーザーはそれを理解し、より詳細な情報を見つけることができます。</span><span class="sxs-lookup"><span data-stu-id="56c19-117">It has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it.</span></span>
 
-## <a name="topic-management"></a><span data-ttu-id="a9a4b-129">トピック管理</span><span class="sxs-lookup"><span data-stu-id="a9a4b-129">Topic management</span></span>
+<span data-ttu-id="56c19-118">トピックが特定されると、トピックのインデックス作成によって収集された情報を含むトピック **ページ** が作成されます。たとえば、次のようになります。</span><span class="sxs-lookup"><span data-stu-id="56c19-118">When a topic is identified, a **topic page** is created for it that contains information that was gathered through topic indexing, such as:</span></span>
 
-<span data-ttu-id="a9a4b-130">トピック管理は、組織の **トピックセンター** で行われます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-130">Topic management is done in your organization's **topic center**.</span></span> <span data-ttu-id="a9a4b-131">トピックセンターサイトはセットアップ時に作成され、組織のためのナレッジセンターとして機能します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-131">The topic center site is created during setup and serves as your center of knowledge for your organization.</span></span> <span data-ttu-id="a9a4b-132">ここには、環境で検出されたすべてのトピックの一覧と、これらのトピックに対して作成されたすべてのトピックページが含まれています。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-132">It will contain a list of all topics that were discovered in your environment, as well as all topic pages that were created for these topics.</span></span> 
-
-<span data-ttu-id="a9a4b-133">適切なアクセス許可を付与されたユーザーは、トピックセンターで次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-133">Users who are provided the correct permissions will be able to do the following in the topic center:</span></span>
-
-- <span data-ttu-id="a9a4b-134">テナントで検出されたトピックを確認または拒否します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-134">Confirm or reject topics that were discovered in your tenant.</span></span>
-- <span data-ttu-id="a9a4b-135">必要に応じて、新しいトピックを手動で作成します (たとえば、十分な情報が得られなかった場合は、それを AI で検出するため)。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-135">Create new topics manually as needed (for example, if not enough information was provided for it to be discovered through AI).</span></span>
-- <span data-ttu-id="a9a4b-136">既存のトピックページを編集します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-136">Edit existing topic pages.</span></span></br>
-
-<span data-ttu-id="a9a4b-137">詳細について [は、トピックセンターの「Work with topic](work-with-topics.md) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-137">See [Work with topic in the topic center](work-with-topics.md) for more information.</span></span>  
+- <span data-ttu-id="56c19-119">代替名または頭字語。</span><span class="sxs-lookup"><span data-stu-id="56c19-119">Alternate names and/or acronyms.</span></span>
+- <span data-ttu-id="56c19-120">トピックの簡単な説明。</span><span class="sxs-lookup"><span data-stu-id="56c19-120">A short description of the topic.</span></span>
+- <span data-ttu-id="56c19-121">トピックについて精通している可能性があるユーザー。</span><span class="sxs-lookup"><span data-stu-id="56c19-121">Users who might be knowledgeable about the topic.</span></span>
+- <span data-ttu-id="56c19-122">トピックに関連するファイル、ページ、およびサイト。</span><span class="sxs-lookup"><span data-stu-id="56c19-122">Files, pages, and sites that are related to the topic.</span></span>
 
 
-## <a name="admin-controls"></a><span data-ttu-id="a9a4b-138">管理コントロール</span><span class="sxs-lookup"><span data-stu-id="a9a4b-138">Admin controls</span></span>
+## <a name="topic-discovery"></a><span data-ttu-id="56c19-123">トピックの検出</span><span class="sxs-lookup"><span data-stu-id="56c19-123">Topic discovery</span></span>
+<span data-ttu-id="56c19-124">トピックについては、「SharePoint ニュースとページのコンテンツ」に記載されているように、強調表示されています。</span><span class="sxs-lookup"><span data-stu-id="56c19-124">When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted.</span></span> <span data-ttu-id="56c19-125">強調表示からトピックの概要を開きます。</span><span class="sxs-lookup"><span data-stu-id="56c19-125">Open the topic summary from the highlight.</span></span> <span data-ttu-id="56c19-126">概要のタイトルからトピックの詳細を開きます。</span><span class="sxs-lookup"><span data-stu-id="56c19-126">Open the topic details from the title of the summary.</span></span> <!--(msg for Efren: not sure if I should use discovery for this; we use discovered in-product for indexing?)--> <span data-ttu-id="56c19-127">前述のトピックは、ページの作成者によるトピックへの直接参照を使用して、自動的に識別されるか、ページに追加されています。</span><span class="sxs-lookup"><span data-stu-id="56c19-127">The mentioned topic could be identified automatically or have been added to the page with a direct reference to the topic by the page author.</span></span>
 
-<span data-ttu-id="a9a4b-139">Microsoft 365 管理センターの管理者コントロールを使用すると、ナレッジネットワークを管理できます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-139">Admin controls in the Microsoft 365 admin center  allow you to manage your knowledge network.</span></span> <span data-ttu-id="a9a4b-140">これにより、Microsoft 365 グローバルまたは SharePoint 管理者が次のことを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-140">They allow a Microsoft 365 global or SharePoint admin to:</span></span>
-
-- <span data-ttu-id="a9a4b-141">組織内のどのユーザーが自分のクライアントアプリまたは SharePoint 検索結果でトピックを参照できるようにするかを制御します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-141">Control which users in your organization are allowed to see topics in their client apps or in SharePoint search results.</span></span>
-- <span data-ttu-id="a9a4b-142">トピックを検索するためにどの SharePoint サイトをクロールするかを制御します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-142">Control which SharePoint sites will be crawled to search for topics.</span></span>
-- <span data-ttu-id="a9a4b-143">トピックとして使用しない特定の用語を除外するようにトピック検出を構成します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-143">Configure topic discovery to exclude specific terms that you don't want to be a topic.</span></span>
-- <span data-ttu-id="a9a4b-144">トピックセンターでトピックを確認または拒否することができるユーザーを制御します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-144">Control which users can to confirm or reject topics in the topic center.</span></span>
-- <span data-ttu-id="a9a4b-145">トピックセンターでトピックを作成および編集できるユーザーを制御します。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-145">Control which users can create and edit topics in the topic center.</span></span>
-
-<span data-ttu-id="a9a4b-146">詳細については [、「ナレッジネットワークの管理](manage-knowledge-network.md) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-146">See [Manage your knowledge network](manage-knowledge-network.md) for more information.</span></span> 
-
-## <a name="topic-curation--feedback"></a><span data-ttu-id="a9a4b-147">トピック curation フィードバック</span><span class="sxs-lookup"><span data-stu-id="a9a4b-147">Topic curation & feedback</span></span>
-
-<span data-ttu-id="a9a4b-148">AI は、環境内で変更が発生したときに、トピックを改善するための提案を継続的に提供していきます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-148">AI will continually work to provide you suggestions to improve your topics as changes occur in your environment.</span></span>
-
-<span data-ttu-id="a9a4b-149">ユーザーが毎日の作業でトピックを参照できるようにするには、それらのユーザーに対して推奨事項を提案することができます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-149">Users who you allow access to see topics in their daily work are allowed to make suggestions to improve them.</span></span> <span data-ttu-id="a9a4b-150">たとえば、ユーザーがトピックページを表示して、正しくない情報や追加が必要な情報を確認すると、トピックページにあるリンクによって情報を直接編集できます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-150">For example, if a user views the topic page and sees information that is incorrect or needs to be added, a link on the topic page allows them to edit the information directly.</span></span> <span data-ttu-id="a9a4b-151">もう1つの例として、ユーザーが SharePoint ニュースページで強調表示を表示する場合は、強調表示が適切かどうかを確認する質問や、推奨されるトピックが組織に適しているかどうかを確認する質問が表示されます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-151">Another example, if a user views a a highlight on a SharePoint news page, you will find questions asking whether or not the highlight is appropriate or the suggested topic is appropriate for your organization.</span></span> <span data-ttu-id="a9a4b-152">この答えは、トピックの概要とトピックの詳細に表示されている内容を特定するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-152">Your answer will help determine what's shown on topic summaries and in topic details.</span></span>
-
-<span data-ttu-id="a9a4b-153">また、適切なアクセス許可を持つユーザーは、トピックに関連する Yammer の会話などのアイテムにタグを付けて、特定のトピックに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="a9a4b-153">Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic.</span></span> <!--(msg for Efren: changed to Yammer, because we will not have shipped Teams yet)-->
+<span data-ttu-id="56c19-128">Microsoft Search を使用してトピックを検出することもできます。</span><span class="sxs-lookup"><span data-stu-id="56c19-128">You can also discover topics through Microsoft Search.</span></span>
 
 
-## <a name="see-also"></a><span data-ttu-id="a9a4b-154">関連項目</span><span class="sxs-lookup"><span data-stu-id="a9a4b-154">See also</span></span>
-[<span data-ttu-id="a9a4b-155">ナレッジ管理の設定</span><span class="sxs-lookup"><span data-stu-id="a9a4b-155">Set up knowledge management</span></span>](set-up-knowledge-network.md)</br>
-[<span data-ttu-id="a9a4b-156">トピックセンターの概要</span><span class="sxs-lookup"><span data-stu-id="a9a4b-156">Topic center overview</span></span>](topic-center-overview.md)
+## <a name="topic-management"></a><span data-ttu-id="56c19-129">トピック管理</span><span class="sxs-lookup"><span data-stu-id="56c19-129">Topic management</span></span>
+
+<span data-ttu-id="56c19-130">トピック管理は、組織の **トピックセンター** で行われます。</span><span class="sxs-lookup"><span data-stu-id="56c19-130">Topic management is done in your organization's **topic center**.</span></span> <span data-ttu-id="56c19-131">トピックセンターサイトはセットアップ時に作成され、組織のためのナレッジセンターとして機能します。</span><span class="sxs-lookup"><span data-stu-id="56c19-131">The topic center site is created during setup and serves as your center of knowledge for your organization.</span></span> <span data-ttu-id="56c19-132">ここには、環境で検出されたすべてのトピックの一覧と、これらのトピックに対して作成されたすべてのトピックページが含まれています。</span><span class="sxs-lookup"><span data-stu-id="56c19-132">It will contain a list of all topics that were discovered in your environment, as well as all topic pages that were created for these topics.</span></span> 
+
+<span data-ttu-id="56c19-133">適切なアクセス許可を付与されたユーザーは、トピックセンターで次の操作を実行できます。</span><span class="sxs-lookup"><span data-stu-id="56c19-133">Users who are provided the correct permissions will be able to do the following in the topic center:</span></span>
+
+- <span data-ttu-id="56c19-134">テナントで検出されたトピックを確認または拒否します。</span><span class="sxs-lookup"><span data-stu-id="56c19-134">Confirm or reject topics that were discovered in your tenant.</span></span>
+- <span data-ttu-id="56c19-135">必要に応じて、新しいトピックを手動で作成します (たとえば、十分な情報が得られなかった場合は、それを AI で検出するため)。</span><span class="sxs-lookup"><span data-stu-id="56c19-135">Create new topics manually as needed (for example, if not enough information was provided for it to be discovered through AI).</span></span>
+- <span data-ttu-id="56c19-136">既存のトピックページを編集します。</span><span class="sxs-lookup"><span data-stu-id="56c19-136">Edit existing topic pages.</span></span></br>
+
+<span data-ttu-id="56c19-137">詳細について [は、トピックセンターの「Work with topic](work-with-topics.md) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="56c19-137">See [Work with topic in the topic center](work-with-topics.md) for more information.</span></span>  
+
+
+## <a name="admin-controls"></a><span data-ttu-id="56c19-138">管理コントロール</span><span class="sxs-lookup"><span data-stu-id="56c19-138">Admin controls</span></span>
+
+<span data-ttu-id="56c19-139">Microsoft 365 管理センターの管理者コントロールを使用すると、ナレッジネットワークを管理できます。</span><span class="sxs-lookup"><span data-stu-id="56c19-139">Admin controls in the Microsoft 365 admin center  allow you to manage your knowledge network.</span></span> <span data-ttu-id="56c19-140">これにより、Microsoft 365 グローバルまたは SharePoint 管理者が次のことを行うことができます。</span><span class="sxs-lookup"><span data-stu-id="56c19-140">They allow a Microsoft 365 global or SharePoint admin to:</span></span>
+
+- <span data-ttu-id="56c19-141">組織内のどのユーザーが自分のクライアントアプリまたは SharePoint 検索結果でトピックを参照できるようにするかを制御します。</span><span class="sxs-lookup"><span data-stu-id="56c19-141">Control which users in your organization are allowed to see topics in their client apps or in SharePoint search results.</span></span>
+- <span data-ttu-id="56c19-142">トピックを検索するためにどの SharePoint サイトをクロールするかを制御します。</span><span class="sxs-lookup"><span data-stu-id="56c19-142">Control which SharePoint sites will be crawled to search for topics.</span></span>
+- <span data-ttu-id="56c19-143">トピックとして使用しない特定の用語を除外するようにトピック検出を構成します。</span><span class="sxs-lookup"><span data-stu-id="56c19-143">Configure topic discovery to exclude specific terms that you don't want to be a topic.</span></span>
+- <span data-ttu-id="56c19-144">トピックセンターでトピックを確認または拒否することができるユーザーを制御します。</span><span class="sxs-lookup"><span data-stu-id="56c19-144">Control which users can to confirm or reject topics in the topic center.</span></span>
+- <span data-ttu-id="56c19-145">トピックセンターでトピックを作成および編集できるユーザーを制御します。</span><span class="sxs-lookup"><span data-stu-id="56c19-145">Control which users can create and edit topics in the topic center.</span></span>
+
+<span data-ttu-id="56c19-146">詳細については [、「ナレッジネットワークの管理](topic-experiences-discovery.md) 」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="56c19-146">See [Manage your knowledge network](topic-experiences-discovery.md) for more information.</span></span> 
+
+## <a name="topic-curation--feedback"></a><span data-ttu-id="56c19-147">トピック curation フィードバック</span><span class="sxs-lookup"><span data-stu-id="56c19-147">Topic curation & feedback</span></span>
+
+<span data-ttu-id="56c19-148">AI は、環境内で変更が発生したときに、トピックを改善するための提案を継続的に提供していきます。</span><span class="sxs-lookup"><span data-stu-id="56c19-148">AI will continually work to provide you suggestions to improve your topics as changes occur in your environment.</span></span>
+
+<span data-ttu-id="56c19-149">ユーザーが毎日の作業でトピックを参照できるようにするには、それらのユーザーに対して推奨事項を提案することができます。</span><span class="sxs-lookup"><span data-stu-id="56c19-149">Users who you allow access to see topics in their daily work are allowed to make suggestions to improve them.</span></span> <span data-ttu-id="56c19-150">たとえば、ユーザーがトピックページを表示して、正しくない情報や追加が必要な情報を確認すると、トピックページにあるリンクによって情報を直接編集できます。</span><span class="sxs-lookup"><span data-stu-id="56c19-150">For example, if a user views the topic page and sees information that is incorrect or needs to be added, a link on the topic page allows them to edit the information directly.</span></span> <span data-ttu-id="56c19-151">もう1つの例として、ユーザーが SharePoint ニュースページで強調表示を表示する場合は、強調表示が適切かどうかを確認する質問や、推奨されるトピックが組織に適しているかどうかを確認する質問が表示されます。</span><span class="sxs-lookup"><span data-stu-id="56c19-151">Another example, if a user views a a highlight on a SharePoint news page, you will find questions asking whether or not the highlight is appropriate or the suggested topic is appropriate for your organization.</span></span> <span data-ttu-id="56c19-152">この答えは、トピックの概要とトピックの詳細に表示されている内容を特定するのに役立ちます。</span><span class="sxs-lookup"><span data-stu-id="56c19-152">Your answer will help determine what's shown on topic summaries and in topic details.</span></span>
+
+<span data-ttu-id="56c19-153">また、適切なアクセス許可を持つユーザーは、トピックに関連する Yammer の会話などのアイテムにタグを付けて、特定のトピックに追加することができます。</span><span class="sxs-lookup"><span data-stu-id="56c19-153">Additionally, users with proper permissions can tag items such as Yammer conversation that are relevant to a topic, and add them to a specific topic.</span></span> <!--(msg for Efren: changed to Yammer, because we will not have shipped Teams yet)-->
+
+
+## <a name="see-also"></a><span data-ttu-id="56c19-154">関連項目</span><span class="sxs-lookup"><span data-stu-id="56c19-154">See also</span></span>
+[<span data-ttu-id="56c19-155">ナレッジ管理の設定</span><span class="sxs-lookup"><span data-stu-id="56c19-155">Set up knowledge management</span></span>](set-up-topic-experiences.md)</br>
+[<span data-ttu-id="56c19-156">トピックセンターの概要</span><span class="sxs-lookup"><span data-stu-id="56c19-156">Topic center overview</span></span>](topic-center-overview.md)
