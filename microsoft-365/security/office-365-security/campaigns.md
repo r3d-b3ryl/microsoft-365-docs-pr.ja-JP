@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft Defender for Office 365 のキャンペーンビューについて説明します。
-ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941357"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948483"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のキャンペーンビュー
 
@@ -85,7 +85,7 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
 
 - **型** : この値は、 **フィッシング** または **マルウェア** です。
 
-- **Subtype** : この値には、キャンペーンの詳細が含まれます。 例:
+- **Subtype** : この値には、キャンペーンの詳細が含まれます。 以下に例を示します。
   - **フィッシング** : 使用可能な場合は、このキャンペーンによって phished されているブランド。 たとえば、、、、、 `Microsoft` `365` 、など `Unknown` `Outlook` `DocuSign` です。
   - **マルウェア** : たとえば、 `HTML/PHISH` またはのように `HTML/<MalwareFamilyName>` なります。
 
@@ -115,9 +115,9 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
 
 ビューをさらにフィルター処理するには、[ **キャンペーンの種類** ] ボタンをクリックして、選択を行い、[最新の情報に **更新** ] をクリックすることで、複数の値を設定した単一のプロパティを実行できます。
 
-次の一覧では、使用可能なキャンペーンプロパティについて説明します。
+[ **キャンペーンの種類** ] ボタンに表示されるフィルター処理可能なキャンペーンプロパティについては、次のリストで説明します。
 
-- 基本
+- **Basic** :
   - **キャンペーンの種類** : **マルウェア** または **フィッシング** を選択します。 選択範囲をクリアすると、両方を選択したときと同じ結果になります。
   - **キャンペーン名**
   - **キャンペーンサブタイプ**
@@ -127,23 +127,26 @@ Microsoft は、サービス全体にわたる大量のフィッシング対策�
   - **[件名]**
   - **添付ファイルの名前**
   - **マルウェアファミリ**
+  - **タグ** : 指定したユーザータグ (優先度アカウントを含む) が適用されたユーザーまたはグループ。 ユーザータグの詳細については、「 [user tags](user-tags.md)」を参照してください。
+  - **システムの上書き**
   - **配信アクション**
+  - **追加のアクション**
+  - **方向性**
   - **検出テクノロジ**
-  - **Tags**
+  - **元の配信場所**
+  - **最新の配信場所**
   - **システムの上書き**
 
-- 詳細設定
+- **詳細** :
   - **インターネットメッセージ id** : メッセージヘッダーの **メッセージ id** ヘッダーフィールドで使用できます。 値の例を次に示し `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` ます (角かっこに注意してください)。
   - [ **ネットワークメッセージ id** ]: メッセージヘッダーの [-- **Exchange 組織-ネットワークメッセージ id** ] ヘッダーフィールドで使用可能な GUID 値。
   - [ **Sender IP (送信者の IP)** ]
   - **ATTACHMENT SHA256** : Windows でファイルの SHA256 ハッシュ値を検索するには、コマンドプロンプトで次のコマンドを実行 `certutil.exe -hashfile "<Path>\<Filename>" SHA256` します。
-
   - **クラスター ID**
-
   - **アラートポリシー ID**
+  - **ZAP URL 信号**
 
-- URL
-
+- **Url** :
   - **URL ドメイン**
   - **URL のドメインとパス**
   - **URL**

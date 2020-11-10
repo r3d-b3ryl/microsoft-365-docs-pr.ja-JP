@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 6d0f090f9931e88566e37b038cc30375657019c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 4667f84cc3a2e34e6b5e85640c84f090d0b0f1df
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487674"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948471"
 ---
 # <a name="identity-and-device-access-configurations"></a>ID とデバイスのアクセス構成
 
@@ -71,9 +71,9 @@ Id とデバイスのアクセスの設定とポリシーは3層で推奨され�
 
 また、あらゆる業種が独自の特別な規制を用意しています。 考えられるすべてのセキュリティオプションの一覧、または各業種セグメントまたはジョブ機能に対する推奨事項の一覧を提供するのではなく、ニーズの粒度に基づいて適用可能な3つのセキュリティと保護の層について推奨事項が提供されています。
 
-- **ベースライン保護**: データを保護するための最小限の標準と、データにアクセスする id およびデバイスを設定することをお勧めします。 これらのベースライン推奨事項に従って、多くの組織のニーズを満たす強力な既定の保護を提供することができます。
-- **機密保護**: 一部のお客様は、より高いレベルで保護する必要があるデータのサブセットを持っているか、すべてのデータをより高いレベルで保護する必要がある場合があります。 Microsoft 365 環境のすべてまたは特定のデータセットに対して、強化された保護を適用することができます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。  
-- 厳しく**規制**されている組織の中には、非常に多くのデータがあり、取引の機密を構成したり、規制されたデータが含まれている場合があります。 Microsoft は、ID とデバイスの保護を追加するなど、組織がそのような要件を満たすための機能を提供しています。
+- **ベースライン保護** : データを保護するための最小限の標準と、データにアクセスする id およびデバイスを設定することをお勧めします。 これらのベースライン推奨事項に従って、多くの組織のニーズを満たす強力な既定の保護を提供することができます。
+- **機密保護** : 一部のお客様は、より高いレベルで保護する必要があるデータのサブセットを持っているか、すべてのデータをより高いレベルで保護する必要がある場合があります。 Microsoft 365 環境のすべてまたは特定のデータセットに対して、強化された保護を適用することができます。 機密データにアクセスする ID とデバイスはそれに相応しいレベルのセキュリティで保護することを推奨します。  
+- 厳しく **規制** されている組織の中には、非常に多くのデータがあり、取引の機密を構成したり、規制されたデータが含まれている場合があります。 Microsoft は、ID とデバイスの保護を追加するなど、組織がそのような要件を満たすための機能を提供しています。
 
 ![セキュリティコーン-特定のお客様 > 一部のお客様 >。 特定のアプリケーションに対する幅広いアプリケーション](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
@@ -81,7 +81,7 @@ Id とデバイスのアクセスの設定とポリシーは3層で推奨され�
 
 データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 たとえば、このガイダンスを実装する場合は、必ず同等のレベルでデータを保護してください。 
 
-**Microsoft 365 アーキテクチャモデルの id およびデバイス保護**は、どの機能が同等であるかを示しています。
+**Microsoft 365 アーキテクチャモデルの id およびデバイス保護** は、どの機能が同等であるかを示しています。
 
 [![Microsoft 365 ポスターの Id およびデバイス保護のサムネイル画像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  PDF とし[て表示する](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|PDF とし[てダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
@@ -157,7 +157,7 @@ Windows 10 for Microsoft 365 enterprise for enterprise は、Pc に推奨され�
 |:-------------------|:-------|:--------|:---------------|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワードの変更を強制する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
-|**Intune アプリケーション保護を強制する**|はい|はい|はい|
+|**Intune アプリケーション保護を強制する**|必要|必要|必要|
 |**組織が所有するデバイスの Intune 登録を強制する**|PC に準拠しているか、ドメインに参加している必要がありますが、独自のデバイス (BYOD) の電話とタブレットを許可します。|準拠しているまたはドメインに参加しているデバイスを必要とする|準拠しているまたはドメインに参加しているデバイスを必要とする|
 
 ## <a name="device-ownership"></a>デバイスの所有権
@@ -194,10 +194,8 @@ Microsoft では、意図しない構成が発生する可能性があるため�
 3. ゲストユーザーと外部ユーザーの条件付きアクセスポリシーを構成します。
 4. Microsoft Teams、Exchange Online、SharePoint などの Microsoft 365 クラウドアプリの条件付きアクセスポリシーを構成します。
 
-<!--
-After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
---> 
+Id とデバイスのアクセスを構成した後は、「 [azure ad 機能展開ガイド](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) 」を参照して、考慮すべき追加機能の段階的チェックリストと、アクセスの保護、監視、および監査を行う [Azure ad identity ガバナンス](https://docs.microsoft.com/azure/active-directory/governance/) に関する説明を参照してください。  
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [Id およびデバイスアクセスポリシーを実装するための前提条件](identity-access-prerequisites.md)

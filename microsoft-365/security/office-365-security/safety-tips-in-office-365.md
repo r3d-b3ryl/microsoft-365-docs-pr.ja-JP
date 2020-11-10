@@ -1,5 +1,5 @@
 ---
-title: メール メッセージの安全性に関するヒント
+title: 電子メール メッセージの安全性に関するヒント
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: EOP と Office 365 が、電子メールの上部に安全なヒントを追加することによって、スパム、フィッシング、およびマルウェアの防止をどのように保護するかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201985"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948459"
 ---
-# <a name="safety-tips-in-email-messages"></a>メール メッセージの安全性に関するヒント
+# <a name="safety-tips-in-email-messages"></a>電子メール メッセージの安全性に関するヒント
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -47,14 +47,6 @@ Outlook の安全のヒントは、安全のヒントが開かれ、メッセー
     ![緑の安全ヒントを示すスクリーンショット。](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     安全でないメッセージに加えて、信頼できる送信者からの有効なメッセージについても、緑色の安全ヒントを示しています。 電子メールのグリーンセーフヒントは、メッセージの送信者を確認し、安全であることを確認したことを意味します。 Microsoft では、多くの場合、頻繁にスプーフィングまたは偽装される金融機関やその他の信頼できる差出人のリストを保持しています。
-
-- フィルター処理なしのメール (灰色の安全ヒント)。
-
-    ![灰色の安全なヒントを示すスクリーンショット。](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    また、差出人セーフリストにある送信者からのメールの確認や、フィルターをバイパスするメールフロールールがある場合にも、メールのチェックをスキップしたことについてもお知らせします。
-
-    また、外部画像がブロックされている場合、つまりメッセージが受信トレイにあり、スパムではないが、ダウンロードしていない外部画像が含まれている場合にも、灰色の安全なヒントが表示されます。
 
 ## <a name="working-with-safety-tips"></a>安全に関するヒントの使用
 

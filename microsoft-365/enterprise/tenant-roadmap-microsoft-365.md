@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: Microsoft 365 用のテナントをセットアップするためのロードマップ。
-ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753968"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948399"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 のテナントロードマップ
 
@@ -33,7 +33,7 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 
 オンプレミスとリモートの両方のワーカーに対して Microsoft 365 へのアクセスのためにネットワークを最適化することを確認した後、次の大きなタスクでは、DNS ドメイン名、一般的なサービス、およびセキュリティで保護されたユーザーのサインインをサポートするその id インフラストラクチャに対して Microsoft 365 テナントを計画し、構成します。
 
-### <a name="plan"></a>計画
+### <a name="plan"></a>プラン
 
 テナントの実装を計画するには、次のようにします。
 
@@ -45,7 +45,7 @@ Microsoft 365 テナントを作成するときは、特定の地理的な場所
 - [Office 2007 および Office 2010 のアップグレードを計画する](plan-upgrade-previous-versions-office.md)
 - [テナントの分離について](microsoft-365-tenant-isolation-overview.md)
 
-### <a name="deploy"></a>展開
+### <a name="deploy"></a>展開する
 
 テナントを展開するには、次のようにします。 
 
@@ -66,9 +66,9 @@ Microsoft 365 Multi-Geo を使用すれば、組織はその組織の Microsoft 
 
 詳細については、「 [Microsoft 365 複数地域](microsoft-365-multi-geo.md)」を参照してください。
 
-## <a name="manage-multiple-microsoft-365-tenant"></a>複数の Microsoft 365 テナントを管理する 
+## <a name="manage-multiple-microsoft-365-tenants"></a>複数の Microsoft 365 テナントを管理する 
 
-Oガントの作成に単一のテナントがあると理想的ですが、複数のテナントを持つ多くの組織のうちの1つである場合があります。 その理由として、合併や買収、管理上の分離が必要な場合、または分散化を行う場合があります。
+Oガントの設定に単一のテナントがあると理想的ですが、複数のテナントを持つ多くの組織の1つである場合があります。 その理由として、合併や買収、管理上の分離が必要な場合、または分散化を行う場合があります。
 
 Microsoft 365 テナントが複数ある場合は、次の記事を参照してください。
 
@@ -76,6 +76,6 @@ Microsoft 365 テナントが複数ある場合は、次の記事を参照して
 - [テナント間でのメールボックスの移行](cross-tenant-mailbox-migration.md)
 - [テナントからテナントへの移行](microsoft-365-tenant-to-tenant-migrations.md)
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [サブスクリプション、ライセンス、アカウント、テナント](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)を使用して、テナントの計画を開始します。

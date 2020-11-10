@@ -1,5 +1,5 @@
 ---
-title: 準備評価ツールによって検出された問題を修正します。
+title: 準備評価ツールで見つかった問題を修正する
 description: ツールによって検出された各問題に対して実行する詳細なアクション
 keywords: Microsoft マネージド デスクトップ、Microsoft 365、サービス、ドキュメント
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941411"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948411"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールによって検出された問題を修正します。
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
 チェックが行われるたびに、ツールは次の4つの結果のいずれかを報告します。
 
@@ -242,7 +242,7 @@ Intune の "Windows 10 update ring" ポリシーで、Microsoft マネージド�
 
 **アドバイザリ**
 
-**モダンワークプレースのすべて** の Azure AD グループを除外しているすべての更新リングポリシーを確認してください。 手順については、「 [Intune で Windows 10 ソフトウェアの更新プログラムを管理](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)する」を参照してください。 **モダン Workplace Devices-すべて** の Azure AD グループは、Microsoft マネージドデスクトップに登録するときに作成する動的グループであるため、登録後にこのグループを除外する必要があります。
+すべての更新リングポリシーで、 **モダン Workplace Devices** を除外していることを確認してください。すべての Azure AD グループ。 これらのポリシーに Azure AD ユーザーグループを割り当てている場合は、すべての更新リングポリシーで、Microsoft Managed Desktop ユーザーが含まれる、 **モダンワークプレースすべて** の azure ad グループも除外していることを確認してください。 手順については、「 [Intune で Windows 10 ソフトウェアの更新プログラムを管理](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)する」を参照してください。 **モダン Workplace Devices-all** および **モダン workplace-** すべての Azure AD グループには、Microsoft マネージドデスクトップに登録したときに作成したグループが割り当てられます。そのため、登録後にこのグループを除外する必要があります。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定

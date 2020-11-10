@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 での自動化された調査と応答 (AIR) の仕組み
+title: Microsoft Defender for Office 365 での自動化された調査と応答の仕組み
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,14 +21,14 @@ description: Microsoft Defender for Office 365 での自動化された調査と
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931960"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948435"
 ---
-# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 での自動化された調査と応答 (AIR) の仕組み
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 での自動化された調査と応答の仕組み
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -91,7 +91,7 @@ Microsoft Defender for Office 365 の空気機能には、セキュリティ運�
 
 たとえば、組織では、既に AIR によって処理されたユーザーレポートフィッシング通知をセキュリティ運用チームが表示する方法を設定しています。 これらのソリューションは、関連するアラートを組織の SIEM サーバーおよびそのケース管理システムと統合します。 このソリューションは、セキュリティ運用チームが実際の脅威に時間と労力を集中できるように、誤検知の数を大幅に減らします。 このカスタムソリューションの詳細については、「Tech Community blog」を参照してください。 [Microsoft Defender For Office 365 および O365 管理 API を使用して SOC の効果を向上させる](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [空気の使用を開始する](office-365-air.md)
 
