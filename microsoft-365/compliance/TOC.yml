@@ -487,7 +487,9 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: 検索の推定結果と実際の結果の違い
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: コンテンツ検索で PowerShell スクリプトを実行する
+            - name: eDiscovery ツールでの復号化
+              href: ediscovery-decryption.md
+        - name: PowerShell スクリプトでコンテンツ検索を実行する
           items:
             - name: 対象コレクションのコンテンツ検索を使用する
               href: use-content-search-for-targeted-collections.md
