@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Microsoft 365 ソリューションカタログについて説明します。そのカタログに含まれる内容、その取得方法、および次の手順について説明します。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1cb707c47594b59bcb762aac5c25eaa03b33dbf1
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198360"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988577"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 ソリューション カタログ
 
@@ -46,7 +46,7 @@ Microsoft 365 のコンプライアンスソリューションは、エンドツ
 
 - [データ損失防止](data-loss-prevention-policies.md): クラウドおよびデバイス上で、組織全体で使用され、共有される機密コンテンツを検出し、偶発的なデータ損失を防ぐことができます。
 - [情報ガバナンス](manage-information-governance.md): ビジネスに不可欠なデータをインポート、保存、分類するためのソリューションを使用してコンテンツのライフサイクルを管理します。このため、必要な情報を保持したり、削除したりすることができます。
-- [情報保護](protect-information.md): 機密およびビジネス上の重要なコンテンツを、組織全体のライフサイクルを通じて検出、分類、保護します。
+- [情報保護](information-protection.md): 機密およびビジネス上の重要なコンテンツを、組織全体のライフサイクルを通じて検出、分類、保護します。
 - [レコード管理](records-management.md): インテリジェントな分類を使用して、組織内の法令、法律、およびビジネスに不可欠なレコードの保持スケジュールを自動化し、簡素化します。
 
 ## <a name="insider-risk-management-section"></a>Insider リスク管理セクション
@@ -91,16 +91,16 @@ Microsoft 365 ソリューションカタログにアクセスするには、に
 
 既存のコンプライアンスソリューションを探しており、Microsoft 365 コンプライアンスセンターでは利用できない場合は、にアクセスすることで、既存のセキュリティコンプライアンスセンターのソリューションにいつでもアクセスでき &amp; [https://protection.office.com](https://protection.office.com) ます。 または、Microsoft 365 コンプライアンスセンターの左側のナビゲーションにある [ **その他のリソース** ] タブをクリックして、Office 365 セキュリティ/コンプライアンスセンターカードを選択することもできます。  
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-- **Microsoft コンプライアンスマネージャーにアクセス**して、組織の重要な標準および規制へのコンプライアンスの状態を理解することができます。 コンプライアンスの全体的な姿勢を強化するために推奨されるアクションを提供し、それらのアクションを効率的に実行できるようにするためのワークフロー機能を提供します。 詳細については、「 [コンプライアンスマネージャー](compliance-manager.md)」を参照してください。
+- **Microsoft コンプライアンスマネージャーにアクセス** して、組織の重要な標準および規制へのコンプライアンスの状態を理解することができます。 コンプライアンスの全体的な姿勢を強化するために推奨されるアクションを提供し、それらのアクションを効率的に実行できるようにするためのワークフロー機能を提供します。 詳細については、「 [コンプライアンスマネージャー](compliance-manager.md)」を参照してください。
 
-- 内部のリスクを最小限に抑えるために**insider リスク管理ポリシーを構成**し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理](insider-risk-management.md)」を参照してください。
+- 内部のリスクを最小限に抑えるために **insider リスク管理ポリシーを構成** し、組織内のリスクの高い活動を検出、調査、アクションを実行できるようにします。 「 [Insider リスク管理](insider-risk-management.md)」を参照してください。
 
 - **コミュニケーションコンプライアンスポリシーについて説明し、それを作成** して、企業のコードのポリシー違反を迅速に特定して改善します。 「 [通信のコンプライアンス](communication-compliance.md)」を参照してください。
 
-- **Microsoft Information Protection**は、microsoft 365 ソリューションが、どこにいても機密情報の検出、分類、保護を支援する方法について説明します。
-    - **Microsoft Cloud App Security について理解し、セットアップし**ます。 「 [クイックスタート: Microsoft Cloud App Security の使用を開始](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)する」を参照してください。
-    - **分類子を使い始める**。 コンテンツを分類して、適切に処理できるようにラベル付けすることは、情報保護の統制の出発点となります。 詳細については、「 [trainable 分類子 (プレビュー)](classifier-learn-about.md)」を参照してください。
+- **Microsoft Information Protection** は、microsoft 365 ソリューションが、どこにいても機密情報の検出、分類、保護を支援する方法について説明します。
+    - **Microsoft Cloud App Security について理解し、セットアップし** ます。 「 [クイックスタート: Microsoft Cloud App Security の使用を開始](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)する」を参照してください。
+    - **分類子を使い始める** 。 コンテンツを分類して、適切に処理できるようにラベル付けすることは、情報保護の統制の出発点となります。 詳細については、「 [trainable 分類子 (プレビュー)](classifier-learn-about.md)」を参照してください。
 
-- 多くの場合、 **Microsoft 365 ソリューションカタログにアクセス**して、コンプライアンス要件を満たすために役立つ新しいソリューションを確認してください。 にサインイン [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側のナビゲーションウィンドウで [ **カタログ** ] を選択します。
+- 多くの場合、 **Microsoft 365 ソリューションカタログにアクセス** して、コンプライアンス要件を満たすために役立つ新しいソリューションを確認してください。 にサインイン [https://compliance.microsoft.com](https://compliance.microsoft.com) し、左側のナビゲーションウィンドウで [ **カタログ** ] を選択します。

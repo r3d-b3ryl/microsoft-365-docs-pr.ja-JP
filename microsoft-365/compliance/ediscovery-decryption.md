@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 eDiscovery ツールが電子メールメッセージに添付された暗号化ドキュメントを処理する方法について説明します。
-ms.openlocfilehash: 3a4a094f1da28c9a017836c099507f5af739b0b9
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 91d5689bfb64d272c896c0e92422ce1f45fd5f72
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951120"
+ms.locfileid: "48984901"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 電子情報開示ツールの復号化
 
@@ -32,11 +32,11 @@ ms.locfileid: "48951120"
 電子情報開示ワークフローで暗号化されたコンテンツを管理しやすくするために、Microsoft 365 の電子情報開示ツールでは、電子メールメッセージに添付され、Exchange Online で送信される暗号化ファイルの復号化が組み込まれています。 この新しい機能の前に、rights management (および添付ファイルではない) で保護された電子メールメッセージのコンテンツのみが復号化されました。 これで、Microsoft 暗号化テクノロジを使用して暗号化されたファイルが検索条件に一致する電子メールメッセージに添付されている場合、その暗号化ファイルは、検索結果が確認のために準備されるときに復号化されます。 これにより、電子情報開示マネージャーは、検索結果をプレビューするときに暗号化された電子メール添付ファイルの内容を表示し、それらの添付ファイルを詳細な電子情報開示のレビューセットに追加した後に確認できます。
 
 > [!NOTE]
-> 近日 Microsoft 365 の電子情報開示ツールは、SharePoint Online および OneDrive for Business に格納されている暗号化されたドキュメントをサポートします。
+> 近日中に Microsoft 365 電子情報開示ツールは、SharePoint Online と OneDrive for Business に保存されている暗号化されたドキュメントをサポートします。 これには、適用される機密ラベルの結果として暗号化されたドキュメントが含まれます。
 
 ## <a name="supported-encryption-technologies"></a>サポートされる暗号化テクノロジ
 
-Microsoft の電子情報開示ツールは、Microsoft 暗号化テクノロジで暗号化されたアイテムをサポートします。 これらのテクノロジには、Office メッセージの暗号化、Microsoft Information Protection (近日中)、および Azure Rights Management があります。 Microsoft 暗号化テクノロジの詳細については、「 [暗号化](encryption.md)」を参照してください。 サードパーティの暗号化テクノロジによって暗号化されたコンテンツはサポートされません。 これには、Microsoft 以外のテクノロジで暗号化されたコンテンツをプレビューまたはエクスポートするときのサポートはありません。
+Microsoft の電子情報開示ツールは、Microsoft 暗号化テクノロジで暗号化されたアイテムをサポートします。 これらのテクノロジには、Office メッセージの暗号化と Azure Rights Management があります。 Microsoft 暗号化テクノロジの詳細については、「 [暗号化](encryption.md)」を参照してください。 サードパーティの暗号化テクノロジによって暗号化されたコンテンツはサポートされません。 これには、Microsoft 以外のテクノロジで暗号化されたコンテンツをプレビューまたはエクスポートするときのサポートはありません。
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>暗号化されたアイテムをサポートする電子情報開示アクティビティ
 

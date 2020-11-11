@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンスセンターに新しい新しいソリューションを追加したり、フィードバックに基づいて既存の機能を更新したり、最新のドキュメントを展開したりすることができるかどうかにかかわらず、Microsoft 365 は、変更されたコンプライアンスの状況を常に把握するのに役立つ情報を用意しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847803"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988855"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -71,7 +71,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 - 成人、racy、および gory の画像を検出するための新しい [分類子](communication-compliance-feature-reference.md#classifiers) 。
 - [通知内のメッセージを確認](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details)するときに表示される新しい ' パターンが検出された ' 通知により、ユーザーが同じ動作を繰り返し発生させるインスタンスについて知ることができます。
 
-### <a name="sensitivity-labels"></a>機密ラベル
+### <a name="sensitivity-labels"></a>秘密度ラベル
 
 - 米国政府テナント (GCC、GCC-H、DoD) 向けの場合、秘密度ラベルが現在サポートされているのは、Azure Information Protection の統合ラベル付けクライアントおよびスキャナーのみです。 詳細については、[Azure Information Protection Premium の米国政府機関向けのサービスの説明](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)を参照してください。
 - [セキュリティ & コンプライアンスセンターの PowerShell を使用](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies)して、ラベル付けされた管理センターで表示されるすべての設定を作成して構成できるようになりました。 これは、ラベル管理センターでは使用できない設定に対して PowerShell を使用することに加えて、機密ラベルと機密ラベルポリシーの作成と保守を完全にスクリプトで実行できることを意味します。
@@ -100,7 +100,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 
 組織の機密データを保護および管理するために使用されるコンプライアンスソリューションを理解するために、ソリューションがこれらの目標を達成するためにどのように連携するかについての概要を示す2つの新しいランディングページを作成しました。これにより、関連するドキュメントへのリンクを使用してさらに進むことができます。
 
-[Microsoft の microsoft Information Protection (365)](protect-information.md)<br>
+[Microsoft の microsoft Information Protection (365)](information-protection.md)<br>
 [Microsoft 365 の microsoft Information ガバナンス](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>高度な電子情報開示: 状況には、非 custodial データソースを追加する
