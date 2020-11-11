@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) および Microsoft Defender for Office 365 で利用可能なフィッシング対策ポリシーについて学ぶことができます。
-ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919778"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993356"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング対策ポリシー
 
@@ -30,7 +30,7 @@ ms.locfileid: "48919778"
 
 フィッシング対策保護設定を構成するポリシーは、Microsoft 365 組織の exchange online メールボックス、スタンドアロン Exchange Online Protection (EOP) 組織、Exchange Online メールボックスを使用しない組織、Microsoft Defender for Office 365 組織で使用できます。
 
-Microsoft Defender for Office 365 のフィッシング対策ポリシーは、Office 365 の Defender を所有する組織でのみ使用できます。 次に例を示します。
+Microsoft Defender for Office 365 のフィッシング対策ポリシーは、Office 365 の Defender を所有する組織でのみ使用できます。 以下に例を示します。
 
 - Microsoft 365 Enterprise E5、Microsoft 365 エデュケーション A5 など。
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
@@ -97,7 +97,7 @@ EOP のフィッシング対策ポリシーおよび Office 365 の Microsoft De
   > [!NOTE]
   >
   > - 既定では、既定のフィッシング対策ポリシーと、作成したすべての新しいカスタムフィッシング対策ポリシーで、既定で有効になっています。
-  > 
+  >
   > - MX レコードが Microsoft 365 をポイントしていない場合は、スプーフィング防止保護を無効にする必要はありません。代わりに、コネクタの拡張フィルターを有効にします。 手順については、「 [Exchange Online のコネクタの拡張フィルター処理](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
   スプーフィングされた送信者からのメッセージでは、メッセージに対して実行するアクションを指定することもできます。
@@ -158,7 +158,10 @@ EOP のフィッシング対策ポリシーおよび Office 365 の Microsoft De
   保護されたユーザーを使用して、内部および外部の送信者の電子メールアドレスを追加し、偽装から保護することができます。 ユーザー偽装から保護されている **送信者** の一覧は、ポリシーが適用される **受信者** の一覧 (既定のポリシーのすべての受信者、[ [ポリシーの設定](#policy-settings)] セクションの [ **適用先** ] に設定されている特定の受信者) とは異なります。
 
   > [!NOTE]
-  > すべてのフィッシング対策ポリシーで定義できる保護ユーザー (送信者の電子メールアドレス) の最大数は60です。 言い換えると、60で保護されたユーザーを1つのポリシー、12のポリシーで保護されたユーザー5人に割り当てることができます。
+  >
+  > - 各フィッシング対策ポリシーでは、最大で60の保護されたユーザー (送信者の電子メールアドレス) を指定できます。 複数のポリシーで同じ保護されたユーザーを指定することはできません。
+  >
+  > - 送信者と受信者が以前に電子メール経由で通信した場合、ユーザー偽装保護は機能しません。 送信者と受信者が電子メールで通信したことがない場合、メッセージは偽装の試行として識別されます。
 
   既定では、を **保護するユーザー** の偽装保護用に構成されている送信者の電子メールアドレスはありません。 したがって、既定では、既定のポリシーまたはカスタムポリシーのいずれの場合でも、偽装保護によって送信者の電子メールアドレスは扱われません。
 
@@ -167,7 +170,7 @@ EOP のフィッシング対策ポリシーおよび Office 365 の Microsoft De
 - **保護するドメイン** : 指定されたドメインが、 **メッセージの送信者のドメインで** 偽装されないようにします。 たとえば、所有しているすべてのドメイン ([承認済みドメイン](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) または特定のドメイン (自分が所有しているドメインまたはパートナードメイン)。 偽装から保護されているこの **送信者ドメイン** の一覧は、ポリシーが適用される **受信者** の一覧 (既定のポリシーのすべての受信者、[ [ポリシーの設定](#policy-settings)] セクションの [ **適用先** ] に設定されている特定の受信者) とは異なります。
 
   > [!NOTE]
-  > すべてのフィッシング対策ポリシーで定義できる、保護されたドメインの最大数は50です。 つまり、50で保護されたドメインを1つのポリシー、10個の保護されたドメインを5ポリシーにすることなどができます。
+  > すべてのフィッシング対策ポリシーで定義できる、保護されたドメインの最大数は50です。
 
   既定では、を **保護する** ためにドメインの偽装保護用に構成されている送信者ドメインはありません。 したがって、既定では、既定のポリシーまたはカスタムポリシーのどちらでも、偽装保護の対象となる送信者ドメインはありません。
 
