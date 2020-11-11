@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかを定期的に報告します。 使用状況の概要ダッシュボードを使用すると、各チャートを掘り下げて詳細な情報を得ることができます。
-ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779122"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988460"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -96,10 +96,14 @@ ms.locfileid: "48779122"
   
 - [メール アプリの利用状況](email-apps-usage.md)
 
-- [フォームのアクティビティ](forms-activity.md)
+- [Forms のアクティビティ](forms-activity-ww.md)
 
-- [Forms Pro アクティビティ](forms-pro-activity.md)
+- [米国政府の Forms のアクティビティ](forms-activity.md)
+
+- [Dynamics 365 顧客音声アクティビティ](forms-pro-activity-ww.md)
   
+- [米国政府向けの Dynamics 365 顧客音声アクティビティ](forms-pro-activity.md)
+
 - [Microsoft 365 グループ](office-365-groups.md)
   
 - [OneDrive for Business のユーザー アクティビティ](onedrive-for-business-activity-ww.md)
