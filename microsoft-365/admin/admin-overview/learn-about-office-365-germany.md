@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: Office 365 ドイツについて説明します。
-ms.openlocfilehash: b0b370399cc7687f3c564903d01bd07f447dc16a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8b999ecbd2e429ad8a60fa60de1ad3a06664f085
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843332"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995859"
 ---
 # <a name="learn-about-office-365-germany"></a>Office 365 Germany の詳細
 
@@ -43,7 +43,7 @@ Office 365 ドイツは、ヨーロッパ全域で利用可能な Office 365 サ
 
 Office 365 ドイツプランのオファーリングは、この分離された環境で可能な限り、グローバルな提供に沿っています。 除外項目には、Yammer 関連のプラン、廃止目前のプラン、非営利のプログラムを通じて利用可能なプランが含まれます。 Office 365 E5、SPE、およびその他のサービスは、Office 365 ドイツの ga 後に利用可能になります。 
   
-ご用意しているいくつかの [Office 365 Germany サブスクリプション プラン](https://go.microsoft.com/fwlink/p/?linkid=839016)では、次のようなサービスと機能を利用することができます。 また、[オンライン サービス使用条件](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)を参照してください。
+ご用意しているいくつかの [Office 365 Germany サブスクリプション プラン](https://go.microsoft.com/fwlink/p/?linkid=839016)では、次のようなサービスと機能を利用することができます。 また、[オンライン サービス使用条件](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)を参照してください。
   
 - Microsoft 365 Apps for enterprise、Office 2016、および Office 2013<sup>1</sup>。 Office 2013 では、office [クライアントで office 365 モダン認証を使用](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)する必要があることに注意してください。
     
@@ -85,7 +85,7 @@ Office 365 ドイツプランのオファーリングは、この分離された
     
 - Delve
     
-<sup>1</sup>Office 365 ドイツプランには、Microsoft 365 Apps for enterprise、Office 2013、および Office 2016 など、エンドユーザーのデバイス (「クライアントソフトウェアアプリケーション」) にインストールされ、実行されるクライアントソフトウェアアプリケーションが含まれています。 クライアントソフトウェアアプリケーションは、ドイツのデータセンターでは機能しません。また、エンドユーザーは、 [ドイツ語のオンラインサービス](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)ではないオンラインサービスにアクセスすることができます。 For purposes of your agreement with Microsoft, client software applications are not [German Online Services](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). ドイツ語のデータ常駐を約束し、ドイツ語のデータトラスティによるアクセス制御は、 [ドイツ語のオンラインサービス](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)にのみ適用されます。
+<sup>1</sup>Office 365 ドイツプランには、Microsoft 365 Apps for enterprise、Office 2013、および Office 2016 など、エンドユーザーのデバイス (「クライアントソフトウェアアプリケーション」) にインストールされ、実行されるクライアントソフトウェアアプリケーションが含まれています。 クライアントソフトウェアアプリケーションは、ドイツのデータセンターでは機能しません。また、エンドユーザーは、 [ドイツ語のオンラインサービス](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)ではないオンラインサービスにアクセスすることができます。 For purposes of your agreement with Microsoft, client software applications are not [German Online Services](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58). ドイツ語のデータ常駐を約束し、ドイツ語のデータトラスティによるアクセス制御は、 [ドイツ語のオンラインサービス](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)にのみ適用されます。
   
 ## <a name="general-information"></a>一般情報
 

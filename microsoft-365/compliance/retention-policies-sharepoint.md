@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804542"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951110"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -38,7 +38,7 @@ ms.locfileid: "48804542"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
-SharePoint または OneDrive サイトに保存されているすべてのファイルは、アイテム保持ポリシーまたは保持ラベルを適用することで保持できます。
+SharePoint または OneDrive サイトに保存されているすべてのファイルは、アイテム保持ポリシーまたは保持ラベルを適用することで保持できます。 
 
 削除できるファイルは次のとおりです。
 
@@ -46,8 +46,12 @@ SharePoint または OneDrive サイトに保存されているすべてのフ�
     
 - 保持ラベルを使用する場合は、ドキュメント ライブラリのすべてのファイル、およびフォルダー内に存在しないルート レベルのすべてのファイル。
     
-    [保持ラベル用の自動適用ポリシーを使用した KQL クエリ](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)を使用する場合、次のエントリを使用してドキュメント ライブラリを除外することができます。`NOT(DocumentLink:"<URL to document library>")`
+> [!TIP]
+> [保持ラベル用の自動適用ポリシーを使用したクエリ](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties) を使用する場合、次のエントリを使用して特定のドキュメント ライブラリを除外することができます。`NOT(DocumentLink:"<URL to document library>")`
 
+保持設定は、ライブラリ、リスト、およびフォルダーを含む組織構造には適用されません。 または、システム リスト内のアイテムについては、SharePoint によってシステムの管理やマスター ページ カタログ、ソリューション カタログ、データ ソースの追加に使用される非表示リストです。
+
+アイテム保持ポリシーと自動適用のラベル ポリシーの場合: 保持設定を適用するには、SharePoint サイトにインデックスを作成する必要があります。 ただし、SharePoint ドキュメント ライブラリ内のアイテムが検索結果に表示されないように構成されている場合、この構成ではファイルは保持設定から除外されません。
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持のしくみ
 
