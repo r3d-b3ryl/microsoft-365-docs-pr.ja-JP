@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コンテンツコラボレーションの詳細-ユーザーが生産性スコアを感じます。
-ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804599"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999430"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツコラボレーション–ユーザーエクスペリエンス
 
@@ -32,7 +32,7 @@ ms.locfileid: "48804599"
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>組織&#39;s のコンテンツコラボレーションのスコアが重要である理由
 
-組織の生産性の基本的な柱は、ユーザーがファイルで共同作業する方法です。 Microsoft 365 上のコンテンツを使用して、他のユーザーとのコンテンツへのアクセス、作成、変更、および共同作業をどこからでも行うことができます。 調査では、ユーザーがオンラインファイルを使用して共同作業するときに、各ユーザーが週に平均100分の時間を節約できることが示されています。 [証拠](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)を参照してください。
+組織の生産性の基本的な柱は、ユーザーがファイルで共同作業する方法です。 Microsoft 365 上のコンテンツを使用して、他のユーザーとのコンテンツへのアクセス、作成、変更、および共同作業をどこからでも行うことができます。 調査では、ユーザーがオンラインファイルを使用して共同作業するときに、各ユーザーが週に平均100分の時間を節約できることが示されています。 [証拠を参照してください](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>コンテンツコラボレーションのスコアを計算する方法
 
@@ -81,7 +81,7 @@ Microsoft OneDrive for Business および SharePoint を使用すると、ユー
 
 [傾向の視覚化] グラフには、過去180日間にわたり、閲覧者、作成者、共同作業者の主要な洞察の主要指標の傾向線が表示されます。 グラフ上の各データ要素は、過去28日間のアクティビティの集計です。 各作成者のデータポイントには、x 軸上の日付ごとに、過去28日以内に作成者としてタグ付けされたすべてのユーザーの数が表示されます。
 
-:::image type="content" source="../../media/trendvisualization.jpg" alt-text="コミュニケーションコラボレーションスコアからの主要な洞察。":::
+:::image type="content" source="../../media/trendvisualization.jpg" alt-text="コラボレーションの主要な洞察に関する傾向を示す図。":::
 
 ### <a name="scoring-framework"></a>スコアリングフレームワーク
 
@@ -93,7 +93,7 @@ Microsoft OneDrive for Business および SharePoint を使用すると、ユー
 
 ### <a name="creating-files-to-onedrive-or-sharepoint"></a>OneDrive または SharePoint へのファイルの作成
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="コミュニケーションコラボレーションスコアからの主要な洞察。":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="OneDrive または SharePoint でファイルを作成するユーザーの数を示すグラフ":::
 
 1. **ヘッダー:** OneDrive または SharePoint 上のファイルを作成する Microsoft 365 Office アプリケーション上でアクティブになっているユーザーの割合を強調表示します。
 2. **本文:** OneDrive および SharePoint でのコンテンツ作成の価値に関する情報を提供します。
@@ -109,7 +109,7 @@ Microsoft OneDrive for Business および SharePoint を使用すると、ユー
 
 ### <a name="use-of-attachments-in-email"></a>電子メールで添付ファイルを使用する
 
-:::image type="content" source="../../media/emailattachments.png" alt-text="コミュニケーションコラボレーションスコアからの主要な洞察。":::
+:::image type="content" source="../../media/emailattachments.png" alt-text="電子メールの添付ファイルの使用。":::
 
 1. **ヘッダー:** OneDrive または SharePoint に保存されていないメールで添付ファイルを使用しているユーザーのパーセンテージを強調表示します。
 2. **本文:** コラボレーションとセキュリティの観点から、オンラインファイルへの共有リンクの価値に関する情報を提供します。
@@ -127,7 +127,7 @@ Microsoft OneDrive for Business および SharePoint を使用すると、ユー
 
 ### <a name="sharing-of-online-files"></a>オンラインファイルの共有
 
-:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="コミュニケーションコラボレーションスコアからの主要な洞察。":::
+:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="ファイルをオンラインで共有しているユーザーの数を示すグラフ。":::
 
 1. **ヘッダー:** OneDrive または SharePoint のアクセス権を持つユーザーが、外部でファイルを共有している割合を強調表示します。
 2. **本文:** 管理者&#39; 組織のファイル共有設定を変更して、組織に最適なコラボレーションレベルを有効にする機能について説明します。
@@ -142,7 +142,7 @@ Microsoft OneDrive for Business および SharePoint を使用すると、ユー
 
 ### <a name="intensity-of-files-collaborated-on"></a>共同作業でのファイルの強度
 
-:::image type="content" source="../../media/intensityofcollab.png" alt-text="コミュニケーションコラボレーションスコアからの主要な洞察。":::
+:::image type="content" source="../../media/intensityofcollab.png" alt-text="最も共同作業しているファイルの数を示す図。":::
 
 1. **ヘッダー:** これにより、OneDrive または SharePoint へのアクセス権を持っているユーザーのうち、4つ以上のファイルを共同作業しているユーザーの割合が強調されています。
 2. **本文:** これにより、ユーザーがオンラインファイルを活用してコラボレーションを向上させる方法についての情報を提供します。
@@ -164,7 +164,7 @@ Microsoft OneDrive for Business および SharePoint を使用すると、ユー
 
 ### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>OneDrive と SharePoint のネットワークパフォーマンスの強度
 
-:::image type="content" source="../../media/networkperfstrength.png" alt-text="コミュニケーションコラボレーションスコアからの主要な洞察。":::
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="OneDrive と SharePoint のネットワークパフォーマンスを示す図。":::
 
 1. **ヘッダー:** OneDrive および SharePoint へのネットワーク接続が不足しているすべてのテスト対象デバイスの割合を強調表示します。 
 2. **本文:** グループ作業のためにネットワーク接続のパフォーマンスが重要になる理由について説明します。 
