@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b575573753ef270b5936c315c8bbf3acf9e4a7f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6e8291f4fc21b0a1d3aaee74b47760fca3a4b220
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919701"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995880"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>米国証券取引委員会 (SEC) ルール 17a-4-4 (f) 米国
 
@@ -40,7 +40,7 @@ SEC は、電子記憶メディアに書籍や記録を保持することを選�
 SEC Rule 17a-4 (f) に準拠するように Azure と Office 365 のコンプライアンスを評価するために、Microsoft は、レコード管理と情報ガバナンスに特化した独立した評価会社を保有しています。 Cohasset が関連しています。 生成されるレポートの対象:
 
 - **Azure** : [SEC 17a-4-4 (f) コンプライアンス評価: Microsoft azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), Cohasset は、ポリシーロックオプションを使用して、時間ベースの blob [ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) を消去できないようにすることを検証しています。このオプションを使用すると、消去不能かつ書き換え不可 (WORM) 形式で時間ベースの blob を保持することができます。 各 Blob (レコード) は、必要な保存期間が期限切れになり、関連付けられた法的保持が解放されるまで、変更、上書き、または削除されないように保護されます。 機密性の高いワークロードを持つソフトウェアプロバイダーとパートナーは、レコード保持と不変のストレージのための onestop ショップクラウドソリューションとして、Azure 不変 Blob ストレージを利用できるようになりました。 金融機関は、これらの機能を利用して、準拠したまま、自分のアプリケーションを構築できるようになりました。
-- **Microsoft 365** : [SEC 17a-4-4 (f)、finra 4511 (c)、および cftc 1.31 (c)-(d)-(d)-(d)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)、cohasset で検証され365たアーカイブ機能により、ブローカー販売業者を含む規制対象の顧客が、レコード保持の SEC 要件に準拠できるようになります。 Microsoft 365 の保持機能は、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、幅広いデータを保持するのに役立ちます。 特に、Microsoft 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義された期間にデータを保存することができます。また、書き換え不可で消去不能な形式にすることもできます。
+- **Microsoft 365** : [sec 17a-4 (f)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)、cohasset で検証365済みのアーカイブ機能により、ブローカーディーラーを含む規制対象の顧客が、レコード保持の SEC 要件に準拠するための方法でデータを保存できるようになります。 Microsoft 365 の保持機能は、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、幅広いデータを保持するのに役立ちます。 特に、Microsoft 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義された期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -84,4 +84,4 @@ Microsoft クラウドサービスおよびレギュレータの通知のリス�
 - [Azure 金融サービス クラウド リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Office 365 のアイテム保持ポリシー](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融サービスのブログ](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

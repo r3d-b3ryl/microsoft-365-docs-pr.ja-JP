@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bff804e726a62563621b11932e590ffcb631835a
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3026c2490c88d03cda948e6da972d8663c4d6d5c
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920399"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995870"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品計画取引委員会 (CFTC) ルール 1.31 (c-d) 米国
 
@@ -39,11 +39,9 @@ ms.locfileid: "48920399"
 
 CFTC Rule 1.31 (c-d) に準拠した Azure コンプライアンスを評価するために、Microsoft はレコード管理と情報ガバナンスに特化した独立した評価会社を保有しています。 Cohasset が関連付けられています。 生成されたレポートの [cftc 1.31 (c) – (d) コンプライアンス評価: Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports), cohasset ポリシーロックオプションを使用して、時間ベースの blob を保持するように設定された [Azure 不変 blob ストレージ](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) を、消去不可および書き換え不可 (WORM) 形式で保持するために使用する場合は、cftc ルールの原則に基づいた 各 Blob (レコード) は、必要な保存期間が期限切れになり、関連付けられた法的保持が解放されるまで、変更、上書き、または削除されないように保護されます。 機密性の高いワークロードを持つソフトウェアプロバイダーとパートナーは、レコード保持のワンストップショップクラウドソリューションとして、Azure 不変 Blob ストレージを利用できるようになりました。 金融機関は、これらの機能を利用して、準拠したまま、自分のアプリケーションを構築できるようになりました。
 
-### <a name="microsoft-office-365"></a>Microsoft Office 365
+### <a name="microsoft-365"></a>Microsoft 365
 
-CFTC Rule 1.31 (c-d) に対する Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化した、Covington & の気流を含む独立した法律事務所を参加しています。 結果のレポート、 [Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンス](https://go.microsoft.com/fwlink/?linkid=830440)において、Covington では、 [Office 365 に保持ロック](retention-preservation-lock.md) が設定されていることを検証しています。これにより、規制を適用している顧客は、レコード保持のための cftc 要件に準拠するための方法でデータを保存できます。
-
-Office 365 のアーカイブは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持するのに役に立ちます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
+[Cftc 1.31 (c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)の要件については、Microsoft 365 に、仲介業者を含む規制対象の顧客が、レコード保持の SEC 要件に準拠するために役立つ方法でデータを保存できるようにするアーカイブ機能が含まれていることが検証されています。 Microsoft 365 の保持機能は、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、幅広いデータを保持するのに役立ちます。 特に、Microsoft 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義された期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -70,4 +68,4 @@ Office 365 のアーカイブは、電子メール、ボイスメール、共有
 - [Azure 金融サービス クラウド リスク評価ツール](https://aka.ms/FFIEC-CSDT)
 - [Microsoft Office 365 のアイテム保持ポリシー](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融サービスのブログ](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

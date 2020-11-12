@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 2ba5dc4726f359545d59de7387fc62a3fe897588
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919691"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995890"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融業界の法令当局 (FINRA) ルール 4511 (c) 米国
 
@@ -45,11 +45,9 @@ Cohasset では、ポリシーロックオプションを使用して [Azure 不
 
 機密性の高いワークロードを持つソフトウェアプロバイダーとパートナーは、レコードの保持と不変のストレージ用のワンストップショップクラウドソリューションとして、Azure 不変 Blob ストレージを利用できるようになりました。 金融機関は、これらの機能を利用して、準拠したまま、自分のアプリケーションを構築できるようになりました。
 
-## <a name="microsoft-office-365"></a>Microsoft Office 365
+## <a name="microsoft-365"></a>Microsoft 365
 
-4511 (c) を使用して Office 365 のコンプライアンスを評価するために、Microsoft は、規制上の問題に特化し、Covington & の気流を含む、主要な独立した法律事務所を保持しています。 生成されたレポート、Microsoft Office 365、データ保持、およびルール17a-4 のコンプライアンスにおいて、 [365](retention-preservation-lock.md) Covington は、ブローカーディーラーを含む規制対象の顧客がデータを保存できるようにするアーカイブ機能が含まれています。これらの機能を使用して、レコード保持に関する finra 要件に準拠するために役立つ方法があります。
-
-Office 365 のアーカイブでは、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、さまざまなデータを保持することができます。 特に、Office 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義済みの期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
+[Finra 4511 (c)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)の要件については、Microsoft 365 に、ブローカー販売業者を含む規制対象の顧客が、レコード保持の SEC 要件に準拠するために役立つ方法でデータを保存できるようにするアーカイブ機能が含まれていることが検証されています。 Microsoft 365 の保持機能は、電子メール、ボイスメール、共有ドキュメント、インスタントメッセージ、サードパーティのデータなど、幅広いデータを保持するのに役立ちます。 特に、Microsoft 365 のアーカイブを使用すると、グローバルまたは詳細なメッセージ保持ポリシーを設定して、定義された期間にデータを保存することができます。また、上書き不可で消去不能な形式にすることもできます。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>対象となる Microsoft のクラウド サービス
 
@@ -80,4 +78,4 @@ Office 365 のアーカイブでは、電子メール、ボイスメール、共
 - [Azure 金融サービス クラウド リスク評価ツール](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Microsoft Office 365 のアイテム保持ポリシー](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft 金融サービスのブログ](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
-- [Microsoft セキュリティ センターのコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)
+- [Microsoft Trust Center のコンプライアンス](https://www.microsoft.com/trust-center/compliance/compliance-overview)

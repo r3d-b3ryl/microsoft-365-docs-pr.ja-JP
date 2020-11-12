@@ -47,16 +47,18 @@
               href: mtp/preview.md
             - name: Microsoft 365 セキュリティ センター
               href: mtp/overview-security-center.md
+            - name: 問題のトラブルシューティング
+              href: ./mtp/troubleshoot.md
+            - name: 業界のテスト
+              href: ./mtp/top-scoring-industry-tests.md
+        - name: プラン
+          items:
             - name: 前提条件
               href: mtp/prerequisites.md
             - name: データ セキュリティとプライバシー
               href: mtp/data-privacy.md
             - name: Microsoft セキュリティ ポータル
               href: mtp/portals.md
-            - name: 問題のトラブルシューティング
-              href: ./mtp/troubleshoot.md
-            - name: 業界のテスト
-              href: ./mtp/top-scoring-industry-tests.md
         - name: 機能を評価する
           items:
             - name: 試用版ラボの概要
@@ -71,28 +73,30 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: テスト アラートを生成する
               href: mtp/generate-test-alert.md
-        - name: 実稼働環境でパイロット プロジェクトを実行する
+        - name: 展開
           items:
-            - name: パイロットの概要
-              href: mtp/mtp-pilot.md
-            - name: プラン
-              href: mtp/mtp-pilot-plan.md
-            - name: 準備
-              href: mtp/prepare-mtpeval.md
-            - name: 攻撃のシミュレーション
-              href: mtp/mtp-pilot-simulate.md
-            - name: 閉じて要約する
-              href: mtp/mtp-pilot-close.md
+            - name: Microsoft Threat Protection を有効にする
+              href: mtp/mtp-enable.md
+            - name: 実稼働環境でパイロット プロジェクトを実行する
+              items:
+                - name: パイロットの概要
+                  href: mtp/mtp-pilot.md
+                - name: プラン
+                  href: mtp/mtp-pilot-plan.md
+                - name: 準備
+                  href: mtp/prepare-mtpeval.md
+                - name: 攻撃のシミュレーション
+                  href: mtp/mtp-pilot-simulate.md
+                - name: 閉じて要約する
+                  href: mtp/mtp-pilot-close.md
+            - name: サポートされているサービスを展開する
+              href: mtp/deploy-supported-services.md
         - name: 使い方ガイド
           items:
             - name: 試用版ラボまたはパイロット環境を作成する
               href: mtp/mtp-evaluation.md
             - name: パイロット プレイブックを実行する
               href: mtp/mtp-pilot.md
-            - name: サポートされているサービスを展開する
-              href: mtp/deploy-supported-services.md
-            - name: Microsoft 365 Defender を有効にする
-              href: mtp/mtp-enable.md
             - name: よくあるご質問 (FAQ) をオンにする
               href: mtp/mtp-enable-faq.md
             - name: インシデント
