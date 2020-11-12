@@ -13,23 +13,23 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: e2f29cdb3604dd05e665cf326b7d9d014a94f3bf
-  ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+  ms.openlocfilehash: 0bce37e2ad20ddde556608a72d7df3a1879ae427
+  ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/30/2020
-  ms.locfileid: "48309004"
+  ms.lasthandoff: 11/11/2020
+  ms.locfileid: "48993334"
 landingContent:
 - title: 情報保護とガバナンスを管理する
   linkLists:
   - linkListType: overview
     links:
     - text: データを把握する
-      url: protect-information.md#know-your-data
+      url: information-protection.md#know-your-data
     - text: データを保護する
-      url: protect-information.md#protect-your-data
+      url: information-protection.md#protect-your-data
     - text: データの損失を防止する
-      url: protect-information.md#prevent-data-loss
+      url: information-protection.md#prevent-data-loss
     - text: データを統制する
       url: manage-information-governance.md
     - text: 'ラニング パス: 情報保護とガバナンスを管理する'
@@ -82,3 +82,5 @@ landingContent:
     links:
     - text: データ プライバシー規制用の情報保護を展開する
       url: ../solutions/information-protection-deploy.md
+    - text: 情報保護とコンプライアンスのイラスト
+      url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
