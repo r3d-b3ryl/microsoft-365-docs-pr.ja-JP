@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: Microsoft 365 と同期する前に、オンプレミスのユーザーに関連付けられた非ルーティングドメインがある場合の対処方法について説明します。
-ms.openlocfilehash: 835beffb77c495179991fbb4388ecd9ee804ec91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46696160"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002383"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 オンプレミスのディレクトリを Microsoft 365 と同期する場合は、Azure Active Directory (Azure AD) で確認済みのドメインを用意する必要があります。 オンプレミスのドメインに関連付けられているユーザープリンシパル名 (UPN) のみが同期されます。 ただし、ルーティング可能ではないドメイン (たとえば billa@contoso ローカル) を含む任意の UPN は、onmicrosoft.com ドメイン (billa@contoso.onmicrosoft.com など) に同期されます。 
@@ -42,7 +42,7 @@ Azure AD Connect は、ユーザーの UPN とパスワードを同期して、�
   
 ### <a name="change-your-primary-domain"></a>**プライマリ ドメインを変更する**
 
-プライマリドメインを Microsoft 365 で確認したドメインに変更します。たとえば、contoso.com のようにします。 ドメイン contoso. local を持つすべてのユーザーが contoso.com に更新されます。 手順については、「 [ドメイン名の変更のしくみ](https://go.microsoft.com/fwlink/p/?LinkId=624174)」を参照してください。 ただし、これは非常に複雑なプロセスであり、次のセクションではより簡単な解決方法について説明します。
+プライマリドメインを Microsoft 365 で確認したドメインに変更します。たとえば、contoso.com のようにします。 ドメイン contoso. local を持つすべてのユーザーが contoso.com に更新されます。 ただし、これは非常に複雑なプロセスであり、次のセクションではより簡単な解決方法について説明します。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**UPN サフィックスを追加してユーザーを更新する**
 
@@ -52,7 +52,7 @@ Azure AD Connect は、ユーザーの UPN とパスワードを同期して、�
   
  **手順 1: 新しい UPN サフィックスを追加する**
   
-1. AD DS ドメインコントローラーのサーバーマネージャーで、[ **ツール**] [ \> **Active Directory ドメインと信頼関係**] の順に選択します。
+1. AD DS ドメインコントローラーのサーバーマネージャーで、[ **ツール** ] [ \> **Active Directory ドメインと信頼関係** ] の順に選択します。
     
     **または (Windows Server 2012 を所有していない場合)**
     
@@ -60,7 +60,7 @@ Azure AD Connect は、ユーザーの UPN とパスワードを同期して、�
     
     ![[Active Directory ドメインと信頼関係] を選択します。](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. **[Active Directory ドメインと信頼関係]** ウィンドウで、**[Active Directory ドメインと信頼関係]** を右クリックして **[プロパティ]** を選択します。
+2. **[Active Directory ドメインと信頼関係]** ウィンドウで、 **[Active Directory ドメインと信頼関係]** を右クリックして **[プロパティ]** を選択します。
     
     ![[Active Directory ドメインと信頼関係] を右クリックし、[プロパティ] を選択します。](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
@@ -68,11 +68,11 @@ Azure AD Connect は、ユーザーの UPN とパスワードを同期して、�
     
     ![新しい UPN サフィックスを追加します](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
-    サフィックスの追加が完了したら、**[OK]** を選択します。 
+    サフィックスの追加が完了したら、 **[OK]** を選択します。 
     
  **手順 2: 既存のユーザーの UPN サフィックスを変更する**
   
-1. AD DS ドメインコントローラーで、サーバーマネージャーの [ **ツール**] [ \> **Active Directory ユーザーとコンピューター**] を選択します。
+1. AD DS ドメインコントローラーで、サーバーマネージャーの [ **ツール** ] [ \> **Active Directory ユーザーとコンピューター** ] を選択します。
     
     **または (Windows Server 2012 を所有していない場合)**
     

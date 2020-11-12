@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948411"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002419"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -214,7 +214,7 @@ Microsoft Managed Desktop users が所有しているアプリを確認します
 
 **アドバイザリ**
 
-Microsoft Managed Desktop ユーザーに割り当てるアプリのインベントリを準備する必要があります。 これらのアプリが Intune によって展開可能であることを確認してください。 詳細については、「 [Microsoft マネージドデスクトップのアプリ](apps.md)」を参照してください。
+Microsoft Managed Desktop ユーザーに割り当てるアプリのインベントリを準備する必要があります。 これらのアプリは Intune によって展開される必要があるため、既存の Intune アプリを再利用することを評価してください。 企業ポータルの使用を検討してください (「デバイスおよび登録状態ページ (ESP) [に Intune ポータルサイトをインストール](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) する」を参照し、ユーザーにアプリを配布してください。 詳細については、「 [Microsoft マネージドデスクトップのアプリ](apps.md) 」および「 [自動操縦の状態」ページにある初回実行時の環境](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)を参照してください。
 
 Microsoft エンドポイント構成マネージャーのクエリを Microsoft アカウント担当者に依頼して、Intune に移行する準備ができているアプリや調整が必要なアプリを特定することができます。
 
@@ -289,9 +289,8 @@ Microsoft マネージドデスクトップによって作成されたアカウ�
 
 **アドバイザリ**
 
-これらの役割のいずれかが Azure AD 組織に割り当てられている場合は、エンドポイントの Microsoft Defender にこれらの役割が割り当てられていることを確認してください。 そうしないと、これらの役割を持つ管理者は管理ポータルにアクセスできなくなります。
+ユーザーが Azure AD 組織でこれらの役割のいずれかに割り当てられている場合は、エンドポイントの Microsoft Defender でもこれらの役割が割り当てられていることを確認してください。 そうしないと、これらの役割を持つ管理者は管理ポータルにアクセスできなくなります。
 
-- セキュリティ閲覧者
 - セキュリティ オペレーター
 - グローバル閲覧者
 
@@ -308,7 +307,7 @@ Azure Active Directory のセキュリティの既定値を使用すると、Mic
 
 ### <a name="self-service-password-reset"></a>セルフサービスによるパスワードのリセット
 
-Microsoft Managed Desktop service アカウントを除くすべてのユーザーに対して、セルフサービスのパスワードのリセット (SSPR) を有効にする必要があります。 詳細については、「 [チュートリアル: ユーザーがアカウントのロックを解除するか、Azure Active Directory のセルフサービスによるパスワードのリセットを使用してパスワードをリセットする](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
+Microsoft Managed Desktop service アカウントを除いたすべての Microsoft Managed Desktop users に対して、セルフサービスのパスワードのリセット (SSPR) を有効にする必要があります。 詳細については、「 [チュートリアル: ユーザーがアカウントのロックを解除するか、Azure Active Directory のセルフサービスによるパスワードのリセットを使用してパスワードをリセットする](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
 
 **アドバイザリ**
 
@@ -325,11 +324,11 @@ Microsoft マネージドデスクトップのユーザーには、登録後の 
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="onedrive"></a>OneDrive
 
 [ **特定のドメインに参加している pc でのみ同期を許可** する] の設定は、Microsoft マネージドデスクトップと競合します。
 
 **アドバイザリ**
 
-[ **特定のドメインに参加している pc でのみ同期を許可** する] 設定を使用している。 この設定は、Microsoft マネージドデスクトップでは使用できません。 この設定を無効にし、代わりに、条件付きアクセスポリシーを使用するように OneDrive for Business を設定します。 ヘルプについて [は、「Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 」を参照してください。
+[ **特定のドメインに参加している pc でのみ同期を許可** する] 設定を使用している。 この設定は、Microsoft マネージドデスクトップでは使用できません。 この設定を無効にして、代わりに、条件付きアクセスポリシーを使用するように OneDrive を設定します。 ヘルプについて [は、「Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 」を参照してください。
 
