@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Endpoint データ損失防止 (プレビュー) を開始する
+title: Microsoft 365 エンドポイント データ損失防止を開始する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
+ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842041"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48990552"
 ---
-# <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>Endpoint Data Loss Prevention (プレビュー) を開始する
+# <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
 Microsoft Endpoint Data Loss Prevention (Endpoint DLP) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。 Microsoft のすべての DLP製品 の詳細については、 「[データ損失防止の概要](data-loss-prevention-policies.md)」を参照してください。 Endpoint DLP の詳細については、「[Endpoint のデータ損失防止について (プレビュー) ](endpoint-dlp-learn-about.md)」を参照してください。
 
@@ -44,6 +44,7 @@ Endpoint DLP を開始する前に、「[Microsoft 365サブスクリプショ�
 - Microsoft 365 A5 コンプライアンス
 - Microsoft 365 E5 の情報保護とガバナンス
 - Microsoft 365 A5 の情報保護とガバナンス
+
 
 ### <a name="permissions"></a>許可
 
@@ -95,6 +96,8 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 4. すべてのデバイスは[Azure Active Directory (Azure AD) に参加する ](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)か、Hybrid Azure AD に参加する必要があります。
 
 5. エンドポイント デバイスに Microsoft Chromium Edge ブラウザーをインストールして、クラウドへのアップロード アクティビティのポリシー アクションを適用します。 「[Chromium ベースの新しい Microsoft Edge をダウンロードする](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)」を参照してください。
+
+6. Microsoft 365 アプリ バージョン 2004 - 2008 の月次エンタープライズ チャネルを使用している場合、Office コンテンツを分類する Endpoint DLP に既知の問題があり、バージョン 2009 以降に更新する必要があります。 現在のバージョンについては「[Microsoft 365 アプリの更新履歴 (日付別の一覧)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)」をご覧ください。 この問題の詳細については、[2020 年の最新のチャネル リリースのリリース ノート](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27)の「Office スイート」セクションを参照してください。
 
 ## <a name="onboarding-devices-into-device-management"></a>デバイス管理へのデバイスのオンボーディング
 

@@ -22,12 +22,12 @@ description: Microsoft 情報保護フレームワークの秘密度ラベルを
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: de123c842623d709c9360652becc8c4604b0c234
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f29ba461cb3ae8cc79ff90b7b129e82f7401e187
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754097"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988865"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -97,6 +97,8 @@ Office アプリでは、秘密度ラベルはメールやドキュメントの�
     
     すべてではありませんが、一部のアプリは変数を使用した動的マーキングをサポートしています。 たとえば、ラベル名またはドキュメント名をヘッダー、フッター、または透かしに挿入します。 詳細については、「[変数を使用した動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)」を参照してください。
     
+    これらのコンテンツ マークのカスタム フォント名と、RGB コードによるカスタムを含むさまざまなフォントの色を構成できますが、これらの設定は、[Azure Information Protection 統合ラベル付けクライアント](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) でのみサポートされます。 組み込みのラベル付けを使用する場合、フォント名の設定は無視され、次の色のみがサポートされます：黒、黄、青、緑、赤。 サポートされていない色を選択した場合、既定値として黒が使用されます。
+
     文字数の長さ: 透かしで使用できる文字数は、255 文字に制限されています。 Excel を除き、ヘッダーとフッターの文字数は 1,024 文字までに制限されています。 Excel では、ヘッダーとフッターの合計が 255 文字に制限されています。ただし、この制限には、書式設定コードなど、表示されない文字も含まれます。 この制限に達すると、入力した文字列が Excel で表示されなくなります。
 
 - [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)機能を有効にすると、 **サイトやグループなどのコンテナー内のコンテンツを保護します** 。
