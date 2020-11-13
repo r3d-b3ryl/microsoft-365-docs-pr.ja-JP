@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
-ms.openlocfilehash: 20943f38dab436b48ff734753e951db4342d24ac
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350689"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021063"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -53,11 +53,11 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 
 - カスタム ドメインの現在の SPF TXT レコード。手順に関しては、「[Office 365 の DNS レコードの作成に必要な情報を収集する](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)」をご覧ください。
 
-- すべてのオンプレミス メッセージ サーバーの外部 IP アドレス。たとえば、**131.107.2.200** などです。
+- すべてのオンプレミス メッセージ サーバーの外部 IP アドレス。たとえば、 **131.107.2.200** などです。
 
 - SPF TXT レコードに含める必要があるサードパーティ製のすべてのドメインに使用するドメイン名。一部のバルク メール プロバイダーは、顧客用のサブドメインを設定しています。たとえば、会社 MailChimp に **servers.mcsv.net** を設定するなどです。
 
-- SPF TXT レコードで使う強制ルールを決定します。**-all** をお勧めします。その他の構文オプションについて詳しくは、「[Office 365 用の SPF TXT レコードの構文](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)」をご覧ください。
+- SPF TXT レコードで使う強制ルールを決定します。 **-all** をお勧めします。その他の構文オプションについて詳しくは、「 [Office 365 用の SPF TXT レコードの構文](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)」をご覧ください。
 
 ### <a name="to-add-or-update-your-spf-txt-record"></a>SPF TXT レコードを追加または更新するには
 
@@ -105,7 +105,7 @@ DNS で TXT レコードを更新する前に、情報を収集し、レコー�
 存在しないサブドメインからのメールを、攻撃者が送信することを防ぐために、すべてのドメインとサブドメインに対して追加のワイルドカード SPF レコード (`*.`) が必要です。 例:
 
 ```text
-*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+*.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
 ## <a name="more-information-about-spf"></a>SPF の詳細情報

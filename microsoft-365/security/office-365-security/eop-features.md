@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 次の表は、Exchange Online Protection (EOP) でホストされた電子メール フィルタリング サービスで使用可能な機能の一覧です。
-ms.openlocfilehash: 58893cd4a4d6c90c8d19de5a6b2f0d108ee797e0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dcbb7d2e31e230633d0401eee0ef0874eb6af615
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202929"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021039"
 ---
 # <a name="eop-features"></a>EOP の機能
 
@@ -34,10 +34,10 @@ ms.locfileid: "48202929"
 |機能|説明|
 |---|---|
 |**スパム対策保護**||
-|受信スパム検出|詳細については、「 [Microsoft 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。 <br/><br/> EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「 [Configure スタンドアローン EOP to to The 迷惑メールフォルダーにハイブリッド環境で配信する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。|
+|受信スパム検出|詳細については、「 [Microsoft 365 のスパム対策保護](anti-spam-protection.md)」を参照してください。 <p> EOP がオンプレミスの Exchange メールボックスを保護するスタンドアロン EOP 環境では、オンプレミスの Exchange のメール フロー ルール (トランスポート ルールとも言う) を構成して、迷惑メール ルールによりメッセージが [迷惑メール] フォルダーに移動できるように、EOP スパム対策フィルター判定を解釈する必要があります。 詳細については、「 [Configure スタンドアローン EOP to to The 迷惑メールフォルダーにハイブリッド環境で配信する](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)」を参照してください。|
 |送信スパム検出|送信メールの送信にサービスを使用する場合は、送信スパム対策保護を常に有効にします。 詳細については、「 [送信スパム保護](outbound-spam-controls.md)」を参照してください。|
 |バックスキャッター保護|詳細については、「 [Backscatter AND EOP](backscatter-messages-and-eop.md)」を参照してください。|
-|一括メール フィルタリング|EOP は、バルククレームしきい値 (BCL) を使用して、電子メールメッセージをスパムとしてマークします。 詳細については、次のトピックをご覧ください。 <br/><br/> [迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md) <br/> [EOP でのバルク苦情レベル (BCL)](bulk-complaint-level-values.md) <br/> [スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
+|一括メール フィルタリング|EOP は、バルククレームしきい値 (BCL) を使用して、電子メールメッセージをスパムとしてマークします。 詳細については、次のトピックをご覧ください。 <p> [迷惑メールとバルク メールの違い](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [EOP でのバルク苦情レベル (BCL)](bulk-complaint-level-values.md) <p> [スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md)|
 |悪意のある URL 禁止リスト|EOP では、メッセージ内の既知の悪意のあるリンクを検出するため、いくつかの URL 禁止リストを使用しています。|
 |フィッシング対策保護|EOP には既知のスパム発信者 750,000 名のドメインが含まれています。|
 |スプーフィング対策保護|詳細については、「 [スプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。|
@@ -46,7 +46,7 @@ ms.locfileid: "48202929"
 |カスタムのスパム対策ポリシーを作成する|よりきめ細かく制御する場合は、カスタムのスパム対策ポリシーを作成し、それを組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |スパムフィルター処理されたメッセージに対するアクションを構成する|たとえば、コンテンツによりフィルターされたメッセージを削除したり、[迷惑メール] フォルダーまたは検疫にそれらのメッセージを送信したりできます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
 |国際スパム フィルタリング|スパム対策フィルターを構成して、特定の言語で書かれたメッセージや特定の国や地域から送信されたメッセージをフィルター処理できます。 詳細については、「[スパム対策ポリシーの構成](configure-your-spam-filter-policies.md)」を参照してください。|
-|Outlook または web 上の Outlook (旧称 Outlook Web App) を使用してスパムを管理する|管理者およびエンド ユーザーは、安全な送信者の一覧および受信拒否送信者の一覧を作成できます。 詳細については、「 [Outlook での迷惑メール設定につい](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)て」を参照してください。 <br/><br/> EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。|
+|Outlook または web 上の Outlook (旧称 Outlook Web App) を使用してスパムを管理する|管理者およびエンド ユーザーは、安全な送信者の一覧および受信拒否送信者の一覧を作成できます。 詳細については、「 [Outlook での迷惑メール設定につい](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)て」を参照してください。 <p> EOP を使用してオンプレミスのメールボックスを保護している場合は、必ずディレクトリ同期を使用して、これらの設定がサービスに同期されるようにしてください。 ディレクトリ同期のセットアップ方法については、「[EOP でメール ユーザーを管理する](manage-mail-users-in-eop.md)」の「ディレクトリ同期を使用してメール ユーザーを管理する」を参照してください。|
 |誤検知と誤検知を Microsoft に報告します。|詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。|
 |エンドユーザー スパム検疫通知|詳細については、「 [エンドユーザーのスパム通知](use-spam-notifications-to-release-and-report-quarantined-messages.md) を確認し、 [エンドユーザーのスパム通知を構成する](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)」を参照してください。|
 |検疫ポータルのメッセージを表示、検索、および管理します。|詳細については、「 [EOP で管理者として検疫済みメッセージとファイルを管理する](manage-quarantined-messages-and-files.md) 」または「 [ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。|
@@ -61,7 +61,7 @@ ms.locfileid: "48202929"
 |スパイウェア対策保護|マルウェア対策保護には、ウイルス対策保護およびスパイウェア対策保護が含まれます。|
 |カスタムマルウェアフィルターポリシーを作成する|よりきめ細かく制御する場合は、カスタム マルウェア フィルター ポリシーを作成して、それを組織内の特定のユーザー、グループ、またはドメインに適用することができます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (つまり、実行順序) を変更できます。 詳細については、「 [マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」を参照してください。|
 |**メール ルーティングとコネクタ**||
-|条件付きメール ルーティング|詳細については、「 [Scenario: Exchange Online での条件付きメールルーティング](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。|
+|条件付きメール ルーティング|詳細については、「[シナリオ: Exchange Online での条件付きメール ルーティング](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)」を参照してください。|
 |便宜的な TLS または強制 TLS|便宜的または強制 TLS をコネクタで使用できます。 Oplock tls は tls 接続を試行しますが、TLS 接続が失敗した場合は SMTP 接続を使用します。 強制 tls は tls 接続を強制します。つまり、TLS 接続が失敗した場合、メッセージは拒否されます。 TLS、セキュリティ、およびコネクタの詳細については、「[Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)」をご覧ください。|
 |地域ルーティング (特定の地域へのメール フローの制限)|詳細については、「[Exchange Online Protection の概要](exchange-online-protection-overview.md)」の「EOP データセンター」セクションを参照してください。|
 |SMTP 接続チェック ツール|このツールを使用してメールフローをテストする方法の詳細については、「 [Microsoft 365 コネクタを検証することによるメールフローのテスト](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)」を参照してください。|

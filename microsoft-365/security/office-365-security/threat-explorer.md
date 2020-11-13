@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: セキュリティコンプライアンスセンターでエクスプローラおよびリアルタイム検出を使用して、 &amp; 効果的かつ効率的に脅威を調査して対応する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948495"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021123"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>脅威エクスプローラーとリアルタイム検出
 
@@ -172,7 +172,7 @@ URL と URL をクリックすると、次のような機能が強化されま�
 
 - Url のポップアップセクションのクリックセクション内に、完全にクリックされた URL (URL の一部であるすべてのクエリパラメーターを含む) を表示します。 現在、URL ドメインとパスがタイトルバーに表示されています。 この情報を拡張して、完全な URL を表示しています。
 
-- Url フィルター (url、url ドメイン、URL ドメイン、パス) にわたる修正: URL を含むメッセージを検索し、[verdict] をクリックして更新を行いました。 その一環として、プロトコルに依存しない検索のサポートが有効になっています (つまり、http を使用せずに URL を直接検索できます)。 既定では、URL 検索は明示的に指定されていない限り、http にマップされます。 以下に例を示します。
+- Url フィルター (url、url ドメイン、URL ドメイン、パス) にわたる修正: URL を含むメッセージを検索し、[verdict] をクリックして更新を行いました。 その一環として、プロトコルに依存しない検索のサポートが有効になっています (つまり、http を使用せずに URL を直接検索できます)。 既定では、URL 検索は明示的に指定されていない限り、http にマップされます。 次に例を示します。
 
   1. `http://`"Url"、"URL ドメイン"、および "url のドメインとパス" の各フィルターフィールドで、プレフィックスの有無にかかわらず検索します。 この動作は一貫しており、同じ結果を表示する必要があります。
 

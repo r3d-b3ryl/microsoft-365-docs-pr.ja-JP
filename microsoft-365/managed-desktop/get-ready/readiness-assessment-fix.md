@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002419"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021087"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>準備評価ツールで見つかった問題を修正する
 
@@ -29,6 +29,8 @@ ms.locfileid: "49002419"
 |Error | 使用している Azure Active Director (AD) の役割には、このチェックを実行するための十分な権限がありません。 |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune の設定
+
+Intune の設定には、Microsoft エンドポイントマネージャー [管理センター](https://endpoint.microsoft.com)でアクセスできます。
 
 ### <a name="autopilot-deployment-profile"></a>自動操縦展開プロファイル
 
@@ -247,6 +249,7 @@ Intune の "Windows 10 update ring" ポリシーで、Microsoft マネージド�
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory の設定
 
+Azure [portal](https://portal.azure.com)で Azure Active Directory の設定にアクセスできます。
 
 ### <a name="ad-hoc-subscriptions"></a>アドホックサブスクリプション
 
@@ -326,7 +329,7 @@ Microsoft マネージドデスクトップのユーザーには、登録後の 
 
 ### <a name="onedrive"></a>OneDrive
 
-[ **特定のドメインに参加している pc でのみ同期を許可** する] の設定は、Microsoft マネージドデスクトップと競合します。
+[ **特定のドメインに参加している pc でのみ同期を許可** する] の設定は、Microsoft マネージドデスクトップと競合します。 Onedrive [管理センター](https://admin.onedrive.com)で onedrive 設定にアクセスできます。
 
 **アドバイザリ**
 

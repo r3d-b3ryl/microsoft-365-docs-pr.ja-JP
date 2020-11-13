@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199579"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021027"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Microsoft 365 にメールを送信するユーザー以外のサービス
 
@@ -38,7 +38,7 @@ ms.locfileid: "48199579"
 
 |サービス|利点|
 |---|---|
-|このオンライン ヘルプ コンテンツ|提供内容： <br/> EOP ユーザーへの通信の配信に関連する質問の開始点。 <br/><br/> には、ポリシーと要件に関する簡単なオンラインガイドが含まれています。 <br/><br/> Microsoft によって使用されている迷惑メールフィルターと認証テクノロジの概要について説明します。|
+|このオンライン ヘルプ コンテンツ|提供内容： <ul><li>EOP ユーザーへの通信の配信に関連する質問の開始点。</li><li>には、ポリシーと要件に関する簡単なオンラインガイドが含まれています。</li><li>Microsoft によって使用されている迷惑メールフィルターと認証テクノロジの概要について説明します。</li><ul>|
 |[Microsoft サポート](#microsoft-support)|配信の問題に対するセルフヘルプと充実したサポートを提供します。|
 |[スパム対策 IP リストから除外ポータル](#anti-spam-ip-delist-portal)|IP リストからの除外要求を送信するためのツール。この要求を送信する前に、送信者は、疑わしい IP から不正なメールや悪意のあるメールが送信されないことを確認する責任があります。|
 |[Exchange Online からの迷惑メールの不正使用とスパムの報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|スパムやその他の不要なメールが Exchange Online から送信されないようにして、インターネットやメールシステムを雑然としないようにします。|

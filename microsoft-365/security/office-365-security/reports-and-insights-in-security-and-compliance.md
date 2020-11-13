@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: セキュリティ & コンプライアンスセンターで利用できるスマートレポートと分析情報、およびそれらを使用してデータを表示および調査し、迅速なアクションを実行する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 384ae51a514c31c659ce80f30e0b8c09976ec44b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 860457962e2a269829d9b3bcdb94ac29eeaeaa11
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877351"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020881"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのスマート レポートと分析情報
 
@@ -53,8 +53,8 @@ ms.locfileid: "48877351"
 |**データガバナンス** <br/> ラベルの適用方法、レコード、ラベルの傾向などに分類されたラベルに関する情報。|セキュリティ & コンプライアンスセンターで、[ **情報ガバナンス** \> **ダッシュボード** ] に移動します。|[データ ガバナンスのレポートを表示する](../../compliance/view-the-data-governance-reports.md)|
 |**脅威管理ダッシュボード** (これはセキュリティダッシュボードとも呼ばれます)  <br/> 脅威の検出、マルウェアの傾向、上位の対象ユーザー、送受信された電子メールメッセージなどの詳細|セキュリティ & コンプライアンスセンターで、[ **脅威管理** ] \> **ダッシュボード** に移動します。|[Defender for Office 365 のレポートの表示](view-reports-for-atp.md)|
 |**脅威エクスプローラー** (エクスプローラーとも呼ばれます) または **リアルタイム検出** <br/> Microsoft 365 の電子メールとファイルで検出された疑いのあるマルウェア|セキュリティ & コンプライアンスセンターで、[ **脅威管理** \> **エクスプローラー** ] または [ **リアルタイム検出** ] に移動します。<br/> |[脅威エクスプローラー (またはリアルタイムの検出)](threat-explorer.md)|
-|**Office 365 の Defender および電子メールのセキュリティレポート** <br/> 電子メールセキュリティおよび脅威保護レポート (マルウェア、スパム、フィッシング、スプーフィングレポートを含む)|セキュリティ & コンプライアンスセンターで、[ **レポート** \> **ダッシュボード** ] に移動します。|[Defender for Office 365 のレポートの表示](view-reports-for-atp.md) <br/><br/> [セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)|
-|**メール フロー** <br/> 送受信したメール メッセージ、最新の警告、上位の送信者と受信者、メール転送レポートなどに関する情報|セキュリティ & コンプライアンスセンターで、 **メールフロー** \> **ダッシュボード** と **レポート** \> **ダッシュボード** に移動します。|[セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](mail-flow-insights-v2.md) <br/><br/> [セキュリティ & コンプライアンスセンターでメールフローレポートを表示する](view-mail-flow-reports.md)|
+|**Office 365 の Defender および電子メールのセキュリティレポート** <br/> 電子メールセキュリティおよび脅威保護レポート (マルウェア、スパム、フィッシング、スプーフィングレポートを含む)|セキュリティ & コンプライアンスセンターで、[ **レポート** \> **ダッシュボード** ] に移動します。|[Defender for Office 365 のレポートの表示](view-reports-for-atp.md) <p> [セキュリティとコンプライアンス センターで電子メールのセキュリティ レポートを表示する](view-email-security-reports.md)|
+|**メール フロー** <br/> 送受信したメール メッセージ、最新の警告、上位の送信者と受信者、メール転送レポートなどに関する情報|セキュリティ & コンプライアンスセンターで、 **メールフロー** \> **ダッシュボード** と **レポート** \> **ダッシュボード** に移動します。|[セキュリティとコンプライアンス センターのメッセージ追跡の分析情報](mail-flow-insights-v2.md) <p> [セキュリティ & コンプライアンスセンターでメールフローレポートを表示する](view-mail-flow-reports.md)|
 |**GDPR 準拠** <br/> データ主体、ラベルの傾向、アクティブ & クローズされたケースへのリンクなど、GDPR のコンプライアンスに関する情報|[セキュリティ & コンプライアンスセンター] で、[ **Data privacy** \> **GDPR dashboard** ] に移動します。|[GDPR のための Office 365 の情報保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**監査ログ** <br/> Microsoft 365 のアクティビティ、ユーザー、ファイルまたはフォルダーなどに関する情報|セキュリティ & コンプライアンスセンターで、[ **検索 & 調査** \> **監査ログの検索** ] に移動します。|[セキュリティ/コンプライアンス センターで監査ログを検索する](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**コンプライアンスレポート** <br/> FedRAMP のレポート、ガバナンス、リスクとコンプライアンス レポート、ISO 情報セキュリティ管理レポート、Service Organization Controls の監査レポートと評価レポート|[セキュリティ & コンプライアンスセンター] で、[ **サービスアシュアランス** \> **コンプライアンスレポート** ] に移動します。|[Office 365 のセキュリティ & コンプライアンスを計画する](../../compliance/plan-for-security-and-compliance.md)|
