@@ -82,7 +82,7 @@
 - name: 情報保護の管理
   items:
     - name: データの把握、データの保護、データ損失の防止
-      href: protect-information.md
+      href: information-protection.md
     - name: 機密情報の種類
       items:
         - name: 機密情報の種類のエンティティ定義
