@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Office 365 セキュリティ/コンプライアンス センターまたは Microsoft 365 コンプライアンス センターを使用して統合監査ログを検索し、Office 365 組織でのユーザーと管理者のアクティビティを確認できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ded01bc262cd1bb2fbabcd237278447e486d109a
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941454"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999511"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>コンプライアンス センターで監査ログを検索する
 
@@ -140,7 +140,7 @@ ms.locfileid: "48941454"
 ## <a name="search-the-audit-log"></a>監査ログの検索
 
 > [!NOTE]
-> 現在、監査ログ検索ツールで Azure AD のアクティビティが利用できない問題を調査中です。 この問題は 2020 年 10 月 26 日頃に始まりました。 これらのアクティビティには、Azure AD ユーザー管理アクティビティ、グループ管理アクティビティ、アプリケーション管理アクティビティ、役割管理アクティビティ、およびディレクトリ管理アクティビティが含まれます。 問題が解決したら、更新プログラムを提供します。
+> 2020 年 10 月 22 日から 2020 年 11 月 6 日まで、監査ログ検索ツールで Azure AD アクティビティが使用できないという問題がありました。 これらのアクティビティには、Azure AD ユーザー管理アクティビティ、グループ管理アクティビティ、アプリケーション管理アクティビティ、役割管理アクティビティ、およびディレクトリ管理アクティビティが含まれます。 影響期間中の不足しているイベントは、今後数日間で利用可能になり、2020 年 11 月 20 日までに完了すると予想されます。 場合によっては、2020 年 10 月 26 日から 2020 年 11 月 5 日までの間に生成されたイベントの重複イベントデータが発生することがあります。
     
 以下に、Office 365 で監査ログを検索するためのプロセスを示します。
 

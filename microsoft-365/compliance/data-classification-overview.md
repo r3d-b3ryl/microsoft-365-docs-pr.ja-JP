@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 503235ad2ee35760a03cb2427d1e84f5f3639b9f
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379220"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999397"
 ---
 # <a name="know-your-data---data-classification-overview"></a>データを把握する - データ分類の概要
 
@@ -39,7 +39,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 - [トレーニング可能な分類子](classifier-learn-about.md)
 - [機密情報の種類](what-the-sensitive-information-types-look-for.md)
 
-データ分類は、**Microsoft 365 コンプライアンス センター**または **Microsoft 365 セキュリティ センター**  >  [**分類**]  >  [**データ分類**] で確認することができます。
+データ分類は、 **Microsoft 365 コンプライアンス センター** または **Microsoft 365 セキュリティ センター**  >  [ **分類** ]  >  [ **データ分類** ] で確認することができます。
 
 データ分類機能についてのビデオ ツアーを開始します。
 
@@ -49,12 +49,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 
 ## <a name="prerequisites"></a>前提条件
 
-データ分類にアクセスし、データ分類を使用するすべてのアカウントには、以下のサブスクリプションのいずれかからライセンスが割り当てられている必要があります。
-
-- Microsoft 365 (E5/A5)
-- Office 365 (E5)
-- 高度なコンプライアンス (E5) アドオン
-- 高度な脅威インテリジェンス (E5) アドオン
+さまざまなサブスクリプションがエンドポイント DLP をサポートしています。 エンドポイント DLP のライセンス オプションについては、「[情報保護ライセンスのガイダンス](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)」を参照してください。 
 
 ### <a name="permissions"></a>アクセス許可
 
