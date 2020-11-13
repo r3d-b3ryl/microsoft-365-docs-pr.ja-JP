@@ -415,8 +415,6 @@
           href: manage-microsoft-365-groups.md
         - name: ガバナンス
           href: manage-microsoft-365-identity-governance.md
-        - name: ユーザーのメールボックスで削除されたアイテムを復元する
-          href: recover-deleted-items-in-a-mailbox.md
         - name: ディレクトリ同期
           items:
             - name: 状態の表示
@@ -604,7 +602,7 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: グループ
           items:
-            - name: グループ メンバーシップを管理する
+            - name: セキュリティ グループ メンバーシップを管理する
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Microsoft 365 グループを管理する
               href: manage-microsoft-365-groups-with-powershell.md
