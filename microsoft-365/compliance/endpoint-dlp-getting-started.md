@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
-ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48990552"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999419"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -173,7 +173,14 @@ Endpoint DLP からのデータは、[Activity エクスプローラー](data-cl
 > [!NOTE]
 >これは、ライセンス執行時でのエクスペリエンスです。 必要なライセンスがないと、データは表示されず、アクセスできません。
 
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>Activity エクスプローラーでのEndpoint DLPデータの表示
+### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>DLP 警告管理ダッシュボードでのエンドポイント DLP 警告の表示
+
+1. Microsoft 365 コンプライアンス センターの [データ損失防止] ページを開き、[アラート] を選択します。
+
+2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
+
+
+### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>アクティビティ エクスプローラーでのエンドポイント DLP データの表示
 
 1. Microsoft 365 コンプライアンスセンターでドメインの[データ分類ページ](https://compliance.microsoft.com/dataclassification?viewid=overview)を開き、Activity エクスプローラーを選択します。
 
