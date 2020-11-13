@@ -11,16 +11,17 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 組織外のユーザーとファイルを共有する場合、情報が偶発的に公開されることを防止する方法を説明します。
-ms.openlocfilehash: 6250103e36900da76a4529a73b78f14862ab86ef
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769008"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029971"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>組織外のユーザーと共有する場合、ファイルが偶発的に公開されることを制限する
 
