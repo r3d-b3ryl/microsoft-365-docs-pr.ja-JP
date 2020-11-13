@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Power BI の Microsoft 365 Usage Analytics テンプレートアプリを使用して、テナントのデータの収集を開始する方法について説明します。
-ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941333"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071457"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析を有効にする
 
@@ -92,7 +92,7 @@ Power BI をまだ持っていない場合は、 [POWER Bi Pro にサインア�
   
 8. テンプレートアプリがインスタンス化されると、Microsoft 365 usage analytics ダッシュボードが web 上の Power BI で利用できるようになります。 ダッシュボードの最初の読み込みには、2 ~ 30 分かかります。
   
-テナントレベル集計は、すべてのレポートで使用可能になります。 **ユーザーレベルの詳細は、カレンダー月の最初または15日以降にのみ使用可能に** なります。 これは、ユーザーアクティビティの下にあるすべてのレポートに影響します。 これらのレポートを表示および使用する方法に関するヒントについて [は、「Microsoft 365 usage analytics のレポートをナビゲートして利用](navigate-and-utilize-reports.md) する」を参照してください。
+テナントレベルの集計は、を選択した後、すべてのレポートで利用できるようになります。 **ユーザーレベルの詳細は、選択を有効にした後、次の5番目の月の5分の間のみ利用可能になり** ます。 これにより、ユーザーアクティビティの下にあるすべてのレポートが影響を受ける可能性があります (「 [Microsoft 365 usage analytics のレポート](navigate-and-utilize-reports.md) を表示および使用する方法に関するヒント」を参照してください)。
     
 ## <a name="make-the-collected-data-anonymous"></a>収集されたデータを匿名にする
 

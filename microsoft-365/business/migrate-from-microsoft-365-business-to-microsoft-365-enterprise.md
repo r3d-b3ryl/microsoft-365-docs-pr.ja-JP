@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Microsoft 365 Business Premium から Microsoft 365 E3 にビジネスを移行する方法について説明します。
-ms.openlocfilehash: 874da0d35759c8af4c3ee2ca4a1bdfa90a91627c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2b15d20e3ae1ad0bef871b139e61abf3ba260729
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842202"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071429"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>Microsoft 365 Business Premium から Microsoft 365 E3 への移行
 
@@ -57,7 +57,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 | Teams    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
 | OneDrive for Business    | ユーザーごとに 1 TB のストレージ制限    | 無制限 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | ![Microsoft 365 E3 に含まれています](../media/check-mark.png) | 
-| Outlook カスタマーマネージャー、ミル Eiq    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | | 
+| ミル Eiq    | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | | 
 | **脅威保護**        | | | 
 | 攻撃対象領域の削減機能    | [このリストを表示する](#threat-protection) | Microsoft Edge のハードウェアベースの分離のエンタープライズ管理 | 
 | Office 用 Defender 365 プラン1 | ![Microsoft 365 Business Premium に含まれている](../media/check-mark.png)    | 含まれていませんが、に追加できます。 | 
@@ -106,7 +106,7 @@ Microsoft 365 Business Premium は、お客様の中小企業に必要なすべ�
 最大10個のアプリに対して、クラウドアプリの検出、Azure AD Connect の正常性、および SSO の使用を開始できます。
 
 >[!Note]
->Microsoft 365 E3 に移行されたユーザーは、Outlook カスタマーマネージャーおよびミル Eiq を使用できなくなります。
+>Microsoft 365 E3 に移行されたユーザーは、ミル Eiq を使用できなくなりました。
 >
 
 <a name="threat-protection"></a>

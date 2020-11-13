@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279569"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071491"
 ---
 # <a name="register-new-devices-yourself"></a>新しいデバイスを自分で登録する
 
@@ -47,13 +47,15 @@ PowerShell Gallery web サイトで [Get-WindowsAutoPilotInfo.ps1](https://www.p
 1.  管理者権限を持つ PowerShell プロンプトを開きます。
 2.  `Install-Script -Name Get-WindowsAutoPilotInfo` を実行します。
 3.  `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv` を実行します。
+4.  `powershell -ExecutionPolicy restricted`を実行して、以降の制限なしスクリプトが実行されないようにします。
+
 
 #### <a name="flash-drive-method"></a>Flash drive メソッド
 
 1. 登録している以外のデバイスに USB ドライブを挿入します。
 2. 管理者権限を持つ PowerShell プロンプトを開きます。
 3. `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>` を実行します。
-4. 登録するデバイスを有効にしますが、 *セットアップの操作は開始*しないでください。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
+4. 登録するデバイスを有効にしますが、 *セットアップの操作は開始* しないでください。 セットアップの操作を誤って開始した場合は、デバイスをリセットまたは再イメージする必要があります。
 5. USB ドライブを挿入して、SHIFT + F10 キーを押します。
 6. 管理者権限で PowerShell プロンプトを開き、を実行し `cd <pathToUsb>` ます。
 7. `Set-ExecutionPolicy -ExecutionPolicy Unrestricted` を実行します。
@@ -73,7 +75,7 @@ PowerShell Gallery web サイトで [Get-WindowsAutoPilotInfo.ps1](https://www.p
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>管理ポータルを使用してデバイスを登録する
 
-[Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)で、左側のナビゲーションウィンドウの [**デバイス**] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[ **デバイス**] を選択します。 [Microsoft Managed Desktop Devices] ワークスペースで、[ **+ デバイスの登録** ] を選択して、新しいデバイスを登録するためのフライインを開きます。
+[Microsoft エンドポイントマネージャー](https://endpoint.microsoft.com/)で、左側のナビゲーションウィンドウの [ **デバイス** ] を選択します。 メニューの [Microsoft Managed Desktop] セクションを探し、[ **デバイス** ] を選択します。 [Microsoft Managed Desktop Devices] ワークスペースで、[ **+ デバイスの登録** ] を選択して、新しいデバイスを登録するためのフライインを開きます。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -83,8 +85,8 @@ PowerShell Gallery web サイトで [Get-WindowsAutoPilotInfo.ps1](https://www.p
 
 次の手順を実行します。
 
-1. [ **ファイルのアップロード**] で、以前に作成した CSV ファイルへのパスを指定します。
-3. [ **デバイスの登録**] を選択します。 システムによってデバイス **ブレード**上のデバイスの一覧にデバイスが追加され、[ **登録保留中**] としてマークされます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは **ユーザーのための** 準備完了として表示され、ユーザーが使用を開始するのを待っています。
+1. [ **ファイルのアップロード** ] で、以前に作成した CSV ファイルへのパスを指定します。
+3. [ **デバイスの登録** ] を選択します。 システムによってデバイス **ブレード** 上のデバイスの一覧にデバイスが追加され、[ **登録保留中** ] としてマークされます。 通常、登録にかかる時間は10分未満で、成功した場合、デバイスは **ユーザーのための** 準備完了として表示され、ユーザーが使用を開始するのを待っています。
 
 
 メインページでのデバイス登録の進行状況を監視できます。 報告される状態は次のとおりです。
@@ -119,7 +121,6 @@ PowerShell Gallery web サイトで [Get-WindowsAutoPilotInfo.ps1](https://www.p
 > ユーザーにデバイスを渡す前に、そのユーザーの [適切なライセンス](../get-ready/prerequisites.md) を取得して適用していることを確認してください。
 
 すべてのライセンスが適用されている場合は、 [デバイスを使用する準備](get-started-devices.md)ができたら、ユーザーはデバイスを起動して、Windows セットアップ操作を続行することができます。
-
 
 
 
