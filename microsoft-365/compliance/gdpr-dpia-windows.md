@@ -8,26 +8,26 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 5d30440d0051f4ec678effac657808853c7a6515
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: a31ccc8cab6995e0647e397be4b869e48da599b4
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305007"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070891"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-data-processor-service-for-windows-enterprise"></a>データ保護影響評価: Windows Enterprise 向け Microsoft データ プロセッサー サービスを利用するデータ管理者向けガイダンス
 
 >[!NOTE]
->このトピックは、Windows Enterprise プレビュー プログラム用データプロセッササービスの参加者を対象としており、特定の使用条件に同意することが要求されています。 プログラムの詳細を確認し、使用条件に同意するには、[https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview) を参照してください。
+>このトピックは、Windows Enterprise プレビュー プログラム用データ プロセッサー サービスの参加者を対象としており、特定の使用条件に同意することが要求されています。プログラムの詳細を確認し、使用条件に同意するには、[https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview) を参照してください。
 
-一般データ保護規則 (GDPR) の下では、データ管理者は「自然人の権利と自由を危険にさらす可能性が高い」操作処理に関してデータ保護影響評価 (DPIA) を作成することが必要です。 Windows Enterprise 向けデータ プロセッサー サービス自体には、それを使用するデータ管理者による DPIA の作成を要求する要素が含まれているわけではありません。 DPIAI が必要かどうかは、データ管理者が Windows Enterprise 向けデータ プロセッサー サービスを展開、構成、使用する方法の詳細と文脈によって決まります。 
+一般データ保護規則 (GDPR) では、データ管理者は '自然人の権利と自由を危険にさらす可能性が高い' 操作処理に関してデータ保護影響評価 (DPIA) を作成することが要求されます。 Windows Enterprise 向けデータ プロセッサー サービス自体には、それを使用するデータ管理者による DPIA の作成を要求する要素が含まれているわけではありません。 DPIAI が必要かどうかは、データ管理者が Windows Enterprise 向けデータ プロセッサー サービスを展開、構成、使用する方法の詳細と文脈によって決まります。 
 
 このドキュメントは、DPIA が必要であるかどうかを判断し、必要な場合には DPIA に含める詳細情報を決定する上で役立つ、Windows Enterprise 向けデータ プロセッサー サービスに関する情報をデータ管理者に提供することを目的としています。
 

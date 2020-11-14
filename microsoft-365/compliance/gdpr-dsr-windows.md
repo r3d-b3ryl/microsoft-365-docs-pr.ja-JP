@@ -8,35 +8,35 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e4065fc992305976a1309b05a473e15e1f03f09c
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304901"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070881"
 ---
-# <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Windows エンタープライズ データ主体要求のデータ プロセッサー サービス 
+# <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR および CCPA のための Windows Enterprise データ主体要求のデータ プロセッサー サービス 
 
 >[!NOTE]
->このトピックは、Windows Enterprise プレビュー プログラム用データプロセッササービスの参加者を対象としており、特定の使用条件に同意することが要求されています。 プログラムの詳細を確認し、使用条件に同意するには、[https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview) を参照してください。
+>このトピックは、Windows Enterprise プレビュー プログラム用データ プロセッサー サービスの参加者を対象としており、特定の使用条件に同意することが要求されています。プログラムの詳細を確認し、使用条件に同意するには、[https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview) を参照してください。
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>データ主体要求 (DSR) の概要 
-EU 一般データ保護規則 (GDPR) は、規制において_データ主体_と呼ばれる人に、雇用主または他の種類の機関や組織 (_データ コントローラー_または単に_コントローラー_と呼ばれます) によって収集された個人データを管理する権限を与えます。 GDPR における個人データは、特定された自然人または特定可能な自然人に関連するすべてのデータとして広範囲に定義されています。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。 データ主体がコントローラーに対して個人データへのアクションを実行するよう正式に要求することを、_データ主体の要求_または DSR と呼びます。 
+EU 一般データ保護規則 (GDPR) は、規制において _データ主体_ と呼ばれる人に、雇用主または他の種類の機関や組織 ( _データ コントローラー_ または単に _コントローラー_ と呼ばれます) によって収集された個人データを管理する権限を与えます。 GDPR における個人データは、特定された自然人または特定可能な自然人に関連するすべてのデータとして広範囲に定義されています。 GDPR では、個人データに対するデータ主体固有の権限が付与されます。このような権限には、個人データのコピーの取得、個人データの修正の要求、個人データの処理の制限、個人データの削除、または別のコントローラーに移動できる電子的な形式での個人データの受け取りが含まれます。 データ主体がコントローラーに対して個人データへのアクションを実行するよう正式に要求することを、 _データ主体の要求_ または DSR と呼びます。 
 
 同様に、カリフォルニア州消費者プライバシー法 (CCPA) では、個人情報の削除、アクセスおよび受信 (移植性) など、GDPR のデータ主体の権利に類似している権利を含む、カリフォルニア州の消費者のプライバシーの権利および義務を規定します。 また、CCPA では、特定の開示、権利の行使を選択する際の差別に対する保護、“売上“ として分類された特定のデータ転送の “オプトアウト/オプトイン“ 要件を規定します。 「販売」は広く定義されており、有価約因に関するデータの共有を含みます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)」を参照してください。
 
 このガイドでは、DSR への対応として個人データを見つけて処理するコントローラーのお客様を支援する目的で、Microsoft の製品、サービス、管理ツールをどのように使用できるかを説明します。特に、Microsoft クラウドにある個人データを検出、アクセス、処理する方法を示します。このガイドで説明するプロセスの概要は次のとおりです: 
 
-1. **評価**—Microsoft クラウドにある個人データを取り出し、コピーが要求されている場合には、データ サブジェクトが利用できる形でコピーを作成します。 
-2. **削除**—Microsoft クラウドに格納されていた個人データを完全に削除します。 
-3. **エクスポート**—個人データの電子的コピー (マシンで読み取り可能な形式) をデータ サブジェクトに提供します。 CCPA における個人情報とは、識別された人、または識別可能な人に関するあらゆる情報のことです。
+1. **評価** —Microsoft クラウドにある個人データを取り出し、コピーが要求されている場合には、データ サブジェクトが利用できる形でコピーを作成します。 
+2. **削除** —Microsoft クラウドに格納されていた個人データを完全に削除します。 
+3. **エクスポート** —個人データの電子的コピー (マシンで読み取り可能な形式) をデータ サブジェクトに提供します。 CCPA における個人情報とは、識別された人、または識別可能な人に関するあらゆる情報のことです。
 
 CCPA における個人情報とは、識別された人、または識別可能な人に関するあらゆる情報のことです。 個人の私的、公的、または職業上の役割による区別はありません。 "個人情報" と定義された用語は、GDPR における "個人データ" とほぼ同義語です。 ただし、CCPA では家族データおよび世帯データも含まれます。 CCPA の詳細については、「[カリフォルニア州消費者プライバシー法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)」と「[カリフォルニア州消費者プライバシー法に関する FAQ](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)」を参照してください。
 
@@ -98,4 +98,4 @@ Microsoft は、既存のアプリケーション プログラミング イン�
 
 ## <a name="notify-about-exporting-or-deleting-issues"></a>エクスポートまたは削除に関する問題を通知する 
 
-Azure portal でデータをエクスポートまたは削除中に問題が発生した場合は、Azure ポータルの **[ヘルプとサポート]** ブレードに移動し、**[サブスクリプションの管理] > [他のセキュリティとコンプライアンスの要求] > [プライバシー ブレードと GDPR 要求]** で新しいチケットを送信します。 
+Azure portal でデータをエクスポートまたは削除中に問題が発生した場合は、Azure ポータルの **[ヘルプとサポート]** ブレードに移動し、 **[サブスクリプションの管理] > [他のセキュリティとコンプライアンスの要求] > [プライバシー ブレードと GDPR 要求]** で新しいチケットを送信します。 

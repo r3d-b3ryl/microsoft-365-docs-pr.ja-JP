@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920527"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073138"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -204,14 +204,7 @@ Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージ
     
 - 自動適用ラベルを割り当てるルールが複数あり、コンテンツが複数のルールの条件を満たしている場合、最も古いルール (作成日順) の保持ラベルが割り当てられます。
     
-保持ラベルが別の保持ラベルではなくどのように適用されるかを理解するには、ラベルを明示的に割り当てることと、ラベルを暗黙的に割り当てることの違いを理解することが役立ちます。
-
-- ラベル ポリシーから適用された保持ラベルは明示的に割り当てられる
-- 自動適用ポリシーから自動的に適用された保持ラベルは、暗黙的に割り当てられる
-
-明示的に割り当てられた保持ラベルは、暗黙的に割り当てられた保持ラベルよりも優先されます。 詳細については、このページの「[保持の原則または優先順位](retention.md#the-principles-of-retention-or-what-takes-precedence)」のセクションを参照してください。
-
-SharePoint では、SharePoint ライブラリ、フォルダー、またはドキュメントセット内のすべてのコンテンツに既定のラベルを構成するときに、保持ラベルを暗黙的に割り当てることもできます。 このシナリオでは、自動適用されたラベルは既定のラベルよりも優先されますが、既定のラベルを使用する場合のすべての結果を完全に把握するには、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)セクションのすべてのコンテンツに既定の保持ラベルを適用する 」の情報を参照してください。 
+既定のラベルを使用する場合のすべての結果を完全に把握するには、「[SharePoint ライブラリ、フォルダー、またはドキュメント セット内のすべてのコンテンツに既定の保持ラベルを適用する](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)」セクションを参照してください。
 
 #### <a name="monitoring-retention-labels"></a>保持ラベルの監視
 
