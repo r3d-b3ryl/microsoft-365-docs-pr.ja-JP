@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーを使用すると、組織はリスク評価を簡略化および自動化し、リスクに対処するための推奨される処置を提案します。
-ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791809"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072936"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft コンプライアンスマネージャー
 
@@ -30,7 +30,7 @@ ms.locfileid: "48791809"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新機能: コンプライアンスマネージャーの GA リリース
 
-コンプライアンスマネージャーは、一般公開 (GA) として、 [Microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)内のエンドツーエンドのコンプライアンス管理ソリューションとして提供されるようになりました。 このリリースでは、コンプライアンスマネージャーは、Microsoft Service Trust Portal の以前の場所から移行を完了します。
+コンプライアンスマネージャーは、一般公開 (GA) として、 [Microsoft 365 コンプライアンスセンター](microsoft-365-compliance-center.md)内のエンドツーエンドのコンプライアンス管理ソリューションとして提供されるようになりました。 このリリースでは、コンプライアンスマネージャーは、Microsoft Service Trust Portal の以前の場所から移行を完了します。 また、コンプライアンスマネージャーは米国政府機関 (GCC) のお客様にも提供されるようになりました。
 
 コンプライアンススコアのパブリックプレビューとして開始されたものは、コンプライアンス管理機能が強化され、使いやすさが向上した一元的なツールに発展しました。  GA リリースは、コンプライアンスアクティビティを拡張するのに役立つ、事前に作成された評価のコレクションを提供します。
 

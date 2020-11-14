@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーのユーザー権限とロールを設定し、アクションの自動化されたテストを構成します。 ユーザー履歴を管理し、ダッシュボードビューにフィルターを適用します。
-ms.openlocfilehash: 141ddc8ac371b1a36c69ee79b5438408f8da19e8
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791895"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072892"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -30,9 +30,9 @@ ms.locfileid: "48791895"
 
 ## <a name="who-can-access-compliance-manager"></a>コンプライアンスマネージャーにアクセスできるユーザー
 
-コンプライアンスマネージャーは、Office 365 ライセンスおよび Microsoft 365 ライセンスを持つ組織が利用できます。 評価の可用性および管理機能は、使用許諾契約によって異なります。  [サービスの説明の詳細を表示](https://go.microsoft.com/fwlink/?linkid=2132371)します。
+コンプライアンスマネージャーは、Office 365 と Microsoft 365 のライセンスを持つ組織、および米国政府機関向けの Community Cloud (GCC) のお客様を対象としています。 評価の可用性および管理機能は、使用許諾契約によって異なります。  [サービスの説明の詳細を表示](https://go.microsoft.com/fwlink/?linkid=2132371)します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 通常、コンプライアンスマネージャーにアクセスする最初のユーザーは、組織の Microsoft 365 グローバル管理者になることがあります。 初めてコンプライアンスマネージャーを訪れた場合は、グローバル管理者サインインを推奨し、以下の説明に従ってユーザーのアクセス許可を設定することをお勧めします。
 
@@ -355,5 +355,5 @@ Microsoft 365 コンプライアンスセンターのコンプライアンスマ
 
 **詳細については** 、「 [評価テンプレートの使用方法」を参照して](compliance-manager-templates.md)ください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 [評価を設定](compliance-manager-assessments.md)してコンプライアンスマネージャーをカスタマイズします。

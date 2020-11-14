@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンスマネージャーのクイックスタートガイドを使用すると、コンプライアンスマネージャーの理解、設定、および使用についての移行に役立てることができます。
-ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791793"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071972"
 ---
 # <a name="compliance-manager-quickstart"></a>コンプライアンスマネージャー用クイックスタート
 
@@ -43,6 +43,7 @@ ms.locfileid: "48791793"
 - [ダッシュボードビューにフィルターを適用する](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [改善アクションについて](compliance-manager-setup.md#improvement-actions-page)
 - [評価を理解する](compliance-manager.md#assessments)
+- [Microsoft コンプライアンス構成マネージャーを使用して、お使いの環境のクイックスキャンを実行する](compliance-manager-mcca.md)
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>ランプアップ: コンプライアンスマネージャーを構成してコンプライアンスアクティビティを管理する
 

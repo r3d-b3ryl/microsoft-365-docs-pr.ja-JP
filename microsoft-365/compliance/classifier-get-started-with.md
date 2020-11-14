@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 の分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。そのためのサンプルを参照してください。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を向上させる方法について説明します。
-ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906348"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072966"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>トレーニング可能な分類子の使用を開始する (プレビュー)
 
@@ -53,7 +53,7 @@ UI の分類子にアクセスするには、次のようにします。
 - コミュニケーションコンプライアンスポリシーのシナリオ: Insider リスク管理管理者、監督レビュー管理者 
 
 > [!IMPORTANT]
-> 既定では、カスタムの分類子を作成したユーザーのみが、その分類子によって行われた予測を教育およびレビューすることができます。 他のユーザーが分類子予測をトレーニングおよびレビューできるようにする場合は、「 [他のユーザーにトレーニングとレビューの権限を付与](#give-others-train-and-review-rights)する」を参照してください。
+> 既定では、カスタムの分類子を作成したユーザーのみが、その分類子によって行われた予測を教育およびレビューすることができます。
 
 ## <a name="prepare-for-a-custom-trainable-classifier"></a>カスタム trainable 分類子の準備 
 
@@ -156,21 +156,3 @@ Trainable クラシファイアが、予測モデルを構築するのに十分�
 20. 分類子を発行します。
 
 21. 公開されると、分類子は、[条件に基づいて、条件に基づいて [自動適用の保持ラベルポリシー](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) ] を使用して[Office の自動ラベル](apply-sensitivity-label-automatically.md)付けの条件として使用できるようになり[ます。](communication-compliance.md)
-
-## <a name="give-others-train-and-review-rights"></a>他のユーザーにトレーニングおよびレビュー権限を付与する
-
-この手順を使用して、ユーザー設定の trainable 分類子をトレーニング、レビュー、調整する権限を他のユーザーに付与します。  
- 
-1. グローバル管理者または電子情報開示管理者は、分類子の作成者として、「 [connect To Security & コンプライアンスセンター PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true)」の手順に従って、PowerShell を使用してコンプライアンスセンターに接続します。
-
-2. 次のコマンドを実行します。
-
-   ```powershell
-   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-   ```
-   
-   以下に例を示します。
-   
-   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
-
-   このコマンドは複数回実行して複数のユーザーを追加することができます。 Exchange Online Protection (EOP) の役割グループのみを追加でき、Azure の役割グループは追加できないことに注意してください。
