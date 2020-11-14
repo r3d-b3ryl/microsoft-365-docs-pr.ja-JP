@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a2065ac324acd0a4d5980bceb97f9f6b8ad73058
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 1e2624fea7a93013e4b4de2dd4ede4144000f075
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002247"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073085"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間のメールボックスの移行 (プレビュー)
 
@@ -59,10 +59,10 @@ ms.locfileid: "49002247"
 
 :::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="メールボックスの移行のテナントの準備。":::
 
+[この画像のより大きいバージョンを参照してください](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)。
+
 <!--
 [![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
-
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>テナントの準備

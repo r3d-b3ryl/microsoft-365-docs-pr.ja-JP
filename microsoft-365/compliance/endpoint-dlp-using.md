@@ -17,7 +17,7 @@ ms.collection:
 - SPO_Content
 search.appverid:
 - MET150
-description: Microsoft 365 エンドポイントのデータ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
+description: Microsoft 365 エンドポイント データ損失防止 (EPDLP) の場所を使用するようにデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
 ms.openlocfilehash: 6de6443dc0d276c862db43963ac28bd762e3756f
 ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
@@ -25,7 +25,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/10/2020
 ms.locfileid: "48984921"
 ---
-# <a name="using-endpoint-data-loss-prevention"></a>エンドポイントのデータ損失防止の使用
+# <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
 この記事では、デバイスを場所として使用する DLP ポリシーを作成および変更する 3 つのシナリオについて説明します。
 

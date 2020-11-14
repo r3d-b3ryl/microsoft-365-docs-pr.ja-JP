@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して Microsoft 365 グループメンバーシップを管理する
+title: PowerShell でセキュリティグループのメンバーシップを維持する
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -18,18 +18,18 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: PowerShell を使用して Microsoft 365 グループのメンバーシップを管理する方法について説明します。
-ms.openlocfilehash: 7763f4275ff31f3dc26aa7fecba93e545f7c7644
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+ms.openlocfilehash: b47f501c9726e1d4dcb2e9d61108224db0408b8e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48580976"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073063"
 ---
-# <a name="maintain-microsoft-365-group-membership-with-powershell"></a>PowerShell を使用して Microsoft 365 グループメンバーシップを管理する
+# <a name="maintain-security-group-membership-with-powershell"></a>PowerShell でセキュリティグループのメンバーシップを維持する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-Microsoft 365 の PowerShell を microsoft 365 管理センターの代わりとして使用して、Microsoft 365 のグループメンバーシップを維持することができます。 
+Microsoft 365 の PowerShell を microsoft 365 管理センターの代わりとして使用して、Microsoft 365 のセキュリティグループメンバーシップを維持することができます。 
 
 >[!Note]
 >Microsoft 365 グループメンバーシップを Microsoft 365 管理センターで[管理する方法について説明](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)します。 その他のリソースの一覧については、「 [Manage users and groups](https://docs.microsoft.com/microsoft-365/admin/add-users/)」を参照してください。
@@ -40,7 +40,7 @@ Microsoft 365 の PowerShell を microsoft 365 管理センターの代わりと
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>ユーザーアカウントをグループのメンバーとして追加または削除する
 
-**Upn を使用してユーザーアカウントを追加するに**は、ユーザーアカウントのユーザープリンシパル名 (UPN) とグループ表示名を入力し、"<" と ">" 文字を削除して、これらのコマンドを powershell ウィンドウまたは Powershell 統合スクリプト環境 (ISE) で実行します。
+**Upn でユーザーアカウントを追加するに** は、ユーザーアカウントのユーザープリンシパル名 (UPN) (例: belindan@contoso.com) とセキュリティグループの表示名を入力し、"<" と ">" 文字を削除して、これらのコマンドを powershell ウィンドウまたは Powershell 統合スクリプト環境 (ISE) で実行します。
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
@@ -48,7 +48,7 @@ $groupName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**表示名を使用してユーザーアカウントを追加するに**は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
+**表示名を使用してユーザーアカウントを追加するに** は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
 
 ```powershell
 $userName="<display name of the user account to add>"
@@ -56,7 +56,7 @@ $groupName="<display name of the group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectID -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**UPN によってユーザーアカウントを削除するに**は、ユーザーアカウントの upn (例: belindan@contoso.com) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
+**UPN によってユーザーアカウントを削除するに** は、ユーザーアカウントの upn (例: belindan@contoso.com) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -64,7 +64,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**表示名を使用してユーザーアカウントを削除するに**は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
+**表示名を使用してユーザーアカウントを削除するに** は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
 
 ```powershell
 $userName="<display name of the user account to remove>"
@@ -76,7 +76,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
 
 セキュリティグループには、他のグループをメンバーとして含めることができます。 ただし、Microsoft 365 グループはできません。 このセクションでは、セキュリティグループに対してのみグループを追加または削除するための PowerShell コマンドについて説明します。
 
-**表示名でグループを追加するに**は、追加するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
+**表示名でグループを追加するに** は、追加するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -84,7 +84,7 @@ $groupName="<display name of the group that will contain the member group>"
 Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -ObjectID (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**表示名によってグループを削除するに**は、削除するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
+**表示名によってグループを削除するに** は、削除するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -99,7 +99,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
 
 ### <a name="add-or-remove-user-accounts-as-members-of-a-group"></a>ユーザーアカウントをグループのメンバーとして追加または削除する
 
-**Upn でユーザーアカウントを追加するに**は、ユーザーアカウントのユーザープリンシパル名 (UPN) (例: belindan@contoso.com) とグループの表示名を入力して、"<" と ">" 文字を削除し、これらのコマンドを powershell ウィンドウまたは powershell ISE で実行します。
+**Upn でユーザーアカウントを追加するに** は、ユーザーアカウントのユーザープリンシパル名 (UPN) (例: belindan@contoso.com) とグループの表示名を入力して、"<" と ">" 文字を削除し、これらのコマンドを powershell ウィンドウまたは powershell ISE で実行します。
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
@@ -107,7 +107,7 @@ $groupName="<display name of the group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**表示名を使用してユーザーアカウントを追加するに**は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
+**表示名を使用してユーザーアカウントを追加するに** は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
 
 ```powershell
 $userName="<display name of the user account to add>"
@@ -115,7 +115,7 @@ $groupName="<display name of the group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayName -eq $userName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**UPN によってユーザーアカウントを削除するに**は、ユーザーアカウントの upn (例: belindan@contoso.com) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
+**UPN によってユーザーアカウントを削除するに** は、ユーザーアカウントの upn (例: belindan@contoso.com) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
 
 ```powershell
 $userUPN="<UPN of the user account to remove>"
@@ -123,7 +123,7 @@ $groupName="<display name of the group>"
 Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.UserPrincipalName -eq $userUPN }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID
 ```
 
-**表示名を使用してユーザーアカウントを削除するに**は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
+**表示名を使用してユーザーアカウントを削除するに** は、ユーザーアカウントの表示名 (例: ベルギー Inda newman) とグループの表示名を入力し、powershell ウィンドウまたは powershell ISE でこれらのコマンドを実行します。
 
 ```powershell
 $userName="<display name of the user account to remove>"
@@ -135,7 +135,7 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolUser | Where { $_.DisplayNa
 
 セキュリティグループには、他のグループをメンバーとして含めることができます。 ただし、Microsoft 365 グループはできません。 このセクションでは、セキュリティグループに対してのみグループを追加または削除するための PowerShell コマンドについて説明します。
 
-**表示名でグループを追加するに**は、追加するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
+**表示名でグループを追加するに** は、追加するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
 
 ```powershell
 $groupMemberName="<display name of the group to add>"
@@ -143,7 +143,7 @@ $groupName="<display name of the group that will contain the member group>"
 Add-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID -GroupMemberType Group
 ```
 
-**表示名によってグループを削除するに**は、削除するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
+**表示名によってグループを削除するに** は、削除するグループの表示名と、メンバーグループを含むグループの表示名を入力して、powershell ウィンドウまたは powershell ISE で次のコマンドを実行します。
 
 ```powershell
 $groupMemberName="<display name of the group to add>"

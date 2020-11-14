@@ -15,38 +15,34 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: 小売店で購入した Microsoft 365 Business Standard プロダクトキーを償還する方法について説明します。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638365"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072749"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクトキーを入力する
 
-小売り店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証に役立てることができます。 
+小売り店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証に役立てることができます。
   
  **他に何か必要ですか?**
- **Microsoft 365 ファミリまたは microsoft 365 Personal のヘルプについては**、「 [Office でプロダクトキーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
+ **Microsoft 365 ファミリまたは microsoft 365 Personal のヘルプについては** 、「 [Office でプロダクトキーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)」を参照してください。  
  **ボリュームライセンスのお客様の場合** Microsoft [Open License プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を使用して microsoft 365 for business を購入した場合は、「 [microsoft open から購入したプロダクトキーを入力](purchases-from-microsoft-open.md)してください」という記事を参照してください。
   
 ## <a name="activate-a-new-subscription"></a>新しいサブスクリプションのライセンス認証
 
-1. <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">Office.com/setupkey</a>に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a> に移動します。
 
-2. プロダクトキーを入力し、[ **次へ**] を選択します。
+2. プロダクトキーを入力し、[ **次へ** ] を選択します。
 
-3. 名前、勤務先のメールアドレス、会社の電話番号、会社名、国または地域を入力し、[ **次へ**] を選択します。
+3. 名前、勤務先のメールアドレス、会社の電話番号、会社名、国または地域を入力し、[ **次へ** ] を選択します。
 
 4. 電話番号を入力して、id を確認するためのテキストまたは呼び出しを受信します。
 
@@ -59,7 +55,7 @@ ms.locfileid: "48638365"
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>有効期限を延長するか、既存のサブスクリプションにライセンスを追加する
 
-プロダクトキーを使用して有効期限を延長したり、既存の Microsoft 365 Business Standard サブスクリプションにライセンスを追加したりするには、同じ Microsoft 365 プランに新しい未使用のキーが必要です。 既に引き換え済みのキーを再度使用することはできないため、元の Microsoft 365 プロダクトキーを入力しても機能しません。 [プロダクトキーを使用して、有料のサブスクリプションにライセンスを追加または拡張する](licenses/add-licenses-using-product-key.md)を参照してください。
+有効期限を延長したり、既存の Microsoft 365 Business Standard サブスクリプションにライセンスを追加したりするには、同じ Microsoft 365 プランに新しい未使用のキーを使用してください。 既に引き換え済みのキーを再度使用することはできないため、元の Microsoft 365 プロダクトキーを入力しても機能しません。 [プロダクトキーを使用して、有料のサブスクリプションにライセンスを追加または拡張する](licenses/add-licenses-using-product-key.md)を参照してください。
 
 ## <a name="whats-next"></a>次の手順
 

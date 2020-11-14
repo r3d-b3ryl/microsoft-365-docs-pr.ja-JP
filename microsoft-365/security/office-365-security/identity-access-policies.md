@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: f9c26e7e4af99174c5723b44c59d7279ca93afa5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 19e121ce3f85dc31c3bf81c4750300c4016b1222
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846450"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072773"
 ---
 # <a name="common-identity-and-device-access-policies"></a>共通 ID とデバイスのアクセス ポリシー
 
@@ -35,8 +35,9 @@ ms.locfileid: "48846450"
 
 次の図は、推奨されるポリシーセットを示しています。 この図は、各ポリシーが適用される保護層と、それらのポリシーが Pc、電話、タブレット、または両方のカテゴリのデバイスに適用されるかどうかを示しています。 また、これらのポリシーを構成する場所も示されます。
 
-[ ![ Id とデバイスのアクセスを構成するための一般的なポリシー](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [この画像の大規模なバージョンの表示](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Id とデバイスのアクセスを構成するための一般的なポリシー](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+[この画像のより大きいバージョンを表示する](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 以下に、個々のポリシーへのリンクを含む1ページの PDF の概要を示します。
 
@@ -107,7 +108,7 @@ ms.locfileid: "48846450"
 
 [ **割り当て** ] セクションで、次の手順を実行します。
 
-|設定|[プロパティ]|値|注|
+|Setting|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
 |ユーザーとグループ|含める| [ユーザーとグループ > ユーザーとグループ **] を選択** します。対象ユーザーアカウントを含む特定のグループを選択します。 |パイロットユーザーアカウントを含むグループから始めます。|
 ||除外| [ **ユーザーとグループ** ]: 条件付きアクセスの例外グループを選択します。サービスアカウント (アプリ id)。|メンバーシップは、必要に応じて一時的に変更する必要があります。|
@@ -129,7 +130,7 @@ ms.locfileid: "48846450"
 
 [ **アクセス制御** ] セクションで、次の操作を行います。
 
-|設定|[プロパティ]|値|Action|
+|Setting|[プロパティ]|値|Action|
 |:---|:---------|:-----|:----|
 |許可|**Grant access**| | Select |
 |||**多要素認証を必要とする**| 小切手 |
@@ -150,7 +151,7 @@ Suppport モダン認証を実行する Microsoft 365 のクライアントの�
 
 [ **割り当て** ] セクションで、次の手順を実行します。
 
-|設定|[プロパティ]|値|注|
+|Setting|[プロパティ]|値|注|
 |:---|:---------|:-----|:----|
 |ユーザーとグループ|含める| [ユーザーとグループ > ユーザーとグループ **] を選択** します。対象ユーザーアカウントを含む特定のグループを選択します。 |パイロットユーザーアカウントを含むグループから始めます。|
 ||除外| [ **ユーザーとグループ** ]: 条件付きアクセスの例外グループを選択します。サービスアカウント (アプリ id)。|メンバーシップは、必要に応じて一時的に変更する必要があります。|
@@ -160,7 +161,7 @@ Suppport モダン認証を実行する Microsoft 365 のクライアントの�
 
 [ **アクセス制御** ] セクションで、次の操作を行います。
 
-|設定|[プロパティ]|値|Action|
+|Setting|[プロパティ]|値|Action|
 |:---|:---------|:-----|:----|
 |許可|**アクセスをブロックする**| | Select |
 ||**選択したコントロールすべてが必要** ||Select|
@@ -301,20 +302,20 @@ Intune でコンプライアンスポリシーを作成する詳細な手順に�
 
 |型|[プロパティ]|値|Action|
 |:---|:---------|:-----|:----|
-|Password|モバイルデバイスのロックを解除するためのパスワードを要求する|必須| Select |
+|パスワード|モバイルデバイスのロックを解除するためのパスワードを要求する|必須| Select |
 ||単純なパスワード|ブロック|Select|
 ||パスワードの種類|既定のデバイス|Select|
-||パスワードの最小文字数|6 |型|
-||パスワードが必要になるまでの最大非アクティブ時間 (分)|15 |型 <br>この設定は、Android バージョン4.0 以降、または KNOX 4.0 以降でサポートされています。 IOS デバイスでは、iOS 8.0 以降でサポートされています。|
-||パスワードの有効期限 (日)|41|型|
-||再利用を防止するための以前のパスワードの数|5 |型|
+||パスワードの最小文字数|6 |種類|
+||パスワードが必要になるまでの最大非アクティブ時間 (分)|15 |種類 <br>この設定は、Android バージョン4.0 以降、または KNOX 4.0 以降でサポートされています。 IOS デバイスでは、iOS 8.0 以降でサポートされています。|
+||パスワードの有効期限 (日)|41|種類|
+||再利用を防止するための以前のパスワードの数|5 |種類|
 ||デバイスがアイドル状態から戻るときにパスワードを要求する (Mobile および Holographic)|必須|Windows 10 以降で使用可能|
 |暗号化|デバイス上のデータストレージの暗号化|必須|Select|
 |デバイスのセキュリティ|ウォール|必須|Select|
 ||ウイルス対策|必須|Select|
 ||ウェア|必須|Select <br> この設定には、Windows セキュリティセンターに登録されたスパイウェア対策ソリューションが必要です。|
 |守護|Microsoft Defender マルウェア対策|必須|Select|
-||Microsoft Defender マルウェア対策の最小バージョン||型 <br> Windows 10 デスクトップでのみサポートされています。 Microsoft では、最新バージョン以降のバージョンを5つ以下にすることをお勧めします。|
+||Microsoft Defender マルウェア対策の最小バージョン||種類 <br> Windows 10 デスクトップでのみサポートされています。 Microsoft では、最新バージョン以降のバージョンを5つ以下にすることをお勧めします。|
 ||Microsoft Defender マルウェア対策の署名が最新の状態になっています|必須|Select|
 ||リアルタイム保護|必須|Select <br>Windows 10 デスクトップでのみサポートされています。|
 |||||
@@ -380,7 +381,7 @@ Intune でコンプライアンスポリシーを作成する詳細な手順に�
 >このポリシーを有効にする前に、デバイスが準拠していることを確認してください。 そうしないと、ロックアウトされ、ユーザーアカウントが条件付きアクセス除外グループに追加されるまで、このポリシーを変更できなくなります。
 >
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [![手順 3: ゲストユーザーと外部ユーザーのポリシー](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
