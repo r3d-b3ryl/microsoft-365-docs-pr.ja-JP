@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: 証明書とネットワーク プロファイルを準備する
           href: get-ready/certs-wifi-lan.md
+        - name: ゲスト アカウントの前提条件
+          href: get-ready/guest-accounts.md
         - name: 印刷リソースを準備する
           href: get-ready/printing.md
         - name: アプリを準備する

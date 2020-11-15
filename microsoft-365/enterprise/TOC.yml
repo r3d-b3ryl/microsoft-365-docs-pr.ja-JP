@@ -467,10 +467,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-- name: セキュリティ
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
 - name: コンプライアンス
-  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+  href: ../compliance/index.yml
+- name: セキュリティ
+  href: ../security/index.yml
 - name: クラウド サービス
   items:
     - name: ロードマップ
@@ -564,7 +564,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell のコミュニティ リソース
           href: microsoft-365-powershell-community-resources.md
-    - name: ユーザー アカウント、ライセンス、PowerShell を使用したグループを管理する
+    - name: ユーザー アカウント、パスワード、ライセンス、PowerShell を使用したグループを管理する
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items:
         - name: ユーザー アカウント
@@ -581,6 +581,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: ブロック
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: パスワード
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: ライセンスおよびサービス
           items:
             - name: ライセンスおよびサービスを確認する
@@ -602,6 +604,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: グループ
           items:
+            - name: セキュリティ グループを管理する
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: セキュリティ グループ メンバーシップを管理する
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: Microsoft 365 グループを管理する
@@ -723,10 +727,6 @@
       href: contoso-info-protect.md
     - name: セキュリティの概要
       href: contoso-security-summary.md
-- name: Microsoft 365 コンプライアンス
-  href: ../compliance/index.yml
-- name: Microsoft 365 セキュリティ
-  href: ../security/index.yml
 - name: Microsoft 365 のアーキテクチャとソリューション
   href: ../solutions/index.yml
 - name: クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM)

@@ -912,8 +912,10 @@
           href: compliance-manager-templates-list.md
         - name: 改善アクションの割り当てと完了
           href: compliance-manager-improvement-actions.md
-        - name: コンプライアンススコアの計算方法
+        - name: コンプライアンス スコアの計算方法
           href: compliance-score-calculation.md
+        - name: コンプライアンス構成アナライザー ツール
+          href: compliance-manager-mcca.md
         - name: よく寄せられる質問 (FAQ)
           href: compliance-manager-faq.md
         - name: コンプライアンス マネージャー (クラシック)
