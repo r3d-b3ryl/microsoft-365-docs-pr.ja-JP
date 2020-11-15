@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 のエンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。ファイルは Microsoft 365 コンプライアンス ソリューションで表示されます '
-ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999470"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072976"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明する
 
@@ -145,15 +145,15 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 を実行し
 
 ## <a name="next-steps"></a>次の手順
 
-ここまでエンドポイント DLP について学びましたので、次のステップの手順は以下になります：
+エンドポイント DLP の概要を説明しました。次のステップは以下のとおりです。
 
-1) [Microsoft Endpoint データ損失防止 (プレビュー) を開始する](endpoint-dlp-getting-started.md)
-2) [エンドポイント データ損失防止 (プレビュー) を使用する](endpoint-dlp-using.md)
+1) [Microsoft エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md)
+2) [Microsoft エンドポイント データ損失防止を使用する](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Endpoint データ損失防止 (プレビュー) を開始する](endpoint-dlp-getting-started.md)
-- [エンドポイント データ損失防止 (プレビュー) を使用する](endpoint-dlp-using.md)
+- [Microsoft エンドポイント データ損失防止を開始する](endpoint-dlp-getting-started.md)
+- [Microsoft エンドポイント データ損失防止を使用する](endpoint-dlp-using.md)
 - [データ損失防止の概要](data-loss-prevention-policies.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)
