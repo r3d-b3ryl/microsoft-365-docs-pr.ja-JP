@@ -7,16 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: SharePoint ドキュメントライブラリに発行されたモデルを適用する方法について説明します。
-ms.openlocfilehash: 771b0f451d404c6e90f62091ca466bfaf34bae39
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338675"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087489"
 ---
-# <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a><span data-ttu-id="d55c9-103">Microsoft SharePoint Syntexのドキュメント理解モデルを適用する</span><span class="sxs-lookup"><span data-stu-id="d55c9-103">Apply a document understanding model in Microsoft SharePoint Syntex</span></span>
+# <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a><span data-ttu-id="4815d-103">Microsoft SharePoint Syntexのドキュメント理解モデルを適用する</span><span class="sxs-lookup"><span data-stu-id="4815d-103">Apply a document understanding model in Microsoft SharePoint Syntex</span></span>
 
 </br>
 
@@ -24,64 +25,64 @@ ms.locfileid: "48338675"
 
 </br>
 
-<span data-ttu-id="d55c9-104">ドキュメント理解モデルを公開した後、、Microsoft 365 テナントの1つまたは複数の SharePoint ドキュメントライブラリに適用できます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-104">After publishing your document understanding model, you can apply it to one or more SharePoint document library in your Microsoft 365 tenant.</span></span>
+<span data-ttu-id="4815d-104">ドキュメント理解モデルを公開した後、、Microsoft 365 テナントの1つまたは複数の SharePoint ドキュメントライブラリに適用できます。</span><span class="sxs-lookup"><span data-stu-id="4815d-104">After publishing your document understanding model, you can apply it to one or more SharePoint document library in your Microsoft 365 tenant.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d55c9-105">ユーザーがアクセスできるドキュメントライブラリにのみモデルを適用できます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-105">You are only able to apply the model to document libraries that you have access to.</span></span>
+> <span data-ttu-id="4815d-105">ユーザーがアクセスできるドキュメントライブラリにのみモデルを適用できます。</span><span class="sxs-lookup"><span data-stu-id="4815d-105">You are only able to apply the model to document libraries that you have access to.</span></span>
 
 
-## <a name="apply-your-model-to-a-document-library"></a><span data-ttu-id="d55c9-106">モデルをドキュメントライブラリに適用します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-106">Apply your model to a document library.</span></span>
+## <a name="apply-your-model-to-a-document-library"></a><span data-ttu-id="4815d-106">モデルをドキュメントライブラリに適用します。</span><span class="sxs-lookup"><span data-stu-id="4815d-106">Apply your model to a document library.</span></span>
 
-<span data-ttu-id="d55c9-107">モデルをSharePointドキュメントライブラリに適用するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="d55c9-107">To apply your model to to a SharePoint document library:</span></span>
+<span data-ttu-id="4815d-107">モデルをSharePointドキュメントライブラリに適用するには、次の操作を行います。</span><span class="sxs-lookup"><span data-stu-id="4815d-107">To apply your model to to a SharePoint document library:</span></span>
 
-1. <span data-ttu-id="d55c9-108">モデルのホームページの [**ライブラリにモデルを適用する** ]タイルの [\*\*モデルの発行 \*\*]を選びます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-108">On model home page, on the **Apply model to libraries** tile, select **Publish model**.</span></span> <span data-ttu-id="d55c9-109">または、[**このモデルのあるライブラリ**]セクション の [**+ ライブラリの追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-109">Or you can select  **+Add Library** in the **Libraries with this model** section.</span></span> </br>
+1. <span data-ttu-id="4815d-108">モデルのホームページの [**ライブラリにモデルを適用する** ]タイルの [**モデルの発行**]を選びます。</span><span class="sxs-lookup"><span data-stu-id="4815d-108">On model home page, on the **Apply model to libraries** tile, select **Publish model**.</span></span> <span data-ttu-id="4815d-109">または、[**このモデルのあるライブラリ**]セクション の [**+ ライブラリの追加**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4815d-109">Or you can select  **+Add Library** in the **Libraries with this model** section.</span></span> </br>
 
     ![ライブラリにモデルを追加する](../media/content-understanding/apply-to-library.png)</br>
 
-2. <span data-ttu-id="d55c9-111">モデルを適用するドキュメントライブラリが含まれている SharePoint サイトを選択できます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-111">You can then select the SharePoint site that contains the document library that you want to apply the model to.</span></span> <span data-ttu-id="d55c9-112">リストにサイトが表示されない場合は、検索ボックスを使用して検索します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-112">If the site does not show in the list, use the search box to find it.</span></span></br>
+2. <span data-ttu-id="4815d-111">モデルを適用するドキュメントライブラリが含まれている SharePoint サイトを選択できます。</span><span class="sxs-lookup"><span data-stu-id="4815d-111">You can then select the SharePoint site that contains the document library that you want to apply the model to.</span></span> <span data-ttu-id="4815d-112">リストにサイトが表示されない場合は、検索ボックスを使用して検索します。</span><span class="sxs-lookup"><span data-stu-id="4815d-112">If the site does not show in the list, use the search box to find it.</span></span></br>
 
     ![サイトの選択](../media/content-understanding/site-search.png)</br>
 
     > [!NOTE]
-    > <span data-ttu-id="d55c9-114">モデルを適用しようとしているドキュメントライブラリへの*リスト管理*許可を持っているかまたは、*編集* 権限を持っていなければなりません。</span><span class="sxs-lookup"><span data-stu-id="d55c9-114">You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.</span></span></br>
+    > <span data-ttu-id="4815d-114">モデルを適用しようとしているドキュメントライブラリへの *リスト管理* 許可を持っているかまたは、*編集* 権限を持っていなければなりません。</span><span class="sxs-lookup"><span data-stu-id="4815d-114">You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to.</span></span></br>
 
-3. <span data-ttu-id="d55c9-115">サイトを選択した後、モデルを適用するドキュメントライブラリを選択します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-115">After selecting the site, select the document library to which you want to apply the model.</span></span> <span data-ttu-id="d55c9-116">このサンプルでは、*Contoso ケーストラッキング* サイトから*ドキュメント* ドキュメントライブラリ を選びます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-116">In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.</span></span></br>
+3. <span data-ttu-id="4815d-115">サイトを選択した後、モデルを適用するドキュメントライブラリを選択します。</span><span class="sxs-lookup"><span data-stu-id="4815d-115">After selecting the site, select the document library to which you want to apply the model.</span></span> <span data-ttu-id="4815d-116">このサンプルでは、*Contoso ケーストラッキング* サイトから *ドキュメント* ドキュメントライブラリ を選びます。</span><span class="sxs-lookup"><span data-stu-id="4815d-116">In the sample, select the *Documents* document library from the *Contoso Case Tracking* site.</span></span></br>
 
     ![ドキュメントライブラリを選択する](../media/content-understanding/select-doc-library.png)</br>
 
-4. <span data-ttu-id="d55c9-118">モデルは、コンテンツタイプに関連付けられているため、ライブラリに適用すると、コンテンツタイプと、列として表示されている抽出したラベルのビューが追加されます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-118">Since the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns.</span></span> <span data-ttu-id="d55c9-119">このビューは既定ではライブラリの既定のビューですが、必要に応じて、[**詳細 設定**] を選択し、[**既定のビューとして設定**] 選択解除して、既定のビューから外すことができます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-119">This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and deselecting **Set this new view as default**.</span></span></br>
+4. <span data-ttu-id="4815d-118">モデルは、コンテンツタイプに関連付けられているため、ライブラリに適用すると、コンテンツタイプと、列として表示されている抽出したラベルのビューが追加されます。</span><span class="sxs-lookup"><span data-stu-id="4815d-118">Since the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns.</span></span> <span data-ttu-id="4815d-119">このビューは既定ではライブラリの既定のビューですが、必要に応じて、[**詳細 設定**] を選択し、[**既定のビューとして設定**] 選択解除して、既定のビューから外すことができます。</span><span class="sxs-lookup"><span data-stu-id="4815d-119">This view is the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and deselecting **Set this new view as default**.</span></span></br>
 
     ![ライブラリビュー](../media/content-understanding/library-view.png)</br>
 
-5. <span data-ttu-id="d55c9-121">モデルをライブラリに適用するには、[ **追加** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-121">Select **Add** to apply the model to the library.</span></span> 
-6. <span data-ttu-id="d55c9-122">モデルのホームページの [**このモデルのある の ライブラリ**] セクションに、表示されている SharePoint サイトの URL を確認します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-122">On the model home page, in the **Libraries with this model** section, you should see the URL to the SharePoint site listed.</span></span></br>
+5. <span data-ttu-id="4815d-121">モデルをライブラリに適用するには、[ **追加** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="4815d-121">Select **Add** to apply the model to the library.</span></span> 
+6. <span data-ttu-id="4815d-122">モデルのホームページの [**このモデルのある の ライブラリ**] セクションに、表示されている SharePoint サイトの URL を確認します。</span><span class="sxs-lookup"><span data-stu-id="4815d-122">On the model home page, in the **Libraries with this model** section, you should see the URL to the SharePoint site listed.</span></span></br>
 
     ![選択したライブラリ](../media/content-understanding/selected-library.png)</br>
 
-7. <span data-ttu-id="d55c9-124">ドキュメントライブラリに移動し、モデルのドキュメントライブラリビューに移動していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-124">Go to your document library and make sure you are in the model's document library view.</span></span> <span data-ttu-id="d55c9-125">ドキュメントライブラリ名の横にある [情報] ボタンを選択すると、モデルがドキュメントライブラリに適用されたことを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-125">Notice that if you select the information button next to the document library name, a message notes that your model has been applied to the document library.</span></span>
+7. <span data-ttu-id="4815d-124">ドキュメントライブラリに移動し、モデルのドキュメントライブラリビューに移動していることを確認します。</span><span class="sxs-lookup"><span data-stu-id="4815d-124">Go to your document library and make sure you are in the model's document library view.</span></span> <span data-ttu-id="4815d-125">ドキュメントライブラリ名の横にある [情報] ボタンを選択すると、モデルがドキュメントライブラリに適用されたことを示すメッセージが表示されます。</span><span class="sxs-lookup"><span data-stu-id="4815d-125">Notice that if you select the information button next to the document library name, a message notes that your model has been applied to the document library.</span></span>
 
     ![情報表示](../media/content-understanding/info-du.png)</br> 
 
 
-<span data-ttu-id="d55c9-127">モデルをドキュメントライブラリに適用したら、サイトにドキュメントをアップロードし、結果を確認できます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-127">After applying the model to the document library, you can begin uploading documents to the site and see the results.</span></span>
+<span data-ttu-id="4815d-127">モデルをドキュメントライブラリに適用したら、サイトにドキュメントをアップロードし、結果を確認できます。</span><span class="sxs-lookup"><span data-stu-id="4815d-127">After applying the model to the document library, you can begin uploading documents to the site and see the results.</span></span>
 
-<span data-ttu-id="d55c9-128">モデルは、モデルに関連付けられているすべてのファイルを特定し、ビューに表示します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-128">The model identifies any files with model’s associated content type and lists them in your view.</span></span> <span data-ttu-id="d55c9-129">モデルにエクストラクターがある場合は、各ファイルから抽出したデータの列が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-129">If your model has any extractors, the view displays columns for the data you are extracting from each file.</span></span>
+<span data-ttu-id="4815d-128">モデルは、モデルに関連付けられているすべてのファイルを特定し、ビューに表示します。</span><span class="sxs-lookup"><span data-stu-id="4815d-128">The model identifies any files with model’s associated content type and lists them in your view.</span></span> <span data-ttu-id="4815d-129">モデルにエクストラクターがある場合は、各ファイルから抽出したデータの列が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4815d-129">If your model has any extractors, the view displays columns for the data you are extracting from each file.</span></span>
 
-### <a name="apply-the-model-to-files-already-in-the-document-library"></a><span data-ttu-id="d55c9-130">ドキュメントライブラリに既に存在するファイルにモデルを適用する</span><span class="sxs-lookup"><span data-stu-id="d55c9-130">Apply the model to files already in the document library</span></span>
+### <a name="apply-the-model-to-files-already-in-the-document-library"></a><span data-ttu-id="4815d-130">ドキュメントライブラリに既に存在するファイルにモデルを適用する</span><span class="sxs-lookup"><span data-stu-id="4815d-130">Apply the model to files already in the document library</span></span>
 
-<span data-ttu-id="d55c9-131">適用されたモデルが、ドキュメントライブラリにアップロードされたすべてのファイルを処理している場合は、次の操作を行って、モデルが適用される前に、ドキュメントライブラリ内に既に存在していたファイル上で実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-131">While an applied model processes all files uploaded to the document library after it is applied, you can also do the following to run the model on files that already exists in the document library prior to the model being applied:</span></span>
+<span data-ttu-id="4815d-131">適用されたモデルが、ドキュメントライブラリにアップロードされたすべてのファイルを処理している場合は、次の操作を行って、モデルが適用される前に、ドキュメントライブラリ内に既に存在していたファイル上で実行することもできます。</span><span class="sxs-lookup"><span data-stu-id="4815d-131">While an applied model processes all files uploaded to the document library after it is applied, you can also do the following to run the model on files that already exists in the document library prior to the model being applied:</span></span>
 
-1. <span data-ttu-id="d55c9-132">ドキュメントライブラリで、モデルで処理するファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-132">In your document library, select the files that you want to be processed by your model.</span></span>
-2. <span data-ttu-id="d55c9-133">ファイルを選択すると、 [ドキュメントライブラリ] リボンに**分類および抽出** が表示されます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-133">After selecting your files, **Classify and extract** will appear in the document library ribbon.</span></span> <span data-ttu-id="d55c9-134">**分類および抽出**を選択します。</span><span class="sxs-lookup"><span data-stu-id="d55c9-134">Select **Classify and extract**.</span></span>
-3. <span data-ttu-id="d55c9-135">選択したファイルが処理されるキューに追加されます。</span><span class="sxs-lookup"><span data-stu-id="d55c9-135">The files you selected will be added to the queue to be processed.</span></span>
+1. <span data-ttu-id="4815d-132">ドキュメントライブラリで、モデルで処理するファイルを選択します。</span><span class="sxs-lookup"><span data-stu-id="4815d-132">In your document library, select the files that you want to be processed by your model.</span></span>
+2. <span data-ttu-id="4815d-133">ファイルを選択すると、 [ドキュメントライブラリ] リボンに **分類および抽出** が表示されます。</span><span class="sxs-lookup"><span data-stu-id="4815d-133">After selecting your files, **Classify and extract** will appear in the document library ribbon.</span></span> <span data-ttu-id="4815d-134">**分類および抽出** を選択します。</span><span class="sxs-lookup"><span data-stu-id="4815d-134">Select **Classify and extract**.</span></span>
+3. <span data-ttu-id="4815d-135">選択したファイルが処理されるキューに追加されます。</span><span class="sxs-lookup"><span data-stu-id="4815d-135">The files you selected will be added to the queue to be processed.</span></span>
 
       ![分類と抽出](../media/content-understanding/extract-classify.png)</br> 
 
-## <a name="see-also"></a><span data-ttu-id="d55c9-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="d55c9-137">See Also</span></span>
-[<span data-ttu-id="d55c9-138">分類子を作成する</span><span class="sxs-lookup"><span data-stu-id="d55c9-138">Create a classifier</span></span>](create-a-classifier.md)
+## <a name="see-also"></a><span data-ttu-id="4815d-137">関連項目</span><span class="sxs-lookup"><span data-stu-id="4815d-137">See Also</span></span>
+[<span data-ttu-id="4815d-138">分類子を作成する</span><span class="sxs-lookup"><span data-stu-id="4815d-138">Create a classifier</span></span>](create-a-classifier.md)
 
-[<span data-ttu-id="d55c9-139">エクストラクターを作成する</span><span class="sxs-lookup"><span data-stu-id="d55c9-139">Create an extractor</span></span>](create-an-extractor.md)
+[<span data-ttu-id="4815d-139">エクストラクターを作成する</span><span class="sxs-lookup"><span data-stu-id="4815d-139">Create an extractor</span></span>](create-an-extractor.md)
 
-[<span data-ttu-id="d55c9-140">ドキュメント理解の概要</span><span class="sxs-lookup"><span data-stu-id="d55c9-140">Document Understanding overview</span></span>](document-understanding-overview.md)
+[<span data-ttu-id="4815d-140">ドキュメント理解の概要</span><span class="sxs-lookup"><span data-stu-id="4815d-140">Document Understanding overview</span></span>](document-understanding-overview.md)
 
 
