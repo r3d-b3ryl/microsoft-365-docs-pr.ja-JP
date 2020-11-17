@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) および Defender for Office 365 のセキュリティ設定のベストプラクティスとは 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 また、Office 365 に Defender も使用している場合は、どのような機能を利用できますか。
-ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123475"
+ms.locfileid: "49126639"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 のセキュリティに関する推奨設定
 
@@ -189,11 +189,11 @@ ms.locfileid: "49123475"
 
 ****
 
-|セキュリティ機能の名前|Standard|Strict|Comment|
-|---|---|---|---|
-|**スプーフィング対策保護を有効にする** <p> _EnableAntispoofEnforcement_|オン <p> `$true`|オン <p> `$true`||
-|**認証されていない送信者を有効にする** <p> _Enable/認証 Atedsender_|オン <p> `$true`|オン <p> `$true`|Outlook の送信者の写真に、未識別のスプーフィングされた送信者を示す疑問符 (?) を追加します。 詳細については、「 [フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md)」を参照してください。|
-|**ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メールフォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、 [スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)の受信拒否リストに適用されます。|
+|セキュリティ機能の名前|既定値|Standard|Strict|Comment|
+|---|---|---|---|---|
+|**スプーフィング対策保護を有効にする** <p> _EnableAntispoofEnforcement_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
+|**認証されていない送信者を有効にする** <p> _Enable/認証 Atedsender_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`|Outlook の送信者の写真に、未識別のスプーフィングされた送信者を示す疑問符 (?) を追加します。 詳細については、「 [フィッシング対策ポリシーのスプーフィング設定](set-up-anti-phishing-policies.md)」を参照してください。|
+|**ドメインのスプーフィングが許可されていないユーザーによって電子メールが送信された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メールフォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メールフォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、 [スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)の受信拒否リストに適用されます。|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のフィッシング対策ポリシーの詳細設定

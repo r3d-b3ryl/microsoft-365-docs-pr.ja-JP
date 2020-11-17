@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6e3e7cc0404a56e4d69da69b95aa95fa6795dd5
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 9ec6f73996b2626ef62d33435ed88fb08dfc1a16
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002223"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126581"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft マネージド デスクトップのテクノロジ
 
@@ -37,7 +37,7 @@ Win32 アプリケーション |    Teams はデバイスに同梱されてい�
 Web アプリケーション |  Yammer、browser 内の Office、Delve、Flow、StaffHub、PowerApps、および Planner は、デバイスに同梱されていません。 ユーザーは、ブラウザーを使用して、これらのアプリケーションの web バージョンにアクセスできます。
 
 
-## <a name="windows-10-enterprise-e3-or-e5"></a>Windows 10 Enterprise E3 または E5
+## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>エンドポイントの Microsoft Defender を使用した Windows 10 Enterprise E5 または E3
 
  |
  --- | ---

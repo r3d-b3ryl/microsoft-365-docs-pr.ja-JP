@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft 365 で Microsoft の予約にアクセスする方法について説明します。
-ms.openlocfilehash: 815aa3a859db15364aa18d3550001a28d085b711
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419826"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126593"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft の予約をオンまたはオフにする
 
@@ -27,7 +27,7 @@ ms.locfileid: "47419826"
 
 1. グローバル管理者として Microsoft 365 管理センターにサインインします。
 
-2. 管理センターで、[ **設定**の設定] に移動し、   \> **Settings** [**予約**] を選択します。
+2. 管理センターで、[ **設定**] [組織の設定] に移動し、   \> **Org Settings** [**予約**] を選択します。
 
 3. [組織で予約を **使用できるよう** にする] チェックボックスをオンにして、組織の予約を有効または無効にします。
 
@@ -38,7 +38,7 @@ ms.locfileid: "47419826"
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>PowerShell を使用して組織の予約をオンまたはオフにする
 
-PowerShell コマンドレット [Set](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)を使用して、組織の予約をオンまたはオフにするには、 [Exchange Online PowerShell に接続]() し、次のコマンドを実行します。
+PowerShell コマンドレット [Set](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)を使用して、組織の予約をオンまたはオフにするには、 [Exchange Online PowerShell に接続](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) し、次のコマンドを実行します。
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
@@ -48,7 +48,7 @@ PowerShell コマンドレット [Set](https://docs.microsoft.com/powershell/mod
 
 個々のユーザーに対して予約を無効にすることができます。
 
-1. Microsoft 365 管理センターに移動し、[ **ユーザー**の \> **アクティブなユーザー**] を選択します。
+1. Microsoft 365 管理センターに移動し、[ **ユーザー** の \> **アクティブなユーザー**] を選択します。
 
 1. 目的のユーザーを選択して、[ **ライセンスとアプリ**] を選択します。
 
@@ -56,7 +56,7 @@ PowerShell コマンドレット [Set](https://docs.microsoft.com/powershell/mod
 
 ## <a name="require-staff-approvals-before-sharing-freebusy-information"></a>空き時間情報を共有する前にスタッフの承認を必須にする
 
-管理者は、組織内の従業員に対して、予約ページを通じて書籍を参照できるようにするために、組織内の従業員にオプトインを要求する必要があります。 この設定は、Microsoft 365 管理センターの [**設定**の予約] の下にあり \> **Settings** \> **Bookings**ます。
+管理者は、組織内の従業員に対して、予約ページを通じて書籍を参照できるようにするために、組織内の従業員にオプトインを要求する必要があります。 この設定は、Microsoft 365 管理センターの [**設定** の予約] の下にあり \> **Settings** \> **Bookings** ます。
 
 この設定を有効にすると、予定表にスタッフとして追加された従業員は、受信した電子メール通知の承認/拒否リンクを見つけます。
 
@@ -64,7 +64,7 @@ PowerShell コマンドレット [Set](https://docs.microsoft.com/powershell/mod
 
 ## <a name="block-social-sharing-options"></a>ソーシャル共有オプションをブロックする
 
-管理者は、ソーシャルネットワークで予約ページを共有する方法を制御できます。 この設定は、Microsoft 365 管理センターの [**設定**の予約] の下にあり \> **Settings** \> **Bookings**ます。
+管理者は、ソーシャルネットワークで予約ページを共有する方法を制御できます。 この設定は、Microsoft 365 管理センターの [**設定** の予約] の下にあり \> **Settings** \> **Bookings** ます。
 
 この機能は、全世界の Microsoft 365 ユーザーに徐々にロールアウトされています。 Microsoft 365 管理センターでこのオプションが表示されない場合は、もう一度確認してください。
 

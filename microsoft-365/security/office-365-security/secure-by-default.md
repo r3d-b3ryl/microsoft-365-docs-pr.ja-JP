@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) の [既定でセキュリティ保護] の設定についての詳細情報
-ms.openlocfilehash: 50d1c64e4d8343fdb9b25bfcbeee5d988ddc6b8a
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945332"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126663"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 で既定でセキュリティ保護されている
 
@@ -53,14 +53,11 @@ Microsoft は、お客様に既定でセキュリティを維持することを�
 
 ## <a name="exceptions"></a>例外
 
-すべてのフィルターをバイパスする唯一のオーバーライドは次のとおりです。
+高信頼フィッシングメッセージがフィルターをバイパスすることを許可する唯一のオーバーライドは、Exchange メールフロールール (トランスポートルールとも呼ばれます) です。 メールフロールールを使用してフィルター処理をバイパスするには、「 [メールフロールールを使用してメッセージに SCL を設定](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)する」を参照してください。
 
-- Exchange トランスポートルール (ETR)/メールフロールール。 メールフロールールを使用して、EOP のメッセージでスパム信頼レベル (SCL) を設定します。
-- テナントの許可/ブロックリスト: テナントの許可/ブロックリスト内の Url とファイルを管理します。
+オーバーライドは、次の場合にのみ使用してください。
 
-これらの種類のオーバーライドは、次のような場合に役立ちます。
-
-- フィッシングのシミュレーション: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱性のあるユーザーを特定するのに役立ちます。
+- フィッシングのシミュレーション: 実際の攻撃が組織に影響を与える前に、脆弱性のあるユーザーを特定するのに役立つ、シミュレートされた攻撃。
 - セキュリティ/SecOps メールボックス: セキュリティチームがフィルター処理されていないメッセージを取得するために使用する専用のメールボックス (良好および不良)。 チームは、悪意のあるコンテンツが含まれているかどうかを確認することができます。
 - サードパーティのフィルター: サードパーティ製のフィルターがメールフィルターを管理するために、サードパーティベンダーの中には EOP (SCL =-1) をオフにすることをお勧めします。 Microsoft では、EOP をオフにすることは推奨されていません。 EOP は、Defender for Office 365 のために必要です。
 - 誤検知: Microsoft によってまだ分析されている特定のメッセージを [管理者の送信から](admin-submission.md)許可することができます。 すべてのオーバーライドと同様に、一時的なものにすることをお勧めします。
