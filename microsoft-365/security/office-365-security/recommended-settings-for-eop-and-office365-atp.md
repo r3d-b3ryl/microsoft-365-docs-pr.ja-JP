@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) および Defender for Office 365 のセキュリティ設定のベストプラクティスとは 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 また、Office 365 に Defender も使用している場合は、どのような機能を利用できますか。
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001527"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123475"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 のセキュリティに関する推奨設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "49001527"
 
 **Exchange Online Protection (EOP)** は、Microsoft 365 サブスクリプションのセキュリティの中核であり、悪意のある電子メールが従業員の受信トレイに届かないようにするために使用します。 しかし、毎日新しい高度な攻撃が発生すると、多くの場合、保護が強化されます。 **Microsoft Defender For Office 365** プラン1またはプラン2には、より多くのセキュリティ、統制、調査を管理できる追加機能が含まれています。
 
-セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP には2つのセキュリティレベルがあり、Microsoft Defender for Office 365 が推奨されています。 **標準** と **Strict** 。 お客様の環境とニーズはそれぞれ異なりますが、これらのレベルのフィルター処理によって、ほとんどの状況で、不要なメールが従業員の受信トレイに到達するのを防ぐことができると考えられます。
+セキュリティ管理者はセキュリティ設定をカスタマイズすることができますが、EOP には2つのセキュリティレベルがあり、Microsoft Defender for Office 365 が推奨されています。 **標準** と **Strict**。 お客様の環境とニーズはそれぞれ異なりますが、これらのレベルのフィルター処理によって、ほとんどの状況で、不要なメールが従業員の受信トレイに到達するのを防ぐことができると考えられます。
 
 標準設定または厳密な設定をユーザーに自動的に適用するには、「EOP の事前設定された [セキュリティポリシー」および「Microsoft Defender For Office 365](preset-security-policies.md)」を参照してください。
 
@@ -63,7 +63,7 @@ ms.locfileid: "49001527"
 |検疫の保存期間 <p> _QuarantineRetentionPeriod_|15 日|30 日間|30 日間||
 |**安全性に関するヒント** <p> _InlineSafetyTipsEnabled_|オン <p> `$true`|オン <p> `$true`|オン <p> `$true`||
 |許可された送信者 <p> _AllowedSenders_|なし|なし|なし||
-|許可される送信者ドメイン <p> _AllowedSenderDomains_|なし|なし|なし|許可された送信者の一覧にドメインを追加するのは、非常にわかりません。 攻撃者は、他の方法ではフィルターを適用しない電子メールを送信することができます。 <p> [ **スパム対策設定** ] ページの [セキュリティ & コンプライアンスセンター] で [スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の電子メールドメインにある送信者の電子メールアドレスをスプーフィングしている、または外部ドメインの送信者の電子メールアドレスをスプーフィングしているすべての送信者を確認します。|
+|許可される送信者ドメイン <p> _AllowedSenderDomains_|なし|なし|なし|許可された送信者の一覧にドメインを追加するのは、非常にわかりません。 攻撃者は、他の方法ではフィルターを適用しない電子メールを送信することができます。 <p> [**スパム対策設定**] ページの [セキュリティ & コンプライアンスセンター] で [スプーフィングインテリジェンス](learn-about-spoof-intelligence.md)を使用して、組織の電子メールドメインにある送信者の電子メールアドレスをスプーフィングしている、または外部ドメインの送信者の電子メールアドレスをスプーフィングしているすべての送信者を確認します。|
 |受信拒否リスト <p> _BlockedSenders_|なし|なし|なし||
 |受信拒否された送信者ドメイン <p> _BlockedSenderDomains_|なし|なし|なし||
 |**[エンド ユーザーのスパム通知を有効にする]**  このポリシーでエンド ユーザーのスパム通知を有効にするには、このチェック ボックスをオンにします。 <p> _EnableEndUserSpamNotifications_|無効 <p> `$false`|有効 <p> `$true`|有効 <p> `$true`||
@@ -81,21 +81,21 @@ ms.locfileid: "49001527"
 
 |セキュリティ機能の名前|Comment|
 |---|---|
-|**リモートサイトへの画像リンク** ( _IncreaseScoreWithImageLinks_ )||
-|**URL の数値の IP アドレス** ( _IncreaseScoreWithNumericIps_ )||
-|**UL リダイレクト (その他のポート** ) ( _IncreaseScoreWithRedirectToOtherPort_ )||
-|**.Url または info web サイトへの URL** ( _IncreaseScoreWithBizOrInfoUrls_ )||
-|**空のメッセージ** ( _MarkAsSpamEmptyMessages_ )||
-|**HTML の JavaScript または VBScript** ( _MarkAsSpamJavaScriptInHtml_ )||
-|**HTML の Frame または IFrame タグ** ( _MarkAsSpamFramesInHtml_ )||
-|**HTML のオブジェクトタグ** ( _MarkAsSpamObjectTagsInHtml_ )||
-|**HTML にタグを埋め込む** ( _MarkAsSpamEmbedTagsInHtml_ )||
-|**HTML の Form タグ** ( _MarkAsSpamFormTagsInHtml_ )||
-|**HTML での Web バグ** ( _MarkAsSpamWebBugsInHtml_ )||
-|**機密単語リストを適用** する ( _MarkAsSpamSensitiveWordList_ )||
-|**SPF レコード: hard fail** ( _MarkAsSpamSpfRecordHardFail_ )||
-|**条件付き送信者 ID フィルター: hard fail** ( _MarkAsSpamFromAddressAuthFail_ )||
-|**NDR バック散布** ( _MarkAsSpamNdrBackscatter_ )||
+|**リモートサイトへの画像リンク** (_IncreaseScoreWithImageLinks_)||
+|**URL の数値の IP アドレス** (_IncreaseScoreWithNumericIps_)||
+|**UL リダイレクト (その他のポート** ) (_IncreaseScoreWithRedirectToOtherPort_)||
+|**.Url または info web サイトへの URL** (_IncreaseScoreWithBizOrInfoUrls_)||
+|**空のメッセージ** (_MarkAsSpamEmptyMessages_)||
+|**HTML の JavaScript または VBScript** (_MarkAsSpamJavaScriptInHtml_)||
+|**HTML の Frame または IFrame タグ** (_MarkAsSpamFramesInHtml_)||
+|**HTML のオブジェクトタグ** (_MarkAsSpamObjectTagsInHtml_)||
+|**HTML にタグを埋め込む** (_MarkAsSpamEmbedTagsInHtml_)||
+|**HTML の Form タグ** (_MarkAsSpamFormTagsInHtml_)||
+|**HTML での Web バグ** (_MarkAsSpamWebBugsInHtml_)||
+|**機密単語リストを適用** する (_MarkAsSpamSensitiveWordList_)||
+|**SPF レコード: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
+|**条件付き送信者 ID フィルター: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
+|**NDR バック散布** (_MarkAsSpamNdrBackscatter_)||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 送信スパムポリシーの設定
@@ -148,7 +148,7 @@ ms.locfileid: "49001527"
 
 > [!IMPORTANT]
 >
-> - Microsoft Defender for Office 365 の既定のフィッシング対策ポリシーにより、すべての受信者に対して [スプーフィングによる保護](set-up-anti-phishing-policies.md#spoof-settings) が提供されます。 ただし、特定の送信者または送信者のドメインに対して使用可能な [偽装保護](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) の設定は、既定のポリシーで構成されていないか、有効になっていません。 偽装保護を有効にするには、既定のポリシーを構成するか、Office 365 の Defender で追加のフィッシング対策ポリシーを作成します。
+> - Microsoft Defender for Office 365 の既定のフィッシング対策ポリシーにより、すべての受信者に対して [スプーフィング保護](set-up-anti-phishing-policies.md#spoof-settings) とメールボックスインテリジェンスが提供されます。 ただし、他の利用可能な [偽装保護](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 機能と [詳細設定](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) は、既定のポリシーでは構成も有効化もされません。 すべての保護機能を有効にするには、既定のフィッシング対策ポリシーを変更するか、追加のフィッシング対策ポリシーを作成します。
 >
 > - 組織内のすべての受信者を自動的に保護する、安全なリンクポリシーまたは安全な添付ファイルポリシーはありません。 保護を得るには、少なくとも1つの安全なリンクポリシーと安全な添付ファイルポリシーを作成する必要があります。
 >
@@ -291,6 +291,6 @@ PowerShell では、これらの設定に対して、 [新しい-safeattachmentp
 
 - 管理者とユーザーは、誤検知 (不良としてマークされている正常なメール) と誤検知 (無効な電子メールを許可) を分析のために Microsoft に送信できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-- これらのリンクは、 [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を **セットアップする方法** 、および [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を **構成** する方法に関する情報を対象としています。 「[Office 365 での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ手順を忘れないでください。
+- これらのリンクは、 [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を **セットアップする方法**、および [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を **構成** する方法に関する情報を対象としています。 「[Office 365 での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ手順を忘れないでください。
 
 - **Windows のセキュリティベースライン** は、次の場所にあります。 [セキュリティベースラインを取得できますか](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) 。また、セキュリティベースラインを使用して intune で intune ベースセキュリティ用の [Windows 10 デバイスを構成する](https://docs.microsoft.com/intune/protect/security-baselines) ことができます。 最後に、エンドポイントと Microsoft Intune セキュリティベースラインの microsoft defender の比較については、「 [Microsoft defender と Windows intune セキュリティベースラインの比較](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)」を参照してください。

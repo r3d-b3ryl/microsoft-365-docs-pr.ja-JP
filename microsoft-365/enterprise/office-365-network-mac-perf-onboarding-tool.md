@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 ネットワーク接続テストツール (プレビュー)
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295528"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087081"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 ネットワーク接続テストツール (プレビュー)
 
@@ -75,7 +75,7 @@ Web ブラウザーテストが完了した後、web サイトからアドバン
 
 ### <a name="sharing-with-your-microsoft-account-team-support-or-other-personnel"></a>Microsoft アカウントチーム、サポート、またはその他の担当者との共有
 
-個人 id を除くテストレポートは、Microsoft の従業員と共有されます。 これは既定で有効になっており、管理者が正常性で無効にすることができます。 **Health | Network Connectivity**Microsoft 365 管理センターの [ネットワーク接続] ページ
+個人 id を除くテストレポートは、Microsoft の従業員と共有されます。 これは既定で有効になっており、管理者が正常性で無効にすることができます。 **Health | Network Connectivity** Microsoft 365 管理センターの [ネットワーク接続] ページ
 
 ### <a name="sharing-with-other-users-who-sign-in-to-the-same-office-365-tenant"></a>同じ Office 365 テナントにサインインしている他のユーザーとの共有
 
@@ -183,7 +183,7 @@ Exchange サービスのフロントドアに対する TCP の遅延 (ms) の向
 
 #### <a name="download-speed"></a>ダウンロード速度
 
-SharePoint サービスのフロントドアから、15Mb ファイルのダウンロード速度を測定します。 結果はメガバイト/秒で表示され、 **1 秒**間に SharePoint または OneDrive からダウンロードできるサイズファイルのサイズを示します。 この数は、少なくとも1秒あたりの回線帯域幅の最小値に似ている必要があります。 たとえば、100mbps のインターネット接続を使用している場合は、10 mb/秒 (10MBps) と予想されることがあります。
+SharePoint サービスのフロントドアから、15Mb ファイルのダウンロード速度を測定します。 結果はメガバイト/秒で表示され、 **1 秒** 間に SharePoint または OneDrive からダウンロードできるサイズファイルのサイズを示します。 この数は、少なくとも1秒あたりの回線帯域幅の最小値に似ている必要があります。 たとえば、100mbps のインターネット接続を使用している場合は、10 mb/秒 (10MBps) と予想されることがあります。
 
 #### <a name="buffer-bloat"></a>バッファーの膨張
 
@@ -207,17 +207,17 @@ SharePoint サービスのフロントドアから、15Mb ファイルのダウ�
 
 #### <a name="latency"></a>遅延
 
-測定された UDP 待機時間を示します。これは **100 ミリ秒**より小さくなければなりません。
+測定された UDP 待機時間を示します。これは **100 ミリ秒** より小さくなければなりません。
 
 #### <a name="jitter"></a>ずれ
 
-測定された UDP ジッターを示します。これは **30 ミリ秒**未満である必要があります。
+測定された UDP ジッターを示します。これは **30 ミリ秒** 未満である必要があります。
 
 #### <a name="connectivity"></a>接続
 
 ユーザーのオフィスの場所から、必要なすべての Microsoft 365 ネットワークエンドポイントへの HTTP 接続をテストします。 これらは、で公開され [https://aka.ms/o365ip](https://aka.ms/o365ip) ます。 に接続できない必要なネットワークエンドポイントに対して、ネットワークの洞察が表示されます。
 
-接続 ay は、プロキシサーバー、ファイアウォール、またはエンタープライズネットワーク境界またはクラウドプロキシとして使用されている別のネットワークセキュリティデバイスによってブロックされます。
+接続は、エンタープライズネットワーク境界上のプロキシサーバー、ファイアウォール、または別のネットワークセキュリティデバイスによってブロックされることがあります。 TCP ポート80への接続は HTTP 要求を使用してテストされ、TCP ポート443への接続は HTTPS 要求を使用してテストされます。 応答がない場合は、FQDN がエラーとしてマークされます。 HTTP 応答コード407がある場合は、FQDN がエラーとしてマークされます。 HTTP 応答コード403がある場合は、応答のサーバー属性をチェックして、プロキシサーバーとして表示される場合はエラーとしてマークします。 curl.exe Windows コマンドラインツールを使用して実行するテストをシミュレートできます。
 
 「」で定義されている、「optimize or allow category」に記載されている必要な各 Microsoft 365 ネットワークエンドポイントで、SSL 証明書をテストし [https://aka.ms/o365ip](https://aka.ms/o365ip) ます。 いずれかのテストで Microsoft SSL 証明書が見つからない場合は、暗号化されたネットワークが仲介ネットワークデバイスによって傍受されている必要があります。 ネットワークの洞察は、傍受されたネットワークエンドポイントに表示されます。
 
@@ -225,7 +225,7 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 #### <a name="network-path"></a>ネットワークパス
 
-このセクションでは、Exchange Online サービスのフロントドア、SharePoint Online サービスのフロントドア、Microsoft Teams サービスのフロントドアに対する ICMP traceroute の結果を示します。 これは情報のみを対象として提供されており、関連するネットワークの洞察がありません。 3つの traceroutes が提供されています。 Traceroute から_outlook.office365.com_、顧客の SharePoint フロントエンドに対する traceroute、または_microsoft.sharepoint.com_が提供されていない場合はに、traceroute_に world.tr.teams.microsoft.com するもの。_
+このセクションでは、Exchange Online サービスのフロントドア、SharePoint Online サービスのフロントドア、Microsoft Teams サービスのフロントドアに対する ICMP traceroute の結果を示します。 これは情報のみを対象として提供されており、関連するネットワークの洞察がありません。 3つの traceroutes が提供されています。 Traceroute から _outlook.office365.com_、顧客の SharePoint フロントエンドに対する traceroute、または _microsoft.sharepoint.com_ が提供されていない場合はに、traceroute _に world.tr.teams.microsoft.com するもの。_
 
 ## <a name="connectivity-reports"></a>接続レポート
 
@@ -239,7 +239,7 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 ![ネットワーク正常性の状態](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 ここでは、よく寄せられる質問の一部に対する回答を示します。
 
@@ -265,7 +265,7 @@ Microsoft 365 service のフロントドアは、Office クライアントとサ
 
 インターネット出口の場所は、ネットワークトラフィックがエンタープライズネットワークから出てインターネットに接続する場所です。 これは、ネットワークアドレス変換 (NAT) デバイスがあり、通常はインターネットサービスプロバイダー (ISP) を使用して接続する場所としても識別されます。 場所とインターネット出口の場所の間に長距離の距離がある場合は、WAN のバックアウトが非常に重要であることがわかります。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 管理センターでのネットワーク接続 (プレビュー)](office-365-network-mac-perf-overview.md)
 

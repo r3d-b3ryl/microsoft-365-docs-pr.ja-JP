@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846498"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123609"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender で自動調査および応答機能を構成する
 
@@ -55,7 +55,7 @@ Microsoft 365 Defender は、強力な自動化された [調査と応答機能]
 
 1. Microsoft Defender セキュリティセンター () に移動し、 [https://securitycenter.windows.com](https://securitycenter.windows.com) サインインします。
 
-2. [ **設定** ]  >  **アクセス許可**  >  **デバイスグループ** に移動します。 
+2. [**設定**]  >  **アクセス許可**  >  **デバイスグループ** に移動します。 
 
 3. デバイスのグループポリシーを確認します。 特に、 **修復レベル** 列を参照してください。 **完全修復脅威を自動的に** 使用することをお勧めします。  必要なオートメーションのレベルを取得するには、デバイスグループを作成または編集する必要がある場合があります。 このタスクに関するヘルプを表示するには、次の記事を参照してください。
 
@@ -71,7 +71,7 @@ Microsoft は、特定のリスクを特定するのに役立つ組み込みの 
 
 Office 365 のセキュリティ設定電子メールとコンテンツの保護に役立ちます。 これらの設定を表示または変更するには、「 [脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」のガイダンスに従ってください。
 
-1. Microsoft 365 セキュリティセンター () で [https://security.microsoft.com/](https://security.microsoft.com/) 、[ポリシーの **Policies**  >  **脅威保護** ] に移動します。
+1. Microsoft 365 セキュリティセンター () で [https://security.microsoft.com/](https://security.microsoft.com/) 、[ポリシーの **Policies**  >  **脅威保護**] に移動します。
 
 2. 次のすべてのポリシーが構成されていることを確認してください。 ヘルプと推奨事項を取得するには、「 [脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」を参照してください。
 
@@ -91,15 +91,15 @@ Office 365 のセキュリティ設定電子メールとコンテンツの保護
 
 1. Microsoft 365 セキュリティセンター () に移動し、 [https://security.microsoft.com](https://security.microsoft.com) サインインします。
 
-2. ナビゲーションウィンドウで、次の図に示すように、 **インシデント** 、 **アクションセンター** **、および検索を探し** ます。
+2. ナビゲーションウィンドウで、次の図に示すように、 **インシデント**、 **アクションセンター** **、および検索を探し** ます。
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP オン":::
 
-   - **インシデント** 、 **アクションセンター** 、 **探し** ているものが表示される場合は、Microsoft 365 Defender が有効になっています。 次の手順に進む [か、デバイスグループの自動化レベルを確認または変更](#review-or-change-the-automation-level-for-device-groups)します。
+   - **インシデント**、**アクションセンター**、**探し** ているものが表示される場合は、Microsoft 365 Defender が有効になっています。 手順について [は、「デバイスグループの自動化レベルを確認または変更する](#review-or-change-the-automation-level-for-device-groups) (この記事)」を参照してください。
 
-   - **インシデント** 、 **アクションセンター** 、または **探し** ているものが表示さ *れ* ない場合は、Microsoft 365 Defender が有効になっていない可能性があります。 この場合は、次の手順に進みます。
+   - **インシデント**、**アクションセンター**、または **探し** ているものが表示さ *れ* ない場合は、Microsoft 365 Defender が有効になっていない可能性があります。 この場合は、次の手順に進みます (この記事の「[保留中および完了したアクションを確認](#review-pending-and-completed-actions-in-the-action-center)する」を参照してください)。
 
-3. ナビゲーションウィンドウで、[ **設定** ] [  >  **Microsoft 365 Defender** ] を選択します。 Microsoft 365 Defender が有効になっていることを確認します。 
+3. ナビゲーションウィンドウで、[**設定**] [  >  **Microsoft 365 Defender**] を選択します。 Microsoft 365 Defender が有効になっていることを確認します。 
 
    サポートが必要な場合 「 [Microsoft 365 Defender を有効にする」を](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)参照してください。
 

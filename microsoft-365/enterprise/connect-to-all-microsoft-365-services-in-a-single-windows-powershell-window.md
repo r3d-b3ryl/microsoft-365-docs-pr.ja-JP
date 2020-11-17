@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: '概要: 単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続します。'
-ms.openlocfilehash: 04be916f745e2bde70554045340fc8ec03f87413
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 4128e360a3664d3a61559139bc4e6e346418fa61
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754318"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087029"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>単一の PowerShell ウィンドウですべての Microsoft 365 サービスに接続する
 
@@ -68,7 +68,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Teams PowerShell の概要](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  Skype for Business Online やセキュリティ&amp;コンプライアンス センターに対して署名付きスクリプトを実行するよう PowerShell を構成する必要があります。 管理者特権の PowerShell セッション (**管理者として実行**する PowerShell セッション) で、次のコマンドを実行します。
+-  Skype for Business Online やセキュリティ&amp;コンプライアンス センターに対して署名付きスクリプトを実行するよう PowerShell を構成する必要があります。 管理者特権の PowerShell セッション (**管理者として実行** する PowerShell セッション) で、次のコマンドを実行します。
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -76,7 +76,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
 
 ## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Exchange Online およびセキュリティ &amp; コンプライアンス センターと Exchange Online PowerShell V2 モジュール
 
-この記事の手順では、Exchange Online PowerShell V2 モジュールを使用して、Exchange Online とセキュリティ &amp; コンプライアンス センターの両方に接続します。 ただし、現在のところ、*同じ PowerShell ウィンドウ*の両方に接続することはできません。 そのため、複数の Microsoft 365 サービスに対して PowerShell ウィンドウを構成するときに、そのうちの 1 つまたはもう一方に接続するように選択する必要があります。
+この記事の手順では、Exchange Online PowerShell V2 モジュールを使用して、Exchange Online とセキュリティ &amp; コンプライアンス センターの両方に接続します。 ただし、現在のところ、*同じ PowerShell ウィンドウ* の両方に接続することはできません。 そのため、複数の Microsoft 365 サービスに対して PowerShell ウィンドウを構成するときに、そのうちの 1 つまたはもう一方に接続するように選択する必要があります。
 
 ## <a name="connection-steps-when-using-just-a-password"></a>パスワードだけを使用する場合の接続手順
 
@@ -109,7 +109,7 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
-   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
+   Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $Credential
    ```
 
 5. 次のコマンドを実行して、Skype for Business Online に接続します。 初めて接続したときには、`WSMan NetworkDelayms` 値の増加に関する警告が表示されます。 それは無視します。
@@ -152,12 +152,12 @@ PowerShell の単一のインスタンスからすべての Microsoft 365 を管
    ```
   
    > [!Note]
-   > *全世界*以外の Microsoft Teams クラウドに接続する方法については、[「Connect-MicrosoftTeams」](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)を参照してください。
+   > *全世界* 以外の Microsoft Teams クラウドに接続する方法については、[「Connect-MicrosoftTeams」](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)を参照してください。
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュール
 
-以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用する場合の、単一のブロック内の*セキュリティ &amp; コンプライアンス センターを除く*すべてのサービスのコマンドです。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
+以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用する場合の、単一のブロック内の *セキュリティ &amp; コンプライアンス センターを除く* すべてのサービスのコマンドです。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -174,7 +174,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用する場合の、単一のブロック内の *Exchange Online を除く*すべてのサービスのコマンドです。 ドメイン ホストの名前とサインインの UPN を指定してから、それらすべてを同時に実行します。
+以下は、Graph 用 Azure Active Directory PowerShell モジュールを使用する場合の、単一のブロック内の *Exchange Online を除く* すべてのサービスのコマンドです。 ドメイン ホストの名前とサインインの UPN を指定してから、それらすべてを同時に実行します。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -194,7 +194,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュール
 
-以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する場合の、単一のブロック内の*セキュリティ &amp; コンプライアンス センターを除く*すべてのサービスのコマンドです。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
+以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する場合の、単一のブロック内の *セキュリティ &amp; コンプライアンス センターを除く* すべてのサービスのコマンドです。 ドメイン ホストの名前を指定してから、それらすべてを同時に実行します。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -211,7 +211,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する場合の、単一のブロック内の *Exchange Online を除く*すべてのサービスのコマンドです。 ドメイン ホストの名前とサインインの UPN を指定してから、それらすべてを同時に実行します。
+以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールを使用する場合の、単一のブロック内の *Exchange Online を除く* すべてのサービスのコマンドです。 ドメイン ホストの名前とサインインの UPN を指定してから、それらすべてを同時に実行します。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -232,7 +232,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>Graph 用 Azure Active Directory PowerShell モジュール
 
-以下は、Graph モジュール用 Azure Active Directory PowerShell で多要素認証を使用する場合に、*セキュリティ &amp; コンプライアンス センターを除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
+以下は、Graph モジュール用 Azure Active Directory PowerShell で多要素認証を使用する場合に、*セキュリティ &amp; コンプライアンス センターを除く* 複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -252,7 +252,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-以下は、Graph モジュール用 Azure Active Directory PowerShell で多要素認証を使用する場合に、*Exchange Online を除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
+以下は、Graph モジュール用 Azure Active Directory PowerShell で多要素認証を使用する場合に、*Exchange Online を除く* 複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -274,7 +274,7 @@ Connect-MicrosoftTeams
 ```
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュール
 
-以下は、Windows PowerShell モジュール用 Microsoft Azure Active Directory で多要素認証を使用する場合に、*セキュリティ &amp; コンプライアンス センターを除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
+以下は、Windows PowerShell モジュール用 Microsoft Azure Active Directory で多要素認証を使用する場合に、*セキュリティ &amp; コンプライアンス センターを除く* 複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -294,7 +294,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールで多要素認証を使用する場合に、*Exchange Online を除く*複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
+以下は、Windows PowerShell 用 Microsoft Azure Active Directory モジュールで多要素認証を使用する場合に、*Exchange Online を除く* 複数の Microsoft 365 サービスに接続するための単一ブロック内のすべてのコマンドです。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"

@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: コンテンツセンターを作成する方法を説明します。
-ms.openlocfilehash: f65b542dfe9cbb945f347323053cee582deef25b
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 878319dd938f565f00a250f0b08de15641644e1c
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321835"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087441"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでコンテンツセンターを作成する
 
@@ -40,7 +41,7 @@ ms.locfileid: "48321835"
 2. SharePoint 管理センターの [**サイト**] で、[**アクティブなサイト**] を選択します。
 3. [**アクティブなサイト**] ページで、[**作成**] をクリックし、[**その他のオプション**] を選択します。
 4. [**テンプレートの選択**] メニューで、[**コンテンツセンター**] を選択します。
-5. 新しいサイトの場合は、**サイト名**、**プライマリ管理者**、および**言語**を指定します。</br>
+5. 新しいサイトの場合は、**サイト名**、**プライマリ管理者**、および **言語** を指定します。</br>
 
 > [!NOTE] 
 > コンテンツ センター サイトを選択して、使用可能な任意の言語で表示できますが、現在、モデルは英語のファイルに対してのみ作成できることに注意してください。 また、他のサイト テンプレートと同様に、サイトの作成後に既定のサイトの言語を編集できないことにも注意してください。</br>

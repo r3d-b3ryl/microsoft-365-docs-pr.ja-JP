@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: SharePoint ドキュメントライブラリに発行されたモデルを適用する方法について説明します。
-ms.openlocfilehash: 771b0f451d404c6e90f62091ca466bfaf34bae39
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338675"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087489"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexのドキュメント理解モデルを適用する
 
@@ -34,7 +35,7 @@ ms.locfileid: "48338675"
 
 モデルをSharePointドキュメントライブラリに適用するには、次の操作を行います。
 
-1. モデルのホームページの [**ライブラリにモデルを適用する** ]タイルの [**モデルの発行 **]を選びます。 または、[**このモデルのあるライブラリ**]セクション の [**+ ライブラリの追加**] を選択します。 </br>
+1. モデルのホームページの [**ライブラリにモデルを適用する** ]タイルの [**モデルの発行**]を選びます。 または、[**このモデルのあるライブラリ**]セクション の [**+ ライブラリの追加**] を選択します。 </br>
 
     ![ライブラリにモデルを追加する](../media/content-understanding/apply-to-library.png)</br>
 
@@ -43,9 +44,9 @@ ms.locfileid: "48338675"
     ![サイトの選択](../media/content-understanding/site-search.png)</br>
 
     > [!NOTE]
-    > モデルを適用しようとしているドキュメントライブラリへの*リスト管理*許可を持っているかまたは、*編集* 権限を持っていなければなりません。</br>
+    > モデルを適用しようとしているドキュメントライブラリへの *リスト管理* 許可を持っているかまたは、*編集* 権限を持っていなければなりません。</br>
 
-3. サイトを選択した後、モデルを適用するドキュメントライブラリを選択します。 このサンプルでは、*Contoso ケーストラッキング* サイトから*ドキュメント* ドキュメントライブラリ を選びます。</br>
+3. サイトを選択した後、モデルを適用するドキュメントライブラリを選択します。 このサンプルでは、*Contoso ケーストラッキング* サイトから *ドキュメント* ドキュメントライブラリ を選びます。</br>
 
     ![ドキュメントライブラリを選択する](../media/content-understanding/select-doc-library.png)</br>
 
@@ -72,7 +73,7 @@ ms.locfileid: "48338675"
 適用されたモデルが、ドキュメントライブラリにアップロードされたすべてのファイルを処理している場合は、次の操作を行って、モデルが適用される前に、ドキュメントライブラリ内に既に存在していたファイル上で実行することもできます。
 
 1. ドキュメントライブラリで、モデルで処理するファイルを選択します。
-2. ファイルを選択すると、 [ドキュメントライブラリ] リボンに**分類および抽出** が表示されます。 **分類および抽出**を選択します。
+2. ファイルを選択すると、 [ドキュメントライブラリ] リボンに **分類および抽出** が表示されます。 **分類および抽出** を選択します。
 3. 選択したファイルが処理されるキューに追加されます。
 
       ![分類と抽出](../media/content-understanding/extract-classify.png)</br> 

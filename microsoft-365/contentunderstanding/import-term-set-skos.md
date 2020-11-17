@@ -8,14 +8,15 @@ audience: admin
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.service: ''
+ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: 318497b8b1815b281eff7d781820616c9be9d5ed
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 96ffa22880aa9bcb70c0f7159ac7587c911b375b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321243"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087357"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>SKOS ベースの形式を使用して用語セットをインポートする
 
@@ -23,7 +24,7 @@ SKOS ベースの形式を使用して用語セットをインポートできま
 
 インポートファイルは 20,000 語未満に保つことをお勧めします。 ファイルが大きいと、検証とインポートにかかる時間が長くなる場合があります。
 
-1. SharePoint 管理センターで、[**コンテンツサービス**] を展開し、**用語ストア**をクリックします。
+1. SharePoint 管理センターで、[**コンテンツサービス**] を展開し、**用語ストア** をクリックします。
 
 2. 用語セットをインポートする用語グループを選択します。
 

@@ -17,90 +17,126 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータルの起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: 929492742fd140654bd13be8165093ee10647c6d
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999598"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087669"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してポータルを起動する
 
-ポータルの起動スケジューラを使用してポータルを起動するには、最初にテナント管理者が新しいポータルのウェーブをセットアップできるかどうかを検証します。 その後、管理者は、アクティブな wave 内のユーザーの存在に基づいて、要求のリダイレクトを検証できます。
+ポータルは、イントラネット上の SharePoint サイトであり、サイト上のコンテンツを使用する多数のサイト ビューアーがいます。 ダッシュボードを wave で開始することは、ユーザーが新しい SharePoint Online ポータルにアクセスしてスムーズかつ高性能な環境にアクセスできるようにするための重要な部分です。 
 
-ポータルを正常に起動する方法の詳細については、「基本的な原則、プラクティス、および [正常なポータルの作成、起動](https://go.microsoft.com/fwlink/?linkid=2105838)、および保守」で詳細に説明されている手順を実行してください。 
+「 [SharePoint Online でポータルの起動を計画する](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)」で説明されているように、wave で起動することは、ポータルをロールアウトするための主要な方法です。 ポータル起動スケジューラは、新しいポータルのリダイレクトを管理することによって、ウェーブ/段階的なロールアウトアプローチに従うのに役立つように設計されています。 各ウェーブでは、ユーザーのフィードバックを収集し、展開の各ウェーブ時にパフォーマンスを監視することができます。 これには、ポータルをゆっくり導入するという利点があり、次の波に進む前に問題を一時停止および解決することができます。また、最終的にユーザーにとっての良好な動作を保証します。 
 
-## <a name="app-setup"></a>アプリのセットアップ
-1. コントロールパネルを使用してコンピューターに既存のがある場合は、アンインストール `Microsoft.Online.SharePoint.PowerShell` します。
-2. PowerShell パス `Install-Module -Name Microsoft.Online.SharePoint.PowerShell` 。
+リダイレクトには、次の2種類があります。 
+- 双方向: 新しいモダン SharePoint Online ポータルを起動して既存の SharePoint 従来またはモダンポータルを置き換えます。 
+- 一時ページリダイレクト: 既存の SharePoint ポータルを使用しない新しいモダン SharePoint Online ポータルを起動します。
 
-## <a name="connect-to-sharepoint-online"></a>SharePoint Online に接続する
-1. Windows で [SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) を開きます。
-2. 管理者としてテナントに接続します。
-   - `Connect-SPOService -Url "https://*-admin.sharepoint.com" -Credential "username”`
-3.  プロンプトが表示されたら、パスワードを入力します。
+ポータル起動スケジューラは、コミュニケーションサイトやモダンチームサイトなど、モダンな SharePoint Online ポータルを起動する場合にのみ使用できます。 起動は、少なくとも7日前にスケジュールする必要があります。 必要な wave の数は、予想されるユーザー数によって決まります。 ポータルの起動をスケジュールする前に、ポータルのホームページが正常であることを確認するために、 [SharePoint 用ページの診断ツール](https://aka.ms/perftool) を実行する必要があります。 ポータルの開始時に、サイトへのアクセス許可を持つすべてのユーザーが新しいサイトにアクセスできるようになります。 
 
-## <a name="command-to-get-an-existing-setup"></a>既存の設定を取得するコマンド
+ポータルを正常に起動する方法の詳細については、「基本的な原則」、「プラクティス」、および「 [正常なポータルの作成、起動、保守](https://docs.microsoft.com/sharepoint/portal-health)」に記載されている推奨事項に従ってください。 
 
-既存のポータル起動構成を表示するには、次のようにします。
+> [!NOTE]
+> この機能は、Office 365 ドイツ、21Vianet が運用している Office 365、または Microsoft 365 US Government プランでは使用できません。
 
-1. 合格 `Get-SPOPortalLaunchWaves  -LaunchSiteUrl  https://*.sharepoint.com/sites/newsite` です。
-2. `-DisplayFormat Raw`生の入力形式として書式設定された wave コレクションを表示する場合は、追加のパラメーターを渡します。
+## <a name="app-setup-and-connecting-to-sharepoint-online"></a>アプリのセットアップと SharePoint Online への接続
+1. [最新の SharePoint Online 管理シェルをダウンロードします](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
-## <a name="commands-for-bi-directional-redirection"></a>双方向リダイレクトのコマンド
+    > [!NOTE]
+    > SharePoint Online 管理シェルの以前のバージョンがインストールされている場合は、[プログラムの追加と削除] に移動して、"SharePoint Online 管理シェル" をアンインストールします。 <br>ダウンロード センター ページで言語を選択して、[ダウンロード] ボタンをクリックします。 x64 .msi ファイルまたは x86 .msi ファイルのどちらをダウンロードするかを選択するよう求められます。 Windows の 64 ビット版を実行している場合は x64 ファイルを、32 ビット版を実行している場合は x86 ファイルをそれぞれダウンロードします。 不明な場合には、「[実行している Windows オペレーティング システムの確認方法](https://support.microsoft.com/help/13443/windows-which-operating-system)」を参照してください。 ファイルをダウンロードしたら、それを実行して、セットアップ ウィザードの手順に従います。
 
-古いサイトユーザーを段階的な方法で新しいサイトに移行するには、次のようにします。
+2. Microsoft 365 の[グローバル管理者または SharePoint 管理者](/sharepoint/sharepoint-admin-role)として SharePoint Online に接続します。 方法の詳細については、「[SharePoint Online 管理シェルの使用を開始する](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)」を参照してください。
 
-1. ポータルの発表波を作成します。
-   - これは、早期リリースのテストフェーズでのみ適用されます。
-   - 変更の影響をすぐにテストするには、最初の wave `LaunchDateUtc` が現在の日付に設定されていることを確認します。 このフラグを指定しないと、エラーメッセージが表示されます。 このエラーは、運用環境での起動を少なくとも7日前にスケジュールする必要があるために発生します。
 
-  `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+## <a name="view-any-existing-portal-launch-setups"></a>既存のポータル起動セットアップを表示する
 
-2. 検証を完了します。
-  - リダイレクトがサービス全体にわたる構成を完了するには最大5分かかる場合があるため、続行する前にお待ちください。
-  - として指定されたユーザーでログインした場合は `WaveOverrideUsers` 、何も変更されません。 移動先のサイトが表示されるようにする必要があります。
-  - 閲覧者の *SG1* の一部であるユーザーを使用してログインします。
-    - 古いサイトに移動し、新しいサイトにリダイレクトする必要があります。
-    - 新しいサイトに移動して、新しいサイトにとどまる必要があります。
-    - *閲覧者 SG2* でユーザーと共にログオンし、古いサイトに移動して古いサイトを維持します。
-    - 新しいサイトに移動して、古いサイトにリダイレクトする必要があります。
+既存のポータル起動構成があるかどうかを確認するには、次のようにします。
 
-3. ポータルの起動を一時停止します。
-  - 発表波を一時停止する必要がある場合は、[x] 個の日数の間、一時停止することができます。 `Status`フラグを pause に設定すると、すべての今後の wave progressions が禁止されます。 
-  - `Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - これにより、すべてのユーザーが古いサイトにリダイレクトされることを検証します。
+   ```PowerShell
+   Get-SPOPortalLaunchWaves -LaunchSiteUrl <object> -DisplayFormat <object>
+   ```
 
-4. ポータルの起動の進行状況を再起動します。 
-  - `Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - リダイレクトが復元されるようになったことを検証します。
+## <a name="schedule-a-portal-launch-on-the-site"></a>サイトでポータルの起動をスケジュールする
 
-5. ポータル起動セットアップを削除します。
-  - `Remove-SPOPortalLaunchWaves -LaunchSiteUrl https://*.sharepoint.com/sites/NewSite`.
-  - すべてのユーザーに対してリダイレクトが発生しないことを検証します。
+必要な wave の数は、予想される起動サイズによって異なります。 
+- 10k ユーザー未満: 1 wave
+- 10k から30k ユーザー: 3 ウェーブ 
+- 30k + ~ 10万ユーザー: 5 ウェーブ
+- 10万人以上のユーザー: 5 つのウェーブを使用して、Microsoft アカウントチームにお問い合わせください。
 
-## <a name="commands-for-redirection-to-temporary-page"></a>一時ページにリダイレクトするためのコマンド
+### <a name="steps-for-bi-directional-redirection"></a>双方向のリダイレクトの手順
 
-以前のサイトがなく、新しいポータルページのランディングからのユーザーではないユーザーを省略する場合は、次の手順を実行します。
+双方向のリダイレクトには、既存の SharePoint クラシックまたはモダンポータルを置き換えるために新しいモダン SharePoint Online ポータルを起動する作業が含まれます。 アクティブなウェーブのユーザーは、古いサイトに移動するか、新しいサイトに移動するかに関係なく、新しいサイトにリダイレクトされます。 新しいサイトにアクセスしようとする、開始していない wave のユーザーは、wave が起動されるまで古いサイトにリダイレクトされます。 以前のサイトと新しいサイトにリダイレクトされずにアクセスする必要がある管理者または所有者が、パラメーターを使用してリストされていることを確認する必要があり `WaveOverrideUsers` ます。 
 
-任意のサイトに一時ページを作成するには、次のようにします。
+既存の SharePoint サイトから新しい SharePoint サイトにユーザーを段階的に移行するには、次のようにします。
 
+1. ポータルの起動波を指定するには、次のコマンドを実行します。
+   
+   ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType Bidirectional -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+例:
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType Bidirectional -RedirectUrl "https://contoso.sharepoint.com/teams/oldsite" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. 検証を完了します。 リダイレクトがサービス全体にわたる構成を完了するには、5-10 分かかることがあります。 
+
+### <a name="steps-for-redirection-to-temporary-page"></a>一時ページへのリダイレクトの手順
+
+既存の SharePoint ポータルが存在しない場合は、一時ページリダイレクトを使用する必要があります。 ユーザーは、段階的な方法で新しいモダン SharePoint Online ポータルに転送されます。 ユーザーが起動されていない wave にある場合は、一時ページ (任意の URL) にリダイレクトされます。 
+
+1. ポータルの起動波を指定するには、次のコマンドを実行します。
+   
+      ```PowerShell
+    New-SPOPortalLaunchWaves -LaunchSiteUrl <object> -RedirectionType ToTemporaryPage -RedirectUrl <string> -ExpectedNumberOfUsers <object> -WaveOverrideUsers <object> -Waves <object>
+    ```
+
+例:
+   ```PowerShell
+   New-SPOPortalLaunchWaves -LaunchSiteUrl "https://contoso.sharepoint.com/teams/newsite" -RedirectionType ToTemporaryPage -RedirectUrl "https://portal.contoso.com/UnderConstruction.aspx" -ExpectedNumberOfUsers 10kTo30kUsers -WaveOverrideUsers "admin@contoso.com" -Waves ' 
+[{Name:"Wave 1", Groups:["Viewers 1"], LaunchDateUtc:"2020/10/14"}, 
+{Name:"Wave 2", Groups:["Viewers 2"], LaunchDateUtc:"2020/10/15"}, 
+{Name:"Wave 3", Groups:["Viewers 3"], LaunchDateUtc:"2020/10/16"}]'
+   ```
+
+2. 検証を完了します。 リダイレクトがサービス全体にわたる構成を完了するには、5-10 分かかることがあります。 
+   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+
+## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>サイトでポータルの起動を一時停止または再開する
+
+1. 進行中のポータルの起動を一時停止し、一時的な wave progressions が発生しないようにするには、次のコマンドを実行します。
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>
+   ```
+2. すべてのユーザーが古いサイトにリダイレクトされていることを確認します。 
+
+3. 一時停止しているポータルの起動を再開するには、次のコマンドを実行します。
+
+   ```PowerShell
+   Set-SPOPortalLaunchWaves -Status Restart - LaunchSiteUrl <object>
+   ```
+   
+4. リダイレクトが復元されるようになったことを検証します。 
+
+## <a name="delete-a-portal-launch-on-the-site"></a>サイト上のポータルの起動を削除する
 1. ポータルの起動波形を作成します。
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
+  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
-2. 検証を完了します。
+2. 次のコマンドを実行して、サイトに対してスケジュールされた、または進行中のポータルの起動を削除します。
 
-  - 処理が完了するまでに最大5分かかる場合があるため、5分間待機してから続行します。
-  - *ビューアー* の一部であるユーザーとログを記録します。
-     - 新しいサイトに移動して、新しいサイトにとどまる必要があります。
-     - Temp ページに移動すると、temp ページが表示されたままになります。
-  - *ビューアーの SG2* の一部であるユーザーとログを記録します。
-     - 新しいサイトに移動し、temp ページにリダイレクトされる必要があります。
-     - Temp ページに移動すると、temp ページが表示されたままになります。
+   ```PowerShell
+   Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
+   ```
 
-3. ポータル起動セットアップを削除します。
-  - `Remove-SPOPortalLaunchWaves - LaunchSiteUrl  https://*.sharepoint.com/sites/NewSite`.
-  - すべてのユーザーに対してリダイレクトが発生しないことを検証します。
+3. すべてのユーザーに対してリダイレクトが発生しないことを検証します。
 
 ## <a name="learn-more"></a>詳細情報
 [SharePoint Online でポータルの起動ロールアウトプランを計画する](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)

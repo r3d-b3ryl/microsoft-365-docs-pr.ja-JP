@@ -18,17 +18,17 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Microsoft 365 apps health-テクノロジエクスペリエンスの生産性スコアの詳細。
-ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+description: Microsoft 365 Apps health-テクノロジエクスペリエンスの生産性スコアの詳細。
+ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841191"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123513"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 アプリの正常性–テクノロジエクスペリエンス
 
-生産性スコアは、ユーザーが Microsoft 365 アプリを使用する方法と、テクノロジエクスペリエンスをサポートする方法について測定基準を使用して作業を行う方法を変革するのに役立ちます。 スコアは、ユーザーとテクノロジの分野のための組織&#39;のパフォーマンスを反映し、自分のスコアを自分のような組織と比較します。 アプリの正常性カテゴリは、ユーザーエクスペリエンスの下にある測定値の一部です。 詳細については、「 [生産性スコアの概要](productivity-score.md) 」を参照してください。
+生産性スコアは、ユーザーが Microsoft 365 アプリを使用する方法と、テクノロジエクスペリエンスをサポートする方法について測定基準を使用して作業を行う方法を変革するのに役立ちます。 スコアは、ユーザーとテクノロジの分野のための組織&#39;のパフォーマンスを反映し、自分のスコアを自分のような組織と比較します。 アプリの正常性カテゴリは、テクノロジエクスペリエンスの下にある測定値の一部です。 詳細については、「 [生産性スコアの概要](productivity-score.md) 」を参照してください。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>組織&#39;Microsoft 365 アプリの正常性スコアが重要である理由
 
@@ -59,7 +59,7 @@ Microsoft 365 アプリの正常性スコアを計算するには、各更新プ
 
 次のグラフは、推奨される更新プログラムチャネルのうち、過去180日間のデバイスの数を示しています。 折れ線グラフのデータポイントは、過去28日間のアクティビティの集計です。
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Microsoft 365 アプリの表示が主に可視化されています。":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="推奨される更新プログラムチャネルを実行しているデバイスの傾向を示すグラフ。":::
 
 ### <a name="scoring-framework"></a>スコアリングフレームワーク
 
@@ -71,7 +71,7 @@ Microsoft 365 アプリの正常性スコアは、推奨チャネルおよび最
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>現在のチャネルのデバイスとサポートされているバージョンの実行
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Microsoft 365 アプリの表示が主に可視化されています。":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="現在サポートされているチャネル内のデバイスの数を示す図。":::
 
 1. **ヘッダー:**  強調表示現在のチャネル上のデバイスのうち、サポートされているバージョンの Microsoft 365 アプリを実行している割合
 1. **本文:**  推奨チャネルで Microsoft 365 アプリを実行しているデバイスの価値に関する情報を提供します。
@@ -82,7 +82,7 @@ Microsoft 365 アプリの正常性スコアは、推奨チャネルおよび最
 
 ### <a name="devices-running-latest-and-supported-versions"></a>最新およびサポートされているバージョンを実行しているデバイス
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Microsoft 365 アプリの表示が主に可視化されています。":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="最新バージョンおよびサポートされているバージョンのアプリを実行しているデバイスの数を示す図。":::
 
 1. **ヘッダー:**  サポートされているバージョンと最新のバージョンを実行しているデバイスのパーセンテージを強調表示します。
 1. **本文:**  推奨チャネルおよびサポートされている最新バージョンのデバイスを実行しているデバイスの値に関する情報を提供します。
@@ -99,7 +99,7 @@ Microsoft 365 アプリの正常性スコアは、推奨チャネルおよび最
 
 このグラフは、過去180日間にわたる Microsoft 365 アプリのサポートされているバージョンと最新バージョンを実行しているデバイスの傾向ラインを示しています。
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Microsoft 365 アプリの表示が主に可視化されています。":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="サポートされている最新バージョンのアプリを長期間にわたって実行するデバイスの数を showa するグラフ。":::
 
 ## <a name="people-in-your-organization"></a>組織内のユーザー
 

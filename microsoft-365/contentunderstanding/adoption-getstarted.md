@@ -8,15 +8,16 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337231"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087513"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint の同期のための導入: 作業の開始
 
@@ -127,7 +128,7 @@ SharePoint の Syntex が組織を支援する方法について考えてみま�
 | SharePoint/ナレッジ管理者 | 電源プラットフォーム管理者 | ナレッジマネージャー | モデルの所有者 |
 |:-------|:-------|:-------|:-------|
 | AAD の役割| 役割の追加 | AAD の役割 | チャンピオン |
-| フォーム処理を構成する | フォーム処理のための共通データサービス環境を構成する | ユースケースを収集する | ビジネスユースケースを収集する |
+| フォームの処理を構成する | フォーム処理のための共通データサービス環境を構成する | ユースケースを収集する | ビジネスユースケースを収集する |
 | コンテンツセンターとアクセス許可を管理する| AIB クレジットの購入と割り当て | ベストプラクティスを確立し、モデル分析をレビューする | モデルを作成および適用する |
 
 ナレッジマネージャー、ビジネスプロセスの所有者、およびコンテンツモデルの所有者は、サンプルモデルと組織内での支持者の採用を作成します。

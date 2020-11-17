@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft コンプライアンスマネージャーに関してよく寄せられる質問への回答を検索します。これにより、組織はリスク評価を簡略化および自動化できます。
-ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 91b5957d843a2e3fba22a1a9f1e630fbfede8713
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791783"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087070"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>コンプライアンスマネージャーのよく寄せられる質問
 
@@ -73,7 +73,7 @@ Service Trust Portal でコンプライアンスマネージャーを使用し�
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>コンプライアンスマネージャーを使用するためのライセンス要件はありますか。
 
-はい。 コンプライアンスマネージャーの GA リリースには、新しいライセンス条項が含まれています。 Office 365 と Microsoft 365 のライセンスを持つすべての組織 (米国政府および DoD を除く) は、コンプライアンスマネージャーにアクセスできます。 ただし、組織で使用可能な評価と評価テンプレートの管理方法は、使用許諾契約によって異なります。 詳細については、「 [Microsoft 365 ライセンスガイダンス」の「セキュリティとコンプライアンス」を](https://go.microsoft.com/fwlink/?linkid=2132371) 参照してください。
+はい。 コンプライアンスマネージャーの GA リリースには、新しいライセンス条項が含まれています。 Office 365 と Microsoft 365 ライセンスおよび米国政府機関コミュニティ (GCC) を使用しているすべての組織は、コンプライアンスマネージャーにアクセスできます。 ただし、組織で使用可能な評価と評価テンプレートの管理方法は、使用許諾契約によって異なります。 詳細については、「 [Microsoft 365 ライセンスガイダンス」の「セキュリティとコンプライアンス」を](https://go.microsoft.com/fwlink/?linkid=2132371) 参照してください。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>スコアが高い場合は、完全に準拠していることを意味します。
 

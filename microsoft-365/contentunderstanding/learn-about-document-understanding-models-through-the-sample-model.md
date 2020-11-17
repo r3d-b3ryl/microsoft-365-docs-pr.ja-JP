@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: サンプル モデルを使用したドキュメント理解モデルについての詳細情報
-ms.openlocfilehash: 75e17c8075fa381c68b6f85e0dfbe96e5d2ad557
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 664b0ad7cb00a4570fbe8a4bd8a2c6f319cf8800
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087381"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>サンプル モデルを通じてドキュメント理解モデルについて学ぶ
 
@@ -35,7 +36,7 @@ Microsoft SharePoint Syntex は、調査に使用できるサンプル モデル
 
 サンプル モデルを分析してモデルがどのように構築されているかをよりよく理解するだけでなく、作業モデルとしてさらに進んで、次のようなことを行うことができます。
 
-- 別の抽出子を追加します。 たとえば、*割引料金*を抽出するものを追加します。
+- 別の抽出子を追加します。 たとえば、*割引料金* を抽出するものを追加します。
 - モデルをドキュメント ライブラリに適用し、トレーニング ファイルの一部をアップロードして、モデルがファイルを分類し、ファイルからデータを抽出する方法を確認します。
 
 
