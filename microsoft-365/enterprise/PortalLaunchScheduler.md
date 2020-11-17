@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータルの起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087669"
+ms.locfileid: "49123585"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>ポータル起動スケジューラを使用してポータルを起動する
 
 ポータルは、イントラネット上の SharePoint サイトであり、サイト上のコンテンツを使用する多数のサイト ビューアーがいます。 ダッシュボードを wave で開始することは、ユーザーが新しい SharePoint Online ポータルにアクセスしてスムーズかつ高性能な環境にアクセスできるようにするための重要な部分です。 
 
-「 [SharePoint Online でポータルの起動を計画する](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)」で説明されているように、wave で起動することは、ポータルをロールアウトするための主要な方法です。 ポータル起動スケジューラは、新しいポータルのリダイレクトを管理することによって、ウェーブ/段階的なロールアウトアプローチに従うのに役立つように設計されています。 各ウェーブでは、ユーザーのフィードバックを収集し、展開の各ウェーブ時にパフォーマンスを監視することができます。 これには、ポータルをゆっくり導入するという利点があり、次の波に進む前に問題を一時停止および解決することができます。また、最終的にユーザーにとっての良好な動作を保証します。 
+「 [SharePoint Online でポータルの起動を計画する](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)」で説明されているように、wave で起動することは、ポータルをロールアウトするための主要な方法です。 ポータル起動スケジューラは、新しいポータルのリダイレクトを管理することによって、ウェーブ/段階的なロールアウトアプローチに従うのに役立つように設計されています。 各ウェーブでは、ユーザーのフィードバックを収集し、展開の各ウェーブ時にパフォーマンスを監視することができます。 これには、ポータルをゆっくり導入するという利点があり、次の波に進む前に問題を一時停止および解決することができます。また、最終的にユーザーにとっての良好な動作を保証します。 
 
 リダイレクトには、次の2種類があります。 
 - 双方向: 新しいモダン SharePoint Online ポータルを起動して既存の SharePoint 従来またはモダンポータルを置き換えます。 
