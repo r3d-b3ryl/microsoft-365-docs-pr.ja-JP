@@ -13,13 +13,13 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: コンプライアンスや規制の要件を満たすようにデータを管理するには、 Microsoft 365 に Microsoft 情報ガバナンス機能を実装します。
-ms.openlocfilehash: c85fd74f0e3259c40f16bc2faa766b3313239134
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+description: コンプライアンスや規制の要件を満たすようにデータを管理するには、Microsoft 情報ガバナンス機能を実装します。
+ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071468"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087116"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 の Microsoft 情報ガバナンス
 
@@ -29,7 +29,7 @@ Microsoft 情報ガバナンス (MIG と略されることもあります) 機�
 
 ![データを管理する - 情報ガバナンスとレコード管理](../media/information-governance-records-management.png)
 
-データをセキュリティで保護するには、 「[Microsoft 365 の Microsoft Information Protection](information-protection.md)」を参照してください。
+データをセキュリティで保護するには、「[Microsoft 365 の Microsoft Information Protection](information-protection.md)」を参照してください。
 
 ## <a name="information-governance"></a>情報ガバナンス
 
