@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) の [既定でセキュリティ保護] の設定についての詳細情報
-ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126663"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131099"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 で既定でセキュリティ保護されている
 
@@ -41,7 +41,7 @@ Exchange Online のメールボックスを使用する Microsoft 365 組織は�
 1. 疑いのあるマルウェアを含む電子メールは自動的に検疫され、受信者に通知されます。 [EOP でマルウェア対策ポリシーを構成するを](configure-anti-malware-policies.md)参照してください。
 1. 「高信頼」として識別されたフィッシングメールは、スパム対策ポリシーアクションに従って処理されます。 [EOP の「スパム対策ポリシーの構成」を](configure-your-spam-filter-policies.md)参照してください。
 
-Microsoft は、お客様に既定でセキュリティを維持することを目的としているため、一部のテナントは、マルウェアや高信頼フィッシングには適用されません。 これらのオーバーライドは次のとおりです。
+Microsoft は、お客様を既定で安全なものにすることを目的としているため、一部のテナントの上書きは、マルウェアや高精度のフィッシングには適用されません。 これらのオーバーライドは次のとおりです。
 
 - 許可された送信者リストまたは許可されたドメインリスト (スパム対策ポリシー)
 - Outlook の差出人セーフリスト

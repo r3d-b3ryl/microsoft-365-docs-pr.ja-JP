@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 組織の電子メールセキュリティレポートを検索して使用する方法について説明します。 電子メールセキュリティレポートは、セキュリティ & コンプライアンスセンターで利用できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75370cbbdfbc59bf8e9334d1e11d8b92c5c97e61
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087753"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131203"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターで電子メールのセキュリティ レポートを表示する
 
@@ -334,7 +334,7 @@ ms.locfileid: "49087753"
   - **EOP url 評価**: 悪意のある url の評価。
   - **General フィッシング filter**: アナリストルールに基づいたフィッシング信号。
   - **Others**
-  - **フィッシング ZAP**<sup>2</sup>: 0 時間自動削除フィッシングメッセージ。
+  - **フィッシング ZAP**<sup>2</sup>: 0 時間のフィッシングメッセージの自動削除。
   - **URL 分析**<sup>1</sup>
   - **ユーザー偽装**<sup>1</sup>: 管理者によって定義されたユーザーの偽装またはメールボックスインテリジェンスによる学習。
 

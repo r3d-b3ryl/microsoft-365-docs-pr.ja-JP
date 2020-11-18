@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846486"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130890"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Microsoft 365 Defender 試用ラボまたはパイロット環境を作成する 
 
@@ -54,11 +54,13 @@ ms.locfileid: "48846486"
 
 Microsoft 365 Defender 試用ラボ環境を作成して展開するには、3つのフェーズがあります。
 
+![展開フェーズ: 準備、セットアップ、オンボード](../../media/phase-diagrams/deployment-phases.png)
+
 |フェーズ | 説明 | 
 |:-------|:-----|
-| ![フェーズ 1: 準備](../../media/prepare.png)<br>[フェーズ 1: 準備](prepare-mtpeval.md)| トライアルラボまたはパイロット環境に Microsoft 365 Defender を展開するときに考慮する必要がある事項について説明します。 <br><br>-関係者と承認 <br> -環境に関する考慮事項 <br>-アクセス <br>-Azure Active Directory のセットアップ <br> -構成の順序
-|  ![フェーズ 2: セットアップ](../../media/setup.png) <br>[フェーズ 2: セットアップ](setup-mtpeval.md)|  Microsoft 365 セキュリティセンターにアクセスするための最初の手順を実行して、Microsoft 365 Defender 試用ラボまたはパイロット環境を設定します。 次のようなガイドが表示されます。<br><br>-Microsoft 365 E5 試用版にサインアップする <br>  -ドメインの構成<br>-Microsoft 365 E5 ライセンスを割り当てる<br>-ポータルのセットアップウィザードを完了します。|
-|  ![フェーズ 3: 構成 & オンボード](../../media/config-onboard.png) <br>[フェーズ 3: 構成 & オンボード](config-mtpeval.md) | 各 Microsoft 365 Defender 柱およびオンボードエンドポイントを構成します。 次のようなガイドが表示されます。<br><br>-Office 365 の Microsoft Defender を構成する<br>-Microsoft Cloud App Security を構成する<br>-Identity の Microsoft Defender を構成する<br>-エンドポイントの Microsoft Defender を構成する
+|[フェーズ 1: 準備](prepare-mtpeval.md)| トライアルラボまたはパイロット環境に Microsoft 365 Defender を展開するときに考慮する必要がある事項について説明します。 <br><br>-関係者と承認 <br> -環境に関する考慮事項 <br>-アクセス <br>-Azure Active Directory のセットアップ <br> -構成の順序
+|[フェーズ 2: セットアップ](setup-mtpeval.md)|  Microsoft 365 セキュリティセンターにアクセスするための最初の手順を実行して、Microsoft 365 Defender 試用ラボまたはパイロット環境を設定します。 次のようなガイドが表示されます。<br><br>-Microsoft 365 E5 試用版にサインアップする <br>  -ドメインの構成<br>-Microsoft 365 E5 ライセンスを割り当てる<br>-ポータルのセットアップウィザードを完了します。|
+|[フェーズ 3: 構成 & オンボード](config-mtpeval.md) | 各 Microsoft 365 Defender 柱およびオンボードエンドポイントを構成します。 次のようなガイドが表示されます。<br><br>-Office 365 の Microsoft Defender を構成する<br>-Microsoft Cloud App Security を構成する<br>-Identity の Microsoft Defender を構成する<br>-エンドポイントの Microsoft Defender を構成する
 
 
 ## <a name="in-scope"></a>範囲内
@@ -72,7 +74,7 @@ Microsoft 365 Defender 試用ラボ環境を作成して展開するには、3�
     -   ポータル内のセットアップウィザードの完了
 -   ベストプラクティスに基づいてすべての Microsoft 365 Defender 柱を構成する
     -   Microsoft Defender for Office 365
-    -   Id の Microsoft Defender
+    -   Microsoft Defender for Identity
     -   Microsoft Cloud App Security
     -   Microsoft Defender for Endpoint
 
@@ -83,6 +85,6 @@ Microsoft 365 Defender 試用ラボ環境を作成して展開するには、3�
 -   Microsoft 365 Defender と統合される可能性のあるサードパーティ製ソリューションの構成
 -   運用環境でのペネトレーションテスト
 
-## <a name="next-step"></a>次のステップ
-![フェーズ 1: 準備](../../media/prepare.png) <br>[フェーズ 1: 準備](prepare-mtpeval.md) 
+## <a name="next-step"></a>次の手順
+[フェーズ 1: 準備](prepare-mtpeval.md) 
 <br> Microsoft 365 Defender 試用ラボまたはパイロット環境の準備

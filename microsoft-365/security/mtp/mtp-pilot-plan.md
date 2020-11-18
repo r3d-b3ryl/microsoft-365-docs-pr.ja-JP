@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec2bfe52308231577e4f2749e1f4cdf24a36f604
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846022"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130983"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>パイロットを計画する (Microsoft 365 Defender プロジェクト) 
 
@@ -34,45 +34,10 @@ ms.locfileid: "48846022"
 
 **適用対象:**
 - Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="パイロットを計画する Microsoft 365 Defender プロジェクト" />
-      <br/>計画</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Microsoft 365 Defender 試用ラボまたはパイロット環境の準備" />
-      <br/>準備</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Microsoft 365 Defender 攻撃のシミュレーションを実行する" />
-     <br/>攻撃のシミュレーション</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Microsoft 365 Defender パイロットの終了と概要" />
-     <br/>閉じて要約する</a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|![計画](../../media/phase-diagrams/1-planning.png)<br/>計画|[![準備](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[準備](prepare-mtpeval.md) | [![攻撃のシミュレーション](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[攻撃のシミュレーション](mtp-pilot-simulate.md) | [![閉じて要約する](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[閉じて要約する](mtp-pilot-close.md)|
+|--|--|--|--|
+|*ここでは、*| | | |
 
 現在、計画段階になっています。
 
@@ -95,7 +60,7 @@ ms.locfileid: "48846022"
 
 評価するオペレーティングシステムの種類も、組織の編成に基づいて定義する必要があります。 これには次のようなものがあります: [Mac エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements)、 [Linux サーバー](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements)、 [windows 10 エンドポイント](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)、 [windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)。
 
-## <a name="use-cases"></a>ユース ケース
+## <a name="use-cases"></a>使用例
 
 ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 例:
 - SOC アナリストとして、ネットワーク内のデバイス、ユーザー、およびメールボックス全体でアラートとイベントを表示、関連付け、評価、および管理する必要があります。 [インシデント管理]
@@ -120,7 +85,7 @@ ms.locfileid: "48846022"
 
 プランのすべての要素をまとめる1つの方法は、スコアカードを作成することです。 以下のサンプルスコアカードを参照してください。
 
-| ユースケース | Requirements | 構成要件 | テスト計画 | 予想結果 | テストの状態 | スコア | Notes |
+| ユース ケース | Requirements | 構成要件 | テスト計画 | 予想結果 | テストの状態 | スコア | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |インシデント管理|-Microsoft 365 Defender  </br></br>-Identity の Microsoft Defender </br></br>-エンドポイントの Microsoft Defender </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
 |自動赤外線|-Microsoft 365 Defender </br></br>-Identity の Microsoft Defender </br></br>-エンドポイントの Microsoft Defender |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |通知とインシデントは、Microsoft 365 Defender によって自動的に修復されます。||||
@@ -128,6 +93,6 @@ ms.locfileid: "48846022"
 
 
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 |![準備フェーズ](../../media/mtp/prep.png) <br>[準備フェーズ](prepare-mtpeval.md) | Microsoft 365 Defender パイロット環境の準備
 |:-------|:-----|

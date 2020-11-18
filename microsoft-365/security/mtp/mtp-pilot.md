@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 350904022ec86acdbebf109dd5946598643aea83
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843662"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131288"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>パイロットを実行する Microsoft 365 Defender プロジェクト 
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender は、統合された事前違反および適用後のエ
 
 次のサンプルタイムラインは、環境内に適切なリソースがあるかによって異なります。 一部の検出とワークフローでは、他のユーザーよりも多くの学習時間が必要になることがあります。
 
-![Microsoft 365 Defender パイロットの実行におけるサンプルタイムライン](../../media/pilotimeline.png)
+![Microsoft 365 Defender パイロットの実行におけるサンプルタイムライン](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
 >最適な結果を得るには、パイロットの手順をできるだけ忠実に実行します。
@@ -68,11 +68,11 @@ Microsoft 365 Defender パイロットの実行には、次の4つのフェー�
 
 |フェーズ | 説明 | 
 |:-------|:-----|
-| ![計画](../../media/mtp/plan.png)<br>[計画](mtp-pilot-plan.md)| Microsoft 365 Defender パイロットプロジェクトを実行する前に考慮する必要のある事項について説明します。 <br><br>-スコープ <br> -ユースケース <br>- 要件 <br>-テスト計画 <br> -成功の条件 <br> -スコアカード 
-| ![準備](../../media/mtp/prep.png) <br>[準備](mtp-evaluation.md)|  Microsoft 365 セキュリティセンターにアクセスして、Microsoft 365 Defender パイロット環境を設定します。 次のようなガイドが表示されます。<br><br>-パイロットの関係者を特定し、承認を求める <br> -環境に関する考慮事項 <br>-アクセス <br>-Azure Active Directory のセットアップ <br> -構成の順序 <br> -Microsoft 365 E5 試用版にサインアップする <br> -ドメインの構成 <br>-Microsoft 365 E5 ライセンスを割り当てる <br> -ポータルのセットアップウィザードを完了します。|
-| ![攻撃シミュレーション](../../media/mtp/run-sim.png) <br>[攻撃シミュレーション](mtp-pilot-simulate.md) | 攻撃をシミュレートするために、次のように指導します。<br><br>-テスト環境の要件を確認する <br>-シミュレーションを実行する <br>-インシデントを調査する <br>-インシデントを解決する 
-| ![決算と概要](../../media/mtp/close.png) <br>[決算と概要](mtp-pilot-close.md) | プロセスの最後に達すると、次のようになります。<br><br>-最終出力に進む<br>-利害関係者への出力を提示する <br>-フィードバックを提供する <br>-次の手順を実行します。 
+| [計画](mtp-pilot-plan.md)<br> ~ 1 日| Microsoft 365 Defender パイロットプロジェクトを実行する前に考慮する必要のある事項について説明します。 <br><br>-スコープ <br> -ユースケース <br>- 要件 <br>-テスト計画 <br> -成功の条件 <br> -スコアカード 
+| [準備](mtp-evaluation.md) <br>~ 2 日|  Microsoft 365 セキュリティセンターにアクセスして、Microsoft 365 Defender パイロット環境を設定します。 次のようなガイドが表示されます。<br><br>-パイロットの関係者を特定し、承認を求める <br> -環境に関する考慮事項 <br>-アクセス <br>-Azure Active Directory のセットアップ <br> -構成の順序 <br> -Microsoft 365 E5 試用版にサインアップする <br> -ドメインの構成 <br>-Microsoft 365 E5 ライセンスを割り当てる <br> -ポータルのセットアップウィザードを完了します。|
+| [攻撃シミュレーション](mtp-pilot-simulate.md) <br>~ 2 日| 攻撃をシミュレートするために、次のように指導します。<br><br>-テスト環境の要件を確認する <br>-シミュレーションを実行する <br>-インシデントを調査する <br>-インシデントを解決する 
+| [決算と概要](mtp-pilot-close.md) <br>~ 1 日| プロセスの最後に達すると、次のようになります。<br><br>-最終出力に進む<br>-利害関係者への出力を提示する <br>-フィードバックを提供する <br>-次の手順を実行します。 
 
-## <a name="next-step"></a>次のステップ
-|![計画フェーズ](../../media/mtp/plan.png) <br>[計画フェーズ](mtp-pilot-plan.md) | Microsoft 365 Defender パイロットプロジェクトを計画する 
+## <a name="next-step"></a>次の手順
+|[計画フェーズ](mtp-pilot-plan.md) | Microsoft 365 Defender パイロットプロジェクトを計画する 
 |:-------|:-----|

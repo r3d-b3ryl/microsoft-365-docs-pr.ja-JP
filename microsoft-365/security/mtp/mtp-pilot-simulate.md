@@ -20,59 +20,21 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fac3a79f1522e5e7777b2b54bce2b8bd695f8d7a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842064"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131347"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>Microsoft 365 Defender 攻撃のシミュレーションを実行する  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**適用対象:**
-- Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="パイロットを計画する Microsoft 365 Defender プロジェクト" />
-      <br/>計画 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Microsoft 365 Defender 試用ラボまたはパイロット環境の準備" />
-      <br/>作る </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Microsoft 365 Defender 攻撃のシミュレーションを実行する" />
-      <br/>攻撃をシミュレートする </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Microsoft 365 Defender パイロットの終了と概要" />
-      <br/>閉じて概要をまとめる </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|[![計画](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[計画](mtp-pilot-plan.md) |[![準備](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[準備](prepare-mtpeval.md) | ![攻撃のシミュレーション](../../media/phase-diagrams/3-simluate.png)<br/>攻撃のシミュレーション| [![閉じて要約する](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[閉じて要約する](mtp-pilot-close.md)|
+|--|--|--|--|
+|| |*ここでは、* | |
 
 現在、攻撃のシミュレーションフェーズになっています。
 
@@ -281,7 +243,7 @@ SOC アナリストがこれらの高度な攻撃をキャッチできるよう�
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Microsoft 365 セキュリティセンターポータルで、インシデントに移動します。 **インシデント** ページの [ **調査** ] タブには、microsoft Defender For Identity およびエンドポイントの microsoft defender によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、エンドポイントの Defender によってトリガーされた自動調査のみを示しています。 既定では、エンドポイントの Defender は、キューにある成果物を自動的に remediates ます。これにより、修復が必要になります。
+Microsoft 365 セキュリティセンターポータルで、インシデントに移動します。 **インシデント** ページの [**調査**] タブには、microsoft Defender For Identity およびエンドポイントの microsoft defender によってトリガーされた自動調査が表示されます。 次のスクリーンショットは、エンドポイントの Defender によってトリガーされた自動調査のみを示しています。 既定では、エンドポイントの Defender は、キューにある成果物を自動的に remediates ます。これにより、修復が必要になります。
 
 ![インシデントに関連する自動調査のスクリーンショット](../../media/mtp/fig14.png)
 
@@ -304,7 +266,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 調査が完了し、修復が確認されたら、インシデントを閉じます。
 
-[ **インシデントの管理** ] を選択します。 [ **インシデントを解決** する] の状態を設定し、関連する分類を選択します。
+[ **インシデントの管理**] を選択します。 [ **インシデントを解決** する] の状態を設定し、関連する分類を選択します。
 
 インシデントが解決されると、Microsoft 365 セキュリティセンターおよび関連するポータルで、関連付けられているすべての警告が閉じられます。
 
@@ -339,7 +301,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 **検索を探す**
 1.  Security.microsoft.com ポータルを開きます。
 
-2.  [検索] **> [詳細** ] を探します。
+2.  [検索] **> [詳細**] を探します。
 
     ![M365 セキュリティセンターポータルのナビゲーションバーでの高度な検索のスクリーンショット](../../media/mtp/fig17.png) 
 
@@ -369,9 +331,9 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
     1.  結果を確認し、開いた電子メールを識別できるかどうかを確認します。  高度な検索でメッセージが表示されるまでに最大2時間かかる場合があります。 メール環境が大きく、多くの結果がある場合は、[ **フィルターの表示] オプション** を使用してメッセージを検索することもできます。 
 
-   このサンプルでは、電子メールは Yahoo アカウントから送信されました。 [ **+** SenderFromDomain] セクションの下にある **yahoo.com** の横のアイコンをクリックし、[ **適用** ] をクリックして、選択したドメインをクエリに追加します。  テストメッセージの送信に使用したドメインまたはメールアカウントを使用します。ステップ1の手順1では、シミュレーションを実行して結果をフィルター処理します。  クエリをもう一度実行して、シミュレーションからのメッセージが表示されることを確認するために、小さな結果セットを取得します。
+           このサンプルでは、電子メールは Yahoo アカウントから送信されました。 [ **+** SenderFromDomain] セクションの下にある **yahoo.com** の横のアイコンをクリックし、[ **適用** ] をクリックして、選択したドメインをクエリに追加します。  テストメッセージの送信に使用したドメインまたはメールアカウントを使用します。ステップ1の手順1では、シミュレーションを実行して結果をフィルター処理します。  クエリをもう一度実行して、シミュレーションからのメッセージが表示されることを確認するために、小さな結果セットを取得します。
    
-        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+        ![フィルターのスクリーンショット。 フィルターを使用して検索を絞り込んで、探しているものをすばやく検索します。](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -382,7 +344,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
    
         ![高度な検索結果が選択されたときに開く、[レコードの検査] パネルのスクリーンショット](../../media/mtp/fig21.png) 
 
-4.  これで、電子メールが表示されることを確認できたので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべての電子メールにフォーカスします。 このシナリオでは、受信メールに焦点を絞り、環境から送信されるものではありません。 追加したフィルターを削除してメッセージを見つけ、"|" を追加します。 **attachmentcount > 0** および **emaildirection** "  ==  **Inbound" "**
+4.  これで、電子メールが表示されることを確認できたので、添付ファイルのフィルターを追加します。 環境内の添付ファイルを含むすべての電子メールにフォーカスします。 このシナリオでは、受信メールに焦点を絞り、環境から送信されるものではありません。 追加したフィルターを削除してメッセージを見つけ、"|" を追加します。**attachmentcount > 0** および **emaildirection**"  ==  **Inbound" "**
 
     次のクエリは、すべての電子メールイベントの最初のクエリよりも短い一覧で結果を表示します。
 
@@ -394,7 +356,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 5.  次に、添付ファイルについての情報 (ファイル名、ハッシュなど) を結果セットに追加します。 これを行うには、 **Emailattachmentinfo** テーブルに参加します。 この場合、参加に使用する共通のフィールドは、 **Networkmessageid** と **RecipientObjectId** です。
 
-次のクエリにも追加行 "|" が含まれています。 **プロジェクト-** 電子メールアドレスと、次の手順で追加するファイル操作に関連したタイムスタンプに関連するタイムスタンプを識別するのに役立つ、電子メールの名前を変更します。
+    次のクエリにも追加行 "|" が含まれています。 **プロジェクト-** 電子メールアドレスと、次の手順で追加するファイル操作に関連したタイムスタンプに関連するタイムスタンプを識別するのに役立つ、電子メールの名前を変更します。
 
     ```console
     EmailEvents 
@@ -438,7 +400,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
 カスタム検出は、設定した頻度に従ってクエリを実行し、クエリの結果によって、選択した影響を受ける影響を受けたリソースに基づいてセキュリティ警告が作成されます。 これらのアラートは、インシデントに関連付けられ、いずれかの製品によって生成された他のセキュリティ警告としてトリアージできます。
 
-1.  [クエリ] ページで、「検索」の手順7で追加した7行と8行を削除し、[ **検出ルールの作成** ] をクリックします。 
+1.  [クエリ] ページで、「検索」の手順7で追加した7行と8行を削除し、[ **検出ルールの作成**] をクリックします。 
     
     ![高度な検索ページの [検出ルールの作成] をクリックできる場所のスクリーンショット](../../media/mtp/fig22.png) 
 
@@ -452,7 +414,7 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
     この検出ルールのアラートについて次のユーザーに情報を提供できるように、わかりやすいようにフィールドに記入してください。 
 
-3.  この通知で影響を受けるエンティティを選択します。 この場合は、[ **デバイス** と **メールボックス** ] を選択します。
+3.  この通知で影響を受けるエンティティを選択します。 この場合は、[ **デバイス** と **メールボックス**] を選択します。
 
     ![影響を受けるエンティティのパラメータを選択できる [検出ルールの作成] ページのスクリーンショット](../../media/mtp/fig24.png)
  
@@ -467,15 +429,15 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 
     このようなパイロットについては、運用環境のテストデバイスのサブセットに制限することをお勧めします。
 
-6.  **[作成]** を選択します。 次に、ナビゲーションパネルから [ **カスタム検出ルール** ] を選択します。
+6.  [**作成**] を選択します。 次に、ナビゲーションパネルから [ **カスタム検出ルール** ] を選択します。
  
     ![メニューの [カスタム検出ルール] オプションのスクリーンショット](../../media/mtp/fig27a.png) 
 
     ![ルールと実行の詳細を表示する [検出ルール] ページのスクリーンショット](../../media/mtp/fig27b.png) 
 
-このページでは、検出ルールを選択して、詳細ページを開くことができます。 
+    このページでは、検出ルールを選択して、詳細ページを開くことができます。 
 
-    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    ![[電子メールの添付ファイル] ページのスクリーンショット。ルールの実行の状態を確認したり、通知やアクションをトリガーしたり、検出を編集したりすることができます。](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>その他の高度な検索ウォークスルー演習
 
@@ -484,14 +446,14 @@ Microsoft 365 セキュリティセンターポータルで、インシデント
 >[!NOTE]
 >パイロットテストラボ環境で検索クエリを実行するには、独自の GitHub アカウントを用意してください。  
 
-|  Title  |  説明  |  MP4 のダウンロード  |  YouTube の鑑賞  |  使用する CSL ファイル  |
+|  タイトル  |  説明  |  MP4 のダウンロード  |  YouTube の鑑賞  |  使用する CSL ファイル  |
 |:-----|:-----|:-----|:-----|:-----|
 | エピソード 1: KQL の基礎 | Microsoft 365 Defender の高度な検索機能の基本事項について説明します。 使用できる高度な検索データと基本的な KQL 構文および演算子について説明します。 | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [エピソード 1: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | エピソード 2: 結合 | 高度な検索でデータについて学習を続け、テーブルを結合する方法について説明します。 インナー、outer、unique、および半結合、および既定の Kusto innerunique join のニュアンスについて説明します。 | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [エピソード 2: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
 | エピソード 3: データの集約、ピボット、および視覚化|これで、データのフィルター処理、操作、および結合を行うことができるようになり、集約、定量化、ピボット、可視化を開始する時間になります。 このエピソードでは、高度な検索スキーマで追加のテーブルを準備する際に実行できる集計演算子と計算のいくつかについて説明します。 分析を向上させるために、データセットをグラフに変換します。 | [MP4](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [エピソード 3: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | エピソード 4: ご利用いただけます。 KQL をインシデント追跡に適用する|攻撃者の活動を追跡する時間。 このエピソードでは、Microsoft 365 Defender での KQL および advanced の高度な検索について強化されたことを使用して、攻撃を追跡します。 Cybersecurity の ABCs やインシデントへの対応に適用する方法など、攻撃者のアクティビティを追跡するためにフィールドで使用されるヒントのいくつかについて説明します。 | [MP4](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [エピソード 4: Git の CSL ファイル](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 |![決算および概要フェーズ](../../media/mtp/close.png) <br>[決算および概要フェーズ](mtp-pilot-close.md) | Microsoft 365 Defender パイロットの結果を分析し、ステークホルダーに提示して、次の手順を実行します。
 |:-----|:-----|
 

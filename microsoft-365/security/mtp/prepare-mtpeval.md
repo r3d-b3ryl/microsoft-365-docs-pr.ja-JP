@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: a255c74db030325ba22c2095fba732a93b8c269c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7149524de868a3670807556f5f423ba0ee4a772a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844850"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131267"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Microsoft 365 Defender 試用ラボまたはパイロット環境の準備
 
@@ -35,37 +35,9 @@ ms.locfileid: "48844850"
 
 Microsoft 365 Defender 試用ラボまたはパイロット環境を作成して展開するには、3つのフェーズからなるプロセスがあります。
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab environment" title="Microsoft 365 Defender 試用ラボまたはパイロット環境の準備" />
-      <br/>フェーズ 1: 準備 </a><br>
-    </td>
-     <td align="center"  >
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab environment" title="Microsoft 365 Defender 試用ラボまたはパイロット環境をセットアップする" />
-      <br/>フェーズ 2: セットアップ </a><br>
-        </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/config-onboard.png" alt="Configure each Microsoft 365 Defender pillar" title="各 Microsoft 365 Defender 柱とエンドポイントの構成" />
-      <br/>フェーズ 3: 構成 & オンボード</a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-  </tr>
-</table>
+|![フェーズ 1: 準備](../../media/phase-diagrams/prepare.png)<br/>フェーズ 1: 準備 |[![フェーズ 2: セットアップ](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[フェーズ 2: セットアップ](setup-mtpeval.md) |[![フェーズ 3: オンボード](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[フェーズ 3: オンボード](config-mtpeval.md) | [![パイロットに戻る](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[パイロットプレイブックに戻る](mtp-pilot.md) |
+|--|--|--|--|
+|*ここでは、* | || |
 
 現在、準備段階になっています。
 
@@ -100,16 +72,16 @@ Microsoft 365 Defender をプロビジョニングおよび使用するための
 ## <a name="prepare-your-azure-active-directory"></a>Azure Active Directory の準備
 オンプレミスの Active Directory と Azure Active Directory との間の同期を既に有効にしている場合は、この手順をスキップします。 Azure Active Directory からの既存のベストプラクティスドキュメントを確認します。 次の手順は、Microsoft 365 Defender プロジェクトのパイロットを評価または実行するために最適化されています。
 
-1. Azure **AD Connect** > [azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade)ポータルに移動します。 
+1. Azure **AD Connect**> [azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade)ポータルに移動します。 
 ![Azure Active Directory ポータルページのイメージ](../../media/mtp-eval-1.png) <br> 
 
-2. [ **Microsoft Azure Active Directory Connect** から **ダウンロード** ] をクリックして、ドメインコントローラーに転送します。
+2. [ **Microsoft Azure Active Directory Connect** から **ダウンロード**] をクリックして、ドメインコントローラーに転送します。
 ![Azure Active Directoru Connect ダウンロードページのイメージ](../../media/mtp-eval-2.png) <br>
 
-3. ドメインコントローラーで、Azure Active Directory Connect ウィザードに従います。 ライセンス条項とプライバシーに関する通知を読んで、同意する場合はチェックボックスをオンにします。 [ **続行** ] をクリックします。
+3. ドメインコントローラーで、Azure Active Directory Connect ウィザードに従います。 ライセンス条項とプライバシーに関する通知を読んで、同意する場合はチェックボックスをオンにします。 [**続行**] をクリックします。
 ![Azure AD Connect ウェルカムページの画像](../../media/mtp-eval-3.png) <br>
 
-4. [ **エクスプレス設定** ] に移動します。
+4. [ **エクスプレス設定**] に移動します。
 ![Express 設定ページのイメージ](../../media/mtp-eval-4.png) <br>
 
 5. グローバル管理者の資格情報を入力します。 **[次へ]** をクリックします。
@@ -132,12 +104,12 @@ Microsoft 365 Defender をプロビジョニングおよび使用するための
 
 | コンポーネント                               | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 構成順序のランク |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|Microsoft Defender for Office 365|Microsoft Defender for Office 365 は、電子メールメッセージ、リンク (Url)、およびコラボレーションツールがもたらす悪意のある脅威から組織を保護します。 <br> [詳細情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1-d                   |
-|Id の Microsoft Defender|Id の Microsoft Defender では、Active Directory のシグナルを使用して、高度な脅威、侵害された id、および組織に向けた悪意のある insider 操作を識別、検出、調査します。 <br> [詳細情報を参照してください](https://docs.microsoft.com/azure-advanced-threat-protection/)。| pbm-2 |
+|Microsoft Defender for Office 365|Microsoft Defender for Office 365 は、電子メール メッセージ、リンク (URL) や共同作業ツールによって生じる悪意のある脅威から組織を保護します。 <br> [詳細情報](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1-d                   |
+|Microsoft Defender for Identity|Id の Microsoft Defender では、Active Directory のシグナルを使用して、高度な脅威、侵害された id、および組織に向けた悪意のある insider 操作を識別、検出、調査します。 <br> [詳細情報を参照してください](https://docs.microsoft.com/azure-advanced-threat-protection/)。| pbm-2 |
 |Microsoft Cloud App Security| Microsoft Cloud App Security は、複数のクラウドで稼働するクラウドアクセスセキュリティブローカー (CASB) です。 これにより、豊富な可視性、データ移動の制御、および高度な分析が提供され、すべてのクラウドサービスにわたる脅威を特定し、戦闘することができます。 <br> [詳細情報を参照してください](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |1/3                   |
 |Microsoft Defender for Endpoint | エンドポイントエンドポイントの検出と応答機能のための Microsoft Defender は、リアルタイムかつ実践的な、高度な攻撃検出を提供します。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 <br> [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 |![フェーズ 2: セットアップ](../../media/setup.png) <br>[フェーズ 2: セットアップ](setup-mtpeval.md) | Microsoft 365 Defender 試用ラボまたはパイロット環境の設定
 |:-------|:-----|
 

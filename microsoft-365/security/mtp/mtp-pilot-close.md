@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1617e7b68346673785c72e90e6f5e94193d96488
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3fe5bfdec566b0988d9f565595624fc8dd597788
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843020"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130945"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Microsoft 365 Defender パイロットの終了および概要  
 
@@ -35,45 +35,12 @@ ms.locfileid: "48843020"
 **適用対象:**
 - Microsoft 365 Defender
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="パイロットを計画する Microsoft 365 Defender プロジェクト" />
-      <br/>計画 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="Microsoft 365 Defender 試用ラボまたはパイロット環境の準備" />
-      <br/>作る </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="Microsoft 365 Defender 攻撃のシミュレーションを実行する" />
-      <br/>攻撃をシミュレートする </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="Microsoft 365 Defender パイロットの終了と概要" />
-      <br/>閉じて概要をまとめる </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
 
-</td>
-  </tr>
-</table>
+|[![計画](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[計画](mtp-pilot-plan.md) |[![準備](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[準備](prepare-mtpeval.md) | [![攻撃のシミュレーション](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[攻撃のシミュレーション](mtp-pilot-simulate.md) | ![閉じて要約する](../../media/phase-diagrams/4-summary.png)<br/>閉じて要約する|
+|--|--|--|--|
+|| | |*ここでは、*|
+
 
 現在、決算フェーズと要約段階になっています。
 
@@ -91,7 +58,7 @@ ms.locfileid: "48843020"
 
 このシミュレーションを楽しんでいただければ幸いです。 組織内の大規模なスケールで学んだ内容の実装を開始して、統合セキュリティソリューションを最大限に活用してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 Microsoft 365 Defender の柱の詳細については、次の対話的なガイドを参照してください。
 - [Microsoft Defender for Office 365 を使用して組織を保護する](https://aka.ms/O365ATP-Interactive-Guide)
 - [身元を確認するために Microsoft Defender を使用して疑わしいアクティビティおよび潜在的な攻撃を検出する](https://aka.ms/AATP-Interactive-Guide)
