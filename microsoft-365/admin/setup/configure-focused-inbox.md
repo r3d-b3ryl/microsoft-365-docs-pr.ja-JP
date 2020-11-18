@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: '組織のすべてのユーザーまたは特定のユーザー用に優先受信トレイを構成する方法について説明します。 '
-ms.openlocfilehash: eaf2c7623c81b24670a7b512c6311f0af036b255
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 76a449295b7a2ad0cc1c82488a131a3a89fe41fc
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644605"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123431"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>組織内のすべてのユーザー用に優先受信トレイを構成する
 
   職場のすべてのユーザー用にメールの動作を構成する必要がある場合は、この記事が役立ちます。 ここでは、業務向けにカスタマイズする方法や無効にする方法について説明しており、[よく寄せられる質問](#faq-for-focused-inbox)に回答しています。  <br/> 自分に対してだけ優先受信トレイを無効にする場合は、「[優先受信トレイを無効にする](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)」を参照してください。  
-   
+
 ユーザーが業務上の特定のメール メッセージ (たとえば、HR や給与に関するもの) を受信したことを確認する必要がある場合、優先受信トレイを構成して、これらのメッセージを優先ビューに表示することができます。また、組織のユーザーにメールボックスの優先受信トレイを表示するかどうかを制御することもできます。
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>組織で優先受信トレイの有効/無効を切り替える
@@ -39,35 +39,35 @@ ms.locfileid: "48644605"
   
  **優先受信トレイを無効にする**
   
-以下の PowerShell の例では、組織で優先受信トレイを**無効**にします。ただし、ユーザーが機能を使えなくなることはありません。必要な場合は、引き続き、各クライアントでもう一度優先受信トレイを有効にすることができます。 
+以下の PowerShell の例では、組織で優先受信トレイを **無効** にします。ただし、ユーザーが機能を使えなくなることはありません。必要な場合は、引き続き、各クライアントでもう一度優先受信トレイを有効にすることができます。 
   
 1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
-    
+
 2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、「[メッセージング ポリシーとコンプライアンスのアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=829796)」の項目「トランスポート ルール」を参照してください。
-    
+
 3. 
             **Get-OrganizationConfig** コマンドレットを実行します。 
-    
+
  ``` PowerShell
 Get-OrganizationConfig
  ```
 
 4. **FocusedInboxOn** を探して、現在の設定を表示します。 
-    
+
     ![優先受信トレイの状態に関する PowerShell からの応答。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 次のコマンドレットを実行して、優先受信トレイを無効にします。
-    
+
  ``` PowerShell
  Set-OrganizationConfig -FocusedInboxOn $false
  ```
 
 6. **Get-OrganizationConfig** コマンドレットをもう一度実行し、FocusedInboxOn が $false に設定されていることを確認します。これは、FocusedInbox がオフになったことを意味します。 
-    
+
  **優先受信トレイを有効にする**
   
 - 上の手順 5 で、次のコマンドレットを実行して、優先受信トレイを有効にします。
-    
+
  ``` PowerShell
  Set-OrganizationConfig -FocusedInboxOn $true
  ```
@@ -86,30 +86,30 @@ Get-OrganizationConfig
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>特定のユーザーについて優先受信トレイの有効/無効を切り替える
 
-この例では、Contoso 組織内の Tim Matthews に対して優先受信トレイを**無効**にします。ただし、Tim が機能を使えなくなることはありません。必要な場合は、引き続き、各クライアントでもう一度優先受信トレイを有効にすることができます。 
+この例では、Contoso 組織内の Tim Matthews に対して優先受信トレイを **無効** にします。ただし、Tim が機能を使えなくなることはありません。必要な場合は、引き続き、各クライアントでもう一度優先受信トレイを有効にすることができます。 
   
 1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
-    
+
 2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、トピック「メッセージング ポリシーとコンプライアンスのアクセス許可」の項目「トランスポート ルール」を参照してください。
-    
+
 3. **Get-FocusedInbox** コマンドレットを実行します。例を示します。 
-    
+
  ``` PowerShell
  Get-FocusedInbox -Identity <tim@contoso.com>
  ```
 
 4. FocusedInboxOn を探して、現在の設定を表示します。
-    
+
     ![優先受信トレイの状態に関する PowerShell からの応答。](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. 次のコマンドレットを実行して、優先受信トレイを無効にします。
-    
+
  ``` PowerShell
  Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
  ```
 
 6. または、次のコマンドレットを実行して、優先受信トレイを有効にします。
-    
+
  ``` PowerShell
  Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
  ```
@@ -117,23 +117,26 @@ Get-OrganizationConfig
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>トランスポート ルールを作成する UI を使用して、すべてのユーザーの優先ビューにメール メッセージを直接表示する
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
-    
+
 2. [**メール フロー**] \> [**ルール**] に移動します。 ![EAC 追加アイコン](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif)を選択し、[**新しいルールを作成する...**] を選択します。 
-    
-3. 新しいルールの作成後、[**保存**] を選択してルールを開始します。 
-    
+
+3. 新しいルールの作成後、[**保存**] を選択してルールを開始します。
+
     次の図は、"Payroll Department"(給与課) からのすべてのメッセージを優先受信トレイに配信する例を示しています。
-    
-    ![優先受信トレイ、給与](../../media/focusedinbox-transport-rule.PNG)
+
+    ![優先受信トレイ、給与支払名簿](../../media/focusedinbox-transport-rule.PNG)
+
+> [!NOTE]
+> この例のメッセージ ヘッダー値のテキストは、**X-MS-Exchange-Organization-BypassFocusedInbox** です。
   
-## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>トランスポート ルールを作成する PowerShell を使用して、すべてのユーザーの優先ビューにメール メッセージを直接表示する
+## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>PowerShell を使用して、すべてのユーザーの優先ビューにメール メッセージを直接表示するトランスポート ルールを作成します。
 
 1. [リモート PowerShell で Exchange Online に接続する](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
-    
+
 2. この手順を実行する前にアクセス許可が割り当てられている必要があります。必要なアクセス許可を確認するには、「[メッセージング ポリシーとコンプライアンスのアクセス許可](https://go.microsoft.com/fwlink/p/?LinkId=829796)」の項目「トランスポート ルール」を参照してください。
 
 3. たとえば、次のコマンドを実行すると、"Payroll Department"(給与課) からのすべてのメッセージを優先受信トレイに配信できます。
-    
+
  ``` PowerShell
  New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
  ```
@@ -144,15 +147,15 @@ Get-OrganizationConfig
 
 ### <a name="how-do-you-know-this-worked"></a>正常な動作を確認する方法
 
-メール メッセージのヘッダーをチェックして、そのメール メッセージが、優先受信トレイのトランスポート ルールをバイパスして受信トレイに届いているかどうかを確認できます。 優先受信トレイのトランスポート ルールが適用されている組織のメールボックスからメール メッセージを選択します。 メッセージにスタンプされたヘッダーを調べると、**X-MS-Exchange-Organization-BypassFocusedInbox: true** ヘッダーが表示されます。 これは、迂回が機能していることを意味します。 ヘッダー情報を調べる方法については、「[電子メール メッセージのインターネット ヘッダー情報を表示する](https://go.microsoft.com/fwlink/p/?LinkId=822530)」を参照してください。 
- 
+メール メッセージのヘッダーをチェックして、そのメール メッセージが、優先受信トレイのトランスポート ルールをバイパスして受信トレイに届いているかどうかを確認できます。 優先受信トレイのトランスポート ルールが適用されている組織のメールボックスからメール メッセージを選択します。 メッセージにスタンプされたヘッダーを調べると、**X-MS-Exchange-Organization-BypassFocusedInbox: true** ヘッダーが表示されます。 これは、迂回が機能していることを意味します。 ヘッダー情報を調べる方法については、「[電子メール メッセージのインターネット ヘッダー情報を表示する](https://go.microsoft.com/fwlink/p/?LinkId=822530)」を参照してください。
+
 ## <a name="turn-onoff-clutter"></a>低優先メールをオン/オフにする
- 
+
 Microsoft では、一部のユーザーの低優先メールの動作が突然停止したという報告を受信しています。この問題が発生した場合、特定のユーザーの低優先メールを再び有効にすることができます。[組織での低優先メールの構成](../email/configure-clutter.md)に関するページを参照してください。
- 
+
 ## <a name="faq-for-focused-inbox"></a>優先受信トレイに関する FAQ
 
-ここでは、優先受信トレイについてよく寄せられる質問にお答えします。 
+ここでは、優先受信トレイについてよく寄せられる質問にお答えします。
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>組織で優先受信トレイをロール アウトする方法を制御できますか。
 
@@ -184,10 +187,10 @@ Microsoft では、一部のユーザーの低優先メールの動作が突然�
 
 優先受信トレイには、次の 2 つの状態が関連付けられます。
   
-- **組織レベル**: 優先受信トレイの状態で、関連付けられた最終更新タイムスタンプ。 
-    
+- **組織レベル**: 優先受信トレイの状態で、関連付けられた最終更新タイムスタンプ。
+
 - **メールボックス レベル**: 優先受信トレイの状態で、関連付けられた最終更新タイムスタンプ 
-    
+
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>Outlook はどのようにして、これらの 2 つの状態で表示する優先受信トレイの操作環境を決定するのですか。
 
 Outlook は、最終タイムスタンプを持つコマンドレットを選択して、表示する操作環境を決定します。既定では、どちらのタイム スタンプも "null" で、この場合、機能は有効です。
