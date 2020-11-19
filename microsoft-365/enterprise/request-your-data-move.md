@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 既存の Office 365 のお客様は、お住まいの国が新しい geo に Microsoft 365 サービスデータを移動する前に、要求を提出する必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 216cd3b0cb55cbbe6be89945b98a01ae469ec4e2
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877257"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349234"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -45,13 +45,14 @@ ms.locfileid: "48877257"
 |スイス、リヒテンシュタイン  <br/> |2019 年 12 月 10 日  <br/> |2020 年 6 月 30 日  <br/> |
 |ノルウェー  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
 |ドイツ  <br/> |2020年11月1日  <br/> |2021年4月30日  <br/> |
+|ブラジル  <br/> |2020年11月18日  <br/> |2021年5月31日  <br/> |
 
 ## <a name="how-to-request-a-move"></a>移行をリクエストする方法
 
 対象となるお客様には、Microsoft 365 管理センターにページが表示されます。これにより、お客様は自社のコア顧客データを新しいデータセンターリージョンに移動するよう要求できます。  
   
-Microsoft 365 管理センターのページにアクセスするには、左側のナビゲーションウィンドウで [ **設定** ] を展開し、[ **組織の設定** ] をクリックします。
-Tab **組織プロファイル** を選択して、[ **Data レジデンシー** ] オプションを選択します。
+Microsoft 365 管理センターのページにアクセスするには、左側のナビゲーションウィンドウで [ **設定**] を展開し、[ **組織の設定**] をクリックします。
+Tab **組織プロファイル** を選択して、[ **Data レジデンシー**] オプションを選択します。
   
 このセクションは、テナントが Microsoft 365 引っ越しプログラムの対象外である場合には表示されません。  データ常駐の要件があり、移行を要求する必要がある組織の場合は、チェックボックスをオンにして、 **保存** します。
   

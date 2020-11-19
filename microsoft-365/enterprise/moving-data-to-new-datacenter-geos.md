@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 新しい Office 365 datacenter geo について、およびデータ常駐オプションを使用して、新しい geo へのコアデータの移動を要求する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333714"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349246"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>新しい Microsoft 365 datacenter geo へのコアデータの移動
 
@@ -48,6 +48,7 @@ Microsoft 365 サービス用の新しいデータセンター geo を引き続�
 |**スイス、リヒテンシュタイン**| 欧州連合 | スイス | 2019 年 12 月 |
 |**Germany**| 欧州連合 | ドイツ | 2019 年 12 月 |
 |**ノルウェー**| 欧州連合 | ノルウェー | 2020 年 4 月 |
+|**ブラジル**| 南北アメリカ | ブラジル | 2020 年 11 月 |
 
 10月1日時点で、2020の Office 365 エデュケーションサブスクリプションを使用しているお客様は、移行の対象にはなりません。
 

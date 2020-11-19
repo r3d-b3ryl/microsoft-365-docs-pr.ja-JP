@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377225"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350714"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -34,7 +34,7 @@ Microsoft 365 グループと Microsoft Teams の使用率が向上したこと�
 管理者は、有効期限を指定して、その期間の最後に到達し、更新されていないアクティブなグループを削除することができます。 (アーカイブされたチームが含まれます)。有効期限は、グループが作成された時点、または最後に更新された日付から始まります。 グループの所有者は、有効期限が切れる前に、別の有効期限が切れるまでグループを更新できるように、メールを自動的に送信します。 Teams ユーザーには、Teams で永続的な通知が表示されます。
 
 アクティブに使用されているグループは自動的に更新されます。 次のいずれかのアクションを実行すると、グループが自動的に更新されます。
-- SharePoint-ファイルの表示、編集、ダウンロード、移動、共有、またはアップロードを行います。
+- SharePoint-ファイルの表示、編集、ダウンロード、移動、共有、またはアップロードを行います。 (SharePoint ページを表示すると、自動更新のアクションとしてカウントされません)。
 - Outlook-グループのメッセージと同じように、グループからのメッセージの読み取りまたは書き込み。メッセージ (web 上の Outlook)。
 - Teams チャネルを訪れます。
 
@@ -48,14 +48,14 @@ Microsoft 365 グループと Microsoft Teams の使用率が向上したこと�
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシーを構成および使用できるユーザー
 
-|役割|できること|
+|Role|できること|
 |---------|---------|
 |Office 365 のグローバル管理者 (Azure、会社の管理者の場合)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシーの設定を作成、読み取り、更新、または削除します。|
 |User|自分が所有する Microsoft 365 グループを更新または [復元](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
-前述したように、有効期限は既定でオフになっています。 管理者は有効期限ポリシーを有効にして、そのプロパティを有効にする必要があります。 これを有効にするには、 **Azure Active Directory**  >  **グループ**の  >  **有効期限**に移動します。 ここでは、既定のグループの有効期間を設定して、最初と2番目の有効期限の通知がグループの所有者に移動するまでの時間を指定できます。
+前述したように、有効期限は既定でオフになっています。 管理者は有効期限ポリシーを有効にして、そのプロパティを有効にする必要があります。 これを有効にするには、[ **Azure Active Directory**  >  **グループ** の  >  **有効期限**] に移動します。 ここでは、既定のグループの有効期間を設定して、最初と2番目の有効期限の通知がグループの所有者に移動するまでの時間を指定できます。
 
 グループの有効期間は日単位で指定し、180、365、または指定したカスタム値に設定できます。 カスタム値は、少なくとも30日である必要があります。
 

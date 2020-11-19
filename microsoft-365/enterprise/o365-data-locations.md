@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493687"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135993"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -127,6 +127,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 | 国 | 都市 |
 | --- | --- |
 | オーストラリア | シドニー、メルボルン |
+| ブラジル | リオ、カンピーナス |
 | カナダ | ケベックシティ、トロント |
 | 欧州連合 | オーストリア (ウィーン)、フィンランド (ヘルシンキ)、フランス (パリ、マルセイユ)、アイルランド (ダブリン)、オランダ (アムステルダム) |
 | フランス | パリ、マルセイユ |
@@ -892,19 +893,19 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 
 | サービス | 場所 |
 | --- | --- |
-| Exchange Online | グローバル地域 3 - アメリカ |
-| OneDrive for Business | グローバル地域 3 - アメリカ |
-| SharePoint Online | グローバル地域 3 - アメリカ |
+| Exchange Online | ブラジル |
+| OneDrive for Business | ブラジル |
+| SharePoint Online | ブラジル |
 | Skype for Business | 米国 |
-| Microsoft Teams | 米国 |
-| Office Online &amp; Mobile | グローバル地域 3 - アメリカ |
-| EOP | グローバル地域 3 - アメリカ |
+| Microsoft Teams | ブラジル |
+| Office Online &amp; Mobile | ブラジル |
+| EOP | ブラジル |
 | Intune | 米国 |
-| MyAnalytics | グローバル地域 3 - アメリカ |
+| MyAnalytics | ブラジル |
 | Planner | 米国 |
 | Sway | 米国 |
 | Yammer | 米国 |
-| OneNote サービス | グローバル地域 3 - アメリカ |
+| OneNote サービス | ブラジル |
 | Stream | 米国 |
 | Whiteboard | 米国 |
 | Forms | 米国 |
@@ -2282,7 +2283,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 ## <a name="guadeloupe"></a>グアドループ
 <details><summary>クリックして展開</summary><p>
 
-| サービス | Location |
+| サービス | 場所 |
 | --- | --- |
 | Exchange Online | 米国 |
 | OneDrive for Business | 米国 |

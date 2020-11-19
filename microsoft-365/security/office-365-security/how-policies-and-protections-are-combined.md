@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) での保護の順序、および保護ポリシーの優先度の値によってどのようなポリシーが適用されるかを調べることができます。
-ms.openlocfilehash: 9bff44a0c9964c60f5b8b5c0afdfe6d29ee6da93
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843614"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349270"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子メール保護の順序と優先順位
 
@@ -34,7 +34,7 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
 
 メッセージに適用されるポリシーを決定する主な要因は2つあります。
 
-- **電子メール保護の種類の優先度** : この順序は構成できず、次の表に記載されています。
+- **電子メール保護の種類の優先度**: この順序は構成できず、次の表に記載されています。
 
   ****
 
@@ -44,15 +44,15 @@ Exchange online またはスタンドアロンの exchange Online Protection (EO
   |pbm-2|フィッシング|CAT: PHSH|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |1/3|高確度スパム|CAT: HSPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |4 |スプーフィング|CAT: スプーフィング|[EOP でスプーフィングインテリジェンスを構成する](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|ユーザー偽装 (保護されたドメイン)|UIMP|[Office 365 の Microsoft Defender でフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
-  |シックス<sup>\*</sup>|ドメイン偽装 (保護されたユーザー)|DIMP|[Office 365 の Microsoft Defender でフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|ユーザー偽装 (保護されたユーザー)|UIMP|[Office 365 の Microsoft Defender でフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
+  |シックス<sup>\*</sup>|ドメイン偽装 (保護されたドメイン)|DIMP|[Office 365 の Microsoft Defender でフィッシング対策ポリシーを構成する](configure-atp-anti-phishing-policies.md)|
   |7 |スパム|CAT: SPM|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |8 |バルク|CAT: BULK|[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> これらの機能は、Microsoft Defender for Office 365 のフィッシング対策ポリシーでのみ利用可能です。
 
-- **ポリシーの優先度** : 各保護の種類 (スパム対策、マルウェア対策、フィッシング詐欺対策など) について、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用するカスタムポリシーを作成することもできます。 各カスタムポリシーには、ポリシーが適用される順序を決定する優先順位の値があります。 既定のポリシーは常に最後に適用されます。
+- **ポリシーの優先度**: 各保護の種類 (スパム対策、マルウェア対策、フィッシング詐欺対策など) について、すべてのユーザーに適用される既定のポリシーがありますが、特定のユーザーに適用するカスタムポリシーを作成することもできます。 各カスタムポリシーには、ポリシーが適用される順序を決定する優先順位の値があります。 既定のポリシーは常に最後に適用されます。
 
   ユーザーが同じ種類の複数のポリシーで定義されている場合、優先度の高いポリシーのみが適用されます。 その種類の残りのポリシーは、ユーザーに対して評価されません (既定のポリシーを含む)。
 
