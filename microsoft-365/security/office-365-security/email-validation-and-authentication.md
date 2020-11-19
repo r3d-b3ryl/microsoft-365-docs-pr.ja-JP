@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
-ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202977"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131075"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -32,9 +32,9 @@ ms.locfileid: "48202977"
 
 メール認証 (メール検証とも呼ばれます) は、スプーフィング (偽造された差出人からのメール メッセージ) を阻止しようとする標準のグループです。 すべての Microsoft 365 組織では、EOP は次の基準を使用して受信メールを検証します。
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -44,7 +44,7 @@ ms.locfileid: "48202977"
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>メール認証を使用してスプーフィングを防止する
 
-DMARC では、メッセージの**差出人**アドレスを調べることでスプーフィングを防ぎます。 **差出人**アドレスは、ユーザーが自分のメール クライアントに表示する送信者のメール アドレスです。 また、送信先のメール組織は、メール ドメインが SPF または DKIM をパスしたことを確認できます。 つまり、ドメインは認証されており、送信者のメール アドレスはスプーフィングされていません。
+DMARC では、メッセージの **差出人** アドレスを調べることでスプーフィングを防ぎます。 **差出人** アドレスは、ユーザーが自分のメール クライアントに表示する送信者のメール アドレスです。 また、送信先のメール組織は、メール ドメインが SPF または DKIM をパスしたことを確認できます。 つまり、ドメインは認証されており、送信者のメール アドレスはスプーフィングされていません。
 
 ただし、SPF、DKIM、および DMARC ("電子メール認証ポリシー" とも呼ばれます) の DNS レコードは省略可能です。 microsoft.com や skype.com のような強力なメール認証ポリシーを持つドメインは、スプーフィングから保護されます。 しかし、メール認証ポリシーが脆弱なドメイン、またはまったくポリシーがないドメインは、スプーフィングの主要な標的となります。
 
@@ -54,7 +54,7 @@ DMARC では、メッセージの**差出人**アドレスを調べることで�
 
 強力なメール認証ポリシーを公開している中小規模企業の割合は、より小さくなります。 北米や西ヨーロッパ以外のメールドメインの場合、この数字はさらに小さくなります。
 
-強力なメール認証ポリシーがないことは、大きな問題です。 組織はメール認証のしくみについて理解していない場合がありますが、攻撃者は完全に理解していて、それを利用します。 フィッシングは大きな問題でありながら、強力なメール認証ポリシーの導入は限られているため、Microsoft は受信メールをチェックするために*暗黙的なメール認証*を使用しています。
+強力なメール認証ポリシーがないことは、大きな問題です。 組織はメール認証のしくみについて理解していない場合がありますが、攻撃者は完全に理解していて、それを利用します。 フィッシングは大きな問題でありながら、強力なメール認証ポリシーの導入は限られているため、Microsoft は受信メールをチェックするために *暗黙的なメール認証* を使用しています。
 
 暗黙的なメール認証は、通常のメール認証ポリシーの拡張機能です。 これらの拡張機能には、送信者評価、送信者の履歴、受信者の履歴、行動分析、他の高度な手法が含まれます。 これらの拡張機能からの他のシグナルが存在しない場合、メール認証ポリシーを使用していないドメインから送信されたメッセージは、スプーフィングとしてマークされます。
 
@@ -62,7 +62,7 @@ Microsoft の一般発表については、「[大量のフィッシング詐欺
 
 ## <a name="composite-authentication"></a>複合認証
 
-ドメインに従来の SPF、DKIM、および DMARC レコードが含まれていない場合、これらのレコード チェックでは、認証状態に関する情報が十分に伝達されません。 そのため、Microsoft では、暗黙的なメール認証のアルゴリズムを開発しました。 このアルゴリズムは、複数のシグナルを結合して、_複合認証_ (略称: `compauth`) という単一の値にします。 この `compauth` の値は、メッセージ ヘッダーの**Authentication-Results** にスタンプされます。
+ドメインに従来の SPF、DKIM、および DMARC レコードが含まれていない場合、これらのレコード チェックでは、認証状態に関する情報が十分に伝達されません。 そのため、Microsoft では、暗黙的なメール認証のアルゴリズムを開発しました。 このアルゴリズムは、複数のシグナルを結合して、_複合認証_ (略称: `compauth`) という単一の値にします。 この `compauth` の値は、メッセージ ヘッダーの **Authentication-Results** にスタンプされます。
 
 ```text
 Authentication-Results:
@@ -188,7 +188,7 @@ Microsoft 365 は、会社のインフラストラクチャからの受信メー
 - 一括送信者を使用してメールを送信する場合は、(アドレスが属する場合) 差出人アドレスのドメインが、SPF または DMARC にパスするドメインに一致していることを確認します。
 
 - 次の場所 (使用している場合) が SPF レコードに含まれていることを確認します。
-  
+
   - オンプレミスのメールサーバー。
   - SaaS (サービスとしてのソフトウェア) プロバイダーから送信されたメール。
   - クラウドホスティング サービス (Microsoft Azure、GoDaddy、Rackspace、Amazon Web Services など) から送信されたメール。
