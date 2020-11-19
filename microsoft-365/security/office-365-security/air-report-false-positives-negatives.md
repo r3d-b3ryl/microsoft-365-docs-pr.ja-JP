@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 101747fa1121c675938610b9681f98c6e39b7d75
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446617"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357401"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査および応答機能の誤検知/ネガを報告する方法
 
@@ -36,16 +36,17 @@ ms.locfileid: "48446617"
 **適用対象:**
 - Microsoft Defender for Office 365
 
-[Office 365 ミスの自動化された調査と応答 (AIR) 機能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 次の操作を実行できます。
-- [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
-- [通知を調整し](#adjust-an-alert-to-prevent-false-positives-from-recurring) ます (必要な場合)。そして 
-- [実行された修復操作を元に戻し](#undo-a-remediation-action)ます。 
+[Office 365 ミスの自動化された調査と応答 (AIR) 機能](automated-investigation-response-office.md)が、誤って検出されたのでしょうか。 この問題を解決するには、以下の手順を実行します。 次の操作を行うことができます:
 
-この記事をガイドとして使用します。 
+- [False 正/負の値を Microsoft に報告し](#report-a-false-positivenegative-to-microsoft-for-analysis)ます。
+- [通知を調整し](#adjust-an-alert-to-prevent-false-positives-from-recurring) ます (必要な場合)。そして
+- [実行された修復操作を元に戻し](#undo-a-remediation-action)ます。
+
+この記事をガイドとして使用します。
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>False 正/負の値を分析のために Microsoft に報告する
 
-Microsoft Defender for Office 365 で、電子メールメッセージ、電子メールの添付ファイル、電子メールメッセージ内の URL、または Office ファイルの URL のいずれかが失われた場合は、 [フィッシング、url、およびファイルを microsoft For office 365 のスキャンに送信](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)できます。
+Microsoft Defender for Office 365 で、電子メールメッセージ、電子メールの添付ファイル、電子メールメッセージ内の URL、または Office ファイルの URL のいずれかが失われた場合は、 [フィッシング、url、およびファイルを microsoft For office 365 のスキャンに送信](admin-submission.md)できます。
 
 また [、マルウェア分析のために Microsoft にファイルを送信](https://www.microsoft.com/wdsi/filesubmission)することもできます。
 
@@ -57,7 +58,7 @@ Office 365 に加えて、 [エンドポイントに Microsoft Defender](https:/
 
 ## <a name="undo-a-remediation-action"></a>修復アクションを元に戻す
 
-ほとんどの場合、ウイルス対策アクションが電子メールメッセージ、電子メールの添付ファイル、または URL に対して実行され、そのアイテムが実際には脅威ではない場合、セキュリティ操作チームは修復アクションを取り消すことができ、誤検知が定期的に行われないようにするための手順を実行することができます。 操作を取り消すには、 [脅威エクスプローラー](#undo-an-action-using-threat-explorer) または [ [操作] タブ](#undo-an-action-using-the-actions-tab-for-an-investigation) を使用して調査を行うことができます。 
+ほとんどの場合、ウイルス対策アクションが電子メールメッセージ、電子メールの添付ファイル、または URL に対して実行され、そのアイテムが実際には脅威ではない場合、セキュリティ操作チームは修復アクションを取り消すことができ、誤検知が定期的に行われないようにするための手順を実行することができます。 操作を取り消すには、 [脅威エクスプローラー](#undo-an-action-using-threat-explorer) または [ [操作] タブ](#undo-an-action-using-the-actions-tab-for-an-investigation) を使用して調査を行うことができます。
 
 > [!IMPORTANT]
 > 次のタスクを実行する前に、必要なアクセス許可があることを確認してください。
@@ -70,8 +71,8 @@ Office 365 に加えて、 [エンドポイントに Microsoft Defender](https:/
 
 |シナリオ|元に戻すオプション|詳細情報|
 |---|---|---|
-|電子メールメッセージがユーザーの迷惑メールフォルダーにルーティングされた|-ユーザーの削除済みアイテムフォルダーにメッセージを移動する<br/>-ユーザーの受信トレイにメッセージを移動する <br/>-メッセージを削除する|[Office 365 で配信された悪意のある電子メールを検索して調査する](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
-|電子メールメッセージまたはファイルが検疫された|-電子メールまたはファイルを解放します。 <br/>-電子メールまたはファイルを削除します。|[Office 365 の管理者として検疫済みメッセージおよびファイルを管理する](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|電子メールメッセージがユーザーの迷惑メールフォルダーにルーティングされた|<ul><li>メッセージをユーザーの削除済みアイテムフォルダーに移動する</li><li>ユーザーの受信トレイにメッセージを移動する</li><li>メッセージを削除</li></ul>|[Office 365 で配信された悪意のある電子メールを検索して調査する](investigate-malicious-email-that-was-delivered.md)|
+|電子メールメッセージまたはファイルが検疫された|<ul><li>メールまたはファイルを解放する</li><li>メールまたはファイルを削除する</li></ul>|[管理者として検疫済みメッセージを管理する](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>[操作] タブを使用して、調査を行うアクションを元に戻す
@@ -80,7 +81,7 @@ Office 365 に加えて、 [エンドポイントに Microsoft Defender](https:/
 
 1. [https://protection.office.com](https://protection.office.com) に移動し、サインインします。 これにより、セキュリティ & コンプライアンスセンターに移動できます。
 
-2. [**脅威管理**  >  の**調査**] に移動します。
+2. [**脅威管理**  >  の **調査**] に移動します。
 
 3. 調査の一覧で、アイテムの ID の横にある [ **新しいウィンドウで開く** ] アイコンを選択します。
 
@@ -92,6 +93,6 @@ Office 365 に加えて、 [エンドポイントに Microsoft Defender](https:/
 
 ## <a name="related-articles"></a>関連記事
 
-[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender for Office 365](office-365-atp.md)
 
 [Microsoft Defender for Office 365 の空気](office-365-air.md)

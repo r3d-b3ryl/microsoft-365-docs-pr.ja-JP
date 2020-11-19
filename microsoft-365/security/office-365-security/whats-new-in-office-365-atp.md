@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131151"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357239"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -41,11 +41,11 @@ ms.locfileid: "49131151"
 > [!TIP]
 > Microsoft Defender for Office 365 はまだお持ちではありませんか? [営業担当者に連絡して試用版を開始](https://go.microsoft.com/fwlink/p/?LinkId=518644)します。
 
-## <a name="november-2020"></a>2020 年 11 月 
+## <a name="november-2020"></a>2020 年 11 月
 
 - 「レビュー > アクションセンターでのメール送信およびアクションログからの修復 > の更新のエクスポートの制限 (Office 365 プラン2の Defender の場合)」を参照してください。
 
-## <a name="septemberoctober-2020"></a>2020年9月/10 月 
+## <a name="septemberoctober-2020"></a>2020年9月/10 月
 
 - [構成アナライザーを使用してポリシーを確認する](configuration-analyzer-for-security-policies.md)
 - [テナントの許可/ブロックリストを使用してフィルター verdicts を手動で上書きする](tenant-allow-block-list.md)
@@ -53,27 +53,27 @@ ms.locfileid: "49131151"
 - [脅威エクスプローラ](threat-explorer.md#threats-in-urls)で URL の脅威を提示する (マルウェア、フィッシング、スパム、または none) (Office 365 プラン2の Defender の場合)
 - 脅威、追加の操作、配信場所、更新されたタイムラインビュー (Office 365 プラン 2) に関連する更新プログラムを使用した、探しているアプリ[エクスプローラーの機能強化](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming)
 
-## <a name="julyaugust-2020"></a>2020年7月/8 月 
+## <a name="julyaugust-2020"></a>2020年7月/8 月
 
 - お[探しの環境が改善されました](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)(Microsoft Defender for Office 365 プラン1またはプラン 2)
 - [事前設定されたセキュリティポリシーを使用して推奨設定を簡単に適用する](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
-- [自動調査と応答を使用](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。 (Microsoft Defender for Office 365 プラン 2)
+- [自動調査と応答を使用](address-compromised-users-quickly.md)して、侵害されたユーザーアカウントに対処する機能が一般に提供されるようになりました。 (Microsoft Defender for Office 365 プラン 2)
 
 ## <a name="januaryfebruary-2020"></a>2020年1月/年2月
 
 - [Microsoft defender For office 365 のキャンペーンビューの一般的な利用可能性](campaigns.md) (microsoft Defender for Office 365 プラン 2)
 - セキュリティ運用チームが[電子メールの調査](investigate-malicious-email-that-was-delivered.md)時に複数のフィールドを検索およびフィルター処理できるようにするための[脅威エクスプローラー](threat-explorer.md)の機能強化: (Microsoft Defender for Office 365 プラン 2)
-    - 配信場所と特別なアクション
-    - 方向性 (受信、送信、または組織内)
-    - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
-    - 詳細な時間フィルター (日、時間、半時間) 
+  - 配信場所と特別なアクション
+  - 方向性 (受信、送信、または組織内)
+  - 高度なフィルターはありません (これらには、が含まれない、または含まない、高度なフィルターオプションがあります)。
+  - 詳細な時間フィルター (日、時間、半時間)
 
 - **インシデント** ウィジェットは、**アクションセンター** ウィジェットとなりました。 (セキュリティウィジェットを表示するには、セキュリティ & コンプライアンスセンターで、[**脅威の管理**  >  ] に移動します。**レビュー**)(Microsoft Defender for Office 365 プラン 2)
 
-- [Microsoft 365 の安全なドキュメント](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(プレビュー)**
+- [Microsoft 365 の安全なドキュメント](safe-docs.md) **(プレビュー)**
 
 ## <a name="december-2019"></a>2019 年 12 月
 

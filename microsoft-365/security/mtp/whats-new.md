@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844706"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357321"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> Microsoft 365 Defender を利用する必要がありますか? [ラボ環境で評価](https://aka.ms/mtp-trial-lab)することも、[運用環境でパイロットプロジェクトを実行](https://aka.ms/m365d-pilotplaybook)することもできます。
+>
 
 Microsoft 365 Defender の最新リリースでは、次の機能が一般公開 (GA) されています。
 
@@ -35,6 +37,9 @@ RSS フィード: このページが更新されたときに通知を取得す�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> Microsoft 365 Defender を利用する必要がありますか? [ラボ環境で評価](https://aka.ms/mtp-trial-lab)することも、[運用環境でパイロットプロジェクトを実行](https://aka.ms/m365d-pilotplaybook)することもできます。
+>
+
 ## <a name="september-2020"></a>2020 年 9 月
 - [Identity Directoryevents テーブル](advanced-hunting-identitydirectoryevents-table.md) <br> Active Directory (AD) を実行しているオンプレミスのドメインコントローラーを含むイベントを検索します。 この [高度な](advanced-hunting-overview.md) 検索スキーマテーブルは、ドメインコントローラー上の id 関連イベントとシステムイベントの範囲をカバーしています。
 - [AssignedIPAddresses () 関数](advanced-hunting-assignedipaddresses-function.md) <br> 詳細な検索クエリでこの関数を使用して、デバイスに割り当てられている最新の IP アドレスまたは特定の時刻からの最新の IP アドレスをすばやく取得します。

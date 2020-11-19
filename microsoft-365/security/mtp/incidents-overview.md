@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846690"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357613"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Microsoft 365 Defender のインシデントの概要
 
@@ -36,6 +36,8 @@ ms.locfileid: "48846690"
 **適用対象:**
 - Microsoft 365 Defender
 
+> Microsoft 365 Defender を利用する必要がありますか? [ラボ環境で評価](https://aka.ms/mtp-trial-lab)することも、[運用環境でパイロットプロジェクトを実行](https://aka.ms/m365d-pilotplaybook)することもできます。
+>
 
 
 インシデントは、関連するアラートに基づいています。 アラートは、ネットワーク上で悪意のあるイベントまたはアクティビティが検出されたときに作成されます。 個々のアラートは、進行中の攻撃に関する有益な手がかりを提供します。 ただし、攻撃では通常、違反を実行するためのさまざまなベクターと手法が使用されます。 Piecing 個別のヒントを一緒に使用することは困難で時間がかかることがあります。

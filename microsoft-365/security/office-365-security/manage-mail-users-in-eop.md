@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: ディレクトリ同期、EAC、PowerShell を使用してユーザーを管理するなど、Exchange Online Protection (EOP) でメールユーザーを管理する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201785"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356729"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>スタンドアロン EOP でメール ユーザーを管理する
 
@@ -34,7 +34,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 ユーザー数が少ないスタンドアロンの EOP 組織では、このトピックで説明されているように、Exchange 管理センター (EAC) またはスタンドアロン EOP PowerShell でメールユーザーを追加および管理できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Exchange 管理センター (EAC) を開くには、「 [exchange admin center in STANDALONE EOP](exchange-admin-center-in-exchange-online-protection-eop.md)」を参照してください。
 
@@ -53,7 +53,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 ### <a name="use-the-eac-to-create-mail-users"></a>EAC を使用してメールユーザーを作成する
 
-1. EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。
+1. EAC で、[受信者の **Recipients** \> **連絡先**] に移動します。
 
 2. [ **新しい** ![ 新規作成] アイコンをクリックし ](../../media/ITPro-EAC-AddIcon.png) ます。 [ **新しいメールユーザー** ] ページが開いたら、次の設定を構成します。 でマークされた設定 <sup>\*</sup> は必須です。
 
@@ -77,7 +77,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 ### <a name="use-the-eac-to-modify-mail-users"></a>EAC を使用してメールユーザーを変更する
 
-1. EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。
+1. EAC で、[受信者の **Recipients** \> **連絡先**] に移動します。
 
 2. 変更するメールユーザーを選択し、[編集アイコンの **編集**] をクリックし ![ ](../../media/ITPro-EAC-AddIcon.png) ます。
 
@@ -128,7 +128,7 @@ Exchange Online メールボックスを持たないスタンドアロンの Exc
 
 ### <a name="use-the-eac-to-remove-mail-users"></a>EAC を使用してメールユーザーを削除する
 
-1. EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。
+1. EAC で、[受信者の **Recipients** \> **連絡先**] に移動します。
 
 2. 削除するメールユーザーを選択し、[削除] [削除] アイコン **をクリックし** ![ ](../../media/ITPro-EAC-RemoveIcon.gif) ます。
 
@@ -164,9 +164,9 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 
 **注**:
 
-- _Name_パラメーターは必須で、最大長は64文字で、一意である必要があります。 _DisplayName_パラメーターを使用しない場合、 _name_パラメーターの値が表示名として使用されます。
-- _Alias_パラメーターを使用しない場合、 _MicrosoftOnlineServicesID_パラメーターの左側がエイリアスに使用されます。
-- _ExternalEmailAddress_パラメーターを使用しない場合、 _MicrosoftOnlineServicesID_の値が外部の電子メールアドレスに使用されます。
+- _Name_ パラメーターは必須で、最大長は64文字で、一意である必要があります。 _DisplayName_ パラメーターを使用しない場合、 _name_ パラメーターの値が表示名として使用されます。
+- _Alias_ パラメーターを使用しない場合、 _MicrosoftOnlineServicesID_ パラメーターの左側がエイリアスに使用されます。
+- _ExternalEmailAddress_ パラメーターを使用しない場合、 _MicrosoftOnlineServicesID_ の値が外部の電子メールアドレスに使用されます。
 
 この例では、次の設定を使用してメールユーザーを作成します。
 
@@ -230,7 +230,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 メールユーザーの作成、変更、または削除が正常に完了したことを確認するには、次のいずれかの手順を使用します。
 
-- EAC で、[受信者の**Recipients** \> **連絡先**] に移動します。 メールユーザーが一覧に表示されている (または一覧に表示されていない) ことを確認します。 メールユーザーを選択して、詳細ウィンドウに情報を表示するか、[編集アイコンの **編集**] をクリックして ![ 設定を表示し ](../../media/ITPro-EAC-AddIcon.png) ます。
+- EAC で、[受信者の **Recipients** \> **連絡先**] に移動します。 メールユーザーが一覧に表示されている (または一覧に表示されていない) ことを確認します。 メールユーザーを選択して、詳細ウィンドウに情報を表示するか、[編集アイコンの **編集**] をクリックして ![ 設定を表示し ](../../media/ITPro-EAC-AddIcon.png) ます。
 
 - スタンドアロン EOP PowerShell で、次のコマンドを実行して、メールユーザーが一覧に表示されている (または一覧に表示されていない) ことを確認します。
 
@@ -258,11 +258,11 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 - 次の機能によるディレクトリ同期の使用をお勧めします。
 
-  - **Outlook の差出人セーフリストと受信拒否リスト**: サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。 これにより、ユーザーは、個々の送信者およびドメインエントリを使用して、自分の差出人セーフリストと受信拒否リストを管理できます。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)」を参照してください。
+  - **Outlook の差出人セーフリストと受信拒否リスト**: サービスに同期すると、これらのリストはサービスのスパムフィルタリングよりも優先されます。 これにより、ユーザーは、個々の送信者およびドメインエントリを使用して、自分の差出人セーフリストと受信拒否リストを管理できます。 詳細については、「[Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 
   - **ディレクトリベースのエッジブロック (dbeb)**: DBEB の詳細については、「 [ディレクトリベースのエッジブロックを使用して無効な受信者に送信されたメッセージを拒否する](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)」を参照してください。
 
-  - **エンドユーザーによる検疫へのアクセス**: 検疫されたメッセージにアクセスするには、受信者がサービスに有効なユーザー ID とパスワードを持っている必要があります。 検疫の詳細については、「 [ユーザーとして検疫済みメッセージを検索して解放する](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user)」を参照してください。
+  - **エンドユーザーによる検疫へのアクセス**: 検疫されたメッセージにアクセスするには、受信者がサービスに有効なユーザー ID とパスワードを持っている必要があります。 検疫の詳細については、「 [ユーザーとして検疫済みメッセージを検索して解放する](find-and-release-quarantined-messages-as-a-user.md)」を参照してください。
 
   - **メールフロールール (トランスポートルールとも呼ばれる)**: ディレクトリ同期を使用すると、既存の Active directory ユーザーとグループがクラウドに自動的にアップロードされます。その後、特定のユーザーやグループを対象とするメールフロールールを作成して、それらをサービスに手動で追加する必要はありません。 [動的配布グループ](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)はディレクトリ同期を使用して同期できないことに注意してください。
 
@@ -278,7 +278,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
    - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
 
-   - [ユーザー設定](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+   - [Custom](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
 
    - [パススルー認証](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 

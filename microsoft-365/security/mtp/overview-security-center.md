@@ -17,18 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 70fd278dd4cdeadd5e8911705ac3f87d981a3de0
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906852"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356873"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 セキュリティ センターの概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
+> Microsoft 365 Defender を利用する必要がありますか? [ラボ環境で評価](https://aka.ms/mtp-trial-lab)することも、[運用環境でパイロットプロジェクトを実行](https://aka.ms/m365d-pilotplaybook)することもできます。
+>
 ビジネスのセキュリティを管理して、発展を続ける脅威の状況を保護するには、多くの課題があります。 さまざまな場所で多くのセキュリティソリューションを構成して、多数のコントロールを構成している可能性があります。 どのコントロールが最も効果的で、従業員に新たな課題をもたらすかを知ることが困難な場合があります。 セキュリティチームにとって、セキュリティと生産性の適切なバランスを見つけるのが困難な場合があります。
 
 Microsoft 365 セキュリティセンター-Microsoft の id、データ、デバイス、アプリ、およびインフラストラクチャ全体のセキュリティを監視および管理するための新しいホームを入力してください。 ここでは、組織のセキュリティの状態を簡単に表示したり、デバイス、ユーザー、およびアプリを構成したり、疑わしいアクティビティに関するアラートを受け取ったりすることができます。 Microsoft 365 セキュリティセンターは、セキュリティ管理者およびセキュリティ運用チームが組織を管理および保護するのを支援することを目的としています。

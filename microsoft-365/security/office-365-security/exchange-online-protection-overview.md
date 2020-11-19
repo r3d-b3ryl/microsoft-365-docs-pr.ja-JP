@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: Exchange Online Protection (EOP) によって、オンプレミスの電子メール組織がスタンドアロン環境およびハイブリッド環境で保護される方法について説明します。
-ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 997f157432dced474ccc17bf47cf9af68f4b8c08
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842406"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356717"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
@@ -42,13 +42,13 @@ EOP の仕組みを理解すると、受信メールの処理方法がわかり�
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="インターネットまたは顧客からのフィードバックによって EOP に渡される電子メールの画像。また、接続、マルウェア対策、メールフロールールのフィルター処理、およびコンテンツフィルター、迷惑メールまたは検疫の verdict の前、またはエンドユーザーのメール配信のいずれかです。":::
 
-- 受信メッセージが EOP に入った場合、まず、送信者の評価を確認するために接続フィルターを通過します。 スパムの大部分は、この時点で停止し、EOP によって拒否されます。 詳細については、「[接続フィルターを構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide)」を参照してください。
+- 受信メッセージが EOP に入った場合、まず、送信者の評価を確認するために接続フィルターを通過します。 スパムの大部分は、この時点で停止し、EOP によって拒否されます。 詳細については、「[接続フィルターを構成する](configure-the-connection-filter-policy.md)」を参照してください。
 
-- その後、メッセージはマルウェアの兆候を調査します。 メッセージまたは添付ファイルにマルウェアが検出された場合、メッセージは管理のみの検疫ストアにルーティングされます。 [ここで](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide)は、マルウェア対策の構成について詳しく説明します。
+- その後、メッセージはマルウェアの兆候を調査します。 メッセージまたは添付ファイルにマルウェアが検出された場合、メッセージは管理のみの検疫ストアにルーティングされます。 [ここで](configure-anti-malware-policies.md)は、マルウェア対策の構成について詳しく説明します。
 
 - メッセージはポリシーフィルター処理によって続行され、テンプレートを使用して作成または適用するカスタムメールフロールール (トランスポートルールとも呼ばれる) に対して評価されます。 たとえば、特定の送信者からのメールが到着すると、管理者に通知を送信するルールを作成できます。 データ損失防止 (DLP) チェックも、この時点で発生します (Exchange Enterprise CAL with Services)。
 
-- 次に、メッセージはコンテンツフィルター (スパム対策とも呼ばれます) を通過します。 このフィルターがスパム *またはフィッシング* を検疫に送信することを決定するメッセージ、またはユーザーの迷惑メールフォルダーなどのオプションを指定します。 詳細については、「 [スパム対策ポリシーを構成する](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) 」および「 [フィッシング対策ポリシーを構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide)する」を参照してください。
+- 次に、メッセージはコンテンツフィルター (スパム対策とも呼ばれます) を通過します。 このフィルターがスパム *またはフィッシング* を検疫に送信することを決定するメッセージ、またはユーザーの迷惑メールフォルダーなどのオプションを指定します。 詳細については、「 [スパム対策ポリシーを構成する](configure-your-spam-filter-policies.md) 」および「 [フィッシング対策ポリシーを構成](configure-anti-phishing-policies-eop.md)する」を参照してください。
 
 これらの保護層をすべて正常に通過するメッセージはすべて、受信者に配信されます。
 
@@ -58,11 +58,11 @@ EOP の仕組みを理解すると、受信メールの処理方法がわかり�
 
 利用可能な EOP サブスクリプションプランは次のとおりです。
 
-- **EOP スタンドアロン** : 社内の電子メール組織を保護するために EOP に登録します。
+- **EOP スタンドアロン**: 社内の電子メール組織を保護するために EOP に登録します。
 
-- **Exchange online の EOP 機能** : exchange online (スタンドアロンまたは Microsoft 365 の一部) を含むサブスクリプションは、EOP を使用して exchange online メールボックスを保護します。
+- **Exchange online の EOP 機能**: exchange online (スタンドアロンまたは Microsoft 365 の一部) を含むサブスクリプションは、EOP を使用して exchange online メールボックスを保護します。
 
-- **Exchange ENTERPRISE cal With services** : 追加の EXCHANGE enterprise Cal をサービスライセンスと共に購入したオンプレミスの exchange 組織がある場合、EOP は含まれているサービスの一部です。
+- **Exchange ENTERPRISE cal With services**: 追加の EXCHANGE enterprise Cal をサービスライセンスと共に購入したオンプレミスの exchange 組織がある場合、EOP は含まれているサービスの一部です。
 
 すべての EOP サブスクリプションプランでの要件、重要な制限、および機能の可用性の詳細については、「 [Exchange Online Protection サービスの説明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)」を参照してください。
 
@@ -96,7 +96,7 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 
 EOP 管理者向けのヘルプ コンテンツは、次の最上位カテゴリで構成されます。
 
-- Microsoft defender for office 365 のコアで EOP 保護と検出ツールを構成する[365 ための EOP、1日目を構成](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)します。
+- Microsoft defender for office 365 のコアで EOP 保護と検出ツールを構成する[365 ための EOP、1日目を構成](protect-against-threats.md)します。
 
 - [EOP features](eop-features.md): EOP で使用できる機能の一覧を示します。
 

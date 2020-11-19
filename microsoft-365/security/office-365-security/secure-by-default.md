@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) の [既定でセキュリティ保護] の設定についての詳細情報
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131099"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357865"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 で既定でセキュリティ保護されている
 
@@ -47,7 +47,7 @@ Microsoft は、お客様を既定で安全なものにすることを目的と�
 - Outlook の差出人セーフリスト
 - IP 許可一覧 (接続フィルター)
 
-これらのオーバーライドの詳細については、「 [安全な送信者リストを作成](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365)する」を参照してください。
+これらのオーバーライドの詳細については、「 [安全な送信者リストを作成](create-safe-sender-lists-in-office-365.md)する」を参照してください。
 
 セキュリティで保護されている既定の設定は、有効または無効にすることはできませんが、潜在的な危険または不要なメッセージをメールボックスから保持するためのボックスからフィルターを適用する方法を示しています。 マルウェアと信頼度の高いフィッシングを検疫に送信する必要があります。 マルウェアまたは信頼度の高いフィッシングとして検疫されたメッセージを管理できるのは管理者のみです。また、そこから Microsoft に誤検知を報告することもできます。 詳細については、「 [EOP で管理者として検疫済みメッセージおよびファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 

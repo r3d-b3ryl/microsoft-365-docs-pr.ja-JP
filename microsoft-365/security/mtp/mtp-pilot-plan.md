@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 649f3e777a330e1b60faf4f3513a470b51e56a80
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130983"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356981"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>パイロットを計画する (Microsoft 365 Defender プロジェクト) 
 
@@ -62,14 +62,14 @@ ms.locfileid: "49130983"
 
 ## <a name="use-cases"></a>使用例
 
-ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 例:
+ユースケースは、テスト対象のツールが意図したユーザーによって消費されることを意図したステートメントを表します。 これらは、SOC アナリストなどの特定のペルソナの観点から、ユーザーストーリーとして表現できます。 以下に例を示します。
 - SOC アナリストとして、ネットワーク内のデバイス、ユーザー、およびメールボックス全体でアラートとイベントを表示、関連付け、評価、および管理する必要があります。 [インシデント管理]
 - SOC アナリストとして、ネットワーク内の悪意のあるイベントを自動的に調査して応答するためのツールとプロセスを用意する必要があります。 [自動赤外線]
 - SOC アナリストとして、環境からデータを検索し、既知の脅威と潜在的な脅威、および疑わしいアクティビティを見つける必要があります。 [高度な検索]
 
 これらのユースケースは、定義されたスコープのパラメーター内で作成する必要があることに注意してください。 たとえば、テストの範囲に Microsoft Cloud App Security などのツールの評価が含まれていない場合は、データソースを作成しないで、これに依存するユースケースを使用します。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要件
 
 ユースケースのリストから、要件の作成を開始できます。 要件には、ツールがユースケースを満たすために必要な機能が含まれます。 これらの要件は、構成と保守、統合のサポート、探している機能やカスタム通知の作成機能などの機能固有の要件に分類できます。
 
@@ -85,11 +85,11 @@ ms.locfileid: "49130983"
 
 プランのすべての要素をまとめる1つの方法は、スコアカードを作成することです。 以下のサンプルスコアカードを参照してください。
 
-| ユース ケース | Requirements | 構成要件 | テスト計画 | 予想結果 | テストの状態 | スコア | Notes |
+| ユース ケース | 要件 | 構成要件 | テスト計画 | 予想結果 | テストの状態 | スコア | Notes |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |インシデント管理|-Microsoft 365 Defender  </br></br>-Identity の Microsoft Defender </br></br>-エンドポイントの Microsoft Defender </br></br>-Microsoft Cloud App Security (オプション)|詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[インシデントを調査する](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調査担当は、インシデントの範囲と影響について理解し、インシデントを管理する||||
-|自動赤外線|-Microsoft 365 Defender </br></br>-Identity の Microsoft Defender </br></br>-エンドポイントの Microsoft Defender |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |通知とインシデントは、Microsoft 365 Defender によって自動的に修復されます。||||
-|高度な検出|-Microsoft 365 Defender </br></br>-エンドポイントの Microsoft Defender </br></br>-Office 用 Microsoft Defender 365 |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。|[高度な検索のシナリオ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |調査担当者は、高度な検索、影響を受けるエンティティへのピボット、およびカスタム検出の作成によってデータを検索できます。||||
+|自動赤外線|-Microsoft 365 Defender </br></br>-Identity の Microsoft Defender </br></br>-エンドポイントの Microsoft Defender |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。 <br>自動赤外線を有効にする  |[攻撃のシミュレーション](mtp-pilot-simulate.md) <br></br>[自動調査](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |通知とインシデントは、Microsoft 365 Defender によって自動的に修復されます。||||
+|高度な検出|-Microsoft 365 Defender </br></br>-エンドポイントの Microsoft Defender </br></br>-Office 用 Microsoft Defender 365 |詳細については、準備、セットアップ、および構成の [前提条件](https://aka.ms/mtp-trial-lab) を参照してください。|[高度な検索のシナリオ](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |調査担当者は、高度な検索、影響を受けるエンティティへのピボット、およびカスタム検出の作成によってデータを検索できます。||||
 
 
 

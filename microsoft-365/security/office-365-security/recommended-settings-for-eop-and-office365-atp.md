@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) および Defender for Office 365 のセキュリティ設定のベストプラクティスとは 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 また、Office 365 に Defender も使用している場合は、どのような機能を利用できますか。
-ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: af741e1af412d535c53beb83c36c0cbe3fcd617b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126639"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357123"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 のセキュリティに関する推奨設定
 
@@ -291,6 +291,6 @@ PowerShell では、これらの設定に対して、 [新しい-safeattachmentp
 
 - 管理者とユーザーは、誤検知 (不良としてマークされている正常なメール) と誤検知 (無効な電子メールを許可) を分析のために Microsoft に送信できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 
-- これらのリンクは、 [EOP サービス](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)を **セットアップする方法**、および [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)を **構成** する方法に関する情報を対象としています。 「[Office 365 での脅威からの保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」にある、役に立つ手順を忘れないでください。
+- これらのリンクは、 [EOP サービス](set-up-your-eop-service.md)を **セットアップする方法**、および [Microsoft Defender for Office 365](office-365-atp.md)を **構成** する方法に関する情報を対象としています。 「[Office 365 での脅威からの保護](protect-against-threats.md)」にある、役に立つ手順を忘れないでください。
 
 - **Windows のセキュリティベースライン** は、次の場所にあります。 [セキュリティベースラインを取得できますか](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) 。また、セキュリティベースラインを使用して intune で intune ベースセキュリティ用の [Windows 10 デバイスを構成する](https://docs.microsoft.com/intune/protect/security-baselines) ことができます。 最後に、エンドポイントと Microsoft Intune セキュリティベースラインの microsoft defender の比較については、「 [Microsoft defender と Windows intune セキュリティベースラインの比較](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)」を参照してください。

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f2d3b9180ad5ab58e92812ed7b2d4f7ba07e2971
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646813"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357111"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -45,17 +45,18 @@ Exchange Online の新しいポリシーを追加して、ActiveSync クライ�
 
 ポリシーの設定時に Exchange Online と Outlook がポリシーのスコープに含まれていた場合は、ActiveSync クライアントをブロックするために新しいポリシーを作成するだけでよいことになります。 次の表に記載されているポリシーを確認し、推奨される追加を行うか、またはこれらが既に含まれていることを確認します。 各ポリシーは、 [共通の id およびデバイスアクセスポリシー](identity-access-policies.md)の関連する構成手順にリンクします。
 
-|保護レベル|Policies|詳細|
-|:---------------|:-------|:----------------|
-|**Baseline**|[サインインリスクが*中*または*高*の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
-|        |[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに Exchange Online を含める|
-|        |[アプリデータ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|Outlook がアプリの一覧に含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新してください。|
-|        |[承認済みアプリとアプリ保護を必要とする](identity-access-policies.md#require-approved-apps-and-app-protection)|クラウドアプリの一覧に Exchange Online を含める|
-|        |[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|クラウドアプリの一覧に Exchange Online を含める|
-|        |[ActiveSync クライアントをブロックする](#block-activesync-clients)|この新しいポリシーを追加する| 
-|**機密**|[サインインリスクが*低*、*中*、*高*のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| クラウドアプリの割り当てに Exchange Online を含める|
-|         |[準拠 *して* いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に Exchange Online を含める|
+|保護レベル|Policies|詳細情報|
+|---|---|---|
+|**Baseline**|[サインインリスクが *中* または *高* の場合は MFA を必須にする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
+||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|クラウドアプリの割り当てに Exchange Online を含める|
+||[アプリデータ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|Outlook がアプリの一覧に含まれていることを確認してください。 各プラットフォーム (iOS、Android、Windows) のポリシーを更新してください。|
+||[承認済みアプリとアプリ保護を必要とする](identity-access-policies.md#require-approved-apps-and-app-protection)|クラウドアプリの一覧に Exchange Online を含める|
+||[準拠 PC が必要](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|クラウドアプリの一覧に Exchange Online を含める|
+||[ActiveSync クライアントをブロックする](#block-activesync-clients)|この新しいポリシーを追加する|
+|**機密**|[サインインリスクが *低*、*中*、*高* のときに MFA を必要とする](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
+||[準拠 *して* いる pc とモバイルデバイスが必要](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|クラウドアプリの一覧に Exchange Online を含める|
 |**厳しく規制**|[*常に* MFA が必要](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウドアプリの割り当てに Exchange Online を含める|
+|
 
 ## <a name="block-activesync-clients"></a>ActiveSync クライアントをブロックする
 
@@ -85,20 +86,19 @@ Exchange Online の新しいポリシーを追加して、ActiveSync クライ�
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-4. Azure ポータルで、次の設定を使用して新しい条件付きアクセスポリシーを作成します。
+5. Azure ポータルで、次の設定を使用して新しい条件付きアクセスポリシーを作成します。
 
-   **割り当て > ユーザーとグループ**: 該当するユーザーとグループを選択して、含めるか除外します。
+   **割り当て** \>[ **ユーザーとグループ**]: 該当するユーザーとグループを選択して、対象と除外を行います。
 
-   クラウドアプリ**または > アクション > クラウドアプリまたはアクションを含む割り当て。アプリの選択 > >** を選択してください。 **Office 365 Exchange Online**を選択する
+   **割り当て** \>**クラウドアプリまたはアクション** \>**クラウドアプリ** \>**含める** \>**アプリの選択**: **Office 365 Exchange Online** の選択
 
-   **Access controls > Session**: **Use app 強制制限**の選択
+   **アクセス制御** \>**セッション**: [**アプリの強制制限の使用**] を選択します。
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>IOS および Android デバイスで Outlook を使用する必要があることを要求する
 
 IOS および Android デバイスのユーザーが、iOS および Android 用の Outlook を使用して、職場または学校のコンテンツにのみアクセスできるようにするには、それらの可能性のあるユーザーを対象とする条件付きアクセスポリシーが必要です。
 
 このポリシーを構成する手順については、「 [iOS および Android 用の Outlook を使用して、メッセージのグループ作業アクセスを管理]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)する」を参照してください。
-
 
 ## <a name="set-up-message-encryption"></a>メッセージの暗号化をセットアップする
 

@@ -20,19 +20,19 @@ description: 自動化された調査と応答を、カスタムまたはサー�
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 8b08b441ca468b5efa1c4c003c636de2a43b3e7d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b0b0570624b2e0dd40d40b178951a747698afe2
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844550"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357469"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>カスタムまたはサードパーティのレポートソリューションに管理アクティビティ API を使用する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Office 365 の Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)では、[自動調査に関する詳細情報](air-view-investigation-results.md)を入手できます。 ただし、組織によっては、カスタムまたはサードパーティのレポートソリューションを使用する場合もあります。 このようなソリューションで自動調査に関する情報を統合する必要がある組織では、Office 365 Management Activity API を使用できます。
+[Office 365 の Microsoft Defender](office-365-atp.md)では、[自動調査に関する詳細情報](air-view-investigation-results.md)を入手できます。 ただし、組織によっては、カスタムまたはサードパーティのレポートソリューションを使用する場合もあります。 このようなソリューションで自動調査に関する情報を統合する必要がある組織では、Office 365 Management Activity API を使用できます。
 
 これを設定するには、次のリソースを使用します。
 

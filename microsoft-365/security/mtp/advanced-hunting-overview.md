@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 627791e9dc3d4bf18047a05734a4e275152d19da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bab055036a8e7fdcf88329413c9fd86269af2aaa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845034"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357227"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Microsoft 365 Defender での高度な検索を使用して、積極的に脅威を探します。
 
@@ -34,6 +34,9 @@ ms.locfileid: "48845034"
 
 **適用対象:**
 - Microsoft 365 Defender
+
+> Microsoft 365 Defender を利用する必要がありますか? [ラボ環境で評価](https://aka.ms/mtp-trial-lab)することも、[運用環境でパイロットプロジェクトを実行](https://aka.ms/m365d-pilotplaybook)することもできます。
+>
 
 高度な捜索は、クエリ ベースの脅威の捜索ツールで、最大 30 日間のロー データを検索できます。 ネットワーク内のイベントを事前に検査して、脅威の指標とエンティティを見つけることができます。 データへの柔軟なアクセスにより、既知の脅威と潜在的な脅威を無制限に探すことができます。
 <p></p>
@@ -47,7 +50,7 @@ ms.locfileid: "48845034"
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
 - Microsoft Cloud App Security
-- Id の Microsoft Defender
+- Microsoft Defender for Identity
 
 高度な検索を使用するには、 [Microsoft 365 Defender をオン](mtp-enable.md)にします。
 
@@ -70,8 +73,8 @@ ms.locfileid: "48845034"
 ## <a name="data-freshness-and-update-frequency"></a>データの鮮度と更新頻度
 高度な検索データは、それぞれ異なる方法で2つの異なる種類に分類できます。
 
-- **イベントまたはアクティビティのデータ** —アラート、セキュリティイベント、システムイベント、および定期的な評価に関する表について説明します。 高度な検索では、このデータを収集するセンサーが、対応するクラウドサービスに正常に送信された直後に受信します。 たとえば、エンドポイントの Microsoft Defender および Id の Microsoft Defender で利用可能になった直後に、ワークステーションまたはドメインコントローラーの正常なセンサーのイベントデータをクエリできます。
-- **エンティティデータ** —ユーザーとデバイスに関する情報をテーブルに格納します。 このデータは、比較的静的なデータソースと、Active Directory エントリやイベントログなどの動的ソースから取得されます。 新しいデータを提供するために、15分ごとに、完全には設定されていない可能性のある行を追加して、すべての新しい情報でテーブルを更新します。 24時間ごとにデータが統合され、各エンティティについての最新の最も包括的なデータセットを含むレコードが挿入されます。
+- **イベントまたはアクティビティのデータ**—アラート、セキュリティイベント、システムイベント、および定期的な評価に関する表について説明します。 高度な検索では、このデータを収集するセンサーが、対応するクラウドサービスに正常に送信された直後に受信します。 たとえば、エンドポイントの Microsoft Defender および Id の Microsoft Defender で利用可能になった直後に、ワークステーションまたはドメインコントローラーの正常なセンサーのイベントデータをクエリできます。
+- **エンティティデータ**—ユーザーとデバイスに関する情報をテーブルに格納します。 このデータは、比較的静的なデータソースと、Active Directory エントリやイベントログなどの動的ソースから取得されます。 新しいデータを提供するために、15分ごとに、完全には設定されていない可能性のある行を追加して、すべての新しい情報でテーブルを更新します。 24時間ごとにデータが統合され、各エンティティについての最新の最も包括的なデータセットを含むレコードが挿入されます。
 
 ## <a name="time-zone"></a>タイム ゾーン
 高度な検索の時間情報は UTC タイムゾーンにあります。

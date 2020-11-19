@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 管理者は、新しいユーザーを使用して、組織内のユーザーが新しいドメインにメッセージを転送している場合に、メールの洞察をセキュリティ & コンプライアンスセンターで転送する方法を学習できます。
-ms.openlocfilehash: af66a84efbd4c0b8f1ccdacf4b71d1caca1c3929
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 22bbd762b221fae151a489aa1e9485dfc7baf06a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877527"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357275"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンスセンターで新しいユーザーが電子メールの洞察を転送する
 
@@ -25,7 +25,7 @@ ms.locfileid: "48877527"
 
 組織内の新しいユーザーアカウントが、突然電子メールメッセージを外部ドメインに転送し始めたときに、疑わしいことがあります。
 
-**メールを転送している新しいドメイン** この [セキュリティ & コンプライアンスセンター](https://protection.office.com)では、組織内で新しく作成されたユーザーが外部ドメインにメッセージを転送したときに通知します。 この条件は、新しいユーザーの作成に侵害された管理者アカウントが使用されたことを示している可能性があります。 アカウントが侵害されている疑いがある場合は、「 [危害を受けた電子メールアカウントへの対応](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)」を参照してください。
+**メールを転送している新しいドメイン** この [セキュリティ & コンプライアンスセンター](https://protection.office.com)では、組織内で新しく作成されたユーザーが外部ドメインにメッセージを転送したときに通知します。 この条件は、新しいユーザーの作成に侵害された管理者アカウントが使用されたことを示している可能性があります。 アカウントが侵害されている疑いがある場合は、「 [危害を受けた電子メールアカウントへの対応](responding-to-a-compromised-email-account.md)」を参照してください。
 
 この洞察は、問題が検出されたときにのみ表示され、 [転送レポート](view-mail-flow-reports.md#forwarding-report) ページに表示されます。
 
@@ -35,7 +35,7 @@ ms.locfileid: "48877527"
 
 ![新しいユーザーの [メールの転送] をクリックした後に表示される詳細ポップアップ](../../media/mfi-new-users-forwarding-email-details.png)
 
-また、[詳細] を選択した後に [詳細] を選択すると、[詳細] を選択した後に、[詳細] を選択したときに、この詳細ページ **を表示でき** ます ( **レポート** ダッシュボードまたは) の [ **上位の分析 &** \> **Dashboard** <https://protection.office.com/insightdashboard>
+また、[詳細] を選択した後に [詳細] を選択すると、[詳細] を選択した後に、[詳細] を選択したときに、この詳細ページ **を表示でき** ます (**レポート** ダッシュボードまたは) の [**上位の分析 &** \> **Dashboard** <https://protection.office.com/insightdashboard>
 
 次のセクションで説明するように、[ **洞察に関連付けられたレポート** ] リンクをクリックして、 **転送変更レポート** に移動できます。
 
@@ -52,18 +52,18 @@ ms.locfileid: "48877527"
 
 このレポートは、 [メールフローダッシュボード](mail-flow-insights-v2.md) または [レポートダッシュボード](view-mail-flow-reports.md)では直接使用できません。 **新しいユーザーが電子メールを転送** する場合は、「サイトに **関連付けられたレポートを表示する」** リンクをクリックするだけでなく、次の方法でレポートにアクセスできます。
 
-- [転送される新しいドメイン](mfi-new-domains-being-forwarded-email.md)の詳細については、「 **通知の転送レポート** 」リンクをクリックしてください。
+- [転送される新しいドメイン](mfi-new-domains-being-forwarded-email.md)の詳細については、「**通知の転送レポート**」リンクをクリックしてください。
 - 開いて <https://protection.office.com/reportv2?id=MailFlowNewForwarding> います。
 
 ### <a name="report-view-for-the-forwarding-modifications-report"></a>転送変更レポートのレポートビュー
 
 次のグラフがレポートビューで利用できます。
 
-- **データの表示: 新しい転送ユーザー** :
+- **データの表示: 新しい転送ユーザー**:
 
   ![転送変更レポートでの新しい転送ユーザーの表示](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **データの表示: 新しい転送ドメイン** :
+- **データの表示: 新しい転送ドメイン**:
 
   ![転送変更レポートの [転送された新しいドメインの表示形式](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
@@ -71,20 +71,20 @@ ms.locfileid: "48877527"
 
 ### <a name="details-table-view-for-the-forwarding-modifications-report"></a>転送変更レポートの詳細テーブルビュー
 
-[ **詳細テーブルの表示** ] をクリックした場合、表示されている情報は、表示されていたグラフによって異なります。
+[ **詳細テーブルの表示**] をクリックした場合、表示されている情報は、表示されていたグラフによって異なります。
 
-- **データの表示: 新しい転送ユーザー** :
+- **データの表示: 新しい転送ユーザー**:
 
-  - **Name** : 送信者の電子メールアドレス。
+  - **Name**: 送信者の電子メールアドレス。
   - **転送の種類**
   - **受信者のアドレス**
   - **詳細**
   - **Count**
   - **最初の繰越日付**
 
-- **データの表示: 新しい転送ドメイン** :
+- **データの表示: 新しい転送ドメイン**:
 
-  - **Name** : 送信者の電子メールドメイン。
+  - **Name**: 送信者の電子メールドメイン。
   - **転送の種類**
   - **受信者のアドレス**
   - **詳細**
@@ -95,17 +95,17 @@ ms.locfileid: "48877527"
 
 表から行を選択すると、 **詳細** ポップアップが次の情報と共に表示されます。
 
-- **Name** : これは、送信者の電子メールアドレス ([ **データの表示: 新しい転送ユーザービュー]** ) または送信者の電子メールドメイン ([ **データの表示元: 新しい転送ドメインビュー]** ) のいずれかです。
+- **Name**: これは、送信者の電子メールアドレス ([ **データの表示: 新しい転送ユーザービュー]** ) または送信者の電子メールドメイン ([ **データの表示元: 新しい転送ドメインビュー]** ) のいずれかです。
 - **転送の種類**
-- **Recipient**
+- **[受信者]**
 - **詳細**
 - **Count**
 - **開始日**
-- **推奨事項** : ここからリンクをクリックすると、Microsoft 365 管理センターでユーザーを管理できます。
+- **推奨事項**: ここからリンクをクリックすると、Microsoft 365 管理センターでユーザーを管理できます。
 
 ![転送変更レポートの新しい転送ユーザー表示の詳細表からの詳細ポップアップ](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
-レポートビューに戻るには、[ **レポートの表示** ] をクリックします。
+レポートビューに戻るには、[ **レポートの表示**] をクリックします。
 
 ## <a name="related-topics"></a>関連項目
 

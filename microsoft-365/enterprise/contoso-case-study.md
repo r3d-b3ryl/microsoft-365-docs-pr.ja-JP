@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空の代表的なグローバル組織が、企業の Microsoft 365 を採用する方法。
-ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754670"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356993"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 for enterprise
 
@@ -67,6 +67,12 @@ Contoso Corporation は架空のグローバル製造な企業製造で、その
 
   Contoso 社では、id およびアクセス管理、脅威保護、情報保護、およびセキュリティ管理のためのエンタープライズセキュリティ機能について、Microsoft 365 の全範囲を使用しています。
 
+次の追加の IT シナリオと構成を参照してください。
+
+- [ハイブリッドワーカー向けの COVID-19 の応答とインフラストラクチャ](../solutions/contoso-hybrid-workforce.md)
+
+  Contoso 社が COVID-19 pandemic のリモートアクセスインフラストラクチャを更新し、ハイブリッド労働力の新しいインストールおよび更新インフラストラクチャを更新した方法について説明します。
+
 - [極秘プロジェクトのチーム](../solutions/contoso-team-for-top-secret-project.md)
 
   トップシークレットプロジェクト用のセキュリティで保護されたグループ作業環境を作成するために、Contoso 社はセキュリティを分離するチームを使用していました。
@@ -75,7 +81,7 @@ Contoso Corporation は架空のグローバル製造な企業製造で、その
 
   Contoso 社がオンプレミスのユーザーを Microsoft Teams に移行して、ユニファイドコミュニケーション、コラボレーション、および音声を移行する方法について説明します。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 [Contoso Corporation について](contoso-overview.md)、および Microsoft 365 for enterprise を展開したときに対処された設計上の考慮事項について説明します。
 
