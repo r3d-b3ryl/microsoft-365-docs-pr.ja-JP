@@ -212,6 +212,19 @@
           href: activity-reports/activity-reports.md
         - name: 生産性スコアを使用してユーザーの生産性を監視する
           href: productivity/productivity-score.md
+          items:
+            - name: コンテンツの共同作業
+              href: productivity/content-collaboration.md
+            - name: コミュニケーション
+              href: productivity/communication.md
+            - name: モビリティ
+              href: productivity/mobility.md
+            - name: チームワーク
+              href: productivity/teamwork.md
+            - name: Microsoft 365 Apps の正常性
+              href: productivity/apps-health.md
+            - name: 任意の DNS ホストで DNS レコードを作成する
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
         - name: 組織の連絡先情報を変更する
           href: manage/change-address-contact-and-more.md
         - name: 管理者の連絡先情報を更新する
