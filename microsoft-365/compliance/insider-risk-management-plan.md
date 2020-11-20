@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846275"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357446"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
 
@@ -57,7 +57,7 @@ ms.locfileid: "48846275"
 
 Insider リスク管理ポリシーの実装方法に応じて、適切な Microsoft 365 ライセンスサブスクリプションを用意し、いくつかのソリューション前提条件を理解し、計画する必要があります。
 
-**ライセンス:** Insider リスク管理は、Microsoft 365 ライセンスサブスクリプションの幅広い選択の一部として利用できます。 詳細については、「 [insider リスク管理の概要](insider-risk-management-configure.md#before-you-begin) 」の記事を参照してください。
+**ライセンス:** Insider リスク管理は、Microsoft 365 ライセンスサブスクリプションの幅広い選択の一部として利用できます。 詳細については、「 [insider リスク管理の概要](insider-risk-management-configure.md#subscriptions-and-licensing) 」の記事を参照してください。
 
 既存の Microsoft 365 Enterprise E5 プランを持っておらず、insider リスク管理を試みる場合は、既存のサブスクリプションに [microsoft 365 を追加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) するか、Microsoft 365 Enterprise E5 の [試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise) してください。
 

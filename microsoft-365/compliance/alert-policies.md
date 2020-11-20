@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: セキュリティ/コンプライアンスセンターのアラートポリシーを Office 365 および Microsoft 365 に作成し、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350747"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367180"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>セキュリティ/コンプライアンス センターのアラート ポリシー
 
@@ -33,7 +33,7 @@ Microsoft 365 セキュリティ/コンプライアンスセンターのアラ�
 アラートポリシーを使用すると、ポリシーによってトリガーされるアラートを分類し、組織内のすべてのユーザーにポリシーを適用し、通知がトリガーされたときのしきい値レベルを設定し、通知がトリガーされたときに電子メール通知を受信するかどうかを決定することができます。 セキュリティ/コンプライアンスセンターに [ **通知の表示** ] ページもあります。ここでは、通知の表示とフィルター処理、通知の管理に役立つアラート状態の設定、および基になるインシデントのアドレス指定または解決後の通知の破棄を行うことができます。
 
 > [!NOTE]
-> アラートポリシーは、Microsoft 365 Enterprise、Office 365 Enterprise、または Office 365 US Government E1/F1/G1、E3/G3、または E5/G5 サブスクリプションを使用している組織で利用できます。 高度な機能を使用できるのは、E5/G5 サブスクリプションを使用している組織、または E1/F1/G1 または E3/G3 サブスクリプションを所有している組織、および microsoft Defender for Office 365 P2 または microsoft の 365 E5 コンプライアンスまたは microsoft 365 E5 電子情報開示と監査アドオンサブスクリプションを使用している組織のみです。 このトピックでは、E5/G5 またはアドオンサブスクリプションを必要とする機能が強調されています。 また、アラートポリシーは Office 365 GCC、GCC 高、および DoD 米国政府機関の環境で利用可能であることにも注意してください。
+> アラートポリシーは、Microsoft 365 Enterprise、Office 365 Enterprise、または Office 365 US Government E1/F1/G1、E3/G3、または E5/G5 サブスクリプションを使用している組織で利用できます。 高度な機能を使用できるのは、E5/G5 サブスクリプションを使用している組織、または E1/F1/G1 または E3/G3 サブスクリプションを所有している組織、および microsoft Defender for Office 365 P2 または Microsoft の 365 E5 コンプライアンスまたは E5 電子情報開示と監査アドオンサブスクリプションを使用している組織のみです。 このトピックでは、E5/G5 またはアドオンサブスクリプションを必要とする機能が強調されています。 また、アラートポリシーは Office 365 GCC、GCC 高、および DoD 米国政府機関の環境で利用可能であることにも注意してください。
 
 ## <a name="how-alert-policies-work"></a>アラートポリシーのしくみ
 
@@ -86,7 +86,7 @@ Microsoft 365 セキュリティ/コンプライアンスセンターのアラ�
 
   - メール フロー
 
-  - アクセス許可
+  - Permissions
 
   - 脅威の管理
 
@@ -109,14 +109,14 @@ Microsoft は、Exchange 管理者のアクセス許可の悪用、マルウェ�
 
 また、この表は、それぞれに必要な Office 365 Enterprise および Office 365 US 自治体プランを示しています。 組織が E1/F1/G1 または E3/G3 サブスクリプションに加えて適切なアドオンサブスクリプションを持っている場合は、一部の既定の通知ポリシーを使用できます。
 
-| 既定の通知ポリシー | 説明 | カテゴリ | Office 365 Enterprise サブスクリプション |
+| 既定の通知ポリシー | Description | カテゴリ | Office 365 Enterprise サブスクリプション |
 |:-----|:-----|:-----|:-----|
 |**悪意のある可能性がある URL のクリックが検出されました**|組織内の [安全なリンク](../security/office-365-security/atp-safe-links.md) によって保護されたユーザーが悪意のあるリンクをクリックしたときにアラートを生成します。 このイベントは、URL verdict の変更が Microsoft Defender for Office 365 によって特定された場合、またはユーザーが安全なリンクページを上書きした場合に発生します (組織の Microsoft 365 for business Safe Links ポリシーに基づく)。 このアラートポリシーには、 **高い** 重要度が設定されています。 Defender for Office 365 P2、E5、G5 のお客様の場合、このアラートは [office 365 で自動調査と応答](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)を自動的にトリガーします。 このアラートをトリガーするイベントの詳細については、「 [Set Up Safe Links policies](../security/office-365-security/set-up-atp-safe-links-policies.md)」を参照してください。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオンサブスクリプション|
 |**管理者送信の結果が完了**|[管理者](../security/office-365-security/admin-submission.md)による提出で、送信されたエンティティの再スキャンが完了したときにアラートを生成します。 再スキャン結果が管理者送信からレンダリングされるたびに、警告がトリガーされます。 これらのアラートは、 [以前の送信の結果を確認](https://protection.office.com/reportsubmission)し、ユーザーが報告したメッセージを送信して最新のポリシーチェックおよび再スキャンを行うように通知することを目的としており、組織内のフィルターポリシーが意図した影響を verdicts ているかどうかを判断するのに役立ちます。 このポリシーには重要度の **低い** 設定があります。|脅威の管理|E1/F1、E3、または E5|
 |**メールの手動調査をトリガーした管理者**|管理者が脅威エクスプローラーから電子メールの手動調査をトリガーしたときにアラートを生成します。 詳細については、「セキュリティ管理者が脅威エクスプローラーから調査を開始する」 (を参照して https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) ください。 この通知は、調査が開始されたことを組織に通知します。 アラートは、その通知をトリガーしたユーザーに関する情報を提供し、調査へのリンクを含めます。 このポリシーには、 **情報** が含まれる重要度の設定があります。|脅威の管理| E5/G5 または Microsoft Defender for Office 365 P2 アドオンサブスクリプション| 
 |**転送/リダイレクトルールの作成**|組織内のユーザーが自分のメールボックスの受信トレイルールを作成し、別の電子メールアカウントにメッセージを転送またはリダイレクトしたときに通知を生成します。 このポリシーでは、web 上の Outlook (旧称 Outlook Web App) または Exchange Online PowerShell を使用して作成された受信トレイルールのみを追跡します。 このポリシーには重要度の **低い** 設定があります。 受信トレイルールを使用して Outlook on the web で電子メールを転送およびリダイレクトする方法の詳細については、「Use rules in Outlook on the web」を参照してください。 [メッセージを別のアカウントに自動的に転送](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)します。|脅威の管理|E1/F1/G1、E3/G3、または E5/G5|
 |**電子情報開示検索の開始またはエクスポート**|ユーザーがセキュリティ/コンプライアンスセンターでコンテンツ検索ツールを使用したときに通知を生成します。 次のコンテンツ検索アクティビティが実行されると、アラートがトリガーされます。 <br/><br/>* コンテンツ検索が開始されました<br/>* コンテンツ検索の結果はエクスポートされます。<br/>* コンテンツ検索レポートはエクスポートされます。<br/><br/>また、以前のコンテンツ検索アクティビティが電子情報開示ケースに関連して実行された場合にも、アラートがトリガーされます。 このポリシーには、 **中程度** の重要度が設定されています。 コンテンツ検索アクティビティの詳細については、「 [監査ログで電子情報開示アクティビティを検索](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)する」を参照してください。|脅威の管理|E1/F1/G1、E3/G3、または E5/G5|
-|**Exchange 管理者特権の昇格**|ユーザーが Exchange Online 組織で管理者権限を割り当てられたときに通知を生成します。 たとえば、Exchange Online の組織の管理役割グループにユーザーが追加されたとき。 このポリシーには重要度の **低い** 設定があります。|アクセス許可|E1/F1/G1、E3/G3、または E5/G5|
+|**Exchange 管理者特権の昇格**|ユーザーが Exchange Online 組織で管理者権限を割り当てられたときに通知を生成します。 たとえば、Exchange Online の組織の管理役割グループにユーザーが追加されたとき。 このポリシーには重要度の **低い** 設定があります。|Permissions|E1/F1/G1、E3/G3、または E5/G5|
 |**配信後に削除されたマルウェアを含む電子メールメッセージ**|マルウェアを含むメッセージが組織内のメールボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は [0 時間の自動削除](../security/office-365-security/zero-hour-auto-purge.md)を使用して、感染したメッセージを Exchange Online メールボックスから削除します。 このポリシーには、[ **情報** ] の重要度が設定されており、 [Office 365 で自動調査と応答](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)が自動的にトリガーされます。|脅威の管理|E5/G5 または Microsoft Defender for Office 365 P2 アドオンサブスクリプション|
 |**配信後に削除されたフィッシング Url を含む電子メールメッセージ**|フィッシングを含むメッセージが組織内のメールボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は [0 時間の自動削除](../security/office-365-security/zero-hour-auto-purge.md)を使用して、感染したメッセージを Exchange Online メールボックスから削除します。 このポリシーには、[ **情報** ] の重要度が設定されており、 [Office 365 で自動調査と応答](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)が自動的にトリガーされます。|脅威の管理|E5/G5 または Defender for Office 365 P2 アドオンサブスクリプション|
 |**ユーザーがマルウェアまたはフィッシングとして報告した電子メール**|組織内のユーザーがレポートメッセージアドインを使用してメッセージをフィッシング電子メールとして報告したときに通知を生成します。 このポリシーには、 **情報** が含まれる重要度の設定があります。 このアドインの詳細については、「 [レポートメッセージアドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。 Defender for Office 365 P2、E5、G5 のお客様の場合、このアラートは [office 365 で自動調査と応答](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)を自動的にトリガーします。|脅威の管理|E1/F1/G1、E3/G3、または E5/G5|
@@ -213,7 +213,7 @@ Microsoft は、Exchange 管理者のアクセス許可の悪用、マルウェ�
 
 既定の通知ポリシーが割り当てられているカテゴリを確認するには、[ [既定の警告ポリシー](#default-alert-policies) ] セクションの表を参照してください。
 
-|Role|情報ガバナンス|データ損失防止|メール フロー|アクセス許可|脅威の管理|Others|
+|Role|情報ガバナンス|データ損失防止|メール フロー|Permissions|脅威の管理|Others|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |監査ログ|||||||
 |ケース管理|||||||
