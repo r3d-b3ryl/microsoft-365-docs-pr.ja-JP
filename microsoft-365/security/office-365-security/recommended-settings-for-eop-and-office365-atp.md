@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) および Defender for Office 365 のセキュリティ設定のベストプラクティスとは 標準保護に関する現在の推奨事項 より厳しくするには、何を使用する必要がありますか。 また、Office 365 に Defender も使用している場合は、どのような機能を利用できますか。
-ms.openlocfilehash: af741e1af412d535c53beb83c36c0cbe3fcd617b
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: ee450c8da346d5815710afe2622f8f2c600132d4
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357123"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367215"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 のセキュリティに関する推奨設定
 

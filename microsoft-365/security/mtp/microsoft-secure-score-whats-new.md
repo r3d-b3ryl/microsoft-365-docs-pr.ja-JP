@@ -20,18 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0ba3d7a5e46f7e0f8677ce2844c5551bf70739e3
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843818"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367115"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュリティスコアの新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
+
+## <a name="november-2020"></a>2020 年 11 月
+
+### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>エンドポイント (以前の Microsoft Defender ATP) に関する Microsoft Defender のサービス関連の改善アクションを3つ追加しました。
+
+- Windows サービスの引用符で囲まれるサービスパスを修正する
+- サービスの実行可能パスを共通の保護された場所に変更する
+- Windows レジストリでパスワードがキャッシュされないようにサービスアカウントを変更する
 
 ## <a name="october-2020"></a>2020 年 10 月
 

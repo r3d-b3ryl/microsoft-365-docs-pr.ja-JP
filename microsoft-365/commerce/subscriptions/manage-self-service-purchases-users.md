@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: ユーザーは、セルフサービス購入を管理する方法について学ぶことができます。
-ms.openlocfilehash: 7a5b52c0378e4d8f2a48ce7cdb56fb1901c25472
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a94a474bf2a5c506f4e6ed02659cd10d371fb779
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546608"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367157"
 ---
 # <a name="manage-self-service-purchases-users"></a>セルフサービスによる購入を管理する (ユーザー)
 
@@ -67,18 +67,18 @@ ms.locfileid: "47546608"
 2. ライセンスの割り当てを解除する製品を選択します。
 3. ライセンスの割り当てを解除するユーザーを選択します。
 4. [ **ライセンスの割り当て解除**] を選択します。
-5. [ **ライセンスの割り当て解除** ] ボックスで、[ **割り当て**の解除] を選択します。
+5. [ **ライセンスの割り当て解除** ] ボックスで、[ **割り当て** の解除] を選択します。
 
 ## <a name="cancel-a-subscription"></a>サブスクリプションをキャンセルする
 
-1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。
-2. [ **製品** ] タブで、キャンセルするサブスクリプションを見つけます。 [ **その他のアクション** (3 つのドット)] を選択し、[ **サブスクリプションのキャンセル**] を選択します。
-3. **[サブスクリプションのキャンセル**] ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
+1. 管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[お使いの製品]</a> ページの順に移動します。
+2. **[製品]** タブで、キャンセルするサブスクリプションを見つけます。 **その他の操作** (3 つのドット) を選択してから、**[このサブスクリプションをキャンセルする]** を選択します。
+3. **[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。 必要に応じて、フィードバックを提供します。
 4. **[保存]** を選択します。
 
 ## <a name="manage-your-payment-details"></a>支払いの詳細を管理する
 
-1. 管理センターで、請求**請求書**  >  **& 支払い**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">請求プロファイル</a>ページに移動します。
+1. 管理センターで、請求 **請求書**  >  **& 支払い**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">請求プロファイル</a>ページに移動します。
 2. リストから請求プロファイルを選択します。
 3. [課金プロファイルの詳細] ページの [ **支払い方法**] で、次のいずれかのオプションを選択します。
     - 既存の支払い方法を更新する場合は、[ **編集**] を選択します。
@@ -100,8 +100,8 @@ ms.locfileid: "47546608"
 
 ## <a name="view-your-invoices"></a>請求書を表示する
 
-1. 管理センターで、[課金請求**書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>] ページに移動します。
-2. [ **請求書** ] タブで、表示する請求書を選択します。 請求書が表示されない場合は、過去**6 か月**の**間に変更**するか、**日付範囲を指定**します。
+1. 管理センターで、[課金請求 **書**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& の支払い</a>] ページに移動します。
+2. [ **請求書** ] タブで、表示する請求書を選択します。 請求書が表示されない場合は、過去 **6 か月** の **間に変更** するか、**日付範囲を指定** します。
 
 ## <a name="need-help-contact-us"></a>サポートが必要な場合 ご連絡ください。
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cb4d1a4c4632763506fd2d3b05431acb9233f744
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: 57164e08128080f90cb3985b3a3f887521f4c3d5
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071966"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126600"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>Payment Card Industry (PCI) Data Security Standard (DSS)
 
@@ -92,11 +92,11 @@ PCI Security Standards Council が提供している情報により、具体的�
 
 **OneDrive for Business および SharePoint Online の対象について**
 
-現在、OneDrive for Business および SharePoint Online にアップロードされたファイルとドキュメントのみが PCI DSS に準拠します。
+現在のところ、OneDrive for Business および SharePoint Online にアップロードされたファイルとドキュメントのみが PCI DSS に準拠しています。
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>Microsoft コンプライアンス マネージャーを使用してリスクを評価する
 
-[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、 [Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。テンプレートは、コンプライアンス マネージャーの **評価テンプレート** ページに見つかります。 [コンプライアンス マネージャーで評価する方法](compliance-manager-assessments.md)をご確認ください。
+[Microsoft コンプライアンス マネージャー](compliance-manager.md)は、[Microsoft 365 コンプライアンス センター](microsoft-365-compliance-center.md)の機能で、組織のコンプライアンスに対する姿勢を把握し、リスクを軽減するための処置を実行できるようにします。コンプライアンス マネージャーには、この規制の評価を構築するためのプレミアム テンプレートが用意されています。テンプレートは、コンプライアンス マネージャーの **評価テンプレート** ページに見つかります。[コンプライアンス マネージャーで評価する方法](compliance-manager-assessments.md)をご確認ください。
 
 ## <a name="resources"></a>リソース
 
