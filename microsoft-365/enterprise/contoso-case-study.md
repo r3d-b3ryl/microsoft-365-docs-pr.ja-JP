@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 架空の代表的なグローバル組織が、企業の Microsoft 365 を採用する方法。
-ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 4b17f87008f47d45737fcdbe67d5c8425d4f5530
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356993"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371614"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 向けの Microsoft 365 for enterprise
 
@@ -69,9 +69,9 @@ Contoso Corporation は架空のグローバル製造な企業製造で、その
 
 次の追加の IT シナリオと構成を参照してください。
 
-- [ハイブリッドワーカー向けの COVID-19 の応答とインフラストラクチャ](../solutions/contoso-hybrid-workforce.md)
+- [リモートおよびオンサイト作業のための COVID-19 の応答とインフラストラクチャ](../solutions/contoso-remote-onsite-work.md)
 
-  Contoso 社が COVID-19 pandemic のリモートアクセスインフラストラクチャを更新し、ハイブリッド労働力の新しいインストールおよび更新インフラストラクチャを更新した方法について説明します。
+  Contoso 社が COVID-19 pandemic のリモートアクセスインフラストラクチャを更新し、リモートおよびオンサイト作業のための新しいインストールと更新のインフラストラクチャを更新した方法について説明します。
 
 - [極秘プロジェクトのチーム](../solutions/contoso-team-for-top-secret-project.md)
 

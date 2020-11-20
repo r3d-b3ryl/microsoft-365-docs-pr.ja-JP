@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379292"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371672"
 ---
 # <a name="access-the-admin-portal"></a>管理ポータルにアクセスする
 
@@ -37,7 +37,7 @@ Azure portal または Microsoft エンドポイントマネージャーのい�
 |グローバル管理者     | この役割を持つ管理者は、Microsoft Managed Desktop 管理ポータルの **すべての機能に対する読み取りおよび書き込みアクセス許可を** 持ちます。         |
 |グローバル閲覧者     | この役割を持つ管理者は、Microsoft Managed Desktop 管理ポータルの **すべての機能に対して読み取り専用のアクセス許可を** 持ちます。         |
 |Intune サービス管理者     |  この役割を持つ管理者は、Microsoft Managed Desktop 管理ポータルの **セキュリティに関連しない機能に対する読み取りおよび書き込みアクセス許可を** 持ちます。       |
-|サービスサポート管理者     | この役割を持つ管理者は、Microsoft Managed Desktop 管理ポータルの **セキュリティに関連しない機能に対する読み取りおよび書き込みアクセス許可を** 持ちます。         |
+|サービスサポート管理者     | この役割を持つ管理者は、Microsoft Managed Desktop 管理ポータルで **サポート要求を管理するため** の、セキュリティおよび書き込みアクセス許可に **関連しない機能に対する読み取り専用のアクセス許可を** 持ちます。         |
 |セキュリティ管理者 | この役割を持つ管理者は、管理ポータルの Microsoft Managed Desktop の **すべての機能に対する読み取り専用のアクセス許可** と、 **セキュリティ関連の機能に対する書き込みアクセス** 許可を持ちます。 |
 |セキュリティ閲覧者 |この役割を持つ管理者は、Microsoft Managed Desktop 管理ポータルの **すべての機能に対して読み取り専用のアクセス許可を** 持ちます。|
 
