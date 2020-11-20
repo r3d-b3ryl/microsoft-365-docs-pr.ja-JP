@@ -20,18 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ba3d7a5e46f7e0f8677ce2844c5551bf70739e3
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
+ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367115"
+ms.locfileid: "49373997"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft セキュリティスコアの新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Microsoft のセキュリティの評価をより良いものにするには、いくつかの変更を行いました。 予定されている変更の詳細については、「 [Microsoft Secure Score の内容](microsoft-secure-score-whats-coming.md)」を参照してください。
+
+Microsoft セキュリティスコアは https://security.microsoft.com/securescore 、 [microsoft 365 セキュリティセンター](overview-security-center.md)で入手できます。
 
 ## <a name="november-2020"></a>2020 年 11 月
 

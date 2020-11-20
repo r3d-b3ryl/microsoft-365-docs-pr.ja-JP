@@ -17,27 +17,30 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5627358db1b762db772b8f4ee61569968dc73a73
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
+ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367117"
+ms.locfileid: "49374009"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft のセキュリティで保護されたスコア
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-弊社では、セキュリティ上の姿勢をより良いものにするために、近日中に変更を行っており、利便性を向上 [さ](microsoft-secure-score.md) せています。 スコアと可能な最大スコアは変わる可能性があります。
+Microsoft セキュリティスコアは https://security.microsoft.com/securescore 、 [microsoft 365 セキュリティセンター](overview-security-center.md)で入手できます。
 
 ## <a name="proposed-changes"></a>Proposed changes
 
+弊社では、セキュリティ上の姿勢をより良いものにするために、近日中に変更を行っており、利便性を向上 [さ](microsoft-secure-score.md) せています。 スコアと可能な最大スコアは変わる可能性があります。
+
 ### <a name="november-2020"></a>2020 年 11 月
 
-**> servicenow を共有** することによって、セキュリティで保護されたスコアで servicenow チケットを作成する機能を削除します。
+#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>セキュリティで保護されたスコアで ServiceNow チケットを作成する機能を削除する 
 
-- ServiceNow コネクタのプレビュー期間が終了します。 この機能は、2020の終わりまでは利用できなくなります。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
+**> servicenow を共有** することによって、セキュリティで保護されたスコアで servicenow チケットを作成する機能は削除されます。
 
+ServiceNow コネクタのプレビュー期間が終了します。 この機能は、2020の終わりまでは利用できなくなります。 フィードバックをお寄せいただきありがとうございます。次の手順を決定しています。
 
 ## <a name="related-resources"></a>関連リソース
 
