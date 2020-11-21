@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンスセンターに新しい新しいソリューションを追加したり、フィードバックに基づいて既存の機能を更新したり、最新のドキュメントを展開したりすることができるかどうかにかかわらず、Microsoft 365 は、変更されたコンプライアンスの状況を常に把握するのに役立つ情報を用意しています。 今月の内容を確認してください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988855"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376610"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 コンプライアンスの新機能
 
@@ -37,13 +37,84 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 > 他の管理センターでは何が起こっているのでしょうか。 次の記事をご覧ください。<br>[Microsoft 365 管理センターの新機能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理センターの新機能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender の新機能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 また、 [microsoft 365 ロードマップ](https://www.microsoft.com/en-us/microsoft-365/roadmap) を参照して、起動された、展開中の、開発中である、キャンセルされた、または既にリリースされた microsoft 365 の機能について説明します。
 
+## <a name="october-2020"></a>2020 年 10 月
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+[CJK 言語サポート](ediscovery-cjk-support.md)。 高度な電子情報開示では、一括言語 (簡体字中国語、繁体字中国語、日本語、韓国語を含む) という2バイト文字セット言語をサポートするようになりました。 これらは、いくつかの高度なレビューセットシナリオで使用できます。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+- [ラベルの範囲](sensitivity-labels.md#label-scopes)。 機密ラベルの作成時に、ラベルの範囲を定義するための新しいオプションが表示されます。 このオプションを使用すると、ファイルと電子メール、コンテナー (SharePoint サイトやチームなど)、またはその両方に対して、ラベルを構成できます。
+- [動的コンテンツマーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。 機密ラベルのコンテンツマーキングを構成する場合は、 `${Item.Label}` `${Item.Location}` ヘッダー、フッター、またはウォーターマークのテキスト文字列などの動的な変数を使用できるようになりました。
+
+## <a name="september-2020"></a>2020 年 9 月
+
+### <a name="spotlight-compliance-manager"></a>スポットライト: コンプライアンスマネージャー
+
+今年 Ignite に発表されたコンプライアンススコアは、 [コンプライアンスマネージャー](compliance-manager.md)として再ブランディングされています。 このリリースでは、Service Trust Portal のコンプライアンスマネージャーの前のホームから移行を完了し、Microsoft 365 コンプライアンスセンターでエンドツーエンドのコンプライアンス管理ソリューションを導入しました。
+
+コンプライアンスマネージャーが組織によるコンプライアンスの管理を簡単にする方法については、以下のビデオを参照してください。
+<br>
+<br>
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+
+### <a name="advanced-audit"></a>高度な監査
+
+- 監査ログの新しい10年間の保持は、長期間の調査をサポートし、規制、法律、および内部の義務に対応するのに役に立ちます。
+- [3 つ](advanced-audit.md#access-to-crucial-events-for-investigations)の新しい重要なイベント。 次の新しいイベントを使用すると、潜在的な違反を調査し、危害の範囲 (Send、SearchQueryInitiatedExchange、および SearchQueryInitiatedSharePoint) を判断するのに役立ちます。
+
+### <a name="communication-compliance"></a>通信コンプライアンス
+
+- [役割グループが更新されました](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 コミュニケーションコンプライアンス役割グループが、insider リスク管理ソリューションで利用可能な役割グループ構造と一致するようになりました。
+- [レポートダッシュボード](communication-compliance-feature-reference.md#reports-preview)。 すべての通信コンプライアンスレポートを表示するための一元的な場所。 レポートウィジェットは、通信コンプライアンスアクティビティの状態の全体的な評価に最も一般的に必要な洞察の概要を提供します。
+- [パワー自動化フロー](communication-compliance-feature-reference.md#power-automate-flows-preview) 通知とユーザーのタスクを自動化するフローを設定し、ユーザーが通知をトリガーしたときに管理者に通知します。
+- ["分類の改善" 修復アクション](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 Trainable 分類子に一致するアイテムが含まれていると、組織内の誤検知を最小限に抑えるためにフィードバックによる恩恵を受けることができます。 [ **分類の向上** ] オプションを使用すると、検出されたアイテムが関連する通信コンプライアンスポリシーで構成された分類子と一致するかどうかをフィードバックできます。 その他の分類子を提案して、そのアイテムに関連付けて将来の通知の一致精度を向上させることもできます。
+
+### <a name="data-connectors"></a>データコネクタ
+
+- [新しいサードパーティのデータコネクタ](archiving-third-party-data.md#third-party-data-connectors)。 Globanet から14個のコネクタを含む新しいデータコネクタが25個、Telemessage から8個。
+- [物理バッジコネクタ](import-physical-badging-data.md)。 社員の生の物理アクセスイベントや、組織のバッジ生成された物理的なアクセスに関する警告など、物理的なバッジのデータをインポートします。 例には、建物、サーバールーム、またはデータセンターへのエントリが含まれます。 物理 badworkflowdata は、組織内の悪意のあるアクティビティやデータの盗難から組織を保護するために、insider リスク管理ソリューションで使用できます。
+
+### <a name="insider-risk-management"></a>インサイダー リスクの管理
+
+- [Microsoft Teams の統合](insider-risk-management-settings.md#microsoft-teams-preview)。 チームの統合が insider のリスク設定でオンになっている場合は、個々のケースに関連するデータを安全に共有および保存するなどのタスクに関して、他の関係者と連携して共同作業を行うことができます。
+- [パワー自動化フロー](insider-risk-management-settings.md#power-automate-flows-preview) ユーザー、警告、およびケースの情報を取得して関係者や他のアプリと共有したり、ケースメモへの投稿などの操作を自動化したりするなど、ケースやユーザーの重要なタスクを自動化するためのフローを設定します。
+- [アクティビティ エクスプローラー](insider-risk-management-alerts.md#activity-explorer-preview)。 通知を確認するときに利用可能アクティビティエクスプローラーには、各アラートにドリルダウンするための包括的な分析ツールが用意されています。 検出された問題のあるアクティビティのタイムラインをすばやく確認し、アラートに関連するすべてのリスクアクティビティを特定してフィルター処理します。
+
+### <a name="retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベル
+
+- [Yammer のサポート](retention-policies-yammer.md)。 アイテム保持ポリシーを使用して、Yammer コミュニティのメッセージとプライベートメッセージを保持および削除できるようになりました。
+- [Teams 会議のレコーディングにラベルを適用](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings)します。 自動ラベル付けポリシーを作成するときは、キーワードクエリエディターを使用して、ユーザーの OneDrive アカウントまたは SharePoint に格納されているチームの会議のレコーディングを特定します。
+
+### <a name="records-management"></a>レコード管理
+
+[規制記録のサポート](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)。 規制レコードとしてのラベルの分類により、ラベルが適用されるコンテンツに課される制限が増加し、ラベル自体に使用できる管理アクションが制限されます。 たとえば、コンテンツに適用された後は、グローバル管理者であっても、そのラベルを削除することはできません。 規制レコードに対して許可およびブロックされるアクションの詳細について[説明](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)します。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+[米国政府機関のお客様のサポート](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 機密ラベルは、GCC、GCC High、DoD の各お客様がサポートされるようになりました。これは、Azure Information Protection の統合されたラベル付きクライアントとスキャナーに対してのみサポートされます。
+
+### <a name="trainable-classifiers"></a>トレーニング可能な分類子
+
+新しい再トレーニング機能とフィードバック機能により、精度を向上させ、すべてのカスタム分類子と事前にトレーニングされた分類子に対して誤検知を最小限に抑えることができます。 このフローでは、アイテムが特定の分類子と一致するかどうかに関するフィードバックを提供し、アイテムに関連付けられた他の分類子を提案し、分類子を再トレーニングして一致精度を向上させることができます。
+
+この新しい機能は、次の機能に含まれています。
+
+> [!NOTE]
+> すべての機能について、少なくとも30のフィードバック応答を提供する場合は、確認できる retrained バージョンの分類子を作成します。 改善された場合は、分類子を再発行することができます。
+
+- [トレーニング可能な分類子](classifier-learn-about.md#retraining-classifiers)。 発行された分類子の精度を向上させるために、検出されたアイテムが分類子と一致するかどうかに関するフィードバックを提供できます。
+- [通信のコンプライアンス](classifier-how-to-retrain-comms-compliance.md)。 [新しい **分類** の修復] アクションを使用すると、通信コンプライアンスアラートのアイテムが、通信コンプライアンスポリシーで構成された分類子と一致するかどうかをフィードバックできます。
+- [コンテンツ エクスプローラー](classifier-how-to-retrain-content-explorer.md)。 Trainable 分類子に一致する電子メールメッセージにラベルを自動的に適用するために、保持の自動ラベル付けポリシーを設定する場合は、コンテンツエクスプローラーを使用してラベル付けされたアイテムを確認し、アイテムが分類子に一致しているかどうかのフィードバックを提供することができます。
+
 ## <a name="august-2020"></a>2020 年 8 月
 
 ### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>スポットライト: Insider のリスクと通信コンプライアンスの更新
 
 今月の公開プレビューには、いくつかの新機能と強化された機能があります。
 
-**インサイダー リスクの管理**
+**Insider リスク管理**
 
 - 6つの新しい [ポリシーテンプレート](insider-risk-management-policies.md#policy-templates)を確認してください。
     - 優先度の高いユーザーによるデータリーク
@@ -101,7 +172,7 @@ Microsoft [365 コンプライアンスセンター](microsoft-365-compliance-ce
 組織の機密データを保護および管理するために使用されるコンプライアンスソリューションを理解するために、ソリューションがこれらの目標を達成するためにどのように連携するかについての概要を示す2つの新しいランディングページを作成しました。これにより、関連するドキュメントへのリンクを使用してさらに進むことができます。
 
 [Microsoft の microsoft Information Protection (365)](information-protection.md)<br>
-[Microsoft 365 の microsoft Information ガバナンス](manage-Information-governance.md)
+[Microsoft 365 の Microsoft 情報ガバナンス](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>高度な電子情報開示: 状況には、非 custodial データソースを追加する
 
@@ -326,7 +397,7 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 |ソリューションカタログ (プレビュー) <br/>|ソリューションカタログは、コンプライアンスおよびリスク管理ソリューションの発見、学習、迅速な開始を行うためのワンストップショップです。 カタログは3つのコンプライアンスカテゴリに編成されており、それぞれにカテゴリを構成するソリューションに関する詳細が含まれています。 カテゴリには、情報保護 & ガバナンス、Insider リスク管理、検出 & 応答が含まれます。 <br/>|[ソリューションカタログの概要 (プレビュー)](microsoft-365-solution-catalog.md)|
 |通信のコンプライアンス (プレビュー) <br/>|コミュニケーションへのコンプライアンスは、組織内の不適切なメッセージに対する修復アクションを検出、取得、および実行できるようにすることで、コミュニケーションリスクを最小限にするために役立つ、新しい insider リスク管理カテゴリに含まれています。 このソリューションでは、インテリジェントテンプレート、柔軟な修復ワークフロー、実践的な洞察など、いくつかの新しい拡張機能を導入することで、Office 365 の監督ポリシーの機能が拡張されています。 <br/>|[Microsoft 365 の通信コンプライアンス (プレビュー)](communication-compliance.md)|
 |データ分類 (プレビュー) <br/>|新しいデータ分類ページには、組織全体のコンテンツに機密情報とラベル (保持と機密情報) がどのように使用されているかを検出して評価するのに役立つ、強力な洞察とツールが含まれています。 機密情報が含まれている、またはラベルが適用されているコンテンツを確認し、Microsoft 365 の場所にまたがるラベルアクティビティを調査し、カスタムの機密情報の種類を作成するなど、さまざまな内容を確認します。<br/>|[データ分類の概要 (プレビュー)](data-classification-overview.md)|
-|Trainable 分類子 (プレビュー) <br/>|この強力な新しいツールは、機械学習エンジンを使用して、規制文書や従業員契約書など、組織内のコンテンツのカテゴリを特定するのに役立ちます。 作成した分類子は、いくつかのコンプライアンスソリューションで使用して、関連するコンテンツを検出し、それを分類し、保護し、その他の情報を保持することができます。<br/>|[トレーニング可能な分類子の詳細 (プレビュー)](classifier-learn-about.md)|
+|トレーニング可能な分類子 (プレビュー) <br/>|この強力な新しいツールは、機械学習エンジンを使用して、規制文書や従業員契約書など、組織内のコンテンツのカテゴリを特定するのに役立ちます。 作成した分類子は、いくつかのコンプライアンスソリューションで使用して、関連するコンテンツを検出し、それを分類し、保護し、その他の情報を保持することができます。<br/>|[トレーニング可能な分類子の詳細 (プレビュー)](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>コンプライアンスソリューションの更新
 
@@ -358,15 +429,3 @@ Graduating は、プレビュー段階から完全な可用性まで、コミュ
 |機密ラベルとラベルポリシー|[ラベル] タブと [ラベルポリシー] タブ > 機密ラベルの分類 > <br/> https://protection.office.com/sensitivity |情報保護 > ラベルとラベルポリシー] タブ <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[秘密度ラベルの詳細](sensitivity-labels.md) |
 |サービス アシュアランス|サービス アシュアランス <br/> https://protection.office.com/serviceassurance/dashboard |現時点では、サービス保証のリソースには、Office 365 セキュリティ & コンプライアンスセンターのみがアクセスできます。 |[セキュリティ/コンプライアンス センターのサービス アシュアランス](service-assurance.md)|
 |監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通信コンプライアンス <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 の通信コンプライアンス (プレビュー)](communication-compliance.md) |
-
-## <a name="september-2019"></a>2019 年 9 月
-
-今月リリースのリリース前に静かになる理由をご確認ください。 マイクロソフトは、11月に [Microsoft Ignite](https://www.microsoft.com/ignite) で最近される新しい革新的なコンプライアンスソリューションの構築に取り組んでいます。 引き続きご調整ください。
-
-### <a name="new-encryption-options-for-sensitivity-labels"></a>機密ラベルの新しい暗号化オプション 
-
-機密ラベルの暗号化を構成する場合、次の2つのオプションがあるので、ユーザーはラベルを電子メールやドキュメントに手動で適用するときにアクセス許可を割り当てることができます。<br>
-- **Outlook 電子メール** にラベルを適用する場合、ユーザーは [転送不可] オプションに相当する制限を適用できます。 受信者は、メッセージを読み取ることはできますが、コンテンツを転送、印刷、またはコピーすることはできません。
-- **Word、PowerPoint、Excel** の各ファイルにラベルを適用すると、ユーザーは特定のユーザーやグループにアクセス許可を割り当てるように求められます。
-
-詳細については、「 [機密ラベルを使用してコンテンツへのアクセスを制限](encryption-sensitivity-labels.md#let-users-assign-permissions) する」を参照し、暗号化を適用してください。

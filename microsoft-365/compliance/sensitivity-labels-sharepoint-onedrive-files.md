@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint および OneDrive の Word、Excel、および PowerPoint ファイルの機密ラベルサポートを有効にすることができます。
-ms.openlocfilehash: 84628cdf1e56bfcdf72bc5aca7aed61eba6a7782
-ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
+ms.openlocfilehash: 0feb98c6a0040ad67b4607062abdf0be5b5fbdb8
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349693"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376330"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -62,7 +62,7 @@ SharePoint と OneDrive で Office ファイルの機密ラベルを有効にし
 
 Sharepoint Information Rights Management (IRM) を使用して SharePoint でドキュメントを現在保護している場合は、このページの「 [Sharepoint Information Rights management (irm) と [秘密度ラベル](#sharepoint-information-rights-management-irm-and-sensitivity-labels) ] セクションを確認してください。 
 
-## <a name="requirements"></a>要件
+## <a name="requirements"></a>Requirements
 
 これらの新機能は、 [機密ラベル](sensitivity-labels.md) に対してのみ機能します。 現在 Azure Information Protection のラベルがある場合は、それらを機密ラベルに移行してから、アップロードする新しいファイルに対してこれらの機能を有効にすることができます。 手順については、「 [Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -218,6 +218,26 @@ SharePoint と OneDrive で機密ラベルを使用する場合は、新しい�
     ``` 
 
 管理プロパティの使用の詳細については、「 [SharePoint で検索スキーマを管理](https://docs.microsoft.com/sharepoint/manage-search-schema)する」を参照してください。
+
+## <a name="remove-encryption-for-a-labeled-document"></a>ラベル付きドキュメントの暗号化を削除する
+
+Sharepoint 管理者が SharePoint に格納されているドキュメントから暗号化を削除する必要が生じることはまれです。 このドキュメントに対して、エクスポートまたはそれらに割り当てられているフルコントロールの [Rights management usage](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) 権限を持つユーザーは、Azure Information Protection から Azure Rights management サービスによって適用された暗号化を削除できます。 たとえば、これらの使用権限のどちらかを使用しているユーザーは、暗号化を適用するラベルを暗号化せずにラベルに置き換えることができます。 または、 [スーパーユーザー](https://docs.microsoft.com/azure/information-protection/configure-super-users) がファイルをダウンロードし、暗号化せずにローカルコピーを保存することもできます。
+
+または、グローバル管理者または [SharePoint 管理者](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) が [SPOSensitivityLabelEncryptedFile](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行して、機密ラベルと暗号化の両方を削除することもできます。 このコマンドレットは、管理者がサイトまたはファイルに対するアクセス許可を持っていない場合、または Azure Rights Management サービスが使用できない場合にも実行されます。 
+
+以下に例を示します。
+
+```powershell
+Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
+```
+
+要件:
+
+- SharePoint Online Management Shell バージョン16.0.20616.12000 以降。
+
+- この暗号化は、管理者が定義した暗号化設定 ([ [今すぐアクセス許可](encryption-sensitivity-labels.md#assign-permissions-now) のラベル設定]) を使用して、機密ラベルで適用されています。 このコマンドレットでは、[二重のキー暗号化](encryption-sensitivity-labels.md#double-key-encryption)はサポートされていません。
+
+ジャスティフィケーションテキストは、[**ファイルから] 削除された機密ラベル** の [監査イベント](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)に追加され、復号化アクションも [Azure Information protection の保護利用状況ログ](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)に記録されます。
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>SharePoint と OneDrive の機密ラベルを無効にする方法 (オプトアウト)
 

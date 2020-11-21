@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: ユーザーがデスクトップ、モバイル、および web 用の Office アプリで機密ラベルを操作する方法と、機密ラベルをサポートするアプリについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131110"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371695"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを使用する
 
@@ -136,7 +136,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 - ドキュメントの場合:**ファイル**  >  **情報**  >  **保護ドキュメント** に  >  **よるアクセスの制限**
 - 電子メールの場合: [**オプション**] タブから [**暗号化**] を > 
   
-ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 例:
+ユーザーが最初にドキュメントまたは電子メールにラベルを付けると、独自の暗号化設定を使用して、ラベルの構成設定をいつでも変更できます。 以下に例を示します。
 
 - ユーザーが **機密 \ All Employees** ラベルをドキュメントに適用します。このラベルは、組織内のすべてのユーザーの暗号化設定を適用するように構成されています。 このユーザーは、組織外のユーザーへのアクセスを制限するように IRM 設定を手動で構成します。 最終的には、" **社外秘** " というラベルが付けられた文書が作成されますが、組織内のユーザーは意図したとおりに開くことができません。
 
@@ -146,7 +146,7 @@ Office 365 メッセージの暗号化に対して定義するような管理者
 
 ドキュメントまたは電子メールに既にラベルが付けられている場合、ユーザーはこれらの操作を実行できます。コンテンツが暗号化されていない場合、または [利用状況](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) のエクスポートまたはフルコントロールがある場合です。 
 
-有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 例:
+有用なレポートで一貫したラベルを使用するには、ユーザーがドキュメントを保護するためのラベルのみを適用するための適切なラベルとガイダンスを提供します。 以下に例を示します。
 
 - ユーザーが自分のアクセス許可を割り当てる必要がある例外の場合は、 [ユーザーが自分のアクセス許可を割り当てる](encryption-sensitivity-labels.md#let-users-assign-permissions)ためのラベルを提供します。 
 
@@ -258,6 +258,41 @@ Office アプリの外部に機密ラベルを適用する方法には、次の�
 
 > [!NOTE]
 > これらの変数の構文は大文字と小文字を区別します。
+
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Word、Excel、PowerPoint、および Outlook に異なる視覚的なマーキングを設定する
+
+追加の変数として、テキスト文字列で "App-info" 変数ステートメントを使用して Office アプリケーションの種類ごとに視覚的なマーキングを構成し、 **Word**、 **Excel**、 **PowerPoint**、または **Outlook** の値を使用してアプリケーションの種類を識別できます。 また、これらの値を省略することもできます。これは、同じ If App ステートメントに複数の値を指定する場合に必要になります。
+
+> [!NOTE]
+> 完全には、Outlook の手順は含まれていますが、現時点では、Azure Information Protection のユニファイドラベルクライアントによってのみサポートされています。
+
+次の構文を使用してください。
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+他の動的なビジュアルマーキングと同様に、この構文では大文字と小文字が区別されます。
+
+例:
+
+- **Word 文書のヘッダーテキストのみを設定します。**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    Word 文書のヘッダーのみの場合、ラベルはヘッダーテキスト "この Word 文書は機密です" を適用します。 他の Office アプリケーションにヘッダーテキストは適用されません。
+
+- **Word、Excel、および Outlook のフッターテキスト、および PowerPoint のさまざまなフッターテキストを設定します。**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    Word、Excel、および Outlook では、ラベルはフッターのテキスト "このコンテンツは機密です" を適用します。 PowerPoint では、ラベルによってフッターのテキスト "このプレゼンテーションは機密です。" が適用されます。
+
+- **Word および PowerPoint に特定の透かしテキストを設定し、Word、Excel、および PowerPoint のテキストにウォーターマークを設定します。**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    Word および PowerPoint では、ラベルにウォーターマークのテキスト "このコンテンツは機密です" が適用されます。 Excel では、ラベルにウォーターマークのテキスト "Confidential" が適用されます。 Outlook では、ウォーターマークが Outlook でサポートされていないため、ラベルはウォーターマークのテキストを適用しません。
 
 ## <a name="end-user-documentation"></a>エンドユーザードキュメント
 
