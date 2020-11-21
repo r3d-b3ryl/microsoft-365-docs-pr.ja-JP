@@ -860,7 +860,7 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 監査と通知ポリシーを管理する
   items:
-    - name: 統合監査
+    - name: 基本的な監査
       items:
         - name: 監査ログの検索
           href: search-the-audit-log-in-security-and-compliance.md
