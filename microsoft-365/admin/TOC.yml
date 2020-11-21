@@ -289,7 +289,7 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Microsoft Business Premium をセキュリティで保護する
+        - name: Microsoft 365 Business Premium をセキュリティで保護する
           items:
             - name: データ保護のための前提条件
               href: ../business/pre-requisites-for-data-protection.md
@@ -297,6 +297,10 @@
               href: ../business/security-features.md
             - name: 驚異の保護を強化する
               href: ../business/increase-threat-protection.md
+            - name: Microsoft Defender ウイルス対策によって検出された脅威
+              href: ../business/threats-detected-defender-av.md
+            - name: 検出された脅威を確認して対処する
+              href: ../business/review-threats-take-action.md
             - name: コンプライアンス機能をセットアップする
               href: ../business/set-up-compliance.md
         - name: セキュア スコア
