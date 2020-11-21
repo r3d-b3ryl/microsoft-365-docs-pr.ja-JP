@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft 365 エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 6ba3b83d634f946f818890a732a83166f346162d
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 8211ffbe3a84c0ee9fb4cb4c22d4dcea7f906a78
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073096"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371603"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
-Microsoft エンドポイント データ損失防止 (エンドポイント DLP) は、Microsoft 365 サービス全体の機密アイテムを検出して保護するために使用できる Microsoft 365 データ損失防止 (DLP) スイート機能の一部です。Microsoft のあらゆる DLP サービスの詳細については、「[データ損失防止の概要](data-loss-prevention-policies.md)」を参照してください。エンドポイント DLP の詳細については、「[エンドポイントのデータ損失防止について](endpoint-dlp-learn-about.md)」を参照してください。 
+Microsoft Endpoint Data Loss Prevention (Endpoint DLP) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。 Microsoft のすべての DLP 製品 の詳細については、 「[データ損失防止の概要](data-loss-prevention-policies.md)」を参照してください。 エンドポイント DLP の詳細については、「[エンドポイント データ損失防止の説明](endpoint-dlp-learn-about.md)」を参照してください。
 
 Microsoft エンドポイント DLP を使用すると、Windows 10 デバイスを監視し、機密アイテムが使用され、共有されていることを検出できます。これにより、それらが適切に使用され、保護されていることを確認し、それらを危険にさらす可能性のある危険な動作を防ぐために必要な可視性と制御が得られます。
 
@@ -105,7 +105,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
 
 まだオンボードされていないデバイスをオンボードする場合は、適切なスクリプトをダウンロードして、それらのデバイスに展開します。「[デバイスのオンボーディング](endpoint-dlp-getting-started.md#onboarding-devices)」の手順に従ってください。
 
-既に [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) にオンボードされているデバイスがある場合、それらは管理対象デバイスのリストに表示されます。「[Microsoft Defender for Endpoint にオンボードされているデバイスを使用する](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint)」の手順に従ってください。
+既に [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) にオンボードされているデバイスがある場合、それらは管理対象デバイスのリストに表示されます。「[Microsoft Defender for Endpoint にオンボードされているデバイスを使用する](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint)」の手順に従ってください。
 
 ### <a name="onboarding-devices"></a>デバイスのオンボーディング
 
@@ -113,7 +113,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
 
 1. [Microsoft コンプライアンスセンター](https://compliance.microsoft.com)を開きます。
 
-2. コンプライアンスセンターの設定ページを開き、[ **オンボードデバイス** ]を選択します。 
+2. コンプライアンスセンターの設定ページを開き、[**オンボードデバイス**]を選択します。 
 
    > [!div class="mx-imgBorder"]
    > ![デバイス管理を有効にする](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -121,11 +121,11 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
    > [!NOTE]
    > 通常は、デバイスのオンボーディングが有効になるまでに約 60 秒かかりますが、Microsoft サポートを利用する前に最大 30 分お待ちください。
 
-3. **[デバイス管理]** を選択して、 **[デバイス]** リストを開きます。
+3. **[デバイス管理]** を選択して、**[デバイス]** リストを開きます。
 
-4. オンボーディング プロセスを開始するには、 **[オンボーディング]** を選択します。
+4. オンボーディング プロセスを開始するには、**[オンボーディング]** を選択します。
 
-5. これらの追加デバイスに導入する方法を[ **導入方法** ]リストから選択し、 **パッケージをダウンロード** します。
+5. これらの追加デバイスに導入する方法を[**導入方法**]リストから選択し、**パッケージをダウンロード** します。
 
    > [!div class="mx-imgBorder"]
    > ![展開方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
@@ -149,16 +149,16 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
 
 1. [Microsoft コンプライアンス センター](https://compliance.microsoft.com)を開きます。
 
-2. コンプライアンス センターの設定ページを開き、 **[デバイスの監視を有効にする]** を選択します。
+2. コンプライアンス センターの設定ページを開き、**[デバイスの監視を有効にする]** を選択します。
 
-3. **[デバイス管理]** を選択して、 **[デバイス]** リストを開きます。既に Microsoft Defender for Endpoint にレポートしているデバイスのリストが表示されます。
+3. **[デバイス管理]** を選択して、**[デバイス]** リストを開きます。既に Microsoft Defender for Endpoint にレポートしているデバイスのリストが表示されます。
 
    > [!div class="mx-imgBorder"]
    > ![デバイス管理](../media/endpoint-dlp-getting-started-2-device-management.png)
    
-4. 追加のデバイスをオンボードする必要がある場合は、[ **オンボーディング** ]を選択します。
+4. 追加のデバイスをオンボードする必要がある場合は、[**オンボーディング**]を選択します。
 
-5. これらの追加デバイスに展開する方法を **[展開方法]** リストから選択し、 **パッケージをダウンロード** します。
+5. これらの追加デバイスに展開する方法を **[展開方法]** リストから選択し、**パッケージをダウンロード** します。
 
 6. 「[Windows 10 マシンのオンボーディング ツールと方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)」の適切な手順に従います。このリンクをクリックすると、手順 5 で選択した展開パッケージと一致する Microsoft Defender for Endpoint の手順にアクセスできるランディング ページが表示されます。
 
@@ -168,7 +168,7 @@ Microsoft エンドポイント DLP を使用すると、Windows 10 デバイス
     - ローカルスクリプトを使用した Windows 10 マシンのオンボード
     - 非永続的な仮想デスクトップインフラストラクチャ (VDI) マシンをオンボーディングします。
 
-完了後、エンドポイントがオンボードされ、 **[デバイス]** テーブルに表示され、 **アクティビティ エクスプローラー** に監査ログのレポートを開始します。
+完了後、エンドポイントがオンボードされ、**[デバイス]** テーブルに表示され、**アクティビティ エクスプローラー** に監査ログのレポートを開始します。
 
 > [!NOTE]
 >これは、ライセンス執行時でのエクスペリエンスです。 必要なライセンスがないと、データは表示されず、アクセスできません。
