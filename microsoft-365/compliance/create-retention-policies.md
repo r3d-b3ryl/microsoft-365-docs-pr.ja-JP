@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを非常に効率的に制御します。必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 83f438b6a32ad56f1f239858d2f3fad61875c460
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357342"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376580"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -96,7 +96,7 @@ Teams は、単なるチャットやチャネル メッセージを送るだけ�
 
 Microsoft 365 グループ、SharePoint サイトや OneDrive アカウントに適用されているアイテム保持ポリシーにより、Teams のチャットやチャネル メッセージで参照されているファイルが、それらのメッセージが削除されるよりも先に削除される場合があります。このような場合、そのファイルは Teams のメッセージに引き続き表示されますが、ユーザーがファイルをクリックすると、"ファイルが見つかりません" というエラーが表示されます。この動作はアイテム保持ポリシーに固有のものではなく、ユーザーが SharePoint または OneDrive から手動でファイルを削除した場合にも発生する可能性があります。
 
-### <a name="retention-policy-for-yammer-locations"></a>Yammer の場所のアイテム保持ポリシー
+### <a name="retention-policy-for-yammer-locations"></a>Yammer のアイテム保持ポリシー
 
 > [!NOTE]
 > Yammer のアイテム保持ポリシーがプレビューで展開されています。まだ Yammer の新しい場所が表示されていない場合は、数日後にもう一度お試しください。
@@ -193,7 +193,7 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 
 Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、**Microsoft 365 グループ** の場所を使用する必要があります。Microsoft 365 グループには Exchange メールボックスがありますが、**Exchange メール** の場所全体を含むアイテム保持ポリシーには、Microsoft 365 グループのメールボックスのコンテンツは含まれません。さらに、**Exchange メール** の場所では、最初に含めるまたは除外するグループ メールボックスを指定できますが、アイテム保持ポリシーを保存しようとすると、"RemoteGroupMailbox" が Exchange の場所の有効な選択ではないというエラーが表示されます。
 
-Microsoft 365 グループに適用されるアイテム保持ポリシーには、グループ メールボックスと SharePoint チーム サイトが含まれます。SharePoint チーム サイトに保存されているファイルはこの場所でカバーされますが、独自のアイテム保持ポリシーの場所を持つ Teams チャットまたは Teams チャネル メッセージはカバーされません。
+Microsoft 365 グループに適用される保持ポリシーには、グループのメール ボックスと SharePoint チーム サイトが含まれます。 SharePoint の Teams サイトに保存されたファイルは、場所でカバーされていますが、独自の保持ポリシーの場所を持つ Teams のチャットや Teams のチャネルはカバーされません。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business の構成情報
 
