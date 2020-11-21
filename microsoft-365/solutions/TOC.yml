@@ -171,6 +171,8 @@
       items:
         - name: Contoso 社向けの Microsoft 365 ソリューション
           href: contoso-case-study-solutions.md
+        - name: ハイブリッド従業員向けの Contoso の COVID-19 対応とサポート
+          href: contoso-hybrid-workforce.md
         - name: 極秘プロジェクト向けの独立したチーム
           href: contoso-team-for-top-secret-project.md
         - name: Teams の音声移行
