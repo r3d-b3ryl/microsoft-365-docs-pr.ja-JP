@@ -17,82 +17,77 @@ ms.custom:
 search.appverid:
 - MET150
 description: Microsoft を使用してアカウントを終了する方法について説明します。
-ms.openlocfilehash: 0fed7df54a21b3696e81915af78e377e855bfd12
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: bdcf4408ddc9c198fab1d68b4c096fad9059b975
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794899"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376319"
 ---
-# <a name="close-your-account"></a><span data-ttu-id="3e7b9-103">アカウントの使用を停止する</span><span class="sxs-lookup"><span data-stu-id="3e7b9-103">Close your account</span></span>
+# <a name="close-your-account"></a><span data-ttu-id="addd2-103">アカウントの使用を停止する</span><span class="sxs-lookup"><span data-stu-id="addd2-103">Close your account</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="3e7b9-104">管理センターは変更中です。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-104">The admin center is changing.</span></span> <span data-ttu-id="3e7b9-105">エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="addd2-104">管理センターは変更中です。</span><span class="sxs-lookup"><span data-stu-id="addd2-104">The admin center is changing.</span></span> <span data-ttu-id="addd2-105">エクスペリエンスがここで説明されている詳細と一致しない場合は、「[新しい Microsoft 365 管理センターについて](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="addd2-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="3e7b9-106">Microsoft でのアカウントの使用を停止すると、アカウントに関連するすべての情報が削除されます。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-106">When you close your account with Microsoft, all information related to your account is deleted.</span></span> <span data-ttu-id="3e7b9-107">この情報には、サブスクリプション、ライセンス、支払方法、ユーザー、ユーザー データが含まれます。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-107">This information includes subscriptions, licenses, payment methods, users, and user data.</span></span> <span data-ttu-id="3e7b9-108">このプロセスを開始する前に、保持する必要のあるデータを必ずバックアップしてください。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-108">Before you start this process, make sure to backup any data that you want to preserve.</span></span>
+<span data-ttu-id="addd2-106">Microsoft でのアカウントの使用を停止すると、アカウントに関連するすべての情報が削除されます。</span><span class="sxs-lookup"><span data-stu-id="addd2-106">When you close your account with Microsoft, all information related to your account is deleted.</span></span> <span data-ttu-id="addd2-107">この情報には、サブスクリプション、ライセンス、支払方法、ユーザー、ユーザー データが含まれます。</span><span class="sxs-lookup"><span data-stu-id="addd2-107">This information includes subscriptions, licenses, payment methods, users, and user data.</span></span>
 
-## <a name="step-1-delete-users"></a><span data-ttu-id="3e7b9-109">手順 1: ユーザーを削除する</span><span class="sxs-lookup"><span data-stu-id="3e7b9-109">Step 1: Delete users</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="addd2-108">開始する前に</span><span class="sxs-lookup"><span data-stu-id="addd2-108">Before you begin</span></span>
 
-<span data-ttu-id="3e7b9-110">アカウントを閉じる手順を完了した1人のグローバル管理者を除くすべてのユーザーを削除します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-110">Delete all users except for one global administrator who completes the steps to close the account.</span></span> <span data-ttu-id="3e7b9-111">このプロセスの終了時にディレクトリを削除するには、その前に他のすべてのユーザーを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-111">Before you can delete the directory at the end of this process, you must delete all other users.</span></span>
+<span data-ttu-id="addd2-109">このプロセスを開始する前に、保持する必要があるすべてのデータをバックアップしてください。</span><span class="sxs-lookup"><span data-stu-id="addd2-109">Before you start this process, make sure to back up any data that you want to preserve.</span></span>
 
-<span data-ttu-id="3e7b9-112">ユーザーがオンプレミスから同期されている場合は、まず sync をオフにしてから、Azure portal または Azure PowerShell コマンドレットを使用してクラウドディレクトリ内のユーザーを削除します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-112">If users are synchronized from on-premises, first turn off sync, then delete the users in the cloud directory by using the Azure portal or Azure PowerShell cmdlets.</span></span>
+<span data-ttu-id="addd2-110">この記事に記載されているタスクを実行するには、グローバルまたは課金管理者である必要があります。</span><span class="sxs-lookup"><span data-stu-id="addd2-110">You must be a Global or Billing admin to do the tasks in this article.</span></span> <span data-ttu-id="addd2-111">詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="addd2-111">For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).</span></span>
 
-<span data-ttu-id="3e7b9-113">ユーザーを削除するには、「 <a href="https://docs.microsoft.com/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin: 1 人</a>以上のユーザーを削除する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-113">To delete users, see <a href="https://docs.microsoft.com/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin: Delete one or more users</a>.</span></span>
+## <a name="step-1-delete-users"></a><span data-ttu-id="addd2-112">手順 1: ユーザーを削除する</span><span class="sxs-lookup"><span data-stu-id="addd2-112">Step 1: Delete users</span></span>
 
-<span data-ttu-id="3e7b9-114"><a href="https://go.microsoft.com/fwlink/?linkid=842230">Get-msoluser</a> PowerShell コマンドレットを使用して、ユーザーを一括で削除することもできます。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-114">You can also use the <a href="https://go.microsoft.com/fwlink/?linkid=842230">Remove-MsolUser</a> PowerShell cmdlet to delete users in bulk.</span></span>
+<span data-ttu-id="addd2-113">1人のグローバル管理者以外のすべてのユーザーを削除します。</span><span class="sxs-lookup"><span data-stu-id="addd2-113">Delete all users except for one global administrator.</span></span> <span data-ttu-id="addd2-114">グローバル管理者は、アカウントを終了するための手順を完了します。</span><span class="sxs-lookup"><span data-stu-id="addd2-114">The global administrator completes the steps to close the account.</span></span> <span data-ttu-id="addd2-115">このプロセスの終了時にディレクトリを削除するには、その前に他のすべてのユーザーを削除する必要があります。</span><span class="sxs-lookup"><span data-stu-id="addd2-115">Before you can delete the directory at the end of this process, you must delete all other users.</span></span>
 
-<span data-ttu-id="3e7b9-115">組織が Azure AD と同期する Active Directory を使用している場合は、代わりに Active Directory からユーザーアカウントを削除します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-115">If your organization uses Active Directory that synchronizes with Azure AD, delete the user account from Active Directory, instead.</span></span> <span data-ttu-id="3e7b9-116">手順については、「 <a href="https://docs.microsoft.com/azure/active-directory/users-groups-roles/users-bulk-delete">Azure Active Directory でユーザーを一括削除</a>する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-116">For instructions, see <a href="https://docs.microsoft.com/azure/active-directory/users-groups-roles/users-bulk-delete">Bulk delete users in Azure Active Directory</a>.</span></span>
+<span data-ttu-id="addd2-116">ユーザーがオンプレミスから同期されている場合は、まず sync をオフにしてから、Azure portal または Azure PowerShell コマンドレットを使用してクラウドディレクトリ内のユーザーを削除します。</span><span class="sxs-lookup"><span data-stu-id="addd2-116">If users are synchronized from on-premises, first turn off sync, then delete the users in the cloud directory by using the Azure portal or Azure PowerShell cmdlets.</span></span>
 
-## <a name="step-2-cancel-all-active-subscriptions"></a><span data-ttu-id="3e7b9-117">手順 2: すべてのアクティブなサブスクリプションをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="3e7b9-117">Step 2: Cancel all active subscriptions</span></span>
+<span data-ttu-id="addd2-117">ユーザーを削除するには、「 <a href="https://docs.microsoft.com/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin: 1 人</a>以上のユーザーを削除する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="addd2-117">To delete users, see <a href="https://docs.microsoft.com/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">User management admin: Delete one or more users</a>.</span></span>
 
-1. <span data-ttu-id="3e7b9-118">管理センターで、 **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-118">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+<span data-ttu-id="addd2-118"><a href="https://go.microsoft.com/fwlink/?linkid=842230">Get-msoluser</a> PowerShell コマンドレットを使用して、ユーザーを一括で削除することもできます。</span><span class="sxs-lookup"><span data-stu-id="addd2-118">You can also use the <a href="https://go.microsoft.com/fwlink/?linkid=842230">Remove-MsolUser</a> PowerShell cmdlet to delete users in bulk.</span></span>
 
-2. <span data-ttu-id="3e7b9-119">購読リストが **表** 形式の場合は、右側の [ **カード** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-119">If the subscriptions list is in **Table** view, on the right, select **Cards** .</span></span>
+<span data-ttu-id="addd2-119">Microsoft Azure Active Directory (Azure AD) と同期する Active Directory を組織で使用している場合は、代わりに Active Directory からユーザーアカウントを削除します。</span><span class="sxs-lookup"><span data-stu-id="addd2-119">If your organization uses Active Directory that synchronizes with Microsoft Azure Active Directory (Azure AD), delete the user account from Active Directory, instead.</span></span> <span data-ttu-id="addd2-120">手順については、「 <a href="https://docs.microsoft.com/azure/active-directory/users-groups-roles/users-bulk-delete">Azure Active Directory でユーザーを一括削除</a>する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="addd2-120">For instructions, see <a href="https://docs.microsoft.com/azure/active-directory/users-groups-roles/users-bulk-delete">Bulk delete users in Azure Active Directory</a>.</span></span>
 
-3. <span data-ttu-id="3e7b9-120">アクティブなサブスクリプションを検索し、[ **設定 & の操作** ] セクションで、[ **サブスクリプションのキャンセル** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-120">Find an active subscription, and in the **Settings & Actions** section, select **Cancel subscription** .</span></span>
+## <a name="step-2-cancel-all-active-subscriptions"></a><span data-ttu-id="addd2-121">手順 2: すべてのアクティブなサブスクリプションをキャンセルする</span><span class="sxs-lookup"><span data-stu-id="addd2-121">Step 2: Cancel all active subscriptions</span></span>
 
-4. <span data-ttu-id="3e7b9-121">画面の指示に従って、プロセスを完了します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-121">Follow the prompts to finish the process.</span></span>
+1. <span data-ttu-id="addd2-122">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="addd2-122">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+2. <span data-ttu-id="addd2-123">[ **製品** ] タブで、アクティブなサブスクリプションを見つけます。</span><span class="sxs-lookup"><span data-stu-id="addd2-123">On the **Products** tab, find an active subscription.</span></span> <span data-ttu-id="addd2-124">**その他の操作** (3 つのドット) を選択してから、**[このサブスクリプションをキャンセルする]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-124">Select **More actions** (three dots), then select **Cancel subscription**.</span></span>
+3. <span data-ttu-id="addd2-125">**[サブスクリプションのキャンセル]** ウィンドウで、キャンセルする理由を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-125">In the **Cancel subscription** pane, choose a reason why you're canceling.</span></span> <span data-ttu-id="addd2-126">必要に応じて、フィードバックを提供します。</span><span class="sxs-lookup"><span data-stu-id="addd2-126">Optionally, provide any feedback.</span></span>
+4. <span data-ttu-id="addd2-127">**[保存]** を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-127">Select **Save**.</span></span>
+5. <span data-ttu-id="addd2-128">手順 1 ~ 4 を繰り返して、すべてのアクティブなサブスクリプションを取り消します。</span><span class="sxs-lookup"><span data-stu-id="addd2-128">Repeat steps 1 through 4 to cancel all active subscriptions.</span></span>
 
-5. <span data-ttu-id="3e7b9-122">手順 1 ~ 4 を繰り返して、すべてのアクティブなサブスクリプションを取り消します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-122">Repeat steps 1 through 4 to cancel all active subscriptions.</span></span>
+## <a name="step-3-delete-all-disabled-subscriptions"></a><span data-ttu-id="addd2-129">手順 3: 無効になっているすべてのサブスクリプションを削除する</span><span class="sxs-lookup"><span data-stu-id="addd2-129">Step 3: Delete all disabled subscriptions</span></span>
 
-## <a name="step-3-delete-all-disabled-subscriptions"></a><span data-ttu-id="3e7b9-123">手順 3: 無効になっているすべてのサブスクリプションを削除する</span><span class="sxs-lookup"><span data-stu-id="3e7b9-123">Step 3: Delete all disabled subscriptions</span></span>
+1. <span data-ttu-id="addd2-130">管理センターで、**[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="addd2-130">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+2. <span data-ttu-id="addd2-131">[ **製品** ] タブで、無効になっているサブスクリプションを選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-131">On the **Products** tab, select a disabled subscription.</span></span>
+3. <span data-ttu-id="addd2-132">[サブスクリプションの詳細] ページの [ **サブスクリプションと支払いの設定** ] セクションで、[ **サブスクリプションの削除**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-132">On the subscription details page, in the **Subscription and payment settings** section, select **Delete subscription**.</span></span>
+4. <span data-ttu-id="addd2-133">[ **サブスクリプションの削除** ] ウィンドウで、[ **サブスクリプションの削除**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-133">In the **Delete subscription** pane, select **Delete subscription**.</span></span>
+5. <span data-ttu-id="addd2-134">[ **サブスクリプションの削除** ] ダイアログボックスで、[ **はい**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-134">In the **Delete subscription** dialog box, select **Yes**.</span></span>
+6. <span data-ttu-id="addd2-135">無効にされた各サブスクリプションについて、すべてのサブスクリプションが削除されるまで手順 3 ~ 5 を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="addd2-135">For each disabled subscription, repeat steps 3 through 5 until all subscriptions are deleted.</span></span>
 
-1. <span data-ttu-id="3e7b9-124">管理センターで、 **[課金]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[製品]</a> ページの順に移動します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-124">In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+> [!NOTE]
+> <span data-ttu-id="addd2-136">無効化されたサブスクリプションをすぐに削除できない場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=518322" target="_blank">サポートに連絡してください</a>。</span><span class="sxs-lookup"><span data-stu-id="addd2-136">If you're unable to immediately delete a disabled subscription, <a href="https://go.microsoft.com/fwlink/p/?linkid=518322" target="_blank">contact support</a></span></span>
 
-2. <span data-ttu-id="3e7b9-125">購読リストが **表** 形式の場合は、右側の [ **カード** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-125">If the subscriptions list is in **Table** view, on the right, select **Cards** .</span></span>
+## <a name="step-4-disable-multi-factor-authentication"></a><span data-ttu-id="addd2-137">手順 4: 多要素認証を無効にする</span><span class="sxs-lookup"><span data-stu-id="addd2-137">Step 4: Disable multi-factor authentication</span></span>
 
-3. <span data-ttu-id="3e7b9-126">[ **サブスクリプションの状態** ] の横で、[ **無効** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-126">Next to **Subscription status** , select **Disabled** .</span></span>
+1. <span data-ttu-id="addd2-138">グローバル管理者アカウントを使用して、管理センターにサインインします。</span><span class="sxs-lookup"><span data-stu-id="addd2-138">Sign in to the admin center with a Global administrator account.</span></span> <span data-ttu-id="addd2-139">所有している役割を確認するには、「 [組織の管理者の役割を確認](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization)する」を参照してください。</span><span class="sxs-lookup"><span data-stu-id="addd2-139">To verify what roles you have, see [Check admin roles in your organization](../admin/add-users/assign-admin-roles.md#check-admin-roles-in-your-organization).</span></span>
+2. <span data-ttu-id="addd2-140">[ユーザーの **Users**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="addd2-140">Go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
+3. <span data-ttu-id="addd2-141">[ **多要素認証**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-141">Choose **Multi-factor authentication**.</span></span>
+4. <span data-ttu-id="addd2-142">[多要素認証] ページで、現在使用中のグローバル管理者アカウント以外のすべてのアカウントを無効にします。</span><span class="sxs-lookup"><span data-stu-id="addd2-142">On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.</span></span>
 
-4. <span data-ttu-id="3e7b9-127">無効になっているサブスクリプションを検索し、[ **設定 & の操作** ] セクションで、[ **削除** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-127">Find a disabled subscription, and in the **Settings & Actions** section, select **Delete** .</span></span>
+<span data-ttu-id="addd2-143"><a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">PowerShell を使用して、複数のユーザーに対して多要素認証を無効に</a>することもできます。</span><span class="sxs-lookup"><span data-stu-id="addd2-143">You can also <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">use PowerShell to disable multi-factor authentication for multiple users</a>.</span></span>
 
-5. <span data-ttu-id="3e7b9-128">[ **サブスクリプションの削除** ] ダイアログボックスで、[ **影響について理解** しています] チェックボックスをオンにして、[ **サブスクリプションの削除** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-128">In the **Delete subscription** dialog box, select the **I understand the impact** check box, then select **Delete subscription** .</span></span>
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a><span data-ttu-id="addd2-144">手順 5: Azure Active Directory のディレクトリを削除する</span><span class="sxs-lookup"><span data-stu-id="addd2-144">Step 5: Delete the directory in Azure Active Directory</span></span>
 
-6. <span data-ttu-id="3e7b9-129">無効化された各サブスクリプションについて、すべてのサブスクリプションが削除されるまで、ステップ4と5を繰り返します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-129">For each disabled subscription, repeat steps 4 and 5 until all subscriptions have been deleted.</span></span>
+1. <span data-ttu-id="addd2-145">グローバル管理者アカウントを使用して、 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 管理センター</a> にサインインします。</span><span class="sxs-lookup"><span data-stu-id="addd2-145">Sign in to the <a href="https://aad.portal.azure.com/" target="_blank">Azure AD admin center</a> with a Global administrator account.</span></span>
+2. <span data-ttu-id="addd2-146">[**Azure Active Directory**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-146">Select **Azure Active Directory**.</span></span>
+3. <span data-ttu-id="addd2-147">削除する組織に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="addd2-147">Switch to the organization that you want to delete.</span></span>
+4. <span data-ttu-id="addd2-148">[ **テナントの削除**] を選択します。</span><span class="sxs-lookup"><span data-stu-id="addd2-148">Select **Delete tenant**.</span></span>
+5. <span data-ttu-id="addd2-149">組織が1つ以上のチェックに失敗した場合は、チェックを通過する方法に関する詳細情報へのリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="addd2-149">If your organization fails one or more checks, you see a link to more information on how to pass the checks.</span></span> <span data-ttu-id="addd2-150">すべてのチェックに合格したら、[ **削除** ] を選択してプロセスを完了します。</span><span class="sxs-lookup"><span data-stu-id="addd2-150">After you pass all checks, select **Delete** to complete the process.</span></span>
 
-## <a name="step-4-disable-multi-factor-authentication"></a><span data-ttu-id="3e7b9-130">手順 4: 多要素認証を無効にする</span><span class="sxs-lookup"><span data-stu-id="3e7b9-130">Step 4: Disable multi-factor authentication</span></span>
-
-1. <span data-ttu-id="3e7b9-131">管理センターで、[ **ユーザー** の  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a> ] ページに移動します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-131">In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.</span></span>
-
-2. <span data-ttu-id="3e7b9-132">[ **多要素認証** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-132">Choose **Multi-factor authentication** .</span></span>
-
-3. <span data-ttu-id="3e7b9-133">[多要素認証] ページで、現在使用中のグローバル管理者アカウント以外のすべてのアカウントを無効にします。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-133">On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.</span></span>
-
-<span data-ttu-id="3e7b9-134"><a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">PowerShell を使用して、複数のユーザーに対して多要素認証を無効に</a>することもできます。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-134">You can also <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">use PowerShell to disable multi-factor authentication for multiple users</a>.</span></span>
-
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a><span data-ttu-id="3e7b9-135">手順 5: Azure Active Directory のディレクトリを削除する</span><span class="sxs-lookup"><span data-stu-id="3e7b9-135">Step 5: Delete the directory in Azure Active Directory</span></span>
-
-1. <span data-ttu-id="3e7b9-136">グローバル管理者アカウントを使用して、 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 管理センター</a> にサインインします。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-136">Sign in to the <a href="https://aad.portal.azure.com/" target="_blank">Azure AD admin center</a> with a Global Administrator account.</span></span>
-
-2. <span data-ttu-id="3e7b9-137">[ **Azure Active Directory** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-137">Select **Azure Active Directory** .</span></span>
-
-3. <span data-ttu-id="3e7b9-138">削除する組織に切り替えます。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-138">Switch to the organization you want to delete.</span></span>
-
-4. <span data-ttu-id="3e7b9-139">[ **テナントの削除** ] を選択します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-139">Select **Delete tenant** .</span></span>
-
-5. <span data-ttu-id="3e7b9-140">組織が1つ以上のチェックに失敗した場合は、チェックを通過する方法に関する詳細情報へのリンクが表示されます。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-140">If your organization fails one or more checks, you see a link to more information on how to pass the checks.</span></span> <span data-ttu-id="3e7b9-141">すべてのチェックに合格したら、[ **削除** ] を選択してプロセスを完了します。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-141">After you pass all checks, select **Delete** to complete the process.</span></span>
-
-<span data-ttu-id="3e7b9-142">この最後の手順を完了すると、Microsoft とのアカウントが閉じられ、削除されます。</span><span class="sxs-lookup"><span data-stu-id="3e7b9-142">After you complete this final step, your account with Microsoft is closed and deleted.</span></span>
+<span data-ttu-id="addd2-151">この最後の手順を完了すると、Microsoft とのアカウントが閉じられ、削除されます。</span><span class="sxs-lookup"><span data-stu-id="addd2-151">After you complete this final step, your account with Microsoft is closed and deleted.</span></span>
