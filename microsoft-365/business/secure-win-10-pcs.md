@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium のセットアップ後に Windows 10 Pc をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: a70fcd330fe6ef330fac08512aded4d8913313d5
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778386"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376279"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
 
@@ -36,13 +36,13 @@ ms.locfileid: "46778386"
 
 Microsoft 365 Business Premium を [セットアップ](set-up.md) した後は、組織内の Windows 10 コンピューターを盗難から保護し、ウイルスやマルウェアのような悪意のある脅威から保護することができます。
 
-## <a name="to-secure-your-windows-10-pcs"></a>Windows 10 Pc をセキュリティで保護するには
+## <a name="to-secure-your-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護するには
 
 1. グローバル管理者の資格情報を使用して、[Microsoft 365 管理センター](https://admin.microsoft.com)にサインインします。 
 2. 左側のナビゲーションで、[ **セットアップ** ] を選択し、[ **サインインとセキュリティ**] で [ **Windows 10 コンピューターのセキュリティ保護**] を選択します。 [ **表示** ] を選んで開始します。
 3. [ **Windows 10 コンピューターのセキュリティ保護** ] ページで、有効にする内容と、ユーザーへの影響について理解するためのすべての情報を確認します。
 
-    ページの上部にある [ **はじめ**に] を選択します。
+    ページの上部にある [ **はじめ** に] を選択します。
 
 4. [ **Windows 10 コンピューターをセキュリティで保護** する] ウィンドウで、有効にするオプションを選択します。 設定の詳細については、「 [Windows 10 デバイスをセキュリティで保護](secure-windows-10-devices.md)する」を参照してください。 
     

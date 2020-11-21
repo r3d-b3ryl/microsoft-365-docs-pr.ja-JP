@@ -18,23 +18,22 @@ ms.collection:
 - M365-security-compliance
 description: EOP と Office 365 が、電子メールの上部に安全なヒントを追加することによって、スパム、フィッシング、およびマルウェアの防止をどのように保護するかについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948459"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376621"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子メール メッセージの安全性に関するヒント
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 Exchange Online Protection (EOP) と Microsoft 365 は、スパム、フィッシング、マルウェアの防止を強化します。 今日では、これらの攻撃の一部は正当なものであることがよく細工されています。 [迷惑メール] フォルダーにメッセージを送信するだけでは不十分なわけではありません。 これで、Outlook または web 上の Outlook または電子メールクライアントで電子メールを確認すると、EOP によって送信者が自動的に確認され、安全なヒントが電子メールの上部に追加されます。
 
 Outlook の安全のヒントは、安全のヒントが開かれ、メッセージ本文に直接挿入されるため、使用している Outlook のバージョンには依存しません。 これは、使用しているすべての電子メールクライアントに安全なヒントが表示されることを意味します。 これは電子メールフィルターレベルで行われ、メールクライアントレベルでは表示されないので、どのバージョンの Outlook でも表示されるだけでなく、どのような電子メールクライアントにも表示されます。
 
-安全性に関するヒント (色分けされたメッセージ) は、潜在的に有害なメッセージに関する警告を表示します。 受信トレイ内のほとんどのメッセージには安全なヒントがありません。 スパム、フィッシング、およびマルウェア攻撃を防止するために必要な情報が EOP と Microsoft 365 にある場合にのみ表示されます。 受信トレイに安全のヒントが表示される場合は、次の例を使用して、安全に関するヒントの種類について詳しく調べることができます。
+安全に関するヒント--色分けされたメッセージは、潜在的に有害なメッセージに関する警告を表示します。 受信トレイ内のほとんどのメッセージには安全なヒントがありません。 スパム、フィッシング、およびマルウェア攻撃を防止するために必要な情報が EOP と Microsoft 365 にある場合にのみ表示されます。 受信トレイに安全のヒントが表示される場合は、次の例を使用して、安全に関するヒントの種類について詳しく調べることができます。
 
 - 疑わしいメール (赤安全ヒント)。
 

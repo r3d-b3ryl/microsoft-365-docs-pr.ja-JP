@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - Commerce
 monikerRange: o365-worldwide
-ms.openlocfilehash: 279b41716a5d69c819330e0fbcadd04d0aa51fee
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: ea6a60d205c7fbe91b35b22b7ec7b3ee51715444
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374039"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376295"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>メキシコでのビジネス向け Microsoft 365 の請求情報
 
@@ -63,5 +63,5 @@ RFC を追加または変更して、Microsoft 365 for business の購入に関�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[請求書または請求書を表示する](view-your-bill-or-invoice.md)\
-[Microsoft 365 for business の課金または請求書を理解する](understand-your-invoice2.md)
+請求[書または請求書を表示する](view-your-bill-or-invoice.md)(記事) \
+[Microsoft 365 for business の請求書または請求書を理解](understand-your-invoice2.md) する (記事)

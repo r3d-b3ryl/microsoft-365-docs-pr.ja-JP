@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 の生産性図
-description: Microsoft 365 の生産性ソリューションを実装するためのアーキテクチャの基本を理解するために、これらの図を使用します。
+description: これらの図 (Teams アーキテクチャ図など) を使用して、Microsoft 365 生産性ソリューションを実装するためのアーキテクチャの基本を理解します。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,23 +13,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f84c1c4a8d507ae9a4be3cb69a816a8494e08cc3
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
-ms.translationtype: HT
+ms.openlocfilehash: 9bd5ad3e2544e0c715ade59ca4744e08c8a548a6
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906789"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376667"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
-Microsoft 365 Enterprise ソリューション シリーズには、Microsoft 365 の機能、特に Teams アーキテクチャ図面などのさまざまなプラットフォームで使える機能を実装するためのガイダンスが用意されています。
+Microsoft 365 enterprise solution series は、特に Teams アーキテクチャ図を含む、さまざまなテクノロジ間で機能する Microsoft 365 の機能を実装するためのガイダンスを提供します。
 
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 の Microsoft Teams と関連生産性サービス
 Microsoft Teamsをリードする Microsoft 365 での生産性サービスの論理的なアーキテクチャ。
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Teams の論理的なアーキテクチャ ポスター](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> 
+|[![Teams 論理アーキテクチャポスター](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> 
   [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日: 2019 年 4 月   |マイクロソフトは、連携してデータ ガバナンス、セキュリティ、およびコンプライアンス機能を備えたコラボレーション エクスペリエンスを提供する、一連の生産性サービスを提供しています。 <br/> <br/>この一連の図は、Microsoft Teams をはじめとする、エンタープライ ズアーキテクト向けの生産性サービスの論理アーキテクチャを概説したものです。|
 
 
@@ -43,14 +43,14 @@ IT アーキテクトが Microsoft 365 のグループについて知ってお�
 
 ### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 の情報保護とコンプライアンスの機能
 
-Microsoft 365 には、幅広い情報保護とコンプライアンス機能が含まれます。 これらの機能は、Microsoft の生産性ツールと共に、厳格な法令遵守のフレームワークに準拠しながら、組織がリアルタイムで共同作業を行うことができるように設計されています。 
+Microsoft 365 includes a broad set of information protection and compliance capabilities. Together with Microsoft’s productivity tools, these capabilities are designed to help organizations collaborate in real time while adhering to stringent regulatory compliance frameworks. 
 
-このイラストは、最も規制の厳しい業界の 1 つである金融サービスを使用して、一般的な規制要件に対応するためにこれらの機能を適用する方法を示します。 これらのイラストを自分の用途に合わせて自由にアレンジしてください。 
+This set of illustrations uses one of the most regulated industries, financial services, to demonstrate how these capabilities can be applied to address common regulatory requirements. Feel free to adapt these illustrations for your own use. 
 
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [PDF としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 更新: 2020 年 10 月|含まれる内容: <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>コミュニケーション コンプライアンス</li><li>インサイダー リスク</li><li>サードパーティのデータの取り込み</li>|
+|[![モデル ポスター: Microsoft 365 の情報保護とコンプライアンスの機能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英語: [PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)のダウンロードとして \| [Visio として](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)ダウンロードする   <br/> 日本語: [PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)のダウンロードとして \| [Visio として](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)ダウンロードする   <br/> 更新されたのは2020年11月|インクルード <ul><li>  Microsoft の情報保護およびデータ損失防止</li><li>アイテム保持ポリシーと保持ラベル </li><li>情報バリア</li><li>通信コンプライアンス</li><li>Insider のリスク</li><li>サードパーティのデータの取り込み</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>多地域組織向けのセキュリティと情報保護
@@ -67,26 +67,26 @@ Microsoft 365 には、幅広い情報保護とコンプライアンス機能が
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Microsoft Defender for Endpoint 展開戦略のサムネイル イメージ](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>更新日: 2020 年 2 月 | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
+|[![エンドポイント展開戦略のための Microsoft Defender のサムネイルイメージ](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>更新日: 2020 年 2 月 | アーキテクチャ教材は、次のアーキテクチャの展開を計画するのに役立ちます。 <ul><li> クラウド-ネイティブ </li><li> 共同管理 </li><li> オンプレミス</li><li>評価とローカル オンボード</li>
 
 
 <a name="BKMK_O365IDP"></a>
-### <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 の ID とデバイス保護
+### <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 の id とデバイスの保護
 
-Microsoft 365、他の SaaS サービス、および Azure AD アプリケーション プロキシで公開したオンプレミス アプリケーションにアクセスする ID とデバイスを保護するために推奨される機能。
+Microsoft 365、その他の SaaS サービス、および Azure AD アプリケーションプロキシで公開されているオンプレミスアプリケーションにアクセスする id とデバイスを保護するために推奨される機能。
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の ID とデバイス保護](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> 更新日: 2020 年 9 月|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 このドキュメントでは、ID とデバイスを保護する機能に関する詳細情報に、どの機能が相当するのかを説明します。  <br/> |
+|[![モデルポスター: Microsoft 365 の Id およびデバイスの保護](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [PDF として表示する](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [PDF としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Visio としてダウンロードする](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> 更新日: 2020 年 9 月|データ、ID、デバイス全体で一貫したレベルの保護を使用することが重要です。 このモデルは、id とデバイスを保護する機能の詳細について、どの機能が同等であるかを示しています。  <br/> |
  
 <a name="BKMK_ediscovery"></a>
-### <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 の Advanced eDiscovery アーキテクチャ
+### <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 の高度な電子情報開示アーキテクチャ
 
 Advanced eDiscovery のエンド ツー エンドのワークフローとデータ フロー。Microsoft 365 Multi-Geo 環境に含まれます。 
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![モデル ポスター: Microsoft 365 の Advanced eDiscovery アーキテクチャ](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [PDF としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx) <br/> 更新日: 2020 年 10 月|含まれる内容: <ul><li>  単一の環境でのエンド ツー エンドのワークフロー</li><li>Microsoft 365 Multi-Geo 環境でのエンド ツー エンドのワークフロー </li><li>EDRM ワークフローをサポートするエンド ツー エンドのデータフロー</li> |
+|[![モデル ポスター: Microsoft 365 の Advanced eDiscovery アーキテクチャ](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [画像として表示する](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| [PDF としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)  \| [Visio としてダウンロードする](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx) <br/> 更新日: 2020 年 10 月|インクルード <ul><li>  単一の環境でのエンド ツー エンドのワークフロー</li><li>Microsoft 365 Multi-Geo 環境でのエンド ツー エンドのワークフロー </li><li>EDRM ワークフローをサポートするエンド ツー エンドのデータフロー</li> |
   
 <!--
 
@@ -127,9 +127,7 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 Microsoft では、Microsoft クラウド内の Teams の使用を開始する際に使用できるいくつかのオプションをサポートしています。このポスターは、どの Microsoft テレフォニー ソリューション (クラウド内の電話システムまたはオンプレミスのエンタープライズ ボイス) が組織のユーザーに適しているかを判断し、組織を公衆交換電話網 (PSTN) に接続する方法を決定するのに役立ちます。
 
 
-
-  [
-  ![Microsoft テレフォニー ソリューションのポスター](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
+[![Microsoft テレフォニーソリューションポスター](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
 
   [PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) <br>
 更新日: 2019 年 1 月

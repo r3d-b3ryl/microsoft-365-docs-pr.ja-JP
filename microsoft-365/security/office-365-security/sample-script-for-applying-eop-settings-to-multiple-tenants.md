@@ -14,27 +14,38 @@ ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、PowerShell を使用して Microsoft Exchange Online Protection (EOP) のテナントに構成設定を適用する方法について説明します。
-ms.openlocfilehash: 6e33ceb6a9daa88bfefd4ec08ac9f2a9f34a942f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbb4135c89ac8d351c40bd7d9ce5301500a9b81b
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198681"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376569"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>EOP 設定を複数のテナントに適用するスクリプトのサンプル
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-以下のサンプル スクリプトにより、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者は、Windows PowerShell を使用して構成設定をテナントに適用できます。
+次のサンプルスクリプトを使用すると、複数のテナント (会社) を管理する Microsoft Exchange Online Protection (EOP) 管理者が Exchange Online PowerShell を使用して、構成設定を表示したり、テナントに適用したりできます。
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>複数のテナントでスクリプトまたはコマンドレットを実行するには
 
-1. Excel などのアプリケーションを使用して, .csv ファイル (c:\scripts\inputfile.csv など) を作成します。
+1. まだインストールしていない場合は、 [Exchange Online V2 モジュールをインストール](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)します。
 
-2. .csv ファイルで、次の 2 つの列名を指定します。「UserName」および「Cmdlet」。
+2. スプレッドシートアプリ (たとえば、Excel) を使用して、次の詳細を含む .csv ファイルを作成します。
 
-3. .csv ファイルの各行で、テナントの管理者名を UserName 列に追加し、そのテナントのために実行するコマンドレットを Cmdlet 列に追加します。例えば、admin@contoso.com と Get-AcceptedDomain を使用します。
+   - UserName 列: 接続に使用するアカウント (例: `admin@contoso.onmicrosoft.com` )。
+   - コマンドレット列: 実行するコマンドレットまたはコマンド (例: `Get-AcceptedDomain` または `Get-AcceptedDomain | FT Name` )。
+
+   このファイルは次のようになります。
+
+   ```text
+   UserName,Cmdlet
+   admin@contoso.onmicrosoft.com,Get-AcceptedDomain | FT Name
+   admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
+   ```
+
+3. 見つけやすい場所に .csv ファイルを保存します (たとえば、c:\scripts\inputfile.csv)。
 
 4. [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1)スクリプトをメモ帳にコピーし、見つけやすい場所 (c:\scripts など) にファイルを保存します。
 
@@ -54,34 +65,46 @@ ms.locfileid: "48198681"
 
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
+> [!NOTE]
+> 環境に合わせてスクリプトの行を変更する必要がある場合があり `Connect-IPPSSession` ます。 たとえば、Office 365 ドイツでは、スクリプト内の現在の値とは異なる _Connectionuri_ 値が必要です。 詳細については、「 [Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)への接続」を参照してください。
+
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
+#
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #
 # .csv input file sample:
+#
 # UserName,Cmdlet
-# admin@contoso.com,Get-AcceptedDomain | ft Name
-# URI for connecting to remote Windows PowerShell
-$URI = "https://ps.protection.outlook.com/powershell-liveid/"
+# admin@contoso.onmicrosoft.com,Get-AcceptedDomain | FT Name
+# admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
+
 # Get the .csv file name as an argument to this script.
 $FilePath = $args[0]
+
 # Import the UserName and Cmdlet values from the .csv file.
 $CompanyList = Import-CSV $FilePath
+
+# Load the EXO V2 module
+Import-Module ExchangeOnlineManagement
+
 # Loop through each entry from the .csv file.
 ForEach ($Company in $CompanyList) {
+  
 # Get the current entry's UserName.
 $UserName = $Company.UserName
+
 # Get the current entry's Cmdlet.
 $Cmdlet = $Company.Cmdlet
-# Create a PowerShell credential object by using the current entry's UserName. Prompt for the password.
-$UserCredential = Get-Credential -username $UserName
-# Log on to a new Windows PowerShell session.
-$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $URI -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session
+
+# Connect to EOP PowerShell by using the current entry's UserName. Prompt for the password.
+Connect-IPPSSession -UserPrincipalName $UserName -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/
+
 # Here's where the script to be run on the tenant goes.
 # In this example, the cmdlet in the .csv file runs.
 Invoke-Expression $Cmdlet
+
 # End the current PowerShell session.
-Remove-PsSession -Session $Session
+Disconnect-ExchangeOnline -Confirm:$false
 }
 ```
