@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
+ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135993"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376517"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,16 +29,17 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 の顧客データの保存場所
 
-次の表は、Microsoft のすべてのグローバル クラウドの場所で、Microsoft 365 サービスの顧客データが保存されている場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
+次の表は、Microsoft のすべてのグローバル クラウド ロケーション全体で、Microsoft 365 サービスの顧客データが保存されている場所を示します。請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
 
-顧客は、**[設定] | [組織設定] | [組織プロファイル]  [データ場所]** の [Office 365 管理センター] で、テナント固有データの場所情報を閲覧します。
+ビジネスが欧州連合にある場合、詳細については、「[欧州連合のデータの場所](EU-data-storage-locations.md)」を参照してください。 
+
+顧客は、**[設定] | [組織設定] | [組織プロファイル] | [データ場所]** の [Office 365 管理センター] で、テナント固有データの場所情報を閲覧します。
 
 新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて既定で Geo に設定されます。
 
 保管中の顧客データの保管場所に関する契約上のコミットメントに関する情報は、[Microsoft Online Services Terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215) に記載されています。
 
 Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
-
 
 お客様の請求先住所がヨーロッパ以外にあり、お客様が Office 365 Education サブスクリプションを所有している場合、OST の「コアオンラインサービスの顧客データの保存場所」セクションにかかわらず、マイクロソフトはお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。 顧客データをヨーロッパまたは北米内のどこにでも保管します。  お客様の請求先住所がヨーロッパにあり、お客様が Office 365 Education サブスクリプションを持っている場合、OST の「コアオンラインサービスの保存されているお客様データの場所」セクションにかかわらず、マイクロソフトはお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。 顧客データを欧州連合内のどこにでも保存します。
 
@@ -387,7 +388,7 @@ Microsoft は、指定された地域外に Intune の顧客データを保存�
 ## <a name="argentina"></a>アルゼンチン
 <details><summary>クリックして展開</summary><p>
 
-| サービス | 場所 |
+| サービス | Location |
 | --- | --- |
 | Exchange Online | グローバル地域 3 - アメリカ |
 | OneDrive for Business | グローバル地域 3 - アメリカ |
