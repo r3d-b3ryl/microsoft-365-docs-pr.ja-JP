@@ -169,10 +169,10 @@
               href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: Contoso の事例
       items:
-        - name: Contoso 社向けの Microsoft 365 ソリューション
+        - name: Contoso Corporation 向けの Microsoft 365 ソリューション
           href: contoso-case-study-solutions.md
-        - name: ハイブリッド従業員向けの Contoso の COVID-19 対応とサポート
-          href: contoso-hybrid-workforce.md
+        - name: リモートおよびオンサイトでの作業に関する COVID-19 の対応とサポート
+          href: contoso-remote-onsite-work.md
         - name: 極秘プロジェクト向けの独立したチーム
           href: contoso-team-for-top-secret-project.md
         - name: Teams の音声移行
