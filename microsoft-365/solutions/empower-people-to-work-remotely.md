@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: リモート ワーカーの生産性を最大化して、サーバー、データ、およびクラウドへの安全なアクセスを維持するために、Microsoft 365 のすべての機能が有効になっていることを確認します。
-ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357039"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371504"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>Microsoft 365 でリモート ワーカーを支援する
 
@@ -112,6 +112,6 @@ Microsoft 365 には、ワーカーがリモートで作業できるようにす
 
 [![Microsoft 365 でリモート ワーカーを支援するための手順](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-リモート ワーカーのサポートに関する Microsoft の最新情報については、「[Microsoft Teams サイトとのハイブリッド作業の有効化](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)」を参照してください。
+リモート ワーカーのサポートに関して Microsoft が提供する最新情報については、「[Enabling hybrid work with Microsoft Teams site (Microsoft Teams サイトによるハイブリッド作業の有効化)](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)」を参照してください。
 
-架空の、しかし代表的な多国籍組織がリモートワーカーにどのように力を与えたかを確認するには、「[ハイブリッド ワーカー向けの Contoso の COVID-19 対応とインフラストラクチャ](contoso-hybrid-workforce.md)」を参照してください。
+架空ではあるものの、代表的な多国籍組織がリモート ワーカーをどのように支援したかについて確認するには、「[リモート ワークやオンサイト ワーク向けの Contoso の COVID-19 対応とインフラストラクチャ](contoso-remote-onsite-work.md)」を参照してください。
