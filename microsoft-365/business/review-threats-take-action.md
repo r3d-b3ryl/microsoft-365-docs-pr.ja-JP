@@ -1,5 +1,5 @@
 ---
-title: 検出された脅威をレビューし、アクションを実行する
+title: 検出された脅威を確認して対処する
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Windows 10 デバイスで Microsoft Defender ウイルス対策によって検出された脅威を確認および管理する方法について説明します。
-ms.openlocfilehash: 21830b91bfbb88fdd5d5139ee07c4dfb35f5b875
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376704"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385242"
 ---
-# <a name="review-detected-threats-and-take-action"></a>検出された脅威をレビューし、アクションを実行する
+# <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
 
 悪意のあるファイルまたはソフトウェアが検出されるとすぐに、Microsoft Defender ウイルス対策によってブロックされ、実行が禁止されます。 また、クラウドで提供される保護が有効になっている場合は、新たに検出された脅威がウイルス対策およびマルウェア対策エンジンに追加されるため、他のデバイスやユーザーも保護されます。
 
@@ -58,7 +58,7 @@ IT プロフェッショナル/管理者は、Microsoft 365 管理センター�
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>[ **アクティブな脅威** ] ページで脅威検出を管理する
 
-次の手順は、Microsoft 365 Business を利用しているお客様に適用されます。 [Windows 10 デバイスをセキュリティで保護](/microsoft-365/business/secure-win-10-pcs) し、 [Intune に登録](/mem/intune/enrollment/windows-enrollment-methods)する必要があります。
+次の手順は、Microsoft 365 Business Premium を持つお客様に適用されます。 [Windows 10 デバイスをセキュリティで保護](/microsoft-365/business/secure-win-10-pcs) し、 [Intune に登録](/mem/intune/enrollment/windows-enrollment-methods)する必要があります。
 
 > [!NOTE]
 > **Microsoft Defender ウイルス対策** カードおよび **アクティブな脅威** ページはフェーズでロールアウトされるため、すぐにアクセスできない場合があります。
