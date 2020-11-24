@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを作成して発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順
-ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: ea67d5942f5134e4e34c3add9bdfc48771201e2d
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920341"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385189"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>保持ラベルを作成してアプリに適用する
 
@@ -60,24 +60,24 @@ ms.locfileid: "48920341"
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
     - レコード管理を使用している場合:
-        - [ **ソリューション** ] > [ **レコード管理** ] > [ **ファイル計画** ] タブ > [ **+ラベルを作成** ] > [ **保持ラベル** ]
+        - [**ソリューション**] > [**レコード管理**] > [**ファイル計画**] タブ > [**+ラベルを作成**] > [**保持ラベル**]
         
     - レコード管理を使用していない場合:
-       - [ **ソリューション** ] > [ **情報ガバナンス** ] > [ **ラベル** ] タブ > + [ **ラベルを作成** ]
+       - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル**] タブ > + [**ラベルを作成**]
     
-    すぐにオプションが表示されませんか? 最初に [ **すべて表示** ] を選択します。 
+    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
 
 2. ウィザードでプロンプトに従います。 レコード管理を使用している場合:
     
     - ファイル計画記述子については、「[Use file plan to manage retention labels (ファイル計画を使用して保持ラベルを管理する)](file-plan-manager.md)」を参照してください。
     
-    - 保持ラベルを使用してレコードを宣言するには、 **アイテムをレコードとしてマーク** 、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
+    - 保持ラベルを使用してレコードを宣言するには、**アイテムをレコードとしてマーク**、または **アイテムを規制レコードとしてマーク** を選択します。 詳細については、「 [レコードを宣言するために保持ラベルを構成する](declare-records.md#configuring-retention-labels-to-declare-records)」を参照してください。
 
-3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[ **今すぐラベルを保存する** ] を選択し、[ **完了** ] を選択します。
+3. ラベルを作成し、ラベルの公開、ラベルの自動適用、または単にラベルを保存するオプションが表示されたら、[**今すぐラベルを保存する**] を選択し、[**完了**] を選択します。
 
 4. さらにラベルを作成するには、これらの手順を繰り返します。
 
-既存のラベルを編集するには、そのラベルを選択してから [ **ラベルの編集** ] オプションを選択し、手順 2 からラベルの説明や [有効な設定](#updating-retention-labels-and-their-policies)を変更するための保持の編集ウィザードを開始します。
+既存のラベルを編集するには、そのラベルを選択してから [**ラベルの編集**] オプションを選択し、手順 2 からラベルの説明や [有効な設定](#updating-retention-labels-and-their-policies)を変更するための保持の編集ウィザードを開始します。
 
 ### <a name="step-2-publish-retention-labels"></a>手順 2: 保持ラベルを発行する
 
@@ -86,18 +86,18 @@ SharePoint や Outlook などのアプリでユーザーが適用できるよう
 1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
     - レコード管理を使用している場合:
-        - [ **ソリューション** ] > [ **レコード管理** ] > [ **ラベル ポリシー** ] タブ > [ **ラベルの発行** ]
+        - [**ソリューション**] > [**レコード管理**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
     
     - レコード管理を使用していない場合:
-        - [ **ソリューション** ] > [ **情報ガバナンス** ] > [ **ラベル ポリシー** ] タブ > [ **ラベルの発行** ]
+        - [**ソリューション**] > [**情報ガバナンス**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
     
-    すぐにオプションが表示されませんか? 最初に [ **すべて表示** ] を選択します。 
+    すぐにオプションが表示されませんか? 最初に [**すべて表示**] を選択します。 
 
 2. ウィザードでプロンプトに従います。
     
     保持ラベルでサポートされている場所については、「[保持ラベルと場所](retention.md#retention-label-policies-and-locations)」のセクションをご覧ください。 
 
-既存の保持ラベル ポリシー (ポリシーの種類は [ **公開** ]) を編集するには、それを選択してから、[ **編集** ] オプションを選択して、[保持ポリシーの編集] を開始します。 このウィザードでは、手順 2 のポリシーの説明と[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
+既存の保持ラベル ポリシー (ポリシーの種類は [**公開**]) を編集するには、それを選択してから、[**編集**] オプションを選択して、[保持ポリシーの編集] を開始します。 このウィザードでは、手順 2 のポリシーの説明と[有効な設定](#updating-retention-labels-and-their-policies)を変更できます。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>保持ラベルが適用できるようになったとき
@@ -111,7 +111,7 @@ Exchange にラベルを発行する場合、エンド ユーザーにこれら�
 ![手動ラベルが有効になるタイミングの図](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
+ラベルが 7 日経っても表示されない場合は、コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、ラベル ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続する](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -271,7 +271,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ## Locking the policy to prevent changes
